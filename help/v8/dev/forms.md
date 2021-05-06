@@ -4,7 +4,7 @@ product: campaign
 title: Formulaires d’entrée Campaign
 description: Découvrez comment personnaliser les formulaires d’entrée
 translation-type: tm+mt
-source-git-commit: 8e90eb762a6e08077270d4f5852bfc37ac783122
+source-git-commit: 5adbec5dfc738c2bec260c0d2a7f80e5a232056c
 workflow-type: tm+mt
 source-wordcount: '2579'
 ht-degree: 87%
@@ -341,8 +341,6 @@ Exemple de lien de collection dans un schéma :
 ```
 
 La liste dans son formulaire de saisie :
-
-![](assets/do-not-localize/form_exemple11.png)
 
 ```
  <input xpath="rcpEvent" type="linklist">
