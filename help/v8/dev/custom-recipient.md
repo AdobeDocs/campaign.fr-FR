@@ -8,7 +8,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
 translation-type: tm+mt
-source-git-commit: 5b9e381c154420c57a66e5b41b25bd4754036c60
+source-git-commit: ac75a1c085e13cd934af0f09ceba89c54bbc560a
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 11%
@@ -28,7 +28,6 @@ Cette fonctionnalité permet à Adobe Campaign de traiter les données d’une b
 * Utilisation d&#39;une base de profils avec une structure différente de celle proposée en standard : possibilité de diffuser avec une même instance vers des profils enregistrés dans des tables différentes, avec des structures différentes.
 
 Cette section décrit les points clés pour mapper les tables existantes en Adobe Campaign et les paramètres de configuration à appliquer pour exécuter des diffusions en fonction de n&#39;importe quelle table. Il décrit également comment concevoir des interfaces d&#39;interrogation pour les utilisateurs finaux.
-
 
 >[!CAUTION]
 >
