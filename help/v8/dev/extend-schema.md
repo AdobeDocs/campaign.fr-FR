@@ -4,9 +4,9 @@ product: campaign
 title: Étendre les schémas Campaign
 description: Découvrez comment étendre les schémas Campaign
 translation-type: tm+mt
-source-git-commit: f1aed22d04bc0170b533bc088bb1a8e187b44dce
+source-git-commit: 8e90eb762a6e08077270d4f5852bfc37ac783122
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '250'
 ht-degree: 1%
 
 ---
@@ -45,20 +45,26 @@ Pour étendre un schéma, procédez comme suit :
 
    ![](assets/extend-schema-edit.png)
 
-   Dans l’exemple ci-dessous, nous ajoutons l’attribut Année d’adhésion, nous appliquons une limite de longueur pour le nom (cette limite remplacera la valeur par défaut) et nous supprimons la date de naissance du schéma intégré.
+   Dans l&#39;exemple ci-dessous, nous ajoutons l&#39;attribut MembershipYear, nous fixons une limite de longueur pour le nom (cette limite remplacera la valeur par défaut) et nous supprimons la date de naissance du schéma intégré.
+
+   ![](assets/extend-schema-sample.png)
 
    ```
    <srcSchema created="YY-MM-DD" desc="Recipient table" extendedSchema="nms:recipient"
            img="nms:recipient.png" label="Recipients" labelSingular="Recipient" lastModified="YY-MM-DD"
            mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:srcSchema">
-   <element desc="Recipient table" img="nms:recipient.png" label="Recipients" labelSingular="Recipient"
-           name="recipient">
-   <attribute name="Membership Year" label="memberYear" type="long"/>
+    <element desc="Recipient table" img="nms:recipient.png" label="Recipients" labelSingular="Recipient"
+          name="recipient">
+   <attribute label="Member since" name="MembershipYear" type="long"/>
    <attribute length="50" name="lastName"/>
    <attribute _operation="delete" name="birthDate"/>
    </element>
-   </srcSchema> 
+   </srcSchema>
    ```
+1. Déconnectez-vous et reconnectez-vous à Campaign pour vérifier la mise à jour de la structure du schéma dans l&#39;onglet **[!UICONTROL Structure]**.
+
+   ![](assets/extend-schema-structure.png)
 
 1. Mettez à jour la structure de la base de données pour appliquer vos modifications. [En savoir plus](update-database-structure.md)
+
 1. Une fois les modifications mises en oeuvre dans la base de données, vous pouvez adapter le formulaire d’entrée du destinataire pour rendre vos modifications visibles. [En savoir plus](forms.md)
