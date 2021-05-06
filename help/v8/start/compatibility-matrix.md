@@ -8,7 +8,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 translation-type: tm+mt
-source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
+source-git-commit: 29c13e6c1b08a5b0f6ba8bb433f7165e3e452942
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 35%
@@ -17,7 +17,7 @@ ht-degree: 35%
 
 # Matrice de compatibilité Campaign v8
 
-Ce document liste tous les systèmes et composants pris en charge pour [la dernière version ](release-notes.md) de **Adobe Campaign v8**. Les produits et versions ne faisant pas partie de cette liste ne sont pas compatibles avec Adobe Campaign.
+Ce document liste tous les systèmes et composants pris en charge pour la dernière version de **Adobe Campaign v8**. Les produits et versions ne faisant pas partie de cette liste ne sont pas compatibles avec Adobe Campaign.
 
 >[!CAUTION]
 >
