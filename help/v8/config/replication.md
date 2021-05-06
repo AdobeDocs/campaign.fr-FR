@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
 translation-type: tm+mt
-source-git-commit: 9efd6442336a62e627b0da4e17fa742f59f715f9
+source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 2%
+source-wordcount: '332'
+ht-degree: 3%
 
 ---
 
@@ -28,8 +28,7 @@ Ces workflows effectuent des opérations de maintenance sur la base de données,
 Outre ces workflows techniques, Campaign v8 s&#39;appuie sur des workflows techniques spécifiques pour gérer la [réplication des données](#data-replication).
 
 * **[!UICONTROL Répliquer]**
-les tables de référenceCe processus effectue la réplication automatique des tables de référence qui doivent être présentes dans la base de données locale Campaign (Postgres) et la base de données Cloud (Snowflake). Il est planifié pour s’exécuter toutes les heures, tous les jours. If 
-**** lastModifiedfield existe, la réplication se produit progressivement, sinon la table entière est répliquée. L&#39;ordre des tables dans la baie ci-dessous correspond à l&#39;ordre utilisé par le processus de réplication.
+les tables de référenceCe processus effectue la réplication automatique des tables de référence qui doivent être présentes dans la base de données locale Campaign (Postgres) et la base de données Cloud ([!DNL Snowflake]). Il est planifié pour s’exécuter toutes les heures, tous les jours. Si le champ **lastModified** existe, la réplication se produit de manière incrémentielle, sinon la table entière est répliquée. L&#39;ordre des tables dans la baie ci-dessous correspond à l&#39;ordre utilisé par le processus de réplication.
 * **[!UICONTROL Répliquer les]**
 données d&#39;évaluationCe processus répliquera les données d&#39;évaluation pour les appels uniques. Il est planifié pour s’exécuter toutes les heures, tous les jours.
 * **[!UICONTROL Déployer immédiatement FFDA]**\
@@ -41,7 +40,7 @@ Ces workflows techniques sont disponibles à partir du noeud **[!UICONTROL Admin
 
 ## Réplication des données{#data-replication}
 
-Les tables sont répliquées de la base de données Campaign vers la base de données Snowflake Cloud par le biais de workflows dédiés décrits ci-dessus.
+Les tables sont répliquées de la base de données Campaign vers la base de données [!DNL Snowflake] Cloud par le biais de workflows dédiés décrits ci-dessus.
 
 Les stratégies de réplication sont basées sur la taille de la table. Certaines tables seront répliquées. Certains tableaux seront répliqués en temps réel, d&#39;autres seront répliqués toutes les heures. Certains tableaux seront mis à jour progressivement lorsque d&#39;autres seront remplacés.
 
