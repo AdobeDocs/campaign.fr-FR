@@ -4,10 +4,10 @@ product: campaign
 title: Formulaires d’entrée Campaign
 description: Découvrez comment personnaliser les formulaires d’entrée
 translation-type: tm+mt
-source-git-commit: b4d5ed24bcca46591543b835b2fec1c18b26fc74
+source-git-commit: 8e90eb762a6e08077270d4f5852bfc37ac783122
 workflow-type: tm+mt
 source-wordcount: '2579'
-ht-degree: 88%
+ht-degree: 87%
 
 ---
 
@@ -290,9 +290,7 @@ Le choix de la cible est accessible à partir de la zone d&#39;édition. Une aid
 
 Une liste déroulante permet de sélectionner un élément de la cible parmi la liste des enregistrements déjà créés.
 
-L&#39;icône **[!UICONTROL Modifier le lien]** (dossier) lance une forme de sélection avec la liste des éléments ciblés et une zone de filtrage :
-
-![](assets/do-not-localize/form_exemple10.png)
+L&#39;icône **[!UICONTROL Modifier le lien]** (dossier) lance un formulaire de sélection avec la liste des éléments ciblés et une zone de filtre.
 
 L&#39;icône **[!UICONTROL Editer le lien]** (loupe) lance la forme d&#39;édition de l&#39;élément lié. La forme utilisée est déduite par défaut sur la clé du schéma ciblé, l&#39;attribut **form** permet de forcer le nom de la forme d&#39;édition (par exemple &quot;cus:company2&quot;).
 
@@ -433,8 +431,6 @@ Ces listes sont utilisées sur les éléments de collections mappés en XML ou s
 
 Ce contrôle affiche une liste à colonnes éditable avec une barre d&#39;outils contenant les boutons d&#39;ajout et de suppression.
 
-![](assets/do-not-localize/form_exemple13.png)
-
 ```
 <input xpath="rcpEvent" type="list">
   <input xpath="@label"/>
@@ -452,8 +448,6 @@ Les colonnes sont déclarées dans les balises **`<input>`** enfants de la liste
 
 Les boutons de la barre d&#39;outils peuvent être alignés horizontalement :
 
-![](assets/do-not-localize/form_exemple14.png)
-
 ```
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true">
   <input xpath="@label"/>
@@ -466,8 +460,6 @@ L&#39;attribut **toolbarCaption** force l&#39;alignement horizontal de la barre 
 ### Activer le zoom dans une liste {#zoom-in-a-list}
 
 L&#39;insertion et l&#39;édition des données d&#39;une liste peut être renseigné dans une forme d&#39;édition séparée.
-
-![](assets/do-not-localize/form_exemple15.png)
 
 ```
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true" zoomOnAdd="true">
@@ -640,8 +632,6 @@ Pour ajouter un assistant, utilisez le type de structure suivant :
   ...
 </form>
 ```
-
-![](assets/do-not-localize/form_exemple19.png)
 
 La présence de l’attribut **type=&quot;wizard&quot;** sur l’élément `<form>` permet de définir le mode assistant dans la construction du formulaire. Les pages sont renseignées à partir d’éléments `<container>` qui sont des enfants de l’élément `<form>`. L’élément `<container>` d’une page est renseigné avec l’attribut title pour le titre, et l’attribut desc pour afficher la description sous le titre de la page. Les boutons **[!UICONTROL Précédent]** et **[!UICONTROL Suivant]** sont automatiquement ajoutés afin de naviguer de page en page.
 
