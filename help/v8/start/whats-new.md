@@ -8,7 +8,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 translation-type: tm+mt
-source-git-commit: 9dcde5cff8b3bdbf240b01967cb27f9de8178f98
+source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Nouveautés d’Adobe Campaign v8 ? {#ac-gs-what-is-new}
 
-Adobe Campaign v8 apporte d’importantes améliorations en termes d’infrastructure, de sécurité, de délivrabilité et de surveillance. Grâce à l&#39;utilisation de Snowflake, une technologie de base de données en nuage, Adobe Campaign améliore considérablement son échelle et sa vitesse, avec la possibilité de gérer un nombre plus important de profils clients, ainsi que des taux de diffusion et de transactions beaucoup plus élevés par heure.
+Adobe Campaign v8 apporte d’importantes améliorations en termes d’infrastructure, de sécurité, de délivrabilité et de surveillance. En exploitant [!DNL Snowflake], une technologie de base de données en nuage, Adobe Campaign améliore considérablement son échelle et sa vitesse, avec la capacité de gérer un nombre plus important de profils clients, ainsi que des taux de diffusion et de transactions beaucoup plus élevés par heure.
 
 Les fonctionnalités principales sont les suivantes :
 
@@ -40,7 +40,7 @@ Et nous simplifions le data Management en même temps
 
 Campaign v8 simplifie le data Management : aucun index, aucune maintenance de base de données. Avec Campaign v8, aucun index n’est requis sur la base de données Cloud. Il vous suffit de créer les tables, de copier les données et de pouvoir les débuts.
 
-Snowflake (alias Cloud Database) vous apporte vitesse et endurance : aucune surcharge de l&#39;activité système ne pèse.
+[!DNL Snowflake] est la base de données Campaign Cloud Database et vous apporte vitesse et endurance : aucune surcharge de l&#39;activité système ne pèse.
 
 La technologie de base de données Cloud ne nécessite pas de maintenance spécifique pour garantir le niveau de performances.
 
