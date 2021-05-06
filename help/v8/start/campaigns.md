@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
 translation-type: tm+mt
-source-git-commit: d7d026422d43e8baef43b114936366071f7086e5
+source-git-commit: 29c13e6c1b08a5b0f6ba8bb433f7165e3e452942
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 13%
+source-wordcount: '747'
+ht-degree: 12%
 
 ---
 
@@ -45,7 +45,7 @@ Avant de commencer à implémenter des campagnes marketing, vous devez connaîtr
 
 Adobe Campaign vous permet de créer, configurer, exécuter et analyser toutes les campagnes marketing à partir d’un centre de contrôle unifié.
 
-:flèche_supérieur_droite : Découvrez comment accéder aux campagnes marketing et les mettre en oeuvre dans [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=en#orchestrating-campaigns)
+:flèche_supérieur_droite : Découvrez comment accéder aux campagnes marketing et les mettre en oeuvre dans [la documentation du Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=en#orchestrating-campaigns).
 
 
 ## Étapes clés du début
@@ -56,50 +56,33 @@ Les étapes clés pour créer une campagne marketing sur plusieurs canaux sont l
 
    Définissez une hiérarchie et un calendrier, définissez un budget, ajoutez des ressources, sélectionnez des opérateurs.
 
-   :flèche_supérieur_droite : Découvrez comment créer un plan marketing et configurer des campagnes dans [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#creating-plan-and-program-hierarchy)
+   :flèche_supérieur_droite : Découvrez comment créer un plan marketing et configurer des campagnes dans [la documentation du Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#creating-plan-and-program-hierarchy)
 
    Toutes les campagnes marketing sont basées sur un modèle qui stocke les principaux paramètres et fonctionnalités. Un modèle natif est fourni pour créer une opération pour laquelle aucune configuration spécifique n’a été définie. Vous pouvez créer et configurer des modèles d’opération, puis créer des opérations à partir de ces modèles.
 
-   :flèche_supérieur_droite : Découvrez comment utiliser les modèles de campagne dans [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)
+   :flèche_supérieur_droite : Découvrez comment utiliser les modèles de campagne dans [la documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)
 
-   :flèche_supérieur_droite : Découvrez les campagnes récurrentes et comment les configurer dans [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns)
+   :flèche_supérieur_droite : Découvrez les campagnes récurrentes et comment les configurer dans [la documentation du Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns)
 
 1. **Définir des audiences**
 
    Vous pouvez créer l’audience dans un processus ou sélectionner un groupe existant, tel qu’une liste de destinataire, des abonnés à un bulletin d’information, des destinataires d’une diffusion précédente ou toute autre condition de filtrage.
 
-   :flèche_supérieur_droite : Découvrez comment définir l&#39;audience de vos messages dans [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#orchestrating-campaigns)
+   :flèche_supérieur_droite : Découvrez comment définir l&#39;audience de vos messages dans la [documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#orchestrating-campaigns)
 
 1. **Créer des diffusions**
 
    Sélectionnez le ou les canaux, définissez le contenu du message et les diffusions du début.
 
-   :flèche_supérieur_droite : Découvrez comment créer et début des diffusions de campagne marketing dans [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=en#creating-deliveries)
+   :flèche_supérieur_droite : Découvrez comment créer et début des diffusions de campagne marketing dans [la documentation du Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=en#creating-deliveries)
 
    Vous pouvez associer divers documents à une campagne : rapport, photo, page Web, diagramme, etc.
 
-   :flèche_supérieur_droite : En savoir plus sur les documents associés dans [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=en#adding-documents)
+   :flèche_supérieur_droite : Pour en savoir plus sur les documents associés, consultez la [documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=en#adding-documents).
 
 1. **Configuration du processus d’approbation**
 
    Adobe Campaign vous permet de configurer des processus d’approbation collaboratifs pour les principales étapes de la campagne marketing. Pour chaque campagne, vous pouvez approuver la cible de diffusion, le contenu et les coûts. Les opérateurs Adobe Campaign en charge de l&#39;approbation peuvent être avertis par courrier électronique et peuvent accepter ou refuser l&#39;approbation de la console ou via une connexion Web.
 
-   :flèche_supérieur_droite : Découvrez comment configurer et gérer les approbations dans [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)
+   :flèche_supérieur_droite : Découvrez comment configurer et gérer les approbations dans [la documentation du Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)
 
-
-1. Surveiller les messages : diffusions de contrôle et exécution. En savoir plus.
-
-1. Planifiez les opérations et les coûts associés. En savoir plus.
-
-## Approbations et validation
-
-
-## Services et abonnements
-
-Créer des services et gérer des abonnements/désinscriptions
-
-## Reporting
-
-Rapports sur les opérations
-
-: bulb:
