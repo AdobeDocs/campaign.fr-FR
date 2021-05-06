@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
 translation-type: tm+mt
-source-git-commit: e802857529d2b72995ccc08563b2356d809e5309
+source-git-commit: f1aed22d04bc0170b533bc088bb1a8e187b44dce
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 50%
+source-wordcount: '384'
+ht-degree: 44%
 
 ---
 
@@ -41,11 +41,11 @@ Besoin d’aide lorsque vous utilisez Campaign Classic ? Lisez les 10 premiè
 
    Adobe Campaign contient un ensemble de tableaux de bord et d&#39;outils qui permettent de suivre les diffusions de vos emails.
 
-   [Cliquez ici pour découvrir](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html) comment vous assurer que vos messages sont bien envoyés, surveiller l&#39;exécution et entreprendre une action en cas d&#39;erreur.
+   [Lisez la documentation de Campaign Classic v7 pour ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html) savoir comment vous assurer que vos messages sont envoyés, surveiller l’exécution et engager une action en cas d’erreur.
 
 1. Est-il possible de suivre l&#39;exécution des workflows ?
 
-   :flèche_supérieur_droite : Découvrez comment surveiller l&#39;exécution du flux de travaux Campaign [dans cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html).
+   :flèche_supérieur_droite : Découvrez comment surveiller l&#39;exécution du flux de travaux Campaign [dans Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html).
 
 1. Avec quels systèmes et composants Campaign v8 est-il compatible ?
 
