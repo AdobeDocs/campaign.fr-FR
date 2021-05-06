@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 translation-type: tm+mt
-source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
+source-git-commit: c3eaaecd33c70be0b8c7e9e69a78aa43cf5d18b8
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '404'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,9 @@ Et nous simplifions le data Management en même temps
 
 ## Simplification et amélioration des performances
 
-Campaign v8 simplifie le data Management : aucun index, aucune maintenance de base de données. Avec Campaign v8, aucun index n’est requis sur la base de données Cloud. Il vous suffit de créer les tables, de copier les données et de pouvoir les débuts.
+Campaign v8 apporte le concept de **Federated Data Access** complet (FDA) : toutes les données sont maintenant distantes sur la base de données Cloud.
+
+Avec cette nouvelle architecture, Campaign v8 simplifie le data Management : aucun index n’est requis sur la base de données Cloud. Il vous suffit de créer les tables, de copier les données et de pouvoir les débuts.
 
 [!DNL Snowflake] est la base de données Campaign Cloud Database et vous apporte vitesse et endurance : aucune surcharge de l&#39;activité système ne pèse.
 
