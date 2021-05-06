@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 translation-type: tm+mt
-source-git-commit: 97cc2dd6f78fac2723306f06bea74e808c84b4ad
+source-git-commit: c26e3b1af2f1706dbe2ca6cf9078f3e427e345cb
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 42%
+source-wordcount: '684'
+ht-degree: 41%
 
 ---
 
@@ -36,12 +36,6 @@ Deux options sont disponibles :
 >[!CAUTION]
 >
 >L&#39;Adobe recommande de ne pas sélectionner l&#39;option **[!UICONTROL Ne plus poser cette question]** pour s&#39;assurer que tous les utilisateurs sont avertis lorsqu&#39;une nouvelle version de la console est disponible.  Si cette option est sélectionnée, l’utilisateur ne sera pas informé des nouvelles versions disponibles.
-
-### Tutoriel vidéo
-
-Cette vidéo explique comment installer et configurer le client Adobe Campaign.
-
->[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
 
 ## Créer votre connexion
 
