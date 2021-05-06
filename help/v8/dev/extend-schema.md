@@ -4,82 +4,61 @@ product: campaign
 title: Étendre les schémas Campaign
 description: Découvrez comment étendre les schémas Campaign
 translation-type: tm+mt
-source-git-commit: 779542ab70f0bf3812358884c698203bab98d1ce
+source-git-commit: f1aed22d04bc0170b533bc088bb1a8e187b44dce
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 78%
+source-wordcount: '237'
+ht-degree: 1%
 
 ---
 
 # Étendre un schéma{#extend-schemas}
 
-Cet article décrit comment configurer des schémas d&#39;extension afin d&#39;étendre le modèle de données conceptuel de la base de données Adobe Campaign.
+En tant qu’utilisateur technique, vous pouvez personnaliser le modèle de données Campaign pour répondre aux besoins de votre mise en oeuvre : ajouter des éléments à un schéma existant, modifier un élément dans un schéma ou supprimer des éléments.
+
+Les étapes clés pour personnaliser le modèle de données Campaign sont les suivantes :
+
+1. Création d’un schéma d&#39;extension
+1. Mettre à jour la base de données Campaign
+1. Adaptez le formulaire de saisie
+
+>[!CAUTION]
+>Le schéma intégré ne doit pas être modifié directement. Si vous devez adapter un schéma intégré, vous devez l&#39;étendre.
 
 : bulb: Pour une meilleure compréhension des tableaux intégrés de Campaign et de leur interaction, consultez [cette page](datamodel.md).
 
-La structure physique et logique des données véhiculées dans l&#39;application est décrite en XML et respecte une grammaire propre à Adobe Campaign appelée **schéma**.
+Pour étendre un schéma, procédez comme suit :
 
-Un schéma est un document XML associé à une table de la base de données, il définit la structuration des données et décrit la définition SQL de la table :
+1. Accédez au dossier **[!UICONTROL Administration > Configuration > Data schémas]** dans l’Explorateur.
+1. Cliquez sur le bouton **Nouveau** et sélectionnez **[!UICONTROL Étendre les données d&#39;un tableau à l&#39;aide d&#39;un schéma d&#39;extension]**.
 
-* le nom de la table,
-* des champs ;
-* les liens avec les autres tables,
+   ![](assets/extend-schema-option.png)
 
-mais aussi la structure XML utilisée pour stocker les données :
+1. Identifiez le schéma intégré à étendre et sélectionnez-le.
 
-* Eléments et attributs
-* la hiérarchie entre les éléments,
-* les types des éléments et des attributs,
-* Les valeurs par défaut
-* les libellés, les descriptions et autres propriétés.
+   ![](assets/extend-schema-select.png)
 
-Les schémas servent à définir en base une entité. A chaque entité, correspond un schéma.
+   Par convention, nommez le schéma d&#39;extension de la même manière que le schéma intégré et utilisez un espace de nommage personnalisé.
 
-## Syntaxe des schémas {#syntax-of-schemas}
+   ![](assets/extend-schema-validate.png)
 
-L’élément racine du schéma est **`<srcschema>`**. Il contient les sous-éléments **`<element>`** et **`<attribute>`**.
+1. Une fois dans l’éditeur de schémas, ajoutez les éléments dont vous avez besoin à l’aide du menu contextuel, puis enregistrez.
 
-Le premier sous-élément **`<element>`** correspond à la racine de l’entité.
+   ![](assets/extend-schema-edit.png)
 
-```
-<srcSchema name="recipient" namespace="cus">
-  <element name="recipient">  
-    <attribute name="lastName"/>
-    <attribute name="email"/>
-    <element name="location">
-      <attribute name="city"/>
+   Dans l’exemple ci-dessous, nous ajoutons l’attribut Année d’adhésion, nous appliquons une limite de longueur pour le nom (cette limite remplacera la valeur par défaut) et nous supprimons la date de naissance du schéma intégré.
+
+   ```
+   <srcSchema created="YY-MM-DD" desc="Recipient table" extendedSchema="nms:recipient"
+           img="nms:recipient.png" label="Recipients" labelSingular="Recipient" lastModified="YY-MM-DD"
+           mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:srcSchema">
+   <element desc="Recipient table" img="nms:recipient.png" label="Recipients" labelSingular="Recipient"
+           name="recipient">
+   <attribute name="Membership Year" label="memberYear" type="long"/>
+   <attribute length="50" name="lastName"/>
+   <attribute _operation="delete" name="birthDate"/>
    </element>
-  </element>
-</srcSchema>
-```
+   </srcSchema> 
+   ```
 
->[!NOTE]
->
->L&#39;élément racine de l&#39;entité porte le nom du schéma.
-
-![](assets/schema_and_entity.png)
-
-Les balises **`<element>`** définissent les noms des éléments d’entité. Les balises **`<attribute>`** du schéma définissent les noms des attributs dans les balises **`<element>`** auxquelles elles ont été liées.
-
-## Identification d&#39;un schéma {#identification-of-a-schema}
-
-Un schéma de données est identifié par son nom et son espace de noms.
-
-Un espace de noms permet de regrouper un ensemble de schémas par centres d&#39;intérêt. Par exemple, on utilisera l&#39;espace de noms **cus** pour le paramétrage spécifique aux clients (**customers**).
-
->[!CAUTION]
->
->Par convention, le nom de l&#39;espace de noms doit être concis et ne comprendre que des caractères autorisés conformes aux règles de nommage des noms XML.
->
->Les identifieurs ne doivent pas commencer par des caractères numériques.
-
-Certains espaces de noms sont réservés pour la description des entités systèmes nécessaires au bon fonctionnement de l&#39;application Adobe Campaign :
-
-* **xxl** : concernant les schémas de base de données Cloud,
-* **xtk** : relatif aux données système de la plateforme,
-* **nl** : relatif à l&#39;utilisation globale de l&#39;application,
-* **nms** : relatif à la diffusion (destinataire, diffusion, tracking, etc.),
-* **ncm** : relatif à la gestion de contenu,
-* **temp** : réservé aux schémas temporaires.
-
-La clé d&#39;identification d&#39;un schéma est une chaîne créée à l&#39;aide de l&#39;espace de nommage et du nom séparés par deux-points ; par exemple : **nms:destinataire**.
+1. Mettez à jour la structure de la base de données pour appliquer vos modifications. [En savoir plus](update-database-structure.md)
+1. Une fois les modifications mises en oeuvre dans la base de données, vous pouvez adapter le formulaire d’entrée du destinataire pour rendre vos modifications visibles. [En savoir plus](forms.md)
