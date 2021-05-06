@@ -4,22 +4,95 @@ product: campaign
 title: Utilisation des schémas Campaign
 description: Commencer avec les schémas
 translation-type: tm+mt
-source-git-commit: 779542ab70f0bf3812358884c698203bab98d1ce
+source-git-commit: f1aed22d04bc0170b533bc088bb1a8e187b44dce
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 66%
+source-wordcount: '1250'
+ht-degree: 65%
 
 ---
 
 # Utilisation de schémas{#gs-ac-schemas}
 
+La structure physique et logique des données véhiculées dans l&#39;application est décrite en XML et respecte une grammaire propre à Adobe Campaign appelée **schéma**.
+
+Un schéma est un document XML associé à une table de la base de données, il définit la structuration des données et décrit la définition SQL de la table :
+
+* le nom de la table,
+* des champs ;
+* les liens avec les autres tables,
+
+mais aussi la structure XML utilisée pour stocker les données :
+
+* Eléments et attributs
+* la hiérarchie entre les éléments,
+* les types des éléments et des attributs,
+* Les valeurs par défaut
+* les libellés, les descriptions et autres propriétés.
+
+Les schémas servent à définir en base une entité. A chaque entité, correspond un schéma.
+
 Dans Adobe Campaign, les schémas de données permettent de :
 
-* définir la façon dont les objets de l&#39;application sont liés à des tables de la base de données ;
+* Définissez comment l’objet de données de l’application est lié aux tables de base de données sous-jacentes.
 * définir des liens entre les différents objets de l&#39;application ;
 * définir et décrire les champs individuels inclus dans chaque objet.
 
 Pour une meilleure compréhension des tables intégrées de Campaign et de leur interaction, consultez [cette section](datamodel.md).
+
+>[!CAUTION]
+>
+>Certains schémas Campaign intégrés comportent un schéma associé sur la base de données Cloud. Ces schémas sont identifiés par l&#39;espace de nommage **Xxl** et ne doivent pas être modifiés.
+
+## Syntaxe des schémas {#syntax-of-schemas}
+
+L’élément racine du schéma est **`<srcschema>`**. Il contient les sous-éléments **`<element>`** et **`<attribute>`**.
+
+Le premier sous-élément **`<element>`** correspond à la racine de l’entité.
+
+```
+<srcSchema name="recipient" namespace="cus">
+  <element name="recipient">  
+    <attribute name="lastName"/>
+    <attribute name="email"/>
+    <element name="location">
+      <attribute name="city"/>
+   </element>
+  </element>
+</srcSchema>
+```
+
+>[!NOTE]
+>
+>L&#39;élément racine de l&#39;entité porte le nom du schéma.
+
+![](assets/schema_and_entity.png)
+
+Les balises **`<element>`** définissent les noms des éléments d’entité. Les balises **`<attribute>`** du schéma définissent les noms des attributs dans les balises **`<element>`** auxquelles elles ont été liées.
+
+## Identification d&#39;un schéma {#identification-of-a-schema}
+
+Un schéma de données est identifié par son nom et son espace de noms.
+
+Un espace de noms permet de regrouper un ensemble de schémas par centres d&#39;intérêt. Par exemple, on utilisera l&#39;espace de noms **cus** pour le paramétrage spécifique aux clients (**customers**).
+
+>[!CAUTION]
+>
+>Par convention, le nom de l&#39;espace de noms doit être concis et ne comprendre que des caractères autorisés conformes aux règles de nommage des noms XML.
+>
+>Les identifieurs ne doivent pas commencer par des caractères numériques.
+
+## Espaces de nommage réservés
+
+Certains espaces de nommage sont réservés à la description des entités système requises pour le fonctionnement de l&#39;application Adobe Campaign. L&#39;espace de nommage **suivant ne doit pas être utilisé** pour identifier un nouveau schéma, dans toute combinaison majuscule/minuscule :
+
+* **xxl** : réservé aux schémas de base de données Cloud,
+* **xtk** : réservé aux données du système de la plate-forme,
+* **nl** : réservé à l&#39;utilisation globale de la demande,
+* **nms** : réservé aux diffusions (destinataire, diffusion, suivi, etc.),
+* **ncm** : réservé à la gestion de contenu,
+* **temp** : réservé aux schémas temporaires.
+
+La clé d&#39;identification d&#39;un schéma est une chaîne créée à l&#39;aide de l&#39;espace de nommage et du nom séparés par deux-points ; par exemple : **nms:destinataire**.
 
 ## Créer ou étendre des schémas Campaign {#create-or-extend-schemas}
 
@@ -32,6 +105,7 @@ Pour ajouter un tout nouveau type de données qui n’existe pas en Adobe Campai
 : bulb: Pour plus d&#39;informations à ce sujet, consultez [Création d&#39;un nouveau schéma](create-schema.md).
 
 ![](assets/schemaextension_1.png)
+
 
 Une fois que vous avez créé ou étendu un schéma à utiliser, la meilleure pratique consiste à définir ses éléments de contenu XML dans l’ordre dans lequel ils apparaissent ci-dessous.
 
