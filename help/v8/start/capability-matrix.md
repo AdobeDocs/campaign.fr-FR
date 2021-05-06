@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
 translation-type: tm+mt
-source-git-commit: 04859274593f507a0b07f46cf6a65434b6a4bc60
+source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '549'
 ht-degree: 3%
 
 ---
@@ -33,9 +33,9 @@ En tant qu’utilisateur Campaign Classic, notez que la plupart des fonctionnali
 
 ## Modifications de la configuration du produit
 
-### Campaign et Snowflake {#ac-gs-snowflake}
+### Campaign et [!DNL Snowflake] {#ac-gs-snowflake}
 
-L’enregistrement Cloud est effectué dans le Snowflake : un nouveau compte externe assure la connectivité avec la base de données Cloud. [En savoir plus](#ac-gs-snowflake).
+L’enregistrement Cloud est effectué dans [!DNL Snowflake] : un nouveau compte externe assure la connectivité avec la base de données Cloud. [En savoir plus](#ac-gs-snowflake).
 
 C&#39;est un changement fondamental dans l&#39;architecture logicielle. Les données sont maintenant distantes : Campaign fédére l&#39;ensemble des données, y compris les Profils. Le processus Campaign évolue désormais de bout en bout, du ciblage à l’exécution de Diffusions : L’assimilation des données, la segmentation, le ciblage, les requêtes et l’exécution des Diffusions s’exécuteront désormais en quelques minutes.
 
@@ -45,7 +45,7 @@ Un nouveau **compte externe** intégré est dédié à la FDA complète. C&#39;e
 
 Tout schéma/table intégré qui doit être déplacé ou répliqué dans Cloud Database est fourni avec une extension de schéma intégrée sous espace de nommage **xxl**. En ce qui concerne l&#39;extension de schéma, le nouvel espace de nommage XXL sera utilisé pour toute nouvelle configuration d&#39;OOTB comme JavaScript, JSSP, etc.
 
-Ces extensions contiennent toutes les modifications nécessaires pour déplacer les schémas intégrés de la base de données locale Campaign vers la base de données Snowflake Cloud et pour adapter leur structure en conséquence : nouveau UUID, liens mis à jour, etc.
+Ces extensions contiennent toute modification nécessaire pour déplacer les schémas intégrés de la base de données locale de Campaign vers la base de données [!DNL Snowflake] Cloud et pour adapter leur structure en conséquence : nouveau UUID, liens mis à jour, etc.
 
 >[!CAUTION]
 >
