@@ -5,9 +5,9 @@ title: Architecture générale
 description: Architecture générale de Campaign v8
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
 translation-type: tm+mt
-source-git-commit: 1bdc1f03a824f8867ae6066196e8e3984fa73af7
+source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1162'
 ht-degree: 55%
 
 ---
@@ -118,7 +118,7 @@ Ce processus maintient les statistiques du nombre de connexions, de messages env
 
 ## Conteneurs de base de données {#db-containers}
 
-La base de données Adobe Campaign Cloud repose sur le Snowflake qui contient les données fonctionnelles (profils, abonnements, contenu, etc.), les données techniques (tâches et journaux de diffusion, logs de tracking, etc.) et les données de travail (achats, pistes) pour la solution, et tous les composants Adobe Campaign communiquent avec la base de données afin d&#39;exécuter leurs tâches spécifiques.
+La base de données Adobe Campaign Cloud repose sur [!DNL Snowflake] qui contient les données fonctionnelles (profils, abonnements, contenu, etc.), les données techniques (travaux de diffusion et journaux, logs de tracking, etc.). et les données de travail (achats, pistes) pour la solution, et tous les composants Adobe Campaign communiquent avec la base de données afin d&#39;exécuter leurs tâches spécifiques.
 
 Les clients peuvent déployer Adobe Campaign à l’aide de la banque de données et des schémas prédéfinis et peuvent également l’étendre. Toutes les données du magasin de données sont accessibles par Adobe Campaign via des appels SQL. Adobe Campaign fournit également un ensemble complet d&#39;outils Extract Transform and Load (ETL) pour importer et exporter des données dans le système et en dehors.
 
