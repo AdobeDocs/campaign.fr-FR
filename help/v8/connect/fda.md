@@ -1,13 +1,13 @@
 ---
-solution: Campaign Classic
-product: campaign
+solution: Campaign
+product: Adobe Campaign
 title: Utilisation de bases de données Campaign et externes (FDA)
 description: Découvrez comment utiliser les bases de données Campaign et externes
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 57cd4fb8287cdcc16b4ed803a31b3b84840b2834
+source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 19%
