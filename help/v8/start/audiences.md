@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 81a6d365554d87b020d47be6fd6a896f8ad33d57
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 41%
+source-wordcount: '705'
+ht-degree: 38%
 
 ---
 
@@ -64,7 +64,7 @@ Le ciblage peut être créé au moyen d’une combinaison de requêtes dans une 
 
 Conformément à votre contrat, chacune de vos instances Campaign est configurée avec un nombre spécifique de profils actifs comptabilisés à des fins de facturation. Consultez votre dernier contrat pour connaître le nombre de profils actifs achetés.
 
-&quot;Profil&quot; : un enregistrement d&#39;information (p. ex. : un enregistrement dans la table [Destinataire](../dev/datamodel.md) ou une table externe contenant un ID de cookie, un ID de client, un identifiant de mobile ou d&#39;autres informations pertinentes pour un canal particulier) représentant un client final, une prospect ou une piste. Les profils sont considérés comme actifs s’ils ont été ciblés ou ont fait l’objet d’une communication via un canal au cours des 12 derniers mois.
+&quot;Profil&quot; : un enregistrement d&#39;information (p. ex. : un enregistrement dans la table [Destinataire](../dev/datamodel.md) ou une table externe contenant un ID de cookie, un ID de client, un identifiant de mobile ou d&#39;autres informations pertinentes pour un canal particulier) représentant un client final, une prospect ou une piste. Les profils sont considérés comme principaux s&#39;ils ont été ciblés ou communiqués au cours des 12 derniers mois par l&#39;intermédiaire d&#39;un canal quelconque.
 
 Vous pouvez contrôler le nombre de profils principaux utilisés sur vos instances directement à partir du Panneau de Contrôle Campaign.
 
