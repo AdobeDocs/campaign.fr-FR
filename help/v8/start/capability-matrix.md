@@ -8,17 +8,17 @@ role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: e1308398e5a33f2ad9659ad632aeb05af9916e69
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 3%
+source-wordcount: '526'
+ht-degree: 4%
 
 ---
 
 # Campaign Classic v7 - fonctionnalités de Campaign v8{#gs-matrix}
 
 
-En tant qu’utilisateur Campaign Classic v7, vous devez vous attendre à toute perturbation importante de la façon dont vous jouez habituellement avec Adobe Campaign. La plupart des modifications ne sont pas visibles, à l’exception des petites modifications qui apparaissent dans l’interface utilisateur et les étapes de configuration.
+En tant qu’utilisateur Campaign Classic v7 existant, vous ne devriez pas vous attendre à des perturbations importantes dans la manière dont vous interagissez habituellement avec Adobe Campaign. La plupart des modifications apportées à la version 8 ne sont pas visibles, à l’exception des petites modifications apparaissant dans l’interface utilisateur et les étapes de configuration.
 
 Changements clés :
 
@@ -37,15 +37,15 @@ En tant qu’utilisateur Campaign Classic, notez que la plupart des fonctionnali
 
 L’enregistrement Cloud est effectué dans [!DNL Snowflake] : un nouveau compte externe assure la connectivité avec la base de données Cloud. [En savoir plus](#ac-gs-snowflake).
 
-C&#39;est un changement fondamental dans l&#39;architecture logicielle. Les données sont maintenant distantes : Campaign fédére l&#39;ensemble des données, y compris les Profils. Le processus Campaign évolue désormais de bout en bout, du ciblage à l’exécution de Diffusions : L’assimilation des données, la segmentation, le ciblage, les requêtes et l’exécution des Diffusions s’exécuteront désormais en quelques minutes.
+C&#39;est un changement fondamental dans l&#39;architecture logicielle. Les données sont maintenant distantes et Campaign fédére l&#39;ensemble des données, y compris les Profils. Les processus Campaign évoluent désormais de bout en bout, du ciblage à l’exécution des messages : l’assimilation des données, la segmentation, le ciblage, les requêtes et les diffusions s’exécutent désormais en quelques minutes.
 
-Cette nouvelle version résout tout le défi de l&#39;évolutivité, en maintenant le même niveau de flexibilité et d&#39;extensibilité. Le nombre de profils est presque illimité et la rétention des données peut être étendue.
+Cette nouvelle version résout le défi de la mise à l&#39;échelle tout en conservant le même niveau de flexibilité et d&#39;extensibilité. Le nombre de profils est presque illimité et la rétention des données peut être étendue.
 
 Un nouveau **compte externe** intégré est dédié à la FDA complète. C&#39;est le coeur de la connectivité de la base de données Cloud. Nous vous recommandons de partir tel quel.
 
-Tout schéma/table intégré qui doit être déplacé ou répliqué dans Cloud Database est fourni avec une extension de schéma intégrée sous espace de nommage **xxl**. En ce qui concerne l&#39;extension de schéma, le nouvel espace de nommage XXL sera utilisé pour toute nouvelle configuration d&#39;OOTB comme JavaScript, JSSP, etc.
+Tout schéma/table intégré qui doit être déplacé ou répliqué dans Cloud Database est fourni avec une extension de schéma intégrée sous l&#39;espace de nommage **xxl**.
 
-Ces extensions contiennent toute modification nécessaire pour déplacer les schémas intégrés de la base de données locale de Campaign vers la base de données [!DNL Snowflake] Cloud et pour adapter leur structure en conséquence : nouveau UUID, liens mis à jour, etc.
+Ces extensions contiennent toute modification nécessaire pour déplacer les schémas intégrés de la base de données locale Campaign vers la base de données [!DNL Snowflake] Cloud et pour adapter leur structure en conséquence : nouveau UUID, liens mis à jour, etc.
 
 >[!CAUTION]
 >
@@ -59,41 +59,39 @@ Un processus technique spécifique gère la réplication des tables qui doivent 
 >[!NOTE]
 >
 > Plusieurs stratégies de réplication ont été créées en fonction de la taille du tableau (XS, XL, etc.).
-> Certains tableaux sont répliqués en temps réel, d’autres sur une base horaire. Certaines tables seront mises à jour progressivement, d’autres seront mises à jour.
+> Certains tableaux sont répliqués en temps réel, d’autres le sont toutes les heures. Certaines tables auront des mises à jour incrémentielles, d’autres une mise à jour complète.
 
 
 [En savoir plus sur la réplication des données](../config/replication.md)
 
 ### Gestion des identifiants
 
-Les objets Campaign v8 utilisent désormais **l’identifiant unique (UUID)**, ce qui implique des valeurs uniques illimitées pour identifier les données.
+Les objets Campaign v8 utilisent désormais un **identifiant unique (UUID)**, ce qui permet d’identifier des données à l’aide de valeurs uniques illimitées.
 
 Veuillez noter que cet identifiant est basé sur des chaînes et n’est pas séquentiel.
 
 ### Maintenance simplifiée
 
-Les utilisateurs de Campaign n&#39;ont pas besoin d&#39;être experts en bases de données : plus de workflows longs de maintenance de bases de données ou d&#39;indexation de tables complexes.
+Les utilisateurs de Campaign n&#39;ont pas besoin d&#39;être experts en bases de données : il n&#39;est plus nécessaire d&#39;effectuer des opérations complexes de maintenance des bases de données ou d&#39;indexer des tables complexes.
 
 ## Fonctionnalités indisponibles temporaires{#gs-unavailable-features}
 
-Veuillez noter que certaines fonctionnalités ne sont pas disponibles dans cette première version, mais seront bientôt disponibles, par exemple :
+Notez que certaines fonctionnalités ne sont pas encore disponibles dans cette première version, telles que :
 
 * Marketing Resource Management
 * Marketing distribué
-* Messages d’entrée de Gestion des Offres (module Interaction)
+* Gestion des Offres entrantes (module Interaction)
 * Optimisation des campagnes
 * Gestion de la réaction
-* Marketing social avec Twitter
 * Modèles de déploiement hybrides/sur site
 
 ## Fonctionnalités supprimées{#gs-removed}
 
-Pour s’aligner sur la nouvelle architecture et le nouveau modèle de déploiement de Campaign v8, certaines fonctionnalités Campaign Classic v7 historiques ne sont pas disponibles dans Campaign v8.
+Pour s’aligner sur la nouvelle architecture et le nouveau modèle de déploiement de Campaign v8, certaines fonctionnalités Campaign Classic v7 historiques ne sont plus disponibles dans Campaign v8.
 
 * Bons
 * Tracking web
 * Questionnaires
-* Marketing social avec Facebook
+* Social Marketing
 * Connecteur ACS (Offre privilégiée)
-* Base de données Microsoft SQL
-* Oracle de données
+
