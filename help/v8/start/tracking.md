@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 085648ae3c21971993558f913079877caeef70d7
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '906'
 ht-degree: 36%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 36%
 
 ## Fonctionnalités de suivi dans Campaign
 
-Les fonctionnalités de suivi Campaign permettent de suivre les messages envoyés et vous aident à analyser le comportement des destinataires : ouverture, clics sur des liens, abonnements/désinscription, etc. Vous pouvez accéder aux journaux, rapports et mesures dédiés, requête de la base de données pour examiner les données collectées, etc.
+Les fonctionnalités de suivi Campaign effectuent le suivi des messages envoyés et vous aident à analyser le comportement des destinataires : ouverture, clics sur des liens, abonnements/désinscription, etc. Vous pouvez accéder aux journaux, rapports et mesures dédiés, requête de la base de données pour examiner les données collectées, etc.
 
 :flèche_supérieur_droite :  Pour en savoir plus sur ce sujet, consultez la [documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#tracking-tab).
 
