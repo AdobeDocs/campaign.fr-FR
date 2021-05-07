@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: b39cac492f4605b7d1d7aeb75f6af26a20bf43e6
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '746'
 ht-degree: 12%
 
 ---
@@ -35,7 +35,7 @@ Avant de commencer à implémenter des campagnes marketing, vous devez connaîtr
 
 * **Plan** : le plan marketing peut contenir plusieurs programmes. Il est lié à une période calendaire, dispose d&#39;un budget alloué et peut également être lié à des documents et objectifs.
 
-* **Processus** Campaign : un processus de campagne contient des activités permettant de créer la logique de campagne. L’utilisation de workflows de campagne permet de définir des audiences et de créer des diffusions pour tous les canaux disponibles.
+* **Processus** Campaign : un processus de campagne contient des activités permettant de créer la logique de campagne. Utilisez des workflows de campagne pour définir des audiences et créer des diffusions pour tous les canaux disponibles.
 
 * **Campagnes** récurrentes : les campagnes récurrentes sont créées à partir d’un modèle spécifique définissant le modèle de processus à exécuter et le calendrier d’exécution.
 
