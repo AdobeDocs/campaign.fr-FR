@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 9b6190f48373b772a72d6c1ef1b7510ec41112be
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1159'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ Dans cette section, vous apprendrez comment adapter l&#39;Adobe Campaign aux exi
 
 ## Avant de commencer
 
-Cette section contient des informations à l’intention des développeurs spécifiques à leur mise en oeuvre sur la protection de la vie privée et la sécurité avant de commencer.
+Cette section contient des informations essentielles sur la confidentialité et la sécurité qui doivent être examinées et prises en compte avant même de commencer la mise en oeuvre.
 
 ### Confidentialité
 
@@ -62,7 +62,7 @@ Avant de commencer à envoyer des messages et à créer des campagnes marketing,
 
 1. Importer des profils et créer des audiences
 
-   Campaign vous aide à ajouter des contacts à la base de données Cloud. Vous pouvez charger un fichier, planifier et automatiser plusieurs mises à jour des contacts, collecter des données sur le Web ou saisir des informations sur les profils directement dans la table du destinataire.
+   Campaign vous aide à ajouter des contacts à la base de données Cloud. Vous pouvez charger un fichier, planifier et automatiser plusieurs mises à jour des contacts, collecter des données sur le Web ou saisir des informations sur le profil directement dans la table du destinataire.
 
    : bulb: [Découvrez comment importer des profils](import.md).
 
@@ -88,7 +88,7 @@ Avant de commencer à envoyer des messages et à créer des campagnes marketing,
 
 1. Familiarisez-vous avec le modèle de données intégré Campaign
 
-   Un modèle de données d’usine est fourni avec Adobe Campaign. Pour mettre en oeuvre et personnaliser votre environnement, vous devez connaître les tableaux intégrés du modèle de données Adobe Campaign et leur interaction.
+   Un modèle de données d’usine est fourni avec Adobe Campaign. Pour mettre en oeuvre et personnaliser votre environnement, vous devez connaître les tableaux intégrés du modèle de données Adobe Campaign et la manière dont ils sont liés les uns aux autres.
 
    : bulb: [En savoir plus sur le modèle de données Campaign](../dev/datamodel.md).
 
