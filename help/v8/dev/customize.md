@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: ddf60fb823cb0df99bdf3bc99f17d7a1abe6a33b
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 19%
+source-wordcount: '562'
+ht-degree: 18%
 
 ---
 
@@ -25,13 +25,13 @@ Découvrez comment **personnaliser votre instance Campaign**
 
 ## Créer de nouveaux champs et schémas de données
 
-Dans Adobe Campaign, les schémas de données permettent de :
+Adobe Campaign utilise les Schémas de données pour :
 
 * Définir comment les objets de données de l&#39;application sont liés aux tables de base de données sous-jacentes
 * Définir des liens entre les différents objets de données dans l&#39;application Campaign
 * définir et décrire les champs individuels inclus dans chaque objet
 
-Vous pouvez ajouter un champ à un tableau existant, tel que le tableau destinataire (nms:destinataire), vous devez étendre ce schéma.
+Par exemple, pour ajouter un champ à un tableau existant, tel que le tableau destinataire (nms:destinataire), vous devez étendre ce schéma.
 
 Deux modes d’extension de table sont disponibles :
 
@@ -44,7 +44,7 @@ Deux modes d’extension de table sont disponibles :
    : bulb: Découvrez comment étendre un schéma existant dans [cette section](../dev/extend-schema.md).
 
 
-Vous pouvez créer de nouvelles tables dans la base de données Campaign et étendre le modèle de données intégré.
+Vous pouvez également créer de nouvelles tables dans la base de données Campaign et étendre le modèle de données intégré.
 
 Pour ajouter un nouveau type de données qui n&#39;existe pas par défaut dans Adobe Campaign (une table des contrats par exemple), vous pouvez directement créer un schéma personnalisé. Pour plus d&#39;informations à ce sujet, reportez-vous à [cet exemple](../dev/create-schema.md#example--creating-a-contract-table).
 
@@ -57,7 +57,7 @@ Pour ajouter un nouveau type de données qui n&#39;existe pas par défaut dans A
 
 ## Modification des formulaires d’entrée
 
-Les formulaires d’entrée Campaign peuvent être adaptés à votre mise en oeuvre. Vous pouvez ajouter ou supprimer des champs en modifiant le contenu XML.
+Les formulaires d’entrée Campaign peuvent être adaptés à votre mise en oeuvre. Vous pouvez ajouter ou supprimer des champs de formulaire en modifiant le contenu XML.
 
 : bulb: Découvrez comment modifier un formulaire de saisie existant ou créer un nouveau formulaire dans [cette section](../dev/forms.md).
 
