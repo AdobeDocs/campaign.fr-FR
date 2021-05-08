@@ -7,9 +7,9 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: e068642c1bc5bf5f0329fc09f7ca6ddbd1683d6a
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1546'
 ht-degree: 73%
 
 ---
@@ -20,10 +20,10 @@ Les messages transactionnels (Message Center) sont un module de gestion des mess
 
 :speak_bulon: En tant qu&#39;utilisateur Cloud Services géré, [contactez l&#39;Adobe](../start/support.md#support) pour installer et configurer la messagerie active Campaign Transactional dans votre environnement.
 
-Les messages transactionnels sont utilisés pour :
+Les messages transactionnels sont utilisés pour envoyer :
 
 * notifications, telles que les confirmations de commande ou les réinitialisations de mot de passe, par exemple
-* envoyer une réponse individuelle en temps réel à une action client
+* réponse individuelle en temps réel à une action client
 * contenu non promotionnel
 
 : bulb: Les paramètres de messagerie transactionnelle sont détaillés dans [cette section](../config/transactional-msg-settings.md).
@@ -116,7 +116,7 @@ Une adresse de départ vous permet d’afficher une prévisualisation de votre m
 
    ![](assets/messagecenter_create_seed_4.png)
 
-1. Insérez les données de test. Reportez-vous à [cette section](#personalization-data).
+1. Insérez les données de test. Consultez [cette section](#personalization-data).
 
    ![](assets/messagecenter_create_custo_3.png)
 
