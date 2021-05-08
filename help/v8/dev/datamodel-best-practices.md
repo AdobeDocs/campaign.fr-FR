@@ -4,10 +4,10 @@ product: Adobe Campaign
 title: Bonnes pratiques relatives au modèle de données
 description: Découvrez les meilleures pratiques relatives à l'extension de modèle de données Campaign
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 8da6928096feec988d6495fdb617dda7d7cac6ff
 workflow-type: tm+mt
-source-wordcount: '2713'
-ht-degree: 88%
+source-wordcount: '2668'
+ht-degree: 85%
 
 ---
 
@@ -17,7 +17,7 @@ Ce document présente les principales recommandations lors de la conception de v
 
 Le système Adobe Campaign est très flexible et peut être étendu au-delà de la mise en oeuvre initiale. Toutefois, même si les possibilités sont infinies, il est essentiel de prendre des décisions judicieuses et de construire des bases solides pour commencer à concevoir votre modèle de données.
 
-Pour une meilleure compréhension des tables intégrées de Campaign et de leur interaction, consultez [cette section](datamodel.md) .
+Pour une meilleure compréhension des tableaux intégrés de Campaign et de leur relation les uns avec les autres, consultez [cette section](datamodel.md) .
 
 : bulb: Lisez [cette section](schemas.md) pour commencer à utiliser les schémas Campaign.
 
@@ -59,7 +59,7 @@ S’il n’appartient à aucune de ces catégories, il est probable que vous n�
 Pour optimiser l’architecture et les performances de votre système, appliquez les bonnes pratiques suivantes pour configurer les données dans Adobe Campaign.
 
 * Une table volumineuse doit essentiellement contenir des champs numériques et des liens vers des tables de référence (si vous utilisez des listes de valeurs).
-* L’attribut **expr** permet de définir un attribut de schéma sous la forme d’un champ calculé plutôt que d’une valeur physique définie dans une table. Vous pouvez ainsi accéder aux informations dans un format différent (par exemple, l’âge et la date de naissance) sans avoir à stocker les deux valeurs. Il s’agit d’un bon moyen d’éviter la duplication des champs. Par exemple, la table des destinataires utilise une expression relative au domaine qui est déjà présente dans le champ de l’email.
+* L’attribut **expr** permet de définir un attribut de schéma sous la forme d’un champ calculé plutôt que d’une valeur physique définie dans une table. Cela peut permettre d&#39;accéder aux informations sous un format différent (par exemple, pour l&#39;âge et la date de naissance) sans avoir à stocker les deux valeurs. Il s’agit d’un bon moyen d’éviter la duplication des champs. Par exemple, la table des destinataires utilise une expression relative au domaine qui est déjà présente dans le champ de l’email.
 * Toutefois, lorsque le calcul de l’expression est complexe, il n’est pas recommandé d’utiliser l’attribut **expr**, car le calcul à la volée peut avoir une incidence sur les performances de vos requêtes.
 * Le type **XML** est un bon moyen d’éviter de créer des champs superflus. Cependant, il occupe aussi un certain volume d’espace disque, car il utilise une colonne CLOB dans la base de données. Il peut aussi contribuer à la complexité des requêtes SQL et avoir un impact sur les performances.
 * La longueur d’un champ de **chaîne** doit toujours être définie avec la colonne. Dans Adobe Campaign, la longueur maximale est de 255 par défaut, mais Adobe recommande de raccourcir le champ si vous savez déjà que la taille ne dépassera pas une longueur inférieure.
@@ -67,9 +67,8 @@ Pour optimiser l’architecture et les performances de votre système, appliquez
 
 ### Choix des champs {#choice-of-fields}
 
-Un champ doit être stocké dans une table s’il est destiné à un ciblage ou une personnalisation. En d’autres termes, si un champ n’est pas utilisé pour envoyer un email personnalisé ou comme critère dans une requête, il occupe de l’espace disque alors qu’il est inutile.
+Un champ doit être stocké dans une table s’il est destiné à un ciblage ou une personnalisation. En d’autres termes, si un champ n’est pas utilisé pour envoyer un courriel personnalisé ou utilisé comme critère dans une requête, il prendra inutilement de l’espace disque.
 
-Pour les instances hybrides et on-premise, le module FDA (Federated Data Access, fonctionnalité facultative d’accès aux données externes) répond à la nécessité d’ajouter un champ « à la volée » lors d’un processus de campagne. Si vous disposez de l’option FDA, vous n’avez pas besoin de tout importer. Pour plus d&#39;informations à ce sujet, reportez-vous à [Federated Data Access](../connect/fda.md).
 
 ### Choix des clés {#choice-of-keys}
 
@@ -97,7 +96,7 @@ Le tableau ci-après décrit ces identifiants et leur finalité.
 | Nom (ou nom interne) | <ul><li>Cette information est l’identifiant unique d’un enregistrement dans une table. Cette valeur peut être mise à jour manuellement, généralement avec un nom généré.</li><li>Cet identifiant conserve sa valeur lorsqu’il est déployé dans une autre instance d’Adobe Campaign et ne doit pas être vide.</li></ul> | <ul><li>Changez le nom d’enregistrement généré par Adobe Campaign si l’objet est destiné à être déployé d’un environnement à un autre.</li><li>Si un objet possède un attribut d’espace de noms (par exemple, *schema*), cet espace de noms commun sera appliqué à tous les objets personnalisés créés. Certains espaces de noms réservés ne doivent pas être utilisés : *nms*, *xtk*.</li><li>Lorsqu’un objet n’a pas d’espace de noms (*workflow* ou *delivery*, par exemple), cette notion d’espace de noms est ajoutée sous la forme d’un préfixe d’un objet de nom interne : *namespaceMyObjectName*.</li><li>N’utilisez pas de caractères spéciaux tels que l’espace « », le point-virgule « ; » ou le tiret « - ». Tous ces caractères seront remplacés par un trait de soulignement « _ » (caractère autorisé). Par exemple, « abc-def » et « abc:def » seront stockés sous la forme de « abc_def » et s’écraseront mutuellement.</li></ul> |
 | Libellé | <ul><li>Le libellé est l’identifiant d’entreprise d’un objet ou d’un enregistrement dans Adobe Campaign.</li><li>Cet objet autorise les espaces et les caractères spéciaux.</li><li>Il ne garantit pas le caractère unique d&#39;un enregistrement.</li></ul> | <ul><li>Il est recommandé de déterminer une structure pour les libellés de vos objets.</li><li>Il s’agit de la solution la plus conviviale pour identifier un enregistrement ou un objet pour un utilisateur d’Adobe Campaign.</li></ul> |
 
-La clé Principale est un identifiant UUID généré automatiquement pour toutes les tables intégrées et peut être identique pour les tables personnalisées.
+La clé Principale est un identifiant UUID généré automatiquement pour toutes les tables intégrées. Un UUID peut également être utilisé pour les tables personnalisées.
 
 Même si le nombre d’identifiants est illimité, vous devez prendre en charge la taille de votre base de données pour garantir des performances optimales. Pour éviter tout problème, veillez à ajuster les paramètres de purge de votre instance. Pour plus d’informations à ce sujet, consultez [cette section](#data-retention).
 
@@ -123,7 +122,7 @@ Pour la création d’une table personnalisée, vous avez deux possibilités :
 
 ### Liens {#links}
 
-Attention à l’intégrité « propre » des grandes tables. La suppression d’enregistrements possédant des tables volumineuses avec une intégrité qui leur est propre peut arrêter l’instance. La table est verrouillée et les suppressions sont faites une par une. Il est donc préférable d’appliquer une intégrité « neutre » sur les tables enfants très volumineuses.
+Attention à l’intégrité « propre » des grandes tables. La suppression d’enregistrements dont l’intégrité est &quot;propre&quot; à des tables de grande taille peut potentiellement arrêter l’instance. La table est verrouillée et les suppressions sont faites une par une. Il est donc préférable d’appliquer une intégrité « neutre » sur les tables enfants très volumineuses.
 
 La déclaration d’un lien en tant que jointure externe est néfaste pour les performances. L’enregistrement Zero ID émule la fonctionnalité de jointure externe. Il n’est pas nécessaire de déclarer des jointures externes si le lien utilise l’autouuid.
 
