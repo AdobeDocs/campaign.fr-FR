@@ -4,10 +4,10 @@ product: Adobe Campaign
 title: Meilleures pratiques de sécurité Campaign
 description: Commencer avec les meilleures pratiques de sécurité de Campaign
 translation-type: tm+mt
-source-git-commit: d758b6ffaee5fdab3f600f58be5a81694162d269
+source-git-commit: 5592dd4e79391d953a4bc54cdd47475417e07b56
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 56%
+source-wordcount: '515'
+ht-degree: 46%
 
 ---
 
@@ -40,9 +40,9 @@ Lorsque vous ajoutez des liens personnalisés à votre contenu, évitez toujours
 
 ## Restriction des données
 
-Vous devez vous assurer que les mots de passe cryptés ne sont pas accessibles par un utilisateur authentifié avec de faibles privilèges. Pour cela, il existe deux méthodes : restreindre l’accès aux champs de mots de passe uniquement ou à l’entité entière (un build >= 8770 est requis).
+Vous devez vous assurer que les mots de passe cryptés ne sont pas accessibles par un utilisateur authentifié avec de faibles privilèges. Pour ce faire, il existe deux moyens principaux : limiter l&#39;accès aux champs de mot de passe uniquement ou à l&#39;entité entière.
 
-Cette restriction vous permet de supprimer les champs de mots de passe. Le compte externe reste toutefois accessible par tous les utilisateurs dans l’interface. En savoir plus sur [cette page](../dev/restrict-pi-view.md).
+Cette restriction vous permet de supprimer des champs de mots de passe, mais laisse le compte externe accessible à tous les utilisateurs depuis l’interface. En savoir plus sur [cette page](../dev/restrict-pi-view.md).
 
 1. Accédez à **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Schémas de données]**.
 
@@ -98,7 +98,7 @@ Cette restriction vous permet de supprimer les champs de mots de passe. Le compt
 
    >[!NOTE]
    >
-   >Vous pouvez remplacer `$(loginId) = 0 or $(login) = 'admin'` par `hasNamedRight('admin')` pour autoriser tous les utilisateurs disposant du droit admin à voir ces mots de passe.
+   >Vous pouvez remplacer `$(loginId) = 0 or $(login) = 'admin'` par `hasNamedRight('admin')` pour permettre à tous les utilisateurs disposant du droit d’administration de voir ces mots de passe.
 
 
 ## Gestion des accès
@@ -115,10 +115,10 @@ La gestion des accès joue un rôle important dans le renforcement de la sécuri
 
 Lorsque vous effectuez des tâches de développement dans Adobe Campaign (workflows, Javascript, JSSP, autres), suivez toujours ces instructions :
 
-* Scripts : évitez si possible d’utiliser des instructions SQL. Utilisez des fonctions paramétrables plutôt que la concaténation de chaîne et évitez toute injection SQL en ajoutant les fonctions SQL à utiliser à la liste autorisée.
+* **Scripts** : évitez si possible d’utiliser des instructions SQL. Utilisez des fonctions paramétrables plutôt que la concaténation de chaîne et évitez toute injection SQL en ajoutant les fonctions SQL à utiliser à la liste autorisée.
 
-* Sécurisation du modèle de données : utilisez des droits nommés pour limiter les actions des opérateurs et ajoutez des filtres système (sysFilter).
+* **Sécurisation du modèle de données** : utilisez des droits nommés pour limiter les actions des opérateurs et ajoutez des filtres système (sysFilter).
 
-* Ajoutez captchas dans les applications Web : ajoutez des casquettes dans vos landings page publics et vos pages d’abonnement.
+* **Ajoutez captchas dans les applications** Web : ajoutez des casquettes dans vos landings page publics et vos pages d’abonnement.
 
 :flèche_supérieur_droite : En savoir plus sur [la documentation Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic)
