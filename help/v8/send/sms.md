@@ -7,10 +7,10 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: bbaa603e73d4c1618f326624600ea3d357b265e6
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 26%
+source-wordcount: '309'
+ht-degree: 22%
 
 ---
 
@@ -22,7 +22,7 @@ Les étapes clés pour envoyer un SMS sont détaillées dans les sections suivan
 
 * Découvrez comment configurer un canal SMS dans [la documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#sending-messages)
 * Découvrez comment créer une diffusion SMS dans [la documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html?lang=en#sending-messages)
-* Les étapes permettant d’affiner l’audience sont détaillées [dans cette page](../start/audiences.md).
+* Les étapes de définition de l&#39;audience sont détaillées [dans cette page](../start/audiences.md).
 * Découvrez comment définir le contenu SMS dans la [documentation du Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html?lang=en#defining-the-sms-content)
 * Les outils d&#39;envoi, de surveillance et de suivi des SMS sont décrits dans la [documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-send.html?lang=en#sending-messages).
 * Découvrez comment résoudre les problèmes liés aux diffusions SMS dans la [documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/troubleshooting-sms.html?lang=en#sending-messages)
@@ -30,7 +30,7 @@ Les étapes clés pour envoyer un SMS sont détaillées dans les sections suivan
 Avant d’envoyer des SMS :
 
 * Assurez-vous que les profils des destinataires contiennent au moins un téléphone portable.
-* Lisez Adobe Campaign Classic [Diffusion best practices](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=en#sending-messages) qui s&#39;applique également à Campaign v8.
+* Examinez les [bonnes pratiques de Diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=en#sending-messages) de Adobe Campaign Classic qui s&#39;appliquent également à Campaign v8.
 
 De plus, vous devez connaître le protocole et les paramètres SMS. Découvrez comment établir une connexion entre Adobe Campaign et un fournisseur SMPP dans [ce document](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-protocol.html?lang=en#sending-messages)
 
