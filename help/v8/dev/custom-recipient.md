@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 84ee7eb2bf2e15d30c81f32f6b25c9801b3b12b1
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '253'
 ht-degree: 11%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 11%
 
 Adobe Campaign est livré avec une table de profil intégrée : **nmsRecipient**. Ce tableau comporte un certain nombre de champs et de tableaux prédéfinis qui peuvent être facilement étendus. Pour en savoir plus sur ce tableau, consultez [cette page](datamodel.md#ootb-profiles).
 
-L&#39;extension de table intégrée offre une bonne flexibilité, mais elle ne permet pas de supprimer certains champs ou liens inutilisés. Par conséquent, l’utilisation d’une table de destinataires personnalisée peut s’avérer une bonne option lorsque votre modèle de données diffère considérablement de la structure de table de destinataires intégrée à Campaign ou si vous disposez d’un grand nombre de profils.  Toutefois, cette méthode requiert certaines précautions lors de sa mise en oeuvre.
+L&#39;extension de table intégrée offre la flexibilité, mais elle ne permet pas de supprimer certains champs ou liens inutilisés. Par conséquent, l’utilisation d’une table de destinataires personnalisée peut s’avérer une bonne option lorsque votre modèle de données diffère considérablement de la structure de table de destinataires intégrée à Campaign ou si vous disposez d’un grand nombre de profils.  Toutefois, cette méthode requiert certaines précautions lors de sa mise en oeuvre.
 
 Cette fonctionnalité permet à Adobe Campaign de traiter les données d’une base de données externe : ces données seront utilisées comme un ensemble de profils pour les diffusions. La mise en oeuvre de ce processus implique des limitations telles que :
 
