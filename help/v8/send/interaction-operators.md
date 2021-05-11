@@ -7,9 +7,9 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 113f4b3e91c40438c4809bdb97976b58935a2f18
+source-git-commit: 4bc62dcf806abd71e8230ce209d9151a4188b62e
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '412'
 ht-degree: 40%
 
 ---
@@ -26,7 +26,7 @@ Deux types d’opérateurs peuvent utiliser l’interaction Campaign : **gestion
 
 1. Créez votre nouvel opérateur.
 
-Les étapes de création d’un opérateur dans Campaign sont détaillées dans [la documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html).
+   :flèche_supérieur_droite : Les étapes de création d’un opérateur dans Campaign sont détaillées dans [la documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html).
 
 1. Dans la fenêtre **[!UICONTROL Groupes et droits nommés]**, cliquez sur **[!UICONTROL Ajouter]** et sélectionnez le groupe **[!UICONTROL Chargé d&#39;offres]**.
 
@@ -49,7 +49,8 @@ Notez que si des offres sont utilisées dans un processus, l’opérateur doit �
 ## Créer un opérateur de gestionnaire de Diffusions {#delivery-manager}
 
 1. Créez votre nouvel opérateur.
-Les étapes de création d’un opérateur dans Campaign sont détaillées dans [la documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html).
+
+   :flèche_supérieur_droite : Les étapes de création d’un opérateur dans Campaign sont détaillées dans [la documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html).
 
 1. Dans la fenêtre **[!UICONTROL Groupes et droits nommés]**, cliquez sur **[!UICONTROL Ajouter]** et sélectionnez le groupe **[!UICONTROL Chargé de diffusion]**.
 
