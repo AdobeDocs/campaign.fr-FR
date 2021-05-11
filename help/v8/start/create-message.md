@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 translation-type: tm+mt
-source-git-commit: 221adcce8951a3884b83d5e5e2de1a73fbe96050
+source-git-commit: 3fe4156149e9ff8724dd1ff5fc17b538e6055ef8
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 22%
+source-wordcount: '686'
+ht-degree: 23%
 
 ---
 
@@ -32,7 +32,8 @@ Adobe Campaign v8 est fourni avec les canaux de diffusion suivants :
 * **Canal** mobile : Les diffusions sur les canaux mobiles vous permettent d&#39;envoyer des SMS personnalisés à la population cible.  En savoir plus sur [cette page](../send/sms.md)
 
 * **Canal** d&#39;application mobile : les diffusions d’applications mobiles vous permettent d’envoyer des notifications aux systèmes iOS et Android.  En savoir plus sur [cette page](../send/push.md)
-* **Canal** DE LIGNE : Les diffusions LINE vous permettent d&#39;envoyer des messages sur LINE, une application de messagerie instantanée disponible sur tous les smartphones. En savoir plus sur [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html)
+
+* **Canal** DE LIGNE : Les diffusions LINE vous permettent d&#39;envoyer des messages sur LINE, une application de messagerie instantanée disponible sur tous les smartphones. En savoir plus sur [cette page](../send/line.md)
 
 ## Choisir comment envoyer vos messages
 
