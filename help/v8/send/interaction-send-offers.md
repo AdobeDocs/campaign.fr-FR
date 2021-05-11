@@ -7,7 +7,7 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
+source-git-commit: fcc0165aeba4347a53d33bed95aa7fbb5fa27005
 workflow-type: tm+mt
 source-wordcount: '1357'
 ht-degree: 73%
@@ -184,7 +184,7 @@ Après avoir configuré votre activité **Requête** :
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix. [En savoir plus](inserting-an-offer-proposition-into-a-delivery).
+1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix. [En savoir plus](#inserting-an-offer-proposition-into-a-delivery).
 
 ### Offres par cellule {#offers-by-cell}
 
