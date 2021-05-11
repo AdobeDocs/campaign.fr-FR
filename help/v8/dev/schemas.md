@@ -4,9 +4,9 @@ product: Adobe Campaign
 title: Utilisation des schémas Campaign
 description: Commencer avec les schémas
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
 workflow-type: tm+mt
-source-wordcount: '1250'
+source-wordcount: '1249'
 ht-degree: 65%
 
 ---
@@ -162,7 +162,7 @@ Les attributs permettent de définir les champs composant votre objet de donnée
 
 ![](assets/schemaextension_2.png)
 
-La liste complète des attributs est disponible dans la section `<attribute>` élément de la section [documentation du Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model). Voici quelques-uns des attributs les plus utilisés : **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label a13/>,**@length **,**@name **,**@notNull **,**@required **,**@ref&lt;a113/ 23/>, **@xml**, **@type**.****
+La liste complète des attributs est disponible dans la section `<attribute>` élément de la [documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model). Voici quelques-uns des attributs les plus utilisés : **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label a13/>,**@length **,**@name **,**@notNull **,**@required **,**@ref&lt;a113/ 23/>, **@xml**, **@type**.****
 
 :flèche_supérieur_droite : Pour plus d&#39;informations sur chaque attribut, consultez la description de l&#39;attribut dans [la documentation du Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic).
 
