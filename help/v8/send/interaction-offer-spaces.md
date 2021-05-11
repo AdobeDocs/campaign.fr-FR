@@ -7,10 +7,10 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 29%
+source-wordcount: '651'
+ht-degree: 24%
 
 ---
 
@@ -19,8 +19,6 @@ ht-degree: 29%
 Le contenu du catalogue d&#39;offres est configuré dans les emplacements. Par défaut, le contenu peut inclure les champs suivants : **[!UICONTROL Titre]**, **[!UICONTROL URL de destination]**, **[!UICONTROL URL d&#39;image]**, **[!UICONTROL contenu HTML]** et **[!UICONTROL Contenu texte]**. La séquence de champs est configurée dans l’emplacement.
 
 En tant qu&#39;**administrateur technique**, vous pouvez créer des emplacements dans l&#39;environnement de conception. Vous devez avoir accès au sous-dossier emplacement. Une fois créés, ces emplacements sont automatiquement dupliqués dans l’environnement en direct lors de l’approbation de l’offre.
-
-Des paramètres avancés vous permettent de définir une clé d&#39;identification du contact (qui peut être composée de plusieurs éléments, comme par exemple le champ nom et le champ email à la fois). Voir à ce sujet la section [Présenter une offre identifiée](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer).
 
 Le rendu HTML est créé au moyen d’une fonction de rendu. La séquence des champs définie dans la fonction de rendu doit être identique à celle configurée dans le contenu.
 
@@ -66,8 +64,6 @@ Pour créer un emplacement, procédez comme suit :
 1. Insérez votre fonction de rendu.
 
    ![](assets/offer_space_create_007.png)
-
-Si nécessaire, vous pouvez surcharger les fonctions de rendu HTML et texte. [En savoir plus](../../interaction/using/about-inbound-channels.md).
 
 ## Etats d&#39;une proposition d&#39;offre {#offer-proposition-statuses}
 
@@ -161,5 +157,5 @@ Si un destinataire n’est éligible à aucune offre, cela est indiqué dans la 
 ![](assets/offer_space_overview_001.png)
 
 <!--
-The preview can ignore contexts when they are restricted to a space. This is the case when the interaction schema has been extended to add fields referenced in a space using an inbound channel (for more on this, refer to [Extension example](../../interaction/using/extension-example.md)).
+The preview can ignore contexts when they are restricted to a space. This is the case when the interaction schema has been extended to add fields referenced in a space using an inbound channel (for more on this, refer to Extension example.
 -->
