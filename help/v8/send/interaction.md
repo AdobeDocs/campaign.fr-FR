@@ -7,7 +7,7 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
+source-git-commit: 6f84e739f25caf5dbd2ef964e38a6264e4b4342b
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 15%
@@ -68,7 +68,7 @@ Avant de commencer, en tant qu&#39;administrateur **Campaign**, vérifiez que vo
 
 1. Créez des profils d’utilisateur. [En savoir plus](interaction-operators.md).
 1. (facultatif) Créez un environnement d’offre pour chaque dimension de ciblage. [En savoir plus](interaction-env.md)
-1. Créez des règles de typologie pour chaque environnement. [En savoir plus](interaction-offers.md#offer-presentation).
+1. Créez des règles de typologie pour chaque environnement. [En savoir plus](interaction-offer.md#offer-presentation).
 1. Créez des emplacements pour chaque environnement et configurez les fonctions de rendu. [En savoir plus](interaction-offer-spaces.md).
 Si l&#39;emplacement est défini sur un canal unitaire en mode identifié, il est nécessaire de spécifier les paramètres avancés de l&#39;emplacement.
 
