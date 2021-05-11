@@ -7,7 +7,7 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 60%
@@ -188,9 +188,9 @@ Vous pouvez maintenant approuver et activer l’offre pour la rendre disponible 
 
 :flèche_supérieur_droite : Pour plus d’informations à ce sujet, consultez la [documentation du Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=en#approving-offer-content).
 
-## Gestion de la présentation des offres
+## Gestion de la présentation des offres{#offer-presentation}
 
-Campaign vous permet de contrôler le flux des Propositions d&#39;offre à l’aide de règles de présentation. Ces règles, spécifiques à Campaign Interaction, sont des règles de typologie. Ils vous permettent d&#39;exclure les offres basées sur l&#39;historique des propositions déjà faites à un destinataire. Ils sont référencés dans l’environnement.
+Campaign vous permet de contrôler le flux des Propositions d&#39;offre à l’aide de règles de présentation. Ces règles, spécifiques à Campaign Interaction, sont **règles de typologie**. Ils vous permettent d&#39;exclure les offres basées sur l&#39;historique des propositions déjà faites à un destinataire. Ils sont référencés dans l’environnement.
 
 :flèche_supérieur_droite : Pour plus d’informations à ce sujet, consultez la [documentation du Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=en#managing-offers).
 
