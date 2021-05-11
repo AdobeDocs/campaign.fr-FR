@@ -8,10 +8,10 @@ breadcrumb-title: Campaign v8
 title: Documentation Campaign v8
 hide: true
 translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: 6f84e739f25caf5dbd2ef964e38a6264e4b4342b
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 44%
+source-wordcount: '197'
+ht-degree: 45%
 
 ---
 
@@ -57,6 +57,7 @@ ht-degree: 44%
          + [Création d’opérateurs](send/interaction-operators.md)
          + [Créer des environnements](send/interaction-env.md)
          + [Création de filtres prédéfinis](send/interaction-predefined-filters.md)
+         + [Création d’emplacements d’offres](send/interaction-offer-spaces.md)
       + [Création d’un catalogue d&#39;offres](send/interaction-offer-catalog.md)
       + [Création d’une offre](send/interaction-offer.md)
       + [Envoyer une offre](send/interaction-send-offers.md)
