@@ -7,7 +7,7 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 15%
@@ -68,22 +68,22 @@ Avant de commencer, en tant qu&#39;administrateur **Campaign**, vérifiez que vo
 
 1. Créez des profils d’utilisateur. [En savoir plus](interaction-operators.md).
 1. (facultatif) Créez un environnement d’offre pour chaque dimension de ciblage. [En savoir plus](interaction-env.md)
-1. Créez des règles de typologie pour chaque environnement. [En savoir plus](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule).
-1. Créez des emplacements pour chaque environnement et configurez les fonctions de rendu. [En savoir plus](../../interaction/using/creating-offer-spaces.md).
+1. Créez des règles de typologie pour chaque environnement. [En savoir plus](interaction-offers.md#offer-presentation).
+1. Créez des emplacements pour chaque environnement et configurez les fonctions de rendu. [En savoir plus](interaction-offer-spaces.md).
 Si l&#39;emplacement est défini sur un canal unitaire en mode identifié, il est nécessaire de spécifier les paramètres avancés de l&#39;emplacement.
 
 ### Créer et publier le catalogue d&#39;offres {#managing-the-offer-catalog-}
 
 En tant que **gestionnaire d’Offres**, vous devez exécuter les tâches suivantes :
 
-1. Créez des catégories d’offre dans les environnements de conception. [En savoir plus](../../interaction/using/creating-offer-categories.md).
-1. Créez des offres dans les environnements de conception. [En savoir plus](../../interaction/using/creating-an-offer.md).
-1. Approuvez et publiez des offres sur un ou plusieurs espaces afin de les rendre disponibles sur des environnements en direct pour le gestionnaire de diffusions. [En savoir plus](../../interaction/using/approving-and-activating-an-offer.md).
+1. Créez des catégories d’offre dans les environnements de conception. [En savoir plus](interaction-offer-catalog.md#creating-offer-categories).
+1. Créez des offres dans les environnements de conception. [En savoir plus](interaction-offer.md).
+1. Approuvez et publiez des offres sur un ou plusieurs espaces afin de les rendre disponibles sur des environnements en direct pour le gestionnaire de diffusions. [En savoir plus](interaction-offer.md#approve-offers).
 
 ### Exploitation du catalogue d&#39;offres {#using-the-offer-catalog-}
 
 En tant que **gestionnaire de Diffusions**, vous devez exécuter les tâches suivantes :
 
 1. Créez une campagne.
-1. Référencez une offre dans la campagne ou la diffusion. [En savoir plus](../../interaction/using/about-outbound-channels.md).
+1. Référencez une offre dans la campagne ou la diffusion. [En savoir plus](interaction-send-offers.md).
 
