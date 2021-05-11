@@ -7,7 +7,7 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 6f84e739f25caf5dbd2ef964e38a6264e4b4342b
+source-git-commit: 3783cb5ed3085b988f573fbf15858377b2bb2e05
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 15%
@@ -21,6 +21,36 @@ Campaign est fourni avec un module d&#39;**Interaction** qui vous permet de rép
 Vous pouvez créer un catalogue d&#39;offres qui s&#39;interface avec vos canaux sortants (courriel, courriel direct, SMS) pour sélectionner la meilleure offre à envoyer à un contact dans un contexte donné. La sélection des meilleures offres pour un destinataire est basée sur **règles d&#39;éligibilité**. Le choix d&#39;une offre parmi un ensemble d&#39;offres pertinentes est déterminé à l&#39;aide de règles de priorité. Les règles de présentation d&#39;Offre tiennent compte de l&#39;historique du contact et évitent de lui faire parvenir plusieurs fois la même offre.
 
 Interaction vous permet de créer et gérer un catalogue d’offres, et de paramétrer les règles d’éligibilité et les thèmes d’application qui leur sont associés. Vous pouvez personnaliser le contenu de votre offre selon le canal choisi à l’aide de différentes représentations. Enfin, pour déterminer l’impact d’une présentation d’offres, vous pouvez utiliser le module de simulation mis à votre disposition.
+
+## Commencer avec les offres
+
+Les étapes clés du début sont énumérées ci-dessous.
+
+### Configuration de votre plateforme
+
+Avant de commencer, en tant qu&#39;administrateur **Campaign**, vérifiez que vous avez effectué les tâches suivantes dans les environnements de conception :
+
+1. Créez des profils d’utilisateur. [En savoir plus](interaction-operators.md).
+1. (facultatif) Créez un environnement d’offre pour chaque dimension de ciblage. [En savoir plus](interaction-env.md)
+1. Créez des règles de typologie pour chaque environnement. [En savoir plus](interaction-offer.md#offer-presentation).
+1. Créez des emplacements pour chaque environnement et configurez les fonctions de rendu. [En savoir plus](interaction-offer-spaces.md).
+Si l&#39;emplacement est défini sur un canal unitaire en mode identifié, il est nécessaire de spécifier les paramètres avancés de l&#39;emplacement.
+
+### Créer et publier le catalogue d&#39;offres {#managing-the-offer-catalog-}
+
+En tant que **gestionnaire d’Offres**, vous devez exécuter les tâches suivantes :
+
+1. Créez des catégories d’offre dans les environnements de conception. [En savoir plus](interaction-offer-catalog.md#creating-offer-categories).
+1. Créez des offres dans les environnements de conception. [En savoir plus](interaction-offer.md).
+1. Approuvez et publiez des offres sur un ou plusieurs espaces afin de les rendre disponibles sur des environnements en direct pour le gestionnaire de diffusions. [En savoir plus](interaction-offer.md#approve-offers).
+
+### Exploitation du catalogue d&#39;offres {#using-the-offer-catalog-}
+
+En tant que **gestionnaire de Diffusions**, vous devez exécuter les tâches suivantes :
+
+1. Créez une campagne.
+1. Référencez une offre dans la campagne ou la diffusion. [En savoir plus](interaction-send-offers.md).
+
 
 ## Concepts et terminologie
 
@@ -57,33 +87,4 @@ Il existe deux types d’environnements :
 * La **Prévisualisation** de l’offre affiche l’offre telle qu’elle est affichée dans son dossier. Il est accessible à partir de la fenêtre des paramètres de l&#39;offre ou du profil de contact.
 * **Les** filtres prédéfinis que les règles de filtrage peuvent prendre en compte les paramètres d’offre (par exemple, un code d’offre). Ils peuvent être réutilisés une fois les offres créées.
 * Un **Rendu de l&#39;offre** est une information utilisée par le canal pour afficher l&#39;offre. Le rendu de l&#39;offre peut être construit à partir de la fonction de rendu de l&#39;espace sur lequel l&#39;offre est représentée ou directement entrée dans l&#39;interface (par exemple, dans le bloc HTML). Une offre peut être représentée par un espace.
-
-## Commencer avec les offres
-
-Les étapes clés du début sont énumérées ci-dessous.
-
-### Configuration de votre plateforme
-
-Avant de commencer, en tant qu&#39;administrateur **Campaign**, vérifiez que vous avez effectué les tâches suivantes dans les environnements de conception :
-
-1. Créez des profils d’utilisateur. [En savoir plus](interaction-operators.md).
-1. (facultatif) Créez un environnement d’offre pour chaque dimension de ciblage. [En savoir plus](interaction-env.md)
-1. Créez des règles de typologie pour chaque environnement. [En savoir plus](interaction-offer.md#offer-presentation).
-1. Créez des emplacements pour chaque environnement et configurez les fonctions de rendu. [En savoir plus](interaction-offer-spaces.md).
-Si l&#39;emplacement est défini sur un canal unitaire en mode identifié, il est nécessaire de spécifier les paramètres avancés de l&#39;emplacement.
-
-### Créer et publier le catalogue d&#39;offres {#managing-the-offer-catalog-}
-
-En tant que **gestionnaire d’Offres**, vous devez exécuter les tâches suivantes :
-
-1. Créez des catégories d’offre dans les environnements de conception. [En savoir plus](interaction-offer-catalog.md#creating-offer-categories).
-1. Créez des offres dans les environnements de conception. [En savoir plus](interaction-offer.md).
-1. Approuvez et publiez des offres sur un ou plusieurs espaces afin de les rendre disponibles sur des environnements en direct pour le gestionnaire de diffusions. [En savoir plus](interaction-offer.md#approve-offers).
-
-### Exploitation du catalogue d&#39;offres {#using-the-offer-catalog-}
-
-En tant que **gestionnaire de Diffusions**, vous devez exécuter les tâches suivantes :
-
-1. Créez une campagne.
-1. Référencez une offre dans la campagne ou la diffusion. [En savoir plus](interaction-send-offers.md).
 
