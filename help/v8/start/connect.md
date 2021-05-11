@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 1ac6b58e1d5731d4df4d6d7c6a9b25f0f41ff563
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 41%
+source-wordcount: '694'
+ht-degree: 38%
 
 ---
 
@@ -19,9 +19,11 @@ ht-degree: 41%
 
 La console cliente Campaign est un client riche qui vous permet de vous connecter à votre ou vos serveur(s) applicatif(s) Campaign.
 
->[!CAUTION]
->
->Avant de commencer, vous devez vérifier la [matrice de compatibilité](compatibility-matrix.md) Campaign, obtenir l’URL de votre serveur Campaign et les informations d’identification de l’utilisateur.
+Avant de commencer, vous devez :
+
+* Vérifiez la compatibilité de votre système et de vos outils avec Adobe Campaign dans la [matrice de compatibilité](compatibility-matrix.md).
+* Obtenir l’URL du serveur Campaign
+* Obtention des informations d’identification de l’utilisateur
 
 ## Téléchargement et installation de la console client
 
@@ -93,7 +95,6 @@ Adobe Campaign vous permet de définir et gérer les permissions attribuées aux
 Pour en savoir plus sur les utilisateurs et comment définir leurs autorisations dans [cette section](permissions.md).
 
 En tant qu’administrateur Campaign, vous êtes chargé de créer les opérateurs et de partager leurs informations d’identification avec les utilisateurs.
-
 
 ## Connectez-vous à Campaign avec votre Adobe ID{#connect-ims}
 
