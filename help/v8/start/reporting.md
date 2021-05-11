@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 43914bcbe3cf0ddb323d99a9df16189a1f687317
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,8 @@ CubesAnalysez et mesurez les données, calculez les statistiques, simplifiez et 
 
 En fonction de la complexité des requêtes, calculs et volumes, les données analysées dans ces rapports peuvent être collectées par une requête et préagrégées dans une liste (processus de type &quot;data Management&quot;) ou dans un Cube (à l’aide de Marketing Analytics). Il s&#39;affichera sous la forme d&#39;un tableau croisé dynamique ou d&#39;une liste de groupe.
 
+
 :flèche_supérieur_droite : Pour plus d&#39;informations sur les fonctionnalités de rapports, [reportez-vous à cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reporting-in-adobe-campaign/about-adobe-campaign-reporting-tools.html).
 
-## Mesures clés à vérifier
+Notez que les rapports Campaign v8 sont optimisés et que l’offre dispose de meilleures fonctionnalités d’échelle que Campaign Classic v7. Les restrictions existantes sur les Cubes ne s&#39;appliquent pas.
 
