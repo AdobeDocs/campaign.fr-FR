@@ -7,7 +7,7 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
+source-git-commit: fcc0165aeba4347a53d33bed95aa7fbb5fa27005
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 24%
@@ -58,7 +58,7 @@ Pour créer un emplacement, procédez comme suit :
 
    **Remarque**  : le format XML est limité aux interactions entrantes qui ne sont pas disponibles temporairement. [En savoir plus](../start/capability-matrix.md#gs-unavailable-features)
 
-   ![](assets/offer_spacecreate_006.png)_
+   ![](assets/offer_space_create_006.png)_
 
 1. Positionnez-vous sur l&#39;onglet **[!UICONTROL Rendu HTML]** et sélectionnez **[!UICONTROL Surcharger la fonction de rendu HTML]**.
 1. Insérez votre fonction de rendu.
