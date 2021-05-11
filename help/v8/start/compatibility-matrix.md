@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 translation-type: tm+mt
-source-git-commit: e94080bc5e56e642494de48ff4b739b806c6e2e7
+source-git-commit: 3fe4156149e9ff8724dd1ff5fc17b538e6055ef8
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 35%
+source-wordcount: '307'
+ht-degree: 33%
 
 ---
 
@@ -50,37 +50,16 @@ Ce document liste tous les systèmes et composants pris en charge pour la derni�
    * HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6
    * Cloudera CDH6.x
 
-### Systèmes d&#39;exploitation de la console cliente{#ClientConsoleoperatingsystems}
+### Console client{#ClientConsoleoperatingsystems}
+
+:warning: Les systèmes d’exploitation et le navigateur suivants sont nécessaires pour utiliser Campaign Client Console.
+
+**Systèmes d’exploitation**
 
 * **Microsoft Windows Server** 2016, 2012
 * **Microsoft Windows** 8, 10 (recommandé pour les instances japonaises)
 
-## Console client {#ClientConsoleoperatingsystems}
-
-:warning: Les systèmes d’exploitation et le navigateur suivants sont nécessaires pour utiliser Campaign Client Console.
-
-### Systèmes d’exploitation
-
-<table>
-<tbody>
-<tr>
-<td>Microsoft Windows Server</td>
-<td>
-<p>2016</p>
-<p>2012</p>
-</td>
-</tr>
-<tr>
-<td>Microsoft Windows</td>
-<td>
-<p>8</p>
-<p>10 (recommandé pour les instances japonaises)</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-### Navigateur
+**Navigateur**
 
 <table>
 <tbody>
@@ -100,7 +79,7 @@ Ce document liste tous les systèmes et composants pris en charge pour la derni�
 * **Android** 7.x, 8.x, 9.0 avec SDK mobile version 1.0.27.
 * **Apple iOS** 9 - 14 avec SDK mobile version 1.0.26, compatible avec les versions 32 et 64 bits.
 
-## Navigateurs pris en charge {#Browsers}
+### Navigateurs pris en charge {#Browsers}
 
 Les navigateurs suivants sont compatibles avec Campaign for Web Access.
 
