@@ -7,10 +7,9 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 51efce79e4195c9d53db167be80c7adcda811e21
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '653'
 ht-degree: 11%
 
 ---
@@ -23,15 +22,15 @@ Campaign est rendu disponible en tant qu’instances individuelles avec chaque i
 
 Trois types d&#39;environnements disponibles avec le Cloud Service Campaign :
 
-* Environnement de production : héberge les applications destinées aux professionnels de l’entreprise.
+* **Environnement** de production : héberge les applications destinées aux professionnels de l’entreprise.
 
-* Environnement d’étape : utilisé pour divers tests de performances et de qualité avant que les modifications apportées à l&#39;application ne soient répercutées sur l&#39;environnement de production.
+* **Environnement** d&#39;étape : utilisé pour divers tests de performances et de qualité avant que les modifications apportées à l&#39;application ne soient répercutées sur l&#39;environnement de production.
 
-* Environnement de développement : permet aux développeurs d’implémenter Campaign dans les mêmes conditions d’exécution que les environnements d’étape et de production.
+* **Environnement** de développement : permet aux développeurs d’implémenter Campaign dans les mêmes conditions d’exécution que les environnements d’étape et de production.
 
 Vous pouvez exporter et importer des packages d’un environnement à l’autre.
 
-:flèche_supérieur_droite : En savoir plus sur les packages dans la [documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=en#about-data-packages)
+:flèche_supérieur_droite : En savoir plus sur les packages dans la [documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)
 
 ## Déploiement Mid-sourcing{#mid-sourcing-deployment}
 
