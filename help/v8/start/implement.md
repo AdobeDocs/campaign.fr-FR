@@ -7,10 +7,9 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-translation-type: tm+mt
-source-git-commit: 9b6190f48373b772a72d6c1ef1b7510ec41112be
+source-git-commit: 51efce79e4195c9d53db167be80c7adcda811e21
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1220'
 ht-degree: 3%
 
 ---
@@ -23,6 +22,12 @@ Dans cette section, vous apprendrez comment adapter l&#39;Adobe Campaign aux exi
 1. **Préparez votre environnement** : importer des profils, créer des audiences, concevoir des processus et des modèles de campagne, créer des règles de typologie
 1. **Personnalisez votre instance** : créer de nouveaux champs de données, ajouter des tableaux/schémas
 1. **Étendez votre déploiement** : connexion à des solutions d&#39;Adobe, d&#39;autres produits et systèmes - connecteurs, paramètres multisolution
+
+>[!CAUTION]
+>
+>Avec **Campaign Managed Cloud Services**, votre environnement et votre configuration initiale ont été définis par Adobe, conformément aux termes de votre contrat de licence. Vous n’êtes pas autorisé à modifier des packages intégrés installés, des schémas ou des rapports intégrés.
+>
+>Si vous devez utiliser un module complémentaire Campaign ou une fonctionnalité spécifique qui n&#39;a pas été configurée pour vous, vous devez contacter le service à la clientèle **Adobe**.
 
 ## Avant de commencer
 
@@ -40,7 +45,7 @@ Adobe Campaign est fourni avec des processus et des paramètres qui vous permett
 
 ### Sécurité
 
-Découvrez les directives et les principes de sécurité avec Adobe Campaign dans [liste de contrôle de sécurité Campaign](../config/security.md))
+Découvrez les directives et les principes de sécurité avec Adobe Campaign dans [Liste de contrôle de sécurité Campaign](../config/security.md).
 
 ## Définir les paramètres Campaign
 
