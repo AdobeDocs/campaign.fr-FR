@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 translation-type: tm+mt
-source-git-commit: 3fe4156149e9ff8724dd1ff5fc17b538e6055ef8
+source-git-commit: 3870395ec74dd51ed42944981a3851d1052ee255
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '438'
 ht-degree: 1%
 
 ---
@@ -25,11 +25,13 @@ Les fonctionnalités principales sont les suivantes :
 
 * **Connexions au Adobe Experience Platform**. Adobe Campaign v8 prend en charge les connecteurs de données avec Adobe Experience Platform/RT-CDP, le Profil client unifié et l’intégration native avec le Journey Orchestration. Ces investissements optimiseront l&#39;expérience client Adobe Campaign et déverrouilleront de nouveaux cas d&#39;utilisation, tels que la possibilité d&#39;ajouter des parcours clients en temps réel personnalisés aux campagnes.
 
-* **Cloud Services** gérés. Adobe Campaign v8 est disponible **uniquement** en tant que Cloud Services géré de haut niveau, ce qui permet une surveillance proactive, des alertes rapides et une gouvernance des services. La valeur pour le spécialiste du marketing est plus souple et évolutive en termes de Gestion de campagne entre les canaux.
+* **Cloud Services** gérés. Adobe Campaign v8 est disponible en tant que Cloud Services géré de premier ordre, offrant une surveillance proactive, des alertes rapides et une gouvernance des services. La valeur pour le spécialiste du marketing est plus souple et évolutive en termes de Gestion de campagne entre les canaux.
 
 >[!CAUTION]
 >
->Pour l’instant, Campaign v8 n’est disponible qu’en tant que Cloud Service géré. Vous ne pouvez pas implémenter Campaign v8 dans un déploiement sur site ou hybride. La migration depuis un environnement Campaign Classic v7 n’est pas encore disponible.
+>Pour le moment, Campaign v8 est **uniquement** disponible en tant que Cloud Service géré et ne peut pas être déployé sur site ou sur des environnements hybrides.
+>
+>La migration depuis un environnement Campaign Classic v7 existant n’est pas encore disponible.
 
 
 ## Échelle
