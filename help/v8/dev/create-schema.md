@@ -1,17 +1,16 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Créer un schéma dans Campaign
+title: Création d’un nouveau schéma dans Campaign
 description: Découvrez comment créer un nouveau schéma dans Campaign
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '408'
 ht-degree: 37%
 
 ---
 
-# Créer un nouveau schéma{#create-new-schema}
+# Créer un nouveau schéma {#create-new-schema}
 
 Pour éditer, créer et paramétrer les schémas, cliquez sur le nœud **[!UICONTROL Administration > Paramétrage > Schémas de données]** de la console cliente Adobe Campaign.
 
@@ -21,15 +20,15 @@ Pour éditer, créer et paramétrer les schémas, cliquez sur le nœud **[!UICON
 
 ![](assets/schema_navtree.png)
 
-L&#39;onglet **[!UICONTROL Modifier]** affiche le contenu XML d&#39;un schéma :
+L&#39;onglet **[!UICONTROL Edition]** affiche le contenu XML d&#39;un schéma :
 
 ![](assets/schema_edition.png)
 
 >[!NOTE]
 >
->Le contrôle d&#39;édition &quot;Nom&quot; permet de saisir la clé du schéma, composée du nom et de l&#39;espace de noms. Les attributs &quot;name&quot; et &quot;namespace&quot; de l&#39;élément racine du schéma sont automatiquement mis à jour dans la zone d&#39;édition XML du schéma.
+>Le contrôle d&#39;édition &quot;Nom&quot; permet de saisir la clé du schéma, composée du nom et de l&#39;espace de noms. Les attributs &quot;name&quot; et &quot;namespace&quot; de l&#39;élément racine du schéma sont automatiquement mis à jour dans la zone d&#39;édition XML du schéma. Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces).
 
-L&#39;onglet **[!UICONTROL Prévisualisation]** génère automatiquement le schéma étendu :
+L&#39;onglet **[!UICONTROL Aperçu]** génère automatiquement le schéma étendu :
 
 ![](assets/schema_edition2.png)
 
@@ -37,16 +36,16 @@ L&#39;onglet **[!UICONTROL Prévisualisation]** génère automatiquement le sch�
 >
 >La sauvegarde du schéma source va automatiquement lancer la génération du schéma étendu.
 
-Si vous devez vérifier la structure complète d&#39;un schéma, vous pouvez utiliser l&#39;onglet **[!UICONTROL Prévisualisation]**. Si le schéma a été étendu, vous pourrez visualiser toutes ses extensions. En complément, l&#39;onglet **[!UICONTROL Documentation]** affiche tous les attributs et éléments du schéma, ainsi que leurs propriétés (champ SQL, type/longueur, étiquette, description). L&#39;onglet **[!UICONTROL Documentation]** s&#39;applique uniquement aux schémas générés.
+Si vous devez vérifier la structure complète d&#39;un schéma, vous pouvez utiliser l&#39;onglet **[!UICONTROL Aperçu]**. Si le schéma a été étendu, vous pourrez visualiser toutes ses extensions. En complément, l’onglet **[!UICONTROL Documentation]** affiche tous les attributs et éléments du schéma, ainsi que leurs propriétés (champ SQL, type/longueur, libellé, description). L’onglet **[!UICONTROL Documentation]** s’applique uniquement aux schémas générés.
 
-## Cas d’utilisation : créer une table de contrats {#example--creating-a-contract-table}
+## Cas pratique : créer une table des contrats {#example--creating-a-contract-table}
 
-Dans l’exemple suivant, vous créez une table pour **contrats** dans la base de données. Ce tableau vous permet de stocker les prénoms et les noms de famille ainsi que les adresses électroniques des titulaires et des cotitulaires, pour chaque contrat.
+Dans l&#39;exemple suivant, vous créez une table pour **contrats** dans la base de données. Cette table permet de stocker, pour chaque contrat, les prénoms et noms ainsi que les adresses email des titulaires et co-titulaires.
 
-Pour ce faire, vous devez créer le schéma de la table et mettre à jour la structure de la base de données pour générer la table correspondante. Les étapes détaillées sont énumérées ci-dessous.
+Pour cela, vous devez créer le schéma de la table et mettre à jour la structure de la base de données afin de générer la table correspondante. Les étapes détaillées sont répertoriées ci-dessous.
 
 1. Editez le nœud **[!UICONTROL Administration > Paramétrage > Schémas de données]** de l&#39;arborescence Adobe Campaign et cliquez sur l&#39;icône **[!UICONTROL Nouveau]**.
-1. Sélectionnez l’option **[!UICONTROL Créer un nouveau tableau dans le modèle de données]** et cliquez sur **[!UICONTROL Suivant]**.
+1. Choisissez l&#39;option **[!UICONTROL Créer une nouvelle table dans le modèle de données]** et cliquez sur **[!UICONTROL Suivant]** .
 
    ![](assets/create_new_schema.png)
 
@@ -58,15 +57,15 @@ Pour ce faire, vous devez créer le schéma de la table et mettre à jour la str
    >
    >Par défaut, les schémas créés par les utilisateurs sont stockés dans l’espace de noms « cus ». Voir à ce propos la section [Identification d&#39;un schéma](extend-schema.md#identification-of-a-schema).
 
-1. Créez le contenu du tableau. Nous vous recommandons d&#39;utiliser l&#39;assistant dédié pour vous assurer qu&#39;aucun paramètre n&#39;est manquant. Pour ce faire, cliquez sur le bouton **[!UICONTROL Insérer]** et choisissez le type de paramètre à ajouter.
+1. Créez le contenu du tableau. Nous vous recommandons d’utiliser l’assistant dédié pour vous assurer qu’aucun paramètre n’est manquant. Pour cela, cliquez sur le bouton **[!UICONTROL Insérer]** et choisissez le type de paramètre à ajouter.
 
    ![](assets/create_new_content.png)
 
 1. Définissez les paramètres de la table des contrats :
 
    ```
-   <srcSchema created="AA-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png"
-           label="Contracts" labelSingular="Contract" lastModified="AA-MM-DD HH:MM:SS.TZ"
+   <srcSchema created="YYYY-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png"
+           label="Contracts" labelSingular="Contract" lastModified="YYYY-MM-DD HH:MM:SS.TZ"
            mappingType="sql" name="Contracts" namespace="cus" xtkschema="xtk:srcSchema">
       <element dataSource="nms:extAccount:ffda" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png"
            label="Contracts" labelSingular="Contract" name="Contracts">
@@ -82,10 +81,10 @@ Pour ce faire, vous devez créer le schéma de la table et mettre à jour la str
    </srcSchema>
    ```
 
-   Ajouter le type de énumération de contrat.
+   Ajoutez le type d&#39;énumération de contrat.
 
    ```
-   <srcSchema created="AA-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png" label="Contracts" labelSingular="Contract" lastModified="AA-MM-DD HH:MM:SS.TZ"mappingType="sql" name="Contracts" namespace="cus" xtkschema="xtk:srcSchema">
+   <srcSchema created="AA-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png" label="Contracts" labelSingular="Contract" AA-MM-DD HH:MM:SS.TZ"mappingType="sql" name="Contracts" namespace="cus" xtkschema="xtk:srcSchema">
       <enumeration basetype="byte" name="typeContract">
          <value label="Home" name="home" value="0"/>
          <value label="Car" name="car" value="1"/>
