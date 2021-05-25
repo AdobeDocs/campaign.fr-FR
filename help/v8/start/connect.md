@@ -1,5 +1,5 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Découvrez comment vous connecter à Campaign v8
 description: Connexion à Campaign v8
@@ -7,11 +7,10 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-translation-type: tm+mt
-source-git-commit: 1ac6b58e1d5731d4df4d6d7c6a9b25f0f41ff563
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 38%
+source-wordcount: '782'
+ht-degree: 36%
 
 ---
 
@@ -21,29 +20,29 @@ La console cliente Campaign est un client riche qui vous permet de vous connecte
 
 Avant de commencer, vous devez :
 
-* Vérifiez la compatibilité de votre système et de vos outils avec Adobe Campaign dans la [matrice de compatibilité](compatibility-matrix.md).
+* Vérifier la compatibilité de votre système et de vos outils avec Adobe Campaign dans la [matrice de compatibilité](compatibility-matrix.md)
 * Obtenir l’URL du serveur Campaign
-* Obtention des informations d’identification de l’utilisateur
+* Obtenir vos informations d’identification utilisateur
 
-## Téléchargement et installation de la console client
+## Télécharger et installer la console cliente
 
-Lorsque vous utilisez Campaign pour la première fois, ou si vous devez effectuer une mise à niveau vers une version plus récente, vous devez télécharger Client Console et l’installer.
+Lorsque vous utilisez Campaign pour la première fois, ou si vous devez effectuer une mise à niveau vers une version plus récente, vous devez télécharger la console cliente et l’installer.
 
 Deux options sont disponibles :
 
-1. En tant qu’administrateur Campaign, connectez-vous à Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/encampaign.html) et téléchargez le programme d’installation de Client Console. Vous pouvez ensuite l’installer sur votre ordinateur local.
+1. En tant qu’administrateur de Campaign, connectez-vous à la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/encampaign.html) Adobe et téléchargez le programme d’installation de la console cliente. Vous pouvez ensuite l’installer sur votre ordinateur local.
 
-1. En tant qu’utilisateur final, l’Adobe peut déployer la console pour vous : une fois la console mise à jour, vous êtes invité à télécharger la dernière version de la console client dans une fenêtre contextuelle.
+1. En tant qu’utilisateur final, Adobe peut déployer la console pour vous : une fois la console mise à jour, vous êtes invité à télécharger la dernière version de la console cliente dans une fenêtre contextuelle.
 
 >[!CAUTION]
 >
->L&#39;Adobe recommande de ne pas sélectionner l&#39;option **[!UICONTROL Ne plus poser cette question]** pour s&#39;assurer que tous les utilisateurs sont avertis lorsqu&#39;une nouvelle version de la console est disponible.  Si cette option est sélectionnée, l’utilisateur ne sera pas informé des nouvelles versions disponibles.
+>Adobe recommande de laisser l’option **[!UICONTROL Ne plus poser cette question]** non sélectionnée pour s’assurer que tous les utilisateurs sont informés de la disponibilité d’une nouvelle version de la console.  Si cette option est sélectionnée, l’utilisateur ne sera pas informé des nouvelles versions disponibles.
 
 ## Créer votre connexion
 
-Une fois la console client installée, procédez comme suit pour créer la connexion au serveur d’applications :
+Une fois la console cliente installée, procédez comme suit pour créer la connexion au serveur d’applications :
 
-1. Début la console à partir du menu Windows **[!UICONTROL Début]**, dans le groupe de programmes **Adobe Campaign**.
+1. Démarrez la console à partir du menu **[!UICONTROL Démarrer]** de Windows, dans le groupe de programmes **Adobe Campaign**.
 
 1. Cliquez sur le lien situé dans le coin supérieur droit des champs d’informations d’identification pour accéder à la fenêtre de configuration de la connexion.
 
@@ -53,7 +52,7 @@ Une fois la console client installée, procédez comme suit pour créer la conne
 
    Par exemple, vous pouvez utiliser une URL de type [`https://<machine>.<domain>.com`](https://myserver.adobe.com).
 
-1. Si Adobe Identity Management System (IMS) est configuré pour votre organisation, cochez l’option **[!UICONTROL Se connecter à un Adobe ID]** .
+1. Si Adobe Identity Management System (IMS) est configuré pour votre organisation, cochez l’option **[!UICONTROL Connexion à un Adobe ID]** .
 
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer vos paramètres.
 
@@ -67,7 +66,7 @@ Vous pouvez ajouter autant de connexions que nécessaire pour vous connecter, pa
 
 Pour vous connecter à une instance existante, procédez comme suit :
 
-1. Début la console à partir du menu Windows **[!UICONTROL Début]**, dans le groupe de programmes **Adobe Campaign**.
+1. Démarrez la console à partir du menu **[!UICONTROL Démarrer]** de Windows, dans le groupe de programmes **Adobe Campaign**.
 
 1. Cliquez sur le lien situé dans le coin supérieur droit des champs d’informations d’identification pour accéder à la fenêtre de configuration de la connexion.
 
@@ -75,13 +74,13 @@ Pour vous connecter à une instance existante, procédez comme suit :
 
 1. Cliquez sur **[!UICONTROL Ok]**.
 
-1. Entrez vos informations de connexion utilisateur et cliquez sur **[!UICONTROL CONNECTER]**.
+1. Saisissez vos informations de connexion utilisateur et cliquez sur **[!UICONTROL CONNECTEZ-VOUS]**.
 
    ![](assets/sign-in-v8.png)
 
 Selon votre configuration, vos informations d’identification peuvent être les suivantes :
 
-* fourni par l’administrateur Campaign qui vous a accordé l’accès
+* fourni par l’administrateur de Campaign qui vous a accordé l’accès
 * votre Adobe ID
 
 ## Accorder l&#39;accès aux utilisateurs
@@ -89,31 +88,37 @@ Selon votre configuration, vos informations d’identification peuvent être les
 Adobe Campaign vous permet de définir et gérer les permissions attribuées aux différents opérateurs. Les permissions sont un ensemble de droits et restrictions qui autorisent ou interdisent :
 
 * l&#39;accès à certaines fonctionnalités (via les droits nommés),
-* Accès à certains éléments,
+* l&#39;accès à certains éléments,
 * Créer, modifier et/ou supprimer des éléments (diffusion, contacts, campagnes, groupes, etc.).
 
-Pour en savoir plus sur les utilisateurs et comment définir leurs autorisations dans [cette section](permissions.md).
+Pour en savoir plus sur les utilisateurs et comment définir leurs autorisations, consultez [cette section](permissions.md).
 
-En tant qu’administrateur Campaign, vous êtes chargé de créer les opérateurs et de partager leurs informations d’identification avec les utilisateurs.
+En tant qu&#39;administrateur de Campaign, vous êtes responsable de la création des opérateurs et du partage de leurs informations d&#39;identification avec les utilisateurs.
 
-## Connectez-vous à Campaign avec votre Adobe ID{#connect-ims}
+## Connexion à Campaign avec votre Adobe ID{#connect-ims}
 
-Les utilisateurs de Campaign peuvent se connecter à la console Adobe Campaign à l’aide de leur Adobe ID, via le système IMS (Adobe Identity Management System). Cette implémentation présente les avantages suivants :
+Les utilisateurs de Campaign peuvent se connecter à la console Adobe Campaign à l’aide de leur Adobe ID, via Adobe Identity Management System (IMS). Cette implémentation présente les avantages suivants :
 
 * utilisation d&#39;un même identifiant pour toutes les solutions Experience Cloud
 * mémorisation de la connexion lors de l&#39;utilisation d&#39;Adobe Campaign avec les différentes intégrations
-* Stratégie de gestion des mots de passe plus stricte.
+* Stratégie de gestion des mots de passe plus efficace.
 * utilisation de comptes de type Federated ID (fournisseur d&#39;identité externe)
 
-:speak_bulon: En tant qu&#39;utilisateur Cloud Services géré, [contactez l&#39;Adobe](support.md#support) pour mettre en oeuvre l&#39;Adobe IMS avec Campaign.
+:speak_ballon: En tant qu’utilisateur Cloud Services géré, [contactez l’Adobe](campaign-faq.md#support) pour mettre en oeuvre l’Adobe IMS avec Campaign.
 
 ## Connexion à Campaign à l’aide de votre connexion LDAP
 
-Adobe Campaign peut être configuré de sorte que l’utilisateur accède à la plate-forme via son authentification LDAP.
+Adobe Campaign peut être configuré de sorte que l&#39;utilisateur puisse accéder à la plateforme via son authentification LDAP.
 
-:speak_bulon: En tant qu’utilisateur Cloud Services géré, [contactez l’Adobe](support.md#support) pour configurer l’intégration LDAP avec Campaign.
+:speak_ballon: En tant qu&#39;utilisateur Cloud Services géré, [contactez l&#39;Adobe](campaign-faq.md#support) pour configurer l&#39;intégration LDAP avec Campaign.
 
 
-## Accès Web
+## Accès Web{#web-access}
 
-Certaines parties de l’application sont accessibles via un navigateur Web simple à l’aide d’une interface utilisateur HTML : rapports, approbation des diffusions, surveillance des instances, etc.
+Certaines parties de l&#39;application sont accessibles via un simple navigateur web, à l&#39;aide d&#39;une interface utilisateur HTML : tableau de bord Campaign, création de rapports sur les cubes, surveillance des instances, etc.
+
+:flèche_upper_right : En savoir plus sur l’accès Web dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#console-and-web-access)
+
+L’accès Web est également utilisé pour le processus de validation : les opérateurs peuvent cliquer sur l&#39;email de demande de validation et se connecter à Campaign via leur navigateur web pour valider ou refuser le contenu ou le budget d&#39;une diffusion.
+
+:flèche_upper_right : Découvrez comment configurer et gérer les approbations dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)
