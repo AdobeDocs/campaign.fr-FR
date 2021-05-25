@@ -1,35 +1,34 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Matrice de compatibilité Campaign v8
-description: Apprenez les systèmes et les versions compatibles avec Campaign v8
-feature: Vue d’ensemble
+title: Matrice de compatibilité de Campaign v8
+description: Découvrez les systèmes et versions compatibles avec Campaign v8
+feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-translation-type: tm+mt
-source-git-commit: 1ac6b58e1d5731d4df4d6d7c6a9b25f0f41ff563
+source-git-commit: ffdfc9a2e1bec191b5a3cc7f7b40683b2456bf3e
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 32%
+source-wordcount: '274'
+ht-degree: 31%
 
 ---
 
-# Matrice de compatibilité Campaign v8
+# Matrice de compatibilité de Campaign v8
 
-Ce document liste tous les systèmes et composants pris en charge pour la dernière version de **Adobe Campaign v8**. Les produits et versions ne faisant pas partie de cette liste ne sont pas compatibles avec Adobe Campaign.
+Ce document répertorie tous les systèmes et composants pris en charge pour la dernière version d’**Adobe Campaign v8**. Les produits et versions ne faisant pas partie de cette liste ne sont pas compatibles avec Adobe Campaign.
 
 >[!CAUTION]
 >
 >* Sauf mention contraire, toutes les versions mineures sont prises en charge.
->* Comme des versions spécifiques de ces systèmes et outils tiers atteignent la fin de vie (EOL), Adobe Campaign ne sera plus compatible avec ces versions et sera supprimé de cette matrice de compatibilité. Pour éviter tout problème, vérifiez que vous disposez des versions prises en charge des systèmes répertoriés dans la matrice de compatibilité.
+>* À mesure que des versions spécifiques de ces systèmes et outils tiers arrivent en fin de vie, Adobe Campaign ne sera plus compatible avec ces versions et elles seront supprimées de cette matrice de compatibilité. Pour éviter tout problème, vérifiez que vous disposez des versions prises en charge des systèmes répertoriés dans la matrice de compatibilité.
 
 
 ## Systèmes compatibles
 
-### Console client{#ClientConsoleoperatingsystems}
+### Console cliente{#ClientConsoleoperatingsystems}
 
-:warning: Les systèmes d’exploitation et le navigateur suivants sont nécessaires pour utiliser Campaign Client Console.
+Avertissement : les systèmes d’exploitation et le navigateur ci-après sont nécessaires pour utiliser la console cliente Campaign.
 
 **Systèmes d’exploitation**
 
@@ -42,26 +41,13 @@ Ce document liste tous les systèmes et composants pris en charge pour la derni�
 
 ### Connecteurs CRM{#CRMconnectors}
 
-* **API** Salesforceconnector version 49
-* **Microsoft** Dynamicsconnector, API Web : Dynamics 365 Sur site et en ligne
+* **** API Salesforceconnector version 49
+* **Microsoft** Dynamics Connector, API Web : Dynamics 365 On-premise et Online
 
 ### Federated Data Access (FDA){#FederatedDataAccessFDA}
 
-* **Microsoft Azure Synapse Analytics**
 * **Amazon Redshift**
 * **[!DNL Snowflake]**
-* **Oracle** 19c, 18c, 12c, 11G
-* **PostgreSQL** 12.x, 11.x, 10.x, 9.6.x, 9.5.x, 9.4.x
-* **Microsoft SQL Server** 2019, 2017, 2016, 2014, 2012 SP1 et SP2
-* **MySQL** 5.7
-* **Teradata** 16.20, 16, 15.10, 15.0
-* **Netezza**  7.2
-* **sybase IQ** 16, ASE 15.7
-* **SAP** HANAversion 1 SPS 12
-* **Hadoop via HiveSQL**
-   * HortonWorks HDP 2.4.X, 2.5.x, 2.6.x
-   * HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6
-   * Cloudera CDH6.x
 
 ### SDK Mobile{#MobileSDK}
 
@@ -70,17 +56,21 @@ Ce document liste tous les systèmes et composants pris en charge pour la derni�
 
 ### Navigateurs pris en charge {#Browsers}
 
-Les navigateurs suivants sont compatibles avec Campaign for Web Access.
+Les navigateurs ci-après sont compatibles avec Campaign pour un accès à internet.
 
 * **Microsoft Edge**,  **Mozilla Firefox**,  **Google Chrome**,  **Safari**  (dernières versions)
 
 * **Internet Explorer 11**
 
-## Vérification de la version Campaign
+## Vérification de la version de Campaign
 
-Le menu **Aide > À propos de...** vous permet d’accéder aux informations suivantes :
+Utilisez le menu **Aide > À propos...** pour vérifier votre version.
 
-* numéro de version de la console client Campaign et du serveur d’applications
-* numéro de build pour la console client Campaign et le serveur d’applications
-* lien pour contacter l&#39;Assistance clientèle d&#39;Adobe
-* liens vers la Politique de confidentialité, les Conditions d&#39;utilisation et la Politique relative aux cookies d&#39;Adobe
+![](assets/ac-version.png)
+
+Vous accédez aux informations suivantes :
+
+* Numéro **version** de la console cliente et du serveur applicatif. Dans l’exemple ci-dessus, la version est 8.1.5 pour la console cliente et le serveur d’applications.
+* Numéro SHA, entre parenthèses.
+* Un lien pour contacter l’assistance clientèle d’Adobe.
+* Liens vers la Politique de confidentialité de l’Adobe, les Conditions d’utilisation et la Politique sur les cookies.
