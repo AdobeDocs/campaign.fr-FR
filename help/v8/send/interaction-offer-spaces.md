@@ -1,13 +1,12 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Emplacements d’interaction Campaign
-description: Découvrez comment créer des Emplacements
-feature: Vue d’ensemble
+title: Interaction de campagne Espaces d’offre
+description: Découvrez comment créer des espaces d’offre
+feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: fcc0165aeba4347a53d33bed95aa7fbb5fa27005
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 24%
@@ -16,15 +15,15 @@ ht-degree: 24%
 
 # Créer des emplacements d&#39;offres{#creating-offer-spaces}
 
-Le contenu du catalogue d&#39;offres est configuré dans les emplacements. Par défaut, le contenu peut inclure les champs suivants : **[!UICONTROL Titre]**, **[!UICONTROL URL de destination]**, **[!UICONTROL URL d&#39;image]**, **[!UICONTROL contenu HTML]** et **[!UICONTROL Contenu texte]**. La séquence de champs est configurée dans l’emplacement.
+Le contenu du catalogue d&#39;offres est paramétré dans les emplacements. Par défaut, le contenu peut contenir les champs suivants : **[!UICONTROL Titre]**, **[!UICONTROL URL de destination]**, **[!UICONTROL URL d’image]**, **[!UICONTROL Contenu HTML]** et **[!UICONTROL Contenu texte]**. L&#39;ordre des champs est paramétré dans l&#39;emplacement.
 
-En tant qu&#39;**administrateur technique**, vous pouvez créer des emplacements dans l&#39;environnement de conception. Vous devez avoir accès au sous-dossier emplacement. Une fois créés, ces emplacements sont automatiquement dupliqués dans l’environnement en direct lors de l’approbation de l’offre.
+En tant qu’**administrateur technique**, vous pouvez créer des emplacements d’offre dans l’environnement En édition . Vous devez avoir accès au sous-dossier de l&#39;emplacement. Une fois créés, ces emplacements sont automatiquement dupliqués dans l&#39;environnement En ligne lors de la validation des offres.
 
-Le rendu HTML est créé au moyen d’une fonction de rendu. La séquence des champs définie dans la fonction de rendu doit être identique à celle configurée dans le contenu.
+Le rendu HTML est créé à partir d&#39;une fonction de rendu. L&#39;ordre des champs définis dans la fonction de rendu doit être identique à celui paramétré dans le contenu.
 
 ![](assets/offer_space_create_009.png)
 
-Pour créer un emplacement, procédez comme suit :
+Pour créer un nouvel emplacement, procédez comme suit :
 
 1. Dans la liste des emplacements, cliquez sur **[!UICONTROL Nouveau]**.
 
@@ -34,7 +33,7 @@ Pour créer un emplacement, procédez comme suit :
 
    ![](assets/offer_space_create_002.png)
 
-1. Cochez l&#39;option **[!UICONTROL Activer le mode unitaire]**.
+1. Cochez l’option **[!UICONTROL Activer le mode unitaire]** .
 
 1. Dans la fenêtre **[!UICONTROL Champs de contenu]**, cliquez sur **[!UICONTROL Ajouter]**.
 
@@ -44,19 +43,19 @@ Pour créer un emplacement, procédez comme suit :
 
    ![](assets/offer_space_create_004.png)
 
-1. Cochez l’option **[!UICONTROL Obligatoire]** pour rendre chaque champ obligatoire.
+1. Cochez l’option **[!UICONTROL Required]** pour rendre chaque champ obligatoire.
 
    >[!NOTE]
    >
-   >Cette option est utilisée à la prévisualisation et rend les emplacements non valides lors de la publication si l’un des champs obligatoires est absent de l’offre. Toutefois, si une offre vit déjà sur un emplacement, ces critères ne sont pas pris en compte.
+   >Cette option est utilisée lors de la prévisualisation et rend les emplacements non valides lors de la publication si l’un des champs obligatoires est absent de l’offre. Toutefois, si une offre est déjà en ligne sur un emplacement, ces critères ne sont pas pris en compte.
 
    ![](assets/offer_space_create_005.png)
 
 1. Cliquez sur **[!UICONTROL Editer les fonctions]** pour créer une fonction de rendu.
 
-   Ces fonctions permettent de générer des rendus de l&#39;offre sur un emplacement. Il existe plusieurs formats possibles : HTML ou texte.
+   Ces fonctions sont utilisées pour générer des représentations d’offres sur un emplacement. Il existe plusieurs formats possibles : HTML ou texte.
 
-   **Remarque**  : le format XML est limité aux interactions entrantes qui ne sont pas disponibles temporairement. [En savoir plus](../start/capability-matrix.md#gs-unavailable-features)
+   **Remarque**  - Le format XML est limité aux interactions entrantes qui ne sont pas disponibles de manière temporaire. [En savoir plus](../start/capability-matrix.md#gs-unavailable-features)
 
    ![](assets/offer_space_create_006.png)_
 
@@ -67,15 +66,15 @@ Pour créer un emplacement, procédez comme suit :
 
 ## Etats d&#39;une proposition d&#39;offre {#offer-proposition-statuses}
 
-L’état de la Proposition d&#39;offre varie en fonction des interactions avec la population ciblée. Le module Campaign Interaction est fourni avec un ensemble de valeurs qui peuvent être appliquées à la Proposition d&#39;offre tout au long de son cycle de vie. Vous devez configurer la plateforme de sorte que l’état change lorsque la Proposition d&#39;offre est créée et acceptée.
+L&#39;état de la proposition d&#39;offre varie en fonction des interactions avec la population ciblée. Le module Interaction de Campaign est livré avec un ensemble de valeurs qui peuvent être appliquées à la proposition d&#39;offre tout au long de son cycle de vie. Vous devez paramétrer la plateforme afin que l&#39;état de la proposition d&#39;offre soit modifié lors de sa création et de son acceptation.
 
 >[!NOTE]
 >
->La mise à jour de l’état est un processus asynchrone. Il est exécuté par le processus de suivi qui est déclenché toutes les heures.
+>La mise à jour de l’état est un processus asynchrone. Elle est réalisée par le workflow de tracking qui se déclenche toutes les heures.
 
-### Liste d&#39;état de l&#39;Offre {#status-list}
+### Liste des statuts des offres {#status-list}
 
-Les états d’offre disponibles sont les suivants :
+Les statuts d&#39;offre disponibles sont les suivants :
 
 * **[!UICONTROL Acceptée]**
 * **[!UICONTROL Différée]**
@@ -90,22 +89,22 @@ Ces valeurs ne sont pas appliquées par défaut : ils doivent être configurés.
 >
 >Le statut d&#39;une proposition d&#39;offre est automatiquement changée en &quot;Présentée&quot; si l&#39;offre est associée à une diffusion avec le statut &quot;Envoyé&quot;.
 
-### Statut de l&#39;Offre lorsque la proposition est créée {#configuring-the-status-when-the-proposition-is-created}
+### Etat de l&#39;offre lors de la création de la proposition {#configuring-the-status-when-the-proposition-is-created}
 
-Lorsqu’une Proposition d&#39;offre est **créée**, son état est mis à jour.
+Lorsqu’une proposition d’offre est **créée**, son état est mis à jour.
 
-Dans l&#39;environnement **[!UICONTROL Conception]**, pour chaque emplacement, configurez l&#39;état pour qu&#39;il s&#39;applique lorsqu&#39;une proposition est créée, en fonction des informations que vous souhaitez afficher dans les rapports d&#39;offre.
+Dans l&#39;environnement **[!UICONTROL Conception]**, pour chaque emplacement, configurez l&#39;état à appliquer lors de la création d&#39;une proposition, en fonction des informations que vous souhaitez afficher dans les rapports d&#39;offre.
 
 Pour ce faire, procédez comme suit :
 
 1. Positionnez-vous dans l&#39;onglet **[!UICONTROL Stockage]** de l&#39;emplacement de votre choix.
-1. Sélectionnez le statut à appliquer à la proposition lors de sa création.
+1. Sélectionnez l&#39;état à appliquer à la proposition lors de sa création.
 
    ![](assets/offer_update_status_001.png)
 
-### Statut de l&#39;Offre lorsque la proposition est acceptée {#configuring-the-status-when-the-proposition-is-accepted}
+### Etat de l&#39;offre lorsque la proposition est acceptée {#configuring-the-status-when-the-proposition-is-accepted}
 
-Une fois qu&#39;une Proposition d&#39;offre a été **acceptée**, utilisez l&#39;une des valeurs fournies par défaut pour configurer le nouvel état de la proposition. La mise à jour est appliquée lorsqu’un destinataire clique sur un lien dans l’offre.
+Une fois qu&#39;une proposition d&#39;offre a été **acceptée**, utilisez l&#39;une des valeurs fournies par défaut pour configurer le nouvel état de la proposition. La mise à jour est appliquée lorsqu&#39;un destinataire clique sur un lien dans l&#39;offre.
 
 Pour ce faire, procédez comme suit :
 
@@ -140,7 +139,7 @@ As soon as a visitor clicks the offer, and therefore the URL, the **[!UICONTROL 
 **Outbound interaction**
 -->
 
-Vous pouvez appliquer automatiquement l’état **[!UICONTROL Intéressé]** à une Proposition d&#39;offre lorsque la diffusion contient un lien. Ajoutez simplement la valeur **_urlType=&quot;11&quot;** au lien :
+Vous pouvez appliquer automatiquement l&#39;état **[!UICONTROL Intéressé]** à une proposition d&#39;offre lorsque la diffusion contient un lien. Ajoutez simplement la valeur **_urlType=&quot;11&quot;** au lien :
 
 ```
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>
@@ -148,11 +147,11 @@ Vous pouvez appliquer automatiquement l’état **[!UICONTROL Intéressé]** à 
 
 ## Prévisualisation des offres par emplacement {#offer-preview-per-space}
 
-Dans l&#39;onglet **[!UICONTROL Prévisualisation]**, vous pouvez vue les offres pour lesquelles le destinataire est éligible via une méthode choisie. Dans l&#39;exemple ci-dessous, le destinataire peut recevoir trois propositions d&#39;offre par courrier.
+Dans l&#39;onglet **[!UICONTROL Aperçu]**, vous pouvez visualiser les offres auxquelles le destinataire est éligible via une méthode sélectionnée. Dans l&#39;exemple ci-dessous, le destinataire est éligible à trois propositions d&#39;offres par courrier.
 
 ![](assets/offer_space_overview_002.png)
 
-Si un destinataire n’est éligible à aucune offre, cela est indiqué dans la prévisualisation.
+Si un destinataire n’est éligible à aucune offre, cela s’affiche dans l’aperçu.
 
 ![](assets/offer_space_overview_001.png)
 
