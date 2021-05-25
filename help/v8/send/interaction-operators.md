@@ -1,36 +1,35 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Opérateurs d’interaction Campaign
-description: Créer des opérateurs de gestion des Offres
-feature: Vue d’ensemble
+title: Opérateurs d'interaction Campaign
+description: Créer des opérateurs Gestion des offres
+feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 4bc62dcf806abd71e8230ce209d9151a4188b62e
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '414'
 ht-degree: 40%
 
 ---
 
 
-# Profils d&#39;opérateurs {#operator-profiles}
+# Profils des opérateurs {#operator-profiles}
 
-Deux types d’opérateurs peuvent utiliser l’interaction Campaign : **gestionnaires d&#39;Offres** et **gestionnaires de Diffusions**. Chacun d&#39;eux a des autorisations et des restrictions spécifiques. Pour en savoir plus sur les opérateurs Campaign et les autorisations, consultez [cette page](../start/permissions.md).
+Deux types d&#39;opérateurs peuvent utiliser l&#39;interaction Campaign : **Chargés d’offres** et **Chargés de diffusions**. Chacun d’eux a des autorisations et des restrictions spécifiques. Pour en savoir plus sur les opérateurs et les permissions Campaign, consultez [cette page](../start/permissions.md).
 
-* Le **[!UICONTROL gestionnaire d&#39;Offres]** crée et conserve des offres.
-* Le **[!UICONTROL gestionnaire de Diffusions]** approuve et utilise les offres
+* Le **[!UICONTROL Chargé d&#39;offres]** crée et maintient les offres.
+* **[!UICONTROL Chargé de diffusion]** valide et utilise les offres
 
-## Créer un opérateur de gestionnaire d’Offres{#offer-manager}
+## Créer un opérateur Chargé d&#39;offres{#offer-manager}
 
 1. Créez votre nouvel opérateur.
 
-   :flèche_supérieur_droite : Les étapes de création d’un opérateur dans Campaign sont détaillées dans [la documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html).
+   :flèche_upper_right : Les étapes de création d&#39;un opérateur dans Campaign sont présentées dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. Dans la fenêtre **[!UICONTROL Groupes et droits nommés]**, cliquez sur **[!UICONTROL Ajouter]** et sélectionnez le groupe **[!UICONTROL Chargé d&#39;offres]**.
 
-Les droits attribués au responsable de l&#39;Offre lui permettent d&#39;exécuter les tâches suivantes :
+Les droits attribués au chargé d&#39;offres lui permettent d&#39;effectuer les tâches suivantes :
 
 * Modifier des environnements **[!UICONTROL En édition]**.
 * Consulter des environnements **[!UICONTROL En ligne]**.
@@ -40,21 +39,21 @@ Les droits attribués au responsable de l&#39;Offre lui permettent d&#39;exécut
 * Paramétrer l&#39;éligibilité des offres.
 * Valider des offres.
 
-Notez que si des offres sont utilisées dans un processus, l’opérateur doit être ajouté au groupe d’opérateurs **[!UICONTROL Administrator]** ou **[!UICONTROL Offres managers]** pour exécuter le processus.
+Notez que si des offres sont utilisées dans un workflow, l&#39;opérateur doit être ajouté au groupe d&#39;opérateurs **[!UICONTROL Administrateur]** ou **[!UICONTROL Chargés d&#39;offres]** pour exécuter le workflow.
 
 >[!NOTE]
 >
->Un **gestionnaire d&#39;Offres** ne peut approuver une offre que si aucun réviseur n&#39;est spécifié ou s&#39;il a été déclaré comme réviseur dans le modèle d&#39;offre sur lequel l&#39;offre était basée.
+>Un **Chargé d&#39;offres** ne peut valider une offre que si aucun validant n&#39;est spécifié ou s&#39;il a été déclaré validant dans le modèle d&#39;offre sur lequel l&#39;offre a été basée.
 
-## Créer un opérateur de gestionnaire de Diffusions {#delivery-manager}
+## Créer un opérateur Chargé de diffusion {#delivery-manager}
 
 1. Créez votre nouvel opérateur.
 
-   :flèche_supérieur_droite : Les étapes de création d’un opérateur dans Campaign sont détaillées dans [la documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html).
+   :flèche_upper_right : Les étapes de création d&#39;un opérateur dans Campaign sont présentées dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. Dans la fenêtre **[!UICONTROL Groupes et droits nommés]**, cliquez sur **[!UICONTROL Ajouter]** et sélectionnez le groupe **[!UICONTROL Chargé de diffusion]**.
 
-Les droits attribués au responsable de la Diffusion lui permettent d&#39;exécuter les tâches suivantes :
+Les droits attribués au chargé de diffusion sont/permettent d&#39;effectuer les tâches suivantes :
 
 * Afficher les environnements **[!UICONTROL En ligne]**.
 * Afficher et modifier des catégories d&#39;offres.
@@ -62,16 +61,16 @@ Les droits attribués au responsable de la Diffusion lui permettent d&#39;exécu
 
    >[!NOTE]
    >
-   >Un **gestionnaire de Diffusions** ne peut approuver une offre que s&#39;il a été déclaré comme réviseur lors de la configuration de l&#39;offre.
+   >Un **chargé de diffusion** ne peut valider une offre que s&#39;il a été déclaré validant lors du paramétrage de l&#39;offre.
 
-## Matrice d&#39;autorisation par opérateur d&#39;interaction {#recap-of-rights-according-to-operator}
+## Matrice des permissions par opérateur Interaction {#recap-of-rights-according-to-operator}
 
 <table> 
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>Gestionnaire d’Offres (Design Env)</strong><br /> </td> 
-   <td> <strong>Gestionnaire d’Offres (Live Env)</strong><br /> </td> 
+   <td> <strong>Chargé d’offres (environnement de conception)</strong><br /> </td> 
+   <td> <strong>Chargé d'offres (environnement en ligne)</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Niveau de l'arborescence</strong><br /> </td> 
@@ -130,8 +129,8 @@ Les droits attribués au responsable de la Diffusion lui permettent d&#39;exécu
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>Gestionnaire de diffusions (env. conception)</strong><br /> </td> 
-   <td> <strong>Gestionnaire de diffusions (version en direct)</strong><br /> </td> 
+   <td> <strong>Chargé de diffusion (environnement de conception)</strong><br /> </td> 
+   <td> <strong>Chargé de diffusion (environnement en ligne)</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Niveau de l'arborescence</strong><br /> </td> 
