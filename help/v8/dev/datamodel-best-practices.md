@@ -1,13 +1,12 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Bonnes pratiques relatives au modèle de données
-description: Découvrez les meilleures pratiques relatives à l'extension de modèle de données Campaign
-translation-type: tm+mt
-source-git-commit: 8da6928096feec988d6495fdb617dda7d7cac6ff
+description: Découvrez les bonnes pratiques relatives à l’extension de modèle de données Campaign
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '2668'
-ht-degree: 85%
+source-wordcount: '2688'
+ht-degree: 81%
 
 ---
 
@@ -17,15 +16,15 @@ Ce document présente les principales recommandations lors de la conception de v
 
 Le système Adobe Campaign est très flexible et peut être étendu au-delà de la mise en oeuvre initiale. Toutefois, même si les possibilités sont infinies, il est essentiel de prendre des décisions judicieuses et de construire des bases solides pour commencer à concevoir votre modèle de données.
 
-Pour une meilleure compréhension des tableaux intégrés de Campaign et de leur relation les uns avec les autres, consultez [cette section](datamodel.md) .
+Pour une meilleure compréhension des tables natives de Campaign et de leurs relations les unes avec les autres, reportez-vous à [cette section](datamodel.md) .
 
-: bulb: Lisez [cette section](schemas.md) pour commencer à utiliser les schémas Campaign.
+:bulb: Lisez [cette section](schemas.md) pour commencer à utiliser les schémas de Campaign.
 
-: bulb: Découvrez comment configurer des schémas d&#39;extension afin d&#39;étendre le modèle de données conceptuel de la base de données Adobe Campaign dans [cette page](extend-schema.md).
+:bulb: Découvrez comment configurer des schémas d’extension afin d’étendre le modèle de données conceptuel de la base de données Adobe Campaign dans [cette page](extend-schema.md).
 
 ## Architecture du modèle de données {#data-model-architecture}
 
-Adobe Campaign  est un puissant système de gestion de campagnes cross-canal. Il peut vous aider à aligner vos stratégies on-line et off-line pour créer des expériences client personnalisées.
+Adobe Campaign est un puissant système de gestion de campagnes cross-canal. Il peut vous aider à aligner vos stratégies on-line et off-line pour créer des expériences client personnalisées.
 
 ### Approche axée sur le client {#customer-centric-approach}
 
@@ -36,7 +35,7 @@ Pour obtenir la description de chaque table, accédez à **[!UICONTROL Admin > P
 
 >[!NOTE]
 >
->Adobe Campaign permet de créer une [table de destinataire personnalisée](custom-recipient.md). Cependant, dans la plupart des cas, il est recommandé de tirer parti de la [table de Destinataires](datamodel.md#ootb-profiles) intégrée qui dispose déjà de tables et de fonctionnalités supplémentaires préétablies.
+>Adobe Campaign permet de créer une [table de destinataires personnalisée](custom-recipient.md). Cependant, dans la plupart des cas, il est recommandé d’utiliser la [table des destinataires](datamodel.md#ootb-profiles) intégrée qui comporte déjà des tables et fonctionnalités supplémentaires préconfigurées.
 
 ### Données pour Adobe Campaign {#data-for-campaign}
 
@@ -58,23 +57,23 @@ S’il n’appartient à aucune de ces catégories, il est probable que vous n�
 
 Pour optimiser l’architecture et les performances de votre système, appliquez les bonnes pratiques suivantes pour configurer les données dans Adobe Campaign.
 
-* Une table volumineuse doit essentiellement contenir des champs numériques et des liens vers des tables de référence (si vous utilisez des listes de valeurs).
-* L’attribut **expr** permet de définir un attribut de schéma sous la forme d’un champ calculé plutôt que d’une valeur physique définie dans une table. Cela peut permettre d&#39;accéder aux informations sous un format différent (par exemple, pour l&#39;âge et la date de naissance) sans avoir à stocker les deux valeurs. Il s’agit d’un bon moyen d’éviter la duplication des champs. Par exemple, la table des destinataires utilise une expression relative au domaine qui est déjà présente dans le champ de l’email.
+* Dans un grand tableau, vous pouvez insérer des champs de chaîne ou numériques et ajouter des liens vers des tables de référence (lorsque vous utilisez des listes de valeurs).
+* L’attribut **expr** permet de définir un attribut de schéma sous la forme d’un champ calculé plutôt que d’une valeur physique définie dans une table. Cela permet d&#39;accéder aux informations dans un format différent (par exemple, pour l&#39;âge et la date de naissance) sans avoir à stocker les deux valeurs. Il s’agit d’un bon moyen d’éviter la duplication des champs. Par exemple, la table des destinataires utilise une expression relative au domaine qui est déjà présente dans le champ de l’email.
 * Toutefois, lorsque le calcul de l’expression est complexe, il n’est pas recommandé d’utiliser l’attribut **expr**, car le calcul à la volée peut avoir une incidence sur les performances de vos requêtes.
 * Le type **XML** est un bon moyen d’éviter de créer des champs superflus. Cependant, il occupe aussi un certain volume d’espace disque, car il utilise une colonne CLOB dans la base de données. Il peut aussi contribuer à la complexité des requêtes SQL et avoir un impact sur les performances.
-* La longueur d’un champ de **chaîne** doit toujours être définie avec la colonne. Dans Adobe Campaign, la longueur maximale est de 255 par défaut, mais Adobe recommande de raccourcir le champ si vous savez déjà que la taille ne dépassera pas une longueur inférieure.
+* La longueur d’un champ de **chaîne** doit toujours être définie avec la colonne. Par défaut, la longueur maximale dans Adobe Campaign est de 16 Ko, mais Adobe recommande de raccourcir le champ si vous savez déjà que la taille ne dépassera pas une longueur inférieure.
 * Dans Adobe Campaign, il est acceptable de disposer d’un champ plus court que dans le système source si vous êtes sûr que la taille du système source a été surestimée et ne sera pas atteinte. Cela peut signifier une chaîne plus courte ou un entier plus petit dans Adobe Campaign.
 
 ### Choix des champs {#choice-of-fields}
 
-Un champ doit être stocké dans une table s’il est destiné à un ciblage ou une personnalisation. En d’autres termes, si un champ n’est pas utilisé pour envoyer un courriel personnalisé ou utilisé comme critère dans une requête, il prendra inutilement de l’espace disque.
+Un champ doit être stocké dans une table s’il est destiné à un ciblage ou une personnalisation. En d’autres termes, si un champ n’est pas utilisé pour envoyer un email personnalisé ou comme critère dans une requête, il occupera inutilement de l’espace disque.
 
 
 ### Choix des clés {#choice-of-keys}
 
-Outre l’**autouuid** défini par défaut dans la plupart des tableaux, vous devez envisager d’ajouter certaines clés logiques ou commerciales (numéro de compte, numéro de client, etc.). Vous pourrez l’utiliser ultérieurement pour les imports et les réconciliations ou les packages de données. Pour plus d’informations, voir la section [Identificateurs](#identifiers).
+Outre la valeur **autouuid** définie par défaut dans la plupart des tableaux, vous devez envisager d’ajouter des clés logiques ou métier (numéro de compte, numéro de client, etc.). Vous pourrez l’utiliser ultérieurement pour les imports et les réconciliations ou les packages de données. Pour plus d’informations, voir la section [Identificateurs](#identifiers).
 
-L’efficacité des clés est essentielle pour les performances. Les types de données numériques doivent toujours être préférés comme clés pour les tables.
+L’efficacité des clés est essentielle pour les performances. Snowflake vous permet d’insérer des types de données numériques ou string comme clés pour les tableaux.
 
 <!-- ### Dedicated tablespaces {#dedicated-tablespaces}
 
@@ -92,13 +91,13 @@ Le tableau ci-après décrit ces identifiants et leur finalité.
 
 | Identifiant | Description | Bonnes pratiques |
 |--- |--- |--- |
-| Id | <ul><li>L’id est la clé primaire physique d’une table Adobe Campaign. Pour les tableaux intégrés, il s’agit d’un identifiant unique universel (UUID).</li><li>Cet identifiant doit être unique. </li><li>Un UUID peut être visible dans une définition de schéma.</li></ul> | <ul><li>Les identifiants générés automatiquement ne peuvent pas être utilisés comme référence dans un workflow ou une définition de package.</li><li>L&#39;ID d&#39;une table est un UUID et ce type ne doit pas être modifié.</li></ul> |
-| Nom (ou nom interne) | <ul><li>Cette information est l’identifiant unique d’un enregistrement dans une table. Cette valeur peut être mise à jour manuellement, généralement avec un nom généré.</li><li>Cet identifiant conserve sa valeur lorsqu’il est déployé dans une autre instance d’Adobe Campaign et ne doit pas être vide.</li></ul> | <ul><li>Changez le nom d’enregistrement généré par Adobe Campaign si l’objet est destiné à être déployé d’un environnement à un autre.</li><li>Si un objet possède un attribut d’espace de noms (par exemple, *schema*), cet espace de noms commun sera appliqué à tous les objets personnalisés créés. Certains espaces de noms réservés ne doivent pas être utilisés : *nms*, *xtk*.</li><li>Lorsqu’un objet n’a pas d’espace de noms (*workflow* ou *delivery*, par exemple), cette notion d’espace de noms est ajoutée sous la forme d’un préfixe d’un objet de nom interne : *namespaceMyObjectName*.</li><li>N’utilisez pas de caractères spéciaux tels que l’espace « », le point-virgule « ; » ou le tiret « - ». Tous ces caractères seront remplacés par un trait de soulignement « _ » (caractère autorisé). Par exemple, « abc-def » et « abc:def » seront stockés sous la forme de « abc_def » et s’écraseront mutuellement.</li></ul> |
+| Id | <ul><li>L’id est la clé primaire physique d’une table Adobe Campaign. Pour les tables intégrées, il s’agit d’un UUID unique (Universally Unique ID).</li><li>Cet identifiant doit être unique. </li><li>Un UUID peut être visible dans une définition de schéma.</li></ul> | <ul><li>Les identifiants générés automatiquement ne peuvent pas être utilisés comme référence dans un workflow ou une définition de package.</li><li>L’identifiant d’un tableau est un UUID et ce type ne doit pas être modifié.</li></ul> |
+| Nom (ou nom interne) | <ul><li>Cette information est l’identifiant unique d’un enregistrement dans une table. Cette valeur peut être mise à jour manuellement, généralement avec un nom généré.</li><li>Cet identifiant conserve sa valeur lorsqu’il est déployé dans une autre instance d’Adobe Campaign et ne doit pas être vide.</li></ul> | <ul><li>Changez le nom d’enregistrement généré par Adobe Campaign si l’objet est destiné à être déployé d’un environnement à un autre.</li><li>Si un objet possède un attribut d’espace de noms (par exemple, *schema*), cet espace de noms commun sera appliqué à tous les objets personnalisés créés. Certains espaces de noms réservés ne doivent pas être utilisés : *nms*, *xtk*, etc.  Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces).</li><li>Lorsqu’un objet n’a pas d’espace de noms (*workflow* ou *delivery*, par exemple), cette notion d’espace de noms est ajoutée sous la forme d’un préfixe d’un objet de nom interne : *namespaceMyObjectName*.</li><li>N’utilisez pas de caractères spéciaux tels que l’espace « », le point-virgule « ; » ou le tiret « - ». Tous ces caractères seront remplacés par un trait de soulignement « _ » (caractère autorisé). Par exemple, « abc-def » et « abc:def » seront stockés sous la forme de « abc_def » et s’écraseront mutuellement.</li></ul> |
 | Libellé | <ul><li>Le libellé est l’identifiant d’entreprise d’un objet ou d’un enregistrement dans Adobe Campaign.</li><li>Cet objet autorise les espaces et les caractères spéciaux.</li><li>Il ne garantit pas le caractère unique d&#39;un enregistrement.</li></ul> | <ul><li>Il est recommandé de déterminer une structure pour les libellés de vos objets.</li><li>Il s’agit de la solution la plus conviviale pour identifier un enregistrement ou un objet pour un utilisateur d’Adobe Campaign.</li></ul> |
 
-La clé Principale est un identifiant UUID généré automatiquement pour toutes les tables intégrées. Un UUID peut également être utilisé pour les tables personnalisées.
+La clé Principale Adobe Campaign est un UUID généré automatiquement pour toutes les tables intégrées. Un UUID peut également être utilisé pour les tables personnalisées.
 
-Même si le nombre d’identifiants est illimité, vous devez prendre en charge la taille de votre base de données pour garantir des performances optimales. Pour éviter tout problème, veillez à ajuster les paramètres de purge de votre instance. Pour plus d’informations à ce sujet, consultez [cette section](#data-retention).
+Même si le nombre d’identifiants est infini, vous devez veiller à la taille de votre base de données pour garantir des performances optimales. Pour éviter tout problème, veillez à ajuster les paramètres de purge de votre instance. Pour plus d’informations à ce sujet, consultez [cette section](#data-retention).
 
 
 ## Clés internes personnalisées {#custom-internal-keys}
@@ -110,8 +109,8 @@ La plupart des organisations importent des enregistrements à partir de système
 Cette clé personnalisée est la clé primaire d’enregistrement réelle dans le système externe chargé d’alimenter Adobe Campaign.
 
 Pour la création d’une table personnalisée, vous avez deux possibilités :
-* Combinaison d’une clé générée automatiquement (id) et d’une clé interne (personnalisée). Cette option est intéressante si votre clé système est une clé composite ou n’est pas un entier. Les entiers offrent des performances supérieures dans les tables volumineuses et dans la jointure à d’autres tables.
-* Utilisation de la clé primaire comme clé primaire du système externe. Cette solution est généralement préférable, car elle simplifie l’approche d’import et d’export des données, avec une clé cohérente entre les différents systèmes. Autouuid doit être désactivé si la clé est nommée &quot;id&quot; et doit être remplie avec des valeurs externes (non générées automatiquement).
+* Combinaison d’une clé générée automatiquement (id) et d’une clé interne (personnalisée). Cette option est intéressante si votre clé système est une clé composite ou n’est pas un entier. Avec Snowflake, les entiers ou les clés basées sur des chaînes offrent des performances supérieures dans les grandes tables et dans la jointure avec d’autres tables.
+* Utilisation de la clé primaire comme clé primaire du système externe. Cette solution est généralement préférable, car elle simplifie l’approche d’import et d’export des données, avec une clé cohérente entre les différents systèmes. Autouuid doit être désactivé si la clé est nommée &quot;id&quot; et qu’elle doit être remplie avec des valeurs externes (et non pas automatiquement générée).
 
 >[!CAUTION]
 >
@@ -122,9 +121,9 @@ Pour la création d’une table personnalisée, vous avez deux possibilités :
 
 ### Liens {#links}
 
-Attention à l’intégrité « propre » des grandes tables. La suppression d’enregistrements dont l’intégrité est &quot;propre&quot; à des tables de grande taille peut potentiellement arrêter l’instance. La table est verrouillée et les suppressions sont faites une par une. Il est donc préférable d’appliquer une intégrité « neutre » sur les tables enfants très volumineuses.
+Attention à l’intégrité « propre » des grandes tables. La suppression d’enregistrements comportant de grandes tables avec une intégrité &quot;propre&quot; peut éventuellement arrêter l’instance. La table est verrouillée et les suppressions sont faites une par une. Il est donc préférable d’appliquer une intégrité « neutre » sur les tables enfants très volumineuses.
 
-La déclaration d’un lien en tant que jointure externe est néfaste pour les performances. L’enregistrement Zero ID émule la fonctionnalité de jointure externe. Il n’est pas nécessaire de déclarer des jointures externes si le lien utilise l’autouuid.
+La déclaration d’un lien en tant que jointure externe est néfaste pour les performances. L’enregistrement Zero ID émule la fonctionnalité de jointure externe. Il n&#39;est pas nécessaire de déclarer des jointures externes si le lien utilise l&#39;autouuid.
 
 Bien qu’il soit possible de joindre n’importe quelle table dans un workflow, Adobe recommande de définir des liens communs entre les ressources directement dans la définition de la structure de données.
 
@@ -178,7 +177,7 @@ Il existe un certain nombre de solutions pour minimiser le besoin d’enregistre
 
 Vous pouvez déclarer l’attribut « deleteStatus » dans un schéma. Il est plus efficace de marquer l’enregistrement comme supprimé, puis de différer la suppression au cours de la tâche de nettoyage.
 
-:speak_bulon: En tant qu’utilisateur Cloud Services géré, contactez les consultants en Adobe ou les administrateurs techniques pour en savoir plus sur la rétention ou si vous devez définir la rétention pour les tableaux personnalisés.
+:speak_ballon: En tant qu’utilisateur Cloud Services géré, contactez les consultants Adobe ou les administrateurs techniques pour en savoir plus sur la rétention ou pour définir la rétention pour les tables personnalisées.
 
 ## Performances {#performance}
 
@@ -209,7 +208,7 @@ Vous trouverez ci-dessous quelques bonnes pratiques courantes à appliquer lors 
 * Lorsque vous utilisez des tables de destinataires par défaut supplémentaires, veillez à disposer d’une table de logs dédiée pour chaque mapping de diffusion.
 * Diminuez le nombre de colonnes, notamment en identifiant celles qui ne sont pas utilisées.
 * Optimisez les relations du modèle de données en évitant les jointures complexes, notamment celles qui concernent plusieurs conditions et/ou colonnes.
-* Pour les clés de jointure, préférez toujours les données numériques aux chaînes de caractères.
+* Pour les clés de jointure, vous pouvez utiliser des valeurs numériques ou string.
 * Réduisez autant que possible la profondeur de conservation des logs. Si vous avez besoin d’un historique plus détaillé, vous pouvez agréger le calcul et/ou gérer des tables de logs personnalisées pour stocker un historique plus volumineux.
 
 ### Taille des tables {#size-of-tables}
@@ -228,6 +227,6 @@ Pour éviter tout problème de performances lié au nombre élevé de lignes, co
 Voici quelques bonnes pratiques concernant la taille des tables :
 
 * Créez de grandes tables contenant moins de champs et plus de données numériques.
-* N’utilisez pas un grand nombre de colonnes pour stocker de petits nombres comme des valeurs booléennes.
+* N’utilisez pas le type grand nombre de colonnes pour stocker de petits nombres comme des valeurs booléennes.
 * Supprimez les colonnes inutilisées de la définition de la table.
 * Ne conservez pas les données historiques ou inactives dans votre base de données Adobe Campaign (export et nettoyage).
