@@ -1,27 +1,26 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Formulaires d’entrée Campaign
-description: Découvrez comment personnaliser les formulaires d’entrée
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+title: Formulaires de saisie Campaign
+description: Découvrez comment personnaliser les formulaires de saisie
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '2579'
+source-wordcount: '2580'
 ht-degree: 87%
 
 ---
 
-# Commencer avec les formulaires d’entrée {#gs-ac-forms}
+# Prise en main des formulaires de saisie{#gs-ac-forms}
 
-Lorsque vous créez ou étendez un schéma, vous devez créer ou modifier les formulaires d’entrée associés pour que ces modifications soient visibles par les utilisateurs finaux.
+Lorsque vous créez ou étendez un schéma, vous devez créer ou modifier les formulaires de saisie associés afin que ces modifications soient visibles par les utilisateurs finaux.
 
 Un formulaire de saisie permet l&#39;édition d&#39;une instance associée à un schéma de données à partir de la console cliente Adobe Campaign. Le formulaire est identifié par ses nom et espace de noms.
 
-La clé d’identification d’un formulaire est une chaîne composée de l’espace de nommage et du nom séparé par deux-points, par exemple : &quot;cus:contact&quot;.
+La clé d&#39;identification d&#39;un formulaire est une chaîne composée de l&#39;espace de noms et du nom séparés par deux points, par exemple : &quot;cus:contact&quot;.
 
-## Modification de formulaires d’entrée
+## Modifier les formulaires de saisie
 
-Créez et configurez des formulaires d’entrée à partir du dossier **[!UICONTROL Administration] > [!UICONTROL Configuration] > [!UICONTROL Formulaires d’entrée]** de la console client :
+Créez et configurez des formulaires de saisie à partir du dossier **[!UICONTROL Administration] > [!UICONTROL Configuration] > [!UICONTROL Formulaires de saisie]** de la console cliente :
 
 ![](assets/form_arbo.png)
 
@@ -81,12 +80,12 @@ Le contrôle d&#39;édition s&#39;adapte automatiquement au type de données cor
 
 >[!NOTE]
 >
->Vous pouvez remplacer l’étiquette définie dans son schéma de données en ajoutant l’attribut **label** à l’élément `<input>` :\
+>Vous pouvez remplacer le libellé défini dans son schéma de données en ajoutant l&#39;attribut **label** à l&#39;élément `<input>` :\
 >`<input label="E-mail address" xpath="@name" />`
 
 Par défaut, chaque champ est affiché sur une seule ligne et occupe tout l&#39;espace disponible selon le type de données.
 
-:flèche_supérieur_droite : Tous les attributs de formulaire sont répertoriés dans la [documentation du Campaign Classic](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html).
+:flèche_upper_right : Tous les attributs de formulaire sont répertoriés dans la [documentation de Campaign Classic v7](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html).
 
 ## Mise en forme {#formatting}
 
@@ -180,9 +179,9 @@ Exemple avec ajout du &quot;xpath&quot; sur l&#39;élément de nom &quot;locatio
 
 Les conteneurs sont utilisés pour construire des contrôles complexes ayant recours à un ensemble de champs mis en forme dans des pages.
 
-### Onglets d&#39;Ajoute (bloc-notes) {#tab-container}
+### Ajouter des onglets (notebook) {#tab-container}
 
-Utilisez un conteneur **bloc-notes** pour formater les données dans des pages accessibles à partir d&#39;onglets.
+Utilisez un conteneur **notebook** pour formater les données dans les pages accessibles à partir d’onglets.
 
 ![](assets/do-not-localize/form_exemple6.png)
 
@@ -201,15 +200,15 @@ Utilisez un conteneur **bloc-notes** pour formater les données dans des pages a
 
 Le conteneur principal est défini par l&#39;attribut **type=&quot;notebook&quot;**. Les onglets sont déclarés dans les conteneurs enfants, le libellé des onglets est renseigné à partir de l&#39;attribut **label**.
 
-Ajoutez l’attribut **style=&quot;down&quot;** pour forcer le positionnement vertical des libellés de tabulation sous le contrôle. Cet attribut est facultatif. La valeur par défaut est **&quot;up&quot;**.
+Ajoutez l’attribut **style=&quot;down&quot;** pour forcer le positionnement vertical des libellés des onglets sous le contrôle. Cet attribut est facultatif. La valeur par défaut est **&quot;up&quot;**.
 
 ![](assets/do-not-localize/form_exemple7.png)
 
 `<container style="down" type="notebook">  ... </container>`
 
-### Icônes d’Ajoute (iconbox) {#icon-list}
+### Ajouter des icônes (iconbox) {#icon-list}
 
-Utilisez ce conteneur pour afficher une barre d&#39;icônes verticale qui vous permet de sélectionner les pages à afficher.
+Utilisez ce conteneur pour afficher une barre d&#39;icônes verticale permettant de sélectionner les pages à afficher.
 
 ![](assets/do-not-localize/form_exemple8.png)
 
@@ -234,7 +233,7 @@ Les images sont disponibles à partir du noeud **[!UICONTROL Administration > Pa
 
 ### Masquer les conteneurs (visibleGroup) {#visibility-container}
 
-Vous pouvez masquer un ensemble de contrôles par le biais d’une condition dynamique.
+Vous pouvez masquer un ensemble de contrôles via une condition dynamique.
 
 Cet exemple illustre la visibilité des contrôles sur la valeur du champ &quot;Genre&quot; :
 
@@ -290,7 +289,7 @@ Le choix de la cible est accessible à partir de la zone d&#39;édition. Une aid
 
 Une liste déroulante permet de sélectionner un élément de la cible parmi la liste des enregistrements déjà créés.
 
-L&#39;icône **[!UICONTROL Modifier le lien]** (dossier) lance un formulaire de sélection avec la liste des éléments ciblés et une zone de filtre.
+L&#39;icône **[!UICONTROL Modifier le lien]** (dossier) lance une forme de sélection avec la liste des éléments ciblés et une zone de filtrage.
 
 L&#39;icône **[!UICONTROL Editer le lien]** (loupe) lance la forme d&#39;édition de l&#39;élément lié. La forme utilisée est déduite par défaut sur la clé du schéma ciblé, l&#39;attribut **form** permet de forcer le nom de la forme d&#39;édition (par exemple &quot;cus:company2&quot;).
 
@@ -326,7 +325,7 @@ Vous pouvez aussi trier la liste avec l’élément **`<orderby>`** :
 * **noZoom** : pas de forme d&#39;édition sur le lien (avec la valeur &quot;true&quot;)
 * **form** : surcharge la forme d&#39;édition de l&#39;élément ciblé
 
-## Ajouter une liste de liens (non liée) {#list-of-links}
+## Ajouter une liste de liens (non liés) {#list-of-links}
 
 Un lien renseigné dans le schéma de données en tant que élément de collection (@unbound=&quot;true&quot;) doit obligatoirement passer par une liste afin de visualiser l&#39;ensemble des éléments qui lui sont associés.
 
@@ -376,7 +375,7 @@ Un filtre et un tri peuvent être appliqués lors du chargement de la liste :
 </input>
 ```
 
-## Définir une table de relations {#relationship-table}
+## Définir une table de relation {#relationship-table}
 
 Une table de relation permet de lier deux tables avec une cardinalité N-N. La table de relation contient uniquement les liens vers les deux tables.
 
@@ -425,7 +424,7 @@ Les listes mémoire permettent d&#39;éditer les éléments de collection avec l
 
 Ces listes sont utilisées sur les éléments de collections mappés en XML ou sur les liens à faible volume.
 
-## Ajouter une liste de colonne {#column-list}
+## Ajouter une liste de colonnes {#column-list}
 
 Ce contrôle affiche une liste à colonnes éditable avec une barre d&#39;outils contenant les boutons d&#39;ajout et de suppression.
 
@@ -547,7 +546,7 @@ Les contrôles à éditer sont regroupés dans un **`<container>`** renseigné s
 
 ![](assets/do-not-localize/form_exemple18.png)
 
-## Ajouter un champ d&#39;expression {#expression-field}
+## Ajouter un champ d’expression {#expression-field}
 
 Un champ d’expression permet de mettre à jour dynamiquement un champ à partir d’une expression ; la balise **`<input>`** est utilisée avec un attribut **xpath** pour renseigner le chemin du champ à mettre à jour et un attribut **expr** contenant l’expression de mise à jour.
 
@@ -614,7 +613,7 @@ La balise **`<check expr="<condition>" />`** combinée avec la balise **`<error>
 
 ## Assistant (assistant) {#wizards}
 
-Un assistant vous guide à travers un ensemble d&#39;étapes de saisie de données sous forme de pages. Les données saisies sont enregistrées lorsque vous validez le formulaire.
+Un assistant vous guide tout au long d’un ensemble d’étapes de saisie de données sous forme de pages. Les données saisies sont enregistrées lorsque vous validez le formulaire.
 
 Pour ajouter un assistant, utilisez le type de structure suivant :
 
