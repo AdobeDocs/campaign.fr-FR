@@ -1,22 +1,27 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Envoyer des messages directs LINE avec Adobe Campaign
-description: Commencer avec la messagerie LINE
-feature: Vue d’ensemble
+title: Envoi de messages LINE directs avec Adobe Campaign
+description: Prise en main de la messagerie LINE
+feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 3fe4156149e9ff8724dd1ff5fc17b538e6055ef8
+hidefromtoc: true
+hide: true
+source-git-commit: c659c31c15916077e71c63f3b3f4ca135d4d7f7d
 workflow-type: tm+mt
-source-wordcount: '60'
+source-wordcount: '64'
 ht-degree: 6%
 
 ---
 
 # Création de diffusions LINE
 
-LINE est une application pour la messagerie instantanée gratuite, les appels vocaux et vidéo, disponible sur tous les appareils mobiles et sur PC. Adobe Campaign vous permet d&#39;envoyer des messages LINE.
 
-:flèche_supérieur_droite : Pour en savoir plus, consultez la [documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html)
+**PAS ENCORE DISPONIBLE**
+
+
+LINE est une application pour la messagerie instantanée, les appels vocaux et vidéo gratuits, disponible sur tous les appareils mobiles et sur PC. Adobe Campaign vous permet d&#39;envoyer des messages LINE.
+
+:flèche_upper_right : En savoir plus dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html)
 
