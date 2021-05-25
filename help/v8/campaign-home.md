@@ -1,14 +1,13 @@
 ---
 keywords: Campaign Standard;accueil;sujets populaires
-solution: Campaign
-description: Centre d’aide Campaign v8
+solution: Campaign v8
+description: Centre d'aide de Campaign v8
 title: Documentation du produit Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 30b363ca9905c71f24a9b3db2404a301a5965eac
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 34%
+source-wordcount: '85'
+ht-degree: 27%
 
 ---
 
@@ -18,13 +17,13 @@ ht-degree: 34%
 
 ## Nouveautés
 
-* **[Qu&#39;est-ce que l&#39;Adobe Campaign](start/get-started.md)**  ?
+* **[Présentation de [!DNL Adobe Campaign]](start/get-started.md)**  - Fonctionnalités clés et cas d’utilisation
 
-* **[Nouveautés de la version 8](start/whats-new.md)** - Fonctionnalités de Discover Campaign v8
+* **[Nouveautés v8](start/whats-new.md)**  - Découvrez les fonctionnalités de Campaign v8
 
-* **[Instructions](start/implement.md)**   de mise en oeuvre - Découvrez comment début de votre mise en oeuvre
+* **[Instructions](start/implement.md)**   de mise en oeuvre - Découvrez comment commencer votre mise en oeuvre
 
-* **[De v7 à v8](start/capability-matrix.md)** - Passage de Campaign Classic v7 à v8 ? Apprendre les différences clés
+* **[De la v7 à la v8](start/capability-matrix.md)**  - Transition de Campaign Classic v7 à la v8 ? Découvrez les différences clés
 
 ## Prise en main
 
@@ -62,8 +61,8 @@ ht-degree: 34%
 
 ## Plus de ressources
 
+* [Problèmes connus et limites](start/known-limitations.md)
 * [Architecture](dev/architecture.md)
 * [Mesure et suivi](start/reporting.md)
-* [Connexion à d&#39;autres solutions](connect/integration.md)
-* [Aide et support](start/support.md)
-* [Panneau de contrôle](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr)
+* [Connexion à d’autres solutions](connect/integration.md)
+* [FAQ sur Campaign v8](start/campaign-faq.md)
