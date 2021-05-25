@@ -1,13 +1,12 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Filtres prédéfinis d’Offre d’interaction Campaign
+title: Filtres prédéfinis des offres d'interaction Campaign
 description: Découvrez comment créer des filtres prédéfinis
-feature: Vue d’ensemble
+feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 43%
@@ -16,11 +15,11 @@ ht-degree: 43%
 
 # Création de filtres prédéfinis{#creating-predefined-filters}
 
-Créez des filtres prédéfinis pour définir des règles d&#39;éligibilité pour la population de cibles qui peuvent être facilement réutilisées lors de la création d’offres. Ils sont spécifiques à chaque environnement et tiennent compte des paramètres d&#39;offre.
+Créez des filtres prédéfinis afin de définir des règles d&#39;éligibilité pour la population cible qui pourront facilement être réutilisées lors de la création de l&#39;offre. Ils sont spécifiques à chaque environnement et prennent en compte les paramètres de l&#39;offre.
 
-Pour créer un filtre prédéfini, appliquez le processus suivant :
+Pour créer un filtre prédéfini, procédez comme suit :
 
-1. Accédez au dossier **[!UICONTROL Administration]** et sélectionnez **[!UICONTROL filtres d’offre prédéfinis]**.
+1. Accédez au dossier **[!UICONTROL Administration]** et sélectionnez **[!UICONTROL Filtres d’offres prédéfinis]**.
 
    ![](assets/offer_filter_create_005.png)
 
