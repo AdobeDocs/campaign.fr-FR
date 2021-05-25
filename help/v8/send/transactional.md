@@ -1,42 +1,41 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Messagerie transactionnelle Campaign
-description: Commencer avec la messagerie transactionnelle
-feature: Vue d’ensemble
+title: Messages transactionnels de Campaign
+description: Prise en main de la messagerie transactionnelle
+feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: e068642c1bc5bf5f0329fc09f7ca6ddbd1683d6a
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '1546'
-ht-degree: 73%
+source-wordcount: '1552'
+ht-degree: 69%
 
 ---
 
-# Commencer avec la messagerie transactionnelle {#send-transactional-messages}
+# Prise en main de la messagerie transactionnelle{#send-transactional-messages}
 
 Les messages transactionnels (Message Center) sont un module de gestion des messages transactionnels de Campaign. Ces messages (factures, confirmation de commande, changement de mot de passe ou création d&#39;un compte sur un site web par exemple) sont générés à partir des événements déclenchés depuis des systèmes d&#39;information.
 
-:speak_bulon: En tant qu&#39;utilisateur Cloud Services géré, [contactez l&#39;Adobe](../start/support.md#support) pour installer et configurer la messagerie active Campaign Transactional dans votre environnement.
+:speak_ballon: En tant qu’utilisateur Cloud Services géré, [contactez l’Adobe](../start/campaign-faq.md#support) pour installer et configurer les messages transactionnels Campaign dans votre environnement.
 
 Les messages transactionnels sont utilisés pour envoyer :
 
-* notifications, telles que les confirmations de commande ou les réinitialisations de mot de passe, par exemple
+* notifications, telles que les confirmations de commandes ou les réinitialisations de mot de passe, par exemple
 * réponse individuelle en temps réel à une action client
 * contenu non promotionnel
 
-: bulb: Les paramètres de messagerie transactionnelle sont détaillés dans [cette section](../config/transactional-msg-settings.md).
+:bulb: Les paramètres des messages transactionnels sont détaillés dans [cette section](../config/transactional-msg-settings.md).
 
-: bulb: Découvrez l&#39;architecture de la messagerie transactionnelle dans [cette page](../dev/architecture.md).
+:bulb: Découvrez l’architecture des messages transactionnels dans [cette page](../dev/architecture.md).
 
 >[!CAUTION]
 >
 >Les messages transactionnels nécessitent une licence spécifique. Veuillez vérifier votre accord de licence.
 
-## Définir des modèles de message transactionnel
+## Définition de modèles de messages transactionnels
 
-Chaque événement peut déclencher un message personnalisé. Pour ce faire, vous devez créer un modèle de message correspondant à chaque type d&#39;événement. Les modèles contiennent les informations nécessaires à la personnalisation du message transactionnel. Vous pouvez également utiliser des modèles pour tester la prévisualisation des messages et envoyer des BAT à l’aide d’adresses de contrôle avant de les envoyer à la cible finale.
+Chaque événement peut déclencher un message personnalisé. Pour ce faire, vous devez créer un modèle de message correspondant à chaque type d’événement. Les modèles contiennent les informations nécessaires pour personnaliser le message transactionnel. Vous pouvez également utiliser des modèles pour tester l&#39;aperçu du message et envoyer des BAT à l&#39;aide d&#39;adresses de contrôle avant l&#39;envoi à la cible finale.
 
 ### Créer le modèle
 
@@ -56,7 +55,7 @@ Pour créer un modèle de message, procédez comme suit :
 
    ![](assets/messagecenter_create_model_003.png)
 
-   Les types d&#39;événement destinés à être traités par Adobe Campaign doivent être créés dans l&#39;instance de pilotage par Adobe.
+   Les types d&#39;événements destinés à être traités par Adobe Campaign doivent être créés par Adobe dans l&#39;instance de pilotage.
 
    >[!NOTE]
    >
@@ -64,18 +63,16 @@ Pour créer un modèle de message, procédez comme suit :
 
 1. Saisissez une nature et une description, puis cliquez sur **[!UICONTROL Continuer]** pour créer le corps du message. Voir [Création du contenu du message](#create-message-content).
 
-   ![](assets/messagecenter_create_model_004.png)
+### Créez le contenu {#create-message-content}
 
-### Créer le contenu {#create-message-content}
-
-La définition du contenu du message transactionnel est la même que pour toutes les diffusions de Adobe Campaign. Par exemple, pour une diffusion de courrier électronique, vous pouvez créer du contenu au format HTML ou texte, ajouter des pièces jointes ou personnaliser l’objet de diffusion. Pour plus d’informations à ce sujet, consultez [cette section](../start/create-message.md).
+La définition du contenu du message transactionnel est la même que pour toutes les diffusions dans Adobe Campaign. Par exemple, pour une diffusion email, vous pouvez créer du contenu au format HTML ou texte, ajouter des pièces jointes ou personnaliser l’objet de la diffusion. Pour plus d’informations à ce sujet, consultez [cette section](../start/create-message.md).
 
 >[!CAUTION]
 >
 >Les images incluses dans le message doivent être accessibles publiquement. Adobe Campaign ne fournit pas de mécanisme de mise en ligne des images pour les messages transactionnels.\
 >Contrairement à JSSP ou webApp, `<%=` n’a pas de séquence d’échappement par défaut.
 >
->Vous devez enregistrer correctement chaque donnée en provenance du événement. Cette séquence d’échappement dépend de l’utilisation de ce champ. Par exemple, dans une URL, utilisez encodeURIComponent. Pour un affichage dans le code HTML, vous pouvez utiliser escapeXMLString.
+>Vous devez placer correctement dans une séquence d’échappement chaque donnée provenant de l’événement. Cette séquence d’échappement dépend de l’utilisation de ce champ. Par exemple, dans une URL, utilisez encodeURIComponent. Pour un affichage dans le code HTML, vous pouvez utiliser escapeXMLString.
 
 Lorsque vous avez défini le contenu de votre message, vous pouvez intégrer les informations de l&#39;événement dans le corps du message et ainsi le personnaliser. Les informations de l&#39;événement sont insérées dans le corps du texte à l&#39;aide des balises de personnalisation.
 
@@ -98,65 +95,52 @@ Pour insérer des balises de personnalisation dans le corps d&#39;un message ema
 
 ### Ajout d’adresses de contrôle{#add-seeds}
 
-Une adresse de départ vous permet d’afficher une prévisualisation de votre message, d’envoyer un BAT et de tester la personnalisation du message avant de l’envoyer. Les Adresses de contrôle sont liées à la diffusion et ne peuvent pas être utilisées pour d&#39;autres diffusions.
+Une adresse de contrôle permet d&#39;afficher un aperçu de votre message, d&#39;envoyer un BAT et de tester la personnalisation de votre message avant de l&#39;envoyer. Les adresses de contrôle sont liées à la diffusion et ne peuvent pas être utilisées pour d&#39;autres diffusions.
 
-1. Dans le modèle de message transactionnel, cliquez sur l&#39;onglet **[!UICONTROL Adresses de contrôle]**.
+1. Dans le modèle de message transactionnel, cliquez sur l&#39;onglet **[!UICONTROL Adresses de contrôle]**, puis sur le bouton **[!UICONTROL Ajouter]** .
 
    ![](assets/messagecenter_create_seed_1.png)
 
-1. Attribuez-lui un libellé afin de pouvoir sélectionner l&#39;adresse ultérieurement si nécessaire.
-
-   ![](assets/messagecenter_create_seed_2.png)
-
-1. Entrez l&#39;adresse de contrôle, soit l&#39;email ou le numéro de portable selon le canal de communication de la diffusion.
-
-   ![](assets/messagecenter_create_seed_3.png)
+1. Attribuez-lui ultérieurement un libellé afin de faciliter la sélection, puis saisissez l&#39;adresse de contrôle (email ou téléphone portable selon le canal de communication).
 
 1. Renseignez l&#39;identifiant externe : ce champ optionnel vous permet de renseigner la clé métier (identifiant unique, nom + email, etc.), commune à toutes les applications de votre site web, que vous utilisez pour identifier vos profils. Si ce champ est aussi présent dans la base marketing Adobe Campaign, vous pourrez alors réconcilier un évènement avec un profil en base.
 
-   ![](assets/messagecenter_create_seed_4.png)
+   ![](assets/messagecenter_create_seed_2.png)
 
-1. Insérez les données de test. Consultez [cette section](#personalization-data).
+1. Insérez des données de test. Consultez [cette section](#personalization-data).
 
    ![](assets/messagecenter_create_custo_3.png)
 
-1. Cliquez sur le lien **[!UICONTROL Ajouter d&#39;autres adresses de contrôle]**, puis sur le bouton **[!UICONTROL Ajouter]**.
-
-   ![](assets/messagecenter_create_seed_5.png)
+1. Cliquez sur **[!UICONTROL Ok]** pour valider la création de l&#39;adresse de contrôle.
 
 1. Répétez l&#39;opération pour créer le nombre d&#39;adresses voulu.
 
    ![](assets/messagecenter_create_seed_6.png)
 
-Une fois les adresses créées, vous pouvez accéder à leur prévisualisation et à leur personnalisation.
+Une fois les adresses créées, vous pouvez accéder à leur prévisualisation et personnalisation.
 
-### Données de personnalisation des Ajoutes{#personalization-data}
+### Ajouter des données de personnalisation{#personalization-data}
 
-Vous pouvez ajouter des données dans le modèle de message pour tester la personnalisation du message transactionnel. Vous pouvez ainsi générer une prévisualisation ou envoyer un BAT. Si vous installez le module **Délivrabilité**, ces données vous permettent d&#39;afficher un rendu des messages pour divers clients de bureau, Web ou mobiles.
+Vous pouvez ajouter des données dans le modèle de message pour tester la personnalisation des messages transactionnels. Vous pourrez ainsi générer un aperçu ou envoyer un BAT. Si vous installez le module **Délivrabilité** , ces données vous permettent d&#39;afficher le rendu des messages pour différents clients de bureau, web ou mobiles.
 
 Ces données n&#39;ont pour but que de tester vos messages avant leur envoi effectif et ne correspondent pas aux données réelles qui seront traitées par Message Center. En revanche, la structure XML doit être identique à celle de l&#39;événement qui est stocké dans l&#39;instance d&#39;exécution, comme illustré ci-dessous.
 
 ![](assets/messagecenter_create_custo_4.png)
 
-Ces informations vous permettent de personnaliser le contenu des messages à l’aide de balises de personnalisation.
+Ces informations permettent de personnaliser le contenu des messages à l&#39;aide de balises de personnalisation.
 
 1. Dans le modèle de message, cliquez sur l&#39;onglet **[!UICONTROL Adresses de contrôle]**.
 1. Dans le contenu de l&#39;événement, entrez les informations de test au format XML.
 
    ![](assets/messagecenter_create_custo_3.png)
 
-
-### Aperçu de votre message transactionnel{#transactional-message-preview}
+### Prévisualiser votre message transactionnel{#transactional-message-preview}
 
 Lorsque vous avez créé une ou plusieurs adresses de contrôle, ainsi que le corps du message, vous pouvez afficher l&#39;aperçu de votre message et vérifier la personnalisation de ce dernier.
 
-1. Dans le modèle de message, cliquez sur l&#39;onglet **[!UICONTROL Aperçu]**.
+1. Dans le modèle de message, cliquez sur l&#39;onglet **[!UICONTROL Aperçu]**, puis sélectionnez **[!UICONTROL Une adresse de contrôle]** dans la liste déroulante.
 
    ![](assets/messagecenter_preview_1.png)
-
-1. Sélectionnez **[!UICONTROL Adresse de contrôle]** dans la liste déroulante.
-
-   ![](assets/messagecenter_preview_2.png)
 
 1. Sélectionnez l&#39;adresse de contrôle préalablement créée afin d&#39;afficher le message personnalisé.
 
@@ -166,14 +150,14 @@ Lorsque vous avez créé une ou plusieurs adresses de contrôle, ainsi que le co
 
 Vous pouvez tester l&#39;envoi du message en envoyant un BAT vers une adresse de contrôle créée précédemment.
 
-L’envoi d’un BAT implique le même processus que pour toute diffusion.
+L&#39;envoi d&#39;un BAT s&#39;effectue de la même manière que pour toute diffusion.
 
-:flèche_supérieur_droite : Pour en savoir plus sur les BAT, consultez la [documentation Campaign Classic]((https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)).
+:flèche_upper_right : En savoir plus sur les bons à tirer dans la [documentation de Campaign Classic v7]((https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html))
 
-Cependant, pour envoyer un BAT d’un message transactionnel, vous devez effectuer les opérations suivantes :
+Cependant, pour envoyer un BAT d&#39;un message transactionnel, vous devez effectuer les opérations suivantes :
 
 * Créer une ou plusieurs [adresses de contrôle](#add-seeds) avec des données de test de personnalisation
-* Création du contenu du message
+* Créer le contenu du message
 
 Pour effectuer l&#39;envoi :
 
@@ -191,7 +175,7 @@ Les BAT sont accessibles au niveau de chaque modèle, depuis l&#39;onglet **[!UI
 
 ![](assets/messagecenter_send_proof_003.png)
 
-### Publication du modèle
+### Publier le modèle
 
 Lorsque le modèle de message créé sur l’instance de pilotage est terminé, vous pouvez le publier. Ce processus le publiera également sur toutes les instances d&#39;exécution.
 
