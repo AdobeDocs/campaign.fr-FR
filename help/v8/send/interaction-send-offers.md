@@ -1,30 +1,29 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Catalogue d'offres d’interaction Campaign
-description: Découvrez comment créer un catalogue d'offres
-feature: Vue d’ensemble
+title: Catalogue d'offres d'interaction Campaign
+description: Découvrez comment créer un catalogue d’offres
+feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: fcc0165aeba4347a53d33bed95aa7fbb5fa27005
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '1357'
+source-wordcount: '1360'
 ht-degree: 73%
 
 ---
 
 # Envoyer une offre
 
-Pour qu&#39;une offre soit sélectionnée par le moteur d&#39;offre, elle doit être approuvée et disponible dans un environnement **Live**. [En savoir plus](interaction-offer.md#approve-offers)
+Pour qu&#39;une offre puisse être sélectionnée par le moteur d&#39;offres, elle doit être validée et disponible dans un environnement **Live**. [En savoir plus](interaction-offer.md#approve-offers)
 
-La présentation des Offres par l&#39;intermédiaire d&#39;un canal de communication sortant est effectuée par courrier direct, courrier électronique ou diffusion mobile. Vous pouvez également utiliser le mode unitaire avec la messagerie transactionnelle (Centre de messages).
+La présentation des offres via un canal de communication sortant s&#39;effectue par courrier, email ou diffusions mobiles. Vous pouvez également utiliser le mode unitaire avec les messages transactionnels (Message Center).
 
 ## Insérer une offre dans une diffusion {#offer-into-a-delivery}
 
-Pour insérer des Propositions d&#39;offre dans une diffusion, procédez comme suit :
+Pour insérer des propositions d&#39;offres dans une diffusion, procédez comme suit :
 
-1. Dans la fenêtre diffusion, cliquez sur l&#39;icône **Offres**.
+1. Dans la fenêtre de diffusion, cliquez sur l&#39;icône **Offres** .
 
    ![](assets/offer_delivery_001.png)
 
@@ -46,11 +45,11 @@ Pour insérer des Propositions d&#39;offre dans une diffusion, procédez comme s
 
    ![](assets/offer_delivery_006.png)
 
-1. Si nécessaire, sélectionnez l&#39;option **[!UICONTROL Ne rien afficher si aucune offre n&#39;est sélectionnée]**. [En savoir plus](#parameters-for-calling-offer-engine).
+1. Si nécessaire, sélectionnez l’option **[!UICONTROL Ne rien afficher si aucune offre n’est sélectionnée]** . [En savoir plus](#parameters-for-calling-offer-engine).
 
    ![](assets/offer_delivery_007.png)
 
-1. Insérez les propriétés dans le contenu de la diffusion à l’aide des champs de fusion. Le nombre de propositions disponibles dépend de la configuration de l&#39;appel au moteur et de leur ordre d&#39;exécution dépend de la priorité des offres.
+1. Insérez les propriétés dans le contenu de la diffusion à l&#39;aide des champs de fusion. Le nombre de propositions disponibles dépend de la configuration de l&#39;appel au moteur et leur ordre dépend de la priorité des offres.
 
    ![](assets/offer_delivery_008.png)
 
@@ -59,7 +58,7 @@ Pour insérer des Propositions d&#39;offre dans une diffusion, procédez comme s
    ![](assets/offer_delivery_010.png)
 
 
-### Paramètres du moteur d&#39;offre {#parameters-for-calling-offer-engine}
+### Paramètres du moteur d’offres {#parameters-for-calling-offer-engine}
 
 * **[!UICONTROL Emplacement]** : emplacement de l&#39;environnement des offres à choisir obligatoirement afin d&#39;activer le moteur d&#39;offres.
 * **[!UICONTROL Catégorie]** : dossier spécifique dans lequel les offres sont classées. Si aucune catégorie n&#39;est spécifiée, c&#39;est la totalité des offres contenues dans l&#39;environnement qui seront prises en compte par le moteur d&#39;offres, sauf si un thème est sélectionné.
@@ -68,9 +67,9 @@ Pour insérer des Propositions d&#39;offre dans une diffusion, procédez comme s
 * **[!UICONTROL Exclure les destinataires non éligibles]** : cette option permet d&#39;activer ou non l&#39;exclusion des destinataires pour lesquels il n&#39;y a pas assez d&#39;offres éligibles. Pour chaque destinataire, il se peut que le nombre de propositions éligibles soit inférieur au nombre de propositions requis. En cochant cette case, les destinataires pour lesquels le nombre de propositions requis n&#39;est pas atteint seront exclus de la diffusion. Si vous ne sélectionnez pas cette option, ces destinataires seront conservés, mais ils auront un nombre de propositions inférieur au nombre demandé.
 * **[!UICONTROL Ne rien afficher si aucune offre n&#39;est sélectionnée]** : cette option permet de choisir le traitement du message au cas où l&#39;une des propositions n&#39;existerait pas. En cochant cette case, la représentation de la proposition manquante ne s&#39;affichera pas et aucun contenu n&#39;apparaîtra dans le message pour cette proposition. Si la case est décochée, le message lui-même est annulé au moment de l&#39;envoi et les destinataires ne recevront aucun message.
 
-## Envoyer des offres dans des workflows
+## Envoi d’offres dans des workflows
 
-Plusieurs activités de processus vous permettent de définir la manière dont les offres sont présentées :
+Plusieurs activités de workflow permettent de définir la présentation des offres :
 
 * Enrichissement
 * Moteur d&#39;offres
@@ -78,9 +77,9 @@ Plusieurs activités de processus vous permettent de définir la manière dont l
 
 ### Enrichissement {#enrichment}
 
-L&#39;activité **Enrichissement** vous permet d&#39;ajouter des offres ou des liens aux offres pour les destinataires de diffusion.
+L&#39;activité **Enrichissement** permet d&#39;ajouter des offres ou des liens vers des offres destinées à des destinataires de diffusion.
 
-:flèche_supérieur_droite : Pour plus d’informations sur l’activité de l’Enrichissement, consultez la [documentation du Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html).
+:flèche_upper_right : Pour plus d&#39;informations sur l&#39;activité Enrichissement, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html)
 
 Vous pouvez par exemple enrichir les données d&#39;une requête sur les destinataires, avant une diffusion.
 
@@ -91,11 +90,11 @@ Deux méthodes permettent de définir des propositions d&#39;offre.
 * En définissant une offre ou un appel au moteur d&#39;offres.
 * En référençant un lien vers une offre.
 
-#### Spécifiez une offre ou un appel au moteur d&#39;offre {#specifying-an-offer-or-a-call-to-the-offer-engine}.
+#### Spécifiez une offre ou un appel au moteur d’offres {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
 Après avoir configuré votre activité **Requête** :
 
-1. Ajoutez et ouvrez une activité **Enrichissement**.
+1. Ajoutez et ouvrez une activité **Enrichissement** .
 1. Dans l&#39;onglet **[!UICONTROL Enrichissement]**, sélectionnez **[!UICONTROL Ajouter des données]**.
 1. Sélectionnez **[!UICONTROL Une proposition d&#39;offre]** dans les types de données à ajouter.
 
@@ -118,7 +117,7 @@ Après avoir configuré votre activité **Requête** :
    >
    >Le nombre de propositions disponibles pour la prévisualisation dépend du paramétrage réalisé dans l&#39;activité d&#39;enrichissement et non d&#39;un éventuel paramétrage directement dans la diffusion.
 
-#### Référence à un lien vers une offre {#referencing-a-link-to-an-offer}
+#### Référencer un lien vers une offre {#referencing-a-link-to-an-offer}
 
 Vous pouvez également référencer un lien vers une offre dans une activité **Enrichissement**.
 
@@ -140,9 +139,9 @@ Pour ce faire, procédez comme suit :
    >
    >Le nombre de propositions disponibles pour la prévisualisation dépend du paramétrage réalisé dans la diffusion.
 
-#### Classement et poids des offres de stockage {#storing-offer-rankings-and-weights}
+#### Classement et poids des offres du magasin {#storing-offer-rankings-and-weights}
 
-Par défaut, lorsqu&#39;une activité **Enrichissement** est utilisée pour fournir des offres, leur classement et leurs poids ne sont pas stockés dans la table de proposition.
+Par défaut, lorsqu&#39;une activité **Enrichissement** est utilisée pour diffuser des offres, leur rang et leur poids ne sont pas stockés dans la table des propositions.
 
 >[!NOTE]
 >
@@ -167,9 +166,9 @@ La diffusion stocke automatiquement le rang et le poids des offres. Ces informat
 
 L&#39;activité **[!UICONTROL Moteur d&#39;offres]** vous permet également de définir un appel au moteur d&#39;offres en amont d&#39;une diffusion.
 
-:flèche_supérieur_droite : Pour plus d&#39;informations sur l&#39;activité **Moteur d&#39;Offre**, consultez la [documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html)
+:flèche_upper_right : Pour plus d&#39;informations sur l&#39;activité **Moteur d&#39;offres**, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html)
 
-Cette activité fonctionne sur le même principe que l&#39;activité **Enrichissement** avec un appel moteur, en enrichissant les données de population entrantes avec une offre calculée par le moteur, avant une diffusion.
+Cette activité fonctionne sur le même principe que l&#39;activité **Enrichissement** avec un appel au moteur, en enrichissant les données de la population entrante avec une offre calculée par le moteur, avant une diffusion.
 
 ![](assets/int_offerengine_activity2.png)
 
@@ -190,7 +189,7 @@ Après avoir configuré votre activité **Requête** :
 
 L&#39;activité **[!UICONTROL Offres par cellules]** vous permet de répartir la population entrante (par exemple issue d&#39;une requête) en plusieurs segments, et de définir une offre à proposer pour chacun de ces segments.
 
-:flèche_supérieur_droite : Pour plus d&#39;informations sur l&#39;activité **Offre par cellule**, consultez la [documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html)
+:flèche_upper_right : Pour plus d&#39;informations sur l&#39;activité **Offre par cellule**, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html)
 
 Pour cela :
 
