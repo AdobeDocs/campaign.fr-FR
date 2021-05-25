@@ -1,12 +1,11 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Structure du Schéma Campaign
-description: Structure du schéma Campaign
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+title: Structure du schéma de campagne
+description: Structure du schéma de campagne
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1403'
 ht-degree: 96%
 
 ---
@@ -123,7 +122,7 @@ Les règles à respecter sont les suivantes :
 
 Le type de données est renseigné à partir de l&#39;attribut **type** sur les éléments **`<attribute>`** et **`<element>`**.
 
-Une liste détaillée est disponible dans la [documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic).
+Une liste détaillée est disponible dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic).
 
 Lorsque cet attribut n’est pas renseigné, **string** est le type de données par défaut, sauf si l’élément contient des éléments enfants. Si tel est le cas, il est utilisé uniquement pour structurer les éléments de manière hiérarchique (élément **`<location>`** dans notre exemple).
 
@@ -220,7 +219,7 @@ Pour lier une valeur par défaut à un champ, vous pouvez utiliser le `<default>
 
 `<sqldefault>` : vous permet d’avoir une valeur ajoutée lors de la création d’un champ. Cette valeur s’affiche sous forme de résultat SQL. Lors de la mise à jour d’un schéma, seuls les nouveaux enregistrements seront affectés par cette valeur.
 
-### Enumérations {#enumerations}
+### Énumérations {#enumerations}
 
 #### Enumération libre {#free-enumeration}
 
@@ -307,7 +306,7 @@ Notre schéma d&#39;exemple complété avec les propriétés :
 </srcSchema>
 ```
 
-## des collections.{#collections}
+## des collections. {#collections}
 
 Une collection est une liste d&#39;éléments de même nom et de même niveau hiérarchique.
 
