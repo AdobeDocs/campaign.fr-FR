@@ -1,14 +1,13 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Modifier votre tableau de destinataires par défaut
-description: Découvrez comment utiliser un tableau de destinataire personnalisé
-feature: Vue d’ensemble
+title: Modifier la table des destinataires par défaut
+description: Découvrez comment utiliser une table de destinataires personnalisée
+feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
-translation-type: tm+mt
-source-git-commit: 84ee7eb2bf2e15d30c81f32f6b25c9801b3b12b1
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 11%
@@ -17,19 +16,19 @@ ht-degree: 11%
 
 # Utilisation d’une table des destinataires personnalisée{#gs-ac-custom-recipient}
 
-Adobe Campaign est livré avec une table de profil intégrée : **nmsRecipient**. Ce tableau comporte un certain nombre de champs et de tableaux prédéfinis qui peuvent être facilement étendus. Pour en savoir plus sur ce tableau, consultez [cette page](datamodel.md#ootb-profiles).
+Adobe Campaign est fourni avec une table de profils intégrée : **nmsRecipient**. Cette table comporte un certain nombre de champs prédéfinis et de tables qui peuvent être facilement étendus. Pour en savoir plus sur ce tableau, consultez [cette page](datamodel.md#ootb-profiles).
 
-L&#39;extension de table intégrée offre la flexibilité, mais elle ne permet pas de supprimer certains champs ou liens inutilisés. Par conséquent, l’utilisation d’une table de destinataires personnalisée peut s’avérer une bonne option lorsque votre modèle de données diffère considérablement de la structure de table de destinataires intégrée à Campaign ou si vous disposez d’un grand nombre de profils.  Toutefois, cette méthode requiert certaines précautions lors de sa mise en oeuvre.
+L’extension de table intégrée offre une certaine flexibilité, mais elle ne permet pas de supprimer certains champs ou liens inutilisés. Par conséquent, l’utilisation d’une table de destinataires personnalisée peut s’avérer une bonne option lorsque votre modèle de données diffère considérablement de la structure de la table de destinataires intégrée à Campaign ou si vous disposez d’un grand nombre de profils.  Toutefois, cette méthode requiert certaines précautions lors de sa mise en oeuvre.
 
-Cette fonctionnalité permet à Adobe Campaign de traiter les données d’une base de données externe : ces données seront utilisées comme un ensemble de profils pour les diffusions. La mise en oeuvre de ce processus implique des limitations telles que :
+Cette fonctionnalité permet à Adobe Campaign de traiter les données d’une base de données externe : ces données seront utilisées comme ensemble de profils pour les diffusions. La mise en oeuvre de ce processus implique des restrictions telles que :
 
-* Aucun flux de mise à jour vers et depuis la base de données Campaign Cloud : les données de cette table peuvent être mises à jour directement via le moteur de base de données qui les héberge.
-* Les processus qui fonctionnent sur la base de données existante doivent être stables.
+* Aucun flux de mise à jour vers et depuis la base de données Campaign Cloud : les données de ce tableau peuvent être mises à jour directement à partir du moteur de base de données qui l’héberge.
+* Les processus qui opèrent sur la base existante doivent être stables.
 * Utilisation d&#39;une base de profils avec une structure différente de celle proposée en standard : possibilité de diffuser avec une même instance vers des profils enregistrés dans des tables différentes, avec des structures différentes.
 
-Cette section décrit les points clés pour mapper les tables existantes en Adobe Campaign et les paramètres de configuration à appliquer pour exécuter des diffusions en fonction de n&#39;importe quelle table. Il décrit également comment concevoir des interfaces d&#39;interrogation pour les utilisateurs finaux.
+Cette section décrit les points clés à associer aux tables existantes dans Adobe Campaign et les paramètres de configuration à appliquer pour exécuter des diffusions en fonction de n’importe quelle table. Il décrit également comment concevoir des interfaces de requêtage pour les utilisateurs finaux.
 
 >[!CAUTION]
 >
->La personnalisation Adobe Campaign est réservée aux utilisateurs experts uniquement. Il nécessite une expertise dans la conception de schémas et de formulaires d&#39;entrée.
+>La personnalisation d’Adobe Campaign est réservée à des utilisateurs experts uniquement. Elle nécessite une expertise dans la conception de formulaires et de schémas de saisie.
 
