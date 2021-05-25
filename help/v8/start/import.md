@@ -1,5 +1,5 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Prise en main des profils
 description: Prise en main des profils
@@ -7,47 +7,52 @@ feature: Profils
 role: Data Engineer
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
-translation-type: tm+mt
-source-git-commit: 0995e3595d2e5f38bade4f71fccc7938d7d1284b
+source-git-commit: 905003b74a1f875432f08c5c70edf3d0451b861f
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 12%
+source-wordcount: '323'
+ht-degree: 9%
 
 ---
 
 # Importer des données dans Campaign {#ootb-profiles}
 
-Campaign vous aide à ajouter des contacts à la base de données Cloud. Vous pouvez charger un fichier, planifier et automatiser plusieurs mises à jour des contacts, collecter des données sur le Web ou saisir des informations sur le profil directement dans la table du destinataire.
+Campaign vous aide à ajouter des contacts à la base de données Cloud. Vous pouvez charger un fichier, planifier et automatiser plusieurs mises à jour de contact, collecter des données sur le Web ou saisir des informations de profil directement dans la table des destinataires.
 
-: blub: Commencer avec [audiences](audiences.md)
-: blub: Comprendre Campaign [datamodel](../dev/datamodel.md)
+:bulb: Prise en main des [audiences](audiences.md)
+:bulb: Présentation de Campaign [datamodel](../dev/datamodel.md)
 
-## Importation de profils dans un processus
+## Import de profils dans un workflow
 
-Les importations de profil sont configurées dans des modèles dédiés exécutés par le biais de workflows via l&#39;activité **Importer**. Ils peuvent être répétés automatiquement selon un planning, par exemple pour automatiser l&#39;échange de données entre plusieurs systèmes d&#39;informations. Pour en savoir plus, consultez la [documentation du Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/import-export-workflows.html).
+Les imports de profil sont configurés dans des modèles dédiés exécutés par le biais de workflows via l&#39;activité **Import**. Ils peuvent être répétés automatiquement selon un planning, par exemple pour automatiser l&#39;échange de données entre plusieurs systèmes d&#39;informations. Pour en savoir plus, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/import-export-workflows.html).
 
+![](assets/import-wf.png)
 
-En savoir plus dans la documentation Campaign Classic :
+En savoir plus dans la documentation de Campaign Classic v7 :
 
-:flèche_supérieur_droite : [Commencer avec les importations et les exportations](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/get-started-data-import-export.html)
+:flèche_upper_right : [Prise en main des imports et exports](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/get-started-data-import-export.html)
 
-:flèche_supérieur_droite : [Importer et exporter les meilleures pratiques](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/best-practices/import-export-best-practices.html)
+:flèche_upper_right : [Bonnes pratiques en matière d’import et d’export](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/best-practices/import-export-best-practices.html)
 
-:flèche_supérieur_droite : [Configurer et exécuter une importation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html)
+:flèche_upper_right : [Configurer et exécuter un import](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html)
 
-## Exécuter des importations unitaires
+## Exécution d’imports unitaires
 
 Créez et exécutez une tâche d’importation de données générique pour charger des contacts dans la base de données Cloud.
 
-:flèche_supérieur_droite : Découvrez comment exécuter des tâches d&#39;importation uniques pour alimenter votre base de données dans [la documentation du Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html).
+![](assets/new-import.png)
 
-## Collecte de profils par le biais d’applications Web
+:flèche_upper_right : Découvrez comment exécuter des tâches d’importation unitaire pour alimenter votre base de données dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html).
 
-DÉTAILS À AJOUTER + LIEN
+## Collecter des profils via des applications web
 
+Utilisez Campaign pour créer des formulaires web et collecter et gérer facilement et efficacement les informations de profil. Vous pouvez partager ces formulaires sur votre site web, ce qui permet à vos contacts de fournir facilement leurs informations. Leurs informations sont envoyées à Campaign pour créer leur profil ou mettre à jour leurs informations si elles sont déjà présentes dans la base de données.
+
+![](assets/web-form-page.png)
+
+:flèche_upper_right : Découvrez comment créer des formulaires web dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html).
 
 **Rubriques connexes :**
 
 * [Créer des audiences](audiences.md)
 * [Dédupliquer les profils](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/deduplication-merge.html)
-* [Enrichir des données de profil](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/enriching-data.html)
+* [Enrichir les données de profil](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/enriching-data.html)
