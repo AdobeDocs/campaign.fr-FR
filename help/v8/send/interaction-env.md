@@ -1,20 +1,19 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Opérateurs d’interaction Campaign
-description: Créer des opérateurs de gestion des Offres
-feature: Vue d’ensemble
+title: Opérateurs d'interaction Campaign
+description: Créer des opérateurs Gestion des offres
+feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 37%
 
 ---
 
-# Environnements de création et de production{#live-design-environments}
+# Environnements en ligne et édition{#live-design-environments}
 
 Interaction fonctionne avec deux types d&#39;environnements d&#39;offres :
 
@@ -25,30 +24,30 @@ Interaction fonctionne avec deux types d&#39;environnements d&#39;offres :
 
 Chaque environnement **[!UICONTROL En édition]** est associé à un environnement **[!UICONTROL En ligne]**. Lorsqu&#39;une offre est finalisée, son contenu et ses règles d&#39;éligibilité passent par un cycle de validation. Lorsque le cycle de validation est complet, l&#39;offre concernée est automatiquement déployée dans l&#39;environnement **[!UICONTROL En ligne]**. Dès lors, elle est disponible pour être diffusée.
 
-Par défaut, Campaign est fourni avec un environnement **[!UICONTROL Design]** et un environnement **[!UICONTROL Live]** associé. Les deux environnements sont préconfigurés pour cible de la table de destinataire intégrée [](../dev/datamodel.md#ootb-profiles).
+Par défaut, Campaign est livré avec un environnement **[!UICONTROL Conception]** et un environnement **[!UICONTROL Live]** qui lui est associé. Les deux environnements sont préconfigurés pour cibler la [table de destinataires intégrée](../dev/datamodel.md#ootb-profiles).
 
 >[!NOTE]
 >
->Pour cible à la table destinataire, vous devez utiliser l&#39;assistant de mapping de ciblage pour créer les environnements. [En savoir plus](#creating-an-offer-environment).
+>Pour cibler la table des destinataires, vous devez utiliser l&#39;assistant de mapping de ciblage pour créer les environnements. [En savoir plus](#creating-an-offer-environment).
 
 ![](assets/offer_environments_overview_002.png)
 
-Les gestionnaires de diffusions peuvent uniquement vue l&#39;environnement **[!UICONTROL Live]** et exploiter les offres pour les fournir. Les gestionnaires d&#39;Offres peuvent vue et utiliser l&#39;environnement **[!UICONTROL Conception]** et vue de l&#39;environnement **[!UICONTROL En direct]**. [En savoir plus](interaction-operators.md).
+Les gestionnaires de diffusion peuvent uniquement afficher l’environnement **[!UICONTROL En ligne]** et exploiter les offres pour les diffuser. Les gestionnaires d’offres peuvent afficher et utiliser l’environnement **[!UICONTROL Conception]**, ainsi que l’environnement **[!UICONTROL Live]**. [En savoir plus](interaction-operators.md).
 
-## Création d’un environnement d’offre {#creating-an-offer-environment}
+## Créer un environnement d&#39;offres {#creating-an-offer-environment}
 
-Par défaut, Campaign est fourni avec un environnement intégré pour cible de la table destinataire (offres identifiées). Pour cible à un autre tableau, procédez comme suit :
+Par défaut, Campaign est livré avec un environnement intégré pour cibler la table des destinataires (offres identifiées). Pour cibler un autre tableau, procédez comme suit :
 
-1. Accédez à **[!UICONTROL Administration]** > **[!UICONTROL Gestion de campagne]** > **[!UICONTROL mappages de Diffusions]**, cliquez avec le bouton droit sur le mappage de diffusions à utiliser et sélectionnez **[!UICONTROL Actions]** > **[!UICONTROL Modifier les options de la dimension de ciblage]**.
+1. Accédez à **[!UICONTROL Administration]** > **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Mappings de ciblage]**, cliquez avec le bouton droit sur le mapping de ciblage à utiliser et sélectionnez **[!UICONTROL Actions]** > **[!UICONTROL Modifier les options de la dimension de ciblage]**.
 
    ![](assets/offer_env_anonymous_001.png)
 
-1. Cliquez sur **[!UICONTROL Suivant]**, sélectionnez l&#39;option **[!UICONTROL Générer un schéma d&#39;enregistrement pour les propositions]** et cliquez sur **[!UICONTROL Enregistrer]**.
+1. Cliquez sur **[!UICONTROL Suivant]**, sélectionnez l&#39;option **[!UICONTROL Générer un schéma de stockage pour les propositions]** et cliquez sur **[!UICONTROL Enregistrer]**.
 
    ![](assets/offer_env_anonymous_002.png)
 
    >[!NOTE]
    >
-   >Si l’option est déjà cochée, décochez-la, puis cochez-la à nouveau.
+   >Si l’option est déjà cochée, décochez-la, puis revérifiez-la.
 
-1. Adobe Campaign crée deux environnements - **[!UICONTROL Conception]** et **[!UICONTROL Live]** - avec les informations de ciblage du mapping de ciblage précédemment activé. L’environnement est préconfiguré avec les informations de ciblage.
+1. Adobe Campaign crée deux environnements - **[!UICONTROL Conception]** et **[!UICONTROL Live]** - avec les informations de ciblage du mapping de ciblage activé précédemment. L&#39;environnement est préconfiguré avec les informations de ciblage.
