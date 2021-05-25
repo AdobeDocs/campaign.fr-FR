@@ -1,10 +1,9 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Mappage de la base de données Campaign
 description: Mappage de la base de données Campaign
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
 source-wordcount: '1464'
 ht-degree: 92%
@@ -199,9 +198,9 @@ Les clés suivent les règles suivantes :
    </schema>
    ```
 
-### Clé Principal - Identificateur
+### Clé Principal - Identifiant
 
-La clé Principale des tables Adobe Campaign est un **identifiant unique universel (UUID)** généré automatiquement par le moteur de base de données. La valeur de clé est unique dans la base de données entière. Le contenu de la clé est automatiquement généré à l’insertion de l’enregistrement.
+La clé Principale des tables Adobe Campaign est un **UUID (Universally Unique ID)** auto-généré par le moteur de base de données. La valeur de clé est unique dans l’ensemble de la base de données. Le contenu de la clé est généré automatiquement à l&#39;insertion de l&#39;enregistrement.
 
 **Exemple**
 
@@ -230,7 +229,7 @@ Le schéma généré :
 </schema>
 ```
 
-Outre la définition de la clé, un champ numérique appelé &quot;id&quot; a été ajouté au schéma étendu afin de contenir la clé Principale générée automatiquement.
+En plus de la définition de la clé, un champ numérique appelé &quot;id&quot; a été ajouté au schéma étendu afin de contenir la clé Principale générée automatiquement.
 
 >[!CAUTION]
 >
@@ -259,7 +258,7 @@ Pour les relations de jointure à l’aide de Federated Database Access :
 * ![](assets/do-not-localize/join_fda_11.png) : Cardinalité 1-1
 * ![](assets/do-not-localize/join_fda_1m.png) : Cardinalité 1-N
 
-: bulb: Pour plus d&#39;informations sur les tables de FDA, consultez [Federated Data Access](../connect/fda.md).
+:bulb: Pour plus d’informations sur les tables FDA, voir [Federated Data Access](../connect/fda.md).
 
 Un lien doit être déclaré dans le schéma possédant la clé étrangère de la table liée à partir de l’élément principal :
 
@@ -427,4 +426,4 @@ Le schéma généré :
 </schema>
 ```
 
-La définition de la clé de nom &quot;companyEmail&quot; a été étendue avec la clé étrangère du lien &quot;société&quot;.
+La définition de la clé de nom &quot;companyEmail&quot; a été étendue avec la clé étrangère du lien &quot;company&quot;.
