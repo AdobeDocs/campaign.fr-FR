@@ -1,19 +1,18 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Mettre à jour la structure de la base de données
 description: Mettre à jour la structure de la base de données
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 44%
 
 ---
 
-# Mettre à jour la structure de la base de données{#updating-the-database-structure}
+# Mettre à jour la structure de la base{#updating-the-database-structure}
 
-Pour appliquer les modifications apportées aux schémas, lancez l&#39;Assistant Mise à jour de la base de données. Cet assistant est accessible via **[!UICONTROL Outils > Avancé > Mettre à jour la structure de base de données]**. Il vérifie si la structure physique de la base de données correspond à sa description logique et exécute les scripts de mise à jour SQL.
+Pour appliquer les modifications apportées aux schémas, lancez l&#39;assistant Mise à jour de la base . Cet assistant est accessible via **[!UICONTROL Outils > Avancé > Mettre à jour la structure de la base de données]** . Il vérifie si la structure physique de la base de données correspond à sa description logique et exécute les scripts SQL de mise à jour.
 
 ![](assets/schema_update.png)
 
