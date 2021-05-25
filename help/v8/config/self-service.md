@@ -1,22 +1,25 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Panneau de contrôle Campaign
 description: Panneau de contrôle Campaign
-feature: Vue d’ensemble
+feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+hidefromtoc: true
+hide: true
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 69%
+source-wordcount: '361'
+ht-degree: 68%
 
 ---
 
 # Panneau de contrôle Campaign
 
-Campaign Panneau de Contrôle vous aide à accroître l’efficacité de votre travail en tant qu’administrateur de produit de Adobe Campaign, en vous permettant de gérer les paramètres et d’effectuer le suivi des utilisations pour chacune de vos instances. Dans son interface intuitive, vous pouvez facilement surveiller l’utilisation des principales ressources ou effectuer certaines tâches administratives telles que l’ajout d’adresses IP à la liste autorisée, la surveillance de l’espace de stockage SFTP, la gestion des clés, etc.
+PAS ENCORE DISPONIBLE
+
+Le Panneau de Contrôle Campaign vous aide à accroître l’efficacité de votre travail en tant qu’administrateur de produit d’Adobe Campaign, en vous permettant de gérer les paramètres et de suivre l’utilisation de chacune de vos instances. Dans son interface intuitive, vous pouvez facilement surveiller l’utilisation des principales ressources ou effectuer certaines tâches administratives telles que l’ajout d’adresses IP à la liste autorisée, la surveillance de l’espace de stockage SFTP, la gestion des clés, etc.
 
 Principaux avantages :
 
@@ -24,7 +27,7 @@ Principaux avantages :
 * Configurez les paramètres en fonction de vos besoins métier à différents instants.
 * Renforcez la sécurité en contrôlant les paramètres d’accès au cas par cas.
 
-Vous pouvez également utiliser le Panneau de Contrôle Campaign pour configurer les paramètres de votre instance, tels que l’autorisation d’accès IP, les autorisations d’URL et récupérer des informations sur votre instance.
+Vous pouvez également utiliser le Panneau de Contrôle Campaign pour configurer les paramètres de votre instance, tels que les listes autorisées d’adresses IP, les autorisations d’URL et récupérer des informations sur votre instance.
 
 ## Comment accéder au panneau de contrôle ?
 
@@ -53,4 +56,4 @@ Découvrez comment gérer vos paramètres d’instances Campaign  dans le panne
 * [Détails de l’instance](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
 * [Gestion des clés GPG](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html)
 
-:flèche_supérieur_droite : Découvrez toutes les fonctionnalités de Panneau de Contrôle de [cette documentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr)
+:flèche_upper_right : Découvrez toutes les fonctionnalités de Panneau de Contrôle de [cette documentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr)
