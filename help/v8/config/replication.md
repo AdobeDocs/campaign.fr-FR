@@ -1,52 +1,74 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Workflows techniques et réplication des données
 description: Workflows techniques et réplication des données
-feature: Vue d’ensemble
+feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 3%
+source-wordcount: '389'
+ht-degree: 5%
 
 ---
 
 # Workflows techniques et réplication des données
 
-## Workflows techniques
+## Workflows techniques{#tech-wf}
 
-Adobe Campaign est livré avec un ensemble de workflows techniques intégrés. Les workflows techniques exécutent des processus ou des tâches, planifiés régulièrement sur le serveur.
+Adobe Campaign est fourni avec un ensemble de workflows techniques intégrés. Les workflows techniques exécutent des processus ou des traitements, planifiés régulièrement sur le serveur.
 
-Ces workflows effectuent des opérations de maintenance sur la base de données, tirent parti des informations de suivi dans les logs de diffusion, créent des campagnes récurrentes, etc.
+Ces workflows effectuent des opérations de maintenance sur la base de données, exploitent les informations de tracking dans les logs de diffusion, créent des campagnes récurrentes, etc.
 
-:flèche_supérieur_droite : La liste complète des workflows techniques est détaillée dans [la documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html?lang=en#overview)
+:flèche_upper_right : La liste complète des workflows techniques est présentée dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html?lang=fr#automating-with-workflows)
 
-Outre ces workflows techniques, Campaign v8 s&#39;appuie sur des workflows techniques spécifiques pour gérer la [réplication des données](#data-replication).
 
-* **[!UICONTROL Répliquer les]**
-tables de référenceCe processus effectue la réplication automatique des tables intégrées qui doivent être présentes dans la base de données locale Campaign (Postgres) et la base de données Cloud ([!DNL Snowflake]). Il est planifié pour s’exécuter toutes les heures, tous les jours. Si le champ **lastModified** existe, la réplication se produit de manière incrémentielle, sinon la table entière est répliquée. L&#39;ordre des tables dans la baie ci-dessous correspond à l&#39;ordre utilisé par le processus de réplication.
-* **[!UICONTROL Répliquer les]**
-données d&#39;évaluationCe processus répliquera les données d&#39;évaluation pour les appels uniques. Il est planifié pour s’exécuter toutes les heures, tous les jours.
-* **[!UICONTROL Déployer immédiatement FFDA]**\
-   Ce processus effectue un déploiement immédiat dans la base de données Cloud.
+Outre ces workflows techniques, Campaign v8 s’appuie sur des workflows techniques spécifiques pour gérer la [réplication de données](#data-replication).
+
 * **[!UICONTROL Répliquer]**
-immédiatement les données FFDACe processus répliquera les données XS pour un compte externe donné.
+les tables de référence : ce workflow effectue la réplication automatique des tables intégrées qui doivent être présentes dans la base de données locale Campaign (Postgres) et dans la base de données cloud ([!DNL Snowflake]). Il est planifié pour s’exécuter toutes les heures, tous les jours. Si le champ **lastModified** existe, la réplication se produit de manière incrémentielle, sinon la table entière est répliquée. L’ordre des tables dans le tableau ci-dessous est l’ordre utilisé par le workflow de réplication.
+* **[!UICONTROL Répliquer les]**
+données d’évaluation : ce workflow réplique les données d’évaluation pour les appels unitaires. Il est planifié pour s’exécuter toutes les heures, tous les jours.
+* **[!UICONTROL Déployer immédiatement FFDA]**\
+   Ce workflow effectue un déploiement immédiat dans la base de données Cloud.
+* **[!UICONTROL Répliquez]**
+immédiatement les données FFDA. Ce workflow reproduit les données XS d’un compte externe donné.
 
-Ces workflows techniques sont disponibles à partir du noeud **[!UICONTROL Administration > Production > Workflows techniques > Réplication FFDA complète]** de Campaign Explorer. **Ils ne doivent pas être modifiés.**
+Ces workflows techniques sont disponibles à partir du noeud **[!UICONTROL Administration > Exploitation > Workflows techniques > Réplication FFDA complète]** de l&#39;Explorateur Campaign. **Ils ne doivent pas être modifiés.**
+
+Si nécessaire, vous pouvez lancer manuellement la synchronisation des données. Pour ce faire, cliquez avec le bouton droit de la souris sur l&#39;activité **Planificateur** et sélectionnez **Traitement anticipé de la (des) tâche(s)**.
 
 ## Réplication des données{#data-replication}
 
-Certaines tables intégrées sont répliquées de la base de données Campaign à la base de données [!DNL Snowflake] Cloud par le biais de workflows dédiés décrits ci-dessus.
+Certaines tables intégrées sont répliquées de la base de données locale de Campaign vers la base de données [!DNL Snowflake] cloud par le biais de workflows dédiés décrits ci-dessus.
 
-Les stratégies de réplication sont basées sur la taille des tables. Certains tableaux seront répliqués en temps réel, d&#39;autres sur une base horaire. Certaines tables seront mises à jour progressivement lorsque d’autres seront remplacées.
+Les stratégies de réplication sont basées sur la taille des tables. Certaines tables seront répliquées en temps réel, d’autres seront répliquées toutes les heures. Certaines tables seront mises à jour de manière incrémentielle lorsque d’autres seront remplacées.
+
+Outre le workflow technique intégré **Répliquer les tables de référence**, vous pouvez forcer la réplication des données dans vos workflows.
+
+Vous pouvez ainsi :
+
+* ajoutez une activité **Code JavaScript** spécifique avec le code suivant :
+
+```
+nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
+```
+
+![](assets/jscode.png)
+
+
+* ajoutez une activité **nlmodule** spécifique avec la commande suivante :
+
+```
+nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
+```
+
+![](assets/nlmodule.png)
 
 **Rubriques connexes :**
 
-:flèche_supérieur_droite : Découvrez comment commencer à utiliser les flux de travaux dans [la documentation du Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows)
+:flèche_upper_right : Découvrez comment commencer à utiliser les workflows dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows)
 
-: bulb: Accéder aux périodes de rétention des données dans [cette section](../dev/datamodel-best-practices.md#data-retention)
-
+:bulb: Accéder aux périodes de conservation des données dans [cette section](../dev/datamodel-best-practices.md#data-retention)
