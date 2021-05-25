@@ -7,10 +7,10 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 0d1ea5a51b79b09d69bdc42616faf124facfe291
+source-git-commit: 556cd7727c7c2bf0158d59d71ae0131b4c1013ee
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 21%
+source-wordcount: '368'
+ht-degree: 19%
 
 ---
 
@@ -38,13 +38,15 @@ Les champs d&#39;action de chaque outil sont les suivants :
    * récupère et analyse les segments
    * déclenche une campagne de remarketing
 
-En savoir plus sur Adobe Campaign et Adobe Analytics dans [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/adobe-analytics-data-connector.html)
+En savoir plus sur Adobe Campaign et Adobe Analytics sur [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/adobe-analytics-data-connector.html)
 
-:speak_ballon: En tant qu’utilisateur Cloud Services géré, [contactez l’Adobe](../start/campaign-faq.md#support) pour intégrer Adobe Analytics Data Connector à Campaign.
+:speak_ballon:  En tant qu’utilisateur Cloud Services géré, [contactez l’Adobe](../start/campaign-faq.md#support) pour intégrer Adobe Analytics Data Connector à Campaign.
 
 
 ## Triggers Experience Cloud
 
 Vous pouvez utiliser des Triggers Experience Cloud pour connecter les données entre Adobe Campaign et Adobe Analytics à l’aide du pipeline. Le pipeline récupère les actions ou déclencheurs de l’utilisateur sur votre site web. Un abandon de panier est un exemple de déclencheur. Les déclencheurs sont traités dans Adobe Campaign pour envoyer des emails en temps quasi réel.
 
-:speak_ballon: En tant qu’utilisateur Cloud Services géré, [contactez l’Adobe](../start/campaign-faq.md#support) pour mettre en oeuvre des déclencheurs Experience Cloud avec Campaign.
+Pour en savoir plus sur Adobe Campaign et les Triggers Experience Cloud, consultez [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=en).
+
+:speak_ballon:  En tant qu’utilisateur Cloud Services géré, [contactez l’Adobe](../start/campaign-faq.md#support) pour mettre en oeuvre des déclencheurs Experience Cloud avec Campaign.
