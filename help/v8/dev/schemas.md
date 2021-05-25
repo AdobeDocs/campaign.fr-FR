@@ -1,17 +1,16 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Utilisation des schémas Campaign
-description: Commencer avec les schémas
-translation-type: tm+mt
-source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
+description: Prise en main des schémas
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '1249'
-ht-degree: 65%
+source-wordcount: '1259'
+ht-degree: 64%
 
 ---
 
-# Utilisation de schémas{#gs-ac-schemas}
+# Utilisation des schémas{#gs-ac-schemas}
 
 La structure physique et logique des données véhiculées dans l&#39;application est décrite en XML et respecte une grammaire propre à Adobe Campaign appelée **schéma**.
 
@@ -33,7 +32,7 @@ Les schémas servent à définir en base une entité. A chaque entité, correspo
 
 Dans Adobe Campaign, les schémas de données permettent de :
 
-* Définissez comment l’objet de données de l’application est lié aux tables de base de données sous-jacentes.
+* Définissez la manière dont les objets de données de l’application sont liés aux tables de base de données sous-jacentes.
 * définir des liens entre les différents objets de l&#39;application ;
 * définir et décrire les champs individuels inclus dans chaque objet.
 
@@ -41,7 +40,7 @@ Pour une meilleure compréhension des tables intégrées de Campaign et de leur 
 
 >[!CAUTION]
 >
->Certains schémas Campaign intégrés comportent un schéma associé sur la base de données Cloud. Ces schémas sont identifiés par l&#39;espace de nommage **Xxl** et ne doivent pas être modifiés.
+>Certains schémas Campaign intégrés sont associés à un schéma dans la base de données Cloud. Ces schémas sont identifiés par l’espace de noms **Xxl** et ne doivent pas être modifiés ni étendus.
 
 ## Syntaxe des schémas {#syntax-of-schemas}
 
@@ -81,35 +80,36 @@ Un espace de noms permet de regrouper un ensemble de schémas par centres d&#39;
 >
 >Les identifieurs ne doivent pas commencer par des caractères numériques.
 
-## Espaces de nommage réservés
+## Espaces de noms réservés {#reserved-namespaces}
 
-Certains espaces de nommage sont réservés à la description des entités système requises pour le fonctionnement de l&#39;application Adobe Campaign. L&#39;espace de nommage **suivant ne doit pas être utilisé** pour identifier un nouveau schéma, dans toute combinaison majuscule/minuscule :
+Certains espaces de noms sont réservés pour la description des entités système nécessaires au fonctionnement de l&#39;application Adobe Campaign. L’espace de noms suivant **ne doit pas être utilisé** pour identifier un nouveau schéma, dans toute combinaison majuscule/minuscule :
 
-* **xxl** : réservé aux schémas de base de données Cloud,
-* **xtk** : réservé aux données du système de la plate-forme,
-* **nl** : réservé à l&#39;utilisation globale de la demande,
-* **nms** : réservé aux diffusions (destinataire, diffusion, suivi, etc.),
-* **ncm** : réservé à la gestion de contenu,
-* **temp** : réservé aux schémas temporaires.
+* **xxl** : réservé aux schémas de base de données Cloud
+* **xtk** : réservé aux données système de la plateforme
+* **nl** : réservé à l&#39;utilisation globale de l&#39;application
+* **nms**: réservé aux diffusions (destinataire, diffusion, tracking, etc.)
+* **ncm** : réservé à la gestion de contenu
+* **temp** : réservé aux schémas temporaires
+* **crm** : réservé à l&#39;intégration des connecteurs CRM
 
-La clé d&#39;identification d&#39;un schéma est une chaîne créée à l&#39;aide de l&#39;espace de nommage et du nom séparés par deux-points ; par exemple : **nms:destinataire**.
+La clé d’identification d’un schéma est une chaîne construite à l’aide de l’espace de noms et du nom séparés par un deux-points ; par exemple : **nms:recipient**.
 
 ## Créer ou étendre des schémas Campaign {#create-or-extend-schemas}
 
-Pour ajouter un champ ou un autre élément à l&#39;un des schémas de données principaux de Campaign, tel que le tableau destinataire (nms:destinataire), vous devez étendre ce schéma.
+Pour ajouter un champ ou un autre élément à l&#39;un des schémas de données principaux de Campaign, comme la table des destinataires (nms:recipient), vous devez étendre ce schéma.
 
-: bulb: Pour plus d&#39;informations à ce sujet, consultez [Étendre un schéma](extend-schema.md).
+:bulb: Voir à ce propos la section [Étendre un schéma](extend-schema.md).
 
-Pour ajouter un tout nouveau type de données qui n’existe pas en Adobe Campaign (un tableau de contrats par exemple), vous pouvez créer directement un schéma personnalisé.
+Pour ajouter un nouveau type de données qui n’existe pas dans Adobe Campaign (une table des contrats par exemple), vous pouvez directement créer un schéma personnalisé.
 
-: bulb: Pour plus d&#39;informations à ce sujet, consultez [Création d&#39;un nouveau schéma](create-schema.md).
+:bulb: Voir à ce sujet la section [Créer un nouveau schéma](create-schema.md).
 
 ![](assets/schemaextension_1.png)
 
 
-Une fois que vous avez créé ou étendu un schéma à utiliser, la meilleure pratique consiste à définir ses éléments de contenu XML dans l’ordre dans lequel ils apparaissent ci-dessous.
+Une fois que vous avez créé ou étendu un schéma à utiliser, la bonne pratique consiste à définir ses éléments de contenu XML dans l’ordre dans lequel ils apparaissent ci-dessous.
 
-## Enumérations {#enumerations}
+## Énumérations {#enumerations}
 
 Les énumérations sont définies avant l&#39;élément principal du schéma. Elles permettent d&#39;afficher des valeurs dans une liste afin de restreindre les choix de l&#39;utilisateur pour un champ donné.
 
@@ -136,7 +136,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 ## Clés {#keys}
 
-Chaque table doit avoir au moins une clé et elle est souvent automatiquement établie dans l&#39;élément principal du schéma en utilisant l&#39;attribut **@autouuid=true** défini sur &quot;true&quot;.
+Chaque table doit posséder au moins une clé. Celle-ci est souvent automatiquement définie dans l’élément principal du schéma à l’aide de l’attribut **@autouuid=true** défini sur &quot;true&quot;.
 
 La clé primaire peut également être définie au moyen de l&#39;attribut **internal**.
 
@@ -148,13 +148,13 @@ Exemple:
 </key>
 ```
 
-Dans cet exemple, au lieu de laisser l&#39;attribut **@autouuid** créer une clé Principale par défaut nommée &quot;id&quot;, nous spécifions notre propre clé Principale &quot;homeId&quot;.
+Dans cet exemple, au lieu de laisser l’attribut **@autouuid** créer une clé Principale par défaut nommée &quot;id&quot;, nous spécifions notre propre clé Principale &quot;householdId&quot;.
 
 >[!CAUTION]
 >
 >Lors de la création ou de l’extension d’un schéma, vous devez conserver la valeur de la séquence de la clé primaire (@pkSequence) pour l’ensemble du schéma.
 
-: bulb: Pour en savoir plus sur les clés, consultez [cette section](database-mapping.md#management-of-keys).
+:bulb: En savoir plus sur les clés dans [cette section](database-mapping.md#management-of-keys).
 
 ## Attributs (champs) {#attributes--fields-}
 
@@ -162,11 +162,11 @@ Les attributs permettent de définir les champs composant votre objet de donnée
 
 ![](assets/schemaextension_2.png)
 
-La liste complète des attributs est disponible dans la section `<attribute>` élément de la [documentation Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model). Voici quelques-uns des attributs les plus utilisés : **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label a13/>,**@length **,**@name **,**@notNull **,**@required **,**@ref&lt;a113/ 23/>, **@xml**, **@type**.****
+La liste complète des attributs est disponible dans la section `<attribute>` de la [documentation du Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model). Voici quelques-uns des attributs les plus couramment utilisés : **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label** 4/>@length **,**@name **,**@notNull **,**@required **,**@ref **,**@xml&lt;a222 5/>, ****.****
 
-:flèche_supérieur_droite : Pour plus d&#39;informations sur chaque attribut, consultez la description de l&#39;attribut dans [la documentation du Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic).
+:flèche_upper_right : Pour plus d’informations sur chaque attribut, reportez-vous à la description des attributs dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic).
 
-### Exemples {#examples}
+### Exemples  {#examples}
 
 Exemple de définition d&#39;une valeur par défaut :
 
@@ -242,7 +242,7 @@ Procédez comme dans l&#39;exemple ci-dessous pour inclure les champs relatifs �
 
 ## Mettre à jour la structure de la base de données {#updating-the-database-structure}
 
-Une fois vos modifications effectuées et enregistrées, toutes les modifications susceptibles d&#39;avoir un impact sur la structure SQL doivent être appliquées à la base de données. Pour ce faire, utilisez l’assistant de mise à jour de base de données.
+Une fois vos modifications terminées et enregistrées, toutes celles qui peuvent avoir un impact sur la structure SQL doivent être appliquées à la base de données. Pour cela, utilisez l&#39;assistant de mise à jour de la base de données.
 
 ![](assets/schemaextension_3.png)
 
