@@ -7,10 +7,10 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896,b1319b34-ee07-48ed-9ab1-e2d12d3d99f8
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 43%
+source-wordcount: '648'
+ht-degree: 45%
 
 ---
 
@@ -22,7 +22,7 @@ La structure de base du modèle de données Adobe Campaign peut être décrite c
 
 * **Table** des destinataires : Le modèle de données repose sur une table principale qui est par défaut la table des destinataires (nmsRecipient). Cette table permet de stocker tous les profils marketing.
 
-   :bulb: Pour plus d’informations sur la table des destinataires, voir [cette section](#ootb-profiles).
+   [!DNL :bulb:] Pour plus d’informations sur la table des destinataires, voir cette [section](#ootb-profiles).
 
 * **Table** de diffusion : Le modèle de données comprend également une partie dédiée au stockage de toutes les activités marketing. Généralement, il s&#39;agit de la table de diffusion (NmsDelivery). Chaque enregistrement de cette table représente une action de diffusion ou un modèle de diffusion. Elle contient tous les paramètres nécessaires pour effectuer des diffusions telles que la cible, le contenu, etc.
 
@@ -45,7 +45,7 @@ Vous pouvez utiliser la table des destinataires par défaut avec les champs d&#3
 * [Étendez une table existante avec de nouveaux champs.](extend-schema.md) Par exemple, vous pouvez ajouter un nouveau champ &quot;Fidélité&quot; à la table des destinataires.
 * [Créez une nouvelle table](create-schema.md), par exemple une table &quot;Achat&quot; répertoriant tous les achats effectués par chaque profil de la base de données, et liez-la à la table des destinataires.
 
-:bulb: Découvrez les bonnes pratiques lorsque vous utilisez le modèle de données Campaign dans [cette section](datamodel-best-practices.md).
+[!DNL :bulb:] Découvrez les bonnes pratiques relatives à l’utilisation du modèle de données Campaign dans  [cette section](datamodel-best-practices.md).
 
 ## Table de profils intégrée {#ootb-profiles}
 
@@ -60,9 +60,9 @@ Les avantages de l&#39;utilisation de la table des destinataires standard sont l
 
 Il est possible d&#39;étendre la table des destinataires, mais pas de réduire le nombre de champs ou de liens dans la table.
 
-:bulb: Découvrez comment étendre un schéma existant dans [cette section](extend-schema.md).
+[!DNL :bulb:] Découvrez comment étendre un schéma existant dans  [cette section](extend-schema.md).
 
-:flèche_upper_right : Découvrez des exemples d’extensions de table de destinataires intégrée dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#extending-a-table)
+:[!DNL :arrow_upper_right:] : Découvrez des exemples d’extensions de table de destinataires intégrée dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#extending-a-table)
 
 Vous pouvez également utiliser une autre table de destinataires pour mieux répondre aux besoins de votre entreprise ou de vos besoins fonctionnels. Cette méthode est fournie avec des restrictions et est décrite dans [cette section](custom-recipient.md).
 
@@ -70,9 +70,9 @@ Vous pouvez également utiliser une autre table de destinataires pour mieux rép
 
 Pour une meilleure compréhension de la gestion des tables dans Campaign v8, notez que les tables sont répliquées entre Campaign et sa base de données Snowflake Cloud.
 
-:bulb: Pour en savoir plus sur la stratégie et les mécanismes de réplication, consultez [cette section](../config/replication.md).
+[!DNL :bulb:] Pour en savoir plus sur la stratégie et les mécanismes de réplication, consultez  [cette section](../config/replication.md).
 
 **Rubriques connexes :**
 
-:bulb: Découvrez comment importer des profils dans [cette section](../start/import.md)
-:bulb: En savoir plus sur les audiences Campaign dans [cette section](../start/audiences.md)
+[!DNL :bulb:] Découvrez comment importer des profils dans  [cette ](../start/import.md)
+[!DNL :bulb:] sectionEn savoir plus sur les audiences Campaign dans  [cette section](../start/audiences.md)
