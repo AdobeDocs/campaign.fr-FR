@@ -6,16 +6,16 @@ description: Paramètres des messages transactionnels de Campaign
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '329'
 ht-degree: 11%
 
 ---
 
 # Paramètres des messages transactionnels
 
-:speak_ballon: En tant qu’utilisateur Cloud Services géré, [contactez l’Adobe](../start/campaign-faq.md#support) pour installer et configurer les messages transactionnels Campaign dans votre environnement.
+[!DNL :speech_balloon:] En tant qu’utilisateur Cloud Services géré,  [contactez ](../start/campaign-faq.md#support) Adobe pour installer et configurer les messages transactionnels Campaign dans votre environnement.
 
 [!DNL :bulb:] Les fonctionnalités des messages transactionnels sont présentées dans  [cette section](../send/transactional.md).
 
