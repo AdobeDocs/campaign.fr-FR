@@ -7,7 +7,7 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 0dae3431ac1ddc840244d7df4929b0c949f8011f
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '631'
 ht-degree: 11%
@@ -30,7 +30,7 @@ Trois types d&#39;environnements sont disponibles avec le Cloud Service Campaign
 
 Vous pouvez exporter et importer des packages d’un environnement à un autre.
 
-:[!DNL :arrow_upper_right:] : En savoir plus sur les packages dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)
+[!DNL :arrow_upper_right:] En savoir plus sur les packages dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)
 
 ## Déploiement Mid-sourcing{#mid-sourcing-deployment}
 
@@ -69,7 +69,7 @@ Dans cette architecture spécifique, la cellule d&#39;exécution est séparée d
 
 ![](assets/messagecenter_diagram.png)
 
-:[!DNL :arrow_upper_right:] : L’architecture de Message Center est décrite dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/transactional-messaging-architecture.html?lang=en#transactional-messaging)
+[!DNL :arrow_upper_right:] L&#39;architecture de Message Center est décrite dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/transactional-messaging-architecture.html?lang=en#transactional-messaging)
 
 ### Authentification
 
@@ -82,4 +82,4 @@ Ensuite, avec le sessionToken fourni par l’instance d’exécution en réponse
 * Plusieurs instances d’exécution
 Dans une architecture d’exécution multi-cellules avec plusieurs instances d’exécution derrière un équilibreur de charge, la méthode de connexion appelée par l’application externe passe par l’équilibreur de charge : pour cette raison, une authentification par jeton ne peut pas être utilisée. Une authentification par mot de passe/utilisateur est requise.
 
-:[!DNL :arrow_upper_right:] : En savoir plus sur les événements de messages transactionnels dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel)
+[!DNL :arrow_upper_right:] En savoir plus sur les événements de messages transactionnels dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel)
