@@ -7,7 +7,7 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 21%
@@ -41,14 +41,15 @@ Adobe Campaign v8 est fourni avec les canaux de diffusion suivants :
 Une fois votre message créé et son contenu conçu et testé, vous pouvez choisir comment l&#39;envoyer. Campaign propose un ensemble de fonctionnalités pour :
 
 * Envoyer les messages manuellement à la cible principale
-:[!DNL :arrow_upper_right:] : [Découvrez comment envoyer des messages](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html)
+   [!DNL :arrow_upper_right:] [Découvrez comment envoyer des messages](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html)
 * Envoyer des messages associés à une [campagne marketing](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html)
-:[!DNL :arrow_upper_right:] : [Découvrez comment envoyer des messages dans le contexte d’une campagne](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html).
+   [!DNL :arrow_upper_right:] [Découvrez comment envoyer des messages dans le cadre d’une campagne](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html).
 * Envoyer des messages via un [workflow](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html)
-:[!DNL :arrow_upper_right:] : [Découvrez comment automatiser les diffusions email](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html)
-* [Déclenchez ](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html) les messages d’un événement :[!DNL :arrow_upper_right:]  [Cas pratique : découvrez comment envoyer un email transactionnel avec une pièce jointe](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html)
+   [!DNL :arrow_upper_right:] [Découvrez comment automatiser les diffusions email](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html)
+* [Déclencher des ](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html) messages à partir d’un événement
+   [!DNL :arrow_upper_right:] [Cas pratique : découvrez comment envoyer un email transactionnel avec une pièce jointe](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html)
 * Planification de vos messages
-:[!DNL :arrow_upper_right:] : [Cas pratique : découvrez comment planifier et envoyer un email d’anniversaire](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?)
+   [!DNL :arrow_upper_right:] [Cas pratique : découvrez comment planifier et envoyer un email d’anniversaire](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?)
 
 
 ## Ajouter la personnalisation
@@ -58,11 +59,11 @@ Les messages diffusés par Adobe Campaign peuvent être personnalisés de diffé
 Vous pouvez ainsi :
 
 * Insérer des champs de personnalisation dynamiques.
-:[!DNL :arrow_upper_right:] : Découvrez comment utiliser les champs de personnalisation dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-fields.html)
+   [!DNL :arrow_upper_right:] Découvrez comment utiliser les champs de personnalisation dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-fields.html)
 * Insérer des blocs de personnalisation prédéfinis.
-:[!DNL :arrow_upper_right:] : Découvrez ce qu&#39;est un bloc de personnalisation et comment l&#39;utiliser dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-blocks.html)
+   [!DNL :arrow_upper_right:] Découvrez ce qu&#39;est un bloc de personnalisation et comment l&#39;utiliser dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-blocks.html)
 * Créer du contenu conditionnel.
-:[!DNL :arrow_upper_right:] : Découvrez comment insérer du contenu conditionnel dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/conditional-content.html)
+   [!DNL :arrow_upper_right:] Découvrez comment insérer du contenu conditionnel dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/conditional-content.html)
 
 ## Envoyer des messages transactionnels
 
