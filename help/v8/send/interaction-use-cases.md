@@ -6,7 +6,7 @@ description: Cas d’utilisation des interactions
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 10%
@@ -17,8 +17,8 @@ ht-degree: 10%
 
 Tirez parti des fonctionnalités d’ Interaction de Campaign grâce à ces cas pratiques détaillés disponibles dans la documentation de Campaign Classic v7.
 
-:[!DNL :arrow_upper_right:] : [Créer et appliquer une règle de présentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html)
+[!DNL :arrow_upper_right:] [Créer et appliquer une règle de présentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html)
 
-:[!DNL :arrow_upper_right:] : [Envoi d’une diffusion d’offre de courriel](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html)
+[!DNL :arrow_upper_right:] [Envoyer une diffusion d’offre par email](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html)
 
-:[!DNL :arrow_upper_right:]: [Effectuer une simulation d&#39;offres](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html)
+[!DNL :arrow_upper_right:] [Effectuer une simulation d&#39;offres](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html)
