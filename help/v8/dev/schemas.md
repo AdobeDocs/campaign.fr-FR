@@ -3,9 +3,9 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Utilisation des schémas Campaign
 description: Prise en main des schémas
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1253'
 ht-degree: 64%
 
 ---
@@ -98,11 +98,11 @@ La clé d’identification d’un schéma est une chaîne construite à l’aide
 
 Pour ajouter un champ ou un autre élément à l&#39;un des schémas de données principaux de Campaign, comme la table des destinataires (nms:recipient), vous devez étendre ce schéma.
 
-:bulb: Voir à ce propos la section [Étendre un schéma](extend-schema.md).
+[!DNL :bulb:] Voir à ce sujet la section  [Etendre un schéma](extend-schema.md).
 
 Pour ajouter un nouveau type de données qui n’existe pas dans Adobe Campaign (une table des contrats par exemple), vous pouvez directement créer un schéma personnalisé.
 
-:bulb: Voir à ce sujet la section [Créer un nouveau schéma](create-schema.md).
+[!DNL :bulb:] Voir à ce sujet la section  [Créer un nouveau schéma](create-schema.md).
 
 ![](assets/schemaextension_1.png)
 
@@ -154,7 +154,7 @@ Dans cet exemple, au lieu de laisser l’attribut **@autouuid** créer une clé 
 >
 >Lors de la création ou de l’extension d’un schéma, vous devez conserver la valeur de la séquence de la clé primaire (@pkSequence) pour l’ensemble du schéma.
 
-:bulb: En savoir plus sur les clés dans [cette section](database-mapping.md#management-of-keys).
+[!DNL :bulb:] En savoir plus sur les clés dans  [cette section](database-mapping.md#management-of-keys).
 
 ## Attributs (champs) {#attributes--fields-}
 
@@ -164,7 +164,7 @@ Les attributs permettent de définir les champs composant votre objet de donnée
 
 La liste complète des attributs est disponible dans la section `<attribute>` de la [documentation du Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model). Voici quelques-uns des attributs les plus couramment utilisés : **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label** 4/>@length **,**@name **,**@notNull **,**@required **,**@ref **,**@xml&lt;a222 5/>, ****.****
 
-:flèche_upper_right : Pour plus d’informations sur chaque attribut, reportez-vous à la description des attributs dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic).
+:[!DNL :arrow_upper_right:] : Pour plus d’informations sur chaque attribut, consultez la description des attributs dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic).
 
 ### Exemples  {#examples}
 
