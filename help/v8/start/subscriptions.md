@@ -6,7 +6,7 @@ description: Découvrez comment gérer les abonnements et les désabonnements da
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 8%
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 Utilisez Adobe Campaign pour créer et surveiller vos services d’information tels que les newsletters et pour gérer les abonnements/désabonnements à ces services. Plusieurs services peuvent être définis en parallèle, par exemple : newsletters spécialisées pour certaines catégories de produits, thèmes ou zones d’un site web, abonnements à différents types de messages d’alerte et notifications en temps réel. Voir à ce propos la section Gestion des abonnements.
 
-:[!DNL :arrow_upper_right:] : Découvrez comment créer un service d’information, envoyer une newsletter et gérer l’opt-in et l’opt-out dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html)
+[!DNL :arrow_upper_right:] Découvrez comment créer un service d’information, envoyer une newsletter et gérer les processus d’opt-in et d’opt-out dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html)
 
 Pour abonner (opt-in) un profil à un service, les options disponibles sont les suivantes :
 
@@ -57,7 +57,7 @@ Pour désabonner (exclure) un profil d’un service, les options disponibles son
 * Définissez une limite de durée du service d’information : les destinataires seront automatiquement désabonnés à l&#39;expiration de la période de validité. Cette période est spécifiée dans l&#39;onglet Edition des propriétés du service. Il est exprimé en jours.
 * Configurer un workflow de désinscription pour une population
 
-:[!DNL :arrow_upper_right:] : En savoir plus dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=en#unsubscribing-a-recipient-from-a-service)
+[!DNL :arrow_upper_right:] En savoir plus dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=en#unsubscribing-a-recipient-from-a-service)
 
 
 >[!CAUTION]
@@ -66,4 +66,4 @@ Pour désabonner (exclure) un profil d’un service, les options disponibles son
 
 Vous pouvez également permettre aux destinataires de vos diffusions de transférer des messages à un ami. Pour cela, insérez les liens correspondants dans votre diffusion. Vous pouvez ensuite suivre ce processus de partage ainsi que le nombre de visites sur les pages concernées.
 
-:[!DNL :arrow_upper_right:] : Pour plus d’informations sur cette fonctionnalité, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=en#viral-marketing--forward-to-a-friend).
+[!DNL :arrow_upper_right:] Pour plus d&#39;informations sur cette fonctionnalité, consultez la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=en#viral-marketing--forward-to-a-friend).
