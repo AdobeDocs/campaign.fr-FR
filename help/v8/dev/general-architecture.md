@@ -4,9 +4,9 @@ product: Adobe Campaign
 title: Architecture générale
 description: Architecture générale de Campaign v8
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1214'
 ht-degree: 41%
 
 ---
@@ -33,15 +33,15 @@ L&#39;application est accessible de différentes manières : Intégration d’un
 
 * **Console cliente** : La principale interface utilisateur de l’application est une application native (sous Windows) qui communique avec le serveur d’applications Adobe Campaign avec les protocoles Internet standard (SOAP, HTTP, etc.). La console cliente Adobe Campaign offre une grande convivialité pour la productivité, utilise très peu de bande passante (grâce à l’utilisation d’un cache local) et est conçue pour un déploiement facile. Cette console peut être déployée à partir d’un navigateur Internet, peut être mise à jour automatiquement et ne nécessite aucune configuration réseau spécifique, car elle ne génère que du trafic HTTP(S).
 
-   :bulb: [En savoir plus sur la console cliente Campaign](../start/connect.md).
+   [!DNL :bulb:] [En savoir plus sur la console cliente Campaign](../start/connect.md).
 
 * **Accès Web** : certaines parties de l&#39;application sont accessibles via un simple navigateur web, à partir d&#39;une interface utilisateur HTML, notamment le module de reporting, les phases de validation des diffusions, le monitoring des instances, etc.
 
-   :bulb: [En savoir plus sur l’accès Web de Campaign](../start/connect.md).
+   [!DNL :bulb:] [En savoir plus sur l&#39;accès Web Campaign](../start/connect.md).
 
 * **API** Campaign : Dans certains cas, le système peut être appelé à partir d&#39;une application externe à l&#39;aide des API de services web exposées via le protocole SOAP.
 
-   :bulb: [En savoir plus sur les API de Campaign](../dev/api.md).
+   [!DNL :bulb:] [En savoir plus sur les API](../dev/api.md) de Campaign.
 
 ## Environnement de développement {#dev-env}
 
