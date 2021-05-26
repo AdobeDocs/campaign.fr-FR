@@ -7,7 +7,7 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 0dae3431ac1ddc840244d7df4929b0c949f8011f
+source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 4%
@@ -79,17 +79,17 @@ Avant de commencer à envoyer des messages et de créer des campagnes marketing,
 
    Les opérations, diffusions, traitements ou workflows sont tous basés sur un modèle qui stocke les paramètres et fonctionnalités clés. Un modèle intégré est fourni pour chaque composant, pour lequel aucune configuration spécifique n’a été définie. Vous devez configurer et adapter les modèles selon vos besoins et les mettre à la disposition des utilisateurs finaux.
 
-   :[!DNL :arrow_upper_right:] : [En savoir plus sur les modèles d’email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html)
+   [!DNL :arrow_upper_right:] [En savoir plus sur les modèles d&#39;email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html)
 
-   :[!DNL :arrow_upper_right:] : Découvrez comment utiliser les modèles de campagne dans [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)
+   [!DNL :arrow_upper_right:] Découvrez comment utiliser des modèles de campagne dans  [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)
 
-   :[!DNL :arrow_upper_right:] : Découvrez comment configurer un modèle de workflow dans [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=en#workflow-templates)
+   [!DNL :arrow_upper_right:] Découvrez comment configurer un modèle de workflow dans  [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=en#workflow-templates)
 
 1. Configuration des règles de typologie
 
    Tirez parti des règles de typologies de Campaign pour filtrer, contrôler et contrôler l&#39;envoi des diffusions. Par exemple, les règles de fatigue contrôlent la fréquence et la quantité des messages pour éviter une sur-sollicitation des destinataires. Une fois mises en oeuvre, les règles de typologie sont référencées dans les diffusions.
 
-   :[!DNL :arrow_upper_right:] : [En savoir plus sur les typologies et la gestion de la fatigue](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=en#orchestrating-campaigns)
+   [!DNL :arrow_upper_right:] [En savoir plus sur les typologies et la gestion de la fatigue](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=en#orchestrating-campaigns)
 
 1. Familiarisez-vous avec le modèle de données intégré de Campaign
 
