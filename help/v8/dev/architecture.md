@@ -7,9 +7,9 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: c659c31c15916077e71c63f3b3f4ca135d4d7f7d
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '631'
 ht-degree: 11%
 
 ---
@@ -30,7 +30,7 @@ Trois types d&#39;environnements sont disponibles avec le Cloud Service Campaign
 
 Vous pouvez exporter et importer des packages d’un environnement à un autre.
 
-:flèche_upper_right : En savoir plus sur les packages dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)
+:[!DNL :arrow_upper_right:] : En savoir plus sur les packages dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)
 
 ## Déploiement Mid-sourcing{#mid-sourcing-deployment}
 
@@ -51,7 +51,7 @@ La communication générale entre les serveurs et les processus est réalisée c
 
 Les messages transactionnels (Message Center) sont le module Campaign conçu pour gérer les messages de déclenchement.
 
-:bulb: Découvrez comment envoyer des messages transactionnels dans [cette section](../send/transactional.md).
+[!DNL :bulb:] Découvrez comment envoyer des messages transactionnels dans  [cette section](../send/transactional.md).
 
 En réponse à l’action d’un client sur un site web, un événement est envoyé à Campaign par le biais d’une API REST. Le modèle de message est renseigné avec les informations ou les données fournies par le biais de l’appel API et un message transactionnel est envoyé en temps réel au client. Ces messages peuvent être envoyés individuellement ou par lots par email, SMS ou notifications push.
 
@@ -59,7 +59,7 @@ Dans cette architecture spécifique, la cellule d&#39;exécution est séparée d
 
 * L’ **instance de contrôle** (ou instance marketing) est utilisée par les marketeurs et les équipes informatiques pour créer, configurer et publier des modèles de messages. Cette instance centralise également la surveillance et l’historique des événements.
 
-   :bulb: Découvrez comment créer et publier des modèles de messages dans [cette section](../send/transactional.md).
+   [!DNL :bulb:] Découvrez comment créer et publier des modèles de messages dans  [cette section](../send/transactional.md).
 
 * **L’instance d’exécution** renvoie les événements entrants (réinitialisation du mot de passe ou commandes depuis un site web, par exemple) et envoie des messages personnalisés. Il peut y avoir plusieurs instances d&#39;exécution pour traiter les messages via l&#39;équilibreur de charge et augmenter le nombre d&#39;événements à mettre en place pour une disponibilité maximale.
 
@@ -69,7 +69,7 @@ Dans cette architecture spécifique, la cellule d&#39;exécution est séparée d
 
 ![](assets/messagecenter_diagram.png)
 
-:flèche_upper_right : L’architecture de Message Center est décrite dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/transactional-messaging-architecture.html?lang=en#transactional-messaging)
+:[!DNL :arrow_upper_right:] : L’architecture de Message Center est décrite dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/transactional-messaging-architecture.html?lang=en#transactional-messaging)
 
 ### Authentification
 
@@ -82,4 +82,4 @@ Ensuite, avec le sessionToken fourni par l’instance d’exécution en réponse
 * Plusieurs instances d’exécution
 Dans une architecture d’exécution multi-cellules avec plusieurs instances d’exécution derrière un équilibreur de charge, la méthode de connexion appelée par l’application externe passe par l’équilibreur de charge : pour cette raison, une authentification par jeton ne peut pas être utilisée. Une authentification par mot de passe/utilisateur est requise.
 
-:flèche_upper_right : En savoir plus sur les événements de messagerie transactionnelle dans la [documentation de Campaign Classic v7](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel)
+:[!DNL :arrow_upper_right:] : En savoir plus sur les événements de messages transactionnels dans la [documentation de Campaign Classic v7](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel)
