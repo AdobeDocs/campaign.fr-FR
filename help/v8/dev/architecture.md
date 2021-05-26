@@ -7,7 +7,7 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 0dae3431ac1ddc840244d7df4929b0c949f8011f
 workflow-type: tm+mt
 source-wordcount: '631'
 ht-degree: 11%
@@ -82,4 +82,4 @@ Ensuite, avec le sessionToken fourni par l’instance d’exécution en réponse
 * Plusieurs instances d’exécution
 Dans une architecture d’exécution multi-cellules avec plusieurs instances d’exécution derrière un équilibreur de charge, la méthode de connexion appelée par l’application externe passe par l’équilibreur de charge : pour cette raison, une authentification par jeton ne peut pas être utilisée. Une authentification par mot de passe/utilisateur est requise.
 
-:[!DNL :arrow_upper_right:] : En savoir plus sur les événements de messages transactionnels dans la [documentation de Campaign Classic v7](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel)
+:[!DNL :arrow_upper_right:] : En savoir plus sur les événements de messages transactionnels dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel)
