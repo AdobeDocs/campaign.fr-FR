@@ -7,10 +7,10 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 40%
+source-wordcount: '642'
+ht-degree: 41%
 
 ---
 
@@ -30,7 +30,7 @@ Besoin d’aide lorsque vous utilisez Campaign ? Lisez les principales questions
 
    Vous devez télécharger et installer la console cliente Campaign pour vous connecter à Adobe Campaign.
 
-   :bulb: [Cliquez ici pour en savoir plus](connect.md).
+   [!DNL :bulb:] [Pour en savoir plus, cliquez ici](connect.md).
 
 1. **Campaign v8 peut-il être installé dans un environnement on-premise ou hybride ?**
 
@@ -40,9 +40,9 @@ Besoin d’aide lorsque vous utilisez Campaign ? Lisez les principales questions
 
    La délivrabilité des emails, composant essentiel de la réussite du programme marketing de chaque expéditeur, est caractérisée par des critères et des règles en constante évolution. Pour naviguer efficacement dans ce monde numérique, il est nécessaire d’affiner régulièrement votre stratégie d’e-mail, en tenant compte des principales tendances de délivrabilité, afin d’atteindre au mieux vos audiences.
 
-   :flèche_upper_right : Reportez-vous à ce guide pour découvrir les [Bonnes pratiques de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=fr).
+   :[!DNL :arrow_upper_right:] : Reportez-vous à ce guide pour découvrir les [Bonnes pratiques de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=fr).
 
-   :flèche_upper_right : Découvrez comment implémenter la délivrabilité dans Campaign [dans ce guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html)
+   :[!DNL :arrow_upper_right:] : Découvrez comment implémenter la délivrabilité dans Campaign [dans ce guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html)
 
 1. **Comment puis-je m&#39;assurer que ma diffusion est envoyée sans erreur ?**
 
@@ -52,7 +52,7 @@ Besoin d’aide lorsque vous utilisez Campaign ? Lisez les principales questions
 
 1. **Est-il possible de suivre l&#39;exécution des workflows ?**
 
-   :flèche_upper_right : Découvrez comment surveiller l’exécution des workflows Campaign [dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html).
+   :[!DNL :arrow_upper_right:] : Découvrez comment surveiller l’exécution des workflows Campaign [dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html).
 
 1. **Avec quels systèmes et composants Campaign v8 est-il compatible ?**
 
