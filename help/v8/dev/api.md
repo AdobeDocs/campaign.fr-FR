@@ -7,9 +7,9 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '327'
 ht-degree: 13%
 
 ---
@@ -50,13 +50,13 @@ Pour utiliser les API et interagir avec [!DNL Adobe Campaign], vous devez égale
 
 Avec la base de données [!DNL Campaign] cloud, les appels unitaires d’explosion ne sont pas recommandés en raison des performances (latence et simultanéité). L’opération de lot est toujours préférable. Afin de garantir des performances optimales des API, Campaign gère toujours les appels API au niveau de la base de données locale.
 
-:bulb: [Le mécanisme d’évaluation des API est présenté dans cette page](staging.md)
+[!DNL :bulb:] [Le mécanisme d’évaluation des API est présenté dans cette page](staging.md)
 
 ## Nouvelles API
 
 De nouvelles API sont disponibles pour gérer la synchronisation des données entre la [!DNL Campaign] base de données locale et la base de données Cloud. Un nouveau mécanisme a également été introduit pour gérer les appels API au niveau de la base de données locale afin d’éviter la latence et d’augmenter les performances globales.
 
-:bulb: [Les nouvelles API sont présentées dans cette page](new-apis.md)
+[!DNL :bulb:] [Les nouvelles API sont présentées dans cette page](new-apis.md)
 
 **Rubriques connexes :**
 
