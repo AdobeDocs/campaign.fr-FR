@@ -7,9 +7,9 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '571'
 ht-degree: 4%
 
 ---
@@ -26,7 +26,7 @@ Modifications clés :
 
 En tant qu’utilisateur de [!DNL Campaign Classic], notez que la plupart des fonctionnalités de [!DNL Campaign Classic] v7 sont disponibles avec [!DNL Campaign] v8, à l’exception d’un petit ensemble, répertorié dans [cette section](#gs-removed). D&#39;autres seront disponibles dans les prochaines versions. [En savoir plus dans cette section](#gs-unavailable-features)
 
-:bulb: Pour en savoir plus sur l’architecture [!DNL Campaign] v8 dans [cette page](../dev/architecture.md).
+[!DNL :bulb:] Pour en savoir plus sur l’architecture  [!DNL Campaign] v8, consultez  [cette page](../dev/architecture.md).
 
 ## Modifications de la configuration du produit
 
