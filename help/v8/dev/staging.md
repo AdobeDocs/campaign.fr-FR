@@ -6,9 +6,9 @@ description: Mécanisme d’évaluation de l’API Campaign
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 3%
 
 ---
@@ -51,7 +51,7 @@ Pour mettre en oeuvre le mécanisme d&#39;évaluation de Campaign sur une table 
    </srcSchema>
    ```
 
-   :bulb: Pour en savoir plus sur la création de schéma personnalisé, consultez [cette page](create-schema.md).
+   [!DNL :bulb:] Pour en savoir plus sur la création de schémas personnalisés, consultez  [cette page](create-schema.md).
 
 1. Enregistrez et mettez à jour la structure de la base de données.  [En savoir plus](update-database-structure.md)
 
