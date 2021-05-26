@@ -6,7 +6,7 @@ description: Paramètres des messages transactionnels de Campaign
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 11%
@@ -29,13 +29,13 @@ Pour créer de nouveaux utilisateurs pour les instances d&#39;exécution Message
 
 Toutes les extensions de schéma effectuées sur les schémas utilisés par les **workflows techniques de Message Center** sur les instances de pilotage ou d&#39;exécution doivent être dupliquées sur les autres instances utilisées par le module des messages transactionnels Adobe Campaign.
 
-:[!DNL :arrow_upper_right:] : En savoir plus sur les workflows techniques de Message Center dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/instance-configuration/technical-workflows.html?lang=en#control-instance-workflows)
+[!DNL :arrow_upper_right:] En savoir plus sur les workflows techniques de Message Center dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/instance-configuration/technical-workflows.html?lang=en#control-instance-workflows)
 
 ## Envoi de notifications push transactionnelles
 
 Lorsqu’elle est combinée avec le module Mobile App Channel , la messagerie transactionnelle vous permet de transmettre des messages transactionnels par le biais de notifications sur des appareils mobiles.
 
-:[!DNL :arrow_upper_right:] : Le canal Applications mobiles est présenté dans la [documentation du Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages).
+[!DNL :arrow_upper_right:] Mobile app channel est présenté dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages).
 
 Pour envoyer des notifications push transactionnelles, vous devez effectuer les configurations suivantes :
 
