@@ -7,9 +7,9 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: a48e69a3f34c48ed4828bf29b8a02a3dc07bfa7e
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '453'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Adobe Campaign v8 apporte d’importantes améliorations au niveau de l’infras
 
 Les fonctionnalités principales sont les suivantes :
 
-* **Vitesse et échelle**. Adobe Campaign v8 s’appuie sur le Cloud Database Manager, ce qui permet aux requêtes d’exécuter jusqu’à 200 fois plus rapidement, à plusieurs pétaoctets, d’augmenter le nombre de messages par heure, avec jusqu’à 20 Mo/heure ou 1,5 million/heure pour les messages transactionnels, et de gérer jusqu’à 200 millions de profils principaux avec la possibilité d’atteindre 1B.
+* **Vitesse et échelle**. Adobe Campaign v8 s’appuie sur le Cloud Database Manager, ce qui permet aux requêtes d’exécuter jusqu’à 200 fois plus rapidement, à plusieurs pétaoctets, d’augmenter le nombre de messages par heure, avec jusqu’à 20 Mo/heure ou 1 million/heure pour les messages transactionnels, et de gérer jusqu’à 200 millions de profils principaux avec la possibilité d’atteindre 1B.
 
 * **Connexions à Adobe Experience Platform**. Adobe Campaign v8 prend en charge les connecteurs de données avec Adobe Experience Platform/RT-CDP, profil client unifié et intégration native avec Journey Orchestration. Ces investissements optimiseront l’expérience client d’Adobe Campaign et déverrouilleront de nouveaux cas d’utilisation, tels que la possibilité d’ajouter des parcours client en temps réel personnalisés aux campagnes.
 
@@ -31,6 +31,8 @@ Les fonctionnalités principales sont les suivantes :
 >Pour l’instant, Campaign v8 est **uniquement** disponible en tant que Cloud Service géré et ne peut pas être déployé dans des environnements on-premise ou hybrides.
 >
 >La migration depuis un environnement Campaign Classic v7 existant n&#39;est pas encore disponible.
+>
+>Si vous n’êtes pas sûr de votre modèle de déploiement ou si vous avez des questions, contactez votre équipe de compte.
 
 
 ## Échelle
