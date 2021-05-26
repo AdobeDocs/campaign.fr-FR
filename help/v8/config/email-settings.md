@@ -6,9 +6,9 @@ description: Paramètres du canal email Campaign
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '235'
 ht-degree: 68%
 
 ---
@@ -32,7 +32,7 @@ Notez que :
 
 * Seuls les emails envoyés sont pris en compte, les retours ne le sont pas.
 
-:speak_ballon: En tant qu&#39;utilisateur Cloud Services géré, [contactez l&#39;Adobe](../start/campaign-faq.md#support) pour activer Email Cci dans Campaign. L&#39;adresse email en Cci de votre choix doit être fournie à l&#39;équipe Adobe qui la configurera pour vous.
+[!DNL :speech_balloon:] En tant qu’utilisateur Cloud Services géré,  [contactez ](../start/campaign-faq.md#support) Adobe pour activer la fonctionnalité Email Cci dans Campaign. L&#39;adresse email en Cci de votre choix doit être fournie à l&#39;équipe Adobe qui la configurera pour vous.
 
 Une fois que la fonctionnalité Email Cci est configurée, assurez-vous qu&#39;elle est activée dans le modèle de diffusion ou dans la diffusion via l&#39;option **Email Cci.**
 
