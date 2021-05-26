@@ -6,9 +6,9 @@ description: Prise en main de la messagerie transactionnelle
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1547'
 ht-degree: 69%
 
 ---
@@ -25,9 +25,9 @@ Les messages transactionnels sont utilisés pour envoyer :
 * réponse individuelle en temps réel à une action client
 * contenu non promotionnel
 
-:bulb: Les paramètres des messages transactionnels sont détaillés dans [cette section](../config/transactional-msg-settings.md).
+[!DNL :bulb:] Les paramètres des messages transactionnels sont détaillés dans  [cette section](../config/transactional-msg-settings.md).
 
-:bulb: Découvrez l’architecture des messages transactionnels dans [cette page](../dev/architecture.md).
+[!DNL :bulb:] Découvrez l’architecture des messages transactionnels dans  [cette page](../dev/architecture.md).
 
 >[!CAUTION]
 >
@@ -152,7 +152,7 @@ Vous pouvez tester l&#39;envoi du message en envoyant un BAT vers une adresse de
 
 L&#39;envoi d&#39;un BAT s&#39;effectue de la même manière que pour toute diffusion.
 
-:flèche_upper_right : En savoir plus sur les bons à tirer dans la [documentation de Campaign Classic v7]((https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html))
+:[!DNL :arrow_upper_right:] : En savoir plus sur les bons à tirer dans la [documentation de Campaign Classic v7]((https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html))
 
 Cependant, pour envoyer un BAT d&#39;un message transactionnel, vous devez effectuer les opérations suivantes :
 
