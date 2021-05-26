@@ -7,10 +7,10 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 41%
+source-wordcount: '638'
+ht-degree: 42%
 
 ---
 
@@ -24,7 +24,7 @@ Besoin d’aide lorsque vous utilisez Campaign ? Lisez les principales questions
 
    Cette fréquence régulière de mises à jour a pour but de vous fournir les dernières fonctionnalités et améliorations. Vous bénéficiez ainsi d’un environnement sécurisé et d’une expérience optimale avec notre produit. C&#39;est la raison pour laquelle nous pensons qu&#39;il est important que vous exécutiez la version la plus récente d’Adobe Campaign.
 
-   :speak_ballon: En tant qu’utilisateur Cloud Services géré, votre instance est mise à niveau par Adobe avec chaque nouvelle version.
+   [!DNL :speech_balloon:] En tant qu’utilisateur Cloud Services géré, votre instance est mise à niveau par Adobe avec chaque nouvelle version.
 
 1. **Comment se connecter à Campaign v8 ?**
 
@@ -62,7 +62,7 @@ Besoin d’aide lorsque vous utilisez Campaign ? Lisez les principales questions
 
    Un sous-domaine est une division de votre domaine qui peut être utilisée pour isoler vos marques ou divers types de trafic (messages transactionnels, informations marketing, etc.).
 
-   :speak_ballon: En tant qu’utilisateur Cloud Services géré, [contactez l’Adobe](../start/campaign-faq.md#support) pour déléguer vos sous-domaines à l’Adobe.
+   [!DNL :speech_balloon:] En tant qu’utilisateur Cloud Services géré,  [contactez ](../start/campaign-faq.md#support) Adobe pour déléguer vos sous-domaines à l’Adobe.
 
 1. **En tant qu&#39;utilisateur v7 Campaign Classic, puis-je migrer vers Campaign v8 ?**
 
