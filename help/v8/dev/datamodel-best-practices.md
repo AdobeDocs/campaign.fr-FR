@@ -3,9 +3,9 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Bonnes pratiques relatives au modèle de données
 description: Découvrez les bonnes pratiques relatives à l’extension de modèle de données Campaign
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '2688'
+source-wordcount: '2686'
 ht-degree: 81%
 
 ---
@@ -18,9 +18,9 @@ Le système Adobe Campaign est très flexible et peut être étendu au-delà de 
 
 Pour une meilleure compréhension des tables natives de Campaign et de leurs relations les unes avec les autres, reportez-vous à [cette section](datamodel.md) .
 
-:bulb: Lisez [cette section](schemas.md) pour commencer à utiliser les schémas de Campaign.
+[!DNL :bulb:] Lisez  [cette ](schemas.md) section pour commencer à utiliser les schémas de Campaign.
 
-:bulb: Découvrez comment configurer des schémas d’extension afin d’étendre le modèle de données conceptuel de la base de données Adobe Campaign dans [cette page](extend-schema.md).
+[!DNL :bulb:] Découvrez comment configurer des schémas d’extension afin d’étendre le modèle de données conceptuel de la base de données Adobe Campaign dans  [cette page](extend-schema.md).
 
 ## Architecture du modèle de données {#data-model-architecture}
 
