@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: true
 hide: true
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 68%
+source-wordcount: '358'
+ht-degree: 69%
 
 ---
 
@@ -56,4 +56,4 @@ Découvrez comment gérer vos paramètres d’instances Campaign  dans le panne
 * [Détails de l’instance](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
 * [Gestion des clés GPG](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html)
 
-:flèche_upper_right : Découvrez toutes les fonctionnalités de Panneau de Contrôle de [cette documentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr)
+:[!DNL :arrow_upper_right:] : Découvrez toutes les fonctionnalités de Panneau de Contrôle de [cette documentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr)
