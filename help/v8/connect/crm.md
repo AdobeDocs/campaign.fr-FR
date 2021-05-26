@@ -6,7 +6,7 @@ description: 'Découvrez comment utiliser Campaign et votre CRM '
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 25%
@@ -31,12 +31,12 @@ Les CRM et versions pris en charge sont présentés dans la [matrice de compatib
 
 ## Étapes de mise en œuvre {#crm-implementation-steps}
 
-:[!DNL :arrow_upper_right:] : Découvrez la procédure détaillée pour connecter Campaign et Microsoft Dynamics dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html?lang=en#microsoft-dynamics-implementation-steps)
+[!DNL :arrow_upper_right:] Découvrez la procédure détaillée pour connecter Campaign et Microsoft Dynamics dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html?lang=en#microsoft-dynamics-implementation-steps)
 
-:[!DNL :arrow_upper_right:] : Découvrez la procédure détaillée pour connecter Campaign et Salesforce dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-sfdc.html?lang=en#getting-started)
+[!DNL :arrow_upper_right:] Découvrez la procédure détaillée pour connecter Campaign et Salesforce dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-sfdc.html?lang=en#getting-started)
 
 
 La synchronisation des données entre Adobe Campaign et le CRM s&#39;effectue via une activité de workflow dédiée. Créez vos workflows pour automatiser la synchronisation entre Campaign et votre CRM. Vous pouvez créer un workflow qui importe les contacts depuis Microsoft Dynamics, les synchronise avec les données Adobe Campaign existantes, supprime les contacts en double, puis met à jour la base de données Adobe Campaign.
 
-:[!DNL :arrow_upper_right:] : En savoir plus dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-data-sync.html?lang=en#getting-started)
+[!DNL :arrow_upper_right:] En savoir plus dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-data-sync.html?lang=en#getting-started)
 
