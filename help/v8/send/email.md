@@ -6,7 +6,7 @@ description: Prise en main des emails dans Campaign
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 3%
@@ -17,13 +17,13 @@ ht-degree: 3%
 
 Les diffusions email permettent d&#39;envoyer des emails personnalisés à la population cible.
 
-:[!DNL :arrow_upper_right:] : Pour en savoir plus, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html).
+[!DNL :arrow_upper_right:] Pour en savoir plus, consultez la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html).
 
 ## Créer votre première diffusion email
 
 Créez des emails personnalisés et contextuels qui soient cohérents avec le reste de l’expérience client.
 
-:[!DNL :arrow_upper_right:] : [Découvrez comment créer une diffusion email dans la documentation Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case--creating-an-email-delivery.html)
+[!DNL :arrow_upper_right:] [Découvrez comment créer une diffusion email dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case--creating-an-email-delivery.html)
 
 Vous pouvez créer directement dans Campaign ou importer votre audience, ainsi que le contenu de vos emails. Suivez les liens ci-dessous pour savoir comment :
 
@@ -43,7 +43,7 @@ Vous pouvez créer directement dans Campaign ou importer votre audience, ainsi q
 
 Campaign propose plusieurs méthodes pour tester et valider vos emails avant de les envoyer à vos audiences.
 
-:[!DNL :arrow_upper_right:] : [Appliquez les bonnes pratiques répertoriées dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/check-before-sending.html)
+[!DNL :arrow_upper_right:] [Appliquer les bonnes pratiques répertoriées dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/check-before-sending.html)
 
 Vous pouvez ainsi :
 
@@ -53,11 +53,11 @@ Vous pouvez ainsi :
 * Utilisation de populations témoins
 * Vérifier le rendu des emails
 
-:[!DNL :arrow_upper_right:] : [En savoir plus dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
+[!DNL :arrow_upper_right:] [En savoir plus dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
 
 ## Surveiller vos emails
 
 Une fois l&#39;envoi effectué, vérifiez le statut de la diffusion dans le tableau de bord de la diffusion et accédez aux logs de diffusion et aux rapports pour confirmer l&#39;envoi correct des messages.
 
-:[!DNL :arrow_upper_right:] : [En savoir plus dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html)
+[!DNL :arrow_upper_right:] [En savoir plus dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html)
 
