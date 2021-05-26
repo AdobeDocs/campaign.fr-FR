@@ -6,7 +6,7 @@ description: Prise en main des SMS dans Campaign
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 22%
@@ -41,4 +41,4 @@ Pour plus d’informations sur la création d’une diffusion, reportez-vous à 
 > 
 >Pour plus d’informations à ce sujet, consultez [cette section](push.md).
 
-:[!DNL :arrow_upper_right:] : En savoir plus dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-channel.html)
+[!DNL :arrow_upper_right:] En savoir plus dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-channel.html)
