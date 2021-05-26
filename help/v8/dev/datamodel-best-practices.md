@@ -3,9 +3,9 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Bonnes pratiques relatives au modèle de données
 description: Découvrez les bonnes pratiques relatives à l’extension de modèle de données Campaign
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2684'
 ht-degree: 81%
 
 ---
@@ -177,7 +177,7 @@ Il existe un certain nombre de solutions pour minimiser le besoin d’enregistre
 
 Vous pouvez déclarer l’attribut « deleteStatus » dans un schéma. Il est plus efficace de marquer l’enregistrement comme supprimé, puis de différer la suppression au cours de la tâche de nettoyage.
 
-:speak_ballon: En tant qu’utilisateur Cloud Services géré, contactez les consultants Adobe ou les administrateurs techniques pour en savoir plus sur la rétention ou pour définir la rétention pour les tables personnalisées.
+[!DNL :speech_balloon:] En tant qu’utilisateur Cloud Services géré, contactez les consultants Adobe ou les administrateurs techniques pour en savoir plus sur la rétention ou pour définir la rétention pour les tables personnalisées.
 
 ## Performances {#performance}
 
