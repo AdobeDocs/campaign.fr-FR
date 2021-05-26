@@ -7,9 +7,9 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -57,5 +57,5 @@ Vous pouvez intégrer Campaign à un ensemble de solutions d&#39;Adobe puissante
 
 Vous pouvez également configurer l’optimisation prédictive de l’heure d’envoi et la notation prédictive de l’engagement avec Parcours AI, ainsi qu’augmenter les taux d’ouverture, les clics et les recettes.
 
-:bulb: [En savoir plus sur les intégrations de Campaign](../connect/integration.md)
+[!DNL :bulb:] [En savoir plus sur les intégrations de Campaign](../connect/integration.md)
 
