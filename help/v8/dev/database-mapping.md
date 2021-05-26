@@ -3,9 +3,9 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Mappage de la base de données Campaign
 description: Mappage de la base de données Campaign
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1463'
 ht-degree: 92%
 
 ---
@@ -258,7 +258,7 @@ Pour les relations de jointure à l’aide de Federated Database Access :
 * ![](assets/do-not-localize/join_fda_11.png) : Cardinalité 1-1
 * ![](assets/do-not-localize/join_fda_1m.png) : Cardinalité 1-N
 
-:bulb: Pour plus d’informations sur les tables FDA, voir [Federated Data Access](../connect/fda.md).
+[!DNL :bulb:] Pour plus d’informations sur les tables FDA, consultez  [Federated Data Access](../connect/fda.md).
 
 Un lien doit être déclaré dans le schéma possédant la clé étrangère de la table liée à partir de l’élément principal :
 
