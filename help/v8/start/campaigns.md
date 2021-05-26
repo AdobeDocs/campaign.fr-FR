@@ -7,7 +7,7 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 12%
@@ -44,7 +44,7 @@ Avant de commencer à implémenter des campagnes marketing, vous devez connaîtr
 
 Adobe Campaign vous permet de créer, paramétrer, exécuter et analyser toutes les campagnes marketing depuis un centre de contrôle unifié.
 
-:[!DNL :arrow_upper_right:] : Découvrez comment accéder aux campagnes marketing et les mettre en oeuvre dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=en#orchestrating-campaigns)
+[!DNL :arrow_upper_right:] Découvrez comment accéder à des campagnes marketing et les mettre en oeuvre dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=en#orchestrating-campaigns)
 
 
 ## Principales étapes de démarrage
