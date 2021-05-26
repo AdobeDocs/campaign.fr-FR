@@ -3,9 +3,9 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Bonnes pratiques relatives à la sécurité Campaign
 description: Prise en main des bonnes pratiques en matière de sécurité dans Campaign
-source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '509'
 ht-degree: 46%
 
 ---
@@ -25,7 +25,7 @@ La configuration et le renforcement de la confidentialité sont des éléments c
 * Vérifiez que les mots de passe cryptés sont restreints
 * Protégez les pages pouvant contenir des informations personnelles, telles que les pages miroir, les applications web, etc.
 
-:speak_ballon: En tant qu’utilisateur Cloud Services géré, Adobe collaborera avec vous pour mettre en oeuvre ces configurations dans votre environnement.
+[!DNL :speech_balloon:] En tant qu’utilisateur Cloud Services géré, Adobe collaborera avec vous pour mettre en oeuvre ces configurations dans votre environnement.
 
 ## Personnalisation 
 
