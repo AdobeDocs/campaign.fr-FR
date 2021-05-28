@@ -7,7 +7,7 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 hidefromtoc: true
-source-git-commit: 583a8f6a03b00e1eafa6d408c9949e60a6f8158d
+source-git-commit: 15cd7228a4920702cae182c68e7a329345946e31
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 1%
@@ -20,14 +20,12 @@ Les limites connues identifient les fonctionnalités, l’architecture ou les pr
 
 Pour Adobe Campaign v8, les restrictions suivantes s’appliquent :
 
-* Adobe Campaign v8 n’est pas disponible pour les déploiements on-premise/hybrides ; il est disponible uniquement en tant que Cloud Service géré par Adobe.
+* Adobe Campaign v8 n’est pas disponible pour les déploiements on-premise/hybrides. Il est disponible uniquement en tant que Cloud Service géré par Adobe.
 * Les clients existants ne peuvent pas migrer d’un environnement Adobe Campaign existant vers Adobe Campaign v8
 * Aucune réplication bidirectionnelle des données : la réplication se produit uniquement de la base de données locale Campaign vers la base de données Cloud.
-* Les fonctionnalités [répertoriées dans cette section](capability-matrix.md#gs-unavailable-features) ne sont pas disponibles dans le build actuel de Campaign v8
+* Les fonctionnalités répertoriées [dans cette section](capability-matrix.md#gs-unavailable-features) ne sont pas disponibles dans le build actuel de Campaign v8.
 * Certaines fonctionnalités non disponibles ou supprimées sont toujours visibles dans l’interface utilisateur.
 * Les mécanismes d’inscription (opt-in) et de désinscription (opt-out), et l’enregistrement mobile sont des processus asynchrones. Les demandes sont traitées toutes les heures par l’intermédiaire d’un workflow technique spécifique. [En savoir plus](../config/replication.md#tech-wf)
 * Gestion des identifiants - doublons - pour confirmer + détails
 * LINE - pour confirmer + détails
 * Latence - pour confirmer + détails
-
-
