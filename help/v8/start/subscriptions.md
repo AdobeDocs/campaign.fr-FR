@@ -2,22 +2,22 @@
 solution: Campaign v8
 product: Adobe Campaign
 title: Gestion des abonnements et des désabonnements dans Campaign
-description: Découvrez comment gérer les abonnements et les désabonnements dans Campaign v8
-feature: Vue d'ensemble
+description: Découvrez comment gérer les abonnements et les désabonnements dans Campaign v8
+feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 8%
+ht-degree: 37%
 
 ---
 
 # Gestion des abonnements et des désabonnements{#optin-optout}
 
-Utilisez Adobe Campaign pour créer et surveiller vos services d’information tels que les newsletters et pour gérer les abonnements/désabonnements à ces services. Plusieurs services peuvent être définis en parallèle, par exemple : newsletters spécialisées pour certaines catégories de produits, thèmes ou zones d’un site web, abonnements à différents types de messages d’alerte et notifications en temps réel. Voir à ce propos la section Gestion des abonnements.
+Utilisez Adobe Campaign pour créer et surveiller vos services d’information, tels que les newsletters, et pour gérer les abonnements/désabonnements à ces services. Plusieurs services peuvent être définis en parallèle, par exemple : des newsletters spécialisées pour certaines catégories de produits, certains thèmes ou des zones particulières d’un site web, des abonnements à divers types de messages d’alerte et des notifications en temps réel. Voir à ce propos la section Gestion des abonnements.
 
-[!DNL :arrow_upper_right:] Découvrez comment créer un service d’information, envoyer une newsletter et gérer les processus d’opt-in et d’opt-out dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html)
+[!DNL :arrow_upper_right:] Découvrez comment créer un service d’information, envoyer une newsletter et gérer les processus d’opt-in et d’opt-out dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=fr)
 
 Pour abonner (opt-in) un profil à un service, les options disponibles sont les suivantes :
 
@@ -62,8 +62,8 @@ Pour désabonner (exclure) un profil d’un service, les options disponibles son
 
 >[!CAUTION]
 >
->Les abonnements et les désabonnements sont des processus **asynchrones**. Les demandes d’opt-in et d’opt-out sont traitées toutes les heures. [En savoir plus](../dev/new-apis.md#sub-apis)
+>Les abonnements et désabonnements sont des processus **asynchrones**. Les demandes d’opt-in et d’opt-out sont traitées toutes les heures. [En savoir plus](../dev/new-apis.md#sub-apis)
 
-Vous pouvez également permettre aux destinataires de vos diffusions de transférer des messages à un ami. Pour cela, insérez les liens correspondants dans votre diffusion. Vous pouvez ensuite suivre ce processus de partage ainsi que le nombre de visites sur les pages concernées.
+Vous pouvez également permettre aux destinataires de votre diffusion de transférer des messages à un ami. Pour ce faire, insérez les liens adéquats dans votre diffusion. Vous pouvez ensuite suivre ce processus de partage, ainsi que le nombre de visites sur les pages concernées.
 
 [!DNL :arrow_upper_right:] Pour plus d&#39;informations sur cette fonctionnalité, consultez la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=en#viral-marketing--forward-to-a-friend).
