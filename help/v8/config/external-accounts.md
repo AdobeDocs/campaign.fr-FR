@@ -1,15 +1,15 @@
 ---
 solution: Campaign v8
 product: Adobe Campaign
-title: Comptes externes Campaign
-description: Comptes externes Campaign
-feature: Vue d'ensemble
+title: Comptes externes de Campaign
+description: Comptes externes de Campaign
+feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
 source-wordcount: '1124'
-ht-degree: 33%
+ht-degree: 35%
 
 ---
 
@@ -76,7 +76,7 @@ Adobe Campaign utilise les comptes techniques suivants pour activer et exécuter
 
    [!DNL :bulb:] En savoir plus sur Adobe Identity Management Service (IMS) dans  [cette section](../start/connect.md#connect-ims).
 
-   [!DNL :speech_balloon:] En tant qu’utilisateur Cloud Services géré,  [contactez ](../start/campaign-faq.md#support) Adobe pour mettre en oeuvre Adobe IMS avec Campaign.
+   [!DNL :speech_balloon:] En tant qu’utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour implémenter Adobe IMS avec Campaign.
 
 * **Web Analytics**
 
