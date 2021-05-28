@@ -3,7 +3,7 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Utilisation de Campaign et Twitter
 description: Découvrez comment utiliser Campaign et Twitter
-feature: Vue d'ensemble
+feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
@@ -12,7 +12,7 @@ hide: true
 source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
 source-wordcount: '173'
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
@@ -20,28 +20,28 @@ ht-degree: 9%
 
 **PAS ENCORE DISPONIBLE**
 
-Utilisez l’option **Gestion des réseaux sociaux (Social Marketing)** pour interagir avec les clients et les prospects via Twitter.
+Utilisez l’option **Gestion des réseaux sociaux (marketing social)** pour interagir avec les clients et les prospects via Twitter.
 
-* Envoyer des messages : utilisez Adobe Campaign Social Marketing pour envoyer des messages sur Twitter. Adobe Campaign vous permet de publier des messages directement sur votre compte twitter. Vous pouvez également envoyer des messages directs à tous les abonnés de vos comptes 
+* Envoi de messages : utilisez le marketing des médias sociaux d’Adobe Campaign pour envoyer des messages sur Twitter. Adobe Campaign vous permet de publier des messages directement sur votre compte twitter. Vous pouvez également envoyer des messages directs à tous les abonnés de vos comptes.
 
-* Collecter de nouveaux contacts - Adobe Campaign Social Marketing permet également d&#39;acquérir facilement de nouveaux contacts via Facebook : contactez les utilisateurs et demandez-leur s&#39;ils souhaitent partager leurs informations de profil. S’ils acceptent, Adobe Campaign récupère automatiquement les données, ce qui permet d’effectuer des campagnes de ciblage et, si possible, de mettre en oeuvre des stratégies cross-canal.
+* Collecte de nouveaux contacts : le marketing des médias sociaux d’Adobe Campaign facilite également l’acquisition de nouveaux contacts via Facebook. Contactez les utilisateurs et demandez-leur s’ils souhaitent partager leurs informations de profil. S’ils acceptent, Adobe Campaign récupère automatiquement les données. Vous pouvez ainsi exécuter des campagnes de ciblage et, lorsque cela est possible, implémenter des stratégies cross-canal.
 
-## Etapes de configuration
+## Étapes de configuration
 
-Obtenez des informations à partir de :
+Obtenir des informations à partir de :
 
-https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-social-media/configuration/configuring-publishing-on-twitter.html?lang=en#integrating-with-social-media
+https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-social-media/configuration/configuring-publishing-on-twitter.html?lang=fr#integrating-with-social-media
 
 
 ## Publication sur Twitter
 
-Obtenez des informations à partir de :
+Obtenir des informations à partir de :
 
-https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-social-media/publishing-on-facebook-twitter/publishing-on-twitter.html?lang=en#integrating-with-social-media
+https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-social-media/publishing-on-facebook-twitter/publishing-on-twitter.html?lang=fr#integrating-with-social-media
 
 
 ## Tracking
 
-Obtenez des informations à partir de :
+Obtenir des informations à partir de :
 
-https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-social-media/annexes/tracking.html?lang=en#integrating-with-social-media
+https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-social-media/annexes/tracking.html?lang=fr#integrating-with-social-media
