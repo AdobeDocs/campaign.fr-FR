@@ -1,12 +1,12 @@
 ---
 solution: Campaign v8
 product: Adobe Campaign
-title: Mappage de la base de données Campaign
-description: Mappage de la base de données Campaign
+title: Mapping de la base de données de Campaign
+description: Mapping de la base de données de Campaign
 source-git-commit: 1b731045783565c93a2db0923dea6b6d100471ad
 workflow-type: tm+mt
 source-wordcount: '1463'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -198,9 +198,9 @@ Les clés suivent les règles suivantes :
    </schema>
    ```
 
-### Clé Principal - Identifiant
+### Clé primaire - Identifiant
 
-La clé Principale des tables Adobe Campaign est un **UUID (Universally Unique ID)** auto-généré par le moteur de base de données. La valeur de clé est unique dans l’ensemble de la base de données. Le contenu de la clé est généré automatiquement à l&#39;insertion de l&#39;enregistrement.
+La clé primaire des tables Adobe Campaign est un **identifiant universel unique (UUID)** généré automatiquement par le moteur de base de données. La valeur de clé est unique pour l’ensemble de la base de données. Le contenu de la clé est automatiquement généré à l’insertion de l’enregistrement.
 
 **Exemple**
 
@@ -229,7 +229,7 @@ Le schéma généré :
 </schema>
 ```
 
-En plus de la définition de la clé, un champ numérique appelé &quot;id&quot; a été ajouté au schéma étendu afin de contenir la clé Principale générée automatiquement.
+Outre la définition de la clé, un champ numérique nommé « id » a été ajouté dans le schéma étendu afin de contenir la clé primaire générée automatiquement.
 
 >[!CAUTION]
 >
@@ -258,7 +258,7 @@ Pour les relations de jointure à l’aide de Federated Database Access :
 * ![](assets/do-not-localize/join_fda_11.png) : Cardinalité 1-1
 * ![](assets/do-not-localize/join_fda_1m.png) : Cardinalité 1-N
 
-[!DNL :bulb:] Pour plus d’informations sur les tables FDA, consultez  [Federated Data Access](../connect/fda.md).
+[!DNL :bulb:] Pour plus d’informations sur les tables FDA, consultez la section [Federated Data Access](../connect/fda.md).
 
 Un lien doit être déclaré dans le schéma possédant la clé étrangère de la table liée à partir de l’élément principal :
 
@@ -297,7 +297,7 @@ Les liens suivent les règles suivantes :
 
 >[!NOTE]
 >
->Les liens sont les éléments déclarés à la fin du schéma.
+>Les liens sont les éléments déclarés en fin de schéma.
 
 ### Exemple 1 {#example-1}
 
@@ -426,4 +426,4 @@ Le schéma généré :
 </schema>
 ```
 
-La définition de la clé de nom &quot;companyEmail&quot; a été étendue avec la clé étrangère du lien &quot;company&quot;.
+La définition de la clé de nom « companyEmail » a été étendue avec la clé étrangère du lien « company ».
