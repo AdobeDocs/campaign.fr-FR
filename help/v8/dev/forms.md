@@ -6,21 +6,21 @@ description: Découvrez comment personnaliser les formulaires de saisie
 source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '2577'
-ht-degree: 87%
+ht-degree: 99%
 
 ---
 
 # Prise en main des formulaires de saisie{#gs-ac-forms}
 
-Lorsque vous créez ou étendez un schéma, vous devez créer ou modifier les formulaires de saisie associés afin que ces modifications soient visibles par les utilisateurs finaux.
+Lorsque vous créez ou étendez un schéma, vous devez créer ou modifier les formulaires de saisie associés pour permettre aux utilisateurs finaux de voir ces modifications.
 
-Un formulaire de saisie permet l&#39;édition d&#39;une instance associée à un schéma de données à partir de la console cliente Adobe Campaign. Le formulaire est identifié par ses nom et espace de noms.
+Un formulaire de saisie vous permet de modifier une instance associée à un schéma de données à partir de la console client Adobe Campaign. Le formulaire est identifié par son nom et son espace de noms.
 
-La clé d&#39;identification d&#39;un formulaire est une chaîne composée de l&#39;espace de noms et du nom séparés par deux points, par exemple : &quot;cus:contact&quot;.
+La clé d’identification d’un formulaire correspond à une chaîne constituée de l’espace de noms et du nom séparés par deux points, par exemple « cus:contact ».
 
-## Modifier les formulaires de saisie
+## Modification des formulaires de saisie
 
-Créez et configurez des formulaires de saisie à partir du dossier **[!UICONTROL Administration] > [!UICONTROL Configuration] > [!UICONTROL Formulaires de saisie]** de la console cliente :
+Créez et configurez des formulaires de saisie à partir du dossier **[!UICONTROL Administration] > [!UICONTROL Paramétrage] > [!UICONTROL Formulaires de saisie]** de la console client :
 
 ![](assets/form_arbo.png)
 
@@ -32,7 +32,7 @@ L&#39;aperçu génère l&#39;affichage du formulaire de saisie :
 
 ![](assets/form_preview.png)
 
-## Structure d&#39;un formulaire
+## Structure d’un formulaire
 
 La description d&#39;un formulaire est un document XML structuré respectant la grammaire du schéma des formes **xtk:form**.
 
@@ -80,10 +80,10 @@ Le contrôle d&#39;édition s&#39;adapte automatiquement au type de données cor
 
 >[!NOTE]
 >
->Vous pouvez remplacer le libellé défini dans son schéma de données en ajoutant l&#39;attribut **label** à l&#39;élément `<input>` :\
+>Vous pouvez remplacer le libellé défini dans son schéma de données en ajoutant l’attribut **libellé** à l’élément `<input>` :\
 >`<input label="E-mail address" xpath="@name" />`
 
-Par défaut, chaque champ est affiché sur une seule ligne et occupe tout l&#39;espace disponible selon le type de données.
+Par défaut, chaque champ est affiché sur une seule ligne et occupe tout l’espace disponible selon le type de données.
 
 [!DNL :arrow_upper_right:] Tous les attributs de formulaire sont répertoriés dans la documentation de  [Campaign Classic v7](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html).
 
@@ -153,9 +153,9 @@ La balise **`<static>`** avec le type **separator** permet d’ajouter une barre
 
 Un texte d’aide a été ajouté à l’aide de la balise `<static>` avec le type d’aide. Le contenu du texte est saisi dans l’attribut **label**.
 
-## Utiliser des conteneurs {#containers}
+## Utilisation de conteneurs {#containers}
 
-Utilisez **conteneurs** pour regrouper un ensemble de contrôles. Ils sont représentés par l’élément **`<container>`**. Ils ont été utilisés ci-dessus pour mettre en forme les contrôles sur plusieurs colonnes.
+Utilisez des **conteneurs** pour regrouper un ensemble de contrôles. Ils sont représentés par l’élément **`<container>`**. Ils ont été utilisés ci-dessus pour mettre en forme les contrôles sur plusieurs colonnes.
 
 L’attribut **xpath** sur un `<container>` permet de simplifier le référencement des contrôles enfants. Le référencement des contrôles est alors relatif au `<container>` parent.
 
@@ -179,9 +179,9 @@ Exemple avec ajout du &quot;xpath&quot; sur l&#39;élément de nom &quot;locatio
 
 Les conteneurs sont utilisés pour construire des contrôles complexes ayant recours à un ensemble de champs mis en forme dans des pages.
 
-### Ajouter des onglets (notebook) {#tab-container}
+### Ajout d’onglets (notebook) {#tab-container}
 
-Utilisez un conteneur **notebook** pour formater les données dans les pages accessibles à partir d’onglets.
+Utilisez un conteneur **notebook** pour formater les données dans des pages accessibles à partir d’onglets.
 
 ![](assets/do-not-localize/form_exemple6.png)
 
@@ -198,17 +198,17 @@ Utilisez un conteneur **notebook** pour formater les données dans les pages acc
 </container>
 ```
 
-Le conteneur principal est défini par l&#39;attribut **type=&quot;notebook&quot;**. Les onglets sont déclarés dans les conteneurs enfants, le libellé des onglets est renseigné à partir de l&#39;attribut **label**.
+Le conteneur principal est défini par l’attribut **type=&quot;notebook&quot;**. Les onglets sont déclarés dans les conteneurs enfants, le libellé des onglets est renseigné à partir de l’attribut **label**.
 
-Ajoutez l’attribut **style=&quot;down&quot;** pour forcer le positionnement vertical des libellés des onglets sous le contrôle. Cet attribut est facultatif. La valeur par défaut est **&quot;up&quot;**.
+Ajoutez l’attribut **style=&quot;down&quot;** pour forcer le positionnement vertical des libellés d’onglet sous le contrôle. Cet attribut est facultatif. La valeur par défaut est **« up »**.
 
 ![](assets/do-not-localize/form_exemple7.png)
 
 `<container style="down" type="notebook">  ... </container>`
 
-### Ajouter des icônes (iconbox) {#icon-list}
+### Ajout d’icônes (iconbox) {#icon-list}
 
-Utilisez ce conteneur pour afficher une barre d&#39;icônes verticale permettant de sélectionner les pages à afficher.
+Utilisez ce conteneur pour afficher une barre d’icônes verticale permettant de sélectionner les pages à afficher.
 
 ![](assets/do-not-localize/form_exemple8.png)
 
@@ -231,9 +231,9 @@ L’icône d’une page est renseignée à partir de l’attribut `img="<image>"
 
 Les images sont disponibles à partir du noeud **[!UICONTROL Administration > Paramétrage > Images]**.
 
-### Masquer les conteneurs (visibleGroup) {#visibility-container}
+### Masquage des conteneurs (visibleGroup) {#visibility-container}
 
-Vous pouvez masquer un ensemble de contrôles via une condition dynamique.
+Vous pouvez masquer un ensemble de contrôles à partir d’une condition dynamique.
 
 Cet exemple illustre la visibilité des contrôles sur la valeur du champ &quot;Genre&quot; :
 
@@ -269,7 +269,7 @@ Ce conteneur pemet l&#39;activation ou la désactivation d&#39;un ensemble de do
 
 Un conteneur d&#39;activation est défini par l&#39;attribut **type=&quot;enabledGroup&quot;**. L&#39;attribut **enabledIf** contient la condition d&#39;activation.
 
-## Modifier un lien {#editing-a-link}
+## Modification d’un lien {#editing-a-link}
 
 Pour rappel, un lien est déclaré dans le schéma de données de la façon suivante :
 
@@ -289,7 +289,7 @@ Le choix de la cible est accessible à partir de la zone d&#39;édition. Une aid
 
 Une liste déroulante permet de sélectionner un élément de la cible parmi la liste des enregistrements déjà créés.
 
-L&#39;icône **[!UICONTROL Modifier le lien]** (dossier) lance une forme de sélection avec la liste des éléments ciblés et une zone de filtrage.
+L’icône **[!UICONTROL Modifier le lien]** (dossier) lance un formulaire de sélection avec la liste des éléments ciblés et une zone de filtre.
 
 L&#39;icône **[!UICONTROL Editer le lien]** (loupe) lance la forme d&#39;édition de l&#39;élément lié. La forme utilisée est déduite par défaut sur la clé du schéma ciblé, l&#39;attribut **form** permet de forcer le nom de la forme d&#39;édition (par exemple &quot;cus:company2&quot;).
 
@@ -325,7 +325,7 @@ Vous pouvez aussi trier la liste avec l’élément **`<orderby>`** :
 * **noZoom** : pas de forme d&#39;édition sur le lien (avec la valeur &quot;true&quot;)
 * **form** : surcharge la forme d&#39;édition de l&#39;élément ciblé
 
-## Ajouter une liste de liens (non liés) {#list-of-links}
+## Ajout d’une liste de liens (unbound) {#list-of-links}
 
 Un lien renseigné dans le schéma de données en tant que élément de collection (@unbound=&quot;true&quot;) doit obligatoirement passer par une liste afin de visualiser l&#39;ensemble des éléments qui lui sont associés.
 
@@ -375,7 +375,7 @@ Un filtre et un tri peuvent être appliqués lors du chargement de la liste :
 </input>
 ```
 
-## Définir une table de relation {#relationship-table}
+## Définition d’une table de relation {#relationship-table}
 
 Une table de relation permet de lier deux tables avec une cardinalité N-N. La table de relation contient uniquement les liens vers les deux tables.
 
@@ -418,13 +418,13 @@ L&#39;attribut **xpathChoiceTarget** permet de lancer une forme de choix à part
 * **xpathEditTarget** : fixe l&#39;édition sur le lien renseigné
 * **xpathChoiceTarget** : pour l&#39;ajout, lance la forme de choix sur le lien renseigné
 
-## Ajouter des contrôles de liste de mémoire {#memory-list-controls}
+## Ajout de contrôles de liste mémoire {#memory-list-controls}
 
 Les listes mémoire permettent d&#39;éditer les éléments de collection avec le préchargement des données la liste. Cette liste ne peut être ni filtrée, ni configurée.
 
 Ces listes sont utilisées sur les éléments de collections mappés en XML ou sur les liens à faible volume.
 
-## Ajouter une liste de colonnes {#column-list}
+## Ajout d’une liste à colonnes {#column-list}
 
 Ce contrôle affiche une liste à colonnes éditable avec une barre d&#39;outils contenant les boutons d&#39;ajout et de suppression.
 
@@ -454,7 +454,7 @@ Les boutons de la barre d&#39;outils peuvent être alignés horizontalement :
 
 L&#39;attribut **toolbarCaption** force l&#39;alignement horizontal de la barre d&#39;outils et renseigne le titre au dessus de la liste.
 
-### Activer le zoom dans une liste {#zoom-in-a-list}
+### Activation du zoom dans une liste {#zoom-in-a-list}
 
 L&#39;insertion et l&#39;édition des données d&#39;une liste peut être renseigné dans une forme d&#39;édition séparée.
 
@@ -487,7 +487,7 @@ Le formulaire d’édition est rempli à partir de l’élément `<form>` sous l
 * **zoomOnAdd** : lance le forme d&#39;édition sur l&#39;ajout
 * **xpathChoiceTarget** : pour l&#39;ajout, lance la forme de choix sur le lien renseigné
 
-## Ajouter des champs non modifiables {#non-editable-fields}
+## Ajout de champs non modifiables {#non-editable-fields}
 
 Pour afficher un champ et empêcher son édition, vous devez utiliser la balise **`<value>`** ou renseigner l’attribut **readOnly=&quot;true&quot;** sur la balise **`<input>`**.
 
@@ -500,7 +500,7 @@ Exemple sur le champ &quot;Genre&quot; :
 <input xpath="@gender" readOnly="true"/>
 ```
 
-## Bouton radio Ajouter {#radio-button}
+## Ajout d’un bouton radio {#radio-button}
 
 Un bouton radio permet d’effectuer un choix parmi plusieurs options. Les balises **`<input>`** sont utilisées pour répertorier les options possibles et l’attribut **checkedValue** spécifie la valeur associée au choix.
 
@@ -514,9 +514,9 @@ Exemple sur le champ &quot;Genre&quot; :
 
 ![](assets/do-not-localize/form_exemple17.png)
 
-## Ajouter une case à cocher {#checkbox}
+## Ajout d’une case à cocher {#checkbox}
 
-Un bouton à cocher permet de refléter un état boolean (pressé ou non). Par défaut ce contrôle est utilisé par les champs de type &quot;boolean&quot; (true/false). On peut associer à ce bouton une variable qui prendra par défaut la valeur 0 ou 1 ; cette valeur peut être surchargée à partir de l&#39;attribut **checkValue**.
+Une case à cocher permet de refléter un état booléen (qu’elle soit cochée ou non). Par défaut, ce contrôle est utilisé par les champs de type « booléen » (true/false). On peut associer à ce bouton une variable qui prendra par défaut la valeur 0 ou 1. Cette valeur peut être surchargée à partir de l’attribut **checkValue**.
 
 ```
 <input xpath="@boolean1"/>
@@ -525,7 +525,7 @@ Un bouton à cocher permet de refléter un état boolean (pressé ou non). Par d
 
 ![](assets/do-not-localize/form_exemple20.png)
 
-## Modifier la hiérarchie de navigation {#navigation-hierarchy-edit}
+## Modification de la hiérarchie de navigation {#navigation-hierarchy-edit}
 
 Ce contrôle construit une arborescence sur un ensemble de champs à éditer.
 
@@ -546,7 +546,7 @@ Les contrôles à éditer sont regroupés dans un **`<container>`** renseigné s
 
 ![](assets/do-not-localize/form_exemple18.png)
 
-## Ajouter un champ d’expression {#expression-field}
+## Ajout d’un champ d’expression {#expression-field}
 
 Un champ d’expression permet de mettre à jour dynamiquement un champ à partir d’une expression ; la balise **`<input>`** est utilisée avec un attribut **xpath** pour renseigner le chemin du champ à mettre à jour et un attribut **expr** contenant l’expression de mise à jour.
 
@@ -560,7 +560,7 @@ Un champ d’expression permet de mettre à jour dynamiquement un champ à parti
 
 L&#39;exécution d&#39;un formulaire de saisie initialise un document XML contenant les données de l&#39;entité en cours d&#39;édition. Ce document représente le contexte du formulaire et peut être utilisé comme espace de travail.
 
-### Mettre à jour le contexte {#updating-the-context}
+### Mise à jour du contexte {#updating-the-context}
 
 Pour modifier le contexte du formulaire, vous devez utiliser la balise `<set expr="<value>" xpath="<field>"/>`, où `<field>` est le chemin destination et `<value>` est la valeur ou expression de mise à jour.
 
@@ -611,11 +611,11 @@ La balise **`<check expr="<condition>" />`** combinée avec la balise **`<error>
 </leave>
 ```
 
-## Assistant (assistant) {#wizards}
+## Assistant  {#wizards}
 
-Un assistant vous guide tout au long d’un ensemble d’étapes de saisie de données sous forme de pages. Les données saisies sont enregistrées lorsque vous validez le formulaire.
+Un assistant vous guide à travers un ensemble d’étapes de saisie de données, présentées sous forme de pages. Les données saisies sont enregistrées lorsque vous validez le formulaire.
 
-Pour ajouter un assistant, utilisez le type de structure suivant :
+Pour ajouter un assistant, utilisez le type de structure suivant :
 
 ```
 <form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Wizard example" entity-schema="nms:recipient">
