@@ -3,10 +3,10 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Bonnes pratiques relatives au modèle de données
 description: Découvrez les bonnes pratiques relatives à l’extension des modèles de données de Campaign
-source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
+source-git-commit: 583a8f6a03b00e1eafa6d408c9949e60a6f8158d
 workflow-type: tm+mt
-source-wordcount: '2684'
-ht-degree: 95%
+source-wordcount: '2686'
+ht-degree: 94%
 
 ---
 
@@ -71,7 +71,7 @@ Un champ doit être stocké dans une table s’il est destiné à un ciblage ou 
 
 ### Choix des clés {#choice-of-keys}
 
-Outre la clé **autouuid** définie par défaut dans la plupart des tables, vous pouvez envisager d’ajouter des clés logiques ou métier (numéro de compte, numéro de client, etc.). Vous pourrez l’utiliser ultérieurement pour les imports et les réconciliations ou les packages de données. Pour plus d’informations, voir la section [Identificateurs](#identifiers).
+Outre les **autouuid** et **autopk** définis par défaut dans la plupart des tables, vous devez envisager d’ajouter des clés logiques ou métier (numéro de compte, numéro de client, etc.). Vous pourrez l’utiliser ultérieurement pour les imports et les réconciliations ou les packages de données. Pour plus d’informations, voir la section [Identificateurs](#identifiers).
 
 L’efficacité des clés est essentielle pour les performances. Snowflake vous permet d’insérer des types de données numériques ou string comme clés pour les tableaux.
 
@@ -110,7 +110,7 @@ Cette clé personnalisée est la clé primaire d’enregistrement réelle dans l
 
 Pour la création d’une table personnalisée, vous avez deux possibilités :
 * Combinaison d’une clé générée automatiquement (id) et d’une clé interne (personnalisée). Cette option est intéressante si votre clé système est une clé composite ou n’est pas un entier. Avec Snowflake, les entiers ou les clés basées sur des chaînes offrent des performances supérieures dans les grandes tables et dans la jointure avec d’autres tables.
-* Utilisation de la clé primaire comme clé primaire du système externe. Cette solution est généralement préférable, car elle simplifie l’approche d’import et d’export des données, avec une clé cohérente entre les différents systèmes. Autouuid doit être désactivé si la clé est nommée « id » et qu’elle doit être remplie avec des valeurs externes (et non par génération automatique).
+* Utilisation de la clé primaire comme clé primaire du système externe. Cette solution est généralement préférable, car elle simplifie l’approche d’import et d’export des données, avec une clé cohérente entre les différents systèmes. **Autouuid doit être désactivé si la clé est nommée « id » et qu’elle doit être remplie avec des valeurs externes (et non par génération automatique).**
 
 >[!CAUTION]
 >
@@ -123,7 +123,7 @@ Pour la création d’une table personnalisée, vous avez deux possibilités :
 
 Attention à l’intégrité « propre » des grandes tables. La suppression d’enregistrements possédant des tables volumineuses avec une intégrité qui leur est propre peut éventuellement arrêter l’instance. La table est verrouillée et les suppressions sont faites une par une. Il est donc préférable d’appliquer une intégrité « neutre » sur les tables enfants très volumineuses.
 
-La déclaration d’un lien en tant que jointure externe est néfaste pour les performances. L’enregistrement Zero ID émule la fonctionnalité de jointure externe. Il n’est pas nécessaire de déclarer des jointures externes si le lien utilise l’autouuid.
+La déclaration d’un lien en tant que jointure externe est néfaste pour les performances. L’enregistrement Zero ID émule la fonctionnalité de jointure externe. Il n’est pas nécessaire de déclarer des jointures externes si le lien utilise la balise **autouuid**.
 
 Bien qu’il soit possible de joindre n’importe quelle table dans un workflow, Adobe recommande de définir des liens communs entre les ressources directement dans la définition de la structure de données.
 
