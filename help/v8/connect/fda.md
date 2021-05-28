@@ -1,27 +1,27 @@
 ---
 solution: Campaign v8
 product: Adobe Campaign
-title: Utiliser les bases de données Campaign et externes (FDA)
-description: Découvrez comment utiliser des bases de données externes et Campaign
-feature: Vue d'ensemble
+title: Utilisation de Campaign et de bases de données externes (FDA)
+description: Découvrez comment utiliser Campaign et des bases de données externes
+feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: 6f50be1e5c03937544e81582c2989b4345bb335d
 workflow-type: tm+mt
 source-wordcount: '1923'
-ht-degree: 70%
+ht-degree: 73%
 
 ---
 
 # Federated Data Access (FDA){#gs-fda}
 
-Utilisez FDA Connector (Federated Data Access) pour connecter Campaign à une ou plusieurs **bases de données externes** et traiter les informations stockées dans ces bases sans affecter les données de votre base de données Campaign Cloud. Vous pouvez ensuite accéder à des données externes sans modifier la structure des données Adobe Campaign.
+Utilisez le connecteur FDA (Federated Data Access) pour connecter Campaign à une ou plusieurs **bases de données externes** et traiter les informations stockées dans celles-ci sans affecter vos données provenant des bases cloud de Campaign. Vous pouvez ensuite accéder à des données externes sans modifier la structure des données Adobe Campaign.
 
 >[!NOTE]
 >
 >Les bases de données compatibles avec FDA sont répertoriées dans la [matrice de compatibilité](../start/compatibility-matrix.md).
 
-L’option Campaign FDA vous permet d’étendre votre modèle de données dans une base de données tierce. Le module détecte automatiquement la structure des tables ciblées et utilise les données provenant des sources SQL.
+L’option FDA de Campaign permet d’étendre votre modèle de données dans une base de données tierce. Le module détecte automatiquement la structure des tables ciblées et utilise les données provenant des sources SQL.
 
 Des **autorisations** spécifiques sont requises sur [!DNL Adobe Campaign] et sur la base de données externe pour interagir ensemble. En savoir plus dans [cette section](#fda-permissions).
 
@@ -203,7 +203,7 @@ L&#39;administrateur de la base de données doit faire correspondre ces droits a
 
 ## Utiliser des données externes dans un workflow
 
-Une fois le schéma de données créé, les données peuvent être traitées dans Adobe Campaign.
+Une fois le schéma de données créé, les données peuvent être traitées dans les workflows Adobe Campaign.
 
 Plusieurs activités permettent d&#39;interagir avec les données d&#39;un base externe :
 
