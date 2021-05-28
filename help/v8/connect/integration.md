@@ -7,10 +7,10 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
+source-git-commit: eaad05675d2f875af2db5f71781afdad3a9ff004
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 80%
+source-wordcount: '342'
+ht-degree: 78%
 
 ---
 
@@ -29,13 +29,10 @@ Modernisez votre implémentation et exploitez toutes les fonctionnalités d’Ad
 Campaign v8 peut se connecter à :
 
 * [Adobe Journey Orchestration](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=fr)
-
 * [Real-Time CDP](../connect/ac-rtcdp.md)
-
-* [Connecteur de données Adobe Analytics](../connect/ac-aa.md)
-
+* [Adobe Analytics      ](../connect/ac-aa.md)
 * [Adobe Experience Manager](../connect/ac-aem.md)
-
+* [Triggers Adobe Experience Cloud](../connect/ac-triggers.md)
 * [Adobe Target](../connect/ac-at.md)
 
 Vous pouvez également combiner vos **audiences** et vos **ressources** sur les différentes solutions Experience Cloud avec les fonctionnalités de partage des ressources et d’audiences.
