@@ -7,7 +7,7 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: 93004d69f33fce39f8f2abb18eec2562177a7adf
+source-git-commit: 15cd7228a4920702cae182c68e7a329345946e31
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 58%
@@ -61,7 +61,7 @@ Un workflow technique spécifique gère la réplication des tables qui doivent �
 
 ### Gestion des identifiants
 
-Les objets Campaign v8 utilisent désormais un **Identifiant universel unique (UUID)**, ce qui permet d’identifier des données à l’aide de valeurs uniques illimitées.
+Les objets Campaign v8 utilisent désormais un **Identifiant universel unique (UUID)**, ce qui permet d’identifier des données à l’aide de valeurs uniques illimitées..
 
 Notez que cet identifiant est basé sur des chaînes et non séquentiel.
 
