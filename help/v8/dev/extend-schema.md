@@ -1,50 +1,50 @@
 ---
 solution: Campaign v8
 product: Adobe Campaign
-title: Extension des schémas Campaign
+title: Extension de schémas Campaign
 description: Découvrez comment étendre les schémas Campaign
 source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
 source-wordcount: '258'
-ht-degree: 2%
+ht-degree: 97%
 
 ---
 
-# Étendre un schéma{#extend-schemas}
+# Extension d’un schéma{#extend-schemas}
 
-En tant qu&#39;utilisateur technique, vous pouvez personnaliser le modèle de données de Campaign pour répondre aux besoins de votre implémentation : ajouter des éléments à un schéma existant, modifier un élément dans un schéma ou supprimer des éléments.
+En tant qu’utilisateur technique, vous pouvez personnaliser le modèle de données Campaign pour répondre aux besoins de votre implémentation. Vous pouvez notamment ajouter des éléments à un schéma existant, modifier un élément dans un schéma ou supprimer des éléments.
 
-Les étapes clés de personnalisation du modèle de données de Campaign sont les suivantes :
+Les étapes clés de personnalisation du modèle de données Campaign sont les suivantes :
 
 1. Création d’un schéma d’extension
 1. Mise à jour de la base de données Campaign
-1. Adapter le formulaire de saisie
+1. Adaptation du formulaire de saisie
 
 >[!CAUTION]
->Le schéma intégré ne doit pas être modifié directement. Si vous devez adapter un schéma intégré, vous devez l’étendre.
+>Le schéma prédéfini ne doit pas être modifié directement. Si vous devez adapter un schéma prédéfini, vous devez l’étendre.
 
-[!DNL :bulb:] Pour une meilleure compréhension des tables natives de Campaign et de leur interaction, consultez  [cette page](datamodel.md).
+[!DNL :bulb:] Pour une meilleure compréhension des tables intégrées de Campaign et de leur interaction, consultez [cette page](datamodel.md).
 
-Pour étendre un schéma, procédez comme suit :
+Pour étendre un schéma, procédez comme suit :
 
 1. Accédez au dossier **[!UICONTROL Administration > Configuration > Schémas de données]** dans l’Explorateur.
-1. Cliquez sur le bouton **New** et sélectionnez **[!UICONTROL Étendre les données d&#39;une table à l&#39;aide d&#39;un schéma d&#39;extension]**.
+1. Cliquez sur le bouton **Nouveau** et sélectionnez **[!UICONTROL Étendre les données d’une table à l’aide d’un schéma d’extension]**.
 
    ![](assets/extend-schema-option.png)
 
-1. Identifiez le schéma intégré à étendre et sélectionnez-le.
+1. Identifiez le schéma prédéfini à étendre et sélectionnez-le.
 
    ![](assets/extend-schema-select.png)
 
-   Par convention, nommez le schéma d’extension de la même manière que le schéma intégré et utilisez un espace de noms personnalisé.  Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces).
+   Par convention, nommez le schéma d’extension de la même manière que le schéma prédéfini et utilisez un espace de noms personnalisé.  Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces).
 
    ![](assets/extend-schema-validate.png)
 
-1. Une fois dans l’éditeur de schéma, ajoutez les éléments dont vous avez besoin à l’aide du menu contextuel, puis enregistrez.
+1. Une fois dans l’éditeur de schémas, ajoutez les éléments dont vous avez besoin à l’aide du menu contextuel, puis enregistrez votre schéma.
 
    ![](assets/extend-schema-edit.png)
 
-   Dans l’exemple ci-dessous, nous ajoutons l’attribut MembershipYear , appliquons une limite de longueur pour le nom (cette limite va remplacer la valeur par défaut) et supprimons la date de naissance du schéma intégré.
+   Dans l’exemple ci-dessous, nous ajoutons l’attribut MembershipYear, fixons une limite de longueur pour le nom (cette limite remplacera la valeur par défaut) et supprimons la date de naissance du schéma prédéfini.
 
    ![](assets/extend-schema-sample.png)
 
@@ -60,10 +60,10 @@ Pour étendre un schéma, procédez comme suit :
    </srcSchema>
    ```
 
-1. Déconnectez-vous de Campaign et reconnectez-vous pour vérifier la mise à jour de la structure du schéma dans l&#39;onglet **[!UICONTROL Structure]** .
+1. Déconnectez-vous et reconnectez-vous à Campaign pour vérifier la mise à jour de la structure du schéma dans l’onglet **[!UICONTROL Structure]**.
 
    ![](assets/extend-schema-structure.png)
 
 1. Mettez à jour la structure de la base de données pour appliquer vos modifications. [En savoir plus](update-database-structure.md)
 
-1. Une fois les modifications implémentées dans la base de données, vous pouvez adapter le formulaire de saisie des destinataires pour rendre vos modifications visibles. [En savoir plus](forms.md)
+1. Une fois les modifications implémentées dans la base de données, vous pouvez adapter le formulaire de saisie du destinataire pour rendre vos modifications visibles. [En savoir plus](forms.md)
