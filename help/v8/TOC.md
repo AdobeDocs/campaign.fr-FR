@@ -3,48 +3,48 @@ solution: Campaign v8
 product: Adobe Campaign
 audience: end-user
 user-guide-title: Campaign v8
-description: Documentation de Campaign v8
+description: Documentation Campaign v8
 breadcrumb-title: Campaign v8
-title: Documentation de Campaign v8
+title: Documentation Campaign v8
 hide: true
 source-git-commit: 6e098ffa538c4348889a35eb454da747c80d6262
 workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 41%
+ht-degree: 86%
 
 ---
 
 
-# Documentation d’Adobe Campaign v8 {#campaign-v8}
+# Documentation Adobe Campaign v8 {#campaign-v8}
 
-+ [Documentation de Campaign v8](campaign-home.md)
++ [Documentation Campaign v8](campaign-home.md)
 + Nouveautés{#start}
    + [Fonctionnalités principales](start/whats-new.md)
    + [Notes de mise à jour](start/release-notes.md)
    + [Limites connues](start/known-limitations.md)
-   + [Classic v7 vers v8](start/capability-matrix.md)
-+ Démarrer {#start}
+   + [De Classic v7 à v8](start/capability-matrix.md)
++ Démarrage {#start}
    + [Prise en main](start/get-started.md)
    + [Profils et audiences](start/audiences.md)
    + [Import de données](start/import.md)
-   + [Créer des campagnes](start/campaigns.md)
+   + [Création de campagnes](start/campaigns.md)
    + [Envoyer les messages](start/create-message.md)
    + [Gestion des abonnements](start/subscriptions.md)
    + [Suivi et surveillance](start/tracking.md)
    + [Mesures et rapports](start/reporting.md)
    + [FAQ](start/campaign-faq.md)
-+ Mise en oeuvre de {#implement}
-   + [Etapes de mise en oeuvre](start/implement.md)
++ Implémentation {#implement}
+   + [Étapes de mise en œuvre](start/implement.md)
    + [Personnalisation de votre instance](dev/customize.md)
-   + [Directives relatives à la sécurité](config/security.md)
-   + [Conception d’applications web et de formulaires](dev/webapps.md)
+   + [Directives de sécurité](config/security.md)
+   + [Conception de formulaires et d’applications web](dev/webapps.md)
    + [Bonnes pratiques relatives aux modèles de données](dev/datamodel-best-practices.md)
-+ Déployer {#deploy}
++ Déploiement {#deploy}
    + [Matrice de compatibilité](start/compatibility-matrix.md)
    + [Connexion à Campaign](start/connect.md)
    + [Autorisations](start/permissions.md)
    + [Panneau de contrôle](config/self-service.md)
-+ Envoyer {#send}
++ Envoi {#send}
    + [Emails ](send/email.md)
    + [SMS](send/sms.md)
    + [Notifications push](send/push.md)
@@ -62,32 +62,32 @@ ht-degree: 41%
       + [Création d’une offre](send/interaction-offer.md)
       + [Envoyer une offre](send/interaction-send-offers.md)
       + [Cas pratiques](send/interaction-use-cases.md)
-+ Configurer {#config}
++ Configuration {#config}
    + [Automatisation à l’aide de workflows](config/workflows.md)
-   + [Gérer les données](config/replication.md)
-   + [Paramètres des emails](config/email-settings.md)
-   + [Paramètres des messages transactionnels](config/transactional-msg-settings.md)
+   + [Gestion des données](config/replication.md)
+   + [Paramètres d’e-mail](config/email-settings.md)
+   + [Paramètres de messagerie transactionnelle](config/transactional-msg-settings.md)
    + [Comptes externes](config/external-accounts.md)
 + Connexion {#connect}
    + [Connexion à d’autres solutions](connect/integration.md)
-   + [Campaign + Analytics](connect/ac-aa.md)
-   + [Campaign + Experience Manager](connect/ac-aem.md)
-   + [Campaign + Target](connect/ac-at.md)
-   + [Campaign + RTCDP](connect/ac-rtcdp.md)
-   + [Campaign + Twitter](connect/ac-tw.md)
-   + [Campaign + base externe](connect/fda.md)
-   + [Campaign + votre CRM](connect/crm.md)
-+ Ressources pour les développeurs {#architecture}
-   + [Principes globaux](dev/general-architecture.md)
+   + [Campaign + Analytics](connect/ac-aa.md)
+   + [Campaign + Experience Manager](connect/ac-aem.md)
+   + [Campaign + Target](connect/ac-at.md)
+   + [Campaign + RTCDP](connect/ac-rtcdp.md)
+   + [Campaign + Twitter](connect/ac-tw.md)
+   + [Campaign + Base de données externe](connect/fda.md)
+   + [Campaign + votre CRM](connect/crm.md)
++ Ressources de développement {#architecture}
+   + [Principes généraux](dev/general-architecture.md)
    + [Architecture](dev/architecture.md)
-   + [Datamodel](dev/datamodel.md)
+   + [Modèle de données](dev/datamodel.md)
    + Schémas et formulaires {#shemas-forms}
       + [Utilisation des schémas](dev/schemas.md)
       + [Création de schémas](dev/create-schema.md)
-      + [Étendre les schémas](dev/extend-schema.md)
+      + [Extension de schémas](dev/extend-schema.md)
       + [Structure d&#39;un schéma](dev/schema-structure.md)
       + [Mapping de la base de données](dev/database-mapping.md)
-      + [Limitation de l’affichage des PII](dev/restrict-pi-view.md)
+      + [Limitation de l’affichage des PI](dev/restrict-pi-view.md)
       + [Utiliser une table de destinataires personnalisée](dev/custom-recipient.md)
       + [mettre à jour la base de données.](dev/update-database-structure.md)
       + [Formulaires de saisie](dev/forms.md)
