@@ -1,12 +1,12 @@
 ---
 solution: Campaign v8
 product: Adobe Campaign
-title: Structure du schéma de campagne
-description: Structure du schéma de campagne
+title: Structure d’un schéma Campaign
+description: Structure d’un schéma Campaign
 source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
 source-wordcount: '1403'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -122,7 +122,7 @@ Les règles à respecter sont les suivantes :
 
 Le type de données est renseigné à partir de l&#39;attribut **type** sur les éléments **`<attribute>`** et **`<element>`**.
 
-Une liste détaillée est disponible dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic).
+Une liste détaillée est disponible dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=fr#configuring-campaign-classic).
 
 Lorsque cet attribut n’est pas renseigné, **string** est le type de données par défaut, sauf si l’élément contient des éléments enfants. Si tel est le cas, il est utilisé uniquement pour structurer les éléments de manière hiérarchique (élément **`<location>`** dans notre exemple).
 
@@ -139,13 +139,13 @@ Les types de données supportés dans un schéma sont les suivants :
 * **datetimenotz** : date + heure sans données de fuseau horaire.
 * **timespan** : durée. Exemple : l&#39;ancienneté.
 * **memo** : champ texte long (multi-lignes). Exemples : une description, un commentaire, etc.
-* **uuid** : Champs &quot;uniqueidentifier&quot;
+* **uuid** : champs « uniqueidentifier »
 
    >[!NOTE]
    >
-   >Pour contenir un champ **uuid**, la fonction &quot;newuuid()&quot; doit être ajoutée et complétée avec sa valeur par défaut.
+   >Pour contenir un champ **uuid**, la fonction « newuuid() » doit être ajoutée et complétée avec sa valeur par défaut.
 
-Notre schéma d&#39;exemple complété avec les types :
+Voici notre schéma d’exemple complété avec les types :
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -327,7 +327,7 @@ Avec la projection du contenu XML :
 <group label="Group2"/>
 ```
 
-## Référence avec XPath {#reference-with-xpath}
+## Référencement avec XPath {#reference-with-xpath}
 
 Le langage XPath est utilisé dans Adobe Campaign pour référencer un élément ou un attribut appartenant à un schéma de données.
 
