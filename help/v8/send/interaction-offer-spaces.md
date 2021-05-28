@@ -3,10 +3,10 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Interaction de campagne Espaces d’offre
 description: Découvrez comment créer des espaces d’offre
-feature: Vue d'ensemble
+feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 583a8f6a03b00e1eafa6d408c9949e60a6f8158d
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 24%
@@ -70,7 +70,7 @@ L&#39;état de la proposition d&#39;offre varie en fonction des interactions ave
 
 >[!NOTE]
 >
->La mise à jour de l’état est un processus asynchrone. Elle est réalisée par le workflow de tracking qui se déclenche toutes les heures.
+>La mise à jour de l’état est un processus **asynchrone**. Elle est réalisée par le workflow de tracking qui se déclenche toutes les heures.
 
 ### Liste des statuts des offres {#status-list}
 
