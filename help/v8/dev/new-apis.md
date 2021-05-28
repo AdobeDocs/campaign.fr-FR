@@ -1,19 +1,19 @@
 ---
 solution: Campaign v8
 product: Adobe Campaign
-title: Nouvelles API de Campaign v8
-description: Nouvelles API de Campaign v8
-feature: Vue d'ensemble
+title: Nouvelles API de Campaign v8
+description: Nouvelles API de Campaign v8
+feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: d872702fe8933a1ef200b690f21efcbd8e5ab3bc
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
-# Nouvelles API Campaign{#gs-new-api}
+# Nouvelles API de Campaign{#gs-new-api}
 
 Campaign v8 contient trois nouvelles API pour gérer les données entre la base de données locale Campaign et la base de données Cloud. Les conditions préalables à leur utilisation sont l’activation du mécanisme d’évaluation sur le schéma. [En savoir plus](staging.md).
 
@@ -216,6 +216,6 @@ La gestion des abonnements dans Campaign est décrite dans [cette page](../start
 L&#39;insertion des données d&#39;inscription et de désinscription repose sur le [mécanisme d&#39;évaluation](staging.md) de la base de données locale de Campaign. Les informations sur les abonnés sont temporaires et stockées dans des tables intermédiaires de la base de données locale. Le workflow de synchronisation envoie ces données de la base locale vers la base de données Cloud. Par conséquent, les processus d’abonnement et de désabonnement sont **asynchrones**. Les demandes d’opt-in et d’opt-out sont traitées toutes les heures par le biais d’un workflow technique spécifique. [En savoir plus](../config/replication.md#tech-wf)
 
 
-**Rubriques connexes :**
+**Rubriques connexes**
 
 * [JSAPI Campaign Classic v7](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html)
