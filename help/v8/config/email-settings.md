@@ -1,21 +1,21 @@
 ---
 solution: Campaign v8
 product: Adobe Campaign
-title: Paramètres du canal email Campaign
-description: Paramètres du canal email Campaign
-feature: Vue d'ensemble
+title: Paramètres du canal e-mail de Campaign
+description: Paramètres du canal e-mail de Campaign
+feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: 3fd91879485a33961769c684acba8ca3c48bbbed
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 58%
+ht-degree: 65%
 
 ---
 
-# Paramètres du canal email Campaign
+# Paramètres du canal e-mail de Campaign
 
-## Email Cci
+## E-mail Cci
 
 Vous pouvez paramétrer Adobe Campaign pour conserver une copie des emails envoyés depuis votre plateforme.
 
@@ -32,9 +32,9 @@ Notez que :
 
 * Seuls les emails envoyés sont pris en compte, les retours ne le sont pas.
 
-[!DNL :speech_balloon:] En tant qu’utilisateur Cloud Services géré,  [contactez ](../start/campaign-faq.md#support) Adobe pour activer la fonctionnalité Email Cci dans Campaign. L&#39;adresse email en Cci de votre choix doit être fournie à l&#39;équipe Adobe qui la configurera pour vous.
+[!DNL :speech_balloon:] En tant qu’utilisateur Cloud Services géré,  [contactez ](../start/campaign-faq.md#support) Adobe pour activer la fonctionnalité Email Cci dans Campaign. L’adresse e-mail en Cci de votre choix doit être fournie à l’équipe Adobe qui la configurera pour vous.
 
-Une fois que la fonctionnalité Email Cci est configurée, assurez-vous qu&#39;elle est activée dans le modèle de diffusion ou dans la diffusion via l&#39;option **Email Cci.**
+Une fois que la fonctionnalité E-mail Cci est configurée, assurez-vous qu’elle est activée dans le modèle de diffusion ou dans la diffusion via l’option **E-mail Cci**.
 
 ![](assets/email-bcc.png)
 
@@ -50,6 +50,6 @@ Une fois que la fonctionnalité Email Cci est configurée, assurez-vous qu&#39;
 
 [!DNL :arrow_upper_right:] [Définition de l’adresse email rebond](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#managing-bounce-emails)
 
-[!DNL :arrow_upper_right:] [Utiliser des modèles de diffusion email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html)
+[!DNL :arrow_upper_right:] [Utiliser des modèles de diffusion email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr)
 
 [!DNL :arrow_upper_right:] [Présentation des diffusions en échec](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html)
