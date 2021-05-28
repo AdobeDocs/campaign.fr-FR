@@ -3,7 +3,7 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Panneau de contrôle Campaign
 description: Panneau de contrôle Campaign
-feature: Vue d'ensemble
+feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 hidefromtoc: true
@@ -11,7 +11,7 @@ hide: true
 source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 69%
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 69%
 
 PAS ENCORE DISPONIBLE
 
-Le Panneau de Contrôle Campaign vous aide à accroître l’efficacité de votre travail en tant qu’administrateur de produit d’Adobe Campaign, en vous permettant de gérer les paramètres et de suivre l’utilisation de chacune de vos instances. Dans son interface intuitive, vous pouvez facilement surveiller l’utilisation des principales ressources ou effectuer certaines tâches administratives telles que l’ajout d’adresses IP à la liste autorisée, la surveillance de l’espace de stockage SFTP, la gestion des clés, etc.
+Le panneau de contrôle Campaign accroît votre efficacité en tant qu’administrateur de produit Adobe Campaign, en vous permettant de gérer les paramètres et de suivre l’utilisation de chacune de vos instances. Dans son interface intuitive, vous pouvez facilement surveiller l’utilisation des principales ressources ou effectuer certaines tâches administratives telles que l’ajout d’adresses IP à la liste autorisée, la surveillance de l’espace de stockage SFTP, la gestion des clés, etc.
 
 Principaux avantages :
 
@@ -27,15 +27,15 @@ Principaux avantages :
 * Configurez les paramètres en fonction de vos besoins métier à différents instants.
 * Renforcez la sécurité en contrôlant les paramètres d’accès au cas par cas.
 
-Vous pouvez également utiliser le Panneau de Contrôle Campaign pour configurer les paramètres de votre instance, tels que les listes autorisées d’adresses IP, les autorisations d’URL et récupérer des informations sur votre instance.
+Vous pouvez également utiliser le panneau de contrôle Campaign pour configurer les paramètres de votre instance, tels que les listes autorisées d’adresses IP, les autorisations d’URL et récupérer des informations sur votre instance.
 
 ## Comment accéder au panneau de contrôle ?
 
-Le panneau de contrôle est directement accessible à partir d’Adobe Experience Cloud. Il est accessible uniquement aux utilisateurs Admin. [Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html) pour plus d’informations.
+Le panneau de contrôle est directement accessible à partir d’Adobe Experience Cloud. Il est accessible uniquement aux utilisateurs Admin. [Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=fr) pour plus d’informations.
 
 ## FAQ sur le panneau de contrôle
 
-[Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html) pour accéder à la FAQ sur le panneau de contrôle Campaign.
+[Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr) pour accéder à la FAQ sur le panneau de contrôle Campaign.
 
 ## Gestion SFTP
 
@@ -44,16 +44,16 @@ Dans le panneau de contrôle, vous pouvez interagir avec tous les serveurs SFTP 
 ## Sous-domaines et certificats
 
 Vous pouvez surveiller vos sous-domaines et leurs certificats. En savoir plus :
-* [Branding des sous-domaines](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html)
-* [Configuration d’un nouveau sous-domaine](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html)
-* [Surveillance des certificats SSL](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html)
+* [Branding des sous-domaines](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=fr)
+* [Configuration d’un nouveau sous-domaine](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=fr)
+* [Surveillance des certificats SSL](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=fr)
 
 ## Paramètres des instances
 
-Découvrez comment gérer vos paramètres d’instances Campaign  dans le panneau de contrôle.
+Découvrez comment gérer vos paramètres d’instances Campaign dans le panneau de contrôle.
 * [Adresses IP sur la liste autorisée](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=fr)
 * [Autorisations d’URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=fr)
-* [Détails de l’instance](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
-* [Gestion des clés GPG](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html)
+* [Détails de l’instance](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=fr)
+* [Gestion des clés GPG](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=fr)
 
 [!DNL :arrow_upper_right:] Découvrez toutes les fonctionnalités de Panneau de Contrôle de  [cette documentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr)
