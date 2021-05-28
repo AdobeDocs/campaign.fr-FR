@@ -16,7 +16,7 @@ Ce projet respecte le [Code de conduite d’Adobe Open Source](code-of-conduct.m
 
 ## À propos de vos contributions au contenu Adobe
 
-Consultez le [Guide des contributeurs aux documents Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Consultez le [Guide des contributeurs aux documents Adobe](https://docs.adobe.com/content/help/fr/contributor/contributor-guide/introduction.html).
 
 Votre contribution dépend de votre rôle et du type de modifications que vous souhaitez apporter :
 
