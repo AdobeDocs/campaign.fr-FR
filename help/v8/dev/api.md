@@ -7,10 +7,10 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 93ab81f60c96a44ca702cfc278b87903a977763c
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 32%
+source-wordcount: '331'
+ht-degree: 18%
 
 ---
 
@@ -21,10 +21,10 @@ ht-degree: 32%
 * dans les scripts - dans les workflows [!DNL Adobe Campaign]
 * via les API, à partir de systèmes externes
 
-Vous pouvez utiliser des API JavaScript pour écrire dans la base de données cloud Campaign ou lire à partir de la base de données :
+Vous pouvez utiliser des API JavaScript pour écrire dans la base de données cloud Campaign ou lire depuis la base de données :
 
-* Les API spécifiques métier qui permettent d’agir sur chaque type d’objet : diffusions, workflows, abonnements, etc. Pour en savoir plus, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=fr).
-* Les API génériques d’accès aux données qui permettent d’interroger les données du modèle de données. Pour en savoir plus, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html?lang=fr).
+* API spécifiques à l’entreprise qui vous permettent d’agir sur chaque objet : diffusions, workflows, abonnements, etc. Pour en savoir plus, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=fr).
+* API génériques d’accès aux données pour interroger les données du modèle de données. Pour en savoir plus, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html?lang=fr).
 
 Campaign v8 fonctionne avec deux bases de données : une base de données locale pour la messagerie en temps réel et les requêtes unitaires de l’interface utilisateur, et une base de données Cloud pour l’exécution de campagnes, le reporting, l’ingestion de données, les requêtes par lots et l’exécution de workflows.
 
@@ -37,7 +37,7 @@ Campaign v8 fonctionne avec deux bases de données : une base de données locale
 
 Avant d’utiliser les API [!DNL Adobe Campaign], vous devez connaître les sujets suivants :
 
-* Javascript
+* JavaScript
 * protocole SOAP
 * [!DNL Adobe Campaign] datamodel
 
@@ -54,10 +54,10 @@ Avec la base de données [!DNL Campaign] cloud, les appels unitaires d’explosi
 
 ## Nouvelles API
 
-De nouvelles API sont disponibles pour gérer la synchronisation des données entre la [!DNL Campaign] base de données locale et la base de données Cloud. Un nouveau mécanisme a également été introduit pour gérer les appels API au niveau de la base de données locale afin d’éviter la latence et d’augmenter les performances globales.
+De nouvelles API sont disponibles pour gérer la synchronisation des données entre la [!DNL Campaign] base de données locale et la base de données Cloud. Un nouveau mécanisme a également été introduit pour gérer les appels API au niveau de la base de données locale afin d’éviter la latence et d’améliorer les performances globales.
 
 [!DNL :bulb:] [Les nouvelles API sont présentées dans cette page](new-apis.md)
 
 **Rubriques connexes**
 
-* [Bonnes pratiques relatives aux modèles de données](datamodel-best-practices.md)
+* [Bonnes pratiques relatives au modèle de données](datamodel-best-practices.md)
