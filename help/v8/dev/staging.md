@@ -1,15 +1,14 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Mécanisme d’évaluation de l’API Campaign
 description: Mécanisme d’évaluation de l’API Campaign
-feature: Vue d'ensemble
+feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -74,4 +73,4 @@ Pour mettre en oeuvre le mécanisme d&#39;évaluation de Campaign sur une table 
 
    ![](assets/staging-mechanism.png)
 
-1. Mettez à jour la structure de la base de données. La table d&#39;évaluation sera créée sur la base de données locale de Campaign.
+1. Mise à jour de la structure de la base de données. La table d&#39;évaluation sera créée sur la base de données locale de Campaign.
