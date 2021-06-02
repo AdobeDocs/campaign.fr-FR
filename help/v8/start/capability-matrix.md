@@ -6,9 +6,9 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
+source-git-commit: 38ea3e82fca6299b067d6843424d4ccb92213d00
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '802'
 ht-degree: 45%
 
 ---
@@ -83,6 +83,7 @@ Notez que certaines fonctionnalités ne sont pas disponibles dans cette premièr
 * Optimisation des campagnes
 * Gestion de la réaction
 * Modèles de déploiement hybrides/On-premise
+* Messagerie LINE
 
 >[!CAUTION]
 >
