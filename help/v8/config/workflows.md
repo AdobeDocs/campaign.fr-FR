@@ -6,10 +6,10 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
 workflow-type: tm+mt
 source-wordcount: '1187'
-ht-degree: 39%
+ht-degree: 36%
 
 ---
 
@@ -36,10 +36,10 @@ Pour en savoir plus sur l’interface utilisateur et l’exécution des workflow
 
 [!DNL :arrow_upper_right:]  [Prise en main des workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=fr#automating-with-workflows)
 * Activités de workflow:
-   * [Activités de ciblage](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html?lang=fr) : requête, lecture de liste, enrichissement, union, etc.
-   * [Activités d’ordonnancement](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/about-flow-control-activities.html?lang=fr) : planificateur, branchement, alerte, signal externe, etc.
-   * [Activités d’action](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html?lang=fr) : diffusions cross-canal, code JavaScript, activités CRM, mise à jour d’agrégat, etc.
-   * [Activités d’événement](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html) : transfert de fichiers, téléchargement web, etc.
+   * [Activités de ciblage](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html?lang=fr) : Requête, Lecture de Liste, Enrichissement, Union, etc.
+   * [Activités](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/about-flow-control-activities.html?lang=fr) de contrôle de flux : Planificateur, branchement, alerte, signal externe, etc.
+   * [Activités d&#39;action](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html?lang=fr) : Diffusions cross-canal, code JavaScript, activités CRM, Mise à jour d’agrégat, etc.
+   * [Activités événementielles](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html) : Transfert de fichiers, téléchargement Web, etc.
       [!DNL :arrow_upper_right:]  [Création d’une audience dans un workflow de campagne marketing](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=fr#building-the-main-target-in-a-workflow)
 
       [!DNL :arrow_upper_right:]  [Bonnes pratiques relatives aux workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/workflow-best-practices.html?lang=fr)
