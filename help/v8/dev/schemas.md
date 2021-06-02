@@ -2,10 +2,10 @@
 product: Adobe Campaign
 title: Utilisation des schémas Campaign
 description: Prise en main des schémas
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
 workflow-type: tm+mt
-source-wordcount: '1253'
-ht-degree: 95%
+source-wordcount: '1254'
+ht-degree: 93%
 
 ---
 
@@ -135,7 +135,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 ## Clés {#keys}
 
-Chaque table doit posséder au moins une clé. Celle-ci est souvent définie automatiquement dans l’élément principal du schéma au moyen de l’attribut **@autouuid=true** avec l’attribut défini sur « true ».
+Chaque table doit posséder au moins une clé. Souvent, elle est automatiquement définie dans l’élément principal du schéma à l’aide des attributs **@autouuid** et **autopk** définis sur **true**.
 
 La clé primaire peut également être définie au moyen de l&#39;attribut **internal**.
 
