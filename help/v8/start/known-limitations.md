@@ -6,9 +6,9 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 hidefromtoc: true
-source-git-commit: 08c1f2fbe79845fe54670e25ac4a63ab65517513
+source-git-commit: 38ea3e82fca6299b067d6843424d4ccb92213d00
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '158'
 ht-degree: 3%
 
 ---
@@ -26,5 +26,4 @@ Pour Adobe Campaign v8, les restrictions suivantes s’appliquent :
 * Certaines fonctionnalités non disponibles ou supprimées sont toujours visibles dans l’interface utilisateur.
 * Les mécanismes d’inscription (opt-in) et de désinscription (opt-out), et l’enregistrement mobile sont des processus asynchrones. Les demandes sont traitées toutes les heures par l’intermédiaire d’un workflow technique spécifique. [En savoir plus](../config/replication.md#tech-wf)
 * Les doublons doivent être gérés manuellement par les utilisateurs finaux. [En savoir plus](../dev/keys.md)
-* LINE - pour confirmer + détails
 * Latence - pour confirmer + détails
