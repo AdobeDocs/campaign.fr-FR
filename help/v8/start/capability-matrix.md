@@ -6,10 +6,10 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 58%
+source-wordcount: '800'
+ht-degree: 45%
 
 ---
 
@@ -62,7 +62,12 @@ Un workflow technique spécifique gère la réplication des tables qui doivent �
 
 Les objets Campaign v8 utilisent désormais un **Identifiant universel unique (UUID)**, ce qui permet d’identifier des données à l’aide de valeurs uniques illimitées..
 
-Notez que cet identifiant est basé sur des chaînes et non séquentiel.
+Notez que cet identifiant est basé sur des chaînes et non séquentiel. La clé Principale n’est pas une valeur numérique dans Campaign v8 et vous devez utiliser les attributs **autouuid** et **autopk** dans vos schémas.
+
+Dans Campaign Classic v7 et les versions antérieures, l&#39;unicité d&#39;une clé dans un schéma (c&#39;est-à-dire un tableau) est gérée au niveau du moteur de base de données. Plus généralement, les moteurs de base de données classiques tels que PostgreSQL, Oracle ou SQL Server incluent un mécanisme natif pour empêcher l’insertion de lignes dupliquées à partir d’une colonne ou d’un ensemble de colonnes via des clés Principales et/ou des index uniques. Les ID en double n’existent pas dans ces versions lorsque l’index correct et les clés Principales sont définis au niveau de la base de données.
+
+Adobe campaign v8 est fourni avec Snowflake comme base de données. Comme cela augmente considérablement l’échelle des requêtes, l’architecture répartie de la base de données du Snowflake ne fournit pas de tels mécanismes de gestion et d’application de l’unicité d’une clé dans une table. Par conséquent, avec Adobe Campaign v8, rien n’empêche l’ingestion de clés dupliquées dans un tableau. Les utilisateurs finaux sont désormais chargés d’assurer la cohérence des clés au sein de la base de données Adobe Campaign. [En savoir plus](../dev/keys.md).
+
 
 ### Maintenance simplifiée
 
