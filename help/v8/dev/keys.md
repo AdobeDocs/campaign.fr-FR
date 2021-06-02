@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: 'Gestion des clés dans Campaign '
 description: Prise en main de la gestion des clés
-source-git-commit: 08c1f2fbe79845fe54670e25ac4a63ab65517513
+source-git-commit: 9a1c44f74f6558f0397617353f3e78186fb15717
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '656'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Adobe campaign v8 est fourni avec Snowflake comme base de données. L’architec
 
 Pour préserver la cohérence de la base de données relationnelle, il est obligatoire d’éviter les doublons sur les clés, et notamment sur les Principales. Les doublons sur des clés Principales entraînent des problèmes avec les activités de workflow de gestion des données telles que **Requête**, **Réconciliation**, **Mise à jour de données**, etc.
 
-Adobe Campaign propose de puissants outils de gestion des données pour réconcilier les données, veiller à insérer ou mettre à jour les données en fonction de leur présence dans la base de données (**Réconciliation**) et supprimer les doublons avant l’ingestion de données (**Déduplication**). Adobe recommande, en règle générale, d’adopter une stratégie [Détecter](#detect-duplicates) et [Corriger](#correct-duplicates) dans le cadre de votre processus de gestion des données global, en cas de chargement de clés dupliquées dans la base de données.
+Adobe recommande, en règle générale, d’adopter une stratégie [Détecter](#detect-duplicates) et [Corriger](#correct-duplicates) dans le cadre de votre processus de gestion des données global, en cas de chargement de clés dupliquées dans la base de données.
 
 ## Détecter les doublons{#detect-duplicates}
 
