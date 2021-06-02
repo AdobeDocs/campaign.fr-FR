@@ -6,10 +6,10 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 41ea85bc3c616ed7cdd0718ff3368aab971a5352
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 69%
+source-wordcount: '601'
+ht-degree: 67%
 
 ---
 
@@ -41,11 +41,11 @@ Une fois votre message créé et son contenu conçu et testé, vous pouvez chois
 
 * Envoyer les messages manuellement à la cible principale
    [!DNL :arrow_upper_right:] [Découvrez comment envoyer des messages](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html?lang=fr)
-* Envoyer des messages associés à une [campagne marketing](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=fr)
+* Envoyer des messages associés à une [campagne marketing](campaigns.md)
    [!DNL :arrow_upper_right:] [Découvrez comment envoyer des messages dans le cadre d’une campagne](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=fr).
-* Envoyer des messages via un [workflow](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=fr)
+* Envoyer des messages via un [workflow](../config/workflows.md)
    [!DNL :arrow_upper_right:] [Découvrez comment automatiser les diffusions email](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html?lang=fr)
-* [Déclencher des ](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html?lang=fr) messages à partir d’un événement
+* [Déclencher des ](../send/transactional.md) messages à partir d’un événement
    [!DNL :arrow_upper_right:] [Cas pratique : découvrez comment envoyer un email transactionnel avec une pièce jointe](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html?lang=fr)
 * Planification de vos messages
    [!DNL :arrow_upper_right:] [Cas pratique : découvrez comment planifier et envoyer un email d’anniversaire](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?lang=fr)
