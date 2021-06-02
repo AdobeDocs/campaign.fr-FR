@@ -1,15 +1,15 @@
 ---
 product: Adobe Campaign
-title: Prise en main de l’automatisation des campagnes
-description: Prise en main de l’automatisation des campagnes
+title: Gestion et automatisation des processus avec les workflows Adobe Campaign
+description: Prise en main des workflows
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
+source-git-commit: 41ea85bc3c616ed7cdd0718ff3368aab971a5352
 workflow-type: tm+mt
-source-wordcount: '1187'
-ht-degree: 36%
+source-wordcount: '1189'
+ht-degree: 35%
 
 ---
 
