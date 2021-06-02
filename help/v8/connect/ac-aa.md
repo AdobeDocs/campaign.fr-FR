@@ -1,15 +1,15 @@
 ---
 product: Adobe Campaign
 title: Utilisation de Campaign et Adobe Analytics
-description: Découvrez comment utiliser Campaign et Adobe Analytics
+description: Découvrez comment intégrer Campaign et Analytics
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 7bb480eb69aa92e8876acaf2322e532dbb2f1f96
 workflow-type: tm+mt
-source-wordcount: '1610'
-ht-degree: 48%
+source-wordcount: '1299'
+ht-degree: 31%
 
 ---
 
@@ -19,22 +19,15 @@ Vous pouvez configurer Adobe Analytics pour intégrer Campaign et Analytics.
 
 Cette intégration permet à Adobe Campaign et Adobe Analytics d’interagir par le biais du module complémentaire **Connecteurs Web Analytics**. Cette intégration envoie les indicateurs et les attributs des campagnes email diffusées par Adobe Campaign à Adobe Analytics.
 
+[!DNL :speech_balloon:] En tant qu’utilisateur Cloud Services géré,  [contactez ](../start/campaign-faq.md#support) Adobe pour connecter Campaign aux services et solutions Adobe Experience Cloud. Adobe Identity Management Service (IMS) doit être mis en oeuvre pour votre instance. [En savoir plus](../start/connect.md#connect-ims). Le module complémentaire connecteur Web Analytics doit être installé sur votre environnement, via le package dédié.
+
 Avec Adobe Analytics Connector, Adobe Campaign permet de mesurer l’audience Internet (Web Analytics). Les outils d’analyse Web permettent à Adobe Campaign de transférer des indicateurs et des attributs de campagne vers Analytics.
 
 Le périmètre d’action de chaque outil est le suivant :
 
-* **Adobe Analytics**
+* **Adobe** Analytics marque les campagnes par e-mail lancées avec Adobe Campaign
 
-   * marque les campagnes e-mail lancées avec Adobe Campaign ;
-   * enregistre, sous forme de segments, le comportement des destinataires sur le site qu’ils ont parcouru après avoir cliqué sur l’e-mail de la campagne. Les segments sont liés aux produits abandonnés (affichés mais non ajoutés au panier ou achetés), aux achats ou aux abandons de panier.
-
-* **Adobe Campaign**
-
-   * envoie les indicateurs et les attributs de la campagne vers le connecteur qui les transfère vers l’outil Web Analytics ;
-   * récupère et analyse les segments ;
-   * déclenche une campagne de remarketing.
-
-[!DNL :speech_balloon:]  En tant qu’utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour intégrer Adobe Analytics Connector à Campaign. Le module complémentaire connecteur Web Analytics doit être installé sur votre environnement, via le package dédié.
+* **Adobe** Campaign envoie les indicateurs et les attributs de campagne au connecteur, qui les transfère à son tour vers l&#39;outil d&#39;analyse Web.
 
 
 >[!CAUTION]
@@ -47,7 +40,7 @@ Pour configurer la connexion Campaign-Analytics, vous devez effectuer les opéra
 1. [Configuration des variables de conversion et des événements de succès](#configure-conversion-success)
 1. [Configuration de votre compte externe dans Adobe Campaign](#external-account-ac)
 
-## Créer votre suite de rapports dans Adobe Analytics {#report-suite-analytics}
+## Créer votre suite de rapports Analytics {#report-suite-analytics}
 
 Pour créer votre **[!UICONTROL suite de rapports]** dans [!DNL Adobe Analytics], procédez comme suit :
 
@@ -122,7 +115,7 @@ Après avoir créé votre **[!UICONTROL suite de rapports]**, vous devez configu
 
 Une fois votre suite de rapports configurée, vous devez configurer les **[!UICONTROL comptes externes]** dans Adobe Campaign.
 
-## Configuration de votre compte externe dans Adobe Campaign {#external-account-ac}
+## Configuration de votre compte externe Campaign {#external-account-ac}
 
 Vous devez maintenant configurer votre compte externe **[!UICONTROL Web Analytics]** dans Adobe Campaign pour activer la synchronisation entre les deux solutions.
 
@@ -192,7 +185,7 @@ Pour plus d’informations à ce sujet, consultez la page [Profils de produit po
 >
 >Si vous utilisez plusieurs outils de mesure d&#39;audience, vous pouvez sélectionner la valeur **[!UICONTROL Autre]** dans la liste déroulante **[!UICONTROL Partenaire]** lors de la création du compte externe. Un seul compte externe peut être référencé dans les propriétés des diffusions : vous devrez donc adapter la formule des URL trackées en ajoutant les paramètres attendus par Adobe ou tout autre outil de mesure utilisé.
 
-## Workflows techniques des processus Web Analytics {#technical-workflows-of-web-analytics-processes}
+## Workflow technique des processus d’analyse web {#technical-workflows-of-web-analytics-processes}
 
 L&#39;échange de données entre Adobe Campaign et Adobe Analytics est géré par un workflow technique qui s&#39;exécute en tant que tâche en arrière-plan.
 
@@ -232,7 +225,7 @@ Les attributs envoyés sont les suivants :
 * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
 * **[!UICONTROL Date de contact]** (scheduling/@contactDate)
 
-## Tracking des diffusions dans Adobe Campaign {#tracking-deliveries-in-adobe-campaign}
+## Suivi des diffusions {#tracking-deliveries-in-adobe-campaign}
 
 Afin qu&#39;Adobe Experience Cloud puisse suivre l&#39;activité sur les sites après l&#39;envoi de diffusions par Adobe Campaign, il est nécessaire de référencer le connecteur correspondant dans les propriétés de la diffusion. Pour cela, procédez comme suit :
 
@@ -246,46 +239,6 @@ Afin qu&#39;Adobe Experience Cloud puisse suivre l&#39;activité sur les sites
    ![](assets/webanalytics_delivery_properties_002.png)
 
 1. Vous pouvez maintenant envoyer votre diffusion et accéder au rapport correspondant dans Adobe Analytics.
-
-## Créer une opération de remarketing {#creating-a-re-marketing-campaign}
-
-Pour préparer votre campagne de remarketing, vous devez créer des modèles de diffusion qui seront ensuite utilisés dans les opérations de type remarketing. Vous devez ensuite paramétrer votre opération de remarketing et lui associer un segment. A chaque segment doit correspondre une opération de remarketing différente.
-
-Les campagnes de remarketing sont automatiquement lancées lorsque Adobe Campaign a récupéré les données analysant le comportement des personnes ciblées par la campagne initiale. En cas d&#39;abandon de panier ou de visualisation de produits sans achat, une diffusion est envoyée aux personnes concernées afin que leur navigation sur le site débouche sur un achat.
-
-Adobe Campaign met à votre disposition des modèles de diffusion personnalisés que vous pouvez utiliser ou dont vous pouvez vous inspirer pour préparer vos campagnes.
-
-1. Dans l’ **[!UICONTROL Explorateur]**, accédez au dossier **[!UICONTROL Ressources]** > **[!UICONTROL Modèles]** > **[!UICONTROL Modèles de diffusion]** de l’arborescence Adobe Campaign.
-
-1. Dupliquez le modèle **[!UICONTROL Diffuser par email (remarketing)]** ou les exemples de modèles de remarketing proposés par Adobe Campaign.
-
-   ![](assets/webanalytics_delivery_model.png)
-
-1. Personnalisez le modèle selon vos besoins, puis enregistrez-le.
-
-1. Créez une opération et sélectionnez le modèle **[!UICONTROL Opération de remarketing]** dans la liste déroulante.
-
-   ![](assets/webanalytics_remarketing_campaign_002.png)
-
-1. Cliquez sur le lien **[!UICONTROL Paramétrer...]** pour indiquer le segment et le modèle de diffusion associé à l&#39;opération.
-
-1. Sélectionnez le compte externe paramétré précédemment.
-
-   ![](assets/webanalytics_remarketing_campaign_003.png)
-
-1. Sélectionnez le segment concerné.
-
-   ![](assets/webanalytics_remarketing_campaign_005.png)
-
-1. Sélectionnez le modèle de diffusion à utiliser pour cette opération de remarketing, puis cliquez sur **[!UICONTROL Terminer]** pour fermer la fenêtre.
-
-   ![](assets/webanalytics_remarketing_campaign_006.png)
-
-1. Cliquez sur **[!UICONTROL OK]** pour fermer la fenêtre de l&#39;opération.
-
-Le rapport **[!UICONTROL Efficacité du remarketing]** est accessible depuis la page des rapports globaux. Il permet de visualiser le nombre de contacts convertis (ayant réalisés un achat) par rapport aux abandons de panier suite à la campagne de remarketing d&#39;Adobe Campaign. Le taux de conversion est calculé sur les 7 ou 30 derniers jours ou depuis le début de la synchronisation entre Adobe Campaign et les outils de Web Analytics.
-
-![](assets/webanalytics_reporting.png)
 
 
 **Rubriques connexes**
