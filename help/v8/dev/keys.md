@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: 'Gestion des clés dans Campaign '
 description: Prise en main de la gestion des clés
-source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
+source-git-commit: 08c1f2fbe79845fe54670e25ac4a63ab65517513
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '689'
 ht-degree: 1%
 
 ---
@@ -15,9 +15,9 @@ Dans Campaign v8, la clé Principale est un UUID (Universally Unique IDentifier)
 
 Adobe campaign v8 est fourni avec Snowflake comme base de données. L’architecture répartie de la base de données du Snowflake ne fournit pas de mécanismes permettant de gérer l’unicité d’une clé dans un tableau : les utilisateurs finaux assurent la cohérence des clés au sein de la base de données Adobe Campaign.
 
-Pour préserver la cohérence de la base de données relationnelle, il est obligatoire d’éviter les doublons sur les clés, et notamment sur les Principales. Les doublons sur des clés Principales entraînent des problèmes avec les activités de workflow de Data Management telles que Requête, Réconciliation, Mise à jour, etc.
+Pour préserver la cohérence de la base de données relationnelle, il est obligatoire d’éviter les doublons sur les clés, et notamment sur les Principales. Les doublons sur des clés Principales entraînent des problèmes avec les activités de workflow de gestion des données telles que **Requête**, **Réconciliation**, **Mise à jour de données**, etc.
 
-Adobe Campaign propose de puissants outils de Data Management pour réconcilier les données, veiller à insérer ou mettre à jour les données en fonction de leur présence dans la base (Réconciliation) et supprimer les doublons avant l&#39;ingestion de données (Déduplication). Adobe recommande, en règle générale, d’adopter une stratégie [Détecter](#detect-duplicates) et [Corriger](#correct-duplicates) dans le cadre de votre processus de gestion des données global, en cas de chargement de clés dupliquées dans la base de données.
+Adobe Campaign propose de puissants outils de gestion des données pour réconcilier les données, veiller à insérer ou mettre à jour les données en fonction de leur présence dans la base de données (**Réconciliation**) et supprimer les doublons avant l’ingestion de données (**Déduplication**). Adobe recommande, en règle générale, d’adopter une stratégie [Détecter](#detect-duplicates) et [Corriger](#correct-duplicates) dans le cadre de votre processus de gestion des données global, en cas de chargement de clés dupliquées dans la base de données.
 
 ## Détecter les doublons{#detect-duplicates}
 
@@ -81,4 +81,4 @@ and urecipientid = 'c04d93f2-6012-4668-b523-88db1262cd46';
 
 ![](assets/sql-data-management.png)
 
-Une fois la ligne sélectionnée mise à jour avec un nouvel UUID, vous pouvez vérifier la ligne mise à jour dans l’interface et constater que l’UUID a été mis à jour comme prévu. Vous pouvez également détecter des doublons dans la base de données en exécutant le workflow &quot;Détecter les doublons&quot; [comme expliqué ici](#detect-duplicates).
+Une fois la ligne sélectionnée mise à jour avec un nouvel UUID, vous pouvez vérifier la ligne mise à jour dans l’interface et constater que l’UUID a été mis à jour comme prévu. Vous pouvez également détecter des doublons dans la base de données en exécutant le workflow **Détecter les doublons** [comme expliqué ici](#detect-duplicates).
