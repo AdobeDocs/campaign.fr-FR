@@ -5,10 +5,10 @@ description: Prise en main des e-mails dans Campaign
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 5762e58aafb11932d0e28d87df84704974c09564
+source-git-commit: dc99c00f68e53a308f8c869f07aa93baed3a5129
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 76%
+source-wordcount: '617'
+ht-degree: 41%
 
 ---
 
@@ -24,71 +24,58 @@ Créez des e-mails personnalisés et pertinents qui sont également conformes au
 
 ![](assets/new-email-content.png)
 
-[!DNL :arrow_upper_right:] [Découvrez comment créer une diffusion email dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case--creating-an-email-delivery.html?lang=fr)
 
+Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;une diffusion email dans Adobe Campaign contenant des données personnalisées, des liens vers une URL externe et un lien vers la page miroir.
 
-Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;une diffusion email dans Adobe Campaign contenant des données personnalisées, des liens vers une URL externe, un lien vers la page miroir et un lien vers un formulaire web.
-
-1. Créer la diffusion
+1. **Créer la diffusion**
 
    Pour créer une nouvelle diffusion, accédez à l&#39;onglet **Campagnes**, cliquez sur **Diffusions** et cliquez sur le bouton **Créer** au-dessus de la liste des diffusions existantes.
 
    ![](assets/delivery_step_1.png)
 
-1. Sélectionner le modèle
+1. **Sélectionner le modèle**
 
    Sélectionnez un modèle de diffusion, puis nommez votre diffusion. Ce nom sera visible uniquement par les utilisateurs de la console Adobe Campaign et non par vos destinataires mais cet intitulé s&#39;affichera dans la liste de vos diffusions. Cliquez sur **[!UICONTROL Continuer]**.
 
    ![](assets/dce_delivery_model.png)
 
-1. Importez votre contenu
+1. **Importez votre contenu**
 
    Cliquez sur l’onglet **Source** pour coller votre contenu HTML.
 
    ![](assets/paste-content.png)
 
 
-1. Personnaliser votre message
+1. **Personnaliser votre message**
 
 
-   * Afficher les nom et prénom de vos destinataires
+   * Ajouter les prénoms et les noms de vos destinataires
 
-      Pour qu&#39;un champ texte de votre diffusion contienne les noms et prénoms de vos destinataires, cliquez sur le champ texte de votre choix, puis positionnez le curseur à l&#39;endroit exact où vous souhaitez les afficher. Cliquez sur la première icône de la barre d&#39;outils contextuelle, puis sur **[!UICONTROL Bloc de personnalisation]**. Sélectionnez **[!UICONTROL Salutations]**, puis cliquez sur **[!UICONTROL OK]**.
+      Pour insérer les prénoms et noms des profils ciblés dans le contenu du message, placez le curseur à l’endroit où vous souhaitez les insérer, cliquez sur la dernière icône de la barre d’outils, puis cliquez sur **[!UICONTROL Inclure]** et sélectionnez **[!UICONTROL Salutations]**.
 
-   * Insérer un lien sur une image
+      ![](assets/include-greetings.png)
 
-      Afin de permettre aux destinataires de vos diffusions de se rendre sur une adresse externe depuis une image, cliquez sur l&#39;image concernée afin d&#39;afficher la barre d&#39;outils contextuelle, positionnez le curseur sur la première icône, puis cliquez sur **[!UICONTROL Lien vers une URL externe]**.
+      Accédez à l&#39;onglet Aperçu pour vérifier la personnalisation en sélectionnant un destinataire.
+
+      ![](assets/perso-check.png)
+
+   * Insérer un lien tracké
+
+      Pour amener les destinataires d&#39;une diffusion vers une adresse externe via une image ou un texte, sélectionnez-la et cliquez sur l&#39;icône **[!UICONTROL Ajouter un lien]** dans la barre d&#39;outils.
 
       Saisissez l&#39;URL pour le lien dans le champ **URL** à l&#39;aide du format suivant **https://www.monURL.com**, puis confirmez.
 
-      L&#39;adresse du lien est modifiable à tout moment dans la partie droite de la fenêtre.
-
-   * Insérer un lien sur du texte
-
-      Afin d&#39;intégrer au texte de votre diffusion un lien vers une URL externe, sélectionnez du texte ou un bloc de texte, puis cliquez sur la première icône de la barre d&#39;outils contextuelle. Cliquez sur **[!UICONTROL Lien vers une URL externe]**, saisissez l’adresse de destination du lien dans le champs **[!UICONTROL URL]**.
-
-      L&#39;adresse du lien est modifiable à tout moment dans la partie droite de la fenêtre.
+      ![](assets/add-a-link.png)
 
    * Ajouter une page miroir
 
-      Pour permettre à vos destinataires d&#39;accéder au contenu de votre diffusion sur un navigateur Web, il vous est possible d&#39;intégrer à votre diffusion un lien vers une page Web miroir.
+      Pour permettre à vos destinataires de visualiser le contenu de votre diffusion dans un navigateur web, ajoutez un lien vers la page miroir de votre message.
 
-      Cliquez sur le champ texte dans lequel vous souhaitez voir figurer le lien vers la page miroir. Cliquez sur la première icône de la barre d&#39;outils contextuelle, sélectionnez **[!UICONTROL Bloc de personnalisation]**, puis **[!UICONTROL Lien vers la page miroir (MirrorPage)]**. Validez en cliquant sur **[!UICONTROL Enregistrer]**.
-
-   * Intégrer un lien vers une application Web
-
-      Le Digital Content Editor vous permet d&#39;intégrer des liens vers les applications Web de votre console Adobe Campaign, telles qu&#39;une landing page ou une page de formulaire.
-
-      Sélectionnez un champ texte dans lequel figurera votre lien vers l&#39;application Web, puis cliquez sur la première icône. Choisissez **[!UICONTROL Lien vers une application Web]**, puis sélectionnez l&#39;application souhaitée en cliquant sur l&#39;icône située à la fin du champ **Application Web**.
-
-1. Envoyer les messages
-
-   Une fois le contenu intégré, enregistrez la diffusion en cliquant sur **Enregistrer**. Elle s’affichera désormais dans votre liste de diffusions, sous l’onglet **[!UICONTROL Campagnes > Diffusions]**.
+      Placez le curseur à l’endroit où vous souhaitez insérer ce lien, cliquez sur la dernière icône de la barre d’outils, puis sur **[!UICONTROL Inclure]** et sélectionnez **[!UICONTROL lien vers la page miroir]**.
+   Une fois le contenu prêt, cliquez sur **Enregistrer** : elle s&#39;affiche désormais dans votre liste de diffusions, sous l&#39;onglet **[!UICONTROL Campagnes > Diffusions]**. Votre première diffusion email est prête. Vous devez maintenant définir l&#39;audience, valider la diffusion et l&#39;envoyer.
 
 
-## Créer du contenu et sélectionner l&#39;audience
-
-Vous pouvez la créer directement dans Campaign ou importer votre audience ainsi que votre contenu e-mail. Suivez les liens ci-dessous pour découvrir comment :
+Pour en savoir plus, consultez ces sections de la documentation de Campaign Classic v7 :
 
 * Concevoir un email dans Campaign
    [!DNL :arrow_upper_right:] [Découvrez comment concevoir un email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html?lang=fr)
