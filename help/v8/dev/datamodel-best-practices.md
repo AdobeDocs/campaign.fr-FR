@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Bonnes pratiques relatives au modèle de données
 description: Découvrez les bonnes pratiques relatives à l’extension des modèles de données de Campaign
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 726e8d3ba00481237af2765e2f339d755f4e6a01
 workflow-type: tm+mt
 source-wordcount: '2686'
 ht-degree: 94%
@@ -66,7 +66,6 @@ Pour optimiser l’architecture et les performances de votre système, appliquez
 ### Choix des champs {#choice-of-fields}
 
 Un champ doit être stocké dans une table s’il est destiné à un ciblage ou une personnalisation. En d’autres termes, si un champ n’est pas utilisé pour envoyer un e-mail personnalisé ou comme critère dans une requête, il occupe de l’espace disque inutilement.
-
 
 ### Choix des clés {#choice-of-keys}
 
