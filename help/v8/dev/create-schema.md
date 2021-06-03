@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Création d’un schéma dans Campaign
 description: Découvrez comment créer un schéma dans Campaign
-source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 90%
@@ -25,7 +25,7 @@ L’onglet **[!UICONTROL Édition]** affiche le contenu XML d’un schéma :
 
 >[!NOTE]
 >
->Le contrôle d’édition « Nom » permet de saisir la clé du schéma, composée du nom et de l’espace de noms. Les attributs « name » et « namespace » de l’élément racine du schéma sont automatiquement mis à jour dans la zone d’édition XML du schéma. Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces).
+>Le contrôle d’édition « Nom » permet de saisir la clé du schéma, composée du nom et de l’espace de noms. Les attributs « name » et « namespace » de l’élément racine du schéma sont automatiquement mis à jour dans la zone d’édition XML du schéma. Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces)
 
 L’onglet **[!UICONTROL Aperçu]** génère automatiquement le schéma étendu :
 
