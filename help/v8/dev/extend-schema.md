@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Extension de schémas Campaign
 description: Découvrez comment étendre les schémas Campaign
-source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 81%
@@ -35,7 +35,7 @@ Pour étendre un schéma, procédez comme suit :
 
    ![](assets/extend-schema-select.png)
 
-   Par convention, nommez le schéma d’extension de la même manière que le schéma prédéfini et utilisez un espace de noms personnalisé.  Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces).
+   Par convention, nommez le schéma d’extension de la même manière que le schéma prédéfini et utilisez un espace de noms personnalisé.  Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces)
 
    ![](assets/extend-schema-validate.png)
 
