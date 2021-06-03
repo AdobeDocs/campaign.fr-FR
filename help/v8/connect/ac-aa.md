@@ -6,7 +6,7 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 7bb480eb69aa92e8876acaf2322e532dbb2f1f96
+source-git-commit: a7309c9ec735f958f038c6ea4e702c99c726f8bd
 workflow-type: tm+mt
 source-wordcount: '1299'
 ht-degree: 31%
@@ -135,10 +135,13 @@ Pour plus d’informations à ce sujet, consultez la page [Profils de produit po
 
 1. Dans la fenêtre **[!UICONTROL Configurer l’intégration Analytics]** , associez votre compte externe à la suite de rapports créée précédemment en fournissant les informations suivantes :
 
+   ![](assets/analytics_connector_0.png)
+
    * **[!UICONTROL Email]**
    * **[!UICONTROL Org. IMS]**
    * **[!UICONTROL Société Analytics]**
    * **[!UICONTROL Suite de rapports]**
+
 
 1. Dans la catégorie **[!UICONTROL eVars]** , mappez les deux **[!UICONTROL variables de conversion]** configurées dans [!DNL Adobe Analytics].
 
