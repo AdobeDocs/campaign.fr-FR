@@ -5,7 +5,7 @@ description: Créer des opérateurs Gestion des offres
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 37%
@@ -31,7 +31,7 @@ Par défaut, Campaign est livré avec un environnement **[!UICONTROL Conception]
 
 ![](assets/offer_environments_overview_002.png)
 
-Les gestionnaires de diffusion peuvent uniquement afficher l’environnement **[!UICONTROL En ligne]** et exploiter les offres pour les diffuser. Les gestionnaires d’offres peuvent afficher et utiliser l’environnement **[!UICONTROL Conception]**, ainsi que l’environnement **[!UICONTROL Live]**. [En savoir plus](interaction-operators.md).
+Les gestionnaires de diffusion peuvent uniquement afficher l’environnement **[!UICONTROL En ligne]** et exploiter les offres pour les diffuser. Les gestionnaires d’offres peuvent afficher et utiliser l’environnement **[!UICONTROL Conception]**, ainsi que l’environnement **[!UICONTROL Live]**. [En savoir plus](interaction-operators.md)
 
 ## Créer un environnement d&#39;offres {#creating-an-offer-environment}
 
