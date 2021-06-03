@@ -6,10 +6,10 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 973e04eb25887f63564b416515c6e229ed5233a4
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 83%
+source-wordcount: '626'
+ht-degree: 74%
 
 ---
 
@@ -68,17 +68,17 @@ Dans cette architecture spécifique, la cellule d’exécution est séparée de 
 
 ![](assets/messagecenter_diagram.png)
 
-[!DNL :arrow_upper_right:] L&#39;architecture de Message Center est décrite dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/transactional-messaging-architecture.html?lang=fr#transactional-messaging)
+[!DNL :arrow_upper_right:] L&#39;architecture de Message Center est décrite dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture.html)
 
 ### Authentification
 
 Pour utiliser ces fonctionnalités, les utilisateurs d’Adobe Campaign se connectent à l’instance de pilotage afin de créer les modèles de messages transactionnels, générer la prévisualisation du message grâce à une adresse de contrôle, afficher des rapports et suivre les instances d’exécution.
 
 * Instance d’exécution unique
-Lors de l’interaction avec une instance d’exécution Message Center hébergée par Adobe, un système externe peut d’abord récupérer un jeton de session (qui expire par défaut dans les 24 heures), en effectuant un appel API à la méthode de connexion à la session, et ce, à l’aide d’un nom d’utilisateur et d’un mot de passe fournis pour le compte.
+Lors de l’interaction avec une instance d’exécution Message Center hébergée par un Adobe, un système externe peut d’abord récupérer un jeton de session (qui, par défaut, expire dans 24 heures), en effectuant un appel d’api vers la méthode de connexion de session, à l’aide d’un identifiant de compte et d’un mot de passe fournis.
 Ensuite, avec le jeton de session fourni par l’instance d’exécution en réponse à l’appel ci-dessus, l’application externe peut lancer des appels API SOAP (rtEvents ou batchEvents) pour envoyer des communications, et ce, sans qu’il y ait besoin d’inclure le nom d’utilisateur et le mot de passe du compte dans chaque appel SOAP.
 
 * Instances d’exécution multiples
 Dans une architecture d’exécution multi-cellules avec des instances d’exécution multiples derrière une répartition de charge, la méthode de connexion invoquée par l’application externe passe par la répartition de charge. Pour cette raison, une authentification par jeton ne peut pas être utilisée. Une authentification par utilisateur/mot de passe est requise.
 
-[!DNL :arrow_upper_right:] En savoir plus sur les événements de messages transactionnels dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel)
+[!DNL :arrow_upper_right:] En savoir plus sur les événements de messages transactionnels dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html#about-transactional-messaging-datamodel)
