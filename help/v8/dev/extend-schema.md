@@ -2,10 +2,10 @@
 product: Adobe Campaign
 title: Extension de schémas Campaign
 description: Découvrez comment étendre les schémas Campaign
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 97%
+source-wordcount: '269'
+ht-degree: 81%
 
 ---
 
@@ -22,7 +22,7 @@ Les étapes clés de personnalisation du modèle de données Campaign sont les s
 >[!CAUTION]
 >Le schéma prédéfini ne doit pas être modifié directement. Si vous devez adapter un schéma prédéfini, vous devez l’étendre.
 
-[!DNL :bulb:] Pour une meilleure compréhension des tables intégrées de Campaign et de leur interaction, consultez [cette page](datamodel.md).
+[!DNL :bulb:] Pour une meilleure compréhension des tables intégrées de Campaign et de leur interaction, consultez [cette page](datamodel.md). Voir également les recommandations lors de la création d’un nouveau schéma dans [cette page](create-schema.md).
 
 Pour étendre un schéma, procédez comme suit :
 
@@ -43,7 +43,7 @@ Pour étendre un schéma, procédez comme suit :
 
    ![](assets/extend-schema-edit.png)
 
-   Dans l’exemple ci-dessous, nous ajoutons l’attribut MembershipYear, fixons une limite de longueur pour le nom (cette limite remplacera la valeur par défaut) et supprimons la date de naissance du schéma prédéfini.
+   Dans l’exemple ci-dessous, nous ajoutons l’attribut **MembershipYear** , nous mettons une limite de longueur pour le nom (cette limite remplace la valeur par défaut) et nous supprimons la date de naissance du schéma intégré.
 
    ![](assets/extend-schema-sample.png)
 
