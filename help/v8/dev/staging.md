@@ -5,7 +5,7 @@ description: Mécanisme d’évaluation de l’API Campaign
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 4%
@@ -20,7 +20,7 @@ La fonctionnalité d’évaluation des campagnes est activée par défaut sur ce
 
 * La structure du schéma de données est dupliquée dans la table d’évaluation locale.
 * Les nouvelles API dédiées à l’ingestion de données se déplacent directement dans la table d’évaluation locale. [En savoir plus](new-apis.md)
-* Un workflow planifié se déclenche toutes les heures et resynchronise les données vers la base de données cloud. [En savoir plus](../config/replication.md).
+* Un workflow planifié se déclenche toutes les heures et resynchronise les données vers la base de données cloud. [En savoir plus](../config/replication.md)
 
 Certains schémas intégrés sont mis en scène par défaut, tels que nmsSubscriptionRcp, nmsAppSubscriptionRcp, nmsRecipient.
 
