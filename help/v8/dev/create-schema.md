@@ -2,10 +2,10 @@
 product: Adobe Campaign
 title: Création d’un schéma dans Campaign
 description: Découvrez comment créer un schéma dans Campaign
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 98%
+source-wordcount: '433'
+ht-degree: 90%
 
 ---
 
@@ -15,7 +15,7 @@ Pour modifier, créer et paramétrer les schémas, cliquez sur le nœud **[!UICO
 
 >[!NOTE]
 >
->Les schémas de données prédéfinis peuvent uniquement être supprimés par un administrateur de votre console Adobe Campaign Classic.
+>Les schémas de données prédéfinis peuvent uniquement être supprimés par un administrateur de votre console Adobe Campaign 
 
 ![](assets/schema_navtree.png)
 
@@ -60,7 +60,9 @@ Pour cela, vous devez créer le schéma de la table puis procéder à la mise à
 
    ![](assets/create_new_content.png)
 
-1. Définissez les paramètres de la table des contrats :
+1. Définissez les paramètres de la table des contrats.
+
+   Il est recommandé de créer le tableau dans la base de données Cloud en ajoutant l’attribut `dataSource="nms:extAccount:ffda"` . Cet attribut est ajouté par défaut lors de la création d&#39;un tableau.
 
    ```
    <srcSchema created="YYYY-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png"
