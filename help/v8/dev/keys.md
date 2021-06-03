@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: 'Gestion des clés dans Campaign '
 description: Prise en main de la gestion des clés
-source-git-commit: 9a1c44f74f6558f0397617353f3e78186fb15717
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '676'
 ht-degree: 1%
 
 ---
@@ -22,6 +22,10 @@ Adobe recommande, en règle générale, d’adopter une stratégie [Détecter](#
 ## Détecter les doublons{#detect-duplicates}
 
 Campaign est fourni avec une nouvelle barrière de sécurité qui supprime automatiquement tout UUID dupliqué d’une audience lors de la préparation de la diffusion. Ce nouveau mécanisme empêche toute erreur lors de la préparation d&#39;une diffusion.
+
+>[!CAUTION]
+>
+>Les clés dupliquées ne sont pas limitées aux UUID. Cela peut se produire avec les identifiants, y compris les clés personnalisées créées dans les tables personnalisées.
 
 En tant qu&#39;utilisateur final, vous pouvez vérifier ces informations dans les logs de diffusion : certains destinataires peuvent être exclus de la cible principale en raison de la clé dupliquée. Dans ce cas, l&#39;avertissement suivant s&#39;affiche : `Exclusion of duplicates (based on the primary key or targeted records)`.
 
