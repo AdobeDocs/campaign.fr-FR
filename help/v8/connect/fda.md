@@ -5,7 +5,7 @@ description: Découvrez comment utiliser Campaign et des bases de données exter
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '1923'
 ht-degree: 73%
@@ -54,7 +54,7 @@ Des **autorisations** spécifiques sont requises sur [!DNL Adobe Campaign] et su
 Pour configurer l’accès à une base de données externe avec FDA, les étapes de configuration sont les suivantes :
 
 1. En tant qu’utilisateur d’Adobe Managed Services, contactez l’Adobe pour installer les pilotes sur votre instance Campaign.
-1. Une fois les pilotes installés, configurez le compte externe correspondant à votre base de données sur le serveur Adobe Campaign et testez le compte externe. [En savoir plus](#fda-external-account).
+1. Une fois les pilotes installés, configurez le compte externe correspondant à votre base de données sur le serveur Adobe Campaign et testez le compte externe. [En savoir plus](#fda-external-account)
 1. Créez le schéma de la base de données externe dans Adobe Campaign. Il est ainsi possible d’identifier la structure des données de la base de données externe. [En savoir plus](#create-data-schema)
 1. Si nécessaire, créez un mapping de ciblage à partir du schéma créé précédemment. Ceci est nécessaire si les destinataires de vos diffusions proviennent de la base de données externe. Cette implémentation s’accompagne de limitations liées à la personnalisation des messages. [En savoir plus](#define-data-mapping)
 
