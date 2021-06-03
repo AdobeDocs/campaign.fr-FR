@@ -6,7 +6,7 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 0e99b836dc035c0076f6771b5b430dfd1bd8edaf
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 88%
@@ -78,7 +78,7 @@ Vous pouvez combiner les fonctionnalités de diffusion et de gestion de campagne
 
 ## En savoir plus sur les fonctionnalités de Campaign {#core-capabilities-and-add-ons}
 
-Adobe Campaign vous propose un ensemble de fonctionnalités qui vous permettent d’implémenter et optimiser les fonctionnalités de marketing conversationnel selon vos besoins et votre architecture. Certaines de ces fonctionnalités sont intégrées. D’autres dépendent de l’installation d’un package au sein de votre configuration. Une description détaillée du produit est disponible ici : [Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-classic---product-description.html).
+Adobe Campaign vous propose un ensemble de fonctionnalités qui vous permettent d’implémenter et optimiser les fonctionnalités de marketing conversationnel selon vos besoins et votre architecture. Certaines de ces fonctionnalités sont intégrées. D’autres dépendent de l’installation d’un package au sein de votre configuration. Une description détaillée du produit est disponible ici : [Description du produit Adobe Campaign v8](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html).
 
 [!DNL :bulb:] Vous connaissez déjà Campaign Classic ? Découvrez les principales différences entre Campaign Classic et Campaign v8 sur [cette page](capability-matrix.md).
 
