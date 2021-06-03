@@ -5,7 +5,7 @@ description: Nouvelles API de Campaign v8
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 7%
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 # Nouvelles API de Campaign{#gs-new-api}
 
-Campaign v8 est fourni avec deux nouvelles API pour gérer les données entre la base de données locale Campaign et la base de données Cloud. Les conditions préalables à leur utilisation sont l’activation du mécanisme d’évaluation sur le schéma. [En savoir plus](staging.md).
+Campaign v8 est fourni avec deux nouvelles API pour gérer les données entre la base de données locale Campaign et la base de données Cloud. Les conditions préalables à leur utilisation sont l’activation du mécanisme d’évaluation sur le schéma. [En savoir plus](staging.md)
 
 * API d’ingestion : **xtk.session.ingest**
 
