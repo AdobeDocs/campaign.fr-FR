@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: Bonnes pratiques relatives au modèle de données
 description: Découvrez les bonnes pratiques relatives à l’extension des modèles de données de Campaign
-source-git-commit: 726e8d3ba00481237af2765e2f339d755f4e6a01
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2688'
 ht-degree: 94%
 
 ---
@@ -93,7 +93,7 @@ Le tableau ci-après décrit ces identifiants et leur finalité.
 | Nom (ou nom interne) | <ul><li>Cette information est l’identifiant unique d’un enregistrement dans une table. Cette valeur peut être mise à jour manuellement, généralement avec un nom généré.</li><li>Cet identifiant conserve sa valeur lorsqu’il est déployé dans une autre instance d’Adobe Campaign et ne doit pas être vide.</li></ul> | <ul><li>Changez le nom d’enregistrement généré par Adobe Campaign si l’objet est destiné à être déployé d’un environnement à un autre.</li><li>Si un objet possède un attribut d’espace de noms (par exemple, *schema*), cet espace de noms commun sera appliqué à tous les objets personnalisés créés. Certains espaces de noms réservés ne doivent pas être utilisés : *nms*, *xtk*, etc.  Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces).</li><li>Lorsqu’un objet n’a pas d’espace de noms (*workflow* ou *delivery*, par exemple), cette notion d’espace de noms est ajoutée sous la forme d’un préfixe d’un objet de nom interne : *namespaceMyObjectName*.</li><li>N’utilisez pas de caractères spéciaux tels que l’espace « », le point-virgule « ; » ou le tiret « - ». Tous ces caractères seront remplacés par un trait de soulignement « _ » (caractère autorisé). Par exemple, « abc-def » et « abc:def » seront stockés sous la forme de « abc_def » et s’écraseront mutuellement.</li></ul> |
 | Libellé | <ul><li>Le libellé est l’identifiant d’entreprise d’un objet ou d’un enregistrement dans Adobe Campaign.</li><li>Cet objet autorise les espaces et les caractères spéciaux.</li><li>Il ne garantit pas le caractère unique d&#39;un enregistrement.</li></ul> | <ul><li>Il est recommandé de déterminer une structure pour les libellés de vos objets.</li><li>Il s’agit de la solution la plus conviviale pour identifier un enregistrement ou un objet pour un utilisateur d’Adobe Campaign.</li></ul> |
 
-La clé primaire d’Adobe Campaign est un UUID généré automatiquement pour toutes les tables intégrées. Un UUID peut également être utilisé pour les tables personnalisées.
+La clé primaire d’Adobe Campaign est un UUID généré automatiquement pour toutes les tables intégrées. Un UUID peut également être utilisé pour les tables personnalisées. [En savoir plus](keys.md)
 
 Même si le nombre d’identifiants est illimité, vous devez prendre en charge la taille de votre base de données pour garantir des performances optimales. Pour éviter tout problème, veillez à ajuster les paramètres de purge de votre instance. Pour plus d’informations à ce sujet, consultez [cette section](#data-retention).
 
