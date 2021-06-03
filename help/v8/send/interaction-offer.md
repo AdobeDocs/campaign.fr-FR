@@ -5,7 +5,7 @@ description: Découvrez comment créer une offre
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 60%
@@ -50,7 +50,7 @@ Pour cela, cliquez sur le lien **[!UICONTROL Editer la requête]** et sélection
 
 ![](assets/offer_eligibility_create_003.png)
 
-Si des filtres prédéfinis ont déjà été créés, vous pouvez les sélectionner dans la liste des filtres utilisateur. [En savoir plus](interaction-predefined-filters.md).
+Si des filtres prédéfinis ont déjà été créés, vous pouvez les sélectionner dans la liste des filtres utilisateur. [En savoir plus](interaction-predefined-filters.md)
 
 ![](assets/offer_eligibility_create_004.png)
 
@@ -64,7 +64,7 @@ Par exemple, une offre peut avoir un poids A pour les contacts âgés de 18 à 2
 
 >[!NOTE]
 >
->Le poids affecté peut être temporairement modifié en fonction des paramètres de la catégorie de l&#39;offre. [En savoir plus](interaction-offer-catalog.md#creating-offer-categories).
+>Le poids affecté peut être temporairement modifié en fonction des paramètres de la catégorie de l&#39;offre. [En savoir plus](interaction-offer-catalog.md#creating-offer-categories)
 
 Pour créer un poids dans une offre, procédez comme suit :
 
@@ -140,7 +140,7 @@ Utilisez l&#39;onglet **[!UICONTROL Contenu]** pour définir le contenu de l&#39
 
    ![](assets/offer_content_create_002.png)
 
-   Pour retrouver les champs requis tels qu&#39;ils ont été définis lors du paramétrage des emplacements, cliquez sur le lien **[!UICONTROL Définitions du contenu]** pour afficher la liste. [En savoir plus](interaction-offer-spaces.md).
+   Pour retrouver les champs requis tels qu&#39;ils ont été définis lors du paramétrage des emplacements, cliquez sur le lien **[!UICONTROL Définitions du contenu]** pour afficher la liste. [En savoir plus](interaction-offer-spaces.md)
 
    ![](assets/offer_content_create_003.png)
 
