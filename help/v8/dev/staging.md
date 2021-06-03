@@ -5,21 +5,21 @@ description: Mécanisme d’évaluation de l’API Campaign
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '312'
 ht-degree: 4%
 
 ---
 
 # Mécanisme d’évaluation de l’API Campaign
 
-Avec la base de données Campaign Cloud, les appels unitaires d’explosion ne sont pas recommandés en raison des performances (latence et simultanéité). L’opération de lot est toujours préférable. Afin de garantir des performances optimales des API, Campaign gère toujours les appels API au niveau de la base de données locale.
+Avec la base de données Campaign Cloud, il n&#39;est pas recommandé de dynamiser les appels unitaires en ce qui concerne les performances (latence et simultanéité). L’opération de traitement par lot est toujours préférable. Afin d’améliorer les performances, les API d’ingestion sont redirigées vers la base de données locale.
 
-Le mécanisme d&#39;évaluation de Campaign est disponible pour les tables intégrées et personnalisées. Il offre les avantages suivants :
+La fonctionnalité d’évaluation des campagnes est activée par défaut sur certains schémas intégrés. Nous pouvons également l’activer sur n’importe quel schéma personnalisé. Mécanisme d’évaluation en bref :
 
-* La structure du schéma de données est répliquée dans la table d’évaluation locale.
-* Les nouvelles API pour l’ingestion se déplacent directement dans la table d’évaluation. [En savoir plus](new-apis.md)
+* La structure du schéma de données est dupliquée dans la table d’évaluation locale.
+* Les nouvelles API dédiées à l’ingestion de données se déplacent directement dans la table d’évaluation locale. [En savoir plus](new-apis.md)
 * Un workflow planifié se déclenche toutes les heures et resynchronise les données vers la base de données cloud. [En savoir plus](../config/replication.md).
 
 Certains schémas intégrés sont mis en scène par défaut, tels que nmsSubscriptionRcp, nmsAppSubscriptionRcp, nmsRecipient.
@@ -28,7 +28,13 @@ Les API de Campaign Classic v7 sont toujours disponibles, mais ne peuvent pas b�
 
 >[!CAUTION]
 >
->Grâce à ce nouveau mécanisme, la synchronisation des données pour les abonnements, les désabonnements ou l’enregistrement mobile est désormais **asynchrone**.
+>* Grâce à ce nouveau mécanisme, la synchronisation des données pour l’exclusion des canaux, les abonnements, les désabonnements ou l’enregistrement mobile est désormais **asynchrone**.
+   >
+   >
+* L’évaluation s’applique uniquement aux schémas stockés dans la base de données cloud. N’activez pas l’évaluation sur les schémas répliqués. N’activez pas l’évaluation sur les schémas locaux. Ne pas activer l’évaluation sur un schéma intermédiaire
+
+>
+
 
 
 ## Étapes de mise en œuvre{#implement-staging}
