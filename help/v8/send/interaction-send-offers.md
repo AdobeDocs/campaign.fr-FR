@@ -5,7 +5,7 @@ description: Découvrez comment créer un catalogue d’offres
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '1351'
 ht-degree: 74%
@@ -40,11 +40,11 @@ Pour insérer des propositions d&#39;offres dans une diffusion, procédez comme 
 
    ![](assets/offer_delivery_005.png)
 
-1. Sélectionnez l&#39;option **[!UICONTROL Exclure les destinataires non éligibles]**, si nécessaire. [En savoir plus](#parameters-for-calling-offer-engine).
+1. Sélectionnez l&#39;option **[!UICONTROL Exclure les destinataires non éligibles]**, si nécessaire. [En savoir plus](#parameters-for-calling-offer-engine)
 
    ![](assets/offer_delivery_006.png)
 
-1. Si nécessaire, sélectionnez l’option **[!UICONTROL Ne rien afficher si aucune offre n’est sélectionnée]** . [En savoir plus](#parameters-for-calling-offer-engine).
+1. Si nécessaire, sélectionnez l’option **[!UICONTROL Ne rien afficher si aucune offre n’est sélectionnée]** . [En savoir plus](#parameters-for-calling-offer-engine)
 
    ![](assets/offer_delivery_007.png)
 
@@ -110,7 +110,7 @@ Après avoir configuré votre activité **Requête** :
 
       ![](assets/int_enrichment_offer4.png)
 
-1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix. [En savoir plus](#offer-into-a-delivery).
+1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix. [En savoir plus](#offer-into-a-delivery)
 
    >[!NOTE]
    >
@@ -132,7 +132,7 @@ Pour ce faire, procédez comme suit :
 
    ![](assets/int_enrichment_link2.png)
 
-1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix. [En savoir plus](#offer-into-a-delivery).
+1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix. [En savoir plus](#offer-into-a-delivery)
 
    >[!NOTE]
    >
@@ -148,7 +148,7 @@ Par défaut, lorsqu&#39;une activité **Enrichissement** est utilisée pour diff
 
 Cependant, il est possible de stocker ces informations de la manière suivante :
 
-1. Créez un appel au moteur d’offre dans une activité d’enrichissement placée après une requête et avant une activité de diffusion. [En savoir plus](#specifying-an-offer-or-a-call-to-the-offer-engine).
+1. Créez un appel au moteur d’offre dans une activité d’enrichissement placée après une requête et avant une activité de diffusion. [En savoir plus](#specifying-an-offer-or-a-call-to-the-offer-engine)
 1. Dans la fenêtre principale de l&#39;activité, sélectionnez **[!UICONTROL Editer les données additionnelles]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
@@ -182,7 +182,7 @@ Après avoir configuré votre activité **Requête** :
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix. [En savoir plus](#inserting-an-offer-proposition-into-a-delivery).
+1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix. [En savoir plus](#inserting-an-offer-proposition-into-a-delivery)
 
 ### Offres par cellule {#offers-by-cell}
 
