@@ -5,10 +5,10 @@ description: Prise en main de la Gestion des offres
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '1226'
-ht-degree: 15%
+ht-degree: 13%
 
 ---
 
@@ -28,19 +28,19 @@ Les étapes clés pour commencer sont répertoriées ci-dessous.
 
 Avant de commencer, en tant qu&#39;administrateur de Campaign ****, assurez-vous d&#39;avoir effectué les tâches suivantes dans les environnements de conception :
 
-1. Création de profils utilisateur. [En savoir plus](interaction-operators.md).
+1. Création de profils utilisateur. [En savoir plus](interaction-operators.md)
 1. (Facultatif) Créez un environnement d&#39;offres pour chaque dimension de ciblage. [En savoir plus](interaction-env.md)
-1. Créez des règles de typologie pour chaque environnement. [En savoir plus](interaction-offer.md#offer-presentation).
-1. Créez des emplacements d&#39;offre pour chaque environnement et configurez les fonctions de rendu. [En savoir plus](interaction-offer-spaces.md).
-Si l&#39;emplacement est défini sur un canal unitaire en mode identifié, il est nécessaire de spécifier les paramètres avancés de l&#39;emplacement.
+1. Créez des règles de typologie pour chaque environnement. [En savoir plus](interaction-offer.md#offer-presentation)
+1. Créez des emplacements d&#39;offre pour chaque environnement et configurez les fonctions de rendu. [En savoir ](interaction-offer-spaces.md)
+plusSi l&#39;espace est défini par un canal unitaire en mode identifié, vous devez spécifier les paramètres avancés de cet espace.
 
 ### Créer et publier le catalogue d&#39;offres {#managing-the-offer-catalog-}
 
 En tant que **Chargé d&#39;offres** vous devez effectuer les tâches suivantes :
 
-1. Créez des catégories d’offres dans les environnements de conception. [En savoir plus](interaction-offer-catalog.md#creating-offer-categories).
-1. Créez des offres dans des environnements de conception. [En savoir plus](interaction-offer.md).
-1. Validez et publiez des offres sur un ou plusieurs emplacements afin de les rendre disponibles dans les environnements en ligne pour le chargé de diffusion. [En savoir plus](interaction-offer.md#approve-offers).
+1. Créez des catégories d’offres dans les environnements de conception. [En savoir plus](interaction-offer-catalog.md#creating-offer-categories)
+1. Créez des offres dans des environnements de conception. [En savoir plus](interaction-offer.md)
+1. Validez et publiez des offres sur un ou plusieurs emplacements afin de les rendre disponibles dans les environnements en ligne pour le chargé de diffusion. [En savoir plus](interaction-offer.md#approve-offers)
 
 ### Tirez parti du catalogue d&#39;offres {#using-the-offer-catalog-}
 
