@@ -5,10 +5,10 @@ description: Prise en main de la messagerie transactionnelle
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 41ea85bc3c616ed7cdd0718ff3368aab971a5352
+source-git-commit: 726e8d3ba00481237af2765e2f339d755f4e6a01
 workflow-type: tm+mt
-source-wordcount: '1545'
-ht-degree: 95%
+source-wordcount: '1540'
+ht-degree: 94%
 
 ---
 
@@ -219,8 +219,8 @@ Lorsqu’un modèle de message a été publié sur les instances d’exécution,
 
 Pour dépublier un modèle de message transactionnel, procédez comme décrit ci-dessous.
 
-1. Dans l’instance de pilotage, positionnez-vous au niveau du dossier **[!UICONTROL Message Center > Modèle de messages transactionnels]** dans l’arborescence.
-1. Sélectionnez le modèle que vous souhaitez dépublier.
+1. Sur l’instance de pilotage, accédez au dossier **[!UICONTROL Message Center > Modèles de messages transactionnels]** .
+1. Sélectionnez le modèle dont vous souhaitez annuler la publication.
 1. Cliquez sur **[!UICONTROL Dépublier]**.
 1. Cliquez sur **[!UICONTROL Démarrer]**.
 
