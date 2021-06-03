@@ -5,10 +5,10 @@ description: Prise en main de la messagerie transactionnelle
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 726e8d3ba00481237af2765e2f339d755f4e6a01
+source-git-commit: 973e04eb25887f63564b416515c6e229ed5233a4
 workflow-type: tm+mt
 source-wordcount: '1540'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -36,7 +36,7 @@ Les messages transactionnels sont utilisés pour envoyer :
 
 Chaque événement peut déclencher un message personnalisé. Pour ce faire, vous devez créer un modèle de message correspondant à chaque type d’événement. Les modèles contiennent les informations nécessaires à la personnalisation du message transactionnel. Vous pouvez également utiliser des modèles pour tester la prévisualisation des messages et envoyer des BAT à l’aide d’adresses de contrôle avant de les diffuser à la cible finale.
 
-## Création du modèle
+### Création du modèle
 
 Pour créer un modèle de message, procédez comme suit :
 
@@ -54,7 +54,7 @@ Pour créer un modèle de message, procédez comme suit :
 
    ![](assets/messagecenter_create_model_003.png)
 
-   Les types d’événement destinés à être traités par Adobe Campaign doivent être créés dans l’instance de pilotage par Adobe.
+   Les types d&#39;événements destinés à être traités par Adobe Campaign doivent être créés par Adobe sur l&#39;instance de pilotage.
 
    >[!NOTE]
    >
@@ -62,7 +62,7 @@ Pour créer un modèle de message, procédez comme suit :
 
 1. Renseignez la nature et la description selon vos besoins, puis cliquez sur **[!UICONTROL Continuer]** pour créer le corps du message. Voir [Création du contenu du message](#create-message-content).
 
-## Création du contenu{#create-message-content}
+### Création du contenu{#create-message-content}
 
 La définition du contenu du message transactionnel est la même que pour toutes les diffusions dans Adobe Campaign. Par exemple, pour une diffusion e-mail, vous pouvez créer du contenu au format HTML ou texte, ajouter des pièces jointes ou personnaliser l’objet de diffusion. Pour plus d’informations à ce sujet, consultez [cette section](../start/create-message.md).
 
@@ -92,7 +92,7 @@ Pour insérer des balises de personnalisation dans le corps d&#39;un message ema
 
    ![](assets/messagecenter_create_custo_2.png)
 
-## Ajout d’adresses de contrôle{#add-seeds}
+### Ajout d’adresses de contrôle{#add-seeds}
 
 Une adresse de contrôle vous permet d’afficher une prévisualisation de votre message, d’envoyer un BAT et de tester la personnalisation du message avant l’envoi. Les adresses de contrôle sont liées à la diffusion et ne peuvent pas être utilisées pour d’autres diffusions.
 
@@ -118,7 +118,7 @@ Une adresse de contrôle vous permet d’afficher une prévisualisation de votre
 
 Une fois les adresses créées, vous pouvez accéder à la prévisualisation et à la personnalisation.
 
-## Ajout de données de personnalisation{#personalization-data}
+### Ajout de données de personnalisation{#personalization-data}
 
 Vous pouvez ajouter des données dans le modèle de message afin de tester la personnalisation du message transactionnel. Vous pouvez ainsi générer une prévisualisation ou envoyer un BAT. Si vous installez le module **Délivrabilité**, ces données vous permettent d’afficher un rendu des messages pour divers clients de bureau, web ou mobiles.
 
@@ -133,7 +133,7 @@ Ces informations vous permettent de personnaliser le contenu des messages à l�
 
    ![](assets/messagecenter_create_custo_3.png)
 
-## Prévisualisation de votre message transactionnel{#transactional-message-preview}
+### Prévisualiser votre message transactionnel{#transactional-message-preview}
 
 Lorsque vous avez créé une ou plusieurs adresses de contrôle, ainsi que le corps du message, vous pouvez afficher l&#39;aperçu de votre message et vérifier la personnalisation de ce dernier.
 
@@ -145,7 +145,7 @@ Lorsque vous avez créé une ou plusieurs adresses de contrôle, ainsi que le co
 
    ![](assets/messagecenter_create_seed_7.png)
 
-## Envoi d’un BAT
+### Envoi d’un BAT
 
 Vous pouvez tester la diffusion du message en envoyant un BAT vers une adresse de contrôle créée précédemment.
 
