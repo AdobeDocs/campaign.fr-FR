@@ -6,10 +6,10 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 1f3af0a9ea29506296710024791511ceafddc824
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 65%
+source-wordcount: '640'
+ht-degree: 66%
 
 ---
 
@@ -77,7 +77,7 @@ Besoin d’aide lorsque vous utilisez Campaign ? Lisez les principales questions
 
 1. **Puis-je contacter des experts de Campaign ?**
 
-   Rejoignez la communauté Campaign et recherchez des réponses parmi les questions existantes ou consultez les experts. [Prenez part à la conversation](https://experienceleaguecommunities.adobe.com/?profile.language=en)
+   Rejoignez la communauté Campaign et recherchez des réponses parmi les questions existantes ou consultez les experts. [Prenez part à la conversation](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
 
 
 1. **Comment consigner un problème ?**
