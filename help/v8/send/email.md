@@ -5,10 +5,10 @@ description: Prise en main des e-mails dans Campaign
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: dc99c00f68e53a308f8c869f07aa93baed3a5129
+source-git-commit: e65750c4e9ebd0367f0430455cac2cc6502ade7e
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 41%
+source-wordcount: '618'
+ht-degree: 38%
 
 ---
 
@@ -107,7 +107,7 @@ Vous pouvez ainsi :
 
 ## Surveillance de vos e-mails
 
-Une fois les messages envoyés, vérifiez l’état de votre diffusion dans le tableau de bord des diffusions et accédez aux logs de diffusion et aux rapports pour confirmer que vos messages ont été correctement envoyés.
+Une fois l&#39;envoi effectué, vérifiez le statut de la diffusion dans le tableau de bord de la diffusion et accédez aux logs et aux rapports de diffusion pour confirmer l&#39;envoi correct des messages.
 
 [!DNL :arrow_upper_right:] [En savoir plus dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=fr)
 
