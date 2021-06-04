@@ -5,7 +5,7 @@ description: Découvrez comment gérer les abonnements et les désabonnements da
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: f69d318b4ea767c44f8c19bf0cf45fb1b7001b11
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 37%
@@ -21,6 +21,8 @@ Utilisez Adobe Campaign pour créer et surveiller vos services d’information, 
 Pour abonner (opt-in) un profil à un service, les options disponibles sont les suivantes :
 
 * Ajoutez manuellement le service au profil du destinataire : pour cela, dans l&#39;onglet **[!UICONTROL Abonnements]** de leur profil, cliquez sur **[!UICONTROL Ajouter]** et sélectionnez le service d&#39;information visé.
+
+   ![](assets/subscribe-to-a-service.png)
 
    [!DNL :arrow_upper_right:] En savoir plus dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab)
 
