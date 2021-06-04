@@ -6,10 +6,10 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 03585f0c1514a80b0b0cba5a2d05fa3f44398405
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 86%
+source-wordcount: '819'
+ht-degree: 83%
 
 ---
 
@@ -117,6 +117,16 @@ Adobe Campaign peut être configuré pour permettre à l’utilisateur d’accé
 Certaines parties de l&#39;application sont accessibles via un simple navigateur web, à l&#39;aide d&#39;une interface utilisateur HTML : tableau de bord Campaign, création de rapports sur les cubes, surveillance des instances, etc.
 
 [!DNL :arrow_upper_right:] En savoir plus sur l&#39;accès web dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#console-and-web-access)
+
+L&#39;accès Web fournit une interface similaire à celle de la console, mais avec un ensemble réduit de fonctionnalités.
+
+Par exemple, pour un opérateur donné, une campagne s&#39;affiche avec les options suivantes dans la console :
+
+![](assets/campaign-from-console.png)
+
+Tandis que, dans le contexte d&#39;un accès Web, les options seront principalement consultatives :
+
+![](assets/campaign-from-web.png)
 
 L’accès Web est également utilisé pour le processus de validation : les opérateurs peuvent cliquer sur l&#39;email de demande de validation et se connecter à Campaign via leur navigateur web pour valider ou refuser le contenu ou le budget d&#39;une diffusion.
 
