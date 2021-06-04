@@ -6,7 +6,7 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: a7309c9ec735f958f038c6ea4e702c99c726f8bd
+source-git-commit: 36e29801bcc95565c32e51742a23d4d74d4e3049
 workflow-type: tm+mt
 source-wordcount: '1299'
 ht-degree: 31%
@@ -135,8 +135,6 @@ Pour plus d’informations à ce sujet, consultez la page [Profils de produit po
 
 1. Dans la fenêtre **[!UICONTROL Configurer l’intégration Analytics]** , associez votre compte externe à la suite de rapports créée précédemment en fournissant les informations suivantes :
 
-   ![](assets/analytics_connector_0.png)
-
    * **[!UICONTROL Email]**
    * **[!UICONTROL Org. IMS]**
    * **[!UICONTROL Société Analytics]**
@@ -160,6 +158,8 @@ Pour plus d’informations à ce sujet, consultez la page [Profils de produit po
    ![](assets/analytics_connnector_12.png)
 
 1. Si nécessaire, vous pouvez ajouter ou supprimer des segments de l’onglet **[!UICONTROL Mettre à jour les segments]** .
+
+   ![](assets/analytics_connnector_12a.png)
 
 1. Dans votre **[!UICONTROL Compte externe]**, cliquez sur **[!UICONTROL Enrichir la formule...]** lien permettant de modifier la formule de calcul des URL afin de spécifier les informations d&#39;intégration de l&#39;outil d&#39;analyse web (identifiants de campagne) et les domaines des sites dont l&#39;activité doit faire l&#39;objet d&#39;un tracking.
 
