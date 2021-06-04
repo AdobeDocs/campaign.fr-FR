@@ -6,7 +6,7 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 032bee3b58948b558efe50796efa789a046ff5e4
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 85%
@@ -22,6 +22,8 @@ Les campagnes comprennent des actions (diffusions) et des processus (import ou e
 ## Orchestration de campagnes cross-canal
 
 Adobe Campaign vous permet de concevoir et d’orchestrer des campagnes ciblées et personnalisées sur plusieurs canaux tels que l’e-mail, le courrier, les SMS, les notifications push, etc. Vous bénéficiez dans une seule interface de toutes les fonctions nécessaires pour planifier, orchestrer, configurer, personnaliser, automatiser, exécuter et mesurer l’ensemble des campagnes et communications.
+
+![](assets/campaign-tab.png)
 
 ### Concepts de base
 
@@ -42,6 +44,8 @@ Avant de démarrer l’implémentation de campagnes marketing, il vous faut conn
 ## Espace de travail de campagne marketing
 
 Avec Adobe Campaign, vous pouvez créer, configurer, exécuter et analyser toutes les campagnes marketing à partir d’un centre de contrôle unifié.
+
+![](assets/calendar.png)
 
 [!DNL :arrow_upper_right:] Découvrez comment accéder à des campagnes marketing et les mettre en oeuvre dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=fr#orchestrating-campaigns)
 
