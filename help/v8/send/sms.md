@@ -5,9 +5,9 @@ description: Prise en main des SMS dans Campaign
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: e65750c4e9ebd0367f0430455cac2cc6502ade7e
+source-git-commit: 04f9d80e26fab372a1819590f8e79298c7a69ab5
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '590'
 ht-degree: 41%
 
 ---
@@ -30,7 +30,7 @@ Pour diffuser vers un téléphone mobile, vous devez avoir :
 
 * un modèle de diffusion dans lequel est référencé ce compte externe.
 
-!DNL : flèche_supérieur_droite :] Découvrez comment configurer un canal SMS dans la [documentation du Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=fr#sending-messages)
+[!DNL :arrow_upper_right:]  Découvrez comment configurer un canal SMS dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=fr#sending-messages)
 
 Avant d’envoyer des SMS :
 
