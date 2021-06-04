@@ -6,10 +6,10 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 36e29801bcc95565c32e51742a23d4d74d4e3049
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 61%
+ht-degree: 52%
 
 ---
 
@@ -44,7 +44,7 @@ Campaign v8 apporte une échelle de bout en bout à n’importe quelle étape du
 
 ## Simplification et amélioration des performances
 
-Campaign v8 présente le concept de **Full Federated Data Access** (FDA) : toutes les données sont désormais distantes sur la base de données cloud.
+Campaign v8 apporte le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud.
 
 Avec cette nouvelle architecture, Campaign v8 simplifie la gestion des données : aucun index n’est requis sur la base de données cloud. Il vous suffit de créer les tables et de copier les données pour démarrer.
 
@@ -54,7 +54,7 @@ La technologie de base de données cloud ne nécessite pas de maintenance spéci
 
 ## Écosystème intégré
 
-Vous pouvez intégrer Campaign à un ensemble de solutions Adobe puissantes, telles que : Adobe Analytics, Workfront, Journey Orchestration, Real-Time CDP, etc.
+Vous pouvez intégrer Campaign à un ensemble de solutions d&#39;Adobe puissantes, telles que : Adobe Analytics, Adobe Journey Orchestration, la plateforme de données clients en temps réel, etc.
 
 Vous pouvez également configurer l’optimisation de l’heure d’envoi prédictive ainsi que le score d’engagement prédictif grâce à l’IA dédiée au parcours. Cela permet d’augmenter les taux d’ouverture, les clics et les revenus.
 
