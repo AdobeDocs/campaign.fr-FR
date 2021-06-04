@@ -6,10 +6,10 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 41ea85bc3c616ed7cdd0718ff3368aab971a5352
+source-git-commit: 9ecd0af7a6e8e173a89106c84a78de8b2311fef7
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 67%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -40,14 +40,26 @@ Adobe Campaign v8 propose les canaux de diffusion suivants :
 Une fois votre message créé et son contenu conçu et testé, vous pouvez choisir la façon dont vous souhaitez l’envoyer. Campaign offre un ensemble de fonctionnalités pour :
 
 * Envoyer les messages manuellement à la cible principale
+
+   ![](assets/send-email.png)
+
    [!DNL :arrow_upper_right:] [Découvrez comment envoyer des messages](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html?lang=fr)
 * Envoyer des messages associés à une [campagne marketing](campaigns.md)
+
+   ![](assets/deliveries-in-a-campaign.png)
+
    [!DNL :arrow_upper_right:] [Découvrez comment envoyer des messages dans le cadre d’une campagne](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=fr).
 * Envoyer des messages via un [workflow](../config/workflows.md)
+
+   ![](assets/send-in-a-wf.png)
+
    [!DNL :arrow_upper_right:] [Découvrez comment automatiser les diffusions email](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html?lang=fr)
 * [Déclencher des ](../send/transactional.md) messages à partir d’un événement
    [!DNL :arrow_upper_right:] [Cas pratique : découvrez comment envoyer un email transactionnel avec une pièce jointe](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html?lang=fr)
 * Planification de vos messages
+
+   ![](assets/schedule-send.png)
+
    [!DNL :arrow_upper_right:] [Cas pratique : découvrez comment planifier et envoyer un email d’anniversaire](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?lang=fr)
 
 
