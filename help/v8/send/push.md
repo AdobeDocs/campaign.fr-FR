@@ -5,10 +5,10 @@ description: Prise en main des notifications push dans Campaign
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: c6f1cfdec3d05a81f8885cc73b370723024f858f
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 72%
+source-wordcount: '649'
+ht-degree: 53%
 
 ---
 
@@ -49,9 +49,78 @@ Vous devez définir les paramètres de vos applications iOS et Android dans Adob
 
 ## Création de votre première notification push
 
-[!DNL :arrow_upper_right:] Découvrez comment créer vos premières notifications push dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=fr#sending-notifications-on-ios)
+Cette section présente les éléments spécifiques à la diffusion de notifications iOS et Android.
 
+[!DNL :arrow_upper_right:] Toutes les étapes de création de notifications push sont détaillées dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=fr#sending-notifications-on-ios)
 
 >[!CAUTION]
 >
->Avec l’enregistrement mobile de Campaign v8, il est désormais **asynchrone**. [En savoir plus](../dev/staging.md)
+>Avec Campaign v8, l’enregistrement mobile est désormais **asynchrone**. [En savoir plus](../dev/staging.md)
+
+Pour créer une nouvelle diffusion, accédez à l&#39;onglet **[!UICONTROL Campagnes]**, cliquez sur **[!UICONTROL Diffusions]** et cliquez sur le bouton **[!UICONTROL Créer]** au-dessus de la liste des diffusions existantes.
+
+![](assets/delivery_step_1.png)
+
+### Envoi de notifications sur iOS {#sending-notifications-on-ios}
+
+1. Sélectionnez le modèle de diffusion **[!UICONTROL Diffuser sur iOS]** et cliquez sur **[!UICONTROL Continuer]**.
+
+   ![](assets/push-template-ios.png)
+
+1. Pour définir la cible de la notification, cliquez sur le lien **[!UICONTROL Pour]**, puis sur **[!UICONTROL Ajouter]**.
+
+   ![](assets/push-ios-select-target.png)
+
+1. Sélectionnez **[!UICONTROL Abonnés d’une application mobile iOS (iPhone, iPad)]**, sélectionnez le service correspondant à votre application mobile, puis sélectionnez la version iOS de l’application.
+
+   ![](assets/push-ios-subscribers.png)
+
+1. Sélectionnez le type de notification : **[!UICONTROL Alerte]**, **[!UICONTROL Badge]**, **[!UICONTROL Alerte et badge]** ou **[!UICONTROL Push silencieux]**.
+
+   ![](assets/push-ios-alert.png)
+
+1. Dans le champ **[!UICONTROL Titre]**, saisissez le libellé du titre que vous souhaitez afficher sur la notification.
+
+1. Saisissez le **[!UICONTROL Message]** et la **[!UICONTROL Valeur du badge]** en fonction du type de notification choisi.
+
+1. Le **[!UICONTROL bouton Action]** permet de définir le libellé du bouton d’action apparaissant dans les notifications d’alerte (champ **action_loc_key** de la payload).
+
+1. Dans le champ **[!UICONTROL Jouer un son]**, sélectionnez le son que doit émettre le terminal mobile à la réception de la notification.
+
+1. Dans le champ **[!UICONTROL Variables de l&#39;application]** , saisissez la valeur de chaque variable. Vous pouvez par exemple paramétrer un écran d&#39;application spécifique qui s&#39;affichera lorsque l&#39;utilisateur activera la notification.
+
+1. Une fois la notification renseignée, cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** pour afficher la prévisualisation de la notification.
+
+   ![](assets/push-ios-preview.png)
+
+### Envoi de notifications sur Android {#sending-notifications-on-android}
+
+1. Sélectionnez le modèle de diffusion **[!UICONTROL Diffuser sur Android (android)]** .
+
+   ![](assets/push-template-android.png)
+
+1. Pour définir la cible de la notification, cliquez sur le lien **[!UICONTROL Pour]**, puis sur **[!UICONTROL Ajouter]**.
+
+   ![](assets/nmac_delivery_android_2.png)
+
+1. Sélectionnez **[!UICONTROL Abonnés d&#39;une application mobile Android]**, choisissez le service correspondant à votre application mobile (Neotrips, dans notre exemple), puis sélectionnez la version Android de l&#39;application.
+
+   ![](assets/push-android-select-target.png)
+
+1. Saisissez ensuite le contenu de la notification.
+
+   ![](assets/push-android-content.png)
+
+1. Cliquez sur l’icône **[!UICONTROL Insérer une émoticône]** pour insérer des émoticônes dans votre notification push.
+
+1. Dans le champ **[!UICONTROL Variables de l&#39;application]** , saisissez la valeur de chaque variable. Vous pouvez par exemple paramétrer un écran d&#39;application spécifique qui s&#39;affichera lorsque l&#39;utilisateur activera la notification.
+
+1. Une fois la notification renseignée, cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** pour afficher la prévisualisation de la notification.
+
+   ![](assets/push-android-preview.png)
+
+## Tester, envoyer et surveiller vos notifications push
+
+L&#39;envoi du BAT et l&#39;envoi final de la notification s&#39;effectuent de la même manière que pour une diffusion par e-mail.
+
+Après l&#39;envoi des messages, vous pouvez suivre et suivre vos diffusions.
