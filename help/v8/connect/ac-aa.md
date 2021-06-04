@@ -6,9 +6,9 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 36e29801bcc95565c32e51742a23d4d74d4e3049
+source-git-commit: 6a22bdd563bb0be26df12ce8d2b6da266d16f2e3
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1298'
 ht-degree: 31%
 
 ---
@@ -157,9 +157,9 @@ Pour plus d’informations à ce sujet, consultez la page [Profils de produit po
 
    ![](assets/analytics_connnector_12.png)
 
-1. Si nécessaire, vous pouvez ajouter ou supprimer des segments de l’onglet **[!UICONTROL Mettre à jour les segments]** .
-
-   ![](assets/analytics_connnector_12a.png)
+   >[!NOTE]
+   >
+   > Vous ne pouvez pas ajouter ni supprimer de segments dans cette version de Campaign v8.
 
 1. Dans votre **[!UICONTROL Compte externe]**, cliquez sur **[!UICONTROL Enrichir la formule...]** lien permettant de modifier la formule de calcul des URL afin de spécifier les informations d&#39;intégration de l&#39;outil d&#39;analyse web (identifiants de campagne) et les domaines des sites dont l&#39;activité doit faire l&#39;objet d&#39;un tracking.
 
