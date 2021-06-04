@@ -6,10 +6,10 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 973e04eb25887f63564b416515c6e229ed5233a4
+source-git-commit: e6086620909277eaaf5966335df9b71c6830e726
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 74%
+source-wordcount: '608'
+ht-degree: 76%
 
 ---
 
@@ -67,8 +67,6 @@ Dans cette architecture spécifique, la cellule d’exécution est séparée de 
 >L’instance de pilotage et la ou les instance(s) d’exécution doivent être installées sur des machines différentes. Elles ne peuvent pas partager la même instance Campaign.
 
 ![](assets/messagecenter_diagram.png)
-
-[!DNL :arrow_upper_right:] L&#39;architecture de Message Center est décrite dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture.html)
 
 ### Authentification
 
