@@ -6,10 +6,10 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
-source-git-commit: 46f013dc18e504d490084a6d911b4772ce0fac2e
+source-git-commit: 983b3cfc2f1569cd071848805e6b6b3411b4d6c6
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 27%
+ht-degree: 15%
 
 ---
 
@@ -48,7 +48,7 @@ Adobe Campaign fournit un ensemble d’outils de reporting répertoriés dans ce
 * **Cubes**
 
    
-Analysez et mesurez les données, calculez les statistiques, simplifiez et optimisez la création et le calcul de rapports avec les cubes.  Vous pouvez ainsi étendre les capacités d’exploration et d’analyse des données de la base, tout en simplifiant le paramétrage des rapports et des tableaux pour les utilisateurs finaux. Ceux-ci n’ont alors plus qu’à sélectionner un cube existant, entièrement paramétré, lors de la création de leur rapport ou tableau pour en exploiter les calculs, mesures et statistiques.
+Analysez et mesurez les données, calculez les statistiques, simplifiez et optimisez la création et le calcul de rapports avec les cubes.  Vous pouvez étendre les capacités d&#39;exploration et d&#39;analyse des bases de données et faciliter la configuration des rapports et tableaux par les utilisateurs finaux. Il leur suffit de sélectionner un cube existant (entièrement paramétré) lors de la création de leur rapport ou tableau pour exploiter calculs, mesures et statistiques.
 
    ![](assets/create-a-report.png)
 
