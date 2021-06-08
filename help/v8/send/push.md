@@ -5,10 +5,10 @@ description: Prise en main des notifications push dans Campaign
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 09979331284757527fc9a24479a53d2d488f4649
+source-git-commit: f75b2ddc073d05548740cb3e9371063cf0d83ca5
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 43%
+ht-degree: 44%
 
 ---
 
@@ -51,7 +51,7 @@ Vous devez définir les paramètres de vos applications iOS et Android dans Adob
 
 Cette section présente les éléments spécifiques à la diffusion de notifications iOS et Android.
 
-[!DNL :arrow_upper_right:] Toutes les étapes de création de notifications push sont détaillées dans la documentation de  [Campaign Classic v7](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en)
+[!DNL :arrow_upper_right:] Toutes les étapes de création de notifications push sont détaillées dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=fr)
 
 >[!CAUTION]
 >
@@ -125,7 +125,7 @@ Pour créer une nouvelle diffusion, accédez à l&#39;onglet **[!UICONTROL Campa
 
    <!--![](assets/push-android-preview.png)-->
 
-[!DNL :arrow_upper_right:] Toutes les étapes détaillées pour créer et envoyer des notifications push sur Android sont présentées dans la documentation de  [Campaign Classic v7](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-android)
+[!DNL :arrow_upper_right:] Toutes les étapes détaillées pour créer et envoyer des notifications push sur Android sont présentées dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-android)
 
 ## Tester, envoyer et surveiller vos notifications push
 
@@ -135,12 +135,12 @@ L&#39;envoi du BAT et l&#39;envoi final de la notification s&#39;effectuent de l
    [!DNL :arrow_upper_right:] [Découvrez les étapes clés de validation d&#39;une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr)
 
 * Confirmer et envoyer la diffusion
-   [!DNL :arrow_upper_right:] [Découvrez les étapes clés pour envoyer une diffusion](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en)
+   [!DNL :arrow_upper_right:] [Découvrez les étapes clés pour envoyer une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en)
 
 Après l&#39;envoi des messages, vous pouvez suivre et suivre vos diffusions. En savoir plus dans la documentation de Campaign Classic v7 :
 
 * Quarantaines des notifications push
-   [!DNL :arrow_upper_right:] [En savoir plus sur les quarantaines des notifications push](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#push-notification-quarantines)
+   [!DNL :arrow_upper_right:] [En savoir plus sur les quarantaines des notifications push](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#push-notification-quarantines)
 
 * Résolution des problèmes
-   [!DNL :arrow_upper_right:] [Découvrez comment résoudre les problèmes liés aux notifications push](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=en)
+   [!DNL :arrow_upper_right:] [Découvrez comment résoudre les problèmes liés aux notifications push](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=en)
