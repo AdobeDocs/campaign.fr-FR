@@ -5,10 +5,10 @@ description: Paramètres de messagerie transactionnelle Campaign
 feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 9cb1b38456601bce21d458fea42a5c112d9fafb4
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 93%
+source-wordcount: '327'
+ht-degree: 90%
 
 ---
 
@@ -28,7 +28,7 @@ Pour créer des utilisateurs pour les instances d’exécution Message Center h�
 
 Les extensions de schéma effectuées sur les schémas utilisés par les **workflows techniques de Message Center** sur les instances de pilotage ou d’exécution doivent être dupliquées sur les autres instances utilisées par le module des messages transactionnels d’Adobe Campaign.
 
-[!DNL :arrow_upper_right:] En savoir plus sur les workflows techniques de Message Center dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/instance-configuration/technical-workflows.html?lang=fr#control-instance-workflows)
+[!DNL :arrow_upper_right:] En savoir plus sur les workflows techniques de Message Center dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/additional-configurations.html#technical-workflows)
 
 ## Envoi de notifications push transactionnelles
 
