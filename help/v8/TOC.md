@@ -5,10 +5,10 @@ user-guide-title: Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Campaign v8
 title: Documentation Campaign v8
-source-git-commit: 35814053bff993d0b130bf598c8601c3f5adc407
+source-git-commit: d45913ac1da7dc3a447fd27294256522b399f1d0
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 82%
+source-wordcount: '204'
+ht-degree: 81%
 
 ---
 
@@ -65,6 +65,7 @@ ht-degree: 82%
    + [Gestion des données](config/replication.md)
    + [Paramètres d’e-mail](config/email-settings.md)
    + [Paramètres de messagerie transactionnelle](config/transactional-msg-settings.md)
+   + [Paramètres de l’application mobile](config/push-config.md)
    + [Comptes externes](config/external-accounts.md)
 + Connexion {#connect}
    + [Connexion à d’autres solutions](connect/integration.md)
