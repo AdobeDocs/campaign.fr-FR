@@ -6,10 +6,10 @@ feature: Vue d’ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 9ecd0af7a6e8e173a89106c84a78de8b2311fef7
+source-git-commit: 9cb1b38456601bce21d458fea42a5c112d9fafb4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '600'
+ht-degree: 64%
 
 ---
 
@@ -55,7 +55,7 @@ Une fois votre message créé et son contenu conçu et testé, vous pouvez chois
 
    [!DNL :arrow_upper_right:] [Découvrez comment automatiser les diffusions email](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html?lang=fr)
 * [Déclencher des ](../send/transactional.md) messages à partir d’un événement
-   [!DNL :arrow_upper_right:] [Cas pratique : découvrez comment envoyer un email transactionnel avec une pièce jointe](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html?lang=fr)
+   [!DNL :arrow_upper_right:] [Cas pratique : découvrez comment envoyer un email transactionnel avec une pièce jointe](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=en)
 * Planification de vos messages
 
    ![](assets/schedule-send.png)
@@ -84,7 +84,7 @@ La messagerie transactionnelle (Message Center) est le module de Campaign conçu
 
 [!DNL :bulb:] Les étapes de configuration et d&#39;envoi de messages transactionnels sont présentées dans  [cette page](../send/transactional.md)
 
-[!DNL :arrow_upper_right:] Découvrez cette fonctionnalité dans un cas pratique de bout en bout de la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html?lang=fr#transactional-messaging)
+[!DNL :arrow_upper_right:] Découvrez cette fonctionnalité dans un cas pratique de bout en bout de la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=en)
 
 ## Logs de tracking et de diffusion
 
