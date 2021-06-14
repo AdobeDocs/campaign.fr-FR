@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 673d2d3ace355a9552ecf54a3cab0104943e6a99
+source-git-commit: 619edce939b39430832fd950ece734f817f9dce3
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1287'
 ht-degree: 42%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 42%
 
 Utilisez les SDK Campaign pour iOS et Android pour faciliter l’intégration de votre application mobile dans la plateforme Adobe Campaign.
 
-Les versions prises en charge pour Android et iOS, ainsi que les versions compatibles avec les SDK Campaign pour Campaign v8, sont répertoriées dans la [matrice de compatibilité](../start/compatibility-matrix.md#MobileSDK) .
+Les versions prises en charge pour Android et iOS, ainsi que les versions compatibles avec les SDK Campaign v8, sont répertoriées dans la [matrice de compatibilité](../start/compatibility-matrix.md#MobileSDK) .
 
 >[!NOTE]
 >
@@ -61,6 +61,10 @@ Afin d’intégrer le SDK Campaign dans l’application mobile, l’administrate
 Le SDK Android est une bibliothèque jar écrite dans JAVA. Il permet aux développeurs Android de s’intégrer à Adobe Campaign : enregistrez un nouvel appareil, liez l’appareil à un utilisateur, suivez le comportement, etc.
 
 Dans cette section, découvrez comment utiliser le SDK Android dans une application Android en implémentant [Google Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging/).
+
+>[!CAUTION]
+>
+> Pour Campaign v8, utilisez le SDK Campaign Android v1.1.1.
 
 ### Configuration de FCM
 
@@ -268,7 +272,6 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
        }   
    ```
 
-   Pour le SDK Campaign Android v1.1.1
 
    ```sql
    public static void handleNotification(Context context, String message, String title, String url, String messageId, String deliveryId, Bundle extras)
@@ -327,8 +330,6 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 1. **Suivi des ouvertures des messages de données**
 
    Pour les messages de données, vous pouvez suivre le moment où un utilisateur clique sur une notification pour l’ouvrir, à l’aide de la fonction `notifyOpening`. L&#39;activité de notification sera créée lorsque l&#39;utilisateur clique sur la notification (créée lors de l&#39;appel de fonction `onMessageReceived`)
-
-   Pour le SDK Campaign Android v1.1.1
 
    ```sql
    public class NotificationActivity extends Activity {
@@ -403,7 +404,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
                toastMessage( "error", getString(R.string.open_track_ok));
            }
            });
-           nas.notifyReceive(Integer.valueOf(messageId), deliveryId, new NeolaneAsyncRunner.RequestListener() {
+           nas.notifyReceive(messageId, deliveryId, new NeolaneAsyncRunner.RequestListener() {
            public void onNeolaneException(NeolaneException arg0, Object arg1) {
                toastMessage( "error", getString(R.string.rec_track_sdk_error) + arg0.getErrorCode());
            }
@@ -484,7 +485,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
            Neolane.getInstance().setTrackingHost(settings.getString(NeoTripActivity.TRACKRT_NAME, NeoTripActivity.DFT_TRACKRT));
    
            NeolaneAsyncRunner nas = new NeolaneAsyncRunner(Neolane.getInstance());
-           nas.notifyReceive(Integer.valueOf(messageId), deliveryId, new NeolaneAsyncRunner.RequestListener() {
+           nas.notifyReceive(messageId, deliveryId, new NeolaneAsyncRunner.RequestListener() {
                public void onNeolaneException(NeolaneException arg0, Object arg1) {}
                public void onIOException(IOException arg0, Object arg1) {}
                public void onComplete(String arg0, Object arg1){}
@@ -539,7 +540,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
                toastMessage( "error", getString(R.string.open_track_ok));
            }
            });
-           nas.notifyReceive(Integer.valueOf(messageId), deliveryId, new NeolaneAsyncRunner.RequestListener() {
+           nas.notifyReceive(messageId, deliveryId, new NeolaneAsyncRunner.RequestListener() {
            public void onNeolaneException(NeolaneException arg0, Object arg1) {
                toastMessage( "error", getString(R.string.rec_track_sdk_error) + arg0.getErrorCode());
            }
