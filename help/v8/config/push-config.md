@@ -8,10 +8,10 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 170a80942aff9951859646942657938e206959fe
+source-git-commit: 29d6a1545722afa3a07c98de1ab453cdb0a618d2
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 43%
+source-wordcount: '1348'
+ht-degree: 45%
 
 ---
 
@@ -419,9 +419,9 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
    }
    ```
 
->[!NOTE]
->
-> Une gestion similaire doit être effectuée si l’utilisateur utilise l’option `click_action` dans l’activité ciblée.
+   >[!NOTE]
+   >
+   > Une gestion similaire doit être effectuée si l’utilisateur utilise l’option `click_action` dans l’activité ciblée.
 
 
 1. **Réception du suivi des messages de données**
@@ -644,6 +644,15 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 
    * **ErrorReason** fournit des informations supplémentaires sur les erreurs qui se sont produites. Pour en savoir plus sur les erreurs disponibles et leur description, reportez-vous au tableau ci-dessous.
 
+
+      | Status | Description | ErrorReason |
+      | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
+      | ACCRegisterDeviceStatusSuccess | Succès de l&#39;enregistrement | EMPTY |
+      | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | Le nom d&#39;hôte du serveur marketing ACC est vide ou non défini. | EMPTY |
+      | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | La clé d&#39;intégration est vide ou non définie. | EMPTY |
+      | ACCRegisterDeviceStatusFailureConnectionIssue | Problème de connexion lié à ACC | Informations supplémentaires (dans la langue actuelle du système d&#39;exploitation) |
+      | ACCRegisterDeviceStatusFailureUnknownUUID | L&#39;UUID indiqué (clé d&#39;intégration) est inconnu. | EMPTY |
+      | ACCRegisterDeviceStatusFailureUnexpectedError | Une erreur inattendue a été retournée au serveur ACC. | Message d&#39;erreur retourné à ACC. |
    <table> 
     <thead>
     <tr>
