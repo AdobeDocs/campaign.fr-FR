@@ -8,10 +8,10 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 29d6a1545722afa3a07c98de1ab453cdb0a618d2
+source-git-commit: 35fcedd8e4d44bb6c5a97b2a48ff55aa2632947d
 workflow-type: tm+mt
-source-wordcount: '1348'
-ht-degree: 45%
+source-wordcount: '1286'
+ht-degree: 43%
 
 ---
 
@@ -644,56 +644,15 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 
    * **ErrorReason** fournit des informations supplémentaires sur les erreurs qui se sont produites. Pour en savoir plus sur les erreurs disponibles et leur description, reportez-vous au tableau ci-dessous.
 
+   | Status | Description | ErrorReason |
+   | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
+   | ACCRegisterDeviceStatusSuccess | Succès de l&#39;enregistrement | EMPTY |
+   | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | Le nom d&#39;hôte du serveur marketing ACC est vide ou non défini. | EMPTY |
+   | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | La clé d&#39;intégration est vide ou non définie. | EMPTY |
+   | ACCRegisterDeviceStatusFailureConnectionIssue | Problème de connexion lié à ACC | Informations supplémentaires (dans la langue actuelle du système d&#39;exploitation) |
+   | ACCRegisterDeviceStatusFailureUnknownUUID | L&#39;UUID indiqué (clé d&#39;intégration) est inconnu. | EMPTY |
+   | ACCRegisterDeviceStatusFailureUnexpectedError | Une erreur inattendue a été retournée au serveur ACC. | Message d&#39;erreur retourné à ACC. |
 
-      | Status | Description | ErrorReason |
-      | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
-      | ACCRegisterDeviceStatusSuccess | Succès de l&#39;enregistrement | EMPTY |
-      | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | Le nom d&#39;hôte du serveur marketing ACC est vide ou non défini. | EMPTY |
-      | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | La clé d&#39;intégration est vide ou non définie. | EMPTY |
-      | ACCRegisterDeviceStatusFailureConnectionIssue | Problème de connexion lié à ACC | Informations supplémentaires (dans la langue actuelle du système d&#39;exploitation) |
-      | ACCRegisterDeviceStatusFailureUnknownUUID | L&#39;UUID indiqué (clé d&#39;intégration) est inconnu. | EMPTY |
-      | ACCRegisterDeviceStatusFailureUnexpectedError | Une erreur inattendue a été retournée au serveur ACC. | Message d&#39;erreur retourné à ACC. |
-   <table> 
-    <thead>
-    <tr>
-    <th> Status<br /> </th>
-    <th> Description<br /> </th>
-    <th> ErrorReason<br /> </th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td> ACCRegisterDeviceStatusSuccess <br /> </td>
-    <td> Succès de l'enregistrement<br /> </td>
-    <td> EMPTY<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty <br /> </td>
-    <td> Le nom d'hôte du serveur marketing ACC est vide ou non défini.<br /> </td>
-    <td> EMPTY<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureIntegrationKeyEmpty <br /> </td>
-    <td> La clé d'intégration est vide ou non définie.<br /> </td>
-    <td> EMPTY<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureConnectionIssue<br /> </td>
-    <td> Problème de connexion lié à ACC<br /> </td>
-    <td> Informations supplémentaires (dans la langue actuelle du système d'exploitation)<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureUnknownUUID<br /> </td>
-    <td> L'UUID indiqué (clé d'intégration) est inconnu.<br /> </td>
-    <td> EMPTY<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureUnexpectedError<br /> </td>
-    <td> Une erreur inattendue a été retournée au serveur ACC.<br /> </td>
-    <td> Message d'erreur retourné à ACC.<br /> </td>
-    </tr>
-    </tbody>
-    </table>
 
    Le protocole **Neolane_SDKDelegate** et la définition du délégué **registerDeviceStatus** sont les suivants :
 
@@ -830,6 +789,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
       }
       @end
       ```
+
 
 
 ## Variables {#variables}
