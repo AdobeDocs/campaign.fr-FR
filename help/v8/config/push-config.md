@@ -8,7 +8,7 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: eec769a09d59034dde59983bd0a53a4ac4fddde5
+source-git-commit: 9f05209e47f35c91720f68d56593812115726817
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 32%
@@ -644,7 +644,6 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 
    * **ErrorReason** fournit des informations supplémentaires sur les erreurs qui se sont produites. Pour en savoir plus sur les erreurs disponibles et leur description, reportez-vous au tableau ci-dessous.
 
-
 | Status | Description | ErrorReason |
 | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
 | ACCRegisterDeviceStatusSuccess | Succès de l&#39;enregistrement | EMPTY |
@@ -653,7 +652,6 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 | ACCRegisterDeviceStatusFailureConnectionIssue | Problème de connexion lié à ACC | Informations supplémentaires (dans la langue actuelle du système d&#39;exploitation) |
 | ACCRegisterDeviceStatusFailureUnknownUUID | L&#39;UUID indiqué (clé d&#39;intégration) est inconnu. | EMPTY |
 | ACCRegisterDeviceStatusFailureUnexpectedError | Une erreur inattendue a été retournée au serveur ACC. | Message d&#39;erreur retourné à ACC. |
-
 
 {style=&quot;table-layout:auto&quot;}
 
