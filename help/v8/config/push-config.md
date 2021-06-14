@@ -8,7 +8,7 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 68cd7d5a20dafeea3c19f35f5c9547b623319ba2
+source-git-commit: e5d321b9fb5fe81476197e1913eb815fb2ed758d
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 42%
@@ -655,7 +655,6 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 
 
    {style=&quot;table-layout:auto&quot;}
-
 
    Le protocole **Neolane_SDKDelegate** et la définition du délégué **registerDeviceStatus** sont les suivants :
 
