@@ -3,7 +3,7 @@ product: Adobe Campaign
 title: Mise à jour de la structure de la base de données
 description: Mise à jour de la structure de la base de données
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '97'
 ht-degree: 100%
 
