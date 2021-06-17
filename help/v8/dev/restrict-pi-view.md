@@ -1,23 +1,23 @@
 ---
 product: Adobe Campaign
-title: Limitation de l’affichage des PI
-description: Découvrez comment limiter l’affichage des PI
+title: Limitation de l'affichage des PI
+description: Découvrez comment limiter l'affichage des PI
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '395'
 ht-degree: 100%
 
 ---
 
-# Limitation de l’affichage des PII{#restricting-pii-view}
+# Limitation de l&#39;affichage des PI{#restricting-pii-view}
 
-## Vue d’ensemble {#overview}
+## Vue d&#39;ensemble {#overview}
 
-Si vous avez besoin que les utilisateurs marketing puissent accéder aux enregistrements de données, mais ne souhaitez pas qu’ils visualisent les informations personnelles (PI) des destinataires telles que le prénom, le nom ou l’adresse e-mail, suivez les instructions ci-dessous afin de protéger la confidentialité et d’empêcher toute utilisation abusive des données par des opérateurs standard de Campaign.
+Si vous avez besoin que les utilisateurs marketing puissent accéder aux enregistrements de données, mais ne souhaitez pas qu&#39;ils visualisent les informations personnelles (PI) des destinataires telles que le prénom, le nom ou l&#39;adresse e-mail, suivez les instructions ci-dessous afin de protéger la confidentialité et d&#39;empêcher toute utilisation abusive des données par des opérateurs standard de Campaign.
 
 ## Mise en œuvre {#implementation}
 
-Un attribut spécifique pouvant être appliqué à n’importe quel élément ou attribut a été ajouté aux schémas. Il complète l’attribut existant **[!UICONTROL visibleIf]**. Cet attribut est : **[!UICONTROL accessibleIf]**. Lorsque vous incluez une expression XTK liée au contexte utilisateur actuel, elle peut utiliser **[!UICONTROL HasNamedRight]** ou **[!UICONTROL $(login)]**, par exemple.
+Un attribut spécifique pouvant être appliqué à n&#39;importe quel élément ou attribut a été ajouté aux schémas. Il complète l&#39;attribut existant **[!UICONTROL visibleIf]**. Cet attribut est : **[!UICONTROL accessibleIf]**. Lorsque vous incluez une expression XTK liée au contexte utilisateur actuel, elle peut utiliser **[!UICONTROL HasNamedRight]** ou **[!UICONTROL $(login)]**, par exemple.
 
 Vous trouverez ci-dessous un exemple d&#39;extension de schéma de destinataire qui illustre cette utilisation :
 
@@ -50,11 +50,11 @@ Les conséquences de l&#39;utilisation de cet attribut dans Adobe Campaign sont 
 * Lors du stockage de la population ciblée dans un groupe (liste), les caractéristiques des champs stockés sont identiques à celles de la source de données.
 * Par défaut, les données ne sont pas accessibles par les codes JavaScript.
 
-## Recommandations     {#recommendations}
+## Recommandations {#recommendations}
 
 Dans chaque diffusion, les adresses e-mail sont copiées dans les tables de **[!UICONTROL broadLog]** et de **[!UICONTROL forecastLog]** : ces champs doivent donc également être protégés.
 
-Vous trouverez ci-dessous un exemple d’extension de table de logs pour implémenter cela :
+Vous trouverez ci-dessous un exemple d&#39;extension de table de logs pour implémenter cela :
 
 ```
 <srcSchema entitySchema="xtk:srcSchema" extendedSchema="nms:broadLogRcp" img="nms:broadLog.png"
@@ -85,4 +85,4 @@ Vous trouverez ci-dessous un exemple d’extension de table de logs pour implém
 
 >[!CAUTION]
 >
->Cette restriction s’applique uniquement aux utilisateurs non techniques et n’isole pas les données. Un utilisateur technique disposant des autorisations associées peut ainsi récupérer les données.
+>Cette restriction s&#39;applique uniquement aux utilisateurs non techniques et n&#39;isole pas les données. Un utilisateur technique disposant des autorisations associées peut ainsi récupérer les données.
