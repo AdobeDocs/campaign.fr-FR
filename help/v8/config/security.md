@@ -3,32 +3,32 @@ product: Adobe Campaign
 title: Bonnes pratiques de sécurité de Campaign
 description: Prise en main des bonnes pratiques de sécurité de Campaign
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '509'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Bonnes pratiques de sécurité de Campaign {#ac-security}
 
-Chez Adobe, nous prenons la sécurité de votre expérience digitale très au sérieux. Les bonnes pratiques de sécurité sont profondément ancrées dans nos processus internes de développement et d’exploitation de logiciels ainsi que dans nos outils. Nos équipes transverses suivent scrupuleusement ces différentes règles afin d’éviter les incidents, mais aussi de pouvoir les détecter et y répondre rapidement.
+Chez Adobe, nous prenons la sécurité de votre expérience digitale très au sérieux. Les bonnes pratiques de sécurité sont profondément ancrées dans nos processus internes de développement et d&#39;exploitation de logiciels ainsi que dans nos outils. Nos équipes transverses suivent scrupuleusement ces différentes règles afin d&#39;éviter les incidents, mais aussi de pouvoir les détecter et y répondre rapidement.
 
-De plus, notre travail en collaboration avec des partenaires, des chercheurs de premier plan, des instituts de recherche en sécurité et d’autres organisations du secteur nous aide à nous tenir informés des dernières menaces et vulnérabilités. Nous incorporons ainsi régulièrement des techniques de sécurité avancées à nos produits et services.
+De plus, notre travail en collaboration avec des partenaires, des chercheurs de premier plan, des instituts de recherche en sécurité et d&#39;autres organisations du secteur nous aide à nous tenir informés des dernières menaces et vulnérabilités. Nous incorporons ainsi régulièrement des techniques de sécurité avancées à nos produits et services.
 
 ## Confidentialité
 
-La configuration et le renforcement de la confidentialité sont des éléments clés en matière d’optimisation de la sécurité. Voici quelques bonnes pratiques à suivre en matière de confidentialité :
+La configuration et le renforcement de la confidentialité sont des éléments clés en matière d&#39;optimisation de la sécurité. Voici quelques bonnes pratiques à suivre en matière de confidentialité :
 
 * Protégez les informations personnelles (PI) de vos clients en utilisant HTTPS au lieu de HTTP.
-* Utilisez la [limitation de l’affichage des PI](../dev/restrict-pi-view.md) pour protéger la confidentialité et empêcher toute utilisation abusive des données.
+* Utilisez la [limitation de l&#39;affichage des PI](../dev/restrict-pi-view.md) pour protéger la confidentialité et empêcher toute utilisation abusive des données.
 * Vérifiez que les mots de passe cryptés sont restreints.
 * Protégez les pages pouvant contenir des informations personnelles, telles que les pages miroir, les applications web, etc.
 
-[!DNL :speech_balloon:] En tant qu’utilisateur Managed Cloud Services, Adobe vous accompagne dans l’implémentation de ces configurations sur votre environnement.
+[!DNL :speech_balloon:] En tant qu&#39;utilisateur Managed Cloud Services, Adobe vous accompagne dans l&#39;implémentation de ces configurations sur votre environnement.
 
 ## Personnalisation
 
-Lorsque vous ajoutez des liens personnalisés à votre contenu, évitez toujours toute personnalisation dans la partie du nom d’hôte de l’URL afin d’éviter des failles de sécurité potentielles. Les exemples suivants ne doivent jamais être utilisés dans tous les attributs d’URL &lt;`a href="">` ou `<img src="">` :
+Lorsque vous ajoutez des liens personnalisés à votre contenu, évitez toujours toute personnalisation dans la partie du nom d&#39;hôte de l&#39;URL afin d&#39;éviter des failles de sécurité potentielles. Les exemples suivants ne doivent jamais être utilisés dans tous les attributs d&#39;URL &lt;`a href="">` ou `<img src="">` :
 
 * `<%= url >`
 * `https://<%= url >`
@@ -38,19 +38,19 @@ Lorsque vous ajoutez des liens personnalisés à votre contenu, évitez toujours
 
 ## Restriction des données
 
-Vous devez vous assurer que les mots de passe cryptés ne sont pas accessibles par un utilisateur authentifié avec de faibles privilèges. Pour ce faire, il existe deux méthodes : restreindre l’accès aux champs de mots de passe uniquement ou à l’entité entière.
+Vous devez vous assurer que les mots de passe cryptés ne sont pas accessibles par un utilisateur authentifié avec de faibles privilèges. Pour ce faire, il existe deux méthodes : restreindre l&#39;accès aux champs de mots de passe uniquement ou à l&#39;entité entière.
 
-Cette restriction vous permet de supprimer les champs de mots de passe. Le compte externe reste toutefois accessible par tous les utilisateurs dans l’interface. En savoir plus sur [cette page](../dev/restrict-pi-view.md).
+Cette restriction vous permet de supprimer les champs de mots de passe. Le compte externe reste toutefois accessible par tous les utilisateurs dans l&#39;interface. Apprenez-en davantage en consultant [cette page](../dev/restrict-pi-view.md).
 
 1. Accédez à **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Schémas de données]**.
 
-1. Créez une **[!UICONTROL Extension d’un schéma]**.
+1. Créez une **[!UICONTROL Extension d&#39;un schéma]**.
 
 1. Sélectionnez **[!UICONTROL Compte externe]** (extAccount).
 
-1. Dans le dernier écran, vous pouvez modifier le nouveau srcSchema afin de restreindre l’accès à tous les champs de mots de passe :
+1. Dans le dernier écran, vous pouvez modifier le nouveau srcSchema afin de restreindre l&#39;accès à tous les champs de mots de passe :
 
-   Vous pouvez remplacer l’élément principal (`<element name="extAccount" ... >`) par :
+   Vous pouvez remplacer l&#39;élément principal (`<element name="extAccount" ... >`) par :
 
    ```
    <element name="extAccount">
@@ -104,19 +104,19 @@ Cette restriction vous permet de supprimer les champs de mots de passe. Le compt
 La gestion des accès joue un rôle important dans le renforcement de la sécurité. Vous trouverez ci-dessous quelques-unes des principales bonnes pratiques à appliquer.
 
 * Créez suffisamment de groupes de sécurité.
-* Vérifiez que chaque opérateur dispose des droits d’accès adéquats.
-* Évitez d’utiliser l’opérateur admin et d’ajouter trop d’opérateurs au groupe admin.
+* Vérifiez que chaque opérateur dispose des droits d&#39;accès adéquats.
+* Évitez d&#39;utiliser l&#39;opérateur admin et d&#39;ajouter trop d&#39;opérateurs au groupe admin.
 
-[!DNL :arrow_upper_right:] En savoir plus dans la documentation de  [Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=fr#webapp-operator)
+[!DNL :arrow_upper_right:] Apprenez-en davantage en consultant la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=fr#webapp-operator)
 
 ## Instructions de codage
 
 Lorsque vous effectuez des tâches de développement dans Adobe Campaign (workflows, Javascript, JSSP, autres), suivez toujours ces instructions :
 
-* **Scripts** : évitez si possible d’utiliser des instructions SQL. Utilisez des fonctions paramétrables plutôt que la concaténation de chaîne et évitez toute injection SQL en ajoutant les fonctions SQL à utiliser à la liste autorisée.
+* **Scripts** : évitez si possible d&#39;utiliser des instructions SQL. Utilisez des fonctions paramétrables plutôt que la concaténation de chaîne et évitez toute injection SQL en ajoutant les fonctions SQL à utiliser à la liste autorisée.
 
 * **Sécurisation du modèle de données** : utilisez des droits nommés pour limiter les actions des opérateurs et ajoutez des filtres système (sysFilter).
 
-* **Ajout de captchas dans les applications web** : ajoutez des captchas dans vos pages d’abonnement et landing pages publiques.
+* **Ajout de captchas dans les applications web** : ajoutez des captchas dans vos pages d&#39;abonnement et landing pages publiques.
 
-[!DNL :arrow_upper_right:] En savoir plus dans la documentation de  [Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=fr#installing-campaign-classic)
+[!DNL :arrow_upper_right:] Apprenez-en davantage en consultant la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=fr#installing-campaign-classic)
