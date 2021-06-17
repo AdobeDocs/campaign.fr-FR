@@ -1,34 +1,34 @@
 ---
 product: Adobe Campaign
-title: Opérateurs d'interaction Campaign
-description: Créer des opérateurs Gestion des offres
-feature: Vue d’ensemble
+title: Opérateurs de Campaign Interaction
+description: Créer des opérateurs de gestion des offres
+feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '408'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
 
 # Profils des opérateurs {#operator-profiles}
 
-Deux types d&#39;opérateurs peuvent utiliser l&#39;interaction Campaign : **Chargés d’offres** et **Chargés de diffusions**. Chacun d’eux a des autorisations et des restrictions spécifiques. Pour en savoir plus sur les opérateurs et les permissions Campaign, consultez [cette page](../start/permissions.md).
+Deux types d&#39;opérateurs peuvent utiliser l&#39;interaction Campaign : **chargés d&#39;offres** et **chargés de diffusion**. Chacun d&#39;eux a des autorisations et des restrictions spécifiques. Pour en savoir plus sur les opérateurs et les autorisations Campaign, consultez [cette page](../start/permissions.md).
 
 * Le **[!UICONTROL Chargé d&#39;offres]** crée et maintient les offres.
-* **[!UICONTROL Chargé de diffusion]** valide et utilise les offres
+* Le **[!UICONTROL Chargé de diffusion]** valide et utilise les offres
 
 ## Créer un opérateur Chargé d&#39;offres{#offer-manager}
 
 1. Créez votre nouvel opérateur.
 
-   [!DNL :arrow_upper_right:] Les étapes de création d&#39;un opérateur dans Campaign sont présentées dans la documentation de  [Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
+   [!DNL :arrow_upper_right:] Les étapes de création d&#39;un opérateur dans Campaign sont présentées dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html?lang=fr)
 
 1. Dans la fenêtre **[!UICONTROL Groupes et droits nommés]**, cliquez sur **[!UICONTROL Ajouter]** et sélectionnez le groupe **[!UICONTROL Chargé d&#39;offres]**.
 
-Les droits attribués au chargé d&#39;offres lui permettent d&#39;effectuer les tâches suivantes :
+Les droits attribués au Chargé d&#39;offres lui permettent d&#39;effectuer les opérations suivantes :
 
 * Modifier des environnements **[!UICONTROL En édition]**.
 * Consulter des environnements **[!UICONTROL En ligne]**.
@@ -38,7 +38,7 @@ Les droits attribués au chargé d&#39;offres lui permettent d&#39;effectuer les
 * Paramétrer l&#39;éligibilité des offres.
 * Valider des offres.
 
-Notez que si des offres sont utilisées dans un workflow, l&#39;opérateur doit être ajouté au groupe d&#39;opérateurs **[!UICONTROL Administrateur]** ou **[!UICONTROL Chargés d&#39;offres]** pour exécuter le workflow.
+Notez que si des offres sont utilisées dans le workflow, l&#39;opérateur doit être ajouté au le groupe d&#39;opérateurs **[!UICONTROL Administrateur]** ou **[!UICONTROL Chargés d&#39;offres]** pour l&#39;exécuter.
 
 >[!NOTE]
 >
@@ -48,11 +48,11 @@ Notez que si des offres sont utilisées dans un workflow, l&#39;opérateur doit 
 
 1. Créez votre nouvel opérateur.
 
-   [!DNL :arrow_upper_right:] Les étapes de création d&#39;un opérateur dans Campaign sont présentées dans la documentation de  [Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
+   [!DNL :arrow_upper_right:] Les étapes de création d&#39;un opérateur dans Campaign sont présentées dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html?lang=fr)
 
 1. Dans la fenêtre **[!UICONTROL Groupes et droits nommés]**, cliquez sur **[!UICONTROL Ajouter]** et sélectionnez le groupe **[!UICONTROL Chargé de diffusion]**.
 
-Les droits attribués au chargé de diffusion sont/permettent d&#39;effectuer les tâches suivantes :
+Les droits attribués au Chargé de diffusion lui permettent d&#39;effectuer les opérations suivantes :
 
 * Afficher les environnements **[!UICONTROL En ligne]**.
 * Afficher et modifier des catégories d&#39;offres.
@@ -60,15 +60,15 @@ Les droits attribués au chargé de diffusion sont/permettent d&#39;effectuer le
 
    >[!NOTE]
    >
-   >Un **chargé de diffusion** ne peut valider une offre que s&#39;il a été déclaré validant lors du paramétrage de l&#39;offre.
+   >Le **Chargé de diffusion** ne peut valider une offre que s&#39;il a été défini comme validant lors du paramétrage de l&#39;offre.
 
-## Matrice des permissions par opérateur Interaction {#recap-of-rights-according-to-operator}
+## Matrice des autorisation par opérateur d&#39;interaction {#recap-of-rights-according-to-operator}
 
 <table> 
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>Chargé d’offres (environnement de conception)</strong><br /> </td> 
+   <td> <strong>Chargé d'offres (environnement en édition)</strong><br /> </td> 
    <td> <strong>Chargé d'offres (environnement en ligne)</strong><br /> </td> 
   </tr> 
   <tr> 
@@ -128,7 +128,7 @@ Les droits attribués au chargé de diffusion sont/permettent d&#39;effectuer le
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>Chargé de diffusion (environnement de conception)</strong><br /> </td> 
+   <td> <strong>Chargé de diffusion (environnement en édition)</strong><br /> </td> 
    <td> <strong>Chargé de diffusion (environnement en ligne)</strong><br /> </td> 
   </tr> 
   <tr> 
