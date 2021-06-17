@@ -3,9 +3,9 @@ product: Adobe Campaign
 title: Formulaires de saisie Campaign
 description: Découvrez comment personnaliser les formulaires de saisie
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2577'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -13,29 +13,29 @@ ht-degree: 99%
 
 Lorsque vous créez ou étendez un schéma, vous devez créer ou modifier les formulaires de saisie associés pour permettre aux utilisateurs finaux de voir ces modifications.
 
-Un formulaire de saisie vous permet de modifier une instance associée à un schéma de données à partir de la console client Adobe Campaign. Le formulaire est identifié par son nom et son espace de noms.
+Un formulaire de saisie vous permet de modifier une instance associée à un schéma de données à partir de la console cliente Adobe Campaign. Le formulaire est identifié par son nom et son espace de noms.
 
-La clé d’identification d’un formulaire correspond à une chaîne constituée de l’espace de noms et du nom séparés par deux points, par exemple « cus:contact ».
+La clé d&#39;identification d&#39;un formulaire correspond à une chaîne constituée de l&#39;espace de noms et du nom séparés par deux points, par exemple &quot;cus:contact&quot;.
 
 ## Modification des formulaires de saisie
 
-Créez et configurez des formulaires de saisie à partir du dossier **[!UICONTROL Administration] > [!UICONTROL Paramétrage] > [!UICONTROL Formulaires de saisie]** de la console client :
+Créez et configurez des formulaires de saisie à partir du dossier **[!UICONTROL Administration] > [!UICONTROL Paramétrage] > [!UICONTROL Formulaires de saisie]** de la console cliente :
 
 ![](assets/form_arbo.png)
 
-La zone d&#39;édition permet de renseigner le contenu XML du formulaire de saisie :
+La zone d&#39;édition permet de renseigner le contenu XML du formulaire de saisie :
 
 ![](assets/form_edit.png)
 
-L&#39;aperçu génère l&#39;affichage du formulaire de saisie :
+L&#39;aperçu génère l&#39;affichage du formulaire de saisie :
 
 ![](assets/form_preview.png)
 
-## Structure d’un formulaire
+## Structure d&#39;un formulaire
 
 La description d&#39;un formulaire est un document XML structuré respectant la grammaire du schéma des formes **xtk:form**.
 
-Le document XML du formulaire de saisie doit contenir l’élément racine `<form>` avec les attributs **name** et **namespace** pour renseigner respectivement le nom du formulaire et son espace de noms.
+Le document XML du formulaire de saisie doit contenir l&#39;élément racine `<form>` avec les attributs **name** et **namespace** pour renseigner respectivement le nom du formulaire et son espace de noms.
 
 ```
 <form name="form_name" namespace="name_space">
@@ -43,7 +43,7 @@ Le document XML du formulaire de saisie doit contenir l’élément racine `<for
 </form>
 ```
 
-Par défaut, un formulaire est associé au schéma de données possédant un nom et un espace de noms identiques. Pour associer un formulaire avec un nom différent, définissez l’attribut **entity-schema** de l’élément `<form>` sur le nom de la clé de schéma. Pour illustrer la structure d&#39;un formulaire de saisie, nous allons décrire une interface à partir du schéma d&#39;exemple &quot;cus:recipient&quot; :
+Par défaut, un formulaire est associé au schéma de données possédant un nom et un espace de noms identiques. Pour associer un formulaire avec un nom différent, définissez l&#39;attribut **entity-schema** de l&#39;élément `<form>` sur le nom de la clé de schéma. Pour illustrer la structure d&#39;un formulaire de saisie, nous allons décrire une interface à partir du schéma d&#39;exemple &quot;cus:recipient&quot; :
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -61,7 +61,7 @@ Par défaut, un formulaire est associé au schéma de données possédant un nom
 </srcSchema>
 ```
 
-Le formulaire de saisie à partir du schéma d&#39;exemple :
+Le formulaire de saisie à partir du schéma d&#39;exemple :
 
 ![](assets/do-not-localize/form_exemple1.png)
 
@@ -73,24 +73,24 @@ Le formulaire de saisie à partir du schéma d&#39;exemple :
 </form>
 ```
 
-La description des contrôles d’édition commence à partir de l’élément `<form>`. Un contrôle d’édition est renseigné sur un élément **`<input>`** avec l’attribut **xpath** qui contient le chemin du champ dans son schéma.
+La description des contrôles d&#39;édition commence à partir de l&#39;élément `<form>`. Un contrôle d&#39;édition est renseigné sur un élément **`<input>`** avec l&#39;attribut **xpath** qui contient le chemin du champ dans son schéma.
 
 Le contrôle d&#39;édition s&#39;adapte automatiquement au type de données correspondant et utilise le libellé défini dans le schéma.
 
 >[!NOTE]
 >
->Vous pouvez remplacer le libellé défini dans son schéma de données en ajoutant l’attribut **libellé** à l’élément `<input>` :\
+>Vous pouvez remplacer le libellé défini dans son schéma de données en ajoutant l&#39;attribut **libellé** à l&#39;élément `<input>` :\
 >`<input label="E-mail address" xpath="@name" />`
 
-Par défaut, chaque champ est affiché sur une seule ligne et occupe tout l’espace disponible selon le type de données.
+Par défaut, chaque champ est affiché sur une seule ligne et occupe tout l&#39;espace disponible selon le type de données.
 
-[!DNL :arrow_upper_right:] Tous les attributs de formulaire sont répertoriés dans la documentation de  [Campaign Classic v7](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html).
+[!DNL :arrow_upper_right:] Tous les attributs de formulaires sont répertoriés dans la [documentation de Campaign Classic v7](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html).
 
 ## Mise en forme {#formatting}
 
 La disposition des contrôles entre eux ressemble à celle utilisée dans les tableaux HTML, avec la possibilité de diviser un contrôle en plusieurs colonnes, utiliser des imbrications d&#39;éléments ou de spécifier l&#39;occupation de l&#39;espace disponible. Il faut cependant retenir que la mise en page autorise seulement des répartitions de proportions, il n&#39;est pas possible de spécifier des dimensions fixes pour un objet.
 
-Pour afficher les contrôles de l&#39;exemple précédent sur deux colonnes :
+Pour afficher les contrôles de l&#39;exemple précédent sur deux colonnes :
 
 ![](assets/do-not-localize/form_exemple2.png)
 
@@ -104,9 +104,9 @@ Pour afficher les contrôles de l&#39;exemple précédent sur deux colonnes :
 </form>
 ```
 
-L’élément **`<container>`** avec l&#39;attribut **colcount** permet de forcer l’affichage des contrôles enfants sur deux colonnes.
+L&#39;élément **`<container>`** avec l&#39;attribut **colcount** permet de forcer l&#39;affichage des contrôles enfants sur deux colonnes.
 
-L&#39;attribut **colspan** sur un contrôle étend celui-ci avec le nombre de colonnes renseignées dans sa valeur :
+L&#39;attribut **colspan** sur un contrôle étend celui-ci avec le nombre de colonnes renseignées dans sa valeur :
 
 ![](assets/do-not-localize/form_exemple3.png)
 
@@ -120,7 +120,7 @@ L&#39;attribut **colspan** sur un contrôle étend celui-ci avec le nombre de co
 </form> 
 ```
 
-En renseignant l&#39;attribut **type=&quot;frame&quot;**, le conteneur ajoute un habillage autour des contrôles enfants avec le libellé contenu dans l&#39;attribut **label** :
+En renseignant l&#39;attribut **type=&quot;frame&quot;**, le conteneur ajoute un habillage autour des contrôles enfants avec le libellé contenu dans l&#39;attribut **label** :
 
 ![](assets/do-not-localize/form_exemple4.png)
 
@@ -148,17 +148,17 @@ Un élément **`<static>`** peut être utilisé pour mettre en forme le formulai
 </form>
 ```
 
-La balise **`<static>`** avec le type **separator** permet d’ajouter une barre de séparation avec un libellé contenu dans l’attribut **label**.
+La balise **`<static>`** avec le type **separator** permet d&#39;ajouter une barre de séparation avec un libellé contenu dans l&#39;attribut **label**.
 
-Un texte d’aide a été ajouté à l’aide de la balise `<static>` avec le type d’aide. Le contenu du texte est saisi dans l’attribut **label**.
+Un texte d&#39;aide a été ajouté à l&#39;aide de la balise `<static>` avec le type d&#39;aide. Le contenu du texte est saisi dans l&#39;attribut **label**.
 
 ## Utilisation de conteneurs {#containers}
 
-Utilisez des **conteneurs** pour regrouper un ensemble de contrôles. Ils sont représentés par l’élément **`<container>`**. Ils ont été utilisés ci-dessus pour mettre en forme les contrôles sur plusieurs colonnes.
+Utilisez des **conteneurs** pour regrouper un ensemble de contrôles. Ils sont représentés par l&#39;élément **`<container>`**. Ils ont été utilisés ci-dessus pour mettre en forme les contrôles sur plusieurs colonnes.
 
-L’attribut **xpath** sur un `<container>` permet de simplifier le référencement des contrôles enfants. Le référencement des contrôles est alors relatif au `<container>` parent.
+L&#39;attribut **xpath** sur un `<container>` permet de simplifier le référencement des contrôles enfants. Le référencement des contrôles est alors relatif au `<container>` parent.
 
-Exemple de conteneur sans &quot;xpath&quot; :
+Exemple de conteneur sans &quot;xpath&quot; :
 
 ```
 <container colcount="2">
@@ -167,7 +167,7 @@ Exemple de conteneur sans &quot;xpath&quot; :
 </container>
 ```
 
-Exemple avec ajout du &quot;xpath&quot; sur l&#39;élément de nom &quot;location&quot; :
+Exemple avec ajout du &quot;xpath&quot; sur l&#39;élément de nom &quot;location&quot; :
 
 ```
 <container colcount="2" xpath="location">
@@ -178,9 +178,9 @@ Exemple avec ajout du &quot;xpath&quot; sur l&#39;élément de nom &quot;locatio
 
 Les conteneurs sont utilisés pour construire des contrôles complexes ayant recours à un ensemble de champs mis en forme dans des pages.
 
-### Ajout d’onglets (notebook) {#tab-container}
+### Ajout d&#39;onglets (notebook) {#tab-container}
 
-Utilisez un conteneur **notebook** pour formater les données dans des pages accessibles à partir d’onglets.
+Utilisez un conteneur **notebook** pour formater les données dans des pages accessibles à partir d&#39;onglets.
 
 ![](assets/do-not-localize/form_exemple6.png)
 
@@ -197,17 +197,17 @@ Utilisez un conteneur **notebook** pour formater les données dans des pages acc
 </container>
 ```
 
-Le conteneur principal est défini par l’attribut **type=&quot;notebook&quot;**. Les onglets sont déclarés dans les conteneurs enfants, le libellé des onglets est renseigné à partir de l’attribut **label**.
+Le conteneur principal est défini par l&#39;attribut **type=&quot;notebook&quot;**. Les onglets sont déclarés dans les conteneurs enfants, le libellé des onglets est renseigné à partir de l&#39;attribut **label**.
 
-Ajoutez l’attribut **style=&quot;down&quot;** pour forcer le positionnement vertical des libellés d’onglet sous le contrôle. Cet attribut est facultatif. La valeur par défaut est **« up »**.
+Ajoutez l&#39;attribut **style=&quot;down&quot;** pour forcer le positionnement vertical des libellés d&#39;onglet sous le contrôle. Cet attribut est facultatif. La valeur par défaut est **&quot;up&quot;**.
 
 ![](assets/do-not-localize/form_exemple7.png)
 
 `<container style="down" type="notebook">  ... </container>`
 
-### Ajout d’icônes (iconbox) {#icon-list}
+### Ajout d&#39;icônes (iconbox) {#icon-list}
 
-Utilisez ce conteneur pour afficher une barre d’icônes verticale permettant de sélectionner les pages à afficher.
+Utilisez ce conteneur pour afficher une barre d&#39;icônes verticale permettant de sélectionner les pages à afficher.
 
 ![](assets/do-not-localize/form_exemple8.png)
 
@@ -226,15 +226,15 @@ Utilisez ce conteneur pour afficher une barre d’icônes verticale permettant d
 
 Le conteneur principal est défini par l&#39;attribut **type=&quot;iconbox&quot;**. Les pages associées aux icônes sont déclarées dans les conteneurs enfants. Le libellé des icônes est renseigné à partir de l&#39;attribut **label**.
 
-L’icône d’une page est renseignée à partir de l’attribut `img="<image>"`, où `<image>` est le nom de l’image correspondant à sa clé construite avec le nom et l’espace de noms (par exemple « xtk:properties.png »).
+L&#39;icône d&#39;une page est renseignée à partir de l&#39;attribut `img="<image>"`, où `<image>` est le nom de l&#39;image correspondant à sa clé construite avec le nom et l&#39;espace de noms (par exemple &quot;xtk:properties.png&quot;).
 
-Les images sont disponibles à partir du noeud **[!UICONTROL Administration > Paramétrage > Images]**.
+Les images sont disponibles à partir du nœud **[!UICONTROL Administration > Paramétrage > Images]**.
 
 ### Masquage des conteneurs (visibleGroup) {#visibility-container}
 
-Vous pouvez masquer un ensemble de contrôles à partir d’une condition dynamique.
+Vous pouvez masquer un ensemble de contrôles à partir d&#39;une condition dynamique.
 
-Cet exemple illustre la visibilité des contrôles sur la valeur du champ &quot;Genre&quot; :
+Cet exemple illustre la visibilité des contrôles sur la valeur du champ &quot;Genre&quot; :
 
 ```
 <container type="visibleGroup" visibleIf="@gender=1">
@@ -247,15 +247,15 @@ Cet exemple illustre la visibilité des contrôles sur la valeur du champ &quot;
 
 Un conteneur de visibilité est défini par l&#39;attribut **type=&quot;visibleGroup&quot;**. L&#39;attribut **visibleIf** contient la condition de visibilité.
 
-Exemples de syntaxes de conditions :
+Exemples de syntaxes de conditions :
 
-* **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;** : teste l’égalité sur les données de type chaîne. La valeur de comparaison doit être entre guillemets.
-* **visibleIf=&quot;@gender >= 1 and @gender != 2&quot;** : condition sur une valeur numérique.
+* **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;** : teste l&#39;égalité sur les données de type chaîne. La valeur de comparaison doit être entre guillemets.
+* **visibleIf=&quot;@gender >= 1 and @gender != 2&quot;** : condition sur une valeur numérique.
 * **visibleIf=&quot;@boolean1=true or @boolean2=false&quot;** : test sur des champs booléens.
 
 ### Affichage conditionnel (enabledGroup) {#enabling-container}
 
-Ce conteneur pemet l&#39;activation ou la désactivation d&#39;un ensemble de données à partir d&#39;une condition dynamique. La désactivation d&#39;un contrôle empêche son édition. L&#39;exemple suivant illustre l&#39;activation des contrôles à partir de la valeur du champ &quot;Genre&quot; :
+Ce conteneur pemet l&#39;activation ou la désactivation d&#39;un ensemble de données à partir d&#39;une condition dynamique. La désactivation d&#39;un contrôle empêche son édition. L&#39;exemple suivant illustre l&#39;activation des contrôles à partir de la valeur du champ &quot;Genre&quot; :
 
 ```
 <container type="enabledGroup" enabledIf="@gender=1">
@@ -268,15 +268,15 @@ Ce conteneur pemet l&#39;activation ou la désactivation d&#39;un ensemble de do
 
 Un conteneur d&#39;activation est défini par l&#39;attribut **type=&quot;enabledGroup&quot;**. L&#39;attribut **enabledIf** contient la condition d&#39;activation.
 
-## Modification d’un lien {#editing-a-link}
+## Modification d&#39;un lien {#editing-a-link}
 
-Pour rappel, un lien est déclaré dans le schéma de données de la façon suivante :
+Pour rappel, un lien est déclaré dans le schéma de données de la façon suivante :
 
 ```
 <element label="Company" name="company" target="cus:company" type="link"/>
 ```
 
-Le contrôle d&#39;édition du lien dans son formulaire de saisie est :
+Le contrôle d&#39;édition du lien dans son formulaire de saisie est :
 
 ![](assets/do-not-localize/form_exemple9.png)
 
@@ -288,11 +288,11 @@ Le choix de la cible est accessible à partir de la zone d&#39;édition. Une aid
 
 Une liste déroulante permet de sélectionner un élément de la cible parmi la liste des enregistrements déjà créés.
 
-L’icône **[!UICONTROL Modifier le lien]** (dossier) lance un formulaire de sélection avec la liste des éléments ciblés et une zone de filtre.
+L&#39;icône **[!UICONTROL Modifier le lien]** (dossier) lance un formulaire de sélection avec la liste des éléments ciblés et une zone de filtre.
 
 L&#39;icône **[!UICONTROL Editer le lien]** (loupe) lance la forme d&#39;édition de l&#39;élément lié. La forme utilisée est déduite par défaut sur la clé du schéma ciblé, l&#39;attribut **form** permet de forcer le nom de la forme d&#39;édition (par exemple &quot;cus:company2&quot;).
 
-Vous pouvez restreindre le choix des éléments de la cible en ajoutant l’élément **`<sysfilter>`** à partir de la définition du lien dans le formulaire de saisie :
+Vous pouvez restreindre le choix des éléments de la cible en ajoutant l&#39;élément **`<sysfilter>`** à partir de la définition du lien dans le formulaire de saisie :
 
 ```
 <input xpath="company">
@@ -302,7 +302,7 @@ Vous pouvez restreindre le choix des éléments de la cible en ajoutant l’él�
 </input>
 ```
 
-Vous pouvez aussi trier la liste avec l’élément **`<orderby>`** :
+Vous pouvez aussi trier la liste avec l&#39;élément **`<orderby>`** :
 
 ```
 <input xpath="company">
@@ -314,23 +314,23 @@ Vous pouvez aussi trier la liste avec l’élément **`<orderby>`** :
 
 ## Propriétés du contrôle {#control-properties}
 
-* **noAutoComplete** : désactive l&#39;auto-complétion (avec la valeur &quot;true&quot;)
-* **createMode** : crée le lien à la volée s&#39;il n&#39;existe pas, les valeurs possibles sont :
+* **noAutoComplete** : désactive l&#39;auto-complétion (avec la valeur &quot;true&quot;)
+* **createMode** : crée le lien à la volée s&#39;il n&#39;existe pas, les valeurs possibles sont :
 
-   * **none** : désactive la création, un message d&#39;erreur est affiché si le lien n&#39;existe pas
-   * **inline** : crée le lien avec le contenu dans la zone d&#39;édition
-   * **edition** : affiche la forme d&#39;édition sur le lien, la validation de la forme enregistre les données (mode par défaut)
+   * **none** : désactive la création, un message d&#39;erreur est affiché si le lien n&#39;existe pas
+   * **inline** : crée le lien avec le contenu dans la zone d&#39;édition
+   * **edition** : affiche la forme d&#39;édition sur le lien, la validation de la forme enregistre les données (mode par défaut)
 
-* **noZoom** : pas de forme d&#39;édition sur le lien (avec la valeur &quot;true&quot;)
-* **form** : surcharge la forme d&#39;édition de l&#39;élément ciblé
+* **noZoom** : pas de forme d&#39;édition sur le lien (avec la valeur &quot;true&quot;)
+* **form** : surcharge la forme d&#39;édition de l&#39;élément ciblé
 
-## Ajout d’une liste de liens (unbound) {#list-of-links}
+## Ajout d&#39;une liste de liens (unbound) {#list-of-links}
 
 Un lien renseigné dans le schéma de données en tant que élément de collection (@unbound=&quot;true&quot;) doit obligatoirement passer par une liste afin de visualiser l&#39;ensemble des éléments qui lui sont associés.
 
 Le principe consiste à afficher la liste des éléments liés avec un chargement des données optimisé (récupération par batch des données, exécution de la liste uniquement si elle est visible).
 
-Exemple de lien de collection dans un schéma :
+Exemple de lien de collection dans un schéma :
 
 ```
 <element label="Events" name="rcpEvent" target="cus:event" type="link" unbound="true">
@@ -338,7 +338,7 @@ Exemple de lien de collection dans un schéma :
 </element>
 ```
 
-La liste dans son formulaire de saisie :
+La liste dans son formulaire de saisie :
 
 ```
  <input xpath="rcpEvent" type="linklist">
@@ -349,7 +349,7 @@ La liste dans son formulaire de saisie :
 
 Le contrôle liste est defini par l&#39;attribut **type=&quot;linklist&quot;**, le chemin de la liste doit porter sur le lien de collection.
 
-Les colonnes sont déclarées via les éléments **`<input>`** fils de la liste. L’attribut **xpath** fait référence au chemin du champ dans le schéma cible.
+Les colonnes sont déclarées via les éléments **`<input>`** fils de la liste. L&#39;attribut **xpath** fait référence au chemin du champ dans le schéma cible.
 
 Une barre d&#39;outils avec un libellé (défini sur le lien dans le schéma) est automatiquement positionnée au-dessus de la liste.
 
@@ -357,9 +357,9 @@ La liste peut être filtrée à partir du bouton **[!UICONTROL Filtres]** et con
 
 Les boutons **[!UICONTROL Ajouter]** et **[!UICONTROL Supprimer]** permettent l&#39;ajout et la suppression des éléments de collection du lien. L&#39;ajout d&#39;un élément lance par défaut la forme d&#39;édition du schéma cible.
 
-Le bouton **[!UICONTROL Détail]** est automatiquement ajouté lorsque l’attribut **zoom=&quot;true&quot;** est renseigné sur la balise **`<input>`** de la liste : il permet de lancer la forme d’édition de la ligne sélectionnée.
+Le bouton **[!UICONTROL Détail]** est automatiquement ajouté lorsque l&#39;attribut **zoom=&quot;true&quot;** est renseigné sur la balise **`<input>`** de la liste : il permet de lancer la forme d&#39;édition de la ligne sélectionnée.
 
-Un filtre et un tri peuvent être appliqués lors du chargement de la liste :
+Un filtre et un tri peuvent être appliqués lors du chargement de la liste :
 
 ```
  <input xpath="rcpEvent" type="linklist">
@@ -374,13 +374,13 @@ Un filtre et un tri peuvent être appliqués lors du chargement de la liste :
 </input>
 ```
 
-## Définition d’une table de relation {#relationship-table}
+## Définition d&#39;une table de relation {#relationship-table}
 
 Une table de relation permet de lier deux tables avec une cardinalité N-N. La table de relation contient uniquement les liens vers les deux tables.
 
 L&#39;ajout d&#39;un élément dans la liste doit donc permettre de renseigner une liste à partir d&#39;un des deux liens de la table de relation.
 
-Exemple de table de relation dans un schéma :
+Exemple de table de relation dans un schéma :
 
 ```
 <srcSchema name="subscription" namespace="cus">
@@ -408,14 +408,14 @@ L&#39;attribut **xpathChoiceTarget** permet de lancer une forme de choix à part
 
 ### Propriétés de la liste {#list-properties}
 
-* **noToolbar** : cache la barre d&#39;outils (avec la valeur &quot;true&quot;)
-* **toolbarCaption** : surcharge le libellé de la barre d&#39;outils
-* **toolbarAlign** : modifie la géométrie verticale ou horizontale de la barre d&#39;outils (valeurs possibles : &quot;vertical&quot;|&quot;horizontal&quot;)
-* **img** : affiche l&#39;image associée à la liste
-* **form** : surcharge la forme d&#39;édition de l&#39;élément ciblé
-* **zoom** : ajoute le bouton **[!UICONTROL Zoom]** pour l&#39;édition de l&#39;élément ciblé
-* **xpathEditTarget** : fixe l&#39;édition sur le lien renseigné
-* **xpathChoiceTarget** : pour l&#39;ajout, lance la forme de choix sur le lien renseigné
+* **noToolbar** : cache la barre d&#39;outils (avec la valeur &quot;true&quot;)
+* **toolbarCaption** : surcharge le libellé de la barre d&#39;outils
+* **toolbarAlign** : modifie la géométrie verticale ou horizontale de la barre d&#39;outils (valeurs possibles : &quot;vertical&quot;|&quot;horizontal&quot;)
+* **img** : affiche l&#39;image associée à la liste
+* **form** : surcharge la forme d&#39;édition de l&#39;élément ciblé
+* **zoom** : ajoute le bouton **[!UICONTROL Zoom]** pour l&#39;édition de l&#39;élément ciblé
+* **xpathEditTarget** : fixe l&#39;édition sur le lien renseigné
+* **xpathChoiceTarget** : pour l&#39;ajout, lance la forme de choix sur le lien renseigné
 
 ## Ajout de contrôles de liste mémoire {#memory-list-controls}
 
@@ -423,7 +423,7 @@ Les listes mémoire permettent d&#39;éditer les éléments de collection avec l
 
 Ces listes sont utilisées sur les éléments de collections mappés en XML ou sur les liens à faible volume.
 
-## Ajout d’une liste à colonnes {#column-list}
+## Ajout d&#39;une liste à colonnes {#column-list}
 
 Ce contrôle affiche une liste à colonnes éditable avec une barre d&#39;outils contenant les boutons d&#39;ajout et de suppression.
 
@@ -442,7 +442,7 @@ Les colonnes sont déclarées dans les balises **`<input>`** enfants de la liste
 >
 >Les flèches d&#39;ordonnancement sont ajoutées automatiquement lorsque l&#39;attribut **ordered=&quot;true&quot;** est ajouté sur l&#39;élément de collection dans le schéma de données.
 
-Les boutons de la barre d&#39;outils peuvent être alignés horizontalement :
+Les boutons de la barre d&#39;outils peuvent être alignés horizontalement :
 
 ```
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true">
@@ -469,7 +469,7 @@ L&#39;insertion et l&#39;édition des données d&#39;une liste peut être rensei
 </input>
 ```
 
-Le formulaire d’édition est rempli à partir de l’élément `<form>` sous la définition de liste. Sa structure est identique à celle d’un formulaire de saisie. Le bouton **[!UICONTROL Détail]** est ajouté automatiquement lorsque l’attribut **zoom=&quot;true&quot;** est renseigné sur la balise **`<input>`** de la liste. Cet attribut permet de lancer le formulaire d’édition de la ligne sélectionnée.
+Le formulaire d&#39;édition est rempli à partir de l&#39;élément `<form>` sous la définition de liste. Sa structure est identique à celle d&#39;un formulaire de saisie. Le bouton **[!UICONTROL Détail]** est ajouté automatiquement lorsque l&#39;attribut **zoom=&quot;true&quot;** est renseigné sur la balise **`<input>`** de la liste. Cet attribut permet de lancer le formulaire d&#39;édition de la ligne sélectionnée.
 
 >[!NOTE]
 >
@@ -477,20 +477,20 @@ Le formulaire d’édition est rempli à partir de l’élément `<form>` sous l
 
 ### Propriétés de la liste {#list-properties-1}
 
-* **noToolbar** : cache la barre d&#39;outils (avec la valeur &quot;true&quot;)
-* **toolbarCaption** : surcharge le libellé de la barre d&#39;outils
-* **toolbarAlign** : modifie le positionnement de la barre d&#39;outils (valeurs possibles : &quot;vertical&quot;|&quot;horizontal&quot;)
-* **img** : affiche l&#39;image associée à la liste
-* **form** : surcharge la forme d&#39;édition de l&#39;élément ciblé
-* **zoom** : ajoute le bouton **[!UICONTROL Zoom]** pour l&#39;édition de l&#39;élément ciblé
-* **zoomOnAdd** : lance le forme d&#39;édition sur l&#39;ajout
-* **xpathChoiceTarget** : pour l&#39;ajout, lance la forme de choix sur le lien renseigné
+* **noToolbar** : cache la barre d&#39;outils (avec la valeur &quot;true&quot;)
+* **toolbarCaption** : surcharge le libellé de la barre d&#39;outils
+* **toolbarAlign** : modifie le positionnement de la barre d&#39;outils (valeurs possibles : &quot;vertical&quot;|&quot;horizontal&quot;)
+* **img** : affiche l&#39;image associée à la liste
+* **form** : surcharge la forme d&#39;édition de l&#39;élément ciblé
+* **zoom** : ajoute le bouton **[!UICONTROL Zoom]** pour l&#39;édition de l&#39;élément ciblé
+* **zoomOnAdd** : lance le forme d&#39;édition sur l&#39;ajout
+* **xpathChoiceTarget** : pour l&#39;ajout, lance la forme de choix sur le lien renseigné
 
 ## Ajout de champs non modifiables {#non-editable-fields}
 
-Pour afficher un champ et empêcher son édition, vous devez utiliser la balise **`<value>`** ou renseigner l’attribut **readOnly=&quot;true&quot;** sur la balise **`<input>`**.
+Pour afficher un champ et empêcher son édition, vous devez utiliser la balise **`<value>`** ou renseigner l&#39;attribut **readOnly=&quot;true&quot;** sur la balise **`<input>`**.
 
-Exemple sur le champ &quot;Genre&quot; :
+Exemple sur le champ &quot;Genre&quot; :
 
 ![](assets/do-not-localize/form_exemple16.png)
 
@@ -499,11 +499,11 @@ Exemple sur le champ &quot;Genre&quot; :
 <input xpath="@gender" readOnly="true"/>
 ```
 
-## Ajout d’un bouton radio {#radio-button}
+## Ajout d&#39;un bouton radio {#radio-button}
 
-Un bouton radio permet d’effectuer un choix parmi plusieurs options. Les balises **`<input>`** sont utilisées pour répertorier les options possibles et l’attribut **checkedValue** spécifie la valeur associée au choix.
+Un bouton radio permet d&#39;effectuer un choix parmi plusieurs options. Les balises **`<input>`** sont utilisées pour répertorier les options possibles et l&#39;attribut **checkedValue** spécifie la valeur associée au choix.
 
-Exemple sur le champ &quot;Genre&quot; :
+Exemple sur le champ &quot;Genre&quot; :
 
 ```
 <input type="RadioButton" xpath="@gender" checkedValue="0" label="Choice 1"/>
@@ -513,9 +513,9 @@ Exemple sur le champ &quot;Genre&quot; :
 
 ![](assets/do-not-localize/form_exemple17.png)
 
-## Ajout d’une case à cocher {#checkbox}
+## Ajout d&#39;une case à cocher {#checkbox}
 
-Une case à cocher permet de refléter un état booléen (qu’elle soit cochée ou non). Par défaut, ce contrôle est utilisé par les champs de type « booléen » (true/false). On peut associer à ce bouton une variable qui prendra par défaut la valeur 0 ou 1. Cette valeur peut être surchargée à partir de l’attribut **checkValue**.
+Une case à cocher permet de refléter un état booléen (qu&#39;elle soit cochée ou non). Par défaut, ce contrôle est utilisé par les champs de type &quot;booléen&quot; (true/false). On peut associer à ce bouton une variable qui prendra par défaut la valeur 0 ou 1. Cette valeur peut être surchargée à partir de l&#39;attribut **checkValue**.
 
 ```
 <input xpath="@boolean1"/>
@@ -545,9 +545,9 @@ Les contrôles à éditer sont regroupés dans un **`<container>`** renseigné s
 
 ![](assets/do-not-localize/form_exemple18.png)
 
-## Ajout d’un champ d’expression {#expression-field}
+## Ajout d&#39;un champ d&#39;expression {#expression-field}
 
-Un champ d’expression permet de mettre à jour dynamiquement un champ à partir d’une expression ; la balise **`<input>`** est utilisée avec un attribut **xpath** pour renseigner le chemin du champ à mettre à jour et un attribut **expr** contenant l’expression de mise à jour.
+Un champ d&#39;expression permet de mettre à jour dynamiquement un champ à partir d&#39;une expression ; la balise **`<input>`** est utilisée avec un attribut **xpath** pour renseigner le chemin du champ à mettre à jour et un attribut **expr** contenant l&#39;expression de mise à jour.
 
 ```
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->
@@ -563,14 +563,14 @@ L&#39;exécution d&#39;un formulaire de saisie initialise un document XML conten
 
 Pour modifier le contexte du formulaire, vous devez utiliser la balise `<set expr="<value>" xpath="<field>"/>`, où `<field>` est le chemin destination et `<value>` est la valeur ou expression de mise à jour.
 
-Exemples d’utilisation de la balise `<set>` :
+Exemples d&#39;utilisation de la balise `<set>` :
 
-* **`<set expr="'Test'" xpath="/tmp/@test" />`** : positionne la valeur &#39;Test&#39; à l’emplacement temporaire /tmp/@test1
-* **`<set expr="'Test'" xpath="@lastName" />`** : met à jour l’entité sur l’attribut &quot;lastName&quot; avec la valeur &#39;Test&#39;
+* **`<set expr="'Test'" xpath="/tmp/@test" />`** : positionne la valeur &#39;Test&#39; à l&#39;emplacement temporaire /tmp/@test1
+* **`<set expr="'Test'" xpath="@lastName" />`** : met à jour l&#39;entité sur l&#39;attribut &quot;lastName&quot; avec la valeur &#39;Test&#39;
 * **`<set expr="true" xpath="@boolean1" />`** : définit sur vrai (&quot;true&quot;) la valeur du champ &quot;boolean1&quot;
-* **`<set expr="@lastName" xpath="/tmp/@test" />`** : met à jour avec le contenu de l’attribut &quot;lastName&quot;
+* **`<set expr="@lastName" xpath="/tmp/@test" />`** : met à jour avec le contenu de l&#39;attribut &quot;lastName&quot;
 
-La mise à jour du contexte du formulaire peut être effectuée à l’initialisation et à la fermeture du formulaire, à partir des balises **`<enter>`** et **`<leave>`**.
+La mise à jour du contexte du formulaire peut être effectuée à l&#39;initialisation et à la fermeture du formulaire, à partir des balises **`<enter>`** et **`<leave>`**.
 
 ```
 <form name="recipient" namespace="cus">
@@ -592,7 +592,7 @@ La mise à jour du contexte du formulaire peut être effectuée à l’initialis
 
 Un macro-langage peut être utilisé dans la définition d&#39;un formulaire afin d&#39;effectuer des tests conditionnels.
 
-La balise **`<if expr="<expression>" />`** exécute les instructions spécifiées sous la balise si l’expression est vérifiée :
+La balise **`<if expr="<expression>" />`** exécute les instructions spécifiées sous la balise si l&#39;expression est vérifiée :
 
 ```
 <if expr="([/tmp/@test] == 'Test' or @lastName != 'Doe') and @boolean2 == true">
@@ -600,7 +600,7 @@ La balise **`<if expr="<expression>" />`** exécute les instructions spécifiée
 </if>
 ```
 
-La balise **`<check expr="<condition>" />`** combinée avec la balise **`<error>`** empêche la validation du formulaire et affiche un message d’erreur si la condition n’est pas respectée :
+La balise **`<check expr="<condition>" />`** combinée avec la balise **`<error>`** empêche la validation du formulaire et affiche un message d&#39;erreur si la condition n&#39;est pas respectée :
 
 ```
 <leave>
@@ -612,7 +612,7 @@ La balise **`<check expr="<condition>" />`** combinée avec la balise **`<error>
 
 ## Assistant  {#wizards}
 
-Un assistant vous guide à travers un ensemble d’étapes de saisie de données, présentées sous forme de pages. Les données saisies sont enregistrées lorsque vous validez le formulaire.
+Un assistant vous guide à travers un ensemble d&#39;étapes de saisie de données, présentées sous forme de pages. Les données saisies sont enregistrées lorsque vous validez le formulaire.
 
 Pour ajouter un assistant, utilisez le type de structure suivant :
 
@@ -629,15 +629,15 @@ Pour ajouter un assistant, utilisez le type de structure suivant :
 </form>
 ```
 
-La présence de l’attribut **type=&quot;wizard&quot;** sur l’élément `<form>` permet de définir le mode assistant dans la construction du formulaire. Les pages sont renseignées à partir d’éléments `<container>` qui sont des enfants de l’élément `<form>`. L’élément `<container>` d’une page est renseigné avec l’attribut title pour le titre, et l’attribut desc pour afficher la description sous le titre de la page. Les boutons **[!UICONTROL Précédent]** et **[!UICONTROL Suivant]** sont automatiquement ajoutés afin de naviguer de page en page.
+La présence de l&#39;attribut **type=&quot;wizard&quot;** sur l&#39;élément `<form>` permet de définir le mode assistant dans la construction du formulaire. Les pages sont renseignées à partir d&#39;éléments `<container>` qui sont des enfants de l&#39;élément `<form>`. L&#39;élément `<container>` d&#39;une page est renseigné avec l&#39;attribut title pour le titre, et l&#39;attribut desc pour afficher la description sous le titre de la page. Les boutons **[!UICONTROL Précédent]** et **[!UICONTROL Suivant]** sont automatiquement ajoutés afin de naviguer de page en page.
 
 Le bouton **[!UICONTROL Terminer]** enregistre les informations saisies et ferme le formulaire.
 
 ### Méthodes SOAP {#soap-methods}
 
-L’exécution d’une méthode SOAP peut être lancée à partir d’une balise **`<leave>`** renseignée en fin de page.
+L&#39;exécution d&#39;une méthode SOAP peut être lancée à partir d&#39;une balise **`<leave>`** renseignée en fin de page.
 
-La balise **`<soapcall>`** contient l’appel de la méthode avec les paramètres en entrée :
+La balise **`<soapcall>`** contient l&#39;appel de la méthode avec les paramètres en entrée :
 
 ```
 <soapCall name="<name>" service="<schema>">
@@ -646,20 +646,20 @@ La balise **`<soapcall>`** contient l’appel de la méthode avec les paramètre
 </soapCall>
 ```
 
-Le nom du service et son schéma d’implémentation sont renseignés à partir des attributs **name** et **service** de la balise **`<soapcall>`**.
+Le nom du service et son schéma d&#39;implémentation sont renseignés à partir des attributs **name** et **service** de la balise **`<soapcall>`**.
 
 Les paramètres en entrée sont décrits sur les éléments **`<param>`** sous la balise **`<soapcall>`**.
 
-Le type du paramètre doit être spécifié à partir de l&#39;attribut **type**. Les différents types possibles sont les suivants :
+Le type du paramètre doit être spécifié à partir de l&#39;attribut **type**. Les différents types possibles sont les suivants :
 
-* **string** : chaîne de caractères
-* **boolean** : booléen
-* **byte** : nombre entier 8 bits
-* **short** : nombre entier 16 bits
-* **long** : nombre entier 32 bits
-* **short** : nombre entier 16 bits
-* **double** : nombre flottant double précision
-* **DOMElement** : noeud de type élément
+* **string** : chaîne de caractères
+* **boolean** : booléen
+* **byte** : nombre entier 8 bits
+* **short** : nombre entier 16 bits
+* **long** : nombre entier 32 bits
+* **short** : nombre entier 16 bits
+* **double** : nombre flottant double précision
+* **DOMElement** : nœud de type élément
 
 L&#39;attribut **exprIn** contient l&#39;emplacement de la donnée à passer en paramètre.
 
