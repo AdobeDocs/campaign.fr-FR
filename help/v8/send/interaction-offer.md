@@ -1,20 +1,20 @@
 ---
 product: Adobe Campaign
-title: Offre d'interaction Campaign
+title: Offre de Campaign Interaction
 description: Découvrez comment créer une offre
-feature: Vue d’ensemble
+feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: 9cb1b38456601bce21d458fea42a5c112d9fafb4
 workflow-type: tm+mt
 source-wordcount: '953'
-ht-degree: 60%
+ht-degree: 98%
 
 ---
 
-# Création d’une offre
+# Création d&#39;une offre
 
-Pour créer une offre, procédez comme suit :
+Pour créer une offre, procédez comme suit :
 
 1. Accédez à l&#39;onglet **[!UICONTROL Campagnes]** et cliquez sur le lien **[!UICONTROL Offres]**.
 
@@ -26,27 +26,27 @@ Pour créer une offre, procédez comme suit :
 
    L&#39;offre est disponible dans la plateforme et son contenu peut être paramétré.
 
-## Paramètres d’éligibilité
+## Paramètres d&#39;éligibilité
 
-Vous pouvez désormais utiliser l’onglet **[!UICONTROL Eligibilité]** pour définir :
+Vous pouvez désormais utiliser l&#39;onglet **[!UICONTROL Éligibilité]** pour définir :
 
-* La période d’éligibilité de l’offre. [En savoir plus](#eligibility-period)
-* Filtres sur la population cible de l&#39;offre. [En savoir plus](#filters-on-the-target)
-* Le poids de l&#39;offre. [En savoir plus](#offer-weight)
+* La période d&#39;éligibilité de l&#39;offre. [En savoir plus](#eligibility-period)
+* Les filtres sur la population cible de l&#39;offre. [En savoir plus](#filters-on-the-target)
+* Le poids d&#39;offre. [En savoir plus](#offer-weight)
 
-### Période d&#39;éligibilité des offres{#eligibility-period}
+### La période d&#39;éligibilité de l&#39;offre{#eligibility-period}
 
-Dans l&#39;onglet **[!UICONTROL Eligibilité]** de l&#39;offre, définissez la période d&#39;éligibilité de l&#39;offre. utilisez les listes déroulantes pour sélectionner une date de début et une date de fin dans le calendrier.
+Dans l&#39;onglet **[!UICONTROL Éligibilité]** de l&#39;offre, définissez la période d&#39;éligibilité. Utilisez les listes déroulantes pour sélectionner une date de début et une date de fin dans le calendrier.
 
 ![](assets/offer_eligibility_create_002.png)
 
-En dehors de cette période, l&#39;offre ne sera pas sélectionnée. Si vous avez également paramétré des dates d&#39;éligibilité pour la catégorie de l&#39;offre, la période la plus restrictive s&#39;applique.
+En dehors de cette période, l&#39;offre ne sera pas sélectionnée. Si vous avez également paramétré des dates d&#39;éligibilité pour la catégorie d&#39;offre, la période la plus restrictive s&#39;applique.
 
 ### Ajouter des filtres sur la cible {#filters-on-the-target}
 
-Dans l&#39;onglet **[!UICONTROL Eligibilité]** de l&#39;offre, appliquez des filtres à la cible de l&#39;offre.
+Dans l&#39;onglet **[!UICONTROL Éligibilité]** de l&#39;offre, appliquez des filtres à la cible de l&#39;offre.
 
-Pour cela, cliquez sur le lien **[!UICONTROL Editer la requête]** et sélectionnez le filtre à appliquer.
+Pour cela, cliquez sur le lien **[!UICONTROL Édition de la requête]** et sélectionnez le filtre que vous souhaitez appliquer.
 
 ![](assets/offer_eligibility_create_003.png)
 
@@ -66,9 +66,9 @@ Par exemple, une offre peut avoir un poids A pour les contacts âgés de 18 à 2
 >
 >Le poids affecté peut être temporairement modifié en fonction des paramètres de la catégorie de l&#39;offre. [En savoir plus](interaction-offer-catalog.md#creating-offer-categories)
 
-Pour créer un poids dans une offre, procédez comme suit :
+Pour créer un poids dans une offre, procédez comme suit :
 
-1. Dans l&#39;onglet **[!UICONTROL Eligibilité]** de l&#39;offre, cliquez sur **[!UICONTROL Ajouter]**.
+1. Dans l&#39;onglet **[!UICONTROL Éligibilité]** de l&#39;offre, cliquez sur **[!UICONTROL Ajouter]**.
 
    ![](assets/offer_weight_create_001.png)
 
@@ -116,10 +116,10 @@ Utilisez l&#39;onglet **[!UICONTROL Contenu]** pour définir le contenu de l&#39
 
 1. Définissez les différents paramètres du contenu de l&#39;offre.
 
-   * **[!UICONTROL Titre]** : indiquez le titre que vous souhaitez faire apparaître dans votre offre. Attention, il ne s&#39;agit pas du libellé de l&#39;offre défini dans l&#39;onglet **[!UICONTROL Général]**.
-   * **[!UICONTROL URL]**  de destination : indiquez l’URL de votre offre. Il doit commencer par &quot;http://&quot; ou &quot;https://&quot;.
-   * **[!UICONTROL URL de l&#39;image]** : indiquez une URL ou un chemin d&#39;accès vers l&#39;image de votre offre.
-   * **[!UICONTROL Contenu HTML]** / **[!UICONTROL Contenu texte]** : saisissez le corps de votre offre dans l&#39;onglet de votre souhait. Pour générer le tracking, le **[!UICONTROL contenu HTML]** doit être constitué d&#39;éléments HTML intégrables dans un élément de type `<div>`. Par exemple, le résultat d&#39;un élément `<table>` dans la page HTML sera le suivant :
+   * **[!UICONTROL Titre]** : indiquez le titre que vous souhaitez faire apparaître dans votre offre. Attention, il ne s&#39;agit pas du libellé de l&#39;offre défini dans l&#39;onglet **[!UICONTROL Général]**.
+   * **[!UICONTROL URL de destination]** : indiquez l&#39;URL de votre offre. Elle doit débuter par &quot;http://&quot; ou &quot;https://&quot;.
+   * **[!UICONTROL URL de l&#39;image]** : indiquez une URL ou un chemin d&#39;accès vers l&#39;image de votre offre.
+   * **[!UICONTROL Contenu HTML]** / **[!UICONTROL Contenu texte]** : saisissez le corps de votre offre dans l&#39;onglet de votre souhait. Pour générer le tracking, le **[!UICONTROL contenu HTML]** doit être constitué d&#39;éléments HTML intégrables dans un élément de type `<div>`. Par exemple, le résultat d&#39;un élément `<table>` dans la page HTML sera le suivant :
 
    ```
       <div> 
@@ -136,7 +136,7 @@ Utilisez l&#39;onglet **[!UICONTROL Contenu]** pour définir le contenu de l&#39
       </div>
    ```
 
-   Découvrez comment définir l’URL d’acceptation dans [cette section](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted).
+   Découvrez comment définir l&#39;URL d&#39;acceptation dans [cette section](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted).
 
    ![](assets/offer_content_create_002.png)
 
@@ -146,7 +146,7 @@ Utilisez l&#39;onglet **[!UICONTROL Contenu]** pour définir le contenu de l&#39
 
    Dans notre exemple, l&#39;offre doit être constituée d&#39;un titre, d&#39;une image, d&#39;un contenu en HTML et d&#39;une URL de destination.
 
-## Prévisualiser l’offre {#previewing-the-offer}
+## Prévisualiser l&#39;offre {#previewing-the-offer}
 
 Une fois le contenu de l&#39;offre paramétré, vous pouvez prévisualiser l&#39;offre telle qu&#39;elle apparaîtra pour son destinataire.
 
@@ -178,22 +178,22 @@ Creating hypotheses is detailed in [this page](../../campaign/using/about-respon
 
 -->
 
-## Validation et activation d’une offre{#approve-offers}
+## Validation et activation d&#39;une offre{#approve-offers}
 
-Vous pouvez maintenant valider et activer l’offre pour la rendre disponible dans l’environnement **Live**.
+Vous pouvez maintenant valider et activer l&#39;offre pour la rendre disponible dans l&#39;environnement **En ligne**.
 
-[!DNL :arrow_upper_right:] Voir à ce propos la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=en#approving-offer-content)
+[!DNL :arrow_upper_right:] Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=fr#approving-offer-content).
 
 ## Gestion de la présentation des offres{#offer-presentation}
 
-Campaign vous permet de contrôler le flux des propositions d&#39;offres à l&#39;aide des règles de présentation. Ces règles, spécifiques à l&#39;interaction Campaign, sont des **règles de typologie**. Ils permettent d&#39;exclure les offres en fonction de l&#39;historique des propositions déjà faites à un destinataire. Ils sont référencés dans l’environnement.
+Campaign vous permet de contrôler le flux des propositions d&#39;offres à l&#39;aide des règles de présentation. Ces règles, spécifiques à Campaign Interaction, sont des **règles de typologie**. Elles permettent d&#39;exclure les offres en fonction de l&#39;historique des propositions déjà faites à un destinataire. Elles sont référencées dans l&#39;environnement.
 
-[!DNL :arrow_upper_right:] Voir à ce propos la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=en#managing-offers)
+[!DNL :arrow_upper_right:] Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=fr#managing-offers).
 
-## Simulation des offres
+## Simulation de l&#39;offre
 
-Le module Simulation vous permet de tester la répartition des offres d&#39;une catégorie ou d&#39;un environnement avant de lancer votre proposition auprès de vos destinataires.
+Le module Simulation vous permet de tester la répartition des offres d&#39;une catégorie ou d&#39;un environnement avant d&#39;envoyer votre proposition aux destinataires.
 
-La simulation prend en compte les contextes et les règles d&#39;éligibilité précédemment appliqués aux offres ainsi que leurs règles de présentation. Il est ainsi possible de tester et d&#39;affiner différentes versions de votre proposition sans utiliser effectivement une offre ou solliciter excessivement ou insuffisamment une cible. La simulation n&#39;a en effet aucun impact sur les destinataires ciblés.
+La simulation prend en compte les contextes et les règles d&#39;éligibilité précédemment appliqués aux offres ainsi que leurs règles de présentation. Il est ainsi possible de tester et d&#39;affiner différentes versions de votre proposition sans utiliser réellement une offre ou solliciter trop ou trop peu une cible, puisque la simulation n&#39;a aucun impact sur les destinataires ciblés.
 
-[!DNL :arrow_upper_right:] Pour plus d&#39;informations sur la simulation des offres, consultez la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en)
+[!DNL :arrow_upper_right:] Pour plus d&#39;informations sur la simulation de l&#39;offre, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en)
