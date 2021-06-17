@@ -8,7 +8,7 @@ title: Documentation Campaign v8
 source-git-commit: d45913ac1da7dc3a447fd27294256522b399f1d0
 workflow-type: tm+mt
 source-wordcount: '204'
-ht-degree: 81%
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 81%
    + [Fonctionnalités principales](start/whats-new.md)
    + [Notes de mise à jour](start/release-notes.md)
    + [Limites connues](start/known-limitations.md)
-   + [De Classic v7 à v8](start/capability-matrix.md)
+   + [Classic v7 à v8](start/capability-matrix.md)
 + Démarrage {#start}
    + [Prise en main](start/get-started.md)
    + [Profils et audiences](start/audiences.md)
@@ -32,10 +32,10 @@ ht-degree: 81%
    + [Mesures et rapports](start/reporting.md)
    + [FAQ](start/campaign-faq.md)
 + Implémentation {#implement}
-   + [Étapes de mise en œuvre](start/implement.md)
+   + [Étapes d&#39;implémentation](start/implement.md)
    + [Personnalisation de votre instance](dev/customize.md)
    + [Directives de sécurité](config/security.md)
-   + [Conception de formulaires et d’applications web](dev/webapps.md)
+   + [Conception de formulaires et d&#39;applications web](dev/webapps.md)
    + [Bonnes pratiques relatives aux modèles de données](dev/datamodel-best-practices.md)
 + Déploiement {#deploy}
    + [Matrice de compatibilité](start/compatibility-matrix.md)
@@ -43,39 +43,39 @@ ht-degree: 81%
    + [Autorisations](start/permissions.md)
    + [Panneau de contrôle](config/self-service.md)
 + Envoi {#send}
-   + [Emails ](send/email.md)
+   + [E-mails](send/email.md)
    + [SMS](send/sms.md)
    + [Notifications push](send/push.md)
    + [Messagerie LINE](send/line.md)
-   + [Canal Courrier](send/direct-mail.md)
+   + [Courrier](send/direct-mail.md)
    + [Messages transactionnels](send/transactional.md)
-   + Ajouter des offres{#interaction}
-      + [Prise en main de l’interaction](send/interaction.md)
+   + Ajout d&#39;offres{#interaction}
+      + [Prise en main d&#39;Interaction](send/interaction.md)
       + Définition des paramètres{#interaction}
-         + [Création d’opérateurs](send/interaction-operators.md)
-         + [Création d’environnements](send/interaction-env.md)
+         + [Création d&#39;opérateurs](send/interaction-operators.md)
+         + [Création d&#39;environnements](send/interaction-env.md)
          + [Création de filtres prédéfinis](send/interaction-predefined-filters.md)
-         + [Création d’emplacements d’offres](send/interaction-offer-spaces.md)
-      + [Créer un catalogue d’offres](send/interaction-offer-catalog.md)
-      + [Création d’une offre](send/interaction-offer.md)
-      + [Envoyer une offre](send/interaction-send-offers.md)
+         + [Création d&#39;emplacements](send/interaction-offer-spaces.md)
+      + [Création d&#39;un catalogue d&#39;offres](send/interaction-offer-catalog.md)
+      + [Création d&#39;une offre](send/interaction-offer.md)
+      + [Envoi d&#39;une offre](send/interaction-send-offers.md)
       + [Cas pratiques](send/interaction-use-cases.md)
 + Configuration {#config}
-   + [Automatisation à l’aide de workflows](config/workflows.md)
+   + [Automatisation à l&#39;aide de workflows](config/workflows.md)
    + [Gestion des données](config/replication.md)
-   + [Paramètres d’e-mail](config/email-settings.md)
+   + [Paramètres d&#39;e-mail](config/email-settings.md)
    + [Paramètres de messagerie transactionnelle](config/transactional-msg-settings.md)
    + [Paramètres de l’application mobile](config/push-config.md)
    + [Comptes externes](config/external-accounts.md)
 + Connexion {#connect}
-   + [Connexion à d’autres solutions](connect/integration.md)
+   + [Connexion à d&#39;autres solutions](connect/integration.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
-   + [Campaign + Triggers Experience Cloud](connect/ac-triggers.md)
+   + [Campaign + triggers Experience Cloud](connect/ac-triggers.md)
    + [Campaign + RTCDP](connect/ac-rtcdp.md)
    + [Campaign + Twitter](connect/ac-tw.md)
-   + [Campaign + Base de données externe](connect/fda.md)
+   + [Campaign + base de données externe](connect/fda.md)
    + [Campaign + votre CRM](connect/crm.md)
 + Ressources de développement {#architecture}
    + [Principes généraux](dev/general-architecture.md)
@@ -83,16 +83,16 @@ ht-degree: 81%
    + [Modèle de données](dev/datamodel.md)
    + Schémas et formulaires {#shemas-forms}
       + [Utilisation des schémas](dev/schemas.md)
-      + [Gestion des clés et unité](dev/keys.md)
+      + [Gestion des clés et unicité](dev/keys.md)
       + [Création de schémas](dev/create-schema.md)
       + [Extension de schémas](dev/extend-schema.md)
       + [Structure d&#39;un schéma](dev/schema-structure.md)
       + [Mapping de la base de données](dev/database-mapping.md)
-      + [Limitation de l’affichage des PI](dev/restrict-pi-view.md)
-      + [Utiliser une table de destinataires personnalisée](dev/custom-recipient.md)
-      + [mettre à jour la base de données.](dev/update-database-structure.md)
+      + [Limitation de l&#39;affichage des PI](dev/restrict-pi-view.md)
+      + [Utilisation d’une table des destinataires personnalisée](dev/custom-recipient.md)
+      + [Mise à jour de la base de données](dev/update-database-structure.md)
       + [Formulaires de saisie](dev/forms.md)
    + API {#api}
       + [Prise en main](dev/api.md)
       + [Nouvelles API](dev/new-apis.md)
-      + [Mécanisme d’évaluation des API](dev/staging.md)
+      + [Mécanisme d&#39;évaluation des API](dev/staging.md)
