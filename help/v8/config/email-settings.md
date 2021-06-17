@@ -2,13 +2,13 @@
 product: Adobe Campaign
 title: Paramètres du canal e-mail de Campaign
 description: Paramètres du canal e-mail de Campaign
-feature: Vue d’ensemble
+feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '278'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -16,39 +16,39 @@ ht-degree: 65%
 
 ## E-mail Cci
 
-Vous pouvez paramétrer Adobe Campaign pour conserver une copie des emails envoyés depuis votre plateforme.
+Vous pouvez paramétrer Adobe Campaign pour conserver une copie des e-mails envoyés depuis votre plateforme.
 
 >[!NOTE]
->La fonctionnalité Email Cci est facultative. Veuillez vérifier votre accord de licence.
+>La fonctionnalité E-mail Cci est facultative. Veuillez vérifier votre accord de licence.
 
-Adobe Campaign ne gère pas les fichiers archivés. Il vous permet d’envoyer les messages de votre choix à une adresse dédiée, à partir de laquelle ils peuvent être traités et archivés au moyen d’un système externe.
+Adobe Campaign ne gère pas les fichiers archivés. Il vous permet d&#39;envoyer les messages de votre choix à une adresse dédiée, à partir de laquelle ils peuvent être traités et archivés au moyen d&#39;un système externe.
 
-Pour ce faire, les fichiers .eml correspondant aux emails envoyés sont transférés vers un serveur distant, comme un serveur de messagerie SMTP. La destination de l&#39;archivage est une adresse email en Cci (invisible aux destinataires de la diffusion) que vous devez spécifier.
+Pour ce faire, les fichiers .eml correspondant aux e-mails envoyés sont transférés vers un serveur distant, comme un serveur de messagerie SMTP. La destination de l&#39;archivage est une adresse e-mail en Cci (invisible aux destinataires de la diffusion) que vous devez spécifier.
 
 Notez que :
 
-* Vous ne pouvez utiliser que **une** adresse email en Cci.
+* Vous ne pouvez utiliser qu&#39;**une seule** adresse e-mail en Cci.
 
-* Seuls les emails envoyés sont pris en compte, les retours ne le sont pas.
+* Seuls les e-mails envoyés sont pris en compte, les retours ne le sont pas.
 
-[!DNL :speech_balloon:] En tant qu’utilisateur Cloud Services géré,  [contactez ](../start/campaign-faq.md#support) Adobe pour activer la fonctionnalité Email Cci dans Campaign. L’adresse e-mail en Cci de votre choix doit être fournie à l’équipe Adobe qui la configurera pour vous.
+[!DNL :speech_balloon:] En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour activer l&#39;option E-mail Cci dans Campaign. L&#39;adresse e-mail en Cci de votre choix doit être fournie à l&#39;équipe Adobe qui la configurera pour vous.
 
-Une fois que la fonctionnalité E-mail Cci est configurée, assurez-vous qu’elle est activée dans le modèle de diffusion ou dans la diffusion via l’option **E-mail Cci**.
+Une fois que la fonctionnalité E-mail Cci est configurée, assurez-vous qu&#39;elle est activée dans le modèle de diffusion ou dans la diffusion via l&#39;option **E-mail Cci**.
 
 ![](assets/email-bcc.png)
 
 
-**Rubriques connexes** dans la documentation de Campaign Classic v7 :
+**Rubriques connexes** dans la documentation de Campaign Classic v7 :
 
 
-[!DNL :arrow_upper_right:] [Générer la page miroir](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#generating-mirror-page)
+[!DNL :arrow_upper_right:] [Générer la page miroir](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#generating-mirror-page)
 
-[!DNL :arrow_upper_right:] [Sélectionner le format d&#39;email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#selecting-message-formats)
+[!DNL :arrow_upper_right:] [Sélectionner le format d&#39;e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#selecting-message-formats)
 
-[!DNL :arrow_upper_right:] [Sélectionner le codage des caractères](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#character-encoding)
+[!DNL :arrow_upper_right:] [Sélectionner le codage des caractères](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#character-encoding)
 
-[!DNL :arrow_upper_right:] [Définition de l’adresse email rebond](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#managing-bounce-emails)
+[!DNL :arrow_upper_right:] [Définir l&#39;adresse e-mail de rebond](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#managing-bounce-emails)
 
-[!DNL :arrow_upper_right:] [Utiliser des modèles de diffusion email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr)
+[!DNL :arrow_upper_right:] [Utiliser des modèles de diffusion e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr)
 
-[!DNL :arrow_upper_right:] [Présentation des diffusions en échec](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html)
+[!DNL :arrow_upper_right:] [Comprendre les échecs de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr)
