@@ -2,14 +2,14 @@
 product: Adobe Campaign
 title: Prise en main des rapports de Campaign
 description: Prise en main des fonctionnalités de reporting de Campaign
-feature: Vue d’ensemble
+feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
 source-git-commit: 983b3cfc2f1569cd071848805e6b6b3411b4d6c6
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 15%
+ht-degree: 35%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Campaign fournit un ensemble d’outils de reporting répertoriés dans ce
 
 * **Analyse descriptive des données**
 
-   Adobe Campaign fournit un outil visuel pour produire des statistiques sur les données de la base. Vous pouvez créer des rapports d’analyse descriptifs à l’aide d’un assistant dédié et adapter leur contenu ainsi que leur mise en page en fonction de vos besoins.
+   Adobe Campaign fournit un outil visuel pour produire des statistiques sur les données de la base. Vous pouvez créer des rapports d&#39;analyse descriptifs à l&#39;aide d&#39;un assistant dédié et adapter leur contenu ainsi que leur mise en page en fonction de vos besoins.
 
    Utilisez **[!UICONTROL Outils > Analyse descriptive...]** pour créer un rapport.
 
@@ -52,10 +52,10 @@ Analysez et mesurez les données, calculez les statistiques, simplifiez et optim
 
    ![](assets/create-a-report.png)
 
-   En fonction de la complexité des requêtes, calculs et volumes, les données analysées dans ces rapports peuvent être collectées via une requête et pré-agrégées dans une liste (workflow de type data management) ou dans un cube (via Marketing Analytics). Il sera affiché sous la forme d&#39;un tableau croisé dynamique ou d&#39;une liste de groupes.
+   Selon la complexité des requêtes, des calculs et des volumes manipulés, les données analysées dans ces rapports peuvent être collectées via une requête et préagrégées dans une liste (workflow de type &quot;data management&quot;) ou dans un cube (via l&#39;utilisation de Marketing Analytics). Elles sont ensuite affichées sous la forme d&#39;un tableau croisé dynamique ou d&#39;une liste avec regroupement.
 
    [!DNL :arrow_upper_right:] Découvrez comment créer des cubes dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/designing-reports-with-cubes/about-cubes.html)
 
 
-Notez que les rapports Adobe Campaign sont optimisés et offrent de meilleures fonctionnalités d’échelle que Campaign Classic v7. Les limitations existantes sur les cubes ne s&#39;appliquent pas.
+Notez que les rapports Adobe Campaign sont optimisés et offrent de meilleures fonctionnalités d&#39;échelle que Campaign Classic v7. Les limitations existantes avec Cubes ne s&#39;appliquent pas.
 
