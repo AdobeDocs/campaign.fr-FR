@@ -1,28 +1,28 @@
 ---
 product: Adobe Campaign
-title: Catalogue d'offres d'interaction Campaign
-description: Découvrez comment créer un catalogue d’offres
-feature: Vue d’ensemble
+title: Catalogue d'offres de Campaign Interaction
+description: Découvrez comment créer un catalogue d'offres
+feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '1351'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
-# Envoyer une offre
+# Envoi d&#39;une offre
 
-Pour qu&#39;une offre puisse être sélectionnée par le moteur d&#39;offres, elle doit être validée et disponible dans un environnement **Live**. [En savoir plus](interaction-offer.md#approve-offers)
+Pour qu&#39;une offre puisse être sélectionnée par le moteur d&#39;offres, elle doit avoir été validée et être disponible dans un environnement **En ligne**. [En savoir plus](interaction-offer.md#approve-offers)
 
-La présentation des offres via un canal de communication sortant s&#39;effectue par courrier, email ou diffusions mobiles. Vous pouvez également utiliser le mode unitaire avec les messages transactionnels (Message Center).
+La présentation des offres via un canal de communication sortant s&#39;effectue par le biais de diffusions par courrier, par e-mail ou mobiles. Vous pouvez également utiliser le mode unitaire avec les messages transactionnels (Message Center).
 
 ## Insérer une offre dans une diffusion {#offer-into-a-delivery}
 
-Pour insérer des propositions d&#39;offres dans une diffusion, procédez comme suit :
+Pour insérer des propositions d&#39;offres dans une diffusion, procédez comme suit :
 
-1. Dans la fenêtre de diffusion, cliquez sur l&#39;icône **Offres** .
+1. Dans la fenêtre de diffusion, cliquez sur l&#39;icône **Offres**.
 
    ![](assets/offer_delivery_001.png)
 
@@ -44,7 +44,7 @@ Pour insérer des propositions d&#39;offres dans une diffusion, procédez comme 
 
    ![](assets/offer_delivery_006.png)
 
-1. Si nécessaire, sélectionnez l’option **[!UICONTROL Ne rien afficher si aucune offre n’est sélectionnée]** . [En savoir plus](#parameters-for-calling-offer-engine)
+1. Si besoin, sélectionnez l&#39;option **[!UICONTROL Ne rien afficher si aucune offre n&#39;est sélectionnée]**. [En savoir plus](#parameters-for-calling-offer-engine)
 
    ![](assets/offer_delivery_007.png)
 
@@ -52,23 +52,23 @@ Pour insérer des propositions d&#39;offres dans une diffusion, procédez comme 
 
    ![](assets/offer_delivery_008.png)
 
-1. Finalisez le contenu, testez et envoyez votre diffusion.
+1. Finalisez le contenu, puis testez et envoyez votre diffusion.
 
    ![](assets/offer_delivery_010.png)
 
 
-### Paramètres du moteur d’offres {#parameters-for-calling-offer-engine}
+### Paramètres du moteur d&#39;offres {#parameters-for-calling-offer-engine}
 
-* **[!UICONTROL Emplacement]** : emplacement de l&#39;environnement des offres à choisir obligatoirement afin d&#39;activer le moteur d&#39;offres.
-* **[!UICONTROL Catégorie]** : dossier spécifique dans lequel les offres sont classées. Si aucune catégorie n&#39;est spécifiée, c&#39;est la totalité des offres contenues dans l&#39;environnement qui seront prises en compte par le moteur d&#39;offres, sauf si un thème est sélectionné.
-* **[!UICONTROL Thèmes]** : mots-clés définis préalablement au niveau des catégories. Ils agissent comme un filtre et permettent d&#39;affiner les offres à présenter en les sélectionnant dans un ensemble de catégories.
-* **[!UICONTROL Nombre de propositions]** : nombre d&#39;offres renvoyées par le moteur qui pourront être insérées dans le corps de la diffusion. Si elles ne sont pas insérées dans le message, les offres seront néanmoins générées, mais non présentées.
-* **[!UICONTROL Exclure les destinataires non éligibles]** : cette option permet d&#39;activer ou non l&#39;exclusion des destinataires pour lesquels il n&#39;y a pas assez d&#39;offres éligibles. Pour chaque destinataire, il se peut que le nombre de propositions éligibles soit inférieur au nombre de propositions requis. En cochant cette case, les destinataires pour lesquels le nombre de propositions requis n&#39;est pas atteint seront exclus de la diffusion. Si vous ne sélectionnez pas cette option, ces destinataires seront conservés, mais ils auront un nombre de propositions inférieur au nombre demandé.
-* **[!UICONTROL Ne rien afficher si aucune offre n&#39;est sélectionnée]** : cette option permet de choisir le traitement du message au cas où l&#39;une des propositions n&#39;existerait pas. En cochant cette case, la représentation de la proposition manquante ne s&#39;affichera pas et aucun contenu n&#39;apparaîtra dans le message pour cette proposition. Si la case est décochée, le message lui-même est annulé au moment de l&#39;envoi et les destinataires ne recevront aucun message.
+* **[!UICONTROL Emplacement]** : emplacement de l&#39;environnement des offres à choisir obligatoirement afin d&#39;activer le moteur d&#39;offres.
+* **[!UICONTROL Catégorie]** : dossier spécifique dans lequel les offres sont classées. Si aucune catégorie n&#39;est spécifiée, c&#39;est la totalité des offres contenues dans l&#39;environnement qui seront prises en compte par le moteur d&#39;offres, sauf si un thème est sélectionné.
+* **[!UICONTROL Thèmes]** : mots-clés définis préalablement au niveau des catégories. Ils agissent comme un filtre et permettent d&#39;affiner les offres à présenter en les sélectionnant dans un ensemble de catégories.
+* **[!UICONTROL Nombre de propositions]** : nombre d&#39;offres renvoyées par le moteur qui pourront être insérées dans le corps de la diffusion. Si elles ne sont pas insérées dans le message, les offres seront néanmoins générées, mais non présentées.
+* **[!UICONTROL Exclure les destinataires non éligibles]** : cette option permet d&#39;activer ou non l&#39;exclusion des destinataires pour lesquels il n&#39;y a pas assez d&#39;offres éligibles. Pour chaque destinataire, il se peut que le nombre de propositions éligibles soit inférieur au nombre de propositions requis. En cochant cette case, les destinataires pour lesquels le nombre de propositions requis n&#39;est pas atteint seront exclus de la diffusion. Si vous ne sélectionnez pas cette option, ces destinataires seront conservés, mais ils auront un nombre de propositions inférieur au nombre demandé.
+* **[!UICONTROL Ne rien afficher si aucune offre n&#39;est sélectionnée]** : cette option permet de choisir le traitement du message au cas où l&#39;une des propositions n&#39;existerait pas. En cochant cette case, la représentation de la proposition manquante ne s&#39;affichera pas et aucun contenu n&#39;apparaîtra dans le message pour cette proposition. Si la case est décochée, le message lui-même est annulé au moment de l&#39;envoi et les destinataires ne recevront aucun message.
 
-## Envoi d’offres dans des workflows
+## Envoi d&#39;offres dans des workflows
 
-Plusieurs activités de workflow permettent de définir la présentation des offres :
+Plusieurs activités de workflow permettent de définir la présentation des offres :
 
 * Enrichissement
 * Moteur d&#39;offres
@@ -76,9 +76,9 @@ Plusieurs activités de workflow permettent de définir la présentation des off
 
 ### Enrichissement {#enrichment}
 
-L&#39;activité **Enrichissement** permet d&#39;ajouter des offres ou des liens vers des offres destinées à des destinataires de diffusion.
+L&#39;activité **Enrichissement** vous permet d&#39;ajouter des offres ou des liens vers des offres pour les destinataires d&#39;une diffusion.
 
-[!DNL :arrow_upper_right:] Pour plus d&#39;informations sur l&#39;activité Enrichissement, consultez la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html)
+[!DNL :arrow_upper_right:] Pour plus d&#39;informations sur l&#39;activité Enrichissement, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html?lang=fr)
 
 Vous pouvez par exemple enrichir les données d&#39;une requête sur les destinataires, avant une diffusion.
 
@@ -89,24 +89,24 @@ Deux méthodes permettent de définir des propositions d&#39;offre.
 * En définissant une offre ou un appel au moteur d&#39;offres.
 * En référençant un lien vers une offre.
 
-#### Spécifiez une offre ou un appel au moteur d’offres {#specifying-an-offer-or-a-call-to-the-offer-engine}
+#### Spécifier une offre ou un appel au moteur {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-Après avoir configuré votre activité **Requête** :
+Après avoir configuré votre activité **Requête** :
 
-1. Ajoutez et ouvrez une activité **Enrichissement** .
+1. Placez et ouvrez une activité **Enrichissement**.
 1. Dans l&#39;onglet **[!UICONTROL Enrichissement]**, sélectionnez **[!UICONTROL Ajouter des données]**.
 1. Sélectionnez **[!UICONTROL Une proposition d&#39;offre]** dans les types de données à ajouter.
 
    ![](assets/int_enrichment_offer2.png)
 
 1. Indiquez un identifiant ainsi qu&#39;un libellé pour la proposition qui sera ajoutée.
-1. Définissez la sélection de l&#39;offre. Deux options sont possibles :
+1. Définissez la sélection de l&#39;offre. Deux options sont possibles :
 
-   * **[!UICONTROL Rechercher la meilleure offre dans une catégorie]** : cochez cette option et définissez les paramètres de l&#39;appel au moteur d&#39;offres (emplacement, catégorie ou thème(s), date de contact, nombre d&#39;offres à conserver). Le moteur calculera automatiquement la ou les offres à ajouter en fonction de ces paramètres. Il est conseillé de ne pas renseigner les champs **[!UICONTROL Catégorie]** et **[!UICONTROL Thèmes]** en même temps.
+   * **[!UICONTROL Rechercher la meilleure offre dans une catégorie]** : cochez cette option et définissez les paramètres de l&#39;appel au moteur d&#39;offres (emplacement, catégorie ou thème(s), date de contact, nombre d&#39;offres à conserver). Le moteur calculera automatiquement la ou les offres à ajouter en fonction de ces paramètres. Il est conseillé de ne pas renseigner les champs **[!UICONTROL Catégorie]** et **[!UICONTROL Thèmes]** en même temps.
 
       ![](assets/int_enrichment_offer3.png)
 
-   * **[!UICONTROL Une offre prédéfinie]** : cochez cette option et définissez un emplacement, une offre précise, ainsi qu&#39;une date de contact afin de directement paramétrer l&#39;offre que vous souhaitez ajouter, sans appeler le moteur d&#39;offres.
+   * **[!UICONTROL Une offre prédéfinie]** : cochez cette option et définissez un emplacement, une offre précise, ainsi qu&#39;une date de contact afin de directement paramétrer l&#39;offre que vous souhaitez ajouter, sans appeler le moteur d&#39;offres.
 
       ![](assets/int_enrichment_offer4.png)
 
@@ -118,7 +118,7 @@ Après avoir configuré votre activité **Requête** :
 
 #### Référencer un lien vers une offre {#referencing-a-link-to-an-offer}
 
-Vous pouvez également référencer un lien vers une offre dans une activité **Enrichissement**.
+Vous avez également la possibilité de référencer un lien vers une offre dans une activité **Enrichissement**.
 
 Pour ce faire, procédez comme suit :
 
@@ -138,17 +138,17 @@ Pour ce faire, procédez comme suit :
    >
    >Le nombre de propositions disponibles pour la prévisualisation dépend du paramétrage réalisé dans la diffusion.
 
-#### Classement et poids des offres du magasin {#storing-offer-rankings-and-weights}
+#### Stocker le rang et le poids des offres {#storing-offer-rankings-and-weights}
 
-Par défaut, lorsqu&#39;une activité **Enrichissement** est utilisée pour diffuser des offres, leur rang et leur poids ne sont pas stockés dans la table des propositions.
+Par défaut, lorsque l&#39;activité **Enrichissement** est utilisée pour diffuser des offres, leur rang ainsi que leur poids ne sont pas stockés dans la table des propositions.
 
 >[!NOTE]
 >
 >L&#39;activité **[!UICONTROL Moteur d&#39;offres]** stocke bien ces informations par défaut.
 
-Cependant, il est possible de stocker ces informations de la manière suivante :
+Cependant, il est possible de stocker ces informations de la manière suivante :
 
-1. Créez un appel au moteur d’offre dans une activité d’enrichissement placée après une requête et avant une activité de diffusion. [En savoir plus](#specifying-an-offer-or-a-call-to-the-offer-engine)
+1. Créez un appel au moteur d&#39;offre dans une activité d&#39;enrichissement placée après une requête et avant une activité de diffusion. [En savoir plus](#specifying-an-offer-or-a-call-to-the-offer-engine)
 1. Dans la fenêtre principale de l&#39;activité, sélectionnez **[!UICONTROL Editer les données additionnelles]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
@@ -165,13 +165,13 @@ La diffusion stocke automatiquement le rang et le poids des offres. Ces informat
 
 L&#39;activité **[!UICONTROL Moteur d&#39;offres]** vous permet également de définir un appel au moteur d&#39;offres en amont d&#39;une diffusion.
 
-[!DNL :arrow_upper_right:] Pour plus d&#39;informations sur l&#39;activité  **Moteur d&#39;offres, reportez-vous à la documentation de**   [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html)
+[!DNL :arrow_upper_right:] Pour plus d&#39;informations sur l&#39;activité **Moteur d&#39;offres**, reportez-vous à la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html?lang=fr)
 
 Cette activité fonctionne sur le même principe que l&#39;activité **Enrichissement** avec un appel au moteur, en enrichissant les données de la population entrante avec une offre calculée par le moteur, avant une diffusion.
 
 ![](assets/int_offerengine_activity2.png)
 
-Après avoir configuré votre activité **Requête** :
+Après avoir configuré votre activité **Requête** :
 
 1. Placez et ouvrez une activité **[!UICONTROL Moteur d&#39;offres]**.
 1. Renseignez les différents champs disponibles afin de définir les paramètres d&#39;appel au moteur (emplacement, catégorie ou thème(s), date de contact, nombre d&#39;offres à conserver). Le moteur calculera automatiquement la ou les offres à ajouter en fonction de ces paramètres.
@@ -188,13 +188,13 @@ Après avoir configuré votre activité **Requête** :
 
 L&#39;activité **[!UICONTROL Offres par cellules]** vous permet de répartir la population entrante (par exemple issue d&#39;une requête) en plusieurs segments, et de définir une offre à proposer pour chacun de ces segments.
 
-[!DNL :arrow_upper_right:] Pour plus d&#39;informations sur l&#39; **offre par** activité de cellule, consultez la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html)
+[!DNL :arrow_upper_right:] Pour plus d&#39;informations sur l&#39;activité **Offre par cellule**, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html?lang=fr)
 
-Pour cela :
+Pour cela :
 
 1. Placez l&#39;activité **[!UICONTROL Offres par cellules]** après avoir défini la population cible, puis ouvrez-là.
 1. Dans l&#39;onglet **[!UICONTROL Général]**, sélectionnez l&#39;emplacement sur lequel vous souhaitez proposer les offres.
-1. Dans l&#39;onglet **[!UICONTROL Cellules]**, définissez les différents sous-ensembles via le bouton **[!UICONTROL Ajouter]** :
+1. Dans l&#39;onglet **[!UICONTROL Cellules]**, définissez les différents sous-ensembles via le bouton **[!UICONTROL Ajouter]** :
 
    * Définissez la population du sous-ensemble grâce aux règles de filtrage et de limitation disponibles.
    * Sélectionnez ensuite l&#39;offre que vous souhaitez proposer au sous-ensemble. Les offres disponibles sont celles éligibles sur l&#39;emplacement sélectionné à l&#39;étape précédente.
