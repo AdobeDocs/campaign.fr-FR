@@ -5,29 +5,29 @@ description: Découvrez comment étendre les schémas Campaign
 source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 81%
+ht-degree: 84%
 
 ---
 
-# Extension d’un schéma{#extend-schemas}
+# Extension d&#39;un schéma{#extend-schemas}
 
-En tant qu’utilisateur technique, vous pouvez personnaliser le modèle de données Campaign pour répondre aux besoins de votre implémentation. Vous pouvez notamment ajouter des éléments à un schéma existant, modifier un élément dans un schéma ou supprimer des éléments.
+En tant qu&#39;utilisateur technique, vous pouvez personnaliser le modèle de données Campaign pour répondre aux besoins de votre implémentation. Vous pouvez notamment ajouter des éléments à un schéma existant, modifier un élément dans un schéma ou supprimer des éléments.
 
 Les étapes clés de personnalisation du modèle de données Campaign sont les suivantes :
 
-1. Création d’un schéma d’extension
+1. Création d&#39;un schéma d&#39;extension
 1. Mise à jour de la base de données Campaign
 1. Adaptation du formulaire de saisie
 
 >[!CAUTION]
->Le schéma prédéfini ne doit pas être modifié directement. Si vous devez adapter un schéma prédéfini, vous devez l’étendre.
+>Le schéma prédéfini ne doit pas être modifié directement. Si vous devez adapter un schéma prédéfini, vous devez l&#39;étendre.
 
 [!DNL :bulb:] Pour une meilleure compréhension des tables intégrées de Campaign et de leur interaction, consultez [cette page](datamodel.md). Voir également les recommandations lors de la création d’un nouveau schéma dans [cette page](create-schema.md).
 
 Pour étendre un schéma, procédez comme suit :
 
-1. Accédez au dossier **[!UICONTROL Administration > Configuration > Schémas de données]** dans l’Explorateur.
-1. Cliquez sur le bouton **Nouveau** et sélectionnez **[!UICONTROL Étendre les données d’une table à l’aide d’un schéma d’extension]**.
+1. Accédez au dossier **[!UICONTROL Administration > Configuration > Schémas de données]** dans l&#39;Explorateur.
+1. Cliquez sur le bouton **Nouveau** et sélectionnez **[!UICONTROL Étendre les données d&#39;une table à l&#39;aide d&#39;un schéma d&#39;extension]**.
 
    ![](assets/extend-schema-option.png)
 
@@ -35,11 +35,11 @@ Pour étendre un schéma, procédez comme suit :
 
    ![](assets/extend-schema-select.png)
 
-   Par convention, nommez le schéma d’extension de la même manière que le schéma prédéfini et utilisez un espace de noms personnalisé.  Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces)
+   Par convention, nommez le schéma d&#39;extension de la même manière que le schéma prédéfini et utilisez un espace de noms personnalisé.  Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces)
 
    ![](assets/extend-schema-validate.png)
 
-1. Une fois dans l’éditeur de schémas, ajoutez les éléments dont vous avez besoin à l’aide du menu contextuel, puis enregistrez votre schéma.
+1. Une fois dans l&#39;éditeur de schémas, ajoutez les éléments dont vous avez besoin à l&#39;aide du menu contextuel, puis enregistrez votre schéma.
 
    ![](assets/extend-schema-edit.png)
 
@@ -59,7 +59,7 @@ Pour étendre un schéma, procédez comme suit :
    </srcSchema>
    ```
 
-1. Déconnectez-vous et reconnectez-vous à Campaign pour vérifier la mise à jour de la structure du schéma dans l’onglet **[!UICONTROL Structure]**.
+1. Déconnectez-vous et reconnectez-vous à Campaign pour vérifier la mise à jour de la structure du schéma dans l&#39;onglet **[!UICONTROL Structure]**.
 
    ![](assets/extend-schema-structure.png)
 
