@@ -2,34 +2,34 @@
 product: Adobe Campaign
 title: Envoi de notification push avec Adobe Campaign
 description: Prise en main des notifications push dans Campaign
-feature: Vue d’ensemble
+feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: aa3f2f17981ad10221771b3a22c76f7a445b94c9
 workflow-type: tm+mt
 source-wordcount: '820'
-ht-degree: 43%
+ht-degree: 56%
 
 ---
 
 # Création et envoi de notifications push
 
-Les diffusions d’applications mobiles vous permettent d’envoyer des notifications aux systèmes iOS et Android.
+Les diffusions d&#39;applications mobiles vous permettent d&#39;envoyer des notifications aux systèmes iOS et Android.
 
 Pour envoyer des notifications push dans Adobe Campaign, vous devez effectuer les opérations suivantes :
 
 1. Configuration de votre environnement Campaign
-1. Créez un service d’information de type application mobile pour votre application mobile.
+1. Créez un service d&#39;information de type application mobile pour votre application mobile.
 1. Ajoutez, à ce service, les versions iOS et Android de l&#39;application.
 1. Créez une diffusion pour iOS et Android.
 
-[!DNL :arrow_upper_right:] Découvrez comment commencer à utiliser les applications mobiles dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=fr)
+[!DNL :arrow_upper_right:] Découvrez comment prendre en main les applications mobiles dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=fr).
 
 ## Intégration au SDK Adobe
 
 ### Intégration du SDK Campaign
 
-Le SDK Campaign facilite l’intégration de votre application mobile à la plateforme Adobe Campaign.
+Le SDK Campaign facilite l&#39;intégration de votre application mobile à la plateforme Adobe Campaign.
 
 Les versions des SDK compatibles sont répertoriées dans la [matrice de compatibilité Campaign](../start/compatibility-matrix.md#MobileSDK).
 
@@ -38,19 +38,19 @@ Les versions des SDK compatibles sont répertoriées dans la [matrice de compati
 -->
 
 
-### Configuration de l’extension Campaign dans Launch
+### Configuration de l&#39;extension Campaign dans Launch
 
-Vous pouvez intégrer le SDK Adobe Experience Platorm Launch à Campaign à l’aide de l’extension Campaign Classic.
+Vous pouvez intégrer le SDK Adobe Experience Platorm Launch à Campaign à l&#39;aide de l&#39;extension Campaign Classic.
 
-[!DNL :arrow_upper_right:] En savoir plus dans la documentation du SDK Mobile  [Adobe](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic)
+[!DNL :arrow_upper_right:] Apprenez-en davantage en consultant la [documentation du SDK mobile Adobe](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic).
 
 ## Configuration des paramètres de votre application dans Campaign
 
 Vous devez définir les paramètres de vos applications iOS et Android dans Adobe Campaign.
 
-[!DNL :arrow_upper_right:] Les instructions de configuration pour iOS sont présentées dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=fr#sending-messages)
+[!DNL :arrow_upper_right:] Les instructions de configuration pour iOS sont décrites dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=fr#sending-messages).
 
-[!DNL :arrow_upper_right:] Les instructions de configuration pour Android sont détaillées dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=fr#sending-messages)
+[!DNL :arrow_upper_right:] Les instructions de configuration pour Android sont décrites dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=fr#sending-messages).
 
 ## Création de votre première notification push
 
@@ -66,7 +66,7 @@ Pour créer une nouvelle diffusion, accédez à l&#39;onglet **[!UICONTROL Campa
 
 ![](assets/delivery_step_1.png)
 
-[!DNL :arrow_upper_right:] Pour plus d&#39;informations sur la création d&#39;une diffusion, reportez-vous à la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=fr#sending-messages).
+[!DNL :arrow_upper_right:] Pour plus d&#39;informations globales sur la création d&#39;une diffusion, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=fr#sending-messages).
 
 ### Envoi de notifications sur iOS {#send-notifications-on-ios}
 
@@ -134,15 +134,15 @@ Pour créer une nouvelle diffusion, accédez à l&#39;onglet **[!UICONTROL Campa
 
 ## Tester, envoyer et surveiller vos notifications push
 
-L&#39;envoi du BAT et l&#39;envoi final de la notification s&#39;effectuent de la même manière que pour une diffusion par e-mail. En savoir plus dans la documentation de Campaign Classic v7 :
+L&#39;envoi du BAT et l&#39;envoi final de la notification s&#39;effectuent de la même manière que pour une diffusion par e-mail. Apprenez-en davantage en consultant la documentation de Campaign Classic v7 :
 
 * Valider une diffusion et envoyer des BAT
-   [!DNL :arrow_upper_right:] [Découvrez les étapes clés de validation d&#39;une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr)
+   [!DNL :arrow_upper_right:] [En savoir plus sur les étapes clés de validation d&#39;une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr)
 
 * Confirmer et envoyer la diffusion
    [!DNL :arrow_upper_right:] [Découvrez les étapes clés pour envoyer une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en)
 
-Après l&#39;envoi des messages, vous pouvez suivre et suivre vos diffusions. En savoir plus dans la documentation de Campaign Classic v7 :
+Après l&#39;envoi des messages, vous pouvez suivre et suivre vos diffusions. Apprenez-en davantage en consultant la documentation de Campaign Classic v7 :
 
 * Quarantaines des notifications push
    [!DNL :arrow_upper_right:] [En savoir plus sur les quarantaines des notifications push](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#push-notification-quarantines)
