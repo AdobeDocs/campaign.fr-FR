@@ -2,14 +2,14 @@
 product: Adobe Campaign
 title: Connecter Campaign à vos solutions
 description: découvrez comment connecter Campaign à vos solutions
-feature: Vue d’ensemble
+feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
 workflow-type: tm+mt
 source-wordcount: '361'
-ht-degree: 71%
+ht-degree: 94%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 71%
 
 Vous pouvez connecter votre instance Campaign aux solutions Adobe Experience Cloud pour combiner les fonctionnalités.
 
-Adobe Campaign s’accompagne de plusieurs connecteurs qui vous permettent de communiquer avec des applications externes, de vous connecter à des moteurs de base de données, ainsi que de partager et de synchroniser des données.
+Adobe Campaign s&#39;accompagne de plusieurs connecteurs qui vous permettent de communiquer avec des applications externes, de vous connecter à des moteurs de base de données, ainsi que de partager et de synchroniser des données.
 
 ## Utilisation des solutions Adobe {#gs-ac-integration}
 
-Modernisez votre implémentation et exploitez toutes les fonctionnalités d’Adobe Experience Cloud.
+Modernisez votre implémentation et exploitez toutes les fonctionnalités d&#39;Adobe Experience Cloud.
 
-[!DNL :speech_balloon:] En tant qu’utilisateur Cloud Services géré,  [contactez ](../start/campaign-faq.md#support) Adobe pour connecter Campaign aux services et solutions Adobe Experience Cloud. Vous devez implémenter Adobe Identity Management Service (IMS). [En savoir plus](../start/connect.md#connect-ims)
+[!DNL :speech_balloon:] En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour connecter Campaign aux services et solutions Adobe Experience Cloud. Vous devez implémenter Adobe Identity Management Service (IMS). [En savoir plus](../start/connect.md#connect-ims)
 
 Campaign v8 peut se connecter à :
 
@@ -31,33 +31,33 @@ Campaign v8 peut se connecter à :
 * [CDP en temps réel de Adobe Experience Cloud](../connect/ac-rtcdp.md)
 * [Adobe Journey Orchestration](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=fr).
 
-   Voir le cas pratique de bout en bout [ici](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html).
+   Voir le cas pratique de bout en bout [ici](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=fr).
 
-* [Adobe Analytics      ](../connect/ac-aa.md)
+* [Adobe Analytics](../connect/ac-aa.md)
 * [Adobe Experience Manager](../connect/ac-aem.md)
 * [Triggers Adobe Experience Cloud](../connect/ac-triggers.md)
 * [Adobe Target](../connect/ac-at.md)
 
-Vous pouvez également combiner vos **audiences** et vos **ressources** sur les différentes solutions Experience Cloud avec les fonctionnalités de partage des ressources et d’audiences.
+Vous pouvez également combiner vos **audiences** et vos **ressources** dans les différentes solutions Experience Cloud avec les fonctionnalités de partage de ressources et d&#39;audiences.
 
-[!DNL :arrow_upper_right:] En savoir plus sur le  **partage d’** audiences entre Campaign et les solutions Experience Cloud dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=fr#integrating-with-adobe-experience-cloud)
+[!DNL :arrow_upper_right:] Apprenez-en davantage sur le **partage d&#39;audiences** entre les solutions Experience Cloud et Campaign dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=fr#integrating-with-adobe-experience-cloud)
 
-[!DNL :arrow_upper_right:] En savoir plus sur le  **partage de ressources entre Campaign et les solutions Experience Cloud dans la documentation**   [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=fr#integrating-with-adobe-experience-cloud)
+[!DNL :arrow_upper_right:] Apprenez-en davantage sur le **partage de ressources** entre les solutions Experience Cloud et Campaign dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=fr#integrating-with-adobe-experience-cloud)
 
 ## Connecteurs CRM{#gs-crm-connectors}
 
 Vous pouvez connecter votre plateforme Adobe Campaign à vos **systèmes CRM tiers** et synchroniser les données : contacts, comptes, achats, etc.
 
-Activez vos données CRM lors de la communication cross-canal et découvrez comment transmettre des contacts de votre système de gestion de la relation client à Adobe Campaign. Partagez également les données de campagne d’Adobe Campaign avec votre système CRM.
-Les connecteurs CRM permettent une intégration rapide et facile des données. Adobe Campaign fournit en effet un assistant dédié à la collecte et à la sélection des tables disponibles dans le système CRM. Cela garantit une synchronisation bidirectionnelle et permet de s’assurer que les données sont à jour en tout temps, et ce, sur l’ensemble des systèmes.
+Activez vos données CRM lors de la communication cross-canal et découvrez comment transmettre des contacts de votre système de gestion de la relation client à Adobe Campaign. Partagez également les données de campagne d&#39;Adobe Campaign avec votre système CRM.
+Les connecteurs CRM permettent une intégration rapide et facile des données. Adobe Campaign fournit en effet un assistant dédié à la collecte et à la sélection des tables disponibles dans le système CRM. Cela garantit une synchronisation bidirectionnelle et permet de s&#39;assurer que les données sont à jour en tout temps, et ce, sur l&#39;ensemble des systèmes.
 
-[!DNL :bulb:] Découvrez comment intégrer Campaign à Microsoft Dynamics 365 et Salesforce.com dans  [cette page](crm.md)
+[!DNL :bulb:] Découvrez comment intégrer Campaign à Microsoft Dynamics 365 et Salesforce.com sur [cette page](crm.md).
 
 ## Federated Data Access (FDA){#gs-fda}
 
 Utilisez le connecteur FDA (Federated Data Access) pour connecter Campaign à une ou plusieurs **bases de données externes** et traiter les informations stockées dans celles-ci sans affecter les données contenues dans la base de données cloud de Campaign.
 
-[!DNL :bulb:] En savoir plus sur [cette page](fda.md)
+[!DNL :bulb:] Apprenez-en davantage en consultant [cette page](fda.md)
 
 
 <!-- 
