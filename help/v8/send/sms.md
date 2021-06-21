@@ -2,13 +2,13 @@
 product: Adobe Campaign
 title: Envoi de SMS avec Adobe Campaign
 description: Prise en main des SMS dans Campaign
-feature: Vue d’ensemble
+feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: 35814053bff993d0b130bf598c8601c3f5adc407
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 41%
+ht-degree: 52%
 
 ---
 
@@ -32,10 +32,10 @@ Pour diffuser vers un téléphone mobile, vous devez avoir :
 
 [!DNL :arrow_upper_right:]  Découvrez comment configurer un canal SMS dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=fr#sending-messages)
 
-Avant d’envoyer des SMS :
+Avant d&#39;envoyer des SMS :
 
 * Assurez-vous que les profils des destinataires contiennent au moins un téléphone portable.
-* Examinez les [bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=fr#sending-messages) d’Adobe Campaign Classic qui s’appliquent également à Campaign v8.
+* Examinez les [bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=fr#sending-messages) d&#39;Adobe Campaign Classic qui s&#39;appliquent également à Campaign v8.
 
 De plus, vous devez connaître le protocole et les paramètres SMS. Parcourez la configuration de la connexion entre Adobe Campaign et un fournisseur SMPP dans [ce document](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-protocol.html?lang=fr#sending-messages).
 
@@ -45,7 +45,7 @@ De plus, vous devez connaître le protocole et les paramètres SMS. Parcourez la
 
    ![](assets/delivery_step_1.png)
 
-   [!DNL :arrow_upper_right:] Pour plus d&#39;informations sur la création d&#39;une diffusion, reportez-vous à la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=fr#sending-messages).
+   [!DNL :arrow_upper_right:] Pour plus d&#39;informations globales sur la création d&#39;une diffusion, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=fr#sending-messages).
 
 1. Sélectionnez un modèle de diffusion référençant le compte externe approprié pour envoyer les diffusions SMS.
 
@@ -75,9 +75,9 @@ Les étapes clés de création et de conception d&#39;un SMS sont présentées d
 
    [!DNL :arrow_upper_right:] [Découvrez comment définir le contenu du SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html?lang=en#defining-the-sms-content)
 
-* Sélectionner l&#39;audience de votre email
+* Sélectionner l&#39;audience de votre e-mail
 
-   [!DNL :arrow_upper_right:] [Découvrez comment définir la population cible](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html?lang=fr)
+   [!DNL :arrow_upper_right:] [En savoir plus sur la définition de la population cible](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html?lang=fr)
 
 [!DNL :bulb:] Les étapes de définition d’une audience sont présentées dans  [cette page](../start/audiences.md).
 
@@ -90,7 +90,7 @@ Pour visualiser le rendu du message avec sa personnalisation, cliquez sur **[!UI
 Pour envoyer un BAT, reportez-vous aux sections suivantes de la documentation de Campaign Classic v7 :
 
 * Valider une diffusion et envoyer des BAT
-   [!DNL :arrow_upper_right:] [Découvrez les étapes clés de validation d&#39;une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr)
+   [!DNL :arrow_upper_right:] [En savoir plus sur les étapes clés de validation d&#39;une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr)
 * Ajouter des adresses de contrôle
    [!DNL :arrow_upper_right:] [En savoir plus sur les adresses de contrôle](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html?lang=fr)
 
