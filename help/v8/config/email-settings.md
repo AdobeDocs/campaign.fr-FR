@@ -5,10 +5,10 @@ description: Paramètres du canal e-mail de Campaign
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: ht
-source-wordcount: '278'
-ht-degree: 100%
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+workflow-type: tm+mt
+source-wordcount: '290'
+ht-degree: 89%
 
 ---
 
@@ -41,14 +41,14 @@ Une fois que la fonctionnalité E-mail Cci est configurée, assurez-vous qu&#39
 **Rubriques connexes** dans la documentation de Campaign Classic v7 :
 
 
-[!DNL :arrow_upper_right:] [Générer la page miroir](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#generating-mirror-page)
+[!DNL :arrow_upper_right:] [Générer la page miroir](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#generating-mirror-page){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Sélectionner le format d&#39;e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#selecting-message-formats)
+[!DNL :arrow_upper_right:] [Sélectionnez le format d’email ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#selecting-message-formats){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Sélectionner le codage des caractères](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#character-encoding)
+[!DNL :arrow_upper_right:] [Sélectionner le codage des caractères ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#character-encoding){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Définir l&#39;adresse e-mail de rebond](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#managing-bounce-emails)
+[!DNL :arrow_upper_right:] [Définissez l’adresse email de rebond ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#managing-bounce-emails){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Utiliser des modèles de diffusion e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr)
+[!DNL :arrow_upper_right:] [Utiliser les modèles de diffusion par email ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Comprendre les échecs de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr)
+[!DNL :arrow_upper_right:] [Comprendre les diffusions en échec](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr){target=&quot;_blank&quot;}
