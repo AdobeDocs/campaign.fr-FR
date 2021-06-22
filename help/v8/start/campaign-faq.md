@@ -6,10 +6,10 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 1f3af0a9ea29506296710024791511ceafddc824
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 100%
+source-wordcount: '658'
+ht-degree: 82%
 
 ---
 
@@ -39,19 +39,19 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
    La délivrabilité des e-mails, composant essentiel de la réussite du programme marketing de chaque expéditeur, est caractérisée par des critères et des règles en constante évolution. Pour naviguer efficacement dans ce monde numérique, il est nécessaire d&#39;affiner régulièrement votre stratégie d&#39;e-mail, en tenant compte des principales tendances de délivrabilité, afin d&#39;atteindre au mieux vos audiences.
 
-   [!DNL :arrow_upper_right:] Consultez ce guide pour découvrir les [bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=fr).
+   [!DNL :arrow_upper_right:] Consultez ce guide pour en savoir plus sur les bonnes pratiques de  [délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=fr){target=&quot;_blank&quot;}
 
-   [!DNL :arrow_upper_right:] Découvrez comment implémenter la délivrabilité dans Campaign [dans ce guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=fr).
+   [!DNL :arrow_upper_right:] Découvrez comment implémenter la délivrabilité dans Campaign  [dans ce guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=fr){target=&quot;_blank&quot;}
 
 1. **Comment puis-je m&#39;assurer que ma diffusion est envoyée sans erreur ?**
 
    Adobe Campaign contient un ensemble de tableaux de bord et d&#39;outils qui permettent de surveiller vos diffusions E-mail.
 
-   [Consultez la documentation de Campaign Classic v7 pour découvrir](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr) comment vous assurer que vos messages sont bien envoyés, surveiller l&#39;exécution et entreprendre une action en cas d&#39;erreur.
+   [Lisez la documentation de Campaign Classic v7 pour savoir](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr){target=&quot;_blank&quot;} comment vous assurer que vos messages sont envoyés, surveiller l’exécution et entreprendre une action en cas d’erreur.
 
 1. **Est-il possible de surveiller l&#39;exécution des workflows ?**
 
-   [!DNL :arrow_upper_right:] Découvrez comment surveiller l&#39;exécution des workflows Campaign [dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html?lang=fr).
+   [!DNL :arrow_upper_right:] Découvrez comment surveiller l’exécution des workflows Campaign  [dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html?lang=fr){target=&quot;_blank&quot;}
 
 1. **Avec quels systèmes et composants Campaign v8 est-il compatible ?**
 
@@ -71,19 +71,19 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
    Vous pouvez obtenir le programme d&#39;installation et la console cliente à partir du Centre de téléchargement d&#39;Adobe.
 
-   [Cliquez ici](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) pour accéder à la distribution logicielle de la solution Experience Cloud.
+   [Cliquez ici](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target=&quot;_blank&quot;} pour accéder à la distribution logicielle Experience Cloud.
 
-   En savoir plus sur le Centre de distribution [sur cette page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr).
+   Pour en savoir plus sur le centre de distribution [dans cette page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr){target=&quot;_blank&quot;}.
 
 1. **Puis-je contacter des experts Campaign ?**
 
-   Rejoignez la communauté Campaign et recherchez des réponses parmi les questions existantes ou consultez les experts. [Prenez part à la conversation](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
+   Rejoignez la communauté Campaign et recherchez des réponses parmi les questions existantes ou consultez les experts. [Prenez part à la conversation](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target=&quot;_blank&quot;}
 
 
 1. **Comment signaler un problème ?**
 
    La création d&#39;un ticket vous permet de contacter l&#39;équipe du Service clientèle d&#39;Adobe pour tout problème lié à vos produits Adobe. La console Adobe Admin Console vous permettra de discuter avec le Service clientèle d&#39;Adobe pour résoudre vos problèmes.
 
-   Pour enregistrer un problème ou démarrer une session de conversation dans ce nouveau système, connectez-vous à la console [Adobe Admin Console](https://adminconsole.adobe.com/overview).
+   Pour consigner un problème ou démarrer une session de conversation dans ce nouveau système, connectez-vous à [Adobe Admin Console](https://adminconsole.adobe.com/overview){target=&quot;_blank&quot;}.
 
-   Ce système nécessite des comptes individuels pour chaque utilisateur, avec les permissions adéquates. Si vous constatez que vous ne pouvez pas vous connecter à l&#39;aide de votre Adobe ID, demandez l&#39;accès par le biais d&#39;Experience League. L&#39;équipe de l&#39;Assistance clientèle vous contactera alors dès que possible. [En savoir plus](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+   Ce système nécessite des comptes individuels pour chaque utilisateur, avec les permissions adéquates. Si vous constatez que vous ne pouvez pas vous connecter à l&#39;aide de votre Adobe ID, demandez l&#39;accès par le biais d&#39;Experience League. L&#39;équipe de l&#39;Assistance clientèle vous contactera alors dès que possible. [En savoir plus](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}
