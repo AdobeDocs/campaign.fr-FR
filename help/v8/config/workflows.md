@@ -6,10 +6,10 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 41ea85bc3c616ed7cdd0718ff3368aab971a5352
-workflow-type: ht
-source-wordcount: '1189'
-ht-degree: 100%
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+workflow-type: tm+mt
+source-wordcount: '1249'
+ht-degree: 87%
 
 ---
 
@@ -34,24 +34,23 @@ Découvrez comment concevoir des workflows dans ces [cas d&#39;utilisation compl
 
 Pour en savoir plus sur l&#39;interface utilisateur et l&#39;exécution des workflows, consultez la documentation de Campaign Classic v7 :
 
-[!DNL :arrow_upper_right:]  [Prise en main des workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=fr#automating-with-workflows)
+[!DNL :arrow_upper_right:]  [Prise en main des workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=fr#automating-with-workflows){target=&quot;_blank&quot;}
 * Activités de workflow :
-   * [Activités de ciblage](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html?lang=fr) : requête, lecture de liste, enrichissement, union, etc.
-   * [Activités d&#39;ordonnancement](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/about-flow-control-activities.html?lang=fr) : planificateur, branchement, alerte, signal externe, etc.
-   * [Activités d&#39;action](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html?lang=fr) : diffusions cross-canal, code JavaScript, activités CRM, mise à jour d&#39;agrégat, etc.
-   * [Activités d&#39;événement](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html?lang=fr) : transfert de fichiers, téléchargement web, etc.
-      [!DNL :arrow_upper_right:]  [Création d&#39;une audience dans un workflow de campagne marketing](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=fr#building-the-main-target-in-a-workflow)
-
-      [!DNL :arrow_upper_right:]  [Bonnes pratiques relatives aux workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/workflow-best-practices.html?lang=fr)
-      [!DNL :arrow_upper_right:] [Workflows techniques natifs](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html?lang=fr)
-      [!DNL :arrow_upper_right:] [Surveillance d&#39;exécution des workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html?lang=fr)
+   * [Activités de ciblage](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html?lang=fr){target=&quot;_blank&quot;} : Requête, Lecture de Liste, Enrichissement, Union, etc.
+   * [Activités de contrôle de flux](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/about-flow-control-activities.html?lang=fr){target=&quot;_blank&quot;} : Planificateur, branchement, alerte, signal externe, etc.
+   * [Activités d’action](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html?lang=fr){target=&quot;_blank&quot;} : Diffusions cross-canal, code JavaScript, activités CRM, Mise à jour d’agrégat, etc.
+   * [Activités d’événement](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html){target=&quot;_blank&quot;} : Transfert de fichiers, téléchargement Web, etc.
+      [!DNL :arrow_upper_right:]  [Créer une audience dans un workflow de campagne marketing](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=fr#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;}
+      [!DNL :arrow_upper_right:]  [Bonnes pratiques relatives aux workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/workflow-best-practices.html?lang=fr){target=&quot;_blank&quot;}
+      [!DNL :arrow_upper_right:] [Flux de travail technique intégré](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html?lang=fr){target=&quot;_blank&quot;}
+      [!DNL :arrow_upper_right:] [Surveiller l’exécution des workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html?lang=fr){target=&quot;_blank&quot;}
 
 
 ## Configuration de campagnes récurrentes
 
 Concevez un workflow récurrent et créez une instance de diffusion à chaque exécution du workflow. Par exemple, si votre workflow est conçu pour s&#39;exécuter une fois par semaine, 52 diffusions seront créées en une année. Cela signifie également que les logs seront séparés par chaque instance de diffusion.
 
-[!DNL :arrow_upper_right:] Découvrez comment créer une campagne récurrente dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=fr#recurring-and-periodic-campaigns).
+[!DNL :arrow_upper_right:] Découvrez comment créer une campagne récurrente dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=fr#recurring-and-periodic-campaigns){target=&quot;_blank&quot;}
 
 
 ## Utilisation d&#39;événements trigger
@@ -73,27 +72,26 @@ Cette section présente différents cas pratiques utilisant des fonctionnalités
 
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
-* [Tests AB](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html?lang=fr)
+* [Tests AB](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html?lang=fr){target=&quot;_blank&quot;}
 
    Découvrez comment comparer deux contenus de diffusion e-mail via un workflow de ciblage. Le message et le texte sont identiques dans les deux diffusions : seule la mise en page change. La population ciblée est divisée en trois : deux groupes de test et la population restante. Une version différente de la diffusion est envoyée à chaque groupe de test.
 
-* [Envoyer un e-mail d&#39;anniversaire](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?lang=fr)
+* [Envoyer un e-mail d&#39;anniversaire](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?lang=fr){target=&quot;_blank&quot;}
 
    Ce cas pratique présente comment planifier l&#39;envoi d&#39;un e-mail récurrent à une liste de destinataires le jour de leur anniversaire.
 
-* [Charger le contenu d&#39;une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html?lang=fr)
+* [Charger le contenu d&#39;une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html?lang=fr){target=&quot;_blank&quot;}
+Lorsque le contenu de votre diffusion est disponible dans un fichier HTML se trouvant sur un serveur distant, vous pouvez facilement charger ce contenu dans les diffusions Adobe Campaign.
 
-   Lorsque le contenu de votre diffusion est disponible dans un fichier HTML qui se trouve sur un serveur distant, vous pouvez facilement charger ce contenu dans les diffusions Adobe Campaign.
-
-* [Workflow de diffusion cross-canal](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/cross-channel-delivery-workflow.html?lang=fr)
+* [Workflow de diffusion cross-canal](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/cross-channel-delivery-workflow.html?lang=fr){target=&quot;_blank&quot;}
 
    Découvrez comment créer un workflow de diffusion cross-canal. L&#39;objectif est de segmenter une audience des destinataires de votre base de données en différents groupes et d&#39;envoyer un e-mail au premier groupe et un SMS à l&#39;autre.
 
-* [Enrichissement des e-mails avec des champs de date personnalisés](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/email-enrichment-with-custom-date-fields.html?lang=fr)
+* [Enrichissement des e-mails avec des champs de date personnalisés](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/email-enrichment-with-custom-date-fields.html?lang=fr){target=&quot;_blank&quot;}
 
    Découvrez comment envoyer un e-mail avec des champs de données personnalisés aux profils qui célèbrent leur anniversaire ce mois-ci. L&#39;e-mail contiendra un coupon valide une semaine avant et après leur anniversaire.
 
-* [Automatisation de la création, de l&#39;édition et de la publication de contenu](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/automating-via-workflows.html?lang=fr)
+* [Automatisation de la création, de l&#39;édition et de la publication de contenu](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/automating-via-workflows.html?lang=fr){target=&quot;_blank&quot;}
 
    Découvrez comment automatiser la création et la diffusion d&#39;un bloc de contenu avec le module complémentaire de gestion de contenu de Campaign.
 
@@ -102,15 +100,15 @@ Cette section présente différents cas pratiques utilisant des fonctionnalités
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
-* [Envoi d&#39;un rapport à une liste](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/monitoring/sending-a-report-to-a-list.html?lang=fr)
+* [Envoi d&#39;un rapport à une liste](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/monitoring/sending-a-report-to-a-list.html?lang=fr){target=&quot;_blank&quot;}
 
    Découvrez comment générer un rapport mensuel intégré des indicateurs de tracking au format PDF et l&#39;envoyer à une liste d&#39;opérateurs Campaign.
 
-* [Supervision de vos workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/monitoring/supervising-workflows.html?lang=fr)
+* [Supervision de vos workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/monitoring/supervising-workflows.html?lang=fr){target=&quot;_blank&quot;}
 
    Découvrez comment créer un workflow qui vous permet de surveiller l&#39;état d&#39;un ensemble de workflows en pause, arrêtés ou en erreur.
 
-* [Envoi d&#39;alertes personnalisées aux opérateurs](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/monitoring/sending-personalized-alerts-to-operators.html?lang=fr)
+* [Envoi d&#39;alertes personnalisées aux opérateurs](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/monitoring/sending-personalized-alerts-to-operators.html?lang=fr){target=&quot;_blank&quot;}
 
    Découvrez comment envoyer à un opérateur une alerte qui contiendra le nom des profils qui ont ouvert une newsletter, sans toutefois cliquer sur le lien qu&#39;elle contient.
 
@@ -118,27 +116,27 @@ Cette section présente différents cas pratiques utilisant des fonctionnalités
 
 <img src="assets/do-not-localize/icon_manage.svg" width="60px">
 
-* [Coordination des mises à jour de données](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/coordinating-data-updates.html?lang=fr)
+* [Coordination des mises à jour de données](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/coordinating-data-updates.html?lang=fr){target=&quot;_blank&quot;}
 
    Découvrez comment vérifier que le processus de mise à jour est terminé avant d&#39;exécuter une autre opération de mise à jour. Pour ce faire, nous allons configurer une variable d&#39;instance et laisser le workflow tester si l&#39;instance est en cours d&#39;exécution afin de décider de continuer ou non l&#39;exécution du workflow et d&#39;effectuer la mise à jour.
 
-* [Création d&#39;une liste récapitulative](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/creating-a-summary-list.html?lang=fr)
+* [Création d&#39;une liste récapitulative](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/creating-a-summary-list.html?lang=fr){target=&quot;_blank&quot;}
 
    Découvrez comment créer un workflow qui, après la collecte de fichiers et plusieurs enrichissements, permet de créer une liste récapitulative. L&#39;exemple est basé sur une liste de contacts qui ont effectué des achats dans un magasin.
 
-* [Enrichissement des données](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/enriching-data.html?lang=fr)
+* [Enrichissement des données](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/enriching-data.html?lang=fr){target=&quot;_blank&quot;}
 
    Découvrez comment envoyer des diffusions personnalisées aux profils ayant participé au dernier jeu-concours en fonction de leur score.
 
-* [Utilisation d&#39;agrégats](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/using-aggregates.html?lang=fr)
+* [Utilisation d&#39;agrégats](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/using-aggregates.html?lang=fr){target=&quot;_blank&quot;}
 
    Découvrez comment identifier les derniers destinataires ajoutés à la base de données.
 
-* [Mise à jour de la liste trimestrielle à l&#39;aide d&#39;une requête incrémentale](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/quarterly-list-update.html?lang=fr)
+* [Mise à jour de la liste trimestrielle à l&#39;aide d&#39;une requête incrémentale](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/quarterly-list-update.html?lang=fr){target=&quot;_blank&quot;}
 
    Découvrez comment utiliser une requête incrémentale pour mettre automatiquement à jour une liste de destinataires.
 
-* [Configuration d&#39;un workflow d&#39;import récurrent](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/recurring-import-workflow.html?lang=fr)
+* [Configuration d&#39;un workflow d&#39;import récurrent](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/recurring-import-workflow.html?lang=fr){target=&quot;_blank&quot;}
 
    Découvrez comment concevoir un workflow qui peut être réutilisé pour importer des profils en provenance d&#39;un CRM dans la base de données Adobe Campaign.
 
@@ -146,23 +144,23 @@ Cette section présente différents cas pratiques utilisant des fonctionnalités
 
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 
-* [Requête de la table des destinataires](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/querying-recipient-table.html?lang=fr)
+* [Requête de la table des destinataires](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/querying-recipient-table.html?lang=fr){target=&quot;_blank&quot;}
 
    Découvrez comment récupérer les noms et les e-mails des destinataires dont le domaine d&#39;e-mail est &quot;orange.co.uk&quot; et qui ne vivent pas à Londres.
 
-* [Informations sur la diffusion de requêtes](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/querying-delivery-information.html?lang=fr)
+* [Informations sur la diffusion de requêtes](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/querying-delivery-information.html?lang=fr){target=&quot;_blank&quot;}
 
    Découvrez comment définir des requêtes sur les informations de diffusion pour récupérer le comportement du profil.
 
-* [Calculer les agrégats](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/performing-aggregate-computing.html?lang=fr)
+* [Calculer les agrégats](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/performing-aggregate-computing.html?lang=fr){target=&quot;_blank&quot;}
 
    Découvrez comment compter le nombre de profils vivant à Londres, en fonction du genre.
 
-* [Requête avec une relation multiple-à-multiple](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/querying-using-many-to-many-relationship.html?lang=fr)
+* [Requête avec une relation multiple-à-multiple](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/querying-using-many-to-many-relationship.html?lang=fr){target=&quot;_blank&quot;}
 
    Découvrez comment trouver des profils qui n&#39;ont pas été contactés au cours des 7 derniers jours.
 
-* [Appeler une variable d&#39;instance dans une requête](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/javascript-scripts-and-templates.html?lang=fr#example)
+* [Appeler une variable d&#39;instance dans une requête](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/javascript-scripts-and-templates.html?lang=fr#example){target=&quot;_blank&quot;}
 
    Découvrez comment utiliser une variable d&#39;instance pour calculer dynamiquement le pourcentage de partage à appliquer à une population.
 
