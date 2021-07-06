@@ -1,7 +1,7 @@
 ---
 product: Adobe Campaign
-title: Connecter Campaign à vos solutions
-description: découvrez comment connecter Campaign à vos solutions
+title: Connexion de Campaign à vos solutions
+description: Découvrez comment connecter Campaign à vos solutions
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
@@ -9,11 +9,11 @@ exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
 workflow-type: tm+mt
 source-wordcount: '361'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# Connecter Campaign à vos solutions{#gs-ac-connectors}
+# Connexion de Campaign à vos solutions{#gs-ac-connectors}
 
 Vous pouvez connecter votre instance Campaign aux solutions Adobe Experience Cloud pour combiner les fonctionnalités.
 
@@ -28,7 +28,7 @@ Modernisez votre implémentation et exploitez toutes les fonctionnalités d&#39;
 Campaign v8 peut se connecter à :
 
 
-* [CDP en temps réel de Adobe Experience Cloud](../connect/ac-rtcdp.md)
+* [CDP en temps réel d&#39;Adobe Experience Cloud](../connect/ac-rtcdp.md)
 * [Adobe Journey Orchestration](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=fr).
 
    Voir le cas pratique de bout en bout [ici](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=fr).
