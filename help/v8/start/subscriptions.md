@@ -8,7 +8,7 @@ level: Beginner
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -30,11 +30,11 @@ Pour abonner (opt-in) un profil à un service, les options disponibles sont les 
 
    ![](assets/subscribe-selection.png)
 
-   Sélectionnez le service visé et démarrez l&#39;opération.
+   Sélectionnez le service concerné et démarrez l&#39;opération.
 
    ![](assets/subscribe-confirm.png)
 
-   [!DNL :arrow_upper_right:] En savoir plus dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab){target=&quot;_blank&quot;}
+   [!DNL :arrow_upper_right:] Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab){target=&quot;_blank&quot;}
 
 
 * Importer des destinataires et les abonner automatiquement à un service d&#39;information : pour cela, sélectionnez le service visé dans la dernière étape de l&#39;assistant d&#39;import.
@@ -49,7 +49,7 @@ Pour abonner (opt-in) un profil à un service, les options disponibles sont les 
 
    ![](assets/web-app.png)
 
-   [!DNL :arrow_upper_right:] En savoir plus dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=fr#create-a-subscription--form-with-double-opt-in){target=&quot;_blank&quot;}
+   [!DNL :arrow_upper_right:] Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=fr#create-a-subscription--form-with-double-opt-in){target=&quot;_blank&quot;}
 
 
 * Créez un workflow de ciblage et utilisez une activité de type **[!UICONTROL Service d&#39;inscription]**.
@@ -71,7 +71,7 @@ Pour désabonner (opt-out) un profil d&#39;un service, les options disponibles s
 * Définissez une limite de durée du service d&#39;information : les destinataires seront automatiquement désabonnés à l&#39;expiration de la période de validité. Cette période est spécifiée dans l&#39;onglet Édition des propriétés du service. Elle est exprimée en jours.
 * Configurer un workflow de désabonnement pour une population.
 
-[!DNL :arrow_upper_right:] En savoir plus dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=fr#unsubscribing-a-recipient-from-a-service){target=&quot;_blank&quot;}
+[!DNL :arrow_upper_right:] Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=fr#unsubscribing-a-recipient-from-a-service){target=&quot;_blank&quot;}
 
 
 >[!CAUTION]
@@ -80,4 +80,4 @@ Pour désabonner (opt-out) un profil d&#39;un service, les options disponibles s
 
 Vous pouvez également permettre aux destinataires de votre diffusion de transférer des messages à un ami. Pour ce faire, insérez les liens adéquats dans votre diffusion. Vous pouvez ensuite suivre ce processus de partage, ainsi que le nombre de visites sur les pages concernées.
 
-[!DNL :arrow_upper_right:] Pour plus d’informations sur cette fonctionnalité, reportez-vous à la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=fr#viral-marketing—forward-to-a-friend){target=&quot;_blank&quot;}
+[!DNL :arrow_upper_right:]Pour en savoir plus sur cette fonctionnalité, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=fr#viral-marketing—forward-to-a-friend){target=&quot;_blank&quot;}
