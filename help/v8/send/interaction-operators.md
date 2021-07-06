@@ -6,7 +6,7 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 100%
 
@@ -48,7 +48,7 @@ Notez que si des offres sont utilisées dans le workflow, l&#39;opérateur doit 
 
 1. Créez votre nouvel opérateur.
 
-   [!DNL :arrow_upper_right:] Les étapes de création d&#39;un opérateur dans Campaign sont présentées dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html?lang=fr)
+   [!DNL :arrow_upper_right:] Les étapes de création d&#39;un opérateur dans Campaign sont présentées dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. Dans la fenêtre **[!UICONTROL Groupes et droits nommés]**, cliquez sur **[!UICONTROL Ajouter]** et sélectionnez le groupe **[!UICONTROL Chargé de diffusion]**.
 
