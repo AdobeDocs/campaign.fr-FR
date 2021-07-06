@@ -3,7 +3,7 @@ product: Adobe Campaign
 title: Utilisation des schémas Campaign
 description: Prise en main des schémas
 source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1254'
 ht-degree: 100%
 
@@ -79,9 +79,9 @@ Un espace de noms permet de regrouper un ensemble de schémas par centres d&#39;
 >
 >Les identifieurs ne doivent pas commencer par des caractères numériques.
 
-## Espaces de noms réservés  {#reserved-namespaces}
+## Espaces de noms réservés {#reserved-namespaces}
 
-Certains espaces de noms sont réservés à la description des entités systèmes nécessaires au bon fonctionnement de l&#39;application Adobe Campaign. L&#39;espace de noms suivant **ne doit pas être utilisé** pour identifier un nouveau schéma, dans quelque combinaison majuscule/minuscule que ce soit :
+Certains espaces de noms sont réservés à la description des entités systèmes nécessaires au bon fonctionnement de l’application Adobe Campaign. L&#39;espace de noms suivant **ne doit pas être utilisé** pour identifier un nouveau schéma, dans quelque combinaison majuscule/minuscule que ce soit :
 
 * **xxl** : réservé aux schémas de base de données cloud
 * **xtk** : réservé aux données du système de la plateforme
@@ -205,7 +205,7 @@ Les liens sont déclarés dans le schéma qui contient la **clé étrangère** d
 
 Il existe trois types de cardinalité : 1-1, 1-N et N-N. C&#39;est le type d&#39;association 1-N qui est utilisé par défaut.
 
-### Exemples  {#examples-1}
+### Exemples       {#examples-1}
 
 Exemple de relation 1-N entre la table des destinataires (schéma d&#39;usine) et une table des transactions personnalisée :
 
