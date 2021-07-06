@@ -7,13 +7,13 @@ role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 100%
 
 ---
 
-# Utilisation d&#39;une table de destinataires personnalisée{#gs-ac-custom-recipient}
+# Utilisation d’une table des destinataires personnalisée{#gs-ac-custom-recipient}
 
 Adobe Campaign s&#39;accompagne d&#39;une table des profils native : **nmsRecipient**. Cette table comporte un certain nombre de champs prédéfinis et de tables faciles à étendre. En savoir plus au sujet de cette table sur [cette page](datamodel.md#ootb-profiles).
 
