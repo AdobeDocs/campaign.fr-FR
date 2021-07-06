@@ -5,7 +5,7 @@ description: Prise en main de la gestion des clés
 source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -63,10 +63,10 @@ Pour corriger les doublons, les clients doivent mettre à jour les données de C
 
 Par exemple :
 
-* **Cas 1** : destinataires en double partageant le même UUID et les mêmes informations de profil (même e-mail, prénom, etc.)  : les destinataires ressemblent à de &quot;vrais&quot; doublons et l&#39;atténuation pourrait être de supprimer un des doublons.
+* **Cas 1** : destinataires en double partageant le même UUID et les mêmes informations de profil (même e-mail, prénom, etc.) : les destinataires ressemblent à de &quot;vrais&quot; doublons et l&#39;atténuation pourrait être de supprimer un des doublons.
 Une autre approche pourrait consister à fusionner les informations d&#39;un destinataire dans l&#39;autre.
 
-* **Cas 2** : destinataires en double avec le même UUID mais des informations de profil différentes (différent e-mail, prénom, etc.) :
+* **Cas 2** : destinataires en double avec le même UUID mais des informations de profil différentes (différent e-mail, prénom, etc.):
 cette fois-ci, il semblerait qu&#39;il existe différents profils et que vous vouliez conserver les deux dans la base de données Campaign, ce qui signifie qu&#39;il vaut peut-être mieux mettre à jour l&#39;un des doublons et générer un nouvel UUID. [Apprenez-en davantage dans cet exemple](#deduplicate-sample).
 
 Selon votre stratégie d&#39;atténuation, vous pouvez toujours interroger la liste à partir d&#39;un autre workflow, puis appliquer la mise à jour selon vos besoins. Pour plus d&#39;informations, contactez Adobe.
