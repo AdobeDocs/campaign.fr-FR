@@ -9,11 +9,11 @@ exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
 workflow-type: tm+mt
 source-wordcount: '455'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# Nouveautés d&#39;Adobe Campaign v8 {#ac-gs-what-is-new}
+# Nouveautés d&#39;Adobe Campaign v8  {#ac-gs-what-is-new}
 
 Adobe Campaign v8 apporte d&#39;importantes améliorations en termes d&#39;infrastructure, de sécurité, de délivrabilité et de surveillance. Grâce à l&#39;exploitation de [[!DNL Snowflake]](https://www.snowflake.com/), une technologie de base de données cloud, Adobe Campaign améliore considérablement sa mise à l&#39;échelle et sa vitesse. L&#39;application a ainsi la capacité de gérer un nombre plus important de profils client, ainsi que des taux de diffusion et de transactions beaucoup plus élevés par heure.
 
@@ -45,7 +45,7 @@ Campaign v8 fournit une mise à l&#39;échelle de bout en bout à n&#39;importe
 
 ## Simplification et amélioration des performances
 
-Campaign v8 apporte le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud.
+Campaign v8 présente le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud.
 
 Avec cette nouvelle architecture, Campaign v8 simplifie la gestion des données : aucun index n&#39;est requis sur la base de données cloud. Il vous suffit de créer les tables et de copier les données pour démarrer.
 
@@ -55,7 +55,7 @@ La technologie de base de données cloud ne nécessite pas de maintenance spéci
 
 ## Écosystème intégré
 
-Vous pouvez intégrer Campaign à un ensemble de solutions d&#39;Adobe puissantes, telles que : Adobe Analytics, Adobe Journey Orchestration, la plateforme de données clients en temps réel, etc.
+Vous pouvez intégrer Campaign à un ensemble de solutions Adobe puissantes, telles que : Adobe Analytics, Adobe Journey Orchestration, CDP en temps réel, etc.
 
 Vous pouvez également configurer l&#39;optimisation de l&#39;heure d&#39;envoi prédictive ainsi que le score d&#39;engagement prédictif grâce à l&#39;IA dédiée au parcours. Cela permet d&#39;augmenter les taux d&#39;ouverture, les clics et les revenus.
 
