@@ -8,7 +8,7 @@ level: Beginner
 source-git-commit: e65750c4e9ebd0367f0430455cac2cc6502ade7e
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ Vous pouvez ainsi :
 
 ## Surveillance de vos e-mails
 
-Une fois l&#39;envoi effectué, vérifiez le statut de la diffusion dans le tableau de bord de la diffusion et accédez aux logs et aux rapports de diffusion pour confirmer l&#39;envoi correct des messages.
+Une fois les messages envoyés, vérifiez l&#39;état de votre diffusion dans le tableau de bord des diffusions et accédez aux logs de diffusion et aux rapports pour confirmer que vos messages ont été correctement envoyés.
 
 [!DNL :arrow_upper_right:] [Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=fr).
 
