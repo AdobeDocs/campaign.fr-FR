@@ -9,7 +9,7 @@ exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d25755
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
 source-wordcount: '906'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 93%
 
 Les fonctionnalités de tracking de Campaign effectuent le suivi des messages envoyés et vous aident à analyser le comportement des destinataires : ouverture, clics sur les liens, abonnements/désabonnement, etc. Vous pouvez accéder aux journaux, rapports et mesures dédiés, demander la base de données pour examiner les données collectées et bien plus encore.
 
-[!DNL :arrow_upper_right:]  Voir à ce propos la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=fr#tracking-tab){target=&quot;_blank&quot;}.
+[!DNL :arrow_upper_right:]Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=fr#tracking-tab){target=&quot;_blank&quot;}.
 
 Le tableau de bord des diffusions est un outil essentiel pour surveiller les diffusions et les erreurs éventuelles rencontrées lors de l&#39;envoi des messages.
 
-[!DNL :arrow_upper_right:] Voir à ce propos la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=fr#sending-messages){target=&quot;_blank&quot;}.
+[!DNL :arrow_upper_right:]Pour en savoir plus à ce sujet consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=fr#sending-messages){target=&quot;_blank&quot;}.
 
 Les principales fonctionnalités de tracking disponibles dans Campaign sont répertoriées ci-dessous.
 
@@ -41,7 +41,7 @@ Vous pouvez suivre la réception des messages et l&#39;activation des liens ins�
 
 Les options de tracking peuvent être paramétrées en activant ou en désactivant les URL trackées.
 
-[!DNL :arrow_upper_right:] [Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/personalizing-url-tracking.html?lang=fr#sending-messages).{target=&quot;_blank&quot;}
+[!DNL :arrow_upper_right:] [Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/personalizing-url-tracking.html?lang=fr#sending-messages){target=&quot;_blank&quot;}
 
 
 **Personnalisation des liens trackés**
@@ -110,7 +110,7 @@ Ce rapport combine les indicateurs clés pour le tracking du comportement des de
 
 Les différents tableaux contiennent la liste des indicateurs utilisés dans les différents rapports et leur formule de calcul en fonction du type de diffusion.
 
-[!DNL :arrow_upper_right:] [Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/indicator-calculation.html?lang=fr#reporting).{target=&quot;_blank&quot;}
+[!DNL :arrow_upper_right:] [Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/indicator-calculation.html?lang=fr#reporting){target=&quot;_blank&quot;}
 
 ## Instructions de surveillance
 
