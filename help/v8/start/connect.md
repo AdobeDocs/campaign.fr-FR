@@ -9,7 +9,7 @@ exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
 source-wordcount: '823'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -112,15 +112,15 @@ Adobe Campaign peut être configuré pour permettre à l&#39;utilisateur d&#39;a
 [!DNL :speech_balloon:] En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](campaign-faq.md#support) pour configurer l&#39;intégration de la connexion LDAP dans Campaign.
 
 
-## Accès web{#web-access}
+## Accès Web{#web-access}
 
 Certaines parties de l&#39;application sont accessibles via un simple navigateur web à l&#39;aide d&#39;une interface utilisateur HTML : tableau de bord Campaign, reporting Cube, supervision de l&#39;instance, etc.
 
 [!DNL :arrow_upper_right:] En savoir plus sur l&#39;accès web dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=fr#console-and-web-access){target=&quot;_blank&quot;}
 
-L&#39;accès Web fournit une interface similaire à celle de la console, mais avec un ensemble réduit de fonctionnalités.
+L&#39;accès web présente une interface similaire à celle de la console, mais permet d&#39;accéder à un jeu de fonctionnalités réduit.
 
-Par exemple, pour un opérateur donné, une campagne s&#39;affiche avec les options suivantes dans la console :
+Par exemple, pour un même opérateur, une opération sera affichée dans la console avec les options suivantes :
 
 ![](assets/campaign-from-console.png)
 
