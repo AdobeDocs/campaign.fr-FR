@@ -3,7 +3,7 @@ product: Adobe Campaign
 title: Structure d'un schéma Campaign
 description: Structure d'un schéma Campaign
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 100%
 
@@ -117,7 +117,7 @@ Les règles à respecter sont les suivantes :
 * Un élément **`<attribute>`** doit être unique par son nom dans un **`<element>`**.
 * L&#39;utilisation des **`<elements>`** sur les données de type chaîne multi-lignes est préconisée.
 
-## Types des données {#data-types}
+## Types de données {#data-types}
 
 Le type de données est renseigné à partir de l&#39;attribut **type** sur les éléments **`<attribute>`** et **`<element>`**.
 
@@ -284,7 +284,7 @@ Les valeurs de l&#39;énumération sont déclarées dans l&#39;élément **`<val
 
 ### Exemple {#example}
 
-Notre schéma d&#39;exemple complété avec les propriétés :
+Notre schéma d&#39;exemple complété avec les propriétés :
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -305,7 +305,7 @@ Notre schéma d&#39;exemple complété avec les propriétés :
 </srcSchema>
 ```
 
-## Collections {#collections}
+## des collections. {#collections}
 
 Une collection est une liste d&#39;éléments de même nom et de même niveau hiérarchique.
 
@@ -348,6 +348,7 @@ Les éléments sont désignés par leur nom, les attributs sont désignés par l
 >
 >* **Location/@city** n&#39;est pas valide ; veuillez utiliser **`[location/@city]`**
 >* **`[@email]`** et **@email** sont équivalents
+
 >
 
 
