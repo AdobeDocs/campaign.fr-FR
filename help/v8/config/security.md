@@ -5,7 +5,7 @@ description: Prise en main des bonnes pratiques de sécurité de Campaign
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
