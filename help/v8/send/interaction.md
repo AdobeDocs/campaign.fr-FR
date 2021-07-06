@@ -8,11 +8,11 @@ level: Beginner
 source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '1226'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Interaction et gestion des offres{#interaction-and-offer-management}
+# Interaction et la gestion des offres{#interaction-and-offer-management}
 
 Campaign comprend un module **Interaction** qui permet de répondre en temps réel lors d&#39;une interaction avec un contact donné (un client ou une cible) en proposant une ou plusieurs offres adaptées. Il peut s&#39;agir par exemple de messages de communication simples, d&#39;offres spéciales sur un ou plusieurs produits ou d&#39;un service.
 
@@ -31,8 +31,8 @@ Avant de commencer, en tant qu&#39;**administrateur** de Campaign, assurez-vous 
 1. Création de profils utilisateur. [En savoir plus](interaction-operators.md)
 1. (Facultatif) Création d&#39;un environnement d&#39;offres pour chaque dimension de ciblage. [En savoir plus](interaction-env.md)
 1. Création de règles de typologie pour chaque environnement. [En savoir plus](interaction-offer.md#offer-presentation)
-1. Création d&#39;emplacements pour chaque environnement et configuration des fonctions de rendu. [En savoir ](interaction-offer-spaces.md)
-plusSi l&#39;espace est défini par un canal unitaire en mode identifié, vous devez spécifier les paramètres avancés de cet espace.
+1. Création d&#39;emplacements pour chaque environnement et configuration des fonctions de rendu. [En savoir plus](interaction-offer-spaces.md)
+Si l&#39;emplacement est défini sur un canal unitaire en mode identifié, il est nécessaire de spécifier les paramètres avancés de l&#39;emplacement.
 
 ### Création et publication du catalogue d&#39;offres {#managing-the-offer-catalog-}
 
