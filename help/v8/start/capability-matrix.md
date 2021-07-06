@@ -21,7 +21,7 @@ Modifications clés :
 
 * Création de segments jusqu&#39;à 200 fois plus rapide
 * Augmentation de la vitesse de diffusion
-* Reporting en temps réel  avec Cubes
+* Reporting en temps réel   avec Cubes
 
 En tant qu&#39;utilisateur [!DNL Campaign Classic], veuillez noter que la plupart des fonctionnalités de [!DNL Campaign Classic] v7 sont disponibles dans [!DNL Campaign] v8, à l&#39;exception d&#39;un petit ensemble de fonctionnalités répertoriées dans [cette section](#gs-removed). Les prochaines versions proposeront d&#39;autres fonctionnalités. [En savoir plus dans cette section](#gs-unavailable-features)
 
