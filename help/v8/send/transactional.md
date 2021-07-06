@@ -8,7 +8,7 @@ level: Beginner
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
 source-wordcount: '1550'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Pour créer un modèle de message, procédez comme suit :
 
    ![](assets/messagecenter_create_model_003.png)
 
-   Les types d&#39;événements destinés à être traités par Adobe Campaign doivent être créés par Adobe sur l&#39;instance de pilotage.
+   Les types d&#39;événement destinés à être traités par Adobe Campaign doivent être créés sur l&#39;instance de pilotage par Adobe.
 
    >[!NOTE]
    >
@@ -92,7 +92,7 @@ Pour insérer des balises de personnalisation dans le corps d&#39;un message e-m
 
    ![](assets/messagecenter_create_custo_2.png)
 
-### Ajout d&#39;adresses de contrôle{#add-seeds}
+### Ajouter des adresses de contrôle{#add-seeds}
 
 Une adresse de contrôle vous permet d&#39;afficher une prévisualisation de votre message, d&#39;envoyer un BAT et de tester la personnalisation du message avant l&#39;envoi. Les adresses de contrôle sont liées à la diffusion et ne peuvent pas être utilisées pour d&#39;autres diffusions.
 
@@ -133,7 +133,7 @@ Ces informations vous permettent de personnaliser le contenu des messages à l&#
 
    ![](assets/messagecenter_create_custo_3.png)
 
-### Prévisualiser votre message transactionnel{#transactional-message-preview}
+### Prévisualisation de vos messages transactionnels{#transactional-message-preview}
 
 Lorsque vous avez créé une ou plusieurs adresses de contrôle, ainsi que le corps du message, vous pouvez afficher l&#39;aperçu de votre message et vérifier la personnalisation de ce dernier.
 
