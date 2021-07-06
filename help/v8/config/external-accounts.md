@@ -8,7 +8,7 @@ level: Beginner
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -156,7 +156,7 @@ Pour ce faire, spécifiez dans ce compte externe l&#39;adresse et les informatio
 
    Le connecteur **AWS S3** peut être utilisé pour importer ou exporter des données vers Adobe Campaign à l&#39;aide d&#39;une activité de workflow **[!UICONTROL Transfert de fichier]**. Lors de la configuration de ce nouveau compte externe, vous devez indiquer les informations suivantes :
 
-   * **[!UICONTROL Serveur du compte AWS S3]** : URL de votre serveur, renseignée comme suit :   ```<S3bucket name>.s3.amazonaws.com/<s3object path>```
+   * **[!UICONTROL Serveur du compte AWS S3]**: URL de votre serveur, renseignée comme suit :   ```<S3bucket name>.s3.amazonaws.com/<s3object path>```
 
    * **[!UICONTROL ID de la clé d&#39;accès AWS]** : apprenez à trouver votre ID de clé d&#39;accès AWS en consultant la [documentation Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
 
