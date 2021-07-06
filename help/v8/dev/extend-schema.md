@@ -5,7 +5,7 @@ description: Découvrez comment étendre les schémas Campaign
 source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Les étapes clés de personnalisation du modèle de données Campaign sont les s
 >[!CAUTION]
 >Le schéma prédéfini ne doit pas être modifié directement. Si vous devez adapter un schéma prédéfini, vous devez l&#39;étendre.
 
-[!DNL :bulb:] Pour une meilleure compréhension des tables intégrées de Campaign et de leur interaction, consultez [cette page](datamodel.md). Voir également les recommandations lors de la création d’un nouveau schéma dans [cette page](create-schema.md).
+[!DNL :bulb:] Pour une meilleure compréhension des tables intégrées de Campaign et de leur interaction, consultez [cette page](datamodel.md). Reportez-vous également aux recommandations lors de la création d&#39;un nouveau schéma dans [cette page](create-schema.md).
 
 Pour étendre un schéma, procédez comme suit :
 
@@ -43,7 +43,7 @@ Pour étendre un schéma, procédez comme suit :
 
    ![](assets/extend-schema-edit.png)
 
-   Dans l’exemple ci-dessous, nous ajoutons l’attribut **MembershipYear** , nous mettons une limite de longueur pour le nom (cette limite remplace la valeur par défaut) et nous supprimons la date de naissance du schéma intégré.
+   Dans l&#39;exemple ci-dessous, nous ajoutons l&#39;attribut **MembershipYear**, fixons une limite de longueur pour le nom (cette limite remplacera la valeur par défaut) et supprimons la date de naissance du schéma prédéfini.
 
    ![](assets/extend-schema-sample.png)
 
