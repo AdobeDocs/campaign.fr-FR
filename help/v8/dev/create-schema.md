@@ -5,7 +5,7 @@ description: Découvrez comment créer un schéma dans Campaign
 source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Pour cela, vous devez créer le schéma de la table puis procéder à la mise à
 
    >[!NOTE]
    >
-   >Par défaut, les schémas créés par les utilisateurs sont stockés dans l&#39;espace de noms &quot;cus&quot;. Voir à ce propos la section [Identification d&#39;un schéma](extend-schema.md#identification-of-a-schema).
+   >Par défaut, les schémas créés par les utilisateurs sont stockés dans l&#39;espace de noms « cus ». Voir à ce propos la section [Identification d&#39;un schéma](extend-schema.md#identification-of-a-schema).
 
 1. Créez le contenu de la table. Nous vous recommandons d&#39;utiliser l&#39;assistant dédié pour vous assurer qu&#39;aucun paramètre n&#39;est manquant. Pour ce faire, cliquez sur le bouton **[!UICONTROL Insérer]** et sélectionnez le type de paramètre à ajouter.
 
@@ -62,7 +62,7 @@ Pour cela, vous devez créer le schéma de la table puis procéder à la mise à
 
 1. Définissez les paramètres de la table des contrats.
 
-   Il est recommandé de créer le tableau dans la base de données Cloud en ajoutant l’attribut `dataSource="nms:extAccount:ffda"` . Cet attribut est ajouté par défaut lors de la création d&#39;un tableau.
+   Il est recommandé de créer la table dans la base de données cloud en ajoutant l&#39;attribut `dataSource="nms:extAccount:ffda"`. Cet attribut est ajouté par défaut lors de la création d&#39;une nouvelle table.
 
    ```
    <srcSchema created="YYYY-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png"
