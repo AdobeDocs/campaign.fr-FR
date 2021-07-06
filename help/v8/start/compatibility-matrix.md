@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 source-git-commit: 619edce939b39430832fd950ece734f817f9dce3
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 92%
+source-wordcount: '277'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Ce document répertorie tous les systèmes et composants pris en charge pour la 
 
 ### Console cliente{#ClientConsoleoperatingsystems}
 
-Avertissement : les systèmes d&#39;exploitation et le navigateur ci-après sont nécessaires pour utiliser la console cliente Campaign.
+:warning: Les systèmes d&#39;exploitation et le navigateur ci-après sont nécessaires pour utiliser la console cliente Campaign.
 
 **Systèmes d&#39;exploitation**
 
@@ -52,8 +52,8 @@ Avertissement : les systèmes d&#39;exploitation et le navigateur ci-après son
 
 ### SDK mobile{#MobileSDK}
 
-* **Android** 7.x, 8.x, 9.0 avec le SDK Campaign Android build 1.1.1.
-* **Apple iOS** 9 - 14 avec SDK Campaign iOS version 1.0.26, compatible avec les versions 32 et 64 bits.
+* **Android** 7.x, 8.x, 9.0 avec le SDK Android de Campaign version 1.1.1.
+* **Apple iOS** 9 - 14 avec SDK iOS de Campaign version 1.0.26, compatible avec les versions 32 et 64 bits.
 
 ### Navigateurs pris en charge {#Browsers}
 
@@ -63,7 +63,7 @@ Les navigateurs ci-après sont compatibles avec Campaign pour un accès à inter
 
 * **Internet Explorer** 11
 
-## Comment vérifier votre version de Campaign et créer
+## Comment vérifier la version  et le build de Campaign
 
 Utilisez le menu **Aide > À propos...** pour vérifier votre version.
 
