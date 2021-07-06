@@ -6,7 +6,7 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ Un catalogue d&#39;offres est associé à un seul environnement préexistant. Le
 
 Avant de créer vos offres, vous devez d&#39;abord définir un [environnement](interaction-env.md) qui contient toutes les caractéristiques (éligibilité, contraintes sur la cible, règles de présentation) d&#39;un ensemble d&#39;offres, classées par catégories, ainsi que la liste de leurs emplacements.
 
-## Création de catégories d&#39;offres{#creating-offer-categories}
+## Création de catégories d’offres{#creating-offer-categories}
 
 Les offres sont organisées en catégories/sous-catégories. Les catégories sont créées dans l&#39;environnement **[!UICONTROL En édition]** et déployées automatiquement dans l&#39;environnement **[!UICONTROL En ligne]** (c&#39;est-à-dire mises à disposition) lorsque les offres qu&#39;elles contiennent sont validées. L&#39;environnement **[!UICONTROL En édition]** contient une catégorie par défaut pour recevoir toutes les offres. Il est possible de créer des sous-catégories pour ajouter une hiérarchie aux offres du catalogue.
 
