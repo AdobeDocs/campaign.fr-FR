@@ -3,7 +3,7 @@ product: Adobe Campaign
 title: Limitation de l'affichage des PI
 description: Découvrez comment limiter l'affichage des PI
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 100%
 
