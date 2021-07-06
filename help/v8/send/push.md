@@ -8,7 +8,7 @@ level: Beginner
 source-git-commit: 3aed82c4c054b45b7e1d90082dee6af7ba02ea69
 workflow-type: tm+mt
 source-wordcount: '769'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -31,9 +31,9 @@ Pour envoyer des notifications push dans Adobe Campaign, vous devez effectuer l
 
 Le SDK Campaign facilite l&#39;intégration de votre application mobile à la plateforme Adobe Campaign.
 
-Les versions des SDK compatibles sont répertoriées dans la [matrice de compatibilité Campaign](../start/compatibility-matrix.md#MobileSDK).
+Les versions de SDK compatibles sont répertoriées dans la [Matrice de compatibilité Campaign](../start/compatibility-matrix.md#MobileSDK).
 
-[!DNL :bulb:] Découvrez comment intégrer les SDK Campaign Android et iOS à votre application dans  [cette section](../config/push-config.md)
+[!DNL :bulb:] Découvrez comment intégrer les SDK Android et iOS de Campaign avec votre application dans [cette section](../config/push-config.md)
 
 ### Configuration de l&#39;extension Campaign dans Launch
 
@@ -47,7 +47,7 @@ Vous devez définir les paramètres de vos applications iOS et Android dans Adob
 
 [!DNL :arrow_upper_right:] Les instructions de configuration pour iOS sont décrites dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=fr#sending-messages).{target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] Les instructions de configuration pour Android sont détaillées dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=fr#sending-messages){target=&quot;_blank&quot;}
+[!DNL :arrow_upper_right:] Les instructions de configuration pour Android sont décrites dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=fr#sending-messages){target=&quot;_blank&quot;}
 
 ## Création de votre première notification push
 
@@ -55,13 +55,13 @@ Cette section présente les éléments spécifiques à la diffusion de notificat
 
 >[!CAUTION]
 >
->Avec Campaign v8, l’enregistrement mobile est désormais **asynchrone**. [En savoir plus](../dev/staging.md)
+>Avec Campaign v8, l&#39;enregistrement mobile est désormais **asynchrone**. [En savoir plus](../dev/staging.md)
 
-Pour créer une nouvelle diffusion, accédez à l&#39;onglet **[!UICONTROL Campagnes]**, cliquez sur **[!UICONTROL Diffusions]** et cliquez sur le bouton **[!UICONTROL Créer]** au-dessus de la liste des diffusions existantes.
+Pour créer une nouvelle diffusion, accédez à l&#39;onglet **[!UICONTROL Campagnes]**, cliquez sur **[!UICONTROL Diffusions]**, puis sur le bouton **[!UICONTROL Créer]** au-dessus de la liste des diffusions existantes.
 
 ![](assets/delivery_step_1.png)
 
-[!DNL :arrow_upper_right:] Pour plus d’informations sur la création d’une diffusion, reportez-vous à la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=fr#sending-messages){target=&quot;_blank&quot;}.
+[!DNL :arrow_upper_right:] Pour plus d&#39;informations globales sur la création d&#39;une diffusion, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=fr#sending-messages){target=&quot;_blank&quot;}
 
 ### Envoi de notifications sur iOS {#send-notifications-on-ios}
 
@@ -73,34 +73,34 @@ Pour créer une nouvelle diffusion, accédez à l&#39;onglet **[!UICONTROL Campa
 
    ![](assets/push-ios-select-target.png)
 
-1. Sélectionnez **[!UICONTROL Abonnés d’une application mobile iOS (iPhone, iPad)]**, sélectionnez le service correspondant à votre application mobile, puis sélectionnez la version iOS de l’application.
+1. Sélectionnez **[!UICONTROL Abonnés d&#39;une application mobile iOS (iPhone, iPad)]**, choisissez le service correspondant à votre application mobile, puis sélectionnez la version iOS de l&#39;application.
 
    ![](assets/push-ios-subscribers.png)
 
-1. Sélectionnez le type de notification : **[!UICONTROL Alerte]**, **[!UICONTROL Badge]**, **[!UICONTROL Alerte et badge]** ou **[!UICONTROL Push silencieux]**.
+1. Sélectionnez le type de notification : **[!UICONTROL Alerte]**, **[!UICONTROL Pastille]**, **[!UICONTROL Alerte et pastille]** ou **[!UICONTROL Notification silencieuse]**.
 
    ![](assets/push-ios-alert.png)
 
 1. Dans le champ **[!UICONTROL Titre]**, saisissez le libellé du titre que vous souhaitez afficher sur la notification.
 
-1. Saisissez le **[!UICONTROL Message]** et la **[!UICONTROL Valeur du badge]** en fonction du type de notification choisi.
+1. Saisissez le **[!UICONTROL Message]** et la **[!UICONTROL Valeur de la pastille]**, en fonction du type de notification choisi.
 
-1. Vous pouvez également définir les éléments suivants :
+1. Vous pouvez également définir les éléments suivants :
 
-   * Le **[!UICONTROL bouton Action]** permet de définir le libellé du bouton d’action apparaissant dans les notifications d’alerte (champ **action_loc_key** de la payload).
+   * Le **[!UICONTROL Bouton d&#39;action]** permet de définir le libellé du bouton d&#39;action apparaissant dans les notifications d&#39;alerte (champ **action_loc_key** de la payload).
 
    * Dans le champ **[!UICONTROL Jouer un son]**, sélectionnez le son que doit émettre le terminal mobile à la réception de la notification.
 
-   * Dans le champ **[!UICONTROL Variables de l&#39;application]** , saisissez la valeur de chaque variable. Vous pouvez par exemple paramétrer un écran d&#39;application spécifique qui s&#39;affichera lorsque l&#39;utilisateur activera la notification.
+   * Dans le champ **[!UICONTROL Variables de l&#39;application]**, saisissez la valeur de chaque variable. Vous pouvez par exemple paramétrer un écran d&#39;application spécifique qui s&#39;affichera lorsque l&#39;utilisateur activera la notification.
 
-1. Une fois la notification renseignée, cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** pour afficher la prévisualisation de la notification.
+1. Une fois la notification renseignée, cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** pour prévisualiser la notification.
 
    ![](assets/push-ios-preview.png)
 
 
 ### Envoi de notifications sur Android {#send-notifications-on-android}
 
-1. Sélectionnez le modèle de diffusion **[!UICONTROL Diffuser sur Android (android)]** .
+1. Sélectionnez le modèle de diffusion **[!UICONTROL Diffuser sur Android (android)]**.
 
    ![](assets/push-template-android.png)
 
@@ -118,26 +118,26 @@ Pour créer une nouvelle diffusion, accédez à l&#39;onglet **[!UICONTROL Campa
 
 1. Cliquez sur l’icône **[!UICONTROL Insérer une émoticône]** pour insérer des émoticônes dans votre notification push.
 
-1. Dans le champ **[!UICONTROL Variables de l&#39;application]** , saisissez la valeur de chaque variable. Vous pouvez par exemple paramétrer un écran d&#39;application spécifique qui s&#39;affichera lorsque l&#39;utilisateur activera la notification.
+1. Dans le champ **[!UICONTROL Variables de l&#39;application]**, saisissez la valeur de chaque variable. Vous pouvez par exemple paramétrer un écran d&#39;application spécifique qui s&#39;affichera lorsque l&#39;utilisateur activera la notification.
 
-1. Une fois la notification renseignée, cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** pour afficher la prévisualisation de la notification.
+1. Une fois la notification renseignée, cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** pour prévisualiser la notification.
 
    <!--![](assets/push-android-preview.png)-->
 
-## Tester, envoyer et surveiller vos notifications push
+## Test, envoi et surveillance de vos notifications push
 
 L&#39;envoi du BAT et l&#39;envoi final de la notification s&#39;effectuent de la même manière que pour une diffusion par e-mail. Apprenez-en davantage en consultant la documentation de Campaign Classic v7 :
 
 * Valider une diffusion et envoyer des BAT
    [!DNL :arrow_upper_right:] [En savoir plus sur les étapes clés de validation d&#39;une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target=&quot;_blank&quot;}
 
-* Confirmer et envoyer la diffusion
-   [!DNL :arrow_upper_right:] [Découvrez les étapes clés pour envoyer une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en){target=&quot;_blank&quot;}
+* Confirmation et envoi de la diffusion
+   [!DNL :arrow_upper_right:] [Découvrez les étapes clés pour envoyer une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr){target=&quot;_blank&quot;}
 
-Après l&#39;envoi des messages, vous pouvez suivre et suivre vos diffusions. Apprenez-en davantage en consultant la documentation de Campaign Classic v7 :
+Après l&#39;envoi des messages, vous pouvez surveiller et suivre vos diffusions. Apprenez-en davantage en consultant la documentation de Campaign Classic v7 :
 
 * Quarantaines des notifications push
-   [!DNL :arrow_upper_right:] [En savoir plus sur les quarantaines des notifications push](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#push-notification-quarantines){target=&quot;_blank&quot;}
+   [!DNL :arrow_upper_right:] [En savoir plus sur les quarantaines des notifications push](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=fr#push-notification-quarantines){target=&quot;_blank&quot;}
 
 * Résolution des problèmes
-   [!DNL :arrow_upper_right:] [Découvrez comment résoudre les problèmes liés aux notifications push](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=en){target=&quot;_blank&quot;}
+   [!DNL :arrow_upper_right:] [Découvrez comment résoudre les problèmes liés aux notifications push](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=fr){target=&quot;_blank&quot;}
