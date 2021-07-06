@@ -1,7 +1,7 @@
 ---
 product: Adobe Campaign
 title: Prise en main de Campaign v8
-description: Vous découvrez Campaign ? Découvrez comment commencer
+description: Vous débutez sur Campaign ? Découvrez la prise en main
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
@@ -9,7 +9,7 @@ exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ En utilisant Campaign, vous pouvez :
 
 ![](assets/ac-capabilities.png)
 
-## Integrated Customer Profile {#integrated-customer-profile}
+## Profil client intégré {#integrated-customer-profile}
 
 Les profils sont centralisés dans une puissante base de données cloud. Il existe de nombreux mécanismes permettant d&#39;acquérir des profils et de créer cette base de données : collecte en ligne par le biais de formulaires web, importation manuelle ou automatique de fichiers texte, réplication avec des bases de données d&#39;entreprises ou d&#39;autres systèmes d&#39;information. Adobe Campaign vous permet d&#39;intégrer des données d&#39;historique marketing, des informations d&#39;achat, des préférences, des données CRM et des données d&#39;informations d&#39;identification personnelles pertinentes dans une vue consolidée afin d&#39;effectuer une analyse et de prendre des mesures.
 
@@ -78,7 +78,7 @@ Vous pouvez combiner les fonctionnalités de diffusion et de gestion de campagne
 
 ## En savoir plus sur les fonctionnalités de Campaign {#core-capabilities-and-add-ons}
 
-Adobe Campaign vous propose un ensemble de fonctionnalités qui vous permettent d&#39;implémenter et optimiser les fonctionnalités de marketing conversationnel selon vos besoins et votre architecture. Certaines de ces fonctionnalités sont intégrées. D&#39;autres dépendent de l&#39;installation d&#39;un package au sein de votre configuration. Une description détaillée du produit est disponible ici : [Description du produit Adobe Campaign v8](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html).
+Adobe Campaign vous propose un ensemble de fonctionnalités qui vous permettent d&#39;implémenter et optimiser les fonctionnalités de marketing conversationnel selon vos besoins et votre architecture. Certaines de ces fonctionnalités sont intégrées. D&#39;autres dépendent de l&#39;installation d&#39;un package au sein de votre configuration. Une description détaillée du produit est disponible ici : [Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html).
 
 [!DNL :bulb:] Vous connaissez déjà Campaign Classic ? Découvrez les principales différences entre Campaign Classic et Campaign v8 sur [cette page](capability-matrix.md).
 
@@ -94,7 +94,7 @@ L&#39;espace de travail de Campaign peut être adapté en fonction de vos besoin
 
 [!DNL :arrow_upper_right:]  Découvrez comment utiliser l&#39;espace de travail de Campaign dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=fr){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:]  Découvrez comment personnaliser des listes dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=fr){target=&quot;_blank&quot;}
+[!DNL :arrow_upper_right:] Découvrez comment personnaliser des listes dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=fr)target={&quot;_blank&quot;}
 
 Vous pouvez également accéder à certaines fonctionnalités via le web.
 
@@ -117,10 +117,10 @@ La langue est sélectionnée lors du processus d&#39;installation.
 >
 >La langue ne peut pas être modifiée après la création de l&#39;instance.
 
-Les formats de date et d&#39;heure dépendent de la langue. Voir à ce propos la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=fr#date-and-time){target=&quot;_blank&quot;}.
+Les formats de date et d&#39;heure dépendent de la langue. Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=fr#date-and-time){target=&quot;_blank&quot;}.
 
 **Voir aussi**
 
-* [Matrice de compatibilité Campaign v8](compatibility-matrix.md)
+* [Matrice de compatibilité de Campaign v8](compatibility-matrix.md)
 * [Connexion à Campaign](connect.md)
 * [Forum aux questions](campaign-faq.md)
