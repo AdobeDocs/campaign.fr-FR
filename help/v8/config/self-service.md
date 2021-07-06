@@ -10,7 +10,7 @@ hide: true
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -44,15 +44,15 @@ Dans le panneau de contrôle, vous pouvez interagir avec tous les serveurs SFTP 
 
 Vous pouvez surveiller vos sous-domaines et leurs certificats. En savoir plus :
 * [Branding des sous-domaines](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=fr){target=&quot;_blank&quot;}
-* [Configurez un nouveau sous-domaine](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=fr){target=&quot;_blank&quot;}
+* [Configurer un nouveau sous-domaine](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=fr){target=&quot;_blank&quot;}
 * [Surveillance des certificats SSL](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=fr){target=&quot;_blank&quot;}
 
 ## Paramètres des instances
 
 Découvrez comment gérer vos paramètres d&#39;instances Campaign dans le panneau de contrôle.
-* [IP sur la liste autorisée](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=fr){target=&quot;_blank&quot;}
-* [Autorisations d’URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=fr){target=&quot;_blank&quot;}
-* [Détails de l’instance](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=fr){target=&quot;_blank&quot;}
+* [Adresses IP sur la liste autorisée](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=fr){target=&quot;_blank&quot;}
+* [Autorisations d&#39;URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=fr){target=&quot;_blank&quot;}
+* [Détails de l&#39;instance](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=fr){target=&quot;_blank&quot;}
 * [Gestion des clés GPG](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=fr){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] Découvrez toutes les fonctionnalités de Panneau de Contrôle de  [cette documentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target=&quot;_blank&quot;}
+[!DNL :arrow_upper_right:] Découvrez toutes les fonctionnalités du panneau de contrôle dans [cette documentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target=&quot;_blank&quot;}
