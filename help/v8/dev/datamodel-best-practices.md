@@ -191,7 +191,7 @@ Afin d&#39;optimiser les performances à tout moment, suivez les bonnes pratique
 * Utilisez une ou plusieurs tables de référence plutôt que de dupliquer un champ dans chaque ligne. Lors de l&#39;utilisation de paires clé/valeur, il est préférable de choisir une clé numérique.
 * Une chaîne courte reste acceptable. Si des tables de références sont déjà en place dans un système externe, les réutiliser facilitera l&#39;intégration des données avec Adobe Campaign.
 
-### Relations de type &quot;un à plusieurs&quot; {#one-to-many-relationships}
+### Relations de type &quot;un à plusieurs&quot;  {#one-to-many-relationships}
 
 * La conception des données a un impact sur la convivialité et les fonctionnalités. Si vous concevez votre modèle de données avec de nombreuses relations de type &quot;un à plusieurs&quot;, il devient plus difficile pour les utilisateurs de construire une logique significative dans l&#39;application. Il peut s&#39;avérer difficile pour les marketeurs n&#39;ayant pas de compétences techniques de construire et de comprendre correctement la logique.
 * Qu&#39;une table comporte tous les champs essentiels est une bonne chose car cela facilite la création de requêtes par les utilisateurs. Il est aussi parfois judicieux de dupliquer certains champs d&#39;une table à l&#39;autre si cela permet d&#39;éviter une jointure.
