@@ -9,7 +9,7 @@ exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 source-git-commit: 6a22bdd563bb0be26df12ce8d2b6da266d16f2e3
 workflow-type: tm+mt
 source-wordcount: '1298'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -52,9 +52,9 @@ Pour créer votre **[!UICONTROL suite de rapports]** dans [!DNL Adobe Analytics]
 
    ![](assets/analytics_connnector_2.png)
 
-1. Sur la page **[!UICONTROL Gestionnaire de suite de rapports]**, cliquez sur **[!UICONTROL Créer]**, puis sur **[!UICONTROL Suite de rapports]**.
+1. Sur la page **[!UICONTROL Responsable des suites de rapports]**, cliquez sur **[!UICONTROL Créer]**, puis sur **[!UICONTROL Suite de rapports]**.
 
-   Pour connaître la procédure détaillée de création de **[!UICONTROL suite de rapports]**, consultez cette [section](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=fr#prerequisites).
+   Pour la procédure détaillée de création de **[!UICONTROL suites de rapports]**, consultez cette [section](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=fr#prerequisites).
 
    ![](assets/analytics_connnector_3.png)
 
@@ -65,32 +65,32 @@ Pour créer votre **[!UICONTROL suite de rapports]** dans [!DNL Adobe Analytics]
    * **[!UICONTROL Identifiant de suite de rapports]**
    * **[!UICONTROL Titre du site]**
    * **[!UICONTROL Fuseau horaire]**
-   * **[!UICONTROL Date de mise en production]**
+   * **[!UICONTROL Date de mise en ligne]**
    * **[!UICONTROL Estimation du nombre de pages vues par jour]**
 
    ![](assets/analytics_connnector_4.png)
 
-1. Une fois configurée, cliquez sur **[!UICONTROL Créer une suite de rapports]**.
+1. Une fois la configuration terminée, cliquez sur **[!UICONTROL Créer une suite de rapports]**.
 
 ## Configuration des variables de conversion et des événements de succès {#configure-conversion-success}
 
-Après avoir créé votre **[!UICONTROL suite de rapports]**, vous devez configurer vos **[!UICONTROL variables de conversion]** et vos **[!UICONTROL événements de succès]** comme suit :
+Après avoir créé votre **[!UICONTROL suite de rapports]**, vous devez configurer vos **[!UICONTROL variables de conversion]** et **[!UICONTROL événements de succès]** comme suit :
 
 1. Sélectionnez la **[!UICONTROL suite de rapports]** précédemment configurée.
 
-1. À partir du bouton **[!UICONTROL Modifier les paramètres]**, sélectionnez **[!UICONTROL Conversion]** > **[!UICONTROL Variables de conversion]**.
+1. À partir du bouton **[!UICONTROL Modifier les paramètres]**, sélectionnez **[!UICONTROL Conversion]** > **[!UICONTROL Variables de conversion]**.
 
    ![](assets/analytics_connnector_5.png)
 
-1. Cliquez sur **[!UICONTROL Ajouter]** pour créer les identifiants nécessaires à la mesure de l&#39;impact de la campagne par e-mail, c&#39;est-à-dire le nom interne de la campagne (cid) et l&#39;identifiant de la table NmsBroadlog (bid).
+1. Cliquez sur **[!UICONTROL Ajouter]** pour créer les identifiants nécessaires à la mesure de l&#39;impact de la campagne par e-mail, c&#39;est-à-dire le nom interne de la campagne (cid) et l&#39;identifiant de la table iNmsBroadlog (bid).
 
-   Pour savoir comment modifier les **[!UICONTROL variables de conversion]**, consultez cette [section](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=fr#admin-tools).
+   Pour découvrir comment modifier les **[!UICONTROL variables de conversion]**, consultez cette [section](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=fr#admin-tools).
 
    ![](assets/analytics_connnector_6.png)
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** lorsque vous avez terminé.
 
-1. Puis, pour créer vos **[!UICONTROL événements de succès]**, sélectionnez **[!UICONTROL Conversion]** > **[!UICONTROL Événements de succès]** à partir du bouton **[!UICONTROL Modifier les paramètres]**.
+1. Ensuite, pour créer vos **[!UICONTROL Événements de succès]**, sélectionnez **[!UICONTROL Conversion]** > **[!UICONTROL Événements de succès]** à partir du bouton **[!UICONTROL Modifier les paramètres]**.
 
    ![](assets/analytics_connnector_7.png)
 
@@ -100,14 +100,14 @@ Après avoir créé votre **[!UICONTROL suite de rapports]**, vous devez configu
    * **[!UICONTROL Ayant ouvert]**
    * **[!UICONTROL Personnes ayant cliqué]**
    * **[!UICONTROL Traités]**
-   * **[!UICONTROL Différé]**
-   * **[!UICONTROL Envoyé]**
+   * **[!UICONTROL Différés]**
+   * **[!UICONTROL Envoyés]**
    * **[!UICONTROL Nombre total de rebonds]**
    * **[!UICONTROL Clics uniques]**
    * **[!UICONTROL Ouvertures uniques]**
    * **[!UICONTROL Désabonnement]**
 
-   Pour savoir comment configurer les **[!UICONTROL événements de succès]**, reportez-vous à cette [section](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=fr#admin-tools)
+   Pour découvrir comment configurer les **[!UICONTROL événements de succès]**, reportez-vous à cette [section](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=fr#admin-tools).
 
    ![](assets/analytics_connnector_8.png)
 
@@ -117,26 +117,26 @@ Une fois votre suite de rapports configurée, vous devez configurer les **[!UICO
 
 ## Configuration de votre compte externe Campaign {#external-account-ac}
 
-Vous devez alors configurer votre compte externe **[!UICONTROL Web Analytics]** dans Adobe Campaign pour activer la synchronisation entre les deux solutions.
+Vous devez maintenant configurer votre compte externe **[!UICONTROL Web Analytics]** dans Adobe Campaign pour activer la synchronisation entre les deux solutions.
 
-Notez que si l&#39;une de vos **[!UICONTROL suites de rapports]**, **[!UICONTROL variables de conversion]** ou **[!UICONTROL événements de succès]** n&#39;est pas visible lors de la configuration de votre compte externe, cela signifie que vous ne disposez pas d&#39;une autorisation pour ce nouveau composant dans le **[!UICONTROL profil de produit]** associé à l&#39;utilisateur.
+Veuillez noter que si l&#39;une de vos **[!UICONTROL suites de rapports]**, **[!UICONTROL variables de conversion]** ou **[!UICONTROL événements de succès]** n&#39;est pas visible lors de la configuration de votre compte externe, cela signifie que vous ne disposez pas d&#39;une autorisation pour ce nouveau composant dans le **[!UICONTROL profil de produit]** associé à l&#39;utilisateur.
 
 Pour plus d&#39;informations à ce sujet, consultez la page [Profils de produit pour Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=fr#product-profile-admins).
 
-1. Dans l&#39;arborescence Adobe Campaign, accédez au dossier **[!UICONTROL Administration**[!UICONTROL  > ]**Platform**[!UICONTROL  > ]**Comptes externes]** et cliquez sur le bouton **[!UICONTROL Nouveau]**.
+1. Accédez au dossier **[!UICONTROL Administration]** > **[!UICONTROL Plate-forme]** > **[!UICONTROL Comptes externes]** de l&#39;arborescence Adobe Campaign et cliquez sur le bouton **[!UICONTROL Nouveau]**.
 
    ![](assets/analytics_connnector_9.png)
 
-1. Utilisez la liste déroulante pour sélectionner le type **[!UICONTROL Web Analytics]** et **[!UICONTROL Adobe Analytics]** dans la liste déroulante **[!UICONTROL Intégration]**.
+1. Utilisez la liste déroulante pour sélectionner le type **[!UICONTROL Web Analytics]** et **[!UICONTROL Adobe Analytics]** dans la liste déroulante **[!UICONTROL Intégration]**.
 
    ![](assets/analytics_connnector_10.png)
 
 1. Cliquez sur **[!UICONTROL Configurer]** en regard de la liste déroulante **[!UICONTROL Intégration]**.
 
-1. Dans la fenêtre **[!UICONTROL Configurer l&#39;intégration Analytics]**, associez votre compte externe à la suite de rapports créée précédemment en fournissant les informations suivantes :
+1. Dans la fenêtre **[!UICONTROL Configurer l&#39;intégration d&#39;Analytics]**, associez votre compte externe à la suite de rapports créée précédemment en fournissant les informations suivantes :
 
    * **[!UICONTROL E-mail]**
-   * **[!UICONTROL Organisation IMS]**
+   * **[!UICONTROL Org. IMS]**
    * **[!UICONTROL Société Analytics]**
    * **[!UICONTROL Suite de rapports]**
 
@@ -145,15 +145,15 @@ Pour plus d&#39;informations à ce sujet, consultez la page [Profils de produit 
 
    ![](assets/analytics_connnector_11.png)
 
-1. Dans la catégorie **[!UICONTROL Événements]**, mappez les dix **[!UICONTROL Événements de succès]** configurés dans [!DNL Adobe Analytics].
+1. Dans la catégorie **[!UICONTROL Événements]**, mappez les dix **[!UICONTROL événements de succès]** configurés dans [!DNL Adobe Analytics].
 
-1. Cliquez sur **[!UICONTROL Envoyer]** lorsque vous avez terminé. Adobe Campaign va créer une **[!UICONTROL source de données]**, des **[!UICONTROL mesures calculées]**, des **[!UICONTROL segments de remarketing]** et des **[!UICONTROL classifications]** dans la **[!UICONTROL suite de rapports]** mappée.
+1. Cliquez sur **[!UICONTROL Soumettre]** lorsque vous avez terminé. Adobe Campaign crée une **[!UICONTROL source de données]**, des **[!UICONTROL mesures calculées]**, des **[!UICONTROL segments de remarketing]** et des **[!UICONTROL classifications]** dans la **[!UICONTROL suite de rapports]** Analytics mappée.
 
-   Une fois cette synchronisation entre [!DNL Adobe Analytics] et Adobe Campaign effectuée, vous pouvez fermer la fenêtre.
+   Une fois cette synchronisation entre [!DNL Adobe Analytics] et Adobe Campaign effectuée, vous pouvez fermer la fenêtre.
 
-1. Les paramètres sont visibles à partir de l&#39;onglet **[!UICONTROL Paramètres de données]** dans la fenêtre **[!UICONTROL Configurer l&#39;intégration d&#39;Analytics]**.
+1. Les paramètres sont visibles dans l&#39;onglet **[!UICONTROL Paramètres des données]** de la fenêtre **[!UICONTROL Configurer l&#39;intégration d&#39;Analytics]**.
 
-   À l&#39;aide du bouton **[!UICONTROL Synchroniser]**, [!DNL Adobe Campaign] synchronise les modifications de nom effectuées dans [!DNL Adobe Analytics]. Si le composant est supprimé dans [!DNL Adobe Analytics], il est barré dans [!DNL Adobe Campaign] ou affiché avec un message **Non trouvé**.
+   À l&#39;aide du bouton **[!UICONTROL Synchroniser]**, [!DNL Adobe Campaign] synchronise les modifications de nom effectuées dans [!DNL Adobe Analytics]. Si le composant est supprimé dans [!DNL Adobe Analytics], il est barré dans [!DNL Adobe Campaign] ou affiché avec le message **introuvable**.
 
    ![](assets/analytics_connnector_12.png)
 
@@ -161,7 +161,7 @@ Pour plus d&#39;informations à ce sujet, consultez la page [Profils de produit 
    >
    > Vous ne pouvez pas ajouter ni supprimer de segments dans cette version de Campaign v8.
 
-1. Depuis votre **[!UICONTROL compte externe]**, cliquez sur le lien **[!UICONTROL Enrichir la formule...]** pour modifier la formule de calcul des URL afin de spécifier les informations d&#39;intégration pour l&#39;outil Web Analytics (identifiants de campagne) et les domaines des sites dont l&#39;activité doit faire l&#39;objet d&#39;un tracking.
+1. Depuis votre **[!UICONTROL compte externe]**, cliquez sur le lien **[!UICONTROL Enrichir la formule...]** pour modifier la formule de calcul des URL afin de spécifier les informations d&#39;intégration pour l&#39;outil de Web Analytics (soit les identifiants de campagne) et les domaines des sites dont l&#39;activité doit faire l&#39;objet d&#39;un tracking.
 
    ![](assets/analytics_connnector_13.png)
 
@@ -177,7 +177,7 @@ Pour plus d&#39;informations à ce sujet, consultez la page [Profils de produit 
 
    >[!IMPORTANT]
    >
-   >Ce mode de paramétrage s&#39;adresse à des utilisateurs experts : toute erreur dans cette formule risque de stopper la diffusion des e-mails.
+   >Ce type de paramétrage s&#39;adresse à des utilisateurs experts : toute erreur dans cette formule risque de bloquer la diffusion des e-mails.
 
 1. L&#39;onglet **[!UICONTROL Avancé]** vous permet de modifier des paramètres plus techniques.
 
