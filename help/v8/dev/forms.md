@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Formulaires de saisie Campaign
 description: Découvrez comment personnaliser les formulaires de saisie
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '2577'
 ht-degree: 100%
@@ -84,7 +84,7 @@ Le contrôle d&#39;édition s&#39;adapte automatiquement au type de données cor
 
 Par défaut, chaque champ est affiché sur une seule ligne et occupe tout l&#39;espace disponible selon le type de données.
 
-[!DNL :arrow_upper_right:] Tous les attributs de formulaires sont répertoriés dans la [documentation de Campaign Classic v7](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html).
+↗️ Tous les attributs de formulaires sont répertoriés dans la [documentation de Campaign Classic v7](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html).
 
 ## Mise en forme {#formatting}
 
