@@ -6,10 +6,10 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: 93b690d815f73d11de7de90b92ae188082a3e9e4
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 100%
+source-wordcount: '873'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ Modifications clés :
 
 En tant qu&#39;utilisateur [!DNL Campaign Classic], veuillez noter que la plupart des fonctionnalités de [!DNL Campaign Classic] v7 sont disponibles dans [!DNL Campaign] v8, à l&#39;exception d&#39;un petit ensemble de fonctionnalités répertoriées dans [cette section](#gs-removed). Les prochaines versions proposeront d&#39;autres fonctionnalités. [En savoir plus dans cette section](#gs-unavailable-features)
 
-[!DNL :bulb:] Pour en savoir plus sur l&#39;architecture de [!DNL Campaign] v8, consultez [cette page](../dev/architecture.md).
+?? Pour en savoir plus sur l&#39;architecture de [!DNL Campaign] v8, consultez [cette page](../dev/architecture.md).
 
 ## Modifications de la configuration des produits
 
@@ -72,6 +72,12 @@ Adobe Campaign v8 est fourni avec Snowflake comme base de données principale. 
 
 Les utilisateurs de Campaign n&#39;ont pas besoin d&#39;être experts en bases de données. Il n&#39;est en effet plus nécessaire d&#39;effectuer des opérations complexes de maintenance des bases de données ou des indexations complexes de tables.
 
+## Connexion à Campaign
+
+Les utilisateurs de Campaign se connectent via leur Adobe ID. La même Adobe ID est utilisée pour conserver tous vos plans d’Adobe et produits associés à un seul compte.
+
+?? Découvrez comment vous connecter à [!DNL Campaign] dans [cette page](connect.md).
+
 ## Reporting
 
 Notez que les rapports Adobe Campaign sont optimisés et offrent de meilleures fonctionnalités d&#39;échelle que Campaign Classic v7. Les limitations existantes avec Cubes ne s&#39;appliquent pas.
@@ -106,4 +112,5 @@ Pour s&#39;aligner sur la nouvelle architecture et le nouveau modèle de déploi
 * Questionnaires
 * Marketing pour réseaux sociaux
 * Connecteur ACS (offre principale)
-
+* Intégration avec LDAP
+* Connexion utilisateur/mot de passe
