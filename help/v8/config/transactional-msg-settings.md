@@ -5,20 +5,20 @@ description: Paramètres de messagerie transactionnelle Campaign
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 9cb1b38456601bce21d458fea42a5c112d9fafb4
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
 # Paramètres de messagerie transactionnelle
 
-[!DNL :speech_balloon:] En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour installer et configurer la messagerie transactionnelle de Campaign dans votre environnement.
+?? En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour installer et configurer la messagerie transactionnelle de Campaign dans votre environnement.
 
-[!DNL :bulb:] Les fonctionnalités de messagerie transactionnelle sont décrites dans [cette section](../send/transactional.md).
+?? Les fonctionnalités de messagerie transactionnelle sont décrites dans [cette section](../send/transactional.md).
 
-[!DNL :bulb:] Découvrez l&#39;architecture de la messagerie transactionnelle sur [cette page](../dev/architecture.md).
+?? Découvrez l&#39;architecture de la messagerie transactionnelle sur [cette page](../dev/architecture.md).
 
 ## Définition des autorisations
 
@@ -28,13 +28,13 @@ Pour créer des utilisateurs pour les instances d&#39;exécution Message Center 
 
 Les extensions de schéma effectuées sur les schémas utilisés par les **workflows techniques de Message Center** sur les instances de pilotage ou d&#39;exécution doivent être dupliquées sur les autres instances utilisées par le module des messages transactionnels d&#39;Adobe Campaign.
 
-[!DNL :arrow_upper_right:] En savoir plus sur les workflows techniques de Message Center dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/additional-configurations.html?lang=fr#technical-workflows).
+↗️ En savoir plus sur les workflows techniques de Message Center dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/additional-configurations.html?lang=fr#technical-workflows)
 
 ## Envoi de notifications push transactionnelles
 
 Couplée au module Canal applications mobiles (Mobile App Channel), la messagerie transactionnelle permet de transmettre des messages transactionnels par l&#39;intermédiaire de notifications push sur les appareils mobiles.
 
-[!DNL :arrow_upper_right:] Le canal applications mobiles (Mobile App Channel) est décrit dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=fr#sending-messages).
+↗️ Le canal applications mobiles (Mobile App Channel) est décrit dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=fr#sending-messages).
 
 Pour envoyer des notifications push transactionnelles, vous devez exécuter les configurations suivantes :
 
