@@ -6,10 +6,10 @@ feature: Profils
 role: Data Engineer
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 100%
 
 Campaign vous aide à ajouter des contacts à la base de données cloud. Vous pouvez charger un fichier, planifier et automatiser plusieurs mises à jour des contacts, collecter des données sur le Web ou saisir des informations de profil directement dans la table des destinataires.
 
-[!DNL :bulb:] Prise en main des [audiences](audiences.md)
-[!DNL :bulb:] Découverte du [modèle de données](../dev/datamodel.md) de Campaign
+?? Prise en main des [audiences](audiences.md)
+?? Présentation de Campaign [datamodel](../dev/datamodel.md)
 
 ## Import de profils dans un workflow
 
@@ -28,11 +28,11 @@ Les imports de profils sont configurés dans des modèles dédiés, exécutés p
 
 Apprenez-en davantage en consultant la documentation de Campaign Classic v7 :
 
-[!DNL :arrow_upper_right:] [Prise en main des imports et des exports](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/get-started-data-import-export.html?lang=fr){target=&quot;_blank&quot;}
+↗️ [Prise en main des imports et exports](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/get-started-data-import-export.html?lang=fr){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Bonnes pratiques en matière d&#39;import et d&#39;export](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/best-practices/import-export-best-practices.html?lang=fr){target=&quot;_blank&quot;}
+↗️ [Bonnes pratiques en matière d&#39;import et d&#39;export](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/best-practices/import-export-best-practices.html?lang=fr){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Configuration et exécution d&#39;un import](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=fr){target=&quot;_blank&quot;}
+↗️ [Configuration et exécution d&#39;un import](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=fr){target=&quot;_blank&quot;}
 
 ## Exécution d&#39;imports unitaires
 
@@ -40,7 +40,7 @@ Créez et exécutez un traitement d&#39;import de données générique pour char
 
 ![](assets/new-import.png)
 
-[!DNL :arrow_upper_right:] Découvrez comment exécuter des traitements d&#39;imports unitaires pour alimenter votre base de données dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=fr){target=&quot;_blank&quot;}.
+↗️ Découvrez comment exécuter des traitements d&#39;imports unitaires pour alimenter votre base de données dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=fr){target=&quot;_blank&quot;}.
 
 ## Collecte de profils via des applications web
 
@@ -48,7 +48,7 @@ Utilisez Campaign pour créer des formulaires web, et collecter et gérer facile
 
 ![](assets/web-form-page.png)
 
-[!DNL :arrow_upper_right:] Découvrez comment créer des formulaires web dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=fr){target=&quot;_blank&quot;}.
+↗️ Découvrez comment créer des formulaires web dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=fr){target=&quot;_blank&quot;}.
 
 **Rubriques connexes**
 
