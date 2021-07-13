@@ -6,10 +6,10 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: 13f3122a830c723fa940290689c8e3a1baa0443a
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 87%
+source-wordcount: '709'
+ht-degree: 89%
 
 ---
 
@@ -99,9 +99,7 @@ Pour en savoir plus sur l’Adobe IMS, consultez [cette page](https://helpx.adob
 
 ## Accès Web{#web-access}
 
-Certaines parties de l&#39;application sont accessibles via un simple navigateur web à l&#39;aide d&#39;une interface utilisateur HTML : tableau de bord Campaign, reporting Cube, supervision de l&#39;instance, etc.
-
-↗️ En savoir plus sur l’accès Web dans la [documentation du Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=fr#console-and-web-access){target=&quot;_blank&quot;}
+Certaines parties de l’application sont accessibles via un navigateur web à l’aide d’une interface utilisateur HTML : reporting, validation des diffusions, surveillance des instances, etc.
 
 L&#39;accès web présente une interface similaire à celle de la console, mais permet d&#39;accéder à un jeu de fonctionnalités réduit.
 
@@ -115,4 +113,4 @@ Tandis que, dans le contexte d&#39;un accès Web, les options seront principalem
 
 L&#39;accès web est également utilisé pour le processus de validation : les opérateurs peuvent cliquer sur l&#39;e-mail de demande de validation et se connecter à Campaign via leur navigateur web pour valider ou refuser le contenu ou le budget d&#39;une diffusion.
 
-↗️ Découvrez comment configurer et gérer les approbations dans la [documentation du Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=fr#orchestrating-campaigns){target=&quot;_blank&quot;}
+Pour accéder à votre instance Campaign à partir du web, l&#39;URL est :  `https://<your adobe campaign server>:<port number>/view/home`.
