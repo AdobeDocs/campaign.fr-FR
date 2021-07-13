@@ -5,10 +5,10 @@ description: Prise en main de la messagerie transactionnelle
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1550'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Les messages transactionnels (Message Center) sont un module de gestion des messages de déclenchement de Campaign. Ces messages (factures, confirmation de commande ou d&#39;expédition, changement de mot de passe, notification d&#39;indisponibilité d&#39;un produit, relevé de compte ou création d&#39;un compte sur un site web par exemple) sont générés à partir des événements déclenchés depuis des systèmes d&#39;information.
 
-[!DNL :speech_balloon:] En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour installer et configurer la messagerie transactionnelle de Campaign dans votre environnement.
+?? En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour installer et configurer la messagerie transactionnelle de Campaign dans votre environnement.
 
 Les messages transactionnels sont utilisés pour envoyer :
 
@@ -24,9 +24,9 @@ Les messages transactionnels sont utilisés pour envoyer :
 * une réponse individuelle en temps réel à une action client ;
 * du contenu non promotionnel.
 
-[!DNL :bulb:] Les paramètres de messagerie transactionnelle sont décrits dans [cette section](../config/transactional-msg-settings.md).
+?? Les paramètres de messagerie transactionnelle sont décrits dans [cette section](../config/transactional-msg-settings.md).
 
-[!DNL :bulb:] Découvrez l&#39;architecture de la messagerie transactionnelle sur [cette page](../dev/architecture.md).
+?? Découvrez l&#39;architecture de la messagerie transactionnelle sur [cette page](../dev/architecture.md).
 
 >[!CAUTION]
 >
@@ -151,7 +151,7 @@ Vous pouvez tester la diffusion du message en envoyant un BAT vers une adresse d
 
 L&#39;envoi d&#39;un BAT engage le même processus que pour toute diffusion.
 
-[!DNL :arrow_upper_right:] En savoir plus sur les BAT dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr).{target=&quot;_blank&quot;}
+↗️ En savoir plus sur les bons à tirer dans la [documentation du Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target=&quot;_blank&quot;}
 
 Toutefois, pour envoyer un BAT de message transactionnel, il vous faut exécuter les opérations suivantes :
 
