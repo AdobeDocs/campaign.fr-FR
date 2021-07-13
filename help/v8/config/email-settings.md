@@ -5,10 +5,10 @@ description: Paramètres du canal e-mail de Campaign
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '290'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -31,7 +31,7 @@ Notez que :
 
 * Seuls les e-mails envoyés sont pris en compte, les retours ne le sont pas.
 
-[!DNL :speech_balloon:] En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour activer l&#39;option E-mail Cci dans Campaign. L&#39;adresse e-mail en Cci de votre choix doit être fournie à l&#39;équipe Adobe qui la configurera pour vous.
+?? En tant qu&#39;utilisateur Cloud Services géré, [contactez l&#39;Adobe](../start/campaign-faq.md#support) pour activer Email Cci dans Campaign. L&#39;adresse e-mail en Cci de votre choix doit être fournie à l&#39;équipe Adobe qui la configurera pour vous.
 
 Une fois que la fonctionnalité E-mail Cci est configurée, assurez-vous qu&#39;elle est activée dans le modèle de diffusion ou dans la diffusion via l&#39;option **E-mail Cci**.
 
@@ -41,14 +41,14 @@ Une fois que la fonctionnalité E-mail Cci est configurée, assurez-vous qu&#39
 **Rubriques connexes** dans la documentation de Campaign Classic v7 :
 
 
-[!DNL :arrow_upper_right:] [Générer la page miroir](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#generating-mirror-page){target=&quot;_blank&quot;}
+↗️ [Générer la page miroir](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#generating-mirror-page){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Sélectionner le format d’e-mail ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#selecting-message-formats){target=&quot;_blank&quot;}
+↗️ [Sélectionner le format d’e-mail ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#selecting-message-formats){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Sélectionner le codage des caractères ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#character-encoding){target=&quot;_blank&quot;}
+↗️ [Sélectionner le codage des caractères ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#character-encoding){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Définir l&#39;adresse e-mail de rebond ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#managing-bounce-emails){target=&quot;_blank&quot;}
+↗️ [Définir l&#39;adresse e-mail de rebond ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#managing-bounce-emails){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Utiliser les modèles de diffusion par e-mail ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr){target=&quot;_blank&quot;}
+↗️ [Utiliser les modèles de diffusion par e-mail ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Comprendre les échecs de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr){target=&quot;_blank&quot;}
+↗️ [Comprendre les échecs de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr){target=&quot;_blank&quot;}
