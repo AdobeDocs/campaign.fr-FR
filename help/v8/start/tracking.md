@@ -6,10 +6,10 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '906'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 100%
 
 Les fonctionnalités de tracking de Campaign effectuent le suivi des messages envoyés et vous aident à analyser le comportement des destinataires : ouverture, clics sur les liens, abonnements/désabonnement, etc. Vous pouvez accéder aux journaux, rapports et mesures dédiés, demander la base de données pour examiner les données collectées et bien plus encore.
 
-[!DNL :arrow_upper_right:]Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=fr#tracking-tab){target=&quot;_blank&quot;}.
+↗️  Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=fr#tracking-tab){target=&quot;_blank&quot;}.
 
 Le tableau de bord des diffusions est un outil essentiel pour surveiller les diffusions et les erreurs éventuelles rencontrées lors de l&#39;envoi des messages.
 
-[!DNL :arrow_upper_right:]Pour en savoir plus à ce sujet consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=fr#sending-messages){target=&quot;_blank&quot;}.
+↗️ Voir à ce propos la [documentation du Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=fr#sending-messages){target=&quot;_blank&quot;}.
 
 Les principales fonctionnalités de tracking disponibles dans Campaign sont répertoriées ci-dessous.
 
@@ -35,32 +35,32 @@ Les principales fonctionnalités de tracking disponibles dans Campaign sont rép
 
 Vous pouvez suivre la réception des messages et l&#39;activation des liens insérés dans le contenu des messages pour mieux comprendre le comportement des destinataires.
 
-[!DNL :arrow_upper_right:] [Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html?lang=fr#sending-messages).{target=&quot;_blank&quot;}
+↗️ [Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html?lang=fr#sending-messages){target=&quot;_blank&quot;}
 
 **Tracking des URL**
 
 Les options de tracking peuvent être paramétrées en activant ou en désactivant les URL trackées.
 
-[!DNL :arrow_upper_right:] [Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/personalizing-url-tracking.html?lang=fr#sending-messages){target=&quot;_blank&quot;}
+↗️ [Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/personalizing-url-tracking.html?lang=fr#sending-messages){target=&quot;_blank&quot;}
 
 
 **Personnalisation des liens trackés**
 
 Les fonctionnalités de tracking de Campaign vous permettent d&#39;ajouter des liens dans les e-mails, qui peuvent être personnalisés et qui prennent en charge le tracking.
 
-[!DNL :arrow_upper_right:] [Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/tracking-personalized-links/tracking-personalized-links.html?lang=fr#sending-messages).{target=&quot;_blank&quot;}
+↗️ [Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/tracking-personalized-links/tracking-personalized-links.html?lang=fr#sending-messages){target=&quot;_blank&quot;}
 
 **Logs de tracking**
 
 Le workflow technique de **Tracking** récupère les données de tracking une fois que la diffusion a été envoyée et que le tracking a été activé. Ces données figurent dans l&#39;onglet Tracking de votre diffusion.
 
-[!DNL :arrow_upper_right:] [Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/accessing-the-tracking-logs.html?lang=fr#sending-messages).{target=&quot;_blank&quot;}
+↗️ [Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/accessing-the-tracking-logs.html?lang=fr#sending-messages){target=&quot;_blank&quot;}
 
 **Test du tracking**
 
 Avant d&#39;envoyer vos messages avec votre tracking, vous pouvez tester ce dernier sur votre page miroir, vos logs d&#39;e-mail et vos liens.
 
-[!DNL :arrow_upper_right:] [Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/testing-tracking.html?lang=fr#sending-messages).{target=&quot;_blank&quot;}
+↗️ [Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/testing-tracking.html?lang=fr#sending-messages){target=&quot;_blank&quot;}
 
 ### Tracking des applications web {#web-application-tracking}
 
@@ -70,13 +70,13 @@ Avant d&#39;envoyer vos messages avec votre tracking, vous pouvez tester ce dern
 
 Vous pouvez également tracker et mesurer les visites sur les pages d&#39;application web avec des balises de tracking. Cette fonctionnalité peut être utilisée pour tous les types d&#39;application web, tels que les formulaires et les questionnaires en ligne.
 
-[!DNL :arrow_upper_right:] [Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/tracking-a-web-application.html?lang=fr#designing-content).{target=&quot;_blank&quot;}
+↗️ [Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/tracking-a-web-application.html?lang=fr#designing-content){target=&quot;_blank&quot;}
 
 **Désinscription (opt-out) du tracking des applications web**
 
 La désinscription du tracking des applications web vous permet d&#39;arrêter le tracking des comportements web des utilisateurs finaux qui se désinscrivent du tracking comportemental. Vous pouvez inclure la possibilité d&#39;afficher une bannière dans des applications web ou des landing pages pour permettre aux utilisateurs de se désinscrire.
 
-[!DNL :arrow_upper_right:] [Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/web-application-tracking-opt-out.html?lang=fr#designing-content).{target=&quot;_blank&quot;}
+↗️ [Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/web-application-tracking-opt-out.html?lang=fr#designing-content){target=&quot;_blank&quot;}
 
 ### Rapports de tracking {#tracking-reports}
 
@@ -86,31 +86,31 @@ La désinscription du tracking des applications web vous permet d&#39;arrêter l
 
 Ce rapport fournit des statistiques sur les ouvertures, les clics et les transactions et vous permet de suivre l&#39;impact marketing de la diffusion.
 
-[!DNL :arrow_upper_right:] [Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/about-message-tracking.html?lang=fr#tracking-reports).{target=&quot;_blank&quot;}
+↗️ [Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/about-message-tracking.html?lang=fr#tracking-reports){target=&quot;_blank&quot;}
 
 **URL et flux de clics**
 
 Ce rapport présente la liste des pages visitées suite au lancement d&#39;une diffusion.
 
-[!DNL :arrow_upper_right:] [Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/delivery-reports.html?lang=fr#urls-and-click-streams).{target=&quot;_blank&quot;}
+↗️ [Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/delivery-reports.html?lang=fr#urls-and-click-streams){target=&quot;_blank&quot;}
 
 **Personnes et destinataires**
 
 À l&#39;aide de cet exemple, comprenez mieux la différence de tracking entre une ou plusieurs personnes et un destinataire dans Adobe Campaign.
 
-[!DNL :arrow_upper_right:] [Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/person-people-recipients.html?lang=fr#reporting).{target=&quot;_blank&quot;}
+↗️ [Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/person-people-recipients.html?lang=fr#reporting){target=&quot;_blank&quot;}
 
 **Indicateurs de tracking**
 
 Ce rapport combine les indicateurs clés pour le tracking du comportement des destinataires à la réception de la diffusion, tels que les taux d&#39;ouverture, de clics publicitaires et les flux de clics.
 
-[!DNL :arrow_upper_right:] [Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/delivery-reports.html?lang=fr#reporting).{target=&quot;_blank&quot;}
+↗️ [Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/delivery-reports.html?lang=fr#reporting){target=&quot;_blank&quot;}
 
 **Calcul des indicateurs**
 
 Les différents tableaux contiennent la liste des indicateurs utilisés dans les différents rapports et leur formule de calcul en fonction du type de diffusion.
 
-[!DNL :arrow_upper_right:] [Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/indicator-calculation.html?lang=fr#reporting){target=&quot;_blank&quot;}
+↗️ [Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/indicator-calculation.html?lang=fr#reporting){target=&quot;_blank&quot;}
 
 ## Instructions de surveillance
 
@@ -120,16 +120,16 @@ Adobe Campaign vous propose un ensemble de fonctionnalités permettant de survei
 
 La surveillance de vos diffusions après leur envoi est une étape clé pour vous assurer que vos campagnes marketing sont efficaces et atteignent vos clients.
 
-[!DNL :arrow_upper_right:] Pour en savoir plus sur les informations que vous pouvez surveiller après l&#39;envoi d&#39;une diffusion et comprendre la gestion des diffusions en échec et des quarantaines, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr#sending-messages){target=&quot;_blank&quot;}
+↗️ En savoir plus sur les informations que vous pouvez surveiller après l’envoi d’une diffusion, comprendre comment les échecs de diffusion et les quarantaines sont gérés dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr#sending-messages){target=&quot;_blank&quot;}
 
 ### Surveillance de vos workflows
 
-[!DNL :arrow_upper_right:] Découvrez comment surveiller l&#39;exécution des workflows dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html?lang=fr#automating-with-workflows).{target=&quot;_blank&quot;}
+↗️ Découvrez comment surveiller l’exécution des workflows dans la [documentation Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html?lang=fr#automating-with-workflows){target=&quot;_blank&quot;}
 
 ### Surveillance de votre instance
 
-[!DNL :arrow_upper_right:] Les instructions de surveillance des instances sont disponibles dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/introduction/monitoring-guidelines.html?lang=fr#monitoring-campaign-classic).{target=&quot;_blank&quot;}
+↗️ Les instructions de surveillance des instances sont disponibles dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/introduction/monitoring-guidelines.html?lang=fr#monitoring-campaign-classic){target=&quot;_blank&quot;}
 
 Utilisez l&#39;interface en libre-service du journal d&#39;audit pour surveiller les modifications apportées à votre instance. Le journal d&#39;audit capture, en temps réel, une liste complète d&#39;actions et d&#39;événements se produisant dans votre instance Adobe Campaign. Vous pouvez accéder à un historique des données pour répondre à des questions telles que : ce qui est arrivé à vos workflows et qui les a mis à jour en dernier, ou ce que vos utilisateurs ont fait dans l&#39;instance.
 
-[!DNL :arrow_upper_right:] En savoir plus sur le journal d&#39;audit dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html?lang=fr#accessing-audit-trail){target=&quot;_blank&quot;}
+↗️ En savoir plus sur le Suivi dans la [documentation du Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html?lang=fr#accessing-audit-trail){target=&quot;_blank&quot;}
