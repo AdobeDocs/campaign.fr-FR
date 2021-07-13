@@ -5,7 +5,7 @@ description: Découvrez comment créer un catalogue d'offres
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1351'
 ht-degree: 100%
@@ -78,7 +78,7 @@ Plusieurs activités de workflow permettent de définir la présentation des off
 
 L&#39;activité **Enrichissement** vous permet d&#39;ajouter des offres ou des liens vers des offres pour les destinataires d&#39;une diffusion.
 
-[!DNL :arrow_upper_right:] Pour plus d&#39;informations sur l&#39;activité Enrichissement, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html?lang=fr)
+↗️ Pour plus d&#39;informations sur l&#39;activité Enrichissement, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html?lang=fr)
 
 Vous pouvez par exemple enrichir les données d&#39;une requête sur les destinataires, avant une diffusion.
 
@@ -165,7 +165,7 @@ La diffusion stocke automatiquement le rang et le poids des offres. Ces informat
 
 L&#39;activité **[!UICONTROL Moteur d&#39;offres]** vous permet également de définir un appel au moteur d&#39;offres en amont d&#39;une diffusion.
 
-[!DNL :arrow_upper_right:] Pour plus d&#39;informations sur l&#39;activité **Moteur d&#39;offres**, reportez-vous à la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html?lang=fr)
+↗️ Pour plus d&#39;informations sur l&#39;activité **Moteur d&#39;offres**, reportez-vous à la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html?lang=fr)
 
 Cette activité fonctionne sur le même principe que l&#39;activité **Enrichissement** avec un appel au moteur, en enrichissant les données de la population entrante avec une offre calculée par le moteur, avant une diffusion.
 
@@ -188,7 +188,7 @@ Après avoir configuré votre activité **Requête** :
 
 L&#39;activité **[!UICONTROL Offres par cellules]** vous permet de répartir la population entrante (par exemple issue d&#39;une requête) en plusieurs segments, et de définir une offre à proposer pour chacun de ces segments.
 
-[!DNL :arrow_upper_right:] Pour plus d&#39;informations sur l&#39;activité **Offre par cellule**, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html?lang=fr)
+↗️ Pour plus d&#39;informations sur l&#39;activité **Offre par cellule**, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html?lang=fr)
 
 Pour cela :
 
