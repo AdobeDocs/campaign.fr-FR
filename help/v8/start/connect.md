@@ -6,10 +6,10 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 13f3122a830c723fa940290689c8e3a1baa0443a
+source-git-commit: 136209f05cf302a1e73a2aa18c051260edeb0762
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 89%
+source-wordcount: '713'
+ht-degree: 88%
 
 ---
 
@@ -75,7 +75,7 @@ Pour vous connecter à une instance existante, procédez comme suit :
 
 1. Cliquez sur **[!UICONTROL Ok]**.
 
-1. Vous pouvez ensuite vous connecter à Campaign.
+1. Vous pouvez ensuite vous connecter à Campaign à l’aide de [votre Adobe ID](#connect-ims).
 
    ![](assets/adobeID.png)
 
