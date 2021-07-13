@@ -5,7 +5,7 @@ description: Mécanisme d'évaluation de l'API Campaign
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 100%
@@ -29,8 +29,10 @@ Les API de Campaign Classic v7 sont toujours disponibles, mais ne peuvent pas b
 >[!CAUTION]
 >
 >* Grâce à ce nouveau mécanisme, la synchronisation des données pour les désinscriptions de canaux, les abonnements, les désabonnements ou l&#39;enregistrement mobile est désormais **asynchrone**.
->
->* L&#39;évaluation s’applique uniquement aux schémas stockés dans la base de données cloud. N&#39;activez pas l&#39;évaluation sur les schémas répliqués. N&#39;activez pas l&#39;évaluation sur les schémas locaux. N&#39;activez pas l’évaluation sur un schéma évalué
+   >
+   >
+* L&#39;évaluation s’applique uniquement aux schémas stockés dans la base de données cloud. N&#39;activez pas l&#39;évaluation sur les schémas répliqués. N&#39;activez pas l&#39;évaluation sur les schémas locaux. N&#39;activez pas l’évaluation sur un schéma évalué
+
 >
 
 
@@ -54,7 +56,7 @@ Pour mettre en œuvre le mécanisme d&#39;évaluation de Campaign sur une table 
    </srcSchema>
    ```
 
-   [!DNL :bulb:] Pour en savoir plus sur la création de schémas personnalisés, consultez [cette page](create-schema.md).
+   💡 Pour en savoir plus sur la création de schémas personnalisés, consultez [cette page](create-schema.md).
 
 1. Enregistrez et mettez à jour la structure de la base de données.  [En savoir plus](update-database-structure.md)
 
