@@ -6,10 +6,10 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '823'
-ht-degree: 100%
+source-wordcount: '749'
+ht-degree: 87%
 
 ---
 
@@ -21,7 +21,7 @@ Avant de commencer, vous devez :
 
 * Vérifier la compatibilité de votre système et de vos outils avec Adobe Campaign dans la [matrice de compatibilité](compatibility-matrix.md)
 * Obtenir l&#39;URL du serveur Campaign
-* Obtenir vos informations d&#39;identification utilisateur
+* Créer votre Adobe ID ou obtenir vos informations d’identification d’utilisateur de votre société
 
 ## Téléchargement et installation de la console cliente
 
@@ -69,18 +69,15 @@ Pour vous connecter à une instance existante, procédez comme suit :
 
 1. Cliquez sur le lien situé dans le coin supérieur droit des champs d&#39;informations d&#39;identification pour accéder à la fenêtre de configuration de la connexion.
 
+   ![](assets/connectToCampaign.png)
+
 1. Sélectionnez l&#39;instance de Campaign à laquelle vous devez vous connecter.
 
 1. Cliquez sur **[!UICONTROL Ok]**.
 
-1. Saisissez vos identifiants de connexion d&#39;utilisateur et cliquez sur **[!UICONTROL CONNEXION]**.
+1. Vous pouvez ensuite vous connecter à Campaign.
 
-   ![](assets/sign-in-v8.png)
-
-Selon votre configuration, vos informations d&#39;identification peuvent être les suivantes :
-
-* fourni par l&#39;administrateur Campaign qui vous a octroyé l&#39;accès
-* votre Adobe ID
+   ![](assets/adobeID.png)
 
 ## Octroi d&#39;accès aux utilisateurs
 
@@ -96,27 +93,15 @@ En tant qu&#39;administrateur Campaign, vous êtes chargé de créer les opérat
 
 ## Connexion à Campaign avec votre Adobe ID{#connect-ims}
 
-Les utilisateurs de Campaign peuvent se connecter à la console Adobe Campaign à l&#39;aide de leur Adobe ID, via le système IMS (Adobe Identity Management System). Cette implémentation présente les avantages suivants :
+Les utilisateurs de Campaign se connectent à la console Adobe Campaign à l’aide de leur Adobe ID, via Adobe Identity Management System (IMS). Ils peuvent utiliser le même identifiant pour toutes les solutions d’Adobe. La connexion est enregistrée lors de l’utilisation d’Adobe Campaign avec d’autres solutions.
 
-* utilisation d&#39;un même identifiant pour toutes les solutions Experience Cloud
-* mémorisation de la connexion lors de l&#39;utilisation d&#39;Adobe Campaign avec les différentes intégrations
-* politique de gestion de mot de passe plus sécurisée,
-* utilisation de comptes de type Federated ID (fournisseur d&#39;identité externe).
-
-[!DNL :speech_balloon:] En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](campaign-faq.md#support) pour implémenter Adobe IMS avec Campaign.
-
-## Connexion à Campaign à l&#39;aide de votre connexion LDAP
-
-Adobe Campaign peut être configuré pour permettre à l&#39;utilisateur d&#39;accéder à la plateforme via son authentification LDAP.
-
-[!DNL :speech_balloon:] En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](campaign-faq.md#support) pour configurer l&#39;intégration de la connexion LDAP dans Campaign.
-
+Pour en savoir plus sur l’Adobe IMS, consultez [cette page](https://helpx.adobe.com/fr/enterprise/using/identity.html).
 
 ## Accès Web{#web-access}
 
 Certaines parties de l&#39;application sont accessibles via un simple navigateur web à l&#39;aide d&#39;une interface utilisateur HTML : tableau de bord Campaign, reporting Cube, supervision de l&#39;instance, etc.
 
-[!DNL :arrow_upper_right:] En savoir plus sur l&#39;accès web dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=fr#console-and-web-access){target=&quot;_blank&quot;}
+↗️ En savoir plus sur l’accès Web dans la [documentation du Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=fr#console-and-web-access){target=&quot;_blank&quot;}
 
 L&#39;accès web présente une interface similaire à celle de la console, mais permet d&#39;accéder à un jeu de fonctionnalités réduit.
 
@@ -130,4 +115,4 @@ Tandis que, dans le contexte d&#39;un accès Web, les options seront principalem
 
 L&#39;accès web est également utilisé pour le processus de validation : les opérateurs peuvent cliquer sur l&#39;e-mail de demande de validation et se connecter à Campaign via leur navigateur web pour valider ou refuser le contenu ou le budget d&#39;une diffusion.
 
-[!DNL :arrow_upper_right:] Découvrez comment configurer et gérer les validations dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=fr#orchestrating-campaigns).{target=&quot;_blank&quot;}
+↗️ Découvrez comment configurer et gérer les approbations dans la [documentation du Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=fr#orchestrating-campaigns){target=&quot;_blank&quot;}
