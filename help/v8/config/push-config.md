@@ -8,7 +8,7 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 100%
@@ -77,8 +77,9 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 >[!NOTE]
 >
 > * Pensez à télécharger et à ajouter google-services.json à votre projet.
->
-> * Le `apiKey` doit correspondre au `projectKey` défini dans l&#39;application mobile Adobe Campaign liée à cette application Android.
+   >
+   > 
+* Le `apiKey` doit correspondre au `projectKey` défini dans l&#39;application mobile Adobe Campaign liée à cette application Android.
 
 
 ### Configuration du SDK Android
@@ -796,7 +797,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 
 Les variables permettent de définir le comportement de l&#39;application mobile après réception d&#39;une notification. Ces variables doivent être définies dans le code de l’application mobile et dans la console Adobe Campaign, dans l&#39;onglet **[!UICONTROL Variables]** du service d&#39;application mobile dédié.
 
-[!DNL :arrow_upper_right:] En savoir plus dans la **documentation de Campaign Classic v7** sur les applications mobiles : [Étapes de configuration pour iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=fr){target=&quot;_blank&quot;} et [Étapes de configuration pour Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=fr){target=&quot;_blank&quot;}.
+↗️ En savoir plus dans la **documentation de Campaign Classic v7** sur les applications mobiles : [Étapes de configuration pour iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=fr){target=&quot;_blank&quot;} et [Étapes de configuration pour Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=fr){target=&quot;_blank&quot;}.
 
 Vous trouverez ci-dessous un exemple de code qui permet à une application mobile de collecter toutes les variables ajoutées dans une notification. Dans notre exemple, nous utilisons la variable &quot;VAR&quot;.
 
