@@ -6,10 +6,10 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: 22f47bed75d78684c85471330aca7dadafb9ed65
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 100%
+source-wordcount: '663'
+ht-degree: 97%
 
 ---
 
@@ -23,13 +23,13 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
    Cette fréquence régulière de mise à jour a pour but de vous fournir les dernières fonctionnalités et améliorations. Vous bénéficiez ainsi d&#39;un environnement sécurisé et d&#39;une expérience optimale avec notre produit. C&#39;est la raison pour laquelle nous pensons qu&#39;il est important que vous exécutiez la version la plus récente d&#39;Adobe Campaign.
 
-   💬 En tant qu&#39;utilisateur de Managed Cloud Services, votre instance est mise à niveau par Adobe avec chaque nouvelle version.
+   ?? En tant qu&#39;utilisateur de Managed Cloud Services, votre instance est mise à niveau par Adobe avec chaque nouvelle version.
 
 1. **Comment se connecter à Campaign v8 ?**
 
    Vous devez télécharger et installer la console cliente Campaign pour vous connecter à Adobe Campaign.
 
-   💡 [Pour en savoir plus, cliquez ici](connect.md).
+   ?? [Pour en savoir plus, cliquez ici](connect.md).
 
 1. **Campaign v8 peut-il être installé dans un environnement on-premise ou hybride ?**
 
@@ -61,7 +61,7 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
    Un sous-domaine est une division de votre domaine qui peut être utilisée pour isoler vos marques ou divers types de trafic (messages transactionnels, informations marketing, etc.).
 
-   💬 En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour déléguer vos sous-domaines à Adobe.
+   ?? En tant qu&#39;utilisateur Managed Cloud Services, contactez Adobe pour déléguer vos sous-domaines à Adobe.
 
 1. **En tant qu&#39;utilisateur Campaign Classic v7, puis-je migrer vers Campaign v8 ?**
 
@@ -71,7 +71,7 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
    Vous pouvez obtenir le programme d&#39;installation et la console cliente à partir du Centre de téléchargement d&#39;Adobe.
 
-   [Cliquez ici](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target=&quot;_blank&quot;} pour accéder à la distribution logicielle de la solution Experience Cloud.
+   En tant qu’utilisateur administrateur, accédez à l’Adobe [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) {target=&quot;_blank&quot;} pour télécharger Adobe Campaign.
 
    En savoir plus sur le Centre de distribution [sur cette page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr){target=&quot;_blank&quot;}.
 
