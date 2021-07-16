@@ -6,7 +6,7 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 610a818c1f5d8a43ea55659a3c5b46676405415d
+source-git-commit: f51c36ed426d200a4636290eb4fa1be6b077f976
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 96%
@@ -15,13 +15,9 @@ ht-degree: 96%
 
 # Matrice de compatibilité de Campaign v8
 
-Ce document répertorie tous les systèmes et composants pris en charge pour la dernière version d&#39;**Adobe Campaign v8**. Les produits et versions ne faisant pas partie de cette liste ne sont pas compatibles avec Adobe Campaign.
+Ce document répertorie tous les systèmes et composants pris en charge pour la dernière version d&#39;**Adobe Campaign v8**. Sauf mention contraire, toutes les versions mineures sont prises en charge. Les produits et versions ne faisant pas partie de cette liste ne sont pas compatibles avec Adobe Campaign.
 
->[!CAUTION]
->
->* Sauf mention contraire, toutes les versions mineures sont prises en charge.
->* Lorsque des versions spécifiques de ces systèmes et outils tiers arrivent en fin de vie (EOL), Adobe Campaign n&#39;est plus compatible avec celles-ci. Elles sont alors supprimées de cette matrice de compatibilité. Pour éviter tout problème, vérifiez que vous disposez des versions prises en charge des systèmes répertoriés dans la matrice de compatibilité.
-
+Lorsque des versions spécifiques de ces systèmes et outils tiers arrivent en fin de vie (EOL), Adobe Campaign n&#39;est plus compatible avec celles-ci. Elles sont alors supprimées de cette matrice de compatibilité. Pour éviter tout problème, vérifiez que vous disposez des versions prises en charge des systèmes répertoriés dans la matrice de compatibilité.
 
 ## Console cliente{#ClientConsoleoperatingsystems}
 
