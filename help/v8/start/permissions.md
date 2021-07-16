@@ -6,9 +6,9 @@ description: Découvrez comment octroyer des autorisations pour Campaign v8
 feature: Audiences
 role: Data Engineer
 level: Beginner
-source-git-commit: a57855556751e85e7a1f7751a103ca157f434a8a
+source-git-commit: 22f47bed75d78684c85471330aca7dadafb9ed65
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '391'
 ht-degree: 93%
 
 ---
@@ -37,7 +37,7 @@ Chaque opérateur doit être associé à une zone pour se connecter à une insta
 
 Un opérateur est lié à une zone de sécurité à partir de son profil dans la console, accessible dans le nœud **[!UICONTROL Administration > Gestion des accès > Opérateurs.]**
 
-?? En tant qu’utilisateur Cloud Services géré, Adobe définit les zones de sécurité pour vous. Pour plus d’informations, [contactez l’Adobe](support.md#support).
+?? En tant qu’utilisateur Cloud Services géré, Adobe définit les zones de sécurité pour vous. Pour plus d’informations, [contactez Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
 
 **Apprenez-en davantage en consultant la documentation de Campaign Classic v7**.
 
