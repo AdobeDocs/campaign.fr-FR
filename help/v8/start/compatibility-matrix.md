@@ -6,10 +6,10 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 619edce939b39430832fd950ece734f817f9dce3
+source-git-commit: 610a818c1f5d8a43ea55659a3c5b46676405415d
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 100%
+source-wordcount: '275'
+ht-degree: 96%
 
 ---
 
@@ -23,39 +23,39 @@ Ce document répertorie tous les systèmes et composants pris en charge pour la 
 >* Lorsque des versions spécifiques de ces systèmes et outils tiers arrivent en fin de vie (EOL), Adobe Campaign n&#39;est plus compatible avec celles-ci. Elles sont alors supprimées de cette matrice de compatibilité. Pour éviter tout problème, vérifiez que vous disposez des versions prises en charge des systèmes répertoriés dans la matrice de compatibilité.
 
 
-## Systèmes compatibles
+## Console cliente{#ClientConsoleoperatingsystems}
 
-### Console cliente{#ClientConsoleoperatingsystems}
+>[!CAUTION]
+>
+> Les systèmes d&#39;exploitation et le navigateur ci-après sont nécessaires pour utiliser la console cliente Campaign.
 
-:warning: Les systèmes d&#39;exploitation et le navigateur ci-après sont nécessaires pour utiliser la console cliente Campaign.
-
-**Systèmes d&#39;exploitation**
+### Systèmes d’exploitation
 
 * **Microsoft Windows Server** 2016, 2012
 * **Microsoft Windows** 8, 10 (recommandé pour les instances japonaises))
 
-**Navigateur**
+### Navigateur
 
 **Microsoft Internet Explorer** 11
 
-### Connecteurs CRM{#CRMconnectors}
+## Connecteurs CRM{#CRMconnectors}
 
 * API du connecteur **Salesforce** version 49
 * API web du connecteur **Microsoft Dynamics** : Dynamics 365 local et en ligne
 
-### Federated Data Access (FDA){#FederatedDataAccessFDA}
+## Federated Data Access (FDA){#FederatedDataAccessFDA}
 
 * **Amazon Redshift**
 * **[!DNL Google Big Query]**
 * **[!DNL Snowflake]**
 * **[!DNL Vertica]**
 
-### SDK mobile{#MobileSDK}
+## SDK mobile{#MobileSDK}
 
 * **Android** 7.x, 8.x, 9.0 avec le SDK Android de Campaign version 1.1.1.
 * **Apple iOS** 9 - 14 avec SDK iOS de Campaign version 1.0.26, compatible avec les versions 32 et 64 bits.
 
-### Navigateurs pris en charge {#Browsers}
+## Accès Web
 
 Les navigateurs ci-après sont compatibles avec Campaign pour un accès à internet.
 
@@ -65,7 +65,7 @@ Les navigateurs ci-après sont compatibles avec Campaign pour un accès à inter
 
 ## Comment vérifier la version  et le build de Campaign
 
-Utilisez le menu **Aide > À propos...** pour vérifier votre version.
+Accédez au menu **Aide > À propos...** pour vérifier votre version.
 
 ![](assets/ac-version.png)
 
