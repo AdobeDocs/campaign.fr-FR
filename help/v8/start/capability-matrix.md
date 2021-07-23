@@ -6,9 +6,9 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: bfd2df90e5e6bee89bdfc7c5da82c755ac5726df
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '927'
 ht-degree: 94%
 
 ---
@@ -21,7 +21,7 @@ Modifications clés :
 
 * Création de segments jusqu&#39;à 200 fois plus rapide
 * Augmentation de la vitesse de diffusion
-* Reporting en temps réel   avec Cubes
+* Reporting en temps réel    avec Cubes
 
 En tant qu&#39;utilisateur [!DNL Campaign Classic], veuillez noter que la plupart des fonctionnalités de [!DNL Campaign Classic] v7 sont disponibles dans [!DNL Campaign] v8, à l&#39;exception d&#39;un petit ensemble de fonctionnalités répertoriées dans [cette section](#gs-removed). Les prochaines versions proposeront d&#39;autres fonctionnalités. [En savoir plus dans cette section](#gs-unavailable-features)
 
@@ -74,13 +74,21 @@ Les utilisateurs de Campaign n&#39;ont pas besoin d&#39;être experts en bases d
 
 ## Connexion à Campaign
 
-Les utilisateurs de Campaign se connectent via leur Adobe ID. La même Adobe ID est utilisée pour conserver tous vos plans d’Adobe et produits associés à un seul compte.
+Les utilisateurs de Campaign se connectent via leur Adobe ID. Le même Adobe ID est utilisé pour conserver tous vos plans d’Adobe et produits associés à un seul compte.
 
-?? Découvrez comment vous connecter à [!DNL Campaign] dans [cette page](connect.md).
+?? Découvrez comment vous connectez à [!DNL Campaign]sur [cette page](connect.md).
 
 ## Reporting
 
 Notez que les rapports Adobe Campaign sont optimisés et offrent de meilleures fonctionnalités d&#39;échelle que Campaign Classic v7. Les limitations existantes avec Cubes ne s&#39;appliquent pas.
+
+## Workflow {#workflow}
+
+Campaign v8 propose une activité de workflow de ciblage supplémentaire : **[!UICONTROL Modifier la source de données]**.
+
+L&#39;activité **[!UICONTROL Modifier la source de données]** permet de modifier la source de données d&#39;un workflow **[!UICONTROL Table de travail]** pour gérer les données de différentes sources de données telles que FDA, FFDA et base de données locale.
+
+?? En savoir plus sur l’activité **[!UICONTROL Modifier la source de données]** dans [cette page](../config/workflows.md#change-data-source-activity).
 
 ## Fonctionnalités non disponibles{#gs-unavailable-features}
 
