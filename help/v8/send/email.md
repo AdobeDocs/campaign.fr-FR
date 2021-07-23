@@ -6,9 +6,9 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '618'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -78,15 +78,16 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 Pour en savoir plus, consultez ces sections de la documentation de Campaign Classic v7 :
 
 * Concevoir un e-mail dans Campaign
+
 ↗️ [Découvrez comment concevoir un e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html?lang=fr)
-* Importation d’un contenu d’email
-↗️ [Cas pratique : Créer un workflow pour charger un contenu de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html?lang=fr)
-* Créer et utiliser un modèle d&#39;email
-↗️ [En savoir plus sur les modèles d’email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr)
-* Sélectionner l&#39;audience de votre email
+* Importer du contenu d’e-mail
+↗️ [Cas d’utilisation : créer un workflow pour charger un contenu de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html?lang=fr)
+* Créer et utiliser un modèle d’e-mail
+↗️ [En savoir plus sur les modèles d’e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr)
+* Sélectionner l’audience de votre e-mail
 ↗️ [Découvrez comment définir la population cible](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html?lang=fr)
 * Valider une diffusion et envoyer des BAT
-↗️ [Découvrez les étapes clés de validation d’une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr)
+↗️ [Découvrez les principales étapes de validation d’une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr)
 * Ajout [d&#39;adresses de contrôle](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html?lang=fr)
 
 ## Test et validation de vos e-mails
@@ -103,11 +104,11 @@ Vous pouvez ainsi :
 * Utiliser des populations témoins
 * Vérifier le rendu des e-mails
 
-↗️ [En savoir plus dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
+↗️ [Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr)
 
 ## Surveillance de vos e-mails
 
 Une fois les messages envoyés, vérifiez l&#39;état de votre diffusion dans le tableau de bord des diffusions et accédez aux logs de diffusion et aux rapports pour confirmer que vos messages ont été correctement envoyés.
 
-↗️ [En savoir plus dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=fr)
+↗️ [Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=fr)
 
