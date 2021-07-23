@@ -6,9 +6,9 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '618'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Pour diffuser vers un téléphone mobile, vous devez avoir :
 
 * un modèle de diffusion dans lequel est référencé ce compte externe.
 
-↗️ Découvrez comment configurer un canal SMS dans la [documentation du Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=fr#sending-messages){target=&quot;_blank&quot;}
+↗️ Découvrez comment configurer un canal SMS dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=fr#sending-messages){target=&quot;_blank&quot;}
 
 Avant d&#39;envoyer des SMS :
 
@@ -77,9 +77,9 @@ Les étapes clés de création et de conception d&#39;un SMS sont présentées d
 
 * Sélectionner l&#39;audience de votre e-mail
 
-   ↗️ [Découvrez comment définir la population cible](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html?lang=fr){target=&quot;_blank&quot;}
+   ↗️ [Découvrez comment définir la population cible ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html?lang=fr){target=&quot;_blank&quot;}
 
-?? Les étapes de définition d’une audience sont détaillées sur [cette page](../start/audiences.md).
+?? Les étapes de définition de l&#39;audience sont décrites sur [cette page](../start/audiences.md).
 
 ## Tester votre SMS
 
@@ -90,7 +90,7 @@ Pour visualiser le rendu du message avec sa personnalisation, cliquez sur **[!UI
 Pour envoyer un bon à tirer, reportez-vous aux sections suivantes de la documentation de Campaign Classic v7 :
 
 * Valider une diffusion et envoyer des BAT
-↗️ [Découvrez les étapes clés de validation d’une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target=&quot;_blank&quot;}
+↗️ [Découvrez les principales étapes de validation d’une diffusion ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target=&quot;_blank&quot;}
 * Ajouter des adresses de contrôle
 ↗️ [En savoir plus sur les adresses de contrôle](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html?lang=fr){target=&quot;_blank&quot;}
 
