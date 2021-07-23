@@ -6,9 +6,9 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1116'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Adobe Campaign utilise les comptes techniques suivants pour activer et exécuter
 
    Le compte externe **Mails rebonds** spécifie le compte externe POP3 à utiliser pour se connecter au service de messagerie. Tous les serveurs configurés pour l&#39;accès POP3 peuvent être utilisés pour recevoir les retours d&#39;e-mail.
 
-   ↗️ En savoir plus sur les emails entrants dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html?lang=fr){target=&quot;_blank&quot;}
+   ↗️ Apprenez-en davantage sur les e-mails entrants dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html?lang=fr){target=&quot;_blank&quot;}
 
 * **Routage**
 
@@ -71,7 +71,7 @@ Adobe Campaign utilise les comptes techniques suivants pour activer et exécuter
 
 * **Adobe Experience Cloud**
 
-   Le compte externe **[!UICONTROL Adobe Experience Cloud]** est utilisé pour implémenter l’Adobe IMS pour se connecter à la console Adobe Campaign à l’aide d’un Adobe ID.
+   Le compte externe **[!UICONTROL Adobe Experience Cloud]** est utilisé pour implémenter l’IMS d’Adobe pour se connecter à la console Adobe Campaign à l’aide d’un Adobe ID.
 
    ?? Apprenez-en davantage sur le service Identity Management (IMS) d&#39;Adobe dans [cette section](../start/connect.md#connect-ims).
 
@@ -97,7 +97,7 @@ Adobe Campaign utilise les comptes techniques suivants pour activer et exécuter
 
    Le compte externe **[!UICONTROL Microsoft Dynamics CRM]** vous permet d&#39;importer et d&#39;exporter des données Microsoft Dynamics vers Adobe Campaign.
 
-   ?? En savoir plus sur l&#39;intégration Adobe Campaign - Microsoft Dynamics CRM dans [cette page](../connect/crm.md).
+   ?? Pour en savoir plus sur l&#39;intégration Adobe Campaign - Microsoft Dynamics CRM, [consultez cette page](../connect/crm.md).
 
    Avec le type de déploiement **[!UICONTROL Web API]** et l&#39;authentification **[!UICONTROL Mot de passe]**, vous devez fournir les informations suivantes :
 
@@ -143,7 +143,7 @@ Adobe Campaign utilise les comptes techniques suivants pour activer et exécuter
 
 Ces comptes externes peuvent être utilisés pour importer ou exporter des données vers Adobe Campaign à l&#39;aide d&#39;une activité de workflow **[!UICONTROL Transfert de fichier]**.
 
-↗️ En savoir plus sur le transfert de fichiers dans les workflows dans la [documentation du Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html?lang=fr){target=&quot;_blank&quot;}
+↗️ Apprenez-en davantage sur le transfert de fichier dans les workflows dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html?lang=fr){target=&quot;_blank&quot;}
 
 * **FTP et SFTP**
 
