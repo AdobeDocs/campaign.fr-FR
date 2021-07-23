@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '546'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Deux modes d&#39;extension de table sont disponibles :
 
 * Dans l&#39;interface, par le biais de l&#39;assistant **Nouveau champ**
 
-   ↗️ Découvrez comment ajouter rapidement un nouveau champ dans Campaign dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=fr#configuring-campaign-classic)
+   ↗️ Découvrez comment ajouter rapidement un nouveau champ dans Campaign dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=fr#configuring-campaign-classic).
 
 * Par programme, en étendant le schéma
 
@@ -48,9 +48,9 @@ Pour ajouter un nouveau type de données qui n&#39;existe pas par défaut dans A
 
 **Rubriques connexes**
 
-↗️ Exemple d’édition de schéma dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#configuring-campaign-classic)
+↗️ Exemple de modification de schéma dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#configuring-campaign-classic).
 
-↗️ Cas d’utilisation : lier un champ à une table de référence existante dans la [documentation Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#uc-link)
+↗️ Cas d&#39;utilisation : liaison d&#39;un champ à une table de référence existante dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#uc-link).
 
 
 ## Modification des formulaires de saisie
@@ -65,7 +65,7 @@ L&#39;interface d&#39;Adobe Campaign utilise de nombreuses applications web afin
 
 Les applications web d&#39;usine sont stockées sous le nœud Administration > Paramétrage > Applications web.
 
-↗️ Découvrez comment créer une page d’aperçu dans Campaign dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=fr#creating-a-single-page-web-application)
+↗️ Découvrez comment créer une page d&#39;aperçu dans Campaign dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=fr#creating-a-single-page-web-application).
 
 
 ## Personnalisation de listes et création de filtres {#gs-lists-and-filters}
@@ -81,9 +81,9 @@ Les listes Campaign s&#39;accompagnent de filtres prédéfinis pour faciliter la
 
 Lorsque vous naviguez dans l&#39;arborescence de l&#39;Explorateur Adobe Campaign, les données contenues dans la base s&#39;affichent dans des listes. Vous pouvez filtrer ces listes, lancer des recherches, ajouter des informations, filtrer et trier les données.
 
-↗️ Découvrez comment configurer des listes et enregistrer une configuration de liste dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=fr#getting-started)
+↗️ Découvrez comment configurer des listes et enregistrer une configuration de liste dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=fr#getting-started).
 
 
 Vous pouvez appliquer un filtre sur ces listes afin d&#39;afficher uniquement les données nécessaires à l&#39;opérateur. Ensuite, les actions peuvent être exécutées sur les données filtrées. La configuration des filtres vous permet de sélectionner dynamiquement des données d&#39;une liste. Si les données sont modifiées, les données filtrées sont mises à jour.
 
-↗️ Découvrez comment filtrer les données dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/creating-filters.html?lang=fr#typology-of-available-filters)
+↗️ Découvrez comment filtrer les données dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/creating-filters.html?lang=fr#typology-of-available-filters).
