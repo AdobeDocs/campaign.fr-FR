@@ -3,7 +3,7 @@ product: Adobe Campaign
 title: Utilisation des schémas Campaign
 description: Prise en main des schémas
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1254'
 ht-degree: 100%
 
@@ -97,11 +97,11 @@ La clé d&#39;identification d&#39;un schéma est une chaîne construite avec l&
 
 Pour ajouter un champ ou tout autre élément à l&#39;un des principaux schémas de données de Campaign, comme la table des destinataires (nms:recipient), vous devez étendre ce schéma.
 
-💡 Pour plus d&#39;informations à ce sujet, consultez la section [Extension d&#39;un schéma](extend-schema.md).
+?? Pour plus d&#39;informations à ce sujet, consultez la section [Extension d&#39;un schéma](extend-schema.md).
 
 Pour ajouter un tout nouveau type de données qui n&#39;existe pas par défaut dans Adobe Campaign (une table des contrats par exemple), vous pouvez créer directement un schéma personnalisé.
 
-💡 Pour plus d&#39;informations à ce sujet, consultez la section [Création d&#39;un schéma](create-schema.md).
+?? Pour plus d&#39;informations à ce sujet, consultez la section [Création d&#39;un schéma](create-schema.md).
 
 ![](assets/schemaextension_1.png)
 
@@ -153,7 +153,7 @@ Dans cet exemple, au lieu de laisser l&#39;attribut **@autouuid** créer une cl�
 >
 >Lors de la création ou de l&#39;extension d&#39;un schéma, vous devez conserver la valeur de la séquence de la clé primaire (@pkSequence) pour l&#39;ensemble du schéma.
 
-💡 En savoir plus sur les clés dans [cette section](database-mapping.md#management-of-keys).
+?? En savoir plus sur les clés dans [cette section](database-mapping.md#management-of-keys).
 
 ## Attributs (champs) {#attributes--fields-}
 
