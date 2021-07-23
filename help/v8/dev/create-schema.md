@@ -3,7 +3,7 @@ product: Adobe Campaign
 title: Création d'un schéma dans Campaign
 description: Découvrez comment créer un schéma dans Campaign
 source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '433'
 ht-degree: 100%
 
