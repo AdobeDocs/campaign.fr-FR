@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896,b1319b34-ee07-48ed-9ab1-e2d12d3d99f8
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Il est possible d&#39;étendre la table des destinataires, mais sans réduire le
 
 ?? Découvrez comment étendre un schéma existant dans [cette section](extend-schema.md).
 
-↗️ Découvrez des exemples d’extensions de table de destinataires intégrée dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#extending-a-table)
+↗️ Découvrez des exemples d&#39;extensions de table de destinataires intégrées dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#extending-a-table).
 
 Vous pouvez également utiliser une autre table des destinataires, mieux adaptée à vos besoins professionnels ou fonctionnels. Cette méthode s&#39;accompagne de limitations et est décrite dans [cette section](custom-recipient.md).
 
@@ -73,5 +73,5 @@ Pour une meilleure compréhension de la gestion des tables dans Campaign v8, no
 
 **Rubriques connexes** 
 
-?? Découvrez comment importer des profils dans [cette section](../start/import.md)
-?? En savoir plus sur les audiences Campaign dans [cette section](../start/audiences.md)
+?? Découvrez comment importer des profils dans [cette section](../start/import.md).
+?? Pour en savoir plus sur les audiences Campaign, consultez [cette section.](../start/audiences.md)
