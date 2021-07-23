@@ -6,9 +6,9 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '327'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Pour créer des utilisateurs pour les instances d&#39;exécution Message Center 
 
 Les extensions de schéma effectuées sur les schémas utilisés par les **workflows techniques de Message Center** sur les instances de pilotage ou d&#39;exécution doivent être dupliquées sur les autres instances utilisées par le module des messages transactionnels d&#39;Adobe Campaign.
 
-↗️ En savoir plus sur les workflows techniques de Message Center dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/additional-configurations.html?lang=fr#technical-workflows)
+↗️ En savoir plus sur les workflows techniques de Message Center dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/additional-configurations.html?lang=fr#technical-workflows).
 
 ## Envoi de notifications push transactionnelles
 
