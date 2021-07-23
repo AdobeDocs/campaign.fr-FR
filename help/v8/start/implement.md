@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1214'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Découvrez les instructions et principes relatifs à la sécurité d&#39;Adobe C
 
 Vous pouvez ajouter manuellement des utilisateurs à Campaign et les associer à des groupes, en les alignant avec votre hiérarchie de rôles. Les utilisateurs pourront alors se connecter et accéder aux données et autorisations adéquates.
 
-↗️ Découvrez comment ajouter des utilisateurs à Adobe Campaign dans [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=fr#getting-started){target=&quot;_blank&quot;}.
+↗️ Découvrez comment ajouter des utilisateurs à Adobe Campaign dans [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=fr#getting-started).{target=&quot;_blank&quot;}
 
 ### Installation de la console cliente Campaign
 
@@ -106,7 +106,7 @@ Vous pouvez personnaliser de nombreuses zones et fonctionnalités Campaign. La p
 
    ?? Reportez-vous à cette section pour en savoir plus sur le [modèle de données natif de Campaign](../dev/datamodel.md).
 
-   ?? Vous pouvez étendre les schémas existants ou créer de nouveaux schémas à partir de zéro. Apprenez-en davantage en consultant [cette page](../dev/customize.md).
+   ?? Vous pouvez étendre les schémas existants ou en créer d&#39;autres de A à Z. Apprenez-en davantage en consultant [cette page](../dev/customize.md).
 
 1. **Tableaux de bord et listes**
 
@@ -167,10 +167,10 @@ Connectez Campaign à des systèmes tiers afin de combiner un large éventail de
 
 Vous pouvez connecter votre plateforme Adobe Campaign à vos systèmes CRM tiers et synchroniser les données : contacts, comptes, achats, etc.
 
-?? Découvrez comment connecter votre système CRM à Campaign dans [cette section](../connect/integration.md#gs-crm-connectors)
+?? Découvrez comment connecter votre système CRM à Campaign dans [cette section](../connect/integration.md#gs-crm-connectors).
 
 **Connexion à une base de données externe**
 
 Vous pouvez connecter la base de données cloud de Campaign à des systèmes externes via le module Federated Data Access (FDA).
 
-?? Découvrez comment configurer le module FDA Campaign pour définir les paramètres d’accès dans [cette section](../connect/integration.md#gs-fda)
+?? Découvrez comment configurer le module FDA de Campaign pour définir les paramètres d&#39;accès dans [cette section](../connect/integration.md#gs-fda).
