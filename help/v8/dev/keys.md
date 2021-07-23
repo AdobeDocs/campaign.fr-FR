@@ -3,7 +3,7 @@ product: Adobe Campaign
 title: 'Gestion des clés dans Campaign '
 description: Prise en main de la gestion des clés
 source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '676'
 ht-degree: 100%
 
