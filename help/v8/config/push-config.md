@@ -9,7 +9,7 @@ level: Experienced
 hide: true
 hidefromtoc: true
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1291'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Les versions d&#39;Android et iOS prises en charge, ainsi que les versions compa
 
 ## Déclaration des paramètres d&#39;intégration {#declaring-integration-settings}
 
-Afin d’intégrer le SDK Campaign dans l’application mobile, l’administrateur fonctionnel doit fournir au développeur les informations suivantes :
+Afin d&#39;intégrer le SDK Campaign dans l&#39;application mobile, l&#39;administrateur fonctionnel doit fournir au développeur les informations suivantes :
 
 * **Une clé d&#39;intégration** permettant à la plateforme Adobe Campaign d&#39;identifier l&#39;application mobile.
 
@@ -77,8 +77,9 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 >[!NOTE]
 >
 > * Pensez à télécharger et à ajouter google-services.json à votre projet.
->
-> * Le `apiKey` doit correspondre au `projectKey` défini dans l&#39;application mobile Adobe Campaign liée à cette application Android.
+   >
+   > 
+* Le `apiKey` doit correspondre au `projectKey` défini dans l&#39;application mobile Adobe Campaign liée à cette application Android.
 
 
 ### Configuration du SDK Android
