@@ -6,9 +6,9 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1550'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -151,7 +151,7 @@ Vous pouvez tester la diffusion du message en envoyant un BAT vers une adresse d
 
 L&#39;envoi d&#39;un BAT engage le même processus que pour toute diffusion.
 
-↗️ En savoir plus sur les bons à tirer dans la [documentation du Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target=&quot;_blank&quot;}
+↗️ En savoir plus sur les bons à tirer dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target=&quot;_blank&quot;}
 
 Toutefois, pour envoyer un BAT de message transactionnel, il vous faut exécuter les opérations suivantes :
 
