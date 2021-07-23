@@ -6,9 +6,9 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '548'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 93%
 
 Utilisez Adobe Campaign pour créer et surveiller vos services d&#39;information, tels que les newsletters, et pour gérer les abonnements/désabonnements à ces services. Plusieurs services peuvent être définis en parallèle, par exemple : des newsletters spécialisées pour certaines catégories de produits, certains thèmes ou des zones particulières d&#39;un site web, des abonnements à divers types de messages d&#39;alerte et des notifications en temps réel. Voir à ce propos la section Gestion des abonnements.
 
-↗️ Découvrez comment créer un service d’information, envoyer une newsletter et gérer l’opt-in et l’opt-out dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=fr){target=&quot;_blank&quot;}
+↗️ Découvrez comment créer un service d&#39;information, envoyer une newsletter et gérer l&#39;opt-in et l&#39;opt-out dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=fr).{target=&quot;_blank&quot;}
 
 Pour abonner (opt-in) un profil à un service, les options disponibles sont les suivantes :
 
@@ -34,7 +34,7 @@ Pour abonner (opt-in) un profil à un service, les options disponibles sont les 
 
    ![](assets/subscribe-confirm.png)
 
-   ↗️ Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab){target=&quot;_blank&quot;}
+   ↗️ Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=fr#deliveries-tab){target=&quot;_blank&quot;}
 
 
 * Importer des destinataires et les abonner automatiquement à un service d&#39;information : pour cela, sélectionnez le service visé dans la dernière étape de l&#39;assistant d&#39;import.
@@ -80,4 +80,4 @@ Pour désabonner (opt-out) un profil d&#39;un service, les options disponibles s
 
 Vous pouvez également permettre aux destinataires de votre diffusion de transférer des messages à un ami. Pour ce faire, insérez les liens adéquats dans votre diffusion. Vous pouvez ensuite suivre ce processus de partage, ainsi que le nombre de visites sur les pages concernées.
 
-↗️ Pour plus d’informations sur cette fonctionnalité, reportez-vous à la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=fr#viral-marketing—forward-to-a-friend){target=&quot;_blank&quot;}
+↗️ Pour en savoir plus sur cette fonctionnalité, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=fr#viral-marketing—forward-to-a-friend){target=&quot;_blank&quot;}
