@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '377'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Adobe Campaign propose un ensemble d&#39;outils de reporting répertoriés dans 
 
    Utilisez Adobe Campaign pour créer des rapports sur les données de la base de données. Une fois créés, rendez-les accessibles dans les contextes appropriés.
 
-   ↗️ Les étapes de création d’un rapport sont détaillées dans la [documentation du Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=fr){target=&quot;_blank&quot;}. La création de rapports personnalisés est réservée aux utilisateurs avancés.
+   ↗️ Les étapes de création d&#39;un rapport sont détaillées dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=fr){target=&quot;_blank&quot;}. La création de rapports personnalisés est réservée aux utilisateurs avancés.
 
 * **Cubes**
 
