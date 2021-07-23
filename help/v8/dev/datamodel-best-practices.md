@@ -3,7 +3,7 @@ product: Adobe Campaign
 title: Bonnes pratiques relatives au modèle de données
 description: Découvrez les bonnes pratiques relatives à l'extension des modèles de données de Campaign
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2688'
 ht-degree: 100%
 
@@ -17,9 +17,9 @@ Le système Adobe Campaign est très flexible et peut être étendu au-delà de
 
 Afin de mieux comprendre le fonctionnement des tables intégrées de Campaign et leurs interactions les unes avec les autres, consultez [cette section](datamodel.md).
 
-💡 Pour commencer à utiliser les schémas de Campaign, consultez [cette section](schemas.md).
+?? Pour commencer à utiliser les schémas de Campaign, consultez [cette section](schemas.md).
 
-💡 Découvrez comment configurer des schémas d&#39;extension afin d&#39;étendre le modèle de données conceptuel de la base de données Adobe Campaign sur [cette page](extend-schema.md).
+?? Découvrez comment configurer des schémas d&#39;extension afin d&#39;étendre le modèle de données conceptuel de la base de données Adobe Campaign sur [cette page](extend-schema.md).
 
 ## Architecture du modèle de données {#data-model-architecture}
 
@@ -175,7 +175,7 @@ Il existe un certain nombre de solutions pour minimiser le besoin d&#39;enregist
 
 Vous pouvez déclarer l&#39;attribut &quot;deleteStatus&quot; dans un schéma. Il est plus efficace de marquer l&#39;enregistrement comme supprimé, puis de différer la suppression au cours de la tâche de nettoyage.
 
-💬 En tant qu&#39;utilisateur Managed Cloud Services, contactez les consultants ou administrateurs techniques Adobe pour en savoir plus sur la conservation des données ou si vous devez définir la conservation des tables personnalisées.
+?? En tant qu&#39;utilisateur Managed Cloud Services, contactez les consultants ou administrateurs techniques Adobe pour en savoir plus sur la conservation des données ou si vous devez définir la conservation des tables personnalisées.
 
 ## Performances {#performance}
 
