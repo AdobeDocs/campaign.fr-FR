@@ -77,9 +77,8 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 >[!NOTE]
 >
 > * Pensez à télécharger et à ajouter google-services.json à votre projet.
-   >
-   > 
-* Le `apiKey` doit correspondre au `projectKey` défini dans l&#39;application mobile Adobe Campaign liée à cette application Android.
+>
+> * Le `apiKey` doit correspondre au `projectKey` défini dans l&#39;application mobile Adobe Campaign liée à cette application Android.
 
 
 ### Configuration du SDK Android
