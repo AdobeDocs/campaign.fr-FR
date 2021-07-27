@@ -5,7 +5,7 @@ description: Prise en main des messages LINE
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: 328f1bca11f8554def6ad4ccb741a86695481e98
+source-git-commit: 03d2ad12fabd332df36dcb5257b992f350905c5b
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 69%
@@ -17,6 +17,6 @@ ht-degree: 69%
 LINE est une application gratuite de messagerie instantanée, d&#39;appels vocaux et vidéo, disponible sur tous les appareils mobiles et sur PC. Adobe Campaign vous permet d&#39;envoyer des messages LINE.
 
 
-↗️ Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html?lang=fr){target=&quot;_blank&quot;}
+↗️ Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html?lang=fr){target=&quot;_blank&quot;}.
 
-↗️ Consultez cet exemple de bout en bout dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html#example--create-and-send-a-personalized-line-message) pour créer et envoyer votre première diffusion LINE.
+↗️ Consultez cet [exemple de bout en bout](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html#example--create-and-send-a-personalized-line-message) dans la documentation de Campaign Classic v7 pour créer et envoyer votre première diffusion LINE.
