@@ -7,9 +7,9 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 source-git-commit: 22f47bed75d78684c85471330aca7dadafb9ed65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '391'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -37,12 +37,12 @@ Chaque opérateur doit être associé à une zone pour se connecter à une insta
 
 Un opérateur est lié à une zone de sécurité à partir de son profil dans la console, accessible dans le nœud **[!UICONTROL Administration > Gestion des accès > Opérateurs.]**
 
-?? En tant qu’utilisateur Cloud Services géré, Adobe définit les zones de sécurité pour vous. Pour plus d’informations, [contactez Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
+?? En tant qu’utilisateur Managed Cloud Services, Adobe définit les zones de sécurité pour vous. Pour plus d’informations, [contactez Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
 
 **Apprenez-en davantage en consultant la documentation de Campaign Classic v7**
 
 * [Droits nommés intégrés](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-named-rights.html?lang=fr){target=&quot;_blank&quot;}
 
-* [Groupes d’opérateurs natifs](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-groups.html?lang=en#default-groups){target=&quot;_blank&quot;}
+* [Groupes d’opérateurs natifs](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-groups.html?lang=fr#default-groups){target=&quot;_blank&quot;}
 
 * [Étapes de configuration des autorisations](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=fr){target=&quot;_blank&quot;}
