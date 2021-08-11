@@ -7,7 +7,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
 source-git-commit: cc8707c7765a47fc00d46283eb6588e63a98499d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1590'
 ht-degree: 100%
 
@@ -53,7 +53,7 @@ Les activités de workflow sont regroupées par catégorie. Les quatre catégori
 * [Activités de ciblage](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html?lang=fr){target=&quot;_blank&quot;} : requête, lecture de liste, enrichissement, union, etc.
 * [Activités de contrôle du flux](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/about-flow-control-activities.html?lang=fr){target=&quot;_blank&quot;} : planificateur, branchement, alerte, signal externe, etc.
 * [Activités d&#39;action](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html?lang=fr){target=&quot;_blank&quot;} : diffusions cross-canal, code JavaScript, activités CRM, mise à jour d&#39;agrégat, etc.
-* [Activités d&#39;événement](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html){target=&quot;_blank&quot;} : transfert de fichiers, téléchargement web, etc.
+* [Activités d&#39;événement](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html?lang=fr){target=&quot;_blank&quot;} : transfert de fichiers, téléchargement web, etc.
 
 
 ### Activité Modifier la source de données {#change-data-source-activity}
