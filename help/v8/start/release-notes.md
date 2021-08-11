@@ -8,9 +8,9 @@ level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
 source-git-commit: 328f1bca11f8554def6ad4ccb741a86695481e98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '312'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ _23 juillet 2021_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Le <a href="../send/line.md">canal LINE</a> est désormais disponible avec Campaign v8, y compris les améliorations suivantes lorsqu’elles sont combinées avec le module <a href="../send/transactional.md">messagerie transactionnelle</a> :
+<td> <p>Le <a href="../send/line.md">canal LINE</a> est maintenant disponible avec Campaign v8. Il comprend les améliorations suivantes lorsqu’il est combiné avec le module de <a href="../send/transactional.md">messagerie transactionnelle</a> :
 <ul> 
 <li><p>Correction d'une erreur qui pouvait empêcher les visiteurs d'être ciblés dans une diffusion LINE. 
 </p></li>
