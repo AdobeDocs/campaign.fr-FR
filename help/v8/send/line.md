@@ -6,9 +6,9 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 source-git-commit: 03d2ad12fabd332df36dcb5257b992f350905c5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '86'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -19,4 +19,4 @@ LINE est une application gratuite de messagerie instantanée, d&#39;appels vocau
 
 ↗️ Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html?lang=fr){target=&quot;_blank&quot;}.
 
-↗️ Consultez cet [exemple de bout en bout](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html#example--create-and-send-a-personalized-line-message) dans la documentation de Campaign Classic v7 pour créer et envoyer votre première diffusion LINE.
+↗️ Consultez cet [exemple complet](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html?lang=fr#example--create-and-send-a-personalized-line-message) dans la documentation de Campaign Classic v7 pour créer et envoyer votre première diffusion LINE.
