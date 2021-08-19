@@ -6,10 +6,10 @@ feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: bfd2df90e5e6bee89bdfc7c5da82c755ac5726df
-workflow-type: ht
-source-wordcount: '927'
-ht-degree: 100%
+source-git-commit: d61888a4536d6f37f5956c8fd5404bdcd893ae6c
+workflow-type: tm+mt
+source-wordcount: '921'
+ht-degree: 99%
 
 ---
 
@@ -80,7 +80,7 @@ Les utilisateurs de Campaign se connectent via leur Adobe ID. Le même Adobe ID 
 
 ## Reporting
 
-Notez que les rapports Adobe Campaign sont optimisés et offrent de meilleures fonctionnalités d&#39;échelle que Campaign Classic v7. Les limitations existantes avec Cubes ne s&#39;appliquent pas.
+Notez que les rapports Adobe Campaign sont optimisés et offrent de meilleures fonctionnalités d&#39;échelle que Campaign Classic v7. Les restrictions sur les cubes ne s’appliquent pas.
 
 ## Workflow {#workflow}
 
@@ -100,8 +100,6 @@ Veuillez noter que certaines fonctionnalités ne sont pas disponibles dans cette
 * Optimisation des campagnes
 * Gestion de la réaction
 * Modèles de déploiement hybrides/On-premise
-* Messagerie LINE
-* Panneau de contrôle Campaign
 
 >[!CAUTION]
 >
