@@ -5,9 +5,9 @@ description: Prise en main du Panneau de Contrôle Campaign
 feature: Vue d'ensemble
 role: Data Engineer
 level: Beginner
-source-git-commit: d61888a4536d6f37f5956c8fd5404bdcd893ae6c
+source-git-commit: 8415bfce30948104840a92d1be0d72e07c8e29ee
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '337'
 ht-degree: 91%
 
 ---
@@ -24,7 +24,7 @@ Principaux avantages :
 
 Vous pouvez également utiliser le panneau de contrôle Campaign pour configurer les paramètres de votre instance, tels que les listes autorisées d&#39;adresses IP, les autorisations d&#39;URL et récupérer des informations sur votre instance.
 
-↗️ En savoir plus dans la [documentation du Panneau de Contrôle Campaign](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html?lang=fr){target=&quot;_blank&quot;}.
+↗️ En savoir plus dans la [documentation du Panneau de Contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target=&quot;_blank&quot;}.
 
 >[!CAUTION]
 > Les fonctionnalités suivantes ne sont pas encore prises en charge avec Campaign v8 :
