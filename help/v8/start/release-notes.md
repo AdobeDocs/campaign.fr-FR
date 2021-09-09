@@ -2,21 +2,59 @@
 product: Adobe Campaign
 title: Notes de mise à jour de Campaign v8
 description: Dernière version de Campaign v8
-feature: Vue d’ensemble
+feature: Overview
 role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: 328f1bca11f8554def6ad4ccb741a86695481e98
-workflow-type: ht
-source-wordcount: '312'
-ht-degree: 100%
+source-git-commit: 5b81c8e9e391ea1a9ad1825e5102b66c7926c204
+workflow-type: tm+mt
+source-wordcount: '756'
+ht-degree: 43%
 
 ---
 
 # Dernière version{#latest-release}
 
 Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs de la **dernière version de Campaign Classic v8**.
+
+## Version 8.1.20 {#release-8-1-20}
+
+_7 septembre 2021_
+
+**Améliorations de la sécurité**
+
+* Correction d’un problème de sécurité afin de renforcer la protection contre les attaques par traversée de répertoires. (NEO-28547)
+
+**Améliorations**
+
+* Après sa fin de vie, le Flash a été supprimé de toutes les fonctionnalités et composants de Campaign associés et remplacé par HTML5. Le type de graphique **Gauge** a été supprimé. (NEO-30330) [En savoir plus](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-chart.html)
+* Lors de l’installation de la console cliente sous Windows, le programme d’installation vérifie désormais s’il existe un noeud de registre parent et en crée un s’il manque. Cela évite les problèmes potentiels lors du lancement de la console. (NEO-34854)
+* La fonctionnalité de signature de suivi a été améliorée afin d’éviter les erreurs liées à la manière dont les outils tiers (clients de messagerie, navigateurs Internet, etc.) gérer les caractères spéciaux. Les paramètres d’URL sont désormais codés.
+
+**Autres changements**
+
+* Les connecteurs Microsoft CRM (déploiements Office 365 et On-premise) précédemment obsolètes ont été supprimés de l’interface. [En savoir plus](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html#configure-acc-for-microsoft)
+* Suite à la migration vers Tomcat 8, le script de configuration IIS a été mis à jour afin de corriger les problèmes d&#39;intégration IIS. (NEO-31019)
+* Une barrière de sécurité a été ajoutée pour permettre uniquement l’exécution du [workflow technique de facturation](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/monitoring-processes.html#billing-report) sur l’instance marketing.
+* L&#39;identification de la source de données a été améliorée dans les onglets données et schéma de la fenêtre **Visualiser la population** des transitions de workflow.
+* Des index de base de données manquants ont été ajoutés aux schémas suivants afin d’éviter des problèmes de mise à jour de la base de données : xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
+
+**Correctifs**
+
+* Correction d’un problème qui empêchait le fonctionnement du rapport **Hot clicks** lorsque des offres étaient liées à la diffusion. (NEO-26295)
+* Correction d’un problème lié à l’activité **Sous-workflow** lorsque son exécution ne générait pas de tableau de sortie. (NEO-36242)
+* Correction de divers problèmes lors de l’exportation du rapport **Analyse descriptive** au format PDF. (NEO-25847)
+* Correction d’un problème qui entraînait l’échec des diffusions lors de l’utilisation d’une diffusion courrier externe. (NEO-37435)
+* Correction d&#39;une erreur lors de la connexion à Microsoft CRM à l&#39;aide de l&#39;API web. Le message d’erreur a été supprimé, car les fonctionnalités n’ont pas été affectées.
+* Correction d’un problème de déduplication des logs de tracking lorsque le serveur mid-sourcing était défini comme relais entre les serveurs de tracking et marketing. (NEO-36285)
+* Correction d’une régression qui empêchait Vault d’être utilisé comme entrepôt de code spécifique.
+* Correction d’un problème qui empêchait l’utilisation de variables dans une activité de workflow **Enrichissement** lorsque la transition entrante provenait d’une source de données FDA.
+* Correction d’un problème avec FFDA qui empêchait la réplication correcte des groupes d’opérateurs et des droits.
+* Correction d’un problème qui entraînait l’envoi d’un lien de désinscription incorrect par le biais de la diffusion.
+* Correction d’un problème dans la gestion de la réplication qui affectait la durée du postupgrade.
+* Correction d’un problème qui empêchait l’affichage de **Hot click**.
+* Correction d’un problème qui entraînait des URL rompues dans les emails.
 
 ## Version 8.1.14 {#release-8-1-14}
 
