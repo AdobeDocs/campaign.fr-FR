@@ -1,14 +1,14 @@
 ---
 product: Adobe Campaign
 title: Panneau de contrôle Campaign
-description: Prise en main du Panneau de Contrôle Campaign
-feature: Vue d'ensemble
+description: Prise en main du panneau de contrôle Campaign
+feature: Overview
 role: Data Engineer
 level: Beginner
 source-git-commit: f35122d5e5f5812d9a3fda9b21f2f7fd88aaaa0f
-workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 83%
+workflow-type: ht
+source-wordcount: '344'
+ht-degree: 100%
 
 ---
 
@@ -24,16 +24,15 @@ Principaux avantages :
 
 Vous pouvez également utiliser le panneau de contrôle Campaign pour configurer les paramètres de votre instance, tels que les listes autorisées d&#39;adresses IP, les autorisations d&#39;URL et récupérer des informations sur votre instance.
 
-↗️ En savoir plus dans la [documentation du Panneau de Contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target=&quot;_blank&quot;}.
+↗️ Apprenez-en davantage dans la [documentation du panneau de contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target=&quot;_blank&quot;}.
 
 >[!CAUTION]
-> Les fonctionnalités suivantes ne sont pas encore prises en charge avec Campaign v8 :
+> Les fonctionnalités suivantes ne sont pas encore prises en charge avec Campaign v8 :
 >
 >* Gestion des sous-domaines
 >* Gestion des certificats
 
 >
-
 
 
 ## Comment accéder au panneau de contrôle ?
@@ -42,7 +41,7 @@ Le panneau de contrôle est directement accessible à partir d&#39;Adobe Experi
 
 ## FAQ sur le panneau de contrôle
 
-[Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=fr?lang=en#control-panel){target=&quot;_blank&quot;} pour accéder au FAQ sur le Panneau de Contrôle Campaign.
+[Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=fr#control-panel){target=&quot;_blank&quot;} pour accéder au FAQ sur le panneau de contrôle Campaign.
 
 ## Gestion SFTP
 
