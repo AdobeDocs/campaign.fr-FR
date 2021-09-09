@@ -2,14 +2,14 @@
 product: Adobe Campaign
 title: Workflows techniques et réplication des données
 description: Workflows techniques et réplication des données
-feature: Vue d'ensemble
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
 source-git-commit: 6334178f6e5d0ad0a33975838be6cf663862d892
-workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 93%
+workflow-type: ht
+source-wordcount: '411'
+ht-degree: 100%
 
 ---
 
@@ -41,14 +41,14 @@ Si nécessaire, vous pouvez lancer manuellement la synchronisation des données.
 
 ## Réplication des données{#data-replication}
 
-Certains tableaux intégrés sont répliqués de la base de données Campaign locale vers la base de données cloud [!DNL Snowflake] par le biais de workflows dédiés décrits ci-dessus.
+Certains tableaux natifs sont répliqués de la base de données Campaign locale vers la base de données cloud [!DNL Snowflake] par le biais de workflows dédiés décrits ci-dessus.
 
-Identifiez les bases de données utilisées par Adobe Campaign v8, les raisons de la réplication des données, les données qui sont répliquées et le fonctionnement du processus de réplication.
+Identifiez les bases de données utilisées par Adobe Campaign v8, les raisons de la réplication des données, les données qui sont répliquées et le fonctionnement du processus de réplication.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
 
-### Stratégies de réplication des données
+### Stratégies de réplication de données
 
 Les stratégies de réplication sont basées sur la taille des tables. Certaines tables sont répliquées en temps réel. D&#39;autres le sont sur une base horaire. Certaines tables sont mises à jour de manière incrémentielle tandis que d&#39;autres sont remplacées.
 
