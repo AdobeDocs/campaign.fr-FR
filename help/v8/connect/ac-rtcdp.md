@@ -4,11 +4,10 @@ description: Découvrez comment utiliser Campaign et Real-Time Customer Data Pla
 feature: Overview
 role: Data Engineer
 level: Beginner
-exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 3205b492552afc0aa0514f8995f508439a7a9a0b
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
