@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: Prise en main des API de Campaign
 description: Prise en main des API de Campaign
-feature: Vue d'ensemble
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: ht
-source-wordcount: '331'
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
+source-wordcount: '330'
 ht-degree: 100%
 
 ---
@@ -30,7 +29,6 @@ Campaign v8 fonctionne avec deux bases de données : une base de données loca
 >[!CAUTION]
 >
 >[!DNL Adobe Campaign] v8 est fourni avec une limite au niveau du débit (TPS) de notre calque API. Le fait de rompre la limite entraîne une erreur HTTP standard (429). En tant qu&#39;utilisateur Managed Cloud Services, vous pouvez contacter Adobe pour adapter le contrôle de flux de chaque API.
-
 
 ## Conditions préalables requises
 

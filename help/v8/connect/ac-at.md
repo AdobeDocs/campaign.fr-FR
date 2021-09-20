@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: Utilisation de Campaign et Adobe Target
 description: Découvrez comment utiliser Campaign et Adobe Target
-feature: Vue d'ensemble
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: ht
-source-wordcount: '1045'
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
+source-wordcount: '1044'
 ht-degree: 100%
 
 ---
@@ -34,7 +33,7 @@ Adobe Target peut utiliser les types de données suivants :
 
 Dans l&#39;exemple ci-dessous, vous apprendrez comment intégrer **une offre dynamique** provenant d&#39;Adobe Target dans un e-mail Adobe Campaign.
 
-Nous souhaitons créer un message contenant une image qui change dynamiquement en fonction du pays du destinataire. Les données sont envoyées avec chaque demande de mbox et dépendent de l&#39;adresse IP du visiteur.
+Nous souhaitons créer un message contenant une image qui change dynamiquement en fonction du pays du destinataire. Les données sont envoyées avec chaque demande de mbox et dépendent de l&#39;adresse IP du visiteur.
 
 Dans cet e-mail, nous souhaitons que les images changent dynamiquement en fonction des expériences utilisateur suivantes :
 

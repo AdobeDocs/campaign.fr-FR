@@ -1,14 +1,14 @@
 ---
-product: Adobe Campaign
 title: Limites connues de Campaign v8
 description: Limites connues
-feature: Vue d'ensemble
+feature: Overview
 role: Data Engineer
 level: Beginner
 hidefromtoc: true
-source-git-commit: cf00895f988514fc029d0060d7404bdef0c8b30e
-workflow-type: ht
-source-wordcount: '177'
+exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
+source-wordcount: '176'
 ht-degree: 100%
 
 ---
@@ -27,5 +27,3 @@ Pour Adobe Campaign v8, les limites suivantes existent :
 * Les mécanismes d&#39;abonnement (opt-in) et de désabonnement (opt-out), et l&#39;enregistrement mobile sont des processus asynchrones. Les demandes sont traitées toutes les heures par l&#39;intermédiaire d&#39;un workflow technique spécifique. [En savoir plus](../config/replication.md#tech-wf)
 * Les doublons doivent être gérés manuellement par les utilisateurs finaux. [En savoir plus](../dev/keys.md)
 * Adobe Campaign v8 ne prend pas en charge le débit étendu sur les API et les applications web. En cas de besoins spécifiques, contactez Adobe pour obtenir des conseils.
-
-

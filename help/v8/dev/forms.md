@@ -1,9 +1,9 @@
 ---
-product: Adobe Campaign
 title: Formulaires de saisie Campaign
 description: Découvrez comment personnaliser les formulaires de saisie
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: ht
+exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
 source-wordcount: '2577'
 ht-degree: 100%
 
@@ -674,4 +674,3 @@ L&#39;attribut **exprIn** contient l&#39;emplacement de la donnée à passer en 
   </soapCall>
 </leave>
 ```
-

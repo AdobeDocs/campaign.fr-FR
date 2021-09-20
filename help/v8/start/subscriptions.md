@@ -1,20 +1,20 @@
 ---
-product: Adobe Campaign
 title: Gestion des abonnements et des désabonnements dans Campaign
 description: Découvrez comment gérer les abonnements et les désabonnements dans Campaign v8
-feature: Vue d'ensemble
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: ht
-source-wordcount: '548'
+exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
+source-wordcount: '547'
 ht-degree: 100%
 
 ---
 
 # Gestion des abonnements et des désabonnements{#optin-optout}
 
-Utilisez Adobe Campaign pour créer et surveiller vos services d&#39;information, tels que les newsletters, et pour gérer les abonnements/désabonnements à ces services. Plusieurs services peuvent être définis en parallèle, par exemple : des newsletters spécialisées pour certaines catégories de produits, certains thèmes ou des zones particulières d&#39;un site web, des abonnements à divers types de messages d&#39;alerte et des notifications en temps réel. Voir à ce propos la section Gestion des abonnements.
+Utilisez Adobe Campaign pour créer et surveiller vos services d&#39;information, tels que les newsletters, et pour gérer les abonnements/désabonnements à ces services. Plusieurs services peuvent être définis en parallèle, par exemple : des newsletters spécialisées pour certaines catégories de produits, certains thèmes ou des zones particulières d&#39;un site web, des abonnements à divers types de messages d&#39;alerte et des notifications en temps réel. Pour plus d&#39;informations, consultez la section Gestion des abonnements.
 
 ↗️ Découvrez comment créer un service d&#39;information, envoyer une newsletter et gérer l&#39;opt-in et l&#39;opt-out dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=fr).{target=&quot;_blank&quot;}
 
@@ -34,7 +34,7 @@ Pour abonner (opt-in) un profil à un service, les options disponibles sont les 
 
    ![](assets/subscribe-confirm.png)
 
-   ↗️ Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=fr#deliveries-tab){target=&quot;_blank&quot;}
+   ↗️ Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab){target=&quot;_blank&quot;}
 
 
 * Importer des destinataires et les abonner automatiquement à un service d&#39;information : pour cela, sélectionnez le service visé dans la dernière étape de l&#39;assistant d&#39;import.

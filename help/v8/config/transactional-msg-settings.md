@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Paramètres de messagerie transactionnelle Campaign
 description: Paramètres de messagerie transactionnelle Campaign
-feature: Vue d'ensemble
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: ht
-source-wordcount: '327'
+exl-id: 2899f627-696d-422c-ae49-c1e293b283af
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
+source-wordcount: '326'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## Définition des autorisations
 
-Pour créer des utilisateurs pour les instances d&#39;exécution Message Center hébergées sur Adobe Cloud, vous devez contacter l&#39;Assistance clientèle d&#39;Adobe. Les utilisateurs de Message Center sont des opérateurs spécifiques qui ont besoin d&#39;autorisations dédiées pour accéder aux dossiers &quot;Evénements temps réel&quot; (nmsRtEvent).
+Pour créer des utilisateurs pour les instances d’exécution Message Center hébergées sur Adobe Cloud, vous devez contacter l’assistance clientèle d’Adobe. Les utilisateurs de Message Center sont des opérateurs spécifiques qui ont besoin d’autorisations dédiées pour accéder aux dossiers « Evénements temps réel » (nmsRtEvent).
 
 ## Extensions de schéma
 
@@ -75,4 +75,3 @@ Voici un exemple de traitement d&#39;un événement contenant ces informations 
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
-

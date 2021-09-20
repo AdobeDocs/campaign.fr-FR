@@ -1,9 +1,9 @@
 ---
-product: Adobe Campaign
 title: Création d'un schéma dans Campaign
 description: Découvrez comment créer un schéma dans Campaign
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
-workflow-type: ht
+exl-id: 796af848-b537-4b8d-a601-fe0628a1fc83
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 100%
 
@@ -54,7 +54,7 @@ Pour cela, vous devez créer le schéma de la table puis procéder à la mise à
 
    >[!NOTE]
    >
-   >Par défaut, les schémas créés par les utilisateurs sont stockés dans l&#39;espace de noms « cus ». Voir à ce propos la section [Identification d&#39;un schéma](extend-schema.md#identification-of-a-schema).
+   >Par défaut, les schémas créés par les utilisateurs sont stockés dans l&#39;espace de noms « cus ». Pour plus d&#39;informations, consultez la section [Identification d&#39;un schéma](extend-schema.md#identification-of-a-schema).
 
 1. Créez le contenu de la table. Nous vous recommandons d&#39;utiliser l&#39;assistant dédié pour vous assurer qu&#39;aucun paramètre n&#39;est manquant. Pour ce faire, cliquez sur le bouton **[!UICONTROL Insérer]** et sélectionnez le type de paramètre à ajouter.
 
@@ -111,4 +111,3 @@ Pour cela, vous devez créer le schéma de la table puis procéder à la mise à
    ![](assets/configuration_structure.png)
 
 1. Mettez à jour la structure de la base de données pour créer la table à laquelle le schéma sera lié. Pour plus d&#39;informations à ce sujet, consultez [cette section](update-database-structure.md).
-

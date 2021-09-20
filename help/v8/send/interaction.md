@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Interaction de Campaign - Gestion des offres
 description: Prise en main de la gestion des offres
-feature: Vue d'ensemble
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
-workflow-type: ht
-source-wordcount: '1226'
+exl-id: 4da3e69a-6230-4c94-a6f1-4e8c01e854ba
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
+source-wordcount: '1225'
 ht-degree: 100%
 
 ---
@@ -85,4 +85,3 @@ Il existe deux types d&#39;environnements :
 * L&#39;**Aperçu** de l&#39;offre affiche l&#39;offre telle qu&#39;elle est affichée dans son dossier. Il est accessible à partir de la fenêtre de paramétrage des offres ou du profil du contact.
 * Les **Filtres prédéfinis** sont des règles de filtrage qui peuvent prendre en compte les paramètres des offres (par exemple, un code d&#39;offre). Ils peuvent être réutilisés après la création des offres.
 * Une **Représentation de l&#39;offre** est une information utilisée par le canal pour afficher l&#39;offre. La représentation de l&#39;offre peut être construite à partir de la fonction de rendu de l&#39;emplacement sur lequel l&#39;offre est représentée ou saisie directement dans l&#39;interface (par exemple, dans le bloc HTML). Une offre peut être représentée par un emplacement.
-

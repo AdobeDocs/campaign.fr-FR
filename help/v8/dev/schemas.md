@@ -1,9 +1,9 @@
 ---
-product: Adobe Campaign
 title: Utilisation des schémas Campaign
 description: Prise en main des schémas
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: ht
+exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
 source-wordcount: '1254'
 ht-degree: 100%
 
@@ -97,11 +97,11 @@ La clé d&#39;identification d&#39;un schéma est une chaîne construite avec l&
 
 Pour ajouter un champ ou tout autre élément à l&#39;un des principaux schémas de données de Campaign, comme la table des destinataires (nms:recipient), vous devez étendre ce schéma.
 
-?? Pour plus d&#39;informations à ce sujet, consultez la section [Extension d&#39;un schéma](extend-schema.md).
+?? Pour plus d’informations, consultez la section [Extension d&#39;un schéma](extend-schema.md).
 
 Pour ajouter un tout nouveau type de données qui n&#39;existe pas par défaut dans Adobe Campaign (une table des contrats par exemple), vous pouvez créer directement un schéma personnalisé.
 
-?? Pour plus d&#39;informations à ce sujet, consultez la section [Création d&#39;un schéma](create-schema.md).
+?? Pour plus d’informations, consultez la section [Création d&#39;un schéma](create-schema.md).
 
 ![](assets/schemaextension_1.png)
 
@@ -213,7 +213,7 @@ Exemple de relation 1-N entre la table des destinataires (schéma d&#39;usine) e
 <element label="Recipient" name="lnkRecipient" revLink="lnkTransactions" target="nms:recipient" type="link"/>
 ```
 
-Exemple de relation 1-1 entre un schéma personnalisé &quot;Car&quot; (dans l&#39;espace de noms &quot;cus&quot;) et la table des destinataires :
+Exemple de relation 1-1 entre un schéma personnalisé &quot;Car&quot; (dans l&#39;espace de noms &quot;cus&quot;) et la table des destinataires :
 
 ```
 <element label="Car" name="lnkCar" revCardinality="single" revLink="recipient" target="cus:car" type="link"/>
@@ -250,4 +250,3 @@ Pour plus d&#39;informations à ce sujet, consultez [cette section](update-datab
 >[!NOTE]
 >
 >Lorsque les modifications n&#39;ont aucun impact sur la structure de la base de données, vous devez uniquement régénérer les schémas. Pour ce faire, sélectionnez le ou les schémas à mettre à jour, faites un clic droit et sélectionnez **[!UICONTROL Actions > Régénérer les schémas sélectionnés...]**.
-

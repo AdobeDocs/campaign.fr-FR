@@ -1,9 +1,9 @@
 ---
-product: Adobe Campaign
 title: Bonnes pratiques relatives au modèle de données
 description: Découvrez les bonnes pratiques relatives à l'extension des modèles de données de Campaign
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: ht
+exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
 source-wordcount: '2688'
 ht-degree: 100%
 
@@ -160,10 +160,10 @@ Vous trouverez ci-dessous les valeurs de conservation par défaut pour les table
 * **Rejets d&#39;imports** : 6 mois
 * **Profils des visiteurs** : 1 mois
 * **Propositions d&#39;offres** : 1 an
-* **Evénements** : 1 mois
+* **Événements** : 1 mois
 * **Statistiques du traitement des événements** : 1 an
-* **Evénements archivés** : 1 an
-* **Evénements Pipeline ignorés** : 1 mois
+* **Événements archivés** : 1 an
+* **Événements Pipeline ignorés** : 1 mois
 
 >[!CAUTION]
 >

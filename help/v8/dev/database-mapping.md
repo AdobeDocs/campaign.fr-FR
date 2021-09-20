@@ -1,9 +1,9 @@
 ---
-product: Adobe Campaign
 title: Mapping de la base de données de Campaign
 description: Mapping de la base de données de Campaign
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: ht
+exl-id: a804d164-58bf-4b15-a48e-8cf75d793668
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ Les noms SQL sont déduits automatiquement en fonction du nom et du type de l&#3
 
 Les règles de nommage des noms SQL sont les suivantes :
 
-* table : concaténation de l&#39;espace de noms et du nom du schéma
+* table : concaténation de l&#39;espace de noms et du nom du schéma
 
    Dans notre exemple le nom de la table est renseigné à partir de l&#39;élément principal du schéma dans l&#39;attribut **sqltable** :
 

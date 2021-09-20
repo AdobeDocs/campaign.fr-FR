@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: Prise en main de Campaign v8
 description: Vous débutez sur Campaign ? Découvrez la prise en main
-feature: Vue d'ensemble
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: ht
-source-wordcount: '900'
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
+source-wordcount: '899'
 ht-degree: 100%
 
 ---
@@ -37,7 +36,7 @@ Dans Adobe Campaign, les destinataires sont les profils par défaut ciblés pou
 
 ## Segmentation ciblée {#targeted-segmentation}
 
-Pour vous permettre de mettre en place des offres hautement ciblées et différenciées, Adobe Campaign intègre des fonctionnalités de ciblage et de segmentation simples d&#39;utilisation. Grâce aux fonctionnalités d&#39;analyse descriptive, vous avez la possibilité d&#39;analyser les informations en amont et en aval de vos campagnes marketing. D&#39;autre part, les fonctionnalités de gestion de filtres et l&#39;éditeur graphique de requête vous permettent de filtrer les populations d&#39;inscrits, ainsi que d&#39;échantillonner ou de créer des groupes cibles en fonction d&#39;un nombre de critères illimité.
+Pour vous permettre de mettre en place des offres hautement ciblées et différenciées, Adobe Campaign intègre des fonctionnalités de ciblage et de segmentation simples d&#39;utilisation. Grâce aux fonctionnalités d&#39;analyse descriptive, vous avez la possibilité d&#39;analyser les informations en amont et en aval de vos campagnes marketing. D&#39;autre part, les fonctionnalités de gestion de filtres et le requêteur graphique vous permettent de filtrer les populations d&#39;inscrits, ainsi que d&#39;échantillonner ou de créer des groupes cibles en fonction d&#39;un nombre de critères illimité.
 
 Les fonctionnalités avancées de Data Management proposent une extension des capacités de traitement des données. Elles permettent de simplifier et d&#39;optimiser le processus de ciblage en incluant des données non modélisées dans le datamart.
 
@@ -66,7 +65,7 @@ Les workflows peuvent intervenir dans différents contextes, par exemple :
 
 ## Reporting et analyse {#analysis-and-reporting}
 
-Adobe Campaign vous permet de suivre et comprendre les comportements de vos clients en enrichissant progressivement leurs données et profil. Grâce aux outils de reporting et d&#39;analyse, vous capitalisez sur chaque nouvelle campagne, bénéficiez d&#39;un meilleur ciblage de vos actions marketing et optimisez leur impact ainsi que leur retour sur investissement.
+Adobe Campaign vous permet de suivre et comprendre les comportements de vos clients en enrichissant progressivement leurs données et profil. Grâce aux outils de reporting et d&#39;analyse, vous capitalisez sur chaque nouvelle campagne, bénéficiez d&#39;un meilleur ciblage de vos actions marketing, et optimisez leur impact ainsi que leur retour sur investissement.
 
 ?? En savoir plus sur les fonctionnalités de reporting et de tracking dans [cette section](reporting.md).
 
@@ -106,7 +105,7 @@ Vous pouvez également accéder à certaines fonctionnalités via le web.
 L&#39;interface utilisateur de Campaign v8 est disponible dans les langues suivantes :
 
 * Anglais (Royaume-Uni)
-* Anglais (US)
+* Anglais (États-Unis)
 * Français
 * Allemand
 * Japonais

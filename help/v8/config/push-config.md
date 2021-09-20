@@ -1,5 +1,4 @@
 ---
-product: Adobe Campaign
 title: Intégration des SDK Campaign avec votre application
 description: Découvrez comment intégrer les SDK Android et iOS de Campaign avec votre application
 version: v8
@@ -8,9 +7,10 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: ht
-source-wordcount: '1291'
+exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
+source-wordcount: '1290'
 ht-degree: 100%
 
 ---

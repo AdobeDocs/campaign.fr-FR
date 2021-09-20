@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: Connexion à Campaign v8
 description: Découvrez comment vous connecter à Campaign v8
 feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 44ddce019de74be96a955eefbc940e41e060a6d3
-workflow-type: ht
-source-wordcount: '703'
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
+source-wordcount: '702'
 ht-degree: 100%
 
 ---
@@ -47,7 +46,7 @@ Une fois la console cliente nouvellement installée, procédez comme suit pour c
 
 1. Cliquez sur le menu **[!UICONTROL Ajouter > Connexion]** et saisissez le libellé et l&#39;URL du serveur applicatif Adobe Campaign.
 
-1. Définissez une connexion vers votre serveur applicatif Adobe Campaign à partir d&#39;une URL. Utilisez soit un DNS ou un alias de la machine, soit votre adresse IP.
+1. Définissez une connexion vers votre serveur applicatif Adobe Campaign à partir d&#39;une URL. Utilisez soit un DNS ou un alias de la machine, soit votre adresse IP.
 
    Par exemple, vous pouvez utiliser une URL de type [`https://<machine>.<domain>.com`](https://myserver.adobe.com).
 
@@ -107,7 +106,7 @@ Par exemple, pour un même opérateur, une opération sera affichée dans la con
 
 ![](assets/campaign-from-console.png)
 
-Tandis que, dans le contexte d&#39;un accès Web, les options seront principalement consultatives :
+Dans le contexte d’un accès web, les options seront en revanche principalement consultatives :
 
 ![](assets/campaign-from-web.png)
 

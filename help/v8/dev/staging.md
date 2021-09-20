@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Mécanisme d'évaluation de l'API Campaign
 description: Mécanisme d'évaluation de l'API Campaign
-feature: Vue d'ensemble
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: ht
-source-wordcount: '312'
+exl-id: 96693af9-50db-4298-ae02-c238d35e52b4
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
+source-wordcount: '311'
 ht-degree: 100%
 
 ---
@@ -31,8 +31,8 @@ Les API de Campaign Classic v7 sont toujours disponibles, mais ne peuvent pas b
 >* Grâce à ce nouveau mécanisme, la synchronisation des données pour les désinscriptions de canaux, les abonnements, les désabonnements ou l&#39;enregistrement mobile est désormais **asynchrone**.
 >
 >* L&#39;évaluation s’applique uniquement aux schémas stockés dans la base de données cloud. N&#39;activez pas l&#39;évaluation sur les schémas répliqués. N&#39;activez pas l&#39;évaluation sur les schémas locaux. N&#39;activez pas l’évaluation sur un schéma évalué
->
 
+>
 
 
 ## Étapes d&#39;implémentation{#implement-staging}
