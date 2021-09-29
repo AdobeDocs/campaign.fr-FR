@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 873e7df79d60e5c897d09312939bbb1d91f194b2
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 100%
+source-wordcount: '940'
+ht-degree: 93%
 
 ---
 
@@ -89,7 +89,7 @@ L&#39;activité **[!UICONTROL Modifier la source de données]** permet de modifi
 
 ## Fonctionnalités non disponibles{#gs-unavailable-features}
 
-Veuillez noter que certaines fonctionnalités ne sont pas disponibles dans cette première version, telles que :
+Notez que certaines fonctionnalités ne sont pas disponibles dans cette version de Campaign, par exemple :
 
 * Marketing Resource Management (Gestion des ressources marketing)
 * Marketing distribué
@@ -97,6 +97,7 @@ Veuillez noter que certaines fonctionnalités ne sont pas disponibles dans cette
 * Optimisation des campagnes
 * Gestion de la réaction
 * Modèles de déploiement hybrides/On-premise
+* Canal twitter
 
 >[!CAUTION]
 >
@@ -106,14 +107,18 @@ Veuillez noter que certaines fonctionnalités ne sont pas disponibles dans cette
 >
 >Si vous n&#39;êtes pas sûr de votre modèle de déploiement ou si vous avez des questions, contactez votre équipe de compte.
 
-## Fonctionnalités supprimées{#gs-removed}
+## Fonctionnalités non prises en charge{#gs-removed}
 
-Pour s&#39;aligner sur la nouvelle architecture et le nouveau modèle de déploiement de Campaign v8, certaines fonctionnalités historiques de Campaign Classic v7 ne sont plus disponibles dans Campaign v8.
+Pour s&#39;aligner sur la nouvelle architecture et le nouveau modèle de déploiement de Campaign v8, certaines fonctionnalités historiques de Campaign Classic v7 ne sont plus prises en charge avec Campaign v8, telles que :
 
 * Coupons
 * Tracking web
 * Questionnaires
-* Marketing pour réseaux sociaux
+* Marketing pour réseaux sociaux avec Facebook
 * Connecteur ACS (offre principale)
 * Intégration avec LDAP
 * Connexion utilisateur/mot de passe
+
+>[!NOTE]
+>
+>Certaines fonctionnalités non disponibles ou non prises en charge peuvent toujours être visibles dans l’interface utilisateur.
