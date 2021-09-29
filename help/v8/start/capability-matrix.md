@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: 873e7df79d60e5c897d09312939bbb1d91f194b2
+source-git-commit: 8668970b0270b990232b78d527d0713efd9d1a4d
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 93%
@@ -101,11 +101,12 @@ Notez que certaines fonctionnalités ne sont pas disponibles dans cette version 
 
 >[!CAUTION]
 >
->À l&#39;heure actuelle, Campaign v8 est **uniquement** disponible en tant que Managed Cloud Service et ne peut pas être déployé dans des environnements on-premise ou hybrides.
+>* À l&#39;heure actuelle, Campaign v8 est **uniquement** disponible en tant que Managed Cloud Service et ne peut pas être déployé dans des environnements on-premise ou hybrides.
 >
->La migration depuis un environnement Campaign Classic v7 existant n&#39;est pas encore disponible.
+>* La migration depuis un environnement Campaign Classic v7 existant n&#39;est pas encore disponible.
 >
->Si vous n&#39;êtes pas sûr de votre modèle de déploiement ou si vous avez des questions, contactez votre équipe de compte.
+>* Si vous n&#39;êtes pas sûr de votre modèle de déploiement ou si vous avez des questions, contactez votre équipe de compte.
+
 
 ## Fonctionnalités non prises en charge{#gs-removed}
 
