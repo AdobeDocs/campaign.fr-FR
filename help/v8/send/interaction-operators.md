@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: bda1fc37181396d295ee23a7161053d839d9cfc7
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 100%
+source-wordcount: '387'
+ht-degree: 83%
 
 ---
 
@@ -41,7 +41,7 @@ Notez que si des offres sont utilisées dans le workflow, l&#39;opérateur doit 
 
 >[!NOTE]
 >
->Un **Chargé d&#39;offres** ne peut valider une offre que si aucun validant n&#39;est spécifié ou s&#39;il a été déclaré validant dans le modèle d&#39;offre sur lequel l&#39;offre a été basée.
+>**Les** gestionnaires d&#39;offres ne peuvent valider une offre que si aucun opérateur validant n&#39;est spécifié ou s&#39;ils ont été déclarés comme validants dans le modèle d&#39;offre.
 
 ## Créer un opérateur Chargé de diffusion {#delivery-manager}
 
@@ -51,15 +51,15 @@ Notez que si des offres sont utilisées dans le workflow, l&#39;opérateur doit 
 
 1. Dans la fenêtre **[!UICONTROL Groupes et droits nommés]**, cliquez sur **[!UICONTROL Ajouter]** et sélectionnez le groupe **[!UICONTROL Chargé de diffusion]**.
 
-Les droits attribués au Chargé de diffusion lui permettent d&#39;effectuer les opérations suivantes :
+Les droits attribués aux responsables de diffusion leur permettent d&#39;effectuer les tâches suivantes :
 
 * Afficher les environnements **[!UICONTROL En ligne]**.
 * Afficher et modifier des catégories d&#39;offres.
-* Valider des offres s&#39;il y est spécifié comme validant.
+* Validez les offres si elles sont les réviseurs.
 
    >[!NOTE]
    >
-   >Le **Chargé de diffusion** ne peut valider une offre que s&#39;il a été défini comme validant lors du paramétrage de l&#39;offre.
+   >**Le** responsable de diffusion ne peut valider une offre que s&#39;il a été déclaré validant dans le paramétrage de l&#39;offre.
 
 ## Matrice des autorisation par opérateur d&#39;interaction {#recap-of-rights-according-to-operator}
 
