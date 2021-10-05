@@ -4,8 +4,9 @@ description: Prise en main des fonctionnalités de reporting de Campaign
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 2dc5f54065d9dad6e007a2f70f1ccf1696121628
-workflow-type: tm+mt
+exl-id: 95ed0369-7215-496b-8e11-fe264c436488
+source-git-commit: af17ab77c2c9839a7b84cb79c7c400c83a873521
+workflow-type: ht
 source-wordcount: '376'
 ht-degree: 100%
 
@@ -56,4 +57,3 @@ Analysez et mesurez les données, calculez les statistiques, simplifiez et optim
 
 
 Notez que les rapports Adobe Campaign sont optimisés et offrent de meilleures fonctionnalités d&#39;échelle que Campaign Classic v7. Les limitations existantes avec Cubes ne s&#39;appliquent pas.
-
