@@ -3,7 +3,7 @@ title: Formulaires de saisie Campaign
 description: Découvrez comment personnaliser les formulaires de saisie
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
 source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2577'
 ht-degree: 100%
 
