@@ -4,14 +4,15 @@ description: Découvrez comment utiliser Campaign et Real-Time Customer Data Pla
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 3205b492552afc0aa0514f8995f508439a7a9a0b
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
+source-git-commit: 7bfc83fce93f525cc1182ebc20a1935f014b060a
+workflow-type: ht
+source-wordcount: '129'
+ht-degree: 100%
 
 ---
 
-# Utilisation de Campaign et Real-Time Customer Data Platform
+# Utilisation de Campaign et de Real-Time Customer Data Platform
 
 Avec **Adobe Experience Platform**, vous pouvez partager des données entre Campaign et Adobe Real-time Customer Data Platform (RTCDP). Vous pouvez ainsi cibler des audiences Adobe Experience Platform dans vos workflows Campaign, puis renvoyer à Adobe Real-time Customer Data Platform les données liées à ces audiences, notamment les envois, les ouvertures et les clics.
 
