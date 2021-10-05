@@ -3,7 +3,7 @@ title: Gestion des clés dans Campaign
 description: Prise en main de la gestion des clés
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
 source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '676'
 ht-degree: 100%
 
