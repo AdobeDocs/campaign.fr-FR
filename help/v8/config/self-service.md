@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
 source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '344'
 ht-degree: 100%
 
@@ -27,11 +27,11 @@ Vous pouvez également utiliser le panneau de contrôle Campaign pour configurer
 ↗️ Apprenez-en davantage dans la [documentation du panneau de contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target=&quot;_blank&quot;}.
 
 >[!CAUTION]
->
 > Les fonctionnalités suivantes ne sont pas encore prises en charge avec Campaign v8 :
 >
 >* Gestion des sous-domaines
 >* Gestion des certificats
+
 >
 
 
