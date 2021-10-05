@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
 source-git-commit: 8668970b0270b990232b78d527d0713efd9d1a4d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '940'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Modifications clés :
 
 * Création de segments jusqu&#39;à 200 fois plus rapide
 * Augmentation de la vitesse de diffusion
-* Reporting en temps réel      avec Cubes
+* Reporting en temps réel       avec Cubes
 
 En tant qu&#39;utilisateur [!DNL Campaign Classic], veuillez noter que la plupart des fonctionnalités de [!DNL Campaign Classic] v7 sont disponibles dans [!DNL Campaign] v8, à l&#39;exception d&#39;un petit ensemble de fonctionnalités répertoriées dans [cette section](#gs-removed). Les prochaines versions proposeront d&#39;autres fonctionnalités. [En savoir plus dans cette section](#gs-unavailable-features)
 
@@ -89,7 +89,7 @@ L&#39;activité **[!UICONTROL Modifier la source de données]** permet de modifi
 
 ## Fonctionnalités non disponibles{#gs-unavailable-features}
 
-Notez que certaines fonctionnalités ne sont pas disponibles dans cette version de Campaign, par exemple :
+Veuillez noter que certaines fonctionnalités ne sont pas disponibles dans cette version de Campaign, telles que :
 
 * Marketing Resource Management (Gestion des ressources marketing)
 * Marketing distribué
@@ -97,7 +97,7 @@ Notez que certaines fonctionnalités ne sont pas disponibles dans cette version 
 * Optimisation des campagnes
 * Gestion de la réaction
 * Modèles de déploiement hybrides/On-premise
-* Canal twitter
+* Canal Twitter
 
 >[!CAUTION]
 >
@@ -110,16 +110,16 @@ Notez que certaines fonctionnalités ne sont pas disponibles dans cette version 
 
 ## Fonctionnalités non prises en charge{#gs-removed}
 
-Pour s&#39;aligner sur la nouvelle architecture et le nouveau modèle de déploiement de Campaign v8, certaines fonctionnalités historiques de Campaign Classic v7 ne sont plus prises en charge avec Campaign v8, telles que :
+Pour s&#39;aligner sur la nouvelle architecture et le nouveau modèle de déploiement de Campaign v8, certaines fonctionnalités historiques de Campaign Classic v7 ne sont plus prises en charge dans Campaign v8, telles que :
 
 * Coupons
 * Tracking web
 * Questionnaires
-* Marketing pour réseaux sociaux avec Facebook
+* Marketing pour réseaux sociaux  avec Facebook
 * Connecteur ACS (offre principale)
 * Intégration avec LDAP
 * Connexion utilisateur/mot de passe
 
 >[!NOTE]
 >
->Certaines fonctionnalités non disponibles ou non prises en charge peuvent toujours être visibles dans l’interface utilisateur.
+>Certaines fonctionnalités non disponibles ou non prises en charge sont toujours visibles dans l&#39;interface utilisateur.
