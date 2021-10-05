@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
 source-git-commit: c3ed24e16d5a8bc67b8a8c959bbf485ea0fd919c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '390'
 ht-degree: 100%
 
@@ -42,6 +42,6 @@ Un opérateur est lié à une zone de sécurité à partir de son profil dans la
 
 * [Droits nommés intégrés](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-named-rights.html?lang=fr){target=&quot;_blank&quot;}
 
-* [Groupes d’opérateurs natifs](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-groups.html?lang=en#default-groups){target=&quot;_blank&quot;}
+* [Groupes d’opérateurs natifs](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-groups.html?lang=fr#default-groups){target=&quot;_blank&quot;}
 
 * [Étapes de configuration des autorisations](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=fr){target=&quot;_blank&quot;}
