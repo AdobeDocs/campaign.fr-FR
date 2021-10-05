@@ -4,10 +4,11 @@ description: Découvrez comment utiliser une table de destinataires personnalis�
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 3205b492552afc0aa0514f8995f508439a7a9a0b
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
+source-git-commit: 7bfc83fce93f525cc1182ebc20a1935f014b060a
+workflow-type: ht
+source-wordcount: '252'
+ht-degree: 100%
 
 ---
 
@@ -28,4 +29,3 @@ Cette section décrit les points clés à connaître pour le mapping des tables 
 >[!CAUTION]
 >
 >La personnalisation d&#39;Adobe Campaign est réservée aux utilisateurs experts. Elle nécessite en effet une expertise en matière de conception de schémas et de formulaires de saisie.
-
