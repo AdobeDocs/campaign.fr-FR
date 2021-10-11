@@ -4,7 +4,8 @@ description: Prise en main des fonctionnalités de tracking et de surveillance
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 76269d65246010af60fda84b388a7c74269e236f
+exl-id: 95ed0369-7215-496b-8e11-fe264c436488
+source-git-commit: b8b5a7699c6ac8bbfa40b7699563c5754981aec1
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 100%

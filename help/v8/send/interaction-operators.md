@@ -4,11 +4,10 @@ description: Créer des opérateurs de gestion des offres
 feature: Overview
 role: Data Engineer
 level: Beginner
-exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
-source-git-commit: bda1fc37181396d295ee23a7161053d839d9cfc7
+source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 83%
+source-wordcount: '383'
+ht-degree: 74%
 
 ---
 
@@ -21,9 +20,9 @@ Deux types d&#39;opérateurs peuvent utiliser l&#39;interaction Campaign : **ch
 
 ## Créer un opérateur Chargé d&#39;offres{#offer-manager}
 
-1. Créez votre nouvel opérateur.
+1. Création d’un opérateur.
 
-   ↗️ Les étapes de création d&#39;un opérateur dans Campaign sont présentées dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html?lang=fr)
+   ![](../assets/do-not-localize/book.png) Les étapes de création d&#39;un opérateur dans Campaign sont présentées dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html?lang=fr)
 
 1. Dans la fenêtre **[!UICONTROL Groupes et droits nommés]**, cliquez sur **[!UICONTROL Ajouter]** et sélectionnez le groupe **[!UICONTROL Chargé d&#39;offres]**.
 
@@ -37,7 +36,7 @@ Les droits attribués au Chargé d&#39;offres lui permettent d&#39;effectuer les
 * Paramétrer l&#39;éligibilité des offres.
 * Valider des offres.
 
-Notez que si des offres sont utilisées dans le workflow, l&#39;opérateur doit être ajouté au le groupe d&#39;opérateurs **[!UICONTROL Administrateur]** ou **[!UICONTROL Chargés d&#39;offres]** pour l&#39;exécuter.
+Si des offres sont utilisées dans un workflow, l&#39;opérateur doit être ajouté au groupe d&#39;opérateurs **[!UICONTROL Administrateur]** ou **[!UICONTROL Chargés d&#39;offres]** pour exécuter le workflow.
 
 >[!NOTE]
 >
@@ -45,9 +44,9 @@ Notez que si des offres sont utilisées dans le workflow, l&#39;opérateur doit 
 
 ## Créer un opérateur Chargé de diffusion {#delivery-manager}
 
-1. Créez votre nouvel opérateur.
+1. Création d’un opérateur.
 
-   ↗️ Les étapes de création d&#39;un opérateur dans Campaign sont présentées dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
+   ![](../assets/do-not-localize/book.png) Les étapes de création d&#39;un opérateur dans Campaign sont présentées dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. Dans la fenêtre **[!UICONTROL Groupes et droits nommés]**, cliquez sur **[!UICONTROL Ajouter]** et sélectionnez le groupe **[!UICONTROL Chargé de diffusion]**.
 

@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: ht
+source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
+workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Campaign s’accompagne d’un ensemble de workflows techniques intégrés
 
 Ces workflows effectuent des opérations de maintenance sur la base de données, tirent parti des informations de tracking contenues dans les logs de diffusion, créent des campagnes récurrentes, etc.
 
-↗️ La liste complète des workflows techniques est détaillée dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html?lang=fr).{target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) La liste complète des workflows techniques est détaillée dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html?lang=fr).{target=&quot;_blank&quot;}
 
 
 Outre ces workflows techniques, Campaign v8 s&#39;appuie sur des workflows techniques spécifiques pour gérer la [réplication des données](#data-replication).
@@ -76,6 +76,6 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 
 **Rubriques connexes**
 
-↗️ Découvrez comment commencer à utiliser les workflows dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=fr#automating-with-workflows).{target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Découvrez comment commencer à utiliser les workflows dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=fr#automating-with-workflows){target=&quot;_blank&quot;}
 
-?? Accédez aux périodes de conservation des données dans [cette section](../dev/datamodel-best-practices.md#data-retention).
+![](../assets/do-not-localize/glass.png) Accédez aux périodes de conservation des données dans [cette section](../dev/datamodel-best-practices.md#data-retention).

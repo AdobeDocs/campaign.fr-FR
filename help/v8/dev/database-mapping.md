@@ -2,8 +2,8 @@
 title: Mapping de la base de données de Campaign
 description: Mapping de la base de données de Campaign
 exl-id: a804d164-58bf-4b15-a48e-8cf75d793668
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: ht
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 100%
 
@@ -256,7 +256,7 @@ Pour les relations de jointure à l&#39;aide de Federated Database Access :
 * ![](assets/do-not-localize/join_fda_11.png) : Cardinalité 1-1
 * ![](assets/do-not-localize/join_fda_1m.png) : Cardinalité 1-N
 
-?? Pour plus d&#39;informations sur les tables FDA, consultez la section [Federated Data Access](../connect/fda.md).
+![](../assets/do-not-localize/glass.png) Pour plus d&#39;informations sur les tables FDA, consultez la section [Federated Data Access](../connect/fda.md).
 
 Un lien doit être déclaré dans le schéma possédant la clé étrangère de la table liée à partir de l&#39;élément principal :
 

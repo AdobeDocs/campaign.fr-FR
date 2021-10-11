@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: ht
+source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
+workflow-type: tm+mt
 source-wordcount: '1549'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -24,13 +24,13 @@ Les messages transactionnels sont utilisés pour envoyer :
 * une réponse individuelle en temps réel à une action client ;
 * du contenu non promotionnel.
 
-?? Les paramètres de messagerie transactionnelle sont décrits dans [cette section](../config/transactional-msg-settings.md).
+![](../assets/do-not-localize/glass.png) Les paramètres de messagerie transactionnelle sont décrits dans [cette section](../config/transactional-msg-settings.md).
 
-?? Découvrez l&#39;architecture de la messagerie transactionnelle sur [cette page](../dev/architecture.md).
+![](../assets/do-not-localize/glass.png) Découvrez l&#39;architecture de la messagerie transactionnelle sur [cette page](../dev/architecture.md).
 
 >[!CAUTION]
 >
->Les messages transactionnels nécessitent une licence spécifique. Veuillez vérifier votre accord de licence.
+>Les messages transactionnels nécessitent une licence spécifique. Veuillez vérifier votre contrat de licence.
 
 ## Définition de modèles de messages transactionnels
 
@@ -151,7 +151,7 @@ Vous pouvez tester la diffusion du message en envoyant un BAT vers une adresse d
 
 L&#39;envoi d&#39;un BAT engage le même processus que pour toute diffusion.
 
-↗️ En savoir plus sur les bons à tirer dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) En savoir plus sur les BAT dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr).{target=&quot;_blank&quot;}
 
 Toutefois, pour envoyer un BAT de message transactionnel, il vous faut exécuter les opérations suivantes :
 

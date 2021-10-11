@@ -2,10 +2,10 @@
 title: Architecture générale
 description: En savoir plus sur l’architecture et les composants de Campaign
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: ht
+source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
+workflow-type: tm+mt
 source-wordcount: '1217'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -31,15 +31,15 @@ L&#39;application est accessible de différentes manières : client riche, clie
 
 * **Console cliente** : la principale interface utilisateur de l&#39;application est une application native (sur Windows) qui communique avec le serveur applicatif Adobe Campaign via les protocoles Internet standard (SOAP, HTTP, etc.). La console cliente Adobe Campaign est très conviviale, permet d&#39;être productif, utilise très peu de bande passante (grâce à l&#39;utilisation d&#39;un cache local) et est conçue pour offrir un déploiement facile. Cette console peut être déployée à partir d&#39;un navigateur Internet et mise à jour automatiquement. En outre, elle ne nécessite aucune configuration réseau spécifique, car elle génère uniquement du trafic HTTP(S).
 
-   ?? [En savoir plus sur la console cliente Campaign](../start/connect.md).
+   ![](../assets/do-not-localize/glass.png) [En savoir plus sur la console cliente Campaign](../start/connect.md).
 
 * **Accès web** : certaines parties de l&#39;application, dont le module de reporting, les étapes de validation d&#39;une diffusion, la surveillance des instances, etc., sont accessibles via un simple navigateur web à l&#39;aide d&#39;une interface utilisateur HTML.
 
-   ?? [En savoir plus sur l&#39;accès web de Campaign](../start/connect.md).
+   ![](../assets/do-not-localize/glass.png) [En savoir plus sur l&#39;accès web de Campaign](../start/connect.md).
 
 * **API Campaign** : dans certains cas, le système est appelé par des applications externes qui utilisent les API Web Services exposées par le biais du protocole SOAP.
 
-   ?? [En savoir plus sur les API Campaign](../dev/api.md).
+   ![](../assets/do-not-localize/glass.png) [En savoir plus sur les API Campaign](../dev/api.md).
 
 ## Environnement de développement {#dev-env}
 
@@ -124,6 +124,6 @@ Les clients peuvent déployer Adobe Campaign à l&#39;aide de la base de donnée
 
 >[!CAUTION]
 >
->Avec **Managed Cloud Services de Campaign**, votre environnement et votre configuration initiale ont été définis par Adobe, conformément aux termes de votre contrat de licence. Vous n&#39;êtes pas autorisé à modifier les packages, les schémas ou les rapports natifs installés.
+>Avec **Cloud Services gérés par Campaign**, votre environnement et votre configuration initiale ont été définis par Adobe, conformément aux termes de votre contrat de licence. Vous n&#39;êtes pas autorisé à modifier les packages, les schémas ou les rapports natifs installés.
 >
 >Si vous devez utiliser un module complémentaire Campaign ou une fonctionnalité spécifique qui n&#39;a pas été configurée pour vous, vous devez contacter **l&#39;assistance clientèle Adobe**.

@@ -5,8 +5,8 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: ht
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 100%
 
@@ -24,14 +24,14 @@ Principaux avantages :
 
 Vous pouvez également utiliser le panneau de contrôle Campaign pour configurer les paramètres de votre instance, tels que les listes autorisées d&#39;adresses IP, les autorisations d&#39;URL et récupérer des informations sur votre instance.
 
-↗️ Apprenez-en davantage dans la [documentation du panneau de contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Apprenez-en davantage dans la [documentation du panneau de contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target=&quot;_blank&quot;}.
 
 >[!CAUTION]
->
 > Les fonctionnalités suivantes ne sont pas encore prises en charge avec Campaign v8 :
 >
 >* Gestion des sous-domaines
 >* Gestion des certificats
+
 >
 
 
