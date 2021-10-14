@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 100%
@@ -22,7 +22,7 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
    Cette fréquence régulière de mise à jour a pour but de vous fournir les dernières fonctionnalités et améliorations. Vous bénéficiez ainsi d&#39;un environnement sécurisé et d&#39;une expérience optimale avec notre produit. C&#39;est la raison pour laquelle nous pensons qu&#39;il est important que vous exécutiez la version la plus récente d&#39;Adobe Campaign.
 
-   ?? En tant qu&#39;utilisateur de Managed Cloud Services, votre instance est mise à niveau par Adobe avec chaque nouvelle version.
+   ![](../assets/do-not-localize/speech.png)  En tant qu&#39;utilisateur de Managed Cloud Services, votre instance est mise à niveau par Adobe avec chaque nouvelle version.
 
 1. **Comment se connecter à Campaign v8 ?**
 
@@ -60,7 +60,7 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
    Un sous-domaine est une division de votre domaine qui peut être utilisée pour isoler vos marques ou divers types de trafic (messages transactionnels, informations marketing, etc.).
 
-   ?? En tant qu&#39;utilisateur Managed Cloud Services, contactez Adobe pour déléguer vos sous-domaines à Adobe.
+   ![](../assets/do-not-localize/speech.png)  En tant qu&#39;utilisateur Managed Cloud Services, contactez Adobe pour déléguer vos sous-domaines à Adobe.
 
 1. **En tant qu&#39;utilisateur Campaign Classic v7, puis-je migrer vers Campaign v8 ?**
 
@@ -85,4 +85,4 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
    Pour signaler un problème ou démarrer une session de conversation dans ce nouveau système, connectez-vous à la [console Adobe Admin](https://adminconsole.adobe.com/overview){target=&quot;_blank&quot;}.
 
-   Ce système nécessite des comptes individuels pour chaque utilisateur, avec les permissions adéquates. Si vous constatez que vous ne pouvez pas vous connecter à l&#39;aide de votre Adobe ID, demandez l&#39;accès par le biais d&#39;Experience League. L&#39;équipe de l&#39;Assistance clientèle vous contactera alors dès que possible. [En savoir plus](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}
+   Ce système nécessite des comptes individuels pour chaque utilisateur, avec les autorisations adéquates. Si vous constatez que vous ne pouvez pas vous connecter à l&#39;aide de votre Adobe ID, demandez l&#39;accès par le biais d&#39;Experience League. L&#39;équipe de l&#39;Assistance clientèle vous contactera alors dès que possible. [En savoir plus](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}

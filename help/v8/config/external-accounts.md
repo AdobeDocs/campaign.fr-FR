@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '1115'
 ht-degree: 100%
@@ -34,7 +34,7 @@ Vous pouvez accéder aux comptes externes à partir de l&#39;**[!UICONTROL Explo
 
 Adobe Campaign utilise les comptes techniques suivants pour activer et exécuter des processus spécifiques.
 
-?? En tant qu&#39;utilisateur Managed Cloud Services, Adobe configure tous les comptes externes spécifiques à Campaign pour vous.
+![](../assets/do-not-localize/speech.png)  En tant qu&#39;utilisateur Managed Cloud Services, Adobe configure tous les comptes externes spécifiques à Campaign pour vous.
 
 * **Mails rebonds (POP3)**
 
@@ -80,14 +80,14 @@ Adobe Campaign utilise les comptes techniques suivants pour activer et exécuter
 
    ![](../assets/do-not-localize/glass.png) Pour en savoir plus sur l&#39;intégration Adobe Campaign - Adobe Analytics, consultez [cette page](../connect/ac-aa.md).
 
-   ?? En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour intégrer Adobe Analytics à Campaign.
+   ![](../assets/do-not-localize/speech.png)  En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour intégrer Adobe Analytics à Campaign.
 
    * **Adobe Experience Manager**
    Le compte externe **[!UICONTROL AEM]** permet de gérer le contenu de vos diffusions e-mail, ainsi que vos formulaires directement dans Adobe Experience Manager.
 
    ![](../assets/do-not-localize/glass.png) Pour en savoir plus sur l&#39;intégration Adobe Campaign - Adobe Analytics, consultez [cette page](../connect/ac-aem.md).
 
-   ?? En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour intégrer Adobe Experience Manager à Adobe Campaign.
+   ![](../assets/do-not-localize/speech.png)  En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour intégrer Adobe Experience Manager à Adobe Campaign.
 
 
 ## Comptes externes du connecteur CRM

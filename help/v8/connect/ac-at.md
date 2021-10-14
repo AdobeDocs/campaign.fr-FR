@@ -4,7 +4,8 @@ description: Découvrez comment utiliser Campaign et Adobe Target
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
+exl-id: 891a9a87-f3a4-405a-87ed-a7703be90a67
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 100%
@@ -20,7 +21,7 @@ Cette intégration vous aide à implémenter les cas d&#39;utilisation comme sui
 >[!NOTE]
 >L&#39;intégration prend uniquement en charge les images statiques. Les autres types de contenu ne peuvent pas être personnalisés.
 
-?? En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour implémenter des triggers Experience Cloud avec Campaign.
+![](../assets/do-not-localize/speech.png)  En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour implémenter des triggers Experience Cloud avec Campaign.
 
 Adobe Target peut utiliser les types de données suivants :
 

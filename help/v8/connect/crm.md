@@ -4,7 +4,8 @@ description: Découvrez comment utiliser Campaign et votre CRM
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
+exl-id: c2d34ee9-4427-48e7-a8cf-0ae02a801d50
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 100%
@@ -25,7 +26,7 @@ Ces connecteurs permettent une intégration rapide et facile des données : Ado
 
 Les CRM et versions pris en charge sont présentés dans la [matrice de compatibilité](../start/compatibility-matrix.md) de Campaign.
 
-?? Les connecteurs CRM fonctionnent seulement avec une URL sécurisée (https).
+![](../assets/do-not-localize/speech.png)  Les connecteurs CRM fonctionnent seulement avec une URL sécurisée (https).
 
 ## Étapes d&#39;implémentation {#crm-implementation-steps}
 

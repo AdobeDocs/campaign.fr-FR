@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: e4e3fb49-9942-4e2d-a020-557d1ac5dcdc
-source-git-commit: 780a29dab99ad2bda554134ca95c435b9e76b494
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 100%
@@ -31,7 +31,7 @@ Notez que :
 
 * Seuls les e-mails envoyés sont pris en compte, les retours ne le sont pas.
 
-?? En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour activer l&#39;option E-mail Cci dans Campaign. L&#39;adresse e-mail en Cci de votre choix doit être fournie à l&#39;équipe Adobe qui la configurera pour vous.
+![](../assets/do-not-localize/speech.png) En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour activer l&#39;option E-mail Cci dans Campaign. L&#39;adresse e-mail en Cci de votre choix doit être fournie à l&#39;équipe Adobe qui la configurera pour vous.
 
 Une fois que la fonctionnalité E-mail Cci est configurée, assurez-vous qu&#39;elle est activée dans le modèle de diffusion ou dans la diffusion via l&#39;option **E-mail Cci**.
 

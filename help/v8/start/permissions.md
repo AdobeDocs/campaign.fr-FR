@@ -5,10 +5,10 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
-source-git-commit: c3ed24e16d5a8bc67b8a8c959bbf485ea0fd919c
-workflow-type: ht
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
+workflow-type: tm+mt
 source-wordcount: '390'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -36,12 +36,12 @@ Chaque opérateur doit être associé à une zone pour se connecter à une insta
 
 Un opérateur est lié à une zone de sécurité à partir de son profil dans la console, accessible dans le nœud **[!UICONTROL Administration > Gestion des accès > Opérateurs.]**
 
-?? En tant qu’utilisateur Managed Cloud Services, Adobe définit les zones de sécurité pour vous. Pour plus d’informations, [contactez Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/speech.png)  En tant qu’utilisateur Cloud Services géré, Adobe définit les zones de sécurité pour vous. Pour plus d’informations, [contactez Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
 
 **Apprenez-en davantage en consultant la documentation de Campaign Classic v7**
 
 * [Droits nommés intégrés](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-named-rights.html?lang=fr){target=&quot;_blank&quot;}
 
-* [Groupes d’opérateurs natifs](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-groups.html?lang=fr#default-groups){target=&quot;_blank&quot;}
+* [Groupes d’opérateurs natifs](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-groups.html?lang=en#default-groups){target=&quot;_blank&quot;}
 
 * [Étapes de configuration des autorisations](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=fr){target=&quot;_blank&quot;}

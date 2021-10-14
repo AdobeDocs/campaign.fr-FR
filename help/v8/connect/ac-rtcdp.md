@@ -4,7 +4,8 @@ description: Découvrez comment utiliser Campaign et Real-Time Customer Data Pla
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
+exl-id: d1e09eae-339e-4d14-9071-097dfcc635aa
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 100%
@@ -19,4 +20,4 @@ Avec **Adobe Experience Platform**, vous pouvez partager des données entre Camp
 
 ![](../assets/do-not-localize/book.png) Découvrez comment implémenter et utiliser RTCDP avec Campaign dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/aep-sources-destinations/get-started-sources-destinations.html?lang=fr#integrating-with-adobe-experience-cloud).
 
-?? En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour connecter RTCDP et Campaign.
+![](../assets/do-not-localize/speech.png)  En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour connecter RTCDP et Campaign.
