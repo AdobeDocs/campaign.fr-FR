@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Campaign v8
 title: Documentation Campaign v8
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: e0faeda87d5b84309524a72d9f021c381ac4619e
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '208'
 ht-degree: 98%
 
 ---
@@ -85,6 +85,7 @@ ht-degree: 98%
       + [Gestion des clés et unicité](dev/keys.md)
       + [Création de schémas](dev/create-schema.md)
       + [Extension de schémas](dev/extend-schema.md)
+      + [Filtrage des schémas](dev/filter-schema.md)
       + [Structure d&#39;un schéma](dev/schema-structure.md)
       + [Mapping de la base de données](dev/database-mapping.md)
       + [Limitation de l&#39;affichage des PI](dev/restrict-pi-view.md)
