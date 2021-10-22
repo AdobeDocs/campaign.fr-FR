@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1213'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Dans cette section, vous apprendrez comment adapter Adobe Campaign aux exigences
 
 >[!CAUTION]
 >
->Avec **Cloud Services gérés par Campaign**, votre environnement et votre configuration initiale ont été définis par Adobe, conformément aux termes de votre contrat de licence. Vous n&#39;êtes pas autorisé à modifier les packages, les schémas ou les rapports natifs installés.
+>Avec **Managed Cloud Services de Campaign**, votre environnement et votre configuration initiale ont été définis par Adobe, conformément aux termes de votre contrat de licence. Vous n&#39;êtes pas autorisé à modifier les packages, les schémas ou les rapports natifs installés.
 >
 >Si vous devez utiliser un module complémentaire Campaign ou une fonctionnalité spécifique qui n&#39;a pas été configurée pour vous, vous devez contacter **l&#39;assistance clientèle Adobe**.
 
@@ -49,7 +49,7 @@ Découvrez les instructions et principes relatifs à la sécurité d&#39;Adobe C
 
 ### Ajout d&#39;utilisateurs et octroi des autorisations
 
-Vous pouvez ajouter manuellement des utilisateurs à Campaign et les associer à des groupes, en fonction de votre hiérarchie de rôles. Les utilisateurs pourront alors se connecter et accéder aux données et autorisations adéquates.
+Vous pouvez ajouter manuellement des utilisateurs à Campaign et les associer à des groupes en les alignant avec votre hiérarchie de rôles. Les utilisateurs pourront alors se connecter et accéder aux données et autorisations adéquates.
 
 ![](../assets/do-not-localize/book.png) Découvrez comment ajouter des utilisateurs à Adobe Campaign dans [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=fr#getting-started){target=&quot;_blank&quot;}.
 
@@ -77,7 +77,7 @@ Avant de commencer à envoyer des messages et à créer des campagnes marketing,
 
    Les campagnes, diffusions, traitements ou workflows sont tous basés sur un modèle qui stocke les paramètres et fonctionnalités clés. Un modèle natif est fourni pour chaque composant, pour lequel aucune configuration spécifique n&#39;a été définie. Vous devez configurer et adapter les modèles en fonction de vos besoins, puis les rendre disponibles auprès des utilisateurs finaux.
 
-   ![](../assets/do-not-localize/book.png) [En savoir plus sur les modèles d’email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [En savoir plus sur les modèles d’e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr){target=&quot;_blank&quot;}
 
    ![](../assets/do-not-localize/book.png) Découvrez comment utiliser les modèles de campagnes dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=fr#orchestrating-campaigns).{target=&quot;_blank&quot;}
 
