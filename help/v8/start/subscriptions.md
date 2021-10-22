@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
 source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '547'
 ht-degree: 100%
 
@@ -34,12 +34,12 @@ Pour abonner (opt-in) un profil à un service, les options disponibles sont les 
 
    ![](assets/subscribe-confirm.png)
 
-   ![](../assets/do-not-localize/book.png) Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=fr#deliveries-tab){target=&quot;_blank&quot;}
 
 
-* Importer des destinataires et les abonner automatiquement à un service d&#39;information : pour cela, sélectionnez le service visé dans la dernière étape de l&#39;assistant d&#39;import.
+* Importer des destinataires et les abonner automatiquement à un service d’information : pour ce faire, sélectionnez le service visé dans la dernière étape de l’assistant d’import.
 
-   ![](../assets/do-not-localize/book.png) Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=fr#step-5---additional-step-when-importing-recipients){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Apprenez-en davantage dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=fr#step-5---additional-step-when-importing-recipients){target=&quot;_blank&quot;}
 
 * Utiliser un formulaire web pour que les destinataires puissent s&#39;abonner à un service.
 
@@ -52,11 +52,11 @@ Pour abonner (opt-in) un profil à un service, les options disponibles sont les 
    ![](../assets/do-not-localize/book.png) Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=fr#create-a-subscription--form-with-double-opt-in){target=&quot;_blank&quot;}
 
 
-* Créez un workflow de ciblage et utilisez une activité de type **[!UICONTROL Service d&#39;inscription]**.
+* Créez un workflow de ciblage et utilisez une activité de type **[!UICONTROL Service d’inscription]**.
 
    ![](assets/wf-subscription.png)
 
-   ![](../assets/do-not-localize/book.png) Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/subscription-services.html?lang=fr#example--subscribe-a-list-of-recipients-to-a-newsletter){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Apprenez-en davantage dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/subscription-services.html?lang=fr#example--subscribe-a-list-of-recipients-to-a-newsletter){target=&quot;_blank&quot;}
 
 Pour désabonner (opt-out) un profil d&#39;un service, les options disponibles sont les suivantes :
 
