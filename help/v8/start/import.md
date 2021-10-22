@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 source-git-commit: 780a29dab99ad2bda554134ca95c435b9e76b494
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 99%
 
 Campaign vous aide à ajouter des contacts à la base de données cloud. Vous pouvez charger un fichier, planifier et automatiser plusieurs mises à jour des contacts, collecter des données sur le Web ou saisir des informations de profil directement dans la table des destinataires.
 
-![](../assets/do-not-localize/glass.png)[ Prise en main des audiences](audiences.md)
+![](../assets/do-not-localize/glass.png) Prise en main des [audiences](audiences.md)
 
-![](../assets/do-not-localize/glass.png) Présentation du  [modèle de données Campaign](../dev/datamodel.md)
+![](../assets/do-not-localize/glass.png) Présentation du [modèle de données Campaign](../dev/datamodel.md)
 
 ## Import de profils dans un workflow
 
@@ -30,9 +30,9 @@ Apprenez-en davantage en consultant la documentation de Campaign Classic v7 :
 
 * [Prise en main des imports et des exports](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/get-started-data-import-export.html?lang=fr){target=&quot;_blank&quot;}
 
-* [Bonnes pratiques en matière d&#39;import et d&#39;export](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/best-practices/import-export-best-practices.html?lang=fr){target=&quot;_blank&quot;}
+* [Bonnes pratiques en matière d’import et d’export](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/best-practices/import-export-best-practices.html?lang=fr){target=&quot;_blank&quot;}
 
-* [Configuration et exécution d&#39;un import](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=fr){target=&quot;_blank&quot;}
+* [Configuration et exécution d’un import](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=fr){target=&quot;_blank&quot;}
 
 ## Exécution d&#39;imports unitaires
 
