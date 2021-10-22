@@ -1,10 +1,10 @@
 ---
-title: Filtrage des schémas de campagne
-description: Découvrez comment filtrer les schémas de Campaign
+title: Filtrage des schémas Campaign
+description: Découvrez comment filtrer les schémas Campaign
 source-git-commit: e0faeda87d5b84309524a72d9f021c381ac4619e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '424'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Ces filtres sont renseignés au niveau de l’**élément** principal des schém
    </sysFilter>
    ```
 
-* Restreindre les autorisations de LECTURE et d’ÉCRITURE :
+* Restreindre les autorisations de LECTURE et d’ÉCRITURE :
 
    Ici, le filtre sert à interdire à la fois les permissions de LECTURE et d’ÉCRITURE du schéma à tous les opérateurs. Seul le compte **interne**, représenté par l’expression &quot;$(loginId)!=0&quot;, possède ces permissions.
 
@@ -97,10 +97,10 @@ Par défaut, les schémas intégrés ne sont accessibles avec les permissions d�
 
 ## Modification des filtres système des schémas intégrés
 
-Les schémas intégrés sont protégés afin d’éviter des problèmes de compatibilité avec les versions antérieures. Adobe vous recommande de ne pas modifier les paramètres de schéma par défaut pour garantir une sécurité optimale.
+Les schémas intégrés sont protégés afin d’éviter des problèmes de compatibilité avec les versions antérieures. Adobe recommande toutefois de ne pas modifier les paramètres de schémas par défaut afin de garantir une sécurité optimale.
 
-Cependant, dans des contextes spécifiques, vous devrez peut-être modifier les filtres système des schémas intégrés. Pour ce faire, suivez les étapes ci-après :
+Cependant, dans certains contextes, vous devrez peut-être modifier les filtres système des schémas intégrés. Pour ce faire, suivez les étapes ci-après :
 
-1. Créez une extension pour le schéma intégré ou ouvrez une extension existante.
-1. Ajoutez un élément enfant **`<sysfilter name="<filter name>" _operation="delete"/>`** dans l’élément principal pour ignorer le filtre sous le même dans le schéma intégré.
-1. Vous pouvez ajouter un nouveau filtre, comme décrit dans la section [Filtres système](#system-filters) .
+1. Créez une extension du schéma intégré concerné ou ouvrez une extension existante.
+1. Dans l’élément principal, ajoutez un élément enfant **`<sysfilter name="<filter name>" _operation="delete"/>`** afin d’ignorer le filtre du même nom dans le schéma intégré.
+1. Vous pouvez ajouter un nouveau filtre, comme décrit dans la section [Filtres système](#system-filters).
