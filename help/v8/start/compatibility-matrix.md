@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 source-git-commit: 83874f4d124d7892f99e973684b1e8ee571f31e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '343'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Lorsque des versions spécifiques de ces systèmes et outils tiers arrivent en f
 
 ## Console cliente{#ClientConsoleoperatingsystems}
 
-Les systèmes d&#39;exploitation et le navigateur ci-après sont nécessaires pour utiliser la console cliente Campaign. [En savoir plus](connect.md).
+Les systèmes d’exploitation et le navigateur ci-après sont nécessaires pour utiliser la console cliente Campaign. [En savoir plus](connect.md).
 
 ### Systèmes d’exploitation
 
@@ -60,7 +60,7 @@ Vous pouvez utiliser Campaign pour envoyer des [notifications push](../send/push
 
 ## Accès Web
 
-Les navigateurs suivants sont compatibles avec Campaign pour [Accès Web](connect.md#web-access).
+Les navigateurs ci-après sont compatibles avec Campaign pour l’[accès à Internet](connect.md#web-access).
 
 * **Microsoft Edge**, **Mozilla Firefox**, **Google Chrome**, **Safari** (dernières versions)
 
