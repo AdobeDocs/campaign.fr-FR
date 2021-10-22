@@ -3,9 +3,9 @@ title: Architecture générale
 description: En savoir plus sur l’architecture et les composants de Campaign
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
 source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1217'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -124,6 +124,6 @@ Les clients peuvent déployer Adobe Campaign à l&#39;aide de la base de donnée
 
 >[!CAUTION]
 >
->Avec **Cloud Services gérés par Campaign**, votre environnement et votre configuration initiale ont été définis par Adobe, conformément aux termes de votre contrat de licence. Vous n&#39;êtes pas autorisé à modifier les packages, les schémas ou les rapports natifs installés.
+>Avec **Campaign Managed Cloud Services**, votre environnement et votre configuration initiale ont été définis par Adobe, conformément aux termes de votre contrat de licence. Vous n&#39;êtes pas autorisé à modifier les packages, les schémas ou les rapports natifs installés.
 >
 >Si vous devez utiliser un module complémentaire Campaign ou une fonctionnalité spécifique qui n&#39;a pas été configurée pour vous, vous devez contacter **l&#39;assistance clientèle Adobe**.
