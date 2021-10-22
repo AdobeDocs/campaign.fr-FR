@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
 source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '940'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ Les utilisateurs de Campaign n&#39;ont pas besoin d&#39;être experts en bases d
 
 Les utilisateurs de Campaign se connectent via leur Adobe ID. Le même Adobe ID est utilisé pour conserver tous vos plans d’Adobe et produits associés à un seul compte.
 
-![](../assets/do-not-localize/glass.png) Découvrez comment vous connecter à  [!DNL Campaign] dans  [cette page](connect.md).
+![](../assets/do-not-localize/glass.png) Découvrez comment vous connecter à [!DNL Campaign] dans [cette page](connect.md).
 
 ## Reporting
 
@@ -85,7 +85,7 @@ Campaign v8 propose une activité de workflow de ciblage supplémentaire : **[
 
 L&#39;activité **[!UICONTROL Modifier la source de données]** permet de modifier la source de données d&#39;un workflow **[!UICONTROL Table de travail]** pour gérer les données de différentes sources de données telles que FDA, FFDA et base de données locale.
 
-![](../assets/do-not-localize/glass.png) Pour en savoir plus sur l’activité  **[!UICONTROL Modification de la]** source de données, consultez  [cette page](../config/workflows.md#change-data-source-activity).
+![](../assets/do-not-localize/glass.png) En savoir plus sur l’activité **[!UICONTROL Modifier la source de données]** dans [cette page](../config/workflows.md#change-data-source-activity).
 
 ## Fonctionnalités non disponibles{#gs-unavailable-features}
 
