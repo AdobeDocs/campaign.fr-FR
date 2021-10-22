@@ -4,9 +4,8 @@ description: Prise en main des fonctionnalités de tracking et de surveillance
 feature: Overview
 role: Data Engineer
 level: Beginner
-exl-id: 95ed0369-7215-496b-8e11-fe264c436488
-source-git-commit: b8b5a7699c6ac8bbfa40b7699563c5754981aec1
-workflow-type: tm+mt
+source-git-commit: 76269d65246010af60fda84b388a7c74269e236f
+workflow-type: ht
 source-wordcount: '905'
 ht-degree: 100%
 
@@ -20,7 +19,7 @@ Les fonctionnalités de tracking de Campaign effectuent le suivi des messages en
 
 Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=fr#tracking-tab){target=&quot;_blank&quot;}.
 
-Le tableau de bord des diffusions est un outil essentiel pour surveiller les diffusions et les erreurs éventuelles rencontrées lors de l&#39;envoi des messages.
+Le tableau de bord des diffusions est un outil essentiel pour surveiller les diffusions et les erreurs éventuelles rencontrées lors de l’envoi des messages.
 
 Pour en savoir plus à ce sujet consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=fr#sending-messages){target=&quot;_blank&quot;}.
 
@@ -38,7 +37,7 @@ Vous pouvez suivre la réception des messages et l&#39;activation des liens ins�
 
 **Tracking des URL**
 
-Les options de tracking peuvent être paramétrées en activant ou en désactivant les URL trackées.
+Les options de tracking peuvent être paramétrées en activant ou en désactivant les URL suivies.
 
 [Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/personalizing-url-tracking.html?lang=fr#sending-messages){target=&quot;_blank&quot;}
 
@@ -119,16 +118,16 @@ Adobe Campaign vous propose un ensemble de fonctionnalités permettant de survei
 
 La surveillance de vos diffusions après leur envoi est une étape clé pour vous assurer que vos campagnes marketing sont efficaces et atteignent vos clients.
 
-Pour en savoir plus sur les informations que vous pouvez surveiller après l&#39;envoi d&#39;une diffusion et comprendre la gestion des diffusions en échec et des quarantaines, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr#sending-messages){target=&quot;_blank&quot;}
+Pour en savoir plus sur les informations que vous pouvez surveiller après l’envoi d’une diffusion et comprendre la gestion des diffusions en échec et des quarantaines, consultez la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr#sending-messages){target=&quot;_blank&quot;}
 
 ### Surveillance de vos workflows
 
-Découvrez comment surveiller vos diffusions dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html?lang=fr#automating-with-workflows){target=&quot;_blank&quot;}
+Découvrez comment surveiller vos diffusions dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html?lang=fr#automating-with-workflows){target=&quot;_blank&quot;}
 
 ### Surveillance de votre instance
 
-Les instructions de surveillance des instances sont disponibles dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/introduction/monitoring-guidelines.html?lang=fr#monitoring-campaign-classic){target=&quot;_blank&quot;}
+Les instructions de surveillance des instances sont disponibles dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/introduction/monitoring-guidelines.html?lang=fr#monitoring-campaign-classic){target=&quot;_blank&quot;}
 
 Utilisez l&#39;interface en libre-service du journal d&#39;audit pour surveiller les modifications apportées à votre instance. Le journal d&#39;audit capture, en temps réel, une liste complète d&#39;actions et d&#39;événements se produisant dans votre instance Adobe Campaign. Vous pouvez accéder à un historique des données pour répondre à des questions telles que : ce qui est arrivé à vos workflows et qui les a mis à jour en dernier, ou ce que vos utilisateurs ont fait dans l&#39;instance.
 
-En savoir plus sur le journal d’audit dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html?lang=fr#accessing-audit-trail){target=&quot;_blank&quot;}
+En savoir plus sur le journal d’audit dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html?lang=fr#accessing-audit-trail){target=&quot;_blank&quot;}
