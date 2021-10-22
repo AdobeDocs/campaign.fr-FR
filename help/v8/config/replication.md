@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
 source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -76,6 +76,6 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 
 **Rubriques connexes**
 
-![](../assets/do-not-localize/book.png) Découvrez comment commencer à utiliser les workflows dans la documentation de  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=fr#automating-with-workflows){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Découvrez comment commencer à utiliser les workflows dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=fr#automating-with-workflows){target=&quot;_blank&quot;}
 
 ![](../assets/do-not-localize/glass.png) Accédez aux périodes de conservation des données dans [cette section](../dev/datamodel-best-practices.md#data-retention).
