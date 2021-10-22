@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 source-git-commit: 780a29dab99ad2bda554134ca95c435b9e76b494
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '767'
 ht-degree: 100%
 
@@ -79,8 +79,8 @@ You can monitor the number of active profiles used on your instances directly fr
 
 **Rubriques connexes**   dans la documentation Adobe Campaign Classic v7 :
 
-* [Conception et exécution d&#39;un workflow spécifique à une campagne](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=fr){target=&quot;_blank&quot;}
+* [Conception et exécution d’un workflow spécifique à une campagne](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=fr){target=&quot;_blank&quot;}
 
-* [Découvrez comment sélectionner l&#39;audience d&#39;une campagne](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=fr){target=&quot;_blank&quot;}
+* [Découvrez comment sélectionner l’audience d’une campagne](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=fr){target=&quot;_blank&quot;}
 
 * [Prise en main des workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=fr){target=&quot;_blank&quot;}
