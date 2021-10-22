@@ -4,8 +4,9 @@ description: Prise en main des API de Campaign
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
-workflow-type: tm+mt
+exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
+source-git-commit: 94fc2739c538f3aa8b11e0ea69d08f1bfffb5d32
+workflow-type: ht
 source-wordcount: '330'
 ht-degree: 100%
 
