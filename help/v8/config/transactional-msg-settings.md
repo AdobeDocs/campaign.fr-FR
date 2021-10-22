@@ -6,15 +6,15 @@ role: Data Engineer
 level: Beginner
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
 source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '326'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Paramètres de messagerie transactionnelle
 
-![](../assets/do-not-localize/speech.png)  En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour installer et configurer la messagerie transactionnelle de Campaign dans votre environnement.
+![](../assets/do-not-localize/speech.png)  En tant qu’utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour installer et configurer la messagerie transactionnelle de Campaign dans votre environnement.
 
 ![](../assets/do-not-localize/glass.png) Les fonctionnalités de messagerie transactionnelle sont décrites dans [cette section](../send/transactional.md).
 
@@ -42,7 +42,7 @@ Pour envoyer des notifications push transactionnelles, vous devez exécuter les 
 
    >[!CAUTION]
    >
-   >Vérifiez votre contrat de licence avant d&#39;installer un nouveau package intégré Campaign.
+   >Consultez votre contrat de licence avant d’installer un nouveau package intégré Campaign.
 
 1. Répliquez le service **Application mobile** et les applications mobiles associées sur les instances d&#39;exécution.
 
