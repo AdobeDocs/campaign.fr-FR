@@ -3,7 +3,7 @@ title: Bonnes pratiques de sécurité de Campaign
 description: Prise en main des bonnes pratiques de sécurité de Campaign
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '513'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ La configuration et le renforcement de la confidentialité sont des éléments c
 * Vérifiez que les mots de passe cryptés sont restreints.
 * Protégez les pages pouvant contenir des informations personnelles, telles que les pages miroir, les applications web, etc.
 
-![](../assets/do-not-localize/speech.png)  En tant qu&#39;utilisateur Managed Cloud Services, Adobe vous accompagne dans l&#39;implémentation de ces configurations sur votre environnement.
+![](../assets/do-not-localize/speech.png)  En tant qu’utilisateur Managed Cloud Services, Adobe vous accompagne dans l’implémentation de ces configurations dans votre environnement.
 
 ## Personnalisation
 
