@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
 source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '344'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ Le panneau de contrôle est directement accessible à partir d&#39;Adobe Experi
 
 ## FAQ sur le panneau de contrôle
 
-[Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=fr#control-panel){target=&quot;_blank&quot;} pour accéder au FAQ sur le panneau de contrôle Campaign.
+[Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=fr?lang=fr#control-panel){target=&quot;_blank&quot;} pour accéder au FAQ sur le panneau de contrôle Campaign.
 
 ## Gestion SFTP
 
