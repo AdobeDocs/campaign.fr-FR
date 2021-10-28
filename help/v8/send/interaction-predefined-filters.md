@@ -5,14 +5,14 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 092262c7-768c-4e86-9b2b-c52516f6a030
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: ht
+source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
+workflow-type: tm+mt
 source-wordcount: '108'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
-# Création de filtres prédéfinis{#creating-predefined-filters}
+# Création de filtres prédéfinis{#creating-pre-defined-filters}
 
 Créez des filtres prédéfinis afin de définir des règles d&#39;éligibilité pour la population cible qui pourront facilement être réutilisées lors de la création de l&#39;offre. Ils sont spécifiques à chaque environnement et prennent en compte les paramètres de l&#39;offre.
 

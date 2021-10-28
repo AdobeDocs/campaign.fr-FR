@@ -5,16 +5,16 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
-workflow-type: ht
+source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
+workflow-type: tm+mt
 source-wordcount: '1350'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
 # Envoi d&#39;une offre
 
-Pour qu&#39;une offre puisse être sélectionnée par le moteur d&#39;offres, elle doit avoir été validée et être disponible dans un environnement **En ligne**. [En savoir plus](interaction-offer.md#approve-offers)
+Pour qu&#39;une offre puisse être sélectionnée par le moteur d&#39;offres, elle doit être validée et disponible dans un **En direct** environnement. [En savoir plus](interaction-offer.md#approve-offers)
 
 La présentation des offres via un canal de communication sortant s&#39;effectue par le biais de diffusions par courrier, par e-mail ou mobiles. Vous pouvez également utiliser le mode unitaire avec les messages transactionnels (Message Center).
 
@@ -59,14 +59,14 @@ Pour insérer des propositions d&#39;offres dans une diffusion, procédez comme 
 
 ### Paramètres du moteur d&#39;offres {#parameters-for-calling-offer-engine}
 
-* **[!UICONTROL Emplacement]** : emplacement de l&#39;environnement des offres à choisir obligatoirement afin d&#39;activer le moteur d&#39;offres.
-* **[!UICONTROL Catégorie]** : dossier spécifique dans lequel les offres sont classées. Si aucune catégorie n&#39;est spécifiée, c&#39;est la totalité des offres contenues dans l&#39;environnement qui seront prises en compte par le moteur d&#39;offres, sauf si un thème est sélectionné.
+* **[!UICONTROL Espace]** : emplacement de l&#39;environnement des offres qui doit être sélectionné pour activer le moteur d&#39;offres.
+* **[!UICONTROL Catégorie]** : dossier spécifique dans lequel les offres sont triées. Si aucune catégorie n&#39;est spécifiée, toutes les offres contenues dans l&#39;environnement seront prises en compte par le moteur d&#39;offres, sauf si un thème est sélectionné.
 * **[!UICONTROL Thèmes]** : mots-clés définis préalablement au niveau des catégories. Ils agissent comme un filtre et permettent d&#39;affiner les offres à présenter en les sélectionnant dans un ensemble de catégories.
 * **[!UICONTROL Nombre de propositions]** : nombre d&#39;offres renvoyées par le moteur qui pourront être insérées dans le corps de la diffusion. Si elles ne sont pas insérées dans le message, les offres seront néanmoins générées, mais non présentées.
 * **[!UICONTROL Exclure les destinataires non éligibles]** : cette option permet d&#39;activer ou non l&#39;exclusion des destinataires pour lesquels il n&#39;y a pas assez d&#39;offres éligibles. Pour chaque destinataire, il se peut que le nombre de propositions éligibles soit inférieur au nombre de propositions requis. En cochant cette case, les destinataires pour lesquels le nombre de propositions requis n&#39;est pas atteint seront exclus de la diffusion. Si vous ne sélectionnez pas cette option, ces destinataires seront conservés, mais ils auront un nombre de propositions inférieur au nombre demandé.
 * **[!UICONTROL Ne rien afficher si aucune offre n&#39;est sélectionnée]** : cette option permet de choisir le traitement du message au cas où l&#39;une des propositions n&#39;existerait pas. En cochant cette case, la représentation de la proposition manquante ne s&#39;affichera pas et aucun contenu n&#39;apparaîtra dans le message pour cette proposition. Si la case est décochée, le message lui-même est annulé au moment de l&#39;envoi et les destinataires ne recevront aucun message.
 
-## Envoi d&#39;offres dans des workflows
+## Envoi d&#39;offres dans des workflows{#offer-via-wf}
 
 Plusieurs activités de workflow permettent de définir la présentation des offres :
 
@@ -86,10 +86,10 @@ Vous pouvez par exemple enrichir les données d&#39;une requête sur les destina
 
 Deux méthodes permettent de définir des propositions d&#39;offre.
 
-* En définissant une offre ou un appel au moteur d&#39;offres.
+* Spécification d&#39;une offre ou d&#39;un appel au moteur d&#39;offres.
 * En référençant un lien vers une offre.
 
-#### Spécifier une offre ou un appel au moteur {#specifying-an-offer-or-a-call-to-the-offer-engine}
+#### Définir une offre ou un appel au moteur d&#39;offres {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
 Après avoir configuré votre activité **Requête** :
 
@@ -102,11 +102,11 @@ Après avoir configuré votre activité **Requête** :
 1. Indiquez un identifiant ainsi qu&#39;un libellé pour la proposition qui sera ajoutée.
 1. Définissez la sélection de l&#39;offre. Deux options sont possibles :
 
-   * **[!UICONTROL Rechercher la meilleure offre dans une catégorie]** : cochez cette option et définissez les paramètres de l&#39;appel au moteur d&#39;offres (emplacement, catégorie ou thème(s), date de contact, nombre d&#39;offres à conserver). Le moteur calculera automatiquement la ou les offres à ajouter en fonction de ces paramètres. Il est conseillé de ne pas renseigner les champs **[!UICONTROL Catégorie]** et **[!UICONTROL Thèmes]** en même temps.
+   * **[!UICONTROL Rechercher la meilleure offre dans une catégorie]** : cochez cette option et définissez les paramètres d&#39;appel au moteur d&#39;offres (emplacement, catégorie ou thème(s), date de contact, nombre d&#39;offres à conserver). Le moteur calculera automatiquement la ou les offres à ajouter en fonction de ces paramètres. Nous vous recommandons de terminer l’une des opérations suivantes : **[!UICONTROL Catégorie]** ou le **[!UICONTROL Thème]** , plutôt que les deux en même temps.
 
       ![](assets/int_enrichment_offer3.png)
 
-   * **[!UICONTROL Une offre prédéfinie]** : cochez cette option et définissez un emplacement, une offre précise, ainsi qu&#39;une date de contact afin de directement paramétrer l&#39;offre que vous souhaitez ajouter, sans appeler le moteur d&#39;offres.
+   * **[!UICONTROL Une offre prédéfinie]** : cochez cette option et indiquez un emplacement, une offre spécifique et une date de contact afin de paramétrer directement l&#39;offre que vous souhaitez ajouter, sans appeler le moteur d&#39;offres.
 
       ![](assets/int_enrichment_offer4.png)
 
@@ -148,7 +148,7 @@ Par défaut, lorsque l&#39;activité **Enrichissement** est utilisée pour diffu
 
 Cependant, il est possible de stocker ces informations de la manière suivante :
 
-1. Créez un appel au moteur d&#39;offre dans une activité d&#39;enrichissement placée après une requête et avant une activité de diffusion. [En savoir plus](#specifying-an-offer-or-a-call-to-the-offer-engine)
+1. Créez un appel au moteur d&#39;offres dans une activité d&#39;enrichissement placée après une requête et avant une activité de diffusion. [En savoir plus](#specifying-an-offer-or-a-call-to-the-offer-engine)
 1. Dans la fenêtre principale de l&#39;activité, sélectionnez **[!UICONTROL Editer les données additionnelles]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
@@ -163,7 +163,7 @@ La diffusion stocke automatiquement le rang et le poids des offres. Ces informat
 
 ### Moteur d&#39;offres {#offer-engine}
 
-L&#39;activité **[!UICONTROL Moteur d&#39;offres]** vous permet également de définir un appel au moteur d&#39;offres en amont d&#39;une diffusion.
+Le **[!UICONTROL Moteur d&#39;offres]** vous permet également de définir un appel au moteur d&#39;offres avant la diffusion.
 
 ![](../assets/do-not-localize/book.png) Pour plus d&#39;informations sur l&#39;activité **Moteur d&#39;offres**, reportez-vous à la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html?lang=fr)
 
@@ -174,7 +174,7 @@ Cette activité fonctionne sur le même principe que l&#39;activité **Enrichiss
 Après avoir configuré votre activité **Requête** :
 
 1. Placez et ouvrez une activité **[!UICONTROL Moteur d&#39;offres]**.
-1. Renseignez les différents champs disponibles afin de définir les paramètres d&#39;appel au moteur (emplacement, catégorie ou thème(s), date de contact, nombre d&#39;offres à conserver). Le moteur calculera automatiquement la ou les offres à ajouter en fonction de ces paramètres.
+1. Renseignez les différents champs disponibles pour définir l&#39;appel aux paramètres du moteur d&#39;offres (emplacement, catégorie ou thème(s), date de contact, nombre d&#39;offres à conserver). Le moteur calculera automatiquement la ou les offres à ajouter en fonction de ces paramètres.
 
    >[!CAUTION]
    >

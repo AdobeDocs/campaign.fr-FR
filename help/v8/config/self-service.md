@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
-workflow-type: ht
-source-wordcount: '344'
-ht-degree: 100%
+source-git-commit: 50e138853b047c27b106401f007043a0fcb45f07
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 90%
 
 ---
 
@@ -26,26 +26,30 @@ Vous pouvez également utiliser le panneau de contrôle Campaign pour configurer
 
 ![](../assets/do-not-localize/book.png) Apprenez-en davantage dans la [documentation du panneau de contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target=&quot;_blank&quot;}.
 
->[!CAUTION]
-> Les fonctionnalités suivantes ne sont pas encore prises en charge avec Campaign v8 :
->
->* Gestion des sous-domaines
->* Gestion des certificats
-
->
-
-
 ## Comment accéder au panneau de contrôle ?
 
 Le panneau de contrôle est directement accessible à partir d&#39;Adobe Experience Cloud. Il est accessible uniquement aux utilisateurs Admin. [Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=fr){target=&quot;_blank&quot;} pour plus d’informations.
 
 ## FAQ sur le panneau de contrôle
 
-[Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=fr?lang=fr#control-panel){target=&quot;_blank&quot;} pour accéder au FAQ sur le panneau de contrôle Campaign.
+[Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=en#control-panel){target=&quot;_blank&quot;} pour accéder au FAQ sur le panneau de contrôle Campaign.
 
 ## Gestion SFTP
 
 Dans le panneau de contrôle, vous pouvez interagir avec tous les serveurs SFTP qui sont connectés aux instances Campaign auxquelles vous avez accès. Vous pouvez surveiller leur capacité de stockage, gérer l&#39;ajout des adresses IP à la liste autorisée et les clés SSH publiques. [Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=fr#sftp-management){target=&quot;_blank&quot;} pour plus d’informations.
+
+## Sous-domaines et certificats
+
+Découvrez comment surveiller vos sous-domaines et leurs certificats.
+
+* [Surveillance de vos sous-domaines](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html){target=&quot;_blank&quot;}
+* [Configuration d’un nouveau sous-domaine](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html){target=&quot;_blank&quot;}
+* [Surveillance des certificats SSL de vos sous-domaines](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=fr){target=&quot;_blank&quot;}
+
+## Suivi des performances
+
+Le panneau de contrôle propose plusieurs fonctionnalités pour vous aider à surveiller vos instances et à garantir des performances optimales. [Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=fr){target=&quot;_blank&quot;}
+
 
 ## Paramètres des instances
 

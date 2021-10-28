@@ -5,8 +5,8 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 780a29dab99ad2bda554134ca95c435b9e76b494
-workflow-type: ht
+source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
+workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 100%
 
@@ -24,7 +24,6 @@ Dans Adobe Campaign, les **destinataires** sont les profils par défaut ciblés 
 
 Les profils peuvent être regroupés dans des listes ou collectés en interrogeant la base de données.
 
-
 Pour renseigner des données de profil dans Campaign, vous pouvez :
 
 * [importer des fichiers de données](import.md) provenant d&#39;une source de données externe telle qu&#39;un système CRM ;
@@ -33,7 +32,6 @@ Pour renseigner des données de profil dans Campaign, vous pouvez :
 * saisir les profils manuellement à l&#39;aide de la console cliente, comme ci-dessous :
 
 ![](assets/create-profile.png)
-
 
 ![](../assets/do-not-localize/book.png) Découvrez comment gérer les profils dans la [documentation d&#39;Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/about-profiles.html?lang=fr){target=&quot;_blank&quot;}.
 
@@ -76,6 +74,7 @@ You can monitor the number of active profiles used on your instances directly fr
 
 ![](../assets/do-not-localize/book.png) For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 -->
+
 
 **Rubriques connexes**   dans la documentation Adobe Campaign Classic v7 :
 

@@ -5,14 +5,14 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: ht
-source-wordcount: '655'
-ht-degree: 100%
+source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
+workflow-type: tm+mt
+source-wordcount: '892'
+ht-degree: 86%
 
 ---
 
-# Créer des emplacements d&#39;offres{#creating-offer-spaces}
+# Création d&#39;emplacements{#creating-offer-spaces}
 
 Le contenu du catalogue d&#39;offres est paramétré dans des emplacements. Par défaut, le contenu peut contenir les champs suivants : **[!UICONTROL Titre]**, **[!UICONTROL URL de destination]**, **[!UICONTROL URL d&#39;image]**, **[!UICONTROL Contenu HTML]** et **[!UICONTROL Contenu texte]**. La séquence des champs est paramétrée dans l&#39;emplacement.
 
@@ -112,31 +112,30 @@ Pour ce faire, procédez comme suit :
 
    ![](assets/offer_update_status_002.png)
 
-<!--
-**Inbound interaction**
 
-The **[!UICONTROL Storage]** tab lets you define statuses for **proposed** and **accepted** offer propositions only. For inbound interaction, the status of offer propositions should be specified directly in the URL for calling the offer engine, rather than through the interface. This way, you will be able to specify which status to apply in other cases, for example if an offer proposition is rejected.
+**Interaction entrante**
+
+Le **[!UICONTROL Stockage]** vous permet de définir les états d’ **proposé** et **accepté** propositions d&#39;offres uniquement. Dans le cas d&#39;une interaction entrante, l&#39;état des propositions d&#39;offres doit être spécifié directement dans l&#39;URL d&#39;appel au moteur d&#39;offres, plutôt que par le biais de l&#39;interface. Ainsi, vous pourrez spécifier l&#39;état à appliquer dans d&#39;autres cas, par exemple si une proposition d&#39;offre est refusée.
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
 ```
 
-For instance, the proposition (identifier **40004**) that matches the **Home insurance** offer displayed on the **Neobank** site contains the following URL:
+Par exemple, la proposition (identifiant **40004**) correspondant à l&#39;offre **Assurance habitation** et diffusée sur la page du site **Neobank** contient l&#39;URL suivante :
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<40004>&st=<3>&r=<"http://www.neobank.com/insurance/subscribe.html">
 ```
 
-As soon as a visitor clicks the offer, and therefore the URL, the **[!UICONTROL Accepted]** status (value **3**) is applied to the proposition and the visitor is redirected to a new page of the **Neobank** site to take out the insurance contract.
+Dès lors qu&#39;un visiteur clique sur l&#39;offre, et donc sur l&#39;URL, le statut **[!UICONTROL Acceptée]**, (correspondant à la valeur **3**), est appliqué à la proposition et le visiteur est redirigé sur une nouvelle page du site **Neobank** pour souscrire à l&#39;assurance.
 
 >[!NOTE]
 >
->If you want to specify another status in the url (for example if an offer proposition is rejected), use the value corresponding to the desired status. Example: **[!UICONTROL Rejected]** = "5", **[!UICONTROL Presented]** = "1" and so on.
+>Si vous souhaitez appliquer un autre état dans l&#39;URL (par exemple, si une proposition d&#39;offre est refusée), utilisez la valeur correspondant à l&#39;état souhaité. Par exemple, **[!UICONTROL Refusée]** = &quot;5&quot;, **[!UICONTROL Présentée]** = &quot;1&quot;, etc.
 >
->Statuses and their values can be retrieved in the **[!UICONTROL Offer propositions (nms)]** data schema. For more on this, refer to [this page](../../configuration/using/data-schemas.md).
+>Les états et leur valeur peuvent être récupérés dans le schéma de données **[!UICONTROL Offer propositions (nms)]**. Voir à ce propos [cette page](../dev/create-schema.md).
 
-**Outbound interaction**
--->
+**Interaction sortante**
 
 Vous pouvez appliquer automatiquement l&#39;état **[!UICONTROL Intéressante]** à une proposition d&#39;offre lorsque la diffusion contient un lien. Ajoutez simplement la valeur **_urlType=&quot;11&quot;** au lien :
 
@@ -154,6 +153,7 @@ Dans le cas où le destinataire n&#39;est éligible à aucune offre, la prévisu
 
 ![](assets/offer_space_overview_001.png)
 
-<!--
-The preview can ignore contexts when they are restricted to a space. This is the case when the interaction schema has been extended to add fields referenced in a space using an inbound channel (for more on this, refer to Extension example.
--->
+
+L’aperçu peut ignorer les contextes lorsqu’ils sont limités à un espace. C&#39;est le cas lorsque le schéma d&#39;interaction a été étendu pour ajouter les champs référencés dans un espace à l&#39;aide d&#39;un canal entrant.
+
+![](../assets/do-not-localize/book.png)  Voir à ce propos cet exemple dans la section [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target=&quot;_blank&quot;}.

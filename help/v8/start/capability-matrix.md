@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
-workflow-type: ht
-source-wordcount: '940'
+source-git-commit: 95e1aff491257faeda8e12bf29aa95045901c8b2
+workflow-type: tm+mt
+source-wordcount: '933'
 ht-degree: 100%
 
 ---
@@ -93,8 +93,6 @@ Veuillez noter que certaines fonctionnalités ne sont pas disponibles dans cette
 
 * Marketing Resource Management (Gestion des ressources marketing)
 * Marketing distribué
-* Gestion des offres entrantes (module Interaction)
-* Optimisation des campagnes
 * Gestion de la réaction
 * Modèles de déploiement hybrides/On-premise
 * Canal Twitter

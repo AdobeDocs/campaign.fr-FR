@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 780a29dab99ad2bda554134ca95c435b9e76b494
-workflow-type: ht
-source-wordcount: '1589'
-ht-degree: 100%
+source-git-commit: d21dc1adc46121e5c015deed7ddb84ec6a4ec76f
+workflow-type: tm+mt
+source-wordcount: '1735'
+ht-degree: 91%
 
 ---
 
@@ -52,7 +52,7 @@ Les activités de workflow sont regroupées par catégorie. Les quatre catégori
 * [Activités de ciblage](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html?lang=fr){target=&quot;_blank&quot;} : requête, lecture de liste, enrichissement, union, etc.
 * [Activités de contrôle du flux](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/about-flow-control-activities.html?lang=fr){target=&quot;_blank&quot;} : planificateur, branchement, alerte, signal externe, etc.
 * [Activités d&#39;action](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html?lang=fr){target=&quot;_blank&quot;} : diffusions cross-canal, code JavaScript, activités CRM, mise à jour d&#39;agrégat, etc.
-* [Activités d&#39;événement](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html?lang=fr){target=&quot;_blank&quot;} : transfert de fichiers, téléchargement web, etc.
+* [Activités d&#39;événement](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html){target=&quot;_blank&quot;} : transfert de fichiers, téléchargement web, etc.
 
 
 ### Activité Modifier la source de données {#change-data-source-activity}
@@ -88,6 +88,28 @@ Pour utiliser l’activité **[!UICONTROL Modifier la source de données]** :
    Double-cliquez sur votre activité et sélectionnez **[!UICONTROL Compte externe FDA actif]** puis le compte externe correspondant.
 
 1. Vous pouvez maintenant démarrer votre workflow.
+
+## Gestion des entrepôts virtuels {#warehouse}
+
+Après avoir créé votre workflow, vous pouvez accéder à d’autres options à l’aide de la **[!UICONTROL Propriétés]** pour effectuer d’autres paramétrages.
+
+![](../assets/do-not-localize/book.png) En savoir plus sur **Propriétés du workflow** in [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/workflow-properties.html?lang=en){target=&quot;_blank&quot;}
+
+Dans la **[!UICONTROL Exécution]** de votre workflow. **[!UICONTROL Propriétés]**, vous pouvez choisir de lier votre workflow à différents entrepôts et optimiser la gestion de votre charge de travail. Pour plus d’informations sur **Entrepôts**, reportez-vous à la section [Documentation du Snowflake](https://docs.snowflake.com/en/user-guide/warehouses-overview.html).
+
+![](assets/warehouse.png)
+
+Selon l’objectif de votre workflow, vous pouvez choisir parmi les trois entrepôts suivants parmi les **[!UICONTROL Entrepôt]** menu déroulant :
+
+* **[!UICONTROL Par défaut]** / **[!UICONTROL Campagne]**: défini par défaut lors de la création d’un nouveau workflow.
+
+* **[!UICONTROL Importer/Exporter]**: doit être défini avec des workflows d’import ou d’export afin d’optimiser les performances de vos activités.
+
+* **[!UICONTROL La campagne éclate]**: doit être défini avec les workflows de campagne ou de diffusions afin d’optimiser le temps de traitement de vos diffusions.
+
+>[!NOTE]
+>
+>Le **[!UICONTROL Système]** L’entrepôt n’est défini que pour les workflows intégrés.
 
 ## Configuration de campagnes récurrentes
 

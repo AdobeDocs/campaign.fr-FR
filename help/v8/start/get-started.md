@@ -5,16 +5,16 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
-workflow-type: ht
-source-wordcount: '899'
-ht-degree: 100%
+source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
+workflow-type: tm+mt
+source-wordcount: '898'
+ht-degree: 97%
 
 ---
 
 # Prise en main d&#39;Adobe Campaign{#gs-ac-v8}
 
-Adobe Campaign propose une plateforme qui permet de concevoir des expériences client cross-canal ainsi qu&#39;un environnement pour l&#39;orchestration visuelle de campagnes, la gestion d&#39;interactions en temps réel et l&#39;exécution cross-canal.
+Adobe Campaign offre une plateforme pour concevoir des expériences client cross-canal et un environnement pour l’orchestration visuelle des campagnes, la gestion des interactions en temps réel et l’exécution cross-canal.
 
 En utilisant Campaign, vous pouvez :
 
@@ -36,7 +36,7 @@ Dans Adobe Campaign, les destinataires sont les profils par défaut ciblés pou
 
 ## Segmentation ciblée {#targeted-segmentation}
 
-Pour vous permettre de mettre en place des offres hautement ciblées et différenciées, Adobe Campaign intègre des fonctionnalités de ciblage et de segmentation simples d&#39;utilisation. Grâce aux fonctionnalités d&#39;analyse descriptive, vous avez la possibilité d&#39;analyser les informations en amont et en aval de vos campagnes marketing. D&#39;autre part, les fonctionnalités de gestion de filtres et du requêteur vous permettent de filtrer les populations d’abonnés, ainsi que d’échantillonner ou de créer des groupes cibles en fonction d’un nombre de critères illimité.
+Pour vous permettre de mettre en place des offres hautement ciblées et différenciées, Adobe Campaign intègre des fonctionnalités de ciblage et de segmentation simples d&#39;utilisation. Grâce aux fonctionnalités d’analyse descriptive, vous avez la possibilité d’analyser les informations en amont et en aval de vos campagnes marketing. D’autre part, les fonctionnalités de gestion de filtres et l’éditeur graphique de requête vous permettent de filtrer les populations d’abonnés, ainsi que d’échantillonner ou de créer des groupes cibles en fonction d&#39;un nombre de critères illimité.
 
 Les fonctionnalités avancées de Data Management proposent une extension des capacités de traitement des données. Elles permettent de simplifier et d&#39;optimiser le processus de ciblage en incluant des données non modélisées dans le datamart.
 

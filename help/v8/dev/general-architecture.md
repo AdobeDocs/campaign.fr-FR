@@ -2,10 +2,10 @@
 title: Architecture générale
 description: En savoir plus sur l’architecture et les composants de Campaign
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
-workflow-type: ht
+source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
+workflow-type: tm+mt
 source-wordcount: '1217'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -117,7 +117,7 @@ Ce processus maintient les statistiques du nombre de connexions, de messages env
 
 La base de données cloud d&#39;Adobe Campaign repose sur [!DNL Snowflake], qui contient les données fonctionnelles (profils, abonnements, contenu, etc.), les données techniques (traitement et journaux de diffusion, logs de tracking, etc.) ainsi que les données de travail (achats, leads) pour la solution. En outre, tous les composants Adobe Campaign communiquent avec la base de données afin d&#39;exécuter leurs tâches spécifiques.
 
-Les clients peuvent déployer Adobe Campaign à l&#39;aide de la base de données et des schémas prédéfinis. Si nécessaire, cet environnement prédéfini peut être étendu. Toutes les données du datamart sont accessibles par Adobe Campaign via des appels SQL. Adobe Campaign fournit également un ensemble complet d&#39;outils Extract Transform and Load (ETL) pour importer et exporter des données dans et en dehors du système.
+Les clients peuvent déployer Adobe Campaign à l’aide de la base de données et des schémas prédéfinis. Si nécessaire, cet environnement prédéfini peut être étendu. Toutes les données du datamart sont accessibles par Adobe Campaign via des appels SQL. Adobe Campaign fournit également un ensemble complet d&#39;outils Extract Transform and Load (ETL) pour importer et exporter des données dans et en dehors du système.
 
 ![](assets/data-flow-diagram.png)
 

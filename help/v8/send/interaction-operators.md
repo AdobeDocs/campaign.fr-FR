@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
-source-git-commit: 94fc2739c538f3aa8b11e0ea69d08f1bfffb5d32
-workflow-type: ht
-source-wordcount: '383'
-ht-degree: 100%
+source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 91%
 
 ---
 
@@ -31,7 +31,7 @@ Les droits attribués au Chargé d&#39;offres lui permettent d&#39;effectuer les
 
 * Modifier des environnements **[!UICONTROL En édition]**.
 * Consulter des environnements **[!UICONTROL En ligne]**.
-* Paramétrer des fonctions d&#39;administration (emplacements et filtres prédéfinis).
+* Configurez les fonctions d’administration (espaces et filtres prédéfinis).
 * Créer et modifier des catégories.
 * Créer des offres.
 * Paramétrer l&#39;éligibilité des offres.
@@ -47,7 +47,7 @@ Notez que si des offres sont utilisées dans le workflow, l’opérateur doit ê
 
 1. Création d’un opérateur.
 
-   ![](../assets/do-not-localize/book.png) Les étapes de création d&#39;un opérateur dans Campaign sont présentées dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html?lang=fr)
+   ![](../assets/do-not-localize/book.png) Les étapes de création d&#39;un opérateur dans Campaign sont présentées dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. Dans la fenêtre **[!UICONTROL Groupes et droits nommés]**, cliquez sur **[!UICONTROL Ajouter]** et sélectionnez le groupe **[!UICONTROL Chargé de diffusion]**.
 
@@ -59,7 +59,7 @@ Les droits attribués aux chargés de diffusion leur permettent d’effectuer le
 
    >[!NOTE]
    >
-   >Le **chargé de diffusion** ne peut valider une offre que s’il été défini comme validant lors du paramétrage de l’offre.
+   >**Chargés de diffusion** ne peuvent valider une offre que si elle a été déclarée en tant que validante dans le paramétrage de l&#39;offre.
 
 ## Matrice des autorisations par opérateur d’interaction {#recap-of-rights-according-to-operator}
 
@@ -96,7 +96,7 @@ Les droits attribués aux chargés de diffusion leur permettent d’effectuer le
    <td> Lecture<br /> </td> 
   </tr> 
   <tr> 
-   <td> Filtres prédéfinis d'offres<br /> </td> 
+   <td> filtres d’offres prédéfinis<br /> </td> 
    <td> Lecture / Ecriture<br /> </td> 
    <td> Lecture<br /> </td> 
   </tr> 
@@ -156,7 +156,7 @@ Les droits attribués aux chargés de diffusion leur permettent d’effectuer le
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Filtres prédéfinis d'offres<br /> </td> 
+   <td> filtres d’offres prédéfinis<br /> </td> 
    <td> Lecture<br /> </td> 
    <td> Lecture<br /> </td> 
   </tr> 
