@@ -6,10 +6,10 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: 0061c536ff309d86061548b98d2c6e1124e01a0e
+source-git-commit: 4ce21dda9516a881cce39c94454d5ac7b43142a9
 workflow-type: tm+mt
-source-wordcount: '1604'
-ht-degree: 50%
+source-wordcount: '1581'
+ht-degree: 51%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 50%
 
 Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs de la **dernière version de Campaign Classic v8**.
 
-## Version 8.2.1 {#release-8-2-1}
+## Version 8.2.8 {#release-8-2-8}
 
 _28 octobre 2021_
 
@@ -68,7 +68,6 @@ _28 octobre 2021_
 **Améliorations**
 
 * Le connecteur du Snowflake a été amélioré en termes de performances.
-* Dans le fichier de configuration du serveur (serverConf.xml), vous pouvez maintenant définir un temps d’attente, par schéma, entre les mises à jour et les réplications de validation à la volée.
 * À des fins de surveillance et de test, les journaux d’audit de la variable **[!UICONTROL Réplication des données d’évaluation]** workflow inclut désormais le nombre d’enregistrements envoyés à la base de données FFDA (Full Federated Data Access).
 * L&#39;activité Code SQL permet désormais de choisir dans quelle base de données sera stocké le script SQL : la source de données par défaut ou le compte externe FDA principal choisi.
 * Un ensemble d’entrepôts prédéfinis est désormais disponible et peut être utilisé pour exécuter diverses requêtes en parallèle, telles que la segmentation, l’ETL ou les pics. [En savoir plus](../config/workflows.md)
