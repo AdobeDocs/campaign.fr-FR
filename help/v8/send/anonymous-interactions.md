@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: Présenter des offres aux profils anonymes (interaction entrante)
-description: Découvrez comment présenter des offres à des profils anonymes
+title: Présentation dʼoffres aux profils anonymes (interaction entrante)
+description: Découvrez comment présenter des offres aux profils anonymes
 source-git-commit: c19336c84114a0c81563c4d5ae760330d3b284cb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '433'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 68%
 
 ## Environnement pour les interactions anonymes {#environment-for-anonymous-interactions}
 
-Par défaut, Campaign **Interaction** est livré avec un environnement préconfiguré pour cibler la table des destinataires intégrée (offres identifiées). Si vous devez cibler une autre table, une table des visiteurs pour les offres anonymes ou une table de destinataires personnalisée par exemple, vous devez utiliser l&#39;assistant de mapping de ciblage pour créer l&#39;environnement. [En savoir plus sur les environnements](interaction-env.md).
+Par défaut, le module **Interaction** de Campaign comprend un environnement préconfiguré pour cibler la table des destinataires intégrée (offres identifiées). Si vous devez cibler une autre table, par exemple, une table des visiteurs pour les offres anonymes ou une table des destinataires personnalisée, vous devez utiliser lʼassistant de mapping de ciblage pour créer lʼenvironnement. [En savoir plus sur les environnements](interaction-env.md).
 
 Lorsque vous créez l&#39;environnement anonyme via l&#39;assistant de création de mapping, la case **[!UICONTROL Environnement dédié aux interactions anonymes entrantes]** est automatiquement cochée dans l&#39;onglet **[!UICONTROL Général]** de l&#39;environnement.
 
@@ -29,17 +29,17 @@ Le champ **[!UICONTROL Dossier des visiteurs]** s&#39;affiche. Il est automatiqu
 
 ## Catalogue d&#39;offres pour interactions anonymes {#offer-catalog-for-anonymous-interactions}
 
-Comme les interactions sortantes, les interactions entrantes sont organisées au sein d&#39;un catalogue d&#39;offres composé de catégories et d&#39;offres.
+Tout comme les interactions sortantes, les interactions entrantes sont organisées au sein dʼun catalogue dʼoffres composé de catégories et dʼoffres.
 
-Pour créer des catégories et des espaces, procédez de la même manière que pour les visiteurs identifiés. Voir [Créer une catégorie d&#39;offres](interaction-offer-catalog.md#creating-offer-categories) et [Créer un environnement d&#39;offres](interaction-env.md#creating-an-offer-environment)).
+Pour créer les catégories et emplacements, procédez de la même manière que dans le cas de visiteurs identifiés. Consultez les sections [Création dʼune catégorie dʼoffres](interaction-offer-catalog.md#creating-offer-categories) et [Création dʼun environnement dʼoffres](interaction-env.md#creating-an-offer-environment).
 
 ## Les visiteurs anonymes {#anonymous-visitors}
 
-Les visiteurs anonymes peuvent être soumis à un processus d&#39;identification par cookies intervenant au moment de la connexion. Cette reconnaissance implicite s&#39;effectue à partir de l&#39;historique de navigation du visiteur.
+Les visiteurs anonymes peuvent être soumis à un processus dʼidentification par cookies intervenant au moment de la connexion. Cette reconnaissance implicite sʼeffectue à partir de lʼhistorique de navigation du visiteur.
 
-Au cours de cette étape, une comparaison est effectuée entre les données récupérées par les cookies et celles contenues dans votre base de données. Dans certains cas, les visiteurs sont reconnus (ils sont alors identifiés implicitement), dans d’autres cas, ils ne sont pas reconnus (et restent donc anonymes).
+Ce processus consiste à comparer les données récupérées par les cookies avec celles de votre base de données. Dans certains cas, les visiteurs sont reconnus (ils sont alors identifiés implicitement), dans dʼautres cas, ils ne sont pas reconnus (et restent donc anonymes).
 
-Afin d&#39;effectuer cette analyse, au niveau de l&#39;emplacement, cochez la case **[!UICONTROL Identifier implicitement l&#39;individu à partir de son historique de navigation]**.
+Afin dʼeffectuer cette analyse, au niveau de lʼemplacement, cochez la case **[!UICONTROL Identifier implicitement lʼindividu à partir de son historique de navigation]**.
 
 ![](assets/identification_anonymous_visitors.png)
 
