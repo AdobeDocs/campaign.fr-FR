@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
 source-git-commit: 50e138853b047c27b106401f007043a0fcb45f07
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '410'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Le panneau de contrôle est directement accessible à partir d&#39;Adobe Experi
 
 ## FAQ sur le panneau de contrôle
 
-[Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=en#control-panel){target=&quot;_blank&quot;} pour accéder au FAQ sur le panneau de contrôle Campaign.
+[Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=fr#control-panel){target=&quot;_blank&quot;} pour accéder au FAQ sur le panneau de contrôle Campaign.
 
 ## Gestion SFTP
 
@@ -42,8 +42,8 @@ Dans le panneau de contrôle, vous pouvez interagir avec tous les serveurs SFTP
 
 Découvrez comment surveiller vos sous-domaines et leurs certificats.
 
-* [Surveillance de vos sous-domaines](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html){target=&quot;_blank&quot;}
-* [Configuration d’un nouveau sous-domaine](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html){target=&quot;_blank&quot;}
+* [Surveillance de vos sous-domaines](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html?lang=fr){target=&quot;_blank&quot;}
+* [Configuration d’un nouveau sous-domaine](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=fr){target=&quot;_blank&quot;}
 * [Surveillance des certificats SSL de vos sous-domaines](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=fr){target=&quot;_blank&quot;}
 
 ## Suivi des performances
