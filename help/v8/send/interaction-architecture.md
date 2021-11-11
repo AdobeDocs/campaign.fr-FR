@@ -1,59 +1,59 @@
 ---
-title: Présentation de l'architecture de l'interaction Campaign
-description: Principes de base de l'architecture de l'interaction Campaign
+title: Compréhension de lʼarchitecture des interactions dans Campaign
+description: Notions de base sur lʼarchitecture des interactions dans Campaign
 feature: Overview
 role: Data Engineer
 level: Beginner
 source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1328'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
-# Présentation des environnements et de l&#39;architecture d&#39;Interaction Campaign
+# Compréhension des environnements et de lʼarchitecture des interactions dans Campaign
 
 ## Environnements {#environments}
 
-Pour chaque dimension de ciblage utilisée dans le cadre de la gestion des offres existe un duo d&#39;environnements :
+Pour chaque dimension de ciblage utilisée dans le cadre de la gestion des offres existe un duo dʼenvironnements :
 
-* A **design** environnement dans lequel le chargé d&#39;offres s&#39;occupe de créer et catégoriser des offres, de les éditer et de lancer le processus de validation afin qu&#39;elles puissent être utilisées. Les règles pour chaque catégorie, les emplacements sur lesquels les offres peuvent être présentées et les filtres prédéfinis utilisés pour définir l&#39;éligibilité d&#39;une offre sont également définis dans cet environnement.
+* Un environnement **en édition**, dans lequel le chargé dʼoffre sʼoccupe de créer et catégoriser les offres, de les modifier, de lancer le processus de validation afin quʼelles puissent être utilisées. Dans cet environnement sont également définis les règles propres à chaque catégorie, les emplacements sur lesquels les offres peuvent être présentées et les filtres prédéfinis utilisables pour définir lʼéligibilité dʼune offre.
 
-   Les catégories peuvent également être publiées manuellement dans l&#39;environnement en ligne.
+   Les catégories peuvent également être publiées manuellement dans lʼenvironnement en ligne.
 
-   Le processus de validation des offres est détaillé [dans cette section](interaction-offer.md#approve-offers).
+   La validation des offres est détaillée [dans cette section](interaction-offer.md#approve-offers).
 
-* A **live** environnement dans lequel les offres validées de l&#39;environnement en édition, ainsi que les différents emplacements, filtres, catégories et règles paramétrés dans l&#39;environnement en édition, sont tous disponibles. Lors d&#39;un appel au moteur d&#39;offres, le moteur utilisera toujours les offres de l&#39;environnement en ligne.
+* Un environnement **en ligne**, dans lequel se trouvent les offres validées de lʼenvironnement en édition, ainsi que les différents emplacements, filtres, catégories et règles paramétrés dans lʼenvironnement en édition. Lors dʼun appel au moteur dʼoffres, ce dernier utilisera toujours les offres de lʼenvironnement en ligne.
 
-Une offre n&#39;est déployée que sur les emplacements sélectionnés lors de la validation. Ainsi, une offre peut être en ligne mais non utilisable sur un emplacement lui aussi en ligne.
+Une offre nʼest déployée que sur les emplacements sélectionnés lors de la validation. Ainsi, une offre peut être en ligne mais non utilisable sur un emplacement lui aussi en ligne.
 
 ## Interactions entrantes et sortantes {#interaction-types}
 
-Le module Interaction d&#39;Adobe Campaign propose deux types d&#39;interactions :
+Le module Interaction dʼAdobe Campaign propose deux types dʼinteractions :
 
-* **entrant** interactions, initiées par un contact. [Apprenez-en davantage](interaction-present-offers.md)   
-* **sortant** interactions, initiées par un responsable de diffusion de campagne. [Apprenez-en davantage](interaction-send-offers.md)   
+* interactions **entrantes**, initiées par un contact. [En savoir plus](interaction-present-offers.md)
+* interactions **sortantes**, initiées par un chargé de diffusion Campaign. [En savoir plus](interaction-send-offers.md)
 
-Ces deux types d’interactions peuvent être réalisés dans les **mode unitaire** (l’offre est calculée pour un seul contact), ou dans **mode batch** (l&#39;offre est calculée pour un ensemble de contacts). En règle générale, les interactions entrantes sont effectuées en mode unitaire et les interactions sortantes en mode batch. Toutefois, il peut y avoir certaines exceptions, car [messages transactionnels](transactional.md) par exemple, lorsque l&#39;interaction sortante est réalisée en mode unitaire.
+Ces deux types dʼinteractions peuvent être réalisés soit en **mode unitaire** (lʼoffre est calculée pour un seul contact), soit en **mode batch** (lʼoffre est calculée pour un ensemble de contacts). Généralement, les interactions entrantes sont réalisées en mode unitaire et les interactions sortantes en mode batch. Néanmoins, des exceptions peuvent exister, par exemple pour des [messages transactionnels](transactional.md), où lʼinteraction sortante est réalisée en mode unitaire.
 
-Dès qu&#39;une offre peut ou doit être présentée (selon les paramétrages réalisés), le moteur d&#39;offres joue le rôle d&#39;intermédiaire : il calcule automatiquement la meilleure offre possible pour un contact parmi celles disponibles en combinant les données reçues sur le contact et les différentes règles qui peuvent être appliquées comme spécifié dans l&#39;application.
+Dès lors quʼune offre peut ou doit être présentée (en fonction des paramétrages réalisés), le moteur dʼoffre joue le rôle dʼintermédiaire : il calcule automatiquement la meilleure offre possible pour un contact parmi celles disponibles, en combinant les données recueillies sur le contact et les différentes règles applicables définies dans lʼapplication.
 
 ![](assets/architecture_interaction2.png)
 
 ## Architecture répartie
 
-Pour être en mesure de prendre en charge l’évolutivité et de fournir un service 24/7 sur le canal entrant, la variable **Interaction** est implémenté dans une architecture répartie. Ce type d’architecture est déjà utilisé avec [Message Center](../dev/architecture.md#transac-msg-archi) et est composé de plusieurs instances :
+Pour être en mesure dʼassurer l’évolutivité et dʼoffrir un service 24h/24, 7j/7 sur le canal entrant, le module **Interaction** est implémenté dans une architecture distribuée. Ce type dʼarchitecture est déjà utilisé avec [Message Center](../dev/architecture.md#transac-msg-archi) et est constitué de plusieurs instances :
 
 * une ou plusieurs instances de pilotage dédiées au canal sortant et contenant la base marketing et l&#39;environnement en édition
 * une ou plusieurs instances d&#39;exécution dédiées au canal entrant
 
 ![](assets/interaction_powerbooster_schema.png)
 
-Les instances de pilotage sont dédiées au canal entrant et contiennent la version en ligne du catalogue. Chaque instance d’exécution est indépendante et dédiée à un segment de contact (par exemple, une instance d’exécution par pays). Les appels au moteur d&#39;offres doivent être effectués directement sur l&#39;exécution (une URL spécifique par instance d&#39;exécution). La synchronisation entre les instances n&#39;étant pas automatique, les interactions d&#39;un même contact doivent être envoyées via la même instance.
+Les instances de pilotage sont dédiées au canal entrant et contiennent la version en ligne du catalogue. Chaque instance dʼexécution est indépendante et consacrée à un segment de contact (par exemple, une instance dʼexécution par pays). Les appels au moteur dʼoffre doivent être effectués directement sur lʼinstance dʼexécution (une URL spécifique par instance dʼexécution). Étant donné que la synchronisation entre les instances nʼest pas automatique, les interactions dʼun même contact doivent être envoyées à travers la même instance.
 
 ### Synchronisation {#synchronization}
 
-La synchronisation des offres s&#39;effectue par packages. Sur les instances d&#39;exécution, tous les objets du catalogue sont préfixés par le nom du compte externe. Cela permet le support de plusieurs instances de pilotage (instances de développement et de production par exemple) sur une même instance d&#39;exécution.
+La synchronisation des offres sʼeffectue par packages. Sur les instances dʼexécution, tous les objets du catalogue ont comme préfixe le nom du compte externe. Cela permet la prise en charge de plusieurs instances de pilotage (instances de développement et de production par exemple) sur une même instance dʼexécution.
 
 >[!CAUTION]
 >
@@ -67,7 +67,7 @@ Les offres supprimées dans l&#39;environnement en édition sont désactivées s
 
 Un workflow est créé pour chaque compte externe et environnement pour la synchronisation des propositions. La fréquence de synchronisation peut être ajustée pour chaque environnement et compte externe.
 
-Vous devez connaître les mécanismes de synchronisation suivants :
+Vous devez prendre en compte les mécanismes de synchronisation suivants :
 
 * Si vous utilisez la fonction de basculement (fall back) d&#39;un environnement anonyme vers un environnement identifié, ces deux environnements doivent être sur la même instance d&#39;exécution.
 * La synchronisation entre plusieurs instances d&#39;exécution ne s&#39;effectue pas en temps réel. Les interactions d&#39;un même contact doivent être envoyées vers une même instance. L&#39;instance de pilotage doit être dédiée au canal sortant (pas de temps réel).
@@ -77,19 +77,19 @@ Vous devez connaître les mécanismes de synchronisation suivants :
 
 ### Configuration des packages {#packages-configuration}
 
-Les éventuelles extensions de schémas directement liés à **Interaction** (offres, propositions, destinataires, etc.) doivent être déployées sur les instances d&#39;exécution.
+Les éventuelles extensions de schémas directement liées à **Interaction** (offres, propositions, destinataires, etc.) doivent être déployées sur les instances dʼexécution.
 
-Le **Interaction** est installé sur toutes les instances (pilotage et exécution). Deux packages supplémentaires sont disponibles : un package pour les instances de pilotage, et l&#39;autre pour chaque instance d&#39;exécution.
+Le package **Interaction** est installé sur toutes les instances (de pilotage et dʼexécution). Deux packages supplémentaires sont disponibles : lʼun pour les instances de pilotage et lʼautre pour chaque instance dʼexécution.
 
 >[!NOTE]
 >
->Lors de l’installation du package, la variable **long** des champs de type **nms:proposition** table telle que l’identifiant de proposition, devenir **int64** saisissez des champs. Ce type de données est présenté dans la section [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=en#mapping-the-types-of-adobe-campaign-dbms-data){target=&quot;_blank&quot;}.
+>Lors de lʼinstallation du package, les champs de type **long** de la table **nms:proposition** tels que lʼidentifiant de la proposition, deviennent des champs de type **int64**. Ce type de données est détaillé dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=fr#mapping-the-types-of-adobe-campaign-dbms-data){target=&quot;_blank&quot;}.
 
-La durée de conservation des données est paramétrée sur chaque instance (via la fonction **[!UICONTROL Purge des données]** dans l&#39;assistant de déploiement). Sur les instances d&#39;exécution, cette période doit correspondre à la profondeur historique nécessaire au calcul des règles de typologie (période glissante) et aux règles d&#39;éligibilité.
+La durée de conservation des données est configurée sur chaque instance (via la fenêtre **[!UICONTROL Purge des données]** dans lʼassistant de déploiement). Sur les instances dʼexécution, cette période doit correspondre à la profondeur historique nécessaire au calcul des règles de typologie (période glissante) et dʼéligibilité.
 
-Sur les instances de pilotage :
+Sur les instances de pilotage :
 
-1. Créez un compte externe par instance d&#39;exécution :
+1. Créez un compte externe par instance dʼexécution :
 
    ![](assets/interaction_powerbooster1.png)
 
@@ -142,7 +142,7 @@ L&#39;option suivante est disponible sur les instances d&#39;exécution :
 
 ### Installation des packages {#packages-installation}
 
-Si votre instance n’avait pas précédemment le paramètre **Interaction** , aucune migration n’est nécessaire. Par défaut, la table des propositions sera en 64 bits une fois les packages installés.
+Si votre instance ne possédait pas le package **Interaction** auparavant, aucune migration nʼest nécessaire. Par défaut, la table des propositions sera en 64 bits une fois les packages installés.
 
 >[!CAUTION]
 >
@@ -156,9 +156,9 @@ Si votre instance n’avait pas précédemment le paramètre **Interaction** , a
 >Si vous avez effectué des paramétrages spécifiques dans la table des propositions, adaptez les requêtes en conséquence.
 
 
-Il existe deux méthodes :
+Deux méthodes sont disponibles :
 
-**Table de travail** (recommandé)
+**Table de travail** (recommandée)
 
 ```
 CREATE TABLE NmsPropositionRcp_tmp AS SELECT * FROM nmspropositionrcp WHERE 0=1;
