@@ -6,13 +6,13 @@ role: Data Engineer
 level: Beginner
 exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
 source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '892'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# Création d&#39;emplacements{#creating-offer-spaces}
+# Création d’emplacements{#creating-offer-spaces}
 
 Le contenu du catalogue d&#39;offres est paramétré dans des emplacements. Par défaut, le contenu peut contenir les champs suivants : **[!UICONTROL Titre]**, **[!UICONTROL URL de destination]**, **[!UICONTROL URL d&#39;image]**, **[!UICONTROL Contenu HTML]** et **[!UICONTROL Contenu texte]**. La séquence des champs est paramétrée dans l&#39;emplacement.
 
@@ -115,7 +115,7 @@ Pour ce faire, procédez comme suit :
 
 **Interaction entrante**
 
-Le **[!UICONTROL Stockage]** vous permet de définir les états d’ **proposé** et **accepté** propositions d&#39;offres uniquement. Dans le cas d&#39;une interaction entrante, l&#39;état des propositions d&#39;offres doit être spécifié directement dans l&#39;URL d&#39;appel au moteur d&#39;offres, plutôt que par le biais de l&#39;interface. Ainsi, vous pourrez spécifier l&#39;état à appliquer dans d&#39;autres cas, par exemple si une proposition d&#39;offre est refusée.
+L&#39;onglet **[!UICONTROL Stockage]** permet de définir les statuts des propositions d&#39;offre **présentées** et **acceptées** uniquement. Dans le cas d’une interaction entrante, vous devez préciser directement le statut de la proposition d’offre dans l’URL d&#39;appel du moteur d’offre plutôt que dans l’interface. Vous serez ainsi en mesure de spécifier le statut à appliquer dans d’autres cas, par exemple si une proposition d’offre est rejetée.
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
@@ -154,6 +154,6 @@ Dans le cas où le destinataire n&#39;est éligible à aucune offre, la prévisu
 ![](assets/offer_space_overview_001.png)
 
 
-L’aperçu peut ignorer les contextes lorsqu’ils sont limités à un espace. C&#39;est le cas lorsque le schéma d&#39;interaction a été étendu pour ajouter les champs référencés dans un espace à l&#39;aide d&#39;un canal entrant.
+La prévisualisation peut ne pas tenir compte des contextes lorsqu’ils sont limités à un emplacement. C’est le cas lorsque le schéma d’interaction a été étendu de façon à ajouter des champs qui sont référencés dans un emplacement utilisant un canal entrant.
 
-![](../assets/do-not-localize/book.png)  Voir à ce propos cet exemple dans la section [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Pour en savoir plus à ce sujet, consultez cet exemple dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=fr){target=&quot;_blank&quot;}.
