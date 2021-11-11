@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
 source-git-commit: 87c3f19cec5a756983def344620a1964b95a20d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '952'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ Pour créer un poids dans une offre, procédez comme suit :
 
    >[!NOTE]
    >
-   >Si une cible est éligible à plusieurs poids pour une offre sélectionnée, le moteur garde le meilleur poids (le plus élevé). Lors de l&#39;appel au moteur d&#39;offres, une offre est sélectionnée au maximum une fois par contact.
+   >Si une cible est éligible à plusieurs poids pour une offre sélectionnée, le moteur garde le meilleur poids (le plus élevé). Lors dʼun appel au moteur dʼoffres, une offre ne sort quʼune seule fois maximum par contact.
 
 ### Résumé des règles d&#39;éligibilité d&#39;une offre {#a-summary-of-offer-eligibility-rules}
 
@@ -192,7 +192,7 @@ Campaign vous permet de contrôler le flux des propositions d&#39;offres à l&#3
 
 ## Simulation de l&#39;offre
 
-Le module **Simulation** vous permet de tester la répartition des offres d&#39;une catégorie ou d&#39;un environnement avant de lancer votre proposition auprès de vos destinataires.
+Le module **Simulation** vous permet de tester la répartition des offres dʼune catégorie ou dʼun environnement avant de lancer votre proposition auprès de vos destinataires.
 
 La simulation prend en compte les contextes et les règles d&#39;éligibilité précédemment appliqués aux offres ainsi que leurs règles de présentation. Il est ainsi possible de tester et d&#39;affiner différentes versions de votre proposition sans utiliser réellement une offre ou solliciter trop ou trop peu une cible, puisque la simulation n&#39;a aucun impact sur les destinataires ciblés.
 
