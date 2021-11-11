@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -74,8 +74,8 @@ Vous pouvez ainsi :
 
 * Insérer des champs de personnalisation dynamiques.
    ![](../assets/do-not-localize/book.png) Découvrez comment utiliser les champs de personnalisation dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-fields.html?lang=fr).{target=&quot;_blank&quot;}
-* insérer des blocs de personnalisation prédéfinis ;
-   ![](../assets/do-not-localize/book.png) Découvrez en quoi consiste un bloc de personnalisation ainsi que son fonctionnement dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-blocks.html?lang=fr){target=&quot;_blank&quot;}
+* Insérez des blocs de personnalisation prédéfinis.
+   ![](../assets/do-not-localize/book.png) Découvrez en quoi consiste un bloc de personnalisation ainsi que son fonctionnement dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-blocks.html?lang=fr).
 * Créer du contenu conditionnel.
    ![](../assets/do-not-localize/book.png) Découvrez comment insérer du contenu conditionnel dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/conditional-content.html?lang=fr).{target=&quot;_blank&quot;}
 
@@ -100,6 +100,6 @@ La surveillance de vos diffusions après leur envoi est une étape clé pour vou
 
 * [Bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=fr){target=&quot;_blank&quot;}
 
-* [Test et envoi d’un e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html){target=&quot;_blank&quot;}
+* [Test et envoi d’un e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html?lang=fr){target=&quot;_blank&quot;}
 
 * [Envoi de bons à tirer](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target=&quot;_blank&quot;}
