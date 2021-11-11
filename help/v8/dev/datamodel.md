@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
 source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '647'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Un modèle de données d&#39;usine est fourni avec Adobe Campaign. Cette section
 
 La structure de base du modèle de données Adobe Campaign peut être décrite comme suit :
 
-* **Table des destinataires** : le modèle de données repose sur une table principale qui est par défaut la table des destinataires (nmsRecipient). Ce tableau stocke tous les profils marketing.
+* **Table des destinataires** : le modèle de données repose sur une table principale qui est par défaut la table des destinataires (nmsRecipient). Cette table enregistre tous les profils marketing.
 
    ![](../assets/do-not-localize/glass.png) Pour plus d&#39;informations sur la table des destinataires, consultez cette [section](#ootb-profiles).
 
@@ -47,7 +47,7 @@ Vous pouvez utiliser la table des destinataires par défaut avec les champs d&#3
 
 ## Table des profils intégrée {#ootb-profiles}
 
-La table des destinataires intégrée (nmsrecipient) d&#39;Adobe Campaign est un bon point de départ pour créer votre modèle de données. Il comporte un certain nombre de champs prédéfinis et de liens de tableau qui peuvent être facilement étendus. Son emploi est particulièrement efficace si vous ciblez principalement les destinataires, car elle s&#39;appuie sur un modèle de données centré sur ces derniers.
+La table des destinataires intégrée (nmsrecipient) dʼAdobe Campaign est un bon point de départ pour créer votre modèle de données. Elle comporte un certain nombre de champs prédéfinis et de liens vers des tables faciles à étendre. Son emploi est particulièrement efficace si vous ciblez principalement les destinataires, car elle sʼappuie sur un modèle de données centré sur ces derniers.
 
 Les avantages liés à l&#39;utilisation d&#39;une table des destinataires standard sont les suivants :
 
