@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
 source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '545'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Les applications web d&#39;usine sont stockées sous le nœud Administration > 
 
 ### Accès aux données à partir des tableaux de bord
 
-Les listes de campagnes sont dotées de filtres prédéfinis pour faciliter la navigation et la visualisation des données.
+Les listes Campaign s’accompagnent de filtres prédéfinis pour faciliter la navigation et la visualisation des données.
 
 ![](../assets/do-not-localize/book.png) En savoir plus sur les options de filtrage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/filtering-options.html?lang=fr#about-filtering)
 
