@@ -1,25 +1,25 @@
 ---
-title: Historique des interactions en temps réel et création de rapports
-description: Découvrez comment suivre et mesurer vos offres avec l'interaction Campaign
+title: Historique et rapports des interactions en temps réel
+description: Découvrez comment suivre et mesurer vos offres avec Campaign Interaction
 feature: Overview
 role: Data Engineer
 level: Beginner
 source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '143'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
-# Historique des interactions en temps réel et création de rapports
+# Historique et rapports des interactions en temps réel
 
 >[!NOTE]
 >
->Ces fonctionnalités ne sont visibles qu’en ligne et uniquement au **Chargés de diffusion**.
+>Ces fonctionnalités ne sont visibles quʼen ligne et uniquement pour les **Chargés de diffusion**.
 
-## Historique des propositions{#offer-proposition-history}
+## Historique des propositions dʼoffres{#offer-proposition-history}
 
-Une fois vos propositions d&#39;offres effectuées, vous pouvez consulter l&#39;historique de vos différentes présentations.
+Une fois vos propositions dʼoffres effectuées, vous pouvez consulter lʼhistorique de vos différentes présentations.
 
 * Au niveau de l&#39;offre, dans l&#39;onglet **[!UICONTROL Edition]**, cliquez sur **[!UICONTROL Propositions]**.
 
@@ -35,9 +35,9 @@ Une fois vos propositions d&#39;offres effectuées, vous pouvez consulter l&#39;
 
 ## Rapport Analyse des offres{#offer-analysis-report}
 
-Le rapport **[!UICONTROL Analyse des offres]** vous permet d&#39;avoir une vue d&#39;ensemble du nombre de propositions acceptées ou refusées.
+Le rapport **[!UICONTROL Analyse des offres]** vous permet dʼavoir une vue dʼensemble du nombre de propositions acceptées ou refusées.
 
-Les statistiques sont classées selon trois critères :
+Les statistiques sont classées selon trois critères :
 
 * Par date :
 
