@@ -3,7 +3,7 @@ title: Bonnes pratiques de sécurité de Campaign
 description: Prise en main des bonnes pratiques de sécurité de Campaign
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ La configuration et le renforcement de la confidentialité sont des éléments c
 
 * Protégez les informations personnelles (PI) de vos clients en utilisant HTTPS au lieu de HTTP.
 * Utilisez la [limitation de l&#39;affichage des PI](../dev/restrict-pi-view.md) pour protéger la confidentialité et empêcher toute utilisation abusive des données.
-* Vérifiez que les mots de passe cryptés sont restreints.
+* Vérifiez que les mots de passe chiffrés sont restreints.
 * Protégez les pages pouvant contenir des informations personnelles, telles que les pages miroir, les applications web, etc.
 
 ![](../assets/do-not-localize/speech.png)  En tant qu’utilisateur Managed Cloud Services, Adobe vous accompagne dans l’implémentation de ces configurations dans votre environnement.
@@ -38,7 +38,7 @@ Lorsque vous ajoutez des liens personnalisés à votre contenu, évitez toujours
 
 ## Restriction des données
 
-Vous devez vous assurer que les mots de passe cryptés ne sont pas accessibles par un utilisateur authentifié avec de faibles privilèges. Pour ce faire, il existe deux méthodes : restreindre l&#39;accès aux champs de mots de passe uniquement ou à l&#39;entité entière.
+Vous devez vous assurer que les mots de passe chiffrés ne sont pas accessibles par un utilisateur authentifié avec de faibles privilèges. Pour ce faire, il existe deux méthodes : restreindre l&#39;accès aux champs de mots de passe uniquement ou à l&#39;entité entière.
 
 Cette restriction vous permet de supprimer les champs de mots de passe. Le compte externe reste toutefois accessible par tous les utilisateurs dans l&#39;interface. Apprenez-en davantage en consultant [cette page](../dev/restrict-pi-view.md).
 

@@ -3,7 +3,7 @@ title: Limitation de l'affichage des PI
 description: Découvrez comment limiter l'affichage des PI
 exl-id: 1b833745-71d7-430d-ac7d-c830c78ea232
 source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 100%
 

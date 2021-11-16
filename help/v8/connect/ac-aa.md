@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
 source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 100%
 
@@ -122,7 +122,7 @@ Veuillez noter que si l&#39;une de vos **[!UICONTROL suites de rapports]**, **[!
 
 Pour plus d’informations, consultez la page [Profils de produit pour Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=fr#product-profile-admins).
 
-1. Accédez au dossier **[!UICONTROL Administration]** > **[!UICONTROL Plate-forme]** > **[!UICONTROL Comptes externes]** de l&#39;arborescence Adobe Campaign et cliquez sur le bouton **[!UICONTROL Nouveau]**.
+1. Accédez au dossier **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Comptes externes]** de l&#39;arborescence Adobe Campaign et cliquez sur le bouton **[!UICONTROL Nouveau]**.
 
    ![](assets/analytics_connnector_9.png)
 
@@ -185,7 +185,7 @@ Pour plus d’informations, consultez la page [Profils de produit pour Adobe Ana
 
 >[!NOTE]
 >
->Si vous utilisez plusieurs outils de mesure d&#39;audience, vous pouvez sélectionner la valeur **[!UICONTROL Autre]** dans la liste déroulante **[!UICONTROL Partenaire]** lors de la création du compte externe. Un seul compte externe peut être référencé dans les propriétés des diffusions : vous devrez donc adapter la formule des URL trackées en ajoutant les paramètres attendus par Adobe ou tout autre outil de mesure utilisé.
+>Si vous utilisez plusieurs outils de mesure d&#39;audience, vous pouvez sélectionner la valeur **[!UICONTROL Autre]** dans la liste déroulante **[!UICONTROL Partenaire]** lors de la création du compte externe. Un seul compte externe peut être référencé dans les propriétés des diffusions : vous devrez donc adapter la formule des URL suivies en ajoutant les paramètres attendus par Adobe ou tout autre outil de mesure utilisé.
 
 ## Workflow technique des processus Web Analytics {#technical-workflows-of-web-analytics-processes}
 
@@ -231,7 +231,7 @@ Les attributs envoyés sont les suivants :
 
 Afin qu&#39;Adobe Experience Cloud puisse suivre l&#39;activité sur les sites après l&#39;envoi de diffusions par Adobe Campaign, il est nécessaire de référencer le connecteur correspondant dans les propriétés de la diffusion. Pour cela, procédez comme suit :
 
-1. Ouvrez la diffusion de la campagne destinée à être trackée.
+1. Ouvrez la diffusion de la campagne destinée à être suivie.
 
    ![](assets/webanalytics_delivery_properties_003.png)
 

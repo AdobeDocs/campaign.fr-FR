@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 4ea77a39-f505-4657-be43-a0e2b79ddcdd
 source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 100%
 
@@ -20,6 +20,6 @@ Tirez parti des fonctionnalités présentes dans le module Interaction de Campai
 
 ![](../assets/do-not-localize/book.png) [Envoi dʼune diffusion dʼoffres par e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=fr)
 
-![](../assets/do-not-localize/book.png) [Présentation dʼune offre à un visiteur anonyme](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=fr)
+![](../assets/do-not-localize/book.png) [Présentation dʼune offre à un visiteur anonyme](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html)
 
-![](../assets/do-not-localize/book.png) [Réalisation dʼune simulation dʼoffres](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=fr)
+![](../assets/do-not-localize/book.png) [Réalisation dʼune simulation dʼoffres](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html)

@@ -3,7 +3,7 @@ title: Bonnes pratiques relatives au modèle de données
 description: Découvrez les bonnes pratiques relatives à l'extension des modèles de données de Campaign
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
 source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2688'
 ht-degree: 100%
 

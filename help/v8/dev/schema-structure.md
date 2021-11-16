@@ -3,7 +3,7 @@ title: Structure d'un schéma Campaign
 description: Structure d'un schéma Campaign
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
 source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 100%
 
@@ -161,7 +161,7 @@ Voici notre schéma d&#39;exemple complété avec les types :
 
 ## Propriétés {#properties}
 
-Les éléments **`<elements>`** et **`<attributes>`** du schéma de données peuvent être enrichis de diverses propriétés. Vous pouvez remplir un libellé afin de décrire l&#39;élément actif.
+Les éléments **`<elements>`** et **`<attributes>`** du schéma de données peuvent être enrichis de diverses propriétés. Vous pouvez remplir un libellé afin de décrire l’élément actif.
 
 ### Les libellés et les descriptions {#labels-and-descriptions}
 
@@ -348,6 +348,7 @@ Les éléments sont désignés par leur nom, les attributs sont désignés par l
 >
 >* **Location/@city** n&#39;est pas valide ; veuillez utiliser **`[location/@city]`**
 >* **`[@email]`** et **@email** sont équivalents
+
 >
 
 

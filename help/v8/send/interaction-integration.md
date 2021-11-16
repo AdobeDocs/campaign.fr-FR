@@ -3,7 +3,7 @@ product: campaign
 title: Présenter une offre (interaction entrante)
 description: Découvrez comment présenter la meilleure offre à lʼaide du module Interaction de Campaign.
 source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1478'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: Création d'un schéma dans Campaign
 description: Découvrez comment créer un schéma dans Campaign
 exl-id: 796af848-b537-4b8d-a601-fe0628a1fc83
 source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 100%
 
