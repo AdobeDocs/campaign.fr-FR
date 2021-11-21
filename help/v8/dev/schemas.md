@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Utilisation des schémas{#gs-ac-schemas}
 
-La structure physique et logique des données véhiculées dans l&#39;application est décrite en XML et respecte une grammaire propre à Adobe Campaign appelée **schéma**.
+La structure physique et logique des données véhiculées dans l&#39;application est décrite en XML et respecte une grammaire propre à Adobe Campaign appelée **schéma**.
 
 Un schéma est un document XML associé à une table de la base de données, il définit la structuration des données et décrit la définition SQL de la table :
 
@@ -29,10 +29,10 @@ mais aussi la structure XML utilisée pour stocker les données :
 
 Les schémas servent à définir en base une entité. A chaque entité, correspond un schéma.
 
-Dans Adobe Campaign, les schémas de données permettent de :
+Dans Adobe Campaign, les schémas de données permettent de :
 
 * définir la façon dont les objets de données de l&#39;application sont liés à des tables de la base de données ;
-* définir des liens entre les différents objets de l&#39;application ;
+* définir des liens entre les différents objets de l&#39;application ;
 * définir et décrire les champs individuels inclus dans chaque objet.
 
 Pour une meilleure compréhension des tables intégrées de Campaign et de leur interaction, consultez [cette section](datamodel.md).
@@ -81,7 +81,7 @@ Un espace de noms permet de regrouper un ensemble de schémas par centres d&#39;
 
 ## Espaces de noms réservés {#reserved-namespaces}
 
-Certains espaces de noms sont réservés à la description des entités systèmes nécessaires au bon fonctionnement de l’application Adobe Campaign. L&#39;espace de noms suivant **ne doit pas être utilisé** pour identifier un nouveau schéma, dans quelque combinaison majuscule/minuscule que ce soit :
+Certains espaces de noms sont réservés à la description des entités systèmes nécessaires au bon fonctionnement de l’application Adobe Campaign. L&#39;espace de noms suivant **ne doit pas être utilisé** pour identifier un nouveau schéma, dans quelque combinaison majuscule/minuscule que ce soit :
 
 * **xxl** : réservé aux schémas de base de données cloud
 * **xtk** : réservé aux données du système de la plateforme
@@ -99,7 +99,7 @@ Pour ajouter un champ ou tout autre élément à l&#39;un des principaux schéma
 
 ![](../assets/do-not-localize/glass.png) Pour plus d’informations, consultez la section [Extension d&#39;un schéma](extend-schema.md).
 
-Pour ajouter un tout nouveau type de données qui n&#39;existe pas par défaut dans Adobe Campaign (une table des contrats par exemple), vous pouvez créer directement un schéma personnalisé.
+Pour ajouter un tout nouveau type de données qui n&#39;existe pas par défaut dans Adobe Campaign (une table des contrats par exemple), vous pouvez créer directement un schéma personnalisé.
 
 ![](../assets/do-not-localize/glass.png) Pour plus d’informations, consultez la section [Création d&#39;un schéma](create-schema.md).
 
@@ -195,7 +195,7 @@ Exemple de champ XML également stocké dans un champ SQL et qui a un attribut *
 >
 >Alors que la plupart des attributs sont associés selon une cardinalité 1-1 à un champ physique de la base de données, ce n&#39;est pas le cas pour les champs XML ni les champs calculés.\
 >Un champ XML est stocké dans un champ memo (&quot;mData&quot;) de la table.\
->Un champ calculé en revanche est créé dynamiquement chaque fois qu&#39;une requête est lancée ; il n&#39;existe donc que dans la couche applicative.
+>Un champ calculé en revanche est créé dynamiquement chaque fois qu&#39;une requête est lancée ; il n&#39;existe donc que dans la couche applicative.
 
 ## Liens {#links}
 
@@ -213,13 +213,13 @@ Exemple de relation 1-N entre la table des destinataires (schéma d&#39;usine) e
 <element label="Recipient" name="lnkRecipient" revLink="lnkTransactions" target="nms:recipient" type="link"/>
 ```
 
-Exemple de relation 1-1 entre un schéma personnalisé &quot;Car&quot; (dans l&#39;espace de noms &quot;cus&quot;) et la table des destinataires :
+Exemple de relation 1-1 entre un schéma personnalisé &quot;Car&quot; (dans l&#39;espace de noms &quot;cus&quot;) et la table des destinataires :
 
 ```
 <element label="Car" name="lnkCar" revCardinality="single" revLink="recipient" target="cus:car" type="link"/>
 ```
 
-Exemple d&#39;une jointure externe entre la table des destinataires et une table des adresses reposant sur l&#39;adresse e-mail et non une clé primaire :
+Exemple d&#39;une jointure externe entre la table des destinataires et une table des adresses reposant sur l&#39;adresse email et non une clé primaire :
 
 ```
 <element name="emailInfo" label="Email Info" revLink="recipient" target="nms:address" type="link" externalJoin="true">

@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Lorsque vous créez ou étendez un schéma, vous devez créer ou modifier les formulaires de saisie associés pour permettre aux utilisateurs finaux de voir ces modifications.
 
-Un formulaire de saisie vous permet de modifier une instance associée à un schéma de données à partir de la console cliente Adobe Campaign. Le formulaire est identifié par son nom et son espace de noms.
+Un formulaire de saisie vous permet de modifier une instance associée à un schéma de données à partir de la console client Adobe Campaign. Le formulaire est identifié par son nom et son espace de noms.
 
 La clé d&#39;identification d&#39;un formulaire correspond à une chaîne constituée de l&#39;espace de noms et du nom séparés par deux points, par exemple &quot;cus:contact&quot;.
 
@@ -292,7 +292,7 @@ L&#39;icône **[!UICONTROL Modifier le lien]** (dossier) lance un formulaire de 
 
 L&#39;icône **[!UICONTROL Editer le lien]** (loupe) lance la forme d&#39;édition de l&#39;élément lié. La forme utilisée est déduite par défaut sur la clé du schéma ciblé, l&#39;attribut **form** permet de forcer le nom de la forme d&#39;édition (par exemple &quot;cus:company2&quot;).
 
-Vous pouvez restreindre le choix des éléments de la cible en ajoutant l&#39;élément **`<sysfilter>`** à partir de la définition du lien dans le formulaire de saisie :
+Vous pouvez restreindre le choix des éléments de la cible en ajoutant l’élément **`<sysfilter>`** à partir de la définition du lien dans le formulaire de saisie :
 
 ```
 <input xpath="company">
@@ -659,7 +659,7 @@ Le type du paramètre doit être spécifié à partir de l&#39;attribut **type**
 * **long** : nombre entier 32 bits
 * **short** : nombre entier 16 bits
 * **double** : nombre flottant double précision
-* **DOMElement** : nœud de type élément
+* **DOMElement** : noeud de type élément
 
 L&#39;attribut **exprIn** contient l&#39;emplacement de la donnée à passer en paramètre.
 

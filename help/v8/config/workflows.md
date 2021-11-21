@@ -1,5 +1,5 @@
 ---
-title: Gestion et automatisation des processus avec les workflows Adobe Campaign
+title: Gestion et automatisation des processus avec les workflows Adobe Campaign
 description: Prise en main des workflows
 feature: Overview
 role: Data Engineer
@@ -27,7 +27,7 @@ Ce que vous pouvez configurer :
 
 ## Conception et utilisation de workflows{#gs-ac-wf}
 
-Utilisez les workflows d&#39;Adobe Campaign pour améliorer la vitesse et l&#39;échelle relatives à chaque aspect de vos campagnes marketing, de la création de segments à la préparation des messages, en passant par leur diffusion.
+Utilisez les workflows d&#39;Adobe Campaign pour améliorer la vitesse et l&#39;échelle relatives à chaque aspect de vos campagnes marketing, de la création de segments à la préparation des messages, en passant par leur diffusion.
 
 Découvrez comment concevoir des workflows dans ces [cas d&#39;utilisation complets](#end-to-end-uc).
 
@@ -59,7 +59,7 @@ Les activités de workflow sont regroupées par catégorie. Les quatre catégori
 
 L&#39;activité **[!UICONTROL Modifier la source de données]** permet de modifier la source de données d&#39;un workflow **[!UICONTROL Table de travail]**. Vous bénéficiez ainsi d’une plus grande flexibilité pour gérer les données entre différentes sources de données, telles que FDA, FFDA et base de données locale.
 
-La **[!UICONTROL table de travail]** permet au workflow Adobe Campaign de gérer les données et de partager les données avec les activités de workflow.
+La **[!UICONTROL table de travail]** permet au workflow Adobe Campaign de gérer les données et de partager les données avec les activités de workflow.
 Par défaut, la **[!UICONTROL table de travail]** est créée dans la même base de données que la source des données sur lesquelles nous effectuons une requête.
 
 Par exemple, lors de l’interrogation de la table **[!UICONTROL Profils]** stockée dans la base de données cloud, vous allez créer une **[!UICONTROL table de travail]** sur la même base de données cloud.
@@ -124,14 +124,14 @@ Utilisez la messagerie transactionnelle de Campaign pour automatiser les message
 
 ![](../assets/do-not-localize/glass.png) Pour en savoir plus sur les fonctionnalités des messages transactionnels,consultez [cette section](../send/transactional.md).
 
-Connectez Adobe Campaign et Adobe Analytics pour récupérer les actions utilisateur et envoyer des messages personnalisés en temps quasi réel.
+Connectez Adobe Campaign et Adobe Analytics pour récupérer les actions utilisateur et envoyer des messages personnalisés en temps quasi réel.
 
 ![](../assets/do-not-localize/glass.png) Découvrez comment intégrer Campaign à d&#39;autres solutions dans [cette section](../start/connect.md).
 
 
 ## Cas d&#39;utilisation complets de workflow{#end-to-end-uc}
 
-Cette section présente différents cas pratiques utilisant des fonctionnalités de workflows dans Campaign. Ces cas pratiques sont créés dans Adobe Campaign Classic v7 et s&#39;appliquent à Adobe Campaign v8.
+Cette section présente différents cas pratiques utilisant des fonctionnalités de workflows dans Campaign. Ces cas pratiques sont créés dans Adobe Campaign Classic v7 et s&#39;appliquent à Adobe Campaign v8.
 
 ### Diffusions {#deliveries}
 
@@ -146,7 +146,7 @@ Cette section présente différents cas pratiques utilisant des fonctionnalités
    Ce cas pratique présente comment planifier l&#39;envoi d&#39;un e-mail récurrent à une liste de destinataires le jour de leur anniversaire.
 
 * [Charger le contenu d&#39;une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html?lang=fr){target=&quot;_blank&quot;}
-Lorsque le contenu de votre diffusion est disponible dans un fichier HTML qui se trouve sur un serveur distant, vous pouvez facilement charger ce contenu dans les diffusions Adobe Campaign.
+Lorsque le contenu de votre diffusion est disponible dans un fichier HTML qui se trouve sur un serveur distant, vous pouvez facilement charger ce contenu dans les diffusions Adobe Campaign.
 
 * [Workflow de diffusion cross-canal](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/cross-channel-delivery-workflow.html?lang=fr){target=&quot;_blank&quot;}
 
@@ -203,7 +203,7 @@ Lorsque le contenu de votre diffusion est disponible dans un fichier HTML qui se
 
 * [Configuration d&#39;un workflow d&#39;import récurrent](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/recurring-import-workflow.html?lang=fr){target=&quot;_blank&quot;}
 
-   Découvrez comment concevoir un workflow qui peut être réutilisé pour importer des profils en provenance d&#39;un CRM dans la base de données Adobe Campaign.
+   Découvrez comment concevoir un workflow qui peut être réutilisé pour importer des profils en provenance d&#39;un CRM dans la base de données Adobe Campaign.
 
 ### Ciblage {#designing-queries}
 

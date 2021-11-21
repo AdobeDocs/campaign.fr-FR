@@ -2,7 +2,8 @@
 product: campaign
 title: Présentation dʼoffres aux profils anonymes (interaction entrante)
 description: Découvrez comment présenter des offres aux profils anonymes
-source-git-commit: c19336c84114a0c81563c4d5ae760330d3b284cb
+exl-id: b7a04360-f8c6-4c69-9594-2b44d3f819b7
+source-git-commit: 00a88cf9217faf32070a3cd34a2c1ae5243d9a6e
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 100%
@@ -37,7 +38,7 @@ Pour créer les catégories et emplacements, procédez de la même manière que 
 
 Les visiteurs anonymes peuvent être soumis à un processus dʼidentification par cookies intervenant au moment de la connexion. Cette reconnaissance implicite sʼeffectue à partir de lʼhistorique de navigation du visiteur.
 
-Ce processus consiste à comparer les données récupérées par les cookies avec celles de votre base de données. Dans certains cas, les visiteurs sont reconnus (ils sont alors identifiés implicitement), dans dʼautres cas, ils ne sont pas reconnus (et restent donc anonymes).
+Ce processus consiste à comparer les données récupérées par les cookies avec celles de votre base de données. Dans certains cas, les visiteurs sont reconnus (ils sont alors identifiés implicitement) ; dans d’autres cas, ils ne le sont pas (et restent donc anonymes).
 
 Afin dʼeffectuer cette analyse, au niveau de lʼemplacement, cochez la case **[!UICONTROL Identifier implicitement lʼindividu à partir de son historique de navigation]**.
 

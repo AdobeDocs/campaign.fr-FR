@@ -6,13 +6,13 @@ breadcrumb-title: Campaign v8
 title: Documentation Campaign v8
 source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '236'
+ht-degree: 100%
 
 ---
 
 
-# Documentation Adobe Campaign v8 {#campaign-v8}
+# Documentation Adobe Campaign v8 {#campaign-v8}
 
 + [Documentation Campaign v8](campaign-home.md)
 + Nouveautés{#start}
@@ -76,9 +76,9 @@ ht-degree: 0%
 + Connexion {#connect}
    + [Connexion à d&#39;autres solutions](connect/integration.md)
    + [Campaign + Analytics](connect/ac-aa.md)
-   + [Campaign + Experience Manager](connect/ac-aem.md)
+   + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
-   + [Campaign + triggers Experience Cloud](connect/ac-triggers.md)
+   + [Campaign + triggers Experience Cloud](connect/ac-triggers.md)
    + [Campaign + RTCDP](connect/ac-rtcdp.md)
    + [Campaign + Twitter](connect/ac-tw.md)
    + [Campaign + base de données externe](connect/fda.md)

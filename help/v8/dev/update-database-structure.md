@@ -19,7 +19,7 @@ Les modules présents dans la base de données sont automatiquement renseignés 
 
 ![](assets/schema_update_select2.png)
 
-Suivez les étapes et visualisez le script SQL de mise à jour de la base de données :
+Suivez les étapes et visualisez le script SQL de mise à jour de la base de données :
 
 ![](assets/schema_update2.png)
 
@@ -27,6 +27,6 @@ Suivez les étapes et visualisez le script SQL de mise à jour de la base de don
 >
 >Cette zone est en édition et peut être modifiée afin de supprimer ou ajouter du code SQL.
 
-Lancez ensuite la mise à jour de la base de données :
+Lancez ensuite la mise à jour de la base de données :
 
 ![](assets/schema_update3.png)

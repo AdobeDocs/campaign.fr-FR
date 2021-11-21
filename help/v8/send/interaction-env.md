@@ -53,7 +53,7 @@ Procédez comme suit :
    >
    >Si la case est déjà cochée, décochez-la puis recochez-la.
 
-1. Adobe Campaign crée les deux environnements **[!UICONTROL En édition]** et **[!UICONTROL En ligne]** correspondant au mapping de ciblage activé précédemment. L&#39;environnement est préparamétré avec les informations de ciblage.
+1. Adobe Campaign crée les deux environnements **[!UICONTROL En édition]** et **[!UICONTROL En ligne]** correspondant au mapping de ciblage activé précédemment. L&#39;environnement est préparamétré avec les informations de ciblage.
 
 Si vous avez activé le mapping **[!UICONTROL Visiteurs]**, la case **[!UICONTROL Environnement dédié aux interactions anonymes entrantes]** est automatiquement cochée dans l&#39;onglet **[!UICONTROL Général]** de l&#39;environnement.
 

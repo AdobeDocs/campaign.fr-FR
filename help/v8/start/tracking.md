@@ -4,7 +4,8 @@ description: Prise en main des fonctionnalités de tracking et de surveillance
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 76269d65246010af60fda84b388a7c74269e236f
+exl-id: f3de901f-519f-42ae-846c-f20c7cb560df
+source-git-commit: 00a88cf9217faf32070a3cd34a2c1ae5243d9a6e
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 100%
@@ -94,7 +95,7 @@ Ce rapport présente la liste des pages visitées suite au lancement d&#39;une d
 
 **Personnes et destinataires**
 
-À l&#39;aide de cet exemple, comprenez mieux la différence de tracking entre une ou plusieurs personnes et un destinataire dans Adobe Campaign.
+À l’aide de cet exemple, comprenez mieux la différence de tracking entre une ou plusieurs personnes et un destinataire dans Adobe Campaign.
 
 [Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/person-people-recipients.html?lang=fr#reporting){target=&quot;_blank&quot;}
 
@@ -112,7 +113,7 @@ Les différents tableaux contiennent la liste des indicateurs utilisés dans les
 
 ## Instructions de surveillance
 
-Adobe Campaign vous propose un ensemble de fonctionnalités permettant de surveiller vos processus et votre environnement.
+Adobe Campaign vous propose un ensemble de fonctionnalités permettant de surveiller vos processus et votre environnement.
 
 ### Surveillance de vos diffusions
 
@@ -128,6 +129,6 @@ Découvrez comment surveiller vos diffusions dans la [documentation de Campaign 
 
 Les instructions de surveillance des instances sont disponibles dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/introduction/monitoring-guidelines.html?lang=fr#monitoring-campaign-classic){target=&quot;_blank&quot;}
 
-Utilisez l&#39;interface en libre-service du journal d&#39;audit pour surveiller les modifications apportées à votre instance. Le journal d&#39;audit capture, en temps réel, une liste complète d&#39;actions et d&#39;événements se produisant dans votre instance Adobe Campaign. Vous pouvez accéder à un historique des données pour répondre à des questions telles que : ce qui est arrivé à vos workflows et qui les a mis à jour en dernier, ou ce que vos utilisateurs ont fait dans l&#39;instance.
+Utilisez l&#39;interface en libre-service du journal d&#39;audit pour surveiller les modifications apportées à votre instance. Le journal d’audit capture, en temps réel, une liste complète d’actions et d’événements se produisant dans votre instance Adobe Campaign. Vous pouvez accéder à un historique des données pour répondre à des questions telles que : ce qui est arrivé à vos workflows et qui les a mis à jour en dernier, ou ce que vos utilisateurs ont fait dans l&#39;instance.
 
 En savoir plus sur le journal d’audit dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html?lang=fr#accessing-audit-trail){target=&quot;_blank&quot;}

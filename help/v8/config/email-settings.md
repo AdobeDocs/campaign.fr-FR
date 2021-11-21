@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## E-mail Cci
 
-Vous pouvez paramétrer Adobe Campaign pour conserver une copie des e-mails envoyés depuis votre plateforme.
+Vous pouvez paramétrer Adobe Campaign pour conserver une copie des e-mails envoyés depuis votre plateforme.
 
 >[!NOTE]
 >La fonctionnalité E-mail Cci est facultative. Veuillez vérifier votre accord de licence.

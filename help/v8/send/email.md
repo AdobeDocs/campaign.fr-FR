@@ -1,5 +1,5 @@
 ---
-title: Envoi d'e-mails avec Adobe Campaign
+title: Envoi d’e-mails avec Adobe Campaign
 description: Prise en main des e-mails dans Campaign
 feature: Overview
 role: Data Engineer
@@ -25,7 +25,7 @@ Créez des e-mails personnalisés et pertinents qui sont également conformes au
 ![](assets/new-email-content.png)
 
 
-Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;une diffusion e-mail dans Adobe Campaign contenant des données personnalisées, des liens vers une URL externe et un lien vers la page miroir.
+Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;une diffusion e-mail dans Adobe Campaign contenant des données personnalisées, des liens vers une URL externe et un lien vers la page miroir.
 
 1. **Création de la diffusion**
 
@@ -35,7 +35,7 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
 1. **Sélection du modèle**
 
-   Sélectionnez un modèle de diffusion, puis nommez votre diffusion. Ce nom sera visible uniquement par les utilisateurs de la console Adobe Campaign et non par vos destinataires mais cet intitulé s&#39;affichera dans la liste de vos diffusions. Cliquez sur **[!UICONTROL Continuer]**.
+   Sélectionnez un modèle de diffusion, puis nommez votre diffusion. Ce nom sera visible uniquement par les utilisateurs de la console Adobe Campaign et non par vos destinataires mais cet intitulé s&#39;affichera dans la liste de vos diffusions. Cliquez sur **[!UICONTROL Continuer]**.
 
    ![](assets/dce_delivery_model.png)
 

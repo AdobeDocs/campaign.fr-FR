@@ -15,29 +15,29 @@ ht-degree: 100%
 
 # Intégration des SDK Campaign avec votre application {#integrate-campaign-sdk}
 
-Utilisez les SDK Campaign pour iOS et Android pour faciliter l&#39;intégration de votre application mobile dans la plateforme Adobe Campaign.
+Utilisez les SDK Campaign pour iOS et Android pour faciliter l&#39;intégration de votre application mobile dans la plateforme Adobe Campaign.
 
 Les versions d&#39;Android et iOS prises en charge, ainsi que les versions compatibles des SDK Campaign pour Campaign v8, sont répertoriées dans la [matrice de compatibilité](../start/compatibility-matrix.md#MobileSDK) 
 
 >[!NOTE]
 >
->En tant qu&#39;administrateur de Campaign, vous pouvez télécharger les SDK Campaign à partir de la [distribution logicielle d&#39;Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). Pour plus d’informations, contactez l&#39;[Assistance clientèle d&#39;Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>En tant qu&#39;administrateur de Campaign, vous pouvez télécharger les SDK Campaign à partir de la [distribution logicielle d&#39;Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). Pour plus d’informations, contactez l&#39;[Assistance clientèle d&#39;Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Déclaration des paramètres d&#39;intégration {#declaring-integration-settings}
 
 Afin d&#39;intégrer le SDK Campaign dans l&#39;application mobile, l&#39;administrateur fonctionnel doit fournir au développeur les informations suivantes :
 
-* **Une clé d&#39;intégration** permettant à la plateforme Adobe Campaign d&#39;identifier l&#39;application mobile.
+* **Une clé d&#39;intégration** permettant à la plateforme Adobe Campaign d&#39;identifier l&#39;application mobile.
 
    >[!NOTE]
    >
-   >Cette clé d’intégration est renseignée dans la console Adobe Campaign, dans l&#39;onglet **[!UICONTROL Informations]** du service dédié à l&#39;application mobile. Reportez-vous à la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=fr#creating-ios-app).
+   >Cette clé d’intégration est renseignée dans la console Adobe Campaign, dans l&#39;onglet **[!UICONTROL Informations]** du service dédié à l&#39;application mobile. Reportez-vous à la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=fr#creating-ios-app).
 
-* **Une URL de tracking** correspondant à l&#39;adresse du serveur de tracking Adobe Campaign.
+* **Une URL de tracking** correspondant à l&#39;adresse du serveur de tracking Adobe Campaign.
 * **Une URL marketing** permettant de collecter les abonnements.
 
-* **Sous Android** :
+* **Sous Android** :
 
    ```sql
    Neolane.getInstance().setIntegrationKey("your Adobe mobile app integration key");
@@ -45,7 +45,7 @@ Afin d&#39;intégrer le SDK Campaign dans l&#39;application mobile, l&#39;admini
    Neolane.getInstance().setTrackingHost("https://yourTrackingHost:yourTrackingPort/"); 
    ```
 
-* **Sous iOS** :
+* **Sous iOS** :
 
    ```sql
    Neolane_SDK *nl = [Neolane_SDK getInstance];
@@ -56,13 +56,13 @@ Afin d&#39;intégrer le SDK Campaign dans l&#39;application mobile, l&#39;admini
 
 ## Intégration du SDK Android
 
-Le SDK Android est une bibliothèque jar écrite en JAVA. Il permet aux développeurs Android de s&#39;intégrer avec Adobe Campaign : enregistrement d&#39;un nouvel appareil, association de l&#39;appareil à un utilisateur, suivi du comportement, etc.
+Le SDK Android est une bibliothèque jar écrite en JAVA. Il permet aux développeurs Android de s&#39;intégrer avec Adobe Campaign : enregistrement d&#39;un nouvel appareil, association de l&#39;appareil à un utilisateur, suivi du comportement, etc.
 
 Dans cette section, découvrez comment utiliser le SDK Android dans une application Android implémentant [Google Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging/).
 
 >[!CAUTION]
 >
-> Pour Campaign v8, utilisez le SDK Campaign Android v1.1.1.
+> Pour Campaign v8, utilisez le SDK Campaign Android v1.1.1.
 
 ### Configuration de FCM
 
@@ -76,7 +76,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 >
 > * Pensez à télécharger et à ajouter google-services.json à votre projet.
 >
-> * Le `apiKey` doit correspondre au `projectKey` défini dans l&#39;application mobile Adobe Campaign liée à cette application Android.
+> * Le `apiKey` doit correspondre au `projectKey` défini dans l&#39;application mobile Adobe Campaign liée à cette application Android.
 
 
 ### Configuration du SDK Android
@@ -102,16 +102,16 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
    }
    ```
 
-   La valeur `IntegrationKey` doit correspondre à la valeur &#39;IntegrationKey&#39; définie dans l&#39;application mobile Adobe Campaign liée à cette application Android.
+   La valeur `IntegrationKey` doit correspondre à la valeur &#39;IntegrationKey&#39; définie dans l&#39;application mobile Adobe Campaign liée à cette application Android.
 
-1. **Enregistrement de l&#39;appareil mobile sur le serveur Adobe Campaign**
+1. **Enregistrement de l&#39;appareil mobile sur le serveur Adobe Campaign**
 
-   La fonction d&#39;enregistrement permet :
+   La fonction d&#39;enregistrement permet :
 
-   * d&#39;envoyer l&#39;identifiant de notification ou push id (deviceToken pour iOS et registrationID pour Android) à Adobe Campaign.
+   * d&#39;envoyer l&#39;identifiant de notification ou push id (deviceToken pour iOS et registrationID pour Android) à Adobe Campaign.
    * de récupérer la clé de réconciliation ou userKey (par exemple l&#39;adresse email ou le numéro de compte)
 
-   Vous devez enregistrer votre appareil dans Adobe Campaign, à l&#39;initialisation de l&#39;application ou lors d&#39;une action utilisateur. Vous pouvez le faire facilement à l&#39;aide de la méthode `registerDevice`.
+   Vous devez enregistrer votre appareil dans Adobe Campaign, à l&#39;initialisation de l&#39;application ou lors d&#39;une action utilisateur. Vous pouvez le faire facilement à l&#39;aide de la méthode `registerDevice`.
 
    ```sql
    public void onClick(View v)
@@ -183,7 +183,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 
 1. **Notification de Campaign lorsque le jeton de l&#39;appareil mobile de l&#39;utilisateur change**
 
-   Nous vous conseillons d&#39;utiliser la fonction `registerDevice` lors de l&#39;appel de la fonction `onTokenRefresh` pour informer Adobe Campaign du changement du jeton de l&#39;appareil mobile de l&#39;utilisateur.
+   Nous vous conseillons d&#39;utiliser la fonction `registerDevice` lors de l&#39;appel de la fonction `onTokenRefresh` pour informer Adobe Campaign du changement du jeton de l&#39;appareil mobile de l&#39;utilisateur.
 
    Par exemple :
 
@@ -222,7 +222,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 
 1. **Configuration du service Firebase Messaging**
 
-   Étendez le `FirebaseMessagingService` dans le rappel `onMessageReceived` pour recevoir les messages. Nous vous recommandons d&#39;appeler la fonction `notifyReceive` lors de l&#39;appel du rappel `onMessageReceived` afin d&#39;activer le suivi de la réception des notifications sur l&#39;appareil mobile. Dans Adobe Campaign, il s&#39;agit de la notification **print** : cette fonction doit être appelée juste avant de demander au système d&#39;exploitation d&#39;afficher la notification.
+   Étendez le `FirebaseMessagingService` dans le rappel `onMessageReceived` pour recevoir les messages. Nous vous recommandons d&#39;appeler la fonction `notifyReceive` lors de l&#39;appel du rappel `onMessageReceived` afin d&#39;activer le suivi de la réception des notifications sur l&#39;appareil mobile. Dans Adobe Campaign, il s&#39;agit de la notification **print** : cette fonction doit être appelée juste avant de demander au système d&#39;exploitation d&#39;afficher la notification.
 
    YourApplicationMessagingService.java
 
@@ -556,11 +556,11 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 
 ## Intégration du SDK iOS
 
-1. **Enregistrement de l&#39;appareil mobile sur le serveur Adobe Campaign**
+1. **Enregistrement de l&#39;appareil mobile sur le serveur Adobe Campaign**
 
-   La fonction d&#39;enregistrement permet :
+   La fonction d&#39;enregistrement permet :
 
-   * d&#39;envoyer l&#39;identifiant de notification ou push id (deviceToken pour iOS et registrationID pour Android) à Adobe Campaign.
+   * d&#39;envoyer l&#39;identifiant de notification ou push id (deviceToken pour iOS et registrationID pour Android) à Adobe Campaign.
    * de récupérer la clé de réconciliation ou userKey (par exemple l&#39;adresse email ou le numéro de compte)
 
    ```sql
@@ -590,7 +590,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 
 1. **Suivi des notifications silencieuses**
 
-   iOS permet d&#39;envoyer des notifications silencieuses, des notifications ou des données qui seront directement envoyées à une application mobile sans les afficher. Adobe Campaign vous permet de les tracker.
+   iOS permet d&#39;envoyer des notifications silencieuses, des notifications ou des données qui seront directement envoyées à une application mobile sans les afficher. Adobe Campaign vous permet de les tracker.
 
    Pour suivre votre notification silencieuse, suivez l&#39;exemple ci-après.
 
@@ -792,13 +792,13 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 
 ## Variables {#variables}
 
-Les variables permettent de définir le comportement de l&#39;application mobile après réception d&#39;une notification. Ces variables doivent être définies dans le code de l’application mobile et dans la console Adobe Campaign, dans l&#39;onglet **[!UICONTROL Variables]** du service d&#39;application mobile dédié.
+Les variables permettent de définir le comportement de l&#39;application mobile après réception d&#39;une notification. Ces variables doivent être définies dans le code de l’application mobile et dans la console Adobe Campaign, dans l&#39;onglet **[!UICONTROL Variables]** du service d&#39;application mobile dédié.
 
 ![](../assets/do-not-localize/book.png) En savoir plus dans la **documentation de Campaign Classic v7** sur les applications mobiles : [Étapes de configuration pour iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=fr){target=&quot;_blank&quot;} et [Étapes de configuration pour Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=fr){target=&quot;_blank&quot;}.
 
 Vous trouverez ci-dessous un exemple de code qui permet à une application mobile de collecter toutes les variables ajoutées dans une notification. Dans notre exemple, nous utilisons la variable &quot;VAR&quot;.
 
-* **Sous Android** :
+* **Sous Android** :
 
    ```sql
    public void onReceive(Context context, Intent intent) {
@@ -808,7 +808,7 @@ Vous trouverez ci-dessous un exemple de code qui permet à une application mobil
    }
    ```
 
-* **Sous iOS** :
+* **Sous iOS** :
 
    ```sql
    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -882,9 +882,9 @@ Le média doit être téléchargé au niveau de l&#39;extension du service de no
 
 A ce niveau, vous devez effectuer les opérations suivantes :
 
-* Associer votre extension de contenu à la catégorie envoyée par Adobe Campaign :
+* Associer votre extension de contenu à la catégorie envoyée par Adobe Campaign :
 
-   Si vous souhaitez que l&#39;application mobile affiche une image, définissez la valeur de la catégorie dans Adobe Campaign, par exemple &quot;image&quot;. Dans l&#39;application mobile, vous créez une extension de notification avec le paramètre **UNNotificationExtensionCategory** ayant pour valeur &quot;image&quot;. Lorsque la notification push est reçue sur l&#39;appareil, l&#39;extension est appelée selon la valeur de la catégorie définie.
+   Si vous souhaitez que l&#39;application mobile affiche une image, définissez la valeur de la catégorie dans Adobe Campaign, par exemple &quot;image&quot;. Dans l&#39;application mobile, vous créez une extension de notification avec le paramètre **UNNotificationExtensionCategory** ayant pour valeur &quot;image&quot;. Lorsque la notification push est reçue sur l&#39;appareil, l&#39;extension est appelée selon la valeur de la catégorie définie.
 
 * Définir le style de la notification
 

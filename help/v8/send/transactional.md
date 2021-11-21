@@ -54,7 +54,7 @@ Pour créer un modèle de message, procédez comme suit :
 
    ![](assets/messagecenter_create_model_003.png)
 
-   Les types d&#39;événement destinés à être traités par Adobe Campaign doivent être créés sur l&#39;instance de pilotage par Adobe.
+   Les types d&#39;événement destinés à être traités par Adobe Campaign doivent être créés sur l&#39;instance de pilotage par Adobe.
 
    >[!NOTE]
    >
@@ -64,11 +64,11 @@ Pour créer un modèle de message, procédez comme suit :
 
 ### Création du contenu{#create-message-content}
 
-La définition du contenu du message transactionnel est la même que pour toutes les diffusions dans Adobe Campaign. Par exemple, pour une diffusion e-mail, vous pouvez créer du contenu au format HTML ou texte, ajouter des pièces jointes ou personnaliser l&#39;objet de diffusion. Pour plus d&#39;informations à ce sujet, consultez [cette section](../start/create-message.md).
+La définition du contenu du message transactionnel est la même que pour toutes les diffusions dans Adobe Campaign. Par exemple, pour une diffusion e-mail, vous pouvez créer du contenu au format HTML ou texte, ajouter des pièces jointes ou personnaliser l&#39;objet de diffusion. Pour plus d&#39;informations à ce sujet, consultez [cette section](../start/create-message.md).
 
 >[!CAUTION]
 >
->Les images incluses dans le message doivent être accessibles publiquement. Adobe Campaign ne fournit pas de mécanisme de mise en ligne des images pour les messages transactionnels.\
+>Les images incluses dans le message doivent être accessibles publiquement. Adobe Campaign ne fournit pas de mécanisme de mise en ligne des images pour les messages transactionnels.\
 >Contrairement à JSSP ou webApp, `<%=` n&#39;a pas de séquence d&#39;échappement par défaut.
 >
 >Vous devez appliquer une séquence d&#39;échappement correcte à toutes les données provenant de l&#39;événement. Cette séquence d&#39;échappement dépend de l&#39;utilisation de ce champ. Par exemple, dans une URL, utilisez encodeURIComponent. Pour un affichage dans le code HTML, vous pouvez utiliser escapeXMLString.
@@ -80,7 +80,7 @@ Lorsque vous avez défini le contenu de votre message, vous pouvez intégrer les
 * Tous les champs de personnalisation proviennent de la payload.
 * Il est possible de référencer un ou plusieurs blocs de personnalisation dans un message transactionnel. Le contenu du bloc est ajouté au contenu de la diffusion au cours de la publication dans l&#39;instance d&#39;exécution.
 
-Pour insérer des balises de personnalisation dans le corps d&#39;un message e-mail, procédez comme suit :
+Pour insérer des balises de personnalisation dans le corps d&#39;un message email, procédez comme suit :
 
 1. Dans le modèle de message, cliquez sur l&#39;onglet correspondant au format de l&#39;e-mail (HTML ou texte).
 1. Rédigez le corps du message.
@@ -102,7 +102,7 @@ Une adresse de contrôle vous permet d&#39;afficher une prévisualisation de vot
 
 1. Attribuez-lui un libellé afin de faciliter la sélection ultérieurement, puis saisissez l&#39;adresse de contrôle (e-mail ou téléphone portable selon le canal de communication).
 
-1. Renseignez l&#39;identifiant externe : ce champ optionnel vous permet de renseigner la clé métier (identifiant unique, nom + e-mail, etc.), commune à toutes les applications de votre site web, que vous utilisez pour identifier vos profils. Si ce champ est aussi présent dans la base marketing Adobe Campaign, vous pourrez alors réconcilier un événement avec un profil en base.
+1. Renseignez l&#39;identifiant externe : ce champ optionnel vous permet de renseigner la clé métier (identifiant unique, nom + e-mail, etc.), commune à toutes les applications de votre site web, que vous utilisez pour identifier vos profils. Si ce champ est aussi présent dans la base marketing Adobe Campaign, vous pourrez alors réconcilier un événement avec un profil en base.
 
    ![](assets/messagecenter_create_seed_2.png)
 

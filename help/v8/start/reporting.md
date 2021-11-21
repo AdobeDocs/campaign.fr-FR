@@ -4,7 +4,8 @@ description: Prise en main des fonctionnalités de reporting de Campaign
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 76269d65246010af60fda84b388a7c74269e236f
+exl-id: 95ed0369-7215-496b-8e11-fe264c436488
+source-git-commit: 00a88cf9217faf32070a3cd34a2c1ae5243d9a6e
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 100%
@@ -15,11 +16,11 @@ ht-degree: 100%
 
 ## Prise en main du reporting{#gs-ac-reports}
 
-Adobe Campaign propose un ensemble d&#39;outils de reporting répertoriés dans cette page.
+Adobe Campaign propose un ensemble d&#39;outils de reporting répertoriés dans cette page.
 
 * **Rapports natifs**
 
-   Adobe Campaign est fourni avec des rapports sur les diffusions, les campagnes, les activités de plateforme, les fonctionnalités en option, etc. Ces rapports sont disponibles à partir des différentes fonctionnalités auxquelles ils se rapportent. Ils peuvent être adaptés à vos besoins spécifiques.
+   Adobe Campaign est fourni avec des rapports sur les diffusions, les campagnes, les activités de plateforme, les fonctionnalités en option, etc. Ces rapports sont disponibles à partir des différentes fonctionnalités auxquelles ils se rapportent. Ils peuvent être adaptés à vos besoins spécifiques.
 
    Utilisez l&#39;onglet **Rapports** pour accéder à ces rapports.
 
@@ -29,7 +30,7 @@ Adobe Campaign propose un ensemble d&#39;outils de reporting répertoriés dans 
 
 * **Analyse descriptive des données**
 
-   Adobe Campaign fournit un outil visuel permettant de produire des statistiques sur les données contenues dans la base de données. Vous pouvez créer des rapports d&#39;analyse descriptifs à l&#39;aide d&#39;un assistant dédié et adapter leur contenu ainsi que leur mise en page en fonction de vos besoins.
+   Adobe Campaign fournit un outil visuel permettant de produire des statistiques sur les données contenues dans la base de données. Vous pouvez créer des rapports d&#39;analyse descriptifs à l&#39;aide d&#39;un assistant dédié et adapter leur contenu ainsi que leur mise en page en fonction de vos besoins.
 
    Utilisez le menu **[!UICONTROL Outils > Analyse descriptive...]** pour créer un nouveau rapport.
 
@@ -39,7 +40,7 @@ Adobe Campaign propose un ensemble d&#39;outils de reporting répertoriés dans 
 
 * **Rapports personnalisés**
 
-   Utilisez Adobe Campaign pour créer des rapports sur les données de la base de données. Une fois créés, rendez-les accessibles dans les contextes appropriés.
+   Utilisez Adobe Campaign pour créer des rapports sur les données de la base de données. Une fois créés, rendez-les accessibles dans les contextes appropriés.
 
    ![](../assets/do-not-localize/book.png) Les étapes de création d&#39;un rapport sont détaillées dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=fr){target=&quot;_blank&quot;}. La création de rapports personnalisés est réservée aux utilisateurs avancés.
 
@@ -55,4 +56,4 @@ Analysez et mesurez les données, calculez les statistiques, simplifiez et optim
    ![](../assets/do-not-localize/book.png) Découvrez comment créer des cubes dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/designing-reports-with-cubes/about-cubes.html?lang=fr){target=&quot;_blank&quot;}
 
 
-Notez que les rapports Adobe Campaign sont optimisés et offrent de meilleures fonctionnalités d&#39;échelle que Campaign Classic v7. Les limitations existantes avec Cubes ne s&#39;appliquent pas.
+Notez que les rapports Adobe Campaign sont optimisés et offrent de meilleures fonctionnalités d&#39;échelle que Campaign Classic v7. Les limitations existantes avec Cubes ne s&#39;appliquent pas.

@@ -36,13 +36,13 @@ Le mapping SQL de notre schéma d&#39;exemple donne le document XML suivant :
 
 L&#39;élément racine du schéma n&#39;est plus **`<srcschema>`**, mais **`<schema>`**.
 
-Nous sommes sur un autre type de document qui est généré automatiquement à partir du schéma source, on parle alors simplement de schéma. C&#39;est ce schéma qui sera utilisé par l&#39;application Adobe Campaign.
+Nous sommes sur un autre type de document qui est généré automatiquement à partir du schéma source, on parle alors simplement de schéma. C&#39;est ce schéma qui sera utilisé par l&#39;application Adobe Campaign.
 
 Les noms SQL sont déduits automatiquement en fonction du nom et du type de l&#39;élément.
 
 Les règles de nommage des noms SQL sont les suivantes :
 
-* table : concaténation de l&#39;espace de noms et du nom du schéma
+* table : concaténation de l&#39;espace de noms et du nom du schéma
 
    Dans notre exemple le nom de la table est renseigné à partir de l&#39;élément principal du schéma dans l&#39;attribut **sqltable** :
 
@@ -97,7 +97,7 @@ Pour renseigner un champ en XML, il faut ajouter l&#39;attribut **xml** avec la 
    <element name="description" xml="true" type="html" label="Description"/>
    ```
 
-   Le type &quot;html&quot; permet de stocker le contenu HTML dans une balise CDATA et d&#39;afficher un contrôle spécifique d&#39;édition HTML dans l&#39;interface cliente Adobe Campaign.
+   Le type &quot;html&quot; permet de stocker le contenu HTML dans une balise CDATA et d&#39;afficher un contrôle spécifique d&#39;édition HTML dans l&#39;interface cliente Adobe Campaign.
 
 L&#39;utilisation de champs XML permet d&#39;ajouter des champs sans avoir à modifier la structure physique de la base. Un autre avantage est d&#39;utiliser moins de ressources (taille alouée des champs SQL, limite sur le nombre de champs par table, etc.).
 
@@ -122,7 +122,7 @@ Les clés suivent les règles suivantes :
 
 **Exemple**:
 
-* Ajout d&#39;une clé sur l&#39;e-mail et la ville :
+* Ajout d&#39;une clé sur l&#39;email et la ville :
 
    ```
    <srcSchema name="recipient" namespace="cus">
@@ -198,7 +198,7 @@ Les clés suivent les règles suivantes :
 
 ### Clé primaire - Identifiant
 
-La clé primaire des tables Adobe Campaign est un **identifiant universel unique (UUID)** généré automatiquement par le moteur de base de données. La valeur de clé est unique pour l&#39;ensemble de la base de données. Le contenu de la clé est automatiquement généré à l&#39;insertion de l&#39;enregistrement.
+La clé primaire des tables Adobe Campaign est un **identifiant universel unique (UUID)** généré automatiquement par le moteur de base de données. La valeur de clé est unique pour l&#39;ensemble de la base de données. Le contenu de la clé est automatiquement généré à l&#39;insertion de l&#39;enregistrement.
 
 **Exemple**
 

@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Documentation Adobe Campaign v8 {#campaign-documentation}
+# Documentation Adobe Campaign v8 {#campaign-documentation}
 
 ![](assets/banner-documentationv8.png)
 
@@ -65,4 +65,4 @@ ht-degree: 100%
 * [Mesure et suivi](start/reporting.md)
 * [Connexion à d&#39;autres solutions](connect/integration.md)
 * [FAQ Campaign v8](start/campaign-faq.md)
-* [Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
+* [Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)

@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Utilisation de Campaign et de Real-Time Customer Data Platform
 
-Avec **Adobe Experience Platform**, vous pouvez partager des données entre Campaign et Adobe Real-time Customer Data Platform (RTCDP). Vous pouvez ainsi cibler des audiences Adobe Experience Platform dans vos workflows Campaign, puis renvoyer à Adobe Real-time Customer Data Platform les données liées à ces audiences, notamment les envois, les ouvertures et les clics.
+Avec **Adobe Experience Platform**, vous pouvez partager des données entre Campaign et Adobe Real-time Customer Data Platform (RTCDP). Vous pouvez ainsi cibler des audiences Adobe Experience Platform dans vos workflows Campaign, puis renvoyer à Adobe Real-time Customer Data Platform les données liées à ces audiences, notamment les envois, les ouvertures et les clics.
 
 ![](../assets/do-not-localize/book.png) En savoir plus sur RTCDP dans [cette section](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=fr).
 

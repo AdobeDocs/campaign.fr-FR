@@ -14,9 +14,9 @@ ht-degree: 100%
 
 # Prise en main du modèle de données de Campaign{#gs-ac-datamodel}
 
-Un modèle de données d&#39;usine est fourni avec Adobe Campaign. Cette section fournit un certain nombre de détails sur les tables intégrées du modèle de données d&#39;Adobe Campaign et leurs interactions. Adobe Campaign repose sur une base de données cloud contenant des tables liées entre elles.
+Un modèle de données d’usine est fourni avec Adobe Campaign. Cette section fournit un certain nombre de détails sur les tables intégrées du modèle de données d&#39;Adobe Campaign et leurs interactions. Adobe Campaign repose sur une base de données cloud contenant des tables liées entre elles.
 
-La structure de base du modèle de données Adobe Campaign peut être décrite comme suit :
+La structure de base du modèle de données Adobe Campaign peut être décrite comme suit :
 
 * **Table des destinataires** : le modèle de données repose sur une table principale qui est par défaut la table des destinataires (nmsRecipient). Cette table enregistre tous les profils marketing.
 
@@ -28,7 +28,7 @@ La structure de base du modèle de données Adobe Campaign peut être décrite c
 
    Les logs de diffusion sont tous les messages envoyés aux destinataires ou aux appareils sur tous les canaux. Le tableau principal des logs de diffusion (NmsBroadLogRcp) contient les logs de diffusion pour tous les destinataires.
 Le tableau principal des logs de suivi (NmsTrackingLogRcp) stocke les logs de suivi pour tous les destinataires. Les logs de tracking se rapportent aux réactions des destinataires, telles que les ouvertures d&#39;e-mail et les clics. Chaque réaction correspond à un log de tracking.
-Les mpgs de diffusion et de tracking sont supprimés après une certaine période, spécifiée dans Adobe Campaign et modifiable. Il est donc vivement recommandé d&#39;exporter les logs de façon régulière.
+Les mpgs de diffusion et de tracking sont supprimés après une certaine période, spécifiée dans Adobe Campaign et modifiable. Il est donc vivement recommandé d&#39;exporter les logs de façon régulière.
 
 * **Tables techniques** : rassemblent les données techniques utilisées pour le processus d&#39;application, y compris les opérateurs et les droits d&#39;utilisateur (xtkGroup), et les dossiers (XtkFolder).
 

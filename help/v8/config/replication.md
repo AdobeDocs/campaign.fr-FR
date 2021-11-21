@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## Workflows techniques{#tech-wf}
 
-Adobe Campaign s’accompagne d’un ensemble de workflows techniques intégrés. Les workflows techniques exécutent des processus ou des traitements planifiés de manière régulière sur le serveur.
+Adobe Campaign s’accompagne d’un ensemble de workflows techniques intégrés. Les workflows techniques exécutent des processus ou des traitements planifiés de manière régulière sur le serveur.
 
 Ces workflows effectuent des opérations de maintenance sur la base de données, tirent parti des informations de tracking contenues dans les logs de diffusion, créent des campagnes récurrentes, etc.
 

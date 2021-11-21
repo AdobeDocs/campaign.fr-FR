@@ -18,15 +18,15 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
 1. **Comment effectuer une mise à niveau de Campaign vers la dernière version ?**
 
-   Adobe Campaign fait l&#39;objet de mises à jour régulières. Des versions mineures sont publiées chaque année avec de nouvelles fonctionnalités, des améliorations et des correctifs. En outre, nous publions périodiquement des builds avec des correctifs cumulatifs uniquement.
+   Adobe Campaign fait l&#39;objet de mises à jour régulières. Des versions mineures sont publiées chaque année avec de nouvelles fonctionnalités, des améliorations et des correctifs. En outre, nous publions périodiquement des builds avec des correctifs cumulatifs uniquement.
 
-   Cette fréquence régulière de mise à jour a pour but de vous fournir les dernières fonctionnalités et améliorations. Vous bénéficiez ainsi d&#39;un environnement sécurisé et d&#39;une expérience optimale avec notre produit. C&#39;est la raison pour laquelle nous pensons qu&#39;il est important que vous exécutiez la version la plus récente d&#39;Adobe Campaign.
+   Cette fréquence régulière de mise à jour a pour but de vous fournir les dernières fonctionnalités et améliorations. Vous bénéficiez ainsi d&#39;un environnement sécurisé et d&#39;une expérience optimale avec notre produit. C’est la raison pour laquelle nous pensons qu’il est important que vous exécutiez la version la plus récente d’Adobe Campaign.
 
    ![](../assets/do-not-localize/speech.png)  En tant qu’utilisateur de Managed Cloud Services, votre instance est mise à niveau par Adobe avec chaque nouvelle version.
 
 1. **Comment se connecter à Campaign v8 ?**
 
-   Vous devez télécharger et installer la console cliente Campaign pour vous connecter à Adobe Campaign.
+   Vous devez télécharger et installer la console cliente Campaign pour vous connecter à Adobe Campaign.
 
    ![](../assets/do-not-localize/glass.png) [Pour en savoir plus, cliquez ici](connect.md).
 
@@ -44,7 +44,7 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
 1. **Comment puis-je m&#39;assurer que ma diffusion est envoyée sans erreur ?**
 
-   Adobe Campaign contient un ensemble de tableaux de bord et d&#39;outils qui permettent de surveiller vos diffusions E-mail.
+   Adobe Campaign contient un ensemble de tableaux de bord et d&#39;outils qui permettent de surveiller vos diffusions E-mail.
 
    [Consultez la documentation de Campaign Classic v7 pour découvrir](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr){target=&quot;_blank&quot;} comment vous assurer que vos messages sont bien envoyés, surveiller l&#39;exécution et entreprendre une action en cas d&#39;erreur.
 
@@ -54,7 +54,7 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
 1. **Avec quels systèmes et composants Campaign v8 est-il compatible ?**
 
-   Vous trouverez la liste de tous les systèmes et composants pris en charge dans la dernière version de Campaign dans la [matrice de compatibilité d&#39;Adobe Campaign](compatibility-matrix.md).
+   Vous trouverez la liste de tous les systèmes et composants pris en charge dans la dernière version de Campaign dans la [matrice de compatibilité d&#39;Adobe Campaign](compatibility-matrix.md).
 
 1. **Quelle est la procédure pour la délégation de domaine ?**
 
@@ -70,7 +70,7 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
    Vous pouvez obtenir le programme d&#39;installation et la console cliente à partir du Centre de téléchargement d&#39;Adobe.
 
-   En tant qu’utilisateur administrateur, accédez à la [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/fr/campaign.html) d’Adobe {target=&quot;_blank&quot;} pour télécharger Adobe Campaign.
+   En tant qu’utilisateur administrateur, accédez à la [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/fr/campaign.html) d’Adobe {target=&quot;_blank&quot;} pour télécharger Adobe Campaign.
 
    En savoir plus sur le Centre de distribution [sur cette page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr){target=&quot;_blank&quot;}.
 

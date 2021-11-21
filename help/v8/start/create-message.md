@@ -14,13 +14,13 @@ ht-degree: 100%
 
 # Prise en main des messages{#gs-ac-audiences}
 
-Avec Adobe Campaign, vous pouvez réaliser des campagnes cross-canal, y compris sous forme d&#39;e-mails, SMS, notifications push et courrier, et mesurer leur efficacité à l&#39;aide de différents rapports dédiés. Ces messages sont conçus et envoyés par le biais de diffusions, et peuvent être personnalisés pour chaque destinataire.
+Avec Adobe Campaign, vous pouvez réaliser des campagnes cross-canal, y compris sous forme d&#39;e-mails, SMS, notifications push et courrier, et mesurer leur efficacité à l&#39;aide de différents rapports dédiés. Ces messages sont conçus et envoyés par le biais de diffusions, et peuvent être personnalisés pour chaque destinataire.
 
-Les principales fonctionnalités comprennent le ciblage, la définition et la personnalisation des messages, l&#39;exécution des communications et les rapports opérationnels associés. Le principal point d&#39;accès fonctionnel est l&#39;assistant de diffusion. Ce point d&#39;accès permet d&#39;accéder à de multiples fonctionnalités proposées par Adobe Campaign.
+Les principales fonctionnalités comprennent le ciblage, la définition et la personnalisation des messages, l&#39;exécution des communications et les rapports opérationnels associés. Le principal point d&#39;accès fonctionnel est l&#39;assistant de diffusion. Ce point d&#39;accès permet d&#39;accéder à de multiples fonctionnalités proposées par Adobe Campaign.
 
 Découvrez les principales étapes de création d&#39;une diffusion dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=fr).
 
-Adobe Campaign v8 propose les canaux de diffusion suivants :
+Adobe Campaign v8 propose les canaux de diffusion suivants :
 
 * **Canal e-mail** : les diffusions e-mail permettent d&#39;envoyer des e-mails personnalisés à la population cible. Apprenez-en davantage en consultant [cette page](../send/email.md).
 
@@ -68,7 +68,7 @@ Une fois votre message créé et son contenu conçu et testé, vous pouvez chois
 
 ## Ajout de personnalisation
 
-Les messages diffusés par Adobe Campaign peuvent être personnalisés de différentes façons.
+Les messages diffusés par Adobe Campaign peuvent être personnalisés de différentes façons.
 
 Vous pouvez ainsi :
 

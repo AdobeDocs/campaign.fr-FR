@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Création d&#39;un schéma{#create-new-schema}
 
-Pour modifier, créer et paramétrer les schémas, cliquez sur le nœud **[!UICONTROL Administration > Paramétrage > Schémas de données]** de la console cliente Adobe Campaign.
+Pour modifier, créer et paramétrer les schémas, cliquez sur le nœud **[!UICONTROL Administration > Paramétrage > Schémas de données]** de la console cliente Adobe Campaign.
 
 >[!NOTE]
 >

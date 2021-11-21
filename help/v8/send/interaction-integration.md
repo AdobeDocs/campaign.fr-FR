@@ -2,7 +2,8 @@
 product: campaign
 title: Présenter une offre (interaction entrante)
 description: Découvrez comment présenter la meilleure offre à lʼaide du module Interaction de Campaign.
-source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
+exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
+source-git-commit: 00a88cf9217faf32070a3cd34a2c1ae5243d9a6e
 workflow-type: tm+mt
 source-wordcount: '1478'
 ht-degree: 100%
@@ -21,7 +22,7 @@ L&#39;URL d&#39;appel au script est de la forme suivante :
 
 Le paramètre &quot;**env**&quot; reçoit le nom interne de l&#39;environnement en ligne dédié aux interactions anonymes.
 
-Pour présenter une offre, il faut donc créer un environnement ainsi qu&#39;un emplacement pour l&#39;offre dans Adobe Campaign, puis configurer la page HTML.
+Pour présenter une offre, il faut donc créer un environnement ainsi qu&#39;un emplacement pour l&#39;offre dans Adobe Campaign, puis configurer la page HTML.
 
 Les cas d&#39;utilisations suivants présentent les différentes options possibles dans l&#39;intégration d&#39;offres via Javascript.
 
@@ -31,7 +32,7 @@ Les cas d&#39;utilisations suivants présentent les différentes options possibl
 
 **Étape 1 : préparation du moteur dʼoffres**
 
-1. Dans l&#39;interface d&#39;Adobe Campaign, préparez un environnement anonyme.
+1. Dans l&#39;interface d&#39;Adobe Campaign, préparez un environnement anonyme.
 1. Créez un emplacement rattaché à l&#39;environnement anonyme.
 1. Créez une offre et sa représentation associée à l&#39;emplacement.
 
@@ -149,7 +150,7 @@ Lʼappel au moteur dʼoffres est de la forme suivante :
 
 * Le paramètre &quot;**gctx**&quot; reçoit les données d&#39;appel globales (contexte) à toute la page. Ce paramètre est optionnel.
 
-Le noeud XML retourné est de la forme suivante :
+Le noeud XML retourné est de la forme suivante :
 
 ```
 <propositions>
@@ -160,7 +161,7 @@ Le noeud XML retourné est de la forme suivante :
 </propositions>
 ```
 
-Le cas d’utilisation suivant décrit les paramétrages à effectuer dans Adobe Campaign pour activer le mode XML, puis montre le résultat de l’appel au moteur dans la page HTML.
+Le cas d’utilisation suivant décrit les paramétrages à effectuer dans Adobe Campaign pour activer le mode XML, puis montre le résultat de l’appel au moteur dans la page HTML.
 
 1. **Créer un environnement et un emplacement**
 
@@ -170,7 +171,7 @@ Le cas d’utilisation suivant décrit les paramétrages à effectuer dans Adobe
 
 1. **Étendre le schéma des offres pour ajouter de nouveaux champs**
 
-   Ce schéma va définir les champs suivants : titre N°2 et prix.
+   Ce schéma va définir les champs suivants : titre N°2 et prix.
 
    Le nom du schéma dans l&#39;exemple est **cus:offer**
 
@@ -209,7 +210,7 @@ Le cas d’utilisation suivant décrit les paramétrages à effectuer dans Adobe
 
    Editer le formulaire de saisie **Offre (nms)**.
 
-   Insérer dans la partie intitulée &quot;Views&quot;, les deux nouveaux champs avec le contenu suivant :
+   Insérer dans la partie intitulée &quot;Views&quot;, les deux nouveaux champs avec le contenu suivant :
 
    ```
    <input label="Title 2" margin-right="5" prebuildSubForm="false" type="subFormLink" xpath="title2_jst">
@@ -234,7 +235,7 @@ Le cas d’utilisation suivant décrit les paramétrages à effectuer dans Adobe
     <input colspan="2" label="Prix" nolabel="true" type="number" xpath="price_jst"/>
    ```
 
-   Mettre en commentaire le champ URL de destination :
+   Mettre en commentaire le champ URL de destination :
 
    ![](assets/interaction_xmlmode_form_001.png)
 
@@ -262,7 +263,7 @@ Le cas d’utilisation suivant décrit les paramétrages à effectuer dans Adobe
 
 1. **Appel du moteur et résultat dans la page HTML**
 
-   L’appel au moteur d’offres dans la page HTML est le suivant :
+   L’appel au moteur d’offres dans la page HTML est le suivant :
 
    ```
    <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=OE7&cb=alert" type="text/javascript">
@@ -272,7 +273,7 @@ Le cas d’utilisation suivant décrit les paramétrages à effectuer dans Adobe
 
    Le paramètre &quot;**cb**&quot; a pour valeur le nom de la fonction qui doit interpréter le noeud XML renvoyé par le moteur. Dans notre exemple, la fonction appelée ouvre une fenêtre modale (fonction alert() ).
 
-   Le nœud XML renvoyé par le moteur d’offres a la forme suivante :
+   Le nœud XML renvoyé par le moteur d’offres a la forme suivante :
 
    ```
    <propositions>
@@ -298,7 +299,7 @@ Il est possible d’utiliser une fonction de rendu XML pour créer une présenta
 1. Sélectionnez **[!UICONTROL Surcharger la fonction de rendu XML]**.
 1. Dans l&#39;onglet **[!UICONTROL Rendu XML]**, insérez la fonction voulue.
 
-   La fonction peut ressembler à l&#39;exemple ci-dessous :
+   La fonction peut ressembler à l&#39;exemple ci-dessous :
 
    ```
    function (proposition) {
@@ -311,41 +312,41 @@ Il est possible d’utiliser une fonction de rendu XML pour créer une présenta
 
 ## Configuration d’une intégration SOAP
 
-Les services web SOAP fournis pour la gestion des offres sont différents de ceux habituellement utilisés dans Adobe Campaign. Ils sont accessibles via l&#39;URL d&#39;interaction décrite dans la section précédente et permettent de proposer ou mettre à jour des offres pour un contact donné.
+Les services web SOAP fournis pour la gestion des offres sont différents de ceux habituellement utilisés dans Adobe Campaign. Ils sont accessibles via l&#39;URL d&#39;interaction décrite dans la section précédente et permettent de proposer ou mettre à jour des offres pour un contact donné.
 
 ### Proposition d&#39;offres {#offer-proposition}
 
-Pour une proposition d&#39;offres via SOAP, vous devez ajouter la commande **nms:proposition#Propose**, suivie des paramètres suivants :
+Pour une proposition d&#39;offres via SOAP, vous devez ajouter la commande **nms:proposition#Propose**, suivie des paramètres suivants :
 
-* **targetId** : clé primaire du destinataire (il peut s&#39;agir d&#39;une clé composite).
-* **maxCount** : indique le nombre de propositions d&#39;offre pour le contact.
+* **targetId** : clé primaire du destinataire (il peut s&#39;agir d&#39;une clé composite).
+* **maxCount** : indique le nombre de propositions d&#39;offre pour le contact.
 * **context** : vous permet d’ajouter des informations contextuelles dans le schéma d’espace. Si le schéma utilisé est **nms:interaction**, **`<empty>`** doit être ajouté.
-* **categories** : indique la ou les catégories auxquelles doivent appartenir la ou les offres proposées.
-* **themes** : indique la ou les thèmes auxquelles doivent appartenir la ou les offres proposées.
-* **uuid** : valeur du cookie permanent Adobe Campaign (&quot;uuid230&quot;).
-* **nlid** : valeur du cookie de session Adobe Campaign (&quot;nlid&quot;).
-* **noProp** : utilisez la valeur &quot;true&quot; pour désactiver l&#39;insertion de propositions.
+* **categories** : indique la ou les catégories auxquelles doivent appartenir la ou les offres proposées.
+* **themes** : indique la ou les thèmes auxquelles doivent appartenir la ou les offres proposées.
+* **uuid** : valeur du cookie permanent Adobe Campaign (&quot;uuid230&quot;).
+* **nlid** : valeur du cookie de session Adobe Campaign (&quot;nlid&quot;).
+* **noProp** : utilisez la valeur &quot;true&quot; pour désactiver l&#39;insertion de propositions.
 
 >[!NOTE]
 >
 >Les paramètres **targetId** et **maxCount** sont obligatoires. Les autres sont optionnels.
 
-En réponse à la requête, le service SOAP renverra les paramètres suivants :
+En réponse à la requête, le service SOAP renverra les paramètres suivants :
 
-* **interactionId** : id de l&#39;interaction.
-* **propositions** : élément XML, contient la liste des propositions, chacune ayant un id et une représentation HTML propre.
+* **interactionId** : id de l&#39;interaction.
+* **propositions** : élément XML, contient la liste des propositions, chacune ayant un id et une représentation HTML propre.
 
 ### Mise à jour d&#39;une offre {#offer-update}
 
-Ajoutez la commande **nms:interaction#UpdateStatus** dans l&#39;URL, puis les paramètres suivants :
+Ajoutez la commande **nms:interaction#UpdateStatus** dans l&#39;URL, puis les paramètres suivants :
 
 * **proposition** : chaîne de caractères, contient l&#39;identifiant de la proposition donnée en sortie lors d&#39;un appel au moteur. Voir [Proposition d&#39;offres](#offer-proposition).
-* **status** : nombre, indique le nouveau statut de l&#39;offre. Les valeurs possibles sont listées dans l&#39;énumération **propositionStatus**, dans le schéma **nms:common**. Par exemple, d&#39;usine, le nombre 3 correspond au statut **Acceptée**.
+* **status** : nombre, indique le nouveau statut de l&#39;offre. Les valeurs possibles sont listées dans l&#39;énumération **propositionStatus**, dans le schéma **nms:common**. Par exemple, d&#39;usine, le nombre 3 correspond au statut **Acceptée**.
 * **Context** : élément XML, vous permet d’ajouter des informations contextuelles dans le schéma d’espace. Si le schéma utilisé est **nms:interaction**, **`<empty>`** doit être ajouté.
 
 ### Exemple d&#39;utilisation d&#39;un appel SOAP {#example-using-a-soap-call}
 
-Voici un exemple de code pour un appel SOAP :
+Voici un exemple de code pour un appel SOAP :
 
 ```
 <%

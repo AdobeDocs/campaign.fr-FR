@@ -1,5 +1,5 @@
 ---
-title: Envoi de courriers avec Adobe Campaign
+title: Envoi de courriers avec Adobe Campaign
 description: Prise en main du courrier dans Campaign
 feature: Overview
 role: Data Engineer

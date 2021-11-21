@@ -1,8 +1,9 @@
 ---
 product: campaign
 title: Bonnes pratiques relatives aux interactions Adobe Campaign
-description: Recommandations relatives à la gestion du module Interaction dans Adobe Campaign
-source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
+description: Recommandations relatives à la gestion du module Interaction dans Adobe Campaign
+exl-id: 28f3a5bc-67f5-413e-b2ba-35c341f9ec5f
+source-git-commit: 00a88cf9217faf32070a3cd34a2c1ae5243d9a6e
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 ## Recommandations générales {#general-recommendations}
 
-Une gestion des offres efficace dans Adobe Campaign requiert une attention toute particulière. Pour éviter tout problème, vous devez trouver le juste milieu entre le nombre de contacts et le nombre de catégories dʼoffres et le nombre dʼoffres.
+Une gestion des offres efficace dans Adobe Campaign requiert une attention toute particulière. Pour éviter tout problème, vous devez trouver le juste milieu entre le nombre de contacts et le nombre de catégories dʼoffres et le nombre dʼoffres.
 
 Cette section présente les bonnes pratiques pour gérer le module **nteraction** dans Adobe Campaign, y compris les règles dʼéligibilité, les filtres prédéfinis, les activités de workflow et les options de bases de données.
 
@@ -110,7 +111,7 @@ Lorsque vous utilisez le module Interaction et que vous sélectionnez manuelleme
 
 ### Extension du schéma nms:offer {#extending-nms-offer-schema}
 
-Lors de l&#39;extension du schéma nms:offer, veillez à suivre la structure prête à l&#39;emploi déjà configurée :
+Lors de l&#39;extension du schéma nms:offer, veillez à suivre la structure prête à l&#39;emploi déjà configurée :
 * Définissez un nouveau champ pour le stockage du contenu sous `<element name="view">`.
 * Un nouveau champ doit être défini deux fois. Une fois sous forme de champ XML normal, et une autre fois sous forme de champ XML CDATA en ajoutant &quot;_jst&quot; au nom. Par exemple :
 

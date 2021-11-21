@@ -177,13 +177,13 @@ Les éléments **`<elements>`** et **`<attributes>`** du schéma de données peu
    <attribute name="email" type="string" length="80" label="Email"/>
    ```
 
-   Le libellé est visible à partir du formulaire de saisie de la console cliente Adobe Campaign :
+   Le libellé est visible à partir du formulaire de saisie de la console cliente Adobe Campaign :
 
    ![](assets/schema_label.png)
 
 * La propriété **desc** permet de saisir une description longue.
 
-   La description est visible à partir du formulaire de saisie dans la barre de statut de la fenêtre principale de la console cliente Adobe Campaign.
+   La description est visible à partir du formulaire de saisie dans la barre de statut de la fenêtre principale de la console cliente Adobe Campaign.
 
    >[!NOTE]
    >
@@ -210,11 +210,11 @@ La valeur doit être une expression conforme au langage XPath. Pour plus d&#39;i
 
    >[!NOTE]
    >
-   >Dans la console cliente Adobe Campaign, le nœud **[!UICONTROL Administration > Compteurs]** permet de gérer les compteurs.
+   >Dans la console cliente Adobe Campaign, le noeud **[!UICONTROL Administration>Compteurs]** permet de gérer les compteurs.
 
 Pour lier une valeur par défaut à un champ, vous pouvez utiliser le `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
-`<default>` : vous permet de préremplir le champ avec une valeur par défaut lors de la création d&#39;entités. La valeur ne sera pas une valeur SQL par défaut.
+`<default>` : vous permet de préremplir le champ avec une valeur par défaut lors de la création d’entités. La valeur ne sera pas une valeur SQL par défaut.
 
 `<sqldefault>` : vous permet d&#39;avoir une valeur ajoutée lors de la création d&#39;un champ. Cette valeur s&#39;affiche sous forme de résultat SQL. Lors de la mise à jour d&#39;un schéma, seuls les nouveaux enregistrements seront affectés par cette valeur.
 
@@ -234,7 +234,7 @@ Une liste déroulante énumère la liste de ces valeurs à partir du formulaire 
 
 >[!NOTE]
 >
->Dans la console cliente Adobe Campaign, le nœud **[!UICONTROL Administration > Enumérations]** permet de gérer les énumérations.
+>Dans la console cliente Adobe Campaign, le nœud **[!UICONTROL Administration > Enumérations]** permet de gérer les énumérations.
 
 #### Énumération fixe {#set-enumeration}
 
@@ -284,7 +284,7 @@ Les valeurs de l&#39;énumération sont déclarées dans l&#39;élément **`<val
 
 ### Exemple {#example}
 
-Notre schéma d&#39;exemple complété avec les propriétés :
+Notre schéma d&#39;exemple complété avec les propriétés :
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -328,7 +328,7 @@ Avec la projection du contenu XML :
 
 ## Référencement avec XPath {#reference-with-xpath}
 
-Le langage XPath est utilisé dans Adobe Campaign pour référencer un élément ou un attribut appartenant à un schéma de données.
+Le langage XPath est utilisé dans Adobe Campaign pour référencer un élément ou un attribut appartenant à un schéma de données.
 
 XPath est une syntaxe permettant la localisation d&#39;un nœud dans l&#39;arbre d&#39;un document XML.
 
@@ -336,9 +336,9 @@ Les éléments sont désignés par leur nom, les attributs sont désignés par l
 
 **Exemple**:
 
-* **@email** : sélectionne l&#39;e-mail,
+* **@email** : sélectionne l&#39;email,
 * **Location/@city** : sélectionne l&#39;attribut &quot;city&quot; sous l&#39;élément **`<location>`**.
-* **../@email** : sélectionne l&#39;e-mail sur l&#39;élément parent de l&#39;élément courant
+* **../@email** : sélectionne l&#39;email sur l&#39;élément parent de l&#39;élément courant
 * **group`[1]/@label`** : sélectionne l&#39;attribut &quot;label&quot; enfant du premier élément de collection **`<group>`**
 * **group`[@label='test1']`** : sélectionne l&#39;attribut &quot;label&quot;, enfant de l&#39;élément **`<group>`** et contenant la valeur &quot;test1&quot;
 
@@ -348,17 +348,18 @@ Les éléments sont désignés par leur nom, les attributs sont désignés par l
 >
 >* **Location/@city** n&#39;est pas valide ; veuillez utiliser **`[location/@city]`**
 >* **`[@email]`** et **@email** sont équivalents
+
 >
 
 
 Il est aussi possible de définir des expressions complexes, telles que les opérations arithmétiques :
 
 * **@gender+1** : ajoute 1 au contenu de l&#39;attribut **gender**,
-* **@email + &#39;(&#39;+@created+&#39;)&#39;** : construit une chaîne en prenant la valeur de l&#39;e-mail ajoutée à la date de création entre parenthèses (pour le type chaîne, il faut mettre la constante entre guillemets).
+* **@email + &#39;(&#39;+@created+&#39;)&#39;** : construit une chaîne en prenant la valeur de l&#39;email ajoutée à la date de création entre parenthèses (pour le type chaîne, il faut mettre la constante entre quotes).
 
 Des fonctions de haut niveau ont été ajoutées aux expressions afin d&#39;enrichir les possibilités offertes par ce langage.
 
-La liste des fonctions disponibles est accessible à partir de n&#39;importe quel éditeur d&#39;expressions dans la console cliente Adobe Campaign :
+La liste des fonctions disponibles est accessible à partir de n&#39;importe quel éditeur d&#39;expressions dans la console cliente Adobe Campaign :
 
 ![](assets/schema_function.png)
 
@@ -366,7 +367,7 @@ La liste des fonctions disponibles est accessible à partir de n&#39;importe que
 
 * **GetDate()** : retourne la date courante
 * **Year(@created)** : retourne l&#39;année de la date contenue dans l&#39;attribut &quot;created&quot;
-* **GetEmailDomain(@email)** : retourne le domaine de l&#39;e-mail
+* **GetEmailDomain(@email)** : retourne le domaine de l&#39;email
 
 ## Construire une chaîne via la compute string {#building-a-string-via-the-compute-string}
 

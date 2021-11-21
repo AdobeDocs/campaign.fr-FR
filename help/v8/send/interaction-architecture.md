@@ -4,7 +4,8 @@ description: Notions de base sur lʼarchitecture des interactions dans Campaign
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
+exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
+source-git-commit: 00a88cf9217faf32070a3cd34a2c1ae5243d9a6e
 workflow-type: tm+mt
 source-wordcount: '1328'
 ht-degree: 100%
@@ -29,14 +30,14 @@ Une offre nʼest déployée que sur les emplacements sélectionnés lors de la v
 
 ## Interactions entrantes et sortantes {#interaction-types}
 
-Le module Interaction dʼAdobe Campaign propose deux types dʼinteractions :
+Le module Interaction dʼAdobe Campaign propose deux types dʼinteractions :
 
 * interactions **entrantes**, initiées par un contact. [En savoir plus](interaction-present-offers.md)
 * interactions **sortantes**, initiées par un chargé de diffusion Campaign. [En savoir plus](interaction-send-offers.md)
 
 Ces deux types dʼinteractions peuvent être réalisés soit en **mode unitaire** (lʼoffre est calculée pour un seul contact), soit en **mode batch** (lʼoffre est calculée pour un ensemble de contacts). Généralement, les interactions entrantes sont réalisées en mode unitaire et les interactions sortantes en mode batch. Néanmoins, des exceptions peuvent exister, par exemple pour des [messages transactionnels](transactional.md), où lʼinteraction sortante est réalisée en mode unitaire.
 
-Dès lors quʼune offre peut ou doit être présentée (en fonction des paramétrages réalisés), le moteur dʼoffre joue le rôle dʼintermédiaire : il calcule automatiquement la meilleure offre possible pour un contact parmi celles disponibles, en combinant les données recueillies sur le contact et les différentes règles applicables définies dans lʼapplication.
+Dès lors quʼune offre peut ou doit être présentée (en fonction des paramétrages réalisés), le moteur dʼoffre joue le rôle dʼintermédiaire : il calcule automatiquement la meilleure offre possible pour un contact parmi celles disponibles, en combinant les données recueillies sur le contact et les différentes règles applicables définies dans lʼapplication.
 
 ![](assets/architecture_interaction2.png)
 
@@ -98,8 +99,8 @@ Sur les instances de pilotage :
    * Cochez l&#39;option **[!UICONTROL Activé]**.
    * Renseignez les paramètres de connexion à l&#39;instance d&#39;exécution.
    * Chaque instance d&#39;exécution doit être associée à un identifiant. Cet identifiant est attribué lorsque vous cliquez sur le bouton **[!UICONTROL Initialiser la connexion]**.
-   * Cochez le type d&#39;application utilisée : **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]**, ou les deux.
-   * Renseignez le compte FDA utilisé. Un opérateur doit être créé sur les instances d&#39;exécution et doit posséder les droits de lecture et de modification suivants au niveau de la base de données de l&#39;instance en question :
+   * Cochez le type d&#39;application utilisée : **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]**, ou les deux.
+   * Renseignez le compte FDA utilisé. Un opérateur doit être créé sur les instances d&#39;exécution et doit posséder les droits de lecture et de modification suivants au niveau de la base de données de l&#39;instance en question :
 
       ```
       grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
@@ -109,7 +110,7 @@ Sur les instances de pilotage :
    >
    >L&#39;adresse IP de l&#39;instance de pilotage doit être autorisée sur les instances d&#39;exécution.
 
-1. Configurez l&#39;environnement :
+1. Configurez l&#39;environnement :
 
    ![](assets/interaction_powerbooster2.png)
 
@@ -126,7 +127,7 @@ Si, pour des raisons d&#39;optimisation, seulement une partie de la base marketi
 
 ### Options de maintenance {#maintenance-options}
 
-Voici la liste des options de maintenance disponibles sur l&#39;instance de pilotage :
+Voici la liste des options de maintenance disponibles sur l&#39;instance de pilotage :
 
 >[!CAUTION]
 >
@@ -134,11 +135,11 @@ Voici la liste des options de maintenance disponibles sur l&#39;instance de pilo
 
 * **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`** : date de dernière synchronisation d’un environnement sur une instance donnée.
 * **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`** : date de dernière synchronisation des propositions d’un schéma donné d’une instance vers une autre.
-* **`NmsInteraction_MapWorkflowId`** : option contenant la liste de tous les workflows de synchronisation générés.
+* **`NmsInteraction_MapWorkflowId`** : option contenant la liste de tous les workflows de synchronisation générés.
 
-L&#39;option suivante est disponible sur les instances d&#39;exécution :
+L&#39;option suivante est disponible sur les instances d&#39;exécution :
 
-**NmsExecutionInstanceId** : option contenant l&#39;identifiant de l&#39;instance.
+**NmsExecutionInstanceId** : option contenant l&#39;identifiant de l&#39;instance.
 
 ### Installation des packages {#packages-installation}
 

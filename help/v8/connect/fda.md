@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Federated Data Access (FDA){#gs-fda}
 
-Utilisez le connecteur FDA (Federated Data Access) pour connecter Campaign à une ou plusieurs **bases de données externes** et traiter les informations stockées dans celles-ci sans affecter vos données provenant des bases cloud de Campaign. Vous pouvez ensuite accéder à des données externes sans modifier la structure des données Adobe Campaign.
+Utilisez le connecteur FDA (Federated Data Access) pour connecter Campaign à une ou plusieurs **bases de données externes** et traiter les informations stockées dans celles-ci sans affecter vos données provenant des bases cloud de Campaign. Vous pouvez ensuite accéder à des données externes sans modifier la structure des données Adobe Campaign.
 
 >[!NOTE]
 >
@@ -38,11 +38,11 @@ Des **autorisations** spécifiques sont requises sur [!DNL Adobe Campaign] et su
 
    L&#39;option FDA est utilisée pour manipuler les données des bases de données externes en mode batch dans les workflows. Pour éviter les problèmes de performance, il n&#39;est pas recommandé d&#39;utiliser le module FDA dans le cadre d&#39;opérations unitaires, par exemple : personnalisation, interaction, messagerie en temps réel, etc.
 
-   Evitez autant que possible les opérations nécessitant d&#39;utiliser à la fois la base Adobe Campaign et la base externe. Pour cela, vous pouvez :
+   Evitez autant que possible les opérations nécessitant d&#39;utiliser à la fois la base Adobe Campaign et la base externe. Pour cela, vous pouvez :
 
-   * exporter les données de la base Adobe Campaign vers la base externe et effectuer les opérations uniquement depuis la base externe avant de réimporter les résultats dans Adobe Campaign.
+   * exporter les données de la base Adobe Campaign vers la base externe et effectuer les opérations uniquement depuis la base externe avant de réimporter les résultats dans Adobe Campaign.
 
-   * collecter les données de la base externe dans Adobe Campaign et effectuer les opérations localement.
+   * collecter les données de la base externe dans Adobe Campaign et effectuer les opérations localement.
 
    Si vous souhaitez effectuer de la personnalisation dans vos diffusions à l&#39;aide des données de la base externe, collectez les données à utiliser dans un workflow afin de les rendre disponibles dans une table temporaire. Utilisez alors les données de la table temporaire pour personnaliser votre diffusion.
 
@@ -54,7 +54,7 @@ Des **autorisations** spécifiques sont requises sur [!DNL Adobe Campaign] et su
 Pour configurer l&#39;accès à une base de données externe avec FDA, les étapes de configuration sont les suivantes :
 
 1. En tant qu&#39;utilisateur Adobe Managed Services, contactez Adobe pour installer les pilotes sur votre instance Campaign.
-1. Une fois les pilotes installés, configurez le compte externe correspondant à votre base de données sur le serveur Adobe Campaign et testez le compte externe. [En savoir plus](#fda-external-account)
+1. Une fois les pilotes installés, configurez le compte externe correspondant à votre base de données sur le serveur Adobe Campaign et testez le compte externe. [En savoir plus](#fda-external-account)
 1. Créez le schéma de la base de données externe dans Adobe Campaign. Il est ainsi possible d&#39;identifier la structure des données de la base de données externe. [En savoir plus](#create-data-schema)
 1. Si nécessaire, créez un mapping de ciblage à partir du schéma créé précédemment. Ceci est nécessaire si les destinataires de vos diffusions proviennent de la base de données externe. Cette implémentation s&#39;accompagne de limitations liées à la personnalisation des messages. [En savoir plus](#define-data-mapping)
 
@@ -90,7 +90,7 @@ Pour ce faire, procédez comme suit :
 
 1. Une fois les paramètres renseignés, cliquez sur le bouton **[!UICONTROL Tester la connexion]** pour les valider.
 
-1. Pour permettre à Adobe Campaign d&#39;accéder à cette base, vous devez déployer les fonctions SQL. Cliquez sur l&#39;onglet **[!UICONTROL Paramètres]** puis sur le bouton **[!UICONTROL Déployer les fonctions]**.
+1. Pour permettre à Adobe Campaign d&#39;accéder à cette base, vous devez déployer les fonctions SQL. Cliquez sur l&#39;onglet **[!UICONTROL Paramètres]** puis sur le bouton **[!UICONTROL Déployer les fonctions]**.
 
 Vous pouvez définir des tablespaces de travail spécifiques pour les tables et pour les index dans l&#39;onglet **[!UICONTROL Paramètres]**.
 
@@ -107,7 +107,7 @@ Pour [!DNL Snowflake], le connecteur prend en charge les options suivantes :
 
 ## Création du schéma de données{#create-data-schema}
 
-Pour créer le schéma de la base externe dans Adobe Campaign, procédez comme suit :
+Pour créer le schéma de la base externe dans Adobe Campaign, procédez comme suit :
 
 1. Cliquez sur le bouton **[!UICONTROL Nouveau]** au-dessus de la liste des schémas de données et sélectionnez **[!UICONTROL Accéder à des données externes]**.
 
@@ -129,7 +129,7 @@ Pour cela, une fois que le schéma de la table externe a été créé, vous deve
 
 Pour ce faire, procédez comme suit :
 
-1. Accédez à **[!UICONTROL Administration]** `>` **[!UICONTROL Gestion de campagne]** `>` **[!UICONTROL Mappings de ciblage]** à partir de l&#39;explorateur Adobe Campaign.
+1. Accédez à **[!UICONTROL Administration]** `>` **[!UICONTROL Gestion de campagne]** `>` **[!UICONTROL Mappings de ciblage]** à partir de l&#39;explorateur Adobe Campaign.
 
 1. Créez un nouveau mapping de ciblage et sélectionnez le schéma que vous venez de créer comme dimension de ciblage.
 
@@ -161,7 +161,7 @@ Des **autorisations** spécifiques sont requises sur [!DNL Adobe Campaign] et su
 
 Tout d&#39;abord, afin qu&#39;un utilisateur puisse effectuer des opérations sur une base externe via FDA, l&#39;opérateur doit disposer d&#39;un droit nommé spécifique dans [!DNL Adobe Campaign].
 
-1. Sélectionnez le nœud **[!UICONTROL Administration > Gestion des accès > Droits nommés]** de l&#39;explorateur Adobe Campaign.
+1. Sélectionnez le nœud **[!UICONTROL Administration > Gestion des accès > Droits nommés]** de l&#39;explorateur Adobe Campaign.
 1. Créez un nouveau droit en indiquant le libellé de votre choix.
 1. Saisissez le nom du droit nommé au format **user:base@server**, où :
 
@@ -169,9 +169,9 @@ Tout d&#39;abord, afin qu&#39;un utilisateur puisse effectuer des opérations su
    * **base** est le nom de la base de données externe
    * **server** est le nom du serveur de la base de données externe
 
-1. Enregistrez le droit nommé puis associez-le à l&#39;opérateur de votre choix à partir du nœud **[!UICONTROL Administration > Gestion des accès > Opérateurs]** de l&#39;explorateur Adobe Campaign.
+1. Enregistrez le droit nommé puis associez-le à l&#39;opérateur de votre choix à partir du nœud **[!UICONTROL Administration > Gestion des accès > Opérateurs]** de l&#39;explorateur Adobe Campaign.
 
-Ensuite, pour traiter les données contenues dans une base de données externe, l&#39;opérateur Adobe Campaign doit au minimum avoir les autorisation en écriture sur cette base de données, afin de permettre la création des tables de travail. Ces tables sont automatiquement supprimées par Adobe Campaign.
+Ensuite, pour traiter les données contenues dans une base de données externe, l&#39;opérateur Adobe Campaign doit au minimum avoir les autorisation en écriture sur cette base de données, afin de permettre la création des tables de travail. Ces tables sont automatiquement supprimées par Adobe Campaign.
 
 Les autorisations suivantes sont nécessaires :
 
@@ -202,7 +202,7 @@ L&#39;administrateur de la base de données doit mettre en correspondance ces dr
 
 ## Utiliser des données externes dans un workflow
 
-Une fois le schéma de données créé, les données peuvent être traitées dans les workflows Adobe Campaign.
+Une fois le schéma de données créé, les données peuvent être traitées dans les workflows Adobe Campaign.
 
 Plusieurs activités permettent d&#39;interagir avec les données d&#39;un base externe :
 
@@ -228,7 +228,7 @@ Par exemple, dans l&#39;activité **[!UICONTROL Requête]**, vous pouvez défini
 1. Choisissez l&#39;option **[!UICONTROL En définissant localement la source de données]**.
 1. Sélectionnez le moteur de la base de données cible dans la liste déroulante. Saisissez le nom du serveur et renseignez les paramètres d&#39;authentification. Indiquez également le nom de la base de données externe.
 1. Sélectionnez la table où sont stockées les données. Vous pouvez saisir le nom de la table directement dans le champ correspondant ou cliquer sur l&#39;icône d&#39;édition pour accéder à la liste des tables de la base de données.
-1. Cliquez sur le bouton **[!UICONTROL Ajouter]** pour définir un ou plusieurs champs de réconciliation entre les données de la base externe et celles de la base Adobe Campaign. Les icônes **[!UICONTROL Editer l&#39;expression]** des colonnes **[!UICONTROL Champ distant]** et **[!UICONTROL Champ local]** permettent d&#39;accéder à la liste des champs de chacune des tables.
+1. Cliquez sur le bouton **[!UICONTROL Ajouter]** pour définir un ou plusieurs champs de réconciliation entre les données de la base externe et celles de la base Adobe Campaign. Les icônes **[!UICONTROL Editer l&#39;expression]** des colonnes **[!UICONTROL Champ distant]** et **[!UICONTROL Champ local]** permettent d&#39;accéder à la liste des champs de chacune des tables.
 1. Au besoin, indiquez une condition de filtrage et le mode de tri des données.
 1. Sélectionnez les données additionnelles à collecter dans la base externe. Pour cela, double-cliquez sur le ou les champs à ajouter afin de les afficher parmi les **[!UICONTROL Colonnes de sortie]**.
 1. Cliquez sur le bouton **[!UICONTROL Terminer]** pour valider ce paramétrage.

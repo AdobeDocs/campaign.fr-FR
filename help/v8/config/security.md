@@ -107,11 +107,11 @@ La gestion des accès joue un rôle important dans le renforcement de la sécuri
 * Vérifiez que chaque opérateur dispose des droits d&#39;accès adéquats.
 * Évitez d&#39;utiliser l&#39;opérateur admin et d&#39;ajouter trop d&#39;opérateurs au groupe admin.
 
-![](../assets/do-not-localize/book.png) Apprenez-en davantage en consultant la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=fr#webapp-operator){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Apprenez-en davantage en consultant la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=fr#webapp-operator){target=&quot;_blank&quot;}
 
 ## Instructions de codage
 
-Lorsque vous effectuez des tâches de développement dans Adobe Campaign (workflows, Javascript, JSSP, autres), suivez toujours ces instructions :
+Lorsque vous effectuez des tâches de développement dans Adobe Campaign (workflows, Javascript, JSSP, autres), suivez toujours ces instructions :
 
 * **Scripts** : évitez si possible d&#39;utiliser des instructions SQL. Utilisez des fonctions paramétrables plutôt que la concaténation de chaîne et évitez toute injection SQL en ajoutant les fonctions SQL à utiliser à la liste autorisée.
 
@@ -119,4 +119,4 @@ Lorsque vous effectuez des tâches de développement dans Adobe Campaign (workfl
 
 * **Ajout de captchas dans les applications web** : ajoutez des captchas dans vos pages d&#39;abonnement et landing pages publiques.
 
-![](../assets/do-not-localize/book.png) Apprenez-en davantage en consultant la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=fr#installing-campaign-classic){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Apprenez-en davantage en consultant la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=fr#installing-campaign-classic){target=&quot;_blank&quot;}

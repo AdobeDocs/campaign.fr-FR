@@ -18,11 +18,11 @@ Découvrez comment **personnaliser votre instance Campaign**
 
 >[!CAUTION]
 >
->La personnalisation d&#39;Adobe Campaign est réservée aux utilisateurs experts.
+>La personnalisation d’Adobe Campaign est réservée aux utilisateurs experts.
 
 ## Création de schémas et champs de données
 
-Dans Adobe Campaign, les schémas de données permettent de :
+Dans Adobe Campaign, les schémas de données permettent de :
 
 * définir la façon dont les objets de l&#39;application sont liés à des tables de la base de données ;
 * définir des liens entre les différents objets de données de l&#39;application Campaign ;
@@ -43,7 +43,7 @@ Deux modes d&#39;extension de table sont disponibles :
 
 Vous pouvez également créer des tables dans la base de données Campaign et étendre le modèle de données natif.
 
-Pour ajouter un nouveau type de données qui n&#39;existe pas par défaut dans Adobe Campaign (une table des contrats par exemple), vous pouvez directement créer un schéma personnalisé. Pour plus d&#39;informations à ce propos, consultez [cet exemple](../dev/create-schema.md#example--creating-a-contract-table).
+Pour ajouter un nouveau type de données qui n’existe pas par défaut dans Adobe Campaign (une table des contrats par exemple), vous pouvez directement créer un schéma personnalisé. Pour plus d&#39;informations à ce propos, consultez [cet exemple](../dev/create-schema.md#example--creating-a-contract-table).
 
 **Rubriques connexes**
 
@@ -60,7 +60,7 @@ Les formulaires de saisie Campaign peuvent être adaptés à votre implémentati
 
 ## Personnalisation des tableaux de bord{#gs-custom-dashboards}
 
-L&#39;interface d&#39;Adobe Campaign utilise de nombreuses applications web afin d&#39;accéder aux destinataires, aux diffusions, aux campagnes, aux stocks, etc., puis de gérer et d&#39;agir sur ceux-ci. Elles se présentent dans l&#39;interface sous la forme de tableaux de bord et ne sont composées que d&#39;une seule page.
+L’interface d’Adobe Campaign utilise de nombreuses applications web afin d’accéder aux destinataires, aux diffusions, aux campagnes, aux stocks, etc., puis de gérer et d’agir sur ceux-ci. Elles se présentent dans l&#39;interface sous la forme de tableaux de bord et ne sont composées que d&#39;une seule page.
 
 Les applications web d&#39;usine sont stockées sous le nœud Administration > Paramétrage > Applications web.
 
@@ -78,7 +78,7 @@ Les listes Campaign s’accompagnent de filtres prédéfinis pour faciliter la n
 
 ### Accès aux données à partir de l&#39;Explorateur
 
-Lorsque vous naviguez dans l&#39;arborescence de l&#39;Explorateur Adobe Campaign, les données contenues dans la base s&#39;affichent dans des listes. Vous pouvez filtrer ces listes, lancer des recherches, ajouter des informations, filtrer et trier les données.
+Lorsque vous naviguez dans l’arborescence de l’Explorateur Adobe Campaign, les données contenues dans la base s’affichent dans des listes. Vous pouvez filtrer ces listes, lancer des recherches, ajouter des informations, filtrer et trier les données.
 
 ![](../assets/do-not-localize/book.png) Découvrez comment configurer des listes et enregistrer une configuration de liste dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=fr#getting-started).
 

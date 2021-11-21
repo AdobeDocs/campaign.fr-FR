@@ -19,7 +19,7 @@ Afin de mieux comprendre le fonctionnement des tables intégrées de Campaign et
 
 ![](../assets/do-not-localize/glass.png) Pour commencer à utiliser les schémas de Campaign, consultez [cette section](schemas.md).
 
-![](../assets/do-not-localize/glass.png) Découvrez comment configurer des schémas d&#39;extension afin d&#39;étendre le modèle de données conceptuel de la base de données Adobe Campaign sur [cette page](extend-schema.md).
+![](../assets/do-not-localize/glass.png) Découvrez comment configurer des schémas d&#39;extension afin d&#39;étendre le modèle de données conceptuel de la base de données Adobe Campaign sur [cette page](extend-schema.md).
 
 ## Architecture du modèle de données {#data-model-architecture}
 
@@ -36,7 +36,7 @@ Pour obtenir la description de chaque table, accédez à **[!UICONTROL Administr
 >
 >Adobe Campaign permet de créer une [table de destinataires personnalisée](custom-recipient.md). Cependant, dans la plupart des cas, il est recommandé d&#39;utiliser la [table de destinataires](datamodel.md#ootb-profiles) native, qui contient des tables et des fonctionnalités supplémentaires préconfigurées.
 
-### Données pour Adobe Campaign {#data-for-campaign}
+### Données pour Adobe Campaign {#data-for-campaign}
 
 Quelles données doivent être envoyées à Adobe Campaign ? Il est essentiel de déterminer les données requises pour vos activités marketing.
 
@@ -60,7 +60,7 @@ Pour optimiser l&#39;architecture et les performances de votre système, appliqu
 * L&#39;attribut **expr** permet de définir un attribut de schéma sous la forme d&#39;un champ calculé plutôt que d&#39;une valeur physique définie dans une table. Vous pouvez ainsi accéder aux informations dans un format différent (par exemple, l&#39;âge et la date de naissance) sans avoir à stocker les deux valeurs. Il s&#39;agit d&#39;un bon moyen d&#39;éviter la duplication des champs. Par exemple, la table des destinataires utilise une expression relative au domaine qui est déjà présente dans le champ de l&#39;e-mail.
 * Toutefois, lorsque le calcul de l&#39;expression est complexe, il n&#39;est pas recommandé d&#39;utiliser l&#39;attribut **expr**, car le calcul à la volée peut avoir une incidence sur les performances de vos requêtes.
 * Le type **XML** est un bon moyen d&#39;éviter de créer des champs superflus. Cependant, il occupe aussi un certain volume d&#39;espace disque, car il utilise une colonne CLOB dans la base de données. Il peut aussi contribuer à la complexité des requêtes SQL et avoir un impact sur les performances.
-* La longueur d&#39;un champ de **chaîne** doit toujours être définie avec la colonne. Dans Adobe Campaign, la longueur maximale est de 16 K par défaut, mais Adobe recommande de raccourcir le champ si vous savez déjà que la taille ne dépassera pas une longueur inférieure.
+* La longueur d&#39;un champ de **chaîne** doit toujours être définie avec la colonne. Dans Adobe Campaign, la longueur maximale est de 16 K par défaut, mais Adobe recommande de raccourcir le champ si vous savez déjà que la taille ne dépassera pas une longueur inférieure.
 * Dans Adobe Campaign, il est acceptable de disposer d&#39;un champ plus court que dans le système source si vous êtes sûr que la taille du système source a été surestimée et ne sera pas atteinte. Cela peut signifier une chaîne plus courte ou un entier plus petit dans Adobe Campaign.
 
 ### Choix des champs {#choice-of-fields}
@@ -93,7 +93,7 @@ Le tableau ci-après décrit ces identifiants et leur finalité.
 | Nom (ou nom interne) | <ul><li>Cette information est l&#39;identifiant unique d&#39;un enregistrement dans une table. Cette valeur peut être mise à jour manuellement, généralement avec un nom généré.</li><li>Cet identifiant conserve sa valeur lorsqu&#39;il est déployé dans une autre instance d&#39;Adobe Campaign et ne doit pas être vide.</li></ul> | <ul><li>Changez le nom d&#39;enregistrement généré par Adobe Campaign si l&#39;objet est destiné à être déployé d&#39;un environnement à un autre.</li><li>Si un objet possède un attribut d&#39;espace de noms (par exemple, *schema*), cet espace de noms commun sera appliqué à tous les objets personnalisés créés. Certains espaces de noms réservés ne doivent pas être utilisés : *nms*, *xtk*, etc.  Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces).</li><li>Lorsqu&#39;un objet n&#39;a pas d&#39;espace de noms (*workflow* ou *delivery*, par exemple), cette notion d&#39;espace de noms est ajoutée sous la forme d&#39;un préfixe d&#39;un objet de nom interne : *namespaceMyObjectName*.</li><li>N&#39;utilisez pas de caractères spéciaux tels que l&#39;espace &quot; &quot;, le point-virgule &quot;;&quot; ou le tiret &quot;-&quot;. Tous ces caractères seront remplacés par un trait de soulignement &quot;_&quot; (caractère autorisé). Par exemple, &quot;abc-def&quot; et &quot;abc:def&quot; seront stockés sous la forme de &quot;abc_def&quot; et s&#39;écraseront mutuellement.</li></ul> |
 | Libellé | <ul><li>Le libellé est l&#39;identifiant d&#39;entreprise d&#39;un objet ou d&#39;un enregistrement dans Adobe Campaign.</li><li>Cet objet autorise les espaces et les caractères spéciaux.</li><li>Il ne garantit pas le caractère unique d&#39;un enregistrement.</li></ul> | <ul><li>Il est recommandé de déterminer une structure pour les libellés de vos objets.</li><li>Il s&#39;agit de la solution la plus conviviale pour identifier un enregistrement ou un objet pour un utilisateur d&#39;Adobe Campaign.</li></ul> |
 
-La clé primaire d&#39;Adobe Campaign est un UUID généré automatiquement pour toutes les tables intégrées. Un UUID peut également être utilisé pour les tables personnalisées. [En savoir plus](keys.md)
+La clé primaire d’Adobe Campaign est un UUID généré automatiquement pour toutes les tables intégrées. Un UUID peut également être utilisé pour les tables personnalisées. [En savoir plus](keys.md)
 
 Même si le nombre d&#39;identifiants est illimité, vous devez prendre en charge la taille de votre base de données pour garantir des performances optimales. Pour éviter tout problème, veillez à ajuster les paramètres de purge de votre instance. Pour plus d&#39;informations à ce sujet, consultez [cette section](#data-retention).
 

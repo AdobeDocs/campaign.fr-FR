@@ -1,5 +1,5 @@
 ---
-title: Envoi de SMS avec Adobe Campaign
+title: Envoi de SMS avec Adobe Campaign
 description: Prise en main des SMS dans Campaign
 feature: Overview
 role: Data Engineer
@@ -20,7 +20,7 @@ Utilisez Adobe Campaign pour envoyer des messages SMS personnalisés.
 
 >[!NOTE]
 >
->Adobe Campaign permet également d&#39;envoyer des notifications push sur les mobiles, via son option **Canal des applications mobiles Adobe Campaign (NMAC)**. En savoir plus dans [cette section](push.md).
+>Adobe Campaign permet également d&#39;envoyer des notifications push sur les mobiles, via son option **Canal des applications mobiles Adobe Campaign (NMAC)**. En savoir plus dans [cette section](push.md).
 
 ## Configurer le canal SMS
 
@@ -35,7 +35,7 @@ Pour diffuser vers un téléphone mobile, vous devez avoir :
 Avant d&#39;envoyer des SMS :
 
 * Assurez-vous que les profils des destinataires contiennent au moins un téléphone portable.
-* Examinez les [bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=fr#sending-messages){target=&quot;_blank&quot;} d&#39;Adobe Campaign Classic qui s&#39;appliquent également à Campaign v8.
+* Examinez les [bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=fr#sending-messages){target=&quot;_blank&quot;} d&#39;Adobe Campaign Classic qui s&#39;appliquent également à Campaign v8.
 
 De plus, vous devez connaître le protocole et les paramètres SMS. Découvrez comment établir une connexion entre Adobe Campaign et un fournisseur SMPP dans [ce document](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-protocol.html?lang=fr#sending-messages){target=&quot;_blank&quot;}.
 
