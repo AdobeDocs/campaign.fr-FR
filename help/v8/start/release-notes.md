@@ -6,16 +6,30 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: 4ce21dda9516a881cce39c94454d5ac7b43142a9
+source-git-commit: acb3b60c8b390bf91acdfd568a57899594659c7e
 workflow-type: tm+mt
-source-wordcount: '1581'
-ht-degree: 100%
+source-wordcount: '1724'
+ht-degree: 92%
 
 ---
 
 # Dernière version{#latest-release}
 
 Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs de la **dernière version de Campaign Classic v8**.
+
+## Version 8.2.10 {#release-8-2-10}
+
+_2 février 2021_
+
+**Correctifs**
+
+* Correction d’un problème qui entraînait l’échec de la préparation de la diffusion si le nombre maximum de messages, défini dans la règle de typologie, était atteint. (NEO-40062)
+* Correction d’un problème lors de la configuration du connecteur Adobe Analytics lorsque l’adresse email contenait un caractère &quot;s&quot;. (NEO-39082)
+* Correction d’un problème lors du postupgrade qui entraînait la perte des données de la table deliveryMapping d’un mapping de diffusion personnalisé. (NEO-40133)
+* Correction d’un problème en raison duquel les destinataires recevaient le même message plusieurs fois pour une même diffusion lorsque l’adresse email contenait un guillemet simple (&#39;). Ce caractère est désormais placé dans une séquence d’échappement. (NEO-41198)
+* Correction d’un problème de génération d’ID lors de l’envoi de bons à tirer avec des adresses de substitution ou des adresses de contrôle. (NEO-42670)
+* Correction d’un problème qui empêchait l’envoi de BAT à l’aide de la méthode de substitution de l’adresse. (NEO-40417)
+* Correction d&#39;une erreur qui vous empêchait d&#39;installer le package LINE. (NEO-42503)
 
 ## Version 8.2.8 {#release-8-2-8}
 
