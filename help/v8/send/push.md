@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 6fc085d59c75399b08be44cc1647083677ed337e
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '734'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,8 @@ Pour envoyer des notifications push dans Adobe Campaign, vous devez effectuer l
 
 ![](../assets/do-not-localize/book.png) Découvrez comment prendre en main les applications mobiles dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=fr).{target=&quot;_blank&quot;}
 
-## Intégration au SDK Adobe
+## Intégration avec le SDK Adobe
+
 
 ### Intégration du SDK Campaign
 
@@ -35,11 +36,14 @@ Les versions de SDK compatibles sont répertoriées dans la [Matrice de compatib
 
 ![](../assets/do-not-localize/glass.png) Découvrez comment intégrer les SDK Android et iOS de Campaign avec votre application dans [cette section](../config/push-config.md)
 
-### Configuration de l&#39;extension Campaign dans Launch
+<!--
+### Configure Campaign Extension in Launch
 
-Vous pouvez intégrer le SDK Adobe Experience Platorm Launch à Campaign à l&#39;aide de l&#39;extension Campaign Classic.
+You can integrate Adobe Experience Platorm Launch SDK with Campaign, by leveraging Campaign Classic extension.
 
-![](../assets/do-not-localize/book.png) Apprenez-en davantage en consultant la [documentation du SDK mobile Adobe](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic).{target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Learn more in [Adobe Mobile SDK documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic){target="_blank"}
+
+-->
 
 ## Configuration des paramètres de votre application dans Campaign
 
