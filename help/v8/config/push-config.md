@@ -6,10 +6,10 @@ feature: Push
 role: Developer
 level: Experienced
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 8417b1b4b7370e2a2eed76e9f1ac395eccf0ac66
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ Afin d&#39;intégrer le SDK Campaign dans l&#39;application mobile, l&#39;admini
 
 ## Intégration du SDK Android
 
-Le SDK Android est une bibliothèque jar écrite en JAVA. Il permet aux développeurs Android de s&#39;intégrer avec Adobe Campaign : enregistrement d&#39;un nouvel appareil, association de l&#39;appareil à un utilisateur, suivi du comportement, etc.
+Le SDK Android est une bibliothèque jar écrite en JAVA. Il permet aux développeurs Android de s’intégrer à Adobe Campaign : enregistrez un nouvel appareil, liez l’appareil à un utilisateur, suivez le comportement, etc.
 
 Dans cette section, découvrez comment utiliser le SDK Android dans une application Android implémentant [Google Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging/).
 
