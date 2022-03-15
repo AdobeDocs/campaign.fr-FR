@@ -5,8 +5,8 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 hidefromtoc: false
-exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: b7db9597aa6b4ca4fb2e1e13f8b7b718f4840031
+exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
+source-git-commit: 9283f1e857706455c169eb1da93cd0d04df80da0
 workflow-type: tm+mt
 source-wordcount: '1721'
 ht-degree: 100%
@@ -45,7 +45,7 @@ _28 octobre 2021_
 <tr>
 <td>
 <p>Real-time interaction management est désormais disponible pour les canaux entrants. Utilisez le module Interaction entrante Campaign pour présenter la meilleure offre à vos clients lorsqu’ils visitent votre site web ou contactent votre centre d’appel. Cette fonctionnalité est fournie avec Campaign v8 comme option et nécessite une configuration spécifique sur votre instance. Contactez votre représentant Adobe pour avoir accès au module Interaction entrante.</p>
-<p>Pour plus d’informations, consultez la <a href="../send/interaction-architecture.md">documentation détaillée</a>.</p>
+<p>Pour plus d’informations, consultez la <a href="../interaction/interaction-architecture.md">documentation détaillée</a>.</p>
 </td>
 </tr>
 </tbody>
