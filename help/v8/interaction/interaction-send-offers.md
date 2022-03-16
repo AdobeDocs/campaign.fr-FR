@@ -1,18 +1,18 @@
 ---
-title: Catalogue d'offres de Campaign Interaction
-description: Découvrez comment créer un catalogue d'offres
+title: Envoyer une offre avec l'interaction Campaign
+description: Découvrez comment envoyer une offre
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
-source-git-commit: c19ac91fe7b4b825f75ec096320efabc3e78328c
+source-git-commit: 213a10fea36b3b08c1dd8525084d212e191b2fc7
 workflow-type: tm+mt
-source-wordcount: '1350'
-ht-degree: 100%
+source-wordcount: '1351'
+ht-degree: 99%
 
 ---
 
-# Envoi dʼune offre
+# Envoi dʼune offre{#send}
 
 Pour quʼune offre puisse être sélectionnée par le moteur dʼoffres, elle doit avoir été validée et être disponible dans un environnement **En ligne**. [En savoir plus](interaction-offer.md#approve-offers)
 
