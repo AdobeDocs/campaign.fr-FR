@@ -229,7 +229,7 @@ Exemple d&#39;une jointure externe entre la table des destinataires et une table
 
 &quot;xpath-dst&quot; correspond ici à la clé primaire dans le schéma cible et &quot;xpath-src&quot; à la clé étrangère dans le schéma source.
 
-## Suivi {#audit-trail}
+## Journal d’audit {#audit-trail}
 
 Il peut être utile d&#39;ajouter à la fin de votre schéma un élément de suivi.
 

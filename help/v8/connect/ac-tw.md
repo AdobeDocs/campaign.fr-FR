@@ -4,10 +4,10 @@ description: Découvrez comment intégrer votre environnement Campaign à Twitte
 feature: Overview
 role: Data Engineer
 level: Beginner
-hidefromtoc: true
 hide: true
+hidefromtoc: true
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 137dba3461a82621af7d2e5f54442bf87422ad47
+source-git-commit: 0f15112f0eec1d7cba26523adc1e88fc5d26997c
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 26%
@@ -20,7 +20,7 @@ Le **Gestion des réseaux sociaux (Social Marketing)** vous permet d’interagir
 
 * Envoyer des messages : utilisez Adobe Campaign Social Marketing pour publier des messages sur Twitter. Vous pouvez également envoyer des messages directs à tous les abonnés de vos comptes.
 
-* Collecter de nouveaux contacts - Adobe Campaign Social Marketing permet également d&#39;acquérir facilement de nouveaux contacts : contactez les utilisateurs et demandez-leur s&#39;ils souhaitent partager leurs informations de profil. S’ils acceptent, Adobe Campaign récupère automatiquement les données. Vous pouvez ainsi exécuter des campagnes de ciblage et, lorsque cela est possible, implémenter des stratégies cross-canal.
+* Collecter de nouveaux contacts - Adobe Campaign Social Marketing permet également d&#39;acquérir facilement de nouveaux contacts : contactez les utilisateurs et demandez-leur s&#39;ils souhaitent partager leurs informations de profil. S&#39;ils acceptent, Adobe Campaign récupère automatiquement les données. Vous pouvez ainsi exécuter des campagnes de ciblage et, lorsque cela est possible, implémenter des stratégies cross-canal.
 
 ![](../assets/do-not-localize/speech.png)  En tant qu’utilisateur Cloud Services géré, [contact Adobe](../start/campaign-faq.md#support) pour connecter Campaign à Twitter. Le  **Gestion des réseaux sociaux (Social Marketing)** doit être installé sur votre environnement, via le package dédié.
 
@@ -83,7 +83,9 @@ Pour entrer des paramètres, vous devez accéder à la fois à la console Adobe 
 
    >[!CAUTION]
    >
-   >Le **[!UICONTROL Nom interne]** du service doit être exactement le même nom que votre compte Twitter. Pour vérifier vos paramètres, vous pouvez :
+   >Le **[!UICONTROL Nom interne]** du service doit être exactement le même nom que votre compte Twitter.
+
+   Pour vérifier vos paramètres, vous pouvez :
 
    * Cliquez sur le bouton **[!UICONTROL Enregistrer]**.
    * Dans la vue d’ensemble des services, sélectionnez la variable **Twitter** service que vous venez de créer.

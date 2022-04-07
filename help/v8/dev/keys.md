@@ -2,10 +2,10 @@
 title: Gestion des clés dans Campaign
 description: Prise en main de la gestion des clés
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 2d0b40e49afdfd71e8bb5c3f0b1d569a715420b2
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Dans Campaign v8, la clé primaire est un identifiant universel unique (UUID), qui est une chaîne sur des caractères. Pour créer cet UUID, l&#39;élément principal du schéma doit contenir les attributs **autouuid** et **autopk** définis sur **true**.
 
-Adobe campaign v8 est fourni avec Snowflake comme base de données principale. L&#39;architecture répartie de la base de données Snowflake ne fournit pas de mécanismes permettant de gérer l&#39;unicité d&#39;une clé dans un tableau. Les utilisateurs finaux assurent la cohérence des clés au sein de la base de données Adobe Campaign.
+Adobe Campaign v8 est fourni avec Snowflake comme base de données. L&#39;architecture répartie de la base de données Snowflake ne fournit pas de mécanismes permettant de gérer l&#39;unicité d&#39;une clé dans un tableau. Les utilisateurs finaux assurent la cohérence des clés au sein de la base de données Adobe Campaign.
 
 Pour préserver la cohérence de la base de données relationnelle, il est obligatoire d&#39;éviter les doublons sur les clés, et notamment sur les clés primaires. Les doublons sur des clés primaires entraînent des problèmes avec les activités de workflow de gestion des données telles que **Requête**, **Réconciliation**, **Mise à jour de données**, etc.
 

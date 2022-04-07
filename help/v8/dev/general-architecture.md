@@ -2,10 +2,10 @@
 title: Architecture générale
 description: En savoir plus sur l’architecture et les composants de Campaign
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
+source-git-commit: 9f375f8349140885cd4b6bcc206669a264cdbc9d
 workflow-type: tm+mt
-source-wordcount: '1217'
-ht-degree: 100%
+source-wordcount: '1066'
+ht-degree: 83%
 
 ---
 
@@ -23,23 +23,13 @@ Un déploiement classique de la solution Adobe Campaign comprend les composants
 
 * **Conteneurs de base de données**
 
-   Reposant sur la technologie de base de données relationnelle, la base de données cloud d’Adobe Campaign stocke toutes les informations sur les clients, les composants de campagne, les offres et les workflows, ainsi que les résultats de campagne dans des conteneurs de base de données client.
+   Basée sur la technologie de base de données relationnelle, la base de données d’Adobe Campaign Cloud stocke toutes les informations, tous les composants de campagne, les offres, les workflows et les résultats de campagne dans des conteneurs de base de données.
 
 ## Environnement client personnalisé {#client-env}
 
-L&#39;application est accessible de différentes manières : client riche, client léger ou intégration via une API.
+L&#39;application est accessible de différentes manières : Intégration d’un client riche, d’un client léger ou d’une API.
 
-* **Console cliente** : la principale interface utilisateur de l&#39;application est une application native (sur Windows) qui communique avec le serveur applicatif Adobe Campaign via les protocoles Internet standard (SOAP, HTTP, etc.). La console cliente Adobe Campaign est très conviviale, permet d&#39;être productif, utilise très peu de bande passante (grâce à l&#39;utilisation d&#39;un cache local) et est conçue pour offrir un déploiement facile. Cette console peut être déployée à partir d&#39;un navigateur Internet et mise à jour automatiquement. En outre, elle ne nécessite aucune configuration réseau spécifique, car elle génère uniquement du trafic HTTP(S).
-
-   ![](../assets/do-not-localize/glass.png) [En savoir plus sur la console cliente Campaign](../start/connect.md).
-
-* **Accès web** : certaines parties de l&#39;application, dont le module de reporting, les étapes de validation d&#39;une diffusion, la surveillance des instances, etc., sont accessibles via un simple navigateur web à l&#39;aide d&#39;une interface utilisateur HTML.
-
-   ![](../assets/do-not-localize/glass.png) [En savoir plus sur l&#39;accès web de Campaign](../start/connect.md).
-
-* **API Campaign** : dans certains cas, le système est appelé par des applications externes qui utilisent les API Web Services exposées par le biais du protocole SOAP.
-
-   ![](../assets/do-not-localize/glass.png) [En savoir plus sur les API Campaign](../dev/api.md).
+![](../assets/do-not-localize/glass.png) [En savoir plus sur la couche de présentation de Campaign](../start/ac-components.md).
 
 ## Environnement de développement {#dev-env}
 
@@ -65,9 +55,9 @@ Il assure l&#39;exécution des processus de workflow définis dans l&#39;applica
 
 Il prend également en charge les workflows techniques qui s&#39;exécutent périodiquement, et notamment les suivants :
 
-* **Tracking** : récupération et consolidation des logs de tracking. Il permet d&#39;obtenir les logs du serveur de redirection et de créer les indicateurs agrégés utilisés par le module de reporting.
-* **Nettoyage** : nettoyage de la base de données. Il permet de purger les anciens enregistrements et d&#39;éviter une croissance exponentielle de la base de données.
-* **Facturation **: envoi automatique d&#39;un rapport d&#39;activité de la plateforme (taille de la base de données, nombre d&#39;actions marketing, etc.).
+* **Tracking**: Récupère et consolide les logs de tracking, de sorte que vous puissiez récupérer les logs du serveur de redirection et créer les indicateurs agrégés utilisés par le module de reporting.
+* **Nettoyage**: Nettoie la base de données, purge les anciens enregistrements et évite que la base ne se développe de manière exponentielle.
+* **Facturation**: Envoie un rapport d&#39;activité pour la plateforme (taille de la base, nombre d&#39;actions marketing, etc.).
 
 **Serveur de diffusion** (nlserver mta)
 
@@ -79,7 +69,7 @@ Ce processus peut assurer la personnalisation et l&#39;envoi automatique vers un
 
 Dans le cas des diffusions par email, Adobe Campaign assure automatiquement le suivi des ouvertures et clics dans les messages (et éventuellement le suivi des transactions générées sur le site Web). Pour cela, les URL présentes dans les emails sont réécrites afin de pointer vers ce module, qui assure l&#39;enregistrement de passage de l&#39;internaute avant de le rediriger vers la véritable URL.
 
-Afin d&#39;en garantir la disponibilité maximale, ce processus est totalement indépendant de la base de données : les autres processus serveur dialoguent avec lui en utilisant uniquement des appels SOAP (donc HTTP, HTTPS et XML). Techniquement, cette fonctionnalité est implémentée dans un module d&#39;extension d&#39;un serveur HTTP (extension ISAPI sous IIS, module DSO sous Apache) et n&#39;est accessible que sous Windows.
+Pour garantir une disponibilité maximale, ce processus est totalement indépendant de la base de données : les autres processus serveur communiquent uniquement avec elle en utilisant des appels SOAP (HTTP, HTTP(S) et XML). Techniquement, cette fonctionnalité est implémentée dans un module d&#39;extension d&#39;un serveur HTTP (extension ISAPI dans IIS, ou module DSO Apache, etc.) et est disponible uniquement sous Windows.
 
 D&#39;autres processus plus techniques sont également disponibles :
 
@@ -117,7 +107,7 @@ Ce processus maintient les statistiques du nombre de connexions, de messages env
 
 La base de données cloud d’Adobe Campaign repose sur [!DNL Snowflake], qui contient les données fonctionnelles (profils, abonnements, contenu, etc.), les données techniques (traitement et journaux de diffusion, logs de tracking, etc.) ainsi que les données de travail (achats, leads) pour la solution. En outre, tous les composants Adobe Campaign communiquent avec la base de données afin d’exécuter leurs tâches spécifiques.
 
-Les clients peuvent déployer Adobe Campaign à l’aide de la base de données et des schémas prédéfinis. Si nécessaire, cet environnement prédéfini peut être étendu. Toutes les données du datamart sont accessibles par Adobe Campaign via des appels SQL. Adobe Campaign fournit également un ensemble complet d’outils Extract Transform and Load (ETL) pour importer et exporter des données dans et en dehors du système.
+Vous pouvez déployer Adobe Campaign à l’aide de la base de données et des schémas prédéfinis. Au besoin, cet environnement prédéfini peut être étendu. Toutes les données du datamart sont accessibles par Adobe Campaign via des appels SQL. Adobe Campaign fournit également un ensemble complet d’outils Extract Transform and Load (ETL) pour importer et exporter des données dans et en dehors du système.
 
 ![](assets/data-flow-diagram.png)
 

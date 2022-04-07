@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 9283f1e857706455c169eb1da93cd0d04df80da0
+source-git-commit: 2d0b40e49afdfd71e8bb5c3f0b1d569a715420b2
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 100%
+source-wordcount: '931'
+ht-degree: 98%
 
 ---
 
@@ -63,7 +63,7 @@ Veuillez noter que cet identifiant est basé sur des chaînes et n&#39;est pas s
 
 Dans Campaign Classic v7 et les versions antérieures, l&#39;unicité d&#39;une clé dans un schéma (c&#39;est-à-dire une table) est gérée au niveau du moteur de la base de données. Plus généralement, les moteurs de base de données classiques tels que PostgreSQL, Oracle ou SQL Server incluent un mécanisme natif pour empêcher l&#39;insertion de lignes dupliquées à partir d&#39;une colonne ou d&#39;un ensemble de colonnes via des clés primaires et/ou des index uniques. Les ID en double n&#39;existent pas dans ces versions lorsque l&#39;index correct et les clés primaires sont définis au niveau de la base de données.
 
-Adobe Campaign v8 est fourni avec Snowflake comme base de données principale. Comme cela augmente considérablement l&#39;échelle des requêtes, l&#39;architecture répartie de la base de données Snowflake ne fournit pas de tels mécanismes de gestion et d&#39;application de l&#39;unicité d&#39;une clé dans une table. Par conséquent, avec Adobe Campaign v8, rien n&#39;empêche l&#39;ingestion de clés dupliquées dans une table. Les utilisateurs finaux sont désormais chargés d&#39;assurer la cohérence des clés au sein de la base de données Adobe Campaign. [En savoir plus](../dev/keys.md)
+Adobe Campaign v8 est fourni avec Snowflake comme base de données. Comme cela augmente considérablement l&#39;échelle des requêtes, l&#39;architecture répartie de la base de données Snowflake ne fournit pas de tels mécanismes de gestion et d&#39;application de l&#39;unicité d&#39;une clé dans une table. Par conséquent, avec Adobe Campaign v8, rien n&#39;empêche l&#39;ingestion de clés dupliquées dans une table. Les utilisateurs finaux sont désormais chargés d&#39;assurer la cohérence des clés au sein de la base de données Adobe Campaign. [En savoir plus](../dev/keys.md)
 
 ### Maintenance simplifiée
 
@@ -95,7 +95,6 @@ Veuillez noter que certaines fonctionnalités ne sont pas disponibles dans cette
 * Marketing distribué
 * Gestion de la réaction
 * Modèles de déploiement hybrides/On-premise
-* Canal Twitter
 
 >[!CAUTION]
 >

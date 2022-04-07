@@ -1,13 +1,13 @@
 ---
-title: Environnements d’interaction Campaign
+title: Utilisation des environnements d'interaction Campaign
 description: Découvrez comment créer des environnements pour l'interaction Campaign
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 31f38870-1781-4185-9022-d4fd6a31c94a
-source-git-commit: 213a10fea36b3b08c1dd8525084d212e191b2fc7
+source-git-commit: 8a43f0fad9f84849745f3a0d426329efbf228105
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '440'
 ht-degree: 97%
 
 ---

@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 8417b1b4b7370e2a2eed76e9f1ac395eccf0ac66
+source-git-commit: 2d0b40e49afdfd71e8bb5c3f0b1d569a715420b2
 workflow-type: tm+mt
-source-wordcount: '1735'
-ht-degree: 99%
+source-wordcount: '1733'
+ht-degree: 96%
 
 ---
 
@@ -183,9 +183,9 @@ Lorsque le contenu de votre diffusion est disponible dans un fichier HTML qui se
 
 * [Coordination des mises à jour de données](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/coordinating-data-updates.html?lang=fr){target=&quot;_blank&quot;}
 
-   Découvrez comment vérifier que le processus de mise à jour est terminé avant d&#39;exécuter une autre opération de mise à jour. Pour ce faire, nous allons configurer une variable d&#39;instance et laisser le workflow tester si l&#39;instance est en cours d&#39;exécution afin de décider de continuer ou non l&#39;exécution du workflow et d&#39;effectuer la mise à jour.
+   Découvrez comment vérifier que le processus de mise à jour est terminé avant d&#39;exécuter une autre opération de mise à jour. Pour ce faire, nous allons configurer une variable d’instance et laisser le workflow tester si l’instance est en cours d’exécution pour décider si elle doit continuer l’exécution du workflow et effectuer la mise à jour.
 
-* [Création d&#39;une liste récapitulative](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/creating-a-summary-list.html?lang=fr){target=&quot;_blank&quot;}
+* [Créer une liste récapitulative](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/creating-a-summary-list.html?lang=fr){target=&quot;_blank&quot;}
 
    Découvrez comment créer un workflow qui, après la collecte de fichiers et plusieurs enrichissements, permet de créer une liste récapitulative. L&#39;exemple est basé sur une liste de contacts qui ont effectué des achats dans un magasin.
 

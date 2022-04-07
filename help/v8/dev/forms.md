@@ -33,7 +33,7 @@ L&#39;aperçu génère l&#39;affichage du formulaire de saisie :
 
 ## Structure d&#39;un formulaire
 
-La description d&#39;un formulaire est un document XML structuré respectant la grammaire du schéma des formes **xtk:form**.
+La description d’un formulaire est un document XML structuré respectant la grammaire du schéma de formulaire **xtk:form**.
 
 Le document XML du formulaire de saisie doit contenir l&#39;élément racine `<form>` avec les attributs **name** et **namespace** pour renseigner respectivement le nom du formulaire et son espace de noms.
 

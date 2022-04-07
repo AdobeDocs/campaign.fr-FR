@@ -5,7 +5,7 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: c3beb735f54606537bcc977f2f0539767d15b2d9
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 100%
@@ -22,7 +22,7 @@ Avant de commencer, vous devez :
 * Obtenir l&#39;URL du serveur Campaign
 * Créer votre Adobe ID ou obtenir vos informations d’identification d’utilisateur de votre société
 
-## Téléchargement et installation de la console cliente
+## Téléchargement et installation de la console cliente{#download-ac-console}
 
 Si vous utilisez Campaign pour la première fois, ou si vous devez effectuer une mise à niveau vers une version plus récente, il vous faut télécharger et installer la console cliente.
 
@@ -36,7 +36,7 @@ Deux options sont disponibles :
 >
 >Adobe recommande de ne pas sélectionner l&#39;option **[!UICONTROL Ne plus poser cette question]** pour que tous les utilisateurs soient informés de la disponibilité d&#39;une nouvelle version de la console.  Si cette option est sélectionnée, l&#39;utilisateur ne sera pas informé des nouvelles versions disponibles.
 
-## Création de votre connexion
+## Création de votre connexion{#create-your-connection}
 
 Une fois la console cliente nouvellement installée, procédez comme suit pour créer la connexion au serveur d&#39;applications :
 
@@ -60,7 +60,7 @@ Vous pouvez ajouter autant de connexions que nécessaire pour vous connecter, pa
 >
 >Le bouton **[!UICONTROL Ajouter]** permet de créer des **[!UICONTROL dossiers]** dans lesquels vous pourrez classer vos différentes connexions par des opérations de glisser-déposer.
 
-## Connexion à Adobe Campaign
+## Connexion à Adobe Campaign {#logon-to-ac}
 
 Pour vous connecter à une instance existante, procédez comme suit :
 
@@ -78,7 +78,7 @@ Pour vous connecter à une instance existante, procédez comme suit :
 
    ![](assets/adobeID.png)
 
-## Octroi d&#39;accès aux utilisateurs
+## Octroi d&#39;accès aux utilisateurs{#grant-access}
 
 Adobe Campaign vous permet de définir et gérer les permissions attribuées aux différents opérateurs. Les permissions sont un ensemble de droits et restrictions qui autorisent ou interdisent :
 
