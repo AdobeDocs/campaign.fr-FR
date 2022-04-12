@@ -7,7 +7,7 @@ title: Documentation Campaign v8
 source-git-commit: c3beb735f54606537bcc977f2f0539767d15b2d9
 workflow-type: tm+mt
 source-wordcount: '307'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -24,8 +24,8 @@ ht-degree: 81%
    + [Prise en main](start/get-started.md)
    + [Composants et processus](start/ac-components.md)
    + Interface utilisateur de Campaign {#ac-ui}
-      + [Interface de Discover Campaign](start/campaign-ui.md)
-      + [Personnalisation de l’interface de Campaign](start/customize-ui.md)
+      + [Découverte de l&#39;interface de Campaign](start/campaign-ui.md)
+      + [Personnalisation de l&#39;interface de Campaign](start/customize-ui.md)
    + [Utilisation des audiences](start/audiences.md)
    + [Import de données](start/import.md)
    + [Création de campagnes](start/campaigns.md)
@@ -50,15 +50,15 @@ ht-degree: 81%
    + [Accès aux profils](audiences/view-profiles.md)
    + Ajout de profils {#add-profiles}
       + [Création manuelle de profils](audiences/create-profiles.md)
-      + [Importer des profils depuis un fichier](audiences/import-profiles.md)
+      + [Importation de profils depuis un fichier](audiences/import-profiles.md)
       + [Utilisation de profils externes](audiences/external-profiles.md)
-      + [Collecte de données de profil dans les formulaires web](audiences/collect-profiles.md)
+      + [Collecte de données de profil dans des formulaires web](audiences/collect-profiles.md)
    + Création d&#39;audiences {#create-audiences}
-      + [Créer une liste de contacts](audiences/create-audiences.md)
-      + [Création et gestion des filtres](audiences/create-filters.md)
+      + [Création d&#39;une liste de contacts](audiences/create-audiences.md)
+      + [Création et gestion de filtres](audiences/create-filters.md)
    + [Gestion des dossiers et des vues](audiences/folders-and-views.md)
    + [Bonnes pratiques](audiences/audiences-best-practices.md)
-+ Envoi de messages{#send}
++ Envoyer les messages{#send}
    + [E-mails](send/email.md)
    + [SMS](send/sms.md)
    + [Notifications push](send/push.md)
@@ -67,7 +67,7 @@ ht-degree: 81%
    + [Marketing social](send/twitter.md)
    + [Messages transactionnels](send/transactional.md)
    + Échecs, retours et mises en quarantaine{#failures}
-      + [Les quarantaines](send/quarantines.md)
+      + [Quarantaines](send/quarantines.md)
       + [Diffusions en échec](send/delivery-failures.md)
 + Interaction en temps réel{#interaction}
    + [Prise en main des interactions en temps réel](interaction/interaction.md)
@@ -80,7 +80,7 @@ ht-degree: 81%
       + [Création d&#39;emplacements](interaction/interaction-offer-spaces.md)
    + [Création d&#39;un catalogue d&#39;offres](interaction/interaction-offer-catalog.md)
    + [Création d&#39;une offre](interaction/interaction-offer.md)
-   + [Envoi d&#39;une offre (sortante)](interaction/interaction-send-offers.md)
+   + [Envoi d&#39;une offre  (sortante)](interaction/interaction-send-offers.md)
    + Présentation dʼune offre (entrante){#inbound}
       + [Contexte](interaction/interaction-present-offers.md)
       + [Appel dʼune offre dans une page web](interaction/interaction-integration.md)
