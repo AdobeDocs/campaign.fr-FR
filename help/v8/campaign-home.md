@@ -16,11 +16,11 @@ ht-degree: 100%
 
 ## Nouveautés
 
-* **[En quoi consiste ? [!DNL Adobe Campaign]](start/get-started.md)** - Principales fonctionnalités et cas d&#39;utilisation
+* **[En quoi consiste  [!DNL Adobe Campaign]](start/get-started.md)** ? - Principales fonctionnalités et cas d&#39;utilisation
 
 * **[Nouveautés de v8](start/whats-new.md)** - Découvrez les fonctionnalités de Campaign v8
 
-* **[Instructions d&#39;implémentation](start/implement.md)** - Découvrez comment démarrer votre implémentation.
+* **[Instructions d’implémentation](start/implement.md)** - Découvrez comment démarrer votre implémentation
 
 * **[De v7 à v8](start/capability-matrix.md)** - Comment passer de Campaign Classic v7 à v8 ? Découverte des différences principales
 
