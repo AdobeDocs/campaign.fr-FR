@@ -29,7 +29,7 @@ Regardez cette vidéo pour en savoir plus sur la gestion des listes dans Adobe C
 >[!VIDEO](https://video.tv.adobe.com/v/334909?quality=12)
 
 
-## Créer une liste de contacts {#create-a-list-of-contacts}
+## Création d&#39;une liste de contacts {#create-a-list-of-contacts}
 
 Pour créer une liste de contacts, procédez comme suit :
 

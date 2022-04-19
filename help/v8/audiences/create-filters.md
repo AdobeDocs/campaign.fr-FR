@@ -8,11 +8,11 @@ exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 source-git-commit: 9c5c5e825294bd39742ecbd07b98a90b4555c138
 workflow-type: tm+mt
 source-wordcount: '1768'
-ht-degree: 31%
+ht-degree: 32%
 
 ---
 
-# Création et gestion des filtres{#create-filters}
+# Création et gestion de filtres{#create-filters}
 
 Le filtrage des données est le processus de sélection d’une plus petite partie de votre jeu de données, uniquement des enregistrements qui correspondent à certains critères et d’utilisation de ce sous-ensemble pour des actions spécifiques (mises à jour, création d’audiences) ou une analyse.
 

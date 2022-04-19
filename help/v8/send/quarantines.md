@@ -12,7 +12,7 @@ ht-degree: 36%
 
 ---
 
-# Les quarantaines {#quarantine-management}
+# Quarantaines {#quarantine-management}
 
 Adobe Campaign gère une liste d&#39;adresses en quarantaine pour les canaux en ligne (email, SMS, notification push). Certains fournisseurs d&#39;accès Internet considèrent automatiquement les emails comme du spam si le taux d&#39;adresses invalides est trop élevé. La quarantaine permet donc d&#39;éviter d&#39;être ajouté à une liste bloquée par ces fournisseurs. De plus, elles réduisent les coûts d’envoi des SMS en excluant les numéros de téléphone erronés des diffusions.
 
