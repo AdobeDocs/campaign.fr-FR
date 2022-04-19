@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: c2d34ee9-4427-48e7-a8cf-0ae02a801d50
-source-git-commit: 79a9d60175b06a11cf27b44275a8ba3fe11e4d3e
+source-git-commit: 9ad8623b48021eab7b53c7fbc69f3baa165afd3f
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 63%
+source-wordcount: '329'
+ht-degree: 58%
 
 ---
 
@@ -35,7 +35,9 @@ Les principaux avantages sont les suivants :
 
 Les CRM et versions pris en charge sont présentés dans la [matrice de compatibilité](../start/compatibility-matrix.md) de Campaign.
 
-![](../assets/do-not-localize/speech.png)  Les connecteurs CRM fonctionnent seulement avec une URL sécurisée (https).
+>[!CAUTION]
+>
+> Les connecteurs CRM Campaign fonctionnent uniquement avec une URL sécurisée (https).
 
 ## Étapes dʼimplémentation {#crm-implementation-steps}
 
@@ -43,6 +45,4 @@ Découvrez la procédure détaillée pour connecter Campaign et Microsoft Dynami
 
 Découvrez la procédure détaillée pour connecter Campaign et Salesforce.com dans [cette page](ac-sfdc.md).
 
-La synchronisation des données entre Adobe Campaign et le CRM est réalisée à travers une activité de workflow dédiée. Créez vos workflows pour automatiser la synchronisation entre Campaign et votre CRM. Vous pouvez créer un workflow qui importe les contacts depuis Microsoft Dynamics, les synchronise avec les données Adobe Campaign existantes, déduplique les contacts et met à jour la base de données Adobe Campaign.
-
-![](../assets/do-not-localize/book.png) Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-data-sync.html?lang=fr#getting-started).
+La synchronisation des données entre Adobe Campaign et le CRM est réalisée à travers une activité de workflow dédiée. Créez vos workflows pour automatiser la synchronisation entre Campaign et votre CRM. Vous pouvez créer un workflow qui importe les contacts depuis Microsoft Dynamics, les synchronise avec les données Adobe Campaign existantes, déduplique les contacts et met à jour la base de données Adobe Campaign. En savoir plus sur [cette page](crm-data-sync.md).
