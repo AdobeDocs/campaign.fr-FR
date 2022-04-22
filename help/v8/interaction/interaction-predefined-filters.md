@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Création de filtres prédéfinis{#creating-pre-defined-filters}
 
-Créez des filtres prédéfinis afin de définir des règles dʼéligibilité pour la population cible qui pourront facilement être réutilisées lors de la création dʼoffres. Ils sont spécifiques à chaque environnement et prennent en compte les paramètres de l&#39;offre.
+Créez des filtres prédéfinis afin de définir des règles d&#39;éligibilité pour la population cible qui pourront facilement être réutilisées lors de la création d&#39;offres. Ils sont spécifiques à chaque environnement et prennent en compte les paramètres de l&#39;offre.
 
 Pour créer un filtre prédéfini, procédez comme suit :
 

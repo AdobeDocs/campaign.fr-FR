@@ -27,7 +27,7 @@ Pour envoyer des notifications push dans Adobe Campaign, vous devez effectuer l
 
 ## Intégration du SDK Campaign
 
-Le SDK Campaign facilite l’intégration de votre application mobile à la plateforme Adobe Campaign.
+Le SDK Campaign facilite l&#39;intégration de votre application mobile à la plateforme Adobe Campaign.
 
 Les versions de SDK compatibles sont répertoriées dans la [Matrice de compatibilité Campaign](../start/compatibility-matrix.md#MobileSDK).
 
@@ -117,7 +117,7 @@ Pour créer une nouvelle diffusion, accédez à l&#39;onglet **[!UICONTROL Campa
 
    ![](assets/push-android-content.png)
 
-1. Cliquez sur l’icône **[!UICONTROL Insérer une émoticône]** pour insérer des émoticônes dans votre notification push.
+1. Cliquez sur l&#39;icône **[!UICONTROL Insérer une émoticône]** pour insérer des émoticônes dans votre notification push.
 
 1. Dans le champ **[!UICONTROL Variables de l&#39;application]**, saisissez la valeur de chaque variable. Vous pouvez par exemple paramétrer un écran d&#39;application spécifique qui s&#39;affichera lorsque l&#39;utilisateur activera la notification.
 

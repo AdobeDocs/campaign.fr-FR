@@ -8,7 +8,7 @@ exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
 source-git-commit: 2d0b40e49afdfd71e8bb5c3f0b1d569a715420b2
 workflow-type: tm+mt
 source-wordcount: '1733'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -39,15 +39,15 @@ Pour en savoir plus sur l&#39;interface utilisateur et l&#39;exécution des work
 
 * [Workflows techniques natifs](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html?lang=fr){target=&quot;_blank&quot;}
 
-* [Surveillance de l’exécution des workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html?lang=fr){target=&quot;_blank&quot;}
+* [Surveillance de l&#39;exécution des workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html?lang=fr){target=&quot;_blank&quot;}
 
-* [Création d’une audience dans un workflow de campagne marketing](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=fr#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;}
+* [Création d&#39;une audience dans un workflow de campagne marketing](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=fr#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;}
 
 ## Activités de workflow {#wf-activities}
 
 ![](../assets/do-not-localize/book.png) En savoir plus sur les activités de workflow disponibles dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-activities.html?lang=fr){target=&quot;_blank&quot;}
 
-Les activités de workflow sont regroupées par catégorie. Les quatre catégories d’activités disponibles sont les suivantes :
+Les activités de workflow sont regroupées par catégorie. Les quatre catégories d&#39;activités disponibles sont les suivantes :
 
 * [Activités de ciblage](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html?lang=fr){target=&quot;_blank&quot;} : requête, lecture de liste, enrichissement, union, etc.
 * [Activités de contrôle du flux](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/about-flow-control-activities.html?lang=fr){target=&quot;_blank&quot;} : planificateur, branchement, alerte, signal externe, etc.
@@ -57,17 +57,17 @@ Les activités de workflow sont regroupées par catégorie. Les quatre catégori
 
 ### Activité Modifier la source de données {#change-data-source-activity}
 
-L&#39;activité **[!UICONTROL Modifier la source de données]** permet de modifier la source de données d&#39;un workflow **[!UICONTROL Table de travail]**. Vous bénéficiez ainsi d’une plus grande flexibilité pour gérer les données entre différentes sources de données, telles que FDA, FFDA et base de données locale.
+L&#39;activité **[!UICONTROL Modifier la source de données]** permet de modifier la source de données d&#39;un workflow **[!UICONTROL Table de travail]**. Vous bénéficiez ainsi d&#39;une plus grande flexibilité pour gérer les données entre différentes sources de données, telles que FDA, FFDA et base de données locale.
 
 La **[!UICONTROL table de travail]** permet au workflow Adobe Campaign de gérer les données et de partager les données avec les activités de workflow.
 Par défaut, la **[!UICONTROL table de travail]** est créée dans la même base de données que la source des données sur lesquelles nous effectuons une requête.
 
-Par exemple, lors de l’interrogation de la table **[!UICONTROL Profils]** stockée dans la base de données cloud, vous allez créer une **[!UICONTROL table de travail]** sur la même base de données cloud.
-Pour modifier ce paramètre, vous pouvez ajouter l’activité **[!UICONTROL Modifier la source de données]** afin de choisir une autre source de données pour votre **[!UICONTROL table de travail]**.
+Par exemple, lors de l&#39;interrogation de la table **[!UICONTROL Profils]** stockée dans la base de données cloud, vous allez créer une **[!UICONTROL table de travail]** sur la même base de données cloud.
+Pour modifier ce paramètre, vous pouvez ajouter l&#39;activité **[!UICONTROL Modifier la source de données]** afin de choisir une autre source de données pour votre **[!UICONTROL table de travail]**.
 
-Notez que lorsque vous utilisez l’activité **[!UICONTROL Modifier la source de données]**, vous devez revenir à la base de données cloud pour continuer l’exécution des workflows.
+Notez que lorsque vous utilisez l&#39;activité **[!UICONTROL Modifier la source de données]**, vous devez revenir à la base de données cloud pour continuer l&#39;exécution des workflows.
 
-Pour utiliser l’activité **[!UICONTROL Modifier la source de données]** :
+Pour utiliser l&#39;activité **[!UICONTROL Modifier la source de données]** :
 
 1. Créez un workflow.
 
@@ -75,11 +75,11 @@ Pour utiliser l’activité **[!UICONTROL Modifier la source de données]** :
 
    Pour plus d&#39;informations sur l&#39;activité **[!UICONTROL Requête]**, consultez la page [Requête](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/query.html?lang=fr#creating-a-query) de la documentation de Campaign Classic V7.
 
-1. Dans l’onglet **[!UICONTROL Ciblage]**, ajoutez une activité **[!UICONTROL Modifier la source de données]** et double-cliquez dessus pour sélectionner **[!UICONTROL Source de données par défaut]**.
+1. Dans l&#39;onglet **[!UICONTROL Ciblage]**, ajoutez une activité **[!UICONTROL Modifier la source de données]** et double-cliquez dessus pour sélectionner **[!UICONTROL Source de données par défaut]**.
 
    La table de travail, qui contient le résultat de votre requête, est ensuite déplacée vers la base de données PostgreSQL par défaut.
 
-1. Dans l’onglet **[!UICONTROL Actions]**, effectuez un glisser-déposer d’une activité **[!UICONTROL Code JavaScript]** pour réaliser des opérations unitaires sur la table de travail.
+1. Dans l&#39;onglet **[!UICONTROL Actions]**, effectuez un glisser-déposer d&#39;une activité **[!UICONTROL Code JavaScript]** pour réaliser des opérations unitaires sur la table de travail.
 
    Pour plus d&#39;informations sur l&#39;activité **[!UICONTROL Code JavaScript]**, consultez la page [Code JavaScript et Code JavaScript avancé](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/sql-code-and-javascript-code.html?lang=fr#javascript-code) de la documentation Campaign Classic V7.
 
@@ -91,25 +91,25 @@ Pour utiliser l’activité **[!UICONTROL Modifier la source de données]** :
 
 ## Gestion des entrepôts virtuels {#warehouse}
 
-Une fois votre workflow créé, vous pouvez accéder à des options supplémentaires à lʼaide du bouton **[!UICONTROL Propriétés]** pour une configuration plus poussée.
+Une fois votre workflow créé, vous pouvez accéder à des options supplémentaires à l&#39;aide du bouton **[!UICONTROL Propriétés]** pour une configuration plus poussée.
 
 ![](../assets/do-not-localize/book.png) En savoir plus sur les **propriétés des workflows** dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/workflow-properties.html?lang=fr)
 
-Dans lʼonglet **[!UICONTROL Exécution]** de la fenêtre des **[!UICONTROL Propriétés]** de votre workflow, vous pouvez choisir de lier votre workflow à différents entrepôts et optimiser la gestion de votre charge de travail. Pour plus dʼinformations sur les **Entrepôts**, consultez la [documentation de Snowflake](https://docs.snowflake.com/fr/user-guide/warehouses-overview.html).
+Dans l&#39;onglet **[!UICONTROL Exécution]** de la fenêtre des **[!UICONTROL Propriétés]** de votre workflow, vous pouvez choisir de lier votre workflow à différents entrepôts et optimiser la gestion de votre charge de travail. Pour plus d&#39;informations sur les **Entrepôts**, consultez la [documentation de Snowflake](https://docs.snowflake.com/fr/user-guide/warehouses-overview.html).
 
 ![](assets/warehouse.png)
 
-En fonction de lʼobjectif de votre workflow, vous pouvez choisir parmi les trois entrepôts suivants dans le menu déroulant **[!UICONTROL Entrepôt]** :
+En fonction de l&#39;objectif de votre workflow, vous pouvez choisir parmi les trois entrepôts suivants dans le menu déroulant **[!UICONTROL Entrepôt]** :
 
-* **[!UICONTROL Par défaut]**/**[!UICONTROL Campagne]** : proposé par défaut lors de la création dʼun workflow.
+* **[!UICONTROL Par défaut]**/**[!UICONTROL Campagne]** : proposé par défaut lors de la création d&#39;un workflow.
 
-* **[!UICONTROL Importation/Exportation]** : doit être utilisé avec les workflows dʼimportation ou dʼexportation afin d’optimiser les performances de vos activités.
+* **[!UICONTROL Importation/Exportation]** : doit être utilisé avec les workflows d&#39;importation ou d&#39;exportation afin d&#39;optimiser les performances de vos activités.
 
-* **[!UICONTROL Campagne en rafale]** : doit être utilisé avec les workflows de campagne ou de diffusion afin dʼoptimiser le temps de traitement de vos diffusions.
+* **[!UICONTROL Campagne en rafale]** : doit être utilisé avec les workflows de campagne ou de diffusion afin d&#39;optimiser le temps de traitement de vos diffusions.
 
 >[!NOTE]
 >
->Lʼentrepôt **[!UICONTROL Système]** est uniquement destiné aux workflows intégrés.
+>L&#39;entrepôt **[!UICONTROL Système]** est uniquement destiné aux workflows intégrés.
 
 ## Configuration de campagnes récurrentes
 
@@ -183,9 +183,9 @@ Lorsque le contenu de votre diffusion est disponible dans un fichier HTML qui se
 
 * [Coordination des mises à jour de données](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/coordinating-data-updates.html?lang=fr){target=&quot;_blank&quot;}
 
-   Découvrez comment vérifier que le processus de mise à jour est terminé avant d&#39;exécuter une autre opération de mise à jour. Pour ce faire, nous allons configurer une variable d’instance et laisser le workflow tester si l’instance est en cours d’exécution pour décider si elle doit continuer l’exécution du workflow et effectuer la mise à jour.
+   Découvrez comment vérifier que le processus de mise à jour est terminé avant d&#39;exécuter une autre opération de mise à jour. Pour ce faire, nous allons configurer une variable d&#39;instance et laisser le workflow tester si l&#39;instance est en cours d&#39;exécution afin de décider de continuer ou non l&#39;exécution du workflow et d&#39;effectuer la mise à jour.
 
-* [Créer une liste récapitulative](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/creating-a-summary-list.html?lang=fr){target=&quot;_blank&quot;}
+* [Créer une liste de synthèse](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/creating-a-summary-list.html?lang=fr){target=&quot;_blank&quot;}
 
    Découvrez comment créer un workflow qui, après la collecte de fichiers et plusieurs enrichissements, permet de créer une liste récapitulative. L&#39;exemple est basé sur une liste de contacts qui ont effectué des achats dans un magasin.
 

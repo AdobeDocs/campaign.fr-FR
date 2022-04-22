@@ -12,7 +12,7 @@ ht-degree: 100%
 
 ---
 
-# Création d’emplacements{#creating-offer-spaces}
+# Création d&#39;emplacements{#creating-offer-spaces}
 
 Le contenu du catalogue d&#39;offres est paramétré dans des emplacements. Par défaut, le contenu peut contenir les champs suivants : **[!UICONTROL Titre]**, **[!UICONTROL URL de destination]**, **[!UICONTROL URL d&#39;image]**, **[!UICONTROL Contenu HTML]** et **[!UICONTROL Contenu texte]**. La séquence des champs est paramétrée dans l&#39;emplacement.
 
@@ -115,7 +115,7 @@ Pour ce faire, procédez comme suit :
 
 **Interaction entrante**
 
-L&#39;onglet **[!UICONTROL Stockage]** permet de définir les statuts des propositions d&#39;offre **présentées** et **acceptées** uniquement. Dans le cas d’une interaction entrante, vous devez préciser directement le statut de la proposition d’offre dans l’URL d&#39;appel du moteur d’offre plutôt que dans l’interface. Vous serez ainsi en mesure de spécifier le statut à appliquer dans d’autres cas, par exemple si une proposition d’offre est rejetée.
+L&#39;onglet **[!UICONTROL Stockage]** permet de définir les statuts des propositions d&#39;offre **présentées** et **acceptées** uniquement. Dans le cas d&#39;une interaction entrante, vous devez préciser directement le statut de la proposition d&#39;offre dans l&#39;URL d&#39;appel du moteur d&#39;offre plutôt que dans l&#39;interface. Vous serez ainsi en mesure de spécifier le statut à appliquer dans d&#39;autres cas, par exemple si une proposition d&#39;offre est rejetée.
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
@@ -154,6 +154,6 @@ Dans le cas où le destinataire n&#39;est éligible à aucune offre, la prévisu
 ![](assets/offer_space_overview_001.png)
 
 
-La prévisualisation peut ne pas tenir compte des contextes lorsqu’ils sont limités à un emplacement. C’est le cas lorsque le schéma d’interaction a été étendu de façon à ajouter des champs qui sont référencés dans un emplacement utilisant un canal entrant.
+La prévisualisation peut ne pas tenir compte des contextes lorsqu&#39;ils sont limités à un emplacement. C&#39;est le cas lorsque le schéma d&#39;interaction a été étendu de façon à ajouter des champs qui sont référencés dans un emplacement utilisant un canal entrant.
 
 ![](../assets/do-not-localize/book.png) Pour en savoir plus à ce sujet, consultez cet exemple dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=fr){target=&quot;_blank&quot;}.

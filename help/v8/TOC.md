@@ -49,14 +49,14 @@ ht-degree: 96%
    + [Prise en main](audiences/gs-audiences.md)
    + [Accès aux profils](audiences/view-profiles.md)
    + Ajout de profils {#add-profiles}
-      + [Création manuelle de profils](audiences/create-profiles.md)
-      + [Importation de profils depuis un fichier](audiences/import-profiles.md)
+      + [Create profiles manually](audiences/create-profiles.md)
+      + [Importer des profils depuis un fichier](audiences/import-profiles.md)
       + [Utilisation de profils externes](audiences/external-profiles.md)
       + [Collecte de données de profil dans des formulaires web](audiences/collect-profiles.md)
    + Création d&#39;audiences {#create-audiences}
-      + [Création d&#39;une liste de contacts](audiences/create-audiences.md)
-      + [Création et gestion de filtres](audiences/create-filters.md)
-   + [Gestion des dossiers et des vues](audiences/folders-and-views.md)
+      + [Créer une liste de contacts](audiences/create-audiences.md)
+      + [Créer et gérer des filtres](audiences/create-filters.md)
+   + [Gérer les dossiers et les vues](audiences/folders-and-views.md)
    + [Bonnes pratiques](audiences/audiences-best-practices.md)
 + Envoyer les messages{#send}
    + [E-mails](send/email.md)

@@ -9,7 +9,7 @@ exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
 source-git-commit: 8417b1b4b7370e2a2eed76e9f1ac395eccf0ac66
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Les versions d&#39;Android et iOS prises en charge, ainsi que les versions compa
 
 >[!NOTE]
 >
->En tant qu&#39;administrateur de Campaign, vous pouvez télécharger les SDK Campaign à partir de la [distribution logicielle d&#39;Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). Pour plus d’informations, contactez l&#39;[Assistance clientèle d&#39;Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>En tant qu&#39;administrateur de Campaign, vous pouvez télécharger les SDK Campaign à partir de la [distribution logicielle d&#39;Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). Pour plus d&#39;informations, contactez l&#39;[Assistance clientèle d&#39;Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Déclaration des paramètres d&#39;intégration {#declaring-integration-settings}
@@ -32,7 +32,7 @@ Afin d&#39;intégrer le SDK Campaign dans l&#39;application mobile, l&#39;admini
 
    >[!NOTE]
    >
-   >Cette clé d’intégration est renseignée dans la console Adobe Campaign, dans l&#39;onglet **[!UICONTROL Informations]** du service dédié à l&#39;application mobile. Reportez-vous à la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=fr#creating-ios-app).
+   >Cette clé d&#39;intégration est renseignée dans la console Adobe Campaign, dans l&#39;onglet **[!UICONTROL Informations]** du service dédié à l&#39;application mobile. Reportez-vous à la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=fr#creating-ios-app).
 
 * **Une URL de tracking** correspondant à l&#39;adresse du serveur de tracking Adobe Campaign.
 * **Une URL marketing** permettant de collecter les abonnements.
@@ -56,7 +56,7 @@ Afin d&#39;intégrer le SDK Campaign dans l&#39;application mobile, l&#39;admini
 
 ## Intégration du SDK Android
 
-Le SDK Android est une bibliothèque jar écrite en JAVA. Il permet aux développeurs Android de s’intégrer à Adobe Campaign : enregistrez un nouvel appareil, liez l’appareil à un utilisateur, suivez le comportement, etc.
+Le SDK Android est une bibliothèque jar écrite en JAVA. Il permet aux développeurs Android de s&#39;intégrer à Adobe Campaign : enregistrement d&#39;un nouvel appareil, association de l&#39;appareil à un utilisateur, suivi du comportement, etc.
 
 Dans cette section, découvrez comment utiliser le SDK Android dans une application Android implémentant [Google Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging/).
 
@@ -361,7 +361,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 
 1. **Suivi des ouvertures et des clics sur les messages de notification**
 
-   Pour les messages de notification, le suivi des ouvertures/clics doit être effectué avec la fonction `notifyOpening` au sein de l&#39;activité de lancement de l’application, comme ci-dessous :
+   Pour les messages de notification, le suivi des ouvertures/clics doit être effectué avec la fonction `notifyOpening` au sein de l&#39;activité de lancement de l&#39;application, comme ci-dessous :
 
    ```sql
    /** Called when the activity is first created. */
@@ -792,7 +792,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 
 ## Variables {#variables}
 
-Les variables permettent de définir le comportement de l&#39;application mobile après réception d&#39;une notification. Ces variables doivent être définies dans le code de l’application mobile et dans la console Adobe Campaign, dans l&#39;onglet **[!UICONTROL Variables]** du service d&#39;application mobile dédié.
+Les variables permettent de définir le comportement de l&#39;application mobile après réception d&#39;une notification. Ces variables doivent être définies dans le code de l&#39;application mobile et dans la console Adobe Campaign, dans l&#39;onglet **[!UICONTROL Variables]** du service d&#39;application mobile dédié.
 
 ![](../assets/do-not-localize/book.png) En savoir plus dans la **documentation de Campaign Classic v7** sur les applications mobiles : [Étapes de configuration pour iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=fr){target=&quot;_blank&quot;} et [Étapes de configuration pour Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=fr){target=&quot;_blank&quot;}.
 

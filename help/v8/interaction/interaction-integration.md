@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Ajout dʼune offre sur une page web
+title: Ajouter une offre sur une page web
 description: Découvrez comment ajouter une offre dans une page web
 exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
 source-git-commit: 213a10fea36b3b08c1dd8525084d212e191b2fc7
 workflow-type: tm+mt
 source-wordcount: '1479'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Ajout dʼune offre sur une page web{#add-an-offer-in-web}
+# Ajouter une offre sur une page web{#add-an-offer-in-web}
 
-Pour appeler le moteur dʼoffres dans une page web, insérez un appel à un code JavaScript directement dans la page. Cet appel renvoie le contenu de lʼoffre dans un élément ciblé.
+Pour appeler le moteur d&#39;offres dans une page web, insérez un appel à un code JavaScript directement dans la page. Cet appel renvoie le contenu de l&#39;offre dans un élément ciblé.
 
 L&#39;URL d&#39;appel au script est de la forme suivante :
 
@@ -28,9 +28,9 @@ Les cas d&#39;utilisations suivants présentent les différentes options possibl
 
 ## Option 1 : mode HTML {#html-mode}
 
-### Présentation dʼune offre anonyme {#presenting-an-anonymous-offer}
+### Présentation d&#39;une offre anonyme {#presenting-an-anonymous-offer}
 
-**Étape 1 : préparation du moteur dʼoffres**
+**Étape 1 : préparation du moteur d&#39;offres**
 
 1. Dans l&#39;interface d&#39;Adobe Campaign, préparez un environnement anonyme.
 1. Créez un emplacement rattaché à l&#39;environnement anonyme.
@@ -38,7 +38,7 @@ Les cas d&#39;utilisations suivants présentent les différentes options possibl
 
 **Étape 2 : mise à jour du contenu de la page HTML**
 
-La page HTML doit inclure un élément avec un attribut @id avec la valeur du nom interne de lʼemplacement créé (&quot;i_internal name space&quot;). Lʼoffre sera insérée dans cet élément par Interaction.
+La page HTML doit inclure un élément avec un attribut @id avec la valeur du nom interne de l&#39;emplacement créé (&quot;i_internal name space&quot;). L&#39;offre sera insérée dans cet élément par Interaction.
 
 Dans l&#39;exemple, l&#39;attribut @id reçoit la valeur &quot;i_SPC12&quot; où &quot;SPC12&quot; est le nom interne de l&#39;emplacement précédemment créé :
 
@@ -56,13 +56,13 @@ Dans l&#39;exemple, l&#39;URL d&#39;appel au script est la suivante (&quot;OE3&q
 >
 >La balise `<script>` ne doit pas être auto-fermante.
 
-Cet appel statique va automatiquement générer un appel dynamique contenant tous les paramètres nécessaires au moteur dʼoffres.
+Cet appel statique va automatiquement générer un appel dynamique contenant tous les paramètres nécessaires au moteur d&#39;offres.
 
-Ce comportement permet dʼavoir plusieurs emplacements sur la même page gérés par un seul appel au moteur dʼoffres.
+Ce comportement permet d&#39;avoir plusieurs emplacements sur la même page gérés par un seul appel au moteur d&#39;offres.
 
 **Étape 3 : affichage des résultats dans la page HTML**
 
-Le contenu du rendu de lʼoffre est renvoyé à la page HTML par le moteur dʼoffres :
+Le contenu du rendu de l&#39;offre est renvoyé à la page HTML par le moteur d&#39;offres :
 
 ```
 <div id="banner_header">
@@ -86,11 +86,11 @@ Le contenu du rendu de lʼoffre est renvoyé à la page HTML par le moteur dʼof
 </div>
 ```
 
-### Présentation dʼune offre identifiée {#presenting-an-identified-offer}
+### Présentation d&#39;une offre identifiée {#presenting-an-identified-offer}
 
 Pour présenter une offre à un contact identifié, le processus est similaire à celui détaillé [dans cette section](#presenting-an-anonymous-offer).
 
-Dans le contenu de la page web, vous devez ajouter le script suivant qui permettra dʼidentifier le contact lors de lʼappel au moteur dʼoffres :
+Dans le contenu de la page web, vous devez ajouter le script suivant qui permettra d&#39;identifier le contact lors de l&#39;appel au moteur d&#39;offres :
 
 ```
 <script type="text/javascript">
@@ -104,9 +104,9 @@ Dans le contenu de la page web, vous devez ajouter le script suivant qui permett
 
    Dans cet exemple, la clé d&#39;identification est composite puisqu&#39;elle s&#39;appuie à la fois sur l&#39;email et le nom du destinataire.
 
-1. Lors de lʼaffichage de la page web, lʼévaluation du script permet de passer lʼidentifiant du destinataire au moteur dʼoffres. Si lʼidentifiant est composite, les clés sont affichées dans la même séquence que celle utilisée dans les paramètres avancés et sont séparées par un |.
+1. Lors de l&#39;affichage de la page web, l&#39;évaluation du script permet de passer l&#39;identifiant du destinataire au moteur d&#39;offres. Si l&#39;identifiant est composite, les clés sont affichées dans la même séquence que celle utilisée dans les paramètres avancés et sont séparées par un |.
 
-   Dans lʼexemple suivant, le contact sʼest identifié sur le site web et a été reconnu lors de lʼappel au moteur dʼoffres via son adresse e-mail et son nom de famille.
+   Dans l&#39;exemple suivant, le contact s&#39;est identifié sur le site web et a été reconnu lors de l&#39;appel au moteur d&#39;offres via son adresse e-mail et son nom de famille.
 
    ```
    <script type="text/javascript">
@@ -114,7 +114,7 @@ Dans le contenu de la page web, vous devez ajouter le script suivant qui permett
    </script>
    ```
 
-### Utilisation dʼune fonction de rendu HTML {#using-an-html-rendering-function}
+### Utilisation d&#39;une fonction de rendu HTML {#using-an-html-rendering-function}
 
 Vous pouvez utiliser une fonction de rendu afin que la représentation HTML de l&#39;offre soit automatiquement générée.
 
@@ -128,11 +128,11 @@ Vous pouvez utiliser une fonction de rendu afin que la représentation HTML de l
 
 ## Option 2 : mode XML {#xml-mode}
 
-### Présentation dʼune offre {#presenting-an-offer}
+### Présentation d&#39;une offre {#presenting-an-offer}
 
-Le module **Interaction** de Campaign vous permet de renvoyer un nœud XML à la page HTML qui appelle le moteur dʼoffres. Ce nœud XML peut être traité par des fonctions à développer côté client.
+Le module **Interaction** de Campaign vous permet de renvoyer un nœud XML à la page HTML qui appelle le moteur d&#39;offres. Ce nœud XML peut être traité par des fonctions à développer côté client.
 
-Lʼappel au moteur dʼoffres est de la forme suivante :
+L&#39;appel au moteur d&#39;offres est de la forme suivante :
 
 ```
 <script type="text/javascript" id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=&cb="></script>
@@ -161,13 +161,13 @@ Le noeud XML retourné est de la forme suivante :
 </propositions>
 ```
 
-Le cas d’utilisation suivant décrit les paramétrages à effectuer dans Adobe Campaign pour activer le mode XML, puis montre le résultat de l’appel au moteur dans la page HTML.
+Le cas d&#39;utilisation suivant décrit les paramétrages à effectuer dans Adobe Campaign pour activer le mode XML, puis montre le résultat de l&#39;appel au moteur dans la page HTML.
 
 1. **Créer un environnement et un emplacement**
 
-   Pour plus d’informations sur la création d’un environnement, consultez [cette page](interaction-env.md).
+   Pour plus d&#39;informations sur la création d&#39;un environnement, consultez [cette page](interaction-env.md).
 
-   La création d’un emplacement est détaillée sur [cette page](interaction-offer-spaces.md).
+   La création d&#39;un emplacement est détaillée sur [cette page](interaction-offer-spaces.md).
 
 1. **Étendre le schéma des offres pour ajouter de nouveaux champs**
 
@@ -204,7 +204,7 @@ Le cas d’utilisation suivant décrit les paramétrages à effectuer dans Adobe
    >
    >Ne pas oublier de mettre à jour la structure de la base de données.
 
-   Vous pouvez étendre le schéma des offres afin d’ajouter des champs à la fois dans les modes batch et unitaire, et dans n’importe quel format (texte, HTML et XML).
+   Vous pouvez étendre le schéma des offres afin d&#39;ajouter des champs à la fois dans les modes batch et unitaire, et dans n&#39;importe quel format (texte, HTML et XML).
 
 1. **Étendre le formulaire des offres pour éditer les nouveaux champs et modifier un champ existant**
 
@@ -249,21 +249,21 @@ Le cas d’utilisation suivant décrit les paramétrages à effectuer dans Adobe
 
    Les champs **[!UICONTROL Titre 2]** et **[!UICONTROL Prix]** ont été ajoutés et le champ **[!UICONTROL URL de destination]** n&#39;est plus affiché.
 
-1. **Création d’une offre**
+1. **Création d&#39;une offre**
 
-   Pour plus d’informations sur la création d’offres, consultez [cette page](interaction-offer.md).
+   Pour plus d&#39;informations sur la création d&#39;offres, consultez [cette page](interaction-offer.md).
 
    Dans le cas d&#39;utilisation suivant, l&#39;offre est remplie de cette manière :
 
    ![](assets/interaction_xmlmode_offer.png)
 
-1. **Valider l’offre**
+1. **Valider l&#39;offre**
 
    Validez ou faites valider l&#39;offre puis activez là sur l&#39;emplacement créé à l&#39;étape précédente afin qu&#39;elle soit disponible dans l&#39;environnement en ligne associé.
 
 1. **Appel du moteur et résultat dans la page HTML**
 
-   L’appel au moteur d’offres dans la page HTML est le suivant :
+   L&#39;appel au moteur d&#39;offres dans la page HTML est le suivant :
 
    ```
    <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=OE7&cb=alert" type="text/javascript">
@@ -273,7 +273,7 @@ Le cas d’utilisation suivant décrit les paramétrages à effectuer dans Adobe
 
    Le paramètre &quot;**cb**&quot; a pour valeur le nom de la fonction qui doit interpréter le noeud XML renvoyé par le moteur. Dans notre exemple, la fonction appelée ouvre une fenêtre modale (fonction alert() ).
 
-   Le nœud XML renvoyé par le moteur d’offres a la forme suivante :
+   Le nœud XML renvoyé par le moteur d&#39;offres a la forme suivante :
 
    ```
    <propositions>
@@ -293,7 +293,7 @@ Le cas d’utilisation suivant décrit les paramétrages à effectuer dans Adobe
 
 ### Utiliser une fonction de rendu {#using-a-rendering-function-}
 
-Il est possible d’utiliser une fonction de rendu XML pour créer une présentation d’offre. Cette fonction modifie le nœud XML renvoyé à la page HTML lors de l’appel au moteur d’offres.
+Il est possible d&#39;utiliser une fonction de rendu XML pour créer une présentation d&#39;offre. Cette fonction modifie le nœud XML renvoyé à la page HTML lors de l&#39;appel au moteur d&#39;offres.
 
 1. Dans l&#39;emplacement de l&#39;offre, cliquez sur le lien **[!UICONTROL Editer les fonctions]**.
 1. Sélectionnez **[!UICONTROL Surcharger la fonction de rendu XML]**.
@@ -310,7 +310,7 @@ Il est possible d’utiliser une fonction de rendu XML pour créer une présenta
 
 ![](assets/interaction_xmlmode_001.png)
 
-## Configuration d’une intégration SOAP
+## Configuration d&#39;une intégration SOAP
 
 Les services web SOAP fournis pour la gestion des offres sont différents de ceux habituellement utilisés dans Adobe Campaign. Ils sont accessibles via l&#39;URL d&#39;interaction décrite dans la section précédente et permettent de proposer ou mettre à jour des offres pour un contact donné.
 
@@ -320,7 +320,7 @@ Pour une proposition d&#39;offres via SOAP, vous devez ajouter la commande **nms
 
 * **targetId** : clé primaire du destinataire (il peut s&#39;agir d&#39;une clé composite).
 * **maxCount** : indique le nombre de propositions d&#39;offre pour le contact.
-* **context** : vous permet d’ajouter des informations contextuelles dans le schéma d’espace. Si le schéma utilisé est **nms:interaction**, **`<empty>`** doit être ajouté.
+* **context** : vous permet d&#39;ajouter des informations contextuelles dans le schéma d&#39;espace. Si le schéma utilisé est **nms:interaction**, **`<empty>`** doit être ajouté.
 * **categories** : indique la ou les catégories auxquelles doivent appartenir la ou les offres proposées.
 * **themes** : indique la ou les thèmes auxquelles doivent appartenir la ou les offres proposées.
 * **uuid** : valeur du cookie permanent Adobe Campaign (&quot;uuid230&quot;).
@@ -342,7 +342,7 @@ Ajoutez la commande **nms:interaction#UpdateStatus** dans l&#39;URL, puis les pa
 
 * **proposition** : chaîne de caractères, contient l&#39;identifiant de la proposition donnée en sortie lors d&#39;un appel au moteur. Voir [Proposition d&#39;offres](#offer-proposition).
 * **status** : nombre, indique le nouveau statut de l&#39;offre. Les valeurs possibles sont listées dans l&#39;énumération **propositionStatus**, dans le schéma **nms:common**. Par exemple, d&#39;usine, le nombre 3 correspond au statut **Acceptée**.
-* **Context** : élément XML, vous permet d’ajouter des informations contextuelles dans le schéma d’espace. Si le schéma utilisé est **nms:interaction**, **`<empty>`** doit être ajouté.
+* **Context** : élément XML, vous permet d&#39;ajouter des informations contextuelles dans le schéma d&#39;espace. Si le schéma utilisé est **nms:interaction**, **`<empty>`** doit être ajouté.
 
 ### Exemple d&#39;utilisation d&#39;un appel SOAP {#example-using-a-soap-call}
 

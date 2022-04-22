@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Présenter une offre (interaction entrante)
-description: Découvrez comment présenter la meilleure offre à lʼaide du module Interaction de Campaign.
+description: Découvrez comment présenter la meilleure offre à l'aide du module Interaction de Campaign.
 exl-id: d0137fa7-3d04-4205-b49c-46973e45a5b8
 source-git-commit: c19ac91fe7b4b825f75ec096320efabc3e78328c
 workflow-type: tm+mt
@@ -16,16 +16,16 @@ Les offres peuvent être présentées à divers emplacements utilisant [un canal
 
 ![](assets/inbound-interactions.png)
 
-Pour quʼune offre puisse être sélectionnée par le moteur dʼoffres, elle doit avoir été validée et être disponible dans un environnement en ligne.
+Pour qu&#39;une offre puisse être sélectionnée par le moteur d&#39;offres, elle doit avoir été validée et être disponible dans un environnement en ligne.
 
 ![](../assets/do-not-localize/book.png) Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=fr#approving-offer-content).
 
-Lorsquʼil sʼagit dʼun contact entrant, lʼutilisateur qui navigue sur la page peut être identifié ou non par le site web. Le moteur dʼoffres présente des offres différentes selon quʼil sʼagit de profils identifiés ou de profils anonymes.
+Lorsqu&#39;il s&#39;agit d&#39;un contact entrant, l&#39;utilisateur qui navigue sur la page peut être identifié ou non par le site web. Le moteur d&#39;offres présente des offres différentes selon qu&#39;il s&#39;agit de profils identifiés ou de profils anonymes.
 
-Avant de pouvoir proposer des offres sur un canal entrant, vous devez paramétrer lʼappel au moteur dʼoffres à lʼendroit où vous souhaitez que les offres soient présentées. Le cas le plus courant dans le cadre dʼune interaction entrante est la page web.
+Avant de pouvoir proposer des offres sur un canal entrant, vous devez paramétrer l&#39;appel au moteur d&#39;offres à l&#39;endroit où vous souhaitez que les offres soient présentées. Le cas le plus courant dans le cadre d&#39;une interaction entrante est la page web.
 
 >[!NOTE]
 >
->Dans le cas dʼinteractions entrantes, il est nécessaire de paramétrer spécifiquement le moteur dʼoffres pour proposer et mettre à jour une ou plusieurs offres.
+>Dans le cas d&#39;interactions entrantes, il est nécessaire de paramétrer spécifiquement le moteur d&#39;offres pour proposer et mettre à jour une ou plusieurs offres.
 >
->Vous devez également autoriser le mode unitaire sur vos emplacements. Pour plus dʼinformations, consultez [cette page](interaction-offer-spaces.md).
+>Vous devez également autoriser le mode unitaire sur vos emplacements. Pour plus d&#39;informations, consultez [cette page](interaction-offer-spaces.md).

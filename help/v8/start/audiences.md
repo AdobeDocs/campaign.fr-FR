@@ -1,6 +1,6 @@
 ---
-title: Utilisation des audiences dans Campaign
-description: Utilisation des audiences dans Campaign
+title: Utiliser des audiences dans Campaign
+description: Utiliser des audiences dans Campaign
 feature: Audiences
 role: Data Engineer
 level: Beginner
@@ -8,11 +8,11 @@ exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 source-git-commit: b5fb8825734bce2ec62485208b468757b461005f
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
-# Utilisation des audiences dans Campaign{#gs-ac-audiences}
+# Utiliser des audiences dans Campaign{#gs-ac-audiences}
 
 Les profils sont des contacts stockés dans la base de données Campaign.
 
@@ -20,19 +20,19 @@ Dans Adobe Campaign, les **destinataires** sont les profils par défaut ciblés
 
 Découvrez comment importer, mettre à jour et gérer des profils et des audiences [dans cette section](../audiences/gs-audiences.md).
 
-## Création de listes{#create-lists}
+## Créer des listes{#create-lists}
 
-Une liste est un ensemble statique de contacts qui peut être ciblé dans les actions de diffusion ou mis à jour lors d&#39;un import ou d&#39;une autre action de workflow. Par exemple, une population extraite de la base via une requête peut être stockée en tant que liste.
+Une liste est un ensemble statique de contacts qui peut être ciblé dans des actions de diffusion ou mis à jour pendant une importation ou lors d&#39;une autre action de workflow. Par exemple, une population extraite de la base de données via une requête peut être stockée en tant que liste.
 
 ![](../assets/do-not-localize/glass.png) Découvrez comment créer et gérer des listes dans [cette page](../audiences/create-audiences.md).
 
-## Filtrer la base{#filter-the-database}
+## Filtrer la base de données{#filter-the-database}
 
-La configuration des filtres permet de sélectionner des données dans une liste. **[!UICONTROL dynamiquement]**: lorsque les données sont modifiées, les données filtrées sont mises à jour. Vous pouvez créer vos propres filtres ou utiliser les filtres intégrés pour définir une audience cible.
+La configuration des filtres permet de sélectionner des données dans une liste **[!UICONTROL de manière dynamique]** : lorsque les données sont modifiées, les données filtrées sont mises à jour. Vous pouvez créer vos propres filtres ou utiliser les filtres intégrés pour définir une audience cible.
 
 ![](../assets/do-not-localize/glass.png) Découvrez comment créer et gérer des filtres dans [cette page](../audiences/create-filters.md).
 
-## Création d&#39;une audience dans un workflow
+## Créer une audience dans un workflow
 
 Le ciblage peut être créé au moyen d&#39;une combinaison de requêtes dans une séquence graphique de workflow. Vous pouvez créer des audiences qui seront ciblées en fonction de vos besoins. Pour afficher l&#39;éditeur de workflows, cliquez sur l&#39;onglet **[!UICONTROL Ciblage et workflows]** dans le tableau de bord des campagnes.
 
@@ -41,7 +41,7 @@ Le ciblage peut être créé au moyen d&#39;une combinaison de requêtes dans un
 
 ## Profils actifs{#active-profiles}
 
-Conformément à votre contrat, chacune de vos instances Campaign est configurée avec un nombre spécifique de profils principaux comptabilisés à des fins de facturation. Consultez votre dernier contrat pour connaître le nombre de profils actifs achetés.
+Conformément à votre contrat, chacune de vos instances Campaign est configurée avec un nombre spécifique de profils actifs comptabilisés à des fins de facturation. Consultez votre dernier contrat pour connaître le nombre de profils actifs achetés.
 
 Un **profil** désigne un enregistrement d&#39;informations (par exemple un enregistrement dans la [Table de destinataires](../dev/datamodel.md) ou dans une table externe contenant un identifiant de cookie, un identifiant client, un identifiant mobile ou d&#39;autres informations relatives à un canal particulier) représentant un client final, un prospect ou un lead. Les profils sont considérés comme actifs s&#39;ils ont été ciblés ou ont fait l&#39;objet d&#39;une communication via un canal au cours des 12 derniers mois.
 
@@ -61,8 +61,8 @@ Adobe Campaign est un puissant outil servant à collecter et à traiter de trè
 
 **Rubriques connexes** dans la documentation de Campaign Classic v7 :
 
-* [Conception et exécution d’un workflow spécifique à une campagne](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=fr){target=&quot;_blank&quot;}
+* [Conception et exécution d&#39;un workflow spécifique à une campagne](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=fr){target=&quot;_blank&quot;}
 
-* [Découvrez comment sélectionner l’audience d’une campagne](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=fr){target=&quot;_blank&quot;}
+* [Découvrez comment sélectionner l&#39;audience d&#39;une campagne](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=fr){target=&quot;_blank&quot;}
 
 * [Prise en main des workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=fr){target=&quot;_blank&quot;}

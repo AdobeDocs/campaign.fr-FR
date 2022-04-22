@@ -14,52 +14,52 @@ ht-degree: 100%
 
 ## Recommandations générales {#general-recommendations}
 
-Une gestion des offres efficace dans Adobe Campaign requiert une attention toute particulière. Pour éviter tout problème, vous devez trouver le juste milieu entre le nombre de contacts et le nombre de catégories dʼoffres et le nombre dʼoffres.
+Une gestion des offres efficace dans Adobe Campaign requiert une attention toute particulière. Pour éviter tout problème, vous devez trouver le juste milieu entre le nombre de contacts et le nombre de catégories d&#39;offres et le nombre d&#39;offres.
 
-Cette section présente les bonnes pratiques pour gérer le module **nteraction** dans Adobe Campaign, y compris les règles dʼéligibilité, les filtres prédéfinis, les activités de workflow et les options de bases de données.
+Cette section présente les bonnes pratiques pour gérer le module **nteraction** dans Adobe Campaign, y compris les règles d&#39;éligibilité, les filtres prédéfinis, les activités de workflow et les options de bases de données.
 
-* Lors de lʼ&#x200B;**implémentation et de la configuration des interactions**, vous devez tenir compte des recommandations suivantes :
+* Lors de l&#39;**implémentation et de la configuration des interactions**, vous devez tenir compte des recommandations suivantes :
 
-   * Dans le cas du moteur batch (généralement utilisé dans les communications sortantes, telles que les emails), le débit est la préoccupation centrale, car plusieurs contacts peuvent être gérés simultanément. Le goulot d’étranglement typique est la performance de la base de données.
-   * La principale contrainte du moteur unitaire (généralement utilisé dans les communications entrantes, telles qu’une bannière sur un site web) est la latence, car quelqu’un attend une réponse. Le goulot d’étranglement typique est la performance de l’unité centrale.
-   * La conception du catalogue dʼoffres a un impact considérable sur la performance dʼAdobe Campaign.
-   * Lorsque vous travaillez avec un nombre élevé dʼoffres, il est recommandé de les diviser en plusieurs catalogues dʼoffres.
+   * Dans le cas du moteur batch (généralement utilisé dans les communications sortantes, telles que les emails), le débit est la préoccupation centrale, car plusieurs contacts peuvent être gérés simultanément. Le goulot d&#39;étranglement typique est la performance de la base de données.
+   * La principale contrainte du moteur unitaire (généralement utilisé dans les communications entrantes, telles qu&#39;une bannière sur un site web) est la latence, car quelqu&#39;un attend une réponse. Le goulot d&#39;étranglement typique est la performance de l&#39;unité centrale.
+   * La conception du catalogue d&#39;offres a un impact considérable sur la performance d&#39;Adobe Campaign.
+   * Lorsque vous travaillez avec un nombre élevé d&#39;offres, il est recommandé de les diviser en plusieurs catalogues d&#39;offres.
 
-* Retrouvez ci-dessous quelques bonnes pratiques relatives à lʼutilisation des **règles dʼéligibilité** :
+* Retrouvez ci-dessous quelques bonnes pratiques relatives à l&#39;utilisation des **règles d&#39;éligibilité** :
 
    * Simplifiez les règles. La complexité des règles a une incidence sur la performance, car elle prolonge la recherche. Une règle est complexe si elle comprend plus de cinq conditions.
-   * Afin dʼaccroître la performance, les règles peuvent être décomposées en différents filtres prédéfinis partagés entre des offres multiples.
-   * Placez les règles de catégorie d’offres les plus restrictives à la position la plus élevée possible dans l’arbre. De cette manière, elles excluront le plus grand nombre de contacts en premier, ce qui réduit le nombre de cibles et empêche leur traitement par d’autres règles.
-   * Placez les règles les plus coûteuses en termes de temps ou de traitement en bas de l’arbre. De cette façon, ces règles seront uniquement exécutées sur l’audience cible restante.
-   * Démarrez au niveau d’une catégorie spécifique afin d’éviter d’analyser l’ensemble de l’arbre.
-   * Pour économiser le temps de traitement, précalculez les agrégats au lieu de créer des règles complexes avec des jointures. Pour ce faire, essayez de stocker les données client dans une table de référence qui peut être consultée au sein des règles d’éligibilité.
+   * Afin d&#39;accroître la performance, les règles peuvent être décomposées en différents filtres prédéfinis partagés entre des offres multiples.
+   * Placez les règles de catégorie d&#39;offres les plus restrictives à la position la plus élevée possible dans l&#39;arbre. De cette manière, elles excluront le plus grand nombre de contacts en premier, ce qui réduit le nombre de cibles et empêche leur traitement par d&#39;autres règles.
+   * Placez les règles les plus coûteuses en termes de temps ou de traitement en bas de l&#39;arbre. De cette façon, ces règles seront uniquement exécutées sur l&#39;audience cible restante.
+   * Démarrez au niveau d&#39;une catégorie spécifique afin d&#39;éviter d&#39;analyser l&#39;ensemble de l&#39;arbre.
+   * Pour économiser le temps de traitement, précalculez les agrégats au lieu de créer des règles complexes avec des jointures. Pour ce faire, essayez de stocker les données client dans une table de référence qui peut être consultée au sein des règles d&#39;éligibilité.
    * Utilisez un nombre minimum de poids pour limiter le nombre de requêtes.
-   * Il est recommandé de disposer d’un nombre limité d’offres par emplacement d’offre. Cela accélère la récupération des offres dans n’importe quel emplacement donné.
-   * Servez-vous d’index, en particulier pour les colonnes de recherche fréquemment utilisées.
+   * Il est recommandé de disposer d&#39;un nombre limité d&#39;offres par emplacement d&#39;offre. Cela accélère la récupération des offres dans n&#39;importe quel emplacement donné.
+   * Servez-vous d&#39;index, en particulier pour les colonnes de recherche fréquemment utilisées.
 
 * Vous trouverez ci-dessous quelques bonnes pratiques concernant la **table de proposition** :
 
    * Utilisez un nombre minimum de règles pour que le traitement soit le plus rapide possible.
-   * Limitez le nombre d’enregistrements dans la table de propositions : conservez uniquement les enregistrements requis pour contrôler la mise à jour de son statut et ce que requièrent les règles, puis archivez-les dans un autre système.
+   * Limitez le nombre d&#39;enregistrements dans la table de propositions : conservez uniquement les enregistrements requis pour contrôler la mise à jour de son statut et ce que requièrent les règles, puis archivez-les dans un autre système.
    * Réalisez une maintenance de base de données intensive sur la table de propositions, par exemple, en reconstruisant les index ou en recréant la table.
-   * Limitez le nombre de propositions par cible. N’en définissez pas davantage par rapport à ce que vous allez utiliser.
+   * Limitez le nombre de propositions par cible. N&#39;en définissez pas davantage par rapport à ce que vous allez utiliser.
    * Dans la mesure du possible, évitez les jointures dans les critères des règles.
 
 ## Conseils pour la gestion des offres {#tips-managing-offers}
 
-Cette section contient des conseils plus détaillés sur la gestion des offres et lʼutilisation du module Interaction dans Adobe Campaign.
+Cette section contient des conseils plus détaillés sur la gestion des offres et l&#39;utilisation du module Interaction dans Adobe Campaign.
 
 ### Plusieurs emplacements dans un e-mail {#multiple-offer-spaces}
 
-Lorsque vous incluez des offres dans des diffusions, elles sont généralement sélectionnées en amont dans le workflow Campaign par le biais dʼune activité de workflow **Enrichissement** (ou dʼune autre activité similaire).
+Lorsque vous incluez des offres dans des diffusions, elles sont généralement sélectionnées en amont dans le workflow Campaign par le biais d&#39;une activité de workflow **Enrichissement** (ou d&#39;une autre activité similaire).
 
-Lors de la sélection des offres dans une activité **Enrichissement**, vous pouvez choisir lʼemplacement à utiliser. Cependant, quel que soit l&#39;emplacement sélectionné, le menu de personnalisation de la diffusion dépend de l&#39;espace d&#39;offre configuré dans la diffusion.
+Lors de la sélection des offres dans une activité **Enrichissement**, vous pouvez choisir l&#39;emplacement à utiliser. Cependant, quel que soit l&#39;emplacement sélectionné, le menu de personnalisation de la diffusion dépend de l&#39;espace d&#39;offre configuré dans la diffusion.
 
 Dans l&#39;exemple ci-dessous, l&#39;emplacement d&#39;offre sélectionné dans la diffusion est **[!UICONTROL Email (Environnement - Destinataire)]**:
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
-Si l&#39;emplacement d&#39;offre sélectionné dans la diffusion ne dispose pas d&#39;une fonction de rendu HTML configurée, vous ne la verrez pas dans le menu de diffusion et elle ne sera pas disponible pour pouvoir le sélectionner. Cette situation est indépendante de lʼemplacement sélectionné dans lʼactivité **Enrichissement**.
+Si l&#39;emplacement d&#39;offre sélectionné dans la diffusion ne dispose pas d&#39;une fonction de rendu HTML configurée, vous ne la verrez pas dans le menu de diffusion et elle ne sera pas disponible pour pouvoir le sélectionner. Cette situation est indépendante de l&#39;emplacement sélectionné dans l&#39;activité **Enrichissement**.
 
 Dans l&#39;exemple ci-dessous, la fonction de rendu HTML est disponible dans la liste déroulante, car l&#39;emplacement d&#39;offre sélectionné dans la diffusion comporte une fonction de rendu :
 
@@ -87,25 +87,25 @@ Il est également possible de stocker des données supplémentaires dans la tabl
 
 Un champ de la table temporaire de workflow dont le nom correspond à celui d&#39;un champ de la table des propositions est copié dans le même champ de la table des propositions.
 
-Par exemple, en cas de sélection manuelle dʼune offre (sans le module Interaction) dans une activité de workflow **Enrichissement**, les champs standard sont définis comme suit :
+Par exemple, en cas de sélection manuelle d&#39;une offre (sans le module Interaction) dans une activité de workflow **Enrichissement**, les champs standard sont définis comme suit :
 
 ![](assets/Interaction-best-practices-manual-offer-std-fields.png)
 
-Il est possible dʼajouter dʼautres champs, par exemple un champ `@rank` :
+Il est possible d&#39;ajouter d&#39;autres champs, par exemple un champ `@rank` :
 
 ![](assets/Interaction-best-practices-manual-offer-add-fields.png)
 
-Puisquʼil existe un champ appelé `@rank` dans la table des propositions, la valeur contenue dans la table temporaire du workflow sera copiée.
+Puisqu&#39;il existe un champ appelé `@rank` dans la table des propositions, la valeur contenue dans la table temporaire du workflow sera copiée.
 
-Pour plus dʼinformations sur le stockage de champs supplémentaires dans la table des propositions, consultez [cette section](interaction-send-offers.md#storing-offer-rankings-and-weights).
+Pour plus d&#39;informations sur le stockage de champs supplémentaires dans la table des propositions, consultez [cette section](interaction-send-offers.md#storing-offer-rankings-and-weights).
 
 Pour les offres sortantes avec le module Interaction, cette possibilité est utile lorsque plusieurs offres sont sélectionnées et que vous souhaitez enregistrer l&#39;ordre dans lequel elles seront affichées dans un email.
 
 Vous pouvez également stocker des métadonnées supplémentaires directement dans la table des propositions, par exemple le niveau de dépense actuel, pour conserver des historiques enregistrés relatifs aux dépenses au moment de la génération des offres.
 
-En cas dʼutilisation dʼune interaction sortante, il est possible dʼajouter le champ `@rank` comme dans lʼexemple ci-dessus. Cependant, sa valeur est automatiquement définie en fonction de lʼordre renvoyé par le module Interaction. Par exemple, si vous utilisez le module Interaction pour sélectionner trois offres, les valeurs 1, 2 et 3 sont renvoyées dans le champ `@rank`.
+En cas d&#39;utilisation d&#39;une interaction sortante, il est possible d&#39;ajouter le champ `@rank` comme dans l&#39;exemple ci-dessus. Cependant, sa valeur est automatiquement définie en fonction de l&#39;ordre renvoyé par le module Interaction. Par exemple, si vous utilisez le module Interaction pour sélectionner trois offres, les valeurs 1, 2 et 3 sont renvoyées dans le champ `@rank`.
 
-Lorsque vous utilisez le module Interaction et que vous sélectionnez manuellement des offres, lʼutilisateur peut combiner les deux approches. Par exemple, lʼutilisateur peut définir manuellement le champ `@rank` sur 1 pour lʼoffre sélectionnée manuellement et utiliser une expression telle que `"1 + @rank"` pour les offres renvoyées par le module Interaction. En supposant que le module Interaction sélectionne trois offres, les offres renvoyées par les deux approches seront classées de 1 à 4 :
+Lorsque vous utilisez le module Interaction et que vous sélectionnez manuellement des offres, l&#39;utilisateur peut combiner les deux approches. Par exemple, l&#39;utilisateur peut définir manuellement le champ `@rank` sur 1 pour l&#39;offre sélectionnée manuellement et utiliser une expression telle que `"1 + @rank"` pour les offres renvoyées par le module Interaction. En supposant que le module Interaction sélectionne trois offres, les offres renvoyées par les deux approches seront classées de 1 à 4 :
 
 ![](assets/Interaction-best-practices-manual-offer-combined.png)
 

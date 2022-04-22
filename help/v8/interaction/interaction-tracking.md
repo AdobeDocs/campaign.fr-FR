@@ -16,11 +16,11 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Ces fonctionnalités ne sont visibles quʼen ligne et uniquement pour les **Chargés de diffusion**.
+>Ces fonctionnalités ne sont visibles qu&#39;en ligne et uniquement pour les **Chargés de diffusion**.
 
-## Historique des propositions dʼoffres{#offer-proposition-history}
+## Historique des propositions d&#39;offres{#offer-proposition-history}
 
-Une fois vos propositions dʼoffres effectuées, vous pouvez consulter lʼhistorique de vos différentes présentations.
+Une fois vos propositions d&#39;offres effectuées, vous pouvez consulter l&#39;historique de vos différentes présentations.
 
 * Au niveau de l&#39;offre, dans l&#39;onglet **[!UICONTROL Edition]**, cliquez sur **[!UICONTROL Propositions]**.
 
@@ -36,7 +36,7 @@ Une fois vos propositions dʼoffres effectuées, vous pouvez consulter lʼhistor
 
 ## Rapport Analyse des offres{#offer-analysis-report}
 
-Le rapport **[!UICONTROL Analyse des offres]** vous permet dʼavoir une vue dʼensemble du nombre de propositions acceptées ou refusées.
+Le rapport **[!UICONTROL Analyse des offres]** vous permet d&#39;avoir une vue d&#39;ensemble du nombre de propositions acceptées ou refusées.
 
 Les statistiques sont classées selon trois critères :
 

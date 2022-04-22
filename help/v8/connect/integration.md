@@ -16,13 +16,13 @@ ht-degree: 100%
 
 Vous pouvez connecter votre instance Campaign aux solutions Adobe Experience Cloud pour combiner les fonctionnalités.
 
-Adobe Campaign s’accompagne de plusieurs connecteurs qui vous permettent de communiquer avec des applications externes, de vous connecter à des moteurs de base de données, ainsi que de partager et de synchroniser des données.
+Adobe Campaign s&#39;accompagne de plusieurs connecteurs qui vous permettent de communiquer avec des applications externes, de vous connecter à des moteurs de base de données, ainsi que de partager et de synchroniser des données.
 
 ## Utilisation des solutions Adobe {#gs-ac-integration}
 
 Modernisez votre implémentation et exploitez toutes les fonctionnalités d&#39;Adobe Experience Cloud.
 
-![](../assets/do-not-localize/speech.png)En tant qu’utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour connecter Campaign aux services et solutions Adobe Experience Cloud.
+![](../assets/do-not-localize/speech.png)En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour connecter Campaign aux services et solutions Adobe Experience Cloud.
 
 Campaign v8 peut se connecter à :
 
@@ -47,7 +47,7 @@ Vous pouvez également combiner vos **audiences** et vos **ressources** dans les
 
 Vous pouvez connecter votre plateforme Adobe Campaign à vos **systèmes CRM tiers** et synchroniser les données : contacts, comptes, achats, etc.
 
-Activez vos données CRM lors de la communication cross-canal et découvrez comment transmettre des contacts de votre système de gestion de la relation client à Adobe Campaign. Partagez également les données de campagne d’Adobe Campaign avec votre système CRM.
+Activez vos données CRM lors de la communication cross-canal et découvrez comment transmettre des contacts de votre système de gestion de la relation client à Adobe Campaign. Partagez également les données de campagne d&#39;Adobe Campaign avec votre système CRM.
 Les connecteurs CRM permettent une intégration rapide et facile des données. Adobe Campaign fournit en effet un assistant dédié à la collecte et à la sélection des tables disponibles dans le système CRM. Cela garantit une synchronisation bidirectionnelle et permet de s&#39;assurer que les données sont à jour en tout temps, et ce, sur l&#39;ensemble des systèmes.
 
 ![](../assets/do-not-localize/glass.png) Découvrez comment intégrer Campaign à Microsoft Dynamics 365 et Salesforce.com sur [cette page](crm.md).

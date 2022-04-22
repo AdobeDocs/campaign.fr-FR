@@ -1,6 +1,6 @@
 ---
-title: Utilisation des environnements d'interaction Campaign
-description: Découvrez comment créer des environnements pour l'interaction Campaign
+title: Utiliser des environnements Campaign Interaction
+description: Découvrez comment créer des environnements pour Campaign Interaction
 feature: Overview
 role: Data Engineer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: 31f38870-1781-4185-9022-d4fd6a31c94a
 source-git-commit: 8a43f0fad9f84849745f3a0d426329efbf228105
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Par défaut, Campaign comprend un environnement **[!UICONTROL En édition]** et 
 
 Les chargés de diffusion peuvent uniquement afficher l&#39;environnement **[!UICONTROL En ligne]** et exploiter les offres pour les diffuser. Les chargés d&#39;offres peuvent consulter et utiliser l&#39;environnement **[!UICONTROL En édition]**, et consulter l&#39;environnement **[!UICONTROL En ligne]**. [En savoir plus](interaction-operators.md)
 
-## Création dʼun environnement pour les interactions anonymes{#create-an-offer-environment}
+## Création d&#39;un environnement pour les interactions anonymes{#create-an-offer-environment}
 
 Par défaut, Campaign comprend un environnement intégré pour cibler la table des destinataires (offres identifiées). Pour cibler une autre table, par exemple les profils anonymes qui visitent votre site web pour des interactions entrantes, vous devez mettre à jour votre configuration.
 
@@ -59,7 +59,7 @@ Si vous avez activé le mapping **[!UICONTROL Visiteurs]**, la case **[!UICONTRO
 
 Cette option permet d&#39;activer les fonctions spécifiques aux interactions anonymes, notamment dans le paramétrage des emplacements de l&#39;environnement. Vous pourrez ainsi paramétrer des options permettant de basculer d&#39;un environnement &quot;identifié&quot; à un environnement &quot;anonyme&quot;.
 
-Vous pouvez par exemple lier un emplacement dʼenvironnement de destinataire (contact identifié) à un emplacement correspondant dʼenvironnement de visiteur (contact non identifié). Ainsi, différentes offres seront mises à la disposition du contact, en fonction du caractère identifié ou non de ce dernier. Voir à ce sujet la section [Créer des emplacements](interaction-offer-spaces.md).
+Vous pouvez par exemple lier un emplacement d&#39;environnement de destinataire (contact identifié) à un emplacement correspondant d&#39;environnement de visiteur (contact non identifié). Ainsi, différentes offres seront mises à la disposition du contact, en fonction du caractère identifié ou non de ce dernier. Voir à ce sujet la section [Créer des emplacements](interaction-offer-spaces.md).
 
 ![](assets/offer_env_anonymous_003.png)
 
