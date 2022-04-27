@@ -27,9 +27,9 @@ ht-degree: 96%
       + [Découverte de l&#39;interface de Campaign](start/campaign-ui.md)
       + [Personnalisation de l&#39;interface de Campaign](start/customize-ui.md)
    + [Utilisation des audiences](start/audiences.md)
-   + [Import de données](start/import.md)
+   + [Importation de données](start/import.md)
    + [Création de campagnes](start/campaigns.md)
-   + [Envoyer les messages](start/create-message.md)
+   + [Envoi de messages](start/create-message.md)
    + [Gestion des abonnements](start/subscriptions.md)
    + [Suivi et surveillance](start/tracking.md)
    + [Mesures et rapports](start/reporting.md)
@@ -58,7 +58,7 @@ ht-degree: 96%
       + [Créer et gérer des filtres](audiences/create-filters.md)
    + [Gérer les dossiers et les vues](audiences/folders-and-views.md)
    + [Bonnes pratiques](audiences/audiences-best-practices.md)
-+ Envoyer les messages{#send}
++ Envoi de messages{#send}
    + [E-mails](send/email.md)
    + [SMS](send/sms.md)
    + [Notifications push](send/push.md)
