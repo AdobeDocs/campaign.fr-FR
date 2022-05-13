@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 100%
+source-wordcount: '555'
+ht-degree: 97%
 
 ---
 
@@ -76,7 +76,7 @@ Pour désabonner (opt-out) un profil d&#39;un service, les options disponibles s
 
 >[!CAUTION]
 >
->Les abonnements et désabonnements sont des processus **asynchrones**. Les demandes d&#39;opt-in et d&#39;opt-out sont traitées toutes les heures. [En savoir plus](../dev/new-apis.md#sub-apis)
+>Dans le contexte d’un [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), les abonnements et les désabonnements sont **asynchrone** processus. Les demandes d&#39;opt-in et d&#39;opt-out sont traitées toutes les heures. [En savoir plus](../architecture/new-apis.md#sub-apis)
 
 Vous pouvez également permettre aux destinataires de votre diffusion de transférer des messages à un ami. Pour ce faire, insérez les liens adéquats dans votre diffusion. Vous pouvez ensuite suivre ce processus de partage, ainsi que le nombre de visites sur les pages concernées.
 

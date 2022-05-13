@@ -1,28 +1,28 @@
 ---
-title: Utilisation de Campaign et Microsoft Dynamics
-description: Découvrez comment utiliser Campaign et Microsoft Dynamics
+title: Work with Campaign and Microsoft Dynamics
+description: Learn how to work with Campaign and Microsoft Dynamics
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: 495eff0f3b5926c8f91939bcb296bc36086cb8cd
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
-source-wordcount: '1399'
+source-wordcount: '1400'
 ht-degree: 46%
 
 ---
 
-# Utilisation de Campaign et Microsoft Dynamics 365{#crm-ms-dynamics}
+# Work with Campaign and Microsoft Dynamics 365{#crm-ms-dynamics}
 
-Activez vos données CRM lors d’une communication cross-canal : découvrez comment transmettre des contacts de **Microsoft Dynamics 365** vers Adobe Campaign et partagez les données de performances de campagne (envois, ouvertures, clics et bounces) d’Adobe Campaign vers Microsoft Dynamics 365.
+****
 
-Une fois le paramétrage effectué, la synchronisation des données entre les systèmes s&#39;effectue via une activité de workflow dédiée. [En savoir plus](crm-data-sync.md).
+Once configuration is done, data synchronization between systems is carried out via a dedicated workflow activity. [En savoir plus](crm-data-sync.md).
 
 >[!NOTE]
 >
->Les versions Microsoft Dynamics prises en charge sont détaillées dans Campaign. [Matrice de compatibilité](../start/compatibility-matrix.md).
+>[](../start/compatibility-matrix.md)
 
-Suivez les étapes ci-dessous pour configurer un compte externe dédié afin d’importer et d’exporter des données Microsoft Dynamics 365 vers Adobe Campaign.
+Follow the steps below to configure a dedicated external account to import and export Microsoft Dynamics 365 data into Adobe Campaign.
 
 Pour chaque système, ces étapes doivent être exécutées par un administrateur.
 
@@ -31,43 +31,43 @@ Pour chaque système, ces étapes doivent être exécutées par un administrateu
 
 ## Configuration de Microsoft Dynamics 365 {#config-crm-microsoft}
 
-Pour connecter Microsoft Dynamics 365 à Adobe Campaign via **API Web**, connectez-vous à [Microsoft Azure Directory](https://portal.azure.com) à l’aide d’une **Administrateur global** informations d’identification, puis procédez comme suit :
+****[](https://portal.azure.com)****
 
-1. Obtenez votre ID d’application Dynamics 365 (client). [En savoir plus](#get-client-id-microsoft)
+1. Get your Dynamics 365 Application (client) ID. [En savoir plus](#get-client-id-microsoft)
 1. Génération de l’identifiant de clé de certificat Microsoft Dynamics et de l’ID de clé. [En savoir plus](#config-certificate-key-id)
 1. Configuration des autorisations. [En savoir plus](#config-permissions-microsoft)
 1. Création d&#39;un utilisateur d&#39;application. [En savoir plus](#create-app-user-microsoft)
 1. Codage de la clé privée. [En savoir plus](#configure-acc-for-microsoftt)
 
 
-### Obtention de l’identifiant du client Dynamics 365 {#get-client-id-microsoft}
+### Get Dynamics 365 Client ID {#get-client-id-microsoft}
 
-Pour obtenir l’ID d’application (client), vous devez enregistrer une application dans Azure Principale Directory.
+To get the Application (client) ID, you need to register an App in Azure Active Directory.
 
-1. Accédez à **Azure Principal Directory > Enregistrements des applications**, puis sélectionnez **Nouvelle inscription**.
-1. Saisissez un nom unique qui peut aider à identifier une instance, par exemple **adobecamcampaign`<instance identifier>`**.
+1. ********
+1. **`<instance identifier>`**
 
-Une fois que vous l’avez enregistré, Microsoft Azure Directory affecte une **ID d’application (client)** à votre application. Vous aurez besoin de cet ID ultérieurement lors de la configuration de Dynamics 365 dans Adobe Campaign.
+**** You will need this ID later on in configuring Dynamics 365 in Adobe Campaign.
 
-En savoir plus dans [Documentation de Microsoft Dynamics 365](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
+[](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory)
 
 ### Génération de l’identifiant de clé de certificat Microsoft Dynamics et de l’ID de clé {#config-certificate-key-id}
 
-Pour obtenir le **Identifiant de la clé de certificat (customKeyIdentifier)** et le **ID de clé (keyId)**, vous devez télécharger un certificat. Les certificats peuvent être utilisés comme secrets pour prouver l’identité de l’application lors de la demande d’un jeton. On peut également parler de clés publiques.
+******** Certificates can be used as secrets to prove the application’s identity when requesting a token. Also can be referred to as public keys.
 
 Procédez comme suit :
 
-1. Accédez à **Azure Principal Directory > Enregistrements des applications** et sélectionnez l&#39;application qui a été créée précédemment.
-1. Sélectionner sur **Certificats et secret**.
-1. Dans la **Certificats** , cliquez sur **Téléchargement du certificat**
-1. Téléchargez votre certificat public.
-1. Accédez au **Manifeste** pour obtenir le lien **Identifiant de la clé de certificat (customKeyIdentifier)** et le **ID de clé (keyId)**.
+1. ****
+1. ****
+1. ********
+1. Upload your public certificate.
+1. ************
 
-Le **Identifiant de la clé de certificat (customKeyIdentifier)** et le **ID de clé (keyId)** sont nécessaires dans Campaign pour configurer votre compte externe CRM Microsoft Dynamics 365 à l’aide du certificat. **[!UICONTROL Type O-Auth CRM]**.
+************
 
-+++ Comment générer le certificat public
++++ How to generate the public certificate
 
-Pour générer le certificat, vous pouvez utiliser openssl.
+To generate the certificate, you can use openssl.
 
 Par exemple :
 
@@ -79,7 +79,7 @@ Par exemple :
 >
 >Vous pouvez modifier le nombre de jours, ici `-days 365`, dans l’exemple de code pour une période de validité du certificat plus longue.
 
-Vous devez ensuite coder le certificat en base64. Pour cela, vous pouvez utiliser l&#39;aide d&#39;un encodeur Base64 ou utiliser la ligne de commande `base64 -w0 private.key` sous Linux.
+You must then encode the certificate in base64. Pour cela, vous pouvez utiliser l&#39;aide d&#39;un encodeur Base64 ou utiliser la ligne de commande `base64 -w0 private.key` sous Linux.
 
 +++
 
@@ -127,7 +127,7 @@ L&#39;utilisateur de l&#39;application est l&#39;utilisateur que l&#39;applicati
 **Étape 3** : Création d&#39;un utilisateur d&#39;application sur Dynamics CRM
 
 1. Depuis [Microsoft Azure](https://portal.azure.com), accédez à **Paramètres > Sécurité > Utilisateurs**.
-1. Cliquez sur dans la liste déroulante, puis sélectionnez **Utilisateurs de l’application**, puis cliquez sur **Nouveau**.
+1. ********
 1. Utilisez le même nom d&#39;utilisateur que celui créé dans Active Directory ci-dessus.
 1. Affectez l&#39;**ID de l&#39;application** à [l&#39;application que vous avez créée précédemment](#get-client-id-microsoft).
 1. Cliquez sur **Gérer les rôles** et sélectionnez le rôle **Administrateur système** pour l&#39;utilisateur.
@@ -136,62 +136,62 @@ L&#39;utilisateur de l&#39;application est l&#39;utilisateur que l&#39;applicati
 
 ### Création de la connexion{#new-ms-dyn-external-account}
 
-Tout d’abord, vous devez créer le compte externe Microsoft Dynamics 365.
+First, you must create the Microsoft Dynamics 365 external account.
 
-1. Parcourez les **[!UICONTROL Administration > Plateforme > Comptes externes]** de l&#39;explorateur Campaign et créez un compte externe.
-1. Sélectionner **[!UICONTROL Microsoft Dynamics CRM]** compte externe dans le **Type** .
-1. Sélectionnez la méthode d’authentification dans le **[!UICONTROL Type O-Auth CRM]** liste déroulante.
+1. ****
+1. ********
+1. ****
 
    ![](assets/ms-dyn-external-account.png)
 
-   1. Pour configurer le compte externe Microsoft Dynamics CRM afin de vous connecter à Adobe Campaign avec **Informations d’identification de mot de passe**, fournissez les détails suivants :
+   1. ****
 
-      * **Serveur** : URL de votre serveur Microsoft CRM. Pour trouver votre URL de serveur Microsoft CRM, accédez à votre compte Microsoft Dynamics CRM, puis cliquez sur Dynamics 365 et sélectionnez votre application. Vous trouverez ensuite l’URL de votre serveur dans la barre d’adresse de votre navigateur, par exemple https://myserver.crm.dynamics.com/.
+      * **Serveur** : URL de votre serveur Microsoft CRM. Pour trouver votre URL de serveur Microsoft CRM, accédez à votre compte Microsoft Dynamics CRM, puis cliquez sur Dynamics 365 et sélectionnez votre application. You can then find your Server URL in the address bar of your browser, e.g. https://myserver.crm.dynamics.com/.
       * **Compte** : compte utilisé pour se connecter à Microsoft CRM
-      * **Mot de passe**: Compte utilisé pour se connecter à Microsoft CRM.
-      * **Identifiant du client**: ID de l’application (client) qui se trouve sur le portail de gestion Microsoft Azure dans la catégorie Mettre à jour votre code , dans le champ ID du client .
-      * **Version CRM**: Sélectionnez la version Dynamics CRM 365 CRM.
-   1. Pour configurer le compte externe Microsoft Dynamics CRM afin de vous connecter à Adobe Campaign avec un **Certificat**, fournissez les détails suivants :
+      * ****
+      * ****
+      * ****
+   1. ****
 
-      * **Serveur** : URL de votre serveur Microsoft CRM. Pour trouver votre URL de serveur Microsoft CRM, accédez à votre compte Microsoft Dynamics CRM, puis cliquez sur Dynamics 365 et sélectionnez votre application. Vous trouverez ensuite l’URL de votre serveur dans la barre d’adresse de votre navigateur, par exemple https://myserver.crm.dynamics.com/.
-      * **Clé privée**: Copiez/collez la clé privée, codée base64, comme expliqué dans la section [cette section](#config-certificate-key-id).
-      * **ID de clé**: Clé disponible dans le **Manifeste** de votre application, en suivant la procédure décrite à la section [cette section](#config-certificate-key-id).
-      * **Identifiant de clé personnalisée**: Identifiant disponible dans la variable **Manifeste** de votre application, en suivant la procédure décrite à la section [cette section](#config-certificate-key-id).
-      * **Identifiant du client**: ID d’application (client) qui se trouve sur le portail de gestion Microsoft Azure, comme expliqué dans la section [cette section](#get-client-id-microsoft).
-      * **Version CRM**: Sélectionnez la version Dynamics CRM 365 CRM.
+      * **Serveur** : URL de votre serveur Microsoft CRM. Pour trouver votre URL de serveur Microsoft CRM, accédez à votre compte Microsoft Dynamics CRM, puis cliquez sur Dynamics 365 et sélectionnez votre application. You can then find your Server URL in the address bar of your browser, e.g. https://myserver.crm.dynamics.com/.
+      * ****[](#config-certificate-key-id)
+      * ********[](#config-certificate-key-id)
+      * ********[](#config-certificate-key-id)
+      * ****[](#get-client-id-microsoft)
+      * ****
 
 
-1. Sélectionnez la **Activer** pour activer le compte dans Campaign.
+1. ****
 
 >[!NOTE]
 >
->Pour approuver la configuration, déconnectez-vous puis reconnectez-vous à la console Adobe Campaign.
+>To approve the setup, log off and back on to the Adobe Campaign console.
 
-### Sélectionner les tableaux à synchroniser{#ms-dyn-create-tables}
+### Select tables to synchronize{#ms-dyn-create-tables}
 
-Vous pouvez maintenant configurer les tableaux à synchroniser.
+You can now configure tables to synchronize.
 
-1. Cliquez sur le bouton **[!UICONTROL Assistant de configuration du CRM Microsoft...]**.
-1. Sélectionnez les tables à synchroniser et démarrez le processus.
+1. ****
+1. Select the tables to synchronize and start the process.
 1. Vérifiez le schéma généré dans Adobe Campaign, sous le noeud **[!UICONTROL Administration > Paramétrage > Schéma de données]**.
 
 >[!NOTE]
 >
->Veillez à ajouter à la liste autorisée deux URL : l’URL du serveur et `login.microsoftonline.com`. Pour ce faire, contactez votre représentant Adobe.
+>`login.microsoftonline.com` To perform this, contact your Adobe representative.
 
 ## Synchronisation des énumérations{#sfdc-enum-sync}
 
-Une fois le schéma créé, vous pouvez synchroniser automatiquement les énumérations de Dynamics 365 vers Adobe Campaign.
+Once the schema is created, you can synchronize enumerations automatically from Dynamics 365 to Adobe Campaign.
 
-1. Ouvrez l’assistant à partir du  **[!UICONTROL Synchronisation des énumérations...]** lien.
-1. Sélectionnez l&#39;énumération Adobe Campaign correspondant à l&#39;énumération Dynamics 365.
+1. ****
+1. Select the Adobe Campaign enumeration that matches the Dynamics 365 enumeration.
 Vous pouvez remplacer toutes les valeurs d&#39;une énumération Adobe Campaign par celles du CRM : pour cela, sélectionnez **[!UICONTROL Oui]** dans la colonne **[!UICONTROL Remplacer]**.
-1. Cliquez sur **[!UICONTROL Suivant]** puis **[!UICONTROL Début]** pour commencer à importer les énumérations.
-1. Parcourez les **[!UICONTROL Administration > Plateforme > Enumérations]** pour vérifier les valeurs importées.
+1. ********
+1. ****
 
-Adobe Campaign et Microsoft Dynamics 365 sont désormais connectés. Vous pouvez configurer la synchronisation des données entre les deux systèmes.
+Adobe Campaign and Microsoft Dynamics 365 are now connected. Vous pouvez configurer la synchronisation des données entre les deux systèmes.
 
-Pour synchroniser les données entre les données Adobe Campaign et Microsoft CRM, créez un workflow et utilisez la méthode **[!UICONTROL Connecteur CRM]** activité.
+****
 
 Pour en savoir plus sur la synchronisation des données, consultez [cette page](crm-data-sync.md).
 

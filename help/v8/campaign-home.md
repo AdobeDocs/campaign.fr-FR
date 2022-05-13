@@ -3,7 +3,7 @@ keywords: Campaign Classic;accueil;thèmes populaires
 description: Centre d'aide de Campaign v8
 title: Documentation du produit Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 21726c8bd0c17c88c83897b98947f56b20152979
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 100%
@@ -66,7 +66,7 @@ ht-degree: 100%
 ## Plus de ressources
 
 * [Limites connues](start/known-limitations.md)
-* [Architecture](dev/architecture.md)
+* [Architecture](architecture/architecture.md)
 * [Mesure et suivi](start/reporting.md)
 * [Connexion à d&#39;autres solutions](connect/integration.md)
 * [FAQ Campaign v8](start/campaign-faq.md)

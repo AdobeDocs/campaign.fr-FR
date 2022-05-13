@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: b54a39ee6d106d68446878815c068571e310aaa3
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 100%
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## Accéder à l&#39;interface utilisateur de Campaign
 
-L&#39;espace de travail de Campaign est disponible via la [console cliente](../dev/general-architecture.md).
+L&#39;espace de travail de Campaign est disponible via la [console cliente](../architecture/general-architecture.md).
 
 Découvrez comment installer et configurer la console cliente Campaign dans [cette section](../start/connect.md).
 

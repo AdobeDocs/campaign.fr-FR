@@ -6,16 +6,108 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 0f15112f0eec1d7cba26523adc1e88fc5d26997c
+source-git-commit: d3137e75bfc4986e1d6badf32f21fda4c4353c8b
 workflow-type: tm+mt
-source-wordcount: '1721'
-ht-degree: 100%
+source-wordcount: '2247'
+ht-degree: 80%
 
 ---
 
 # Dernière version{#latest-release}
 
 Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs de la **dernière version de Campaign Classic v8**.
+
+## Version 8.3.7 {#release-8-3-7}
+
+__
+
+**Nouveautés**
+
+<table>
+<thead>
+<tr>
+<th><strong>Gestion de la réaction</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Campaign Response Management lets you measure the success and ROI of your marketing campaigns or offer propositions across all channels: email, mobile, direct mail, etc.</p>
+<p>Pour plus d’informations, consultez la <a href="../start/campaigns.md#response-manager-add-on">documentation détaillée</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Distributed Marketing (Marketing distribué)</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>Campaign Distributed Marketing lets you implement collaborative campaigns between central entities (headquarters, marketing departments, etc.) et les entités locales (points de vente, agences régionales, etc.). Through a shared workspace (campaign packages), you can create campaign templates and propose them to your local entities.</p>
+<p>Pour plus d’informations, consultez la <a href="../start/campaigns.md#distributed-marketing-add-on">documentation détaillée</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong></strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>With iOS 15, Apple added a notion of sensitive notification that gives control to the app developer to bypass Focus mode when a notification is considered as sensitive and then needs to reach the user in real-time.</p>
+<p>Pour plus d’informations, consultez la <a href="../send/push.md#send-notifications-on-ios">documentation détaillée</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong></strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>Campaign v8 now integrates with Adobe Privacy Core Service. Les demandes d'accès à des informations personnelles transmises par Privacy Core Service à toutes les solutions Experience Cloud sont automatiquement traitées par Campaign via un workflow dédié.</p>
+<p>Pour plus d’informations, consultez la <a href="privacy.md">documentation détaillée</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**Mises à jour de compatibilité**
+
+* Campaign v8 SDK now supports Android 12 and iOS 15 for Push Notifications.
+* Campaign v8 is now compatible with Windows 11.
+
+Reportez-vous à la [matrice de compatibilité de Campaign](capability-matrix.md).
+
+**Améliorations**
+
+* Microsoft Exchange Online OAuth 2.0 authentication for POP3 is now supported in Campaign. [En savoir plus](../config/external-accounts.md#bounce-mails-external-account)
+* Critical fixes have been applied regarding the Microsoft Dynamics Connector web API.
+* The new Operator and group schema write (operatorWrite) named right has been added to allow users to insert, update and delete Operators (xtk:operator) and Operator groups (xtk:group) schemas.
+* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [En savoir plus](../config/email-settings.md#email-bcc)
+* To ensure better performances, a new &quot;Split&quot; option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients. LINK
+* For LINE deliveries on mid-sourcing setups, multiple active accounts of the same type can now exist on a mid instance.
+* The number of default connections for the web process has been increased from 50 to 150.
+* Campaign comes with a set of new guardrails to prevent insertion of duplicated keys in Snowflake database. [En savoir plus](../architecture/keys.md)
+
+**Correctifs**
+
+* Fixed an issue which occurred when using seeds and control groups in the same recurring delivery. (NEO-41197)
+* `' & < > "` These characters are now supported in personalization blocks (example: firstname=&quot;Brian O&#39;Neil&quot;). (NEO-43184)
+* Fixed an issue which could lead the tracking workflow to fail when using a custom schema as a target mapping. We now ensure that the type of the foreign link to a custom targeting schema is correct when generating broadLog schema via the target mapping wizard. (NEO-43506)
+* Fixed an issue which could lead the FFDA deployment workflows to fail for languages other than English. (NEO-44561)
 
 ## Version 8.2.10 {#release-8-2-10}
 
@@ -76,7 +168,9 @@ _28 octobre 2021_
 <tr> 
 <td> <p>Unicity Service est un nouveau composant Cloud Database Manager. Il permet aux utilisateurs de préserver et de surveiller l’intégrité des contraintes de clé unique dans les tables de base de données cloud (Cloud Database). Cela permet de réduire le risque d’insertion de clés en double.
 <p>Comme Cloud Database n’applique pas les contraintes d’unicité, Unicity Service introduit au niveau de l’application, <b>un ensemble de nouvelles barrières de sécurité</b> qui réduisent le risque d’insertion de doublons lors de la gestion des données avec Adobe Campaign.</p> 
-<p>Unicity Service lance un nouveau workflow intégré appelé <b>ffdaUnicity</b> pour surveiller les contraintes d’unicité et alerter lorsque des doublons sont détectés.</p></td> </tr> 
+<p>Unicity Service lance un nouveau workflow intégré appelé <b>ffdaUnicity</b> pour surveiller les contraintes d’unicité et alerter lorsque des doublons sont détectés.</p>
+<p>Pour plus d’informations, consultez la <a href="../architecture/keys.md">documentation détaillée</a>.</p>
+</td> </tr> 
 </tbody> 
 </table>
 

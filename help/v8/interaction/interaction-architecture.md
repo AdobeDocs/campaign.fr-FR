@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
-source-git-commit: dafdf471fcaf2b6c6e3e8d5028cd65e35e7df3eb
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
 source-wordcount: '1328'
 ht-degree: 100%
@@ -43,7 +43,7 @@ Dès lors qu&#39;une offre peut ou doit être présentée (en fonction des param
 
 ## Architecture répartie
 
-Pour être en mesure d&#39;assurer l&#39;évolutivité et d&#39;offrir un service 24h/24, 7j/7 sur le canal entrant, le module **Interaction** est implémenté dans une architecture distribuée. Ce type d&#39;architecture est déjà utilisé avec [Message Center](../dev/architecture.md#transac-msg-archi) et est constitué de plusieurs instances :
+Pour être en mesure d&#39;assurer l&#39;évolutivité et d&#39;offrir un service 24h/24, 7j/7 sur le canal entrant, le module **Interaction** est implémenté dans une architecture distribuée. Ce type d&#39;architecture est déjà utilisé avec [Message Center](../architecture/architecture.md#transac-msg-archi) et est constitué de plusieurs instances :
 
 * une ou plusieurs instances de pilotage dédiées au canal sortant et contenant la base marketing et l&#39;environnement en édition
 * une ou plusieurs instances d&#39;exécution dédiées au canal entrant

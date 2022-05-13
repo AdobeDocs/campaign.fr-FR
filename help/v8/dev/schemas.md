@@ -2,10 +2,10 @@
 title: Utilisation des schémas Campaign
 description: Prise en main des schémas
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 355b9219ffd9d481d15d2d0982d49923842cc27b
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 100%
+source-wordcount: '1273'
+ht-degree: 94%
 
 ---
 
@@ -133,9 +133,43 @@ type="string" enum="exTransactionTypeEnum"/>
 >
 >Vous pouvez également ajouter des énumérations gérées par l&#39;utilisateur (accessibles depuis le nœud **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]**) pour spécifier les valeurs d&#39;un champ donné. Cela peut être judicieux si vous envisagez d&#39;utiliser votre énumération en dehors du schéma sur lequel vous travaillez.
 
+<!--
+## Index {#index} 
+
+In the context of a [FDA Snowflake deployment](../architecture/fda-deployment.md), you need to declare indexes. Indexes are the first elements declared in the main element of the schema. 
+
+They can be unique or not, and reference one or more fields.
+
+Examples:
+
+```
+<dbindex name="email" unique="true">
+  <keyfield xpath="@email"/>
+</dbindex>
+```
+
+```
+<dbindex name="lastNameAndZip">
+  <keyfield xpath="@lastName"/>
+  <keyfield xpath="location/@zipCode"/>
+</dbindex>
+```
+
+The **xpath** attribute points to the field in your schema that you wish to index.
+
+>[!IMPORTANT]
+>
+>It is important to remember that the SQL query read performance gains provided by indexes also come with a performance hit on writing records. The indexes should therefore be used with precaution.
+
+For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-fields) section.
+
+-->
+
 ## Clés {#keys}
 
-Chaque table doit posséder au moins une clé. Celle-ci est souvent définie automatiquement dans l&#39;élément principal du schéma au moyen des attributs **@autouuid** et **autopk** définis sur **true**.
+Chaque table doit posséder au moins une clé. Celle-ci est souvent automatiquement définie dans l&#39;élément principal du schéma à l&#39;aide de la fonction **autopk** définie sur **true**.
+
+En outre, dans le cadre d’un [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), utilisez le **@autouuid** et définissez-le sur **true**.
 
 La clé primaire peut également être définie au moyen de l&#39;attribut **internal**.
 
@@ -147,7 +181,7 @@ Exemple:
 </key>
 ```
 
-Dans cet exemple, au lieu de laisser l&#39;attribut **@autouuid** créer une clé primaire par défaut nommée &quot;id&quot;, on définit ici la clé primaire &quot;householdId&quot;.
+Dans cet exemple, au lieu de laisser la variable **@autopk** ou le **@autouuid** crée une clé Principale par défaut appelée &quot;id&quot; que nous spécifions notre propre clé Principale &quot;householdId&quot;.
 
 >[!CAUTION]
 >

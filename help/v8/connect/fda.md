@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: 2d0b40e49afdfd71e8bb5c3f0b1d569a715420b2
+source-git-commit: 355b9219ffd9d481d15d2d0982d49923842cc27b
 workflow-type: tm+mt
-source-wordcount: '1920'
-ht-degree: 100%
+source-wordcount: '1772'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,11 @@ Utilisez le connecteur FDA (Federated Data Access) pour connecter Campaign à un
 
 >[!NOTE]
 >
->Les bases de données compatibles avec FDA sont répertoriées dans la [Matrice de compatibilité](../start/compatibility-matrix.md).
+>* Les bases de données compatibles avec FDA sont répertoriées dans la [Matrice de compatibilité](../start/compatibility-matrix.md).
+>
+>* Dans le contexte d’un [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), un compte externe spécifique est disponible pour gérer la communication entre la base de données locale Campaign et la base de données cloud Snowflake. Ce compte externe est configuré pour vous par Adobe et ne doit pas être modifié.
+>
+
 
 L&#39;option FDA de Campaign permet d&#39;étendre votre modèle de données dans une base de données tierce. Le module détecte automatiquement la structure des tables ciblées et utilise les données provenant des sources SQL.
 
@@ -56,7 +60,12 @@ Pour configurer l&#39;accès à une base de données externe avec FDA, les étap
 1. En tant qu&#39;utilisateur Adobe Managed Services, contactez Adobe pour installer les pilotes sur votre instance Campaign.
 1. Une fois les pilotes installés, configurez le compte externe correspondant à votre base de données sur le serveur Adobe Campaign et testez le compte externe. [En savoir plus](#fda-external-account)
 1. Créez le schéma de la base de données externe dans Adobe Campaign. Il est ainsi possible d&#39;identifier la structure des données de la base de données externe. [En savoir plus](#create-data-schema)
-1. Si nécessaire, créez un mapping de ciblage à partir du schéma créé précédemment. Ceci est nécessaire si les destinataires de vos diffusions proviennent de la base de données externe. Cette implémentation s&#39;accompagne de limitations liées à la personnalisation des messages. [En savoir plus](#define-data-mapping)
+
+<!--
+1. If needed, create a new target mapping from the previously created schema. This is required if the recipients of your deliveries come from the external database. This implementation comes with limitations related to message personalization. [Learn more](#define-data-mapping)
+-->
+
+Notez qu’avec Campaign [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), vous ne pouvez pas créer de mapping de ciblage à partir d&#39;un schéma stocké dans une base externe accessible par FDA. Par conséquent, les destinataires de vos diffusions ne peuvent pas provenir de la base de données externe.
 
 ## Compte externe de base de données externe{#fda-external-account}
 
@@ -121,39 +130,40 @@ Pour créer le schéma de la base externe dans Adobe Campaign, procédez comme 
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour en valider la création.
 
-## Définir le mapping de ciblage{#define-data-mapping}
+<!-- 
+## Define the target mapping{#define-data-mapping}
 
-Vous pouvez définir un mapping sur les données d&#39;une table externe.
+You can define a mapping on the data in an external table.
 
-Pour cela, une fois que le schéma de la table externe a été créé, vous devez créer un nouveau mapping de diffusion afin d&#39;utiliser les données contenues dans cette table en tant que cible des actions de diffusions.
+To do this, once the schema of the external table has been created, you need to create a new delivery mapping to use the data in this table as a delivery target.
 
-Pour ce faire, procédez comme suit :
+To do this, follow these steps:
 
-1. Accédez à **[!UICONTROL Administration]** `>` **[!UICONTROL Gestion de campagne]** `>` **[!UICONTROL Mappings de ciblage]** à partir de l&#39;explorateur Adobe Campaign.
+1. Browse to **[!UICONTROL Administration]** `>` **[!UICONTROL Campaign Management]** `>` **[!UICONTROL Target mappings]** from Adobe Campaign explorer.
 
-1. Créez un nouveau mapping de ciblage et sélectionnez le schéma que vous venez de créer comme dimension de ciblage.
+1. Create a new target mapping and select the schema you just created as the targeting dimension.
 
    ![](assets/new-target-mapping.png)
 
 
-1. Indiquez les champs où sont stockées les informations nécessaires à la diffusion (nom, prénom, e-mail, adresse postale, etc.).
+1. Indicate the fields where the delivery information is stored (last name, first name, email, address, etc.).
 
    ![](assets/wf_new_mapping_define_join.png)
 
-1. Indiquez les paramètres relatifs au stockage des informations, et notamment le suffixe des schémas d&#39;extension, pour qu&#39;ils soient facilement identifiables.
+1. Specify the parameters for information storage, including the suffix of the extension schemas for them to be easily identifiable.
 
    ![](assets/wf_new_mapping_define_names.png)
 
-   Vous pouvez choisir de stocker ou non les exclusions (**excludelog**), avec les messages (**broadlog**) ou dans une table distincte.
+   You can choose whether to store exclusions (**excludelog**), with messages (**broadlog**) or in a separate table.
 
-   Vous pouvez également gérer ou non le tracking pour ce mapping de diffusion (**trackinglog**).
+   You can also choose whether to manage tracking for this delivery mapping (**trackinglog**).
 
-1. Sélectionnez ensuite les extensions qui seront prises en compte. Le type d&#39;extension dépend des paramètres et options de votre plateforme (consultez votre contrat de licence).
+1. Then select the extensions to be taken into account. The extension type depends on your platform's parameters and options (view your license contract).
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   Cliquez sur le bouton **[!UICONTROL Enregistrer]** pour lancer la création du mapping de diffusion : toutes les tables liées sont créées automatiquement, selon les paramètres sélectionnés.
-
+   Click the **[!UICONTROL Save]** button to launch delivery mapping creation: all linked tables are created automatically based on the selected parameters.
+-->
 
 ## Autorisations{#fda-permissions}
 

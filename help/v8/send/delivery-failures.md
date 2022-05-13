@@ -5,16 +5,18 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: c316da3c431e42860c46b5a23c73a7c129abf3ac
+source-git-commit: 1ff06c69a4118afa228522d580dd5caa36a69275
 workflow-type: tm+mt
-source-wordcount: '3166'
-ht-degree: 100%
+source-wordcount: '2899'
+ht-degree: 89%
 
 ---
 
-# Présentation des diffusions en échec{#delivery-failures}
+# Présentation des diffusions en échec {#delivery-failures}
 
-Les retours sont le résultat d&#39;une tentative de diffusion ayant échoué pour laquelle le FAI renvoie des avis d&#39;échec. Le traitement de la gestion des retours est un aspect essentiel de l&#39;hygiène des listes. Une fois qu&#39;un e-mail donné a été retourné plusieurs fois de suite, ce processus le signale pour qu&#39;il soit supprimé. Ce processus empêche les systèmes de continuer à envoyer des e-mails à des adresses e-mail non valides. Les retours sont l&#39;un des éléments clés des données que les FAI utilisent pour déterminer la réputation des adresses IP. Il est important de garder un œil sur cette mesure. « Diffusé » par rapport à « Retourné » est probablement le moyen le plus courant de mesurer la diffusion des messages marketing : plus le pourcentage de diffusion est élevé, mieux c&#39;est.
+Les retours sont le résultat d&#39;une tentative de diffusion ayant échoué pour laquelle le FAI renvoie des avis d&#39;échec. Le traitement de la gestion des retours est un aspect essentiel de l&#39;hygiène des listes. Une fois qu&#39;un e-mail donné a été retourné plusieurs fois de suite, ce processus le signale pour qu&#39;il soit supprimé.
+
+Ce processus empêche les systèmes de continuer à envoyer des e-mails à des adresses e-mail non valides. Les retours sont l&#39;un des éléments clés des données que les FAI utilisent pour déterminer la réputation des adresses IP. Il est important de garder un œil sur cette mesure. « Diffusé » par rapport à « Retourné » est probablement le moyen le plus courant de mesurer la diffusion des messages marketing : plus le pourcentage de diffusion est élevé, mieux c&#39;est.
 
 Si un message ne peut pas être envoyé à un profil, le serveur distant envoie automatiquement un message d&#39;erreur à Adobe Campaign. Cette erreur est qualifiée pour déterminer si l&#39;adresse e-mail, le numéro de téléphone ou l&#39;appareil doit être mis en quarantaine. Pour plus d&#39;informations, consultez la section [Qualification des e-mails bounce](#bounce-mail-qualification).
 
@@ -24,66 +26,21 @@ Lorsqu&#39;une adresse e-mail est mise en quarantaine ou qu&#39;un profil est en
 
 ## Pourquoi la diffusion du message a-t-elle échoué ? {#delivery-failure-reasons}
 
-Deux types d&#39;erreur sont liés à un message en échec. Chaque type d&#39;erreur détermine si une adresse est envoyée en [quarantaine](quarantines.md#quarantine-reason) ou pas.
-
+Deux types d&#39;erreur sont liés à un message en échec. Chaque type d’échec de diffusion détermine si une adresse est envoyée à [quarantaine](quarantines.md#quarantine-reason) ou pas.
 
 * **Erreurs hard**
-Les erreurs hard sont des échecs permanents générés lorsqu&#39;un FAI détermine qu&#39;une tentative de publipostage vers une adresse d&#39;abonné n&#39;est pas livrable. Dans Adobe Campaign, les erreurs hard classées comme non livrables sont ajoutées à la quarantaine, ce qui signifie qu&#39;elles ne seront pas retentées. Dans certains cas, une erreur hard peut être ignorée si la cause de l&#39;échec est inconnue.
+Les erreurs hard sont des échecs permanents générés lorsqu&#39;un FAI détermine qu&#39;une tentative de publipostage vers une adresse d&#39;abonné n&#39;est pas livrable. Dans Adobe Campaign, les hard bounces classés comme non livrables sont ajoutés à la liste de quarantaine, ce qui signifie qu’ils ne seront pas repris. Dans certains cas, une erreur hard peut être ignorée si la cause de l&#39;échec est inconnue.
 
    Voici quelques exemples courants d&#39;erreurs hard : adresse inexistante, compte désactivé, syntaxe incorrecte, domaine incorrect.
 
-
 * **Erreurs soft**
-Les erreurs soft sont des échecs temporaires que les FAI génèrent lorsqu&#39;ils ont des difficultés à diffuser des e-mails. Les échecs de type soft feront l&#39;objet de plusieurs reprises (avec des variations selon l&#39;utilisation de paramètres de diffusion personnalisés ou prêts à l&#39;emploi) afin de tenter une diffusion réussie. Les adresses qui continuent à provoquer des erreurs soft ne seront pas mises en quarantaine tant que le nombre maximum de reprises n&#39;aura pas été tenté (qui varie encore selon les paramètres).
+Les erreurs soft sont des échecs temporaires que les FAI génèrent lorsqu&#39;ils ont des difficultés à diffuser des e-mails. Les échecs de type Soft [retry](#retries) plusieurs fois (avec un écart selon l’utilisation des paramètres de diffusion personnalisés ou prêts à l’emploi) afin de tenter une diffusion réussie. Les adresses qui continuent à provoquer des erreurs soft ne seront pas mises en quarantaine tant que le nombre maximum de reprises n&#39;aura pas été tenté (qui varie encore selon les paramètres).
 
    Voici quelques causes courantes des erreurs soft : boîte pleine, serveur de messagerie de réception en panne, problèmes de réputation de l&#39;expéditeur
 
-
 Le type d&#39;erreur **ignoré** est une erreur temporaire, par exemple « Absent du bureau », ou une erreur technique, par exemple si l&#39;expéditeur est de type « postmaster ».
 
-
-
-### Qualification des e-mails bounce {#bounce-mail-qualification}
-
-Les règles utilisées par Campaign pour qualifier les diffusions en échec sont répertoriées dans le nœud **[!UICONTROL Administration > Gestion de campagne > Gestion des échecs > Qualification des logs de diffusion]**. Il n&#39;est pas exhaustif et est régulièrement mis à jour par Adobe Campaign et peut également être géré par l&#39;utilisateur.
-
-![](assets/delivery-log-qualification.png)
-
-Les qualifications d&#39;e-mails bounce dans la table **[!UICONTROL Qualification des logs de diffusion]** ne sont plus utilisées pour les messages d&#39;erreur relatifs aux échecs des diffusions **synchrones**. Momentum détermine le type et la qualification de l&#39;e-mail bounce, puis renvoie ces informations à Campaign.
-
-Les retours **asynchrones** restent qualifiés par le processus inMail grâce aux règles de **[!UICONTROL mail entrant]**.
-
-Le message renvoyé par le serveur distant à la première occurrence de ce type d&#39;erreur s&#39;affiche dans la colonne **[!UICONTROL Premier texte]** de l&#39;onglet **[!UICONTROL Audit]**.
-
-![](assets/delivery-log-first-txt.png)
-
-Adobe Campaign filtre ce message pour supprimer le contenu de la variable (identifiants, dates, adresses email, numéros de téléphone, etc.) et affiche le résultat filtré dans la colonne **[!UICONTROL Texte]**. Les variables sont remplacées par **`#xxx#`**, à l&#39;exception des adresses remplacées par **`*`**.
-
-Ce processus permet de regrouper tous les échecs d&#39;un même type et d&#39;éviter plusieurs entrées pour des erreurs similaires dans la table Qualification des logs de diffusion.
-
->[!NOTE]
->
->Le champ **[!UICONTROL Nombre d&#39;occurrences]** affiche le nombre d&#39;occurrences du message dans la liste. Ce nombre est limité à 100 000 occurrences. Vous pouvez modifier le champ si vous le souhaitez, par exemple pour le réinitialiser.
-
-Les statuts de qualification des mails rebonds sont les suivants :
-
-* **[!UICONTROL A qualifier]** : l&#39;e-mail bounce n&#39;a pas pu être qualifié. La qualification doit être confiée à l&#39;équipe chargée de la délivrabilité afin de garantir une délivrabilité efficace de la plateforme. Tant qu&#39;il n&#39;est pas qualifié, l&#39;e-mail bounce n&#39;est pas utilisé pour enrichir la liste des règles de gestion des e-mails.
-* **[!UICONTROL Conserver]** : l&#39;e-mail bounce a été qualifié et sera utilisé par le workflow **Mise à jour pour la délivrabilité** pour être comparé aux règles de gestion des e-mails existantes et en enrichir la liste.
-* **[!UICONTROL Ignorer]** : l&#39;e-mail bounce est ignoré, ce qui signifie que ce bounce ne provoquera jamais la mise en quarantaine de l&#39;adresse du destinataire. Il ne sera pas utilisé par le workflow **Mise à jour pour la délivrabilité** et il ne sera pas envoyé aux instances clientes.
-
-![](assets/delivery-log-status.png)
-
-
->[!NOTE]
->
->En cas de panne d&#39;un fournisseur de services Internet, les emails envoyés par le biais de Campaign seront incorrectement marqués comme des rebonds. Pour corriger ce problème, vous devez mettre à jour la qualification des bounces.
-
-
-## Gestion des reprises {#retries}
-
-Si la diffusion d&#39;un message échoue suite à une erreur temporaire (**Soft** ou **Ignoré**), Campaign réalise une nouvelle tentative d&#39;envoi. Ces reprises peuvent être effectuées jusqu&#39;à la fin de la durée de diffusion. Le nombre et la fréquence des reprises sont configurés par Momentum en fonction du type et de l&#39;importance des réponses relatives aux bounces provenant du FAI du message.
-
-La configuration par défaut prévoit cinq reprises séparées d&#39;une heure chacune, puis une reprise par jour pendant quatre jours. Le nombre de reprises peut être modifié de manière globale ou pour chaque diffusion ou modèle de diffusion. Si vous devez adapter la durée de diffusion et les reprises, contactez le support Adobe.
+La boucle des retours fonctionne comme les e-mails bounce : lorsqu&#39;un utilisateur qualifie un e-mail de spam, vous pouvez configurer des règles de messagerie dans Adobe Campaign pour bloquer toutes les diffusions à cet utilisateur. Les adresses de ces utilisateurs sont placées sur la liste bloquée même s&#39;ils n&#39;ont pas cliqué sur le lien de désinscription. Les adresses sont ajoutées à la fonction **NmsAddress**) de la table des quarantaines et non de (**NmsRecipient**) avec la table des destinataires **[!UICONTROL Placé sur la liste bloquée]** statut. En savoir plus sur le mécanisme de feedback loop dans la section [Guide des bonnes pratiques en matière de délivrabilité des Adobes](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#feedback-loops).
 
 ## Erreurs synchrones et asynchrones {#synchronous-and-asynchronous-errors}
 
@@ -91,17 +48,58 @@ Une diffusion de message peut échouer immédiatement. Dans ce cas, nous qualifi
 
 Ces types d&#39;erreurs sont gérés comme suit :
 
-* **Erreur synchrone** : le serveur distant contacté par le serveur de diffusion Adobe Campaign retourne immédiatement un message d&#39;erreur. L&#39;envoi de la diffusion au serveur du profil n&#39;est pas autorisé. Adobe Campaign qualifie chaque erreur afin de déterminer si les adresses e-mail concernées doivent être mises en quarantaine. Voir [Qualification des e-mails bounce](#bounce-mail-qualification).
+* **Erreur synchrone**: le serveur distant contacté par le serveur de diffusion Adobe Campaign renvoie immédiatement un message d’erreur. La diffusion ne peut pas être envoyée au serveur du profil. Le MTA amélioré détermine le type de rebond et qualifie l’erreur, puis renvoie ces informations à Campaign afin de déterminer si les adresses email concernées doivent être mises en quarantaine. Voir [Qualification des e-mails bounce](#bounce-mail-qualification).
 
 * **Erreur asynchrone** : un e-mail bounce ou un SR est renvoyé plus tard par le serveur de réception. Cette erreur est qualifiée avec un libellé associé à l&#39;erreur. Les erreurs asynchrones peuvent se produire jusqu&#39;à une semaine après l&#39;envoi d&#39;une diffusion.
 
-   >[!NOTE]
-   >
-   >En tant qu&#39;utilisateur Managed Services, la configuration de la boîte des e-mails bounce est réalisée par Adobe.
+>[!NOTE]
+>
+>En tant qu&#39;utilisateur Managed Services, la configuration de la boîte des e-mails bounce est réalisée par Adobe.
 
-   La boucle des retours fonctionne comme les e-mails bounce : lorsqu&#39;un utilisateur qualifie un e-mail de spam, vous pouvez configurer des règles de messagerie dans Adobe Campaign pour bloquer toutes les diffusions à cet utilisateur. Les adresses de ces utilisateurs figurent sur la liste bloquée même s&#39;ils n&#39;ont pas cliqué sur le lien de désinscription. Les adresses figurent sur la liste bloquée de la table des quarantaines (**NmsAddress**) et non de la table des destinataires (**NmsRecipient**). Apprenez-en davantage sur la boucle des retours dans le [guide des bonnes pratiques en matière de délivrabilité d&#39;Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#feedback-loops).
+## Qualification des e-mails bounce {#bounce-mail-qualification}
+
+<!--NO LONGER WITH MOMENTUM - Rules used by Campaign to qualify delivery failures are listed in the **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** node. It is non-exhaustive, and is regularly updated by Adobe Campaign and can also be managed by the user.
+
+![](assets/delivery-log-qualification.png)-->
+
+Actuellement, le traitement de la qualification des emails bounce dans Adobe Campaign dépend du type d’erreur :
+
+* **Erreurs synchrones**: Le MTA amélioré détermine le type et la qualification de rebond, puis renvoie ces informations à Campaign. Les qualifications d&#39;e-mails bounce dans la table **[!UICONTROL Qualification des logs de diffusion]** ne sont plus utilisées pour les messages d&#39;erreur relatifs aux échecs des diffusions **synchrones**.
+
+* **Erreurs asynchrones**: Les règles utilisées par Campaign pour qualifier les échecs de diffusion asynchrones sont répertoriées dans la variable **[!UICONTROL Administration > Campaign Management > Gestion des échecs > Qualification des logs de diffusion]** noeud . Les retours asynchrones restent qualifiés par le processus inMail grâce aux règles de **[!UICONTROL mail entrant.]** Voir à ce sujet la section [Documentation de Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target=&quot;_blank&quot;}.
+
+<!--NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
+
+![](assets/delivery-log-first-txt.png)
+
+Adobe Campaign filters this message to delete the variable content (such as IDs, dates, email addresses, phone numbers, etc.) and displays the filtered result in the **[!UICONTROL Text]** column. The variables are replaced with **`#xxx#`**, except addresses that are replaced with **`*`**.
+
+This process allows to bring together all failures of the same type and avoid multiple entries for similar errors in the Delivery log qualification table.
+  
+>[!NOTE]
+>
+>The **[!UICONTROL Number of occurrences]** field displays the number of occurrences of the message in the list. It is limited to 100 000 occurrences. You can edit the field, if you want, for example, to reset it.
+
+Bounce mails can have the following qualification status:
+
+* **[!UICONTROL To qualify]** : the bounce mail could not be qualified. Qualification must be assigned to the Deliverability team to guarantee efficient platform deliverability. As long as it is not qualified, the bounce mail is not used to enrich the list of email management rules.
+* **[!UICONTROL Keep]** : the bounce mail was qualified and will be used by the **Refresh for deliverability** workflow to be compared to existing email management rules and enrich the list.
+* **[!UICONTROL Ignore]** : the bounce mail is ignored, meaning that this bounce will never cause the recipient's address to be quarantined. It will not be used by the **Refresh for deliverability** workflow and it will not be sent to client instances.
+
+![](assets/delivery-log-status.png)
+
+>[!NOTE]
+>
+>In case of an outage of an ISP, emails sent through Campaign will be wrongly marked as bounces. To correct this, you need to update bounce qualification.-->
 
 
+## Gestion des reprises {#retries}
+
+Si la diffusion d’un message échoue suite à une erreur temporaire (**Soft** ou **Ignoré**), l&#39;envoi de nouvelles tentatives de campagne. Ces reprises peuvent être effectuées jusqu&#39;à la fin de la durée de diffusion.
+
+Le nombre et la fréquence des reprises sont configurés par le MTA amélioré, en fonction du type et de la gravité des réponses aux retours provenant du FAI du message.
+
+<!--NO LONGER WITH MOMENTUM - The default configuration defines five retries at one-hour intervals, followed by one retry per day for four days. The number of retries can be changed globally or for each delivery or delivery template. If you need to adapt delivery duration and retries, contact Adobe Support.-->
 
 ## Types d&#39;erreur e-mail {#email-error-types}
 

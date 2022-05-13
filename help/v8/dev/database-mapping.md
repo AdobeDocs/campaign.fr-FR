@@ -2,10 +2,10 @@
 title: Mapping de la base de données de Campaign
 description: Mapping de la base de données de Campaign
 exl-id: a804d164-58bf-4b15-a48e-8cf75d793668
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 100%
+source-wordcount: '1485'
+ht-degree: 97%
 
 ---
 
@@ -196,9 +196,9 @@ Les clés suivent les règles suivantes :
    </schema>
    ```
 
-### Clé primaire - Identifiant
+### Clé primaire - Identifiant{#primary-key}
 
-La clé primaire des tables Adobe Campaign est un **identifiant universel unique (UUID)** généré automatiquement par le moteur de base de données. La valeur de clé est unique pour l&#39;ensemble de la base de données. Le contenu de la clé est automatiquement généré à l&#39;insertion de l&#39;enregistrement.
+Dans le contexte d’un [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), la clé Principale des tables Adobe Campaign est une **Identifiant unique universel (UUID)** généré automatiquement par le moteur de base de données. La valeur de clé est unique pour l&#39;ensemble de la base de données. Le contenu de la clé est automatiquement généré à l&#39;insertion de l&#39;enregistrement.
 
 **Exemple**
 
@@ -353,6 +353,8 @@ Un lien réverse vers la table &quot;cus:recipient&quot; a été ajouté avec le
 * **target** : clé du schéma lié (schéma &quot;cus:recipient&quot;)
 * **unbound** : le lien est déclaré comme élément de collection pour une cardinalité 1-N (par défaut)
 * **integrity** : par défaut &quot;define&quot; (peut être forcée avec l&#39;attribut &quot;revIntegrity&quot; dans la définition du lien sur le schéma source)
+
+Notez que la variable `autouuid="true"`s’applique dans le contexte d’un [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md) uniquement.
 
 ### Exemple 2 {#example-2}
 

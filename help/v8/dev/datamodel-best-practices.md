@@ -2,10 +2,10 @@
 title: Bonnes pratiques relatives au modèle de données
 description: Découvrez les bonnes pratiques relatives à l'extension des modèles de données de Campaign
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
-source-wordcount: '2688'
-ht-degree: 100%
+source-wordcount: '2722'
+ht-degree: 97%
 
 ---
 
@@ -73,13 +73,9 @@ Outre les clés **autouuid** et **autopk** définies par défaut dans la plupart
 
 L&#39;efficacité des clés est essentielle pour les performances. Snowflake vous permet d&#39;insérer des types de données numériques ou basées sur des chaînes comme clés pour les tableaux.
 
-<!-- ### Dedicated tablespaces {#dedicated-tablespaces}
-
-The tablespace attribute in the schema allows you to specify a dedicated tablespace for a table.
-
-The installation wizard allows you to store objects by type (data, temporary).
-
-Dedicated tablespaces are better for partitioning, security rules, and allow fluid and flexible administration, better optimization, and performance. -->
+>[!NOTE]
+>
+>Le **autouuid** s’applique uniquement à [Déploiements d’entreprise (FFDA)](../architecture/enterprise-deployment.md).
 
 ## Identificateurs {#identifiers}
 
@@ -93,7 +89,7 @@ Le tableau ci-après décrit ces identifiants et leur finalité.
 | Nom (ou nom interne) | <ul><li>Cette information est l&#39;identifiant unique d&#39;un enregistrement dans une table. Cette valeur peut être mise à jour manuellement, généralement avec un nom généré.</li><li>Cet identifiant conserve sa valeur lorsqu&#39;il est déployé dans une autre instance d&#39;Adobe Campaign et ne doit pas être vide.</li></ul> | <ul><li>Changez le nom d&#39;enregistrement généré par Adobe Campaign si l&#39;objet est destiné à être déployé d&#39;un environnement à un autre.</li><li>Si un objet possède un attribut d&#39;espace de noms (par exemple, *schema*), cet espace de noms commun sera appliqué à tous les objets personnalisés créés. Certains espaces de noms réservés ne doivent pas être utilisés : *nms*, *xtk*, etc.  Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces).</li><li>Lorsqu&#39;un objet n&#39;a pas d&#39;espace de noms (*workflow* ou *delivery*, par exemple), cette notion d&#39;espace de noms est ajoutée sous la forme d&#39;un préfixe d&#39;un objet de nom interne : *namespaceMyObjectName*.</li><li>N&#39;utilisez pas de caractères spéciaux tels que l&#39;espace &quot; &quot;, le point-virgule &quot;;&quot; ou le tiret &quot;-&quot;. Tous ces caractères seront remplacés par un trait de soulignement &quot;_&quot; (caractère autorisé). Par exemple, &quot;abc-def&quot; et &quot;abc:def&quot; seront stockés sous la forme de &quot;abc_def&quot; et s&#39;écraseront mutuellement.</li></ul> |
 | Libellé | <ul><li>Le libellé est l&#39;identifiant d&#39;entreprise d&#39;un objet ou d&#39;un enregistrement dans Adobe Campaign.</li><li>Cet objet autorise les espaces et les caractères spéciaux.</li><li>Il ne garantit pas le caractère unique d&#39;un enregistrement.</li></ul> | <ul><li>Il est recommandé de déterminer une structure pour les libellés de vos objets.</li><li>Il s&#39;agit de la solution la plus conviviale pour identifier un enregistrement ou un objet pour un utilisateur d&#39;Adobe Campaign.</li></ul> |
 
-La clé primaire d’Adobe Campaign est un UUID généré automatiquement pour toutes les tables intégrées. Un UUID peut également être utilisé pour les tables personnalisées. [En savoir plus](keys.md)
+Dans le contexte d’un [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), la clé Principale Adobe Campaign est un UUID généré automatiquement pour toutes les tables intégrées. Un UUID peut également être utilisé pour les tables personnalisées. [En savoir plus](../architecture/keys.md)
 
 Même si le nombre d&#39;identifiants est illimité, vous devez prendre en charge la taille de votre base de données pour garantir des performances optimales. Pour éviter tout problème, veillez à ajuster les paramètres de purge de votre instance. Pour plus d&#39;informations à ce sujet, consultez [cette section](#data-retention).
 
@@ -112,7 +108,9 @@ Pour la création d&#39;une table personnalisée, vous avez deux possibilités 
 
 >[!CAUTION]
 >
->Un autouuid ne doit pas être utilisé comme référence dans les workflows.
+>* Un autouuid ne doit pas être utilisé comme référence dans les workflows.
+> * Le **autouuid** s’applique uniquement à [Déploiements d’entreprise (FFDA)](../architecture/enterprise-deployment.md).
+>
 
 
 ## Liens et cardinalité {#links-and-cardinality}
@@ -121,7 +119,7 @@ Pour la création d&#39;une table personnalisée, vous avez deux possibilités 
 
 Attention à l&#39;intégrité &quot;propre&quot; des grandes tables. La suppression d&#39;enregistrements possédant des tables volumineuses avec une intégrité qui leur est propre peut éventuellement arrêter l&#39;instance. La table est verrouillée et les suppressions sont faites une par une. Il est donc préférable d&#39;appliquer une intégrité &quot;neutre&quot; sur les tables enfants très volumineuses.
 
-La déclaration d&#39;un lien en tant que jointure externe est néfaste pour les performances. L&#39;enregistrement Zero ID émule la fonctionnalité de jointure externe. Il n&#39;est pas nécessaire de déclarer des jointures externes si le lien utilise **autouuid**.
+La déclaration d&#39;un lien en tant que jointure externe est néfaste pour les performances. L&#39;enregistrement Zero ID émule la fonctionnalité de jointure externe. Dans le contexte d’un [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), il n’est pas nécessaire de déclarer des jointures externes si le lien utilise la variable **autouuid**.
 
 Bien qu&#39;il soit possible de joindre n&#39;importe quelle table dans un workflow, Adobe recommande de définir des liens communs entre les ressources directement dans la définition de la structure de données.
 

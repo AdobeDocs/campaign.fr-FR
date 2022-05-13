@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
+source-git-commit: 79a220ad9c9c372b64db9a33efc1843c95a2a619
 workflow-type: tm+mt
 source-wordcount: '643'
 ht-degree: 100%
@@ -34,7 +34,7 @@ Adobe Campaign v8 propose les canaux de diffusion suivants :
 * **LINE channel**: LINE deliveries let you send messages on LINE, an instant messaging application available on all smartphones. Learn more in [this page](../send/line.md)
 -->
 
-## Choisir comment envoyer vos messages
+## Choisir comment envoyer vos messages{#gs-send-msg}
 
 Une fois votre message créé et son contenu conçu et testé, vous pouvez choisir la façon dont vous souhaitez l&#39;envoyer. Campaign offre un ensemble de fonctionnalités pour :
 
@@ -66,7 +66,7 @@ Une fois votre message créé et son contenu conçu et testé, vous pouvez chois
    ![](../assets/do-not-localize/book.png) [Cas pratique : découvrez comment planifier et envoyer un e-mail d&#39;anniversaire](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?lang=fr){target=&quot;_blank&quot;}
 
 
-## Ajout de personnalisation
+## Ajout de personnalisation{#personalization}
 
 Les messages diffusés par Adobe Campaign peuvent être personnalisés de différentes façons.
 
@@ -79,17 +79,17 @@ Vous pouvez ainsi :
 * Créer du contenu conditionnel.
    ![](../assets/do-not-localize/book.png) Découvrez comment insérer du contenu conditionnel dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/conditional-content.html?lang=fr).{target=&quot;_blank&quot;}
 
-## Envoi de messages transactionnels
+## Envoi de messages transactionnels{#gs-transac-messages}
 
 La messagerie transactionnelle (Message Center) est le module de Campaign conçu pour gérer les messages de déclenchement.
 
-![](../assets/do-not-localize/glass.png) En savoir plus sur la fonctionnalité de messages transactionnels dans [cette section](../dev/architecture.md#transac-msg-archi).
+![](../assets/do-not-localize/glass.png) En savoir plus sur la fonctionnalité de messages transactionnels dans [cette section](../architecture/architecture.md#transac-msg-archi).
 
 ![](../assets/do-not-localize/glass.png) Retrouvez les détails des étapes de configuration et d&#39;envoi de messages transactionnels sur [cette page](../send/transactional.md).
 
 ![](../assets/do-not-localize/book.png) Découvrez cette fonctionnalité à travers un cas d&#39;utilisation complet dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=fr).{target=&quot;_blank&quot;}
 
-## Logs de tracking et de diffusion
+## Logs de tracking et de diffusion{#gs-tracking-logs}
 
 La surveillance de vos diffusions après leur envoi est une étape clé pour vous assurer que vos campagnes marketing sont efficaces et atteignent vos clients. Vous pouvez ainsi surveiller une diffusion après son envoi et comprendre la gestion des diffusions en échec et des quarantaines.
 
