@@ -8,7 +8,7 @@ exl-id: c2d34ee9-4427-48e7-a8cf-0ae02a801d50
 source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ Ces connecteurs permettent une intégration rapide et facile des données : Ado
 
 Les principaux avantages sont les suivants :
 
-* Messagerie cohérente entre les ventes et le marketing : l’intégration d’Adobe Campaign à votre CRM permet aux deux systèmes d’accéder à l’insight du client et à l’historique marketing email, ce qui permet à tous les messages adressés au client de partager les mêmes messages cohérents.
+* Messages cohérents entre les ventes et le marketing : l’intégration d&#39;Adobe Campaign avec votre CRM donne aux deux systèmes un accès aux informations du client et à l&#39;historique du marketing e-mail, ce qui permet à toutes les communications adressées au client de partager le même message cohérent.
 
-* Vue holistique de toutes les données client et prospect : grâce à l&#39;intégration d&#39;Adobe Campaign à votre CRM, il est possible de partager et d&#39;accéder à l&#39;historique marketing email de chaque contact depuis le système CRM.
+* Vue holistique de toutes les données de prospect et de client : en intégrant Adobe Campaign avec votre CRM, il est possible de partager et d&#39;accéder à l&#39;historique du marketing e-mail de chaque contact depuis le système CRM.
 
-* Activez vos données CRM sur n’importe quel canal : avec les données de contact synchronisées avec Adobe Campaign, les communications peuvent être envoyées sur n’importe quel canal en ligne ou hors ligne avec Campaign, y compris les notifications push mobiles, les messages In-App, les courriers électroniques ou les courriers.
+* Activation des données de votre CRM sur n&#39;importe quel canal : les données de contact étant synchronisées avec Adobe Campaign, les communications peuvent être envoyées sur n’importe quel canal en ligne ou hors ligne avec Campaign, y compris des notifications push mobiles, In-App, des e-mails ou du courrier.
 
 
 >[!NOTE]
@@ -39,7 +39,7 @@ Les CRM et versions pris en charge sont présentés dans la [matrice de compatib
 
 ## Étapes dʼimplémentation {#crm-implementation-steps}
 
-Découvrez la procédure détaillée pour connecter Campaign et Microsoft Dynamics dans [cette page](ac-ms-dyn.md).
+Découvrez la procédure détaillée pour connecter Campaign et Microsoft Dynamics dans [cette page](ac-ms-dyn.md).
 
 Découvrez la procédure détaillée pour connecter Campaign et Salesforce.com dans [cette page](ac-sfdc.md).
 

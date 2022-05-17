@@ -7,7 +7,7 @@ title: Documentation Campaign v8
 source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 96%
    + [Prise en main](audiences/gs-audiences.md)
    + [Accès aux profils](audiences/view-profiles.md)
    + Ajout de profils {#add-profiles}
-      + [Create profiles manually](audiences/create-profiles.md)
+      + [Création manuelle de profils](audiences/create-profiles.md)
       + [Importer des profils depuis un fichier](audiences/import-profiles.md)
       + [Utilisation de profils externes](audiences/external-profiles.md)
       + [Collecte de données de profil dans des formulaires web](audiences/collect-profiles.md)
@@ -80,7 +80,7 @@ ht-degree: 96%
       + [Création d&#39;emplacements](interaction/interaction-offer-spaces.md)
    + [Création d&#39;un catalogue d&#39;offres](interaction/interaction-offer-catalog.md)
    + [Création d&#39;une offre](interaction/interaction-offer.md)
-   + [Envoi d&#39;une offre  (sortante)](interaction/interaction-send-offers.md)
+   + [Envoi d&#39;une offre   (sortante)](interaction/interaction-send-offers.md)
    + Présentation dʼune offre (entrante){#inbound}
       + [Contexte](interaction/interaction-present-offers.md)
       + [Appel dʼune offre dans une page web](interaction/interaction-integration.md)
@@ -103,7 +103,7 @@ ht-degree: 96%
    + [Campaign + RTCDP](connect/ac-rtcdp.md)
    + [Campaign + Twitter](connect/ac-tw.md)
    + [Campaign + base de données externe](connect/fda.md)
-   + Campaign + votre CRM {#ac-crm}
+   + Campaign + votre CRM  {#ac-crm}
       + [Prise en main des connecteurs CRM](connect/crm.md)
       + [Utilisation de Campaign et SFDC](connect/ac-sfdc.md)
       + [Utilisation de Campaign et Microsoft Dynamics](connect/ac-ms-dyn.md)
