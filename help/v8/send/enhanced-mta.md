@@ -4,7 +4,8 @@ description: Découvrez la portée et les spécificités de lʼenvoi dʼe-mails 
 feature: Email
 role: Data Engineer
 level: Beginner
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
+source-git-commit: 0fa0db62f45097755bebcbf434614c4c835d886a
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 68%
@@ -114,4 +115,3 @@ Le tableau ci-dessous montre comment les KPI et les statuts des envois sont mis 
 | Les messages soft bounce sont renvoyés du MTA amélioré. | Aucun changement du pourcentage **[!UICONTROL Succès]** | Pris en compte par le fournisseur de services |
 | Les reprises des messages soft bounce sont effectuées avec succès | Le pourcentage **[!UICONTROL Succès]** augmente en conséquence | Envoyés |
 | Échec des reprises des messages soft bounce | Aucun changement du pourcentage **[!UICONTROL Succès]** | En échec |
-
