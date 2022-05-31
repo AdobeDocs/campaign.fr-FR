@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
 workflow-type: tm+mt
-source-wordcount: '2899'
-ht-degree: 89%
+source-wordcount: '3061'
+ht-degree: 85%
 
 ---
 
@@ -48,7 +48,7 @@ Une diffusion de message peut échouer immédiatement. Dans ce cas, nous qualifi
 
 Ces types d&#39;erreurs sont gérés comme suit :
 
-* **Erreur synchrone**: le serveur distant contacté par le serveur de diffusion Adobe Campaign renvoie immédiatement un message d’erreur. La diffusion ne peut pas être envoyée au serveur du profil. Le MTA amélioré détermine le type de rebond et qualifie l’erreur, puis renvoie ces informations à Campaign afin de déterminer si les adresses email concernées doivent être mises en quarantaine. Voir [Qualification des e-mails bounce](#bounce-mail-qualification).
+* **Erreur synchrone**: le serveur distant contacté par le serveur de diffusion Adobe Campaign renvoie immédiatement un message d’erreur. La diffusion ne peut pas être envoyée au serveur du profil. L’agent de transfert de messagerie (MTA) détermine le type de rebond et qualifie l’erreur, puis renvoie ces informations à Campaign afin de déterminer si les adresses électroniques concernées doivent être mises en quarantaine. Voir [Qualification des e-mails bounce](#bounce-mail-qualification).
 
 * **Erreur asynchrone** : un e-mail bounce ou un SR est renvoyé plus tard par le serveur de réception. Cette erreur est qualifiée avec un libellé associé à l&#39;erreur. Les erreurs asynchrones peuvent se produire jusqu&#39;à une semaine après l&#39;envoi d&#39;une diffusion.
 
@@ -64,7 +64,7 @@ Ces types d&#39;erreurs sont gérés comme suit :
 
 Actuellement, le traitement de la qualification des emails bounce dans Adobe Campaign dépend du type d’erreur :
 
-* **Erreurs synchrones**: Le MTA amélioré détermine le type et la qualification de rebond, puis renvoie ces informations à Campaign. Les qualifications d&#39;e-mails bounce dans la table **[!UICONTROL Qualification des logs de diffusion]** ne sont plus utilisées pour les messages d&#39;erreur relatifs aux échecs des diffusions **synchrones**.
+* **Erreurs synchrones**: Le MTA détermine le type et la qualification de rebond, puis renvoie ces informations à Campaign. Les qualifications d&#39;e-mails bounce dans la table **[!UICONTROL Qualification des logs de diffusion]** ne sont plus utilisées pour les messages d&#39;erreur relatifs aux échecs des diffusions **synchrones**.
 
 * **Erreurs asynchrones**: Les règles utilisées par Campaign pour qualifier les échecs de diffusion asynchrones sont répertoriées dans la variable **[!UICONTROL Administration > Campaign Management > Gestion des échecs > Qualification des logs de diffusion]** noeud . Les retours asynchrones restent qualifiés par le processus inMail grâce aux règles de **[!UICONTROL mail entrant.]** Voir à ce sujet la section [Documentation de Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target=&quot;_blank&quot;}.
 
@@ -97,9 +97,22 @@ Bounce mails can have the following qualification status:
 
 Si la diffusion d’un message échoue suite à une erreur temporaire (**Soft** ou **Ignoré**), l&#39;envoi de nouvelles tentatives de campagne. Ces reprises peuvent être effectuées jusqu&#39;à la fin de la durée de diffusion.
 
-Le nombre et la fréquence des reprises sont configurés par le MTA amélioré, en fonction du type et de la gravité des réponses aux retours provenant du FAI du message.
+Les reprises des soft bounces et la durée entre elles sont déterminées par le MTA en fonction du type et de la gravité des réponses des bounces revenant du domaine d&#39;email du message.
 
-<!--NO LONGER WITH MOMENTUM - The default configuration defines five retries at one-hour intervals, followed by one retry per day for four days. The number of retries can be changed globally or for each delivery or delivery template. If you need to adapt delivery duration and retries, contact Adobe Support.-->
+>[!NOTE]
+>
+>Les paramètres de reprise dans les propriétés de la diffusion ne sont pas utilisés par Campaign.
+
+## Période de validité
+
+Le paramètre de période de validité dans vos diffusions Campaign est limité à **3,5 jours ou moins**. Pour une diffusion, si vous définissez une valeur supérieure à 3,5 jours dans Campaign, elle ne sera pas prise en compte.
+
+Par exemple, si la période de validité est définie sur la valeur par défaut de 5 jours dans Campaign, les messages soft rebonds seront placés dans la file d’attente des reprises du MTA et seront repris pendant seulement 3,5 jours à partir du moment où ce message a atteint le MTA. Dans ce cas, la valeur définie dans Campaign ne sera pas utilisée.
+
+Une fois qu&#39;un message se trouve dans la file d&#39;attente du MTA depuis 3,5 jours et qu&#39;il n&#39;a pas été diffusé, il expire et son statut est mis à jour à partir de **[!UICONTROL Envoyé]** to **[!UICONTROL En échec]** dans les logs de diffusion.
+
+Pour plus d’informations sur la période de validité, voir la section [Documentation de Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target=&quot;_blank&quot;}.
+
 
 ## Types d&#39;erreur e-mail {#email-error-types}
 
