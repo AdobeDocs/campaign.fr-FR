@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 0c01b0a597e54ae93dd581ccba6f19b2ff13f956
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '561'
 ht-degree: 49%
 
 ---
@@ -63,8 +63,6 @@ L&#39;activité **[!UICONTROL Modifier la source de données]** permet de modifi
 Veuillez noter que certaines fonctionnalités ne sont pas disponibles dans cette version de Campaign, telles que :
 
 * Gestion des ressources marketing
-* Marketing distribué
-* Gestion de la réaction
 * Modèles de déploiement hybrides/On-premise
 
 >[!CAUTION]
@@ -83,7 +81,7 @@ Pour s&#39;aligner sur la nouvelle architecture et le nouveau modèle de déploi
 * Coupons
 * Tracking web
 * Questionnaires
-* Marketing pour réseaux sociaux   avec Facebook
+* Marketing pour réseaux sociaux
 * Connecteur ACS (offre principale)
 * Intégration avec LDAP
 * Connexion utilisateur/mot de passe
