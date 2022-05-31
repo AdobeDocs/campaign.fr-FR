@@ -8,7 +8,7 @@ exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
 workflow-type: tm+mt
 source-wordcount: '1188'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -37,9 +37,9 @@ Adobe Campaign s’accompagne de processus et de paramètres qui vous permetten
 
 * **Acquisition des données** : Adobe Campaign vous permet de collecter des données, y compris des informations personnelles et sensibles. Il est donc essentiel que vous receviez et gériez le consentement de vos destinataires. Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr#data-acquisition){target=&quot;_blank&quot;}
 
-* **Consentement de l’utilisateur et conservation des données**: Découvrez comment obtenir le consentement de l’utilisateur, configurer des mécanismes d’abonnement au double opt-in, faciliter l’opt-out et configurer la rétention des données dans [Documentation sur la confidentialité des Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr#consent){target=&quot;_blank&quot;}
+* **Consentement des utilisateurs et rétention de données** : découvrez comment obtenir le consentement des utilisateurs, configurer des mécanismes d’abonnement avec double opt-in, faciliter l’opt-out et configurer la rétention des données dans la [documentation sur la confidentialité de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr#consent).{target=&quot;_blank&quot;}
 
-* **Réglementations relatives à la confidentialité et à la protection des données**: voir [cette section](privacy.md) pour plus d’informations sur les exigences en matière de confidentialité et sur la manière dont ces réglementations affectent votre entreprise et Adobe Campaign.
+* **Réglementations relatives à la confidentialité et à la protection des données** : voir [cette section](privacy.md) pour plus d’informations sur les exigences en matière de confidentialité et sur la manière dont ces réglementations impactent votre entreprise et Adobe Campaign.
 
 ### Sécurité
 

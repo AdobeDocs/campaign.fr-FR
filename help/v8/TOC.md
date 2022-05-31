@@ -7,7 +7,7 @@ title: Documentation Campaign v8
 source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 92%
       + [Découverte de l&#39;interface de Campaign](start/campaign-ui.md)
       + [Personnalisation de l&#39;interface de Campaign](start/customize-ui.md)
    + [Utilisation des audiences](start/audiences.md)
-   + [Gérer les demandes d&#39;accès à des informations personnelles](start/privacy.md)
+   + [Gestion des demandes d’accès à des informations personnelles](start/privacy.md)
    + [Importation de données](start/import.md)
    + [Création de campagnes](start/campaigns.md)
    + [Envoi de messages](start/create-message.md)
@@ -38,10 +38,10 @@ ht-degree: 92%
 + Architecture {#architecture}
    + [Principes généraux](architecture/general-architecture.md)
    + [Architecture](architecture/architecture.md)
-   + Déploiement des Snowflake FDA {#fda}
-      + [Qu’est-ce que FDA-Snowflake ?](architecture/fda-deployment.md)
-   + Déploiement Entreprise (FFDA) {#ffda}
-      + [Qu&#39;est-ce que Campaign FFDA ?](architecture/enterprise-deployment.md)
+   + Déploiement de FDA Snowflake {#fda}
+      + [Qu’est-ce que FDA-Snowflake ?](architecture/fda-deployment.md)
+   + Déploiement d’Entreprise (FFDA) {#ffda}
+      + [Qu’est-ce que Campaign FFDA ?](architecture/enterprise-deployment.md)
       + Caractéristiques {#ffda-characteristics}
          + [Gestion des clés et unicité](architecture/keys.md)
          + [Nouvelles API](architecture/new-apis.md)
@@ -72,7 +72,7 @@ ht-degree: 92%
    + [Gérer les dossiers et les vues](audiences/folders-and-views.md)
    + [Bonnes pratiques](audiences/audiences-best-practices.md)
 + Envoi de messages{#send}
-   + Emails {#emails}
+   + E-mails {#emails}
       + [Concevoir et valider des emails](send/email.md)
       + [Envoi et surveillance des emails](send/send.md)
    + [SMS](send/sms.md)
@@ -95,7 +95,7 @@ ht-degree: 92%
       + [Création d&#39;emplacements](interaction/interaction-offer-spaces.md)
    + [Création d&#39;un catalogue d&#39;offres](interaction/interaction-offer-catalog.md)
    + [Création d&#39;une offre](interaction/interaction-offer.md)
-   + [Envoi d&#39;une offre   (sortante)](interaction/interaction-send-offers.md)
+   + [Envoi d&#39;une offre    (sortante)](interaction/interaction-send-offers.md)
    + Présentation dʼune offre (entrante){#inbound}
       + [Contexte](interaction/interaction-present-offers.md)
       + [Appel dʼune offre dans une page web](interaction/interaction-integration.md)
@@ -117,7 +117,7 @@ ht-degree: 92%
    + [Campaign + RTCDP](connect/ac-rtcdp.md)
    + [Campaign + Twitter](connect/ac-tw.md)
    + [Campaign + base de données externe](connect/fda.md)
-   + Campaign + votre CRM  {#ac-crm}
+   + Campaign + votre CRM   {#ac-crm}
       + [Prise en main des connecteurs CRM](connect/crm.md)
       + [Utilisation de Campaign et SFDC](connect/ac-sfdc.md)
       + [Utilisation de Campaign et Microsoft Dynamics](connect/ac-ms-dyn.md)

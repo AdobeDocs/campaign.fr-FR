@@ -8,21 +8,21 @@ exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
 source-git-commit: 0c01b0a597e54ae93dd581ccba6f19b2ff13f956
 workflow-type: tm+mt
 source-wordcount: '561'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 # [!DNL Campaign Classic]Fonctionnalités v7 -[!DNL Campaign] v8{#gs-matrix}
 
-En tant qu&#39;ancien [!DNL Campaign Classic] utilisateur v7, vous ne devez pas vous attendre à de grosses perturbations dans la manière dont vous interagissez habituellement avec [!DNL Adobe Campaign]. La plupart des modifications apportées à v8 ne sont pas visibles, à l&#39;exception des petites modifications qui apparaissent dans l&#39;interface utilisateur et dans les étapes de configuration.
+En tant qu’ancien utilisateur de [!DNL Campaign Classic] v7, votre manière habituelle d&#39;interagir avec [!DNL Adobe Campaign] ne devrait pas subir de perturbations importantes. La plupart des modifications apportées à v8 ne sont pas visibles, à l&#39;exception des petites modifications qui apparaissent dans l&#39;interface utilisateur et dans les étapes de configuration.
 
-Adobe Campaign v8 est disponible en tant que **Cloud Service géré**. La nouvelle offre combine les services les plus performants avec une surveillance proactive et des alertes rapides, en se concentrant sur trois domaines :
+Adobe Campaign v8 est disponible en tant que **Managed Cloud Service**. La nouvelle offre combine les services les plus performants avec une surveillance proactive et des alertes rapides, en se concentrant sur trois domaines :
 
-* **Agilité du cloud** — automatisation par Adobe, avec des déploiements cloud optimisés et normalisés pour des performances plus prévisibles, une plus grande agilité et une productivité en libre-service améliorée.
-* **Expérience avec le service** — surveillance proactive de la disponibilité, de la capacité et des performances et intervention pour prévenir les perturbations, résoudre les incidents plus rapidement et passer régulièrement en revue les services pour une amélioration continue.
-* **Expertise dans Adobe Campaign** : service à haute affinité d’équipes d’ingénieurs client expertes pour répondre aux besoins fonctionnels, techniques ou de délivrabilité, réduire les risques de déploiement et améliorer la gestion du changement.
+* **Agilité du cloud** : automatisation par Adobe, avec des déploiements cloud optimisés et normalisés pour des performances plus prévisibles, une plus grande agilité et une productivité en libre-service améliorée.
+* **Expérience de service** : supervision proactive de la disponibilité, de la capacité et des performances et intervention pour prévenir les perturbations, résoudre les incidents plus rapidement et passer régulièrement en revue les services pour une amélioration continue.
+* **Expertise approfondie dans Adobe Campaign** : service à haute affinité d’équipes d’ingénieurs client expertes pour répondre aux besoins fonctionnels, techniques ou de délivrabilité, réduire les risques de déploiement et améliorer la gestion du changement.
 
-En tant qu&#39;ancien [!DNL Campaign Classic] , notez que la plupart des [!DNL Campaign Classic] Les fonctionnalités v7 sont disponibles avec [!DNL Campaign] v8, sauf un petit ensemble, répertorié dans [cette section](#gs-removed). Les prochaines versions proposeront d&#39;autres fonctionnalités. [En savoir plus dans cette section](#gs-unavailable-features)
+En tant qu’ancien utilisateur [!DNL Campaign Classic], veuillez noter que la plupart des fonctionnalités de [!DNL Campaign Classic] v7 sont disponibles dans [!DNL Campaign] v8, à l’exception d’un petit ensemble de fonctionnalités répertoriées dans [cette section](#gs-removed). Les prochaines versions proposeront d&#39;autres fonctionnalités. [En savoir plus dans cette section](#gs-unavailable-features)
 
 >[!NOTE]
 >
@@ -33,24 +33,24 @@ En tant qu&#39;ancien [!DNL Campaign Classic] , notez que la plupart des [!DNL C
 
 ## [!DNL Campaign] et [!DNL Snowflake] {#ac-gs-snowflake}
 
-Campaign v8 fonctionne avec [!DNL Snowflake]. Deux modèles de déploiement sont disponibles.
+Campaign v8 fonctionne avec [!DNL Snowflake]. Deux modèles de déploiement sont disponibles.
 
 ![](../assets/do-not-localize/glass.png) Pour en savoir plus sur l&#39;architecture de [!DNL Campaign] v8, consultez [cette page](../architecture/architecture.md).
 
 
-## Utilisez votre Adobe ID pour vous connecter à Campaign.{#adobe-id}
+## Utilisation de votre Adobe ID pour vous connecter à Campaign{#adobe-id}
 
-Les utilisateurs de Campaign se connectent via leur Adobe ID. La même Adobe ID est utilisée pour conserver tous vos plans d’Adobe et produits associés à un seul compte, pour toutes les solutions Adobe Experience Cloud.
+Les utilisateurs de Campaign se connectent via leur Adobe ID. Le même Adobe ID est utilisé pour conserver tous vos abonnements Adobe et produits associés à un seul compte, pour toutes les solutions Adobe Experience Cloud.
 
 ![](../assets/do-not-localize/glass.png) Découvrez comment vous connecter à [!DNL Campaign] dans [cette page](connect.md).
 
-## Analyser les données avec des cubes{#adobe-reporting}
+## Analyse des données avec des cubes{#adobe-reporting}
 
-Utilisez le module Marketing Analytics pour analyser et mesurer les données, calculer les statistiques, simplifier et optimiser la création et le calcul de rapports. Créez également des rapports et des populations cibles : une fois identifiés, ils sont stockés dans des listes qui peuvent être utilisées dans Adobe Campaign (ciblage, segmentation, etc.).
+Utilisez le module Marketing Analytics pour analyser et mesurer les données, calculer les statistiques, simplifier et optimiser la création et le calcul de rapports. Créez également des rapports et des populations cibles : une fois identifiés, ils sont stockés dans des listes qui peuvent être utilisées dans Adobe Campaign (ciblage, segmentation, etc.).
 
-Les rapports cubiques Adobe Campaign sont optimisés et offrent de meilleures fonctionnalités d’échelle que Campaign Classic v7. Les anciennes limitations sur les cubes ne s&#39;appliquent pas dans Campaign v8.
+Notez que les rapports de cube Adobe Campaign sont optimisés et offrent de meilleures fonctionnalités d’échelle que Campaign Classic v7. Les anciennes limitations sur les cubes ne s’appliquent pas dans Campaign v8.
 
-## Modifier la source de données {#change-data-source}
+## Modification de la source de données {#change-data-source}
 
 Campaign v8 propose une activité de workflow de ciblage supplémentaire : **[!UICONTROL Modifier la source de données]**.
 
@@ -71,7 +71,7 @@ Veuillez noter que certaines fonctionnalités ne sont pas disponibles dans cette
 >
 >* La migration depuis un environnement Campaign Classic v7 existant n&#39;est pas encore disponible.
 >
->* Si vous n’êtes pas sûr de votre modèle de déploiement ou si vous avez des questions, contactez votre chargé de compte d’Adobe.
+>* Si vous n’êtes pas sûr de votre modèle de déploiement ou si vous avez des questions, contactez votre responsable de compte Adobe.
 
 
 ## Fonctionnalités non prises en charge{#gs-removed}
@@ -88,4 +88,4 @@ Pour s&#39;aligner sur la nouvelle architecture et le nouveau modèle de déploi
 
 >[!NOTE]
 >
->Certaines fonctionnalités non disponibles ou non prises en charge peuvent toujours être visibles dans l’interface utilisateur.
+>Certaines fonctionnalités non disponibles ou non prises en charge sont toujours visibles dans l’interface utilisateur.

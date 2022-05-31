@@ -9,7 +9,7 @@ exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
 workflow-type: tm+mt
 source-wordcount: '2168'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Cette page répertorie les nouvelles fonctionnalités, les améliorations et les
 
 ## Version 8.3.8 {#release-8-3-8}
 
-_18 mai 2022_
+_18 mai 2022_
 
 **Nouveautés**
 
@@ -27,12 +27,12 @@ _18 mai 2022_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Notifications sensibles à la durée</strong><br /> </th> 
+<th> <strong>Notifications sensibles à l’heure</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Avec iOS 15, Apple a ajouté une notion de notification sensible qui permet au développeur de l’application de contourner le mode Mise au point lorsqu’une notification est considérée comme sensible, puis doit atteindre l’utilisateur en temps réel.</p>
+<td> <p>Avec iOS 15, Apple a ajouté une notion de notification sensible qui permet au développeur de l’application de contourner le mode Focus lorsqu’une notification est considérée comme sensible et doit atteindre l’utilisateur en temps réel.</p>
 <p>Pour plus d’informations, consultez la <a href="../send/push.md#send-notifications-on-ios">documentation détaillée</a>.</p>
 </td> 
 </tr> 
@@ -42,12 +42,12 @@ _18 mai 2022_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Intégration de Core Privacy Service</strong><br /> </th> 
+<th> <strong>Intégration de Privacy Core Service</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Campaign v8 s’intègre désormais à Adobe Privacy Core Service. Les demandes d'accès à des informations personnelles transmises par Privacy Core Service à toutes les solutions Experience Cloud sont automatiquement traitées par Campaign via un workflow dédié.</p>
+<td> <p>Campaign v8 s’intègre désormais à Adobe Privacy Core Service. Les demandes d'accès à des informations personnelles transmises par Privacy Core Service à toutes les solutions Experience Cloud sont automatiquement traitées par Campaign via un workflow dédié.</p>
 <p>Pour plus d’informations, consultez la <a href="privacy.md">documentation détaillée</a>.</p>
 </td> 
 </tr> 
@@ -64,7 +64,7 @@ _18 mai 2022_
 <tbody>
 <tr>
 <td>
-<p>La Gestion de la réaction des campagnes permet de mesurer le succès et le retour sur investissement de vos campagnes marketing ou de vos propositions d'offres sur tous les canaux : email, mobile, courrier, etc.</p>
+<p>La gestion de la réaction des campagnes permet de mesurer le succès et le ROI de vos campagnes marketing ou de vos propositions d’offres sur tous les canaux : e-mail, mobile, courrier, etc.</p>
 <p>Pour plus d’informations, consultez la <a href="../start/campaigns.md#response-manager-add-on">documentation détaillée</a>.</p>
 </td>
 </tr>
@@ -79,7 +79,7 @@ _18 mai 2022_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Le Marketing Distribué de Campaign permet de mettre en place des opérations collaboratives entre les entités centrales (siège social, départements marketing, etc.) et les entités locales (points de vente, agences régionales, etc.). Depuis un espace de travail partagé (kits d'opération), vous pouvez créer des modèles d'opération et les proposer à vos entités locales.</p>
+<td> <p>Le marketing distribué de Campaign permet de mettre en place des opérations collaboratives entre les entités centrales (siège social, services marketing, etc.) et les entités locales (points de vente, agences régionales, etc.). Depuis un espace de travail partagé (kits d'opération), vous pouvez créer des modèles d’opération et les proposer à vos entités locales.</p>
 <p>Pour plus d’informations, consultez la <a href="../start/campaigns.md#distributed-marketing-add-on">documentation détaillée</a>.</p>
 </td> 
 </tr> 
@@ -88,28 +88,28 @@ _18 mai 2022_
 
 **Mises à jour de compatibilité**
 
-* Le SDK Campaign v8 prend désormais en charge Android 12 et iOS 15 pour les notifications push.
-* Campaign v8 est désormais compatible avec Windows 11.
+* Le SDK Campaign v8 prend maintenant en charge Android 12 et iOS 15 pour les notifications push.
+* Campaign v8 est désormais compatible avec Windows 11.
 
 Reportez-vous à la [matrice de compatibilité de Campaign](compatibility-matrix.md).
 
 **Améliorations**
 
-* L’authentification OAuth 2.0 de Microsoft Exchange Online pour POP3 est désormais prise en charge dans Campaign. [En savoir plus](../config/external-accounts.md#bounce-mails-external-account)
-* Des correctifs critiques ont été appliqués concernant l’API web de Microsoft Dynamics Connector.
-* Le nouveau droit nommé Opérateur et Écriture des schémas de groupe (operatorWrite) a été ajouté pour permettre aux utilisateurs d&#39;insérer, mettre à jour et supprimer des schémas Opérateurs (xtk:operator) et Groupes d&#39;opérateurs (xtk:group).
+* L’authentification OAuth 2.0 de Microsoft Exchange Online pour POP3 est désormais prise en charge dans Campaign. [En savoir plus](../config/external-accounts.md#bounce-mails-external-account)
+* Des correctifs importants ont été appliqués concernant l’API web du connecteur Microsoft Dynamics.
+* Le nouveau droit nommé Opérateur et Écriture des schémas de groupe (operatorWrite) a été ajouté pour permettre aux utilisateurs d’insérer, de mettre à jour et de supprimer des schémas Opérateurs (xtk:operator) et Groupes d’opérateurs (xtk:group).
 
 <!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
 <!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->
-* Plusieurs comptes principaux LINE peuvent désormais être paramétrés sur un seul mid-sourcing.
+* Plusieurs comptes actifs LINE peuvent désormais être paramétrés sur un seul mid-sourcing.
 * Le nombre de connexions par défaut pour le processus web a été augmenté de 50 à 150.
-* Campaign est fourni avec un ensemble de nouvelles barrières de sécurité pour empêcher l&#39;insertion de clés dupliquées dans la base de données Snowflake. [En savoir plus](../architecture/keys.md)
+* Campaign est fourni avec un ensemble de nouvelles barrières de sécurité pour empêcher l’insertion de clés dupliquées dans la base de données Snowflake. [En savoir plus](../architecture/keys.md)
 
 **Correctifs**
 
-* Correction d’un problème qui se produisait lors de l’utilisation de graines et de populations témoins dans la même diffusion récurrente. (NEO-41197)
-* Correction d’un problème sur FFDA en raison duquel l’envoi d’emails était bloqué pour tous les destinataires appartenant au même deliveryPart pendant le processus d’envoi (jusqu’à 256) lorsque les blocs de personnalisation contenaient l’un des caractères suivants : `' & < > "`. Ces caractères sont désormais pris en charge dans les blocs de personnalisation (par exemple : firstname=&quot;Brian O&#39;Neil&quot;). (NEO-43184)
-* Correction d’un problème qui entraînait l’échec du workflow de suivi lors de l’utilisation d’un schéma personnalisé comme mapping de ciblage. Nous nous assurons désormais que le type du lien étranger vers un schéma de ciblage personnalisé est correct lors de la génération du schéma broadLog via l&#39;assistant de mapping de ciblage. (NEO-43506)
+* Correction d’un problème qui se produisait lors de l’utilisation d’adresses de contrôle et de populations témoins dans la même diffusion récurrente. (NEO-41197)
+* Correction d’un problème sur FFDA en raison duquel l’envoi d’e-mails était bloqué pour tous les destinataires appartenant au même deliveryPart pendant le processus d’envoi (jusqu’à 256) lorsque les blocs de personnalisation contenaient l’un des caractères suivants : `' & < > "`. Ces caractères sont désormais pris en charge dans les blocs de personnalisation (par exemple : prénom=&quot;Brian O&#39;Neil&quot;). (NEO-43184)
+* Correction d&#39;un problème qui pouvait mener à l’échec du workflow de facturation lors de l&#39;utilisation d&#39;un schéma personnalisé comme mapping de ciblage. Nous nous assurons désormais que le type du lien étranger vers un schéma de ciblage personnalisé est correct lors de la génération du schéma broadLog via l’assistant de mapping de ciblage. (NEO-43506)
 * Correction d’un problème qui entraînait l’échec des workflows de déploiement FFDA pour des langues autres que l’anglais. (NEO-44561)
 
 ## Version 8.2.10 {#release-8-2-10}
