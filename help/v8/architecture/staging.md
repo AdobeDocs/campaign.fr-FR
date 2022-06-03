@@ -6,15 +6,15 @@ role: Data Engineer
 level: Beginner
 exl-id: 96693af9-50db-4298-ae02-c238d35e52b4
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '315'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # Mécanisme d&#39;évaluation de l&#39;API Campaign
 
-Dans le contexte d’un [Déploiement Entreprise (FFDA)](enterprise-deployment.md), il n’est pas recommandé de dynamiser les appels unitaires en ce qui concerne les performances (latence et simultanéité). L&#39;opération par lots est toujours préférable. Afin d’améliorer les performances, les API d&#39;ingestion sont redirigées vers la base de données locale.
+Dans le contexte d’un [Déploiement Enterprise (FFDA)](enterprise-deployment.md), il n’est pas recommandé de dynamiser les appels unitaires en ce qui concerne les performances (latence et simultanéité). L&#39;opération par lots est toujours préférable. Afin d’améliorer les performances, les API d&#39;ingestion sont redirigées vers la base de données locale.
 
 La fonctionnalité d&#39;évaluation de Campaign est activée par défaut sur certains schémas prédéfinis. Nous pouvons également l&#39;activer sur un schéma personnalisé. Description du mécanisme d&#39;évaluation :
 
