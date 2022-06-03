@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1178'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Cette section présente les éléments spécifiques à la diffusion de notificat
 
 >[!CAUTION]
 >
->Dans le contexte d’un [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), l’enregistrement mobile est maintenant **asynchrone**. [En savoir plus](../architecture/staging.md)
+>Dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), l’enregistrement mobile est désormais **asynchrone**. [En savoir plus](../architecture/staging.md)
 
 Pour créer une nouvelle diffusion, accédez à l&#39;onglet **[!UICONTROL Campagnes]**, cliquez sur **[!UICONTROL Diffusions]**, puis sur le bouton **[!UICONTROL Créer]** au-dessus de la liste des diffusions existantes.
 
@@ -68,7 +68,7 @@ Pour créer une nouvelle diffusion, accédez à l&#39;onglet **[!UICONTROL Campa
 
 >[!NOTE]
 >
->Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à la section [cette section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
 1. Sélectionnez le modèle de diffusion **[!UICONTROL Diffuser sur iOS]**.
 
@@ -82,7 +82,7 @@ Pour créer une nouvelle diffusion, accédez à l&#39;onglet **[!UICONTROL Campa
 
    ![](assets/push_ios_3.png)
 
-1. Choisissez votre **[!UICONTROL Type de notification]** entre **[!UICONTROL Notification générale (alerte, son, badge)]** ou **[!UICONTROL Notification silencieuse]**.
+1. Choisissez votre **[!UICONTROL Type de notification]** entre **[!UICONTROL Notification générale (alerte, son, pastille)]** ou **[!UICONTROL Notification silencieuse]**.
 
    ![](assets/push_ios_4.png)
 
@@ -90,25 +90,25 @@ Pour créer une nouvelle diffusion, accédez à l&#39;onglet **[!UICONTROL Campa
    >
    >Le mode **Notification silencieuse** permet d&#39;envoyer une notification &quot;silencieuse&quot; à une application mobile. L&#39;utilisateur n&#39;est pas averti de l&#39;arrivée de la notification. Elle est directement transférée à l&#39;application.
 
-1. Dans le **[!UICONTROL Titre]** , saisissez le libellé du titre qui doit apparaître dans la liste des notifications disponibles depuis le centre de notifications.
+1. Dans le champ **[!UICONTROL Titre]**, saisissez le libellé du titre qui doit apparaître dans la liste des notifications disponibles depuis le centre de notifications.
 
-   Ce champ vous permet de définir la valeur de la variable **title** du payload de notification iOS.
+   Ce champ vous permet de définir la valeur du paramètre **Titre** de la payload de notification iOS.
 
-1. Vous pouvez ajouter une **[!UICONTROL Sous-titre]**, valeur de la variable **sous-titre** du payload de notification iOS.
+1. Vous pouvez ajouter un **[!UICONTROL Sous-titre]**, valeur du paramètre **sous-titre** de la payload de notification iOS.
 
-1. Saisissez le contenu du message dans le champ **[!UICONTROL Contenu du message]** de l’assistant.
+1. Saisissez le contenu du message dans la section **[!UICONTROL Contenu du message]** de l’assistant.
 
-1. Dans la **[!UICONTROL Son et badge]** vous pouvez modifier les options suivantes :
+1. Dans l’onglet **[!UICONTROL Son et pastille]** vous pouvez modifier les options suivantes :
 
-   * **[!UICONTROL Badge de nettoyage]**: activez ces options pour actualiser la valeur du badge.
+   * **[!UICONTROL Nettoyer la pastille]** : activez cette option pour actualiser la valeur de la pastille.
 
-   * **[!UICONTROL Valeur]**: définissez un nombre qui sera utilisé pour afficher directement sur l’icône de l’application le nombre de nouvelles informations non lues.
+   * **[!UICONTROL Valeur]** : définissez un nombre qui sera utilisé pour afficher directement sur l’icône de l’application le nombre de nouvelles informations non lues.
 
-   * **[!UICONTROL Mode d’alerte critique]**: activez cette option pour ajouter du son à votre notification, même si le téléphone de l&#39;utilisateur est en mode focus ou si iPhone est en mode silencieux.
+   * **[!UICONTROL Mode d’alerte critique]** : activez cette option pour ajouter du son à votre notification, même si le téléphone de l&#39;utilisateur est en mode thème ou si l’iPhone est en mode silencieux.
 
-   * **[!UICONTROL Nom]**: sélectionnez le son que doit émettre le terminal mobile à la réception de la notification.
+   * **[!UICONTROL Nom]** : sélectionnez le son que doit émettre le terminal mobile à la réception de la notification.
 
-   * **[!UICONTROL Volume]**: volume de votre son de 0 à 100.
+   * **[!UICONTROL Volume]** : volume de votre son de 0 à 100.
 
       >[!NOTE]
       > 
@@ -117,36 +117,36 @@ Pour créer une nouvelle diffusion, accédez à l&#39;onglet **[!UICONTROL Campa
       >Les instructions de configuration pour iOS sont décrites dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=fr).
    ![](assets/push_ios_5.png)
 
-1. Dans la **[!UICONTROL Variables d’application]** , votre **[!UICONTROL Variables d’application]** sont automatiquement ajoutés. Ils permettent de définir le comportement des notifications, par exemple, lorsque l&#39;utilisateur active la notification, il est possible de configurer un écran spécifique de l&#39;application.
+1. Dans l’onglet **[!UICONTROL Variables de l’application]**, vos **[!UICONTROL variables d’application]** sont automatiquement ajoutées. Elles permettent de définir le comportement des notifications. Par exemple, vous pouvez configurer l’affichage d’un écran spécifique lorsque l’utilisateur active la notification.
 
-   Pour plus d’informations, consultez [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en).
+   Pour plus d’informations, consultez [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=fr).
 
-1. Dans la **[!UICONTROL Avancé]** vous pouvez modifier les options générales suivantes :
+1. Dans l’onglet **[!UICONTROL Avancé]**, vous pouvez modifier les options générales suivantes :
 
-   * **[!UICONTROL Contenu mutable]**: activez cette option pour permettre à l’application mobile de télécharger le contenu multimédia.
+   * **[!UICONTROL Contenu mutable]** : activez cette option pour permettre à l’application mobile de télécharger le contenu multimédia.
 
-   * **[!UICONTROL Thread-id]**: identifiant utilisé pour regrouper les notifications associées.
+   * **[!UICONTROL Thread-id]** : identifiant utilisé pour regrouper les notifications associées.
 
-   * **[!UICONTROL Catégorie]**: nom de votre ID de catégorie qui affichera les boutons d’action. Ces notifications permettent à l&#39;utilisateur d&#39;effectuer plus rapidement différentes tâches en réponse à celles-ci, sans ouvrir l&#39;application ou la parcourir.
+   * **[!UICONTROL Catégorie]** : nom de votre identifiant de catégorie qui affichera les boutons d’action. Ces notifications permettent à l&#39;utilisateur d&#39;effectuer plus rapidement différentes tâches en réponse à celles-ci, sans ouvrir l&#39;application ou la parcourir.
 
    ![](assets/push_ios_6.png)
 
-1. Pour une notification sensible à l’heure, vous pouvez spécifier les options suivantes :
+1. Pour une notification sensible à l’heure, vous pouvez spécifier les options suivantes :
 
-   * **[!UICONTROL Identifiant de contenu cible]**: identifiant utilisé pour cibler la fenêtre d&#39;application à transférer à l&#39;ouverture de la notification.
+   * **[!UICONTROL Identifiant du contenu Target]** : identifiant utilisé pour cibler la fenêtre d&#39;application à afficher au premier plan à l&#39;ouverture de la notification.
 
-   * **[!UICONTROL Image de lancement]**: nom du fichier image de lancement à afficher. Si l’utilisateur choisit de lancer votre application, l’image sélectionnée s’affichera au lieu de l’écran de lancement de votre application.
+   * **[!UICONTROL Image de Launch]** : nom du fichier image de Launch à afficher. Si l’utilisateur choisit de lancer votre application, l’image sélectionnée s’affichera au lieu de l’écran de lancement de votre application.
 
    * **[!UICONTROL Niveau d&#39;interruption]**:
 
-      * **[!UICONTROL Principal]**: Défini par défaut, le système présente immédiatement la notification, illumine l’écran et peut émettre un son. Les notifications ne passent pas en mode Ciblage .
+      * **[!UICONTROL Actif]** : défini par défaut, le système présente immédiatement la notification, illumine l’écran et peut émettre un son. Les notifications ne passent pas en mode Thème.
 
-      * **[!UICONTROL Passif]**: Le système ajoute la notification à la liste de notifications sans allumer l&#39;écran ni émettre un son. Les notifications ne passent pas en mode Ciblage .
+      * **[!UICONTROL Passif]** : le système ajoute la notification à la liste de notifications sans allumer l’écran ni émettre de son. Les notifications ne passent pas en mode Thème.
 
-      * **[!UICONTROL Respect de la durée]** Le système présente immédiatement la notification, allume l&#39;écran, peut émettre un son et se déplier en mode Mise au point. Ce niveau ne nécessite pas d’autorisation spéciale de la part d’Apple.
+      * **[!UICONTROL Sensible à l’heure]** : le système présente immédiatement la notification, allume l’écran, peut émettre un son et passer en mode Thème. Ce niveau ne nécessite pas d’autorisation spéciale de la part d’Apple.
 
-      * **[!UICONTROL Critique]** Le système présente immédiatement la notification, allume l’écran et contourne le bouton d’arrêt ou le mode de mise au point. Notez que ce niveau nécessite une autorisation spéciale de la part d’Apple.
-   * **[!UICONTROL Score de pertinence]**: définissez un score de pertinence compris entre 0 et 100. Le système l’utilise pour trier les notifications dans le résumé de la notification.
+      * **[!UICONTROL Critique]** : le système présente immédiatement la notification, allume l’écran et contourne le bouton de désactivation ou le mode de thème. Notez que ce niveau nécessite une autorisation spéciale de la part d’Apple.
+   * **[!UICONTROL Score de pertinence]** : définissez un score de pertinence compris entre 0 et 100. Le système l’utilise pour trier les notifications dans le résumé de la notification.
 
    ![](assets/push_ios_7.png)
 
