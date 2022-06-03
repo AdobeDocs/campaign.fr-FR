@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
 source-git-commit: fc0be5fe82ba11e54851a8f612ece0b310447cdd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '909'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -94,21 +94,21 @@ Les étapes clés permettant de créer une campagne marketing cross-canal sont l
 
 ## Module complémentaire Marketing distribué{#distributed-marketing-add-on}
 
-Adobe Campaign propose une **Marketing distribué** module complémentaire pour la mise en oeuvre de campagnes de coopération entre entités centrales (siège social, départements marketing, etc.) et les entités locales (magasins, agences régionales, etc.). Cette coopération repose sur un espace de travail partagé appelé **[!UICONTROL Liste des kits d&#39;opération]**, où des modèles d&#39;opération conçus par des entités centrales sont proposés aux entités locales.
+Adobe Campaign propose un module complémentaire **Marketing distribué** pour la mise en œuvre de campagnes de coopération entre entités centrales (sièges sociaux, services marketing, etc.) et les entités locales (boutiques, agences régionales, etc.). Cette coopération repose sur un espace de travail partagé appelé **[!UICONTROL Liste des kits d&#39;opération]**, où des modèles d&#39;opération conçus par des entités centrales sont proposés aux entités locales.
 
 >[!NOTE]
 >
->Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à la section [cette section](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-[](../assets/do-not-localize/book.png) Découvrez comment configurer et utiliser les fonctionnalités de marketing distribué de Campaign dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/distributed-marketing/about-distributed-marketing.html){target=&quot;_blank&quot;}
+[](../assets/do-not-localize/book.png) Découvrez comment configurer et utiliser les fonctionnalités de marketing distribué de Campaign dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/distributed-marketing/about-distributed-marketing.html?lang=fr){target=&quot;_blank&quot;}
 
 ## Module complémentaire Gestion de la réaction{#response-manager-add-on}
 
-Adobe Campaign propose une **Gestion de la réaction** module complémentaire permettant de mesurer le succès et la rentabilité des campagnes marketing ou des propositions d’offres sur l’ensemble des canaux de communication : email, mobile, courrier, etc.
+Adobe Campaign propose un module complémentaire **Gestion de la réaction** qui permet de mesurer le succès et la rentabilité d&#39;une campagne marketing ou d&#39;une proposition d&#39;offre, quel que soit le canal de communication utilisé : e-mail, mobile, courrier, etc.
 
 >[!NOTE]
 >
->Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à la section [cette section](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-[](../assets/do-not-localize/book.png) Découvrez comment configurer et utiliser le gestionnaire de réponse de Campaign dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html){target=&quot;_blank&quot;}
+[](../assets/do-not-localize/book.png) Découvrez comment configurer et utiliser la Gestion de la réaction de Campaign dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=fr){target=&quot;_blank&quot;}
 
