@@ -4,7 +4,7 @@ title: Bonnes pratiques relatives aux interactions Adobe Campaign
 description: Recommandations relatives à la gestion du module Interaction dans Adobe Campaign
 exl-id: 28f3a5bc-67f5-413e-b2ba-35c341f9ec5f
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1164'
 ht-degree: 100%
 
