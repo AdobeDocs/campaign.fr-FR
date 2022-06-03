@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
 source-git-commit: 0fa0db62f45097755bebcbf434614c4c835d886a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '419'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 
 ## Workflows techniques{#tech-wf}
 
-Dans le contexte d’un [Déploiement Entreprise (FFDA)](enterprise-deployment.md), Adobe Campaign est fourni avec un ensemble de workflows techniques intégrés. Les workflows techniques exécutent des processus ou des traitements planifiés de manière régulière sur le serveur.
+Dans le contexte d’un [Déploiement Enterprise (FFDA)](enterprise-deployment.md), Adobe Campaign est fourni avec un ensemble de workflows techniques intégrés. Les workflows techniques exécutent des processus ou des traitements planifiés de manière régulière sur le serveur.
 
 Ces workflows effectuent des opérations de maintenance sur la base de données, tirent parti des informations de tracking contenues dans les logs de diffusion, créent des campagnes récurrentes, etc.
 
@@ -33,7 +33,7 @@ Ce workflow réplique les données Staging pour les appels unitaires. Il est pla
 * **[!UICONTROL Répliquer les données FFDA immédiatement]**
 Ce workflow réplique les données XS pour un compte externe donné.
 
-Ces workflows techniques sont disponibles à partir de la **[!UICONTROL Administration > Exploitation > Workflows techniques > Réplication FFDA complète]** noeud de l’Explorateur Campaign. **Ils ne doivent pas être modifiés.**
+Ces workflows techniques sont disponibles à partir du nœud **[!UICONTROL Administration > Exploitation > Workflows techniques > Réplication FFDA complète]** de l&#39;explorateur Campaign. **Ils ne doivent pas être modifiés.**
 
 Si nécessaire, vous pouvez lancer manuellement la synchronisation des données. Pour ce faire, cliquez avec le bouton droit de la souris sur l&#39;activité **Planificateur** et sélectionnez **Traitement anticipé de la (des) tâche(s)**.
 
