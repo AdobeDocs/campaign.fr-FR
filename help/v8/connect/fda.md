@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1772'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Utilisez le connecteur FDA (Federated Data Access) pour connecter Campaign à un
 >
 >* Les bases de données compatibles avec FDA sont répertoriées dans la [Matrice de compatibilité](../start/compatibility-matrix.md).
 >
->* Dans le contexte d’un [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), un compte externe spécifique est disponible pour gérer la communication entre la base de données locale Campaign et la base de données cloud Snowflake. Ce compte externe est configuré pour vous par Adobe et ne doit pas être modifié.
+>* Dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), un compte externe spécifique est disponible pour gérer la communication entre la base de données locale Campaign et la base de données cloud Snowflake. Ce compte externe est configuré pour vous par Adobe et ne doit pas être modifié.
 >
 
 
@@ -65,7 +65,7 @@ Pour configurer l&#39;accès à une base de données externe avec FDA, les étap
 1. If needed, create a new target mapping from the previously created schema. This is required if the recipients of your deliveries come from the external database. This implementation comes with limitations related to message personalization. [Learn more](#define-data-mapping)
 -->
 
-Notez qu’avec Campaign [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), vous ne pouvez pas créer de mapping de ciblage à partir d&#39;un schéma stocké dans une base externe accessible par FDA. Par conséquent, les destinataires de vos diffusions ne peuvent pas provenir de la base de données externe.
+Notez qu’avec le [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md) de Campaign , vous ne pouvez pas créer de mapping de ciblage à partir d&#39;un schéma stocké dans une base externe accessible par FDA. Par conséquent, les destinataires de vos diffusions ne peuvent pas provenir de la base de données externe.
 
 ## Compte externe de base de données externe{#fda-external-account}
 
