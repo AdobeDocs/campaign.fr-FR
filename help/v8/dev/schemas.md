@@ -3,9 +3,9 @@ title: Utilisation des schémas Campaign
 description: Prise en main des schémas
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1273'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -167,9 +167,9 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 
 ## Clés {#keys}
 
-Chaque table doit posséder au moins une clé. Celle-ci est souvent automatiquement définie dans l&#39;élément principal du schéma à l&#39;aide de la fonction **autopk** définie sur **true**.
+Chaque table doit posséder au moins une clé. Celle-ci est souvent définie automatiquement dans l&#39;élément principal du schéma au moyen de l’attribut **autopk** défini sur la valeur **true**.
 
-En outre, dans le cadre d’un [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), utilisez le **@autouuid** et définissez-le sur **true**.
+En outre, dans le cadre d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), utilisez l’attribut **@autouuid** et définissez-le sur **true**.
 
 La clé primaire peut également être définie au moyen de l&#39;attribut **internal**.
 
@@ -181,7 +181,7 @@ Exemple:
 </key>
 ```
 
-Dans cet exemple, au lieu de laisser la variable **@autopk** ou le **@autouuid** crée une clé Principale par défaut appelée &quot;id&quot; que nous spécifions notre propre clé Principale &quot;householdId&quot;.
+Dans cet exemple, au lieu de laisser l&#39;attribut **@autopk** ou **@autouuid** créer une clé primaire par défaut nommée « id », on définit ici la clé primaire « householdId ».
 
 >[!CAUTION]
 >
