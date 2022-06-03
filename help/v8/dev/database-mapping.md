@@ -3,9 +3,9 @@ title: Mapping de la base de données de Campaign
 description: Mapping de la base de données de Campaign
 exl-id: a804d164-58bf-4b15-a48e-8cf75d793668
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1485'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -198,7 +198,7 @@ Les clés suivent les règles suivantes :
 
 ### Clé primaire - Identifiant{#primary-key}
 
-Dans le contexte d’un [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), la clé Principale des tables Adobe Campaign est une **Identifiant unique universel (UUID)** généré automatiquement par le moteur de base de données. La valeur de clé est unique pour l&#39;ensemble de la base de données. Le contenu de la clé est automatiquement généré à l&#39;insertion de l&#39;enregistrement.
+Dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), la clé primaire des tables Adobe Campaign est un **Identifiant universel unique (UUID)** généré automatiquement par le moteur de base de données. La valeur de clé est unique pour l&#39;ensemble de la base de données. Le contenu de la clé est automatiquement généré à l&#39;insertion de l&#39;enregistrement.
 
 **Exemple**
 
@@ -354,7 +354,7 @@ Un lien réverse vers la table &quot;cus:recipient&quot; a été ajouté avec le
 * **unbound** : le lien est déclaré comme élément de collection pour une cardinalité 1-N (par défaut)
 * **integrity** : par défaut &quot;define&quot; (peut être forcée avec l&#39;attribut &quot;revIntegrity&quot; dans la définition du lien sur le schéma source)
 
-Notez que la variable `autouuid="true"`s’applique dans le contexte d’un [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md) uniquement.
+Notez que le `autouuid="true"`paramètre s’applique dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md) uniquement.
 
 ### Exemple 2 {#example-2}
 
