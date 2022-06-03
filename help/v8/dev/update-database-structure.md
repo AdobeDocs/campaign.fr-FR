@@ -3,7 +3,7 @@ title: Mise à jour de la structure de la base de données
 description: Mise à jour de la structure de la base de données
 exl-id: fc64f3ca-67f1-47b7-b154-9c9dd044192c
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '97'
 ht-degree: 100%
 
