@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '356'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -28,12 +28,12 @@ Les systèmes d’exploitation et le navigateur ci-après sont nécessaires pour
 
 ### Systèmes d’exploitation
 
-* **Microsoft Windows Server** 2019, 2016, 2012
-* **Microsoft Windows** 11 (à partir de Campaign v8.3), 10, 8,
+* **Microsoft Windows Server** 2019, 2016, 2012
+* **Microsoft Windows** 11 (à partir de Campaign v8.3), 10, 8,
 
 >[!NOTE]
 >
->Microsoft Windows 10 est recommandé pour les instances japonaises.
+>Microsoft Windows 10 est recommandé pour les instances japonaises.
 
 ### Navigateur
 
@@ -59,8 +59,8 @@ Les bases de données externes compatibles avec le module Adobe Campaign Federa
 
 Vous pouvez utiliser Campaign pour envoyer des [notifications push](../send/push.md) sur les systèmes d’exploitation répertoriés ci-dessous, à l’aide du SDK mobile associé.
 
-* **Android** 12 (à partir de Campaign v8.3), 9.0, 8.x, 7.x, avec le SDK Campaign Android build 1.1.1.
-* **Apple iOS** 9 - 15 avec SDK iOS de Campaign version 1.0.26, compatible avec les versions 32 et 64 bits. iOS 15 est pris en charge à partir de Campaign v8.
+* **Android** 12 (à partir de Campaign v8.3), 9.0, 8.x, 7.x, avec le SDK Campaign Android build 1.1.1.
+* **Apple iOS** 9 - 15 avec SDK iOS de Campaign version 1.0.26, compatible avec les versions 32 et 64 bits. iOS 15 est pris en charge à partir de Campaign v8.
 
 ## Accès web
 
@@ -68,7 +68,7 @@ Les navigateurs ci-après sont compatibles avec Campaign pour l’[accès à Int
 
 * **Microsoft Edge**, **Mozilla Firefox**, **Google Chrome**, **Safari** (dernières versions)
 
-## Comment vérifier la version   et le build de Campaign{#version}
+## Comment vérifier la version    et le build de Campaign{#version}
 
 Accédez au menu **Aide > À propos...** pour vérifier votre version.
 
