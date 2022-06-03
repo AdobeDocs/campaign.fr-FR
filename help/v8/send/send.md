@@ -8,7 +8,7 @@ exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
 source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 36%
+ht-degree: 51%
 
 ---
 
@@ -43,13 +43,13 @@ Disponible pour tous les clients de Campaign v8, il garantit une évolutivité, 
 
 ### Avantages
 
-Adobe Campaign utilise un MTA (Mail Transfer Agent) qui exécute le MTA de messagerie commercial de SparkPost appelé **Moment**.
+Adobe Campaign utilise un MTA (Mail Transfer Agent) qui exécute le MTA de messagerie commerciale de SparkPost appelé **Momentum**.
 
 Momentum offre une technologie MTA innovante et extrêmement performante. Elle comprend une gestion des retours plus intelligente et une fonctionnalité d&#39;optimisation de la délivrabilité automatisée qui aide les expéditeurs à atteindre et à maintenir des taux de remise optimaux aux boîtes de réception.
 
 * Le MTA permet une augmentation massive de la vitesse de débit globale et une réduction significative des soft bounces.
-* Il utilise la dernière technologie MTA pour vous fournir des vitesses de débit optimales pour votre diffusion email.
-* En s&#39;adaptant instantanément et automatiquement aux retours qu&#39;il reçoit, il garantit également une diffusion par email plus précise et plus intelligente avec des données de diffusion en temps réel.
+* Il utilise la dernière technologie MTA pour vous offrir des vitesses de débit optimales pour votre diffusion par e-mail.
+* En s&#39;adaptant instantanément et automatiquement aux retours qu&#39;il reçoit, il garantit également une diffusion par e-mail plus précise et plus intelligente avec des données de diffusion en temps réel.
 
 ### Qualification des retours
 
@@ -59,7 +59,7 @@ Le MTA qualifie le bounce SMTP et renvoie cette qualification à Campaign sous l
 
 >[!NOTE]
 >
->Actuellement **asynchrone** les bounces sont qualifiés par le processus inMail via le **[!UICONTROL Email entrant]** règles. Voir à ce sujet la section [Documentation de Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target=&quot;_blank&quot;}. <!--Refer to [bounce mail qualification](delivery-failures.md#bounce-mail-qualification)-->
+>Actuellement **asynchrone** les bounces sont qualifiés par le processus inMail via le **[!UICONTROL Email entrant]** règles. Pour en savoir plus à ce sujet, consultez la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr#bounce-mail-qualification){target=&quot;_blank&quot;}. <!--Refer to [bounce mail qualification](delivery-failures.md#bounce-mail-qualification)-->
 
 En savoir plus sur les diffusions en échec dans [cette section](delivery-failures.md).
 
@@ -72,11 +72,11 @@ Le MTA possède ses propres règles MX qui lui permettent de personnaliser votre
 
 ### Signature DKIM
 
-Domain Keys Identified Mail (DKIM) est une méthode d&#39;authentification utilisée pour détecter les adresses d&#39;expéditeur falsifiées (usurpation de nom).
+Domain Keys Identified Mail (DKIM) est une méthode d’authentification utilisée pour détecter les adresses d’expéditeur falsifiées (usurpation de nom).
 
 Dans Adobe Campaign, la signature de l&#39;authentification des emails DKIM est effectuée par le MTA.
 
-En savoir plus sur DKIM dans la section [Guide des bonnes pratiques en matière de délivrabilité des Adobes](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#authentication){target=&quot;_blank&quot;}.
+En savoir plus sur DKIM dans le [Guide Adobe des bonnes pratiques en matière de délivrabilité ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#authentication){target=&quot;_blank&quot;}.
 
 ## Service de retour d&#39;e-mail
  {#email-feedback-service}
@@ -91,7 +91,7 @@ Lorsque le message est effectivement diffusé aux profils ciblés et que ces inf
 
 Lorsque des messages rebonds hard sont signalés à partir du MTA, leur état de journal passe de **[!UICONTROL Pris en compte par le prestataire]** to **[!UICONTROL En échec]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
-Lorsque les messages de soft bounces sont signalés à partir du MTA, leur état de journal reste inchangé (**[!UICONTROL Pris en compte par le prestataire]**) : uniquement [raison de l’erreur](delivery-failures.md#delivery-failure-reasons) est mis à jour<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Le pourcentage **[!UICONTROL Succès]** reste inchangé. Les messages rebonds par soft sont ensuite relancés tout au long de la diffusion. [période de validité](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target=&quot;_blank&quot;} :
+Lorsque les messages de soft bounces sont signalés à partir du MTA, leur état de journal reste inchangé (**[!UICONTROL Pris en compte par le prestataire]**) : uniquement [raison de l’erreur](delivery-failures.md#delivery-failure-reasons) est mis à jour<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Le pourcentage **[!UICONTROL Succès]** reste inchangé. L&#39;envoi des messages soft bounce fait ensuite l’objet de reprises tout au long de la [période de validité](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period) de la diffusion {target=&quot;_blank&quot;} :
 
 * Si une reprise est effectuée avec succès avant la fin de la période de validité, l’état du message passe à **[!UICONTROL Envoyé]** et le pourcentage **[!UICONTROL Succès]** augmente en conséquence.
 

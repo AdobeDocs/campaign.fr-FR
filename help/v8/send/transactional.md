@@ -8,15 +8,15 @@ exl-id: 06fdb279-3776-433f-8d27-33d016473dee
 source-git-commit: 21d4f7a4b02104572dbd3a5469dc479b5b0ba8de
 workflow-type: tm+mt
 source-wordcount: '1596'
-ht-degree: 80%
+ht-degree: 99%
 
 ---
 
 # Prise en main de la messagerie transactionnelle{#send-transactional-messages}
 
-Les messages transactionnels (Message Center) sont un module de Campaign conçu pour gérer les messages de déclenchement. Ces notifications sont générées à partir d’événements déclenchés à partir de systèmes d’information et peuvent être : facture, confirmation de commande, confirmation d&#39;expédition, changement de mot de passe, notification d&#39;indisponibilité du produit, relevé de compte, création du compte web, etc.
+La messagerie transactionnelle (Message Center) est un module de Campaign conçu pour gérer les messages de déclenchement. Ces notifications sont générées à partir d’événements déclenchés depuis des systèmes d’information et peuvent correspondre aux éléments suivants : facture, confirmation de commande, confirmation d&#39;expédition, changement de mot de passe, notification d&#39;indisponibilité du produit, relevé de compte, création de compte web, etc.
 
-![](../assets/do-not-localize/speech.png)  En tant qu’utilisateur Cloud Services géré, [contact Adobe](../start/campaign-faq.md#support){target=&quot;_blank&quot;} pour configurer les messages transactionnels Campaign dans votre environnement.
+![](../assets/do-not-localize/speech.png)En tant qu’utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support){target=&quot;_blank&quot;} pour configurer la messagerie transactionnelle de Campaign dans votre environnement.
 
 Les messages transactionnels sont utilisés pour envoyer :
 
@@ -26,7 +26,7 @@ Les messages transactionnels sont utilisés pour envoyer :
 
 ![](../assets/do-not-localize/glass.png) Les paramètres de messagerie transactionnelle sont décrits dans [cette section](../config/transactional-msg-settings.md).
 
-![](../assets/do-not-localize/glass.png) Présentation de l’architecture des messages transactionnels sur [cette page](../architecture/architecture.md#transac-msg-archi).
+![](../assets/do-not-localize/glass.png) Découvrez l&#39;architecture de la messagerie transactionnelle dans [cette page](../architecture/architecture.md#transac-msg-archi).
 
 ## Principe de fonctionnement des messages transactionnels {#transactional-messaging-operating-principle}
 
@@ -36,14 +36,14 @@ Par exemple, imaginez que vous êtes une société disposant d&#39;un site web s
 
 Adobe Campaign vous permet d’envoyer un email de notification aux clients qui ont ajouté des produits à leur panier. Lorsque l&#39;un d&#39;eux quitte votre site web sans passer par ses achats (événement externe qui déclenche un événement Campaign), un email d&#39;abandon de panier lui est automatiquement envoyé (diffusion de message transactionnel).
 
-Les principales étapes de mise en place sont présentées ci-dessous :
+Les principales étapes de mise en place de ce système sont décrites ci-dessous :
 
 1. [Créer un type d&#39;événement](#create-event-types).
 1. [Créer et concevoir le modèle de message](#create-message-template). Vous devez associer un événement à votre message au cours de cette étape.
 1. [Tester le message](#test-message-template).
 1. [Publier le modèle de message](#publish-message-template).
 
-Une fois que vous avez conçu et publié le modèle de message transactionnel, si un événement correspondant est déclenché, les données pertinentes sont envoyées à Campaign via PushEvent et PushEvents. [Méthodes SOAP](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html?lang=fr){target=&quot;_blank&quot;} et la diffusion est envoyée aux destinataires ciblés.
+Une fois que vous avez conçu et publié le modèle de message transactionnel, si un événement correspondant est déclenché, les données pertinentes sont envoyées à Campaign via les [méthodes SOAP](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html?lang=fr){target=&quot;_blank&quot;} PushEvent et PushEvents, et la diffusion est envoyée aux destinataires ciblés.
 
 ## Création de types d&#39;événements {#create-event-types}
 
@@ -73,9 +73,9 @@ Pour créer des types d&#39;événements qui seront traités par Adobe Campaign
 
 >[!NOTE]
 >
->En savoir plus sur les énumérations dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=fr){target=&quot;_blank&quot;}.
+>Apprenez-en davantage sur les listes d’énumération dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=fr){target=&quot;_blank&quot;}.
 
-## Définir un modèle de message transactionnel {#create-message-template}
+## Définition d’un modèle de message transactionnel {#create-message-template}
 
 Chaque événement peut déclencher un message personnalisé. Pour ce faire, vous devez créer un modèle de message correspondant à chaque type d&#39;événement. Les modèles contiennent les informations nécessaires à la personnalisation du message transactionnel. Vous pouvez également utiliser des modèles pour tester la prévisualisation des messages et envoyer des BAT à l&#39;aide d&#39;adresses de contrôle avant de les diffuser à la cible finale.
 
@@ -133,7 +133,7 @@ Pour insérer des balises de personnalisation dans le corps d&#39;un message ema
 
    ![](assets/messagecenter_create_custo_2.png)
 
-## Tester le modèle de message transactionnel {#test-message-template}
+## Test du modèle de message transactionnel {#test-message-template}
 
 ### Ajouter des adresses de contrôle{#add-seeds}
 
@@ -224,7 +224,7 @@ Les BAT sont accessibles au niveau de chaque modèle, depuis l&#39;onglet **[!UI
 
 ## Publication du modèle {#publish-message-template}
 
-Lorsque le modèle de message a été créé<!-- on the control instance--> est terminée, vous pouvez la publier, ce qui vous permettra d’envoyer des messages liés à des événements temps réel et par lots.
+Lorsque le modèle de message créé<!-- on the control instance--> est terminé, vous pouvez le publier, ce qui vous permettra d’envoyer des messages liés à des événements temps réel et par lots.
 
 <!--This process will also publish it on all execution instances.
 
@@ -236,17 +236,17 @@ Publication lets you automatically create two message templates on the execution
 >
 >Chaque fois que vous apportez des modifications à un modèle, veillez à le republier pour que ces modifications soient effectives pendant la diffusion du message transactionnel.
 
-1. Accédez au **[!UICONTROL Message Center > Modèles de messages transactionnels]** du dossier de l’arborescence.
-1. Sélectionnez le modèle que vous souhaitez publier.<!--on your execution instances-->.
+1. Accédez au dossier **[!UICONTROL Message Center > Modèles de messages transactionnels]** de l’arborescence.
+1. Sélectionnez le modèle que vous souhaitez publier<!--on your execution instances-->.
 1. Cliquez sur **[!UICONTROL Publier]**.
 
    ![](assets/messagecenter_publish_template.png)
 
-Une fois la publication terminée, les deux modèles de message à appliquer aux événements de type batch et temps réel sont créés dans la variable **[!UICONTROL Administration > Exploitation > Message Center (Exécution) > Défaut > Modèles de messages transactionnels]** dossier.
+Lorsque la publication est terminée, les deux modèles de messages destinés à être appliqués aux types d&#39;événements temps réel et par lots sont créés dans le dossier **[!UICONTROL Administration > Exploitation > Exécution Message Center > Défaut > Modèles de messages transactionnels]**.
 
 ![](assets/messagecenter_deployed_model.png)
 
-Une fois qu’un modèle est publié, si l’événement correspondant est déclenché, Adobe Campaign<!--execution instance--> recevra l’événement, le liera au modèle transactionnel et enverra le message transactionnel correspondant à chaque destinataire.
+Une fois qu’un modèle est publié, si l’événement correspondant est déclenché, Adobe Campaign<!--execution instance-->reçoit l’événement, le lie au modèle transactionnel et envoie le message transactionnel correspondant à chaque destinataire.
 
 <!--
 >[!NOTE]
@@ -268,7 +268,7 @@ Une fois qu’un modèle de message est publié <!--on the execution instances--
 
 Pour dépublier un modèle de message transactionnel, procédez comme décrit ci-dessous.
 
-1. Accédez au **[!UICONTROL Message Center > Modèles de messages transactionnels]** dossier.
+1. Accédez au dossier **[!UICONTROL Message Center > Modèles de messages transactionnels]**.
 1. Sélectionnez le modèle dont vous souhaitez annuler la publication.
 1. Cliquez sur **[!UICONTROL Dépublier]**.
 1. Cliquez sur **[!UICONTROL Démarrer]**.
@@ -279,10 +279,10 @@ Le statut du modèle de message transactionnel passe de **[!UICONTROL Publié]**
 
 Une fois la publication annulée :
 
-* Les deux modèles de message (appliqués aux types d’événements batch et temps réel) sont supprimés.<!-- from each execution instance-->.
+* Les deux modèles de message (appliqués aux types d’événements par lots et temps réel) sont supprimés<!-- from each execution instance-->.
 
-   Ils n&#39;apparaissent plus dans le dossier **[!UICONTROL Administration > Production > Exécution Message Center > Défaut > Modèles de messages transactionnels]**.
+   Ils n&#39;apparaissent plus dans le dossier **[!UICONTROL Administration > Exploitation > Exécution Message Center > Défaut > Modèles de messages transactionnels]**.
 
-* Une fois la dépublication d’un modèle annulée, vous pouvez le supprimer.<!-- from the control instance-->.
+* Une fois la dépublication d’un modèle effectuée, vous pouvez le supprimer<!-- from the control instance-->.
 
    Pour ce faire, sélectionnez-le dans la liste et cliquez sur le bouton **[!UICONTROL Supprimer]** en haut à droite de l&#39;écran.

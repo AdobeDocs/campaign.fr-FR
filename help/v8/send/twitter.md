@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 100%
 
@@ -132,7 +132,7 @@ Pour envoyer des messages directs à vos abonnés, procédez comme suit :
 
    Pour en savoir plus sur la création d&#39;un compte Twitter privé, reportez-vous à [cette section](../connect/ac-tw.md#tw-test-account).
 
-   ![](../assets/do-not-localize/book.png) [Découvrez les étapes clés pour valider une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [Découvrez les étapes clés pour valider une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}
 
 1. Envoi du message direct
 

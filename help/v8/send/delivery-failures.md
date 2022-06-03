@@ -8,7 +8,7 @@ exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
 source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
 workflow-type: tm+mt
 source-wordcount: '3061'
-ht-degree: 85%
+ht-degree: 93%
 
 ---
 
@@ -26,21 +26,21 @@ Lorsqu&#39;une adresse e-mail est mise en quarantaine ou qu&#39;un profil est en
 
 ## Pourquoi la diffusion du message a-t-elle échoué ? {#delivery-failure-reasons}
 
-Deux types d&#39;erreur sont liés à un message en échec. Chaque type d’échec de diffusion détermine si une adresse est envoyée à [quarantaine](quarantines.md#quarantine-reason) ou pas.
+Deux types d&#39;erreur sont liés à un message en échec. Chaque type d&#39;échec de diffusion détermine si une adresse est envoyée en [quarantaine](quarantines.md#quarantine-reason) ou non.
 
 * **Erreurs hard**
-Les erreurs hard sont des échecs permanents générés lorsqu&#39;un FAI détermine qu&#39;une tentative de publipostage vers une adresse d&#39;abonné n&#39;est pas livrable. Dans Adobe Campaign, les hard bounces classés comme non livrables sont ajoutés à la liste de quarantaine, ce qui signifie qu’ils ne seront pas repris. Dans certains cas, une erreur hard peut être ignorée si la cause de l&#39;échec est inconnue.
+Les erreurs hard sont des échecs permanents générés lorsqu&#39;un FAI détermine qu&#39;une tentative de publipostage vers une adresse d&#39;abonné n&#39;est pas livrable. Dans Adobe Campaign, les erreurs hard classées comme non livrables sont ajoutées à la liste de quarantaine, ce qui signifie qu&#39;elles ne seront pas retentées. Dans certains cas, une erreur hard peut être ignorée si la cause de l&#39;échec est inconnue.
 
    Voici quelques exemples courants d&#39;erreurs hard : adresse inexistante, compte désactivé, syntaxe incorrecte, domaine incorrect.
 
 * **Erreurs soft**
-Les erreurs soft sont des échecs temporaires que les FAI génèrent lorsqu&#39;ils ont des difficultés à diffuser des e-mails. Les échecs de type Soft [retry](#retries) plusieurs fois (avec un écart selon l’utilisation des paramètres de diffusion personnalisés ou prêts à l’emploi) afin de tenter une diffusion réussie. Les adresses qui continuent à provoquer des erreurs soft ne seront pas mises en quarantaine tant que le nombre maximum de reprises n&#39;aura pas été tenté (qui varie encore selon les paramètres).
+Les erreurs soft sont des échecs temporaires que les FAI génèrent lorsqu&#39;ils ont des difficultés à diffuser des e-mails. Les échecs de type soft feront l&#39;objet de plusieurs [reprises](#retries) (avec des variations selon l&#39;utilisation de paramètres de diffusion personnalisés ou prêts à l&#39;emploi) afin de tenter une diffusion réussie. Les adresses qui continuent à provoquer des erreurs soft ne seront pas mises en quarantaine tant que le nombre maximum de reprises n&#39;aura pas été tenté (qui varie encore selon les paramètres).
 
    Voici quelques causes courantes des erreurs soft : boîte pleine, serveur de messagerie de réception en panne, problèmes de réputation de l&#39;expéditeur
 
 Le type d&#39;erreur **ignoré** est une erreur temporaire, par exemple « Absent du bureau », ou une erreur technique, par exemple si l&#39;expéditeur est de type « postmaster ».
 
-La boucle des retours fonctionne comme les e-mails bounce : lorsqu&#39;un utilisateur qualifie un e-mail de spam, vous pouvez configurer des règles de messagerie dans Adobe Campaign pour bloquer toutes les diffusions à cet utilisateur. Les adresses de ces utilisateurs sont placées sur la liste bloquée même s&#39;ils n&#39;ont pas cliqué sur le lien de désinscription. Les adresses sont ajoutées à la fonction **NmsAddress**) de la table des quarantaines et non de (**NmsRecipient**) avec la table des destinataires **[!UICONTROL Placé sur la liste bloquée]** statut. En savoir plus sur le mécanisme de feedback loop dans la section [Guide des bonnes pratiques en matière de délivrabilité des Adobes](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#feedback-loops).
+La boucle des retours fonctionne comme les e-mails rebonds : lorsqu&#39;un utilisateur qualifie un e-mail de spam, vous pouvez configurer des règles de messagerie dans Adobe Campaign pour bloquer toutes les diffusions à cet utilisateur. Les adresses de ces utilisateurs figurent sur la liste bloquée même s&#39;ils n&#39;ont pas cliqué sur le lien de désinscription. Les adresses sont ajoutées à la table des quarantaines (**NmsAddress**) et non à la table des destinataires (**NmsRecipient**), avec le statut **[!UICONTROL Placée sur la liste bloquée]**. Apprenez-en davantage sur le mécanisme de boucle des retours dans le [guide des bonnes pratiques en matière de délivrabilité d&#39;Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#feedback-loops).
 
 ## Erreurs synchrones et asynchrones {#synchronous-and-asynchronous-errors}
 
@@ -48,7 +48,7 @@ Une diffusion de message peut échouer immédiatement. Dans ce cas, nous qualifi
 
 Ces types d&#39;erreurs sont gérés comme suit :
 
-* **Erreur synchrone**: le serveur distant contacté par le serveur de diffusion Adobe Campaign renvoie immédiatement un message d’erreur. La diffusion ne peut pas être envoyée au serveur du profil. L’agent de transfert de messagerie (MTA) détermine le type de rebond et qualifie l’erreur, puis renvoie ces informations à Campaign afin de déterminer si les adresses électroniques concernées doivent être mises en quarantaine. Voir [Qualification des e-mails bounce](#bounce-mail-qualification).
+* **Erreur synchrone** : le serveur distant contacté par le serveur de diffusion Adobe Campaign retourne immédiatement un message d&#39;erreur. L&#39;envoi de la diffusion au serveur du profil n&#39;est pas autorisé. L’agent de transfert de messagerie (MTA) détermine le type de rebond et qualifie l’erreur, puis renvoie ces informations à Campaign afin de déterminer si les adresses électroniques concernées doivent être mises en quarantaine. Voir [Qualification des e-mails bounce](#bounce-mail-qualification).
 
 * **Erreur asynchrone** : un e-mail bounce ou un SR est renvoyé plus tard par le serveur de réception. Cette erreur est qualifiée avec un libellé associé à l&#39;erreur. Les erreurs asynchrones peuvent se produire jusqu&#39;à une semaine après l&#39;envoi d&#39;une diffusion.
 
@@ -56,17 +56,17 @@ Ces types d&#39;erreurs sont gérés comme suit :
 >
 >En tant qu&#39;utilisateur Managed Services, la configuration de la boîte des e-mails bounce est réalisée par Adobe.
 
-## Qualification des e-mails bounce {#bounce-mail-qualification}
+## Qualification des mails rebonds {#bounce-mail-qualification}
 
 <!--NO LONGER WITH MOMENTUM - Rules used by Campaign to qualify delivery failures are listed in the **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** node. It is non-exhaustive, and is regularly updated by Adobe Campaign and can also be managed by the user.
 
 ![](assets/delivery-log-qualification.png)-->
 
-Actuellement, le traitement de la qualification des emails bounce dans Adobe Campaign dépend du type d’erreur :
+Actuellement, le traitement de la qualification des mails rebonds dans Adobe Campaign dépend du type d’erreur :
 
-* **Erreurs synchrones**: Le MTA détermine le type et la qualification de rebond, puis renvoie ces informations à Campaign. Les qualifications d&#39;e-mails bounce dans la table **[!UICONTROL Qualification des logs de diffusion]** ne sont plus utilisées pour les messages d&#39;erreur relatifs aux échecs des diffusions **synchrones**.
+* **Erreurs synchrones**: Le MTA détermine le type et la qualification de rebond, puis renvoie ces informations à Campaign. Les qualifications de mails rebonds dans la table **[!UICONTROL Qualification des logs de diffusion]** ne sont plus utilisées pour les messages d&#39;erreur relatifs aux échecs des diffusions **synchrones**.
 
-* **Erreurs asynchrones**: Les règles utilisées par Campaign pour qualifier les échecs de diffusion asynchrones sont répertoriées dans la variable **[!UICONTROL Administration > Campaign Management > Gestion des échecs > Qualification des logs de diffusion]** noeud . Les retours asynchrones restent qualifiés par le processus inMail grâce aux règles de **[!UICONTROL mail entrant.]** Voir à ce sujet la section [Documentation de Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target=&quot;_blank&quot;}.
+* **Erreurs asynchrones** : les règles utilisées par Campaign pour qualifier les diffusions en échec asynchrones sont répertoriées dans le nœud **[!UICONTROL Administration > Gestion de campagne > Gestion des échecs > Qualification des logs de diffusion]**. Les retours asynchrones restent qualifiés par le processus inMail grâce aux règles de **[!UICONTROL mail entrant.]** Pour en savoir plus à ce sujet, consultez la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr#bounce-mail-qualification){target=&quot;_blank&quot;}. 
 
 <!--NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
 
@@ -95,7 +95,7 @@ Bounce mails can have the following qualification status:
 
 ## Gestion des reprises {#retries}
 
-Si la diffusion d’un message échoue suite à une erreur temporaire (**Soft** ou **Ignoré**), l&#39;envoi de nouvelles tentatives de campagne. Ces reprises peuvent être effectuées jusqu&#39;à la fin de la durée de diffusion.
+Si la diffusion d&#39;un message échoue suite à une erreur temporaire (**Soft** ou **Ignoré**), Campaign réalise une nouvelle tentative d&#39;envoi. Ces reprises peuvent être effectuées jusqu&#39;à la fin de la durée de diffusion.
 
 Les reprises des soft bounces et la durée entre elles sont déterminées par le MTA en fonction du type et de la gravité des réponses des bounces revenant du domaine d&#39;email du message.
 
@@ -111,7 +111,7 @@ Par exemple, si la période de validité est définie sur la valeur par défaut 
 
 Une fois qu&#39;un message se trouve dans la file d&#39;attente du MTA depuis 3,5 jours et qu&#39;il n&#39;a pas été diffusé, il expire et son statut est mis à jour à partir de **[!UICONTROL Envoyé]** to **[!UICONTROL En échec]** dans les logs de diffusion.
 
-Pour plus d’informations sur la période de validité, voir la section [Documentation de Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target=&quot;_blank&quot;}.
+Pour plus d’informations sur la période de validité, consultez la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#defining-validity-period){target=&quot;_blank&quot;}.
 
 
 ## Types d&#39;erreur e-mail {#email-error-types}
