@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1176'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Vous pouvez accéder aux comptes externes à partir de l&#39;**[!UICONTROL Explo
 
 >[!CAUTION]
 >
->Dans le contexte d’un [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), une **[!UICONTROL FDA complète]** (ffda) le compte externe gère la connexion entre la base de données locale Campaign et la base de données Cloud ([!DNL Snowflake]).
+>Dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), un compte externe **[!UICONTROL Full FDA]** (ffda) gère la connexion entre la base de données locale Campaign et la base de données Cloud ([!DNL Snowflake]).
 ></br>En tant qu&#39;utilisateur Managed Cloud Services, ce compte externe est configuré pour votre instance par Adobe. Il ne doit pas être modifié.
 
 ## Comptes externes spécifiques à Campaign
@@ -38,7 +38,7 @@ Adobe Campaign utilise les comptes techniques suivants pour activer et exécute
 
 >[!NOTE]
 >
->L&#39;authentification OAuth 2.0 de Microsoft Exchange Online pour la fonctionnalité POP3 est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à la section [cette section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>L&#39;authentification OAuth 2.0 de Microsoft Exchange Online pour la fonctionnalité POP3 est disponible à partir de Campaign v8.3. Pour vérifier votre version, consultez [cette section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
 Le compte externe **Mails rebonds** spécifie le compte externe POP3 à utiliser pour se connecter au service de messagerie. Tous les serveurs configurés pour l&#39;accès POP3 peuvent être utilisés pour recevoir les retours d&#39;e-mail.
 
@@ -71,33 +71,33 @@ Le compte externe **Mails rebonds** spécifie le compte externe POP3 à utiliser
 
 * **[!UICONTROL Fonction]**
 
-   Email entrant ou routeur SOAP
+   E-mail entrant ou routeur SOAP
 
 ![](assets/bounce_external_2.png)
 
 >[!IMPORTANT]
 >
->Avant de configurer votre compte externe POP3 à l’aide de Microsoft OAuth 2.0, vous devez d’abord enregistrer votre application sur le portail Azure. Pour en savoir plus à ce sujet, consultez cette [page](https://docs.microsoft.com/fr-fr/azure/active-directory/develop/quickstart-register-app).
+>Avant de configurer votre compte externe POP3 à l’aide de Microsoft OAuth 2.0, vous devez enregistrer votre application sur le portail Azure. Pour en savoir plus à ce sujet, consultez cette [page](https://docs.microsoft.com/fr-fr/azure/active-directory/develop/quickstart-register-app).
 
-Pour configurer un environnement externe POP3 à l’aide de Microsoft OAuth 2.0, cochez la case **[!UICONTROL Microsoft OAuth 2.0]** et renseignez les champs suivants :
+Pour configurer un environnement externe POP3 à l’aide de Microsoft OAuth 2.0, cochez la case **[!UICONTROL Microsoft OAuth 2.0]** et renseignez les champs suivants :
 
 * **[!UICONTROL Client Azure]**
 
-   L’ID Azure (ou l’ID de répertoire (client) se trouve dans la variable **Essentials** menu déroulant de la présentation de votre application dans le portail Azure.
+   L’ID Azure (ou l’ID de répertoire (client)} se trouve dans le menu déroulant **Essentiels** de la présentation de votre application dans le portail Azure.
 
-* **[!UICONTROL ID client Azure]**
+* **[!UICONTROL Identifiant de client Azure]**
 
-   L’ID client (ou l’ID d’application (client) se trouve dans la variable **Essentials** menu déroulant de la présentation de votre application dans le portail Azure.
+   L’ID client (ou l’ID d’application (client)) se trouve dans le menu déroulant **Essentiels** de la présentation de votre application dans le portail Azure.
 
 * **[!UICONTROL Secret client Azure]**:
 
-   L’ID de secret client se trouve dans la variable **secrets client** de la colonne **Certificats et secrets** de votre application dans le portail Azure.
+   L’ID de secret client se trouve dans la variable **Secrets client** du menu **Certificats et secrets** de votre application dans le portail Azure.
 
 * **[!UICONTROL URL de redirection Azure]**:
 
-   L’URL de redirection se trouve dans la variable **Authentification** de votre application dans le portail Azure. Elle doit se terminer par la syntaxe suivante : `nl/jsp/oauth.jsp`, par exemple : `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
+   L’URL de redirection se trouve dans le menu **Authentification** de votre application dans le portail Azure. Elle doit se terminer par la syntaxe suivante : `nl/jsp/oauth.jsp`, par exemple `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
 
-Après avoir saisi les différentes informations d’identification, vous pouvez cliquer sur **[!UICONTROL Configuration de la connexion]** pour terminer la configuration de votre compte externe.
+Après avoir saisi les différentes informations d’identification, vous pouvez cliquer sur **[!UICONTROL Configurer la connexion]** pour terminer la configuration de votre compte externe.
 
 ### Routage  {#routing}
 
@@ -159,7 +159,7 @@ Dans le contexte des messages transactionnels, les instances d&#39;exécution so
 
    Le compte externe **[!UICONTROL Salesforce CRM]** vous permet d’importer et d’exporter des données Salesforce vers Adobe Campaign.
 
-   ![](../assets/do-not-localize/glass.png) En savoir plus sur l’intégration CRM Adobe Campaign - Salesforce.com dans [cette page](../connect/ac-sfdc.md).
+   ![](../assets/do-not-localize/glass.png)Pour en savoir plus sur l&#39;intégration Adobe Campaign - Salesforce.com CRM, [consultez cette page](../connect/ac-sfdc.md).
 
 ## Comptes externes de transfert de données
 
