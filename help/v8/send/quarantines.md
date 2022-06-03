@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1143'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 95%
 
 Adobe Campaign gère une liste d&#39;adresses en quarantaine pour les canaux en ligne (e-mail, SMS, notification push). Certains fournisseurs d&#39;accès à internet considèrent automatiquement les e-mails comme du spam si le taux d&#39;adresses non valides est trop élevé. La quarantaine permet donc d&#39;éviter d&#39;être ajouté à une liste bloquée par ces fournisseurs. De plus, elle réduit les coûts d&#39;envoi des SMS en excluant les numéros de téléphone erronés des diffusions.
 
-Lors de la mise en quarantaine de leur adresse ou numéro de téléphone, les destinataires sont exclus de la cible lors de l&#39;analyse de la diffusion : vous ne pourrez pas envoyer de messages marketing, y compris des e-mails de workflow automatisés, à ces contacts. Si ces adresses en quarantaine sont également présentes dans les listes, elles seront exclues lors de l&#39;envoi vers ces listes. Une adresse email peut être mise en quarantaine, par exemple, lorsque la boîte de messagerie est pleine, si l’adresse n’existe pas ou si le serveur de messagerie n’est pas disponible.
+Lors de la mise en quarantaine de leur adresse ou numéro de téléphone, les destinataires sont exclus de la cible lors de l&#39;analyse de la diffusion : vous ne pourrez pas envoyer de messages marketing, y compris des e-mails de workflow automatisés, à ces contacts. Si ces adresses en quarantaine sont également présentes dans les listes, elles seront exclues lors de l&#39;envoi vers ces listes. Une adresse e-mail peut être mise en quarantaine, par exemple, lorsque la boîte de réception est pleine, si l&#39;adresse n&#39;existe pas ou si le serveur de messagerie n&#39;est pas disponible.
 
 <!--For more on best practices to secure and optimize your deliveries, refer to [this page](delivery-best-practices.md).-->
 
@@ -32,12 +32,12 @@ D&#39;un autre côté, les profils peuvent se trouver dans la **liste bloquée**
 
 ## Pourquoi un e-mail, un numéro de téléphone ou un appareil est-il mis en quarantaine ? {#quarantine-reason}
 
-Adobe Campaign gère les quarantaines en fonction du type d&#39;échec de diffusion et de sa raison. Elles sont affectées pendant la qualification des messages d&#39;erreur. En savoir plus sur la gestion des échecs de diffusion [sur cette page](delivery-failures.md).
+Adobe Campaign gère les quarantaines en fonction du type d&#39;échec de diffusion et de sa raison. Elles sont affectées pendant la qualification des messages d&#39;erreur. Apprenez-en davantage sur la gestion des échecs de diffusion [dans cette page](delivery-failures.md).
 
 Deux types ou erreurs peuvent être capturés :
 
 * **Erreur de type Hard** : l&#39;adresse e-mail, le numéro de téléphone ou l&#39;appareil est immédiatement mis en quarantaine.
-* **Erreur de type Soft** : les erreurs soft incrémentent un compteur d&#39;erreurs et peuvent mettre en quarantaine un e-mail, un numéro de téléphone ou un jeton d&#39;appareil. Exécution de la campagne [reprises](delivery-failures.md#retries): lorsque le compteur d’erreurs atteint le seuil limite, l’adresse, le numéro de téléphone ou le jeton de l’appareil est mis en quarantaine. [En savoir plus](delivery-failures.md#retries).
+* **Erreur de type Soft** : les erreurs soft incrémentent un compteur d&#39;erreurs et peuvent mettre en quarantaine un e-mail, un numéro de téléphone ou un jeton d&#39;appareil. Campaign effectue des [reprises](delivery-failures.md#retries) : lorsque le compteur d&#39;erreurs atteint le seuil limite, l&#39;adresse, le numéro de téléphone ou le jeton de l&#39;appareil est mis en quarantaine. [En savoir plus](delivery-failures.md#retries).
 
 Dans la liste des adresses en quarantaine, le champ **[!UICONTROL Raison de l&#39;erreur]** indique pourquoi l&#39;adresse sélectionnée a été mise en quarantaine. [En savoir plus](#identifying-quarantined-addresses-for-the-entire-platform).
 
