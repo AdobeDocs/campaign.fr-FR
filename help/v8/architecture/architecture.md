@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 0fa0db62f45097755bebcbf434614c4c835d886a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '606'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 81%
 
 Campaign est disponible sous forme d&#39;instances individuelles, où chaque instance représente un environnement Campaign complet.
 
-Deux types d&#39;environnements sont disponibles avec le Cloud Service Campaign :
+Deux types d&#39;environnements sont disponibles avec le Cloud Service de Campaign :
 
 * **Environnement de production** : héberge les applications destinées aux professionnels.
 
-* **Environnement hors production**: utilisés pour divers tests de performance et de qualité avant que les modifications apportées à l’application ne soient transmises à l’environnement de production.
+* **Environnement de non-production** : utilisé pour divers tests de performances et de qualité avant que les modifications apportées à l&#39;application ne soient envoyées à l&#39;environnement de production.
 
 Vous pouvez exporter et importer des packages d&#39;un environnement à l&#39;autre.
 
@@ -30,9 +30,9 @@ Vous pouvez exporter et importer des packages d&#39;un environnement à l&#39;au
 
 ## Modèle de déploiement{#ac-deployment}
 
-Dans son [Déploiement Entreprise (FFDA)](enterprise-deployment.md), [!DNL Adobe Campaign] v8 fonctionne avec deux bases de données : un local [!DNL Campaign] base de données pour la messagerie en temps réel et les requêtes unitaires de l’interface utilisateur, et écrire via les API et un Cloud [!DNL Snowflake] base de données pour l&#39;exécution des opérations, les requêtes par lots et l&#39;exécution des workflows.
+Dans son [déploiement Enterprise (FFDA)](enterprise-deployment.md), [!DNL Adobe Campaign] v8 fonctionne avec deux bases de données : une base de données [!DNL Campaign] locale pour la messagerie en temps réel de l&#39;interface utilisateur et les requêtes et écritures unitaires à travers les API, et une base de données [!DNL Snowflake] Cloud pour l&#39;exécution de campagnes, les requêtes par lots et l&#39;exécution de workflows.
 
-Campaign v8 Enterprise apporte le concept de **Accès complet aux données fédérées** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud. Avec cette nouvelle architecture, le déploiement de Campaign v8 Enterprise (FFDA) simplifie la gestion des données : aucun index n’est requis sur la base de données cloud. Il vous suffit de créer les tables et de copier les données pour démarrer. La technologie de base de données cloud ne nécessite pas de maintenance spécifique pour garantir le niveau attendu de performances.
+Campaign v8 Enterprise présente le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud. Avec cette nouvelle architecture, le déploiement Campaign v8 Enterprise (FFDA) simplifie la gestion des données : aucun index n&#39;est requis sur la base de données cloud. Il vous suffit de créer les tables et de copier les données pour démarrer. La technologie de base de données cloud ne nécessite pas de maintenance spécifique pour garantir le niveau attendu de performances.
 
 
 
