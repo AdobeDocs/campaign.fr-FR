@@ -6,19 +6,19 @@ role: Data Engineer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
 source-git-commit: 0fa0db62f45097755bebcbf434614c4c835d886a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1019'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
-# [!DNL Campaign] Déploiement FFDA{#gs-ac-ffda}
+# Déploiement FFDA [!DNL Campaign]{#gs-ac-ffda}
 
-En tirant parti [[!DNL Snowflake]](https://www.snowflake.com/), une technologie de base de données cloud, le déploiement d’Adobe Campaign Enterprise Full Federated Access (FFDA) améliore considérablement son échelle et sa vitesse, avec la possibilité de gérer un nombre plus important de profils clients, ainsi que des taux de remise et des transactions beaucoup plus élevés par heure.
+Grâce à l&#39;utilisation de [[!DNL Snowflake]](https://www.snowflake.com/), une technologie de base de données cloud, Full Federated Access (FFDA) Adobe Campaign Enterprise améliore considérablement sa mise à l&#39;échelle et sa vitesse, ainsi que la capacité à gérer un nombre plus important de profils client, ainsi que des taux de diffusion et de transactions beaucoup plus élevés par heure.
 
 ## Avantages {#ffda-benefits}
 
-Campaign v8 Enterprise (FFDA) apporte une échelle de bout en bout à n’importe quelle étape du processus, du ciblage au reporting final :
+Campaign v8 Enterprise (FFDA) fournit une mise à l&#39;échelle de bout en bout à n&#39;importe quelle étape du processus, depuis le ciblage au reporting final :
 
 * Mise à l&#39;échelle du volume de données que vous pouvez gérer (jusqu&#39;à 8 To)
 * Mise à l&#39;échelle des performances de requêtes pour la segmentation et le ciblage ainsi que pour l&#39;ingestion et la sortie des données
@@ -36,9 +36,9 @@ Tout schéma prédéfini ou toute table intégrée devant être déplacé ou ré
 
 ## Architecture de Campaign Enterprise (FFDA){#ffda-archi}
 
-Dans un [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), [!DNL Adobe Campaign] v8 fonctionne avec deux bases de données : un local [!DNL Campaign] base de données pour la messagerie en temps réel et les requêtes unitaires de l’interface utilisateur, et écrire via les API et un Cloud [!DNL Snowflake] base de données pour l&#39;exécution des opérations, les requêtes par lots et l&#39;exécution des workflows.
+Dans un [déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), [!DNL Adobe Campaign] v8 fonctionne avec deux bases de données : une base de données [!DNL Campaign] locale pour la messagerie en temps réel de l&#39;interface utilisateur et les requêtes et écritures unitaires à travers les API, et une base de données [!DNL Snowflake] Cloud pour l&#39;exécution de campagnes, les requêtes par lots et l&#39;exécution de workflows.
 
-Campaign v8 Enterprise apporte le concept de **Accès complet aux données fédérées** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud.
+Campaign v8 Enterprise présente le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud.
 
 Des API spécifiques sont disponibles pour gérer les données entre la base de données locale et la base de données cloud. Découvrez le fonctionnement de ces nouvelles API et comment les utiliser sur [cette page](new-apis.md).
 
@@ -49,32 +49,32 @@ La communication générale entre les serveurs et les processus est réalisée c
 * Les modules de diffusion et de gestion des mails rebonds sont désactivés sur l&#39;instance.
 * L&#39;application est configurée pour déléguer les envois des messages à un serveur de mid-sourcing distant via des appels SOAP (sur HTTP ou HTTPS).
 
-Le [!DNL Snowflake] la base de données côté marketing permet :
+La base de données [!DNL Snowflake] côté marketing permet d’effectuer les opérations suivantes :
 
-* Stocker toutes les données client : profils, données personnalisées telles que transactions, produits, emplacements, etc.
-* Stockez tous les événements et données de comportement générés ou collectés par Campaign, tels que les logs de diffusion, les logs de tracking, les enregistrements push, etc.
-* Stocker tous les agrégats de données de l’exemple ci-dessus.
-* Stocker une copie (h+1) des tables de référence (comme les diffusions, les énumérations, les pays, etc.) qui sont utilisés dans les workflows, les campagnes et les rapports.
-* Exécution de tous les processus et charges de travail par lots
-
-
-La base de données PostgreSQL sur l&#39;instance marketing est utilisée pour :
-
-* Exécutez certaines charges de travail, telles que les API à faible volume.
-* Stockez toutes les données de Campaign, y compris les paramètres de diffusion et de campagne, les définitions de workflow et de service.
-* Stocker toutes les tables de référence intégrées (énumérations, pays, etc.) qui sont répliqués vers [!DNL Snowflake].
-
-   Cependant, vous ne pouvez pas :
-   * créer des personnalisations pour les données client ; par exemple, ne créez pas de table domestique dans PostgreSQL, mais uniquement dans Snowflake.
-   * stocker les logs de diffusion, les logs de tracking, etc. sur la dimension de ciblage FFDA.
-   * stocker un grand volume de données ;
+* Stocker toutes les données client : les profils, les données personnalisées comme les transactions, les produits, les emplacements, etc.
+* Stocker l’ensemble des événements et des données de comportement générés ou collectés par Campaign, tels que les logs de diffusion, les logs de tracking, les enregistrements push, etc.
+* Stocker tous les agrégats de données de l’exemple ci-dessus
+* Stocker une copie (h+1) des tables de référence (comme les diffusions, les énumérations, les pays, etc.) qui sont utilisées dans les workflows, les campagnes et les rapports
+* Exécution de tous les processus et workloads par lots
 
 
-La base de données PostgreSQL sur l&#39;instance de mid-sourcing est utilisée pour :
+La base de données PostgreSQL sur l&#39;instance marketing est utilisée pour :
 
-* Exécutez les diffusions par lots et en temps réel (RT).
-* Envoi des logs de diffusion et de tracking : notez que les identifiants des logs de diffusion et de tracking sont des UUID et non des identifiants 32 bits.
-* collecter et stocker les données de suivi ;
+* Exécuter certaines workloads, telles que les API à faible volume
+* Stocker toutes les données de Campaign, y compris les paramètres de diffusion et de campagne, les définitions de workflow et de service
+* Stocker toutes les tables de référence intégrées (énumérations, pays, etc.) qui sont répliqués vers [!DNL Snowflake]
+
+   Cependant, vous ne pouvez pas :
+   * Créer des personnalisations pour les données client ; par exemple, ne créez pas de table domestique dans PostgreSQL, mais uniquement dans Snowflake
+   * Stocker les logs de diffusion, les logs de tracking, etc. sur la dimension de ciblage FFDA
+   * Stocker un grand volume de données
+
+
+La base de données PostgreSQL sur l&#39;instance de mid-sourcing est utilisée pour :
+
+* Exécuter les diffusions par lots et en temps réel (RT)
+* Envoyer des logs de diffusion et de tracking : notez que les identifiants des logs de diffusion et de tracking sont des UUID et non des identifiants 32 bits
+* Collecter et stocker les données de suivi
 
 
 ## Impacts{#ffda-impacts}
