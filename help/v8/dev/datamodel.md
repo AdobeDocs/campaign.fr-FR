@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '655'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ Vous pouvez également utiliser une autre table des destinataires, mieux adapté
 
 ## Base de données cloud et tables Campaign
 
-Pour une meilleure compréhension de la gestion des tables dans Campaign v8, notez que, dans le cadre d&#39;une [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), les tables sont répliquées entre Campaign et sa base de données Cloud Snowflake.
+Pour une meilleure compréhension de la gestion des tables dans Campaign v8, notez que, dans le cadre d&#39;une [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), les tables sont répliquées entre Campaign et sa base de données Cloud Snowflake.
 
 ![](../assets/do-not-localize/glass.png) Pour en savoir plus sur la stratégie et les mécanismes de réplication, consultez [cette section](../architecture/replication.md).
 
