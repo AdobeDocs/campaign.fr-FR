@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
 source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3061'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Une diffusion de message peut échouer immédiatement. Dans ce cas, nous qualifi
 
 Ces types d&#39;erreurs sont gérés comme suit :
 
-* **Erreur synchrone** : le serveur distant contacté par le serveur de diffusion Adobe Campaign retourne immédiatement un message d&#39;erreur. L&#39;envoi de la diffusion au serveur du profil n&#39;est pas autorisé. L’agent de transfert de messagerie (MTA) détermine le type de rebond et qualifie l’erreur, puis renvoie ces informations à Campaign afin de déterminer si les adresses électroniques concernées doivent être mises en quarantaine. Voir [Qualification des e-mails bounce](#bounce-mail-qualification).
+* **Erreur synchrone** : le serveur distant contacté par le serveur de diffusion Adobe Campaign retourne immédiatement un message d&#39;erreur. L&#39;envoi de la diffusion au serveur du profil n&#39;est pas autorisé. Le MTA (Mail Transfer Agent) détermine le type de rebond et qualifie l’erreur, puis renvoie ces informations à Campaign afin de déterminer si les adresses e-mail concernées doivent être mises en quarantaine. Voir [Qualification des e-mails bounce](#bounce-mail-qualification).
 
 * **Erreur asynchrone** : un e-mail bounce ou un SR est renvoyé plus tard par le serveur de réception. Cette erreur est qualifiée avec un libellé associé à l&#39;erreur. Les erreurs asynchrones peuvent se produire jusqu&#39;à une semaine après l&#39;envoi d&#39;une diffusion.
 
@@ -64,7 +64,7 @@ Ces types d&#39;erreurs sont gérés comme suit :
 
 Actuellement, le traitement de la qualification des mails rebonds dans Adobe Campaign dépend du type d’erreur :
 
-* **Erreurs synchrones**: Le MTA détermine le type et la qualification de rebond, puis renvoie ces informations à Campaign. Les qualifications de mails rebonds dans la table **[!UICONTROL Qualification des logs de diffusion]** ne sont plus utilisées pour les messages d&#39;erreur relatifs aux échecs des diffusions **synchrones**.
+* **Erreurs synchrones** : le MTA détermine le type et la qualification du rebond, puis renvoie ces informations à Campaign. Les qualifications de mails rebonds dans la table **[!UICONTROL Qualification des logs de diffusion]** ne sont plus utilisées pour les messages d&#39;erreur relatifs aux échecs des diffusions **synchrones**.
 
 * **Erreurs asynchrones** : les règles utilisées par Campaign pour qualifier les diffusions en échec asynchrones sont répertoriées dans le nœud **[!UICONTROL Administration > Gestion de campagne > Gestion des échecs > Qualification des logs de diffusion]**. Les retours asynchrones restent qualifiés par le processus inMail grâce aux règles de **[!UICONTROL mail entrant.]** Pour en savoir plus à ce sujet, consultez la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr#bounce-mail-qualification){target=&quot;_blank&quot;}. 
 
@@ -97,7 +97,7 @@ Bounce mails can have the following qualification status:
 
 Si la diffusion d&#39;un message échoue suite à une erreur temporaire (**Soft** ou **Ignoré**), Campaign réalise une nouvelle tentative d&#39;envoi. Ces reprises peuvent être effectuées jusqu&#39;à la fin de la durée de diffusion.
 
-Les reprises des soft bounces et la durée entre elles sont déterminées par le MTA en fonction du type et de la gravité des réponses des bounces revenant du domaine d&#39;email du message.
+Les reprises des soft bounces et l’intervalle qui les sépare sont déterminés par le MTA en fonction du type et de la gravité des réponses des bounces provenant du domaine de messagerie du message.
 
 >[!NOTE]
 >
@@ -105,11 +105,11 @@ Les reprises des soft bounces et la durée entre elles sont déterminées par le
 
 ## Période de validité
 
-Le paramètre de période de validité dans vos diffusions Campaign est limité à **3,5 jours ou moins**. Pour une diffusion, si vous définissez une valeur supérieure à 3,5 jours dans Campaign, elle ne sera pas prise en compte.
+Le paramètre de la période de validité dans vos diffusions Campaign est limité à **3,5 jours ou moins**. Si vous définissez une valeur supérieure à 3,5 jours pour une diffusion dans Campaign, elle ne sera pas prise en compte.
 
-Par exemple, si la période de validité est définie sur la valeur par défaut de 5 jours dans Campaign, les messages soft rebonds seront placés dans la file d’attente des reprises du MTA et seront repris pendant seulement 3,5 jours à partir du moment où ce message a atteint le MTA. Dans ce cas, la valeur définie dans Campaign ne sera pas utilisée.
+Par exemple, si la période de validité est définie sur la valeur par défaut de 5 jours dans Campaign, les messages soft bounce seront placés dans la file d’attente de reprises du MTA et ne feront l’objet d’une reprise que pendant 3,5 jours à compter du moment où ils ont atteint le MTA. Dans ce cas, la valeur définie dans Campaign ne sera pas utilisée.
 
-Une fois qu&#39;un message se trouve dans la file d&#39;attente du MTA depuis 3,5 jours et qu&#39;il n&#39;a pas été diffusé, il expire et son statut est mis à jour à partir de **[!UICONTROL Envoyé]** to **[!UICONTROL En échec]** dans les logs de diffusion.
+Une fois qu’un message figure dans la file d’attente du MTA depuis 3,5 jours et qu’il n’a pas été diffusé, il expire et son statut est mis à jour de **[!UICONTROL Envoi]** à **[!UICONTROL Échec]** dans les logs de diffusion.
 
 Pour plus d’informations sur la période de validité, consultez la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#defining-validity-period){target=&quot;_blank&quot;}.
 
@@ -378,7 +378,7 @@ Le mécanisme de mise en quarantaine d&#39;Android V2 utilise le même processu
  <tbody> 
   <tr> 
    <td> <strong>Scénario</strong><br /> </td> 
-   <td> <strong>État</strong><br /> </td> 
+   <td> <strong>Status</strong><br /> </td> 
    <td> <strong>Message de l'erreur</strong><br /> </td> 
    <td> <strong>Type de l'échec</strong><br /> </td> 
    <td> <strong>Raison de l'échec</strong><br /> </td> 
@@ -593,7 +593,7 @@ Les spécificités du canal SMS sont énumérées ci-dessous.
  <tbody> 
   <tr> 
    <td> <strong>Scénario</strong><br /> </td> 
-   <td> <strong>État</strong><br /> </td> 
+   <td> <strong>Status</strong><br /> </td> 
    <td> <strong>Message de l'erreur</strong><br /> </td> 
    <td> <strong>Type de l'échec</strong><br /> </td> 
    <td> <strong>Raison de l'échec</strong><br /> </td> 
