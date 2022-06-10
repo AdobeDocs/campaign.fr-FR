@@ -78,8 +78,7 @@ Dans Adobe Campaign, la signature de l’authentification des e-mails DKIM est e
 
 En savoir plus sur DKIM dans le [Guide Adobe des bonnes pratiques en matière de délivrabilité ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#authentication){target=&quot;_blank&quot;}.
 
-## Service de retour d&#39;e-mail
- {#email-feedback-service}
+## Service de retour d&#39;e-mail {#email-feedback-service}
 
 Grâce à la fonctionnalité Service de retour d’e-mail (EFS), le statut de chaque e-mail est signalé avec précision, car les retours sont capturés directement depuis le MTA.
 
