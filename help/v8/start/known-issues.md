@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: e82ae1158926fb6335380626158089c6394377a1
+source-git-commit: 2705e9b23f9f8a61f799381434f7e94a226de1b9
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '421'
 ht-degree: 3%
 
 ---
@@ -38,7 +38,7 @@ Le **Modifier la source de données** l’activité échoue lors du transfert de
 
 ### Message de l&#39;erreur{#issue-1-error}
 
-```
+```sql
 04/13/2022 10:00:18 AM              Executing change data source 'Ok' (step 'Change Data Source')
 04/13/2022 10:00:18 AM              Starting 1 connection(s) on pool 'nms:extAccount:ffda tractorsupply_mkt_stage8' (Snowflake, server='adobe-acc_tractorsupply_us_west_2_aws.snowflakecomputing.com', login='tractorsupply_stage8_MKT:tractorsupply_stage8')
 04/13/2022 10:00:26 AM              ODB-240000 ODBC error: {*}Numeric value '{*}******{*}{{*}}' is not recognized\{*}   File 'wkf1285541_13_1_0_47504750#458318uploadPart0.chunk.gz', line 1, character 10140   Row 279, column "WKF1285541_13_1_0"["BICUST_ID":1]   If you would like to continue loading when a
@@ -61,9 +61,9 @@ Référence : NEO-45549
 
 ### Description{#issue-2-desc}
 
-Lors de l’injection de données dans la base de données cloud Snowflake avec une activité de chargement de campagne, le processus peut échouer en raison d’une barre oblique inverse présente dans le fichier source. La chaîne n’est pas placée dans une séquence d’échappement et les données ne sont pas traitées correctement sur Snowflake.
+Lors de l’injection de données dans la base de données cloud Snowflake avec une activité de chargement de Campaign, le processus échoue lorsqu’une barre oblique inverse est présente dans le fichier source. La chaîne n’est pas placée dans une séquence d’échappement et les données ne sont pas traitées correctement sur Snowflake.
 
-Ce problème se produit uniquement si la barre oblique inverse se situe à la fin de la chaîne, par exemple : &quot;Barker\&quot;.
+Ce problème se produit uniquement si la barre oblique inverse se trouve à la fin de la chaîne, par exemple : `Barker\`.
 
 
 ### Étapes de production{#issue-2-repro}
@@ -76,7 +76,7 @@ Ce problème se produit uniquement si la barre oblique inverse se situe à la fi
 
 ### Message de l&#39;erreur{#issue-2-error}
 
-```
+```sql
 Error:
 04/21/2022 4:01:58 PM     loading when an error is encountered, use other values such as 'SKIP_FILE' or 'CONTINUE' for the ON_ERROR option. For more information on loading options, please run 'info loading_data' in a SQL client. SQLState: 22000
 04/21/2022 4:01:58 PM    ODB-240000 ODBC error: String '100110668547' is too long and would be truncated   File 'wkf1656797_21_1_3057430574#458516uploadPart0.chunk.gz', line 1, character 0   Row 90058, column "WKF1656797_21_1"["SCARRIER_ROUTE":13]   If you would like to continue
@@ -84,7 +84,7 @@ Error:
 
 ### Solution{#issue-2-workaround}
 
-Pour pallier ce problème, exportez les fichiers avec des guillemets doubles autour des valeurs telles que &quot;Barker&quot; et incluez une option de format de fichier FIELD_OPTIONALLY_ENCLOSED_BY = &#39;&quot;&#39;.
+Pour pallier ce problème, exportez les fichiers avec des guillemets doubles autour des valeurs problématiques (comme `Barker\`) et inclure une option de format de fichier ; `FIELD_OPTIONALLY_ENCLOSED_BY = '"'`.
 
 ### Référence interne{#issue-2-ref}
 
