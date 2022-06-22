@@ -32,7 +32,7 @@ _18 mai 2022_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Avec iOS 15, Apple a ajouté une notion de notification sensible qui permet au développeur de l’application de contourner le mode Focus lorsqu’une notification est considérée comme sensible et doit atteindre l’utilisateur en temps réel.</p>
+<td> <p>Avec iOS 15, Apple a ajouté une notion de notification urgente qui permet au développeur de l’application de contourner le mode Focus lorsqu’une notification est considérée comme urgente et doit atteindre l’utilisateur en temps réel.</p>
 <p>Pour plus d’informations, consultez la <a href="../send/push.md#send-notifications-on-ios">documentation détaillée</a>.</p>
 </td> 
 </tr> 
