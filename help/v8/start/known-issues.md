@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 1b88ca57858efbfec6467452677620d59e9c9e32
+source-git-commit: fe425f9309af31a13b52695b103d530a6b89e3b1
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '433'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ Cette page répertorie les problèmes connus identifiés dans la variable **dern
 >
 >Adobe publie cette liste de problèmes connus à sa propre discrétion. Elle est basée sur le nombre de rapports client, la gravité et la disponibilité de la solution. Si un problème que vous rencontrez n’est pas répertorié, il se peut qu’il ne corresponde pas aux critères de publication sur cette page.
 
-## Modification du problème de l’activité Source de données {#issue-1}
+## Modification du problème de l’activité Source de données #1 {#issue-1}
 
 ### Description{#issue-1-desc}
 
@@ -57,7 +57,7 @@ Référence : NEO-45549
 
 
 
-## Échec de l’activité Modifier la source de données en raison d’une barre oblique inverse {#issue-2}
+## Modification du problème de l’activité Source de données #2 {#issue-2}
 
 ### Description{#issue-2-desc}
 
