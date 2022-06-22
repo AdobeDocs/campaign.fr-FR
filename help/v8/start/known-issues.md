@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 2705e9b23f9f8a61f799381434f7e94a226de1b9
+source-git-commit: 1b88ca57858efbfec6467452677620d59e9c9e32
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '437'
 ht-degree: 3%
 
 ---
@@ -57,11 +57,11 @@ Référence : NEO-45549
 
 
 
-## Échec de l’activité de chargement (fichier) en raison d’une barre oblique inverse {#issue-2}
+## Échec de l’activité Modifier la source de données en raison d’une barre oblique inverse {#issue-2}
 
 ### Description{#issue-2-desc}
 
-Lors de l’injection de données dans la base de données cloud Snowflake avec une activité de chargement de Campaign, le processus échoue lorsqu’une barre oblique inverse est présente dans le fichier source. La chaîne n’est pas placée dans une séquence d’échappement et les données ne sont pas traitées correctement sur Snowflake.
+Lors de l’injection de données dans la base de données cloud Snowflake avec une campagne **Requête** et un **Modifier la source de données** , le processus échoue lorsqu’une barre oblique inverse est présente dans les données. La chaîne source n’est pas placée dans une séquence d’échappement et les données ne sont pas traitées correctement sur Snowflake.
 
 Ce problème se produit uniquement si la barre oblique inverse se trouve à la fin de la chaîne, par exemple : `Barker\`.
 
@@ -69,8 +69,9 @@ Ce problème se produit uniquement si la barre oblique inverse se trouve à la f
 ### Étapes de production{#issue-2-repro}
 
 1. Connectez-vous à la console cliente et créez un workflow.
-1. Ajouter un **Chargement (fichier)** et configurez-la.
-1. Sélectionnez un fichier local avec les caractéristiques décrites ci-dessus.
+1. Ajouter un **Requête** et configurez-la.
+1. Sélectionnez les données avec les caractéristiques décrites ci-dessus.
+1. Ajouter un **Modifier la source de données** et configurez-la pour sélectionner la base de données cloud de Snowflake.
 1. Exécutez le workflow et vérifiez les logs du workflow pour voir l’erreur.
 
 
