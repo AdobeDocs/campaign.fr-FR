@@ -6,10 +6,10 @@ role: Data Engineer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 0d1d20f9692ffa7b7ea7a8fb1161ebd19f533bab
+source-git-commit: 2c9455a09d6b557d525b1af5da9374a1d59201d7
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 3%
+source-wordcount: '368'
+ht-degree: 5%
 
 ---
 
@@ -22,21 +22,22 @@ Cette page répertorie les problèmes connus identifiés dans la variable **dern
 >
 >Adobe publie cette liste de problèmes connus à sa propre discrétion. Elle est basée sur le nombre de rapports client, la gravité et la disponibilité de la solution. Si un problème que vous rencontrez n’est pas répertorié, il se peut qu’il ne corresponde pas aux critères de publication sur cette page.
 
-## Modification du problème de l’activité Source de données #1 {#issue-1}
+<!--
+## Change Data Source activity issue #1 {#issue-1}
 
 ### Description{#issue-1-desc}
 
-Le **Modifier la source de données** l’activité échoue lors du transfert des données de la base de données locale Campaign vers la base de données cloud Snowflake. Lors du changement de direction, l’activité peut générer des problèmes.
+The **Change Data Source** activity is failing when transfering data from Campaign local database to Snowflake cloud database. When switching directions, the activity can generate issues.
 
-### Étapes de production{#issue-1-repro}
+### Reproduction steps{#issue-1-repro}
 
-1. Connectez-vous à la console cliente et créez un workflow.
-1. Ajouter un **Requête** activité et une **Modifier la source de données** activité.
-1. Définissez une requête sur la variable **email**, qui est une chaîne.
-1. Exécutez le workflow et cliquez avec le bouton droit sur la transition pour visualiser la population : les enregistrements d&#39;email sont remplacés par `****`.
-1. Vérifiez les logs de workflow : la valeur **Modifier la source de données** activity interprète ces enregistrements comme des valeurs numériques.
+1. Connect to the client console and create a workflow.
+1. Add a **Query** activity and a **Change Data Source** activity.
+1. Define a query on the **email**, which is a string.
+1. Run the workflow and right-click the transition to view the population: the email records are displayed replaced by `****`.
+1. Check the workflow logs: the **Change Data Source** activity interprets these records as numeric values.
 
-### Message de l&#39;erreur{#issue-1-error}
+### Error message{#issue-1-error}
 
 ```sql
 04/13/2022 10:00:18 AM              Executing change data source 'Ok' (step 'Change Data Source')
@@ -47,23 +48,23 @@ Le **Modifier la source de données** l’activité échoue lors du transfert de
 04/13/2022 10:00:26 AM              D_OPTIONALLY_ENCLOSED_BY = 'NONE') ON_ERROR = ABORT_STATEMENT PURGE = TRUE' could not be executed.
 ```
 
-### Solution{#issue-1-workaround}
+### Workaround{#issue-1-workaround}
 
-Pour que les données soient transférées de la base de données cloud de Snowflake vers la base de données locale de Campaign et de nouveau vers Snowflake, vous devez utiliser deux **Modifier la source de données** activités.
+To have the data transfered from Snowflake cloud database to Campaign local database and back to Snowflake, you must use two different **Change Data Source** activities.
 
-### Référence interne{#issue-1-ref}
+### Internal reference{#issue-1-ref}
 
-Référence : NEO-45549
+Reference: NEO-45549 
+-->
 
 
-
-## Modification du problème de l’activité Source de données #2 {#issue-2}
+## Modification du problème de l’activité Source de données {#issue-2}
 
 ### Description{#issue-2-desc}
 
 Lors de l’injection de données dans la base de données cloud Snowflake avec une campagne **Requête** et un **Modifier la source de données** , le processus échoue lorsqu’une barre oblique inverse est présente dans les données. La chaîne source n’est pas placée dans une séquence d’échappement et les données ne sont pas traitées correctement sur Snowflake.
 
-Ce problème se produit uniquement si la barre oblique inverse se trouve à la fin de la chaîne, par exemple : `Barker\`.
+Ce problème se produit uniquement si la barre oblique inverse se situe à la fin de la chaîne, par exemple : `Barker\`.
 
 
 ### Étapes de production{#issue-2-repro}
@@ -85,7 +86,11 @@ Error:
 
 ### Solution{#issue-2-workaround}
 
-Pour pallier ce problème, exportez les fichiers avec des guillemets doubles autour des valeurs problématiques (comme `Barker\`) et inclure une option de format de fichier ; `FIELD_OPTIONALLY_ENCLOSED_BY = '"'`.
+La solution consiste à exclure les données contenant une barre oblique inverse à la fin de la chaîne ou à les supprimer du fichier source.
+
+<!--
+As a workaround, export the files with double quotes around the problematic values (like `Barker\`) and include a file format option `FIELD_OPTIONALLY_ENCLOSED_BY = '"'`.
+-->
 
 ### Référence interne{#issue-2-ref}
 
@@ -113,7 +118,13 @@ Le processus ne se termine jamais.
 
 ### Solution{#issue-3-workaround}
 
-Vous devez utiliser une ancienne console cliente pour pouvoir télécharger le fichier sur le serveur.
+La solution consiste à utiliser une ancienne console cliente. Vous pourrez ensuite télécharger le fichier sur le serveur.
+
+En tant qu’administrateur, vous pouvez télécharger la console cliente Campaign v8.3.1 dans [Service de distribution Adobe](https://experience.adobe.com/downloads).
+
+Découvrez comment accéder à Adobe Distribution Service [dans cette page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr)
+
+Découvrez comment mettre à niveau votre console cliente [dans cette page](connect.md)
 
 ### Référence interne{#issue-3-ref}
 
