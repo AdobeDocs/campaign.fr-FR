@@ -1,20 +1,20 @@
 ---
-title: Nouvelles API de Campaign v8
-description: Nouvelles API de Campaign v8
+title: API de déploiement FFDA
+description: API spécifiques à FFDA
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: dd822f88-b27d-4944-879c-087f68e79825
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 100%
+source-wordcount: '437'
+ht-degree: 91%
 
 ---
 
-# Nouvelles API de Campaign{#gs-new-api}
+# API de campagne FFDA spécifiques{#gs-new-api}
 
-Dans le contexte d’un [Déploiement Enterprise (FFDA)](enterprise-deployment.md), Campaign v8 est fourni avec deux nouvelles API pour gérer les données entre la base de données locale Campaign et la base de données Cloud. Les conditions préalables à leur utilisation sont l&#39;activation du mécanisme d&#39;évaluation sur le schéma. [En savoir plus](staging.md)
+Dans le contexte d’un [Déploiement Entreprise (FFDA)](enterprise-deployment.md), Campaign v8 est fourni avec deux API spécifiques pour gérer les données entre la base de données locale Campaign et la base de données Cloud. Les conditions préalables à leur utilisation sont l&#39;activation du mécanisme d&#39;évaluation sur le schéma. [En savoir plus](staging.md)
 
 * API d&#39;ingestion : **xtk.session.ingest**
 
@@ -30,7 +30,7 @@ Un workflow intégré dédié synchronise les données dans la base de données 
 
 L&#39;API **xtk.session.ingest** est réservée à l&#39;insertion de données uniquement. Aucune mise à jour/suppression.
 
-### Insertion sans réconciliation
+### Insertion sans réconciliation{#insert-no-reconciliation}
 
 **Dans un workflow**
 
@@ -170,7 +170,6 @@ Une fois le workflow exécuté, la table d&#39;évaluation est mise à jour comm
 
 **À partir d&#39;un appel SOAP**
 
-
 1. Obtenez le jeton d&#39;authentification.
 1. Déclenchez l&#39;API. La payload est la suivante :
 
@@ -213,4 +212,4 @@ L&#39;insertion des données d&#39;abonnement et de désabonnement repose sur le
 
 **Rubriques connexes**
 
-* [JSAPI Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=fr)
+* [JSAPI Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=fr){target=&quot;_blank&quot;}
