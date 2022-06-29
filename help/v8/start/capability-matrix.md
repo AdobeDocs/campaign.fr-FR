@@ -1,22 +1,36 @@
 ---
-title: Campaign Classic v7 - Matrice des fonctionnalités Campaign v8
+title: Transition de Campaign Classic v7 vers Campaign v8
 description: Comprendre les différences entre Campaign Classic v7 et Campaign v8
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 0c01b0a597e54ae93dd581ccba6f19b2ff13f956
-workflow-type: ht
-source-wordcount: '561'
-ht-degree: 100%
+source-git-commit: 6198d78928db495bd8a931e0407ba09d3cce10f4
+workflow-type: tm+mt
+source-wordcount: '646'
+ht-degree: 87%
 
 ---
 
-# [!DNL Campaign Classic]Fonctionnalités v7 -[!DNL Campaign] v8{#gs-matrix}
+# Transition depuis [!DNL Campaign Classic] v7 à [!DNL Campaign] v8{#gs-matrix}
 
 En tant qu’ancien utilisateur de [!DNL Campaign Classic] v7, votre manière habituelle d&#39;interagir avec [!DNL Adobe Campaign] ne devrait pas subir de perturbations importantes. La plupart des modifications apportées à v8 ne sont pas visibles, à l&#39;exception des petites modifications qui apparaissent dans l&#39;interface utilisateur et dans les étapes de configuration.
 
-Adobe Campaign v8 est disponible en tant que **Managed Cloud Service**. La nouvelle offre combine les services les plus performants avec une surveillance proactive et des alertes rapides, en se concentrant sur trois domaines :
+>[!AVAILABILITY]
+>
+>* À l&#39;heure actuelle, Campaign v8 est **uniquement** disponible en tant que Managed Cloud Service et ne peut pas être déployé dans des environnements on-premise ou hybrides. [En savoir plus](#cloud-services)
+>
+>* La migration depuis un environnement Campaign Classic v7 existant n&#39;est pas encore disponible.
+
+
+
+## Cloud Services gérés{#cloud-services}
+
+Adobe Campaign v8 est disponible en tant que **Managed Cloud Service**.
+
+Adobe Campaign Managed Cloud Services fournit une plateforme Managed Services pour la conception d’expériences client cross-canal et fournit un environnement pour l’orchestration visuelle des campagnes, la gestion des interactions en temps réel et l’exécution cross-canal. En savoir plus sur les Cloud Services gérés de Campaign dans la section [page de description du produit](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target=&quot;_blank&quot;}..
+
+La nouvelle offre combine les services les plus performants avec une surveillance proactive et des alertes rapides, en se concentrant sur trois domaines :
 
 * **Agilité du cloud** : automatisation par Adobe, avec des déploiements cloud optimisés et normalisés pour des performances plus prévisibles, une plus grande agilité et une productivité en libre-service améliorée.
 * **Expérience de service** : supervision proactive de la disponibilité, de la capacité et des performances et intervention pour prévenir les perturbations, résoudre les incidents plus rapidement et passer régulièrement en revue les services pour une amélioration continue.
@@ -33,14 +47,18 @@ En tant qu’ancien utilisateur [!DNL Campaign Classic], veuillez noter que la p
 
 ## [!DNL Campaign] et [!DNL Snowflake] {#ac-gs-snowflake}
 
-Campaign v8 fonctionne avec [!DNL Snowflake]. Deux modèles de déploiement sont disponibles.
+Campaign v8 fonctionne avec [!DNL Snowflake].
+
+Dans son [déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), [!DNL Adobe Campaign] v8 fonctionne avec deux bases de données : une base de données [!DNL Campaign] locale pour la messagerie en temps réel de l&#39;interface utilisateur et les requêtes et écritures unitaires à travers les API, et une base de données [!DNL Snowflake] Cloud pour l&#39;exécution de campagnes, les requêtes par lots et l&#39;exécution de workflows.
+
+Campaign v8 Enterprise présente le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud. Avec cette nouvelle architecture, le déploiement Campaign v8 Enterprise (FFDA) simplifie la gestion des données : aucun index n&#39;est requis sur la base de données cloud. Il vous suffit de créer les tableaux, de copier les données et de commencer. La technologie de base de données cloud ne nécessite pas de maintenance spécifique pour garantir le niveau attendu de performances.
 
 ![](../assets/do-not-localize/glass.png) Pour en savoir plus sur l&#39;architecture de [!DNL Campaign] v8, consultez [cette page](../architecture/architecture.md).
 
 
 ## Utilisation de votre Adobe ID pour vous connecter à Campaign{#adobe-id}
 
-Les utilisateurs de Campaign se connectent via leur Adobe ID. Le même Adobe ID est utilisé pour conserver tous vos abonnements Adobe et produits associés à un seul compte, pour toutes les solutions Adobe Experience Cloud.
+Les utilisateurs de Campaign ne se connectent que par le biais de leur Adobe ID. Le même Adobe ID est utilisé pour conserver tous vos abonnements Adobe et produits associés à un seul compte, pour toutes les solutions Adobe Experience Cloud.
 
 ![](../assets/do-not-localize/glass.png) Découvrez comment vous connecter à [!DNL Campaign] dans [cette page](connect.md).
 
@@ -50,28 +68,12 @@ Utilisez le module Marketing Analytics pour analyser et mesurer les données, ca
 
 Notez que les rapports de cube Adobe Campaign sont optimisés et offrent de meilleures fonctionnalités d’échelle que Campaign Classic v7. Les anciennes limitations sur les cubes ne s’appliquent pas dans Campaign v8.
 
-## Modification de la source de données {#change-data-source}
-
-Campaign v8 propose une activité de workflow de ciblage supplémentaire : **[!UICONTROL Modifier la source de données]**.
-
-L&#39;activité **[!UICONTROL Modifier la source de données]** permet de modifier la source de données d&#39;un workflow **[!UICONTROL Table de travail]** pour gérer les données de différentes sources de données telles que FDA, FFDA et base de données locale.
-
-![](../assets/do-not-localize/glass.png) En savoir plus sur l’activité **[!UICONTROL Modifier la source de données]** dans [cette page](../config/workflows.md#change-data-source-activity).
-
 ## Fonctionnalités non disponibles{#gs-unavailable-features}
 
 Veuillez noter que certaines fonctionnalités ne sont pas disponibles dans cette version de Campaign, telles que :
 
 * Gestion des ressources marketing
 * Modèles de déploiement hybrides/On-premise
-
->[!CAUTION]
->
->* À l&#39;heure actuelle, Campaign v8 est **uniquement** disponible en tant que Managed Cloud Service et ne peut pas être déployé dans des environnements on-premise ou hybrides.
->
->* La migration depuis un environnement Campaign Classic v7 existant n&#39;est pas encore disponible.
->
->* Si vous n’êtes pas sûr de votre modèle de déploiement ou si vous avez des questions, contactez votre responsable de compte Adobe.
 
 
 ## Fonctionnalités non prises en charge{#gs-removed}
