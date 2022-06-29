@@ -5,8 +5,8 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+source-git-commit: 63e109f31706880a1723dfd0c611835842e39083
+workflow-type: ht
 source-wordcount: '892'
 ht-degree: 100%
 
@@ -54,7 +54,7 @@ Pour créer un nouvel emplacement, procédez comme suit :
 
    Ces fonctions sont utilisées pour générer des représentations d&#39;offres sur un emplacement. Il existe plusieurs formats possibles : HTML ou texte.
 
-   **Remarque** - Le format XML est limité aux interactions entrantes qui ne sont pas disponibles dans cette version du produit. [En savoir plus](../start/capability-matrix.md#gs-unavailable-features)
+   **Remarque** - Le format XML est limité aux interactions entrantes qui ne sont pas disponibles dans cette version du produit. [En savoir plus](../start/v7-to-v8.html#gs-unavailable-features)
 
    ![](assets/offer_space_create_006.png)_
 
