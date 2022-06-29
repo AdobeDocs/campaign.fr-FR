@@ -4,7 +4,7 @@ user-guide-title: Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Campaign v8
 title: Documentation Campaign v8
-source-git-commit: 099d14ace04df1b98e03be283a6436f49f535958
+source-git-commit: 63e109f31706880a1723dfd0c611835842e39083
 workflow-type: ht
 source-wordcount: '353'
 ht-degree: 100%
@@ -20,7 +20,7 @@ ht-degree: 100%
    + [Notes de mise à jour](start/release-notes.md)
    + [Limites connues](start/known-limitations.md)
    + [Problèmes connus](start/known-issues.md)
-   + [Classic v7 à v8](start/capability-matrix.md)
+   + [Classic v7 à v8](start/v7-to-v8.html)
 + Démarrage {#start}
    + [Prise en main](start/get-started.md)
    + [Composants et processus](start/ac-components.md)
