@@ -6,8 +6,8 @@ role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
-workflow-type: tm+mt
-source-wordcount: '643'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -100,6 +100,6 @@ La surveillance de vos diffusions après leur envoi est une étape clé pour vou
 
 * [Bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=fr){target=&quot;_blank&quot;}
 
-* [Test et envoi d’un e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html){target=&quot;_blank&quot;}
+* [Test et envoi d’un e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html?lang=fr){target=&quot;_blank&quot;}
 
 * [Envoi de bons à tirer](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target=&quot;_blank&quot;}
