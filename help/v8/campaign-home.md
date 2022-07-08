@@ -4,7 +4,7 @@ description: Centre d'aide de Campaign v8
 title: Documentation du produit Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
 source-git-commit: cda523168525c24ec1c976850bc336f273276ac9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ ht-degree: 100%
 
 ## Plus de ressources
 
-* [Garde-fous et limitations](start/ac-guardrails.md)
+* [Barrières de sécurité et limitations](start/ac-guardrails.md)
 * [Architecture](architecture/architecture.md)
 * [Mesure et suivi](start/reporting.md)
 * [Connexion à d&#39;autres solutions](connect/integration.md)
