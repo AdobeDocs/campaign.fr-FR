@@ -3,9 +3,9 @@ title: Formulaires de saisie Campaign
 description: Découvrez comment personnaliser les formulaires de saisie
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
 source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2576'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Le contrôle d&#39;édition s&#39;adapte automatiquement au type de données cor
 
 Par défaut, chaque champ est affiché sur une seule ligne et occupe tout l&#39;espace disponible selon le type de données.
 
-![](../assets/do-not-localize/book.png) Tous les attributs de formulaire sont répertoriés dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=fr){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Tous les attributs de formulaires sont répertoriés dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=fr){target=&quot;_blank&quot;}.
 
 ## Mise en forme {#formatting}
 
