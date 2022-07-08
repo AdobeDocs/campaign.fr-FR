@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 110cf2ff705ecbc0b3a1690e9dfc2791f5744b97
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '698'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 86%
 
 Campaign est disponible sous forme d&#39;instances individuelles, où chaque instance représente un environnement Campaign complet.
 
-Deux types d’environnements sont disponibles :
+Deux types d’environnements sont disponibles :
 
 * **Environnement de production** : héberge les applications destinées aux professionnels.
 
@@ -30,17 +30,17 @@ Vous pouvez exporter et importer des packages d&#39;un environnement à l&#39;au
 
 ## Modèles de déploiement{#ac-deployment}
 
-Deux modèles de déploiement sont disponibles:
+Deux modèles de déploiement sont disponibles :
 
-* **FDA Campaign [!DNL Snowflake] déploiement**
+* **Déploiement FDA Campaign [!DNL Snowflake]**
 
-   Dans son [[!DNL Snowflake] Déploiement FDA](fda-deployment.md), [!DNL Adobe Campaign] v8 est connecté à [!DNL Snowflake] pour accéder aux données par le biais de la fonctionnalité Federated Data Access : vous pouvez accéder aux données et aux informations externes stockées dans votre [!DNL Snowflake] sans modifier la structure des données Adobe Campaign. PostgreSQL est la base de données principale et Snowflake la base de données secondaire. Vous pouvez étendre votre modèle de données et stocker vos données sur Snowflake. Par la suite, vous pourrez exécuter ETL, la segmentation et les rapports sur un jeu de données volumineux avec des performances optimales.
+   Dans son [[!DNL Snowflake] déploiement FDA](fda-deployment.md), [!DNL Adobe Campaign] v8 est connecté à [!DNL Snowflake] pour accéder aux données via la fonctionnalité Federated Data Access : vous pouvez accéder aux données et aux informations externes stockées dans votre base de données [!DNL Snowflake] sans modifier la structure des données Adobe Campaign. PostgreSQL est la base de données principale et Snowflake la base de données secondaire. Vous pouvez étendre votre modèle de données et stocker vos données sur Snowflake. Par la suite, vous pourrez exécuter ETL, la segmentation et les rapports sur un jeu de données volumineux avec des performances optimales.
 
-* **Déploiement Campaign Enterprise (FFDA)**
+* **Déploiement Campaign Grands comptes (FFDA)**
 
-   Dans le contexte d’un [Déploiement Entreprise (FFDA)](enterprise-deployment.md), [!DNL Adobe Campaign] v8 fonctionne avec deux bases de données : un local [!DNL Campaign] base de données pour la messagerie en temps réel et les requêtes unitaires de l’interface utilisateur, et écrire via les API et un Cloud [!DNL Snowflake] base de données pour l&#39;exécution des opérations, les requêtes par lots et l&#39;exécution des workflows.
+   Dans un [déploiement Grands comptes (FFDA)](enterprise-deployment.md), [!DNL Adobe Campaign] v8 fonctionne avec deux bases de données : une base de données [!DNL Campaign] locale pour la messagerie en temps réel de l’interface utilisateur et les requêtes et écritures unitaires à travers les API, et une base de données [!DNL Snowflake] cloud pour l’exécution de campagnes, les requêtes par lots et l’exécution de workflows.
 
-   Campaign v8 Enterprise présente le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud. Avec cette nouvelle architecture, le déploiement Campaign v8 Enterprise (FFDA) simplifie la gestion des données : aucun index n&#39;est requis sur la base de données cloud. Il vous suffit de créer les tables et de copier les données pour démarrer. La technologie de base de données cloud ne nécessite pas de maintenance spécifique pour garantir le niveau attendu de performances.
+   Campaign v8 Enterprise présente le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud. Avec cette nouvelle architecture, le déploiement Campaign v8 Enterprise (FFDA) simplifie la gestion des données : aucun index n&#39;est requis sur la base de données cloud. Il vous suffit de créer les tables et de copier les données pour démarrer. La technologie de base de données cloud ne nécessite pas de maintenance spécifique pour garantir le niveau de performances attendu.
 
 
 ## Architecture de Message Center{#transac-msg-archi}
