@@ -1,18 +1,18 @@
 ---
-title: Personnalisation de votre instance
+title: Personnaliser votre instance
 description: Découvrez comment personnaliser votre instance
 feature: Application Settings
 role: Data Engineer
 level: Beginner
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
 source-git-commit: c44fb2de4ed0e1661801313ae0430ba9d19542f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '559'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Personnalisation de votre instance{#gs-ac-custom}
+# Personnaliser votre instance{#gs-ac-custom}
 
 Découvrez comment **personnaliser votre instance Campaign**.
 
@@ -49,7 +49,7 @@ Pour ajouter un nouveau type de données qui n’existe pas par défaut dans Ado
 
 ![](../assets/do-not-localize/book.png) Exemple d&#39;édition de schéma dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#configuring-campaign-classic).{target=&quot;_blank&quot;}
 
-![](../assets/do-not-localize/book.png) Cas pratique : lier un champ à une table de référence existante dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#uc-link){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png)Cas d’utilisation : liaison d’un champ à une table de référence existante dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#uc-link){target=&quot;_blank&quot;}.
 
 
 ## Modification des formulaires de saisie
@@ -73,7 +73,7 @@ Les applications web d&#39;usine sont stockées sous le nœud Administration > 
 
 Les listes Campaign s’accompagnent de filtres prédéfinis pour faciliter la navigation et la visualisation des données.
 
-![](../assets/do-not-localize/book.png) En savoir plus sur les options de filtrage dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/filtering-options.html?lang=fr#about-filtering){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) En savoir plus sur les options de filtrage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/filtering-options.html?lang=fr#about-filtering){target=&quot;_blank&quot;}.
 
 
 ### Accès aux données à partir de l&#39;Explorateur
@@ -85,4 +85,4 @@ Lorsque vous naviguez dans l’arborescence de l’Explorateur Adobe Campaign, 
 
 Vous pouvez appliquer un filtre sur ces listes afin d&#39;afficher uniquement les données nécessaires à l&#39;opérateur. Ensuite, les actions peuvent être exécutées sur les données filtrées. La configuration des filtres vous permet de sélectionner dynamiquement des données d&#39;une liste. Si les données sont modifiées, les données filtrées sont mises à jour.
 
-![](../assets/do-not-localize/book.png) Découvrez comment filtrer les données dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/creating-filters.html?lang=fr#typology-of-available-filters){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) En savoir plus sur comment filtrer des données dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/creating-filters.html?lang=fr#typology-of-available-filters){target=&quot;_blank&quot;}.
