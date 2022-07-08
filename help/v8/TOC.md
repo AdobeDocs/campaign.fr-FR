@@ -5,9 +5,9 @@ description: Documentation Campaign v8
 breadcrumb-title: Campaign v8
 title: Documentation Campaign v8
 source-git-commit: cda523168525c24ec1c976850bc336f273276ac9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '352'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 99%
          + [Mécanisme de réplication](architecture/replication.md)
 + Implémentation {#implement}
    + [Étapes d&#39;implémentation](start/implement.md)
-   + [Personnalisation de votre instance](dev/customize.md)
+   + [Personnaliser votre instance](dev/customize.md)
    + [Directives de sécurité](config/security.md)
    + [Conception de formulaires et d&#39;applications web](dev/webapps.md)
    + [Bonnes pratiques relatives aux modèles de données](dev/datamodel-best-practices.md)
