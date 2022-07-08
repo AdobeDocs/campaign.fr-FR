@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
 source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3060'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Ces types d&#39;erreurs sont gérés comme suit :
 
 ![](assets/delivery-log-qualification.png)-->
 
-La manière dont la qualification des emails bounce est gérée dans Adobe Campaign dépend du type d’erreur :
+Actuellement, le traitement de la qualification des e-mails bounce dans Adobe Campaign dépend du type d’erreur :
 
 * **Erreurs synchrones** : le MTA détermine le type et la qualification du rebond, puis renvoie ces informations à Campaign. Les qualifications de mails rebonds dans la table **[!UICONTROL Qualification des logs de diffusion]** ne sont plus utilisées pour les messages d&#39;erreur relatifs aux échecs des diffusions **synchrones**.
 
@@ -378,7 +378,7 @@ Le mécanisme de mise en quarantaine d&#39;Android V2 utilise le même processu
  <tbody> 
   <tr> 
    <td> <strong>Scénario</strong><br /> </td> 
-   <td> <strong>État</strong><br /> </td> 
+   <td> <strong>Status</strong><br /> </td> 
    <td> <strong>Message de l'erreur</strong><br /> </td> 
    <td> <strong>Type de l'échec</strong><br /> </td> 
    <td> <strong>Raison de l'échec</strong><br /> </td> 
@@ -593,7 +593,7 @@ Les spécificités du canal SMS sont énumérées ci-dessous.
  <tbody> 
   <tr> 
    <td> <strong>Scénario</strong><br /> </td> 
-   <td> <strong>État</strong><br /> </td> 
+   <td> <strong>Status</strong><br /> </td> 
    <td> <strong>Message de l'erreur</strong><br /> </td> 
    <td> <strong>Type de l'échec</strong><br /> </td> 
    <td> <strong>Raison de l'échec</strong><br /> </td> 
