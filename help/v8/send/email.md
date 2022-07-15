@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
 source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 100%
 
@@ -103,4 +103,4 @@ Vous pouvez ainsi :
 * Utiliser des populations témoins
 * Vérifier le rendu des e-mails
 
-![](../assets/do-not-localize/book.png) [En savoir plus dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) [En savoir plus dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}
