@@ -5,36 +5,36 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
-source-git-commit: 0fa0db62f45097755bebcbf434614c4c835d886a
+source-git-commit: 41a213eea434b3fc6ee8b3ea3c29d4364f9c9761
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 100%
+source-wordcount: '1118'
+ht-degree: 74%
 
 ---
 
 # Gestion des demandes d’accès à des informations personnelles dans Campaign {#privacy}
 
-<!--Adobe Campaign is a powerful tool for collecting and processing large volume of data, including personal information and sensitive data. It is therefore essential that you receive and monitor consent from your recipients.-->
+Selon la nature de votre entreprise et les juridictions sous lesquelles elle opère, vos opérations de données peuvent être soumises à des réglementations légales en matière de confidentialité. Ces réglementations donnent souvent à vos clients le droit de demander l’accès aux données que vous collectez auprès d’eux et le droit de demander la suppression de ces données stockées. Ces demandes de données personnelles de ces clients sont appelées &quot;demandes d’accès à des informations personnelles&quot; dans l’ensemble de la documentation.
+
+Adobe met à la disposition des contrôleurs de données des outils afin de créer et de traiter des demandes d’accès à des informations personnelles pour les données stockées dans Adobe Campaign. Cependant, il est de votre responsabilité, en tant que contrôleur de données, de vérifier l&#39;identité du titulaire de données à l&#39;origine de la demande, et de confirmer que les données renvoyées au demandeur concernent le titulaire de données. Obtenez des informations supplémentaires sur les données personnelles et les différentes entités qui gèrent les données dans la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr#personal-data){target=&quot;_blank&quot;}.
+
+
+Pour gérer les demandes d’accès à des informations personnelles dans Campaign, vous devez d’abord [Définition d’un espace de noms](#namespaces). Vous pouvez ensuite créer et gérer des demandes d’accès à des informations personnelles. Pour effectuer des demandes d’accès à des informations personnelles, utilisez la méthode **Adobe Privacy Service** intégration. Les demandes d&#39;accès à des informations personnelles transmises par le Privacy Service à toutes les solutions Adobe Experience Cloud sont automatiquement gérées par Campaign via un workflow dédié. [En savoir plus](#create-privacy-request)
+
+![](../assets/do-not-localize/speech.png) Découvrez le **Droit d’accès** et le **Droit à l’oubli** (requête de suppression) dans la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=fr#right-access-forgotten){target=&quot;_blank&quot;}.
+
 
 >[!NOTE]
 >
 >Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-Pour faciliter la préparation à la protection des données, Adobe Campaign permet désormais de gérer les demandes d’accès et de suppression.
-
-Pour effectuer ces demandes, vous devez utiliser l&#39;intégration de **Privacy Core Service**. Les demandes d&#39;accès à des informations personnelles transmises par Privacy Core Service à toutes les solutions Experience Cloud sont automatiquement traitées par Campaign via un workflow dédié. [En savoir plus](#create-privacy-request)
-
-Adobe met à la disposition des contrôleurs de données des outils afin de créer et de traiter des demandes d’accès à des informations personnelles pour les données stockées dans Adobe Campaign. Cependant, il est de votre responsabilité, en tant que contrôleur de données, de vérifier l&#39;identité du titulaire de données à l&#39;origine de la demande, et de confirmer que les données renvoyées au demandeur concernent le titulaire de données. Obtenez des informations supplémentaires sur les données personnelles et les différentes entités qui gèrent les données dans la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr#personal-data){target=&quot;_blank&quot;}.
-
-![](../assets/do-not-localize/speech.png) Découvrez le **Droit d’accès** et le **Droit à l’oubli** (requête de suppression) dans la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=fr#right-access-forgotten){target=&quot;_blank&quot;}.
-
 ## Définition d’un espace de noms {#namespaces}
 
-Avant de créer une demande d’accès à des informations personnelles, vous devez **Définir l’espace de noms** que vous utiliserez. L&#39;espace de noms est la clé qui sera utilisée pour identifier le titulaire de données dans la base de données Adobe Campaign.
+Avant de créer une demande d’accès à des informations personnelles, vous devez : **Définition de l’espace de noms** à utiliser. L&#39;espace de noms est la clé utilisée pour identifier le titulaire de données dans la base de données.
 
 >[!NOTE]
 >
->Pour en savoir plus sur les espaces de noms d&#39;identité, consultez la [documentation Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=fr){target=&quot;_blank&quot;}.
+>En savoir plus sur les espaces de noms d’identité dans [Documentation Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=fr){target=&quot;_blank&quot;}.
 
 Actuellement, Adobe Campaign ne prend pas en charge l’importation d’espaces de noms à partir du service Espace de noms d’identité Experience Platform. Par conséquent, une fois que vous avez créé un espace de noms sur le service Espace de noms d’identité, vous devez créer manuellement l’espace de noms correspondant dans l’interface Adobe Campaign. Pour ce faire, suivez les étapes ci-après.
 
@@ -48,7 +48,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 1. Créez un espace de noms sur le [Service Espace de noms d’identité](https://developer.adobe.com/experience-platform-apis/references/identity-service/#tag/Identity-Namespace){target=&quot;_blank&quot;}.
 
-1. Lorsque la [liste des espaces de noms d’identité](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target=&quot;_blank&quot;} est disponible pour votre organisation, vous obtiendrez l’espace de noms suivant, par exemple :
+1. When [liste des espaces de noms d’identité](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target=&quot;_blank&quot;} disponible pour votre organisation, vous obtenez l’espace de noms suivant, par exemple :
 
    ```
    {
@@ -73,9 +73,9 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 1. Renseignez les détails du nouvel espace de noms pour qu’il corresponde à l’espace de noms que vous avez créé sur le service Espace de noms d’identité :
 
-   * la valeur **[!UICONTROL Identifiant de l’espace de noms AEC]** doit correspondre à l’attribut « id » ;
-   * la valeur **[!UICONTROL Nom interne]** doit correspondre à l’attribut « code » ;
-   * la valeur **[!UICONTROL Clé de réconciliation]** doit correspondre à l’attribut « idType ».
+   * la valeur **[!UICONTROL Identifiant d’espace de noms AEC]** doit correspondre à l’attribut &quot;id&quot;
+   * la valeur **[!UICONTROL Nom interne]** doit correspondre à l’attribut &quot;code&quot;
+   * la valeur **[!UICONTROL Reconciliation key]** doit correspondre à l’attribut &quot;idType&quot;
 
    ![](assets/privacy-namespaces-details.png)
 
@@ -85,7 +85,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
    >[!NOTE]
    >
-   >    Si vous souhaitez utiliser plusieurs mappings de ciblage, vous devez créer un espace de noms par mapping.
+   >Si vous devez utiliser plusieurs mappings de ciblage, créez un espace de noms par mapping de ciblage.
 
 1. Enregistrez vos modifications.
 
@@ -93,15 +93,11 @@ Vous pouvez maintenant créer des demandes d&#39;accès à des informations pers
 
 ## Création d’une demande d’accès à des informations personnelles {#create-privacy-request}
 
-L’intégration avec **Privacy Core Service** vous permet d’automatiser vos demandes d’accès à des informations personnelles dans un contexte multisolution grâce à un seul appel API JSON. Adobe Campaign gère automatiquement les demandes transmises par Privacy Core Service via un workflow dédié.
-
->[!CAUTION]
->
->Pour que les demandes d’accès à des informations personnelles soient traitées, vous devez créer sur votre instance Adobe Campaign un espace de noms correspondant à l’espace de noms que vous avez créé dans le service Espace de noms d’identité d’Experience Platform.
+L’intégration avec **[!DNL Adobe Experience Platform Privacy Service]** vous permet d’automatiser vos demandes d’accès à des informations personnelles dans un contexte multisolution grâce à un seul appel API JSON. Adobe Campaign gère automatiquement les demandes transmises par Privacy Service via un workflow dédié.
 
 Reportez-vous à la documentation [Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr){target=&quot;_blank&quot;} pour savoir comment créer des demandes d’accès à des informations personnelles à partir de Privacy Core Service.
 
-Chaque traitement du Privacy Core Service est divisé en plusieurs demandes d’accès à des informations personnelles dans Adobe Campaign en fonction du nombre d’espaces de noms utilisés (une demande correspondant à un espace de noms).
+Chaque **[!DNL Privacy Service]**  La tâche est divisée en plusieurs demandes d’accès à des informations personnelles dans Adobe Campaign en fonction du nombre d’espaces de noms utilisés, une requête correspondant à un espace de noms.
 
 En outre, un traitement peut être exécuté sur plusieurs instances. C&#39;est pourquoi plusieurs fichiers sont créés pour un seul traitement. Par exemple, si une demande contient deux espaces de noms et est exécutée sur trois instances, six fichiers sont envoyés. Soit un fichier par espace de noms et par instance.
 
@@ -121,7 +117,7 @@ Le modèle d&#39;un nom de fichier est le suivant : `<InstanceName>-<NamespaceI
 
 Lors de l’exécution d’une demande d’accès ou de suppression de données personnelles, Adobe Campaign recherche toutes les données du titulaire des données en fonction de la **[!UICONTROL Valeur de réconciliation]** dans toutes les tables ayant un lien avec la table du destinataire (type own).
 
-Voici la liste des tables d&#39;usine qui sont prises en compte lors de l&#39;exécution des demandes d&#39;accès à des données personnelles :
+La liste des tables intégrées prises en compte lors de l&#39;exécution des demandes d&#39;accès à des informations personnelles est la suivante :
 
 * Destinataires (recipient)
 * Log de diffusion des destinataires (broadLogRcp)
@@ -145,7 +141,7 @@ Si vous avez créé des tables personnalisées ayant un lien avec la table du de
 
 ### Statuts des demandes d’accès à des informations personnelles {#privacy-request-statuses}
 
-Voici les différents statuts des demandes d’accès à des informations personnelles dans Adobe Campaign :
+Vous trouverez ci-dessous les différents statuts des demandes d’accès à des informations personnelles dans Adobe Campaign et comment les interpréter :
 
 * **[!UICONTROL Nouveau]**/**[!UICONTROL Reprise en attente]** : en cours, le workflow n&#39;a pas encore traité la demande.
 * **[!UICONTROL Traitement]**/**[!UICONTROL Reprise en cours]** : le workflow traite la demande.

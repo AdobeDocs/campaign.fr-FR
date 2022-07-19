@@ -5,10 +5,10 @@ feature: Monitoring
 role: Data Engineer
 level: Beginner
 exl-id: f3de901f-519f-42ae-846c-f20c7cb560df
-source-git-commit: c6a234f6c43531be032354d134e4745ad77cbcc7
-workflow-type: ht
-source-wordcount: '905'
-ht-degree: 100%
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
+workflow-type: tm+mt
+source-wordcount: '898'
+ht-degree: 98%
 
 ---
 
@@ -123,7 +123,7 @@ Pour en savoir plus sur les informations que vous pouvez surveiller après l’e
 
 ### Surveillance de vos workflows
 
-Découvrez comment surveiller vos diffusions dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html?lang=fr#automating-with-workflows){target=&quot;_blank&quot;}
+Découvrez comment surveiller l’exécution des workflows dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html)
 
 ### Surveillance de votre instance
 

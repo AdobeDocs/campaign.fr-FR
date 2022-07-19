@@ -5,10 +5,10 @@ feature: Workflows
 role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
-source-git-commit: c44fb2de4ed0e1661801313ae0430ba9d19542f0
-workflow-type: ht
-source-wordcount: '419'
-ht-degree: 100%
+source-git-commit: 59046a11c3e057cf41c322f190a9d8aef310c356
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 90%
 
 ---
 
@@ -20,7 +20,7 @@ Dans le contexte d’un [Déploiement Enterprise (FFDA)](enterprise-deployment.m
 
 Ces workflows effectuent des opérations de maintenance sur la base de données, tirent parti des informations de tracking contenues dans les logs de diffusion, créent des campagnes récurrentes, etc.
 
-![](../assets/do-not-localize/book.png) La liste complète des workflows techniques est détaillée dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html?lang=fr).{target=&quot;_blank&quot;}
+![](../assets/do-not-localize/glass.png) La liste complète des workflows techniques est présentée dans la section [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html).
 
 Outre ces workflows techniques, Campaign v8 s&#39;appuie sur des workflows techniques spécifiques pour gérer la [réplication des données](#data-replication).
 
@@ -74,6 +74,6 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 
 **Rubriques connexes**
 
-![](../assets/do-not-localize/book.png) Découvrez comment commencer à utiliser les workflows dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=fr#automating-with-workflows){target=&quot;_blank&quot;}
+* [Découvrez comment commencer à utiliser les workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 
-![](../assets/do-not-localize/glass.png) Accédez aux périodes de conservation des données dans [cette section](../dev/datamodel-best-practices.md#data-retention).
+* [Périodes de rétention des données](../dev/datamodel-best-practices.md#data-retention)

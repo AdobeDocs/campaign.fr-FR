@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 6fbe5616-7b8b-4504-988b-2bbbfd062548
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 59046a11c3e057cf41c322f190a9d8aef310c356
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 100%
+source-wordcount: '878'
+ht-degree: 96%
 
 ---
 
@@ -103,7 +103,7 @@ Dans l&#39;exemple ci-dessous, vous créez une liste de tous les destinataires c
 
    ![](assets/targeting-wf-age-filter.png)
 
-   Découvrez comment créer une requête dans un workflow dans [la documentation Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/query.html?lang=fr#creating-a-query){target=&quot;_blank&quot;}
+   Découvrez comment créer une requête dans un workflow dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
 
 1. Ajoutez un libellé pour cette requête et enregistrez vos modifications.
 1. Ajoutez une activité **[!UICONTROL Mise à jour de liste]** et modifiez-la.
@@ -124,7 +124,7 @@ Dans l&#39;exemple ci-dessous, vous créez une liste de tous les destinataires c
 
    ![](assets/access-new-list.png)
 
-   Vous pouvez rendre ce workflow récurrent en ajoutant un planificateur au workflow. Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/scheduler.html?lang=fr){target=&quot;_blank&quot;}.
+   Vous pouvez rendre ce workflow récurrent en ajoutant un planificateur au workflow. [En savoir plus](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html).
 
 ## Retirer un profil d&#39;une liste {#remove-a-profile-from-a-list}
 

@@ -5,10 +5,10 @@ feature: Email
 role: Data Engineer
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 100%
+source-wordcount: '589'
+ht-degree: 94%
 
 ---
 
@@ -75,12 +75,12 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
    Une fois le contenu prêt, cliquez sur **Enregistrer** : elle s&#39;affiche désormais dans votre liste de diffusions, sous l&#39;onglet **[!UICONTROL Campagnes > Diffusions]**. Votre première diffusion e-mail est prête. Vous devez maintenant définir l&#39;audience, valider la diffusion et l&#39;envoyer.
 
 
-Pour en savoir plus, consultez ces sections de la documentation de Campaign Classic v7 :
+Découvrez comment importer un contenu d&#39;email dans [cas pratique](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html).
+
+En savoir plus dans ces sections de **Documentation de Campaign Classic v7**:
 
 * Concevoir un e-mail dans Campaign
    ![](../assets/do-not-localize/book.png) [Découvrez comment concevoir un e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html?lang=fr){target=&quot;_blank&quot;}
-* Importation d&#39;un contenu d&#39;e-mail
-   ![](../assets/do-not-localize/book.png) [Cas pratique : créer un workflow pour charger un contenu de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html?lang=fr){target=&quot;_blank&quot;}
 * Créer et utiliser un modèle d&#39;e-mail
    ![](../assets/do-not-localize/book.png) [En savoir plus sur les modèles d&#39;e-mails](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr){target=&quot;_blank&quot;}
 * Sélectionner l&#39;audience de votre e-mail

@@ -5,10 +5,10 @@ feature: Subscriptions
 role: Data Engineer
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
-source-git-commit: c6a234f6c43531be032354d134e4745ad77cbcc7
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '549'
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ Pour abonner (opt-in) un profil à un service, les options disponibles sont les 
 
    ![](assets/wf-subscription.png)
 
-   ![](../assets/do-not-localize/book.png) Apprenez-en davantage dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/subscription-services.html?lang=fr#example--subscribe-a-list-of-recipients-to-a-newsletter){target=&quot;_blank&quot;}
+   En savoir plus sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html).
 
 Pour désabonner (opt-out) un profil d&#39;un service, les options disponibles sont les suivantes :
 

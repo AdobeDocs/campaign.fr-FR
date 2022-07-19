@@ -5,10 +5,10 @@ feature: Direct Mail
 role: Data Engineer
 level: Beginner
 exl-id: ff2be012-72f3-428d-a973-196fea7ec4ab
-source-git-commit: c44fb2de4ed0e1661801313ae0430ba9d19542f0
-workflow-type: ht
-source-wordcount: '424'
-ht-degree: 100%
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
+workflow-type: tm+mt
+source-wordcount: '412'
+ht-degree: 96%
 
 ---
 
@@ -46,9 +46,7 @@ Les étapes de génération du fichier sont les suivantes :
 
    ![](../assets/do-not-localize/book.png) Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/validating.html?lang=fr).{target=&quot;_blank&quot;}
 
-   Dans le cadre d&#39;une opération marketing, à la date d&#39;extraction, le fichier d&#39;extraction est créé. Vous pouvez visualiser le contenu du fichier extrait, le valider ou modifier le format et relancer l&#39;extraction en cas de besoin. Une fois le fichier validé, vous pouvez envoyer l&#39;email de notification au routeur.
-
-   ![](../assets/do-not-localize/book.png) Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=fr#approving-an-extraction-file).{target=&quot;_blank&quot;}
+   Dans le cadre d&#39;une opération marketing, à la date d&#39;extraction, le fichier d&#39;extraction est créé. Vous pouvez visualiser le contenu du fichier extrait, le valider ou modifier le format et relancer l&#39;extraction en cas de besoin. Une fois le fichier validé, vous pouvez envoyer l&#39;email de notification au routeur. Apprenez-en davantage en consultant [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html).
 
 1. Lancement de la diffusion
 
@@ -56,6 +54,4 @@ Les étapes de génération du fichier sont les suivantes :
 
    La confirmation démarre l&#39;extraction des données dans le fichier spécifié.
 
-   Dans le cadre d&#39;une campagne marketing, lorsque toutes les validations ont été accordées, les fichiers d&#39;extraction sont créés via un workflow spécifique qui, dans une configuration par défaut, démarre automatiquement lorsqu&#39;une diffusion courrier est en attente d&#39;extraction.
-
-   ![](../assets/do-not-localize/book.png) Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=fr#starting-an-offline-delivery).{target=&quot;_blank&quot;}
+   Dans le cadre d&#39;une campagne marketing, lorsque toutes les validations ont été accordées, les fichiers d&#39;extraction sont créés via un workflow spécifique qui, dans une configuration par défaut, démarre automatiquement lorsqu&#39;une diffusion courrier est en attente d&#39;extraction. En savoir plus dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html)

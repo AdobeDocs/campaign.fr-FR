@@ -5,10 +5,10 @@ feature: API
 role: Data Engineer
 level: Beginner
 exl-id: dd822f88-b27d-4944-879c-087f68e79825
-source-git-commit: c44fb2de4ed0e1661801313ae0430ba9d19542f0
-workflow-type: ht
-source-wordcount: '439'
-ht-degree: 100%
+source-git-commit: 2046e93b97e8a45c4837dd10182adc94eea6940b
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 99%
 
 ---
 
@@ -212,4 +212,4 @@ L&#39;insertion des données d&#39;abonnement et de désabonnement repose sur le
 
 **Rubriques connexes**
 
-* [JSAPI Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=fr){target=&quot;_blank&quot;}
+* [JSAPI Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=fr){target=&quot;_blank&quot;}

@@ -5,10 +5,10 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: fc0be5fe82ba11e54851a8f612ece0b310447cdd
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 100%
+source-wordcount: '844'
+ht-degree: 80%
 
 ---
 
@@ -42,12 +42,11 @@ Avant de démarrer l&#39;implémentation de campagnes marketing, il vous faut co
 
 ## Espace de travail de campagne marketing{#ac-workspace}
 
-Avec Adobe Campaign, vous pouvez créer, configurer, exécuter et analyser toutes les campagnes marketing à partir d&#39;un centre de contrôle unifié.
+Avec Adobe Campaign, vous pouvez créer, configurer, exécuter et analyser toutes les campagnes marketing à partir d’un centre de contrôle unifié.
 
 ![](assets/calendar.png)
 
-![](../assets/do-not-localize/book.png) Découvrez comment accéder aux campagnes marketing et comment les implémenter dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=fr#orchestrating-campaigns).{target=&quot;_blank&quot;}
-
+![](../assets/do-not-localize/book.png) Découvrez comment accéder aux campagnes marketing et les mettre en oeuvre dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html).
 
 ## Étapes clés pour bien démarrer{#gs-ac-start}
 
@@ -57,13 +56,13 @@ Les étapes clés permettant de créer une campagne marketing cross-canal sont l
 
    Définissez une hiérarchie, un planning et un budget, puis ajoutez des ressources et sélectionnez des opérateurs.
 
-   ![](../assets/do-not-localize/book.png) Découvrez comment créer un plan marketing et configurer des campagnes dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=fr#creating-plan-and-program-hierarchy).{target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Découvrez comment créer un plan marketing et configurer des campagnes dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html).
 
    Toutes les campagnes marketing sont basées sur un modèle qui stocke les principaux paramètres et fonctionnalités. Un modèle natif est fourni pour créer une opération pour laquelle aucune configuration spécifique n&#39;a été définie. Vous pouvez créer et configurer des modèles d&#39;opération, puis créer des opérations à partir de ces modèles.
 
-   ![](../assets/do-not-localize/book.png) Découvrez comment utiliser les modèles de campagnes dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=fr#orchestrating-campaigns).{target=&quot;_blank&quot;}
+   Découvrez comment utiliser les modèles de campagne dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html).
 
-   ![](../assets/do-not-localize/book.png) Découvrez les opérations récurrentes et comment les configurer dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=fr#recurring-and-periodic-campaigns).{target=&quot;_blank&quot;}
+   Découvrez les campagnes récurrentes et comment les configurer dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html).
 
 1. **Définition d&#39;audiences**
 
@@ -71,7 +70,7 @@ Les étapes clés permettant de créer une campagne marketing cross-canal sont l
 
    ![](assets/campaign-wf.png)
 
-   ![](../assets/do-not-localize/book.png) Découvrez comment définir l&#39;audience de vos messages dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=fr#orchestrating-campaigns).{target=&quot;_blank&quot;}
+   Découvrez comment définir l’audience de vos messages dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html).
 
 1. **Création de diffusions**
 
@@ -79,17 +78,17 @@ Les étapes clés permettant de créer une campagne marketing cross-canal sont l
 
    ![](assets/campaign-dashboard.png)
 
-   ![](../assets/do-not-localize/book.png) Découvrez comment créer et lancer des diffusions de campagnes marketing dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=fr#creating-deliveries).{target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Découvrez comment créer et démarrer des diffusions de campagne marketing dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html).
 
    Vous pouvez associer divers documents à une opération, comme des rapports, photos, pages web, diagrammes, etc.
 
-   ![](../assets/do-not-localize/book.png) En savoir plus sur les documents associés dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=fr#adding-documents){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) En savoir plus sur les documents associés dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html).
 
 1. **Configuration du processus de validation**
 
    Avec Adobe Campaign, vous pouvez mettre en place des processus collaboratifs de validation des principales étapes d’une campagne marketing. Pour chaque campagne, vous pouvez valider la cible de diffusion, le contenu et les coûts. Les opérateurs Adobe Campaign en charge de la validation peuvent être avertis par e-mail et peuvent accepter ou refuser la validation depuis la console ou via une connexion web.
 
-   ![](../assets/do-not-localize/book.png) Découvrez comment configurer et gérer les validations dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=fr#orchestrating-campaigns).{target=&quot;_blank&quot;}
+   Découvrez comment configurer et gérer les validations dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=en#campaign-orchestration).
 
 
 ## Module complémentaire Marketing distribué{#distributed-marketing-add-on}
@@ -100,7 +99,7 @@ Adobe Campaign propose un module complémentaire **Marketing distribué** pour l
 >
 >Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-[](../assets/do-not-localize/book.png) Découvrez comment configurer et utiliser les fonctionnalités de marketing distribué de Campaign dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/distributed-marketing/about-distributed-marketing.html?lang=fr){target=&quot;_blank&quot;}
+Découvrez comment configurer et utiliser les fonctionnalités de marketing distribué de Campaign dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html)
 
 ## Module complémentaire Gestion de la réaction{#response-manager-add-on}
 

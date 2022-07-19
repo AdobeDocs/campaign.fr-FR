@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '657'
+ht-degree: 97%
 
 ---
 
@@ -50,7 +50,7 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
 1. **Est-il possible de surveiller l&#39;exécution des workflows ?**
 
-   ![](../assets/do-not-localize/book.png) Découvrez comment surveiller l&#39;exécution des workflows Campaign [dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html?lang=fr){target=&quot;_blank&quot;}
+   Comprendre comment surveiller l&#39;exécution des workflows Campaign [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html)
 
 1. **Avec quels systèmes et composants Campaign v8 est-il compatible ?**
 
