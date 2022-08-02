@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
 source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '589'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -75,9 +75,9 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
    Une fois le contenu prêt, cliquez sur **Enregistrer** : elle s&#39;affiche désormais dans votre liste de diffusions, sous l&#39;onglet **[!UICONTROL Campagnes > Diffusions]**. Votre première diffusion e-mail est prête. Vous devez maintenant définir l&#39;audience, valider la diffusion et l&#39;envoyer.
 
 
-Découvrez comment importer un contenu d&#39;email dans [cas pratique](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html).
+Découvrez comment importer un contenu d’e-mail dans ce [cas d’utilisation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=fr).
 
-En savoir plus dans ces sections de **Documentation de Campaign Classic v7**:
+Pour en savoir, consultez ces sections de la **documentation de Campaign Classic v7** :
 
 * Concevoir un e-mail dans Campaign
    ![](../assets/do-not-localize/book.png) [Découvrez comment concevoir un e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html?lang=fr){target=&quot;_blank&quot;}
@@ -103,4 +103,4 @@ Vous pouvez ainsi :
 * Utiliser des populations témoins
 * Vérifier le rendu des e-mails
 
-![](../assets/do-not-localize/book.png) [En savoir plus dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) [En savoir plus dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target=&quot;_blank&quot;}
