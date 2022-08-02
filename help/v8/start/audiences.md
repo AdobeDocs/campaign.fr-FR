@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '493'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ La configuration des filtres permet de sélectionner des données dans une liste
 
 Le ciblage peut être créé au moyen d&#39;une combinaison de requêtes dans une séquence graphique de workflow. Vous pouvez créer des audiences qui seront ciblées en fonction de vos besoins. Pour afficher l&#39;éditeur de workflows, cliquez sur l&#39;onglet **[!UICONTROL Ciblage et workflows]** dans le tableau de bord des campagnes.
 
-Découvrez comment créer une audience dans un workflow de campagne dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html)
+Découvrez comment créer une audience dans un workflow de campagne sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=fr)
 
 
 ## Profils actifs{#active-profiles}
@@ -59,8 +59,8 @@ Adobe Campaign est un puissant outil servant à collecter et à traiter de trè
 
 **Rubriques connexes** 
 
-* [Conception et exécution d&#39;un workflow spécifique à une campagne](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/campaign-workflows.html)
+* [Concevoir et exécuter un workflow spécifique à une campagne](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/campaign-workflows.html?lang=fr)
 
-*  [Découvrez comment sélectionner l&#39;audience d&#39;une campagne](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html).
+*  [Découvrez comment sélectionner l’audience d’une campagne](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=fr).
 
-* [Prise en main des workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
+* [Prise en main des workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=fr)
