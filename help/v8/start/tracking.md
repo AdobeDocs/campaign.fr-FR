@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: f3de901f-519f-42ae-846c-f20c7cb560df
 source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '898'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -123,7 +123,7 @@ Pour en savoir plus sur les informations que vous pouvez surveiller après l’e
 
 ### Surveillance de vos workflows
 
-Découvrez comment surveiller l’exécution des workflows dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html)
+Découvrez comment surveiller l’exécution des workflows sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=fr)
 
 ### Surveillance de votre instance
 
