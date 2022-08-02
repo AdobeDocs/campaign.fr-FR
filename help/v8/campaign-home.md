@@ -4,9 +4,9 @@ description: Centre d'aide de Campaign v8
 title: Documentation du produit Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
 source-git-commit: 07c73a6ab22962472bde431948386d0142d6732d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '147'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 88%
 
 ## Nouveautés
 
-* **[[!DNL Adobe Campaign] guide d&#39;automatisation](https://experienceleague.adobe.com/docs/campaign/automation/home.html){target=&quot;_blank&quot;}** - Découvrez comment créer des workflows et des campagnes
+* **[[!DNL Adobe Campaign] guide d’automatisation](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=fr){target=&quot;_blank&quot;}** - Découvrez comment créer des workflows et des campagnes
 
 * **[En quoi consiste  [!DNL Adobe Campaign]](start/get-started.md)** ? - Principales fonctionnalités et cas d&#39;utilisation
 
