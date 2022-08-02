@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: b6a5083f-2b5a-4f5b-ad30-d91363752896
 source-git-commit: 59046a11c3e057cf41c322f190a9d8aef310c356
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '272'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -22,13 +22,13 @@ Les workflows peuvent être utiles pour automatiser certains de vos imports. Que
 
 ### Utiliser les données d&#39;une liste : lecture de liste {#data-from-read-list}
 
-Préparez et structurez vos données dans un fichier pour les importer avec un workflow. [En savoir plus](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html).
+Préparez et structurez vos données dans un fichier pour les importer avec un workflow. [En savoir plus](experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=fr).
 
 ### Charger des données depuis un fichier {#data-from-a-file}
 
-Les données traitées dans un workflow peuvent êtes extraites d&#39;un fichier structuré pour qu&#39;elles puissent être importées dans Adobe Campaign. [En savoir plus](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading--file-.html).
+Les données traitées dans un workflow peuvent êtes extraites d&#39;un fichier structuré pour qu’elles puissent être importées dans Adobe Campaign. [En savoir plus](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading--file-.html?lang=fr).
 
-Une fois les données collectées, vous pouvez les utiliser dans vos workflows, par exemple pour enrichir une diffusion ou mettre à jour la base de données. Pour plus d’informations, consultez [cette section](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html).
+Une fois les données collectées, vous pouvez les utiliser dans vos workflows, par exemple pour enrichir une diffusion ou mettre à jour la base de données. Pour plus d’informations, consultez [cette section](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=fr).
 
 ## Imports ponctuels{#import-jobs}
 
