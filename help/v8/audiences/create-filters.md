@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 source-git-commit: 59046a11c3e057cf41c322f190a9d8aef310c356
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1739'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -325,12 +325,12 @@ Une fois enregistrés, des filtres avancés sont disponibles lors de la sélecti
 
 Pour effectuer des fonctionnalités de filtre avancé, utilisez des fonctions pour définir le contenu du filtre. L&#39;éditeur de filtres avancés exploite toutes les fonctionnalités du requêteur de Campaign.
 
-Découvrez comment créer des requêtes avancées dans ces exemples de bout en bout :
+Découvrez comment créer des requêtes avancées dans ces exemples complets :
 
-* Découvrez comment cibler sur des attributs de destinataires simples dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
-* Découvrez comment filtrer les destinataires non contactés au cours des 7 derniers jours dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html).
-* Découvrez comment récupérer la liste des opérateurs peut être filtrée par des comptes Principaux dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html).
-* Découvrez comment créer une audience d’anniversaire dans  [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html).
+* Découvrez comment cibler des attributs destinataires simples sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=fr).
+* Découvrez comment filtrer les destinataires non contactés au cours des 7 derniers jours sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=fr).
+* Découvrez comment la liste des opérateurs peut être filtrée par comptes actifs sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=fr).
+* Découvrez comment créer une audience d’envoi d’e-mail d’anniversaire sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=fr).
 
 
 ### Paramètres avancés des filtres prédéfinis {#param-for-data-filters}
