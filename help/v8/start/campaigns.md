@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
 source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '844'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Avec Adobe Campaign, vous pouvez créer, configurer, exécuter et analyser tout
 
 ![](assets/calendar.png)
 
-![](../assets/do-not-localize/book.png) Découvrez comment accéder aux campagnes marketing et les mettre en oeuvre dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html).
+![](../assets/do-not-localize/book.png) Découvrez comment parcourir et implémenter des campagnes marketing dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=fr).
 
 ## Étapes clés pour bien démarrer{#gs-ac-start}
 
@@ -56,13 +56,13 @@ Les étapes clés permettant de créer une campagne marketing cross-canal sont l
 
    Définissez une hiérarchie, un planning et un budget, puis ajoutez des ressources et sélectionnez des opérateurs.
 
-   ![](../assets/do-not-localize/book.png) Découvrez comment créer un plan marketing et configurer des campagnes dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html).
+   ![](../assets/do-not-localize/book.png) Découvrez comment créer un plan marketing et configurer des campagnes sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=fr).
 
    Toutes les campagnes marketing sont basées sur un modèle qui stocke les principaux paramètres et fonctionnalités. Un modèle natif est fourni pour créer une opération pour laquelle aucune configuration spécifique n&#39;a été définie. Vous pouvez créer et configurer des modèles d&#39;opération, puis créer des opérations à partir de ces modèles.
 
-   Découvrez comment utiliser les modèles de campagne dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html).
+   Découvrez comment utiliser les modèles de campagne sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=fr).
 
-   Découvrez les campagnes récurrentes et comment les configurer dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html).
+   Découvrez les campagnes récurrentes et comment les configurer sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html?lang=fr).
 
 1. **Définition d&#39;audiences**
 
@@ -70,7 +70,7 @@ Les étapes clés permettant de créer une campagne marketing cross-canal sont l
 
    ![](assets/campaign-wf.png)
 
-   Découvrez comment définir l’audience de vos messages dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html).
+   Découvrez comment définir l’audience de vos messages sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=fr).
 
 1. **Création de diffusions**
 
@@ -78,17 +78,17 @@ Les étapes clés permettant de créer une campagne marketing cross-canal sont l
 
    ![](assets/campaign-dashboard.png)
 
-   ![](../assets/do-not-localize/book.png) Découvrez comment créer et démarrer des diffusions de campagne marketing dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html).
+   ![](../assets/do-not-localize/book.png) Découvrez comment créer et lancer des diffusions de campagnes marketing sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=fr).
 
-   Vous pouvez associer divers documents à une opération, comme des rapports, photos, pages web, diagrammes, etc.
+   Vous pouvez associer divers documents à une campagne, comme des rapports, photos, pages web, diagrammes, etc.
 
-   ![](../assets/do-not-localize/book.png) En savoir plus sur les documents associés dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html).
+   ![](../assets/do-not-localize/book.png) Pour en savoir plus sur les documents associés, consultez [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html?lang=fr).
 
 1. **Configuration du processus de validation**
 
    Avec Adobe Campaign, vous pouvez mettre en place des processus collaboratifs de validation des principales étapes d’une campagne marketing. Pour chaque campagne, vous pouvez valider la cible de diffusion, le contenu et les coûts. Les opérateurs Adobe Campaign en charge de la validation peuvent être avertis par e-mail et peuvent accepter ou refuser la validation depuis la console ou via une connexion web.
 
-   Découvrez comment configurer et gérer les validations dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=en#campaign-orchestration).
+   Découvrez comment configurer et gérer les validations sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=fr#campaign-orchestration?lang=fr).
 
 
 ## Module complémentaire Marketing distribué{#distributed-marketing-add-on}
@@ -99,7 +99,7 @@ Adobe Campaign propose un module complémentaire **Marketing distribué** pour l
 >
 >Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-Découvrez comment configurer et utiliser les fonctionnalités de marketing distribué de Campaign dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html)
+Découvrez comment configurer et utiliser les fonctionnalités du marketing distributé Campaign sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=fr)
 
 ## Module complémentaire Gestion de la réaction{#response-manager-add-on}
 
