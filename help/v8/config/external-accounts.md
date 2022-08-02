@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: 59046a11c3e057cf41c322f190a9d8aef310c356
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1180'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Adobe Campaign utilise les comptes techniques suivants pour activer et exécute
 
 Le compte externe **Mails rebonds** spécifie le compte externe POP3 à utiliser pour se connecter au service de messagerie. Tous les serveurs configurés pour l&#39;accès POP3 peuvent être utilisés pour recevoir les retours d&#39;e-mail.
 
-En savoir plus sur les emails entrants dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html)
+Pour en savoir plus sur les e-mails entrants, consultez [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=fr)
 
 ![](assets/bounce_external_1.png)
 
@@ -165,7 +165,7 @@ Dans le contexte des messages transactionnels, les instances d&#39;exécution so
 
 Ces comptes externes peuvent être utilisés pour importer ou exporter des données vers Adobe Campaign à l&#39;aide d&#39;une activité de workflow **[!UICONTROL Transfert de fichier]**.
 
-En savoir plus sur le transfert de fichiers dans les workflows dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html)
+Pour en savoir plus sur le transfert de fichiers dans les workflows, consultez [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=fr)
 
 * **FTP et SFTP**
 
@@ -178,13 +178,13 @@ Pour ce faire, spécifiez dans ce compte externe l&#39;adresse et les informatio
 
    * **[!UICONTROL Serveur du compte AWS S3]**: URL de votre serveur, renseignée comme suit :   ```<S3bucket name>.s3.amazonaws.com/<s3object path>```
 
-   * **[!UICONTROL Identifiant de clé d’accès AWS]**: Découvrez comment trouver votre ID de clé d’accès AWS dans [Documentation Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target=&quot;_blank&quot;}.
+   * **[!UICONTROL ID de la clé d’accès AWS]** : découvrez comment trouver votre ID de clé d’accès AWS dans la [documentation Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target=&quot;_blank&quot;}.
 
-   * **[!UICONTROL Clé d’accès secrète à AWS]**: Découvrez comment trouver votre clé d’accès secrète à AWS dans [Documentation Amazon](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target=&quot;_blank&quot;}.
+   * **[!UICONTROL Clé d’accès secrète à AWS]** : découvrez comment trouver votre clé d’accès secrète à AWS en consultant la [documentation Amazon](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target=&quot;_blank&quot;}.
 
-   * **[!UICONTROL Région AWS]**: En savoir plus sur les régions AWS dans [Documentation Amazon](https://aws.amazon.com/fr/about-aws/global-infrastructure/regions_az/){target=&quot;_blank&quot;}.
+   * **[!UICONTROL Région AWS]** : pour en savoir plus sur les régions AWS, consultez la [documentation Amazon](https://aws.amazon.com/fr/about-aws/global-infrastructure/regions_az/){target=&quot;_blank&quot;}.
 
-   * La case à cocher **[!UICONTROL Utiliser le chiffrement coté serveur]** vous permet de stocker votre fichier en mode chiffré dans S3. Découvrez comment trouver l’identifiant de clé d’accès et la clé d’accès secrète dans [Documentation Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target=&quot;_blank&quot;}.
+   * La case à cocher **[!UICONTROL Utiliser le chiffrement côté serveur]** vous permet de stocker votre fichier en mode chiffré dans S3. Découvrez comment trouver l’ID de la clé d’accès et la clé d’accès secrète dans la [documentation Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target=&quot;_blank&quot;}.
 
 * **Stockage Azure Blob**
 
@@ -194,4 +194,4 @@ Pour ce faire, spécifiez dans ce compte externe l&#39;adresse et les informatio
 
    * **[!UICONTROL Chiffrement]** : type de chiffrement, **[!UICONTROL Aucun]** ou **[!UICONTROL SSL]**.
 
-   * **[!UICONTROL Clé d’accès]**: Découvrez comment trouver votre **[!UICONTROL Clé d’accès]** in [Documentation Microsoft](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target=&quot;_blank&quot;}.
+   * **[!UICONTROL Clé d’accès]** : découvrez comment trouver votre **[!UICONTROL clé d’accès]** dans la [documentation Microsoft](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target=&quot;_blank&quot;}.
