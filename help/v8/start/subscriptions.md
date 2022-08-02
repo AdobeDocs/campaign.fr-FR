@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
 source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '549'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Pour abonner (opt-in) un profil à un service, les options disponibles sont les 
 
    ![](assets/subscribe-confirm.png)
 
-   ![](../assets/do-not-localize/book.png) Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=fr#deliveries-tab){target=&quot;_blank&quot;}
 
 
 * Importer des destinataires et les abonner automatiquement à un service d’information : pour ce faire, sélectionnez le service visé dans la dernière étape de l’assistant d’import.
@@ -56,7 +56,7 @@ Pour abonner (opt-in) un profil à un service, les options disponibles sont les 
 
    ![](assets/wf-subscription.png)
 
-   En savoir plus sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html).
+   En savoir plus sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html?lang=fr).
 
 Pour désabonner (opt-out) un profil d&#39;un service, les options disponibles sont les suivantes :
 
