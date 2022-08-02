@@ -7,9 +7,9 @@ level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2167'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -155,7 +155,7 @@ _28 octobre 2021_
 <tbody> 
 <tr> 
 <td> <p>Le module Optimisation des campagnes est désormais disponible. Ce module permet de contrôler, de filtrer et de surveiller l’envoi des diffusions. Pour éviter les conflits entre les campagnes, Adobe Campaign peut tester différentes combinaisons en appliquant des règles de contrainte spécifiques. Elles permettent de s’assurer que les messages envoyés répondent aux attentes et aux besoins des clients et des stratégies de communication de l’entreprise.</p>
-<p>Pour plus d’informations, consultez la <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=en#campaign-optimization">documentation détaillée</a>.</p>
+<p>Pour plus d’informations, consultez la <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=fr">documentation détaillée</a>.</p>
 </td> 
 </tr> 
 </tbody> 
