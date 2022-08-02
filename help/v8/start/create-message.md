@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '633'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -48,13 +48,13 @@ Une fois votre message créé et son contenu conçu et testé, vous pouvez chois
 
    ![](assets/deliveries-in-a-campaign.png)
 
-   Découvrez comment envoyer des messages dans le contexte d’une campagne dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html)
+   Découvrez comment envoyer des messages dans le cadre d’une campagne dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=fr)
 
 * Envoyer des messages via un [workflow](../config/workflows.md)
 
    ![](assets/send-in-a-wf.png)
 
-   ![](../assets/do-not-localize/glass.png) Découvrez comment automatiser les diffusions email dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery.html)
+   ![](../assets/do-not-localize/glass.png) Découvrez comment automatiser les diffusions e-mail sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery.html?lang=fr)
 
 * [Déclencher des messages](../send/transactional.md) à partir d&#39;un événement
    ![](../assets/do-not-localize/book.png) [Cas pratique : découvrez comment envoyer un e-mail transactionnel avec une pièce jointe](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=fr){target=&quot;_blank&quot;}
@@ -63,7 +63,7 @@ Une fois votre message créé et son contenu conçu et testé, vous pouvez chois
 
    ![](assets/schedule-send.png)
 
-   ![](../assets/do-not-localize/glass.png) [Cas pratique : découvrez comment planifier et envoyer un e-mail d&#39;anniversaire](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html)
+   ![](../assets/do-not-localize/glass.png) [Cas pratique : découvrez comment planifier et envoyer un e-mail d&#39;anniversaire](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=fr)
 
 
 ## Ajout de personnalisation{#personalization}
@@ -100,6 +100,6 @@ La surveillance de vos diffusions après leur envoi est une étape clé pour vou
 
 * [Bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=fr){target=&quot;_blank&quot;}
 
-* [Test et envoi d’un e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html){target=&quot;_blank&quot;}
+* [Test et envoi d’un e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html?lang=fr){target=&quot;_blank&quot;}
 
 * [Envoi de bons à tirer](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target=&quot;_blank&quot;}
