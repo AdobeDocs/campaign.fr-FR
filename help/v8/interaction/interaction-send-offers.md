@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
 source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1340'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Plusieurs activités de workflow permettent de définir la présentation des off
 
 ### Enrichissement {#enrichment}
 
-L&#39;activité **Enrichissement** vous permet d&#39;ajouter des offres ou des liens vers des offres pour les destinataires d&#39;une diffusion.[En savoir plus](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html)
+L&#39;activité **Enrichissement** vous permet d&#39;ajouter des offres ou des liens vers des offres pour les destinataires d&#39;une diffusion.[En savoir plus](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=fr)
 
 Vous pouvez par exemple enrichir les données d&#39;une requête sur les destinataires, avant une diffusion.
 
@@ -163,7 +163,7 @@ La diffusion stocke automatiquement le rang et le poids des offres. Ces informat
 
 L&#39;activité **[!UICONTROL Moteur d&#39;offres]** vous permet également de définir un appel au moteur d&#39;offres en amont de la diffusion.
 
-Pour plus d’informations sur **Moteur d&#39;offres** activité, voir [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html)
+Pour plus d’informations sur l’activité **Moteur d’offres**, consultez [cette page](experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html?lang=fr)
 
 Cette activité fonctionne sur le même principe que l&#39;activité **Enrichissement** avec un appel au moteur, en enrichissant les données de la population entrante avec une offre calculée par le moteur, avant une diffusion.
 
@@ -186,7 +186,7 @@ Après avoir configuré votre activité **Requête** :
 
 L&#39;activité **[!UICONTROL Offres par cellules]** vous permet de répartir la population entrante (par exemple issue d&#39;une requête) en plusieurs segments, et de définir une offre à proposer pour chacun de ces segments.
 
-Pour plus d’informations sur **Offre par cellule** activité, voir [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html)
+Pour plus d’informations sur l’activité **Cellule Offrir par**, consultez [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html?lang=fr)
 
 Pour cela :
 
