@@ -1,18 +1,18 @@
 ---
 audience: user
-user-guide-title: Guide d’automatisation des campagnes
-user-guide-description: Guide d’automatisation des campagnes
+user-guide-title: Guide d’automatisation de Campaign
+user-guide-description: Guide d’automatisation de Campaign
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 86%
+ht-degree: 88%
 
 ---
 
 
 # Guides d’automatisation de campagne {#automation}
 
-+ [Guide d’automatisation des campagnes](home.md)
++ [Guide d’automatisation de Campaign](home.md)
 + Automatisation à l’aide de workflows {#workflows}
    + Prise en main des workflows {#introduction}
       + [À propos des workflows](workflow/about-workflows.md)

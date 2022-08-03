@@ -3,7 +3,8 @@ product: campaign
 title: Workflows techniques
 description: En savoir plus sur les workflows techniques disponibles avec Campaign
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '1674'
 ht-degree: 90%
@@ -86,4 +87,3 @@ Découvrez comment surveiller les workflows techniques dans ce [section dédiée
 | **Tracking** (tracking) | Installé par défaut | Ce workflow réalise la récupération et la consolidation des informations de tracking. Il assure également le re-calcul des statistiques de tracking et de diffusions, notamment celles utilisées par les workflows d&#39;archivage de Message Center. Par défaut, il se déclenche toutes les heures. |
 | **Mise à jour du statut des événements** (updateEventsStatus) | Exécution des messages transactionnels (Message Center - Exécution) | Ce workflow permet d&#39;attribuer un statut à l&#39;événement. Les statuts d&#39;un événement sont les suivants :<ul><li>En attente : l&#39;événement se trouve dans la file d&#39;attente. Aucun modèle de message ne lui a encore été associé.</li><li>En attente de diffusion : l&#39;événement est dans la file d&#39;attente, un modèle de message lui a été associé et il est en cours de traitement par la diffusion.</li><li>Envoyé : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a été envoyée.</li><li>Ignoré par la diffusion : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a été ignorée.</li><li>Erreur de diffusion : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a échoué.</li><li>Evénement non pris en charge : l&#39;association de l&#39;événement à un modèle de message a échoué. L&#39;événement ne sera pas retraité.</li></ul> |
 | **Mettre à jour pour la délivrabilité** (deliverabilityUpdate) | Installé par défaut | Une fois le package Supervision de la délivrabilité (Email Deliverability) installé, ce workflow s’exécute de nuit et gère les règles de qualification des e-mails de retour, ainsi que la liste des domaines et des MX. Pour ce faire, le port HTTPS doit être ouvert sur la plateforme. |
-

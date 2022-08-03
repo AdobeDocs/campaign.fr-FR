@@ -3,7 +3,8 @@ product: campaign
 title: Surveiller les workflows techniques
 description: Surveiller les workflows techniques
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 97%

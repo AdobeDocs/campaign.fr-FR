@@ -3,7 +3,8 @@ product: campaign
 title: Publier le pack de campagnes
 description: Publier le pack de campagnes
 feature: Distributed Marketing
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 2cd1981d-f192-41dc-b2f2-4fcd60493079
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 100%

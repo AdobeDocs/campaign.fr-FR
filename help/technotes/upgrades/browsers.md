@@ -3,7 +3,7 @@ product: campaign
 title: Composants web Campaign et version 100 dans les navigateurs Chrome, Firefox et Edge
 description: Composants web Campaign et version 100 dans les navigateurs Chrome, Firefox et Edge
 source-git-commit: d7386669133aaeaed46a5df6d90c8106569d2fcc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 100%
 

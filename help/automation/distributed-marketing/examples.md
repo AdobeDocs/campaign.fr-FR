@@ -3,7 +3,8 @@ product: campaign
 title: Exemples de marketing distribué
 description: Exemples de marketing distribué
 feature: Distributed Marketing
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 7825426b-c9e4-49e9-840c-dc6d6d836fbe
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 95%

@@ -3,7 +3,8 @@ product: campaign
 title: Modèles de campagne marketing
 description: Modèles de campagne marketing
 feature: Campaigns, Templates
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 49%

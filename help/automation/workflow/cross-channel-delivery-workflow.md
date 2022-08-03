@@ -3,7 +3,8 @@ product: campaign
 title: Workflow de diffusion cross-canal
 description: En savoir plus sur les workflows de diffusion cross-canal
 feature: Workflows, Channels Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 90%

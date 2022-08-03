@@ -3,7 +3,8 @@ product: campaign
 title: Gérer les fuseaux horaires
 description: Gérer les fuseaux horaires
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 04b7638d-55dd-4317-b605-5d618ef014ba
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 96%

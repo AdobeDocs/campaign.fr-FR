@@ -3,7 +3,8 @@ product: campaign
 title: Création de campagnes marketing
 description: Découvrez comment créer et exécuter des campagnes marketing
 feature: Campaigns, Cross Channel Orchestration, Programs
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 50%
@@ -206,4 +207,3 @@ Vous pouvez également utiliser le lien contenu dans les messages de notificatio
 Cette vidéo explique comment créer un plan marketing, des programmes et des campagnes.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)
-

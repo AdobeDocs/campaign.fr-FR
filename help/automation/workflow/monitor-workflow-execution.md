@@ -3,7 +3,8 @@ product: campaign
 title: Surveiller l’exécution des workflows
 description: Surveiller l’exécution des workflows
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: bc13d706-7888-42eb-9116-5538e68cd515
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '2027'
 ht-degree: 95%

@@ -3,7 +3,8 @@ product: campaign
 title: Configuration et gestion du processus de validation
 description: Découvrez comment gérer les validations des campagnes marketing
 feature: Approvals, Campaigns
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 03be5058-436e-4de9-99a7-91d799aa17f6
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '2435'
 ht-degree: 55%

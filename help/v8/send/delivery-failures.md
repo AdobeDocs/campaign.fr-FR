@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
 source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3060'
 ht-degree: 100%
 
@@ -378,7 +378,7 @@ Le mécanisme de mise en quarantaine d&#39;Android V2 utilise le même processu
  <tbody> 
   <tr> 
    <td> <strong>Scénario</strong><br /> </td> 
-   <td> <strong>Status</strong><br /> </td> 
+   <td> <strong>État</strong><br /> </td> 
    <td> <strong>Message de l'erreur</strong><br /> </td> 
    <td> <strong>Type de l'échec</strong><br /> </td> 
    <td> <strong>Raison de l'échec</strong><br /> </td> 
@@ -593,7 +593,7 @@ Les spécificités du canal SMS sont énumérées ci-dessous.
  <tbody> 
   <tr> 
    <td> <strong>Scénario</strong><br /> </td> 
-   <td> <strong>Status</strong><br /> </td> 
+   <td> <strong>État</strong><br /> </td> 
    <td> <strong>Message de l'erreur</strong><br /> </td> 
    <td> <strong>Type de l'échec</strong><br /> </td> 
    <td> <strong>Raison de l'échec</strong><br /> </td> 

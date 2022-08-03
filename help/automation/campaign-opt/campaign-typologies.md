@@ -3,7 +3,8 @@ product: campaign
 title: Prise en main des typologies de campagne
 description: Découvrez comment configurer et implémenter des typologies de campagne
 feature: Typology Rules
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 7832ffe1-eb65-4b37-9fc5-1374516755d9
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 57%
@@ -70,5 +71,3 @@ Cette vidéo explique comment implémenter la gestion de la fatigue dans Adobe 
 La gestion de la lassitude contrôle la fréquence et le nombre des messages afin d&#39;éviter une sollicitation excessive des destinataires. Si votre instance ne contient pas le module d&#39;optimisation de campagne, vous pouvez configurer un filtre prédéfini qui filtrera la population cible en fonction du nombre de messages reçus. Cette vidéo explique comment implémenter la gestion de la fatigue dans Adobe Campaign  à l&#39;aide de filtres.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
-
-

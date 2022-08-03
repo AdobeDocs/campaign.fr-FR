@@ -3,7 +3,8 @@ product: campaign
 title: Prise en main des campagnes marketing
 description: Découvrez comment commencer avec les campagnes marketing
 feature: Campaigns, Cross Channel Orchestration, Programs
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: eb1a0e52-14d9-4ad2-8bf2-ea955c6fd0f5
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 24%

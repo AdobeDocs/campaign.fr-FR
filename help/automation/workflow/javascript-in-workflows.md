@@ -3,7 +3,8 @@ product: campaign
 title: Exemples de code JavaScript dans les workflows
 description: Ces exemples montrent comment vous pouvez utiliser le code JavaScript dans un workflow
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '1763'
 ht-degree: 100%
@@ -617,5 +618,5 @@ Cette vidéo présente un exemple d’utilisation d’une méthode d’API non s
    * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html)
    * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html)
    * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html)
-   * [Write](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html)
+   * [Write](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=fr)
 * [fonction logInfo](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html)

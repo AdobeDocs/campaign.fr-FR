@@ -3,7 +3,8 @@ product: campaign
 title: Créer une campagne locale
 description: Créer une campagne locale
 feature: Distributed Marketing
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: b46530b5-cb81-40d7-b596-c7685359782a
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 95%

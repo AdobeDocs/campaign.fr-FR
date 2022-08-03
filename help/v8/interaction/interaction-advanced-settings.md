@@ -4,7 +4,7 @@ description: Paramètres avancés de Campaign Interaction
 role: Data Engineer
 level: Beginner
 source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 100%
 

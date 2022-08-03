@@ -3,7 +3,8 @@ product: campaign
 title: Gestion des autorisations relatives aux workflows
 description: Découvrez comment gérer les autorisations relatives aux workflows
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 3cb8aeec-e758-4b71-adef-67942cf9ded7
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 100%

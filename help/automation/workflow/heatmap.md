@@ -3,7 +3,8 @@ product: campaign
 title: Carte thermique des workflows Campaign
 description: Surveillez vos workflows avec la Carte thermique des workflows
 feature: Workflows, Heatmap
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 97%

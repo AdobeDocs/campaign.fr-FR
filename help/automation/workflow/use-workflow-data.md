@@ -2,7 +2,8 @@
 title: Utilisation des données de workflow
 description: Découvrez comment utiliser les données d'un workflow
 feature: Workflows, Data Management
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 77%
@@ -138,6 +139,3 @@ Les données de la base Adobe Campaign et les listes existantes peuvent être m
 ### Gérer les abonnements {#subscription-management}
 
 Pour comprendre comment abonner et désabonner des destinataires à un service d&#39;information via un workflow, consultez la section [Services d’abonnement](subscription-services.md).
-
-
-

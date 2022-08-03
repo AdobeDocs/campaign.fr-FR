@@ -2,9 +2,12 @@
 keywords: Automatisation de Campaign;accueil;rubriques les plus consultées
 product: campaign
 title: Accueil d’Adobe Campaign Automatisation
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+feature: Overview
+description: Vue d’ensemble
+exl-id: 9ed73e65-3626-46c6-bfeb-a9fe9c2d7f72
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '187'
 ht-degree: 39%
 
 ---
@@ -76,4 +79,3 @@ Consultez les guides ci-dessous et découvrez comment créer de l’automatisati
   </td>
 </tr>
 </table>
-

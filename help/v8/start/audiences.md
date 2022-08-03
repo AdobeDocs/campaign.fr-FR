@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 100%
 
@@ -61,6 +61,6 @@ Adobe Campaign est un puissant outil servant à collecter et à traiter de trè
 
 * [Concevoir et exécuter un workflow spécifique à une campagne](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/campaign-workflows.html?lang=fr)
 
-*  [Découvrez comment sélectionner l’audience d’une campagne](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=fr).
+*  [Découvrez comment sélectionner l’audience d’une campagne](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html).
 
 * [Prise en main des workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=fr)

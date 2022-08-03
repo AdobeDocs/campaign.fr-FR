@@ -6,7 +6,7 @@ feature: Workflows, Data Management
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
 workflow-type: tm+mt
 source-wordcount: '565'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Le premier onglet de l’activité du **[!UICONTROL Collecteur de fichiers]** vo
 
    * **[!UICONTROL Filtre]**
 
-      Seuls les fichiers correspondant à ce filtre sont pris en compte. Les autres fichiers du répertoire seront ignorés. Si le filtre est vide, tous les fichiers du répertoire seront pris en compte. Exemples de filtre : **&#42;.zip**, **import-&#42;.txt**.
+      Seuls les fichiers correspondant à ce filtre sont pris en compte. Les autres fichiers du répertoire seront ignorés. Si le filtre est vide, tous les fichiers du répertoire seront pris en compte. Exemples de filtre : **&#42;.zip**, **import-&#42;.txt**.
 
    * **[!UICONTROL Terminer dès qu&#39;un fichier est traité]**
 

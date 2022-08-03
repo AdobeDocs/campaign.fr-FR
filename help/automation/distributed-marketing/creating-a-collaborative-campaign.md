@@ -3,7 +3,8 @@ product: campaign
 title: Création d’une opération collaborative
 description: Découvrez comment créer une campagne collaborative
 feature: Distributed Marketing
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 93%

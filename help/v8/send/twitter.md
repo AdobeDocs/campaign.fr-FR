@@ -9,7 +9,7 @@ exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
 workflow-type: tm+mt
 source-wordcount: '975'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -143,7 +143,7 @@ Pour envoyer des messages directs à vos abonnés, procédez comme suit :
 
 >[!CAUTION]
 >
->Vous ne pouvez pas envoyer plus de 250 messages directs par jour. Pour éviter de dépasser ce seuil, vous pouvez effectuer une diffusion par vagues. Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#sending-using-multiple-waves){target=&quot;_blank&quot;}.
+>Vous ne pouvez pas envoyer plus de 250 messages directs par jour. Pour éviter de dépasser ce seuil, vous pouvez effectuer une diffusion par vagues. Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr?lang=en#sending-using-multiple-vagues){target=&quot;_blank&quot;}.
 
 
 ## Accès aux données de suivi {#tw-tracking}
