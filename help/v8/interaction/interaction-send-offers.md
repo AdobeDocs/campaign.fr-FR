@@ -163,7 +163,7 @@ La diffusion stocke automatiquement le rang et le poids des offres. Ces informat
 
 L&#39;activité **[!UICONTROL Moteur d&#39;offres]** vous permet également de définir un appel au moteur d&#39;offres en amont de la diffusion.
 
-Pour plus d’informations sur l’activité **Moteur d’offres**, consultez [cette page](experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html?lang=fr)
+Pour plus d’informations sur l’activité **Moteur d’offres**, consultez [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html?lang=fr)
 
 Cette activité fonctionne sur le même principe que l&#39;activité **Enrichissement** avec un appel au moteur, en enrichissant les données de la population entrante avec une offre calculée par le moteur, avant une diffusion.
 
