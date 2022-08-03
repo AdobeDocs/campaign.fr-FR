@@ -22,7 +22,7 @@ Les workflows peuvent être utiles pour automatiser certains de vos imports. Que
 
 ### Utiliser les données d&#39;une liste : lecture de liste {#data-from-read-list}
 
-Préparez et structurez vos données dans un fichier pour les importer avec un workflow. [En savoir plus](experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=fr).
+Préparez et structurez vos données dans un fichier pour les importer avec un workflow. [En savoir plus](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=fr).
 
 ### Charger des données depuis un fichier {#data-from-a-file}
 
