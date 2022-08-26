@@ -28,7 +28,7 @@ Pour cela :
 
 1. Paramétrez le modèle de diffusion.
 
-Le paramétrage de cette activité est semblable à la création d&#39;un modèle de diffusion au niveau des options disponibles. Voir à ce sujet cette  .
+Le paramétrage de cette activité est semblable à la création d&#39;un modèle de diffusion au niveau des options disponibles. Pour plus d&#39;informations à ce sujet, reportez-vous à .
 
 Un exemple d&#39;utilisation de cette activité est proposé dans cette [section](send-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 

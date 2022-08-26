@@ -99,7 +99,7 @@ La mise à jour des données et la fusion des collections permet de mettre à jo
 
 1. Indiquez les collections à déplacer vers l&#39;enregistrement primaire et les champs à mettre à jour.
 
-   Renseignez également les règles s&#39;appliquant à ces derniers lorsqu&#39;un ou plusieurs enregistrements secondaires sont identifiés. Pour cela, vous pouvez vous aider de l&#39;outil de construction d&#39;expressions. Voir à ce propos cette . . Par exemple, en indiquant que c&#39;est la valeur mise à jour le plus récemment parmi les différents enregistrements qui doit être conservée.
+   Renseignez également les règles s&#39;appliquant à ces derniers lorsqu&#39;un ou plusieurs enregistrements secondaires sont identifiés. Pour cela, vous pouvez vous aider de l&#39;outil de construction d&#39;expressions. Pour plus d&#39;informations, reportez-vous à .Par exemple, en indiquant que c&#39;est la valeur mise à jour le plus récemment parmi les différents enregistrements qui doit être conservée.
 
    Indiquez ensuite les conditions de prise en compte de la règle.
 

@@ -7,15 +7,15 @@ exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '1007'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 # Création et configuration de modèles d’opération {#campaign-templates}
 
-Toutes les opérations marketing sont basées sur un modèle qui stocke les principales caractéristiques et fonctionnalités. Campaign est fourni avec un modèle intégré pour créer des campagnes. Toutes les fonctionnalités de ce modèle sont activées : Documents, Adresses de contrôle, Validations, Compositions de diffusion, etc.
+Toutes les campagnes marketing sont basées sur un modèle qui stocke les principales caractéristiques et fonctionnalités. Campaign est fourni avec un modèle intégré qui permet de créer des campagnes. Toutes les fonctionnalités de ce modèle sont activées : documents, adresses de contrôle, validations, compositions de diffusion, etc.
 
-Les fonctionnalités disponibles dépendent de vos autorisations, modules complémentaires et de la configuration de votre plateforme Adobe Campaign.
+Les fonctionnalités disponibles dépendent de vos autorisations, modules complémentaires et de la configuration de votre plateforme Adobe Campaign.
 
 
 >[!NOTE]
@@ -26,86 +26,86 @@ Un modèle natif est fourni pour créer une opération pour laquelle aucune conf
 
 ## Création d’un modèle d’opération {#create-a-campaign-template}
 
-Pour créer un modèle d’opération, procédez comme suit :
+Pour créer un modèle de campagne, procédez comme suit :
 
-1. Ouvrir la campagne **Explorateur** et accédez à **Ressources > Modèles > Modèles d’opération**.
-1. Cliquez sur **Nouveau** dans la barre d’outils située au-dessus de la liste des modèles.
+1. Ouvrez l&#39;**Explorateur** Campaign et accédez à **Ressources > Modèles > Modèles de campagne**.
+1. Cliquez sur **Nouveau** dans la barre d&#39;outils située au-dessus de la liste des modèles.
 
 ![](assets/campaign-template-node.png)
 
-Vous pouvez également **duplicata** le modèle intégré pour réutiliser et adapter sa configuration. Pour cela, cliquez avec le bouton droit sur le modèle et sélectionnez **Dupliquer**.
+Vous pouvez également **dupliquer** le modèle par intégré afin de le réutiliser et d&#39;adapter sa configuration à vos besoins. Pour cela, faites un clic droit sur le modèle et sélectionnez **Dupliquer**.
 
 1. Saisissez le libellé du nouveau modèle d&#39;opération.
 1. Cliquez sur **Enregistrer**, puis rouvrez le modèle.
-1. Dans le **Modifier** , définissez les propriétés du modèle.
-1. Sélectionner **Paramètres avancés de l&#39;opération...** lien pour ajouter un workflow à votre modèle d&#39;opération.
+1. Dans l&#39;onglet **Modifier**, définissez les propriétés du modèle.
+1. Sélectionnez le lien **Paramètres avancés de la campagne...** pour ajouter un workflow à votre modèle de campagne.
 
    ![](assets/campaign-template-parameters.png)
 
-1. Modifiez la variable **Ciblage et workflows** valeur à **Oui** et confirmez. Découvrez comment ajouter des fonctionnalités dans [cette section](#typology-of-enabled-modules).
-1. Le **Ciblage et workflows** est ajouté au modèle. Cliquez sur **Ajouter un workflow...**, saisissez une **Libellé** et cliquez sur **Ok**.
+1. Remplacez la valeur **Ciblage et workflows** par **Oui**, puis confirmez. Découvrez comment ajouter des fonctionnalités dans [cette section](#typology-of-enabled-modules).
+1. L&#39;onglet **Ciblage et workflows** est ajouté au modèle. Cliquez sur **Ajouter un workflow...**, puis saisissez un **libellé** et cliquez sur **Ok**.
 1. Créez votre workflow selon vos besoins.
 
    ![](assets/campaign-template-create-wf.png)
 
 1. Cliquez sur **Enregistrer**. Votre modèle est maintenant prêt à être utilisé pour créer une nouvelle campagne.
 
-Les divers onglets et sous-onglets du modèle d’opération vous permettent d’accéder à ses paramètres, qui sont décrits dans la section [Configuration générale](#general-configuration).
+Les divers onglets et sous-onglets du modèle de campagne vous permettent d&#39;accéder à ses paramètres, qui sont décrits dans la section [Configuration générale](#general-configuration).
 
 ## Sélection des modules {#select-modules}
 
-Le **[!UICONTROL Paramètres avancés de l&#39;opération...]** lien permet d&#39;activer et désactiver les traitements pour les opérations basées sur ce modèle. Sélectionnez les fonctionnalités à activer dans les opérations créées à partir de ce modèle.
+Le lien **[!UICONTROL Paramètres avancés de la campagne…]** vous permet d&#39;activer et de désactiver des traitements des campagnes basées sur ce modèle. Sélectionnez les fonctionnalités à activer dans les campagnes créées à partir de ce modèle.
 
 ![](assets/campaign-template-select-modules.png)
 
-Si une fonctionnalité n&#39;est pas sélectionnée, les éléments concernant le processus (menus, icônes, options, onglets, sous-onglets, etc.) ne s’affichent pas dans l’interface du modèle ni dans les campagnes basées sur ce modèle. Les onglets situés à gauche des détails de l&#39;opération, ainsi que les onglets disponibles, correspondent aux fonctionnalités sélectionnées dans le modèle. Par exemple, la variable **Dépenses et objectifs** La fonctionnalité n’est pas activée. **[!UICONTROL Budget]** ne s’affichent pas dans les campagnes basées sur ce modèle.
+Si une fonctionnalité n&#39;est pas sélectionnée, les éléments relatifs au processus (menus, icônes, options, onglets, sous-onglets, etc.) n&#39;apparaîtront pas dans l&#39;interface du modèle ou dans les campagnes basées sur celui-ci. Les onglets situés à gauche des détails de la campagne, ainsi que ceux disponibles, coïncident généralement avec les processus sélectionnés dans le modèle. Par exemple, si la fonctionnalité **Dépenses et objectifs** n&#39;est pas sélectionnée, l&#39;onglet **[!UICONTROL Budget]** correspondant n&#39;apparaîtra pas dans les campagnes basées sur ce modèle.
 
-De plus, des raccourcis vers les fenêtres de configuration sont ajoutés dans le tableau de bord de l&#39;opération : lorsqu&#39;une fonctionnalité est activée, un lien direct permet d&#39;y accéder depuis le tableau de bord de l&#39;opération.
+De plus, des raccourcis vers les fenêtres de configuration sont ajoutés dans le tableau de bord de la campagne : lorsqu&#39;une fonctionnalité est activée, un lien direct permet d&#39;y accéder depuis le tableau de bord de la campagne.
 
-### Exemples de configuration
+### Modèles de configuration
 
-* Par exemple, avec les paramètres suivants :
+* Par exemple, avec les paramètres suivants :
 
    ![](assets/campaign-template-select-functionalities.png)
 
-   Le tableau de bord de l&#39;opération affiche :
+   Le tableau de bord de la campagne affiche :
 
    ![](assets/campaign-template-dashboard-sample-1.png)
 
-   Notez que la variable **[!UICONTROL Ciblage et workflows]** est manquant.
+   Notez que l&#39;onglet **[!UICONTROL Ciblage et workflows]** est manquant.
 
-   Les fonctionnalités suivantes sont disponibles :
+   Les fonctionnalités suivantes sont disponibles :
 
    ![](assets/campaign-template-edit-sample-1.png)
 
-   Notez que la variable **[!UICONTROL Budget]** est manquant.
+   Notez que l&#39;onglet **[!UICONTROL Budget]** est manquant.
 
    Les paramètres avancés de la campagne reflètent également cette configuration.
 
    ![](assets/campaign-template-parameters-sample-1.png)
 
-   Notez que la variable **[!UICONTROL Approbations]** n’est pas disponible.
+   Notez que l&#39;onglet **[!UICONTROL Validations]** n&#39;est pas disponible.
 
-* Avec cette configuration :
+* Avec cette configuration :
    ![](assets/campaign-template-dashboard-sample-2.png)
 
-   Le tableau de bord de l&#39;opération affiche :
+   Le tableau de bord de la campagne affiche :
 
    ![](assets/campaign-template-select-functionalities-2.png)
 
-   Notez que la variable **[!UICONTROL Ciblage et workflows]** est disponible, mais la variable **Ajouter un document** lien manquant.
+   Notez que l&#39;onglet **[!UICONTROL Ciblage et workflows]** est disponible, mais le lien **Ajouter un document** est manquant.
 
-   Les fonctionnalités suivantes sont disponibles :
+   Les fonctionnalités suivantes sont disponibles :
 
    ![](assets/campaign-template-edit-sample-2.png)
 
-   Notez que la variable **[!UICONTROL Budget]** est disponible.
+   Notez que l&#39;onglet **[!UICONTROL Budget]** est disponible.
 
    Les paramètres avancés de la campagne reflètent également cette configuration.
 
    ![](assets/campaign-template-parameters-sample-2.png)
 
-   Notez que la variable **[!UICONTROL Approbations]** est disponible, mais la variable **[!UICONTROL Population témoin]** et **[!UICONTROL Adresses de contrôle]** les onglets ne sont pas activés.
+   Notez que l&#39;onglet **[!UICONTROL Validations]** est disponible, mais les onglets **[!UICONTROL Population témoin]** et **[!UICONTROL Adresses de contrôle]** ne sont pas activés.
 
 
 ## Typologie des modules {#typology-of-enabled-modules}
@@ -125,7 +125,7 @@ De plus, des raccourcis vers les fenêtres de configuration sont ajoutés dans l
 
 * **Documents**
 
-   Lorsque ce module est sélectionné, un onglet supplémentaire est ajouté au **[!UICONTROL Modifier]** de l&#39;onglet du modèle et des opérations basées sur ce modèle. Les documents attachés peuvent être ajoutés depuis le modèle ou individuellement au niveau de chaque opération. En savoir plus sur les documents dans [cette section](marketing-campaign-deliveries.md#manage-associated-documents).
+   Lorsque ce module est sélectionné, un onglet supplémentaire est ajouté à l&#39;onglet **[!UICONTROL Modifier]** du modèle et des campagnes basées sur ce modèle. Les documents attachés peuvent être ajoutés à partir du modèle ou individuellement au niveau de chaque campagne. En savoir plus sur les documents dans [cette section](marketing-campaign-deliveries.md#manage-associated-documents).
 
    ![](assets/template-activate-3.png)
 
@@ -141,15 +141,15 @@ De plus, des raccourcis vers les fenêtres de configuration sont ajoutés dans l
 
    ![](assets/template-activate-5.png)
 
-   Lorsque ce module est activé, une **[!UICONTROL Tâches]** est ajouté aux paramètres avancés de l&#39;opération pour définir l&#39;ordre d&#39;exécution des processus.
+   Lorsque ce module est activé, un onglet **[!UICONTROL Traitements]** est ajouté dans les paramètres avancés de la campagne afin de définir la séquence d&#39;exécution du processus.
 
 * **Validations**
 
-   Si vous activez la variable **[!UICONTROL Approbations]**, vous pouvez sélectionner les traitements à valider et les opérateurs chargés de leur validation. En savoir plus sur les validations dans [cette section](marketing-campaign-approval.md#select-reviewers).
+   Si vous sélectionnez le module **[!UICONTROL Validations]**, vous pouvez sélectionner les processus à valider et choisir les opérateurs chargés de leur validation. En savoir plus sur les validations dans [cette section](marketing-campaign-approval.md#select-reviewers).
 
    ![](assets/template-activate-6.png)
 
-   Vous pouvez choisir d&#39;activer ou non la validation des traitements via le **[!UICONTROL Approbations]** de la section paramètres avancés des modèles .
+   Vous pouvez choisir d&#39;activer ou non la validation du processus dans l&#39;onglet **[!UICONTROL Validations]** de la section des paramètres avancés des modèles.
 
 * **Dépenses et objectifs**
 
@@ -162,21 +162,21 @@ De plus, des raccourcis vers les fenêtres de configuration sont ajoutés dans l
 
 ![](assets/template-op-type.png)
 
-Lorsque vous créez un modèle d&#39;opération, vous devez indiquer les informations suivantes :
+Lorsque vous créez un modèle de campagne, vous devez indiquer les informations suivantes :
 
-* Saisissez le **label** du modèle : le libellé est obligatoire et est le libellé par défaut pour toutes les opérations basées sur ce modèle.
-* Sélectionnez la **nature** de l&#39;opération dans la liste déroulante. Les valeurs proposées dans cette liste correspondent à celles enregistrées dans l&#39;énumération **[!UICONTROL natureOp]**.
+* Saisissez le **libellé** du modèle : le libellé est obligatoire et constitue le libellé par défaut pour toutes les campagnes basées sur ce modèle.
+* Sélectionnez la **nature** de la campagne dans la liste déroulante. Les valeurs proposées dans cette liste correspondent à celles enregistrées dans l&#39;énumération **[!UICONTROL natureOp]**.
    <!--
   >[!NOTE]
   >
   >For more information on enumerations, refer to the [Getting Started](../../platform/using/managing-enumerations.md) section.-->
 
-* Sélectionnez le **type de campagne** : unique, récurrente ou périodique. Par défaut, les modèles de campagne s’appliquent aux campagnes uniques. Les opérations périodiques et récurrentes sont décrites dans [cette section](recurring-periodic-campaigns.md).
+* Sélectionnez le **type de campagne** : unique, récurrente ou périodique. Par défaut, les modèles de campagne s&#39;appliquent aux campagnes uniques. Les opérations périodiques et récurrentes sont décrites dans [cette section](recurring-periodic-campaigns.md).
 * Indiquez la durée de l&#39;opération, c&#39;est-à-dire la période sur laquelle s&#39;étalera l&#39;opération. Lors de la création d&#39;une opération basée sur ce modèle, les dates de début et de fin de l&#39;opération seront alors automatiquement renseignées.
 
    S&#39;il s&#39;agit d&#39;une opération récurrente, vous devez indiquer les dates de début et de fin de l&#39;opération directement dans le modèle.
 
-* Spécifiez la variable **programme associé** du modèle : les opérations basées sur ce modèle sont liées au programme sélectionné.
+* Indiquez le **programme d&#39;appartenance** du modèle : les campagnes basées sur le modèle seront associées au programme sélectionné.
 
 <!--
 ## Track campaign execution{#campaign-reverse-scheduling}

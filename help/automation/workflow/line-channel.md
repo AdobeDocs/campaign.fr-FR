@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Canal LINE{#line-channel}
 
-Les workflows présentés ci-dessous sont installés par défaut avec le module **Canal LINE**. Pour plus d’informations sur ce module, consultez cette  .
+Les workflows présentés ci-dessous sont installés par défaut avec le module **Canal LINE**. Pour plus d&#39;informations sur ce module, référez-vous à  .
 
 <table> 
  <tbody> 

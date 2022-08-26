@@ -7,7 +7,7 @@ exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 Les workflows techniques ont besoin d&#39;être surveillés, et des mesures doivent être prises en cas d&#39;échec.
 
-D&#39;autres moyens de surveiller les différents processus de Campaign sont présentés dans la section .
+D&#39;autres méthodes de surveillance des différents processus de Campaign sont présentées dans .
 
 ## Tableau de bord de supervision de l’instance {#instance-monitoring-dashboard}
 

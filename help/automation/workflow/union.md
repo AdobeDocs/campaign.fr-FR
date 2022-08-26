@@ -6,19 +6,19 @@ feature: Workflows, Targeting Activity
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
 # Union{#union}
 
-A **[!UICONTROL Union]** regroupe le résultat de plusieurs activités entrantes dans une même cible. La cible est créée avec tous les résultats reçus : toutes les activités antérieures doivent donc être terminées pour que l’union soit exécutée.
+Une **[!UICONTROL union]** permet de regrouper les résultats de plusieurs activités entrantes dans une même cible. La cible est créée avec tous les résultats reçus : toutes les activités antérieures doivent donc être terminées afin que l&#39;union soit exécutée.
 
 ![](assets/s_user_segmentation_union.png)
 
 >[!NOTE]
 >
->Pour plus d’informations sur la configuration et l’utilisation de la variable **[!UICONTROL Union]** activité, voir [cette page](targeting-workflows.md#combining-several-targets--union-).
+>Pour plus d&#39;informations sur la configuration et l&#39;utilisation de l&#39;activité **[!UICONTROL Union]**, consultez [cette page](targeting-workflows.md#combining-several-targets--union-).
 
 ## Exemple d&#39;union {#union-example}
 
@@ -28,11 +28,11 @@ Dans l&#39;exemple suivant, les résultats de deux requêtes sont réunis afin d
 1. Indiquez éventuellement un libellé.
 1. Sélectionnez la méthode de réconciliation **[!UICONTROL Uniquement les clés]** dans la mesure où dans cet exemple, les populations issues des requêtes contiennent des données homogènes.
 1. Si vous avez ajouté des données additionnelles au niveau des requêtes, vous pouvez éventuellement choisir de ne conserver que celles qui sont communes.
-1. Si vous souhaitez limiter la taille de la population finale, cochez la case **[!UICONTROL Taille limitée de la population générée]** .
+1. Si vous souhaitez limiter la taille de la population finale, cochez l&#39;option **[!UICONTROL Limiter la taille de la population générée]**.
 
    Définissez cette dernière en indiquant le nombre de destinataires maximal et en choisissant la requête dont la population sera prioritaire.
 
-1. Approuver le **[!UICONTROL Union]** puis configurez l’activité [Mise à jour de liste](list-update.md) activité.
+1. Validez l&#39;activité **[!UICONTROL Union]** puis configurez l&#39;activité [Mise à jour de liste](list-update.md).
 1. Lancez le workflow. Le nombre de résultats s&#39;affiche et la liste définie au niveau de l&#39;activité de mise à jour de liste est créée ou mise à jour. Cette dernière contient l&#39;ensemble des destinataires des deux requêtes ou le nombre défini à l&#39;étape précédente, le cas échéant.
 
    ![](assets/union_example.png)

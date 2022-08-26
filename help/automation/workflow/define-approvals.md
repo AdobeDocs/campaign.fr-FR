@@ -7,7 +7,7 @@ exl-id: 8ac159c1-fd2e-4fb9-8275-18154f6f210c
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '868'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Dans les opérations, toutes les étapes qui nécessitent une validation fonctio
 
 ![](assets/validation-1-in-op.png)
 
-Vous trouverez des exemples de validations dans la section .
+Des exemples de validations sont proposés dans .
 
 Pour répondre, l&#39;opérateur dispose de deux modes : valider via la page web dont l&#39;URL est fournie dans l&#39;email envoyé, ou valider directement depuis la console.
 
@@ -37,7 +37,7 @@ Pour répondre, l&#39;opérateur dispose de deux modes : valider via la page we
 
 ## Validations par e-mail {#sending-emails}
 
-Il est possible de recevoir un message de validation qui contient un lien vers une page Web permettant de répondre. Pour le recevoir l&#39;opérateur ciblé doit renseigner son adresse email dans son profil. Dans le cas contraire, il devra passer par la console pour répondre.
+Il est possible de recevoir un message de validation qui contient un lien vers une page web permettant de répondre. Pour le recevoir l&#39;opérateur ciblé doit renseigner son adresse e-mail dans son profil. Dans le cas contraire, il devra passer par la console pour répondre.
 
 La gestion des opérateurs est présentée dans cette  .
 

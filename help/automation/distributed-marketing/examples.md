@@ -7,7 +7,7 @@ exl-id: 7825426b-c9e4-49e9-840c-dc6d6d836fbe
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '1369'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ Le type d’interface web **par formulaire** implique l’utilisation d’une **
 >
 >Les API sont décrites en détail dans le document qui leur est consacré.  .
 >
->L’application web utilisée dans cet exemple n’est pas une application web Adobe Campaign d’usine. Pour utiliser un formulaire dans une campagne, vous devez créer l’application web dédiée.
+>L&#39;application web utilisée dans cet exemple n&#39;est pas une application web Adobe Campaign d&#39;usine. Pour utiliser un formulaire dans une campagne, vous devez créer l&#39;application web dédiée.
 
-Lors de la création du modèle d&#39;opération, cliquez sur le bouton **[!UICONTROL Zoom]** dans le **[!UICONTROL Interface web]** de l’option **[!UICONTROL Paramètres avancés de l&#39;opération...]** lien pour accéder aux détails de l&#39;application web.
+Lors de la création du modèle de campagne, cliquez sur l&#39;icône **[!UICONTROL Zoom]** de l&#39;option **[!UICONTROL Interface web]** du lien **[!UICONTROL Paramètres avancés de la campagne...]** pour accéder aux détails de l&#39;application web.
 
 ![](assets/mkg_dist_local_op_form1.png)
 
@@ -201,7 +201,7 @@ Les étapes sont les suivantes :
 **Pour l&#39;entité centrale :**
 
 1. Créez l&#39;opération collaborative.
-1. Configurez la variable **[!UICONTROL Paramètres avancés de l&#39;opération...]** comme pour une campagne locale.
+1. Configurez les **[!UICONTROL Paramètres avancés de la campagne...]** comme pour une campagne locale.
 1. Paramétrez le workflow de l&#39;opération et la diffusion comme pour une opération locale.
 1. Mettez à jour le formulaire web.
 1. Créez le kit d&#39;opération et publiez.
@@ -226,11 +226,11 @@ Les étapes sont les suivantes :
 
 ### Côté entité centrale {#central-entity-side-1}
 
-1. Pour mettre en place une opération collaborative par formulaire, vous devez créer une opération à partir du **modèle d&#39;opération collaborative par formulaire**.
+1. Pour mettre en place une opération collaborative (par formulaire), vous devez créer une opération à partir du **modèle d&#39;opération collaborative (par formulaire)**.
 
    ![](assets/mkg_dist_use_case_form_1.png)
 
-1. Dans le **[!UICONTROL Modifier]** , cliquez sur l’onglet **[!UICONTROL Paramètres avancés de l&#39;opération...]** lien pour le paramétrer en tant qu&#39;opération locale. Pour plus d&#39;informations, consultez la section [Créer une campagne locale (par formulaire)](#creating-a-local-campaign--by-form-).
+1. Sous l&#39;onglet **[!UICONTROL Modifier]** de la campagne, cliquez sur le lien **[!UICONTROL Paramètres avancés de la campagne...]** pour la configurer comme une campagne locale. Pour plus d&#39;informations, consultez la section [Créer une campagne locale (par formulaire)](#creating-a-local-campaign--by-form-).
 
    ![](assets/mkg_dist_use_case_form_2.png)
 

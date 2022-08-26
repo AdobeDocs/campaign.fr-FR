@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Effectuer un calcul d'agrégat
-description: Découvrez comment effectuer des calculs d'agrégats dans des requêtes
+title: Effectuer un calcul d'agrégats
+description: Découvrez comment effectuer des calculs d'agrégats dans des requêtes.
 feature: Workflows
 exl-id: 00e564b5-3c8e-45d4-b240-c872a8b8ccb6
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '239'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Effectuer un calcul d&#39;agrégat {#performing-aggregate-computing}
+# Effectuer un calcul d&#39;agrégats {#performing-aggregate-computing}
 
 Dans cet exemple, vous allez comptabiliser le nombre de destinataires domiciliés à Paris, en fonction de leur genre.
 

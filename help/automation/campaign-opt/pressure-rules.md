@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Configuration des règles de pression
-description: Découvrez comment configurer des règles de pression
+title: Configurer les règles de pression
+description: Découvrir comment configurer des règles de pression
 feature: Fatigue Management, Typology Rules
 exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '3177'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Les règles de **Pression** permettent de gérer la fatigue marketing, en limita
 Les campagnes sont ainsi choisies en fonction des seuils définis et du poids de chaque message.
 
 * Le seuil est le nombre maximal de diffusions autorisées pour un destinataire pendant une période donnée. Il peut être fixe ou variable. Il est fixé ou calculé dans les paramètres de la règle de typologie. [En savoir plus](#maximum-number-of-messages).
-* Le poids de chaque diffusion permet d&#39;identifier les diffusions prioritaires dans un contexte de gestion de la pression. Les messages dont le poids est le plus important sont prioritaires. [En savoir plus](#message-weight).
+* Les poids de chaque diffusion permettent d&#39;identifier les diffusions prioritaires dans un contexte de gestion de la pression. Les messages dont le poids est le plus important sont prioritaires. [En savoir plus](#message-weight).
 
 L&#39;arbitrage consiste à s&#39;assurer que les campagnes planifiées ayant un poids supérieur à la campagne en cours ne déclencheront pas une sur-sollicitation du profil : si tel est le cas, le profil est exclu de l&#39;action de diffusion.
 
@@ -33,13 +33,13 @@ La règle d&#39;arbitrage pour définir les messages éligibles est appliquée l
 
 Dans le cas contraire, le destinataire sera **[!UICONTROL Exclu par arbitrage]**. [En savoir plus](#exclusion-after-arbitration).
 
-## Créez une règle de pression {#create-a-pressure-rule}
+## Créer une règle de pression {#create-a-pressure-rule}
 
 Pour mettre en place l&#39;arbitrage entre les campagnes sous Adobe Campaign, vous devez d&#39;abord créer des typologies de campagnes et définir les règles de typologies associées. Ces règles seront de type **Pression**.
 
 Pour créer et paramétrer une règle de typologie de type **[!UICONTROL Pression]**, les étapes sont les suivantes :
 
-1. Dans la liste des règles de typologie de campagne, sélectionnez la variable **[!UICONTROL Nouveau]** au-dessus de la liste.
+1. Dans la liste des règles de typologie de campagne, cliquez sur l&#39;icône **[!UICONTROL Nouveau]** située au-dessus de la liste.
 
    ![](assets/campaign_opt_create_a_rule_01.png)
 
@@ -107,9 +107,9 @@ Vous pouvez indexer le nombre de messages autorisés en fonction du segment auqu
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-Pour définir le seuil, vous pouvez utiliser une dimension liée à la dimension de ciblage : par exemple, pour inclure les messages envoyés aux profils de destinataires stockés dans la table des visiteurs (pour plus d’informations sur la table des visiteurs, reportez-vous à (cette section) (questionnaires/using/use-case—creating-a-refera-friend-form.md)) ou pour éviter d’envoyer plus d’un message par semaine à un même foyer (qui peut faire référence à plusieurs adresses email) identifié dans une dimension liée à celle des destinataires.
+Vous pouvez utiliser une dimension liée à la dimension de ciblage pour définir le seuil : par exemple, inclure les messages envoyés aux profils de destinataires stockés dans le tableau des visiteurs (pour plus d&#39;informations sur le tableau des visiteurs, reportez-vous à (cette section)(surveys/using/use-case--creating-a-refer-a-friend-form.md)) ou ne pas envoyer plus d&#39;un message par semaine à un même foyer (qui peut potentiellement renvoyer à plusieurs adresses e-mail), identifié dans une dimension liée à celle des destinataires.
 
-Pour cela, sélectionnez l&#39;option **[!UICONTROL Comptabiliser les messages sur une dimension liée]** puis de sélectionner la table des visiteurs ou celle des contrats.
+Pour cela, sélectionnez l&#39;option **[!UICONTROL Comptabiliser les messages sur une dimension liée]**, puis sélectionnez la table des visiteurs ou celle des contrats.
 
 ### Poids du message {#message-weight}
 
@@ -147,7 +147,7 @@ Par exemple, une règle de pression qui définit un seuil de 2 messages par sema
 >
 >Seules les diffusions déjà envoyées sont prises en compte dans le calcul du seuil.
 
-Pour limiter à 15 jours la prise en compte des diffusions, saisissez **15j** dans le **[!UICONTROL Période concernée]** field : les diffusions envoyées jusqu&#39;à deux semaines avant la date de la diffusion à laquelle la règle est appliquée seront prises en compte dans le calcul.
+Pour limiter les diffusions prises en compte pendant une période de 2 semaines, saisissez la valeur **15 j** dans le champ **[!UICONTROL Période concernée]** : les diffusions envoyées jusqu&#39;à 15 jours avant à la date de la diffusion à laquelle la règle est appliquée seront prises en compte dans le calcul.
 
 Le jour de début de la période dépend du paramétrage de la base de données.
 
@@ -315,7 +315,7 @@ Tout d&#39;abord, configurez la règle de pression.
 
    Cette option annule la valeur définie dans le champ **[!UICONTROL Fréquence]** et applique automatiquement la règle pendant la phase de personnalisation. [En savoir plus](apply-rules.md#adjust-calculation-frequency).
 
-1. Dans l&#39;onglet **[!UICONTROL Pression]**, sélectionnez **[!UICONTROL 7j]** pour la **[!UICONTROL Période concernée]** et **[!UICONTROL Regroupement à la journée]** pour le **[!UICONTROL Type de période]**.
+1. Dans l&#39;onglet **[!UICONTROL Pression]**, sélectionnez **[!UICONTROL 7 j]** pour la **[!UICONTROL Période concernée]** et **[!UICONTROL Regroupement à la journée]** pour le **[!UICONTROL Type de période]**.
 1. Dans l&#39;onglet **[!UICONTROL Typologies]**, associez la règle à une typologie de campagne.
 1. Enregistrez vos modifications.
 

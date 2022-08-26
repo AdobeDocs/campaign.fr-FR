@@ -7,7 +7,7 @@ exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '1163'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 La Carte thermique des workflows Campaign est une représentation graphique avec code-couleur de tous les workflows en cours d’exécution. Elle est disponible uniquement pour les **administrateurs de Campaign**.
 
-Découvrez des moyens supplémentaires de surveiller les processus Campaign dans .
+Découvrez d&#39;autres méthodes de surveillance des processus de Campaign sur cette page.
 
 ## Prise en main de la Carte thermique des workflows {#about-the-workflow-heatmap}
 
@@ -54,7 +54,7 @@ L’utilisation de la carte thermique des workflows demande une bonne maîtrise 
 
    >[!NOTE]
    >
-   >Seuls les workflows qui n&#39;ont pas été supprimés par le ** .\
+   >Seuls les workflows qui n&#39;ont pas été supprimés par le **.\
    >Par défaut, le fuseau horaire de la carte thermique des workflows est celui défini pour l&#39;utilisateur administrateur actuel. Vous pouvez vouloir le changer si, par exemple, vous ne vous trouvez pas dans la même zone géographique que les utilisateurs marketing avec lesquels vous travaillez.
 
 1. Cliquez sur le bouton **[!UICONTROL Filtres]**.
@@ -75,7 +75,7 @@ L’utilisation de la carte thermique des workflows demande une bonne maîtrise 
 
 1. Vous pouvez également appliquer un filtre selon le **[!UICONTROL Type de workflow]** :
 
-   * **[!UICONTROL Technique]** : Uniquement [workflows techniques intégrés](technical-workflows.md) et [workflows de gestion des données](targeting-workflows.md#data-management) s’affichent.
+   * **[!UICONTROL Technique]** : seuls les [workflows techniques intégrés](technical-workflows.md) et les [workflows de gestion de données](targeting-workflows.md#data-management) s&#39;affichent.
    * **[!UICONTROL Marketing]** : seuls les workflows associés à une campagne marketing, appelés [workflows de campagne](campaign-workflows.md), s&#39;affichent.
 
 1. Pour rechercher un workflow spécifique par nom, vous pouvez également utiliser le champ **[!UICONTROL Filtre de nom de workflow]**.

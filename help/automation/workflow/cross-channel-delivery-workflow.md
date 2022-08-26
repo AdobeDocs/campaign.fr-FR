@@ -7,7 +7,7 @@ exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '711'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Les principales étapes d&#39;implémentation pour ce cas pratique sont les suiv
 
 Pour définir votre cible, créez une requête afin d&#39;identifier les destinataires.
 
-1. Créez une campagne. Voir à ce sujet la section  .
+1. Créez une campagne. Pour plus d&#39;informations, reportez-vous à .
 1. Dans l&#39;onglet **[!UICONTROL Ciblages et workflows]** de la campagne, ajoutez une activité **Requête** à votre workflow. Pour plus d&#39;informations sur l&#39;utilisation de cette activité, consultez [cette section](query.md).
 1. Définissez les destinataires qui recevront vos diffusions. Par exemple, sélectionnez les membres &quot;Gold&quot; en tant que dimension cible.
 1. Ajoutez des conditions de filtrage à votre requête. Dans cet exemple, sélectionnez les destinataires disposant d&#39;une adresse email et d&#39;un numéro de téléphone portable.
@@ -51,7 +51,7 @@ Pour définir votre cible, créez une requête afin d&#39;identifier les destina
 
    ![](assets/wkf_cross-channel_1.png)
 
-   L&#39;intégration d&#39;une offre dans le corps d&#39;un message est présentée dans la section .
+   Pour plus d&#39;informations sur l&#39;intégration d&#39;une offre dans le corps d&#39;un message, reportez-vous à .
 
 1. Enregistrez vos modifications.
 1. Cliquez avec le bouton droit sur l&#39;activité **[!UICONTROL Diffusion Email]** pour l&#39;ouvrir.
@@ -109,10 +109,10 @@ Une fois votre cible identifiée et votre première diffusion créée, vous deve
    * Ajoutez une activité **[!UICONTROL Diffusion mobile]** pour envoyer un SMS au deuxième sous-ensemble.
    * Ajoutez une activité **[!UICONTROL Mise à jour des listes]** pour ajouter les destinataires correspondants à la base de données.
 
-1. Double-cliquez sur les activités de diffusion de votre workflow pour les éditer. La création d&#39;un email et d&#39;un SMS est présentée dans la section .
+1. Double-cliquez sur les activités de la diffusion dans votre workflow pour les modifier. Pour plus d&#39;informations sur la création d&#39;un e-mail et d&#39;un SMS, reportez-vous à .
 1. Double-cliquez sur l&#39;activité **[!UICONTROL Mise à jour des listes]** et sélectionnez l&#39;option **[!UICONTROL Générer une transition sortante]**.
 
-   Vous pouvez ensuite exporter les destinataires obtenus d’Adobe Campaign vers Adobe Experience Cloud. Par exemple, vous pouvez utiliser l’audience dans Adobe Target en ajoutant un ** .
+   Vous pouvez ensuite exporter les destinataires obtenus d&#39;Adobe Campaign vers Adobe Experience Cloud. Par exemple, vous pouvez utiliser l&#39;audience dans Adobe Target en ajoutant un **.
 
 1. Cliquez sur le bouton **Démarrer** de la barre d&#39;actions pour exécuter le workflow.
 

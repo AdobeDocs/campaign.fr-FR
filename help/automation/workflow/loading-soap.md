@@ -6,7 +6,7 @@ feature: Workflows
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Le principe de fonctionnement est le suivant :
 
    Si vous souhaitez mettre à jour l&#39;exemple, sélectionnez **[!UICONTROL Ré-analyser l&#39;exemple]**.
 
-   Vous pouvez également personnaliser le format des données de colonne via le ** .
+   Vous pouvez également personnaliser le format des données de la colonne grâce au **.
 
 1. Si vous le souhaitez, vous pouvez choisir d&#39;utiliser le numéro de ligne comme identifiant et/ou indiquer que l&#39;appel SOAP renvoie plusieurs éléments.
 1. Saisissez les scripts des onglets suivants selon leur fonction :

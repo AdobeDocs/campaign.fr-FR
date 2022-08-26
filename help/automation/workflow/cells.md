@@ -6,25 +6,25 @@ feature: Workflows, Targeting Activity
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
 workflow-type: tm+mt
 source-wordcount: '131'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 # Cellules{#cells}
 
-Le **[!UICONTROL Cellules]** L’activité fournit une vue des différents sous-ensembles sous forme de colonnes de données. Il facilite la manipulation des sous-ensembles et est également conçu pour exploiter les fonctionnalités de personnalisation.
+L&#39;activité **[!UICONTROL Cellules]** fournit une vue des différents sous-ensembles sous forme de colonnes de données. Elle facilite la manipulation des sous-ensembles et est également conçue pour utiliser les fonctionnalités de personnalisation.
 
 ![](assets/wf_split_cells.png)
 
-Cette activité peut être configurée pour renseigner des paramètres spécifiques en fonction des besoins de l&#39;utilisateur. Par défaut, le détail de chaque sous-ensemble est présenté dans une fenêtre dédiée, via le **[!UICONTROL Cellules]** et **[!UICONTROL Avancé]** onglets.
+Cette activité peut être configurée dans le but de renseigner des paramètres spécifiques en fonction des besoins de l&#39;utilisateur. Par défaut, le détail de chaque sous-ensemble est présenté dans une fenêtre dédiée, dans les onglets **[!UICONTROL Cellules]** et **[!UICONTROL Avancé]**.
 
 ![](assets/wf_split_cells_with_customization.png)
 
-Dans l&#39;exemple ci-dessous, le formulaire de saisie a été modifié : a **[!UICONTROL Données]** un onglet a été ajouté pour permettre l&#39;association d&#39;une offre et d&#39;un niveau de priorité pour chaque sous-ensemble.
+Dans l&#39;exemple ci-dessous, le formulaire de saisie a été modifié : un onglet **[!UICONTROL Données]** a été ajouté pour permettre l&#39;association d&#39;une offre et d&#39;un niveau de priorité pour chaque sous-ensemble.
 
 ![](assets/cells-activity-sample.png)
 
-Pour cette configuration, les informations suivantes ont été ajoutées au formulaire de workflow, dans la variable **[!UICONTROL Administration > Paramétrages > Formulaires de saisie]** noeud de l’explorateur Adobe Campaign :
+Pour réaliser ce paramétrage, les informations suivantes ont été ajoutées dans le formulaire des workflows, sous le nœud **[!UICONTROL Administration > Configurations > Formulaires de saisie]** de l&#39;explorateur Adobe Campaign :
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">
@@ -49,4 +49,4 @@ Pour cette configuration, les informations suivantes ont été ajoutées au form
                 </container>
 ```
 
-La personnalisation des formulaires de saisie dans Adobe Campaign est réservée à des utilisateurs experts. Pour plus d’informations, consultez cette  .
+La personnalisation des formulaires de saisie dans Adobe Campaign est réservée aux utilisateurs experts. Pour plus d&#39;informations, reportez-vous à cette .

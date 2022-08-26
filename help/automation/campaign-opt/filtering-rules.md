@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Configuration des règles de filtrage
-description: Découvrez comment configurer des règles de filtrage
+title: Configurer les règles de filtrage
+description: Découvrir comment utiliser les règles de filtrage
 feature: Typology Rules
 exl-id: 17507cdf-211f-4fa2-abb9-33d4f6dc47bb
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Dans ce cas, même si la règle est associée à toutes les diffusions, elle ne 
 
 >[!NOTE]
 >
->Les typologies et règles de filtrage peuvent être utilisées dans un workflow, au niveau de la **[!UICONTROL Composition de diffusion]** activité. [En savoir plus](../workflow/delivery-outline.md).
+>Les typologies et les règles de filtrage peuvent être utilisées dans un workflow, dans l&#39;activité **[!UICONTROL Composition de diffusion]**. [En savoir plus](../workflow/delivery-outline.md).
 
 ## Création et utilisation dʼune typologie de filtrage {#create-and-use-a-filtering-typology}
 

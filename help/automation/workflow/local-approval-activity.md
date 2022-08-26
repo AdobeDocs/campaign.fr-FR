@@ -7,7 +7,7 @@ exl-id: 31089026-3fc0-4491-8b70-0fb7fd1e3ac0
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '1428'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Les étapes principales du processus de validation en local sont les suivantes 
 
 1. Quelques jours plus tard, la seconde activité de type **[!UICONTROL Validation en local]** envoie un email de notification à chaque responsable local lui indiquant les actions effectuées par ses contacts (clics, ouvertures, etc.).
 
-## Étape 1 : Créer le modèle de répartition de données {#step-1--creating-the-data-distribution-template-}
+## Étape 1 : créer le modèle de répartition de données {#step-1--creating-the-data-distribution-template-}
 
 Le modèle de répartition de données permet de limiter la population issue du ciblage à partir d&#39;un groupement de données, et permet d&#39;affecter chaque valeur du groupement à un responsable local. Dans notre exemple, nous avons défini le champ **[!UICONTROL Domaine de l&#39;adresse email]** comme champ de répartition et affecté un domaine à chaque responsable local.
 
@@ -79,7 +79,7 @@ Pour plus d’informations sur la création d’un modèle de distribution de do
       >
       >Vérifiez que les opérateurs disposent des droits adéquats.
 
-## Étape 2 : Créer le workflow de ciblage {#step-2--creating-the-targeting-workflow}
+## Étape 2 : créer le workflow de ciblage {#step-2--creating-the-targeting-workflow}
 
 Pour réaliser ce cas d&#39;utilisation, nous avons créé le workflow de ciblage suivant :
 
@@ -142,7 +142,7 @@ Les champs à renseigner sont les suivants :
 1. Dans la section **[!UICONTROL Notification]**, sélectionnez le modèle de diffusion ainsi que l&#39;objet qui seront utilisés pour l&#39;email de notification. Dans notre exemple, nous avons choisi le modèle par défaut : **[!UICONTROL Notification de la validation en local]**.
 1. Dans la section **[!UICONTROL Planning de validation]**, nous avons laissé le délai de validation par défaut (3 jours) et ajouté un rappel. La diffusion partira donc 3 jours après le début de la de la validation. Une fois le délai de validation atteint, les destinataires qui n&#39;ont pas été validés ne sont pas pris en compte dans le ciblage.
 
-Un email de notification est envoyé par la fonction **[!UICONTROL Validation en local]** aux responsables locaux.
+Un e-mail de notification est envoyé par l&#39;activité **[!UICONTROL Validation en local]** aux superviseurs locaux.
 
 ### Attente {#wait}
 

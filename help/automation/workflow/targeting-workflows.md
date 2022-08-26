@@ -1,18 +1,18 @@
 ---
-title: Créer des workflows de ciblage
-description: Découvrez comment créer des audiences cibles dans un workflow
+title: Créer un workflow de ciblage
+description: Découvrez comment créer des audiences cibles dans un workflow.
 feature: Query Editor, Data Management
 exl-id: 27be9d5a-168c-470e-a480-f3c71858fc75
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '2366'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # Créer un workflow de ciblage{#target-data}
 
-Le workflow peut être utilisé pour interroger la base de données et segmenter vos données. Le module de workflow de Campaign est un outil puissant permettant d’exécuter des activités de gestion des données, d’extraire, d’enrichir et de transformer des données, de gérer des audiences et d’affiner les populations.
+Le workflow peut être utilisé pour interroger la base de données et segmenter vos données. Le module de workflow de campagne est un outil puissant permettant d&#39;exécuter des activités de gestion des données, d&#39;extraire, d&#39;enrichir et de transformer des données, de gérer des audiences et d&#39;affiner les populations.
 
 Un workflow de ciblage permet de construire une ou plusieurs cibles de diffusion. Vous pouvez créer des requêtes, définir des unions ou des exclusions sur des critères précis, ajouter une planification, à l&#39;aide des activités de workflows. Le résultat de ce ciblage peut être automatiquement transféré dans une liste qui pourra ensuite constituer la cible d&#39;actions de diffusion.
 
@@ -54,19 +54,19 @@ Par exemple, pour les destinataires (**recipient**), les dimensions de filtrage 
 
 ![](assets/query-filter-dimensions.png)
 
-Bien que **Visiteurs**, la liste contiendra les dimensions de filtrage suivantes :
+Tandis que pour les **visiteurs**, la liste proposera les dimensions de filtrage suivantes :
 
 ![](assets/query-filter-dimension-2.png)
 
-## Création de requêtes {#create-queries}
+## Créer des requêtes {#create-queries}
 
-### Utilisation des données additionnelles {#select-data}
+### Travailler avec les données additionnelles {#select-data}
 
-Une activité **[!UICONTROL Requête]** permet de sélectionner des données de base pour créer la population cible. Pour plus d’informations, consultez [cette section](query.md#create-a-query).
+Une activité **[!UICONTROL Requête]** permet de sélectionner des données de base pour créer la population cible. Pour plus d&#39;informations, consultez [cette section](query.md#create-a-query).
 
 Les activités suivantes peuvent également servir à lancer des requêtes et à affiner les données de la base de données : [Requête incrémentale](incremental-query.md), [Lecture de liste](read-list.md).
 
-Il est possible de collecter des données supplémentaires pour les transférer et les traiter tout au long du cycle de vie du workflow. Voir à ce sujet la section [Ajouter des données](query.md#add-data) et [Modification des données additionnelles](#edit-additional-data).
+Il est possible de collecter des données supplémentaires pour les transférer et les traiter tout au long du cycle de vie du workflow. Pour en savoir plus à ce sujet, consultez les sections [Ajouter des données](query.md#add-data) et [Modifier les données additionnelles](#edit-additional-data).
 
 ### Modification des données additionnelles {#edit-additional-data}
 
@@ -80,7 +80,7 @@ Pour ajouter des données aux colonnes de sorties déjà définies, sélectionne
 
 ![](assets/query_add_an_output_column.png)
 
-Cliquez sur le bouton **Sélection avancée** bouton .
+Cliquez sur le bouton **Sélection avancée**.
 
 ![](assets/query_add_an_output_column_formula.png)
 
@@ -94,7 +94,7 @@ Les sous-éléments seront représentés en sous-arborescence de la collection �
 
 Les collections sont affichées dans le sous-onglet **[!UICONTROL Collections]**. Vous pouvez filtrer les éléments récupérés en cliquant sur l&#39;icône **[!UICONTROL Détail]** de la collection sélectionnée. L&#39;assistant de filtrage permet de sélectionner les données collectées et indiquer les critères de filtrage à appliquer aux données de la collection.
 
-### Affiner une cible à l&#39;aide de données additionnelles {#refine-the-target-using-additional-data}
+### Affiner une cible en utilisant les données additionnelles {#refine-the-target-using-additional-data}
 
 Les données additionnelles collectées peuvent permettre dʼaffiner le filtrage des données de la base. Pour cela, cliquez sur le lien **[!UICONTROL Affinage de la cible en utilisant les données additionnelles...]** : vous pouvez ainsi sur-filtrer sur les données qui ont été ajoutées.
 
@@ -106,7 +106,7 @@ Dans les activités de type **[!UICONTROL Union]** ou **[!UICONTROL Intersection
 
 ![](assets/use-common-add-data-only.png)
 
-### Réconcilier avec des données additionnelles {#reconciliation-with-additional-data}
+### Réconcilier avec les données additionnelles {#reconciliation-with-additional-data}
 
 Lors des phases de réconciliation des données (dans les activités **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.), il est possible de sélectionner les colonnes à utiliser pour la réconciliation des données parmi les colonnes additionnelles. Pour cela, paramétrez une réconciliation sur une sélection de colonnes et indiquez l&#39;ensemble principal. Sélectionnez ensuite les colonnes dans la section inférieure de la fenêtre, comme dans l&#39;exemple ci-dessous :
 
@@ -123,7 +123,7 @@ L&#39;activité de **[!UICONTROL Partage]** permet de créer des sous-ensembles 
 
 Vous pouvez partager une cible en plusieurs sous-ensembles en utilisant uniquement les données additionnelles comme critère de filtrage, ou en complément des données de la cible. Vous pouvez également utiliser des données externes, sous réserve que vous ayez acquis l&#39;option **Federated Data Access**.
 
-Pour plus d’informations, consultez [cette section](#create-subsets-using-the-split-activity).
+Pour plus d&#39;informations, consultez [cette section](#create-subsets-using-the-split-activity).
 
 ## Données de segment {#segment-data}
 
@@ -181,7 +181,7 @@ L&#39;activité d&#39;exclusion permet d&#39;exclure d&#39;une population cible 
 
 Au besoin, il est possible de manipuler les tables en entrée. En effet, pour faire l&#39;exclusion d&#39;une cible d&#39;une autre dimension, il faut ramener cette cible dans la même dimension de ciblage que la cible principale. Pour cela, cliquez sur le bouton **[!UICONTROL Ajouter]** et indiquez les conditions de changement de dimension.
 
-La réconciliation entre les données se fait au choix par identifiant, changement d&#39;axe ou jointure.
+La réconciliation des données se fait au choix par identifiant, changement d&#39;axe ou jointure.
 
 ![](assets/exclusion-add-rule.png)
 
@@ -239,7 +239,7 @@ Vous pouvez regrouper tous les sous-ensembles dans une seule transition en sorti
 
 ![](assets/wf_split_single_output.png)
 
-Vous pouvez par exemple positionner une seule activité de diffusion et personnaliser le contenu de la diffusion en fonction du code segment de chaque ensemble de destinataires.
+Vous pourrez par exemple positionner une seule activité de diffusion et personnaliser le contenu de cette diffusion en fonction du code segment de chacun des ensembles de destinataires.
 
 
 Vous pouvez également créer des sous-ensembles à l’aide de l’activité **[!UICONTROL Cellules]**. Pour plus d&#39;informations, consultez la section [Cellules](cells.md).
@@ -284,7 +284,7 @@ Pour réaliser ces opérations, Adobe Campaign propose :
 
 En complément de la dimension de ciblage, la dimension de filtrage permet de préciser la nature des données collectées. Consultez [cette section](targeting-workflows.md#targeting-and-filtering-dimensions).
 
-Les données identifiées et collectées peuvent être enrichies, regroupées et manipulées afin d&#39;optimiser la construction de la cible. Pour ce faire, en plus des activités de manipulation de données présentées dans la section [cette section](#segmen-data), utilisez les méthodes suivantes :
+Les données identifiées et collectées peuvent être enrichies, regroupées et manipulées afin d&#39;optimiser la construction de la cible. Pour ce faire, en plus des activités de manipulation de données présentées dans [cette section](#segmen-data), utilisez les méthodes suivantes :
 
 * L’activité **[!UICONTROL Enrichissement]** permet d’ajouter momentanément des colonnes à un schéma et d’ajouter des informations à certains éléments. Elle est présentée dans la section [Enrichissement](enrichment.md) du référentiel des activités.
 * L’activité **[!UICONTROL Edition du schéma]** permet de modifier la structure d’un schéma. Elle est présentée dans la section [Edition du schéma](edit-schema.md) du référentiel des activités.

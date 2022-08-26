@@ -32,7 +32,7 @@ Vous pouvez définir un pré-traitement à exécuter lors de l’import du fichi
 
 ![](assets/preprocessing-dataloading.png)
 
-Pour plus d’informations, consultez cette section:  .
+Pour plus d&#39;informations, reportez-vous à .
 
 ## Définir le format du fichier {#defining-the-file-format}
 
@@ -110,7 +110,7 @@ L&#39;exemple suivant permet de collecter tous les jours un fichier sur le serve
    * la première colonne contient un code correspondant à l&#39;événement : achat (d&#39;un montant supérieur ou inférieur à 3000 euros), sans achat ou retour d&#39;un ou plusieurs articles.
    * les quatre colonnes suivantes contiennent le prénom, le nom, l&#39;email et le numéro de compte du client.
 
-   Le paramétrage du format du fichier à charger correspond à celui défini lors d&#39;un import de données dans Adobe Campaign. Voir à ce sujet cette  .
+   Le paramétrage du format du fichier à charger correspond à celui défini lors d&#39;un import de données dans Adobe Campaign. Pour plus d&#39;informations, reportez-vous à .
 
 1. Dans l&#39;activité de partage, indiquez les sous-ensembles à créer, en fonction de la valeur de la colonne **Evénement**.
 

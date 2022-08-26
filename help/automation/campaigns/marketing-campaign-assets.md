@@ -7,20 +7,20 @@ exl-id: 352f6cd5-777d-413d-af79-6f53444b336f
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
-# Gestion des ressources et des documents {#manage-assets-documents}
+# Gérer les ressources et les documents {#manage-assets-documents}
 
-Vous pouvez associer divers documents à une opération : rapports, photos, pages web, diagrammes et bien d’autres. Ces documents peuvent être dans n’importe quel format.
+Vous pouvez associer divers documents à une opération : rapports, photos, pages web, diagrammes et bien d&#39;autres. Peu importe le format de ces documents.
 
 Dans une campagne, vous pouvez également faire référence à d’autres éléments, tels que des coupons promotionnels, des offres spéciales relatives à une marque ou à un magasin spécifique et bien plus. Lorsque ces éléments sont inclus dans une composition, ils peuvent être associés à une diffusion courrier. [En savoir plus](#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 
 >[!CAUTION]
 >
->Cette fonctionnalité est conçue pour les petites ressources et les documents.
+>Cette fonctionnalité est conçue pour les petites ressources et documents.
 
 <!--
 >[!NOTE]
@@ -32,7 +32,7 @@ Dans une campagne, vous pouvez également faire référence à d’autres élém
 
 Des documents peuvent être associés au niveau de l&#39;opération (documents contextuels) ou au niveau du programme (documents généraux).
 
-Pour une opération, la variable **[!UICONTROL Documents]** contient :
+Pour une opération, l&#39;onglet **[!UICONTROL Documents]** contient :
 
 * la liste de tous les documents nécessaires au contenu (maquette, images, etc.) qui pourront être téléchargés en local par les opérateurs Adobe Campaign possédant les droits adéquats,
 * les documents contenant des informations destinées au routeur, s&#39;ils existent.
@@ -41,11 +41,11 @@ Les documents sont rattachés au programme ou à l&#39;opération via leur ongle
 
 ![](assets/op_add_document.png)
 
-Vous pouvez également ajouter un document à une opération à partir du lien dédié dans le tableau de bord.
+Vous pouvez également ajouter un document dans une opération via le lien dédié de son tableau de bord.
 
 ![](assets/add_a_document_in_op.png)
 
-Cliquez sur le bouton **[!UICONTROL Détail...]** pour visualiser le contenu d&#39;un fichier et ajouter des informations :
+Cliquez sur l&#39;icône **[!UICONTROL Détails...]** pour afficher le contenu d&#39;un fichier et y ajouter des informations complémentaires :
 
 ![](assets/add_document_details.png)
 
@@ -57,26 +57,26 @@ Ils peuvent également être édités et modifiés depuis cette vue.
 
 ## Utiliser les compositions de diffusion {#delivery-outlines}
 
-Une composition est un ensemble structuré d&#39;éléments (documents, magasins, coupons promotionnels, etc.) créé par la société et pour une campagne particulière. Il est utilisé dans le cadre de diffusions courrier.
+Une composition de diffusion est un ensemble structuré d&#39;éléments (documents, magasins, coupons promotionnels et autres) créé par la société et pour une opération particulière. Il est utilisé dans le cadre de diffusions par publipostage direct.
 
-Ces éléments sont regroupés au sein de compositions de diffusions, chacune associée à une diffusion. La composition de diffusion sera référencée dans le fichier d’extraction envoyé au **fournisseur** afin d’être jointe à la diffusion. Par exemple, vous pouvez créer une composition qui fait référence à une unité et aux brochures marketing qu&#39;elle utilise.
+Ces éléments sont regroupés au sein de compositions de diffusions, chacune associée à une diffusion. La composition de diffusion sera référencée dans le fichier d&#39;extraction envoyé au **fournisseur** afin d&#39;être jointe à la diffusion. Par exemple, vous pouvez créer une composition de diffusion faisant référence à une unité et aux brochures marketing qu&#39;elle utilise.
 
-Pour une opération, les compositions de diffusion permettent de structurer les éléments externes à associer à la diffusion selon certains critères : unité rattachée, offre promotionnelle accordée, invitation à un événement local, etc.
+Les compositions de diffusions permettent, au niveau de l&#39;opération, de structurer des éléments externes qui seront associés à la diffusion en fonction de certains critères : entité de rattachement, offre promotionnelle accordée, invitation à un événement local, etc.
 
 >[!CAUTION]
 >
->Les compositions de diffusion sont limitées aux campagnes par courrier.
+>Les compositions de diffusion sont limitées aux campagnes par publipostage direct.
 
 ### Créer une composition de diffusion {#create-an-outline}
 
-Pour créer une composition de diffusion, cliquez sur le bouton **[!UICONTROL Compositions de diffusion]** sous-onglet de la **[!UICONTROL Modifier > Documents]** de l&#39;opération concernée.
+Pour créer une composition de diffusion, cliquez sur le sous-onglet **[!UICONTROL Compositions de diffusion]** proposé sous l&#39;onglet **[!UICONTROL Modifier > Documents]** de l&#39;opération concernée.
 
 ![](assets/add-a-delivery-outline.png)
 
 
 >[!NOTE]
 >
->Si cet onglet n&#39;est pas visible, cette fonctionnalité n&#39;est pas disponible pour cette opération ou la diffusion courrier n&#39;est pas activée dans votre instance. Reportez-vous à la section [configuration du modèle de campagne](marketing-campaign-templates.md#campaign-templates) ou à votre contrat de licence.
+>Si cet onglet n&#39;est pas visible, cette fonctionnalité n&#39;est pas disponible pour cette opération ou alors la diffusion par publipostage direct n&#39;est pas activée dans votre instance. Reportez-vous à la section [configuration du modèle de campagne](marketing-campaign-templates.md#campaign-templates) ou référez-vous à votre contrat de licence.
 
 Cliquez ensuite sur **[!UICONTROL Ajouter une composition de diffusion]** et créez l&#39;arborescence des compositions pour l&#39;opération :
 
@@ -85,7 +85,7 @@ Cliquez ensuite sur **[!UICONTROL Ajouter une composition de diffusion]** et cr�
 
 ![](assets/del-outline-add-new-item.png)
 
-Une composition peut contenir des éléments, des champs de personnalisation et des offres :
+Une composition peut contenir des articles, des champs de personnalisation et des offres :
 
 * Les articles sont par exemple des documents physiques qui sont ici référencés et décrits, et seront joints à la diffusion.
 * Les champs de personnalisation permettent de créer des éléments de personnalisation relatifs aux diffusions et non aux destinataires. Ainsi, il est possible de créer des valeurs qui seront utilisées dans les diffusions pour une cible spécifique (offre de bienvenue, pourcentage de réduction, etc.) Ils sont créés dans Adobe Campaign et importés dans la composition, via le lien **[!UICONTROL Importer des champs de personnalisation...]**.

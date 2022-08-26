@@ -1,20 +1,20 @@
 ---
-title: Utilisation des données de workflow
-description: Découvrez comment utiliser les données d'un workflow
+title: Utiliser les données d'un workflow
+description: Découvrez comment utiliser les données d'un workflow.
 feature: Workflows, Data Management
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '740'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
-# Utilisation des données de workflow{#how-to-use-workflow-data}
+# Utiliser les données d&#39;un workflow{#how-to-use-workflow-data}
 
-Vous pouvez utiliser des activités de workflow pour effectuer plusieurs tâches. Vous trouverez ci-dessous des exemples d&#39;utilisation pour mettre à jour la base de données en créant des listes, en gérant les abonnements, en envoyant des messages via un workflow ou en enrichissant vos diffusions et leurs audiences.
+Vous pouvez utiliser des activités de workflow pour effectuer plusieurs tâches. Vous trouverez ci-dessous des exemples d&#39;utilisation pour mettre à jour la base de données en créant des listes, gérer les abonnements, envoyer des messages par le biais d&#39;un workflow ou enrichir vos diffusions et leurs audiences.
 
-Un ensemble de cas pratiques de workflows est disponible dans [cette section](workflow-use-cases.md).
+Un ensemble de cas d&#39;utilisation de workflows est disponible dans [cette section](workflow-use-cases.md).
 
 ## Cycle de vie des données {#data-life-cycle}
 
@@ -34,15 +34,15 @@ Sélectionnez pour cela le menu correspondant :
 
    ![](assets/wf-right-click-display.png)
 
-   Vous pouvez accéder à la structure de la table de travail dans le **[!UICONTROL Schéma]** .
+   Vous pouvez accéder à la structure de la table de travail dans l&#39;onglet **[!UICONTROL Schéma]**.
 
    ![](assets/wf-right-click-schema.png)
 
-   Pour plus d’informations, consultez [cette section](monitor-workflow-execution.md#worktables-and-workflow-schema).
+   Pour plus d&#39;informations, consultez [cette section](monitor-workflow-execution.md#worktables-and-workflow-schema).
 
 * **[!UICONTROL Analyser la cible...]**
 
-   Ce menu permet d&#39;accéder à l&#39;assistant d&#39;analyse descriptive qui permet de produire des statistiques et des rapports sur les données de la transition.
+   Ce menu donne accès à l&#39;assistant d&#39;analyse descriptive, qui permet de produire des statistiques et des rapports sur les données de la transition.
 
    Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target=&quot;_blank&quot;}.
 
@@ -52,22 +52,22 @@ Les données de la cible sont purgées au fur et à mesure de l&#39;exécution d
 
 >[!CAUTION]
 >
->Cette option doit **never** être archivé dans un **production** workflow. Elle sert à analyser les résultats et est conçue uniquement à des fins de test. Elle ne doit donc être utilisée que dans les environnements de développement ou d’évaluation.
+>Ne cochez **jamais** cette option dans un workflow de **production**. Elle sert à analyser les résultats et est conçue uniquement à des fins de test. Elle ne doit donc être utilisée que dans les environnements de développement ou d&#39;évaluation.
 
 
-### Tirer parti des données de la cible {#target-data}
+### Utiliser les données de la cible {#target-data}
 
-Les données stockées dans la table de travail temporaire du workflow sont disponibles pour les tâches de personnalisation. Les données peuvent être utilisées dans les champs de personnalisation.
+Les données stockées dans la table de travail temporaire du workflow sont disponibles pour les tâches de personnalisation. Vous pouvez utiliser les données dans les champs de personnalisation.
 
-Vous pouvez ainsi utiliser, par exemple, les données collectées via une liste dans une diffusion. Pour cela, utilisez la syntaxe suivante :
+Vous pouvez par exemple utiliser les données collectées à travers une liste dans une diffusion. Pour ce faire, utilisez la syntaxe suivante :
 
 ```
 %= targetData.FIELD %
 ```
 
-Les éléments de personnalisation de type **[!UICONTROL Extension de la cible]** (targetData) ne sont disponible que dans le cadre des workflows de ciblage. Ainsi, la cible de la diffusion doit être construite dans le workflow et spécifiée dans la transition entrante de la diffusion.
+Les éléments de personnalisation de type **[!UICONTROL Extension de la cible]** (targetData) ne sont pas disponibles dans les workflows de ciblage. Ainsi, la cible de la diffusion doit être construite dans le workflow et spécifiée dans la transition entrante de la diffusion.
 
-Dans l&#39;exemple suivant, vous collectez une liste d&#39;informations sur les clients, à utiliser dans un email personnalisé. Les étapes sont les suivantes :
+Dans l&#39;exemple suivant, vous allez collecter une liste d&#39;informations sur des clients, qui sera utilisée dans un e-mail personnalisé. Les étapes sont les suivantes :
 
 1. Créez un workflow afin de collecter les informations, les réconcilier avec celles de la base puis lancer une diffusion.
 
@@ -85,11 +85,11 @@ Dans l&#39;exemple suivant, vous collectez une liste d&#39;informations sur les 
    [...]
    ```
 
-   Pour charger le fichier, configurez la variable **[!UICONTROL Chargement (fichier)]** activité comme ci-dessous :
+   Pour charger le fichier, configurez l&#39;activité **[!UICONTROL Chargement (fichier)]** comme indiqué ci-dessous :
 
    ![](assets/wf-targetdata-sample-2.png)
 
-1. Paramétrez l&#39;activité de **[!UICONTROL Enrichissement]** afin de réconcilier les données collectées avec celles de la base Adobe Campaign. Ici, la clé de réconciliation est le numéro de compte :
+1. Paramétrez l&#39;activité **[!UICONTROL Enrichissement]** afin de réconcilier les données collectées avec celles de la base de données Adobe Campaign. Ici, la clé de réconciliation est le numéro de compte :
 
    ![](assets/wf-targetdata-sample-3.png)
 
@@ -116,9 +116,9 @@ Dans l&#39;exemple suivant, vous collectez une liste d&#39;informations sur les 
    Les données de type **[!UICONTROL Extension de la cible]** (targetData) sont insérées dans les diffusions selon les mêmes caractéristiques que tous les champs de personnalisation. Elles peuvent ainsi par exemple être utilisées dans l&#39;objet du message, les libellés des liens ou les liens eux-mêmes, etc.
 
 
-## Mise à jour de la base de données {#update-the-database}
+## Mettre à jour la base de données {#update-the-database}
 
-Toutes les données collectées peuvent être utilisées pour mettre à jour la base de données, ou dans des diffusions. Par exemple, vous pouvez enrichir les possibilités de personnalisation du contenu des messages (inclure le nombre de contrats dans le message, indiquer le panier moyen pour l&#39;année écoulée, etc) ou affiner le ciblage des populations (adresser un message aux co-titulaires d&#39;un contrat, cibler les 1000 meilleurs acheteurs abonnés aux services en ligne, etc.). Ces données peuvent également être exportées ou archivées dans une liste.
+Toutes les données collectées peuvent être utilisées pour mettre à jour la base de données, ou dans des diffusions. Par exemple, vous pouvez enrichir les possibilités de personnalisation du contenu des messages (inclure le nombre de contrats dans le message, indiquer le panier moyen pour l&#39;année écoulée, etc.) ou affiner le ciblage des populations (adresser un message aux co-titulaires d&#39;un contrat, cibler les 1 000 meilleurs abonnés aux services en ligne, etc.). Ces données peuvent également être exportées ou archivées dans une liste.
 
 ### Mettre à jour les listes  {#list-updates}
 
@@ -138,4 +138,4 @@ Les données de la base Adobe Campaign et les listes existantes peuvent être m
 
 ### Gérer les abonnements {#subscription-management}
 
-Pour comprendre comment abonner et désabonner des destinataires à un service d&#39;information via un workflow, consultez la section [Services d’abonnement](subscription-services.md).
+Pour comprendre comment abonner et désabonner des destinataires à un service d&#39;information via un workflow, consultez la section [Services d&#39;abonnement](subscription-services.md).

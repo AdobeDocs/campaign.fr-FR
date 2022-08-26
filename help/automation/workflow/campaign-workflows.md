@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Type de workflow
-description: Découvrez les différents types de workflows dans Campaign
+title: Types de workflows
+description: Découvrez les différents types de workflows dans Campaign.
 feature: Workflows
 exl-id: f511332c-1fcc-444f-851b-e8b470b719b4
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '106'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -25,4 +25,4 @@ Tous les workflows des opérations sont centralisés sous le noeud **[!UICONTROL
 
 ![](assets/campaigns_wf.png)
 
-Les workflows des opérations et les exemples de mise en oeuvre sont présentés dans la section [cette section](../campaigns/marketing-campaign-target.md).
+Les workflows de campagne et des exemples d&#39;implémentation sont présentés dans [cette section](../campaigns/marketing-campaign-target.md).

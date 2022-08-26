@@ -7,7 +7,7 @@ exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '1017'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -143,4 +143,4 @@ L&#39;onglet **[!UICONTROL Marketing Distribué]** permet de définir le paramé
 >[!NOTE]
 >
 >Dans les typologies et règles de typologie, l&#39;onglet **[!UICONTROL Marketing Distribué]** est proposé si votre licence inclut cette option : vérifiez votre contrat de licence.\
->Pour plus d&#39;informations sur le Marketing Distribué, reportez-vous à la section [cette section](../distributed-marketing/about-distributed-marketing.md).
+>Pour plus d&#39;informations sur le marketing distribué, consultez [cette section](../distributed-marketing/about-distributed-marketing.md).

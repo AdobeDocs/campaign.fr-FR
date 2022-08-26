@@ -7,7 +7,7 @@ exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '985'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Pour créer une opération collaborative par formulaire, le modèle **[!UICONTRO
 
 ![](assets/mkg_dist_mutual_op_form2.png)
 
-Dans le **[!UICONTROL Modifier]** , cliquez sur l’onglet **[!UICONTROL Paramètres avancés de l&#39;opération...]** pour accéder au **Marketing distribué** .
+Dans l&#39;onglet **[!UICONTROL Modifier]**, cliquez sur le lien **[!UICONTROL Paramètres avancés de l&#39;opération...]** pour accéder à l&#39;onglet **Marketing distribué**.
 
 Sélectionnez le type d’interface web **Par formulaire**. Ce type d’interface permet la création de champs de personnalisation qui seront utilisés par les entités locales lors de la commande de l’opération. Pour plus d&#39;informations, consultez la section [Création d’une campagne locale (par formulaire)](examples.md#creating-a-local-campaign--by-form-).
 
@@ -79,7 +79,7 @@ Le workflow de l&#39;opération doit intégrer l&#39;activité de type **Validat
 * **[!UICONTROL Contexte de répartition]** : Explicite.
 * **[!UICONTROL Répartition des données]** : Répartition pour les entités locales.
 
-**Répartition des entités locales** La répartition de données de type doit être créée. Le modèle de répartition de données permet de limiter le nombre d&#39;enregistrements à partir d&#39;une liste de valeurs de groupement. Dans **[!UICONTROL Ressources > Gestion de campagne > Répartition des données]**, cliquez sur le bouton **[!UICONTROL Nouveau]** pour créer une nouvelle icône **[!UICONTROL Répartition des données]**. Pour plus d’informations sur la répartition des données,
+La répartition de données **Répartition pour les entités locales** doit être créée. Le modèle de répartition de données permet de limiter le nombre d&#39;enregistrements à partir d&#39;une liste de valeurs de groupement. Dans **[!UICONTROL Ressources > Gestion de campagnes > Répartition de données]**, cliquez sur l&#39;icône **[!UICONTROL Nouveau]** pour créer une **[!UICONTROL Répartition de données]**. Pour plus d&#39;informations sur la répartition de données,
 
 ![](assets/mkg_dist_data_distribution.png)
 

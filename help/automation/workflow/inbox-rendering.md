@@ -15,7 +15,7 @@ ht-degree: 100%
 
 
 
-Le workflow détaillé ci-dessous est installé par défaut avec le module **Inbox rendering (IR)**. Voir à ce propos cette  .
+Le workflow détaillé ci-dessous est installé par défaut avec le module **Inbox rendering (IR)**. Pour plus d&#39;informations sur Inbox Rendering, reportez-vous à .
 
 <table> 
  <tbody> 

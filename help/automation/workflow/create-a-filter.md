@@ -18,7 +18,7 @@ Les filtres disponibles dans Adobe Campaign sont définis au travers de conditi
 
 >[!NOTE]
 >
->Les filtres et leur mode de création sont présentés dans le chapitre  .
+>Pour plus d&#39;informations sur la création de filtres, reportez-vous à .
 
 Le nœud **[!UICONTROL Administration > Paramétrage > Filtres prédéfinis]** contient tous les filtres utilisés dans les listes et vues d&#39;ensemble.
 

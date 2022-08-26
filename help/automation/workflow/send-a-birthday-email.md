@@ -7,7 +7,7 @@ exl-id: c3a80871-e045-454c-b1ca-8f484d2e14e1
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '855'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ Pour réaliser ce cas d&#39;utilisation, nous avons créé le workflow de ciblag
 
 Ce workflow, exécuté quotidiennement, sélectionne tous les destinataires dont la date de naissance correspond à la date courante.
 
-Pour cela, créez une opération et ajoutez une [workflow de campagne](campaign-workflows.md).
+Pour cela, créez une campagne et ajoutez un [workflow de campagne](campaign-workflows.md).
 
-Suivez ensuite les étapes détaillées ci-dessous.
+Suivez ensuite les étapes décrites ci-dessous.
 
 ## Identifier les destinataires dont c&#39;est l&#39;anniversaire {#identifying-recipients-whose-birthday-it-is}
 
@@ -83,7 +83,7 @@ Pour cela, les étapes sont les suivantes :
 
 Reliez le résultat de l&#39;activité **[!UICONTROL Requête]** à une activité **[!UICONTROL Diffusion e-mail]** pour envoyer un email à la liste de tous vos destinataires le jour de leur anniversaire.
 
-## Inclure les destinataires nés un 29 février (facultatif) {#including-recipients-born-on-february-29th--optional-}
+## Inclure les destinataires nés un 29 février (facultatif) {#including-recipients-born-on-february-29th--optional-}
 
 Si vous souhaitez inclure tous les destinataires nés un 29 février, ce cas pratique présente comment planifier l&#39;envoi d&#39;un email récurrent à une liste de destinataires le jour de leur anniversaire, qu&#39;il s&#39;agisse d&#39;une année bissextile ou non.
 
@@ -99,7 +99,7 @@ Pour réaliser ce cas d&#39;utilisation, nous avons créé le workflow de ciblag
 
 Si l&#39;année en cours **n&#39;est pas une année bissextile** et que le workflow est exécuté le 1er mars, il faut sélectionner tous les destinataires dont l&#39;anniversaire était la veille (le 29 février) et les ajouter à la liste des destinataires. Dans tous les autres cas, aucune action supplémentaire n&#39;est requise.
 
-### Étape 1 : Sélectionner les destinataires {#step-1--selecting-the-recipients}
+### Étape 1 : sélectionner les destinataires {#step-1--selecting-the-recipients}
 
 Après avoir paramétré l&#39;activité **[!UICONTROL Planificateur]** pour que le workflow se déclenche quotidiennement, identifiez tous les destinataires dont l&#39;anniversaire correspond à la date courante.
 
@@ -191,6 +191,6 @@ Ajoutez une activité de type **Diffusion récurrente** basée sur le modèle de
 >
 >Pour que les workflows s’exécutent, les workflows techniques liés au package Campaign doivent être démarrés. Voir à ce sujet la section [Liste des workflows techniques](technical-workflows.md).
 >
->Si les étapes d’approbation sont activées pour la campagne, les diffusions ne sont envoyées qu’une fois ces étapes confirmées. Pour plus d&#39;informations, consultez la section .
+>Si les étapes d&#39;approbation sont activées pour la campagne, les diffusions ne sont envoyées qu&#39;une fois ces étapes confirmées. Pour plus d&#39;informations, reportez-vous à .
 
 ![](assets/birthday-workflow_usecase_1.png)

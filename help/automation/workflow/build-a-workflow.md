@@ -7,41 +7,41 @@ exl-id: a6003fdb-1035-4b80-8831-73f30a0b4fb2
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '999'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Création d’un workflow {#build-a-workflow}
 
-## Création dʼun workflow {#create-a-new-workflow}
+## Créer un workflow {#create-a-new-workflow}
 
 Le flux de création de workflow dépend du type de workflow. Vous pouvez ainsi :
 
-* Créer [Workflows de ciblage](#targeting-workflows) de la **[!UICONTROL Profils et cibles]** > **[!UICONTROL Tâches]** > **[!UICONTROL Workflows de ciblage]** noeud de l’Explorateur ou de **[!UICONTROL Profils et cibles]** de la page d&#39;accueil, via l&#39;onglet **[!UICONTROL Workflows de ciblage]** sous-onglet.
+* Créer des [workflows de ciblage](#targeting-workflows) à partir du nœud **[!UICONTROL Profils et cibles]** > **[!UICONTROL Tâches]** > **[!UICONTROL Workflows de ciblage]** de l&#39;Explorateur ou de l&#39;onglet **[!UICONTROL Profils et cibles]** de la page d&#39;accueil, via le sous-onglet **[!UICONTROL Workflows de ciblage]**.
 
    ![](assets/create-targeting-wf.png)
 
-* Créer [Workflows des opérations](#campaign-workflows) de la **[!UICONTROL Ciblage et workflows]** onglet d’une opération
+* Créer des [workflows de campagne](#campaign-workflows) à partir de l&#39;onglet **[!UICONTROL Ciblage et workflows]** d&#39;une campagne.
 
-* Créer [Workflows techniques](#technical-workflows) de la **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Workflows techniques]** de l’Explorateur. La bonne pratique consiste à créer un dossier de workflow spécifique pour enregistrer vos workflows techniques.
+* Créer des [workflows techniques](#technical-workflows) à partir du nœud **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Workflows techniques]** de l&#39;Explorateur. Il est pratique de créer un dossier de workflow spécifique pour enregistrer vos workflows techniques.
 
 Pour créer un workflow, cliquez sur le bouton **[!UICONTROL Nouveau]** situé au-dessus de la liste des workflows.
 
 ![](assets/create_a_wf_icon.png)
 
-Saisissez un libellé puis cliquez sur **[!UICONTROL Enregistrer]**.
+Saisissez un libellé, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
 ## Ajout et liaison dʼactivités {#add-and-link-activities}
 
-Vous devez maintenant définir les différentes activités et les relier entre elles dans un diagramme. A ce stade de la configuration, sont disponibles le libellé du diagramme et l&#39;état du workflow (En édition). La section inférieure de la fenêtre est réservée à l&#39;édition du diagramme. Elle contient une barre d&#39;outils, une palette d&#39;activités (à gauche) et le diagramme (à droite).
+Vous devez maintenant définir les différentes activités et les relier entre elles dans un diagramme. À ce stade de la configuration, sont disponibles le libellé du diagramme et le statut du workflow (Édition en cours). La section inférieure de la fenêtre est réservée à l&#39;édition du diagramme. Elle contient une barre d&#39;outils, une palette d&#39;activités (à gauche) et le diagramme (à droite).
 
 ![](assets/new-workflow-2.png)
 
 >[!NOTE]
 >
->Si la palette n&#39;est pas visible, cliquez sur le premier bouton de la barre d&#39;outils du workflow pour l&#39;afficher.
+>Si la palette n&#39;est pas visible, cliquez sur le premier bouton de la barre d&#39;outils de workflow pour qu&#39;elle s&#39;affiche.
 
-Les activités sont regroupées par catégorie dans les différents onglets de la palette. Les onglets et activités disponibles peuvent varier en fonction du type de workflow (technique, de ciblage ou workflow de campagne).
+Les activités sont regroupées par catégories sous les onglets de la palette. Les onglets et activités disponibles peuvent varier en fonction du type de workflow (technique, de ciblage ou workflow de campagne).
 
 * Le premier onglet contient les activités de ciblage et de manipulation de données. Ces activités sont détaillées dans la section [Activités de ciblage](targeting-activities.md).
 * Le deuxième Onglet contient les activités de planification qui servent principalement à coordonner les autres. Elles sont détaillées dans la section [Activités d&#39;ordonnancement](flow-control-activities.md).
@@ -85,7 +85,7 @@ Lʼaffichage et la mise en page du diagramme peuvent être modifiés à lʼaide 
    Les icônes relatives à la progression et l’affichage des logs sont présentées en détail dans les sections suivantes :
 
    * [Afficher la progression](monitor-workflow-execution.md#displaying-progress)
-   * [Afficher le journal](monitor-workflow-execution.md#displaying-logs)
+   * [Afficher les logs](monitor-workflow-execution.md#displaying-logs)
 
 * **Alignement des objets**
 
@@ -111,7 +111,7 @@ Pour une meilleure compréhension des activités et une meilleure lisibilité de
 
 ![](assets/example1-comment.png)
 
-Ces commentaires s&#39;affichent automatiquement lorsque les opérateurs font défiler l&#39;activité.
+Ces commentaires s&#39;afficheront automatiquement quand des opérateurs balayeront du curseur l&#39;activité.
 
 ![](assets/example2-comment.png)
 
@@ -122,7 +122,7 @@ Un modèle de workflow contient le paramétrage global des propriétés et éven
 
 Vous pouvez créer de nouveaux modèles de workflows à partir de modèles existants ou transformer directement un workflow en modèle.
 
-Les modèles de workflow sont stockés dans la variable **[!UICONTROL Ressources > Modèles > Modèles de workflow]** de l’Explorateur.
+Les modèles de workflows sont stockés dans le nœud **[!UICONTROL Ressources > Modèles > Modèles de workflow]** de l&#39;Explorateur.
 
 En plus des propriétés habituelles des workflows, les propriétés du modèle permettent d&#39;indiquer le dossier d&#39;exécution des workflows créés à partir de ce modèle.
 
@@ -158,7 +158,7 @@ Vous pouvez toutefois créer une vue pour afficher tous les workflows de votre i
 Le nouveau dossier **Workflows** est créé.
 
 1. Cliquez avec le bouton droit et sélectionnez **Propriétés**.
-1. Dans le **Restriction** , activez l’option **Ce dossier est une vue** et cliquez sur **Enregistrer**.
+1. Sous l&#39;onglet **Restrictions**, activez l&#39;option **Ce dossier est une vue** et cliquez sur **Enregistrer**.
 
    ![](assets/folder-is-a-view.png)
 

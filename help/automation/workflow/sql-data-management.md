@@ -6,7 +6,7 @@ feature: Workflows
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
 workflow-type: tm+mt
 source-wordcount: '425'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -22,14 +22,14 @@ Avant de configurer l&#39;activité, vérifiez que les prérequis suivants sont 
 
 * L’activité est disponible uniquement pour les sources de données distantes. Le ** .
 
-   Pour plus d&#39;informations à ce sujet, en fonction de la version de Campaign, reportez-vous aux sections suivantes :
+   Pour plus d’informations à ce sujet, en fonction de la version de Campaign, reportez-vous aux sections suivantes :
 
    !
 
    ![](assets/do-not-localize/v8.png)[  Documentation Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=fr)
 
 * Le schéma sortant doit exister dans la base de données et être lié à une base de données FDA.
-* L&#39;opérateur qui exécute le workflow doit disposer du ** .
+* L’opérateur qui exécute le workflow doit disposer du ** .
 
 ## Configuration de l&#39;activité Gestion des données SQL {#configuring-the-sql-data-management-activity}
 

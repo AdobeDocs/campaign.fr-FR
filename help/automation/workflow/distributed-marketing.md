@@ -15,7 +15,7 @@ ht-degree: 100%
 
 
 
-Le workflow présenté ci-dessous est installé par défaut avec le module **Marketing distribué**. Pour plus d’informations sur ce module, consultez cette  .
+Le workflow présenté ci-dessous est installé par défaut avec le module **Marketing distribué**. Pour plus d&#39;informations sur ce module, reportez-vous à .
 
 <table> 
  <tbody> 

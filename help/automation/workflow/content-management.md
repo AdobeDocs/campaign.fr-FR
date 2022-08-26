@@ -6,7 +6,7 @@ feature: Workflows, Data Management
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Les propriétés de l&#39;activité se divisent en trois étapes :
 
    ![](assets/content_mgmt_edit.png)
 
-   Le paramétrage et l&#39;utilisation de la gestion de contenu dans Adobe Campaign sont présentés dans cette  .
+   Pour plus d&#39;informations sur le paramétrage et l&#39;utilisation de la gestion de contenu dans Adobe Campaign, référez-vous à  .
 
 1. **Content**
 
@@ -100,4 +100,4 @@ Identifiant du contenu à utiliser, si l&#39;option **[!UICONTROL Spécifié par
 
 ## Exemples     {#examples}
 
-Des exemples sont fournis dans ce rapport .
+Des exemples sont proposés dans  .

@@ -7,7 +7,7 @@ exl-id: 08febcbc-1703-4d36-89e1-32c903618084
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '342'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -54,4 +54,4 @@ Pour cela :
 
 >[!NOTE]
 >
->Les bonnes pratiques et la résolution des problèmes liés à l’utilisation du serveur SFTP sont détaillées .
+>Les bonnes pratiques et la résolution des problèmes liées à l&#39;utilisation du serveur SFTP sont présentées dans cette page.

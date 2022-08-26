@@ -7,7 +7,7 @@ exl-id: 297aa4e3-b672-46b5-9016-5accee8568b8
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '643'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Ainsi, Adobe Campaign utilise des workflows pour :
 * Orchestrez des campagnes cross-canal. [En savoir plus](#campaign-workflows)
 * Exécutez des processus techniques tels que le nettoyage, la collecte de données, les calculs, etc. [En savoir plus](#technical-workflows)
 
-Un workflow est une définition de processus : le diagramme de workflow, qui est une représentation de ce qui est censé se produire. Un workflow est également une instance de ce processus : une instance de workflow, qui est une représentation de ce qui se passe réellement.
+Un workflow est une définition de processus : le diagramme de workflow, qui est une représentation de ce qui est censé se produire. Un workflow est également une instance de ce processus : une instance de workflow, qui est une représentation de ce qui se passe réellement.
 
 Le modèle de workflow décrit les différentes tâches à effectuer et la façon de les enchaîner. Les modèles de tâches sont appelés des activités et sont représentées par des icônes. Elles sont reliées entre elles par des transitions.
 

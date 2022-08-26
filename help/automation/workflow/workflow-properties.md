@@ -7,7 +7,7 @@ exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '616'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Cette section n&#39;apparaît que dans les workflows d&#39;opérations.
 
    Si votre installation comprend plusieurs serveurs de workflow, utilisez ce champ pour choisir sur quelle machine le workflow s&#39;exécutera. Si la valeur définie dans ce champ n&#39;existe au niveau d&#39;aucun serveur, le workflow restera en attente.
 
-   Consultez cette section .
+   Reportez-vous à .
 
 * **[!UICONTROL Jours d&#39;historique]**
 

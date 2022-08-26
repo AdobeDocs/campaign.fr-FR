@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Cas dʼutilisation de workflows
-description: En savoir plus sur les cas pratiques que vous pouvez exécuter à l’aide des workflows de Campaign
+title: Cas d'utilisation de workflows
+description: En savoir plus sur les cas pratiques de workflows dans Campaign
 feature: Workflows, Data Management
 exl-id: 6e899937-5ca0-4ca5-bb14-f914e41559ab
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
-# Cas dʼutilisation de workflows {#about-workflow-use-cases}
+# Cas d&#39;utilisation de workflows {#about-workflow-use-cases}
 
-Découvrez les différents contextes dans lesquels les workflows peuvent être utilisés et comment les mettre en oeuvre par le biais de cas d’utilisation de bout en bout.
+Découvrez les différents contextes dans lesquels les workflows peuvent être utilisés et comment les implémenter par le biais de cas d&#39;utilisation de bout en bout.
 
 ## Diffusions {#deliveries}
 
@@ -41,9 +41,9 @@ Découvrez les différents contextes dans lesquels les workflows peuvent être u
 * [Coordination des mises à jour de données](coordinate-data-updates.md)
 * [Création d’une liste récapitulative](create-a-summary-list.md)
 * [Enrichir les données](enrich-data.md)
-* [Utilisation d’agrégats](using-aggregates.md)
-* [Chiffrer et exporter des données à l’aide d’une clé installée sur Panneau de Contrôle](use-workflow-data.md#use-case-gpg-encrypt)
-* [Mise à jour de la liste trimestrielle à l’aide d’une requête incrémentielle](quarterly-list-update.md)
+* [Utiliser des agrégats](using-aggregates.md)
+* [Chiffrer et exporter des données à l&#39;aide d&#39;une clé installée sur le Panneau de contrôle](use-workflow-data.md#use-case-gpg-encrypt)
+* [Mettre à jour la liste trimestrielle à l&#39;aide d&#39;une requête incrémentielle](quarterly-list-update.md)
 * [Utilisation de la fonctionnalité de fusion de l’activité de déduplication](deduplication-merge.md)
 * [Configuration d’un workflow d’import récurrent](recurring-import-workflow.md)
 
@@ -53,7 +53,7 @@ Découvrez les différents contextes dans lesquels les workflows peuvent être u
 
 * [Requête de la table des destinataires](querying-recipient-table.md)
 * [Informations sur la diffusion de requêtes](query-delivery-info.md)
-* [Effectuer un calcul d&#39;agrégat](compute-aggregates.md)
+* [Effectuer un calcul d&#39;agrégats](compute-aggregates.md)
 * [Requête avec gestion des regroupements](query-grouping-management.md)
 * [Requête avec une relation multiple-à-multiple](query-many-to-many-relationship.md)
 * [Ajout d’un champ calculé de type Énumérations](adding-enumeration-type-calculated-field.md)

@@ -7,7 +7,7 @@ exl-id: 13a7432e-6216-4a5c-84fc-bc374b5af5ee
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '231'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
@@ -15,23 +15,23 @@ ht-degree: 39%
 
 ## Suivi d’une campagne {#tracking-a-campaign}
 
-Pour chaque opération, la variable **[!UICONTROL Tracking]** vous permet de visualiser toutes les tâches et leur état.
+Pour chaque campagne, l&#39;onglet **[!UICONTROL Tracking]** vous permet de visualiser tous les traitements et leur statut.
 
-Les informations accessibles depuis ce sous-onglet sont les suivantes :
+Les informations accessibles à partir de ce sous-onglet sont les suivantes :
 
-* Le **[!UICONTROL Audit]** sous-onglet affiche le journal des activités. Elle contient les traitements exécutés sur l&#39;opération : création ou démarrage d&#39;un workflow, validation, extraction, gestion des stocks, etc.
+* Le sous-onglet **[!UICONTROL Audit]** affiche le journal des activités. Il contient les traitements exécutés lors de la campagne : création ou démarrage d&#39;un workflow, validation, extraction, gestion des stocks, etc.
 
    ![](assets/campaign-audit-tab.png)
 
-* Le **[!UICONTROL Diffusions]** Le sous-onglet contient toutes les diffusions de l&#39;opération. Ils peuvent être modifiés à partir de cette vue. Pour cela, sélectionnez la diffusion et cliquez sur le bouton **[!UICONTROL Détail]** icône .
+* Le sous-onglet **[!UICONTROL Diffusions]** contient toutes les diffusions de la campagne. Elles peuvent être modifiées à partir de cet affichage. Pour cela, sélectionnez la diffusion et cliquez sur l&#39;icône **[!UICONTROL Détail]**.
 
    ![](assets/campaign-delivery-tab.png)
 
-* Le **[!UICONTROL Approbations]** Le sous-onglet contient l&#39;ensemble du processus de validation de l&#39;opération. Vous pouvez vérifier les détails et les commentaires.
+* Le sous-onglet **[!UICONTROL Validations]** contient l&#39;ensemble du processus de validation de la campagne. Vous pouvez vérifier les détails et les commentaires.
 
-* Les workflows créés pour générer les messages aux prestataires sont affichés dans le sous-onglet **[!UICONTROL Traitements sur les prestataires]**. Cliquez sur l&#39;icône **[!UICONTROL Détail]** pour afficher le workflow sélectionné.
+* Les workflows créés pour générer les messages aux fournisseurs sont affichés dans le sous-onglet **[!UICONTROL Traitements sur les fournisseurs]**. Cliquez sur l&#39;icône **[!UICONTROL Détail]** pour afficher le workflow sélectionné.
 
-## Suivi des diffusions {#delivery-tracking}
+## Suivre les diffusions {#delivery-tracking}
 
 La liste des diffusions peut être affichée à partir du lien **[!UICONTROL Diffusions]** de l&#39;univers des Campagnes.
 
@@ -47,8 +47,8 @@ Pour contrôler l&#39;état d&#39;une diffusion, éditez-la et consultez son tab
 >Information concerning delivery details is available in [this section](../../delivery/using/about-message-tracking.md) section.
 -->
 
-## Suivi de l’exécution {#execution-tracking}
+## Suivre l&#39;exécution {#execution-tracking}
 
-Vous pouvez vérifier le statut des diffusions en cliquant sur le lien **[!UICONTROL Diffusions]**, accessible à partir de la page d’accueil d’Adobe Campaign.
+Vous pouvez consulter le statut des diffusions en cliquant sur le lien **[!UICONTROL Diffusions]** accessible sur la page d&#39;accueil d&#39;Adobe Campaign.
 
-Les détails des processus exécutés dans une campagne sont rassemblés dans la section **[!UICONTROL Modifier > Audit]** de l&#39;opération. Vous pouvez visualiser la liste des diffusions de l&#39;opération. [En savoir plus](#tracking-a-campaign).
+Les détails des processus exécutés lors d&#39;une campagne sont collectés dans l&#39;onglet **[!UICONTROL Modifier > Audit]** de la campagne. Vous pouvez visualiser la liste des diffusions de la campagne. [En savoir plus](#tracking-a-campaign).

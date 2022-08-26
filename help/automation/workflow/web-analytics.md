@@ -6,7 +6,7 @@ feature: Workflows, Analytics Integration
 source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 82%
 
 
 
-Les workflows présentés ci-dessous sont installés par défaut avec le module **Connecteurs Web Analytics**. Pour plus d’informations sur ce module, consultez cette  .
+Les workflows présentés ci-dessous sont installés par défaut avec le module **Connecteurs Web Analytics**. Pour plus d&#39;informations sur ce module, reportez-vous à .
 
 <table> 
  <tbody> 
@@ -32,7 +32,7 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
   <tr> 
    <td> <span class="uicontrol">Identification des contacts convertis</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsFindConverted</span> <br /> </td> 
-   <td> Ce workflow répertorie les visiteurs du site qui ont concrétisé leur achat après une campagne de remarketing. Les données récupérées par ce workflow sont accessibles dans le <span class="uicontrol">Rapport Efficacité du remarketing</span> (Voir à ce sujet ). <br /> </td> 
+   <td> Ce workflow répertorie les visiteurs du site ayant concrétisé leur achat après une campagne de remarketing. Les données récupérées par ce workflow sont accessibles dans le <span class="uicontrol">Rapport d'efficacité du remarketing</span> (reportez-vous à ). <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Purge des événements</span> <br /> </td> 

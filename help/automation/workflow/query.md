@@ -6,7 +6,7 @@ feature: Workflows, Targeting Activity, Query Editor
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
 workflow-type: tm+mt
 source-wordcount: '1652'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Le lien **[!UICONTROL Editer la requête...]** permet de définir le type de cib
 
 1. Définissez la sélection des populations via l&#39;assistant. Les champs à renseigner peuvent différer en fonction du type de cible. Vous pouvez afficher un aperçu de la population ciblée avec vos critères actuels via l&#39;onglet **[!UICONTROL Aperçu]**.
 
-   La création et l&#39;utilisation des filtres et des requêtes sont présentées dans cette  .
+   La création et l&#39;utilisation des filtres et des requêtes sont présentées dans cette .
 
    ![](assets/query-sample.png)
 
@@ -49,9 +49,9 @@ Le lien **[!UICONTROL Editer la requête...]** permet de définir le type de cib
 
    Vous pouvez également ajouter des conditions de groupement de données en cochant la case correspondante. Pour cela, la dimension de filtrage doit impérativement être différente de la dimension de ciblage de la requête. Pour plus d&#39;informations concernant le groupement, consultez cette [section](query-grouping-management.md).
 
-   Vous pouvez également ajouter d’autres critères à l’aide du générateur d’expression et les combiner avec les options logiques AND, OR et SACEPT. Vous pouvez ensuite prévisualiser le ** .
+   Vous pouvez également ajouter des critères supplémentaires en vous aidant du Créateur d&#39;expressions et les combiner via les opérateurs logiques ET, OU et SAUF. Vous pouvez ensuite prévisualiser la ** .
 
-   Enregistrez votre filtre si vous souhaitez pouvoir le réutiliser ultérieurement.
+   Enregistrez votre filtre si vous souhaitez le réutiliser ultérieurement.
 
 ## Ajout de données {#adding-data}
 
@@ -177,7 +177,7 @@ La section ci-dessous présente les bonnes pratiques pour optimiser les requête
 
    Assurez-vous de connaître le plan d’exécution de votre requête. Évitez les analyses de table complètes, en particulier pour les requêtes en temps réel ou quasi temps réel qui s’exécutent toutes les minutes.
 
-   Pour plus d&#39;informations à ce sujet, en fonction de la version de Campaign, reportez-vous aux sections suivantes :
+   Pour plus d’informations à ce sujet, en fonction de la version de Campaign, reportez-vous aux sections suivantes :
 
    !
 
@@ -188,7 +188,7 @@ La section ci-dessous présente les bonnes pratiques pour optimiser les requête
 * Attention aux fonctions comme `Lower(...)`. Si vous avez recours à la fonction Lower, l’index n’est pas utilisé.
 * Vérifiez soigneusement les requêtes contenant les instructions « like », « upper » ou « lower ». Appliquez « upper » à la saisie utilisateur et non au champ de base de données.
 
-   Pour plus d’informations sur les fonctions, voir .
+   Pour en savoir plus sur les fonctions, consultez .
 
 ### Dimensions de filtrage {#filtering-dimensions}
 

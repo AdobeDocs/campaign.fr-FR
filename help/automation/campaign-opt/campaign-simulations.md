@@ -1,30 +1,30 @@
 ---
 product: campaign
-title: Prise en main des simulations de campagne
-description: Découvrez comment configurer des simulations de campagne
+title: Prise en main des simulations de campagnes
+description: Découvrez comment configurer les simulations de campagnes.
 feature: Campaigns
 exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '1343'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Simulation de campagnes{#campaign-simulations}
+# Simulations de campagnes{#campaign-simulations}
 
 Campaign Optimization permet de tester l&#39;efficacité d&#39;un plan de campagne au travers des simulations. Vous pouvez ainsi mesurer le succès potentiel d&#39;une campagne : le revenu généré, le volume de la cible en fonction des règles de typologies appliquées, etc.
 
 La simulation permet de suivre et de comparer l&#39;impact des diffusions les unes par rapport aux autres.
 
-## Configuration dʼune simulation {#set-up-a-simulation}
+## Configurer une simulation {#set-up-a-simulation}
 
 ### Attention
 
 
-Diffusions préparées dans **Test** n&#39;ont aucun impact les uns sur les autres, par exemple lors de l&#39;évaluation d&#39;une opération dans le cadre du marketing distribué, ou tant que les diffusions ne sont pas planifiées dans le calendrier prévisionnel.
+Les diffusions préparées en mode **Test** n&#39;ont pas d&#39;impact les unes sur les autres, par exemple lors de l&#39;évaluation d&#39;une campagne dans le cadre du marketing distribué, ou tant que l&#39;inscription des diffusions au calendrier prévisionnel n&#39;est pas validée.
 
-Cela signifie que les règles de pression et de capacité ne sont appliquées qu&#39;aux diffusions dans **[!UICONTROL Estimation de la cible et personnalisation des messages]** mode . Diffusions dans **[!UICONTROL Estimation et validation de la cible prévisionnelle]** et dans **[!UICONTROL Évaluation de la cible]** ne sont pas prises en compte.
+Cela signifie que les règles de pression et de capacité ne s&#39;appliquent qu&#39;aux diffusions dans le mode **[!UICONTROL Estimation de la cible et personnalisation des messages]**. Les diffusions des modes **[!UICONTROL Estimation et validation de la cible prévisionnelle]** et **[!UICONTROL Évaluation de la cible]** ne sont pas prises en compte.
 
 Le mode de diffusion est sélectionné dans les propriétés de la diffusion, sous l&#39;onglet **[!UICONTROL Typologie]**.
 
@@ -125,7 +125,7 @@ Une fois l&#39;exécution terminée, ouvrez la simulation et cliquez sur l&#39;o
 1. Le sous-onglet **[!UICONTROL Alertes]** regroupe tous les messages d&#39;alerte générés lors de la simulation. Ainsi, les messages d&#39;alerte peuvent avertir l&#39;utilisateur d&#39;un dépassement de capacité (par exemple : trop de destinataires ciblés par rapport à la capacité fixée).
 1. Le sous-onglet **[!UICONTROL Exploration des exclusions]** permet de créer un tableau d&#39;analyse des résultats. L&#39;utilisateur doit indiquer des variables dans les axes des abscisses/ordonnées.
 
-   Pour un exemple de création d&#39;un tableau d&#39;analyse, reportez-vous à la fin de la section [cette section](#explore-results).
+   Pour obtenir un exemple de création de table d&#39;analyse, reportez-vous à la fin de [cette section](#explore-results).
 
 ### Affichage des résultats {#view-results}
 
@@ -192,7 +192,7 @@ Pour comparer les résultats, vous devez utiliser les rapports. En effet, Adobe�
 
 ### Axes de reporting {#reporting-axes}
 
-L’onglet **[!UICONTROL Calculs]** vous permet de définir des axes de reporting sur la cible. Ces axes seront utilisés pendant [analyse des résultats](#explore-results).
+L&#39;onglet **[!UICONTROL Calculs]** vous permet de définir des axes de reporting sur la cible. Ces axes seront utilisés pendant l&#39;[analyse des résultats](#explore-results).
 
 >[!NOTE]
 >

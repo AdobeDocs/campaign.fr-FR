@@ -17,7 +17,7 @@ ht-degree: 100%
 
 
 
-Les workflows présentés ci-dessous sont installés par défaut avec le module **Ressources marketing (MRM)**. Voir à ce propos cette  .
+Les workflows présentés ci-dessous sont installés par défaut avec le module **Ressources marketing (MRM)**. Pour plus d&#39;informations sur ce module, reportez-vous à .
 
 <table> 
  <tbody> 

@@ -7,7 +7,7 @@ exl-id: b46530b5-cb81-40d7-b596-c7685359782a
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '1691'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Nommez votre modèle d&#39;opération et renseignez les champs disponibles.
 
 ![](assets/mkg_dist_local_op_creation1.png)
 
-Dans la fenêtre de l&#39;opération, cliquez sur le bouton **[!UICONTROL Modifier]** , puis cliquez sur le bouton **[!UICONTROL Paramètres avancés de l&#39;opération...]** lien.
+Dans la fenêtre de la campagne, cliquez sur l&#39;onglet **[!UICONTROL Modifier]**, puis sur le lien **[!UICONTROL Paramètres avancés de la campagne...]**.
 
 ![](assets/mkt_distr_4.png)
 
@@ -65,11 +65,11 @@ Quatre types d’interface web sont disponibles :
 
    ![](assets/mkt_distr_8.png)
 
-   Le formulaire proposé est défini dans une application web qui doit être sélectionnée dans la liste déroulante du **[!UICONTROL interface web]** du modèle **[!UICONTROL Paramètres avancés de l&#39;opération...]** lien. Pour plus d&#39;informations, consultez la section [Création d’une campagne locale (par formulaire)](examples.md#creating-a-local-campaign--by-form-).
+   Le formulaire proposé est indiqué dans une application web qui doit être sélectionnée dans la liste déroulante du champ **[!UICONTROL Interface web]** qui se trouve dans le lien **[!UICONTROL Paramètres avancés de la campagne...]**. Pour plus d&#39;informations, consultez la section [Créer une campagne locale (par formulaire)](examples.md#creating-a-local-campaign--by-form-).
 
    >[!NOTE]
    >
-   >L’application web utilisée ici est un exemple. Vous devez créer une application web spécifique pour pouvoir utiliser un formulaire. Pour plus d&#39;informations, consultez la section  .
+   >L&#39;application web utilisée ici est un exemple. Vous devez créer une application web spécifique pour pouvoir utiliser un formulaire. Pour plus d&#39;informations, consultez la section  .
 
    ![](assets/mkt_distr_7.png)
 
@@ -124,7 +124,7 @@ Pour ne proposer aucun champ pour le téléchargement de documents, saisissez la
 
 ### Workflow {#workflow}
 
-Dans le **[!UICONTROL Ciblage et workflows]** , créez le workflow de l&#39;opération qui collecte les **[!UICONTROL Valeurs par défaut]** spécifié dans la variable **[!UICONTROL Paramètres avancés de l&#39;opération...]** et crée les diffusions.
+Dans l&#39;onglet **[!UICONTROL Ciblages et workflows]**, créez le workflow de la campagne qui collecte les **[!UICONTROL Valeurs par défaut]** définies dans les **[!UICONTROL Paramètres avancés de la campagne...]** et crée les diffusions.
 
 ![](assets/mkg_dist_local_op_creation4b.png)
 
@@ -156,7 +156,7 @@ Enregistrez votre modèle de campagne. Vous pouvez désormais l’utiliser depui
 
 >[!NOTE]
 >
->Les modèles d&#39;opération et leur paramétrage général sont présentés dans la section  .
+>Les modèles de campagne et leur paramétrage général sont présentés dans la section  .
 
 ## Créer le kit d&#39;opération {#creating-the-campaign-package}
 
@@ -239,7 +239,7 @@ Pour commander une opération :
 
    >[!NOTE]
    >
-   >Les applications web sont présentées dans la section .
+   >Les applications web sont présentées dans .
 
 1. Renseignez les informations utiles dans la première page (libellé de la commande et commentaire) et cliquez sur **[!UICONTROL Suivant]**.
 

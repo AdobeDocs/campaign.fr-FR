@@ -57,9 +57,9 @@ Ces données sont contenues dans un fichier texte : &quot;Achats.txt&quot;.
 
    L&#39;activité **Chargement(fichier)** permet d&#39;alimenter la table de travail du workflow avec les données collectées.
 
-   Pour plus d&#39;informations sur cette activité, referez-vous à la section  .
+   Pour plus d&#39;informations sur cette activité, reportez-vous à .
 
-1. Configurez l’activité **Collecteur de fichiers** pour collecter des fichiers de type texte (&#42;.txt) dans le répertoire sélectionné.
+1. Configurez l&#39;activité **Collecteur de fichiers** pour collecter des fichiers de type texte (&#42;.txt) du répertoire sélectionné.
 
    ![](assets/uc2_enrich_collecteur.png)
 
@@ -157,7 +157,7 @@ L&#39;objectif de ce deuxième enrichissement est de créer un agrégat sur le s
 
 Pour préparer la liste récapitulative, il est nécessaire d&#39;ajouter des champs provenant du schéma &quot;Achats&quot; ainsi que du premier enrichissement : le champ &quot;ZipCode Reference&quot;.
 
-1. Cliquez sur le lien **[!UICONTROL Éditer les données additionnelles...]** dans l&#39;activité d&#39;enrichissement.
+1. Cliquez sur le lien **[!UICONTROL Modifier les données additionnelles...]** dans l&#39;activité d&#39;enrichissement.
 1. Ajoutez les champs &quot;Achats / Nom Boutique&quot; et &quot;Achats / Zip Code Reference&quot;.
 
    ![](assets/uc2_enrich_enrich7.png)

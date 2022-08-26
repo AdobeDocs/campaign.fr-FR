@@ -15,7 +15,7 @@ ht-degree: 100%
 
 
 
-Les workflows présentés ci-dessous sont installés par défaut avec le module **Intégration avec Adobe Experience Cloud**. Pour plus d’informations sur ce module, consultez cette  .
+Les workflows présentés ci-dessous sont installés par défaut avec le module **Intégration avec Adobe Experience Cloud**. Pour plus d&#39;informations sur ce module, consultez cette .
 
 <table> 
  <tbody> 

@@ -6,7 +6,7 @@ feature: Workflows, Data Management
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Avec la connexion SFTP, S3, ou stockage Blob Azure, vous pouvez également imp
 
 >[!NOTE]
 >
->Les bonnes pratiques et la résolution des problèmes liés à l’utilisation du serveur SFTP sont détaillées .
+>Les bonnes pratiques et la résolution des problèmes liées à l&#39;utilisation du serveur SFTP sont présentées dans cette page.
 
 ## Propriétés {#properties}
 

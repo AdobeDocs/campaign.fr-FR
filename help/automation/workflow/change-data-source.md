@@ -5,24 +5,24 @@ feature: Workflows, Data Management, Federated Data Access
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 19%
+ht-degree: 100%
 
 ---
 
 # Modifier la source de données {#change-data-source}
 
-Utilisez la variable **[!UICONTROL Modification de la source de données]** pour modifier la source de données d’une [table de travail des workflows](use-workflow-data.md#workflow-temporary-work-table). Cette activité offre davantage de flexibilité pour gérer les données entre différentes sources de données, telles que Federated Data Access (FDA), Campaign Cloud Database (FFDA) et Campaign Local database.
+L&#39;activité **[!UICONTROL Modifier la source de données]** permet de modifier la source de données d&#39;une [table de travail d&#39;un workflow](use-workflow-data.md#workflow-temporary-work-table). Cette activité offre davantage de flexibilité permettant de gérer les données entre les différentes sources de données, telles que Federated Data Access (FDA), la base de données cloud de Campaign (FFDA) et la base de données locale de Campaign.
 
-Le workflow **[!UICONTROL Table de travail]** est utilisé pour gérer et partager des données avec les activités de workflow.
+La **[!UICONTROL table de travail]** du workflow est utilisée pour gérer et partager des données avec les activités du workflow.
 
-Par défaut, la variable **[!UICONTROL Table de travail]** est créé dans la même base de données que la source des données sur lesquelles vous devez effectuer des requêtes.
-Par exemple, lors de l’interrogation de la variable **[!UICONTROL Destinataires]** stockée dans la base de données Cloud, le workflow crée une **[!UICONTROL Table de travail]** sur la même base de données Cloud.
+Par défaut, la **[!UICONTROL table de travail]** est créée dans la même base de données que la source des données sur lesquelles vous devez effectuer une requête.
+Par exemple, lors de l&#39;interrogation de la table des **[!UICONTROL Destinataires]** stockée dans la base de données cloud, le workflow crée une **[!UICONTROL table de travail]** dans la même base de données cloud.
 
-Utilisez une **[!UICONTROL Modifier la source de données]** pour utiliser une autre source de données pour votre **[!UICONTROL Table de travail]**.
+Utilisez une activité **[!UICONTROL Modifier la source de données]** pour utiliser une autre source de données pour votre **[!UICONTROL table de travail]**.
 
-Notez que lors de l’utilisation de la variable **[!UICONTROL Modifier la source de données]** , vous devez revenir à la base de données Cloud pour continuer l’exécution du workflow.
+Notez que lorsque vous utilisez l&#39;activité **[!UICONTROL Modifier la source de données]**, vous devez revenir à la base de données cloud pour continuer l&#39;exécution des workflows.
 
-Pour utiliser la variable **[!UICONTROL Modifier la source de données]** activité, vous devez :
+Pour utiliser l&#39;activité **[!UICONTROL Modifier la source de données]**, vous devez effectuer les opérations suivantes :
 
 1. Créez un workflow.
 
@@ -30,23 +30,23 @@ Pour utiliser la variable **[!UICONTROL Modifier la source de données]** activi
 
    Pour plus d&#39;informations sur l&#39;activité **[!UICONTROL Requête]**, consultez cette [page](query.md#create-a-query).
 
-1. Ajouter un **[!UICONTROL Modification de la source de données]** activité.
+1. Ajoutez une activité **[!UICONTROL Modifier la source de données]**.
 
    ![](assets/change-data-source.png)
 
-1. Modifiez votre **[!UICONTROL Modification de la source de données]** activité à sélectionner **[!UICONTROL Source de données par défaut]**.
+1. Modifiez votre activité **[!UICONTROL Modifier la source de données]** pour sélectionner **[!UICONTROL Source de données par défaut]**.
 
-   La table de travail, qui contient le résultat de votre requête, est ensuite déplacée vers la base de données locale Campaign par défaut.
+   La table de travail, qui contient le résultat de votre requête, est ensuite déplacée vers la base de données locale par défaut de Campaign.
 
    ![](assets/change-data-source_2.png)
 
-1. Ajouter un **[!UICONTROL Code JavaScript]** pour effectuer des opérations unitaires sur la table de travail.
+1. Ajoutez un **[!UICONTROL code JavaScript]** pour effectuer des opérations unitaires sur la table de travail.
 
-   Pour plus d’informations sur la variable **[!UICONTROL Code JavaScript]** , voir [cette page](sql-code-and-javascript-code.md#javascript-code).
+   Pour plus d&#39;informations sur l&#39;activité **[!UICONTROL code JavaScript]**, consultez [cette page](sql-code-and-javascript-code.md#javascript-code).
 
 1. Ajoutez une autre activité **[!UICONTROL Modifier la source de données]** pour revenir à la base de données cloud.
 
-1. Modifiez cette activité et sélectionnez **[!UICONTROL Compte externe principal FDA]**, et le **[!UICONTROL Base de données externe]** compte externe .
+1. Modifiez cette activité et sélectionnez **[!UICONTROL Compte externe FDA actif]** puis le compte externe **[!UICONTROL Base de données externe]** correspondant.
 
    ![](assets/change-data-source_3.png)
 

@@ -41,4 +41,4 @@ Le workflow est donc démarré et attend la décision d&#39;un opérateur du gro
 
 La gestion des opérateurs est présentée dans cette  .
 
-Pour plus d&#39;informations sur la manière de surveiller vos workflows, voir [cette section](monitor-workflow-execution.md).
+Pour plus d&#39;informations sur la manière de surveiller vos workflows, reportez-vous à [cette section](monitor-workflow-execution.md).

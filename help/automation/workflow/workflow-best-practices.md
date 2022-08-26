@@ -7,13 +7,13 @@ exl-id: 8bcaf367-5b1f-4d31-80c9-c77df43c6ed1
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '1709'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 # Bonnes pratiques relatives aux workflows{#workflow-best-practices}
 
-Vous trouverez ci-dessous des instructions générales pour optimiser les performances des workflows Campaign, améliorer la conception de vos workflows et sélectionner les paramètres appropriés.
+Vous trouverez ci-dessous des instructions générales pour optimiser les performances des workflows de Campaign, améliorer la conception de vos workflows et sélectionner les paramètres appropriés.
 
 ## Dossiers des workflows {#workflow-folders}
 
@@ -61,7 +61,7 @@ Vérifiez régulièrement l’onglet **[!UICONTROL Supervision]** pour connaîtr
 
 La carte thermique des workflows permet aux administrateurs de la plateforme Adobe Campaign de surveiller la charge sur l’instance et de planifier les workflows en conséquence. Voir à ce sujet [Surveillance des workflows](heatmap.md).
 
-## Activities {#using-activities}
+## Activités {#using-activities}
 
 >[!CAUTION]
 >
@@ -104,33 +104,33 @@ Les workflows archivés peuvent être conservés sur des plateformes de dévelop
 
 ### Logs {#logs}
 
-Méthode JavaScript **[!UICONTROL logInfo()]** est une solution pour déboguer un workflow. Toutefois, il doit être utilisé avec précaution, en particulier pour les activités qui sont fréquemment exécutées : il peut surcharger les journaux et augmenter considérablement la taille de la table des journaux.
+La méthode JavaScript **[!UICONTROL logInfo()]** est une solution permettant de déboguer un workflow. Toutefois, vous devez l&#39;utiliser avec précaution, en particulier pour les activités que vous exécutez fréquemment : il peut surcharger les logs et augmenter considérablement la taille de la table des logs.
 
 ### Conserver les populations intermédiaires
 
-Le **Conserver le résultat des populations intermédiaires entre deux exécutions** conserve les tables temporaires entre deux exécutions d’un workflow.
+L&#39;option **Conserver le résultat des populations intermédiaires entre deux exécutions** conserve les tables temporaires entre deux exécutions d&#39;un workflow.
 
-Elle est disponible dans les propriétés du workflow. **[!UICONTROL Général]** et peut être utilisé à des fins de développement et de test pour surveiller les données et vérifier les résultats. Vous pouvez utiliser cette option dans les environnements de développement, mais ne l’utilisez jamais dans les environnements de production. Le fait de conserver des tables temporaires peut entraîner une augmentation significative de la taille de la base de données et, par la suite, l’atteinte de la limite de taille. De plus, cela ralentira la sauvegarde.
+Elle est disponible dans l&#39;onglet **[!UICONTROL Général]** des propriétés du workflow et peut être utilisée à des fins de développement et de test pour surveiller les données et vérifier les résultats. Vous pouvez utiliser cette option dans les environnements de développement, mais ne l&#39;utilisez jamais dans les environnements de production. La conservation des tables temporaires peut entraîner une augmentation significative de la taille de la base de données et, par la suite, l&#39;atteinte de la limite de taille. De plus, cela ralentira la sauvegarde.
 
 Seules les tables de travail de la dernière exécution du workflow sont conservées. Celles des exécutions précédentes sont purgées par le workflow de **[!UICONTROL nettoyage]** qui s&#39;exécute tous les jours.
 
 >[!CAUTION]
 >
->Cette option doit **never** être archivé dans un **production** workflow. Elle sert à analyser les résultats et est conçue uniquement à des fins de test. Elle ne doit donc être utilisée que dans les environnements de développement ou d’évaluation.
+>Ne cochez **jamais** cette option dans un workflow de **production**. Elle sert à analyser les résultats et est conçue uniquement à des fins de test. Elle ne doit donc être utilisée que dans les environnements de développement ou d&#39;évaluation.
 
 
 ### Enregistrer les requêtes SQL
 
-Le **Enregistrer les requêtes SQL dans le journal** est disponible dans la variable **[!UICONTROL Exécution]** de propriétés de workflow. Cette option consigne toutes les requêtes SQL des différentes activités et permet de voir ce qui est réellement exécuté par la plateforme. Toutefois, cette option ne doit être utilisée que **temporairement** pendant le développement et **non activé en production**.
+L&#39;option **Enregistrer les requêtes SQL dans le journal** est disponible dans l&#39;onglet **[!UICONTROL Exécution]** des propriétés de workflow. Cette option enregistre toutes les requêtes SQL des différentes activités et permet de voir ce qui est réellement exécuté par la plateforme. Toutefois, cette option ne doit être utilisée que **temporairement** pendant le développement et **non activée pendant la production**.
 
-La bonne pratique consiste à purger les journaux lorsqu’ils ne sont plus nécessaires. L’historique d’un workflow n’est pas purgé automatiquement : tous les messages sont conservés par défaut. Vous pouvez purger l’historique depuis le menu **[!UICONTROL Fichier > Actions]** ou en cliquant sur le bouton Actions situé dans la barre d’outils au-dessus de la liste. Choisissez Purge de l’historique.
+Une bonne pratique consiste à purger les logs lorsqu&#39;ils ne sont plus nécessaires. L’historique d’un workflow n’est pas purgé automatiquement : tous les messages sont conservés par défaut. Vous pouvez purger l’historique depuis le menu **[!UICONTROL Fichier > Actions]** ou en cliquant sur le bouton Actions situé dans la barre d’outils au-dessus de la liste. Choisissez Purge de l’historique.
 Pour savoir comment purger les logs, consultez cette [documentation](start-a-workflow.md).
 
 ### Planification des workflows {#workflow-planning}
 
-D’autres bonnes pratiques doivent être appliquées à la planification de l’exécution de vos workflows afin d’éviter tout problème :
+D&#39;autres bonnes pratiques doivent être appliquées lors de la planification de l&#39;exécution de vos workflows afin d&#39;éviter tout problème :
 
-* Maintenez un niveau d’activité stable tout au long de la journée et évitez les pics pour empêcher l’instance de surcharger. Pour ce faire, répartissez les heures de début des workflows de manière uniforme tout au long de la journée.
+* Maintenez un niveau d&#39;activité stable tout au long de la journée et évitez les pics afin d&#39;empêcher la surcharge de l&#39;instance. Pour ce faire, répartissez les heures de début des workflows de manière uniforme tout au long de la journée.
 * Planifiez le chargement des données au cours de la nuit de façon à réduire les conflits entre les données.
 * Les workflows longs peuvent avoir une incidence sur les ressources du serveur et de la base de données. Fractionnez les workflows les plus longs pour réduire le temps de traitement.
 * Pour réduire les temps d’exécution globaux, remplacez les activités exigeant beaucoup de temps par des activités simplifiées et plus rapides.
@@ -138,7 +138,7 @@ D’autres bonnes pratiques doivent être appliquées à la planification de l�
 
 ### Exécution des workflows {#workflow-execution}
 
-Améliorez la stabilité de votre instance en mettant en oeuvre les bonnes pratiques suivantes :
+Améliorez la stabilité de votre instance en implémentant les bonnes pratiques suivantes :
 
 * **Ne planifiez pas l’exécution d’un workflow à une fréquence supérieure à toutes les 15 minutes**, car cela peut nuire aux performances générales du système et créer des blocs dans la base de données.
 
@@ -156,8 +156,8 @@ Améliorez la stabilité de votre instance en mettant en oeuvre les bonnes prati
 
 * **N’effectuez pas plusieurs demandes d’arrêt sur le même workflow**. L’arrêt d’un workflow suit un processus asynchrone : la demande est enregistrée, puis le ou les serveurs de workflow annulent les opérations en cours. L’arrêt d’une instance de workflow peut donc prendre du temps, surtout si le workflow est exécuté sur plusieurs serveurs, car chacun d’eux doit alors prendre le contrôle pour annuler les tâches en cours. Pour éviter tout problème, attendez que l’opération d’arrêt soit terminée et évitez d’arrêter un workflow à de multiples reprises.
 
-### Option exécuter dans le moteur {#execute-in-the-engine-option}
+### Option Exécuter dans le moteur {#execute-in-the-engine-option}
 
-Dans un environnement de production, évitez d&#39;exécuter des workflows dans le moteur. Lorsque la variable **[!UICONTROL Exécuter dans le moteur]** est cochée dans la variable **[!UICONTROL Propriétés du workflow]**, le workflow est prioritaire et tous les autres workflows sont arrêtés par le moteur de workflow tant que celui-ci n&#39;est pas terminé.
+Dans un environnement de production, évitez d&#39;exécuter des workflows dans le moteur. Lorsque l&#39;option **[!UICONTROL Exécuter dans le moteur]** est cochée dans les **[!UICONTROL Propriétés d&#39;un workflow]**, le workflow en question devient prioritaire et tous les autres workflows sont arrêtés par le moteur de workflow tant que celui-ci n&#39;est pas terminé.
 
 ![](assets/wf-execute-in-engine.png)

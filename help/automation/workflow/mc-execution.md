@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Les workflows présentés ci-dessous sont installés par défaut avec le module complémentaire **Message Center - Exécution**.
 
-Pour plus d&#39;informations à ce sujet, en fonction de la version de Campaign, reportez-vous aux sections suivantes :
+Pour plus d’informations à ce sujet, en fonction de la version de Campaign, reportez-vous aux sections suivantes :
 
 !
 

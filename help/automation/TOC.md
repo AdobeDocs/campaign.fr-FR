@@ -1,28 +1,28 @@
 ---
 audience: user
-user-guide-title: Guide d’automatisation de Campaign
-user-guide-description: Guide d’automatisation de Campaign
+user-guide-title: Guide d'automatisation des campagnes
+user-guide-description: Guide d'automatisation des campagnes
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
-# Guides d’automatisation de campagne {#automation}
+# Guides d&#39;automatisation des campagnes {#automation}
 
-+ [Guide d’automatisation de Campaign](home.md)
++ [Guide d&#39;automatisation des campagnes](home.md)
 + Automatisation à l’aide de workflows {#workflows}
    + Prise en main des workflows {#introduction}
       + [À propos des workflows](workflow/about-workflows.md)
       + Types de workflows {#wf-type}
          + [Les workflows de ciblage](workflow/targeting-workflows.md)
-         + [Les workflows des opérations](workflow/campaign-workflows.md)
-         + [Workflows techniques](workflow/technical-workflows.md)
-      + [Création d’un workflow](workflow/build-a-workflow.md)
+         + [Les workflows de campagne](workflow/campaign-workflows.md)
+         + [Les workflows techniques](workflow/technical-workflows.md)
+      + [Créer un workflow](workflow/build-a-workflow.md)
       + [Bonnes pratiques](workflow/workflow-best-practices.md)
-      + [Utilisation des données de workflow](workflow/use-workflow-data.md)
+      + [Utiliser les données d&#39;un workflow](workflow/use-workflow-data.md)
    + Exécution d’un workflow {#executing-a-workflow}
       + [Démarrer un workflow](workflow/start-a-workflow.md)
       + [Cycle de vie d&#39;un workflow](workflow/workflow-life-cycle.md)
@@ -32,16 +32,16 @@ ht-degree: 88%
       + [Surveillance des workflows techniques](workflow/monitor-technical-workflows.md)
       + [Carte thermique des workflows](workflow/heatmap.md)
    + Activités de workflow {#wf-activities}
-      + [Prise en main des activités](workflow/activities.md)
+      + [Commencer avec les activités](workflow/activities.md)
       + Activités de ciblage {#targeting-activities}
          + [Liste des activités de ciblage](workflow/targeting-activities.md)
          + [Cellules](workflow/cells.md)
-         + [Modification de la source de données](workflow/change-data-source.md)
+         + [Modifier la source de données](workflow/change-data-source.md)
          + [Changement de dimension](workflow/change-dimension.md)
          + [Connecteur CRM](workflow/crm-connector.md)
          + [Déduplication](workflow/deduplication.md)
          + [Composition de diffusion](workflow/delivery-outline.md)
-         + [Modification du schéma](workflow/edit-schema.md)
+         + [Modifier le schéma](workflow/edit-schema.md)
          + [Enrichissement](workflow/enrichment.md)
          + [Exclusion](workflow/exclusion.md)
          + [Requête incrémentale](workflow/incremental-query.md)
@@ -56,7 +56,7 @@ ht-degree: 88%
          + [Union](workflow/union.md)
          + [Mise à jour de données](workflow/update-data.md)
       + Activités de contrôle de flux {#flow-control-activities}
-         + [Liste des activités de contrôle de flux](workflow/flow-control-activities.md)
+         + [Liste des activités d&#39;ordonnancement](workflow/flow-control-activities.md)
          + [Alerte](workflow/alert.md)
          + [Rendez-vous](workflow/and-join.md)
          + [Validation](workflow/approval.md)
@@ -87,7 +87,7 @@ ht-degree: 88%
          + [Gestion des données SQL](workflow/sql-data-management.md)
          + [Mise à jour d&#39;agrégat](workflow/update-aggregate.md)
       + Activités événementielles {#event-activities}
-         + [Liste des activités d’événement](workflow/event-activities.md)
+         + [Liste des activités d&#39;événement](workflow/event-activities.md)
          + [Collecteur de fichiers](workflow/file-collector.md)
          + [Envoi de fichier](workflow/file-transfer.md)
          + [Réception d&#39;emails](workflow/inbound-emails.md)
@@ -134,13 +134,13 @@ ht-degree: 88%
       + [Gérer les fuseaux horaires](workflow/managing-time-zones.md)
 + Orchestration des campagnes {#campaign-orchestration}
    + [Prise en main des campagnes marketing](campaigns/set-up-campaigns.md)
-   + [Créer des programmes et des campagnes](campaigns/marketing-campaign-create.md)
+   + [Créer les programmes et les campagnes](campaigns/marketing-campaign-create.md)
    + [Création et configuration de modèles](campaigns/marketing-campaign-templates.md)
    + [Ajout de diffusions](campaigns/marketing-campaign-deliveries.md)
    + [Sélection de l’audience](campaigns/marketing-campaign-target.md)
    + [Gestion des documents et des ressources](campaigns/marketing-campaign-assets.md)
    + [Configuration et gestion des validations](campaigns/marketing-campaign-approval.md)
-   + [Les opérations récurrentes et périodiques](campaigns/recurring-periodic-campaigns.md)
+   + [Campagnes récurrentes et périodiques](campaigns/recurring-periodic-campaigns.md)
    + [Surveillance de vos campagnes](campaigns/marketing-campaign-monitoring.md)
    + [Prestataires, stocks et budgets](campaigns/providers--stocks-and-budgets.md)
 + Optimisation des campagnes (module complémentaire){#campaign-optimization}
@@ -159,4 +159,4 @@ ht-degree: 88%
    + [Accès aux campagnes](distributed-marketing/accessing-campaigns.md)
    + [Suivi d’une campagne](distributed-marketing/tracking-a-campaign.md)
    + [Cas pratiques](distributed-marketing/examples.md)
-+ [Documentation de Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=fr)
++ [Documentation de Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=fr)

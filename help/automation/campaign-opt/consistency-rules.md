@@ -7,7 +7,7 @@ exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '790'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 Adobe Campaign permet d&#39;assurer la cohérence des communications au travers d&#39;un ensemble de règles regroupées dans des typologies de campagne. Ces règles ont pour objectif d&#39;assurer un contrôle sur les diffusions envoyées aux destinataires, leur volume, leur nature, leur pertinence, etc.
 
-Des règles de **capacité** peuvent par exemple éviter de surcharger la plateforme concernée par la diffusion. Par exemple, une offre spéciale contenant un lien de téléchargement ne doit pas s’adresser au même moment à une population trop nombreuse afin de ne pas saturer le serveur, une campagne téléphonique ne doit pas excéder la capacité de traitement du centre d’appels, etc.
+Des règles de **capacité** peuvent par exemple éviter de surcharger la plateforme concernée par la diffusion. Par exemple, une offre spéciale contenant un lien de téléchargement ne doit pas s&#39;adresser au même moment à une population trop nombreuse afin de ne pas saturer le serveur, une campagne téléphonique ne doit pas excéder la capacité de traitement du centre d&#39;appels, etc.
 
 ## Contrôle de la capacité {#control-capacity}
 
@@ -51,7 +51,7 @@ Pour créer une règle de capacité, procédez comme suit :
 
 ## Définition de la charge maximale {#define-the-maximum-load}
 
-Pour définir la charge maximale, vous devez définir les lignes de disponibilité. Pour ce faire, deux options sont disponibles : vous pouvez manuellement [créer une ou plusieurs lignes de disponibilité](#add-availability-lines-one-by-one) ou créer des plages de disponibilité. La fréquence de ces périodes peut être automatisée. [En savoir plus](#add-a-set-of-availability-lines).
+Pour définir la charge maximale, vous devez définir les lignes de disponibilité. Pour ce faire, deux options sont disponibles : vous pouvez manuellement [créer une ou plusieurs lignes de disponibilité](#add-availability-lines-one-by-one) ou créer des plages de disponibilité. La fréquence de ces périodes peut être automatisée. [En savoir plus](#add-a-set-of-availability-lines).
 
 ### Ajout de lignes de disponibilité une par une {#add-availability-lines-one-by-one}
 

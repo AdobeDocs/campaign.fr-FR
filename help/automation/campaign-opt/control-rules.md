@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Configuration des règles de contrôle
-description: Découvrez comment configurer des règles de contrôle
+title: Configurer les règles de contrôle
+description: Découvrez comment configurer des règles de contrôle.
 feature: Typology Rules
 exl-id: 79e442ea-f856-41bf-b065-25cb2ad2c65b
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 

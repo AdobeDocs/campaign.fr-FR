@@ -36,7 +36,7 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
 1. Dans la fenêtre **[!UICONTROL Données à extraire]**, sélectionnez les champs **[!UICONTROL Domaine de l&#39;email]** et **[!UICONTROL Clé primaire]**. Faites un comptage du champ **[!UICONTROL Clé primaire]**.
 
-   Pour plus d&#39;informations sur le comptage d&#39;une clé primaire, reportez-vous à la section  .
+   Pour plus d&#39;informations sur le comptage d&#39;une clé primaire, reportez-vous à .
 
 1. Sélectionnez l&#39;option **[!UICONTROL Gérer les groupements (GROUP BY + HAVING)]**.
 

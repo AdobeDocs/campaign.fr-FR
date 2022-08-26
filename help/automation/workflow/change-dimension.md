@@ -1,22 +1,22 @@
 ---
 product: campaign
 title: Changement de dimension dans un workflow
-description: Découvrez comment utiliser l’activité Changement de dimension
+description: Découvrez comment utiliser l’activité « Changement de dimension ».
 feature: Workflows, Targeting Activity
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
 workflow-type: tm+mt
 source-wordcount: '402'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
 # Changement de dimension{#change-dimension}
 
-Utilisez la variable **[!UICONTROL Changement de dimension]** pour modifier la dimension de ciblage au fur et à mesure que vous créez une audience. Cette activité déplace l’axe en fonction du modèle de données et de la dimension d’entrée. Par exemple, vous passez de la dimension &quot;contrats&quot; à la dimension &quot;clients&quot;.
+Utilisez l’activité **[!UICONTROL Changement de dimension]** pour changer la dimension de ciblage au fur et à mesure que vous créez une audience. Cette activité déplace l’axe en fonction du modèle de données et de la dimension d’entrée. Par exemple, vous passez de la dimension « contrats » à la dimension « clients ».
 
-Vous pouvez également utiliser cette activité pour définir les colonnes additionnelles de la nouvelle cible et définir les critères de déduplication des données.
+Vous pouvez également utiliser cette activité pour définir les colonnes supplémentaires de la nouvelle cible et définir les critères de déduplication des données.
 
-Pour configurer la variable **[!UICONTROL Changement de dimension]** , respectez les étapes suivantes :
+Pour configurer l’activité de **[!UICONTROL changement de dimension]**, respectez les étapes suivantes :
 
 1. Sélectionnez la nouvelle dimension de ciblage à partir du champ **[!UICONTROL Changement de dimension]**.
 
@@ -48,7 +48,7 @@ Pour configurer la variable **[!UICONTROL Changement de dimension]** , respectez
 
       >[!NOTE]
       >
-      >La création et la gestion des colonnes additionnelles sont présentées dans la section [Ajouter des données](query.md#add-data).
+      >Pour plus d’informations sur la création et la gestion des colonnes additionnelles, reportez-vous à la section [Ajouter des données](query.md#add-data).
 
    * Choisissez la dimension de ciblage précédente (avant le basculement d&#39;axe) et sélectionnez le **[!UICONTROL Code Postal]** dans la sous-arborescence **[!UICONTROL Localisation]** du destinataire, puis cliquez sur **[!UICONTROL Editer l&#39;expression]**.
 

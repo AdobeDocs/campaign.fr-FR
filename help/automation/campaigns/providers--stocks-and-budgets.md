@@ -7,7 +7,7 @@ exl-id: 1d4a98e6-af11-4645-864e-29aa5766d9d8
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '1904'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 80%
 
 Adobe Campaign vous permet de définir des prestataires qui seront impliqués dans les traitements réalisés dans les opérations. Les informations relatives aux prestataires et les structures de coûts qui leur sont associées sont définies par l&#39;administrateur Adobe Campaign, à partir de la vue globale. Le prestataire est référencé au niveau de la diffusion : ses structures de coûts permettent le calcul des coûts liés à cette diffusion ainsi que la gestion des stocks impactés.
 
-## Créer les prestataires et leurs structures de coûts {#create-service-providers-and-their-cost-structures}
+## Créer les fournisseurs et leurs structures de coûts {#create-service-providers-and-their-cost-structures}
 
 Chaque prestataire est enregistré dans une fiche avec ses coordonnées, ses modèles de prestation et les traitements associés.
 
@@ -29,46 +29,46 @@ Les traitements réalisés dans les diffusions sont assurés par des prestataire
 
 1. Configuration des traitements. [En savoir plus](#configure-processes-associated-with-a-service).
 
-1. Référencement du prestataire au niveau des opérations. [En savoir plus](#associate-a-service-with-a-campaign).
+1. Référencement du fournisseur au niveau des campagnes. [En savoir plus](#associate-a-service-with-a-campaign).
 
-### Créer un prestataire et ses postes de coûts {#create-a-service-provider-and-its-cost-categories}
+### Créer un fournisseur et ses postes de coûts {#create-a-service-provider-and-its-cost-categories}
 
-#### Ajouter un prestataire {#add-a-service-provider}
+#### Ajouter un fournisseur {#add-a-service-provider}
 
-Vous pouvez créer autant de prestataires que nécessaire pour vos diffusions. Pour ajouter un prestataire, les étapes sont les suivantes :
+Vous pouvez créer autant de fournisseurs que nécessaire pour vos diffusions. Pour ajouter un fournisseur, les étapes sont les suivantes :
 
-1. Cliquez sur le bouton **[!UICONTROL Nouveau]** au-dessus de la liste des prestataires.
+1. Cliquez sur le bouton **[!UICONTROL Nouveau]** situé au-dessus de la liste des fournisseurs.
 1. Dans la section inférieure de la fenêtre, indiquez son nom et ses coordonnées.
 
    ![](assets/add-a-supplier.png)
 
 1. Cliquez sur le bouton **[!UICONTROL Enregistrer]** pour ajouter le prestataire dans la liste.
 
-#### Définition des postes de coûts {#define-cost-categories}
+#### Définir des postes de coûts {#define-cost-categories}
 
-Vous pouvez désormais associer des modèles de service à chaque prestataire. Dans ces modèles, vous devez d&#39;abord identifier les postes de coûts et, au besoin, le stock concerné. Vous pouvez ensuite créer les règles de calcul des coûts pour chaque catégorie, à partir des structures de coûts. [En savoir plus](#define-the-cost-structure).
+Vous pouvez désormais associer des modèles de service à chaque fournisseur. Dans ces modèles, vous devez d&#39;abord identifier les postes de coûts et, au besoin, le stock concerné. Vous pouvez ensuite créer les règles de calcul des coûts pour chaque poste, via les structures de coûts. [En savoir plus](#define-the-cost-structure).
 
-Un poste de coût est une entité qui regroupe un ensemble de coûts éligible pour un type de diffusion (email, courrier, SMS, etc.). Les postes de coûts sont regroupés dans des modèles de prestations associées aux prestataires. Chaque prestataire peut référencer un ou plusieurs modèles de prestation.
+Un poste de coût est une entité contenant un ensemble de coûts éligibles pour un type de diffusion (e-mail, publipostage direct, SMS, etc.). Les postes de coûts sont regroupés dans les modèles de prestations associés aux fournisseurs. Chaque fournisseur peut référencer un ou plusieurs modèles de prestation.
 
-Pour créer un modèle de service et définir son contenu, procédez comme suit :
+Pour créer un modèle de prestation et définir son contenu, procédez comme suit :
 
-1. Dans le **[!UICONTROL Services]** dans l&#39;onglet du prestataire, cliquez sur **[!UICONTROL Ajouter]** et saisissez le nom du modèle de service.
+1. Sous l&#39;onglet **[!UICONTROL Prestations]** du fournisseur, cliquez sur le bouton **[!UICONTROL Ajouter]** et nommez le modèle de prestation.
 
    ![](assets/supplier-new-template.png)
 
-1. Créez les postes de coûts pour chaque type de traitement (diffusion par courrier/e-mail/etc. ou tâche). Pour cela, cliquez sur l’onglet **[!UICONTROL Postes de coût]** puis sur le bouton **[!UICONTROL Ajouter]** et renseignez les paramètres de chaque poste de coût.
+1. Créez les postes de coûts pour chaque type de traitement (diffusion par publipostage direct/e-mail/etc. ou tâche). Pour cela, cliquez sur l&#39;onglet **[!UICONTROL Postes de coût]**, puis sur le bouton **[!UICONTROL Ajouter]** et renseignez les paramètres de chaque poste de coût.
 
    ![](assets/add-cost-categories.png)
 
-   * Saisissez un libellé pour ce poste de coût et sélectionnez le type de traitement concerné : **[!UICONTROL Canal Courrier]**, **[!UICONTROL Email]**, **[!UICONTROL Mobile]**, etc.
+   * Saisissez un libellé pour ce poste de coût et sélectionnez le type de traitement concerné : diffusion par **[!UICONTROL Publipostage direct]**, **[!UICONTROL E-mail]**, **[!UICONTROL Mobile]**, etc.
    * Cliquez sur le bouton **[!UICONTROL Ajouter]** pour définir les types de coûts associés à ce poste.
    * Au besoin, associez une ligne de stock à chaque type de coût afin de reporter automatiquement les quantités utilisées sur les stocks existant.
 
       >[!NOTE]
       >
-      >Les lignes de stock sont définies dans le noeud **[!UICONTROL Gestion des stocks.]** [En savoir plus](#stock-and-order-management).
+      >Les lignes de stock sont définies dans le nœud **[!UICONTROL Gestion des stocks]**. [En savoir plus](#stock-and-order-management).
 
-1. Vous pouvez pré-sélectionner une valeur pour ce poste de coût, qui est la valeur par défaut dans les postes de coûts du prestataire (au lieu d&#39;une valeur vide). Pour ce faire, activez l’option **Oui** dans le **[!UICONTROL Sélectionné]** pour le type de catégorie concernée :
+1. Vous pouvez présélectionner une valeur pour ce poste de coût, qui est celle par défaut dans les postes de coûts des fournisseurs (au lieu d&#39;une valeur vide). Pour ce faire, activez l&#39;option **Oui** dans la colonne **[!UICONTROL Sélectionné]** pour le type de poste concerné :
 
    ![](assets/default-cost-type.png)
 
@@ -76,7 +76,7 @@ Pour créer un modèle de service et définir son contenu, procédez comme suit 
 
 ### Définir la structure de coûts {#define-the-cost-structure}
 
-Pour chaque type de coût, la structure de coût indique les règles de calcul à appliquer.
+Une structure de coûts indique, pour chaque type de coût, les règles de calcul à appliquer.
 
 Cliquez sur l&#39;onglet **[!UICONTROL Structure de coûts]** pour paramétrer le calcul des coûts pour chaque poste et type de coût. Cliquez sur **[!UICONTROL Ajouter]** et renseignez la structure de coût.
 
@@ -107,7 +107,7 @@ Si ce montant s&#39;applique à un lot de messages, indiquez le nombre de messag
 
 Si le montant s&#39;applique par seuil pour chaque message, vous devez alors définir une structure de calcul **[!UICONTROL Linéaire par seuil]**. Dans ce type de structure de coût, chaque message coûtera, par exemple, 0,13 si le nombre total de message se situe entre 1 et 100, puis coûtera 0,12 entre 100 et 1000 messages envoyés, et 0,11 au-delà de 1000 messages.
 
-Le paramétrage est le suivant :
+La configuration est la suivante :
 
 ![](assets/supplier-cost-structure-linear.png)
 
@@ -119,9 +119,9 @@ Vous pouvez enfin paramétrer un calcul au forfait : les coûts seront alors ca
 
 ![](assets/supplier-cost-structure-constant.png)
 
-### Configurer des traitements associés à un service {#configure-processes-associated-with-a-service}
+### Configurer les traitements associés à un prestataire {#configure-processes-associated-with-a-service}
 
-Vous pouvez associer des informations sur les traitements associés au prestataire via le **[!UICONTROL Tâches]** . Cette section permet de paramétrer l&#39;envoi des informations au routeur.
+Vous pouvez associer des informations sur les traitements liés à une prestation depuis l&#39;onglet **[!UICONTROL Traitements]**. Cette section permet de configurer l&#39;envoi d&#39;informations au routeur.
 
 ![](assets/cost-supplier-jobs.png)
 
@@ -133,9 +133,9 @@ Vous pouvez associer des informations sur les traitements associés au prestatai
 
 * La section **[!UICONTROL Post-traitement]** permet de sélectionner le workflow à lancer une fois la diffusion validée. Si un modèle de workflow est renseigné, une instance de workflow sera automatiquement créée puis démarrée dès que la validation sera effective. Ce workflow peut par exemple permettre d&#39;envoyer le fichier d&#39;extraction vers un prestataire externe chargé de l&#39;exploiter.
 
-### Associer un service à une opération {#associate-a-service-with-a-campaign}
+### Associer un service à une campagne {#associate-a-service-with-a-campaign}
 
-Les prestataires sont associés aux diffusions des opérations. Ils sont référencés dans les modèles de diffusion afin de proposer leurs services dans les diffusions créées à partir de ce modèle.
+Les fournisseurs sont associés aux diffusions de campagnes. Ils sont référencés dans les modèles de diffusion pour offrir leurs services dans les diffusions créées via ce modèle.
 
 Lorsqu’un service est sélectionné, les postes de coûts correspondant au type de diffusion (courrier, e-mail, etc.) sont automatiquement indiqués dans le tableau central, ainsi que les options de traitement qui ont été définies.
 
@@ -154,7 +154,7 @@ Lorsqu’un service est sélectionné, les postes de coûts correspondant au typ
 
 La colonne **[!UICONTROL Montant à surcharger]** permet d&#39;ajouter un coût pour ce poste dans le contexte de la diffusion ou de la tâche concernée.
 
-Vous pouvez définir une sélection obligatoire d&#39;un type de coût lors de la définition des postes de coût pour une diffusion. Pour ce faire, sélectionnez **[!UICONTROL Un type de coût doit être sélectionné.]**.
+Vous pouvez définir une sélection obligatoire d&#39;un type de coût lors de la définition des postes de coût pour une diffusion. Pour ce faire, sélectionnez **[!UICONTROL Un type de coût doit être sélectionné]**.
 
 ![](assets/cost-type-must-be-selected.png)
 
@@ -166,7 +166,7 @@ Pour mettre en place la gestion des stocks et des commandes dans Adobe Campaign
 
 1. Création des stocks et référencement des prestataires associés.. [En savoir plus](#create-a-stock).
 
-1. Ajouter les lignes de stocks. [En savoir plus](#add-stock-lines).
+1. Ajout des lignes de stocks. [En savoir plus](#add-stock-lines).
 
 1. Notification des opérateurs en cas d&#39;alerte. [En savoir plus](#alert-operators).
 
@@ -183,7 +183,7 @@ Adobe Campaign peut alerter un groupe d’utilisateurs si le stock est épuisé
 Pour créer un nouveau stock, les étapes sont les suivantes :
 
 1. Cliquez sur le bouton **[!UICONTROL Créer]** situé au-dessus de la liste des stocks.
-1. Saisissez le libellé du stock et sélectionnez dans la liste déroulante le prestataire auquel il est associé. [En savoir plus](#create-service-providers-and-their-cost-structures).
+1. Saisissez le libellé du stock et sélectionnez dans la liste déroulante le fournisseur auquel il est associé. [En savoir plus](#create-service-providers-and-their-cost-structures).
 
 #### Ajouter des lignes de stock {#add-stock-lines}
 
@@ -193,7 +193,7 @@ Lorsque vous créez un stock, cliquez sur l&#39;onglet **[!UICONTROL Lignes de s
 
 ![](assets/stock-new-lines.png)
 
-Une fois le stock créé, utilisez son tableau de bord pour créer et suivre les lignes de stock.
+Une fois le stock créé, utilisez son tableau de bord pour créer et surveiller les lignes de stock.
 
 Cliquez sur le bouton **[!UICONTROL Créer]** pour ajouter de nouvelles lignes de stock.
 
@@ -213,7 +213,7 @@ Au niveau du prestataire, dans une prestation, une ligne de stock peut être ré
 
 ### Tracking des stocks {#stock-tracking}
 
-#### Opérateurs d&#39;alerte {#alert-operators}
+#### Alerter les opérateurs {#alert-operators}
 
 Une alerte est affichée lorsqu&#39;un stock référencé dans une diffusion est insuffisant. Par exemple, l&#39;alerte suivante sera affichée lors de la validation d&#39;un fichier d&#39;extraction :
 
@@ -233,7 +233,7 @@ Pour enregistrer une commande, éditez la ligne de stock visée, cliquez sur le 
 
 L&#39;onglet **[!UICONTROL Consommations]** contient le volume consommé par opération. Les informations de cet onglet sont automatiquement renseignées en fonction des diffusions réalisées. Cliquez sur le bouton **[!UICONTROL Editer]** pour ouvrir l&#39;opération concernée.
 
-## Calcul des budgets {#calculate-budgets}
+## Calculer les budgets {#calculate-budgets}
 
 ### Principe {#principle}
 

@@ -6,7 +6,7 @@ feature: Workflows
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
 workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -173,4 +173,4 @@ En double cliquant sur l&#39;activité **Diffusion**, choisissez les options sui
    delivery.variables._var[2].stringValue = vars.strWorkflowStop; 
    ```
 
-Une fois ce workflow de suivi lancé, il envoie un résumé aux destinataires.
+Une fois lancé, ce workflow de surveillance envoie au destinataire de la diffusion un message récapitulatif.

@@ -15,7 +15,7 @@ ht-degree: 100%
 
 
 
-Le workflow présenté ci-dessous est installé par défaut avec le module **Plateforme de mid-sourcing**. Pour plus d’informations sur ce module, consultez cette  .
+Le workflow présenté ci-dessous est installé par défaut avec le module **Plateforme de mid-sourcing**. Pour plus d&#39;informations sur ce module, consultez cette .
 
 <table> 
  <tbody> 

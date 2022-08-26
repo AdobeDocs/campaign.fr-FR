@@ -6,7 +6,7 @@ feature: Workflows, Data Management
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 14%
+ht-degree: 100%
 
 ---
 
@@ -16,20 +16,20 @@ Les activités de workflow sont regroupées par catégorie, dans quatre onglets 
 
 ![](assets/wf-activity-tabs.png)
 
-Selon vos autorisations, votre mise en oeuvre et le contexte dans lequel le workflow est conçu, les activités disponibles peuvent différer.
+Les activités disponibles peuvent varier selon vos autorisations, votre implémentation et le contexte dans lequel le workflow est conçu.
 
-Par exemple, les workflows créés dans une campagne ont une **Diffusions** avec tous les canaux. Cet onglet n’est pas disponible dans [workflow technique](technical-workflows.md).
+Par exemple, les workflows créés dans une campagne ont un onglet **Diffusions** spécifique comportant tous les canaux. Cet onglet n&#39;est pas disponible dans le [workflow technique](technical-workflows.md).
 
 ![](assets/campaign-wf-activities.png)
 
-Les workflows techniques ont une **Événements** qui n’est pas disponible dans [workflows de campagne](campaign-workflows.md).
+Les workflows techniques ont un onglet **Événements** qui n&#39;est pas disponible dans les [workflows de campagne](campaign-workflows.md).
 
 ![](assets/tech-wf-activities.png)
 
-Toutes les activités sont présentées dans les sections ci-dessous :
+Toutes les activités sont présentées dans les sections ci-dessous :
 
 * [Activités de ciblage](targeting-activities.md)
 * [Activités de contrôle de flux](flow-control-activities.md)
-* [Activités d’action](action-activities.md)
-* [Activités événementielles](event-activities.md)
+* [Activités d&#39;actions](action-activities.md)
+* [Activités d&#39;événements](event-activities.md)
 * [Activités spécifiques au workflow de campagne](../campaigns/marketing-campaign-deliveries.md)

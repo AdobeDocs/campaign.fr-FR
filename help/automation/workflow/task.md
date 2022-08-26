@@ -8,7 +8,7 @@ hidefromtoc: true
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
 workflow-type: tm+mt
 source-wordcount: '99'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Dans un workflow de campagne, l&#39;activité **[!UICONTROL Tâche]** permet de 
 
 ![](assets/mrm_task_in_workflow.png)
 
-La configuration et le fonctionnement d&#39;une tâche sont présentés dans la section .
+Le fonctionnement et le paramétrage d&#39;une tâche sont présentés dans cette section :
 
 ![](assets/wkf_task_activity.png)
 

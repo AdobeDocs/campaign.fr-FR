@@ -6,7 +6,7 @@ feature: Workflows
 source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 79%
 
 
 
-Les workflows présentés ci-dessous sont installés avec le **Emission vers Mid-sourcing** par défaut. Voir à ce sujet la section .
+Les workflows présentés ci-dessous sont installés par défaut avec le module **Émission vers mid-sourcing**. Pour plus d&#39;informations sur ce module, consultez .
 
 <table> 
  <tbody> 

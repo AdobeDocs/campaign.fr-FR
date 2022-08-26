@@ -30,15 +30,15 @@ Accédez à l’onglet **[!UICONTROL Profils et cibles]**, cliquez sur le lien *
 
 ![](assets/use_case_report_1.png)
 
-Pour plus d&#39;informations sur la création de listes, reportez-vous à cette  .
+Pour plus d&#39;informations sur la création de listes, reportez-vous à cette .
 
 ## Etape 2 : création du modèle de diffusion {#step-2--creating-the-delivery-template}
 
-1. Dans l&#39;explorateur Adobe Campaign, positionnez-vous sur le noeud **[!UICONTROL Ressources > Modèles > Modèles de diffusion]** et dupliquez le modèle d&#39;usine **[!UICONTROL Diffuser par email]**.
+1. Dans l&#39;explorateur Adobe Campaign, positionnez-vous sur le nœud **[!UICONTROL Ressources > Modèles > Modèles de diffusion]** et dupliquez le modèle d&#39;usine **[!UICONTROL Diffuser par e-mail]**.
 
    ![](assets/use_case_report_2.png)
 
-   Pour plus d&#39;informations sur la création d&#39;un modèle de diffusion, reportez-vous à cette  .
+   Pour plus d&#39;informations sur la création d&#39;un modèle de diffusion, reportez-vous à cette .
 
 1. Renseignez les différents paramètres du modèle : le libellé, la cible (la liste de destinataires précédemment créée), l&#39;objet et le contenu.
 
@@ -46,7 +46,7 @@ Pour plus d&#39;informations sur la création de listes, reportez-vous à cette 
 
 1. Chaque fois que le workflow est exécuté, le rapport des **[!UICONTROL Indicateurs de tracking]** est mis à jour (voir [Etape 3 : création du workflow](#step-3--creating-the-workflow)). Pour inclure la dernière version du rapport dans la diffusion, vous devez ajouter un **[!UICONTROL Attachement calculé]** :
 
-   Pour plus d&#39;informations sur la création d&#39;un attachement calculé, reportez-vous à cette  .
+   Pour plus d&#39;informations sur la création d&#39;un attachement calculé, reportez-vous à cette .
 
    * Cliquez sur le lien **[!UICONTROL Pièces jointes]**, cliquez sur **[!UICONTROL Ajouter]** puis sélectionnez **[!UICONTROL Attachement calculé]**.
 
