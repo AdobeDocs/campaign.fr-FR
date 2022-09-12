@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Présentation de Campaign
 title: Documentation Campaign v8
-source-git-commit: ca52da16933f57181a0c4228bda9a2d33ebcedef
+source-git-commit: a41bebfeb352b2f81f81b46c39b5f9b64431455b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '363'
+ht-degree: 100%
 
 ---
 
@@ -67,6 +67,7 @@ ht-degree: 0%
       + [Importer des profils depuis un fichier](audiences/import-profiles.md)
       + [Utilisation de profils externes](audiences/external-profiles.md)
       + [Collecte de données de profil dans des formulaires web](audiences/collect-profiles.md)
+      + [Mappings de ciblage](audiences/target-mappings.md)
    + Création d&#39;audiences {#create-audiences}
       + [Créer une liste de contacts](audiences/create-audiences.md)
       + [Créer et gérer des filtres](audiences/create-filters.md)
