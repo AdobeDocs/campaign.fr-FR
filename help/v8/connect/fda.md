@@ -5,10 +5,10 @@ feature: Federated Data Access
 role: Data Engineer
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: bb03c804c1c65322d275d0a2ca1db0bfe974636d
 workflow-type: tm+mt
-source-wordcount: '1772'
-ht-degree: 100%
+source-wordcount: '760'
+ht-degree: 72%
 
 ---
 
@@ -16,216 +16,51 @@ ht-degree: 100%
 
 Utilisez le connecteur FDA (Federated Data Access) pour connecter Campaign à une ou plusieurs **bases de données externes** et traiter les informations stockées dans celles-ci sans affecter vos données provenant des bases cloud de Campaign. Vous pouvez ensuite accéder à des données externes sans modifier la structure des données Adobe Campaign.
 
+![](../assets/do-not-localize/speech.png)   En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour implémenter les triggers Experience Cloud dans Campaign.
+
+
 >[!NOTE]
 >
->* Les bases de données compatibles avec FDA sont répertoriées dans la [Matrice de compatibilité](../start/compatibility-matrix.md).
+>* Les bases de données compatibles avec Federated Data Access sont répertoriées dans la section [Matrice de compatibilité](../start/compatibility-matrix.md).
 >
->* Dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), un compte externe spécifique est disponible pour gérer la communication entre la base de données locale Campaign et la base de données cloud Snowflake. Ce compte externe est configuré pour vous par Adobe et ne doit pas être modifié.
+>* Dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), un compte externe spécifique est disponible pour gérer la communication entre la base de données locale Campaign et la base de données cloud Snowflake. Ce compte externe est configuré pour vous par Adobe et **must not** être modifié.
 >
 
 
-L&#39;option FDA de Campaign permet d&#39;étendre votre modèle de données dans une base de données tierce. Le module détecte automatiquement la structure des tables ciblées et utilise les données provenant des sources SQL.
-
-Des **autorisations** spécifiques sont requises sur [!DNL Adobe Campaign] et sur la base de données externe pour interagir ensemble. En savoir plus dans [cette section](#fda-permissions).
 
 ## Bonnes pratiques et limites
 
-* **Optimiser la personnalisation d&#39;un e-mail avec des données externes**
+L’option FDA est soumise aux limitations du système de base de données tiers que vous utilisez.
 
-   Vous pouvez prétraiter la personnalisation des messages dans un workflow dédié. Pour ce faire, utilisez l&#39;option **[!UICONTROL Préparer les données de personnalisation avec un workflow]**, disponible dans l&#39;onglet **[!UICONTROL Analyse]** des propriétés de la diffusion.
+Gardez également à l’esprit les limites et bonnes pratiques suivantes :
 
-   Cette option permet, lors de l&#39;analyse de la diffusion, de créer et d&#39;exécuter automatiquement un workflow qui stocke toutes les données liées à la cible dans une table temporaire, notamment les données issues des tables liées dans une base de données externe.
+* L&#39;option FDA est utilisée pour manipuler les données des bases de données externes en mode batch dans les workflows. Pour éviter les problèmes de performance, il n&#39;est pas recommandé d&#39;utiliser le module FDA dans le cadre d&#39;opérations unitaires, par exemple : personnalisation, interaction, messagerie en temps réel, etc.
 
-   Cette option améliore considérablement les performances lors de l&#39;exécution de l&#39;étape de personnalisation.
-
-* **Limites de FDA**
-
-   L&#39;option FDA est utilisée pour manipuler les données des bases de données externes en mode batch dans les workflows. Pour éviter les problèmes de performance, il n&#39;est pas recommandé d&#39;utiliser le module FDA dans le cadre d&#39;opérations unitaires, par exemple : personnalisation, interaction, messagerie en temps réel, etc.
-
-   Evitez autant que possible les opérations nécessitant d&#39;utiliser à la fois la base Adobe Campaign et la base externe. Pour cela, vous pouvez :
+* Evitez autant que possible les opérations nécessitant d&#39;utiliser à la fois la base Adobe Campaign et la base externe. Pour cela, vous pouvez :
 
    * exporter les données de la base Adobe Campaign vers la base externe et effectuer les opérations uniquement depuis la base externe avant de réimporter les résultats dans Adobe Campaign.
 
    * collecter les données de la base externe dans Adobe Campaign et effectuer les opérations localement.
+   Si vous souhaitez effectuer de la personnalisation dans vos diffusions à l&#39;aide des données de la base externe, collectez les données à utiliser dans un workflow afin de les rendre disponibles dans une table temporaire. Utilisez alors les données de la table temporaire pour personnaliser votre diffusion. Pour ce faire, pré-traitez la personnalisation des messages dans un workflow dédié à l’aide de la fonction **[!UICONTROL Préparer les données de personnalisation avec un workflow]** , disponible dans la variable **[!UICONTROL Analyse]** de l’onglet des propriétés de la diffusion. Cette option permet, lors de l&#39;analyse de la diffusion, de créer et d&#39;exécuter automatiquement un workflow qui stocke toutes les données liées à la cible dans une table temporaire, notamment les données issues des tables liées dans une base de données externe.
 
-   Si vous souhaitez effectuer de la personnalisation dans vos diffusions à l&#39;aide des données de la base externe, collectez les données à utiliser dans un workflow afin de les rendre disponibles dans une table temporaire. Utilisez alors les données de la table temporaire pour personnaliser votre diffusion.
-
-   L&#39;option FDA est assujettie aux limitations du système de la base de données externe que vous utilisez.
-
-
-## Étapes de configuration{#fda-configuration-steps}
-
-Pour configurer l&#39;accès à une base de données externe avec FDA, les étapes de configuration sont les suivantes :
-
-1. En tant qu&#39;utilisateur Adobe Managed Services, contactez Adobe pour installer les pilotes sur votre instance Campaign.
-1. Une fois les pilotes installés, configurez le compte externe correspondant à votre base de données sur le serveur Adobe Campaign et testez le compte externe. [En savoir plus](#fda-external-account)
-1. Créez le schéma de la base de données externe dans Adobe Campaign. Il est ainsi possible d&#39;identifier la structure des données de la base de données externe. [En savoir plus](#create-data-schema)
-
-<!--
-1. If needed, create a new target mapping from the previously created schema. This is required if the recipients of your deliveries come from the external database. This implementation comes with limitations related to message personalization. [Learn more](#define-data-mapping)
--->
-
-Notez qu’avec le [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md) de Campaign , vous ne pouvez pas créer de mapping de ciblage à partir d&#39;un schéma stocké dans une base externe accessible par FDA. Par conséquent, les destinataires de vos diffusions ne peuvent pas provenir de la base de données externe.
-
-## Compte externe de base de données externe{#fda-external-account}
-
-Vous devez créer un compte externe spécifique pour connecter votre instance Campaign à votre base de données externe.
-
-Pour ce faire, procédez comme suit :
-
-1. Dans l&#39;**[!UICONTROL Explorateur]** Campaign, acédez à **[!UICONTROL Administration]** > `>`**[!UICONTROL Plateforme]** > `>`**[!UICONTROL Comptes externes]**.
-
-1. Cliquez sur **[!UICONTROL Nouveau]**.
-
-   >[!NOTE]
+   >[!CAUTION]
    >
-   > Pour qu&#39;il soit actif, l&#39;option **[!UICONTROL Activé]** doit être cochée. Si nécessaire, désélectionnez ces option pour désactiver l&#39;accès à cette base de données sans supprimer son paramétrage.
-
-1. Sélectionnez **[!UICONTROL Base de données externe]** en tant que **[!UICONTROL Type]** de compte externe.
-
-1. Sélectionnez votre base de données externe dans la liste déroulante et configurez le compte externe. Vous devez indiquer les informations suivantes :
-
-   * **[!UICONTROL Serveur]** : URL du serveur 
-
-   * **[!UICONTROL Compte]** : nom de l&#39;utilisateur
-
-   * **[!UICONTROL Mot de passe]** : mot de passe du compte utilisateur
-
-   * **[!UICONTROL Base de données]** : nom de la base de données
-
-      ![](assets/snowflake.png)
-
-1. Cliquez sur l&#39;onglet **[!UICONTROL Paramètres]**, puis sur le bouton **[!UICONTROL Déployer les fonctions]** pour créer des fonctions.
-
-1. Une fois les paramètres renseignés, cliquez sur le bouton **[!UICONTROL Tester la connexion]** pour les valider.
-
-1. Pour permettre à Adobe Campaign d&#39;accéder à cette base, vous devez déployer les fonctions SQL. Cliquez sur l&#39;onglet **[!UICONTROL Paramètres]** puis sur le bouton **[!UICONTROL Déployer les fonctions]**.
-
-Vous pouvez définir des tablespaces de travail spécifiques pour les tables et pour les index dans l&#39;onglet **[!UICONTROL Paramètres]**.
-
-Pour [!DNL Snowflake], le connecteur prend en charge les options suivantes :
-
-| Option | Description |
-|---|---|
-| workschema | Schéma de base de données à utiliser pour les tables de travail. |
-| warehouse | Nom de l&#39;entrepôt par défaut à utiliser. Il remplace la valeur par défaut de l&#39;utilisateur. |
-| TimeZoneName | Vide par défaut. C&#39;est le fuseau horaire système du serveur applicatif Campaign Classic qui est utilisé. Il est possible d&#39;utiliser cette option pour forcer le paramètre de session TIMEZONE. <br>Pour plus d&#39;informations à ce sujet, consultez [cette page](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
-| WeekStart | Paramètre de session WEEK_START. Par défaut, cette valeur est définie sur 0. <br>Pour plus d&#39;informations à ce sujet, consultez [cette page](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start). |
-| UseCachedResult | Paramètre de session USE_CACHED_RESULTS. Par défaut, cette valeur est définie sur TRUE. Il est possible d&#39;utiliser cette option pour désactiver les résultats de Snowflake mis en mémoire cache. <br>Pour plus d&#39;informations à ce sujet, voir [cette page](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
-
-
-## Création du schéma de données{#create-data-schema}
-
-Pour créer le schéma de la base externe dans Adobe Campaign, procédez comme suit :
-
-1. Cliquez sur le bouton **[!UICONTROL Nouveau]** au-dessus de la liste des schémas de données et sélectionnez **[!UICONTROL Accéder à des données externes]**.
-
-   ![](assets/wf_new_schema_fda.png)
-
-1. Saisissez le nom du schéma et sa description, puis sélectionnez le compte externe permettant la connexion à la base de données. Vous avez ainsi accès à la liste des tables disponibles dans la base externe. Sélectionnez la table contenant les données à collecter.
-
-   ![](assets/wf_new_schema_select_table_fda.png)
-
-1. Cliquez sur **[!UICONTROL OK]** pour valider. Adobe Campaign détecte automatiquement la structure de la table sélectionnée et génère le schéma logique. Veuillez noter qu&#39;Adobe Campaign ne génère pas de liens.
-
-1. Cliquez sur **[!UICONTROL Enregistrer]** pour en valider la création.
-
-<!-- 
-## Define the target mapping{#define-data-mapping}
-
-You can define a mapping on the data in an external table.
-
-To do this, once the schema of the external table has been created, you need to create a new delivery mapping to use the data in this table as a delivery target.
-
-To do this, follow these steps:
-
-1. Browse to **[!UICONTROL Administration]** `>` **[!UICONTROL Campaign Management]** `>` **[!UICONTROL Target mappings]** from Adobe Campaign explorer.
-
-1. Create a new target mapping and select the schema you just created as the targeting dimension.
-
-   ![](assets/new-target-mapping.png)
-
-
-1. Indicate the fields where the delivery information is stored (last name, first name, email, address, etc.).
-
-   ![](assets/wf_new_mapping_define_join.png)
-
-1. Specify the parameters for information storage, including the suffix of the extension schemas for them to be easily identifiable.
-
-   ![](assets/wf_new_mapping_define_names.png)
-
-   You can choose whether to store exclusions (**excludelog**), with messages (**broadlog**) or in a separate table.
-
-   You can also choose whether to manage tracking for this delivery mapping (**trackinglog**).
-
-1. Then select the extensions to be taken into account. The extension type depends on your platform's parameters and options (view your license contract).
-
-   ![](assets/wf_new_mapping_define_extensions.png)
-
-   Click the **[!UICONTROL Save]** button to launch delivery mapping creation: all linked tables are created automatically based on the selected parameters.
--->
-
-## Autorisations{#fda-permissions}
-
-Des **autorisations** spécifiques sont requises sur [!DNL Adobe Campaign] et sur la base de données externe pour interagir ensemble.
-
-Tout d&#39;abord, afin qu&#39;un utilisateur puisse effectuer des opérations sur une base externe via FDA, l&#39;opérateur doit disposer d&#39;un droit nommé spécifique dans [!DNL Adobe Campaign].
-
-1. Sélectionnez le nœud **[!UICONTROL Administration > Gestion des accès > Droits nommés]** de l&#39;explorateur Adobe Campaign.
-1. Créez un nouveau droit en indiquant le libellé de votre choix.
-1. Saisissez le nom du droit nommé au format **user:base@server**, où :
-
-   * **user** est le nom de l&#39;utilisateur dans la base de données externe
-   * **base** est le nom de la base de données externe
-   * **server** est le nom du serveur de la base de données externe
-
-1. Enregistrez le droit nommé puis associez-le à l&#39;opérateur de votre choix à partir du nœud **[!UICONTROL Administration > Gestion des accès > Opérateurs]** de l&#39;explorateur Adobe Campaign.
-
-Ensuite, pour traiter les données contenues dans une base de données externe, l&#39;opérateur Adobe Campaign doit au minimum avoir les autorisation en écriture sur cette base de données, afin de permettre la création des tables de travail. Ces tables sont automatiquement supprimées par Adobe Campaign.
-
-Les autorisations suivantes sont nécessaires :
-
-* **CONNECT** : connexion à la base distante
-* **READ Data** : accès en lecture aux tables contenant les données du client
-* **READ &#39;MetaData&#39;** : accès aux catalogues de données du serveur afin d&#39;obtenir la structure des tables
-* **LOAD** : chargement en masse dans des tables de travail (opération nécessaire lorsque l&#39;on travaille sur des collections et des jointures)
-* **CREATE/DROP** pour **TABLE/INDEX/PROCEDURE/FUNCTION** (uniquement pour les tables de travail générées par Adobe Campaign)
-* **EXPLAIN** (recommandé) : pour la surveillance des performances en cas de problème
-* **WRITE Data** (selon le scénario d&#39;intégration)
-
-L&#39;administrateur de la base de données doit mettre en correspondance ces droits avec les droits spécifiques à chaque moteur de base de données, comme spécifié ci-dessous.
-
-|   | Snowflake | Amazon Redshift |
-|:-:|:-:|:-:|
-| **Connexion à une base de données distante** | Privilèges USAGE ON WAREHOUSE, USAGE ON DATABASE et USAGE ON SCHEMA | Création d&#39;un utilisateur lié au compte AWS |
-| **Création de tables** | Privilège CREATE TABLE ON SCHEMA  | Privilège CREATE |
-| **Création d&#39;index** | N/A | Privilège CREATE |
-| **Création de fonctions** | Privilège CREATE FUNCTION ON SCHEMA | Privilège USAGE ON LANGUAGE plpythonu pour pouvoir appeler des scripts Python externes |
-| **Création de procédures** | N/A | Privilège python USAGE ON LANGUAGE pour pouvoir appeler des scripts Python externes |
-| **Suppression d&#39;objets (tables, index, fonctions, procédures)** | Propriété de l&#39;objet | Être propriétaire de l&#39;objet ou être un super-utilisateur |
-| **Surveillance des exécutions** | Privilège MONITOR sur l&#39;objet requis | Aucun privilège requis pour utiliser la commande EXPLAIN |
-| **Écriture de données** | Privilèges INSERT et/ou UPDATE (selon l&#39;opération d&#39;écriture) | Privilèges INSERT et UPDATE |
-| **Chargement de données dans des tables** | Privilèges CREATE STAGE ON SCHEMA, SELECT et INSERT sur la table ciblée | Privilèges SELECT et INSERT |
-| **Accès aux données clientes** | Privilège(s) SELECT sur (FUTURE) TABLE(S) ou VIEW(S) | Privilège SELECT |
-| **Accès aux métadonnées** | Privilège SELECT sur INFORMATION_SCHEMA SCHEMA | Privilège SELECT |
+   >Cette option améliore considérablement les performances lors de l&#39;exécution de l&#39;étape de personnalisation.
 
 
 ## Utiliser des données externes dans un workflow
 
-Une fois le schéma de données créé, les données peuvent être traitées dans les workflows Adobe Campaign.
+Campaign est livré avec plusieurs activités de workflow que vous pouvez utiliser pour interagir avec les données de vos bases de données externes :
 
-Plusieurs activités permettent d&#39;interagir avec les données d&#39;un base externe :
+* **Filtrer sur les données externes** - Utilisez la variable **[!UICONTROL Requête]** pour ajouter des données externes et les utiliser dans les configurations de filtre définies.
 
-* **Filtrer sur les données externes** : l&#39;activité de **[!UICONTROL requête]** permet d&#39;ajouter des données externes et de les utiliser dans les paramètres de filtrage définis.
+* **Créer des sous-ensembles** - Utilisez la variable **[!UICONTROL Partage]** pour créer des sous-ensembles. Vous pouvez utiliser des données externes pour définir les critères de filtrage à utiliser.
 
-* **Créer des sous-ensembles** : l&#39;activité de **[!UICONTROL partage]** vous permet de créer des sous-ensembles. Vous pouvez utiliser des données externes pour définir les critères de filtrage à utiliser.
+* **Chargement de la base de données externe** - Utilisez les données externes de la variable **[!UICONTROL Chargement (SGBD)]** activité.
 
-* **Charger la base de données externe** : vous pouvez utiliser les données externes dans l&#39;activité **[!UICONTROL Chargement (SGBD)]**.
+* **Ajouter des informations et des liens** - Utilisez la variable **[!UICONTROL Enrichissement]** pour ajouter des données additionnelles à la table de travail du workflow et créer des liens vers une table externe. Dans ce contexte, elle peut utiliser des données provenant d&#39;une base de données externe.
 
-* **Ajouter des informations et des liens** : l&#39;activité **[!UICONTROL Enrichissement]** permet d&#39;ajouter des données supplémentaires à la table de travail du workflow et de créer des liens vers une table externe. Dans ce contexte, elle peut utiliser des données provenant d&#39;une base de données externe.
-
-
-Vous pouvez également définir directement une connexion à une base de données externe à partir de ces activités de workflow, pour une utilisation temporaire. Dans ce cas, elle sera stockée dans une base externe locale, réservée à une utilisation dans un workflow en cours. Elle ne sera pas enregistrée sur les comptes externes.
+Vous pouvez également définir directement une connexion à une base de données externe à partir de toutes les activités de workflow répertoriées ci-dessus, pour une utilisation temporaire. Dans ce cas, il sera stocké dans une base de données externe locale, à utiliser uniquement dans le workflow en cours.
 
 >[!CAUTION]
 >
