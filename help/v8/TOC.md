@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Présentation de Campaign
 title: Documentation Campaign v8
-source-git-commit: 2c79ee6ae79355fba2a5f269076cf90a683a6070
+source-git-commit: fdaf107fd22f439a728f32ceb8cfc13a8c5bc1ad
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '368'
 ht-degree: 98%
 
 ---
@@ -83,6 +83,7 @@ ht-degree: 98%
    + [Courrier](send/direct-mail.md)
    + [Marketing social](send/twitter.md)
    + [Messages transactionnels](send/transactional.md)
+   + [Optimisation de l&#39;heure d&#39;envoi](send/predictive.md)
    + Échecs, retours et mises en quarantaine{#failures}
       + [Quarantaines](send/quarantines.md)
       + [Diffusions en échec](send/delivery-failures.md)
