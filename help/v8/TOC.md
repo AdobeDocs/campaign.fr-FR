@@ -7,7 +7,7 @@ title: Documentation Campaign v8
 source-git-commit: fdaf107fd22f439a728f32ceb8cfc13a8c5bc1ad
 workflow-type: tm+mt
 source-wordcount: '368'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 98%
       + [Importer des profils depuis un fichier](audiences/import-profiles.md)
       + [Utilisation de profils externes](audiences/external-profiles.md)
       + [Collecte de données de profil dans des formulaires web](audiences/collect-profiles.md)
-      + [Utilisation des mappings de ciblage](audiences/target-mappings.md)
+      + [Utiliser les mappings de ciblage](audiences/target-mappings.md)
    + Création d&#39;audiences {#create-audiences}
       + [Créer une liste de contacts](audiences/create-audiences.md)
       + [Créer et gérer des filtres](audiences/create-filters.md)
