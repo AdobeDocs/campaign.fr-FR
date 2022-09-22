@@ -73,7 +73,7 @@ Vous pouvez également tracker et mesurer les visites sur les pages d&#39;applic
 
 **Désinscription (opt-out) du tracking des applications web**
 
-La désinscription du tracking des applications web vous permet d&#39;arrêter le tracking des comportements web des utilisateurs finaux qui se désinscrivent du tracking comportemental. Vous pouvez inclure la possibilité d&#39;afficher une bannière dans des applications web ou des landing pages pour permettre aux utilisateurs de se désinscrire.
+Le processus d’opt-out du tracking des applications web vous permet d&#39;arrêter le tracking des comportements web des utilisateurs finaux qui se désinscrivent du tracking comportemental. Vous pouvez inclure la possibilité d&#39;afficher une bannière dans des applications web ou des landing pages pour permettre aux utilisateurs de se désinscrire.
 
 [Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/web-application-tracking-opt-out.html?lang=fr#designing-content){target=&quot;_blank&quot;}
 
