@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: d0cabf4d5b8d177f1ff0a1be6163e9abe65c57d6
+source-git-commit: c1a5dd3fcad5d377acb2f9df3a090897ed3b533e
 workflow-type: tm+mt
-source-wordcount: '2768'
+source-wordcount: '2764'
 ht-degree: 80%
 
 ---
@@ -65,9 +65,9 @@ _30 septembre 2022_
 
 **Améliorations**
 
-* Après la fin de vie de Microsoft Internet Explorer 11, le moteur de rendu de HTML dans la console utilise désormais **Microsoft Edge Chromium**. En outre, l’installation de **Microsoft Edge WebView 2** l’exécution est désormais requise pour toute installation de la console cliente. En savoir plus
+* Après la fin de vie de Microsoft Internet Explorer 11, le moteur de rendu de HTML dans la console utilise désormais **Microsoft Edge Chromium**. En outre, l’installation de **Microsoft Edge WebView 2** l’exécution est désormais requise pour toute installation de la console cliente.
 * Amélioration de l’exécution des workflows avec une haute disponibilité des workflows qui permet d’exécuter simultanément des workflows dans différents conteneurs afin d’éviter la perte du service de workflow et d’éviter les erreurs d’exécution associées. **Remarque**: Cette nouvelle fonctionnalité est disponible en disponibilité limitée pour un ensemble de clients uniquement.
-* Les demandes d’accès à des informations personnelles sont désormais exécutées par lots pour un espace de noms de confidentialité donné. Cette amélioration augmente le temps d’exécution des demandes de suppression en vertu du RGPD et de la confidentialité. En savoir plus
+* Les demandes d’accès à des informations personnelles sont désormais exécutées par lots pour un espace de noms de confidentialité donné. Cette amélioration augmente le temps d’exécution des demandes de suppression en vertu du RGPD et de la confidentialité.
 
 **Mises à jour de compatibilité**
 
