@@ -4,10 +4,10 @@ description: Découvrez comment utiliser le module Social Marketing d’Adobe Ca
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 9f74e3bbff5bcbebf4f5a0ecf4ed7e458b9e38ed
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 79%
+source-wordcount: '889'
+ht-degree: 77%
 
 ---
 
@@ -18,9 +18,9 @@ Adobe Campaign est fourni avec un module **Marketing social** qui permet d&#39;i
 
 Une fois l&#39;intégration configurée, vous pouvez :
 
-* Envoyer des messages sur Twitter : Adobe Campaign vous permet d’envoyer des messages directs à vos abonnés.
-* Publiez les tweets suivants : utilisez Adobe Campaign pour publier des tweets sur votre compte Twitter.
-* Collecter de nouveaux contacts : Adobe Campaign peut récupérer automatiquement les profils de données, ce qui vous permet ainsi d&#39;exécuter des campagnes de ciblage et, lorsque cela est possible, d&#39;implémenter des stratégies cross-canal. Cette action nécessite le consentement de l&#39;utilisateur.
+* Envoyer des messages directs à vos abonnés
+* Publier des tweets sur votre compte Twitter
+* Collectez de nouveaux contacts en récupérant les données de profil, ce qui permet de réaliser des campagnes de ciblage et, si possible, de mettre en oeuvre des stratégies cross-canal. Cette action nécessite le consentement de l&#39;utilisateur.
 
 Les étapes de configuration pour intégrer votre compte Twitter à Adobe Campaign sont décrites dans [cette page](../connect/ac-tw.md).
 
