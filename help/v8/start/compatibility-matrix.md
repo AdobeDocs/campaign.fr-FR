@@ -2,12 +2,12 @@
 title: Matrice de compatibilité de Campaign v8
 description: Découvrez les systèmes et versions compatibles avec Campaign v8
 feature: Overview
-role: Data Engineer
-level: Beginner
+role: Admin
+level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 93d990509af2f7c917775217e95ba40dd407d0c1
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '374'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ Les systèmes d’exploitation et le navigateur ci-après sont nécessaires pour
 ### Systèmes d’exploitation
 
 * **Microsoft Windows Server** 2019, 2016, 2012
-* **Microsoft Windows** 11 (à partir de Campaign v8.3), 10, 8,
+* **Microsoft Windows** 11 (à partir de Campaign v8.3), 10, 8
 
 >[!NOTE]
 >
@@ -37,7 +37,26 @@ Les systèmes d’exploitation et le navigateur ci-après sont nécessaires pour
 
 ### Navigateur
 
-**Microsoft Internet Explorer** 11
+**Microsoft Edge**
+
+### Runtime de Microsoft WebView2
+
+<table>
+<tbody>
+<tr>
+<td>
+<p>Runtime de Microsoft Edge WebView2
+</p>
+</td>
+<td>
+<p>Dernière version</p>
+</td>
+<td>
+<p><a href="http://www.adobe.com/go/acc-ms-webview2-runtime-download_fr">Télécharger à partir du site web de Microsoft Developer</a></p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Connecteurs CRM{#CRMconnectors}
 
@@ -60,7 +79,7 @@ Les bases de données externes compatibles avec le module Adobe Campaign Federa
 Vous pouvez utiliser Campaign pour envoyer des [notifications push](../send/push.md) sur les systèmes d’exploitation répertoriés ci-dessous, à l’aide du SDK mobile associé.
 
 * **Android** 12 (à partir de Campaign v8.3), 9.0, 8.x, 7.x, avec le SDK Campaign Android build 1.1.1.
-* **Apple iOS** 9 - 15 avec SDK iOS de Campaign version 1.0.26, compatible avec les versions 32 et 64 bits. iOS 15 est pris en charge à partir de Campaign v8.3.
+* **Apple iOS** 9 - 16 avec SDK iOS de Campaign version 1.0.26, compatible avec les versions 32 et 64 bits. iOS 16 est pris en charge à partir de Campaign v8.3.
 
 ## Accès web
 

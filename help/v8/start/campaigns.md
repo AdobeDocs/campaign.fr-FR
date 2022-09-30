@@ -1,18 +1,18 @@
 ---
-title: Prise en main des campagnes marketing
-description: Prise en main des campagnes marketing
+title: Prise en main des campagnes
+description: Prise en main des campagnes
 feature: Audiences
-role: Data Engineer
+role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 100%
+source-wordcount: '841'
+ht-degree: 98%
 
 ---
 
-# Prise en main des campagnes marketing{#gs-ac-campaigns}
+# Prise en main des campagnes{#gs-ac-campaigns}
 
 Adobe Campaign propose un ensemble de solutions qui vous permettent de personnaliser et diffuser des campagnes à travers l’ensemble de vos canaux en ligne et hors ligne. Vous pouvez ainsi créer, configurer, exécuter et analyser des campagnes marketing. Toutes les campagnes marketing peuvent être gérées à partir d&#39;un centre de contrôle unifié. Dans cette section, découvrez comment parcourir et créer des campagnes marketing.
 

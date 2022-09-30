@@ -2,10 +2,10 @@
 title: Prise en main des rapports de Campaign
 description: Prise en main des fonctionnalités de reporting de Campaign
 feature: Reporting
-role: Data Engineer
+role: User
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488
-source-git-commit: c6a234f6c43531be032354d134e4745ad77cbcc7
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 100%

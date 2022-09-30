@@ -2,10 +2,10 @@
 title: Gestion et automatisation des processus avec les workflows Adobe Campaign
 description: Prise en main des workflows
 feature: Workflows
-role: Data Engineer
+role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 59046a11c3e057cf41c322f190a9d8aef310c356
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '1629'
 ht-degree: 100%

@@ -1,15 +1,13 @@
 ---
 title: Publier des messages sur Twitter avec Adobe Campaign
-description: Découvrez comment utiliser le module Marketing pour réseaux sociaux d'Adobe Campaign pour publier des messages sur Twitter et collecter des données de contact.
-role: Data Engineer
-level: Beginner
-hide: true
-hidefromtoc: true
+description: Découvrez comment utiliser le module Social Marketing d’Adobe Campaign pour publier des messages sur Twitter et envoyer des messages directs à vos abonnés.
+role: User
+level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 99%
+source-wordcount: '906'
+ht-degree: 79%
 
 ---
 
@@ -20,7 +18,8 @@ Adobe Campaign est fourni avec un module **Marketing social** qui permet d&#39;i
 
 Une fois l&#39;intégration configurée, vous pouvez :
 
-* Envoyer des messages sur Twitter : Adobe Campaign vous permet de publier des messages directement sur votre compte Twitter. Vous pouvez également envoyer des messages directs à tous les abonnés de vos comptes.
+* Envoyer des messages sur Twitter : Adobe Campaign vous permet d’envoyer des messages directs à vos abonnés.
+* Publiez les tweets suivants : utilisez Adobe Campaign pour publier des tweets sur votre compte Twitter.
 * Collecter de nouveaux contacts : Adobe Campaign peut récupérer automatiquement les profils de données, ce qui vous permet ainsi d&#39;exécuter des campagnes de ciblage et, lorsque cela est possible, d&#39;implémenter des stratégies cross-canal. Cette action nécessite le consentement de l&#39;utilisateur.
 
 Les étapes de configuration pour intégrer votre compte Twitter à Adobe Campaign sont décrites dans [cette page](../connect/ac-tw.md).
@@ -33,9 +32,13 @@ Pour publier un message sur votre compte Twitter, procédez comme suit :
 
    Créez une diffusion basée sur le modèle de diffusion **[!UICONTROL Tweeter (Twitter)]**.
 
+   ![](assets/tw-new-delivery.png)
+
 1. Sélection de la cible principale
 
    Vous devez sélectionner le ou les comptes sur lesquels vous souhaitez envoyer votre tweet.
+
+   ![](assets/tw-define-target.png)
 
    1. Cliquez sur le lien **[!UICONTROL Pour]**.
    1. Cliquez sur le bouton **[!UICONTROL Ajouter]**.
@@ -46,7 +49,7 @@ Pour publier un message sur votre compte Twitter, procédez comme suit :
 
    L&#39;onglet **[!UICONTROL Cible des BAT]** vous permet de définir le compte Twitter à utiliser pour les diffusions test avant la diffusion finale.
 
-   Comme indiqué dans les [étapes de configuration](../connect/ac-tw.md#tw-test-account), vous devez créer un compte Twitter privé dédié à l&#39;envoi de BAT.
+   Comme indiqué dans la section [étapes de configuration](../connect/ac-tw.md#tw-test-account), vous devez créer un compte Twitter de test privé dédié à l&#39;envoi de BAT.
 
    >[!NOTE]
    >
@@ -55,6 +58,8 @@ Pour publier un message sur votre compte Twitter, procédez comme suit :
 1. Définition du contenu de votre publication
 
    Saisissez le contenu de votre publication dans l&#39;onglet **[!UICONTROL Contenu]**.
+
+   ![](assets/tw-delivery-content.png)
 
    >[!CAUTION]
    >
@@ -68,18 +73,15 @@ Pour publier un message sur votre compte Twitter, procédez comme suit :
 
    Accédez à l&#39;onglet **[!UICONTROL Aperçu]** pour vérifier le rendu de votre publication.
 
+   ![](assets/tw-delivery-preview.png)
+
    1. Cliquez sur l&#39;onglet **[!UICONTROL Aperçu]**.
    1. Cliquez sur le menu déroulant **[!UICONTROL Tester la personnalisation]** et sélectionnez **[!UICONTROL Service]**.
    1. Dans le champ **[!UICONTROL Dossier]**, sélectionnez le dossier de services contenant votre compte Twitter.
-   1. Sélectionnez le compte Twitter sur lequel vous souhaitez tester l&#39;aperçu.
 
 1. Envoi d&#39;un BAT
 
    Avant de publier votre tweet, veillez à le valider en envoyant un BAT de votre publication : vous pouvez ensuite obtenir un rendu exact de la publication sur une page de test Twitter privée.
-
-   Pour en savoir plus sur la création d&#39;un compte Twitter privé, reportez-vous à [cette section](../connect/ac-tw.md#tw-test-account).
-
-   ![](../assets/do-not-localize/book.png) [Découvrez les étapes clés pour valider une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target=&quot;_blank&quot;}
 
 1. Publication du message
 
@@ -87,7 +89,6 @@ Pour publier un message sur votre compte Twitter, procédez comme suit :
    1. Choisissez **[!UICONTROL Diffuser dès que possible]** et cliquez sur le bouton **[!UICONTROL Analyser]**.
    1. Une fois l&#39;analyse terminée, vérifiez le résultat de l&#39;analyse.
    1. Cliquez sur le bouton **[!UICONTROL Confirmer l&#39;envoi]**, puis cliquez sur **[!UICONTROL Oui]**.
-
 
 ## Envoi de messages directs à des abonnés {#direct-tw-messages}
 
@@ -99,40 +100,46 @@ Pour envoyer des messages directs à vos abonnés, procédez comme suit :
 
 1. Sélection de la cible principale
 
-1. Sélectionnez le lien **[!UICONTROL À]** et le bouton **[!UICONTROL Ajouter]**.
+   ![](assets/tw-dm-define-target.png)
 
-1. Choisissez un type de ciblage
+   1. Sélectionnez le lien **[!UICONTROL À]** et le bouton **[!UICONTROL Ajouter]**.
 
-   * Sélectionnez **[!UICONTROL Abonnés d&#39;un compte Twitter]** pour envoyer un message direct à tous vos abonnés.
+   1. Choisissez un type de ciblage
 
-   * Sélectionnez **[!UICONTROL Conditions de filtrage]** pour définir une requête et visualiser son résultat. Cette option est la même que pour les diffusions e-mail. Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/creating-queries/defining-filter-conditions.html?lang=fr){target=&quot;_blank&quot;}.
+      * Sélectionnez **[!UICONTROL Abonnés d&#39;un compte Twitter]** pour envoyer un message direct à tous vos abonnés.
 
-1. Dans l&#39;onglet **[!UICONTROL Cible des BAT]** sélectionnez l&#39;abonné qui recevra le BAT de votre message direct.
+      * Sélectionner **[!UICONTROL Conditions de filtrage]** pour définir une requête et visualiser son résultat. Découvrez comment créer un filtre dans [cette section](../audiences/create-filters.md#advanced-filters).
+
+1. Sélectionnez la cible du BAT dans la **[!UICONTROL Cible des BAT]** tab : ce compte recevra le BAT de votre message direct.
+
+   Comme indiqué dans la section [étapes de configuration](../connect/ac-tw.md#tw-test-account), vous devez créer un compte Twitter de test privé dédié à l&#39;envoi de BAT.
+
 
    >[!NOTE]
    >
-   >Si vous souhaitez envoyer tous les BAT de vos messages directs au même abonné Twitter, vous pouvez enregistrer la cible du BAT dans le modèle de diffusion **[!UICONTROL Tweeter (Diredt Message)]**, accessible à partir du nœud **[!UICONTROL Ressources > Modèles > Modèles de diffusion]**.
+   >Si vous souhaitez envoyer tous les BAT de vos messages directs au même compte Twitter, vous pouvez enregistrer la cible du BAT dans la variable **[!UICONTROL Tweet (message direct)]** modèle de diffusion, accessible à partir du **[!UICONTROL Ressources > Modèles > Modèles de diffusion]** noeud .
 
 1. Saisissez le contenu du message dans l&#39;onglet **[!UICONTROL Contenu]**.
 
-   Comme pour une diffusion par e-mail, il est possible d&#39;utiliser les champs de personnalisation, par exemple si vous souhaitez ajouter le nom de l&#39;abonné dans le corps du message. Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/about-personalization.html?lang=fr){target=&quot;_blank&quot;}.
+   ![](assets/tw-dm-content.png)
+
+   Comme pour une diffusion par e-mail, il est possible d&#39;utiliser les champs de personnalisation, par exemple si vous souhaitez ajouter le nom de l&#39;abonné dans le corps du message. En savoir plus dans [cette section](../start/create-message.md#personalization).
 
 1. Prévisualisez votre message
 
    Accédez à l&#39;onglet **[!UICONTROL Aperçu]** pour vérifier le rendu de votre publication.
 
+   ![](assets/tw-dm-preview.png)
+
    1. Cliquez sur l&#39;onglet **[!UICONTROL Aperçu]**.
-   1. Cliquez sur le menu déroulant **[!UICONTROL Tester la personnalisation]** et sélectionnez **[!UICONTROL Service]**.
-   1. Dans le champ **[!UICONTROL Dossier]**, sélectionnez le dossier de services contenant votre compte Twitter.
-   1. Sélectionnez le compte Twitter sur lequel vous souhaitez tester l&#39;aperçu.
+   1. Cliquez sur le bouton **[!UICONTROL Test de la personnalisation]** menu déroulant, puis sélectionnez **[!UICONTROL Abonnement du visiteur]**.
+   1. Sélectionnez un compte Twitter avec lequel tester l’aperçu.
 
 1. Envoi d&#39;un BAT
 
    Avant d&#39;envoyer votre message, veillez à le valider en envoyant un BAT à un compte test : vous pouvez ensuite obtenir un rendu exact du message sur un compte Twitter privé et vérifier le contenu et la personnalisation.
 
-   Pour en savoir plus sur la création d&#39;un compte Twitter privé, reportez-vous à [cette section](../connect/ac-tw.md#tw-test-account).
-
-   ![](../assets/do-not-localize/book.png) [Découvrez les étapes clés pour valider une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [Découvrez les étapes clés pour valider une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target=&quot;_blank&quot;}
 
 1. Envoi du message direct
 

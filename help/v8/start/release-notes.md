@@ -2,14 +2,14 @@
 title: Notes de mise à jour de Campaign v8
 description: Dernière version de Campaign v8
 feature: Overview
-role: Data Engineer
-level: Beginner
+role: Admin, Developer, User
+level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '2167'
-ht-degree: 100%
+source-wordcount: '2768'
+ht-degree: 80%
 
 ---
 
@@ -17,12 +17,87 @@ ht-degree: 100%
 
 Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs de la **dernière version de Campaign Classic v8**.
 
+## Version 8.4.0 {#release-8-4-0}
+
+_28 septembre 2022_
+
+**Nouveautés**
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Intégration d’Adobe Campaign à Adobe Experience Platform</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td><p>De nouveaux connecteurs source et de destination sont désormais disponibles afin de permettre une intégration transparente entre Adobe Campaign et Adobe Experience Platform :</p>
+<ul><li>Utilisez le connecteur Adobe Campaign Managed Cloud Sources pour envoyer des segments Experience Platform vers Adobe Campaign pour activation,</li>
+<li>Utilisez le connecteur Adobe Campaign Managed Cloud Destination pour envoyer les logs de diffusion et de suivi Adobe Campaign vers Adobe Experience Platform.</li>
+</ul>
+<p>Pour plus d’informations, consultez la <a href="privacy.md">documentation détaillée</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Disponibilité du canal twitter</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>Le <a href="../send/twitter.md">Canal social twitter</a> est désormais disponible avec Campaign v8. Vous pouvez ainsi :</p>
+<ul> 
+<li><p>Envoyer des messages sur Twitter : Adobe Campaign vous permet de publier des messages directement sur votre compte Twitter. Vous pouvez également envoyer des messages directs à tous les abonnés de vos comptes.
+</p></li>
+<li><p>Collecter les nouveaux contacts : Adobe Campaign peut récupérer automatiquement les données de profil, ce qui permet d'effectuer des campagnes de ciblage et de mettre en oeuvre des stratégies cross-canal.
+</p></li>
+</ul>
+<p>Découvrez comment connecter Campaign et Twitter dans le <a href="../connect/ac-tw.md">documentation détaillée</a>.</p>
+<p>Découvrez comment publier des tweets et envoyer des messages directs avec Campaign dans <a href="../connect/ac-tw.md">cette page</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**Améliorations**
+
+* Après la fin de vie de Microsoft Internet Explorer 11, le moteur de rendu de HTML dans la console utilise désormais **Microsoft Edge Chromium**. En outre, l’installation de **Microsoft Edge WebView 2** l’exécution est désormais requise pour toute installation de la console cliente. En savoir plus
+* Amélioration de l’exécution des workflows avec une haute disponibilité des workflows qui permet d’exécuter simultanément des workflows dans différents conteneurs afin d’éviter la perte du service de workflow et d’éviter les erreurs d’exécution associées. **Remarque**: Cette nouvelle fonctionnalité est disponible en disponibilité limitée pour un ensemble de clients uniquement.
+* Les demandes d’accès à des informations personnelles sont désormais exécutées par lots pour un espace de noms de confidentialité donné. Cette amélioration augmente le temps d’exécution des demandes de suppression en vertu du RGPD et de la confidentialité. En savoir plus
+
+**Mises à jour de compatibilité**
+
+* Le SDK Campaign v8 prend désormais en charge iOS 16 pour les notifications push.
+
+Reportez-vous à la [matrice de compatibilité de Campaign](compatibility-matrix.md).
+
+**Correctifs**
+
+* Correction d’un problème qui affectait les mises à jour de l’état du log de diffusion sur l’instance MID, lorsque l’option FeatureFlag_GZIP_Compression était activée. (NEO-49183)
+* Correction d’un problème en raison duquel les diffusions pouvaient rester dans **En attente** même si la date de contact a été atteinte. (NEO-48079)
+* Correction d’un problème dans les workflows qui empêchait la mise à jour des fichiers sur le serveur lors de l’utilisation de la fonction **Chargement (fichier)** activité. Le processus s&#39;est arrêté à 100% mais n&#39;a jamais pris fin. (NEO-47269)
+* Correction d’un problème lors du postupgrade sur les environnements japonais. (NEO-46640)
+* Correction d&#39;une erreur qui pouvait se produire si une diffusion atteignait une taille précise pendant le processus MTA. (NEO-46097)
+* Correction d’un problème qui empêchait les logs de tracking de renvoyer des données liées au navigateur du destinataire. (NEO-46612)
+* Correction d’un problème qui entraînait des problèmes de personnalisation lors de l’envoi de SMS à l’aide d’un mode de diffusion externe. (NEO-46415)
+* Correction d’un problème qui entraînait la génération de doublons dans les logs de tracking. (NEO-46409)
+* Correction d’un problème qui empêchait la variable **[!UICONTROL Réplication des données d’évaluation]** Workflow technique (ffdaReplicateStagingData) de l’arrêt même lorsqu’une erreur s’est produite lors de son exécution. (NEO-46280)
+* Correction d&#39;une erreur qui se produisait lorsqu&#39;une diffusion atteignait une taille précise pendant le processus MTA. (NEO-46097)
+* Afin d&#39;éviter la lenteur lors de l&#39;envoi du BAT aux adresses de contrôle, toutes les réplications consécutives des membres des adresses de contrôle sont désormais regroupées dans une seule demande de réplication. (NEO-44844)
+* Correction d&#39;une erreur qui affichait une erreur lors de la tentative de prévisualisation d&#39;une diffusion dans un événement archivé de Message Center. (NEO-43620)
+* Correction d’un problème lors de l’injection de données dans la base de données cloud Snowflake avec une campagne. **Requête** activité et une **Modifier la source de données** activité : le processus échouait lorsqu’une barre oblique inverse était présente dans les données. La chaîne source n’a pas été placée dans une séquence d’échappement et les données n’ont pas été traitées correctement sur Snowflake. (NEO-45549)
+* Correction d’un problème lors de l’utilisation de la variable **Requête** activité et filtrage d’un tableau. Lorsqu&#39;un nom de colonne contenait le mot &quot;Mettre à jour&quot;, une erreur de compilation se produisait avec un identifiant non valide et le message suivant : &quot;nombre de lignes mis à jour&quot;. (NEO-46485)
+
+
 ## Version 8.3.8 {#release-8-3-8}
 
 _18 mai 2022_
 
 **Nouveautés**
-
 
 <table> 
 <thead>
@@ -53,7 +128,6 @@ _18 mai 2022_
 </tr> 
 </tbody> 
 </table>
-
 
 <table>
 <thead>
@@ -177,29 +251,6 @@ _28 octobre 2021_
 </tbody> 
 </table>
 
-<!--
-<table> 
-<thead>
-<tr> 
-<th> <strong>Twitter channel availability</strong><br /> </th> 
-</tr> 
-</thead> 
-<tbody> 
-<tr> 
-<td> <p>The <a href="../send/twitter.md">Twitter social channel</a> is now available with Campaign v8. You can:</p>
-<ul> 
-<li><p>Send messages on Twitter: Adobe Campaign lets you post messages directly to your twitter account. You can also send direct messages to all your followers.
-</p></li>
-<li><p>Collect new contacts: Adobe Campaign can automatically recovers the profile data, which enables you to carry out targeting campaigns and implement cross-channel strategies.
-</p></li>
-</ul>
-<p>Learn how to connect Campaign and Twitter in the <a href="../connect/ac-tw.md">detailed documentation</a>.</p>
-<p>Learn how to post tweets and send direct messages with Campaign in <a href="../connect/ac-tw.md">this page</a>.</p>
-</td> 
-</tr> 
-</tbody> 
-</table>
--->
 
 **Améliorations**
 

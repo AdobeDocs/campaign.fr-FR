@@ -1,14 +1,14 @@
 ---
 title: Connexion à Campaign v8
 description: Découvrez comment vous connecter à Campaign v8
-feature: Audiences
-role: Data Engineer
+feature: Client Console
+role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '850'
+ht-degree: 98%
 
 ---
 
@@ -21,6 +21,13 @@ Avant de commencer, vous devez :
 * Vérifier la compatibilité de votre système et de vos outils avec Adobe Campaign dans la [matrice de compatibilité](compatibility-matrix.md)
 * Obtenir l&#39;URL du serveur Campaign
 * Créer votre Adobe ID ou obtenir vos informations d&#39;identification d&#39;utilisateur de votre société
+* Installez le runtime Microsoft Edge Webview2 sur votre système (à partir de la version de build 8.4 de Campaign Classic). [En savoir plus](#webview)
+
+## Installation du runtime de Microsoft Edge Webview2 {#webview}
+
+À partir de la version de build 8.4 de Campaign Classic, l’installation du runtime de Microsoft Edge Webview 2 est requise pour toute installation de console.
+
+Web View est installé par défaut dans le cadre du système d’exploitation Windows 11. S’il n’est pas déjà présent sur votre système, la console de Campaign Installer vous invitera à le télécharger à partir du [site web de Microsoft Developer](http://www.adobe.com/go/acc-ms-webview2-runtime-download_fr). Notez que le lien de téléchargement ne fonctionne pas dans le navigateur Internet Explorer 11, car Microsoft ne le prend plus en charge. Assurez-vous d’utiliser un autre navigateur pour accéder au lien.
 
 ## Téléchargement et installation de la console cliente{#download-ac-console}
 
@@ -77,6 +84,10 @@ Pour vous connecter à une instance existante, procédez comme suit :
 1. Vous pouvez ensuite vous connecter à Campaign à l&#39;aide de [votre Adobe ID](#connect-ims).
 
    ![](assets/adobeID.png)
+
+>[!NOTE]
+>
+>Pour les versions de build 8.4 de Campaign Classic, la console cliente d’Adobe Campaign peut demander deux fois les identifiants du proxy lors de l’authentification du proxy. Cela est dû au fait que Microsoft Edge Webview2 n’enregistre pas les identifiants du proxy dans le magasin du cache/de mots de passe, contrairement à Internet Explorer.
 
 ## Octroi d&#39;accès aux utilisateurs{#grant-access}
 

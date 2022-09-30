@@ -2,8 +2,10 @@
 title: Synchronisation des données des connecteurs CRM
 description: Gérer les données entre Campaign et votre gestion de la relation client (CRM)
 feature: Salesforce Integration, Microsoft CRM Integration
+role: Admin
+level: Beginner, Intermediate, Experienced
 exl-id: 2a7ae88e-d47f-416b-84cd-986ab9be6aef
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 100%

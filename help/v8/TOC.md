@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Présentation de Campaign
 title: Documentation Campaign v8
-source-git-commit: fdaf107fd22f439a728f32ceb8cfc13a8c5bc1ad
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 100%
+source-wordcount: '369'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 100%
    + [Notifications push](send/push.md)
    + [Messagerie LINE](send/line.md)
    + [Courrier](send/direct-mail.md)
-   + [Marketing social](send/twitter.md)
+   + [Twitter](send/twitter.md)
    + [Messages transactionnels](send/transactional.md)
    + [Optimisation de l&#39;heure d&#39;envoi](send/predictive.md)
    + Échecs, retours et mises en quarantaine{#failures}
@@ -113,11 +113,11 @@ ht-degree: 100%
    + [Comptes externes](config/external-accounts.md)
 + Connexion {#connect}
    + [Connexion à d&#39;autres solutions](connect/integration.md)
+   + [Campaign + Adobe Experience Platform](connect/ac-aep.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
    + [Campaign + triggers Experience Cloud](connect/ac-triggers.md)
-   + [Campaign + RTCDP](connect/ac-rtcdp.md)
    + [Campaign + Twitter](connect/ac-tw.md)
    + [Campaign + base de données externe](connect/fda.md)
    + Campaign + votre CRM   {#ac-crm}

@@ -1,11 +1,11 @@
 ---
 title: Prise en main du déploiement de Campaign FFDA
 description: Prise en main du déploiement de Campaign FFDA
-feature: Overview
-role: Data Engineer
-level: Beginner
+feature: Architecture, FFDA
+role: Admin, Developer, User
+level: Beginner, Intermediate, Experienced
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: 0fa0db62f45097755bebcbf434614c4c835d886a
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 100%
