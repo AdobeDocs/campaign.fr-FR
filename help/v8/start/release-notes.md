@@ -6,10 +6,10 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: c1a5dd3fcad5d377acb2f9df3a090897ed3b533e
+source-git-commit: dfe675ca0f15050a9159172be3d8d8de7e8bf848
 workflow-type: tm+mt
-source-wordcount: '2764'
-ht-degree: 80%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -62,6 +62,18 @@ _30 septembre 2022_
 </tr> 
 </tbody> 
 </table>
+
+**Amélioration de la sécurité**
+
+Pour optimiser la sécurité, les jetons de sécurité ont été supprimés des URL générées par Campaign :
+
+* Cette modification s’applique uniquement aux URL de GET. D’autres types, y compris les URL de POST, ne sont pas affectés.
+* Si vous utilisez du code personnalisé, les jetons de sécurité ne sont plus récupérés à partir du paramètre de jeton de sécurité de l’URL GET. Vous devez générer un nouveau jeton de sécurité à l’aide du code JSSP suivant :
+
+   ```getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);```
+
+   Vous pouvez également utiliser l’API de connexion pour récupérer les jetons de sécurité.
+* La gestion des jetons de session ne change pas.
 
 **Améliorations**
 
