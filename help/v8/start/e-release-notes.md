@@ -6,22 +6,22 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: acb3223a9a70179ea1cb3a126ef17cf5e234b4ba
+source-git-commit: e873e945f7101c5c54b4b18a128951e08d329b87
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '475'
 ht-degree: 5%
 
 ---
 
 # Notes de mise à jour initiales {#e-new-release}
 
-Cette page décrit les améliorations et les correctifs inclus dans la prochaine version de Campaign v8.
+Cette page décrit les améliorations et les correctifs inclus dans la prochaine version de Campaign v8. Ce contenu est sujet à des modifications sans préavis jusqu’à la date de publication. Les notes de mise à jour officielles sont disponibles dans cette [page](../start/release-notes.md).
+
+## Version 8.3.9 {#release-8-3-9}
 
 >[!CAUTION]
 >
-> Ce contenu est sujet à des modifications sans préavis jusqu’à la date de publication. Les notes de mise à jour officielles sont disponibles dans cette [page](../start/release-notes.md).
-
-## Version 8.3.9 {#release-8-3-9}
+> La mise à niveau de la console cliente est obligatoire. Découvrez comment mettre à niveau votre console cliente dans cette [page](../start/connect.md#download-ac-console).
 
 _7 octobre 2022_
 
