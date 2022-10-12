@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '850'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,13 +21,13 @@ Avant de commencer, vous devez :
 * Vérifier la compatibilité de votre système et de vos outils avec Adobe Campaign dans la [matrice de compatibilité](compatibility-matrix.md)
 * Obtenir l&#39;URL du serveur Campaign
 * Créer votre Adobe ID ou obtenir vos informations d&#39;identification d&#39;utilisateur de votre société
-* Installez le runtime Microsoft Edge Webview2 sur votre système (à partir de la version de build 8.4 de Campaign Classic). [En savoir plus](#webview)
+* Installez le runtime de Microsoft Edge Webview2 sur votre système (à partir de la version 8.4 de Campaign Classic). [En savoir plus](#webview)
 
 ## Installation du runtime de Microsoft Edge Webview2 {#webview}
 
 À partir de la version de build 8.4 de Campaign Classic, l’installation du runtime de Microsoft Edge Webview 2 est requise pour toute installation de console.
 
-Web View est installé par défaut dans le cadre du système d’exploitation Windows 11. S’il n’est pas déjà présent sur votre système, la console de Campaign Installer vous invitera à le télécharger à partir du [site web de Microsoft Developer](http://www.adobe.com/go/acc-ms-webview2-runtime-download_fr). Notez que le lien de téléchargement ne fonctionne pas dans le navigateur Internet Explorer 11, car Microsoft ne le prend plus en charge. Assurez-vous d’utiliser un autre navigateur pour accéder au lien.
+Web View est installé par défaut dans le cadre du système d’exploitation Windows 11. S’il n’est pas déjà présent sur votre système, le programme d’installation de la console Campaign vous invitera à le télécharger à partir du [site web de Microsoft Developer](http://www.adobe.com/go/acc-ms-webview2-runtime-download_fr). Notez que le lien de téléchargement ne fonctionne pas dans le navigateur Internet Explorer 11, car Microsoft ne le prend plus en charge. Assurez-vous d’utiliser un autre navigateur pour accéder au lien.
 
 ## Téléchargement et installation de la console cliente{#download-ac-console}
 
