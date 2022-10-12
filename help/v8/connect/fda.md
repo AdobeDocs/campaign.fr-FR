@@ -6,9 +6,9 @@ role: Admin
 level: Beginner, Intermediate
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '761'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -16,23 +16,23 @@ ht-degree: 70%
 
 Utilisez le connecteur FDA (Federated Data Access) pour connecter Campaign à une ou plusieurs **bases de données externes** et traiter les informations stockées dans celles-ci sans affecter vos données provenant des bases cloud de Campaign. Vous pouvez ensuite accéder à des données externes sans modifier la structure des données Adobe Campaign.
 
-![](../assets/do-not-localize/speech.png)   En tant qu’utilisateur Cloud Services géré, [contact Adobe](../start/campaign-faq.md#support) pour connecter vos bases de données externes à Campaign.
+![](../assets/do-not-localize/speech.png) En tant qu’utilisateur de Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour connecter vos bases de données externes à Campaign.
 
 
 >[!NOTE]
 >
->* Les bases de données compatibles avec Federated Data Access sont répertoriées dans la section [Matrice de compatibilité](../start/compatibility-matrix.md).
+>* Les bases de données compatibles avec FDA (Federated Data Access) sont répertoriées dans la [Matrice de compatibilité](../start/compatibility-matrix.md).
 >
->* Dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), un compte externe spécifique est disponible pour gérer la communication entre la base de données locale Campaign et la base de données cloud Snowflake. Ce compte externe est configuré pour vous par Adobe et **must not** être modifié.
+>* Dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), un compte externe spécifique est disponible pour gérer la communication entre la base de données locale Campaign et la base de données cloud Snowflake. Ce compte externe est configuré pour vous par Adobe et **ne doit pas** être modifié.
 >
 
 
 
 ## Bonnes pratiques et limites
 
-L’option FDA est soumise aux limitations du système de base de données tiers que vous utilisez.
+L’option FDA est assujettie aux limitations du système de la base de données tierce que vous utilisez.
 
-Gardez également à l’esprit les limites et bonnes pratiques suivantes :
+Gardez également à l’esprit les limites et bonnes pratiques suivantes :
 
 * L&#39;option FDA est utilisée pour manipuler les données des bases de données externes en mode batch dans les workflows. Pour éviter les problèmes de performance, il n&#39;est pas recommandé d&#39;utiliser le module FDA dans le cadre d&#39;opérations unitaires, par exemple : personnalisation, interaction, messagerie en temps réel, etc.
 
@@ -41,7 +41,7 @@ Gardez également à l’esprit les limites et bonnes pratiques suivantes :
    * exporter les données de la base Adobe Campaign vers la base externe et effectuer les opérations uniquement depuis la base externe avant de réimporter les résultats dans Adobe Campaign.
 
    * collecter les données de la base externe dans Adobe Campaign et effectuer les opérations localement.
-   Si vous souhaitez effectuer de la personnalisation dans vos diffusions à l&#39;aide des données de la base externe, collectez les données à utiliser dans un workflow afin de les rendre disponibles dans une table temporaire. Utilisez alors les données de la table temporaire pour personnaliser votre diffusion. Pour ce faire, pré-traitez la personnalisation des messages dans un workflow dédié à l’aide de la fonction **[!UICONTROL Préparer les données de personnalisation avec un workflow]** , disponible dans la variable **[!UICONTROL Analyse]** de l’onglet des propriétés de la diffusion. Cette option permet, lors de l&#39;analyse de la diffusion, de créer et d&#39;exécuter automatiquement un workflow qui stocke toutes les données liées à la cible dans une table temporaire, notamment les données issues des tables liées dans une base de données externe.
+   Si vous souhaitez personnaliser vos diffusions à l&#39;aide des données de la base de données externe, collectez les données à utiliser dans un workflow afin de les rendre disponibles dans une table temporaire. Utilisez alors les données de la table temporaire pour personnaliser votre diffusion. Pour ce faire, pré-traitez la personnalisation des messages dans un workflow dédié à l’aide de la fonction **[!UICONTROL Préparer les données de personnalisation avec un workflow]**, disponible dans l’onglet **[!UICONTROL Analyse]** des propriétés de la diffusion. Cette option permet, lors de l&#39;analyse de la diffusion, de créer et d&#39;exécuter automatiquement un workflow qui stocke toutes les données liées à la cible dans une table temporaire, notamment les données issues des tables liées dans une base de données externe.
 
    >[!CAUTION]
    >
@@ -50,17 +50,17 @@ Gardez également à l’esprit les limites et bonnes pratiques suivantes :
 
 ## Utiliser des données externes dans un workflow
 
-Campaign est livré avec plusieurs activités de workflow que vous pouvez utiliser pour interagir avec les données de vos bases de données externes :
+Campaign est livré avec plusieurs activités de workflow que vous pouvez utiliser pour interagir avec les données de vos bases de données externes :
 
-* **Filtrer sur les données externes** - Utilisez la variable **[!UICONTROL Requête]** pour ajouter des données externes et les utiliser dans les configurations de filtre définies.
+* **Filtre sur les données externes** - L’activité de **[!UICONTROL requête]** permet d’ajouter des données externes et de les utiliser dans les paramètres de filtrage définis.
 
-* **Créer des sous-ensembles** - Utilisez la variable **[!UICONTROL Partage]** pour créer des sous-ensembles. Vous pouvez utiliser des données externes pour définir les critères de filtrage à utiliser.
+* **Créer des sous-ensembles** - Utilisez l’activité **[!UICONTROL Partage]** pour construire des sous-ensembles. Vous pouvez utiliser des données externes pour définir les critères de filtrage à utiliser.
 
-* **Chargement de la base de données externe** - Utilisez les données externes de la variable **[!UICONTROL Chargement (SGBD)]** activité.
+* **Charger la base de données externe** : vous pouvez utiliser les données externes dans l’activité **[!UICONTROL Chargement des données (RDBMS)]**.
 
-* **Ajouter des informations et des liens** - Utilisez la variable **[!UICONTROL Enrichissement]** pour ajouter des données additionnelles à la table de travail du workflow et créer des liens vers une table externe. Dans ce contexte, elle peut utiliser des données provenant d&#39;une base de données externe.
+* **Ajouter des informations et des liens** - L’activité **[!UICONTROL Enrichissement]** permet d’ajouter des données supplémentaires à la table de travail du workflow et de créer des liens vers une table externe. Dans ce contexte, elle peut utiliser des données provenant d&#39;une base de données externe.
 
-Vous pouvez également définir directement une connexion à une base de données externe à partir de toutes les activités de workflow répertoriées ci-dessus, pour une utilisation temporaire. Dans ce cas, il sera stocké dans une base de données externe locale, à utiliser uniquement dans le workflow en cours.
+Vous pouvez également définir directement une connexion à une base de données externe à partir de toutes les activités de workflow énumérées ci-dessus, pour une utilisation temporaire. Dans ce cas, elle sera stockée dans une base de données externe locale, à utiliser uniquement dans le workflow actuel.
 
 >[!CAUTION]
 >
