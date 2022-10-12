@@ -1,13 +1,13 @@
 ---
 title: Publier des messages sur Twitter avec Adobe Campaign
-description: Découvrez comment utiliser le module Social Marketing d’Adobe Campaign pour publier des messages sur Twitter et envoyer des messages directs à vos abonnés.
+description: Découvrez comment utiliser le module Marketing des médias sociaux d’Adobe Campaign pour publier des messages sur Twitter et envoyer des messages directs à vos abonnés.
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
 source-git-commit: 9f74e3bbff5bcbebf4f5a0ecf4ed7e458b9e38ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '889'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ Adobe Campaign est fourni avec un module **Marketing social** qui permet d&#39;i
 
 Une fois l&#39;intégration configurée, vous pouvez :
 
-* Envoyer des messages directs à vos abonnés
+* Envoyer de messages directs à vos abonnés
 * Publier des tweets sur votre compte Twitter
-* Collectez de nouveaux contacts en récupérant les données de profil, ce qui permet de réaliser des campagnes de ciblage et, si possible, de mettre en oeuvre des stratégies cross-canal. Cette action nécessite le consentement de l&#39;utilisateur.
+* Collectez de nouveaux contacts en récupérant les données de profil. Vous pourrez alors exécuter des campagnes de ciblage et, lorsque cela est possible, mettre en œuvre des stratégies cross-canal. Cette action nécessite le consentement de l&#39;utilisateur.
 
 Les étapes de configuration pour intégrer votre compte Twitter à Adobe Campaign sont décrites dans [cette page](../connect/ac-tw.md).
 
@@ -49,7 +49,7 @@ Pour publier un message sur votre compte Twitter, procédez comme suit :
 
    L&#39;onglet **[!UICONTROL Cible des BAT]** vous permet de définir le compte Twitter à utiliser pour les diffusions test avant la diffusion finale.
 
-   Comme indiqué dans la section [étapes de configuration](../connect/ac-tw.md#tw-test-account), vous devez créer un compte Twitter de test privé dédié à l&#39;envoi de BAT.
+   Comme indiqué dans les [étapes de configuration](../connect/ac-tw.md#tw-test-account), vous devez créer un compte test Twitter privé dédié à l’envoi de BAT.
 
    >[!NOTE]
    >
@@ -104,20 +104,20 @@ Pour envoyer des messages directs à vos abonnés, procédez comme suit :
 
    1. Sélectionnez le lien **[!UICONTROL À]** et le bouton **[!UICONTROL Ajouter]**.
 
-   1. Choisissez un type de ciblage
+   1. Choisir un type de ciblage
 
-      * Sélectionnez **[!UICONTROL Abonnés d&#39;un compte Twitter]** pour envoyer un message direct à tous vos abonnés.
+      * Sélectionnez **[!UICONTROL Abonnés d’un compte Twitter]** pour envoyer un message direct à tous vos abonnés.
 
-      * Sélectionner **[!UICONTROL Conditions de filtrage]** pour définir une requête et visualiser son résultat. Découvrez comment créer un filtre dans [cette section](../audiences/create-filters.md#advanced-filters).
+      * Sélectionnez **[!UICONTROL Conditions des filtres]** pour définir une requête et afficher son résultat. Découvrez comment créer un filtre dans [cette section](../audiences/create-filters.md#advanced-filters).
 
-1. Sélectionnez la cible du BAT dans la **[!UICONTROL Cible des BAT]** tab : ce compte recevra le BAT de votre message direct.
+1. Sélectionnez la cible du BAT dans l’onglet **[!UICONTROL Cible des BAT]** : ce compte recevra le BAT de votre message direct.
 
-   Comme indiqué dans la section [étapes de configuration](../connect/ac-tw.md#tw-test-account), vous devez créer un compte Twitter de test privé dédié à l&#39;envoi de BAT.
+   Comme indiqué dans les [étapes de configuration](../connect/ac-tw.md#tw-test-account), vous devez créer un compte test Twitter privé dédié à l’envoi de BAT.
 
 
    >[!NOTE]
    >
-   >Si vous souhaitez envoyer tous les BAT de vos messages directs au même compte Twitter, vous pouvez enregistrer la cible du BAT dans la variable **[!UICONTROL Tweet (message direct)]** modèle de diffusion, accessible à partir du **[!UICONTROL Ressources > Modèles > Modèles de diffusion]** noeud .
+   >Si vous souhaitez envoyer tous les BAT de vos messages directs au même compte Twitter, vous pouvez enregistrer la cible du BAT dans le modèle de diffusion **[!UICONTROL Tweet (Direct Message)]**, accessible via le nœud **[!UICONTROL Ressources > Modèles > Modèles de diffusion]**.
 
 1. Saisissez le contenu du message dans l&#39;onglet **[!UICONTROL Contenu]**.
 
@@ -132,8 +132,8 @@ Pour envoyer des messages directs à vos abonnés, procédez comme suit :
    ![](assets/tw-dm-preview.png)
 
    1. Cliquez sur l&#39;onglet **[!UICONTROL Aperçu]**.
-   1. Cliquez sur le bouton **[!UICONTROL Test de la personnalisation]** menu déroulant, puis sélectionnez **[!UICONTROL Abonnement du visiteur]**.
-   1. Sélectionnez un compte Twitter avec lequel tester l’aperçu.
+   1. Cliquez sur le menu déroulant **[!UICONTROL Tester la personnalisation]** et sélectionnez **[!UICONTROL Abonnements des visiteurs]**.
+   1. Sélectionnez le compte Twitter sur lequel vous souhaitez tester l’aperçu.
 
 1. Envoi d&#39;un BAT
 
@@ -150,7 +150,7 @@ Pour envoyer des messages directs à vos abonnés, procédez comme suit :
 
 >[!CAUTION]
 >
->Vous ne pouvez pas envoyer plus de 250 messages directs par jour. Pour éviter de dépasser ce seuil, vous pouvez effectuer une diffusion par vagues. Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr?lang=en#sending-using-multiple-vagues){target=&quot;_blank&quot;}.
+>Vous ne pouvez pas envoyer plus de 250 messages directs par jour. Pour éviter de dépasser ce seuil, vous pouvez effectuer une diffusion par vagues. Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr?lang=fr#sending-using-multiple-waves){target=&quot;_blank&quot;}.
 
 
 ## Accès aux données de suivi {#tw-tracking}
