@@ -8,15 +8,15 @@ hide: true
 hidefromtoc: true
 exl-id: 89a4ab6c-de8e-4408-97d2-8b8e574227f9
 source-git-commit: b9dd9e76be14067740426b6cddfa2c5fcddf3158
-workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
 # Problèmes connus{#known-issues}
 
-Cette page répertorie les problèmes connus identifiés dans la variable **dernières versions de Campaign v8**. En outre, les limites de Campaign v8 sont répertoriées sur [cette page](ac-guardrails.md).
+Cette page répertorie les problèmes connus identifiés dans les **dernières versions de Campaign v8**. En outre, les limites de Campaign v8 sont répertoriées sur [cette page](ac-guardrails.md).
 
 
 >[!NOTE]
