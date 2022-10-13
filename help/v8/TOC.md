@@ -7,7 +7,7 @@ title: Documentation Campaign v8
 source-git-commit: e7772364ab46673695f498911e2246056a04790e
 workflow-type: tm+mt
 source-wordcount: '372'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 98%
    + [Courrier](send/direct-mail.md)
    + [Twitter](send/twitter.md)
    + [Messages transactionnels](send/transactional.md)
-   + [Optimisation de l&#39;heure d&#39;envoi](send/predictive.md)
+   + [Optimisation de l’heure d&#39;envoi](send/predictive.md)
    + Échecs, retours et mises en quarantaine{#failures}
       + [Quarantaines](send/quarantines.md)
       + [Diffusions en échec](send/delivery-failures.md)
@@ -114,7 +114,7 @@ ht-degree: 98%
    + [Comptes externes](config/external-accounts.md)
 + Connexion {#connect}
    + [Connexion à d&#39;autres solutions](connect/integration.md)
-   + [Campaign + Adobe Experience Platform](connect/ac-aep.md)
+   + [Campaign + Adobe Experience Platform](connect/ac-aep.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
