@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
+source-git-commit: 1e84fdd61bb2591bf69f5efaf8f8fc01a0d3d93f
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -66,27 +66,28 @@ Les utilisateurs de Campaign se connectent via leur Adobe ID uniquement. Le mê
 
 Utilisez le module Marketing Analytics pour analyser et mesurer les données, calculer les statistiques, simplifier et optimiser la création et le calcul de rapports. Créez également des rapports et des populations cibles : une fois identifiés, ils sont stockés dans des listes qui peuvent être utilisées dans Adobe Campaign (ciblage, segmentation, etc.).
 
-Notez que les rapports de cube Adobe Campaign sont optimisés et offrent de meilleures fonctionnalités d’échelle que Campaign Classic v7. Les anciennes limitations sur les cubes ne s’appliquent pas dans Campaign v8.
+Avec [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), les rapports cubes Adobe Campaign sont optimisés et offrent de meilleures fonctionnalités d’échelle que Campaign Classic v7. Dans ce modèle de déploiement spécifique, les anciennes limitations sur les cubes ne s&#39;appliquent pas dans Campaign v8.
 
 ## Fonctionnalités non disponibles{#gs-unavailable-features}
 
 Veuillez noter que certaines fonctionnalités ne sont pas disponibles dans cette version de Campaign, telles que :
 
 * Gestion des ressources marketing
-* Modèles de déploiement hybrides/On-premise
+* Coupons
+* Tracking web
+* Questionnaires
 
 
 ## Fonctionnalités non prises en charge{#gs-removed}
 
-Pour s&#39;aligner sur la nouvelle architecture et le nouveau modèle de déploiement de Campaign v8, certaines fonctionnalités historiques de Campaign Classic v7 ne sont plus prises en charge dans Campaign v8, telles que :
+Certaines fonctionnalités historiques de Campaign Classic v7 ne sont plus prises en charge avec Campaign v8, telles que :
 
-* Coupons
-* Tracking web
-* Questionnaires
-* Marketing pour réseaux sociaux
+* Marketing pour réseaux sociaux    avec Facebook
 * Connecteur ACS (offre principale)
 * Intégration avec LDAP
 * Connexion utilisateur/mot de passe
+* Modèles de déploiement hybrides/On-premise
+
 
 >[!NOTE]
 >
