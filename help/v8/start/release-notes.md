@@ -6,10 +6,10 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 6986f4eb017602632d11ce6e9ca9e156d94380ff
+source-git-commit: 9ae93ce4e2b0424bb3b3862b2c7d016309bd630e
 workflow-type: tm+mt
-source-wordcount: '3381'
-ht-degree: 88%
+source-wordcount: '2845'
+ht-degree: 98%
 
 ---
 
@@ -17,9 +17,11 @@ ht-degree: 88%
 
 Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs de la **dernière version de Campaign Classic v8**.
 
+
 ## Version 8.4.1 {#release-8-4-1}
 
 _30 septembre 2022_
+
 
 **Nouveautés**
 
@@ -98,47 +100,13 @@ Reportez-vous à la [matrice de compatibilité de Campaign](compatibility-matrix
 * Correction d’un problème qui entraînait des problèmes de personnalisation lors de l’envoi de SMS à l’aide d’un mode de diffusion externe. (NEO-46415)
 * Correction d’un problème qui entraînait la génération de doublons dans les logs de tracking. (NEO-46409)
 * Correction d’un problème en raison duquel le workflow technique (ffdaReplicateStagingData) **[!UICONTROL Répliquer les données d’évaluation]** ne pouvait pas s’arrêter même si une erreur s’était produite lors de son exécution. (NEO-46280)
+* Correction d’une erreur qui se produisait lorsqu’une diffusion atteignait une taille précise pendant le processus MTA. (NEO-46097)
 * Afin de prévenir tout problème de lenteur lors de l’envoi de BAT aux adresses de contrôle, toutes les réplications consécutives des membres des adresses de contrôle sont désormais regroupées dans une seule demande de réplication. (NEO-44844)
 * Correction d’un problème qui affichait un message d’erreur lors d’une tentative de prévisualisation d’une diffusion dans un événement archivé de Message Center. (NEO-43620)
 * Correction d’un problème en raison duquel, lors de l’injection de données dans la base de données cloud Snowflake avec une activité de **requête** de Campaign ainsi qu’une activité **Modifier la source de données**, le processus échouait si une barre oblique inverse était présente dans les données. La chaîne source n’a pas été placée dans une séquence d’échappement et les données n’ont pas été traitées correctement sur Snowflake. (NEO-45549)
 * Correction d’un problème qui se produisait lors de l’utilisation de l’activité **Requête** et du filtrage d’un tableau. Lorsqu’un nom de colonne contenait les mots « Mise à jour », une erreur de compilation se produisait avec un identifiant non valide et le message suivant : « nombre de lignes mises à jour ». (NEO-46485)
-* Le **Nettoyage de la base** Le workflow technique gère désormais également les schémas d’évaluation personnalisés. (NEO-48974)
-* Correction d&#39;une erreur qui ralentissait l&#39;analyse de la diffusion, lors de l&#39;étape d&#39;exclusion des destinataires placés sur la liste bloquée, lors du ciblage d&#39;un grand nombre de destinataires. (NEO-48019)
-* Stabilité améliorée lors de la gestion des chaînes XML non valides lors des appels SOAP. (NEO-48027)
-* Correction d’un problème qui entraînait la création de DeliveryParts superflus lorsque la diffusion utilisait les modes Calendrier et Partage. (NEO-48634)
-* Correction d’un problème de performances lors de l’utilisation de vagues calendaires. (NEO-48451)
-* Correction d’un problème qui entraînait l’affichage d’un message d’erreur dans l’écran de la liste de diffusion après la création d’un nouveau mapping de ciblage sur un schéma personnalisé. (NEO-49237)
-* Correction d’un problème qui entraînait une perte de données si le workflow d’évaluation était en erreur et que la période de conservation était complètement dépassée. (NEO-48975)
 
-## Version 8.3.9 {#release-8-3-9}
 
->[!CAUTION]
->
-> La mise à niveau de la console cliente est obligatoire. Découvrez comment mettre à niveau votre console cliente dans cette [page](../start/connect.md#download-ac-console).
-
-_7 octobre 2022_
-
-**Améliorations**
-
-* Correction d’un problème qui affectait les mises à jour du statut du journal de diffusion sur l’instance MID, lorsque l’option FeatureFlag_GZIP_Compression était activée. (NEO-49183)
-* Le **Nettoyage de la base** Le workflow technique gère désormais également les schémas d’évaluation personnalisés. (NEO-48974)
-* Correction d’un problème en raison duquel les diffusions pouvaient rester dans **En attente** même si la date de contact a été atteinte. (NEO-48079, NEO-48251)
-* Stabilité améliorée lors de la gestion des chaînes XML non valides lors des appels SOAP. (NEO-48027)
-* Correction d&#39;une erreur qui ralentissait l&#39;analyse de la diffusion, lors de l&#39;étape d&#39;exclusion des destinataires placés sur la liste bloquée, lors du ciblage d&#39;un grand nombre de destinataires. (NEO-48019)
-* Afin d&#39;éviter la lenteur lors de l&#39;envoi du BAT aux adresses de contrôle, toutes les réplications consécutives des membres des adresses de contrôle sont désormais regroupées dans une seule demande de réplication. (NEO-44844)
-* Correction d’un problème qui entraînait des problèmes de personnalisation lors de l’envoi de SMS à l’aide d’un mode de diffusion externe. (NEO-46415)
-* Correction d’un problème qui affichait un message d’erreur lors d’une tentative de prévisualisation d’une diffusion dans un événement archivé de Message Center. (NEO-43620)
-* Correction d’un problème dans les workflows en raison duquel des fichiers sur le serveur ne pouvaient pas être mis à jour lors de l’utilisation de l’activité **Chargement de données (fichier)**. Le processus s’est arrêté à 100 % mais n’a jamais pris fin. (NEO-47269)
-* Correction d’un problème qui entraînait la création de DeliveryParts superflus lorsque la diffusion utilisait les modes Calendrier et Partage. (NEO-48634)
-* Correction d’un problème de performances lors de l’utilisation de vagues calendaires. (NEO-48451)
-* Correction d’un problème qui entraînait l’affichage d’un message d’erreur dans l’écran de la liste de diffusion après la création d’un nouveau mapping de ciblage sur un schéma personnalisé. (NEO-49237)
-* Correction d’un problème qui se produisait lorsqu’une diffusion atteignait une taille spécifique pendant le processus MTA. (NEO-46097)
-* Correction d’un problème en raison duquel les logs de tracking ne pouvaient pas renvoyer de données liées au navigateur du destinataire. (NEO-46612)
-* Correction d’un problème lors du postupgrade dans les environnements japonais. (NEO-46640)
-* Correction d’un problème qui se produisait lors de l’utilisation de l’activité **Requête** et du filtrage d’un tableau. Lorsqu&#39;un nom de colonne contenait le mot &quot;Mettre à jour&quot;, une erreur de compilation se produisait avec un identifiant non valide et le message suivant : &quot;nombre de lignes mis à jour&quot;. (NEO-46485)
-* Correction d’un problème en raison duquel le workflow technique (ffdaReplicateStagingData) **[!UICONTROL Répliquer les données d’évaluation]** ne pouvait pas s’arrêter même si une erreur s’était produite lors de son exécution. (NEO-46280)
-* Correction d’un problème qui entraînait une perte de données si le workflow d’évaluation était en erreur et que la période de conservation était complètement dépassée. (NEO-48975)
-* Correction d’un problème en raison duquel, lors de l’injection de données dans la base de données cloud Snowflake avec une activité de **requête** de Campaign ainsi qu’une activité **Modifier la source de données**, le processus échouait si une barre oblique inverse était présente dans les données. La chaîne source n’a pas été placée dans une séquence d’échappement et les données n’ont pas été traitées correctement sur Snowflake. (NEO-45549)
 
 ## Version 8.3.8 {#release-8-3-8}
 

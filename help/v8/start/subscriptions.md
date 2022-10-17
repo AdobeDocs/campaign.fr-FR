@@ -5,9 +5,9 @@ feature: Subscriptions
 role: User
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
-workflow-type: ht
-source-wordcount: '549'
+source-git-commit: b323dbf9504e39cca78f7082089b864544ee1633
+workflow-type: tm+mt
+source-wordcount: '484'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ Pour abonner (opt-in) un profil à un service, les options disponibles sont les 
 
    ![](assets/subscribe-confirm.png)
 
-   ![](../assets/do-not-localize/book.png) Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=fr#deliveries-tab){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab){target=&quot;_blank&quot;}
 
 
 * Importer des destinataires et les abonner automatiquement à un service d’information : pour ce faire, sélectionnez le service visé dans la dernière étape de l’assistant d’import.
@@ -78,6 +78,8 @@ Pour désabonner (opt-out) un profil d&#39;un service, les options disponibles s
 >
 >Dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), les abonnements et les désabonnements sont des processus **asynchrones**. Les demandes d&#39;opt-in et d&#39;opt-out sont traitées toutes les heures. [En savoir plus](../architecture/new-apis.md#sub-apis)
 
-Vous pouvez également permettre aux destinataires de votre diffusion de transférer des messages à un ami. Pour ce faire, insérez les liens adéquats dans votre diffusion. Vous pouvez ensuite suivre ce processus de partage, ainsi que le nombre de visites sur les pages concernées.
+<!--
+You can also enable your delivery recipients to forward messages to a friend. To do this, insert the relevant links into your delivery. You may then track this sharing process as well as the number of visits to the concerned pages. 
 
-![](../assets/do-not-localize/book.png)Pour en savoir plus sur cette fonctionnalité, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=fr#viral-marketing—forward-to-a-friend){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) For more on this capability, refer to [Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=en#viral-marketing--forward-to-a-friend){target="_blank"}
+-->

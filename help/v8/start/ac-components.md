@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
-workflow-type: ht
-source-wordcount: '709'
-ht-degree: 100%
+source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 99%
 
 ---
 
@@ -58,7 +58,7 @@ La fiabilité de la base de données est primordiale puisque la plupart des comp
 
 La couche de logique applicative de Campaign est facilement configurable pour répondre à des besoins métier complexes. Vous pouvez utiliser Campaign comme une plateforme unique avec différentes applications qui se combinent pour créer une architecture ouverte et évolutive. Chaque instance de Campaign est un ensemble de processus de la couche applicative, dont certains sont partagés et d&#39;autres dédiés.
 
-## Campaign Managed Services{#ac-managed-services}
+## Cloud Services gérés par Campaign{#ac-managed-services}
 
 Adobe Campaign v8 est déployé &#39;as a Managed Service&#39; : tous les composants d&#39;Adobe Campaign, y compris l&#39;interface utilisateur, le moteur de gestion de l&#39;exécution et la base de données Campaign, sont entièrement hébergés par Adobe. Cela inclut également l&#39;exécution des e-mails, les pages miroir, le serveur de tracking et les composants web externes, tels que la page de désabonnement/le centre de préférences et les landing pages.
 

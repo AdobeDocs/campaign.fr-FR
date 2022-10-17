@@ -5,8 +5,8 @@ feature: Audiences, Profiles, Application Settings
 role: User
 level: Beginner, Intermediate
 exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
-workflow-type: ht
+source-git-commit: ec46a6f41d640b11306a88d6a966f81f8c2e43e0
+workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Une vue est un dossier spécifique qui ne contient aucune donnée, mais affiche 
 
 Notez que vous pouvez attribuer des autorisations aux dossiers pour restreindre l&#39;accès à certaines données. [En savoir plus](#restrict-access-to-a-folder)
 
-## Bonnes pratiques relatives à l&#39;utilisation des dossiers
+## Bonnes pratiques relatives à l&#39;utilisation des dossiers{#best-practices-folders}
 
 * **Utilisez des dossiers intégrés** pour faciliter l&#39;utilisation, la maintenance et le dépannage de l&#39;application pour toutes les personnes impliquées dans le projet. Évitez de créer des structures de dossiers personnalisées pour les destinataires, les listes, les diffusions, etc. Utilisez plutôt les dossiers standard comme **Administration**, **Profils et cibles**, **Gestion de campagne**.
 
