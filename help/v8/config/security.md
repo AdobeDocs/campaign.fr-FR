@@ -6,7 +6,7 @@ role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 source-git-commit: 864f2179384d3e3cfcf310fcd04fe02240bfbefa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '674'
 ht-degree: 100%
 
@@ -134,7 +134,7 @@ La gestion des accès joue un rôle important dans le renforcement de la sécuri
 * Vérifiez que chaque opérateur dispose des droits d&#39;accès adéquats.
 * Évitez d&#39;utiliser l&#39;opérateur admin et d&#39;ajouter trop d&#39;opérateurs au groupe admin.
 
-![](../assets/do-not-localize/book.png) Apprenez-en davantage en consultant la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Apprenez-en davantage en consultant la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=fr#webapp-operator){target=&quot;_blank&quot;}
 
 ## Instructions de codage
 
@@ -146,4 +146,4 @@ Lorsque vous effectuez des tâches de développement dans Adobe Campaign (workf
 
 * **Ajout de captchas dans les applications web** : ajoutez des captchas dans vos pages d&#39;abonnement et landing pages publiques.
 
-![](../assets/do-not-localize/book.png) Apprenez-en davantage en consultant la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Apprenez-en davantage en consultant la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=fr#installing-campaign-classic){target=&quot;_blank&quot;}
