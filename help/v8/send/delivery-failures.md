@@ -6,9 +6,9 @@ role: User
 level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
 source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3061'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -54,9 +54,9 @@ Ces types d&#39;erreurs sont gérés comme suit :
 
 >[!NOTE]
 >
->En tant qu’utilisateur Cloud Services géré, la configuration de la boîte des mails rebonds est effectuée par Adobe.
+>En tant qu’utilisateur de Managed Cloud Services, la configuration de la boîte de réception de rebonds est réalisée par Adobe.
 
-## Qualification des mails rebonds {#bounce-mail-qualification}
+## Qualification des e-mails rebonds {#bounce-mail-qualification}
 
 <!--NO LONGER WITH MOMENTUM - Rules used by Campaign to qualify delivery failures are listed in the **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** node. It is non-exhaustive, and is regularly updated by Adobe Campaign and can also be managed by the user.
 
@@ -378,7 +378,7 @@ Le mécanisme de mise en quarantaine d&#39;Android V2 utilise le même processu
  <tbody> 
   <tr> 
    <td> <strong>Scénario</strong><br /> </td> 
-   <td> <strong>État</strong><br /> </td> 
+   <td> <strong>Status</strong><br /> </td> 
    <td> <strong>Message de l'erreur</strong><br /> </td> 
    <td> <strong>Type de l'échec</strong><br /> </td> 
    <td> <strong>Raison de l'échec</strong><br /> </td> 
@@ -593,7 +593,7 @@ Les spécificités du canal SMS sont énumérées ci-dessous.
  <tbody> 
   <tr> 
    <td> <strong>Scénario</strong><br /> </td> 
-   <td> <strong>État</strong><br /> </td> 
+   <td> <strong>Status</strong><br /> </td> 
    <td> <strong>Message de l'erreur</strong><br /> </td> 
    <td> <strong>Type de l'échec</strong><br /> </td> 
    <td> <strong>Raison de l'échec</strong><br /> </td> 
