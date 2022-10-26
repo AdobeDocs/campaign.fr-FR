@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 43483085-8aa6-47e6-89e7-9211e37beaa4
 source-git-commit: 7f9a95f3748b8322933137aa780897611de91678
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '343'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Dans Adobe Campaign, les **destinataires** sont les profils par défaut ciblés
 
 Pour renseigner des données de profil dans Adobe Campaign, vous pouvez :
 
-* [import de fichiers de données](../start/import.md) d’une source de données externe telle qu’un système CRM ou un fichier plat ;
+* [importez des fichiers de données](../start/import.md) provenant d’une source de données externe telle qu’un système CRM ou un fichier plat.
 * [créer des formulaires web](../dev/webapps.md) pour permettre aux clients de saisir leurs propres informations et de créer leur propre profil ;
 * [mapper à une base de données externe](../connect/fda.md) dans laquelle les profils sont stockés ;
 * saisir les profils manuellement dans la console cliente, comme ci-dessous :
@@ -35,4 +35,4 @@ Pour renseigner des données de profil dans Adobe Campaign, vous pouvez :
 
 <!--You can also select your message audience in an external file: recipients are stored not in the database, but in files. These are known as “external” deliveries. These contacts can be imported or not in Adobe Campaign. [Learn more](external-profiles.md).-->
 
-Une fois importé, vous pouvez créer des audiences pour envoyer vos messages. Découvrez comment créer des audiences [dans cette section](create-audiences.md).
+Une fois le fichier importé, vous pouvez créer des audiences pour envoyer vos messages. Découvrez comment créer des audiences [dans cette section](create-audiences.md).
