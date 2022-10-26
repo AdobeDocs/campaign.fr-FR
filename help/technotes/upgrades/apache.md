@@ -3,22 +3,22 @@ product: campaign
 title: Note technique - Adobe Campaign - Mise à jour de sécurité de la version Apache
 description: Adobe Campaign - Mise à jour de sécurité de la version Apache
 source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '478'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Adobe Campaign - Mise à jour de sécurité de la version Apache {#apache-update}
 
 >[!CAUTION]
->Cet article s’applique à : Clients Cloud Services gérés de Campaign Classic v7, Clients de Campaign v8 et Clients Campaign Standards.
+>Cet article s’applique aux : clients de Campaign Classic v7 Managed Services, Campaign v8 et Campaign Standard.
 
 Adobe Campaign fonctionne avec des outils tiers, qui bénéficient de mises à jour de compatibilité fréquentes. Ainsi, seules les versions prises en charge dotées des derniers correctifs et améliorations sont implémentées.
 
 Adobe Campaign comprend Apache Tomcat, qui agit comme point d’entrée dans le serveur d’applications via HTTP et est intégré au serveur web Apache. L’Apache Software Foundation a publié le serveur HTTP Apache 2.4.53. Cette version corrige des vulnérabilités qui peuvent permettre à une personne malveillante de prendre le contrôle d’un système affecté. En savoir plus sur la page [Annonce d’Apache 2.4.53](https://downloads.apache.org/httpd/Announcement2.4.html){target=&quot;_blank&quot;}.
 
-L’équipe d’Adobe Campaign procédera à la mise à niveau de sécurité de la version Apache d’ici le **15 juin 2022**. Celle-ci permettra d’atténuer cette vulnérabilité Apache et de rendre votre environnement d’instance plus sûr. Cette mise à niveau s’applique à tous les clients Cloud Services gérés de Campaign Classic v7, à Campaign v8 et aux clients Campaign Standards s’exécutant sur une version vulnérable du serveur HTTP Apache. Si vous êtes concerné, Adobe vous a déjà contacté pour vous informer de cette mise à niveau.
+L’équipe d’Adobe Campaign procédera à la mise à niveau de sécurité de la version Apache d’ici le **15 juin 2022**. Celle-ci permettra d’atténuer cette vulnérabilité Apache et de rendre votre environnement d’instance plus sûr. Cette mise à niveau s’applique à tous les clients de Campaign Classic v7 Managed Services, Campaign v8 et de Campaign Standard qui s’exécutent sur une version vulnérable du serveur HTTP Apache. Si vous êtes concerné, Adobe vous a déjà contacté pour vous informer de cette mise à niveau.
 
 Cette mise à niveau s’exécutera automatiquement en dehors de vos heures de bureau normales, afin que vous puissiez continuer à utiliser le service Campaign sans aucune interruption.
 
