@@ -1,26 +1,26 @@
 ---
-title: Partage d’audiences avec les solutions Adobe Experience Cloud
-description: Découvrez comment partager des audiences avec les solutions Adobe Experience Cloud
+title: Partager les audiences avec les solutions Adobe Experience Cloud
+description: Découvrez comment partager des audiences avec des solutions Adobe Experience Cloud
 feature: Subscriptions
 role: User
 level: Beginner
 hide: true
 hidefromtoc: true
 source-git-commit: ec46a6f41d640b11306a88d6a966f81f8c2e43e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
-# Partage d’audiences avec les solutions Adobe Experience Cloud{#shared-audiences}
+# Partager les audiences avec les solutions Adobe Experience Cloud{#shared-audiences}
 
 
-Option 1 : Sources et destinations AEP
+Option 1 : Sources et destinations AEP
 
-Option 2 : Adobe des personnes/AAM
+Option 2 : Adobe People/AAM
 
-Vous pouvez intégrer des **Adobe Campaign** avec **People core service** ou Adobe Audience Manager. Vous pourrez alors :
+Vous pouvez intégrer **Adobe Campaign** à **People Core Service** ou Adobe Audience Manager. Vous pourrez alors :
 
 * importer dans Adobe Campaign des audiences/segments provenant de différentes solutions d&#39;Adobe Experience Cloud. L&#39;import d&#39;audiences peut être réalisé depuis les listes dans Adobe Campaign.
 
@@ -37,8 +37,8 @@ L’intégration prend en charge deux types d’identifiants Adobe Experience 
    >
    >Si vous utilisez l’intégration de People Core Service et que vous souhaitez ajouter l’intégration d’Audience Manager, vous aurez besoin de l’aide d’un consultant Adobe Audience Manager. Ce dernier vous aidera à éviter de perdre toutes les synchronisations d’ID collectées lors de la transition vers l’utilisation de cette source de données d’ID déclarés dans un contexte Adobe Audience Manager.
 
-Pour plus d&#39;informations, consultez la section:
+Pour plus d&#39;informations, consultez la section :
 
-[https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=en](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=en)
+[https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=fr](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=fr)
 
-[https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=en](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=en)
+[https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=fr](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=fr)
