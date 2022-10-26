@@ -7,7 +7,7 @@ title: Documentation Campaign v8
 source-git-commit: f3090d1da1aaec1a50452bcfbf89e65e2669fc5c
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 89%
 # Documentation Adobe Campaign v8 {#campaign-v8}
 
 + [Documentation Campaign v8](campaign-home.md)
-+ Versions et mises à jour les plus récentes {#releases}
++ Versions et dernières mises à jour {#releases}
    + [Notes de mise à jour anticipées](start/e-release-notes.md)
    + [Notes de mise à jour](start/release-notes.md)
    + [Barrières de sécurité](start/ac-guardrails.md)
@@ -25,17 +25,17 @@ ht-degree: 89%
    + [Prise en main d’Adobe Campaign ](start/get-started.md)
    + [Fonctionnalités principales](start/whats-new.md)
    + [Composants et processus](start/ac-components.md)
-   + [Connexion à Campaign](start/connect.md)
+   + [Se connecter à Campaign](start/connect.md)
    + Interface utilisateur de Campaign {#ac-ui}
       + [Découverte de l&#39;interface de Campaign](start/campaign-ui.md)
       + [Personnalisation de l&#39;interface de Campaign](start/customize-ui.md)
       + [Gérer les dossiers et les vues](audiences/folders-and-views.md)
    + [De Classic v7 à v8](start/v7-to-v8.md)
-   + [FAQ](start/campaign-faq.md)
+   + [Questions fréquentes](start/campaign-faq.md)
 + Campaign Management {#campaigns}
    + [Prise en main des campagnes](start/campaigns.md)
-   + [Documentation sur l’orchestration des campagnes](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=fr)
-   + Envoi de messages{#send}
+   + [Documentation de l’orchestration des campagnes](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=fr)
+   + Envoyer des messages{#send}
       + [Prise en main des messages](start/create-message.md)
       + E-mails {#emails}
          + [Concevoir et valider des e-mails](send/email.md)
@@ -53,7 +53,7 @@ ht-degree: 89%
       + [Gérer les abonnements](start/subscriptions.md)
 + Gestion des profils et de l’audience {#audience}
    + [Prise en main des profils et des audiences](audiences/gs-audiences.md)
-   + [Utilisation des audiences](start/audiences.md)
+   + [Utiliser les audiences](start/audiences.md)
    + [Accès aux profils](audiences/view-profiles.md)
    + Ajout de profils {#add-profiles}
       + [Création manuelle de profils](audiences/create-profiles.md)
@@ -64,12 +64,12 @@ ht-degree: 89%
    + Création d&#39;audiences {#create-audiences}
       + [Créer une liste de contacts](audiences/create-audiences.md)
       + [Créer et gérer des filtres](audiences/create-filters.md)
-   + [Partage d’audiences avec les solutions Adobe](start/shared-audiences.md)
+   + [Partager les audiences avec les solutions Adobe](start/shared-audiences.md)
    + [Bonnes pratiques](audiences/audiences-best-practices.md)
 + Gestion de contenu {#content}
-   + [Conception de formulaires et d&#39;applications web](dev/webapps.md)
+   + [Concevoir des formulaires et des applications web](dev/webapps.md)
 + Gestion de la confidentialité et de la sécurité {#privacy}
-   + [Gestion des demandes d’accès à des informations personnelles](start/privacy.md)
+   + [Gérer les demandes d’accès à des informations personnelles](start/privacy.md)
    + [Directives de sécurité](config/security.md)
 + Gestion des décisions {#offers}
    + [Prise en main des interactions en temps réel](interaction/interaction.md)
@@ -94,12 +94,12 @@ ht-degree: 89%
    + [Mesures et rapports](start/reporting.md)
 + Data Management {#data}
    + [Prise en main des workflows](config/workflows.md)
-   + [Importation de données](start/import.md)
+   + [Importer des données](start/import.md)
    + [Documentation des workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=fr)
 + Intégrations {#connect}
-   + [Connexion de Campaign à d’autres solutions](connect/integration.md)
-   + [Campaign + Experience Platform](connect/ac-aep.md)
-   + [Campaign + Journey Optimizer](connect/ac-ajo.md)
+   + [Connecter des campagnes à d’autres solutions](connect/integration.md)
+   + [Campaign + Experience Platform](connect/ac-aep.md)
+   + [Campaign + Journey Optimizer](connect/ac-ajo.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)

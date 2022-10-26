@@ -8,7 +8,7 @@ exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
 source-git-commit: 1e84fdd61bb2591bf69f5efaf8f8fc01a0d3d93f
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ En tant qu’ancien utilisateur de [!DNL Campaign Classic] v7, votre manière h
 
 Adobe Campaign v8 est disponible en tant que **Managed Cloud Service**.
 
-Adobe Campaign Managed Cloud Services fournit une plateforme de Cloud Services gérés pour la conception d’expériences client cross-canal et fournit un environnement pour l’orchestration visuelle des campagnes, la gestion des interactions en temps réel et l’exécution cross-canal. En savoir plus sur Campaign Managed Cloud Services dans la section [page de description du produit](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target=&quot;_blank&quot;}.
+Adobe Campaign Managed Cloud Services offre une plateforme Managed Cloud Services qui permet de concevoir des expériences client cross-canal et propose un environnement pour l’orchestration visuelle de campagnes, la gestion d’interactions en temps réel et l’exécution cross-canal. En savoir plus sur Campaign Managed Cloud Services dans la section [page de description du produit](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target=&quot;_blank&quot;}.
 
 La nouvelle offre combine les services les plus performants avec une surveillance proactive et des alertes rapides, en se concentrant sur trois domaines :
 
@@ -66,7 +66,7 @@ Les utilisateurs de Campaign se connectent via leur Adobe ID uniquement. Le mê
 
 Utilisez le module Marketing Analytics pour analyser et mesurer les données, calculer les statistiques, simplifier et optimiser la création et le calcul de rapports. Créez également des rapports et des populations cibles : une fois identifiés, ils sont stockés dans des listes qui peuvent être utilisées dans Adobe Campaign (ciblage, segmentation, etc.).
 
-Avec [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), les rapports cubes Adobe Campaign sont optimisés et offrent de meilleures fonctionnalités d’échelle que Campaign Classic v7. Dans ce modèle de déploiement spécifique, les anciennes limitations sur les cubes ne s&#39;appliquent pas dans Campaign v8.
+Grâce au [déploiement Grands comptes (FFDA)](../architecture/enterprise-deployment.md), les rapports sur les cubes d’Adobe Campaign sont optimisés et offrent de meilleures fonctionnalités d’échelle que Campaign Classic v7. Dans ce modèle de déploiement spécifique, les anciennes limitations sur les cubes ne s’appliquent pas dans Campaign v8.
 
 ## Fonctionnalités non disponibles{#gs-unavailable-features}
 
@@ -80,7 +80,7 @@ Veuillez noter que certaines fonctionnalités ne sont pas disponibles dans cette
 
 ## Fonctionnalités non prises en charge{#gs-removed}
 
-Certaines fonctionnalités historiques de Campaign Classic v7 ne sont plus prises en charge avec Campaign v8, telles que :
+Campaign v8 ne prend plus en charge certaines fonctionnalités historiques de Campaign Classic v7 telles que :
 
 * Marketing pour réseaux sociaux    avec Facebook
 * Connecteur ACS (offre principale)

@@ -8,7 +8,7 @@ exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 source-git-commit: 6605a24cea536dbef5b1a7e909ff4d76b3d6c222
 workflow-type: tm+mt
 source-wordcount: '390'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ Vous pouvez connecter votre instance Campaign aux solutions Adobe Experience C
 
 Adobe Campaign s&#39;accompagne de plusieurs connecteurs qui vous permettent de communiquer avec des applications externes, de vous connecter à des moteurs de base de données, ainsi que de partager et de synchroniser des données.
 
-## Combiner vos solutions d’Adobe {#gs-ac-integration}
+## Combiner vos solutions Adobe {#gs-ac-integration}
 
-Combinez les solutions Adobe Experience Cloud pour moderniser votre mise en oeuvre.
+Combinez les solutions Adobe Experience Cloud pour moderniser votre implémentation.
 
 ![](../assets/do-not-localize/speech.png)En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour connecter Campaign aux services et solutions Adobe Experience Cloud.
 
@@ -48,22 +48,22 @@ Les connecteurs CRM permettent une intégration rapide et facile des données. A
 
 ![](../assets/do-not-localize/glass.png) Découvrez comment intégrer Campaign à Microsoft Dynamics 365 et Salesforce.com sur [cette page](crm.md).
 
-## Connexion de tiers à Federated Data Access{#gs-fda}
+## Connecter des tiers à Federated Data Access{#gs-fda}
 
 Utilisez le connecteur FDA (Federated Data Access) pour connecter Campaign à une ou plusieurs **bases de données externes** et traiter les informations stockées dans celles-ci sans affecter les données contenues dans la base de données cloud de Campaign.
 
 ![](../assets/do-not-localize/glass.png) Apprenez-en davantage en consultant [cette page](fda.md)
 
-## Utilisation des médias sociaux{#gs-social}
+## Utiliser les médias sociaux{#gs-social}
 
-Utilisez Adobe Campaign pour interagir avec les clients et les prospects via Twitter.
+Utilisez Adobe Campaign pour interagir avec les clients et les prospects sur Twitter.
 
 Vous pouvez ainsi :
 
 * Envoyer de messages directs à vos abonnés
 * Publier des tweets sur votre compte Twitter
-* Collecter les nouveaux contacts
+* Collecter de nouveaux contacts
 
-![](../assets/do-not-localize/glass.png) Découvrez comment configurer et utiliser l’intégration Twitter dans [cette page](../connect/ac-tw.md).
+![](../assets/do-not-localize/glass.png) Découvrez comment configurer et utiliser l’intégration Twitter sur [cette page](../connect/ac-tw.md).
 
 ![](../assets/do-not-localize/glass.png) Découvrez comment créer des publications Twitter et envoyer des messages directs à vos abonnés dans [cette page](../send/twitter.md).

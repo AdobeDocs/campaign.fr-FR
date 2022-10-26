@@ -8,13 +8,13 @@ exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
 workflow-type: tm+mt
 source-wordcount: '859'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Connexion à Adobe Campaign v8{#gs-ac-connect}
+# Se connecter à Adobe Campaign v8{#gs-ac-connect}
 
-La console cliente Campaign est un client riche qui vous permet de vous connecter à votre ou vos serveur(s) applicatif(s) Campaign. En savoir plus sur la console cliente Campaign [dans cette page](ac-components.md#presentation-layer).
+La console cliente Campaign est un client riche qui vous permet de vous connecter à votre ou vos serveur(s) applicatif(s) Campaign. Pour en savoir plus sur la console cliente de Campaign, reportez-vous à [cette page](ac-components.md#presentation-layer).
 
 Avant de commencer, vous devez :
 
