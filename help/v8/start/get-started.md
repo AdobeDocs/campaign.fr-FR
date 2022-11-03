@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 100%
@@ -72,7 +72,7 @@ Outre des modèles de reporting d&#39;usine puissants, Adobe Campaign vous perme
 La fonctionnalité des rapports de l&#39;opération facilite la création de rapports dynamiques. Vous pouvez utiliser des variables par glisser-déposer afin de personnaliser vos rapports et d&#39;analyser la réussite de vos campagnes. En fonction de la complexité de vos requêtes et de vos calculs, les données peuvent être agrégées dans une vue de liste et sont accessibles dans un format qui facilite la génération de rapports d&#39;analytique marketing.
 
 
-![](../assets/do-not-localize/glass.png) En savoir plus sur les fonctionnalités de reporting et de tracking dans [cette section](reporting.md).
+![](../assets/do-not-localize/glass.png) En savoir plus sur les fonctionnalités de reporting et de tracking dans [cette section](../reporting/gs-reporting.md).
 
 ## Intégrations avec Adobe Experience Cloud {#adobe-experience-cloud-integrations}
 

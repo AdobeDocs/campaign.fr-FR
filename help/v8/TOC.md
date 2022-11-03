@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Présentation de Campaign
 title: Documentation Campaign v8
-source-git-commit: f3090d1da1aaec1a50452bcfbf89e65e2669fc5c
+source-git-commit: 863793e11b29f8f522e47d5158b64eacc0d2acb5
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 100%
+source-wordcount: '471'
+ht-degree: 94%
 
 ---
 
@@ -91,7 +91,19 @@ ht-degree: 100%
    + [Cas dʼutilisation](interaction/interaction-use-cases.md)
 + Rapports et analyses {#analytics}
    + [Suivi et surveillance](start/tracking.md)
-   + [Mesures et rapports](start/reporting.md)
+   + Utilisation des rapports{#reports}
+      + [Prise en main des rapports](reporting/gs-reporting.md)
+      + Créer des cubes{#cubes}
+         + [Prise en main des cubes](reporting/gs-cubes.md)
+         + [Créer un cube](reporting/cube-indicators.md)
+         + [Utiliser des cubes pour créer des rapports](reporting/cube-tables.md)
+         + [Bonnes pratiques relatives aux cubes](reporting/cube-best-practices.md)
+      + Rapports natifs{#ac-reports}
+         + [Liste des rapports natifs](reporting/built-in-reports.md)
+         + [Rapports globaux](reporting/global-reports.md)
+         + [Rapports sur les diffusions](reporting/delivery-reports.md)
+         + [Calcul des mesures intégrées](reporting/metrics-calculation.md)
+      + [Rapports personnalisés](reporting/custom-reports.md)
 + Data Management {#data}
    + [Prise en main des workflows](config/workflows.md)
    + [Importer des données](start/import.md)

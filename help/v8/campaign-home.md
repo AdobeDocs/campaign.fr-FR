@@ -3,7 +3,7 @@ keywords: Campaign Classic;accueil;thèmes populaires
 description: Centre d'aide de Campaign v8
 title: Documentation du produit Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 07c73a6ab22962472bde431948386d0142d6732d
+source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 100%
@@ -69,7 +69,7 @@ ht-degree: 100%
 
 * [Barrières de sécurité et limitations](start/ac-guardrails.md)
 * [Architecture](architecture/architecture.md)
-* [Mesure et suivi](start/reporting.md)
+* [Mesure et suivi](reporting/gs-reporting.md)
 * [Connexion à d&#39;autres solutions](connect/integration.md)
 * [FAQ Campaign v8](start/campaign-faq.md)
 * [Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target=&quot;_blank&quot;}

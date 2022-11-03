@@ -4,9 +4,9 @@ title: Modèles de campagne marketing
 description: Modèles de campagne marketing
 feature: Campaigns, Templates
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 60db4c2e8cd280845ddd0176bd10dc1b7edbb767
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1030'
 ht-degree: 100%
 
 ---
@@ -166,10 +166,9 @@ Lorsque vous créez un modèle de campagne, vous devez indiquer les informations
 
 * Saisissez le **libellé** du modèle : le libellé est obligatoire et constitue le libellé par défaut pour toutes les campagnes basées sur ce modèle.
 * Sélectionnez la **nature** de la campagne dans la liste déroulante. Les valeurs proposées dans cette liste correspondent à celles enregistrées dans l&#39;énumération **[!UICONTROL natureOp]**.
-   <!--
-  >[!NOTE]
-  >
-  >For more information on enumerations, refer to the [Getting Started](../../platform/using/managing-enumerations.md) section.-->
+
+Découvrez comment accéder à et configurer vos énumérations dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=fr){target=&quot;_blank&quot;}.
+
 
 * Sélectionnez le **type de campagne** : unique, récurrente ou périodique. Par défaut, les modèles de campagne s&#39;appliquent aux campagnes uniques. Les opérations périodiques et récurrentes sont décrites dans [cette section](recurring-periodic-campaigns.md).
 * Indiquez la durée de l&#39;opération, c&#39;est-à-dire la période sur laquelle s&#39;étalera l&#39;opération. Lors de la création d&#39;une opération basée sur ce modèle, les dates de début et de fin de l&#39;opération seront alors automatiquement renseignées.

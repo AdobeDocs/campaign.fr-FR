@@ -5,9 +5,9 @@ feature: Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: f3de901f-519f-42ae-846c-f20c7cb560df
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
-workflow-type: ht
-source-wordcount: '898'
+source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
+workflow-type: tm+mt
+source-wordcount: '880'
 ht-degree: 100%
 
 ---
@@ -109,7 +109,7 @@ Ce rapport combine les indicateurs clés pour le tracking du comportement des de
 
 Les différents tableaux contiennent la liste des indicateurs utilisés dans les différents rapports et leur formule de calcul en fonction du type de diffusion.
 
-[Apprenez-en davantage dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/indicator-calculation.html?lang=fr#reporting){target=&quot;_blank&quot;}
+[En savoir plus](../reporting/metrics-calculation.md)
 
 ## Instructions de surveillance
 
