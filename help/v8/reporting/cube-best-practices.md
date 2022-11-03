@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Mise en oeuvre et bonnes pratiques avec les cubes
+title: Personnaliser vos cubes
 description: Découvrez les bonnes pratiques lors de l’implémentation de cubes dans Adobe Campaign
 feature: Reporting
-source-git-commit: 80e5efc5998c67ce576e9f8208fab9543fc70d29
+source-git-commit: b9928cc3bda0c0a1a0d5a43b2604615d7472b419
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1540'
 ht-degree: 90%
 
 ---
 
-# Mise en oeuvre et bonnes pratiques avec les cubes{#cube-best-practices}
+# Personnaliser vos cubes{#cube-custom}
 
 ## Mise en classe des données {#data-binning}
 
