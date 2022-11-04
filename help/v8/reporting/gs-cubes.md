@@ -4,10 +4,10 @@ description: Découvrez comment créer des cubes
 feature: Reporting
 role: Data Engineer
 level: Beginner
-source-git-commit: cc7195e90c38489f8e3946d6abd190effd41941a
+source-git-commit: bd39a18178edec2730707f0323a19c9d1c80cd76
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 80%
+source-wordcount: '545'
+ht-degree: 75%
 
 ---
 
@@ -18,6 +18,13 @@ Adobe Campaign s’accompagne d’un outil d’exploration des données intuitif
 Utilisez les fonctionnalités d’analyse marketing pour analyser et mesurer les données, calculer les statistiques, simplifier et optimiser la création et le calcul de rapports. Vous pouvez créer des rapports, créer des populations cibles et les stocker dans des listes qui pourront être utilisées dans Adobe Campaign pour des tâches de ciblage ou de segmentation.
 
 Vous pouvez ainsi d&#39;étendre les capacités d&#39;exploration et d&#39;analyse des données de la base, tout en simplifiant le paramétrage des rapports et tableaux pour les utilisateurs finaux : ils n&#39;ont plus qu&#39;à sélectionner un cube existant, entièrement paramétré, lors de la création de leur rapport ou tableau pour en exploiter les calculs, mesures et statistiques.
+
+Les cubes sont utilisés pour générer certains rapports intégrés, notamment [rapports de diffusion](delivery-reports.md) (tracking des diffusions, clics, ouvertures, etc.).
+
+>[!CAUTION]
+>
+>Dans un [[!DNL Snowflake] Déploiement FDA (par défaut)](../architecture/fda-deployment.md), les rapports basés sur des cubes ne peuvent être utilisés que pour des volumes de données inférieurs à 5 millions de lignes de faits.
+
 
 Une fois créés et paramétrés, les cubes sont utilisés dans les boîtes de requête des rapports et les applications Web. Ils peuvent être exploités et manipulés au sein de tableaux croisés dynamiques.
 
