@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 1e84fdd61bb2591bf69f5efaf8f8fc01a0d3d93f
+source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 100%
+source-wordcount: '643'
+ht-degree: 96%
 
 ---
 
@@ -66,7 +66,7 @@ Les utilisateurs de Campaign se connectent via leur Adobe ID uniquement. Le mê
 
 Utilisez le module Marketing Analytics pour analyser et mesurer les données, calculer les statistiques, simplifier et optimiser la création et le calcul de rapports. Créez également des rapports et des populations cibles : une fois identifiés, ils sont stockés dans des listes qui peuvent être utilisées dans Adobe Campaign (ciblage, segmentation, etc.).
 
-Grâce au [déploiement Grands comptes (FFDA)](../architecture/enterprise-deployment.md), les rapports sur les cubes d’Adobe Campaign sont optimisés et offrent de meilleures fonctionnalités d’échelle que Campaign Classic v7. Dans ce modèle de déploiement spécifique, les anciennes limitations sur les cubes ne s’appliquent pas dans Campaign v8.
+Avec Adobe Campaign v8, les rapports cubiques sont optimisés et offrent de meilleures fonctionnalités d’échelle que Campaign Classic v7. Dans ce modèle de déploiement spécifique, les anciennes limitations sur les cubes ne s’appliquent pas dans Campaign v8. En savoir plus sur les cubes dans [cette section](../../v8/reporting/gs-cubes.md).
 
 ## Fonctionnalités non disponibles{#gs-unavailable-features}
 

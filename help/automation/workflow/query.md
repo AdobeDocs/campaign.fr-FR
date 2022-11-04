@@ -3,9 +3,9 @@ product: campaign
 title: Requête
 description: En savoir plus sur l’activité de workflow de requête
 feature: Workflows, Targeting Activity, Query Editor
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1628'
 ht-degree: 100%
 
 ---
@@ -176,12 +176,6 @@ La section ci-dessous présente les bonnes pratiques pour optimiser les requête
    Il existe une erreur courante : `iBlacklist='3'` où `iBlacklist` est un champ numérique et `3` correspond à une valeur de texte.
 
    Assurez-vous de connaître le plan d’exécution de votre requête. Évitez les analyses de table complètes, en particulier pour les requêtes en temps réel ou quasi temps réel qui s’exécutent toutes les minutes.
-
-   Pour plus d’informations à ce sujet, en fonction de la version de Campaign, reportez-vous aux sections suivantes :
-
-   !
-
-   ![](assets/do-not-localize/v8.png)[  Documentation Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=fr)
 
 ### Fonctions {#functions}
 

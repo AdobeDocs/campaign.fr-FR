@@ -3,16 +3,14 @@ product: campaign
 title: Gestion des données SQL
 description: En savoir plus sur l’activité de workflow de gestion des données SQL
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 100%
+source-wordcount: '393'
+ht-degree: 97%
 
 ---
 
 # Gestion des données SQL{#sql-data-management}
-
-
 
 L&#39;activité **Gestion des données SQL** permet d&#39;écrire vos requêtes SQL pour créer et remplir les tables de travail.
 
@@ -20,16 +18,9 @@ L&#39;activité **Gestion des données SQL** permet d&#39;écrire vos requêtes 
 
 Avant de configurer l&#39;activité, vérifiez que les prérequis suivants sont remplis :
 
-* L’activité est disponible uniquement pour les sources de données distantes. Le ** .
-
-   Pour plus d’informations à ce sujet, en fonction de la version de Campaign, reportez-vous aux sections suivantes :
-
-   !
-
-   ![](assets/do-not-localize/v8.png)[  Documentation Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=fr)
-
+* L’activité est disponible uniquement pour les sources de données distantes.
 * Le schéma sortant doit exister dans la base de données et être lié à une base de données FDA.
-* L’opérateur qui exécute le workflow doit disposer du ** .
+
 
 ## Configuration de l&#39;activité Gestion des données SQL {#configuring-the-sql-data-management-activity}
 
