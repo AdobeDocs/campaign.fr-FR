@@ -4,10 +4,10 @@ description: Découvrez comment créer des cubes
 feature: Reporting
 role: Data Engineer
 level: Beginner
-source-git-commit: bd39a18178edec2730707f0323a19c9d1c80cd76
+source-git-commit: bead34ec59f6f3dca0fbec8460d58ec7da2ed76f
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 75%
+source-wordcount: '525'
+ht-degree: 77%
 
 ---
 
@@ -20,11 +20,6 @@ Utilisez les fonctionnalités d’analyse marketing pour analyser et mesurer les
 Vous pouvez ainsi d&#39;étendre les capacités d&#39;exploration et d&#39;analyse des données de la base, tout en simplifiant le paramétrage des rapports et tableaux pour les utilisateurs finaux : ils n&#39;ont plus qu&#39;à sélectionner un cube existant, entièrement paramétré, lors de la création de leur rapport ou tableau pour en exploiter les calculs, mesures et statistiques.
 
 Les cubes sont utilisés pour générer certains rapports intégrés, notamment [rapports de diffusion](delivery-reports.md) (tracking des diffusions, clics, ouvertures, etc.).
-
->[!CAUTION]
->
->Dans un [[!DNL Snowflake] Déploiement FDA (par défaut)](../architecture/fda-deployment.md), les rapports basés sur des cubes ne peuvent être utilisés que pour des volumes de données inférieurs à 5 millions de lignes de faits.
-
 
 Une fois créés et paramétrés, les cubes sont utilisés dans les boîtes de requête des rapports et les applications Web. Ils peuvent être exploités et manipulés au sein de tableaux croisés dynamiques.
 
