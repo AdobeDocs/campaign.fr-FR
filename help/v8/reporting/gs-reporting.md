@@ -4,7 +4,7 @@ description: Mesurer le succès de vos campagnes et analyser le comportement des
 feature: Reporting
 role: Data Engineer
 level: Beginner
-source-git-commit: d8dd91453c035703b4ffd5c8b9816f27392874d6
+source-git-commit: 8fb1f57b82ce3b99dabf584a6434d9111dc8b5af
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 77%
@@ -15,7 +15,6 @@ ht-degree: 77%
 # Prise en main du reporting{#gs-ac-reports}
 
 Adobe Campaign propose un ensemble d&#39;outils de reporting répertoriés dans cette page.
-
 
 * **Cubes**
 
