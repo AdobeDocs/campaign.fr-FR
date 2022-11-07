@@ -3,7 +3,7 @@ product: campaign
 title: Envoi d’un rapport à une liste
 description: Découvrez comment envoyer un rapport à une liste à l’aide d’un workflow
 feature: Workflows
-source-git-commit: e211c0f01a4813ad29f47652fffac2b44bc0f867
+source-git-commit: 4c3caa8e31c2076d32a03a8778a28edce50cde63
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 35%
@@ -67,7 +67,7 @@ Pour créer le modèle de diffusion, procédez comme suit :
 
    * Sélectionnez la **[!UICONTROL Avancé]** onglet et vérification **[!UICONTROL Script le nom du fichier affiché dans les courriers envoyés]**. Dans la zone de texte, saisissez le nom de la pièce jointe dans la diffusion finale.
 
-      ![](assets/use_case_report_6bis.png)
+      ![](assets/use_case_report_6b.png)
 
 ## Étape 3 : Créer le workflow {#step-3--creating-the-workflow}
 
