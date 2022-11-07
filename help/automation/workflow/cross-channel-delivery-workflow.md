@@ -4,16 +4,14 @@ title: Workflow de diffusion cross-canal
 description: En savoir plus sur les workflows de diffusion cross-canal
 feature: Workflows, Channels Activity
 exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 5b4d569a6e96c93828f63fb8376eb81301829854
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 100%
+source-wordcount: '713'
+ht-degree: 97%
 
 ---
 
 # Workflow de diffusion cross-canal{#cross-channel-delivery-workflow}
-
-
 
 Ce cas pratique présente un exemple impliquant un workflow de diffusion cross-canal. Le concept général des diffusions cross-canal est présenté dans [cette section](cross-channel-deliveries.md).
 
@@ -31,7 +29,7 @@ Les principales étapes d&#39;implémentation pour ce cas pratique sont les suiv
 
 ![](assets/wkf_cross-channel_7.png)
 
-## Etape 1 : ciblage de l&#39;audience {#step-1--targeting-the-audience}
+## Étape 1 : Création de l’audience {#step-1--build-the-audience}
 
 Pour définir votre cible, créez une requête afin d&#39;identifier les destinataires.
 
@@ -44,9 +42,9 @@ Pour définir votre cible, créez une requête afin d&#39;identifier les destina
 
 1. Enregistrez vos modifications.
 
-## Etape 2 : création d&#39;un email comprenant une offre {#step-2--creating-an-email-including-an-offer}
+## Étape 2 : Créer un email comprenant une offre {#step-2--create-an-email-including-an-offer}
 
-1. Créez un ** .
+1. Créez une diffusion email.
 1. Concevez le message et insérez un lien comprenant une offre dans le contenu.
 
    ![](assets/wkf_cross-channel_1.png)
@@ -65,7 +63,7 @@ Pour définir votre cible, créez une requête afin d&#39;identifier les destina
 
    ![](assets/wkf_cross-channel_4.png)
 
-## Etape 3 : segmentation de l&#39;audience obtenue {#step-3--segmenting-the-resulting-audience}
+## Étape 3 : Segmenter l’audience obtenue {#step-3--segment-the-resulting-audience}
 
 Une fois votre cible identifiée et votre première diffusion créée, vous devez segmenter la cible en différentes populations à l&#39;aide de conditions de filtrage.
 
@@ -101,7 +99,7 @@ Une fois votre cible identifiée et votre première diffusion créée, vous deve
 
 1. Cliquez sur **[!UICONTROL Terminer]** pour enregistrer vos modifications.
 
-## Etape 4 : finalisation du workflow {#step-4--finalizing-the-workflow}
+## Étape 4 : Finalisation du workflow {#step-4--finalize-the-workflow}
 
 1. Ajoutez les activités adéquates à votre workflow après les trois sous-ensembles issus de l&#39;activité **[!UICONTROL Partage]** :
 

@@ -4,16 +4,14 @@ title: Charger le contenu de la diffusion
 description: Charger le contenu de la diffusion
 feature: Workflows
 exl-id: 08febcbc-1703-4d36-89e1-32c903618084
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 9dfb1acd97e529a8b60119154b3728c883dd9c97
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '332'
 ht-degree: 100%
 
 ---
 
 # Charger le contenu de la diffusion{#loading-delivery-content}
-
-
 
 Si le contenu de votre diffusion figure dans un fichier HTML qui se trouve sur un serveur Amazon S3, FTP ou SFTP, vous pouvez facilement charger ce contenu dans les diffusions Adobe Campaign.
 
@@ -52,6 +50,3 @@ Pour cela :
 
 1. Enregistrez le workflow et exécutez-le. Une diffusion avec le contenu chargé est créé dans **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Diffusions]**.
 
->[!NOTE]
->
->Les bonnes pratiques et la résolution des problèmes liées à l&#39;utilisation du serveur SFTP sont présentées dans cette page.
