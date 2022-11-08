@@ -2,10 +2,10 @@
 audience: user
 user-guide-title: Guide d'automatisation des campagnes
 user-guide-description: Guide d'automatisation des campagnes
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -145,10 +145,10 @@ ht-degree: 100%
    + [Prestataires, stocks et budgets](campaigns/providers--stocks-and-budgets.md)
 + Optimisation des campagnes (module complémentaire){#campaign-optimization}
    + [Prise en main des typologies de campagne](campaign-opt/campaign-typologies.md)
+   + [Règles de filtrage](campaign-opt/filtering-rules.md)
+   + [Règles de contrôle](campaign-opt/control-rules.md)
    + [Règles de pression](campaign-opt/pressure-rules.md)
    + [Règles de cohérence](campaign-opt/consistency-rules.md)
-   + [Règles de contrôle](campaign-opt/control-rules.md)
-   + [Règles de filtrage](campaign-opt/filtering-rules.md)
    + [Application de règles](campaign-opt/apply-rules.md)
    + [Simulation de campagnes](campaign-opt/campaign-simulations.md)
 + Marketing distribué (module complémentaire) {#distributed-marketing}
