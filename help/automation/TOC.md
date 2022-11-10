@@ -2,10 +2,10 @@
 audience: user
 user-guide-title: Guide d'automatisation des campagnes
 user-guide-description: Guide d'automatisation des campagnes
-source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
+source-git-commit: 75b65efce6b37e3d948f6af4a89ea3b0a5ac1a86
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -151,8 +151,8 @@ ht-degree: 98%
    + [Règles de cohérence](campaign-opt/consistency-rules.md)
    + [Application de règles](campaign-opt/apply-rules.md)
    + [Simulation de campagnes](campaign-opt/campaign-simulations.md)
-+ Gestion des ressources marketing{#mrm}
-   + [Prise en main de la gestion des ressources marketing (MRM)](mrm/about-marketing-resource-management.md)
++ Gestion des ressources marketing (module complémentaire){#mrm}
+   + [Prise en main de la gestion des ressources marketing](mrm/about-marketing-resource-management.md)
    + [Création et gestion de tâches](mrm/creating-and-managing-tasks.md)
    + [Coûts de contrôle](mrm/controlling-costs.md)
    + [Gestion des ressources marketing](mrm/managing-marketing-resources.md)
