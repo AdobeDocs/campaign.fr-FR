@@ -2,10 +2,11 @@
 product: campaign
 title: Créer et gérer les tâches
 description: Créer et gérer les tâches
-source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
+exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
+source-git-commit: 399c81276d29622a2161c8c90395df1a38954763
 workflow-type: tm+mt
-source-wordcount: '3872'
-ht-degree: 99%
+source-wordcount: '3910'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +22,7 @@ Toutes les tâches sont regroupées dans une liste accessible à partir de l&#39
 
 Elles peuvent être affichées dans le planning du programme auquel elles appartiennent.
 
-![](assets/d_ncs_user_tasks_in_planning.png)
+![](assets/campaign-calendar.png)
 
 ## Accéder aux tâches {#accessing-tasks}
 
@@ -29,113 +30,123 @@ Elles peuvent être affichées dans le planning du programme auquel elles appart
 
 Les tâches sont affichées dans la liste des tâches accessible à partir de l&#39;onglet **[!UICONTROL Campagnes]**.
 
-![](assets/s_ncs_user_task_edit_view.png)
+![](assets/campaign-task-dashboard.png)
 
-Vous pouvez y visualiser toutes les tâches de l&#39;opérateur connecté.
+Vous pouvez visualiser toutes les tâches de l&#39;opérateur actuel.
 
 Pour plus d&#39;informations, voir les sections [Etat d&#39;exécution d&#39;une tâche](#execution-status-of-a-task) et [Etat d&#39;avancement d&#39;une tâche](#progress-status-of-a-task).
 
 ### Filtrer les tâches {#filtering-tasks}
 
-Lorsque vous affichez cette vue, elle est automatiquement filtrée afin de n&#39;afficher **[!UICONTROL que les tâches de l&#39;opérateur]**. Vous pouvez toutefois filtrer les tâches à partir des champs proposés dans la section supérieure de la fenêtre.
-
-![](assets/s_ncs_user_task_filter_from_view.png)
+Lorsque vous affichez cette vue, elle est automatiquement filtrée afin de n’afficher que le **tâches actuelles de l&#39;opérateur**. Vous pouvez également filtrer les tâches à partir des champs de la section supérieure de la fenêtre.
 
 ### Modifier les tâches {#editing-tasks}
 
 Cliquez sur une tâche pour la modifier.
 
-![](assets/s_ncs_user_task_edit_from_view.png)
+![](assets/edit-a-task.png)
 
 ## Créer une nouvelle tâche {#creating-a-new-task}
 
-Pour créer une tâche, cliquez sur le lien **[!UICONTROL Tâches]** de l&#39;onglet **[!UICONTROL Campagnes]** et choisissez **[!UICONTROL Créer]**.
+Pour créer une tâche, procédez comme suit :
 
-![](assets/s_ncs_user_task_create_new.png)
+1. Accédez au **[!UICONTROL Tâches]** dans le **[!UICONTROL Campagnes]** et cliquez sur **[!UICONTROL Créer]**.
 
-Saisissez au minimum le nom de la tâche et sélectionnez l&#39;opération à laquelle elle est rattachée. Vous devez également indiquer les dates de début et de fin. Ces trois informations sont obligatoires.
+   ![](assets/create-a-task-from-dashboard.png)
 
-Cliquez sur **[!UICONTROL Enregistrer]** pour créer la tâche.
+1. Saisissez le nom de la tâche et sélectionnez l&#39;opération à laquelle elle est rattachée.
+1. Définissez les dates de début et de fin.
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour créer la tâche.
 
-![](assets/s_ncs_user_task_create_simple.png)
+   ![](assets/new-task-edit.png)
 
 Vous pouvez également créer une tâche à partir du tableau de bord d&#39;une opération : dans ce cas, elle est automatiquement associée à l&#39;opération à partir de laquelle elle a été créée.
 
-![](assets/s_ncs_user_task_create_new_from_op.png)
+![](assets/add-a-task-in-a-campaign.png)
 
-Une fois créée, la tâche est ajoutée dans le calendrier des campagnes et dans la liste des tâches. Pour éditer une tâche, sélectionnez-la dans le planning, ou cliquez sur son nom dans la vue d&#39;ensemble des tâches, et cliquez sur le lien **[!UICONTROL Ouvrir]**.
+Une fois créée, la tâche est ajoutée au planning de l&#39;opération, au tableau de bord de l&#39;opération et à la liste des tâches. Pour éditer une tâche, cliquez sur son nom dans la liste des tâches ou sélectionnez-la dans le planning ou le tableau de bord de l&#39;opération, puis cliquez sur le bouton **[!UICONTROL Ouvrir]**.
 
-![](assets/s_ncs_user_task_edit_simple.png)
+Une fois créée, vous pouvez paramétrer la tâche en définissant :
 
-Pour la paramétrer, vous devez indiquer :
+* Le responsable et les participants. [En savoir plus](#manager-and-participants)
+* Le planning de création. [En savoir plus](#execution-schedule)
+* Les coûts engagés. [En savoir plus](#expenses-and-revenues)
 
-* Le responsable et les intervenants : voir la section [Responsable et intervenants](#manager-and-participants).
-* Le planning de création : voir la section [Planning d&#39;exécution](#execution-schedule).
-* Les coûts engagés : voir la section [Dépenses et revenus](#expenses-and-revenues).
+Vous pouvez également ajouter [validants](#reviewers) et [documents de référence](#documents-referenced).
 
-Il est également possible d&#39;ajouter des validants (voir la section [Validants](#reviewers)) et des documents référencés (voir la section [Documents référencés](#documents-referenced)).
-
-Le cycle de vie d&#39;une tâche est présenté dans la section [Cycle de vie](#life-cycle).
+Le cycle de vie d&#39;une tâche est présenté dans la section [cette section](#life-cycle).
 
 ### Responsable et intervenants {#manager-and-participants}
 
-Le responsable de la tâche est le seul opérateur habilité à clore la tâche.
+Par défaut, la tâche est assignée à l&#39;opérateur qui l&#39;a créée. Cet opérateur est averti lorsqu’une action est requise pour cette tâche.
 
-Par défaut, lorsqu&#39;un opérateur Adobe Campaign crée une tâche, elle lui est automatiquement assignée. Vous pouvez toutefois sélectionner un autre opérateur dans le champ **[!UICONTROL Affecté à]**.
+Vous pouvez sélectionner un autre opérateur dans la **[!UICONTROL Affecté à]** liste déroulante.
 
-![](assets/s_ncs_user_task_edit_simple_general_tab.png)
+![](assets/task-assigned-to.png)
 
 >[!NOTE]
 >
 >La gestion des opérateurs est présentée dans la section [cette section](../../v8/start/permissions.md).
+>
+>Seul l&#39;opérateur en charge d&#39;une tâche est autorisé à la clore.
 
-En plus du responsable, vous pouvez indiquer les opérateurs impliqués dans la réalisation de la tâche. Ces opérateurs ne sont pas habilités à clore la tâche. Ils peuvent uniquement valider la partie de la tâche qui leur est assignée.
+Vous pouvez indiquer davantage d&#39;opérateurs impliqués dans l&#39;exécution de la tâche. Ces opérateurs ne sont pas autorisés à fermer la tâche : il ne peut valider que la tâche qui lui est assignée.
 
-Ils sont sélectionnés à partir de l&#39;icône **[!UICONTROL Ressources]** située dans la barre d&#39;outils de la tâche. Cliquez sur **[!UICONTROL Ajouter]** et sélectionnez les opérateurs concernés.
+Pour ajouter des opérateurs de tâches, procédez comme suit :
 
-![](assets/s_ncs_user_task_add_resources.png)
+1. Cliquez sur le bouton **[!UICONTROL Ressources]** dans la barre d’outils de la tâche.
 
-Cliquez sur **[!UICONTROL Ok]** puis renseignez le taux d&#39;utilisation : il représente la charge affectée à l&#39;opérateur pour la durée de réalisation de la tâche. Ce taux est indicatif et exprimé en pourcentage.
+   ![](assets/add-task-resources.png)
 
-Par exemple, pour une tâche dont le planning de réalisation est fixé à 10 jours, un opérateur pour lequel le taux d’utilisation est de 50 % sera mobilisé pour la moitié de son temps de travail sur la réalisation de cette tâche, pendant les 10 jours prévus.
+1. Cliquez sur **[!UICONTROL Ajouter]** et sélectionnez les opérateurs concernés.
+1. Saisissez le taux d’utilisation : représente la charge de travail affectée à l&#39;opérateur pendant la durée d&#39;exécution de la tâche. Ce taux est indicatif et exprimé en pourcentage.
 
-Il est également possible de renseigner, pour chaque opérateur, une charge planifiée ainsi qu&#39;une charge réalisée. Ces durées sont également indicatives.
+   ![](assets/define-operator-task-workload.png)
 
-Vous avez la possibilité de définir un rappel qui sera automatiquement envoyé aux opérateurs impliqués dans la réalisation de la tâche, avant la date de fin de la tâche.
+   Par exemple, pour une tâche dont le planning de réalisation est fixé à 10 jours, un opérateur pour lequel le taux d’utilisation est de 50 % sera mobilisé pour la moitié de son temps de travail sur la réalisation de cette tâche, pendant les 10 jours prévus.
 
-Vous pouvez visualiser le profil de l&#39;opérateur Adobe Campaign à partir de l&#39;icône **[!UICONTROL Editer le lien]**.
+   Il est également possible de renseigner, pour chaque opérateur, une charge planifiée ainsi qu&#39;une charge réalisée. Ces durées sont également indicatives.
 
-![](assets/s_ncs_user_task_edit_resource_profile.png)
+1. Vous pouvez configurer un rappel à partir du **[!UICONTROL Ajouter un rappel...]** lien. Une notification électronique sera envoyée à tous les opérateurs impliqués dans la tâche avant sa date de fin.
+
+   ![](assets/task-op-add-a-reminder.png)
+
+1. Vous pouvez également envoyer une notification avant le début de la tâche. Pour configurer ce paramètre, sélectionnez la date dans le **[!UICONTROL Notification initiale]** champ .
+1. Lorsque la date de fin est atteinte et que la tâche n’est pas fermée, une notification peut être envoyée à la personne désignée ou au groupe de personnes désignées sélectionné dans la variable **[!UICONTROL Cessionnaire]** Liste déroulante.
+
 
 Le tableau de bord de l&#39;opérateur permet de consulter sa charge de travail, c&#39;est-à-dire les autres tâches.
 
-![](assets/s_ncs_user_task_edit_resource_planning.png)
+![](assets/operator-dashboard.png)
 
-### Opérateurs validants {#reviewers}
+### Validation des tâches {#reviewers}
 
-En plus des intervenants, vous pouvez également définir des opérateurs qui valideront la tâche une fois qu&#39;elle aura été close par son responsable. Pour cela, cliquez sur l&#39;option **[!UICONTROL Activer la validation de la tâche]**, dans la partie inférieure gauche de la fenêtre des **[!UICONTROL Ressources]**. Il peut s&#39;agir d&#39;un opérateur individuel, d&#39;un groupe d&#39;opérateurs ou d&#39;une liste d&#39;opérateurs.
+En plus des participants, vous pouvez définir des opérateurs qui examineront la tâche une fois qu’elle aura été close.
 
-![](assets/s_ncs_user_task_edit_resource_validation.png)
+Pour ce faire, cliquez sur le bouton **[!UICONTROL Activer la validation des tâches]** dans la section inférieure de l’objet **[!UICONTROL Ressources]** fenêtre. Il peut s&#39;agir d&#39;un opérateur individuel, d&#39;un groupe d&#39;opérateurs ou d&#39;une liste d&#39;opérateurs.
 
 Pour désigner une liste d&#39;opérateurs, cliquez sur le lien **[!UICONTROL Editer...]** situé à droite du champ désignant le premier validant et ajoutez autant d&#39;opérateurs additionnels que nécessaire, comme dans l&#39;exemple ci-dessous :
 
-![](assets/s_ncs_user_task_edit_resource_operators.png)
+![](assets/enable-task-approval.png)
 
-Vous pouvez définir un planning de validation pour la tâche, dans la section inférieure de la fenêtre d&#39;édition des validants. Par défaut, les validants ont trois jours à partir de la date de soumission pour valider la tâche. Il est possible de définir un rappel qui sera automatiquement envoyé aux opérateurs concernés avant l&#39;expiration du délai de validation.
+Vous pouvez définir un planning de validation pour la tâche dans la section inférieure de la fenêtre de paramétrage. Par défaut, les opérateurs validants disposent de trois jours à partir de la date d&#39;envoi pour valider la tâche. Vous pouvez également ajouter un rappel qui sera automatiquement envoyé aux opérateurs concernés avant la date limite de validation.
 
-![](assets/s_ncs_user_edit_op_valid_calendar.png)
-
-Le responsable de la tâche peut se charger de la validation et ce, même si des opérateurs validants ont été définis. Si aucun opérateur validant n&#39;est défini, les notifications seront alors adressées au responsable de la tâche. Tous les autres opérateurs Adobe Campaign ayant des droits **[!UICONTROL Administrateur]** sont également habilités à valider la tâche. En revanche, ils ne reçoivent pas de notifications.
+Le responsable de la tâche peut se charger de la validation, même si d&#39;autres opérateurs lui ont déjà été assignés. Si aucun opérateur validant n&#39;a été défini, les notifications seront envoyées au responsable de la tâche. Tous les autres opérateurs Adobe Campaign avec **[!UICONTROL Administrateur]** Les droits peuvent également approuver la tâche. Toutefois, elles ne reçoivent pas de notifications.
 
 ### Documents référencés {#documents-referenced}
 
-Vous pouvez ajouter [documents et ressources marketing](managing-marketing-resources.md) à une tâche. Pour ce faire, ouvrez la tâche et cliquez sur l&#39;icône **[!UICONTROL Documents]** dans la barre d&#39;outils de la tâche.
+Vous pouvez ajouter [documents et ressources marketing](managing-marketing-resources.md) à une tâche.
 
-Cliquez sur **[!UICONTROL Ajouter]** et sélectionnez le document que vous souhaitez attacher à votre tâche. Faites de même pour les ressources marketing.
+Procédez comme suit :
 
-![](assets/s_ncs_user_task_edit_documents.png)
+1. Ouvrez la tâche et cliquez sur le bouton **[!UICONTROL Documents]** dans la barre d’outils de la tâche.
 
-Les documents référencés apparaîtront dans les notifications envoyées aux différents opérateurs impliqués dans la tâche, ainsi que dans le tableau de bord de la tâche.
+   ![](assets/add-documents-to-a-task.png)
+
+1. Cliquez sur **[!UICONTROL Ajouter]** et sélectionnez le document que vous souhaitez attacher à votre tâche. Faites de même pour les ressources marketing.
+
+
+Les documents référencés sont ajoutés aux notifications envoyées aux opérateurs impliqués dans la tâche. Elles sont également ajoutées dans le tableau de bord de la tâche.
 
 ![](assets/s_ncs_user_task_notification_documents.png)
 
