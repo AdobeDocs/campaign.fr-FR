@@ -4,16 +4,16 @@ title: Configurer les règles de filtrage
 description: Découvrir comment utiliser les règles de filtrage
 feature: Typology Rules
 exl-id: 17507cdf-211f-4fa2-abb9-33d4f6dc47bb
-source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '513'
+ht-degree: 100%
 
 ---
 
 # Règles de filtrage{#filtering-rules}
 
-Utilisez des règles de filtrage pour sélectionner les messages à exclure en fonction de critères définis dans une requête. Ces règles sont liées à une dimension de ciblage.
+Les règles de filtrage permettent de définir les messages à exclure en fonction de critères définis dans une requête. Ces règles sont associées à une dimension de ciblage.
 
 Les règles de filtrage peuvent être associées à d&#39;autres types de règles (contrôle, pression, etc.) dans des typologies, ou regroupées dans une typologie dédiée de type **Filtrage**. [En savoir plus](#create-and-use-a-filtering-typology).
 
@@ -23,12 +23,11 @@ Vous pouvez par exemple filtrer les abonnés à vos newsletters afin de ne jamai
 
 Pour définir ce filtrage, les étapes sont les suivantes :
 
-1. Accédez au **[!UICONTROL Administration > Gestion de campagne > Gestion des typologies > Règles de typologie]** dossier de l&#39;exportateur Campaign et cliquez sur le bouton **Nouveau** pour créer une règle de typologie.
-1. Créez une règle de typologie de type **[!UICONTROL Filtrage]**, applicable à tous les canaux de 
+1. Créez une règle de typologie de type **[!UICONTROL Filtrage]**, applicable à tous les canaux de communication.
 
    ![](assets/campaign_opt_create_filter_01.png)
 
-1. Dans la **Filtrer** changer la dimension de ciblage par défaut en **Abonnements** (**nms:subscription**).
+1. Modifiez la dimension de ciblage par défaut et sélectionnez les abonnements (**nms:subscription**).
 
    ![](assets/campaign_opt_create_filter_02.png)
 
@@ -36,15 +35,11 @@ Pour définir ce filtrage, les étapes sont les suivantes :
 
    ![](assets/campaign_opt_create_filter_03.png)
 
-1. Filtrez sur l&#39;âge des destinataires et enregistrez la condition de filtrage.
-
-   ![](assets/campaign_opt_create_filter_03b.png)
-
-1. Dans la **Typologies** liez cette règle à une typologie de campagne et enregistrez-la.
+1. Associez cette règle à une typologie de campagne et enregistrez-la.
 
    ![](assets/campaign_opt_create_filter_04.png)
 
-Lorsque cette règle est utilisée dans une diffusion, les abonnés mineurs sont automatiquement exclus. Un message spécifique indique à quel moment la règle est appliquée :
+Lorsque cette règle est utilisée dans une diffusion, les abonnés mineurs sont automatiquement exclus. Un message spécifique en indique l&#39;application :
 
 ![](assets/campaign_opt_create_filter_05.png)
 
@@ -52,11 +47,9 @@ Lorsque cette règle est utilisée dans une diffusion, les abonnés mineurs sont
 
 Vous pouvez restreindre le champ d&#39;application de la règle de filtrage en fonction de la diffusion ou de la composition de diffusion associée.
 
-Pour ce faire, accédez au **[!UICONTROL Général]** de la règle de typologie, sélectionnez le type de restriction à appliquer et créez le filtre.
-<!--
-![](assets/campaign_opt_create_filter_06.png)
--->
+Pour cela, dans l&#39;onglet **[!UICONTROL Général]** de la règle de typologie, sélectionnez le type de restriction à appliquer et créez le filtre, comme ci-dessous :
 
+![](assets/campaign_opt_create_filter_06.png)
 
 Dans ce cas, même si la règle est associée à toutes les diffusions, elle ne sera appliquée qu&#39;aux diffusions répondant aux critères du filtre défini.
 

@@ -2,10 +2,10 @@
 audience: user
 user-guide-title: Guide d'automatisation des campagnes
 user-guide-description: Guide d'automatisation des campagnes
-source-git-commit: 75b65efce6b37e3d948f6af4a89ea3b0a5ac1a86
+source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 97%
+source-wordcount: '424'
+ht-degree: 100%
 
 ---
 
@@ -145,20 +145,14 @@ ht-degree: 97%
    + [Prestataires, stocks et budgets](campaigns/providers--stocks-and-budgets.md)
 + Optimisation des campagnes (module complémentaire){#campaign-optimization}
    + [Prise en main des typologies de campagne](campaign-opt/campaign-typologies.md)
-   + [Règles de filtrage](campaign-opt/filtering-rules.md)
-   + [Règles de contrôle](campaign-opt/control-rules.md)
    + [Règles de pression](campaign-opt/pressure-rules.md)
    + [Règles de cohérence](campaign-opt/consistency-rules.md)
+   + [Règles de contrôle](campaign-opt/control-rules.md)
+   + [Règles de filtrage](campaign-opt/filtering-rules.md)
    + [Application de règles](campaign-opt/apply-rules.md)
    + [Simulation de campagnes](campaign-opt/campaign-simulations.md)
-+ Gestion des ressources marketing (module complémentaire){#mrm}
-   + [Prise en main de la gestion des ressources marketing](mrm/about-marketing-resource-management.md)
-   + [Création et gestion de tâches](mrm/creating-and-managing-tasks.md)
-   + [Coûts de contrôle](mrm/controlling-costs.md)
-   + [Gestion des ressources marketing](mrm/managing-marketing-resources.md)
-   + [Forums de discussion](mrm/discussion-forums.md)
 + Marketing distribué (module complémentaire) {#distributed-marketing}
-   + [Prise en main du marketing distribué](distributed-marketing/about-distributed-marketing.md)
+   + [À propos du marketing distribué](distributed-marketing/about-distributed-marketing.md)
    + [Création d’une campagne locale](distributed-marketing/creating-a-local-campaign.md)
    + [Création d’une opération collaborative](distributed-marketing/creating-a-collaborative-campaign.md)
    + [Publication du kit d’opération](distributed-marketing/publishing-the-campaign-package.md)
