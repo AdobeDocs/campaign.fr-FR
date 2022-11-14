@@ -9,7 +9,7 @@ exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: ad5444284a3886f02c97e94952898e1836c6b7c3
 workflow-type: tm+mt
 source-wordcount: '3404'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ _28 octobre 2022_
 
 **Améliorations**
 
-* Correction d’un problème qui empêchait la mise à jour correcte de l’indicateur de diffusion de succès lors de l’utilisation du MTA amélioré d’Adobe Campaign. (NEO-50462)
+* Correction d’un problème qui empêchait la mise à jour correcte de l’indicateur de diffusion de succès lors de l’utilisation du MTA amélioré d’Adobe Campaign. (NEO-50462)
 
 ## Version 8.4.1 {#release-8-4-1}
 

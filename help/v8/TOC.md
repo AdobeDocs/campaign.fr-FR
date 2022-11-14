@@ -7,7 +7,7 @@ title: Documentation Campaign v8
 source-git-commit: 43e515339a2483e82910603daf6009cad63eeeae
 workflow-type: tm+mt
 source-wordcount: '474'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 93%
    + [Documentation de l’orchestration des campagnes](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=fr)
    + Envoyer des messages{#send}
       + [Prise en main des messages](start/create-message.md)
-      + [Utilisation de modèles de diffusion](send/create-templates.md)
+      + [Utiliser des modèles de diffusion](send/create-templates.md)
       + E-mails {#emails}
          + [Concevoir et valider des e-mails](send/email.md)
          + [Envoyer et surveiller des e-mails](send/send.md)
@@ -91,16 +91,16 @@ ht-degree: 93%
    + [Rapports et historique](interaction/interaction-tracking.md)
    + [Cas dʼutilisation](interaction/interaction-use-cases.md)
 + Rapports et analyses {#analytics}
-   + [Suivi et surveillance](start/tracking.md)
-   + Utilisation des rapports{#reports}
-      + [Prise en main des rapports](reporting/gs-reporting.md)
+   + [Suivre et surveiller](start/tracking.md)
+   + Utiliser des rapports{#reports}
+      + [Commencer avec les rapports](reporting/gs-reporting.md)
       + Créer des cubes{#cubes}
-         + [Prise en main des cubes](reporting/gs-cubes.md)
+         + [Comencer avec les cubes](reporting/gs-cubes.md)
          + [Créer un cube](reporting/cube-indicators.md)
          + [Utiliser des cubes pour créer des rapports](reporting/cube-tables.md)
          + [Personnaliser vos cubes](reporting/customize-cubes.md)
-      + Rapports natifs{#ac-reports}
-         + [Liste des rapports natifs](reporting/built-in-reports.md)
+      + Rapports intégrés{#ac-reports}
+         + [Liste des rapports intégrés](reporting/built-in-reports.md)
          + [Rapports globaux](reporting/global-reports.md)
          + [Rapports sur les diffusions](reporting/delivery-reports.md)
          + [Calcul des mesures intégrées](reporting/metrics-calculation.md)

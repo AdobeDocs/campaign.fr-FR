@@ -1,11 +1,12 @@
 ---
 product: campaign
-title: Utilisation de modèles de diffusion
+title: Utiliser des modèles de diffusion
 description: Découvrez comment créer et utiliser des modèles de diffusion dans Campaign
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 1c0015a02ff950d9bf9d33aacebf899db9e580fa
+exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 42%

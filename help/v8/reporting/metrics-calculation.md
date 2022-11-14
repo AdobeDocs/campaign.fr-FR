@@ -2,7 +2,8 @@
 title: Calcul des mesures de rapport intégrées
 description: Calcul des mesures de rapport intégrées
 feature: Reporting
-source-git-commit: 80e5efc5998c67ce576e9f8208fab9543fc70d29
+exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '3027'
 ht-degree: 99%

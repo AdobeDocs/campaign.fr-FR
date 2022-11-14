@@ -4,13 +4,13 @@ description: Découvrez comment créer des cubes
 feature: Reporting
 role: Data Engineer
 level: Beginner
-source-git-commit: 7fc3e5b9f12ca48ef0921e27844ef9fef71ac06b
+exl-id: 03a6816b-e51a-4eaf-ab76-02d24f97ba46
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '796'
-ht-degree: 25%
+ht-degree: 26%
 
 ---
-
 
 # Créer un cube{#create-a-cube}
 

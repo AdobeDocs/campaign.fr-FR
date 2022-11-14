@@ -9,7 +9,7 @@ hidefromtoc: true
 source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -27,12 +27,12 @@ Vous pouvez intégrer **Adobe Campaign** à **People Core Service** ou Adobe�
 
 L’intégration prend en charge deux types d’identifiants Adobe Experience Cloud :
 
-* **Identifiant visiteur**: cet identifiant réconcilie les visiteurs Adobe Experience Cloud avec les destinataires Adobe Campaign.
-* **Declared ID**: cet identifiant réconcilie tous les types de données avec les éléments de la base de données Adobe Campaign. Il s’agit de la clé de réconciliation prédéfinie dans Adobe Campaign.
+* **Identifiant visiteur** : cet identifiant permet de réconcilier des visiteurs Adobe Experience Cloud avec des destinataires Adobe Campaign.
+* **Identifiant déclaré** : ce type d’identifiant permet de réconcilier tous les types de données avec les éléments de la base de données Adobe Campaign. Il s’agit de la clé de réconciliation prédéfinie dans Adobe Campaign.
 
    >[!NOTE]
    >
-   > La source de données ID déclaré peut également être utilisée avec l’intégration de People core service.
+   > La source de données des ID déclarés peut également être utilisée avec l’intégration de People Core Service.
    >
    >Si vous utilisez l’intégration de People Core Service et que vous souhaitez ajouter l’intégration d’Audience Manager, vous aurez besoin de l’aide d’un consultant Adobe Audience Manager. Ce dernier vous aidera à éviter de perdre toutes les synchronisations d’ID collectées lors de la transition vers l’utilisation de cette source de données d’ID déclarés dans un contexte Adobe Audience Manager.
 

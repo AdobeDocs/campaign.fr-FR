@@ -2,13 +2,13 @@
 title: Rapports de diffusion intégrés à Adobe Campaign
 description: Rapports de diffusion intégrés à Adobe Campaign
 feature: Reporting
-source-git-commit: 60db4c2e8cd280845ddd0176bd10dc1b7edbb767
+exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 85%
 
 ---
-
 
 # Rapports sur les diffusions {#delivery-reports}
 
@@ -203,5 +203,3 @@ Vous pouvez afficher des rapports cumulés sur les diffusions. Pour cela, sélec
 Vous pouvez sélectionner des diffusions non consécutives dans la liste en maintenant la touche CTRL enfoncée pendant la sélection.
 
 Pour sélectionner des diffusions enregistrées dans un autre dossier, cliquez sur le bouton **[!UICONTROL Afficher les sous-niveaux]** , accessible dans la barre d’outils. Elles s’affichent alors dans la même liste.
-
-
