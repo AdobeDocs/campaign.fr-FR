@@ -5,21 +5,21 @@ feature: Platform Integration
 role: Data Engineer
 level: Beginner
 source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '220'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
 # Utiliser Campaign et Adobe Experience Platform
 
-Les connecteurs source et destination de Cloud Service gérés Adobe Campaign permettent une intégration transparente entre Adobe Campaign et Adobe Experience Platform.
+La destination et les connecteurs source d’Adobe Campaign Managed Cloud Services permettent une intégration transparente entre Adobe Campaign et Adobe Experience Platform.
 
-* Utilisation **Adobe Campaign Managed Cloud Services** Connexion de destination pour envoyer des segments Experience Platform vers Adobe Campaign pour activation,
+* Utilisez la connexion de destination **Adobe Campaign Managed Cloud Services** pour envoyer des segments Experience Platform à Adobe Campaign en vue de leur activation,
 
    ![](assets/aep-destination.png)
 
-* Utilisation **Adobe Campaign Managed Cloud Services** Connexion source pour envoyer les logs de diffusion et de suivi Adobe Campaign à Adobe Experience Platform.
+* Utilisez la connexion source **Adobe Campaign Managed Cloud Services** pour envoyer les logs de diffusion et de tracking Adobe Campaign à Adobe Experience Platform.
 
    ![](assets/aep-logs.png)
 
@@ -31,7 +31,7 @@ Les étapes de configuration de cette intégration dans Adobe Experience Platf
 
    [Découvrez comment créer une connexion de destination Adobe Campaign Managed Cloud Services](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en)
 
-1. Configurez une nouvelle connexion Source Adobe Campaign Managed Cloud Services pour ingérer des événements Campaign dans Adobe Experience Platform.
+1. Configurez une nouvelle connexion source Adobe Campaign Managed Cloud Services pour ingérer des événements Campaign dans Adobe Experience Platform.
 
    Fournissez des détails sur l’instance Campaign et le schéma à utiliser, sélectionnez un jeu de données où les données doivent être ingérées, puis configurez les champs à récupérer.
 
