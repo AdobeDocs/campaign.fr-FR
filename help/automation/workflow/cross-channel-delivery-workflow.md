@@ -5,9 +5,9 @@ description: En savoir plus sur les workflows de diffusion cross-canal
 feature: Workflows, Channels Activity
 exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
 source-git-commit: 5b4d569a6e96c93828f63fb8376eb81301829854
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '713'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Les principales étapes d&#39;implémentation pour ce cas pratique sont les suiv
 
 ![](assets/wkf_cross-channel_7.png)
 
-## Étape 1 : Création de l’audience {#step-1--build-the-audience}
+## Étape 1 : créer l’audience {#step-1--build-the-audience}
 
 Pour définir votre cible, créez une requête afin d&#39;identifier les destinataires.
 
@@ -42,9 +42,9 @@ Pour définir votre cible, créez une requête afin d&#39;identifier les destina
 
 1. Enregistrez vos modifications.
 
-## Étape 2 : Créer un email comprenant une offre {#step-2--create-an-email-including-an-offer}
+## Étape 2 : créer un e-mail comprenant une offre {#step-2--create-an-email-including-an-offer}
 
-1. Créez une diffusion email.
+1. Créez une diffusion e-mail.
 1. Concevez le message et insérez un lien comprenant une offre dans le contenu.
 
    ![](assets/wkf_cross-channel_1.png)
@@ -63,7 +63,7 @@ Pour définir votre cible, créez une requête afin d&#39;identifier les destina
 
    ![](assets/wkf_cross-channel_4.png)
 
-## Étape 3 : Segmenter l’audience obtenue {#step-3--segment-the-resulting-audience}
+## Étape 3 : segmenter l’audience obtenue {#step-3--segment-the-resulting-audience}
 
 Une fois votre cible identifiée et votre première diffusion créée, vous devez segmenter la cible en différentes populations à l&#39;aide de conditions de filtrage.
 
@@ -99,7 +99,7 @@ Une fois votre cible identifiée et votre première diffusion créée, vous deve
 
 1. Cliquez sur **[!UICONTROL Terminer]** pour enregistrer vos modifications.
 
-## Étape 4 : Finalisation du workflow {#step-4--finalize-the-workflow}
+## Étape 4 : finaliser le workflow {#step-4--finalize-the-workflow}
 
 1. Ajoutez les activités adéquates à votre workflow après les trois sous-ensembles issus de l&#39;activité **[!UICONTROL Partage]** :
 
