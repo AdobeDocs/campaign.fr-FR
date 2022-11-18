@@ -4,9 +4,9 @@ title: Interaction
 description: Interaction
 feature: Workflows, Interaction
 source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '135'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
   <tr> 
    <td> <span class="uicontrol">Calcul de l'agrégat full (cube propositionrcp)</span> <br /> </td> 
    <td> <span class="uicontrol">agg_nmspropositionrcp_full</span> <br /> </td> 
-   <td> Ce workflow met à jour l'agrégat <strong>Complet (full)</strong> du cube <strong>Proposition d'offre</strong>. Par défaut, il se déclenche tous les jours à 6H00. Cet agrégat capture les dimensions suivantes : Canal, Diffusion, Offre marketing et Date.<br /> Le <strong>Proposition d'offre</strong> est ensuite utilisé pour générer des rapports basés sur des offres.<br /> </td> 
+   <td> Ce workflow met à jour l'agrégat <strong>Complet (full)</strong> du cube <strong>Proposition d'offre</strong>. Par défaut, il se déclenche tous les jours à 6H00. Cet agrégat capture les dimensions suivantes : Canal, Diffusion, Offre marketing et Date.<br /> Le cube <strong>Proposition d’offre</strong> est ensuite utilisé pour générer des rapports basés sur des offres.<br /> </td> 
   </tr> 
    <tr> 
    <td> <span class="uicontrol">Calcul de l'agrégat full (cube propositionrcp) du MessageCenter</span> <br /> </td> 
@@ -36,5 +36,5 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
  </tbody> 
 </table>
 
-En savoir plus sur les cubes et les agrégats dans [cette section](../../v8/reporting/gs-cubes.md).
+Pour en savoir plus sur les cubes et les agrégats, consultez [cette section](../../v8/reporting/gs-cubes.md).
 
