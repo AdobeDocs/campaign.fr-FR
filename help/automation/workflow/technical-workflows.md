@@ -5,9 +5,9 @@ description: En savoir plus sur les workflows techniques disponibles avec Campai
 feature: Workflows
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
 source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1674'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Découvrez comment surveiller les workflows techniques dans cette [section dédi
 | **Purge des événements** (webAnalyticsPurgeWebEvents) | Connecteurs Web Analytics | Ce workflow permet de supprimer du champ de la base tous les événements selon la période paramétrée dans le champ Durée de vie. |
 | **Export d’audiences vers Adobe Experience Cloud** (exportSharedAudience) | Intégration avec Adobe Experience Cloud | Ce workflow permet d’exporter des audiences en tant qu’audiences/segments partagés. Ces audiences peuvent être exploitées dans les différentes solutions d’Adobe Experience Cloud que vous utilisez. |
 | **Prévisionnel** (forecasting) | Diffusion | Ce workflow effectue l’analyse des diffusions enregistrées dans le calendrier prévisionnel (création des logs prévisionnels). Par défaut, il se déclenche tous les jours à 1h00. |
-| **Calcul de l&#39;agrégat full (cube propositionrcp)** (agg_nmspropositionrcp_full) | Moteur d’offres (Interaction) | Ce workflow met à jour l&#39;agrégat Complet (full) du cube Proposition d&#39;offre. Par défaut, il se déclenche tous les jours à 6H00. Cet agrégat capture les dimensions suivantes : Canal, Diffusion, Offre marketing et Date. Le cube Proposition d&#39;offre est ensuite utilisé pour générer des rapports basés sur des offres. En savoir plus sur les cubes dans  [cette section](../../v8/reporting/gs-cubes.md). |
+| **Calcul de l&#39;agrégat full (cube propositionrcp)** (agg_nmspropositionrcp_full) | Moteur d’offres (Interaction) | Ce workflow met à jour l&#39;agrégat Complet (full) du cube Proposition d&#39;offre. Par défaut, il se déclenche tous les jours à 6H00. Cet agrégat capture les dimensions suivantes : Canal, Diffusion, Offre marketing et Date. Le cube Proposition d’offre est ensuite utilisé pour générer des rapports basés sur les offres. Pour plus d’informations sur les cubes, consultez [cette section](../../v8/reporting/gs-cubes.md). |
 | **Identification des contacts convertis** (webAnalyticsFindConverted) | Connecteurs Web Analytics | Ce workflow répertorie les visiteurs du site ayant concrétisé leur achat après une campagne de remarketing. Les données récupérées par ce workflow sont accessibles dans le rapport Efficacité du remarketing (voir cette page). |
 | **Import d’audiences depuis Adobe Experience Cloud** (importSharedAudience) | Intégration avec Adobe Experience Cloud | Ce workflow permet d’importer dans Adobe Campaign des audiences/segments provenant de différentes solutions d’Adobe Experience Cloud. |
 | **Traitements sur les diffusions dans les opérations** (deliveryMgt) | Installé par défaut | Ce workflow démarre les diffusions validées et lance les post-traitements du prestataire pour une diffusion externe. Il envoie également des notifications de validation et des rappels. |
