@@ -4,18 +4,18 @@ title: Configurer les règles de filtrage
 description: Découvrir comment utiliser les règles de filtrage
 feature: Typology Rules
 exl-id: 17507cdf-211f-4fa2-abb9-33d4f6dc47bb
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
-workflow-type: tm+mt
-source-wordcount: '513'
+source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
+workflow-type: ht
+source-wordcount: '551'
 ht-degree: 100%
 
 ---
 
 # Règles de filtrage{#filtering-rules}
 
-Les règles de filtrage permettent de définir les messages à exclure en fonction de critères définis dans une requête. Ces règles sont associées à une dimension de ciblage.
+Utilisez les règles de filtrage pour sélectionner les messages à exclure en fonction des critères définis dans une requête. Ces règles sont liées à une dimension de ciblage.
 
-Les règles de filtrage peuvent être associées à d&#39;autres types de règles (contrôle, pression, etc.) dans des typologies, ou regroupées dans une typologie dédiée de type **Filtrage**. [En savoir plus](#create-and-use-a-filtering-typology).
+Les règles de filtrage peuvent être associées à d’autres types de règles (contrôle, pression, etc.) dans des typologies, ou regroupées dans une typologie dédiée de type **Filtrage**. [En savoir plus](#create-and-use-a-filtering-typology).
 
 ## Création dʼune règle de filtrage {#create-a-filtering-rule}
 
@@ -23,35 +23,42 @@ Vous pouvez par exemple filtrer les abonnés à vos newsletters afin de ne jamai
 
 Pour définir ce filtrage, les étapes sont les suivantes :
 
-1. Créez une règle de typologie de type **[!UICONTROL Filtrage]**, applicable à tous les canaux de communication.
+1. Accédez au dossier **[!UICONTROL Administration > Gestion de campagne > Gestion des typologies > Règles de typologie]** de l’explorateur Campaign, puis cliquez sur l’icône **Nouveau** pour créer une règle de typologie.
+1. Créez une règle de typologie de type **[!UICONTROL Filtrage]**, applicable à tous les canaux.
 
    ![](assets/campaign_opt_create_filter_01.png)
 
-1. Modifiez la dimension de ciblage par défaut et sélectionnez les abonnements (**nms:subscription**).
+1. Sous l’onglet **Filtre**, modifiez la dimension de ciblage par défaut en **Abonnements** (**nms:subscription**).
 
    ![](assets/campaign_opt_create_filter_02.png)
 
-1. Créez le filtre à partir du lien **[!UICONTROL Editer la requête à partir de la dimension de ciblage...]**.
+1. Créez le filtre à partir du lien **[!UICONTROL Éditer la requête à partir de la dimension de ciblage...]**.
 
    ![](assets/campaign_opt_create_filter_03.png)
 
-1. Associez cette règle à une typologie de campagne et enregistrez-la.
+1. Filtrez par âge des destinataires et enregistrez la condition de filtrage.
+
+   ![](assets/campaign_opt_create_filter_03b.png)
+
+1. Sous l’onglet **Typologies**, liez cette règle à une typologie de campagne et enregistrez-la.
 
    ![](assets/campaign_opt_create_filter_04.png)
 
-Lorsque cette règle est utilisée dans une diffusion, les abonnés mineurs sont automatiquement exclus. Un message spécifique en indique l&#39;application :
+Lorsque cette règle est utilisée dans une diffusion, les abonnés mineurs sont automatiquement exclus. Un message spécifique indique à quel moment la règle est appliquée :
 
 ![](assets/campaign_opt_create_filter_05.png)
 
 ## Traitement dʼune règle de filtrage {#condition-a-filtering-rule}
 
-Vous pouvez restreindre le champ d&#39;application de la règle de filtrage en fonction de la diffusion ou de la composition de diffusion associée.
+Vous pouvez restreindre le champ d’application de la règle de filtrage en fonction de la diffusion ou de la composition de diffusion associée.
 
-Pour cela, dans l&#39;onglet **[!UICONTROL Général]** de la règle de typologie, sélectionnez le type de restriction à appliquer et créez le filtre, comme ci-dessous :
-
+Pour ce faire, accédez à l’onglet **[!UICONTROL Général]** de la règle de typologie, sélectionnez le type de restriction à appliquer et créez le filtre.
+<!--
 ![](assets/campaign_opt_create_filter_06.png)
+-->
 
-Dans ce cas, même si la règle est associée à toutes les diffusions, elle ne sera appliquée qu&#39;aux diffusions répondant aux critères du filtre défini.
+
+Dans ce cas, même si la règle est associée à toutes les diffusions, elle ne sera appliquée qu’aux diffusions répondant aux critères du filtre défini.
 
 >[!NOTE]
 >
