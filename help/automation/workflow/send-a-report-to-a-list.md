@@ -4,9 +4,9 @@ title: Envoi d’un rapport à une liste
 description: Découvrez comment envoyer un rapport à une liste à l’aide d’un workflow
 feature: Workflows
 source-git-commit: 4c3caa8e31c2076d32a03a8778a28edce50cde63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '728'
-ht-degree: 35%
+ht-degree: 100%
 
 ---
 
@@ -21,70 +21,70 @@ Les étapes principales de mise en oeuvre de ce cas pratique sont les suivantes�
 
 * Créez une liste de destinataires pour ce rapport. [En savoir plus](#step-1--create-the-recipient-list).
 * Créez un modèle de diffusion qui crée une diffusion à chaque exécution du workflow. [En savoir plus](#step-2--create-the-delivery-template).
-* Créez un workflow qui génère le rapport au format PDF et l&#39;envoie à la liste des destinataires. [En savoir plus](#step-3--create-the-workflow).
+* Créez un workflow qui génère le rapport au format PDF et l’envoie à la liste des destinataires. [En savoir plus](#step-3--create-the-workflow).
 
-## Étape 1 : Création de la liste des destinataires {#step-1--create-the-recipient-list}
+## Étape 1 : créer la liste de destinataires {#step-1--create-the-recipient-list}
 
-Pour créer la liste des destinataires ciblés, procédez comme suit :
+Pour créer la liste des destinataires ciblés, procédez comme suit :
 
-1. Accédez au **[!UICONTROL Profils et cibles]** , cliquez sur l’onglet **[!UICONTROL Listes]** lien.
+1. Accédez à l’onglet **[!UICONTROL Profils et cibles]**, puis cliquez sur le lien **[!UICONTROL Listes]**.
 1. Cliquez sur le bouton **[!UICONTROL Créer]**.
 1. Sélectionnez **[!UICONTROL Nouvelle liste]** et créez une liste de destinataires à laquelle envoyer le rapport.
 
-Pour plus d&#39;informations sur la création de listes, reportez-vous à la section [cette section](../../v8/audiences/create-audiences.md).
+Pour plus d’informations sur la création de listes, consultez [cette section](../../v8/audiences/create-audiences.md).
 
-## Étape 2 : Créer le modèle de diffusion {#step-2--create-the-delivery-template}
+## Étape 2 : créer le modèle de diffusion {#step-2--create-the-delivery-template}
 
-Pour créer le modèle de diffusion, procédez comme suit :
+Pour créer un modèle de diffusion, procédez comme suit :
 
-1. Accédez au **[!UICONTROL Ressources > Modèles > Modèles de diffusion]** noeud de l’explorateur Adobe Campaign et dupliquez l’objet **[!UICONTROL Diffusion Email]** modèle intégré.
+1. Dans l’explorateur Adobe Campaign, accédez au nœud **[!UICONTROL Ressources > Modèles > Modèles de diffusion]** et dupliquez le modèle intégré **[!UICONTROL Diffuser par email]**.
 
-   Pour plus d&#39;informations sur la création d&#39;un modèle de diffusion, reportez-vous à la section [cette section](../../v8/send/create-templates.md).
+   Pour plus d’informations sur la création d’un modèle de diffusion, consultez [cette section](../../v8/send/create-templates.md).
 
-1. Renseignez les paramètres du modèle : libellé, cible (liste des destinataires précédemment créés), objet et contenu.
+1. Renseignez les différents paramètres du modèle : le libellé, la cible (la liste de destinataires précédemment créée), l’objet et le contenu.
 
-   Chaque fois que le workflow est exécuté, la variable **[!UICONTROL Indicateurs de tracking]** Le rapport est mis à jour comme expliqué dans la section [Étape 3 : Créer le workflow](#step-3--creating-the-workflow)).
+   Chaque fois que le workflow est exécuté, le rapport des **[!UICONTROL Indicateurs de tracking]** est mis à jour. Reportez-vous à l’[Étape 3 : créer le workflow](#step-3--creating-the-workflow) pour plus de détails.
 
-1. Pour inclure la dernière version du rapport dans la diffusion, vous devez ajouter un **[!UICONTROL Attachement calculé]** :
+1. Pour inclure la dernière version du rapport dans la diffusion, vous devez ajouter une **[!UICONTROL Pièce jointe calculée]** :
 
-   * Cliquez sur le bouton **[!UICONTROL Pièces jointes]** et cliquez sur la flèche en regard de l’option **[!UICONTROL Ajouter]** bouton . Sélectionner **[!UICONTROL Pièce jointe calculée..]**.
+   * Cliquez sur le lien **[!UICONTROL Pièces jointes]**, puis sur la flèche en regard du bouton **[!UICONTROL Ajouter]**. Sélectionnez **[!UICONTROL Pièce jointe calculée...]**.
 
       ![](assets/use_case_report_4.png)
 
-   * Dans le **[!UICONTROL Type]** , sélectionnez la dernière option : **[!UICONTROL Le nom de fichier est calculé au moment de l&#39;envoi pour chaque message (il peut alors dépendre du profil du destinataire)]**.
+   * Dans la liste déroulante **[!UICONTROL Type]**, sélectionnez la dernière option : **[!UICONTROL Le nom de fichier est calculé au moment de l’envoi pour chaque message (il peut dépendre du destinataire)]**.
 
       ![](assets/use_case_report_5.png)
 
-      La valeur renseignée dans le champ **[!UICONTROL Libellé]** n&#39;apparaîtra pas dans la diffusion finale.
+      La valeur renseignée dans le champ **[!UICONTROL Libellé]** n’apparaîtra pas dans la diffusion finale.
 
-   * Dans la zone de texte, saisissez le chemin d&#39;accès et le nom du fichier.
+   * Dans la zone de texte, saisissez le chemin d’accès et le nom du fichier.
 
       ![](assets/use_case_report_6.png)
 
       >[!CAUTION]
       >
-      >Le chemin et le nom doivent être identiques à ceux saisis dans la variable **[!UICONTROL Code JavaScript]** activité de type du workflow, comme expliqué dans la section [Étape 3 : Créer le workflow](#step-3--creating-the-workflow).
+      >Le chemin d’accès et le nom doivent être identiques à ceux saisis dans l’activité de type **[!UICONTROL Code JavaScript]** du workflow. Reportez-vous à l’[Étape 3 : créer le workflow](#step-3--creating-the-workflow) pour plus de détails.
 
-   * Sélectionnez la **[!UICONTROL Avancé]** onglet et vérification **[!UICONTROL Script le nom du fichier affiché dans les courriers envoyés]**. Dans la zone de texte, saisissez le nom de la pièce jointe dans la diffusion finale.
+   * Sélectionnez l’onglet **[!UICONTROL Avancé]** et cochez la case **[!UICONTROL Scripter le nom du fichier qui sera affiché dans la messagerie du destinataire]**. Dans la zone de texte, saisissez le nom de la pièce jointe dans la diffusion finale.
 
       ![](assets/use_case_report_6b.png)
 
-## Étape 3 : Créer le workflow {#step-3--creating-the-workflow}
+## Étape 3 : créer le workflow {#step-3--creating-the-workflow}
 
-Créez le workflow suivant pour ce cas pratique.
+Créez le workflow suivant pour ce cas d’utilisation.
 
 ![](assets/use_case_report_8.png)
 
-Il utilise trois activités :
+Trois activités interviennent dans ce workflow :
 
-* A **[!UICONTROL Planificateur]** activité qui exécute le workflow une fois par mois,
-* A **[!UICONTROL Code JavaScript]** activité qui génère le rapport au format PDF,
-* A **[!UICONTROL Diffusion]** activité référençant le modèle de diffusion créé précédemment.
+* Une activité **[!UICONTROL Planificateur]**, qui exécute le workflow une fois par mois ;
+* Une activité **[!UICONTROL Code JavaScript]**, qui génère le rapport au format PDF ;
+* Une activité **[!UICONTROL Diffusion]**, qui référence le modèle de diffusion créé précédemment.
 
-Pour créer ce workflow, procédez comme suit :
+Pour créer ce workflow, procédez comme suit :
 
-1. Accédez au **[!UICONTROL Administration > Exploitation > Workflows techniques]** de Campaign. Créez un dossier pour stocker vos workflows.
-1. Créez un nouveau workflow.
+1. Accédez au nœud **[!UICONTROL Administration > Exploitation > Workflows techniques]** de l’explorateur Campaign. Créez ensuite un dossier pour stocker vos workflows.
+1. Créez un workflow.
 
    ![](assets/use_case_report_7.png)
 
@@ -112,14 +112,14 @@ Pour créer ce workflow, procédez comme suit :
    ```
 
 
-   avec les variables suivantes :
+   Renseignez les variables suivantes :
 
-   * **var reportName** : saisissez, entre guillemets, le nom interne du rapport. Dans notre exemple, le nom interne du rapport **Indicateur de tracking** est &quot;deliveryFeedback&quot;.
-   * **var path**: saisissez le chemin d’enregistrement du fichier (&quot;tmp&quot;), le nom que vous souhaitez donner au fichier (&quot;deliveryFeedback&quot;) et l’extension du fichier (&quot;.pdf&quot;). Dans ce cas, nous avons utilisé le nom interne comme nom de fichier. Les valeurs doivent être entre guillemets doubles et séparées par le caractère &quot;+&quot;.
+   * **var reportName** : saisissez, entre guillemets, le nom interne du rapport. Dans notre exemple, le nom interne du rapport **Indicateur de tracking** est « deliveryFeedback ».
+   * **var path** : saisissez le chemin de sauvegarde du fichier (« tmp »), le nom que vous souhaitez lui donner (« deliveryFeedback ») et son extension (« .pdf »). Ici, nous avons utilisé le nom interne comme nom de fichier. Les valeurs doivent être comprises entre guillemets et séparées par le caractère « + ».
 
       >[!CAUTION]
       >
-      >Le fichier doit être enregistré sur le serveur. Vous devez saisir le même chemin et le même nom que dans la variable **[!UICONTROL Général]** de la fenêtre d&#39;édition de l&#39;attachement calculé, comme indiqué [here](#step-2--create-the-delivery-template)).
+      >Le fichier doit être enregistré sur le serveur. Vous devez saisir le même chemin d’accès et le même nom que ceux renseignés sous l’onglet **[!UICONTROL Général]** de la fenêtre de modification de la pièce jointe calculée, comme indiqué [ici](#step-2--create-the-delivery-template).
 
    * **var exportFormat** : saisissez le format d&#39;export du fichier (&quot;PDF&quot;).
    * **var _ctx** (contexte) : dans notre exemple, nous utilisons le rapport **[!UICONTROL Indicateurs de tracking]** dans son contexte global.
@@ -130,7 +130,7 @@ Pour créer ce workflow, procédez comme suit :
 
    * **[!UICONTROL Diffusion]** : sélectionnez **[!UICONTROL Nouvelle, créée depuis un modèle]**, et sélectionnez le modèle de diffusion créé précédemment.
    * Pour les champs **[!UICONTROL Destinataires]** et **[!UICONTROL Contenu]**, sélectionnez **[!UICONTROL Spécifiés dans la diffusion]**.
-   * **[!UICONTROL Action à effectuer]**: select **[!UICONTROL Préparation et démarrage]**.
-   * Décochez la case **[!UICONTROL Générer une transition sortante]** et **[!UICONTROL Traiter les erreurs]** options.
+   * **[!UICONTROL Action à effectuer]** : sélectionnez **[!UICONTROL Préparer et démarrer]**.
+   * Décochez les options **[!UICONTROL Générer une transition sortante]** et **[!UICONTROL Traiter les erreurs]**.
 
-1. Enregistrez vos modifications et démarrez le workflow. Le message est envoyé à la liste des destinataires tous les premiers lundis du mois, avec le rapport joint.
+1. Enregistrez les modifications apportées et lancez le workflow. Le message est envoyé à la liste de destinataires chaque premier lundi du mois, avec le rapport en pièce jointe.
