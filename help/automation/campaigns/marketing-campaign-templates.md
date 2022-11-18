@@ -5,7 +5,7 @@ description: Modèles de campagne marketing
 feature: Campaigns, Templates
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
 source-git-commit: 60db4c2e8cd280845ddd0176bd10dc1b7edbb767
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1030'
 ht-degree: 100%
 
@@ -119,7 +119,7 @@ De plus, des raccourcis vers les fenêtres de configuration sont ajoutés dans l
 
 * **Adresses de contrôle**
 
-   Lorsque ce module est sélectionné, un onglet supplémentaire est ajouté dans les paramètres avancés du modèle et des opérations basées sur ce modèle. Le paramétrage peut être défini depuis le modèle ou individuellement au niveau de chaque opération.
+   Lorsque ce module est sélectionné, un onglet supplémentaire est ajouté dans les paramètres avancés du modèle et des opérations basées sur ce modèle. La configuration peut être définie à partir du modèle ou individuellement, au niveau de chaque opération.
 
    ![](assets/template-activate-2.png)
 
@@ -167,7 +167,7 @@ Lorsque vous créez un modèle de campagne, vous devez indiquer les informations
 * Saisissez le **libellé** du modèle : le libellé est obligatoire et constitue le libellé par défaut pour toutes les campagnes basées sur ce modèle.
 * Sélectionnez la **nature** de la campagne dans la liste déroulante. Les valeurs proposées dans cette liste correspondent à celles enregistrées dans l&#39;énumération **[!UICONTROL natureOp]**.
 
-Découvrez comment accéder à et configurer vos énumérations dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=fr){target=&quot;_blank&quot;}.
+Découvrez comment accéder à vos énumérations et la manière de les configurer dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=fr){target=&quot;_blank&quot;}.
 
 
 * Sélectionnez le **type de campagne** : unique, récurrente ou périodique. Par défaut, les modèles de campagne s&#39;appliquent aux campagnes uniques. Les opérations périodiques et récurrentes sont décrites dans [cette section](recurring-periodic-campaigns.md).
