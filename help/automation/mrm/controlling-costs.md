@@ -2,7 +2,8 @@
 product: campaign
 title: Contrôle des coûts
 description: Découvrez comment contrôler les coûts
-source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
+exl-id: 51f3add9-a083-4db1-84a6-3aaaeec0465c
+source-git-commit: e6b1790832be6331f4b27cc50b5d034ad738a822
 workflow-type: tm+mt
 source-wordcount: '2479'
 ht-degree: 93%
@@ -43,7 +44,7 @@ Pour créer un budget, procédez comme suit :
 
 >[!NOTE]
 >
->Vous pouvez sélectionner un budget de rattachement. Pour plus d&#39;informations, consultez [cette section](#linking-a-budget-to-another).
+>Vous pouvez sélectionner un budget de rattachement. Pour plus d’informations, consultez [cette section](#linking-a-budget-to-another).
 
 ### Calculer les montants {#calculating-amounts}
 
@@ -203,7 +204,7 @@ Nous allons créer une opération avec :
 
 #### Étape 2 - Configurer le prestataire et définir les structures de coûts {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-1. Créez un prestataire et un modèle de prestation avec sa structure de coûts associée à partir du nœud **[!UICONTROL Administration > Campagnes.]** Pour plus d&#39;informations, consultez [cette section](../campaigns/providers--stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories).
+1. Créez un prestataire et un modèle de prestation avec sa structure de coûts associée à partir du nœud **[!UICONTROL Administration > Campagnes.]** Pour plus d’informations, consultez [cette section](../campaigns/providers--stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories).
 
    Pour les diffusions courrier, créez des postes de coût **[!UICONTROL Enveloppes]** (types 114x229 et 162x229), **[!UICONTROL Affranchissement et routage]** et **[!UICONTROL Impression]** (types A3 et A4). Puis créez les structures de coûts suivantes :
 

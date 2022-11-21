@@ -89,7 +89,7 @@ ht-degree: 100%
       + [Appel dʼune offre dans une page web](interaction/interaction-integration.md)
       + [Gestion des interactions anonymes](interaction/anonymous-interactions.md)
    + [Rapports et historique](interaction/interaction-tracking.md)
-   + [Cas dʼutilisation](interaction/interaction-use-cases.md)
+   + [Cas pratiques](interaction/interaction-use-cases.md)
 + Rapports et analyses {#analytics}
    + [Suivre et surveiller](start/tracking.md)
    + Utiliser des rapports{#reports}
@@ -102,7 +102,7 @@ ht-degree: 100%
       + Rapports intégrés{#ac-reports}
          + [Liste des rapports intégrés](reporting/built-in-reports.md)
          + [Rapports globaux](reporting/global-reports.md)
-         + [Rapports sur les diffusions](reporting/delivery-reports.md)
+         + [Rapports de diffusion](reporting/delivery-reports.md)
          + [Calcul des mesures intégrées](reporting/metrics-calculation.md)
       + [Rapports personnalisés](reporting/custom-reports.md)
 + Data Management {#data}

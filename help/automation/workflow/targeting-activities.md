@@ -3,7 +3,8 @@ product: campaign
 title: À propos des activités de ciblage
 description: À propos des activités de ciblage
 feature: Workflows, Audiences, Targeting Activity
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: e89c9f20-fc10-421f-9c14-2e33be562a8d
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 100%
@@ -34,4 +35,3 @@ Ces activités permettent de construire une ou plusieurs cibles en définissant 
 * **[Services d&#39;inscription](subscription-services.md)** : permet d&#39;inscrire ou de désinscrire une cible à un service d&#39;information.
 * **[Union](union.md)** : permet de regrouper le résultat de plusieurs activités dans une même cible.
 * **[Mettre à jour les données](update-data.md)** : permet de mettre à jour en masse les données de la base.
-

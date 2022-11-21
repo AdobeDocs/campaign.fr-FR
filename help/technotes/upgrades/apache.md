@@ -2,7 +2,8 @@
 product: campaign
 title: Note technique - Adobe Campaign - Mise à jour de sécurité de la version Apache
 description: Adobe Campaign - Mise à jour de sécurité de la version Apache
-source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
+exl-id: 68e42fe4-7fb6-4b53-9f39-e77374e3753d
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 100%

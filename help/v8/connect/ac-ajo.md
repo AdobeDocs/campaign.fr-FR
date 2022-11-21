@@ -3,7 +3,8 @@ title: Utiliser Adobe Campaign et Adobe Journey Optimizer
 description: Découvrez comment utiliser Campaign et Journey Optimizer
 role: Admin, User
 level: Beginner, Intermediate
-source-git-commit: feba381b9874be3ebfbcf2a27ccd29a71385ed9d
+exl-id: 52d8e2a5-9fdf-498a-bdbd-13a9935a94d6
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 100%
@@ -24,4 +25,3 @@ Les étapes de base consistent à créer un modèle de message transactionnel da
 
 
 ![](../assets/do-not-localize/book.png) [En savoir plus dans la documentation Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=fr){target=&quot;_blank&quot;}.
-

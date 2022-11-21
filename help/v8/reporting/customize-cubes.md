@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Personnaliser vos cubes
-description: Découvrez les bonnes pratiques lors de l’implémentation de cubes dans Adobe Campaign
+description: Découvrez les bonnes pratiques relatives à l’implémentation des cubes dans Adobe Campaign.
 feature: Reporting
 role: Data Engineer
 level: Beginner
@@ -9,15 +9,15 @@ exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '1504'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Personnaliser vos cubes{#cube-custom}
 
-## Mise en classe des données {#data-binning}
+## Compartimentage des données {#data-binning}
 
-Utilisez la mise en classe des données pour simplifier l’affichage des données en regroupant les valeurs selon les critères. Selon les informations dont vous disposez, vous pouvez définir des tranches d&#39;âge, regrouper les domaines d&#39;email, restreindre à une énumération de valeurs, restreindre explicitement les données à afficher et regrouper toutes les autres données dans une ligne ou une colonne dédiée, etc.
+Utilisez le compartimentage des données pour simplifier l’affichage des données en regroupant les valeurs selon des critères. Selon les informations dont vous disposez, vous pouvez définir des tranches d’âge, regrouper des domaines de messagerie, vous limiter à une énumération de valeurs, restreindre explicitement les données à afficher et regrouper toutes les autres données dans une ligne ou une colonne dédiée, etc.
 
 Globalement, trois types de mise en classe sont possibles :
 
@@ -51,7 +51,7 @@ Vous pouvez utiliser un masque SQL pour regrouper plusieurs valeurs selon un fil
 
 <!--In the example below, all email domains that start with **yahoo** (yahoo.fr, yahoo.com, yahoo.be, etc.), or with **ymail** (ymail.com, ymail.eu, etc.) will be grouped under the label **YAHOO!**, as well as addresses with the **rocketmail.com** domain.-->
 
-### Gérer dynamiquement les classes {#dynamically-manage-bins}
+### Gérer les compartiments de manière dynamique {#dynamically-manage-bins}
 
 Les valeurs peuvent être gérées dynamiquement via les énumérations. Ainsi, seules les valeurs contenues dans l&#39;énumération seront affichées. Lorsque les valeurs de l&#39;énumération sont modifiées, le contenu du cube est adapté automatiquement.
 
@@ -78,13 +78,13 @@ Vous pouvez également générer automatiquement les classes. Pour cela, cliquez
 
 Vous pouvez, au choix :
 
-* **[!UICONTROL Récupérer les valeurs les plus représentées]**
+* **[!UICONTROL Récupérer les valeurs les plus utilisées]**
 
-   Si vous générez 4 classes, les 4 valeurs les plus fréquemment utilisées seront affichées, tandis que les autres seront comptabilisées et regroupées dans la catégorie &quot;Autres&quot;.
+   Si vous générez 4 compartiments, les 4 valeurs les plus utilisées seront affichées, les autres seront comptabilisées et regroupées sous le libellé « Autres ».
 
-* **[!UICONTROL Générer les classes sous forme de plages]**
+* **[!UICONTROL Générer les compartiments sous forme de plages]**
 
-   Pour le même exemple, Adobe Campaign crée automatiquement 4 plages de valeurs de même taille pour afficher les valeurs de la base de données.
+   Pour le même échantillon, Adobe Campaign crée automatiquement 4 plages de valeurs de même taille pour afficher les valeurs de la base de données.
 
 Dans ce cas, le filtre sélectionné au niveau du schéma des faits est ignoré.
 
@@ -142,7 +142,7 @@ Pour créer un nouvel agrégat, les étapes sont les suivantes :
 
 Les types de mesures à réaliser sont définis dans l&#39;onglet **[!UICONTROL Mesures]** du cube. Vous pouvez calculer des sommes, des moyennes, des écarts, etc.
 
-Il est possible de créer autant de mesures que nécessaire : vous choisirez ensuite celle que vous souhaitez afficher ou masquer dans le tableau. Pour plus d&#39;informations, consultez [cette section](#displaying-measures).
+Il est possible de créer autant de mesures que nécessaire : vous choisirez ensuite celle que vous souhaitez afficher ou masquer dans le tableau. Pour plus d’informations, consultez [cette section](#displaying-measures).
 
 Pour définir une nouvelle mesure, les étapes sont les suivantes :
 
@@ -160,11 +160,11 @@ Pour définir une nouvelle mesure, les étapes sont les suivantes :
 
 1. Saisissez le libellé de la mesure et ajoutez une description, puis cliquez sur **[!UICONTROL Terminer]** pour créer la mesure.
 
-## Personnalisation des mesures {#display-measures}
+## Personnaliser les mesures {#display-measures}
 
-Vous pouvez paramétrer l&#39;affichage des mesures dans le tableau selon vos besoins. Vous pouvez ainsi choisir :
+Vous pouvez paramétrer l’affichage des mesures dans le tableau selon vos besoins. Vous pouvez ainsi choisir :
 
-* l’ordre d’affichage des mesures. [En savoir plus](#display-sequence)
+* la séquence d’affichage des mesures. [En savoir plus](#display-sequence)
 * les informations à afficher/masquer dans le rapport. [En savoir plus](#configuring-the-display)
 * les mesures à afficher : pourcentage, total, nombre de décimales, etc. [En savoir plus](#changing-the-type-of-measure-displayed)
 
@@ -226,7 +226,7 @@ Pour cela :
 
 1. Une fois créé, le filtre apparaît au-dessus du rapport.
 
-   Cliquez sur le filtre pour l&#39;éditer. Cliquez sur la croix pour supprimer le filtre.
+   Cliquez sur le filtre pour l’éditer. Cliquez sur la croix pour supprimer le filtre.
 
    Vous pouvez combiner autant de filtres que nécessaire : ils seront tous affichés dans cette zone.
 

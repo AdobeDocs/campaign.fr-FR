@@ -1,32 +1,32 @@
 ---
-title: Rapports intégrés Adobe Campaign
+title: Rapports intégrés d’Adobe Campaign
 description: Rapports intégrés
 feature: Reporting
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# Rapports intégrés Adobe Campaign{#ootb-reports}
+# Rapports intégrés d’Adobe Campaign{#ootb-reports}
 
-Cette page fournit la liste des rapports intégrés d’Adobe Campaign, leur contenu et leur contexte. Adobe Campaign fournit toute une gamme de rapports intégrés, accessibles avec la console cliente ou un navigateur Internet.
+Cette page fournit la liste des rapports intégrés d’Adobe Campaign, leur contenu et leur contexte. Toute une gamme de rapports intégrés est comprise dans Adobe Campaign. Vous pouvez y accéder à partir de la console cliente ou d’un navigateur Internet.
 
 Les types de rapports disponibles sont les suivants :
 
-* Rapports sur l’ensemble de la plateforme. [En savoir plus](global-reports.md).
-* Rapports sur les diffusions. [En savoir plus](delivery-reports.md).
+* Rapports concernant l’ensemble de la plateforme. [En savoir plus](global-reports.md).
+* Rapports de diffusion. [En savoir plus](delivery-reports.md).
 
-Vous pouvez accéder aux rapports natifs depuis la page d&#39;accueil de Campaign, le tableau de bord des rapports dédiés ou la liste des diffusions. La manière dont le rapport s’affiche dans l’interface utilisateur dépend de son contexte.
+Vous pouvez accéder aux rapports intégrés à partir de la page d’accueil de Campaign, du tableau de bord des rapports dédié ou de la liste des diffusions. La façon dont le rapport s’affiche dans l’interface utilisateur dépend de son contexte.
 
-Une liste de rapports clés est disponible sur la page d&#39;accueil et permet d&#39;accéder rapidement aux données de diffusion. Cette liste peut être modifiée selon vos besoins. Vous pouvez également apprendre à ajouter vos propres rapports à l&#39;onglet **[!UICONTROL Rapports.]**
+Une liste des principaux rapports est disponible sur la page d’accueil et permet d’accéder rapidement aux données de diffusion. Cette liste peut être modifiée en fonction de vos besoins. Vous pouvez également apprendre à ajouter vos propres rapports à l’onglet **[!UICONTROL Rapports.]**
 
-Pour plus d’informations sur ces configurations personnalisées, reportez-vous à cette section [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html).
+Pour plus d’informations sur ces configurations personnalisées, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=fr).
 
 
-## Accès aux rapports natifs {#access-ootb-reports}
+## Accès aux rapports intégrés {#access-ootb-reports}
 
 Pour accéder aux rapports natifs de Campaign :
 
@@ -55,7 +55,7 @@ Le principe est le même pour les listes, les services, les offres, etc., comme 
 
 ## Rapports sur les diffusions {#reports-on-deliveries}
 
-Les rapports natifs fournis par Adobe Campaign figurent dans le tableau ci-après.
+Les rapports intégrés fournis par Adobe Campaign figurent dans le tableau ci-après.
 
 Pour plus d&#39;informations sur le contenu de ces rapports, consultez [cette section](delivery-reports.md).
 
@@ -156,7 +156,7 @@ Pour plus d&#39;informations sur le contenu de ces rapports, consultez [cette se
 
 ## Rapports sur les opérations {#reports-on-campaigns}
 
-Les rapports sur les opérations portent sur les données de la table **nms:operation**.
+Les rapports sur les campagnes portent sur les données du tableau **nms:operation**.
 
 <table> 
  <tbody> 
@@ -213,7 +213,7 @@ Les rapports sur les opérations portent sur les données de la table **nms:oper
 
 ## Rapports sur les services {#reports-on-services}
 
-Les rapports sur les services portent sur les données de la table **nms:service**.
+Les rapports sur les services portent sur les données du tableau **nms:service**.
 
 <table> 
  <tbody> 
@@ -246,7 +246,7 @@ Les rapports sur les services portent sur les données de la table **nms:service
 
 ## Rapports sur les budgets {#budget-reports}
 
-Les rapports natifs fournis par Adobe Campaign figurent dans le tableau ci-après.
+Les rapports intégrés fournis par Adobe Campaign figurent dans le tableau ci-après.
 
 <table> 
  <tbody> 
@@ -300,7 +300,7 @@ Les rapports natifs fournis par Adobe Campaign figurent dans le tableau ci-apr�
 
 ## Rapports sur les simulations {#reports-on-simulations}
 
-Les rapports sur les simulations portent sur les données de la table **nms:simulation**.
+Les rapports sur les simulations portent sur les données du tableau **nms:simulation**.
 
 <table> 
  <tbody> 
@@ -333,7 +333,7 @@ Les rapports sur les simulations portent sur les données de la table **nms:simu
 
 ## Rapports sur les applications Web {#reports-on-web-applications}
 
-Les rapports sur les applications Web portent sur les données de la table **nms:webApp**.
+Les rapports sur les applications Web portent sur les données du tableau **nms:webApp**.
 
 <table> 
  <tbody> 

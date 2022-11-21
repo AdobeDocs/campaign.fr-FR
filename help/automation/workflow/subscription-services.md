@@ -3,7 +3,8 @@ product: campaign
 title: Services d’inscriptions
 description: En savoir plus sur l’activité de workflow des services d’inscriptions
 feature: Workflows, Targeting Activity, Subscription Services Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 919630ed-b39f-40e5-b893-f3a203713b15
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 100%

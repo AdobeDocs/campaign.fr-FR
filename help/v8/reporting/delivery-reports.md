@@ -6,35 +6,35 @@ exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '1173'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Rapports sur les diffusions {#delivery-reports}
+# Rapports de diffusion {#delivery-reports}
 
-Vous pouvez tracker l&#39;exécution des diffusions à partir de différents rapports accessibles depuis la vue d&#39;ensemble des diffusions.
+Vous pouvez suivre l’exécution des diffusions à partir de différents rapports accessibles depuis la vue d’ensemble des diffusions.
 
-Pour accéder aux rapports, procédez comme suit :
+Pour accéder aux rapports, suivez les étapes suivantes :
 
-1. Accédez au **[!UICONTROL Campagnes]** et cliquez sur l’onglet **[!UICONTROL Diffusion]** pour afficher la liste des diffusions.
-1. Cliquez sur le nom de la diffusion à laquelle vous souhaitez accéder pour les rapports.
+1. Accédez à l’onglet **[!UICONTROL Campagnes]** et cliquez sur le lien **[!UICONTROL Diffusion]** pour afficher la liste des diffusions.
+1. Cliquez sur le nom de la diffusion dont vous souhaitez accéder aux rapports.
 1. Sélectionnez l&#39;onglet **[!UICONTROL Résumé]** et cliquez sur le lien **[!UICONTROL Rapports]** pour accéder aux rapports propres à la diffusion.
 
    ![](assets/detailed-report-2.png)
 
    Par défaut, les rapports disponibles sont les suivants :
 
-   * **[!UICONTROL Débit des diffusions (Delivery throughput)]**
+   * **[!UICONTROL Débit de diffusion]**
    * **[!UICONTROL Partage vers les réseaux sociaux]**
    * **[!UICONTROL Statistiques des activités de partage]**
-   * **[!UICONTROL Hot clicks]**
+   * **[!UICONTROL Position des clics]**
    * **[!UICONTROL Statistiques de tracking]**
    * **[!UICONTROL URL et flux de clics]**
    * **[!UICONTROL Indicateurs de tracking]**
-   * **[!UICONTROL Echecs et retours]**
+   * **[!UICONTROL Échecs et retours]**
    * **[!UICONTROL Activités utilisateurs]**
-   * **[!UICONTROL Synthèse des diffusions (Delivery summary)]**
-   * **[!UICONTROL Tracking des abonnements]**
+   * **[!UICONTROL Synthèse des diffusions]**
+   * **[!UICONTROL Suivi des abonnements]**
    * **[!UICONTROL Statistiques de diffusion]**
    * **[!UICONTROL Répartition des ouvertures]**
 
@@ -62,7 +62,7 @@ Ce rapport regroupe les indicateurs clés qui permettent de suivre le comporteme
 * **[!UICONTROL Ouvertures distinctes pour la population atteinte]** : estimation du nombre de destinataires ciblés ayant ouvert un message au moins une fois. Les clics sur les URL trackées sont pris en compte, car il faut ouvrir les e-mails pour cliquer sur un lien.
 * **[!UICONTROL Somme des ouvertures sur la population atteinte]** : Estimation du nombre total d&#39;ouvertures effectuées par des destinataires ciblés.
 * **[!UICONTROL Clics sur le lien d&#39;opt-out]** : Nombre de clics effectués sur le lien d&#39;opt-out.
-* **[!UICONTROL Clics sur le lien de la page miroir]** : Nombre de clics sur le lien vers la page miroir. Pour être pris en compte, le lien doit être défini comme tel dans l&#39;assistant de diffusion (URL trackées). <!--Refer to this [page](../../delivery/using/about-delivery-monitoring.md).-->
+* **[!UICONTROL Clics sur le lien de la page miroir]** : nombre de clics effectués sur le lien de la page miroir. Pour être pris en compte, le lien doit être défini comme tel dans l’assistant de diffusion (URL suivies). <!--Refer to this [page](../../delivery/using/about-delivery-monitoring.md).-->
 * **[!UICONTROL Estimation des transferts]** : Estimation du nombre d&#39;emails transférés par les destinataires cibles de la diffusion à d&#39;autres personnes. Cette valeur est calculée en effectuant la différence entre le nombre de personnes distinctes et le nombre de destinataires distincts ayant cliqué au moins une fois dans le mail.
 
    >[!NOTE]
@@ -81,9 +81,9 @@ Ce tableau de valeurs présente la répartition, par domaine Internet, des envoi
 
 >[!NOTE]
 >
->Les noms de domaine affichés dans ce rapport sont définis dans l&#39;énumération utilisée au niveau des cubes. Pour modifier, ajouter ou supprimer des domaines par défaut, modifiez la variable **[!UICONTROL Domaines]** énumère et modifiez les valeurs et les alias. Le **[!UICONTROL Autres]** category comprend les noms de domaine qui n’appartiennent à aucune valeur de l’énumération.
+>Les noms de domaine qui s’affichent dans ce rapport sont définis dans l’énumération utilisée au niveau des cubes. Pour modifier, ajouter ou supprimer des domaines par défaut, modifiez l’énumération **[!UICONTROL Domaines]**, et modifiez les valeurs et les alias. La catégorie **[!UICONTROL Autres]** regroupe les noms de domaine qui n’appartiennent à aucune valeur de l’énumération.
 >
->Découvrez comment accéder à et configurer vos énumérations dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=fr){target=&quot;_blank&quot;}.
+>Découvrez comment accéder à vos énumérations et la manière de les configurer dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=fr){target=&quot;_blank&quot;}.
 
 
 **[!UICONTROL 4. Flux de clics générés]**
@@ -190,7 +190,7 @@ Il vous permet de suivre l&#39;impact marketing de la diffusion. Vous pouvez par
 Ce rapport se présente sous la forme d&#39;un tableau de valeur et d&#39;un diagramme de Pareto permettant de mesurer le temps mis pour que la diffusion atteigne son efficacité maximum. Les indicateurs utilisés sont les suivants :
 
 * **[!UICONTROL Ouvertures]** : estimation du temps mis pour atteindre un pourcentage du nombre total de messages ouverts. Les emails au format texte ne sont pas comptabilisés. [En savoir plus](metrics-calculation.md#tracking-opens-).
-* **[!UICONTROL Clics]** : Estimation du temps mis pour atteindre un pourcentage du nombre total de clics enregistrés. Les clics sur le lien d&#39;opt-out et la page miroir ne sont pas pris en compte.
+* **[!UICONTROL Clics]** : estimation du temps nécessaire pour atteindre un pourcentage du nombre total de clics enregistrés. Les clics sur le lien de désinscription et la page miroir ne sont pas pris en compte.
 <!--
 * **[!UICONTROL Transactions]** : Time required to achieve a percentage of the total number of transactions following message reception. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
@@ -202,4 +202,4 @@ Vous pouvez afficher des rapports cumulés sur les diffusions. Pour cela, sélec
 
 Vous pouvez sélectionner des diffusions non consécutives dans la liste en maintenant la touche CTRL enfoncée pendant la sélection.
 
-Pour sélectionner des diffusions enregistrées dans un autre dossier, cliquez sur le bouton **[!UICONTROL Afficher les sous-niveaux]** , accessible dans la barre d’outils. Elles s’affichent alors dans la même liste.
+Pour sélectionner des diffusions enregistrées dans un autre dossier, cliquez sur l’icône **[!UICONTROL Afficher les fils]**, accessible dans la barre d’outils. Elles s’affichent alors dans la même liste.

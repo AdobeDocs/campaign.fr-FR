@@ -1,31 +1,31 @@
 ---
 product: campaign
-title: Utiliser des cubes pour créer des rapports sur les données
-description: Découvrez comment utiliser des cubes pour créer des rapports
+title: Utiliser des cubes pour créer des rapports sur mes données
+description: Découvrez comment utiliser les cubes pour créer des rapports.
 feature: Reporting
 exl-id: 7dbc66ab-a468-40ff-9db2-b33e4fd27754
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '977'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
-# Utilisation des cubes pour explorer les données{#use-cubes-to-create-reports}
+# Utiliser des cubes pour explorer les données{#use-cubes-to-create-reports}
 
-Utilisez les cubes pour créer des rapports, ainsi que pour identifier et sélectionner les données de la base de données. Vous pouvez ainsi :
+Utilisez des cubes pour créer des rapports, ainsi que pour identifier et sélectionner des données dans la base de données. Vous pouvez ainsi :
 
 * Créer des rapports basés sur des cubes. [En savoir plus](#explore-the-data-in-a-report).
-* Collecter des données de la base et les regrouper dans des listes, par exemple pour identifier et construire les cibles des diffusions. [En savoir plus](#build-a-target-population).
-* Insérer un tableau croisé dynamique dans un rapport, au sein duquel vous référencez un cube existant. [En savoir plus](#insert-a-pivot-table-into-a-report).
+* Collecter des données de la base de données et les regrouper dans des listes, par exemple pour identifier et construire des cibles et des diffusions. [En savoir plus](#build-a-target-population).
+* Insérez un tableau croisé dynamique dans un rapport, au sein duquel vous référencez un cube existant. [En savoir plus](#insert-a-pivot-table-into-a-report).
 
 ## Exploration des données dans un rapport {#explore-the-data-in-a-report}
 
 ### Étape 1 : création dʼun rapport basé sur un cube {#step-1---create-a-report-based-on-a-cube}
 
-Une fois que la variable [cube configuré](cube-indicators.md), il peut être utilisé comme modèle pour créer un nouveau rapport.
+Une fois le [cube paramétré](cube-indicators.md), il peut être utilisé comme modèle pour créer un rapport.
 
-Pour créer un rapport basé sur un cube existant, procédez comme suit :
+Pour créer un rapport basé sur un cube existant, procédez comme suit :
 
 1. Cliquez sur le bouton **[!UICONTROL Créer]** de l’onglet **[!UICONTROL Rapports]** et sélectionnez le cube que vous venez de créer.
 
@@ -51,7 +51,7 @@ Les boutons **[!UICONTROL Ajouter]** situés sur chacun des axes permettent d&#3
 
 ![](assets/cube-switch.png)
 
-1. Sélectionnez les dimensions à afficher dans les lignes et colonnes du tableau. Pour ce faire, faites glisser les dimensions disponibles.
+1. Sélectionnez les dimensions à afficher dans les lignes et colonnes du tableau. Pour ce faire, faites glisser et déposez les dimensions disponibles.
 1. Sélectionnez la dimension à ajouter dans le tableau, parmi celles disponibles :
    ![](assets/cube-select-dimension.png)
 
@@ -59,11 +59,11 @@ Les boutons **[!UICONTROL Ajouter]** situés sur chacun des axes permettent d&#3
 
    ![](assets/cube-dimension-param.png)
 
-   Ces paramètres dépendent du type de données de la dimension sélectionnée.
+   Les paramètres disponibles varient selon le type de données de la dimension sélectionnée.
 
    Par exemple, pour les dates, plusieurs niveaux peuvent être disponibles. Pour plus dʼinformations, consultez la section [Affichage des mesures](customize-cubes.md#display-measures).
 
-   Dans ce cas, les options suivantes sont disponibles :
+   À titre d’exemple, les options suivantes sont disponibles :
 
    ![](assets/cube-config.png)
 
@@ -85,17 +85,17 @@ Les boutons **[!UICONTROL Ajouter]** situés sur chacun des axes permettent d&#3
 
 Une fois les lignes et les colonnes définies, sélectionnez les mesures à afficher. Par défaut, une seule mesure s’affiche.
 
-Pour ajouter et configurer des mesures, procédez comme suit :
+Pour ajouter et configurer des mesures, procédez comme suit :
 
 1. Cliquez sur le bouton **[!UICONTROL Mesures]**.
 
    ![](assets/cube-measure-button.png)
 
-1. Dans la **[!UICONTROL Utiliser une mesure]** , sélectionnez une des mesures existantes.
+1. À l’aide du bouton **[!UICONTROL Utiliser une mesure]**, sélectionnez une des mesures existantes.
 
    ![](assets/cube-add-measure.png)
 
-   Choisissez les informations à afficher et les options de formatage. La liste des options dépend du type de mesure.
+   Choisissez les informations à afficher et les options de mise en forme. La liste des options disponibles varie selon le type de mesure sélectionné.
 
    ![](assets/cube-measure-options.png)
 
@@ -105,7 +105,7 @@ Pour ajouter et configurer des mesures, procédez comme suit :
 
    Vous pouvez notamment choisir d&#39;afficher ou non les libellés des mesures. [En savoir plus](customize-cubes.md#configure-the-display).
 
-1. Vous pouvez créer de nouvelles mesures basées sur des mesures existantes. Pour ce faire, cliquez sur **[!UICONTROL Créer une mesure]** et configurez-le.
+1. Vous pouvez créer des mesures basées sur des mesures existantes. Pour ce faire, cliquez sur **[!UICONTROL Créer une mesure]** et configurez-la.
 
    ![](assets/cube-create-new-measure.png)
 
@@ -119,19 +119,19 @@ Pour ajouter et configurer des mesures, procédez comme suit :
    * Variation : cette mesure permet de calculer la variation des valeurs d&#39;un niveau.
    * Ecart à la moyenne : ce type de mesure permet de calculer les écarts dans chaque groupe de cellules correspondantes, par rapport à la moyenne des valeurs. Vous pouvez par exemple comparer le volume des ventes pour chaque segment existant.
 
-   Une fois créée, la mesure est ajoutée dans le rapport.
+   Sitôt créée, la mesure est ajoutée dans le rapport.
 
    ![](assets/cube-display-new-measure.png)
 
-   Une fois que vous avez créé une mesure, vous pouvez l&#39;éditer et en modifier le paramétrage. Pour ce faire, cliquez sur le bouton **[!UICONTROL Mesures]** , puis accédez à l’onglet de la mesure à modifier.
+   Celle-ci peut toujours être configurée et modifiée ultérieurement. Pour ce faire, cliquez sur le bouton **[!UICONTROL Mesures]**, puis accédez à l’onglet de la mesure à modifier.
 
-   Cliquez ensuite sur le bouton **[!UICONTROL Editer la mesure dynamique]** pour accéder aux paramétrages.
+   Cliquez ensuite sur le bouton **[!UICONTROL Modifier la mesure dynamique]** pour accéder au menu des paramètres.
 
 ## Construction dʼune population cible {#build-a-target-population}
 
-Les rapports construits à partir des cubes permettent de collecter des données de la base et les sauvegarder dans une liste.
+Les rapports construits à partir des cubes permettent de collecter des données dans le tableau et de les sauvegarder dans une liste.
 
-Pour regrouper une population dans une liste, procédez comme suit :
+Pour regrouper une population dans une liste, procédez comme suit :
 
 1. Cliquez sur les cellules contenant les populations à collecter pour les sélectionner, puis cliquez sur l&#39;icône **[!UICONTROL Ajouter au panier]**.
 
@@ -143,9 +143,9 @@ Pour regrouper une population dans une liste, procédez comme suit :
 
    ![](assets/cube-show-cart.png)
 
-1. Utilisez la variable **[!UICONTROL Exporter]** pour regrouper les éléments du panier dans une liste.
+1. Utilisez le bouton **[!UICONTROL Exporter]** pour regrouper les éléments du panier dans une liste.
 
-   Saisissez le nom de la liste et sélectionnez le type d&#39;export à réaliser.
+   Saisissez le nom de la liste, puis sélectionnez le type d’export à réaliser.
 
    ![](assets/cube-export-report.png)
 
@@ -157,15 +157,15 @@ Pour regrouper une population dans une liste, procédez comme suit :
 
    Vous pouvez choisir de conserver le contenu du panier ou de le vider.
 
-   La nouvelle liste est accessible à partir du **[!UICONTROL Profils et cibles]** .
+   La nouvelle liste est accessible à partir de l’onglet **[!UICONTROL Profils et cibles]**.
 
    ![](assets/cube-list-available.png)
 
-## Insertion dʼun tableau croisé dynamique dans un rapport {#insert-a-pivot-table-into-a-report}
+## Insérer un tableau croisé dynamique dans un rapport {#insert-a-pivot-table-into-a-report}
 
-Pour créer un tableau et explorer les données d&#39;un cube, procédez comme suit :
+Pour créer un tableau et explorer les données d’un cube, procédez comme suit :
 
-1. Créez un nouveau rapport, avec une seule page, et insérez un tableau pivot dynamique.
+1. Créez un nouveau rapport, avec une seule page, et insérez un tableau croisé dynamique.
 
    ![](assets/cube-insert-in-report.png)
 
@@ -173,4 +173,4 @@ Pour créer un tableau et explorer les données d&#39;un cube, procédez comme s
 
    ![](assets/cube-selected-in-report.png)
 
-   Vous pourrez ainsi construire le rapport à afficher. Voir à ce sujet la section [Etape 2 - Sélection des lignes et colonnes](#step-2---select-lines-and-columns).
+   Vous pourrez ainsi construire le rapport à afficher. Pour plus d’informations, consultez la section [Étape 2 - Sélectionner les lignes et les colonnes](#step-2---select-lines-and-columns).

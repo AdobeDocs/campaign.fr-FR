@@ -5,7 +5,7 @@ description: Découvrez comment configurer et implémenter des typologies de cam
 feature: Typology Rules
 exl-id: 7832ffe1-eb65-4b37-9fc5-1374516755d9
 source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 100%
 

@@ -3,7 +3,8 @@ product: campaign
 title: Exclusion
 description: En savoir plus sur l’activité de workflow d’exclusion
 feature: Workflows, Targeting Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 8ea831e2-8e6e-4ef0-ac05-f27ebf89ccb9
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 100%

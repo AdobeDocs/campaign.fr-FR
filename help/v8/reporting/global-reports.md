@@ -1,12 +1,12 @@
 ---
-title: Rapports globaux Adobe Campaign
-description: Découvrez comment accéder aux rapports globaux et les utiliser
+title: Rapports globaux d’Adobe Campaign
+description: Découvrez comment accéder aux rapports globaux et les utiliser.
 feature: Reporting, Monitoring
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '1895'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Vous pouvez paramétrer l&#39;affichage des valeurs en sélectionnant le périm�
 
 >[!NOTE]
 >
->Vous pouvez également surveiller le nombre de diffusions envoyées par heure à l’aide de la variable [Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=fr).
+>Vous pouvez également surveiller le nombre de diffusions envoyées par heure dans le [Panneau de contrôle](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=fr).
 >
 >Le Panneau de contrôle est accessible à tous les utilisateurs administrateurs. Les étapes permettant d&#39;octroyer un accès administrateur à un utilisateur sont présentées sur [cette page](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=fr#discover-control-panel).
 
@@ -59,7 +59,7 @@ Ce rapport présente la répartition des ouvertures, clics et transactions, par 
 Les options disponibles sont les suivantes :
 
 * **[!UICONTROL Ouvertures]** : Nombre total de messages ouverts. Les emails au format texte ne sont pas pris en compte. [En savoir plus](metrics-calculation.md#tracking-opens-).
-* **[!UICONTROL Clics]** : Nombre total de clics sur les liens des diffusions. Les clics sur les liens de désinscription et de page miroir ne sont pas pris en compte.
+* **[!UICONTROL Clics]** : Nombre total de clics sur les liens des diffusions. Les clics sur les liens de désinscription et les pages miroir ne sont pas pris en compte.
 <!--
 * **[!UICONTROL Transactions]** : Total number of transactions after a message is received. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
@@ -96,7 +96,7 @@ Les indicateurs utilisés sont les suivants :
 
    >[!NOTE]
    >
-   >Cet indicateur se rapporte aux diffusions sur [canaux mobiles](../send/send.md) uniquement.
+   >Cet indicateur ne porte que sur les diffusions sur les [canaux mobiles](../send/send.md).
 
    Vous pouvez déplier chaque ligne du tableau de valeurs en cliquant sur le symbole `[+]` correspondant. Cela permet d’afficher, pour chaque type d’erreur, la répartition des messages d’erreur, par domaine.
 
@@ -286,7 +286,7 @@ Les indicateurs utilisés sont les suivants :
 
    >[!NOTE]
    >
-   >Pour plus d&#39;informations sur les hard et soft bounces, reportez-vous à la section [cette page](../send/quarantines.md).
+   >Pour plus d’informations sur les hard et soft bounces, consultez [cette page](../send/quarantines.md).
 
 * **[!UICONTROL Ouvertures]** : pourcentage du nombre de destinataires ciblés distincts ayant ouvert au moins une fois un même message, par rapport au nombre de messages traités avec succès.
 * **[!UICONTROL Clics]** : Pourcentage du nombre de personnes distinctes ayant cliqué au moins une fois dans une même diffusion, par rapport au nombre de messages traités avec succès.
@@ -296,7 +296,7 @@ Les indicateurs utilisés sont les suivants :
 
 Ce rapport affiche la répartition des ouvertures par système d&#39;exploitation, par appareil, et par navigateur, sur la période sélectionnée. Pour chaque catégorie, deux graphiques sont utilisés. Le premier affiche les statistiques d&#39;ouvertures sur ordinateur et mobile. Le second affiche uniquement les statistiques d&#39;ouvertures sur mobiles.
 
-Le nombre d&#39;ouvertures correspond au nombre total de messages ouverts. Les emails au format texte ne sont pas comptabilisés. Pour plus d&#39;informations sur le tracking des ouvertures, reportez-vous à la section [cette section](metrics-calculation.md#tracking-opens-).
+Le nombre d&#39;ouvertures correspond au nombre total de messages ouverts. Les emails au format texte ne sont pas comptabilisés. Pour plus d’informations sur le tracking des ouvertures, consultez [cette section](metrics-calculation.md#tracking-opens-).
 
 ![](assets/user-agent-report.png)
 

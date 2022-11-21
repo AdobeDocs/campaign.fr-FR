@@ -1,6 +1,6 @@
 ---
-title: Prise en main des outils de reporting d’Adobe Campaign
-description: Mesurer le succès de vos campagnes et analyser le comportement des utilisateurs
+title: Prise en main des outils dédiés au reporting d’Adobe Campaign
+description: Mesurer le succès de vos campagnes et analyser le comportement des utilisateurs.
 feature: Reporting
 role: Data Engineer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: f931fc0d-12c1-4bff-a4f2-153e8d91c339
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -18,15 +18,15 @@ Adobe Campaign propose un ensemble d&#39;outils de reporting répertoriés dans
 
 * **Cubes**
 
-   Adobe Campaign s’accompagne d’un outil d’exploration des données intuitif pour créer des rapports dynamiques.
+   Adobe Campaign comprend un outil intuitif d’exploration des données permettant de créer des rapports dynamiques.
 
-   Utilisez les fonctionnalités d’analyse marketing pour analyser et mesurer les données, calculer les statistiques, simplifier et optimiser la création et le calcul de rapports. Vous pouvez créer des rapports, créer des populations cibles et les stocker dans des listes qui pourront être utilisées dans Adobe Campaign pour des tâches de ciblage ou de segmentation.
+   Utilisez les fonctionnalités de Marketing Analytics pour analyser et mesurer les données, calculer les statistiques, simplifier et optimiser la création et le calcul de rapports. Grâce à ce module, vous pouvez créer des rapports et des populations cibles, puis les stocker dans des listes à des fins de ciblage ou de segmentation dans Adobe Campaign.
 
    ![](assets/create-a-report.png)
 
-   Selon la complexité des requêtes, des calculs et des volumes manipulés, les données analysées dans ces rapports peuvent être collectées via une requête et préagrégées dans une liste (workflow de type &quot;data management&quot;) ou dans un cube (via l&#39;utilisation de Marketing Analytics). Elles sont ensuite affichées sous la forme d&#39;un tableau croisé dynamique ou d&#39;une liste avec regroupement.
+   Selon la complexité des requêtes, des calculs et des volumes manipulés, les données analysées dans ces rapports peuvent être collectées via une requête et préagrégées dans une liste (workflow de type « data management ») ou dans un cube (via l’utilisation de Marketing Analytics). Elles sont ensuite affichées sous la forme d’un tableau croisé dynamique ou d’une liste avec regroupement.
 
-   Pour plus d&#39;informations, consultez [cette section](gs-cubes.md).
+   Pour plus d’informations, consultez [cette section](gs-cubes.md).
 
 * **Rapports natifs**
 
@@ -36,7 +36,7 @@ Adobe Campaign propose un ensemble d&#39;outils de reporting répertoriés dans
 
    ![](assets/built-in-reports.png)
 
-   Pour plus d&#39;informations, consultez [cette section](built-in-reports.md).
+   Pour plus d’informations, consultez [cette section](built-in-reports.md).
 
 * **Analyse descriptive des données**
 
