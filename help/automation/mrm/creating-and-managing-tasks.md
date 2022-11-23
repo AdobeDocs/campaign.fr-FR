@@ -3,7 +3,7 @@ product: campaign
 title: Créer et gérer les tâches
 description: Créer et gérer les tâches
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-source-git-commit: 399c81276d29622a2161c8c90395df1a38954763
+source-git-commit: 094743fef69e137f80b670f0bf31dce56c282c34
 workflow-type: tm+mt
 source-wordcount: '3910'
 ht-degree: 84%
@@ -86,7 +86,7 @@ Vous pouvez sélectionner un autre opérateur dans la **[!UICONTROL Affecté à]
 
 >[!NOTE]
 >
->La gestion des opérateurs est présentée dans la section [cette section](../../v8/start/permissions.md).
+>La gestion des opérateurs est présentée dans la section [cette section](../../v8/start/gs-permissions.md).
 >
 >Seul l&#39;opérateur en charge d&#39;une tâche est autorisé à la clore.
 

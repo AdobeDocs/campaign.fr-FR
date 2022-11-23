@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: eed3396584940f99a865eef2358887b6bf5c4936
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 100%
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Découvrir l&#39;interface utilisateur de Campaign
 
-## Accéder à l&#39;interface utilisateur de Campaign
+## Accéder à l&#39;interface utilisateur de Campaign{#ui-access}
 
 L&#39;espace de travail de Campaign est disponible via la [console cliente](../architecture/general-architecture.md).
 
@@ -24,7 +24,7 @@ Découvrez comment installer et configurer la console cliente Campaign dans [cet
 
 Vous pouvez également utiliser un navigateur web pour accéder à Campaign. Dans ce contexte, seul un sous-ensemble des fonctionnalités de Campaign est disponible. [En savoir plus](#web-browser)
 
-## Parcourir l&#39;interface utilisateur
+## Parcourir l&#39;interface utilisateur{#ui-browse}
 
 Une fois connecté à Campaign, vous accédez à la page d&#39;accueil. Parcourez les liens pour accéder aux fonctionnalités. L&#39;ensemble des fonctionnalités disponibles dans l&#39;interface utilisateur dépend de vos options et autorisations.
 
@@ -79,7 +79,7 @@ La section supérieure affiche la liste des enregistrements dans le dossier acti
 La section inférieure affiche les détails de l&#39;enregistrement sélectionné.
 
 
-## Langues
+## Langues{#languages}
 
 L&#39;interface utilisateur de Campaign v8 est disponible dans les langues suivantes :
 

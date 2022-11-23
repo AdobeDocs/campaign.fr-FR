@@ -5,10 +5,10 @@ feature: Audiences, Profiles, Application Settings
 role: User
 level: Beginner, Intermediate
 exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
-source-git-commit: ec46a6f41d640b11306a88d6a966f81f8c2e43e0
+source-git-commit: 515520bb5b7131fc2ed2d1b2a843373f01af306a
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 100%
+source-wordcount: '703'
+ht-degree: 98%
 
 ---
 
@@ -107,31 +107,4 @@ Par exemple, le dossier ci-dessous contiendra uniquement des contacts avec une a
 
 ## Limiter l&#39;accès à un dossier{#restrict-access-to-a-folder}
 
-Utilisez les autorisations sur les dossiers pour organiser et contrôler l&#39;accès aux données de Campaign.
-
-Pour modifier les autorisations sur un dossier Campaign spécifique, procédez comme suit :
-
-1. Cliquez avec le bouton droit sur le dossier et sélectionnez **[!UICONTROL Propriétés...]**.
-1. Accédez à l&#39;onglet **[!UICONTROL Sécurité]** pour visualiser les autorisations sur ce dossier.
-
-   ![](assets/folder-permissions.png)
-
-* Pour **autoriser un groupe ou un opérateur**, cliquez sur le bouton **[!UICONTROL Ajouter]** et sélectionnez le groupe ou l&#39;opérateur auquel attribuer les autorisations pour ce dossier.
-* Pour **interdire un groupe ou un opérateur**, cliquez sur **[!UICONTROL Supprimer]** et sélectionnez le groupe ou l&#39;opérateur pour supprimer les autorisations pour ce dossier.
-* Pour **sélectionner les droits attribués à un groupe ou un opérateur**, cliquez sur le groupe ou l&#39;opérateur, sélectionnez les droits d&#39;accès que vous voulez attribuer, et décochez les autres.
-
-### Propager les autorisations {#propagate-permissions}
-
-Pour propager les autorisations et les droits d&#39;accès, sélectionnez l&#39;option **[!UICONTROL Propager]** dans les propriétés du dossier.
-
-Les autorisations définies dans cette fenêtre seront alors appliquées à tous les sous-dossiers du nœud actuel. Vous pouvez toujours surcharger ces autorisations pour chacun des sous-dossiers.
-
->[!NOTE]
->
->Le fait de décocher l&#39;option **[!UICONTROL Propager]** pour un dossier ne la désélectionne pas pour les sous-dossiers : vous devez la désélectionner explicitement pour chacun des sous-dossiers.
-
-### Accorder l&#39;accès à tous les opérateurs {#grant-access-to-all-operators}
-
-Dans l&#39;onglet **[!UICONTROL Sécurité]**, sélectionnez la variable **[!UICONTROL Dossier système]** pour permettre l&#39;accès à tous les opérateurs, quelles que soient leurs autorisations.
-
-Si cette option est désélectionnée, vous devez ajouter explicitement l&#39;opérateur (ou son groupe) dans la liste des autorisations pour qu&#39;il y ait accès.
+Utilisez les autorisations sur les dossiers pour organiser et contrôler l&#39;accès aux données de Campaign. En savoir plus sur les autorisations des dossiers dans [cette section](../start/folder-permissions.md).
