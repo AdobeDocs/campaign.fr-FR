@@ -8,7 +8,7 @@ exl-id: 0a6f6701-b137-4320-9732-31946509ee03
 source-git-commit: 51bba0a2b4be03577f508d352fc7c2b514ba28e5
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -115,7 +115,7 @@ Adobe Campaign v8 est fourni avec Snowflake comme base de données principale.
 
 ### Disponibilité des fonctionnalités {#feature-availability}
 
-Certaines fonctionnalités ne sont pas disponibles dans le cadre d&#39;un déploiement Enterprise (FFDA) de Campaign, par exemple :
+Certaines fonctionnalités ne sont pas disponibles dans le cadre d’un déploiement Grands comptes (FFDA) de Campaign, telles que :
 
 * Gestion des ressources marketing
 * Coupons

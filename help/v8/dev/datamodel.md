@@ -1,6 +1,6 @@
 ---
 title: Prise en main du modèle de données de Campaign
-description: Prise en main du modèle de données Campaign et exploitation des données de vos sources pour bénéficier de vos sorties de communication et de marketing.
+description: Commencez avec le modèle de données Campaign et l’utilisation des données provenant de vos sources pour améliorer vos sorties de communication et de marketing.
 feature: Data Model
 role: Data Engineer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -40,8 +40,8 @@ Lorsque vous commencez à utiliser Adobe Campaign, vous devez évaluer le modè
 
 Vous pouvez utiliser la table des destinataires par défaut avec les champs d&#39;usine, comme décrit dans [cette section](#ootb-profiles). Le cas échéant, vous pouvez l&#39;étendre avec deux mécanismes :
 
-* [Étendez une table existante](extend-schema.md) avec de nouveaux champs. Par exemple, vous pouvez ajouter un nouveau champ « Fidélité » à la table des destinataires.
-* [Créer un tableau](create-schema.md), par exemple une table &quot;Achat&quot; répertoriant tous les achats effectués par chaque profil de la base de données, et la lier à la table des destinataires.
+* [Étendez une table existante](extend-schema.md) avec de nouveaux champs. Par exemple, vous pouvez ajouter un nouveau champ « Fidélité » au tableau des destinataires.
+* [Créez un tableau](create-schema.md), par exemple un tableau « Achat » répertoriant tous les achats effectués par chaque profil de la base de données, et liez-le au tableau des destinataires.
 
 ![](../assets/do-not-localize/glass.png) Découvrez les bonnes pratiques d&#39;utilisation du modèle de données Campaign dans [cette section](datamodel-best-practices.md).
 

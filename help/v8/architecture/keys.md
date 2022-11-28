@@ -28,7 +28,7 @@ Pour préserver la cohérence de la base de données relationnelle, il est oblig
 
 ## Unicity Service{#unicity-service}
 
-Unicity Service est un composant Cloud Database Manager qui permet aux utilisateurs de préserver et surveiller l’intégrité des contraintes de clé uniques dans les tables Cloud Database. Le risque d’insertion de clés en double est ainsi réduit.
+Unicity Service est un composant Cloud Database Manager qui permet aux utilisateurs de préserver et surveiller l’intégrité des contraintes de clé uniques dans les tables Cloud Database. Cela permet de réduire le risque d’insertion de clés en double.
 
 Comme Cloud Database n’applique pas les contraintes d’unicité, Unicity Service réduit le risque d’insertion de doublons lors de la gestion des données avec Adobe Campaign.
 

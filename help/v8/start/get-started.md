@@ -1,6 +1,6 @@
 ---
 title: Prise en main de Campaign v8
-description: Vous débutez sur Adobe Campaign ? Recherchez la documentation sur la mise en service et l’exécution de votre logiciel, ainsi que sur l’emplacement de départ de l’interface.
+description: Vous débutez sur Adobe Campaign ? Recherchez la documentation sur la mise en service et l’exécution de votre logiciel, ainsi que sur l’utilisation de l’interface.
 feature: Overview
 role: Admin, Developer, User
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
 source-wordcount: '867'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

@@ -18,7 +18,7 @@ Dans cette section, vous apprendrez comment adapter Adobe Campaign aux exigence
 
 1. **Définition des paramètres** : octroi d&#39;accès, partage de la console cliente, configuration de canaux (e-mail, push, sms).
 1. **Préparation de votre environnement** : import de profils, création d&#39;audiences, conception de modèles de workflows et de campagnes, création de règles de typologie.
-1. **Personnalisation de votre instance** : création de champs de données, ajout de tables/schémas.
+1. **Personnaliser votre instance** : création de champs de données, ajout de tables/schémas.
 1. **Extension de votre déploiement** : connexion à des solutions Adobe, autres produits et systèmes - connecteurs, paramètres de solutions multiples.
 
 >[!CAUTION]
@@ -97,7 +97,7 @@ Avant de commencer à envoyer des messages et à créer des campagnes marketing,
 
    ![](../assets/do-not-localize/glass.png) [En savoir plus sur le modèle de données de Campaign](../dev/datamodel.md).
 
-## Personnalisation de votre instance
+## Personnaliser votre instance
 
 Vous pouvez personnaliser de nombreuses zones et fonctionnalités Campaign. La plupart de nos clients personnalisent trois choses :
 

@@ -4,7 +4,8 @@ description: Découvrez comment octroyer des autorisations pour Campaign v8 uti
 feature: Permissions
 role: User, Admin
 level: Beginner
-source-git-commit: b63dc1616bc7ce1387a7bd0590c289b59f11b33f
+exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
+source-git-commit: b96ac3bd2365c548d071e626721d606dd33200b5
 workflow-type: tm+mt
 source-wordcount: '1756'
 ht-degree: 47%

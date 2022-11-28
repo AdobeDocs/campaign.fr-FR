@@ -108,6 +108,6 @@ Le tableau ci-dessous montre comment les KPI et les statuts des envois sont mis 
 |--- |--- |--- |
 | Le message est relayé avec succès de Campaign vers le MTA. | Le pourcentage **[!UICONTROL Succès]** n’est pas affiché (démarre à 0 %) | Pris en compte par le prestataire |
 | Les messages hard bounce sont renvoyés du MTA. | Aucun changement du pourcentage **[!UICONTROL Succès]** | En échec |
-| Les messages soft bounce sont renvoyés depuis le MTA. | Aucun changement du pourcentage **[!UICONTROL Succès]** | Pris en compte par le fournisseur de services |
+| Les messages soft bounce sont renvoyés depuis le MTA. | Aucun changement du pourcentage **[!UICONTROL Succès]** | Pris en compte par le prestataire |
 | Les reprises des messages soft bounce sont effectuées avec succès | Le pourcentage **[!UICONTROL Succès]** augmente en conséquence | Envoyés |
 | Échec des reprises des messages soft bounce | Aucun changement du pourcentage **[!UICONTROL Succès]** | En échec |

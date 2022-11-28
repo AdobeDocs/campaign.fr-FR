@@ -8,7 +8,7 @@ exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
 source-wordcount: '650'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Avec Adobe Campaign v8, les rapports de cube sont optimisés et offrent de mei
 
 ## Fonctionnalités non disponibles{#gs-unavailable-features}
 
-Certaines fonctionnalités ne sont pas disponibles dans le cadre d’une [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md) de Campaign, par exemple :
+Certaines fonctionnalités ne sont pas disponibles dans le cadre d’un [déploiement Grands comptes (FFDA)](../architecture/enterprise-deployment.md) de Campaign, par exemple :
 
 * Gestion des ressources marketing
 * Coupons
