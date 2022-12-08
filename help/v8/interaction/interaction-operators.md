@@ -8,7 +8,7 @@ exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
 source-git-commit: eed3396584940f99a865eef2358887b6bf5c4936
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -21,15 +21,15 @@ Deux types d&#39;opérateurs peuvent utiliser l&#39;interaction Campaign : **ch
 
 ## Créer un opérateur Chargé d&#39;offres{#offer-manager}
 
-1. Création d&#39;un opérateur. [En savoir plus](../start/manage-permissions.md#add-users)
-1. Accédez au **[!UICONTROL Groupes et droits nommés]** fenêtre, cliquez sur **[!UICONTROL Ajouter]** et sélectionnez la variable **[!UICONTROL Chargé d&#39;offres]** groupe.
+1. Créez un opérateur/une opératrice. [En savoir plus](../start/manage-permissions.md#add-users)
+1. Dans la fenêtre **[!UICONTROL Groupes et droits nommés]**, cliquez sur **[!UICONTROL Ajouter]** et sélectionnez le groupe **[!UICONTROL Chargé d’offres]**.
 
-Les autorisations associées aux gestionnaires d’offres sont décrites [here](../start/manage-permissions.md#ootb-productprofiles)
+Les autorisations associées aux chargés d’offres sont décrites [ici](../start/manage-permissions.md#ootb-productprofiles).
 
-## Créer un opérateur Chargé de diffusion {#delivery-manager}
+## Créer un opérateur/une opératrice Chargé(e) de diffusion {#delivery-manager}
 
-1. Création d&#39;un opérateur. [En savoir plus](../start/manage-permissions.md#add-users)
-1. Accédez au **[!UICONTROL Groupes et droits nommés]** , cliquez sur **[!UICONTROL Ajouter]** et sélectionnez la variable **[!UICONTROL Chargé de diffusion]** groupe.
+1. Créez un opérateur/une opératrice. [En savoir plus](../start/manage-permissions.md#add-users)
+1. Accédez à l’onglet **[!UICONTROL Groupes et droits nommés]**, cliquez sur **[!UICONTROL Ajouter]**, puis sélectionnez le groupe **[!UICONTROL Chargé de diffusion]**.
 
 Les droits attribués aux chargés de diffusion leur permettent d&#39;effectuer les opérations suivantes :
 

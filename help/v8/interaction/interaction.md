@@ -8,17 +8,17 @@ exl-id: 4da3e69a-6230-4c94-a6f1-4e8c01e854ba
 source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
 source-wordcount: '1627'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
 # Gestion des interactions en temps réel
 
-Campaign est fourni avec une **Interaction** qui permet de répondre en temps réel lors d&#39;une interaction avec un contact donné en lui proposant une ou plusieurs offres spécifiques. Ces offres peuvent être de simples messages de communication, des offres spéciales sur un ou plusieurs produits ou un service.
+Campaign comprend un module **Interaction** qui permet de répondre en temps réel lors d’une interaction avec un contact donné en lui proposant une ou plusieurs offres adaptées. Il peut s’agir par exemple de messages de communication simples, d’offres spéciales sur un ou plusieurs produits ou d’un service.
 
-Vous pouvez créer un catalogue d&#39;offres qui interface vos canaux sortants (email, courrier, SMS) pour sélectionner la meilleure offre à envoyer à un contact dans un contexte donné. La meilleure sélection d&#39;offres pour un destinataire est basée sur des **règles d&#39;éligibilité**. La sélection d&#39;une offre à partir d&#39;un ensemble d&#39;offres pertinentes est déterminée à l&#39;aide de règles de priorité. Les règles de présentation d&#39;offre tiennent compte de l&#39;historique du contact et évitent de lui envoyer plusieurs fois la même offre.
+Vous pouvez créer un catalogue d’offres qui s’interface avec vos canaux sortants (e-mail, courrier, SMS) pour sélectionner la meilleure offre à envoyer à un contact dans un contexte donné. La meilleure sélection d&#39;offres pour un destinataire est basée sur des **règles d&#39;éligibilité**. La sélection d&#39;une offre à partir d&#39;un ensemble d&#39;offres pertinentes est déterminée à l&#39;aide de règles de priorité. Les règles de présentation des offres prennent en compte l’historique du contact et évitent de lui envoyer plusieurs fois la même offre.
 
-Interaction vous permet de créer et de gérer un catalogue d&#39;offres, et de paramétrer les règles d&#39;éligibilité et les thèmes d&#39;application qui leur sont associés. Vous pouvez personnaliser le contenu de votre offre selon le canal choisi à l&#39;aide de différentes représentations. Enfin, pour déterminer l&#39;impact d&#39;une présentation d&#39;offres, vous pouvez utiliser le module de simulation mis à votre disposition.
+Interaction vous permet de créer et de gérer un catalogue d’offres, et de paramétrer les règles d’éligibilité et les thèmes d’application qui leur sont associés. Vous pouvez personnaliser le contenu de votre offre selon le canal choisi à l’aide de différentes fonctions de rendu. Enfin, pour déterminer l’impact d’une présentation d’offres, vous pouvez utiliser le module de simulation mis à votre disposition.
 
 ![](assets/interaction-cycle.png)
 
@@ -28,7 +28,7 @@ Ce contact génère un appel au moteur d’offres. (1)
 
 Lorsque l’appel au moteur d’offres se produit, une ou plusieurs offres sont sélectionnées dans le catalogue d’offres en fonction du nombre de paramètres d’offres sur la proposition. (2)
 
-Ensuite, les règles d&#39;éligibilité sont appliquées : les meilleures offres sont sélectionnées en fonction des règles d’éligibilité, des dates de début et de fin des offres, des données de profil et du comportement en temps réel du client. (3)
+Ensuite, les règles d’éligibilité sont appliquées : les meilleures offres sont sélectionnées en fonction des règles d’éligibilité, des dates de début et de fin des offres, des données de profil et du comportement en temps réel du client ou de la cliente. (3)
 
 L’historique des propositions de profil est mis à jour une fois la sélection effectuée afin d’éviter la duplication des offres présentées. (4)
 
@@ -52,25 +52,25 @@ Si l&#39;emplacement est défini sur un canal unitaire en mode identifié, il es
    >
    >Si l’emplacement est défini sur un canal unitaire en mode identifié, il est nécessaire de spécifier les paramètres avancés de l’emplacement.
 
-1. Configurez le moteur d&#39;offres pour les interactions entrantes afin de proposer et mettre à jour une ou plusieurs offres.
+1. Paramétrez le moteur d’offres pour les interactions entrantes, afin de proposer et mettre à jour une ou plusieurs offres.
 
    Les différents modes d’intégration sont décrits dans [cette section](interaction-present-offers.md).
 
    >[!NOTE]
    >
-   >Lorsqu&#39;un emplacement est créé sur le canal web entrant, vous devez configurer le site web pour afficher cette offre.
+   >Lorsqu’un emplacement est créé sur le canal web entrant, vous devez configurer le site web pour afficher cette offre.
 
-### Création et publication du catalogue d&#39;offres {#managing-the-offer-catalog-}
+### Créer et publier le catalogue d’offres {#managing-the-offer-catalog-}
 
-En tant que **Chargé d&#39;offres** vous devez :
+En tant que **Chargé(e) d’offres**, vous devez :
 
-1. Créer des catégories d&#39;offres dans des environnements en édition. [En savoir plus](interaction-offer-catalog.md#creating-offer-categories)
+1. Créer des catégories d’offres dans des environnements en édition. [En savoir plus](interaction-offer-catalog.md#creating-offer-categories)
 1. Créer des offres dans des environnements en édition. [En savoir plus](interaction-offer.md)
-1. Validez et publiez des offres sur un ou plusieurs emplacements afin de les rendre disponibles dans les environnements en ligne pour le chargé de diffusion. [En savoir plus](interaction-offer.md#approve-offers)
+1. Valider et publier des offres sur un ou plusieurs emplacements afin de les rendre disponibles dans les environnements en ligne pour le chargé/la chargée de diffusion. [En savoir plus](interaction-offer.md#approve-offers)
 
-### Utiliser le catalogue d&#39;offres {#using-the-offer-catalog-}
+### Utiliser le catalogue d’offres {#using-the-offer-catalog-}
 
-Comme **Chargé de diffusion**  vous devez :
+En tant que **Chargé(e) de diffusion**, vous devez :
 
 1. Créer une campagne.
 1. Référencer une offre dans la campagne ou la diffusion. [En savoir plus](interaction-send-offers.md).
@@ -79,22 +79,22 @@ Comme **Chargé de diffusion**  vous devez :
 
 Découvrez les termes spécifiques aux offres et les conseils connexes avant de commencer.
 
-* **Environnement**: qui comprend un catalogue d&#39;offres et des points d&#39;extension (emplacements). Créez un environnement par dimension de ciblage. Il existe deux types d&#39;environnements :
+* **Environnement** : ensemble comprenant un catalogue d’offres et des points d’extension (emplacements). Créez un environnement par dimension de ciblage. Il existe deux types d’environnements :
 
-   * **Environnement de conception**: environnement dans lequel les offres sont créées et/ou les règles de typologie sont définies (règles qui déterminent les offres à présenter ou non à une personne ciblée). La table des individus à cibler par les offres et la table de stockage de toutes les propositions d&#39;offres sont également définies dans cette table. Le **[!UICONTROL Environnement de conception]** contient les sous-dossiers d’emplacements, les filtres prédéfinis et les catégories d’offres. Pour chaque **[!UICONTROL Environnement en édition]**, il existe un **[!UICONTROL Environnement en ligne]** correspondant, généré à partir de ce même **[!UICONTROL Environnement en édition]**.
-   * **Environnement en ligne**: environnement lié à un **[!UICONTROL Environnement de conception]**. Il contient des offres en lecture seule dont le contenu et l&#39;éligibilité ont été validés via le **[!UICONTROL Environnement de conception]**. Ils peuvent être affichés sur un site Web ou insérés dans un message.
+   * **Environnement en édition** : environnement dans lequel les offres sont créées et/ou les règles de typologie sont définies (règles qui déterminent les offres à présenter ou non à une personne ciblée). Le tableau des personnes à cibler par les offres et la table de stockage de toutes les propositions d’offres sont également définis dans cet environnement. Le nœud **[!UICONTROL Environnement en édition]** contient des sous-dossiers d&#39;’mplacements, des filtres prédéfinis et des catégories d’offres. Pour chaque **[!UICONTROL Environnement en édition]**, il existe un **[!UICONTROL Environnement en ligne]** correspondant, généré à partir de ce même **[!UICONTROL Environnement en édition]**.
+   * **Environnement en ligne** : environnement associé à un **[!UICONTROL Environnement en édition]** qui contient des offres en lecture seule dont le contenu et l’éligibilité ont été validés via l’**[!UICONTROL Environnement en édition]**. Ils peuvent être affichés sur un site web ou insérés dans un message.
 
-* **Emplacement**: dossier définissant l’emplacement d’exposition de l’offre. Lors de la définition d&#39;un espace, vous pouvez :
+* Un **emplacement** désigne un dossier définissant l’emplacement d’exposition de l’offre. Lors de la définition d’un emplacement, vous pouvez :
    * sélectionner le canal
-   * choisissez qu&#39;elle peut être utilisée en mode unitaire (par défaut : uniquement en mode batch)
-   * créer le contenu de l&#39;offre à l&#39;aide de fonctions de rendu ;
-   * spécifier les offres à présenter
+   * choisir d’utiliser le mode unitaire (ou par défaut, uniquement en mode Lot)
+   * créer le contenu de l’offre à l’aide de fonctions de rendu
+   * indiquer les offres à présenter
 
-   Un espace est une interface entre le canal et le moteur d&#39;offres.
+   Un emplacement est une interface entre le canal et le moteur d’offres.
 
    >[!CAUTION]
    >
-   >Un emplacement n&#39;est pas un canal de communication, il correspond à un lieu d&#39;exposition sur le canal. Par exemple, les offres exposées sur un site web peuvent occuper deux emplacements sur la même page. Dans ce cas, vous disposez de deux espaces pour le même canal.
+   >Un emplacement n’est pas un canal de communication, il correspond à un lieu d’exposition sur le canal. Par exemple, les offres exposées sur un site web peuvent occuper deux emplacements sur la même page. Dans ce cas, vous avez deux espaces pour le même canal.
    >
    >Les emplacements doivent être définis dans le cahier des charges et ne doivent pas être modifiés en cours de projet.
 
@@ -107,15 +107,15 @@ Découvrez les termes spécifiques aux offres et les conseils connexes avant de 
    >
    >Les catégories enfants héritent des thèmes définis au niveau de la catégorie parent.
 
-* **Règles d’éligibilité**: contraintes appliquées à un environnement, une catégorie ou une offre concernant la période de validité, la cible et le poids. Elles vous permettent de vous assurer qu’une offre est en phase avec le contact ciblé.
+* **Règles d’éligibilité** : contraintes appliquées à un environnement, à une catégorie ou à une offre, portant sur la période de validité, les cibles et le poids. Elles permettent de s’assurer qu’une offre est en adéquation avec un contact ciblé.
 
-   Au niveau des environnements, les règles d&#39;éligibilité comprennent les règles de présentation appliquées aux offres et les personnes à cibler.
+   Au niveau des environnements, les règles d’éligibilité comprennent les règles de présentation appliquées aux offres et les personnes à cibler.
 
-   Dans les catégories, les règles d&#39;éligibilité permettent : limitez la validité de la catégorie dans le temps, définissez des thèmes d’application et déterminez les personnes à cibler. Ils peuvent également recevoir un poids multiplicateur pour une période donnée. Vous pouvez ainsi partager les règles relatives aux offres d’autres catégories, ce qui simplifie leur gestion.
+   Dans les catégories, les règles d’éligibilité permettent aux opérateurs de limiter la validité de la catégorie dans le temps, de définir des thèmes d’application et de déterminer les personnes à cibler. Elles peuvent également définir un poids multiplicateur pour une période donnée. Ainsi, les opérateurs peuvent partager les règles relatives aux offres d’autres catégories et ainsi simplifier leur gestion.
 
-   Au niveau des offres, les règles d&#39;éligibilité permettent de limiter la validité des offres dans le temps et de déterminer les personnes à cibler.
+   Au niveau des offres, les règles d’éligibilité permettent de limiter la validité des offres dans le temps et de déterminer les personnes à cibler.
 
-* **Arbitrage**: sélection des offres à afficher dans un environnement (offres éligibles). Le principe d&#39;arbitrage classe les offres par priorité en fonction des critères définis dans les catégories, les offres et les offres contextuelles.
+* **Arbitrage** : sélection des offres à afficher dans un environnement donné (offres éligibles). Le principe de l’arbitrage permet de classer les offres par priorité en fonction des critères définis dans les catégories, les offres et les offres contextuelles.
 * **Contact** : contact à l&#39;origine d&#39;une interaction entrante. Lors du traitement de l&#39;appel au moteur, le contact est associé à une dimension de ciblage. On distingue deux types de contacts :
 
    * **[!UICONTROL Contact identifié]** : contact s&#39;étant volontairement identifié sur le canal. Dans les interactions sortantes, le contact est systématiquement identifié.
@@ -125,20 +125,20 @@ Découvrez les termes spécifiques aux offres et les conseils connexes avant de 
       >
       >Les contacts anonymes non identifiés sont rattachés à la dimension de ciblage des visiteurs.
 
-* **Interaction sortante** : appel vers le moteur dʼoffres à partir dʼune liste de contacts (utilisée pour la diffusion dʼe-mails, de publipostage direct, etc.). Les mêmes règles et processus sont appliqués à chaque contact. Ce type d’interaction est généralement traité en mode batch.
-* **Interaction entrante**: interaction faisant suite à un appel entrant généré par l’action d’un contact sur le canal. Ce type d&#39;interaction est généralement traité en mode unitaire.
-* **Mode batch**: le mode batch permet de sélectionner la meilleure offre pour un ensemble de contacts. Les règles d’éligibilité/priorisation sont appliquées à tous les contacts de l’ensemble. Ce mode est généralement appliqué aux interactions sortantes.
-* **Mode unitaire**: un seul contact est traité à la fois. Ce mode est généralement appliqué pour les interactions entrantes et les messages transactionnels.
-* **Mode d&#39;identification**: fait référence au statut d&#39;un contact :
+* **Interaction sortante** : appel vers le moteur dʼoffres à partir dʼune liste de contacts (utilisée pour la diffusion dʼe-mails, de publipostage direct, etc.). Les mêmes règles et processus sont appliqués à chaque contact. Ce type d’interaction est généralement traité en mode Lot.
+* **Interaction entrante** : interaction faisant suite à un appel entrant généré par l’action d’un contact sur le canal. Ce type d’interaction est généralement traité en mode unitaire.
+* **Mode Lot** : le mode Lot permet de sélectionner la meilleure offre pour un ensemble de contacts. Les règles d’éligibilité/hiérarchisation sont appliquées à tous les contacts de l’ensemble. Ce mode est généralement utilisé pour les interactions sortantes.
+* **Mode unitaire** : un seul contact est traité à la fois. Ce mode est généralement utilisé pour les interactions entrantes et les messages transactionnels.
+* Le **Mode d’identification** fait référence au statut d’un contact :
 
-   * **[!UICONTROL explicite]** : les contacts sont identifiés par leur connexion à l’interface du canal.
-   * **[!UICONTROL implicite]** : sont identifiés par un cookie (permanent ou session). Il peut être traité comme un contact anonyme ou identifié.
-   * **[!UICONTROL anonyme]** : Les contacts ne peuvent pas être identifiés.
+   * **[!UICONTROL explicite]** : les contacts sont identifiés par leur connexion à l’interface du canal.
+   * **[!UICONTROL implicite]** : les contacts sont identifiés par un cookie (permanent ou de session). Il peut être traité comme un contact anonyme ou identifié.
+   * **[!UICONTROL anonyme]** : les contacts ne peuvent pas être identifiés.
 
 * **Offre éligible** : offre répondant à des contraintes définies en amont pouvant être proposée de façon cohérente à une cible.
 * **Règles de présentation** : règles de typologie référencées au niveau de l&#39;environnement d&#39;offres permettant d&#39;exclure certaines offres en tenant compte de l&#39;historique des propositions.
-* **Poids**: formules permettant de calculer précisément la pertinence d&#39;une offre, afin de sélectionner l&#39;offre la plus pertinente. Les poids sont définis dans les offres. Les offres éligibles sont prises en compte dans l&#39;ordre décroissant de poids.
-* **Fonction de rendu**: fonction définie dans l&#39;emplacement afin de construire sa représentation en fonction des attributs définis dans l&#39;offre. Il existe trois modes de fonctions de rendu différents : HTML, XML et texte.
+* **Poids** : il s’agit de formules permettant de calculer de manière précise la pertinence d’une offre, afin de sélectionner l’offre la plus pertinente. Les poids sont définis dans les offres. Les offres éligibles sont prises en compte dans l&#39;ordre décroissant de poids.
+* **Fonction de rendu** : il s’agit d’une fonction définie au niveau de l’emplacement d’offre afin de construire son rendu de l’offre en fonction des attributs définis dans l’offre. Il existe trois modes de fonction de rendu différents : HTML, XML et texte.
 * **Proposition d&#39;offre** : résultat de l&#39;action qui consiste à présenter une ou plusieurs offres à un contact sur un emplacement donné (une bannière sur un site web, un email ou un SMS par exemple). Ce résultat est stocké dans la table des propositions d&#39;offre. Il n&#39;est cependant pas obligatoire de stocker les propositions.
 * **Simulation** : module permettant de tester la présentation d&#39;offres auprès des personnes à cibler avant de procéder à la véritable présentation.
 * **Prévisualisation** : aperçu de l&#39;offre telle qu&#39;elle apparaîtra dans son emplacement. La prévisualisation d&#39;une offre est accessible depuis la fenêtre de paramétrage des offres ou le profil d&#39;un contact.

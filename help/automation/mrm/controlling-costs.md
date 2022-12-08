@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Contrôle des coûts
+title: Contrôler les coûts
 description: Découvrez comment contrôler les coûts
 exl-id: 51f3add9-a083-4db1-84a6-3aaaeec0465c
 source-git-commit: e6b1790832be6331f4b27cc50b5d034ad738a822
 workflow-type: tm+mt
 source-wordcount: '2479'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Contrôle des coûts{#controlling-costs}
+# Contrôler les coûts{#controlling-costs}
 
-Adobe Campaign vous permet de contrôler les coûts marketing planifiés, engagés et facturés, et de les ventiler par catégorie à l’aide du module Marketing Resource Management.
+Adobe Campaign permet de contrôler les coûts marketing planifiés, engagés et facturés, et de les ventiler par catégories à l’aide du module Marketing Resource Management.
 
 Les coûts engagés au niveau des différents traitements d&#39;une opération sont imputés à un budget dont le montant est défini au préalable par la direction marketing. Les montants peuvent être ventilés en plusieurs catégories afin de permettre une meilleure lisibilité des informations et un reporting plus fin des investissements marketing.
 
@@ -24,21 +24,21 @@ Les étapes de mise en oeuvre de la gestion des budgets avec MRM sont les suivan
 
 1. Définissez le budget. [En savoir plus](#creating-a-budget).
 
-1. Définissez la méthode de calcul des coûts : Les structures de coûts sont définies pour les prestataires. [En savoir plus](../campaigns/providers--stocks-and-budgets.md).
+1. Définissez la méthode de calcul des coûts : les structures de coûts sont définies pour les prestataires. [En savoir plus](../campaigns/providers--stocks-and-budgets.md).
 
-1. Définissez les coûts de l&#39;opération (diffusions/tâches) : les coûts engendrés par les diffusions et les tâches sont renseignés unitairement ou globalement au niveau du modèle d&#39;opération. [En savoir plus](../campaigns/marketing-campaign-deliveries.md#compute-costs-and-stocks).
+1. Définissez les coûts de la campagne (diffusions/tâches) : les coûts engendrés par les diffusions et les tâches sont renseignés unitairement ou globalement au niveau du modèle de la campagne. [En savoir plus](../campaigns/marketing-campaign-deliveries.md#compute-costs-and-stocks).
 
-1. Consolidation : en fonction de l&#39;état d&#39;avancement des tâches, diffusions et opérations, les coûts seront calculés et répercutés sur le budget correspondant. Lorsque la création de l&#39;opération est suffisamment avancée, le statut de réalisation du budget de l&#39;opération peut être modifié en **[!UICONTROL Renseigné]**. Le coût calculé du programme est alors automatiquement renseigné avec les coûts calculés sur les opérations. [En savoir plus](#cost-commitment--calculation-and-charging).
+1. Consolidez : en fonction du statut de réalisation des tâches, des diffusions et de la campagne, les coûts seront calculés et répercutés au niveau du budget correspondant. Lorsque la création de la campagne est suffisamment avancée, le statut de réalisation du budget de la campagne peut être modifié en **[!UICONTROL Renseigné]**. Le coût calculé du programme est alors automatiquement renseigné avec les coûts calculés sur la cmapagne. [En savoir plus](#cost-commitment--calculation-and-charging).
 
 ## Créer un budget {#creating-a-budget}
 
-Pour créer un budget, procédez comme suit :
+Pour établir un budget, procédez comme suit :
 
-1. Accédez au **[!UICONTROL Gestion de campagne > Budgets]** noeud de l&#39;explorateur Campaign.
-1. Cliquez sur l&#39;icône **[!UICONTROL Nouveau]**, nommez et enregistrez le budget.
-1. Saisissez le montant initial : indiquez le montant alloué dans le champ correspondant. Les autres montants sont renseignés automatiquement. [En savoir plus](#calculating-amounts).
-1. Définissez la période de validité en indiquant les dates de début et de fin. Ces informations sont indicatives uniquement.
-1. Créez les catégories de dépenses auxquelles pourront être rattachés les coûts affectés à ce budget au niveau des opérations, diffusions, tâches, etc. [En savoir plus](#expense-categories).
+1. Accédez au nœud **[!UICONTROL Gestion de campagne > Budgets]** de l’explorateur Campaign.
+1. Cliquez sur l’icône **[!UICONTROL Nouveau]**, nommez et enregistrez le budget.
+1. Saisissez le montant initial : indiquez le montant alloué dans le champ correspondant. Les autres montants sont renseignés automatiquement. [En savoir plus](#calculating-amounts).
+1. Définissez la période de validité en indiquant les dates de début et de fin. Ces informations sont purement indicatives.
+1. Créez les catégories de dépenses auxquelles pourront être rattachés les coûts affectés à ce budget au niveau des campagnes, diffusions, tâches, etc. [En savoir plus](#expense-categories).
 
 ![](assets/s_ncs_user_budget_create_and_save.png)
 
@@ -141,7 +141,7 @@ En fonction des postes de coûts sélectionnés, les structures de coûts corres
 
 >[!NOTE]
 >
->Les postes et structures de coûts sont présentés dans la section [cette page](../campaigns/providers--stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories)
+>Les postes et structures de coûts sont présentés sur [cette page](../campaigns/providers--stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories).
 
 ## Engagement, calcul et imputation des coûts {#cost-commitment--calculation-and-charging}
 
@@ -274,7 +274,7 @@ Lorsque vous éditez le coût calculé, vous pouvez vérifier la ventilation des
 
 #### Étape 5 - Créer les tâches {#step-5---creating-tasks}
 
-Dans cette opération, nous allons ajouter les deux tâches pour lesquelles les structures de coûts étaient [créé précédemment](#step-2---configuring-the-service-provider-and-defining-the-cost-structures).
+Nous ajouterons à cette campagne les deux tâches pour lesquelles les structures de coûts ont été [créées précédemment](#step-2---configuring-the-service-provider-and-defining-the-cost-structures).
 
 Pour ce faire, dans le tableau de bord de la campagne, cliquez sur le bouton **[!UICONTROL Ajouter une tâche]**. Nommez la tâche et cliquez sur **[!UICONTROL Enregistrer]**.
 

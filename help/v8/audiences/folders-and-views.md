@@ -8,7 +8,7 @@ exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
 source-git-commit: 515520bb5b7131fc2ed2d1b2a843373f01af306a
 workflow-type: tm+mt
 source-wordcount: '703'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -107,4 +107,4 @@ Par exemple, le dossier ci-dessous contiendra uniquement des contacts avec une a
 
 ## Limiter l&#39;accès à un dossier{#restrict-access-to-a-folder}
 
-Utilisez les autorisations sur les dossiers pour organiser et contrôler l&#39;accès aux données de Campaign. En savoir plus sur les autorisations des dossiers dans [cette section](../start/folder-permissions.md).
+Utilisez les autorisations sur les dossiers pour organiser et contrôler l’accès aux données de Campaign. Pour en savoir plus sur les autorisations de dossier, consultez [cette section](../start/folder-permissions.md).

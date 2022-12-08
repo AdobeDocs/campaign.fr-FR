@@ -7,7 +7,7 @@ exl-id: 6fa4f4e3-c5a5-4d7f-8e71-826dee4e926a
 source-git-commit: e6b1790832be6331f4b27cc50b5d034ad738a822
 workflow-type: tm+mt
 source-wordcount: '365'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Enfin, la fonctionnalité de gestion budgétaire est étendue à la gestion des 
 
 >[!AVAILABILITY]
 >
->Marketing Resource Management (MRM) n’est pas disponible dans le contexte d’une [Déploiement Entreprise (FFDA)](../../v8/architecture/enterprise-deployment.md) de Campaign.
+>Marketing Resource Management (MRM) n’est pas disponible dans le cadre d’un [déploiement Entreprise (FFDA)](../../v8/architecture/enterprise-deployment.md) de Campaign.
 
 ## Concepts et terminologie {#core-concepts}
 

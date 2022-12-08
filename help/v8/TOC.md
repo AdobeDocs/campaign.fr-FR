@@ -7,7 +7,7 @@ title: Documentation Campaign v8
 source-git-commit: a9f7bf9a976a7f3b5415c090c042f83a1bb64c24
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -127,8 +127,8 @@ ht-degree: 97%
 + Administration {#admin}
    + Utilisateurs et autorisations {#permissions}
       + [Prise en main des autorisations](start/gs-permissions.md)
-      + [Gestion des autorisations utilisateur](start/manage-permissions.md)
-      + [Ajout d’autorisations aux dossiers](start/folder-permissions.md)
+      + [Gérer les autorisations utilisateur](start/manage-permissions.md)
+      + [Ajouter des autorisations aux dossiers](start/folder-permissions.md)
    + [Panneau de contrôle](config/self-service.md)
 + Architecture et configuration {#config}
    + Architecture {#architecture}

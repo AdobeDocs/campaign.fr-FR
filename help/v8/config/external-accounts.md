@@ -8,7 +8,7 @@ exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: 6dee08f0f8673e5264f3cb111fe14493980a62fc
 workflow-type: tm+mt
 source-wordcount: '1181'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Vous pouvez accéder aux comptes externes à partir de l&#39;**[!UICONTROL Explo
 >
 >Dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), un compte externe **[!UICONTROL Full FDA]** (ffda) gère la connexion entre la base de données locale Campaign et la base de données Cloud ([!DNL Snowflake]).
 >
->En tant qu’utilisateur Cloud Services géré, les comptes externes sont configurés par Adobe pour votre instance et ne doivent pas être modifiés.
+>En tant qu’utilisateur Managed Cloud Services, les comptes externes sont configurés par Adobe pour votre instance et ne doivent pas être modifiés.
 
 ## Comptes externes spécifiques à Campaign
 
@@ -118,7 +118,7 @@ Dans le contexte des messages transactionnels, les instances d&#39;exécution so
 
 * **Base de données externe (FDA)**
 
-   Le **Base de données externe** type compte externe est utilisé pour se connecter à une base externe via Federated Data Access (FDA).
+   Le compte externe de type **Base de données externe** permet d’établir la connexion à une base de données externe via Federated Data Access (FDA).
 
    Les bases de données externes compatibles avec Adobe Campaign v8 sont répertoriées dans la [matrice de compatibilité](../start/compatibility-matrix.md)
 
@@ -126,21 +126,21 @@ Dans le contexte des messages transactionnels, les instances d&#39;exécution so
 
 * **Twitter**
 
-   Le **Twitter** type compte externe permet de connecter Campaign à votre compte twitter afin de publier des messages en votre nom.
+   Le compte externe de type **Twitter** permet de connecter Campaign à votre compte Twitter afin de publier des messages en votre nom.
 
-   ![](../assets/do-not-localize/glass.png) En savoir plus sur l’intégration de Twitter dans [cette section](../connect/ac-tw.md).
+   ![](../assets/do-not-localize/glass.png) En savoir plus sur l’intégration Twitter dans [cette section](../connect/ac-tw.md).
 
 ## Comptes externes d&#39;intégration de solutions Adobe
 
 * **Adobe Experience Cloud**
 
-   Le **[!UICONTROL Adobe Experience Cloud]** Le compte externe est utilisé pour implémenter Adobe Identity Management Service (IMS) pour se connecter à Adobe Campaign.
+   Le compte externe **[!UICONTROL Adobe Experience Cloud]** permet d’implémenter Adobe Identity Management Service (IMS) pour la connexion à Adobe Campaign.
 
    ![](../assets/do-not-localize/glass.png) Apprenez-en davantage sur le service Identity Management (IMS) d’Adobe dans [cette section](../start/connect.md#connect-ims).
 
 * **Web Analytics**
 
-   Le **[!UICONTROL Web Analytics (Adobe Analytics)]** Le compte externe est utilisé pour configurer le transfert des données d’Adobe Analytics vers Adobe Campaign.
+   Le compte externe **[!UICONTROL Web Analytics (Adobe Analytics)]** permet de configurer le transfert de données d’Adobe Analytics vers Adobe Campaign.
 
    ![](../assets/do-not-localize/glass.png) Pour en savoir plus sur l&#39;intégration Adobe Campaign - Adobe Analytics, consultez [cette page](../connect/ac-aa.md).
 

@@ -1,6 +1,6 @@
 ---
-title: Autorisations d’octroi et de réaffectation sur les dossiers Campaign
-description: Découvrez comment accorder ou restreindre des autorisations sur des dossiers
+title: Accorder et restreindre les autorisations sur les dossiers Campaign
+description: Découvrez comment accorder ou restreindre les autorisations sur des dossiers
 feature: Permissions
 role: User, Admin
 level: Beginner
@@ -8,17 +8,17 @@ exl-id: 5bd8dbba-7a06-4737-bc5a-60354f91c709
 source-git-commit: b96ac3bd2365c548d071e626721d606dd33200b5
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Gestion des autorisations de dossier{#manage-folder-permissions}
+# Gérer les autorisations pour les dossiers{#manage-folder-permissions}
 
 ## Limiter l&#39;accès à un dossier{#restrict-access-to-a-folder}
 
-Utilisez les autorisations sur les dossiers pour organiser et contrôler l&#39;accès aux données de Campaign.
+Utilisez les autorisations sur les dossiers pour organiser et contrôler l’accès aux données de Campaign.
 
-La gestion des dossiers est présentée dans la section [cette page](../audiences/folders-and-views.md).
+La gestion des dossiers est présentée sur [cette page](../audiences/folders-and-views.md).
 
 Pour modifier les autorisations sur un dossier Campaign spécifique, procédez comme suit :
 
