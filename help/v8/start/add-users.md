@@ -16,11 +16,11 @@ ht-degree: 100%
 
 Dans Adobe Campaign, les utilisateurs sont des **opérateurs** et les **groupes d’opérateurs** représentent des rôles d’utilisateur.
 
-Un opérateur est un utilisateur Adobe Campaign qui possède des autorisations pour se connecter et effectuer des actions. Les opérateurs sont stockés par défaut dans le nœud **[!UICONTROL Administration > Gestion des accès > Opérateurs]**.
+Un opérateur/une opératrice est un utilisateur/une utilisatrice Adobe Campaign qui possède des autorisations pour se connecter et effectuer des actions. Les opérateurs sont stockés par défaut dans le nœud **[!UICONTROL Administration > Gestion des accès > Opérateurs]**.
 
 Adobe Campaign est fourni avec des groupes d&#39;opérateurs natifs, tels que les Chargés d&#39;opération ou les Superviseurs de workflow. Tous les groupes natifs sont répertoriés dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-groups.html?lang=fr#default-groups){target=&quot;_blank&quot;}.
 
-En tant que membre d&#39;un groupe d&#39;opérateurs, un utilisateur dispose de droits, appelés &quot;Droits nommés&quot;, qui lui permettent d&#39;effectuer des opérations. Il a également accès aux données qui se trouvent dans les dossiers de la vue **Explorateur**. Un opérateur peut être membre de plusieurs groupes d&#39;opérateurs. Les droits et les autorisations d&#39;accès se cumulent alors.
+En tant que membre d&#39;un groupe d&#39;opérateurs, un utilisateur dispose de droits, appelés &quot;Droits nommés&quot;, qui lui permettent d&#39;effectuer des opérations. Il a également accès aux données qui se trouvent dans les dossiers de la vue **Explorateur**. Un opérateur /une opératrice peut être membre de plusieurs groupes d’opérateurs. Les droits et les autorisations d’accès se cumulent alors.
 
 Les droits nommés octroient des autorisations pour :
 
