@@ -4,10 +4,10 @@ title: Configurer les règles de pression
 description: Découvrir comment configurer des règles de pression
 feature: Fatigue Management, Typology Rules
 exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6a1e2e0a872ce5886e7374d266c71975941e87b8
 workflow-type: tm+mt
-source-wordcount: '3177'
-ht-degree: 100%
+source-wordcount: '3164'
+ht-degree: 98%
 
 ---
 
@@ -107,7 +107,7 @@ Vous pouvez indexer le nombre de messages autorisés en fonction du segment auqu
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-Vous pouvez utiliser une dimension liée à la dimension de ciblage pour définir le seuil : par exemple, inclure les messages envoyés aux profils de destinataires stockés dans le tableau des visiteurs (pour plus d&#39;informations sur le tableau des visiteurs, reportez-vous à (cette section)(surveys/using/use-case--creating-a-refer-a-friend-form.md)) ou ne pas envoyer plus d&#39;un message par semaine à un même foyer (qui peut potentiellement renvoyer à plusieurs adresses e-mail), identifié dans une dimension liée à celle des destinataires.
+Pour définir le seuil, vous pouvez utiliser une dimension liée à la dimension de ciblage : par exemple, pour inclure les messages envoyés aux profils de destinataires stockés dans la variable [table des visiteurs](../../v8/audiences/target-mappings.md) ou pour éviter d&#39;envoyer plus d&#39;un message par semaine à un même foyer (qui peut faire référence à plusieurs adresses email) identifié dans une dimension liée à celle des destinataires.
 
 Pour cela, sélectionnez l&#39;option **[!UICONTROL Comptabiliser les messages sur une dimension liée]**, puis sélectionnez la table des visiteurs ou celle des contrats.
 
