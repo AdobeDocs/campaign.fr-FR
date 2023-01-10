@@ -161,7 +161,7 @@ ht-degree: 100%
       + [Filtrage des schémas](dev/filter-schema.md)
       + [Structure d&#39;un schéma](dev/schema-structure.md)
       + [Mapping de la base de données](dev/database-mapping.md)
-      + [Limitation de l&#39;affichage des PI](dev/restrict-pi-view.md)
+      + [Limiter l’affichage des PI](dev/restrict-pi-view.md)
       + [Utilisation d’une table des destinataires personnalisée](dev/custom-recipient.md)
       + [Mise à jour de la base de données](dev/update-database-structure.md)
       + [Formulaires de saisie](dev/forms.md)
