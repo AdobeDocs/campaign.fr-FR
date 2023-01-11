@@ -18,6 +18,6 @@ ht-degree: 100%
    + [Topic1](concept1/topic1.md)
    + [Topic2](concept1/topic2.md)
 + Concept 2 {#concept2}
-   + [Rubrique 1](concept2/topic1.md)
-   + [Rubrique 2](concept2/topic2.md)
+   + [Topic1](concept2/topic1.md)
+   + [Topic2](concept2/topic2.md)
 

@@ -27,7 +27,7 @@ L&#39;activité **[!UICONTROL Déduplication]** est utilisée pour supprimer des
 
 L&#39;activité **[!UICONTROL Déduplication]** peut conserver une ligne entière comme enregistrement unique après l&#39;identification des duplicatas. Par exemple, dans le cas pratique ci-dessus, si l’activité est configurée pour ne conserver que l’enregistrement avec la **[!UICONTROL Date]** la plus ancienne, le résultat est le suivant :
 
-| Date | Prénom | Nom | Email | Téléphone mobile | Téléphone |
+| Date | Prénom | Nom | Email | Téléphone mobile | Phone |
 -----|----------|------------|-------|--------------|------
 | 02/03/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 
@@ -35,7 +35,7 @@ L’enregistrement principal sélectionné transfère les données sans fusionne
 
 Complémentaire :
 
-| Date | Prénom | Nom | Email | Téléphone mobile | Téléphone |
+| Date | Prénom | Nom | Email | Téléphone mobile | Phone |
 -----|------------|-----------|-------|--------------|------
 | 05/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 | 07/22/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |

@@ -57,7 +57,7 @@ Découvrez les différents contextes dans lesquels les workflows peuvent être u
 * [Requête avec gestion des regroupements](query-grouping-management.md)
 * [Requête avec une relation multiple-à-multiple](query-many-to-many-relationship.md)
 * [Ajout d’un champ calculé de type Énumérations](adding-enumeration-type-calculated-field.md)
-* [Création d’un filtre](create-a-filter.md)
+* [Créer un filtre](create-a-filter.md)
 * [Filtrage des destinataires dupliqués](filter-duplicated-recipients.md)
 * [Appeler une variable d&#39;instance dans une requête](javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)
 * [Appliquer un pourcentage de partage à une population](javascript-scripts-and-templates.md#example)

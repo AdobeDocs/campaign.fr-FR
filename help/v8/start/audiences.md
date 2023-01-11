@@ -61,6 +61,6 @@ Adobe Campaign est un puissant outil servant à collecter et à traiter de trè
 
 * [Concevoir et exécuter un workflow spécifique à une campagne](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/campaign-workflows.html?lang=fr)
 
-*  [Découvrez comment sélectionner l’audience d’une campagne](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html).
+*  [Découvrez comment sélectionner l’audience d’une campagne](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=fr).
 
 * [Prise en main des workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=fr)

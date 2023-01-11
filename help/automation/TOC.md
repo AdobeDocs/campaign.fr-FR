@@ -3,7 +3,7 @@ audience: user
 user-guide-title: Guide d'automatisation des campagnes
 user-guide-description: Guide d'automatisation des campagnes
 source-git-commit: 75b65efce6b37e3d948f6af4a89ea3b0a5ac1a86
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 100%
 
@@ -121,7 +121,7 @@ ht-degree: 100%
          + [Requête avec gestion des regroupements](workflow/query-grouping-management.md)
          + [Requête avec une relation multiple-à-multiple](workflow/query-many-to-many-relationship.md)
          + [Ajout d’un champ calculé de type Énumérations](workflow/adding-enumeration-type-calculated-field.md)
-         + [Création d’un filtre](workflow/create-a-filter.md)
+         + [Créer un filtre](workflow/create-a-filter.md)
          + [Filtrage des destinataires dupliqués](workflow/filter-duplicated-recipients.md)
    + Paramètres avancés {#advanced-management}
       + [Propriétés de workflow](workflow/workflow-properties.md)
