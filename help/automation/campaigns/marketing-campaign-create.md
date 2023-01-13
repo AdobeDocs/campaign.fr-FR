@@ -4,7 +4,7 @@ title: Création de campagnes marketing
 description: Découvrez comment créer et exécuter des campagnes marketing
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 38c300555b847c9d1fd210d2fe60e4ffa1e314d2
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 100%
