@@ -7,8 +7,8 @@ level: Beginner
 exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
 source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 100%
+source-wordcount: '890'
+ht-degree: 98%
 
 ---
 
@@ -156,4 +156,4 @@ Dans le cas où le destinataire n&#39;est éligible à aucune offre, la prévisu
 
 La prévisualisation peut ne pas tenir compte des contextes lorsqu&#39;ils sont limités à un emplacement. C&#39;est le cas lorsque le schéma d&#39;interaction a été étendu de façon à ajouter des champs qui sont référencés dans un emplacement utilisant un canal entrant.
 
-![](../assets/do-not-localize/book.png) Pour en savoir plus à ce sujet, consultez cet exemple dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=fr){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png)  Voir à ce propos cet exemple dans la section [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=fr){target="_blank"}.

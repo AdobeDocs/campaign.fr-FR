@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1143'
 ht-degree: 100%
 
 ---
@@ -42,7 +42,7 @@ Deux types ou erreurs peuvent être capturés :
 Dans la liste des adresses en quarantaine, le champ **[!UICONTROL Raison de l&#39;erreur]** indique pourquoi l&#39;adresse sélectionnée a été mise en quarantaine. [En savoir plus](#identifying-quarantined-addresses-for-the-entire-platform).
 
 
-Si un utilisateur qualifie un e-mail comme spam, le message est automatiquement redirigé vers une boîte e-mail technique gérée par Adobe. L&#39;adresse e-mail de l&#39;utilisateur est alors automatiquement mise en quarantaine avec le statut **[!UICONTROL Sur liste bloquée]**. Ce statut ne concerne que l&#39;adresse. Le profil n&#39;est pas placé sur liste bloquée afin que l&#39;utilisateur puisse continuer à recevoir des SMS et des notifications push. Apprenez-en davantage sur les boucles de retours dans la section [Guide des bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#feedback-loops){target=&quot;_blank&quot;}.
+Si un utilisateur qualifie un e-mail comme spam, le message est automatiquement redirigé vers une boîte e-mail technique gérée par Adobe. L&#39;adresse e-mail de l&#39;utilisateur est alors automatiquement mise en quarantaine avec le statut **[!UICONTROL Sur liste bloquée]**. Ce statut ne concerne que l&#39;adresse. Le profil n&#39;est pas placé sur liste bloquée afin que l&#39;utilisateur puisse continuer à recevoir des SMS et des notifications push. Apprenez-en davantage sur les boucles de retours dans la section [Guide des bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#feedback-loops){target="_blank"}.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Pour afficher la liste des adresses en quarantaine **pour l&#39;ensemble de la p
 
 En outre, le rapport intégré **[!UICONTROL Échecs et buunce]**, disponible à partir de la section **Rapports** de cette page d&#39;accueil, affiche des informations sur les adresses en quarantaine, les types d&#39;erreurs rencontrées et une répartition des échecs par domaine. Vous pouvez filtrer les données pour une diffusion spécifique ou personnaliser ce rapport si nécessaire.
 
-Apprenez-en davantage sur les adresses bounce dans le [Guide des bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=fr){target=&quot;_blank&quot;}.
+Apprenez-en davantage sur les adresses bounce dans le [Guide des bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=fr){target="_blank"}.
 
 ### E-mail en quarantaine {#quarantined-recipient}
 

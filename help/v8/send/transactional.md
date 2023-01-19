@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 100%
+source-wordcount: '1588'
+ht-degree: 96%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 La messagerie transactionnelle (Message Center) est un module de Campaign conçu pour gérer les messages de déclenchement. Ces notifications sont générées à partir d’événements déclenchés depuis des systèmes d’information et peuvent correspondre aux éléments suivants : facture, confirmation de commande, confirmation d&#39;expédition, changement de mot de passe, notification d&#39;indisponibilité du produit, relevé de compte, création de compte web, etc.
 
-![](../assets/do-not-localize/speech.png)En tant qu’utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support){target=&quot;_blank&quot;} pour configurer la messagerie transactionnelle de Campaign dans votre environnement.
+![](../assets/do-not-localize/speech.png)  En tant qu’utilisateur Cloud Services géré, [contact Adobe](../start/campaign-faq.md#support){target="_blank"} pour configurer les messages transactionnels Campaign dans votre environnement.
 
 Les messages transactionnels sont utilisés pour envoyer :
 
@@ -43,7 +43,7 @@ Les principales étapes de mise en place de ce système sont décrites ci-dessou
 1. [Tester le message](#test-message-template).
 1. [Publier le modèle de message](#publish-message-template).
 
-Une fois que vous avez conçu et publié le modèle de message transactionnel, si un événement correspondant est déclenché, les données pertinentes sont envoyées à Campaign via les [méthodes SOAP](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html?lang=fr){target=&quot;_blank&quot;} PushEvent et PushEvents, et la diffusion est envoyée aux destinataires ciblés.
+Une fois que vous avez conçu et publié le modèle de message transactionnel, si un événement correspondant est déclenché, les données pertinentes sont envoyées à Campaign via PushEvent et PushEvents. [Méthodes SOAP](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html?lang=fr){target="_blank"}, et la diffusion est envoyée aux destinataires ciblés.
 
 ## Création de types d&#39;événements {#create-event-types}
 
@@ -73,7 +73,7 @@ Pour créer des types d&#39;événements qui seront traités par Adobe Campaign
 
 >[!NOTE]
 >
->Apprenez-en davantage sur les listes d’énumération dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=fr){target=&quot;_blank&quot;}.
+>Apprenez-en davantage sur les listes d’énumération dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=fr){target="_blank"}.
 
 ## Définition d’un modèle de message transactionnel {#create-message-template}
 
@@ -199,7 +199,7 @@ Vous pouvez tester la diffusion du message en envoyant un BAT vers une adresse d
 
 L&#39;envoi d&#39;un BAT engage le même processus que pour toute diffusion.
 
-![](../assets/do-not-localize/book.png) En savoir plus sur les BAT dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr#sending-a-proof).{target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) En savoir plus sur les BAT dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr#sending-a-proof).{target="_blank"}
 
 Toutefois, pour envoyer un BAT de message transactionnel, il vous faut exécuter les opérations suivantes :
 

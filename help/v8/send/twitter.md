@@ -6,7 +6,7 @@ level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
 source-git-commit: 9ae93ce4e2b0424bb3b3862b2c7d016309bd630e
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '883'
 ht-degree: 100%
 
 ---
@@ -140,7 +140,7 @@ Pour envoyer des messages directs à vos abonnés, procédez comme suit :
 
    Avant d&#39;envoyer votre message, veillez à le valider en envoyant un BAT à un compte test : vous pouvez ensuite obtenir un rendu exact du message sur un compte Twitter privé et vérifier le contenu et la personnalisation.
 
-   ![](../assets/do-not-localize/book.png) [Découvrez les étapes clés pour valider une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [En savoir plus sur les étapes clés de validation d&#39;une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target="_blank"}
 
 1. Envoi du message direct
 
@@ -151,7 +151,7 @@ Pour envoyer des messages directs à vos abonnés, procédez comme suit :
 
 >[!CAUTION]
 >
->Vous ne pouvez pas envoyer plus de 250 messages directs par jour. Pour éviter de dépasser ce seuil, vous pouvez effectuer une diffusion par vagues. Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr?lang=fr#sending-using-multiple-waves){target=&quot;_blank&quot;}.
+>Vous ne pouvez pas envoyer plus de 250 messages directs par jour. Pour éviter de dépasser ce seuil, vous pouvez effectuer une diffusion par vagues. Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr?lang=fr#sending-using-multiple-waves){target="_blank"}.
 
 
 ## Accès aux données de suivi {#tw-tracking}
@@ -160,5 +160,5 @@ Dans le modèle de diffusion **[!UICONTROL Tweet]**, le tracking est activé par
 
 Les données de tracking sont visualisables dans les rapports de diffusion et dans l&#39;onglet **[!UICONTROL Modifier > Tracking]** de la diffusion et du service.
 
-La configuration du tracking est le même que pour une diffusion e-mail. Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr){target=&quot;_blank&quot;}.
+La configuration du tracking est le même que pour une diffusion e-mail. Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr){target="_blank"}.
 

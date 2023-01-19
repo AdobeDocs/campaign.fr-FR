@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
 source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
 workflow-type: tm+mt
-source-wordcount: '3061'
+source-wordcount: '3057'
 ht-degree: 100%
 
 ---
@@ -66,7 +66,7 @@ Actuellement, le traitement de la qualification des e-mails bounce dans Adobe C
 
 * **Erreurs synchrones** : le MTA détermine le type et la qualification du rebond, puis renvoie ces informations à Campaign. Les qualifications de mails rebonds dans la table **[!UICONTROL Qualification des logs de diffusion]** ne sont plus utilisées pour les messages d&#39;erreur relatifs aux échecs des diffusions **synchrones**.
 
-* **Erreurs asynchrones** : les règles utilisées par Campaign pour qualifier les diffusions en échec asynchrones sont répertoriées dans le nœud **[!UICONTROL Administration > Gestion de campagne > Gestion des échecs > Qualification des logs de diffusion]**. Les retours asynchrones restent qualifiés par le processus inMail grâce aux règles de **[!UICONTROL mail entrant.]** Pour en savoir plus à ce sujet, consultez la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr#bounce-mail-qualification){target=&quot;_blank&quot;}. 
+* **Erreurs asynchrones** : les règles utilisées par Campaign pour qualifier les diffusions en échec asynchrones sont répertoriées dans le nœud **[!UICONTROL Administration > Gestion de campagne > Gestion des échecs > Qualification des logs de diffusion]**. Les retours asynchrones restent qualifiés par le processus inMail grâce aux règles de **[!UICONTROL mail entrant.]** Pour en savoir plus à ce sujet, consultez la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr#bounce-mail-qualification){target="_blank"}.
 
 <!--NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
 
@@ -111,7 +111,7 @@ Par exemple, si la période de validité est définie sur la valeur par défaut 
 
 Une fois qu’un message figure dans la file d’attente du MTA depuis 3,5 jours et qu’il n’a pas été diffusé, il expire et son statut est mis à jour de **[!UICONTROL Envoi]** à **[!UICONTROL Échec]** dans les logs de diffusion.
 
-Pour plus d’informations sur la période de validité, consultez la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#defining-validity-period){target=&quot;_blank&quot;}.
+Pour plus d’informations sur la période de validité, consultez la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#defining-validity-period){target="_blank"}.
 
 
 ## Types d&#39;erreur e-mail {#email-error-types}

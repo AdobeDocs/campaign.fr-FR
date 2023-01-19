@@ -7,7 +7,7 @@ level: Beginner, Intermediate, Experienced
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2574'
 ht-degree: 100%
 
 ---
@@ -87,7 +87,7 @@ Le contrôle d&#39;édition s&#39;adapte automatiquement au type de données cor
 
 Par défaut, chaque champ est affiché sur une seule ligne et occupe tout l&#39;espace disponible selon le type de données.
 
-![](../assets/do-not-localize/book.png) Tous les attributs de formulaires sont répertoriés dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=fr){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Tous les attributs de formulaires sont répertoriés dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=fr){target="_blank"}.
 
 ## Mise en forme {#formatting}
 

@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 100%
+source-wordcount: '643'
+ht-degree: 98%
 
 ---
 
@@ -38,15 +38,15 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
    La délivrabilité des e-mails, composant essentiel de la réussite du programme marketing de chaque expéditeur, est caractérisée par des critères et des règles en constante évolution. Pour naviguer efficacement dans ce monde numérique, il est nécessaire d&#39;affiner régulièrement votre stratégie d&#39;e-mail, en tenant compte des principales tendances de délivrabilité, afin d&#39;atteindre au mieux vos audiences.
 
-   ![](../assets/do-not-localize/book.png) Consultez ce guide pour découvrir les [bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=fr){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Consultez ce guide pour découvrir les [bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=fr){target="_blank"}
 
-   ![](../assets/do-not-localize/book.png) Découvrez comment implémenter la délivrabilité dans Campaign [dans ce guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=fr){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Découvrez comment implémenter la délivrabilité dans Campaign [dans ce guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=fr).{target="_blank"}
 
 1. **Comment puis-je m&#39;assurer que ma diffusion est envoyée sans erreur ?**
 
    Adobe Campaign contient un ensemble de tableaux de bord et d&#39;outils qui permettent de surveiller vos diffusions E-mail.
 
-   [Consultez la documentation de Campaign Classic v7 pour découvrir](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr){target=&quot;_blank&quot;} comment vous assurer que vos messages sont bien envoyés, surveiller l&#39;exécution et entreprendre une action en cas d&#39;erreur.
+   [Consultez la documentation de Campaign Classic v7 pour découvrir](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr){target="_blank"} comment vous assurer que vos messages sont bien envoyés, surveiller l&#39;exécution et entreprendre une action en cas d&#39;erreur.
 
 1. **Est-il possible de surveiller l&#39;exécution des workflows ?**
 
@@ -70,19 +70,19 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
    Vous pouvez obtenir le programme d&#39;installation et la console cliente à partir du Centre de téléchargement d&#39;Adobe.
 
-   En tant qu’utilisateur administrateur, accédez à la [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/fr/campaign.html){target=&quot;_blank&quot;} d’Adobe  pour télécharger Adobe Campaign.
+   En tant qu’utilisateur administrateur, accédez à l’Adobe [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/fr/campaign.html) {target="_blank"} pour télécharger Adobe Campaign.
 
-   En savoir plus sur le Centre de distribution [sur cette page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr){target=&quot;_blank&quot;}.
+   En savoir plus sur le Centre de distribution [sur cette page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr){target="_blank"}.
 
 1. **Puis-je contacter des experts Campaign ?**
 
-   Rejoignez la communauté Campaign et recherchez des réponses parmi les questions existantes ou consultez les experts. [Prenez part à la conversation](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target=&quot;_blank&quot;}
+   Rejoignez la communauté Campaign et recherchez des réponses parmi les questions existantes ou consultez les experts. [Prenez part à la conversation](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 
 
 1. **Comment signaler un problème ?**
 
    La création d&#39;un ticket vous permet de contacter l&#39;équipe du Service clientèle d&#39;Adobe pour tout problème lié à vos produits Adobe. La console Adobe Admin Console vous permettra de discuter avec le Service clientèle d&#39;Adobe pour résoudre vos problèmes.
 
-   Pour signaler un problème ou démarrer une session de conversation dans ce nouveau système, connectez-vous à la [console Adobe Admin](https://adminconsole.adobe.com/overview){target=&quot;_blank&quot;}.
+   Pour signaler un problème ou démarrer une session de conversation dans ce nouveau système, connectez-vous à la console [Adobe Admin Console](https://adminconsole.adobe.com/overview){target="_blank"}.
 
-   Ce système nécessite des comptes individuels pour chaque utilisateur, avec les autorisations adéquates. Si vous constatez que vous ne pouvez pas vous connecter à l’aide de votre Adobe ID, demandez l’accès par le biais d’Experience League. L’équipe d’assistance clientèle vous assistera dès que possible. [En savoir plus](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}
+   Ce système nécessite des comptes individuels pour chaque utilisateur, avec les autorisations adéquates. Si vous constatez que vous ne pouvez pas vous connecter à l’aide de votre Adobe ID, demandez l’accès par le biais d’Experience League. L’équipe d’assistance clientèle vous assistera dès que possible. [En savoir plus](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}

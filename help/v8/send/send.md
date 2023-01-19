@@ -7,8 +7,8 @@ level: Beginner
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
 source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 100%
+source-wordcount: '906'
+ht-degree: 96%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 100%
 
 Une fois la diffusion configurée et prête à être envoyée, vérifiez que vous avez exécuté l’analyse de la diffusion.
 
-![](../assets/do-not-localize/book.png) [En savoir plus dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#confirming-delivery){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png)[Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#confirming-delivery).{target="_blank"}
 
 Une fois que vous avez terminé, confirmez la diffusion pour lancer la diffusion des messages.
 
 Vous pouvez également procéder comme suit :
 
-* planifier la diffusion à une date ultérieure à l’aide de [l’option Différer la diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#scheduling-the-delivery-sending){target=&quot;_blank&quot;},
-* envoyer en plusieurs lots à l’aide de [plusieurs vagues](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#sending-using-multiple-waves){target=&quot;_blank&quot;}.
+* planifier la diffusion à une date ultérieure à l’aide de [l’option Différer la diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#scheduling-the-delivery-sending){target="_blank"},
+* envoyer dans plusieurs lots à l’aide de [plusieurs vagues](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#sending-using-multiple-waves){target="_blank"}.
 
 Suivre l’exécution de la diffusion depuis l’onglet **Diffusion**, accessible à partir des détails de cette diffusion ou de la liste des diffusions.
 
@@ -32,7 +32,7 @@ Suivre l’exécution de la diffusion depuis l’onglet **Diffusion**, accessibl
 
 Une fois les messages envoyés, vérifiez l&#39;état de votre diffusion dans le tableau de bord des diffusions et accédez aux logs de diffusion et aux rapports pour confirmer que vos messages ont été correctement envoyés.
 
-![](../assets/do-not-localize/book.png) [Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=fr).{target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) [Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=fr).{target="_blank"}
 
 
 ## MTA de Campaign {#mta}
@@ -59,7 +59,7 @@ Le MTA qualifie le rebond SMTP et envoie cette qualification à Campaign sous la
 
 >[!NOTE]
 >
->Actuellement, les rebonds **asynchrones** sont qualifiés par le processus inMail grâce aux règles d’**[!UICONTROL e-mail entrant]**. Pour en savoir plus à ce sujet, consultez la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr#bounce-mail-qualification){target=&quot;_blank&quot;}. <!--Refer to [bounce mail qualification](delivery-failures.md#bounce-mail-qualification)-->
+>Actuellement, les rebonds **asynchrones** sont qualifiés par le processus inMail grâce aux règles d’**[!UICONTROL e-mail entrant]**. Pour en savoir plus à ce sujet, consultez la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr#bounce-mail-qualification){target="_blank"}. <!--Refer to [bounce mail qualification](delivery-failures.md#bounce-mail-qualification)-->
 
 En savoir plus sur les diffusions en échec dans [cette section](delivery-failures.md).
 
@@ -76,7 +76,7 @@ Domain Keys Identified Mail (DKIM) est une méthode d’authentification utilis�
 
 Dans Adobe Campaign, la signature de l’authentification des e-mails DKIM est effectuée par le MTA.
 
-En savoir plus sur DKIM dans le [Guide Adobe des bonnes pratiques en matière de délivrabilité ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#authentication){target=&quot;_blank&quot;}.
+En savoir plus sur DKIM dans la section [Guide des bonnes pratiques en matière de délivrabilité des Adobes](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#authentication){target="_blank"}.
 
 ## Service de retour d&#39;e-mail {#email-feedback-service}
 
@@ -90,7 +90,7 @@ Lorsque le message est effectivement diffusé aux profils ciblés et que ces inf
 
 Lorsque des messages hard bounce sont signalés depuis le MTA, leur statut de log passe de **[!UICONTROL Pris en compte par le fournisseur d&#39;accès d&#39;accès]** à **[!UICONTROL En échec]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
-Lorsque des messages soft bounce sont signalés depuis le MTA, leur statut de log reste inchangé (**[!UICONTROL Pris en compte par le fournisseur d&#39;accès d&#39;accès]**) : seule le [motif de l’erreur](delivery-failures.md#delivery-failure-reasons) est mis à jour<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Le pourcentage **[!UICONTROL Succès]** reste inchangé. L&#39;envoi des messages soft bounce fait ensuite l’objet de reprises tout au long de la [période de validité](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#defining-validity-period) de la diffusion {target=&quot;_blank&quot;} :
+Lorsque des messages soft bounce sont signalés depuis le MTA, leur statut de log reste inchangé (**[!UICONTROL Pris en compte par le fournisseur d&#39;accès d&#39;accès]**) : seule le [motif de l’erreur](delivery-failures.md#delivery-failure-reasons) est mis à jour<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Le pourcentage **[!UICONTROL Succès]** reste inchangé. Les messages rebonds par soft sont ensuite relancés tout au long de la diffusion. [période de validité](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#defining-validity-period){target="_blank"}:
 
 * Si une reprise est effectuée avec succès avant la fin de la période de validité, l’état du message passe à **[!UICONTROL Envoyé]** et le pourcentage **[!UICONTROL Succès]** augmente en conséquence.
 

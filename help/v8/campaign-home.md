@@ -5,8 +5,8 @@ title: Documentation du produit Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
 source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 100%
+source-wordcount: '141'
+ht-degree: 82%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## Nouveautés
 
-* **[[!DNL Adobe Campaign] guide d’automatisation](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=fr){target=&quot;_blank&quot;}** - Découvrez comment créer des workflows et des campagnes
+* **[[!DNL Adobe Campaign] guide d&#39;automatisation](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=fr){target="_blank"}** - Découvrez comment créer des workflows et des campagnes
 
 * **[En quoi consiste  [!DNL Adobe Campaign]](start/get-started.md)** ? - Principales fonctionnalités et cas d&#39;utilisation
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 * **[De v7 à v8](start/v7-to-v8.md)** - Comment passer de Campaign Classic v7 à v8 ? Découverte des différences principales
 
-* **[Panneau de contrôle pour Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target=&quot;_blank&quot;}** - Effectuez vous-même les tâches d&#39;administration principale avec le panneau de contrôle Campaign
+* **[Panneau de Contrôle pour Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"}** - Effectuez vous-même les tâches d’administration clés avec Campaign Panneau de Contrôle
 
 * **[Notes de mise à jour](start/release-notes.md)** - Découvrez les dernières fonctionnalités et améliorations
 
@@ -72,4 +72,4 @@ ht-degree: 100%
 * [Mesure et suivi](reporting/gs-reporting.md)
 * [Connexion à d&#39;autres solutions](connect/integration.md)
 * [FAQ Campaign v8](start/campaign-faq.md)
-* [Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target=&quot;_blank&quot;}
+* [Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}

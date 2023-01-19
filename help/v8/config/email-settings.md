@@ -7,8 +7,8 @@ level: Intermediate, Experienced
 exl-id: e4e3fb49-9942-4e2d-a020-557d1ac5dcdc
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 100%
+source-wordcount: '456'
+ht-degree: 95%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Campaign ne gère pas les fichiers archivés. Il vous permet d&#39;envoye
 
 La destination d&#39;archivage est l&#39;adresse email en Cci de votre choix, qui restera invisible pour les destinataires de la diffusion.
 
-![](../assets/do-not-localize/speech.png)En tant qu’utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support){target=&quot;_blank&quot;} pour communiquer l’adresse e-mail en Cci à utiliser pour l’archivage.
+![](../assets/do-not-localize/speech.png)  En tant qu’utilisateur Cloud Services géré, [contact Adobe](../start/campaign-faq.md#support){target="_blank"} communiquer l&#39;adresse email en Cci à utiliser pour l&#39;archivage.
 
 Une fois l&#39;adresse e-mail en Cci définie, vous devez activer l&#39;option dédiée au niveau de la diffusion.
 
@@ -68,14 +68,14 @@ Notez les spécificités et recommandations suivantes :
 
 **Apprenez-en davantage en consultant la documentation de Campaign Classic v7**
 
-* [Générer la page miroir](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#generating-mirror-page){target=&quot;_blank&quot;}
+* [Générer la page miroir](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#generating-mirror-page){target="_blank"}
 
-* [Sélectionner le format d’e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#selecting-message-formats){target=&quot;_blank&quot;}
+* [Sélectionner le format d&#39;e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#selecting-message-formats){target="_blank"}
 
-* [Sélectionner le codage des caractères ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#character-encoding){target=&quot;_blank&quot;}
+* [Sélectionner le codage des caractères](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#character-encoding){target="_blank"}
 
-* [Définir l’adresse e-mail de rebond](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#managing-bounce-emails){target=&quot;_blank&quot;}
+* [Définir l&#39;adresse e-mail de rebond](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#managing-bounce-emails){target="_blank"}
 
-* [Utiliser les modèles de diffusion par e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr){target=&quot;_blank&quot;}
+* [Utiliser des modèles de diffusion e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr){target="_blank"}
 
-* [Comprendre les échecs de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr){target=&quot;_blank&quot;}
+* [Présentation des diffusions en échec](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr){target="_blank"}

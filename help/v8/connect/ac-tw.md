@@ -6,7 +6,7 @@ level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1131'
 ht-degree: 100%
 
 ---
@@ -32,9 +32,9 @@ Pour configurer Adobe Campaign afin de publier des tweets sur vos comptes Twitte
 
 ## Compte de développeur Twitter {#dev-account}
 
-Pour commencer avec cette intégration, vous devez vous inscrire à un [Compte de développeur Twitter](https://developer.twitter.com){target=&quot;_blank&quot;}.
+Pour commencer avec cette intégration, vous devez vous inscrire à un [Compte de développeur Twitter](https://developer.twitter.com){target="_blank"}.
 
-Campaign utilise la version 1.1 de l’API Twitter. Pour l’utiliser, vous devez demander un accès élevé via le portail destiné aux développeurs. Pour en savoir plus sur l’accès élevé à Twitter, consultez [cette page](https://developer.twitter.com/en/portal/products/elevated){target=&quot;_blank&quot;}.
+Campaign utilise la version 1.1 de l’API Twitter. Pour l’utiliser, vous devez demander un accès élevé via le portail destiné aux développeurs. Pour en savoir plus sur l’accès élevé à Twitter, consultez [cette page](https://developer.twitter.com/en/portal/products/elevated){target="_blank"}.
 
 ## Créer une application sur Twitter {#create-an-app-on-twitter}
 
@@ -111,7 +111,7 @@ Ils sont arrêtés par défaut : vous devez les démarrer manuellement lorsque 
 
 Le workflow technique **[!UICONTROL Synchronisation des comptes Twitter]** synchronise les comptes Twitter dans Adobe Campaign. Ce workflow récupère la liste des abonnés Twitter afin que vous puissiez leur envoyer des messages directs. [En savoir plus](../send/twitter.md#direct-tw-messages)
 
-Par défaut, ce workflow est déclenché tous les jeudis à 7 h 30. Vous pouvez utiliser l&#39;option **[!UICONTROL Traitement anticipé de la (des) tâche(s)]** pour démarrer le workflow à tout moment pendant que vous mettez en œuvre cette intégration.  Vous pouvez également modifier le planificateur pour modifier la fréquence de déclenchement du workflow. Apprenez-en davantage dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/scheduler.html?lang=fr){target=&quot;_blank&quot;}.
+Par défaut, ce workflow est déclenché tous les jeudis à 7 h 30. Vous pouvez utiliser l&#39;option **[!UICONTROL Traitement anticipé de la (des) tâche(s)]** pour démarrer le workflow à tout moment pendant que vous mettez en œuvre cette intégration.  Vous pouvez également modifier le planificateur pour modifier la fréquence de déclenchement du workflow. Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/scheduler.html?lang=fr){target="_blank"}.
 
 >[!CAUTION]
 >

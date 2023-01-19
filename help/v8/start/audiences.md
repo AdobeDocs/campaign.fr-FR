@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '491'
 ht-degree: 100%
 
 ---
@@ -55,7 +55,7 @@ You can monitor the number of active profiles used on your instances directly fr
 
 Adobe Campaign est un puissant outil servant à collecter et à traiter de très grands volumes de données, notamment des informations personnelles et des données sensibles. Adobe Campaign vous permet de collecter des données, y compris des informations personnelles et sensibles. Il est donc essentiel de recevoir et surveiller le consentement de vos destinataires.
 
-![](../assets/do-not-localize/book.png) Découvrez comment gérer la confidentialité et le consentement dans la [documentation d&#39;Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Découvrez comment gérer la confidentialité et le consentement dans la [documentation d&#39;Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr){target="_blank"}.
 
 **Rubriques connexes** 
 

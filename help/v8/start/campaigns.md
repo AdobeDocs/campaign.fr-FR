@@ -7,7 +7,7 @@ level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '839'
 ht-degree: 100%
 
 ---
@@ -109,5 +109,5 @@ Adobe Campaign propose un module complémentaire **Gestion de la réaction** qu
 >
 >Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-[](../assets/do-not-localize/book.png) Découvrez comment configurer et utiliser la Gestion de la réaction de Campaign dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=fr){target=&quot;_blank&quot;}
+[](../assets/do-not-localize/book.png) Découvrez comment configurer et utiliser la Gestion de la réaction de Campaign dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=fr){target="_blank"}
 

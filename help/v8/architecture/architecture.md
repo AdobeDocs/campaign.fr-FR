@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '702'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,7 @@ Deux types d’environnements sont disponibles :
 
 Vous pouvez exporter et importer des packages d&#39;un environnement à l&#39;autre.
 
-![](../assets/do-not-localize/book.png) Apprenez-en davantage sur les packages en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=fr){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Apprenez-en davantage sur les packages en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=fr){target="_blank"}
 
 ## Modèles de déploiement{#ac-deployment}
 
@@ -76,4 +76,4 @@ Ensuite, avec le jeton de session fourni par l&#39;instance d&#39;exécution en 
 * Instances d&#39;exécution multiples
 Dans une architecture d&#39;exécution multi-cellules avec des instances d&#39;exécution multiples derrière une répartition de charge, la méthode de connexion invoquée par l&#39;application externe passe par la répartition de charge. Pour cette raison, une authentification par jeton ne peut pas être utilisée. Une authentification par utilisateur/mot de passe est requise.
 
-![](../assets/do-not-localize/book.png) Apprenez-en davantage sur les événements de messagerie transactionnelle en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html?lang=fr#about-transactional-messaging-datamodel){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Apprenez-en davantage sur les événements de messagerie transactionnelle en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html?lang=fr#about-transactional-messaging-datamodel){target="_blank"}

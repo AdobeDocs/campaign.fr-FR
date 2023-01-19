@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '667'
 ht-degree: 100%
 
 ---
@@ -60,7 +60,7 @@ Il est possible d&#39;étendre la table des destinataires, mais sans réduire le
 
 ![](../assets/do-not-localize/glass.png) Découvrez comment étendre un schéma existant dans [cette section](extend-schema.md).
 
-![](../assets/do-not-localize/book.png) Découvrez des exemples d&#39;extensions de table de destinataires intégrées dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#extending-a-table).{target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Découvrez des exemples d&#39;extensions de table de destinataires intégrées dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#extending-a-table).{target="_blank"}
 
 Vous pouvez également utiliser une autre table des destinataires, mieux adaptée à vos besoins professionnels ou fonctionnels. Cette méthode s&#39;accompagne de limitations et est décrite dans [cette section](custom-recipient.md).
 

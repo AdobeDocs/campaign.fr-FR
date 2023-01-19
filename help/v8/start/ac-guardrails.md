@@ -7,21 +7,21 @@ level: Beginner, Intermediate, Experienced
 exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
 source-git-commit: 58fff46ba12f5c6221bbcd88a40fa0806a6c98b9
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 95%
+source-wordcount: '245'
+ht-degree: 100%
 
 ---
 
 # Barrières de sécurité des produits{#guardrails}
 
-Les droits, les limites de produit et les barrières de sécurité des performances sont répertoriés dans la section [Page de description du produit Adobe Campaign Managed Cloud Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target=&quot;_blank&quot;}.
+Les droits, les limites de produit et les barrières de sécurité des performances sont répertoriés dans la section [Page de description du produit Adobe Campaign Managed Cloud Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 Vous trouverez ci-dessous des barrières de sécurité et des limites supplémentaires lors de l’utilisation de [!DNL Adobe Campaign].
 
 Les limites et les barrières de sécurité identifient les fonctionnalités, l’architecture ou les processus qui ne sont pas pris en charge par cette version du produit ou qui n’interagissent pas correctement avec celle-ci. Examinez attentivement ces limites.
 
 * Adobe Campaign v8 n’est pas disponible pour les déploiements on-premise/hybrides. Il est disponible uniquement en tant que Managed Cloud Service d’Adobe
-* Aucune migration automatique vers Adobe Campaign v8 n’est disponible pour les clients existants
+* Aucune migration automatique vers Adobe Campaign v8 n’est disponible pour les clientes et clients existants.
 * Dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), aucune réplication de données bidirectionnelle n’est fournie : la réplication se produit uniquement de la base de données locale Campaign vers la base de données Cloud.
 * Les fonctionnalités répertoriées [dans cette section](v7-to-v8.md#gs-unavailable-features) ne sont pas disponibles dans la versio actuelle de Campaign v8.
 * Certaines fonctionnalités non disponibles ou supprimées sont toujours visibles dans l&#39;interface utilisateur.

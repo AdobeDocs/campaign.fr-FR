@@ -7,7 +7,7 @@ level: Beginner
 exl-id: b6a5083f-2b5a-4f5b-ad30-d91363752896
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '270'
 ht-degree: 100%
 
 ---
@@ -38,4 +38,4 @@ Les imports génériques sont gérés à partir du menu **[!UICONTROL Profils et
 
 ![](assets/new-import-job.png)
 
-Les étapes de création d&#39;un import générique sont détaillées dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=fr){target=&quot;_blank&quot;}.
+Les étapes de création d&#39;un import générique sont détaillées dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=fr){target="_blank"}.

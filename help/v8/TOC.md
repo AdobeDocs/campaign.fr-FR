@@ -166,5 +166,5 @@ ht-degree: 100%
       + [Mise à jour de la base de données](dev/update-database-structure.md)
       + [Formulaires de saisie](dev/forms.md)
    + [API Campaign](dev/api.md)
-+ [Panneau de contrôle Campaign >](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr)
++ [Panneau de contrôle de Campaign >](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr)
 + [Guide d’automatisation de Campaign >](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=fr)

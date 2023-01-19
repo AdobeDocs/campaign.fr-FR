@@ -7,7 +7,7 @@ level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: 6dee08f0f8673e5264f3cb111fe14493980a62fc
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1171'
 ht-degree: 100%
 
 ---
@@ -182,13 +182,13 @@ Pour ce faire, spécifiez dans ce compte externe l&#39;adresse et les informatio
 
    * **[!UICONTROL Serveur du compte AWS S3]**: URL de votre serveur, renseignée comme suit :   ```<S3bucket name>.s3.amazonaws.com/<s3object path>```
 
-   * **[!UICONTROL ID de la clé d’accès AWS]** : découvrez comment trouver votre ID de clé d’accès AWS dans la [documentation Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target=&quot;_blank&quot;}.
+   * **[!UICONTROL ID de la clé d’accès AWS]** : découvrez comment trouver votre ID de clé d’accès AWS dans la [documentation Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
 
-   * **[!UICONTROL Clé d’accès secrète à AWS]** : découvrez comment trouver votre clé d’accès secrète à AWS en consultant la [documentation Amazon](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target=&quot;_blank&quot;}.
+   * **[!UICONTROL Clé d&#39;accès secrète à AWS]** : apprenez à trouver votre clé d&#39;accès secrète à AWS en consultant la [documentation Amazon](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target="_blank"}.
 
-   * **[!UICONTROL Région AWS]** : pour en savoir plus sur les régions AWS, consultez la [documentation Amazon](https://aws.amazon.com/fr/about-aws/global-infrastructure/regions_az/){target=&quot;_blank&quot;}.
+   * **[!UICONTROL Région AWS]** : pour en savoir plus sur les régions AWS, consultez la [documentation Amazon](https://aws.amazon.com/fr/about-aws/global-infrastructure/regions_az/){target="_blank"}.
 
-   * La case à cocher **[!UICONTROL Utiliser le chiffrement côté serveur]** vous permet de stocker votre fichier en mode chiffré dans S3. Découvrez comment trouver l’ID de la clé d’accès et la clé d’accès secrète dans la [documentation Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target=&quot;_blank&quot;}.
+   * La case à cocher **[!UICONTROL Utiliser le chiffrement côté serveur]** vous permet de stocker votre fichier en mode chiffré dans S3. Apprenez à trouver l&#39;ID de clé d&#39;accès et la clé d&#39;accès secrète en consultant la [documentation Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
 
 * **Stockage Azure Blob**
 
@@ -198,4 +198,4 @@ Pour ce faire, spécifiez dans ce compte externe l&#39;adresse et les informatio
 
    * **[!UICONTROL Chiffrement]** : type de chiffrement, **[!UICONTROL Aucun]** ou **[!UICONTROL SSL]**.
 
-   * **[!UICONTROL Clé d’accès]** : découvrez comment trouver votre **[!UICONTROL clé d’accès]** dans la [documentation Microsoft](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target=&quot;_blank&quot;}.
+   * **[!UICONTROL Clé d&#39;accès]** : apprenez à trouver votre **[!UICONTROL clé d&#39;accès]** en consultant la [documentation Microsoft](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target="_blank"}.

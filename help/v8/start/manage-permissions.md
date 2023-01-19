@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
 source-git-commit: b96ac3bd2365c548d071e626721d606dd33200b5
 workflow-type: tm+mt
-source-wordcount: '1756'
-ht-degree: 100%
+source-wordcount: '1748'
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ En tant qu’administrateur/administratrice de produit, vous pouvez ajouter des 
 
 Pour ajouter un utilisateur/une utilisatrice, procédez comme suit :
 
-1. Sur la page d’accueil d’[Admin Console](https://adminconsole.adobe.com/enterprise){target=&quot;_blank&quot;}, sélectionnez **Ajouter des utilisateurs**.
+1. Dans le [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"} page d’accueil, sélectionnez **Ajout d’utilisateurs**.
 
    ![](assets/add-a-user.png)
 
@@ -35,7 +35,7 @@ Pour ajouter un utilisateur/une utilisatrice, procédez comme suit :
 
 1. Cliquez sur **Enregistrer**. L’utilisateur/utilisatrice est ajouté(e) et s’affiche dans la liste des utilisateurs. Si vous attribuez un rôle d’administrateur ou un profil de produit aux utilisateurs, ils reçoivent une notification par e-mail. Les utilisateurs doivent suivre le lien pour compléter leur profil.
 
-En savoir plus sur la création d’utilisateurs dans Admin Console sur [cette page](https://helpx.adobe.com/fr/enterprise/using/manage-users-individually.html){target=&quot;_blank&quot;}.
+En savoir plus sur la création d’utilisateurs dans Admin Console sur [cette page](https://helpx.adobe.com/fr/enterprise/using/manage-users-individually.html){target="_blank"}.
 
 Quand les nouveaux utilisateurs [se connectent à Campaign](connect.md) avec leur Adobe ID, ils sont ajoutés à la liste des opérateurs Campaign dans la console cliente. Les opérateurs Campaign sont stockés dans le dossier **[!UICONTROL Administration > Gestion des accès > Opérateurs]** de l’explorateur Campaign.
 
@@ -75,7 +75,7 @@ Par exemple, pour créer un profil de produit « validants », procédez comme
 
 #### Créer le profil de produit dans Admin Console{#create-profile-in-admin-console}
 
-1. Connectez-vous à [Admin Console](https://adminconsole.adobe.com/enterprise){target=&quot;_blank&quot;}.
+1. Connectez-vous au [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"}.
 1. Dans la section **Produit et services** de la page d’accueil, ouvrez le produit Campaign.
 1. Cliquez sur **Nouveau profil** et saisissez le nom du profil de produit à créer, en respectant la syntaxe correcte, comme décrit [ici](#product-profiles). Dans notre exemple, nous avons saisi : campaign - `<your-instance-name>` - validants
 
@@ -175,7 +175,7 @@ Ces profils de produit correspondent aux **groupes d’opérateurs** Campaign. L
 
 Admin Console vous permet de créer des groupes d’utilisateurs et d’affecter des utilisateurs à ceux-ci.
 
-Un groupe d’utilisateurs consiste en plusieurs utilisateurs différents ayant un ensemble commun d’autorisations. Découvrez comment créer des groupes d’utilisateurs dans [cette section](https://helpx.adobe.com/fr/enterprise/using/user-groups.html){target=&quot;_blank&quot;}.
+Un groupe d’utilisateurs consiste en plusieurs utilisateurs différents ayant un ensemble commun d’autorisations. Découvrez comment créer des groupes d’utilisateurs dans [cette section](https://helpx.adobe.com/fr/enterprise/using/user-groups.html){target="_blank"}.
 
 Vous pouvez attribuer des profils de produit aux groupes d’utilisateurs. Tous les utilisateurs de ce groupe posséderont alors le même ensemble d’autorisations de produit.
 

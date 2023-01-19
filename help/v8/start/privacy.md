@@ -7,8 +7,8 @@ level: Beginner, Intermediate, Experienced
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 100%
+source-wordcount: '1080'
+ht-degree: 93%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 100%
 
 Selon la nature de votre entreprise et les juridictions sous lesquelles elle opère, vos opérations de données peuvent être soumises à des réglementations légales en matière de confidentialité. Ces réglementations donnent souvent à vos clients le droit de demander l’accès aux données que vous collectez auprès d’eux et le droit de demander la suppression de ces données stockées. Ces demandes des clients concernant leurs données personnelles sont appelées « demandes d’accès à des informations personnelles » dans l’ensemble de la documentation.
 
-Adobe met à la disposition des contrôleurs de données des outils afin de créer et de traiter des demandes d’accès à des informations personnelles pour les données stockées dans Adobe Campaign. Cependant, il est de votre responsabilité, en tant que contrôleur de données, de vérifier l&#39;identité du titulaire de données à l&#39;origine de la demande, et de confirmer que les données renvoyées au demandeur concernent le titulaire de données. Obtenez des informations supplémentaires sur les données personnelles et les différentes entités qui gèrent les données dans la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr#personal-data){target=&quot;_blank&quot;}.
+Adobe met à la disposition des contrôleurs de données des outils afin de créer et de traiter des demandes d’accès à des informations personnelles pour les données stockées dans Adobe Campaign. Cependant, il est de votre responsabilité, en tant que contrôleur de données, de vérifier l&#39;identité du titulaire de données à l&#39;origine de la demande, et de confirmer que les données renvoyées au demandeur concernent le titulaire de données. Obtenez des informations supplémentaires sur les données personnelles et les différentes entités qui gèrent les données dans la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr#personal-data){target="_blank"}.
 
 
 Pour gérer les demandes d’accès à des informations personnelles dans Campaign, vous devez d’abord [définir un espace de noms](#namespaces). Vous pouvez ensuite créer et gérer des demandes d’accès à des informations personnelles. Pour effectuer des demandes d’accès à des informations personnelles, utilisez l’intégration **Adobe Privacy Service**. Les demandes d’accès à des informations personnelles transmises par Privacy Service à toutes les solutions Adobe Experience Cloud sont automatiquement traitées par Campaign via un workflow dédié. [En savoir plus](#create-privacy-request)
 
-![](../assets/do-not-localize/speech.png) Découvrez le **Droit d’accès** et le **Droit à l’oubli** (requête de suppression) dans la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=fr#right-access-forgotten){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/speech.png) Découvrez le **Droit d’accès** et le **Droit à l’oubli** (requête de suppression) dans la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=fr#right-access-forgotten){target="_blank"}.
 
 
 >[!NOTE]
@@ -34,7 +34,7 @@ Avant de créer une demande d’accès à des informations personnelles, vous de
 
 >[!NOTE]
 >
->Pour en savoir plus sur les espaces de noms d’identité, consultez la [documentation Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=fr){target=&quot;_blank&quot;}.
+>Pour en savoir plus sur les espaces de noms d’identité, consultez la [documentation Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=fr){target="_blank"}.
 
 Actuellement, Adobe Campaign ne prend pas en charge l’importation d’espaces de noms à partir du service Espace de noms d’identité Experience Platform. Par conséquent, une fois que vous avez créé un espace de noms sur le service Espace de noms d’identité, vous devez créer manuellement l’espace de noms correspondant dans l’interface Adobe Campaign. Pour ce faire, suivez les étapes ci-après.
 
@@ -46,9 +46,9 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 >For optimal performance, it is recommended to use out-of-the-box namespaces.
 -->
 
-1. Créez un espace de noms sur le [Service Espace de noms d’identité](https://developer.adobe.com/experience-platform-apis/references/identity-service/#tag/Identity-Namespace){target=&quot;_blank&quot;}.
+1. Créez un espace de noms sur le [Service Espace de noms d’identité](https://developer.adobe.com/experience-platform-apis/references/identity-service/#tag/Identity-Namespace){target="_blank"}.
 
-1. Lorsque la [liste des espaces de noms d’identité](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target=&quot;_blank&quot;} est disponible pour votre organisation, vous obtenez les détails suivants sur les espaces de noms, par exemple :
+1. When [liste des espaces de noms d’identité](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target="_blank"} disponible pour votre organisation, vous obtenez l’espace de noms suivant, par exemple :
 
    ```
    {
@@ -95,7 +95,7 @@ Vous pouvez maintenant créer des demandes d&#39;accès à des informations pers
 
 L’intégration à **[!DNL Adobe Experience Platform Privacy Service]** vous permet d’automatiser vos demandes d’accès à des informations personnelles dans un contexte multisolution grâce à un seul appel API JSON. Adobe Campaign gère automatiquement les demandes transmises par Privacy Service via un workflow dédié.
 
-Reportez-vous à la documentation [Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr){target=&quot;_blank&quot;} pour savoir comment créer des demandes d’accès à des informations personnelles à partir de Privacy Core Service.
+Reportez-vous à la documentation d&#39;[Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr) pour savoir comment créer des demandes d&#39;accès à des informations personnelles à partir de Privacy Core Service.{target="_blank"}
 
 Chaque traitement **[!DNL Privacy Service]** est divisé en plusieurs demandes d’accès à des informations personnelles dans Adobe Campaign en fonction du nombre d’espaces de noms utilisés (une demande correspondant à un espace de noms).
 
@@ -109,9 +109,9 @@ Le modèle d&#39;un nom de fichier est le suivant : `<InstanceName>-<NamespaceI
 
 >[!CAUTION]
 >
->Pour soumettre une requête à l’aide du type d’espace de noms personnalisé, réutilisez la [méthode JSON](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=fr#json){target=&quot;_blank&quot;} et ajoutez l’identifiant d’espace de noms à la requête, ou utilisez l’[appel API](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/privacy-jobs.html?lang=fr#access-delete){target=&quot;_blank&quot;} pour effectuer la requête.
+>Pour envoyer une requête à l’aide du type d’espace de noms personnalisé, utilisez la méthode [méthode JSON](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=fr#json){target="_blank"} and add the namespaceId to the request, or use the [API call](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/privacy-jobs.html?lang=fr#access-delete){target="_blank"} pour effectuer la requête.
 >
->N’utilisez que l’[Interface utilisateur Accès à des informations personnelles](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=fr#request-builder){target=&quot;_blank&quot;} pour envoyer des requêtes à l’aide du type d’espace de nom standard.
+>N’utilisez que la variable [Interface utilisateur de confidentialité](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=fr#request-builder){target="_blank"} pour envoyer des requêtes à l’aide du type d’espace de noms standard.
 
 ### Tables recherchées lors des demandes de traitement {#list-of-tables}
 
@@ -152,10 +152,10 @@ Vous trouverez ci-dessous les différents statuts des demandes d’accès à des
 
 **Rubriques connexes dans la documentation de Campaign Classic v7 :**
 
-* [Confidentialité et consentement](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr){target=&quot;_blank&quot;}
+* [Confidentialité et consentement](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr){target="_blank"}
 
-* [Prise en main de la gestion de la confidentialité](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=fr){target=&quot;_blank&quot;}
+* [Prise en main de la gestion de la confidentialité](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=fr){target="_blank"}
 
-* [Règlements relatifs à la gestion de la confidentialité](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=fr#privacy-management-regulations){target=&quot;_blank&quot;} (RGPD, CCPA, PDPA et LGPD)
+* [Règlements relatifs à la gestion de la confidentialité](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=fr#privacy-management-regulations){target="_blank"} (RGPD, CCPA, PDPA et LGPD)
 
-* [Droit d’opposition (opt-out) à la vente d’informations personnelles](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-requests/privacy-requests-ccpa.html?lang=fr){target=&quot;_blank&quot;} (spécifique au CCPA)
+* [Droit d’opposition (opt-out) à la vente des informations personnelles](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-requests/privacy-requests-ccpa.html?lang=fr){target="_blank"} (spécifique au CCPA)

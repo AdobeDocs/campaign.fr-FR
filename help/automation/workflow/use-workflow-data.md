@@ -5,7 +5,7 @@ feature: Workflows, Data Management
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '738'
 ht-degree: 100%
 
 ---
@@ -44,7 +44,7 @@ Sélectionnez pour cela le menu correspondant :
 
    Ce menu donne accès à l&#39;assistant d&#39;analyse descriptive, qui permet de produire des statistiques et des rapports sur les données de la transition.
 
-   Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target=&quot;_blank&quot;}.
+   Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target="_blank"}.
 
 Les données de la cible sont purgées au fur et à mesure de l&#39;exécution du workflow. Seule la dernière table de travail est accessible. Vous pouvez paramétrer le workflow pour que toutes les tables de travail restent accessibles. Pour cela, cochez l&#39;option **[!UICONTROL Conserver le résultat des populations intermédiaires entre deux exécutions]** dans les propriétés du workflow.
 

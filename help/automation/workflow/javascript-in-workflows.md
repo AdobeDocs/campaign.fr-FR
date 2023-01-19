@@ -6,7 +6,7 @@ feature: Workflows
 exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '1763'
+source-wordcount: '1759'
 ht-degree: 100%
 
 ---
@@ -50,7 +50,7 @@ Pour écrire dans la base de données, vous pouvez utiliser la méthode `Write` 
    1. Appelez la méthode `Write` sur le schéma `xtk:session`.
 
       >[!IMPORTANT]
-      > Si vous utilisez Adobe Campaign v8, nous vous recommandons d’utiliser le mécanisme d’évaluation avec les API d’**ingestion** et de **mise à jour/suppression des données** pour la méthode `Write` dans une table Snowflake. [En savoir plus](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=fr){target=&quot;_blank&quot;}.
+      > Si vous utilisez Adobe Campaign v8, nous vous recommandons d’utiliser le mécanisme d’évaluation avec les API d’**ingestion** et de **mise à jour/suppression des données** pour la méthode `Write` dans une table Snowflake. [En savoir plus](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=fr){target="_blank"}.
 
    1. Transmettez le code XML en tant qu’argument de la demande d’écriture.
 
@@ -560,7 +560,7 @@ Vous pouvez insérer, mettre à jour et supprimer des enregistrements. Vous pouv
 * Opération `delete`
 
 >[!IMPORTANT]
-> Si vous utilisez Adobe Campaign v8, nous vous recommandons d’utiliser le mécanisme d’évaluation avec les API d’**ingestion** et de **mise à jour/suppression des données** pour la méthode `Write` dans une table Snowflake. [En savoir plus](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=fr){target=&quot;_blank&quot;}.
+> Si vous utilisez Adobe Campaign v8, nous vous recommandons d’utiliser le mécanisme d’évaluation avec les API d’**ingestion** et de **mise à jour/suppression des données** pour la méthode `Write` dans une table Snowflake. [En savoir plus](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=fr){target="_blank"}.
 
 #### Exemple 1 : insertion ou mise à jour d’un enregistrement
 

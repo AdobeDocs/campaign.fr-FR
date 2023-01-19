@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
 source-git-commit: b323dbf9504e39cca78f7082089b864544ee1633
 workflow-type: tm+mt
-source-wordcount: '1629'
-ht-degree: 100%
+source-wordcount: '1625'
+ht-degree: 97%
 
 ---
 
@@ -152,11 +152,11 @@ Découvrez comment envoyer un e-mail avec des champs de données personnalisés 
 
 Ainsi que ces pages dans la documentation de Campaign v7 :
 
-* [Automatiser la création, l’édition et la publication de contenu](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/automating-via-workflows.html?lang=fr){target=&quot;_blank&quot;}
-Découvrez comment automatiser la création et la diffusion d’un bloc de contenu avec le module complémentaire de gestion de contenu de Campaign.
+* [Automatiser la création, l&#39;édition et la publication de contenu](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/automating-via-workflows.html?lang=fr){target="_blank"}
+Découvrez comment automatiser la création et la diffusion d&#39;un bloc de contenu avec le module complémentaire de gestion de contenu de Campaign.
 
-* [Tests AB](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html?lang=fr){target=&quot;_blank&quot;}
-Découvrez comment comparer deux contenus de diffusion par e-mail via un workflow de ciblage. Le message et le texte sont identiques dans les deux diffusions : seule la mise en page change. La population ciblée est divisée en trois : deux groupes de test et la population restante. Une version différente de la diffusion est envoyée à chaque groupe de test.
+* [Test A/B](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html?lang=fr){target="_blank"}
+Découvrez comment comparer deux contenus de diffusion email via un workflow de ciblage. Le message et le texte sont identiques dans les deux diffusions : seule la mise en page change. La population ciblée est divisée en trois : deux groupes de test et la population restante. Une version différente de la diffusion est envoyée à chaque groupe de test.
 
 ### Surveillance {#monitoring}
 
