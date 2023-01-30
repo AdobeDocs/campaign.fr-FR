@@ -4,20 +4,16 @@ title: Surveiller les workflows techniques
 description: Surveiller les workflows techniques
 feature: Workflows
 exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 100%
+source-wordcount: '497'
+ht-degree: 95%
 
 ---
 
 # Surveiller les workflows techniques {#monitoring-technical-workflows}
 
-
-
 Les workflows techniques ont besoin d&#39;être surveillés, et des mesures doivent être prises en cas d&#39;échec.
-
-D&#39;autres méthodes de surveillance des différents processus de Campaign sont présentées dans .
 
 ## Tableau de bord de supervision de l’instance {#instance-monitoring-dashboard}
 
@@ -41,8 +37,7 @@ Pour comprendre la fonction de chaque workflow technique, consultez cette [secti
 
 Pour le **[!UICONTROL Workflow de Nettoyage de la base (&#39;cleanup&#39;)]** :
 
-1. Vérifiez que le ** .
-1. Allez voir le journal des logs pour vérifier que le temps écoulé reste relativement constant et n’affecte pas d’autres workflows.
+Consultez le journal pour vérifier que le temps écoulé est relativement constant et n’interfère pas avec les autres workflows.
 
 Pour le **[!UICONTROL Workflow de tracking (&#39;tracking&#39;)]** :
 
