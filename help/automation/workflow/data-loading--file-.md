@@ -4,10 +4,10 @@ title: Chargement (fichier)
 description: En savoir plus sur l’activité de workflow de chargement (fichier)
 feature: Workflows, Data Management Activity
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 100%
+source-wordcount: '1138'
+ht-degree: 98%
 
 ---
 
@@ -32,8 +32,6 @@ La section supérieure de la fenêtre de configuration de cette activité permet
 Vous pouvez définir un pré-traitement à exécuter lors de l’import du fichier, par exemple pour ne pas avoir à décompresser le fichier sur le serveur (et donc réserver de la place pour le fichier décompressé), mais que la décompression soit incluse dans le traitement du fichier. Sélectionnez l’option **[!UICONTROL Inclure un pré-traitement du fichier]** et choisissez l’une des 3 options : **[!UICONTROL Aucun]**, **[!UICONTROL Décompression]** (zcat) ou **[!UICONTROL Déchiffrer]** (gpg).
 
 ![](assets/preprocessing-dataloading.png)
-
-Pour plus d&#39;informations, reportez-vous à .
 
 ## Définir le format du fichier {#defining-the-file-format}
 
@@ -111,7 +109,7 @@ L&#39;exemple suivant permet de collecter tous les jours un fichier sur le serve
    * la première colonne contient un code correspondant à l&#39;événement : achat (d&#39;un montant supérieur ou inférieur à 3000 euros), sans achat ou retour d&#39;un ou plusieurs articles.
    * les quatre colonnes suivantes contiennent le prénom, le nom, l&#39;email et le numéro de compte du client.
 
-   Le paramétrage du format du fichier à charger correspond à celui défini lors d&#39;un import de données dans Adobe Campaign. Pour plus d&#39;informations, reportez-vous à .
+   Le paramétrage du format du fichier à charger correspond à celui défini lors d&#39;un import de données dans Adobe Campaign.
 
 1. Dans l&#39;activité de partage, indiquez les sous-ensembles à créer, en fonction de la valeur de la colonne **Evénement**.
 
