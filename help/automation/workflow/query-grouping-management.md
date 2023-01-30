@@ -4,9 +4,9 @@ title: Exécuter des requêtes avec gestion des regroupements
 description: Découvrez comment exécuter des requêtes avec gestion des regroupements.
 feature: Query Editor
 exl-id: 6fc4ef67-5d75-4c8c-8bcc-41e3ed155ca2
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '299'
 ht-degree: 100%
 
 ---
@@ -36,8 +36,6 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
    ![](assets/query_editor_02.png)
 
 1. Dans la fenêtre **[!UICONTROL Données à extraire]**, sélectionnez les champs **[!UICONTROL Domaine de l&#39;email]** et **[!UICONTROL Clé primaire]**. Faites un comptage du champ **[!UICONTROL Clé primaire]**.
-
-   Pour plus d&#39;informations sur le comptage d&#39;une clé primaire, reportez-vous à .
 
 1. Sélectionnez l&#39;option **[!UICONTROL Gérer les groupements (GROUP BY + HAVING)]**.
 
