@@ -4,19 +4,17 @@ title: Campagne
 description: Campagne
 feature: Workflows
 topic-tags: technical-workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 100%
+source-wordcount: '155'
+ht-degree: 92%
 
 ---
 
 
 # Campagne{#campaign}
 
-
-
-Les workflows présentés ci-dessous sont installés par défaut avec le module **Campaign**. Pour plus d&#39;informations sur ce module, reportez-vous à cette .
+Les workflows présentés ci-dessous sont installés avec le **Campagne** par défaut.
 
 >[!CAUTION]
 >
