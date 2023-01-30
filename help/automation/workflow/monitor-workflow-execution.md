@@ -4,24 +4,20 @@ title: Surveiller l’exécution des workflows
 description: Surveiller l’exécution des workflows
 feature: Workflows
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '2027'
-ht-degree: 100%
+source-wordcount: '2016'
+ht-degree: 97%
 
 ---
 
 # Surveiller l’exécution des workflows {#monitoring-workflow-execution}
 
-
-
 Cette section présente des informations sur la manière de surveiller l’exécution de vos workflows.
 
 Vous trouverez également dans [cette section](workflow-supervision.md#supervising-workflows) un exemple de création d’un workflow qui permet de surveiller l’état d’un ensemble de workflows en pause, arrêtés ou en erreur.
 
-En outre, les administrateurs de l’instance peuvent utiliser le **journal d’audit** pour vérifier les activités et les dernières modifications apportées aux workflows, c’est-à-dire l’état de vos workflows. Pour plus d&#39;informations, reportez-vous à .
-
-D&#39;autres méthodes de surveillance des différents processus de Campaign sont présentées dans .
+En outre, les administrateurs de l’instance peuvent utiliser le **journal d’audit** pour vérifier les activités et les dernières modifications apportées aux workflows, c’est-à-dire l’état de vos workflows. En savoir plus sur le journal d&#39;audit dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html?lang=fr#accessing-audit-trail){target="_blank"}.
 
 ## Afficher la progression {#displaying-progress}
 
@@ -139,8 +135,6 @@ Dans ce cas, la tâche en erreur est abandonnée. Ce mode est particulièrement 
 >
 >Vous pouvez appliquer ce paramétrage unitairement au niveau des activités. Pour cela, éditer les propriétés de l&#39;activité et sélectionnez le mode de gestion des erreurs dans l&#39;onglet **[!UICONTROL Avancé]**.
 
-Pour plus d&#39;informations sur la résolution des problèmes d&#39;exécution des workflows, reportez-vous à .
-
 ## Traiter les erreurs {#processing-errors}
 
 Au niveau des activités, l&#39;option **[!UICONTROL Traiter les erreurs]** fait apparaître une transition particulière qui sera activée si une erreur est générée. Dans ce cas, le workflow ne passe pas en état d&#39;erreur et continue son exécution.
@@ -230,9 +224,9 @@ Cette section présente un cas d’utilisation : [Coordonner les mises à jour 
 
 ## Maintenance de la base de données {#database-maintenance}
 
-Les workflows utilisent beaucoup de tables de travail qui occupent de l&#39;espace et finissent par ralentir l&#39;ensemble de la plateforme s&#39;ils ne sont pas maintenus. Pour plus d&#39;informations sur la maintenance des bases de données, reportez-vous à .
+Les workflows utilisent de nombreuses tables de travail qui occupent de l&#39;espace et finissent par ralentir l&#39;ensemble de la plateforme si elles ne sont pas gérées.
 
-Le workflow **Nettoyage de la base** (cleanup), accessible à partir du nœud **Administration > Exploitation > Workflows techniques** permet de supprimer les données obsolètes afin d&#39;éviter une croissance exponentielle de la base. Le workflow se déclenche de manière automatique sans intervention de l&#39;utilisateur. Reportez-vous à  .
+Le workflow **Nettoyage de la base** (cleanup), accessible à partir du noeud **Administration > Exploitation > Workflows techniques**, permet de supprimer les données obsolètes afin d&#39;éviter une croissance exponentielle de la base. Le workflow se déclenche de manière automatique sans intervention de l&#39;utilisateur.
 
 Vous pouvez également créer des workflows techniques spécifiques pour purger les données inutiles qui occupent de l&#39;espace. Référez-vous à   et à cette [section](#purging-the-logs).
 
@@ -267,7 +261,7 @@ Pour cela :
 
 1. Cliquez avec le bouton droit sur le dossier dans lequel vous souhaitez ajouter la vue.
 1. Dans **[!UICONTROL Ajouter un dossier]** / **[!UICONTROL Administration]**, sélectionnez la vue à ajouter.
-1. Une fois le dossier ajouté à l&#39;arborescence, assurez-vous de le configurer en tant que vue afin qu&#39;il affiche tous les workflows, quel que soit leur dossier d&#39;origine. Pour plus d&#39;informations sur la configuration des vues, reportez-vous à .
+1. Une fois le dossier ajouté à l&#39;arborescence, veillez à le configurer en tant que vue afin qu&#39;il affiche tous les workflows, quel que soit leur dossier d&#39;origine. Pour plus d’informations sur le paramétrage des vues, reportez-vous à la section [cette page](../../v8/audiences/folders-and-views.md#turn-a-folder-to-a-view).
 
 En outre, vous pouvez configurer des dossiers de filtres qui vous permettront de filtrer la liste des workflows en fonction de leur état d’exécution. Pour cela :
 
