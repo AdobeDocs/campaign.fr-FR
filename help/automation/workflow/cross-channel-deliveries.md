@@ -4,10 +4,10 @@ title: Diffusions cross-canal
 description: En savoir plus sur les diffusions cross-canal
 feature: Workflows, Channels Activity
 exl-id: fedcffcd-cf9b-4c3d-bd25-cb87dda30192
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 100%
+source-wordcount: '258'
+ht-degree: 96%
 
 ---
 
@@ -38,14 +38,14 @@ Dans l&#39;exemple ci-dessous, nous allons créer un workflow permettant d&#39;e
 1. Ajoutez une activité de **[!UICONTROL Partage]** à votre workflow pour diviser les destinataires ayant un numéro de mobile et ceux ayant une adresse email.
 1. Dans l&#39;onglet **[!UICONTROL Diffusion]**, sélectionnez une diffusion pour chacune de vos cibles.
 
-   Pour créer votre diffusion, procédez de la même manière qu&#39;avec un assistant de diffusion classique en double-cliquant sur l&#39;activité de diffusion de votre workflow. Pour plus d&#39;informations, reportez-vous à .
+   Pour créer votre diffusion, procédez de la même manière qu&#39;avec un assistant de diffusion classique en double-cliquant sur l&#39;activité diffusion de votre workflow.
 
    ![](assets/cross_channel_delivery_3.png)
 
 1. Pour éviter que les destinataires ne reçoivent trop de diffusion à la fois, ajoutez et configurez une activité **[!UICONTROL Attente]**.
 1. Ajoutez une activité **[!UICONTROL Partage]** pour diviser les abonnés aux applications mobiles iOS ou Android.
 
-   Sélectionnez un service pour chacun des systèmes d&#39;exploitation. Pour en savoir plus sur la création de service, reportez-vous à .
+   Sélectionnez un service pour chacun des systèmes d’exploitation.
 
    ![](assets/cross_channel_delivery_4.png)
 
