@@ -4,9 +4,9 @@ title: Workflows techniques
 description: En savoir plus sur les workflows techniques disponibles avec Campaign
 feature: Workflows
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1674'
+source-wordcount: '1659'
 ht-degree: 100%
 
 ---
@@ -32,7 +32,7 @@ Vous pouvez créer d&#39;autres workflows techniques dans le noeud **[!UICONTROL
 
 Les activités proposées sont les mêmes que pour les workflows de ciblage. [En savoir plus](targeting-workflows.md)
 
-Les workflows présentés dans cette section sont installés avec les différents packages standard d’Adobe Campaign. Ces packages, ainsi que les workflows techniques associés, dépendent de votre contrat de licence. Pour en savoir plus les packages natifs, consultez .
+Les workflows présentés dans cette section sont installés avec les différents packages standard d’Adobe Campaign. Ces packages, ainsi que les workflows techniques associés, dépendent de votre contrat de licence.
 
 Par défaut, les workflows techniques sont disponibles dans un sous-dossier du nœud suivant : **[!UICONTROL Administration]** > **[!UICONTROL Exploitation]** > **[!UICONTROL Workflows techniques]**.
 
@@ -55,7 +55,7 @@ Découvrez comment surveiller les workflows techniques dans cette [section dédi
 | **Collecter les données pour le service Carte thermique** (collectDataHeatMapService) | Installé par défaut | Ce workflow récupère les données requises par le service Carte thermique. |
 | **Collecter les demandes d&#39;accès à des informations personnelles** (collectPrivacyRequests) | Règlement sur la protection des informations personnelles | Ce workflow génère les données du destinataire stockées dans Adobe Campaign et les met à disposition sur l’écran de la demande d’accès. |
 | **Calcul des coûts** (budgetMgt) | Installé par défaut | Ce workflow lance le calcul des lignes de dépenses et des coûts sur les budgets, les plans, programmes, opérations, diffusions et tâches. |
-| **Nettoyage de la base de données** (cleanup) | Installé par défaut | Ce workflow est le workflow d&#39;entretien de la base : il procède aux différents calculs des statistiques et traitements, et supprime les données obsolètes de la base de données selon le paramétrage défini dans l&#39;assistant de déploiement. Par défaut, il se déclenche tous les jours à 4h00. Pour plus d&#39;informations, référez-vous à  . |
+| **Nettoyage de la base de données** (cleanup) | Installé par défaut | Ce workflow est le workflow d&#39;entretien de la base : il procède aux différents calculs des statistiques et traitements, et supprime les données obsolètes de la base de données selon le paramétrage défini dans l&#39;assistant de déploiement. Par défaut, il se déclenche tous les jours à 4H00. |
 | **Nettoyage des utilisateurs LINE bloqués** (deleteBlockedLineUsersV2) | Canal LINE | Ce workflow assure la suppression des données des utilisateurs LINE V2 s’ils ont bloqué le compte officiel LINE pendant 180 jours. |
 | **Supprimer les données des demandes d’accès à des informations personnelles** (deletePrivacyRequestsData) | Règlement sur la protection des informations personnelles | Ce workflow supprime les données du destinataire stockées dans Adobe Campaign. |
 | **Indicateurs de diffusion** (deliveryIndicators) | Plateforme de Mid-sourcing | Ce workflow met à jour les indicateurs de tracking des diffusions. Par défaut, ce workflow se déclenche toutes les heures. |
@@ -73,7 +73,7 @@ Découvrez comment surveiller les workflows techniques dans cette [section dédi
 | **Calcul de l&#39;agrégat intégral de MessageCenter** (agg_messageCenter_full) | Contrôle des messages transactionnels (Message Center - Pilotage) | Ce workflow met à jour l’agrégat intégral du cube Message Center. Il est déclenché tous les jours à 3h du matin par défaut. Cet agrégat capture les dimensions suivantes : Canal, Date, Statut et Type d&#39;événement. Le cube Message Center est ensuite utilisé pour générer des rapports basés sur des événements. Pour plus d&#39;informations sur les cubes, consultez |
 | **Mid-sourcing (compteurs des diffusions)** (defaultMidSourcingDlv) | Emission vers Mid-sourcing | Ce workflow collecte les informations de comptage des diffusions sur le serveur de mid-sourcing. Les informations de comptage comprennent les indicateurs généraux de diffusion tels que le nombre de diffusions envoyées, etc. Les informations de tracking comme les ouvertures ne sont pas incluses. Par défaut, il se déclenche toutes les dix minutes. |
 | **Mid-sourcing (logs de diffusion)** (defaultMidSourcingLog) | Emission vers Mid-sourcing | Ce workflow collecte les logs des diffusions sur le serveur de mid-sourcing. Par défaut, il se déclenche toutes les heures. |
-| **Gestion des opt-out NMAC** (mobileAppOptOutMgt) | Canal des applications mobiles (notification push) | Ce workflow met à jour les désinscriptions aux notifications sur les appareils mobiles. Il se déclenche toutes les 6 heures entre 1h00 et minuit. Pour plus d&#39;informations, référez-vous à . |
+| **Gestion des opt-out NMAC** (mobileAppOptOutMgt) | Canal des applications mobiles (notification push) | Ce workflow met à jour les désinscriptions aux notifications sur les terminaux mobiles. Par défaut, il se déclenche toutes les 6H00 entre 1H00 et minuit. |
 | **Notification d&#39;offre** (offerMgt) | Installé par défaut | Toutes les heures, ce workflow déploie les offres validées sur l&#39;environnement en ligne, ainsi que toutes les catégories contenues dans le catalogue d&#39;offres. |
 | **Nettoyage des workflows en pause** (cleanupPausedWorkflows) | Installé par défaut | Ce workflow analyse les workflows en pause dont le niveau de priorité est défini sur normal et déclenche des avertissements et des notifications lorsqu&#39;ils sont en pause depuis trop longtemps. Après un mois, les workflows techniques en pause sont arrêtés de manière inconditionnelle. Par défaut, ce workflow est déclenché tous les lundis à 5h00. Pour plus d’informations, voir [Gérer les workflows en pause](monitor-workflow-execution.md#handling-of-paused-workflows). |
 | **Nettoyage des demandes d&#39;accès à des informations personnelles** (cleanupPrivacyRequests) | Règlement sur la protection des informations personnelles | Ce workflow supprime les fichiers de demande d’accès qui ont plus de 90 jours. |
