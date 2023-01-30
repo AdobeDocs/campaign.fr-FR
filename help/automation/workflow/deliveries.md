@@ -3,9 +3,9 @@ product: campaign
 title: Diffusions
 description: En savoir plus sur les workflows de diffusions par défaut
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '316'
 ht-degree: 100%
 
 ---
@@ -47,7 +47,7 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
   <tr> 
    <td> <span class="uicontrol">Nettoyage de la base</span> <br /> </td> 
    <td> <span class="uicontrol">nettoyage</span> <br /> </td> 
-   <td> <p>Ce workflow est le workflow d'entretien de la base : il procède aux différents calculs des statistiques et traitements, et supprime les données obsolètes de la base de données selon le paramétrage défini dans l'assistant de déploiement. Par défaut, il se déclenche tous les jours à 4H00.</p> <p>Pour plus d'informations, reportez-vous à .</p> </td> 
+   <td> <p>Ce workflow est le workflow d'entretien de la base : il procède aux différents calculs des statistiques et traitements, et supprime les données obsolètes de la base de données selon le paramétrage défini dans l'assistant de déploiement. Par défaut, il se déclenche tous les jours à 4H00.</p></td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Nettoyage des workflows en pause</span> <br /> </td> 
