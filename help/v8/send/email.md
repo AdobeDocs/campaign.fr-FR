@@ -1,14 +1,14 @@
 ---
 title: Envoyer des e-mails avec Adobe Campaign
-description: Commencez à utiliser les e-mails dans Adobe Campaign. Envoyez‧des‧e-mails‧personnalisés‧à‧une‧population‧cible.
+description: Commencez à utiliser les e-mails dans Adobe Campaign. Envoyez des e-mails personnalisés à une population cible.
 feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '581'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -75,7 +75,7 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
    Une fois le contenu prêt, cliquez sur **Enregistrer** : elle s&#39;affiche désormais dans votre liste de diffusions, sous l&#39;onglet **[!UICONTROL Campagnes > Diffusions]**. Votre première diffusion e-mail est prête. Vous devez maintenant définir l&#39;audience, valider la diffusion et l&#39;envoyer.
 
 
-Découvrez comment importer un contenu d’e-mail dans ce [cas d’utilisation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=fr).
+Découvrez comment importer un contenu d&#39;email dans [cas pratique](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=fr).
 
 Pour en savoir, consultez ces sections de la **documentation de Campaign Classic v7** :
 
