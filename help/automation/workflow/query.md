@@ -4,10 +4,10 @@ title: Requête
 description: En savoir plus sur l’activité de workflow de requête
 feature: Workflows, Targeting Activity, Query Editor
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 100%
+source-wordcount: '1605'
+ht-degree: 98%
 
 ---
 
@@ -42,15 +42,13 @@ Le lien **[!UICONTROL Editer la requête...]** permet de définir le type de cib
 
 1. Définissez la sélection des populations via l&#39;assistant. Les champs à renseigner peuvent différer en fonction du type de cible. Vous pouvez afficher un aperçu de la population ciblée avec vos critères actuels via l&#39;onglet **[!UICONTROL Aperçu]**.
 
-   La création et l&#39;utilisation des filtres et des requêtes sont présentées dans cette .
-
    ![](assets/query-sample.png)
 
 1. Ajoutez éventuellement des critères de filtrage manuellement si vous avez sélectionné **[!UICONTROL Critères de filtrage]** à l&#39;étape 1 ou via l&#39;option **[!UICONTROL Filtres]** > **[!UICONTROL Filtre avancé...]**.
 
    Vous pouvez également ajouter des conditions de groupement de données en cochant la case correspondante. Pour cela, la dimension de filtrage doit impérativement être différente de la dimension de ciblage de la requête. Pour plus d&#39;informations concernant le groupement, consultez cette [section](query-grouping-management.md).
 
-   Vous pouvez également ajouter des critères supplémentaires en vous aidant du Créateur d&#39;expressions et les combiner via les opérateurs logiques ET, OU et SAUF. Vous pouvez ensuite prévisualiser la ** .
+   Vous pouvez également ajouter d’autres critères à l’aide du générateur d’expression et les combiner avec les options logiques AND, OR et SACEPT.
 
    Enregistrez votre filtre si vous souhaitez le réutiliser ultérieurement.
 
@@ -182,8 +180,6 @@ La section ci-dessous présente les bonnes pratiques pour optimiser les requête
 
 * Attention aux fonctions comme `Lower(...)`. Si vous avez recours à la fonction Lower, l’index n’est pas utilisé.
 * Vérifiez soigneusement les requêtes contenant les instructions « like », « upper » ou « lower ». Appliquez « upper » à la saisie utilisateur et non au champ de base de données.
-
-   Pour en savoir plus sur les fonctions, consultez .
 
 ### Dimensions de filtrage {#filtering-dimensions}
 
