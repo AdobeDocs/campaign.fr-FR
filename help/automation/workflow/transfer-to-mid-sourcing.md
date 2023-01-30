@@ -3,9 +3,9 @@ product: campaign
 title: Emission vers Mid-sourcing
 description: En savoir plus sur les workflows d’émission vers Mid-sourcing
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '95'
 ht-degree: 100%
 
 ---
@@ -13,9 +13,7 @@ ht-degree: 100%
 
 # Émission vers Mid-sourcing{#transfer-to-mid-sourcing}
 
-
-
-Les workflows présentés ci-dessous sont installés par défaut avec le module **Émission vers mid-sourcing**. Pour plus d&#39;informations sur ce module, consultez .
+Les workflows présentés ci-dessous sont installés par défaut avec le module **Émission vers Mid-sourcing**.
 
 <table> 
  <tbody> 
