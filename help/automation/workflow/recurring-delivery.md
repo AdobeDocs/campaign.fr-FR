@@ -4,10 +4,10 @@ title: Diffusion récurrente
 description: En savoir plus sur l’activité de workflow de diffusion récurrente
 feature: Workflows
 exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 100%
+source-wordcount: '272'
+ht-degree: 92%
 
 ---
 
@@ -29,7 +29,7 @@ Pour cela :
 
 1. Paramétrez le modèle de diffusion.
 
-Le paramétrage de cette activité est semblable à la création d&#39;un modèle de diffusion au niveau des options disponibles. Pour plus d&#39;informations à ce sujet, reportez-vous à .
+Le paramétrage de cette activité est similaire à celui de la création d&#39;un modèle de diffusion au niveau des options disponibles.
 
 Un exemple d&#39;utilisation de cette activité est proposé dans cette [section](send-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
