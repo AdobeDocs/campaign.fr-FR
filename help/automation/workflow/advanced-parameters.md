@@ -4,9 +4,9 @@ title: Paramètres avancés
 description: Paramètres avancés
 feature: Workflows, Data Management
 exl-id: aafd977e-c8af-426b-904c-8388c9d8e595
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '532'
 ht-degree: 100%
 
 ---
@@ -48,8 +48,6 @@ Ces options sont généralement sélectionnées au niveau du diagramme en cliqua
 ## Affinité {#affinity}
 
 Vous pouvez choisir de forcer l&#39;exécution d&#39;un workflow ou d&#39;une activité de workflow sur une machine particulière. Vous devez pour cela définir une ou plusieurs affinités au niveau du workflow ou de l&#39;activité concernée.
-
-Le paramétrage des workflows en haute disponibilité est présenté dans cette  .
 
 
 ## Durée max. d’exécution {#max--execution-period}
