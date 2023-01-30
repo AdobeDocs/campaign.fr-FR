@@ -4,10 +4,10 @@ title: Démarrer un workflow
 description: Découvrez comment démarrer un workflow et la barre d’outils des actions de workflows ainsi que le menu contextuel
 feature: Workflows
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 100%
+source-wordcount: '811'
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,7 @@ La liste des options disponibles dans le menu **[!UICONTROL Actions]** et le men
 
 ## Barre d&#39;outils des actions {#actions-toolbar}
 
-Les boutons de la barre d&#39;outils sont présentés dans  . Le bouton **[!UICONTROL Actions]** donne accès à des options d&#39;exécution supplémentaires permettant d&#39;agir sur les workflows sélectionnés. Vous pouvez également utiliser le menu **[!UICONTROL Fichier > Actions]** ou cliquez avec le bouton droit de la souris sur un workflow et sélectionnez **[!UICONTROL Actions]**.
+Le **[!UICONTROL Actions]** du bouton de la barre d&#39;outils permet d&#39;accéder à des options d&#39;exécution supplémentaires sur les workflows sélectionnés. Vous pouvez également utiliser le menu **[!UICONTROL Fichier > Actions]** ou cliquez avec le bouton droit de la souris sur un workflow et sélectionnez **[!UICONTROL Actions]**.
 
 ![](assets/purge_historique.png)
 
@@ -53,8 +53,6 @@ Les boutons de la barre d&#39;outils sont présentés dans  . Le bouton **[!UICO
 
    Cette action consiste à arrêter puis démarrer un workflow. Dans la plupart des cas, elle permet de redémarrer plus vite. Elle est également utile pour automatiser le redémarrage lorsque l&#39;arrêt prend un certain temps : en effet la commande &#39;Démarrer&#39; n&#39;est disponible que lorsque l&#39;arrêt est effectif.
 
-   Les ** .
-
 * **[!UICONTROL Purge de l&#39;historique]**
 
    Cette action vous permet de purger l&#39;historique du workflow. Pour plus d&#39;informations, consultez la section [Purger l&#39;historique](monitor-workflow-execution.md#purging-the-logs).
@@ -78,8 +76,6 @@ Les boutons de la barre d&#39;outils sont présentés dans  . Le bouton **[!UICO
 * **[!UICONTROL Sauver comme modèle]**
 
    Cette action crée un nouveau modèle de workflow à partir du workflow sélectionné. Vous devez indiquer son dossier d&#39;enregistrement (dans le champ **[!UICONTROL Dossier]**).
-
-   Les ** .
 
 ## Menu contextuel {#right-click-menu}
 
@@ -109,4 +105,3 @@ Les options disponibles dans le menu contextuel sont les suivantes :
 >
 >Vous pouvez sélectionner un groupe d&#39;activités pour leur appliquer une de ces commandes.
 
-Le menu contextuel est également présenté dans cette  .
