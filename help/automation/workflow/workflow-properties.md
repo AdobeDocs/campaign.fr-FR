@@ -4,9 +4,9 @@ title: Propriétés d’exécution
 description: En savoir plus sur les propriétés des workflows de Campaign
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '613'
 ht-degree: 100%
 
 ---
@@ -38,8 +38,6 @@ Cette section n&#39;apparaît que dans les workflows d&#39;opérations.
 * **[!UICONTROL Affinité par défaut]**
 
    Si votre installation comprend plusieurs serveurs de workflow, utilisez ce champ pour choisir sur quelle machine le workflow s&#39;exécutera. Si la valeur définie dans ce champ n&#39;existe au niveau d&#39;aucun serveur, le workflow restera en attente.
-
-   Reportez-vous à .
 
 * **[!UICONTROL Jours d&#39;historique]**
 
