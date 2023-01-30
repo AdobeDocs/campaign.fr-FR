@@ -4,9 +4,9 @@ title: Exemples de marketing distribué
 description: Exemples de marketing distribué
 feature: Distributed Marketing
 exl-id: 7825426b-c9e4-49e9-840c-dc6d6d836fbe
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1362'
 ht-degree: 100%
 
 ---
@@ -14,14 +14,11 @@ ht-degree: 100%
 # Exemples de marketing distribué{#distributed-marketing-samples}
 
 
-
 ## Création dʼune campagne locale (par formulaire) {#creating-a-local-campaign--by-form-}
 
 Le type d’interface web **par formulaire** implique l’utilisation d’une **application web**. Cette application web peut contenir toutes sortes d’éléments définis personnalisés, selon la configuration. Par exemple, vous pouvez proposer des liens pour évaluer la cible, le budget, le contenu, etc. via des API dédiées.
 
 >[!NOTE]
->
->Les API sont décrites en détail dans le document qui leur est consacré.  .
 >
 >L&#39;application web utilisée dans cet exemple n&#39;est pas une application web Adobe Campaign d&#39;usine. Pour utiliser un formulaire dans une campagne, vous devez créer l&#39;application web dédiée.
 
