@@ -3,10 +3,10 @@ product: campaign
 title: Plateforme de Mid-sourcing
 description: Plateforme de Mid-sourcing
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 100%
+source-wordcount: '43'
+ht-degree: 69%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 
 
-Le workflow présenté ci-dessous est installé par défaut avec le module **Plateforme de mid-sourcing**. Pour plus d&#39;informations sur ce module, consultez cette .
+Le workflow présenté ci-dessous est installé avec la méthode **Plateforme de mid-sourcing** par défaut.
 
 <table> 
  <tbody> 
