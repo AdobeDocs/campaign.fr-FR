@@ -4,20 +4,16 @@ title: Carte thermique des workflows Campaign
 description: Surveillez vos workflows avec la Carte thermique des workflows
 feature: Workflows, Heatmap
 exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1145'
 ht-degree: 100%
 
 ---
 
 # Carte thermique des workflows {#workflow-heatmap}
 
-
-
 La Carte thermique des workflows Campaign est une représentation graphique avec code-couleur de tous les workflows en cours d’exécution. Elle est disponible uniquement pour les **administrateurs de Campaign**.
-
-Découvrez d&#39;autres méthodes de surveillance des processus de Campaign sur cette page.
 
 ## Prise en main de la Carte thermique des workflows {#about-the-workflow-heatmap}
 
@@ -53,8 +49,7 @@ L’utilisation de la carte thermique des workflows demande une bonne maîtrise 
    Par défaut, la page affiche l&#39;activité des workflows pour le jour en cours. Vous pouvez le changer et sélectionner n&#39;importe quel jour précédent.
 
    >[!NOTE]
-   >
-   >Seuls les workflows qui n&#39;ont pas été supprimés par le **.\
+   > 
    >Par défaut, le fuseau horaire de la carte thermique des workflows est celui défini pour l&#39;utilisateur administrateur actuel. Vous pouvez vouloir le changer si, par exemple, vous ne vous trouvez pas dans la même zone géographique que les utilisateurs marketing avec lesquels vous travaillez.
 
 1. Cliquez sur le bouton **[!UICONTROL Filtres]**.
@@ -153,7 +148,7 @@ Dans ce cas pratique, de nombreux utilisateurs se plaignent des performances des
 
 1. Accédez à **[!UICONTROL Suivi]**, puis cliquez sur le lien **[!UICONTROL Workflows]** pour afficher la page **[!UICONTROL Carte thermique des workflows Campaign]**.
 1. Définissez le filtre **[!UICONTROL Durée min.]** sur 5 minutes.
-1. Définissez le filtre **[!UICONTROL Type de workflow]** sur **[!UICONTROL Marketing]** .
+1. Définissez le filtre **[!UICONTROL Type de workflow]** sur **[!UICONTROL Marketing]**.
 1. Dans la grille de la carte thermique, notez les points suivants :
 
    ![](assets/wkf_monitoring_without.png)
