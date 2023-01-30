@@ -4,20 +4,16 @@ title: Composition de diffusion
 description: En savoir plus sur l’activité de workflow de composition de diffusion
 feature: Workflows, Targeting Activity
 exl-id: 3c06b329-b2d8-4ac8-ab9b-3ab3e525d109
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '249'
 ht-degree: 100%
 
 ---
 
 # Composition de diffusion{#delivery-outline}
 
-
-
 L&#39;activité de **composition de diffusion** permet d&#39;utiliser une composition dans un workflow de campagne. La composition doit avoir été préalablement créée dans la campagne.
-
-Pour plus d&#39;informations sur les compositions de diffusion dans Adobe Campaign, reportez-vous à .
 
 Pour paramétrer l&#39;activité, vous devez simplement sélectionner la composition de votre choix ainsi que la date prévue de contact. Vous pouvez ajouter des règles de filtrages en ajoutant des typologies ou des règles de typologie.
 
@@ -31,9 +27,6 @@ L’activité de **composition de diffusion**, disponible dans les workflows de 
 
 1. Dans un workflow, placez une activité de composition de diffusion avant une activité de diffusion.
 1. Dans l&#39;activité de composition, définissez la composition que vous souhaitez utiliser.
-
-   Pour plus d&#39;informations sur la définition des compositions de diffusion, reportez-vous à .
-
 1. Complétez les champs disponibles en fonction de votre diffusion.
 1. Deux cas se présentent :
 
