@@ -4,23 +4,17 @@ title: Envoi de fichier
 description: En savoir plus sur l’activité de workflow d’envoi de fichier
 feature: Workflows, Data Management
 exl-id: 794de398-f35d-4c2b-af29-d6fd38eb9394
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '639'
 ht-degree: 100%
 
 ---
 
 # Envoi de fichier{#file-transfer}
 
-
-
 L&#39;activité **Transfert de fichier** permet de recevoir ou d&#39;envoyer des fichiers, de tester la présence de fichiers ou de répertorier les fichiers sur un serveur. Le protocole utilisé est le suivant : stockage Blob Azure, S3 (Amazon Simple Storage Service), FTP ou SFTP.
 Avec la connexion SFTP, S3, ou stockage Blob Azure, vous pouvez également importer des données de segments vers Adobe Campaign avec la plateforme de données clientes en temps réel d&#39;Adobe. Voir à ce propos cette [documentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=fr).
-
->[!NOTE]
->
->Les bonnes pratiques et la résolution des problèmes liées à l&#39;utilisation du serveur SFTP sont présentées dans cette page.
 
 ## Propriétés {#properties}
 
