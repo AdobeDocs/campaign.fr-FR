@@ -4,16 +4,14 @@ title: Gestion de contenu
 description: Gestion de contenu
 feature: Workflows, Data Management
 exl-id: 9b225f78-1959-4e4f-aa4e-ff8a63051154
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '441'
 ht-degree: 100%
 
 ---
 
 # Gestion de contenu{#content-management}
-
-
 
 Une activité de type **Gestion de contenu** permet de créer et de manipuler un contenu ainsi que de générer les fichiers à partir de ce contenu. Ce contenu peut ensuite être diffusé à l&#39;aide d&#39;une activité de type &#39;Diffusion&#39;.
 
@@ -28,8 +26,6 @@ Les propriétés de l&#39;activité se divisent en trois étapes :
 * **Action**: le contenu résultant peut être enregistré ou généré.
 
    ![](assets/content_mgmt_edit.png)
-
-   Pour plus d&#39;informations sur le paramétrage et l&#39;utilisation de la gestion de contenu dans Adobe Campaign, référez-vous à  .
 
 1. **Content**
 
@@ -98,7 +94,3 @@ Identifiant du contenu à utiliser, si l&#39;option **[!UICONTROL Spécifié par
 * filename
 
    Nom complet du fichier généré, si l&#39;action sélectionnée est **[!UICONTROL Générer]**.
-
-## Exemples     {#examples}
-
-Des exemples sont proposés dans  .
