@@ -4,7 +4,7 @@ title: Exemples de code JavaScript dans les workflows
 description: Ces exemples montrent comment vous pouvez utiliser le code JavaScript dans un workflow
 feature: Workflows
 exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '1759'
 ht-degree: 100%
@@ -78,7 +78,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### Mise à jour d’un enregistrement
 
-Utilisez l’opération `_update`.  .
+Utilisez l’opération `_update`.
 
 Indiquez ces informations sous forme d’attributs XML :
 
