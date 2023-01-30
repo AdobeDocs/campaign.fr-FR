@@ -4,9 +4,9 @@ title: Chargement (SOAP)
 description: Chargement (SOAP)
 feature: Workflows
 exl-id: 21c42a36-9a50-49b8-8a07-b041ba8b2026
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '243'
 ht-degree: 100%
 
 ---
@@ -40,8 +40,6 @@ Le principe de fonctionnement est le suivant :
    ![](assets/soap_load_001.png)
 
    Si vous souhaitez mettre à jour l&#39;exemple, sélectionnez **[!UICONTROL Ré-analyser l&#39;exemple]**.
-
-   Vous pouvez également personnaliser le format des données de la colonne grâce au **.
 
 1. Si vous le souhaitez, vous pouvez choisir d&#39;utiliser le numéro de ligne comme identifiant et/ou indiquer que l&#39;appel SOAP renvoie plusieurs éléments.
 1. Saisissez les scripts des onglets suivants selon leur fonction :
