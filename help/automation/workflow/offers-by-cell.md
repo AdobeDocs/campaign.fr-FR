@@ -4,10 +4,10 @@ title: Offres par cellule
 description: Offres par cellule
 feature: Workflows, Targeting Activity, Interaction
 exl-id: e2216dfd-1ef8-4747-b716-576fd6498fa6
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 100%
+source-wordcount: '160'
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 L&#39;activité **[!UICONTROL Offres par cellules]** vous permet de répartir la population entrante (par exemple issue d&#39;une requête) en plusieurs segments, et de définir une offre à proposer pour chacun de ces segments.
 
-Cette activité ne peut être utilisée qu&#39;avec **Interaction**. Pour plus d&#39;informations, reportez-vous à .
+Cette activité ne peut être utilisée qu’avec **Interaction**. En savoir plus sur la gestion des offres dans [cette section](../../v8/interaction/interaction.md).
 
 Pour cela :
 
