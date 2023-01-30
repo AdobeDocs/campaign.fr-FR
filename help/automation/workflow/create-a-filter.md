@@ -4,22 +4,16 @@ title: Créer un filtre
 description: Découvrez comment créer un filtre lors de lʼexécution de requêtes
 feature: Query Editor, Workflows
 exl-id: 8e6fd9b4-77c4-4af8-921b-c3fe104fa5bc
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '219'
 ht-degree: 100%
 
 ---
 
 # Créer un filtre {#creating-a-filter}
 
-
-
 Les filtres disponibles dans Adobe Campaign sont définis au travers de conditions de filtrage qui sont créées selon le même mode opératoire que les requêtes.
-
->[!NOTE]
->
->Pour plus d&#39;informations sur la création de filtres, reportez-vous à .
 
 Le nœud **[!UICONTROL Administration > Paramétrage > Filtres prédéfinis]** contient tous les filtres utilisés dans les listes et vues d&#39;ensemble.
 
