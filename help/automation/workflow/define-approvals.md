@@ -4,10 +4,10 @@ title: Définition des validations
 description: Les validations permettent à des opérateurs de prendre des décisions à certaines étapes dʼun workflow ou de confirmer la poursuite dʼun traitement.
 feature: Approvals
 exl-id: 8ac159c1-fd2e-4fb9-8275-18154f6f210c
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 100%
+source-wordcount: '856'
+ht-degree: 93%
 
 ---
 
@@ -27,8 +27,6 @@ Dans les opérations, toutes les étapes qui nécessitent une validation fonctio
 
 ![](assets/validation-1-in-op.png)
 
-Des exemples de validations sont proposés dans .
-
 Pour répondre, l&#39;opérateur dispose de deux modes : valider via la page web dont l&#39;URL est fournie dans l&#39;email envoyé, ou valider directement depuis la console.
 
 >[!NOTE]
@@ -37,9 +35,7 @@ Pour répondre, l&#39;opérateur dispose de deux modes : valider via la page we
 
 ## Validations par e-mail {#sending-emails}
 
-Il est possible de recevoir un message de validation qui contient un lien vers une page web permettant de répondre. Pour le recevoir l&#39;opérateur ciblé doit renseigner son adresse e-mail dans son profil. Dans le cas contraire, il devra passer par la console pour répondre.
-
-La gestion des opérateurs est présentée dans cette  .
+Il est possible de recevoir un message de validation contenant un lien vers une page web permettant de répondre. Pour que l&#39;opérateur ciblé puisse recevoir un email de validation, l&#39;adresse email de l&#39;opérateur doit être renseignée. Si ce n&#39;est pas le cas, l&#39;opérateur doit utiliser la console pour répondre.
 
 L&#39;envoi des emails de validation se fait grâce à une diffusion au fil de l&#39;eau. Le modèle de diffusion par défaut est **[!UICONTROL notifyAssignee]** : il est enregistré dans le dossier **[!UICONTROL Administration > Gestion de campagne > Modèles des diffusions techniques]**. Ce modèle peut être personnalisé, mais il est recommandé d&#39;en faire une copie et de changer de modèle pour chaque activité.
 
