@@ -4,7 +4,7 @@ title: Partage
 description: En savoir plus sur l'activité de workflow de partage
 feature: Workflows, Targeting Activity
 exl-id: bf4935dd-87dc-4c5c-becf-8c4df61805fd
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '1984'
 ht-degree: 100%
@@ -146,7 +146,6 @@ Le modèle de répartition de données permet de limiter le nombre d&#39;enregis
    * **[!UICONTROL Dimension de ciblage]** : renseignez le schéma de ciblage sur lequel la répartition de données sera appliquée, par exemple **[!UICONTROL Destinataire]**. Ce schéma doit toujours être compatible avec les données utilisées dans le workflow de ciblage.
    * **[!UICONTROL Champ de répartition]** : choisissez un champ depuis la dimension de ciblage. Par exemple, si vous sélectionnez le champ **[!UICONTROL Domaine de l&#39;email]**, la liste de destinataires sera répartie par domaine.
    * **[!UICONTROL Type de répartition]** : sélectionnez la manière dont sera exprimée la valeur de limitation de la cible dans l&#39;onglet **[!UICONTROL Distribution]** : **[!UICONTROL Pourcentage]** ou **[!UICONTROL Fixe]**.
-   * ** .
    * **[!UICONTROL Stockage des validations]** : si vous utilisez une activité [Validation en local](local-approval.md) dans votre workflow de ciblage, indiquez le schéma dans lequel seront stockés les résultats de validation. Vous devez spécifier un schéma de stockage pour chaque schéma de ciblage. Si vous utilisez le schéma de ciblage **[!UICONTROL Destinataires]**, saisissez le schéma de stockage par défaut **[!UICONTROL Validation en local d&#39;un destinataire]**.
 
       Il n&#39;est pas nécessaire de renseigner le champ **[!UICONTROL Stockage des validations]** dans le cas d&#39;une simple limitation par groupement de données, sans validation en local.
