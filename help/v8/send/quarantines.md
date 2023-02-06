@@ -5,10 +5,10 @@ feature: Profiles, Monitoring
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: b783b1444457b3204fea35b613582642499acf65
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 100%
+source-wordcount: '1235'
+ht-degree: 86%
 
 ---
 
@@ -112,8 +112,16 @@ Vous pouvez également supprimer manuellement une adresse de la liste de quarant
 
    ![](assets/tech-quarantine-status.png)
 
-* Changer son statut en **[!UICONTROL Placée sur liste autorisée]** : dans ce cas, l&#39;adresse reste dans la liste de quarantaine, mais elle sera systématiquement ciblée, même si une erreur se produit.
+Vous devrez peut-être effectuer des mises à jour en masse sur la liste de quarantaine, par exemple en cas de panne du FAI, où les emails sont marqués comme des bounces par erreur, car ils ne peuvent pas être correctement remis à leur destinataire.
 
->[!CAUTION]
->
->Si vous supprimez une adresse de la liste de quarantaine, vous recommencerez les diffusions vers cette adresse. Cela peut avoir de graves répercussions sur votre délivrabilité et la réputation de vos adresses IP, ce qui peut entraîner le blocage de votre adresse IP ou de votre domaine d&#39;envoi. Procédez avec précaution lorsque vous envisagez de supprimer une adresse de la quarantaine. Si vous avez besoin d&#39;aide, contactez l&#39;assistance Adobe.
+Pour ce faire, créez un workflow et ajoutez une requête sur votre table des quarantaines afin de filtrer tous les destinataires concernés afin qu&#39;ils puissent être supprimés de la liste des quarantaines et inclus dans les prochaines diffusions email de Campaign.
+
+Vous trouverez ci-dessous les instructions recommandées pour cette requête :
+
+* **Texte d&#39;erreur (texte de la quarantaine)** contenant « Momen_Code10_InvalidRecipient »
+* **Domaine de l&#39;email (@domain)** égal à domain1.com OU **Domaine de l&#39;email (@domain)** égal à domain2.com OU **Domaine de l&#39;email (@domain)** égal à domain3.com
+* **Mise à jour du statut (@lastModified)** sur ou après MM/JJ/AAAA HH:MM:SS AM
+* **Mise à jour du statut (@lastModified)** sur ou avant MM/JJ/AAAA HH:MM:SS PM
+
+Une fois que vous disposez de la liste des destinataires concernés, ajoutez une **[!UICONTROL Mise à jour de données]** activité pour définir leur état sur **[!UICONTROL Valide]** afin qu’elles soient supprimées de la liste de quarantaine par la variable **[!UICONTROL Nettoyage de la base]** workflow, Vous pouvez également les supprimer de la table des quarantaines.
+
