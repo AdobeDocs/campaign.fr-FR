@@ -5,7 +5,7 @@ title: Page d'accueil de l'automatisation d'Adobe Campaign
 feature: Overview
 description: Vue d'ensemble
 exl-id: 9ed73e65-3626-46c6-bfeb-a9fe9c2d7f72
-source-git-commit: d6ea8bef9c62d4afbc919110775ee99052eeed7a
+source-git-commit: d8a009b1d6ea4f6921cef203d61c78032951f3ee
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 100%
@@ -22,13 +22,13 @@ Adobe Campaign vous permet de synchroniser facilement vos canaux à l’aide d�
 Consultez les guides ci-dessous et découvrez comment créer l&#39;automatisation avec Adobe Campaign.
 
 >[!NOTE]
+>
 >Certains écrans peuvent être différents de votre environnement.
 
-
 <table>
-<tr>
+<tr style="border: 0;">
   <td valign="top">
-    <div>
+    <div><img src="assets/do-not-localize/workflow.jpeg">
     <b>Workflows</b>
     </div>
     <br>
@@ -46,7 +46,7 @@ Consultez les guides ci-dessous et découvrez comment créer l&#39;automatisatio
     <br>
   </td>
   <td valign="top">
-    <div>
+    <div><img src="assets/do-not-localize/campaign.jpeg">
     <b>Automatisation de Campaign</b>
     </div>
     <br>
@@ -64,7 +64,7 @@ Consultez les guides ci-dessous et découvrez comment créer l&#39;automatisatio
     <br>
   </td>
   <td valign="top">
-    <div>
+    <div><img src="assets/do-not-localize/add-on.jpeg">
     <b>Modules complémentaires</b>
     </div>
     <br>
