@@ -5,7 +5,7 @@ title: Page d'accueil de l'automatisation d'Adobe Campaign
 feature: Overview
 description: Vue d'ensemble
 exl-id: 9ed73e65-3626-46c6-bfeb-a9fe9c2d7f72
-source-git-commit: d8a009b1d6ea4f6921cef203d61c78032951f3ee
+source-git-commit: 143e90ef63fac4058008bc6864daf950c11ab2d1
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 100%
@@ -47,7 +47,7 @@ Consultez les guides ci-dessous et découvrez comment créer l&#39;automatisatio
   </td>
   <td valign="top">
     <div><img src="assets/do-not-localize/campaign.jpeg">
-    <b>Automatisation de Campaign</b>
+    <b>Orchestration des campagnes</b>
     </div>
     <br>
     <div>
