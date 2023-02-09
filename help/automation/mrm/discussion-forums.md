@@ -75,4 +75,4 @@ Si des opérateurs/opératrices abonné(e)s à un forum ne reçoivent pas les no
 
    * Depuis la page d’accueil d’Adobe Campaign, accédez à **[!UICONTROL Campagnes > Navigation > Diffusions]**, puis ouvrez la diffusion **[!UICONTROL Notification des forums de discussion]**.
    * Dans l’explorateur Campaign, accédez à **[!UICONTROL Administration > Exploitation > Objets créés automatiquement > Diffusions techniques > Notifications de workflow]**, puis cliquez sur **[!UICONTROL Notification des forums de discussion]**.
-   Dans‧la‧boîte‧**[!UICONTROL Notification‧des‧forums‧de‧discussion]**,‧les‧logs‧de‧diffusion‧se‧trouvent‧dans‧l&#39;onglet‧**[!UICONTROL Édition‧>‧Diffusion]**.‧Consultez‧également‧les‧onglets‧**[!UICONTROL Tracking‧>‧Journal]**‧et‧**[!UICONTROL Causes‧d’exclusion]**.
+   Dans la boîte **[!UICONTROL Notification des forums de discussion]**, les logs de diffusion se trouvent dans l&#39;onglet **[!UICONTROL Édition > Diffusion]**. Consultez également les onglets **[!UICONTROL Tracking > Journal]** et **[!UICONTROL Causes d’exclusion]**.

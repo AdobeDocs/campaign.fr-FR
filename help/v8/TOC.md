@@ -21,7 +21,7 @@ ht-degree: 99%
    + Notes de mise à jour précédentes {#previous-rn}
       + [2022](start/release-notes-2022.md)
       + [2021](start/release-notes-2021.md)
-   + [Barrières de sécurité](start/ac-guardrails.md)
+   + [Mécanismes de sécurisation](start/ac-guardrails.md)
    + [Problèmes connus](start/known-issues.md)
    + [Matrice de compatibilité](start/compatibility-matrix.md)
 + Prise en main {#new}

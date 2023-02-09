@@ -55,9 +55,9 @@ Une notification spécifique est envoyée au groupe d’opérateurs **[!UICONTRO
 ![](assets/wf-alert-activity.png)
 
 
-## Barrières de sécurité supplémentaires{#duplicates-guardrails}
+## Mécanismes de sécurisation supplémentaires{#duplicates-guardrails}
 
-Campaign est fourni avec un ensemble de nouvelles barrières de sécurité qui empêchent l’insertion de clés dupliquées dans la base de données [!DNL Snowflake].
+Campaign est fourni avec un ensemble de nouveaux mécanismes de sécurisation qui empêchent l’insertion de clés dupliquées dans la base de données [!DNL Snowflake].
 
 >[!NOTE]
 >

@@ -180,4 +180,4 @@ Pour associer une ressource marketing à un stock, procédez comme suit :
 
 1. Indiquez le stock initial et le stock d’alerte puis enregistrez.
 
-Le‧stock‧est‧indiqué‧dans‧l’onglet‧**Stocks**‧de‧la‧ressource‧marketing.
+Le stock est indiqué dans l’onglet **Stocks** de la ressource marketing.

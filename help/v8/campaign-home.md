@@ -67,7 +67,7 @@ ht-degree: 82%
 
 ## Plus de ressources
 
-* [Barrières de sécurité et limitations](start/ac-guardrails.md)
+* [Mécanismes de sécurisation et limitations](start/ac-guardrails.md)
 * [Architecture](architecture/architecture.md)
 * [Mesure et suivi](reporting/gs-reporting.md)
 * [Connexion à d&#39;autres solutions](connect/integration.md)

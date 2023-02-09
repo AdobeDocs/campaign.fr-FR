@@ -1,24 +1,24 @@
 ---
-title: Barrières de sécurité de Campaign v8
-description: Barrières de sécurité de Campaign v8
+title: Mécanismes de sécurisation de Campaign v8
+description: Mécanismes de sécurisation de Campaign v8
 feature: Overview
 role: User
 level: Beginner, Intermediate, Experienced
 exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
 source-git-commit: 58fff46ba12f5c6221bbcd88a40fa0806a6c98b9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 100%
 
 ---
 
-# Barrières de sécurité des produits{#guardrails}
+# Mécanismes de sécurisation des produits{#guardrails}
 
-Les droits, les limites de produit et les barrières de sécurité des performances sont répertoriés dans la section [Page de description du produit Adobe Campaign Managed Cloud Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+Les droits, les limites de produit et les mécanismes de sécurisation des performances sont répertoriés dans la section [Page de description du produit Adobe Campaign Managed Cloud Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-Vous trouverez ci-dessous des barrières de sécurité et des limites supplémentaires lors de l’utilisation de [!DNL Adobe Campaign].
+Vous trouverez ci-dessous des mécanismes de sécurisation et des limites supplémentaires lors de l’utilisation de [!DNL Adobe Campaign].
 
-Les limites et les barrières de sécurité identifient les fonctionnalités, l’architecture ou les processus qui ne sont pas pris en charge par cette version du produit ou qui n’interagissent pas correctement avec celle-ci. Examinez attentivement ces limites.
+Les limites et les mécanismes de sécurisation identifient les fonctionnalités, l’architecture ou les processus qui ne sont pas pris en charge par cette version du produit ou qui n’interagissent pas correctement avec celle-ci. Examinez attentivement ces limites.
 
 * Adobe Campaign v8 n’est pas disponible pour les déploiements on-premise/hybrides. Il est disponible uniquement en tant que Managed Cloud Service d’Adobe
 * Aucune migration automatique vers Adobe Campaign v8 n’est disponible pour les clientes et clients existants.
