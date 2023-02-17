@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
 source-git-commit: b783b1444457b3204fea35b613582642499acf65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1235'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Deux types ou erreurs peuvent être capturés :
 Dans la liste des adresses en quarantaine, le champ **[!UICONTROL Raison de l&#39;erreur]** indique pourquoi l&#39;adresse sélectionnée a été mise en quarantaine. [En savoir plus](#identifying-quarantined-addresses-for-the-entire-platform).
 
 
-Si un utilisateur qualifie un e-mail comme spam, le message est automatiquement redirigé vers une boîte e-mail technique gérée par Adobe. L&#39;adresse e-mail de l&#39;utilisateur est alors automatiquement mise en quarantaine avec le statut **[!UICONTROL Sur liste bloquée]**. Ce statut ne concerne que l&#39;adresse. Le profil n&#39;est pas placé sur liste bloquée afin que l&#39;utilisateur puisse continuer à recevoir des SMS et des notifications push. Apprenez-en davantage sur les boucles de retours dans la section [Guide des bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#feedback-loops){target="_blank"}.
+Si un utilisateur qualifie un e-mail comme spam, le message est automatiquement redirigé vers une boîte e-mail technique gérée par Adobe. L&#39;adresse e-mail de l&#39;utilisateur est alors automatiquement mise en quarantaine avec le statut **[!UICONTROL Sur liste bloquée]**. Ce statut ne concerne que l&#39;adresse. Le profil n&#39;est pas placé sur liste bloquée afin que l&#39;utilisateur puisse continuer à recevoir des SMS et des notifications push. Apprenez-en davantage sur les feedback loops dans la section [Guide des bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#feedback-loops){target="_blank"}.
 
 >[!NOTE]
 >
@@ -112,16 +112,16 @@ Vous pouvez également supprimer manuellement une adresse de la liste de quarant
 
    ![](assets/tech-quarantine-status.png)
 
-Vous devrez peut-être effectuer des mises à jour en masse sur la liste de quarantaine, par exemple en cas de panne du FAI, où les emails sont marqués comme des bounces par erreur, car ils ne peuvent pas être correctement remis à leur destinataire.
+Vous devrez peut-être effectuer des mises à jour en bloc sur la liste de quarantaine, par exemple en cas de panne du FAI, où les e-mails sont marqués comme des rebonds par erreur, car ils ne peuvent pas être correctement diffusés à leur destination.
 
-Pour ce faire, créez un workflow et ajoutez une requête sur votre table des quarantaines afin de filtrer tous les destinataires concernés afin qu&#39;ils puissent être supprimés de la liste des quarantaines et inclus dans les prochaines diffusions email de Campaign.
+Pour ce faire, créez un workflow et ajoutez une requête sur votre table de quarantaine pour filtrer toutes les destinations concernées, de façon à ce qu’elles puissent être supprimées de la liste de quarantaine et incluses dans les prochaines diffusions e-mail de Campaign.
 
-Vous trouverez ci-dessous les instructions recommandées pour cette requête :
+Vous trouverez ci-dessous les instructions recommandées pour cette requête :
 
-* **Texte d&#39;erreur (texte de la quarantaine)** contenant « Momen_Code10_InvalidRecipient »
-* **Domaine de l&#39;email (@domain)** égal à domain1.com OU **Domaine de l&#39;email (@domain)** égal à domain2.com OU **Domaine de l&#39;email (@domain)** égal à domain3.com
-* **Mise à jour du statut (@lastModified)** sur ou après MM/JJ/AAAA HH:MM:SS AM
-* **Mise à jour du statut (@lastModified)** sur ou avant MM/JJ/AAAA HH:MM:SS PM
+* **Texte d’erreur (texte de la quarantaine)** contenant « Momen_Code10_InvalidRecipient »
+* **Domaine d’e-mail (@domain)** égal à domain1.com OU **domaine d’email (@domain)** égal à domain2.com OU **domaine d’email (@domain)** égal à domain3.com
+* **Mise à jour du statut (@lastModified)** le ou après le JJ/MM/AAAA à HH:MM:SS AM
+* **Mise à jour du statut (@lastModified)** le ou avant le JJ/MM/AAAA à HH:MM:SS PM
 
-Une fois que vous disposez de la liste des destinataires concernés, ajoutez une **[!UICONTROL Mise à jour de données]** activité pour définir leur état sur **[!UICONTROL Valide]** afin qu’elles soient supprimées de la liste de quarantaine par la variable **[!UICONTROL Nettoyage de la base]** workflow, Vous pouvez également les supprimer de la table des quarantaines.
+Une fois que vous disposez de la liste des destinations concernées, ajoutez une activité **[!UICONTROL Mise à jour de données]** pour définir leur statut sur **[!UICONTROL Valide]**, de façon à ce qu’elles soient supprimées de la liste de quarantaine par le workflow **[!UICONTROL Nettoyage de la base de données]**. Vous pouvez également les supprimer simplement de la table de quarantaine.
 
