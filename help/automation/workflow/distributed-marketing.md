@@ -4,9 +4,9 @@ title: Marketing distribué
 description: En savoir plus sur le package Marketing distribué
 feature: Workflows, Data Management, Distributed Marketing
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '69'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 68%
 
 
 
-Le workflow présenté ci-dessous est installé avec la méthode **Marketing distribué** par défaut. Pour plus d&#39;informations sur ce module, reportez-vous à la section [cette section](../distributed-marketing/about-distributed-marketing.md).
+Le workflow présenté ci-dessous est installé par défaut avec le module **Marketing distribué**. Pour plus d’informations sur ce module, consultez [cette section](../distributed-marketing/about-distributed-marketing.md).
 
 <table> 
  <tbody> 
