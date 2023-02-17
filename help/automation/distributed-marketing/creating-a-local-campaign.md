@@ -5,9 +5,9 @@ description: Créer une campagne locale
 feature: Distributed Marketing
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
 source-git-commit: 7e5ffbec959785971280c394c416cebe83590897
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1686'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Quatre types d’interface web sont disponibles :
 
    >[!NOTE]
    >
-   >L&#39;application web utilisée dans cet exemple est un exemple. Vous devez créer une application web spécifique pour pouvoir utiliser un formulaire.
+   >L’application web utilisée ici est un exemple. Vous devez créer une application web spécifique pour pouvoir utiliser un formulaire.
 
    ![](assets/mkt_distr_7.png)
 
@@ -156,7 +156,7 @@ Enregistrez votre modèle de campagne. Vous pouvez désormais l’utiliser depui
 
 >[!NOTE]
 >
->Les modèles d&#39;opération et leur paramétrage général sont présentés dans la section [cette page](../campaigns/marketing-campaign-templates.md).
+>Les modèles de campagne et leur paramétrage général sont présentés sur [cette page](../campaigns/marketing-campaign-templates.md).
 
 ## Créer le kit d&#39;opération {#creating-the-campaign-package}
 
