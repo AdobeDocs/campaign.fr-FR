@@ -5,7 +5,7 @@ description: En savoir plus sur le cycle de vie d’un workflow
 feature: Workflows
 exl-id: 4356b90c-9d7c-49ef-88cd-716b2ccdb7f0
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '260'
 ht-degree: 100%
 
@@ -39,4 +39,4 @@ Les caractères **574 - Ok** affichés au-dessus de la transition suivant l&#39;
 
 Le workflow est donc démarré et attend la décision d&#39;un opérateur du groupe spécifié dans l&#39;activité **Validation**. Les opérateurs du groupe ayant un email ou un numéro de téléphone mobile renseigné sont notifiés via ce média.
 
-Pour plus d&#39;informations sur la manière de surveiller vos workflows, reportez-vous à [cette section](monitor-workflow-execution.md).
+Pour plus d’informations sur la manière de surveiller vos workflows, reportez-vous à [cette section](monitor-workflow-execution.md).
