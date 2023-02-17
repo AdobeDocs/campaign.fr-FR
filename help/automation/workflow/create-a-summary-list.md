@@ -5,9 +5,9 @@ description: Créer une liste récapitulative
 feature: Workflows, Data Management
 exl-id: 86dee66a-357a-4927-916e-51cde6c006d5
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1057'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Ces données sont contenues dans un fichier texte : &quot;Achats.txt&quot;.
 
    Le **Collecteur de fichiers** permet de collecter et d&#39;envoyer des fichiers sur le serveur Adobe Campaign.
 
-   L&#39;activité **Chargement(fichier)** permet d&#39;alimenter la table de travail du workflow avec les données collectées. Pour plus d&#39;informations sur cette activité, reportez-vous à la section [cette page](data-loading--file-.md).
+   L’activité **Chargement (fichier)** permet d’alimenter la table de travail du workflow avec les données collectées. Pour plus d’informations sur cette activité, consultez [cette page](data-loading--file-.md).
 
 1. Configurez l&#39;activité **Collecteur de fichiers** pour collecter des fichiers de type texte (&#42;.txt) du répertoire sélectionné.
 
