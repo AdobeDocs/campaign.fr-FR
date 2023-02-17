@@ -5,9 +5,9 @@ description: Découvrez comment créer et exécuter des campagnes marketing
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
 source-git-commit: ad286059a9f4b63d7de4fa5130760f36d0976431
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1318'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Dans la fenêtre de création de campagne, sélectionnez le modèle de campagne 
 
 Cliquez sur **[!UICONTROL OK]** pour créer la campagne. Celle-ci est ajoutée au planning du programme, ainsi qu’à la liste des campagnes.
 
-Vous pouvez ensuite modifier l’opération que vous venez de créer et en définir les paramètres. Pour ouvrir et configurer cette campagne, vous pouvez :
+Vous pouvez ensuite modifier l’opération que vous venez de créer et en définir les paramètres. Pour ouvrir et configurer cette campagne, vous pouvez :
 
 1. Parcourir le calendrier des campagnes, sélectionner la campagne que vous souhaitez afficher, puis cliquer sur le lien **[!UICONTROL Ouvrir]**.
 1. Parcourir l’onglet **[!UICONTROL Planning]** du programme, sélectionner la campagne et l’ouvrir.
