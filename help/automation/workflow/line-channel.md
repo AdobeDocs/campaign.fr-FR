@@ -4,16 +4,16 @@ title: Canal LINE
 description: Canal LINE
 feature: Workflows
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '95'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 
 # Canal LINE{#line-channel}
 
-Les workflows présentés ci-dessous sont installés avec le **Canal LINE** par défaut. Pour plus d&#39;informations sur ce module, reportez-vous à la section [cette page](../../v8/send/line.md).
+Les workflows présentés ci-dessous sont installés par défaut avec le module **canal LINE**. Pour plus d’informations sur ce module, consultez [cette page](../../v8/send/line.md).
 
 <table> 
  <tbody> 
