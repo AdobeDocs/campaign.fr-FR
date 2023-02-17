@@ -4,9 +4,9 @@ title: Web Analytics
 description: En savoir plus sur le package Web Analytics
 feature: Workflows, Analytics Integration
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '172'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 91%
 
 
 
-Les workflows présentés ci-dessous sont installés avec le **Connecteurs Web Analytics** par défaut.
+Les workflows présentés ci-dessous sont installés par défaut avec le module **Connecteurs Web Analytics**.
 
 <table> 
  <tbody> 
