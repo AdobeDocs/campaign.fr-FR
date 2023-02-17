@@ -5,9 +5,9 @@ description: Découvrez comment gérer les autorisations relatives aux workflows
 feature: Workflows
 exl-id: 3cb8aeec-e758-4b71-adef-67942cf9ded7
 source-git-commit: bff7d1d51b9847c515670e5594eed513fefbe816
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '336'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ D&#39;une manière générale, les opérateurs qui agissent sur les workflows do
 
 Ils doivent également être associés aux droits nommés correspondants aux actions réalisées par les workflows sur lesquels ils sont amenés à intervenir (import de destinataires, accès aux fichiers, fusion, exécution de scripts SQL, etc.).
 
-La gestion des opérateurs et des permissions associées sont présentées dans la section [cette section](../../v8/start/gs-permissions.md).
+La gestion des opérateurs et des autorisations associées est présentée dans [cette section](../../v8/start/gs-permissions.md).
 
 ## Les groupes d&#39;opérateurs {#operator-groups-wf}
 
