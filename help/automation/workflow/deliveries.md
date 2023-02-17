@@ -4,7 +4,7 @@ title: Diffusions
 description: En savoir plus sur les workflows de diffusions par défaut
 feature: Workflows
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '316'
 ht-degree: 100%
 
