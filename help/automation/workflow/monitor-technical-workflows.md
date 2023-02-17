@@ -5,9 +5,9 @@ description: Surveiller les workflows techniques
 feature: Workflows
 exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '497'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Pour comprendre la fonction de chaque workflow technique, consultez cette [secti
 
 Pour le **[!UICONTROL Workflow de Nettoyage de la base (&#39;cleanup&#39;)]** :
 
-Consultez le journal pour vérifier que le temps écoulé est relativement constant et n’interfère pas avec les autres workflows.
+Consultez le journal des logs pour vérifier que le temps écoulé reste relativement constant et n’affecte pas d’autres workflows.
 
 Pour le **[!UICONTROL Workflow de tracking (&#39;tracking&#39;)]** :
 
