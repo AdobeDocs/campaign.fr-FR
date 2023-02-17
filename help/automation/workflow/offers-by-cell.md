@@ -5,9 +5,9 @@ description: Offres par cellule
 feature: Workflows, Targeting Activity, Interaction
 exl-id: e2216dfd-1ef8-4747-b716-576fd6498fa6
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '160'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
