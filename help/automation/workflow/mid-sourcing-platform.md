@@ -4,9 +4,9 @@ title: Plateforme de Mid-sourcing
 description: Plateforme de Mid-sourcing
 feature: Workflows
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '43'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 69%
 
 
 
-Le workflow présenté ci-dessous est installé avec la méthode **Plateforme de mid-sourcing** par défaut.
+Le workflow détaillé ci-dessous est installé par défaut avec le module **Plateforme de Mid-sourcing**.
 
 <table> 
  <tbody> 
