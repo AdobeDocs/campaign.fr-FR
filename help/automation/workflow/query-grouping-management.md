@@ -5,7 +5,7 @@ description: Découvrez comment exécuter des requêtes avec gestion des regroup
 feature: Query Editor
 exl-id: 6fc4ef67-5d75-4c8c-8bcc-41e3ed155ca2
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '299'
 ht-degree: 100%
 
