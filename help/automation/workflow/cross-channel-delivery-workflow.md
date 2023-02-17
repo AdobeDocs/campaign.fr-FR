@@ -5,9 +5,9 @@ description: En savoir plus sur les workflows de diffusion cross-canal
 feature: Workflows, Channels Activity
 exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '675'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Pour définir votre cible, créez une requête afin d&#39;identifier les destina
 
    ![](assets/wkf_cross-channel_1.png)
 
-   Pour plus d&#39;informations sur l&#39;intégration d&#39;une offre dans le corps d&#39;un message, reportez-vous à la section [cette page](../../v8/send/email.md).
+   Pour plus d’informations sur l’intégration d’une offre dans le corps d’un message, consultez [cette page](../../v8/send/email.md).
 
 1. Enregistrez vos modifications.
 1. Cliquez avec le bouton droit sur l&#39;activité **[!UICONTROL Diffusion Email]** pour l&#39;ouvrir.
@@ -107,8 +107,8 @@ Une fois votre cible identifiée et votre première diffusion créée, vous deve
    * Ajoutez une activité **[!UICONTROL Diffusion mobile]** pour envoyer un SMS au deuxième sous-ensemble.
    * Ajoutez une activité **[!UICONTROL Mise à jour des listes]** pour ajouter les destinataires correspondants à la base de données.
 
-1. Double-cliquez sur les activités de diffusion de votre workflow pour les éditer.
-1. Double-cliquez sur l&#39;activité **[!UICONTROL Mise à jour des listes]** et sélectionnez l&#39;option **[!UICONTROL Générer une transition sortante]**.
+1. Double-cliquez sur les activités de diffusion de votre workflow pour les modifier.
+1. Double-cliquez sur l’activité **[!UICONTROL Mise à jour des listes]** et sélectionnez l’option **[!UICONTROL Générer une transition sortante]**.
 1. Cliquez sur le bouton **Démarrer** de la barre d&#39;actions pour exécuter le workflow.
 
 La population ciblée par l&#39;activité **Requête** sera segmentée pour recevoir une diffusion email ou SMS selon le comportement des destinataires. La population restante sera ajoutée à la base de données à l&#39;aide de l&#39;activité **[!UICONTROL Mise à jour des listes]**.
