@@ -5,9 +5,9 @@ description: Découvrez comment démarrer un workflow et la barre d’outils des
 feature: Workflows
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '811'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ La liste des options disponibles dans le menu **[!UICONTROL Actions]** et le men
 
 ## Barre d&#39;outils des actions {#actions-toolbar}
 
-Le **[!UICONTROL Actions]** du bouton de la barre d&#39;outils permet d&#39;accéder à des options d&#39;exécution supplémentaires sur les workflows sélectionnés. Vous pouvez également utiliser le menu **[!UICONTROL Fichier > Actions]** ou cliquez avec le bouton droit de la souris sur un workflow et sélectionnez **[!UICONTROL Actions]**.
+Le bouton **[!UICONTROL Actions]** de la barre d’outils permet d’accéder à des options d’exécution supplémentaires sur les workflows sélectionnés. Vous pouvez également utiliser le menu **[!UICONTROL Fichier > Actions]** ou cliquez avec le bouton droit de la souris sur un workflow et sélectionnez **[!UICONTROL Actions]**.
 
 ![](assets/purge_historique.png)
 
