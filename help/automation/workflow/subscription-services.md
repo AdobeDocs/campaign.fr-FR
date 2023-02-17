@@ -5,9 +5,9 @@ description: En savoir plus sur l’activité de workflow des services d’inscr
 feature: Workflows, Targeting Activity, Subscription Services Activity
 exl-id: 919630ed-b39f-40e5-b893-f3a203713b15
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '419'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Pour la paramétrer, éditez l&#39;activité et saisissez son libellé, puis cho
 1. Cliquez sur **[!UICONTROL Inscription]** ou **[!UICONTROL Désinscription]** si vous souhaitez abonner ou désabonner la population spécifiée au service d&#39;information sélectionné.
 1. Sélectionnez **[!UICONTROL Envoyer un message de confirmation]** pour prévenir un destinataire lorsqu&#39;il est abonné ou désabonné à un service.
 
-   Le contenu de ce message est précisé dans un modèle de diffusion associé au service d&#39;information.
+   Le contenu de ce message est précisé dans un modèle de diffusion associé au service d’information.
 
 ## Exemple : inscrire une liste de destinataires à une newsletter {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
