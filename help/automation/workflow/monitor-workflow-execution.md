@@ -5,9 +5,9 @@ description: Surveiller l’exécution des workflows
 feature: Workflows
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2016'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Cette section présente des informations sur la manière de surveiller l’exéc
 
 Vous trouverez également dans [cette section](workflow-supervision.md#supervising-workflows) un exemple de création d’un workflow qui permet de surveiller l’état d’un ensemble de workflows en pause, arrêtés ou en erreur.
 
-En outre, les administrateurs de l’instance peuvent utiliser le **journal d’audit** pour vérifier les activités et les dernières modifications apportées aux workflows, c’est-à-dire l’état de vos workflows. En savoir plus sur le journal d&#39;audit dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html?lang=fr#accessing-audit-trail){target="_blank"}.
+En outre, les administrateurs de l’instance peuvent utiliser le **journal d’audit** pour vérifier les activités et les dernières modifications apportées aux workflows, c’est-à-dire l’état de vos workflows. En savoir plus sur le journal d’audit dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html?lang=fr#accessing-audit-trail){target="_blank"}.
 
 ## Afficher la progression {#displaying-progress}
 
@@ -224,9 +224,9 @@ Cette section présente un cas d’utilisation : [Coordonner les mises à jour 
 
 ## Maintenance de la base de données {#database-maintenance}
 
-Les workflows utilisent de nombreuses tables de travail qui occupent de l&#39;espace et finissent par ralentir l&#39;ensemble de la plateforme si elles ne sont pas gérées.
+Les workflows utilisent beaucoup de tables de travail qui occupent de l’espace et finissent par ralentir l’ensemble de la plateforme s’ils ne sont pas entretenus.
 
-Le workflow **Nettoyage de la base** (cleanup), accessible à partir du noeud **Administration > Exploitation > Workflows techniques**, permet de supprimer les données obsolètes afin d&#39;éviter une croissance exponentielle de la base. Le workflow se déclenche de manière automatique sans intervention de l&#39;utilisateur.
+Le workflow **Nettoyage de la base de données** (cleanup), accessible à partir du nœud **Administration > Exploitation > Workflows techniques**, permet de supprimer les données obsolètes afin d’éviter une croissance exponentielle de la base de données. Le workflow se déclenche de manière automatique sans intervention de l’utilisateur ou de l’utilisatrice.
 
 Vous pouvez également créer des workflows techniques spécifiques pour purger les données inutiles qui occupent de l&#39;espace. Référez-vous à   et à cette [section](#purging-the-logs).
 
@@ -261,7 +261,7 @@ Pour cela :
 
 1. Cliquez avec le bouton droit sur le dossier dans lequel vous souhaitez ajouter la vue.
 1. Dans **[!UICONTROL Ajouter un dossier]** / **[!UICONTROL Administration]**, sélectionnez la vue à ajouter.
-1. Une fois le dossier ajouté à l&#39;arborescence, veillez à le configurer en tant que vue afin qu&#39;il affiche tous les workflows, quel que soit leur dossier d&#39;origine. Pour plus d’informations sur le paramétrage des vues, reportez-vous à la section [cette page](../../v8/audiences/folders-and-views.md#turn-a-folder-to-a-view).
+1. Une fois le dossier ajouté à l’arborescence, assurez-vous de le configurer en tant que vue afin qu’il affiche tous les workflows, quel que soit leur dossier d’origine. Pour plus d’informations sur la configuration des vues, voir [cette page](../../v8/audiences/folders-and-views.md#turn-a-folder-to-a-view).
 
 En outre, vous pouvez configurer des dossiers de filtres qui vous permettront de filtrer la liste des workflows en fonction de leur état d’exécution. Pour cela :
 
