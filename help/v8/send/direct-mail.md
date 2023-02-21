@@ -32,7 +32,7 @@ Les étapes de génération du fichier sont les suivantes :
 
    Une adresse est considérée comme complète si les champs relatifs au nom, au code postal et à la ville ne sont pas vides.
 
-   ![](../assets/do-not-localize/book.png)Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html?lang=fr).{target="_blank"}
+   ![](../assets/do-not-localize/book.png)Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html?lang=fr){target="_blank"}.
 
 1. Définition du contenu du fichier
 

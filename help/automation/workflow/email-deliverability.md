@@ -4,7 +4,7 @@ title: Email Deliverability
 description: En savoir plus sur le package de délivrabilité des emails
 feature: Workflows, Deliverability
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 100%
 

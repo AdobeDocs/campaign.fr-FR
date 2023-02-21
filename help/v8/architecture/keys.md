@@ -61,7 +61,7 @@ Campaign est fourni avec un ensemble de nouveaux mécanismes de sécurisation qu
 
 >[!NOTE]
 >
->Ces protections sont disponibles à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>Ces mécanismes de sécurisation sont disponibles à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
 ### Préparation de la diffusion{#remove-duplicates-delivery-preparation}
 
@@ -85,7 +85,7 @@ Lors de l’utilisation de la clé de réconciliation explicite, l’activité *
 
 >[!CAUTION]
 >
->Cette protection s’applique uniquement avec l’option **[!UICONTROL En utilisant des clés de réconciliation]**.
+>Ce mécanisme de sécurisation s’applique uniquement avec l’option **[!UICONTROL En utilisant des clés de réconciliation]**.
 
 
 ### Requête sur un schéma avec des doublons{#query-with-duplicates}

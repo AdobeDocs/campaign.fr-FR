@@ -269,7 +269,7 @@ Une fois qu’un modèle de message est publié <!--on the execution instances--
 Pour dépublier un modèle de message transactionnel, procédez comme décrit ci-dessous.
 
 1. Accédez au dossier **[!UICONTROL Message Center > Modèles de messages transactionnels]**.
-1. Sélectionnez le modèle dont vous souhaitez annuler la publication.
+1. Sélectionnez le modèle que vous souhaitez dépublier.
 1. Cliquez sur **[!UICONTROL Dépublier]**.
 1. Cliquez sur **[!UICONTROL Démarrer]**.
 
