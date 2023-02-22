@@ -8,8 +8,8 @@ hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: e7f4982a9b13fe5413b6cce0a1cc58e2b3a6afa4
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,8 +31,8 @@ _27 janvier 2023_
 * Correction d’un problème qui entraînait une erreur lors de l’exportation d’un workflow. (NEO-50555) <!--OKKKK-->
 * Correction d’un problème lors de l’extension d’un schéma précédemment étendu. (NEO-49118) <!--OKKKK-->
 * Correction d’un problème lors de l’utilisation de deux activités d’enrichissement avec le même identifiant dans la définition du lien. (NEO-48851)
-* Correction de deux problèmes qui entraînaient l’échec de la préparation de diffusion. La préparation de la diffusion peut échouer lorsque le nombre d’offres potentielles manipulées est trop élevé. Le deuxième problème survenait lorsque les URL des images étaient définies comme URL à suivre dans une diffusion au format texte. (NEO-48807) <!--OKKKK-->
-* Correction d’un problème qui entraînait l’échec d’un workflow lorsqu’il remplacait le nom de l’entrepôt de données défini dans le compte externe pour les comptes non FFDA. (NEO-43209) <!--OKKKK-->
+* Correction de deux problèmes qui entraînaient l’échec de la préparation de diffusion. La préparation de la diffusion pouvait échouer lorsque le nombre d’offres potentielles manipulées était trop élevé. Le deuxième problème survenait lorsque les URL des images étaient définies comme URL à suivre dans une diffusion au format texte. (NEO-48807) <!--OKKKK-->
+* Correction d’un problème qui entraînait l’échec d’un workflow lorsqu’il remplaçait le nom de l’entrepôt de données défini dans le compte externe pour les comptes non FFDA. (NEO-43209) <!--OKKKK-->
 * Amélioration de la sécurité des applications web pour empêcher les attaques DDoS. (NEO-50757) <!--OKKKK-->
 * La gestion des données de tracking consolidées a été améliorée dans la table FFDA (nms:trackingStats) **[!UICONTROL Tracking consolidé]** afin d’éviter les doublons. (NEO-46409)
 * Correction d’un problème d’opérateur logique dans les requêtes de workflow lors de l’utilisation d’une propriété `enableIf` dans une condition d’opérateur logique. La condition logique précédente a été remplacée. (NEO-45815)  <!--OKKKK-->
@@ -49,4 +49,4 @@ _27 janvier 2023_
 * Correction d’un problème qui pouvait entraîner une erreur lors de l’ajout de l’indicateur **Destinataires ayant ouvert** (estimatedRecipientOpen) dans les données additionnelles d’une activité de workflow **Requête**. (NEO-46665)
 * La gestion des URL de tracking a été améliorée dans les workflows comportant plusieurs diffusions afin d’améliorer les performances. (NEO-50894) <!--OKKKK-->
 * Correction d’un problème qui entraînait l’échec de la réplication des schémas utilisant Xtkfolder. (NEO-46787) <!--OKKKK-->
-* Correction d’un problème en raison duquel la colonne personnalisée “lastModified” était déposée dans la table NmsSubscription. (NEO-48402)
+* Correction d’un problème en raison duquel la colonne personnalisée « lastModified » était déposée dans la table NmsSubscription. (NEO-48402)
