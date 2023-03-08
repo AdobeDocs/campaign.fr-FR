@@ -6,16 +6,33 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: e7f4982a9b13fe5413b6cce0a1cc58e2b3a6afa4
+source-git-commit: 55711ea42b9cc0be70e875e1544780b6983af98b
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 100%
+source-wordcount: '521'
+ht-degree: 91%
 
 ---
 
 # Dernière version{#latest-release}
 
 Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs de la **dernière version de Campaign Classic v8**.
+
+## Version 8.4.4 {#release-8-4-4}
+
+>[!CAUTION]
+>
+> La mise à niveau de la console cliente est obligatoire. Découvrez comment mettre à niveau votre console cliente sur cette [page](../start/connect.md#download-ac-console).
+
+_8 mars 2023_
+
+**Amélioration de la sécurité**
+
+* Pour améliorer la sécurité, Tomcat a été mis à jour de la version 8.5.81 à la version 8.5.85. (NEO-50530)
+
+**Correctifs**
+
+* Correction d’un problème qui empêchait le défilement dans la variable **Modifier** de Digital Content Editor (DCE). (NEO-54474)
+* Correction d’un problème lors de la réplication qui entraînait un blocage du serveur web. (NEO-53670)
 
 ## Version 8.4.3 {#release-8-4-3}
 
