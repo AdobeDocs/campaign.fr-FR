@@ -6,10 +6,10 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 2ec240b139394ce8f54a5835a4fa7bd377d226eb
+source-git-commit: 814f7c81aa4f154fdf289effc82b8d02bdd9b4c6
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 88%
+source-wordcount: '521'
+ht-degree: 91%
 
 ---
 
@@ -68,4 +68,6 @@ _27 janvier 2023_
 * Correction d’un problème en raison duquel la colonne personnalisée « lastModified » était déposée dans la table NmsSubscription. (NEO-48402)
 
 
-**La mise à niveau de la console cliente est obligatoire pour cette version.** - Découvrez comment mettre à niveau votre console cliente dans cette [page](../start/connect.md#upgrade-ac-console).
+>[!CAUTION]
+>
+> La mise à niveau de la console cliente est obligatoire. Découvrez comment mettre à niveau votre console cliente sur cette [page](../start/connect.md#upgrade-ac-console).
