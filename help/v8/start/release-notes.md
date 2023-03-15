@@ -6,10 +6,10 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 55711ea42b9cc0be70e875e1544780b6983af98b
+source-git-commit: 2ec240b139394ce8f54a5835a4fa7bd377d226eb
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 91%
+source-wordcount: '524'
+ht-degree: 88%
 
 ---
 
@@ -18,10 +18,6 @@ ht-degree: 91%
 Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs de la **dernière version de Campaign Classic v8**.
 
 ## Version 8.4.4 {#release-8-4-4}
-
->[!CAUTION]
->
-> La mise à niveau de la console cliente est obligatoire. Découvrez comment mettre à niveau votre console cliente sur cette [page](../start/connect.md#download-ac-console).
 
 _8 mars 2023_
 
@@ -34,11 +30,14 @@ _8 mars 2023_
 * Correction d’un problème qui empêchait le défilement dans la variable **Modifier** de Digital Content Editor (DCE). (NEO-54474)
 * Correction d’un problème lors de la réplication qui entraînait un blocage du serveur web. (NEO-53670)
 
-## Version 8.4.3 {#release-8-4-3}
 
 >[!CAUTION]
 >
-> La mise à niveau de la console cliente est obligatoire. Découvrez comment mettre à niveau votre console cliente sur cette [page](../start/connect.md#download-ac-console).
+> La mise à niveau de la console cliente est obligatoire. Découvrez comment mettre à niveau votre console cliente sur cette [page](../start/connect.md#upgrade-ac-console).
+
+
+## Version 8.4.3 {#release-8-4-3}
+
 
 _27 janvier 2023_
 
@@ -67,3 +66,6 @@ _27 janvier 2023_
 * La gestion des URL de tracking a été améliorée dans les workflows comportant plusieurs diffusions afin d’améliorer les performances. (NEO-50894) <!--OKKKK-->
 * Correction d’un problème qui entraînait l’échec de la réplication des schémas utilisant Xtkfolder. (NEO-46787) <!--OKKKK-->
 * Correction d’un problème en raison duquel la colonne personnalisée « lastModified » était déposée dans la table NmsSubscription. (NEO-48402)
+
+
+**La mise à niveau de la console cliente est obligatoire pour cette version.** - Découvrez comment mettre à niveau votre console cliente dans cette [page](../start/connect.md#upgrade-ac-console).

@@ -5,9 +5,9 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
+source-git-commit: 2ec240b139394ce8f54a5835a4fa7bd377d226eb
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '660'
 ht-degree: 100%
 
 ---
@@ -30,23 +30,15 @@ Vous pouvez accéder à Adobe Campaign via un client riche, un client léger ou
 
 * Client riche
 
-   Le client riche de Campaign est une application native qui communique avec le serveur applicatif d&#39;Adobe Campaign par le biais de protocoles Internet standard, tels que SOAP et HTTP.
-
-   La console cliente Campaign centralise toutes les fonctionnalités et tous les paramètres et requiert une bande passante minimale, car elle repose sur un cache local. Conçue pour un déploiement facile, cette console peut être déployée à partir d&#39;un navigateur Internet et être mise à jour automatiquement. En outre, elle ne nécessite aucune configuration réseau spécifique, car elle génère uniquement du trafic HTTP(S).
-
-   ![](../assets/do-not-localize/glass.png) [En savoir plus sur la console cliente Campaign](../start/connect.md).
+   Le client riche de Campaign est une application native qui communique avec le serveur applicatif d&#39;Adobe Campaign par le biais de protocoles Internet standard, tels que SOAP et HTTP. [En savoir plus sur la console cliente Campaign](../start/connect.md).
 
 * Client léger
 
-   Les fonctionnalités d&#39;accès web d&#39;Adobe Campaign vous permettent d&#39;accéder à un sous-ensemble de fonctionnalités de Campaign avec un navigateur web, à l&#39;aide d&#39;une interface utilisateur HTML. Utilisez cette interface web pour consulter des rapports, contrôler et valider les messages, accéder aux tableaux de bord de surveillance, et plus encore.
-
-   ![](../assets/do-not-localize/glass.png) [En savoir plus sur l&#39;accès web de Campaign](../start/connect.md).
+   Les fonctionnalités d&#39;accès web d&#39;Adobe Campaign vous permettent d&#39;accéder à un sous-ensemble de fonctionnalités de Campaign avec un navigateur web, à l&#39;aide d&#39;une interface utilisateur HTML. Utilisez cette interface web pour consulter des rapports, contrôler et valider les messages, accéder aux tableaux de bord de surveillance, et plus encore.  [En savoir plus sur l&#39;accès web de Campaign](../start/connect.md).
 
 * Applications externes avec API
 
-   Dans certains cas, le système est appelé par des applications externes qui utilisent les API Web Services exposées par le biais du protocole SOAP.
-
-   ![](../assets/do-not-localize/glass.png) [En savoir plus sur les API Campaign](../dev/api.md).
+   Dans certains cas, le système est appelé par des applications externes qui utilisent les API Web Services exposées par le biais du protocole SOAP. [En savoir plus sur les API Campaign](../dev/api.md).
 
 ### Couche de persistance{#persistance-layer}
 
