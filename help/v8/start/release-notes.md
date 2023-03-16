@@ -9,7 +9,7 @@ exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 814f7c81aa4f154fdf289effc82b8d02bdd9b4c6
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -19,16 +19,16 @@ Cette page répertorie les nouvelles fonctionnalités, les améliorations et les
 
 ## Version 8.4.4 {#release-8-4-4}
 
-_8 mars 2023_
+_8 mars 2023_
 
 **Amélioration de la sécurité**
 
-* Pour améliorer la sécurité, Tomcat a été mis à jour de la version 8.5.81 à la version 8.5.85. (NEO-50530)
+* Afin d’améliorer la sécurité, Tomcat a été mis à jour de la version 8.5.81 vers la version 8.5.85. (NEO-50530)
 
 **Correctifs**
 
-* Correction d’un problème qui empêchait le défilement dans la variable **Modifier** de Digital Content Editor (DCE). (NEO-54474)
-* Correction d’un problème lors de la réplication qui entraînait un blocage du serveur web. (NEO-53670)
+* Correction d’un problème qui empêchait le défilement dans l’onglet **Modifier** de Digital Content Editor (DCE). (NEO-54474)
+* Correction d’un problème qui pouvait entraîner un blocage du serveur web lors de la réplication. (NEO-53670)
 
 
 >[!CAUTION]
