@@ -3,7 +3,7 @@ title: Rapports de diffusion intégrés à Adobe Campaign
 description: Rapports de diffusion intégrés à Adobe Campaign
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 100%
@@ -62,7 +62,7 @@ Ce rapport regroupe les indicateurs clés qui permettent de suivre le comporteme
 * **[!UICONTROL Ouvertures distinctes pour la population atteinte]** : estimation du nombre de destinataires ciblés ayant ouvert un message au moins une fois. Les clics sur les URL trackées sont pris en compte, car il faut ouvrir les e-mails pour cliquer sur un lien.
 * **[!UICONTROL Somme des ouvertures sur la population atteinte]** : Estimation du nombre total d&#39;ouvertures effectuées par des destinataires ciblés.
 * **[!UICONTROL Clics sur le lien d&#39;opt-out]** : Nombre de clics effectués sur le lien d&#39;opt-out.
-* **[!UICONTROL Clics sur le lien de la page miroir]** : nombre de clics effectués sur le lien de la page miroir. Pour être pris en compte, le lien doit être défini comme tel dans l’assistant de diffusion (URL suivies). <!--Refer to this [page](../../delivery/using/about-delivery-monitoring.md).-->
+* **[!UICONTROL Clics sur le lien de la page miroir]**[](../send/mirror-page.md) : nombre de clics effectués sur le lien de la page miroir. Pour être pris en compte, le lien doit être défini comme tel dans l’assistant de diffusion (URL suivies).
 * **[!UICONTROL Estimation des transferts]** : Estimation du nombre d&#39;emails transférés par les destinataires cibles de la diffusion à d&#39;autres personnes. Cette valeur est calculée en effectuant la différence entre le nombre de personnes distinctes et le nombre de destinataires distincts ayant cliqué au moins une fois dans le mail.
 
    >[!NOTE]

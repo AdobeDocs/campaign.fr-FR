@@ -4,10 +4,10 @@ title: Diffusion au fil de l'eau
 description: Diffusion au fil de l'eau
 feature: Workflows, Channels Activity
 exl-id: e3ad6d92-8d53-4098-90fd-cfed29f2e56e
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -64,4 +64,4 @@ Cette vidéo montre comment configurer une diffusion au fil de l’eau avec une 
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
-D’autres vidéos pratiques sur Campaign Classic sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=fr).
+D’autres vidéos pratiques sur Campaign sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

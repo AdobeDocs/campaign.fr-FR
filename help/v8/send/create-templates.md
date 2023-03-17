@@ -6,10 +6,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ Un modèle peut systématiquement inclure :
 * Typologies
 * Adresses d&#39;expéditeur et destinataire
 * Blocs de personnalisation de base
-* Liens vers les pages miroir et désinscription liens
+* Liens vers [pages miroir](../send/mirror-page.md) et liens de désabonnement
 * Contenu, logo de la société ou signature
 * Autres propriétés de diffusion, telles que la validité des ressources et les paramètres de reprise ou de mise en quarantaine.
 
@@ -86,7 +86,7 @@ Pour configurer un modèle de diffusion à partir de zéro, procédez comme suit
 1. Cliquez sur le bouton **Propriétés** pour adapter les paramètres.
 1. Dans l&#39;onglet **Général**, validez ou modifiez les emplacements sélectionnés dans les menus déroulants **Dossier d&#39;exécution**, **Dossier** et **Routage**.
 1. Remplissez la catégorie **Paramètres de l&#39;email** avec le sujet de l&#39;email et la population ciblée.
-1. Ajoutez votre **contenu HTML** afin de personnaliser votre modèle. Vous pouvez afficher une page miroir et un lien de désinscription.
+1. Ajoutez votre **contenu HTML** afin de personnaliser votre modèle. Vous pouvez afficher une page miroir et un lien de désinscription.[](../send/mirror-page.md)
 1. Sélectionnez l&#39;onglet **Aperçu**. Dans le menu déroulant **Tester la personnalisation**, sélectionnez **Destinataire** pour obtenir un aperçu du modèle en tant que profil choisi.
 1. Cliquez sur **Enregistrer**. Le modèle peut maintenant être utilisé dans une diffusion.
 
@@ -142,4 +142,4 @@ Cette vidéo montre comment déployer un modèle de diffusion email ad hoc. Elle
 
 >[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
 
-D’autres vidéos pratiques sur Campaign Classic sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=fr).
+D’autres vidéos pratiques sur Campaign sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

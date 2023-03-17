@@ -5,9 +5,9 @@ feature: Email
 role: User
 level: Intermediate, Experienced
 exl-id: e4e3fb49-9942-4e2d-a020-557d1ac5dcdc
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '442'
 ht-degree: 95%
 
 ---
@@ -67,8 +67,6 @@ Notez les spécificités et recommandations suivantes :
 <!--Only successfully sent emails are taken in account, bounces are not.-->
 
 **Apprenez-en davantage en consultant la documentation de Campaign Classic v7**
-
-* [Générer la page miroir](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#generating-mirror-page){target="_blank"}
 
 * [Sélectionner le format d&#39;e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#selecting-message-formats){target="_blank"}
 
