@@ -5,14 +5,14 @@ feature: Push
 role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: c44fb2de4ed0e1661801313ae0430ba9d19542f0
+source-git-commit: d8ceefe1dd56aecb810878d99395ac900f889c2e
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 98%
+source-wordcount: '1249'
+ht-degree: 90%
 
 ---
 
-# Création et envoi de notifications push
+# Création et envoi de notifications push{#push-notifications-create}
 
 Les diffusions d&#39;applications mobiles vous permettent d&#39;envoyer des notifications aux systèmes iOS et Android.
 
@@ -25,24 +25,17 @@ Pour envoyer des notifications push dans Adobe Campaign, vous devez effectuer l
 
 ![](../assets/do-not-localize/book.png) Découvrez comment prendre en main les applications mobiles dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=fr).{target="_blank"}
 
-## Intégration du SDK Campaign
+## Intégration du SDK {#push-sdk}
 
-Le SDK Campaign facilite l&#39;intégration de votre application mobile à la plateforme Adobe Campaign.
+Vous pouvez utiliser le SDK Mobile Adobe Experience Platform en configurant l’extension Adobe Campaign dans l’interface utilisateur de collecte de données. Le SDK Adobe Experience Platform Mobile permet d’optimiser les solutions et services Experience Cloud de l’Adobe dans vos applications mobiles. La configuration des SDK est gérée via l’interface utilisateur de la collecte de données pour une configuration flexible et des intégrations extensibles basées sur des règles. [En savoir plus dans la documentation Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
-Les versions de SDK compatibles sont répertoriées dans la [Matrice de compatibilité Campaign](../start/compatibility-matrix.md#MobileSDK).
+Découvrez comment configurer et installer le SDK mobile Adobe Experience Platform [dans cette vidéo](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/configure-push-using-aep-mobile-sdk.html?lang=fr){target="_blank"}.
 
-![](../assets/do-not-localize/glass.png) Découvrez comment intégrer les SDK Android et iOS de Campaign avec votre application dans [cette section](../config/push-config.md)
+Vous pouvez également intégrer le SDK Campaign pour faciliter l&#39;intégration de votre application mobile dans la plateforme Adobe Campaign. Les versions de SDK compatibles sont répertoriées dans la [Matrice de compatibilité Campaign](../start/compatibility-matrix.md#MobileSDK).
 
-<!--
-### Configure Campaign Extension in Launch
+Découvrez comment intégrer les SDK Campaign Android et iOS à votre application dans [cette page](../config/push-config.md)
 
-You can integrate Adobe Experience Platorm Launch SDK with Campaign, by leveraging Campaign Classic extension.
-
-![](../assets/do-not-localize/book.png) Learn more in [Adobe Mobile SDK documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic){target="_blank"}
-
--->
-
-## Configuration des paramètres de votre application dans Campaign
+## Configuration des paramètres de votre application dans Campaign{#push-config}
 
 Vous devez définir les paramètres de vos applications iOS et Android dans Adobe Campaign.
 
@@ -50,7 +43,7 @@ Vous devez définir les paramètres de vos applications iOS et Android dans Adob
 
 ![](../assets/do-not-localize/book.png) Les instructions de configuration pour Android sont décrites dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=fr#sending-messages).{target="_blank"}
 
-## Création de votre première notification push
+## Création de votre première notification push{#push-create}
 
 Cette section présente les éléments spécifiques à la diffusion de notifications iOS et Android.
 
