@@ -4,9 +4,9 @@ description: Découvrez comment ajouter et gérer le lien vers la page miroir
 feature: Email
 role: User
 level: Beginner
-source-git-commit: d8ceefe1dd56aecb810878d99395ac900f889c2e
+source-git-commit: 9ebcfee199a2ba355b7b504c7f24732d30542a36
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
@@ -23,12 +23,14 @@ La page miroir générée par Adobe Campaign contient toutes les données de per
 
 ![](assets/mirror-page-link.png)
 
-
 ## Ajouter un lien vers la page miroir{#link-to-mirror-page}
 
 L’insertion d’un lien vers la page miroir est une bonne pratique. Ce lien peut, par exemple, &quot;Afficher cet email dans votre navigateur&quot; ou &quot;Lire ceci en ligne&quot;. Il se trouve souvent dans l’en-tête ou le pied de page de l’email.
 
 Dans Adobe Campaign, vous pouvez insérer un lien vers la page miroir dans le contenu de l&#39;email à l&#39;aide du **bloc de personnalisation**. La version intégrée **Lien vers la page miroir** le bloc de personnalisation insère le code suivant dans le contenu de votre email : `<%@ include view='MirrorPage' %>`.
+
+![](assets/mirror-page-insert.png)
+
 
 <!--For more on personalization blocks insertion, refer to [Personalization blocks](personalization-blocks.md).-->
 
@@ -47,5 +49,19 @@ Outre le mode par défaut, les options disponibles sont les suivantes :
 
 * **[!UICONTROL Forcer la génération de la page miroir]**: utilisez ce mode pour générer la page miroir même si aucun lien vers la page miroir n&#39;est inséré dans la diffusion.
 * **[!UICONTROL Ne pas générer de page miroir]**: utilisez ce mode pour éviter de générer une page miroir, même si le lien est présent dans la diffusion.
-* **[!UICONTROL Génère une page miroir accessible à l’aide de l’identifiant du message uniquement]**: utilisez cette option pour permettre l&#39;accès au contenu de la page miroir, avec les données de personnalisation, dans la fenêtre des logs de diffusion. Pour accéder à cette page miroir : une fois la diffusion envoyée, ouvrez-la et accédez à son **[!UICONTROL Diffusion]** . Sélectionnez un destinataire et cliquez sur le bouton **[!UICONTROL Afficher la page miroir de ce message...]** lien. La page miroir s’affiche dans un nouvel onglet.
+* **[!UICONTROL Génère une page miroir accessible à l’aide de l’identifiant du message uniquement]**: lorsque le lien de la page miroir n&#39;est pas présent dans le contenu de l&#39;email, utilisez cette option pour permettre l&#39;accès au contenu de la page miroir, dans la fenêtre du log de diffusion, comme décrit ci-dessous.
+
+## Vérifier la page miroir d&#39;un destinataire{#mirror-page-access}
+
+Vous pouvez accéder au contenu de la page miroir pour un destinataire spécifique d&#39;une diffusion, avec des données de personnalisation.
+
+Pour accéder à cette page miroir :
+
+1. Une fois la diffusion envoyée, ouvrez-la et accédez à son **[!UICONTROL Diffusion]** .
+
+1. Sélectionnez un destinataire et cliquez sur le bouton **[!UICONTROL Afficher la page miroir de ce message...]** lien.
+
+   ![](assets/mirror-page-display.png)
+
+   La page miroir s&#39;affiche dans un écran dédié, avec les données de personnalisation du destinataire sélectionné.
 
