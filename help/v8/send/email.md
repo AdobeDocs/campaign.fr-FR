@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: bd109f9d320b3009ab0d9414291d397b331373de
 workflow-type: tm+mt
 source-wordcount: '581'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -69,7 +69,7 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
    * Ajouter une page miroir
 
-      Pour permettre à vos destinataires d&#39;accéder au contenu de votre diffusion dans un navigateur web, ajoutez un lien vers la page miroir de votre message.
+      Pour permettre à vos destinataires d&#39;afficher le contenu de votre diffusion dans un navigateur web, ajoutez un lien vers le [page miroir](../send/mirror-page.md) de votre message.
 
       Placez le curseur à l&#39;endroit où vous souhaitez insérer ce lien, cliquez sur la dernière icône de la barre d&#39;outils, puis sur **[!UICONTROL Inclure]** et sélectionnez **[!UICONTROL Lien vers la page miroir]**.
    Une fois le contenu prêt, cliquez sur **Enregistrer** : elle s&#39;affiche désormais dans votre liste de diffusions, sous l&#39;onglet **[!UICONTROL Campagnes > Diffusions]**. Votre première diffusion e-mail est prête. Vous devez maintenant définir l&#39;audience, valider la diffusion et l&#39;envoyer.
