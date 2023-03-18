@@ -4,7 +4,7 @@ description: Découvrez comment ajouter et gérer le lien vers la page miroir
 feature: Email
 role: User
 level: Beginner
-source-git-commit: e2aaf80a5a0d74161152fabe8ea157d31923ee19
+source-git-commit: 2a2887fcd476566d2105edd9824feba4c1caca8a
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Bien que la plupart des clients de messagerie rendent les images sans problème,
 
 La page miroir générée par Adobe Campaign contient toutes les données de personnalisation.
 
-![exemple de lien miroir](assets/mirror-page-link.png){width="500" align="left"}
+![exemple de lien miroir](assets/mirror-page-link.png){width="600" align="left"}
 
 ## Ajouter un lien vers la page miroir{#link-to-mirror-page}
 
@@ -29,7 +29,7 @@ L’insertion d’un lien vers la page miroir est une bonne pratique. Ce lien pe
 
 Dans Adobe Campaign, vous pouvez insérer un lien vers la page miroir dans le contenu de l&#39;email à l&#39;aide du **bloc de personnalisation**. La version intégrée **Lien vers la page miroir** le bloc de personnalisation insère le code suivant dans le contenu de votre email : `<%@ include view='MirrorPage' %>`.
 
-![](assets/mirror-page-insert.png){width="500" align="left"}
+![](assets/mirror-page-insert.png){width="800" align="left"}
 
 
 <!--For more on personalization blocks insertion, refer to [Personalization blocks](personalization-blocks.md).-->
@@ -43,7 +43,7 @@ Vous pouvez contrôler le mode de génération de la page miroir de l&#39;email.
 1. Accédez au **[!UICONTROL Validité]** de la propriété email.
 1. Dans le **Gestion des pages miroir** , vérifiez les **[!UICONTROL Mode]** Liste déroulante.
 
-![](assets/mirror-page-generation.png){width="500" align="left"}
+![](assets/mirror-page-generation.png){width="800" align="left"}
 
 Outre le mode par défaut, les options disponibles sont les suivantes :
 
@@ -61,7 +61,7 @@ Pour accéder à cette page miroir :
 
 1. Sélectionnez un destinataire et cliquez sur le bouton **[!UICONTROL Afficher la page miroir de ce message...]** lien.
 
-   ![](assets/mirror-page-display.png){width="500" align="left"}
+   ![](assets/mirror-page-display.png){width="800" align="left"}
 
    La page miroir s&#39;affiche dans un écran dédié, avec les données de personnalisation du destinataire sélectionné.
 
