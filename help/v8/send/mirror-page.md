@@ -4,7 +4,7 @@ description: Découvrez comment ajouter et gérer le lien vers la page miroir
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 903224da4ab15bf4221d8769bfb19933f4cbf2b0
+source-git-commit: 124d46f1a4bec1bfd5c07210c931d7fa37db08a7
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Bien que la plupart des clients de messagerie rendent les images sans problème,
 
 La page miroir générée par Adobe Campaign contient toutes les données de personnalisation.
 
-![exemple de lien miroir](assets/mirror-page-link.png){width="300" align="center"}
+![exemple de lien miroir](assets/mirror-page-link.png){width="500" align="center"}
 
 ## Ajouter un lien vers la page miroir{#link-to-mirror-page}
 
