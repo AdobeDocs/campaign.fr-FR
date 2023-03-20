@@ -4,10 +4,10 @@ title: Règles de cohérence
 description: Règles de cohérence
 feature: Typology Rules
 exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '790'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,7 @@ Dans l&#39;exemple suivant, nous allons créer une règle de typologie pour une 
 
 Pour créer une règle de capacité, procédez comme suit :
 
-1. Sous le nœud **[!UICONTROL Administration > Gestion de campagne > Gestion des typologies > Règles de typologie]**, cliquez sur **[!UICONTROL Nouveau]**.
+1. Sous , **[!UICONTROL Administration > Gestion de campagne > Gestion des typologies > Règles de typologie]** dossier, cliquez sur **[!UICONTROL Nouveau]**.
 1. Sélectionnez un type de règle **[!UICONTROL Capacité]**.
 
    ![](assets/campaign_opt_create_capacity_01.png)

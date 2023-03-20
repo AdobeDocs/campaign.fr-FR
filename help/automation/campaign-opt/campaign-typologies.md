@@ -4,10 +4,10 @@ title: Prise en main des typologies de campagne
 description: Découvrez comment configurer et implémenter des typologies de campagne.
 feature: Typology Rules
 exl-id: 7832ffe1-eb65-4b37-9fc5-1374516755d9
-source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -27,9 +27,9 @@ Par défaut, Campaign est fourni avec des typologies et des règles de typologie
 
 Une typologie est un ensemble de règles de vérification appliquées à tous les messages lors de l’analyse de la diffusion.
 
-Une typologie de campagne peut contenir plusieurs règles de typologie, mais une diffusion ne peut référencer qu&#39;une seule typologie.
+Une typologie de campagne peut contenir plusieurs règles de typologie, mais une diffusion ne peut référencer qu’une seule typologie.
 
-Les règles de typologies intégrées et les typologies sont disponibles dans le nœud **[!UICONTROL Administration > Gestion de campagne > Gestion des typologies]** de l&#39;Explorateur Campaign.
+Les règles et typologies de typologie intégrées sont disponibles dans la section **[!UICONTROL Administration > Gestion de campagne > Gestion des typologies]** dossier de l&#39;explorateur Campaign.
 
 Pour chaque typologie, l&#39;onglet **[!UICONTROL Règles]** vous permet d&#39;ajouter, de supprimer ou de visualiser les règles de typologie à appliquer.
 

@@ -6,10 +6,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 98%
+source-wordcount: '730'
+ht-degree: 97%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 98%
 
 Utilisez les modèles de diffusion pour normaliser l’aspect créatif afin d’être plus rapide dans l’exécution et le lancement des campagnes.
 
-Un modèle peut systématiquement inclure :
+Un modèle peut inclure :
 
 * Typologies
 * Adresses d&#39;expéditeur et destinataire
-* Blocs de personnalisation de base
+* De base [blocs de personnalisation](../send/personalization-blocks.md)
 * Liens vers [pages miroir](../send/mirror-page.md) et liens de désabonnement
 * Contenu, logo de la société ou signature
 * Autres propriétés de diffusion, telles que la validité des ressources et les paramètres de reprise ou de mise en quarantaine.

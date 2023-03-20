@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 100%
+source-wordcount: '866'
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ Pour vous permettre de mettre en place des offres hautement ciblées et différe
 
 Les fonctionnalités avancées de Data Management proposent une extension des capacités de traitement des données. Elles permettent de simplifier et d&#39;optimiser le processus de ciblage en incluant des données non modélisées dans le datamart.
 
-![](../assets/do-not-localize/glass.png) En savoir plus sur la segmentation, et la création et la personnalisation d&#39;audiences dans [cette section](audiences.md).
+![](../assets/do-not-localize/glass.png) En savoir plus sur la segmentation et la création d’audiences dans [cette section](audiences.md).
 
 ## Orchestration de campagnes cross-canal {#cross-channel-campaign-orchestration}
 

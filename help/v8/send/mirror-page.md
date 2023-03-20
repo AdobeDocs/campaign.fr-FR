@@ -4,9 +4,9 @@ description: Découvrez comment ajouter et gérer le lien vers la page miroir
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 2a2887fcd476566d2105edd9824feba4c1caca8a
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Dans Adobe Campaign, vous pouvez insérer un lien vers la page miroir dans le co
 ![](assets/mirror-page-insert.png){width="800" align="left"}
 
 
-<!--For more on personalization blocks insertion, refer to [Personalization blocks](personalization-blocks.md).-->
+Pour plus d&#39;informations sur l&#39;insertion de blocs de contenu personnalisés, reportez-vous à la section [Blocs de personnalisation](personalization-blocks.md).
 
 ## Génération de pages miroir{#mirror-page-generation}
 

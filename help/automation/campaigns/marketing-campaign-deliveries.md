@@ -4,10 +4,10 @@ title: Diffusions de campagnes marketing
 description: En savoir plus sur les diffusions d'opérations marketing
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 100%
+source-wordcount: '755'
+ht-degree: 98%
 
 ---
 
@@ -57,7 +57,7 @@ La confirmation de la diffusion est réservée aux administrateurs, ainsi qu&#39
 
 ![](assets/select-delivery-reviewers.png)
 
-Cependant, vous pouvez également permettre au propriétaire de la campagne de confirmer l&#39;envoi, même si des réviseurs spécifiques ont été définis dans les propriétés de la diffusion ou de la campagne. Pour ce faire, en tant qu&#39;administrateur, créez l&#39;option **NmsCampaign_Activate_OwnerConfirmation** et définissez la valeur sur **1**. Les options sont gérées à partir du nœud **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** de l&#39;explorateur Adobe Campaign.
+Cependant, vous pouvez également permettre au propriétaire de la campagne de confirmer l&#39;envoi, même si des réviseurs spécifiques ont été définis dans les propriétés de la diffusion ou de la campagne. Pour ce faire, en tant qu&#39;administrateur, créez l&#39;option **NmsCampaign_Activate_OwnerConfirmation** et définissez la valeur sur **1**. Les options sont gérées à partir du **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Options]** dossier de l&#39;explorateur Campaign.
 
 
 ### Démarrer une diffusion par publipostage direct {#start-an-offline-delivery}

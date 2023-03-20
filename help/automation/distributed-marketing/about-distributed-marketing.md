@@ -4,10 +4,10 @@ title: Prise en main du marketing distribué
 description: Prise en main du marketing distribué
 feature: Distributed Marketing
 exl-id: c9f5b277-3ad8-4316-94b9-789d37813b8b
-source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '1180'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -104,7 +104,7 @@ Les opérateurs locaux doivent appartenir au groupe d&#39;opérateurs **[!UICONT
 
 ### Entités organisationnelles {#organizational-entities}
 
-Pour créer une entité organisationnelle, cliquez sur le noeud **[!UICONTROL Administration > Gestion des accès > Entités organisationnelles]** puis cliquez sur l&#39;icône **[!UICONTROL Nouveau]** au-dessus de la liste des entités.
+Pour créer une entité organisationnelle, cliquez sur le bouton **[!UICONTROL Administration > Gestion des accès > Entités organisationnelles]** et cliquez sur le bouton **[!UICONTROL Nouveau]** au-dessus de la liste des entités.
 
 ![](assets/s_advuser_mkg_dist_local_list.png)
 

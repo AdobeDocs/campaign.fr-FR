@@ -4,10 +4,10 @@ title: Enrichir les données
 description: En savoir plus sur l’activité de workflow d’enrichissement
 feature: Workflows, Enrichment Activity
 exl-id: 3b3fa15f-b16e-42c8-a2e6-03350aee1903
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '823'
-ht-degree: 100%
+source-wordcount: '820'
+ht-degree: 83%
 
 ---
 
@@ -42,17 +42,17 @@ Pour réaliser ce cas d&#39;utilisation, nous avons créé le workflow de ciblag
 Les étapes principales de création du workflow sont les suivantes :
 
 1. Deux activités de type **[!UICONTROL Requête]** et une **[!UICONTROL Intersection]** sont ajoutées afin de cibler les nouveaux abonnés qui ont participé au dernier jeu concours.
-1. L&#39;activité **[!UICONTROL Enrichissement]** nous permet ensuite d&#39;ajouter des données stockées dans la table **[!UICONTROL Résultats jeux]**. Le champ **[!UICONTROL Score]**, sur lequel nous souhaitons effectuer notre personnalisation de diffusion, est ajouté à la table de travail du workflow.
-1. L&#39;activité de type **[!UICONTROL Partage]**, nous permet ensuite de créer des sous-ensembles de destinataires selon le score qu&#39;ils ont obtenu.
-1. Pour chacun des sous-ensembles, une activité de type **[!UICONTROL Diffusion]** est ajoutée.
+1. Le **[!UICONTROL Enrichissement]** sert à ajouter des données stockées dans la variable **[!UICONTROL Résultats de la compétition]** table. Le **[!UICONTROL Score]** Le champ sur lequel notre personnalisation de diffusion va avoir lieu est ajouté à la table de travail du workflow.
+1. Le **[!UICONTROL Partage]** l’activité de type est utilisée pour créer des sous-ensembles de destinataires en fonction des scores.
+1. Pour chacun des sous-ensembles, une activité de **[!UICONTROL Diffusion]** est ajoutée.
 
 ## Etape 1 : Ciblage {#step-1--targeting}
 
-La première requête permet de cibler les destinataires qui ont été ajoutés dans la base au cours des six derniers mois.
+La première requête est utilisée pour cibler les destinataires qui ont été ajoutés à la base au cours des six derniers mois.
 
 ![](assets/uc1_enrich_4.png)
 
-La seconde requête permet de cibler les destinataires ayant participé au dernier jeu.
+La seconde requête sert à cibler les destinataires ayant participé au dernier jeu.
 
 ![](assets/uc1_enrich_5.png)
 
@@ -60,7 +60,7 @@ Une activité de type **[!UICONTROL Intersection]** est ensuite ajoutée pour ci
 
 ## Etape 2 : Enrichissement {#step-2--enrichment}
 
-Dans notre exemple, nous souhaitons personnaliser les diffusions en fonction du champ **[!UICONTROL Score]**, stocké dans la table **[!UICONTROL Résultats jeux]**. Cette table possède un lien de type 1-n avec la table des destinataires. L&#39;activité **[!UICONTROL Enrichissement]** nous permet d&#39;ajouter, dans la table de travail du workflow, des données provenant d&#39;une table liée à la dimension de filtrage.
+Dans cet exemple, découvrez comment personnaliser des diffusions en fonction de la variable **[!UICONTROL Score]** stocké dans le champ **[!UICONTROL Résultats de la compétition]** table. Cette table a une relation de type 1-n avec la table des destinataires. Le **[!UICONTROL Enrichissement]** permet d&#39;ajouter à la table de travail du workflow des données provenant d&#39;une table liée à la dimension de filtrage.
 
 1. Dans l&#39;écran d&#39;édition de l&#39;activité d&#39;enrichissement, sélectionnez **[!UICONTROL Ajouter des données]**, puis **[!UICONTROL Données liées]** à la dimension de filtrage, et cliquez sur **[!UICONTROL Suivant]**.
 

@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Présentation de Campaign
 title: Documentation Campaign v8
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '512'
 ht-degree: 98%
 
 ---
@@ -56,6 +56,12 @@ ht-degree: 98%
          + [Diffusions en échec](send/delivery-failures.md)
       + [Optimisation de l’heure d&#39;envoi](send/predictive.md)
       + [Gérer les abonnements](start/subscriptions.md)
+   + Personnaliser le contenu {#personalize}
+      + [Prise en main de la personnalisation](send/personalize.md)
+      + [Données de personnalisation](send/personalization-data.md)
+      + [ajouter un champ de personnalisation,](send/personalization-fields.md)
+      + [Utiliser des blocs de personnalisation](send/personalization-blocks.md)
+      + [Création de conditions](send/conditions.md)
 + Gestion des profils et de l’audience {#audience}
    + [Prise en main des profils et des audiences](audiences/gs-audiences.md)
    + [Utiliser les audiences](start/audiences.md)

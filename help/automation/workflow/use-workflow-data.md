@@ -3,10 +3,10 @@ title: Utiliser les données d'un workflow
 description: Découvrez comment utiliser les données d'un workflow.
 feature: Workflows, Data Management
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
 source-wordcount: '738'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -57,7 +57,7 @@ Les données de la cible sont purgées au fur et à mesure de l&#39;exécution d
 
 ### Utiliser les données de la cible {#target-data}
 
-Les données stockées dans la table de travail temporaire du workflow sont disponibles pour les tâches de personnalisation. Vous pouvez utiliser les données dans les champs de personnalisation.
+Les données stockées dans la table de travail temporaire du workflow sont disponibles pour les tâches de personnalisation. Les données peuvent être utilisées dans la variable [champs de personnalisation](../../v8/send/personalization-fields.md).
 
 Vous pouvez par exemple utiliser les données collectées à travers une liste dans une diffusion. Pour ce faire, utilisez la syntaxe suivante :
 

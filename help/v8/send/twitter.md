@@ -4,7 +4,7 @@ description: Découvrez comment utiliser le module Marketing des médias sociaux
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: 9ae93ce4e2b0424bb3b3862b2c7d016309bd630e
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
 source-wordcount: '883'
 ht-degree: 100%
@@ -124,7 +124,7 @@ Pour envoyer des messages directs à vos abonnés, procédez comme suit :
 
    ![](assets/tw-dm-content.png)
 
-   Comme pour une diffusion par e-mail, il est possible d&#39;utiliser les champs de personnalisation, par exemple si vous souhaitez ajouter le nom de l&#39;abonné dans le corps du message. En savoir plus dans [cette section](../start/create-message.md#personalization).
+   Comme pour une diffusion par e-mail, il est possible d&#39;utiliser les champs de personnalisation, par exemple si vous souhaitez ajouter le nom de l&#39;abonné dans le corps du message. En savoir plus dans [cette section](../send/personalize.md).
 
 1. Prévisualisez votre message
 
