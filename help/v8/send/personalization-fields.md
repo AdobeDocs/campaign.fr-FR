@@ -1,18 +1,18 @@
 ---
-title: Champs de personnalisation
+title: ajouter un champ de personnalisation,
 description: Découvrez comment insérer des données de personnalisation dans le contenu de votre message
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: badcbb83c4bd0cf509c156557f5ea6f7cf7ae771
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 45%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Champs de personnalisation{#personalization-fields}
+# ajouter un champ de personnalisation,{#personalization-fields}
 
 Utilisez des champs de personnalisation pour diffuser du contenu personnalisé en un à un, selon les règles que vous avez définies pour chaque destinataire.
 

@@ -1,18 +1,18 @@
 ---
-title: Blocs de personnalisation
+title: Utiliser des blocs de personnalisation
 description: Découvrez comment utiliser des blocs de personnalisation intégrés dans le contenu de votre message
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: badcbb83c4bd0cf509c156557f5ea6f7cf7ae771
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 46%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Blocs de personnalisation{#personalization-blocks}
+# Utiliser des blocs de personnalisation{#personalization-blocks}
 
 Les blocs de personnalisation sont un contenu dynamique qui contient un rendu spécifique que vous pouvez insérer dans vos diffusions. Vous pouvez par exemple ajouter un logo, un message de salutations ou un lien vers une page miroir.
 
