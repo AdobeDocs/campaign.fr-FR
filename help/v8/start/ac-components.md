@@ -6,7 +6,7 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
 source-git-commit: 2ec240b139394ce8f54a5835a4fa7bd377d226eb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '660'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Vous pouvez accéder à Adobe Campaign via un client riche, un client léger ou
 
 * Client riche
 
-   Le client riche de Campaign est une application native qui communique avec le serveur applicatif d&#39;Adobe Campaign par le biais de protocoles Internet standard, tels que SOAP et HTTP. [En savoir plus sur la console cliente Campaign](../start/connect.md).
+   Le client riche de Campaign est une application native qui communique avec le serveur applicatif d&#39;Adobe Campaign par le biais de protocoles internet standard, tels que SOAP et HTTP. [En savoir plus sur la console cliente Campaign](../start/connect.md).
 
 * Client léger
 
