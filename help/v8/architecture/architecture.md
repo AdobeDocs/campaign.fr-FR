@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 618e45b6948070c6b791d2bcefa8296b297bf25e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1025'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -42,36 +42,36 @@ Deux modèles de déploiement sont disponibles :
 
    Campaign v8 Enterprise présente le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud. Avec cette nouvelle architecture, le déploiement Campaign v8 Enterprise (FFDA) simplifie la gestion des données : aucun index n&#39;est requis sur la base de données cloud. Il vous suffit de créer les tables et de copier les données pour démarrer. La technologie de base de données cloud ne nécessite pas de maintenance spécifique pour garantir le niveau de performances attendu.
 
-## Répartition de l&#39;exécution de la diffusion {#split}
+## Partager l’exécution d’une diffusion {#split}
 
 >[!AVAILABILITY]
 >
->Cette fonctionnalité est disponible uniquement pour les clients disposant de plusieurs configurations d’instances MID.
+>Cette fonctionnalité est disponible uniquement pour les clients et clientes disposant de plusieurs configurations d’instances MID.
 
-En fonction de votre package Campaign v8, vous disposez d&#39;un nombre spécifique d&#39;instances de mid-sourcing en charge de l&#39;exécution des diffusions.
+En fonction de votre package Campaign v8, vous disposez d’un nombre spécifique d’instances de midsourcing en charge de l’exécution des diffusions.
 
-Par défaut, les comptes externes de tous les canaux utilisent une **[!UICONTROL Alternate]** mode de routage, ce qui signifie qu’une diffusion est envoyée de chaque instance intermédiaire à la fois de manière alternative.
+Par défaut, les comptes externes de tous les canaux utilisent un mode de routage **[!UICONTROL alterné]**. Une diffusion est donc envoyée simultanément à partir de chaque instance mid-sourcing de manière alternée.
 
-Afin d&#39;optimiser les performances à la fois en termes de vitesse et d&#39;échelle, vous pouvez permettre la répartition automatique des diffusions entre vos instances de mid-sourcing afin qu&#39;elles soient diffusées plus rapidement aux destinataires. Cette opération est transparente lors de l&#39;exécution de la diffusion à partir de l&#39;instance marketing : une fois la diffusion envoyée, tous les logs sont consolidés avant d’être renvoyés à l’instance marketing dans un seul objet de diffusion.
+Afin d’optimiser les performances à la fois en termes de vitesse et d’échelle, vous pouvez permettre le partage automatique des diffusions entre vos instances mid-sourcing afin qu’elles soient diffusées plus rapidement aux destinataires. Cette opération est transparente lors de l’exécution de la diffusion à partir de l’instance marketing : une fois la diffusion envoyée, tous les logs sont consolidés ensemble avant d’être renvoyés à l’instance marketing dans un seul objet de diffusion.
 
-Pour ce faire, des comptes externes supplémentaires avec la variable **[!UICONTROL Partage]** le mode de routage est créé lors de la mise en service pour chaque canal :
+Pour ce faire, des comptes externes supplémentaires avec le mode de routage **[!UICONTROL Partagé]** sont créés lors de l’approvisionnement pour chaque canal :
 
-* Diviser la diffusion - Email (splitDeliveryEmail)
-* Diviser la diffusion - SMS (splitDeliverySMS)
-* Diviser la diffusion - iOS (splitDeliveryIOS)
-* Diviser la diffusion - Android (splitDeliveryAndroid)
+* Partager la diffusion - E-mail (splitDeliveryEmail)
+* Partager la diffusion - SMS (splitDeliverySMS)
+* Partager la diffusion - iOS (splitDeliveryIOS)
+* Partager la diffusion - Android (splitDeliveryAndroid)
 
 ![](assets/splitted-delivery.png)
 
 >[!IMPORTANT]
 >
->Le mode de routage partagé est activé par défaut pour le compte &quot;Diviser la diffusion - Email&quot;. Pour tous les autres canaux, contactez l’assistance clientèle pour que l’option soit activée.
+>Le mode de routage partagé est activé par défaut pour le compte « Partager la diffusion - E-mail ». Pour tous les autres canaux, contactez l’assistance clientèle pour que l’option soit activée.
 >
->Par défaut, la valeur de la taille de seuil pour fractionner une diffusion entre plusieurs modes est de 100 000. Vous pouvez modifier cette valeur dans l’option &quot;NmsDelivery_MultiMidSplitThreshold&quot; du **[!UICONTROL Administration]** / **[!UICONTROL Plateforme]** / **[!UICONTROL Options]** .
+>Par défaut, la valeur de la taille de seuil pour partager une diffusion entre plusieurs instances mid-sourcing est de 100 000. Vous pouvez modifier cette valeur dans l’option « NmsDelivery_MultiMidSplitThreshold » du menu **[!UICONTROL Administration]** / **[!UICONTROL Plateforme]** / **[!UICONTROL Options]** .
 
-Pour que les comptes externes partagés soient le compte par défaut pour l&#39;envoi des diffusions, vous devez modifier le fournisseur de routage dans vos modèles de diffusion. Pour ce faire, procédez comme suit :
+Pour que les comptes externes partagés soient le compte par défaut pour l’envoi des diffusions, vous devez modifier le fournisseur de routage dans vos modèles de diffusion. Pour ce faire, procédez comme suit :
 
-1. Accédez au **[!UICONTROL Ressources]** / **[!UICONTROL Modèles]** / **[!UICONTROL Modèles de diffusion]** et ouvrez le modèle de diffusion souhaité. Dans cet exemple, nous allons éditer le modèle de diffusion email.
+1. Accédez au dossier **[!UICONTROL Ressources]** / **[!UICONTROL Modèles]** / **[!UICONTROL Modèles de diffusion]** et ouvrez le modèle de diffusion souhaité. Dans cet exemple, nous allons modifier le modèle de diffusion e-mail.
 
    ![](assets/split-default-list.png)
 
