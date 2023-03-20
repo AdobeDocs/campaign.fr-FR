@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: 445e62c290466003886f2dc49386d0c1edb80eeb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '921'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
@@ -16,42 +16,42 @@ ht-degree: 55%
 
 Pour commencer à utiliser Campaign, vous devez installer et configurer la console cliente.
 
-La console cliente est une application native qui communique avec le serveur d’applications Adobe Campaign par le biais de protocoles Internet standard, tels que SOAP et HTTP. La console cliente Campaign centralise toutes les fonctionnalités et tous les paramètres et requiert une bande passante minimale, car elle repose sur un cache local. Conçue pour un déploiement facile, cette console peut être déployée à partir d&#39;un navigateur Internet et être mise à jour automatiquement. En outre, elle ne nécessite aucune configuration réseau spécifique, car elle génère uniquement du trafic HTTP(S).
+La console cliente est une application native qui communique avec le serveur applicatif d’Adobe Campaign par le biais de protocoles internet standard, tels que SOAP et HTTP. La console cliente Campaign centralise toutes les fonctionnalités et tous les paramètres et requiert une bande passante minimale, car elle repose sur un cache local. Conçue pour un déploiement facile, cette console peut être déployée à partir d&#39;un navigateur Internet et être mise à jour automatiquement. En outre, elle ne nécessite aucune configuration réseau spécifique, car elle génère uniquement du trafic HTTP(S).
 
 Avant de commencer, vous devez :
 
 * Vérifier la compatibilité de votre système et de vos outils avec Adobe Campaign dans la [matrice de compatibilité](compatibility-matrix.md)
 * Obtenir l&#39;URL du serveur Campaign
-* Créez votre Adobe ID ou obtenez vos informations d’identification d’utilisateur auprès de votre entreprise.
-* Installez le runtime Microsoft Edge Webview2 sur votre système. [En savoir plus](#webview)
+* Créer votre Adobe ID ou obtenir vos informations d’identification utilisateur de votre société
+* Installez le runtime de Microsoft Edge Webview2 sur votre système. [En savoir plus](#webview)
 
-## Installation de la console cliente{#download-ac-console}
+## Installer la console cliente{#download-ac-console}
 
 ###  du runtime de Microsoft Edge Webview2 {#webview}
 
-À partir de la version de build 8.4 de Campaign Classic, l’installation du runtime Microsoft Edge Webview 2 est requise pour toute installation de la console cliente.
+À partir de la version 8.4 de Campaign Classic, l’installation du runtime de Microsoft Edge Webview 2 est requise pour toute installation de la console cliente.
 
-Web View est installé par défaut dans le cadre du système d’exploitation Windows 11. S’il n’est pas déjà présent sur votre système, le programme d’installation de la console cliente Campaign vous invite à le télécharger à partir de [Site web du développeur Microsoft](http://www.adobe.com/go/acc-ms-webview2-runtime-download_fr){target="_blank"}. Notez que le lien de téléchargement ne fonctionne pas dans le navigateur Internet Explorer 11, car Microsoft ne le prend plus en charge. Assurez-vous d’utiliser un autre navigateur pour accéder au lien.
+Web View est installé par défaut dans le cadre du système d’exploitation Windows 11. S’il n’est pas déjà présent sur votre système, le programme d’installation de la console cliente Campaign vous invitera à le télécharger à partir du [site web Microsoft Developer](http://www.adobe.com/go/acc-ms-webview2-runtime-download_fr){target="_blank"}. Notez que le lien de téléchargement ne fonctionne pas dans le navigateur Internet Explorer 11, car Microsoft ne le prend plus en charge. Assurez-vous d’utiliser un autre navigateur pour accéder au lien.
 
-### Téléchargement de la console{#install-ac-console}
+### Télécharger la console{#install-ac-console}
 
-Lorsque vous utilisez Campaign pour la première fois, vous devez télécharger la console cliente et l’installer.
+Lorsque vous utilisez Campaign pour la première fois, vous devez télécharger et installer la console cliente.
 
-Deux options sont disponibles pour télécharger la console cliente :
+Deux options sont disponibles pour télécharger la console cliente :
 
-1. En tant qu&#39;administrateur de Campaign, connectez-vous à Adobe [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target="_blank"}.
+1. En tant qu’administrateur/administratrice de Campaign, connectez-vous à la [distribution logicielle Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target="_blank"}.
 
-1. En tant qu’utilisateur final, votre administrateur Campaign déploie la console cliente pour vous et la rend disponible via une URL dédiée.
+1. En tant qu’utilisateur/utilisatrice final(e), votre administrateur ou administratrice Campaign déploie la console cliente pour vous et la rend disponible via une URL dédiée.
 
 Une fois le programme d’installation de la console cliente téléchargé, installez-le sur votre ordinateur local.
 
 Notez que vous ne pouvez pas modifier la langue de la console cliente une fois qu’elle a été installée.
 
-## Création de votre connexion{#create-your-connection}
+## Créer votre connexion{#create-your-connection}
 
-Une fois la console cliente installée, procédez comme suit pour créer la connexion au serveur applicatif :
+Une fois la console cliente installée, procédez comme suit pour créer la connexion au serveur applicatif :
 
-1. Démarrez la console et parcourez le lien situé dans le coin droit pour accéder à l&#39;écran de configuration de la connexion.
+1. Démarrez la console et parcourez le lien situé dans le coin droit pour accéder à l’écran de configuration de la connexion.
 
 1. Cliquez sur le menu **[!UICONTROL Ajouter > Connexion]** et saisissez le libellé et l&#39;URL du serveur applicatif Adobe Campaign.
 
@@ -73,9 +73,9 @@ Vous pouvez ajouter autant de connexions que nécessaire pour vous connecter, pa
 
 Les utilisateurs de Campaign se connectent à la console Adobe Campaign à l&#39;aide de leur Adobe ID, via le système IMS (Adobe IDentity Management System). Ils peuvent utiliser le même identifiant pour toutes les solutions d&#39;Adobe. La connexion est enregistrée lors de l&#39;utilisation d&#39;Adobe Campaign avec d&#39;autres solutions. Pour en savoir plus sur l&#39;IMS d&#39;Adobe, consultez [cette page](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
 
-Pour vous connecter à une instance, procédez comme suit :
+Pour vous connecter à une instance, procédez comme suit :
 
-1. Démarrez la console et parcourez le lien situé dans le coin droit pour accéder à l&#39;écran de configuration de la connexion.
+1. Démarrez la console et parcourez le lien situé dans le coin droit pour accéder à l’écran de configuration de la connexion.
 
    ![](assets/connectToCampaign.png)
 
@@ -89,17 +89,17 @@ Vous pouvez ensuite vous connecter à Campaign à l&#39;aide de [votre Adobe ID
 
 >[!NOTE]
 >
->Comme Microsoft Edge Webview2 n’enregistre pas les informations d’identification du proxy, la console peut vous demander de vous authentifier deux fois lors de votre première connexion.
+>Comme Microsoft Edge Webview2 n’enregistre pas les informations d’identification du proxy, la console peut vous demander de vous authentifier deux fois lors de votre première connexion.
 
 ## Mettre à niveau votre console cliente{#upgrade-ac-console}
 
-Lorsque votre système est mis à niveau vers une version plus récente, vous devez mettre à jour votre console cliente vers cette même version. Il s’agit d’une bonne pratique. Pour certaines versions, cette mise à niveau est obligatoire. Dans ce cas, il est mentionné dans la variable [Notes de mise à jour](release-notes.md).
+Lorsque votre système est mis à niveau vers une version plus récente, vous devez mettre à jour votre console cliente vers cette même version. Il s’agit d’une bonne pratique. Pour certaines versions, cette mise à niveau est obligatoire. Dans ce cas, cela est mentionné dans les [Notes de mise à jour](release-notes.md).
 
-En tant qu’utilisateur de Cloud Services gérés, Adobe déploie la console cliente pour vous. Lorsque vous vous connectez à votre environnement mis à niveau, vous êtes invité à télécharger la dernière version de la console cliente dans une fenêtre contextuelle. Vous devez accepter cette mise à niveau et mettre à jour la console cliente selon vos besoins.
+En tant qu’utilisateur/utilisatrice Managed Cloud Services, Adobe déploie la console cliente pour vous. Lorsque vous vous connectez à votre environnement mis à niveau, vous êtes invité à télécharger la dernière version de la console cliente dans une fenêtre contextuelle. Vous devez accepter cette mise à niveau et mettre à jour la console cliente comme demandé.
 
 >[!CAUTION]
 >
->Adobe recommande de laisser l’option **[!UICONTROL Ne plus poser cette question]** désélectionnez cette option pour vous assurer d’être averti lorsqu’une nouvelle version de la console est disponible. Si cette option est sélectionnée, l’utilisateur n’est pas informé qu’une mise à niveau de la console est requise.
+>Adobe recommande de désélectionner l’option **[!UICONTROL Ne plus poser cette question]** pour que tous les utilisateurs et utilisatrices soient informés de la disponibilité d’une nouvelle version de la console. Si cette option est sélectionnée, l’utilisateur ou l’utilisatrice n’est pas informé(e) qu’une mise à niveau de la console est requise.
 
 
 ## Octroyer l’accès aux utilisateurs{#grant-access}
