@@ -27,7 +27,7 @@ Avant de commencer, vous devez :
 
 ## Installer la console cliente{#download-ac-console}
 
-###  du runtime de Microsoft Edge Webview2 {#webview}
+### du runtime de Microsoft Edge Webview2 {#webview}
 
 À partir de la version 8.4 de Campaign Classic, l’installation du runtime de Microsoft Edge Webview 2 est requise pour toute installation de la console cliente.
 
