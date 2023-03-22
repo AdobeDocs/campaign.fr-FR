@@ -5,26 +5,19 @@ feature: Email
 role: Data Engineer
 level: Beginner
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
-source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
+source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 96%
+source-wordcount: '832'
+ht-degree: 97%
 
 ---
 
 
 # Envoyer et surveiller vos e-mails
 
-Une fois la diffusion configurée et prête à être envoyée, vérifiez que vous avez exécuté l’analyse de la diffusion.
-
-![](../assets/do-not-localize/book.png)[Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#confirming-delivery){target="_blank"}.
+Une fois la diffusion configurée et prête à être envoyée, vérifiez que vous avez exécuté l’analyse de la diffusion. [En savoir plus](delivery-analysis.md)
 
 Une fois que vous avez terminé, confirmez la diffusion pour lancer la diffusion des messages.
-
-Vous pouvez également procéder comme suit :
-
-* planifier la diffusion à une date ultérieure à l’aide de [l’option Différer la diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#scheduling-the-delivery-sending){target="_blank"},
-* envoyer dans plusieurs lots à l’aide de [plusieurs vagues](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#sending-using-multiple-waves){target="_blank"}.
 
 Suivre l’exécution de la diffusion depuis l’onglet **Diffusion**, accessible à partir des détails de cette diffusion ou de la liste des diffusions.
 
@@ -59,7 +52,7 @@ Le MTA qualifie le rebond SMTP et envoie cette qualification à Campaign sous la
 
 >[!NOTE]
 >
->Actuellement, les rebonds **asynchrones** sont qualifiés par le processus inMail grâce aux règles d’**[!UICONTROL e-mail entrant]**. Pour en savoir plus à ce sujet, consultez la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr#bounce-mail-qualification){target="_blank"}. <!--Refer to [bounce mail qualification](delivery-failures.md#bounce-mail-qualification)-->
+>Actuellement, les rebonds **asynchrones** sont qualifiés par le processus inMail grâce aux règles d’**[!UICONTROL e-mail entrant]**.
 
 En savoir plus sur les diffusions en échec dans [cette section](delivery-failures.md).
 

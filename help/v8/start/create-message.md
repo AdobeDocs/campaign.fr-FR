@@ -5,10 +5,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 100%
+source-wordcount: '469'
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,7 @@ Une fois votre message créé et son contenu conçu et testé, vous pouvez chois
 
    ![](assets/send-email.png)
 
-   ![](../assets/do-not-localize/book.png) Découvrez comment envoyer des messages dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html?lang=fr){target="_blank"}
+   Découvrez comment envoyer des messages dans [cette section](../send/send.md)
 
 * Envoyer des messages associés à une [campagne marketing](campaigns.md)
 
@@ -54,30 +54,26 @@ Une fois votre message créé et son contenu conçu et testé, vous pouvez chois
 
    ![](assets/send-in-a-wf.png)
 
-   ![](../assets/do-not-localize/glass.png) Découvrez comment automatiser les diffusions e-mail sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery.html?lang=fr)
+   Découvrez comment automatiser les diffusions e-mail sur [cette page](../../automation/workflow/delivery.md)
 
 * [Déclencher des messages](../send/transactional.md) à partir d&#39;un événement
-   ![](../assets/do-not-localize/book.png) [Cas pratique : découvrez comment envoyer un e-mail transactionnel avec une pièce jointe](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=fr){target="_blank"}
 
 * Planifier vos messages
 
    ![](assets/schedule-send.png)
 
-   ![](../assets/do-not-localize/glass.png) [Cas pratique : découvrez comment planifier et envoyer un e-mail d&#39;anniversaire](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=fr)
+[Cas pratique : découvrez comment planifier et envoyer un e-mail d&#39;anniversaire](../../automation/workflow/send-a-birthday-email.md)
 
 
-## Ajout de personnalisation{#personalization}
+## Ajouter de la personnalisation{#personalization}
 
-Les messages diffusés par Adobe Campaign peuvent être personnalisés de différentes façons.
+Les messages diffusés par Adobe Campaign peuvent être personnalisés de différentes façons. [En savoir plus sur les fonctionnalités de personnalisation](../send/personalize.md)
 
 Vous pouvez ainsi :
 
-* Insérer des champs de personnalisation dynamiques.
-   ![](../assets/do-not-localize/book.png) Découvrez comment utiliser les champs de personnalisation dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-fields.html?lang=fr).{target="_blank"}
-* Insérez des blocs de personnalisation prédéfinis.
-   ![](../assets/do-not-localize/book.png) Découvrez en quoi consiste un bloc de personnalisation ainsi que son fonctionnement dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-blocks.html?lang=fr).{target="_blank"}
-* Créer du contenu conditionnel.
-   ![](../assets/do-not-localize/book.png) Découvrez comment insérer du contenu conditionnel dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/conditional-content.html?lang=fr).{target="_blank"}
+* Insérer des champs de personnalisation dynamiques. [En savoir plus](../send/personalization-fields.md)
+* Insérez des blocs de personnalisation prédéfinis. [En savoir plus](../send/personalization-blocks.md)
+* Créer du contenu conditionnel. [En savoir plus](../send/conditions.md)
 
 ## Envoi de messages transactionnels{#gs-transac-messages}
 
@@ -95,11 +91,3 @@ La surveillance de vos diffusions après leur envoi est une étape clé pour vou
 
 ![](../assets/do-not-localize/book.png) Découvrez comment surveiller vos diffusions dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr#sending-messages){target="_blank"}
 
-
-**Rubriques connexes** dans la documentation de Campaign Classic v7 :
-
-* [Bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=fr){target="_blank"}
-
-* [Test et envoi d&#39;un e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html?lang=fr){target="_blank"}
-
-* [Envoyer des BAT](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target="_blank"}
