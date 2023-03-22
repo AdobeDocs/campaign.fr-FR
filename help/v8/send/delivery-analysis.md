@@ -4,7 +4,7 @@ description: Découvrez comment préparer et vérifier votre diffusion
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 8f04981e38da79e69afc890311c559f9ffa136f4
+source-git-commit: 51b333492ad50849751208c7549dc00f66140b82
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 53%
@@ -47,11 +47,11 @@ Pour préparer la diffusion, vérifiez que le contenu et la cible de la diffusio
    >
    >Lors de l’exécution, l’analyse gèle la diffusion (ou le BAT). Toute modification apportée à la diffusion (ou au BAT) doit être suivie d’une autre analyse pour devenir applicable.
 
-Une fois l’analyse terminée, la section supérieure de la fenêtre indique si la préparation de la diffusion est terminée ou si des erreurs se sont produites. Toutes les étapes de validation, les avertissements et les erreurs sont répertoriés. Les icônes colorées indiquent le type de message :
+   Une fois l’analyse terminée, la section supérieure de la fenêtre indique si la préparation de la diffusion est terminée ou si des erreurs se sont produites. Toutes les étapes de validation, les avertissements et les erreurs sont répertoriés. Les icônes colorées indiquent le type de message :
 
-* Une icône bleue indique un message informatif.
-* Une icône jaune indique une erreur de traitement non critique.
-* Une icône rouge indique une erreur critique qui empêche l&#39;envoi de la diffusion.
+   * Une icône bleue indique un message informatif.
+   * Une icône jaune indique une erreur de traitement non critique.
+   * Une icône rouge indique une erreur critique qui empêche l&#39;envoi de la diffusion.
 
    ![](assets/delivery-analysis-results.png){width="800" align="left"}
 
