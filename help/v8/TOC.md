@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Présentation de Campaign
 title: Documentation Campaign v8
-source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
+source-git-commit: 23f30dee861250532490da8598e6e0e18f72c1b0
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '521'
 ht-degree: 96%
 
 ---
@@ -56,15 +56,15 @@ ht-degree: 96%
          + [Diffusions en échec](send/delivery-failures.md)
       + [Optimisation de l’heure d&#39;envoi](send/predictive.md)
       + [Gérer les abonnements](start/subscriptions.md)
-   + Personnaliser le contenu {#personalize}
-      + [Prise en main de la personnalisation](send/personalize.md)
-      + [Données de personnalisation](send/personalization-data.md)
-      + [ajouter un champ de personnalisation,](send/personalization-fields.md)
-      + [Utiliser des blocs de personnalisation](send/personalization-blocks.md)
-      + [Création de conditions](send/conditions.md)
-   + Valider votre diffusion {#validate}
-      + [Aperçu et BAT](send/preview-and-proof.md)
-      + [Analyse des diffusions](send/delivery-analysis.md)
+      + Personnaliser le contenu {#personalize}
+         + [Prise en main de la personnalisation](send/personalize.md)
+         + [Données de personnalisation](send/personalization-data.md)
+         + [ajouter un champ de personnalisation,](send/personalization-fields.md)
+         + [Utiliser des blocs de personnalisation](send/personalization-blocks.md)
+         + [Création de conditions](send/conditions.md)
+      + Valider votre diffusion {#validate}
+         + [Prévisualisation et BAT des emails](send/preview-and-proof.md)
+         + [Analyse des diffusions](send/delivery-analysis.md)
 + Gestion des profils et de l’audience {#audience}
    + [Prise en main des profils et des audiences](audiences/gs-audiences.md)
    + [Utiliser les audiences](start/audiences.md)
