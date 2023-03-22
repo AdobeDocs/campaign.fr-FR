@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Intermediate, Experienced
 exl-id: e4e3fb49-9942-4e2d-a020-557d1ac5dcdc
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 95%
+source-wordcount: '430'
+ht-degree: 93%
 
 ---
 
@@ -66,7 +66,16 @@ Notez les spécificités et recommandations suivantes :
 
 <!--Only successfully sent emails are taken in account, bounces are not.-->
 
-**Apprenez-en davantage en consultant la documentation de Campaign Classic v7**
+**En savoir plus**
+
+Dans ces sections :
+
+* [Utiliser des modèles de diffusion e-mail](../send/create-templates.md)
+
+* [Présentation des diffusions en échec](../send/delivery-failures.md)
+
+
+Et dans la documentation Campaign Classic v7 :
 
 * [Sélectionner le format d&#39;e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#selecting-message-formats){target="_blank"}
 
@@ -74,6 +83,3 @@ Notez les spécificités et recommandations suivantes :
 
 * [Définir l&#39;adresse e-mail de rebond](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=fr#managing-bounce-emails){target="_blank"}
 
-* [Utiliser des modèles de diffusion e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr){target="_blank"}
-
-* [Présentation des diffusions en échec](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr){target="_blank"}

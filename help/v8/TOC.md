@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Présentation de Campaign
 title: Documentation Campaign v8
-source-git-commit: 23f30dee861250532490da8598e6e0e18f72c1b0
+source-git-commit: 464898df7a362c137d20ebaf2b96bfef71131ae6
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '520'
 ht-degree: 96%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 96%
          + [Utiliser des blocs de personnalisation](send/personalization-blocks.md)
          + [Création de conditions](send/conditions.md)
       + Valider votre diffusion {#validate}
-         + [Prévisualisation et BAT des emails](send/preview-and-proof.md)
+         + [Aperçu et BAT](send/preview-and-proof.md)
          + [Analyse des diffusions](send/delivery-analysis.md)
 + Gestion des profils et de l’audience {#audience}
    + [Prise en main des profils et des audiences](audiences/gs-audiences.md)

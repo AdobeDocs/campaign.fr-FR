@@ -5,10 +5,10 @@ feature: Privacy, PI
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
-source-git-commit: 864f2179384d3e3cfcf310fcd04fe02240bfbefa
+source-git-commit: cfe559b83a7db36ab8d9223d04d348f3afd74730
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 100%
+source-wordcount: '613'
+ht-degree: 98%
 
 ---
 
@@ -36,9 +36,8 @@ La gestion des accès joue un rôle important dans le renforcement de la sécuri
 
 * Créez suffisamment de groupes de sécurité.
 * Vérifiez que chaque opérateur dispose des droits d&#39;accès adéquats.
-* Évitez d&#39;utiliser l&#39;opérateur admin et d&#39;ajouter trop d&#39;opérateurs au groupe admin.
 
-![](../assets/do-not-localize/book.png) Apprenez-en davantage en consultant la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=fr#webapp-operator){target="_blank"}
+Pour en savoir plus sur les autorisations, consultez [cette section](../start/gs-permissions.md)
 
 ## Instructions de codage
 
@@ -132,9 +131,8 @@ La gestion des accès joue un rôle important dans le renforcement de la sécuri
 
 * Créez suffisamment de groupes de sécurité.
 * Vérifiez que chaque opérateur dispose des droits d&#39;accès adéquats.
-* Évitez d&#39;utiliser l&#39;opérateur admin et d&#39;ajouter trop d&#39;opérateurs au groupe admin.
 
-![](../assets/do-not-localize/book.png) Apprenez-en davantage en consultant la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=fr#webapp-operator){target="_blank"}
+En savoir plus sur les autorisations dans [dans cette section](../start/gs-permissions.md).
 
 ## Instructions de codage
 

@@ -5,18 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
+source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 92%
+source-wordcount: '479'
+ht-degree: 91%
 
 ---
 
 # Conception et envoi d&#39;e-mails
 
-Les diffusions e-mail permettent d&#39;envoyer des e-mails personnalisés à la population cible.
-
-![](../assets/do-not-localize/book.png)Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html?lang=fr){target="_blank"}.
+Les diffusions e-mail permettent d&#39;envoyer des e-mails personnalisés à la population cible. [En savoir plus](../send/send.md).
 
 ## Création de votre première diffusion e-mail
 
@@ -78,17 +76,13 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
 Découvrez comment importer un contenu d’e-mail dans ce [cas d’utilisation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=fr).
 
-Pour en savoir, consultez ces sections de la **documentation de Campaign Classic v7** :
+En savoir plus dans les sections suivantes :
 
-* Concevoir un e-mail dans Campaign
-   ![](../assets/do-not-localize/book.png) [Découvrez comment concevoir un e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html?lang=fr){target="_blank"}
-* Créer et utiliser un modèle d&#39;e-mail
-   ![](../assets/do-not-localize/book.png) [En savoir plus sur les modèles d&#39;e-mails](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr){target="_blank"}
-* Sélectionner l&#39;audience de votre e-mail
-   ![](../assets/do-not-localize/book.png) [En savoir plus sur la définition de la population cible](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html?lang=fr){target="_blank"}
-* Valider une diffusion et envoyer des BAT
-   ![](../assets/do-not-localize/book.png) [En savoir plus sur les étapes clés de validation d&#39;une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target="_blank"}
-* Ajouter des [adresses de contrôle](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html?lang=fr){target="_blank"}
+* [Concevoir un e-mail dans Campaign
+](../send/email.md)
+* [Créer et utiliser un modèle d&#39;e-mail](../send/create-templates.md)
+* [Sélectionner l&#39;audience de votre e-mail](../audiences/gs-audiences.md)
+* [Valider une diffusion et envoyer des BAT](../send/preview-and-proof.md)
 
 ## Test et validation de vos e-mails
 
@@ -99,6 +93,5 @@ Vous pouvez ainsi :
 * Vérifier les logs d&#39;analyses de diffusion
 * Envoi de BAT
 * Ajouter des adresses de contrôle
-* Utiliser des populations témoins
 
-![](../assets/do-not-localize/book.png)[Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target="_blank"}.
+[En savoir plus](../send/delivery-analysis.md)
