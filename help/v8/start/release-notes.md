@@ -6,16 +6,33 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 814f7c81aa4f154fdf289effc82b8d02bdd9b4c6
+source-git-commit: 44743e585119e8cd81a8fcc9b4d667c25c0d438e
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 100%
+source-wordcount: '680'
+ht-degree: 79%
 
 ---
 
 # Dernière version{#latest-release}
 
 Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs de la **dernière version de Campaign Classic v8**.
+
+## Version 8.4.5 {#release-8-4-5}
+
+_3 avril 2023_
+
+**Correctifs**
+
+* Correction d’un problème qui entraînait une erreur de contrainte de clé en double si plusieurs workflows d’approbation étaient définis sur le même planning. (NEO-48968)
+* Correction d’un problème de régression introduit par NEO-54474 (8.4.4) qui entraînait la modification de l’attribut de style de la balise body lors du téléchargement d’une image dans le Digital Content Editor (DCE). (NEO-57697)
+* Correction d&#39;une erreur qui entraînait une erreur lors de l&#39;export de données à l&#39;aide d&#39;un connecteur CRM si la table temporaire avait une clé Principale définie sur long au lieu d&#39;uuid. (NEO-54153)
+* Correction d’un problème de régression introduit dans la version 8.4.1 qui pouvait entraîner des erreurs dans l’exportation de packages, FDA via HTTP et le reporting. (NEO-57731)
+* Correction d’un problème de régression introduit dans la version 8.3.8 qui empêchait la mise à jour correcte de l’état de diffusion pour les diffusions avec des identifiants négatifs. (NEO-54675)
+* Correction d&#39;un problème lié aux champs booléens lors de l&#39;import de données à l&#39;aide du connecteur Big Query (NEO-49181).
+
+>[!CAUTION]
+>
+> La mise à niveau de la console cliente est obligatoire. Découvrez comment mettre à niveau votre console cliente sur cette [page](../start/connect.md#upgrade-ac-console).
 
 ## Version 8.4.4 {#release-8-4-4}
 
