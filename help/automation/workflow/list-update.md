@@ -5,7 +5,7 @@ description: Mise à jour de liste
 feature: Workflows, Targeting Activity
 exl-id: abb7f777-0b4a-4bf2-bcb6-32264f340a58
 source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 100%
 

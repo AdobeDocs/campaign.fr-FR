@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
 source-git-commit: d8ceefe1dd56aecb810878d99395ac900f889c2e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 100%
 
@@ -178,7 +178,7 @@ Pour créer une nouvelle diffusion, accédez à l&#39;onglet **[!UICONTROL Campa
 L&#39;envoi du BAT et l&#39;envoi final de la notification s&#39;effectuent de la même manière que pour une diffusion par e-mail. Apprenez-en davantage en consultant la documentation de Campaign Classic v7 :
 
 * Valider une diffusion et envoyer des BAT
-   ![](../assets/do-not-localize/book.png) [En savoir plus sur les étapes clés de validation d&#39;une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target="_blank"}
+   ![](../assets/do-not-localize/book.png) [En savoir plus sur les étapes clés de validation d’une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target="_blank"}
 
 * Confirmer et envoyer la diffusion
    ![](../assets/do-not-localize/book.png) [Découvrez les étapes clés pour envoyer une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr){target="_blank"}.

@@ -45,7 +45,7 @@ De plus, vous devez connaître le protocole et les paramètres SMS. Découvrez c
 
    ![](assets/delivery_step_1.png)
 
-   ![](../assets/do-not-localize/book.png) Pour plus d&#39;informations globales sur la création d&#39;une diffusion, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=fr#sending-messages){target="_blank"}.
+   ’![](../assets/do-not-localize/book.png) Pour plus d’informations générales sur la création d&#39;une diffusion, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=fr#sending-messages){target="_blank"}.
 
 1. Sélectionnez un modèle de diffusion référençant le compte externe approprié pour envoyer les diffusions SMS.
 
@@ -90,7 +90,7 @@ Pour visualiser le rendu du message avec sa personnalisation, cliquez sur **[!UI
 Pour envoyer un bon à tirer, reportez-vous aux sections suivantes de la documentation de Campaign Classic v7 :
 
 * Valider une diffusion et envoyer des BAT
-   ![](../assets/do-not-localize/book.png) [En savoir plus sur les étapes clés de validation d&#39;une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target="_blank"}
+   ![](../assets/do-not-localize/book.png) [En savoir plus sur les étapes clés de validation d’une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target="_blank"}
 * Ajouter des adresses de contrôle
    ![](../assets/do-not-localize/book.png) [En savoir plus sur les adresses de contrôle](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html?lang=fr){target="_blank"}
 
