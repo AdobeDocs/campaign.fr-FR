@@ -6,15 +6,15 @@ role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
 source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '479'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Conception et envoi d&#39;e-mails
+# Concevoir et envoyer des e-mails
 
-Les diffusions e-mail permettent d&#39;envoyer des e-mails personnalisés à la population cible. [En savoir plus](../send/send.md).
+Les diffusions e-mail permettent d’envoyer des e-mails personnalisés à la population cible. [En savoir plus](../send/send.md).
 
 ## Création de votre première diffusion e-mail
 
@@ -68,7 +68,7 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
    * Ajouter une page miroir
 
-      Pour permettre à vos destinataires d&#39;afficher le contenu de votre diffusion dans un navigateur web, ajoutez un lien vers le [page miroir](../send/mirror-page.md) de votre message.
+      Pour permettre à vos destinataires d’accéder au contenu de votre diffusion dans un navigateur web, ajoutez un lien vers la [page miroir](../send/mirror-page.md) de votre message.
 
       Placez le curseur à l&#39;endroit où vous souhaitez insérer ce lien, cliquez sur la dernière icône de la barre d&#39;outils, puis sur **[!UICONTROL Inclure]** et sélectionnez **[!UICONTROL Lien vers la page miroir]**.
    Une fois le contenu prêt, cliquez sur **Enregistrer** : elle s&#39;affiche désormais dans votre liste de diffusions, sous l&#39;onglet **[!UICONTROL Campagnes > Diffusions]**. Votre première diffusion e-mail est prête. Vous devez maintenant définir l&#39;audience, valider la diffusion et l&#39;envoyer.
@@ -78,15 +78,14 @@ Découvrez comment importer un contenu d’e-mail dans ce [cas d’utilisation](
 
 En savoir plus dans les sections suivantes :
 
-* [Concevoir un e-mail dans Campaign
-](../send/email.md)
-* [Créer et utiliser un modèle d&#39;e-mail](../send/create-templates.md)
-* [Sélectionner l&#39;audience de votre e-mail](../audiences/gs-audiences.md)
+* [Concevoir un e-mail dans Campaign](../send/email.md)
+* [Créer et utiliser un modèle d’e-mail](../send/create-templates.md)
+* [Sélectionner l’audience de votre e-mail](../audiences/gs-audiences.md)
 * [Valider une diffusion et envoyer des BAT](../send/preview-and-proof.md)
 
-## Test et validation de vos e-mails
+## Tester et valider vos e-mails
 
-Campaign propose plusieurs méthodes permettant de tester et valider vos e-mails avant de les envoyer à vos audiences. Découvrez comment prévisualiser et tester le contenu de votre email dans [cette page](../send/preview-and-proof.md).
+Campaign propose plusieurs méthodes permettant de tester et valider vos e-mails avant de les envoyer à vos audiences. Découvrez comment prévisualiser et tester le contenu de votre e-mail sur [cette page](../send/preview-and-proof.md).
 
 Vous pouvez ainsi :
 
