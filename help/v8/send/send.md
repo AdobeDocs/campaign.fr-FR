@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
 source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '832'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -69,9 +69,9 @@ Domain Keys Identified Mail (DKIM) est une méthode d’authentification utilis�
 
 Dans Adobe Campaign, la signature de l’authentification des e-mails DKIM est effectuée par le MTA.
 
-En savoir plus sur DKIM dans la section [Guide des bonnes pratiques en matière de délivrabilité des Adobes](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#authentication){target="_blank"}.
+En savoir plus sur DKIM dans le [Guide Adobe des bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#authentication){target="_blank"}.
 
-## Service de retour d&#39;e-mail {#email-feedback-service}
+## Service de commentaires par e-mail {#email-feedback-service}
 
 Grâce à la fonctionnalité Service de retour d’e-mail (EFS), le statut de chaque e-mail est signalé avec précision, car les retours sont capturés directement depuis le MTA.
 
@@ -83,7 +83,7 @@ Lorsque le message est effectivement diffusé aux profils ciblés et que ces inf
 
 Lorsque des messages hard bounce sont signalés depuis le MTA, leur statut de log passe de **[!UICONTROL Pris en compte par le fournisseur d&#39;accès d&#39;accès]** à **[!UICONTROL En échec]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
-Lorsque des messages soft bounce sont signalés depuis le MTA, leur statut de log reste inchangé (**[!UICONTROL Pris en compte par le fournisseur d&#39;accès d&#39;accès]**) : seule le [motif de l’erreur](delivery-failures.md#delivery-failure-reasons) est mis à jour<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Le pourcentage **[!UICONTROL Succès]** reste inchangé. Les messages rebonds par soft sont ensuite relancés tout au long de la diffusion. [période de validité](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#defining-validity-period){target="_blank"}:
+Lorsque des messages soft bounce sont signalés depuis le MTA, leur statut de log reste inchangé (**[!UICONTROL Pris en compte par le fournisseur d&#39;accès d&#39;accès]**) : seule le [motif de l’erreur](delivery-failures.md#delivery-failure-reasons) est mis à jour<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Le pourcentage **[!UICONTROL Succès]** reste inchangé. L’envoi des messages soft bounce fait ensuite l’objet de reprises tout au long de la [période de validité](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#defining-validity-period){target="_blank"} de la diffusion :
 
 * Si une reprise est effectuée avec succès avant la fin de la période de validité, l’état du message passe à **[!UICONTROL Envoyé]** et le pourcentage **[!UICONTROL Succès]** augmente en conséquence.
 
