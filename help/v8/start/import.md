@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '228'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ Créez et exécutez un traitement d&#39;import de données générique pour char
 
 ![](assets/new-import.png)
 
-![](../assets/do-not-localize/book.png) Découvrez comment exécuter des traitements d&#39;imports unitaires pour alimenter votre base de données en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=fr){target="_blank"}.
+![](../assets/do-not-localize/book.png) Découvrez comment exécuter des traitements d’imports unitaires pour alimenter votre base de données en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=fr){target="_blank"}.
 
 ## Collecte de profils via des applications web
 
@@ -46,5 +46,5 @@ Utilisez Campaign pour créer des formulaires web, et collecter et gérer facile
 **Rubriques connexes**
 
 * [Création d&#39;audiences](audiences.md)
-* [Déduplication des profils](../../automation/workflow/deduplication-merge.md)
-* [Enrichissement des données de profil](../../automation/workflow/enrich-data.md)
+* [Dédupliquer les profils](../../automation/workflow/deduplication-merge.md)
+* [Enrichir les données de profil](../../automation/workflow/enrich-data.md)
