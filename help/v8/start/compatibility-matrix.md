@@ -6,9 +6,9 @@ role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 source-git-commit: b4593dd9fbb3e4742183719281ff0e5a78b9e6c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '375'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Les bases de données externes compatibles avec le module Adobe Campaign Federa
 
 ## SDK mobile{#MobileSDK}
 
-Pour envoyer [notifications push](../send/push.md) Avec Campaign, vous pouvez utiliser le SDK Mobile Adobe Experience Platform en configurant l’extension Adobe Campaign dans l’interface utilisateur de collecte de données. Vous pouvez également utiliser les SDK Campaign répertoriés ci-dessous :
+Pour envoyer des [notifications push](../send/push.md) avec Campaign, vous pouvez utiliser le SDK mobile Adobe Experience Platform en configurant l’extension Adobe Campaign dans l’interface utilisateur de collecte de données. Vous pouvez également utiliser les SDK Campaign répertoriés ci-dessous :
 
 * **Android** 12., 9.0, 8.x, 7 avec le SDK Android de Campaign version 1.1.1.
 * **Apple iOS** 9 - 16 avec le SDK iOS de Campaign version 1.0.26, compatible avec les versions 32 et 64 bits. Apple iOS 16 est pris en charge à partir de Campaign v8.4.
