@@ -4,9 +4,9 @@ title: Contrôler les coûts
 description: Découvrez comment contrôler les coûts
 exl-id: 51f3add9-a083-4db1-84a6-3aaaeec0465c
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2479'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Les étapes de mise en oeuvre de la gestion des budgets avec MRM sont les suivan
 
 Pour établir un budget, procédez comme suit :
 
-1. Accédez au **[!UICONTROL Gestion de campagne > Budgets]** dossier de l&#39;explorateur Campaign.
+1. Accédez au dossier **[!UICONTROL Gestion de campagne > Budgets]** de l’explorateur Campaign.
 1. Cliquez sur l’icône **[!UICONTROL Nouveau]**, nommez et enregistrez le budget.
 1. Saisissez le montant initial : indiquez le montant alloué dans le champ correspondant. Les autres montants sont renseignés automatiquement. [En savoir plus](#calculating-amounts).
 1. Définissez la période de validité en indiquant les dates de début et de fin. Ces informations sont purement indicatives.
