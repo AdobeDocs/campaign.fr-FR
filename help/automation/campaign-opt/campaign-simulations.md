@@ -5,9 +5,9 @@ description: Découvrez comment configurer les simulations de campagnes.
 feature: Campaigns
 exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1341'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -197,7 +197,7 @@ L&#39;onglet **[!UICONTROL Calculs]** vous permet de définir des axes de report
 >[!NOTE]
 >
 >Il est recommandé de définir des axes de calculs dans un modèle de simulation plutôt que dans chaque simulation.\
->Les modèles de simulation sont enregistrés dans la variable **[!UICONTROL Ressources > Modèles > Modèles de simulation]** dossier de l&#39;explorateur Campaign.
+>Les modèles de simulation sont enregistrés dans le dossier **[!UICONTROL Ressources > Modèles > Modèles de simulation]** de l’explorateur Campaign.
 
 **Exemple:**
 
