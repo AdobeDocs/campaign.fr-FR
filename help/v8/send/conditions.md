@@ -1,60 +1,60 @@
 ---
 title: Contenu conditionnel
-description: Découvrez comment créer du contenu conditionnel
+description: Découvrez comment créer du contenu conditionnel.
 feature: Personalization
 role: User
 level: Beginner
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '441'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
 
 # Créer du contenu conditionnel{#conditional-content}
 
-Le paramétrage de champs de contenu conditionnel permet d&#39;atteindre un niveau de personnalisation évolué. Des blocs complets de texte et/ou des images sont remplacés lorsqu&#39;une condition particulière est remplie.
+La configuration des champs de contenu conditionnel permet d’atteindre un niveau de personnalisation évolué. Des blocs complets de texte et/ou des images sont remplacés lorsqu’une condition particulière est remplie.
 
 
-## Utilisation de conditions dans un e-mail {#conditions-in-an-email}
+## Utiliser des conditions dans un e-mail {#conditions-in-an-email}
 
-Dans l&#39;exemple ci-dessous, découvrez comment créer un message, personnalisé dynamiquement en fonction de la ville et des centres d&#39;intérêt du destinataire.
+Dans l’exemple ci-dessous, découvrez comment créer de manière dynamique un message personnalisé selon la ville et les centres d’intérêt du ou de la destinataire.
 
-* Modifiez le message en fonction de la ville du destinataire,
-* Personnalisez le contenu de l&#39;offre en fonction des intérêts du destinataire.
+* Modifiez le message en fonction de la ville du ou de la destinataire,
+* Personnalisez le contenu de l’offre selon les centres d’intérêt du ou de la destinataire.
 
-Pour créer un contenu conditionnel en fonction de la valeur d&#39;un champ, respectez les étapes suivantes :
+Pour créer un contenu conditionnel en fonction de la valeur d’un champ, respectez les étapes suivantes :
 
-1. Ouvrez une diffusion existante ou créez une diffusion email.
-1. Dans l&#39;éditeur de contenu d&#39;email, cliquez sur l&#39;icône de personnalisation et sélectionnez **[!UICONTROL Contenu conditionnel > Si]**.
+1. Ouvrez une diffusion existante ou créez une diffusion par e-mail.
+1. Dans l’éditeur de contenu d’e-mail, cliquez sur l’icône de personnalisation et sélectionnez **[!UICONTROL Contenu conditionnel > Si]**.
 
    ![Insérer une condition](assets/condition-insert.png)
 
-   Les éléments de personnalisation sont insérés dans le corps du message : vous devez maintenant les paramétrer.
+   Les éléments de personnalisation sont insérés dans le corps du message : vous devez maintenant les configurer.
 
-1. Renseignez les paramètres du **if** expression.
+1. Renseignez les paramètres de l’expression **Si**.
 
-   * Sélectionnez le premier élément de l&#39;expression, **`<FIELD>`**, puis cliquez sur l’icône de personnalisation pour la remplacer par le champ de test.
+   * Sélectionnez le premier élément de l’expression, **`<FIELD>`**, puis cliquez sur l’icône de personnalisation pour la remplacer par le champ de test.
    * Remplacez **`<VALUE>`** par la valeur du champ pour lequel la condition sera remplie. Cette valeur doit être entre guillemets.
-   * Spécifiez le contenu à insérer lorsque la condition est remplie. Il peut s’agir d’un texte, d’une image, d’un formulaire, d’un lien hypertexte, etc.
+   * Indiquez le contenu à insérer lorsque la condition est remplie. Il peut s’agir d’un texte, d’une image, d’un formulaire, d’un lien hypertexte, etc.
 
-   ![Condition dans un email](assets/condition-in-email.png)
+   ![Condition dans un e-mail](assets/condition-in-email.png)
 
-1. Cliquez sur le bouton **[!UICONTROL Aperçu]** pour visualiser le contenu du message en fonction du destinataire de la diffusion. Sélectionnez un destinataire pour lequel la condition est vraie pour vérifier le contenu. Sélectionnez ensuite un autre destinataire dont la valeur est false et vérifiez à nouveau.
+1. Cliquez sur l’onglet **[!UICONTROL Prévisualisation]** pour visualiser le contenu du message en fonction du ou de la destinataire de la diffusion. Sélectionnez un ou une destinataire pour lequel/laquelle la condition est remplie et vérifiez le contenu. Sélectionnez ensuite un ou une autre destinataire pour lequel/laquelle la condition n’est pas remplie et vérifiez à nouveau.
 
-Vous pouvez ajouter d&#39;autres cas et définir un contenu différent en fonction des valeurs d&#39;un ou plusieurs champs. Utilisez pour cela les options **[!UICONTROL Contenu conditionnel > Sinon]** et **[!UICONTROL Contenu conditionnel > Sinon si]**. Le paramétrage de ces expressions est le même que pour l&#39;expression **if**.
+Vous pouvez ajouter d’autres cas et définir un contenu différent en fonction des valeurs d’un ou plusieurs champs. Utilisez pour cela les options **[!UICONTROL Contenu conditionnel > Sinon]** et **[!UICONTROL Contenu conditionnel > Autrement si]**. La configuration de ces expressions est la même que pour l’expression **si**.
 
 >[!CAUTION]
 >
->Le **%> &lt;%** Les caractères doivent être supprimés après l’ajout de **Else** et **Sinon si** conditions.
+>Les caractères **%> &lt;%** doivent être supprimés après l’ajout des conditions **Sinon** et **Autrement si**.
 
 
-## Cas pratique : créer un email multilingue {#creating-multilingual-email}
+## Cas d’utilisation : créer un e-mail multilingue {#creating-multilingual-email}
 
-Dans l&#39;exemple ci-dessous, découvrez comment créer un email multilingue. Le contenu s&#39;affiche dans une langue ou une autre selon la préférence linguistique du destinataire.
+Découvrez dans l’exemple ci-dessous comment créer un e-mail multilingue. Le contenu s’affiche dans une langue ou une autre, selon la préférence linguistique du ou de la destinataire.
 
-1. Créez un email et sélectionnez la population cible. Dans cet exemple, la condition d’affichage d’une version ou d’une autre sera basée sur la variable **Langue** valeur du profil du destinataire. Ces valeurs sont définies sur **EN**, **FR**, **ES**.
+1. Créez un e-mail et sélectionnez la population cible. Dans cet exemple, la condition d’affichage d’une version ou d’une autre sera basée sur la valeur **Langue** du profil du ou de la destinataire. Ces valeurs sont définies sur **EN**, **FR**, **ES**.
 1. Dans le contenu HTML de l&#39;email, cliquez sur l&#39;onglet **[!UICONTROL Source]** et collez le code suivant :
 
    ```
