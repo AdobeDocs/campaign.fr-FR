@@ -5,9 +5,9 @@ description: Diffusion au fil de l'eau
 feature: Workflows, Channels Activity
 exl-id: e3ad6d92-8d53-4098-90fd-cfed29f2e56e
 source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '374'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -60,8 +60,8 @@ Une diffusion au fil de l’eau crée une diffusion et des logs de diffusion UNI
 
 ## Tutoriel vidéo {#continuous-delivery-video}
 
-Cette vidéo montre comment configurer une diffusion au fil de l’eau avec une requête incrémentale.
+Cette vidéo montre comment configurer une diffusion en continu avec une requête incrémentale.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
-D’autres vidéos pratiques sur Campaign sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
+D’autres vidéos pratiques sur Campaign sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=fr){target="_blank"}.
