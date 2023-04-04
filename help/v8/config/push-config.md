@@ -7,15 +7,15 @@ role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
 source-git-commit: 4a017eabf1330b04939aa4bd0602c371a0ee3208
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1313'
+ht-degree: 100%
 
 ---
 
-# Intégration des SDK Campaign avec votre application {#integrate-campaign-sdk}
+# Intégrer les SDK Campaign à votre application {#integrate-campaign-sdk}
 
-Vous pouvez utiliser les SDK Campaign pour iOS et Android afin de faciliter l’intégration de votre application mobile dans la plateforme Adobe Campaign.
+Vous pouvez utiliser les SDK Campaign pour iOS et Android afin de faciliter l’intégration de votre application mobile dans la plateforme Adobe Campaign.
 
 Les versions d’Android et iOS prises en charge, ainsi que les versions compatibles des SDK Campaign pour Campaign v8, sont répertoriées dans la [matrice de compatibilité](../start/compatibility-matrix.md#MobileSDK) 
 
@@ -24,7 +24,7 @@ En tant qu&#39;administrateur de Campaign, vous pouvez télécharger les SDK Cam
 
 >[!NOTE]
 >
->Vous pouvez également utiliser le SDK Mobile Adobe Experience Platform en configurant l’extension Adobe Campaign dans l’interface utilisateur de collecte de données. [En savoir plus dans la documentation destinée aux développeurs](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+>Vous pouvez également utiliser le SDK mobile Adobe Experience Platform en configurant l’extension Adobe Campaign dans l’interface utilisateur de collecte de données. [En savoir plus dans la documentation pour les développeurs](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
 ## Déclaration des paramètres d&#39;intégration {#declaring-integration-settings}
 
