@@ -5,9 +5,9 @@ description: Mise à jour de liste
 feature: Workflows, Targeting Activity
 exl-id: abb7f777-0b4a-4bf2-bcb6-32264f340a58
 source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '542'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -69,8 +69,8 @@ Identifie la population à sauvegarder dans le groupe.
 
 ## Tutoriel vidéo {#video}
 
-Cette vidéo montre comment créer une liste de destinataires à partir de l‘Explorateur.
+Cette vidéo montre comment créer une liste de destinataires à partir de l’Explorateur.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-D’autres vidéos pratiques sur Campaign sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
+D’autres vidéos pratiques sur Campaign sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=fr){target="_blank"}.
