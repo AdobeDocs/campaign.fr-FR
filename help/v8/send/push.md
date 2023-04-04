@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
 source-git-commit: d8ceefe1dd56aecb810878d99395ac900f889c2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1249'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -25,15 +25,15 @@ Pour envoyer des notifications push dans Adobe Campaign, vous devez effectuer l
 
 ![](../assets/do-not-localize/book.png) Découvrez comment prendre en main les applications mobiles dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=fr).{target="_blank"}
 
-## Intégration du SDK {#push-sdk}
+## Intégrer le SDK {#push-sdk}
 
-Vous pouvez utiliser le SDK Mobile Adobe Experience Platform en configurant l’extension Adobe Campaign dans l’interface utilisateur de collecte de données. Le SDK Adobe Experience Platform Mobile permet d’optimiser les solutions et services Experience Cloud de l’Adobe dans vos applications mobiles. La configuration des SDK est gérée via l’interface utilisateur de la collecte de données pour une configuration flexible et des intégrations extensibles basées sur des règles. [En savoir plus dans la documentation Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+Vous pouvez utiliser le SDK mobile Adobe Experience Platform en configurant l’extension Adobe Campaign dans l’interface utilisateur de collecte de données. Le SDK mobile Adobe Experience Platform permet d’optimiser les solutions et services Experience Cloud d’Adobe dans vos applications mobiles. La configuration des SDK s’effectue dans l’interface utilisateur de collecte de données, qui offre des options de configuration flexibles et des intégrations extensibles basées sur des règles. [En savoir plus dans la documentation Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
 Découvrez comment configurer et installer le SDK mobile Adobe Experience Platform [dans cette vidéo](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/configure-push-using-aep-mobile-sdk.html?lang=fr){target="_blank"}.
 
-Vous pouvez également intégrer le SDK Campaign pour faciliter l&#39;intégration de votre application mobile dans la plateforme Adobe Campaign. Les versions de SDK compatibles sont répertoriées dans la [Matrice de compatibilité Campaign](../start/compatibility-matrix.md#MobileSDK).
+Vous pouvez également intégrer le SDK Campaign pour faciliter l’intégration de votre application mobile dans la plateforme Adobe Campaign. Les versions de SDK compatibles sont répertoriées dans la [Matrice de compatibilité Campaign](../start/compatibility-matrix.md#MobileSDK).
 
-Découvrez comment intégrer les SDK Campaign Android et iOS à votre application dans [cette page](../config/push-config.md)
+Découvrez comment intégrer les SDK Android et iOS de Campaign à votre application sur [cette page](../config/push-config.md).
 
 ## Configuration des paramètres de votre application dans Campaign{#push-config}
 
@@ -55,9 +55,9 @@ Pour créer une nouvelle diffusion, accédez à l&#39;onglet **[!UICONTROL Campa
 
 ![](assets/delivery_step_1.png)
 
-![](../assets/do-not-localize/book.png) Pour plus d&#39;informations globales sur la création d&#39;une diffusion, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=fr#sending-messages){target="_blank"}
+’![](../assets/do-not-localize/book.png) Pour plus d’informations générales sur la création d&#39;une diffusion, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=fr#sending-messages){target="_blank"}
 
-### Envoi de notifications sur iOS {#send-notifications-on-ios}
+### Envoyer des notifications sur iOS {#send-notifications-on-ios}
 
 >[!NOTE]
 >
@@ -180,14 +180,14 @@ L&#39;envoi du BAT et l&#39;envoi final de la notification s&#39;effectuent de l
 * Valider une diffusion et envoyer des BAT
    ![](../assets/do-not-localize/book.png) [En savoir plus sur les étapes clés de validation d&#39;une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target="_blank"}
 
-* Confirmation et envoi de la diffusion
-   ![](../assets/do-not-localize/book.png) [Découvrez les étapes clés pour envoyer une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr){target="_blank"}
+* Confirmer et envoyer la diffusion
+   ![](../assets/do-not-localize/book.png) [Découvrez les étapes clés pour envoyer une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr){target="_blank"}.
 
 Après l&#39;envoi des messages, vous pouvez surveiller et suivre vos diffusions. Apprenez-en davantage en consultant la documentation de Campaign Classic v7 :
 
 * Quarantaines des notifications push
 
-   ![](../assets/do-not-localize/book.png) [En savoir plus sur les quarantaines des notifications push](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=fr#push-notification-quarantines){target="_blank"}
+   ![](../assets/do-not-localize/book.png) [En savoir plus sur les quarantaines des notifications push](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=fr#push-notification-quarantines){target="_blank"}.
 
 * Résolution des problèmes
-   ![](../assets/do-not-localize/book.png) [Découvrez comment résoudre les problèmes liés aux notifications push](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=fr){target="_blank"}
+   ![](../assets/do-not-localize/book.png) [Découvrez comment résoudre les problèmes liés aux notifications push](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=fr){target="_blank"}.
