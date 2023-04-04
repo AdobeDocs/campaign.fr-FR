@@ -5,9 +5,9 @@ description: Documentation Campaign v8
 breadcrumb-title: Présentation de Campaign
 title: Documentation Campaign v8
 source-git-commit: 464898df7a362c137d20ebaf2b96bfef71131ae6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -59,11 +59,11 @@ ht-degree: 96%
       + Personnaliser le contenu {#personalize}
          + [Prise en main de la personnalisation](send/personalize.md)
          + [Données de personnalisation](send/personalization-data.md)
-         + [ajouter un champ de personnalisation,](send/personalization-fields.md)
-         + [Utiliser des blocs de personnalisation](send/personalization-blocks.md)
-         + [Création de conditions](send/conditions.md)
+         + [Ajouter des champs de personnalisation,](send/personalization-fields.md)
+         + [Utiliser les blocs de personnalisation](send/personalization-blocks.md)
+         + [Créer des conditions](send/conditions.md)
       + Valider votre diffusion {#validate}
-         + [Aperçu et BAT](send/preview-and-proof.md)
+         + [Prévisualiser et créer des BAT](send/preview-and-proof.md)
          + [Analyse des diffusions](send/delivery-analysis.md)
 + Gestion des profils et de l’audience {#audience}
    + [Prise en main des profils et des audiences](audiences/gs-audiences.md)
