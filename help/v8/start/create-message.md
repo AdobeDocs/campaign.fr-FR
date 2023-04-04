@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '469'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Une fois votre message créé et son contenu conçu et testé, vous pouvez chois
 
    ![](assets/send-email.png)
 
-   Découvrez comment envoyer des messages dans [cette section](../send/send.md)
+   Découvrez comment envoyer des messages dans [cette section](../send/send.md).
 
 * Envoyer des messages associés à une [campagne marketing](campaigns.md)
 
@@ -56,13 +56,13 @@ Une fois votre message créé et son contenu conçu et testé, vous pouvez chois
 
    Découvrez comment automatiser les diffusions e-mail sur [cette page](../../automation/workflow/delivery.md)
 
-* [Déclencher des messages](../send/transactional.md) à partir d&#39;un événement
+* [Déclencher des messages](../send/transactional.md) à partir d’un événement
 
 * Planifier vos messages
 
    ![](assets/schedule-send.png)
 
-[Cas pratique : découvrez comment planifier et envoyer un e-mail d&#39;anniversaire](../../automation/workflow/send-a-birthday-email.md)
+[Cas pratique : découvrez comment planifier et envoyer un e-mail d’anniversaire](../../automation/workflow/send-a-birthday-email.md)
 
 
 ## Ajouter de la personnalisation{#personalization}
@@ -72,7 +72,7 @@ Les messages diffusés par Adobe Campaign peuvent être personnalisés de diff�
 Vous pouvez ainsi :
 
 * Insérer des champs de personnalisation dynamiques. [En savoir plus](../send/personalization-fields.md)
-* Insérez des blocs de personnalisation prédéfinis. [En savoir plus](../send/personalization-blocks.md)
+* Insérer des blocs de personnalisation prédéfinis. [En savoir plus](../send/personalization-blocks.md)
 * Créer du contenu conditionnel. [En savoir plus](../send/conditions.md)
 
 ## Envoi de messages transactionnels{#gs-transac-messages}
