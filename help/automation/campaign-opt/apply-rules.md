@@ -5,9 +5,9 @@ description: Découvrez comment appliquer des règles de typologie
 feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
 source-git-commit: a8568e0c1e9af11b533b7d435691dc12cc0a2485
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1015'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Pour ce faire, procédez comme suit :
 
 1. Créez une typologie de campagne.
 
-   Les typologies sont accessibles à partir du **[!UICONTROL Administration > Campaign Management > Gestion des typologies]** > **[!UICONTROL Typologies]** dossier de l&#39;explorateur Campaign.
+   Accédez aux typologies dans le dossier **[!UICONTROL Administration > Gestion de campagne > Gestion des typologies]** > **[!UICONTROL Typologies]** de l’explorateur Campaign.
 
 1. Accédez à l&#39;onglet **[!UICONTROL Règles]**, cliquez sur le bouton **[!UICONTROL Ajouter]** et sélectionnez les règles à appliquer avec cette typologie.
 
@@ -29,7 +29,7 @@ Pour ce faire, procédez comme suit :
 
 1. Enregistrez la typologie : elle est alors ajoutée à la liste des typologies existantes.
 1. Ouvrez la diffusion à laquelle vous souhaitez appliquer les règles.
-1. Accédez aux propriétés de la diffusion et ouvrez le **[!UICONTROL Typologie]** .
+1. Accédez aux propriétés de la diffusion et ouvrez l’onglet **[!UICONTROL Typologie]**.
 1. Sélectionnez la typologie dans la liste déroulante.
 
    ![](assets/campaign_opt_pressure_sample_1_7.png)
@@ -56,9 +56,9 @@ Utilisez alors le requêteur pour définir les conditions de filtrage. Dans l&#3
 
 ## Réglage de la fréquence des calculs {#adjust-calculation-frequency}
 
-Les arbitrages sont automatiquement ré-exécutés chaque nuit, via le workflow de nettoyage de la base. Vous pouvez toutefois conserver les valeurs calculées au-delà de ce délai.
+Les arbitrages sont automatiquement ré-exécutés chaque nuit, via le workflow de nettoyage de la base de données. Vous pouvez toutefois conserver les valeurs calculées au-delà de ce délai.
 
-En effet, certains calculs utilisent des valeurs qui ne changent pas tous les jours. Il serait donc inutile de recalculer les données chaque jour et de surcharger la base de données pour rien. Par exemple, si un processus enrichit la base de données marketing avec des scores de propension des clients et des informations d’achat sur une base hebdomadaire, les données basées sur ces valeurs n’ont pas besoin d’être recalculées tous les jours.
+En effet, certains calculs utilisent des valeurs qui ne sont pas modifiées tous les jours. Il est donc inutile de recalculer les données chaque jour et de surcharger inutilement la base de données. Par exemple, si un processus enrichit la base de données marketing avec des informations relatives aux affinités et aux achats des clients et des clientes sur une base hebdomadaire, les données basées sur ces valeurs n’ont pas besoin d’être recalculées tous les jours.
 
 Pour cela, le champ **[!UICONTROL Fréquence]** de l&#39;onglet **[!UICONTROL Général]** permet de définir la durée maximale pendant laquelle les calculs sont conservés. Par défaut, la valeur **0s** indique que les calculs restent valides jusqu&#39;à la prochaine exécution du ré-arbitrage quotidien.
 
@@ -84,7 +84,7 @@ Dans un fonctionnement standard, les règles sont appliquées dans l&#39;ordre s
 1. Règles de pression.
 1. Règles de capacité.
 1. Règles de contrôle, si elles s&#39;appliquent à la fin du ciblage.
-1. Règles de contrôle, si elles s&#39;appliquent au début de la personnalisation. Si les règles des utilisateurs (filtrage/pression/capacitif) ont expiré et doivent être recalculées, elles sont appliquées au cours de cette étape.
+1. Règles de contrôle, si elles s’appliquent au début de la personnalisation. Si les règles utilisateurs (filtrage/pression/capacitif) sont à recalculer du fait de leur expiration, elles sont réappliquées à cette étape.
 1. Règles de contrôle, si elles s&#39;appliquent à la fin de la personnalisation.
 
 >[!NOTE]
@@ -93,11 +93,11 @@ Dans un fonctionnement standard, les règles sont appliquées dans l&#39;ordre s
 
 Vous pouvez adapter l&#39;ordre d&#39;exécution des règles de même type à partir du champ correspondant dans l&#39;onglet **[!UICONTROL Général]** de la règle. En effet, lorsque plusieurs règles sont exécutées lors de la même phase de traitement des messages, vous pouvez choisir dans quel ordre elles doivent être appliquées à partir du champ **[!UICONTROL Ordre d&#39;exécution]**.
 
-Par exemple, une règle de pression avec un ordre d&#39;exécution de 20 est exécutée avant une règle de pression avec un ordre d&#39;exécution de 30.
+Par exemple, une règle de pression dont l’ordre d’exécution est positionné à 20 sera exécutée avant une règle de pression dont l’ordre d’exécution est positionné à 30.
 
 ### Règles de contrôle {#control-rules}
 
-Pour **[!UICONTROL Contrôle]** règles, vous pouvez décider à quel moment de la durée de vie de la diffusion la règle est appliquée : avant ou après le ciblage, au début de la personnalisation, à la fin de l&#39;analyse. Sélectionnez la valeur à appliquer dans la liste déroulante du **[!UICONTROL Phase]** , dans le champ **[!UICONTROL Général]** de la règle de typologie.
+Pour les règles de **[!UICONTROL contrôle]**, vous pouvez choisir l’étape du cycle de vie des diffusions à laquelle la règle sera appliquée : avant ou après le ciblage, au début de la personnalisation ou à la fin de l’analyse. Sélectionnez la valeur à appliquer dans la liste déroulante du champ **[!UICONTROL Phase]**, sous l’onglet **[!UICONTROL Général]** de la règle de typologie.
 
 ![](assets/campaign_opt_define_control_phase.png)
 
