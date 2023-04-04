@@ -1,48 +1,48 @@
 ---
 title: Sources de données de personnalisation
-description: Découvrez les sources pouvant être utilisées pour la personnalisation
+description: Découvrez les sources pouvant être utilisées pour la personnalisation.
 feature: Personalization
 role: User
 level: Beginner
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '652'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
 
 # Sources de données de personnalisation{#personalization-data}
 
-Les données de personnalisation peuvent être récupérées à partir de différents types de sources : Source de données de la base de données Campaign, Source de données de fichier externe ou Source de données de base de données externe.
+Les données de personnalisation peuvent être récupérées à partir de différents types de sources : source de données de la base de données Campaign, de fichier externe ou de base de données externe.
 
 ## Source de données de la base de données Campaign
 
-Dans le cas le plus courant, les données de personnalisation sont stockées dans la base de données. Par exemple, les &quot;champs de personnalisation des destinataires&quot; sont tous les champs définis dans la table des destinataires, les champs standard (généralement : nom, prénom, adresse, ville, date de naissance, etc.) ou des champs personnalisés.
+Dans le cas le plus courant, les données de personnalisation sont stockées dans la base de données. Par exemple, les « champs de personnalisation des destinataires » sont tous les champs définis dans le tableau des destinataires, les champs standard (généralement ceux-ci : nom, prénom, adresse, ville, date de naissance, etc.) ou les champs personnalisés.
 
-![Champs de personnalisation de campagne dans un email](assets/perso-campaign-datasource.png)
+![Champs de personnalisation Campaign d’un e-mail](assets/perso-campaign-datasource.png)
 
 
 ## Source de données de fichier externe
 
-Vous pouvez utiliser un fichier externe contenant tous les champs définis en colonnes. Ce fichier est utilisé comme entrée lors de la définition d’une diffusion de message. Vous pouvez choisir d&#39;insérer ou non ces profils dans la base de données.
+Vous pouvez utiliser un fichier externe contenant tous les champs définis dans les colonnes. Ce fichier est utilisé comme entrée lors de la définition de la diffusion d’un message. Vous pouvez choisir d’insérer ou non ces profils dans la base de données.
 
-Pour sélectionner le fichier à utiliser comme source de données, accédez au lien Pour de la fenêtre de création du message et sélectionnez le **Défini dans un fichier externe** . Une fois le fichier chargé, accédez aux données du destinataire dans les options de personnalisation, à partir du **Champs du fichier** entrée .
+Pour sélectionner le fichier à utiliser comme source de données, accédez au lien « Vers » dans la fenêtre de création du message et sélectionnez l’option **Défini dans un fichier externe**. Une fois le fichier téléchargé, accédez aux données du ou de la destinataire dans les options de personnalisation, à partir de l’entrée **Champs du fichier**.
 
 ![Données de personnalisation d’un fichier](assets/perso-from-file.png)
 
 
 ## Source de données FDA
 
-Les données de personnalisation peuvent être extraites d’une table externe via [Federated Data Access](../connect/fda.md).  Si vous souhaitez effectuer une personnalisation dans vos diffusions à l&#39;aide des données de la base externe, collectez les données à utiliser dans un workflow afin de les rendre disponibles dans une table temporaire.
+Les données de personnalisation peuvent être récupérées à partir d’un tableau externe via [Federated Data Access](../connect/fda.md).  Si vous souhaitez effectuer une personnalisation dans vos diffusions en utilisant les données de la base externe, collectez les données à utiliser dans un workflow afin de les rendre disponibles dans un tableau temporaire.
 
-Pour ce faire, ajoutez une **Requête** dans le workflow de ciblage et utilisez la méthode **Ajouter des données...** pour sélectionner la base externe. Le processus détaillé est disponible dans la section [cette section](../../automation/workflow/query.md#adding-data).
+Pour ce faire, ajoutez une activité **Requête** dans le workflow de ciblage et utilisez le lien **Ajouter des données...** pour sélectionner la base externe. Consultez le processus complet dans [cette section](../../automation/workflow/query.md#adding-data).
 
-Utilisez ensuite les données de la table temporaire pour personnaliser votre diffusion. Une fois l&#39;activité de requête paramétrée, accédez aux données externes des options de personnalisation depuis la **Extension Target** entrée .
+Utilisez ensuite les données du tableau temporaire pour personnaliser votre diffusion. Une fois l’activité de requête paramétrée, accédez aux données externes dans les options de personnalisation, à partir de l’entrée **Extension de la cible**.
 
 ![Données de personnalisation d’une base de données externe](assets/perso-external-db.png)
 
-Lors de l&#39;utilisation de données externes accessibles dans FDA, il est recommandé de pré-traiter la personnalisation des messages dans un workflow dédié à l&#39;aide de la fonction **Préparer les données de personnalisation avec un workflow** comme décrit ci-dessous.
+Lors de l’utilisation de données externes accessibles dans FDA, il est recommandé de pré-traiter la personnalisation des messages dans un workflow dédié à l’aide de l’option **Préparer les données de personnalisation avec un workflow**, comme indiqué ci-dessous.
 
 ### Optimiser la personnalisation {#optimize-personalization}
 
@@ -55,8 +55,8 @@ Si vous cochez cette option, les performances de l’analyse des diffusions peuv
 Pour utiliser cette option, procédez comme suit :
 
 1. Créez une campagne.
-1. Dans le **[!UICONTROL Ciblage et workflows]** de votre campagne, ajoutez un **Requête** à votre workflow.
-1. Ajoutez un **[!UICONTROL Diffusion Email]** dans le workflow et ouvrez-le.
+1. Sous l’onglet **[!UICONTROL Ciblages et workflows]** de votre campagne, ajoutez une activité **Requête** à votre workflow.
+1. Ajoutez ue activité **[!UICONTROL Diffusion E-mail]** dans le workflow et ouvrez-la.
 1. Accédez à l&#39;onglet **[!UICONTROL Analyse]** des **[!UICONTROL Propriétés de la diffusion]** et sélectionnez l&#39;option **[!UICONTROL Préparer les données de personnalisation avec un workflow]**.
 1. Configurez la diffusion et démarrez le workflow afin de lancer l&#39;analyse.
 
@@ -68,9 +68,9 @@ Une fois l&#39;analyse terminée, accédez aux **[!UICONTROL Propriétés]** du 
 
 ## Données de personnalisation dans un workflow
 
-Lorsqu&#39;une diffusion est créée dans le cadre d&#39;un workflow, vous pouvez utiliser les données de la table de workflow temporaire. Les données stockées dans la table de travail temporaire du workflow sont disponibles pour les tâches de personnalisation. Vous pouvez utiliser les données dans les champs de personnalisation.
+Lorsqu’une diffusion est créée dans le cadre d’un workflow, vous pouvez utiliser les données du tableau de workflow temporaire. Les données stockées dans la table de travail temporaire du workflow sont disponibles pour les tâches de personnalisation. Vous pouvez utiliser les données dans les champs de personnalisation.
 
-Ces données sont regroupées dans la variable **[!UICONTROL Extension Target]** . Pour plus d’informations, consultez [cette section](../../automation/workflow/use-workflow-data.md#target-data).
+Ces données sont rassemblées dans le menu **[!UICONTROL Extension de la cible]**. Pour plus d’informations, consultez [cette section](../../automation/workflow/use-workflow-data.md#target-data).
 
 
 
