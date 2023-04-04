@@ -1,20 +1,20 @@
 ---
-title: ajouter un champ de personnalisation,
-description: Découvrez comment insérer des données de personnalisation dans le contenu de votre message
+title: ajouter des champs de personnalisation,
+description: Découvrez comment insérer des données de personnalisation dans le contenu de votre message.
 feature: Personalization
 role: User
 level: Beginner
 source-git-commit: badcbb83c4bd0cf509c156557f5ea6f7cf7ae771
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '334'
+ht-degree: 100%
 
 ---
 
 
-# ajouter un champ de personnalisation,{#personalization-fields}
+# ajouter des champs de personnalisation,{#personalization-fields}
 
-Utilisez des champs de personnalisation pour diffuser du contenu personnalisé en un à un, selon les règles que vous avez définies pour chaque destinataire.
+Utilisez des champs de personnalisation pour diffuser du contenu personnalisé adapté à chaque destinataire, selon les règles que vous avez définies pour cette personne.
 
 Un champ de personnalisation est une référence de champ de données unique utilisée lors de la personnalisation d’une diffusion pour un destinataire spécifique. La valeur réelle des données est insérée lors de la phase d’analyse de la diffusion.
 
@@ -22,9 +22,9 @@ Un champ de personnalisation est une référence de champ de données unique uti
 
 ## Syntaxe
 
-Une balise de personnalisation utilise toujours la syntaxe suivante : `<%=table.field%>`.
+Une balise de personnalisation utilise toujours la syntaxe suivante : `<%=table.field%>`.
 
-Par exemple, pour insérer le nom du destinataire, stocké dans la table des destinataires, le champ de personnalisation utilise la variable `<%= recipient.lastName %>` syntaxe.
+Par exemple, pour insérer le nom du ou de la destinataire, stocké dans le tableau des destinataires, le champ de personnalisation utilise la syntaxe `<%= recipient.lastName %>`.
 
 >[!CAUTION]
 >
@@ -32,24 +32,24 @@ Par exemple, pour insérer le nom du destinataire, stocké dans la table des des
 
 ## Insérer un champ de personnalisation {#insert-a-personalization-field}
 
-Pour insérer des champs de personnalisation, cliquez sur l&#39;icône déroulante accessible à partir de n&#39;importe quel champ d&#39;en-tête, d&#39;objet ou de corps de message.
+Pour insérer des champs de personnalisation, cliquez sur l’icône déroulante accessible à partir d’un champ d’en-tête, d’objet ou de corps principal du message.
 
 ![insérer un champ de personnalisation](assets/perso-field-insert.png)
 
-Les champs de personnalisation sont insérés et peuvent être interprétés par Adobe Campaign : lors de la préparation du message, les champs sont remplacés par leur valeur pour un destinataire donné.
+Les champs de personnalisation sont insérés et peuvent être interprétés par Adobe Campaign : lors de la préparation du message, les champs sont remplacés par la valeur associée à un ou une destinataire donné(e).
 
-![champs de personnalisation d&#39;un email](assets/perso-fields-in-msg.png)
+![champs de personnalisation d’un e-mail](assets/perso-fields-in-msg.png)
 
-Ce remplacement peut ensuite être testé dans la variable **[!UICONTROL Aperçu]** .
+Vous pouvez ensuite tester le remplacement des champs dans l’onglet **[!UICONTROL Prévisualisation]**.
 
 <!--Learn more about message preview in [this page]().-->
 
-## Cas pratique : personnaliser l’objet de l’email {#personalization-fields-uc}
+## Cas d’utilisation : personnaliser l’objet d’un e-mail {#personalization-fields-uc}
 
-Dans le cas d&#39;utilisation ci-dessous, apprenez à personnaliser un objet et un corps d&#39;email avec des données de destinataire :
+Dans le cas d’utilisation ci-dessous, apprenez à personnaliser l’objet et le corps d’un e-mail avec les données du destinataire :
 
-1. Créez une nouvelle diffusion ou ouvrez une diffusion existante de email.
-1. Accédez au **[!UICONTROL Objet]** lien pour éditer l&#39;objet du message.
+1. Créez une nouvelle diffusion ou ouvrez une diffusion existante d’e-mail.
+1. Accédez au lien **[!UICONTROL Objet]** pour modifier l’objet du message.
 1. Saisissez le texte &quot;**Offre spéciale pour**&quot; et utilisez le dernier bouton de la barre d&#39;outils pour insérer un champ de personnalisation. Choisissez **[!UICONTROL Destinataire>Prénom]**.
 1. Répétez l&#39;opération pour insérer le nom du destinataire. Insérez des espaces entre chacun de ces champs de personnalisation.
 1. Cliquez sur **[!UICONTROL OK]** pour valider.
@@ -62,7 +62,7 @@ Dans le cas d&#39;utilisation ci-dessous, apprenez à personnaliser un objet et 
 
 ## Tutoriel vidéo {#personalization-field-video}
 
-Découvrez comment ajouter un champ de personnalisation à l’objet et au contenu d’une diffusion email dans la vidéo suivante.
+Dans la vidéo suivante, découvrez comment ajouter un champ de personnalisation à la ligne d’objet et au contenu d’une diffusion e-mail.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
