@@ -1,34 +1,34 @@
 ---
 title: Analyse des diffusions
-description: Découvrez comment préparer et vérifier votre diffusion
+description: Découvrez comment préparer et vérifier la diffusion.
 feature: Personalization
 role: User
 level: Beginner
 source-git-commit: 51b333492ad50849751208c7549dc00f66140b82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '750'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
 # Analyse des diffusions {#analyze-delivery}
 
-L’analyse est l’étape de préparation de la diffusion. Il peut être démarré une fois que votre audience cible est définie et que le contenu du message est prêt et testé. Lors de l&#39;analyse de la diffusion, la population cible est calculée et le contenu de la diffusion est préparé. Une fois la diffusion terminée, elle est prête à être envoyée.
+L’analyse est l’étape de préparation de la diffusion. Lancez l’analyse une fois que l’audience cible est définie et que le contenu du message est rédigé et testé. L’analyse effectue le calcul de la population cible et prépare le contenu de la diffusion. Une fois la diffusion terminée, elle est prête à être envoyée.
 
-## Lancer l&#39;analyse {#start-the-analysis}
+## Lancer l’analyse {#start-the-analysis}
 
-Pour préparer la diffusion, vérifiez que le contenu et la cible de la diffusion ont été définis et procédez comme suit :
+Pour préparer la diffusion, vérifiez que le contenu et la cible de la diffusion ont été définis, puis effectuez les étapes suivantes :
 
-1. Dans les fenêtres de diffusion, cliquez sur le bouton **[!UICONTROL Envoyer]** bouton .
-1. Sélectionner **[!UICONTROL Diffuser dès que possible]** pour effectuer le calcul de l’audience et la préparation du contenu pour un envoi immédiat. Vous pouvez également reporter la diffusion à une date ultérieure ou obtenir une estimation de la population sans préparer le contenu.
+1. Dans la fenêtre de la diffusion, cliquez sur le bouton **[!UICONTROL Envoyer]**.
+1. Sélectionnez **[!UICONTROL Diffuser dès que possible]** pour effectuer le calcul de l’audience et la préparation du contenu en vue d’un envoi immédiat. Vous pouvez également reporter la diffusion à une date ultérieure ou obtenir une estimation de la population sans préparer le contenu.
 
    ![](assets/delivery-analysis-start.png)
 
 1. Cliquez sur **[!UICONTROL Analyser]** pour lancer l’analyse manuellement. La barre de progression indique la progression de l’analyse.
 
-   Un ensemble de règles de vérification est appliqué lors de l&#39;analyse de la diffusion. Ces règles sont définies dans une **typologie**, qui est sélectionné dans la variable **[!UICONTROL Typologie]** dans les propriétés de la diffusion. En savoir plus sur les typologies dans [cette section](../../automation/campaign-opt/campaign-typologies.md).
+   Un jeu de règles de vérification est appliqué lors de l’analyse de la diffusion. Ces règles sont définies dans une **typologie**, accessible sous l’onglet **[!UICONTROL Typologie]** des propriétés de la diffusion. En savoir plus sur les typologies dans [cette section](../../automation/campaign-opt/campaign-typologies.md).
 
-   Par défaut, pour les emails, l&#39;analyse porte sur les points suivants :
+   Par défaut pour les e-mails, l’analyse exécute les tâches suivantes :
 
    * validation de l&#39;objet,
    * validation des URL et des images,
@@ -39,7 +39,7 @@ Pour préparer la diffusion, vérifiez que le contenu et la cible de la diffusio
    * vérification de la planification des vagues.
 
 
-1. Vous pouvez arrêter l’analyse à tout moment en cliquant sur le bouton **[!UICONTROL Arrêter]** bouton .
+1. Vous pouvez arrêter à tout moment l’analyse par le biais du bouton **[!UICONTROL Arrêter]**.
 
    Aucun message n’est envoyé pendant la phase de préparation. Vous pouvez donc démarrer ou annuler l’analyse sans risque.
 
@@ -49,9 +49,9 @@ Pour préparer la diffusion, vérifiez que le contenu et la cible de la diffusio
 
    Une fois l’analyse terminée, la section supérieure de la fenêtre indique si la préparation de la diffusion est terminée ou si des erreurs se sont produites. Toutes les étapes de validation, les avertissements et les erreurs sont répertoriés. Les icônes colorées indiquent le type de message :
 
-   * Une icône bleue indique un message informatif.
-   * Une icône jaune indique une erreur de traitement non critique.
-   * Une icône rouge indique une erreur critique qui empêche l&#39;envoi de la diffusion.
+   * L’icône bleue indique un message informatif.
+   * L’icône jaune indique une erreur de traitement non critique.
+   * L’icône rouge indique une erreur critique qui empêche l’envoi de la diffusion.
 
    ![](assets/delivery-analysis-results.png){width="800" align="left"}
 
@@ -59,14 +59,14 @@ Pour préparer la diffusion, vérifiez que le contenu et la cible de la diffusio
 
    >[!NOTE]
    >
-   >Cliquez sur le bouton **[!UICONTROL Modifier la cible principale de la diffusion]** lien si le nombre de messages à envoyer ne correspond pas à vos attentes. Cette option permet de modifier la définition de la population cible et de relancer l&#39;analyse.
+   >Cliquez sur le lien **[!UICONTROL Modifier la cible principale de la diffusion]** si le nombre de messages à envoyer ne correspond pas à vos attentes. Cette option permet de modifier la définition de la population cible et de relancer l’analyse.
 
-1. Après avoir vérifié le résultat de l’analyse, cliquez sur **[!UICONTROL Confirmer l&#39;envoi]** pour envoyer le message à la cible principale.
+1. Vérifiez le résultat de l’analyse, puis cliquez sur **[!UICONTROL Confirmer la diffusion]** pour envoyer le message à la cible principale.
 
 
 ## Paramètres d’analyse {#analysis-settings}
 
-Accédez au **[!UICONTROL Analyse]** onglet des propriétés de la diffusion pour définir les paramètres de préparation du message lors de la phase d’analyse.
+Accédez à l’onglet **[!UICONTROL Analyse]** des propriétés de la diffusion pour définir les paramètres de préparation du message lors de la phase d’analyse.
 
 ![](assets/delivery-properties-analysis-tab.png){width="800" align="left"}
 
@@ -76,7 +76,7 @@ Cet onglet permet d&#39;accéder aux options suivantes :
 
 * **[!UICONTROL Mode de validation]** : ce champ permet de définir une diffusion manuelle ou automatique, une fois l’analyse terminée.
 
-   Si des avertissements sont générés lors de l&#39;analyse (par exemple, si certains caractères sont accentués dans l&#39;objet de la diffusion, etc.), vous pouvez paramétrer la diffusion pour définir si elle doit encore être exécutée ou non. Par défaut, l’utilisateur ou l’utilisatrice doit confirmer l’envoi des messages à la fin de la phase d’analyse : il s’agit d’une validation **manuelle**.
+   Si l’analyse génère des avertissements, (par exemple, si certains caractères sont accentués dans l’objet de la diffusion, etc.), vous pouvez choisir de continuer son exécution ou non dans les paramètres de la diffusion. Par défaut, l’utilisateur ou l’utilisatrice doit confirmer l’envoi des messages à la fin de la phase d’analyse : il s’agit d’une validation **manuelle**.
 
    Vous pouvez choisir un autre mode de validation dans la liste déroulante du champ correspondant.
 
@@ -87,7 +87,7 @@ Cet onglet permet d&#39;accéder aux options suivantes :
    * **[!UICONTROL Automatique]** : les envois démarrent automatiquement à la fin de la phase d’analyse, quel qu’en soit le résultat.
 
 * **[!UICONTROL Lancer le traitement dans un processus détaché]** : cette option permet de lancer l’analyse de la diffusion dans un processus à part. Par défaut, la fonction d’analyse utilise le processus du serveur applicatif d’Adobe Campaign (nlserver web). En cochant cette option, vous êtes assuré que l’analyse sera menée à son terme, même en cas de défaillance du serveur applicatif.
-* **[!UICONTROL Enregistrer les requêtes de ciblage et de personnalisation dans le journal]** : cette option permet d&#39;ajouter les logs des requêtes SQL dans le journal de la diffusion lors de la phase d&#39;analyse.
-* **[!UICONTROL Ignorer les scripts de personnalisation lors de l’envoi]** : cette option permet de ne pas interpréter les directives JavaScript présentes dans le contenu du HTML. Ils s’affichent tels quels dans le contenu diffusé. Ces directives sont introduites avec la méthode `<%=` balise .
+* **[!UICONTROL Enregistrer les requêtes SQL générées pendant l’analyse dans le journal]** : cette option permet d&#39;ajouter les logs des requêtes SQL dans le journal de la diffusion lors de la phase d’analyse.
+* **[!UICONTROL Ignorer les scripts de personnalisation lors de l’envoi]** : cette option permet de ne pas interpréter les directives JavaScript présentes dans le contenu HTML. Elles seront affichées telles quelles dans le contenu diffusé. Ces directives sont introduites par la balise `<%=`.
 
 
