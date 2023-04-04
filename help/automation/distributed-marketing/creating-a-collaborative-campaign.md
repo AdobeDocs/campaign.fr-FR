@@ -5,9 +5,9 @@ description: Découvrez comment créer une campagne collaborative
 feature: Distributed Marketing
 exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '985'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Lʼentité centrale crée les opérations collaboratives à partir des modèles 
 
 ## Création d’une opération collaborative {#creating-a-collaborative-campaign}
 
-Pour paramétrer une opération collaborative, cliquez sur le bouton **[!UICONTROL Gestion de campagne > Campagnes]** , puis le dossier **[!UICONTROL Nouveau]** icône .
+Pour créer une campagne collaborative, sélectionnez le dossier **[!UICONTROL Gestion de campagne > Campagnes]**, puis cliquez sur l’icône **[!UICONTROL Nouveau]**.
 
 >[!NOTE]
 >
