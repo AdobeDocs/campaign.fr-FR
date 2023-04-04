@@ -6,9 +6,9 @@ role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 source-git-commit: cfe559b83a7db36ab8d9223d04d348f3afd74730
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '613'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -132,7 +132,7 @@ La gestion des accès joue un rôle important dans le renforcement de la sécuri
 * Créez suffisamment de groupes de sécurité.
 * Vérifiez que chaque opérateur dispose des droits d&#39;accès adéquats.
 
-En savoir plus sur les autorisations dans [dans cette section](../start/gs-permissions.md).
+En savoir plus sur les autorisations [dans cette section](../start/gs-permissions.md).
 
 ## Instructions de codage
 
