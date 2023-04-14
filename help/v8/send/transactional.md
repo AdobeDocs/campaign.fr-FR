@@ -5,7 +5,7 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 2a85ffc2fe3a839c14a5c844deaa7a09687743eb
 workflow-type: tm+mt
 source-wordcount: '1588'
 ht-degree: 96%
@@ -24,9 +24,9 @@ Les messages transactionnels sont utilisés pour envoyer :
 * une réponse individuelle en temps réel à une action client ;
 * du contenu non promotionnel.
 
-![](../assets/do-not-localize/glass.png) Les paramètres de messagerie transactionnelle sont décrits dans [cette section](../config/transactional-msg-settings.md).
+Les paramètres de messagerie transactionnelle sont décrits dans [cette section](../config/transactional-msg-settings.md).
 
-![](../assets/do-not-localize/glass.png) Découvrez l&#39;architecture de la messagerie transactionnelle dans [cette page](../architecture/architecture.md#transac-msg-archi).
+Découvrez l&#39;architecture de la messagerie transactionnelle dans [cette page](../architecture/architecture.md#transac-msg-archi).
 
 ## Principe de fonctionnement des messages transactionnels {#transactional-messaging-operating-principle}
 
