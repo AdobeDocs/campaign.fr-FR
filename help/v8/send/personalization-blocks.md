@@ -4,13 +4,13 @@ description: Découvrez comment utiliser des blocs de personnalisation intégré
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: badcbb83c4bd0cf509c156557f5ea6f7cf7ae771
+exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
+source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 100%
 
 ---
-
 
 # Utiliser les blocs de personnalisation{#personalization-blocks}
 
@@ -45,11 +45,11 @@ Les blocs de personnalisation intégrés sont les suivants :
 * **[!UICONTROL Lien vers la page miroir]** : insère un lien vers la [page miroir](mirror-page.md). Le format par défaut est : « Si vous ne parvenez pas à voir correctement ce message, cliquez ici »
 * **[!UICONTROL URL de page miroir]** : insère l’URL de page miroir qui permet aux concepteurs et conceptrices de diffusion de vérifier le lien.
 * **[!UICONTROL URL d’acceptation d’une offre en mode unitaire]** : insère une URL permettant de définir une offre comme étant **[!UICONTROL Acceptée]**. (Ce bloc est disponible si le module Interaction est activé).
-* **[!UICONTROL Confirmation de l’inscription]** : insère un lien permettant de confirmer l’inscription.
-* **[!UICONTROL Lien d’inscription]** : insère un lien d’inscription. Ce lien est défini dans les paramètres de l’instance. Le contenu par défaut est le suivant : « Pour vous inscrire, cliquez ici. ».
-* **[!UICONTROL Lien d’inscription (avec parrain)]** : insère un lien d’inscription permettant d’identifier le visiteur ou la visiteuse et la diffusion. Ce lien est défini dans les paramètres de l’instance.
-* **[!UICONTROL URL de la page d’inscription]** : insère une URL d’inscription
-* **[!UICONTROL Style des e-mails de contenu]** et **[!UICONTROL Style de notification]** : permettent de générer un code qui formate un e-mail avec les styles HTML par défaut.
+* **[!UICONTROL Confirmation de votre inscription]** : insère un lien permettant de confirmer l’abonnement.
+* **[!UICONTROL Lien d’inscription]** : insère un lien d’abonnement. Ce lien est défini dans les paramètres de l’instance. Le contenu par défaut est le suivant : « Pour vous inscrire, cliquez ici. ».
+* **[!UICONTROL Lien d’inscription (avec parrain)]** : insère un lien d’abonnement permettant d’identifier le visiteur ou la visiteuse et la diffusion. Ce lien est défini dans les paramètres de l’instance.
+* **[!UICONTROL URL de la page d’inscription]** : insère une URL d’abonnement.
+* **[!UICONTROL Style des e-mails de contenu]** et **[!UICONTROL Style de notification]** : permettent de générer un code qui formate l’e-mail avec les styles HTML par défaut.
 * **[!UICONTROL Lien de désinscription]** : insère un lien permettant de se désabonner de toutes les diffusions (liste bloquée). Le contenu associé par défaut est : « Vous recevez ce message car vous avez été en contact avec ***nom de votre organisation*** ou une entité associée. Pour ne plus recevoir de messages de ***nom de votre organisation***, cliquez ici. »
 
 ## Créer des blocs de personnalisation personnalisés {#create-custom-personalization-blocks}
@@ -80,5 +80,3 @@ Une fois enregistré, le nouveau bloc de personnalisation est disponible dans l�
 Dans la vidéo suivante, découvrez comment créer des blocs de contenu dynamiques et apprenez à les utiliser pour personnaliser le contenu de votre diffusion e-mail.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)
-
-

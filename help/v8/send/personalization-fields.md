@@ -4,13 +4,13 @@ description: Découvrez comment insérer des données de personnalisation dans l
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: badcbb83c4bd0cf509c156557f5ea6f7cf7ae771
+exl-id: 14a741dd-794e-4760-bfa3-bafbe993a3f7
+source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 100%
 
 ---
-
 
 # ajouter des champs de personnalisation,{#personalization-fields}
 
@@ -65,4 +65,3 @@ Dans le cas d’utilisation ci-dessous, apprenez à personnaliser l’objet et l
 Dans la vidéo suivante, découvrez comment ajouter un champ de personnalisation à la ligne d’objet et au contenu d’une diffusion e-mail.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
-

@@ -5,10 +5,10 @@ feature: Push
 role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 1bcb1b3d1e6062a8b5c0368725248edfc7e3d1b4
-workflow-type: ht
-source-wordcount: '1937'
-ht-degree: 100%
+source-git-commit: e7c255d30e38c4e17779ef820e8984668ac5d48b
+workflow-type: tm+mt
+source-wordcount: '1860'
+ht-degree: 97%
 
 ---
 
@@ -24,11 +24,12 @@ Pour envoyer des notifications push dans Adobe Campaign, vous devez effectuer l
 
 ## Intégrer le SDK {#push-sdk}
 
-Vous pouvez utiliser le SDK mobile Adobe Experience Platform en configurant l’extension Adobe Campaign dans l’interface utilisateur de collecte de données. Le SDK mobile Adobe Experience Platform permet d’optimiser les solutions et services Experience Cloud d’Adobe dans vos applications mobiles. La configuration des SDK s’effectue dans l’interface utilisateur de collecte de données, qui offre des options de configuration flexibles et des intégrations extensibles basées sur des règles. [En savoir plus dans la documentation Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+Pour envoyer des notifications push avec Adobe Campaign, vous devez configurer l’extension Adobe Campaign dans l’interface utilisateur de collecte de données du SDK Adobe Experience Platform Mobile.
 
-Vous pouvez également intégrer le SDK Campaign pour faciliter l’intégration de votre application mobile dans la plateforme Adobe Campaign. Les versions de SDK compatibles sont répertoriées dans la [Matrice de compatibilité Campaign](../start/compatibility-matrix.md#MobileSDK).
+Le SDK mobile Adobe Experience Platform permet d’optimiser les solutions et services Experience Cloud d’Adobe dans vos applications mobiles. La configuration des SDK s’effectue dans l’interface utilisateur de collecte de données, qui offre des options de configuration flexibles et des intégrations extensibles basées sur des règles.
 
-Découvrez comment intégrer les SDK Android et iOS de Campaign à votre application sur [cette page](../config/push-config.md).
+[En savoir plus dans la documentation Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+
 
 ## Configuration des paramètres de votre application dans Campaign{#push-config}
 
@@ -77,10 +78,7 @@ Pour créer une application pour les appareils iOS, procédez comme suit :
 
    Assurez-vous que la même **[!UICONTROL clé d’intégration]** est définie dans Adobe Campaign et dans le code de l’application via le SDK.
 
-   Si vous utilisez le SDK Campaign, consultez [cette page](../config/push-config.md) pour en savoir plus.
-
-
-   Si vous utilisez le SDK Adobe Experience Platform (collecte de données), consultez [cette page](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"} pour en savoir plus.
+   En savoir plus dans [Documentation destinée aux développeurs](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
 
    >[!NOTE]
@@ -119,9 +117,7 @@ Pour créer une application pour les appareils Android, procédez comme suit :
 
    Assurez-vous que la même **[!UICONTROL clé d’intégration]** est définie dans Adobe Campaign et dans le code de l’application via le SDK.
 
-   Si vous utilisez le SDK Campaign, consultez [cette page](../config/push-config.md) pour en savoir plus.
-
-   Si vous utilisez le SDK Adobe Experience Platform (collecte de données), consultez [cette page](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"} pour en savoir plus.
+   En savoir plus dans [Documentation destinée aux développeurs](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
 
    >[!NOTE]
@@ -219,7 +215,6 @@ Pour envoyer des notifications sur les appareils iOS, procédez comme suit :
       >[!NOTE]
       > 
       >Les sons doivent être inclus dans l’application et définis lors de la création du service.
-
    ![](assets/push_ios_5.png)
 
 1. Dans l’onglet **[!UICONTROL Variables de l’application]**, vos **[!UICONTROL variables d’application]** sont automatiquement ajoutées. Elles permettent de définir le comportement des notifications. Par exemple, vous pouvez configurer l’affichage d’un écran spécifique lorsque l’utilisateur active la notification.

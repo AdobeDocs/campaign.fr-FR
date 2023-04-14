@@ -4,7 +4,8 @@ description: Découvrez comment ajouter et configurer un lien vers la page miroi
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
+exl-id: 7bf3937c-484d-4404-8a9b-de7a10f5455a
+source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 100%
@@ -17,7 +18,7 @@ ht-degree: 100%
 
 La page miroir est une version en ligne de votre e-mail.
 
-La plupart des clients de messagerie affichent les images sans problème. Toutefois, certains paramètres prédéfinis peuvent empêcher le rendu des images, notamment pour des raisons de sécurité. Les utilisateurs et utilisatrices consultent la page miroir d’un e-mail en cas de problème d’affichage des images dans leur boîte de réception ou lorsque ces dernières sont endommagées. Il est également recommandé de fournir une version en ligne pour des raisons d’accessibilité ou pour faciliter le partage sur les réseaux sociaux.
+La plupart des clients de messagerie affichent les images sans problème. Toutefois, certains préréglages peuvent empêcher le rendu des images, notamment pour des raisons de sécurité. Les utilisateurs et utilisatrices consultent la page miroir d’un e-mail en cas de problème d’affichage des images dans leur boîte de réception ou lorsque ces dernières sont endommagées. Il est également recommandé de fournir une version en ligne pour des raisons d’accessibilité ou pour faciliter le partage sur les réseaux sociaux.
 
 La page miroir générée par Adobe Campaign contient toutes les données de personnalisation.
 
@@ -64,4 +65,3 @@ Pour accéder à cette page miroir, procédez comme suit :
    ![](assets/mirror-page-display.png){width="800" align="left"}
 
    La page miroir s’affiche dans un écran dédié, avec les données de personnalisation du ou de la destinataire sélectionné(e).
-

@@ -4,13 +4,13 @@ description: Découvrez les sources pouvant être utilisées pour la personnalis
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+exl-id: 711256e2-ab77-404a-b052-6793a85da193
+source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 100%
 
 ---
-
 
 # Sources de données de personnalisation{#personalization-data}
 
@@ -71,7 +71,3 @@ Une fois l&#39;analyse terminée, accédez aux **[!UICONTROL Propriétés]** du 
 Lorsqu’une diffusion est créée dans le cadre d’un workflow, vous pouvez utiliser les données du tableau de workflow temporaire. Les données stockées dans la table de travail temporaire du workflow sont disponibles pour les tâches de personnalisation. Vous pouvez utiliser les données dans les champs de personnalisation.
 
 Ces données sont rassemblées dans le menu **[!UICONTROL Extension de la cible]**. Pour plus d’informations, consultez [cette section](../../automation/workflow/use-workflow-data.md#target-data).
-
-
-
-
