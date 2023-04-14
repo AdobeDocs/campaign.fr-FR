@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Présentation de Campaign
 title: Documentation Campaign v8
-source-git-commit: c61f03252c7cae72ba0426d6edcb839950267c0a
+source-git-commit: 2d10a8f4349b9e2405847fc6a3db1ed568c60387
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 96%
+source-wordcount: '543'
+ht-degree: 95%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 96%
          + Gestion des événements {#event}
          + [Collecte et traitement des événements](send/event-processing.md)
          + [Présentation de la description des événements](send/event-description.md)
-         + [Envoi de messages](send/delivery-execution.md)
+         + [Envoi et surveillance des messages](send/delivery-execution.md)
       + Échecs, retours et mises en quarantaine{#failures}
          + [Quarantaines](send/quarantines.md)
          + [Diffusions en échec](send/delivery-failures.md)

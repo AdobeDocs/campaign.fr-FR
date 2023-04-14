@@ -5,20 +5,20 @@ feature: Transactional Messaging
 role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: c61f03252c7cae72ba0426d6edcb839950267c0a
+source-git-commit: 2d10a8f4349b9e2405847fc6a3db1ed568c60387
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 74%
+source-wordcount: '636'
+ht-degree: 65%
 
 ---
 
 # Paramètres de messagerie transactionnelle
 
+Les messages transactionnels (Message Center) sont un module de Campaign conçu pour gérer les messages déclenchés. En savoir plus sur les messages transactionnels dans [cette section](../send/transactional.md).
+
+Découvrez l&#39;architecture de la messagerie transactionnelle sur [cette page](../architecture/architecture.md#transac-msg-archi).
+
 ![](../assets/do-not-localize/speech.png) En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour installer et configurer la messagerie transactionnelle de Campaign dans votre environnement.
-
-![](../assets/do-not-localize/glass.png) Les fonctionnalités de messagerie transactionnelle sont décrites dans [cette section](../send/transactional.md).
-
-![](../assets/do-not-localize/glass.png) Découvrez l&#39;architecture de la messagerie transactionnelle sur [cette page](../architecture/architecture.md#transac-msg-archi).
 
 ## Définition des autorisations
 
@@ -26,15 +26,11 @@ Pour créer des utilisateurs pour les instances d’exécution Message Center h�
 
 ## Extensions de schéma
 
-Les extensions de schéma effectuées sur les schémas utilisés par les **workflows techniques de Message Center** sur les instances de pilotage ou d&#39;exécution doivent être dupliquées sur les autres instances utilisées par le module des messages transactionnels d&#39;Adobe Campaign.
-
-![](../assets/do-not-localize/book.png) En savoir plus sur les workflows techniques de Message Center dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/additional-configurations.html?lang=fr#technical-workflows).
+Les extensions de schéma effectuées sur les schémas utilisés par les [workflows techniques de Message Center](#technical-workflows) sur les instances de pilotage ou d’exécution doivent être dupliquées sur les autres instances utilisées par le module des messages transactionnels d’Adobe Campaign.
 
 ## Envoi de notifications push transactionnelles
 
-Couplés au module Canal des applications mobiles, les messages transactionnels permettent d&#39;émettre des messages transactionnels au travers des notifications push sur des applications mobiles.
-
-![](../assets/do-not-localize/book.png) Mobile App Channel est présenté dans la section [cette section](../send/push.md).
+Lorsqu’elle est combinée avec [Module Canal des applications mobiles](../send/push.md), les messages transactionnels vous permettent de transmettre des messages transactionnels par le biais de notifications sur des appareils mobiles.
 
 Pour envoyer des notifications push transactionnelles, vous devez exécuter les configurations suivantes :
 
@@ -46,14 +42,14 @@ Pour envoyer des notifications push transactionnelles, vous devez exécuter les 
 
 1. Répliquez le service **Application mobile** et les applications mobiles associées sur les instances d&#39;exécution.
 
-Afin que Campaign envoie des notifications push transactionnelles, l&#39;événement doit contenir les éléments suivants :
+En outre, l’événement doit contenir les éléments suivants :
 
-* L&#39;identifiant de l&#39;appareil mobile : **registrationId** pour Android et **deviceToken** pour iOS. Cet identifiant représente &quot;l&#39;adresse&quot; à laquelle la notification sera envoyée.
+* L’identifiant de l’appareil mobile : **registrationId** pour Android et **deviceToken** pour iOS. Cet identifiant représente l’&quot;adresse&quot; à laquelle la notification est envoyée.
 * Le lien vers l&#39;application mobile ou la clé d&#39;intégration (**uuid**) permettant de récupérer les informations de connexion spécifiques à l&#39;application.
 * Le canal sur lequel la notification sera envoyée (**wishedChannel**) : 41 pour iOS et 42 pour Android.
-* Les autres données à exploiter pour la personnalisation.
+* Toute autre donnée de personnalisation.
 
-Voici un exemple de traitement d&#39;un événement contenant ces informations :
+Vous trouverez ci-dessous un exemple de configuration d’événement pour envoyer des notifications push transactionnelles :
 
 ```
 <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -76,14 +72,7 @@ Voici un exemple de traitement d&#39;un événement contenant ces informations 
 </SOAP-ENV:Envelope>
 ```
 
-## Surveillance des seuils {#monitor-thresholds}
 
-Vous pouvez paramétrer les seuils d&#39;avertissement (orange) et d&#39;alerte (rouge) des indicateurs qui apparaissent dans la **Qualité de service Message Center** et **Temps traitement Message Center** rapports.
-
-Pour ce faire, procédez comme suit :
-
-1. Ouvrez l’assistant de déploiement dans la **instance d&#39;exécution** et accédez à la **[!UICONTROL Message Center]** page.
-1. Utilisez les flèches pour modifier les seuils.
 
 
 ## Purge des événements {#purge-events}
