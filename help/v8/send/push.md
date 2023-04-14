@@ -219,6 +219,7 @@ Pour envoyer des notifications sur les appareils iOS, procédez comme suit :
       >[!NOTE]
       > 
       >Les sons doivent être inclus dans l’application et définis lors de la création du service.
+
    ![](assets/push_ios_5.png)
 
 1. Dans l’onglet **[!UICONTROL Variables de l’application]**, vos **[!UICONTROL variables d’application]** sont automatiquement ajoutées. Elles permettent de définir le comportement des notifications. Par exemple, vous pouvez configurer l’affichage d’un écran spécifique lorsque l’utilisateur active la notification.
