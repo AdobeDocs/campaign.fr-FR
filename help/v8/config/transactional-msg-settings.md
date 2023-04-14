@@ -5,20 +5,20 @@ feature: Transactional Messaging
 role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: c61f03252c7cae72ba0426d6edcb839950267c0a
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 100%
+source-wordcount: '720'
+ht-degree: 74%
 
 ---
 
 # Paramètres de messagerie transactionnelle
 
-![](../assets/do-not-localize/speech.png)  En tant qu’utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour installer et configurer la messagerie transactionnelle de Campaign dans votre environnement.
+![](../assets/do-not-localize/speech.png) En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour installer et configurer la messagerie transactionnelle de Campaign dans votre environnement.
 
 ![](../assets/do-not-localize/glass.png) Les fonctionnalités de messagerie transactionnelle sont décrites dans [cette section](../send/transactional.md).
 
-![](../assets/do-not-localize/glass.png) Découvrez l&#39;architecture de la messagerie transactionnelle sur [cette page](../architecture/architecture.md).
+![](../assets/do-not-localize/glass.png) Découvrez l&#39;architecture de la messagerie transactionnelle sur [cette page](../architecture/architecture.md#transac-msg-archi).
 
 ## Définition des autorisations
 
@@ -34,7 +34,7 @@ Les extensions de schéma effectuées sur les schémas utilisés par les **workf
 
 Couplés au module Canal des applications mobiles, les messages transactionnels permettent d&#39;émettre des messages transactionnels au travers des notifications push sur des applications mobiles.
 
-![](../assets/do-not-localize/book.png) Le canal des applications mobiles est décrit dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=fr#sending-messages).
+![](../assets/do-not-localize/book.png) Mobile App Channel est présenté dans la section [cette section](../send/push.md).
 
 Pour envoyer des notifications push transactionnelles, vous devez exécuter les configurations suivantes :
 
@@ -75,3 +75,49 @@ Voici un exemple de traitement d&#39;un événement contenant ces informations 
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
+
+## Surveillance des seuils {#monitor-thresholds}
+
+Vous pouvez paramétrer les seuils d&#39;avertissement (orange) et d&#39;alerte (rouge) des indicateurs qui apparaissent dans la **Qualité de service Message Center** et **Temps traitement Message Center** rapports.
+
+Pour ce faire, procédez comme suit :
+
+1. Ouvrez l’assistant de déploiement dans la **instance d&#39;exécution** et accédez à la **[!UICONTROL Message Center]** page.
+1. Utilisez les flèches pour modifier les seuils.
+
+
+## Purge des événements {#purge-events}
+
+Vous pouvez adapter les paramètres de l&#39;assistant de déploiement pour paramétrer la durée pendant laquelle les données seront stockées dans la base de données.
+
+La purge des événements est effectuée automatiquement par la fonction **Nettoyage de la base** workflow technique. Ce workflow purge les événements reçus et stockés sur les instances d&#39;exécution et les événements archivés sur une instance de pilotage.
+
+Pour modifier les paramètres de purge de la variable **Événements** (sur une instance d’exécution) et **Evénements archivés** (sur une instance de pilotage).
+
+
+## Workflows techniques {#technical-workflows}
+
+Vous devez vous assurer que les workflows techniques sur vos instances de pilotage et d&#39;exécution ont été démarrés avant de déployer tout modèle de message transactionnel.
+
+Ces workflows sont ensuite accessibles à partir du dossier **Administration > Production > Message Center.**
+
+### Workflows de l&#39;instance de pilotage {#control-instance-workflows}
+
+Sur l&#39;instance de pilotage, vous devez créer un workflow d&#39;archivage pour chaque **[!UICONTROL Instance d&#39;exécution Message Center]** compte externe . Cliquez sur le bouton **[!UICONTROL Créer le workflow d&#39;archivage]** pour créer et démarrer le processus.
+
+### Workflows de l&#39;instance d&#39;exécution {#execution-instance-workflows}
+
+Sur la ou les instances d&#39;exécution, vous devez démarrer les workflows techniques suivants :
+
+* **[!UICONTROL Traitement des événements batch]** (nom interne : **[!UICONTROL batchEventsProcessing]**) : ce workflow permet de répartir les événements batch dans une file d&#39;attente avant qu&#39;ils ne soient associés à un modèle de message.
+* **[!UICONTROL Traitement des événements temps réel]** (nom interne : **[!UICONTROL rtEventsProcessing]**) : ce workflow permet de répartir les événements temps réel dans une file d&#39;attente avant qu&#39;ils ne soient associés à un modèle de message.
+* **[!UICONTROL Mise à jour du statut des événements]** (nom interne : **[!UICONTROL updateEventsStatus]**) : ce workflow permet d&#39;attribuer un statut à l&#39;événement.
+
+   Les statuts des événements possibles sont les suivants :
+
+   * **[!UICONTROL En attente]** : l&#39;événement se trouve dans la file d&#39;attente. Aucun modèle de message ne lui a encore été associé.
+   * **[!UICONTROL En attente de diffusion]** : l&#39;événement est dans la file d&#39;attente, un modèle de message lui a été associé et il est en cours de traitement par la diffusion.
+   * **[!UICONTROL Envoyé]** : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a été envoyée.
+   * **[!UICONTROL Ignoré par la diffusion]** : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a été ignorée.
+   * **[!UICONTROL Erreur de diffusion]** : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a échoué.
+   * **[!UICONTROL Evénement non pris en charge]** : l&#39;association de l&#39;événement à un modèle de message a échoué. L&#39;événement ne sera pas retraité.
