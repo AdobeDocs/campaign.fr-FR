@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Présentation de Campaign
 title: Documentation Campaign v8
-source-git-commit: 2d10a8f4349b9e2405847fc6a3db1ed568c60387
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 95%
+source-wordcount: '550'
+ht-degree: 94%
 
 ---
 
@@ -166,10 +166,11 @@ ht-degree: 95%
       + [Étapes d&#39;implémentation](start/implement.md)
       + [Personnaliser votre instance](dev/customize.md)
       + [Bonnes pratiques relatives aux modèles de données](dev/datamodel-best-practices.md)
-   + Configuration {#configuration}
+   + Paramètres et configuration {#configuration}
+      + [Paramètres de l’interface utilisateur](config/ui-settings.md)
       + [Paramètres d&#39;e-mail](config/email-settings.md)
       + [Paramètres de messagerie transactionnelle](config/transactional-msg-settings.md)
-      + [Intégration des SDK Campaign avec votre application](config/push-config.md)
+      + [Intégration des SDK Campaign avec votre application - PAGE OBSOLÈTE](config/push-config.md)
       + [Comptes externes](config/external-accounts.md)
 + Ressources de développement {#developer}
    + [Modèle de données Campaign](dev/datamodel.md)
