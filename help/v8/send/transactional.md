@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 2a85ffc2fe3a839c14a5c844deaa7a09687743eb
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 96%
+source-wordcount: '1579'
+ht-degree: 94%
 
 ---
 
@@ -57,10 +57,8 @@ Lors de la [création d&#39;un modèle de message](#create-message-template), vo
 
 Pour créer des types d&#39;événements qui seront traités par Adobe Campaign, procédez comme suit :
 
-1. Positionnez-vous dans l&#39;arborescence au niveau du dossier **[!UICONTROL Administration > Plateforme > Enumérations]**.
-
-1. Sélectionnez **[!UICONTROL Type d&#39;événement]** dans la liste.
-
+1. Accédez au **[!UICONTROL Administration > Plateforme > Enumérations]** dossier de l&#39;explorateur Campaign.
+1. Sélectionnez la **[!UICONTROL Type d’événement]** énumération de la liste.
 1. Cliquez sur **[!UICONTROL Ajouter]** pour créer une valeur d&#39;énumération. Il peut s&#39;agir d&#39;une confirmation de commande, d&#39;un changement de mot de passe, d&#39;un changement de livraison de commande, etc.
 
    ![](assets/messagecenter_eventtype_enum_001.png)
@@ -73,7 +71,8 @@ Pour créer des types d&#39;événements qui seront traités par Adobe Campaign
 
 >[!NOTE]
 >
->Apprenez-en davantage sur les listes d’énumération dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=fr){target="_blank"}.
+>En savoir plus sur les énumérations dans [cette page](../../v8/config/ui-settings.md#enumerations).
+
 
 ## Définition d’un modèle de message transactionnel {#create-message-template}
 
