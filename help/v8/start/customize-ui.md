@@ -5,10 +5,10 @@ feature: Application Settings
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: a11d3895-00f1-43d0-b0f7-330fce9fd56b
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 100%
+source-wordcount: '207'
+ht-degree: 96%
 
 ---
 
@@ -37,8 +37,7 @@ Pour chaque énumération, les valeurs sont affichées dans une liste déroulant
 
 Pour les énumérations **ouvertes**, l&#39;utilisateur peut également saisir les premiers caractères de la valeur et les valeurs possibles s&#39;affichent.
 
-Découvrez comment accéder à vos énumérations et la manière de les configurer dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=fr){target="_blank"}.
-
+En savoir plus sur les énumérations dans [cette page](../../v8/config/ui-settings.md#enumerations).
 
 ## Unités par défaut {#default-units}
 
