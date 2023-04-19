@@ -3,10 +3,10 @@ title: Rapports de diffusion intégrés à Adobe Campaign
 description: Rapports de diffusion intégrés à Adobe Campaign
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 100%
+source-wordcount: '1161'
+ht-degree: 99%
 
 ---
 
@@ -83,7 +83,7 @@ Ce tableau de valeurs présente la répartition, par domaine Internet, des envoi
 >
 >Les noms de domaine qui s’affichent dans ce rapport sont définis dans l’énumération utilisée au niveau des cubes. Pour modifier, ajouter ou supprimer des domaines par défaut, modifiez l’énumération **[!UICONTROL Domaines]**, et modifiez les valeurs et les alias. La catégorie **[!UICONTROL Autres]** regroupe les noms de domaine qui n’appartiennent à aucune valeur de l’énumération.
 >
->Découvrez comment accéder à vos énumérations et la manière de les configurer dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=fr){target="_blank"}.
+>Découvrez comment accéder à et configurer vos énumérations dans [cette page](../config/ui-settings.md).
 
 
 **[!UICONTROL 4. Flux de clics générés]**
