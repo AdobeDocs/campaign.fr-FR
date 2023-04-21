@@ -4,10 +4,10 @@ title: Dépréciation de la console cliente 32 bits
 description: Dépréciation de la console cliente 32 bits
 hide: true
 hidefromtoc: true
-source-git-commit: dd3490f43016cb7f6e0ccc5c171d78b8ee3ca234
+source-git-commit: 87e8ef65a2fea2f0d019babc69ed8a8a74017aa6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '359'
+ht-degree: 1%
 
 ---
 
@@ -53,11 +53,11 @@ Assurez-vous que votre processeur prend en charge l’installation d’un systè
 
 **WINDOWS 10 ET WINDOWS 8.1**
 
-1. Cliquez sur le bouton Démarrer , puis sélectionnez **Paramètres** > **Système** > **A propos**.
-1. À droite, sous **Spécifications de l’appareil**, voir **Type de système**.
+1. Cliquez sur le bouton **Début** , puis sélectionnez **Paramètres** > **Système** > **A propos**.
+1. Sous **Spécifications de l’appareil**, voir **Type de système**.
 
 **WINDOWS 7**
-1. Sélectionnez la **Début** bouton, clic droit **Ordinateur**, puis sélectionnez **Propriétés**.
+1. Sélectionnez la **Début** bouton, clic droit **Ordinateur** et sélectionnez **Propriétés**.
 1. Sous **Système**, voir le type de système .
 
 Pour plus d’informations, voir [Windows 32 et 64 bits : Questions fréquentes](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d).
