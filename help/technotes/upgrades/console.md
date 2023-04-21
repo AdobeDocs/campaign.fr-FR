@@ -4,20 +4,16 @@ title: Dépréciation de la console cliente 32 bits
 description: Dépréciation de la console cliente 32 bits
 hide: true
 hidefromtoc: true
-source-git-commit: dcb12339d891c61f308cf7b7e518784f3ba1ff31
+source-git-commit: 52fd89d9b8b19e096173e1660982382215dad5dc
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
 
 # Fin de la prise en charge sur les systèmes d’exploitation 32 bits | Adobe Campaign v8 {#console-eol}
 
-<!--
-The 32-bit version of Campaign v8 Client Console will be deprecated in 8.5 release. Starting 8.6, the Client Console will only be available in 64-bits.
--->
-
-À compter de la version 8.5, Campaign v8 ne prendra plus en charge les systèmes d’exploitation 32 bits, y compris les mises à jour de produits et de sécurité. Adobe recommande vivement de conserver vos mises à jour de sécurité à jour.
+La version 32 bits de la console cliente sera abandonnée dans la version 8.5. À compter de la version 8.6, Campaign v8 ne prendra plus en charge les systèmes d’exploitation 32 bits, y compris les mises à jour de produits et de sécurité. Adobe recommande vivement de conserver vos mises à jour de sécurité à jour.
 
 ## Fin de la prise en charge
 
