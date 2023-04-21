@@ -4,10 +4,10 @@ title: Dépréciation de la console cliente 32 bits
 description: Dépréciation de la console cliente 32 bits
 hide: true
 hidefromtoc: true
-source-git-commit: 52fd89d9b8b19e096173e1660982382215dad5dc
+source-git-commit: dd3490f43016cb7f6e0ccc5c171d78b8ee3ca234
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,13 +39,15 @@ Oui. À compter de la version 8.6, la console cliente Campaign v8 ne sera plus d
 
 +++Quelles versions de Campaign v8 ne prendront plus en charge les systèmes d’exploitation 32 bits ?
 
-À compter de la version 8.5, toutes les versions de Campaign v8 ne prendront plus en charge les systèmes d’exploitation 32 bits.
+À compter de la version 8.6, toutes les versions de Campaign v8 ne prendront plus en charge les systèmes d’exploitation 32 bits.
 
 +++
 
 +++Comment effectuer une mise à niveau de Windows (32 bits) vers le système d’exploitation Windows (64 bits) ?
 
 Assurez-vous que votre processeur prend en charge l’installation d’un système d’exploitation 64 bits. La mise à niveau de la version 32 bits vers la version 64 bits de Windows nécessite de reformater votre disque dur, d’installer la version 64 bits de Windows, puis de réinstaller tout ce qui se trouvait sur votre appareil. Pour plus d’informations, voir [Windows 32 et 64 bits : Questions fréquentes](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d).
+
++++
 
 +++ Comment vérifier si je suis sur un ordinateur 32 bits ou 64 bits ?
 
