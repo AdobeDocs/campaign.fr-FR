@@ -5,10 +5,10 @@ feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: e7c255d30e38c4e17779ef820e8984668ac5d48b
+source-git-commit: dcb12339d891c61f308cf7b7e518784f3ba1ff31
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 92%
+source-wordcount: '385'
+ht-degree: 81%
 
 ---
 
@@ -25,6 +25,10 @@ Lorsque des versions spécifiques de ces systèmes et outils tiers arrivent en f
 ## Console cliente{#ClientConsoleoperatingsystems}
 
 Les systèmes d’exploitation et le navigateur ci-après sont nécessaires pour utiliser la console cliente Campaign. [En savoir plus](connect.md).
+
+>[!NOTE]
+>
+>La version 32 bits de la console cliente sera abandonnée dans la version 8.5. À compter de la version 8.6, la console cliente sera uniquement disponible en 64 bits. Pour plus d&#39;informations sur la mise à niveau de votre système d&#39;exploitation, reportez-vous à cette section [technote](https://experienceleague.corp.adobe.com/docs/campaign/technotes-ac/tn-new/console.html).
 
 ### Systèmes d’exploitation{#op-systems}
 
