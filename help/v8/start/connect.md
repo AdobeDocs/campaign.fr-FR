@@ -5,7 +5,7 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 445e62c290466003886f2dc49386d0c1edb80eeb
+source-git-commit: 7f27dbdd0ff53cd7437f956ccfef3d792020893b
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 100%
@@ -83,7 +83,7 @@ Pour vous connecter à une instance, procédez comme suit :
 
 1. Cliquez sur **[!UICONTROL Ok]**.
 
-Vous pouvez ensuite vous connecter à Campaign à l&#39;aide de [votre Adobe ID](#connect-ims).
+Vous pouvez ensuite vous connecter à Campaign à l&#39;aide de votre Adobe ID.
 
 ![](assets/adobeID.png)
 
