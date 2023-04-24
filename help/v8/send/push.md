@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
 source-git-commit: e7c255d30e38c4e17779ef820e8984668ac5d48b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1860'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Pour envoyer des notifications push dans Adobe Campaign, vous devez effectuer l
 
 ## Intégrer le SDK {#push-sdk}
 
-Pour envoyer des notifications push avec Adobe Campaign, vous devez configurer l’extension Adobe Campaign dans l’interface utilisateur de collecte de données du SDK Adobe Experience Platform Mobile.
+Pour envoyer des notifications push avec Adobe Campaign, vous devez configurer l’extension Adobe Campaign dans l’interface utilisateur de collecte de données du SDK mobile Adobe Experience Platform.
 
 Le SDK mobile Adobe Experience Platform permet d’optimiser les solutions et services Experience Cloud d’Adobe dans vos applications mobiles. La configuration des SDK s’effectue dans l’interface utilisateur de collecte de données, qui offre des options de configuration flexibles et des intégrations extensibles basées sur des règles.
 
@@ -78,7 +78,7 @@ Pour créer une application pour les appareils iOS, procédez comme suit :
 
    Assurez-vous que la même **[!UICONTROL clé d’intégration]** est définie dans Adobe Campaign et dans le code de l’application via le SDK.
 
-   En savoir plus dans [Documentation destinée aux développeurs](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   Pour en savoir plus, consultez la [documentation pour les développeurs et développeuses](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}.
 
 
    >[!NOTE]
@@ -117,7 +117,7 @@ Pour créer une application pour les appareils Android, procédez comme suit :
 
    Assurez-vous que la même **[!UICONTROL clé d’intégration]** est définie dans Adobe Campaign et dans le code de l’application via le SDK.
 
-   En savoir plus dans [Documentation destinée aux développeurs](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   Pour en savoir plus, consultez la [documentation pour les développeurs et développeuses](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}.
 
 
    >[!NOTE]
