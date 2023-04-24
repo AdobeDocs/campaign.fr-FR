@@ -1,6 +1,6 @@
 ---
-title: Présentation de la description des événements
-description: Découvrez comment les événements de message transactionnel sont gérés dans Adobe Campaign Classic à l’aide des méthodes SOAP
+title: Comprendre la description des événements
+description: Découvrez comment les événements de message transactionnel sont gérés dans Adobe Campaign Classic à l’aide des méthodes SOAP.
 feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
@@ -8,15 +8,15 @@ exl-id: 2f679d1c-4eb6-4b3c-bdc5-02d3dea6b7d3
 source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
 workflow-type: tm+mt
 source-wordcount: '754'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Présentation de la description des événements {#about-event-desc}
+# Comprendre la description des événements {#about-event-desc}
 
 ## Modèle de données de message transactionnel {#about-mc-datamodel}
 
-La messagerie transactionnelle repose sur le modèle de données d’Adobe Campaign et utilise deux tables supplémentaires distinctes. Ces tables, **NmsRtEvent** et **NmsBatchEvent**, contiennent les mêmes champs et permettent de gérer d’une part les événements temps réel et d’autre part les événements batch.
+La messagerie transactionnelle repose sur le modèle de données d’Adobe Campaign et utilise deux tables supplémentaires distinctes. Ces tables, **NmsRtEvent** et **NmsBatchEvent**, contiennent les mêmes champs et permettent de gérer les événements en temps réel d’une part et les événements batch d’autre part.
 
 ## Méthodes SOAP {#soap-methods}
 

@@ -1,6 +1,6 @@
 ---
-title: Envoi et surveillance des messages transactionnels
-description: Découvrez comment envoyer et surveiller des messages transactionnels
+title: Envoyer et surveiller les messages transactionnels
+description: Découvrez comment envoyer et surveiller les messages transactionnels.
 feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
@@ -8,25 +8,25 @@ exl-id: 084607f6-47d8-40c0-89ba-bfbb88fc2e53
 source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
 workflow-type: tm+mt
 source-wordcount: '862'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
-# Envoi et surveillance des messages transactionnels {#delivery-execution}
+# Envoyer et surveiller les messages transactionnels {#delivery-execution}
 
-## Envoi de messages{#send-transactional-msg}
+## Envoyer des messages{#send-transactional-msg}
 
-Une fois l&#39;enrichissement terminé et qu&#39;un modèle de diffusion a été associé à l&#39;événement, la diffusion est envoyée depuis l&#39;instance d&#39;exécution.
+Une fois que l’enrichissement est terminé et qu’un modèle de diffusion a été associé à l’événement, la diffusion est envoyée depuis l’instance d’exécution.
 
 >[!NOTE]
 >
->Les messages transactionnels sont prioritaires sur toute autre diffusion.
+>Les messages transactionnels sont prioritaires sur toutes les autres diffusions.
 
 Toutes les diffusions sont regroupées dans le dossier **[!UICONTROL Administration > Exploitation > Message Center > Défaut > Diffusions]**.
 
-Par défaut, elles sont classées dans un sous-dossier correspondant au mois d&#39;envoi. Cela peut être modifié dans les propriétés du modèle de message.
+Par défaut, elles sont classées dans un sous-dossier correspondant au mois d&#39;envoi. Vous pouvez modifier cela dans les propriétés du modèle de message.
 
-## Surveillance des messages {#monitor-transactional-msg}
+## Surveiller les messages {#monitor-transactional-msg}
 
 Pour surveiller vos messages transactionnels, vérifiez les [logs de diffusion](send.md).
 
@@ -49,7 +49,7 @@ Ces rapports Message Center sont accessibles à partir de l&#39;onglet **[!UICO
 
 ### Historique des événements de Message Center {#history-events}
 
-Le **[!UICONTROL Historique des événements Message Center]** Ce rapport présente une vue d&#39;ensemble de l&#39;activité du module Message Center, c&#39;est-à-dire le nombre d&#39;événements traités et envoyés sous forme de messages transactionnels.
+Le rapport **[!UICONTROL Historique des événements de Message Center]** présente une vue d’ensemble de l’activité du module Message Center, c’est-à-dire le nombre d’événements traités et envoyés sous forme de messages transactionnels.
 
 Lors de l&#39;ouverture du rapport, les informations affichées par défaut correspondent au taux de messages transactionnels envoyés avec succès. Pour visualiser davantage de niveaux, vous pouvez déplier ou replier les différents noeuds et positionner le pointeur de la souris pour mettre en surbrillance le niveau voulu.
 
@@ -58,55 +58,55 @@ Pour chaque période de temps, vous pouvez visualiser les données propres à ch
 
 ### Temps de traitement Message Center {#processing-time}
 
-Le **[!UICONTROL Temps traitement Message Center]** affiche les principaux indicateurs relatifs à la file d’attente temps réel. Ce rapport est également accessible à partir du **[!UICONTROL Surveillance]** sur l’instance de pilotage.
+Le rapport **[!UICONTROL Temps de traitement Message Center]** affiche les principaux indicateurs relatifs à la file d’attente en temps réel. Ce rapport est également accessible à partir de l’onglet **[!UICONTROL Surveillance]** de l’instance de pilotage.
 
 ![](assets/mc-processing-time-report.png)
 
-Vous pouvez choisir d&#39;afficher les statistiques globales ou relatives à une instance d&#39;exécution particulière. Vous pouvez également filtrer les données par canal et sur une période spécifique.
+Vous pouvez choisir d’afficher les statistiques globales ou relatives à une instance d’exécution particulière. Vous pouvez également filtrer les données par canal et sur une période spécifique.
 
 Les indicateurs affichés dans la section **[!UICONTROL Indicateurs sur la période]** sont calculés sur la période sélectionnée :
 
-* **[!UICONTROL Temps moyen dans la file (s)]** : temps moyen passé dans Message Center pour les événements traités avec succès. Seul le temps de traitement est pris en compte.
-* **[!UICONTROL Temps moyen d&#39;envoi des messages (s)]** : temps moyen passé dans Message Center pour les événements traités avec succès. Seul le temps d&#39;envoi par les mta est pris en compte.
-* **[!UICONTROL Temps moyen de traitement (s)]** : temps moyen passé dans Message Center pour les événements traités avec succès. Ce calcul prend en compte le temps de traitement et le temps d&#39;envoi par les mta.
-* **[!UICONTROL Maximum des événements en file]** : nombre maximum d&#39;événements présents dans la file Message Center à un même moment.
-* **[!UICONTROL Minimum des événements en file]** : nombre minimum d&#39;événements présents dans la file Message Center à un même moment.
-* **[!UICONTROL Moyenne des événements en file]** : nombre moyen d&#39;événements présents dans la file Message Center à un même moment.
+* **[!UICONTROL Temps moyen dans la file]** : temps moyen passé dans Message Center pour les événements traités avec succès. Seul le temps de traitement est pris en compte.
+* **[!UICONTROL Temps moyen d’envoi des messages (s)]** : temps moyen passé dans Message Center pour les événements traités avec succès. Seul le temps d’envoi par le MTA est pris en compte.
+* **[!UICONTROL Temps moyen de traitement]** : temps moyen passé dans Message Center pour les événements traités avec succès. Ce calcul prend en compte le temps de traitement et le temps d’envoi par le MTA.
+* **[!UICONTROL Nombre maximum d’événements en file d’attente]** : nombre maximum d’événements présents dans la file d’attente Message Center à un moment donné.
+* **[!UICONTROL Nombre minimum d’événements en file d’attente]** : nombre minimum d’événements présents dans la file d’attente Message Center à un même moment.
+* **[!UICONTROL Nombre moyen d’événements en file d’attente]** : nombre moyen d’événements présents dans la file d’attente Message Center à un moment donné.
 
 >[!NOTE]
 >
->Les seuils d&#39;avertissement (orange) et d&#39;alerte (rouge) des indicateurs sont paramétrables dans l&#39;assistant de déploiement d&#39;Adobe Campaign. Voir [Seuils de suivi](#thresholds).
+>Les seuils d’avertissement (orange) et d’alerte (rouge) des indicateurs sont paramétrables dans l’assistant de déploiement d’Adobe Campaign. Voir [Seuils de suivi](#thresholds).
 
 
 
-### Qualité de service Message Center {#service-level}
+### Niveau de service Message Center {#service-level}
 
-Le **[!UICONTROL Qualité de service Message Center]** affiche les statistiques de diffusion relatives aux messages transactionnels ainsi que la répartition des erreurs. Vous pouvez cliquer sur un type d&#39;erreur pour en afficher les détails.
+Le rapport **[!UICONTROL Niveau de service Message Center]** affiche les statistiques de diffusion relatives aux messages transactionnels, ainsi que la répartition des erreurs. Vous pouvez cliquer sur un type d’erreur pour en afficher les détails.
 
-Ce rapport est également accessible à partir du **[!UICONTROL Surveillance]** sur l’instance de pilotage.
+Ce rapport destiné aux administrateurs et administratrices techniques est également accessible à partir de l’onglet **[!UICONTROL Surveillance]** de l’instance de pilotage.
 
-Vous pouvez choisir d&#39;afficher les statistiques globales ou relatives à une instance d&#39;exécution particulière. Vous pouvez également filtrer les données par canal et sur une période spécifique.
+Vous pouvez choisir d’afficher les statistiques globales ou relatives à une instance d’exécution particulière. Vous pouvez également filtrer les données par canal et sur une période spécifique.
 
 Les indicateurs affichés dans la section **[!UICONTROL Indicateurs sur la période]** sont calculés sur la période sélectionnée :
 
-* **[!UICONTROL Entrant (débit evt/h)]** : moyenne horaire du nombre d&#39;événements entrés dans la file Message Center.
-* **[!UICONTROL Entrant (volume evt)]** : nombre d&#39;événements entrés dans la file Message Center.
-* **[!UICONTROL Sortant (débit msg/h)]** : moyenne horaire du nombre d&#39;événements sortant avec succès de Message Center (envoyés par une diffusion).
-* **[!UICONTROL Sortant (volume msg)]** : nombre d&#39;événements sortant avec succès de Message Center (envoyés par une diffusion).
-* **[!UICONTROL Temps moyen d&#39;envoi (s)]** : temps moyen passé dans Message Center pour les événements traités avec succès. Ce calcul prend en compte le temps de traitement et le temps d&#39;envoi par les mta.
-* **[!UICONTROL Taux d&#39;erreur]** : nombre d&#39;événements en erreur par rapport au nombre d&#39;événements entrés dans la file Message Center. Les erreurs suivantes sont prises en compte : erreur de routage, événement expiré (événement resté trop longtemps dans la file d&#39;attente), erreur de diffusion, ignoré par la diffusion (quarantaine, etc.).
+* **[!UICONTROL Entrant (débit evt/h)]** : moyenne horaire du nombre d’événements entrés dans la file d’attente Message Center.
+* **[!UICONTROL Entrant (volume evt)]** : nombre d’événements entrés dans la file d’attente Message Center.
+* **[!UICONTROL Sortant (débit msg/h)]** : moyenne horaire du nombre d’événements sortant avec succès de Message Center (envoyés par une diffusion).
+* **[!UICONTROL Sortant (volume msg)]** : nombre d’événements sortant avec succès de Message Center (envoyés par une diffusion).
+* **[!UICONTROL Temps d’envoi moyen]** : temps moyen passé dans Message Center pour les événements traités avec succès. Ce calcul prend en compte le temps de traitement et le temps d’envoi par le MTA.
+* **[!UICONTROL Taux d’erreur]** : nombre d’événements en erreur par rapport au nombre d’événements entrés dans la file d’attente Message Center. Les erreurs suivantes sont prises en compte : erreur de routage, événement ayant expiré (événement resté trop longtemps dans la file d’attente), erreur de diffusion, ignoré par la diffusion (quarantaine, etc.).
 
 >[!NOTE]
 >
->Les seuils d&#39;avertissement (orange) et d&#39;alerte (rouge) des indicateurs sont paramétrables dans l&#39;assistant de déploiement d&#39;Adobe Campaign. Voir [Seuils de suivi](#thresholds).
+>Les seuils d’avertissement (orange) et d’alerte (rouge) des indicateurs sont paramétrables dans l’assistant de déploiement d’Adobe Campaign. Voir [Seuils de suivi](#thresholds).
 
-### Surveillance des seuils {#thresholds}
+### Surveiller les seuils {#thresholds}
 
-Vous pouvez configurer les seuils d’avertissement (orange) et d’alerte (rouge) des indicateurs qui apparaissent dans la variable **Qualité de service Message Center** et **Temps traitement Message Center** rapports.
+Vous pouvez configurer les seuils d’avertissement (orange) et d’alerte (rouge) des indicateurs qui s’affichent dans les rapports **Niveau de service Message Center** et **Temps de traitement Message Center**.
 
 Pour ce faire, procédez comme suit :
 
-1. Ouvrez l’assistant de déploiement dans la **instance d&#39;exécution** et accédez à la **[!UICONTROL Message Center]** page.
+1. Ouvrez l’assistant de déploiement dans l’**instance d’exécution** et accédez à la page **[!UICONTROL Message Center]**.
 1. Utilisez les flèches pour modifier les seuils.
 
    ![](assets/mc-thresholds.png)

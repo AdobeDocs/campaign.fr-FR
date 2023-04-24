@@ -7,7 +7,7 @@ title: Documentation Campaign v8
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
 source-wordcount: '550'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -54,9 +54,9 @@ ht-degree: 94%
          + [Prise en main des messages transactionnels](send/transactional.md)
          + [Créer et publier votre modèle](send/transactional-template.md)
          + Gestion des événements {#event}
-         + [Collecte et traitement des événements](send/event-processing.md)
-         + [Présentation de la description des événements](send/event-description.md)
-         + [Envoi et surveillance des messages](send/delivery-execution.md)
+         + [Collecter et traiter les événements](send/event-processing.md)
+         + [Comprendre la description des événements](send/event-description.md)
+         + [Envoyer et surveiller des messages](send/delivery-execution.md)
       + Échecs, retours et mises en quarantaine{#failures}
          + [Quarantaines](send/quarantines.md)
          + [Diffusions en échec](send/delivery-failures.md)

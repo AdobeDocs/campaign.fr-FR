@@ -1,6 +1,6 @@
 ---
-title: Collecte et traitement des événements
-description: Découvrez comment les messages transactionnels de Campaign collectent et traitent les événements
+title: Collecter et traiter les événements
+description: Découvrez comment les messages transactionnels de Campaign collectent et traitent les événements.
 feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
@@ -8,21 +8,21 @@ exl-id: c1deb0a1-aeba-4813-b674-a6a164b98b02
 source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
 workflow-type: tm+mt
 source-wordcount: '693'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
 # Traitement des événements {#event-processing}
 
-Dans le cadre d’une messagerie transactionnelle, un événement est généré par un système d’information externe et envoyé à Adobe Campaign via le **[!UICONTROL PushEvent]** et **[!UICONTROL PushEvents]** méthodes. Ces méthodes sont décrites dans la section [cette section](event-description.md).
+Dans le contexte des messages transactionnels, un événement est généré par un système d’informations externe et envoyé à Adobe Campaign via les méthodes **[!UICONTROL PushEvent]** et **[!UICONTROL PushEvents]**. Ces méthodes sont décrites dans [cette section](event-description.md).
 
-Cet événement contient des données liées à l’événement, telles que :
+Cet événement contient des données liées à l’événement, telles que :
 
-* its [type](transactional.md#create-event-types): confirmation de commande, création de compte sur un site web, etc.,
-* l&#39;adresse email ou le numéro de téléphone,
-* toute autre information pour enrichir et personnaliser le message transactionnel avant la diffusion : coordonnées du client, langue du message, format de l&#39;email, etc.
+* son [type](transactional.md#create-event-types) : confirmation de commande, création de compte sur un site web, etc. ;
+* l’adresse e-mail ou le numéro de téléphone ;
+* toute autre information visant à enrichir et personnaliser le message transactionnel avant sa diffusion : coordonnées du client ou de la cliente, langue du message, format de l’e-mail, etc.
 
-Exemple de données d&#39;un événement :
+Exemple de données d’événement :
 
 ![](assets/mc-event-request.png)
 
@@ -36,15 +36,15 @@ Pour traiter les événements de message transactionnel, les étapes suivantes s
 
 Une fois toutes les étapes effectuées, chaque destinataire ciblé reçoit un message personnalisé.
 
-## Collecte d’événements {#event-collection}
+## Collecter les événements {#event-collection}
 
 Les événements générés par le système d&#39;information peuvent être collectés selon deux modes :
 
 * Les appels aux méthodes SOAP vous permettent d&#39;effectuer une transmission de type push des événements dans Adobe Campaign : la méthode PushEvent permet d&#39;envoyer un événement à la fois, la méthode PushEvents, plusieurs événements à la fois. [En savoir plus](event-description.md).
 
-* La création d&#39;un workflow permet de récupérer les événements par import de fichier ou via une passerelle SQL, avec la fonctionnalité [Federated Data Access](../connect/fda.md) module .
+* La création d’un workflow permet de récupérer les événements en important les fichiers ou via une passerelle SQL, avec le module [Federated Data Access](../connect/fda.md).
 
-Une fois collectés, les événements sont répartis par les workflows techniques entre les files d’attente temps réel et par lots de la ou des instances d’exécution, en attendant d’être associés à une [modèle de message](transactional-template.md).
+Une fois collectés, les événements sont scindés par workflows techniques entre les files d’attente en temps réel et par lot de la ou des instances d’exécution, tout en attendant d’être associés à un [modèle de message](transactional-template.md).
 
 ![](assets/mc-event-queues.png)
 
@@ -52,9 +52,9 @@ Une fois collectés, les événements sont répartis par les workflows technique
 >
 >Sur les instances d&#39;exécution, les dossiers **[!UICONTROL Événements en temps réel]** ou **[!UICONTROL Événements par lots]** ne doivent pas être définis comme des vues, car cela pourrait entraîner des problèmes de droit d&#39;accès. Pour plus d&#39;informations sur la définition d&#39;un dossier en tant que vue, consultez [cette section](../audiences/folders-and-views.md#turn-a-folder-to-a-view).
 
-## Transfert d’un événement vers un modèle {#event-to-template}
+## Transférer un événement vers un modèle {#event-to-template}
 
-Une fois le modèle de message publié sur la ou les instances d&#39;exécution, deux modèles sont automatiquement générés : l’un à lier à un événement en temps réel, l’autre à lier à un événement batch.
+Une fois le modèle de message publié sur la ou les instances d’exécution, deux modèles sont automatiquement générés : l’un à associer à un événement en temps réel, l’autre à un événement batch.
 
 L&#39;étape de routage consiste à associer un événement au modèle de message approprié, en fonction des éléments suivants :
 
@@ -72,28 +72,28 @@ Par défaut, le routage s&#39;appuie sur les informations suivantes :
 * Le canal à utiliser (email par défaut)
 * Le modèle de diffusion le plus récent, selon la date de publication
 
-## Vérification du statut des événements {#event-statuses}
+## Vérifier le statut des événements {#event-statuses}
 
-Tous les événements traités sont regroupés dans une seule vue, dans la **Historique des événements** ou l’Explorateur. Ils peuvent être classés par type d’événement ou par **status**.
+Tous les événements traités sont regroupés dans une seule vue, dans le dossier **Historique des événements** ou l’explorateur. Ils peuvent être classés par type d’événement ou par **statut**.
 
-Les statuts possibles sont les suivants :
+Les statuts possibles sont les suivants :
 
 * **En attente**
 
-   * Un événement en attente peut être un événement qui vient d’être collecté et qui n’a pas encore été traité. Le **[!UICONTROL Nombre d&#39;erreurs]** affiche la valeur 0. Le modèle d&#39;email n&#39;a pas encore été lié.
-   * Un événement en attente peut également être un événement traité, mais dont la confirmation est erronée. Le **[!UICONTROL Nombre d&#39;erreurs]** affiche une valeur différente de 0. Pour savoir quand cet événement sera traité à nouveau, consultez la section **[!UICONTROL Traitement demandé le]** colonne .
+   * Un événement en attente peut être un événement qui vient d’être collecté et qui n’a pas encore été traité. La colonne **[!UICONTROL Nombre d’erreurs]** affiche la valeur 0. Le modèle d’e-mail n’a pas encore été lié.
+   * Un événement en attente peut également être un événement traité, mais dont la confirmation est erronée. La colonne **[!UICONTROL Nombre d’erreurs]** affiche une valeur différente de 0. Pour savoir quand cet événement sera traité à nouveau, consultez la colonne **[!UICONTROL Traitement demandé le]**.
 
 * **En attente de diffusion**
-L&#39;événement a été traité et le modèle de diffusion est lié. L&#39;email est en attente de diffusion et le processus de diffusion classique est appliqué. Pour plus d&#39;informations, vous pouvez ouvrir la diffusion.
+L’événement a été traité et le modèle de diffusion est associé. L’e-mail est en attente de diffusion et le processus de diffusion classique est appliqué. Pour plus d’informations, vous pouvez ouvrir la diffusion.
 * **Envoyé**, **Ignoré** et **Erreur de diffusion**
 Ces statuts de diffusion sont récupérés à partir du 
-**updateEventsStatus** workflow. Pour plus d&#39;informations, vous pouvez ouvrir la diffusion correspondante.
-* **Événement non couvert**
-La phase de routage des messages transactionnels a échoué. Par exemple, Adobe Campaign n&#39;a pas trouvé l&#39;e-mail qui sert de modèle pour l&#39;événement.
-* **Événement expiré**
-Le nombre maximal de tentatives d’envoi a été atteint. L’événement est considéré comme nul.
+workflow **updateEventsStatus**. Pour plus d’informations, vous pouvez ouvrir la diffusion correspondante.
+* **Événement non pris en charge**
+La phase de routage des messages transactionnels a échoué. Par exemple, Adobe Campaign n’a pas trouvé l’e-mail qui sert de modèle pour l’événement.
+* **Evénement ayant expiré**
+Le nombre maximum de tentatives d’envoi a été atteint. L’événement est considéré comme nul.
 
-## Recyclage des événements {#event-recycling}
+## Recycler les événements {#event-recycling}
 
 Si l&#39;envoi d&#39;un message sur un canal spécifique échoue, Adobe Campaign peut renvoyer le message en utilisant un autre canal. Par exemple, si l&#39;envoi d&#39;un message sur le canal SMS échoue, le message est renvoyé en utilisant le canal email.
 

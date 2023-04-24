@@ -8,7 +8,7 @@ exl-id: 06fdb279-3776-433f-8d27-33d016473dee
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
 source-wordcount: '1579'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 94%
 
 La messagerie transactionnelle (Message Center) est un module de Campaign conçu pour gérer les messages de déclenchement. Ces notifications sont générées à partir d’événements déclenchés depuis des systèmes d’information et peuvent correspondre aux éléments suivants : facture, confirmation de commande, confirmation d&#39;expédition, changement de mot de passe, notification d&#39;indisponibilité du produit, relevé de compte, création de compte web, etc.
 
-![](../assets/do-not-localize/speech.png)  En tant qu’utilisateur Cloud Services géré, [contact Adobe](../start/campaign-faq.md#support){target="_blank"} pour configurer les messages transactionnels Campaign dans votre environnement.
+![](../assets/do-not-localize/speech.png) En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support){target="_blank"} pour configurer la messagerie transactionnelle de Campaign dans votre environnement.
 
 Les messages transactionnels sont utilisés pour envoyer :
 
@@ -26,7 +26,7 @@ Les messages transactionnels sont utilisés pour envoyer :
 
 Les paramètres de messagerie transactionnelle sont décrits dans [cette section](../config/transactional-msg-settings.md).
 
-Découvrez l&#39;architecture de la messagerie transactionnelle dans [cette page](../architecture/architecture.md#transac-msg-archi).
+Découvrez l’architecture de la messagerie transactionnelle dans [cette page](../architecture/architecture.md#transac-msg-archi).
 
 ## Principe de fonctionnement des messages transactionnels {#transactional-messaging-operating-principle}
 
@@ -43,7 +43,7 @@ Les principales étapes de mise en place de ce système sont décrites ci-dessou
 1. [Tester le message](#test-message-template).
 1. [Publier le modèle de message](#publish-message-template).
 
-Une fois que vous avez conçu et publié le modèle de message transactionnel, si un événement correspondant est déclenché, les données pertinentes sont envoyées à Campaign via PushEvent et PushEvents. [Méthodes SOAP](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html?lang=fr){target="_blank"}, et la diffusion est envoyée aux destinataires ciblés.
+Une fois que vous avez conçu et publié le modèle de message transactionnel, si un événement correspondant est déclenché, les données pertinentes sont envoyées à Campaign via les [méthodes SOAP](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html?lang=fr){target="_blank"} PushEvent et PushEvents, puis la diffusion est envoyée aux destinataires ciblés.
 
 ## Création de types d&#39;événements {#create-event-types}
 
