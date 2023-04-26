@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: eed3396584940f99a865eef2358887b6bf5c4936
+source-git-commit: 2aa5dd736b93990317f842bcbe1f87374279f538
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 100%
@@ -74,10 +74,9 @@ Cet espace de travail vous permet d&#39;accéder à l&#39;arborescence de l&#39;
 
 La section de gauche affiche l&#39;arborescence de l&#39;explorateur Campaign et vous permet de parcourir tous les composants et paramètres de votre instance, en fonction de vos autorisations.
 
-La section supérieure affiche la liste des enregistrements dans le dossier actif. Ces listes sont entièrement personnalisables. [En savoir plus](customize-ui.md)
+La section supérieure affiche la liste des enregistrements dans le dossier actif. Ces listes sont entièrement personnalisables. [En savoir plus](../config/ui-settings.md)
 
 La section inférieure affiche les détails de l&#39;enregistrement sélectionné.
-
 
 ## Langues{#languages}
 
@@ -96,7 +95,6 @@ La langue est sélectionnée lors du processus d&#39;installation.
 >La langue ne peut pas être modifiée après la création de l&#39;instance.
 
 Les formats de date et d&#39;heure dépendent de la langue.
-
 
 Les principales différences entre l&#39;anglais américain et l&#39;anglais britannique sont les suivantes :
 

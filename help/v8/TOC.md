@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Présentation de Campaign
 title: Documentation Campaign v8
-source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
+source-git-commit: 2aa5dd736b93990317f842bcbe1f87374279f538
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '547'
 ht-degree: 98%
 
 ---
@@ -31,7 +31,6 @@ ht-degree: 98%
    + [Se connecter à Campaign](start/connect.md)
    + Interface utilisateur de Campaign {#ac-ui}
       + [Découverte de l&#39;interface de Campaign](start/campaign-ui.md)
-      + [Personnalisation de l&#39;interface de Campaign](start/customize-ui.md)
       + [Gérer les dossiers et les vues](audiences/folders-and-views.md)
    + [De Classic v7 à v8](start/v7-to-v8.md)
    + [Questions fréquentes](start/campaign-faq.md)
