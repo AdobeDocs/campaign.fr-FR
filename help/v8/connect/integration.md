@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 100%
@@ -46,7 +46,7 @@ Vous pouvez connecter votre plateforme Adobe Campaign à vos **systèmes CRM ti
 Activez vos données CRM lors de la communication cross-canal et découvrez comment transmettre des contacts de votre système de gestion de la relation client à Adobe Campaign. Partagez également les données de campagne d&#39;Adobe Campaign avec votre système CRM.
 Les connecteurs CRM permettent une intégration rapide et facile des données. Adobe Campaign fournit en effet un assistant dédié à la collecte et à la sélection des tables disponibles dans le système CRM. Cela garantit une synchronisation bidirectionnelle et permet de s&#39;assurer que les données sont à jour en tout temps, et ce, sur l&#39;ensemble des systèmes.
 
-![](../assets/do-not-localize/glass.png) Découvrez comment intégrer Campaign à Microsoft Dynamics 365 et Salesforce.com sur [cette page](crm.md).
+ Découvrez comment intégrer Campaign à Microsoft Dynamics 365 et Salesforce.com sur [cette page](crm.md).
 
 ## Connecter des tiers à Federated Data Access{#gs-fda}
 
@@ -64,6 +64,6 @@ Vous pouvez ainsi :
 * Publier des tweets sur votre compte Twitter
 * Collecter de nouveaux contacts
 
-![](../assets/do-not-localize/glass.png) Découvrez comment configurer et utiliser l’intégration Twitter sur [cette page](../connect/ac-tw.md).
+Découvrez comment configurer et utiliser l’intégration Twitter sur [cette page](../connect/ac-tw.md).
 
-![](../assets/do-not-localize/glass.png) Découvrez comment créer des publications Twitter et envoyer des messages directs à vos abonnés dans [cette page](../send/twitter.md).
+Découvrez comment créer des publications Twitter et envoyer des messages directs à vos abonnés dans [cette page](../send/twitter.md).

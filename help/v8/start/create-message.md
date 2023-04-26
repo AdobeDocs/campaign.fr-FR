@@ -5,9 +5,9 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '429'
 ht-degree: 100%
 
 ---
@@ -16,9 +16,7 @@ ht-degree: 100%
 
 Avec Adobe Campaign, vous pouvez réaliser des campagnes cross-canal, y compris sous forme d&#39;e-mails, SMS, notifications push et courrier, et mesurer leur efficacité à l&#39;aide de différents rapports dédiés. Ces messages sont conçus et envoyés par le biais de diffusions, et peuvent être personnalisés pour chaque destinataire.
 
-Les principales fonctionnalités comprennent le ciblage, la définition et la personnalisation des messages, l&#39;exécution des communications et les rapports opérationnels associés. Le principal point d&#39;accès fonctionnel est l&#39;assistant de diffusion. Ce point d&#39;accès permet d&#39;accéder à de multiples fonctionnalités proposées par Adobe Campaign.
-
-Découvrez les principales étapes de création d&#39;une diffusion dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=fr).
+Les principales fonctionnalités comprennent le ciblage, la définition et la personnalisation des messages, l&#39;exécution des communications et les rapports opérationnels associés. Le principal point d&#39;accès fonctionnel est l&#39;assistant de diffusion. Ce point d’accès permet d’accéder à de multiples fonctionnalités proposées par Adobe Campaign.
 
 Adobe Campaign v8 propose les canaux de diffusion suivants :
 
@@ -79,11 +77,10 @@ Vous pouvez ainsi :
 
 La messagerie transactionnelle (Message Center) est le module de Campaign conçu pour gérer les messages de déclenchement.
 
-![](../assets/do-not-localize/glass.png) En savoir plus sur la fonctionnalité de messages transactionnels dans [cette section](../architecture/architecture.md#transac-msg-archi).
+ En savoir plus sur la fonctionnalité de messages transactionnels dans [cette section](../architecture/architecture.md#transac-msg-archi).
 
-![](../assets/do-not-localize/glass.png) Retrouvez les détails des étapes de configuration et d&#39;envoi de messages transactionnels sur [cette page](../send/transactional.md).
+ Retrouvez les détails des étapes de configuration et d&#39;envoi de messages transactionnels sur [cette page](../send/transactional.md).
 
-![](../assets/do-not-localize/book.png) Découvrez cette fonctionnalité à travers un cas d&#39;utilisation complet dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=fr).{target="_blank"}
 
 ## Logs de tracking et de diffusion{#gs-tracking-logs}
 

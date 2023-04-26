@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 2aa5dd736b93990317f842bcbe1f87374279f538
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 100%
+source-wordcount: '532'
+ht-degree: 97%
 
 ---
 
@@ -72,11 +72,11 @@ Parcourez l&#39;explorateur Campaign pour accéder à l&#39;ensemble des fonctio
 
 Cet espace de travail vous permet d&#39;accéder à l&#39;arborescence de l&#39;explorateur pour parcourir toutes les fonctionnalités et options.
 
-La section de gauche affiche l&#39;arborescence de l&#39;explorateur Campaign et vous permet de parcourir tous les composants et paramètres de votre instance, en fonction de vos autorisations.
+* La section de gauche affiche l&#39;arborescence de l&#39;explorateur Campaign et vous permet de parcourir tous les composants et paramètres de votre instance, en fonction de vos autorisations. Vous pouvez ajouter et personnaliser des dossiers comme expliqué dans la section [cette page](../audiences/folders-and-views.md).
 
-La section supérieure affiche la liste des enregistrements dans le dossier actif. Ces listes sont entièrement personnalisables. [En savoir plus](../config/ui-settings.md)
+* La section supérieure affiche la liste des enregistrements dans le dossier actif. Ces listes sont entièrement personnalisables. [En savoir plus](../config/ui-settings.md)
 
-La section inférieure affiche les détails de l&#39;enregistrement sélectionné.
+* La section inférieure affiche les détails de l&#39;enregistrement sélectionné.
 
 ## Langues{#languages}
 

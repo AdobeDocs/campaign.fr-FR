@@ -5,9 +5,9 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1560'
 ht-degree: 98%
 
 ---
@@ -43,7 +43,7 @@ Les principales étapes de mise en place de ce système sont décrites ci-dessou
 1. [Tester le message](#test-message-template).
 1. [Publier le modèle de message](#publish-message-template).
 
-Une fois que vous avez conçu et publié le modèle de message transactionnel, si un événement correspondant est déclenché, les données pertinentes sont envoyées à Campaign via les [méthodes SOAP](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html?lang=fr){target="_blank"} PushEvent et PushEvents, puis la diffusion est envoyée aux destinataires ciblés.
+Une fois que vous avez conçu et publié le modèle de message transactionnel, si un événement correspondant est déclenché, les données pertinentes sont envoyées à Campaign via les [méthodes SOAP](../send/event-description.md) PushEvent et PushEvents, puis la diffusion est envoyée aux destinataires ciblés.
 
 ## Création de types d&#39;événements {#create-event-types}
 
@@ -196,9 +196,7 @@ Lorsque vous avez créé une ou plusieurs adresses de contrôle, ainsi que le co
 
 Vous pouvez tester la diffusion du message en envoyant un BAT vers une adresse de contrôle créée précédemment.
 
-L&#39;envoi d&#39;un BAT engage le même processus que pour toute diffusion.
-
-![](../assets/do-not-localize/book.png) En savoir plus sur les BAT dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr#sending-a-proof).{target="_blank"}
+L&#39;envoi d&#39;un BAT engage le même processus que pour toute diffusion. Pour en savoir plus sur les BAT, consultez [cette section](../send/preview-and-proof.md).
 
 Toutefois, pour envoyer un BAT de message transactionnel, il vous faut exécuter les opérations suivantes :
 

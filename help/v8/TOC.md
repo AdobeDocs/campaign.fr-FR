@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Présentation de Campaign
 title: Documentation Campaign v8
-source-git-commit: 2aa5dd736b93990317f842bcbe1f87374279f538
+source-git-commit: 58b2f850284b68c6d65773166b895f9520718385
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '544'
 ht-degree: 98%
 
 ---
@@ -29,9 +29,7 @@ ht-degree: 98%
    + [Fonctionnalités principales](start/whats-new.md)
    + [Composants et processus](start/ac-components.md)
    + [Se connecter à Campaign](start/connect.md)
-   + Interface utilisateur de Campaign {#ac-ui}
-      + [Découverte de l&#39;interface de Campaign](start/campaign-ui.md)
-      + [Gérer les dossiers et les vues](audiences/folders-and-views.md)
+   + [Interface de Campaign](start/campaign-ui.md)
    + [De Classic v7 à v8](start/v7-to-v8.md)
    + [Questions fréquentes](start/campaign-faq.md)
 + Campaign Management {#campaigns}
@@ -167,6 +165,7 @@ ht-degree: 98%
       + [Bonnes pratiques relatives aux modèles de données](dev/datamodel-best-practices.md)
    + Paramètres et configuration {#configuration}
       + [Paramètres de l’interface utilisateur](config/ui-settings.md)
+      + [Gérer les dossiers et les vues](audiences/folders-and-views.md)
       + [Paramètres d&#39;e-mail](config/email-settings.md)
       + [Paramètres de messagerie transactionnelle](config/transactional-msg-settings.md)
       + [Intégration des SDK Campaign avec votre application - PAGE OBSOLÈTE](config/push-config.md)
