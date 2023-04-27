@@ -4,10 +4,10 @@ title: Audience cible de la campagne marketing
 description: Découvrez comment définir l’audience de vos campagnes marketing
 feature: Campaigns, Audiences
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: a2518ea0c0ab23f50b3132b750a14e98b4ffad7d
 workflow-type: tm+mt
-source-wordcount: '1562'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -236,10 +236,10 @@ Cliquez sur **[!UICONTROL Suivant]** pour définir l&#39;ordre de tri (si besoin
 Cette configuration équivaut à une activité **[!UICONTROL Partage]** dans le workflow, ce qui vous permet de diviser la cible en sous-ensembles. La population témoin est l&#39;un de ces sous-ensembles.
 
 
-#### Tutoriel vidéo {#create-email-video}
+### Tutoriel vidéo {#create-email-video}
 
-Cette vidéo explique comment créer une campagne et un e-mail dans Adobe Campaign.
+Cette vidéo explique comment ajouter une population témoin à une campagne.
 
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/335606?quality=12)
 
 D’autres vidéos pratiques sur Campaign sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=fr){target="_blank"}.
