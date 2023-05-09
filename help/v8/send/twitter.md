@@ -5,9 +5,9 @@ role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
 source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '868'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Pour publier un message sur votre compte Twitter, procédez comme suit :
    1. Cliquez sur le menu déroulant **[!UICONTROL Tester la personnalisation]** et sélectionnez **[!UICONTROL Service]**.
    1. Dans le champ **[!UICONTROL Dossier]**, sélectionnez le dossier de services contenant votre compte Twitter.
 
-1. Envoi d&#39;un BAT
+1. Envoyer un BAT
 
    Avant de publier votre tweet, veillez à le valider en envoyant un BAT de votre publication : vous pouvez ensuite obtenir un rendu exact de la publication sur une page de test Twitter privée.
 
@@ -138,7 +138,7 @@ Pour envoyer des messages directs à vos abonnés, procédez comme suit :
 
 1. Envoyer un BAT
 
-   Avant d&#39;envoyer votre message, veillez à le valider en [envoi d’un BAT à un compte test](../send/preview-and-proof.md): vous pouvez ensuite obtenir un rendu exact du message sur un compte Twitter privé et vérifier le contenu et la personnalisation.
+   Avant d’envoyer votre message, veillez à le valider en [envoyant un BAT à un compte test](../send/preview-and-proof.md) : vous pouvez ensuite obtenir un rendu exact du message sur un compte Twitter privé et vérifier le contenu et la personnalisation.
 
 1. Envoi du message direct
 
@@ -149,7 +149,7 @@ Pour envoyer des messages directs à vos abonnés, procédez comme suit :
 
 >[!CAUTION]
 >
->Vous ne pouvez pas envoyer plus de 250 messages directs par jour. Pour éviter de dépasser ce seuil, vous pouvez effectuer une diffusion par vagues. Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en#sending-using-multiple-waves){target="_blank"}.
+>Vous ne pouvez pas envoyer plus de 250 messages directs par jour. Pour éviter de dépasser ce seuil, vous pouvez effectuer une diffusion par vagues. Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#sending-using-multiple-waves){target="_blank"}.
 
 
 ## Accès aux données de suivi {#tw-tracking}
