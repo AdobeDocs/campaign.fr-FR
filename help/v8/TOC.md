@@ -5,9 +5,9 @@ title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Présentation de Campaign
 source-git-commit: 67368286cb04d97cbf4564846eab91d64b8f90f1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '541'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 98%
    + [Fonctionnalités principales](start/whats-new.md)
    + [Composants et processus](start/ac-components.md)
    + [Se connecter à Campaign](start/connect.md)
-   + [Interface de Campaign](start/campaign-ui.md)
+   + [Interface Campaign](start/campaign-ui.md)
    + [De Classic v7 à v8](start/v7-to-v8.md)
    + [Questions fréquentes](start/campaign-faq.md)
 + Campaign Management {#campaigns}
@@ -168,7 +168,7 @@ ht-degree: 98%
       + [Gérer les dossiers et les vues](audiences/folders-and-views.md)
       + [Paramètres d&#39;e-mail](config/email-settings.md)
       + [Paramètres de messagerie transactionnelle](config/transactional-msg-settings.md)
-      + [Intégration des SDK Campaign avec votre application - PAGE OBSOLÈTE](config/push-config.md)
+      + [Intégrer les SDK Campaign à votre application - PAGE OBSOLÈTE](config/push-config.md)
       + [Comptes externes](config/external-accounts.md)
 + Ressources de développement {#developer}
    + [Modèle de données Campaign](dev/datamodel.md)
