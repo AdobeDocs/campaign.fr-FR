@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '429'
 ht-degree: 100%
 
@@ -77,9 +77,9 @@ Vous pouvez ainsi :
 
 La messagerie transactionnelle (Message Center) est le module de Campaign conçu pour gérer les messages de déclenchement.
 
- En savoir plus sur la fonctionnalité de messages transactionnels dans [cette section](../architecture/architecture.md#transac-msg-archi).
+En savoir plus sur la fonctionnalité de messages transactionnels dans [cette section](../architecture/architecture.md#transac-msg-archi).
 
- Retrouvez les détails des étapes de configuration et d&#39;envoi de messages transactionnels sur [cette page](../send/transactional.md).
+Retrouvez les détails des étapes de configuration et d’envoi de messages transactionnels sur [cette page](../send/transactional.md).
 
 
 ## Logs de tracking et de diffusion{#gs-tracking-logs}
