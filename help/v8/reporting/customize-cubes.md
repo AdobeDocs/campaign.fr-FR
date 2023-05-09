@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1518'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Pour créer ce type de mise en classe des valeurs, les étapes sont les suivante
 
    Lorsque les valeurs de l&#39;énumération sont mises à jour, les classes sont automatiquement adaptées, sans aucune action côté utilisateur.
 
-En savoir plus sur les énumérations dans [cette page](../../v8/config/ui-settings.md#enumerations).
+Pour en savoir plus sur les énumérations, consultez [cette page](../../v8/config/ui-settings.md#enumerations).
 
 ### Création de plages de valeurs {#create-value-ranges}
 
@@ -114,7 +114,7 @@ L&#39;énumération **[!UICONTROL Domaines]** est utilisée pour générer les r
 
 Vous pouvez créer d&#39;autres énumérations réservées à la mise en classe et les utiliser dans d&#39;autres Cubes : toutes les valeurs d&#39;alias seront regroupées dans les classes définies dans le premier onglet de l&#39;énumération.
 
-En savoir plus sur les énumérations dans [cette page](../../v8/config/ui-settings.md#enumerations).
+Pour en savoir plus sur les énumérations, consultez [cette page](../../v8/config/ui-settings.md#enumerations).
 
 ## Agrégats en cubes {#calculate-and-use-aggregates}
 
