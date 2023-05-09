@@ -1,5 +1,5 @@
 ---
-title: Intégration des SDK Campaign avec votre application
+title: Intégrer les SDK Campaign à votre application
 description: Découvrez comment intégrer les SDK Android et iOS de Campaign avec votre application
 version: v8
 feature: Push
@@ -9,7 +9,7 @@ hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
 source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1263'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ Afin d&#39;intégrer le SDK Campaign dans l&#39;application mobile, l&#39;admini
 
    >[!NOTE]
    >
-   >Cette clé d&#39;intégration est renseignée dans la console Adobe Campaign, dans l&#39;onglet **[!UICONTROL Informations]** du service dédié à l&#39;application mobile.
+   >Cette clé d&#39;intégration est renseignée dans la console Adobe Campaign, dans l’onglet **[!UICONTROL Informations]** du service dédié à l’application mobile.
 
 * **Une URL de tracking** correspondant à l&#39;adresse du serveur de tracking Adobe Campaign.
 * **Une URL marketing** permettant de collecter les abonnements.
