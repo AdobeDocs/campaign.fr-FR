@@ -6,7 +6,7 @@ role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
 source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1138'
 ht-degree: 100%
 
@@ -130,7 +130,7 @@ Lorsque vous avez créé une ou plusieurs adresses de contrôle, ainsi que le co
 
    ![](assets/messagecenter_create_seed_7.png)
 
-### Envoi d&#39;un BAT
+### Envoyer un BAT
 
 Vous pouvez tester la diffusion du message en envoyant un BAT vers une adresse de contrôle créée précédemment.
 
