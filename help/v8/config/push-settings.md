@@ -7,9 +7,9 @@ role: Admin, Developer
 level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 093204ca69cc0925bc1be5581e518995b50b3fc1
+source-git-commit: 3bef6d2544a86bf1d5efa4868b82ec59c7e36484
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1018'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Pour configurer votre application avec des SDK Adobe Experience Platform Mobile,
 1. Configurez une [propriété de balise mobile](#launch-property) dans la collecte de données Adobe Experience Platform.
 1. Obtention du SDK Mobile Adobe Experience Platform en tant que détaillé [dans cette page](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}.
 1. (facultatif) Activez les mesures de journalisation et de cycle de vie, comme indiqué [dans cette page](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}.
-1. (facultatif) Ajouter [Adobe Experience Platform Assurance sur votre application](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} pour valider votre mise en oeuvre.
+1. (facultatif) Ajouter [Adobe Experience Platform Assurance sur votre application](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} to validate your implementation. Learn how to implement Adobe Experience Platform Assurance extension [in this page](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}.
 1. Suivez [Documentation du SDK Mobile Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} pour obtenir une configuration avec les SDK mobiles Adobe Experience Platform dans votre application.
 1. Installation et configuration [Extension Adobe Campaign](#configure-extension) dans votre propriété mobile.
 1. Configurez vos services mobiles iOS et Android dans Adobe Campaign comme indiqué [dans cette page](../send/push.md#push-config).
