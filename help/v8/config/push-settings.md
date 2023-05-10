@@ -7,10 +7,10 @@ role: Admin, Developer
 level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 3bef6d2544a86bf1d5efa4868b82ec59c7e36484
+source-git-commit: ff6990f3db1122670bff4919f417b9f9f04d3183
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 2%
+source-wordcount: '983'
+ht-degree: 3%
 
 ---
 
@@ -132,13 +132,14 @@ The mobile app push credential registration is required to authorize Adobe to se
 ## Configuration d’une propriété de balise mobile dans la collecte de données Adobe Experience Platform {#launch-property}
 
 La configuration d’une propriété mobile permet au développeur d’applications mobiles ou au marketeur de configurer les SDK mobiles. En règle générale, vous créez une propriété mobile pour chaque application mobile que vous souhaitez gérer. Découvrez comment créer et configurer une propriété mobile dans [Documentation du SDK Mobile Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
+<!--
+To get the SDKs needed for push notification to work you will need the following SDK extensions, for both Android and iOS:
 
-Pour que les SDK nécessaires pour que la notification push fonctionne, vous aurez besoin des extensions SDK suivantes, pour Android et iOS :
-
-* **[!UICONTROL Mobile Core]** (installé automatiquement)
-* **[!UICONTROL Profil]** (installé automatiquement)
+* **[!UICONTROL Mobile Core]** (installed automatically)
+* **[!UICONTROL Profile]** (installed automatically)
 * **[!UICONTROL Adobe Experience Platform Edge]**
-* **[!UICONTROL Adobe Experience Platform Assurance]**, facultatif mais recommandé pour déboguer l’implémentation mobile.
+* **[!UICONTROL Adobe Experience Platform Assurance]**, optional but recommended to debug the mobile implementation.
+-->
 
 En savoir plus sur [!DNL Adobe Experience Platform Data Collection] balises dans [Documentation Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html){target="_blank"}.
 
@@ -154,7 +155,7 @@ Une fois créée, ouvrez la nouvelle propriété de balise et créez une bibliot
 
 Le **Extension Adobe Campaign Classic** Les SDK Adobe Experience Platform Mobile alimentent les notifications push pour vos applications mobiles et vous aident à collecter des jetons push utilisateur et à gérer la mesure des interactions avec les services Adobe Experience Platform.
 
-Cette extension est préinstallée sur votre environnement et doit être configurée. Pour configurer l’extension de votre propriété de balise mobile, procédez comme suit :
+Cette extension, qui s&#39;applique à la fois à Campaign Classic v7 et Campaign v8, est préinstallée sur votre environnement et doit être configurée. Pour configurer l’extension de votre propriété de balise mobile, procédez comme suit :
 
 1. Ouvrez la propriété de balise que vous avez créée précédemment.
 1. Dans le volet de navigation de gauche, accédez à **Extensions**, puis ouvrez le **Catalogue** . Utilisez le champ de recherche pour rechercher la variable **Adobe Campaign Classic** extension .
