@@ -5,10 +5,10 @@ feature: Audiences
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 93%
+source-wordcount: '1072'
+ht-degree: 91%
 
 ---
 
@@ -109,9 +109,9 @@ Le modèle d&#39;un nom de fichier est le suivant : `<InstanceName>-<NamespaceI
 
 >[!CAUTION]
 >
->Pour envoyer une requête à l’aide du type d’espace de noms personnalisé, utilisez la méthode [méthode JSON](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=fr#json){target="_blank"} and add the namespaceId to the request, or use the [API call](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/privacy-jobs.html?lang=fr#access-delete){target="_blank"} pour effectuer la requête.
+>Pour envoyer une requête à l’aide du type d’espace de noms personnalisé, utilisez la méthode [méthode JSON](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html#json){target="_blank"} and add the namespaceId to the request, or use the [API call](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/privacy-jobs.html#access-delete){target="_blank"} pour effectuer la requête.
 >
->N’utilisez que la variable [Interface utilisateur de confidentialité](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=fr#request-builder){target="_blank"} pour envoyer des requêtes à l’aide du type d’espace de noms standard.
+>N’utilisez que la variable [Interface utilisateur de confidentialité](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html#request-builder){target="_blank"} pour envoyer des requêtes à l’aide du type d’espace de noms standard.
 
 ### Tables recherchées lors des demandes de traitement {#list-of-tables}
 

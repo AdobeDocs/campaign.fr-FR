@@ -3,9 +3,9 @@ title: Rapports globaux d’Adobe Campaign
 description: Découvrez comment accéder aux rapports globaux et les utiliser.
 feature: Reporting, Monitoring
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1893'
 ht-degree: 100%
 
 ---
@@ -70,7 +70,7 @@ Ce rapport présente la répartition des messages en échec et la répartition d
 
 Le **[!UICONTROL Nombre de messages traités]** représente le nombre total de messages traités par le serveur de diffusion. Cette valeur est inférieure au nombre de messages à diffuser lorsque certaines diffusions ont été stoppées ou mises en pause (avant d&#39;être traitées par le serveur).
 
-**[!UICONTROL Ventilation des erreurs par type]**
+**[!UICONTROL Répartition des erreurs par type]**
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ Les indicateurs utilisés sont les suivants :
 
    Vous pouvez déplier chaque ligne du tableau de valeurs en cliquant sur le symbole `[+]` correspondant. Cela permet d’afficher, pour chaque type d’erreur, la répartition des messages d’erreur, par domaine.
 
-**[!UICONTROL Ventilation des erreurs par domaine]**
+**[!UICONTROL Répartition des erreurs par domaine]**
 
 La seconde partie de ce rapport présente la répartition des échecs par domaine Internet sous la forme d&#39;un tableau de valeurs et d&#39;un graphique.
 

@@ -5,10 +5,10 @@ feature: Privacy, PI
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
-source-git-commit: cfe559b83a7db36ab8d9223d04d348f3afd74730
+source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 100%
+source-wordcount: '609'
+ht-degree: 97%
 
 ---
 
@@ -49,7 +49,7 @@ Lorsque vous effectuez des tâches de développement dans Adobe Campaign (workf
 
 * **Ajout de captchas dans les applications web** : ajoutez des captchas dans vos pages d&#39;abonnement et landing pages publiques.
 
-![](../assets/do-not-localize/book.png) Apprenez-en davantage en consultant la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=fr#installing-campaign-classic){target="_blank"}
+![](../assets/do-not-localize/book.png) Apprenez-en davantage en consultant la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}
 
 
 ## Personnalisation
@@ -144,4 +144,4 @@ Lorsque vous effectuez des tâches de développement dans Adobe Campaign (workf
 
 * **Ajout de captchas dans les applications web** : ajoutez des captchas dans vos pages d&#39;abonnement et landing pages publiques.
 
-![](../assets/do-not-localize/book.png) Apprenez-en davantage en consultant la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=fr#installing-campaign-classic){target="_blank"}
+![](../assets/do-not-localize/book.png) Apprenez-en davantage en consultant la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}

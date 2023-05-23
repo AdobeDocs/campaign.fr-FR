@@ -4,9 +4,9 @@ description: Découvrez comment utiliser le module Marketing des médias sociaux
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
-workflow-type: ht
-source-wordcount: '868'
+source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+workflow-type: tm+mt
+source-wordcount: '866'
 ht-degree: 100%
 
 ---
