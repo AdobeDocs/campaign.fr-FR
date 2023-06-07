@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Présentation de Campaign
-source-git-commit: e3ea361cc486096fe6c19ac469e8a71b636371ac
-workflow-type: ht
-source-wordcount: '543'
-ht-degree: 100%
+source-git-commit: eadd204088bc9ca6cf526a2ef4af3e8a61e48a25
+workflow-type: tm+mt
+source-wordcount: '550'
+ht-degree: 98%
 
 ---
 
@@ -24,6 +24,8 @@ ht-degree: 100%
    + [Mécanismes de sécurisation](start/ac-guardrails.md)
    + [Problèmes connus](start/known-issues.md)
    + [Matrice de compatibilité](start/compatibility-matrix.md)
+   + Notes techniques{#technotes}
+      + [Migration d’un opérateur technique vers Developer Console](start/ims-migration.md)
 + Prise en main {#new}
    + [Prise en main d’Adobe Campaign ](start/get-started.md)
    + [Fonctionnalités principales](start/whats-new.md)
