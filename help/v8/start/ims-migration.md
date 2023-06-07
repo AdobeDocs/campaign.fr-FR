@@ -3,9 +3,9 @@ title: Migration des utilisateurs techniques vers un compte technique sur Develo
 description: Migration des utilisateurs techniques vers un compte technique sur Developer Console
 hide: true
 hidefromtoc: true
-source-git-commit: 8842404511bd6166d920ebdeee942007b33a1bab
+source-git-commit: 1f9efc0744792c1173e77965ff81eaee0ed2c618
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '807'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ Depuis Campaign v8.5, le processus d&#39;authentification vers Campaign v8 est e
 
 Les utilisateurs standard de Campaign se connectent déjà à la console Adobe Campaign à l’aide de leur Adobe ID, via Adobe Identity Management System (IMS). Dans le cadre de l&#39;effort visant à renforcer la sécurité et le processus d&#39;authentification, l&#39;application cliente Adobe Campaign appelle désormais les API Campaign directement à l&#39;aide du jeton de compte technique IMS.
 
-En savoir plus sur le nouveau processus d’authentification serveur à serveur [dans la documentation de la console Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
+En savoir plus sur le nouveau processus d’authentification serveur à serveur dans [Documentation de la console Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
 Cette modification s’applique à partir de Campaign v8.5 et sera **mandatory** Démarrage de Campaign v8.6.
 
@@ -46,7 +46,7 @@ Une fois que vous avez accès à votre projet Campaign, vous pouvez ajouter des 
 
 ### Étape 2 - Ajout d’une API à votre projet à l’aide de l’authentification serveur à serveur{#ims-migration-step-2}
 
-Une fois votre projet créé dans la console Adobe Developer, ajoutez une API qui utilise l’authentification serveur à serveur. Découvrez comment configurer les informations d’identification OAuth serveur à serveur dans [dans la documentation de la console Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/){target="_blank"}.
+Une fois votre projet créé dans la console Adobe Developer, ajoutez une API qui utilise l’authentification serveur à serveur. Découvrez comment configurer les informations d’identification OAuth serveur à serveur dans [Documentation de la console Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/){target="_blank"}.
 
 Une fois la connexion à l’API établie, vous pouvez accéder aux informations d’identification nouvellement générées, y compris l’identifiant du client et le secret du client, ainsi que générer un jeton d’accès.
 
