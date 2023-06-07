@@ -3,10 +3,10 @@ product: campaign
 title: Créer et gérer les tâches
 description: Créer et gérer les tâches
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-source-git-commit: 094743fef69e137f80b670f0bf31dce56c282c34
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '3910'
-ht-degree: 100%
+source-wordcount: '3913'
+ht-degree: 98%
 
 ---
 
@@ -467,7 +467,7 @@ Voici les différentes étapes du cycle de vie complet d&#39;une tâche pour laq
 1. Lorsqu&#39;un intervenant a terminé la partie qui lui a été assignée, il valide la tâche, au choix :
 
    * à partir de l&#39;email de notification.
-   * à partir de la console ou de l&#39;interface web, au niveau du tableau de bord de la tâche.
+   * via la console cliente ou l’interface web, dans le tableau de bord de la tâche.
 
       ![](assets/s_ncs_user_task_start_rea.png)
 
@@ -481,7 +481,7 @@ Voici les différentes étapes du cycle de vie complet d&#39;une tâche pour laq
 
    ![](assets/s_ncs_user_task_follow_from_dashboard.png)
 
-1. Lorsqu&#39;il estime que la tâche est terminée, le responsable peut alors la clore, à partir de l&#39;email de notification envoyé à la date de début de la tâche, depuis la console ou l&#39;interface web.
+1. Une fois que le responsable de la tâche a décidé qu&#39;elle était terminée, il peut la fermer à l&#39;aide du lien contenu dans l&#39;email de notification envoyé au démarrage de la tâche, de la console cliente ou de l&#39;interface.
 
    ![](assets/s_ncs_user_task_console_ressource_validation.png)
 
@@ -491,7 +491,7 @@ Voici les différentes étapes du cycle de vie complet d&#39;une tâche pour laq
 
 1. La tâche passe alors à l&#39;état **[!UICONTROL A valider]**, et un email de notification est envoyé au validant.
 
-   Ce dernier valide la tâche à partir de l&#39;email de notification, depuis la console ou l&#39;interface web.
+   Il valide la tâche à partir de l&#39;email de notification, de la console cliente ou de l&#39;interface web.
 
    Il peut agir depuis le tableau de bord de l&#39;opération :
 

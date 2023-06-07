@@ -3,7 +3,7 @@ title: Migration des utilisateurs techniques vers un compte technique sur Develo
 description: Migration des utilisateurs techniques vers un compte technique sur Developer Console
 hide: true
 hidefromtoc: true
-source-git-commit: 1f9efc0744792c1173e77965ff81eaee0ed2c618
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 2%
@@ -62,9 +62,9 @@ Vous pouvez maintenant ajouter votre profil de produit Campaign au projet, comme
 1. Affectez tous les profils de produit pertinents à l’API, par exemple &quot;messagecenter&quot;, et enregistrez vos modifications.
 1. Accédez au **Informations d’identification** de votre projet, puis copiez la variable **Adresse électronique du compte technique** .
 
-### Etape 4 - Mettre à jour l&#39;opérateur technique dans la console cliente {#ims-migration-step-4}
+### Étape 4 - Mise à jour de l’opérateur technique dans la console cliente {#ims-migration-step-4}
 
-La dernière étape consiste à mettre à jour l&#39;opérateur technique dans la console cliente Adobe Campaign.
+La dernière étape consiste à mettre à jour l’opérateur technique dans la console cliente Adobe Campaign.
 
 >[!CAUTION]
 >
@@ -72,7 +72,7 @@ La dernière étape consiste à mettre à jour l&#39;opérateur technique dans l
 
 Pour mettre à jour le mode d&#39;authentification des opérateurs techniques vers IMS, procédez comme suit :
 
-1. Dans l&#39;explorateur de la console cliente Campaign, accédez à la **Administration > Gestion des accès > Opérateurs**.
+1. Dans l’explorateur de la console cliente de Campaign, accédez au **Administration > Gestion des accès > Opérateurs**.
 1. Editez l&#39;opérateur technique existant utilisé par les API fir.
 1. Remplacez la variable **Nom (login)** de cet opérateur technique par l&#39;email du compte technique récupéré précédemment.
 1. Accédez au **Modifier** bouton en haut à gauche en regard de **Fichier**, puis sélectionnez **Modification de la source XML**.

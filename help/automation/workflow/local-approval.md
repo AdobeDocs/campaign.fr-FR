@@ -4,10 +4,10 @@ title: Validation en local
 description: Validation en local
 feature: Workflows
 exl-id: 172b6827-ddfc-4c6e-87c9-eb49e73ab3ab
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 100%
+source-wordcount: '702'
+ht-degree: 93%
 
 ---
 
@@ -81,13 +81,13 @@ Les champs à renseigner dans le cas d&#39;un rapport de retour de diffusion son
 
 Cet exemple montre comment configurer un processus de validation pour une diffusion de workflow. Pour plus d’informations sur la création de workflows de diffusion, voir la section [Exemple : workflow de diffusion](delivery.md#example--delivery-workflow).
 
-Pour valider un envoi, un opérateur dispose de deux modes : il peut utiliser la page Web dont l&#39;URL est fournie dans l&#39;email envoyé, ou valider directement depuis la console.
+Un opérateur peut valider une diffusion de deux manières : à l&#39;aide de la page Web liée dans l&#39;email ou via la console cliente.
 
 * Validation Web
 
    L&#39;email adressé aux opérateurs du groupe Administrateur permet de valider la cible de l&#39;envoi. Le message reprend le texte défini en remplaçant l&#39;expression JavaScript par la valeur calculée (ici &#39;574&#39;).
 
-   Pour valider l&#39;envoi, cliquez sur le lien correspondant et connectez-vous à la console Adobe Campaign.
+   Pour valider la diffusion, cliquez sur le lien correspondant et connectez-vous à la console cliente Adobe Campaign.
 
    ![](assets/new-workflow-valid-webaccess.png)
 
@@ -95,7 +95,7 @@ Pour valider un envoi, un opérateur dispose de deux modes : il peut utiliser l
 
    ![](assets/new-workflow-valid-webaccess-confirm.png)
 
-* Validation depuis la console
+* Validation via la console cliente
 
    Dans l&#39;arborescence, le noeud **[!UICONTROL Administration > Exploitation > Objets créés automatiquement > Validations en attente]** contient la liste des tâches à valider par l&#39;opérateur actuellement connecté. La liste doit afficher une ligne. Double-cliquez sur la ligne pour répondre. La fenêtre suivante s&#39;affiche :
 

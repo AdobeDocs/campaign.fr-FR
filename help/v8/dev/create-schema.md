@@ -5,16 +5,16 @@ feature: Schema Extension
 role: Developer
 level: Intermediate, Experienced
 exl-id: 796af848-b537-4b8d-a601-fe0628a1fc83
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
 # Création d&#39;un schéma{#create-new-schema}
 
-Pour modifier, créer et paramétrer les schémas, cliquez sur le nœud **[!UICONTROL Administration > Paramétrage > Schémas de données]** de la console cliente Adobe Campaign.
+Pour modifier, créer et configurer les schémas, cliquez sur le bouton **[!UICONTROL Administration > Paramétrage > Schémas de données]** du noeud de la console cliente Adobe Campaign.
 
 >[!NOTE]
 >

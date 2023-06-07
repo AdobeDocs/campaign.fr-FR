@@ -4,10 +4,10 @@ title: Propriétés d’exécution
 description: En savoir plus sur les propriétés des workflows de Campaign
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 100%
+source-wordcount: '614'
+ht-degree: 94%
 
 ---
 
@@ -76,6 +76,6 @@ Cette section n&#39;apparaît que dans les workflows d&#39;opérations.
 
    ![](assets/wf-properties_select-supervisors.png)
 
-   Le modèle par défaut **[!UICONTROL Notification du responsable d&#39;un workflow]** comprend un lien qui permet d&#39;accéder en Web à la console Adobe Campaign et, après connexion, d&#39;agir sur le workflow en erreur.
+   Le **[!UICONTROL Notification du responsable d&#39;un workflow]** le modèle par défaut comprend un lien pour accéder à la console cliente Adobe Campaign via le Web afin que le destinataire puisse travailler sur le problème une fois connecté.
 
    Vous pouvez créer un modèle personnalisé dans **[!UICONTROL Administration > Gestion de campagne > Modèles des diffusions techniques]**.

@@ -4,10 +4,10 @@ title: Validation
 description: Validation
 feature: Workflows, Approvals
 exl-id: 9e57d21c-ce16-448d-97f1-8c6844acb37b
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '568'
-ht-degree: 100%
+source-wordcount: '569'
+ht-degree: 94%
 
 ---
 
@@ -41,7 +41,7 @@ Dans le cas d&#39;une validation multiple, les transitions correspondant au choi
 
 Cette activité n&#39;est pas bloquante et le workflow peut effectuer d&#39;autres traitements dans l&#39;attente d&#39;une réponse.
 
-Un opérateur peut valider les tâches qui lui sont assignées depuis la console. Un opérateur ayant les droits administrateur peut visualiser et supprimer les tâches assignées à n&#39;importe quel opérateur, mais il ne peut y répondre.
+Un opérateur peut valider les tâches qui lui sont affectées à partir de la console cliente. Un opérateur ayant les droits administrateur peut visualiser et supprimer les tâches assignées à un opérateur, mais il ne peut pas y répondre.
 
 La modification du titre ou du corps du message de l&#39;activité n&#39;affecte pas les tâches en cours, en revanche, la modification des choix possibles affecte directement les tâches en cours qui héritent automatiquement de la nouvelle liste de choix.
 
@@ -55,7 +55,7 @@ Les variables de personnalisation peuvent être utilisées dans le message envoy
 
 ![](assets/edit_validation.png)
 
-Le champ **[!UICONTROL Titre]** contient le titre du message : il s&#39;agit du sujet de l&#39;email envoyé. Le titre, comme le corps du message, sont des templates JavaScript et peuvent donc contenir des valeurs calculées en fonction du contexte du workflow.
+Le champ **[!UICONTROL Titre]** contient le titre du message : il s’agit de l’objet de l’e-mail envoyé. Le titre, comme le corps du message, sont des modèles JavaScript et peuvent donc contenir des valeurs calculées en fonction du contexte du workflow.
 
 La section inférieure de l&#39;éditeur permet de définir la liste des réponses possibles. A chaque réponse correspond une transition. Le nom est l&#39;identifiant interne et le libellé est le texte qui sera affiché dans la liste des choix.
 

@@ -8,10 +8,10 @@ level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
-workflow-type: ht
-source-wordcount: '1263'
-ht-degree: 100%
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+workflow-type: tm+mt
+source-wordcount: '1264'
+ht-degree: 97%
 
 ---
 
@@ -796,7 +796,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 
 ## Variables {#variables}
 
-Les variables permettent de définir le comportement de l&#39;application mobile après réception d&#39;une notification. Ces variables doivent être définies dans le code de l&#39;application mobile et dans la console Adobe Campaign, dans l&#39;onglet **[!UICONTROL Variables]** du service d&#39;application mobile dédié.
+Les variables vous permettent de définir le comportement de l&#39;application mobile après réception d&#39;une notification. Ces variables doivent être définies dans le code de l’application mobile et dans la console cliente Adobe Campaign, dans la variable **[!UICONTROL Variables]** dans le service d’applications mobiles dédié.
 
 
 Vous trouverez ci-dessous un exemple de code qui permet à une application mobile de collecter toutes les variables ajoutées dans une notification. Dans notre exemple, nous utilisons la variable &quot;VAR&quot;.

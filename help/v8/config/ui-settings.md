@@ -6,10 +6,10 @@ feature: Application Settings
 role: Admin, Developer
 level: Beginner, Intermediate, Experienced
 exl-id: fefb6d80-c3d1-448b-82ab-648da58a0ba4
-source-git-commit: 666dbdac8330cae17693142cf45cc3d3d2d187a9
-workflow-type: ht
-source-wordcount: '1945'
-ht-degree: 100%
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+workflow-type: tm+mt
+source-wordcount: '1946'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Découvrez comment gérer les dossiers et les vues dans [cette page](../audience
 
 ## Gérer et personnaliser des listes{#customize-lists}
 
-Dans la console cliente Campaign, les données sont affichées dans des listes. Vous pouvez adapter ces listes à vos besoins. Vous pouvez par exemple ajouter des colonnes, filtrer les données, comptabiliser les enregistrements, enregistrer et partager vos paramètres.
+Dans la console cliente Campaign, les données s&#39;affichent dans des listes. Vous pouvez adapter ces listes à vos besoins. Vous pouvez par exemple ajouter des colonnes, filtrer les données, comptabiliser les enregistrements, enregistrer et partager vos paramètres.
 
 En outre, vous pouvez créer et enregistrer des filtres.  Pour en savoir plus sur les filtres, consultez [cette page](../audiences/create-filters.md).
 
@@ -211,7 +211,7 @@ Pour créer un alias, procédez comme suit :
 
 1. Enregistrez vos modifications. Le remplacement des valeurs est effectué par le workflow **Cleansing des alias** exécuté toutes les nuits. Pour plus d’informations, consultez la section [Exécuter le cleansing des données](#running-data-cleansing).
 
-Pour tous les champs basés sur cette énumération, lorsqu’un utilisateur ou une utilisatrice saisit la valeur **Adobe** dans un champ « société » (dans la console Adobe Campaign, dans un formulaire web), il sera automatiquement remplacé par la valeur **Adobe**.
+Pour tous les champs basés sur cette énumération, lorsqu’un utilisateur saisit la valeur **Adobe** dans un champ &quot;société&quot; (dans la console cliente Adobe Campaign, dans un formulaire web), il sera automatiquement remplacé par la valeur **Adobe**.
 
 #### Convertir une valeur incorrecte en alias{#convert-to-alias}
 

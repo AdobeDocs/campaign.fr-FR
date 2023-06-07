@@ -5,10 +5,10 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
-source-git-commit: b96ac3bd2365c548d071e626721d606dd33200b5
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '1748'
-ht-degree: 99%
+ht-degree: 96%
 
 ---
 
@@ -37,7 +37,7 @@ Pour ajouter un utilisateur/une utilisatrice, procédez comme suit :
 
 En savoir plus sur la création d’utilisateurs dans Admin Console sur [cette page](https://helpx.adobe.com/fr/enterprise/using/manage-users-individually.html){target="_blank"}.
 
-Quand les nouveaux utilisateurs [se connectent à Campaign](connect.md) avec leur Adobe ID, ils sont ajoutés à la liste des opérateurs Campaign dans la console cliente. Les opérateurs Campaign sont stockés dans le dossier **[!UICONTROL Administration > Gestion des accès > Opérateurs]** de l’explorateur Campaign.
+Quand les nouveaux utilisateurs [se connecter à Campaign](connect.md) avec leur Adobe ID, ils sont ajoutés à la liste des opérateurs Campaign dans la console cliente. Les opérateurs Campaign sont stockés dans le dossier **[!UICONTROL Administration > Gestion des accès > Opérateurs]** de l’explorateur Campaign.
 
 ## Utiliser les profils de produit{#product-profiles}
 
@@ -61,7 +61,7 @@ Vous pouvez utiliser les profils de produit par défaut ou en créer de nouveaux
 
 ### Créer un profil de produit{#create-product-profile}
 
-Pour ajouter un nouveau profil de produit à Adobe, vous devez d’abord le créer dans la console cliente Campaign, puis l’ajouter dans Admin Console.
+Pour ajouter un nouveau profil de produit à Adobe, vous devez d’abord le créer dans la console cliente Campaign, puis l’ajouter dans le Admin Console.
 
 Par exemple, pour créer un profil de produit « validants », procédez comme suit.
 

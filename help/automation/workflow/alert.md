@@ -4,10 +4,10 @@ title: Alerte
 description: Alerte
 feature: Workflows
 exl-id: 8fb36117-b126-470a-9c94-eb5c0a4aca1a
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 100%
+source-wordcount: '85'
+ht-degree: 36%
 
 ---
 
@@ -19,4 +19,4 @@ Une activité de type **Alerte** envoie un message à un groupe d&#39;opérateur
 
 ![](assets/edit_alerte.png)
 
-Une alerte n&#39;est pas persistante et n&#39;est donc pas visible depuis la console. Les opérateurs du groupe assigné doivent avoir une adresse de messagerie renseignée pour recevoir la notification. Le paramétrage de cette activité est similaire à celui d&#39;une **Validation**. Le modèle de diffusion par défaut utilisé pour notifier les opérateurs est &#39;alertAssignee&#39;.
+Une alerte n’est pas persistante et n’est donc pas visible à partir de la console cliente. Les opérateurs du groupe affecté doivent avoir une adresse email complète pour recevoir la notification. Le paramétrage de cette activité est similaire à celui d&#39;une **Validation**. Le modèle de diffusion par défaut utilisé pour alerter les opérateurs est &#39;alertAssignee&#39;.

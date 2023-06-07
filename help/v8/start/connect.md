@@ -5,10 +5,10 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 7f27dbdd0ff53cd7437f956ccfef3d792020893b
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Pour commencer à utiliser Campaign, vous devez installer et configurer la console cliente.
 
-La console cliente est une application native qui communique avec le serveur applicatif d’Adobe Campaign par le biais de protocoles internet standard, tels que SOAP et HTTP. La console cliente Campaign centralise toutes les fonctionnalités et tous les paramètres et requiert une bande passante minimale, car elle repose sur un cache local. Conçue pour un déploiement facile, cette console peut être déployée à partir d&#39;un navigateur Internet et être mise à jour automatiquement. En outre, elle ne nécessite aucune configuration réseau spécifique, car elle génère uniquement du trafic HTTP(S).
+La console cliente est une application native qui communique avec le serveur applicatif d’Adobe Campaign par le biais de protocoles internet standard, tels que SOAP et HTTP. La console cliente de Campaign centralise toutes les fonctionnalités et tous les paramètres et requiert une bande passante minimale car elle repose sur un cache local. Conçue pour un déploiement facile, la console cliente Campaign peut être déployée à partir d’un navigateur Internet, mise à jour automatiquement. Elle ne nécessite aucune configuration réseau spécifique, car elle ne génère que du trafic HTTP(S).
 
 Avant de commencer, vous devez :
 

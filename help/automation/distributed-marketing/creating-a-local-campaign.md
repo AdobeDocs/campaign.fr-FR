@@ -4,10 +4,10 @@ title: Créer une campagne locale
 description: Créer une campagne locale
 feature: Distributed Marketing
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 7e5ffbec959785971280c394c416cebe83590897
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '1686'
-ht-degree: 100%
+source-wordcount: '1687'
+ht-degree: 96%
 
 ---
 
@@ -295,9 +295,9 @@ Lorsqu&#39;une commande d&#39;opération est effectuée par une entité locale, 
 
 ![](assets/mkg_dist_command_valid_web.png)
 
-#### Validation via la console Adobe Campaign {#approving-via-the-adobe-campaign-console}
+#### Approbation via la console cliente {#approving-via-the-adobe-campaign-console}
 
-La commande peut également être validée à partir de la console, depuis la vue d&#39;ensemble des commandes d&#39;opérations. Pour valider une commande, sélectionnez-la puis cliquez sur le bouton **[!UICONTROL Valider la commande]**.
+La commande peut également être validée à partir de la console cliente, dans la vue d&#39;ensemble des commandes de l&#39;opération. Pour valider une commande, sélectionnez-la et cliquez sur **[!UICONTROL Valider la commande]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 
@@ -321,7 +321,7 @@ L&#39;opérateur validant peut refuser la validation d&#39;un kit d&#39;opérati
 
 Si l&#39;opérateur validant refuse une commande, la notification correspondante est automatiquement envoyée aux entités locales concernées : elle affiche le commentaire saisi par l&#39;opérateur ayant refusé la validation.
 
-L&#39;information est affichée dans la liste des kits d&#39;opération ou dans celle des commandes d&#39;opérations. Lorsqu&#39;elles ont accès à la console Adobe Campaign, les entités locales peuvent ainsi être informées de ce refus.
+Les informations sont affichées dans la liste des kits d&#39;opération ou dans la page des commandes d&#39;opération. S’ils ont accès à la console cliente Adobe Campaign, les entités locales sont informées de ce rejet.
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 

@@ -3,16 +3,16 @@ title: Rapports intégrés d’Adobe Campaign
 description: Rapports intégrés
 feature: Reporting
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # Rapports intégrés d’Adobe Campaign{#ootb-reports}
 
-Cette page fournit la liste des rapports intégrés d’Adobe Campaign, leur contenu et leur contexte. Toute une gamme de rapports intégrés est comprise dans Adobe Campaign. Vous pouvez y accéder à partir de la console cliente ou d’un navigateur Internet.
+Cette page fournit la liste des rapports intégrés d’Adobe Campaign, leur contenu et leur contexte. Adobe Campaign fournit toute une gamme de rapports intégrés, accessibles par le biais de la console cliente ou d’un navigateur Internet.
 
 Les types de rapports disponibles sont les suivants :
 
