@@ -3,7 +3,7 @@ title: Migration des utilisateurs techniques vers un compte technique sur Develo
 description: Migration des utilisateurs techniques vers un compte technique sur Developer Console
 hide: true
 hidefromtoc: true
-source-git-commit: a598c37dac999c93fa50c9a243e7b9cbfbed3cda
+source-git-commit: 8842404511bd6166d920ebdeee942007b33a1bab
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 2%
@@ -175,7 +175,7 @@ Une fois le processus de migration réalisé et validé, les appels Soap sont mi
            <urn:sessiontoken>SESSION_TOKEN</urn:sessiontoken>
            <urn:domEvent>
                <!--You may enter ANY elements at this point-->
-               <rtEvent type="melon" email="dchavan@adobe.com"/>
+               <rtEvent type="type" email="name@domain.com"/>
            </urn:domEvent>
        </urn:PushEvent>
    </soapenv:Body>
@@ -184,7 +184,7 @@ Une fois le processus de migration réalisé et validé, les appels Soap sont mi
 
 * Après la migration
 
-   ```
+   ```sql
    POST /nl/jsp/soaprouter.jsp HTTP/1.1
    Host: localhost:8080
    Content-Type: application/soap+xml;
@@ -199,7 +199,7 @@ Une fois le processus de migration réalisé et validé, les appels Soap sont mi
            <urn:sessiontoken></urn:sessiontoken>
            <urn:domEvent>
                <!--You may enter ANY elements at this point-->
-               <rtEvent type="melon" email="dchavan@adobe.com"/>
+               <rtEvent type="type" email="name@domain.com"/>
            </urn:domEvent>
        </urn:PushEvent>
    </soapenv:Body>
