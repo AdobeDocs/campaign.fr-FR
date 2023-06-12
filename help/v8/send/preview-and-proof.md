@@ -5,9 +5,9 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '752'
 ht-degree: 100%
 
 ---
@@ -51,20 +51,20 @@ Sélectionnez le type de cible du BAT dans la liste déroulante **[!UICONTROL Mo
 * Utilisez l’option **[!UICONTROL Substitution de l’adresse]** pour saisir les adresses e-mail et utiliser les données des destinataires cibles pour valider le contenu. Les adresses de substitution peuvent être saisies manuellement ou sélectionnées dans la liste déroulante. L’énumération appropriée est « Substitution address » (rcpAddress).
 Par défaut, la substitution est effectuée de manière aléatoire, mais vous pouvez sélectionner un destinataire spécifique dans la cible principale à l’aide de l’icône **[!UICONTROL Détail]**.
 
-   ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
+  ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
 
-   Choisissez l’option **[!UICONTROL Sélectionner un profil (doit être inclus dans la cible)]** et sélectionnez un ou une destinataire.
+  Choisissez l’option **[!UICONTROL Sélectionner un profil (doit être inclus dans la cible)]** et sélectionnez un ou une destinataire.
 
-   ![](assets/target-of-proofs-substitution.png){width="800" align="left"}
+  ![](assets/target-of-proofs-substitution.png){width="800" align="left"}
 
 
 * Utilisez l’option **[!UICONTROL Adresses de contrôle]** pour utiliser des adresses de contrôle en tant que cible du BAT. Ces adresses peuvent être importées à partir d’un fichier ou saisies manuellement.
 
-   >[!NOTE]
-   >
-   >Les adresses de contrôle n’appartiennent pas au tableau des destinataires par défaut (nms:recipient). Elles sont créées dans un tableau distinct. Si vous étendez le tableau des destinataires avec de nouvelles données, vous devez étendre le tableau des adresses de contrôle avec les mêmes données.
+  >[!NOTE]
+  >
+  >Les adresses de contrôle n’appartiennent pas au tableau des destinataires par défaut (nms:recipient). Elles sont créées dans un tableau distinct. Si vous étendez le tableau des destinataires avec de nouvelles données, vous devez étendre le tableau des adresses de contrôle avec les mêmes données.
 
-   En savoir plus sur les adresses de contrôle dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html?lang=fr){target="_blank"}.
+  En savoir plus sur les adresses de contrôle dans [cette section](../audiences/test-profiles.md).
 
 * Utilisez l’option **[!UICONTROL Cible spécifique et Adresses de contrôle]** pour cumuler des adresses de contrôle et des adresses e-mail spécifiques. Les paramétrages correspondants sont alors définis dans deux sous-onglets distincts.
 

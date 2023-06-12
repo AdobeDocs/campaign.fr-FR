@@ -4,9 +4,9 @@ title: Audience cible de la campagne marketing
 description: Découvrez comment définir l’audience de vos campagnes marketing
 feature: Campaigns, Audiences
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: a2518ea0c0ab23f50b3132b750a14e98b4ffad7d
-workflow-type: ht
-source-wordcount: '1560'
+source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
+workflow-type: tm+mt
+source-wordcount: '1567'
 ht-degree: 100%
 
 ---
@@ -17,8 +17,7 @@ Dans une campagne marketing, pour chaque diffusion, vous pouvez définir :
 
 * L&#39;audience cible. Vous pouvez envoyer des messages à une [liste des destinataires](#send-to-a-group) ou créer une [audience dans un workflow](#build-the-main-target-in-a-workflow).
 * Une population témoin. Vous pouvez [ajouter une population témoin](#add-a-control-group) pour surveiller le comportement des destinataires après diffusion du message.
-<!--
-* Seed addresses - Learn more in [this section](../../delivery/using/about-seed-addresses.md).-->
+* Adresses de contrôle : en savoir plus dans [cette section](../../v8/audiences/test-profiles.md).-->
 
 Certaines de ces informations sont héritées du [modèle de campagne](marketing-campaign-templates.md#campaign-templates).
 
@@ -109,9 +108,9 @@ Les icônes de la barre d&#39;outils permettent d&#39;agir sur l&#39;exécution 
 
    * L&#39;icône **[!UICONTROL Démarrer]** permet de lancer le workflow de ciblage. Lorsque vous cliquez sur cette icône, toutes les activités qui n&#39;ont pas de transition entrante sont activées (sauf les sauts de type &#39;arrivée&#39;).
 
-      ![](assets/start.png)
+     ![](assets/start.png)
 
-      La demande est prise en compte par le serveur, comme le notifie son état : **[!UICONTROL Démarrage dès que possible]**.
+     La demande est prise en compte par le serveur, comme le notifie son état : **[!UICONTROL Démarrage dès que possible]**.
 
    * Vous pouvez redémarrer le workflow de ciblage à partir de l&#39;icône correspondante de la barre d&#39;outils. Cette commande peut être utile si l&#39;icône **[!UICONTROL Démarrer]** n&#39;est pas disponible, par exemple lorsque l&#39;arrêt du workflow de ciblage est en cours. Dans ce cas, cliquez sur l&#39;icône **[!UICONTROL Redémarrer]** pour anticiper le démarrage. La demande est prise en compte par le serveur, comme le notifie son état : **[!UICONTROL Redémarrage demandé]**.
 
@@ -119,51 +118,52 @@ Les icônes de la barre d&#39;outils permettent d&#39;agir sur l&#39;exécution 
 
    * Les icônes de la barre d&#39;outils permettent d&#39;arrêter ou suspendre un workflow de ciblage en cours d&#39;exécution.
 
-      Lorsque vous cliquez sur l&#39;icône **[!UICONTROL Pause]**, les opérations en cours **[!UICONTROL ne sont pas]** suspendues, mais aucune autre activité n&#39;est lancée jusqu&#39;à la prochaine reprise.
+     Lorsque vous cliquez sur l&#39;icône **[!UICONTROL Pause]**, les opérations en cours **[!UICONTROL ne sont pas]** suspendues, mais aucune autre activité n&#39;est lancée jusqu&#39;à la prochaine reprise.
 
-      ![](assets/pause.png)
+     ![](assets/pause.png)
 
-      La commande est prise en compte par le serveur, comme le notifie son état : **[!UICONTROL Demande de pause]**.
+     La commande est prise en compte par le serveur, comme le notifie son état : **[!UICONTROL Demande de pause]**.
 
-      Vous pouvez également suspendre automatiquement un workflow de ciblage lorsque l&#39;exécution arrive à une activité. Pour cela, cliquez avec le bouton droit sur l&#39;activité à partir de laquelle le workflow de ciblage sera suspendu et choisissez **[!UICONTROL Activer mais ne pas exécuter]**.
+     Vous pouvez également suspendre automatiquement un workflow de ciblage lorsque l&#39;exécution arrive à une activité. Pour cela, cliquez avec le bouton droit sur l&#39;activité à partir de laquelle le workflow de ciblage sera suspendu et choisissez **[!UICONTROL Activer mais ne pas exécuter]**.
 
-      ![](assets/donotexecute.png)
+     ![](assets/donotexecute.png)
 
-      Une icône spécifique matérialise ce paramétrage.
+     Une icône spécifique matérialise ce paramétrage.
 
-      ![](assets/pause_activity.png)
+     ![](assets/pause_activity.png)
 
-      >[!NOTE]
-      >
-      >Cette option est utile lors des phases de conception et de test d&#39;une opération de ciblage.
+     >[!NOTE]
+     >
+     >Cette option est utile lors des phases de conception et de test d&#39;une opération de ciblage.
 
-      Cliquez sur **[!UICONTROL Démarrer]** pour reprendre l&#39;exécution.
+     Cliquez sur **[!UICONTROL Démarrer]** pour reprendre l&#39;exécution.
 
    * Cliquez sur l&#39;icône **[!UICONTROL Arrêter]** pour stopper l&#39;exécution en cours.
 
-      ![](assets/stop.png)
+     ![](assets/stop.png)
 
-      La commande est prise en compte par le serveur, comme le notifie son état : **[!UICONTROL Demande d&#39;arrêt]**.
-   Vous pouvez également arrêter automatiquement un workflow de ciblage lorsque l&#39;exécution arrive à une activité. Pour cela, cliquez avec le bouton droit sur l&#39;activité à partir de laquelle le workflow de ciblage sera suspendu et choisissez **[!UICONTROL Ne pas activer]**.
+     La commande est prise en compte par le serveur, comme le notifie son état : **[!UICONTROL Demande d&#39;arrêt]**.
 
-   ![](assets/donotactivate.png)
+  Vous pouvez également arrêter automatiquement un workflow de ciblage lorsque l&#39;exécution arrive à une activité. Pour cela, cliquez avec le bouton droit sur l&#39;activité à partir de laquelle le workflow de ciblage sera suspendu et choisissez **[!UICONTROL Ne pas activer]**.
 
-   Une icône spécifique matérialise ce paramétrage.
+  ![](assets/donotactivate.png)
 
-   ![](assets/unactivation.png)
+  Une icône spécifique matérialise ce paramétrage.
+
+  ![](assets/unactivation.png)
 
 
-   >[!NOTE]
-   >
-   >Cette option est utile lors des phases de conception et de test d&#39;une opération de ciblage.
+  >[!NOTE]
+  >
+  >Cette option est utile lors des phases de conception et de test d&#39;une opération de ciblage.
 
 * Arrêt inconditionnel
 
-   Dans l&#39;Explorateur, sélectionnez **[!UICONTROL Administration > Exploitation > Objets créés automatiquement > Workflows des opérations]** pour accéder aux workflows des opérations et agir sur ces derniers.
+  Dans l&#39;Explorateur, sélectionnez **[!UICONTROL Administration > Exploitation > Objets créés automatiquement > Workflows des opérations]** pour accéder aux workflows des opérations et agir sur ces derniers.
 
-   Vous pouvez effectuer un arrêt conditionnel de votre workflow en cliquant sur l&#39;icône **[!UICONTROL Actions]** et en sélectionnant **[!UICONTROL Arrêt inconditionnel]**. Cette action arrête votre workflow d&#39;opération.
+  Vous pouvez effectuer un arrêt conditionnel de votre workflow en cliquant sur l&#39;icône **[!UICONTROL Actions]** et en sélectionnant **[!UICONTROL Arrêt inconditionnel]**. Cette action arrête votre workflow d&#39;opération.
 
-   ![](assets/stop_unconditional.png)
+  ![](assets/stop_unconditional.png)
 
 ## Ajout d’une population témoin {#add-a-control-group}
 
