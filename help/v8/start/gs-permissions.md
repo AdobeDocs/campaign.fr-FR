@@ -6,9 +6,9 @@ role: User, Admin
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '511'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -29,11 +29,11 @@ Dans Adobe Campaign, les utilisateurs sont des **opérateurs** et les **groupes
 
 ## Étapes clés de l’octroi des autorisations{#key-steps-permissions}
 
-En tant qu’administrateur/administratrice de produit, vous pouvez accorder des autorisations aux utilisateurs de votre organisation. Les autorisations sont accordées via Adobe Admin Console et la console cliente Campaign. Les utilisateurs peuvent se connecter à Adobe Campaign au moyen de leur Adobe ID. Découvrez comment vous connecter à Adobe Campaign sur [cette page](connect.md).
+En tant qu’administrateur/administratrice de produit, vous pouvez accorder des autorisations aux utilisateurs de votre organisation. Les autorisations sont accordées par le biais d’Adobe Admin Console et de la console cliente Campaign. Les utilisateurs peuvent se connecter à Adobe Campaign au moyen de leur Adobe ID. Découvrez comment vous connecter à Adobe Campaign sur [cette page](connect.md).
 
 Les étapes clés sont les suivantes :
 
-* **Étape 1**: Définissez les groupes d&#39;opérateurs et attribuez-leur des autorisations dans la console cliente Campaign. [En savoir plus](manage-permissions.md#create-product-profile).
+* **Étape 1** : définissez les groupes d’opérateurs et d’opératrices et attribuez-leur des autorisations dans la console cliente Campaign. [En savoir plus](manage-permissions.md#create-product-profile).
 Vous pouvez également utiliser les groupes d’opérateurs intégrés pour commencer. Ces groupes par défaut et leurs autorisations sont répertoriés dans [cette section](manage-permissions.md#ootb-productprofiles).
 * **Étape 2** : créez des profils de produit dans Admin Console qui correspondent à ces groupes. [En savoir plus](manage-permissions.md#create-product-profile).
 Vous pouvez utiliser les profils de produit intégrés pour commencer. [En savoir plus](manage-permissions.md#ootb-productprofiles).
@@ -52,7 +52,7 @@ Découvrez comment ajouter des utilisateurs sur [cette page](manage-permissions.
 
 Les profils de produit sont des groupes de produits et de services que vous pouvez affecter aux utilisateurs. Dans Adobe Experience Cloud, les autorisations portent sur le profil d’un produit et non sur l’utilisateur/utilisatrice. Toutefois, vous pouvez déléguer des droits d’administration à des utilisateurs spécifiques.
 
-Dans le Admin Console, chaque Adobe Experience Cloud **profil de produits** pour Campaign, est associé à une **groupe d&#39;opérateurs** dans la console cliente de Campaign.
+Dans Admin Console, chaque **profil de produit** Adobe Experience Cloud pour Campaign est associé à un **groupe d’opérateurs** dans la console cliente Campaign.
 
 Découvrez comment créer et affecter des profils de produit sur [cette page](manage-permissions.md#create-a-product-profile).
 
