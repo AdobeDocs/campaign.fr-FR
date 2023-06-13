@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1845'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Pour optimiser la sécurité, les jetons de sécurité ont été supprimés des 
 
 **Améliorations**
 
-* Compte tenu de la fin de vie d’Internet Explorer 11, le moteur de rendu HTML dans la console utilise désormais **Microsoft Edge Chromium**. En outre, l’installation de **Microsoft Edge WebView 2** l’exécution est désormais requise pour toute installation de la console cliente.
+* Compte tenu de la fin de vie d’Internet Explorer 11, le moteur de rendu HTML dans la console utilise désormais **Microsoft Edge Chromium**. En outre, l’installation du runtime **Microsoft Edge WebView 2** est désormais requise pour toute installation de la console cliente.
 * Amélioration de l’exécution des workflows avec une haute disponibilité des workflows. Cela permet d’exécuter simultanément plusieurs workflows dans différents conteneurs, afin de prévenir la perte du service de workflow et d’éviter les erreurs d’exécution associées. **Remarque** : cette nouvelle fonctionnalité est en disponibilité limitée et est réservée à un ensemble de clients uniquement.
 * Les demandes d’accès à des informations personnelles sont désormais exécutées par lots pour un espace de nommage de confidentialité donné. Cette amélioration augmente le temps d’exécution des demandes de suppression en vertu du RGPD/de la confidentialité.
 
