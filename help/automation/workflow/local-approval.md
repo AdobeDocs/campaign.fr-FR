@@ -5,9 +5,9 @@ description: Validation en local
 feature: Workflows
 exl-id: 172b6827-ddfc-4c6e-87c9-eb49e73ab3ab
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '702'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -81,13 +81,13 @@ Les champs à renseigner dans le cas d&#39;un rapport de retour de diffusion son
 
 Cet exemple montre comment configurer un processus de validation pour une diffusion de workflow. Pour plus d’informations sur la création de workflows de diffusion, voir la section [Exemple : workflow de diffusion](delivery.md#example--delivery-workflow).
 
-Un opérateur peut valider une diffusion de deux manières : à l&#39;aide de la page Web liée dans l&#39;email ou via la console cliente.
+Pour valider une diffusion, un opérateur ou une opératrice peut utiliser la page web dont l’URL est fournie dans l’e-mail envoyé ou valider directement à partir de la console cliente.
 
 * Validation Web
 
    L&#39;email adressé aux opérateurs du groupe Administrateur permet de valider la cible de l&#39;envoi. Le message reprend le texte défini en remplaçant l&#39;expression JavaScript par la valeur calculée (ici &#39;574&#39;).
 
-   Pour valider la diffusion, cliquez sur le lien correspondant et connectez-vous à la console cliente Adobe Campaign.
+   Pour valider la diffusion, cliquez sur le lien correspondant et connectez-vous à la console cliente Adobe Campaign.
 
    ![](assets/new-workflow-valid-webaccess.png)
 
@@ -95,7 +95,7 @@ Un opérateur peut valider une diffusion de deux manières : à l&#39;aide de la
 
    ![](assets/new-workflow-valid-webaccess-confirm.png)
 
-* Validation via la console cliente
+* Approbation à partir de la console cliente
 
    Dans l&#39;arborescence, le noeud **[!UICONTROL Administration > Exploitation > Objets créés automatiquement > Validations en attente]** contient la liste des tâches à valider par l&#39;opérateur actuellement connecté. La liste doit afficher une ligne. Double-cliquez sur la ligne pour répondre. La fenêtre suivante s&#39;affiche :
 
