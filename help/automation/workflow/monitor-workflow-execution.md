@@ -5,9 +5,9 @@ description: Surveiller l’exécution des workflows
 feature: Workflows
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2015'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -121,7 +121,7 @@ Exemple de notification :
 
 ![](assets/wf-notification_error-msg.png)
 
-Le lien permet d&#39;accéder à la console cliente Adobe Campaign en mode Web et de travailler sur le workflow d&#39;erreur une fois connecté.
+Le lien permet d’accéder en mode Web à la console cliente Adobe Campaign et, après connexion, d’agir sur le workflow en erreur.
 
 ![](assets/wf-notification_error-console.png)
 
