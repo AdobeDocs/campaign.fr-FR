@@ -5,9 +5,9 @@ role: User, Admin
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1122'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Pour lier votre instance Campaign à votre compte Twitter, créez un service **T
 >
 >Chaque service **Twitter** doit également être créé par Adobe sur votre instance MID. Contactez votre représentant Adobe pour que votre environnement soit configuré.
 
-Pour entrer des paramètres, vous devez accéder à la console cliente Adobe Campaign et aux autorisations de votre application Twitter.
+Pour entrer des paramètres, vous devez accéder à la fois à la console cliente Adobe Campaign et aux autorisations de votre application Twitter.
 
 1. Dans **Adobe Campaign**, accédez à l&#39;onglet **[!UICONTROL Profils et cibles]**, puis sélectionnez le lien **[!UICONTROL Services et abonnements]**.
 1. Créez un service.
@@ -92,9 +92,9 @@ Pour entrer des paramètres, vous devez accéder à la console cliente Adobe Cam
 
 1. À partir de votre application Twitter, copiez le contenu des champs **Clé API** et **[Clé secrète API]** et collez-les dans les champs **[!UICONTROL Clé du client]** et **[!UICONTROL Secret du client]** de votre service Campaign **Twitter**.
 
-1. À partir de votre appli Twitter, copiez le contenu des champs **Jeton d&#39;accès** et **Jeton d&#39;accès secret**, puis collez-les dans les champs **[!UICONTROL Jeton d&#39;accès]** et **[!UICONTROL Jeton d&#39;accès secret]** de votre service **Twitter** Campaign.
+1. À partir de votre appli Twitter, copiez le contenu des champs **Jeton d’accès** et **Secret de jeton d’accès**, puis collez-les dans les champs **[!UICONTROL Jeton d’accès]** et **[!UICONTROL Secret de jeton d’accès]** de votre service **Twitter** Campaign.
 
-1. Dans la console cliente Campaign, cliquez sur **[!UICONTROL Enregistrer]**. Vous avez désormais délégué l&#39;accès en écriture à Adobe Campaign.
+1. Dans la console cliente Campaign, cliquez sur **[!UICONTROL Enregistrer]**. Vous avez désormais délégué l’accès en écriture à Adobe Campaign.
 
 Pour vérifier vos paramètres, vous pouvez :
 
