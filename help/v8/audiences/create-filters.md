@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1739'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -193,7 +193,7 @@ Utilisez et combinez les **Filtres rapides** pour définir des filtres sur des c
 
 Une fois ajoutés, les champs de filtre rapide s&#39;affichent au-dessus de la liste de données, les uns après les autres. Ils peuvent être supprimés indépendamment les uns des autres.
 
-Les filtres rapides sont spécifiques à chaque opérateur et sont réinitialisés chaque fois que l’opérateur efface le cache de sa console cliente.
+Les filtres rapides sont spécifiques à chaque opérateur et opératrice et sont réinitialisés à chaque fois que celui-ci ou celle-ci vide le cache de la console cliente.
 
 Si vous devez réutiliser un filtre, créez un **filtre avancé** et enregistrez-le. [En savoir plus](#advanced-filters).
 
