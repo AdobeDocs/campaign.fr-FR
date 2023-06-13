@@ -7,7 +7,7 @@ breadcrumb-title: Présentation de Campaign
 source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
 workflow-type: tm+mt
 source-wordcount: '553'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 98%
    + [Problèmes connus](start/known-issues.md)
    + [Matrice de compatibilité](start/compatibility-matrix.md)
    + Notes techniques{#technotes}
-      + [Migration d’un opérateur technique vers Developer Console](start/ims-migration.md)
+      + [Migrer un opérateur ou une opératrice technique vers Developer Console](start/ims-migration.md)
 + Prise en main {#new}
    + [Prise en main d’Adobe Campaign ](start/get-started.md)
    + [Fonctionnalités principales](start/whats-new.md)
