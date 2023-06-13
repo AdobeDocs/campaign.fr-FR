@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '921'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 94%
 
 Pour commencer à utiliser Campaign, vous devez installer et configurer la console cliente.
 
-La console cliente est une application native qui communique avec le serveur applicatif d’Adobe Campaign par le biais de protocoles internet standard, tels que SOAP et HTTP. La console cliente de Campaign centralise toutes les fonctionnalités et tous les paramètres et requiert une bande passante minimale car elle repose sur un cache local. Conçue pour un déploiement facile, la console cliente Campaign peut être déployée à partir d’un navigateur Internet, mise à jour automatiquement. Elle ne nécessite aucune configuration réseau spécifique, car elle ne génère que du trafic HTTP(S).
+La console cliente est une application native qui communique avec le serveur applicatif d’Adobe Campaign par le biais de protocoles internet standard, tels que SOAP et HTTP. La console cliente Campaign centralise toutes les fonctionnalités et tous les paramètres et requiert une bande passante minimale, car elle repose sur un cache local. Conçue pour un déploiement facile, cette console peut être déployée à partir d’un navigateur Internet et être mise à jour automatiquement. En outre, elle ne nécessite aucune configuration réseau spécifique, car elle génère uniquement du trafic HTTP(S).
 
 Avant de commencer, vous devez :
 
@@ -71,7 +71,7 @@ Vous pouvez ajouter autant de connexions que nécessaire pour vous connecter, pa
 
 ## Connexion à Adobe Campaign {#logon-to-ac}
 
-Les utilisateurs de Campaign se connectent à la console Adobe Campaign à l&#39;aide de leur Adobe ID, via le système IMS (Adobe IDentity Management System). Ils peuvent utiliser le même identifiant pour toutes les solutions d&#39;Adobe. La connexion est enregistrée lors de l&#39;utilisation d&#39;Adobe Campaign avec d&#39;autres solutions. Pour en savoir plus sur l&#39;IMS d&#39;Adobe, consultez [cette page](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
+Les utilisateurs de Campaign se connectent à la console Adobe Campaign à l&#39;aide de leur Adobe ID, via le système IMS (Adobe Identity Management System). Ils peuvent utiliser le même identifiant pour toutes les solutions d&#39;Adobe. La connexion est enregistrée lors de l&#39;utilisation d&#39;Adobe Campaign avec d&#39;autres solutions. Pour en savoir plus sur l&#39;IMS d&#39;Adobe, consultez [cette page](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
 
 Pour vous connecter à une instance, procédez comme suit :
 
@@ -83,7 +83,7 @@ Pour vous connecter à une instance, procédez comme suit :
 
 1. Cliquez sur **[!UICONTROL Ok]**.
 
-Vous pouvez ensuite vous connecter à Campaign à l&#39;aide de votre Adobe ID.
+Vous pouvez ensuite vous connecter à Campaign à l’aide de votre Adobe ID.
 
 ![](assets/adobeID.png)
 
