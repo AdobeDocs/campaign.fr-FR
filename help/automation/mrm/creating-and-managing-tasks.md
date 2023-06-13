@@ -4,9 +4,9 @@ title: Créer et gérer les tâches
 description: Créer et gérer les tâches
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3913'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -467,21 +467,21 @@ Voici les différentes étapes du cycle de vie complet d&#39;une tâche pour laq
 1. Lorsqu&#39;un intervenant a terminé la partie qui lui a été assignée, il valide la tâche, au choix :
 
    * à partir de l&#39;email de notification.
-   * via la console cliente ou l’interface web, dans le tableau de bord de la tâche.
+   * à partir de la console ou de l’interface web, au niveau du tableau de bord de la tâche.
 
       ![](assets/s_ncs_user_task_start_rea.png)
 
-1. A chaque validation d&#39;un intervenant, l&#39;état d&#39;avancement de la tâche est automatiquement mis à jour.
+1. À chaque validation d’un intervenant ou d’une intervenante, le statut de progression de la tâche est mis à jour.
 
    ![](assets/s_ncs_user_task_percentage_done_op.png)
 
 1. Le réviseur reçoit un e-mail de notification l’informant que l’opérateur a terminé la partie qui lui a été assignée.
 
-   Il peut suivre l&#39;avancement dans le tableau de bord de la tâche.
+   Cette personne peut suivre la progression dans le tableau de bord de la tâche.
 
    ![](assets/s_ncs_user_task_follow_from_dashboard.png)
 
-1. Une fois que le responsable de la tâche a décidé qu&#39;elle était terminée, il peut la fermer à l&#39;aide du lien contenu dans l&#39;email de notification envoyé au démarrage de la tâche, de la console cliente ou de l&#39;interface.
+1. Lorsqu’il ou elle estime que la tâche est terminée, le ou la responsable peut alors la clore de différentes manières : en cliquant sur le lien dans l’e-mail de notification envoyé à la date de début de la tâche, à partir de la console cliente ou dans l’interface web.
 
    ![](assets/s_ncs_user_task_console_ressource_validation.png)
 
@@ -491,7 +491,7 @@ Voici les différentes étapes du cycle de vie complet d&#39;une tâche pour laq
 
 1. La tâche passe alors à l&#39;état **[!UICONTROL A valider]**, et un email de notification est envoyé au validant.
 
-   Il valide la tâche à partir de l&#39;email de notification, de la console cliente ou de l&#39;interface web.
+   Il ou elle approuve la tâche à partir de l’e-mail de notification, de la console cliente ou de l’interface web.
 
    Il peut agir depuis le tableau de bord de l&#39;opération :
 
