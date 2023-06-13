@@ -6,9 +6,9 @@ role: Admin, User
 level: Beginner, Intermediate, Experienced
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1399'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -165,7 +165,7 @@ Tout d’abord, vous devez créer le compte externe Microsoft Dynamics 365.
 
 >[!NOTE]
 >
->Pour approuver la configuration, déconnectez-vous puis reconnectez-vous à la console cliente Adobe Campaign.
+>Pour valider la configuration, procédez à une déconnexion/reconnexion à la console cliente Adobe Campaign.
 
 ### Sélection des tables à synchroniser{#ms-dyn-create-tables}
 
