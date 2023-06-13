@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '660'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Le serveur Web Campaign contrôle l&#39;accès aux processus Web Campaign. JavaS
 
 ![](assets/ac-processes.png)
 
-La console cliente de Campaign se connecte au serveur Web à l’aide du code XML SOAP sur HTTP. Le serveur Web fournit la couche de sécurité, transmet les requêtes à la couche Application à l&#39;aide de Javascript et l&#39;accès des processus internes de Campaign à la base de données à l&#39;aide de SQL.
+La console cliente Campaign se connecte au serveur Web à l’aide de SOAP XML via HTTP. Le serveur Web fournit la couche de sécurité, transmet les requêtes à la couche Application à l&#39;aide de Javascript et l&#39;accès des processus internes de Campaign à la base de données à l&#39;aide de SQL.
 
 La communication globale entre les processus de Campaign est décrite dans le diagramme de déploiement autonome suivant : tous les composants de Campaign sont installés sur le même ordinateur.
 
