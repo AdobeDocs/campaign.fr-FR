@@ -6,9 +6,9 @@ role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Accédez au menu **Aide > À propos...** pour vérifier votre version.
 
 Vous accédez aux informations suivantes :
 
-* Le **version** numéro de la console cliente et du serveur d’applications. Dans l’exemple ci-dessus, la version est 8.1.5 pour la console cliente et le serveur d’applications.
+* Le numéro de **version** de votre console cliente Campaign et du serveur d’applications. Dans l’exemple ci-dessus, la version est 8.1.5 pour la console cliente et le serveur d’applications.
 * Le numéro SHA, entre parenthèses.
 * Un lien pour contacter l&#39;assistance clientèle d&#39;Adobe.
 * Des liens vers la Politique de confidentialité, les Conditions d&#39;utilisation et la Politique relative aux cookies d&#39;Adobe.
