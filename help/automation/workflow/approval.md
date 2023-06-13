@@ -5,9 +5,9 @@ description: Validation
 feature: Workflows, Approvals
 exl-id: 9e57d21c-ce16-448d-97f1-8c6844acb37b
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '569'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Dans le cas d&#39;une validation multiple, les transitions correspondant au choi
 
 Cette activité n&#39;est pas bloquante et le workflow peut effectuer d&#39;autres traitements dans l&#39;attente d&#39;une réponse.
 
-Un opérateur peut valider les tâches qui lui sont affectées à partir de la console cliente. Un opérateur ayant les droits administrateur peut visualiser et supprimer les tâches assignées à un opérateur, mais il ne peut pas y répondre.
+Un opérateur ou une opératrice peut approuver les tâches qui lui sont affectées à partir de la console cliente. Un opérateur ou une opératrice doté de droits d’administrateur peut visualiser et supprimer les tâches assignées aux opérateurs, mais il n’est pas possible d’y répondre.
 
 La modification du titre ou du corps du message de l&#39;activité n&#39;affecte pas les tâches en cours, en revanche, la modification des choix possibles affecte directement les tâches en cours qui héritent automatiquement de la nouvelle liste de choix.
 
