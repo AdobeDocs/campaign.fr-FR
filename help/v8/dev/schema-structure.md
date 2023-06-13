@@ -6,9 +6,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1401'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -180,13 +180,13 @@ Les éléments **`<elements>`** et **`<attributes>`** du schéma de données peu
    <attribute name="email" type="string" length="80" label="Email"/>
    ```
 
-   Le libellé est visible à partir du formulaire de saisie de la console cliente Adobe Campaign :
+   Le libellé est visible à partir du formulaire de saisie de la console cliente Adobe Campaign :
 
    ![](assets/schema_label.png)
 
 * La propriété **desc** permet de saisir une description longue.
 
-   La description est visible à partir du formulaire de saisie dans la barre d’état de la fenêtre principale de la console cliente Adobe Campaign.
+   La description est visible à partir du formulaire de saisie dans la barre de statut de la fenêtre principale de la console cliente Adobe Campaign.
 
    >[!NOTE]
    >
@@ -213,7 +213,7 @@ La valeur doit être une expression conforme au langage XPath. Pour plus d&#39;i
 
    >[!NOTE]
    >
-   >Dans la console cliente Adobe Campaign, la variable **[!UICONTROL Administration > Compteurs]** sert à gérer les compteurs.
+   >Dans la console cliente Adobe Campaign, le nœud **[!UICONTROL Administration>Compteurs]** permet de gérer les compteurs.
 
 Pour lier une valeur par défaut à un champ, vous pouvez utiliser le `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
@@ -237,7 +237,7 @@ Une liste déroulante énumère la liste de ces valeurs à partir du formulaire 
 
 >[!NOTE]
 >
->Dans la console cliente Adobe Campaign, la variable **[!UICONTROL Administration > Enumérations]** sert à gérer les énumérations.
+>Dans la console cliente Adobe Campaign, le nœud **[!UICONTROL Administration > Énumérations]** permet de gérer les énumérations.
 
 #### Énumération fixe {#set-enumeration}
 
@@ -361,7 +361,7 @@ Il est aussi possible de définir des expressions complexes, telles que les opé
 
 Des fonctions de haut niveau ont été ajoutées aux expressions afin d&#39;enrichir les possibilités offertes par ce langage.
 
-Vous pouvez accéder à la liste des fonctions disponibles à l’aide de n’importe quel éditeur d’expression dans la console cliente Adobe Campaign :
+La liste des fonctions disponibles est accessible à partir de n’importe quel éditeur d’expression dans la console cliente Adobe Campaign :
 
 ![](assets/schema_function.png)
 
