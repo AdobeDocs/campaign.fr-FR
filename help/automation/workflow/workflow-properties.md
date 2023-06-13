@@ -5,9 +5,9 @@ description: En savoir plus sur les propriétés des workflows de Campaign
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '614'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -76,6 +76,6 @@ Cette section n&#39;apparaît que dans les workflows d&#39;opérations.
 
    ![](assets/wf-properties_select-supervisors.png)
 
-   Le **[!UICONTROL Notification du responsable d&#39;un workflow]** le modèle par défaut comprend un lien pour accéder à la console cliente Adobe Campaign via le Web afin que le destinataire puisse travailler sur le problème une fois connecté.
+   Le modèle par défaut **[!UICONTROL Notification du responsable d’un workflow]** comprend un lien qui permet d’accéder via le Web à la console cliente Adobe Campaign et, après connexion, d’agir sur le workflow en erreur.
 
-   Vous pouvez créer un modèle personnalisé dans **[!UICONTROL Administration > Gestion de campagne > Modèles des diffusions techniques]**.
+   Vous pouvez créer un modèle personnalisé dans **[!UICONTROL Administration > Gestion de campagne > Modèles et diffusions techniques]**.
