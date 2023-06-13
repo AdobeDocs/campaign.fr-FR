@@ -5,9 +5,9 @@ description: Créer une campagne locale
 feature: Distributed Marketing
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1687'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -295,9 +295,9 @@ Lorsqu&#39;une commande d&#39;opération est effectuée par une entité locale, 
 
 ![](assets/mkg_dist_command_valid_web.png)
 
-#### Approbation via la console cliente {#approving-via-the-adobe-campaign-console}
+#### Approuver via la console cliente {#approving-via-the-adobe-campaign-console}
 
-La commande peut également être validée à partir de la console cliente, dans la vue d&#39;ensemble des commandes de l&#39;opération. Pour valider une commande, sélectionnez-la et cliquez sur **[!UICONTROL Valider la commande]**.
+La commande peut également être approuvée à partir de la console cliente, dans la vue d’ensemble des commandes de la campagne. Pour approuver une commande, sélectionnez-la et cliquez sur **[!UICONTROL Approuver la commande]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 
@@ -321,11 +321,11 @@ L&#39;opérateur validant peut refuser la validation d&#39;un kit d&#39;opérati
 
 Si l&#39;opérateur validant refuse une commande, la notification correspondante est automatiquement envoyée aux entités locales concernées : elle affiche le commentaire saisi par l&#39;opérateur ayant refusé la validation.
 
-Les informations sont affichées dans la liste des kits d&#39;opération ou dans la page des commandes d&#39;opération. S’ils ont accès à la console cliente Adobe Campaign, les entités locales sont informées de ce rejet.
+Les informations sont affichées dans la liste des pckages de campagne ou dans la page des commandes de campagne. Si les réviseurs et réviseuses ont accès à la console cliente Adobe Campaign, les entités locales sont informées de ce rejet.
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 
-Elles peuvent visualiser le commentaire saisi dans l&#39;onglet **[!UICONTROL Edition]** du kit d&#39;opération.
+Elles peuvent visualiser le commentaire saisi dans l’onglet **[!UICONTROL Edition]** du package des campagnes.
 
 ![](assets/mkg_dist_do_not_valid_tab.png)
 
