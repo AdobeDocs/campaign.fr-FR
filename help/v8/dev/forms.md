@@ -6,23 +6,23 @@ role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2574'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Prise en main des formulaires de saisie{#gs-ac-forms}
 
-Lorsque vous créez ou étendez un schéma, vous devez créer ou modifier les formulaires de saisie associés pour permettre aux utilisateurs finaux de voir ces modifications.
+Lorsque vous créez ou étendez un schéma, vous devez créer ou modifier les formulaires de saisie associés pour permettre aux utilisateurs finaux et utilisatrices finales de voir ces modifications.
 
-Un formulaire de saisie permet de modifier une instance associée à un schéma de données à partir de la console cliente Adobe Campaign. Le formulaire est identifié par son nom et son espace de noms.
+Un formulaire de saisie vous permet de modifier une instance associée à un schéma de données à partir de la console cliente Adobe Campaign. Le formulaire est identifié par son nom et son espace de noms.
 
 La clé d&#39;identification d&#39;un formulaire correspond à une chaîne constituée de l&#39;espace de noms et du nom séparés par deux points, par exemple &quot;cus:contact&quot;.
 
 ## Modification des formulaires de saisie
 
-Créez et configurez des formulaires de saisie à partir de la fonction **[!UICONTROL Administration] > [!UICONTROL Configuration] > [!UICONTROL Formulaires de saisie]** du dossier de la console cliente :
+Créez et configurez des formulaires de saisie à partir du dossier **[!UICONTROL Administration] > [!UICONTROL Configuration] > [!UICONTROL Formulaires de saisie]** de la console client :
 
 ![](assets/form_arbo.png)
 
