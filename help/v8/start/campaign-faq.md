@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -46,9 +46,9 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
    Adobe Campaign contient un ensemble de tableaux de bord et d&#39;outils qui permettent de surveiller vos diffusions E-mail.
 
-   [Consultez la documentation de Campaign Classic v7 pour découvrir](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr){target="_blank"} comment vous assurer que vos messages sont bien envoyés, surveiller l&#39;exécution et entreprendre une action en cas d&#39;erreur.
+   [Consultez la documentation de Campaign Classic v7 pour découvrir](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr){target="_blank"} comment vous assurer que vos messages sont bien envoyés, surveiller l&#39;exécution et entreprendre une action en cas d’erreur.
 
-1. **Est-il possible de surveiller l&#39;exécution des workflows ?**
+1. **Est-il possible de surveiller l’exécution des workflows ?**
 
    Découvrez comment surveiller l’exécution des workflows Campaign sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html?lang=fr).
 
@@ -68,9 +68,9 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
 1. **Comment télécharger Campaign ?**
 
-   Vous pouvez accéder au programme d’installation et à la console cliente à partir du Centre de téléchargement des Adobes.
+   Vous pouvez obtenir le programme d’installation et la console cliente à partir du centre de téléchargement d’Adobe.
 
-   En tant qu’utilisateur administrateur, accédez à l’Adobe [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/fr/campaign.html) {target="_blank"} pour télécharger Adobe Campaign.
+   En tant qu’utilisateur ou utilisatrice administrateur, accédez à la [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/fr/campaign.html) d’Adobe {target="_blank"} pour télécharger Adobe Campaign.
 
    En savoir plus sur le Centre de distribution [sur cette page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr){target="_blank"}.
 
