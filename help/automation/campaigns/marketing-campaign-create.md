@@ -5,9 +5,9 @@ description: Découvrez comment créer et exécuter des campagnes marketing
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1319'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -159,7 +159,7 @@ Lorsque vous créez une opération à partir de l&#39;onglet **[!UICONTROL Plann
 
 ## Utiliser l&#39;interface web {#use-the-web-interface-}
 
-Vous pouvez accéder aux écrans de la console cliente Adobe Campaign à partir d&#39;un navigateur Internet afin de visualiser l&#39;ensemble des opérations et diffusions, ainsi que les rapports et informations relatifs aux profils de votre base de données. Cet accès ne permet pas la création d’enregistrements. En fonction des droits de l&#39;opérateur, vous pouvez visualiser les données de la base et/ou agir sur celles-ci. Vous pouvez par exemple valider le contenu et le ciblage d&#39;une campagne, relancer ou arrêter une diffusion, etc.
+Vous pouvez accéder aux écrans de la console cliente Adobe Campaign à partir d’un navigateur Internet afin de visualiser l’ensemble des campagnes et diffusions, ainsi que les rapports et informations relatifs aux profils de votre base de données. Cet accès ne permet pas la création d’enregistrements. En fonction des droits de l’opérateur ou de l’opératrice, vous pouvez afficher et/ou agir sur les données présentes dans la base de données. Vous pouvez par exemple approuver le contenu et le ciblage d’une campagne, relancer ou arrêter une diffusion, etc.
 
 1. Connectez-vous comme vous le faites habituellement à l&#39;aide de l&#39;adresse https://`<your instance>:<port>/view/home`.
 1. Utilisez les menus pour accéder aux vues d&#39;ensemble.
