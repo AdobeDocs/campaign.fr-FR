@@ -5,7 +5,7 @@ title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Présentation de Campaign
 source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '553'
 ht-degree: 100%
 
@@ -80,7 +80,7 @@ ht-degree: 100%
       + [Utilisation de profils externes](audiences/external-profiles.md)
       + [Collecte de données de profil dans des formulaires web](audiences/collect-profiles.md)
       + [Utiliser les mappings de ciblage](audiences/target-mappings.md)
-      + [Création de profils de test](audiences/test-profiles.md)
+      + [Créer des profils de test](audiences/test-profiles.md)
    + Création d&#39;audiences {#create-audiences}
       + [Créer une liste de contacts](audiences/create-audiences.md)
       + [Créer et gérer des filtres](audiences/create-filters.md)
