@@ -5,10 +5,10 @@ feature: Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: df08cdb90271f4d18fd37b8ae528ebd872d0ea63
 workflow-type: tm+mt
-source-wordcount: '2722'
-ht-degree: 100%
+source-wordcount: '2723'
+ht-degree: 99%
 
 ---
 
@@ -115,7 +115,6 @@ Pour la création d&#39;une table personnalisée, vous avez deux possibilités 
 > * L’attribut **autouuid** s’applique uniquement aux [Déploiements Enterprise (FFDA)](../architecture/enterprise-deployment.md).
 >
 
-
 ## Liens et cardinalité {#links-and-cardinality}
 
 ### Liens {#links}
@@ -138,7 +137,7 @@ Par défaut, Adobe Campaign crée un lien à l&#39;aide de la clé primaire de 
 
 Pour créer un lien, veillez à ce que l&#39;enregistrement cible soit unique lorsqu&#39;une relation 1-1 a été déclarée. Dans le cas contraire, la jointure risque de renvoyer plusieurs enregistrements alors qu&#39;un seul est attendu. Cette situation entraîne des erreurs lors de la préparation de la diffusion lorsque &quot;la requête renvoie plus de lignes qu&#39;attendu&quot;. Définissez un nom de lien identique à celui du schéma cible.
 
-Définissez un lien possédant une cardinalité (1-N) dans le schéma du côté (1). Par exemple, la relation Destinataire (1) – (N) Transaction doit être définie dans le schéma de transaction.
+Définissez un lien avec une cardinalité (1-N) dans le schéma du côté (N). Par exemple, la relation Destinataire (1) – (N) Transaction doit être définie dans le schéma de transaction.
 
 Notez que la cardinalité inverse d&#39;un lien est (N) par défaut. Il est possible de définir un lien (1-1) en ajoutant l&#39;attribut revCardinality=&#39;single&#39; à la définition du lien.
 
