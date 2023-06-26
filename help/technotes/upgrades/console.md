@@ -5,10 +5,10 @@ description: Désapprobation de la console cliente 32 bits
 hide: true
 hidefromtoc: true
 exl-id: eaa20b88-4ba2-4146-b6bd-1eada34ecc53
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
-source-wordcount: '359'
-ht-degree: 100%
+source-git-commit: ac356acdbbc8072ce8263b1c62804a4703781ca9
+workflow-type: tm+mt
+source-wordcount: '390'
+ht-degree: 92%
 
 ---
 
@@ -25,6 +25,12 @@ La fin de prise en charge signifie qu’Adobe ne fournit plus d’assistance tec
 Pour tirer parti des dernières fonctionnalités et améliorer la sécurité, Adobe recommande de mettre à niveau votre ordinateur vers un système d’exploitation 64 bits.
 
 ## Forum aux questions
+
++++Comment effectuer une mise à niveau de Campaign v8 32 bits vers Campaign v8 64 bits ?
+
+La mise à niveau est transparente. Il vous suffit d’installer votre nouvelle version via la configuration comme une mise à niveau régulière.
+
++++
 
 +++La version 64 bits de la console cliente Campaign v8 est-elle compatible avec les ordinateurs 32 bits ?
 

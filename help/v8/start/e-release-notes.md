@@ -7,10 +7,10 @@ level: Beginner, Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: ac356acdbbc8072ce8263b1c62804a4703781ca9
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 100%
+source-wordcount: '586'
+ht-degree: 22%
 
 ---
 
@@ -18,32 +18,55 @@ ht-degree: 100%
 
 Cette page décrit les améliorations et correctifs inclus dans la prochaine version de Campaign .v8 Ce contenu est sujet à des modifications sans préavis jusqu’à la date de mise à jour. Les notes de mise à jour officielles sont disponibles sur cette [page](../start/release-notes.md).
 
-## Version 8.3.9 {#release-8-3-9}
+## Version 8.5 {#release-8-5}
 
->[!CAUTION]
->
-> La mise à niveau de la console client est obligatoire. Découvrez comment mettre à niveau votre console client sur cette [page](../start/connect.md#download-ac-console).
+_30 juin 2023_
 
-_7 octobre 2022_
+**Nouveautés**
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Service de notification push amélioré</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td><p>Campaign 8.5 propose son dernier service de notification push sur v8, optimisé par un cadre robuste reposant sur une technologie de pointe. Ce service est conçu pour déverrouiller de nouveaux niveaux d’évolutivité, afin que vos notifications puissent atteindre une audience plus large avec une efficacité transparente. Grâce à notre infrastructure améliorée et à nos processus optimisés, vous pouvez vous attendre à une plus grande échelle et à une plus grande fiabilité, ce qui vous permet d’interagir et de vous connecter avec vos utilisateurs d’applications mobiles comme jamais auparavant. Cette fonctionnalité est uniquement disponible pour un groupe sélectionné de clients (disponibilité limitée).</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**Mises à jour de compatibilité**
+
+* La version 32 bits de la console cliente est désormais obsolète. À compter de la version 8.6, la console cliente sera uniquement disponible en 64 bits. La mise à niveau vers la version 64 bits de la console cliente est transparente. Pour plus d’informations sur la mise à niveau de votre système d’exploitation, reportez-vous à cette [note technique](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html?lang=fr).
+* Vous pouvez maintenant connecter votre instance Campaign v8 à la base de données externe de votre Azure synapse. Cette connexion est gérée à l&#39;aide d&#39;un nouveau compte externe.
 
 **Améliorations**
 
-* Correction d’un problème qui affectait les mises à jour du statut du journal de diffusion sur l’instance MID, lorsque l’option FeatureFlag_GZIP_Compression était activée. (NEO-49183)
-* Le workflow technique **Nettoyage de la base de données** gère désormais également les schémas d’évaluation personnalisés. (NEO-48974)
-* Correction d’un problème en raison duquel les diffusions pouvaient garder le statut **En attente** même si la date de contact avait été atteinte. (NEO-48079, NEO-48251)
-* Stabilité améliorée lors de la gestion des chaînes XML non valides lors des appels SOAP. (NEO-48027)
-* Correction d’une erreur qui ralentissait l’analyse de la diffusion, lors de l’étape d&#39;exclusion des destinataires placés sur la liste bloquée, lors du ciblage d’un grand nombre de destinataires. (NEO-48019)
-* Afin de prévenir tout problème de lenteur lors de l’envoi de BAT aux adresses de contrôle, toutes les réplications consécutives des membres des adresses de contrôle sont désormais regroupées dans une seule demande de réplication. (NEO-44844)
-* Correction d’un problème qui entraînait des problèmes de personnalisation lors de l’envoi de SMS à l’aide d’un mode de diffusion externe. (NEO-46415)
-* Correction d’un problème qui affichait un message d’erreur lors d’une tentative de prévisualisation d’une diffusion dans un événement archivé de Message Center. (NEO-43620)
-* Correction d’un problème dans les workflows en raison duquel des fichiers sur le serveur ne pouvaient pas être mis à jour lors de l’utilisation de l’activité **Chargement de données (fichier)**. Le processus s’est arrêté à 100 % mais n’a jamais pris fin. (NEO-47269)
-* Correction d’un problème qui entraînait la création de DeliveryParts superflus lorsque la diffusion utilisait les modes Calendrier et Partage. (NEO-48634)
-* Correction d’un problème de performances lors de l’utilisation de vagues basées sur le calendrier. (NEO-48451)
-* Correction d’un problème qui entraînait l’affichage d’un message d’erreur dans l’écran de la liste de diffusion après la création d’un nouveau mapping de ciblage sur un schéma personnalisé. (NEO-49237)
-* Correction d’une erreur qui pouvait se produire si une diffusion atteignait une taille précise pendant le processus MTA. (NEO-46097)
-* Correction d’un problème en raison duquel les logs de tracking ne pouvaient pas renvoyer de données liées au navigateur du destinataire. (NEO-46612)
-* Correction d’un problème lors du postupgrade sur les environnements japonais. (NEO-46640)
-* Correction d’un problème qui se produisait lors de l’utilisation de l’activité **Requête** et du filtrage d’un tableau. Lorsqu’un nom de colonne contenait les mots « Mise à jour », une erreur de compilation se produisait avec un identifiant non valide et le message suivant : « nombre de lignes mises à jour ». (NEO-46485)
-* Correction d’un problème en raison duquel le workflow technique (ffdaReplicateStagingData) **[!UICONTROL Répliquer les données d’évaluation]** ne pouvait pas s’arrêter même si une erreur s’était produite lors de son exécution. (NEO-46280)
-* Correction d’un problème qui entraînait une perte de données si le workflow d’évaluation était en erreur et que la période de conservation était complètement dépassée. (NEO-48975)
-* Correction d’un problème en raison duquel, lors de l’injection de données dans la base de données cloud Snowflake avec une activité de **requête** de Campaign ainsi qu’une activité **Modifier la source de données**, le processus échouait si une barre oblique inverse était présente dans les données. La chaîne source n’a pas été placée dans une séquence d’échappement et les données n’ont pas été traitées correctement sur Snowflake. (NEO-45549)
+* Le débit des SMS a été considérablement amélioré par la mise en oeuvre d’une série d’optimisations, ce qui a amélioré la vitesse et l’efficacité des communications SMS.
+* Depuis Campaign v8.5, le processus d&#39;authentification vers Campaign v8 a été amélioré. Les opérateurs ou opératrices techniques doivent utiliser Adobe Identity Management System (IMS) pour se connecter à Campaign.
+* Vous pouvez désormais tirer parti des connexions Destination et Source pour synchroniser les attributs de profil tels que les données d’exclusion entre Adobe Experience Platform et la base de données Campaign v8.
+* La préparation de la diffusion a été optimisée.
+* Une nouvelle option d’authentification par clé a été ajoutée pour le compte externe SFTP, avec la méthode d’authentification utilisateur/mot de passe existante. Les utilisateurs peuvent désormais s’authentifier en toute sécurité à l’aide d’une clé privée, ce qui renforce la sécurité et fournit un autre mécanisme d’authentification pour l’accès SFTP.
+
+**Améliorations de la sécurité**
+
+* Vous ne pouvez plus créer d’opérateurs à partir de la console cliente. Vous devez maintenant utiliser le Admin Console . [En savoir plus](../start/gs-permissions.md).
+* Plusieurs outils tiers ont été mis à jour pour optimiser la sécurité.
+
+**Correctifs**
+
+* Correction d&#39;une erreur qui entraînait le codage incorrect des caractères spéciaux dans le contenu par HTML d&#39;une diffusion dans plusieurs navigateurs. (NEO-60081)
+* Correction d’un problème qui empêchait l’enregistrement d’un rapport sur un déploiement Campaign v8 Enterprise (FFDA). (NEO-56836)
+* Correction d’un problème lors de l’insertion ou de la mise à jour de données dans un schéma FFDA personnalisé via une activité de workflow Mise à jour de données . (NEO-54708)
+* Correction d&#39;une erreur qui empêchait le workflow de nettoyage de la base de supprimer des adresses dans la table nms:address sur FFDA. (NEO-54460)
+* Correction d’un problème lié au workflow de facturation qui pouvait échouer avec une erreur &quot;Mémoire de compilation épuisée&quot;. (NEO-51137)
+* Correction d’un problème qui empêchait le bon fonctionnement du décryptage GPG dans l’activité de workflow Chargement (fichier) . (NEO-50257)
+* Correction d’un problème qui empêchait le bon fonctionnement de la fonction `JSPContext.sqlExecWithOneParam`. (NEO-50066)
+* Correction d’un problème qui entraînait des échecs de diffusion lors de l’utilisation de caractères non imprimables dans des champs de personnalisation. (NEO-48588)
+* Correction d’un problème qui entraînait des erreurs de diffusion lors de l’insertion d’images dynamiques Adobe Target. (NEO-62689)
+* Correction d’un problème qui empêchait les navigateurs d’ajouter des espaces supplémentaires lors de l’utilisation de contenu conditionnel dans une diffusion. (NEO-62132)
+* Correction d’un problème en raison duquel une fenêtre contextuelle s’ouvrait lors d’un clic sur une image dans l’éditeur de contenu d’email. (NEO-60752)
+* Correction d&#39;une erreur qui entraînait une erreur et empêchait le défilement lors de l&#39;édition du contenu d&#39;une diffusion. (NEO-61364)
