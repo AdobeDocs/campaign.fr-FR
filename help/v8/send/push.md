@@ -5,10 +5,10 @@ feature: Push
 role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: e7c255d30e38c4e17779ef820e8984668ac5d48b
+source-git-commit: d941d9a364ffb2df77ba6726e655ca2916448f89
 workflow-type: tm+mt
-source-wordcount: '1860'
-ht-degree: 100%
+source-wordcount: '894'
+ht-degree: 99%
 
 ---
 
@@ -16,143 +16,7 @@ ht-degree: 100%
 
 Les diffusions d’applications mobiles vous permettent d’envoyer des notifications aux appareils iOS et Android.
 
-Pour envoyer des notifications push dans Adobe Campaign, vous devez effectuer les opérations suivantes :
-
-1. Intégrer le SDK à votre application. [En savoir plus](#push-sdk)
-1. Créer un service d’informations de type application mobile pour votre application mobile, puis ajouter les versions iOS et Android de l’application à ce service. [En savoir plus](#push-config)
-1. Créer une diffusion pour iOS et Android. [En savoir plus](#push-create)
-
-## Intégrer le SDK {#push-sdk}
-
-Pour envoyer des notifications push avec Adobe Campaign, vous devez configurer l’extension Adobe Campaign dans l’interface utilisateur de collecte de données du SDK mobile Adobe Experience Platform.
-
-Le SDK mobile Adobe Experience Platform permet d’optimiser les solutions et services Experience Cloud d’Adobe dans vos applications mobiles. La configuration des SDK s’effectue dans l’interface utilisateur de collecte de données, qui offre des options de configuration flexibles et des intégrations extensibles basées sur des règles.
-
-[En savoir plus dans la documentation Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
-
-
-## Configuration des paramètres de votre application dans Campaign{#push-config}
-
-Avant d’envoyer des notifications push, vous devez définir les paramètres de vos applications iOS et Android dans Adobe Campaign.
-
-Les notifications push sont envoyées aux utilisateurs et utilisatrices de votre application par le biais d’un service dédié. Lorsque les utilisateurs et utilisatrices installent votre application, ils s’abonnent à ce service : Adobe Campaign s’appuie sur ce service pour cibler uniquement les abonné(e)s de votre application. Dans ce service, vous devez ajouter vos applications iOS et Android à envoyer sur les appareils iOS et Android.
-
-Pour créer un service destiné à envoyer des notifications push, procédez comme suit :
-
-1. Accédez à l’onglet **[!UICONTROL Profils et cibles > Services et abonnements]**, puis cliquez sur **[!UICONTROL Créer]**.
-
-   ![](assets/new-service-push.png){width="800" align="left"}
-
-1. Saisissez un **[!UICONTROL Libellé]** et un **[!UICONTROL Nom interne]**, puis sélectionnez un type d’**[!UICONTROL Application mobile]**. 
-
-   >[!NOTE]
-   >
-   >Le mapping de ciblage par défaut **[!UICONTROL Applications abonnées (nms:appSubscriptionRcp)]** est lié à la table des destinataires. Si vous souhaitez utiliser un autre mapping de ciblage, vous devez en créer un nouveau et le renseigner dans le champ **[!UICONTROL Mapping de ciblage]** du service. Pour plus d’informations sur les mappings de ciblage, consultez [cette page](../audiences/target-mappings.md).
-
-1. Ensuite, utilisez l’icône **[!UICONTROL Ajouter]** sur la droite pour définir les applications mobiles qui utilisent ce service.
-
->[!BEGINTABS]
-
->[!TAB iOS]
-
-Pour créer une application pour les appareils iOS, procédez comme suit :
-
-1. Sélectionnez **[!UICONTROL Créer une application iOS]**, puis cliquez sur **[!UICONTROL Suivant]**.
-
-   ![](assets/new-ios-app.png){width="600" align="left"}
-
-1. Saisissez le nom de votre application dans le champ **[!UICONTROL Libellé]**.
-1. (facultatif) Vous pouvez enrichir le contenu d’un message push avec certaines **[!UICONTROL variables d’application]**. Elles sont entièrement personnalisables et font partie de la payload du message envoyé à l&#39;appareil mobile.
-
-   Dans l’exemple suivant, les variables **mediaURl** et **mediaExt** sont ajoutées pour créer une notification push enrichie et fournir à l’application l’image à afficher dans la notification.
-
-   ![](assets/ios-app-parameters.png){width="600" align="left"}
-
-1. Accédez à l’onglet **[!UICONTROL Paramètres d’abonnement]** pour définir le mapping avec une extension du schéma **[!UICONTROL Applications abonnées (nms:appsubscriptionRcp)]**.
-
-1. Accédez à l’onglet **[!UICONTROL Sons]** pour définir un son à lire. Cliquez sur **[!UICONTROL Ajouter]** et renseignez le champ **[!UICONTROL Nom interne]**. Il doit contenir le nom du fichier incorporé dans l’application ou le nom du son système.
-
-1. Cliquez sur **[!UICONTROL Suivant]** pour passer à la configuration de l’application de développement.
-
-1. La clé d’intégration est spécifique à chaque application. Elle relie l’application mobile à Adobe Campaign.
-
-   Assurez-vous que la même **[!UICONTROL clé d’intégration]** est définie dans Adobe Campaign et dans le code de l’application via le SDK.
-
-   Pour en savoir plus, consultez la [documentation pour les développeurs et développeuses](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}.
-
-
-   >[!NOTE]
-   >
-   > La **[!UICONTROL clé d&#39;intégration]** est entièrement personnalisable avec une valeur de chaîne, mais doit être exactement identique à celle spécifiée dans le SDK.
-   >
-   > Vous ne pouvez pas utiliser le même certificat pour la version de développement (sandbox) et la version de production de l’application.
-
-1. Sélectionnez l’icône dans le champ **[!UICONTROL Icône de l’application]** pour personnaliser l’application mobile dans votre service.
-
-1. Sélectionnez le **[!UICONTROL mode d&#39;authentification]**. Deux modes sont disponibles :
-
-   * (Recommandé) **[!UICONTROL Authentification basée sur les jetons]** : renseignez les paramètres de connexion APNs **[!UICONTROL Identifiant de la clé]**, **[!UICONTROL Identifiant de l&#39;équipe]** et **[!UICONTROL Identifiant de paquet]**, puis sélectionnez votre certificat p8 en cliquant sur **[!UICONTROL Renseigner la clé privée…]**. Pour plus d&#39;informations sur l&#39;**[!UICONTROL authentification basée sur les jetons]**, reportez-vous à la [documentation Apple](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
-
-   * **[!UICONTROL Authentification basée sur les certificats]** : cliquez sur **[!UICONTROL Renseigner le certificat...]**, sélectionnez votre clé p12 et saisissez le mot de passe fourni par le développeur ou la développeuse d&#39;applications mobiles.
-   Vous pouvez modifier votre mode d’authentification ultérieurement dans l’onglet **[!UICONTROL Certificat]** de votre application mobile.
-
-1. Utilisez le bouton **[!UICONTROL Tester la connexion]** pour valider votre configuration.
-
-1. Cliquez sur **[!UICONTROL Suivant]** pour passer à la configuration de l’application de production et procédez comme décrit ci-dessus.
-
-1. Cliquez sur **[!UICONTROL Terminer]**.
-
-Votre application iOS est maintenant prête à être utilisée dans Campaign.
-
->[!TAB Android]
-
-Pour créer une application pour les appareils Android, procédez comme suit :
-
-1. Sélectionnez **[!UICONTROL Créer une application Android]**, puis cliquez sur **[!UICONTROL Suivant]**.
-
-   ![](assets/new-android-app.png){width="600" align="left"}
-
-1. Saisissez le nom de votre application dans le champ **[!UICONTROL Libellé]**.
-1. La clé d’intégration est spécifique à chaque application. Elle relie l’application mobile à Adobe Campaign.
-
-   Assurez-vous que la même **[!UICONTROL clé d’intégration]** est définie dans Adobe Campaign et dans le code de l’application via le SDK.
-
-   Pour en savoir plus, consultez la [documentation pour les développeurs et développeuses](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}.
-
-
-   >[!NOTE]
-   >
-   > La **[!UICONTROL clé d&#39;intégration]** est entièrement personnalisable avec une valeur de chaîne, mais doit être exactement identique à celle spécifiée dans le SDK.
-
-1. Sélectionnez l’icône dans le champ **[!UICONTROL Icône de l’application]** pour personnaliser l’application mobile dans votre service.
-1. Sélectionnez **HTTP v1** dans la liste déroulante **[!UICONTROL Version de l’API]**.
-1. Cliquez sur le lien **[!UICONTROL Charger le fichier JSON du projet pour extraire les détails du projet…]** pour charger votre fichier de clé JSON. Pour plus d’informations sur l’extraction de votre fichier JSON, consultez la [documentation sur Firebase de Google](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
-
-   Vous pouvez également saisir manuellement les informations suivantes :
-   * **[!UICONTROL Identifiant du projet]**
-   * **[!UICONTROL Clé privée]**
-   * **[!UICONTROL Email client]**
-
-1. Utilisez le bouton **[!UICONTROL Tester la connexion]** pour valider votre configuration.
-
-   >[!CAUTION]
-   >
-   >Le bouton **[!UICONTROL Tester la connexion]** ne vérifie pas si le serveur MID a accès au serveur FCM.
-
-1. (facultatif) Vous pouvez, si nécessaire, enrichir le contenu d&#39;un message push avec certaines **[!UICONTROL variables d’application]**. Elles sont entièrement personnalisables et font partie de la payload du message envoyé à l&#39;appareil mobile.
-
-1. Cliquez sur **[!UICONTROL Terminer]**, puis sur **[!UICONTROL Enregistrer]**. Votre application Android est maintenant prête à être utilisée dans Campaign.
-
-Vous trouverez ci-dessous les noms de payload FCM pour personnaliser davantage votre notification push :
-
-| Type de message | Élément de message configurable (nom de payload FCM) | Options configurables (nom de payload FCM) |
-|:-:|:-:|:-:|
-| Message de données | N/A | validate_only |
-| Message de notification | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
-
-
->[!ENDTABS]
-
+Avant de commencer à envoyer des notifications push avec Adobe Campaign, vous devez vous assurer que les configurations et les intégrations sont en place sur l’application mobile et pour les balises dans Adobe Experience Platform. [En savoir plus sur la configuration push.](push-settings.md)
 
 ## Création de votre première notification push{#push-create}
 
@@ -212,10 +76,11 @@ Pour envoyer des notifications sur les appareils iOS, procédez comme suit :
 
    * **[!UICONTROL Volume]** : volume de votre son de 0 à 100.
 
-      >[!NOTE]
-      > 
-      >Les sons doivent être inclus dans l’application et définis lors de la création du service.
-      
+     >[!NOTE]
+     > 
+     >Les sons doivent être inclus dans l’application et définis lors de la création du service.
+     >
+
    ![](assets/push_ios_5.png)
 
 1. Dans l’onglet **[!UICONTROL Variables de l’application]**, vos **[!UICONTROL variables d’application]** sont automatiquement ajoutées. Elles permettent de définir le comportement des notifications. Par exemple, vous pouvez configurer l’affichage d’un écran spécifique lorsque l’utilisateur active la notification.
@@ -245,6 +110,7 @@ Pour envoyer des notifications sur les appareils iOS, procédez comme suit :
       * **[!UICONTROL Sensible à l’heure]** : le système présente immédiatement la notification, allume l’écran, peut émettre un son et passer en mode Thème. Ce niveau ne nécessite pas d’autorisation spéciale de la part d’Apple.
 
       * **[!UICONTROL Critique]** : le système présente immédiatement la notification, allume l’écran et contourne le bouton de désactivation ou le mode de thème. Notez que ce niveau nécessite une autorisation spéciale de la part d’Apple.
+
    * **[!UICONTROL Score de pertinence]** : définissez un score de pertinence compris entre 0 et 100. Le système l’utilise pour trier les notifications dans le résumé de la notification.
 
    ![](assets/push_ios_7.png)
@@ -283,7 +149,6 @@ Pour envoyer des notifications sur les appareils Android, procédez comme suit 
    <!--![](assets/push-android-preview.png)-->
 
 >[!ENDTABS]
-
 
 ## Test, envoi et surveillance de vos notifications push
 
