@@ -6,17 +6,17 @@ role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5256fc15-1878-4064-9c75-7876a3826b83
 source-git-commit: db27abf860b0744a4120166c68e2cc2ae8a3d172
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '373'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # Utiliser les mappings de ciblage{#gs-target-mappings}
 
-Par défaut, les modèles de diffusion email et SMS sont ciblés **[!UICONTROL Destinataires]**. Leur mapping de ciblage utilise donc les champs de la variable **nms:recipient** table.
+Par défaut, les modèles de diffusion par e-mail et SMS ciblent les **[!UICONTROL destinataires]**. Leur mapping de ciblage utilise donc les champs du tableau **nms:recipient**.
 
-Pour les notifications push, le mapping de ciblage par défaut est **Applications abonnées (nms:appSubscriptionRcp)**, qui est lié à la table des destinataires.
+Pour les notifications push, le mapping de ciblage par défaut est **Applications Abonnés (nms:appSubscriptionRcp)**, qui est lié au tableau des destinataires.
 
 Vous pouvez utiliser d’autres mappings de ciblage pour vos diffusions ou créer un nouveau mapping de ciblage.
 
