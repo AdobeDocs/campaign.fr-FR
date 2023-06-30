@@ -5,7 +5,7 @@ feature: Federated Data Access
 role: Admin
 level: Beginner, Intermediate
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 100%
@@ -27,7 +27,6 @@ Utilisez le connecteur FDA (Federated Data Access) pour connecter Campaign à un
 >
 
 
-
 ## Bonnes pratiques et limites
 
 L’option FDA est assujettie aux limitations du système de la base de données tierce que vous utilisez.
@@ -41,11 +40,12 @@ Gardez également à l’esprit les limites et bonnes pratiques suivantes :
    * exporter les données de la base Adobe Campaign vers la base externe et effectuer les opérations uniquement depuis la base externe avant de réimporter les résultats dans Adobe Campaign.
 
    * collecter les données de la base externe dans Adobe Campaign et effectuer les opérations localement.
-   Si vous souhaitez personnaliser vos diffusions à l&#39;aide des données de la base de données externe, collectez les données à utiliser dans un workflow afin de les rendre disponibles dans une table temporaire. Utilisez alors les données de la table temporaire pour personnaliser votre diffusion. Pour ce faire, pré-traitez la personnalisation des messages dans un workflow dédié à l’aide de la fonction **[!UICONTROL Préparer les données de personnalisation avec un workflow]**, disponible dans l’onglet **[!UICONTROL Analyse]** des propriétés de la diffusion. Cette option permet, lors de l&#39;analyse de la diffusion, de créer et d&#39;exécuter automatiquement un workflow qui stocke toutes les données liées à la cible dans une table temporaire, notamment les données issues des tables liées dans une base de données externe.
 
-   >[!CAUTION]
-   >
-   >Cette option améliore considérablement les performances lors de l&#39;exécution de l&#39;étape de personnalisation.
+  Si vous souhaitez personnaliser vos diffusions à l&#39;aide des données de la base de données externe, collectez les données à utiliser dans un workflow afin de les rendre disponibles dans une table temporaire. Utilisez alors les données de la table temporaire pour personnaliser votre diffusion. Pour ce faire, pré-traitez la personnalisation des messages dans un workflow dédié à l’aide de la fonction **[!UICONTROL Préparer les données de personnalisation avec un workflow]**, disponible dans l’onglet **[!UICONTROL Analyse]** des propriétés de la diffusion. Cette option permet, lors de l&#39;analyse de la diffusion, de créer et d&#39;exécuter automatiquement un workflow qui stocke toutes les données liées à la cible dans une table temporaire, notamment les données issues des tables liées dans une base de données externe.
+
+  >[!CAUTION]
+  >
+  >Cette option améliore considérablement les performances lors de l&#39;exécution de l&#39;étape de personnalisation.
 
 
 ## Utiliser des données externes dans un workflow

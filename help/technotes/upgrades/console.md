@@ -2,29 +2,31 @@
 product: campaign
 title: Désapprobation de la console cliente 32 bits
 description: Désapprobation de la console cliente 32 bits
-hide: true
-hidefromtoc: true
 exl-id: eaa20b88-4ba2-4146-b6bd-1eada34ecc53
-source-git-commit: ac356acdbbc8072ce8263b1c62804a4703781ca9
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 92%
+source-wordcount: '344'
+ht-degree: 67%
 
 ---
 
-# Fin de la prise en charge sur les systèmes d’exploitation 32 bits | Adobe Campaign v8 {#console-eol}
+# Fin de la prise en charge sur les systèmes d’exploitation 32 bits {#console-eol}
 
-La version 32 bits de la console cliente sera abandonnée dans la version 8.5. À compter de la version 8.6, Campaign v8 ne prendra plus en charge les systèmes d’exploitation 32 bits, y compris les mises à jour de produits et de sécurité. Adobe vous recommande vivement de garder votre sécurité à jour.
+La version 32 bits de la console cliente est obsolète dans la version 8.5. Une nouvelle version 64 bits de la console cliente est disponible pour une mise à niveau transparente.
 
-## Fin de la prise en charge
+À compter de la version 8.6, Campaign v8 ne prendra plus en charge les systèmes d’exploitation 32 bits, y compris les mises à jour de produits et de sécurité. Adobe vous recommande vivement de garder votre sécurité à jour.
+
+Cette modification vous concerne uniquement si vous disposez de la version 32 bits de Windows 8 ou 10.
+
+## Fin de la prise en charge{#eol}
 
 La fin de prise en charge signifie qu’Adobe ne fournit plus d’assistance technique, y compris les mises à jour de produits et/ou de sécurité, pour tous les produits dérivés d’un produit ou d’une version de produit (versions localisées, mises à niveau mineures, systèmes d’exploitation, versions à point et à double point et produits du connecteur).
 
-## Recommandations
+## Recommandations{#console-eol-recommendations}
 
-Pour tirer parti des dernières fonctionnalités et améliorer la sécurité, Adobe recommande de mettre à niveau votre ordinateur vers un système d’exploitation 64 bits.
+Pour tirer parti des dernières fonctionnalités et d’une sécurité améliorée, vous devez mettre à niveau votre ordinateur vers un système d’exploitation 64 bits.
 
-## Forum aux questions
+## Forum aux questions{#console-eol-faq}
 
 +++Comment effectuer une mise à niveau de Campaign v8 32 bits vers Campaign v8 64 bits ?
 
@@ -52,21 +54,23 @@ Oui. À compter de la version 8.6, la console cliente Campaign v8 ne sera plus 
 
 +++Comment effectuer une mise à niveau de Windows (32 bits) vers le système d’exploitation Windows (64 bits) ?
 
-Assurez-vous que votre processeur prend en charge l’installation d’un système d’exploitation 64 bits. Pour passer de la version 32 bits à la version 64 bits de Windows, vous devez reformater votre disque dur, installer la version 64 bits de Windows, puis réinstaller tout ce qui se trouvait sur votre appareil. Pour plus d’informations, voir [Windows 32 et 64 bits : forum aux questions](https://support.microsoft.com/fr-fr/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d).
+Assurez-vous que votre processeur prend en charge l’installation d’un système d’exploitation 64 bits. Pour passer de la version 32 bits à la version 64 bits de Windows, vous devez reformater votre disque dur, installer la version 64 bits de Windows, puis réinstaller tout ce qui se trouvait sur votre appareil. Pour plus d’informations, voir [Windows 32 et 64 bits : forum aux questions](https://support.microsoft.com/fr-fr/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d){target="_blank"}.
 
 +++
 
-+++ Comment vérifier si je suis sur un ordinateur 32 bits ou 64 bits ?
+<!--
++++ How do I check if I am on a 32-bit computer or 64-bit?
 
-**WINDOWS 10 ET WINDOWS 8.1**
+**WINDOWS 10 AND WINDOWS 8.1**
 
-1. Cliquez sur le bouton **Démarrer**, puis sélectionnez **Paramètres** > **Système** > **À propos**.
-1. Sous **Spécifications de l’appareil**, voir **Type de système**.
+1. Click the **Start** button, then select **Settings** > **System** > **About**.
+1. Under **Device specifications**, see **System type**.
 
-**WINDOWS 7**
-1. Sélectionnez le bouton **Démarrer**, faites un clic droit sur **Ordinateur** et sélectionnez **Propriétés**.
-1. Sous **Système**, consultez le type de système.
+**WINDOWS 7**
+1. Select the **Start** button, right-click **Computer** and select **Properties**.
+1. Under **System**, see the system type.
 
-Pour plus d’informations, voir [Windows 32 et 64 bits : forum aux questions](https://support.microsoft.com/fr-fr/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d).
+For more information, see [32-bit and 64-bit Windows: Frequently asked questions](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d){target="_blank"}.
 
 +++
+-->

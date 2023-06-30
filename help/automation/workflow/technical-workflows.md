@@ -4,10 +4,10 @@ title: Workflows techniques
 description: En savoir plus sur les workflows techniques disponibles avec Campaign
 feature: Workflows
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
-source-wordcount: '1659'
-ht-degree: 100%
+source-wordcount: '1687'
+ht-degree: 98%
 
 ---
 
@@ -84,6 +84,7 @@ Découvrez comment surveiller les workflows techniques dans cette [section dédi
 | **Agrégats du reporting** (reportingAggregates) | Diffusion | Ce workflow met à jour les agrégats utilisés dans les rapports. Par défaut, il se déclenche tous les jours à 2H00. |
 | **Envoi des indicateurs et des attributs de campagne** (webAnalyticsSendMetrics) | Connecteurs Web Analytics | Ce workflow permet d&#39;envoyer les indicateurs des campagnes par e-mail d&#39;Adobe Campaign vers Adobe Experience Cloud Suite via le connecteur Adobe® Analytics. Les indicateurs concernés sont les suivants : Envoyé (iSent), Nombre total d&#39;ouvertures (iTotalRecipientOpen), Nombre total de destinataires ayant cliqué (iTotalRecipientClick), Erreurs (iError), Opt-Out (opt-out) (iOptOut). |
 | **Stock : commandes et alertes** (stockMgt) | Installé par défaut | Ce workflow lance le calcul des stocks sur les lignes de commande et gère les seuils d&#39;alerte. |
+| **Synchronisation des applications mobiles à partir de la collecte de données Adobe Experience Platform** (syncWithLaunch) | Installé par défaut, à partir de la version 8.5 | Ce workflow synchronise automatiquement les propriétés mobiles avec Adobe Campaign à partir de la collecte de données. |
 | **Tracking** (tracking) | Installé par défaut | Ce workflow réalise la récupération et la consolidation des informations de tracking. Il assure également le re-calcul des statistiques de tracking et de diffusions, notamment celles utilisées par les workflows d&#39;archivage de Message Center. Par défaut, il se déclenche toutes les heures. |
 | **Mise à jour du statut des événements** (updateEventsStatus) | Exécution des messages transactionnels (Message Center - Exécution) | Ce workflow permet d&#39;attribuer un statut à l&#39;événement. Les statuts d&#39;un événement sont les suivants :<ul><li>En attente : l&#39;événement se trouve dans la file d&#39;attente. Aucun modèle de message ne lui a encore été associé.</li><li>En attente de diffusion : l&#39;événement est dans la file d&#39;attente, un modèle de message lui a été associé et il est en cours de traitement par la diffusion.</li><li>Envoyé : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a été envoyée.</li><li>Ignoré par la diffusion : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a été ignorée.</li><li>Erreur de diffusion : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a échoué.</li><li>Evénement non pris en charge : l&#39;association de l&#39;événement à un modèle de message a échoué. L&#39;événement ne sera pas retraité.</li></ul> |
 | **Mettre à jour pour la délivrabilité** (deliverabilityUpdate) | Installé par défaut | Une fois le package Supervision de la délivrabilité (Email Deliverability) installé, ce workflow s’exécute de nuit et gère les règles de qualification des e-mails de retour, ainsi que la liste des domaines et des MX. Pour ce faire, le port HTTPS doit être ouvert sur la plateforme. |

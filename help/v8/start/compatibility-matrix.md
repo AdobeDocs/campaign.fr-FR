@@ -5,10 +5,10 @@ feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
-source-wordcount: '385'
-ht-degree: 100%
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 96%
 
 ---
 
@@ -26,14 +26,14 @@ Lorsque des versions spécifiques de ces systèmes et outils tiers arrivent en f
 
 Les systèmes d’exploitation et le navigateur ci-après sont nécessaires pour utiliser la console cliente Campaign. [En savoir plus](connect.md).
 
->[!NOTE]
->
->Veuillez noter que la version 32 bits de la console cliente sera abandonnée dans la version 8.5. À compter de la version 8.6, la console cliente sera uniquement disponible en 64 bits. Pour plus d’informations sur la mise à niveau de votre système d’exploitation, reportez-vous à cette [note technique](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html?lang=fr).
-
 ### Systèmes d’exploitation{#op-systems}
 
 * **Microsoft Windows Server** 2019, 2016, 2012
 * **Microsoft Windows** 11, 10, 8
+
+>[!NOTE]
+>
+>Notez que la version 32 bits de la console cliente est obsolète à compter de la version 8.5. À compter de la version 8.6, la console cliente sera uniquement disponible en 64 bits. Pour plus d’informations sur la mise à niveau de votre système d’exploitation, reportez-vous à cette [note technique](../../technotes/upgrades/console.md).
 
 ### Navigateur web{#web-browsers}
 
@@ -52,7 +52,8 @@ Les systèmes de gestion de la relation client (CRM) compatibles avec Adobe Cam
 
 Les bases de données externes compatibles avec le module Adobe Campaign Federated Data Access (FDA) sont répertoriées ci-dessous. [En savoir plus](../connect/fda.md).
 
-* **Amazon Redshift**
+* **[!DNL Amazon Redshift]**
+* **[!DNL Azure Synapse]**, à partir de Campaign v8.5
 * **[!DNL Google Big Query]**
 * **[!DNL Snowflake]**
 * **[!DNL Vertica]**
