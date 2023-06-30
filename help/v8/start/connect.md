@@ -5,7 +5,7 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: ht
 source-wordcount: '921'
 ht-degree: 100%
@@ -100,6 +100,8 @@ En tant qu’utilisateur/utilisatrice Managed Cloud Services, Adobe déploie l
 >[!CAUTION]
 >
 >Adobe recommande de désélectionner l’option **[!UICONTROL Ne plus poser cette question]** pour que tous les utilisateurs et utilisatrices soient informés de la disponibilité d’une nouvelle version de la console. Si cette option est sélectionnée, l’utilisateur ou l’utilisatrice n’est pas informé(e) qu’une mise à niveau de la console est requise.
+>
+
 
 
 ## Octroyer l’accès aux utilisateurs{#grant-access}
