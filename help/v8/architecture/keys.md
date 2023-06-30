@@ -5,9 +5,9 @@ feature: FFDA
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
-workflow-type: tm+mt
-source-wordcount: '609'
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+workflow-type: ht
+source-wordcount: '568'
 ht-degree: 100%
 
 ---
@@ -74,19 +74,6 @@ Adobe Campaign supprime automatiquement tout UUID dupliqué d’une audience lor
 Dans le contexte d’un [Déploiement Enterprise (FFDA)](enterprise-deployment.md), vous ne pouvez pas sélectionner de clé interne (UUID) comme champ pour mettre à jour les données dans un workflow.
 
 ![](assets/update-data-no-internal-key.png)
-
-Lors de l’utilisation de la clé de réconciliation explicite, l’activité **Mise à jour de données** assure automatiquement l’unicité du schéma de destination en fonction de cette clé :
-
-1. Déduplication des données entrantes (depuis la transition)
-1. Déduplication des données avec la table de destination (fusion)
-
-
-![](assets/update-data-deduplicate.png)
-
->[!CAUTION]
->
->Ce mécanisme de sécurisation s’applique uniquement avec l’option **[!UICONTROL En utilisant des clés de réconciliation]**.
-
 
 ### Requête sur un schéma avec des doublons{#query-with-duplicates}
 
