@@ -5,16 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 7bf3937c-484d-4404-8a9b-de7a10f5455a
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: b333db04dd10cc28956959a446f6567e2a89b2d4
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 100%
+source-wordcount: '467'
+ht-degree: 96%
 
 ---
 
-# Lien vers la page miroir{#mirror-page}
+# Lien vers la page miroir {#mirror-page}
 
-## À propos de la page miroir{#about-mirror-page}
+## À propos de la page miroir {#about-mirror-page}
 
 La page miroir est une version en ligne de votre e-mail.
 
@@ -24,7 +24,7 @@ La page miroir générée par Adobe Campaign contient toutes les données de pe
 
 ![exemple de lien miroir](assets/mirror-page-link.png){width="600" align="left"}
 
-## Ajouter un lien vers la page miroir{#link-to-mirror-page}
+## Ajouter un lien vers la page miroir {#link-to-mirror-page}
 
 Il est recommandé d’insérer un lien vers la page miroir. Vous pouvez nommer le lien « Afficher cet e-mail dans votre navigateur » ou « Lire ceci en ligne », par exemple. Il se trouve généralement dans l’en-tête ou le pied de page de l’e-mail.
 
@@ -33,9 +33,9 @@ Dans Adobe Campaign, vous pouvez insérer un lien vers la page miroir dans le c
 ![](assets/mirror-page-insert.png){width="800" align="left"}
 
 
-Pour plus d’informations sur l’insertion de blocs de personnalisation personnalisés, consultez la section [Blocs de personnalisation](personalization-blocks.md).
+L&#39;insertion de blocs de contenu de personnalisation est présentée dans la section [Blocs de personnalisation](personalization-blocks.md).
 
-## Génération de pages miroir{#mirror-page-generation}
+## Gestion de la génération des pages miroir {#mirror-page-generation}
 
 Par défaut, la page miroir est automatiquement générée par Adobe Campaign si le contenu de l’e-mail n’est pas vide et s’il comporte un lien vers la page miroir (ou lien miroir).
 
@@ -52,7 +52,7 @@ Outre le mode par défaut, les options suivantes sont disponibles :
 * **[!UICONTROL Ne pas générer de page miroir]** : ce mode permet d’éviter de générer une page miroir, même si le lien est présent dans la diffusion.
 * **[!UICONTROL Générer une page miroir accessible uniquement depuis l’identifiant du message]** : lorsque le lien de la page miroir n’est pas présent dans le contenu de l’e-mail, utilisez cette option pour permettre l’accès au contenu de la page miroir, dans la fenêtre du log de diffusion, comme décrit ci-dessous.
 
-## Vérifier la page miroir pour un ou une destinataire{#mirror-page-access}
+## Vérifier la page miroir pour un ou une destinataire {#mirror-page-access}
 
 Vous pouvez accéder au contenu de la page miroir telle qu’elle s’affiche pour un ou une destinataire spécifique d’une diffusion et renseignée avec les données de personnalisation de cette personne.
 
