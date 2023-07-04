@@ -5,9 +5,9 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 441310dc1cdcb96296c0cbe5bf3fb7cd1502709f
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1321'
 ht-degree: 58%
 
 ---
@@ -34,7 +34,7 @@ _30 juin 2023_
 </thead> 
 <tbody> 
 <tr> 
-<td><p>Campaign 8.5 propose son dernier service de notification push sur v8, optimisé par un cadre robuste reposant sur une technologie de pointe. Ce service est conçu pour déverrouiller de nouveaux niveaux d’évolutivité, afin que vos notifications puissent atteindre une audience plus large avec une efficacité transparente. Grâce à notre infrastructure améliorée et à nos processus optimisés, vous pouvez vous attendre à une plus grande échelle et à une plus grande fiabilité, ce qui vous permet d’interagir et de vous connecter avec vos utilisateurs d’applications mobiles comme jamais auparavant. Cette fonctionnalité est uniquement disponible pour un groupe sélectionné de clients (disponibilité limitée).</p>
+<td><p>Campaign v8.5 présente notre dernier service de notification push, optimisé par un cadre robuste reposant sur une technologie de pointe moderne. Ce service est conçu pour déverrouiller de nouveaux niveaux d’évolutivité, afin que vos notifications puissent atteindre une audience plus large avec une efficacité transparente. Grâce à notre infrastructure améliorée et à nos processus optimisés, vous pouvez vous attendre à une plus grande échelle et à une plus grande fiabilité, ce qui vous permet d’interagir et de vous connecter avec vos utilisateurs d’applications mobiles comme jamais auparavant. Cette fonctionnalité est uniquement disponible pour un groupe sélectionné de clients (disponibilité limitée).</p>
 <p>Pour plus d’informations, consultez la <a href="../send/push-data-collection.md">documentation détaillée</a>.</p>
 
 </td> 

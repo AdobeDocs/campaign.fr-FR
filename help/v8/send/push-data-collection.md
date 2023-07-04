@@ -5,20 +5,22 @@ feature: Push
 role: Data Engineer
 level: Beginner
 badge: label="Disponibilité limitée" type="Informatif"
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 441310dc1cdcb96296c0cbe5bf3fb7cd1502709f
 workflow-type: tm+mt
-source-wordcount: '1436'
-ht-degree: 49%
+source-wordcount: '1522'
+ht-degree: 46%
 
 ---
 
 # Configuration révisée des notifications push {#push-notifications-config}
 
+Campaign v8.5 présente notre dernier service de notification push, optimisé par un cadre robuste reposant sur une technologie de pointe moderne. Ce service est conçu pour déverrouiller de nouveaux niveaux d’évolutivité, afin que vos notifications puissent atteindre une audience plus large avec une efficacité transparente. Grâce à notre infrastructure améliorée et à nos processus optimisés, vous pouvez vous attendre à une plus grande échelle et à une plus grande fiabilité, ce qui vous permet d’interagir et de vous connecter avec vos utilisateurs d’applications mobiles comme jamais auparavant.
+
 >[!AVAILABILITY]
 >
-> Cette fonctionnalité est exclusivement accessible aux nouveaux clients à partir de la version 8.5 et progressivement déployée vers un ensemble de clients sélectionnés. Si votre environnement a été configuré avant juin 2023, vous devez suivre les procédures détaillées [dans cette page](push-settings.md).
+> Cette fonctionnalité est accessible exclusivement aux nouveaux clients à partir de Campaign v8.5 et déployée progressivement vers un ensemble de clients sélectionnés. Si votre environnement a été configuré avant juin 2023, cette page ne vous concerne pas et vous devez suivre les procédures détaillées [dans cette page](push-settings.md).
 
-Pour envoyer des notifications push dans Adobe Campaign, vous devez effectuer les opérations suivantes :
+Dans le cadre de cette mise à jour, pour envoyer des notifications push dans Adobe Campaign, procédez comme suit :
 
 1. [Création d’une surface d’application dans la collecte de données Adobe Experience Platform](#create-app-surface)
 
