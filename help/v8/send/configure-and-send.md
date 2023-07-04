@@ -4,9 +4,9 @@ description: Découvrez comment configurer des emails dans Adobe Campaign.
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 21e251acd76f2bbb751f8e295934d597af336559
+source-git-commit: 263ec61c3717c054cc135f1c4fb1f7e287e4a154
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1217'
 ht-degree: 83%
 
 ---
@@ -113,7 +113,7 @@ Pour ce faire, suivez les étapes ci-après.
    * Pour envoyer immédiatement la diffusion, sélectionnez [**Diffuser dès que possible**].
    * Pour planifier l’envoi à une date ultérieure, sélectionnez **[!UICONTROL Différer la diffusion]**. [En savoir plus](#schedule-delivery-sending).
 
-1. Cliquez sur **[!UICONTROL Analyser]**. Pour plus d&#39;informations, consultez la section [Lancement de l&#39;analyse](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+1. Cliquez sur **[!UICONTROL Analyser]**. Pour plus d’informations, consultez [cette section](delivery-analysis.md).
 
    ![](assets/delivery-send-analyze.png)
 
