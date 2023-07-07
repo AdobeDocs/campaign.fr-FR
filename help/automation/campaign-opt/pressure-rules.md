@@ -82,7 +82,8 @@ Pour créer et paramétrer une règle de typologie de type **[!UICONTROL Pressio
    * La section supérieure de cet onglet permet de restreindre les destinataires concernés.
    * La section inférieure de cet onglet permet de filtrer les messages à comptabiliser.
 
-      Dans l&#39;exemple ci-dessous, seuls les destinataires enregistrés dans le dossier **NewContacts** sont pris en compte et seules les diffusions commençant par **Newsletter** sont concernées.
+     Dans l&#39;exemple ci-dessous, seuls les destinataires enregistrés dans le dossier **NewContacts** sont pris en compte et seules les diffusions commençant par **Newsletter** sont concernées.
+
    ![](assets/campaign_opt_create_a_rule_05.png)
 
 1. L&#39;onglet **[!UICONTROL Typologies]** permet de consulter les typologies de campagne qui appliquent cette règle de typologie et d&#39;associer cette règle à une ou plusieurs typologies existantes. [En savoir plus](campaign-typologies.md#apply-typologies).
@@ -264,15 +265,15 @@ Lors de l&#39;analyse de la diffusion, les destinataires des diffusions sont exc
 
 * Observer le résultat de l&#39;analyse :
 
-   ![](assets/campaign_opt_pressure_sample_1_8.png)
+  ![](assets/campaign_opt_pressure_sample_1_8.png)
 
 * Editer la diffusion et cliquer sur l&#39;onglet **[!UICONTROL Diffusion]**, puis sur le sous-onglet **[!UICONTROL Exclusions]** :
 
-   ![](assets/campaign_opt_pressure_sample_1_9.png)
+  ![](assets/campaign_opt_pressure_sample_1_9.png)
 
 * Cliquer sur l&#39;onglet **[!UICONTROL Suivi]** puis sur le sous-onglet **[!UICONTROL Causes d&#39;exclusions]** pour afficher le nombre d&#39;exclusions et les règles de typologies appliquées :
 
-   ![](assets/campaign_opt_pressure_sample_1_10.png)
+  ![](assets/campaign_opt_pressure_sample_1_10.png)
 
 ### Calcul du poids dʼune diffusion en fonction des comportements {#calculate-the-delivery-weight-based-on-behavior}
 

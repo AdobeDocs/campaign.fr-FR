@@ -53,7 +53,7 @@ Une fois exécuté, le workflow qui a été appelé en tant que sous-workflow re
 * Le nombre de populations intermédiaires ne peut pas être affiché.
 * Les logs de sous-workflow s’affichent dans le workflow principal.
 
-   ![](assets/subworkflow_logs.png)
+  ![](assets/subworkflow_logs.png)
 
 >[!NOTE]
 >

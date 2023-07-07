@@ -24,15 +24,15 @@ Une fois vos propositions d&#39;offres effectuées, vous pouvez consulter l&#39;
 
 * Au niveau de l&#39;offre, dans l&#39;onglet **[!UICONTROL Edition]**, cliquez sur **[!UICONTROL Propositions]**.
 
-   ![](assets/offer_followup_006.png)
+  ![](assets/offer_followup_006.png)
 
 * Depuis le profil d&#39;un destinataire, cliquez sur l&#39;onglet **[!UICONTROL Propositions]**.
 
-   ![](assets/offer_followup_002.png)
+  ![](assets/offer_followup_002.png)
 
 * Au niveau des emplacements, cliquez sur l&#39;onglet **[!UICONTROL Propositions]**.
 
-   ![](assets/offer_space_prop_001_b.png)
+  ![](assets/offer_space_prop_001_b.png)
 
 ## Rapport Analyse des offres{#offer-analysis-report}
 
@@ -42,14 +42,14 @@ Les statistiques sont classées selon trois critères :
 
 * Par date :
 
-   ![](assets/offer_report_perdate.png)
+  ![](assets/offer_report_perdate.png)
 
 * Par emplacement :
 
-   ![](assets/offer_report_perspaces.png)
+  ![](assets/offer_report_perspaces.png)
 
 * Par diffusions :
 
-   ![](assets/offer_report_perdeliveries.png)
+  ![](assets/offer_report_perdeliveries.png)
 
 Vous pouvez filtrer les données à l&#39;aide de différents critères disponibles dans la partie supérieure du rapport. Lorsque vous avez choisi les critères, cliquez sur le lien **[!UICONTROL Actualiser]** pour les appliquer au rapport.

@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 100%
 
@@ -38,27 +38,27 @@ Une fois votre message créé et son contenu conçu et testé, vous pouvez chois
 
 * Envoyer les messages manuellement à la cible principale
 
-   ![](assets/send-email.png)
+  ![](assets/send-email.png)
 
-   Découvrez comment envoyer des messages dans [cette section](../send/send.md).
+  Découvrez comment envoyer des messages dans [cette section](../send/send.md).
 
 * Envoyer des messages associés à une [campagne marketing](campaigns.md)
 
-   ![](assets/deliveries-in-a-campaign.png)
+  ![](assets/deliveries-in-a-campaign.png)
 
-   Découvrez comment envoyer des messages dans le cadre d’une campagne dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=fr)
+  Découvrez comment envoyer des messages dans le cadre d’une campagne dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=fr)
 
 * Envoyer des messages via un [workflow](../config/workflows.md)
 
-   ![](assets/send-in-a-wf.png)
+  ![](assets/send-in-a-wf.png)
 
-   Découvrez comment automatiser les diffusions e-mail sur [cette page](../../automation/workflow/delivery.md)
+  Découvrez comment automatiser les diffusions e-mail sur [cette page](../../automation/workflow/delivery.md)
 
 * [Déclencher des messages](../send/transactional.md) à partir d’un événement
 
 * Planifier vos messages
 
-   ![](assets/schedule-send.png)
+  ![](assets/schedule-send.png)
 
 [Cas pratique : découvrez comment planifier et envoyer un e-mail d’anniversaire](../../automation/workflow/send-a-birthday-email.md)
 

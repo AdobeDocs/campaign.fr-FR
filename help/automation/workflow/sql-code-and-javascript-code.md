@@ -23,11 +23,11 @@ Une activité de type **[!UICONTROL Code SQL]** exécute un script SQL. Le scrip
 
 * **[!UICONTROL Script]**
 
-   La zone centrale de l&#39;éditeur contient le script à exécuter. Ce script est un template JST et peut donc être paramétré en fonction du contexte du workflow.
+  La zone centrale de l&#39;éditeur contient le script à exécuter. Ce script est un template JST et peut donc être paramétré en fonction du contexte du workflow.
 
 * **[!UICONTROL Traiter les erreurs]**
 
-   Pour plus d&#39;informations, consultez la section [Erreurs de traitement](monitor-workflow-execution.md#processing-errors).
+  Pour plus d&#39;informations, consultez la section [Erreurs de traitement](monitor-workflow-execution.md#processing-errors).
 
 ## Code JavaScript et code JavaScript avancé {#javascript-code}
 

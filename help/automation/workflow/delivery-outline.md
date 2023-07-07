@@ -32,7 +32,7 @@ L’activité de **composition de diffusion**, disponible dans les workflows de 
 
    * Si vous souhaitez appeler le moteur d&#39;offres, cochez la case **[!UICONTROL Limiter le nombre de propositions sélectionnées]**. Définissez l&#39;emplacement et le nombre d&#39;offres qui seront présentées dans la diffusion.
 
-      Les poids et règles d&#39;éligibilité des offres seront pris en compte par le moteur d&#39;offres.
+     Les poids et règles d&#39;éligibilité des offres seront pris en compte par le moteur d&#39;offres.
 
    * Si vous ne cochez pas la case, toutes les offres de la composition de diffusion seront présentées, sans appel au moteur d&#39;offres.
 

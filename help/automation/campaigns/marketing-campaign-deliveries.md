@@ -29,9 +29,9 @@ Une fois enregistrée, la diffusion est ajoutée dans le tableau de bord de la c
 
 * À partir d&#39;un workflow de campagne, sous l&#39;onglet **[!UICONTROL Ciblage et workflows]** en ajoutant la diffusion.
 
-   ![](assets/campaign-wf-delivery.png)
+  ![](assets/campaign-wf-delivery.png)
 
-   Une fois le workflow démarré, la diffusion est ajoutée dans le tableau de bord de la campagne.
+  Une fois le workflow démarré, la diffusion est ajoutée dans le tableau de bord de la campagne.
 
 Découvrez comment configurer et exécuter le flux de validation de diffusion [dans cette page](marketing-campaign-approval.md).
 
@@ -94,21 +94,21 @@ L&#39;extraction du fichier lance deux processus : le calcul du budget et celui
 
 * L&#39;onglet **[!UICONTROL Budget]** vous permet de gérer les budgets de la campagne. Le total des postes de coût est affiché dans le champ **[!UICONTROL Coût calculé]** de l&#39;onglet principal de la campagne et du programme auquel elle appartient. Les montants sont également répercutés dans le budget de la campagne.
 
-   ![](assets/campaign-budget-tab.png)
+  ![](assets/campaign-budget-tab.png)
 
-   Le coût réel sera calculé au final en fonction des informations fournies par le routeur : seuls les courriers réellement envoyés sont facturés.
+  Le coût réel sera calculé au final en fonction des informations fournies par le routeur : seuls les courriers réellement envoyés sont facturés.
 
 * Les stocks sont définis à partir du nœud **[!UICONTROL Administration > Gestion de campagnes > Stocks]** de l&#39;arborescence.
 
-   ![](assets/campaign-stocks.png)
+  ![](assets/campaign-stocks.png)
 
-   Structures de coûts dans le nœud **[!UICONTROL Administration > Gestion de campagnes > Fournisseurs]**.
+  Structures de coûts dans le nœud **[!UICONTROL Administration > Gestion de campagnes > Fournisseurs]**.
 
-   ![](assets/campaign-service-providers.png)
+  ![](assets/campaign-service-providers.png)
 
-   Au niveau des stocks, vous pouvez visualiser les lignes de stocks. Pour définir le stock initial, vous devez ouvrir une ligne de stock. Le stock est décrémenté au fur et à mesure des diffusions. Vous pouvez définir un niveau d&#39;alerte et des notifications.
+  Au niveau des stocks, vous pouvez visualiser les lignes de stocks. Pour définir le stock initial, vous devez ouvrir une ligne de stock. Le stock est décrémenté au fur et à mesure des diffusions. Vous pouvez définir un niveau d&#39;alerte et des notifications.
 
 
-   >[!NOTE]
-   >
-   >Apprenez-en davantage sur les budgets [dans cette section](providers--stocks-and-budgets.md).
+  >[!NOTE]
+  >
+  >Apprenez-en davantage sur les budgets [dans cette section](providers--stocks-and-budgets.md).

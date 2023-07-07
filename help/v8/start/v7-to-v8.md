@@ -23,7 +23,6 @@ En tant qu’ancien utilisateur de [!DNL Campaign Classic] v7, votre manière h
 >* La migration automatisée depuis un environnement Campaign Classic v7 existant n’est pas encore disponible.
 
 
-
 ## Managed Cloud Services{#cloud-services}
 
 Adobe Campaign v8 est disponible en tant que **Managed Cloud Service**.

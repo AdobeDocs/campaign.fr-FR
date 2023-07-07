@@ -5,7 +5,7 @@ description: Découvrez comment créer et exécuter des campagnes marketing
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ Lorsque vous éditez un programme, utilisez les onglets présentés ci-dessous p
 
 * L&#39;onglet **Modifier** vous permet de modifier le programme : son nom, ses dates de début et fin, son budget, ses documents associés, etc.
 
-   ![](assets/new-program-edit-tab.png)
+  ![](assets/new-program-edit-tab.png)
 
 ## Utiliser des campagnes{#work-with-campaigns}
 

@@ -73,7 +73,8 @@ Si vous ne souhaitez pas utiliser l&#39;ensemble de la population d&#39;un sous-
    * **[!UICONTROL Conserver les premiers suite à un tri]** : cette option permet de définir une limitation suivant un ou plusieurs ordres de tri. Si vous choisissez le champ **[!UICONTROL Age]** comme critère de tri, et que vous définissez ensuite une limite de 100, seuls les 100 destinataires les moins âgés seront conservés.
    * **[!UICONTROL Conserver les premiers suite à un tri (critères, aléatoire)]** : cette option regroupe les deux options précédentes. Elle permet de définir une limitation suivant un ou plusieurs ordres de tri puis d&#39;appliquer une sélection aléatoire sur les premiers enregistrements dans le cas où certains enregistrements ont des valeurs égales pour les critères choisis.
 
-      Par exemple, si vous choisissez le champ **[!UICONTROL Age]** comme critère de tri, et que vous définissez ensuite une limite de 100, mais que les 2000 destinataires les plus jeunes en base ont tous 18 ans, alors 100 destinataires seront sélectionnés aléatoirement parmi ces 2000.
+     Par exemple, si vous choisissez le champ **[!UICONTROL Age]** comme critère de tri, et que vous définissez ensuite une limite de 100, mais que les 2000 destinataires les plus jeunes en base ont tous 18 ans, alors 100 destinataires seront sélectionnés aléatoirement parmi ces 2000.
+
    ![](assets/s_user_segmentation_partage_wz1.png)
 
 1. Si vous choisissez de définir des critères de tri, une étape supplémentaire vous permet de définir les colonnes et l&#39;ordre de tri.
@@ -88,7 +89,7 @@ Si vous ne souhaitez pas utiliser l&#39;ensemble de la population d&#39;un sous-
 
    * **[!UICONTROL Taille (en %)]** : un pourcentage d&#39;enregistrements. Par exemple, le paramétrage ci-dessus extraira 10% de la population totale.
 
-      Le pourcentage porte sur la population initiale, non sur le résultat de l&#39;activité.
+     Le pourcentage porte sur la population initiale, non sur le résultat de l&#39;activité.
 
    * **[!UICONTROL Taille (en % du segment)]** : un pourcentage d&#39;enregistrements portant uniquement sur le sous-ensemble et non sur la population initiale.
    * **[!UICONTROL Taille maximale]** : un nombre maximum d&#39;enregistrements.
@@ -148,7 +149,7 @@ Le modèle de répartition de données permet de limiter le nombre d&#39;enregis
    * **[!UICONTROL Type de répartition]** : sélectionnez la manière dont sera exprimée la valeur de limitation de la cible dans l&#39;onglet **[!UICONTROL Distribution]** : **[!UICONTROL Pourcentage]** ou **[!UICONTROL Fixe]**.
    * **[!UICONTROL Stockage des validations]** : si vous utilisez une activité [Validation en local](local-approval.md) dans votre workflow de ciblage, indiquez le schéma dans lequel seront stockés les résultats de validation. Vous devez spécifier un schéma de stockage pour chaque schéma de ciblage. Si vous utilisez le schéma de ciblage **[!UICONTROL Destinataires]**, saisissez le schéma de stockage par défaut **[!UICONTROL Validation en local d&#39;un destinataire]**.
 
-      Il n&#39;est pas nécessaire de renseigner le champ **[!UICONTROL Stockage des validations]** dans le cas d&#39;une simple limitation par groupement de données, sans validation en local.
+     Il n&#39;est pas nécessaire de renseigner le champ **[!UICONTROL Stockage des validations]** dans le cas d&#39;une simple limitation par groupement de données, sans validation en local.
 
 1. Si vous utilisez une activité [Validation en local](local-approval.md), renseignez ensuite les **[!UICONTROL Paramètres avancés]** du modèle de distribution :
 
@@ -158,19 +159,19 @@ Le modèle de répartition de données permet de limiter le nombre d&#39;enregis
 
    * **[!UICONTROL Valider les messages ciblés]** : cochez cette option si vous souhaitez que tous les destinataires soient pré-sélectionnés dans la liste de destinataires à valider. Si cette option est décochée, aucun destinataire ne sera pré-sélectionné.
 
-      >[!NOTE]
-      >
-      >Cette option est cochée par défaut.
+     >[!NOTE]
+     >
+     >Cette option est cochée par défaut.
 
-      ![](assets/local_validation_notification.png)
+     ![](assets/local_validation_notification.png)
 
    * **[!UICONTROL Libellé de la diffusion]** : permet de définir une expression pour afficher le libellé de la diffusion dans la notification de retour. L&#39;expression par défaut renseigne le libellé standard de la diffusion (compute string). Vous avez la possibilité de modifier cette expression.
 
-      ![](assets/local_validation_notification_3.png)
+     ![](assets/local_validation_notification_3.png)
 
    * **[!UICONTROL Champ de groupement]** : ce champ permet de définir le groupement utilisé pour l&#39;affichage des destinataires dans les notifications de validation et de retour.
 
-      ![](assets/local_validation_notification_4.png)
+     ![](assets/local_validation_notification_4.png)
 
    * **[!UICONTROL Interface Web]** : permet d&#39;associer une application web à la liste des destinataires. Dans les notifications de validation et de retour, chaque destinataire sera cliquable et pointera vers l&#39;application web sélectionnée. Le champ **[!UICONTROL Paramètres]** (par exemple, **[!UICONTROL recipientId]**) permet de renseigner le paramètre additionnel qui sera utilisé dans l&#39;URL de l&#39;application web.
 
@@ -181,16 +182,16 @@ Le modèle de répartition de données permet de limiter le nombre d&#39;enregis
    * **[!UICONTROL Valeur]** : saisissez les valeurs de répartition.
    * **[!UICONTROL Pourcentage/Fixe]** : renseignez la limite d&#39;enregistrements (fixe ou en pourcentage) associée à chaque valeur.
 
-      Cette colonne est définie par le champ **[!UICONTROL Type de répartition]** de l&#39;onglet **[!UICONTROL Général]**.
+     Cette colonne est définie par le champ **[!UICONTROL Type de répartition]** de l&#39;onglet **[!UICONTROL Général]**.
 
    * **[!UICONTROL Libellé]** : saisissez le libellé associé à chaque valeur.
    * **[!UICONTROL Groupe ou opérateur]** : si vous utilisez une activité [Validation en local](local-approval.md), sélectionnez l&#39;opérateur ou le groupe d&#39;opérateurs affecté à chaque valeur de distribution.
 
-      Il n&#39;est pas nécessaire de renseigner le champ **[!UICONTROL Groupe ou opérateur]** dans le cas d&#39;une simple limitation par groupement de données, sans validation en local.
+     Il n&#39;est pas nécessaire de renseigner le champ **[!UICONTROL Groupe ou opérateur]** dans le cas d&#39;une simple limitation par groupement de données, sans validation en local.
 
-      >[!CAUTION]
-      >
-      >Vérifiez que les opérateurs disposent de l&#39;autorisation nécessaire.
+     >[!CAUTION]
+     >
+     >Vérifiez que les opérateurs disposent de l&#39;autorisation nécessaire.
 
 ## Paramètres de filtrage {#filtering-parameters}
 

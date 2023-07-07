@@ -39,7 +39,7 @@ Dans cet exemple, différents e-mails sont envoyés à différents groupes de po
 * Enregistrer le résultat de la requête
 * Segmenter le résultat pour envoyer plusieurs diffusions
 
-   ![L’activité branchement suit l’intersection de deux requêtes et précède une activité de mise à jour de liste et de partage.](assets/wkf_fork_example.png)
+  ![L’activité branchement suit l’intersection de deux requêtes et précède une activité de mise à jour de liste et de partage.](assets/wkf_fork_example.png)
 
 Le workflow comprend les activités suivantes :
 

@@ -21,7 +21,7 @@ ht-degree: 100%
 >
 >This capability is available starting Campaign v8.3. To check your version, refer to [this section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)-->
 
-Vous pouvez paramétrer Adobe Campaign pour conserver une copie des e-mails envoyés depuis votre plateforme.
+Vous pouvez configurer Adobe Campaign pour conserver une copie des e-mails envoyés depuis votre plateforme.
 
 Adobe Campaign ne gère pas les fichiers archivés. Il vous permet d&#39;envoyer les messages de votre choix à une adresse e-mail Cci (copie carbone invisible) dédiée, à partir de laquelle ils peuvent être traités et archivés au moyen d&#39;un système externe. Les fichiers .eml correspondant aux e-mails envoyés peuvent ensuite être transférés vers un serveur distant, tel qu’un serveur de messagerie SMTP.
 
@@ -33,7 +33,7 @@ La destination d&#39;archivage est l&#39;adresse email en Cci de votre choix, qu
 
 ![](../assets/do-not-localize/speech.png)En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support){target="_blank"} pour communiquer l’adresse e-mail en Cci à utiliser pour l’archivage.
 
-Une fois l&#39;adresse e-mail en Cci définie, vous devez activer l&#39;option dédiée au niveau de la diffusion.
+Une fois l’adresse e-mail en Cci définie, vous devez activer l’option dédiée au niveau de la diffusion.
 
 >[!CAUTION]
 >

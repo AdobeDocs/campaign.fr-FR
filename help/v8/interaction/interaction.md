@@ -59,6 +59,7 @@ Si l&#39;emplacement est défini sur un canal unitaire en mode identifié, il es
    >[!NOTE]
    >
    >Lorsqu’un emplacement est créé sur le canal web entrant, vous devez configurer le site web pour afficher cette offre.
+   >
 
 ### Créer et publier le catalogue d’offres {#managing-the-offer-catalog-}
 
@@ -90,30 +91,30 @@ Découvrez les termes spécifiques aux offres et les conseils connexes avant de 
    * créer le contenu de l’offre à l’aide de fonctions de rendu
    * indiquer les offres à présenter
 
-   Un emplacement est une interface entre le canal et le moteur d’offres.
+  Un emplacement est une interface entre le canal et le moteur d’offres.
 
-   >[!CAUTION]
-   >
-   >Un emplacement n’est pas un canal de communication, il correspond à un lieu d’exposition sur le canal. Par exemple, les offres exposées sur un site web peuvent occuper deux emplacements sur la même page. Dans ce cas, vous avez deux espaces pour le même canal.
-   >
-   >Les emplacements doivent être définis dans le cahier des charges et ne doivent pas être modifiés en cours de projet.
+  >[!CAUTION]
+  >
+  >Un emplacement n’est pas un canal de communication, il correspond à un lieu d’exposition sur le canal. Par exemple, les offres exposées sur un site web peuvent occuper deux emplacements sur la même page. Dans ce cas, vous avez deux espaces pour le même canal.
+  >
+  >Les emplacements doivent être définis dans le cahier des charges et ne doivent pas être modifiés en cours de projet.
 
 * **Catalogue d&#39;offres** : ensemble des offres définies dans Adobe Campaign pouvant être sélectionnées lors d&#39;une interaction. Le catalogue a une organisation hiérarchique dont chaque noeud est une catégorie.
 * **Catégorie** : dossier relié au Catalogue d&#39;offres d&#39;un environnement, destiné à organiser les offres selon leur nature, leurs dates d&#39;éligibilité et leurs thèmes d&#39;application. Une catégorie peut contenir d&#39;autres sous-catégories qui hériteront de toutes les caractéristiques définies au niveau de la catégorie parent. Des règles d&#39;éligibilité peuvent être définies au niveau d&#39;une catégorie, afin notamment de les mutualiser pour plusieurs offres.
 
 * **Thèmes d&#39;application** : mots-clés définis au niveau de la catégorie qui permettent de filtrer les offres au moment de leur présentation sur un canal sortant ou entrant en restreignant la sélection des offres à une ou plusieurs catégorie(s).
 
-   >[!NOTE]
-   >
-   >Les catégories enfants héritent des thèmes définis au niveau de la catégorie parent.
+  >[!NOTE]
+  >
+  >Les catégories enfants héritent des thèmes définis au niveau de la catégorie parent.
 
 * **Règles d’éligibilité** : contraintes appliquées à un environnement, à une catégorie ou à une offre, portant sur la période de validité, les cibles et le poids. Elles permettent de s’assurer qu’une offre est en adéquation avec un contact ciblé.
 
-   Au niveau des environnements, les règles d’éligibilité comprennent les règles de présentation appliquées aux offres et les personnes à cibler.
+  Au niveau des environnements, les règles d’éligibilité comprennent les règles de présentation appliquées aux offres et les personnes à cibler.
 
-   Dans les catégories, les règles d’éligibilité permettent aux opérateurs de limiter la validité de la catégorie dans le temps, de définir des thèmes d’application et de déterminer les personnes à cibler. Elles peuvent également définir un poids multiplicateur pour une période donnée. Ainsi, les opérateurs peuvent partager les règles relatives aux offres d’autres catégories et ainsi simplifier leur gestion.
+  Dans les catégories, les règles d’éligibilité permettent aux opérateurs de limiter la validité de la catégorie dans le temps, de définir des thèmes d’application et de déterminer les personnes à cibler. Elles peuvent également définir un poids multiplicateur pour une période donnée. Ainsi, les opérateurs peuvent partager les règles relatives aux offres d’autres catégories et ainsi simplifier leur gestion.
 
-   Au niveau des offres, les règles d’éligibilité permettent de limiter la validité des offres dans le temps et de déterminer les personnes à cibler.
+  Au niveau des offres, les règles d’éligibilité permettent de limiter la validité des offres dans le temps et de déterminer les personnes à cibler.
 
 * **Arbitrage** : sélection des offres à afficher dans un environnement donné (offres éligibles). Le principe de l’arbitrage permet de classer les offres par priorité en fonction des critères définis dans les catégories, les offres et les offres contextuelles.
 * **Contact** : contact à l&#39;origine d&#39;une interaction entrante. Lors du traitement de l&#39;appel au moteur, le contact est associé à une dimension de ciblage. On distingue deux types de contacts :
@@ -121,9 +122,9 @@ Découvrez les termes spécifiques aux offres et les conseils connexes avant de 
    * **[!UICONTROL Contact identifié]** : contact s&#39;étant volontairement identifié sur le canal. Dans les interactions sortantes, le contact est systématiquement identifié.
    * **[!UICONTROL Contact anonyme]** : contact qui ne s&#39;est pas volontairement inscrit sur le canal mais qui peut être identifié implicitement au moyen d&#39;un cookie. Cette terminologie n&#39;a lieu d&#39;être que dans le cadre d&#39;interactions entrantes.
 
-      >[!NOTE]
-      >
-      >Les contacts anonymes non identifiés sont rattachés à la dimension de ciblage des visiteurs.
+     >[!NOTE]
+     >
+     >Les contacts anonymes non identifiés sont rattachés à la dimension de ciblage des visiteurs.
 
 * **Interaction sortante** : appel vers le moteur dʼoffres à partir dʼune liste de contacts (utilisée pour la diffusion dʼe-mails, de publipostage direct, etc.). Les mêmes règles et processus sont appliqués à chaque contact. Ce type d’interaction est généralement traité en mode Lot.
 * **Interaction entrante** : interaction faisant suite à un appel entrant généré par l’action d’un contact sur le canal. Ce type d’interaction est généralement traité en mode unitaire.

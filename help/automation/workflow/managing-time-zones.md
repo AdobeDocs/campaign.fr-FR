@@ -29,19 +29,19 @@ Les valeurs possibles sont les suivantes :
 
 * Fuseau horaire du serveur
 
-   Utilise le fuseau horaire du serveur applicatif d&#39;Adobe Campaign.
+  Utilise le fuseau horaire du serveur applicatif d&#39;Adobe Campaign.
 
 * Fuseau horaire de l&#39;utilisateur
 
-   Utilise le fuseau horaire de l&#39;opérateur Adobe Campaign qui lance l&#39;exécution du workflow.
+  Utilise le fuseau horaire de l&#39;opérateur Adobe Campaign qui lance l&#39;exécution du workflow.
 
 * Fuseau horaire de la base de données
 
-   Utilise le fuseau horaire du serveur de base de données utilisé.
+  Utilise le fuseau horaire du serveur de base de données utilisé.
 
 * Fuseaux horaire spécifiques
 
-   Utilise le fuseau horaire sélectionné.
+  Utilise le fuseau horaire sélectionné.
 
 Si la valeur **[!UICONTROL Par défaut]** est sélectionnée, le fuseau horaire du workflow est appliqué, ou, à défaut, celui du serveur applicatif.
 

@@ -49,7 +49,7 @@ Ce rapport se base sur la table **[!UICONTROL Tracking consolidé]** (nms:tracki
 
 ## Échecs et bounces {#non-deliverables-and-bounces-1}
 
-**Ventilation par type d&#39;erreur**
+**Répartition par type d’erreur**
 
 Ce rapport se base sur la table **[!UICONTROL Statistiques d&#39;envoi et de tracking]** (nms:deliveryLogStats).
 
@@ -126,7 +126,7 @@ Ce rapport se base sur la table **[!UICONTROL Statistiques d&#39;envoi et de tra
  </tbody> 
 </table>
 
-**Ventilation par domaine**
+**Répartition par domaine**
 
 La seconde partie du rapport présente la répartition des messages en échec, non pas par type d&#39;erreur, mais par domaine Internet. La formule associée à l&#39;indicateur **Erreur** (@value) est dans ce cas : Count(@status=2 et @domain=&quot;Valeur du nom de domaine&quot;). C&#39;est-à-dire un comptage de tous les messages dont le statut est en échec sur ce domaine.
 

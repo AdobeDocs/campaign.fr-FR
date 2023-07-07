@@ -17,15 +17,15 @@ Dans cet exemple, vous allez comptabiliser le nombre de destinataires domicilié
 
 * Quelle table doit-on sélectionner ?
 
-   La table des destinataires (**nms:recipient**).
+  La table des destinataires (**nms:recipient**).
 
 * Quels sont les champs à sélectionner en colonne de sortie ?
 
-   Clé primaire (avec comptage) et Genre.
+  Clé primaire (avec comptage) et Genre.
 
 * En fonction de quels critères seront filtrées les informations ?
 
-   En fonction des destinataires domiciliés à Paris.
+  En fonction des destinataires domiciliés à Paris.
 
 Pour réaliser cet exemple, les étapes sont les suivantes :
 

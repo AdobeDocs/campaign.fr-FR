@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
 source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 100%
 
@@ -20,9 +20,9 @@ Pour chaque dimension de ciblage utilisée dans le cadre de la gestion des offre
 
 * Un environnement **en édition**, dans lequel le chargé d&#39;offre s&#39;occupe de créer et catégoriser les offres, de les modifier, de lancer le processus de validation afin qu&#39;elles puissent être utilisées. Dans cet environnement sont également définis les règles propres à chaque catégorie, les emplacements sur lesquels les offres peuvent être présentées et les filtres prédéfinis utilisables pour définir l&#39;éligibilité d&#39;une offre.
 
-   Les catégories peuvent également être publiées manuellement dans l&#39;environnement en ligne.
+  Les catégories peuvent également être publiées manuellement dans l&#39;environnement en ligne.
 
-   La validation des offres est détaillée [dans cette section](interaction-offer.md#approve-offers).
+  La validation des offres est détaillée [dans cette section](interaction-offer.md#approve-offers).
 
 * Un environnement **en ligne**, dans lequel se trouvent les offres validées de l&#39;environnement en édition, ainsi que les différents emplacements, filtres, catégories et règles paramétrés dans l&#39;environnement en édition. Lors d&#39;un appel au moteur d&#39;offres, ce dernier utilisera toujours les offres de l&#39;environnement en ligne.
 
@@ -102,10 +102,10 @@ Sur les instances de pilotage :
    * Cochez le type d&#39;application utilisée : **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]**, ou les deux.
    * Renseignez le compte FDA utilisé. Un opérateur doit être créé sur les instances d&#39;exécution et doit posséder les droits de lecture et de modification suivants au niveau de la base de données de l&#39;instance en question :
 
-      ```
-      grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
-      grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
-      ```
+     ```
+     grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
+     grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
+     ```
 
    >[!NOTE]
    >
@@ -118,9 +118,9 @@ Sur les instances de pilotage :
    * Ajoutez la liste des instances d&#39;exécutions.
    * Définissez pour chacune la fréquence de synchronisation et les critères de filtrage (par exemple par pays).
 
-      >[!NOTE]
-      >
-      >En cas d&#39;erreur, vous pouvez consulter les workflows de synchronisation et de notification des offres, disponibles dans les workflows techniques de l&#39;application.
+     >[!NOTE]
+     >
+     >En cas d&#39;erreur, vous pouvez consulter les workflows de synchronisation et de notification des offres, disponibles dans les workflows techniques de l&#39;application.
 
 Si, pour des raisons d&#39;optimisation, seulement une partie de la base marketing est dupliquée sur les instances d&#39;exécution, il est possible de définir un schéma restreint associé à l&#39;environnement afin de permettre aux utilisateurs de n&#39;utiliser que les données disponibles sur les instances d&#39;exécution. Il est possible de créer une offre utilisant des données non disponibles sur les instances d&#39;exécution. Pour cela, vous devez désactiver la règle sur les autres canaux en limitant cette règle au canal sortant (champ **[!UICONTROL Pris en compte si]**).
 

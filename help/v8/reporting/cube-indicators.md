@@ -24,30 +24,31 @@ Les cubes vous permettent d’effectuer les opérations suivantes :
 
 * Exporter les données directement dans un rapport, conçu sous l’onglet **[!UICONTROL Rapports]** de la plateforme Adobe Campaign.
 
-   Pour cela, créez un nouveau rapport et sélectionnez le cube à utiliser.
+  Pour cela, créez un nouveau rapport et sélectionnez le cube à utiliser.
 
-   ![](assets/create-new-cube.png)
+  ![](assets/create-new-cube.png)
 
-   Les cubes sont des modèles à partir desquels des rapports sont créés. Une fois le modèle sélectionné, cliquez sur **[!UICONTROL Créer]** pour configurer et afficher le nouveau rapport.
+  Les cubes sont des modèles à partir desquels des rapports sont créés. Une fois le modèle sélectionné, cliquez sur **[!UICONTROL Créer]** pour configurer et afficher le nouveau rapport.
 
-   Vous pouvez alors adapter les mesures, modifier le mode d’affichage ou configurer le tableau, puis afficher le rapport à partir du bouton central.
+  Vous pouvez alors adapter les mesures, modifier le mode d’affichage ou configurer le tableau, puis afficher le rapport à partir du bouton central.
 
-   ![](assets/display-cube-table.png)
+  ![](assets/display-cube-table.png)
 
 * Vous pouvez référencer un cube dans la boîte de **[!UICONTROL Requête]** d’un rapport afin d’en utiliser les indicateurs, comme illustré dans l’exemple ci-dessous :
 
-   ![](assets/cube-report-query.png)
+  ![](assets/cube-report-query.png)
 
 * Insérer un tableau croisé dynamique basé sur un cube dans n’importe quelle page d’un rapport. Pour ce faire, référencez le cube à utiliser sous l’onglet **[!UICONTROL Données]** du tableau croisé dynamique de la page concernée.
 
-   ![](assets/cube-in-a-report.png)
+  ![](assets/cube-in-a-report.png)
 
-   Pour plus dʼinformations, consultez la section [Exploration des données dans un rapport](cube-tables.md#explore-the-data-in-a-report).
+  Pour plus dʼinformations, consultez la section [Exploration des données dans un rapport](cube-tables.md#explore-the-data-in-a-report).
 
 
 >[!CAUTION]
 >
 >Pour créer des cubes, vous avez besoin d’autorisations d’administrateur.
+>
 
 ## Créer un cube{#cube-create}
 

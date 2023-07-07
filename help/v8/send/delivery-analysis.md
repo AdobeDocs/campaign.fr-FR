@@ -61,6 +61,7 @@ Pour préparer la diffusion, vérifiez que le contenu et la cible de la diffusio
    >[!NOTE]
    >
    >Cliquez sur le lien **[!UICONTROL Modifier la cible principale de la diffusion]** si le nombre de messages à envoyer ne correspond pas à vos attentes. Cette option permet de modifier la définition de la population cible et de relancer l’analyse.
+   >
 
 1. Vérifiez le résultat de l’analyse, puis cliquez sur **[!UICONTROL Confirmer la diffusion]** pour envoyer le message à la cible principale.
 
@@ -77,11 +78,11 @@ Cet onglet permet d&#39;accéder aux options suivantes :
 
 * **[!UICONTROL Mode de validation]** : ce champ permet de définir une diffusion manuelle ou automatique, une fois l’analyse terminée.
 
-   Si l’analyse génère des avertissements, (par exemple, si certains caractères sont accentués dans l’objet de la diffusion, etc.), vous pouvez choisir de continuer son exécution ou non dans les paramètres de la diffusion. Par défaut, l’utilisateur ou l’utilisatrice doit confirmer l’envoi des messages à la fin de la phase d’analyse : il s’agit d’une validation **manuelle**.
+  Si l’analyse génère des avertissements, (par exemple, si certains caractères sont accentués dans l’objet de la diffusion, etc.), vous pouvez choisir de continuer son exécution ou non dans les paramètres de la diffusion. Par défaut, l’utilisateur ou l’utilisatrice doit confirmer l’envoi des messages à la fin de la phase d’analyse : il s’agit d’une validation **manuelle**.
 
-   Vous pouvez choisir un autre mode de validation dans la liste déroulante du champ correspondant.
+  Vous pouvez choisir un autre mode de validation dans la liste déroulante du champ correspondant.
 
-   Les modes de validation possibles sont les suivants :
+  Les modes de validation possibles sont les suivants :
 
    * **[!UICONTROL Manuel]** : à la fin de la phase d’analyse, l’utilisateur doit confirmer la diffusion pour commencer l’envoi. Pour cela, cliquez sur le bouton **[!UICONTROL Démarrer]** afin de lancer la diffusion.
    * **[!UICONTROL Semi-automatique]** : les envois démarrent automatiquement si la phase d’analyse ne génère aucun message d’avertissement.

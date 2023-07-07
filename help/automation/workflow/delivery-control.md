@@ -27,11 +27,11 @@ Les options disponibles sont les suivantes :
 
 * **[!UICONTROL Générer une transition sortante]**
 
-   Crée une transition sortante qui sera activée à la fin de l&#39;exécution. Vous pouvez choisir de récupérer la cible de l&#39;action de diffusion en sortie, ou non.
+  Crée une transition sortante qui sera activée à la fin de l&#39;exécution. Vous pouvez choisir de récupérer la cible de l&#39;action de diffusion en sortie, ou non.
 
 * **[!UICONTROL Traiter les erreurs]**
 
-   Pour plus d&#39;informations, consultez la section [Erreurs de traitement](monitor-workflow-execution.md#processing-errors).
+  Pour plus d&#39;informations, consultez la section [Erreurs de traitement](monitor-workflow-execution.md#processing-errors).
 
 ## Paramètres d&#39;entrée {#input-parameters}
 

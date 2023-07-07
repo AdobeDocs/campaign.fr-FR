@@ -6,7 +6,7 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Comprendre les processus et composants de Campaign {#components-and-processes}
 
-Adobe Campaign est une solution de marketing cross-canal qui automatise les campagnes par e-mail, mobiles, sociales et hors ligne. Adobe Campaign fournit un emplacement central pour accéder aux données et aux profils de vos clients. Utilisez Adobe Campaign pour orchestrer des expériences cohérentes avec vos clients, concevoir, exécuter et personnaliser votre marketing sur l&#39;ensemble des canaux, tout en améliorant l&#39;expérience client sur chaque périphérique et point de contact. Avec Adobe Campaign, vous pouvez gérer plusieurs sources de données, définir vos segments d&#39;audience et planifier et exécuter des campagnes cross-canal à plusieurs étapes par le biais d&#39;une interface de workflow visuelle qui fonctionne par glisser-déposer.
+Adobe Campaign est une solution de marketing cross-canal qui automatise les campagnes par e-mail, mobiles, sociales et hors ligne. Adobe Campaign fournit un emplacement central pour accéder aux données et aux profils de vos clients. Utilisez Adobe Campaign pour orchestrer des expériences cohérentes avec vos clients, concevoir, exécuter et personnaliser votre marketing sur l&#39;ensemble des canaux, tout en améliorant l&#39;expérience client sur chaque appareil et point de contact. Avec Adobe Campaign, vous pouvez gérer plusieurs sources de données, définir vos segments d&#39;audience et planifier et exécuter des campagnes cross-canal à plusieurs étapes par le biais d&#39;une interface de workflow visuelle qui fonctionne par glisser-déposer.
 
 Pour en savoir plus sur les fonctionnalités principales de Campaign, reportez-vous à [cette page](../start/get-started.md).
 
@@ -30,15 +30,15 @@ Vous pouvez accéder à Adobe Campaign via un client riche, un client léger ou
 
 * Client riche
 
-   Le client riche de Campaign est une application native qui communique avec le serveur applicatif d&#39;Adobe Campaign par le biais de protocoles internet standard, tels que SOAP et HTTP. [En savoir plus sur la console cliente Campaign](../start/connect.md).
+  Le client riche de Campaign est une application native qui communique avec le serveur applicatif d&#39;Adobe Campaign par le biais de protocoles internet standard, tels que SOAP et HTTP. [En savoir plus sur la console cliente Campaign](../start/connect.md).
 
 * Client léger
 
-   Les fonctionnalités d&#39;accès web d&#39;Adobe Campaign vous permettent d&#39;accéder à un sous-ensemble de fonctionnalités de Campaign avec un navigateur web, à l&#39;aide d&#39;une interface utilisateur HTML. Utilisez cette interface web pour consulter des rapports, contrôler et valider les messages, accéder aux tableaux de bord de surveillance, et plus encore.  [En savoir plus sur l&#39;accès web de Campaign](../start/connect.md).
+  Les fonctionnalités d&#39;accès web d&#39;Adobe Campaign vous permettent d&#39;accéder à un sous-ensemble de fonctionnalités de Campaign avec un navigateur web, à l&#39;aide d&#39;une interface utilisateur HTML. Utilisez cette interface web pour consulter des rapports, contrôler et valider les messages, accéder aux tableaux de bord de surveillance, et plus encore.  [En savoir plus sur l&#39;accès web de Campaign](../start/connect.md).
 
 * Applications externes avec API
 
-   Dans certains cas, le système est appelé par des applications externes qui utilisent les API Web Services exposées par le biais du protocole SOAP. [En savoir plus sur les API Campaign](../dev/api.md).
+  Dans certains cas, le système est appelé par des applications externes qui utilisent les API Web Services exposées par le biais du protocole SOAP. [En savoir plus sur les API Campaign](../dev/api.md).
 
 ### Couche de persistance{#persistance-layer}
 

@@ -48,7 +48,7 @@ Pour créer une nouvelle catégorie, procédez comme suit :
 
    * D&#39;attribuer des dates d&#39;éligibilité, depuis l&#39;onglet **[!UICONTROL Éligibilité]**.
 
-      ![](assets/offer_cat_create_004.png)
+     ![](assets/offer_cat_create_004.png)
 
    * **[!UICONTROL Éditez la requête]** pour appliquer des filtres à la cible de l&#39;offre.
 

@@ -19,19 +19,19 @@ Dans cet exemple, vous allez récupérer les noms et emails des destinataires do
 
 * Quelle table doit-on sélectionner ?
 
-   La table des destinataires (nms:recipient).
+  La table des destinataires (nms:recipient).
 
 * Champs à sélectionner en colonnes de sortie.
 
-   Email, Nom, Ville et Numéro de compte.
+  Email, Nom, Ville et Numéro de compte.
 
 * En fonction de quels critères seront filtrés les destinataires ?
 
-   En fonction de la ville de résidence et du domaine d&#39;email.
+  En fonction de la ville de résidence et du domaine d&#39;email.
 
 * Y a-t-il tri ?
 
-   Oui, en fonction du **[!UICONTROL N° de compte]** et du **[!UICONTROL Nom]**.
+  Oui, en fonction du **[!UICONTROL N° de compte]** et du **[!UICONTROL Nom]**.
 
 Pour réaliser cet exemple, les étapes sont les suivantes :
 

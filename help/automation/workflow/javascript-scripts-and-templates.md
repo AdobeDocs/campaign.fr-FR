@@ -24,7 +24,7 @@ Les scripts sont omniprésents dans un diagramme de workflow :
 * L&#39;activité &#39;Test&#39; évalue des expressions JavaScript pour activer la bonne transition.
 * La plupart des champs de type texte sont des templates JavaScript : ils peuvent inclure des expressions JavaScript entre les caractères &lt;%= et %>. Ces champs proposent un bouton qui permet d&#39;accéder à une liste déroulante pour l&#39;aide à la saisie des expressions.
 
-   ![](assets/script-button.png)
+  ![](assets/script-button.png)
 
 ## Objets exposés {#objects-exposed}
 
@@ -173,7 +173,7 @@ Par exemple :
 
    Pour faire référence à la variable d&#39;instance dans la colonne **[!UICONTROL Valeur]**, saisissez **$(instance/vars/@deliveryIN)**.
 
-   Le worfklow retournera les destinataires à qui la diffusion DM42 a été envoyée.
+   Le workflow retournera les destinataires à qui la diffusion DM42 a été envoyée.
 
    ![](assets/wkf_var_in_query.png)
 

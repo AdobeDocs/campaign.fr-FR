@@ -5,7 +5,7 @@ role: User, Admin
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 100%
 
@@ -60,6 +60,7 @@ Une fois que vous avez reçu l’autorisation d’accès élevé, créez une app
 >[!NOTE]
 >
 >Vous avez besoin d&#39;une application par compte Twitter. Par conséquent, vous devez créer une autre application de test pour envoyer des BAT à votre compte de test.
+>
 
 ## Créer un service Twitter dans Campaign {#create-tw-service}
 
@@ -70,6 +71,7 @@ Pour lier votre instance Campaign à votre compte Twitter, créez un service **T
 >Créez un service **Twitter** par compte Twitter. Par conséquent, vous devez créer un autre service de test pour envoyer des BAT à votre [compte de test](#tw-test-account).
 >
 >Chaque service **Twitter** doit également être créé par Adobe sur votre instance MID. Contactez votre représentant Adobe pour que votre environnement soit configuré.
+>
 
 Pour entrer des paramètres, vous devez accéder à la fois à la console cliente Adobe Campaign et aux autorisations de votre application Twitter.
 
@@ -81,6 +83,7 @@ Pour entrer des paramètres, vous devez accéder à la fois à la console client
    >[!CAUTION]
    >
    >Le **[!UICONTROL Nom interne]** du service doit être identique au nom du compte Twitter.
+   >
 
 1. Par défaut, les abonnés sont enregistrés dans le dossier **[!UICONTROL Visiteurs]**. Vous pouvez sélectionner un autre emplacement dans le champ **[!UICONTROL Dossier des visiteurs]**. [En savoir plus](../send/twitter.md#direct-tw-messages)
 
@@ -100,7 +103,7 @@ Pour vérifier vos paramètres, vous pouvez :
 
 * Modifier le service **Twitter** que vous venez de créer.
 * Parcourir l’onglet **[!UICONTROL Page Twitter]** : votre compte Twitter doit s’afficher.
-   ![](assets/tw-page.png)
+  ![](assets/tw-page.png)
 
 
 ## Synchroniser votre compte Twitter {#synchro-tw-accounts}

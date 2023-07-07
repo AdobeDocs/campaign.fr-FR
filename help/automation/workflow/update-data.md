@@ -37,7 +37,7 @@ Indiquez comment identifier les enregistrements dans la base de données :
 
 * Si les données en entrée correspondent à une dimension de ciblage existante, sélectionnez l&#39;option **[!UICONTROL En utilisant directement la dimension de ciblage]** et sélectionnez-la dans le champ **[!UICONTROL Dimension mise à jour]**.
 
-   Vous pouvez afficher les champs de la dimension sélectionnée à l&#39;aide du bouton en forme de loupe **[!UICONTROL Editer ce lien]**.
+  Vous pouvez afficher les champs de la dimension sélectionnée à l&#39;aide du bouton en forme de loupe **[!UICONTROL Editer ce lien]**.
 
 * Dans le cas contraire, indiquez un ou plusieurs liens qui permettront d&#39;identifier les données dans la base ou utilisez directement des clés de réconciliation.
 

@@ -25,17 +25,17 @@ L&#39;activité de type **Téléchargement Web** permet de lancer le télécharg
 
    * Pour saisir directement l&#39;URL du fichier à télécharger, sélectionnez l&#39;option **[!UICONTROL URL explicite]** et indiquez l&#39;URL dans le champ correspondant. Cette URL peut être construite avec des données variables.
 
-      ![](assets/download_web_edit.png)
+     ![](assets/download_web_edit.png)
 
    * Pour utiliser un **[!UICONTROL Compte externe]**, sélectionnez le compte dans la liste déroulante et indiquez le fichier à télécharger.
 
-      Les comptes externes sont paramétrés depuis le noeud **[!UICONTROL Administration > Plateforme > Comptes externes]** de l&#39;arborescence Adobe Campaign. Les paramètres du compte peuvent être édités à partir de l&#39;icône **[!UICONTROL Editer le lien]**.
+     Les comptes externes sont paramétrés depuis le noeud **[!UICONTROL Administration > Plateforme > Comptes externes]** de l&#39;arborescence Adobe Campaign. Les paramètres du compte peuvent être édités à partir de l&#39;icône **[!UICONTROL Editer le lien]**.
 
-      ![](assets/download_web_edit_external.png)
+     ![](assets/download_web_edit_external.png)
 
    * Pour télécharger le fichier depuis l&#39;instance Adobe Campaign, choisissez l&#39;option **[!UICONTROL Instance Adobe Campaign]**.
 
-      ![](assets/download_web_edit_instance.png)
+     ![](assets/download_web_edit_instance.png)
 
 1. **Historisation des fichiers**
 
@@ -49,7 +49,7 @@ L&#39;activité de type **Téléchargement Web** permet de lancer le télécharg
    * **[!UICONTROL Nombre de fichiers]** : saisissez le nombre maximal de fichiers à conserver dans le répertoire de stockage.
    * **[!UICONTROL Taille maximale (en Mo)]** : saisissez la capacité maximale du répertoire de stockage (en méga octets).
 
-   Chaque fichier est toujours conservé 24 heures avant d&#39;être soumis aux règles de purge définies. La purge a lieu juste avant le début du traitement de l&#39;activité et ne prend donc pas en compte les fichiers du workflow en cours.
+   Chaque fichier est toujours conservé 24 heures avant d’être soumis aux règles de purge définies. La purge a lieu juste avant le début du traitement de l’activité et ne prend donc pas en compte les fichiers du workflow en cours.
 
    Les fichiers sont toujours supprimés du plus ancien au plus récent. Les fichiers les plus anciens sont supprimés jusqu&#39;à ce que les deux règles de purge soient vérifiées. Ainsi, si une limite de 100 fichiers est définie, cela signifie que le répertoire de stockage contiendra toujours les 100 fichiers les plus récents avant le début du workflow, en plus des fichiers traités dans le workflow en cours.
 

@@ -8,7 +8,7 @@ topic-tags: use-cases
 feature: Workflows, Data Management
 exl-id: 4fe2ae81-faa6-4777-a332-70c451bca75b
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 100%
 
@@ -20,15 +20,15 @@ Vous allez élaborer une requête comportant un champ calculé de type **[!UICON
 
 * Quelle table doit-on sélectionner ?
 
-   La table des destinataires (nms:recipient).
+  La table des destinataires (nms:recipient).
 
 * Quels sont les champs à sélectionner en colonne de sortie ?
 
-   Nom, Prénom et Genre.
+  Nom, Prénom et Genre.
 
 * En fonction de quels critères seront filtrées les informations ?
 
-   En fonction de la langue des destinataires.
+  En fonction de la langue des destinataires.
 
 Les étapes sont les suivantes :
 

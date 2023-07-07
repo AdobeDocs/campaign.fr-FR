@@ -9,11 +9,11 @@ exl-id: b5a0fe46-f7b4-4be1-abf0-162fc1412886
 source-git-commit: 441310dc1cdcb96296c0cbe5bf3fb7cd1502709f
 workflow-type: tm+mt
 source-wordcount: '1815'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Configuration du canal de notification push {#push-notification-configuration}
+# Configurer le canal de notification push {#push-notification-configuration}
 
 Avant de commencer à envoyer des notifications push avec Adobe Campaign, vous devez vous assurer que les configurations et les intégrations sont en place sur l’application mobile et pour les balises dans Adobe Experience Platform.
 
@@ -180,7 +180,7 @@ Pour créer une application pour les appareils iOS, procédez comme suit :
 1. Saisissez le nom de votre application dans le champ **[!UICONTROL Libellé]**.
 1. (facultatif) Vous pouvez enrichir le contenu d’un message push avec certaines **[!UICONTROL variables d’application]**. Elles sont entièrement personnalisables et font partie de la payload du message envoyé à l&#39;appareil mobile.
 
-   Dans l’exemple ci-dessous, la variable **mediaURl** et **mediaExt** sont ajoutées pour créer une notification push enrichie, puis fournissent à l’application l’image à afficher dans la notification.
+   Dans l’exemple suivant, les variables **mediaURl** et **mediaExt** sont ajoutées pour créer une notification push enrichie et fournir à l’application l’image à afficher dans la notification.
 
    ![](assets/ios-app-parameters.png){width="600" align="left"}
 

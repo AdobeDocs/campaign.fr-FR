@@ -19,7 +19,7 @@ Le flux de création de workflow dépend du type de workflow. Vous pouvez ainsi�
 
 * Créer des [workflows de ciblage](#targeting-workflows) à partir du nœud **[!UICONTROL Profils et cibles]** > **[!UICONTROL Tâches]** > **[!UICONTROL Workflows de ciblage]** de l&#39;Explorateur ou de l&#39;onglet **[!UICONTROL Profils et cibles]** de la page d&#39;accueil, via le sous-onglet **[!UICONTROL Workflows de ciblage]**.
 
-   ![](assets/create-targeting-wf.png)
+  ![](assets/create-targeting-wf.png)
 
 * Créer des [workflows de campagne](#campaign-workflows) à partir de l&#39;onglet **[!UICONTROL Ciblage et workflows]** d&#39;une campagne.
 
@@ -74,28 +74,28 @@ Lʼaffichage et la mise en page du diagramme peuvent être modifiés à lʼaide 
 
 * **Utilisation de la barre d’outils**
 
-   La barre d&#39;outils de l&#39;éditeur de diagramme permet d&#39;accéder aux fonctions de mise en page et d&#39;exécution du workflow.
+  La barre d&#39;outils de l&#39;éditeur de diagramme permet d&#39;accéder aux fonctions de mise en page et d&#39;exécution du workflow.
 
-   ![](assets/wf-toolbar.png)
+  ![](assets/wf-toolbar.png)
 
-   Vous pouvez ainsi adapter la mise en page de l&#39;éditeur : affichage de la palette et de la vue d&#39;ensemble, taille et alignement des objets graphiques.
+  Vous pouvez ainsi adapter la mise en page de l&#39;éditeur : affichage de la palette et de la vue d&#39;ensemble, taille et alignement des objets graphiques.
 
-   ![](assets/s_user_segmentation_toolbar.png)
+  ![](assets/s_user_segmentation_toolbar.png)
 
-   Les icônes relatives à la progression et l’affichage des logs sont présentées en détail dans les sections suivantes :
+  Les icônes relatives à la progression et l’affichage des logs sont présentées en détail dans les sections suivantes :
 
    * [Afficher la progression](monitor-workflow-execution.md#displaying-progress)
    * [Afficher les logs](monitor-workflow-execution.md#displaying-logs)
 
 * **Alignement des objets**
 
-   Pour aligner les icônes, sélectionnez-les et cliquez sur l&#39;icône **[!UICONTROL Aligner verticalement]** ou **[!UICONTROL Aligner horizontalement]**.
+  Pour aligner les icônes, sélectionnez-les et cliquez sur l&#39;icône **[!UICONTROL Aligner verticalement]** ou **[!UICONTROL Aligner horizontalement]**.
 
-   Utilisez la touche **CTRL** pour sélectionner plusieurs activités discontinues ou désélectionner une ou plusieurs activités d&#39;une sélection. Cliquez sur l&#39;arrière-plan du diagramme pour tout désélectionner.
+  Utilisez la touche **CTRL** pour sélectionner plusieurs activités discontinues ou désélectionner une ou plusieurs activités d&#39;une sélection. Cliquez sur l&#39;arrière-plan du diagramme pour tout désélectionner.
 
 * **Gestion des images**
 
-   Vous pouvez personnaliser l&#39;image de fond du diagramme et les images associées aux différentes activités. Consultez la section [Modification des images dʼactivité](change-activity-images.md).
+  Vous pouvez personnaliser l&#39;image de fond du diagramme et les images associées aux différentes activités. Consultez la section [Modification des images dʼactivité](change-activity-images.md).
 
 ## Configuration des activités {#configure-activities}
 

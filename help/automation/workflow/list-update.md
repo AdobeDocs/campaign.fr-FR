@@ -21,7 +21,7 @@ Une activité de type **Mise à jour de liste** enregistre la population spécif
 
 La liste peut être sélectionnée parmi les listes existantes.
 
-Elle peut également être créée en utilisant les options **[!UICONTROL Créer la liste si besoin (Nom calculé)]** et **[!UICONTROL Créer la liste si besoin (Dossier et Nom calculé)]**. Ces options vous permettent de saisir le libellé de votre choix pour créer la liste et éventuellement le dossier dans lequel elle sera enregistrée. Le libellé peut également être calculé automatiquement via l&#39;insertion de champs dynamiques ou d&#39;un script. Les différents champs dynamiques sont disponibles dans le menu contextuel situé à droite du libellé.
+Elle peut également être créée en utilisant les options **[!UICONTROL Créer la liste si besoin (Nom calculé)]** et **[!UICONTROL Créer la liste si besoin (Dossier et Nom calculé)]**. Ces options vous permettent de saisir le libellé de votre choix pour créer la liste et éventuellement le dossier dans lequel elle sera enregistrée. Le libellé peut également être calculé automatiquement via l’insertion de champs dynamiques ou d’un script. Les différents champs dynamiques sont disponibles dans le menu pop-up situé à droite du libellé.
 
 ![](assets/s_user_segmentation_update_list_calc.png)
 

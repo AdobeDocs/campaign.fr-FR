@@ -26,7 +26,7 @@ Vous pouvez déplacer vos données historiques vers [!DNL Snowflake] puis rédui
 * **Extension du modèle de données et gestion des données**
 Vous pouvez créer des tables dans [!DNL Snowflake] et les lier à Adobe Campaign, par exemple pour utiliser les données archivées sur les périodes de rétention, ou exécuter des processus de segmentation avec des performances exceptionnelles.
 
-   Cette architecture vous permet également d’utiliser les fonctionnalités de workflow de gestion de données dans [!DNL Snowflake]. Seuls les agrégats et les tables temporaires sont déplacés vers Campaign à des fins de personnalisation et de diffusion.
+  Cette architecture vous permet également d’utiliser les fonctionnalités de workflow de gestion de données dans [!DNL Snowflake]. Seuls les agrégats et les tables temporaires sont déplacés vers Campaign à des fins de personnalisation et de diffusion.
 
 
 ## Architecture{#fda-archi}

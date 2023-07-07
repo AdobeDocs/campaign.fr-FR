@@ -21,11 +21,11 @@ Les informations accessibles à partir de ce sous-onglet sont les suivantes :
 
 * Le sous-onglet **[!UICONTROL Audit]** affiche le journal des activités. Il contient les traitements exécutés lors de la campagne : création ou démarrage d&#39;un workflow, validation, extraction, gestion des stocks, etc.
 
-   ![](assets/campaign-audit-tab.png)
+  ![](assets/campaign-audit-tab.png)
 
 * Le sous-onglet **[!UICONTROL Diffusions]** contient toutes les diffusions de la campagne. Elles peuvent être modifiées à partir de cet affichage. Pour cela, sélectionnez la diffusion et cliquez sur l&#39;icône **[!UICONTROL Détail]**.
 
-   ![](assets/campaign-delivery-tab.png)
+  ![](assets/campaign-delivery-tab.png)
 
 * Le sous-onglet **[!UICONTROL Validations]** contient l&#39;ensemble du processus de validation de la campagne. Vous pouvez vérifier les détails et les commentaires.
 

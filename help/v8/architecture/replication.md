@@ -29,7 +29,7 @@ Ce workflow effectue une réplication automatique des tables intégrées qui doi
 * **[!UICONTROL Répliquer les données Staging]**
 Ce workflow réplique les données Staging pour les appels unitaires. Il est planifié pour s&#39;exécuter toutes les heures, quotidiennement.
 * **[!UICONTROL Déployer immédiatement FFDA]**\
-   Ce workflow effectue un déploiement immédiat dans la base de données cloud.
+  Ce workflow effectue un déploiement immédiat dans la base de données cloud.
 * **[!UICONTROL Répliquer les données FFDA immédiatement]**
 Ce workflow réplique les données XS pour un compte externe donné.
 
@@ -46,9 +46,9 @@ Identifiez les bases de données utilisées par Adobe Campaign v8, les raisons
 >[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
 
-### Stratégies de réplication de données{#data-replication-policies}
+### Politiques de réplication de données{#data-replication-policies}
 
-Les stratégies de réplication sont basées sur la taille des tables. Certaines tables sont répliquées en temps réel. D&#39;autres le sont sur une base horaire. Certaines tables sont mises à jour de manière incrémentielle tandis que d&#39;autres sont remplacées.
+Les politiques de réplication sont basées sur la taille des tables. Certaines tables sont répliquées en temps réel. D&#39;autres le sont sur une base horaire. Certaines tables sont mises à jour de manière incrémentielle tandis que d&#39;autres sont remplacées.
 
 Outre le workflow technique intégré **Répliquer les tables de référence**, vous pouvez forcer la réplication des données dans vos workflows.
 

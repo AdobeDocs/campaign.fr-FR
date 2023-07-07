@@ -25,8 +25,8 @@ L&#39;activité **[!UICONTROL Déduplication]** est utilisée pour supprimer des
 | Date de la dernière modification | Prénom | Nom | Email | Téléphone mobile | Phone |
 |-----|------------|-----------|-------|--------------|------|
 | 5/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
-| 7/22/2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
-| 10/03/2020 | Bob |  | bob@mycompany.com |  | 888-888-8888 |
+| 7/22/2020 | Bobby | Tisner | bob@mycompany.com | | 777-777-7777 |
+| 10/03/2020 | Bob |  | bob@mycompany.com | | 888-888-8888 |
 
 Avec la fonctionnalité **[!UICONTROL Fusion]** de l&#39;activité Déduplication, vous pouvez configurer un jeu de règles pour que la déduplication définisse un groupe de champs à fusionner dans un seul enregistrement de données obtenu. Par exemple, avec un ensemble d’enregistrements en doublon, vous pouvez choisir de conserver le numéro de téléphone le plus ancien ou le nom le plus récent.
 
@@ -93,8 +93,8 @@ Après avoir configuré ces règles, les données suivantes sont reçues à la f
 | Date de modification | Prénom | Nom | Email | Téléphone mobile | Phone |
 |-----|------------|-----------|-------|--------------|------|
 | 5/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
-| 7/22/2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
-| 10/03/2020 | Bob |  | bob@mycompany.com |  | 888-888-8888 |
+| 7/22/2020 | Bobby | Tisner | bob@mycompany.com | | 777-777-7777 |
+| 10/03/2020 | Bob |  | bob@mycompany.com | | 888-888-8888 |
 
 Le résultat est fusionné à partir des trois enregistrements selon les règles configurées précédemment. Après comparaison, il est conclu que le nom et le téléphone mobile les plus récents sont utilisés, ainsi que le numéro de téléphone original.
 

@@ -18,11 +18,11 @@ Dans le contexte d’un [déploiement Grands comptes (FFDA)](enterprise-deployme
 
 * API d&#39;ingestion : **xtk.session.ingest**
 
-   Cette API est dédiée uniquement à l&#39;insertion de données. [En savoir plus](#data-insert-api)
+  Cette API est dédiée uniquement à l&#39;insertion de données. [En savoir plus](#data-insert-api)
 
 * API de mise à jour/suppression des données : **xtk.session.ingestExt**
 
-   Cette API est utilisée pour mettre à jour ou supprimer des données. [En savoir plus](#data-update-api)
+  Cette API est utilisée pour mettre à jour ou supprimer des données. [En savoir plus](#data-update-api)
 
 Un workflow intégré dédié synchronise les données dans la base de données cloud.
 

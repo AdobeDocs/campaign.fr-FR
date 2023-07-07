@@ -4,7 +4,7 @@ title: Créer et gérer les tâches
 description: Créer et gérer les tâches
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3913'
 ht-degree: 100%
 
@@ -310,7 +310,7 @@ La tâche de création d&#39;une ressource marketing interagit avec la ressource
 * Les opérateurs peuvent travailler normalement sur la ressource (télécharger le fichier vers ou depuis le serveur, verrouiller et déverrouiller la ressource) : cela n&#39;a pas d&#39;incidence sur la tâche.
 * La validation et la publication de la ressource peuvent être faites via la tâche : si l&#39;option **[!UICONTROL Publier la ressource marketing]** est active, la ressource est automatiquement validée et publiée lorsque la tâche est terminée. Si l&#39;option n&#39;est pas active, il n&#39;y a pas d&#39;interaction entre la tâche et la ressource : une action effectuée dans l&#39;une n&#39;aura aucun effet sur l&#39;autre.
 
-   Vous pouvez utiliser une série de tâches liées pour définir un chemin de validation complet. Cochez l&#39;option **[!UICONTROL Publier la ressource marketing]** uniquement au niveau de la dernière tâche : toutes les tâches devront être terminées pour que la ressource puisse être publiée. De plus, lorsque vous créerez une tâche de ressource marketing enfant d&#39;une autre tâche de ressource marketing, la ressource sera automatiquement sélectionnée dans la tâche-fille.
+  Vous pouvez utiliser une série de tâches liées pour définir un chemin de validation complet. Cochez l&#39;option **[!UICONTROL Publier la ressource marketing]** uniquement au niveau de la dernière tâche : toutes les tâches devront être terminées pour que la ressource puisse être publiée. De plus, lorsque vous créerez une tâche de ressource marketing enfant d&#39;une autre tâche de ressource marketing, la ressource sera automatiquement sélectionnée dans la tâche-fille.
 
    * **Via la ressource** : si vous soumettez la ressource à validation ou la validez, ces actions n&#39;auront aucun effet sur la tâche.
    * **Via la tâche** : si l&#39;option **[!UICONTROL Publier la ressource marketing]** est cochée dans la tâche, la ressource est automatiquement validée et publiée lorsque la tâche est terminée (voir ci-dessous). Si l&#39;option n&#39;est pas cochée, il n&#39;y a pas d&#39;interaction entre la tâche et la ressource :une action effectuée dans l&#39;une n&#39;aura aucune incidence sur l&#39;autre.
@@ -377,7 +377,7 @@ Lors de sa création, les éléments suivants doivent être renseignés dans la 
 * **Date de fin de la tâche** : date à laquelle la tâche prend le statut **[!UICONTROL Terminé]**. Par défaut, la date de fin est identique à celle de début. Cependant, donner une durée à la tâche permet, si besoin, de symboliser dans le planning le temps dont dispose l&#39;opérateur pour agir.
 * **[!UICONTROL Description]** : le texte entré ici apparaîtra dans le corps de l&#39;email de notification.
 
-   ![](assets/mrm_task_notif_dashboard_msg.png)
+  ![](assets/mrm_task_notif_dashboard_msg.png)
 
 Vous pouvez attacher une pièce jointe à la tâche, et à l&#39;email de notification. Pour cela, cliquez sur l&#39;icône **[!UICONTROL Documents]** dans la barre d&#39;outils en haut de la boîte.
 
@@ -440,7 +440,6 @@ Une tâche peut être : **[!UICONTROL Planifiée]**, **[!UICONTROL En cours]**,
 >* Même si la période de validité est terminée, une tâche qui n&#39;a pas été close par son responsable apparaît toujours dans les tâches en cours. Un message d&#39;avertissement est affiché pour alerter les opérateurs que la tâche est en retard.
 >
 
-
 ### Statut d&#39;avancement d&#39;une tâche {#progress-status-of-a-task}
 
 En plus de son statut d&#39;exécution, une tâche peut être associée à un état d&#39;avancement : **[!UICONTROL En retard]**, **[!UICONTROL A valider]**, **[!UICONTROL A faire aujourd&#39;hui]** ou **[!UICONTROL A faire cette semaine]**. Ces informations sont automatiquement renseignées en fonction du planning de réalisation de la tâche.
@@ -469,7 +468,7 @@ Voici les différentes étapes du cycle de vie complet d&#39;une tâche pour laq
    * à partir de l&#39;email de notification.
    * à partir de la console ou de l’interface web, au niveau du tableau de bord de la tâche.
 
-      ![](assets/s_ncs_user_task_start_rea.png)
+     ![](assets/s_ncs_user_task_start_rea.png)
 
 1. À chaque validation d’un intervenant ou d’une intervenante, le statut de progression de la tâche est mis à jour.
 

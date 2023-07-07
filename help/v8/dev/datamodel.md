@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
 source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 100%
 
@@ -20,13 +20,13 @@ La structure de base du modèle de données Adobe Campaign peut être décrite 
 
 * **Table des destinataires** : le modèle de données repose sur une table principale qui est par défaut la table des destinataires (nmsRecipient). Cette table enregistre tous les profils marketing.
 
-   ![](../assets/do-not-localize/glass.png) Pour plus d&#39;informations sur la table des destinataires, consultez cette [section](#ootb-profiles).
+  ![](../assets/do-not-localize/glass.png) Pour plus d&#39;informations sur la table des destinataires, consultez cette [section](#ootb-profiles).
 
 * **Table des diffusions** : le modèle de données comprend également une partie dédiée au stockage de toutes les activités marketing. Généralement, il s&#39;agit de la table des diffusions (NmsDelivery). Chaque enregistrement de cette table représente une action de diffusion ou un modèle de diffusion. Elle contient tous les paramètres nécessaires pour effectuer des diffusions telles que la cible, le contenu, etc.
 
 * **Tables de logs** : ces tables stockent tous les logs associés à l&#39;exécution des campagnes.
 
-   Les logs de diffusion sont tous les messages envoyés aux destinataires ou aux appareils sur tous les canaux. Le tableau principal des logs de diffusion (NmsBroadLogRcp) contient les logs de diffusion pour tous les destinataires.
+  Les logs de diffusion sont tous les messages envoyés aux destinataires ou aux appareils sur tous les canaux. Le tableau principal des logs de diffusion (NmsBroadLogRcp) contient les logs de diffusion pour tous les destinataires.
 Le tableau principal des logs de suivi (NmsTrackingLogRcp) stocke les logs de suivi pour tous les destinataires. Les logs de tracking se rapportent aux réactions des destinataires, telles que les ouvertures d&#39;e-mail et les clics. Chaque réaction correspond à un log de tracking.
 Les mpgs de diffusion et de tracking sont supprimés après une certaine période, spécifiée dans Adobe Campaign et modifiable. Il est donc vivement recommandé d&#39;exporter les logs de façon régulière.
 

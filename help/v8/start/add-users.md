@@ -12,7 +12,7 @@ ht-degree: 100%
 
 ---
 
-# Prise en main des autorisations
+# Commencer avec les autorisations
 
 Dans Adobe Campaign, les utilisateurs sont des **opérateurs** et les **groupes d’opérateurs** représentent des rôles d’utilisateur.
 

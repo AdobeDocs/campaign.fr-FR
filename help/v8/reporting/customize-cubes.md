@@ -7,7 +7,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 100%
 
@@ -82,11 +82,11 @@ Vous pouvez, au choix :
 
 * **[!UICONTROL Récupérer les valeurs les plus utilisées]**
 
-   Si vous générez 4 compartiments, les 4 valeurs les plus utilisées seront affichées, les autres seront comptabilisées et regroupées sous le libellé « Autres ».
+  Si vous générez 4 compartiments, les 4 valeurs les plus utilisées seront affichées, les autres seront comptabilisées et regroupées sous le libellé « Autres ».
 
 * **[!UICONTROL Générer les compartiments sous forme de plages]**
 
-   Pour le même échantillon, Adobe Campaign crée automatiquement 4 plages de valeurs de même taille pour afficher les valeurs de la base de données.
+  Pour le même échantillon, Adobe Campaign crée automatiquement 4 plages de valeurs de même taille pour afficher les valeurs de la base de données.
 
 Dans ce cas, le filtre sélectionné au niveau du schéma des faits est ignoré.
 
@@ -140,7 +140,7 @@ Pour créer un nouvel agrégat, les étapes sont les suivantes :
    * L&#39;activité **[!UICONTROL Planificateur]** permet de définir la fréquence de mise à jour des calculs. Le planificateur est présenté dans [cette section](../../automation/workflow/scheduler.md).
    * L&#39;activité **[!UICONTROL Mise à jour d&#39;agrégat]** permet de choisir le mode de mise à jour à appliquer : complète ou partielle.
 
-      Par défaut, une mise à jour complète est réalisée à chaque calcul. Pour permettre une mise à jour partielle des données, sélectionnez l&#39;option correspondante puis définissez les conditions de mise à jour.
+     Par défaut, une mise à jour complète est réalisée à chaque calcul. Pour permettre une mise à jour partielle des données, sélectionnez l&#39;option correspondante puis définissez les conditions de mise à jour.
 
 ## Définition des mesures {#define-measures}
 
@@ -186,7 +186,7 @@ Le paramétrage des mesures, lignes et colonnes affichées peut être réalisé 
 
 * Cliquez sur l&#39;icône **[!UICONTROL Editer la configuration du tableau pivot]** pour accéder à la fenêtre de configuration générale pour toutes les mesures.
 
-   Vous pouvez choisir d&#39;afficher ou non les libellés des mesures ainsi que leur localisation (en ligne ou en colonne).
+  Vous pouvez choisir d&#39;afficher ou non les libellés des mesures ainsi que leur localisation (en ligne ou en colonne).
 
 ![](assets/cube-pivot-table-config-details.png)
 

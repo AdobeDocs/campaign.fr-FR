@@ -75,9 +75,9 @@ Pour plus d’informations sur la création d’un modèle de distribution de do
    * **[!UICONTROL Libellé]** : saisissez le libellé du domaine qui apparaîtra dans les notifications de validation et de retour.
    * **[!UICONTROL Groupe ou opérateur]** : sélectionnez l&#39;opérateur ou le groupe d&#39;opérateurs affecté au domaine.
 
-      >[!CAUTION]
-      >
-      >Vérifiez que les opérateurs disposent des droits adéquats.
+     >[!CAUTION]
+     >
+     >Vérifiez que les opérateurs disposent des droits adéquats.
 
 ## Étape 2 : créer le workflow de ciblage {#step-2--creating-the-targeting-workflow}
 

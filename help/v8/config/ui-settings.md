@@ -7,7 +7,7 @@ role: Admin, Developer
 level: Beginner, Intermediate, Experienced
 exl-id: fefb6d80-c3d1-448b-82ab-648da58a0ba4
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1946'
 ht-degree: 100%
 
@@ -53,6 +53,7 @@ Si vous souhaitez charger l’intégralité des enregistrements, cliquez dans la
 >[!CAUTION]
 >
 >Lorsqu’une liste contient un grand nombre d’enregistrements, le chargement complet peut prendre un certain temps.
+>
 
 ### Ajouter et supprimer des colonnes {#add-columns}
 
@@ -79,6 +80,7 @@ Vous pouvez également utiliser l’écran de configuration de la liste pour ajo
    >Par défaut, les champs avancés ne sont pas affichés. Pour les afficher, cliquez sur l’icône **Afficher les champs avancés**, dans la section inférieure droite de la liste des champs disponibles.
    >
    >Les champs sont identifiés par des icônes spécifiques : champs SQL, tables liées, champs calculés, etc. Pour chaque champ sélectionné, la description est affichée sous la liste des champs disponibles.
+   >
 
 1. Utilisez les flèches haut/bas pour modifier l’**ordre d’affichage**.
 
@@ -254,6 +256,7 @@ Le sous-onglet **[!UICONTROL Alias]** d’une énumération peut afficher le nom
 >[!CAUTION]
 >
 >Le calcul des occurrences de saisie d’un alias peut prendre beaucoup de temps.
+>
 
 Vous pouvez lancer manuellement le calcul des occurrences via le lien **[!UICONTROL Nettoyer les valeurs...]**. Pour ce faire, cliquez sur le lien **[!UICONTROL Paramètres avancés...]** et sélectionnez une ou plusieurs options.
 

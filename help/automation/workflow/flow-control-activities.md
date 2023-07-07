@@ -27,4 +27,4 @@ Les activités suivantes sont des activités de base de données : elles serven
 * **[Test](test.md)** : active une transition en fonction du résultat d&#39;un test.
 * **[Contrainte horaire](time-constraint.md)** : permet de suspendre l&#39;exécution d&#39;une tâche pendant une période déterminée.
 * **[Attente](wait.md)** : active la transition sortante après un délai donné.
-   <!--* **Task**: lets you configure task execution. Refer to the [Task](task.md) section.-->
+  <!--* **Task**: lets you configure task execution. Refer to the [Task](task.md) section.-->

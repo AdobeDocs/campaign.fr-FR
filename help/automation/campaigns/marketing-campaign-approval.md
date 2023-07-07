@@ -5,7 +5,7 @@ description: Découvrez comment gérer les validations des campagnes marketing
 feature: Approvals, Campaigns
 exl-id: 03be5058-436e-4de9-99a7-91d799aa17f6
 source-git-commit: 382f0b1c4ee014f6ae5d62eaf93f5ae8c72c06b1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2443'
 ht-degree: 100%
 
@@ -23,13 +23,13 @@ Des messages de notification sont envoyés aux opérateurs Adobe Campaign dési
 Les opérateurs peuvent valider les demandes de plusieurs manières :
 
 * À partir du message de notification. Le lien contenu dans l&#39;e-mail permet à l&#39;opérateur d&#39;accéder à Campaign à partir d&#39;un navigateur web. Une fois connecté, le réviseur peut choisir de valider ou non le contenu.
-   ![](assets/approval-content-email.png)
+  ![](assets/approval-content-email.png)
 
 * À partir du tableau de bord de la campagne.
-   ![](assets/approval-from-dashboard.png)
+  ![](assets/approval-from-dashboard.png)
 
 * À partir du tableau de bord de la diffusion.
-   ![](assets/approval-from-delivery-dashboard.png)
+  ![](assets/approval-from-delivery-dashboard.png)
 
 Les opérateurs peuvent accéder à la campagne ainsi qu&#39;à la diffusion à partir de la fenêtre de validation. Ils peuvent également saisir un commentaire.
 
@@ -98,6 +98,7 @@ Une fois ces phases de validation achevées, la diffusion peut être lancée. [E
 >[!NOTE]
 >
 >Les processus qui nécessitent une validation sont sélectionnés dans le modèle de campagne. [En savoir plus](marketing-campaign-templates.md).
+>
 
 ### Étapes de validation d’une diffusion {#approving-processes}
 
@@ -109,33 +110,33 @@ Pour chaque diffusion de l&#39;opération, il est possible de valider les traite
 
 * **Valider le ciblage, le contenu, le budget**
 
-   Lorsque les options **[!UICONTROL Activer la validation de la cible]**, **[!UICONTROL Activer la validation du contenu]** ou **[!UICONTROL Activer la validation du budget]** sont sélectionnées dans la fenêtre de paramétrage de la validation, les liens correspondants s&#39;affichent dans les tableaux de bord de la campagne et des diffusions.
+  Lorsque les options **[!UICONTROL Activer la validation de la cible]**, **[!UICONTROL Activer la validation du contenu]** ou **[!UICONTROL Activer la validation du budget]** sont sélectionnées dans la fenêtre de paramétrage de la validation, les liens correspondants s&#39;affichent dans les tableaux de bord de la campagne et des diffusions.
 
-   ![](assets/template-activate-6.png)
+  ![](assets/template-activate-6.png)
 
-   >[!NOTE]
-   >
-   >La validation du budget n&#39;est disponible que si celle de la cible est activée dans la fenêtre de paramétrage de la validation. Le lien de la validation du budget ne s&#39;affiche qu&#39;une fois la cible analysée.
+  >[!NOTE]
+  >
+  >La validation du budget n&#39;est disponible que si celle de la cible est activée dans la fenêtre de paramétrage de la validation. Le lien de la validation du budget ne s&#39;affiche qu&#39;une fois la cible analysée.
 
-   Lorsque les options **[!UICONTROL Assigner l&#39;édition du contenu]** ou **[!UICONTROL Validation externe du contenu]** sont sélectionnées dans la fenêtre de paramétrage de la validation des traitements, le tableau de bord propose respectivement les liens **[!UICONTROL Contenu disponible]** et **[!UICONTROL Validation externe du contenu]**.
+  Lorsque les options **[!UICONTROL Assigner l&#39;édition du contenu]** ou **[!UICONTROL Validation externe du contenu]** sont sélectionnées dans la fenêtre de paramétrage de la validation des traitements, le tableau de bord propose respectivement les liens **[!UICONTROL Contenu disponible]** et **[!UICONTROL Validation externe du contenu]**.
 
-   La validation du contenu permet d&#39;accéder aux BAT envoyés.
+  La validation du contenu permet d&#39;accéder aux BAT envoyés.
 
 * **Valider l&#39;extraction (diffusion courrier)**
 
-   Lorsque l&#39;option **[!UICONTROL Activer la validation de l&#39;extraction]** est sélectionnée dans la fenêtre de paramétrage de la validation des traitements, le fichier extrait doit être validé avant que le routeur puisse être notifié.
+  Lorsque l&#39;option **[!UICONTROL Activer la validation de l&#39;extraction]** est sélectionnée dans la fenêtre de paramétrage de la validation des traitements, le fichier extrait doit être validé avant que le routeur puisse être notifié.
 
-   L&#39;option **[!UICONTROL Valider le fichier]** est disponible dans les tableaux de bord des campagnes et des diffusions.
+  L&#39;option **[!UICONTROL Valider le fichier]** est disponible dans les tableaux de bord des campagnes et des diffusions.
 
-   ![](assets/approve-file-preview.png)
+  ![](assets/approve-file-preview.png)
 
-   Vous pouvez prévisualiser le fichier de sortie avant la validation. La prévisualisation du fichier d&#39;extraction affiche uniquement un modèle de données. Le fichier entier n&#39;est pas chargé.
+  Vous pouvez prévisualiser le fichier de sortie avant la validation. La prévisualisation du fichier d&#39;extraction affiche uniquement un modèle de données. Le fichier entier n&#39;est pas chargé.
 
 * **Valider les diffusions associées**
 
-   L&#39;option **[!UICONTROL Activer la validation individuelle de chaque diffusion associée]** est utilisée pour une diffusion principale associée à des diffusions secondaires. Par défaut, cette option n&#39;est pas sélectionnée afin d&#39;effectuer une validation globale de la diffusion principale. Si cette option est sélectionnée, chaque diffusion doit être validée individuellement.
+  L&#39;option **[!UICONTROL Activer la validation individuelle de chaque diffusion associée]** est utilisée pour une diffusion principale associée à des diffusions secondaires. Par défaut, cette option n&#39;est pas sélectionnée afin d&#39;effectuer une validation globale de la diffusion principale. Si cette option est sélectionnée, chaque diffusion doit être validée individuellement.
 
-   ![](assets/enable-ind-approval.png)
+  ![](assets/enable-ind-approval.png)
 
 
 >[!NOTE]
@@ -259,19 +260,19 @@ Les logs de validation sont disponibles dans l&#39;interface utilisateur :
 
 * Dans le log des validations de la campagne, sous-onglet **[!UICONTROL Validations]** de l&#39;onglet **[!UICONTROL Modifier > Audit]** :
 
-   ![](assets/approval-tracking-from-campaign.png)
+  ![](assets/approval-tracking-from-campaign.png)
 
 * Dans le log des diffusions de la campagne, sous-onglet **[!UICONTROL Diffusions]** de l&#39;onglet **[!UICONTROL Modifier > Audit]** :
 
-   ![](assets/approval-tracking-from-campaign-deliveries.png)
+  ![](assets/approval-tracking-from-campaign-deliveries.png)
 
 * Au niveau de chaque diffusion, le statut des validations peut être consulté en cliquant sur l&#39;option **[!UICONTROL Afficher/cacher le journal]** de l&#39;onglet **[!UICONTROL Résumé]** :
 
-   ![](assets/approval-tracking-delivery-dashboard.png)
+  ![](assets/approval-tracking-delivery-dashboard.png)
 
 * Ces informations sont également accessibles depuis l&#39;onglet **[!UICONTROL Audit > Validations]** de chaque diffusion :
 
-   ![](assets/approval-tracking-delivery-tab.png)
+  ![](assets/approval-tracking-delivery-tab.png)
 
 >[!NOTE]
 >

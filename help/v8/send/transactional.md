@@ -6,7 +6,7 @@ role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
 source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1560'
 ht-degree: 100%
 
@@ -108,7 +108,7 @@ La définition du contenu du message transactionnel est la même que pour toutes
 
 >[!CAUTION]
 >
->Les images incluses dans le message doivent être accessibles publiquement. Adobe Campaign ne fournit pas de mécanisme de mise en ligne des images pour les messages transactionnels.\
+>Les images incluses dans le message doivent être accessibles publiquement. Adobe Campaign ne fournit pas de mécanisme de chargement des images pour les messages transactionnels.\
 >Contrairement à JSSP ou webApp, `<%=` n&#39;a pas de séquence d&#39;échappement par défaut.
 >
 >Vous devez appliquer une séquence d&#39;échappement correcte à toutes les données provenant de l&#39;événement. Cette séquence d&#39;échappement dépend de l&#39;utilisation de ce champ. Par exemple, dans une URL, utilisez encodeURIComponent. Pour un affichage dans le code HTML, vous pouvez utiliser escapeXMLString.
@@ -259,7 +259,7 @@ Une fois qu’un modèle de message est publié <!--on the execution instances--
 
 * En effet, un modèle publié peut toujours être appelé si l&#39;événement correspondant est déclenché : si vous n&#39;utilisez plus de modèle de message, il est recommandé de le dépublier. Vous éviterez ainsi d&#39;envoyer par erreur un message transactionnel indésirable.
 
-   Par exemple, vous avez publié un modèle de message utilisé uniquement pour les campagnes de Noël. Vous pouvez le dépublier une fois la période de Noël terminée et le publier de nouveau l&#39;année suivante.
+  Par exemple, vous avez publié un modèle de message utilisé uniquement pour les campagnes de Noël. Vous pouvez le dépublier une fois la période de Noël terminée et le publier de nouveau l&#39;année suivante.
 
 * En outre, vous ne pouvez pas supprimer un modèle de message transactionnel dont le statut est **[!UICONTROL Publié]**. Vous devez d&#39;abord le dépublier.
 
@@ -278,8 +278,8 @@ Une fois la publication annulée :
 
 * Les deux modèles de message (appliqués aux types d’événements par lots et temps réel) sont supprimés<!-- from each execution instance-->.
 
-   Ils n&#39;apparaissent plus dans le dossier **[!UICONTROL Administration > Exploitation > Exécution Message Center > Défaut > Modèles de messages transactionnels]**.
+  Ils n&#39;apparaissent plus dans le dossier **[!UICONTROL Administration > Exploitation > Exécution Message Center > Défaut > Modèles de messages transactionnels]**.
 
 * Une fois la dépublication d’un modèle effectuée, vous pouvez le supprimer<!-- from the control instance-->.
 
-   Pour ce faire, sélectionnez-le dans la liste et cliquez sur le bouton **[!UICONTROL Supprimer]** en haut à droite de l&#39;écran.
+  Pour ce faire, sélectionnez-le dans la liste et cliquez sur le bouton **[!UICONTROL Supprimer]** en haut à droite de l&#39;écran.

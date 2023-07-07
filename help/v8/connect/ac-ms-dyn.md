@@ -6,7 +6,7 @@ role: Admin, User
 level: Beginner, Intermediate, Experienced
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1399'
 ht-degree: 100%
 
@@ -151,6 +151,7 @@ Tout d’abord, vous devez créer le compte externe Microsoft Dynamics 365.
       * **Mot de passe** : compte utilisé pour se connecter à Microsoft CRM
       * **Identifiant client** : identifiant (client) d’application qui se trouve sur le portail de gestion Microsoft Azure au niveau de la catégorie Mettre à jour votre code, dans le champ Identifiant du client.
       * **Version du CRM** : sélectionnez la version du CRM Dynamics 365 CRM.
+
    1. Pour configurer le compte externe Microsoft Dynamics CRM afin de vous connecter à Adobe Campaign avec un **Certificat**, fournissez les détails suivants :
 
       * **Serveur** : URL de votre serveur Microsoft CRM. Pour trouver votre URL de serveur Microsoft CRM, accédez à votre compte Microsoft Dynamics CRM, puis cliquez sur Dynamics 365 et sélectionnez votre application. Vous pouvez ensuite trouver votre URL de serveur dans la barre d’adresse de votre navigateur, par exemple : https://myserver.crm.dynamics.com/.
@@ -159,7 +160,6 @@ Tout d’abord, vous devez créer le compte externe Microsoft Dynamics 365.
       * **Identifiant de clé personnalisée** : identifiant disponible dans l’onglet **Manifeste** de votre application, en suivant la procédure décrite dans [cette section](#config-certificate-key-id).
       * **Identifiant du client** : identifiant (client) d’application qui se trouve sur le portail de gestion Microsoft Azure, comme expliqué dans [cette section](#get-client-id-microsoft).
       * **Version du CRM** : sélectionnez la version du CRM Dynamics 365 CRM.
-
 
 1. Sélectionnez l’option **Activer** pour activer le compte dans Campaign.
 

@@ -25,7 +25,7 @@ Le workflow présenté ci-dessous est installé par défaut avec le module **Can
   <tr> 
    <td> <span class="uicontrol">Gestion des opt-out NMAC</span> <br /> </td> 
    <td> <span class="uicontrol">mobileAppOptOutMgt</span> <br /> </td> 
-   <td> Ce workflow met à jour les désinscriptions aux notifications sur les terminaux mobiles. Par défaut, il se déclenche toutes les 6H00 entre 1H00 et minuit. Pour plus d'informations, consultez cette section</a>.<br /> </td> 
+   <td> Ce workflow met à jour les désinscriptions aux notifications sur les appareils mobiles. Par défaut, il se déclenche toutes les 6 heures entre 1 h 00 et minuit. Pour plus d'informations, consultez cette section</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

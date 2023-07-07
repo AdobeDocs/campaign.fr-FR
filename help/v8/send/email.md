@@ -8,7 +8,7 @@ exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
 source-git-commit: 500de76853772313b1aac655da2f1b3562de2c55
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
      ![](assets/include-greetings.png)
 
-     Accédez à l&#39;onglet Aperçu pour vérifier la personnalisation en sélectionnant un destinataire.
+     Accédez à l’onglet Aperçu pour vérifier la personnalisation en sélectionnant un destinataire.
 
      ![](assets/perso-check.png)
 
@@ -70,13 +70,13 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
      Pour permettre à vos destinataires d’accéder au contenu de votre diffusion dans un navigateur web, ajoutez un lien vers la [page miroir](mirror-page.md) de votre message.
 
-     Placez le curseur à l&#39;endroit où vous souhaitez insérer ce lien, cliquez sur la dernière icône de la barre d&#39;outils, puis sur **[!UICONTROL Inclure]** et sélectionnez **[!UICONTROL Lien vers la page miroir]**.
+     Placez le curseur à l’endroit où vous souhaitez insérer ce lien, cliquez sur la dernière icône de la barre d’outils, puis sur **[!UICONTROL Inclure]** et sélectionnez **[!UICONTROL Lien vers la page miroir]**.
 
      En savoir plus sur la gestion de la page miroir dans [cette section](mirror-page.md#link-to-mirror-page).
 
-1. Vous pouvez définir des paramètres supplémentaires pour votre email, tels que l&#39;envoi d&#39;une copie de vos messages à une adresse BBC, la modification du format du message, la définition d&#39;un encodage spécifique, etc. En savoir plus dans [cette section](email-parameters.md).
+1. Vous pouvez configurer des paramètres supplémentaires pour votre e-mail, tels que l’envoi d’une copie de vos messages à une adresse BBC, la modification du format du message, la configuration d’un encodage spécifique, etc. En savoir plus dans [cette section](email-parameters.md).
 
-1. Une fois le contenu prêt, cliquez sur **Enregistrer** : elle s&#39;affiche désormais dans votre liste de diffusions, sous l&#39;onglet **[!UICONTROL Campagnes > Diffusions]**.
+1. Une fois le contenu prêt, cliquez sur **Enregistrer** : elle s’affiche désormais dans votre liste de diffusions, sous l’onglet **[!UICONTROL Campagnes > Diffusions]**.
 
 Votre première diffusion e-mail est prête. Vous devez maintenant définir l&#39;audience, valider la diffusion et l&#39;envoyer.
 
@@ -88,15 +88,15 @@ En savoir plus dans les sections suivantes :
 * [Créer et utiliser un modèle d’e-mail](../send/create-templates.md)
 * [Sélectionner l’audience de votre e-mail](../audiences/gs-audiences.md)
 * [Valider une diffusion et envoyer des BAT](preview-and-proof.md)
-* [Configuration et envoi de la diffusion](configure-and-send.md)
+* [Configurer et envoyer la diffusion](configure-and-send.md)
 
 ## Tester et valider vos e-mails
 
-Campaign propose plusieurs méthodes permettant de tester et valider vos e-mails avant de les envoyer à vos audiences. Découvrez comment prévisualiser et tester le contenu de votre email dans [cette section](../send/preview-and-proof.md).
+Campaign propose plusieurs méthodes permettant de tester et valider vos e-mails avant de les envoyer à vos audiences. Découvrez comment prévisualiser et tester le contenu de votre e-mail dans [cette section](../send/preview-and-proof.md).
 
 Vous pouvez ainsi :
 
 * [Envoi de BAT](preview-and-proof.md)
 * [Ajouter des adresses de contrôle](../audiences/test-profiles.md)
-* [Vérifier les logs d&#39;analyses de diffusion](delivery-analysis.md)
+* [Vérifier les logs d’analyses de diffusion](delivery-analysis.md)
 

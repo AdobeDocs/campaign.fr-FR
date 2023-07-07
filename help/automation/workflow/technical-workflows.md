@@ -5,7 +5,7 @@ description: En savoir plus sur les workflows techniques disponibles avec Campai
 feature: Workflows
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
 source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1687'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ Découvrez comment surveiller les workflows techniques dans cette [section dédi
 | **Calcul de l&#39;agrégat intégral de MessageCenter** (agg_messageCenter_full) | Contrôle des messages transactionnels (Message Center - Pilotage) | Ce workflow met à jour l’agrégat intégral du cube Message Center. Il est déclenché tous les jours à 3h du matin par défaut. Cet agrégat capture les dimensions suivantes : Canal, Date, Statut et Type d&#39;événement. Le cube Message Center est ensuite utilisé pour générer des rapports basés sur des événements. Pour plus d&#39;informations sur les cubes, consultez |
 | **Mid-sourcing (compteurs des diffusions)** (defaultMidSourcingDlv) | Emission vers Mid-sourcing | Ce workflow collecte les informations de comptage des diffusions sur le serveur de mid-sourcing. Les informations de comptage comprennent les indicateurs généraux de diffusion tels que le nombre de diffusions envoyées, etc. Les informations de tracking comme les ouvertures ne sont pas incluses. Par défaut, il se déclenche toutes les dix minutes. |
 | **Mid-sourcing (logs de diffusion)** (defaultMidSourcingLog) | Emission vers Mid-sourcing | Ce workflow collecte les logs des diffusions sur le serveur de mid-sourcing. Par défaut, il se déclenche toutes les heures. |
-| **Gestion des opt-out NMAC** (mobileAppOptOutMgt) | Canal des applications mobiles (notification push) | Ce workflow met à jour les désinscriptions aux notifications sur les terminaux mobiles. Par défaut, il se déclenche toutes les 6 heures entre 1 h 00 et minuit. |
+| **Gestion des opt-out NMAC** (mobileAppOptOutMgt) | Canal des applications mobiles (notification push) | Ce workflow met à jour les désinscriptions aux notifications sur les appareils mobiles. Par défaut, il se déclenche toutes les 6 heures entre 1 h 00 et minuit. |
 | **Notification d&#39;offre** (offerMgt) | Installé par défaut | Toutes les heures, ce workflow déploie les offres validées sur l&#39;environnement en ligne, ainsi que toutes les catégories contenues dans le catalogue d&#39;offres. |
 | **Nettoyage des workflows en pause** (cleanupPausedWorkflows) | Installé par défaut | Ce workflow analyse les workflows en pause dont le niveau de priorité est défini sur normal et déclenche des avertissements et des notifications lorsqu&#39;ils sont en pause depuis trop longtemps. Après un mois, les workflows techniques en pause sont arrêtés de manière inconditionnelle. Par défaut, ce workflow est déclenché tous les lundis à 5h00. Pour plus d’informations, voir [Gérer les workflows en pause](monitor-workflow-execution.md#handling-of-paused-workflows). |
 | **Nettoyage des demandes d&#39;accès à des informations personnelles** (cleanupPrivacyRequests) | Règlement sur la protection des informations personnelles | Ce workflow supprime les fichiers de demande d’accès qui ont plus de 90 jours. |

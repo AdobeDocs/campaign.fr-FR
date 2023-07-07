@@ -49,25 +49,25 @@ Pour créer un modèle de diffusion, procédez comme suit :
 
    * Cliquez sur le lien **[!UICONTROL Pièces jointes]**, puis sur la flèche en regard du bouton **[!UICONTROL Ajouter]**. Sélectionnez **[!UICONTROL Pièce jointe calculée...]**.
 
-      ![](assets/use_case_report_4.png)
+     ![](assets/use_case_report_4.png)
 
    * Dans la liste déroulante **[!UICONTROL Type]**, sélectionnez la dernière option : **[!UICONTROL Le nom de fichier est calculé au moment de l’envoi pour chaque message (il peut dépendre du destinataire)]**.
 
-      ![](assets/use_case_report_5.png)
+     ![](assets/use_case_report_5.png)
 
-      La valeur renseignée dans le champ **[!UICONTROL Libellé]** n’apparaîtra pas dans la diffusion finale.
+     La valeur renseignée dans le champ **[!UICONTROL Libellé]** n’apparaîtra pas dans la diffusion finale.
 
    * Dans la zone de texte, saisissez le chemin d’accès et le nom du fichier.
 
-      ![](assets/use_case_report_6.png)
+     ![](assets/use_case_report_6.png)
 
-      >[!CAUTION]
-      >
-      >Le chemin d’accès et le nom doivent être identiques à ceux saisis dans l’activité de type **[!UICONTROL Code JavaScript]** du workflow. Reportez-vous à l’[Étape 3 : créer le workflow](#step-3--creating-the-workflow) pour plus de détails.
+     >[!CAUTION]
+     >
+     >Le chemin d’accès et le nom doivent être identiques à ceux saisis dans l’activité de type **[!UICONTROL Code JavaScript]** du workflow. Reportez-vous à l’[Étape 3 : créer le workflow](#step-3--creating-the-workflow) pour plus de détails.
 
    * Sélectionnez l’onglet **[!UICONTROL Avancé]** et cochez la case **[!UICONTROL Scripter le nom du fichier qui sera affiché dans la messagerie du destinataire]**. Dans la zone de texte, saisissez le nom de la pièce jointe dans la diffusion finale.
 
-      ![](assets/use_case_report_6b.png)
+     ![](assets/use_case_report_6b.png)
 
 ## Étape 3 : créer le workflow {#step-3--creating-the-workflow}
 
@@ -117,9 +117,9 @@ Pour créer ce workflow, procédez comme suit :
    * **var reportName** : saisissez, entre guillemets, le nom interne du rapport. Dans notre exemple, le nom interne du rapport **Indicateur de tracking** est « deliveryFeedback ».
    * **var path** : saisissez le chemin de sauvegarde du fichier (« tmp »), le nom que vous souhaitez lui donner (« deliveryFeedback ») et son extension (« .pdf »). Ici, nous avons utilisé le nom interne comme nom de fichier. Les valeurs doivent être comprises entre guillemets et séparées par le caractère « + ».
 
-      >[!CAUTION]
-      >
-      >Le fichier doit être enregistré sur le serveur. Vous devez saisir le même chemin d’accès et le même nom que ceux renseignés sous l’onglet **[!UICONTROL Général]** de la fenêtre de modification de la pièce jointe calculée, comme indiqué [ici](#step-2--create-the-delivery-template).
+     >[!CAUTION]
+     >
+     >Le fichier doit être enregistré sur le serveur. Vous devez saisir le même chemin d’accès et le même nom que ceux renseignés sous l’onglet **[!UICONTROL Général]** de la fenêtre de modification de la pièce jointe calculée, comme indiqué [ici](#step-2--create-the-delivery-template).
 
    * **var exportFormat** : saisissez le format d&#39;export du fichier (&quot;PDF&quot;).
    * **var _ctx** (contexte) : dans notre exemple, nous utilisons le rapport **[!UICONTROL Indicateurs de tracking]** dans son contexte global.

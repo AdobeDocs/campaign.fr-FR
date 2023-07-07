@@ -5,7 +5,7 @@ description: Validation
 feature: Workflows, Approvals
 exl-id: 9e57d21c-ce16-448d-97f1-8c6844acb37b
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 100%
 
@@ -25,15 +25,15 @@ Au besoin, vous pouvez affecter la tâche de validation à un opérateur unique 
 
 * Pour sélectionner un opérateur unique, sélectionnez la valeur **[!UICONTROL Opérateur]** dans le champ **[!UICONTROL Type d&#39;affectation]** et sélectionnez l&#39;opérateur concerné dans la liste déroulante du champ **[!UICONTROL Assignation]**.
 
-   ![](assets/s_advuser_validation_box_assign.png)
+  ![](assets/s_advuser_validation_box_assign.png)
 
-   >[!CAUTION]
-   >
-   >Seul l&#39;opérateur sélectionné sera habilité à valider la tâche.
+  >[!CAUTION]
+  >
+  >Seul l&#39;opérateur sélectionné sera habilité à valider la tâche.
 
 * Vous pouvez définir une requête afin de filtrer les opérateurs validants. Pour cela, sélectionnez la valeur **[!UICONTROL Filtre]** dans le champ **[!UICONTROL Type d&#39;affectation]** puis cliquez sur le lien **[!UICONTROL Paramètres avancés...]** pour définir les critères de filtrage, comme dans l&#39;exemple ci-dessous :
 
-   ![](assets/s_advuser_validation_box_filter.png)
+  ![](assets/s_advuser_validation_box_filter.png)
 
 Dans le cas d&#39;une validation simple, la transition correspondant au choix de l&#39;opérateur est activée et la tâche est terminée : les autres opérateurs ne peuvent plus répondre.
 
@@ -69,8 +69,8 @@ Un exemple de validation est proposé dans la section [Définir les validations]
 
 * **[!UICONTROL response]**
 
-   Commentaire associé à la réponse
+  Commentaire associé à la réponse
 
 * **[!UICONTROL responseOperator]**
 
-   Identifiant de l&#39;opérateur qui a répondu. Ce champ est une valeur numérique, mais de type **[!UICONTROL String]**.
+  Identifiant de l&#39;opérateur qui a répondu. Ce champ est une valeur numérique, mais de type **[!UICONTROL String]**.

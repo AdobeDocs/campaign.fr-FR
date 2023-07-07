@@ -23,6 +23,7 @@ Adobe Campaign offre deux nouveaux modèles de machine learning : [optimisati
 >Cette fonctionnalité ne fait pas partie des paramètres d’usine du produit. Elle est uniquement disponible pour les clients d’Adobe Campaign Managed Cloud Services qui exécutent Adobe Campaign Classic v7 ou Adobe Campaign v8.
 >
 >La mise en œuvre nécessite l’implication d’Adobe Consulting. Pour en savoir plus, contactez votre représentant Adobe.
+>
 
 
 ## Optimisation de l’heure d’envoi prédictive{#predictive-send}
@@ -64,6 +65,7 @@ L’optimisation de l’heure d’envoi prédictive est stockée au niveau du pr
 >[!NOTE]
 >
 >Le modèle nécessite au moins un mois de données pour produire des résultats significatifs. Ces fonctionnalités prédictives s’appliquent uniquement aux canaux e-mail et push.
+>
 
 
 ## Score prédictif de l’engagement {#predictive-scoring}

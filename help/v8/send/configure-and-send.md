@@ -1,25 +1,25 @@
 ---
-title: Configuration des emails avec Adobe Campaign
-description: Découvrez comment configurer des emails dans Adobe Campaign.
+title: Configurer des e-mails avec Adobe Campaign
+description: Découvrez comment configurer des e-mails dans Adobe Campaign.
 feature: Email
 role: User
 level: Beginner
 source-git-commit: 263ec61c3717c054cc135f1c4fb1f7e287e4a154
 workflow-type: tm+mt
 source-wordcount: '1217'
-ht-degree: 83%
+ht-degree: 90%
 
 ---
 
-# Configuration et envoi de la diffusion {#configure-delivery}
+# Configurer et envoyer la diffusion {#configure-delivery}
 
-## Définition de paramètres supplémentaires {#delivery-additional-parameters}
+## Configurer des paramètres supplémentaires {#delivery-additional-parameters}
 
 Avant d’envoyer la diffusion, vous pouvez définir les paramètres d’envoi dans les propriétés de la diffusion, via l’onglet **[!UICONTROL Diffusion]**.
 
 ![](assets/delivery-properties-delivery.png)
 
-* **[!UICONTROL Priorité de diffusion]**: utilisez cette option pour modifier l’ordre d’envoi de vos diffusions en définissant leur niveau de priorité, à partir de **[!UICONTROL Très faible]** to **[!UICONTROL Très élevée]** (la valeur par défaut étant **[!UICONTROL Normal]**).
+* **[!UICONTROL Priorité de diffusion]** : utilisez cette option pour modifier l’ordre d’envoi de vos diffusions en configurant leur niveau de priorité, de **[!UICONTROL Très basse]** à **[!UICONTROL Très haute]** (la valeur par défaut étant **[!UICONTROL Normale]**).
 
 * **[!UICONTROL Nombre de messages groupés]** : cette option permet de définir le nombre de messages regroupés dans un même package d’envoi XML. Si le paramètre est défini sur 0, les messages sont automatiquement regroupés. La taille du paquet est définie par le calcul `<delivery size>/1024`, avec un minimum de 8 messages et un maximum de 256 messages par package.
 
@@ -35,7 +35,7 @@ Avant d’envoyer la diffusion, vous pouvez définir les paramètres d’envoi d
   >
   >* Cette option ne doit pas être définie en midsourcing.
   >
-  >* En savoir plus sur la configuration du serveur SMTP dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}.
+  >* En savoir plus sur la configuration du serveur SMTP dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=fr#smtp-relay){target="_blank"}.
 
 * **[!UICONTROL E-mail Cci]** : cette option vous permet de stocker vos e-mails dans un système externe à l’aide de l’option Cci en ajoutant simplement une adresse e-mail à la cible des messages. [En savoir plus](email-parameters.md).
 
@@ -68,7 +68,7 @@ Pour équilibrer la charge, vous pouvez répartir les envois en plusieurs lots. 
 
      ![](assets/delivery-waves-calendar.png)
 
-   Une règle de typologie spécifique, la **[!UICONTROL Vérification de la planification des vagues]**, garantit que la dernière vague est planifiée avant la limite de validité de la diffusion. Les typologies de campagne et leurs règles, configurées dans la variable **[!UICONTROL Typologie]** Les onglets des propriétés de la diffusion sont présentés dans la section [cette section](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
+   Une règle de typologie spécifique, la **[!UICONTROL Vérification de la planification des vagues]**, garantit que la dernière vague est planifiée avant la limite de validité de la diffusion. Les typologies de campagnes et leurs règles, configurées dans l’onglet **[!UICONTROL Typologie]** des propriétés de diffusion, sont présentées dans [cette section.](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->
 
    >[!IMPORTANT]
    >

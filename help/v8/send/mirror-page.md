@@ -8,7 +8,7 @@ exl-id: 7bf3937c-484d-4404-8a9b-de7a10f5455a
 source-git-commit: b333db04dd10cc28956959a446f6567e2a89b2d4
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -33,9 +33,9 @@ Dans Adobe Campaign, vous pouvez insérer un lien vers la page miroir dans le c
 ![](assets/mirror-page-insert.png){width="800" align="left"}
 
 
-L&#39;insertion de blocs de contenu de personnalisation est présentée dans la section [Blocs de personnalisation](personalization-blocks.md).
+Pour plus d’informations sur l’insertion de blocs de contenu de personnalisation, reportez-vous aux [blocs de personnalisation](personalization-blocks.md).
 
-## Gestion de la génération des pages miroir {#mirror-page-generation}
+## Gérer la génération des pages miroir {#mirror-page-generation}
 
 Par défaut, la page miroir est automatiquement générée par Adobe Campaign si le contenu de l’e-mail n’est pas vide et s’il comporte un lien vers la page miroir (ou lien miroir).
 

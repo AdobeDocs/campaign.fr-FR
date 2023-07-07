@@ -5,7 +5,7 @@ description: Créer une campagne locale
 feature: Distributed Marketing
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1687'
 ht-degree: 100%
 
@@ -59,24 +59,24 @@ Quatre types d’interface web sont disponibles :
 
 * **[!UICONTROL Par brief]** : l’entité locale doit éditer un brief où elle peut saisir la description des paramètres de l’opération. Une fois la commande validée, l’entité centrale paramètre et exécute l’intégralité de l’opération.
 
-   ![](assets/mkt_distr_6.png)
+  ![](assets/mkt_distr_6.png)
 
 * **[!UICONTROL Par formulaire]** : l’entité locale a accès à un formulaire web où elle peut, par exemple, modifier le contenu, la cible, la taille maximale de la cible, ainsi que les dates de création et d’extraction grâce à des champs de personnalisation, selon le formulaire utilisé. Il est possible pour l’entité locale d’évaluer la cible et de prévisualiser le contenu depuis ce formulaire web.
 
-   ![](assets/mkt_distr_8.png)
+  ![](assets/mkt_distr_8.png)
 
-   Le formulaire proposé est indiqué dans une application web qui doit être sélectionnée dans la liste déroulante du champ **[!UICONTROL Interface web]** qui se trouve dans le lien **[!UICONTROL Paramètres avancés de la campagne...]**. Pour plus d&#39;informations, consultez la section [Créer une campagne locale (par formulaire)](examples.md#creating-a-local-campaign--by-form-).
+  Le formulaire proposé est indiqué dans une application web qui doit être sélectionnée dans la liste déroulante du champ **[!UICONTROL Interface web]** qui se trouve dans le lien **[!UICONTROL Paramètres avancés de la campagne...]**. Pour plus d&#39;informations, consultez la section [Créer une campagne locale (par formulaire)](examples.md#creating-a-local-campaign--by-form-).
 
-   >[!NOTE]
-   >
-   >L’application web utilisée ici est un exemple. Vous devez créer une application web spécifique pour pouvoir utiliser un formulaire.
+  >[!NOTE]
+  >
+  >L’application web utilisée ici est un exemple. Vous devez créer une application web spécifique pour pouvoir utiliser un formulaire.
 
-   ![](assets/mkt_distr_7.png)
+  ![](assets/mkt_distr_7.png)
 
 * **[!UICONTROL Par formulaire externe]** : l&#39;entité locale a accès aux paramètres de la campagne dans son extranet (non Adobe Campaign). Ces paramètres sont identiques à ceux d&#39;une **opération locale par formulaire**.
 * **[!UICONTROL Simple]** : l&#39;entité locale commande l&#39;opération en utilisant le formulaire par défaut, sans la localiser.
 
-   ![](assets/mkt_distr_5.png)
+  ![](assets/mkt_distr_5.png)
 
 ### Les valeurs par défaut {#default-values}
 

@@ -7,7 +7,7 @@ breadcrumb-title: Présentation de Campaign
 source-git-commit: 4f3e6227193fc607a968f9170484017e551fa560
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -41,13 +41,13 @@ ht-degree: 97%
       + E-mails {#emails}
          + [Concevoir et valider des e-mails](send/email.md)
          + [Lien vers la page miroir](send/mirror-page.md)
-         + [Définition de paramètres d’email supplémentaires](send/email-parameters.md)
+         + [Définir les paramètres d’e-mail supplémentaires](send/email-parameters.md)
          + [Envoyer et surveiller des e-mails](send/send.md)
       + [SMS](send/sms.md)
       + Notifications push {#push}
-         + [Création et envoi de notifications push](send/push.md)
-         + [Configuration du canal de notification push](send/push-settings.md)
-         + [Configuration des notifications push avec la collecte de données](send/push-data-collection.md)
+         + [Créer et envoyer des notifications push](send/push.md)
+         + [Configurer le canal de notification push](send/push-settings.md)
+         + [Configurer vos notifications push avec la collecte de données](send/push-data-collection.md)
       + [Messagerie LINE](send/line.md)
       + [Courrier](send/direct-mail.md)
       + [Twitter](send/twitter.md)
@@ -72,7 +72,7 @@ ht-degree: 97%
       + Valider votre diffusion {#validate}
          + [Prévisualiser et créer des BAT](send/preview-and-proof.md)
          + [Analyse des diffusions](send/delivery-analysis.md)
-      + [Configuration et envoi de la diffusion](send/configure-and-send.md)
+      + [Configurer et envoyer la diffusion](send/configure-and-send.md)
 + Gestion des profils et de l’audience {#audience}
    + [Prise en main des profils et des audiences](audiences/gs-audiences.md)
    + [Utiliser les audiences](start/audiences.md)

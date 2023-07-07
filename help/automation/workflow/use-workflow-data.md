@@ -30,21 +30,21 @@ Sélectionnez pour cela le menu correspondant :
 
 * **[!UICONTROL Afficher la cible...]**
 
-   Ce menu affiche les données disponibles sur la population cible.
+  Ce menu affiche les données disponibles sur la population cible.
 
-   ![](assets/wf-right-click-display.png)
+  ![](assets/wf-right-click-display.png)
 
-   Vous pouvez accéder à la structure de la table de travail dans l&#39;onglet **[!UICONTROL Schéma]**.
+  Vous pouvez accéder à la structure de la table de travail dans l&#39;onglet **[!UICONTROL Schéma]**.
 
-   ![](assets/wf-right-click-schema.png)
+  ![](assets/wf-right-click-schema.png)
 
-   Pour plus d&#39;informations, consultez [cette section](monitor-workflow-execution.md#worktables-and-workflow-schema).
+  Pour plus d&#39;informations, consultez [cette section](monitor-workflow-execution.md#worktables-and-workflow-schema).
 
 * **[!UICONTROL Analyser la cible...]**
 
-   Ce menu donne accès à l&#39;assistant d&#39;analyse descriptive, qui permet de produire des statistiques et des rapports sur les données de la transition.
+  Ce menu donne accès à l&#39;assistant d&#39;analyse descriptive, qui permet de produire des statistiques et des rapports sur les données de la transition.
 
-   Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target="_blank"}.
+  Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target="_blank"}.
 
 Les données de la cible sont purgées au fur et à mesure de l&#39;exécution du workflow. Seule la dernière table de travail est accessible. Vous pouvez paramétrer le workflow pour que toutes les tables de travail restent accessibles. Pour cela, cochez l&#39;option **[!UICONTROL Conserver le résultat des populations intermédiaires entre deux exécutions]** dans les propriétés du workflow.
 
@@ -126,15 +126,15 @@ Les données de la base Adobe Campaign et les listes existantes peuvent être m
 
 * L&#39;activité **[!UICONTROL Mise à jour de liste]** permet de stocker les tables de travail dans une liste de données.
 
-   Vous pouvez sélectionner une liste existante ou la créer. Dans ce cas, le nom et éventuellement le dossier d&#39;enregistrement sont calculés.
+  Vous pouvez sélectionner une liste existante ou la créer. Dans ce cas, le nom et éventuellement le dossier d&#39;enregistrement sont calculés.
 
-   ![](assets/s_user_create_list.png)
+  ![](assets/s_user_create_list.png)
 
-   Pour plus d&#39;informations, consultez la section [Mise à jour de liste](list-update.md).
+  Pour plus d&#39;informations, consultez la section [Mise à jour de liste](list-update.md).
 
 * L&#39;activité **[!UICONTROL Mise à jour de données]** permet de mettre à jour en masse les champs de la base de données.
 
-   Pour plus d’informations, consultez la section [Mise à jour de données](update-data.md).
+  Pour plus d’informations, consultez la section [Mise à jour de données](update-data.md).
 
 ### Gérer les abonnements {#subscription-management}
 

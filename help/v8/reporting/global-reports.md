@@ -4,7 +4,7 @@ description: Découvrez comment accéder aux rapports globaux et les utiliser.
 feature: Reporting, Monitoring
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
 source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1893'
 ht-degree: 100%
 
@@ -51,6 +51,7 @@ Vous pouvez paramétrer l&#39;affichage des valeurs en sélectionnant le périm�
 >Vous pouvez également surveiller le nombre de diffusions envoyées par heure dans le [Panneau de contrôle](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=fr).
 >
 >Le Panneau de contrôle est accessible à tous les utilisateurs administrateurs. Les étapes permettant d&#39;octroyer un accès administrateur à un utilisateur sont présentées sur [cette page](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=fr#discover-control-panel).
+>
 
 ## Activités utilisateurs {#user-activities}
 
@@ -94,11 +95,11 @@ Les indicateurs utilisés sont les suivants :
 * **[!UICONTROL Inatteignable]** : Type d&#39;erreur survenue dans la chaîne de distribution du message : incident sur le relais SMTP, domaine temporairement inatteignable, etc.
 * **[!UICONTROL Non connecté]** : Type d&#39;erreur indiquant que le téléphone portable du destinataire est éteint ou n&#39;est pas connecté au réseau au moment de l&#39;envoi du message.
 
-   >[!NOTE]
-   >
-   >Cet indicateur ne porte que sur les diffusions sur les [canaux mobiles](../send/send.md).
+  >[!NOTE]
+  >
+  >Cet indicateur ne porte que sur les diffusions sur les [canaux mobiles](../send/send.md).
 
-   Vous pouvez déplier chaque ligne du tableau de valeurs en cliquant sur le symbole `[+]` correspondant. Cela permet d’afficher, pour chaque type d’erreur, la répartition des messages d’erreur, par domaine.
+  Vous pouvez déplier chaque ligne du tableau de valeurs en cliquant sur le symbole `[+]` correspondant. Cela permet d’afficher, pour chaque type d’erreur, la répartition des messages d’erreur, par domaine.
 
 **[!UICONTROL Répartition des erreurs par domaine]**
 
@@ -284,9 +285,9 @@ Les indicateurs utilisés sont les suivants :
 * **[!UICONTROL Erreurs hard]** : Pourcentage du nombre d&#39;erreurs &quot;hard&quot;, par rapport au nombre total de messages traités.
 * **[!UICONTROL Erreurs soft]** : Pourcentage du nombre d&#39;erreurs &quot;soft&quot;, par rapport au nombre total de messages traités.
 
-   >[!NOTE]
-   >
-   >Pour plus d’informations sur les hard et soft bounces, consultez [cette page](../send/quarantines.md).
+  >[!NOTE]
+  >
+  >Pour plus d’informations sur les hard et soft bounces, consultez [cette page](../send/quarantines.md).
 
 * **[!UICONTROL Ouvertures]** : pourcentage du nombre de destinataires ciblés distincts ayant ouvert au moins une fois un même message, par rapport au nombre de messages traités avec succès.
 * **[!UICONTROL Clics]** : Pourcentage du nombre de personnes distinctes ayant cliqué au moins une fois dans une même diffusion, par rapport au nombre de messages traités avec succès.

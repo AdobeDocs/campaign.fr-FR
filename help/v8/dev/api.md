@@ -29,6 +29,7 @@ Veuillez notez que dans son [déploiement Grands comptes (FFDA)](../architecture
 >[!CAUTION]
 >
 >[!DNL Adobe Campaign] v8 est fourni avec une limite au niveau du débit (TPS) de notre calque API. Le fait de rompre la limite entraîne une erreur HTTP standard (429). En tant qu&#39;utilisateur Managed Cloud Services, vous pouvez contacter Adobe pour adapter le contrôle de flux de chaque API.
+> 
 
 ## Conditions préalables requises
 

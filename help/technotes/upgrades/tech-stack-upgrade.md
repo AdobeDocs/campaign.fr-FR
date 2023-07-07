@@ -23,6 +23,7 @@ Pour des raisons de sécurité, Adobe doit [installer la version la plus récent
 >[!NOTE]
 >
 >Pour toute question sur ces modifications, contactez l’[Assistance clientèle d’Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>
 
 ## Mise à niveau de la version de Campaign {#ac-upgrade}
 

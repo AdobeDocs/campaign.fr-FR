@@ -49,15 +49,15 @@ Pour cela :
 
    * **[!UICONTROL Jours d&#39;historique]**
 
-      Les destinataires déjà ciblés peuvent être historisés un nombre maximum de jours à partir du jour où ils sont ciblés. Si cette valeur vaut zéro, les destinataires ne sont jamais supprimés de l&#39;historique.
+     Les destinataires déjà ciblés peuvent être historisés un nombre maximum de jours à partir du jour où ils sont ciblés. Si cette valeur vaut zéro, les destinataires ne sont jamais supprimés de l&#39;historique.
 
    * **[!UICONTROL Conserver l&#39;historique au démarrage]**
 
-      Cette option permet de ne pas effacer l&#39;historique lors de l&#39;activation de l&#39;activité.
+     Cette option permet de ne pas effacer l&#39;historique lors de l&#39;activation de l&#39;activité.
 
    * **[!UICONTROL Nom de la table SQL]**
 
-      Ce champ permet de surcharger la table SQL par défaut contenant les données d&#39;historique.
+     Ce champ permet de surcharger la table SQL par défaut contenant les données d&#39;historique.
 
 ## Paramètres de sortie {#output-parameters}
 

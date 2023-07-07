@@ -37,9 +37,9 @@ Les droits attribués aux chargés de diffusion leur permettent d&#39;effectuer 
 * Afficher et modifier des catégories d&#39;offres.
 * Valider les offres s&#39;ils sont validants de celles-ci.
 
-   >[!NOTE]
-   >
-   >Les **Chargés de diffusion** ne peuvent valider une offre que s&#39;ils ont été définis comme validants lors du paramétrage de l&#39;offre.
+  >[!NOTE]
+  >
+  >Les **Chargés de diffusion** ne peuvent valider une offre que s&#39;ils ont été définis comme validants lors du paramétrage de l&#39;offre.
 
 ## Matrice des autorisations par opérateur d&#39;interaction {#recap-of-rights-according-to-operator}
 

@@ -5,7 +5,7 @@ description: Surveiller l’exécution des workflows
 feature: Workflows
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2015'
 ht-degree: 100%
 
@@ -37,21 +37,21 @@ Le journal contient l&#39;historique de l&#39;exécution du workflow. Il mémori
 
 * Sélectionner l&#39;onglet **[!UICONTROL Suivi]** du détail. Cette liste affiche tous les messages du workflow.
 
-   ![](assets/new-workflow-display-log-tab.png)
+  ![](assets/new-workflow-display-log-tab.png)
 
 * Filtrer les messages dans le journal par activité. Pour cela, cliquez sur le bouton **[!UICONTROL Afficher les tâches et le journal]** de la barre d&#39;outils située au-dessus du diagramme afin de faire apparaître les onglets **[!UICONTROL Journal]** et **[!UICONTROL Tâches]** sous le diagramme. Sélectionnez une activité pour visualiser tous les messages liés à cette activité. Cette liste affiche également tous les messages lorsqu&#39;aucune activité n&#39;est sélectionnée.
 
-   ![](assets/new-workflow-display-log-activity.png)
+  ![](assets/new-workflow-display-log-activity.png)
 
-   >[!NOTE]
-   >
-   >Cliquez sur l&#39;arrière-plan du diagramme pour tout désélectionner.
+  >[!NOTE]
+  >
+  >Cliquez sur l&#39;arrière-plan du diagramme pour tout désélectionner.
 
 * Visualiser uniquement les messages associés à une tâche particulière. Pour cela, sélectionnez l&#39;onglet **[!UICONTROL Tâches]** puis cliquez sur une activité du diagramme pour limiter la liste à une activité particulière. Double-cliquez sur une tâche pour afficher toutes les informations ; le dernier onglet de la fenêtre permet d&#39;afficher le journal.
 
-   ![](assets/new-workflow-display-tasks-activity.png)
+  ![](assets/new-workflow-display-tasks-activity.png)
 
-   Le bouton **[!UICONTROL Détails...]** permet d&#39;afficher toutes les informations complémentaires relatives à l&#39;exécution de l’activité. Vous pouvez par exemple visualiser l&#39;opérateur validant et le cas échéant le commentaire qu&#39;il a saisi lors de la validation.
+  Le bouton **[!UICONTROL Détails...]** permet d&#39;afficher toutes les informations complémentaires relatives à l&#39;exécution de l’activité. Vous pouvez par exemple visualiser l&#39;opérateur validant et le cas échéant le commentaire qu&#39;il a saisi lors de la validation.
 
 >[!NOTE]
 >
@@ -61,15 +61,15 @@ Le journal affiche la liste chronologique des messages d&#39;exécution des acti
 
 * Journal d&#39;une opération de ciblage
 
-   Lorsqu&#39;une opération de ciblage a été exécutée, cliquez sur l&#39;onglet **[!UICONTROL Suivi]** pour consulter la trace de l&#39;exécution.
+  Lorsqu&#39;une opération de ciblage a été exécutée, cliquez sur l&#39;onglet **[!UICONTROL Suivi]** pour consulter la trace de l&#39;exécution.
 
-   ![](assets/s_user_segmentation_journal.png)
+  ![](assets/s_user_segmentation_journal.png)
 
-   Tous les messages de l&#39;opération sont affichés: les opérations réalisées et les avertissements ou les erreurs d&#39;exécution.
+  Tous les messages de l&#39;opération sont affichés: les opérations réalisées et les avertissements ou les erreurs d&#39;exécution.
 
 * Journal d&#39;une activité
 
-   Vous pouvez également visualiser le journal de l&#39;exécution et le détail d&#39;exécution de chaque activité. Pour cela, deux méthodes sont possibles :
+  Vous pouvez également visualiser le journal de l&#39;exécution et le détail d&#39;exécution de chaque activité. Pour cela, deux méthodes sont possibles :
 
    1. Sélectionnez l&#39;activité visée et cliquez sur l&#39;icône **[!UICONTROL Afficher les tâches et le journal]**.
 
@@ -145,7 +145,7 @@ Cette option ne traite pas les erreurs liées au paramétrage de l&#39;activité
 
 Si un workflow est en mise en pause (manuellement ou automatiquement suite à une erreur), le bouton **[!UICONTROL Démarrer]** permet de reprendre l&#39;exécution du workflow là où elle s&#39;est arrêtée. L&#39;activité en erreur (ou en pause) sera de nouveau exécutée. Les activités précédentes ne sont pas exécutées de nouveau.
 
-Pour exécuter à nouveau toutes les activités du worfklow, utilisez le bouton **[!UICONTROL Redémarrer]**.
+Pour exécuter à nouveau toutes les activités du workflow, utilisez le bouton **[!UICONTROL Redémarrer]**.
 
 Si vous effectuez des modifications sur les activités déjà exécutées, elles ne sont pas prises en compte lorsque l&#39;exécution du workflow reprend.
 
@@ -216,9 +216,9 @@ Notez que :
 * Dans JavaScript, une valeur non définie est considérée comme fausse dans un test, ce qui permet de tester la variable d&#39;instance avant même de l&#39;avoir initiée.
 * Il est possible de surveiller les activités non traitées par ce mécanisme en ajoutant une consigne d&#39;enregistrement au script d&#39;initialisation de la fin « non ».
 
-   ```
-   logInfo("Workflow already running, parallel execution not allowed.");
-   ```
+  ```
+  logInfo("Workflow already running, parallel execution not allowed.");
+  ```
 
 Cette section présente un cas d’utilisation : [Coordonner les mises à jour des données](coordinate-data-updates.md).
 

@@ -139,7 +139,7 @@ Cette section présente différents cas d’utilisation utilisant des fonctionna
 
 * [Envoyer un e-mail d’anniversaire](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=fr)
 
-   Ce cas pratique présente comment planifier l’envoi d’un e-mail récurrent à une liste de destinataires le jour de leur anniversaire.
+  Ce cas pratique présente comment planifier l’envoi d’un e-mail récurrent à une liste de destinataires le jour de leur anniversaire.
 
 * [Charger le contenu de la diffusion](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=fr)
 Lorsque le contenu de votre diffusion est disponible dans un fichier HTML situé sur un serveur distant, vous pouvez facilement charger ce contenu dans les diffusions Adobe Campaign.

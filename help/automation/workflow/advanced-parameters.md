@@ -19,11 +19,11 @@ L&#39;écran des propriétés d&#39;une activité comporte un onglet **[!UICONTR
 
 * une version simplifiée (par exemple pour les activités **[!UICONTROL Début]** ou **[!UICONTROL Fin]**)
 
-   ![](assets/wf-advanced-basic.png)
+  ![](assets/wf-advanced-basic.png)
 
 * une version plus détaillée (par exemple pour l&#39;activité **[!UICONTROL Requête]**)
 
-   ![](assets/wf-advanced-full.png)
+  ![](assets/wf-advanced-full.png)
 
 Les champs à renseigner dans l&#39;onglet **[!UICONTROL Avancé]** sont décrits dans les sections suivantes.
 

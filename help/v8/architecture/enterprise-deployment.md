@@ -33,6 +33,7 @@ Tout schéma prédéfini ou toute table intégrée devant être déplacé ou ré
 >[!CAUTION]
 >
 > Les données client ne sont pas stockées dans la base de données [!DNL Campaign] locale. Par conséquent, toute table personnalisée doit être créée dans la base de données cloud.
+>
 
 ## Architecture de Campaign Enterprise (FFDA){#ffda-archi}
 
@@ -64,7 +65,7 @@ La base de données PostgreSQL sur l&#39;instance marketing est utilisée pour 
 * Stocker toutes les données de Campaign, y compris les paramètres de diffusion et de campagne, les définitions de workflow et de service
 * Stocker toutes les tables de référence intégrées (énumérations, pays, etc.) qui sont répliqués vers [!DNL Snowflake]
 
-   Cependant, vous ne pouvez pas :
+  Cependant, vous ne pouvez pas :
    * Créer des personnalisations pour les données client ; par exemple, ne créez pas de table domestique dans PostgreSQL, mais uniquement dans Snowflake
    * Stocker les logs de diffusion, les logs de tracking, etc. sur la dimension de ciblage FFDA
    * Stocker un grand volume de données
@@ -98,8 +99,9 @@ Un workflow technique spécifique gère la réplication des tables qui doivent �
 
 >[!NOTE]
 >
-> Plusieurs stratégies de réplication ont été créées en fonction de la taille de la table (XS, XL, etc.).
+> Plusieurs politiques de réplication ont été créées en fonction de la taille de la table (XS, XL, etc.).
 > Certaines tables sont répliquées en temps réel tandis que d&#39;autres le sont toutes les heures. Certaines tables disposeront de mises à jour incrémentielles tandis que d&#39;autres bénéficieront d&#39;une mise à jour complète.
+>
 
 [En savoir plus sur la réplication des données](replication.md)
 

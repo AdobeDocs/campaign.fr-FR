@@ -6,7 +6,7 @@ role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
 source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 100%
 
@@ -101,7 +101,7 @@ Sur la ou les instances d’exécution, vous devez démarrer les workflows techn
 * **[!UICONTROL Traitement des événements temps réel]** (nom interne : **[!UICONTROL rtEventsProcessing]**) : ce workflow permet de répartir les événements temps réel dans une file d&#39;attente avant qu&#39;ils ne soient associés à un modèle de message.
 * **[!UICONTROL Mise à jour du statut des événements]** (nom interne : **[!UICONTROL updateEventsStatus]**) : ce workflow permet d&#39;attribuer un statut à l&#39;événement.
 
-   Les statuts possibles des événements sont les suivants :
+  Les statuts possibles des événements sont les suivants :
 
    * **[!UICONTROL En attente]** : l’événement se trouve dans la file d’attente. Aucun modèle de message ne lui a encore été affecté.
    * **[!UICONTROL En attente de diffusion]** : l’événement est dans la file d’attente, un modèle de message lui a été associé et il est en cours de traitement par la diffusion.

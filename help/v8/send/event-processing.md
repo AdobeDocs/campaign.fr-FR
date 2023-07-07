@@ -60,11 +60,11 @@ L&#39;étape de routage consiste à associer un événement au modèle de messag
 
 * Type d&#39;événement spécifié dans les propriétés de l&#39;événement lui-même :
 
-   ![](assets/event-type-sample.png)
+  ![](assets/event-type-sample.png)
 
 * Type d&#39;événement spécifié dans les propriétés du modèle de message :
 
-   ![](assets/event-type-select.png)
+  ![](assets/event-type-select.png)
 
 Par défaut, le routage s&#39;appuie sur les informations suivantes :
 
@@ -86,8 +86,7 @@ Les statuts possibles sont les suivants :
 * **En attente de diffusion**
 L’événement a été traité et le modèle de diffusion est associé. L’e-mail est en attente de diffusion et le processus de diffusion classique est appliqué. Pour plus d’informations, vous pouvez ouvrir la diffusion.
 * **Envoyé**, **Ignoré** et **Erreur de diffusion**
-Ces statuts de diffusion sont récupérés à partir du 
-workflow **updateEventsStatus**. Pour plus d’informations, vous pouvez ouvrir la diffusion correspondante.
+Ces statuts de diffusion sont récupérés à partir du workflow **updateEventsStatus**. Pour plus d’informations, vous pouvez ouvrir la diffusion correspondante.
 * **Événement non pris en charge**
 La phase de routage des messages transactionnels a échoué. Par exemple, Adobe Campaign n’a pas trouvé l’e-mail qui sert de modèle pour l’événement.
 * **Evénement ayant expiré**

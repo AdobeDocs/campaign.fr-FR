@@ -45,6 +45,7 @@ Pour établir un budget, procédez comme suit :
 >[!NOTE]
 >
 >Vous pouvez sélectionner un budget de rattachement. Pour plus d’informations, consultez [cette section](#linking-a-budget-to-another).
+>
 
 ### Calculer les montants {#calculating-amounts}
 
@@ -155,7 +156,7 @@ Les coûts sont répartis en 3 catégories :
 
    Le coût prévisionnel estimé correspond à une estimation des coûts pour les traitements de l&#39;opération. Tant qu&#39;il est en édition, les montants saisis ne sont pas consolidés. Il doit être au statut **[!UICONTROL Renseigné]** pour que les montants saisis soient pris en compte dans les calculs.
 
-   Ce montant est saisi manuellement et peut être ventilé en plusieurs catégories de dépenses. Pour ventiler un coût, cliquez sur le lien **[!UICONTROL Ventilation...]**, puis sur le bouton **[!UICONTROL Ajouter]** pour définir un nouveau montant.
+   Ce montant est saisi manuellement et peut être réparti en plusieurs catégories de dépenses. Pour répartir un coût, cliquez sur le lien **[!UICONTROL Répartition...]**, puis sur le bouton **[!UICONTROL Ajouter]** pour définir un nouveau montant.
 
    ![](assets/s_user_edit_budget_tab_ventil.png)
 
@@ -174,7 +175,7 @@ Les coûts sont répartis en 3 catégories :
 
    >[!NOTE]
    >
-   >Le lien **[!UICONTROL Ventilation]** permet de visualiser les détails du calcul, ainsi que la date du dernier calcul des coûts.
+   >Le lien **[!UICONTROL Répartition]** permet de visualiser les détails du calcul, ainsi que la date du dernier calcul des coûts.
 
 1. Coût réel
 
@@ -234,7 +235,7 @@ Nous allons créer une opération avec :
 
    ![](assets/s_user_cost_mgmt_sample_4.png)
 
-1. Indiquez le coût prévisionnel estimé, avec ventilation :
+1. Indiquez le coût prévisionnel estimé, avec répartition :
 
    ![](assets/s_user_cost_mgmt_sample_9.png)
 
@@ -270,7 +271,7 @@ Au niveau de la diffusion, le coût calculé est mis à jour avec ces informatio
 
 ![](assets/s_user_cost_mgmt_sample_12.png)
 
-Lorsque vous éditez le coût calculé, vous pouvez vérifier la ventilation des coûts ainsi que l&#39;état et la date du calcul des coûts.
+Lorsque vous éditez le coût calculé, vous pouvez vérifier la répartition des coûts ainsi que l’état et la date du calcul des coûts.
 
 #### Étape 5 - Créer les tâches {#step-5---creating-tasks}
 
@@ -290,7 +291,7 @@ Pour ce faire, dans le tableau de bord de la campagne, cliquez sur le bouton **[
 
    Une fois la tâche enregistrée, le coût calculé est renseigné avec la valeur saisie pour le coût prévisionnel estimé.
 
-   Lorsque la tâche est terminée (statut **[!UICONTROL Terminé]**), le coût calculé est automatiquement mis à jour avec le coût de la Grande Salle tel que renseigné dans sa structure de coût. Ce coût est également ventilé sur la catégorie.
+   Lorsque la tâche est terminée (statut **[!UICONTROL Terminé]**), le coût calculé est automatiquement mis à jour avec le coût de la Grande Salle tel que renseigné dans sa structure de coût. Ce coût est également réparti sur la catégorie.
 
 1. Selon le même mode opératoire, créez ensuite une seconde tâche, planifiée sur 5 jours et associée à la structure de coûts créée précédemment.
 
@@ -336,7 +337,7 @@ Les factures sont créées et stockées dans le noeud **[!UICONTROL MRM > Fact
 
 ![](assets/s_user_cost_create_invoice.png)
 
-Une facture est composée de lignes de factures dont le total permet de calculer automatiquement le montant. Ces lignes sont créées manuellement depuis l&#39;onglet **[!UICONTROL Lignes de facture]**. Elles peuvent être associées à une commande afin de remonter l&#39;information au niveau des commandes.
+Une facture est composée de lignes de factures dont le total permet de calculer automatiquement le montant. Ces lignes sont créées manuellement depuis l’onglet **[!UICONTROL Lignes de facture]**. Elles peuvent être associées à une commande afin de charger les informations vers les commandes.
 
 ![](assets/s_user_cost_invoice_add_line.png)
 

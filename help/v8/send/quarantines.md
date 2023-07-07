@@ -110,7 +110,7 @@ Vous pouvez également supprimer manuellement une adresse de la liste de quarant
 
 * Changer son statut en **[!UICONTROL Valide]** depuis le nœud **[!UICONTROL Administration > Campaign Management > Gestion des échecs > Échecs et bounce]**.
 
-   ![](assets/tech-quarantine-status.png)
+  ![](assets/tech-quarantine-status.png)
 
 Vous devrez peut-être effectuer des mises à jour en bloc sur la liste de quarantaine, par exemple en cas de panne du FAI, où les e-mails sont marqués comme des rebonds par erreur, car ils ne peuvent pas être correctement diffusés à leur destination.
 

@@ -21,6 +21,7 @@ Une vue est un dossier spécifique qui ne contient aucune donnée, mais affiche 
 
 >[!NOTE]
 >Pour distinguer les vues des dossiers standard, leur nom s&#39;affiche en bleu clair et non en noir.
+>
 
 Notez que vous pouvez attribuer des autorisations aux dossiers pour restreindre l&#39;accès à certaines données. [En savoir plus](#restrict-access-to-a-folder)
 
@@ -32,7 +33,7 @@ Notez que vous pouvez attribuer des autorisations aux dossiers pour restreindre 
 
 * **Définissez et appliquez une convention de nommage**, par exemple, vous pouvez nommer les workflows par ordre alphabétique afin qu&#39;ils apparaissent triés dans l&#39;ordre d&#39;exécution, par exemple :
 
-   A1 – import des destinataires, débute à 10 h 00;
+  A1 – import des destinataires, débute à 10 h 00;
 A2 – import des tickets, débute à 11 h 00.
 
 ## Créer un dossier{#create-a-folder}
@@ -51,6 +52,7 @@ Pour créer un autre type de dossier, cliquez avec le bouton droit de la souris 
 
 >[!CAUTION]
 >Ces modifications s&#39;appliquent à tous les utilisateurs de Campaign.
+>
 
 ## Transformer un dossier en vue{#turn-a-folder-to-a-view}
 
