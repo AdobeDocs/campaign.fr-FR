@@ -6,7 +6,7 @@ title: Notes techniques d’Adobe Campaign
 description: Notes techniques de Campaign
 breadcrumb-title: Notes techniques de Campaign
 source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '41'
 ht-degree: 100%
 
