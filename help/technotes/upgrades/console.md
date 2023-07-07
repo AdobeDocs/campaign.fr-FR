@@ -4,19 +4,19 @@ title: Désapprobation de la console cliente 32 bits
 description: Désapprobation de la console cliente 32 bits
 exl-id: eaa20b88-4ba2-4146-b6bd-1eada34ecc53
 source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '344'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
-# Fin de la prise en charge sur les systèmes d’exploitation 32 bits {#console-eol}
+# Fin de la prise en charge sur les systèmes d’exploitation 32 bits {#console-eol}
 
-La version 32 bits de la console cliente est obsolète dans la version 8.5. Une nouvelle version 64 bits de la console cliente est disponible pour une mise à niveau transparente.
+La version 32 bits de la console cliente sera abandonnée dans la version 8.5. Une nouvelle version 64 bits de la console cliente est disponible pour une mise à niveau transparente.
 
-À compter de la version 8.6, Campaign v8 ne prendra plus en charge les systèmes d’exploitation 32 bits, y compris les mises à jour de produits et de sécurité. Adobe vous recommande vivement de garder votre sécurité à jour.
+À compter de la version 8.6, Campaign v8 ne prendra plus en charge les systèmes d’exploitation 32 bits, y compris les mises à jour de produits et de sécurité. Adobe vous recommande vivement de garder votre sécurité à jour.
 
-Cette modification vous concerne uniquement si vous disposez de la version 32 bits de Windows 8 ou 10.
+Cette modification vous concerne uniquement si vous disposez de la version 32 bits de Windows 8 ou 10.
 
 ## Fin de la prise en charge{#eol}
 
@@ -24,11 +24,11 @@ La fin de prise en charge signifie qu’Adobe ne fournit plus d’assistance tec
 
 ## Recommandations{#console-eol-recommendations}
 
-Pour tirer parti des dernières fonctionnalités et d’une sécurité améliorée, vous devez mettre à niveau votre ordinateur vers un système d’exploitation 64 bits.
+Pour tirer parti des dernières fonctionnalités et améliorer la sécurité, vous devez mettre à niveau votre ordinateur vers un système d’exploitation 64 bits.
 
-## Forum aux questions{#console-eol-faq}
+## Questions fréquentes{#console-eol-faq}
 
-+++Comment effectuer une mise à niveau de Campaign v8 32 bits vers Campaign v8 64 bits ?
++++Comment effectuer une mise à niveau de Campaign v8 32 bits vers Campaign v8 64 bits ?
 
 La mise à niveau est transparente. Il vous suffit d’installer votre nouvelle version via la configuration comme une mise à niveau régulière.
 
@@ -54,7 +54,7 @@ Oui. À compter de la version 8.6, la console cliente Campaign v8 ne sera plus 
 
 +++Comment effectuer une mise à niveau de Windows (32 bits) vers le système d’exploitation Windows (64 bits) ?
 
-Assurez-vous que votre processeur prend en charge l’installation d’un système d’exploitation 64 bits. Pour passer de la version 32 bits à la version 64 bits de Windows, vous devez reformater votre disque dur, installer la version 64 bits de Windows, puis réinstaller tout ce qui se trouvait sur votre appareil. Pour plus d’informations, voir [Windows 32 et 64 bits : forum aux questions](https://support.microsoft.com/fr-fr/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d){target="_blank"}.
+Assurez-vous que votre processeur prend en charge l’installation d’un système d’exploitation 64 bits. Pour passer de la version 32 bits à la version 64 bits de Windows, vous devez reformater votre disque dur, installer la version 64 bits de Windows, puis réinstaller tout ce qui se trouvait sur votre appareil. Pour plus d’informations, voir [Windows 32 et 64 bits : questions fréquentes](https://support.microsoft.com/fr-fr/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d){target="_blank"}.
 
 +++
 
