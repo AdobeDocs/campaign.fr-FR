@@ -6,9 +6,9 @@ role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
 source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '378'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Les systèmes d’exploitation et le navigateur ci-après sont nécessaires pour
 
 >[!NOTE]
 >
->Notez que la version 32 bits de la console cliente est obsolète à compter de la version 8.5. À compter de la version 8.6, la console cliente sera uniquement disponible en 64 bits. Pour plus d’informations sur la mise à niveau de votre système d’exploitation, reportez-vous à cette [note technique](../../technotes/upgrades/console.md).
+>Veuillez noter que la version 32 bits de la console cliente sera abandonnée dans la version 8.5. À compter de la version 8.6, la console cliente sera uniquement disponible en 64 bits. Pour plus d’informations sur la mise à niveau de votre système d’exploitation, reportez-vous à cette [note technique](../../technotes/upgrades/console.md).
 
 ### Navigateur web{#web-browsers}
 
