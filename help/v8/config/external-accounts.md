@@ -6,9 +6,9 @@ role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1171'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -120,13 +120,13 @@ Ces comptes externes peuvent être utilisés pour importer ou exporter des donn�
 
 * **FTP et SFTP** : compte externe **FTP** permettant de configurer et de tester l’accès à un serveur en dehors d’Adobe Campaign. Pour configurer des connexions avec des systèmes externes comme des serveurs SFTP ou FTP 898 utilisés pour les transferts de fichiers, vous pouvez créer vos propres comptes externes.
 
-  Pour ce faire, spécifiez dans ce compte externe l&#39;adresse et les informations de connexion utilisées pour établir la connexion au serveur SFTP ou FTP.
+  Pour ce faire, spécifiez dans ce compte externe l’adresse et les informations de connexion utilisées pour établir la connexion au serveur SFTP ou FTP.
 
   >[!NOTE]
   >
-  >À partir de la version 8.5, vous pouvez désormais vous authentifier en toute sécurité à l’aide d’une clé privée lors de la configuration de votre compte externe SFTP. [En savoir plus sur la gestion des clés](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html?lang=fr)
+  >À partir de la version 8.5, vous pouvez désormais vous authentifier en toute sécurité à l’aide d’une clé privée lors de la configuration de votre compte externe SFTP. [En savoir plus sur la gestion des clés](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html?lang=fr)
 
-* **Amazon Simple Storage Service (S3)** - Le **AWS S3** Un connecteur peut être utilisé pour importer ou exporter des données vers Adobe Campaign à l’aide d’une **[!UICONTROL Transfert de fichier]** activité de workflow. Lors de la configuration de ce nouveau compte externe, vous devez indiquer les informations suivantes :
+* **Amazon Simple Storage Service (S3)** - Le connecteur **AWS S3** peut être utilisé pour importer ou exporter des données vers Adobe Campaign à l’aide d’une activité de workflow **[!UICONTROL Transfert de fichier]**. Lors de la configuration de ce nouveau compte externe, vous devez indiquer les informations suivantes :
 
    * **[!UICONTROL Serveur du compte AWS S3]**: URL de votre serveur, renseignée comme suit :   `<S3bucket name>.s3.amazonaws.com/<s3object path>`
 
