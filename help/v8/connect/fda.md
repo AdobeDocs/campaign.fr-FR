@@ -6,7 +6,7 @@ role: Admin
 level: Beginner, Intermediate
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
 source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '761'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Utilisez le connecteur FDA (Federated Data Access) pour connecter Campaign à une ou plusieurs **bases de données externes** et traiter les informations stockées dans celles-ci sans affecter vos données provenant des bases cloud de Campaign. Vous pouvez ensuite accéder à des données externes sans modifier la structure des données Adobe Campaign.
 
-![](../assets/do-not-localize/speech.png) En tant qu’utilisateur de Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour connecter vos bases de données externes à Campaign.
+![](../assets/do-not-localize/speech.png) En tant qu’utilisateur ou utilisatrice de Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour connecter vos bases de données externes à Campaign.
 
 
 >[!NOTE]
