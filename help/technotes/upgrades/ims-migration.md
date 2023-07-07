@@ -1,10 +1,10 @@
 ---
-title: Migration des utilisateurs techniques vers la console Adobe Developer
-description: Découvrez comment migrer les opérateurs techniques Campaign vers un compte technique sur la console Adobe Developer
+title: Migration des utilisateurs et utilisatrices techniques vers Adobe Developer Console
+description: Découvrez comment migrer les opérateurs et opératrices techniques Campaign vers un compte technique sur Adobe Developer Console.
 source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '779'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Une fois que vous avez accès à votre projet Campaign, vous pouvez ajouter des 
 
 ### Étape 2 : ajouter une API à votre projet à l’aide de l’authentification de serveur à serveur{#ims-migration-step-2}
 
-Une fois votre projet créé dans la console Adobe Developer, ajoutez une API qui utilise l’authentification serveur à serveur. Découvrez comment configurer les informations d’identification de serveur à serveur OAuth dans la [documentation d’Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/){target="_blank"}.
+Une fois votre projet créé dans Adobe Developer Console, ajoutez une API qui nécessite une authentification de serveur à serveur. Découvrez comment configurer les informations d’identification de serveur à serveur OAuth dans la [documentation d’Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/){target="_blank"}.
 
 Une fois la connexion à l’API établie, vous pouvez accéder aux informations d’identification nouvellement générées, y compris l’identifiant et le secret client, ainsi que générer un jeton d’accès.
 
@@ -63,21 +63,21 @@ Vous pouvez maintenant ajouter votre profil de produit Campaign au projet, comme
 ### Étape 4 : mettre à jour l’opérateur ou opératrice technique dans la console cliente {#ims-migration-step-4}
 
 
-Cette étape n&#39;est nécessaire que si des autorisations de dossiers spécifiques ou des droits nommés ont été définis pour cet opérateur (et non via le groupe de l&#39;opérateur).
+Cette étape n’est nécessaire que si des autorisations de dossiers spécifiques ou des droits nommés ont été définis pour cet opérateur ou cette opératrice – et non via son groupe.
 
-Vous devez maintenant mettre à jour l’opérateur technique nouvellement créé dans la console cliente Adobe Campaign. Vous devez appliquer les autorisations de dossier des opérateurs techniques existants au nouvel opérateur technique.
-Pour mettre à jour cet opérateur, procédez comme suit :
+Vous devez maintenant mettre à jour l’opérateur ou l’opératrice technique nouvellement créé(e) dans la console cliente Adobe Campaign. Vous devez appliquer les autorisations de dossier des opérateurs et opératrices techniques existants au nouvel opérateur ou à la nouvelle opératrice technique.
+Pour mettre à jour cet opérateur ou cette opératrice, procédez comme suit :
 
 1. Dans l’explorateur de la console cliente Campaign, accédez à **Administration > Gestion des accès > Opérateurs**.
-1. Accédez à l’opérateur technique existant utilisé pour les API.
+1. Accédez à l’opérateur ou opératrice technique existant(e) utilisé(e) pour les API.
 1. Accédez aux autorisations de dossier et vérifiez les droits.
-1. Appliquez les mêmes autorisations à l&#39;opérateur technique nouvellement créé. L’adresse électronique de cet opérateur est la suivante : **Adresse électronique du compte technique** valeur copiée précédemment.
+1. Appliquez les mêmes autorisations à l’opérateur ou opératrice technique nouvellement créé(e). L’adresse e-mail de cet opérateur ou de cette opératrice est la valeur de l’**e-mail du compte technique** copiée précédemment.
 1. Enregistrez vos modifications.
 
 
 >[!CAUTION]
 >
->Le nouvel opérateur technique doit avoir effectué au moins un appel API à ajouter à la console cliente Campaign.
+>Le nouvel opérateur ou la nouvelle opératrice technique doit avoir effectué au moins un appel API à ajouter à la console cliente Campaign.
 >
 
 <!--
@@ -172,10 +172,10 @@ Vous devez mettre à jour les intégrations d’API avec vos systèmes tiers.
 Pour plus d’informations sur les étapes d’intégration des API, y compris un exemple de code pour une intégration fluide, consultez la section [Documentation sur l’authentification d’Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
 
-### Etape 7 - Supprimer l&#39;ancien opérateur technique {#ims-migration-step-7}
+### Étape 7 : supprimer l’ancien opérateur ou l’ancienne opératrice technique {#ims-migration-step-7}
 
 
-Après la migration de l’ensemble de l’intégration du code API/personnalisé avec l’utilisateur du compte technique. Vous pouvez supprimer l&#39;ancien opérateur technique de la console cliente Campaign.
+Après la migration de l’ensemble de l’intégration du code API/personnalisé avec l’utilisateur ou utilisatrice du compte technique. Vous pouvez supprimer l’ancien opérateur ou l’ancienne opératrice technique de la console cliente Campaign.
 
 ### Exemples d’appels Soap{#ims-migration-samples}
 
