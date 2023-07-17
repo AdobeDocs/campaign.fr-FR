@@ -4,10 +4,10 @@ description: Prise en main des notifications push dans Campaign
 feature: Push
 role: Data Engineer
 level: Beginner
-badge: label="Disponibilité limitée" type="Informatif"
+badge: label="Disponibilité limitée" type="Informative"
 source-git-commit: 441310dc1cdcb96296c0cbe5bf3fb7cd1502709f
 workflow-type: tm+mt
-source-wordcount: '1522'
+source-wordcount: '1519'
 ht-degree: 94%
 
 ---
