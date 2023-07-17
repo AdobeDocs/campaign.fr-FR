@@ -4,7 +4,7 @@ title: Charger le contenu de la diffusion
 description: Charger le contenu de la diffusion
 feature: Workflows
 exl-id: 08febcbc-1703-4d36-89e1-32c903618084
-source-git-commit: 9dfb1acd97e529a8b60119154b3728c883dd9c97
+source-git-commit: 23026cf93c89c1f6a410337b17bfa2553e41c987
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 100%
@@ -43,7 +43,7 @@ Pour cela :
 1. Dans l&#39;onglet **[!UICONTROL Script]** de l&#39;activité **[!UICONTROL Diffusion]**, ajoutez la commande suivante pour charger le contenu du fichier importé dans la diffusion :
 
    ```
-   delivery.content.md.source=loadFile(vars.filename)
+   delivery.content.html.source=loadFile(vars.filename)
    ```
 
    ![](assets/delivery_loadcontent_script.png)
