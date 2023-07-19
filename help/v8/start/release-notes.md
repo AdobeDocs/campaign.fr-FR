@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: dc2ccd7092fd31f043b338868762440ae0394991
+source-git-commit: 70171ecfb39116f4db4c05ab03b55502e3faed43
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 98%
+source-wordcount: '1339'
+ht-degree: 97%
 
 ---
 
@@ -80,6 +80,7 @@ _30 juin 2023_
 * Correction d’un problème en raison duquel une fenêtre contextuelle s’ouvrait lors d’un clic sur une image dans l’éditeur de contenu d’e-mail. (NEO-60752)
 * Correction d’un problème qui entraînait une erreur et empêchait le défilement lors de l’édition du contenu d’une diffusion. (NEO-61364)
 * Le connecteur Adobe Analytics exporte désormais les mesures avec le type de canal approprié. Auparavant, il était toujours défini sur le canal « e-mail ». (NEO-26340)
+* Correction d’un problème qui entraînait des erreurs lors de l’utilisation du connecteur Big Query avec les champs datetime. (NEO-49768)
 
 
 ## Version 8.4.5 {#release-8-4-5}
