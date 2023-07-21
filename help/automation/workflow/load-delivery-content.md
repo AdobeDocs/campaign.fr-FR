@@ -4,8 +4,8 @@ title: Charger le contenu de la diffusion
 description: Charger le contenu de la diffusion
 feature: Workflows
 exl-id: 08febcbc-1703-4d36-89e1-32c903618084
-source-git-commit: 23026cf93c89c1f6a410337b17bfa2553e41c987
-workflow-type: tm+mt
+source-git-commit: b929b159af959afddbda3bcb6a5cccf668895f99
+workflow-type: ht
 source-wordcount: '332'
 ht-degree: 100%
 
