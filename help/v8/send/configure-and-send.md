@@ -5,9 +5,9 @@ feature: Email
 role: User
 level: Beginner
 source-git-commit: 263ec61c3717c054cc135f1c4fb1f7e287e4a154
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1217'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -104,11 +104,11 @@ Les deux exemples ci-dessous constituent les cas d&#39;utilisation les plus fré
 
 ## Confirmer la diffusion {#confirm-delivery}
 
-Une fois la diffusion paramétrée et prête à être envoyée, vérifiez que vous avez exécuté l&#39;analyse de la diffusion avant de confirmer l&#39;envoi.
+Une fois la diffusion configurée et prête à être envoyée, vérifiez que vous avez exécuté l’analyse de la diffusion avant de confirmer l’envoi.
 
 Pour ce faire, suivez les étapes ci-après.
 
-1. Cliquez sur **[!UICONTROL Envoyer]**, sélectionnez l’action souhaitée.
+1. Cliquez sur **[!UICONTROL Envoyer]**, puis sélectionnez l’action souhaitée.
 
    * Pour envoyer immédiatement la diffusion, sélectionnez [**Diffuser dès que possible**].
    * Pour planifier l’envoi à une date ultérieure, sélectionnez **[!UICONTROL Différer la diffusion]**. [En savoir plus](#schedule-delivery-sending).
@@ -121,9 +121,9 @@ Pour ce faire, suivez les étapes ci-après.
 
    ![](assets/delivery-send-confirm.png)
 
-1. Vous pouvez fermer l&#39;assistant de diffusion et suivre l&#39;exécution de la diffusion depuis le **[!UICONTROL Diffusion]** , accessible à partir du détail de cette diffusion ou à partir de la liste des diffusions.
+1. Vous pouvez ensuite fermer l’assistant de diffusion et suivre l’exécution de la diffusion depuis l’onglet **[!UICONTROL Diffusion]** accessible à partir du détail de cette diffusion ou depuis la liste des diffusions.
 
-   Voir à ce propos les sections ci-dessous :
+   Pour plus de détails, reportez-vous à la section ci-dessous :
 
    * [Contrôler une diffusion](send.md)
    * [Comprendre les échecs de diffusion](delivery-failures.md)
@@ -140,7 +140,7 @@ Vous pouvez différer la diffusion des messages pour planifier l&#39;envoi ou po
 
    ![](assets/delivery-send-postpone.png)
 
-1. Lancez l&#39;analyse de la diffusion et validez l&#39;envoi de la diffusion. Toutefois, cet envoi ne démarrera pas avant la date indiquée dans le champ **[!UICONTROL Date de contact]**.
+1. Lancez l’analyse de la diffusion et confirmez l&#39;envoi de celle-ci. Toutefois, cet envoi ne démarrera pas avant la date indiquée dans le champ **[!UICONTROL Date de contact]**.
 
    >[!IMPORTANT]
    >
@@ -148,7 +148,7 @@ Vous pouvez différer la diffusion des messages pour planifier l&#39;envoi ou po
 
    ![](assets/delivery-send-scheduled.png)
 
-Dans la liste des diffusions, la diffusion apparaîtra avec le **[!UICONTROL En attente]** statut.
+Dans la liste des diffusions, la diffusion apparaît avec le statut **[!UICONTROL En attente]**.
 
 La planification peut aussi être paramétrée en amont via le bouton **[!UICONTROL Planification]** de la diffusion.
 
