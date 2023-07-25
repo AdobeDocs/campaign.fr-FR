@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 70171ecfb39116f4db4c05ab03b55502e3faed43
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1339'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ _30 juin 2023_
 </thead> 
 <tbody> 
 <tr> 
-<td><p>Campaign v8.5.1 propose son dernier service de notification push, optimisé par un cadre robuste reposant sur une technologie de pointe. Ce service est conçu pour atteindre des niveaux d’évolutivité supérieurs, afin que vos notifications puissent atteindre une audience plus large avec une efficacité optimale. Grâce à notre infrastructure améliorée et à nos processus optimisés, vous bénéficierez d’une plus grande échelle et d’une meilleure fiabilité. Vous pourrez ainsi communiquer avec vos utilisateurs et utilisatrices d’applications mobiles comme jamais auparavant. Cette fonctionnalité est réservée à un groupe de clients et clientes restreint (disponibilité limitée).</p>
+<td><p>Campaign v8.5.1 présente son dernier service de notifications push, optimisé par un framework robuste reposant sur une technologie de pointe. Ce service est conçu pour atteindre des niveaux d’évolutivité supérieurs, afin que vos notifications puissent atteindre une audience plus large avec une efficacité optimale. Grâce à notre infrastructure améliorée et à nos processus optimisés, vous bénéficierez d’une plus grande échelle et d’une meilleure fiabilité. Vous pourrez ainsi communiquer avec vos utilisateurs et utilisatrices d’applications mobiles comme jamais auparavant. Cette fonctionnalité est réservée à un groupe de clients et clientes restreint (disponibilité limitée).</p>
 <p>Pour plus d’informations, consultez la <a href="../send/push-data-collection.md">documentation détaillée</a>.</p>
 
 </td> 
@@ -80,7 +80,7 @@ _30 juin 2023_
 * Correction d’un problème en raison duquel une fenêtre contextuelle s’ouvrait lors d’un clic sur une image dans l’éditeur de contenu d’e-mail. (NEO-60752)
 * Correction d’un problème qui entraînait une erreur et empêchait le défilement lors de l’édition du contenu d’une diffusion. (NEO-61364)
 * Le connecteur Adobe Analytics exporte désormais les mesures avec le type de canal approprié. Auparavant, il était toujours défini sur le canal « e-mail ». (NEO-26340)
-* Correction d’un problème qui entraînait des erreurs lors de l’utilisation du connecteur Big Query avec les champs datetime. (NEO-49768)
+* Correction d’un problème qui entraînait des erreurs lors de l’utilisation du connecteur Big Query avec les champs dateTime. (NEO-49768)
 
 
 ## Version 8.4.5 {#release-8-4-5}
