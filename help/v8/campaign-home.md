@@ -4,9 +4,9 @@ description: Centre d'aide de Campaign v8
 title: Documentation du produit Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
 source-git-commit: dc2ccd7092fd31f043b338868762440ae0394991
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '157'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 82%
 
 ## Nouveautés
 
-* **[[!DNL Adobe Campaign] guide d&#39;automatisation](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=fr){target="_blank"}** - Découvrez comment créer des workflows et des campagnes
+* **[[!DNL Adobe Campaign] Guide d’automatisation](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=fr){target="_blank"}** – Découvrez comment créer des workflows et des campagnes.
 
 * **[En quoi consiste  [!DNL Adobe Campaign]](start/get-started.md)** ? - Principales fonctionnalités et cas d&#39;utilisation
 
@@ -26,7 +26,7 @@ ht-degree: 82%
 
 * **[De v7 à v8](start/v7-to-v8.md)** - Comment passer de Campaign Classic v7 à v8 ? Découverte des différences principales
 
-* **[Panneau de Contrôle pour Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"}** - Effectuez vous-même les tâches d’administration clés avec Campaign Panneau de Contrôle
+* **[Panneau de contrôle pour Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"}** – Effectuez vous-même les tâches d’administration principales avec le panneau de contrôle de Campaign.
 
 * **[Notes de mise à jour](start/release-notes.md)** - Découvrez les dernières fonctionnalités et améliorations
 
@@ -39,7 +39,7 @@ ht-degree: 82%
 <a href="start/connect.md">
 <img alt="Se connecter à Campaign v8" src="start/assets/do-not-localize/login.jpeg">
 </a>
-<div><a href="start/connect.md"><strong>Connexion à Campaign</strong>
+<div><a href="start/connect.md"><strong>Se connecter à Campaign</strong>
 </div>
 <p>
 </td>
@@ -48,40 +48,40 @@ ht-degree: 82%
 <img alt="Importer des profils" src="start/assets/do-not-localize/profiles.jpeg">
 </a>
 <div>
-<a href="start/import.md"><strong>Import de profils</strong></a>
+<a href="start/import.md"><strong>Importer des profils</strong></a>
 </div>
 <p>
 </td>
 <td>
 <a href="start/create-message.md">
-<img alt="Créer un email" src="start/assets/do-not-localize/email-design.jpeg">
+<img alt="Créer un e-mail" src="start/assets/do-not-localize/email-design.jpeg">
 </a>
 <div>
-<a href="start/create-message.md"><strong>Création d'un e-mail</strong></a>
+<a href="start/create-message.md"><strong>Créer un e-mail</strong></a>
 </div>
 <p></td>
 <td>
 <a href="send/push.md">
-<img alt="Envoi de notifications push" src="start/assets/do-not-localize/push-send.jpeg">
+<img alt="Envoyer des notifications push" src="start/assets/do-not-localize/push-send.jpeg">
 </a>
 <div>
-<a href="send/push.md"><strong>Envoi de notifications push</strong></a>
+<a href="send/push.md"><strong>Envoyer des notifications push</strong></a>
 </div>
 <p>
 </td>
 <td>
 <a href="../automation/workflow/about-workflows.md">
-<img alt="Création de campagnes" src="start/assets/do-not-localize/workflow.jpeg">
+<img alt="Créer des campagnes" src="start/assets/do-not-localize/workflow.jpeg">
 </a>
 <div>
-<a href="../automation/workflow/about-workflows.md"><strong>Création de workflows</strong></a>
+<a href="../automation/workflow/about-workflows.md"><strong>Créer des workflows</strong></a>
 </div>
 <p>
 </td>
 </tr></table>
 
 
-## Plus de ressources
+## Autres ressources
 
 * [Mécanismes de sécurisation et limitations](start/ac-guardrails.md)
 * [Architecture](architecture/architecture.md)
