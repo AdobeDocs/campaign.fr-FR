@@ -6,21 +6,21 @@ role: Data Engineer
 level: Beginner
 badge: label="Disponibilité limitée" type="Informative"
 source-git-commit: 441310dc1cdcb96296c0cbe5bf3fb7cd1502709f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1519'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Configuration révisée des notifications push {#push-notifications-config}
 
-Campaign v8.5 présente notre dernier service de notification push, optimisé par un cadre robuste reposant sur une technologie de pointe moderne. Ce service est conçu pour atteindre des niveaux d’évolutivité supérieurs, afin que vos notifications puissent atteindre une audience plus large avec une efficacité optimale. Grâce à notre infrastructure améliorée et à nos processus optimisés, vous bénéficierez d’une plus grande échelle et d’une meilleure fiabilité. Vous pourrez ainsi communiquer avec vos utilisateurs et utilisatrices d’applications mobiles comme jamais auparavant.
+Campaign 8.5 présente son dernier service de notifications push, optimisé par un framework robuste reposant sur une technologie de pointe. Ce service est conçu pour atteindre des niveaux d’évolutivité supérieurs, afin que vos notifications puissent atteindre une audience plus large avec une efficacité optimale. Grâce à notre infrastructure améliorée et à nos processus optimisés, vous bénéficierez d’une plus grande échelle et d’une meilleure fiabilité. Vous pourrez ainsi communiquer avec vos utilisateurs et utilisatrices d’applications mobiles comme jamais auparavant.
 
 >[!AVAILABILITY]
 >
-> Cette fonctionnalité est accessible exclusivement aux nouveaux clients à partir de Campaign v8.5 et déployée progressivement vers un ensemble de clients sélectionnés. Si votre environnement a été configuré avant juin 2023, cette page ne vous concerne pas et vous devez suivre les procédures détaillées [dans cette page](push-settings.md).
+> Cette fonctionnalité est exclusivement accessible aux nouveaux clients et aux nouvelles clientes à partir de Campaign v8.5 et progressivement déployée vers une clientèle sélectionnée. Si votre environnement a été configuré avant juin 2023, cette page ne vous concerne pas et vous devez suivre les procédures détaillées [dans cette page](push-settings.md).
 
-Dans le cadre de cette mise à jour, pour envoyer des notifications push dans Adobe Campaign, procédez comme suit :
+Dans le cadre de cette mise à jour, procédez comme suit pour envoyer des notifications push dans Adobe Campaign :
 
 1. [Créer une surface d’application dans la collecte de données Adobe Experience Platform](#create-app-surface)
 
