@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner, Intermediate, Experienced
 exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
-source-git-commit: 58fff46ba12f5c6221bbcd88a40fa0806a6c98b9
+source-git-commit: 5810f9b53bd3ad5383d4b9767bc65a3d595862c7
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 100%
+source-wordcount: '254'
+ht-degree: 84%
 
 ---
 
@@ -26,6 +26,7 @@ Les limites et les mécanismes de sécurisation identifient les fonctionnalités
 * Les fonctionnalités répertoriées [dans cette section](v7-to-v8.md#gs-unavailable-features) ne sont pas disponibles dans la versio actuelle de Campaign v8.
 * Certaines fonctionnalités non disponibles ou supprimées sont toujours visibles dans l&#39;interface utilisateur.
 * Dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), les mécanismes d’abonnement (opt-in) et de désabonnement (opt-out), et l’enregistrement mobile sont des processus asynchrones. Les demandes sont traitées toutes les heures par l&#39;intermédiaire d&#39;un workflow technique spécifique. [En savoir plus](../architecture/replication.md#tech-wf)
-* Les doublons doivent être gérés manuellement par les utilisateurs finaux. [En savoir plus](../architecture/keys.md)
+* 
+   * Dans le contexte d’un [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), les doublons doivent être gérés manuellement par les utilisateurs finaux. [En savoir plus](../architecture/keys.md).
 * Adobe Campaign v8 ne prend pas en charge le débit étendu sur les API et les applications web. Pour les besoins spécifiques, contactez Adobe pour obtenir des conseils.
-* Le module Optimisation de campagne (Campaign Optimization) dʼAdobe Campaign ne prend pas en compte les diffusions planifiées dans les règles de typologie de pression. Apprenez-en davantage en consultant [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=fr).
+* Dans le contexte d’un [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), le module Optimisation des campagnes Adobe Campaign ne prend pas en compte les diffusions planifiées dans les règles de typologie de pression. Apprenez-en davantage en consultant [cette page](../../automation/campaign-opt/pressure-rules.md).
