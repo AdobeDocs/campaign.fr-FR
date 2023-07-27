@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 1297d5a602d125cb80ca6efb490b12174bcea8d6
+source-git-commit: f16fe79b8417a3fa146baf432f829c73fb839953
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 92%
@@ -32,7 +32,7 @@ Adobe Campaign vous permet de synchroniser facilement vos canaux à l’aide d�
 
 ![](../assets/do-not-localize/glass.png) [En savoir plus sur les workflows de Campaign](../config/workflows.md)
 
-## Marketing par e-mail personnalisé {#perso-email-mkt}
+### Marketing par e-mail personnalisé {#perso-email-mkt}
 
 Créez des e-mails personnalisés et pertinents qui sont également conformes au reste de l&#39;expérience client.
 
