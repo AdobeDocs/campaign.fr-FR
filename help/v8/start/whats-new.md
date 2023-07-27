@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+source-git-commit: 5d307e0fcafdc4d25402c62c6869ecc07c1a47e4
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 99%
+source-wordcount: '921'
+ht-degree: 95%
 
 ---
 
@@ -61,6 +61,8 @@ Les fonctionnalités principales sont les suivantes :
 * **Managed Cloud Services**. Adobe Campaign v8 est disponible en tant que service Managed Cloud Services, offrant une supervision proactive, des alertes rapides et une gouvernance des services.
 
   Adobe Managed Cloud Service offre aux marketeurs une solution de gestion de campagnes cross-canal plus agile, sécurisée et évolutive, avec un coût total de possession faible. La nouvelle offre associe des services à une supervision proactive et à des alertes opportunes.
+
+  La nouvelle architecture cloud permet à Campaign de rationaliser les processus, de réduire les coûts, de gérer les risques et d’améliorer la sécurité des données. Votre environnement Campaign v8 est fourni avec un cloud privé virtuel dédié (VPC) préconfiguré pour vous.
 
 * **Vitesse et mise à l&#39;échelle**. Adobe Campaign peut désormais tirer parti des technologies de base de données à l’échelle du cloud pour améliorer considérablement son échelle et sa vitesse.
 
