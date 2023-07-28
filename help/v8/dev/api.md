@@ -5,10 +5,10 @@ feature: API
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 9c7a4f7d4e84fde4b74bf6f8e0432681aa7e42d3
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 100%
+source-wordcount: '276'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +28,9 @@ Veuillez notez que dans son [déploiement Grands comptes (FFDA)](../architecture
 
 >[!CAUTION]
 >
->[!DNL Adobe Campaign] v8 est fourni avec une limite au niveau du débit (TPS) de notre calque API. Le fait de rompre la limite entraîne une erreur HTTP standard (429). En tant qu&#39;utilisateur Managed Cloud Services, vous pouvez contacter Adobe pour adapter le contrôle de flux de chaque API.
+>* Depuis Campaign v8.5.1, le processus d&#39;authentification a été modifié pour Campaign v8. Les opérateurs ou opératrices techniques doivent utiliser Adobe Identity Management System (IMS) pour se connecter à Campaign. Découvrez comment migrer votre ou vos comptes techniques existants dans [cette note technique](../../technotes/upgrades/ims-migration.md).
+>
+>* [!DNL Adobe Campaign] v8 est fourni avec une limite au niveau du débit (TPS) de notre calque API. Le fait de rompre la limite entraîne une erreur HTTP standard (429). En tant qu&#39;utilisateur Managed Cloud Services, vous pouvez contacter Adobe pour adapter le contrôle de flux de chaque API.
 > 
 
 ## Conditions préalables requises
