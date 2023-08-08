@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 758d542b353a2d784407954089586e761825d740
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1468'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ En outre, en tant que client ou cliente, assurez-vous d’utiliser les dernière
 
 ## Version 8.5.2 {#release-8-5-2}
 
-_2 août 2023_
+_2 août 2023_
 
-Correction d’un problème de sécurité qui pouvait se produire lors de la mise à niveau vers la version 8.5.1. (NEO-64767)
+Correction d’un problème de sécurité qui pouvait survenir lors de la mise à niveau vers la version 8.5.1. (NEO-64767)
 
 ## Version 8.5.1 {#release-8-5}
 
@@ -61,16 +61,16 @@ These max throughput performances have been measured by Adobe testing teams, in 
 <td>
 <div>
 
-<p>Le nouveau service de notification push présente d’importantes améliorations du débit pour Push Android et Push iOS par rapport à notre version précédente (v8.4). Les utilisateurs bénéficieront de performances considérablement améliorées avec le service mis à niveau dans la dernière version (v8.5). </p>
+<p>Le nouveau service de notification push présente d’importantes améliorations du débit pour Push Android et Push iOS par rapport à notre version précédente (v8.4). Les utilisateurs et utilisatrices bénéficieront de performances considérablement améliorées avec le service mis à niveau dans la dernière version (v8.5). </p>
 <ul>
-<li>Notifications push (Android) : jusqu’à <strong>5x</strong> plus rapide </li>
-<li>Notifications push (iOS) : jusqu’à <strong>2.2x</strong> plus rapide</li>
+<li>Notifications push (Android) : jusqu’à <strong>5 x</strong> plus rapides </li>
+<li>Notifications push (iOS) : jusqu’à <strong>2,2 x</strong> plus rapides</li>
 </ul>
-<p>Le débit des SMS a fait l'objet d'importantes améliorations grâce à une série d'optimisations, ce qui a entraîné des améliorations notables de la vitesse et de l'efficacité des communications SMS. Ces mises à niveau ont entraîné une augmentation du débit de la version précédente (v8.4) à la version la plus récente (v8.5), comprenant à la fois des mises à jour d’envoi et de retour. Les utilisateurs peuvent désormais bénéficier des avantages de ce service SMS amélioré.</p>
+<p>Le débit des SMS a fait l’objet d’améliorations substantielles grâce à une série d’optimisations. Ces modifications ont permis d’optimiser considérablement la vitesse et l’efficacité des communications SMS. Ces mises à niveau se traduisent par une augmentation du débit entre la version précédente (v8.4) et la version la plus récente (v8.5), comprenant à la fois des mises à jour d’envoi et de retour. Les utilisateurs et utilisatrices peuvent désormais bénéficier des avantages de ce service SMS amélioré.</p>
 <ul>
-<li>Débit des SMS : jusqu’à <strong>5x</strong> plus rapide</li>
+<li>Débit des SMS : jusqu’à <strong>5 x</strong> plus rapide</li>
 </ul>
-<p><em>Ces performances de débit maximal ont été mesurées par des équipes de test d’Adobe, dans des conditions de laboratoire.</em></p>
+<p><em>Ces performances de débit maximales ont été mesurées par des équipes de test d’Adobe, dans des conditions de laboratoire.</em></p>
 </div>
 <p></p>
 </td>
@@ -80,7 +80,7 @@ These max throughput performances have been measured by Adobe testing teams, in 
 **Améliorations générales**
 
 * Vous pouvez désormais tirer parti de la connexion à la destination Adobe Experience Platform pour synchroniser les attributs de profil tels que les données de désinscription entre Adobe Experience Platform et la base de données Campaign v8.
-* La préparation de la diffusion a été optimisée, sur tous les canaux.
+* La préparation de la diffusion a été optimisée sur tous les canaux.
 * Une nouvelle option d’authentification par clé a été ajoutée pour le compte externe SFTP, outre la méthode d’authentification utilisateur/mot de passe existante. Les utilisateurs et utilisatrices peuvent désormais s’authentifier en toute sécurité à l’aide d’une clé privée, ce qui renforce la sécurité et fournit un autre mécanisme d’authentification pour l’accès SFTP. En savoir plus dans [cette section](../config/external-accounts.md).
 
 **Améliorations de la sécurité**
