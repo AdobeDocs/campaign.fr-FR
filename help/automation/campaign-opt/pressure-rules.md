@@ -5,9 +5,9 @@ description: Découvrir comment configurer des règles de pression
 feature: Fatigue Management, Typology Rules
 exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
 source-git-commit: 5810f9b53bd3ad5383d4b9767bc65a3d595862c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3174'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Pour créer et paramétrer une règle de typologie de type **[!UICONTROL Pressio
 
    >[!NOTE]
    >
-   >Dans le contexte d’un [Déploiement Entreprise (FFDA)](../../v8/architecture/enterprise-deployment.md) Dans Campaign, les diffusions planifiées ne sont pas prises en compte.
+   >Dans le contexte d’un [Déploiement Entreprise (FFDA)](../../v8/architecture/enterprise-deployment.md) dans Campaign, les diffusions planifiées ne sont pas prises en compte.
 
 1. Indiquez le mode de calcul du nombre maximum de messages.
 
