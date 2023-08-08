@@ -6,15 +6,15 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: f16fe79b8417a3fa146baf432f829c73fb839953
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '923'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Nouveautés d’Adobe Campaign v8 {#ac-gs-what-is-new}
 
-Adobe Campaign v8 est conçu pour les marketeurs cross-canal qui ont besoin de la solution cloud la plus performante pour la gestion de campagnes cross-canal à l’échelle de l’entreprise. Il offre des fonctionnalités ETL et de gestion des données performantes pour concevoir et organiser une campagne parfaite. Son moteur d’orchestration fournit des programmes marketing multi-touch riches qui mettent l’accent sur les parcours pilotés par lots. Il est également associé à un serveur de messagerie en temps réel évolutif qui permet aux équipes marketing d’envoyer des messages prédéfinis sur la base d’une payload globale à partir de n’importe quel système informatique, pour des tâches telles que la réinitialisation du mot de passe, la confirmation de commande, la facturation en ligne, etc.
+Adobe Campaign v8 est conçu pour les spécialistes marketing cross-canal qui ont besoin de la solution cloud la plus performante pour la gestion de campagnes cross-canal à l’échelle de l’entreprise. Il offre des fonctionnalités ETL et de gestion des données performantes pour concevoir et organiser une campagne parfaite. Son moteur d’orchestration fournit des programmes marketing multi-touch riches qui mettent l’accent sur les parcours pilotés par lots. Il est également associé à un serveur de messagerie en temps réel évolutif qui permet aux équipes marketing d’envoyer des messages prédéfinis sur la base d’une payload globale à partir de n’importe quel système informatique, pour des tâches telles que la réinitialisation du mot de passe, la confirmation de commande, la facturation en ligne, etc.
 
 Adobe Campaign v8 a fortement amélioré son infrastructure, sa sécurité, sa délivrabilité et sa surveillance.
 
@@ -22,9 +22,9 @@ Adobe Campaign v8 a fortement amélioré son infrastructure, sa sécurité, sa
 
 ## Fonctionnalités principales{#key-capabilities}
 
-Les fonctionnalités clés sont répertoriées ci-dessous.
+Les fonctionnalités principales sont répertoriées ci-dessous.
 
-### Gestion de workflow centrale{#central-wf-mgt}
+### Gestion de workflows centrale{#central-wf-mgt}
 
 Améliorez la vitesse et l’échelle relatives à chaque aspect de vos campagnes marketing, de la création de segments à la préparation des messages, en passant par leur diffusion.
 
@@ -48,20 +48,20 @@ Adobe Campaign vous aide à créer des profils client à partir des données col
 
 ![](../assets/do-not-localize/glass.png) [En savoir plus sur la gestion des données client](audiences.md)
 
-### Gestion de campagne des meilleurs produits {#best-in-campaign-mgt}
+### Gestion de campagnes la plus performante {#best-in-campaign-mgt}
 
-Adobe Campaign v8 offre aux marketeurs des fonctionnalités riches pour planifier, lancer et mesurer des campagnes sur plusieurs canaux.
+Adobe Campaign v8 offre aux spécialistes marketing des fonctionnalités riches pour planifier, lancer et mesurer des campagnes sur plusieurs canaux.
 
 Les fonctionnalités incluent un profil intégré qui fournit une vue unique du client. Gestion des données et segmentation pour la création d’audiences de campagne à grande échelle. Gestion des workflows cross-canal pour automatiser les campagnes multicanal et de plusieurs vagues. Messagerie intégrée, ce qui réduit la dépendance à l’égard des FAI coûteux. Rapports et analyses pour comprendre le comportement des clients et les performances des campagnes.
 
 ![](../assets/do-not-localize/glass.png) [En savoir plus sur la gestion de campagnes](campaigns.md)
 
 
-### Connexions à Adobe Experience Platform {#connection-to-aep}
+### Connexions à Adobe Experience Platform {#connection-to-aep}
 
 Adobe Campaign v8 prend en charge les connecteurs de données avec Real-Time CDP et Adobe Experience Platform, de sorte que les entreprises puissent exploiter le profil client unifié en temps réel.
 
-En outre, Adobe Campaign v8 est nativement intégré aux fonctionnalités d’orchestration des parcours en temps réel afin que les marketeurs puissent réutiliser les mêmes modèles et fonctionnalités de diffusion dans Adobe Campaign pour interagir avec les clients en temps réel. Ces investissements vont permettre d’optimiser l’expérience client dans Adobe Campaign. Ils débloqueront notamment de nouveaux cas d’utilisation, tels que la possibilité d’ajouter des parcours clients en temps réel personnalisés aux campagnes.
+En outre, Adobe Campaign v8 est nativement intégré aux fonctionnalités d’orchestration des parcours en temps réel afin que les spécialistes marketing puissent réutiliser les mêmes modèles et fonctionnalités de diffusion dans Adobe Campaign pour interagir avec les clients en temps réel. Ces investissements vont permettre d’optimiser l’expérience client dans Adobe Campaign. Ils débloqueront notamment de nouveaux cas d’utilisation, tels que la possibilité d’ajouter des parcours clients en temps réel personnalisés aux campagnes.
 
 Vous pouvez également configurer l&#39;optimisation de l&#39;heure d&#39;envoi prédictive ainsi que le score d&#39;engagement prédictif grâce à l&#39;IA dédiée au parcours. Cela permet d&#39;augmenter les taux d&#39;ouverture, les clics et les revenus.
 
@@ -72,11 +72,11 @@ Vous pouvez également configurer l&#39;optimisation de l&#39;heure d&#39;envoi 
 
 Adobe Campaign v8 est disponible en tant que service Managed Cloud Services, offrant une supervision proactive, des alertes rapides et une gouvernance des services.
 
-Adobe Managed Cloud Service offre aux marketeurs une solution de gestion de campagnes cross-canal plus agile, sécurisée et évolutive, avec un coût total de possession faible. La nouvelle offre associe des services à une supervision proactive et à des alertes opportunes.
+Adobe Managed Cloud Service offre aux spécialistes marketing une solution de gestion de campagnes cross-canal plus agile, sécurisée et évolutive, avec un coût total de possession faible. La nouvelle offre associe des services à une supervision proactive et à des alertes opportunes.
 
 >[!NOTE]
 >
->La nouvelle architecture cloud permet à Campaign de rationaliser les processus, de réduire les coûts, de gérer les risques et d’améliorer la sécurité des données. Votre environnement Campaign v8 est fourni avec un cloud privé virtuel dédié (VPC) préconfiguré pour vous.
+>La nouvelle architecture cloud permet à Campaign de rationaliser les processus, de réduire les coûts, de gérer les risques et d’améliorer la sécurité des données. Votre environnement Campaign v8 est fourni avec un cloud privé virtuel (VPC) dédié et préconfiguré pour vous.
 
 ### Vitesse et échelle {#speed-scale}
 
@@ -105,6 +105,6 @@ Grâce à une interface utilisateur intuitive, les administrateurs peuvent surve
 
 ![](assets/subdomain1.png)
 
-![](../assets/do-not-localize/glass.png) [En savoir plus sur le Panneau de Contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"}
+![](../assets/do-not-localize/glass.png) [Apprenez-en davantage sur le panneau de contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"}
 
 
