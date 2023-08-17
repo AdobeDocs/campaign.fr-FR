@@ -99,7 +99,7 @@ Pour ajouter et configurer des mesures, procédez comme suit :
 
    ![](assets/cube-measure-options.png)
 
-   Un paramétrage global des mesures est également proposé à partir de l&#39;icône **[!UICONTROL Editer la configuration du tableau pivot]** située dans l&#39;en-tête.
+   Une configuration globale des mesures est également possible à partir de l’icône **[!UICONTROL Modifier la configuration du tableau croisé dynamique]** située dans l’en-tête.
 
    ![](assets/cube-pivot-table-config.png)
 

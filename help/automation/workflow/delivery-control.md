@@ -15,7 +15,7 @@ ht-degree: 100%
 
 
 
-Une activité de type **Agir sur une diffusion** permet de démarrer, mettre en pause ou arrêter une diffusion.
+Une action de type **Agir sur une diffusion** permet de démarrer, mettre en pause ou arrêter une diffusion.
 
 Il peut s&#39;agir de la diffusion spécifiée par la transition, d&#39;une diffusion explicitement sélectionnée ou bien calculée par un script. Pour plus d&#39;informations, consultez la section [Diffusion](delivery.md).
 

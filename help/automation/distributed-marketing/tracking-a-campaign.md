@@ -68,7 +68,7 @@ Vous avez la possibilité de motiver cette annulation dans le champ **[!UICONTRO
 
 Pour les **opérations locales**, l&#39;annulation d&#39;un kit le supprime de la liste des opérations marketing disponibles.
 
-Pour les **opérations collaboratives**, l&#39;annulation d&#39;un kit d&#39;opération provoque :
+Pour les **campagnes collaboratives**, l&#39;annulation d&#39;un kit d&#39;opération provoque de nombreuses actions :
 
 1. L&#39;annulation de toutes les commandes relatives à ce kit,
 

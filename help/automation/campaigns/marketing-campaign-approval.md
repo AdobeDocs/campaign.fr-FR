@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Configuration et gestion du processus de validation {#approval-marketing-campaigns}
 
-Les méthodes et les personnes impliquées dans la création et la validation des campagnes marketing sont spécifiques à chaque organisation. Le processus de validation de la campagne implique la coordination de plusieurs parties prenantes à savoir des professionnels du marketing digital, des responsables de la diffusion, des gestionnaires de contenu et des propriétaires externes tels que des partenaires ou des fournisseurs.
+Les méthodes et les personnes impliquées dans la création et la validation des campagnes marketing sont spécifiques à chaque organisation. Le processus de validation de la campagne implique la coordination de plusieurs parties prenantes à savoir des spécialistes marketing digital, des responsables de la diffusion, des gestionnaires de contenu et des propriétaires externes tels que des partenaires ou des fournisseurs.
 
 Grâce à Adobe Campaign, vous pouvez configurer un flux de validation pour vos campagnes et notifier les opérateurs lorsqu&#39;une action est requise. Vous pouvez définir les validations pour chaque étape d&#39;une diffusion : ciblage, contenu, budget, extraction et envoi de BAT. Au fur et à mesure que vos diffusions de campagne passent par les différentes étapes de validation, Adobe Campaign compile un historique des modifications et d&#39;approbations, y compris les feedbacks, commentaires, demandes de modification et commentaires.
 

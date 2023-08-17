@@ -53,7 +53,7 @@ L’onglet **[!UICONTROL Audit]** vous permet d’ajouter un relecteur ou une re
 >
 >L’onglet **[!UICONTROL Historique]** contient le journal des téléchargements et mises à jour de la ressource. Le bouton **[!UICONTROL Détails]** permet de visualiser la version sélectionnée.
 >
->L’onglet **[!UICONTROL Audit]** permet de suivre les interventions réalisées sur la ressource : validations, refus de validation, commentaires associés ou publications.
+>L’onglet **[!UICONTROL Audit]** permet de suivre les actions effectuées sur la ressource : validations, refus de validation, commentaires associés ou publications.
 
 ### Verrouiller/déverrouiller une ressource {#locking-unlocking-a-resource}
 

@@ -184,7 +184,7 @@ Vous pouvez changer l&#39;ordre d&#39;affichage en déplaçant les lignes. Dans 
 
 Le paramétrage des mesures, lignes et colonnes affichées peut être réalisé unitairement pour chaque mesure ou au niveau général. Une icône spécifique permet d&#39;accéder à la fenêtre de sélection des modes d&#39;affichage.
 
-* Cliquez sur l&#39;icône **[!UICONTROL Editer la configuration du tableau pivot]** pour accéder à la fenêtre de configuration générale pour toutes les mesures.
+* Cliquez sur l’icône **[!UICONTROL Modifier la configuration du tableau croisé dynamique]** pour accéder à la fenêtre de configuration.
 
   Vous pouvez choisir d&#39;afficher ou non les libellés des mesures ainsi que leur localisation (en ligne ou en colonne).
 
