@@ -4,10 +4,10 @@ title: Chargement (fichier)
 description: En savoir plus sur l’activité de workflow de chargement (fichier)
 feature: Workflows, Data Management Activity
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: cf88140d1e8b71203729732163f66060423965a0
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 100%
+source-wordcount: '1146'
+ht-degree: 99%
 
 ---
 
@@ -32,6 +32,10 @@ La section supérieure de la fenêtre de configuration de cette activité permet
 Vous pouvez définir un pré-traitement à exécuter lors de l’import du fichier, par exemple pour ne pas avoir à décompresser le fichier sur le serveur (et donc réserver de la place pour le fichier décompressé), mais que la décompression soit incluse dans le traitement du fichier. Sélectionnez l’option **[!UICONTROL Inclure un pré-traitement du fichier]** et choisissez l’une des 3 options : **[!UICONTROL Aucun]**, **[!UICONTROL Décompression]** (zcat) ou **[!UICONTROL Déchiffrer]** (gpg).
 
 ![](assets/preprocessing-dataloading.png)
+
+>[!IMPORTANT]
+>
+>Vous ne pouvez pas décompresser les fichiers compressés d’une taille supérieure à 4 Go.
 
 ## Définir le format du fichier {#defining-the-file-format}
 
