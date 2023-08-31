@@ -5,18 +5,18 @@ feature: Subscriptions
 role: User
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: b0150b38b50b04c08b10ed73b3be3064a09d7b88
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 100%
+source-wordcount: '458'
+ht-degree: 95%
 
 ---
 
 # Gestion des abonnements et des désabonnements{#optin-optout}
 
-Utilisez Adobe Campaign pour créer et surveiller vos services d’information, tels que les newsletters, et pour gérer les abonnements/désabonnements à ces services. Plusieurs services peuvent être définis en parallèle, par exemple : des newsletters spécialisées pour certaines catégories de produits, certains thèmes ou des zones particulières d&#39;un site web, des abonnements à divers types de messages d&#39;alerte et des notifications en temps réel. Pour plus d&#39;informations, consultez la section Gestion des abonnements.
+Utilisez Adobe Campaign pour créer et surveiller vos services d’information, tels que les newsletters, et pour gérer les abonnements/désabonnements à ces services. Plusieurs services peuvent être définis en parallèle, par exemple : des newsletters spécialisées pour certaines catégories de produits, certains thèmes ou des zones particulières d&#39;un site web, des abonnements à divers types de messages d&#39;alerte et des notifications en temps réel.
 
-![](../assets/do-not-localize/book.png) Découvrez comment créer un service d&#39;information, envoyer une newsletter et gérer l&#39;opt-in et l&#39;opt-out dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=fr).{target="_blank"}
+![](../assets/do-not-localize/book.png) Découvrez comment créer un service d’information, envoyer une newsletter et gérer les processus d’inscription et de désinscription [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=fr){target="_blank"}
 
 Pour abonner (opt-in) un profil à un service, les options disponibles sont les suivantes :
 
