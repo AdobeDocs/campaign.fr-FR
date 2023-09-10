@@ -5,9 +5,9 @@ description: En savoir plus sur l’activité de workflow de chargement (fichier
 feature: Workflows, Data Management Activity
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
 source-git-commit: cf88140d1e8b71203729732163f66060423965a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1146'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Vous pouvez définir un pré-traitement à exécuter lors de l’import du fichi
 
 >[!IMPORTANT]
 >
->Vous ne pouvez pas décompresser les fichiers compressés d’une taille supérieure à 4 Go.
+>Vous ne pouvez pas décompresser les fichiers compressés d’une taille supérieure à 4 Go.
 
 ## Définir le format du fichier {#defining-the-file-format}
 
