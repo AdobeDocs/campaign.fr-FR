@@ -7,7 +7,7 @@ breadcrumb-title: Présentation de Campaign
 source-git-commit: cb5bec3107872d4d6da83b4ddbc7cad3e9276b00
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 97%
    + Création d&#39;audiences {#create-audiences}
       + [Créer une liste de contacts](audiences/create-audiences.md)
       + [Créer et gérer des filtres](audiences/create-filters.md)
-      + [Partage d’audiences avec des solutions Adobe](start/shared-audiences.md)
+      + [Partager les audiences avec les solutions Adobe](start/shared-audiences.md)
    + [Bonnes pratiques](audiences/audiences-best-practices.md)
    + [Gérer les abonnements](start/subscriptions.md)
 + Gestion de contenu {#content}
