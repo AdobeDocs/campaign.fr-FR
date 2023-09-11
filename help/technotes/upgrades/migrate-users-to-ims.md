@@ -3,10 +3,10 @@ title: Migration des opérateurs Campaign vers Adobe Identity Management System 
 description: Découvrez comment migrer les opérateurs Campaign vers Adobe Identity Management System (IMS)
 hide: true
 hidefromtoc: true
-source-git-commit: 74d97c4c61a305aff1d2f108a8a24cb6943dea07
+source-git-commit: 53412ab167721c8a8f9d84e07112b0f410d4785d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1094'
+ht-degree: 10%
 
 ---
 
@@ -25,7 +25,6 @@ Avec Campaign v8, tous les utilisateurs standard doivent déjà se connecter à 
 En outre, dans le cadre de l&#39;effort visant à renforcer la sécurité et le processus d&#39;authentification, l&#39;application cliente Adobe Campaign appelle désormais les API Campaign directement à l&#39;aide du jeton de compte technique IMS. La migration des opérateurs techniques est présentée dans un article dédié, disponible dans la section [cette page](ims-migration.md).
 
 Cette modification s’applique à partir de Campaign v8.5.2 et sera **obligatoire** à partir de Campaign v8.6.
-
 
 ## Cela vous concerne-t-il ?{#migrate-ims-impacts}
 
@@ -49,8 +48,9 @@ Les étapes clés de cette migration sont répertoriées ci-dessous :
 1. Utilisez Adobe pour sécuriser une date d’Adobe afin d’exécuter la migration automatisée pour vos utilisateurs (opérateurs) et profils de produits non techniques. Cette étape nécessite une fenêtre d’une heure sans temps d’arrêt pour aucune de vos instances.
 1. Votre administrateur Campaign interne valide ces modifications et fournit une validation. Après cette migration, vous ne devez plus créer d&#39;opérateur qui s&#39;authentifierait avec son identifiant et son mot de passe.
 
-Vous pouvez maintenant planifier la migration des utilisateurs techniques vers IMS en fonction de [cette technote](ims-migration.md)et confirmez auprès de votre gestionnaire de transition d’Adobe une fois terminé.
-Adobe marquera alors la migration comme terminée et activera les indicateurs pour bloquer la création d’un utilisateur natif et la connexion d’un utilisateur natif.
+Vous pouvez désormais migrer votre ou vos opérateurs techniques vers la console Adobe Developer, comme décrit dans la section [cette technote](ims-migration.md). Cette étape est obligatoire si vous utilisez des API Campaign.
+
+Une fois la migration terminée, confirmez auprès de votre Gestionnaire de transition de l’Adobe : l’Adobe marque la migration comme terminée et bloque la création d’un nouvel utilisateur natif et la connexion d’utilisateur natif. Votre environnement est ensuite sécurisé et normalisé.
 
 ## Questions fréquentes {#ims-migration-faq}
 
@@ -105,10 +105,19 @@ Pendant cette période, tous les utilisateurs de Campaign doivent se déconnecte
 
 Adobe recommande vivement que tous les utilisateurs soient déconnectés pendant la fenêtre de migration.
 
-### Les utilisateurs de mon entreprise utilisent déjà IMS. Dois-je encore effectuer la migration IMS ?
+### Les utilisateurs de mon entreprise utilisent déjà IMS. Dois-je encore effectuer la migration IMS ?{#ims-migration-needed}
 
 Cette migration comporte deux aspects : la migration des utilisateurs finaux et la migration des utilisateurs techniques (utilisés dans les API de votre code personnalisé).
 
 Si tous vos utilisateurs (opérateurs Campaign) sont sur IMS, il n&#39;est pas nécessaire d&#39;effectuer cette migration. Cependant, vous devez toujours migrer les utilisateurs techniques que vous avez peut-être utilisés dans le code personnalisé. En savoir plus sur [cette page](ims-migration.md).
 
 Une fois cette migration terminée, vous devez contacter votre Gestionnaire de transition Adobe afin que l’Adobe termine la migration.
+
+## Liens utiles {#ims-useful-links}
+
+* [Migration des utilisateurs et utilisatrices techniques vers Adobe Developer Console](ims-migration.md)
+* [Comment se connecter à Adobe Campaign v8](../../v8/start/connect.md)
+* [Accès et autorisations dans Adobe Campaign v8](../../v8/start/gs-permissions.md)
+* [Notes de mise à jour d’Adobe Campaign v8](../../v8/start/release-notes.md)
+* [Présentation d’Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}
+
