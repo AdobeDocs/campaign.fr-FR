@@ -5,10 +5,10 @@ feature: Architecture
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+source-git-commit: d791cb9afc51457e799ee62f8bb845fd888fecf2
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 100%
+source-wordcount: '1129'
+ht-degree: 95%
 
 ---
 
@@ -78,6 +78,7 @@ D&#39;autres processus plus techniques sont également disponibles :
 
 * **Serveur de statistiques** (nlserver stat) : ce processus gère les statistiques sur le nombre de connexions, les messages envoyés pour chaque serveur de messagerie vers lequel les messages sont envoyés, ainsi que leurs limitations (nombre maximum de connexions simultanées, de messages par heure et/ou connexion). Il permet également de fédérer plusieurs instances ou machines si elles partagent les mêmes adresses IP publiques.
 
+
 ## Conteneurs de base de données {#db-containers}
 
 La base de données cloud d&#39;Adobe Campaign repose sur [!DNL Snowflake], qui contient les données fonctionnelles (profils, abonnements, contenu, etc.), les données techniques (traitement et journaux de diffusion, logs de tracking, etc.) ainsi que les données de travail (achats, leads) pour la solution. En outre, tous les composants Adobe Campaign communiquent avec la base de données afin d&#39;exécuter leurs tâches spécifiques.
@@ -92,3 +93,9 @@ Vous pouvez déployer Adobe Campaign à l&#39;aide de la base de données et de
 >Avec **Campaign Managed Cloud Services**, votre environnement et votre configuration initiale ont été définis par Adobe, conformément aux termes de votre contrat de licence. Vous n&#39;êtes pas autorisé à modifier les packages, les schémas ou les rapports natifs installés.
 >
 >Si vous devez utiliser un module complémentaire Campaign ou une fonctionnalité spécifique qui n&#39;a pas été configurée pour vous, vous devez contacter **l&#39;assistance clientèle Adobe**.
+
+## Stockage de base de données {#db-storage}
+
+L&#39;espace de stockage total est réparti entre la base principale et l&#39;entrepôt du Snowflake. L’emplacement de stockage des données doit être déterminé au moment de la mise en oeuvre ou de la mise à niveau, selon les cas d’utilisation spécifiques au client.
+
+Découvrez comment surveiller l’utilisation de votre base de données dans [Documentation du Panneau de Contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html){target="_blank"}.
