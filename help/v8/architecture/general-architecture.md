@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
 source-git-commit: d791cb9afc51457e799ee62f8bb845fd888fecf2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1129'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -96,6 +96,6 @@ Vous pouvez déployer Adobe Campaign à l&#39;aide de la base de données et de
 
 ## Stockage de base de données {#db-storage}
 
-L&#39;espace de stockage total est réparti entre la base principale et l&#39;entrepôt du Snowflake. L’emplacement de stockage des données doit être déterminé au moment de la mise en oeuvre ou de la mise à niveau, selon les cas d’utilisation spécifiques au client.
+L’espace de stockage total est partagé entre la base principale et l’entrepôt de données Snowflake. L’emplacement de stockage des données doit être déterminé au moment de la mise en œuvre ou de la mise à niveau, selon les cas d’utilisation spécifiques à la clientèle.
 
-Découvrez comment surveiller l’utilisation de votre base de données dans [Documentation du Panneau de Contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html){target="_blank"}.
+Découvrez comment surveiller l’utilisation de votre base de données dans la [Documentation du panneau de contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html?lang=fr){target="_blank"}.
