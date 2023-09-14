@@ -5,9 +5,9 @@ title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Présentation de Campaign
 source-git-commit: cb5bec3107872d4d6da83b4ddbc7cad3e9276b00
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '578'
+ht-degree: 100%
 
 ---
 
@@ -135,7 +135,7 @@ ht-degree: 0%
    + [Connecter des campagnes à d’autres solutions](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
       + [Audiences et attributs de profil](connect/ac-aep.md)
-      + [Pages d’entrée de Campaign et attributs de profil](connect/ac-aep-landing-pages.md)
+      + [Pages de destination et attributs de profil Campaign](connect/ac-aep-landing-pages.md)
    + [Campaign + Journey Optimizer](connect/ac-ajo.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
