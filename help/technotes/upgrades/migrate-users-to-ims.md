@@ -4,7 +4,7 @@ description: Découvrez comment migrer les opérateurs et opératrices Campaign 
 hide: true
 hidefromtoc: true
 source-git-commit: 53412ab167721c8a8f9d84e07112b0f410d4785d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 100%
 
