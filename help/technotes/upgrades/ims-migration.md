@@ -1,10 +1,10 @@
 ---
 title: Migration des utilisateurs et utilisatrices techniques vers Adobe Developer Console
 description: Découvrez comment migrer les opérateurs et opératrices techniques Campaign vers un compte technique sur Adobe Developer Console.
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 825e8147f6080e1d943184c97c4b64ac681f9411
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 100%
+source-wordcount: '919'
+ht-degree: 84%
 
 ---
 
@@ -26,6 +26,16 @@ Cette modification s’applique à partir de Campaign v8.5 et sera **obligatoir
 Si vous utilisez des API Campaign, vous devez migrer vos opérateurs ou opératrices techniques vers Adobe Developer Console, comme indiqué ci-dessous.
 
 ## Migrer vers Adobe Developer Console{#ims-migration-procedure}
+
+Chaque opérateur technique doit avoir au moins un compte technique.
+
+Les étapes clés sont les suivantes :
+
+1. Créez tout d&#39;abord le compte technique correspondant à l&#39;opérateur technique. Supposons, par exemple, que le compte technique nouvellement créé (TA1) pour l’opérateur technique (TO1).
+1. Exécutez les étapes détaillées ci-dessous sur le compte technique TA1.
+   [Étape 4](#ims-migration-step-4) est facultatif et n’est requis que si l’opérateur technique dispose d’autorisations de dossier spécifiques.
+1. Migrez toutes les mises en oeuvre de l’intégration de l’API Campaign vers le compte technique TA1 nouvellement créé.
+1. Une fois que toutes les API/intégrations destinées aux clients commencent entièrement fonctionnelles sur TA1, remplacez l’opérateur technique TO1 par le compte technique TA1.
 
 ### Conditions préalables{#ims-migration-prerequisites}
 
@@ -61,7 +71,6 @@ Vous pouvez maintenant ajouter votre profil de produit Campaign au projet, comme
 1. Accédez à l’onglet **Informations d’identification** de votre projet, puis copiez la valeur du champ **E-mail du compte technique**.
 
 ### Étape 4 : mettre à jour l’opérateur ou opératrice technique dans la console cliente {#ims-migration-step-4}
-
 
 Cette étape n’est nécessaire que si des autorisations de dossiers spécifiques ou des droits nommés ont été définis pour cet opérateur ou cette opératrice – et non via son groupe.
 
@@ -181,7 +190,7 @@ Après la migration de l’ensemble de l’intégration du code API/personnalis�
 
 Une fois le processus de migration réalisé et validé, les appels Soap sont mis à jour comme indiqué ci-dessous :
 
-* Avant la migration
+* Avant la migration : le jeton d’accès au compte technique n’était pas pris en charge.
 
   ```sql
   POST /nl/jsp/soaprouter.jsp HTTP/1.1
@@ -204,7 +213,7 @@ Une fois le processus de migration réalisé et validé, les appels Soap sont mi
   </soapenv:Envelope>
   ```
 
-* Après la migration
+* Après la migration : le jeton d’accès au compte technique est pris en charge. Le jeton d’accès doit être fourni dans `Authorization` en-tête comme jeton porteur. L’utilisation du jeton de session doit être ignorée ici, comme illustré dans l’exemple d’appel au savon ci-dessous.
 
   ```sql
   POST /nl/jsp/soaprouter.jsp HTTP/1.1
