@@ -3,10 +3,10 @@ title: Migration de l’infrastructure d’envoi de Campaign vers Amazon Web Ser
 description: Migration de l’infrastructure d’envoi de Campaign vers Amazon Web Services (AWS)
 hide: true
 hidefromtoc: true
-source-git-commit: 53080e3641e0070b0b6e47d1ec8b55b4c7aa2b1a
+source-git-commit: 557d61e0e015fa955b70858d614e476febd467cb
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 6%
+source-wordcount: '401'
+ht-degree: 22%
 
 ---
 
@@ -21,7 +21,11 @@ Ce déplacement garantit une haute disponibilité, un débit optimal et la possi
 
 ## Cela vous concerne-t-il ?{#aws-impact}
 
-En tant que client v8, hébergé, hybride ou Managed Services Campaign v7, vous êtes impacté.
+Cette modification affecte :
+
+* Clients hébergés et hybrides Campaign Classic v7
+* Clients Campaign Managed Services
+* Tous les clients de Campaign v8
 
 ## Quand cette migration aura-t-elle lieu ?{#aws-timeline}
 
@@ -29,21 +33,43 @@ La migration des environnements de développement et d’évaluation aura lieu d
 
 La migration des environnements de production doit commencer dans **Janvier 2024**. Plus de détails seront fournis à l’approche de la date.
 
-En tant que client Campaign, vous recevrez une notification supplémentaire au fur et à mesure que les vagues de migration seront planifiées. Les notifications seront envoyées au moins sept jours avant la migration.
+En tant que client Campaign, vous recevrez une notification supplémentaire au fur et à mesure que les vagues de migration seront planifiées. Les notifications seront envoyées au moins 7 jours avant la migration pour les environnements intermédiaires et au moins 30 jours avant la migration pour les environnements de production.
 
 ## Quel est l&#39;impact ?{#impact}
 
 Cette action sera transparente pour les clients :
 
-* L&#39;envoi d&#39;adresses IP et de la version de build de Campaign restera le même qu&#39;avant le déplacement.
+* La migration doit durer entre 30 min et 60 min.
 
-* Pendant la fenêtre de migration, les instances Campaign ne pourront pas envoyer de courrier. Aucune autre fonction de Campaign ne sera affectée.
-
-* Tout courrier en file d&#39;attente pour diffusion avant la fenêtre de maintenance doit être renvoyé.
-
->[!NOTE]
->
->Pour toute question concernant cette migration, contactez votre représentant Adobe ou contactez [Adobe de l’assistance clientèle](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
->
+* Les instances Campaign ne pourront pas envoyer de courrier pendant la fenêtre de migration. Aucune autre fonction de Campaign ne sera affectée.
 
 
+## Forum aux questions {#aws-faq}
+
+* **Pourquoi cette mise à niveau est-elle obligatoire ?**
+
+  La nouvelle infrastructure d&#39;envoi de campagnes hébergée par Adobe Web Services (AWS) offre une meilleure qualité et une meilleure fiabilité à nos clients. Il fournit également une infrastructure solide et moderne pour garantir une meilleure disponibilité et un débit optimal.
+
+* **Quels sont les clients ciblés par cette migration ?**
+
+  Tous les clients Campaign v8 et Campaign Classic v7 hybrides, hébergés et Campaign Managed Services auront leurs environnements migrés.
+
+* **Quel est le temps d’arrêt prévu ?**
+
+  Le temps d’arrêt attendu est compris entre 30 et 60 minutes.
+
+* **Existe-t-il des actions requises par le client pour la migration ?**
+
+  Aucune action n’est requise, car la migration s’exécutera automatiquement par Adobe.
+
+* **Le client doit-il effectuer des validations ?**
+
+  Aucun test spécifique n’est nécessaire pour cette mise à niveau de sécurité. Contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) pour tout problème rencontré.
+
+
+* **Puis-je demander un changement de date/heure du créneau prévu pour la mise à niveau de sécurité ?**
+
+  Comme il s&#39;agit d&#39;une migration obligatoire, il est vivement recommandé de s&#39;adapter au planning existant.
+
+
+Pour toute autre question, contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
