@@ -1,7 +1,7 @@
 ---
 title: Migration des utilisateurs et utilisatrices techniques vers Adobe Developer Console
 description: Découvrez comment migrer les opérateurs et opératrices techniques Campaign vers un compte technique sur Adobe Developer Console.
-source-git-commit: 825e8147f6080e1d943184c97c4b64ac681f9411
+source-git-commit: 43a124dd64532ffe84ca2b300113cacc545a811a
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 84%
@@ -190,7 +190,7 @@ Après la migration de l’ensemble de l’intégration du code API/personnalis�
 
 Une fois le processus de migration réalisé et validé, les appels Soap sont mis à jour comme indiqué ci-dessous :
 
-* Avant la migration : le jeton d’accès au compte technique n’était pas pris en charge.
+* Avant la migration: le jeton d’accès au compte technique n’était pas pris en charge.
 
   ```sql
   POST /nl/jsp/soaprouter.jsp HTTP/1.1
