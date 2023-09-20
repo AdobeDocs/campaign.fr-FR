@@ -2,7 +2,7 @@
 title: Migrer les opérateurs et opératrices de Campaign vers Adobe Identity Management System (IMS)
 description: Découvrez comment migrer les opérateurs et opératrices Campaign vers Adobe Identity Management System (IMS).
 source-git-commit: a85368a8cd34c9bcdfcea91b71fa4b519b6437a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1078'
 ht-degree: 100%
 
