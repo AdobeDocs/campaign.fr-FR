@@ -1,10 +1,10 @@
 ---
 title: Migration des utilisateurs et utilisatrices techniques vers Adobe Developer Console
 description: Découvrez comment migrer les opérateurs et opératrices techniques Campaign vers un compte technique sur Adobe Developer Console.
-source-git-commit: 43a124dd64532ffe84ca2b300113cacc545a811a
+source-git-commit: 35263dc042642a6ba2f162461364b9399c30ad18
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 84%
+source-wordcount: '894'
+ht-degree: 77%
 
 ---
 
@@ -39,15 +39,15 @@ Les étapes clés sont les suivantes :
 
 ### Conditions préalables{#ims-migration-prerequisites}
 
-Avant de commencer le processus de migration, contactez votre représentant ou représentante Adobe afin que les équipes techniques d’Adobe puissent migrer vos groupes d’opérateurs et opératrices existants et vos droits nommés vers Adobe Identity Management System (IMS).
+Avant de commencer le processus de migration, vous devez contacter votre gestionnaire de transition Adobe afin que les équipes techniques d’Adobe puissent migrer vos groupes d’opérateurs existants et vos droits nommés vers Adobe Identity Management System (IMS).
 
 ### Étape 1 : créer/mettre à jour votre projet Campaign dans Adobe Developer Console{#ims-migration-step-1}
 
 Les intégrations sont créées dans le cadre d’un **Projet** dans Adobe Developer Console. En savoir plus sur les projets dans la [documentation d’Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
 
-En tant qu’utilisateur ou utilisatrice de Campaign v8, vous devriez déjà disposer d’un projet dans Adobe Developer Console. Dans le cas contraire, créez-en un Consultez la procédure de création d’un projet [dans la documentation d’Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}.
+Vous pouvez utiliser n’importe quel projet précédemment créé par vous ou créer un nouveau projet. Les étapes de création d’un projet sont présentées dans la section [Documentation de la console Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}.
 
-Une fois que vous avez accès à votre projet Campaign, vous pouvez ajouter des services, y compris des API telles qu’Adobe Campaign et I/O Management. Dans le cadre de cette migration, vous devez ajouter les API suivantes dans votre projet : **I/O Management** et **Adobe Campaign**.
+Dans le cadre de cette migration, vous devez ajouter les API suivantes dans votre projet : **I/O Management** et **Adobe Campaign**.
 
 ![](assets/do-not-localize/ims-products-and-services.png)
 
