@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: c4a1539f140e85e1e8c97f743f9c6c0bba52e4de
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1491'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -84,8 +84,8 @@ These max throughput performances have been measured by Adobe testing teams, in 
 
 **Améliorations de la sécurité**
 
-* Avec Campaign v8.5.1, le processus d&#39;authentification vers Campaign v8 a été amélioré et sécurisé. Les opérateurs techniques doivent désormais utiliser Adobe Identity Management System (IMS) pour se connecter à Campaign. Découvrez comment migrer votre ou vos comptes techniques existants dans [cette note technique](../../technotes/upgrades/ims-migration.md).
-* À compter de la version 8.6 à venir, vous ne serez plus autorisé à créer des opérateurs à partir de la console cliente Campaign. Si vous utilisez l’authentification native login/password, vous devez migrer vos opérateurs vers Adobe Identity Management System (IMS). Découvrez comment migrer vos opérateurs dans [cette technote](../../technotes/upgrades/migrate-users-to-ims.md).
+* Avec Campaign v8.5.1, le processus d’authentification de Campaign v8 a été amélioré et sécurisé. Les opérateurs ou opératrices techniques doivent à présent utiliser Adobe Identity Management System (IMS) pour se connecter à Campaign. Découvrez comment migrer votre ou vos comptes techniques existants dans [cette note technique](../../technotes/upgrades/ims-migration.md).
+* À compter de la version 8.6 à venir, vous n’aurez plus l’autorisation de créer des opérateurs et opératrices à partir de la console cliente Campaign. Si vous utilisez l’authentification native nom d’utilisateur/mot de passe, vous devez migrer vos opérateurs et opératrices vers Adobe Identity Management System (IMS). Découvrez comment effectuer la migration de vos opérateurs et opératrices dans [cette note technique](../../technotes/upgrades/migrate-users-to-ims.md).
 * Plusieurs outils tiers ont été mis à jour pour optimiser la sécurité.
 
 **Mises à jour de compatibilité**
