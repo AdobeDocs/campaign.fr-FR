@@ -4,7 +4,7 @@ description: Découvrez comment migrer les opérateurs et opératrices technique
 source-git-commit: 35263dc042642a6ba2f162461364b9399c30ad18
 workflow-type: tm+mt
 source-wordcount: '894'
-ht-degree: 77%
+ht-degree: 92%
 
 ---
 
@@ -27,15 +27,15 @@ Si vous utilisez des API Campaign, vous devez migrer vos opérateurs ou opératr
 
 ## Migrer vers Adobe Developer Console{#ims-migration-procedure}
 
-Chaque opérateur technique doit avoir au moins un compte technique.
+Chaque opérateur et opératrice technique doit avoir au moins un compte technique.
 
 Les étapes clés sont les suivantes :
 
-1. Créez tout d&#39;abord le compte technique correspondant à l&#39;opérateur technique. Supposons, par exemple, que le compte technique nouvellement créé (TA1) pour l’opérateur technique (TO1).
-1. Exécutez les étapes détaillées ci-dessous sur le compte technique TA1.
-   [Étape 4](#ims-migration-step-4) est facultatif et n’est requis que si l’opérateur technique dispose d’autorisations de dossier spécifiques.
-1. Migrez toutes les mises en oeuvre de l’intégration de l’API Campaign vers le compte technique TA1 nouvellement créé.
-1. Une fois que toutes les API/intégrations destinées aux clients commencent entièrement fonctionnelles sur TA1, remplacez l’opérateur technique TO1 par le compte technique TA1.
+1. Créez tout d’abord le compte technique correspondant à l’opérateur ou à l’opératrice technique. Imaginons le nouveau compte technique (TA1) pour l’opérateur/opératrice technique (TO1).
+1. Suivez les étapes détaillées ci-dessous pour le compte technique TA1.
+   L’[Étape 4](#ims-migration-step-4) est facultative et n’est requise que si l’opérateur ou l’opératrice technique dispose d’autorisations de dossier spécifiques.
+1. Migrez l’intégralité de l’implémentation de l’intégration de l’API Campaign vers le compte technique TA1 nouvellement créé.
+1. Une fois que toutes les API/intégrations destinées aux clientes et clients sont entièrement fonctionnelles sur TA1, remplacez l’opérateur/opératrice technique TO1 par le compte technique TA1.
 
 ### Conditions préalables{#ims-migration-prerequisites}
 
@@ -213,7 +213,7 @@ Une fois le processus de migration réalisé et validé, les appels Soap sont mi
   </soapenv:Envelope>
   ```
 
-* Après la migration : le jeton d’accès au compte technique est pris en charge. Le jeton d’accès doit être fourni dans `Authorization` en-tête comme jeton porteur. L’utilisation du jeton de session doit être ignorée ici, comme illustré dans l’exemple d’appel au savon ci-dessous.
+* Après la migration : le jeton d’accès au compte technique est pris en charge. Le jeton d’accès doit être fourni dans l’en-tête `Authorization` comme jeton du porteur. L’utilisation du jeton de session doit être ignorée ici, comme illustré dans l’exemple d’appel SOAP ci-dessous.
 
   ```sql
   POST /nl/jsp/soaprouter.jsp HTTP/1.1
