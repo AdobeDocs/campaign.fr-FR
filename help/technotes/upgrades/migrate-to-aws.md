@@ -4,9 +4,9 @@ description: Migrer l’infrastructure d’envoi de Campaign vers Amazon Web S
 hide: true
 hidefromtoc: true
 source-git-commit: 9401e3564b53b920dd6a640ca6d00531992a2f21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '481'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Cette modification affecte :
 * Les clientes et clients hébergés et hybrides de Campaign Classic v7
 * Les clientes et clients de Campaign Managed Services
 * L’ensemble des clientes et clients de Campaign v8
-* Clients Campaign Standards
+* Clientes et clients Campaign Standard
 
 ## Quand cette migration aura-t-elle lieu ?{#aws-timeline}
 
@@ -40,7 +40,7 @@ En tant que client ou cliente Campaign, vous recevrez des notifications supplém
 
 Cette action sera transparente :
 
-* La longueur de chaque vague de migration peut varier en fonction du nombre d’instances Campaign impactées. Lorsqu&#39;une vague de migration est planifiée, la notification inclut la durée attendue.
+* La longueur de chaque vague de migration peut varier en fonction du nombre d’instances Campaign impactées. Lorsqu’une vague de migration est planifiée, la notification inclut la durée prévue.
 
 * Les instances Campaign ne pourront pas envoyer d’e-mail pendant la durée de la migration. Aucune autre fonction de Campaign ne sera affectée.
 
@@ -49,17 +49,17 @@ Cette action sera transparente :
 
 * **Pourquoi cette mise à niveau est-elle obligatoire ?**
 
-  Adobe prévoit de désactiver l’ancien centre de données, les instances Adobe Campaign s’y exécutant doivent être transférées vers le nouveau centre de données de référence, Amazon Web Services (AWS).
+  Adobe prévoit de mettre hors service l’ancien centre de données. Les instances d’Adobe Campaign qui y sont exécutées doivent être transférées vers Amazon Web Services (AWS), le nouveau centre de données de référence.
 
-  Le cloud Adobe Managed Services est hébergé sur Amazon Web Services (AWS), un environnement moderne, sécurisé et optimisé. [En savoir plus sur Amazon Web Services](https://aws.amazon.com/application-hosting/benefits/){target="_blank"}.
+  Le cloud Adobe Managed Services est hébergé sur Amazon Web Services (AWS), un environnement moderne, sécurisé et optimisé. [En savoir plus sur Amazon Web Services](https://aws.amazon.com/application-hosting/benefits/){target="_blank"}.
 
-* **Quels sont les clientes et clients ciblés par cette migration ?**
+* **Qui sont les clientes et clients ciblés par cette migration ?**
 
-  L’ensemble des clientes et clients de Campaign v8 et Campaign Classic v7 hybrides et hébergés, ainsi que de Campaign Managed Services verront leurs environnements migrer. Les clients Campaign Standards sont également affectés.
+  L’ensemble des clientes et clients de Campaign v8 et Campaign Classic v7 hybrides et hébergés, ainsi que de Campaign Managed Services verront leurs environnements migrer. Les clientes et clients Campaign Standard sont également affectées.
 
 * **Quel est le temps d’arrêt prévu ?**
 
-  La migration doit durer entre 30 min et 60 min, mais la longueur de chaque vague de migration peut varier en fonction du nombre d’instances Campaign concernées. Lorsqu&#39;une vague de migration est planifiée, la notification inclut la durée attendue.
+  La migration doit durer entre 30 et 60 minutes, mais la longueur de chaque vague de migration peut varier en fonction du nombre d’instances Campaign impactées. Lorsqu’une vague de migration est planifiée, la notification inclut la durée prévue.
 
 * **Les clientes et clients doivent-ils prendre des mesures pour cette migration ?**
 
@@ -67,7 +67,7 @@ Cette action sera transparente :
 
 * **Le client ou la cliente doit-il/elle effectuer des validations ?**
 
-  Aucun test spécifique n’est nécessaire pour cette migration. Si un problème est observé, veuillez contacter [Adobe de l’assistance clientèle](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+  Aucun test spécifique n’est nécessaire pour cette migration. Contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) pour tout problème rencontré{target="_blank"}.
 
 
 * **Puis-je demander un changement de date/heure du créneau prévu pour la mise à niveau de sécurité ?**
