@@ -3,10 +3,10 @@ title: Mise à niveau de l’infrastructure d’envoi de courriers électronique
 description: Mise à niveau de l’infrastructure d’envoi de courriers électroniques de Campaign
 hide: true
 hidefromtoc: true
-source-git-commit: 45ef2b46f2612bdb814270d8ef9e257fcaf98e5b
+source-git-commit: aa3ec8e96d3bda80d5cbd4b4d98cad07b4560b14
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 19%
+source-wordcount: '366'
+ht-degree: 23%
 
 ---
 
@@ -24,7 +24,6 @@ Cette modification affecte :
 * Clients Adobe Campaign Classic Managed Services
 * Clients Adobe Campaign Managed Cloud Services
 * Clients à la demande Adobe Campaign Standard
-* Clients à la demande dans Adobe Campaign Cloud Messaging
 
 ## Quand cette migration aura-t-elle lieu ?{#aws-timeline}
 
@@ -46,7 +45,7 @@ En tant que client Campaign, vous recevrez au moins trente (30) jours à l&#39;a
 
   Oui. En tant que client Campaign, votre fonctionnalité d’envoi d’emails nécessite l’utilisation d’une infrastructure d’envoi d’emails.
 
-* **Quels sont les clientes et clients ciblés par cette migration ?**
+* **Qui sont les clientes et clients ciblés par cette migration ?**
 
   Les environnements de tous les clients Campaign référencés ci-dessus seront mis à niveau.
 
@@ -60,7 +59,7 @@ En tant que client Campaign, vous recevrez au moins trente (30) jours à l&#39;a
 
 * **Quels tests sont requis par les clients ?**
 
-  Nous ne nous attendons pas à ce que les clients effectuent des tests en rapport avec cet événement de mise à niveau. Si un problème est observé, veuillez contacter [Adobe de l’assistance clientèle](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+  Nous ne nous attendons pas à ce que les clients effectuent des tests en rapport avec cet événement de mise à niveau. Contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) pour tout problème rencontré{target="_blank"}.
 
 
 * **Puis-je demander un changement de date/heure du créneau prévu pour la mise à niveau de sécurité ?**
