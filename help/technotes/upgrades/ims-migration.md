@@ -2,9 +2,9 @@
 title: Migration des utilisateurs et utilisatrices techniques vers Adobe Developer Console
 description: Découvrez comment migrer les opérateurs et opératrices techniques Campaign vers un compte technique sur Adobe Developer Console.
 source-git-commit: 35263dc042642a6ba2f162461364b9399c30ad18
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '894'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -39,13 +39,13 @@ Les étapes clés sont les suivantes :
 
 ### Conditions préalables{#ims-migration-prerequisites}
 
-Avant de commencer le processus de migration, vous devez contacter votre gestionnaire de transition Adobe afin que les équipes techniques d’Adobe puissent migrer vos groupes d’opérateurs existants et vos droits nommés vers Adobe Identity Management System (IMS).
+Avant de commencer le processus de migration, contactez votre la personne responsable de la gestion de votre transition Adobe afin que les équipes techniques d’Adobe puissent migrer vos groupes d’opérateurs et opératrices existants et vos droits nommés vers Adobe Identity Management System (IMS).
 
 ### Étape 1 : créer/mettre à jour votre projet Campaign dans Adobe Developer Console{#ims-migration-step-1}
 
 Les intégrations sont créées dans le cadre d’un **Projet** dans Adobe Developer Console. En savoir plus sur les projets dans la [documentation d’Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
 
-Vous pouvez utiliser n’importe quel projet précédemment créé par vous ou créer un nouveau projet. Les étapes de création d’un projet sont présentées dans la section [Documentation de la console Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}.
+Vous pouvez utiliser n’importe quel projet précédemment créé par vous ou créer un nouveau projet. Les étapes de création d’un projet sont détaillées dans la [documentation d’Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}.
 
 Dans le cadre de cette migration, vous devez ajouter les API suivantes dans votre projet : **I/O Management** et **Adobe Campaign**.
 
