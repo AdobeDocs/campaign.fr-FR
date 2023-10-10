@@ -2,8 +2,9 @@
 title: Étapes clés de la création dʼun rapport personnalisé
 description: Découvrez les étapes principales de création d’un rapport personnalisé.
 feature: Reporting
+role: User, Data Engineer
 exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
-source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 82%
@@ -12,7 +13,7 @@ ht-degree: 82%
 
 # Étapes clés de la création dʼun rapport personnalisé{#key-steps-to-create-a-report}
 
-Afin de produire des statistiques sur la base de données de Campaign, vous pouvez créer des rapports et adapter leur contenu et leur présentation en fonction de vos besoins. Ces rapports peuvent être partagés ou non avec les autres opérateurs.
+Afin de produire des statistiques sur la base de données de Campaign, vous pouvez créer des rapports et adapter leur contenu et leur mise en page en fonction de vos besoins. Ces rapports peuvent être partagés ou non avec les autres opérateurs.
 
 >[!NOTE]
 >

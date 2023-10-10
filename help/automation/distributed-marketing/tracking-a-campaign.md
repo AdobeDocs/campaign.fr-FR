@@ -3,8 +3,9 @@ product: campaign
 title: Suivi d’une campagne
 description: Découvrez comment effectuer le suivi dʼune campagne grâce au marketing distribué de Campaign
 feature: Distributed Marketing
+role: User
 exl-id: 9904c1c6-c233-4aa2-a237-338ebde15661
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 100%

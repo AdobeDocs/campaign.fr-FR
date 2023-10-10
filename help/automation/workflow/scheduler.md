@@ -3,8 +3,9 @@ product: campaign
 title: Planificateur
 description: En savoir plus sur l’activité de workflow de planificateur
 feature: Workflows
+role: User
 exl-id: ed70d2d3-251e-4ee8-84d4-73ad03e8dd35
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 100%
@@ -21,7 +22,7 @@ L&#39;activité **[!UICONTROL Planificateur]** est à considérer comme un dépa
 
 ## Bonnes pratiques {#best-practices}
 
-* Ne planifiez pas l’exécution d’un workflow à une fréquence supérieure à toutes les 15 minutes, car cela peut nuire aux performances générales du système et créer des blocs dans la base de données.
+* Ne planifiez pas l’exécution d’un workflow à une fréquence supérieure à toutes les 15 minutes, car cela peut nuire aux performances générales du système et créer des blocages dans la base de données.
 
 * N’utilisez jamais plusieurs activités de **[!UICONTROL Planificateur]** par branche dans un workflow. Voir [Utilisation des activités](workflow-best-practices.md#using-activities).
 

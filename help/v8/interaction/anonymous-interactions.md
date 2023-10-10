@@ -2,8 +2,9 @@
 product: campaign
 title: Présentation d'offres aux profils anonymes (interaction entrante)
 description: Découvrez comment présenter des offres aux profils anonymes
+role: User, Admin
 exl-id: b7a04360-f8c6-4c69-9594-2b44d3f819b7
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 100%

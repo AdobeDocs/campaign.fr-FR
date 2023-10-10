@@ -5,10 +5,10 @@ feature: Data Model
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: 87e56e7c296884458a0c8fd704b82611f56e695d
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 79%
+ht-degree: 75%
 
 ---
 
@@ -34,7 +34,7 @@ La structure de base du modèle de données Adobe Campaign peut être décrite 
 
 >[!NOTE]
 >
->Pour obtenir la description de chaque table, accédez à Admin > Paramétrage > Schémas de données, sélectionnez une ressource dans la liste et cliquez sur l&#39;onglet **Documentation**.
+>Pour accéder à la description de chaque tableau, accédez à la section **Administration > Paramétrage > Schémas de données**, sélectionnez une ressource dans la liste, puis cliquez sur l’icône **Documentation** .
 
 Lorsque vous commencez à utiliser Adobe Campaign, vous devez évaluer le modèle de données par défaut pour déterminer quelle table est adaptée au stockage de vos données marketing.
 

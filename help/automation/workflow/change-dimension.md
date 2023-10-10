@@ -3,8 +3,9 @@ product: campaign
 title: Changement de dimension dans un workflow
 description: Découvrez comment utiliser l’activité « Changement de dimension ».
 feature: Workflows, Targeting Activity
+role: User
 exl-id: 71f36413-377a-4be6-921c-9e794fe882fd
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 100%

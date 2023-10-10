@@ -2,12 +2,10 @@
 product: campaign
 title: Ajouter un champ calculé de type Énumération
 description: Découvrez comment ajouter un champ calculé de type Énumération
-audience: workflow
-content-type: reference
-topic-tags: use-cases
 feature: Workflows, Data Management
+role: User
 exl-id: 4fe2ae81-faa6-4777-a332-70c451bca75b
-source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 100%

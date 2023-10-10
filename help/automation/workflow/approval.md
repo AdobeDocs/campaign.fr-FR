@@ -3,8 +3,9 @@ product: campaign
 title: Validation
 description: Validation
 feature: Workflows, Approvals
+role: User
 exl-id: 9e57d21c-ce16-448d-97f1-8c6844acb37b
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 100%
@@ -61,7 +62,7 @@ La section inférieure de l&#39;éditeur permet de définir la liste des répons
 
 Cliquez sur le lien **[!UICONTROL Paramètres avancés...]** pour sélectionner le modèle de diffusion à utiliser pour notifier les opérateurs. Le modèle par défaut (nom interne &#39;notifyAssignee&#39;) reprend le titre et le message et ajoute un lien vers la page web permettant de répondre.
 
-Ce modèle peut être modifié pour personnaliser la présentation du message, mais il est préférable d&#39;en faire une copie. Le mécanisme de ciblage (fichier externe, mapping de ciblage) ne doit pas être modifié car il est nécessaire au bon fonctionnement de la notification.
+Ce modèle peut être modifié pour personnaliser la mise en page du message, mais il est préférable d&#39;en faire une copie. Le mécanisme de ciblage (fichier externe, mapping de ciblage) ne doit pas être modifié car il est nécessaire au bon fonctionnement de la notification.
 
 Un exemple de validation est proposé dans la section [Définir les validations](define-approvals.md).
 
