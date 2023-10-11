@@ -5,7 +5,7 @@ description: Cette section décrit le workflow technique installé à l’aide d
 feature: Workflows, Inbox Rendering
 role: User, Admin
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '64'
 ht-degree: 100%
 
