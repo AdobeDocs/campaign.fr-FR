@@ -5,7 +5,7 @@ description: Découvrez comment présenter la meilleure offre à l'aide du modul
 role: User, Admin
 exl-id: d0137fa7-3d04-4205-b49c-46973e45a5b8
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '198'
 ht-degree: 100%
 
