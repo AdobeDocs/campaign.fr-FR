@@ -1,67 +1,67 @@
 ---
-title: Mise à niveau de l’infrastructure d’envoi de courriers électroniques de Campaign
-description: Mise à niveau de l’infrastructure d’envoi de courriers électroniques de Campaign
-source-git-commit: 4478c4b4b1eb3697ff03acfcd618ebfb1d875df9
-workflow-type: tm+mt
+title: Mise à niveau de l’infrastructure d’envoi d’e-mails dans Campaign
+description: Mise à niveau de l’infrastructure d’envoi d’e-mails dans Campaign
+exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
+source-git-commit: 3e95a56825a143a4457ab7ee242208d7daaeb414
+workflow-type: ht
 source-wordcount: '366'
-ht-degree: 17%
+ht-degree: 100%
 
 ---
 
+# Mise à niveau de l’infrastructure d’envoi d’e-mails dans Campaign {#migrate-infra-to-aws}
 
-# Mise à niveau de l’infrastructure d’envoi de courriers électroniques de Campaign {#migrate-infra-to-aws}
+## Quels éléments seront mis à niveau ?{#aws-changes}
 
-## Que sera mis à niveau ?{#aws-changes}
-
-Dans le cadre de nos efforts constants pour offrir une expérience utilisateur de qualité optimale, nous mettons à niveau notre service de diffusion par courrier électronique.
+Dans le cadre de nos efforts constants pour offrir une expérience client de qualité optimale, nous mettons à niveau notre service de diffusion par e-mail.
 
 ## Cela vous concerne-t-il ?{#aws-impact}
 
 Cette modification affecte :
 
-* Clients Adobe Campaign Classic Managed Services
-* Clients Adobe Campaign Managed Cloud Services
-* Clients à la demande Adobe Campaign Standard
+* Les clientes et clients d’Adobe Campaign Classic Managed Services
+* Les clientes et clients d’Adobe Campaign Managed Cloud Services
+* Les clientes et clients d’Adobe Campaign Standard On-demand
 
-## Quand cette mise à niveau aura-t-elle lieu ?{#aws-timeline}
+## Quand cette mise à niveau aura-t-elle lieu ?{#aws-timeline}
 
-Les mises à niveau des environnements de développement et d’évaluation sont attendues à l’adresse **Octobre 2023**.
+La mise à niveau des environnements de développement et d’évaluation est attendue pour **octobre 2023**.
 
-Nous prévoyons de planifier les mises à niveau de l’environnement de production à partir de **Janvier 2024**.
+Nous prévoyons de planifier les mises à niveau de l’environnement de production à partir de **janvier 2024**.
 
-En tant que client Campaign, vous recevrez au moins trente (30) jours à l&#39;avance une notification supplémentaire concernant l&#39;upgrade de production.
+En tant que client ou cliente Campaign, vous recevrez au moins trente (30) jours à l’avance une notification supplémentaire concernant la mise à niveau de l’environnement de production.
 
-## À quoi s&#39;attendre ?{#impact}
+## À quoi s’attendre ?{#impact}
 
-* La longueur de chaque vague d&#39;upgrade varie en fonction du nombre d&#39;instances Campaign impactées. Lorsqu&#39;une vague d&#39;upgrade de production est planifiée, la notification inclut la durée estimée.
+* La durée de chaque vague de mise à niveau varie en fonction du nombre d’instances Campaign impactées. Lorsqu’une vague de mise à niveau d’environnement de production est planifiée, la notification inclut la durée prévue.
 
-* Les instances de Campaign, dans les environnements intermédiaires et de production, ne pourront pas envoyer de courrier pendant la fenêtre de mise à niveau. Les autres fonctionnalités de Campaign ne devraient pas être affectées.
+* Les instances de Campaign, que ce soit pour les environnements d’évaluation ou les environnements de production, ne pourront pas envoyer d’e-mails pendant la durée de la mise à niveau. Les autres fonctionnalités de Campaign ne devraient pas être affectées.
 
 ## Questions fréquentes {#aws-faq}
 
-* **Cette mise à niveau est-elle obligatoire ?**
+* **Cette mise à niveau est-elle obligatoire ?**
 
-  Oui. En tant que client Campaign, votre fonctionnalité d’envoi d’emails nécessite l’utilisation d’une infrastructure d’envoi d’emails.
+  Oui. En tant que client ou cliente Campaign, votre fonctionnalité d’envoi d’e-mails nécessite l’utilisation d’une infrastructure appropriée.
 
-* **Quels sont les clients ciblés pour cette mise à niveau ?**
+* **Qui sont les clientes et clients ciblés par cette mise à niveau ?**
 
-  Les environnements de tous les clients Campaign référencés ci-dessus seront mis à niveau.
+  Les environnements de l’ensemble des clientes et clients Campaign référencés ci-dessus seront mis à niveau.
 
 * **Quel est le temps d’arrêt prévu ?**
 
-  La longueur de chaque vague d&#39;upgrade peut varier en fonction du nombre d&#39;instances Campaign impactées. Lorsqu&#39;une vague d&#39;upgrade de production est programmée, la notification inclura une durée estimée.
+  La durée de chaque vague de mise à niveau peut varier en fonction du nombre d’instances Campaign impactées. Lorsqu’une vague de mise à niveau d’environnement de production est planifiée, la notification inclut la durée prévue.
 
-* **Existe-t-il des actions requises par le client pour la mise à niveau ?**
+* **Les clientes et clients doivent-ils prendre des mesures pour cette mise à niveau ?**
 
   Aucune action n’est requise. Adobe gère le processus de mise à niveau, qui s’exécute automatiquement.
 
-* **Quels tests sont requis par les clients ?**
+* **Quels sont les tests requis par les clientes et clients ?**
 
-  Nous ne nous attendons pas à ce que les clients effectuent des tests en rapport avec cet événement de mise à niveau. Contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) pour tout problème rencontré{target="_blank"}.
+  Nous ne nous attendons pas à ce que les clientes et clients aient à effectuer des tests en rapport avec cet événement de mise à niveau. Contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=fr#support) pour tout problème rencontré{target="_blank"}.
 
 
 * **Puis-je demander un changement de date/heure du créneau prévu pour la mise à niveau de sécurité ?**
 
-  Non. Nous ne pouvons pas prendre en charge les modifications demandées au planning existant, car cela perturbera probablement l’événement de mise à niveau assigné à un autre client.
+  Non. Nous ne pouvons pas prendre en charge les modifications demandées au planning existant, au risque de perturber l’événement de mise à niveau assigné à d’autres personnes.
 
-Pour toute autre question, contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+Pour toute autre question, contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=fr#support){target="_blank"}.
