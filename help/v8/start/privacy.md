@@ -1,20 +1,20 @@
 ---
 title: Gestion des demandes d’accès à des informations personnelles dans Campaign
 description: Découvrez comment gérer les demandes d'accès à des informations personnelles dans Campaign
-feature: Audiences
+feature: Privacy
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
 workflow-type: tm+mt
 source-wordcount: '1072'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # Gestion des demandes d’accès à des informations personnelles dans Campaign {#privacy}
 
-Selon la nature de votre entreprise et les juridictions sous lesquelles elle opère, vos opérations de données peuvent être soumises à des réglementations légales en matière de confidentialité. Ces réglementations donnent souvent à vos clients le droit de demander l’accès aux données que vous collectez auprès d’eux et le droit de demander la suppression de ces données stockées. Ces demandes des clients concernant leurs données personnelles sont appelées « demandes d’accès à des informations personnelles » dans l’ensemble de la documentation.
+Selon la nature de votre entreprise et les juridictions sous lesquelles elle opère, vos opérations de données peuvent être soumises à des réglementations légales en matière de confidentialité. Ces réglementations donnent souvent à vos clients le droit de demander l’accès aux données que vous collectez auprès d’eux et le droit de demander la suppression de ces données stockées. Ces demandes de données personnelles de ces clients sont appelées &quot;demandes d’accès à des informations personnelles&quot; dans l’ensemble de la documentation.
 
 Adobe met à la disposition des contrôleurs de données des outils afin de créer et de traiter des demandes d’accès à des informations personnelles pour les données stockées dans Adobe Campaign. Cependant, il est de votre responsabilité, en tant que contrôleur de données, de vérifier l’identité du titulaire de données à l’origine de la demande, et de confirmer que les données renvoyées au demandeur concernent le titulaire de données. Obtenez des informations supplémentaires sur les données personnelles et les différentes entités qui gèrent les données dans la [documentation Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr#personal-data){target="_blank"}.
 
