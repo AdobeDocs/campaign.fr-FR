@@ -1,11 +1,11 @@
 ---
 title: Gestion des clés dans Campaign
 description: Prise en main de la gestion des clés
-feature: FFDA
+feature: Configuration, FFDA
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 100%

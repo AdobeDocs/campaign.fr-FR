@@ -1,24 +1,24 @@
 ---
 title: Formulaires de saisie Campaign
 description: Découvrez comment personnaliser les formulaires de saisie
-feature: Web Forms
+feature: Web Forms, Landing Pages
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '2574'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
-# Prise en main des formulaires de saisie{#gs-ac-forms}
+# Prise en main des formulaires de saisie {#gs-ac-forms}
 
 Lorsque vous créez ou étendez un schéma, vous devez créer ou modifier les formulaires de saisie associés pour permettre aux utilisateurs finaux et utilisatrices finales de voir ces modifications.
 
-Un formulaire de saisie vous permet de modifier une instance associée à un schéma de données à partir de la console cliente Adobe Campaign. Le formulaire est identifié par son nom et son espace de noms.
+Un formulaire de saisie vous permet de modifier une instance associée à un schéma de données à partir de la console cliente Adobe Campaign. Le formulaire est identifié par ses nom et espace de noms.
 
-La clé d&#39;identification d&#39;un formulaire correspond à une chaîne constituée de l&#39;espace de noms et du nom séparés par deux points, par exemple &quot;cus:contact&quot;.
+La clé d&#39;identification d&#39;un formulaire est une chaîne construite avec l&#39;espace de noms et le nom séparés par le caractère &#39;:&#39; par exemple &quot;cus:contact&quot;.
 
 ## Modification des formulaires de saisie
 

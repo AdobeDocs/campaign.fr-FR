@@ -1,11 +1,11 @@
 ---
 title: Mécanisme d'évaluation de l'API Campaign
 description: Mécanisme d'évaluation de l'API Campaign
-feature: API, FFDA
+feature: Configuration, API, FFDA
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 96693af9-50db-4298-ae02-c238d35e52b4
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 100%
@@ -33,7 +33,7 @@ Les API de Campaign Classic v7 sont toujours disponibles, mais ne peuvent pas b
 >* L&#39;évaluation s’applique uniquement aux schémas stockés dans la base de données cloud. N&#39;activez pas l&#39;évaluation sur les schémas répliqués. N&#39;activez pas l&#39;évaluation sur les schémas locaux. N&#39;activez pas l’évaluation sur un schéma évalué
 >
 
-## Étapes d&#39;implémentation{#implement-staging}
+## Étapes d&#39;implémentation {#implement-staging}
 
 Pour mettre en œuvre le mécanisme d&#39;évaluation de Campaign sur une table spécifique, procédez comme suit :
 

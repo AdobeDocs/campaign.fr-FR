@@ -1,18 +1,18 @@
 ---
 title: Prise en main du déploiement de Campaign FFDA
 description: Prise en main du déploiement de Campaign FFDA
-feature: Architecture, FFDA
+feature: Architecture, FFDA, Deployment
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: 51bba0a2b4be03577f508d352fc7c2b514ba28e5
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 100%
 
 ---
 
-# Déploiement FFDA [!DNL Campaign]{#gs-ac-ffda}
+# Déploiement FFDA [!DNL Campaign] {#gs-ac-ffda}
 
 Grâce à l&#39;utilisation de [[!DNL Snowflake]](https://www.snowflake.com/), une technologie de base de données cloud, Full Federated Access (FFDA) Adobe Campaign Enterprise améliore considérablement sa mise à l&#39;échelle et sa vitesse, ainsi que la capacité à gérer un nombre plus important de profils client, ainsi que des taux de diffusion et de transactions beaucoup plus élevés par heure.
 

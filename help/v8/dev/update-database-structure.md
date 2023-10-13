@@ -1,17 +1,18 @@
 ---
 title: Mise à jour de la structure de la base de données
 description: Mise à jour de la structure de la base de données
+feature: Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: fc64f3ca-67f1-47b7-b154-9c9dd044192c
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 100%
 
 ---
 
-# Mise à jour de la structure de la base de données{#updating-the-database-structure}
+# Mise à jour de la structure de la base de données {#updating-the-database-structure}
 
 Pour appliquer les modifications apportées aux schémas, lancez l’Assistant de mise à jour de la base de données. Cet assistant est accessible via **[!UICONTROL Outils > Avancé > Mise à jour de la structure de la base de données]**. Il vérifie que la structure physique de la base de données correspond bien à sa description logique et exécute les scripts de mise à jour SQL.
 

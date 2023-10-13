@@ -5,10 +5,10 @@ feature: Workflows
 role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: b323dbf9504e39cca78f7082089b864544ee1633
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1625'
-ht-degree: 97%
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ Ce que vous pouvez configurer :
 * Envoi automatique de rapports
 * Événements déclenchés
 
-## Conception et utilisation de workflows{#gs-ac-wf}
+## Conception et utilisation de workflows {#gs-ac-wf}
 
 Utilisez les workflows d&#39;Adobe Campaign pour améliorer la vitesse et l&#39;échelle relatives à chaque aspect de vos campagnes marketing, de la création de segments à la préparation des messages, en passant par leur diffusion.
 
@@ -156,7 +156,7 @@ Ainsi que ces pages dans la documentation de Campaign v7 :
 Découvrez comment automatiser la création et la diffusion d&#39;un bloc de contenu avec le module complémentaire de gestion de contenu de Campaign.
 
 * [Test A/B](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html?lang=fr){target="_blank"}
-Découvrez comment comparer deux contenus de diffusion email via un workflow de ciblage. Le message et le texte sont identiques dans les deux diffusions : seule la mise en page change. La population ciblée est divisée en trois : deux groupes de test et la population restante. Une version différente de la diffusion est envoyée à chaque groupe de test.
+Découvrez comment comparer deux contenus de diffusion email via un workflow de ciblage. Le message et le texte sont identiques dans les deux diffusions : seule la disposition change. La population ciblée est divisée en trois : deux groupes de test et la population restante. Une version différente de la diffusion est envoyée à chaque groupe de test.
 
 ### Surveillance {#monitoring}
 
@@ -165,8 +165,8 @@ Découvrez comment comparer deux contenus de diffusion email via un workflow de 
 * [Envoi d&#39;un rapport à une liste](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-a-report-to-a-list.html?lang=fr)
 Découvrez comment générer un rapport mensuel intégré des indicateurs de tracking au format PDF et l’envoyer à une liste d’opérateurs Campaign.
 
-* [Superviser vos workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=fr)
-Découvrez comment créer un workflow qui vous permet de surveiller l’état d’un ensemble de workflows « en pause », « arrêtés » ou « contenant des erreurs ».
+* [Supervision de vos workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=fr)
+Découvrez comment créer un workflow qui vous permet de surveiller l&#39;état d&#39;un ensemble de workflows qui sont &quot;en pause&quot;, &quot;arrêtés&quot; ou &quot;en erreur&quot;.
 
 * [Envoyer des alertes personnalisées aux opérateurs](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-alerts-to-operators.html?lang=fr)
 Découvrez comment envoyer à un opérateur une alerte contenant le nom des profils qui ont ouvert une newsletter, sans toutefois cliquer sur le lien qu’elle contient.
@@ -197,8 +197,8 @@ Découvrez comment concevoir un workflow qui peut être réutilisé pour importe
 
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 
-* [Effectuer une requête sur la table des destinataires](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/querying-recipient-table.html?lang=fr)
-Découvrez comment récupérer les noms et les e-mails des destinataires dont le domaine d’e-mail est &quot;orange.co.uk&quot; et qui ne vivent pas à Londres.
+* [Interrogation de la table des destinataires](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/querying-recipient-table.html?lang=fr)
+Découvrez comment récupérer les noms et emails des destinataires dont le domaine d&#39;email est &quot;orange.co.uk&quot; et qui ne vivent pas à Londres.
 
 * [Informations sur la diffusion de requêtes](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-delivery-info.html?lang=fr)
 Découvrez comment définir des requêtes sur les informations de diffusion pour récupérer le comportement du profil.

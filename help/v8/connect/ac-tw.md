@@ -2,16 +2,17 @@
 title: Utilisation de Campaign et Twitter
 description: Découvrez comment intégrer votre environnement Campaign à Twitter
 role: User, Admin
+feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 100%
 
 ---
 
-# Utilisation de Campaign et Twitter{#tw-ac-ovv}
+# Utilisation de Campaign et Twitter {#tw-ac-ovv}
 
 Le module **Gestion des réseaux sociaux (Social Marketing)** vous permet d&#39;interagir avec vos clients via Twitter. Utilisez cette fonctionnalité pour :
 

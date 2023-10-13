@@ -5,14 +5,14 @@ feature: Transactional Messaging
 role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 100%
 
 ---
 
-# Paramètres de messagerie transactionnelle
+# Paramètres de messagerie transactionnelle {#mc-settings}
 
 « Messages transactionnels » (Message Center) désigne un module de Campaign conçu pour gérer les messages déclenchés. Pour en savoir plus sur les fonctionnalités des messages transactionnels, consultez [cette section](../send/transactional.md).
 
@@ -20,15 +20,15 @@ Découvrez l’architecture de la messagerie transactionnelle sur [cette page](.
 
 ![](../assets/do-not-localize/speech.png) En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour installer et configurer la messagerie transactionnelle de Campaign dans votre environnement.
 
-## Définition des autorisations
+## Définition des autorisations {#mc-permissions}
 
-Pour créer des utilisateurs pour les instances d’exécution Message Center hébergées sur Adobe Cloud, vous devez contacter l’assistance clientèle d’Adobe. Les utilisateurs de Message Center sont des opérateurs spécifiques qui ont besoin d’autorisations dédiées pour accéder aux dossiers « Evénements temps réel » (nmsRtEvent).
+Pour créer des utilisateurs pour les instances d&#39;exécution Message Center hébergées sur Adobe Cloud, vous devez contacter l&#39;assistance client Adobe. Les utilisateurs de Message Center sont des opérateurs spécifiques qui nécessitent des autorisations dédiées pour accéder aux dossiers &#39;Evénements temps réel&#39; (nmsRtEvent).
 
-## Extensions de schéma
+## Extensions de schéma  {#mc-schema-ext}
 
 Les extensions de schéma effectuées sur les schémas utilisés par les [workflows techniques de Message Center](#technical-workflows) sur les instances de pilotage ou d’exécution doivent être dupliquées sur les autres instances utilisées par le module des messages transactionnels d’Adobe Campaign.
 
-## Envoyer des notifications push transactionnelles
+## Envoyer des notifications push transactionnelles {#mc-transactional-push}
 
 Couplés au module [Canal des applications mobiles](../send/push.md), les messages transactionnels permettent d’émettre des notifications push sur des applications mobiles.
 
@@ -59,7 +59,7 @@ Vous trouverez ci-dessous un exemple de configuration d’événement permettant
          <urn:domEvent>
 
               <rtEvent wishedChannel="41" type="DELIVERY" registrationToken="2cefnefzef758398493srefzefkzq483974">
-                <mobileApp _operation=”none” uuid="com.adobe.NeoMiles"/>
+                <mobileApp _operation="none" uuid="com.adobe.NeoMiles"/>
                 <ctx>
                     <deliveryTime>1:30 PM</deliveryTime>
                     <url>http://www.adobe.com</url>
@@ -71,8 +71,6 @@ Vous trouverez ci-dessous un exemple de configuration d’événement permettant
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
-
-
 
 ## Purger des événements {#purge-events}
 

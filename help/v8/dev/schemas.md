@@ -1,14 +1,14 @@
 ---
 title: Utilisation des schémas Campaign
 description: Prise en main des schémas
-feature: Schema Extension
+feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1269'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -184,7 +184,7 @@ Exemple:
 </key>
 ```
 
-Dans cet exemple, au lieu de laisser l&#39;attribut **@autopk** ou **@autouuid** créer une clé primaire par défaut nommée « id », on définit ici la clé primaire « householdId ».
+Dans cet exemple, au lieu de laisser la variable **@autopk** ou le **@autouuid** crée une clé primaire par défaut appelée &quot;id&quot; que nous spécifions notre propre clé primaire &quot;householdId&quot;.
 
 >[!CAUTION]
 >
