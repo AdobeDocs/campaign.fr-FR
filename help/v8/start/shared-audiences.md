@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: c4d30771-db5e-40be-8af6-50f0fab9f9af
 source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ L’intégration prend en charge deux types d’identifiants Adobe Experience 
 
   >[!NOTE]
   >
-  > Désormais, la source de données des ID déclarés peut également être utilisée avec l’intégration de People Core Service.
+  > Désormais, la source de données des ID déclarés peut également être utilisée avec l’intégration People Core Service.
   >
-  >Si vous utilisez l’intégration de People core service et souhaitez ajouter l’intégration d’Audience Manager, vous aurez besoin de l’aide d’un consultant Adobe Audience Manager pour éviter de perdre toutes les synchronisations d’ID collectées lors de la transition vers l’utilisation de cette source de données d’ID déclaré dans un contexte Adobe Audience Manager.
+  >Si vous utilisez l’intégration People Core Service et que vous souhaitez ajouter l’intégration Audience Manager, vous aurez besoin de l’aide d’un consultant ou d’une consultante Adobe Audience Manager, qui vous aidera à éviter de perdre toutes les synchronisations d’ID collectées lors de la transition vers l’utilisation de cette source de données d’ID déclarés dans un contexte Adobe Audience Manager.
 
-Pour plus d&#39;informations, consultez la section :
+Pour plus d’informations, consultez la section :
 
 [https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=fr](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=fr)
 
