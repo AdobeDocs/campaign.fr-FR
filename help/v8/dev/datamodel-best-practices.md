@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2723'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -89,7 +89,7 @@ Le tableau ci-après décrit ces identifiants et leur finalité.
 | Identifiant | Description | Bonnes pratiques |
 |--- |--- |--- |
 | Id | <ul><li>L&#39;id est la clé primaire physique d&#39;une table Adobe Campaign. Pour les tables intégrées, il s&#39;agit d&#39;un identifiant universel unique (UUID).</li><li>Cet identifiant doit être unique. </li><li>Un UUID est visible dans une définition de schéma.</li></ul> | <ul><li>Les identifiants générés automatiquement ne peuvent pas être utilisés comme référence dans un workflow ou une définition de package.</li><li>L&#39;identifiant d&#39;une table est un UUID dont le type ne doit pas être modifié.</li></ul> |
-| Nom (ou nom interne) | <ul><li>Cette information est l&#39;identifiant unique d&#39;un enregistrement dans une table. Cette valeur peut être mise à jour manuellement, généralement avec un nom généré.</li><li>Cet identifiant conserve sa valeur lorsqu&#39;il est déployé dans une autre instance d&#39;Adobe Campaign et ne doit pas être vide.</li></ul> | <ul><li>Changez le nom d&#39;enregistrement généré par Adobe Campaign si l&#39;objet est destiné à être déployé d&#39;un environnement à un autre.</li><li>Si un objet possède un attribut d&#39;espace de noms (par exemple, *schema*), cet espace de noms commun sera appliqué à tous les objets personnalisés créés. Certains espaces de noms réservés ne doivent pas être utilisés : *nms*, *xtk*, etc.  Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces).</li><li>Lorsqu&#39;un objet n&#39;a pas d&#39;espace de noms (*workflow* ou *delivery*, par exemple), cette notion d&#39;espace de noms est ajoutée sous la forme d&#39;un préfixe d&#39;un objet de nom interne : *namespaceMyObjectName*.</li><li>N’utilisez pas de caractères spéciaux tels que l’espace &quot;&quot;, le point-virgule &quot;:&quot; ou le tiret &quot;-&quot;. Tous ces caractères seront remplacés par un trait de soulignement &quot;_&quot; (caractère autorisé). Par exemple, &quot;abc-def&quot; et &quot;abc:def&quot; sont stockés sous la forme &quot;abc_def&quot; et écrasent les uns les autres.</li></ul> |
+| Nom (ou nom interne) | <ul><li>Cette information est l&#39;identifiant unique d&#39;un enregistrement dans une table. Cette valeur peut être mise à jour manuellement, généralement avec un nom généré.</li><li>Cet identifiant conserve sa valeur lorsqu&#39;il est déployé dans une autre instance d&#39;Adobe Campaign et ne doit pas être vide.</li></ul> | <ul><li>Changez le nom d&#39;enregistrement généré par Adobe Campaign si l&#39;objet est destiné à être déployé d&#39;un environnement à un autre.</li><li>Si un objet possède un attribut d&#39;espace de noms (par exemple, *schema*), cet espace de noms commun sera appliqué à tous les objets personnalisés créés. Certains espaces de noms réservés ne doivent pas être utilisés : *nms*, *xtk*, etc.  Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces).</li><li>Lorsqu&#39;un objet n&#39;a pas d&#39;espace de noms (*workflow* ou *delivery*, par exemple), cette notion d&#39;espace de noms est ajoutée sous la forme d&#39;un préfixe d&#39;un objet de nom interne : *namespaceMyObjectName*.</li><li>N’utilisez pas de caractères spéciaux tels que l’espace « », le point-virgule « ; » ou le tiret « - ». Tous ces caractères seront remplacés par un trait de soulignement « _ » (caractère autorisé). Par exemple, « abc-def » et « abc:def » seront stockés sous la forme de « abc_def » et s’écraseront mutuellement.</li></ul> |
 | Libellé | <ul><li>Le libellé est l&#39;identifiant d&#39;entreprise d&#39;un objet ou d&#39;un enregistrement dans Adobe Campaign.</li><li>Cet objet autorise les espaces et les caractères spéciaux.</li><li>Il ne garantit pas le caractère unique d&#39;un enregistrement.</li></ul> | <ul><li>Il est recommandé de déterminer une structure pour les libellés de vos objets.</li><li>Il s&#39;agit de la solution la plus conviviale pour identifier un enregistrement ou un objet pour un utilisateur d&#39;Adobe Campaign.</li></ul> |
 
 Dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), la clé primaire Adobe Campaign est un UUID généré automatiquement pour toutes les tables intégrées. Un UUID peut également être utilisé pour les tables personnalisées. [En savoir plus](../architecture/keys.md)
@@ -107,7 +107,7 @@ Cette clé personnalisée est la clé primaire d&#39;enregistrement réelle dans
 
 Pour la création d&#39;une table personnalisée, vous avez deux possibilités :
 * Combinaison d&#39;une clé générée automatiquement (id) et d&#39;une clé interne (personnalisée). Cette option est intéressante si votre clé système est une clé composite ou n&#39;est pas un entier. Avec Snowflake, les entiers ou les clés basées sur des chaînes offrent des performances supérieures dans les grands tableaux et dans la jointure avec d&#39;autres tableaux.
-* Utilisation de la clé primaire comme clé primaire du système externe. Cette solution est généralement préférable, car elle simplifie l&#39;approche d&#39;import et d&#39;export des données, avec une clé cohérente entre les différents systèmes. **Autouuid** doit être désactivée si la clé est nommée &quot;id&quot; et qu’elle doit être remplie avec des valeurs externes (et non pas de génération automatique).
+* Utilisation de la clé primaire comme clé primaire du système externe. Cette solution est généralement préférable, car elle simplifie l&#39;approche d&#39;import et d&#39;export des données, avec une clé cohérente entre les différents systèmes. **Autouuid** doit être désactivé si la clé est nommée « id » et qu’elle doit être remplie avec des valeurs externes (et non par génération automatique).
 
 >[!CAUTION]
 >
@@ -129,7 +129,7 @@ Le lien doit être défini en fonction des données réelles contenues dans vos 
 
 Attribuez au lien un nom cohérent avec celui de la table : le nom du lien doit permettre de comprendre à quoi correspond la table distante.
 
-Ne donnez pas le suffixe &quot;id&quot; au lien. Par exemple, nommez-le &quot;transaction&quot; plutôt que &quot;transactionId&quot;.
+N’utilisez pas de nom de lien comportant le suffixe « id ». Par exemple, appelez-le « transaction » plutôt que « transactionId ».
 
 Par défaut, Adobe Campaign crée un lien à l&#39;aide de la clé primaire de la table externe. Pour plus de clarté, il est préférable de définir explicitement la jointure dans la définition du lien.
 
@@ -183,7 +183,7 @@ Afin d&#39;optimiser les performances à tout moment, suivez les bonnes pratique
 
 ### Recommandations générales {#general-recommendations}
 
-* Évitez d’utiliser des opérations telles que &quot;CONTAINS&quot; dans les requêtes. Si vous savez ce qui est attendu et souhaitez être filtré, appliquez la même condition avec un opérateur &quot;ÉGAL À&quot; ou d’autres opérateurs de filtre spécifiques.
+* Évitez d’utiliser des opérations telles que « CONTAINS » dans les requêtes. Si vous savez ce qui est attendu et souhaitez appliquer un filtre, appliquez la même condition avec un opérateur « EQUAL TO » ou d’autres opérateurs de filtre spécifiques.
 * Veillez à ce que les processus tels que l&#39;import et l&#39;export se produisent en dehors des heures de bureau.
 * Vérifiez qu&#39;il existe un planning pour toutes les activités quotidiennes et respectez-le.
 * Si un ou plusieurs processus quotidiens échouent et s&#39;ils doivent être exécutés le même jour, vérifiez que des processus en conflit ne sont pas en cours d&#39;exécution lorsque le processus manuel est lancé, car cela peut avoir un impact sur les performances du système.
