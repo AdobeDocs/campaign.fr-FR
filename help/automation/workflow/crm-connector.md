@@ -5,7 +5,7 @@ feature: Workflows, Data Management
 role: User
 exl-id: 9da636a7-ed57-440f-8166-6982dce0213c
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '102'
 ht-degree: 100%
 
@@ -28,4 +28,4 @@ Sélectionnez le compte externe correspondant au CRM avec lequel vous souhaitez 
 
 ![](assets/crm_task_select_obj.png)
 
-Pour plus d&#39;informations sur les connecteurs CRM dans Adobe Campaign, consultez cette [section](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-crm/crm.html?lang=fr){target="_blank"}.
+Pour plus d’informations sur les connecteurs CRM dans Adobe Campaign, consultez cette [section](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-crm/crm.html?lang=fr){target="_blank"}.
