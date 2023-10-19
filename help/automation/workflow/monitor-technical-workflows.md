@@ -6,9 +6,9 @@ feature: Workflows
 role: Admin
 exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '497'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -36,15 +36,15 @@ Selon le workflow technique, suivez les étapes détaillées ci-après pour vér
 
 Pour comprendre la fonction de chaque workflow technique, consultez cette [section](technical-workflows.md).
 
-Pour **[!UICONTROL Workflow de nettoyage de la base (cleanup)]**:
+Pour le **[!UICONTROL Workflow de nettoyage de la base de données (« cleanup »)]** :
 
 Consultez le journal des logs pour vérifier que le temps écoulé reste relativement constant et n’affecte pas d’autres workflows.
 
-Pour **[!UICONTROL Workflow de tracking (&#39;tracking&#39;)]**:
+Pour le **[!UICONTROL Workflow de tracking (« tracking »)]** :
 
 Vérifiez que le workflow de Tracking s&#39;exécute comme prévu (une fois par heure par défaut) et que le journal des logs n&#39;indique pas d&#39;erreurs récurrentes. Voir à ce propos cette [section](delivery.md).
 
-Pour **[!UICONTROL Mise à jour de délivrabilité (&#39;deliverabilityUpdate&#39;)]**:
+Pour la **[!UICONTROL Mise à jour de la délivrabilité (« deliverabilityUpdate »)]** :
 
 1. Vérifiez que le workflow **[!UICONTROL Mise à jour délivrabilité]** s’exécute et se termine correctement tous les jours.
 1. Dans le journal des logs, vérifiez que les règles sont mises à jour régulièrement.
@@ -64,7 +64,7 @@ En cas de problème, une alerte doit être générée et envoyée au bon groupe.
 
 Vérifiez que chaque opérateur a une adresse email valide.
 
-Tout workflow qui doit être en cours d’exécution pour que la plateforme reste opérationnelle, comme les imports de données quotidiens, doit être déclaré comme &quot;Production&quot; (case à cocher) et apparaître en gras.
+Tous les workflows devant être en état d’exécution pour que la plateforme soit opérationnelle (tels que les imports de données) doivent être déclarés comme des workflows de « Production » (case à cocher) et apparaître en gras.
 
 ## Liste de maintenance des workflows {#workflow-maintenance-list}
 
