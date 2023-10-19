@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '713'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -18,23 +18,23 @@ Un modèle de données d’usine est fourni avec Adobe Campaign. Cette section 
 
 La structure de base du modèle de données Adobe Campaign peut être décrite comme suit :
 
-* **Table des destinataires**: le modèle de données repose sur une table principale qui est par défaut la table des destinataires (**nmsRecipient**). Cette table enregistre tous les profils marketing. En savoir plus sur la table des destinataires dans [cette section](#ootb-profiles).
+* **Table des destinataires** : le modèle de données repose sur une table principale qui est par défaut la table des destinataires (**nmsRecipient**). Cette table enregistre tous les profils marketing. En savoir plus sur la table des destinataires dans [cette section](#ootb-profiles).
 
-* **Table de diffusion**: cette table stocke un enregistrement par action de diffusion. Généralement, il s&#39;agit de la table de diffusion (**NmsDelivery**). dans cette table représente une action de diffusion ou un modèle de diffusion. Elle contient tous les paramètres nécessaires pour effectuer des diffusions telles que la cible, le contenu, etc. Chaque enregistrement est mis à jour plusieurs fois pour refléter la progression de la diffusion.
+* **Table de diffusion** : cette table stocke un enregistrement par action de diffusion. Généralement, il s’agit de la table de diffusion (**NmsDelivery**). de cette table représente une action de diffusion ou un modèle de diffusion. Elle contient tous les paramètres nécessaires pour effectuer des diffusions telles que la cible, le contenu, etc. Chaque enregistrement est mis à jour plusieurs fois pour refléter la progression de la diffusion.
 
 * **Tables de logs** : ces tables stockent tous les logs associés à l&#39;exécution des campagnes.
 
-   * Les logs de diffusion sont tous les messages envoyés aux destinataires ou aux appareils sur tous les canaux. Le tableau des logs de diffusion principal (**NmsBroadLogRcp**) contient les logs de diffusion pour tous les destinataires.
-   * La variable **nmsBroadlog** est le tableau le plus volumineux du système. Il stocke un enregistrement par message envoyé et ces enregistrements sont insérés, mis à jour afin de suivre le statut de la diffusion, puis supprimés lorsque l&#39;historique est purgé.
-   * La table principale des logs de tracking (**NmsTrackingLogRcp**) stocke les logs de tracking pour tous les destinataires. Les logs de tracking se rapportent aux réactions des destinataires, telles que les ouvertures d&#39;e-mail et les clics. Chaque réaction correspond à un log de tracking.
+   * Les logs de diffusion sont tous les messages envoyés aux destinataires ou aux appareils sur tous les canaux. La table principale des logs de diffusion (**NmsBroadLogRcp**) contient les logs de diffusion de tous les destinataires.
+   * La table **nmsBroadlog** est la plus volumineuse du système. Elle stocke un enregistrement par message envoyé. Les enregistrements sont insérés et mis à jour, afin de suivre le statut de la diffusion, puis supprimés lorsque l’historique est purgé.
+   * La table principale des logs de tracking (**NmsTrackingLogRcp**) stocke les logs de tracking pour tous les destinataires. Les logs de tracking se rapportent aux réactions des destinataires, telles que les ouvertures d’e-mail et les clics. Chaque réaction correspond à un log de tracking.
 
   Les mpgs de diffusion et de tracking sont supprimés après une certaine période, spécifiée dans Adobe Campaign et modifiable. Il est donc vivement recommandé d&#39;exporter les logs de façon régulière.
 
-* **Tables techniques**: rassemble les données techniques utilisées pour le processus applicatif, y compris les opérateurs et les droits utilisateurs (**xtkGroup**), sessions utilisateurs (**xtkSessionInfo**), dossiers dans l’arborescence de l’explorateur (**XtkFolder**), workflows (**xtkWorkflow**), etc.
+* **Tables techniques** : rassemble les données techniques utilisées pour le processus applicatif, y compris les opérateurs/opératrices et les droits d’utilisation (**xtkGroup**), les sessions d’utilisation (**xtkSessionInfo**), les dossiers de l’arborescence de l’explorateur (**XtkFolder**), les workflows (**xtkWorkflow**), etc.
 
 >[!NOTE]
 >
->Pour accéder à la description de chaque tableau, accédez à la section **Administration > Paramétrage > Schémas de données**, sélectionnez une ressource dans la liste, puis cliquez sur l’icône **Documentation** .
+>Pour obtenir la description de chaque table, accédez à **Administration > Configuration > Schémas de données**, sélectionnez une ressource dans la liste et cliquez sur l’onglet **Documentation**.
 
 Lorsque vous commencez à utiliser Adobe Campaign, vous devez évaluer le modèle de données par défaut pour déterminer quelle table est adaptée au stockage de vos données marketing.
 
