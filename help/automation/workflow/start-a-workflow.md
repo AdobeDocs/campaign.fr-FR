@@ -7,13 +7,13 @@ level: Beginner
 role: User, Admin
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1145'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Démarrer, mettre en pause, arrêter un workflow {#starting-a-workflow}
+# Démarrer, mettre en pause et arrêter un workflow {#starting-a-workflow}
 
 Un workflow est toujours démarré manuellement. Au démarrage, il peut toutefois rester inactif en fonction des informations spécifiées par le biais d&#39;un planificateur (voir [Planificateur](scheduler.md)) ou d&#39;une planification d&#39;activité.
 
@@ -81,7 +81,7 @@ Le bouton **[!UICONTROL Actions]** de la barre d’outils permet d’accéder à
   Cette action crée un nouveau modèle de workflow à partir du workflow sélectionné. Vous devez indiquer son dossier d&#39;enregistrement (dans le champ **[!UICONTROL Dossier]**).
 
 
-## Bonnes pratiques d&#39;exécution des workflows {#workflow-execution-best-practices}
+## Bonnes pratiques relatives à l’exécution des workflows {#workflow-execution-best-practices}
 
 Améliorez la stabilité de votre instance en implémentant les bonnes pratiques suivantes :
 
