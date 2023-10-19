@@ -6,7 +6,7 @@ role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '636'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Découvrez l’architecture de la messagerie transactionnelle sur [cette page](.
 
 ## Définition des autorisations {#mc-permissions}
 
-Pour créer des utilisateurs pour les instances d&#39;exécution Message Center hébergées sur Adobe Cloud, vous devez contacter l&#39;assistance client Adobe. Les utilisateurs de Message Center sont des opérateurs spécifiques qui nécessitent des autorisations dédiées pour accéder aux dossiers &#39;Evénements temps réel&#39; (nmsRtEvent).
+Pour créer des utilisateurs et des utilisatrices pour les instances d’exécution Message Center hébergées sur Adobe Cloud, vous devez contacter l’assistance clientèle Adobe. Les utilisateurs et les utilisatrices de Message Center sont des opérateurs et opératrices spécifiques qui nécessitent des autorisations dédiées pour accéder aux dossiers ’Evénements temps réel’ (nmsRtEvent).
 
 ## Extensions de schéma  {#mc-schema-ext}
 
