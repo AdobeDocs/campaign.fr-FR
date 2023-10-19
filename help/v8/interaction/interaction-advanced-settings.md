@@ -5,7 +5,7 @@ feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '114'
 ht-degree: 100%
 
@@ -17,9 +17,9 @@ Le paramétrage du module Interaction de Campaign est réservé à des utilisate
 
 ![](../assets/do-not-localize/book.png) Découvrez comment utiliser des données contextuelles supplémentaires dans les offres [sur cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/additional-data.html?lang=fr){target="_blank"}.
 
-![](../assets/do-not-localize/book.png) Découvrez comment enrichir les critères d&#39;éligibilité de vos offres [sur cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=fr){target="_blank"}.
+![](../assets/do-not-localize/book.png) Découvrez comment enrichir les critères d’éligibilité de vos offres [sur cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=fr){target="_blank"}.
 
-![](../assets/do-not-localize/book.png) Découvrez les étapes de la création d&#39;un environnement de test [sur cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/creating-a-test-environment.html?lang=fr){target="_blank"}.
+![](../assets/do-not-localize/book.png) Découvrez les étapes de la création d’un environnement de test [sur cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/creating-a-test-environment.html?lang=fr){target="_blank"}.
 
-![](../assets/do-not-localize/book.png) Découvrez comment utiliser des raccordements pour modifier le comportement standard du moteur d&#39;offres [sur cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/hooks.html?lang=fr){target="_blank"}.
+![](../assets/do-not-localize/book.png) Découvrez comment utiliser des points d’extension pour modifier le comportement standard du moteur d’offres [sur cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/hooks.html?lang=fr){target="_blank"}.
 
