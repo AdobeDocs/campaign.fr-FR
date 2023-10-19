@@ -6,9 +6,9 @@ role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2574'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Lorsque vous créez ou étendez un schéma, vous devez créer ou modifier les fo
 
 Un formulaire de saisie vous permet de modifier une instance associée à un schéma de données à partir de la console cliente Adobe Campaign. Le formulaire est identifié par ses nom et espace de noms.
 
-La clé d&#39;identification d&#39;un formulaire est une chaîne construite avec l&#39;espace de noms et le nom séparés par le caractère &#39;:&#39; par exemple &quot;cus:contact&quot;.
+La clé d’identification d’un formulaire correspond à une chaîne constituée de l’espace de noms et du nom séparés par deux points, par exemple « cus:contact ».
 
 ## Modification des formulaires de saisie
 
