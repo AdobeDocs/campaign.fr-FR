@@ -7,9 +7,9 @@ Role: User
 Level: Experienced
 exl-id: a1e08d57-0387-4802-b447-f6d9ad87072a
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '393'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Avant de configurer l&#39;activité, vérifiez que les prérequis suivants sont 
    L&#39;activité permet d&#39;utiliser les variables suivantes dans le script :
 
    * **activity.tableName** : nom SQL de la table de travail sortante.
-   * **task.incomingTransitionByName(&#39;name&#39;).tableName**: nom SQL de la table de travail transportée par la transition entrante à utiliser (la transition est identifiée par son nom).
+   * **task.incomingTransitionByName(&#39;name&#39;).tableName** : nom SQL de la table de travail associée à la transition entrante à utiliser (la transition est identifiée par son nom).
 
      >[!NOTE]
      >
