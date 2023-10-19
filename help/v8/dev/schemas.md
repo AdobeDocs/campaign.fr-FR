@@ -6,9 +6,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1269'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -184,7 +184,7 @@ Exemple:
 </key>
 ```
 
-Dans cet exemple, au lieu de laisser la variable **@autopk** ou le **@autouuid** crée une clé primaire par défaut appelée &quot;id&quot; que nous spécifions notre propre clé primaire &quot;householdId&quot;.
+Dans cet exemple, au lieu de laisser l’attribut **@autopk** ou **@autouuid** créer une clé primaire par défaut nommée « id », on définit ici la clé primaire « householdId ».
 
 >[!CAUTION]
 >
