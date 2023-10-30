@@ -5,10 +5,10 @@ description: En savoir plus sur l’activité de workflow de chargement (fichier
 feature: Workflows, Data Management Activity
 role: User
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
-source-wordcount: '1146'
-ht-degree: 100%
+source-git-commit: d946d4a50a4fc13e848b22ee87b02a10b7dfd2ad
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -51,6 +51,10 @@ Vous pouvez alors modifier le formatage général du fichier ainsi que le format
 Le formatage général du fichier permet de définir la manière dont seront reconnues les colonnes (encodage du fichier, séparateurs utilisés, etc.)
 
 Le formatage des colonnes permet de définir le traitement des valeurs de chaque colonne :
+
+>[!NOTE]
+>
+>Vous pouvez ajouter autant de colonnes que vous le souhaitez. La longueur maximale des valeurs de chaque colonne est déterminée par le type de données choisi.
 
 * **[!UICONTROL Ignorer la colonne]** : permet de ne pas traiter cette colonne lors du chargement des données.
 * **[!UICONTROL Type de données]** : permet de spécifier le type de données attendu dans la colonne.
