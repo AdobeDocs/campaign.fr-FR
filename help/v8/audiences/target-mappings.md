@@ -5,9 +5,9 @@ feature: Audiences, Profiles
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5256fc15-1878-4064-9c75-7876a3826b83
-source-git-commit: db27abf860b0744a4120166c68e2cc2ae8a3d172
-workflow-type: tm+mt
-source-wordcount: '373'
+source-git-commit: 4c787abbf9b13c08263e602930bc532d73e08a5a
+workflow-type: ht
+source-wordcount: '386'
 ht-degree: 100%
 
 ---
@@ -32,6 +32,8 @@ Adobe Campaign est fourni avec les mappings de ciblage intégrés suivants :
 | Abonnements des visiteurs | Diffuser à des visiteurs abonnés à un service d&#39;information | nms:visitorSub |
 | Les opérateurs | Diffuser aux opérateurs Adobe Campaign | nms:operator |
 | Fichier externe | Diffuser depuis un fichier contenant les toutes informations nécessaires à la diffusion | Aucun schéma associé, aucune cible renseignée |
+| Applications abonnés | Diffuser aux destinataires abonnés à une application | nms:appSubscriptionRcp |
+
 
 ## Créer un mapping de ciblage {#new-mapping}
 
