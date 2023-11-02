@@ -2,11 +2,11 @@
 title: Notes de mise à jour de Campaign v8 2021
 description: Liste des fonctionnalités et améliorations des versions 2021 de Campaign v8
 feature: Release Notes
-role: Admin, Developer, User
-level: Beginner, Intermediate, Experienced
+role: User
+level: Beginner
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
-source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
-workflow-type: ht
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+workflow-type: tm+mt
 source-wordcount: '1590'
 ht-degree: 100%
 

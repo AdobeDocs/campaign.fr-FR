@@ -3,9 +3,9 @@ title: Comprendre la description des événements
 description: Découvrez comment les événements de message transactionnel sont gérés dans Adobe Campaign Classic à l’aide des méthodes SOAP.
 feature: Transactional Messaging
 role: User
-level: Beginner, Intermediate
+level: Intermediate
 exl-id: 2f679d1c-4eb6-4b3c-bdc5-02d3dea6b7d3
-source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 100%

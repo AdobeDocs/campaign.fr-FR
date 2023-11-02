@@ -3,9 +3,10 @@ title: Envoi de notification push avec Adobe Campaign
 description: Prise en main des notifications push dans Campaign
 feature: Push
 role: Data Engineer
-level: Beginner
+level: Intermediate
 badge: label="Disponibilité limitée" type="Informative"
-source-git-commit: 441310dc1cdcb96296c0cbe5bf3fb7cd1502709f
+exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 100%

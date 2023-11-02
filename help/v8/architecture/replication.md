@@ -3,10 +3,10 @@ title: Workflows techniques et réplication des données
 description: Workflows techniques et réplication des données
 feature: Workflows, FFDA
 role: Developer
-level: Beginner, Intermediate, Experienced
+level: Intermediate
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: ht
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Ce workflow réplique les données XS pour un compte externe donné.
 
 Ces workflows techniques sont disponibles à partir du nœud **[!UICONTROL Administration > Exploitation > Workflows techniques > Réplication FFDA complète]** de l&#39;explorateur Campaign. **Ils ne doivent pas être modifiés.**
 
-Si nécessaire, vous pouvez lancer manuellement la synchronisation des données. Pour ce faire, cliquez avec le bouton droit de la souris sur l&#39;activité **Planificateur** et sélectionnez **Traitement anticipé de la (des) tâche(s)**.
+Si nécessaire, vous pouvez lancer manuellement la synchronisation des données. Pour ce faire, cliquez avec le bouton droit de la souris sur l’activité **Planificateur** et sélectionnez **Exécuter la ou les tâches en attente maintenant**.
 
 ## Réplication des données {#data-replication}
 

@@ -2,13 +2,13 @@
 title: Gestion des quarantaines dans Campaign
 description: Comprendre la gestion des quarantaines dans Adobe Campaign
 feature: Profiles, Monitoring
-role: User, Developer
-level: Beginner, Intermediate
+role: User, Data Engineer
+level: Beginner
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: b783b1444457b3204fea35b613582642499acf65
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1235'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -22,11 +22,11 @@ Lors de la mise en quarantaine de leur adresse ou numéro de téléphone, les de
 
 La **quarantaine** s&#39;applique uniquement à une **adresse**, un **numéro de téléphone** ou un **jeton d&#39;appareil**, mais pas au profil lui-même. Par exemple, un profil dont l&#39;adresse e-mail est en quarantaine peut mettre à jour son profil et saisir une nouvelle adresse, puis être ciblé de nouveau par des actions de diffusion. De même, si deux profils ont le même numéro de téléphone, ils seront tous deux affectés si le numéro est mis en quarantaine. Les adresses ou numéros de téléphone mis en quarantaine s&#39;affichent dans les [logs d&#39;exclusion](#delivery-quarantines) (pour une diffusion) ou dans la [liste de quarantaine](#non-deliverable-bounces) (pour l&#39;ensemble de la plateforme).
 
-D&#39;un autre côté, les profils peuvent se trouver dans la **liste bloquée** comme après une désinscription (opt-out), pour un canal donné : cela signifie qu&#39;ils ne sont plus ciblés par aucun d&#39;eux. Ainsi, si un profil de la liste bloquée pour le canal e-mail comporte deux adresses e-mail, les deux adresses seront exclues de la diffusion. Vous pouvez vérifier si un profil est sur liste bloquée pour un ou plusieurs canaux dans la section **[!UICONTROL Ne plus contacter]** de l&#39;onglet **[!UICONTROL Général]** du profil. [En savoir plus](../audiences/view-profiles.md)
+D&#39;un autre côté, les profils peuvent se trouver dans la **liste bloquée** comme après une désinscription (opt-out), pour un canal donné : cela signifie qu&#39;ils ne sont plus ciblés par aucun d&#39;eux. Ainsi, si un profil de la liste bloquée pour le canal e-mail comporte deux adresses e-mail, les deux adresses seront exclues de la diffusion. Vous pouvez vérifier si un profil est sur liste bloquée pour un ou plusieurs canaux dans la section **[!UICONTROL Ne plus contacter]** de l’onglet **[!UICONTROL Général]** du profil. [En savoir plus](../audiences/view-profiles.md)
 
 >[!NOTE]
 >
->Lorsque les destinataires signalent votre message comme spam ou répondent à un message SMS avec un mot-clé tel que « STOP », leur adresse ou numéro de téléphone est mis en quarantaine comme **[!UICONTROL Placé sur la liste bloquée]**. Leur profil est mis à jour en conséquence.
+>Lorsque les destinataires signalent votre message comme du spam ou répondent à un message SMS avec un mot-clé tel que &quot;STOP&quot;, leur adresse ou numéro de téléphone est mis en quarantaine comme **[!UICONTROL Placé sur la liste bloquée]**. Leur profil est mis à jour en conséquence.
 
 <!--For the email channel, email addresses are quarantined. For the mobile app channel, device tokens are quarantined. For the SMS channel, phone numbers are quarantined.?-->
 
@@ -118,7 +118,7 @@ Pour ce faire, créez un workflow et ajoutez une requête sur votre table de qua
 
 Vous trouverez ci-dessous les instructions recommandées pour cette requête :
 
-* **Texte d’erreur (texte de la quarantaine)** contenant « Momen_Code10_InvalidRecipient »
+* **Texte d&#39;erreur (texte de la quarantaine)** contenant « Momen_Code10_InvalidRecipient »
 * **Domaine d’e-mail (@domain)** égal à domain1.com OU **domaine d’email (@domain)** égal à domain2.com OU **domaine d’email (@domain)** égal à domain3.com
 * **Mise à jour du statut (@lastModified)** le ou après le JJ/MM/AAAA à HH:MM:SS AM
 * **Mise à jour du statut (@lastModified)** le ou avant le JJ/MM/AAAA à HH:MM:SS PM

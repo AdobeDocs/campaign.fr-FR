@@ -3,9 +3,9 @@ title: Utilisation de Campaign et de bases de données externes (FDA)
 description: Découvrez comment utiliser Campaign et des bases de données externes
 feature: Federated Data Access
 role: Admin
-level: Beginner, Intermediate
+level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 100%

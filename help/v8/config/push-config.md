@@ -4,11 +4,11 @@ description: Découvrez comment intégrer les SDK Android et iOS de Campaign ave
 version: v8
 feature: Push
 role: Admin, Developer
-level: Intermediate, Experienced
+level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 100%
@@ -889,9 +889,9 @@ A ce niveau, vous devez effectuer les opérations suivantes :
 
   Si vous souhaitez que l&#39;application mobile affiche une image, définissez la valeur de la catégorie dans Adobe Campaign, par exemple &quot;image&quot;. Dans l&#39;application mobile, vous créez une extension de notification avec le paramètre **UNNotificationExtensionCategory** ayant pour valeur &quot;image&quot;. Lorsque la notification push est reçue sur l&#39;appareil, l&#39;extension est appelée selon la valeur de la catégorie définie.
 
-* Définir le style de la notification
+* Définir la mise en page de la notification
 
-  Vous devez définir le style avec les widgets adéquats. Pour une image, c&#39;est le widget **UIImageView**.
+  Vous devez définir une mise en page avec les widgets adéquats. Pour une image, c&#39;est le widget **UIImageView**.
 
 * Afficher le contenu multimédia
 
