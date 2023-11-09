@@ -5,10 +5,10 @@ type: Event
 title: Notes techniques d’Adobe Campaign
 description: Notes techniques de Campaign
 breadcrumb-title: Notes techniques de Campaign
-source-git-commit: 47fc1ee7e0a1cb96d66151cf79137c80ef2d67d5
-workflow-type: ht
-source-wordcount: '56'
-ht-degree: 100%
+source-git-commit: 11330ed8e79ec256b158747914f178b8b6857a33
+workflow-type: tm+mt
+source-wordcount: '61'
+ht-degree: 91%
 
 ---
 
@@ -25,4 +25,5 @@ ht-degree: 100%
    + [Navigateurs Internet](upgrades/browsers.md)
    + [Mises à niveau du système en 2023](upgrades/tech-stack-upgrade.md)
    + [Dépréciation de la console cliente 32 bits](upgrades/console.md)
+   + [Modifications à venir du canal de notification push](upgrades/push-technote.md)
 + [Panneau de contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr)
