@@ -5,10 +5,10 @@ feature: Workflows, FFDA
 role: Developer
 level: Intermediate
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
-workflow-type: ht
-source-wordcount: '402'
-ht-degree: 100%
+source-git-commit: f807963a7640773ac18d49999b561f2f3b894d7f
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 96%
 
 ---
 
@@ -48,7 +48,7 @@ Identifiez les bases de données utilisées par Adobe Campaign v8, les raisons
 
 ### Politiques de réplication de données {#data-replication-policies}
 
-Les politiques de réplication sont basées sur la taille des tables. Certaines tables sont répliquées en temps réel. D&#39;autres le sont sur une base horaire. Certaines tables sont mises à jour de manière incrémentielle tandis que d&#39;autres sont remplacées.
+Les politiques de réplication sont basées sur la taille des tables. Certaines tables sont répliquées en temps réel, d’autres sur une base horaire. Certaines tables sont mises à jour de manière incrémentielle tandis que d&#39;autres sont remplacées.
 
 Outre le workflow technique intégré **Répliquer les tables de référence**, vous pouvez forcer la réplication des données dans vos workflows.
 
