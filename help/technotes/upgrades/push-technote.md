@@ -4,10 +4,10 @@ title: Modifications à venir du canal de notification push
 description: Modifications à venir du canal de notification push
 hide: true
 hidefromtoc: true
-source-git-commit: 4072421cd8f0f3ab3b15c4a475428a59503aa955
+source-git-commit: 9ff84e523e7de6f1d6bb4e8cd193d19743fcf90c
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 25%
+source-wordcount: '810'
+ht-degree: 23%
 
 ---
 
@@ -69,7 +69,7 @@ Pour migrer votre environnement vers HTTP v1, procédez comme suit sur vos serve
 
 1. Cliquez sur **[!UICONTROL Terminer]**, puis sur **[!UICONTROL Enregistrer]**.
 
-Vous trouverez ci-dessous les noms de payload FCM pour personnaliser davantage votre notification push :
+Vous trouverez ci-dessous les noms de payload FCM pour personnaliser davantage votre notification push. Ces options sont détaillées [here](#fcm-apps).
 
 | Type de message | Élément de message configurable (nom de payload FCM) | Options configurables (nom de payload FCM) |
 |:-:|:-:|:-:|
@@ -79,7 +79,7 @@ Vous trouverez ci-dessous les noms de payload FCM pour personnaliser davantage v
 
 >[!NOTE]
 >
->Le passage à l’API HTTP v1 s’applique à toutes les nouvelles diffusions. Les diffusions en reprise, en cours et en cours d’utilisation utilisent toujours l’API HTTP (héritée).
+>Une fois ces modifications appliquées à tous vos serveurs, toutes les nouvelles diffusions de notifications push vers les appareils Android utilisent l’API HTTP v1. Les diffusions push existantes en reprise, en cours et en cours d’utilisation utilisent toujours l’API HTTP (héritée).
 
 ### Quel est l’impact pour mes applications Android ? {#fcm-apps}
 
@@ -89,6 +89,7 @@ Cependant, avec HTTP v1, vous pouvez personnaliser davantage votre notification 
 
 ![](assets/android-push-additional-options.png)
 
+Vous pouvez ainsi :
 
 * Utilisez la variable **[!UICONTROL Ticker]** pour définir le texte de la coche de votre notification.
 * Utilisez la variable **[!UICONTROL Image]** pour définir l’URL de l’image à afficher dans votre notification.
