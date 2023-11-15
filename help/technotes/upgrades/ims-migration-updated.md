@@ -3,9 +3,9 @@ title: Migration des utilisateurs et utilisatrices techniques vers Adobe Develo
 description: Découvrez comment migrer les opérateurs et opératrices techniques Campaign vers un compte technique sur Adobe Developer Console.
 hide: true
 hidefromtoc: true
-source-git-commit: 6655a62e18ea14e8ae126dfec88a17dd04c7b488
+source-git-commit: 87d155cbc2a5c6f4cbeeadb6ae7ae8aa3166a321
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1584'
 ht-degree: 20%
 
 ---
@@ -19,32 +19,32 @@ Un opérateur ou une opératrice technique est un profil utilisateur de Campaign
 
 ## Cela vous concerne-t-il ?{#ims-impacts}
 
-Tous les clients de Campaign qui effectuent des appels API depuis un système externe à Campaign vers leur instance Campaign Marketing ou l&#39;instance de Message Center en temps réel devront migrer le ou les opérateurs techniques vers un ou plusieurs comptes techniques via la console Adobe Developer, comme décrit ci-dessous.
+Si vous effectuez des appels d&#39;API depuis un système externe à Campaign vers l&#39;instance Campaign Marketing ou l&#39;instance Real Time Message Center, vous devez migrer le ou les opérateurs techniques vers un ou plusieurs comptes techniques via la console Adobe Developer, comme décrit ci-dessous.
 
 Cette modification s’applique à partir de Campaign v8.5.
 
 
 ## Processus de migration {#ims-migration-procedure}
 
-Suivez les étapes ci-dessous pour créer un ou plusieurs comptes techniques dans la console Adobe Developer, puis utilisez ces nouveaux comptes afin de pouvoir modifier les méthodes d’authentification de tous vos systèmes externes qui effectuent des appels API dans Adobe Campaign.
+Suivez les étapes ci-dessous pour créer un ou plusieurs comptes techniques dans la console Adobe Developer, puis utilisez ces comptes nouvellement créés pour pouvoir modifier les méthodes d’authentification de tous vos systèmes externes qui effectuent des appels d’API dans Adobe Campaign.
 
 Voici un aperçu des étapes :
 
 * Création d’un projet dans la console Adobe Developer
 * Affectation des API appropriées au projet nouvellement créé
 * Octroi des profils de produit Campaign nécessaires au projet
-* Mise à jour des API côté client pour utiliser les informations d’identification du compte technique nouvellement créées
-* Supprimer les opérateurs techniques hérités de l’instance Campaign
+* Mise à jour de vos API pour utiliser les informations d’identification du compte technique nouvellement créées
+* Supprimer les opérateurs techniques hérités de votre instance Campaign
 
 ### Prérequis pour la migration{#ims-migration-prerequisites}
 
-Pour pouvoir créer les comptes techniques qui seront utilisés pour remplacer les opérateurs techniques, la condition préalable est que les profils de produit Campaign appropriés existent dans le Admin Console pour toutes les instances Campaign doit être validée. Vous pouvez en savoir plus sur les profils de produit dans Adobe Console dans [Documentation de la console Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
+Pour pouvoir créer les comptes techniques qui remplacent les opérateurs techniques, la condition préalable à la validation des profils de produit Campaign appropriés dans le Admin Console pour toutes les instances Campaign doit être remplie. Vous pouvez en savoir plus sur les profils de produit dans Adobe Console dans [Documentation de la console Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
 
-Pour les appels d’API dans les instances Message Center, un profil de produit doit avoir été créé pendant la mise à niveau vers Campaign v8.5 ou la mise en service de l’instance. Ce profil de produit sera nommé :
+Pour les appels API dans les instances Message Center, un profil de produit doit avoir été créé lors de la mise à niveau vers Campaign v8.5 ou de la mise en service de l&#39;instance. Ce profil de produit est nommé :
 
 `campaign - <your campaign instance> - messagecenter`
 
-Si vous avez déjà utilisé l’authentification IMS pour l’accès des utilisateurs à Campaign, les profils de produit requis pour les appels API doivent déjà exister dans le Admin Console. Si vous utilisez un groupe d’opérateurs personnalisé dans Campaign pour les appels d’API vers l’instance marketing, vous souhaiterez créer ce profil de produit dans le Admin Console.
+Si vous avez déjà utilisé l’authentification IMS pour l’accès des utilisateurs à Campaign, les profils de produit requis pour les appels API doivent déjà exister dans le Admin Console. Si vous utilisez un groupe d’opérateurs personnalisé dans Campaign pour les appels d’API vers l’instance Marketing, vous devez créer ce profil de produit dans le Admin Console.
 
 Dans d’autres cas, vous devez contacter votre gestionnaire de transition d’Adobe afin que les équipes techniques d’Adobe puissent migrer vos groupes d’opérateurs existants et vos droits nommés vers les profils de produit dans le Admin Console.
 
@@ -67,7 +67,7 @@ Pour créer un projet, cliquez sur **Créer un projet** dans l’écran principa
 Vous pouvez utiliser la variable **Modifier le projet** pour renommer ce projet.
 
 
-### Étape 2 - Ajout d’API à votre projet{#ims-migration-step-2}
+### Étape 2 - Ajout d’API à votre projet {#ims-migration-step-2}
 
 Dans l’écran du projet nouvellement créé, ajoutez les API nécessaires pour pouvoir utiliser ce projet comme compte technique pour vos appels d’API à Adobe Campaign.
 
@@ -131,7 +131,7 @@ Dans le **Configuration de l’API** , l’authentification OAuth serveur à ser
 Vous revenez alors à l’écran Projet dans l’API de gestion I/O du projet nouvellement créé. Cliquez sur le nom du projet dans le chemin de navigation en haut de l’écran pour revenir à la page principale Détails du projet.
 
 
-### Étape 6 - Vérification de la configuration du projet{#ims-migration-step-6}
+### Étape 6 - Vérification de la configuration du projet {#ims-migration-step-6}
 
 Vérifiez votre projet pour vous assurer qu’il ressemble à ce qui suit avec la méthode **API de gestion I/O** et **API ADOBE CAMPAIGN** visible dans la section Produits et services et **OAuth serveur à serveur** dans la section Informations d’identification .
 
@@ -203,10 +203,7 @@ Une fois le processus de migration réalisé et validé, les appels Soap sont mi
 
 
 
-
-
-
-### Étape 9 - (facultative) Mettre à jour l’opérateur Compte technique dans la console cliente Campaign {#ims-migration-step-9}
+### Etape 9 - (facultative) Mettre à jour l&#39;opérateur du compte technique dans la console cliente Campaign {#ims-migration-step-9}
 
 Cette étape est facultative et disponible uniquement dans la ou les instances marketing, et non dans une instance Message Center. Si des autorisations de dossiers spécifiques ou des droits nommés ont été définis pour l’opérateur technique, et non par le ou les groupes d’opérateurs attribués. Vous devez maintenant mettre à jour l’utilisateur de compte technique nouvellement créé dans le Admin Console pour accorder les autorisations de dossier ou les droits nommés requis.
 
@@ -238,7 +235,7 @@ Notez que l’utilisateur du compte technique n’existera PAS dans Adobe Campai
 >Le nouvel opérateur ou la nouvelle opératrice technique doit avoir effectué au moins un appel API à ajouter à la console cliente Campaign.
 >
 
-### Étape 10 - Suppression de l’ancien opérateur technique d’Adobe Campaign {#ims-migration-step-10}
+### Étape 10 - Supprimer l’ancien opérateur technique d’Adobe Campaign {#ims-migration-step-10}
 
 Une fois que vous avez migré tous les systèmes tiers pour utiliser le nouveau compte technique avec authentification IMS, vous pouvez supprimer l&#39;ancien opérateur technique de la console cliente Campaign.
 
