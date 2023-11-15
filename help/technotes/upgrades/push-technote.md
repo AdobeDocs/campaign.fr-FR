@@ -2,12 +2,17 @@
 product: campaign
 title: Modifications à venir du canal de notification push
 description: Modifications à venir du canal de notification push
+feature: Push
+role: Admin
+level: Experienced
+badge-v7: label="v7" type="Informative" tooltip="S’applique également à Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="S’applique à Campaign v8"
 hide: true
 hidefromtoc: true
-source-git-commit: 5ed6a5c9c458381ef701428aeab146afe4788d58
+source-git-commit: 65b8d84e600e1814484fa81fb814475c0a8b9296
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 21%
+source-wordcount: '869'
+ht-degree: 23%
 
 ---
 
