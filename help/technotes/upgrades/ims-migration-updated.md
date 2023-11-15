@@ -3,7 +3,7 @@ title: Migration des utilisateurs et utilisatrices techniques vers Adobe Develo
 description: Découvrez comment migrer les opérateurs et opératrices techniques Campaign vers un compte technique sur Adobe Developer Console.
 hide: true
 hidefromtoc: true
-source-git-commit: 4863679106dec92d6b63f63cec0911738853dc04
+source-git-commit: 6655a62e18ea14e8ae126dfec88a17dd04c7b488
 workflow-type: tm+mt
 source-wordcount: '1603'
 ht-degree: 20%
@@ -66,9 +66,10 @@ Pour créer un projet, cliquez sur **Créer un projet** dans l’écran principa
 
 Vous pouvez utiliser la variable **Modifier le projet** pour renommer ce projet.
 
-Dans l’écran du projet nouvellement créé, ajoutez les API nécessaires pour pouvoir utiliser ce projet comme compte technique pour vos appels d’API à Adobe Campaign.
 
 ### Étape 2 - Ajout d’API à votre projet{#ims-migration-step-2}
+
+Dans l’écran du projet nouvellement créé, ajoutez les API nécessaires pour pouvoir utiliser ce projet comme compte technique pour vos appels d’API à Adobe Campaign.
 
 Pour ajouter des API à votre projet, procédez comme suit :
 
