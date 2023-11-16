@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Dernière version{#latest-release}
 
-Adobe Campaign bénéficie de mises à jour régulières. Cette fréquence régulière de mise à jour a pour but de vous fournir les dernières fonctionnalités et améliorations. Vous bénéficiez ainsi d’un environnement sécurisé et d’une expérience optimale de notre produit. Adobe recommande vivement à tous les clients et clientes d’effectuer la mise à niveau vers la dernière version.
+Adobe Campaign fait l&#39;objet de mises à jour régulières. Cette fréquence régulière de mise à jour a pour but de vous fournir les dernières fonctionnalités et améliorations. Vous bénéficiez ainsi d&#39;un environnement sécurisé et d&#39;une expérience optimale avec notre produit. Adobe recommande vivement à tous les clients et clientes d’effectuer la mise à niveau vers la dernière version.
 
 En tant qu’utilisateur ou utilisatrice de Managed Cloud Services, votre instance est mise à niveau par Adobe avec chaque nouvelle version. Adobe vous contactera et mettra à niveau vos environnements. La console cliente Campaign **doit être mise à niveau vers la même version** que les serveurs Campaign. Découvrez comment mettre à niveau votre console cliente sur cette [page](../start/connect.md#upgrade-ac-console).
 
@@ -62,12 +62,12 @@ These max throughput performances have been measured by Adobe testing teams, in 
 <p><strong>Débit accru du canal mobile</strong></p>
 <p>Le nouveau service de notification push présente d’importantes améliorations du débit pour Push Android et Push iOS par rapport à notre version précédente (v8.4). Les utilisateurs et utilisatrices bénéficieront de performances considérablement améliorées avec le service mis à niveau dans la dernière version (v8.5). </p>
 <ul>
-<li>Notifications push (Android) : jusqu’à <strong>5 x</strong> plus rapides </li>
-<li>Notifications push (iOS) : jusqu’à <strong>2,2 x</strong> plus rapides</li>
+<li>Notifications push (Android) : jusqu’à <strong>5x</strong> plus rapides </li>
+<li>Notifications push (iOS) : jusqu’à <strong>2,2x</strong> plus rapides</li>
 </ul>
 <p>Le débit des SMS a fait l’objet d’améliorations substantielles grâce à une série d’optimisations. Ces modifications ont permis d’optimiser considérablement la vitesse et l’efficacité des communications SMS. Ces mises à niveau se traduisent par une augmentation du débit entre la version précédente (v8.4) et la version la plus récente (v8.5), comprenant à la fois des mises à jour d’envoi et de retour. Les utilisateurs et utilisatrices peuvent désormais bénéficier des avantages de ce service SMS amélioré.</p>
 <ul>
-<li>Débit des SMS : jusqu’à <strong>5 x</strong> plus rapide</li>
+<li>Débit des SMS : jusqu’à <strong>5x</strong> plus rapide</li>
 </ul>
 <p><em>Ces performances de débit maximales ont été mesurées par des équipes de test d’Adobe, dans des conditions de laboratoire.</em></p>
 </div>
@@ -85,7 +85,7 @@ These max throughput performances have been measured by Adobe testing teams, in 
 **Améliorations de la sécurité**
 
 * Avec Campaign v8.5.1, le processus d’authentification de Campaign v8 a été amélioré et sécurisé. Les opérateurs ou opératrices techniques doivent à présent utiliser Adobe Identity Management System (IMS) pour se connecter à Campaign. Découvrez comment migrer votre ou vos comptes techniques existants dans [cette note technique](../../technotes/upgrades/ims-migration.md).
-* À compter de la version 8.6 à venir, vous n’aurez plus l’autorisation de créer des opérateurs et opératrices à partir de la console cliente Campaign. Si vous utilisez l’authentification native nom d’utilisateur/mot de passe, vous devez migrer vos opérateurs et opératrices vers Adobe Identity Management System (IMS). Découvrez comment effectuer la migration de vos opérateurs et opératrices dans [cette note technique](../../technotes/upgrades/migrate-users-to-ims.md).
+* À compter de la version v8.6 à venir, vous n’aurez plus l’autorisation de créer des opérateurs et opératrices à partir de la console cliente Campaign. Si vous utilisez l’authentification native nom d’utilisateur/mot de passe, vous devez migrer vos opérateurs et opératrices vers Adobe Identity Management System (IMS). Découvrez comment effectuer la migration de vos opérateurs et opératrices dans [cette note technique](../../technotes/upgrades/migrate-users-to-ims.md).
 * Plusieurs outils tiers ont été mis à jour pour optimiser la sécurité.
 
 **Mises à jour de compatibilité**
