@@ -6,9 +6,9 @@ role: User, Data Engineer
 level: Beginner
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1235'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ D&#39;un autre côté, les profils peuvent se trouver dans la **liste bloquée**
 
 >[!NOTE]
 >
->Lorsque les destinataires signalent votre message comme du spam ou répondent à un message SMS avec un mot-clé tel que &quot;STOP&quot;, leur adresse ou numéro de téléphone est mis en quarantaine comme **[!UICONTROL Placé sur la liste bloquée]**. Leur profil est mis à jour en conséquence.
+>Lorsque les destinataires signalent votre message comme spam ou répondent à un message SMS avec un mot-clé tel que « STOP », leur adresse ou numéro de téléphone est mis en quarantaine comme **[!UICONTROL Placé sur la liste bloquée]**. Leur profil est mis à jour en conséquence.
 
 <!--For the email channel, email addresses are quarantined. For the mobile app channel, device tokens are quarantined. For the SMS channel, phone numbers are quarantined.?-->
 
@@ -46,7 +46,7 @@ Si un utilisateur qualifie un e-mail comme spam, le message est automatiquement 
 
 >[!NOTE]
 >
->La quarantaine dans Adobe Campaign respecte la casse. Veillez à importer les adresses email en minuscules, de telle sorte qu&#39;elles ne soient pas reciblées ultérieurement.
+>La quarantaine dans Adobe Campaign respecte la casse. Veillez à importer les adresses e-mail en minuscules, de telle sorte qu&#39;elles ne soient pas reciblées ultérieurement.
 
 ## Accéder aux adresses en quarantaine {#access-quarantined-addresses}
 
