@@ -21,7 +21,7 @@ Vous pouvez utiliser les SDK Campaign pour iOS et Android afin de faciliter l’
 
 Les versions d’Android et iOS prises en charge, ainsi que les versions compatibles des SDK Campaign pour Campaign v8, sont répertoriées dans la [matrice de compatibilité](../start/compatibility-matrix.md#MobileSDK) 
 
-En tant qu&#39;administrateur de Campaign, vous pouvez télécharger les SDK Campaign à partir de la [distribution logicielle d&#39;Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). Pour plus d&#39;informations, contactez l&#39;[Assistance clientèle d&#39;Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+En tant qu&#39;administrateur de Campaign, vous pouvez télécharger les SDK Campaign à partir de la [distribution logicielle d&#39;Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/fr/campaign.html). Pour plus d&#39;informations, contactez l&#39;[Assistance clientèle d&#39;Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 >[!NOTE]
