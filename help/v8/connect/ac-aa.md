@@ -12,7 +12,7 @@ ht-degree: 100%
 
 ---
 
-# Utilisation de Campaign et d&#39;Adobe Analytics {#ac-aa}
+# Utilisation de Campaign et Adobe Analytics {#ac-aa}
 
 Vous pouvez également configurer Adobe Analytics pour intégrer Campaign et Analytics.
 
