@@ -37,7 +37,7 @@ La nouvelle offre combine les services les plus performants avec une surveillanc
 
 En tant qu’ancien utilisateur [!DNL Campaign Classic], veuillez noter que la plupart des fonctionnalités de [!DNL Campaign Classic] v7 sont disponibles dans [!DNL Campaign] v8, à l’exception d’un petit ensemble de fonctionnalités répertoriées dans [cette section](#gs-removed).
 
-Campaign v8 repose sur une **architecture hybride**. Si vous effectuez une transition à partir de Campaign Classic v7, veuillez noter que toutes les diffusions passent par le serveur de midsourcing. Par conséquent, le routage interne est **impossible** dans Campaign v8 et le compte externe a été désactivé en conséquence. [En savoir plus](../architecture/architecture.md)
+Campaign v8 repose sur une **architecture hybride**. Si vous effectuez une transition à partir de Campaign Classic v7, veuillez noter que toutes les diffusions passent par le serveur de midsourcing. Par conséquent, le routage interne est **impossible** dans Campaign v8 et le compte externe a été désactivé en conséquence. [En savoir plus](../architecture/architecture.md).
 
 >[!NOTE]
 >
