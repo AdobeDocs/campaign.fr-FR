@@ -33,7 +33,7 @@ Les API de Campaign Classic v7 sont toujours disponibles, mais ne peuvent pas b
 >* L&#39;évaluation s’applique uniquement aux schémas stockés dans la base de données cloud. N&#39;activez pas l&#39;évaluation sur les schémas répliqués. N&#39;activez pas l&#39;évaluation sur les schémas locaux. N&#39;activez pas l’évaluation sur un schéma évalué
 >
 
-## Étapes d&#39;implémentation {#implement-staging}
+## Étapes dʼimplémentation {#implement-staging}
 
 Pour mettre en œuvre le mécanisme d&#39;évaluation de Campaign sur une table spécifique, procédez comme suit :
 
