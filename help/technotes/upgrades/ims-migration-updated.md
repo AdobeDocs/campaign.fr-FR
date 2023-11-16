@@ -3,7 +3,7 @@ title: Migration des utilisateurs et utilisatrices techniques vers Adobe Develo
 description: Découvrez comment migrer les opérateurs et opératrices techniques Campaign vers un compte technique sur Adobe Developer Console.
 hide: true
 hidefromtoc: true
-source-git-commit: 87d155cbc2a5c6f4cbeeadb6ae7ae8aa3166a321
+source-git-commit: d52744e1d798447bb6b90909607e42082f7eeaf5
 workflow-type: tm+mt
 source-wordcount: '1584'
 ht-degree: 20%
@@ -118,7 +118,7 @@ Dans l’écran du projet, cliquez sur le bouton **[!UICONTROL + Ajouter au proj
 
 ![](assets/do-not-localize/ims-updates-04.png)
 
-Dans le **Ajout d’une API** écran, faites défiler l’écran vers le bas pour trouver **API de gestion I/O** carte. Sélectionnez-le en cochant la case qui s’affiche lorsque vous placez le pointeur de la souris sur la carte. Cliquez ensuite sur **Suivant** au bas de l’écran.
+Dans le **Ajout d’une API** écran, faites défiler l’écran vers le bas pour trouver **API de gestion I/O** carte. Sélectionnez-le en cochant la case qui s’affiche lorsque vous passez la souris sur la carte. Cliquez ensuite sur **Suivant** au bas de l’écran.
 
 ![](assets/do-not-localize/ims-updates-05.png)
 
