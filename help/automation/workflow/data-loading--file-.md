@@ -6,9 +6,9 @@ feature: Workflows, Data Management Activity
 role: User
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
 source-git-commit: d946d4a50a4fc13e848b22ee87b02a10b7dfd2ad
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1169'
+ht-degree: 100%
 
 ---
 
