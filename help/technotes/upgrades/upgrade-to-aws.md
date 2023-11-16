@@ -37,7 +37,7 @@ En tant que client ou cliente Campaign, vous recevrez au moins trente (30) jours
 
 * Les instances de Campaign, que ce soit pour les environnements d’évaluation ou les environnements de production, ne pourront pas envoyer d’e-mails pendant la durée de la mise à niveau. Les autres fonctionnalités de Campaign ne devraient pas être affectées.
 
-## Questions fréquentes {#aws-faq}
+## Forum aux questions {#aws-faq}
 
 * **Cette mise à niveau est-elle obligatoire ?**
 
