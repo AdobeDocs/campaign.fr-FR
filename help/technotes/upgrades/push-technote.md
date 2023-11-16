@@ -12,7 +12,7 @@ hidefromtoc: true
 source-git-commit: 65b8d84e600e1814484fa81fb814475c0a8b9296
 workflow-type: tm+mt
 source-wordcount: '869'
-ht-degree: 23%
+ht-degree: 25%
 
 ---
 
@@ -86,7 +86,7 @@ Vous trouverez ci-dessous les noms de payload FCM pour personnaliser davantage v
 
 ### Quel est l’impact pour mes applications Android ? {#fcm-apps}
 
-Aucune modification spécifique n’est requise du code des applications mobiles Android et le comportement de notification ne doit pas changer.
+Aucune modification spécifique du code des applications mobiles Android n’est requise et le comportement de notification ne doit pas changer.
 
 Cependant, avec HTTP v1, vous pouvez personnaliser davantage votre notification push avec **[!UICONTROL Options supplémentaires HTTPV1]**.
 
