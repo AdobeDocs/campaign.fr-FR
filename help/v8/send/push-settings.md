@@ -84,7 +84,7 @@ La configuration technique implique une collaboration étroite entre le dévelop
 
 Suivez les étapes de mise en œuvre présentées dans les liens ci-dessous :
 
-* Pour **Apple iOS** : découvrez comment enregistrer votre application avec des APNS dans la [documentation Apple](https://developer.apple.com/documentation/usernotifications/registering_your_app_with_apns){target="_blank"}.
+* Pour **Apple iOS** : découvrez comment enregistrer votre application avec des APNs dans la [documentation Apple](https://developer.apple.com/documentation/usernotifications/registering_your_app_with_apns){target="_blank"}.
 * Pour **Google Android** : découvrez comment configurer une application cliente Firebase Cloud Messaging sur Android dans la [documentation Google](https://firebase.google.com/docs/cloud-messaging/android/client){target="_blank"}.
 
 <!--
