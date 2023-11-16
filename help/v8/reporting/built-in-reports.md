@@ -335,7 +335,7 @@ Les rapports sur les simulations portent sur les données du tableau **nms:simul
 
 ## Rapports sur les applications Web {#reports-on-web-applications}
 
-Les rapports sur les applications Web portent sur les données du tableau **nms:webApp**.
+Les rapports sur les applications Web portent sur les données du tableau **nms:WebApp**.
 
 <table> 
  <tbody> 
