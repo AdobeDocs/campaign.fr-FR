@@ -5,7 +5,7 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: 555e1d64ada12dc145fbba9124611e30d7746ba5
+source-git-commit: 973c799be51226510549290376f129aaeb86f6ab
 workflow-type: tm+mt
 source-wordcount: '1231'
 ht-degree: 91%
@@ -130,7 +130,7 @@ Lorsque vous avez créé une ou plusieurs adresses de contrôle, ainsi que le co
 
    ![](assets/messagecenter_create_seed_7.png)
 
-### Envoyer un BAT
+### Envoyer un BAT {#send-proof}
 
 Vous pouvez tester la diffusion du message en envoyant un BAT vers une adresse de contrôle créée précédemment.
 
@@ -159,7 +159,7 @@ Les BAT sont accessibles au niveau de chaque modèle, depuis l&#39;onglet **[!UI
 
 ![](assets/messagecenter_send_proof_003.png)
 
-#### Transition depuis [!DNL Campaign Classic] v7
+#### Transition depuis [!DNL Campaign Classic] v7 {#transition-from-v7}
 
 Si vous [transition depuis Campaign Classic v7](../start/v7-to-v8.md), toutes les diffusions passent par le serveur de mid-sourcing.
 

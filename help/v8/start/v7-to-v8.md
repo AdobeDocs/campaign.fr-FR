@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
-workflow-type: ht
-source-wordcount: '682'
-ht-degree: 100%
+source-git-commit: 973c799be51226510549290376f129aaeb86f6ab
+workflow-type: tm+mt
+source-wordcount: '694'
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,9 @@ La nouvelle offre combine les services les plus performants avec une surveillanc
 
 En tant qu’ancien utilisateur [!DNL Campaign Classic], veuillez noter que la plupart des fonctionnalités de [!DNL Campaign Classic] v7 sont disponibles dans [!DNL Campaign] v8, à l’exception d’un petit ensemble de fonctionnalités répertoriées dans [cette section](#gs-removed).
 
-Campaign v8 repose sur une **architecture hybride**. Si vous effectuez une transition à partir de Campaign Classic v7, veuillez noter que toutes les diffusions passent par le serveur de midsourcing. Par conséquent, le routage interne est **impossible** dans Campaign v8 et le compte externe a été désactivé en conséquence. [En savoir plus](../architecture/architecture.md).
+Campaign v8 repose sur une **architecture hybride**. Si vous effectuez une transition à partir de Campaign Classic v7, veuillez noter que toutes les diffusions passent par le serveur de midsourcing. Par conséquent, le routage interne est **impossible** dans Campaign v8 et le compte externe a été désactivé en conséquence.
+
+![](../assets/do-not-localize/glass.png) En savoir plus sur l&#39;envoi de BAT de messages transactionnels lors de la transition de la v7 vers la version [cette page](../send/transactional-template.md#transition-from-v7).
 
 >[!NOTE]
 >
