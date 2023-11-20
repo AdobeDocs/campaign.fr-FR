@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
+source-git-commit: 555e1d64ada12dc145fbba9124611e30d7746ba5
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 100%
+source-wordcount: '1231'
+ht-degree: 91%
 
 ---
 
@@ -47,7 +47,7 @@ La définition du contenu du message transactionnel est la même que pour toutes
 >[!CAUTION]
 >
 >Les images incluses dans le message doivent être accessibles publiquement. Adobe Campaign ne fournit pas de mécanisme de chargement des images pour les messages transactionnels.\
->Contrairement à JSSP ou webApp, `<%=` n&#39;a pas de séquence d&#39;échappement par défaut.
+>Contrairement à JSSP ou webApp, `<%=` ne comporte aucune séquence d’échappement par défaut.
 >
 >Vous devez appliquer une séquence d&#39;échappement correcte à toutes les données provenant de l&#39;événement. Cette séquence d&#39;échappement dépend de l&#39;utilisation de ce champ. Par exemple, dans une URL, utilisez encodeURIComponent. Pour un affichage dans le code HTML, vous pouvez utiliser escapeXMLString.
 
@@ -158,6 +158,18 @@ Pour effectuer l&#39;envoi :
 Les BAT sont accessibles au niveau de chaque modèle, depuis l&#39;onglet **[!UICONTROL Suivi]**.
 
 ![](assets/messagecenter_send_proof_003.png)
+
+#### Transition depuis [!DNL Campaign Classic] v7
+
+Si vous [transition depuis Campaign Classic v7](../start/v7-to-v8.md), toutes les diffusions passent par le serveur de mid-sourcing.
+
+Cependant, lors de la création d’un modèle de message transactionnel, le routage nécessaire pour que le modèle soit utilisé avec succès est : **diffusion email interne**. Ce routage vous empêche d&#39;envoyer des bons à tirer.
+
+Par conséquent, pour envoyer un BAT pour votre modèle de message transactionnel, vous devez modifier le routage de la diffusion email interne à la **compte de routage mid-sourcing**.
+
+![](assets/messagecenter_send_proof_004.png)
+
+Une fois les BAT envoyés, vous devez redéfinir le routage sur la diffusion email interne avant de publier le modèle de message transactionnel.
 
 ## Publication du modèle {#publish-message-template}
 
