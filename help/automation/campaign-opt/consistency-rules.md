@@ -4,10 +4,10 @@ title: Règles de cohérence
 description: Règles de cohérence
 feature: Typology Rules
 exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: 8247bed87deb3fb19a01447dab180ed9c97ea96c
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 100%
+source-wordcount: '792'
+ht-degree: 92%
 
 ---
 
@@ -97,7 +97,7 @@ Les lignes de disponibilité n&#39;ont qu&#39;un caractère indicatif. Pour excl
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
-Le nombre de messages à traiter est réparti proportionnellement sur la totalité de la plage de disponibilité définie. C&#39;est le cas notamment pour les centres d&#39;appels dont le nombre maximum d&#39;appels par jour est plafonné. Dans le cas des diffusions email, l&#39;option **[!UICONTROL Ne pas limiter la capacité instantanée de diffusion]** permet d&#39;ignorer cette plage de disponibilité et d&#39;envoyer vos emails en masse au même moment.
+Le nombre maximum de messages qui peuvent être traités est réparti proportionnellement sur la totalité de la plage de disponibilité définie. Cela est particulièrement pertinent pour les centres d’appels, car leur nombre maximum d’appels par jour est limité. Dans le cas de diffusions email, la variable **[!UICONTROL Ne pas limiter la capacité instantanée de diffusion]** permet d&#39;ignorer cette plage de disponibilité et d&#39;envoyer vos emails en même temps.
 
 ![](assets/campaign_opt_create_capacity_05.png)
 
