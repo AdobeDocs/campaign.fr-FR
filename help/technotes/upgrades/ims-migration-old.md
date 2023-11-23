@@ -77,7 +77,7 @@ Vous pouvez maintenant ajouter votre profil de produit Campaign au projet, comme
 
 Cette étape n’est nécessaire que si des autorisations de dossiers spécifiques ou des droits nommés ont été définis pour cet opérateur ou cette opératrice – et non via son groupe.
 
-Vous devez maintenant mettre à jour l’opérateur ou l’opératrice technique nouvellement créé(e) dans la console cliente Adobe Campaign. Vous devez appliquer les autorisations de dossier des opérateurs et opératrices techniques existants au nouvel opérateur ou à la nouvelle opératrice technique.
+Vous devez maintenant mettre à jour l’opérateur technique nouvellement créée ou l’opératrice technique nouvellement créée dans la console cliente Adobe Campaign. Vous devez appliquer les autorisations de dossier des opérateurs et opératrices techniques existants au nouvel opérateur ou à la nouvelle opératrice technique.
 Pour mettre à jour cet opérateur ou cette opératrice, procédez comme suit :
 
 1. Dans l’explorateur de la console cliente Campaign, accédez à **Administration > Gestion des accès > Opérateurs**.
