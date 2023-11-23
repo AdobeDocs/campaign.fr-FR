@@ -29,7 +29,7 @@ Adobe Campaign ne gère pas les fichiers archivés. Il vous permet d&#39;envoye
 >
 >Pour des raisons de confidentialité, les e-mails en Cci doivent être traités dans un système d’archivage capable de stocker en toute sécurité les informations d’identification personnelles (PII).
 
-La destination d&#39;archivage est l&#39;adresse email en Cci de votre choix, qui restera invisible pour les destinataires de la diffusion.
+La destination d&#39;archivage est l&#39;adresse e-mail en Cci de votre choix, qui restera invisible pour les destinataires de la diffusion.
 
 ![](../assets/do-not-localize/speech.png)En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support){target="_blank"} pour communiquer l’adresse e-mail en Cci à utiliser pour l’archivage.
 
@@ -56,7 +56,7 @@ Une copie de tous les messages envoyés pour chaque diffusion basée sur ce mod�
 
 Notez les spécificités et recommandations suivantes :
 
-* Vous ne pouvez utiliser qu’une seule adresse email en Cci.
+* Vous ne pouvez utiliser qu’une seule adresse e-mail en Cci.
 
 * Vérifiez que l’adresse en Cci dispose de suffisamment de capacité pour archiver tous les e-mails envoyés.
 

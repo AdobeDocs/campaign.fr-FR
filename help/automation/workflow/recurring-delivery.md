@@ -6,7 +6,7 @@ feature: Workflows
 role: User, Data Engineer
 exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
 source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 100%
 
@@ -44,7 +44,7 @@ Si vous souhaitez arrêter lʼexécution dʼune diffusion récurrente, vous deve
 
 >[!NOTE]
 >
->Il n&#39;est pas possible d&#39;envoyer un bon à tirer à partir d&#39;une activité de type **[!UICONTROL Diffusion récurrente]**.
+>Il n’est pas possible d’envoyer un BAT à partir d’une activité de type **[!UICONTROL Diffusion récurrente]**.
 > 
 >Pour directement créer une diffusion via un workflow de campagne, utilisez les activités de diffusion spécifiques à un canal, qui sont pré-paramétrées (ex : **[!UICONTROL Diffusion e-mail]**).
 

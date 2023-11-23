@@ -3,13 +3,13 @@ title: Migrer l’infrastructure d’envoi de Campaign vers Amazon Web Service
 description: Migrer l’infrastructure d’envoi de Campaign vers Amazon Web Services (AWS)
 hide: true
 hidefromtoc: true
-source-git-commit: 9401e3564b53b920dd6a640ca6d00531992a2f21
-workflow-type: ht
+exl-id: 50279a2f-0296-43f5-8967-16cc6a0c88f6
+source-git-commit: 3e95a56825a143a4457ab7ee242208d7daaeb414
+workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 100%
 
 ---
-
 
 # Migration de l’infrastructure d’envoi de Campaign vers Amazon Web Services (AWS) {#migrate-infra-to-aws}
 
@@ -67,11 +67,11 @@ Cette action sera transparente :
 
 * **Le client ou la cliente doit-il/elle effectuer des validations ?**
 
-  Aucun test spécifique n’est nécessaire pour cette migration. Contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) pour tout problème rencontré{target="_blank"}.
+  Aucun test spécifique n’est nécessaire pour cette migration. Contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=fr#support) pour tout problème rencontré{target="_blank"}.
 
 
 * **Puis-je demander un changement de date/heure du créneau prévu pour la mise à niveau de sécurité ?**
 
   Puisqu’il s’agit d’une migration obligatoire, nous ne pouvons pas prendre en charge les modifications apportées au planning existant.
 
-Pour toute autre question, contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+Pour toute autre question, contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=fr#support){target="_blank"}.

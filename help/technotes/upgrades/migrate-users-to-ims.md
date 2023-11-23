@@ -1,7 +1,8 @@
 ---
 title: Migrer les opérateurs et opératrices de Campaign vers Adobe Identity Management System (IMS)
 description: Découvrez comment migrer les opérateurs et opératrices Campaign vers Adobe Identity Management System (IMS).
-source-git-commit: a85368a8cd34c9bcdfcea91b71fa4b519b6437a3
+exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
+source-git-commit: 3e95a56825a143a4457ab7ee242208d7daaeb414
 workflow-type: tm+mt
 source-wordcount: '1078'
 ht-degree: 100%
@@ -118,4 +119,3 @@ Une fois cette migration terminée, vous devez contacter votre Gestionnaire de t
 * [Accès et autorisations dans Adobe Campaign v8](../../v8/start/gs-permissions.md)
 * [Notes de mise à jour d’Adobe Campaign v8](../../v8/start/release-notes.md)
 * [Présentation d’Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}
-

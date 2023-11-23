@@ -219,7 +219,7 @@ Les BAT sont accessibles au niveau de chaque modèle, depuis l&#39;onglet **[!UI
 
 ![](assets/messagecenter_send_proof_003.png)
 
-## Publication du modèle {#publish-message-template}
+## Publier le modèle {#publish-message-template}
 
 Lorsque le modèle de message créé<!-- on the control instance--> est terminé, vous pouvez le publier, ce qui vous permettra d’envoyer des messages liés à des événements temps réel et par lots.
 

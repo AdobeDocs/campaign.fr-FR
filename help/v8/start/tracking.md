@@ -101,7 +101,7 @@ Ce rapport présente la liste des pages visitées suite au lancement d&#39;une d
 
 **Indicateurs de tracking**
 
-Ce rapport combine les indicateurs clés pour le tracking du comportement des destinataires à la réception de la diffusion, tels que les taux d&#39;ouverture, de clics publicitaires et les flux de clics.
+Ce rapport combine les indicateurs clés pour le tracking du comportement des destinataires à la réception de la diffusion, tels que les taux d’ouvertures, les taux de clics et les flux de clics.
 
 [Apprenez-en davantage en consultant la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/delivery-reports.html?lang=fr#reporting){target="_blank"}
 

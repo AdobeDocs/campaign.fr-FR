@@ -47,7 +47,7 @@ Les étapes suivantes doivent être complétées dans Adobe Campaign et Adobe 
 
 1. [Insertion de l&#39;offre dynamique dans un e-mail](#inserting-dynamic-offer)
 1. [Création d&#39;offres de redirection](#create-redirect-offers)
-1. [Création d&#39;audiences](#audiences-target)
+1. [Création d’audiences](#audiences-target)
 1. [Création d&#39;une activité de ciblage d&#39;expérience](#creating-targeting-activity)
 1. [Prévisualisation et envoi du message](#preview-send-email)
 
@@ -96,7 +96,7 @@ Dans notre cas, nous avons besoin de deux offres de redirection, la troisième (
 
 1. Suivez la même procédure pour l&#39;offre de redirection restante. Voir à ce propos [cette page](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=fr#experiences).
 
-### Création d&#39;audiences {#audiences-target}
+### Création d’audiences {#audiences-target}
 
 Dans Adobe Target, vous devez créer les deux audiences dans lesquelles les visiteurs de votre offre seront classés selon les différents contenus à diffuser. Pour chaque audience, ajoutez une règle pour définir qui pourra visualiser l&#39;offre.
 

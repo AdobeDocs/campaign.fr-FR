@@ -6,7 +6,7 @@ role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 100%
 
@@ -56,7 +56,7 @@ Pour configurer le compte externe **[!UICONTROL Mails rebonds (defaultPopAccount
 
 * **[!UICONTROL Compte]** : nom de l’utilisateur ou de l’utilisatrice.
 
-* **[!UICONTROL Mot de passe]** : mot de passe du compte utilisateur/utilisatrice.
+* **[!UICONTROL Mot de passe]** : mot de passe du compte d’utilisateur.
 
 * **[!UICONTROL Chiffrement]** : type de chiffrement choisi entre **[!UICONTROL Par défaut]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** ou **[!UICONTROL POP3S]**.
 

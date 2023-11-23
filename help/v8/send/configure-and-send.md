@@ -4,7 +4,8 @@ description: Découvrez comment configurer des e-mails dans Adobe Campaign.
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 263ec61c3717c054cc135f1c4fb1f7e287e4a154
+exl-id: 36033255-1e75-41c1-9816-126777f7330a
+source-git-commit: 3e95a56825a143a4457ab7ee242208d7daaeb414
 workflow-type: tm+mt
 source-wordcount: '1217'
 ht-degree: 100%

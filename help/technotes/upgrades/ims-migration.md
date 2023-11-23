@@ -3,8 +3,9 @@ title: Migration des utilisateurs et utilisatrices techniques vers Adobe Develo
 description: Découvrez comment migrer les opérateurs et opératrices techniques Campaign vers un compte technique sur Adobe Developer Console.
 feature: Technote
 role: Admin
-source-git-commit: 9f93057d2d729d4251d914426488f46b6ef24bbb
-workflow-type: ht
+exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
+source-git-commit: 935426cea75e1f8bca757863290b6f9d4c7dce18
+workflow-type: tm+mt
 source-wordcount: '1590'
 ht-degree: 100%
 

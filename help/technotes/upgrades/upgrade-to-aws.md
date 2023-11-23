@@ -3,7 +3,7 @@ title: Mise à niveau de l’infrastructure d’envoi d’e-mails dans Campaign
 description: Mise à niveau de l’infrastructure d’envoi d’e-mails dans Campaign
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
 source-git-commit: 557a74dbfbd0af385cc5104801ce3ab91dd33a95
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 100%
 

@@ -9,8 +9,9 @@ badge-v7: label="v7" type="Informative" tooltip="S’applique également à Camp
 badge-v8: label="v8" type="Positive" tooltip="S’applique à Campaign v8"
 hide: true
 hidefromtoc: true
-source-git-commit: 65b8d84e600e1814484fa81fb814475c0a8b9296
-workflow-type: ht
+exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
+source-git-commit: 935426cea75e1f8bca757863290b6f9d4c7dce18
+workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 100%
 
@@ -102,4 +103,3 @@ Vous pouvez ainsi :
 * définir le niveau de **[!UICONTROL visibilité]** de votre notification sur public, privé ou secret.
 
 Pour plus d’informations sur les **[!UICONTROL options supplémentaires HTTP v1]** et sur la façon de remplir ces champs, consultez la [documentation FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
-

@@ -186,7 +186,7 @@ Le paramétrage des mesures, lignes et colonnes affichées peut être réalisé 
 
 * Cliquez sur l’icône **[!UICONTROL Modifier la configuration du tableau croisé dynamique]** pour accéder à la fenêtre de configuration.
 
-  Vous pouvez choisir d&#39;afficher ou non les libellés des mesures ainsi que leur localisation (en ligne ou en colonne).
+  Vous pouvez choisir d&#39;afficher ou non les libellés des mesures ainsi que leur disposition (en ligne ou en colonne).
 
 ![](assets/cube-pivot-table-config-details.png)
 
