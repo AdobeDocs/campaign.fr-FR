@@ -1,18 +1,18 @@
 ---
 title: Nouveautés de Campaign v8
-description: Découvrez les fonctionnalités clés d’Adobe Campaign v8, les nouveautés et ce que vous pouvez attendre de la dernière version.
-feature: Overview, Release Notes
+description: Découvrez les fonctionnalités clés d’Adobe Campaign v8
+feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 5c4bbbd06eb7bf6dc9ada1d08c3fc696e88ee760
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 100%
+source-wordcount: '911'
+ht-degree: 98%
 
 ---
 
-# Nouveautés d’Adobe Campaign v8 {#ac-gs-what-is-new}
+# Fonctionnalités clés d’Adobe Campaign v8 {#ac-gs-what-is-new}
 
 Adobe Campaign v8 est conçu pour les spécialistes marketing cross-canal qui ont besoin de la solution cloud la plus performante pour la gestion de campagnes cross-canal à l’échelle de l’entreprise. Il offre des fonctionnalités ETL et de gestion des données performantes pour concevoir et organiser une campagne parfaite. Son moteur d’orchestration fournit des programmes marketing multi-touch riches qui mettent l’accent sur les parcours pilotés par lots. Il est également associé à un serveur de messagerie en temps réel évolutif qui permet aux équipes marketing d’envoyer des messages prédéfinis sur la base d’une payload globale à partir de n’importe quel système informatique, pour des tâches telles que la réinitialisation du mot de passe, la confirmation de commande, la facturation en ligne, etc.
 
