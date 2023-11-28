@@ -5,10 +5,10 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 16367814b53344e4cd68025dfe925cc17aac6bcf
+source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
 workflow-type: tm+mt
 source-wordcount: '1042'
-ht-degree: 91%
+ht-degree: 89%
 
 ---
 
@@ -38,7 +38,7 @@ Deux modèles de déploiement sont disponibles :
 
   >[!NOTE]
   >
-  >Dans ce modèle de déploiement, la variable [!DNL Snowflake] La base de données secondaire n’est disponible que sur demande. Pour mettre à jour votre déploiement avec [!DNL Snowflake], contactez votre gestionnaire de compte technique Adobe.
+  >Dans ce modèle de déploiement, la variable [!DNL Snowflake] La base de données secondaire n’est disponible que sur demande. Pour mettre à jour votre déploiement avec [!DNL Snowflake], contactez votre gestionnaire de transition d’Adobe.
   >
 
 * **Déploiement Campaign Grands comptes (FFDA)**
@@ -70,7 +70,7 @@ Pour ce faire, des comptes externes supplémentaires avec le mode de routage **[
 
 >[!IMPORTANT]
 >
->Le mode de routage partagé est activé par défaut pour le compte « Partager la diffusion - E-mail ». Pour tous les autres canaux, contactez l’assistance clientèle pour que l’option soit activée.
+>Le mode de routage partagé est activé par défaut pour le compte « Partager la diffusion - E-mail ». Pour tous les autres comptes externes de canal, contactez votre Gestionnaire de transition d’Adobe pour que l’option soit activée.
 >
 >Par défaut, la valeur de la taille de seuil pour partager une diffusion entre plusieurs instances mid-sourcing est de 100 000. Vous pouvez modifier cette valeur dans l’option « NmsDelivery_MultiMidSplitThreshold » du menu **[!UICONTROL Administration]** / **[!UICONTROL Plateforme]** / **[!UICONTROL Options]** .
 

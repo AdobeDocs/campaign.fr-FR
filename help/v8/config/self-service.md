@@ -5,10 +5,10 @@ feature: Control Panel, Monitoring
 role: Admin
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 100%
+source-wordcount: '379'
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ Le Panneau de contrôle Campaign accroît votre efficacité en tant qu’adminis
 
 Principaux avantages :
 
-* Modifiez rapidement par vous-même les paramètres sans contacter l’assistance clientèle.
+* Apportez rapidement vous-même des modifications aux paramètres sans avoir à vous adresser à l’Adobe.
 * Configurez les paramètres en fonction de vos besoins métier à différents instants.
 * Renforcez la sécurité en contrôlant les paramètres d&#39;accès au cas par cas.
 
