@@ -1,20 +1,20 @@
 ---
-title: Prise en main du déploiement de Campaign FDA-Snowflake
-description: Prise en main du déploiement de Campaign FDA-Snowflake
+title: Prise en main du déploiement de Campaign FDA
+description: Prise en main du déploiement de Campaign FDA
 feature: Architecture, Federated Data Access, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: b3df0336-f40e-4ac1-b6a4-068b8827dca2
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 16367814b53344e4cd68025dfe925cc17aac6bcf
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 100%
+source-wordcount: '303'
+ht-degree: 77%
 
 ---
 
-# Déploiement [!DNL Campaign] FDA [!DNL Snowflake]{#gs-fda-snowflake}
+# Déploiement [!DNL Campaign] FDA {#gs-fda}
 
-Dans un déploiement FDA [!DNL Snowflake] (par défaut), [!DNL Adobe Campaign] v8 est connecté à [!DNL Snowflake] pour accéder aux données via la fonctionnalité [Federated Data Access](../connect/fda.md) : vous pouvez accéder aux données et aux informations externes stockées dans votre base de données [!DNL Snowflake] sans modifier la structure des données Adobe Campaign.
+Dans son déploiement Campaign FDA (par défaut), [!DNL Adobe Campaign] v8 peut être connecté à [!DNL Snowflake] pour accéder aux données via [Federated Data Access](../connect/fda.md) fonctionnalité : vous pouvez ensuite accéder aux données et aux informations externes stockées dans votre [!DNL Snowflake] sans modifier la structure des données Adobe Campaign.
 
 ## Avantages{#fda-benefits}
 
@@ -37,4 +37,4 @@ La communication générale entre les serveurs et les processus est réalisée c
 
 ![](assets/fda-architecture.png)
 
-PostgreSQL est la base de données principale et Snowflake la base de données secondaire. Vous pouvez étendre votre modèle de données et stocker vos données sur Snowflake. Par la suite, vous pourrez exécuter ETL, la segmentation et les rapports sur un jeu de données volumineux avec des performances optimales.
+PostgreSQL est la base de données principale et Snowflake peut être utilisé comme base de données secondaire. Vous pouvez étendre votre modèle de données et stocker vos données sur Snowflake. Par la suite, vous pourrez exécuter ETL, la segmentation et les rapports sur un jeu de données volumineux avec des performances optimales.

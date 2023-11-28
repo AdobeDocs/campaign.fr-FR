@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Présentation de Campaign
-source-git-commit: cb5bec3107872d4d6da83b4ddbc7cad3e9276b00
+source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -155,11 +155,10 @@ ht-degree: 100%
       + [Ajouter des autorisations aux dossiers](start/folder-permissions.md)
    + [Panneau de contrôle](config/self-service.md)
 + Architecture et configuration {#config}
-   + Architecture {#architecture}
+   + Architecture de Campaign v8 {#architecture}
       + [Principes généraux](architecture/general-architecture.md)
-      + [Architecture](architecture/architecture.md)
-      + Déploiement de FDA Snowflake {#fda}
-         + [Qu’est-ce que FDA-Snowflake ?](architecture/fda-deployment.md)
+      + [Architecture models](architecture/architecture.md)
+      + [Déploiement FDA Campaign  ](architecture/fda-deployment.md)
       + Déploiement d’Entreprise (FFDA) {#ffda}
          + [Qu’est-ce que Campaign FFDA ?](architecture/enterprise-deployment.md)
          + Caractéristiques {#ffda-characteristics}
