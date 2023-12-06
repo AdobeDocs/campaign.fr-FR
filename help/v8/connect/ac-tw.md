@@ -5,9 +5,9 @@ role: User, Admin
 feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1125'
 ht-degree: 45%
 
 ---
@@ -141,6 +141,6 @@ En plus d’un compte X, créez un compte X privé utilisable pour l’envoi. [B
 1. Accédez aux **Paramètres** du compte.
 1. Accédez à **Confidentialité et sécurité** et **Audience et balisage** et vérifiez la variable **Protect de vos publications** . Les publications et autres informations de compte ne sont visibles que par les personnes qui vous suivent.
 
-![](assets/social_tw_test_page.png)
+![](assets/do-not-localize/social_tw_test_page.png)
 
 Configurez votre application X et le service Campaign pour qu’ils fonctionnent avec ce compte de test, comme décrit ci-dessus.

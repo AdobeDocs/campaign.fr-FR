@@ -5,7 +5,7 @@ feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 7deb5e8f646b086adec2e0652538a187e68adbee
+source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 97%
@@ -22,7 +22,7 @@ Pour en savoir plus sur les fonctionnalités principales de Campaign, reportez-v
 
 Les composants et l&#39;architecture globale d&#39;Adobe Campaign sont décrits ci-dessous.
 
-![](assets/ac-components.png)
+![](assets/do-not-localize//ac-components.png)
 
 ### Couche de présentation{#presentation-layer}
 
@@ -58,13 +58,13 @@ Adobe Campaign v8 est déployé &#39;as a Managed Service&#39; : tous les comp
 
 Le serveur Web Campaign contrôle l&#39;accès aux processus Web Campaign. JavaScript est la langue côté serveur utilisée pour les fonctionnalités et la personnalisation de base du produit. Tomcat est le moteur back-end et est incorporé à Campaign dans le cadre du processus web. Javascript est utilisé, par exemple, dans les pages JSP ou JSSP pour le rendu du contenu dynamique.
 
-![](assets/ac-processes.png)
+![](assets/do-not-localize/ac-processes.png)
 
 La console cliente Campaign se connecte au serveur Web à l’aide de SOAP XML via HTTP. Le serveur Web fournit la couche de sécurité, transmet les requêtes à la couche Application à l&#39;aide de Javascript et l&#39;accès des processus internes de Campaign à la base de données à l&#39;aide de SQL.
 
 La communication globale entre les processus de Campaign est décrite dans le diagramme de déploiement autonome suivant : tous les composants de Campaign sont installés sur le même ordinateur.
 
-![](assets/ac-standalone.png)
+![](assets/do-not-localize//ac-standalone.png)
 
 L&#39;utilisateur se connecte au serveur applicatif Campaign à l&#39;aide du protocole HTTP. Toutes les données et informations sont gérées dans la base de données Campaign. Si un développeur Campaign effectue des modifications de configuration, celles-ci sont capturées dans la base de données. Si un spécialiste marketing crée une nouvelle campagne, toutes les informations et données relatives à cette nouvelle campagne sont également gérées dans la base de données. Lorsqu&#39;un spécialiste marketing exécute une campagne, les diffusions par e-mail sont envoyées aux profils à partir du serveur Campaign via le serveur SMTP. Lorsque les profils interagissent avec des diffusions par e-mail, telles que l&#39;ouverture de l&#39;e-mail, ces données de tracking sont renvoyées au serveur de tracking.
 
