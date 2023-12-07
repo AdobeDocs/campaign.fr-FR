@@ -6,9 +6,9 @@ role: Admin, Developer
 level: Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
 source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '634'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Découvrez l’architecture de la messagerie transactionnelle sur [cette page](.
 
 ## Définition des autorisations {#mc-permissions}
 
-Pour créer de nouveaux utilisateurs pour les instances d&#39;exécution Message Center hébergées sur Adobe Cloud, contactez votre gestionnaire de transition Adobe. Les utilisateurs de Message Center sont des opérateurs spécifiques qui nécessitent des permissions dédiées pour accéder aux dossiers &quot;Evénements temps réel&quot; (nmsRtEvent).
+Pour créer de nouveaux utilisateurs et utilisatrices pour les instances d’exécution Message Center hébergées sur Adobe Cloud, contactez la personne chargée de votre transition Adobe. Les utilisateurs et les utilisatrices de Message Center sont des opérateurs et des opératrices spécifiques qui ont besoin d’autorisations dédiées pour accéder aux dossiers « Événements en temps réel » (nmsRtEvent).
 
 ## Extensions de schéma  {#mc-schema-ext}
 
@@ -97,7 +97,7 @@ Sur la ou les instances d’exécution, vous devez démarrer les workflows techn
 
 * **[!UICONTROL Traitement des événements batch]** (nom interne : **[!UICONTROL batchEventsProcessing]**) : ce workflow permet de répartir les événements batch dans une file d&#39;attente avant qu&#39;ils ne soient associés à un modèle de message.
 * **[!UICONTROL Traitement des événements temps réel]** (nom interne : **[!UICONTROL rtEventsProcessing]**) : ce workflow permet de répartir les événements temps réel dans une file d&#39;attente avant qu&#39;ils ne soient associés à un modèle de message.
-* **[!UICONTROL Mise à jour du statut des événements]** (nom interne : **[!UICONTROL updateEventsStatus]**) : ce workflow permet d&#39;attribuer un statut à l&#39;événement.
+* **[!UICONTROL Mise à jour du statut des événements]** (nom interne : **[!UICONTROL updateEventStatus]**) : ce workflow permet d&#39;attribuer un statut à l&#39;événement.
 
   Les statuts possibles des événements sont les suivants :
 
