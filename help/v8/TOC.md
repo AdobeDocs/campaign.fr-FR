@@ -5,9 +5,9 @@ title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Présentation de Campaign
 source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '579'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -141,7 +141,7 @@ ht-degree: 98%
    + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
    + [Campaign + triggers Experience Cloud](connect/ac-triggers.md)
-   + [Campagne + X (Twitter)](connect/ac-tw.md)
+   + [Campaign + X (Twitter)](connect/ac-tw.md)
    + [Campaign + base de données externe](connect/fda.md)
    + Campaign + votre CRM   {#ac-crm}
       + [Prise en main des connecteurs CRM](connect/crm.md)
@@ -155,10 +155,10 @@ ht-degree: 98%
       + [Ajouter des autorisations aux dossiers](start/folder-permissions.md)
    + [Panneau de contrôle](config/self-service.md)
 + Architecture et configuration {#config}
-   + Architecture de Campaign v8 {#architecture}
+   + Architecture de Campaign v8 {#architecture}
       + [Principes généraux](architecture/general-architecture.md)
-      + [Architecture models](architecture/architecture.md)
-      + [Déploiement FDA Campaign  ](architecture/fda-deployment.md)
+      + [Architecture Modèles](architecture/architecture.md)
+      + [Déploiement FDA de Campaign](architecture/fda-deployment.md)
       + Déploiement d’Entreprise (FFDA) {#ffda}
          + [Qu’est-ce que Campaign FFDA ?](architecture/enterprise-deployment.md)
          + [Gestion des clés et unicité](architecture/keys.md)
