@@ -1,33 +1,33 @@
 ---
-title: Messages sur X (Twitter) avec Adobe Campaign
-description: Découvrez comment utiliser le module Social Marketing d’Adobe Campaign pour publier des messages sur X (anciennement appelé Twitter) et envoyer des messages directs à vos abonnés.
+title: Publier des messages sur X (Twitter) avec Adobe Campaign
+description: Découvrez comment utiliser le module Social Marketing d’Adobe Campaign pour publier des messages sur X (anciennement Twitter) et envoyer des messages directs à vos abonnées et abonnés.
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
 source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '875'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
 
-# Messages sur X (Twitter) avec Adobe Campaign {#post-tw-messages}
+# Publier des messages sur X (Twitter) avec Adobe Campaign {#post-tw-messages}
 
-Adobe Campaign est fourni avec une **Social Marketing** qui permet d&#39;interagir avec vos clients et prospects via X (anciennement appelé Twitter).
+Adobe Campaign est fourni avec un module **Social Marketing** qui permet d’interagir avec la clientèle et des prospects via X (anciennement Twitter).
 
-Une fois l&#39;intégration configurée, vous pouvez :
+Une fois l’intégration configurée, vous pouvez :
 
-* Envoyer de messages directs à vos abonnés
+* Envoyer des messages directs à vos abonnées et abonnés
 * Publier sur votre compte X
-* Collectez de nouveaux contacts en récupérant les données de profil. Vous pourrez alors exécuter des campagnes de ciblage et, lorsque cela est possible, mettre en œuvre des stratégies cross-canal. Cette action nécessite le consentement de l&#39;utilisateur.
+* Collectez de nouveaux contacts en récupérant les données de profil. Vous pourrez alors exécuter des campagnes de ciblage et, lorsque cela est possible, mettre en œuvre des stratégies cross-canal. Cette action nécessite le consentement de l’utilisateur ou de l’utilisatrice.
 
 
-Les étapes de configuration pour intégrer votre compte X à Adobe Campaign sont décrites dans la section [cette page](../connect/ac-tw.md).
+Les étapes de configuration pour intégrer votre compte X à Adobe Campaign sont décrites sur [cette page](../connect/ac-tw.md).
 
-## Création et publication d’une publication X {#publish-on-tw}
+## Créer et publier une publication X {#publish-on-tw}
 
-Suivez les étapes ci-dessous pour publier un message sur votre compte X :
+Pour publier un message sur votre compte X, procédez comme suit :
 
 1. Créer une diffusion X
 
@@ -37,24 +37,24 @@ Suivez les étapes ci-dessous pour publier un message sur votre compte X :
 
 1. Sélection de la cible principale
 
-   Sélectionnez le ou les comptes auxquels vous souhaitez envoyer des publications.
+   Vous devez sélectionner le ou les comptes auxquels vous souhaitez envoyer des publications.
 
    ![](assets/tw-define-target.png)
 
    1. Cliquez sur le lien **[!UICONTROL Pour]**.
    1. Cliquez sur le bouton **[!UICONTROL Ajouter]**.
    1. Sélectionnez **[!UICONTROL Un compte Twitter]**.
-   1. Dans le **[!UICONTROL Dossier]** , sélectionnez le dossier de services contenant le compte X. Sélectionnez ensuite le compte X auquel vous souhaitez envoyer votre tweet.
+   1. Dans le champ **[!UICONTROL Dossier]**, sélectionnez le dossier de services contenant votre compte X. Sélectionnez ensuite le compte X auquel vous souhaitez envoyer votre publication.
 
-1. Sélection de la cible du BAT
+1. Sélectionner la cible du BAT
 
-   La variable **[!UICONTROL Cible des BAT]** vous permet de définir le compte X à utiliser pour les diffusions test avant la diffusion finale.
+   L’onglet **[!UICONTROL Cible des BAT]** vous permet de définir le compte X à utiliser pour les diffusions test avant la diffusion finale.
 
-   Comme indiqué dans la section [étapes de configuration](../connect/ac-tw.md#tw-test-account), vous devez créer un compte X de test privé dédié à l&#39;envoi de BAT.
+   Comme indiqué dans les [étapes de configuration](../connect/ac-tw.md#tw-test-account), vous devez créer un compte X de test privé dédié à l’envoi de BAT.
 
    >[!NOTE]
    >
-   >Si vous utilisez le même compte de test X pour toutes vos diffusions, vous pouvez enregistrer la cible du BAT dans la variable **[!UICONTROL Tweet]** modèle de diffusion, accessible à partir du **[!UICONTROL Ressources > Modèles > Modèles de diffusion]** noeud . La cible du BAT sera alors renseignée par défaut pour chaque nouvelle diffusion.
+   >Si vous utilisez le même compte de test X pour toutes vos diffusions, vous pouvez enregistrer la cible des BAT dans le modèle de diffusion **[!UICONTROL Poster]**, accessible à partir du nœud **[!UICONTROL Ressources > Modèles > Modèles de diffusion]**. La cible des BAT sera alors renseignée par défaut pour chaque nouvelle diffusion.
 
 1. Définition du contenu de votre publication
 
@@ -64,7 +64,7 @@ Suivez les étapes ci-dessous pour publier un message sur votre compte X :
 
    >[!CAUTION]
    >
-   >Lorsque vous publiez sur X, les restrictions s’appliquent :
+   >Lors de la publication sur X, des restrictions s’appliquent :
    >
    >* Le message ne peut pas dépasser 140 caractères.
    >* Le format HTML n&#39;est pas supporté.
@@ -78,11 +78,11 @@ Suivez les étapes ci-dessous pour publier un message sur votre compte X :
 
    1. Cliquez sur l&#39;onglet **[!UICONTROL Aperçu]**.
    1. Cliquez sur le menu déroulant **[!UICONTROL Tester la personnalisation]** et sélectionnez **[!UICONTROL Service]**.
-   1. Dans le **[!UICONTROL Dossier]** , sélectionnez le dossier de services contenant votre compte X.
+   1. Dans le champ **[!UICONTROL Dossier]**, sélectionnez le dossier de services contenant votre compte X.
 
 1. Envoyer un BAT
 
-   Avant de publier votre tweet, veillez à le valider en envoyant un bon à tirer de votre publication : vous pouvez alors obtenir un rendu exact de la publication sur une page de test X privée.
+   Avant de publier votre publication, veillez à la valider en envoyant un BAT de votre publication : vous pouvez ensuite obtenir un rendu exact de la publication sur une page de test X privée.
 
 1. Publication du message
 
@@ -93,11 +93,11 @@ Suivez les étapes ci-dessous pour publier un message sur votre compte X :
 
 ## Envoi de messages directs à des abonnés {#direct-tw-messages}
 
-La variable **[!UICONTROL Synchronisation des comptes de Twitter]** workflow technique récupère la liste des abonnés X afin que vous puissiez leur envoyer des messages directs. [En savoir plus](../connect/ac-tw.md#synchro-tw-accounts)
+Le workflow technique **[!UICONTROL Synchronisation des comptes X]** récupère la liste des abonnées et abonnés X afin que vous puissiez leur envoyer des messages directs. [En savoir plus](../connect/ac-tw.md#synchro-tw-accounts)
 
 Pour envoyer des messages directs à vos abonnés, procédez comme suit :
 
-1. Créez une diffusion X basée sur la variable **[!UICONTROL Tweet (message direct)]** modèle de diffusion intégré.
+1. Créez une diffusion X basée sur le modèle de diffusion intégré **[!UICONTROL Poster (message direct)]**.
 
 1. Sélection de la cible principale
 
@@ -113,12 +113,12 @@ Pour envoyer des messages directs à vos abonnés, procédez comme suit :
 
 1. Sélectionnez la cible du BAT dans l’onglet **[!UICONTROL Cible des BAT]** : ce compte recevra le BAT de votre message direct.
 
-   Comme indiqué dans la section [étapes de configuration](../connect/ac-tw.md#tw-test-account), vous devez créer un compte X de test privé dédié à l&#39;envoi de BAT.
+   Comme indiqué dans les [étapes de configuration](../connect/ac-tw.md#tw-test-account), vous devez créer un compte test X privé dédié à l’envoi de BAT.
 
 
    >[!NOTE]
    >
-   >Si vous souhaitez envoyer tous les BAT de vos messages directs au même compte X, vous pouvez enregistrer la cible du BAT dans la variable **[!UICONTROL Tweet (message direct)]** modèle de diffusion, accessible à partir du **[!UICONTROL Ressources > Modèles > Modèles de diffusion]** noeud .
+   >Si vous souhaitez envoyer tous les BAT de vos messages directs au même compte X, vous pouvez enregistrer la cible du BAT dans le modèle de diffusion **[!UICONTROL Poster (message direct)]**, accessible via le nœud **[!UICONTROL Ressources > Modèles > Modèles de diffusion]**.
 
 1. Saisissez le contenu du message dans l&#39;onglet **[!UICONTROL Contenu]**.
 
@@ -134,11 +134,11 @@ Pour envoyer des messages directs à vos abonnés, procédez comme suit :
 
    1. Cliquez sur l&#39;onglet **[!UICONTROL Aperçu]**.
    1. Cliquez sur le menu déroulant **[!UICONTROL Tester la personnalisation]** et sélectionnez **[!UICONTROL Abonnements des visiteurs]**.
-   1. Sélectionnez un compte X avec lequel vous souhaitez tester l&#39;aperçu.
+   1. Sélectionnez le compte X sur lequel vous souhaitez tester l’aperçu.
 
 1. Envoyer un BAT
 
-   Avant d&#39;envoyer votre message, veillez à le valider en [envoi d’un BAT à un compte test](../send/preview-and-proof.md): vous pouvez alors obtenir un rendu exact du message sur un compte X privé et vérifier le contenu et la personnalisation.
+   Avant d’envoyer votre message, veillez à le valider en [envoyant un BAT vers un compte test](../send/preview-and-proof.md) : vous pouvez ensuite obtenir un rendu exact du message sur un compte X privé et vérifier le contenu et la personnalisation.
 
 1. Envoi du message direct
 
