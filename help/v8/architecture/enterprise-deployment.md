@@ -6,15 +6,15 @@ role: Admin, Developer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
 source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1045'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Déploiement FFDA [!DNL Campaign] {#gs-ac-ffda}
 
-En tirant parti [[!DNL Snowflake]](https://www.snowflake.com/){target="_blank"}, une technologie de base de données cloud, le déploiement d’Adobe Campaign Enterprise Full Federated Access (FFDA) améliore considérablement son échelle et sa vitesse, avec la possibilité de gérer un nombre plus important de profils clients, ainsi que des taux de remise et des transactions beaucoup plus élevés par heure.
+Grâce à l’utilisation de [[!DNL Snowflake]](https://www.snowflake.com/){target="_blank"}, une technologie de base de données cloud, le déploiement Adobe Campaign Enterprise Full Federated Access (FFDA) améliore considérablement sa taille et sa vitesse, grâce à la capacité de gérer un nombre plus important de profils client, ainsi qu’à des taux de diffusion et de transactions par heure beaucoup plus élevés.
 
 ## Avantages {#ffda-benefits}
 
