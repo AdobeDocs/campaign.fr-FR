@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
 source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1118'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -381,7 +381,7 @@ Les rapports suivants sont également fournis natifs. Pour plus d&#39;informatio
   </tr> 
   <tr> 
    <td> Historique des acquisitions de prospects sociaux (socialVisitorStatistics)<br /> </td> 
-   <td> Historique des acquisitions de X (anciennement appelé Twitter) et de prospects Facebook. Dépend du composant additionnel Social Marketing.<br /> </td> 
+   <td> Historique des acquisitions de prospects X (anciennement Twitter) et Facebook, en fonction du module complémentaire Social Marketing.<br /> </td> 
    <td> nms:visitor<br /> </td> 
   </tr> 
   <tr> 
