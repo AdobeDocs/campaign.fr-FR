@@ -8,7 +8,7 @@ exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
 source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -37,9 +37,9 @@ La nouvelle offre combine les services les plus performants avec une surveillanc
 
 En tant qu’ancien utilisateur [!DNL Campaign Classic], veuillez noter que la plupart des fonctionnalités de [!DNL Campaign Classic] v7 sont disponibles dans [!DNL Campaign] v8, à l’exception d’un petit ensemble de fonctionnalités répertoriées dans [cette section](#gs-removed).
 
-Campaign v8 repose sur une **architecture hybride**. Si vous effectuez une transition à partir de Campaign Classic v7, veuillez noter que toutes les diffusions passent par le serveur de midsourcing. Par conséquent, le routage interne est **impossible** dans Campaign v8 et le compte externe a été désactivé en conséquence.
+Campaign v8 repose sur une **architecture hybride**. Si vous effectuez une transition à partir de Campaign Classic v7, veuillez noter que toutes les diffusions passent par le serveur de midsourcing. Par conséquent, le routage interne est **impossible** dans Campaign v8 et le compte externe a donc été désactivé.
 
-![](../assets/do-not-localize/glass.png) En savoir plus sur l&#39;envoi de BAT de messages transactionnels lors de la transition de la v7 vers la version [cette page](../send/transactional-template.md#transition-from-v7).
+![](../assets/do-not-localize/glass.png) Pour en savoir plus sur l’envoi de BAT de messages transactionnels si vous effectuez une transition à partir de Campaign v7, consultez [cette page](../send/transactional-template.md#transition-from-v7).
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Campaign v8 repose sur une **architecture hybride**. Si vous effectuez une tran
 
 ## [!DNL Campaign] et [!DNL Snowflake] {#ac-gs-snowflake}
 
-Dans son [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), [!DNL Adobe Campaign] v8 fonctionne avec deux bases de données : une base locale [!DNL Campaign] base de données pour la messagerie en temps réel et les requêtes unitaires de l’interface utilisateur, et écrire via les API, et un cloud [!DNL Snowflake] base de données pour l&#39;exécution des opérations, les requêtes par lots et l&#39;exécution des workflows.
+Dans son [déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), [!DNL Adobe Campaign] v8 fonctionne avec deux bases de données : une base de données [!DNL Campaign] locale pour la messagerie en temps réel de l’interface utilisateur et les requêtes et écritures unitaires à travers les API, et une base de données cloud [!DNL Snowflake] pour l’exécution de campagnes, les requêtes par lots et l’exécution de workflows.
 
 Campaign v8 Enterprise présente le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud. Avec cette nouvelle architecture, le déploiement Campaign v8 Enterprise (FFDA) simplifie la gestion des données : aucun index n&#39;est requis sur la base de données cloud. Il vous suffit de créer les tables et de copier les données pour démarrer. La technologie de base de données cloud ne nécessite pas de maintenance spécifique pour garantir le niveau de performances attendu.
 

@@ -6,7 +6,7 @@ exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74
 source-git-commit: 0f86b6303bd380f5079b38de88ee3d097e415695
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 57%
+ht-degree: 86%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 57%
 
 ## Nouveautés
 
-Découvrez les dernières améliorations apportées à la documentation et au produit Adobe Campaign v8 ! Pour obtenir une liste complète des fonctionnalités, des améliorations et des correctifs, consultez le [Notes de mise à jour](start/release-notes.md).
+Découvrez les dernières améliorations apportées à Adobe Campaign v8 et à sa documentation. Pour obtenir la liste complète des fonctionnalités, des améliorations et des correctifs, consultez les [Notes de mise à jour](start/release-notes.md).
 
 >[!BEGINTABS]
 
@@ -39,25 +39,25 @@ Ces performances de débit maximales ont été mesurées par des équipes de tes
 
 >[!ENDTABS]
 
-## Commencer par les principes de base
+## Premiers pas avec les principes de base
 
 <table style="table-layout:fixed">
   <tr style="border: 0;">
     <td>
     <a href="start/whats-new.md"><img src="assets/do-not-localize/start-capabilities.png"></a>
-    <div><strong>Fonctionnalités clés</strong><br/>Découvrez les principales fonctionnalités d’Adobe Campaign v8 pour la gestion de campagnes cross-canal.</div>
+    <div><strong>Fonctionnalités clés</strong><br/> Découvrez les principales fonctionnalités d’Adobe Campaign v8 pour la gestion de campagnes cross-canal.</div>
     </td>
     <td>
     <a href="start/connect.md"><img src="assets/do-not-localize/start-connect.jpeg"></a>
-    <div><strong>Connexion à Campaign v8</strong><br/>Découvrez comment vous connecter à Adobe Campaign v8 et lancer rapidement votre parcours de gestion de campagne en installant et en configurant la console cliente.</div><br/>
+    <div><strong>Se connecter à Campaign v8</strong><br/> Découvrez comment vous connecter à Adobe Campaign v8 et démarrer votre parcours de gestion de campagne en installant et en configurant la console cliente.</div><br/>
     </td>
     <td>
     <a href="start/create-message.md"><img src="assets/do-not-localize/start-send.jpeg"></a>
-    <div><strong>Envoyer les messages</strong><br/>Découvrez comment envoyer des messages sur différents canaux tels que des emails, des SMS, des notifications push, etc.
+    <div><strong>Envoyer des messages</strong><br/> Découvrez comment envoyer des messages sur différents canaux tels que des e-mails, des SMS, des notifications push, etc.
     </div></td>
     <td>
     <a href="audiences/create-profiles.md"><img src="assets/do-not-localize/start-profiles.png"></a>
-    <div><strong>Importer des profils</strong><br/>Explorez facilement la création de profils dans la base de données Adobe Campaign v8. Ajoutez des profils manuellement ou par le biais d’imports, affinez les données client et personnalisez facilement les campagnes.</div>
+    <div><strong>Importer des profils</strong><br/> Explorez avec facilité la création de profils dans la base de données Adobe Campaign v8. Ajoutez des profils manuellement ou en les important, affinez les données client et personnalisez les campagnes en un tour de main.</div>
     </td>
   </tr>
   <tr style="border: 0;">
@@ -68,7 +68,7 @@ Ces performances de débit maximales ont été mesurées par des équipes de tes
     </tr>
 </table>
 
-## Explorer la documentation
+## Parcourir la documentation
 
 <table style="table-layout:auto">
   <tr style="border: 0;">
@@ -109,5 +109,5 @@ Ces performances de débit maximales ont été mesurées par des équipes de tes
 
 ## Ressources supplémentaires
 
-[Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html){target="_blank"} - [[!DNL Adobe Campaign] automation guide](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=fr){target="_blank"} - [Control Panel for Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"}
+[Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=fr){target="_blank"} - [[!DNL Adobe Campaign] automation guide](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=fr){target="_blank"} - [Control Panel for Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"}
 
