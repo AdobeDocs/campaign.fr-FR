@@ -6,7 +6,7 @@ role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
 source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1625'
 ht-degree: 100%
 
@@ -94,7 +94,7 @@ Une fois votre workflow créé, vous pouvez accéder à des options supplémenta
 
 Pour en savoir plus sur les **propriétés du workflow**, consultez [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/workflow-properties.html?lang=fr).
 
-Dans l&#39;onglet **[!UICONTROL Exécution]** de la fenêtre des **[!UICONTROL Propriétés]** de votre workflow, vous pouvez choisir de lier votre workflow à différents entrepôts et optimiser la gestion de votre charge de travail. Pour plus d&#39;informations sur les **Entrepôts**, consultez la [documentation de Snowflake](https://docs.snowflake.com/fr/user-guide/warehouses-overview.html){target="_blank"}.
+Dans l’onglet **[!UICONTROL Exécution]** de la fenêtre des **[!UICONTROL Propriétés]** de votre workflow, vous pouvez choisir de lier votre workflow à différents entrepôts et optimiser la gestion de votre charge de travail. Pour plus d’informations sur les **Entrepôts**, consultez la [documentation de Snowflake](https://docs.snowflake.com/fr/user-guide/warehouses-overview.html){target="_blank"}.
 
 ![](assets/warehouse.png)
 
