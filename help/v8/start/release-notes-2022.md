@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
 source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1853'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -51,20 +51,20 @@ _30 septembre 2022_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Disponibilité du canal X (anciennement appelé Twitter)</strong><br /> </th> 
+<th> <strong>Disponibilité du canal X (anciennement Twitter)</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>La variable <a href="../send/twitter.md">Canal social X</a> est désormais disponible avec Campaign v8. Vous pouvez ainsi :</p>
+<td> <p>Le <a href="../send/twitter.md">canal social X</a> est désormais disponible avec Campaign v8. Vous pouvez ainsi effectuer les actions suivantes :</p>
 <ul> 
-<li><p>Envoyer les messages sur X (anciennement appelé Twitter) : Adobe Campaign vous permet de publier des messages directement sur votre compte X. Vous pouvez également envoyer des messages directs à tous les abonnés de vos comptes.
+<li><p>Envoyer des messages sur X (anciennement Twitter) : Adobe Campaign vous permet de publier des messages directement sur votre compte X. Vous pouvez également envoyer des messages directs à tous les abonnées et abonnés de vos comptes.
 </p></li>
 <li><p>Collecter de nouveaux contacts : Adobe Campaign peut récupérer automatiquement les données de profil, ce qui vous permet ainsi d’exécuter des campagnes de ciblage et, lorsque cela est possible, d’implémenter des stratégies cross-canal.
 </p></li>
 </ul>
-<p>Découvrez comment connecter Campaign et X dans le <a href="../connect/ac-tw.md">documentation détaillée</a>.</p>
-<p>Découvrez comment créer des publications et envoyer des messages directs avec Campaign dans <a href="../connect/ac-tw.md">cette page</a>.</p>
+<p>Découvrez comment connecter Campaign et X dans la <a href="../connect/ac-tw.md">documentation détaillée</a>.</p>
+<p>Découvrez comment créer des publications et envoyer des messages directs avec Campaign sur <a href="../connect/ac-tw.md">cette page</a>.</p>
 </td> 
 </tr> 
 </tbody> 
