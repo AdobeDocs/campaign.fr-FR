@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
 source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 92%
+source-wordcount: '686'
+ht-degree: 91%
 
 ---
 
@@ -79,7 +79,7 @@ Certaines fonctionnalités ne sont pas disponibles dans le cadre d’un [déploi
 
 Campaign v8 ne prend plus en charge certaines fonctionnalités historiques de Campaign Classic v7 telles que :
 
-* Marketing pour réseaux sociaux    avec Facebook
+* Social Marketing avec Facebook
 * Connecteur ACS (offre principale)
 * Intégration avec LDAP
 * Connexion utilisateur/mot de passe
