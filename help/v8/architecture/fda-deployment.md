@@ -1,24 +1,24 @@
 ---
-title: Prise en main du déploiement de Campaign FDA
-description: Prise en main du déploiement de Campaign FDA
+title: Prise en main du déploiement FDA de Campaign
+description: Prise en main du déploiement FDA de Campaign
 feature: Architecture, Federated Data Access, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: b3df0336-f40e-4ac1-b6a4-068b8827dca2
 source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '326'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
-# Déploiement [!DNL Campaign] FDA {#gs-fda}
+# Déploiement FDA de [!DNL Campaign]{#gs-fda}
 
-Dans son déploiement Campaign FDA (par défaut), [!DNL Adobe Campaign] v8 peut être connecté à [!DNL Snowflake] pour accéder aux données via [Federated Data Access](../connect/fda.md) fonctionnalité : vous pouvez ensuite accéder aux données et aux informations externes stockées dans votre [!DNL Snowflake] sans modifier la structure des données Adobe Campaign.
+Dans un déploiement FDA (par défaut), [!DNL Adobe Campaign] v8 peut être connecté à [!DNL Snowflake] pour accéder aux données via la fonctionnalité [Federated Data Access](../connect/fda.md) : vous pouvez ainsi accéder aux données et aux informations externes stockées dans votre base de données [!DNL Snowflake] sans modifier la structure des données Adobe Campaign.
 
 >[!NOTE]
 >
->Dans ce modèle de déploiement, la variable [!DNL Snowflake] La base de données secondaire n’est disponible que sur demande. Pour mettre à jour votre déploiement avec [!DNL Snowflake], contactez votre gestionnaire de transition d’Adobe.
+>Dans ce modèle de déploiement, la base de données [!DNL Snowflake] secondaire n’est disponible que sur demande. Pour mettre à jour votre déploiement avec [!DNL Snowflake], contactez la personne chargée de votre transition Adobe.
 >
 
 ## Avantages{#fda-benefits}
