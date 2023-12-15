@@ -6,18 +6,22 @@ feature: Push
 role: Admin, Developer
 level: Intermediate
 exl-id: 1a75f411-3f71-4114-b738-277820dc6138
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
 workflow-type: tm+mt
-source-wordcount: '1815'
-ht-degree: 100%
+source-wordcount: '1787'
+ht-degree: 94%
 
 ---
 
 # Configurer le canal de notification push {#push-notification-configuration}
 
-Avant de commencer à envoyer des notifications push avec Adobe Campaign, vous devez vous assurer que les configurations et les intégrations sont en place sur l’application mobile et pour les balises dans Adobe Experience Platform.
+Pour envoyer des notifications push avec Adobe Campaign, vous devez d’abord configurer votre environnement et votre application, comme décrit dans cette page. Dans Adobe Campaign, le canal d’envoi des notifications push est le canal de l’application mobile.
 
-Le SDK mobile Adobe Experience Platform fournit des API d’intégration côté client pour vos mobiles via les SDK compatibles Android et iOS.
+>[!CAUTION]
+>
+>Certaines modifications importantes apportées au service Android FCM (Firebase Cloud Messaging) seront publiées en 2024 et auront une incidence sur votre mise en œuvre d’Adobe Campaign. Il se peut que la configuration de vos services d’abonnement pour les messages push Android doive être mise à jour pour prendre en charge cette modification. Vous pouvez déjà vérifier et agir. [En savoir plus](../../technotes/upgrades/push-technote.md).
+
+Avant de commencer à envoyer des notifications push avec Adobe Campaign, vous devez vous assurer que les configurations et les intégrations sont en place sur l’application mobile et pour les balises dans Adobe Experience Platform. Le SDK mobile Adobe Experience Platform fournit des API d’intégration côté client pour vos mobiles via les SDK compatibles Android et iOS.
 
 Pour configurer votre application avec des SDK mobiles Adobe Experience Platform, procédez comme suit :
 
@@ -163,7 +167,7 @@ Pour créer un service destiné à envoyer des notifications push, procédez com
 
    >[!NOTE]
    >
-   >Le mapping de ciblage par défaut **[!UICONTROL Applications abonnées (nms:appSubscriptionRcp)]** est lié à la table des destinataires. Si vous souhaitez utiliser un autre mapping de ciblage, vous devez en créer un nouveau et le renseigner dans le champ **[!UICONTROL Mapping de ciblage]** du service. Pour plus d’informations sur les mappings de ciblage, consultez [cette page](../audiences/target-mappings.md).
+   >Par défaut **[!UICONTROL Applications abonnées (nms:appSubscriptionRcp)]** le mapping de ciblage est lié à la table des destinataires. Si vous souhaitez utiliser un autre mapping de ciblage, vous devez créer un nouveau mapping de ciblage et le saisir dans la variable **[!UICONTROL Mapping de ciblage]** du service. Pour plus d’informations sur les mappings de ciblage, consultez [cette page](../audiences/target-mappings.md).
 
 1. Ensuite, utilisez l’icône **[!UICONTROL Ajouter]** sur la droite pour définir les applications mobiles qui utilisent ce service.
 
