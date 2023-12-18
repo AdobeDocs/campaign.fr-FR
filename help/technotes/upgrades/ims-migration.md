@@ -5,9 +5,9 @@ feature: Technote
 role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
 source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1511'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -155,7 +155,7 @@ Une fois le processus de migration réalisé et validé, les appels Soap sont mi
 
 
 
-* Avant la migration : le jeton d’accès au compte technique n’était pas pris en charge.
+* Avant la migration : le jeton d’accès au compte technique n’est pas pris en charge.
 
   ```sql
   POST /nl/jsp/soaprouter.jsp HTTP/1.1
