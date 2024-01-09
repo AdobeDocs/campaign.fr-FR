@@ -3,11 +3,11 @@ audience: end-user
 user-guide-title: Campaign v8
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
-breadcrumb-title: Présentation de Campaign
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
-workflow-type: ht
-source-wordcount: '579'
-ht-degree: 100%
+breadcrumb-title: Documentation de Campaign v8
+source-git-commit: 24785675a2138e3ce9c806fb52ac29a6a18c6d31
+workflow-type: tm+mt
+source-wordcount: '557'
+ht-degree: 95%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 100%
    + [Analyse des diffusions](send/delivery-analysis.md)
    + [Configurer et envoyer la diffusion](send/configure-and-send.md)
    + [Optimisation de l’heure d&#39;envoi](send/predictive.md)
-   + Échecs, retours et mises en quarantaine{#failures}
+   + Échecs, rebonds et mises en quarantaine{#failures}
       + [Quarantaines](send/quarantines.md)
       + [Diffusions en échec](send/delivery-failures.md)
    + [Utiliser des modèles de diffusion](send/create-templates.md)
@@ -105,7 +105,7 @@ ht-degree: 100%
       + [Création d&#39;emplacements](interaction/interaction-offer-spaces.md)
    + [Création d&#39;un catalogue d&#39;offres](interaction/interaction-offer-catalog.md)
    + [Création d&#39;une offre](interaction/interaction-offer.md)
-   + [Envoi d&#39;une offre    (sortante)](interaction/interaction-send-offers.md)
+   + [Envoyer une offre (sortante)](interaction/interaction-send-offers.md)
    + Présentation dʼune offre (entrante){#inbound}
       + [Contexte](interaction/interaction-present-offers.md)
       + [Appel dʼune offre dans une page web](interaction/interaction-integration.md)
@@ -133,7 +133,7 @@ ht-degree: 100%
    + [Documentation des workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=fr)
 + Intégrations {#connect}
    + [Connecter des campagnes à d’autres solutions](connect/integration.md)
-   + Campaign + Experience Platform {#ac-aep}
+   + Campaign + Experience Platform {#ac-aep}
       + [Audiences et attributs de profil](connect/ac-aep.md)
       + [Pages de destination et attributs de profil Campaign](connect/ac-aep-landing-pages.md)
    + [Campaign + Journey Optimizer](connect/ac-ajo.md)
@@ -143,7 +143,7 @@ ht-degree: 100%
    + [Campaign + triggers Experience Cloud](connect/ac-triggers.md)
    + [Campaign + X (Twitter)](connect/ac-tw.md)
    + [Campaign + base de données externe](connect/fda.md)
-   + Campaign + votre CRM   {#ac-crm}
+   + Campaign + votre CRM {#ac-crm}
       + [Prise en main des connecteurs CRM](connect/crm.md)
       + [Utilisation de Campaign et SFDC](connect/ac-sfdc.md)
       + [Utilisation de Campaign et Microsoft Dynamics](connect/ac-ms-dyn.md)
@@ -157,7 +157,7 @@ ht-degree: 100%
 + Architecture et configuration {#config}
    + Architecture de Campaign v8 {#architecture}
       + [Principes généraux](architecture/general-architecture.md)
-      + [Architecture Modèles](architecture/architecture.md)
+      + [Modèles d’architecture](architecture/architecture.md)
       + [Déploiement FDA de Campaign](architecture/fda-deployment.md)
       + Déploiement d’Entreprise (FFDA) {#ffda}
          + [Qu’est-ce que Campaign FFDA ?](architecture/enterprise-deployment.md)
@@ -174,7 +174,7 @@ ht-degree: 100%
       + [Gérer les dossiers et les vues](audiences/folders-and-views.md)
       + [Paramètres d’e-mail](config/email-settings.md)
       + [Paramètres de messagerie transactionnelle](config/transactional-msg-settings.md)
-      + [Intégrer les SDK Campaign à votre application - PAGE OBSOLÈTE](config/push-config.md)
+      + [Intégration des SDK Campaign à votre application - PAGE OBSOLÈTE](config/push-config.md)
       + [Comptes externes](config/external-accounts.md)
 + Ressources de développement {#developer}
    + [Modèle de données Campaign](dev/datamodel.md)
