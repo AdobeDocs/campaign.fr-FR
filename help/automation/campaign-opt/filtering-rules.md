@@ -4,10 +4,10 @@ title: Configurer les règles de filtrage
 description: Découvrir comment utiliser les règles de filtrage
 feature: Typology Rules
 exl-id: 17507cdf-211f-4fa2-abb9-33d4f6dc47bb
-source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
+source-git-commit: 1fb93efac4fee4965213f8b42f518f2c10638e20
 workflow-type: tm+mt
 source-wordcount: '551'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -28,7 +28,7 @@ Pour définir ce filtrage, les étapes sont les suivantes :
 
    ![](assets/campaign_opt_create_filter_01.png)
 
-1. Sous l’onglet **Filtre**, modifiez la dimension de ciblage par défaut en **Abonnements** (**nms:subscription**).
+1. Dans la **Filtrer** Définissez la dimension de ciblage par défaut sur **Abonnements** (**nms:subscription**).
 
    ![](assets/campaign_opt_create_filter_02.png)
 
@@ -74,7 +74,7 @@ Ces typologies spécifiques peuvent être associées à une diffusion lors du ch
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 
-Sélectionnez ensuite la ou les typologies de filtrage à appliquer à la diffusion. Pour cela, cliquez sur le bouton **[!UICONTROL Ajouter]** et sélectionner la typologie à appliquer.
+Sélectionnez ensuite la typologie de filtrage à appliquer à la diffusion. Pour ce faire, cliquez sur le bouton **[!UICONTROL Ajouter]** et sélectionnez les typologies à appliquer.
 
 Vous pouvez également associer directement des règles de filtrage depuis cet onglet, sans qu&#39;elles soient regroupées dans une typologie. Pour cela, utilisez la section inférieure de la fenêtre.
 
