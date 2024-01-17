@@ -5,8 +5,8 @@ feature: Push
 role: User
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
-workflow-type: tm+mt
+source-git-commit: 6d54f072ad0e67b435cd6e03433fa9ddd0794dea
+workflow-type: ht
 source-wordcount: '947'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Avant de commencer à envoyer des notifications push avec Adobe Campaign, vous 
 
 Cette section présente les éléments spécifiques à la diffusion de notifications iOS et Android.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), l’enregistrement mobile est désormais **asynchrone**. [En savoir plus](../architecture/staging.md)
 
