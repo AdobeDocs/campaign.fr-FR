@@ -12,7 +12,7 @@ ht-degree: 100%
 
 ---
 
-# Création et envoi de notifications push{#push-notifications-create}
+# Créer et envoyer des notifications push{#push-notifications-create}
 
 Les diffusions d’applications mobiles vous permettent d’envoyer des notifications aux appareils iOS et Android.
 
