@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: ff2be012-72f3-428d-a973-196fea7ec4ab
 source-git-commit: f04db53bee75c935bc8737eef93fa05ec6868ebc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '392'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -28,9 +28,9 @@ Les étapes de génération du fichier sont les suivantes :
 
    Les profils des destinataires doivent contenir au minimum leurs noms et adresses postales.
 
-   Les adresses postales sont des champs calculés. Par défaut, une adresse peut contenir jusqu&#39;à six lignes : la première contient le prénom et le nom, les suivantes contiennent l&#39;adresse postale (rue et compléments) et la dernière contient le code postal et la ville. La définition du champ postalAddress calculé par défaut peut être vérifiée dans le schéma nms:recipient .
+   Les adresses postales sont des champs calculés. Par défaut, une adresse peut contenir jusqu’à six lignes : la première contient le prénom et le nom, les suivantes contiennent les coordonnées postales (rue et compléments), et la dernière contient le code postal et la ville. La définition du champ postalAddress calculé par défaut peut être vérifiée dans le schéma nms:recipient.
 
-   Une adresse est considérée comme complète si les champs Nom, Code postal et Ville ne sont pas vides. Les destinataires dont les adresses sont incomplètes seront exclus des diffusions courrier.
+   Une adresse est considérée comme complète si les champs relatifs au nom, au code postal et à la ville ne sont pas vides. Les personnes destinataires dont les adresses sont incomplètes seront exclues des diffusions par courrier.
 
    ![](../assets/do-not-localize/book.png)Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html?lang=fr){target="_blank"}.
 
