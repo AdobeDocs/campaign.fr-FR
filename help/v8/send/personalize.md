@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
 source-git-commit: 6d54f072ad0e67b435cd6e03433fa9ddd0794dea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '480'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 95%
 
 Pour tirer le meilleur parti de chacune de vos campagnes marketing, Adobe Campaign permet de diffuser du contenu personnalisé adapté au profil de la clientèle. Les fonctionnalités de personnalisation d’Adobe Campaign, basées sur les données de profil, vous permettent de créer une expérience personnalisée pour chaque groupe et personne : adaptez vos messages en fonction du ou de la destinataire grâce aux données et informations dont vous disposez à son sujet. Il peut s’agir de son prénom, de ses centres d’intérêts, de l’endroit où il/elle vit, de ses achats et bien plus encore.
 
-Adobe Campaign simplifie la personnalisation : vous pouvez afficher différents types de contenu personnalisés pour chaque destinataire à l&#39;aide d&#39;une seule [modèle de message](create-templates.md). Dans vos messages transactionnels, tels que les e-mails de confirmation d’achat ou d’abandon de panier, incluez les informations sur les listes de produits pour chaque personne dans un modèle d’e-mail unique.
+Adobe Campaign simplifie la personnalisation : affichez différents types de contenu personnalisé à chaque personne destinataire à l’aide d’un seul [modèle de message](create-templates.md). Dans vos messages transactionnels, tels que les e-mails de confirmation d’achat ou d’abandon de panier, incluez les informations sur les listes de produits pour chaque personne dans un modèle d’e-mail unique.
 
 
 ## Stratégies de personnalisation {#personalization-strategy}
