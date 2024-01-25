@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 86fa52c445b89227cfabb65e74627c5da7d3db1f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1049'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -24,13 +24,13 @@ Deux types d’environnements sont disponibles :
 
 * **Environnement de non-production** : utilisé pour divers tests de performances et de qualité avant que les modifications apportées à l&#39;application ne soient envoyées à l&#39;environnement de production.
 
-Vous pouvez exporter et importer des packages d&#39;un environnement à l&#39;autre.
+Vous pouvez exporter et importer des packages d’un environnement à l’autre.
 
-![](../assets/do-not-localize/book.png) En savoir plus sur les packages dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=fr){target="_blank"}
+![](../assets/do-not-localize/book.png)En savoir plus sur les packages dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=fr){target="_blank"}.
 
 ## Modèles de déploiement {#ac-deployment}
 
-Deux modèles de déploiement sont disponibles : **Déploiement Campaign FDA** (P1-P3) et **Déploiement Campaign Enterprise (FFDA)** (P4).
+Deux modèles de déploiement sont disponibles : **Déploiement FDA de Campaign** (P1-P3) et **Déploiement Campaign Grands comptes (FFDA)** (P4).
 
 ### Déploiement FDA de Campaign {#ac-deployment-fda}
 
@@ -44,7 +44,7 @@ Dans son [déploiement FDA](fda-deployment.md), [!DNL Adobe Campaign] v8 peut �
 >Dans ce modèle de déploiement, la base de données [!DNL Snowflake] secondaire n’est disponible que sur demande. Pour mettre à jour votre déploiement avec [!DNL Snowflake], contactez la personne chargée de votre transition Adobe.
 >
 
-### Déploiement Campaign Enterprise (FFDA) {#ac-deployment-ffda}
+### Déploiement Campaign Grands comptes (FFDA) {#ac-deployment-ffda}
 
 Dans un [déploiement Grands comptes (FFDA)](enterprise-deployment.md), [!DNL Adobe Campaign] v8 fonctionne avec deux bases de données : une base de données [!DNL Campaign] locale pour la messagerie en temps réel de l’interface utilisateur et les requêtes et écritures unitaires à travers les API, et une base de données [!DNL Snowflake] cloud pour l’exécution de campagnes, les requêtes par lots et l’exécution de workflows.
 
