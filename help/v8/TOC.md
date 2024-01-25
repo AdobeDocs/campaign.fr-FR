@@ -4,11 +4,11 @@ user-guide-title: Campaign v8
 user-guide-description: Documentation du produit pour Adobe Campaign v8.
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
-breadcrumb-title: Documentation de Campaign v8
+breadcrumb-title: Documentation Campaign v8
 source-git-commit: f04db53bee75c935bc8737eef93fa05ec6868ebc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '565'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 96%
    + [Problèmes connus](start/known-issues.md)
    + [Matrice de compatibilité](start/compatibility-matrix.md)
 + Prise en main {#new}
-   + [Prise en main d’Adobe Campaign ](start/get-started.md)
+   + [Prise en main d’Adobe Campaign](start/get-started.md)
    + [Fonctionnalités principales](start/whats-new.md)
    + [Composants et processus](start/ac-components.md)
    + [Se connecter à Campaign](start/connect.md)
@@ -135,7 +135,7 @@ ht-degree: 96%
    + [Documentation des workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=fr)
 + Intégrations {#connect}
    + [Connecter des campagnes à d’autres solutions](connect/integration.md)
-   + Campaign + Experience Platform {#ac-aep}
+   + Campaign + Experience Platform {#ac-aep}
       + [Audiences et attributs de profil](connect/ac-aep.md)
       + [Pages de destination et attributs de profil Campaign](connect/ac-aep-landing-pages.md)
    + [Campaign + Journey Optimizer](connect/ac-ajo.md)
@@ -145,7 +145,7 @@ ht-degree: 96%
    + [Campaign + triggers Experience Cloud](connect/ac-triggers.md)
    + [Campaign + X (Twitter)](connect/ac-tw.md)
    + [Campaign + base de données externe](connect/fda.md)
-   + Campaign + votre CRM {#ac-crm}
+   + Campaign + votre CRM {#ac-crm}
       + [Prise en main des connecteurs CRM](connect/crm.md)
       + [Utilisation de Campaign et SFDC](connect/ac-sfdc.md)
       + [Utilisation de Campaign et Microsoft Dynamics](connect/ac-ms-dyn.md)
@@ -176,7 +176,7 @@ ht-degree: 96%
       + [Gérer les dossiers et les vues](audiences/folders-and-views.md)
       + [Paramètres d’e-mail](config/email-settings.md)
       + [Paramètres de messagerie transactionnelle](config/transactional-msg-settings.md)
-      + [Intégration des SDK Campaign à votre application - PAGE OBSOLÈTE](config/push-config.md)
+      + [Intégrer les SDK Campaign à votre application – PAGE OBSOLÈTE](config/push-config.md)
       + [Comptes externes](config/external-accounts.md)
 + Ressources de développement {#developer}
    + [Modèle de données Campaign](dev/datamodel.md)
