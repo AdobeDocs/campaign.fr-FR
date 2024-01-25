@@ -5,9 +5,9 @@ description: Découvrir comment utiliser les règles de filtrage
 feature: Typology Rules
 exl-id: 17507cdf-211f-4fa2-abb9-33d4f6dc47bb
 source-git-commit: 1fb93efac4fee4965213f8b42f518f2c10638e20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '551'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Pour définir ce filtrage, les étapes sont les suivantes :
 
    ![](assets/campaign_opt_create_filter_01.png)
 
-1. Dans la **Filtrer** Définissez la dimension de ciblage par défaut sur **Abonnements** (**nms:subscription**).
+1. Sous l’onglet **Filtre**, modifiez la dimension de ciblage par défaut sur **Abonnements** (**nms:subscription**).
 
    ![](assets/campaign_opt_create_filter_02.png)
 
