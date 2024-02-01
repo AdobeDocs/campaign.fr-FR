@@ -2,10 +2,10 @@
 title: Mise à niveau de l’infrastructure d’envoi d’e-mails dans Campaign
 description: Mise à niveau de l’infrastructure d’envoi d’e-mails dans Campaign
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 557a74dbfbd0af385cc5104801ce3ab91dd33a95
+source-git-commit: 68252db5ad53e2a37c76765cd35650f824101289
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '331'
+ht-degree: 90%
 
 ---
 
@@ -25,11 +25,9 @@ Cette modification affecte :
 
 ## Quand cette mise à niveau aura-t-elle lieu ?{#aws-timeline}
 
-La mise à niveau des environnements de développement et d’évaluation est attendue pour **octobre 2023**.
+Les mises à niveau des environnements de développement et d’évaluation ont commencé à **Octobre 2023**.
 
-Nous prévoyons de planifier les mises à niveau de l’environnement de production à partir de **janvier 2024**.
-
-En tant que client ou cliente Campaign, vous recevrez au moins trente (30) jours à l’avance une notification supplémentaire concernant la mise à niveau de l’environnement de production.
+Les mises à niveau des environnements de production ont commencé à **Janvier 2024**.
 
 ## À quoi s’attendre ?{#impact}
 
@@ -64,4 +62,4 @@ En tant que client ou cliente Campaign, vous recevrez au moins trente (30) jours
 
   Non. Nous ne pouvons pas prendre en charge les modifications demandées au planning existant, au risque de perturber l’événement de mise à niveau assigné à d’autres personnes.
 
-Pour toute autre question, contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=fr#support){target="_blank"}..
+Pour toute autre question, vous pouvez contacter [Adobe de l’assistance clientèle](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=fr#support){target="_blank"}.
