@@ -28,7 +28,7 @@ Les étapes de génération du fichier sont les suivantes :
 
    Les profils des destinataires doivent contenir au minimum leurs noms et adresses postales.
 
-   Les adresses postales sont des champs calculés. Par défaut, une adresse peut contenir jusqu’à six lignes : la première contient le prénom et le nom, les suivantes contiennent les coordonnées postales (rue et compléments), et la dernière contient le code postal et la ville. La définition du champ postalAddress calculé par défaut peut être vérifiée dans le schéma nms:recipient.
+   Les adresses postales sont des champs calculés. Par défaut, une adresse peut contenir jusqu’à six lignes : la première contient le prénom et le nom, les suivantes contiennent les coordonnées postales (rue et compléments), et la dernière contient le code postal et la ville. La définition du champ calculé postalAddress par défaut peut être vérifiée dans le schéma nms:recipient.
 
    Une adresse est considérée comme complète si les champs relatifs au nom, au code postal et à la ville ne sont pas vides. Les personnes destinataires dont les adresses sont incomplètes seront exclues des diffusions par courrier.
 
