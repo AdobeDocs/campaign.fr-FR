@@ -5,10 +5,10 @@ description: En savoir plus sur l’activité de workflow de requête
 feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
-source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
+source-git-commit: 0191ca8c29813c448040fc887f98550c74197578
 workflow-type: tm+mt
-source-wordcount: '1605'
-ht-degree: 100%
+source-wordcount: '1613'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 Une requête permet de sélectionner une cible selon des critères. Vous pouvez associer un code segment au résultat de la requête et y insérer des données additionnelles.
 Pour plus d’informations sur des exemples de requêtes, voir [cette section](querying-recipient-table.md).
 
-![](assets/query-activity.png)
+![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
 
 Pour plus dʼinformations sur l’utilisation et la gestion des données additionnelles, consultez la section [Ajout de données](#adding-data).
 
@@ -35,19 +35,19 @@ Le lien **[!UICONTROL Editer la requête...]** permet de définir le type de cib
 
    Voir à ce sujet la section [Dimension de ciblage et dimension de filtrage](targeting-workflows.md#targeting-and-filtering-dimensions).
 
-   ![](assets/targeting-filtering-dimensions.png)
+   ![](assets/targeting-filtering-dimensions.png){width="70%" align="center" zoomable="yes"}
 
    Une requête peut être basée sur les données de la transition entrante, le cas échéant, en sélectionnant **[!UICONTROL Schéma temporaire]** lors du choix des dimensions de ciblage et de filtrage.
 
-   ![](assets/query_temporary_table.png)
+   ![](assets/query_temporary_table.png){width="70%" align="center" zoomable="yes"}
 
-1. Définissez la sélection des populations via l&#39;assistant. Les champs à renseigner peuvent différer en fonction du type de cible. Vous pouvez afficher un aperçu de la population ciblée avec vos critères actuels via l&#39;onglet **[!UICONTROL Aperçu]**.
+1. Définissez les populations à l&#39;aide de l&#39;assistant. Les champs à renseigner peuvent différer en fonction du type de cible. Vous pouvez prévisualiser la population ciblée avec vos critères actuels à l’aide de la variable **[!UICONTROL Aperçu]** .
 
-   ![](assets/query-sample.png)
+   ![](assets/query-sample.png){width="70%" align="center" zoomable="yes"}
 
 1. Ajoutez éventuellement des critères de filtrage manuellement si vous avez sélectionné **[!UICONTROL Critères de filtrage]** à l&#39;étape 1 ou via l&#39;option **[!UICONTROL Filtres]** > **[!UICONTROL Filtre avancé...]**.
 
-   Vous pouvez également ajouter des conditions de groupement de données en cochant la case correspondante. Pour cela, la dimension de filtrage doit impérativement être différente de la dimension de ciblage de la requête. Pour plus d&#39;informations concernant le groupement, consultez cette [section](query-grouping-management.md).
+   Vous pouvez également ajouter des conditions de groupement de données en cochant la case correspondante. Pour cela, la dimension de filtrage doit être différente de la dimension de ciblage de la requête. Pour plus d&#39;informations sur le groupement, reportez-vous à cette section [section](query-grouping-management.md).
 
    Vous pouvez également ajouter des critères supplémentaires en vous aidant du Créateur d’expressions et les combiner grâce aux options logiques ET, OU et SAUF.
 
@@ -59,15 +59,15 @@ Les colonnes additionnelles permettent de collecter des informations supplément
 
 Le lien **[!UICONTROL Ajouter des données...]** permet de sélectionner les données additionnelles à collecter.
 
-![](assets/wf_add_data_link.png)
+![](assets/wf_add_data_link.png){width="70%" align="center" zoomable="yes"}
 
 Sélectionnez d&#39;abord le type de données à ajouter :
 
-![](assets/wf_add_data_1st_option.png)
+![](assets/wf_add_data_1st_option.png){width="70%" align="center" zoomable="yes"}
 
 * Sélectionnez **[!UICONTROL Données liées à la dimension de ciblage]** pour sélectionner des données de la base Adobe Campaign.
-* Sélectionnez **[!UICONTROL Données externes]** pour ajouter des données issues d’une base de données externe. Cette option n’est disponible que si vous avez acquis l’option **Federated Data Access**. Pour plus dʼinformations, consultez la section [Accès à une base de données externe (FDA)](accessing-an-external-database--fda-.md).
-* Sélectionnez l&#39;option **[!UICONTROL Une proposition d&#39;offre]** pour ajouter un ensemble de colonnes permettant de stocker la meilleure proposition générée par le moteur d&#39;offres. Cette option n&#39;est disponible que si vous avez acquis le module **Interaction**.
+* Sélectionner **[!UICONTROL Données externes]** pour ajouter des données provenant d&#39;une base externe. Cette option n’est disponible que si vous avez acheté la variable **Federated Data Access** . Pour plus dʼinformations, consultez la section [Accès à une base de données externe (FDA)](accessing-an-external-database--fda-.md).
+* Sélectionnez la variable **[!UICONTROL Une proposition d&#39;offre]** pour ajouter un ensemble de colonnes permettant de stocker la meilleure proposition générée par le moteur d&#39;offres. Cette option n’est disponible que si vous avez acheté la variable **Interaction** module .
 
 Si aucun module optionnel n&#39;est installé sur la plateforme, cette étape n&#39;est pas affichée. Vous accédez directement à l&#39;étape suivante.
 
@@ -75,11 +75,11 @@ Pour ajouter des données de la base Adobe Campaign :
 
 1. Sélectionnez le type de données que vous souhaitez ajouter. Il peut s&#39;agir de données appartenant à la dimension de filtrage ou de données stockées dans des tables liées.
 
-   ![](assets/query_add_columns.png)
+   ![](assets/query_add_columns.png){width="70%" align="center" zoomable="yes"}
 
 1. Lorsque les données appartiennent à la dimension de filtrage de la requête, il suffit de les sélectionner dans la liste des champs disponibles afin de les faire apparaître parmi les colonnes de sortie.
 
-   ![](assets/wf_add_data_field_selection.png)
+   ![](assets/wf_add_data_field_selection.png){width="70%" align="center" zoomable="yes"}
 
    Vous pouvez ajouter :
 
@@ -93,7 +93,7 @@ Pour ajouter une collection d&#39;informations liées à une population ciblée�
 1. Sélectionnez l&#39;option **[!UICONTROL Données liées à la dimension de filtrage]** à la première étape de l&#39;assistant :
 1. Sélectionnez la table contenant les informations à collecter et cliquez sur le bouton **[!UICONTROL Suivant.]**
 
-   ![](assets/wf_add_data_linked_table.png)
+   ![](assets/wf_add_data_linked_table.png){width="70%" align="center" zoomable="yes"}
 
 1. Au besoin, indiquez le nombre d&#39;éléments de la collection que vous souhaitez conserver en sélectionnant une des valeurs du champ **[!UICONTROL Données collectées]**. Par défaut, toutes les lignes de la collection sont récupérées, puis filtrées selon les conditions définies à l&#39;étape suivante.
 
@@ -106,13 +106,13 @@ Pour ajouter une collection d&#39;informations liées à une population ciblée�
      >Si la condition initiale n&#39;est pas respectée, le résultat peut être erroné (lignes manquantes ou doublons).
 
    * Si vous choisissez de récupérer plusieurs lignes (**[!UICONTROL Limiter le nombre de lignes]**), vous pouvez indiquer le nombre de lignes à collecter.
-   * Si les colonnes collectées contiennent des agrégats, par exemple le nombre de sinistres déclarés, la moyenne des dépenses sur un site, etc., vous pouvez utiliser la valeur **[!UICONTROL Agrégats]**.
+   * Si les colonnes collectées contiennent des agrégats, par exemple le nombre de sinistres déclarés, la moyenne des dépenses sur un site, etc. vous pouvez utiliser la variable **[!UICONTROL Agrégats]** .
 
-   ![](assets/query_add_collection_param.png)
+   ![](assets/query_add_collection_param.png){width="70%" align="center" zoomable="yes"}
 
 1. Spécifiez la sous-sélection de la collection.
 
-   ![](assets/query_add_columns_collection_filter.png)
+   ![](assets/query_add_columns_collection_filter.png){width="70%" align="center" zoomable="yes"}
 
 1. Si vous avez sélectionné l&#39;option **[!UICONTROL Limiter le nombre de lignes]**, définissez l&#39;ordre de tri des données collectées. Lorsque le nombre de lignes collectées est supérieur au nombre de lignes à conserver que vous avez indiqué, l&#39;ordre de tri permet de définir quelles sont les lignes à conserver.
 
@@ -133,20 +133,20 @@ Dans l&#39;exemple suivant, la requête cherchera à identifier les hommes de 18
    * Les destinataires ayant plus de 18 ans.
    * Les destinataires dont le pays de résidence est la France.
 
-   ![](assets/query_example.png)
+   ![](assets/query_example.png){width="70%" align="center" zoomable="yes"}
 
    Vous pouvez visualiser le code SQL correspondant à votre combinaison de critères :
 
-   ![](assets/query_example_sql.png)
+   ![](assets/query_example_sql.png){width="70%" align="center" zoomable="yes"}
 
 1. Affichez un aperçu des destinataires correspondant à votre requête via l&#39;onglet correspondant afin de vérifier que vos critères sont correctement renseignés :
 
-   ![](assets/query_example_preview.png)
+   ![](assets/query_example_preview.png){width="70%" align="center" zoomable="yes"}
 
 1. Sauvegardez éventuellement vos filtres pour pouvoir les réutiliser ultérieurement puis cliquez sur **[!UICONTROL Terminer]** > **[!UICONTROL Ok]**.
-1. Poursuivez l’édition de votre workflow en y ajoutant d’autres activités. Une fois ce dernier lancé et l’étape de la requête précédemment créée terminée, le nombre de destinataires trouvés s’affiche. Vous pouvez en afficher le détail via le menu pop-up de la souris (clic droit sur la transition > **[!UICONTROL Afficher la cible]**).
+1. Poursuivez l&#39;édition de votre workflow en y ajoutant d&#39;autres activités. Une fois lancé et l&#39;étape de requête précédente terminée, le nombre de destinataires trouvés s&#39;affiche. Vous pouvez afficher d’autres détails à l’aide du menu contextuel de la souris (cliquez avec le bouton droit de la souris sur la transition > **[!UICONTROL Afficher la cible...]**).
 
-   ![](assets/query_example_result.png)
+   ![](assets/query_example_result.png){width="70%" align="center" zoomable="yes"}
 
 ## Paramètres de sortie {#output-parameters}
 
@@ -154,9 +154,9 @@ Dans l&#39;exemple suivant, la requête cherchera à identifier les hommes de 18
 * schema
 * recCount
 
-Ce triplet de valeurs identifie la population ciblée par la requête. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d&#39;éléments dans la table.
+Ce triplet de valeurs identifie la population ciblée par la requête. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d’éléments dans le tableau.
 
-Cette valeur est le schéma de la table de travail. Ce paramètre est valable pour toutes les transitions avec **[!UICONTROL tableName]** et **[!UICONTROL schema]**.
+Cette valeur est le schéma de la table de travail. Ce paramètre est valide pour toutes les transitions avec **[!UICONTROL tableName]** et **[!UICONTROL schema]**.
 
 ## Optimisation des requêtes {#optimizing-queries}
 
@@ -186,7 +186,7 @@ La section ci-dessous présente les bonnes pratiques pour optimiser les requête
 
 Utilisez la dimension de filtrage de la requête au lieu de l’opérateur « exists such as ».
 
-![](assets/optimize-queries-filtering.png)
+![](assets/optimize-queries-filtering.png){width="70%" align="center" zoomable="yes"}
 
 Dans les requêtes, les conditions « exists such as » des filtres ne sont pas efficaces. Elles constituent l’équivalent d’une sous-requête dans SQL :
 
@@ -194,7 +194,7 @@ Dans les requêtes, les conditions « exists such as » des filtres ne sont pa
 
 Il est recommandé d’utiliser plutôt la dimension de filtrage de la requête :
 
-![](assets/optimize-queries-filtering2.png)
+![](assets/optimize-queries-filtering2.png){width="70%" align="center" zoomable="yes"}
 
 L’équivalent de la dimension de filtrage dans SQL est la jointure interne :
 
