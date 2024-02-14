@@ -5,10 +5,10 @@ feature: Experience Manager Integration
 role: Admin, User
 level: Beginner
 exl-id: e83893f7-a8be-48a3-a7a6-aced7b4d4f69
-source-git-commit: b267cb37a94bd389232ccfb9b8df69c9c2caa990
+source-git-commit: 92fe7c41047aafd26cca70a547025a3eff73e398
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 23%
+source-wordcount: '618'
+ht-degree: 19%
 
 ---
 
@@ -80,12 +80,30 @@ Votre newsletter est maintenant prête et synchronisée dans Adobe Campaign.
 
 1. Sélectionnez la diffusion AEM précédemment créée dans [!DNL Adobe Experience Manager] et confirmer en cliquant sur **[!UICONTROL Ok]**.
 
-1. Vous pouvez insérer directement des ressources à partir de votre [!DNL Adobe Experience Manager Assets] ou [!DNL Adobe Experience Manager Assets Library] lors de la modification d’un email dans Adobe Campaign. [En savoir plus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/overview.html?lang=fr).
-
-   Pour utiliser **Bibliothèque Adobe Experience Manager Assets**, accédez au **[!UICONTROL Propriétés]** de votre diffusion AEM et sélectionnez la variable **[!UICONTROL Avancé]** . Activez la variable **[!UICONTROL Utilisation au-dessus de l’instance AEM en tant que bibliothèque de ressources partagées]** .
-
-   ![](assets/aem_authoring_9.png)
-
 1. Assurez-vous de cliquer sur le bouton **[!UICONTROL Actualiser le contenu]** chaque fois que des modifications sont apportées à votre diffusion AEM.
 
 Votre email est maintenant prêt à être envoyé à votre audience.
+
+## Importation de ressources à partir de la bibliothèque Adobe Experience Manager Assets {#assets-library}
+
+Vous pouvez également insérer directement des ressources à partir de votre [!DNL Adobe Experience Manager Assets Library] lors de l&#39;édition d&#39;un email ou d&#39;une landing page dans Adobe Campaign. Cette fonctionnalité est présentée dans la section [Documentation Adobe Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=en).
+
+1. Chargement de vos ressources dans **Bibliothèque Adobe Experience Manager Assets**. [En savoir plus](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=en#uploading-assets)
+
+1. Dans Adobe Campaign, créez une diffusion en accédant à la **Campagnes** , cliquez sur **Diffusions** et cliquez sur le bouton **Créer** au-dessus de la liste des diffusions existantes.
+
+1. Sélectionnez une **Modèle de diffusion**, puis attribuez un nom à votre diffusion.
+
+1. Définissez et personnalisez le contenu du message. [En savoir plus](../send/email.md)
+
+1. Pour utiliser **Bibliothèque Adobe Experience Manager Assets**, accédez au **[!UICONTROL Propriétés]** de votre diffusion AEM et sélectionnez la variable **[!UICONTROL Avancé]** . Activez la variable **[!UICONTROL Utilisation au-dessus de l’instance AEM en tant que bibliothèque de ressources partagées]** .
+
+   ![](assets/aem_authoring_9.png)
+
+1. Dans la **Image** , accédez au **[!UICONTROL Sélectionner une ressource partagée]** .
+
+   ![](assets/aem_authoring_10.png)
+
+1. Dans la fenêtre de sélection, sélectionnez une image parmi les **Bibliothèque Adobe Experience Manager Assets**, puis confirmez.
+
+Votre diffusion email est prête. Vous pouvez maintenant spécifier l&#39;audience cible, confirmer la diffusion et poursuivre l&#39;envoi.
