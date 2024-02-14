@@ -5,10 +5,10 @@ feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
-workflow-type: ht
-source-wordcount: '660'
-ht-degree: 100%
+source-git-commit: 79d916c4d65c0c55ec20f2f5850fec40fe4e99a3
+workflow-type: tm+mt
+source-wordcount: '533'
+ht-degree: 97%
 
 ---
 
@@ -24,21 +24,7 @@ Les composants et l&#39;architecture globale d&#39;Adobe Campaign sont décrits
 
 ![](assets/do-not-localize//ac-components.png)
 
-### Couche de présentation{#presentation-layer}
 
-Vous pouvez accéder à Adobe Campaign via un client riche, un client léger ou une intégration d&#39;API.
-
-* Client riche
-
-  Le client riche de Campaign est une application native qui communique avec le serveur applicatif d&#39;Adobe Campaign par le biais de protocoles internet standard, tels que SOAP et HTTP. [En savoir plus sur la console cliente Campaign](../start/connect.md).
-
-* Client léger
-
-  Les fonctionnalités d&#39;accès web d&#39;Adobe Campaign vous permettent d&#39;accéder à un sous-ensemble de fonctionnalités de Campaign avec un navigateur web, à l&#39;aide d&#39;une interface utilisateur HTML. Utilisez cette interface web pour consulter des rapports, contrôler et valider les messages, accéder aux tableaux de bord de surveillance, et plus encore.  [En savoir plus sur l&#39;accès web de Campaign](../start/connect.md).
-
-* Applications externes avec API
-
-  Dans certains cas, le système est appelé par des applications externes qui utilisent les API Web Services exposées par le biais du protocole SOAP. [En savoir plus sur les API Campaign](../dev/api.md).
 
 ### Couche de persistance{#persistance-layer}
 
@@ -60,7 +46,7 @@ Le serveur Web Campaign contrôle l&#39;accès aux processus Web Campaign. JavaS
 
 ![](assets/do-not-localize/ac-processes.png)
 
-La console cliente Campaign se connecte au serveur Web à l’aide de SOAP XML via HTTP. Le serveur Web fournit la couche de sécurité, transmet les requêtes à la couche Application à l&#39;aide de Javascript et l&#39;accès des processus internes de Campaign à la base de données à l&#39;aide de SQL.
+La console cliente Campaign se connecte au serveur Web à l&#39;aide de SOAP XML via HTTP. Le serveur Web fournit la couche de sécurité, transmet les requêtes à la couche Application à l&#39;aide de Javascript et l&#39;accès des processus internes de Campaign à la base de données à l&#39;aide de SQL.
 
 La communication globale entre les processus de Campaign est décrite dans le diagramme de déploiement autonome suivant : tous les composants de Campaign sont installés sur le même ordinateur.
 

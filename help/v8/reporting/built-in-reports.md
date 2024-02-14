@@ -5,9 +5,9 @@ feature: Reporting
 role: User
 level: Beginner
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
-workflow-type: ht
-source-wordcount: '1118'
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+workflow-type: tm+mt
+source-wordcount: '1111'
 ht-degree: 100%
 
 ---
@@ -79,8 +79,8 @@ Pour plus d&#39;informations sur le contenu de ces rapports, consultez [cette se
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> Echecs et retours (errors)<br /> </td> 
-   <td> Ventilation des échecs et retours, par cause et domaine de messagerie.<br /> </td> 
+   <td> Échecs et rebonds (erreurs)<br /> </td> 
+   <td> Répartition des rebonds et des non-délivrables, par cause et domaine.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -115,7 +115,7 @@ Pour plus d&#39;informations sur le contenu de ces rapports, consultez [cette se
   </tr> 
   <tr> 
    <td> Statistiques de diffusion (statisticsPerDelivery)<br /> </td> 
-   <td> Statistiques (messages traités, messages délivrés, erreurs hard, erreurs soft, ouvertures, clics, désinscriptions) par domaine de l'email.<br /> </td> 
+   <td> Statistiques (messages traités, messages délivrés, rebonds définitifs, rebonds temporaires, ouvertures, clics, désinscriptions) par domaine d’e-mail.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -130,7 +130,7 @@ Pour plus d&#39;informations sur le contenu de ces rapports, consultez [cette se
   </tr> 
   <tr> 
    <td> Synthèse des diffusions (deliverySending)<br /> </td> 
-   <td> Synthèse des indicateurs de la diffusion : cible, exclusions et envois.<br /> </td> 
+   <td> Synthèse des indicateurs de la diffusion : cible, exclusions et messages envoyés.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -179,8 +179,8 @@ Les rapports sur les campagnes portent sur les données du tableau **nms:operati
    <td> Affiche en détail les dépenses rattachées à l'opération. Dépend de Campaign.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Echecs et retours (operationErrors)<br /> </td> 
-   <td> Ventilation des échecs et retours, par cause et domaine de messagerie. Dépend de Campaign.<br /> </td> 
+   <td> Échecs et rebonds (operationErrors)<br /> </td> 
+   <td> Répartition des rebonds et des non-délivrables, par cause et domaine. Dépend de Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> Exploration des lignes de coût (budgetExplorerOperation)<br /> </td> 

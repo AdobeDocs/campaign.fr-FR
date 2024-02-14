@@ -1,14 +1,14 @@
 ---
 title: Octroi d'autorisations pour Campaign v8
-description: Découvrez comment octroyer des autorisations pour Campaign v8 utilisateurs
+description: Découvrez comment accorder des autorisations aux utilisateurs de Campaign v8
 feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1748'
-ht-degree: 100%
+source-wordcount: '1734'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,7 @@ Pour ajouter un utilisateur/une utilisatrice, procédez comme suit :
 
 En savoir plus sur la création d’utilisatrices et d’utilisateurs dans Admin Console sur [cette page](https://helpx.adobe.com/fr/enterprise/using/manage-users-individually.html){target="_blank"}.
 
-Quand les nouveaux utilisateurs et utilisatrices [se connectent à Campaign](connect.md) avec leur Adobe ID, ils ou elles sont ajoutés à la liste des opérateurs et opératrices Campaign dans la console cliente. Les opérateurs Campaign sont stockés dans le dossier **[!UICONTROL Administration > Gestion des accès > Opérateurs]** de l’explorateur Campaign.
+Quand les nouveaux utilisateurs [se connectent à Campaign](connect.md) avec leur Adobe ID, ils sont ajoutés à la liste des opérateurs Campaign dans la console cliente. Les opérateurs Campaign sont stockés dans le dossier **[!UICONTROL Administration > Gestion des accès > Opérateurs]** de l’explorateur Campaign.
 
 ## Utiliser les profils de produit{#product-profiles}
 
@@ -113,7 +113,7 @@ Ces profils de produit correspondent aux **groupes d’opérateurs** Campaign. L
    * **[!UICONTROL PRÉPARER DES DIFFUSIONS]** : droit pour créer, éditer et lancer l&#39;analyse des diffusions,
    * **[!UICONTROL DÉMARRER DES DIFFUSIONS]** : droit pour valider les diffusions préalablement analysées.
 
-1. **[!UICONTROL Chargés d&#39;opération]** (opération)
+1. **[!UICONTROL Chargés d&#39;opération]** (operation)
 
    Les opérateurs de ce groupe peuvent gérer les campagnes marketing : il permet d&#39;accéder aux objets relatifs aux opérations (plans, programmes, workflows, budgets, etc.) dans le cadre de **[!UICONTROL Campaign]** (module facultatif Adobe Campaign).
 
@@ -136,7 +136,7 @@ Ces profils de produit correspondent aux **groupes d’opérateurs** Campaign. L
 
 1. **[!UICONTROL Exécution des workflows]** (workflow)
 
-   Le groupe **[!UICONTROL Exécution des workflows]** permet de contrôler l’exécution et la validation des workflows de ciblage : le droit nommé WORKFLOW est associé aux opérateurs de ce groupe. Il est nécessaire à toute action sur les workflows, en plus des permissions d’accès aux dossiers de données. Le groupe **[!UICONTROL Exécution des workflows]** a par défaut accès en lecture seule aux fichiers standard des workflows de ciblage et des modèles de workflow. Les opérateurs de ce groupe ont également accès en lecture et en écriture au fichier des validations en attente.
+   La variable **[!UICONTROL Exécution des workflows]** permet de contrôler l&#39;exécution et la validation des workflows de ciblage : le droit nommé WORKFLOW est associé aux opérateurs de ce groupe. Elle est requise pour toutes les actions sur les workflows, en plus des droits d’accès aux fichiers de données. Par défaut, la variable **[!UICONTROL Exécution des workflows]** a un accès en lecture seule aux fichiers de workflow de ciblage standard et aux modèles de workflow. Les opérateurs de ce groupe ont également accès en lecture et écriture au fichier de validations en attente.
 
 1. **[!UICONTROL Superviseurs de workflow]** (workflowSupervisor)
 

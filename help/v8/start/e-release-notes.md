@@ -7,10 +7,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: 9fceeb04344f891fbfd8af1e643b2ad5331db158
+source-git-commit: eae364fb3d082c91022fee6bf29802c9eb6dfcf5
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 23%
+source-wordcount: '464'
+ht-degree: 30%
 
 ---
 
@@ -27,16 +27,22 @@ _14 février 2024_
 
 * Depuis cette version, vous avez accès aux **Interface utilisateur Web de Campaign**, disponible via l’environnement Adobe Experience Cloud central. Experience Cloud est la famille intégrée d’applications, de produits et de services de marketing numérique d’Adobe. Grâce à son interface intuitive, vous pouvez accéder rapidement à vos applications cloud, fonctionnalités de produit et services. Découvrez comment vous connecter à Adobe Experience Cloud et accéder à l’interface web d’Adobe Campaign [dans cette page](campaign-ui.md#ac-web-ui).
 
-
-* Adobe Campaign v8 s’intègre désormais à **Adobe Experience Manager as a Cloud Service**, avec création exclusivement disponible via l’interface utilisateur web d’Adobe Campaign.
-
-* Vous pouvez désormais utiliser votre **Bibliothèque Adobe Experience Manager Assets** à côté de vos ressources Experience Cloud, même si la variable **Intégration à Adobe Experience Cloud** est installé sur votre instance Adobe Campaign.
+* La version 32 bits de la console cliente est désormais obsolète. À compter de la version 8.6, la console cliente sera uniquement disponible en 64 bits. La mise à niveau vers la version 64 bits de la console cliente est transparente. Pour plus d’informations sur la mise à niveau de votre système d’exploitation, reportez-vous à cette [note technique](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html?lang=fr).
 
 
 ### Améliorations générales {#improvements-8-6-1}
 
 * Campaign v8.6 améliore le débit pour **Indicateurs de tracking des diffusions email**. Grâce à nos processus optimisés, le suivi de l’ingestion et le temps de calcul sont réduits et vous pouvez vérifier beaucoup plus rapidement vos indicateurs clés de diffusion.
 
+* Vous pouvez désormais connecter votre instance Campaign v8 à la base de données externe Azure Synapse. Cette connexion est gérée à l’aide d’un nouveau compte externe.
+
+* Adobe Campaign v8 s’intègre désormais à **Adobe Experience Manager as a Cloud Service**, avec création exclusivement disponible via l’interface utilisateur web d’Adobe Campaign.
+
+* Vous pouvez désormais utiliser votre **Bibliothèque Adobe Experience Manager Assets** à côté de vos ressources Experience Cloud, même si la variable **Intégration à Adobe Experience Cloud** est installé sur votre instance Adobe Campaign.
+
+* Vous ne pouvez plus créer d’opérateurs à partir de la console cliente. Vous devez désormais utiliser Admin Console. [En savoir plus](../start/gs-permissions.md).
+
+* Plusieurs outils tiers ont été mis à jour pour optimiser la sécurité.
 
 ### Mises à jour de la délivrabilité {#deliverability-8-6-1}
 

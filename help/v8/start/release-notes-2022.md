@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
-workflow-type: ht
-source-wordcount: '1853'
-ht-degree: 100%
+source-git-commit: 43994eb29af2b85272de0ce4dc34cc66aba2e04a
+workflow-type: tm+mt
+source-wordcount: '1925'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ Cette page répertorie les nouvelles fonctionnalités, les améliorations et les
 
 _28 octobre 2022_
 
-**Améliorations**
+**Correctifs**
 
 * Correction d’un problème qui empêchait la mise à jour correcte de l’indicateur de diffusion de succès lors de l’utilisation du MTA amélioré d’Adobe Campaign. (NEO-50462)
 
@@ -121,11 +121,11 @@ Reportez-vous à la [matrice de compatibilité de Campaign](compatibility-matrix
 
 >[!CAUTION]
 >
-> La mise à niveau de la console client est obligatoire. Découvrez comment mettre à niveau votre console client sur cette [page](../start/connect.md#download-ac-console).
+> La mise à niveau de la console cliente est obligatoire. Découvrez comment mettre à niveau votre console cliente dans cette [page](../start/connect.md#download-ac-console).
 
 _7 octobre 2022_
 
-**Améliorations**
+**Correctifs**
 
 * Correction d’un problème qui affectait les mises à jour du statut du journal de diffusion sur l’instance MID, lorsque l’option FeatureFlag_GZIP_Compression était activée. (NEO-49183)
 * Le workflow technique **Nettoyage de la base de données** gère désormais également les schémas d’évaluation personnalisés. (NEO-48974)

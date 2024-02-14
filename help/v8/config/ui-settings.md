@@ -6,10 +6,10 @@ feature: Application Settings
 role: Admin, Developer
 level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1946'
-ht-degree: 100%
+source-wordcount: '1948'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ Découvrez comment gérer les dossiers et les vues dans [cette page](../audience
 
 ## Gérer et personnaliser des listes{#customize-lists}
 
-Dans la console cliente Campaign, les données sont affichées sous forme de listes. Vous pouvez adapter ces listes à vos besoins. Vous pouvez par exemple ajouter des colonnes, filtrer les données, comptabiliser les enregistrements, enregistrer et partager vos paramètres.
+Dans la console cliente Campaign, les données sont affichées dans des listes. Vous pouvez adapter ces listes à vos besoins. Vous pouvez par exemple ajouter des colonnes, filtrer les données, comptabiliser les enregistrements, enregistrer et partager vos paramètres.
 
 En outre, vous pouvez créer et enregistrer des filtres.  Pour en savoir plus sur les filtres, consultez [cette page](../audiences/create-filters.md).
 
@@ -132,7 +132,7 @@ Vous pouvez ensuite appliquer cette configuration à tout autre dossier du même
 
 ### Export d’une liste {#exporting-a-list}
 
-Pour exporter les données d’une liste, vous devez utiliser l’assistant d’export. Pour y accéder, sélectionnez les éléments de la liste à exporter, cliquez avec le bouton droit de la souris et choisissez **[!UICONTROL Exporter...]**.
+Pour exporter des données d&#39;une liste, vous devez utiliser un assistant d&#39;export. Pour y accéder, sélectionnez les éléments à exporter depuis la liste, cliquez avec le bouton droit et choisissez **[!UICONTROL Exporter...]**.
 
 <!--The use of the import and export functions is explained in [Generic imports and exports](../../platform/using/about-generic-imports-exports.md).-->
 
@@ -213,7 +213,7 @@ Pour créer un alias, procédez comme suit :
 
 1. Enregistrez vos modifications. Le remplacement des valeurs est effectué par le workflow **Cleansing des alias** exécuté toutes les nuits. Pour plus d’informations, consultez la section [Exécuter le cleansing des données](#running-data-cleansing).
 
-Pour tous les champs basés sur cette énumération, lorsqu’un utilisateur ou une utilisatrice saisit la valeur **Adob** dans un champ « société » (dans la console cliente Adobe Campaign ou dans un formulaire web), cette valeur sera automatiquement remplacée par la valeur **Adobe**.
+Pour tous les champs basés sur cette énumération, lorsqu’un utilisateur saisit la valeur **Adobe** dans un champ &quot;société&quot; (dans la console cliente Adobe Campaign, dans un formulaire web), il sera automatiquement remplacé par la valeur **Adobe**.
 
 #### Convertir une valeur incorrecte en alias{#convert-to-alias}
 
@@ -251,7 +251,7 @@ Cliquez sur le bouton **[!UICONTROL Démarrer]** pour lancer l&#39;uniformisatio
 
 ##### Surveiller les occurrences {#calculate-entry-occurrences}
 
-Le sous-onglet **[!UICONTROL Alias]** d’une énumération peut afficher le nombre d’occurences d’un alias parmi toutes les valeurs saisies. Cette information est une estimation. Elle sera affichée dans la colonne **[!UICONTROL Accès]**.
+La variable **[!UICONTROL Alias]** un sous-onglet d&#39;une énumération peut afficher le nombre d&#39;occurrences d&#39;un alias parmi toutes les valeurs renseignées. Ces informations sont une estimation qui sera affichée dans la variable **[!UICONTROL Accès]** colonne .
 
 >[!CAUTION]
 >

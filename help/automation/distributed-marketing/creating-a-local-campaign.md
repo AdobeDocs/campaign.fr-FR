@@ -5,10 +5,10 @@ description: Créer une campagne locale
 feature: Distributed Marketing
 role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 100%
+source-wordcount: '1686'
+ht-degree: 85%
 
 ---
 
@@ -46,17 +46,17 @@ Dans la fenêtre de la campagne, cliquez sur l&#39;onglet **[!UICONTROL Modifier
 
 ![](assets/mkt_distr_4.png)
 
-### Interface Web {#web-interface}
+### Type d’interface {#web-interface}
 
-Dans l&#39;onglet **Marketing Distribué**, vous pouvez choisir le type d&#39;interface Web, les valeurs par défaut et indiquer les paramètres avancés à saisir lors de la commande par les entités locales.
+Dans le **Marketing distribué** , vous pouvez choisir le type d&#39;interface et définir les valeurs par défaut et les paramètres à renseigner lors de la commande par une entité locale.
 
-L’interface web correspond à un formulaire à renseigner par l’entité locale lors de la commande de l’opération.
+L&#39;interface correspond à un formulaire à renseigner par l&#39;entité locale lors de la commande de l&#39;opération.
 
-Sélectionnez le type d’interface web à appliquer aux opérations créées à partir du modèle :
+Sélectionnez le type d&#39;interface à appliquer aux opérations créées à partir du modèle :
 
 ![](assets/mkt_distr_1.png)
 
-Quatre types d’interface web sont disponibles :
+Quatre types d’interfaces sont disponibles :
 
 * **[!UICONTROL Par brief]** : l’entité locale doit éditer un brief où elle peut saisir la description des paramètres de l’opération. Une fois la commande validée, l’entité centrale paramètre et exécute l’intégralité de l’opération.
 
@@ -74,7 +74,7 @@ Quatre types d’interface web sont disponibles :
 
   ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL Par formulaire externe]** : l&#39;entité locale a accès aux paramètres de la campagne dans son extranet (non Adobe Campaign). Ces paramètres sont identiques à ceux d&#39;une **opération locale par formulaire**.
+* **[!UICONTROL Par formulaire externe]** : l&#39;entité locale a accès aux paramètres de l&#39;opération dans son extranet (et non dans Adobe Campaign). Ces paramètres sont identiques à ceux d’une **campagne locale (par formulaire)**.
 * **[!UICONTROL Simple]** : l&#39;entité locale commande l&#39;opération en utilisant le formulaire par défaut, sans la localiser.
 
   ![](assets/mkt_distr_5.png)
@@ -107,7 +107,7 @@ Si l&#39;on ne souhaite pas renseigner de validants pour les opérations, le nom
 
 ### Documents {#documents}
 
-Vous pouvez permettre aux opérateurs de l&#39;entité locale d&#39;associer des documents (fichiers textes, tableurs, images, description de l&#39;opération, etc.) à l&#39;opération locale, lors de la création de la commande. Le lien **[!UICONTROL Paramètres avancés de saisie de l&#39;opération...]** permet de limiter le nombre de documents. Pour cela, indiquez le nombre maximum de documents autorisés dans le champ **[!UICONTROL Nombre de documents]**.
+Vous pouvez permettre aux opérateurs de l&#39;entité locale d&#39;associer des documents (fichiers texte, tableurs, images, descriptions d&#39;opération, etc.) à l&#39;opération locale lors de la création de la commande. La variable **[!UICONTROL Paramètres avancés de saisie de l&#39;opération...]** permet de limiter le nombre de documents. Pour ce faire, il vous suffit de saisir le nombre maximal autorisé dans la variable **[!UICONTROL Nombre de documents]** champ .
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 
@@ -147,7 +147,7 @@ Au besoin, paramétrez la taille maximale de la diffusion :
 
 ![](assets/mkg_dist_local_op_creation4e.png)
 
-Localisez le HTML de votre diffusion. Par exemple, dans **[!UICONTROL Diffusion > Commande courante > Champs additionnels]**, utilisez le champs **[!UICONTROL Segment d&#39;âge]** pour localiser la diffusion en fonction de l&#39;âge de la cible.
+Localisez le HTML de votre diffusion. Par exemple, dans **[!UICONTROL Diffusion > Commande actuelle > Champs supplémentaires]**, utilisez le **[!UICONTROL Segment d’âge]** pour localiser la diffusion en fonction de l’âge de la cible.
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
@@ -296,15 +296,15 @@ Lorsqu&#39;une commande d&#39;opération est effectuée par une entité locale, 
 
 ![](assets/mkg_dist_command_valid_web.png)
 
-#### Approuver via la console cliente {#approving-via-the-adobe-campaign-console}
+#### Valider via la console cliente {#approving-via-the-adobe-campaign-console}
 
-La commande peut également être approuvée à partir de la console cliente, dans la vue d’ensemble des commandes de la campagne. Pour approuver une commande, sélectionnez-la et cliquez sur **[!UICONTROL Approuver la commande]**.
+La commande peut également être validée à partir de la console cliente, dans la vue d&#39;ensemble des commandes de l&#39;opération. Pour approuver une commande, sélectionnez-la et cliquez sur **[!UICONTROL Approuver la commande]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 
 >[!NOTE]
 >
->L&#39;opération peut toujours être éditée et ses paramètres modifiés, jusqu&#39;à la date de disponibilité de l&#39;opération. L&#39;entité locale peut également renoncer à l&#39;opération en cliquant sur le bouton **[!UICONTROL Annuler]**.
+>L&#39;opération peut toujours être éditée et reconfigurée jusqu&#39;à la date de disponibilité de l&#39;opération. Les entités locales peuvent également rejeter l&#39;opération en cliquant sur le bouton **[!UICONTROL Annuler]** bouton .
 
 #### Créer une campagne        {#creating-a-campaign}
 
@@ -322,7 +322,7 @@ L&#39;opérateur validant peut refuser la validation d&#39;un kit d&#39;opérati
 
 Si l&#39;opérateur validant refuse une commande, la notification correspondante est automatiquement envoyée aux entités locales concernées : elle affiche le commentaire saisi par l&#39;opérateur ayant refusé la validation.
 
-Les informations sont affichées dans la liste des pckages de campagne ou dans la page des commandes de campagne. Si les réviseurs et réviseuses ont accès à la console cliente Adobe Campaign, les entités locales sont informées de ce rejet.
+Les informations sont affichées dans la liste des pckages de campagne ou dans la page des commandes de campagne. S&#39;ils ont accès à la console cliente Adobe Campaign, les entités locales sont informées de ce rejet.
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 

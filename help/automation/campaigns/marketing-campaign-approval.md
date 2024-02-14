@@ -5,10 +5,10 @@ description: Découvrez comment gérer les validations des campagnes marketing
 feature: Approvals, Campaigns
 role: User
 exl-id: 03be5058-436e-4de9-99a7-91d799aa17f6
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '2443'
-ht-degree: 100%
+source-wordcount: '2444'
+ht-degree: 83%
 
 ---
 
@@ -90,7 +90,7 @@ Si une liste de réviseurs est définie, un traitement est validé lorsqu&#39;un
 
 ## Réviser et valider des diffusions {#review-and-approve-deliveries}
 
-Pour chaque campagne, vous pouvez valider la cible de diffusion, le [contenu de diffusion](#approving-content) et les coûts. Les opérateurs et opératrices Adobe Campaign en charge de l’approbation peuvent être avertis par e-mail et accepter ou refuser l’approbation à partir de la console cliente ou via une connexion web. [En savoir plus](#approving-processes).
+Pour chaque campagne, vous pouvez valider la cible de diffusion, le [contenu de diffusion](#approving-content) et les coûts. Les opérateurs Adobe Campaign en charge de la validation peuvent être notifiés par email et accepter ou refuser la validation depuis la console cliente ou via un navigateur web. [En savoir plus](#approving-processes).
 
 Pour les diffusions par publipostage direct, les opérateurs Adobe Campaign peuvent visualiser le fichier d&#39;extraction avant l&#39;envoi au routeur et, au besoin, modifier le format et relancer l&#39;extraction. [En savoir plus](#approve-an-extraction-file).
 
@@ -103,7 +103,7 @@ Une fois ces phases de validation achevées, la diffusion peut être lancée. [E
 
 ### Étapes de validation d’une diffusion {#approving-processes}
 
-Les étapes qui doivent être approuvées apparaissent dans le tableau de bord de la campagne (dans la console cliente ou l’interface web). Elles apparaissent également dans la table de tracking des diffusions et dans le tableau de bord des diffusions.
+Les étapes qui doivent être validées apparaissent dans le tableau de bord de l&#39;opération (à partir de la console cliente ou d&#39;un navigateur web). Elles apparaissent également dans la table de tracking des diffusions et dans le tableau de bord des diffusions.
 
 ![](assets/delivery-approval-actions.png)
 
@@ -165,19 +165,19 @@ Il est possible de configurer un cycle de validation du contenu. Pour ce faire, 
 
    * à travers l&#39;e-mail de notification : l&#39;e-mail de notification contient un lien vers les BAT déjà envoyés, et éventuellement vers un rendu du message dans les différents webmails, si l&#39;option **Délivrabilité** est activée pour cette instance.
 
-   * à partir de la console cliente ou de l’interface web, du tracking des diffusions, du tableau de bord de la diffusion ou du tableau de bord de la campagne. Dans le tableau de bord de la campagne, vous pouvez visualiser la liste des BAT envoyés, en cliquant sur le lien **[!UICONTROL Inbox Rendering...]**. Vous pouvez consulter leur contenu en cliquant sur l&#39;icône **[!UICONTROL Détails]** située à droite de la liste.
+   * depuis la console cliente ou un navigateur web, le tracking des diffusions, le tableau de bord des diffusions ou le tableau de bord de l&#39;opération. Ce tableau de bord de l&#39;opération permet de visualiser la liste des BAT envoyés, en cliquant sur le bouton **[!UICONTROL Inbox rendering...]** lien. Pour afficher leur contenu, cliquez sur le bouton **[!UICONTROL Détail]** à droite de la liste.
 
-1. Un e-mail de notification est envoyé au responsable de la campagne pour l&#39;informer de la validation ou de la non-validation du contenu. A tout moment, le responsable de l&#39;opération peut relancer le cycle de validation du contenu. Pour cela, cliquez sur le lien situé sur la ligne **[!UICONTROL Etat du contenu]**, dans le tableau de bord de l&#39;opération (au niveau de la diffusion), puis cliquez sur **[!UICONTROL Réinitialiser la validation du contenu pour la soumettre à nouveau.]**
+1. Un e-mail de notification est envoyé au responsable de la campagne pour l&#39;informer de la validation ou de la non-validation du contenu. Le responsable de l&#39;opération peut à tout moment relancer le cycle de validation du contenu. Pour ce faire, cliquez sur le lien de la **[!UICONTROL Etat du contenu]** ligne du tableau de bord de l&#39;opération (au niveau de la diffusion), puis cliquez sur **[!UICONTROL Réinitialiser la validation du contenu pour la soumettre à nouveau]**.
 
 #### Assigner l&#39;édition du contenu {#assign-content-editing}
 
-Cette option permet de définir un responsable de l&#39;édition du contenu, par exemple un webmaster. Lorsque l&#39;option **[!UICONTROL Assigner l&#39;édition du contenu]** est sélectionnée dans la fenêtre de paramétrage de la validation des traitements, plusieurs étapes de validation sont ajoutées entre la création de la diffusion et l&#39;envoi de l&#39;email de notification au responsable du contenu :
+Cette option vous permet de définir une personne responsable de l’édition du contenu, par exemple un webmaster. Si la variable **[!UICONTROL Assigner l&#39;édition du contenu]** est sélectionnée dans la fenêtre de paramétrage de la validation des traitements, plusieurs étapes de validation sont ajoutées entre la création de la diffusion et l&#39;envoi de l&#39;email de notification au responsable du contenu :
 
 1. Après la création d&#39;une nouvelle diffusion, le responsable de l&#39;opération clique sur le lien **[!UICONTROL Soumettre l&#39;édition du contenu]**, dans le tableau de bord de l&#39;opération, pour lancer le cycle d&#39;édition du contenu.
 
 1. Le responsable de l&#39;édition du contenu reçoit un email l&#39;informant de la mise à disposition du contenu.
 
-1. Il se connecte à la console cliente, ouvre la diffusion et la modifie via un assistant simplifié, qui lui permet de modifier l’objet, le contenu HTML et texte, ainsi que d’envoyer des BAT.
+1. Ils peuvent alors se connecter à la console cliente, ouvrir la diffusion et l&#39;éditer à l&#39;aide d&#39;un assistant simplifié afin de modifier l&#39;objet, le HTML et le contenu texte, et envoyer des BAT.
 
    >[!NOTE]
    >
@@ -187,19 +187,19 @@ Cette option permet de définir un responsable de l&#39;édition du contenu, par
 
    Pour cela, ils peuvent :
 
-   * le lien **[!UICONTROL Contenu disponible]** dans la console cliente Adobe Campaign.
+   * la valeur **[!UICONTROL Contenu disponible]** dans la console cliente Adobe Campaign.
    * le lien contenu dans le message de notification.
 L&#39;opérateur peut ajouter un commentaire avant de soumettre le contenu au responsable de la campagne.
 Le message de notification permet au réviseur de valider ou refuser le contenu qui lui a été soumis.
 
 #### Validation externe du contenu {#external-content-approval}
 
-Cette option permet de définir un responsable externe du contenu qui validera le rendu de la diffusion, par exemple la cohérence de la communication de la marque, les tarifs annoncés, etc. Lorsque l&#39;option **[!UICONTROL Validation externe du contenu]** est sélectionnée dans la fenêtre de paramétrage de la validation des traitements, plusieurs étapes de validation sont ajoutées entre la validation du contenu par le responsable du contenu et l&#39;envoi de l&#39;email de notification au responsable de l&#39;opération :
+Cette option permet de définir un opérateur externe chargé de la validation du rendu des diffusions, comme la cohérence de la communication de la marque, les tarifs, etc. Lorsque la variable **[!UICONTROL Validation externe du contenu]** est sélectionnée dans la fenêtre de paramétrage de la validation des traitements, plusieurs étapes de validation sont ajoutées entre la validation du contenu et l&#39;envoi de la notification au responsable de l&#39;opération :
 
 1. Le responsable externe du contenu reçoit un email de notification l&#39;informant que le contenu a été validé et que la validation externe doit être effectuée.
 1. L&#39;email de notification propose des liens vers les BAT envoyés, lui permettant de visualiser le rendu de la diffusion, et un bouton pour valider ou refuser le contenu de la diffusion.
 
-Ces liens ne sont disponibles que si un ou plusieurs BAT ont été envoyés. Dans le cas contraire, le rendu de la diffusion n’est disponible que via la console cliente ou l’interface web.
+Ces liens ne sont disponibles que si un ou plusieurs BAT ont été envoyés. Sinon, le rendu de la diffusion n&#39;est disponible que via la console cliente ou un navigateur web.
 
 ### Validation d’un fichier d’extraction {#approve-an-extraction-file}
 
@@ -219,7 +219,7 @@ Les traitements peuvent être validés dans le tableau de bord de la campagne, d
 
 ### Valider dans le tableau de bord {#approval-via-the-dashboard}
 
-Pour approuver un traitement à partir de la console cliente ou de l’interface web, cliquez sur le lien adéquat dans le tableau de bord de la campagne.
+Pour valider un traitement depuis la console cliente ou depuis un navigateur web, cliquez sur le lien correspondant dans le tableau de bord de l&#39;opération.
 
 Par exemple, une fois l&#39;analyse de diffusion exécutée :
 
@@ -291,7 +291,7 @@ par
 >
 >Le mode de validation sélectionné sera appliqué à toutes les diffusions de la campagne.
 
-La validation manuelle permet, lors de la construction du workflow de ciblage, de ne pas créer les liens de validation et envoyer les notifications automatiquement. Le tableau de bord de l&#39;opération propose alors un lien **[!UICONTROL Soumettre le ciblage à validation]** afin de lancer le processus de validation manuellement.
+Lorsqu&#39;un workflow de ciblage est en cours de construction, la validation manuelle permet d&#39;éviter de créer des liens de validation ou d&#39;envoyer automatiquement des notifications. Le tableau de bord de l&#39;opération propose alors une **[!UICONTROL Soumettre le ciblage à validation]** pour lancer manuellement le processus de validation.
 
 Un message de confirmation permet d&#39;autoriser les validations sur les traitements sélectionnés pour cette diffusion.
 
@@ -307,7 +307,7 @@ Le contenu des emails de notification peut être personnalisé. Voir [Contenu de
 
 ### Activation/désactivation de la notification {#enabling-disabling-notification}
 
-Par défaut, les messages de notification sont envoyés si l’approbation du traitement correspondant est activée dans le modèle de campagne, la campagne ou la diffusion. Toutefois, les notifications peuvent être désactivées afin d’autoriser les approbations à partir de la console cliente uniquement.
+Par défaut, les messages de notification sont envoyés si l’approbation du traitement correspondant est activée dans le modèle de campagne, la campagne ou la diffusion. Toutefois, les notifications peuvent être désactivées afin de n’autoriser les validations que depuis la console cliente.
 
 Pour cela, modifiez la fenêtre de validation de la campagne ou du modèle de campagne concerné (onglet **[!UICONTROL Modifier > Propriétés]** > **[!UICONTROL Paramètres avancés de la campagne...]** > **[!UICONTROL Validations]**) et cochez l&#39;option **[!UICONTROL Ne pas activer l&#39;envoi des notifications]**.
 
@@ -315,4 +315,4 @@ Pour cela, modifiez la fenêtre de validation de la campagne ou du modèle de ca
 
 ### Contenu des messages de notification {#notification-content}
 
-Le contenu des notifications est défini dans un modèle spécifique : **[!UICONTROL Notification des validations dans une opération marketing]**. Ce modèle est enregistré dans le dossier **[!UICONTROL Administration > Gestion de campagne > Modèles des diffusions techniques]** de l&#39;arborescence Adobe Campaign.
+Le contenu des notifications est défini dans un modèle spécifique : **[!UICONTROL Notification des validations pour la campagne marketing]**. Ce modèle est enregistré dans la variable **[!UICONTROL Administration > Gestion de campagne > Modèles des diffusions techniques]** du dossier de l’arborescence Adobe Campaign.

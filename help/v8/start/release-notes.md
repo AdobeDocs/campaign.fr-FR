@@ -5,170 +5,48 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 2dbe73df0cbc194ec6c239e13851395a0b94c991
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 100%
+source-wordcount: '452'
+ht-degree: 25%
 
 ---
 
 # Dernière version{#latest-release}
 
-Adobe Campaign fait l&#39;objet de mises à jour régulières. Cette fréquence régulière de mise à jour a pour but de vous fournir les dernières fonctionnalités et améliorations. Vous bénéficiez ainsi d&#39;un environnement sécurisé et d&#39;une expérience optimale avec notre produit. Adobe recommande vivement à tous les clients et clientes d’effectuer la mise à niveau vers la dernière version.
+Adobe Campaign fait l&#39;objet de mises à jour régulières. Cette fréquence régulière de mise à jour a pour but de vous fournir les dernières fonctionnalités et améliorations. Vous bénéficiez ainsi d&#39;un environnement sécurisé et d&#39;une expérience optimale avec notre produit. Adobe recommande vivement à tous les clients d’effectuer la mise à niveau vers la dernière version. En savoir plus sur les versions et recommandations de Campaign [dans cette page](upgrades.md).
 
-En tant qu’utilisateur ou utilisatrice de Managed Cloud Services, votre instance est mise à niveau par Adobe avec chaque nouvelle version. Adobe vous contactera et mettra à niveau vos environnements. La console cliente Campaign **doit être mise à niveau vers la même version** que les serveurs Campaign. Découvrez comment mettre à niveau votre console cliente sur cette [page](../start/connect.md#upgrade-ac-console).
+En tant qu’utilisateur Cloud Service géré, votre instance est mise à niveau par Adobe avec chaque nouvelle version. Adobe vous contactera et mettra à niveau vos environnements. Console cliente Campaign **doit être mis à niveau vers la même version** en tant que serveurs Campaign. Découvrez comment mettre à niveau votre console cliente dans cette [page](../start/connect.md#upgrade-ac-console).
 
 En outre, en tant que client ou cliente, assurez-vous d’utiliser les dernières versions prises en charge des systèmes répertoriés dans la [matrice de compatibilité](compatibility-matrix.md).
 
-## Version 8.5.2 {#release-8-5-2}
 
-_2 août 2023_
+## Version 8.6.1 {#release-8-6-1}
 
-Correction d’un problème de sécurité qui pouvait survenir lors de la mise à niveau vers la version 8.5.1. (NEO-64767)
-
-## Version 8.5.1 {#release-8-5}
-
-_30 juin 2023_
+_14 février 2024_
 
 
-**Service de notifications push amélioré**
+### Nouveautés {#new-8-6-1}
 
-Campaign v8.5.1 présente son dernier service de notifications push, optimisé par un framework robuste reposant sur une technologie de pointe. Ce service est conçu pour atteindre des niveaux d’évolutivité supérieurs, afin que vos notifications puissent atteindre une audience plus large avec une efficacité optimale. Grâce à notre infrastructure améliorée et à nos processus optimisés, vous bénéficierez d’une plus grande échelle et d’une meilleure fiabilité. Vous pourrez ainsi communiquer avec vos utilisateurs et utilisatrices d’applications mobiles comme jamais auparavant. Cette fonctionnalité est réservée à un groupe de clients et clientes restreint (disponibilité limitée).
-
-Pour plus d’informations, consultez la [documentation détaillée](../send/push-data-collection.md).
+* Depuis cette version, vous avez accès aux **Interface utilisateur Web de Campaign**, disponible via l’environnement Adobe Experience Cloud central. Experience Cloud est la famille intégrée d’applications, de produits et de services de marketing numérique d’Adobe. Grâce à son interface intuitive, vous pouvez accéder rapidement à vos applications cloud, fonctionnalités de produit et services. Découvrez comment vous connecter à Adobe Experience Cloud et accéder à l’interface web d’Adobe Campaign [dans cette page](campaign-ui.md#ac-web-ui).
 
 
+* Adobe Campaign v8 s’intègre désormais à **Adobe Experience Manager as a Cloud Service**, avec création exclusivement disponible via l’interface utilisateur web d’Adobe Campaign. [En savoir plus](../connect/ac-aem.md)
 
-<!--
-The newly introduced Push notification service showcases significant improvements in throughput for both Push Android and Push iOS compared to our previous version (v8.4). Users will experience notably enhanced performance with the upgraded service in the latest version (v8.5).
+* Vous pouvez désormais utiliser votre **Bibliothèque Adobe Experience Manager Assets** avec vos ressources Experience Cloud même si le package Intégration avec Adobe Experience Cloud est installé sur votre instance Adobe Campaign.[En savoir plus](../connect/ac-aem.md)
 
-* Push Notifications (Android): up to **5x** faster
-* Push Notifications (iOS): up to **2.2x** faster
+### Améliorations générales {#improvements-8-6-1}
 
-SMS throughput has undergone substantial enhancements through a series of optimizations, resulting in notable improvements in speed and efficiency for SMS communication. These upgrades have led to increased throughput from the previous version (v8.4) to the latest version (v8.5), encompassing both sending and feedback updates. Users can now experience the benefits of this enhanced SMS service.</p>
-
-* SMS throughput: up to **5x** faster
-
-These max throughput performances have been measured by Adobe testing teams, in lab conditions.
--->
-
-<table style="table-layout:fixed" text-align="bottom"><tr style="border: 0;">
-<td>
-<br/><img alt="Améliorations du débit" src="../start/assets/do-not-localize/improvements.jpeg">
-<p>
-</td>
-<td>
-<div>
-<p><strong>Débit accru du canal mobile</strong></p>
-<p>Le nouveau service de notification push présente d’importantes améliorations du débit pour Push Android et Push iOS par rapport à notre version précédente (v8.4). Les utilisateurs et utilisatrices bénéficieront de performances considérablement améliorées avec le service mis à niveau dans la dernière version (v8.5). </p>
-<ul>
-<li>Notifications push (Android) : jusqu’à <strong>5x</strong> plus rapides </li>
-<li>Notifications push (iOS) : jusqu’à <strong>2,2x</strong> plus rapides</li>
-</ul>
-<p>Le débit des SMS a fait l’objet d’améliorations substantielles grâce à une série d’optimisations. Ces modifications ont permis d’optimiser considérablement la vitesse et l’efficacité des communications SMS. Ces mises à niveau se traduisent par une augmentation du débit entre la version précédente (v8.4) et la version la plus récente (v8.5), comprenant à la fois des mises à jour d’envoi et de retour. Les utilisateurs et utilisatrices peuvent désormais bénéficier des avantages de ce service SMS amélioré.</p>
-<ul>
-<li>Débit des SMS : jusqu’à <strong>5x</strong> plus rapide</li>
-</ul>
-<p><em>Ces performances de débit maximales ont été mesurées par des équipes de test d’Adobe, dans des conditions de laboratoire.</em></p>
-</div>
-<p></p>
-</td>
-</tr></table>
+* Campaign v8.6 améliore le débit pour **Indicateurs de tracking des diffusions email**. Grâce à nos processus optimisés, le suivi de l’ingestion et le temps de calcul sont réduits et vous pouvez vérifier beaucoup plus rapidement vos indicateurs clés de diffusion.
 
 
-**Améliorations générales**
+### Mises à jour de la délivrabilité {#deliverability-8-6-1}
 
-* Vous pouvez désormais tirer parti de la connexion à la destination Adobe Experience Platform pour synchroniser les attributs de profil tels que les données de désinscription entre Adobe Experience Platform et la base de données Campaign v8.
-* La préparation de la diffusion a été optimisée sur tous les canaux.
-* Une nouvelle option d’authentification par clé a été ajoutée pour le compte externe SFTP, outre la méthode d’authentification utilisateur/mot de passe existante. Les utilisateurs et utilisatrices peuvent désormais s’authentifier en toute sécurité à l’aide d’une clé privée, ce qui renforce la sécurité et fournit un autre mécanisme d’authentification pour l’accès SFTP. En savoir plus dans [cette section](../config/external-accounts.md).
+* D&#39;ici février 2024, toute entreprise qui enverra plus de 5 000 emails via Google ou Yahoo! Vous devrez commencer à utiliser une technologie d’authentification appelée DMARC (Domain-based Message Authentication Reporting and Conformance). Assurez-vous que l’enregistrement DMARC est configuré pour tous les sous-domaines que vous utilisez avec Adobe Campaign. [En savoir plus](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=fr){target="_blank"}
 
-**Améliorations de la sécurité**
-
-* Avec Campaign v8.5.1, le processus d’authentification de Campaign v8 a été amélioré et sécurisé. Les opérateurs ou opératrices techniques doivent à présent utiliser Adobe Identity Management System (IMS) pour se connecter à Campaign. Découvrez comment migrer votre ou vos comptes techniques existants dans [cette note technique](../../technotes/upgrades/ims-migration.md).
-* À compter de la version v8.6 à venir, vous n’aurez plus l’autorisation de créer des opérateurs et opératrices à partir de la console cliente Campaign. Si vous utilisez l’authentification native nom d’utilisateur/mot de passe, vous devez migrer vos opérateurs et opératrices vers Adobe Identity Management System (IMS). Découvrez comment effectuer la migration de vos opérateurs et opératrices dans [cette note technique](../../technotes/upgrades/migrate-users-to-ims.md).
-* Plusieurs outils tiers ont été mis à jour pour optimiser la sécurité.
-
-**Mises à jour de compatibilité**
-
-* La version 32 bits de la console cliente est désormais obsolète. À compter de la version 8.6, la console cliente sera uniquement disponible en 64 bits. La mise à niveau vers la version 64 bits de la console cliente est transparente. Pour plus d’informations sur la mise à niveau de votre système d’exploitation, reportez-vous à cette [note technique](../../technotes/upgrades/console.md).
-* Vous pouvez désormais connecter votre instance Campaign v8 à la base de données externe Azure Synapse. Cette connexion est gérée à l’aide d’un nouveau compte externe. En savoir plus sur la [matrice de compatibilité de Campaign](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda).
+* À compter du 1er juin 2024, Google et Yahoo! exige que les expéditeurs se conforment au List-Unsubscribe en un clic. Adobe Campaign prend désormais en charge cette option. [En savoir plus](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#one-click-list-unsubscribe){target="_blank"}
 
 
-**Correctifs**
+### Correctifs {#fixes-8-6-1}
 
-* Correction d’une erreur qui entraînait le codage incorrect des caractères spéciaux dans le contenu HTML d’une diffusion dans plusieurs navigateurs. (NEO-60081)
-* Correction d’un problème qui empêchait l’enregistrement d’un rapport sur un déploiement Campaign v8 Enterprise (FFDA). (NEO-56836)
-* Correction d’un problème lors de l’insertion ou de la mise à jour de données dans un schéma FFDA personnalisé via une activité de workflow Mise à jour de données. (NEO-54708)
-* Correction d’une erreur qui empêchait le workflow de nettoyage de la base de données de supprimer des adresses dans la table nms:address sur FFDA. (NEO-54460)
-* Correction d’un problème en raison duquel le workflow de facturation pouvait échouer avec un message d’erreur « Mémoire de compilation épuisée ». (NEO-51137)
-* Correction d’un problème qui empêchait le bon fonctionnement du déchiffrement GPG dans l’activité de workflow Chargement de données (fichier). (NEO-50257)
-* Correction d’un problème qui empêchait le bon fonctionnement de la fonction `JSPContext.sqlExecWithOneParam`. (NEO-50066)
-* Correction d’un problème qui entraînait des échecs de diffusion lors de l’utilisation de caractères non imprimables dans des champs de personnalisation. (NEO-48588)
-* Correction d’un problème qui entraînait des erreurs de diffusion lors de l’insertion d’images dynamiques Adobe Target. (NEO-62689)
-* Correction d’un problème qui empêchait les navigateurs d’ajouter des espaces supplémentaires lors de l’utilisation de contenu conditionnel dans une diffusion. (NEO-62132)
-* Correction d’un problème en raison duquel une fenêtre contextuelle s’ouvrait lors d’un clic sur une image dans l’éditeur de contenu d’e-mail. (NEO-60752)
-* Correction d’un problème qui entraînait une erreur et empêchait le défilement lors de l’édition du contenu d’une diffusion. (NEO-61364)
-* Le connecteur Adobe Analytics exporte désormais les mesures avec le type de canal approprié. Auparavant, il était toujours défini sur le canal « e-mail ». (NEO-26340)
-* Correction d’un problème qui entraînait des erreurs lors de l’utilisation du connecteur Big Query avec les champs dateTime. (NEO-49768)
-
-
-## Version 8.4.5 {#release-8-4-5}
-
-_3 avril 2023_
-
-**Correctifs**
-
-* Correction d’un problème qui pouvait entraîner une erreur de contrainte de clé en double si plusieurs workflows d’approbation étaient définis sur le même planning. (NEO-48968)
-* Correction d’un problème de régression introduit par NEO-54474 (8.4.4) qui entraînait la modification de l’attribut de style de la balise body lors du chargement d’une image dans Digital Content Editor (DCE). (NEO-57697)
-* Correction d’un problème qui pouvait entraîner une erreur lors de l’export de données à l’aide d’un connecteur CRM si la table temporaire avait une clé primaire définie sur long au lieu d’uuid. (NEO-54153)
-* Correction d’un problème de régression introduit dans la version 8.4.1 qui pouvait entraîner des erreurs dans l’export de packages, FDA via HTTP et le reporting. (NEO-57731)
-* Correction d’un problème de régression introduit dans la version 8.3.8 qui pouvait empêcher la mise à jour correcte du statut de diffusion pour les diffusions avec des identifiants négatifs. (NEO-54675)
-* Correction d’un problème lié aux champs booléens lors de l’import de données à l’aide du connecteur BigQuery (NEO-49181).
-
-
-## Version 8.4.4 {#release-8-4-4}
-
-_8 mars 2023_
-
-**Amélioration de la sécurité**
-
-* Afin d’améliorer la sécurité, Tomcat a été mis à jour de la version 8.5.81 vers la version 8.5.85. (NEO-50530)
-
-**Correctifs**
-
-* Correction d’un problème qui empêchait le défilement dans l’onglet **Modifier** de Digital Content Editor (DCE). (NEO-54474)
-* Correction d’un problème qui pouvait entraîner un blocage du serveur web lors de la réplication. (NEO-53670)
-
-
-## Version 8.4.3 {#release-8-4-3}
-
-
-_27 janvier 2023_
-
-**Améliorations**
-
-* Correction d’un problème de synchronisation des indicateurs de diffusion entre le serveur marketing et le serveur de midsourcing. (NEO-50724) <!--OKKKK-->
-* Correction d’un problème qui entraînait une erreur lors de l’exportation d’un workflow. (NEO-50555) <!--OKKKK-->
-* Correction d’un problème lors de l’extension d’un schéma précédemment étendu. (NEO-49118) <!--OKKKK-->
-* Correction d’un problème lors de l’utilisation de deux activités d’enrichissement avec le même identifiant dans la définition du lien. (NEO-48851)
-* Correction de deux problèmes qui entraînaient l’échec de la préparation de diffusion. La préparation de la diffusion pouvait échouer lorsque le nombre d’offres potentielles manipulées était trop élevé. Le deuxième problème survenait lorsque les URL des images étaient définies comme URL à suivre dans une diffusion au format texte. (NEO-48807) <!--OKKKK-->
-* Correction d’un problème qui entraînait l’échec d’un workflow lorsqu’il remplaçait le nom de l’entrepôt de données défini dans le compte externe pour les comptes non FFDA. (NEO-43209) <!--OKKKK-->
-* Amélioration de la sécurité des applications web pour empêcher les attaques DDoS. (NEO-50757) <!--OKKKK-->
-* La gestion des données de tracking consolidées a été améliorée dans la table FFDA (nms:trackingStats) **[!UICONTROL Tracking consolidé]** afin d’éviter les doublons. (NEO-46409)
-* Correction d’un problème d’opérateur logique dans les requêtes de workflow lors de l’utilisation d’une propriété `enableIf` dans une condition d’opérateur logique. La condition logique précédente a été remplacée. (NEO-45815)  <!--OKKKK-->
-* La génération des profils actifs a été optimisée dans le workflow de facturation afin d’améliorer les performances. (NEO-47658) <!--OKKKK-->
-* Correction d’un problème lié à l’importation de fichiers HTML lorsque les nœuds d’image (img) contenaient des URL avec des champs de personnalisation. (NEO-48396)
-* Correction d’un problème avec Snowflake (tous les déploiements) lors de l’utilisation du paramètre de tri dans une activité de workflow **Partage**. (NEO-45899) <!--OKKKK-->
-* Correction d’un problème qui entraînait une erreur lorsqu’un utilisateur ou une utilisatrice disposant de droits d’accès en lecture sur le dossier nmsDeliveryMapping essayait de lancer une campagne ou un workflow. (NEO-48230)
-* Correction d’un problème de performances dans l’onglet HTML d’une diffusion, qui pouvait se produire lors de l’utilisation d’un code HTML volumineux. (NEO-47440)
-<!-- * Fixed an issue which could lead to a "Character set mismatch" error when using certain functions such as `to_nclob` with an Oracle unicode database where NChar was not enabled. (NEO-49361)
-* Fixed an issue which prevented users from inserting a Time datatype in a **Data Update** workflow activity on MSSQL. (NEO-47763)-->
-* Correction d’un problème qui empêchait l’utilisation de l’option de workflow **Fusionner les lignes sélectionnées**. (NEO-48488)
-* Correction d’un problème sur le connecteur Snowflake FDA en raison duquel les enregistrements étaient supprimés lors de l’utilisation de « Jointure simple de cardinalité 0 ou 1 » pendant l’enrichissement. (NEO-48737)
-* Les autres références à la bibliothèque log4j ont été supprimées dans l’installation de Campaign sous Windows. (NEO-44851)
-* Correction d’un problème qui pouvait entraîner une erreur lors de l’ajout de l’indicateur **Destinataires ayant ouvert** (estimatedRecipientOpen) dans les données additionnelles d’une activité de workflow **Requête**. (NEO-46665)
-* La gestion des URL de tracking a été améliorée dans les workflows comportant plusieurs diffusions afin d’améliorer les performances. (NEO-50894) <!--OKKKK-->
-* Correction d’un problème qui entraînait l’échec de la réplication des schémas utilisant Xtkfolder. (NEO-46787) <!--OKKKK-->
-* Correction d’un problème en raison duquel la colonne personnalisée « lastModified » était déposée dans la table NmsSubscription. (NEO-48402)
-
-
+Les problèmes suivants ont été corrigés dans cette version : NEO-67892, NEO-67235, NEO-66797, NEO-66462, NEO-65091, NEO-65036, NEO-64984 NEO-64680, NEO-63973, NEO-63879, NEO-63815, NEO-63657, NEO-63539, NEO-63387, NEO-63322 94, NEO-63174, NEO-62964, NEO-62750, NEO-62686, NEO-62455, NEO-62406, NEO-61580, NEO-6 1199, NEO-60786, NEO-59544, NEO-59198, NEO-59059, NEO-58637, NEO-55197, NEO-52542 O-50488, NEO-47789

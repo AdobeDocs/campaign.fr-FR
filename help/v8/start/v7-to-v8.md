@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: 84b90cbd150c81edc81f5cc653db6fbe96af80aa
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 99%
+source-wordcount: '714'
+ht-degree: 92%
 
 ---
 
@@ -37,13 +37,21 @@ La nouvelle offre combine les services les plus performants avec une surveillanc
 
 En tant qu’ancien utilisateur [!DNL Campaign Classic], veuillez noter que la plupart des fonctionnalités de [!DNL Campaign Classic] v7 sont disponibles dans [!DNL Campaign] v8, à l’exception d’un petit ensemble de fonctionnalités répertoriées dans [cette section](#gs-removed).
 
-Campaign v8 repose sur une **architecture hybride**. Si vous effectuez une transition à partir de Campaign Classic v7, veuillez noter que toutes les diffusions passent par le serveur de midsourcing. Par conséquent, le routage interne est **impossible** dans Campaign v8 et le compte externe a donc été désactivé.
+>La nouvelle architecture cloud permet à Campaign de rationaliser les processus, de réduire les coûts, de gérer les risques et d’améliorer la sécurité des données. Votre environnement Campaign v8 est fourni avec un cloud privé virtuel (VPC) dédié et préconfiguré pour vous.
+
+
+## Architecture hybride {#hybrid-archi}
+
+Campaign v8 repose sur une **architecture hybride**. Si vous effectuez une transition à partir de Campaign Classic v7, veuillez noter que toutes les diffusions passent par le serveur de midsourcing.
+
+En conséquence :
+
+* Le routage interne est **impossible** dans Campaign v8, et le compte externe a été désactivé en conséquence,
+* Le statut des diffusions n&#39;est pas mis à jour instantanément : un processus technique s&#39;exécute sur l&#39;instance Marketing pour mettre à jour les statuts des diffusions dans les délais impartis.
+
 
 ![](../assets/do-not-localize/glass.png) Pour en savoir plus sur l’envoi de BAT de messages transactionnels si vous effectuez une transition à partir de Campaign v7, consultez [cette page](../send/transactional-template.md#transition-from-v7).
 
->[!NOTE]
->
->La nouvelle architecture cloud permet à Campaign de rationaliser les processus, de réduire les coûts, de gérer les risques et d’améliorer la sécurité des données. Votre environnement Campaign v8 est fourni avec un cloud privé virtuel (VPC) dédié et préconfiguré pour vous.
 
 ## [!DNL Campaign] et [!DNL Snowflake] {#ac-gs-snowflake}
 

@@ -5,16 +5,16 @@ feature: Schema Extension, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: 796af848-b537-4b8d-a601-fe0628a1fc83
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
 # Création d&#39;un schéma {#create-new-schema}
 
-Pour modifier, créer et paramétrer les schémas, cliquez sur le nœud **[!UICONTROL Administration > Configuration > Schémas de données]** de la console cliente Adobe Campaign.
+Pour modifier, créer et paramétrer les schémas, cliquez sur le nœud **[!UICONTROL Administration > Paramétrage > Schémas de données]** de la console cliente Adobe Campaign.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ L&#39;onglet **[!UICONTROL Aperçu]** génère automatiquement le schéma étend
 >
 >L&#39;enregistrement du schéma source lance automatiquement la génération du schéma étendu.
 
-Si vous devez vérifier la structure complète d&#39;un schéma, vous pouvez utiliser l&#39;onglet **[!UICONTROL Aperçu]**. Si le schéma a été étendu, vous serez alors en mesure de visualiser toutes ses extensions. En complément, l&#39;onglet **[!UICONTROL Documentation]** affiche tous les attributs et les éléments du schéma, ainsi que leurs propriétés (champ SQL, type/longueur, libellé, description). L&#39;onglet **[!UICONTROL Documentation]** s&#39;applique uniquement aux schémas générés.
+Si vous devez vérifier la structure complète d’un schéma, vous pouvez utiliser la variable **[!UICONTROL Aperçu]** . Si le schéma a été étendu, vous pourrez visualiser toutes ses extensions. En complément, la variable **[!UICONTROL Documentation]** L’onglet affiche tous les attributs et éléments du schéma, ainsi que leurs propriétés (champ SQL, type/longueur, libellé, description). L&#39;onglet **[!UICONTROL Documentation]** s&#39;applique uniquement aux schémas générés.
 
 ## Cas d&#39;utilisation : créer une table des contrats {#example--creating-a-contract-table}
 

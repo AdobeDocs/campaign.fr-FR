@@ -5,10 +5,10 @@ description: Créer et gérer les tâches
 feature: Campaigns, Resource Management
 role: User
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '3913'
-ht-degree: 100%
+source-wordcount: '3928'
+ht-degree: 89%
 
 ---
 
@@ -133,7 +133,7 @@ Pour désigner une liste d’opérateurs ou d’opératrices, cliquez sur le lie
 
 Vous pouvez définir un planning de validation pour la tâche dans la section inférieure de la fenêtre de configuration. Par défaut, les validant(e)s disposent de trois jours à partir de la date de soumission pour valider une tâche. Vous pouvez également ajouter un rappel qui sera automatiquement envoyé aux opérateurs et opératrices concernés avant la date limite de validation.
 
-La personne responsable de la tâche peut se charger de la validation et ce, même si d’autres opérateurs et opératrices ont été déjà été assignés pour le faire. En l’absence d’assignation d’un(e) validant(e), les notifications seront alors adressées à la personne responsable de la tâche. Tous les autres opérateurs et opératrices Adobe Campaign disposant des droits **[!UICONTROL Administrateur]** sont également habilités à valider la tâche. Toutefois, ils ne reçoivent pas de notifications.
+Le responsable de la tâche peut se charger de la validation, même si d&#39;autres opérateurs lui ont déjà été assignés. Si aucun opérateur validant n&#39;a été défini, les notifications seront envoyées au responsable de la tâche. Tous les autres opérateurs Adobe Campaign avec **[!UICONTROL Administrateur]** Les droits peuvent également approuver la tâche. Toutefois, ils ne reçoivent pas de notifications.
 
 ### Documents référencés {#documents-referenced}
 
@@ -312,14 +312,14 @@ La tâche de création d&#39;une ressource marketing interagit avec la ressource
 * Les opérateurs peuvent travailler normalement sur la ressource (télécharger le fichier vers ou depuis le serveur, verrouiller et déverrouiller la ressource) : cela n&#39;a pas d&#39;incidence sur la tâche.
 * La validation et la publication de la ressource peuvent être faites via la tâche : si l&#39;option **[!UICONTROL Publier la ressource marketing]** est active, la ressource est automatiquement validée et publiée lorsque la tâche est terminée. Si l&#39;option n&#39;est pas active, il n&#39;y a pas d&#39;interaction entre la tâche et la ressource : une action effectuée dans l&#39;une n&#39;aura aucun effet sur l&#39;autre.
 
-  Vous pouvez utiliser une série de tâches liées pour définir un chemin de validation complet. Cochez l&#39;option **[!UICONTROL Publier la ressource marketing]** uniquement au niveau de la dernière tâche : toutes les tâches devront être terminées pour que la ressource puisse être publiée. De plus, lorsque vous créerez une tâche de ressource marketing enfant d&#39;une autre tâche de ressource marketing, la ressource sera automatiquement sélectionnée dans la tâche-fille.
+  Vous pouvez utiliser une série de tâches liées pour définir un cycle de validation complet. Vérifiez les **[!UICONTROL Publier la ressource marketing]** uniquement pour la dernière tâche : toutes les tâches devront être terminées pour que la ressource soit publiée. De plus, lorsque vous créez une tâche de ressource marketing enfant, la ressource est automatiquement sélectionnée dans la tâche enfant.
 
    * **Via la ressource** : si vous soumettez la ressource à validation ou la validez, ces actions n&#39;auront aucun effet sur la tâche.
    * **Via la tâche** : si l&#39;option **[!UICONTROL Publier la ressource marketing]** est cochée dans la tâche, la ressource est automatiquement validée et publiée lorsque la tâche est terminée (voir ci-dessous). Si l&#39;option n&#39;est pas cochée, il n&#39;y a pas d&#39;interaction entre la tâche et la ressource :une action effectuée dans l&#39;une n&#39;aura aucune incidence sur l&#39;autre.
 
 #### Paramétrer une tâche de création de ressource marketing {#configuring-a-marketing-resource-creation-task}
 
-Le validant de la tâche peut être différent du validant de contenu défini dans la ressource. Cependant, si l&#39;option **[!UICONTROL Publier la ressource marketing]** est cochée (voir ci-dessous), le validant de la tâche est autorisé à valider le contenu de la ressource, puisque terminer la tâche valide automatiquement la ressource (ou, si aucun validant n&#39;est défini, le responsable de la tâche).
+La personne qui consulte la tâche n’est pas nécessaire pour la même personne que celle qui consulte le contenu défini dans la ressource. Cependant, si la variable **[!UICONTROL Publier la ressource marketing]** est cochée (voir ci-dessous), le validant de la tâche est autorisé à valider le contenu de la ressource, puisque terminer la tâche valide automatiquement la ressource (ou, si aucun validant n&#39;est défini, le responsable de la tâche).
 
 ![](assets/mrm_task_asset_creation.png)
 
@@ -381,7 +381,7 @@ Lors de sa création, les éléments suivants doivent être renseignés dans la 
 
   ![](assets/mrm_task_notif_dashboard_msg.png)
 
-Vous pouvez attacher une pièce jointe à la tâche, et à l&#39;email de notification. Pour cela, cliquez sur l&#39;icône **[!UICONTROL Documents]** dans la barre d&#39;outils en haut de la boîte.
+Vous pouvez ajouter une pièce jointe à la tâche et à l&#39;email de notification. Pour ce faire, cliquez sur le bouton **[!UICONTROL Documents]** dans la barre d’outils située dans le coin supérieur droit.
 
 ## Cycle de vie {#life-cycle-1}
 
@@ -431,8 +431,8 @@ Les statuts des tâches sont visualisables dans la vue d&#39;ensemble des tâche
 Une tâche peut être : **[!UICONTROL Planifiée]**, **[!UICONTROL En cours]**, **[!UICONTROL Terminée]**, **[!UICONTROL Annulée]**, **[!UICONTROL En attente de validation]** ou **[!UICONTROL Refusée]**.
 
 * A sa création, une tâche est **[!UICONTROL Planifiée]** si sa date de début se situe dans le futur. Une fois créée, elle reste planifiée tant que sa date de début n&#39;est pas atteinte.
-* Une fois débutée, la tâche est **[!UICONTROL En cours]**. Lorsque le responsable de la tâche la clôt, elle passe en **[!UICONTROL Terminée]**.
-* Si un validant a été défini, la tâche est **[!UICONTROL En attente de validation]** entre le moment où le responsable la clôt et le moment où le validant la valide. Si le validant la refuse, la tâche est **[!UICONTROL Refusée]**.
+* Une fois qu’elle a été lancée, la tâche est **[!UICONTROL En cours]**. Lorsque le responsable de la tâche la ferme, elle passe à **[!UICONTROL Terminé]**.
+* Si un validant a été défini, la tâche sera **[!UICONTROL En attente de validation]** une fois que le responsable l&#39;a clôt et jusqu&#39;à ce que le validant l&#39;approuve. Si le validant le refuse, la tâche sera **[!UICONTROL Rejetés]**.
 * Une tâche peut être annulée par son responsable depuis le tableau de bord ou à partir de la **[!UICONTROL Vue d&#39;ensemble des tâches]** en cliquant sur le bouton **[!UICONTROL Annuler]**.
 * Pour planifier une tâche, saisissez une date de démarrage dans le futur. Vous pouvez alors envoyer une notification initiale aux opérateurs Adobe Campaign impliqués dans la réalisation de cette tâche. Voir à ce sujet la section [Cycle de vie complet d&#39;une tâche](#complete-task-life-cycle).
 
@@ -464,11 +464,11 @@ Voici les différentes étapes du cycle de vie complet d&#39;une tâche pour laq
 
    A la création d&#39;une tâche planifiée dans le futur, celle-ci passe à l&#39;état **[!UICONTROL Planifiée]**.
 
-1. A la date de début de la tâche, le responsable et les intervenants reçoivent un email de notification les informant que la tâche a commencé. La tâche passe à l&#39;état **[!UICONTROL En cours]**.
+1. A la date de début de la tâche, le responsable et les intervenants reçoivent une notification leur indiquant que la tâche est lancée. Son état passe à **[!UICONTROL En cours]**.
 1. Lorsqu&#39;un intervenant a terminé la partie qui lui a été assignée, il valide la tâche, au choix :
 
    * à partir de l&#39;email de notification.
-   * à partir de la console ou de l’interface web, au niveau du tableau de bord de la tâche.
+   * via la console cliente ou l&#39;accès web, dans le tableau de bord de la tâche.
 
      ![](assets/s_ncs_user_task_start_rea.png)
 
@@ -482,7 +482,7 @@ Voici les différentes étapes du cycle de vie complet d&#39;une tâche pour laq
 
    ![](assets/s_ncs_user_task_follow_from_dashboard.png)
 
-1. Lorsqu’il ou elle estime que la tâche est terminée, le ou la responsable peut alors la clore de différentes manières : en cliquant sur le lien dans l’e-mail de notification envoyé à la date de début de la tâche, à partir de la console cliente ou dans l’interface web.
+1. Une fois que le responsable de la tâche a décidé qu&#39;elle était terminée, il peut la fermer à l&#39;aide du lien contenu dans l&#39;email de notification envoyé au démarrage de la tâche, de la console cliente ou de l&#39;interface.
 
    ![](assets/s_ncs_user_task_console_ressource_validation.png)
 
@@ -492,7 +492,7 @@ Voici les différentes étapes du cycle de vie complet d&#39;une tâche pour laq
 
 1. La tâche passe alors à l&#39;état **[!UICONTROL A valider]**, et un email de notification est envoyé au validant.
 
-   Il ou elle approuve la tâche à partir de l’e-mail de notification, de la console cliente ou de l’interface web.
+   Ils valident la tâche via l&#39;email de notification, la console cliente ou avec un navigateur web.
 
    Il peut agir depuis le tableau de bord de l&#39;opération :
 
@@ -511,4 +511,4 @@ Voici les différentes étapes du cycle de vie complet d&#39;une tâche pour laq
 
    >[!NOTE]
    >
-   >Lorsqu&#39;une tâche est terminée, le responsable a la possibilité de réinitialiser son cycle de vie. Pour cela, ouvrez la tâche, puis cliquez sur le lien **[!UICONTROL Réinitialiser la tâche pour l&#39;exécuter à nouveau...]** situé dans la partie inférieure de son tableau de bord.
+   >Une fois la tâche terminée, son cycle de vie peut être réinitialisé par le responsable. Pour ce faire, ouvrez la tâche et cliquez sur le bouton **[!UICONTROL Réinitialiser la tâche pour l’exécuter à nouveau...]** lien au bas du tableau de bord.

@@ -2,10 +2,10 @@
 title: Migrer les opérateurs et opératrices de Campaign vers Adobe Identity Management System (IMS)
 description: Découvrez comment migrer les opérateurs et opératrices Campaign vers Adobe Identity Management System (IMS).
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
-source-git-commit: 1cdb21533138623fc603424503063cf3dbc2d94c
-workflow-type: ht
-source-wordcount: '1116'
-ht-degree: 100%
+source-git-commit: b539b84907c7232f236b96ae8dfd11c8998a06b9
+workflow-type: tm+mt
+source-wordcount: '1345'
+ht-degree: 81%
 
 ---
 
@@ -76,7 +76,7 @@ Une fois la migration IMS complète terminée, Adobe applique les restrictions q
 
 Pour les nouvelles clientes et les nouveaux clients : la création d’un utilisateur natif ou d’une utilisatrice native n’est pas autorisée dès le départ.
 
-En tant qu’administrateur ou administratrice Campaign, vous pouvez accorder des autorisations aux utilisateurs et utilisatrices de votre entreprise via Adobe Admin Console et la console cliente Campaign. Les utilisateurs et utilisatrices peuvent se connecter à Adobe Campaign au moyen de leur Adobe ID. Apprenez-en davantage en consultant [cette documentation](../../v8/start/gs-permissions.md).
+En tant qu’administrateur de Campaign, vous pouvez accorder des autorisations aux utilisateurs de votre entreprise via Adobe Admin Console et la console cliente Campaign. Les utilisateurs et utilisatrices peuvent se connecter à Adobe Campaign au moyen de leur Adobe ID. Apprenez-en davantage en consultant [cette documentation](../../v8/start/gs-permissions.md).
 
 ### Comment ajouter des e-mails pour les personnes natives actuelles ? {#ims-migration-id}
 
@@ -87,7 +87,41 @@ En tant qu’administrateur ou administratrice Campaign, vous devez ajouter des 
 1. Saisissez l’e-mail de l’opérateur ou de l’opératrice dans la section **Points de contact** du formulaire.
 1. Enregistrez vos modifications.
 
-<!--You can also import a CSV file to update all your operator profiles with their email.-->
+En tant que responsable de workflow, ou administrateur de Campaign, vous pouvez également effectuer une mise à jour en masse de vos opérateurs avec un workflow.
+
++++Principales étapes pour mettre à jour vos opérateurs avec un workflow
+
+Pour effectuer une mise à jour en masse de vos opérateurs natifs, procédez comme suit :
+
+1. Créez un workflow pour extraire dans un fichier CSV tous les opérateurs qui se connectent à Campaign avec le mode d&#39;authentification natif. Utilisez une **Requête** activité et une **Extraction (fichier)** pour créer le fichier CSV. Pour chaque opérateur, en fonction des données de son profil, vous pouvez exporter les colonnes suivantes : `Name, Label`.
+
+   En savoir plus sur les **Requête** activité dans [cette page](../../automation/workflow/query.md)
+
+   En savoir plus sur les **Extraction (fichier)** activité dans [cette page](../../automation/workflow/extraction--file-.md)
+
+1. Mettez à jour le fichier CSV avec une nouvelle colonne contenant les emails de vos opérateurs.
+
+1. Créez un workflow pour importer des données mises à jour, avec un **Chargement (fichier)** activité et une **Mise à jour de données** dans le workflow.
+
+   ![](assets/update-operators-wf.png){width="70%"}
+
+1. Modifiez la variable **Chargement (fichier)** et définissez les paramètres pour charger le fichier CSV mis à jour, conformément à l’exemple ci-dessous.
+
+   ![](assets/data-loading-activity.png){width="70%"}
+
+   En savoir plus sur les **Chargement (fichier)** activité dans [cette page](../../automation/workflow/data-loading--file-.md)
+
+1. Modifiez la variable **Mise à jour de données** et définissez les paramètres conformément à l’exemple ci-dessous. Notez que la variable **Dimension mise à jour** a été remplacé par `Operators (xtk)`.
+
+   ![](assets/update-data-activity.png){width="70%"}
+
+   En savoir plus sur les **Mise à jour de données** activité dans [cette page](../../automation/workflow/update-data.md)
+
+1. Exécutez le workflow et vérifiez les résultats. L&#39;adresse email a été ajoutée au profil de l&#39;opérateur.
+
+   ![](assets/updated-operator.png){width="70%"}
+
++++
 
 
 ### Comment se connecter à Campaign via IMS ? {#ims-migration-log}

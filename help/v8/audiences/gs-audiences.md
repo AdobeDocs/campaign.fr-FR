@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 43483085-8aa6-47e6-89e7-9211e37beaa4
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ Pour renseigner des données de profil dans Adobe Campaign, vous pouvez :
 * [importez des fichiers de données](../start/import.md) provenant d’une source de données externe telle qu’un système CRM ou un fichier plat.
 * [créer des formulaires web](../dev/webapps.md) pour permettre aux clients de saisir leurs propres informations et de créer leur propre profil ;
 * [mapper à une base de données externe](../connect/fda.md) dans laquelle les profils sont stockés ;
-* saisir les profils manuellement dans la console cliente, comme indiqué ci-dessous :
+* saisissez les profils manuellement dans la console cliente, comme ci-dessous :
 
 ![](assets/create-profile.png)
 

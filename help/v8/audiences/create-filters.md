@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 100%
+source-wordcount: '1708'
+ht-degree: 98%
 
 ---
 
@@ -193,7 +193,7 @@ Utilisez et combinez les **Filtres rapides** pour définir des filtres sur des c
 
 Une fois ajoutés, les champs de filtre rapide s&#39;affichent au-dessus de la liste de données, les uns après les autres. Ils peuvent être supprimés indépendamment les uns des autres.
 
-Les filtres rapides sont spécifiques à chaque opérateur et opératrice et sont réinitialisés à chaque fois que celui-ci ou celle-ci vide le cache de la console cliente.
+Les filtres rapides sont spécifiques à chaque opérateur et sont réinitialisés à chaque fois que l&#39;opérateur vide le cache de la console cliente.
 
 Si vous devez réutiliser un filtre, créez un **filtre avancé** et enregistrez-le. [En savoir plus](#advanced-filters).
 
@@ -255,7 +255,7 @@ Définissez les conditions de filtrage. Dans l&#39;exemple ci-dessous, vous alle
 
    ![](assets/select-operator.png)
 
-1. Sélectionnez une valeur attendue dans la colonne **[!UICONTROL Valeur]**. Vous pouvez combiner plusieurs filtres pour affiner votre requête. Pour ajouter un critère de filtrage, cliquez sur le bouton **[!UICONTROL Ajouter]**.
+1. Sélectionnez une valeur attendue dans la variable **[!UICONTROL Valeur]** colonne . Vous pouvez combiner plusieurs filtres pour affiner votre requête. Pour ajouter une condition de filtre, cliquez sur **[!UICONTROL Ajouter]**.
 
    ![](assets/add-an-exp.png)
 

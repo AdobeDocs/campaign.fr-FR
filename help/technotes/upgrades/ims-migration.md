@@ -4,10 +4,10 @@ description: Découvrez comment migrer les opérateurs et opératrices technique
 feature: Technote
 role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
-source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
-workflow-type: ht
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+workflow-type: tm+mt
 source-wordcount: '1511'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -204,13 +204,13 @@ Une fois le processus de migration réalisé et validé, les appels Soap sont mi
 
 
 
-### Étape 9 : (facultatif) mettre à jour l’opérateur ou opératrice du compte technique dans la console cliente Campaign {#ims-migration-step-9}
+### Etape 9 - (facultative) Mettre à jour l&#39;opérateur du compte technique dans la console cliente Campaign {#ims-migration-step-9}
 
 Cette étape est facultative et disponible uniquement dans la ou les instances marketing, et non dans une instance Message Center, et si des autorisations de dossiers spécifiques ou des droits nommés ont été définis pour l’opérateur ou l’opératrice technique, et non par le ou les groupes d’opérateurs et d’opératrices attribués. Vous devez maintenant mettre à jour l’utilisateur ou utilisatrice du compte technique nouvellement créé dans l’Admin Console pour accorder les autorisations de dossier ou les droits nommés requis.
 
 Notez que l’utilisateur ou l’utilisatrice du compte technique n’existera PAS dans Adobe Campaign tant qu’au moins un appel API n’aura pas été effectué vers l’instance Campaign. À ce moment-là, IMS créera l’utilisateur ou l’utilisatrice dans Campaign. Si vous ne parvenez pas à localiser les utilisateurs et utilisatrices techniques dans Campaign, vérifiez que vous avez bien réussi à envoyer un appel API comme indiqué [à l’étape 7](#ims-migration-step-7).
 
-1. Pour appliquer les modifications nécessaires au nouvel utilisateur ou à la nouvelle utilisatrice du compte technique, procédez à sa localisation dans la console cliente Campaign avec son adresse e-mail. Cette adresse e-mail a été créée lors des étapes de création et d’authentification du projet ci-dessus.
+1. Pour appliquer les modifications nécessaires au nouvel utilisateur du compte technique, localisez-les dans la console cliente Campaign par adresse électronique. Cette adresse e-mail a été créée lors des étapes de création et d’authentification du projet ci-dessus.
 
    Vous pouvez localiser cette adresse e-mail en cliquant sur le titre **OAuth serveur à serveur** dans la section **Informations d’identification** du projet.
 
@@ -220,11 +220,11 @@ Notez que l’utilisateur ou l’utilisatrice du compte technique n’existera P
 
    ![](assets/do-not-localize/ims-updates-08.png)
 
-1. Vous devez maintenant mettre à jour l’opérateur technique nouvellement créée ou l’opératrice technique nouvellement créée dans la console cliente Adobe Campaign. Vous devez appliquer les autorisations de dossier des opérateurs et opératrices techniques existants au nouvel opérateur ou à la nouvelle opératrice technique.
+1. Vous devez maintenant mettre à jour l’opérateur technique nouvellement créé dans la console cliente Adobe Campaign. Vous devez appliquer les autorisations de dossier des opérateurs et opératrices techniques existants au nouvel opérateur ou à la nouvelle opératrice technique.
 
    Pour mettre à jour cet opérateur ou cette opératrice, procédez comme suit :
 
-   1. Dans l’explorateur de la console cliente Campaign, accédez à **Administration > Gestion des accès > Opérateurs**.
+   1. Dans l&#39;explorateur de la console cliente Campaign, accédez au **Administration > Gestion des accès > Opérateurs**.
    1. Accédez à l’opérateur ou opératrice technique existant(e) utilisé(e) pour les API.
    1. Accédez aux autorisations de dossier et vérifiez les droits.
    1. Appliquez les mêmes autorisations à l’opérateur ou opératrice technique nouvellement créé(e). L’adresse e-mail de cet opérateur ou de cette opératrice est la valeur de l’**e-mail du compte technique** copiée précédemment.
@@ -233,11 +233,11 @@ Notez que l’utilisateur ou l’utilisatrice du compte technique n’existera P
 
 >[!CAUTION]
 >
->Le nouvel opérateur ou la nouvelle opératrice technique doit avoir effectué au moins un appel API à ajouter à la console cliente Campaign.
+>Le nouvel opérateur technique doit avoir effectué au moins un appel API à ajouter à la console cliente Campaign.
 >
 
 ### Étape 10 : supprimer l’ancien opérateur ou l’ancienne opératrice technique d’Adobe Campaign {#ims-migration-step-10}
 
-Une fois que vous avez migré tous les systèmes tiers pour utiliser le nouveau compte technique avec l’authentification IMS, vous pouvez supprimer l’ancien opérateur ou l’ancienne opératrice technique de la console cliente Campaign.
+Une fois que vous avez migré tous les systèmes tiers pour utiliser le nouveau compte technique avec authentification IMS, vous pouvez supprimer l&#39;ancien opérateur technique de la console cliente Campaign.
 
-Pour ce faire, connectez-vous à la console cliente Campaign, accédez à **Administration > Gestion des accès > Opérateurs et opératrices**, recherchez les anciens utilisateurs et les anciennes utilisatrices techniques et supprimez-les.
+Pour ce faire, connectez-vous à la console cliente Campaign, en accédant à **Administration > Gestion des accès > Opérateurs** et rechercher les anciens utilisateurs techniques et les supprimer.

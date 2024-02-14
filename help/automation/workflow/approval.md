@@ -5,10 +5,10 @@ description: Validation
 feature: Workflows, Approvals
 role: User
 exl-id: 9e57d21c-ce16-448d-97f1-8c6844acb37b
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -32,7 +32,7 @@ Au besoin, vous pouvez affecter la tâche de validation à un opérateur unique 
   >
   >Seul l&#39;opérateur sélectionné sera habilité à valider la tâche.
 
-* Vous pouvez définir une requête afin de filtrer les opérateurs validants. Pour cela, sélectionnez la valeur **[!UICONTROL Filtre]** dans le champ **[!UICONTROL Type d&#39;affectation]** puis cliquez sur le lien **[!UICONTROL Paramètres avancés...]** pour définir les critères de filtrage, comme dans l&#39;exemple ci-dessous :
+* Vous pouvez définir une requête pour filtrer les opérateurs validants. Pour ce faire, sélectionnez l’option **[!UICONTROL Filtrer]** dans la variable **[!UICONTROL Type d&#39;affectation]** et cliquez sur le champ **[!UICONTROL Paramètres avancés...]** pour définir les conditions de filtrage, comme dans l&#39;exemple ci-dessous :
 
   ![](assets/s_advuser_validation_box_filter.png)
 
@@ -42,7 +42,7 @@ Dans le cas d&#39;une validation multiple, les transitions correspondant au choi
 
 Cette activité n&#39;est pas bloquante et le workflow peut effectuer d&#39;autres traitements dans l&#39;attente d&#39;une réponse.
 
-Un opérateur ou une opératrice peut approuver les tâches qui lui sont affectées à partir de la console cliente. Un opérateur ou une opératrice doté de droits d’administrateur peut visualiser et supprimer les tâches assignées aux opérateurs, mais il n’est pas possible d’y répondre.
+Un opérateur peut valider les tâches qui lui sont assignées depuis la console cliente. Un opérateur ou une opératrice doté de droits d’administrateur peut visualiser et supprimer les tâches assignées aux opérateurs, mais il n’est pas possible d’y répondre.
 
 La modification du titre ou du corps du message de l&#39;activité n&#39;affecte pas les tâches en cours, en revanche, la modification des choix possibles affecte directement les tâches en cours qui héritent automatiquement de la nouvelle liste de choix.
 
@@ -74,4 +74,4 @@ Un exemple de validation est proposé dans la section [Définir les validations]
 
 * **[!UICONTROL responseOperator]**
 
-  Identifiant de l&#39;opérateur qui a répondu. Ce champ est une valeur numérique, mais de type **[!UICONTROL String]**.
+  Identifiant de l&#39;opérateur qui a répondu. Ce champ est une valeur numérique, mais une valeur **[!UICONTROL Chaîne]** champ .

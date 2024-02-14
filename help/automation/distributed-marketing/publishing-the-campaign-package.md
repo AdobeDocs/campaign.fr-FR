@@ -5,10 +5,10 @@ description: Publier le pack de campagnes
 feature: Distributed Marketing
 role: User
 exl-id: 2cd1981d-f192-41dc-b2f2-4fcd60493079
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 100%
+source-wordcount: '479'
+ht-degree: 82%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Les opérateurs de l&#39;entité centrale publient dans la **[!UICONTROL liste des kits d&#39;opérations]**, les kits qu&#39;ils souhaitent proposer aux entités locales.
 
-Avant d&#39;être publiés dans la liste des kits d&#39;opération, les kits d&#39;opération doivent être validés par l&#39;entité centrale. Pour cela, vous pouvez définir un validant ou groupe de validants à partir du lien **[!UICONTROL Paramètres de validation...]** du kit d&#39;opération.
+Avant d&#39;être publiés dans la liste des kits d&#39;opération, les kits d&#39;opération doivent être validés par l&#39;entité centrale. Pour cela, vous pouvez définir un validant ou un groupe de validants au moyen de l&#39;option **[!UICONTROL Paramètres de validation]** dans le kit d&#39;opération.
 
 ## Attribuer un réviseur ou une réviseuse {#assigning-a-reviewer}
 
@@ -46,7 +46,7 @@ Depuis le lien **[!UICONTROL Paramètres de validation...]** du package de la ca
 
 Par défaut, les opérateurs validants disposent de trois jours pour procéder à la validation, à partir de la date de soumission.
 
-Vous pouvez aussi, dans la section inférieure de la fenêtre d&#39;édition des validants, paramétrer des rappels afin d&#39;envoyer un ou plusieurs messages d&#39;alerte en cas de non validation du kit d&#39;opération. Pour cela, cliquez sur le lien **[!UICONTROL Ajouter un rappel]** puis sur le bouton **[!UICONTROL Ajouter]**.
+Dans la fenêtre d&#39;édition des validants, vous pouvez également paramétrer des rappels afin d&#39;envoyer un ou plusieurs messages en cas de non validation d&#39;un kit d&#39;opération. Pour ce faire, cliquez sur le bouton **[!UICONTROL Ajouter un rappel]** puis le lien **[!UICONTROL Ajouter]** bouton .
 
 Les rappels peuvent être envoyés à une date donnée et/ou **x** jours après la date d’envoi. Le type de rappel peut être paramétré dans la première colonne du tableau des rappels. Dans l’exemple ci-dessous, les réviseurs et réviseuses reçoivent un message de rappel le 11/01/2023, soit deux jours avant la date sélectionnée dans la colonne **[!UICONTROL Date]**, ainsi qu’un deuxième rappel un jour avant la fin de la période d’approbation, soit deux jours après la date d’approbation de l’envoi.
 
@@ -54,7 +54,7 @@ Les rappels peuvent être envoyés à une date donnée et/ou **x** jours après 
 
 Une fois défini et une fois que le package a été soumis à validation, le planning des traitements est affiché directement dans l&#39;onglet **[!UICONTROL Suivi]**. Il indique la date limite de traitement calculée à partir de la configuration spécifiée ci-avant, et la date du ou des rappels paramétrés.
 
-## Approuver via la console cliente {#approving-via-the-adobe-campaign-console}
+## Valider via la console cliente {#approving-via-the-adobe-campaign-console}
 
 Si aucun validant n&#39;a été défini ou si aucun des opérateurs notifiés n&#39;a validé le kit, le bouton **[!UICONTROL Valider le kit]** permet de procéder directement à la validation depuis l&#39;onglet **[!UICONTROL Tableau de bord]** du kit d&#39;opération ou depuis la vue d&#39;ensemble des kits.
 

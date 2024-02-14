@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 87c971ac6cf4abb6b04d52ce60ac2036055e1e02
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 100%
+source-wordcount: '631'
+ht-degree: 83%
 
 ---
 
@@ -18,58 +18,11 @@ Cette section présente les options et paramètres disponibles dans les proprié
 
 ## Utiliser E-mail Cci {#email-bcc}
 
-<!--
->[!NOTE]
->
->This capability is available starting Campaign v8.3. To check your version, refer to [this section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)-->
-
-Vous pouvez configurer Adobe Campaign pour conserver une copie des e-mails envoyés depuis votre plateforme.
-
-Adobe Campaign ne gère pas les fichiers archivés. Cela vous permet d’envoyer les messages de votre choix à une adresse e-mail Cci (copie carbone invisible) dédiée, à partir de laquelle ils peuvent être traités et archivés au moyen d’un système externe. Les fichiers .eml correspondant aux e-mails envoyés peuvent ensuite être transférés vers un serveur distant, tel qu’un serveur de messagerie SMTP.
-
->[!CAUTION]
->
->Pour des raisons de confidentialité, les e-mails en Cci doivent être traités dans un système d’archivage capable de stocker en toute sécurité les informations d’identification personnelles (PII).
-
-La destination d&#39;archivage est l&#39;adresse e-mail en Cci de votre choix, qui restera invisible pour les destinataires de la diffusion.
-
-![](../assets/do-not-localize/speech.png)En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support){target="_blank"} pour communiquer l’adresse e-mail en Cci à utiliser pour l’archivage.
-
-Une fois l’adresse e-mail en Cci définie, vous devez activer l’option dédiée au niveau de la diffusion.
-
->[!CAUTION]
->
->**[!UICONTROL E-mail Cci]** n’est pas activé par défaut. Vous devez l’activer manuellement au niveau de la diffusion e-mail ou du modèle de diffusion.
-
-Pour ce faire, procédez comme suit :
-
-1. Accédez à **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Diffusions]** ou **[!UICONTROL Ressources]** > **[!UICONTROL Modèles]** > **[!UICONTROL Modèles de diffusion]**.
-1. Sélectionnez la diffusion de votre choix ou dupliquez le modèle d&#39;usine **[!UICONTROL Diffusion email]**, puis sélectionnez le modèle dupliqué.
-1. Cliquez sur le bouton **[!UICONTROL Propriétés]**.
-1. Sélectionnez l&#39;onglet **[!UICONTROL Diffusion]**.
-1. Cochez l’option **[!UICONTROL Email Cci]**.
-
-   ![](assets/email-bcc.png)
-
-1. Cliquez sur **[!UICONTROL OK]**.
-
-Une copie de tous les messages envoyés pour chaque diffusion basée sur ce modèle sera envoyée à l’adresse e-mail en Cci qui a été configurée.
-
-Notez les spécificités et recommandations suivantes :
-
-* Vous ne pouvez utiliser qu’une seule adresse e-mail en Cci.
-
-* Vérifiez que l’adresse en Cci dispose de suffisamment de capacité pour archiver tous les e-mails envoyés.
-
-* L’option Email Cci <!--with Enhanced MTA--> assure la diffusion auprès de l’adresse e-mail en Cci avant la diffusion aux destinataires, ce qui peut entraîner l’envoi de messages en Cci même si les diffusions d’origine ont pu l’objet de retours. Pour plus d’informations sur les retours, voir [Présentation des diffusions en échec](delivery-failures.md).
-
-* Si les e-mails envoyés à l&#39;adresse en Cci sont ouverts et font l’objet de clics, cela sera pris en compte dans les **[!UICONTROL Ouvertures totales]** et les **[!UICONTROL Clics]** provenant de l’analyse d’envoi, ce qui pourrait entraîner des erreurs de calcul.
-
-<!--Only successfully sent emails are taken in account, bounces are not.-->
+Vous pouvez configurer Adobe Campaign pour conserver une copie des emails envoyés depuis votre plateforme. Cette option est présentée dans la section [cette page](email-bcc.md).
 
 ## Sélectionner des formats de message {#selecting-message-formats}
 
-Vous pouvez paramétrer le format des emails envoyés. Pour cela, éditez les propriétés de la diffusion et cliquez sur l&#39;onglet **[!UICONTROL Envoi]**.
+Vous pouvez modifier le format des emails envoyés. Pour cela, éditez les propriétés de la diffusion et cliquez sur le bouton **[!UICONTROL Diffusion]** .
 
 ![](assets/email-message-format.png)
 
@@ -124,7 +77,7 @@ Pour plus d’informations sur la gestion des e-mails de rebond, consultez [cett
 
 ## Ajouter des en-têtes SMTP {#adding-smtp-headers}
 
-Vous pouvez ajouter des en-têtes SMTP supplémentaires à vos diffusions. Pour cela, utilisez la section correspondante dans l&#39;onglet **[!UICONTROL SMTP]** des propriétés de la diffusion.
+Vous pouvez ajouter des en-têtes SMTP à vos diffusions. Pour ce faire, utilisez la section correspondante du **[!UICONTROL SMTP]** dans la diffusion.
 
 Le script saisi dans cette fenêtre doit référencer un en-tête par ligne, sous la forme **nom: valeur**.
 
@@ -138,9 +91,9 @@ Les valeurs sont automatiquement encodées, si nécessaire.
 
 ![](assets/email-smtp-headers.png)
 
-<!--
-## Generate mirror page {#generating-mirror-page}
 
-The mirror page is an HTML page accessible online via a web browser. Its content is identical to the email. It can be useful if your recipients are experiencing rendering issues or broken images when trying to view your email in their inbox.
+## Générer une page miroir {#generating-mirror-page}
 
-Learn how to insert a link to the mirror page in [this section](mirror-page.md).-->
+La page miroir est une page HTML accessible en ligne via un navigateur web et dont le contenu est identique à celui de l’email. Cela peut s&#39;avérer utile si vos destinataires rencontrent des problèmes de rendu ou des images endommagées lors de la tentative d&#39;affichage de votre email dans leur boîte de réception.
+
+Découvrez comment insérer un lien vers la page miroir dans [cette section](mirror-page.md)

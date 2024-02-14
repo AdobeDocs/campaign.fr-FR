@@ -5,10 +5,10 @@ feature: Web Forms, Landing Pages
 role: Developer
 level: Beginner, Intermediate
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '2574'
-ht-degree: 100%
+source-wordcount: '2573'
+ht-degree: 89%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 100%
 
 Lorsque vous créez ou étendez un schéma, vous devez créer ou modifier les formulaires de saisie associés pour permettre aux utilisateurs finaux et utilisatrices finales de voir ces modifications.
 
-Un formulaire de saisie vous permet de modifier une instance associée à un schéma de données à partir de la console cliente Adobe Campaign. Le formulaire est identifié par ses nom et espace de noms.
+Un formulaire de saisie vous permet de modifier une instance associée à un schéma de données à partir de la console client Adobe Campaign. Le formulaire est identifié par ses nom et espace de noms.
 
 La clé d’identification d’un formulaire correspond à une chaîne constituée de l’espace de noms et du nom séparés par deux points, par exemple « cus:contact ».
 
 ## Modification des formulaires de saisie
 
-Créez et configurez des formulaires de saisie à partir du dossier **[!UICONTROL Administration] > [!UICONTROL Configuration] > [!UICONTROL Formulaires de saisie]** de la console client :
+Créez et configurez des formulaires de saisie à partir du dossier **[!UICONTROL Administration] > [!UICONTROL Paramétrage] > [!UICONTROL Formulaires de saisie]** de la console cliente :
 
 ![](assets/form_arbo.png)
 
@@ -159,9 +159,9 @@ Un texte d&#39;aide a été ajouté à l&#39;aide de la balise `<static>` avec l
 
 Utilisez des **conteneurs** pour regrouper un ensemble de contrôles. Ils sont représentés par l&#39;élément **`<container>`**. Ils ont été utilisés ci-dessus pour mettre en forme les contrôles sur plusieurs colonnes.
 
-L&#39;attribut **xpath** sur un `<container>` permet de simplifier le référencement des contrôles enfants. Le référencement des contrôles est alors relatif au `<container>` parent.
+L’attribut **xpath** sur un `<container>` permet de simplifier le référencement des contrôles enfants. Le référencement des contrôles est alors relatif au `<container>` parent.
 
-Exemple de conteneur sans &quot;xpath&quot; :
+Exemple de conteneur sans « xpath » :
 
 ```
 <container colcount="2">
@@ -170,7 +170,7 @@ Exemple de conteneur sans &quot;xpath&quot; :
 </container>
 ```
 
-Exemple avec ajout du &quot;xpath&quot; sur l&#39;élément de nom &quot;location&quot; :
+Exemple avec ajout du « xpath » sur l’élément de nom « location » :
 
 ```
 <container colcount="2" xpath="location">
@@ -200,7 +200,7 @@ Utilisez un conteneur **notebook** pour formater les données dans des pages acc
 </container>
 ```
 
-Le conteneur principal est défini par l&#39;attribut **type=&quot;notebook&quot;**. Les onglets sont déclarés dans les conteneurs enfants, le libellé des onglets est renseigné à partir de l&#39;attribut **label**.
+Le conteneur principal est défini par la variable **type=&quot;notebook&quot;** attribut. Les onglets sont déclarés dans les conteneurs enfants et le libellé des onglets est renseigné à partir de la variable **label** attribut.
 
 Ajoutez l&#39;attribut **style=&quot;down&quot;** pour forcer le positionnement vertical des libellés d&#39;onglet sous le contrôle. Cet attribut est facultatif. La valeur par défaut est **&quot;up&quot;**.
 
@@ -227,7 +227,7 @@ Utilisez ce conteneur pour afficher une barre d&#39;icônes verticale permettant
 </container>
 ```
 
-Le conteneur principal est défini par l&#39;attribut **type=&quot;iconbox&quot;**. Les pages associées aux icônes sont déclarées dans les conteneurs enfants. Le libellé des icônes est renseigné à partir de l&#39;attribut **label**.
+Le conteneur principal est défini par la variable **type=&quot;iconbox&quot;** attribut. Les pages associées aux icônes sont déclarées dans les conteneurs enfants. Le libellé des icônes est renseigné à partir du champ **label** attribut.
 
 L&#39;icône d&#39;une page est renseignée à partir de l&#39;attribut `img="<image>"`, où `<image>` est le nom de l&#39;image correspondant à sa clé construite avec le nom et l&#39;espace de noms (par exemple &quot;xtk:properties.png&quot;).
 
@@ -248,12 +248,12 @@ Cet exemple illustre la visibilité des contrôles sur la valeur du champ &quot;
 </container>
 ```
 
-Un conteneur de visibilité est défini par l&#39;attribut **type=&quot;visibleGroup&quot;**. L&#39;attribut **visibleIf** contient la condition de visibilité.
+Un conteneur de visibilité est défini par l’attribut . **type=&quot;visibleGroup&quot;**. La variable **visibleIf** contient la condition de visibilité.
 
 Exemples de syntaxes de conditions :
 
 * **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;** : teste l&#39;égalité sur les données de type chaîne. La valeur de comparaison doit être entre guillemets.
-* **visibleIf=&quot;@gender >= 1 and @gender != 2&quot;** : condition sur une valeur numérique.
+* **visibleIf=&quot;@gender >= 1 et @gender != 2&quot;**: condition sur une valeur numérique.
 * **visibleIf=&quot;@boolean1=true or @boolean2=false&quot;** : test sur des champs booléens.
 
 ### Affichage conditionnel (enabledGroup) {#enabling-container}
@@ -269,7 +269,7 @@ Ce conteneur pemet l&#39;activation ou la désactivation d&#39;un ensemble de do
 </container>
 ```
 
-Un conteneur d&#39;activation est défini par l&#39;attribut **type=&quot;enabledGroup&quot;**. L&#39;attribut **enabledIf** contient la condition d&#39;activation.
+Un conteneur d’activation est défini par la variable **type=&quot;enabledGroup&quot;** attribut. La variable **enabledIf** contient la condition d’activation.
 
 ## Modification d&#39;un lien {#editing-a-link}
 
@@ -287,13 +287,13 @@ Le contrôle d&#39;édition du lien dans son formulaire de saisie est :
 <input xpath="company"/>
 ```
 
-Le choix de la cible est accessible à partir de la zone d&#39;édition. Une aide à la saisie par auto-complétion permet de retrouver facilement un élément de la cible en fonction des premiers caractères renseignés. La recherche se base alors sur la **Compute string** définie dans le schéma ciblé. Si la cible n&#39;existe pas après validation dans le contrôle, un message de confirmation de création à la volée de la cible est affiché. La confirmation crée un nouvel enregistrement de la table cible et l&#39;associe sur le lien.
+La sélection de la cible est accessible à partir du champ d&#39;édition. L’entrée est assistée par le type , de sorte qu’un élément cible puisse être facilement trouvé à partir des premiers caractères saisis. La recherche est ensuite basée sur la variable **Compute string** défini dans le schéma ciblé. Si le schéma n&#39;existe pas après validation dans le contrôle, un message de confirmation de création de la cible à la volée s&#39;affiche. La confirmation crée un nouvel enregistrement dans la table cible et l&#39;associe au lien.
 
 Une liste déroulante permet de sélectionner un élément de la cible parmi la liste des enregistrements déjà créés.
 
 L&#39;icône **[!UICONTROL Modifier le lien]** (dossier) lance un formulaire de sélection avec la liste des éléments ciblés et une zone de filtre.
 
-L&#39;icône **[!UICONTROL Editer le lien]** (loupe) lance la forme d&#39;édition de l&#39;élément lié. La forme utilisée est déduite par défaut sur la clé du schéma ciblé, l&#39;attribut **form** permet de forcer le nom de la forme d&#39;édition (par exemple &quot;cus:company2&quot;).
+La variable **[!UICONTROL Lien d’édition]** (loupe) lance la forme d&#39;édition de l&#39;élément lié. Le formulaire utilisé est déduit par défaut sur la clé du schéma ciblé. La variable **formulaire** permet de forcer le nom du formulaire d&#39;édition (par exemple &quot;cus:company2&quot;).
 
 Vous pouvez restreindre le choix des éléments de la cible en ajoutant l’élément **`<sysfilter>`** à partir de la définition du lien dans le formulaire de saisie :
 
@@ -403,11 +403,11 @@ Pour notre exemple, nous partirons du formulaire de saisie du schéma &quot;cus:
 </input>
 ```
 
-L&#39;attribut **xpathChoiceTarget** permet de lancer une forme de choix à partir du lien renseigné. La création de l&#39;enregistrement de la table de relation va automatiquement mettre à jour le lien sur le destinataire courant et le service sélectionné.
+L’attribut **xpathChoiceTarget** permet de lancer un formulaire de sélection à partir du lien saisi. La création de l’enregistrement de la table de relation va automatiquement mettre à jour le lien sur le destinataire courant et le service sélectionné.
 
 >[!NOTE]
 >
->L&#39;attribut **xpathEditTarget** permet de forcer l&#39;édition de la ligne sélectionnée sur le lien renseigné.
+>L’attribut **xpathEditTarget** permet de forcer l’édition de la ligne sélectionnée sur le lien renseigné.
 
 ### Propriétés de la liste {#list-properties}
 
@@ -417,8 +417,8 @@ L&#39;attribut **xpathChoiceTarget** permet de lancer une forme de choix à part
 * **img** : affiche l&#39;image associée à la liste
 * **form** : surcharge la forme d&#39;édition de l&#39;élément ciblé
 * **zoom** : ajoute le bouton **[!UICONTROL Zoom]** pour l&#39;édition de l&#39;élément ciblé
-* **xpathEditTarget** : fixe l&#39;édition sur le lien renseigné
-* **xpathChoiceTarget** : pour l&#39;ajout, lance la forme de choix sur le lien renseigné
+* **xpathEditTarget** : définit l’édition sur le lien saisi
+* **xpathChoiceTarget** : pour l’ajout, lance la formulaire de sélection sur le lien saisi
 
 ## Ajout de contrôles de liste mémoire {#memory-list-controls}
 
@@ -487,7 +487,7 @@ Le formulaire d&#39;édition est rempli à partir de l&#39;élément `<form>` so
 * **form** : surcharge la forme d&#39;édition de l&#39;élément ciblé
 * **zoom** : ajoute le bouton **[!UICONTROL Zoom]** pour l&#39;édition de l&#39;élément ciblé
 * **zoomOnAdd** : lance le forme d&#39;édition sur l&#39;ajout
-* **xpathChoiceTarget** : pour l&#39;ajout, lance la forme de choix sur le lien renseigné
+* **xpathChoiceTarget** : pour l’ajout, lance la formulaire de sélection sur le lien saisi
 
 ## Ajout de champs non modifiables {#non-editable-fields}
 
@@ -518,7 +518,7 @@ Exemple sur le champ &quot;Genre&quot; :
 
 ## Ajout d&#39;une case à cocher {#checkbox}
 
-Une case à cocher permet de refléter un état booléen (qu&#39;elle soit cochée ou non). Par défaut, ce contrôle est utilisé par les champs de type &quot;booléen&quot; (true/false). On peut associer à ce bouton une variable qui prendra par défaut la valeur 0 ou 1. Cette valeur peut être surchargée à partir de l&#39;attribut **checkValue**.
+Une case à cocher reflète un état booléen (sélectionné ou non). Par défaut, ce contrôle est utilisé par les champs &quot;Boolean&quot; (true/false). Une variable prenant la valeur par défaut 0 ou 1 peut être associée à ce bouton. Cette valeur peut être surchargée à l’aide de la variable **checkValue** attributs.
 
 ```
 <input xpath="@boolean1"/>

@@ -5,10 +5,10 @@ description: Validation en local
 feature: Workflows, Approvals
 role: User
 exl-id: 172b6827-ddfc-4c6e-87c9-eb49e73ab3ab
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '703'
+ht-degree: 68%
 
 ---
 
@@ -44,20 +44,20 @@ Les champs à renseigner dans le cas d&#39;une notification pour la validation d
 
 ![](assets/local_validation_3.png)
 
-* **[!UICONTROL Contexte de répartition]** : sélectionnez l&#39;option **[!UICONTROL Spécifié par la transition]** si vous utilisez une activité de type **[!UICONTROL Partage]** pour limiter la population ciblée. Dans ce cas, le modèle de répartition est renseigné dans l&#39;activité de partage. Si vous ne limitez pas la population ciblée, sélectionnez ici l&#39;option **[!UICONTROL Explicite]** et renseignez le modèle de répartition dans le champ **[!UICONTROL Répartition des données]**.
+* **[!UICONTROL Contexte de distribution]**: sélectionnez la variable **[!UICONTROL Spécifié par la transition]** si vous utilisez une **[!UICONTROL Partage]** activité de type pour limiter la population ciblée. Dans ce cas, le modèle de répartition est renseigné dans l&#39;activité de partage. Si vous ne limitez pas la population ciblée, sélectionnez la variable **[!UICONTROL Explicite]** ici et saisissez le modèle de répartition dans le champ **[!UICONTROL Répartition des données]** champ .
 
   Pour plus d’informations sur la création d’un modèle de distribution de données, voir [Limiter le nombre d&#39;enregistrements des sous-ensembles par répartition de données](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 * **[!UICONTROL Gestion de la validation :]**
 
-   * Sélectionnez le modèle de diffusion ainsi que l&#39;objet qui seront utilisés pour l&#39;email de notification. Un modèle par défaut est disponible : **[!UICONTROL Notification de la validation en local]**. Vous pouvez également ajouter une description qui apparaîtra au-dessus des listes de destinataires dans les notifications de validation et de retour.
+   * Sélectionnez le modèle de diffusion et l&#39;objet qui seront utilisés pour l&#39;email de notification. Un modèle par défaut est disponible : **[!UICONTROL Notification de validation locale]**. Vous pouvez également ajouter une description qui apparaîtra au-dessus des listes de destinataires dans les notifications de validation et de retour.
    * Définissez le **[!UICONTROL Type de validation]**, qui correspond à la date limite de validation (date ou délai à partir du début de la validation). A cette date, le workflow reprend et les destinataires qui n&#39;ont pas été validés ne sont pas pris en compte dans le ciblage. Lorsque les notifications sont envoyées, l&#39;activité est mise en attente afin que les responsables locaux puissent valider leurs contacts.
 
      >[!NOTE]
      >
      >Par défaut, lorsque la validation débute, l&#39;activité est mise en attente pendant trois jours.
 
-     Vous avez également la possibilité d&#39;ajouter un ou plusieurs rappels afin d&#39;informer les responsables locaux que la date limite de validation approche. Pour cela, cliquez sur le lien **[!UICONTROL Ajouter un rappel]**.
+     Vous pouvez également ajouter un ou plusieurs rappels pour informer les responsables locaux que l&#39;échéance approche. Pour ce faire, cliquez sur le bouton **[!UICONTROL Ajouter un rappel]** lien.
 
 * **[!UICONTROL Complémentaire]** : L&#39;option **[!UICONTROL Générer le complémentaire]** permet de générer un second ensemble contenant toutes les cibles non validées.
 
@@ -75,20 +75,20 @@ Les champs à renseigner dans le cas d&#39;un rapport de retour de diffusion son
 
 ![](assets/local_validation_workflow_4.png)
 
-* Sélectionnez l&#39;option **[!UICONTROL Spécifiée par la transition]** si la diffusion a été renseignée dans une activité précédente. Sélectionnez **[!UICONTROL Explicite]** pour spécifier la diffusion dans l&#39;activité de validation en local.
-* Sélectionnez le modèle de diffusion ainsi que l&#39;objet qui seront utilisés pour l&#39;email de notification. Un modèle par défaut est disponible : **[!UICONTROL Notification de la validation en local]**.
+* Sélectionnez la variable **[!UICONTROL Spécifié par la transition]** si la diffusion a été saisie au cours d&#39;une activité précédente. Sélectionner **[!UICONTROL Explicite]** pour définir la diffusion dans l&#39;activité de validation en local.
+* Sélectionnez le modèle de diffusion et l&#39;objet de l&#39;email de notification. Il existe un modèle par défaut : **[!UICONTROL Notification de validation locale]**.
 
 ## Exemple : validation de la diffusion d&#39;un workflow {#example--approving-a-workflow-delivery}
 
 Cet exemple montre comment configurer un processus de validation pour une diffusion de workflow. Pour plus d’informations sur la création de workflows de diffusion, voir la section [Exemple : workflow de diffusion](delivery.md#example--delivery-workflow).
 
-Pour valider une diffusion, un opérateur ou une opératrice peut utiliser la page web dont l’URL est fournie dans l’e-mail envoyé ou valider directement à partir de la console cliente.
+Un opérateur peut valider une diffusion de deux manières : en utilisant la page Web liée dans l&#39;email envoyé, ou via la console cliente.
 
 * Validation Web
 
   L&#39;email adressé aux opérateurs du groupe Administrateur permet de valider la cible de l&#39;envoi. Le message reprend le texte défini en remplaçant l&#39;expression JavaScript par la valeur calculée (ici &#39;574&#39;).
 
-  Pour valider la diffusion, cliquez sur le lien correspondant et connectez-vous à la console cliente Adobe Campaign.
+  Pour valider la diffusion, cliquez sur le lien correspondant et connectez-vous à la console cliente Adobe Campaign.
 
   ![](assets/new-workflow-valid-webaccess.png)
 
@@ -96,7 +96,7 @@ Pour valider une diffusion, un opérateur ou une opératrice peut utiliser la pa
 
   ![](assets/new-workflow-valid-webaccess-confirm.png)
 
-* Approbation à partir de la console cliente
+* Validation depuis la console cliente
 
   Dans l&#39;arborescence, le noeud **[!UICONTROL Administration > Exploitation > Objets créés automatiquement > Validations en attente]** contient la liste des tâches à valider par l&#39;opérateur actuellement connecté. La liste doit afficher une ligne. Double-cliquez sur la ligne pour répondre. La fenêtre suivante s&#39;affiche :
 

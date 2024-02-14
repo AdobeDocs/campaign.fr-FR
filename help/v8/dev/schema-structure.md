@@ -5,10 +5,10 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 100%
+source-wordcount: '1400'
+ht-degree: 97%
 
 ---
 
@@ -186,7 +186,7 @@ Les éléments **`<elements>`** et **`<attributes>`** du schéma de données peu
 
 * La propriété **desc** permet de saisir une description longue.
 
-  La description est visible à partir du formulaire de saisie dans la barre de statut de la fenêtre principale de la console cliente Adobe Campaign.
+  La description est visible à partir du formulaire de saisie dans la barre de statut de la fenêtre principale de la console cliente Adobe Campaign.
 
   >[!NOTE]
   >
@@ -213,7 +213,7 @@ La valeur doit être une expression conforme au langage XPath. Pour plus d&#39;i
 
   >[!NOTE]
   >
-  >Dans la console cliente Adobe Campaign, le nœud **[!UICONTROL Administration>Compteurs]** permet de gérer les compteurs.
+  >Dans la console cliente Adobe Campaign, le noeud **[!UICONTROL Administration>Compteurs]** permet de gérer les compteurs.
 
 Pour lier une valeur par défaut à un champ, vous pouvez utiliser le `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
@@ -237,7 +237,7 @@ Une liste déroulante énumère la liste de ces valeurs à partir du formulaire 
 
 >[!NOTE]
 >
->Dans la console cliente Adobe Campaign, le nœud **[!UICONTROL Administration > Énumérations]** permet de gérer les énumérations.
+>Dans la console cliente Adobe Campaign, le nœud **[!UICONTROL Administration > Enumérations]** permet de gérer les énumérations.
 
 #### Énumération fixe {#set-enumeration}
 
@@ -333,7 +333,7 @@ Avec la projection du contenu XML :
 
 Le langage XPath est utilisé dans Adobe Campaign pour référencer un élément ou un attribut appartenant à un schéma de données.
 
-XPath est une syntaxe permettant la localisation d&#39;un nœud dans l&#39;arbre d&#39;un document XML.
+XPath est une syntaxe permettant la localisation d’un nœud dans l’arbre d’un document XML.
 
 Les éléments sont désignés par leur nom, les attributs sont désignés par leur nom précédé d&#39;un caractère &quot;@&quot;.
 
@@ -360,7 +360,7 @@ Il est aussi possible de définir des expressions complexes, telles que les opé
 
 Des fonctions de haut niveau ont été ajoutées aux expressions afin d&#39;enrichir les possibilités offertes par ce langage.
 
-La liste des fonctions disponibles est accessible à partir de n’importe quel éditeur d’expression dans la console cliente Adobe Campaign :
+La liste des fonctions disponibles est accessible à partir de n&#39;importe quel éditeur d&#39;expressions dans la console cliente Adobe Campaign :
 
 ![](assets/schema_function.png)
 
@@ -372,9 +372,9 @@ La liste des fonctions disponibles est accessible à partir de n’importe quel 
 
 ## Construire une chaîne via la compute string {#building-a-string-via-the-compute-string}
 
-Une **Compute string** est une expression XPath utilisée pour construire une chaîne représentant un enregistrement de la table associée au schéma. La **Compute string** est surtout utilisée dans l&#39;interface graphique pour afficher le libellé d&#39;un enregistrement sélectionné.
+A **Compute string** est une expression XPath utilisée pour construire une chaîne représentant un enregistrement dans une table associée au schéma. **Compute string** est principalement utilisée dans l&#39;interface graphique pour afficher le libellé d&#39;un enregistrement sélectionné.
 
-La chaîne **Compute string** est définie via l&#39;élément **`<compute-string>`** sous l&#39;élément principal du schéma de données. Un attribut **expr** contient une expression XPath pour calculer l&#39;affichage.
+La chaîne **Compute string** est définie via l&#39;élément **`<compute-string>`** sous l&#39;élément principal du schéma de données. Un attribut **expr** contient une expression XPath pour calculer l’affichage.
 
 **Exemple** : compute string de la table des destinataires.
 

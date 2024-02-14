@@ -5,16 +5,16 @@ feature: Microsoft CRM Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1399'
-ht-degree: 100%
+source-wordcount: '1410'
+ht-degree: 98%
 
 ---
 
 # Utilisation de Campaign et Microsoft Dynamics 365{#crm-ms-dynamics}
 
-Activez vos données CRM lors d’une communication cross-canal : découvrez comment transférer des contacts de **Microsoft Dynamics 365** vers Adobe Campaign et partager les données de performances de la campagne (envois, ouvertures, clics et bounces) d’Adobe Campaign vers Microsoft Dynamics 365.
+Activez vos données CRM lors d’une communication cross-canal : découvrez comment transférer des contacts de **Microsoft Dynamics 365** vers Adobe Campaign et partager les données de performances de la campagne (envois, ouvertures, clics et rebonds) d’Adobe Campaign vers Microsoft Dynamics 365.
 
 Une fois le paramétrage effectué, la synchronisation des données entre les systèmes s&#39;effectue via une activité de workflow dédiée. [En savoir plus](crm-data-sync.md).
 
@@ -165,7 +165,7 @@ Tout d’abord, vous devez créer le compte externe Microsoft Dynamics 365.
 
 >[!NOTE]
 >
->Pour valider la configuration, procédez à une déconnexion/reconnexion à la console cliente Adobe Campaign.
+>Pour approuver la configuration, déconnectez-vous puis reconnectez-vous à la console cliente Adobe Campaign.
 
 ### Sélection des tables à synchroniser{#ms-dyn-create-tables}
 

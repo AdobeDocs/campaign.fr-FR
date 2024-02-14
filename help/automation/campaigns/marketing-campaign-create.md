@@ -5,10 +5,10 @@ description: Découvrez comment créer et exécuter des campagnes marketing
 feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: d7750add8d71bb51ea1c099a45a7bce05da3b4d7
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 100%
+source-wordcount: '1348'
+ht-degree: 88%
 
 ---
 
@@ -135,7 +135,7 @@ Pour modifier un plan, un programme, une campagne ou une diffusion, accédez à 
 
 ![](assets/campaign-calendar.png)
 
-Vous pouvez filtrer les informations affichées dans le calendrier des campagnes. Pour cela, cliquez sur le lien **[!UICONTROL Filtrer]** et sélectionnez les critères de filtrage.
+Vous pouvez filtrer les informations affichées dans le calendrier des campagnes. Pour ce faire, cliquez sur le bouton **[!UICONTROL Filtrer]** et sélectionnez les critères de filtrage.
 
 ![](assets/campaign_planning_filter.png)
 
@@ -155,12 +155,17 @@ En parcourant le calendrier, vous pouvez également créer un programme ou une c
 
 ![](assets/campaign-create-from-calendar.png)
 
-Lorsque vous créez une opération à partir de l&#39;onglet **[!UICONTROL Planning]** d&#39;un programme, la campagne est automatiquement rattachée au programme concerné. Le champ **[!UICONTROL Programme]** est alors masqué.
+Lorsque vous créez une campagne à partir du **[!UICONTROL Planification]** onglet d&#39;un programme, l&#39;opération est automatiquement rattachée au programme concerné. La variable **[!UICONTROL Programme]** est masqué dans ce cas.
 
 
-## Utiliser l&#39;interface web {#use-the-web-interface-}
+## Accès à Campaign à l’aide d’un navigateur web {#use-the-web-interface}
 
-Vous pouvez accéder aux écrans de la console cliente Adobe Campaign à partir d’un navigateur Internet afin de visualiser l’ensemble des campagnes et diffusions, ainsi que les rapports et informations relatifs aux profils de votre base de données. Cet accès ne permet pas la création d’enregistrements. En fonction des droits de l’opérateur ou de l’opératrice, vous pouvez afficher et/ou agir sur les données présentes dans la base de données. Vous pouvez par exemple approuver le contenu et le ciblage d’une campagne, relancer ou arrêter une diffusion, etc.
+
+>[!AVAILABILITY]
+>
+>Depuis Campaign v8.6, Campaign est disponible dans une interface utilisateur Web. La plupart des actions marketing peuvent être effectuées à partir de cette nouvelle interface. [En savoir plus](../../v8/start/campaign-ui.md#discover-the-user-interface).
+
+Vous pouvez accéder à certains écrans de la console cliente Adobe Campaign depuis un navigateur Internet afin de visualiser l&#39;ensemble des opérations et diffusions ainsi que les rapports et informations relatifs aux profils de votre base de données. Vous ne pouvez pas créer de composants à partir de cet accès web mais, en fonction des droits d&#39;accès, vous pouvez afficher et/ou agir sur les données de la base. En règle générale, vous pouvez valider le contenu et le ciblage d&#39;une campagne, relancer ou arrêter une diffusion, etc.
 
 1. Connectez-vous comme vous le faites habituellement à l&#39;aide de l&#39;adresse https://`<your instance>:<port>/view/home`.
 1. Utilisez les menus pour accéder aux vues d&#39;ensemble.
