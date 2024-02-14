@@ -1,14 +1,14 @@
 ---
 audience: end-user
 user-guide-title: Campaign v8
-user-guide-description: Documentation du produit pour Adobe Campaign v8.
+user-guide-description: Documentation du produit pour Adobe Campaign v8 (console cliente).
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: f04db53bee75c935bc8737eef93fa05ec6868ebc
-workflow-type: ht
-source-wordcount: '565'
-ht-degree: 100%
+source-git-commit: df0c05495788fc497af51092f482e879fe2dffa7
+workflow-type: tm+mt
+source-wordcount: '575'
+ht-degree: 96%
 
 ---
 
@@ -19,8 +19,10 @@ ht-degree: 100%
 + Versions et dernières mises à jour {#releases}
    + [Mises à jour de la documentation](start/documentation-updates.md)
    + [Notes de mise à jour anticipées](start/e-release-notes.md)
+   + [Version et mises à niveau](start/upgrades.md)
    + [Notes de mise à jour](start/release-notes.md)
    + Notes de mise à jour précédentes {#previous-rn}
+      + [2023](start/release-notes-2023.md)
       + [2022](start/release-notes-2022.md)
       + [2021](start/release-notes-2021.md)
    + [Mécanismes de sécurisation](start/ac-guardrails.md)
@@ -29,9 +31,9 @@ ht-degree: 100%
 + Prise en main {#new}
    + [Prise en main d’Adobe Campaign](start/get-started.md)
    + [Fonctionnalités principales](start/whats-new.md)
-   + [Composants et processus](start/ac-components.md)
+   + [Découvrir l’interface utilisateur](start/campaign-ui.md)
    + [Se connecter à Campaign](start/connect.md)
-   + [Interface Campaign](start/campaign-ui.md)
+   + [Composants et processus](start/ac-components.md)
    + [De Classic v7 à v8](start/v7-to-v8.md)
    + [Questions fréquentes](start/campaign-faq.md)
 + Campaign Management {#campaigns}
@@ -42,6 +44,7 @@ ht-degree: 100%
    + E-mails {#emails}
       + [Concevoir et valider des e-mails](send/email.md)
       + [Lien vers la page miroir](send/mirror-page.md)
+      + [Ajouter une adresse Cci](send/email-bcc.md)
       + [Définir les paramètres d’e-mail supplémentaires](send/email-parameters.md)
       + [Envoyer et surveiller des e-mails](send/send.md)
    + [SMS](send/sms.md)
@@ -174,7 +177,6 @@ ht-degree: 100%
    + Paramètres et configuration {#configuration}
       + [Paramètres de l’interface utilisateur](config/ui-settings.md)
       + [Gérer les dossiers et les vues](audiences/folders-and-views.md)
-      + [Paramètres d’e-mail](config/email-settings.md)
       + [Paramètres de messagerie transactionnelle](config/transactional-msg-settings.md)
       + [Intégrer les SDK Campaign à votre application – PAGE OBSOLÈTE](config/push-config.md)
       + [Comptes externes](config/external-accounts.md)
