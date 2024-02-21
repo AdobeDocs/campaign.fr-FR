@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
-source-git-commit: b5574ba2d9fa520b701f7af4e34862304b825a66
+source-git-commit: 59d33983db930b3a7dc022693d72704bda99e3a1
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 85%
+source-wordcount: '469'
+ht-degree: 100%
 
 ---
 
@@ -80,16 +80,3 @@ Pour un destinataire intégré standard, vous pouvez accéder aux onglets suivan
 * L&#39;onglet **Tracking**, pour tous les logs de tracking du profil sélectionné. Ces informations sont utilisées pour effectuer le suivi du comportement des profils suite aux diffusions. Cet onglet présente le cumul de toutes les URL trackées dans les diffusions. La liste est paramétrable et contient généralement : l&#39;URL cliquée, la date et l&#39;heure du clic, le document dans lequel l&#39;URL figurait
 
   Apprenez-en davantage sur le tracking dans [cette section](../start/tracking.md).
-
-
-## Profils actifs {#active-profiles}
-
-Un profil actif est un profil avec lequel le client a tenté de communiquer au cours des 12 derniers mois via n’importe quel canal. Les mesures de licence sont basées sur des profils actifs. En savoir plus dans [Description du produit Adobe Campaign](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
-
->[!CAUTION]
->
->* Un profil qui a été ciblé par plusieurs diffusions n&#39;est comptabilisé qu&#39;une seule fois.
->
->* Les profils ciblés dans le cadre du marketing social sous X (anciennement appelés Twitter) ne sont pas pris en compte comme profils actifs.
-
-Vous pouvez surveiller le nombre de profils actifs sur votre instance directement depuis le Panneau de Contrôle Campaign. Voir à ce sujet la section [Documentation du Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=fr){target="_blank"}.

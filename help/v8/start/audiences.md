@@ -5,10 +5,10 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 59d33983db930b3a7dc022693d72704bda99e3a1
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 100%
+source-wordcount: '457'
+ht-degree: 79%
 
 ---
 
@@ -39,23 +39,23 @@ Le ciblage peut être créé au moyen d&#39;une combinaison de requêtes dans un
 Découvrez comment créer une audience dans un workflow de campagne sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=fr)
 
 
-## Profils actifs{#active-profiles}
+## Profils actifs {#active-profiles}
 
-Conformément à votre contrat, chacune de vos instances Campaign est configurée avec un nombre spécifique de profils actifs comptabilisés à des fins de facturation. Consultez votre dernier contrat pour connaître le nombre de profils actifs achetés.
+Un profil actif est un profil avec lequel le client a tenté de communiquer au cours des 12 derniers mois via n’importe quel canal. Les mesures de licence sont basées sur des profils actifs. En savoir plus dans [Description du produit Adobe Campaign](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-Un **profil** désigne un enregistrement d&#39;informations (par exemple un enregistrement dans la [Table de destinataires](../dev/datamodel.md) ou dans une table externe contenant un identifiant de cookie, un identifiant client, un identifiant mobile ou d&#39;autres informations relatives à un canal particulier) représentant un client final, un prospect ou un lead. Les profils sont considérés comme actifs s&#39;ils ont été ciblés ou ont fait l&#39;objet d&#39;une communication via un canal au cours des 12 derniers mois.
+Vous pouvez surveiller le nombre de profils actifs sur votre instance directement depuis le Panneau de Contrôle Campaign. Voir à ce sujet la section [Documentation du Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=fr){target="_blank"}.
 
-<!--
-You can monitor the number of active profiles used on your instances directly from Campaign Control Panel. 
-
-![](../assets/do-not-localize/book.png) For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
--->
+>[!CAUTION]
+>
+>* Un profil qui a été ciblé par plusieurs diffusions n&#39;est comptabilisé qu&#39;une seule fois.
+>
+>* Les profils ciblés dans le cadre du marketing social sur X (Twitter) ne sont pas pris en compte comme profils actifs.
 
 ## Confidentialité et consentement{#privacy-and-consent}
 
 Adobe Campaign est un puissant outil servant à collecter et à traiter de très grands volumes de données, notamment des informations personnelles et des données sensibles. Adobe Campaign vous permet de collecter des données, y compris des informations personnelles et sensibles. Il est donc essentiel de recevoir et surveiller le consentement de vos destinataires.
 
-![](../assets/do-not-localize/book.png) Découvrez comment gérer la confidentialité et le consentement dans la [documentation d&#39;Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr){target="_blank"}.
+![](../assets/do-not-localize/book.png) Découvrez comment gérer la confidentialité et le consentement dans [Documentation de Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr){target="_blank"}.
 
 **Rubriques connexes** 
 
