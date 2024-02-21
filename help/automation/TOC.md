@@ -2,9 +2,9 @@
 audience: user
 user-guide-title: Guide d'automatisation des campagnes
 user-guide-description: Guide d'automatisation des campagnes
-source-git-commit: 75b65efce6b37e3d948f6af4a89ea3b0a5ac1a86
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '442'
 ht-degree: 100%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 100%
          + [Validation](workflow/approval.md)
          + [Signal externe](workflow/external-signal.md)
          + [Branchement](workflow/fork.md)
-         + [Saut (départ et arrivée)](workflow/jump--start-point-and-end-point-.md)
+         + [Saut (départ et arrivée)](workflow/jump-start-point-and-end-point.md)
          + [Début et Fin](workflow/start-and-end.md)
          + [Planificateur](workflow/scheduler.md)
          + [Sous-workflow](workflow/sub-workflow.md)
@@ -74,9 +74,9 @@ ht-degree: 100%
          + [Gestion de contenu](workflow/content-management.md)
          + [Diffusion au fil de l&#39;eau](workflow/continuous-delivery.md)
          + [Diffusions cross-canal](workflow/cross-channel-deliveries.md)
-         + [Extraction (fichier)](workflow/extraction--file-.md)
-         + [Chargement (fichier)](workflow/data-loading--file-.md)
-         + [Chargement (SGBD)](workflow/data-loading--rdbms-.md)
+         + [Extraction (fichier)](workflow/extraction-file.md)
+         + [Chargement (fichier)](workflow/data-loading-file.md)
+         + [Chargement (SGBD)](workflow/data-loading-rdbms.md)
          + [Diffusion](workflow/delivery.md)
          + [Agir sur une diffusion](workflow/delivery-control.md)
          + [Validation en local](workflow/local-approval.md)
@@ -101,7 +101,7 @@ ht-degree: 100%
          + [Chargement du contenu de la diffusion](workflow/load-delivery-content.md)
          + [Workflow de diffusion cross-canal](workflow/cross-channel-delivery-workflow.md)
          + [Enrichissement des emails avec des champs de date personnalisés](workflow/email-enrichment-with-custom-date-fields.md)
-      + Contrôle      {#monitoring}
+      + Surveillance {#monitoring}
          + [Envoi d’un rapport à une liste](workflow/send-a-report-to-a-list.md)
          + [Supervision de vos workflows](workflow/workflow-supervision.md)
          + [Envoi d’alertes personnalisées aux opérateurs](workflow/send-alerts-to-operators.md)
@@ -128,7 +128,7 @@ ht-degree: 100%
       + [Paramètres avancés](workflow/advanced-parameters.md)
       + [Scripts et modèles JavaScript](workflow/javascript-scripts-and-templates.md)
       + [Exemples de code JavaScript dans les workflows](workflow/javascript-in-workflows.md)
-      + [Accès à une base de données externe](workflow/accessing-an-external-database--fda-.md)
+      + [Accès à une base de données externe](workflow/accessing-an-external-database-fda.md)
       + [Gestion des autorisations](workflow/managing-rights.md)
       + [Modification des images d’activité](workflow/change-activity-images.md)
       + [Gérer les fuseaux horaires](workflow/managing-time-zones.md)
@@ -142,7 +142,7 @@ ht-degree: 100%
    + [Configuration et gestion des validations](campaigns/marketing-campaign-approval.md)
    + [Campagnes récurrentes et périodiques](campaigns/recurring-periodic-campaigns.md)
    + [Surveillance de vos campagnes](campaigns/marketing-campaign-monitoring.md)
-   + [Prestataires, stocks et budgets](campaigns/providers--stocks-and-budgets.md)
+   + [Prestataires, stocks et budgets](campaigns/providers-stocks-and-budgets.md)
 + Optimisation des campagnes (module complémentaire){#campaign-optimization}
    + [Prise en main des typologies de campagne](campaign-opt/campaign-typologies.md)
    + [Règles de filtrage](campaign-opt/filtering-rules.md)

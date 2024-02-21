@@ -5,7 +5,7 @@ description: Découvrez comment créer et exécuter des campagnes marketing
 feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: d7750add8d71bb51ea1c099a45a7bce05da3b4d7
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1348'
 ht-degree: 88%
@@ -92,7 +92,7 @@ Accédez aux sections suivantes pour apprendre à configurer votre campagne :
 * [Gérer les ressources et les documents](marketing-campaign-assets.md)
 * [Créer l’audience cible](marketing-campaign-target.md)
 * [Configurer le processus de validation](marketing-campaign-approval.md)
-* [Gérer les stocks et les budgets](providers--stocks-and-budgets.md)
+* [Gérer les stocks et les budgets](providers-stocks-and-budgets.md)
 
 
 ### Modifier les paramètres de la campagne {#campaign-settings}
@@ -102,7 +102,7 @@ Les campagnes sont créées à partir de modèles de campagne. Vous pouvez confi
 Pour chaque campagne, les fonctionnalités suivantes sont disponibles :
 
 * Documents de référence et ressources : vous pouvez associer des documents à la campagne (brief, compte-rendu, images, etc.). Tous les formats de document sont pris en charge. [En savoir plus](marketing-campaign-deliveries.md#manage-associated-documents).
-* Définir les coûts : pour chaque campagne, Adobe Campaign permet de définir les postes de coût et les structures de calcul des coûts qui pourront être utilisés lors de la création de la campagne marketing. Par exemple : coûts d’impression, utilisation d’une agence externe, location de salle, etc. [En savoir plus](providers--stocks-and-budgets.md#defining-cost-categories).
+* Définir les coûts : pour chaque campagne, Adobe Campaign permet de définir les postes de coût et les structures de calcul des coûts qui pourront être utilisés lors de la création de la campagne marketing. Par exemple : coûts d’impression, utilisation d’une agence externe, location de salle, etc. [En savoir plus](providers-stocks-and-budgets.md#defining-cost-categories).
 * Définir des objectifs : vous pouvez définir des objectifs quantifiables pour une campagne, tels que le nombre d’abonnés, le chiffre d’affaires, etc. Ces informations sont ensuite utilisées dans les rapports de campagne.
 * Gérer les adresses de contrôle et les populations témoin. [En savoir plus](marketing-campaign-deliveries.md#defining-a-control-group).
 * Gestion des validations : vous pouvez sélectionner les traitements qui feront l&#39;objet d&#39;une validation et éventuellement sélectionner les opérateurs ou groupes d&#39;opérateurs validants. [En savoir plus](marketing-campaign-approval.md#checking-and-approving-deliveries).

@@ -5,7 +5,7 @@ description: En savoir plus sur l’activité de workflow de requête
 feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
-source-git-commit: 0191ca8c29813c448040fc887f98550c74197578
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 84%
@@ -66,7 +66,7 @@ Sélectionnez d&#39;abord le type de données à ajouter :
 ![](assets/wf_add_data_1st_option.png){width="70%" align="center" zoomable="yes"}
 
 * Sélectionnez **[!UICONTROL Données liées à la dimension de ciblage]** pour sélectionner des données de la base Adobe Campaign.
-* Sélectionner **[!UICONTROL Données externes]** pour ajouter des données provenant d&#39;une base externe. Cette option n’est disponible que si vous avez acheté la variable **Federated Data Access** . Pour plus dʼinformations, consultez la section [Accès à une base de données externe (FDA)](accessing-an-external-database--fda-.md).
+* Sélectionner **[!UICONTROL Données externes]** pour ajouter des données provenant d&#39;une base externe. Cette option n’est disponible que si vous avez acheté la variable **Federated Data Access** . Pour plus dʼinformations, consultez la section [Accès à une base de données externe (FDA)](accessing-an-external-database-fda.md).
 * Sélectionnez la variable **[!UICONTROL Une proposition d&#39;offre]** pour ajouter un ensemble de colonnes permettant de stocker la meilleure proposition générée par le moteur d&#39;offres. Cette option n’est disponible que si vous avez acheté la variable **Interaction** module .
 
 Si aucun module optionnel n&#39;est installé sur la plateforme, cette étape n&#39;est pas affichée. Vous accédez directement à l&#39;étape suivante.

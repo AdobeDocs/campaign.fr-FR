@@ -5,10 +5,10 @@ description: En savoir plus sur les diffusions d'opérations marketing
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 role: User
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 100%
+source-wordcount: '754'
+ht-degree: 92%
 
 ---
 
@@ -50,7 +50,7 @@ Une fois toutes les demandes de validation approuvées, la diffusion passe au st
 
 ![](assets/confirm-delivery.png)
 
-L&#39;information est également remontée au niveau du tableau de bord de la campagne. Le lien **[!UICONTROL Confirmer l&#39;envoi]** permet de lancer la diffusion.
+Les informations s&#39;affichent également dans le tableau de bord de l&#39;opération. La variable **[!UICONTROL Confirmer l&#39;envoi]** lien permet de lancer la diffusion.
 
 ![](assets/confirm-delivery-from-dashboard.png)
 
@@ -79,9 +79,9 @@ Suivez les étapes ci-dessous pour valider le contenu et envoyer le fichier au f
 
    La cible des BAT doit avoir été préalablement définie.
 
-   Vous pouvez créer autant de BAT que nécessaire. Ils sont accessibles à partir du lien **[!UICONTROL Courriers...]** du détail de la diffusion.
+   Vous pouvez créer autant de BAT que nécessaire. Elles sont accessibles via le **[!UICONTROL Courrier...]** lien du détail de la diffusion.
 
-1. La diffusion est alors à l&#39;état **[!UICONTROL A soumettre]**. Le bouton **[!UICONTROL Soumettre les BAT]** lance le processus de validation des BAT.
+1. La diffusion passe alors à l’état **[!UICONTROL Pour envoyer]**. Cliquez sur le bouton **[!UICONTROL Envoyer un bon à tirer]** pour lancer le processus de validation.
 
 1. La diffusion passe à l&#39;état **[!UICONTROL BAT à valider]** et un bouton permet d&#39;accepter ou refuser la validation.
 
@@ -112,4 +112,4 @@ L&#39;extraction du fichier lance deux processus : le calcul du budget et celui
 
   >[!NOTE]
   >
-  >Apprenez-en davantage sur les budgets [dans cette section](providers--stocks-and-budgets.md).
+  >Apprenez-en davantage sur les budgets [dans cette section](providers-stocks-and-budgets.md).

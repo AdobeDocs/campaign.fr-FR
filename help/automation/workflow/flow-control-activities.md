@@ -5,7 +5,7 @@ description: Liste des activités d'ordonnancement
 feature: Workflows
 role: User
 exl-id: 904f2d94-bd3e-4c46-aeab-2ef77a7bdeee
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 100%
@@ -21,7 +21,7 @@ Les activités suivantes sont des activités de base de données : elles serven
 * **[Validation](approval.md)** : permet d&#39;envoyer un e-mail à un opérateur ou à un groupe d&#39;opérateurs et d&#39;attendre la validation pour continuer l&#39;exécution.
 * **[Signal externe](external-signal.md)** : permet d&#39;activer la transition sortante sur réception d&#39;un signal externe.
 * **[Branchement](fork.md)** : permet d&#39;activer toutes les transitions sortantes.
-* **[Sauts (départ et arrivée)](jump--start-point-and-end-point-.md)** : permet d&#39;implémenter des transitions sans lien.
+* **[Sauts (départ et arrivée)](jump-start-point-and-end-point.md)** : permet d&#39;implémenter des transitions sans lien.
 * **[Début et fin](start-and-end.md)** : permettent respectivement d&#39;afficher les points de départ et de fin d&#39;un workflow.
 * **[Planificateur](scheduler.md)** : permet de définir un planning d&#39;exécution du workflow.
 * **[Sous-workflow](sub-workflow.md)** : permet de lancer l&#39;exécution d&#39;un autre workflow.

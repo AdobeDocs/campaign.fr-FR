@@ -5,7 +5,7 @@ description: Découvrez comment démarrer avec les campagnes marketing.
 feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 exl-id: eb1a0e52-14d9-4ad2-8bf2-ea955c6fd0f5
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 100%
@@ -49,7 +49,7 @@ Définissez les réviseurs et paramétrez le flux de validation afin de suivre e
 Effectuez le suivi de vos campagnes à partir du tableau de bord, vérifiez les statuts de diffusion et l&#39;exécution à partir de l&#39;interface utilisateur de Campaign. [En savoir plus](marketing-campaign-monitoring.md).
 
 1. **Suivre les budgets, stocks et coûts associés**.
-Utilisez Adobe Campaign pour contrôler l&#39;allocation du budget, gérer vos fournisseurs, vos stocks et coûts. [En savoir plus](providers--stocks-and-budgets.md#create-service-providers-and-their-cost-structures).
+Utilisez Adobe Campaign pour contrôler l&#39;allocation du budget, gérer vos fournisseurs, vos stocks et coûts. [En savoir plus](providers-stocks-and-budgets.md#create-service-providers-and-their-cost-structures).
 
 Une fois ces étapes terminées, vous pouvez [lancer les diffusions](marketing-campaign-deliveries.md#start-a-delivery), vérifier les données, les processus et les informations relatifs aux diffusions et, si nécessaire, [gérer les documents associés](marketing-campaign-deliveries.md#manage-associated-documents). Vous pouvez également [suivre et diriger l&#39;exécution](marketing-campaign-monitoring.md) de vos campagnes et diffusions.
 

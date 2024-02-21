@@ -4,10 +4,10 @@ title: Sous-workflow
 description: En savoir plus sur l’activité de sous-workflow
 feature: Workflows
 exl-id: c530fb4e-d21e-4059-88e1-77a8d33a7832
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 100%
+source-wordcount: '441'
+ht-degree: 85%
 
 ---
 
@@ -19,7 +19,7 @@ L’activité **[!UICONTROL Sous-workflow]** permet de déclencher l’exécutio
 
 Vous pouvez appeler plusieurs sous-workflows au sein d’un même workflow. Les sous-workflows sont exécutés de manière synchrone.
 
-Dans l’exemple ci-dessous, un workflow principal appelle un sous-workflow à l’aide de sauts. Pour plus d’informations sur les objets graphiques de type saut, voir [cette section](jump--start-point-and-end-point-.md).
+Dans l’exemple ci-dessous, un workflow principal appelle un sous-workflow à l’aide de sauts. Pour plus d’informations sur les objets graphiques de type saut, voir [cette section](jump-start-point-and-end-point.md).
 
 1. Créez un workflow que vous allez utiliser en tant que sous-workflow dans un autre workflow.
 1. Insérez une activité **[!UICONTROL Saut (arrivée)]** avec une priorité de 1 au début du workflow. Si vous avez plusieurs sauts de type « arrivée », Adobe Campaign utilisera celui associé au plus petit nombre.
@@ -41,7 +41,7 @@ Dans l’exemple ci-dessous, un workflow principal appelle un sous-workflow à l
    ![](assets/subworkflow_selection.png)
 
 1. Vous pouvez également ajouter un script de paramétrage pour modifier le fonctionnement du workflow référencé.
-1. Cliquez sur **[!UICONTROL Ok]**. Cela créera automatiquement une transition sortante avec le libellé de l’activité **[!UICONTROL Saut (départ)]** du workflow sélectionné.
+1. Cliquez sur **[!UICONTROL Ok]**. Il crée automatiquement une transition sortante avec le libellé de la fonction **[!UICONTROL Saut (point de départ)]** activité du workflow sélectionné.
 
    ![](assets/subworkflow_outbound.png)
 
@@ -72,6 +72,6 @@ Chacun des événements entrants doit spécifier une cible définie par ces para
 * schema
 * recCount
 
-Ce triplet de valeurs identifie la population ciblée par la requête. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d&#39;éléments dans la table.
+Ce triplet de valeurs identifie la population ciblée par la requête. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d’éléments dans le tableau.
 
 * targetSchema : cette valeur correspond au schéma de la table de travail. Ce paramètre est valide pour toutes les transitions avec **[!UICONTROL tableName]** et **[!UICONTROL schema]**.

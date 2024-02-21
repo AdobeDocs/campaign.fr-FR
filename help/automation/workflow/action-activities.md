@@ -5,7 +5,7 @@ description: À propos des activités d'action
 feature: Workflows, Data Management
 role: User
 exl-id: feed4cc1-d654-45e7-a3b2-2bc46418a90b
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 100%
@@ -17,11 +17,11 @@ ht-degree: 100%
 * **[Gestion de contenu](content-management.md)** : vous permet de créer ou de personnaliser du contenu.
 * **[Diffusion au fil de l&#39;eau](continuous-delivery.md)** : vous permet de démarrer une diffusion à partir du scénario spécifié dans l&#39;activité.
 * **[Diffusions cross-canal](cross-channel-deliveries.md)** (workflows de campagne uniquement) : permet de paramétrer une diffusion sur le canal correspondant, à savoir e-mail, notification push, mobile, publipostage direct.
-* **[Chargement (fichier)](data-loading--rdbms-.md)** : permet d&#39;accéder à une source de données externe pour en utiliser les données.
-* **[Chargement (SGBD)](data-loading--rdbms-.md)** : vous permet d&#39;accéder à une base externe pour en collecter les données.
+* **[Chargement (fichier)](data-loading-rdbms.md)** : permet d&#39;accéder à une source de données externe pour en utiliser les données.
+* **[Chargement (SGBD)](data-loading-rdbms.md)** : vous permet d&#39;accéder à une base externe pour en collecter les données.
 * **[Diffusion](delivery.md)** : vous permet de configurer une action de diffusion.
 * **[Agir sur une diffusion](delivery-control.md)** : vous permet de démarrer, mettre en pause ou arrêter une diffusion.
-* **[Extraction (fichier)](extraction--file-.md)** : vous permet d&#39;extraire les données d&#39;une table dans un fichier.
+* **[Extraction (fichier)](extraction-file.md)** : vous permet d&#39;extraire les données d&#39;une table dans un fichier.
 * **[Chargement (SOAP)](loading-soap.md)** : vous permet de collecter des données via un appel SOAP.
 * **[Validation en local](local-approval.md)** : vous permet de procéder à des validations et notifications de ciblage dans un contexte de marketing distribué (module optionnel).
 * **[Module nlserver](nlserver-module.md)** : lance un module nlserver avec ses arguments.

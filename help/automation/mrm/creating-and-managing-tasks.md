@@ -5,7 +5,7 @@ description: Créer et gérer les tâches
 feature: Campaigns, Resource Management
 role: User
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '3928'
 ht-degree: 89%
@@ -190,7 +190,7 @@ Par défaut, le budget imputé est celui de l&#39;opération à laquelle est rat
 
 >[!NOTE]
 >
->Pour plus d’informations sur les dépenses et les budgets, reportez-vous à [cette section](../campaigns/providers--stocks-and-budgets.md#cost-commitment--calculation-and-charging).
+>Pour plus d’informations sur les dépenses et les budgets, reportez-vous à [cette section](../campaigns/providers-stocks-and-budgets.md#cost-commitment--calculation-and-charging).
 
 Vous pouvez également définir à partir de cette fenêtre les objectifs à réaliser. Les objectifs correspondent aux revenus prévisionnels de la tâche.
 
