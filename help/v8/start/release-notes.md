@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 2f8cee4522efb59782a568334fc1300fc39d559f
+source-git-commit: 3b790305984436f1168f9c73aa09df509b2217f0
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 25%
+source-wordcount: '478'
+ht-degree: 24%
 
 ---
 
@@ -21,10 +21,19 @@ En tant qu’utilisateur Cloud Service géré, votre instance est mise à niveau
 En outre, en tant que client ou cliente, assurez-vous d’utiliser les dernières versions prises en charge des systèmes répertoriés dans la [matrice de compatibilité](compatibility-matrix.md).
 
 
+## Version 8.6.2 {#release-8-6-2}
+
+_23 février 2024_
+
+### Correctifs {#fixes-8-6-2}
+
+Cette version corrige le problème suivant :
+
+* Correction d&#39;un problème de performances qui pouvait se produire sur l&#39;instance de mid-sourcing (NEO-72595).
+
 ## Version 8.6.1 {#release-8-6-1}
 
 _14 février 2024_
-
 
 ### Nouveautés {#new-8-6-1}
 
