@@ -4,10 +4,10 @@ description: Découvrez comment parcourir et utiliser l’interface utilisateur 
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: 8666c04f0e98cd6444af831d47056c46019c6088
+source-git-commit: 9ad8158f280acae2c2d10161f8ac6157398b9e3d
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 38%
+source-wordcount: '1011'
+ht-degree: 37%
 
 ---
 
@@ -23,17 +23,7 @@ Vous pouvez accéder à Adobe Campaign à partir de sa console cliente ou de son
 
   Découvrez comment installer et configurer la console cliente Campaign dans [cette section](../start/connect.md).
 
-<!--    ![](assets/home-page.png) -->
-
 * **Interface utilisateur web** - En tant qu’utilisateur de Campaign v8, à compter de la version v8.6.1, vous avez désormais accès à un environnement web, disponible via l’interface utilisateur Adobe Experience Cloud centrale. Vous pouvez ensuite vous connecter à Adobe Campaign à partir d’un navigateur web. Cette nouvelle interface vous permet de créer, gérer et exécuter des actions marketing clés. Toutefois, toutes les fonctionnalités de Campaign ne sont pas disponibles. [En savoir plus](#ac-web-ui).
-
-  L&#39;interface utilisateur Web de Campaign est accessible à partir de la page d&#39;accueil de la console cliente.
-
-  ![](assets/web-ui.png)
-
-  >[!NOTE]
-  >
-  >Si la nouvelle carte d’accès n’est pas affichée, assurez-vous que les champs suivants ne sont pas laissés vides dans votre compte externe Adobe Experience Cloud : **Serveur**, **Tenant**, **Serveur de rappel**, et **Marque d&#39;association**.
 
 * **Accès web** - Les fonctionnalités d&#39;accès web Adobe Campaign vous permettent d&#39;accéder à un sous-ensemble de fonctionnalités de Campaign avec un navigateur web, à l&#39;aide d&#39;une interface utilisateur de HTML. Utilisez cette interface web pour consulter des rapports, contrôler et valider les messages, accéder aux tableaux de bord de surveillance, et plus encore.  En savoir plus sur l&#39;accès Web de Campaign [dans cette section](../start/connect.md#web-access).
 
@@ -42,9 +32,15 @@ Vous pouvez accéder à Adobe Campaign à partir de sa console cliente ou de son
 
 ## Utilisation de la console cliente {#ui-access}
 
-La console cliente Campaign est une application native qui communique avec le serveur applicatif Adobe Campaign par le biais de protocoles Internet standard, tels que SOAP et HTTP. La console cliente de Campaign centralise toutes les fonctionnalités et tous les paramètres et requiert une bande passante minimale car elle repose sur un cache local. Conçue pour un déploiement facile, la console cliente Campaign peut être déployée à partir d&#39;un navigateur Internet, mise à jour automatiquement. Elle ne nécessite aucune configuration réseau spécifique, car elle ne génère que du trafic HTTP(S).  [En savoir plus sur la console cliente Campaign](../start/connect.md).
+La console cliente Campaign est une application native qui communique avec le serveur applicatif Adobe Campaign par le biais de protocoles Internet standard, tels que SOAP et HTTP. La console cliente de Campaign centralise toutes les fonctionnalités et tous les paramètres et requiert une bande passante minimale car elle repose sur un cache local. Conçue pour un déploiement facile, la console cliente Campaign peut être déployée à partir d&#39;un navigateur Internet, mise à jour automatiquement. Elle ne nécessite aucune configuration réseau spécifique, car elle ne génère que du trafic HTTP(S).  [En savoir plus sur la console cliente Campaign](../start/connect.md). Vous pouvez passer à l&#39;interface utilisateur Web de Campaign à partir de la carte dédiée dans la page d&#39;accueil de la console cliente.
 
-![](assets/home-page.png)
+![](assets/web-ui.png)
+
+
+>[!NOTE]
+>
+>Si la nouvelle carte d’accès n’est pas affichée, assurez-vous que les champs suivants ne sont pas laissés vides dans votre compte externe Adobe Experience Cloud : **Serveur**, **Tenant**, **Serveur de rappel**, et **Marque d&#39;association**.
+
 
 Vous pouvez également utiliser un navigateur web pour accéder à Campaign. Dans ce contexte, seul un sous-ensemble des fonctionnalités de Campaign est disponible. [En savoir plus](#web-browser)
 

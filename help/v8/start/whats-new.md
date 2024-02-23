@@ -1,22 +1,22 @@
 ---
 title: Nouveautés de Campaign v8
-description: Découvrez les principales fonctionnalités d’Adobe Campaign v8
+description: Découvrez les fonctionnalités essentielles de Campaign v8
 feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: 9ad8158f280acae2c2d10161f8ac6157398b9e3d
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 97%
+source-wordcount: '1029'
+ht-degree: 86%
 
 ---
 
-# Fonctionnalités clés d’Adobe Campaign v8 {#ac-gs-what-is-new}
+# Fonctionnalités essentielles d’Adobe Campaign v8 {#ac-gs-what-is-new}
 
 Adobe Campaign v8 est conçu pour les spécialistes marketing cross-canal qui ont besoin de la solution cloud la plus performante pour la gestion de campagnes cross-canal à l’échelle de l’entreprise. Il offre des fonctionnalités ETL et de gestion des données performantes pour concevoir et organiser une campagne parfaite. Son moteur d’orchestration fournit des programmes marketing multi-touch riches qui mettent l’accent sur les parcours pilotés par lots. Il est également associé à un serveur de messagerie en temps réel évolutif qui permet aux équipes marketing d’envoyer des messages prédéfinis sur la base d’une payload globale à partir de n’importe quel système informatique, pour des tâches telles que la réinitialisation du mot de passe, la confirmation de commande, la facturation en ligne, etc.
 
-Adobe Campaign v8 a fortement amélioré son infrastructure, sa sécurité, sa délivrabilité et sa surveillance.
+Adobe Campaign v8 a fortement amélioré son infrastructure, sa sécurité, sa délivrabilité et sa surveillance. Il est disponible en tant que **Cloud Service géré** qui associe des services à une supervision proactive et à des modifications opportunes. En savoir plus sur les Cloud Service gérés de Campaign [dans cette section](#acms-desc).
 
 ![](assets/home-page.png)
 
@@ -70,9 +70,11 @@ Vous pouvez également configurer l&#39;optimisation de l&#39;heure d&#39;envoi 
 
 ### Managed Cloud Services {#acms-desc}
 
-Adobe Campaign v8 est disponible en tant que service Managed Cloud Services, offrant une supervision proactive, des alertes rapides et une gouvernance des services.
+Adobe Campaign v8 est disponible en tant que Cloud Service géré, offrant une surveillance proactive, des alertes opportunes et une gouvernance des services. Adobe Managed Cloud Service offre aux spécialistes marketing une solution de gestion de campagnes cross-canal plus agile, sécurisée et évolutive, avec un coût total de possession faible. La nouvelle offre associe des services à une supervision proactive et à des alertes opportunes.
 
-Adobe Managed Cloud Service offre aux spécialistes marketing une solution de gestion de campagnes cross-canal plus agile, sécurisée et évolutive, avec un coût total de possession faible. La nouvelle offre associe des services à une supervision proactive et à des alertes opportunes.
+L’approche des services gérés permet aux marketeurs de tirer parti de l’échelle opérationnelle et de l’économie de l’infrastructure cloud sans avoir besoin d’une assistance importante de la part des ressources informatiques internes. Les équipes de conseil et d’implémentation d’Adobe vous aident à évaluer vos plans marketing, vos pratiques existantes, vos exigences en matière de données et votre volume de messages. Elles vous recommandent ensuite les services, l’assistance et les modules de délivrabilité les plus appropriés. L’équipe Adobe Campaign Managed Cloud Services peut ensuite surveiller les performances de la campagne, la réputation de la marque, les mesures d’expérience client, etc., et créer des rapports à ce sujet.
+
+[Télécharger ce livre blanc](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf) pour en savoir plus sur la valeur commerciale de Adobe Campaign Managed Cloud Services.
 
 >[!NOTE]
 >
@@ -82,7 +84,7 @@ Adobe Managed Cloud Service offre aux spécialistes marketing une solution de ge
 
 Adobe Campaign peut désormais tirer parti des technologies de base de données à l’échelle du cloud pour améliorer considérablement son échelle et sa vitesse.
 
-[Campaign v8 Enterprise](../architecture/enterprise-deployment.md) présente le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud. Avec cette nouvelle offre, Campaign v8 simplifie la gestion des données : aucun index n&#39;est requis sur la base de données cloud. Il vous suffit de créer les tables et de copier les données pour démarrer. [!DNL Snowflake] est la base de données de Campaign Cloud, elle vous apporte vitesse et endurance : aucune surcharge de l&#39;activité du système. La technologie de base de données cloud ne nécessite pas de maintenance spécifique pour garantir le niveau de performances attendu.
+[Campaign v8 Enterprise](../architecture/enterprise-deployment.md) présente le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud. Avec cette nouvelle offre, Campaign v8 simplifie la gestion des données : aucun index n&#39;est requis sur la base de données cloud. Il vous suffit de créer les tables et de copier les données pour démarrer. [!DNL Snowflake] est la base de données Cloud de Campaign. Grâce à sa vitesse et son endurance, vous ne constaterez aucun pic de surcharge d’activité du système. La technologie de base de données cloud ne nécessite pas de maintenance spécifique pour garantir le niveau de performances attendu.
 
 ![](../assets/do-not-localize/glass.png) [En savoir plus sur le déploiement d’Enterprise (FFDA)](../architecture/enterprise-deployment.md)
 
