@@ -5,10 +5,10 @@ feature: Overview, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
-source-git-commit: c7bedcffeff59a5c3b631cde6c7df67057d4a483
-workflow-type: ht
-source-wordcount: '956'
-ht-degree: 100%
+source-git-commit: 86a6979b8258bbe3136ed9e4de6ce44a8164d5d9
+workflow-type: tm+mt
+source-wordcount: '994'
+ht-degree: 97%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 100%
 Adobe Campaign propose une plateforme qui permet de concevoir des expériences client cross-canal ainsi quʼun environnement pour lʼorchestration visuelle de campagnes, la gestion dʼinteractions en temps réel et lʼexécution cross-canal.
 
 Adobe Campaign v8 est l’outil de campagne de nouvelle génération conçu pour des canaux marketing variés, tels que les e-mails, les notifications push, les SMS et le publipostage direct. Il offre des fonctionnalités ETL et de gestion des données performantes pour concevoir et organiser une campagne parfaite. Son moteur d’orchestration fournit des programmes marketing multi-touch riches qui mettent l’accent sur les parcours pilotés par lots. Il est également associé à un serveur de messagerie en temps réel évolutif qui permet aux équipes marketing d’envoyer des messages prédéfinis sur la base d’une payload globale à partir de n’importe quel système informatique, pour des communications à propos de la réinitialisation d’un mot de passe, une confirmation de commande, une facturation en ligne, etc.
+
+Adobe Campaign v8 a fortement amélioré son infrastructure, sa sécurité, sa délivrabilité et sa surveillance. Il est disponible en tant que **Cloud Service géré** qui associe des services à une supervision proactive et à des modifications opportunes. En savoir plus sur les Cloud Service gérés de Campaign [dans cette page](whats-new.md#acms-desc).
 
 En utilisant Campaign, vous pouvez :
 
@@ -50,7 +52,7 @@ Adobe Campaign vous permet de concevoir et d’orchestrer des campagnes ciblée
 
 ![](../assets/do-not-localize/glass.png) Découvrez comment concevoir, planifier et exécuter une campagne dans [cette section](campaigns.md).
 
-## Workflows
+## Workflows {#wf-gsv8}
 
 Adobe Campaign propose un environnement graphique qui permet de construire des processus complexes englobant segmentation, exécution de campagnes, manipulation de fichiers, validations, etc. Un workflow permet par exemple de télécharger un fichier depuis un serveur, de le décompresser et d&#39;importer ses enregistrements dans la base de données Adobe Campaign.
 
