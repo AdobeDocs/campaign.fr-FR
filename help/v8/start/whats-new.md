@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 9ad8158f280acae2c2d10161f8ac6157398b9e3d
+source-git-commit: 43b6ee223d0d6b6a0e2fd9f067378965274e63a4
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 86%
+source-wordcount: '1028'
+ht-degree: 84%
 
 ---
 
@@ -21,8 +21,6 @@ Adobe Campaign v8 a fortement amélioré son infrastructure, sa sécurité, sa
 ![](assets/home-page.png)
 
 ## Fonctionnalités principales{#key-capabilities}
-
-Les fonctionnalités principales sont répertoriées ci-dessous.
 
 ### Gestion de workflows centrale{#central-wf-mgt}
 
@@ -74,11 +72,17 @@ Adobe Campaign v8 est disponible en tant que Cloud Service géré, offrant une s
 
 L’approche des services gérés permet aux marketeurs de tirer parti de l’échelle opérationnelle et de l’économie de l’infrastructure cloud sans avoir besoin d’une assistance importante de la part des ressources informatiques internes. Les équipes de conseil et d’implémentation d’Adobe vous aident à évaluer vos plans marketing, vos pratiques existantes, vos exigences en matière de données et votre volume de messages. Elles vous recommandent ensuite les services, l’assistance et les modules de délivrabilité les plus appropriés. L’équipe Adobe Campaign Managed Cloud Services peut ensuite surveiller les performances de la campagne, la réputation de la marque, les mesures d’expérience client, etc., et créer des rapports à ce sujet.
 
-[Télécharger ce livre blanc](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf) pour en savoir plus sur la valeur commerciale de Adobe Campaign Managed Cloud Services.
+[!BADGE PDF]{type=Informative}[Lisez ce livre blanc](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf){target="_blank"} pour en savoir plus sur la valeur commerciale de Adobe Campaign Managed Cloud Services.
 
->[!NOTE]
+Notez que la nouvelle architecture de cloud permet à Campaign de rationaliser les processus, de réduire les coûts, de gérer les risques et d’améliorer la sécurité des données. Votre environnement Campaign v8 est fourni avec un cloud privé virtuel (VPC) dédié et préconfiguré pour vous.
+
+
+>[!AVAILABILITY]
 >
->La nouvelle architecture cloud permet à Campaign de rationaliser les processus, de réduire les coûts, de gérer les risques et d’améliorer la sécurité des données. Votre environnement Campaign v8 est fourni avec un cloud privé virtuel (VPC) dédié et préconfiguré pour vous.
+>* Campaign v8 est **uniquement** disponible en tant que Managed Cloud Service et ne peut pas être déployé dans des environnements on-premise ou hybrides.
+>
+>* La migration automatisée depuis un environnement Campaign Classic v7 existant n’est pas encore disponible.
+
 
 ### Vitesse et échelle {#speed-scale}
 
@@ -87,12 +91,6 @@ Adobe Campaign peut désormais tirer parti des technologies de base de données 
 [Campaign v8 Enterprise](../architecture/enterprise-deployment.md) présente le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud. Avec cette nouvelle offre, Campaign v8 simplifie la gestion des données : aucun index n&#39;est requis sur la base de données cloud. Il vous suffit de créer les tables et de copier les données pour démarrer. [!DNL Snowflake] est la base de données Cloud de Campaign. Grâce à sa vitesse et son endurance, vous ne constaterez aucun pic de surcharge d’activité du système. La technologie de base de données cloud ne nécessite pas de maintenance spécifique pour garantir le niveau de performances attendu.
 
 ![](../assets/do-not-localize/glass.png) [En savoir plus sur le déploiement d’Enterprise (FFDA)](../architecture/enterprise-deployment.md)
-
->[!CAUTION]
->
->* Campaign v8 est **uniquement** disponible en tant que Managed Cloud Service et ne peut pas être déployé dans des environnements on-premise ou hybrides.
->
->* La migration automatisée depuis un environnement Campaign Classic v7 existant n’est pas encore disponible.
 
 
 ## Interface d&#39;administrateur en libre-service{#self-service-admin}
