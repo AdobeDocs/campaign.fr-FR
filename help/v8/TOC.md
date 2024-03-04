@@ -5,10 +5,10 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: a79ae8611f413b910fe31c1e1c5213f40e873879
+source-git-commit: 673298a60927902bba71fd9167c5408e538f4929
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 97%
+source-wordcount: '581'
+ht-degree: 98%
 
 ---
 
@@ -190,6 +190,8 @@ ht-degree: 97%
       + [Filtrage des schémas](dev/filter-schema.md)
       + [Structure d&#39;un schéma](dev/schema-structure.md)
       + [Mapping de la base de données](dev/database-mapping.md)
+      + [Principales directions](dev/database-keys.md)
+      + [Gestion des liens](dev/database-links.md)
       + [Limiter l’affichage des PI](dev/restrict-pi-view.md)
       + [Utilisation d’une table des destinataires personnalisée](dev/custom-recipient.md)
       + [Mise à jour de la base de données](dev/update-database-structure.md)
