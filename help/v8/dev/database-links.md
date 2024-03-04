@@ -4,7 +4,7 @@ description: Présentation de la gestion des liens dans les schémas Adobe Campa
 feature: Data Model, Configuration
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: c7171a121f03eff0d945e64758e3ba1842e5436f
+source-git-commit: 6db351c8b5d30f722ddc4b0261af93cd8e3b72cd
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 64%
@@ -35,7 +35,7 @@ Pour les relations de jointure à l’aide de Federated Database Access (FDA) :
 * ![](assets/do-not-localize/join_fda_11.png) : Cardinalité 1-1
 * ![](assets/do-not-localize/join_fda_1m.png) : Cardinalité 1-N
 
-Pour plus d’informations sur les tables FDA, voir la section [Accès à une base de données externe](../../installation/using/about-fda.md).
+Pour plus d’informations sur les tables FDA, voir la section [Accès à une base de données externe](../connect/fda.md).
 
 Un lien doit être déclaré dans le schéma possédant la clé étrangère de la table liée à partir de l&#39;élément principal :
 
