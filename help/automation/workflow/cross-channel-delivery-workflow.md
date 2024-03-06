@@ -7,8 +7,8 @@ role: User
 exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 100%
+source-wordcount: '679'
+ht-degree: 82%
 
 ---
 
@@ -35,7 +35,7 @@ Les principales étapes d&#39;implémentation pour ce cas pratique sont les suiv
 Pour définir votre cible, créez une requête afin d&#39;identifier les destinataires.
 
 1. Créez une campagne. En savoir plus sur [cette page](../campaigns/marketing-campaign-create.md).
-1. Dans l&#39;onglet **[!UICONTROL Ciblages et workflows]** de la campagne, ajoutez une activité **Requête** à votre workflow. Pour plus d&#39;informations sur l&#39;utilisation de cette activité, consultez [cette section](query.md).
+1. Dans le **[!UICONTROL Ciblage et workflows]** de votre campagne, ajoutez un **Requête** à votre workflow. L&#39;utilisation de cette activité est présentée dans la section [cette section](query.md).
 1. Définissez les destinataires qui recevront vos diffusions. Par exemple, sélectionnez les membres &quot;Gold&quot; en tant que dimension cible.
 1. Ajoutez des conditions de filtrage à votre requête. Dans cet exemple, sélectionnez les destinataires disposant d&#39;une adresse email et d&#39;un numéro de téléphone portable.
 
@@ -68,7 +68,7 @@ Pour définir votre cible, créez une requête afin d&#39;identifier les destina
 
 Une fois votre cible identifiée et votre première diffusion créée, vous devez segmenter la cible en différentes populations à l&#39;aide de conditions de filtrage.
 
-1. Ajoutez une activité **Partage** au workflow et ouvrez-la. Pour plus d&#39;informations sur l&#39;utilisation de cette activité, consultez [cette section](split.md).
+1. Ajouter un **Partage** dans le workflow et ouvrez-le. L&#39;utilisation de cette activité est présentée dans la section [cette section](split.md).
 1. Créez trois segments à partir de la population calculée en amont dans la requête.
 
    ![](assets/wkf_cross-channel_6.png)
@@ -81,7 +81,7 @@ Une fois votre cible identifiée et votre première diffusion créée, vous deve
 
    ![](assets/wkf_cross-channel_9.png)
 
-1. Dans les paramètres des filtres, sélectionnez **[!UICONTROL Les destinataires n&#39;ayant ni ouvert ni cliqué (email)]** dans la liste déroulante **[!UICONTROL Comportement]** et choisissez l&#39;email comprenant l&#39;offre à envoyer depuis la liste des destinataires. Cliquez sur **[!UICONTROL Terminer]**.
+1. Dans les paramètres de filtre, sélectionnez **[!UICONTROL Destinataires n&#39;ayant ni ouvert ni cliqué (email)]** de la **[!UICONTROL Comportement]** et sélectionnez l&#39;email comprenant l&#39;offre à envoyer depuis la liste des diffusions. Cliquez sur **[!UICONTROL Terminer]**.
 
    ![](assets/wkf_cross-channel_10.png)
 
@@ -112,4 +112,4 @@ Une fois votre cible identifiée et votre première diffusion créée, vous deve
 1. Double-cliquez sur l’activité **[!UICONTROL Mise à jour des listes]** et sélectionnez l’option **[!UICONTROL Générer une transition sortante]**.
 1. Cliquez sur le bouton **Démarrer** de la barre d&#39;actions pour exécuter le workflow.
 
-La population ciblée par l&#39;activité **Requête** sera segmentée pour recevoir une diffusion email ou SMS selon le comportement des destinataires. La population restante sera ajoutée à la base de données à l&#39;aide de l&#39;activité **[!UICONTROL Mise à jour des listes]**.
+La population ciblée par la variable **Requête** L&#39;activité sera segmentée afin de recevoir un email ou une diffusion SMS en fonction du comportement des destinataires. La population restante sera ajoutée à la base de données à l&#39;aide du **[!UICONTROL Mise à jour de liste]** activité.

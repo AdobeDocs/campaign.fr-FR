@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1250'
 ht-degree: 100%
 
 ---
@@ -189,7 +189,7 @@ Pour plus d’informations, consultez la page [Profils de produit pour Adobe An
 
 ## Workflow technique des processus Web Analytics {#technical-workflows-of-web-analytics-processes}
 
-L&#39;échange des données entre Adobe Campaign et Adobe Analytics est géré par un workflow technique qui s&#39;exécute en tâche de fond.
+L’échange des données entre Adobe Campaign et Adobe Analytics est géré par un workflow technique qui s’exécute en arrière-plan.
 
 Ce workflow est disponible à partir de l&#39;arborescence de l&#39;explorateur Campaign, sous le dossier **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Workflows techniques]** > **[!UICONTROL Processus Web Analytics]**.
 

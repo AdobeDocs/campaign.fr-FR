@@ -6,9 +6,9 @@ role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
 source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
-workflow-type: ht
-source-wordcount: '1625'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1362'
+ht-degree: 94%
 
 ---
 
@@ -147,8 +147,8 @@ Lorsque le contenu de votre diffusion est disponible dans un fichier HTML situé
 * [Workflow de diffusion cross-canal](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/cross-channel-delivery-workflow.html?lang=fr)
 Découvrez comment créer un workflow de diffusion cross-canal. L&#39;objectif est de segmenter une audience des destinataires de votre base de données en différents groupes et d&#39;envoyer un e-mail au premier groupe et un SMS à l&#39;autre.
 
-* [Enrichissement des e-mails avec des champs de date personnalisés](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/email-enrichment-with-custom-date-fields.html?lang=fr)
-Découvrez comment envoyer un e-mail avec des champs de données personnalisés aux profils qui célèbrent leur anniversaire ce mois-ci. L’e-mail contiendra un coupon valide une semaine avant et après leur anniversaire.
+* [Enrichissement des emails avec des champs de date personnalisés](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/email-enrichment-with-custom-date-fields.html?lang=fr)
+Découvrez comment envoyer un email avec des champs de données personnalisés aux profils qui célèbrent leur anniversaire ce mois-ci. L’e-mail contiendra un coupon valide une semaine avant et après leur anniversaire.
 
 Ainsi que ces pages dans la documentation de Campaign v7 :
 
@@ -162,8 +162,8 @@ Découvrez comment comparer deux contenus de diffusion par e-mail via un workflo
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
-* [Envoi d&#39;un rapport à une liste](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-a-report-to-a-list.html?lang=fr)
-Découvrez comment générer un rapport mensuel intégré des indicateurs de tracking au format PDF et l’envoyer à une liste d’opérateurs Campaign.
+* [Envoyer un rapport à une liste](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-a-report-to-a-list.html?lang=fr)
+Découvrez comment générer un rapport mensuel intégré des Indicateurs de tracking au format PDF et l&#39;envoyer à une liste d&#39;opérateurs Campaign.
 
 * [Superviser vos workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=fr)
 Découvrez comment créer un workflow qui vous permet de surveiller l’état d’un ensemble de workflows « en pause », « arrêtés » ou « contenant des erreurs ».
@@ -181,7 +181,7 @@ Découvrez comment vérifier que le processus de mise à jour est terminé avant
 * [Créer une liste récapitulative](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/create-a-summary-list.html?lang=fr)
 Découvrez comment créer un workflow qui, après la collecte de fichiers et plusieurs enrichissements, permet de créer une liste récapitulative. L&#39;exemple est basé sur une liste de contacts qui ont effectué des achats dans un magasin.
 
-* [Enrichissement des données](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/enrich-data.html?lang=fr)
+* [Enrichir des données](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/enrich-data.html?lang=fr)
 Découvrez comment envoyer des diffusions personnalisées aux profils ayant participé au dernier jeu-concours en fonction de leur score.
 
 * [Utiliser des agrégats](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html?lang=fr)

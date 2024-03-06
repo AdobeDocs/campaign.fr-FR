@@ -7,8 +7,8 @@ role: User
 exl-id: eedc796a-865f-47a8-8807-5980546b8adf
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 100%
+source-wordcount: '285'
+ht-degree: 92%
 
 ---
 
@@ -30,7 +30,7 @@ Ces campagnes étant lancées à chaque début de saison afin de proposer des ac
 
 1. Le but étant de mettre à jour la liste avant chaque début de saison, sélectionnez le type de périodicité **[!UICONTROL Mensuel]**.
 1. À l&#39;écran suivant, sélectionnez les mois de mars, juin, septembre et décembre. Indiquez comme jour le 20 du mois et choisissez l&#39;heure à laquelle lancer l&#39;exécution du workflow.
-1. Sélectionnez ensuite la période de validité de la requête. Par exemple, si vous souhaitez que cette dernière soit active en permanence, sélectionnez **[!UICONTROL Validité permanente]**.
+1. Sélectionnez ensuite la période de validité de la requête. Par exemple, si vous souhaitez que cette activité soit active de manière permanente, sélectionnez **[!UICONTROL Validité permanente]**.
 
 1. Après avoir validé le paramétrage de la requête incrémentale, paramétrez l&#39;activité de mise à jour de liste comme décrit à la section [Mise à jour de liste](list-update.md).
 

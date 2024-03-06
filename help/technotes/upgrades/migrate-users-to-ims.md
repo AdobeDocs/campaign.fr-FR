@@ -5,7 +5,7 @@ exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1345'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Une fois la migration IMS complète terminée, Adobe applique les restrictions q
 
 Pour les nouvelles clientes et les nouveaux clients : la création d’un utilisateur natif ou d’une utilisatrice native n’est pas autorisée dès le départ.
 
-En tant qu’administrateur de Campaign, vous pouvez accorder des autorisations aux utilisateurs de votre entreprise via Adobe Admin Console et la console cliente Campaign. Les utilisateurs et utilisatrices peuvent se connecter à Adobe Campaign au moyen de leur Adobe ID. Apprenez-en davantage en consultant [cette documentation](../../v8/start/gs-permissions.md).
+En tant qu’administrateur ou administratrice Campaign, vous pouvez accorder des autorisations aux utilisateurs et utilisatrices de votre entreprise via Adobe Admin Console et la console cliente Campaign. Les utilisateurs et utilisatrices peuvent se connecter à Adobe Campaign au moyen de leur Adobe ID. Apprenez-en davantage en consultant [cette documentation](../../v8/start/gs-permissions.md).
 
 ### Comment ajouter des e-mails pour les personnes natives actuelles ? {#ims-migration-id}
 
@@ -87,37 +87,37 @@ En tant qu’administrateur ou administratrice Campaign, vous devez ajouter des 
 1. Saisissez l’e-mail de l’opérateur ou de l’opératrice dans la section **Points de contact** du formulaire.
 1. Enregistrez vos modifications.
 
-En tant que responsable de workflow, ou administrateur de Campaign, vous pouvez également effectuer une mise à jour en masse de vos opérateurs avec un workflow.
+En tant que personne chargée de la supervision de workflow, ou de l’administratrice de Campaign, vous pouvez également effectuer une mise à jour en masse de vos opérateurs et opératrices avec un workflow.
 
-+++Principales étapes pour mettre à jour vos opérateurs avec un workflow
++++Principales étapes pour mettre à jour vos opérateurs et opératrices avec un workflow
 
-Pour effectuer une mise à jour en masse de vos opérateurs natifs, procédez comme suit :
+Pour effectuer une mise à jour en masse de vos opérateurs et opératrices natifs, procédez comme suit :
 
-1. Créez un workflow pour extraire dans un fichier CSV tous les opérateurs qui se connectent à Campaign avec le mode d&#39;authentification natif. Utilisez une **Requête** activité et une **Extraction (fichier)** pour créer le fichier CSV. Pour chaque opérateur, en fonction des données de son profil, vous pouvez exporter les colonnes suivantes : `Name, Label`.
+1. Créez un workflow pour extraire dans un fichier CSV tous les opérateurs et opératrices qui se connectent à Campaign avec le mode d’authentification natif. Utilisez une activité **Requête** et une activité **Extraction (fichier)** pour créer le fichier CSV. Pour chaque opérateur ou opératrice, en fonction des données de son profil, vous pouvez exporter les colonnes suivantes : `Name, Label`.
 
-   En savoir plus sur les **Requête** activité dans [cette page](../../automation/workflow/query.md)
+   Pour en savoir plus sur l’activité **Requête**, consultez [cette page](../../automation/workflow/query.md).
 
-   En savoir plus sur les **Extraction (fichier)** activité dans [cette page](../../automation/workflow/extraction-file.md)
+   Pour en savoir plus sur l’activité **Extraction (fichier)**, consultez [cette page](../../automation/workflow/extraction-file.md).
 
-1. Mettez à jour le fichier CSV avec une nouvelle colonne contenant les emails de vos opérateurs.
+1. Mettez à jour le fichier CSV avec une nouvelle colonne contenant les e-mails de vos opérateurs et opératrices.
 
-1. Créez un workflow pour importer des données mises à jour, avec un **Chargement (fichier)** activité et une **Mise à jour de données** dans le workflow.
+1. Créez un workflow pour importer des données mises à jour, avec une activité **Chargement (fichier)** et une activité **Mise à jour de données** dans le workflow.
 
    ![](assets/update-operators-wf.png){width="70%"}
 
-1. Modifiez la variable **Chargement (fichier)** et définissez les paramètres pour charger le fichier CSV mis à jour, conformément à l’exemple ci-dessous.
+1. Modifiez l’activité **Chargement (fichier)** et définissez les paramètres pour charger le fichier CSV mis à jour, conformément à l’exemple ci-dessous.
 
    ![](assets/data-loading-activity.png){width="70%"}
 
-   En savoir plus sur les **Chargement (fichier)** activité dans [cette page](../../automation/workflow/data-loading-file.md)
+   Pour en savoir plus sur l’activité **Chargement (fichier)**, consultez [cette page](../../automation/workflow/data-loading-file.md).
 
-1. Modifiez la variable **Mise à jour de données** et définissez les paramètres conformément à l’exemple ci-dessous. Notez que la variable **Dimension mise à jour** a été remplacé par `Operators (xtk)`.
+1. Modifiez l’activité **Mise à jour de données** et définissez les paramètres conformément à l’exemple ci-dessous. Notez que **Dimension mise à jour** a été remplacé par `Operators (xtk)`.
 
    ![](assets/update-data-activity.png){width="70%"}
 
-   En savoir plus sur les **Mise à jour de données** activité dans [cette page](../../automation/workflow/update-data.md)
+   Pour en savoir plus sur l’activité **Mise à jour de données**, consultez [cette page](../../automation/workflow/update-data.md).
 
-1. Exécutez le workflow et vérifiez les résultats. L&#39;adresse email a été ajoutée au profil de l&#39;opérateur.
+1. Exécutez le workflow et vérifiez les résultats. L’adresse e-mail a été ajoutée au profil de l’opérateur ou de l’opératrice.
 
    ![](assets/updated-operator.png){width="70%"}
 

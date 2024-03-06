@@ -6,7 +6,7 @@ exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
 source-wordcount: '1161'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -31,7 +31,7 @@ Pour accéder aux rapports, suivez les étapes suivantes :
    * **[!UICONTROL Statistiques de tracking]**
    * **[!UICONTROL URL et flux de clics]**
    * **[!UICONTROL Indicateurs de tracking]**
-   * **[!UICONTROL Échecs et retours]**
+   * **[!UICONTROL Non-délivrables et rebonds]**
    * **[!UICONTROL Activités utilisateurs]**
    * **[!UICONTROL Synthèse des diffusions]**
    * **[!UICONTROL Suivi des abonnements]**
@@ -44,7 +44,7 @@ Ce rapport regroupe les indicateurs clés qui permettent de suivre le comporteme
 
 >[!NOTE]
 >
->Les valeurs calculées à partir d’ouvertures de messages sont toujours des estimations en raison notamment de la marge d’erreur liée aux emails au format texte. Les indicateurs **[!UICONTROL Ouvertures distinctes / Somme des ouvertures sur la population atteinte]** prennent en compte cette marge d’erreur. [En savoir plus](metrics-calculation.md#tracking-opens-).
+>Les valeurs calculées à partir des ouvertures de messages sont toujours des estimations, en raison de la marge d&#39;erreur liée aux emails au format texte. La variable **[!UICONTROL Ouvertures distinctes/Somme des ouvertures sur la population atteinte]** Les indicateurs prennent en compte cette marge d&#39;erreur. [En savoir plus](metrics-calculation.md#tracking-opens-).
 
 ![](assets/tracking-report-synthesis.png)
 
@@ -75,13 +75,13 @@ Ce tableau de valeurs présente la répartition, par domaine Internet, des envoi
 
 * **[!UICONTROL Envois]** : Nombre total de messages envoyés sur ce domaine.
 * **[!UICONTROL Plaintes]** : Nombre de messages, sur ce domaine, qui ont été signalés par le destinataire comme indésirables. Le taux est calculé par rapport au nombre total de messages envoyés sur ce domaine.
-* **[!UICONTROL Ouvertures]** : Nombre de destinataires ciblés distincts, sur ce domaine, ayant ouvert au moins une fois un même message. Le taux est calculé par rapport au nombre total de messages envoyés sur ce domaine.
+* **[!UICONTROL Ouvertures]** : Nombre de destinataires ciblés distincts, pour ce domaine, ayant ouvert au moins une fois un même message. Le taux est calculé par rapport au nombre total de messages envoyés sur ce domaine.
 * **[!UICONTROL Clics]** : Nombre de destinataires ciblés distincts ayant cliqué au moins une fois dans une même diffusion. Le taux est calculé par rapport au nombre total de messages envoyés sur ce domaine.
 * **[!UICONTROL Réactivité brute]** : Pourcentage du nombre de destinataires ayant cliqué au moins une fois dans une même diffusion par rapport au nombre de destinataires ayant ouvert au moins une fois une même diffusion.
 
 >[!NOTE]
 >
->Les noms de domaine qui s’affichent dans ce rapport sont définis dans l’énumération utilisée au niveau des cubes. Pour modifier, ajouter ou supprimer des domaines par défaut, modifiez l’énumération **[!UICONTROL Domaines]**, et modifiez les valeurs et les alias. La catégorie **[!UICONTROL Autres]** regroupe les noms de domaine qui n’appartiennent à aucune valeur de l’énumération.
+>Les noms de domaine affichés dans ce rapport sont définis dans l&#39;énumération utilisée au niveau des cubes. Pour modifier, ajouter ou supprimer des domaines par défaut, modifiez la variable **[!UICONTROL Domaines]** énumère et modifiez les valeurs et les alias. La variable **[!UICONTROL Autres]** category comprend les noms de domaine qui n’appartiennent à aucune valeur de l’énumération.
 >
 >Découvrez comment accéder à vos énumérations et la manière de les configurer sur [cette page](../config/ui-settings.md).
 
@@ -157,7 +157,7 @@ Ce rapport présente l&#39;ensemble des informations principales relatives à la
 Cette section comporte deux indicateurs :
 
 * **[!UICONTROL Population initiale]** : Nombre total de destinataires auxquels la diffusion est destinée.
-* **[!UICONTROL Messages rejetés par règle]** : nombre d&#39;adresses ignorées pendant l&#39;analyse lors de l&#39;application des règles de typologie : adresse manquante, mise en quarantaine, ajoutée à la liste bloquée, etc. <!--For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).-->
+* **[!UICONTROL Messages rejetés par règle]** : Nombre d&#39;adresses ignorées lors de l&#39;analyse lors de l&#39;application des règles de typologie : adresse manquante, en quarantaine, en liste bloquée, etc. <!--For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).-->
 
 **[!UICONTROL Causes d&#39;exclusion]**
 
@@ -168,7 +168,7 @@ Le graphique central présente la répartition, par règle, des messages rejeté
 Cette section comporte les indicateurs suivants :
 
 * **[!UICONTROL Message à diffuser]** : Nombre total de messages à diffuser après l&#39;analyse des diffusions.
-* **[!UICONTROL Succès]** : Nombre de messages traités avec succès. Le taux associé est le ratio avec le nombre de messages à diffuser.
+* **[!UICONTROL Succès]** : Nombre de messages traités avec succès. Le taux associé est le ratio par rapport au nombre de messages à délivrer.
 * **[!UICONTROL Erreurs]** : Nombre total d&#39;erreurs cumulées lors des diffusions et du traitement automatique des retours. Le taux associé est le ratio avec le nombre de messages à diffuser.
 * **[!UICONTROL Mises en quarantaine]** : Nombre d&#39;adresses mises en quarantaine à la suite d&#39;un échec (utilisateur inconnu, domaine invalide). Le taux associé est le ratio avec le nombre de messages à diffuser.
 
@@ -185,7 +185,7 @@ Ce rapport présente le contenu du message (HTML et/ou texte) avec, sur chaque l
 
 Ce rapport présente les statistiques sur les taux d&#39;ouverture, clics et transactions.
 
-Il vous permet de suivre l&#39;impact marketing de la diffusion. Vous pouvez paramétrer l&#39;affichage des valeurs en sélectionnant le périmètre de la vue (vue sur 1 heure, 3 heures, 24 heures, etc.). Cliquez sur le bouton **[!UICONTROL Actualiser]** pour valider votre choix.
+Il permet de suivre l&#39;impact marketing de la diffusion. Vous pouvez paramétrer l&#39;affichage des valeurs en sélectionnant le périmètre de la vue (vue 1 heure, 3 heures, 24 heures, etc.). Cliquez sur **[!UICONTROL Actualiser]** pour confirmer votre sélection.
 
 Ce rapport se présente sous la forme d&#39;un tableau de valeur et d&#39;un diagramme de Pareto permettant de mesurer le temps mis pour que la diffusion atteigne son efficacité maximum. Les indicateurs utilisés sont les suivants :
 

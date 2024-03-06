@@ -6,8 +6,8 @@ feature: Workflows
 exl-id: c3a80871-e045-454c-b1ca-8f484d2e14e1
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 100%
+source-wordcount: '860'
+ht-degree: 88%
 
 ---
 
@@ -75,7 +75,7 @@ Pour cela, les étapes sont les suivantes :
 
    Cliquez sur **[!UICONTROL Terminer]** pour valider.
 
-1. Répétez l&#39;opération pour récupérer le mois de naissance correspondant au mois courant. Pour cela, cliquez sur le bouton **[!UICONTROL Ajouter]** et répétez les étapes 3 à 10, en remplaçant la fonction **[!UICONTROL Day]** par la fonction **[!UICONTROL Month]**.
+1. Répétez cette procédure pour récupérer le mois de naissance correspondant au mois en cours. Pour ce faire, cliquez sur le bouton **[!UICONTROL Ajouter]** et répétez les étapes 3 à 10, en remplaçant **[!UICONTROL Jour]** avec **[!UICONTROL Mois]**.
 
    La requête complète est la suivante :
 
@@ -115,7 +115,7 @@ La sélection des destinataires dont l’anniversaire correspond à la date actu
 
 L&#39;activité **[!UICONTROL Test]** permet de vérifier si l&#39;année est bissextile ou non et si la date courante est le 1er mars.
 
-Si le test est vérifié (l&#39;année n&#39;est pas bissextile - il n&#39;y a pas de 29 février - et la date courante est bien le 1er mars), la transition **[!UICONTROL Vrai]** est activée et les destinataires nés un 29 février sont ajoutés à la diffusion du 1er mars. Dans les autres cas, la transition **[!UICONTROL Faux]** est activée et seuls les destinataires nés à la date courante recevront la diffusion.
+Si le test est vérifié (l’année n’est pas bissextile - il n’y a pas de 29 février - et la date courante est bien le 1er mars), la variable **[!UICONTROL True]** La transition est activée et les destinataires nés le 29 février seront ajoutés à la diffusion du 1er mars. Sinon, la variable **[!UICONTROL False]** est activée et seuls les destinataires nés à la date courante recevront la diffusion.
 
 Copiez et collez le code ci-dessous dans la section **[!UICONTROL Script d&#39;initialisation]** de l&#39;onglet **[!UICONTROL Avancé]**.
 

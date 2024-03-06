@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 100%
+source-wordcount: '1525'
+ht-degree: 87%
 
 ---
 
@@ -47,7 +47,7 @@ Dans l&#39;exemple ci-dessous, les langues seront réparties dans trois groupes�
 
 ![](assets/cube-add-new-bin-2.png)
 
-Vous pouvez utiliser un masque SQL pour regrouper plusieurs valeurs selon un filtre. Pour cela, cochez l&#39;option **[!UICONTROL Oui]** dans la colonne **[!UICONTROL Utiliser un masque SQL]** et saisissez le filtre SQL à appliquer dans la colonne **[!UICONTROL Valeur ou expression]**.
+Vous pouvez utiliser un masque SQL pour regrouper plusieurs valeurs dans un filtre. Pour ce faire, cochez la case **[!UICONTROL Oui]** dans le **[!UICONTROL Utiliser un masque SQL]** et saisissez le filtre SQL à appliquer dans le champ **[!UICONTROL Valeur ou expression]** colonne .
 
 <!--In the example below, all email domains that start with **yahoo** (yahoo.fr, yahoo.com, yahoo.be, etc.), or with **ymail** (ymail.com, ymail.eu, etc.) will be grouped under the label **YAHOO!**, as well as addresses with the **rocketmail.com** domain.-->
 
@@ -76,7 +76,7 @@ Indiquez ensuite les bornes inférieures et supérieures et cliquez sur **[!UICO
 
 ### Génération automatique de classes {#generate-bins-automatically}
 
-Vous pouvez également générer automatiquement les classes. Pour cela, cliquez sur le lien **[!UICONTROL Générer les classes...]**.
+Il est également possible de générer les classes automatiquement. Pour ce faire, cliquez sur le bouton **[!UICONTROL Générer les classes...]** lien.
 
 Vous pouvez, au choix :
 
@@ -102,11 +102,11 @@ Elle est construite selon le modèle suivant :
 
 ![](assets/nmx_enum_domain.png)
 
-Pour créer un rapport utilisant cette énumération, créez un Cube utilisant la dimension **[!UICONTROL Domaine de l&#39;email]**. Choisissez l&#39;option **[!UICONTROL Activer la mise en classe]** puis **[!UICONTROL Lier dynamiquement les valeurs à une énumération]**. Choisissez alors l&#39;énumération **Domaines(domain)** présentée ci-dessus. Toutes les valeurs pour lesquelles aucun alias n&#39;a été défini seront regroupées sous le libellé **Autres**.
+Pour créer un rapport à partir de cette énumération, créez un Cube à l&#39;aide du **[!UICONTROL Domaine de l&#39;email]** dimension. Choisissez la **[!UICONTROL Activer la mise en classe]** option , puis **[!UICONTROL Lier dynamiquement les valeurs à une énumération]**. Sélectionnez ensuite le **Domaines** énumération comme illustré ci-dessus. Toutes les valeurs qui n’ont pas d’alias spécifié seront regroupées sous la variable **Autres** libellé.
 
 Créez ensuite un rapport basé sur ce Cube pour afficher les valeurs.
 
-Il suffira de modifier l&#39;énumération pour mettre à jour le rapport associé. Par exemple, créez la valeur **Adobe** et ajoutez l&#39;alias **adobe.com**, au niveau de l&#39;énumération : le rapport est automatiquement mis à jour avec la valeur Adobe.
+Il suffit de modifier l&#39;énumération pour mettre à jour le rapport associé. Par exemple, créez la variable **Adobe** et ajoutez la variable **adobe.com** alias et le rapport est automatiquement mis à jour avec la valeur Adobe au niveau de l&#39;énumération.
 
 ![](assets/nmx_add_alias.png)
 
@@ -137,7 +137,7 @@ Pour créer un nouvel agrégat, les étapes sont les suivantes :
 1. Sélectionnez la dimension et le niveau. Recommencez l&#39;opération pour chaque dimension et chaque niveau à calculer.
 1. Cliquez sur l&#39;onglet **[!UICONTROL Workflow]** pour créer le workflow d&#39;agrégation.
 
-   * L&#39;activité **[!UICONTROL Planificateur]** permet de définir la fréquence de mise à jour des calculs. Le planificateur est présenté dans [cette section](../../automation/workflow/scheduler.md).
+   * La variable **[!UICONTROL Planificateur]** permet de définir la fréquence des mises à jour des calculs. Le planificateur est présenté dans la section [cette section](../../automation/workflow/scheduler.md).
    * L&#39;activité **[!UICONTROL Mise à jour d&#39;agrégat]** permet de choisir le mode de mise à jour à appliquer : complète ou partielle.
 
      Par défaut, une mise à jour complète est réalisée à chaque calcul. Pour permettre une mise à jour partielle des données, sélectionnez l&#39;option correspondante puis définissez les conditions de mise à jour.
@@ -156,7 +156,7 @@ Pour définir une nouvelle mesure, les étapes sont les suivantes :
 
 1. Au besoin, selon l&#39;opérateur sélectionné, choisissez l&#39;expression sur laquelle porte l&#39;opération.
 
-   Le bouton **[!UICONTROL Sélection avancée]** permet de créer des formules de calcul complexes. Voir à ce sujet [cette section](../../automation/workflow/query.md).
+   La variable **[!UICONTROL Sélection avancée]** permet de créer des formules de calcul complexes. Pour plus d’informations, consultez [cette section](../../automation/workflow/query.md).
 
 1. Le lien **[!UICONTROL Filtrer les données de la mesure...]** permet de restreindre le champ du calcul et de ne l&#39;appliquer qu&#39;à certaines données de la base.
 
@@ -238,7 +238,7 @@ Pour cela :
 
 A chaque modification (ajout, modification, suppression de filtres), cliquez sur la flèche pour relancer le calcul du rapport.
 
-Un filtre peut également être créé à partir d&#39;une sélection. Pour cela, choisissez la ou les cellules, lignes et colonnes sources et cliquez sur l&#39;icône **[!UICONTROL Ajouter un filtre]**.
+Les filtres peuvent également être créés en fonction d’une sélection. Pour cela, sélectionnez les cellules, lignes et colonnes sources, puis cliquez sur le bouton **[!UICONTROL Ajouter un filtre]** Icône
 
 Pour sélectionner une ligne, une colonne ou une cellule, cliquez dessus avec le bouton gauche de la souris. Pour la dé-sélectionner, cliquez une seconde fois.
 

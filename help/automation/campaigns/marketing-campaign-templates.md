@@ -8,7 +8,7 @@ exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1018'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -166,7 +166,7 @@ De plus, des raccourcis vers les fenêtres de configuration sont ajoutés dans l
 Lorsque vous créez un modèle de campagne, vous devez indiquer les informations suivantes :
 
 * Saisissez le **libellé** du modèle : le libellé est obligatoire et constitue le libellé par défaut pour toutes les campagnes basées sur ce modèle.
-* Sélectionnez la **nature** de la campagne dans la liste déroulante. Les valeurs proposées dans cette liste correspondent à celles enregistrées dans l&#39;énumération **[!UICONTROL natureOp]**.
+* Sélectionner l&#39;opération **nature** dans la liste déroulante. Les valeurs disponibles dans cette liste sont celles enregistrées dans la variable **[!UICONTROL natureOp]** énumération.
 
 Découvrez comment accéder à vos énumérations et la manière de les configurer sur [cette page](../../v8/config/ui-settings.md#enumerations).
 

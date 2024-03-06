@@ -7,8 +7,8 @@ level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 100%
+source-wordcount: '1316'
+ht-degree: 93%
 
 ---
 
@@ -100,7 +100,7 @@ Après avoir configuré votre activité **Requête** :
 1. Indiquez un identifiant ainsi qu&#39;un libellé pour la proposition qui sera ajoutée.
 1. Définissez la sélection de l&#39;offre. Deux options sont possibles :
 
-   * **[!UICONTROL Rechercher la meilleure offre dans une catégorie]** : cochez cette option et définissez les paramètres de l&#39;appel au moteur d&#39;offres (emplacement, catégorie ou thème(s), date de contact, nombre d&#39;offres à conserver). Le moteur calculera automatiquement la ou les offres à ajouter en fonction de ces paramètres. Il est conseillé de ne pas renseigner les champs **[!UICONTROL Catégorie]** ou **[!UICONTROL Thème]** en même temps.
+   * **[!UICONTROL Rechercher la meilleure offre dans une catégorie]** : cochez cette option et définissez les paramètres d&#39;appel au moteur d&#39;offres (emplacement, catégorie ou thème(s), date de contact, nombre d&#39;offres à conserver). Le moteur calculera automatiquement la ou les offres à ajouter en fonction de ces paramètres. Nous vous recommandons de terminer l’une des opérations suivantes : **[!UICONTROL Catégorie]** ou le **[!UICONTROL Thème]** , plutôt que les deux en même temps.
 
      ![](assets/int_enrichment_offer3.png)
 
@@ -157,7 +157,7 @@ Cependant, il est possible de stocker ces informations de la manière suivante 
 
 1. Validez votre ajout et enregistrez votre workflow.
 
-La diffusion stocke automatiquement le rang et le poids des offres. Ces informations sont visibles au niveau de l&#39;onglet **[!UICONTROL Offres]** de la diffusion.
+La diffusion stocke automatiquement le rang et le poids des offres. Ces informations sont visibles dans le **[!UICONTROL Offres]** .
 
 ### Moteur d&#39;offres {#offer-engine}
 

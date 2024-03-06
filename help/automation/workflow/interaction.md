@@ -6,8 +6,8 @@ feature: Workflows, Interaction
 role: User, Admin
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 100%
+source-wordcount: '131'
+ht-degree: 90%
 
 ---
 
@@ -31,11 +31,11 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
    <tr> 
    <td> <span class="uicontrol">Calcul de l'agrégat full (cube propositionrcp) du MessageCenter</span> <br /> </td> 
    <td> <span class="uicontrol">agg_messageCenter_full</span> <br /> </td> 
-   <td> Ce workflow met à jour l’agrégat complet<strong>(Full)</strong> du cube <strong>Message Center</strong>. Il est déclenché tous les jours à 3h du matin par défaut. Cet agrégat capture les dimensions suivantes : Canal, Date, Statut et Type d'événement.<br /> Le cube <strong>Message center</strong> est ensuite utilisé pour générer des rapports basés sur des événements. <br /> </td> 
+   <td> Ce workflow met à jour l’agrégat complet<strong>(Full)</strong> du cube <strong>Message Center</strong>. Il est déclenché tous les jours à 3h du matin par défaut. Cet agrégat capture les dimensions suivantes : Canal, Date, Statut et Type d'événement.<br /> La variable <strong>Message Center</strong> est ensuite utilisé pour générer des rapports basés sur des événements. <br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Pour en savoir plus sur les cubes et les agrégats, consultez [cette section](../../v8/reporting/gs-cubes.md).
+En savoir plus sur les cubes et les agrégats dans [cette section](../../v8/reporting/gs-cubes.md).
 

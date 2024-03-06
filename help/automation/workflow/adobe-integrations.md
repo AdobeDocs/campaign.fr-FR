@@ -7,7 +7,7 @@ topic-tags: technical-workflows
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '109'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -31,7 +31,7 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
   <tr> 
    <td> <span class="uicontrol">Export d’audiences vers Adobe Experience Cloud</span> <br /> </td> 
    <td> <span class="uicontrol">exportSharedAudience</span> <br /> </td> 
-   <td> Ce workflow permet d’exporter des audiences en tant qu’audiences/segments partagés. Ces audiences peuvent être exploitées dans les différentes solutions d’Adobe Experience Cloud que vous utilisez.<br /> </td> 
+   <td> Ce workflow exporte les audiences en tant qu’audiences/segments partagés. Ces audiences peuvent être utilisées dans les différentes solutions Adobe Experience Cloud que vous utilisez.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

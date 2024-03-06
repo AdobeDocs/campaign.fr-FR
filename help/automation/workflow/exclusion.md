@@ -7,8 +7,8 @@ role: User
 exl-id: 8ea831e2-8e6e-4ef0-ac05-f27ebf89ccb9
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 100%
+source-wordcount: '367'
+ht-degree: 89%
 
 ---
 
@@ -35,7 +35,7 @@ Cochez l&#39;option **[!UICONTROL Générer le complémentaire]** si vous souhai
 L&#39;exemple suivant cherche à constituer une liste des destinataires dont l&#39;âge est compris entre 18 et 30 ans, mais en y excluant les habitants de Paris.
 
 1. Insérez et ouvrez une activité de type **[!UICONTROL Exclusion]** à la suite de deux requêtes. La première requête cible les destinataires vivant à Paris. La seconde requête cible les destinataires âgés de 18 à 30 ans.
-1. Indiquez l&#39;ensemble principal. Ici, l&#39;ensemble principal est la requête **18-30 ans**. Les éléments appartenant au second ensemble seront exclus du résultat final.
+1. Saisissez l’ensemble principal. Ici, l’ensemble principal est la **18-30 ans** requête. Les éléments appartenant au deuxième ensemble seront exclus du résultat final.
 1. Cochez la case **[!UICONTROL Générer le complémentaire]** si vous souhaitez exploiter les données non retenues après l&#39;exclusion. Dans le cas présent, le complément comporte les destinataires âgés de 18 à 30 ans habitant à Paris.
 1. Validez le paramétrage de l&#39;exclusion puis insérez une activité de mise à jour de liste au niveau du résultat. Insérez également une mise à jour de liste au niveau du complémentaire, le cas échéant.
 1. Exécutez le workflow. Dans cet exemple, le résultat comporte tous les destinataires âgés de 18 à 30 ans, mais ceux habitant à Paris sont exclus et sont envoyés vers le complémentaire.
@@ -55,6 +55,6 @@ Chacun des événements entrants doit spécifier une cible définie par ces para
 * schema
 * recCount
 
-Ce triplet de valeurs identifie la cible résultant de l&#39;exclusion. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d&#39;éléments dans la table.
+Ce triplet de valeurs identifie la cible résultant de l’exclusion. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d’éléments dans la table.
 
 La transition associée au complémentaire possède les mêmes paramètres.

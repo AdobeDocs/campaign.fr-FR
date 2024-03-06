@@ -8,7 +8,7 @@ exl-id: 084607f6-47d8-40c0-89ba-bfbb88fc2e53
 source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
 workflow-type: tm+mt
 source-wordcount: '862'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ Les diffusions transactionnelles envoyées à partir de l&#39;instance d&#39;ex�
 
 >[!NOTE]
 >
->Les diffusions hebdomadaires accumulent les événements en fonction de la dernière mise à jour de l&#39;événement, et non de la date de création de l&#39;événement. Par conséquent, lors de l&#39;extraction de logs de diffusion de messagerie transactionnelle à partir de l&#39;instance de pilotage, l&#39;identifiant de diffusion associé à chaque identifiant de log de diffusion peut changer au fil du temps lorsque le journal est mis à jour (par exemple, lorsqu&#39;un retour entrant est reçu pour l&#39;événement).
+>Les diffusions hebdomadaires accumulent les événements en fonction de la dernière mise à jour de l&#39;événement, et non de la date de création de l&#39;événement. Par conséquent, lors de l’extraction de logs de diffusion de messagerie transactionnelle à partir de l’instance de pilotage, l’identifiant de diffusion associé à chaque identifiant de log de diffusion peut changer au fil du temps lorsque le journal est mis à jour (par exemple, lorsqu’un rebond entrant est reçu pour l’événement).
 
 <!--
 To monitor the activity and running of the execution instance(s), see [Transactional messaging reports](transactional-messaging-reports.md).-->
@@ -53,7 +53,7 @@ Le rapport **[!UICONTROL Historique des événements de Message Center]** prése
 
 Lors de l&#39;ouverture du rapport, les informations affichées par défaut correspondent au taux de messages transactionnels envoyés avec succès. Pour visualiser davantage de niveaux, vous pouvez déplier ou replier les différents noeuds et positionner le pointeur de la souris pour mettre en surbrillance le niveau voulu.
 
-Pour chaque période de temps, vous pouvez visualiser les données propres à chacun des types d&#39;événements. La colonne **[!UICONTROL Evénements]** correspond au nombre d&#39;événements reçus par l&#39;instance de pilotage. Le calcul du nombre d&#39;événements transformés en message transactionnel personnalisé se trouve dans la colonne **[!UICONTROL Envoyés]**.
+Vous pouvez afficher les données spécifiques à chaque type d’événement, par période. La variable **[!UICONTROL Événements]** correspond au nombre d&#39;événements reçus par l&#39;instance de pilotage. Le nombre d’événements transformés en messages transactionnels personnalisés est détaillé dans la section **[!UICONTROL Envoyé]** colonne .
 
 
 ### Temps de traitement Message Center {#processing-time}

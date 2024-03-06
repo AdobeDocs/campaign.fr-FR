@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: 891a9a87-f3a4-405a-87ed-a7703be90a67
 source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 100%
+source-wordcount: '1023'
+ht-degree: 99%
 
 ---
 
@@ -74,7 +74,7 @@ Vous pouvez ensuite définir les paramètres de l&#39;image :
 * La **[!UICONTROL landing page]** vous permet de rediriger l&#39;image par défaut vers une landing page par défaut. Cette URL s&#39;applique uniquement lorsque l&#39;image par défaut est affichée dans l&#39;e-mail final. Elle est facultative.
 * Les **[!UICONTROL Paramètres de décision additionnels]** définissent le mappage entre les champs définis dans les segments d&#39;Adobe Target et les champs d&#39;Adobe Campaign. Les champs d&#39;Adobe Campaign utilisés doivent avoir été spécifiés au niveau du &quot;rawbox&quot;. Dans notre exemple, nous avons ajouté le champ Pays.
 
-Si vous utilisez les autorisations d’Enterprise pour les paramètres d’Adobe Target, ajoutez la propriété correspondante dans ce champ. Pour en savoir plus sur les autorisations de Target Enterprise, voir [cette page](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=fr#administer).
+Dans Adobe Target, si vous utilisez les autorisations Enterprise, ajoutez la propriété correspondante dans ce champ. En savoir plus sur les autorisations de Target Enterprise dans [cette page](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=fr#administer).
 
 ![](assets/target_13.png)
 

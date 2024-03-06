@@ -6,8 +6,8 @@ feature: Workflows
 exl-id: 0d4d13f6-7128-44d3-ad5c-4ed02257ee64
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 100%
+source-wordcount: '192'
+ht-degree: 82%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Une activité de type **Test** active la première transition qui vérifie la condition qui lui est associée. Si aucune condition n&#39;est vérifiée et si l&#39;option **[!UICONTROL Utiliser le branchement par défaut]** est activée, la transition par défaut sera activée.
 
-Une condition est une expression JavaScript qui doit être évaluée à &#39;true&#39; ou &#39;false&#39;. Pour saisir l&#39;expression, cliquez sur l&#39;icône située à droite du nom de la condition et choisissez **[!UICONTROL Editer...]**.
+Une condition est une expression JavaScript qui doit être évaluée sur &quot;true&quot; ou &quot;false&quot;. Pour saisir l’expression, cliquez sur l’icône située à droite du nom de la condition, puis sélectionnez **[!UICONTROL Modifier...]**.
 
 ![](assets/edit_test.png)
 

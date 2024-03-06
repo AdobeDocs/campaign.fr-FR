@@ -7,8 +7,8 @@ role: User
 exl-id: e3ad6d92-8d53-4098-90fd-cfed29f2e56e
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 100%
+source-wordcount: '368'
+ht-degree: 87%
 
 ---
 
@@ -45,7 +45,7 @@ Uniquement lorsque l&#39;action **[!UICONTROL Spécifiés par l&#39;événement 
 * schema
 * recCount
 
-Ce triplet de valeurs identifie la cible résultant de la diffusion à la volée. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d&#39;éléments dans la table.
+Ce triplet de valeurs identifie la cible résultant de la diffusion à la volée. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d’éléments dans le tableau.
 
 La transition associée au complémentaire possède les mêmes paramètres.
 

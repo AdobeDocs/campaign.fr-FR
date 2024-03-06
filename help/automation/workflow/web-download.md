@@ -6,8 +6,8 @@ feature: Workflows
 exl-id: 73bacf61-ac03-4a5c-b03b-6dfbe3fb9538
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 100%
+source-wordcount: '449'
+ht-degree: 82%
 
 ---
 
@@ -29,7 +29,7 @@ L&#39;activité de type **Téléchargement Web** permet de lancer le télécharg
 
    * Pour utiliser un **[!UICONTROL Compte externe]**, sélectionnez le compte dans la liste déroulante et indiquez le fichier à télécharger.
 
-     Les comptes externes sont paramétrés depuis le noeud **[!UICONTROL Administration > Plateforme > Comptes externes]** de l&#39;arborescence Adobe Campaign. Les paramètres du compte peuvent être édités à partir de l&#39;icône **[!UICONTROL Editer le lien]**.
+     Les comptes externes sont configurés à partir de la variable **[!UICONTROL Administration > Plateforme > Comptes externes]** du noeud de l’arborescence Adobe Campaign. Les paramètres du compte peuvent être édités à partir du **[!UICONTROL Lien d’édition]** Icône
 
      ![](assets/download_web_edit_external.png)
 
@@ -45,7 +45,7 @@ L&#39;activité de type **Téléchargement Web** permet de lancer le télécharg
 
    Les options disponibles sont les suivantes :
 
-   * **[!UICONTROL Utiliser un répertoire de stockage par défaut]** : le fichier est toujours déplacé avant d&#39;être traité. Lorsque cette option est cochée, le fichier est déplacé dans le répertoire de stockage par défaut (le répertoire **vars** du dossier d&#39;installation d&#39;Adobe Campaign). Si vous souhaitez spécifier un répertoire de stockage particulier, décochez la case, et saisissez le chemin du répertoire dans le champ **[!UICONTROL Répertoire de stockage]**.
+   * **[!UICONTROL Utiliser un répertoire de stockage par défaut]**: le fichier est toujours déplacé avant d’être traité. Si cette option est cochée, le fichier est déplacé dans le répertoire de stockage par défaut (le **vars** répertoire du dossier d’installation d’Adobe Campaign). Pour spécifier un répertoire de stockage, décochez la case et saisissez son chemin dans le champ **[!UICONTROL Répertoire de stockage]** field
    * **[!UICONTROL Nombre de fichiers]** : saisissez le nombre maximal de fichiers à conserver dans le répertoire de stockage.
    * **[!UICONTROL Taille maximale (en Mo)]** : saisissez la capacité maximale du répertoire de stockage (en méga octets).
 

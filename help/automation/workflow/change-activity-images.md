@@ -7,7 +7,7 @@ role: Admin
 exl-id: f5580401-3305-4915-88a2-3400a32aa7aa
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '174'
 ht-degree: 100%
 
 ---
@@ -18,15 +18,15 @@ ht-degree: 100%
 
 Les images utilisées dans les diagrammes des différents workflows peuvent être modifiées. Elles doivent toutefois respecter certaines contraintes. Les étapes de mise en oeuvre sont les suivantes :
 
-* Pour changer l&#39;image de fond, sélectionnez le workflow de ciblage visé et cliquez sur **[!UICONTROL Propriétés]**.
+* Pour changer l’image d’arrière-plan, sélectionnez le workflow de ciblage visé et cliquez sur **[!UICONTROL Propriétés]**.
 
   ![](assets/s_user_segmentation_properties_tab.png)
 
-  Cliquez sur l&#39;icône **[!UICONTROL Choisir le lien]** situé à droite du champ **[!UICONTROL Image de fond]** pour sélectionner l&#39;image à utiliser.
+  Cliquez sur l’icône **[!UICONTROL Choisir le lien]** situé à droite du champ **[!UICONTROL Image d’arrière-plan]** pour sélectionner l’image à utiliser.
 
   >[!NOTE]
   >
-  >La largeur en pixels de l&#39;image de fond doit être un multiple de 4.
+  >La largeur en pixels de l’image d’arrière-plan doit être un multiple de 4.
 
   ![](assets/s_user_segmentation_background_select.png)
 
@@ -46,4 +46,4 @@ Les images utilisées dans les diagrammes des différents workflows peuvent êtr
 >
 >Les images proposées sont celles qui sont enregistrées dans le noeud **[!UICONTROL Administration > Paramétrage > Images]** de l&#39;arborescence.
 >  
->Les images doivent être au format PNG, 48x48 pixels, 16 millions de couleurs et avec un fond transparent.
+>Les images doivent être au format PNG, 48x48 pixels, 16 millions de couleurs et avec un arrière-plan transparent.

@@ -7,8 +7,8 @@ level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 100%
+source-wordcount: '1257'
+ht-degree: 92%
 
 ---
 
@@ -74,7 +74,7 @@ Les balises **`<element>`** définissent les noms des éléments d&#39;entité. 
 
 Un schéma de données est identifié par son nom et son espace de noms.
 
-Un espace de noms permet de regrouper un ensemble de schémas par centres d&#39;intérêt. Par exemple, on utilisera l&#39;espace de noms **cus** pour le paramétrage spécifique aux clients (**customers**).
+Un espace de noms permet de regrouper un ensemble de schémas par zone d’intérêt. Par exemple, la variable **cus** L’espace de noms est utilisé pour la configuration spécifique au client (**clients**).
 
 >[!CAUTION]
 >
@@ -194,7 +194,7 @@ Dans cet exemple, au lieu de laisser l’attribut **@autopk** ou **@autouuid** c
 
 ## Attributs (champs) {#attributes--fields-}
 
-Les attributs permettent de définir les champs composant votre objet de données. Utilisez le bouton **[!UICONTROL Insérer]** de la barre d&#39;outils d&#39;édition du schéma pour ajouter les modèles d&#39;attribut vides dans votre XML, à l&#39;endroit où se trouve votre curseur. En savoir plus dans [cette section](create-schema.md).
+Les attributs vous permettent de définir les champs qui constituent votre objet de données. Vous pouvez utiliser la variable **[!UICONTROL Insérer]** dans la barre d’outils d’édition de schéma pour déposer les modèles d’attribut vides dans votre XML où se trouve votre curseur. En savoir plus dans [cette section](create-schema.md).
 
 ![](assets/schemaextension_2.png)
 
@@ -264,7 +264,7 @@ Exemple d&#39;une jointure externe entre la table des destinataires et une table
 </element>
 ```
 
-&quot;xpath-dst&quot; correspond ici à la clé primaire dans le schéma cible et &quot;xpath-src&quot; à la clé étrangère dans le schéma source.
+« xpath-dst » correspond ici à la clé primaire dans le schéma cible et « xpath-src » à la clé étrangère dans le schéma source.
 
 ## Journal d’audit {#audit-trail}
 
@@ -286,4 +286,4 @@ Pour plus d&#39;informations à ce sujet, consultez [cette section](update-datab
 
 >[!NOTE]
 >
->Lorsque les modifications n’ont aucun impact sur la structure de la base de données, vous devez uniquement régénérer les schémas. Pour ce faire, sélectionnez le ou les schémas à mettre à jour, faites un clic droit et sélectionnez **[!UICONTROL Actions > Régénérer les schémas sélectionnés...]**.
+>Lorsque les modifications n’ont pas d’impact sur la structure de la base de données, il vous suffit de régénérer les schémas. Pour cela, sélectionnez le ou les schémas à mettre à jour, cliquez avec le bouton droit et choisissez **[!UICONTROL Actions > Régénérer les schémas sélectionnés...]**.

@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 100%
+source-wordcount: '927'
+ht-degree: 96%
 
 ---
 
@@ -116,7 +116,7 @@ Utilisez l&#39;onglet **[!UICONTROL Contenu]** pour définir le contenu de l&#39
 
 1. Définissez les différents paramètres du contenu de l&#39;offre.
 
-   * **[!UICONTROL Titre]** : indiquez le titre que vous souhaitez faire apparaître dans votre offre. Attention, il ne s&#39;agit pas du libellé de l&#39;offre défini dans l&#39;onglet **[!UICONTROL Général]**.
+   * **[!UICONTROL Titre]** : indiquez le titre que vous souhaitez faire apparaître dans votre offre. Attention, il ne s&#39;agit pas du libellé de l&#39;offre, défini dans la variable **[!UICONTROL Général]** .
    * **[!UICONTROL URL de destination]** : indiquez l&#39;URL de votre offre. Elle doit débuter par &quot;http://&quot; ou &quot;https://&quot;.
    * **[!UICONTROL URL de l&#39;image]** : indiquez une URL ou un chemin d&#39;accès vers l&#39;image de votre offre.
    * **[!UICONTROL Contenu HTML]** / **[!UICONTROL Contenu texte]** : saisissez le corps de votre offre dans l&#39;onglet de votre souhait. Pour générer le tracking, le **[!UICONTROL contenu HTML]** doit être constitué d&#39;éléments HTML intégrables dans un élément de type `<div>`. Par exemple, le résultat d&#39;un élément `<table>` dans la page HTML sera le suivant :

@@ -7,8 +7,8 @@ role: Admin
 exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 100%
+source-wordcount: '1155'
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ Elle permet plus précisément aux administrateurs de la plateforme d’effectue
 
 >[!NOTE]
 >
->Outre la **carte thermique des workflows**, vous pouvez créer un workflow qui vous permettra de surveiller le statut d’un ensemble de workflows et d’envoyer des messages récurrents aux superviseurs. Voir à ce sujet la [section dédiée](workflow-supervision.md).
+>En plus de la variable **Carte thermique des workflows**, vous pouvez créer un workflow qui vous permettra de surveiller l’état d’un ensemble de workflows et d’envoyer des messages récurrents aux superviseurs. Pour plus de détails, reportez-vous à la [section dédiée](workflow-supervision.md).
 
 L’utilisation de la carte thermique des workflows demande une bonne maîtrise des concepts suivants : [Workflows](about-workflows.md), [Activités](activities.md) et [Bonnes pratiques relatives aux workflows](workflow-best-practices.md).
 

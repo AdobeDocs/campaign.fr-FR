@@ -8,7 +8,7 @@ exl-id: f57f3074-981f-4bcf-9274-7908cd00a4a2
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '525'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -34,7 +34,7 @@ Le module Marketing Analytics de Campaign vous permet de :
 
    Pour plus dʼinformations à ce sujet, consultez la section [Création dʼindicateurs](cube-indicators.md).
 
-1. Création de tableaux croisés dynamiques et explorer les données
+1. Créer des tableaux croisés dynamiques et explorer les données
 
    * explorez les données calculées, les mesures configurées,
    * sélectionnez les données à afficher et leur mode dʼaffichage,

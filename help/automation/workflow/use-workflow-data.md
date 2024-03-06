@@ -5,8 +5,8 @@ feature: Workflows, Data Management
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
 source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 100%
+source-wordcount: '733'
+ht-degree: 90%
 
 ---
 
@@ -46,7 +46,7 @@ Sélectionnez pour cela le menu correspondant :
 
   Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target="_blank"}.
 
-Les données de la cible sont purgées au fur et à mesure de l&#39;exécution du workflow. Seule la dernière table de travail est accessible. Vous pouvez paramétrer le workflow pour que toutes les tables de travail restent accessibles. Pour cela, cochez l&#39;option **[!UICONTROL Conserver le résultat des populations intermédiaires entre deux exécutions]** dans les propriétés du workflow.
+Les données de la cible sont purgées au fur et à mesure de l&#39;exécution du workflow. Seule la dernière table de travail est accessible. Vous pouvez paramétrer le workflow pour que toutes les tables de travail restent accessibles : vérifiez les **[!UICONTROL Conserver le résultat des populations intermédiaires entre deux exécutions]** dans les propriétés du workflow.
 
 ![](assets/wf-purge-data-option.png)
 
@@ -99,7 +99,7 @@ Dans l&#39;exemple suivant, vous allez collecter une liste d&#39;informations su
 
    >[!CAUTION]
    >
-   >Seules les données contenues dans la transition peuvent être utilisées pour personnaliser la diffusion. Les champs de personnalisation de type **targetData** ne sont disponibles que pour la population en entrée de l&#39;activité **[!UICONTROL Diffusion]**.
+   >Seules les données contenues dans la transition peuvent être utilisées pour personnaliser la diffusion. **targetData** les champs de personnalisation de type ne sont disponibles que pour la population entrante de la variable **[!UICONTROL Diffusion]** activité.
 
 1. Dans le modèle de diffusion, utilisez les champs collectés dans le workflow.
 

@@ -8,7 +8,7 @@ exl-id: 911096e2-0307-46a8-873c-ee2248b8e3e8
 source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -36,7 +36,7 @@ Pour créer une nouvelle catégorie, procédez comme suit :
 
    ![](assets/offer_cat_create_002.png)
 
-1. Renommez la catégorie. Vous pourrez modifier le libellé ultérieurement via l&#39;onglet **[!UICONTROL Général]** de la catégorie.
+1. Renommez la catégorie. Vous pouvez modifier le libellé ultérieurement à l’aide du **[!UICONTROL Général]** .
 
    ![](assets/offer_cat_create_003.png)
 

@@ -7,8 +7,8 @@ role: User
 exl-id: ed70d2d3-251e-4ee8-84d4-73ad03e8dd35
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 100%
+source-wordcount: '339'
+ht-degree: 94%
 
 ---
 
@@ -34,7 +34,7 @@ L&#39;activité **[!UICONTROL Planificateur]** est à considérer comme un dépa
 
 ## Paramétrage de l’activité Planificateur {#configuring-scheduler-activity}
 
-Le planificateur définit le planning d&#39;activation de sa transition. Pour le paramétrer, double-cliquez sur l&#39;objet graphique et cliquez sur le bouton **[!UICONTROL Changer...]**.
+Le planificateur définit le planning d&#39;activation de la transition. Pour le paramétrer, double-cliquez sur l&#39;objet graphique, puis cliquez sur **[!UICONTROL Changer...]**
 
 ![](assets/s_user_segmentation_scheduler.png)
 

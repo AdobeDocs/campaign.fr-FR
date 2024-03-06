@@ -6,9 +6,9 @@ role: Admin, Developer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
 source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -107,7 +107,7 @@ Un workflow technique spécifique gère la réplication des tables qui doivent �
 
 ### Gestion des identifiants{#id-mgt-ffda}
 
-Les objets Campaign v8 utilisent désormais un **Identifiant universel unique (UUID)**, ce qui permet d&#39;identifier des données à l&#39;aide de valeurs uniques illimitées.
+Les objets de Campaign v8 utilisent désormais un **Identifiant unique universel (UUID)**, qui permet d’identifier des données à l’aide de valeurs uniques illimitées.
 
 Veuillez noter que cet identifiant est basé sur des chaînes et n&#39;est pas séquentiel. La clé primaire n&#39;est pas une valeur numérique dans Campaign v8 et vous devez utiliser les attributs **autouuid** et **autopk** dans vos schémas.
 

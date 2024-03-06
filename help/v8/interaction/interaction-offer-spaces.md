@@ -7,8 +7,8 @@ level: Beginner
 exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 100%
+source-wordcount: '889'
+ht-degree: 94%
 
 ---
 
@@ -131,9 +131,9 @@ Dès lors qu&#39;un visiteur clique sur l&#39;offre, et donc sur l&#39;URL, le s
 
 >[!NOTE]
 >
->Si vous souhaitez appliquer un autre état dans l&#39;URL (par exemple, si une proposition d&#39;offre est refusée), utilisez la valeur correspondant à l&#39;état souhaité. Par exemple, **[!UICONTROL Refusée]** = &quot;5&quot;, **[!UICONTROL Présentée]** = &quot;1&quot;, etc.
+>Si vous souhaitez spécifier un autre état dans l’URL (par exemple si une proposition d’offre est refusée), utilisez la valeur correspondant à l’état souhaité. Exemple : **[!UICONTROL Rejetés]** = &quot;5&quot;, **[!UICONTROL Présenté]** = &quot;1&quot;, etc.
 >
->Les états et leur valeur peuvent être récupérés dans le schéma de données **[!UICONTROL Offer propositions (nms)]**. Voir à ce propos [cette page](../dev/create-schema.md).
+>Les états et leurs valeurs peuvent être récupérés dans la variable **[!UICONTROL Propositions d&#39;offres (nms)]** schéma de données. Pour plus d’informations, consultez [cette page](../dev/create-schema.md).
 
 **Interaction sortante**
 

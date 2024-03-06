@@ -7,7 +7,7 @@ exl-id: 7832ffe1-eb65-4b37-9fc5-1374516755d9
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 >
 >Selon votre offre, Campaign Optimization peut être inclus ou proposé sous la forme d&#39;un composant additionnel. Vérifiez votre contrat de licence.
 
-## Règles de typologie et typologies {#typology-rules}
+## Règles et typologies {#typology-rules}
 
 Par défaut, Campaign est fourni avec des typologies et des règles de typologie intégrées.
 

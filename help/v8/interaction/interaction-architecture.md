@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 100%
+source-wordcount: '1319'
+ht-degree: 86%
 
 ---
 
@@ -35,7 +35,7 @@ Le module Interaction d&#39;Adobe Campaign propose deux types d&#39;interaction
 * interactions **entrantes**, initiées par un contact. [En savoir plus](interaction-present-offers.md)
 * interactions **sortantes**, initiées par un chargé de diffusion Campaign. [En savoir plus](interaction-send-offers.md)
 
-Ces deux types d&#39;interactions peuvent être réalisés soit en **mode unitaire** (l&#39;offre est calculée pour un seul contact), soit en **mode batch** (l&#39;offre est calculée pour un ensemble de contacts). Généralement, les interactions entrantes sont réalisées en mode unitaire et les interactions sortantes en mode batch. Néanmoins, des exceptions peuvent exister, par exemple pour des [messages transactionnels](../send/transactional.md), où l&#39;interaction sortante est réalisée en mode unitaire.
+Ces deux types d’interactions peuvent être réalisés dans les **mode unitaire** (l’offre est calculée pour un seul contact), ou dans **mode batch** (l&#39;offre est calculée pour un ensemble de contacts). En règle générale, les interactions entrantes sont effectuées en mode unitaire et les interactions sortantes en mode batch. Toutefois, il peut y avoir certaines exceptions, car [messages transactionnels](../send/transactional.md) par exemple, lorsque l&#39;interaction sortante est réalisée en mode unitaire.
 
 Dès lors qu&#39;une offre peut ou doit être présentée (en fonction des paramétrages réalisés), le moteur d&#39;offre joue le rôle d&#39;intermédiaire : il calcule automatiquement la meilleure offre possible pour un contact parmi celles disponibles, en combinant les données recueillies sur le contact et les différentes règles applicables définies dans l&#39;application.
 
@@ -98,7 +98,7 @@ Sur les instances de pilotage :
    * Sélectionnez le type **[!UICONTROL Instance d&#39;exécution]**.
    * Cochez l&#39;option **[!UICONTROL Activé]**.
    * Renseignez les paramètres de connexion à l&#39;instance d&#39;exécution.
-   * Chaque instance d&#39;exécution doit être associée à un identifiant. Cet identifiant est attribué lorsque vous cliquez sur le bouton **[!UICONTROL Initialiser la connexion]**.
+   * Chaque instance d’exécution doit être associée à un identifiant. Cet identifiant est attribué lorsque vous cliquez sur la variable **[!UICONTROL Initialisation de la connexion]** bouton .
    * Cochez le type d&#39;application utilisée : **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]**, ou les deux.
    * Renseignez le compte FDA utilisé. Un opérateur doit être créé sur les instances d&#39;exécution et doit posséder les droits de lecture et de modification suivants au niveau de la base de données de l&#39;instance en question :
 
@@ -122,7 +122,7 @@ Sur les instances de pilotage :
      >
      >En cas d&#39;erreur, vous pouvez consulter les workflows de synchronisation et de notification des offres, disponibles dans les workflows techniques de l&#39;application.
 
-Si, pour des raisons d&#39;optimisation, seulement une partie de la base marketing est dupliquée sur les instances d&#39;exécution, il est possible de définir un schéma restreint associé à l&#39;environnement afin de permettre aux utilisateurs de n&#39;utiliser que les données disponibles sur les instances d&#39;exécution. Il est possible de créer une offre utilisant des données non disponibles sur les instances d&#39;exécution. Pour cela, vous devez désactiver la règle sur les autres canaux en limitant cette règle au canal sortant (champ **[!UICONTROL Pris en compte si]**).
+Si, pour des raisons d&#39;optimisation, une seule partie de la base marketing est dupliquée sur les instances d&#39;exécution, vous pouvez spécifier un schéma restreint lié à l&#39;environnement afin de permettre aux utilisateurs de n&#39;utiliser que les données disponibles sur les instances d&#39;exécution. Vous pouvez créer une offre à partir de données qui ne sont pas disponibles sur les instances d&#39;exécution. Pour ce faire, vous devez désactiver la règle sur les autres canaux en limitant cette règle sur le canal sortant (**[!UICONTROL Pris en compte si]** ).
 
 ![](assets/ita_filtering.png)
 

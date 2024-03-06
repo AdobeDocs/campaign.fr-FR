@@ -7,8 +7,8 @@ role: User, Developer
 exl-id: 00e564b5-3c8e-45d4-b240-c872a8b8ccb6
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 100%
+source-wordcount: '245'
+ht-degree: 83%
 
 ---
 
@@ -30,7 +30,7 @@ Dans cet exemple, vous allez comptabiliser le nombre de destinataires domicilié
 
 Pour réaliser cet exemple, les étapes sont les suivantes :
 
-1. Dans **[!UICONTROL Données à extraire]**, définissez un comptage de la clé primaire (comme dans l&#39;exemple précédent). Ajoutez le champ **[!UICONTROL Genre]** en colonne de sortie. Cochez l&#39;option **[!UICONTROL Grouper]** de la colonne **[!UICONTROL Genre]**. Ainsi, les destinataires seront regroupés par genre.
+1. Dans **[!UICONTROL Données à extraire]**, définissez un nombre pour la clé primaire (comme illustré dans l’exemple précédent). Ajoutez la variable **[!UICONTROL Genre]** dans la colonne de sortie. Vérifiez les **[!UICONTROL Groupe]** dans le **[!UICONTROL Genre]** colonne . Ainsi, les destinataires seront regroupés par sexe.
 
    ![](assets/query_editor_nveau_27.png)
 

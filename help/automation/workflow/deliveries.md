@@ -6,8 +6,8 @@ feature: Workflows
 role: User, Admin
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 100%
+source-wordcount: '317'
+ht-degree: 55%
 
 ---
 
@@ -28,12 +28,12 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
   <tr> 
    <td> <span class="uicontrol">Agrégats du reporting</span> <br /> </td> 
    <td> <span class="uicontrol">reportingAggregates</span> <br /> </td> 
-   <td> Ce workflow met à jour les agrégats utilisés dans les rapports. Par défaut, il se déclenche tous les jours à 2H00.<br /> </td> 
+   <td> Ce workflow met à jour les agrégats utilisés dans les rapports. Par défaut, il se déclenche tous les jours à 2h00.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Facturation</span> <br /> </td> 
    <td> <span class="uicontrol">billing</span> <br /> </td> 
-   <td> Ce workflow transmet par email le rapport d'activité du système à l'opérateur 'billing'. Par défaut, il se déclenche tous les 25 du mois.<br /> </td> 
+   <td> Ce workflow transmet par email le rapport d'activité du système à l'opérateur 'billing'. Par défaut, il se déclenche le 25 de chaque mois.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Gestion des alias</span> <br /> </td> 
@@ -43,7 +43,7 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
   <tr> 
    <td> <span class="uicontrol">Mise à jour pour la délivrabilité</span> <br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td> Ce workflow permet de créer la liste des règles de qualification des mails rebonds, ainsi que la liste des domaines et des MX dans la plateforme. Ce workflow ne fonctionne que si le port HTTPS est ouvert. Ces listes ne sont pas mises à jour tant que le module Délivrabilité n'est pas installé.<br /> </td> 
+   <td> Ce workflow permet de créer la liste des règles de qualification des mails rebonds, ainsi que la liste des domaines et des MX dans la plateforme. Ce workflow ne fonctionne que si le port HTTPS est ouvert. Ces listes ne sont pas mises à jour, sauf si le module Délivrabilité est installé.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Nettoyage de la base</span> <br /> </td> 
@@ -63,12 +63,12 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
   <tr> 
    <td> <span class="uicontrol">Prévisionnel</span> <br /> </td> 
    <td> <span class="uicontrol">forecasting</span> <br /> </td> 
-   <td> Ce workflow effectue l’analyse des diffusions enregistrées dans le calendrier prévisionnel (création des logs prévisionnels). Par défaut, il se déclenche tous les jours à 1h00.<br /> </td> 
+   <td> Ce workflow analyse les diffusions enregistrées dans le calendrier prévisionnel (création des logs prévisionnels). Par défaut, il se déclenche tous les jours à 1h00.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Tracking</span> <br /> </td> 
    <td> <span class="uicontrol">tracking</span> <br /> </td> 
-   <td> Ce workflow réalise la récupération et la consolidation des informations de tracking. Il assure également le re-calcul des statistiques de tracking et de diffusions, notamment celles utilisées par les workflows d'archivage de Message Center. Par défaut, il se déclenche toutes les heures. <br /> </td> 
+   <td> Ce workflow effectue la récupération et la consolidation des informations de tracking. Il assure également le re-calcul des statistiques de tracking et de diffusions, notamment celles utilisées par les workflows d'archivage de Message Center. Par défaut, il est déclenché une fois par heure. <br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -7,8 +7,8 @@ role: User
 exl-id: 12777107-5ccc-4f19-9dcd-8f6cade3ee98
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 100%
+source-wordcount: '412'
+ht-degree: 83%
 
 ---
 
@@ -36,7 +36,7 @@ Dans l&#39;exemple suivant, l&#39;intersection a pour but de calculer les destin
 
    Dans cet exemple, les requêtes ciblent respectivement les destinataires masculins, les destinataires vivant à Paris et les destinataires âgés de 18 à 30 ans.
 
-1. Paramétrez l&#39;intersection. Pour cela, sélectionnez la méthode de réconciliation **[!UICONTROL Uniquement les clés]** dans la mesure où les populations issues des requêtes contiennent des données homogènes.
+1. Configurez l’intersection. Pour ce faire, sélectionnez l’option **[!UICONTROL Uniquement les clés]** méthode de réconciliation, car les populations issues des requêtes contiennent des données homogènes.
 1. Si vous avez ajouté des données additionnelles au niveau des requêtes, vous pouvez éventuellement choisir de ne conserver que celles qui sont communes en cochant la case correspondante.
 1. Si vous souhaitez utiliser le reste des données (correspondant aux requêtes, mais pas à leur intersection), cochez la case **[!UICONTROL Générer le complémentaire]**.
 1. Insérez une activité de mise à jour de liste après le résultat de l&#39;intersection. Insérez également une mise à jour de liste après le complémentaire dans le cas où vous souhaiteriez également l&#39;exploiter.
@@ -59,4 +59,4 @@ Chacun des événements entrants doit spécifier une cible définie par ces para
 * schema
 * recCount
 
-Ce triplet de valeurs identifie la cible résultant de l&#39;intersection. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement **[!UICONTROL nms:recipient]**) et **[!UICONTROL recCount]** est le nombre d&#39;éléments dans la table.
+Ce triplet de valeurs identifie la cible résultant de l’intersection. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (généralement **[!UICONTROL nms:recipient]**) et **[!UICONTROL recCount]** est le nombre d’éléments dans le tableau.

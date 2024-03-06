@@ -24,7 +24,7 @@ Vous pouvez utiliser d’autres mappings de ciblage pour vos diffusions ou crée
 
 Adobe Campaign est fourni avec les mappings de ciblage intégrés suivants :
 
-| Nom | Utilisation à | Schéma |
+| Nom | Utilisation | Schéma |
 |---|---|---|
 | Destinataires | Diffuser aux destinataires (tableau de destinataires intégré) | nms:recipient |
 | Visiteurs | Diffuser aux visiteurs dont les profils ont été collectés par le biais d’une recommandation (marketing viral), par exemple. | mns:visitor |

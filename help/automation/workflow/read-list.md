@@ -8,7 +8,7 @@ exl-id: 91c87f8f-bdd2-4ca1-94c2-ec9e7affc1a0
 source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
@@ -34,7 +34,7 @@ Une fois la sélection de la liste paramétrée, vous pouvez ajouter un filtre e
 >
 >Pour pouvoir créer un filtre dans une activité de lecture de liste, la liste concernée doit être de type &quot;fichier&quot;.
 
-Les listes peuvent être créées directement dans Adobe Campaign à partir du lien **[!UICONTROL Profils et Cibles > Listes]** de la page d&#39;accueil. Elles peuvent également être créées dans un workflow en utilisant l&#39;activité **[!UICONTROL Mise à jour de liste]**.
+Les listes peuvent être créées directement dans Adobe Campaign via le **[!UICONTROL Profils et cibles > Listes]** lien de la page d’accueil. Ils peuvent également être créés dans un workflow à l’aide de la fonction **[!UICONTROL Mise à jour de liste]** activité.
 
 **Exemple : exclure une liste d&#39;adresses d&#39;un envoi**
 
@@ -62,7 +62,7 @@ Les profils contenus dans le dossier **NvxContacts** doivent être ciblés par u
 
 1. Dans le champ **[!UICONTROL Ensemble exclu]**, sélectionnez l&#39;activité **[!UICONTROL Lecture de liste]** : ce sont les données contenues dans cette activité qui sont à exclure de l&#39;ensemble principal.
 
-   Dans notre exemple, il s&#39;agit d&#39;une exclusion sur jointure : les données contenues dans la liste seront rapprochées des données de l&#39;ensemble principal via le champ qui contient l&#39;adresse email. Pour paramétrer la jointure, sélectionnez **[!UICONTROL Jointures]** dans le champ **[!UICONTROL Changement de dimension]**.
+   Dans notre exemple, nous avons une exclusion sur jointure : les données contenues dans la liste seront réconciliées avec les données de l&#39;ensemble principal via le champ contenant l&#39;adresse email. Pour configurer la jointure, sélectionnez **[!UICONTROL Jointures]** dans le **[!UICONTROL Changement de dimension]** champ .
 
    ![](assets/s_advuser_list_read_sample_4.png)
 

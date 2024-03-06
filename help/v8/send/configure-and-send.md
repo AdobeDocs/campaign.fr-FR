@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
 source-git-commit: 3e95a56825a143a4457ab7ee242208d7daaeb414
 workflow-type: tm+mt
-source-wordcount: '1217'
-ht-degree: 100%
+source-wordcount: '1221'
+ht-degree: 92%
 
 ---
 
@@ -55,17 +55,17 @@ Pour équilibrer la charge, vous pouvez répartir les envois en plusieurs lots. 
 
 1. Pour configurer des vagues, vous pouvez effectuer l&#39;une des opérations suivantes :
 
-   * Définissez la taille de chaque vague. Par exemple, si vous saisissez **[!UICONTROL 30 %]** dans le champ correspondant, chaque vague représentera 30 % des messages inclus dans l&#39;envoi, à l&#39;exception de la dernière vague qui représentera 10 % des messages.
+   * Définissez la taille de chaque vague. Par exemple, si vous saisissez **[!UICONTROL 30 %]** dans le champ correspondant, chaque vague représentera 30 % des messages inclus dans l’envoi, à l’exception de la dernière vague qui représentera 10 % des messages.
 
-     Dans le champ **[!UICONTROL Période]**, définissez le délai entre le démarrage de deux vagues consécutives. Par exemple, si vous saisissez **[!UICONTROL 2j]**, la première vague démarre immédiatement, la deuxième démarre dans deux jours, la troisième dans quatre jours, etc.
+     Dans le **[!UICONTROL Période]** , indiquez le délai entre le démarrage de deux vagues consécutives. Par exemple, si vous saisissez **[!UICONTROL 2 j]**, la première vague démarre immédiatement, la deuxième démarre dans deux jours, la troisième dans quatre jours, etc.
 
      ![](assets/delivery-waves-size.png)
 
    * Définissez un calendrier pour l&#39;envoi de chaque vague.
 
-     Dans la colonne **[!UICONTROL Démarrage]**, indiquez le délai entre le démarrage de deux vagues consécutives. Dans la colonne **[!UICONTROL Taille]**, saisissez un nombre fixe ou un pourcentage.
+     Dans la colonne **[!UICONTROL Début]**, indiquez le délai entre le démarrage de deux vagues consécutives. Dans la colonne **[!UICONTROL Taille]**, saisissez un nombre fixe ou un pourcentage.
 
-     Dans l&#39;exemple ci-dessous, la première vague représente 25 % du nombre total des messages inclus dans l&#39;envoi et démarre immédiatement. Les deux vagues suivantes terminent l&#39;envoi et sont définies pour démarrer à six heures d&#39;intervalle.
+     Dans l’exemple ci-dessous, la première vague représente 25 % du nombre total des messages inclus dans l’envoi et démarre immédiatement. Les deux vagues suivantes terminent l’envoi et sont définies pour démarrer à six heures d’intervalle.
 
      ![](assets/delivery-waves-calendar.png)
 
@@ -75,9 +75,9 @@ Pour équilibrer la charge, vous pouvez répartir les envois en plusieurs lots. 
    >
    >Veillez à ce que les dernières vagues ne dépassent pas la date limite d&#39;envoi qui est définie dans l&#39;onglet **[!UICONTROL Validité]**.Sinon, certains messages peuvent ne pas être envoyés.
    >
-   >Lors de la configuration des dernières vagues, veillez également à prévoir assez de temps pour les reprises. <!--See [this section]().-->
+   >Vous devez également prévoir suffisamment de temps pour les reprises lors de la configuration des dernières vagues. <!--See [this section]().-->
 
-1. Pour suivre vos envois, accédez aux logs de diffusion. Pour plus d’informations, consultez [cette page](send.md)<!--ref TBC-->.
+1. Pour suivre vos envois, accédez aux logs de diffusion. Voir [cette page](send.md)<!--ref TBC-->.
 
    Vous pouvez visualiser les diffusions qui ont déjà été envoyées dans les vagues traitées (statut **[!UICONTROL Envoyé]**) et celles à envoyer dans les vagues restantes (statut **[!UICONTROL En attente]**).
 
@@ -89,7 +89,7 @@ Les deux exemples ci-dessous constituent les cas d&#39;utilisation les plus fré
 
   Pour éviter que les emails soient marqués comme spam, vous pouvez augmenter progressivement le volume envoyé à l&#39;aide de vagues. Cela permet d&#39;entamer la phase de démarrage en douceur et de réduire le nombre total d&#39;adresses invalides.
 
-  Pour ce faire, utilisez l&#39;option **[!UICONTROL Planifier les vagues selon un calendrier]**. Par exemple, définissez la première vague sur 10 %, la deuxième sur 15 %, etc.
+  Pour ce faire, utilisez l’option **[!UICONTROL Planifier les vagues selon un calendrier]**. Par exemple, définissez la première vague sur 10 %, la deuxième sur 15 %, etc.
 
   ![](assets/delivery-waves-ex-ramp-up.png)
 
@@ -99,7 +99,7 @@ Les deux exemples ci-dessous constituent les cas d&#39;utilisation les plus fré
 
   Grâce aux vagues, vous pouvez limiter le nombre des messages à 20 par jour, ce qui correspond à la capacité de traitement quotidien d&#39;un centre d&#39;appels.
 
-  Pour ce faire, sélectionnez l&#39;option **[!UICONTROL Planifier plusieurs vagues de même taille]**. Saisissez **[!UICONTROL 20]** pour la taille de la vague et **[!UICONTROL 1j]** dans le champ **[!UICONTROL Période]**.
+  Pour ce faire, sélectionnez l’option **[!UICONTROL Planification de plusieurs vagues de même taille]**. Saisissez **[!UICONTROL 20]** comme taille de vague et **[!UICONTROL 1 j]** dans le champ **[!UICONTROL Période]**.
 
   ![](assets/delivery-waves-ex-call-center.png)
 
@@ -165,7 +165,7 @@ Elle vous permet de différer la diffusion à une date ultérieure ou enregistre
 
   Cliquez sur le bouton **[!UICONTROL Envoyer]** et choisissez **[!UICONTROL Différer la diffusion]** puis lancez l&#39;analyse et confirmez l&#39;envoi. Une fois l&#39;analyse terminée, la cible de la diffusion est prête et les messages seront automatiquement envoyés à la date indiquée.
 
-Les dates et heures sont entendues dans le fuseau horaire de l&#39;opérateur courant. La liste déroulante **[!UICONTROL Fuseau horaire]** située sous la zone de saisie de la date de contact permet d&#39;adapter automatiquement la date et l&#39;heure saisie dans le fuseau horaire sélectionné.
+Les dates et heures sont exprimées dans le fuseau horaire de l&#39;opérateur courant. La variable **[!UICONTROL Fuseau horaire]** la liste déroulante située sous le champ de saisie de la date de contact permet de convertir automatiquement la date et l&#39;heure saisie dans le fuseau horaire sélectionné.
 
 Ainsi, si vous planifiez une diffusion pour qu&#39;elle s&#39;exécute automatiquement à 8h heure de Londres, l&#39;heure est automatiquement convertie dans le fuseau sélectionné :
 

@@ -6,9 +6,9 @@ role: Admin
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
 source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
-workflow-type: ht
-source-wordcount: '379'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ Le Panneau de contrôle est directement accessible à partir d&#39;Adobe Experi
 
 ## Questions fréquentes sur le panneau de contrôle {#ac-control-faq}
 
-[Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=fr#control-panel){target="_blank"} pour accéder aux questions fréquentes sur le panneau de contrôle Campaign.
+[Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#control-panel){target="_blank"} pour accéder aux questions fréquentes sur le panneau de contrôle Campaign.
 
 ## Gestion SFTP {#ac-control-sftp}
 

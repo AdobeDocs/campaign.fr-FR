@@ -7,8 +7,8 @@ role: Developer
 exl-id: 14160de5-23d2-4f53-84c6-0f9e3b1dcf21
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 100%
+source-wordcount: '1268'
+ht-degree: 91%
 
 ---
 
@@ -64,7 +64,7 @@ Cliquez sur **[!UICONTROL OK]** pour fermer l&#39;assistant de création, puis d
 
 ## Variables {#variables}
 
-Les variables sont des propriétés libres des objets **[!UICONTROL instance]**, **[!UICONTROL task]** et **[!UICONTROL event]**. Les types JavaScript autorisés pour ces variables sont **[!UICONTROL string]**,**[!UICONTROL number]** et **[!UICONTROL Date]**.
+Les variables sont les propriétés libres de la variable **[!UICONTROL instance]**, **[!UICONTROL tâche]** et **[!UICONTROL event]** objets. Les types JavaScript autorisés pour ces variables sont : **[!UICONTROL string]**, **[!UICONTROL nombre]** et **[!UICONTROL Date]**.
 
 ### Les variables d&#39;instances {#instance-variables}
 
@@ -84,7 +84,7 @@ Les variables d&#39;événements (**[!UICONTROL vars.xxx]**) permettent l&#39;é
 
 Les événements sont les variables les plus communément utilisées et doivent être préférées aux variables d&#39;instances.
 
-Certaines variables d’événement sont modifiées ou lues par les différentes activités. Il s’agit de variables de type chaîne. Par exemple, un export définit la variable **[!UICONTROL vars.filename]** avec le nom complet du fichier qui vient d’être exporté. Toutes ces variables lues ou modifiées sont documentées dans [À propos des activités](activities.md), dans les sections **Paramètres d’entrée** et **Paramètres de sortie** des activités.
+Certaines variables d&#39;événements sont modifiées ou lues par les différentes activités. Il s’agit de variables de type chaîne. Par exemple, un export définit la variable **[!UICONTROL vars.filename]** avec le nom complet du fichier qui vient d’être exporté. Toutes ces variables lues ou modifiées sont documentées dans [À propos des activités](activities.md), dans les sections **Paramètres d’entrée** et **Paramètres de sortie** des activités.
 
 ### Cas pratiques {#example}
 
@@ -194,7 +194,7 @@ Vous pouvez modifier une propriété d&#39;une activité au moment de l&#39;exé
 
 La plupart des propriétés des activités peuvent être calculées dynamiquement, soit en utilisant un template JavaScript, soit parce que les propriétés du workflow permettent explicitement de calculer la valeur par un script.
 
-Néanmoins, pour d&#39;autres propriétés, vous devez utiliser le script d&#39;initialisation. Ce script est évalué avant d&#39;exécuter la tâche. La variable **[!UICONTROL activity]** référence l&#39;activité correspondant à la tâche. Les propriétés de cette activité peuvent être modifiées et n&#39;affecteront que cette tâche.
+Toutefois, pour d’autres propriétés, vous devez utiliser le script d’initialisation. Ce script est évalué avant l’exécution de la tâche. La variable **[!UICONTROL activité]** référence l’activité correspondant à la tâche. Les propriétés de cette activité peuvent être modifiées et n’affecteront que cette tâche.
 
 **Rubriques connexes**
 [Exemples de code JavaScript dans les workflows](javascript-in-workflows.md)

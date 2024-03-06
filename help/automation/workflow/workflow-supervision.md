@@ -6,8 +6,8 @@ feature: Workflows
 exl-id: 362b347b-f914-4ebf-84d7-9989aef28a82
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 100%
+source-wordcount: '650'
+ht-degree: 90%
 
 ---
 
@@ -29,7 +29,7 @@ Pour suivre le statut d&#39;un ensemble de workflows, vous devez procéder comme
 
 >[!NOTE]
 >
->Outre le workflow, la **carte thermique des workflows Campaign** vous permet d’analyser dans le détail les workflows en cours d’exécution. Voir à ce sujet la [section dédiée](heatmap.md).
+>En plus du workflow, Campaign **Carte thermique des workflows** vous permet d’analyser dans le détail les workflows en cours d’exécution. Pour plus de détails, reportez-vous à la [section dédiée](heatmap.md).
 >
 >Pour plus d’informations sur la **surveillance de l’exécution des workflows**, consultez [cette section](monitor-workflow-execution.md).
 
@@ -37,7 +37,7 @@ Pour suivre le statut d&#39;un ensemble de workflows, vous devez procéder comme
 
 Le dossier de workflows que nous allons suivre est le dossier **&quot;CustomWorkflows&quot;** stocké dans le noeud : **Administration > Exploitation > Workflows Techniques**. Ce dossier contient un ensemble de workflows métiers.
 
-Le **workflow de suivi** est stocké à la racine du dossier Workflows Techniques. Le libellé utilisé est **&quot;Suivi&quot;**.
+La variable **Workflow de surveillance** est stocké à la racine du dossier Workflows techniques . Le libellé utilisé est : **&quot;Surveillance&quot;**.
 
 Le schéma suivant montre l&#39;ordonnancement des activités :
 
@@ -121,7 +121,7 @@ Une diffusion est envoyée au superviseur **si au moins une des trois variables 
 
 ![](assets/uc_monitoring_workflow_test.png)
 
-L&#39;activité &quot;Attente&quot; peut être paramétrée pour relancer le workflow de suivi à intervalle régulier. Pour ce cas pratique, **la durée d&#39;attente est fixée à une heure**.
+L&#39;activité &quot;Attente&quot; peut être paramétrée pour relancer le workflow de monitoring à intervalles réguliers. Pour ce cas pratique, **le temps d’attente est défini sur une heure.**.
 
 ![](assets/uc_monitoring_workflow_attente.png)
 

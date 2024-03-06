@@ -7,8 +7,8 @@ role: User
 exl-id: f79a979d-bd1d-4a86-8844-563886692941
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 100%
+source-wordcount: '1172'
+ht-degree: 96%
 
 ---
 
@@ -172,6 +172,6 @@ Chacun des événements entrants doit spécifier une cible définie par ces para
 * schema
 * recCount
 
-Ce triplet de valeurs identifie la cible résultant de la déduplication. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d&#39;éléments dans la table.
+Ce triplet de valeurs identifie la cible résultant de la déduplication. **[!UICONTROL tableName]** est le nom de la table qui enregistre les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d’éléments dans le tableau.
 
 La transition associée au complémentaire possède les mêmes paramètres.

@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 2a7ae88e-d47f-416b-84cd-986ab9be6aef
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 100%
+source-wordcount: '1412'
+ht-degree: 98%
 
 ---
 
@@ -220,4 +220,4 @@ Vous pouvez importer des objets supprimés dans votre CRM vers Adobe Campaign.
 
 Pour supprimer des objets dans votre CRM, vous devez indiquer la clé primaire des éléments distants à effacer.
 
-L&#39;onglet **[!UICONTROL Comportement]** vous permet d&#39;activer le traitement des rejets. Cette option génère une seconde transition en sortie de l&#39;activité **[!UICONTROL Connecteur CRM]**. Voir à ce sujet la section [Traitement des erreurs](#error-processing).
+La variable **[!UICONTROL Comportement]** vous permet d&#39;activer le traitement des rejets. Cette option génère une seconde transition de sortie pour la variable **[!UICONTROL Connecteur CRM]** activité. Voir à ce sujet la section [Traitement des erreurs](#error-processing).

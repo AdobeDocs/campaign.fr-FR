@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 8bcaf367-5b1f-4d31-80c9-c77df43c6ed1
 source-git-commit: d4e28ddf6081881f02042416aa8214761ea42be9
 workflow-type: tm+mt
-source-wordcount: '1379'
-ht-degree: 100%
+source-wordcount: '1387'
+ht-degree: 83%
 
 ---
 
@@ -60,7 +60,7 @@ Avant de commencer la construction d’un workflow, pensez à définir les super
 
 Vérifiez régulièrement l’onglet **[!UICONTROL Supervision]** pour connaître le statut des workflows actifs. Pour plus d&#39;informations, consultez la section [Supervision de l’instance](monitor-workflow-execution.md#instance-supervision).
 
-La carte thermique des workflows permet aux administrateurs de la plateforme Adobe Campaign de surveiller la charge sur l’instance et de planifier les workflows en conséquence. Voir à ce sujet [Surveillance des workflows](heatmap.md).
+La carte thermique des workflows permet aux administrateurs de la plateforme Adobe Campaign de surveiller la charge sur l’instance et de planifier les workflows en conséquence. Voir à ce sujet la section [Surveillance des workflows](heatmap.md).
 
 ## Activités {#using-activities}
 
@@ -72,11 +72,11 @@ La carte thermique des workflows permet aux administrateurs de la plateforme Ado
 
 Lors du développement de votre workflow, toutes les activités seront dotées d’un nom, tout comme les objets Adobe Campaign. Bien que ce nom soit généré par l’outil, il est recommandé d’attribuer à une activité un nom explicite lors de sa configuration. Si vous le faites plus tard, le workflow peut être interrompu si les activités utilisent le nom d’activités précédentes et la mise à jour des noms risque d’être difficile.
 
-Le nom des activités figure dans l’onglet **[!UICONTROL Avancé]**. Ne conservez pas le nom **[!UICONTROL query]**, **[!UICONTROL query1]** ou **[!UICONTROL query11]**. Attribuez aux activités un nom explicite comme **[!UICONTROL querySubscribedRecipients]**. Ce nom s’affiche dans le journal et les logs SQL, le cas échéant, et permet de déboguer le workflow lors de sa configuration.
+Le nom de l’activité se trouve dans la variable **[!UICONTROL Avancé]** . Ne les laissez pas nommées **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, mais attribuez-leur des noms explicites tels que **[!UICONTROL querySubscribedRecipients]**. Ce nom apparaît dans le journal et, le cas échéant, dans les journaux SQL. Il permet de déboguer le workflow lors de sa configuration.
 
 ### Premières et dernières activités {#first-and-last-activities}
 
-* Commencez toujours votre workflow par une activité **[!UICONTROL Début]** ou une activité **[!UICONTROL Planificateur]**. Lorsque cela est pertinent, vous pouvez également utiliser une activité **[!UICONTROL Signal externe]**.
+* Toujours démarrer votre workflow avec une **[!UICONTROL Début]** une activité ou une **[!UICONTROL Planificateur]** activité. Lorsque cela est pertinent, vous pouvez également utiliser une **[!UICONTROL Signal externe]** activité.
 * Lors de la construction de votre workflow, n&#39;utilisez qu&#39;une seule **** activité Planificateur par branche. Si une même branche d&#39;un workflow comporte plusieurs planificateurs (liés les uns aux autres), le nombre de tâches à exécuter sera multiplié de manière exponentielle, ce qui surchargerait considérablement la base. Cette règle s’applique également à toutes les activités comportant un onglet **[!UICONTROL Planification &amp; historique]**. En savoir plus sur la [planification](scheduler.md).
 
   ![](assets/wf-scheduler.png)
@@ -85,13 +85,13 @@ Le nom des activités figure dans l’onglet **[!UICONTROL Avancé]**. Ne conser
 
 ### Code JavaScript dans une activité {#javascript-within-an-activity}
 
-Vous souhaiterez peut-être ajouter du code JavaScript lors de l&#39;initialisation d&#39;une activité de workflow. Vous pouvez le faire dans l&#39;onglet **[!UICONTROL Avancé]** d&#39;une activité.
+Vous pouvez ajouter du code JavaScript lors de l&#39;initialisation d&#39;une activité de workflow. Cela peut être effectué dans le **[!UICONTROL Avancé]** de l’activité.
 
 Pour repérer plus facilement le workflow, il est conseillé d&#39;utiliser deux tirets avant et après le libellé de l&#39;activité, comme dans l&#39;exemple suivant : -- Mon libellé --.
 
 ### Signal {#signal}
 
-La plupart du temps, vous ne saurez pas d&#39;où vient l&#39;appel d&#39;un signal. Pour éviter ce problème, utilisez le champ **[!UICONTROL Commentaire]** de l&#39;onglet **[!UICONTROL Avancé]** de l&#39;activité de signal pour documenter l&#39;origine attendue d&#39;un signal pour l&#39;activité en question.
+La plupart du temps, vous ne saurez pas d’où provient le signal. Pour éviter ce problème, utilisez la méthode **[!UICONTROL Commentaire]** dans le champ **[!UICONTROL Avancé]** de l’activité Signal afin de documenter l’origine attendue d’un signal pour cette activité.
 
 ## Mises à jour des workflows {#workflow-update}
 
@@ -113,7 +113,7 @@ L&#39;option **Conserver le résultat des populations intermédiaires entre deux
 
 Elle est disponible dans l&#39;onglet **[!UICONTROL Général]** des propriétés du workflow et peut être utilisée à des fins de développement et de test pour surveiller les données et vérifier les résultats. Vous pouvez utiliser cette option dans les environnements de développement, mais ne l&#39;utilisez jamais dans les environnements de production. La conservation des tables temporaires peut entraîner une augmentation significative de la taille de la base de données et, par la suite, l&#39;atteinte de la limite de taille. De plus, cela ralentira la sauvegarde.
 
-Seules les tables de travail de la dernière exécution du workflow sont conservées. Celles des exécutions précédentes sont purgées par le workflow de **[!UICONTROL nettoyage]** qui s&#39;exécute tous les jours.
+Seules les tables de travail de la dernière exécution du workflow sont conservées. Les tables de travail des exécutions précédentes sont purgées par la fonction **[!UICONTROL cleanup]** qui s’exécute tous les jours.
 
 >[!CAUTION]
 >
@@ -124,7 +124,7 @@ Seules les tables de travail de la dernière exécution du workflow sont conserv
 
 L&#39;option **Enregistrer les requêtes SQL dans le journal** est disponible dans l&#39;onglet **[!UICONTROL Exécution]** des propriétés de workflow. Cette option enregistre toutes les requêtes SQL des différentes activités et permet de voir ce qui est réellement exécuté par la plateforme. Toutefois, cette option ne doit être utilisée que **temporairement** pendant le développement et **non activée pendant la production**.
 
-Une bonne pratique consiste à purger les logs lorsqu&#39;ils ne sont plus nécessaires. L’historique d’un workflow n’est pas purgé automatiquement : tous les messages sont conservés par défaut. Vous pouvez purger l’historique depuis le menu **[!UICONTROL Fichier > Actions]** ou en cliquant sur le bouton Actions situé dans la barre d’outils au-dessus de la liste. Choisissez Purge de l’historique.
+Une bonne pratique consiste à purger les logs lorsqu&#39;ils ne sont plus nécessaires. L’historique d’un workflow n’est pas purgé automatiquement : tous les messages sont conservés par défaut. L’historique peut être purgé via le **[!UICONTROL Fichier > Actions]** ou en cliquant sur le bouton Actions situé dans la barre d’outils au-dessus de la liste. Sélectionnez Purge de l’historique.
 Pour savoir comment purger les logs, consultez cette [documentation](start-a-workflow.md).
 
 ### Planification des workflows {#workflow-planning}

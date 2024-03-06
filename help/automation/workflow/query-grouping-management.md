@@ -7,8 +7,8 @@ role: User, Data Engineer
 exl-id: 6fc4ef67-5d75-4c8c-8bcc-41e3ed155ca2
 source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 100%
+source-wordcount: '304'
+ht-degree: 81%
 
 ---
 
@@ -36,17 +36,17 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
    ![](assets/query_editor_02.png)
 
-1. Dans la fenêtre **[!UICONTROL Données à extraire]**, sélectionnez les champs **[!UICONTROL Domaine de l&#39;email]** et **[!UICONTROL Clé primaire]**. Faites un comptage du champ **[!UICONTROL Clé primaire]**.
+1. Dans le **[!UICONTROL Données à extraire]** , sélectionnez l’option **[!UICONTROL Domaine de l&#39;email]** et **[!UICONTROL Clé Principal]** des champs. Exécutez un comptage sur la variable **[!UICONTROL Clé Principal]** champ .
 
 1. Sélectionnez l&#39;option **[!UICONTROL Gérer les groupements (GROUP BY + HAVING)]**.
 
    ![](assets/query_editor_nveau_29.png)
 
-1. Dans la fenêtre **[!UICONTROL Tris]**, ordonnez les domaines d&#39;email en tri descendant. Pour cela, cochez **[!UICONTROL Oui]** dans la colonne **[!UICONTROL Tri descendant]**. Cliquez sur **[!UICONTROL Suivant]**.
+1. Dans le **[!UICONTROL Tri]** , triez les domaines d’email dans l’ordre décroissant. Pour ce faire, cochez la case **[!UICONTROL Oui]** dans le **[!UICONTROL Tri descendant]** colonne . Cliquez sur **[!UICONTROL Suivant]**.
 
    ![](assets/query_editor_nveau_70.png)
 
-1. Dans **[!UICONTROL Filtrage des données]**, sélectionnez **[!UICONTROL Critères de filtrage]**, puis dans la fenêtre **[!UICONTROL Elément de la cible]**, cliquez sur **[!UICONTROL Suivant]**.
+1. Dans **[!UICONTROL Filtrage des données]**, sélectionnez **[!UICONTROL Critères de filtrage]**. Accédez au **[!UICONTROL Eléments cibles]** puis cliquez sur **[!UICONTROL Suivant]**.
 1. Dans la fenêtre **[!UICONTROL Groupement des données]**, sélectionnez le **[!UICONTROL Domaine de l&#39;email]** en cliquant sur **[!UICONTROL Ajouter]**.
 
    C&#39;est dans cette fenêtre que s&#39;opère le regroupement (GROUP BY) : cette fenêtre ne s&#39;affiche que si l&#39;option **[!UICONTROL Gérer les groupements (GROUP BY + HAVING)]** a été sélectionnée.

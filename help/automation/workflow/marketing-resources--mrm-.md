@@ -8,7 +8,7 @@ hidefromtoc: true
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '83'
-ht-degree: 100%
+ht-degree: 77%
 
 ---
 
@@ -37,7 +37,7 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
   <tr> 
    <td> <span class="uicontrol">Traitements dans les forums de discussion</span> <br /> </td> 
    <td> <span class="uicontrol">newsgroupMgt</span> <br /> </td> 
-   <td> Ce workflow gère l'envoi des notifications dans les forums de discussion. Il se déclenche lorsqu'il reçoit un signal de validation.<br /> </td> 
+   <td> Ce workflow gère l'envoi des notifications dans les forums de discussion. Elle est déclenchée lorsqu’un signal de validation est reçu.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

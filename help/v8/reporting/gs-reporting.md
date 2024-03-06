@@ -7,8 +7,8 @@ level: Beginner
 exl-id: f931fc0d-12c1-4bff-a4f2-153e8d91c339
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 100%
+source-wordcount: '311'
+ht-degree: 92%
 
 ---
 
@@ -46,10 +46,10 @@ Adobe Campaign propose un ensemble d&#39;outils de reporting répertoriés dans
 
   ![](assets/desc-analysis-report.png)
 
-  ![](../assets/do-not-localize/book.png) Le rapport d&#39;analyse descriptive d’une campagne est présenté dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target="_blank"}
+  ![](../assets/do-not-localize/book.png) Le rapport d’analyse descriptive d’une campagne est présenté dans la section [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target="_blank"}
 
 * **Rapports personnalisés**
 
   Utilisez Adobe Campaign pour créer des rapports sur les données de la base de données. Une fois créés, rendez-les accessibles dans les contextes appropriés.
 
-  ![](../assets/do-not-localize/book.png) Les étapes de création d&#39;un rapport sont détaillées dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=fr){target="_blank"}. La création de rapports personnalisés est réservée aux utilisateurs avancés.
+  ![](../assets/do-not-localize/book.png) Les étapes de création d&#39;un rapport sont présentées dans la section [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=fr){target="_blank"}. La création de rapports personnalisés est réservée aux utilisateurs avancés.

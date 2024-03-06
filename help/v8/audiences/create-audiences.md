@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 6fbe5616-7b8b-4504-988b-2bbbfd062548
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 100%
+source-wordcount: '866'
+ht-degree: 96%
 
 ---
 
@@ -79,7 +79,7 @@ Sélectionnez l&#39;option **[!UICONTROL Recréer la liste]** pour supprimer le 
 
 Si vous décochez l&#39;option **[!UICONTROL Ne pas conserver trace de ce traitement dans la base de données]**, vous pouvez sélectionner (ou créer) le dossier d&#39;exécution où seront stockées les informations relatives à ce traitement.
 
-La section supérieure de la fenêtre vous permet de suivre l&#39;exécution. Le bouton **[!UICONTROL Arrêter]** vous permet de stopper l&#39;opération. Les contacts déjà traités seront toutefois associés à la liste.
+La section supérieure de la fenêtre permet de suivre l&#39;exécution. La variable **[!UICONTROL Arrêter]** vous permet d’arrêter le processus. Les contacts déjà traités seront associés à la liste.
 
 Une fois l&#39;exécution terminée, accédez au menu **[!UICONTROL Profils et cibles > Listes]** et sélectionnez la liste : l&#39;onglet **[!UICONTROL Contenu]** affiche les profils associés à cette liste.
 

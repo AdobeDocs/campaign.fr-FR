@@ -8,7 +8,7 @@ exl-id: 9faf7ee7-07c1-415b-b234-a945994792c7
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -41,7 +41,7 @@ Pour créer le workflow, procédez comme suit :
    ![](assets/uc_dataupdate_test.png)
 
 1. Ajoutez une activité **Fin** au branchement **Non**. Ainsi, rien ne sera exécuté si le workflow est déjà en cours d&#39;exécution.
-1. Ajoutez les activités souhaitées au branchement **Oui**. Dans le cas présent, il s&#39;agit des activités **Requête** et **Mise à jour des données**.
+1. Ajoutez les activités souhaitées au **Oui** double. Dans notre cas, **Requête** et **Mettre à jour les données** activités.
 1. Ouvrez la première activité, puis ajoutez la commande **instance.vars.isRunning = true** dans l&#39;onglet **[!UICONTROL Avancé]**. Ainsi, la variable d&#39;instance est définie comme étant en cours d&#39;exécution.
 
    ![](assets/uc_dataupdate_query.png)

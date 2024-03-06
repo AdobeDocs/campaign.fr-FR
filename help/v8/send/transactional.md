@@ -8,7 +8,7 @@ exl-id: 06fdb279-3776-433f-8d27-33d016473dee
 source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
 source-wordcount: '1560'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -118,7 +118,7 @@ Lorsque vous avez défini le contenu de votre message, vous pouvez intégrer les
 ![](assets/messagecenter_create_content.png)
 
 * Tous les champs de personnalisation proviennent de la payload.
-* Il est possible de référencer un ou plusieurs blocs de personnalisation dans un message transactionnel. <!--The block content will be added to the delivery content during the publication to the execution instance.-->
+* Vous pouvez référencer un ou plusieurs blocs de personnalisation dans un message transactionnel. <!--The block content will be added to the delivery content during the publication to the execution instance.-->
 
 Pour insérer des balises de personnalisation dans le corps d&#39;un message email, procédez comme suit :
 
@@ -128,7 +128,7 @@ Pour insérer des balises de personnalisation dans le corps d&#39;un message ema
 
    ![](assets/messagecenter_create_custo_1.png)
 
-1. Complétez la balise selon la syntaxe suivante : .**nom de l&#39;élément**.@**nom de l&#39;attribut** comme illustré ci-dessous.
+1. Renseignez la balise en utilisant la syntaxe suivante : **nom de l’élément**.@**nom de l’attribut** comme illustré ci-dessous.
 
    ![](assets/messagecenter_create_custo_2.png)
 

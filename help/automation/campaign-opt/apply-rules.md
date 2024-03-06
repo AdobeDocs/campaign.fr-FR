@@ -6,8 +6,8 @@ feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
 source-git-commit: a8568e0c1e9af11b533b7d435691dc12cc0a2485
 workflow-type: tm+mt
-source-wordcount: '1015'
-ht-degree: 100%
+source-wordcount: '1019'
+ht-degree: 91%
 
 ---
 
@@ -60,7 +60,7 @@ Les arbitrages sont automatiquement ré-exécutés chaque nuit, via le workflow 
 
 En effet, certains calculs utilisent des valeurs qui ne sont pas modifiées tous les jours. Il est donc inutile de recalculer les données chaque jour et de surcharger inutilement la base de données. Par exemple, si un processus enrichit la base de données marketing avec des informations relatives aux affinités et aux achats des clients et des clientes sur une base hebdomadaire, les données basées sur ces valeurs n’ont pas besoin d’être recalculées tous les jours.
 
-Pour cela, le champ **[!UICONTROL Fréquence]** de l&#39;onglet **[!UICONTROL Général]** permet de définir la durée maximale pendant laquelle les calculs sont conservés. Par défaut, la valeur **0s** indique que les calculs restent valides jusqu&#39;à la prochaine exécution du ré-arbitrage quotidien.
+Pour ce faire, la variable **[!UICONTROL Fréquence]** du champ **[!UICONTROL Général]** vous permet de définir une période maximale pendant laquelle le ciblage est enregistré. Par défaut, la valeur **0** indique que le calcul reste valide jusqu’à la prochaine exécution du ré-arbitrage quotidien.
 
 Pour conserver les résultats au-delà de cette limite, indiquez une valeur supérieure à 12h dans le champ **[!UICONTROL Fréquence]** : une fois ce délai expiré, toutes les règles sont réappliquées.
 
@@ -91,7 +91,7 @@ Dans un fonctionnement standard, les règles sont appliquées dans l&#39;ordre s
 >
 >Si vous utilisez le module Interaction de Campaign, les règles d&#39;éligibilité aux offres sont appliquées avec les règles de filtrage (pour les offres présentes dans les compositions de diffusion) ou lors de la phase de personnalisation, lors de l&#39;appel au moteur d&#39;offres.
 
-Vous pouvez adapter l&#39;ordre d&#39;exécution des règles de même type à partir du champ correspondant dans l&#39;onglet **[!UICONTROL Général]** de la règle. En effet, lorsque plusieurs règles sont exécutées lors de la même phase de traitement des messages, vous pouvez choisir dans quel ordre elles doivent être appliquées à partir du champ **[!UICONTROL Ordre d&#39;exécution]**.
+Vous pouvez adapter l&#39;ordre d&#39;exécution des règles du même type à partir du champ correspondant dans la **[!UICONTROL Général]** de la règle. Lorsque plusieurs règles sont exécutées lors de la même phase de traitement des messages, vous pouvez paramétrer leur ordre d&#39;exécution dans la variable **[!UICONTROL Ordre d&#39;exécution]** champ .
 
 Par exemple, une règle de pression dont l’ordre d’exécution est positionné à 20 sera exécutée avant une règle de pression dont l’ordre d’exécution est positionné à 30.
 

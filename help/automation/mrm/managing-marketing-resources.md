@@ -8,7 +8,7 @@ exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1172'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ L’onglet **[!UICONTROL Audit]** vous permet d’ajouter un relecteur ou une re
 
 >[!NOTE]
 >
->La variable **[!UICONTROL Histoire]** contient le journal de téléchargement et de mise à jour de la ressource. La variable **[!UICONTROL Détails]** permet de visualiser la version sélectionnée.
+>L’onglet **[!UICONTROL Historique]** contient le journal de téléchargement et de mise à jour de la ressource. Le bouton **[!UICONTROL Détails]** permet de visualiser la version sélectionnée.
 >
 >L’onglet **[!UICONTROL Audit]** permet de suivre les actions effectuées sur la ressource : validations, refus de validation, commentaires associés ou publications.
 
@@ -95,13 +95,13 @@ En savoir plus dans la section [Forums de discussion](discussion-forums.md).
 
 ### Processus de validation {#approval-process}
 
-La date de disponibilité attendue est affichée dans les détails de la ressource, si elle a été spécifiée dans la variable **[!UICONTROL Tracking]** . Une fois cette date atteinte, vous pouvez exécuter le processus de validation à l&#39;aide du **[!UICONTROL Soumettre à validation]** dans le tableau de bord de la ressource. La ressource passe alors à l’état **[!UICONTROL Validation en cours]**.
+La date de disponibilité prévue est affichée dans les détails de la ressource, si elle a été spécifiée dans l’onglet **[!UICONTROL Tracking]**. Une fois cette date atteinte, vous pouvez exécuter le processus de validation à l’aide du bouton **[!UICONTROL Soumettre à validation]** du tableau de bord de la ressource. La ressource adopte alors le statut **[!UICONTROL Validation en cours]**.
 
 Pour valider une ressource, cliquez sur le bouton **[!UICONTROL Valider la ressource]** sur son tableau de bord.
 
 ![](assets/mkt-resouce-approve.png)
 
-Les opérateurs ou opératrices habilités peuvent alors accepter ou refuser l’approbation. Cette action est possible soit via l&#39;email envoyé (en cliquant sur le lien contenu dans le message de notification), soit via la console cliente (en cliquant sur le bouton **[!UICONTROL Approuver]** ).
+Les opérateurs ou opératrices habilités peuvent alors accepter ou refuser l’approbation. Cette action est à la fois possible à partir de l’e-mail envoyé (en cliquant sur le lien inclus dans le message de notification) ou de la console cliente (en cliquant sur le bouton **[!UICONTROL Approuver]**).
 
 La fenêtre de validation permet de saisir un commentaire.
 
@@ -125,7 +125,7 @@ Vous pouvez également automatiser la publication d&#39;une ressource via un wor
 
 Publier une ressource signifie la rendre disponible afin qu&#39;elle puisse être utilisée (par exemple dans une autre tâche). La publication proprement dite varie suivant la nature de votre ressource : pour un flyer, la publication peut consister à envoyer le fichier à un imprimeur, pour une page web, la publier sur un site...
 
-Pour qu&#39;Adobe Campaign puisse publier, vous devez créer un workflow adéquat et le lier à la ressource. Pour ce faire, ouvrez le **[!UICONTROL Paramètres avancés...]** de la ressource, puis sélectionnez le workflow de votre choix dans la **[!UICONTROL Post-traitement]** champ .
+Pour qu’Adobe Campaign puisse effectuer la publication, vous devez créer un workflow adéquat et le lier à la ressource. Pour ce faire, ouvrez la boîte de dialogue **[!UICONTROL Paramètres avancés…]** de la ressource, puis sélectionnez le workflow de votre choix dans le champ **[!UICONTROL Post-traitement]**.
 
 ![](assets/mkt-resource-post-processing-wf.png)
 

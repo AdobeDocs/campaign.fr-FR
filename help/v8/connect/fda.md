@@ -8,7 +8,7 @@ exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -73,7 +73,7 @@ Par exemple, dans l&#39;activité **[!UICONTROL Requête]**, vous pouvez défini
 1. Choisissez l&#39;option **[!UICONTROL En définissant localement la source de données]**.
 1. Sélectionnez le moteur de la base de données cible dans la liste déroulante. Saisissez le nom du serveur et renseignez les paramètres d&#39;authentification. Indiquez également le nom de la base de données externe.
 1. Sélectionnez la table où sont stockées les données. Vous pouvez saisir le nom de la table directement dans le champ correspondant ou cliquer sur l&#39;icône d&#39;édition pour accéder à la liste des tables de la base de données.
-1. Cliquez sur le bouton **[!UICONTROL Ajouter]** pour définir un ou plusieurs champs de réconciliation entre les données de la base externe et celles de la base Adobe Campaign. Les icônes **[!UICONTROL Editer l&#39;expression]** des colonnes **[!UICONTROL Champ distant]** et **[!UICONTROL Champ local]** permettent d&#39;accéder à la liste des champs de chacune des tables.
+1. Cliquez sur le bouton **[!UICONTROL Ajouter]** pour définir un ou plusieurs champs de réconciliation entre les données de la base externe et celles de la base Adobe Campaign. La variable **[!UICONTROL Expression d’édition]** des icônes **[!UICONTROL Champ distant]** et **[!UICONTROL Champ local]** permet d&#39;accéder à la liste des champs de chacune des tables.
 1. Au besoin, indiquez une condition de filtrage et le mode de tri des données.
-1. Sélectionnez les données additionnelles à collecter dans la base externe. Pour cela, double-cliquez sur le ou les champs à ajouter afin de les afficher parmi les **[!UICONTROL Colonnes de sortie]**.
+1. Sélectionnez les données additionnelles à collecter dans la base externe. Pour ce faire, double-cliquez sur le ou les champs que vous souhaitez ajouter afin de les afficher dans le **[!UICONTROL Colonnes de sortie]**.
 1. Cliquez sur le bouton **[!UICONTROL Terminer]** pour valider ce paramétrage.

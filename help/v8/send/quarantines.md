@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 100%
+source-wordcount: '1233'
+ht-degree: 99%
 
 ---
 
@@ -61,7 +61,7 @@ Pour chaque diffusion, vous pouvez également consulter le rapport **[!UICONTROL
 * le nombre d&#39;adresses mises en quarantaine lors de l&#39;analyse de la diffusion,
 * le nombre d&#39;adresses passées en quarantaine suite à l&#39;action de diffusion.
 
-### Adresses de non-délivrabilité et bounce{#non-deliverable-bounces}
+### Adresses de non-délivrabilité et de rebond{#non-deliverable-bounces}
 
 Pour afficher la liste des adresses en quarantaine **pour l&#39;ensemble de la plateforme**, les administrateurs de Campaign peuvent accéder à **[!UICONTROL Administration > Campaign Management > Gestion des échecs > Échecs et adresses]**. Cette section répertorie les éléments en quarantaine pour les canaux **e-mail**, **SMS** et **notification push**.
 
@@ -73,11 +73,11 @@ Pour afficher la liste des adresses en quarantaine **pour l&#39;ensemble de la p
 >
 >Fin de l&#39;année 1 : (1 &#42; 0,33) / (1 + 0,5) = 22 %.
 >
->Fin de l&#39;année 2 : ((1,22 &#42; 0,33) + 0,33) / (1,5 + 0,75) = 32,5 %.
+Fin de l&#39;année 2 : ((1,22 &#42; 0,33) + 0,33) / (1,5 + 0,75) = 32,5 %.
 
-En outre, le rapport intégré **[!UICONTROL Échecs et buunce]**, disponible à partir de la section **Rapports** de cette page d&#39;accueil, affiche des informations sur les adresses en quarantaine, les types d&#39;erreurs rencontrées et une répartition des échecs par domaine. Vous pouvez filtrer les données pour une diffusion spécifique ou personnaliser ce rapport si nécessaire.
+En outre, le rapport intégré **[!UICONTROL Non-délivrables et rebonds]**, disponible à partir de la section **Rapports** de cette page d’accueil, affiche des informations sur les adresses en quarantaine, les types d’erreurs rencontrées et une répartition des échecs par domaine. Vous pouvez filtrer les données pour une diffusion spécifique ou personnaliser ce rapport si nécessaire.
 
-Apprenez-en davantage sur les adresses bounce dans le [Guide des bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=fr){target="_blank"}.
+En savoir plus sur les adresses de rebond dans [Guide des bonnes pratiques de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=fr){target="_blank"}.
 
 ### E-mail en quarantaine {#quarantined-recipient}
 
@@ -97,14 +97,14 @@ Les adresses qui correspondent à des conditions spécifiques sont automatiqueme
 Les adresses sont automatiquement supprimées de la liste de quarantaine dans les cas suivants :
 
 * Les adresses dont l&#39;état est **[!UICONTROL En erreur]** seront supprimées de la liste de quarantaine après une diffusion réussie.
-* Les adresses dont l&#39;état est **[!UICONTROL En erreur]** seront supprimées de la liste de quarantaine si la dernière erreur de type Soft a eu lieu il y a plus de 10 jours. Pour plus d&#39;informations sur la gestion des erreurs de type Soft, consultez [cette section](#soft-error-management).
+* Les adresses dont l’état est **[!UICONTROL En erreur]** seront supprimées de la liste de quarantaine si le dernier rebond temporaire a eu lieu il y a plus de 10 jours. Pour plus d&#39;informations sur la gestion des erreurs de type Soft, consultez [cette section](#soft-error-management).
 * Les adresses dont l&#39;état est **[!UICONTROL En erreur]** et qui ont rebondi avec l&#39;erreur **[!UICONTROL Boîte pleine]** sont supprimées de la liste de quarantaine après 30 jours.
 
 Leur état devient ensuite **[!UICONTROL Valide]**.
 
 >[!CAUTION]
 >
->Les destinataires avec une adresse dont le statut est **[!UICONTROL En quarantaine]** ou **[!UICONTROL Sur liste bloquée]** ne seront jamais supprimés, même s&#39;ils reçoivent un e-mail.
+Les destinataires avec une adresse dont le statut est **[!UICONTROL En quarantaine]** ou **[!UICONTROL Sur liste bloquée]** ne seront jamais supprimés, même s&#39;ils reçoivent un e-mail.
 
 Vous pouvez également supprimer manuellement une adresse de la liste de quarantaine. Pour supprimer une adresse de la quarantaine, vous pouvez :
 

@@ -7,7 +7,7 @@ exl-id: 4109e198-bf9d-4dd2-92a1-16bbadbe30e8
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -51,4 +51,4 @@ Chacun des événements entrants doit spécifier une cible définie par ces para
 * schema
 * recCount
 
-Ce triplet de valeurs identifie la cible résultant de l&#39;union. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d&#39;éléments dans la table.
+Ce jeu de trois valeurs identifie la cible résultant de l’union. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d’éléments dans la table.

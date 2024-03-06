@@ -7,8 +7,8 @@ level: Intermediate, Experienced
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 100%
+source-wordcount: '451'
+ht-degree: 98%
 
 ---
 
@@ -44,7 +44,7 @@ Pour ajouter un nouveau type de données qui n’existe pas par défaut dans Ado
 
 **Rubriques connexes**
 
-![](../assets/do-not-localize/book.png) Exemple d&#39;édition de schéma dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#configuring-campaign-classic).{target="_blank"}
+![](../assets/do-not-localize/book.png) Exemple d’édition de schéma dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#configuring-campaign-classic){target="_blank"}
 
 ![](../assets/do-not-localize/book.png)Cas d’utilisation : liaison d’un champ à une table de référence existante dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#uc-link).{target="_blank"}
 

@@ -9,7 +9,7 @@ exl-id: a1e08d57-0387-4802-b447-f6d9ad87072a
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -40,7 +40,7 @@ Avant de configurer l&#39;activité, vérifiez que les prérequis suivants sont 
    >
    >Il incombe à la personne chargée de l&#39;écriture du script SQL de s&#39;assurer que celui-ci est fonctionnel et que ses références (noms de champs, etc.) sont conformes au schéma sortant.
 
-   Si vous souhaitez charger un code SQL existant, sélectionnez l&#39;option **[!UICONTROL Le code SQL est contenu dans une entité stockée dans la base]**. Les scripts SQL doivent être créés et stockés dans le menu **[!UICONTROL Administration]** / **[!UICONTROL Paramétrage]** / **[!UICONTROL Scripts SQL]**.
+   Si vous souhaitez charger un code SQL existant, sélectionnez la variable **[!UICONTROL Le script SQL est contenu dans une entité stockée dans la base de données]** . Les scripts SQL doivent être créés et stockés dans la variable **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL Scripts SQL]** .
 
    Sinon, saisissez ou effectuez un copier-coller du script SQL dans la zone dédiée.
 

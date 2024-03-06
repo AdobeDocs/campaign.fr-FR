@@ -8,7 +8,7 @@ exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 source-git-commit: 59d33983db930b3a7dc022693d72704bda99e3a1
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 79%
+ht-degree: 92%
 
 ---
 
@@ -41,13 +41,13 @@ Découvrez comment créer une audience dans un workflow de campagne sur [cette p
 
 ## Profils actifs {#active-profiles}
 
-Un profil actif est un profil avec lequel le client a tenté de communiquer au cours des 12 derniers mois via n’importe quel canal. Les mesures de licence sont basées sur des profils actifs. En savoir plus dans [Description du produit Adobe Campaign](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+Un profil actif est un profil avec lequel le client ou la cliente a tenté de communiquer au cours des 12 derniers mois via n’importe quel canal. Les mesures de licence sont basées sur des profils actifs. En savoir plus dans la [description du produit Adobe Campaign](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-Vous pouvez surveiller le nombre de profils actifs sur votre instance directement depuis le Panneau de Contrôle Campaign. Voir à ce sujet la section [Documentation du Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=fr){target="_blank"}.
+Vous pouvez surveiller le nombre de profils actifs utilisés sur votre instance directement à partir du panneau de contrôle de Campaign. Pour plus d’informations à ce sujet, consultez la [documentation du Panneau de contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=fr){target="_blank"}.
 
 >[!CAUTION]
 >
->* Un profil qui a été ciblé par plusieurs diffusions n&#39;est comptabilisé qu&#39;une seule fois.
+>* Un profil qui a été ciblé par plusieurs diffusions n’est comptabilisé qu’une seule fois.
 >
 >* Les profils ciblés dans le cadre du marketing social sur X (Twitter) ne sont pas pris en compte comme profils actifs.
 

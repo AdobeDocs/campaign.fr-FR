@@ -8,7 +8,7 @@ exl-id: 13a7432e-6216-4a5c-84fc-bc374b5af5ee
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '231'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -30,7 +30,7 @@ Les informations accessibles à partir de ce sous-onglet sont les suivantes :
 
 * Le sous-onglet **[!UICONTROL Validations]** contient l&#39;ensemble du processus de validation de la campagne. Vous pouvez vérifier les détails et les commentaires.
 
-* Les workflows créés pour générer les messages aux fournisseurs sont affichés dans le sous-onglet **[!UICONTROL Traitements sur les fournisseurs]**. Cliquez sur l&#39;icône **[!UICONTROL Détail]** pour afficher le workflow sélectionné.
+* Les workflows créés pour générer les messages pour les prestataires s&#39;affichent dans le **[!UICONTROL Traitements sur les prestataires]** sous-onglet. Cliquez sur le bouton **[!UICONTROL Détail]** pour afficher le workflow sélectionné.
 
 ## Suivre les diffusions {#delivery-tracking}
 

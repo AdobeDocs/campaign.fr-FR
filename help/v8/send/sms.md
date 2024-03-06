@@ -7,8 +7,8 @@ level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 100%
+source-wordcount: '460'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ De plus, vous devez connaître le protocole et les paramètres SMS. Découvrez c
 
    ![](assets/delivery_step_1.png)
 
-   ’![](../assets/do-not-localize/book.png) Pour plus d’informations générales sur la création d&#39;une diffusion, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=fr#sending-messages){target="_blank"}.
+   ![](../assets/do-not-localize/book.png) Pour des informations générales sur la création d&#39;une diffusion, reportez-vous à la section [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=fr#sending-messages){target="_blank"}.
 
 1. Sélectionnez un modèle de diffusion référençant le compte externe approprié pour envoyer les diffusions SMS.
 
@@ -75,9 +75,9 @@ Les étapes clés de création et de conception d&#39;un SMS sont présentées d
 
   ![](../assets/do-not-localize/book.png) [En savoir plus sur la définition du contenu SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html?lang=fr#defining-the-sms-content){target="_blank"}
 
-* Sélectionner l&#39;audience de votre e-mail
+* Sélectionner l’audience de votre e-mail
 
-  ![](../assets/do-not-localize/book.png) [En savoir plus sur la définition de la population cible](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html?lang=fr){target="_blank"}
+  ![](../assets/do-not-localize/book.png) [Découvrez comment définir la population cible](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html?lang=fr){target="_blank"}
 
 ![](../assets/do-not-localize/glass.png)Les étapes de définition de l&#39;audience sont décrites sur [cette page](../start/audiences.md).
 

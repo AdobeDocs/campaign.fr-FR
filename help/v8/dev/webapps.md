@@ -7,8 +7,8 @@ level: Beginner
 exl-id: a460c1b4-4266-46ff-8cca-748050afd579
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 100%
+source-wordcount: '166'
+ht-degree: 92%
 
 ---
 
@@ -24,4 +24,4 @@ Adobe Campaign vous permet également de créer et de publier des **application
 
 Vous pouvez créer des pages, par exemple un formulaire d&#39;édition sur un extranet, ou des formulaires de notification incluant des données issues de la base de données avec des tables, des graphiques, des formulaires de saisie, etc. Cette fonctionnalité permet de concevoir et de publier des pages web dans lesquelles les utilisateurs peuvent rechercher ou saisir des informations.
 
-![](../assets/do-not-localize/book.png) Découvrez comment créer et publier des applications web dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html?lang=fr#designing-content).{target="_blank"}
+![](../assets/do-not-localize/book.png) Découvrez comment créer et publier des applications web dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html?lang=fr#designing-content){target="_blank"}
