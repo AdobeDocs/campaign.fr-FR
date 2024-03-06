@@ -6,9 +6,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1400'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -372,7 +372,7 @@ La liste des fonctions disponibles est accessible à partir de n&#39;importe que
 
 ## Construire une chaîne via la compute string {#building-a-string-via-the-compute-string}
 
-A **Compute string** est une expression XPath utilisée pour construire une chaîne représentant un enregistrement dans une table associée au schéma. **Compute string** est principalement utilisée dans l&#39;interface graphique pour afficher le libellé d&#39;un enregistrement sélectionné.
+**Compute string** est une expression XPath utilisée pour construire une chaîne représentant un enregistrement dans une table associée au schéma. **Compute string** est principalement utilisée dans l’interface graphique pour afficher le libellé d’un enregistrement sélectionné.
 
 La chaîne **Compute string** est définie via l&#39;élément **`<compute-string>`** sous l&#39;élément principal du schéma de données. Un attribut **expr** contient une expression XPath pour calculer l’affichage.
 

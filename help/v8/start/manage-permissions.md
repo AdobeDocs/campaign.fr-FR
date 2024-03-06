@@ -1,14 +1,14 @@
 ---
-title: Octroi d'autorisations pour Campaign v8
-description: Découvrez comment accorder des autorisations aux utilisateurs de Campaign v8
+title: Octroyer des autorisations pour Campaign v8
+description: Découvrir comment octroyer des autorisations aux utilisateurs et utilisatrices de Campaign v8
 feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1734'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -104,7 +104,7 @@ Ces profils de produit correspondent aux **groupes d’opérateurs** Campaign. L
 
    * **[!UICONTROL ADMINISTRATION]** : droit pour exécuter, créer, éditer et supprimer tout objet tel que workflow, diffusion, script, etc.
 
-1. **[!UICONTROL Chargés de diffusion]** (diffusion)
+1. **[!UICONTROL Opérateurs et opératrices de diffusion]** (diffusion)
 
    Les opérateurs de ce groupe sont chargés de la gestion des diffusions : il permet l&#39;accès aux ressources principales nécessaires à la création et la préparation des diffusions (typologies de campagnes, mappings de diffusions, modèles par défaut, blocs de personnalisation, etc.).
 
@@ -113,7 +113,7 @@ Ces profils de produit correspondent aux **groupes d’opérateurs** Campaign. L
    * **[!UICONTROL PRÉPARER DES DIFFUSIONS]** : droit pour créer, éditer et lancer l&#39;analyse des diffusions,
    * **[!UICONTROL DÉMARRER DES DIFFUSIONS]** : droit pour valider les diffusions préalablement analysées.
 
-1. **[!UICONTROL Chargés d&#39;opération]** (operation)
+1. **[!UICONTROL Personnes chargées de la gestion de Campaign]** (opération)
 
    Les opérateurs de ce groupe peuvent gérer les campagnes marketing : il permet d&#39;accéder aux objets relatifs aux opérations (plans, programmes, workflows, budgets, etc.) dans le cadre de **[!UICONTROL Campaign]** (module facultatif Adobe Campaign).
 
@@ -126,7 +126,7 @@ Ces profils de produit correspondent aux **groupes d’opérateurs** Campaign. L
    >
    >Ce groupe ne permet pas aux opérateurs de démarrer les diffusions.
 
-1. **[!UICONTROL Rédacteurs de contenu]** (contenu)
+1. **[!UICONTROL Rédacteurs et rédactrices de contenu]** (contenu)
 
    Les utilisateurs de ce groupe peuvent accéder aux dossiers de contenu, au moyen du module complémentaire **[!UICONTROL Gestion de contenu]**. Ce groupe n’accorde aucune autorisation supplémentaire.
 
@@ -136,7 +136,7 @@ Ces profils de produit correspondent aux **groupes d’opérateurs** Campaign. L
 
 1. **[!UICONTROL Exécution des workflows]** (workflow)
 
-   La variable **[!UICONTROL Exécution des workflows]** permet de contrôler l&#39;exécution et la validation des workflows de ciblage : le droit nommé WORKFLOW est associé aux opérateurs de ce groupe. Elle est requise pour toutes les actions sur les workflows, en plus des droits d’accès aux fichiers de données. Par défaut, la variable **[!UICONTROL Exécution des workflows]** a un accès en lecture seule aux fichiers de workflow de ciblage standard et aux modèles de workflow. Les opérateurs de ce groupe ont également accès en lecture et écriture au fichier de validations en attente.
+   Le groupe **[!UICONTROL Exécution des workflows]** permet de contrôler l’exécution et l’approbation des workflows de ciblage : le droit nommé WORKFLOW est associé aux opérateurs et opératrices de ce groupe. Il est requis pour toutes les actions sur les workflows, en plus des droits d’accès aux fichiers de données. Par défaut, le groupe **[!UICONTROL Exécution des workflows]** a un accès en lecture seule aux fichiers de workflow de ciblage standard et aux modèles de workflow. Les opérateurs et opératrices de ce groupe ont également accès en lecture et écriture au fichier d’approbations en attente.
 
 1. **[!UICONTROL Superviseurs de workflow]** (workflowSupervisor)
 
@@ -242,7 +242,7 @@ Les droits nommés par défaut dans Adobe Campaign sont les suivants :
 
 
 
-## Ressources supplémentaires{#additional-res}
+## Autres ressources{#additional-res}
 
 * [Gestion des autorisations relatives aux workflows](../../automation/workflow/managing-rights.md)
 * [Gestion des autorisations pour le marketing distribué](../../automation/distributed-marketing/about-distributed-marketing.md#operators)

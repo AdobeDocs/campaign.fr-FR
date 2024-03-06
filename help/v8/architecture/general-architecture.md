@@ -6,9 +6,9 @@ role: Admin, Developer
 level: Beginner
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
 source-git-commit: 79d916c4d65c0c55ec20f2f5850fec40fe4e99a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1136'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Un déploiement classique de la solution Adobe Campaign comprend les composants
 
 ## Environnement client personnalisé {#client-env}
 
-L&#39;accès à l&#39;application peut se faire de différentes manières : interface utilisateur web, console cliente (client riche), accès web (client léger) ou intégration API.
+L’accès à l’application peut se faire de différentes manières : interface utilisateur web, console cliente (client riche), accès web (client léger) ou intégration via les API.
 
 ![](../assets/do-not-localize/glass.png) [En savoir plus sur l’interface utilisateur de Campaign](../start/campaign-ui.md).
 
@@ -48,7 +48,7 @@ On distingue trois types de modules Adobe Campaign :
 
 Les principaux processus sont les suivants :
 
-* **Serveur applicatif** (nlserver web) : ce processus expose l’ensemble des fonctionnalités d’Adobe Campaign via les API de services web (SOAP / HTTP + XML). De plus, il peut générer dynamiquement les pages Web utilisées pour l’accès par HTML (rapports, formulaires Web, etc.). Pour ce faire, ce processus comprend un serveur JSP Apache Tomcat. Il s’agit du processus auquel la console se connecte.
+* **Serveur d’applications** (nlserver web) : ce processus expose l’ensemble des fonctionnalités d’Adobe Campaign via les API de services web (SOAP/HTTP + XML). De plus, il peut générer dynamiquement les pages Web utilisées pour l’accès par HTML (rapports, formulaires Web, etc.). Pour ce faire, ce processus comprend un serveur JSP Apache Tomcat. Il s’agit du processus auquel la console se connecte.
 
 * **Moteur de workflow** (nlserver wfserver) : ce processus exécute les processus de workflow définis dans l’application. Il prend également en charge les workflows techniques qui s&#39;exécutent périodiquement, et notamment les suivants :
 
@@ -56,17 +56,17 @@ Les principaux processus sont les suivants :
    * **Nettoyage** : nettoie la base de données, vide les anciens enregistrements et évite que la base de données ne se développe de manière exponentielle.
    * **Facturation** : envoie un rapport d&#39;activité pour la plateforme (taille de la base, nombre d&#39;actions marketing, etc.).
 
-* **Serveur de diffusion** (nlserver mta) : Adobe Campaign dispose d’une fonctionnalité de diffusion d’emails native. Ce processus fonctionne comme un agent de transfert d’e-mails SMTP (MTA). Il effectue une personnalisation « un à un » des messages et gère leur diffusion physique. Il s&#39;exécute à l&#39;aide de traitements de diffusion et gère les reprises automatiques. De plus, lorsque le tracking est activé, il remplace automatiquement les URL afin qu&#39;elles pointent vers le serveur de redirection. Ce processus peut assurer la personnalisation et l&#39;envoi automatique vers un prestataire externe pour les diffusions de type SMS, Fax ou Courrier papier.
+* **Serveur de diffusion** (nlserver mta) : Adobe Campaign dispose d’une fonctionnalité de diffusion d’emails native. Ce processus fonctionne comme un agent de transfert d’e-mails SMTP (MTA). Il effectue une personnalisation « un à un » des messages et gère leur diffusion physique. Il s&#39;exécute à l&#39;aide de traitements de diffusion et gère les reprises automatiques. De plus, lorsque le tracking est activé, il remplace automatiquement les URL afin qu&#39;elles pointent vers le serveur de redirection. Ce processus peut assurer la personnalisation et l’envoi automatique vers un prestataire externe pour les diffusions de type SMS, Fax ou Courrier.
 
-* **Serveur de redirection** (nlserver webmdl) - Pour les emails, Adobe Campaign gère automatiquement le suivi des ouvertures et clics (le suivi transactionnel au niveau du site Web est une autre possibilité). Pour ce faire, les URL intégrées dans les e-mails sont réécrites afin de pointer vers ce module qui enregistre la transmission de l’utilisateur Internet avant de le rediriger vers l’URL requise.
+* **Serveur de redirection** (nlserver webmdl) : pour les e-mails, Adobe Campaign gère automatiquement le suivi des ouvertures et des clics (le suivi transactionnel au niveau du site web est une autre possibilité). Pour ce faire, les URL intégrées dans les e-mails sont réécrites afin de pointer vers ce module qui enregistre la transmission de l’utilisateur Internet avant de le rediriger vers l’URL requise.
 
   Pour garantir une disponibilité maximale, ce processus est totalement indépendant de la base de données : les autres processus serveur communiquent uniquement avec elle à l&#39;aide d&#39;appels SOAP (HTTP, HTTP(S) et XML). Techniquement, cette fonctionnalité est implémentée dans un module d&#39;extension d&#39;un serveur HTTP (extension ISAPI dans IIS, ou module DSO Apache, etc.) et est disponible uniquement sous Windows.
 
-D&#39;autres processus plus techniques sont également disponibles :
+D’autres processus plus techniques sont également disponibles :
 
-* **Gestion des mails rebonds** (nlserver inMail) : ce processus permet de relever automatiquement les emails des boîtes aux lettres configurées pour recevoir les messages rebonds renvoyés en cas d’échec de la diffusion. Ces messages sont ensuite soumis à un traitement selon des règles afin de déterminer les raisons de leur non-diffusion (destinataire inconnu, dépassement de quota, etc.) et pour mettre à jour le statut de la diffusion dans la base de données. Toutes ces opérations sont entièrement automatiques et préconfigurées.
+* **Gérer les e-mails de rebond** (nlserver inMail) : ce processus permet de récupérer automatiquement les e-mails des boîtes de réception configurées pour recevoir les messages rebonds renvoyés en cas d’échec de la diffusion. Ces messages sont ensuite soumis à un traitement selon des règles afin de déterminer les raisons de leur non-diffusion (destinataire inconnu, dépassement de quota, etc.) et pour mettre à jour le statut de la diffusion dans la base de données. Toutes ces opérations sont entièrement automatiques et préconfigurées.
 
-* **Etat de diffusion des SMS** (nlserver sms) : ce processus interroge le routeur des messages SMS afin de collecter l’état d’avancement et de mettre à jour la base de données.
+* **Statut de diffusion par SMS (nlserver sms)** : ce processus interroge le routeur des SMS afin de collecter le statut de la progression et de mettre à jour la base de données.
 
 * **Écriture des messages de log** (nlserver syslogd) : ce processus technique capture les messages de logs et les traces générés par les autres processus et les écrit sur le disque dur. De ce fait, de nombreuses informations sont disponibles pour le diagnostic en cas de problème.
 

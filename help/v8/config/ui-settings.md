@@ -7,9 +7,9 @@ role: Admin, Developer
 level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1948'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -130,9 +130,9 @@ Pour enregistrer cette configuration de liste en vue de la réutiliser, procéde
 
 Vous pouvez ensuite appliquer cette configuration à tout autre dossier du même type. Pour en savoir plus sur les dossiers, consultez [cette page](../audiences/folders-and-views.md).
 
-### Export d’une liste {#exporting-a-list}
+### Exporter une liste {#exporting-a-list}
 
-Pour exporter des données d&#39;une liste, vous devez utiliser un assistant d&#39;export. Pour y accéder, sélectionnez les éléments à exporter depuis la liste, cliquez avec le bouton droit et choisissez **[!UICONTROL Exporter...]**.
+Pour exporter les données d’une liste, vous devez utiliser un assistant d’export. Pour y accéder, sélectionnez les éléments de la liste à exporter, cliquez avec le bouton droit de la souris et choisissez **[!UICONTROL Exporter...]**.
 
 <!--The use of the import and export functions is explained in [Generic imports and exports](../../platform/using/about-generic-imports-exports.md).-->
 
@@ -213,7 +213,7 @@ Pour créer un alias, procédez comme suit :
 
 1. Enregistrez vos modifications. Le remplacement des valeurs est effectué par le workflow **Cleansing des alias** exécuté toutes les nuits. Pour plus d’informations, consultez la section [Exécuter le cleansing des données](#running-data-cleansing).
 
-Pour tous les champs basés sur cette énumération, lorsqu’un utilisateur saisit la valeur **Adobe** dans un champ &quot;société&quot; (dans la console cliente Adobe Campaign, dans un formulaire web), il sera automatiquement remplacé par la valeur **Adobe**.
+Pour tous les champs basés sur cette énumération, lorsqu’un utilisateur ou une utilisatrice saisit la valeur **Adob** dans un champ « société » (dans la console cliente Adobe Campaign ou dans un formulaire web), cette valeur sera automatiquement remplacée par la valeur **Adobe**.
 
 #### Convertir une valeur incorrecte en alias{#convert-to-alias}
 
@@ -251,7 +251,7 @@ Cliquez sur le bouton **[!UICONTROL Démarrer]** pour lancer l&#39;uniformisatio
 
 ##### Surveiller les occurrences {#calculate-entry-occurrences}
 
-La variable **[!UICONTROL Alias]** un sous-onglet d&#39;une énumération peut afficher le nombre d&#39;occurrences d&#39;un alias parmi toutes les valeurs renseignées. Ces informations sont une estimation qui sera affichée dans la variable **[!UICONTROL Accès]** colonne .
+Le sous-onglet **[!UICONTROL Alias]** d’une énumération peut afficher le nombre d’occurrences d’un alias parmi toutes les valeurs renseignées. Ces informations sont une estimation qui sera affichée dans la colonne **[!UICONTROL Accès]**.
 
 >[!CAUTION]
 >

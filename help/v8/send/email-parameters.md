@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
 source-git-commit: 87c971ac6cf4abb6b04d52ce60ac2036055e1e02
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '631'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ Cette section présente les options et paramètres disponibles dans les proprié
 
 ## Utiliser E-mail Cci {#email-bcc}
 
-Vous pouvez configurer Adobe Campaign pour conserver une copie des emails envoyés depuis votre plateforme. Cette option est présentée dans la section [cette page](email-bcc.md).
+Vous pouvez configurer Adobe Campaign pour conserver une copie des e-mails envoyés depuis votre plateforme. Cette option est détaillée sur [cette page](email-bcc.md).
 
 ## Sélectionner des formats de message {#selecting-message-formats}
 
-Vous pouvez modifier le format des emails envoyés. Pour cela, éditez les propriétés de la diffusion et cliquez sur le bouton **[!UICONTROL Diffusion]** .
+Vous pouvez modifier le format des e-mails envoyés. Pour cela, éditez les propriétés de la diffusion et cliquez sur le bouton **[!UICONTROL Diffusion]**.
 
 ![](assets/email-message-format.png)
 
@@ -77,7 +77,7 @@ Pour plus d’informations sur la gestion des e-mails de rebond, consultez [cett
 
 ## Ajouter des en-têtes SMTP {#adding-smtp-headers}
 
-Vous pouvez ajouter des en-têtes SMTP à vos diffusions. Pour ce faire, utilisez la section correspondante du **[!UICONTROL SMTP]** dans la diffusion.
+Vous pouvez ajouter des en-têtes SMTP à vos diffusions. Pour ce faire, utilisez la section correspondante de l’onglet **[!UICONTROL SMTP]** de la diffusion.
 
 Le script saisi dans cette fenêtre doit référencer un en-tête par ligne, sous la forme **nom: valeur**.
 
@@ -94,6 +94,6 @@ Les valeurs sont automatiquement encodées, si nécessaire.
 
 ## Générer une page miroir {#generating-mirror-page}
 
-La page miroir est une page HTML accessible en ligne via un navigateur web et dont le contenu est identique à celui de l’email. Cela peut s&#39;avérer utile si vos destinataires rencontrent des problèmes de rendu ou des images endommagées lors de la tentative d&#39;affichage de votre email dans leur boîte de réception.
+La page miroir est une page HTML accessible en ligne via un navigateur web et dont le contenu est identique à celui de l’e-mail. Cela peut être utile si vos personnes destinataires rencontrent des problèmes de rendu ou accèdent à des images endommagées quand ils affichent votre e-mail dans leur boîte de réception.
 
-Découvrez comment insérer un lien vers la page miroir dans [cette section](mirror-page.md)
+Découvrez comment insérer un lien vers la page miroir dans [cette section](mirror-page.md).

@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 878b5963-100c-4dd7-97a0-c59a62c493b1
 source-git-commit: 79d916c4d65c0c55ec20f2f5850fec40fe4e99a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '974'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ Cliquez sur le lien **[!UICONTROL Paramètres avancés de la campagne...]**, pui
 
 ## Adresses de contrôle et tableau personnalisé {#using-an-external-recipient-table}
 
-Si la table des diffusions est une table externe, vous devrez effectuer des paramétrages complémentaires. La variable **[!UICONTROL nms:seedmember]** schéma doit être étendu. Un onglet est ajouté au niveau des adresses de contrôle afin de définir les champs adéquats.
+Si le tableau des diffusions est un tableau externe, vous devrez effectuer des configurations supplémentaires. Le schéma **[!UICONTROL nms:seedmember]** doit être étendu. Un onglet est ajouté aux adresses de contrôle afin de définir les champs adéquats.
 
 Dans ce cas, pour ajouter les adresses de contrôle dans la diffusion, renseignez directement les champs adéquats dans l’onglet correspondant ou importez des modèles d’adresses.
 

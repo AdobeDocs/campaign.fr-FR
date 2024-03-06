@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1233'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -796,7 +796,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 
 ## Variables {#variables}
 
-Les variables vous permettent de définir le comportement de l&#39;application mobile après réception d&#39;une notification. Ces variables doivent être définies dans le code de l’application mobile et dans la console cliente Adobe Campaign, dans la variable **[!UICONTROL Variables]** dans le service d’applications mobiles dédié.
+Les variables vous permettent de définir le comportement de l&#39;application mobile après réception d&#39;une notification. Ces variables doivent être définies dans le code de l’application mobile et dans la console Adobe Campaign, dans l’onglet **[!UICONTROL Variables]** du service d’applications mobiles dédié.
 
 
 Vous trouverez ci-dessous un exemple de code qui permet à une application mobile de collecter toutes les variables ajoutées dans une notification. Dans notre exemple, nous utilisons la variable &quot;VAR&quot;.
@@ -891,7 +891,7 @@ A ce niveau, vous devez effectuer les opérations suivantes :
 
 * Définir la mise en page de la notification
 
-  Vous devez définir une mise en page avec les widgets appropriés. Pour une image, le widget est nommé **UIImageView**.
+  Vous devez définir une disposition avec les widgets appropriés. Pour une image, le widget se nomme **UIImageView**.
 
 * Afficher le contenu multimédia
 

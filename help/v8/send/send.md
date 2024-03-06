@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
 source-git-commit: 84b90cbd150c81edc81f5cc653db6fbe96af80aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '845'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -21,18 +21,18 @@ Une fois que vous avez terminé, confirmez la diffusion pour lancer la diffusion
 
 Suivre l’exécution de la diffusion depuis l’onglet **Diffusion**, accessible à partir des détails de cette diffusion ou de la liste des diffusions.
 
-## Surveillance de vos e-mails {#email-monitoring}
+## Surveiller vos e-mails {#email-monitoring}
 
-Une fois l&#39;envoi effectué, vérifiez l&#39;état de votre diffusion dans le **Tableau de bord des diffusions** et accéder aux logs de diffusion et aux rapports pour confirmer que les messages ont été correctement envoyés.
+Une fois les messages envoyés, vérifiez le statut de votre diffusion dans le **tableau de bord des diffusions** et accédez aux logs de diffusion et aux rapports pour confirmer que vos messages ont été correctement envoyés.
 
-Depuis le tableau de bord des diffusions, vous pouvez vérifier les messages traités et consulter les logs d&#39;audit de diffusion. Vous pouvez également contrôler le statut des messages dans les logs de diffusion.
+Depuis le tableau de bord des diffusions, vous pouvez vérifier les messages traités et consulter les logs d’audit de diffusion. Vous pouvez également contrôler le statut des messages dans les logs de diffusion.
 
 >[!NOTE]
 >
->Les statuts des diffusions ne s&#39;affichent pas en temps réel. En savoir plus sur le service de commentaires par email [dans cette section](#email-feedback-service).
+>Les statuts des diffusions ne s’affichent pas en temps réel. Découvrez le service de retour par e-mail dans [cette section](#email-feedback-service).
 
 
-![](../assets/do-not-localize/book.png) [En savoir plus sur le monitoring des diffusions dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=fr){target="_blank"}
+![](../assets/do-not-localize/book.png) [En savoir plus sur la surveillance des diffusions dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=fr){target="_blank"}
 
 ## MTA de Campaign {#mta}
 
@@ -42,9 +42,9 @@ Disponible pour tous les clients de Campaign v8, le MTA garantit une évolutivi
 
 ### Avantages
 
-Adobe Campaign utilise un MTA (Mail Transfer Agent) qui exécute le MTA de messagerie commercial de SparkPost appelé **Moment**.
+Adobe Campaign utilise un MTA (Mail Transfer Agent) qui exécute le MTA d’e-mail commercial de SparkPost appelé **Momentum**.
 
-Momentum offre une technologie MTA innovante et extrêmement performante. Elle comprend une gestion des rebonds plus intelligente et une fonctionnalité d’optimisation de la délivrabilité automatisée qui aide les expéditeurs à atteindre et à maintenir des taux de remise optimaux aux boîtes de réception.
+Momentum offre une technologie MTA innovante et extrêmement performante. Elle comprend une gestion des rebonds plus intelligente et une fonctionnalité d’optimisation de la délivrabilité automatisée qui aide les personnes expéditrices à atteindre et à maintenir des taux de remise optimaux aux boîtes de réception.
 
 * Le MTA permet une augmentation considérable de la vitesse de débit globale et une réduction significative des rebonds temporaires.
 * Il utilise la dernière technologie MTA pour vous offrir des vitesses de débit optimales pour votre diffusion par e-mail.
@@ -67,7 +67,7 @@ En savoir plus sur les diffusions en échec dans [cette section](delivery-failur
 
 Les règles MX (Mail eXchanger) correspondent aux règles de gestion de communication entre un serveur expéditeur et un serveur destinataire.
 
-Le MTA possède ses propres règles MX qui lui permettent de personnaliser votre débit par domaine en fonction de votre réputation de courriel historique et des commentaires en temps réel provenant des domaines où vous envoyez des emails.
+Le MTA dispose de ses propres règles MX. Il peut ainsi personnaliser le débit par domaine en fonction de votre réputation, basée sur l’historique des e-mails et les commentaires en temps réel provenant des domaines auxquels vous adressez des e-mails.
 
 ### Signature DKIM
 
@@ -79,9 +79,9 @@ En savoir plus sur DKIM dans le [Guide Adobe des bonnes pratiques en matière de
 
 ## Service de commentaires par e-mail {#email-feedback-service}
 
-Le service de commentaires par email Campaign (EFS) indique l’état de chaque diffusion par email envoyée avec Adobe Campaign.
+Le service de retour par e-mail (EFS) de Campaign indique le statut de chaque diffusion par e-mail envoyée avec Adobe Campaign.
 
-Une fois la diffusion démarrée, aucune modification n’est apportée dans la variable **[!UICONTROL Succès]** pourcentage lorsque le message est relayé de Campaign au MTA. Les logs de diffusion affichent le statut **[!UICONTROL Pris en compte par le fournisseur d&#39;accès d&#39;accès]** pour chaque adresse ciblée.
+Une fois la diffusion lancée, le pourcentage **[!UICONTROL Succès]** n’est plus modifié lorsque le message est relayé avec succès de Campaign au MTA. Les logs de diffusion affichent le statut **[!UICONTROL Pris en compte par le fournisseur d&#39;accès d&#39;accès]** pour chaque adresse ciblée.
 
 Lorsque le message est effectivement diffusé aux profils ciblés et que ces informations sont renvoyées en temps réel depuis le MTA, les logs de diffusion affichent le statut **[!UICONTROL Envoyés]** pour chaque adresse ayant reçu le message avec succès. Le pourcentage **[!UICONTROL Succès]** augmente en conséquence lorsqu&#39;une diffusion est effectuée avec succès.
 
@@ -99,7 +99,7 @@ Lorsque des messages soft bounce sont signalés depuis le MTA, leur statut de lo
 >
 >Pour plus d&#39;informations sur les reprises après une diffusion temporairement en échec, voir [cette section](delivery-failures.md#retries).
 
-Le tableau ci-dessous montre comment les KPI et les statuts des envois sont mis à jour à chaque étape du processus d’envoi.
+Le tableau ci-dessous montre comment les KPI et les statuts des logs d’envoi sont mis à jour à chaque étape du processus d’envoi.
 
 | Étape du processus d’envoi | Résumé des KPI | État des logs d&#39;envoi |
 |--- |--- |--- |

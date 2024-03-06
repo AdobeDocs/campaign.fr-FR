@@ -6,9 +6,9 @@ role: Admin, User
 level: Beginner, Intermediate
 exl-id: 1e20f3b9-d1fc-411c-810b-6271360286f9
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '380'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Tout d’abord, vous devez créer le compte externe Salesforce.
 
 >[!NOTE]
 >
->Pour approuver la configuration, vous devez vous déconnecter puis vous reconnecter à la console cliente Adobe Campaign.
+>Pour approuver la configuration, vous devez procéder à une déconnexion/reconnexion à la console cliente Adobe Campaign.
 
 ## Sélection des tables à synchroniser{#sfdc-create-tables}
 

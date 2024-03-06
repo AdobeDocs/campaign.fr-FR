@@ -6,13 +6,13 @@ role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '594'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Forum aux questions{#faq}
+# Questions fréquentes{#faq}
 
 Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales questions/réponses ci-dessous.
 
@@ -26,7 +26,7 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
 1. **Comment se connecter à Campaign v8 ?**
 
-   Vous devez télécharger et installer la console cliente Campaign pour vous connecter à Adobe Campaign.
+   Vous devez télécharger et installer la console cliente Campaign pour vous connecter à Adobe Campaign.
 
    ![](../assets/do-not-localize/glass.png) [Pour en savoir plus, cliquez ici](connect.md).
 
@@ -76,7 +76,7 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
 1. **Puis-je contacter des experts Campaign ?**
 
-   Rejoignez la communauté Campaign et recherchez des réponses parmi les questions existantes ou consultez les experts. [Rejoindre la conversation](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
+   Rejoignez la communauté Campaign et recherchez des réponses parmi les questions existantes ou consultez les expertes et experts. [Prenez part à la conversation](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 
 
 1. **Comment signaler un problème ?**

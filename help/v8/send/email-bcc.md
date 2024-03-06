@@ -1,13 +1,13 @@
 ---
 title: Envoyer une copie de vos messages à une adresse en Cci
-description: Découvrez comment activer la fonctionnalité Email Cci dans Adobe Campaign
+description: Découvrez comment activer la mise en copie Cci des e-mails dans Adobe Campaign
 feature: Email
 role: User
 level: Beginner
 source-git-commit: 87c971ac6cf4abb6b04d52ce60ac2036055e1e02
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '382'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
@@ -19,12 +19,12 @@ ht-degree: 36%
 >
 >This capability is available starting Campaign v8.3. To check your version, refer to [this section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)-->
 
-## A propos des emails en Cci {#gs-bcc}
+## À propos de la mise en copie Cci des e-mails {#gs-bcc}
 
-Vous pouvez configurer Adobe Campaign pour conserver une copie des emails envoyés depuis votre plateforme. Cette option vous permet d&#39;envoyer des messages avec une adresse email dédiée en Cci (copie carbone aveugle), à partir de laquelle ils peuvent être traités et archivés à l&#39;aide d&#39;un système externe.
+Vous pouvez configurer Adobe Campaign pour conserver une copie des e-mails envoyés depuis votre plateforme. Cette option vous permet d’envoyer les messages de votre choix à une adresse e-mail Cci (copie carbone invisible) dédiée, à partir de laquelle ils peuvent être traités et archivés au moyen d’un système externe.
 Adobe Campaign ne gère pas les fichiers archivés. Les fichiers .eml correspondant aux e-mails envoyés peuvent ensuite être transférés vers un serveur distant, tel qu’un serveur de messagerie SMTP.
 
-La destination d&#39;archivage est l&#39;adresse email en Cci de votre choix, qui restera invisible pour les destinataires de la diffusion. Une fois l&#39;adresse email en Cci définie, vous devez activer l&#39;option dédiée au niveau de la [modèle de diffusion](create-templates.md) niveau.
+La destination d’archivage est l’adresse e-mail en Cci de votre choix, qui restera invisible pour les personnes destinataires de la diffusion. Une fois l’adresse e-mail en Cci définie, vous devez activer l’option dédiée au niveau du [modèle de diffusion](create-templates.md).
 
 ![](../assets/do-not-localize/speech.png)En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support){target="_blank"} pour communiquer l’adresse e-mail en Cci à utiliser pour l’archivage.
 
@@ -33,24 +33,24 @@ La destination d&#39;archivage est l&#39;adresse email en Cci de votre choix, qu
 >Pour des raisons de confidentialité, les e-mails en Cci doivent être traités dans un système d’archivage capable de stocker en toute sécurité les informations d’identification personnelles (PII).
 
 
-## Activer Email Cci {#enable-bcc}
+## Activer la mise en copie Cci des e-mails {#enable-bcc}
 
-Pour activer la Cci pour un [modèle de diffusion](create-templates.md), procédez comme suit :
+Pour activer la mise en copie Cci pour un [modèle de diffusion](create-templates.md) spécifique, procédez comme suit :
 
-1. Depuis l&#39;explorateur Campaign, accédez au dossier des modèles de diffusion. Par défaut, les modèles de diffusion sont stockés dans la variable **[!UICONTROL Ressources]** > **[!UICONTROL Modèles]** > **[!UICONTROL Modèles de diffusion]** dossier.
-1. Editez le modèle de diffusion à mettre à jour en Cci.
+1. Depuis l’explorateur Campaign, accédez au dossier des modèles de diffusion. Par défaut, les modèles de diffusion sont stockés dans le dossier **[!UICONTROL Ressources]** > **[!UICONTROL Modèles]** > **[!UICONTROL Modèles de diffusion]**.
+1. Modifiez le modèle de diffusion à mettre à jour pour la mise en copie Cci.
 1. Cliquez sur le bouton **[!UICONTROL Propriétés]**.
-1. Dans la **[!UICONTROL Diffusion]** , vérifiez les **[!UICONTROL Email Cci]** .
+1. Dans l’onglet **[!UICONTROL Diffusion]**, cochez l’option **[!UICONTROL E-mail cci]**.
 
    ![](assets/email-bcc.png)
 
-1. Cliquez sur **[!UICONTROL Ok]** pour confirmer.
+1. Cliquez sur **[!UICONTROL OK]** pour confirmer.
 
-Une copie de tous les messages envoyés pour chaque diffusion basée sur ce modèle sera envoyée à l&#39;adresse email en Cci qui a été configurée pour votre plateforme.
+Une copie de tous les messages envoyés pour chaque diffusion basée sur ce modèle sera envoyée à l’adresse e-mail en Cci qui a été configurée pour votre plateforme.
 
-## Mécanisme de sécurisation et recommandations {#recommendations-bcc}
+## Mécanismes de sécurisation et recommandations {#recommendations-bcc}
 
-Lors de l’utilisation de la fonctionnalité Email Cci avec Adobe Campaign, les barrières de sécurité et recommandations suivantes s’appliquent :
+Lors de l’utilisation de la fonctionnalité de mise en copie Cci des e-mails avec Adobe Campaign, ces mécanismes de sécurisation et recommandations s’appliquent :
 
 * Vous ne pouvez utiliser qu’une seule adresse e-mail en Cci.
 
@@ -58,6 +58,6 @@ Lors de l’utilisation de la fonctionnalité Email Cci avec Adobe Campaign, les
 
 * L’option E-mail Cci <!--with Enhanced MTA--> assure la diffusion auprès de l’adresse e-mail en Cci avant la diffusion aux destinataires, ce qui peut entraîner l’envoi de messages en Cci même si les diffusions d’origine ont pu faire l’objet de rebonds. Pour plus d’informations sur les rebonds, voir [Présentation des diffusions en échec](delivery-failures.md).
 
-* Les emails envoyés à l&#39;adresse en Cci ne doivent pas être ouverts ni faire l&#39;objet de clics, car ces activités sont prises en compte dans la variable **[!UICONTROL Ouvertures totales]** et **[!UICONTROL Clics]** de l’analyse d’envoi, peut entraîner des erreurs de calcul.
+* Les e-mails envoyés à l’adresse en Cci ne doivent pas être ouverts ni faire l’objet de clics, car ces activités sont prises en compte dans la variable **[!UICONTROL Ouvertures totales]** et **[!UICONTROL Clics]** de l’analyse d’envoi, ce qui peut entraîner des erreurs de calcul.
 
 <!--Only successfully sent emails are taken in account, bounces are not.-->

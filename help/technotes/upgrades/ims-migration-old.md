@@ -5,9 +5,9 @@ exl-id: 63008b58-4384-4d2b-864a-57f11d701c01
 hide: true
 hidefromtoc: true
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '861'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -73,14 +73,14 @@ Vous pouvez maintenant ajouter votre profil de produit Campaign au projet, comme
 1. Affectez tous les profils de produit pertinents à l’API, par exemple « messagecenter » et enregistrez vos modifications.
 1. Accédez à l’onglet **Informations d’identification** de votre projet, puis copiez la valeur du champ **E-mail du compte technique**.
 
-### Etape 4 - Mettre à jour l&#39;opérateur technique dans la console cliente {#ims-migration-step-4}
+### Étape 4 : mettre à jour l’opérateur ou opératrice technique dans la console cliente {#ims-migration-step-4}
 
-Cette étape n’est nécessaire que si des autorisations de dossiers spécifiques ou des droits nommés ont été définis pour cet opérateur ou cette opératrice – et non via son groupe.
+Cette étape n’est nécessaire que si des autorisations de dossiers spécifiques ou des droits nommés ont été définis pour cet opérateur ou cette opératrice (et non via son groupe).
 
-Vous devez maintenant mettre à jour l’opérateur technique nouvellement créé dans la console cliente Adobe Campaign. Vous devez appliquer les autorisations de dossier des opérateurs et opératrices techniques existants au nouvel opérateur ou à la nouvelle opératrice technique.
+Vous devez maintenant mettre à jour l’opérateur technique nouvellement créé ou l’opératrice technique nouvellement créée dans la console cliente Adobe Campaign. Vous devez appliquer les autorisations de dossier des opérateurs et opératrices techniques existants au nouvel opérateur ou à la nouvelle opératrice technique.
 Pour mettre à jour cet opérateur ou cette opératrice, procédez comme suit :
 
-1. Dans l&#39;explorateur de la console cliente Campaign, accédez au **Administration > Gestion des accès > Opérateurs**.
+1. Dans l’explorateur de la console cliente Campaign, accédez à **Administration > Gestion des accès > Opérateurs et opératrices**.
 1. Accédez à l’opérateur ou opératrice technique existant(e) utilisé(e) pour les API.
 1. Accédez aux autorisations de dossier et vérifiez les droits.
 1. Appliquez les mêmes autorisations à l’opérateur ou opératrice technique nouvellement créé(e). L’adresse e-mail de cet opérateur ou de cette opératrice est la valeur de l’**e-mail du compte technique** copiée précédemment.
@@ -89,7 +89,7 @@ Pour mettre à jour cet opérateur ou cette opératrice, procédez comme suit :
 
 >[!CAUTION]
 >
->Le nouvel opérateur technique doit avoir effectué au moins un appel API à ajouter à la console cliente Campaign.
+>Le nouvel opérateur ou la nouvelle opératrice technique doit avoir effectué au moins un appel API à ajouter à la console cliente Campaign.
 >
 
 <!--

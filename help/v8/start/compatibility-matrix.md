@@ -6,25 +6,25 @@ role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
 source-git-commit: 374c0df2cd95e656cfbaa1fb355bf1f48828dfee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
 # Matrice de compatibilité de Campaign v8 {#compat-matrix}
 
-Ce document répertorie tous les systèmes et composants pris en charge pour le dernier build de **Adobe Campaign v8** console cliente. Sauf mention contraire, toutes les versions mineures sont prises en charge. Les produits et versions ne faisant pas partie de cette liste ne sont pas compatibles avec Adobe Campaign.
+Ce document répertorie tous les systèmes et composants pris en charge pour la dernière version de la console cliente d’**Adobe Campaign v8**. Sauf mention contraire, toutes les versions mineures sont prises en charge. Les produits et versions ne faisant pas partie de cette liste ne sont pas compatibles avec Adobe Campaign.
 
 Lorsque des versions spécifiques de ces systèmes et outils tiers arrivent en fin de vie (EOL), Adobe Campaign n&#39;est plus compatible avec celles-ci. Elles sont alors supprimées de cette matrice de compatibilité. Pour éviter tout problème, vérifiez que vous disposez des versions prises en charge des systèmes répertoriés dans la matrice de compatibilité.
 
 >[!NOTE]
 >
->Le serveur Adobe Campaign et la console cliente Campaign doivent avoir la même version. [Découvrez comment vérifier votre version](upgrades.md#version).
+>Le serveur Adobe Campaign et la console cliente Campaign doivent se trouver sur la même version. [Découvrez comment vérifier votre version](upgrades.md#version).
 
 ## Console cliente {#ClientConsoleoperatingsystems}
 
-Les systèmes d&#39;exploitation et les navigateurs suivants sont nécessaires pour utiliser la console cliente Campaign. [En savoir plus](connect.md).
+Les systèmes d’exploitation et le navigateur ci-après sont nécessaires pour utiliser la console cliente Campaign. [En savoir plus](connect.md).
 
 ### Systèmes d’exploitation{#op-systems}
 
@@ -33,7 +33,7 @@ Les systèmes d&#39;exploitation et les navigateurs suivants sont nécessaires p
 
 >[!NOTE]
 >
->La version 32 bits de la console cliente est obsolète depuis la version 8.5. À compter de la version 8.6, la console cliente est uniquement disponible en 64 bits. Pour plus d&#39;informations sur la mise à niveau de votre système, consultez cette [technote](../../technotes/upgrades/console.md).
+>Veuillez noter que la version 32 bits de la console cliente a été abandonnée depuis la version 8.5. Depuis la version 8.6, la console cliente est uniquement disponible en 64 bits. Pour plus d’informations sur la mise à niveau de votre système d’exploitation, reportez-vous à cette [note technique](../../technotes/upgrades/console.md).
 
 ### Navigateur web {#web-browsers}
 
@@ -62,7 +62,7 @@ Les bases de données externes compatibles avec le module Adobe Campaign Federa
 
 Pour envoyer des [notifications push](../send/push.md) avec Campaign, vous pouvez utiliser le SDK mobile Adobe Experience Platform en configurant l’extension Adobe Campaign Classic dans l’interface utilisateur de collecte de données.
 
-Les versions compatibles avec iOS et Android sont présentées dans la section [Documentation Adobe Developer](https://developer.adobe.com/client-sdks/home/)
+Les versions compatibles avec iOS et Android sont présentées dans la section [Documentation Adobe Developer](https://developer.adobe.com/client-sdks/home/)
 
 ## Accès web {#web-access}
 
@@ -74,8 +74,8 @@ Les navigateurs ci-après sont compatibles avec Campaign pour l’[accès à Int
 ## Autres ressources {#support}
 
 * [Mises à jour des versions de Campaign](upgrades.md)
-* [Vérifier la version de Campaign](upgrades.md#version)
-* [Installer la console cliente Campaign](connect.md)
-* [Versions de Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=fr){target="_blank"}.
+* [Vérifier votre version de Campaign](upgrades.md#version)
+* [Installer la console cliente Campaign](connect.md)
+* [Versions du panneau de contrôle](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=fr){target="_blank"}.
 
-Pour être informé des nouvelles versions des solutions Experience Cloud, abonnez-vous au [Mise à jour produit prioritaire des Adobes](https://www.adobe.com/fr/subscription/priority-product-update.html){target="_blank"}.
+Pour ne manquer aucune information sur les nouvelles versions de la solution Experience Cloud, abonnez-vous à la [Mise à jour produit prioritaire d’Adobe](https://www.adobe.com/fr/subscription/priority-product-update.html){target="_blank"}.

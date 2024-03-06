@@ -6,15 +6,15 @@ role: User
 level: Beginner
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
 source-git-commit: 43994eb29af2b85272de0ce4dc34cc66aba2e04a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1925'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Notes de mise à jour 2022{#2022-rn}
 
-Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs des **versions 2022 de Campaign Classic v8**.
+Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs des **versions 2022 de Campaign v8**.
 
 ## Version 8.4.2 {#release-8-4-2}
 
@@ -121,7 +121,7 @@ Reportez-vous à la [matrice de compatibilité de Campaign](compatibility-matrix
 
 >[!CAUTION]
 >
-> La mise à niveau de la console cliente est obligatoire. Découvrez comment mettre à niveau votre console cliente dans cette [page](../start/connect.md#download-ac-console).
+> La mise à niveau de la console cliente est obligatoire. Découvrez comment mettre à niveau votre console cliente sur cette [page](../start/connect.md#download-ac-console).
 
 _7 octobre 2022_
 

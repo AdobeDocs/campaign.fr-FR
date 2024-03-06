@@ -3,9 +3,9 @@ title: Mise à niveau de l’infrastructure d’envoi d’e-mails dans Campaign
 description: Mise à niveau de l’infrastructure d’envoi d’e-mails dans Campaign
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
 source-git-commit: 4c41e5d1fef1dcb3279a26f6025338e41525e6b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '331'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Cette modification affecte :
 
 Les mises à niveau des environnements de développement et d’évaluation ont commencé en **octobre 2023**.
 
-Les mises à niveau des environnements de production ont commencé à **Janvier 2024**.
+Les mises à niveau des environnements de production ont commencé en **janvier 2024**.
 
 ## À quoi s’attendre ?{#impact}
 
@@ -35,7 +35,7 @@ Les mises à niveau des environnements de production ont commencé à **Janvier 
 
 * Les instances de Campaign, que ce soit pour les environnements d’évaluation ou les environnements de production, ne pourront pas envoyer d’e-mails pendant la durée de la mise à niveau. Les autres fonctionnalités de Campaign ne devraient pas être affectées.
 
-## Forum aux questions {#aws-faq}
+## Questions fréquentes {#aws-faq}
 
 * **Cette mise à niveau est-elle obligatoire ?**
 

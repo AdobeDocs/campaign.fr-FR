@@ -6,9 +6,9 @@ title: Notes techniques d’Adobe Campaign
 description: Notes techniques de Campaign
 breadcrumb-title: Notes techniques de Campaign
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '63'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,6 +25,6 @@ ht-degree: 93%
    + [Mise à niveau de la version Apache](upgrades/apache.md)
    + [Navigateurs Internet](upgrades/browsers.md)
    + [Mises à niveau du système en 2023](upgrades/tech-stack-upgrade.md)
-   + [obsolescence de la console cliente 32 bits](upgrades/console.md)
+   + [Abandon de la console cliente 32 bits](upgrades/console.md)
    + [Modifications à venir du canal de notification push](upgrades/push-technote.md)
 + [Panneau de contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr)

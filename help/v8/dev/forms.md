@@ -6,9 +6,9 @@ role: Developer
 level: Beginner, Intermediate
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2573'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -183,7 +183,7 @@ Les conteneurs sont utilisés pour construire des contrôles complexes ayant rec
 
 ### Ajout d&#39;onglets (notebook) {#tab-container}
 
-Utilisez un conteneur **notebook** pour formater les données dans des pages accessibles à partir d&#39;onglets.
+Utilisez un conteneur **notebook** pour formater les données dans des pages accessibles à partir d’onglets.
 
 ![](assets/do-not-localize/form_exemple6.png)
 
@@ -200,7 +200,7 @@ Utilisez un conteneur **notebook** pour formater les données dans des pages acc
 </container>
 ```
 
-Le conteneur principal est défini par la variable **type=&quot;notebook&quot;** attribut. Les onglets sont déclarés dans les conteneurs enfants et le libellé des onglets est renseigné à partir de la variable **label** attribut.
+Le conteneur principal est défini par l’attribut **type=&quot;notebook&quot;**. Les onglets sont déclarés dans les conteneurs enfants et le libellé des onglets est renseigné à partir de l’attribut **label**.
 
 Ajoutez l&#39;attribut **style=&quot;down&quot;** pour forcer le positionnement vertical des libellés d&#39;onglet sous le contrôle. Cet attribut est facultatif. La valeur par défaut est **&quot;up&quot;**.
 
@@ -210,7 +210,7 @@ Ajoutez l&#39;attribut **style=&quot;down&quot;** pour forcer le positionnement 
 
 ### Ajout d&#39;icônes (iconbox) {#icon-list}
 
-Utilisez ce conteneur pour afficher une barre d&#39;icônes verticale permettant de sélectionner les pages à afficher.
+Utilisez ce conteneur pour afficher une barre d’icônes verticale permettant de sélectionner les pages à afficher.
 
 ![](assets/do-not-localize/form_exemple8.png)
 
@@ -227,7 +227,7 @@ Utilisez ce conteneur pour afficher une barre d&#39;icônes verticale permettant
 </container>
 ```
 
-Le conteneur principal est défini par la variable **type=&quot;iconbox&quot;** attribut. Les pages associées aux icônes sont déclarées dans les conteneurs enfants. Le libellé des icônes est renseigné à partir du champ **label** attribut.
+Le conteneur principal est défini par l’attribut **type=&quot;iconbox&quot;**. Les pages associées aux icônes sont déclarées dans les conteneurs enfants. Le libellé des icônes est renseigné à partir de l’attribut **label**.
 
 L&#39;icône d&#39;une page est renseignée à partir de l&#39;attribut `img="<image>"`, où `<image>` est le nom de l&#39;image correspondant à sa clé construite avec le nom et l&#39;espace de noms (par exemple &quot;xtk:properties.png&quot;).
 
@@ -248,17 +248,17 @@ Cet exemple illustre la visibilité des contrôles sur la valeur du champ &quot;
 </container>
 ```
 
-Un conteneur de visibilité est défini par l’attribut . **type=&quot;visibleGroup&quot;**. La variable **visibleIf** contient la condition de visibilité.
+Un conteneur de visibilité est défini par l’attribut **type=&quot;visibleGroup&quot;**. L’attribut **visibleIf** contient la condition de visibilité.
 
 Exemples de syntaxes de conditions :
 
 * **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;** : teste l&#39;égalité sur les données de type chaîne. La valeur de comparaison doit être entre guillemets.
-* **visibleIf=&quot;@gender >= 1 et @gender != 2&quot;**: condition sur une valeur numérique.
+* **visibleIf=&quot;@gender >= 1 and @gender != 2&quot;** : condition sur une valeur numérique.
 * **visibleIf=&quot;@boolean1=true or @boolean2=false&quot;** : test sur des champs booléens.
 
 ### Affichage conditionnel (enabledGroup) {#enabling-container}
 
-Ce conteneur pemet l&#39;activation ou la désactivation d&#39;un ensemble de données à partir d&#39;une condition dynamique. La désactivation d&#39;un contrôle empêche son édition. L&#39;exemple suivant illustre l&#39;activation des contrôles à partir de la valeur du champ &quot;Genre&quot; :
+Ce conteneur pemet l’activation ou la désactivation d’un ensemble de données à partir d’une condition dynamique. La désactivation d’un contrôle empêche son édition. L’exemple suivant illustre l’activation des contrôles à partir de la valeur du champ « Genre » :
 
 ```
 <container type="enabledGroup" enabledIf="@gender=1">
@@ -269,7 +269,7 @@ Ce conteneur pemet l&#39;activation ou la désactivation d&#39;un ensemble de do
 </container>
 ```
 
-Un conteneur d’activation est défini par la variable **type=&quot;enabledGroup&quot;** attribut. La variable **enabledIf** contient la condition d’activation.
+Un conteneur d’activation est défini par l’attribut **type=&quot;enabledGroup&quot;**. L’attribut **enabledIf** contient la condition d’activation.
 
 ## Modification d&#39;un lien {#editing-a-link}
 
@@ -287,13 +287,13 @@ Le contrôle d&#39;édition du lien dans son formulaire de saisie est :
 <input xpath="company"/>
 ```
 
-La sélection de la cible est accessible à partir du champ d&#39;édition. L’entrée est assistée par le type , de sorte qu’un élément cible puisse être facilement trouvé à partir des premiers caractères saisis. La recherche est ensuite basée sur la variable **Compute string** défini dans le schéma ciblé. Si le schéma n&#39;existe pas après validation dans le contrôle, un message de confirmation de création de la cible à la volée s&#39;affiche. La confirmation crée un nouvel enregistrement dans la table cible et l&#39;associe au lien.
+La sélection de la cible est possible à partir du champ d’édition. L’entrée est facilitée par l’auto-complétion de sorte qu’un élément cible puisse être facilement retrouvé à partir des premiers caractères saisis. La recherche est ensuite basée sur l’élément **Compute string** défini dans le schéma ciblé. Si le schéma n’existe pas après validation dans le contrôle, un message de confirmation de création de la cible à la volée s’affiche. La confirmation crée un nouvel enregistrement dans le tableau cible et l’associe au lien.
 
 Une liste déroulante permet de sélectionner un élément de la cible parmi la liste des enregistrements déjà créés.
 
 L&#39;icône **[!UICONTROL Modifier le lien]** (dossier) lance un formulaire de sélection avec la liste des éléments ciblés et une zone de filtre.
 
-La variable **[!UICONTROL Lien d’édition]** (loupe) lance la forme d&#39;édition de l&#39;élément lié. Le formulaire utilisé est déduit par défaut sur la clé du schéma ciblé. La variable **formulaire** permet de forcer le nom du formulaire d&#39;édition (par exemple &quot;cus:company2&quot;).
+L’icône **[!UICONTROL Modifier le lien]** (loupe) lance le formulaire d’édition de l’élément lié. Le formulaire utilisé est déduit par défaut de la clé du schéma ciblé. L’attribut **form** permet d’imposer le nom du formulaire d’édition (par exemple, « cus:company2 »).
 
 Vous pouvez restreindre le choix des éléments de la cible en ajoutant l’élément **`<sysfilter>`** à partir de la définition du lien dans le formulaire de saisie :
 
@@ -518,7 +518,7 @@ Exemple sur le champ &quot;Genre&quot; :
 
 ## Ajout d&#39;une case à cocher {#checkbox}
 
-Une case à cocher reflète un état booléen (sélectionné ou non). Par défaut, ce contrôle est utilisé par les champs &quot;Boolean&quot; (true/false). Une variable prenant la valeur par défaut 0 ou 1 peut être associée à ce bouton. Cette valeur peut être surchargée à l’aide de la variable **checkValue** attributs.
+Une case à cocher permet de refléter un état booléen (qu’elle soit cochée ou non). Par défaut, ce contrôle est utilisé par les champs de type « booléen » (true/false). On peut associer à ce bouton une variable qui prendra par défaut la valeur 0 ou 1. Cette valeur peut être surchargée à partir de l’attribut **checkValue**.
 
 ```
 <input xpath="@boolean1"/>

@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
 source-git-commit: 84b90cbd150c81edc81f5cc653db6fbe96af80aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '714'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -42,12 +42,12 @@ En tant qu’ancien utilisateur [!DNL Campaign Classic], veuillez noter que la p
 
 ## Architecture hybride {#hybrid-archi}
 
-Campaign v8 repose sur une **architecture hybride**. Si vous effectuez une transition à partir de Campaign Classic v7, veuillez noter que toutes les diffusions passent par le serveur de midsourcing.
+Campaign v8 repose sur une **architecture hybride**. Si vous effectuez une transition à partir de Campaign Classic v7, veuillez noter que toutes les diffusions passent par le serveur de midsourcing.
 
-En conséquence :
+En conséquence :
 
-* Le routage interne est **impossible** dans Campaign v8, et le compte externe a été désactivé en conséquence,
-* Le statut des diffusions n&#39;est pas mis à jour instantanément : un processus technique s&#39;exécute sur l&#39;instance Marketing pour mettre à jour les statuts des diffusions dans les délais impartis.
+* Le routage interne est **impossible** dans Campaign v8 et le compte externe a donc été désactivé.
+* Le statut des diffusions n’est pas mis à jour instantanément : un processus technique s’exécute sur l’instance Marketing pour mettre à jour les statuts des diffusions dans les délais impartis.
 
 
 ![](../assets/do-not-localize/glass.png) Pour en savoir plus sur l’envoi de BAT de messages transactionnels si vous effectuez une transition à partir de Campaign v7, consultez [cette page](../send/transactional-template.md#transition-from-v7).
@@ -87,7 +87,7 @@ Certaines fonctionnalités ne sont pas disponibles dans le cadre d’un [déploi
 
 Campaign v8 ne prend plus en charge certaines fonctionnalités historiques de Campaign Classic v7 telles que :
 
-* Social Marketing avec Facebook
+* Marketing des médias sociaux avec Facebook
 * Connecteur ACS (offre principale)
 * Intégration avec LDAP
 * Connexion utilisateur/mot de passe

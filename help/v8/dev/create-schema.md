@@ -6,9 +6,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 796af848-b537-4b8d-a601-fe0628a1fc83
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '433'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ L&#39;onglet **[!UICONTROL Aperçu]** génère automatiquement le schéma étend
 >
 >L&#39;enregistrement du schéma source lance automatiquement la génération du schéma étendu.
 
-Si vous devez vérifier la structure complète d’un schéma, vous pouvez utiliser la variable **[!UICONTROL Aperçu]** . Si le schéma a été étendu, vous pourrez visualiser toutes ses extensions. En complément, la variable **[!UICONTROL Documentation]** L’onglet affiche tous les attributs et éléments du schéma, ainsi que leurs propriétés (champ SQL, type/longueur, libellé, description). L&#39;onglet **[!UICONTROL Documentation]** s&#39;applique uniquement aux schémas générés.
+Si vous devez vérifier la structure complète d’un schéma, vous pouvez utiliser l’onglet **[!UICONTROL Aperçu]**. Si le schéma a été étendu, vous pourrez visualiser toutes ses extensions. En complément, l’onglet **[!UICONTROL Documentation]** affiche tous les attributs et éléments du schéma, ainsi que ses propriétés (champ SQL, type/longueur, libellé, description). L’onglet **[!UICONTROL Documentation]** s’applique uniquement aux schémas générés.
 
 ## Cas d&#39;utilisation : créer une table des contrats {#example--creating-a-contract-table}
 

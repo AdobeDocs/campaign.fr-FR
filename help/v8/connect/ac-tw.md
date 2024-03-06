@@ -6,9 +6,9 @@ feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1125'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ Pour lier votre instance Campaign à votre compte X, créez un service **Twitter
 >Chaque service **Twitter** doit également être créé par Adobe sur votre instance MID. Contactez votre représentant Adobe pour que votre environnement soit configuré.
 >
 
-Pour entrer des paramètres, vous devez accéder à la console cliente Adobe Campaign et aux autorisations de votre application X.
+Pour entrer des paramètres, vous devez accéder à la fois à la console cliente d’Adobe Campaign et aux autorisations de votre application X.
 
 1. Dans **Adobe Campaign**, accédez à l&#39;onglet **[!UICONTROL Profils et cibles]**, puis sélectionnez le lien **[!UICONTROL Services et abonnements]**.
 1. Créez un service.

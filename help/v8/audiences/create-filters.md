@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1708'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -255,13 +255,13 @@ Définissez les conditions de filtrage. Dans l&#39;exemple ci-dessous, vous alle
 
    ![](assets/select-operator.png)
 
-1. Sélectionnez une valeur attendue dans la variable **[!UICONTROL Valeur]** colonne . Vous pouvez combiner plusieurs filtres pour affiner votre requête. Pour ajouter une condition de filtre, cliquez sur **[!UICONTROL Ajouter]**.
+1. Sélectionnez une valeur attendue dans la colonne **[!UICONTROL Valeur]**. Vous pouvez combiner plusieurs filtres pour affiner votre requête. Pour ajouter une condition de filtre, cliquez sur **[!UICONTROL Ajouter]**.
 
    ![](assets/add-an-exp.png)
 
    >[!NOTE]
    >
-   >Vous pouvez hiérarchiser les expressions ou modifier l&#39;ordre des expressions de la requête en utilisant les flèches de la barre d&#39;outils.
+   >Vous pouvez hiérarchiser les expressions ou modifier l’ordre des expressions de la requête en utilisant les flèches de la barre d’outils.
 
 1. Trois opérateurs sont disponibles pour combiner des expressions :  **Et**, **Ou**, **Sauf**. Cliquez sur la flèche pour passer à **Ou**.
 
