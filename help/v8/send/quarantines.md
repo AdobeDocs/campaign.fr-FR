@@ -5,10 +5,10 @@ feature: Profiles, Monitoring
 role: User, Data Engineer
 level: Beginner
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
 workflow-type: tm+mt
-source-wordcount: '1233'
-ht-degree: 99%
+source-wordcount: '1221'
+ht-degree: 98%
 
 ---
 
@@ -120,8 +120,8 @@ Vous trouverez ci-dessous les instructions recommandées pour cette requête :
 
 * **Texte d&#39;erreur (texte de la quarantaine)** contenant « Momen_Code10_InvalidRecipient »
 * **Domaine d’e-mail (@domain)** égal à domain1.com OU **domaine d’email (@domain)** égal à domain2.com OU **domaine d’email (@domain)** égal à domain3.com
-* **Mise à jour du statut (@lastModified)** le ou après le JJ/MM/AAAA à HH:MM:SS AM
-* **Mise à jour du statut (@lastModified)** le ou avant le JJ/MM/AAAA à HH:MM:SS PM
+* **Mise à jour du statut (@lastModified)** sur ou après `MM/DD/YYYY HH:MM:SS AM`
+* **Mise à jour du statut (@lastModified)** le ou avant `MM/DD/YYYY HH:MM:SS PM`
 
 Une fois que vous disposez de la liste des destinations concernées, ajoutez une activité **[!UICONTROL Mise à jour de données]** pour définir leur statut sur **[!UICONTROL Valide]**, de façon à ce qu’elles soient supprimées de la liste de quarantaine par le workflow **[!UICONTROL Nettoyage de la base de données]**. Vous pouvez également les supprimer simplement de la table de quarantaine.
 
