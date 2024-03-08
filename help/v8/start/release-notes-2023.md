@@ -4,7 +4,8 @@ description: Liste des fonctionnalités et améliorations des versions 2023 de C
 feature: Release Notes
 role: User
 level: Beginner
-source-git-commit: 43994eb29af2b85272de0ce4dc34cc66aba2e04a
+exl-id: b860c843-155e-4abb-bdd6-b68dc7eaa0ee
+source-git-commit: 3a63539bc6bb20fa79bdac76dd60efe7b232458b
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Notes de mise à jour 2023 {#2023-rn}
 
-Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs des **versions 2022 de Campaign v8**.
+Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs des **versions 2023 de Campaign v8**.
 
 ## Version 8.5.2 {#release-8-5-2}
 
@@ -151,5 +152,3 @@ _27 janvier 2023_
 * La gestion des URL de tracking a été améliorée dans les workflows comportant plusieurs diffusions afin d’améliorer les performances. (NEO-50894) <!--OKKKK-->
 * Correction d’un problème qui entraînait l’échec de la réplication des schémas utilisant Xtkfolder. (NEO-46787) <!--OKKKK-->
 * Correction d’un problème en raison duquel la colonne personnalisée « lastModified » était déposée dans la table NmsSubscription. (NEO-48402)
-
-
