@@ -4,10 +4,11 @@ description: En savoir plus sur les versions et les mises à niveau de Campaign
 feature: Release Notes
 role: User
 level: Beginner
-source-git-commit: 43994eb29af2b85272de0ce4dc34cc66aba2e04a
+exl-id: 04bda36f-051f-41a3-84b3-6af3c5e34ab2
+source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
 workflow-type: tm+mt
 source-wordcount: '656'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -81,8 +82,3 @@ En règle générale, la mise à niveau vers la dernière version offre les avan
 En tant que client ou cliente de la version v8, si votre compte a été identifié comme devant être mis à niveau vers une nouvelle version, Adobe vous en informe directement.
 
 L’équipe d’Adobe accompagne et guide votre entreprise tout au long de ce parcours. Une équipe constituée de représentantes et représentants de l’assistance clientèle, de personnes responsables produit, d’ingénieures et ingénieurs, de personnes spécialisées dans les opérations techniques et de consultantes et consultants produit est là pour vous accompagner et assurer le bon déroulement de l’expérience.
-
-
-
-
-

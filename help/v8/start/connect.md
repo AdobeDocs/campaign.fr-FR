@@ -5,10 +5,10 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 9df599ec0a898a1af16cb92d334d50375fde86ba
+source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 100%
+source-wordcount: '953'
+ht-degree: 96%
 
 ---
 
@@ -117,7 +117,17 @@ En tant qu’administrateur/administratrice Campaign, vous êtes chargé(e) de c
 En savoir plus sur les utilisateurs et la définition des autorisations adéquates dans [cette section](gs-permissions.md).
 
 
-## Accès web{#web-access}
+## Accéder à Campaign dans un navigateur web {#connect-web-ac}
+
+### Interface utilisateur web {#connect-web-ui}
+
+Depuis la version Campaign v8.6, vous avez accès à la nouvelle **Interface utilisateur Web de Campaign**, disponible via l’environnement Adobe Experience Cloud central. Experience Cloud est la famille intégrée d’applications, de produits et de services de marketing numérique d’Adobe. Grâce à son interface intuitive, vous pouvez accéder rapidement à vos applications cloud, fonctionnalités de produit et services.
+
+Découvrez comment vous connecter à Adobe Experience Cloud et accéder à l’interface d’Adobe Campaign Web [dans cette page](campaign-ui.md#ac-web-ui).
+
+En savoir plus dans la section [Documentation de l’interface utilisateur web d’Adobe Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+
+### accès web {#web-access}
 
 Certaines parties de l&#39;application sont accessibles via un navigateur web à l&#39;aide d&#39;une interface utilisateur HTML : reporting, validation des diffusions, surveillance des instances, etc.
 
