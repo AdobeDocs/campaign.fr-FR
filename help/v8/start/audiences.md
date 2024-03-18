@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 source-git-commit: 59d33983db930b3a7dc022693d72704bda99e3a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '457'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -49,13 +49,13 @@ Vous pouvez surveiller le nombre de profils actifs utilisés sur votre instance 
 >
 >* Un profil qui a été ciblé par plusieurs diffusions n’est comptabilisé qu’une seule fois.
 >
->* Les profils ciblés dans le cadre du marketing social sur X (Twitter) ne sont pas pris en compte comme profils actifs.
+>* Les profils ciblés dans le cadre du marketing social sur X (anciennement Twitter) ne sont pas pris en compte comme profils actifs.
 
 ## Confidentialité et consentement{#privacy-and-consent}
 
 Adobe Campaign est un puissant outil servant à collecter et à traiter de très grands volumes de données, notamment des informations personnelles et des données sensibles. Adobe Campaign vous permet de collecter des données, y compris des informations personnelles et sensibles. Il est donc essentiel de recevoir et surveiller le consentement de vos destinataires.
 
-![](../assets/do-not-localize/book.png) Découvrez comment gérer la confidentialité et le consentement dans [Documentation de Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr){target="_blank"}.
+![](../assets/do-not-localize/book.png) Découvrez comment gérer la confidentialité et le consentement dans la [documentation d’Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr){target="_blank"}.
 
 **Rubriques connexes** 
 

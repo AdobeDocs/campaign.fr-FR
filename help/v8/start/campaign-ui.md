@@ -4,10 +4,11 @@ description: Découvrir comment parcourir et utiliser l’interface utilisateur 
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: 9ad8158f280acae2c2d10161f8ac6157398b9e3d
-workflow-type: tm+mt
+exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
+source-git-commit: 0f5efba364ef924447324bdd806e15e6db8d799d
+workflow-type: ht
 source-wordcount: '1011'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,14 +33,14 @@ Vous pouvez accéder à Adobe Campaign à partir de sa console cliente ou de so
 
 ## Utiliser la console cliente {#ui-access}
 
-La console cliente Campaign est une application native qui communique avec le serveur applicatif d’Adobe Campaign par le biais de protocoles Internet standard, tels que SOAP et HTTP. La console cliente Campaign centralise toutes les fonctionnalités et tous les paramètres et requiert une bande passante minimale, car elle repose sur un cache local. Conçue pour un déploiement facile, la console cliente Campaign peut être déployée à partir d’un navigateur Internet et être mise à jour automatiquement. En outre, elle ne nécessite aucune configuration réseau spécifique, car elle génère uniquement du trafic HTTP(S).  [En savoir plus sur la console cliente Campaign](../start/connect.md). Vous pouvez passer à l&#39;interface utilisateur Web de Campaign à partir de la carte dédiée dans la page d&#39;accueil de la console cliente.
+La console cliente Campaign est une application native qui communique avec le serveur applicatif d’Adobe Campaign par le biais de protocoles Internet standard, tels que SOAP et HTTP. La console cliente Campaign centralise toutes les fonctionnalités et tous les paramètres et requiert une bande passante minimale, car elle repose sur un cache local. Conçue pour un déploiement facile, la console cliente Campaign peut être déployée à partir d’un navigateur Internet et être mise à jour automatiquement. En outre, elle ne nécessite aucune configuration réseau spécifique, car elle génère uniquement du trafic HTTP(S).  [En savoir plus sur la console cliente Campaign](../start/connect.md). Vous pouvez passer à l’interface utilisateur web de Campaign à partir de la vignette dédiée dans la page d’accueil de la console cliente.
 
 ![](assets/web-ui.png)
 
 
 >[!NOTE]
 >
->Si la nouvelle carte d’accès n’est pas affichée, assurez-vous que les champs suivants ne sont pas vides dans votre compte externe Adobe Experience Cloud : **Serveur**, **Client**, **Serveur de rappel**, et **Marque de correspondance**.
+>Si la nouvelle vignette d’accès n’est pas affichée, assurez-vous que les champs suivants ne sont pas vides dans votre compte externe Adobe Experience Cloud : **Serveur**, **Client**, **Serveur de rappel**, et **Marque de correspondance**.
 
 
 Vous pouvez également utiliser un navigateur web pour accéder à Campaign. Dans ce contexte, seul un sous-ensemble des fonctionnalités de Campaign est disponible. [En savoir plus](#web-browser)
