@@ -8,10 +8,10 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="S’applique également à Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="S’applique à Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: a494ac834b1febcafe04f4bb05eb74834df7b024
+source-git-commit: a280e560a6e84f5afa214daaded9ac5331018d7c
 workflow-type: tm+mt
-source-wordcount: '1408'
-ht-degree: 56%
+source-wordcount: '1413'
+ht-degree: 55%
 
 ---
 
@@ -136,7 +136,7 @@ Pour vérifier si cela vous concerne, vous pouvez filtrer vos **services et abon
 ![](assets/filter-services-ios.png)
 
 
-* Si l’un de vos services de notification push actifs utilise la variable **Authentification par certificat** , vos mises en oeuvre actuelles doivent être examinées et déplacées vers un **Authentification basée sur les jetons** comme décrit ci-dessous.
+* Si l’un de vos services de notification push actifs utilise la variable **Authentification par certificat** en mode (.p12), vos mises en oeuvre actuelles doivent être examinées et déplacées vers une **Authentification basée sur les jetons** mode (.p8) comme décrit ci-dessous.
 
 * Si votre configuration utilise exclusivement la variable **Authentification basée sur les jetons** pour les notifications push iOS, votre mise en oeuvre est déjà à jour et aucune autre action ne sera requise de votre part.
 
@@ -157,9 +157,9 @@ Pour vérifier si cela vous concerne, vous pouvez filtrer vos **services et abon
 Pour déplacer vos applications mobiles iOS vers le mode d&#39;authentification basé sur les jetons, procédez comme suit :
 
 1. Accédez à votre liste de **services et abonnements**.
-1. Répertorier toutes les applications mobiles utilisant la variable **Authentification par certificat** mode .
+1. Répertorier toutes les applications mobiles utilisant la variable **Authentification par certificat** mode (.p12).
 1. Modifiez chacune de ces applications mobiles et accédez au **Certificat/clé privée** .
-1. Dans la **Mode d’authentification** , sélectionnez **Authentification basée sur les jetons**.
+1. Dans la **Mode d’authentification** , sélectionnez **Authentification basée sur les jetons** mode (.p8).
 1. Renseignez les paramètres de connexion de l&#39;APNS **[!UICONTROL ID de clé]**, **[!UICONTROL Identifiant de l’équipe]** et **[!UICONTROL Bundle Id]** sélectionnez ensuite votre certificat p8 en cliquant sur **[!UICONTROL Entrez la clé privée...]**.
 
    ![](assets/token-based-certif.png)
