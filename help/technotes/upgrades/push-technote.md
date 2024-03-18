@@ -8,24 +8,30 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="S’applique également à Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="S’applique à Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
+source-git-commit: c81744fdf4a4fc47820c077f69288a0ea66fa5e4
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 100%
+source-wordcount: '1408'
+ht-degree: 64%
 
 ---
 
-# Modifications à venir du canal de notification push {#push-upgrade}
+# Modifications du canal de notification push {#push-upgrade}
 
-Vous pouvez utiliser Campaign pour envoyer des notifications push sur les appareils Android. Pour ce faire, Campaign repose sur des services d’abonnement spécifiques. Certaines modifications importantes apportées au service Android FCM (Firebase Cloud Messaging) seront publiées en 2024 et auront une incidence sur votre mise en œuvre d’Adobe Campaign. Il se peut que la configuration de vos services d’abonnement pour les notifications push Android doive être mise à jour pour prendre en charge cette modification.
+Vous pouvez utiliser Campaign pour envoyer des notifications push sur des appareils iOS et Android. Pour ce faire, Campaign repose sur les services d&#39;abonnement aux applications mobiles.
 
-## Qu’est-ce qui a changé ? {#fcm-changes}
+Certaines modifications importantes apportées au service FCM (Android Firebase Cloud Messaging) sont publiées en 2024 et peuvent avoir une incidence sur votre mise en oeuvre d’Adobe Campaign. Il se peut que la configuration de vos services d’abonnement pour les notifications push Android doive être mise à jour pour prendre en charge cette modification.
+
+En outre, Adobe recommande vivement de passer à la connexion basée sur les jetons aux APNS plutôt qu’à une connexion basée sur certains, qui est plus sécurisée et évolutive.
+
+## Service Google Android Firebase Cloud Messaging (FCM) {#fcm-push-upgrade}
+
+### Qu’est-ce qui a changé ? {#fcm-changes}
 
 Dans le cadre des efforts constants de Google pour améliorer ses services, les API FCM héritées seront abandonnées le **20 juin 2024**. Pour en savoir plus sur le protocole HTTP Firebase Cloud Messaging, consultez la [documentation de Google Firebase](https://firebase.google.com/docs/cloud-messaging/http-server-ref){target="_blank"}.
 
 Adobe Campaign Classic v7 et Adobe Campaign v8 prennent déjà en charge les dernières API pour envoyer des notifications push. Cependant, certaines anciennes implémentations dépendent toujours des API héritées. Ces implémentations doivent être mises à jour.
 
-## Cela vous concerne-t-il ? {#fcm-impact}
+### Cela vous concerne-t-il ? {#fcm-impact}
 
 Si votre implémentation actuelle prend en charge les services d’abonnement se connectant à FCM à l’aide des API héritées, cela vous concerne. La migration vers les dernières API est obligatoire pour éviter toute interruption de service. Dans ce cas, les équipes Adobe vous contacteront.
 
@@ -38,9 +44,9 @@ Pour vérifier si cela vous concerne, vous pouvez filtrer vos **services et abon
 
 * Si votre configuration utilise exclusivement l’API **HTTP v1** pour les notifications push Android, vous êtes déjà en conformité et aucune autre action ne sera requise de votre part.
 
-## Migrer vers Adobe Developer Console {#fcm-migration-procedure}
+### Migrer vers Adobe Developer Console {#fcm-migration-procedure}
 
-### Conditions préalables {#fcm-migration-prerequisites}
+#### Conditions préalables {#fcm-migration-prerequisites}
 
 * Pour Campaign Classic v7, la prise en charge de HTTP v1 a été ajoutée à la version 20.3.1. Si votre environnement s’exécute sur une ancienne version, une condition préalable à la migration vers HTTP v1 est de mettre à niveau votre environnement vers la [dernière version de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=fr){target="_blank"}. Pour Campaign v8, HTTP v1 est pris en charge par toutes les versions et aucune mise à niveau n’est nécessaire.
 
@@ -50,7 +56,7 @@ Pour vérifier si cela vous concerne, vous pouvez filtrer vos **services et abon
 
 * En tant qu’utilisateur ou utilisatrice On-Premise de Campaign Classic v7, vous devez mettre à niveau les serveurs d’exécution Marketing et en temps réel. Le serveur de midsourcing n’est pas affecté.
 
-### Procédure de migration {#fcm-migration-steps}
+#### Procédure de migration {#fcm-migration-steps}
 
 Pour migrer votre environnement vers HTTP v1, procédez comme suit :
 
@@ -101,3 +107,65 @@ Vous pouvez ainsi :
 * définir le niveau de **[!UICONTROL visibilité]** de votre notification sur public, privé ou secret.
 
 Pour plus d’informations sur les **[!UICONTROL options supplémentaires HTTP v1]** et sur la façon de remplir ces champs, consultez la [documentation FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
+
+
+
+
+## Service Apple iOS Push Notification (APNS) {#apns-push-upgrade}
+
+### Qu’est-ce qui a changé ? {#ios-changes}
+
+Comme recommandé par Apple, vous devez sécuriser vos communications avec le service Apple Push Notification (APN) en utilisant des jetons d’authentification sans état.
+
+L’authentification par jeton offre un moyen sans état de communiquer avec les APNS. La communication sans état est plus rapide que la communication basée sur un certificat, car elle ne nécessite pas d’APNS pour rechercher le certificat, ou d’autres informations, liés à votre serveur de fournisseur. L’utilisation de l’authentification par jeton présente d’autres avantages :
+
+* Vous pouvez utiliser le même jeton depuis plusieurs serveurs de fournisseurs.
+
+* Vous pouvez utiliser un jeton pour distribuer des notifications pour toutes les applications de votre entreprise.
+
+En savoir plus sur les connexions basées sur les jetons aux APNS dans [Documentation destinée aux développeurs Apple](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"}.
+
+Adobe Campaign Classic v7 et Adobe Campaign v8 prennent en charge les connexions basées sur des jetons et sur des certificats. Si votre mise en oeuvre repose sur une connexion basée sur un certificat, Adobe vous recommande vivement de la mettre à jour vers une connexion basée sur un jeton.
+
+### Cela vous concerne-t-il ? {#ios-impact}
+
+Si votre mise en oeuvre actuelle repose sur des demandes basées sur des certificats pour vous connecter aux APNS, vous êtes concerné. La migration vers une connexion basée sur un jeton est recommandée.
+
+Pour vérifier si cela vous concerne, vous pouvez filtrer vos **services et abonnements** selon le filtre ci-dessous :
+
+![](assets/filter-services-ios.png)
+
+
+* Si l’un de vos services de notification push actifs utilise la variable **Authentification par certificat** , vos mises en oeuvre actuelles doivent être examinées et déplacées vers un **Authentification basée sur les jetons** comme décrit ci-dessous.
+
+* Si votre configuration utilise exclusivement la variable **Authentification basée sur les jetons** pour les notifications push iOS, votre mise en oeuvre est déjà à jour et aucune autre action ne sera requise de votre part.
+
+### Migrer vers Adobe Developer Console {#ios-migration-procedure}
+
+#### Conditions préalables {#ios-migration-prerequisites}
+
+* Pour Campaign Classic v7, la prise en charge de **Authentification basée sur les jetons** Le mode a été ajouté à la version 20.2. Si votre environnement s’exécute sur une ancienne version, une condition préalable à cette modification est de mettre à niveau votre environnement vers [dernier build de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=fr){target="_blank"}. Pour Campaign v8, **Authentification basée sur les jetons** est pris en charge par toutes les versions et aucune mise à niveau n’est nécessaire.
+
+* Vous avez besoin d’une clé de signature de jeton d’authentification APNS pour générer les jetons utilisés par votre serveur. Vous demandez cette clé à votre compte de développeur Apple, en suivant la procédure décrite à la section [Documentation destinée aux développeurs Apple](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"}.
+
+* Pour les déploiements hybrides, hébergés et Managed Services, en plus de la procédure de migration ci-dessous, contactez Adobe pour mettre à jour votre serveur d’exécution en temps réel (RT) Le serveur de midsourcing n’est pas affecté.
+
+* En tant qu’utilisateur ou utilisatrice On-Premise de Campaign Classic v7, vous devez mettre à niveau les serveurs d’exécution Marketing et en temps réel. Le serveur de midsourcing n’est pas affecté.
+
+#### Procédure de migration {#ios-migration-steps}
+
+Pour migrer vos applications mobiles iOS vers le mode d&#39;authentification basé sur les jetons, procédez comme suit :
+
+1. Accédez à votre liste de **services et abonnements**.
+1. Répertorier toutes les applications mobiles utilisant la variable **Authentification par certificat** mode .
+1. Modifiez chacune de ces applications mobiles et accédez au **Certificat/clé privée** .
+1. Dans la **Mode d’authentification** , sélectionnez **Authentification basée sur les jetons**.
+1. Renseignez les paramètres de connexion de l&#39;APNS **[!UICONTROL ID de clé]**, **[!UICONTROL Identifiant de l’équipe]** et **[!UICONTROL Bundle Id]** sélectionnez ensuite votre certificat p8 en cliquant sur **[!UICONTROL Entrez la clé privée...]**.
+
+   ![](assets/token-based-certif.png)
+
+1. Cliquez sur **[!UICONTROL Tester la connexion]** pour vérifier que votre configuration est correcte et que le serveur a accès aux APNS. Pour les déploiements Mid-sourcing, la variable **[!UICONTROL Tester la connexion]** ne peut pas vérifier si le serveur a accès aux APNS.
+1. Cliquez sur **[!UICONTROL Suivant]** pour passer à la configuration de l’application de production et procédez comme décrit ci-dessus.
+1. Cliquez sur **[!UICONTROL Terminer]**, puis sur **[!UICONTROL Enregistrer]**.
+
+Votre application iOS est maintenant déplacée vers le mode d&#39;authentification basé sur les jetons.
