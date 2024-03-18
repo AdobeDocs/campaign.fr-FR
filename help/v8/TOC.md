@@ -8,7 +8,7 @@ breadcrumb-title: Documentation Campaign v8
 source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -139,8 +139,8 @@ ht-degree: 96%
 + Intégrations {#connect}
    + [Connecter des campagnes à d’autres solutions](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
-      + [Partage et synchronisation d’audiences et d’attributs de profil](connect/ac-aep.md)
-      + [Mettre à jour les profils AEP depuis les landing pages Campaign](connect/ac-aep-landing-pages.md)
+      + [Partager et synchroniser des audiences et des attributs de profil](connect/ac-aep.md)
+      + [Mettre à jour les profils AEP depuis les pages des destination Campaign](connect/ac-aep-landing-pages.md)
    + [Campaign + Journey Optimizer](connect/ac-ajo.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
@@ -190,7 +190,7 @@ ht-degree: 96%
       + [Filtrage des schémas](dev/filter-schema.md)
       + [Structure d&#39;un schéma](dev/schema-structure.md)
       + [Mapping de la base de données](dev/database-mapping.md)
-      + [Principales directions](dev/database-keys.md)
+      + [Gestion des clés](dev/database-keys.md)
       + [Gestion des liens](dev/database-links.md)
       + [Limiter l’affichage des PI](dev/restrict-pi-view.md)
       + [Utilisation d’une table des destinataires personnalisée](dev/custom-recipient.md)
