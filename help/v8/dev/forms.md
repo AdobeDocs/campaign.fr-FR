@@ -5,10 +5,10 @@ feature: Web Forms, Landing Pages
 role: Developer
 level: Beginner, Intermediate
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '2573'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -87,7 +87,7 @@ Le contrôle d&#39;édition s&#39;adapte automatiquement au type de données cor
 
 Par défaut, chaque champ est affiché sur une seule ligne et occupe tout l&#39;espace disponible selon le type de données.
 
-![](../assets/do-not-localize/book.png) Tous les attributs de formulaires sont répertoriés dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=fr){target="_blank"}.
+Tous les attributs de formulaire sont répertoriés dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=fr){target="_blank"}.
 
 ## Mise en forme {#formatting}
 

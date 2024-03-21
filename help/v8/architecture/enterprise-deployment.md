@@ -5,10 +5,10 @@ feature: Architecture, FFDA, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -84,13 +84,13 @@ La base de données PostgreSQL sur l&#39;instance de mid-sourcing est utilisée 
 
 Avec la base de données [!DNL Campaign] cloud, les appels unitaires d&#39;explosion ne sont pas recommandés en raison des performances (latence et simultanéité). L&#39;opération par lots est toujours préférable. Afin de garantir des performances optimales des API, Campaign gère toujours les appels API au niveau de la base de données locale.
 
-![](../assets/do-not-localize/glass.png) [Le mécanisme d&#39;évaluation des API est présenté dans cette page](staging.md).
+[Le mécanisme d’évaluation des API est présenté dans cette page](staging.md)
 
 ### Nouvelles API{#new-apis}
 
 De nouvelles API sont disponibles pour gérer la synchronisation des données entre la base de données [!DNL Campaign] locale et la base de données cloud. Un nouveau mécanisme a également été introduit pour gérer les appels API au niveau de la base de données locale afin d&#39;éviter la latence et d&#39;améliorer les performances globales.
 
-![](../assets/do-not-localize/glass.png) [Les nouvelles API sont présentées dans cette page](new-apis.md).
+[Les nouvelles API sont présentées dans cette page](new-apis.md)
 
 
 ### Réplication des données{#data-replication}

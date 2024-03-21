@@ -5,10 +5,10 @@ feature: Control Panel, Monitoring
 role: Admin
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '307'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ Principaux avantages :
 
 Vous pouvez également utiliser le Panneau de contrôle Campaign pour configurer les paramètres de votre instance, tels que les listes autorisées d’adresses IP, les autorisations d’URL et récupérer des informations sur votre instance.
 
-![](../assets/do-not-localize/book.png) Apprenez-en davantage dans la [documentation du Panneau de contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"}.
+En savoir plus dans [Documentation du Panneau de Contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"}.
 
 ## Comment accéder au Panneau de contrôle ? {#ac-control-panel-access}
 

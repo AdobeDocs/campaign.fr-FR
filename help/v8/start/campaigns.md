@@ -5,10 +5,10 @@ feature: Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
-source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ Avec Adobe Campaign, vous pouvez créer, configurer, exécuter et analyser tout
 
 ![](assets/calendar.png)
 
-![](../assets/do-not-localize/book.png) Découvrez comment parcourir et implémenter des campagnes marketing dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=fr).
+Découvrez comment accéder aux campagnes marketing et les mettre en oeuvre dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=fr).
 
 ## Étapes clés pour bien démarrer{#gs-ac-start}
 
@@ -56,7 +56,7 @@ Les étapes clés permettant de créer une campagne marketing cross-canal sont l
 
    Définissez une hiérarchie, un planning et un budget, puis ajoutez des ressources et sélectionnez des opérateurs.
 
-   ![](../assets/do-not-localize/book.png) Découvrez comment créer un plan marketing et configurer des campagnes sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=fr).
+   Découvrez comment créer un plan marketing et configurer des campagnes dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=fr).
 
    Toutes les campagnes marketing sont basées sur un modèle qui stocke les principaux paramètres et fonctionnalités. Un modèle natif est fourni pour créer une opération pour laquelle aucune configuration spécifique n&#39;a été définie. Vous pouvez créer et configurer des modèles d&#39;opération, puis créer des opérations à partir de ces modèles.
 
@@ -78,11 +78,11 @@ Les étapes clés permettant de créer une campagne marketing cross-canal sont l
 
    ![](assets/campaign-dashboard.png)
 
-   ![](../assets/do-not-localize/book.png) Découvrez comment créer et lancer des diffusions de campagnes marketing sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=fr).
+   Découvrez comment créer et démarrer des diffusions de campagne marketing dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=fr).
 
    Vous pouvez associer divers documents à une campagne, comme des rapports, photos, pages web, diagrammes, etc.
 
-   ![](../assets/do-not-localize/book.png) Pour en savoir plus sur les documents associés, consultez [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html?lang=fr).
+   En savoir plus sur les documents associés dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html?lang=fr).
 
 1. **Configuration du processus de validation**
 

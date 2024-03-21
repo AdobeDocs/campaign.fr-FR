@@ -5,10 +5,10 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 86fa52c445b89227cfabb65e74627c5da7d3db1f
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1049'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ Deux types d’environnements sont disponibles :
 
 Vous pouvez exporter et importer des packages d’un environnement à l’autre.
 
-![](../assets/do-not-localize/book.png)En savoir plus sur les packages dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=fr){target="_blank"}.
+En savoir plus sur les packages dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=fr){target="_blank"}
 
 ## Modèles de déploiement {#ac-deployment}
 
@@ -100,7 +100,7 @@ Pour que les comptes externes partagés soient le compte par défaut pour l’en
 
 La messagerie transactionnelle (Message Center) est le module de Campaign conçu pour gérer les messages de déclenchement.
 
-![](../assets/do-not-localize/glass.png) Découvrez comment envoyer des messages transactionnels dans [cette section](../send/transactional.md).
+Découvrez comment envoyer des messages transactionnels dans [cette section](../send/transactional.md).
 
 En réponse à l&#39;action d&#39;un client sur un site web, un événement est envoyé à Campaign par l&#39;intermédiaire d&#39;une API REST et le modèle de message est renseigné avec les informations ou les données fournies par le biais de l&#39;appel API. En outre, un message transactionnel est envoyé en temps réel au client. Ces messages peuvent être envoyés individuellement ou par lots via e-mail, SMS ou notifications push.
 
@@ -108,7 +108,7 @@ Dans cette architecture spécifique, la cellule d&#39;exécution est séparée d
 
 * L&#39;**instance de pilotage** (ou instance marketing) est utilisée par les spécialistes marketing et les équipes informatiques pour créer, configurer et publier des modèles de messages. Cette instance centralise également la surveillance et l&#39;historique des événements.
 
-  ![](../assets/do-not-localize/glass.png) Découvrez comment créer et publier des modèles de messages dans [cette section](../send/transactional.md).
+  Découvrez comment créer et publier des modèles de messages dans [cette section](../send/transactional.md).
 
 * L&#39;**instance d&#39;exécution** renvoie les événements entrants (réinitialisation du mot de passe ou commandes à partir d&#39;un site web, par exemple) et envoie des messages personnalisés. Il peut y avoir plusieurs instances d&#39;exécution pour traiter les messages par l&#39;intermédiaire de la répartition de charge et mettre à l&#39;échelle le nombre d&#39;événements à poursuivre pour une disponibilité maximale.
 

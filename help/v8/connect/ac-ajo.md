@@ -5,10 +5,10 @@ role: Admin, User
 feature: Journey Optimizer Integration
 level: Beginner
 exl-id: 52d8e2a5-9fdf-498a-bdbd-13a9935a94d6
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -22,7 +22,7 @@ Les étapes de base consistent à créer un modèle de message transactionnel da
 ![](assets/ajo-integration.png)
 
 
-![](../assets/do-not-localize/book.png) [Découvrez cette intégration dans cet exemple complet](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=fr){target="_blank"}.
+[Découvrez cette intégration dans cet exemple de bout en bout](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=fr){target="_blank"}.
 
 
-![](../assets/do-not-localize/book.png) [En savoir plus dans la documentation Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=fr){target="_blank"}.
+[En savoir plus dans la documentation Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=fr){target="_blank"}.

@@ -5,10 +5,10 @@ feature: Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '2745'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -20,9 +20,9 @@ Le système Adobe Campaign est très flexible et peut être étendu au-delà de
 
 Afin de mieux comprendre le fonctionnement des tables intégrées de Campaign et leurs interactions les unes avec les autres, consultez [cette section](datamodel.md).
 
-![](../assets/do-not-localize/glass.png) Pour commencer à utiliser les schémas de Campaign, consultez [cette section](schemas.md).
+Lire [cette section](schemas.md) pour commencer à utiliser les schémas de Campaign.
 
-![](../assets/do-not-localize/glass.png) Découvrez comment configurer des schémas d&#39;extension afin d&#39;étendre le modèle de données conceptuel de la base de données Adobe Campaign sur [cette page](extend-schema.md).
+Découvrez comment configurer des schémas d’extension afin d’étendre le modèle de données conceptuel de la base de données Adobe Campaign dans [cette page](extend-schema.md).
 
 ## Architecture du modèle de données {#data-model-architecture}
 

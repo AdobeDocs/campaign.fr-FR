@@ -5,10 +5,10 @@ feature: SMS
 role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '460'
-ht-degree: 95%
+ht-degree: 72%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 95%
 
 Utilisez Adobe Campaign pour envoyer des messages SMS personnalisés.
 
-![](../assets/do-not-localize/book.png) Découvrez comment commencer à utiliser le canal SMS dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-channel.html?lang=fr){target="_blank"}
+Découvrez comment commencer à utiliser le canal SMS dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-channel.html?lang=fr){target="_blank"}
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Pour diffuser vers un téléphone mobile, vous devez avoir :
 
 * un modèle de diffusion dans lequel est référencé ce compte externe.
 
-![](../assets/do-not-localize/book.png) Découvrez comment configurer un canal SMS dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=fr#sending-messages){target="_blank"}
+Découvrez comment configurer un canal SMS dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=fr#sending-messages){target="_blank"}
 
 Avant d&#39;envoyer des SMS :
 
@@ -45,15 +45,15 @@ De plus, vous devez connaître le protocole et les paramètres SMS. Découvrez c
 
    ![](assets/delivery_step_1.png)
 
-   ![](../assets/do-not-localize/book.png) Pour des informations générales sur la création d&#39;une diffusion, reportez-vous à la section [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=fr#sending-messages){target="_blank"}.
+   Pour des informations générales sur la création d&#39;une diffusion, reportez-vous à la section [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=fr#sending-messages){target="_blank"}.
 
 1. Sélectionnez un modèle de diffusion référençant le compte externe approprié pour envoyer les diffusions SMS.
 
    ![](assets/sms-template-list.png)
 
-   ![](../assets/do-not-localize/book.png) Découvrez comment créer un compte externe SMPP dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=fr#creating-an-smpp-external-account){target="_blank"}
+   Découvrez comment créer un compte externe SMPP dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=fr#creating-an-smpp-external-account){target="_blank"}
 
-   ![](../assets/do-not-localize/book.png) Découvrez comment créer un modèle de diffusion pour diffuser sur les mobiles dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=fr#changing-the-delivery-template){target="_blank"}
+   Découvrez comment créer un modèle de diffusion à diffuser vers mobiles dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=fr#changing-the-delivery-template){target="_blank"}
 
 1. Identifiez votre diffusion avec un libellé, un code et une description.
 
@@ -69,17 +69,17 @@ Les étapes clés de création et de conception d&#39;un SMS sont présentées d
 
 * Créer un SMS
 
-  ![](../assets/do-not-localize/book.png) [Découvrez comment créer une diffusion SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html?lang=fr#sending-messages){target="_blank"}
+  [Découvrez comment créer une diffusion SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html?lang=fr#sending-messages){target="_blank"}
 
 * Concevoir le contenu du SMS
 
-  ![](../assets/do-not-localize/book.png) [En savoir plus sur la définition du contenu SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html?lang=fr#defining-the-sms-content){target="_blank"}
+  [Découvrez comment définir le contenu du SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html?lang=fr#defining-the-sms-content){target="_blank"}
 
 * Sélectionner l’audience de votre e-mail
 
-  ![](../assets/do-not-localize/book.png) [Découvrez comment définir la population cible](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html?lang=fr){target="_blank"}
+  [Découvrez comment définir la population cible](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html?lang=fr){target="_blank"}
 
-![](../assets/do-not-localize/glass.png)Les étapes de définition de l&#39;audience sont décrites sur [cette page](../start/audiences.md).
+Les étapes de définition d’une audience sont présentées dans la section [cette page](../start/audiences.md).
 
 ## Tester votre SMS
 
@@ -90,9 +90,9 @@ Pour visualiser le rendu du message avec sa personnalisation, cliquez sur **[!UI
 Pour envoyer un bon à tirer, reportez-vous aux sections suivantes de la documentation de Campaign Classic v7 :
 
 * Valider une diffusion et envoyer des BAT
-  ![](../assets/do-not-localize/book.png) [En savoir plus sur les étapes clés de validation d’une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target="_blank"}
+  [Découvrez les étapes clés de validation d&#39;une diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=fr){target="_blank"}
 * Ajouter des adresses de contrôle
-  ![](../assets/do-not-localize/book.png) [En savoir plus sur les adresses de contrôle](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html?lang=fr){target="_blank"}
+  [Découvrez les adresses de contrôle](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html?lang=fr){target="_blank"}
 
 ## Envoyer et surveiller les diffusions par SMS
 
@@ -100,8 +100,8 @@ Les étapes clés d&#39;envoi et de surveillance d&#39;un SMS sont présentées 
 
 * Envoi, surveillance et suivi de diffusions par SMS
 
-  ![](../assets/do-not-localize/book.png) [En savoir plus sur les outils d’envoi, de surveillance et de suivi des SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-send.html?lang=fr#sending-messages){target="_blank"}
+  [En savoir plus sur les outils d’envoi, de surveillance et de suivi des SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-send.html?lang=fr#sending-messages){target="_blank"}
 
 * Dépanner les problèmes de diffusions par SMS
 
-  ![](../assets/do-not-localize/book.png) [En savoir plus sur le dépannage des SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/troubleshooting-sms.html?lang=fr#sending-messages){target="_blank"}
+  [En savoir plus sur le dépannage des SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/troubleshooting-sms.html?lang=fr#sending-messages){target="_blank"}

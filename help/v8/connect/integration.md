@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, User
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: f6ccec05d63c397d0a286c18f4114eb414156d45
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 90%
+ht-degree: 83%
 
 ---
 
@@ -34,11 +34,11 @@ Campaign v8 peut se connecter aux solutions d&#39;Adobe suivantes. Parcourez les
 * Adobe Target. [En savoir plus](../connect/ac-at.md)
 * Adobe Workfront. [En savoir plus](../connect/ac-workfront.md)
 
-Vous pouvez également combiner vos **audiences** et vos **ressources** dans les différentes solutions Experience Cloud avec les fonctionnalités de partage de ressources et d&#39;audiences.
+Vous pouvez également combiner vos **audiences** et vos **ressources** sur les différentes solutions Experience Cloud avec les fonctionnalités de partage des ressources et d’audiences.
 
-![](../assets/do-not-localize/book.png) Apprenez-en davantage sur le **partage d&#39;audiences** entre les solutions Experience Cloud et Campaign dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=fr#integrating-with-adobe-experience-cloud)
+En savoir plus sur **Partage d&#39;audiences** entre Campaign et les solutions Experience Cloud dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=fr#integrating-with-adobe-experience-cloud)
 
-![](../assets/do-not-localize/book.png) Apprenez-en davantage sur le **partage de ressources** entre les solutions Experience Cloud et Campaign dans la [documentation de Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=fr#integrating-with-adobe-experience-cloud)
+En savoir plus sur **Partage de ressources** entre Campaign et les solutions Experience Cloud dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=fr#integrating-with-adobe-experience-cloud)
 
 ## Intégration à votre connecteur CRM{#gs-crm-connectors}
 
@@ -53,7 +53,7 @@ Les connecteurs CRM permettent une intégration rapide et facile des données. A
 
 Utilisez le connecteur FDA (Federated Data Access) pour connecter Campaign à une ou plusieurs **bases de données externes** et traiter les informations stockées dans celles-ci sans affecter les données contenues dans la base de données cloud de Campaign.
 
-![](../assets/do-not-localize/glass.png) Apprenez-en davantage en consultant [cette page](fda.md)
+Apprenez-en davantage en consultant [cette page](fda.md).
 
 ## Utiliser les médias sociaux{#gs-social}
 

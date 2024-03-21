@@ -5,10 +5,10 @@ feature: Data Model
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 98%
+ht-degree: 93%
 
 ---
 
@@ -43,7 +43,7 @@ Vous pouvez utiliser la table des destinataires par défaut avec les champs d&#3
 * [Étendez une table existante](extend-schema.md) avec de nouveaux champs. Par exemple, vous pouvez ajouter un nouveau champ « Fidélité » au tableau des destinataires.
 * [Créez un tableau](create-schema.md), par exemple un tableau « Achat » répertoriant tous les achats effectués par chaque profil de la base de données, et liez-le au tableau des destinataires.
 
-![](../assets/do-not-localize/glass.png) Découvrez les bonnes pratiques d&#39;utilisation du modèle de données Campaign dans [cette section](datamodel-best-practices.md).
+Découvrez les bonnes pratiques lors de l’utilisation du modèle de données Campaign dans [cette section](datamodel-best-practices.md).
 
 ## Table des profils intégrée {#ootb-profiles}
 
@@ -58,9 +58,9 @@ Les avantages liés à l&#39;utilisation d&#39;une table des destinataires stand
 
 Il est possible d&#39;étendre la table des destinataires, mais sans réduire le nombre de champs ou de liens qu&#39;elle contient.
 
-![](../assets/do-not-localize/glass.png) Découvrez comment étendre un schéma existant dans [cette section](extend-schema.md).
+Découvrez comment étendre un schéma existant dans [cette section](extend-schema.md).
 
-![](../assets/do-not-localize/book.png) Découvrez des exemples d’extensions de table de destinataires intégrées dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#extending-a-table){target="_blank"}
+Découvrez des exemples d’extensions de table de destinataires intégrées dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#extending-a-table){target="_blank"}
 
 Vous pouvez également utiliser une autre table des destinataires, mieux adaptée à vos besoins professionnels ou fonctionnels. Cette méthode s&#39;accompagne de limitations et est décrite dans [cette section](custom-recipient.md).
 
@@ -68,9 +68,9 @@ Vous pouvez également utiliser une autre table des destinataires, mieux adapté
 
 Pour une meilleure compréhension de la gestion des tables dans Campaign v8, notez que, dans le cadre d&#39;une [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), les tables sont répliquées entre Campaign et sa base de données Cloud Snowflake.
 
-![](../assets/do-not-localize/glass.png) Pour en savoir plus sur la stratégie et les mécanismes de réplication, consultez [cette section](../architecture/replication.md).
+En savoir plus sur la stratégie et les mécanismes de réplication dans [cette section](../architecture/replication.md).
 
-**Rubriques connexes**
+**Rubriques connexes** 
 
-![](../assets/do-not-localize/glass.png) Découvrez comment importer des profils dans [cette section![](../assets/do-not-localize/glass.png)](../start/import.md).
-Pour en savoir plus sur les audiences Campaign, consultez [cette section.](../start/audiences.md)
+Découvrez comment importer des profils dans [cette section](../start/import.md)
+En savoir plus sur les audiences de Campaign dans [cette section](../start/audiences.md)

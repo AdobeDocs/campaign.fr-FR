@@ -5,7 +5,7 @@ feature: Privacy, PI
 role: Developer
 level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 97%
@@ -49,7 +49,7 @@ Lorsque vous effectuez des tâches de développement dans Adobe Campaign (workf
 
 * **Ajout de captchas dans les applications web** : ajoutez des captchas dans vos pages d&#39;abonnement et landing pages publiques.
 
-![](../assets/do-not-localize/book.png) En savoir plus dans [Documentation de Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=fr#installing-campaign-classic){target="_blank"}
+En savoir plus dans [Documentation de Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=fr#installing-campaign-classic){target="_blank"}
 
 
 ## Personnalisation
@@ -144,4 +144,4 @@ Lorsque vous effectuez des tâches de développement dans Adobe Campaign (workf
 
 * **Ajout de captchas dans les applications web** : ajoutez des captchas dans vos pages d&#39;abonnement et landing pages publiques.
 
-![](../assets/do-not-localize/book.png) En savoir plus dans [Documentation de Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=fr#installing-campaign-classic){target="_blank"}
+En savoir plus dans [Documentation de Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=fr#installing-campaign-classic){target="_blank"}

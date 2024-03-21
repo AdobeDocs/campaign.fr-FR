@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: 193d2459d5a4ba55822c20a7e376d18b3c6d8795
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '706'
-ht-degree: 89%
+ht-degree: 86%
 
 ---
 
@@ -28,7 +28,7 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
    Vous devez télécharger et installer la console cliente Campaign pour vous connecter à Adobe Campaign.
 
-   ![](../assets/do-not-localize/glass.png) [Pour en savoir plus, cliquez ici](connect.md).
+   [Pour en savoir plus, cliquez ici](connect.md).
 
    Depuis la version Campaign v8.6, vous avez accès à la nouvelle **Interface utilisateur Web de Campaign**, disponible via l’environnement Adobe Experience Cloud central. Experience Cloud est la famille intégrée d’applications, de produits et de services de marketing numérique d’Adobe. Grâce à son interface intuitive, vous pouvez accéder rapidement à vos applications cloud, fonctionnalités de produit et services.
 
@@ -43,9 +43,9 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
    La délivrabilité des e-mails, composant essentiel de la réussite du programme marketing de chaque expéditeur, est caractérisée par des critères et des règles en constante évolution. Pour naviguer efficacement dans ce monde numérique, il est nécessaire d&#39;affiner régulièrement votre stratégie d&#39;e-mail, en tenant compte des principales tendances de délivrabilité, afin d&#39;atteindre au mieux vos audiences.
 
-   ![](../assets/do-not-localize/book.png) Consultez ce guide pour découvrir les [bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=fr){target="_blank"}
+   Consultez ce guide pour en savoir plus [Bonnes pratiques de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=fr){target="_blank"}
 
-   ![](../assets/do-not-localize/book.png) Découvrez comment implémenter la délivrabilité dans Campaign [dans ce guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=fr).{target="_blank"}
+   Découvrez comment implémenter la délivrabilité dans Campaign [dans ce guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=fr){target="_blank"}
 
 1. **Comment puis-je m&#39;assurer que ma diffusion est envoyée sans erreur ?**
 

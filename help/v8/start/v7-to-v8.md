@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 55c177b6931ef2c427c8e9793b463274b8abb015
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '714'
-ht-degree: 99%
+ht-degree: 95%
 
 ---
 
@@ -50,7 +50,7 @@ En conséquence :
 * Le statut des diffusions n’est pas mis à jour instantanément : un processus technique s’exécute sur l’instance Marketing pour mettre à jour les statuts des diffusions dans les délais impartis.
 
 
-![](../assets/do-not-localize/glass.png) Pour en savoir plus sur l’envoi de BAT de messages transactionnels si vous effectuez une transition à partir de Campaign v7, consultez [cette page](../send/transactional-template.md#transition-from-v7).
+En savoir plus sur l&#39;envoi de BAT de messages transactionnels lors de la transition de la v7 vers la version [cette page](../send/transactional-template.md#transition-from-v7).
 
 
 ## [!DNL Campaign] et [!DNL Snowflake] {#ac-gs-snowflake}
@@ -59,14 +59,14 @@ Dans son [déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.
 
 Campaign v8 Enterprise présente le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud. Avec cette nouvelle architecture, le déploiement Campaign v8 Enterprise (FFDA) simplifie la gestion des données : aucun index n&#39;est requis sur la base de données cloud. Il vous suffit de créer les tables et de copier les données pour démarrer. La technologie de base de données cloud ne nécessite pas de maintenance spécifique pour garantir le niveau de performances attendu.
 
-![](../assets/do-not-localize/glass.png) Pour en savoir plus sur l&#39;architecture de [!DNL Campaign] v8, consultez [cette page](../architecture/architecture.md).
+En savoir plus sur [!DNL Campaign] Architecture v8 dans [cette page](../architecture/architecture.md).
 
 
 ## Utilisation de votre Adobe ID pour vous connecter à Campaign{#adobe-id}
 
 Les utilisateurs de Campaign se connectent via leur Adobe ID uniquement. Le même Adobe ID est utilisé pour conserver tous vos abonnements Adobe et produits associés à un seul compte, pour toutes les solutions Adobe Experience Cloud.
 
-![](../assets/do-not-localize/glass.png) Découvrez comment vous connecter à [!DNL Campaign] dans [cette page](connect.md).
+Découvrez comment vous connecter à [!DNL Campaign] in [cette page](connect.md).
 
 ## Analyse des données avec des cubes{#adobe-reporting}
 

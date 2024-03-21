@@ -5,10 +5,10 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 59d33983db930b3a7dc022693d72704bda99e3a1
-workflow-type: ht
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -24,13 +24,13 @@ Découvrez comment importer, mettre à jour et gérer des profils et des audienc
 
 Une liste est un ensemble statique de contacts qui peut être ciblé dans des actions de diffusion ou mis à jour pendant une importation ou lors d&#39;une autre action de workflow. Par exemple, une population extraite de la base de données via une requête peut être stockée en tant que liste.
 
-![](../assets/do-not-localize/glass.png) Découvrez comment créer et gérer des listes dans [cette page](../audiences/create-audiences.md).
+Découvrez comment créer et gérer des listes dans [cette page](../audiences/create-audiences.md).
 
 ## Filtrer la base de données{#filter-the-database}
 
 La configuration des filtres permet de sélectionner des données dans une liste **[!UICONTROL de manière dynamique]** : lorsque les données sont modifiées, les données filtrées sont mises à jour. Vous pouvez créer vos propres filtres ou utiliser les filtres intégrés pour définir une audience cible.
 
-![](../assets/do-not-localize/glass.png) Découvrez comment créer et gérer des filtres dans [cette page](../audiences/create-filters.md).
+Découvrez comment créer et gérer des filtres dans [cette page](../audiences/create-filters.md).
 
 ## Créer une audience dans un workflow
 
@@ -55,7 +55,7 @@ Vous pouvez surveiller le nombre de profils actifs utilisés sur votre instance 
 
 Adobe Campaign est un puissant outil servant à collecter et à traiter de très grands volumes de données, notamment des informations personnelles et des données sensibles. Adobe Campaign vous permet de collecter des données, y compris des informations personnelles et sensibles. Il est donc essentiel de recevoir et surveiller le consentement de vos destinataires.
 
-![](../assets/do-not-localize/book.png) Découvrez comment gérer la confidentialité et le consentement dans la [documentation d’Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr){target="_blank"}.
+Découvrez comment gérer la confidentialité et le consentement dans [Documentation de Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr){target="_blank"}.
 
 **Rubriques connexes** 
 

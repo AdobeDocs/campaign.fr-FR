@@ -5,10 +5,10 @@ feature: Configuration, API, FFDA
 role: Developer
 level: Intermediate
 exl-id: 96693af9-50db-4298-ae02-c238d35e52b4
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -52,7 +52,7 @@ Pour mettre en œuvre le mécanisme d&#39;évaluation de Campaign sur une table 
    </srcSchema>
    ```
 
-   ![](../assets/do-not-localize/glass.png) Pour en savoir plus sur la création de schémas personnalisés, consultez [cette page](../dev/create-schema.md).
+   En savoir plus sur la création de schémas personnalisés dans [cette page](../dev/create-schema.md).
 
 1. Enregistrez et mettez à jour la structure de la base de données.  [En savoir plus](../dev/update-database-structure.md)
 

@@ -5,10 +5,10 @@ feature: Experience Manager Integration
 role: Admin, User
 level: Beginner
 exl-id: e83893f7-a8be-48a3-a7a6-aced7b4d4f69
-source-git-commit: fc461fbbae23925dd29f17c8674cc287ba360147
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '693'
-ht-degree: 99%
+ht-degree: 96%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 99%
 
 L’intégration entre Adobe Campaign et Adobe Experience Manager vous permet de gérer le contenu de vos diffusions e-mail, ainsi que vos formulaires directement dans Adobe Experience Manager. Vous avez la possibilité d’importer le contenu **Adobe Experience Manager** dans Campaign ou de connecter votre compte **Adobe Experience Manager as a Cloud Service** à Campaign, afin de modifier votre contenu directement dans l’interface web.
 
-![](../assets/do-not-localize/book.png) [Découvrir comment modifier votre contenu Adobe Experience Manager as a Cloud Service dans l’interface web de Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-content.html?lang=en)
+[Découvrez comment modifier votre contenu Adobe Experience Manager en tant que Cloud Service dans l’interface web de Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-content.html?lang=en)
 
-![](../assets/do-not-localize/book.png) [En savoir plus sur Adobe Experience Manager dans ce document](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html?lang=fr#aem-and-adobe-campaign-integration-workflow)
+[En savoir plus sur Adobe Experience Manager dans ce document](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html?lang=fr#aem-and-adobe-campaign-integration-workflow)
 
 ## Importer le contenu à partir d’Adobe Experience Manager {#integrating-with-aem}
 

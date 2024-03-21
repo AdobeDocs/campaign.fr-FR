@@ -5,10 +5,10 @@ feature: Workflows
 role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1362'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -121,11 +121,11 @@ Découvrez comment créer une campagne récurrente sur [cette page](https://expe
 
 Utilisez la messagerie transactionnelle de Campaign pour automatiser les messages générés à partir d&#39;événements déclenchés depuis des systèmes d&#39;information. Ces messages transactionnels peuvent notamment être une facture, une confirmation de commande, une confirmation d&#39;expédition, une modification de mot de passe, une notification d&#39;indisponibilité du produit, un relevé de compte ou la création d&#39;un compte sur un site web. Ces messages peuvent être envoyés individuellement ou par lots via e-mail, SMS ou notifications push.
 
-![](../assets/do-not-localize/glass.png) Pour en savoir plus sur les fonctionnalités des messages transactionnels,consultez [cette section](../send/transactional.md).
+En savoir plus sur les fonctionnalités des messages transactionnels dans [cette section](../send/transactional.md).
 
 Connectez Adobe Campaign et Adobe Analytics pour récupérer les actions utilisateur et envoyer des messages personnalisés en temps quasi réel.
 
-![](../assets/do-not-localize/glass.png) Découvrez comment intégrer Campaign à d&#39;autres solutions dans [cette section](../start/connect.md).
+Découvrez comment intégrer Campaign à d’autres solutions dans [cette section](../start/connect.md)
 
 
 ## Cas d&#39;utilisation complets de workflow{#end-to-end-uc}
