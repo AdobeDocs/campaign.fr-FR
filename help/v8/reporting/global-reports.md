@@ -4,10 +4,10 @@ description: Découvrez comment accéder aux rapports globaux et les utiliser.
 feature: Reporting, Monitoring
 role: User, Data Engineer
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1880'
-ht-degree: 91%
+ht-degree: 89%
 
 ---
 
@@ -49,9 +49,9 @@ Vous pouvez paramétrer l&#39;affichage des valeurs en sélectionnant le périm�
 
 >[!NOTE]
 >
->Vous pouvez également surveiller le nombre de diffusions envoyées par heure dans le [Panneau de contrôle](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=fr).
+>Vous pouvez également surveiller le nombre de diffusions envoyées par heure à l’aide de la variable [Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=fr){target="_blank"}.
 >
->Le Panneau de contrôle est accessible à tous les utilisateurs administrateurs. Les étapes permettant d&#39;octroyer un accès administrateur à un utilisateur sont présentées sur [cette page](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=fr#discover-control-panel).
+>Le Panneau de contrôle est accessible à tous les utilisateurs administrateurs. Les étapes pour accorder un accès administrateur à un utilisateur sont présentées dans la section [cette page](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=fr#discover-control-panel){target="_blank"}.
 >
 
 ## Activités utilisateurs {#user-activities}

@@ -5,10 +5,10 @@ feature: Direct Mail
 role: User
 level: Beginner
 exl-id: ff2be012-72f3-428d-a973-196fea7ec4ab
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '392'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -54,4 +54,4 @@ Les étapes de génération du fichier sont les suivantes :
 
    La confirmation démarre l&#39;extraction des données dans le fichier spécifié.
 
-   Dans le cadre d’une campagne marketing, lorsque toutes les validations ont été accordées, les fichiers d’extraction sont créés via un workflow spécifique qui, dans une configuration par défaut, démarre automatiquement lorsqu’une diffusion de publipostage direct est en attente d’extraction. En savoir plus dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=fr)
+   Dans le cadre d’une campagne marketing, lorsque toutes les validations ont été accordées, les fichiers d’extraction sont créés via un workflow spécifique qui, dans une configuration par défaut, démarre automatiquement lorsqu’une diffusion de publipostage direct est en attente d’extraction. En savoir plus dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=fr){target="_blank"}.

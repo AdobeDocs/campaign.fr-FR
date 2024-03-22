@@ -5,10 +5,10 @@ feature: Subscriptions
 role: User
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -56,7 +56,7 @@ Pour abonner (opt-in) un profil à un service, les options disponibles sont les 
 
   ![](assets/wf-subscription.png)
 
-  En savoir plus sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html?lang=fr).
+  En savoir plus dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html?lang=fr){target="_blank"}.
 
 Pour désabonner (opt-out) un profil d&#39;un service, les options disponibles sont les suivantes :
 

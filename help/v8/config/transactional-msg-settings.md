@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: Admin, Developer
 level: Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '636'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,10 @@ ht-degree: 100%
 
 Découvrez l’architecture de la messagerie transactionnelle sur [cette page](../architecture/architecture.md#transac-msg-archi).
 
-![](../assets/do-not-localize/speech.png) En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour installer et configurer la messagerie transactionnelle de Campaign dans votre environnement.
+
+>[!NOTE]
+>
+>En tant qu’utilisateur Cloud Service géré, [contact Adobe](../start/campaign-faq.md#support) pour installer et configurer les messages transactionnels Campaign dans votre environnement.
 
 ## Définition des autorisations {#mc-permissions}
 
@@ -51,7 +54,7 @@ En outre, l’événement doit contenir les éléments suivants :
 
 Vous trouverez ci-dessous un exemple de configuration d’événement permettant d’envoyer des notifications push transactionnelles :
 
-```
+```xml
 <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Body>
      <urn:PushEvent>

@@ -4,10 +4,10 @@ title: Test
 description: En savoir plus sur l’activité de workflow de test
 feature: Workflows
 exl-id: 0d4d13f6-7128-44d3-ad5c-4ed02257ee64
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 82%
+ht-degree: 69%
 
 ---
 
@@ -21,7 +21,7 @@ Une condition est une expression JavaScript qui doit être évaluée sur &quot;t
 
 ![](assets/edit_test.png)
 
-Pour plus d’informations sur toutes les autres fonctions JavaScript et méthodes SOAP du serveur applicatif accessibles via workflow, consultez la [documentation JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=fr).
+Pour plus d’informations sur toutes les autres fonctions JavaScript et méthodes SOAP du serveur applicatif accessibles via workflow JavaScript, reportez-vous à la section [Documentation JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=fr){target="_blank"}.
 
 Vous pouvez insérer directement des variables également depuis cet éditeur. Pour plus d’informations sur l’utilisation des variables, consultez [cette section](javascript-scripts-and-templates.md#variables).
 

@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1560'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,9 @@ ht-degree: 98%
 
 La messagerie transactionnelle (Message Center) est un module de Campaign conçu pour gérer les messages de déclenchement. Ces notifications sont générées à partir d’événements déclenchés depuis des systèmes d’information et peuvent correspondre aux éléments suivants : facture, confirmation de commande, confirmation d&#39;expédition, changement de mot de passe, notification d&#39;indisponibilité du produit, relevé de compte, création de compte web, etc.
 
-![](../assets/do-not-localize/speech.png) En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support){target="_blank"} pour configurer la messagerie transactionnelle de Campaign dans votre environnement.
+>[!NOTE]
+>
+>En tant qu’utilisateur Cloud Service géré, [contact Adobe](../start/campaign-faq.md#support){target="_blank"} pour configurer les messages transactionnels Campaign dans votre environnement.
 
 Les messages transactionnels sont utilisés pour envoyer :
 
@@ -109,7 +111,7 @@ La définition du contenu du message transactionnel est la même que pour toutes
 >[!CAUTION]
 >
 >Les images incluses dans le message doivent être accessibles publiquement. Adobe Campaign ne fournit pas de mécanisme de chargement des images pour les messages transactionnels.\
->Contrairement à JSSP ou webApp, `<%=` n&#39;a pas de séquence d&#39;échappement par défaut.
+>Contrairement à JSSP ou webApp, `<%=` n’a pas de séquence d’échappement par défaut.
 >
 >Vous devez appliquer une séquence d&#39;échappement correcte à toutes les données provenant de l&#39;événement. Cette séquence d&#39;échappement dépend de l&#39;utilisation de ce champ. Par exemple, dans une URL, utilisez encodeURIComponent. Pour un affichage dans le code HTML, vous pouvez utiliser escapeXMLString.
 

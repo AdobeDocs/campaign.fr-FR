@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 6fbe5616-7b8b-4504-988b-2bbbfd062548
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '866'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -103,7 +103,7 @@ Dans l&#39;exemple ci-dessous, vous créez une liste de tous les destinataires c
 
    ![](assets/targeting-wf-age-filter.png)
 
-   Découvrez comment créer une requête dans un workflow dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=fr).
+   Découvrez comment créer une requête dans un workflow dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=fr){target="_blank"}.
 
 1. Ajoutez un libellé pour cette requête et enregistrez vos modifications.
 1. Ajoutez une activité **[!UICONTROL Mise à jour de liste]** et modifiez-la.
@@ -124,7 +124,7 @@ Dans l&#39;exemple ci-dessous, vous créez une liste de tous les destinataires c
 
    ![](assets/access-new-list.png)
 
-   Vous pouvez rendre ce workflow récurrent en ajoutant un planificateur au workflow. [En savoir plus](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=fr).
+   Vous pouvez rendre ce workflow récurrent en ajoutant un planificateur au workflow. [En savoir plus](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=fr){target="_blank"}.
 
 ## Retirer un profil d&#39;une liste {#remove-a-profile-from-a-list}
 

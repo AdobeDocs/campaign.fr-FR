@@ -5,10 +5,10 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1123'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -44,7 +44,7 @@ Adobe Campaign utilise les comptes techniques suivants pour activer et exécute
 
 Le compte externe **Mails rebonds** spécifie le compte externe POP3 à utiliser pour se connecter au service de messagerie. Tous les serveurs configurés pour l&#39;accès POP3 peuvent être utilisés pour recevoir les retours d&#39;e-mail.
 
-Pour en savoir plus sur les e-mails entrants, consultez [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=fr).
+En savoir plus sur les emails entrants dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=fr){target="_blank"}.
 
 ![](assets/bounce_external_1.png)
 
@@ -116,7 +116,7 @@ Dans le contexte des messages transactionnels, les instances d’exécution sont
 
 ## Comptes externes de transfert de données {#transfer-data-external-accounts}
 
-Ces comptes externes peuvent être utilisés pour importer ou exporter des données vers Adobe Campaign à l’aide d’une activité de workflow **[!UICONTROL Transfert de fichier.]** Pour en savoir plus sur le **transfert de fichiers** dans les workflows, consultez [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=fr).
+Ces comptes externes peuvent être utilisés pour importer ou exporter des données vers Adobe Campaign à l’aide d’une activité de workflow **[!UICONTROL Transfert de fichier.]** En savoir plus sur **Transfert de fichier** dans les workflows dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=fr){target="_blank"}.
 
 * **FTP et SFTP** : compte externe **FTP** permettant de configurer et de tester l’accès à un serveur en dehors d’Adobe Campaign. Pour configurer des connexions avec des systèmes externes comme des serveurs SFTP ou FTP 898 utilisés pour les transferts de fichiers, vous pouvez créer vos propres comptes externes.
 
@@ -124,7 +124,7 @@ Ces comptes externes peuvent être utilisés pour importer ou exporter des donn�
 
   >[!NOTE]
   >
-  >À partir de la version 8.5, vous pouvez désormais vous authentifier en toute sécurité à l’aide d’une clé privée lors de la configuration de votre compte externe SFTP. [En savoir plus sur la gestion des clés](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html?lang=fr)
+  >À partir de la version 8.5, vous pouvez désormais vous authentifier en toute sécurité à l’aide d’une clé privée lors de la configuration de votre compte externe SFTP. [En savoir plus sur la gestion des clés](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html?lang=fr){target="_blank"}.
 
 * **Amazon Simple Storage Service (S3)** - Le connecteur **AWS S3** peut être utilisé pour importer ou exporter des données vers Adobe Campaign à l’aide d’une activité de workflow **[!UICONTROL Transfert de fichier]**. Lors de la configuration de ce nouveau compte externe, vous devez indiquer les informations suivantes :
 

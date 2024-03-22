@@ -5,10 +5,10 @@ feature: Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '2745'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -175,7 +175,7 @@ Il existe un certain nombre de solutions pour minimiser le besoin d&#39;enregist
 
 Vous pouvez déclarer l&#39;attribut &quot;deleteStatus&quot; dans un schéma. Il est plus efficace de marquer l&#39;enregistrement comme supprimé, puis de différer la suppression au cours de la tâche de nettoyage.
 
-![](../assets/do-not-localize/speech.png)  En tant qu’utilisateur Managed Cloud Services, contactez les consultants ou administrateurs techniques Adobe pour en savoir plus sur la conservation des données ou si vous devez définir la conservation des tables personnalisées.
+En tant qu’utilisateur Cloud Service géré, contactez les consultants Adobe ou les administrateurs techniques pour en savoir plus sur la rétention ou pour définir la rétention pour les tables personnalisées.
 
 ## Performances {#performance}
 

@@ -5,10 +5,10 @@ feature: Profiles, Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '3042'
-ht-degree: 85%
+ht-degree: 81%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 85%
 
 Les rebonds sont le résultat d’une tentative de diffusion ayant échoué pour laquelle le FAI renvoie des avis d’échec. Le traitement de la gestion des rebonds est un aspect essentiel de l’hygiène des listes. Une fois qu’un e-mail donné a été rejeté plusieurs fois de suite, ce processus le signale pour qu’il soit supprimé.
 
-Ce processus empêche les systèmes de continuer à envoyer des e-mails à des adresses e-mail non valides. Les rebonds sont l’un des éléments clés des données que les FAI utilisent pour déterminer la réputation des adresses IP. Il est important de garder un œil sur cette mesure. « Diffusé » par rapport à « Rejeté » est probablement le moyen le plus courant de mesurer la diffusion des messages marketing : plus le pourcentage de diffusion est élevé, mieux c’est.
+Ce processus empêche les systèmes de continuer à envoyer des e-mails à des adresses e-mail non valides. Les rebonds sont l’un des éléments clés des données que les FAI utilisent pour déterminer la réputation des adresses IP. Il est important de garder un œil sur cette mesure. &quot;Délivrés&quot; ou &quot;rebonds&quot; est probablement le moyen le plus courant de mesurer la diffusion des messages marketing : plus le pourcentage diffusé est élevé, mieux c’est.
 
 Si un message ne peut pas être envoyé à un profil, le serveur distant envoie automatiquement un message d&#39;erreur à Adobe Campaign. Cette erreur est qualifiée pour déterminer si l&#39;adresse e-mail, le numéro de téléphone ou l&#39;appareil doit être mis en quarantaine. Pour plus d’informations, consultez la section [Gestion des e-mails rejetés](#bounce-mail-qualification).
 
@@ -29,9 +29,9 @@ Lorsqu&#39;une adresse e-mail est mise en quarantaine ou qu&#39;un profil est en
 Deux types d&#39;erreur sont liés à un message en échec. Chaque type d&#39;échec de diffusion détermine si une adresse est envoyée en [quarantaine](quarantines.md#quarantine-reason) ou non.
 
 * **Rebonds définitifs**
-Les rebonds définitifs sont des échecs permanents générés lorsqu’un FAI détermine qu’une tentative de publipostage vers une adresse d’abonné n’est pas livrable. Dans Adobe Campaign, les rebonds définitifs classes comme non livrables sont ajoutés à la liste de quarantaine, ce qui signifie qu’ils ne seront pas retentés. Dans certains cas, un rebond définitif peut être ignoré si la cause de l’échec est inconnue.
+Les rebonds définitifs sont des échecs permanents générés lorsqu’un FAI détermine qu’une tentative de publipostage vers une adresse d’abonné n’est pas livrable. Dans Adobe Campaign, les hard bounces classés comme non livrables sont ajoutés à la liste de quarantaine, ce qui signifie qu’ils ne seront pas repris. Dans certains cas, un rebond définitif peut être ignoré si la cause de l’échec est inconnue.
 
-  Voici quelques exemples courants de rebonds définitifs : adresse inexistante, compte désactivé, syntaxe incorrecte, domaine incorrect.
+  Voici quelques exemples courants de hard bounces : l’adresse n’existe pas, compte désactivé, syntaxe incorrecte, domaine incorrect
 
 * **Rebonds temporaires**
 Les rebonds temporaires sont des échecs temporaires que les FAI génèrent lorsqu’ils ont des difficultés à diffuser des e-mails. Les échecs de type soft feront l&#39;objet de plusieurs [reprises](#retries) (avec des variations selon l&#39;utilisation de paramètres de diffusion personnalisés ou prêts à l&#39;emploi) afin de tenter une diffusion réussie. Les adresses qui continuent à provoquer des rebonds temporaires ne seront pas mises en quarantaine tant que le nombre maximum de tentatives n’aura pas été effectué (qui varie encore selon les paramètres).
@@ -40,7 +40,7 @@ Les rebonds temporaires sont des échecs temporaires que les FAI génèrent lors
 
 Le type d&#39;erreur **ignoré** est une erreur temporaire, par exemple « Absent du bureau », ou une erreur technique, par exemple si l&#39;expéditeur est de type « postmaster ».
 
-La boucle des retours fonctionne comme les e-mails rebonds : lorsqu&#39;un utilisateur qualifie un e-mail de spam, vous pouvez configurer des règles de messagerie dans Adobe Campaign pour bloquer toutes les diffusions à cet utilisateur. Les adresses de ces utilisateurs figurent sur la liste bloquée même s&#39;ils n&#39;ont pas cliqué sur le lien de désinscription. Les adresses sont ajoutées à la table des quarantaines (**NmsAddress**) et non à la table des destinataires (**NmsRecipient**), avec le statut **[!UICONTROL Placée sur la liste bloquée]**. Apprenez-en davantage sur le mécanisme de boucle des retours dans le [guide des bonnes pratiques en matière de délivrabilité d&#39;Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#feedback-loops).
+La boucle des retours fonctionne comme les e-mails rebonds : lorsqu&#39;un utilisateur qualifie un e-mail de spam, vous pouvez configurer des règles de messagerie dans Adobe Campaign pour bloquer toutes les diffusions à cet utilisateur. Les adresses de ces utilisateurs figurent sur la liste bloquée même s&#39;ils n&#39;ont pas cliqué sur le lien de désinscription. Les adresses sont ajoutées à la table des quarantaines (**NmsAddress**) et non à la table des destinataires (**NmsRecipient**), avec le statut **[!UICONTROL Placée sur la liste bloquée]**. En savoir plus sur le mécanisme de feedback loop dans la section [Guide des bonnes pratiques de délivrabilité des Adobes](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#feedback-loops){target="_blank"}.
 
 ## Erreurs synchrones et asynchrones {#synchronous-and-asynchronous-errors}
 
@@ -97,7 +97,7 @@ Bounce mails can have the following qualification status:
 
 Si la diffusion d&#39;un message échoue suite à une erreur temporaire (**Soft** ou **Ignoré**), Campaign réalise une nouvelle tentative d&#39;envoi. Ces reprises peuvent être effectuées jusqu&#39;à la fin de la durée de diffusion.
 
-Les reprises des rebonds temporaires et l’intervalle qui les sépare sont déterminés par le MTA en fonction du type et de la gravité des réponses des rebonds provenant du domaine d’e-mail du message.
+Les reprises des soft bounces et la durée entre elles sont déterminées par le MTA en fonction du type et de la gravité des réponses des bounces revenant du domaine d&#39;email du message.
 
 >[!NOTE]
 >

@@ -5,10 +5,10 @@ description: Ces exemples montrent comment vous pouvez utiliser le code JavaScri
 feature: Workflows
 role: Developer
 exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1690'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ Ces exemples montrent comment vous pouvez utiliser le code JavaScript dans un wo
 * [Déclenchement d’un workflow, à l’aide d’une méthode SOAP statique](#trigger-example)
 * [Interaction avec la base de données, à l’aide d’une méthode SOAP non statique](#interact-example)
 
-[En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=fr) sur les méthodes SOAP statiques et non statiques.
+[En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=fr){target="_blank"} à propos des méthodes SOAP statiques et non statiques.
 
 Dans ces exemples, l’extension ECMAScript pour XML (E4X) est utilisée. Avec cette extension, vous pouvez combiner des appels JavaScript et des primitives XML dans le même script.
 
@@ -99,7 +99,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### Suppression d’un enregistrement
 
-Utilisez la méthode `DeleteCollection`. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=fr).
+Utilisez la méthode `DeleteCollection`. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=fr){target="_blank"}.
 
 Indiquez les informations suivantes :
 
@@ -273,7 +273,7 @@ for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-La boucle comprend une variable de destinataire locale. L’e-mail de chaque destinataire renvoyé dans la collection de destinataires est imprimé. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=fr) sur la fonction `logInfo`.
+La boucle comprend une variable de destinataire locale. L’e-mail de chaque destinataire renvoyé dans la collection de destinataires est imprimé. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=fr){target="_blank"} à propos de `logInfo` de la fonction
 
 #### Résultats d’une opération `getIfExists`
 
@@ -359,7 +359,7 @@ Vous pouvez déclencher des workflows par programme, par exemple dans des workfl
 
 Le déclenchement d’un workflow s’effectue à l’aide d’événements. Vous pouvez utiliser ces fonctionnalités pour les événements :
 
-* Pour publier un événement, vous pouvez utiliser la méthode statique `PostEvent`. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=fr).
+* Pour publier un événement, vous pouvez utiliser la méthode statique `PostEvent`. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=fr){target="_blank"}.
 * Pour recevoir un événement, vous pouvez utiliser l’activité **[!UICONTROL Signal externe]**. [En savoir plus](external-signal.md).
 
 Vous pouvez déclencher des workflows de différentes manières :
@@ -426,10 +426,10 @@ Procédez comme suit :
 
 1. Définissez la requête :
 
-   * Récupérez une entité en utilisant la méthode `create` sur le schéma correspondant, par exemple, le schéma `xtk:workflow`. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=fr).
+   * Récupérez une entité en utilisant la méthode `create` sur le schéma correspondant, par exemple, le schéma `xtk:workflow`. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=fr){target="_blank"}.
    * Utilisez la méthode `queryDef` pour émettre une requête SQL.
 
-1. Exécutez la requête à l’aide de la méthode `ExecuteQuery`. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=fr).
+1. Exécutez la requête à l’aide de la méthode `ExecuteQuery`. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=fr){target="_blank"}.
 
    Utilisez la boucle `for each` pour récupérer les résultats.
 
@@ -611,11 +611,11 @@ Cette vidéo présente un exemple d’utilisation d’une méthode d’API non s
 
 ### Documentation des API
 
-* [Exemples d’appels SOAP](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=fr)
+* [Exemples d&#39;appels SOAP](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=fr){target="_blank"}
 * Méthodes :
-   * [Create](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=fr)
-   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=fr)
-   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=fr)
-   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=fr)
-   * [Write](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=fr)
-* [fonction logInfo](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=fr)
+   * [Créer](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=fr){target="_blank"}
+   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=fr){target="_blank"}
+   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=fr){target="_blank"}
+   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=fr){target="_blank"}
+   * [Write](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=fr){target="_blank"}
+* [fonction logInfo](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=fr){target="_blank"}

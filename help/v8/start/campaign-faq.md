@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '706'
-ht-degree: 86%
+ht-degree: 84%
 
 ---
 
@@ -22,7 +22,9 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
    Cette fréquence régulière de mise à jour a pour but de vous fournir les dernières fonctionnalités et améliorations. Vous bénéficiez ainsi d&#39;un environnement sécurisé et d&#39;une expérience optimale avec notre produit. C’est la raison pour laquelle nous pensons qu’il est important que vous exécutiez la version la plus récente d’Adobe Campaign.
 
-   ![](../assets/do-not-localize/speech.png)  En tant qu’utilisateur de Managed Cloud Services, votre instance est mise à niveau par Adobe avec chaque nouvelle version.
+   >[!NOTE]
+   >
+   >En tant qu’utilisateur Cloud Service géré, votre instance est mise à niveau par Adobe avec chaque nouvelle version.
 
 1. **Comment se connecter à Campaign v8 ?**
 
@@ -65,7 +67,9 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
    Un sous-domaine est une division de votre domaine qui peut être utilisée pour isoler vos marques ou divers types de trafic (messages transactionnels, informations marketing, etc.).
 
-   ![](../assets/do-not-localize/speech.png) En tant qu’utilisateur Cloud Service géré, contactez l’Adobe pour déléguer vos sous-domaines à l’Adobe.
+   >[!NOTE]
+   >
+   >En tant qu’utilisateur Cloud Service géré, contactez l’Adobe pour déléguer vos sous-domaines à l’Adobe.
 
 1. **En tant qu&#39;utilisateur Campaign Classic v7, puis-je migrer vers Campaign v8 ?**
 
@@ -73,7 +77,7 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
    Campaign v8 est **uniquement** disponible en tant que Managed Cloud Service et ne peut pas être déployé dans des environnements On-Premise ou hybrides.
 
-   ![](../assets/do-not-localize/speech.png) Pour plus d’informations sur le processus de migration, contactez votre représentant d’Adobe.
+   Pour plus d’informations sur le processus de migration, contactez votre représentant d’Adobe.
 
 1. **Comment télécharger Campaign ?**
 

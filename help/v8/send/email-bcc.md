@@ -4,13 +4,13 @@ description: Découvrez comment activer la mise en copie Cci des e-mails dans Ad
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 87c971ac6cf4abb6b04d52ce60ac2036055e1e02
+exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
-
 
 # Envoyer une copie de vos messages à une adresse en Cci {#bcc}
 
@@ -26,7 +26,9 @@ Adobe Campaign ne gère pas les fichiers archivés. Les fichiers .eml correspon
 
 La destination d’archivage est l’adresse e-mail en Cci de votre choix, qui restera invisible pour les personnes destinataires de la diffusion. Une fois l’adresse e-mail en Cci définie, vous devez activer l’option dédiée au niveau du [modèle de diffusion](create-templates.md).
 
-![](../assets/do-not-localize/speech.png)En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support){target="_blank"} pour communiquer l’adresse e-mail en Cci à utiliser pour l’archivage.
+>[!NOTE]
+>
+>En tant qu’utilisateur Cloud Service géré, [contact Adobe](../start/campaign-faq.md#support){target="_blank"} communiquer l&#39;adresse email en Cci à utiliser pour l&#39;archivage.
 
 >[!CAUTION]
 >
