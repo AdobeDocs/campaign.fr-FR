@@ -5,10 +5,10 @@ feature: Analytics Integration, Reporting
 role: Admin, User
 level: Beginner
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: adfde71faebf3cec7e7b730c9753e6765aeadab0
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 92%
+source-wordcount: '1527'
+ht-degree: 84%
 
 ---
 
@@ -124,7 +124,7 @@ Veuillez noter que si l&#39;une de vos **[!UICONTROL suites de rapports]**, **[!
 
 Voir à ce sujet la section [Profils de produit pour Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=fr#product-profile-admins){target="_blank"} page.
 
-1. Dans l&#39;arborescence Adobe Campaign, accédez au dossier **[!UICONTROL Administration**[!UICONTROL  > ]**Plateforme**[!UICONTROL  > ]**Comptes externes]** et cliquez sur le bouton **[!UICONTROL Nouveau]**.
+1. Accédez au **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Comptes externes]** dossier de l’arborescence de l’explorateur Adobe Campaign et cliquez sur **[!UICONTROL Nouveau]**.
 
    ![](assets/analytics_connnector_9.png)
 
@@ -244,6 +244,25 @@ Afin qu&#39;Adobe Experience Cloud puisse suivre l&#39;activité sur les sites
 
 1. Vous pouvez maintenant envoyer votre diffusion et accéder au rapport correspondant dans Adobe Analytics.
 
+
+## Créer une campagne de remarketing {#create-a-re-marketing-campaign}
+
+Pour préparer votre campagne de remarketing, vous devez créer des modèles de diffusion qui seront ensuite utilisés dans les opérations de type remarketing. Vous devez ensuite paramétrer votre opération de remarketing et lui associer un segment. A chaque segment doit correspondre une opération de remarketing différente.
+
+Les campagnes de remarketing sont automatiquement lancées une fois qu&#39;Adobe Campaign a récupéré les segments analysant le comportement des personnes ciblées par la campagne initiale. En cas d&#39;abandon de panier ou de consultation de produits sans achat, une diffusion est envoyée aux destinataires concernés afin que leur navigation sur le site finalise leur achat.
+
+Adobe Campaign met à votre disposition des modèles de diffusion personnalisés que vous pouvez utiliser ou dont vous pouvez vous inspirer pour préparer vos campagnes.
+
+1. Dans l&#39;**[!UICONTROL Explorateur]**, accédez au dossier **[!UICONTROL Ressources]** > **[!UICONTROL Modèles]** > **[!UICONTROL Modèles de diffusion]** de l&#39;arborescence Adobe Campaign.
+1. Dupliquez le modèle **[!UICONTROL Diffuser par e-mail (remarketing)]** ou les exemples de modèles de remarketing proposés par Adobe Campaign.
+1. Personnalisez le modèle selon vos besoins, puis enregistrez-le.
+1. Créez une opération et sélectionnez le modèle **[!UICONTROL Opération de remarketing]** dans la liste déroulante.
+1. Cliquez sur le lien **[!UICONTROL Paramétrer...]** pour indiquer le segment et le modèle de diffusion associé à l&#39;opération.
+1. Sélectionnez l’ Analytics e[compte externe](#external-account-ac), et le segment concerné.
+1. Sélectionnez le modèle de diffusion à utiliser pour cette opération de remarketing, puis cliquez sur **[!UICONTROL Terminer]** pour fermer la fenêtre.
+1. Cliquez sur **[!UICONTROL OK]** pour fermer la fenêtre de l&#39;opération.
+
+La variable **[!UICONTROL Efficacité du remarketing]** est accessible à partir de la page rapports globaux. Il permet de visualiser le nombre de contacts convertis (ayant réalisés un achat) par rapport au nombre d&#39;abandons de panier suite à la campagne de remarketing d&#39;Adobe Campaign. Le taux de conversion est calculé par semaine, mois ou depuis le début de la synchronisation entre Adobe Campaign et Adobe Analytics.
 
 **Rubriques connexes**
 
