@@ -5,10 +5,10 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
+source-git-commit: 782362d6d742a3121d3b87b26c2f1481731ff694
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 99%
+source-wordcount: '594'
+ht-degree: 98%
 
 ---
 
@@ -50,6 +50,7 @@ ht-degree: 99%
    + [SMS](send/sms.md)
    + Notifications push {#push}
       + [Créer et envoyer des notifications push](send/push.md)
+      + [Créer une diffusion push Android enrichie](send/rich-push.md)
       + [Configurer le canal de notification push](send/push-settings.md)
       + [Configurer vos notifications push avec la collecte de données](send/push-data-collection.md)
    + [Messagerie LINE](send/line.md)
