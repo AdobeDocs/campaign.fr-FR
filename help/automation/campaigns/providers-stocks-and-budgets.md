@@ -8,7 +8,7 @@ exl-id: 1d4a98e6-af11-4645-864e-29aa5766d9d8
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1920'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ Chaque prestataire est enregistré dans une fiche avec ses coordonnées, ses mod
 
 Les prestataires sont paramétrés dans le dossier **[!UICONTROL Administration > Gestion de campagne]** de l’explorateur Campaign.
 
-Les traitements réalisés dans les diffusions sont assurés par des prestataires, notamment pour le courrier et les canaux mobiles. Ces prestataires peuvent par exemple intervenir dans les opérations d&#39;impression ou de distribution des messages. Ces traitements engendrent des paramétrages et des coûts spécifiques à chaque prestataire. Le paramétrage des prestataires est assuré au travers de quatre étapes :
+Les traitements réalisés dans les diffusions sont assurés par des prestataires, notamment pour le courrier et les canaux mobiles. Ces prestataires peuvent par exemple intervenir dans les opérations d&#39;impression ou de distribution des messages. Ces traitements engendrent des configurations et des coûts spécifiques à chaque prestataire. La configuration des prestataires de service est composée de quatre étapes :
 
-1. Création d&#39;un prestataire dans Adobe Campaign. [En savoir plus](#add-a-service-provider)
+1. Création du prestataire dans Adobe Campaign. [En savoir plus](#add-a-service-provider)
 
 1. Définition des postes et structures de coûts des modèles de prestation qui lui sont associés. [En savoir plus](#define-cost-categories)
 
@@ -57,7 +57,7 @@ Pour créer un modèle de prestation et définir son contenu, procédez comme su
 
    ![](assets/supplier-new-template.png)
 
-1. Créez les postes de coûts pour chaque type de traitement (diffusion par courrier/email/etc. ou tâche). Pour ce faire, cliquez sur le bouton **[!UICONTROL Catégories de coûts]** puis l’onglet **[!UICONTROL Ajouter]** et renseignez les paramètres de chaque poste de coût.
+1. Créez les catégories de coûts pour chaque type de traitement (diffusion par courrier/e-mail/etc. ou tâche). Pour ce faire, cliquez sur l’onglet **[!UICONTROL Catégories de coûts]**, puis sur le bouton **[!UICONTROL Ajouter]** et renseignez les paramètres de chaque catégorie de coût.
 
    ![](assets/add-cost-categories.png)
 
@@ -79,13 +79,13 @@ Pour créer un modèle de prestation et définir son contenu, procédez comme su
 
 Une structure de coûts indique, pour chaque type de coût, les règles de calcul à appliquer.
 
-Cliquez sur le bouton **[!UICONTROL Structure de coûts]** pour paramétrer le calcul des coûts pour chaque poste et type de coût. Cliquez sur **[!UICONTROL Ajouter]** et saisissez la structure de coûts.
+Cliquez sur l’onglet **[!UICONTROL Structure de coûts]** pour configurer le calcul des coûts pour chaque catégorie et type de coût. Cliquez sur **[!UICONTROL Ajouter]** et saisissez la structure de coûts.
 
 ![](assets/add-cost-structure.png)
 
-* Pour créer la structure de coûts, sélectionnez dans les listes déroulantes le type de message et le poste de coût concerné, ainsi que le type de coût sur lequel s&#39;appliquera la règle de calcul. Le contenu de ces listes déroulantes reprend les informations renseignées à partir du **[!UICONTROL Catégories de coûts]** .
+* Pour créer la structure de coûts, sélectionnez dans les listes déroulantes le type de message et la catégorie de coût concerné, ainsi que le type de coût auquel s’appliquera la règle de calcul. Le contenu de ces listes déroulantes reprend les informations renseignées à partir de l’onglet **[!UICONTROL Catégories de coût]**.
 
-  Vous devez attribuer un libellé à la structure de coûts. Par défaut, elle présente la composition de diffusion suivante : **Poste de coût - Type de coût**.
+  Vous devez attribuer un libellé à la structure de coûts. Par défaut, elle présente la composition de diffusion suivante : **Catégorie de coût - Type de coût**.
 
   Vous pouvez toutefois le renommer : saisissez alors directement la valeur souhaitée dans le champ **[!UICONTROL Libellé]**.
 
@@ -116,7 +116,7 @@ Pour ajouter un seuil, cliquez sur le bouton **[!UICONTROL Ajouter]** situé à 
 
 #### Structure constante par seuil {#constant-structure-by-threshold}
 
-Enfin, vous pouvez paramétrer un calcul des coûts en fonction du nombre total de messages. Pour ce faire, sélectionnez une **[!UICONTROL Constante par seuil]** structure de calcul. Par exemple, le coût sera fixé à 12,00 pour 1 à 100 messages, et à 100,00 pour une diffusion de 101 à 1000 messages, et à 500,00 pour toute diffusion de plus de 1000 messages, quel que soit le nombre total.
+Enfin, vous pouvez configurer un calcul des coûts en fonction du nombre total de messages. Pour ce faire, sélectionnez une structure de calcul **[!UICONTROL Constante par seuil]**. Par exemple, le coût sera fixé à 12 pour 1 à 100 messages ; à 100 pour une diffusion de 101 à 1000 messages, et à 500 pour toute diffusion de plus de 1 000 messages, quel que soit le nombre total.
 
 ![](assets/supplier-cost-structure-constant.png)
 
@@ -126,9 +126,9 @@ Vous pouvez associer des informations sur les traitements liés à une prestatio
 
 ![](assets/cost-supplier-jobs.png)
 
-* La variable **[!UICONTROL Extraction de fichier]** indique le modèle d&#39;export utilisé pour la diffusion lorsque cette prestation est sélectionnée. Vous pouvez indiquer le nom du fichier de sortie dans la variable **[!UICONTROL Fichier d&#39;extraction]** champ . Le bouton situé à droite du champ permet d&#39;insérer des variables.
+* La section **[!UICONTROL Extraction de fichier]** indique le modèle d’export utilisé pour la diffusion lorsque cette prestation est sélectionnée. Vous pouvez indiquer le nom du fichier de sortie dans le champ **[!UICONTROL Fichier d’extraction]**. Le bouton situé à droite du champ permet d’insérer des variables.
 
-* La section **[!UICONTROL E-mail de notification]** permet d’indiquer le modèle de notification au fournisseur de services après l’envoi des fichiers. Vous devez sélectionner le modèle utilisé pour créer le message d’alerte et le groupe de destinataires.
+* La section **[!UICONTROL E-mail de notification]** permet d’indiquer le modèle de notification aux prestataires de service après l’envoi des fichiers. Vous devez sélectionner le modèle utilisé pour créer le message d’alerte et le groupe de destinataires.
 
   Par défaut, les modèles de diffusion pour les messages de notification sont enregistrés dans le dossier **[!UICONTROL Administration > Gestion de campagne > Modèles des diffusions techniques]**, accessible à partir de la vue globale.
 
@@ -138,11 +138,11 @@ Vous pouvez associer des informations sur les traitements liés à une prestatio
 
 Les fournisseurs sont associés aux diffusions de campagnes. Ils sont référencés dans les modèles de diffusion pour offrir leurs services dans les diffusions créées via ce modèle.
 
-Lorsqu’un service est sélectionné, les postes de coûts correspondant au type de diffusion (courrier, e-mail, etc.) sont automatiquement indiqués dans le tableau central, ainsi que les options de traitement qui ont été définies.
+Lorsqu’un service est sélectionné, les catégories de coûts correspondant au type de diffusion (courrier, e-mail, etc.) sont automatiquement indiquées dans le tableau central, ainsi que les options de traitement qui ont été définies.
 
 >[!NOTE]
 >
->Si aucun poste de coût n&#39;est affiché lorsqu&#39;une prestation est sélectionnée, cela signifie qu&#39;aucun poste de coût n&#39;a été défini pour ce type de traitement. Par exemple, pour une diffusion email, si aucun **[!UICONTROL Email]** le type de poste de coût a été défini, aucun poste ne s&#39;affichera et la sélection du service n&#39;aura aucun effet.
+>Si aucune catégorie de coût n’est affichée lorsqu’une prestation est sélectionnée, cela signifie qu’aucune catégorie de coût n’a été définie pour ce type de traitement. Par exemple, pour une diffusion e-mail, si aucun type de catégorie de coût **[!UICONTROL E-mail]** n’a été défini, aucune catégorie ne s’affichera et la sélection du service n’aura aucun effet.
 
 * Pour une diffusion courrier, vous pouvez sélectionner le service à partir de la fenêtre de configuration.
 
@@ -165,7 +165,7 @@ Les types de coûts peuvent être associés à des lignes de stocks afin de gér
 
 Pour mettre en place la gestion des stocks et des commandes dans Adobe Campaign, et alerter les opérateurs en cas d&#39;approvisionnement insuffisant pour la réalisation d&#39;une diffusion, les étapes sont les suivantes :
 
-1. Création de stocks et référencement des prestataires associés. [En savoir plus](#create-a-stock).
+1. Création des stocks et référencement des prestataires associés. [En savoir plus](#create-a-stock).
 
 1. Ajout des lignes de stocks. [En savoir plus](#add-stock-lines).
 
@@ -200,11 +200,11 @@ Cliquez sur le bouton **[!UICONTROL Créer]** pour ajouter de nouvelles lignes d
 
 ![](assets/add-stock-lines.png)
 
-* Indiquez la quantité initialement en stock dans la variable **[!UICONTROL Stock initial]** champ . La variable **[!UICONTROL Consommé]** et **[!UICONTROL En stock]** les champs sont calculés automatiquement et mis à jour au fil des opérations.
+* Indiquez la quantité initialement en stock dans le champ **[!UICONTROL Stock initial]**. Les champs **[!UICONTROL Consommé]** et **[!UICONTROL En stock]** sont calculés automatiquement et mis à jour au fil des campagnes.
 
   ![](assets/create-new-stock-line.png)
 
-* Indiquez, dans le champ **[!UICONTROL Niveau d&#39;alerte]**, le seuil à partir duquel il faudra alerter les opérateurs de le renouveler. Lorsque le niveau d&#39;alerte est atteint, un avertissement est affiché dans la fenêtre de validation des diffusions qui utilisent ce stock.
+* Indiquez, dans le champ **[!UICONTROL Niveau d’alerte]**, le seuil à partir duquel il faudra alerter les opérateurs de le renouveler. Lorsque le niveau d’alerte est atteint, un avertissement est affiché dans la fenêtre de validation des diffusions qui utilisent ce stock.
 
 #### Associer un stock à des postes de coûts {#associate-a-stock-with-cost-categories}
 
@@ -232,7 +232,7 @@ Pour enregistrer une commande, éditez la ligne de stock visée, cliquez sur le 
 >
 >Une fois la date de livraison atteinte, la ligne de stock en commande disparaît automatiquement et la quantité renseignée dans le champ **[!UICONTROL Volume en commande]** passe dans l&#39;onglet **[!UICONTROL Tracking]**. Cette quantité est automatiquement ajoutée au volume en stock.
 
-La variable **[!UICONTROL Consommations]** contient le volume consommé par opération. Les informations de cet onglet sont automatiquement renseignées en fonction des diffusions réalisées. Cliquez sur le bouton **[!UICONTROL Modifier]** pour ouvrir l&#39;opération concernée.
+L’onglet **[!UICONTROL Consommations]** contient le volume consommé par campagne. Les informations de cet onglet sont automatiquement renseignées en fonction des diffusions réalisées. Cliquez sur le bouton **[!UICONTROL Modifier]** pour ouvrir la campagne concernée.
 
 ## Calculer les budgets {#calculate-budgets}
 

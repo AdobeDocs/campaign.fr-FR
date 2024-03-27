@@ -8,7 +8,7 @@ exl-id: 86dee66a-357a-4927-916e-51cde6c006d5
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1061'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Ces données sont contenues dans un fichier texte : &quot;Achats.txt&quot;.
 
    ![](assets/uc2_enrich_collecteur.png)
 
-   La variable **Collecteur de fichiers** activity permet de gérer l’absence de fichier dans le répertoire source. Pour ce faire, cochez la case **[!UICONTROL Traiter l&#39;absence de fichier]** . Dans ce workflow, une **Attente** une activité a été ajoutée pour essayer une autre collection de fichiers si elle est absente du répertoire au moment de la collecte.
+   L’activité **Collecteur de fichiers** permet de gérer l’absence de fichier dans le répertoire source. Pour cela, cochez l’option **[!UICONTROL Traiter l’absence de fichier]**. Dans ce workflow, une activité **Attente** a été ajoutée pour essayer une autre collection de fichiers si elle est absente du répertoire au moment de la collecte.
 
 1. Paramétrez l&#39;activité **Chargement (fichier)** en vous basant sur un fichier exemple ayant le même format que les données à importer.
 
@@ -109,7 +109,7 @@ Les données de la table de travail du workflow après cet enrichissement sont l
 
 ## Étape 2 : Écrire des données enrichies dans la table &#39;Achats&#39; {#step-2--writing-enriched-data-to-the--purchases--table}
 
-Cette étape décrit comment écrire les données importées et enrichies dans la table &quot;Achats&quot;. Pour ce faire, nous devons utiliser un **Mise à jour de données** activité.
+Cette étape décrit comment écrire les données importées et enrichies dans la table « Achats ». Pour ce faire, nous devons utiliser une activité **Mettre à jour des données**.
 
 Une réconciliation entre les données de la table de travail du workflow et la dimension de ciblage **Achats** doit être effectuée avant la mise à jour des données dans la table **Achats**.
 
@@ -126,7 +126,7 @@ Dans l&#39;activité **Mise à jour de données**, la configuration suivante est
 1. Sélectionnez l&#39;option **[!UICONTROL Ajouter ou mettre à jour]** dans le champ **[!UICONTROL Type d&#39;opération]** afin de ne pas créer de nouveaux enregistrements à chaque collecte du fichier.
 1. Sélectionnez la valeur **[!UICONTROL En utilisant directement la dimension de ciblage]** pour l&#39;option **[!UICONTROL Identification des enregistrements]**.
 1. Sélectionnez le schéma &quot;Achats&quot; comme **[!UICONTROL Type de document]**.
-1. Indiquez la liste des champs à mettre à jour. La variable **[!UICONTROL Destination]** permet de définir les champs du schéma &quot;Achats&quot;. La variable **[!UICONTROL Expression]** permet de sélectionner les champs de la table de travail pour effectuer un mapping.
+1. Indiquez la liste des champs à mettre à jour. La colonne **[!UICONTROL Destination]** permet de définir les champs du schéma « Achats ». La colonne **[!UICONTROL Expression]** permet de sélectionner les champs de la table de travail pour effectuer un mapping.
 1. Cliquez sur l&#39;option **[!UICONTROL Générer une transition sortante.]**
 
 

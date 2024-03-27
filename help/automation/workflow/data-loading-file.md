@@ -8,7 +8,7 @@ exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ La section supérieure de la fenêtre de configuration de cette activité permet
 
 ![](assets/s_advuser_wf_etl_file.png)
 
-Vous pouvez définir un pré-traitement à exécuter lors de l&#39;import du fichier, par exemple pour ne pas avoir à décompresser le fichier sur le serveur (et donc économiser de l&#39;espace pour le fichier décompressé) mais pour inclure le décompresser dans le traitement du fichier. Sélectionnez la variable **[!UICONTROL Prétraiter le fichier]** et choisissez l’une des trois options suivantes : **[!UICONTROL Aucun]**, **[!UICONTROL Décompression]** (zcat) ou **[!UICONTROL Décrypter]** (gpg).
+Vous pouvez définir un pré-traitement à exécuter lors de l’import du fichier, par exemple pour ne pas avoir à décompresser le fichier sur le serveur (et donc réserver de la place pour le fichier décompressé), mais faire en sorte que la décompression soit incluse dans le traitement du fichier. Sélectionnez l’option **[!UICONTROL Inclure un pré-traitement du fichier]** et choisissez l’une des trois options suivantes : **[!UICONTROL Aucun]**, **[!UICONTROL Décompression]** (zcat) ou **[!UICONTROL Déchiffrer]** (gpg).
 
 ![](assets/preprocessing-dataloading.png)
 
@@ -73,7 +73,7 @@ Le formatage des colonnes permet de définir le traitement des valeurs de chaque
    * **[!UICONTROL Majuscules]** : tous les caractères de la chaîne sont passés en majuscule.
    * **[!UICONTROL Minuscules]** : tous les caractères de la chaîne sont passés en minuscule.
 
-* **[!UICONTROL Gestion des espaces blancs]**: indique si certains espaces doivent être ignorés dans une chaîne. La variable **[!UICONTROL Ignorer les espaces]** ne permet d’ignorer les espaces au début et à la fin d’une chaîne.
+* **[!UICONTROL Gestion des espaces]** : permet d’indiquer si certains espaces doivent être ignorés dans une chaîne. La valeur **[!UICONTROL Ignorer les espaces]** permet d’ignorer les espaces au début et à la fin d’une chaîne seulement.
 * **[!UICONTROL Traitements d&#39;erreur]** : permet de définir le comportement en cas d&#39;erreur.
 
    * **[!UICONTROL Ignorer la valeur]** : la valeur est ignorée. Un avertissement est généré dans le journal d&#39;exécution du workflow.
@@ -134,6 +134,6 @@ L&#39;exemple suivant permet de collecter tous les jours un fichier sur le serve
 
    ![](assets/s_advuser_load_file_sample_6.png)
 
-1. Indiquez ensuite les traitements à effectuer pour chaque type de population. Dans notre exemple, nous allons **[!UICONTROL Mettre à jour les données]** dans la base de données. Pour ce faire, placez un **[!UICONTROL Mise à jour de données]** activité à la fin de chaque transition sortante à partir de l&#39;activité de partage.
+1. Indiquez ensuite les traitements à effectuer pour chaque type de population. Dans notre exemple, nous allons **[!UICONTROL Mettre à jour les données]** dans la base de données. Pour ce faire, placez une activité **[!UICONTROL Mettre à jour les données]** à la fin de chaque transition sortante à partir de l’activité de partage.
 
-   L&#39;activité de **[!UICONTROL Mise à jour de données]** est présentée dans la section [Mise à jour de données](update-data.md).
+   L&#39;activité **[!UICONTROL Mettre à jour les données]** est présentée dans la section [Mettre à jour les données](update-data.md).

@@ -8,7 +8,7 @@ exl-id: a804d164-58bf-4b15-a48e-8cf75d793668
 source-git-commit: 673298a60927902bba71fd9167c5408e538f4929
 workflow-type: tm+mt
 source-wordcount: '371'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ CREATE TABLE CusRecipient(
 
 Les contraintes des champs SQL sont les suivantes :
 
-* aucune valeur nulle dans les champs numériques et de date
+* pas de valeurs nulles sur les champs numériques et de dates
 * les champs numériques sont initialisés à 0
 
 ## Champs XML {#xml-fields}

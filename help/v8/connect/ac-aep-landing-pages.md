@@ -8,13 +8,13 @@ exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1061'
-ht-degree: 90%
+ht-degree: 97%
 
 ---
 
-# Mise à jour de profils Adobe Experience Platform à partir de landing pages Adobe Campaign {#ac-aep-lp}
+# Mettre à jour les profils Adobe Experience Platform à partir des pages de destination Adobe Campaign{#ac-aep-lp}
 
-L’intégration entre Adobe Campaign et Adobe Experience Platform vous permet de synchroniser facilement les données de profil entre vos landing pages Adobe Campaign et Adobe Experience Platform. Avec cette intégration, vous pouvez effectuer les actions suivantes :
+L’intégration entre Adobe Campaign et Adobe Experience Platform permet de synchroniser facilement les données de profils entre vos pages de destination Adobe Campaign et Adobe Experience Platform. Avec cette intégration, vous pouvez effectuer les actions suivantes :
 
 * Récupérer les attributs de profil Adobe Experience Platform pour afficher les informations mises à jour sur les pages de destination Adobe Campaign.
 * Renvoyer à Adobe Experience Platform les attributs de profil mis à jour afin de mettre à jour les attributs correspondants en fonction des données renseignées et envoyées sur les pages de destination.
@@ -102,7 +102,7 @@ Pour configurer automatiquement ces options lors de l’exécution de votre work
 
 Lors de l’exécution du workflow, les options sont automatiquement créées dans la console Campaign avec les valeurs fournies.
 
-    &quot;javascript
+    ```javascript
     loadLibrary(&quot;xtk:shared/nl.js&quot;);
     loadLibrary(&quot;xtk:shared/xtk.js&quot;);
     loadLibrary(&quot;xtk:shared/json2.js&quot;);
@@ -115,7 +115,7 @@ Lors de l’exécution du workflow, les options sont automatiquement créées da
     setOption(&quot;IMS_ORG_ID&quot;, cryptString(&#39;ORGANIZATION ID&#39;));
     setOption(&quot;IMS_CLIENT_API_KEY&quot;, cryptString(&#39;CLIENT ID&#39;));
     }
-    &quot;
+    ```
 
 >[!ENDTABS]
 

@@ -1,6 +1,6 @@
 ---
-title: Partage et synchronisation d’audiences et d’attributs de profil avec Adobe Experience Platform
-description: Découvrez comment synchroniser les audiences Adobe Experience Platform et les attributs de profil avec Campaign
+title: Partager et synchroniser des audiences et des attributs de profil avec Adobe Experience Platform
+description: Découvrez comment synchroniser les audiences Adobe Experience Platform et les attributs de profil avec Campaign.
 feature: Experience Platform Integration
 role: Data Engineer
 level: Beginner
@@ -8,11 +8,11 @@ exl-id: 21cf5611-ccaa-4e83-8891-a1a2353515aa
 source-git-commit: ea37b72efd03afb212c060f809b6ba077b996701
 workflow-type: tm+mt
 source-wordcount: '557'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# Partage et synchronisation d’audiences avec Adobe Experience Platform {#gs-ac-aep}
+# Partager et synchroniser des audiences avec Adobe Experience Platform{#gs-ac-aep}
 
 La destination et les connecteurs source d’Adobe Campaign Managed Cloud Services permettent une intégration transparente entre Adobe Campaign et Adobe Experience Platform. Avec cette intégration, vous pouvez effectuer les actions suivantes :
 

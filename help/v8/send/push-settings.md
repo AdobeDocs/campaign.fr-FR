@@ -9,7 +9,7 @@ exl-id: 1a75f411-3f71-4114-b738-277820dc6138
 source-git-commit: 550e3cbd064ae7831855377f1d08d6acecd55c9e
 workflow-type: tm+mt
 source-wordcount: '1819'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -213,7 +213,7 @@ Pour créer une application pour les appareils iOS, procédez comme suit :
 
    * (Recommandé) **[!UICONTROL Authentification basée sur les jetons]** : renseignez les paramètres de connexion APNs **[!UICONTROL Identifiant de la clé]**, **[!UICONTROL Identifiant de l&#39;équipe]** et **[!UICONTROL Identifiant de paquet]**, puis sélectionnez votre certificat p8 en cliquant sur **[!UICONTROL Renseigner la clé privée…]**. Pour plus d&#39;informations sur l&#39;**[!UICONTROL authentification basée sur les jetons]**, reportez-vous à la [documentation Apple](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
 
-   * **[!UICONTROL Authentification par certificat]**: cliquez sur **[!UICONTROL Saisissez le certificat...]**  sélectionnez ensuite votre clé p12 et saisissez le mot de passe fourni par le développeur de l&#39;application mobile. Notez que ce certificat est fourni avec une date d’expiration et doit être renouvelé tous les ans. Pour éviter toute interruption de service pour vos utilisateurs, mettez à jour vos certificats avant qu’ils n’expirent. Les certificats sont valides pendant un an et vous devez les mettre à jour pour continuer à communiquer avec les APNS.
+   * **[!UICONTROL Authentification basée sur les certificats]** : cliquez sur **[!UICONTROL Renseigner le certificat...]**, sélectionnez votre clé p12 et saisissez le mot de passe fourni par l’équipe de développement d’applications mobiles. Notez que ce certificat est fourni avec une date d’expiration et doit être renouvelé tous les ans. Pour éviter toute interruption de service pour vos utilisateurs et utilisatrices, mettez à jour vos certificats avant qu’ils n’expirent. Les certificats sont valides pendant un an. Vous devez les mettre à jour pour continuer à communiquer avec les APN.
 
 1. Utilisez le bouton **[!UICONTROL Tester la connexion]** pour valider votre configuration.
 

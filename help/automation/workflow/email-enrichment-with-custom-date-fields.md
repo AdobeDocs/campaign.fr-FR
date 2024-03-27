@@ -8,7 +8,7 @@ exl-id: 2bb3443c-37d8-4d49-9be1-81217f56823c
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '631'
-ht-degree: 81%
+ht-degree: 82%
 
 ---
 
@@ -81,7 +81,7 @@ Vous devez maintenant paramétrer votre activité **[!UICONTROL Enrichissement]*
 
    ![](assets/uc_enrichment_12.png)
 
-1. Cliquez sur **[!UICONTROL Ok]**. Votre enrichissement est maintenant prêt.
+1. Cliquez sur **[!UICONTROL OK]**. Votre enrichissement est maintenant prêt.
 
 Après votre activité **[!UICONTROL Enrichissement]**, vous pouvez ajouter une diffusion. Dans ce cas, nous avons ajouté une diffusion par email pour envoyer une offre spéciale avec des dates de validité aux clients célébrant leur anniversaire ce mois-ci.
 

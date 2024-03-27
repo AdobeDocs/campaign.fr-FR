@@ -7,7 +7,7 @@ exl-id: c530fb4e-d21e-4059-88e1-77a8d33a7832
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '441'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Dans l’exemple ci-dessous, un workflow principal appelle un sous-workflow à l
    ![](assets/subworkflow_selection.png)
 
 1. Vous pouvez également ajouter un script de paramétrage pour modifier le fonctionnement du workflow référencé.
-1. Cliquez sur **[!UICONTROL Ok]**. Il crée automatiquement une transition sortante avec le libellé de la fonction **[!UICONTROL Saut (point de départ)]** activité du workflow sélectionné.
+1. Cliquez sur **[!UICONTROL OK]**. Vous créez ainsi automatiquement une transition sortante avec le libellé de l’activité **[!UICONTROL Saut (départ)]** du workflow sélectionné.
 
    ![](assets/subworkflow_outbound.png)
 

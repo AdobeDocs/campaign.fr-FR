@@ -8,7 +8,7 @@ exl-id: 8510e879-2862-491f-bc52-ca8f56105932
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -29,11 +29,11 @@ Pour paramétrer l&#39;extraction des données, les étapes sont les suivantes 
 
    L&#39;option **[!UICONTROL Gérer les groupements (GROUP BY + HAVING)]** ajoute une étape supplémentaire afin de filtrer sur le résultat final de l&#39;agrégat, par exemple sur tel type de commande, sur les clients ayant passé plus de 10 commandes, etc.
 
-1. Au besoin, vous pouvez ajouter de nouvelles colonnes dans le fichier de sortie, par exemple des résultats de calcul ou de traitement. Pour ce faire, cliquez sur le bouton **[!UICONTROL Ajouter]** Icône
+1. Au besoin, vous pouvez ajouter de nouvelles colonnes dans le fichier de sortie, comme résultat de calculs ou de traitement sur les données. Pour ce faire, cliquez sur l’icône **[!UICONTROL Ajouter]**.
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
-   Dans la ligne supplémentaire, cliquez sur l&#39;icône **[!UICONTROL Editer l&#39;expression]** pour définir le contenu de la nouvelle colonne.
+   Dans la ligne supplémentaire, cliquez sur l&#39;icône **[!UICONTROL Modifier l’expression]** pour définir le contenu de la nouvelle colonne.
 
    ![](assets/s_advuser_extract_file_add_exp.png)
 
@@ -41,7 +41,7 @@ Pour paramétrer l&#39;extraction des données, les étapes sont les suivantes 
 
    ![](assets/s_advuser_extract_file_advanced_selection.png)
 
-   Sélectionnez la formule souhaitée parmi celles proposées.
+   Sélectionnez la formule souhaitée dans la liste.
 
    ![](assets/s_advuser_extract_file_agregate_values.png)
 

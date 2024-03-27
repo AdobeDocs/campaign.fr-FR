@@ -8,7 +8,7 @@ exl-id: 2a7ae88e-d47f-416b-84cd-986ab9be6aef
 source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
 workflow-type: tm+mt
 source-wordcount: '1402'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ La date de la dernière synchronisation est stockée dans l&#39;option indiquée
 >
 >Cette note s&#39;applique uniquement à l&#39;activité **[!UICONTROL Connecteur CRM]** générique. Pour les autres activités CRM, le processus est automatique.
 >
->Cette option doit être créée et renseignée manuellement sous **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Options]**. Il doit s’agir d’une option de texte et sa valeur doit correspondre au format suivant : **`yyyy/MM/dd hh:mm:ss`**.
+>Cette option doit être créée et renseignée manuellement sous **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Options]**. Il doit s’agir d’une option de texte et sa valeur doit correspondre au format suivant : **`yyyy/MM/dd hh:mm:ss`**.
 > 
 >Pour tout autre import, vous devez mettre à jour manuellement cette option.
 
@@ -106,7 +106,7 @@ L&#39;activation de l&#39;option **[!UICONTROL Index automatique]** génère tro
 
   >[!NOTE]
   >
-  >Ces dates sont affichées au format suivant : **`yyyy/MM/dd hh:mm:ss`**.
+  >Ces dates s’affichent au format suivant : **`yyyy/MM/dd hh:mm:ss`**.
 
 ### Filtrage des données {#filtering-data}
 
@@ -220,4 +220,4 @@ Vous pouvez importer des objets supprimés dans votre CRM vers Adobe Campaign.
 
 Pour supprimer des objets dans votre CRM, vous devez indiquer la clé primaire des éléments distants à effacer.
 
-La variable **[!UICONTROL Comportement]** vous permet d&#39;activer le traitement des rejets. Cette option génère une seconde transition de sortie pour la variable **[!UICONTROL Connecteur CRM]** activité. Voir à ce sujet la section [Traitement des erreurs](#error-processing).
+L’onglet **[!UICONTROL Comportement]** vous permet d’activer le traitement des rejets. Cette option génère une seconde transition de sortie pour l’activité **[!UICONTROL Connecteur CRM]**. Voir à ce sujet la section [Traitement des erreurs](#error-processing).

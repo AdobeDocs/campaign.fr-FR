@@ -8,7 +8,7 @@ exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '754'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Une fois toutes les demandes de validation approuvées, la diffusion passe au st
 
 ![](assets/confirm-delivery.png)
 
-Les informations s&#39;affichent également dans le tableau de bord de l&#39;opération. La variable **[!UICONTROL Confirmer l&#39;envoi]** lien permet de lancer la diffusion.
+Les informations s’affichent également dans le tableau de bord de la campagne. Le lien **[!UICONTROL Confirmer la diffusion]** permet de lancer la diffusion.
 
 ![](assets/confirm-delivery-from-dashboard.png)
 
@@ -79,9 +79,9 @@ Suivez les étapes ci-dessous pour valider le contenu et envoyer le fichier au f
 
    La cible des BAT doit avoir été préalablement définie.
 
-   Vous pouvez créer autant de BAT que nécessaire. Elles sont accessibles via le **[!UICONTROL Courrier...]** lien du détail de la diffusion.
+   Vous pouvez créer autant de BAT que nécessaire. Ces derniers sont accessibles via le lien **[!UICONTROL Courrier...]** dans le détail de la diffusion.
 
-1. La diffusion passe alors à l’état **[!UICONTROL Pour envoyer]**. Cliquez sur le bouton **[!UICONTROL Envoyer un bon à tirer]** pour lancer le processus de validation.
+1. Le statut de la diffusion passe alors à **[!UICONTROL À envoyer]**. Cliquez sur le bouton **[!UICONTROL Soumettre les BAT]** pour lancer le processus de validation.
 
 1. La diffusion passe à l&#39;état **[!UICONTROL BAT à valider]** et un bouton permet d&#39;accepter ou refuser la validation.
 

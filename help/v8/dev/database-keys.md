@@ -1,22 +1,22 @@
 ---
-title: Gestion des clés dans la base de données Campaign
-description: Présentation de la gestion des clés dans les schémas Adobe Campaign
+title: Gestion des clés dans la base de données Campaign
+description: Comprendre la gestion des clés dans les schémas Adobe Campaign
 feature: Data Model, Configuration
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 673298a60927902bba71fd9167c5408e538f4929
+exl-id: cf1f5cfc-172f-44ec-ac97-804d15f9d628
+source-git-commit: 0f5efba364ef924447324bdd806e15e6db8d799d
 workflow-type: tm+mt
 source-wordcount: '268'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
-
 
 # Gestion des clés {#management-of-keys}
 
 Chaque table associée à un schéma de données doit posséder au moins une clé pour identifier un enregistrement dans une table.
 
-Une clé est déclarée à partir de l&#39;élément principal du schéma de données.
+Une clé est déclarée à partir de l’élément principal du schéma de données.
 
 ```sql
 <key name="name_of_key">
@@ -26,7 +26,7 @@ Une clé est déclarée à partir de l&#39;élément principal du schéma de don
 </key>
 ```
 
-Une clé est dite &quot;clé primaire&quot; lorsqu’elle est renseignée en premier dans le schéma, ou si elle contient la variable `internal` est défini sur &quot;true&quot;.
+Une clé est dite primaire lorsqu’elle est renseignée en premier dans le schéma ou si elle contient l’attribut `internal` avec la valeur « true ».
 
 Une clé peut référencer un ou plusieurs champs de la table.
 
@@ -112,7 +112,7 @@ Dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterpr
 
 **Exemple**
 
-Dans l’exemple ci-dessous, nous déclarons une clé incrémentale dans le schéma source :
+Dans l’exemple ci-dessous, nous déclarons une clé incrémentale dans le schéma source :
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -142,4 +142,3 @@ Outre la définition de la clé, un champ numérique nommé &quot;id&quot; a ét
 >[!CAUTION]
 >
 >Un enregistrement avec une clé primaire à 0 est automatiquement inséré à la création de la table. Cet enregistrement est utilisé pour éviter les jointures externes, non efficaces sur les tables à volumes. Par défaut, toutes les clés étrangères sont initialisées avec la valeur 0, ce qui permet de toujours retourner un résultat sur la jointure lorsque la donnée n&#39;est pas renseignée.
-
