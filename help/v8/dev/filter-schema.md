@@ -42,7 +42,7 @@ Ces filtres sont renseignés au niveau de l’**élément** principal des schém
 
 * Restreindre les autorisations de LECTURE et d’ÉCRITURE :
 
-  Ici, le filtre est utilisé pour interdire à la fois les permissions de LECTURE et d’ÉCRITURE sur le schéma à tous les opérateurs. Seule la variable **internal** compte, représenté par l’expression &quot;$(loginId)!=0&quot;, possède ces autorisations.
+  Ici, le filtre sert à interdire à la fois les autorisations de LECTURE et d’ÉCRITURE sur le schéma à tous les opérateurs. Uniquement le **interne** Compte , représenté par l’expression « $(loginId) !=0 », dispose de ces autorisations.
 
   ```
   <sysFilter name="readAccess"> 

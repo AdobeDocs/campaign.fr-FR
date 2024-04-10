@@ -46,7 +46,7 @@ Avec Adobe Campaign, vous pouvez créer, configurer, exécuter et analyser tout
 
 ![](assets/calendar.png)
 
-Découvrez comment accéder aux campagnes marketing et les mettre en oeuvre dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=fr){target="_blank"}.
+Découvrez comment accéder aux campagnes marketing et comment les implémenter dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=fr){target="_blank"}.
 
 ## Étapes clés pour bien démarrer{#gs-ac-start}
 
@@ -62,7 +62,7 @@ Les étapes clés permettant de créer une campagne marketing cross-canal sont l
 
    Découvrez comment utiliser les modèles de campagne dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=fr){target="_blank"}.
 
-   Découvrez les campagnes récurrentes et comment les configurer dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html?lang=fr){target="_blank"}.
+   Découvrez les campagnes récurrentes et comment les configurer dans . [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html?lang=fr){target="_blank"}.
 
 1. **Définition d&#39;audiences**
 
@@ -78,7 +78,7 @@ Les étapes clés permettant de créer une campagne marketing cross-canal sont l
 
    ![](assets/campaign-dashboard.png)
 
-   Découvrez comment créer et démarrer des diffusions de campagne marketing dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=fr){target="_blank"}.
+   Découvrez comment créer et lancer des diffusions de campagnes marketing dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=fr){target="_blank"}.
 
    Vous pouvez associer divers documents à une campagne, comme des rapports, photos, pages web, diagrammes, etc.
 
@@ -99,7 +99,7 @@ Adobe Campaign propose un module complémentaire **Marketing distribué** pour l
 >
 >Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-Découvrez comment configurer et utiliser les fonctionnalités de marketing distribué de Campaign dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=fr){target="_blank"}.
+Découvrez comment configurer et utiliser les fonctionnalités du marketing distribué de Campaign dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=fr){target="_blank"}.
 
 ## Module complémentaire Gestion de la réaction{#response-manager-add-on}
 
@@ -109,4 +109,4 @@ Adobe Campaign propose un module complémentaire **Gestion de la réaction** qu
 >
 >Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-[](../assets/do-not-localize/book.png) Découvrez comment configurer et utiliser le gestionnaire de réponse de Campaign dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=fr){target="_blank"}.
+[](../assets/do-not-localize/book.png) Découvrez comment configurer et utiliser la Gestion de la réaction de Campaign dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=fr){target="_blank"}.

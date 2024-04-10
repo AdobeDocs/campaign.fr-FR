@@ -40,7 +40,7 @@ Avant de configurer l&#39;activité, vérifiez que les prérequis suivants sont 
    >
    >Il incombe à la personne chargée de l&#39;écriture du script SQL de s&#39;assurer que celui-ci est fonctionnel et que ses références (noms de champs, etc.) sont conformes au schéma sortant.
 
-   Si vous souhaitez charger un code SQL existant, sélectionnez la variable **[!UICONTROL Le script SQL est contenu dans une entité stockée dans la base de données]** . Les scripts SQL doivent être créés et stockés dans la variable **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL Scripts SQL]** .
+   Si vous souhaitez charger un code SQL existant, sélectionnez la variable **[!UICONTROL Le script SQL est contenu dans une entité stockée dans la base]** option. Les scripts SQL doivent être créés et stockés dans le **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL Scripts SQL]** menu.
 
    Sinon, saisissez ou effectuez un copier-coller du script SQL dans la zone dédiée.
 

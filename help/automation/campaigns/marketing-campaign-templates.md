@@ -166,7 +166,7 @@ De plus, des raccourcis vers les fenêtres de configuration sont ajoutés dans l
 Lorsque vous créez un modèle de campagne, vous devez indiquer les informations suivantes :
 
 * Saisissez le **libellé** du modèle : le libellé est obligatoire et constitue le libellé par défaut pour toutes les campagnes basées sur ce modèle.
-* Sélectionner l&#39;opération **nature** dans la liste déroulante. Les valeurs disponibles dans cette liste sont celles enregistrées dans la variable **[!UICONTROL natureOp]** énumération.
+* Sélectionner la campagne **nature** dans la liste déroulante. Les valeurs disponibles dans cette liste sont celles enregistrées dans le **[!UICONTROL natureOp]** énumération.
 
 Découvrez comment accéder à vos énumérations et la manière de les configurer sur [cette page](../../v8/config/ui-settings.md#enumerations).
 

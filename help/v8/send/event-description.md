@@ -114,7 +114,7 @@ Les attributs obligatoires des éléments **`<rtevent>`** et **`<batchevent>`** 
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
 ```
 
-Dans cet exemple, deux canaux sont proposés : l&#39;adresse email et le numéro de téléphone portable. La variable **wishChannel** permet de sélectionner le canal à utiliser lors de la transformation de l&#39;événement en message. La valeur &quot;0&quot; correspond au canal email, la valeur &quot;1&quot; au canal mobile, etc.
+Dans cet exemple, deux canaux sont fournis : l’adresse e-mail et le numéro de téléphone mobile. Le **wishedChannel** permet de sélectionner le canal à utiliser lors de la transformation de l’événement en message. La valeur « 0 » correspond au canal e-mail, la valeur « 1 » au canal mobile, etc.
 
 Si vous souhaitez différer le traitement d&#39;un évènement, ajoutez le champ **[!UICONTROL scheduled]** suivi de la date désirée. L&#39;évènement sera transformé en message à cette date.
 

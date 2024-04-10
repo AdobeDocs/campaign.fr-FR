@@ -80,6 +80,6 @@ Les navigateurs ci-après sont compatibles avec Campaign pour un accès web. Pou
 * [Mises à jour des versions de Campaign](upgrades.md)
 * [Vérifier votre version de Campaign](upgrades.md#version)
 * [Installer la console cliente Campaign](connect.md)
-* [Versions de Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=fr){target="_blank"}
+* [Versions du Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=fr){target="_blank"}
 
 Pour recevoir des informations sur des nouvelles versions de la solution Experience Cloud, abonnez-vous à la [Mise à jour produit prioritaire d’Adobe](https://www.adobe.com/fr/subscription/priority-product-update.html){target="_blank"}.

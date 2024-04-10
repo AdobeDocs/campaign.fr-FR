@@ -22,7 +22,7 @@ Lorsqu’une tâche « Signal externe » est activée, elle est suspendue ind�
 
 Reportez-vous à la documentation en ligne sur les appels SOAP pour plus d&#39;information sur la fonction PostEvent.
 
-Vous pouvez paramétrer cette activité afin de définir des événements en cas d&#39;absence de signal. Pour cela, éditez l&#39;activité et cliquez sur le bouton **[!UICONTROL Expiration]** . Cliquez sur le bouton **[!UICONTROL Insérer]** pour créer et configurer un événement.
+Vous pouvez configurer cette activité afin de définir des événements si aucun signal n’est reçu. Pour cela, modifiez l’activité et cliquez sur le lien **[!UICONTROL Expiration]** onglet. Cliquez sur le lien **[!UICONTROL Insérer]** pour créer et configurer un événement.
 
 ![](assets/edit_signal.png)
 

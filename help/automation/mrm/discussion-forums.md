@@ -62,7 +62,7 @@ Pour répondre à un message, cliquez dans le corps de l’e-mail, puis connecte
 
 * Pour vous désabonner d&#39;un forum, cliquez sur le bouton **[!UICONTROL Se désabonner]** dans le bandeau.
 
-* Votre tableau de bord personnel répertorie les forums auxquels vous êtes abonné. Cliquez sur le bouton **[!UICONTROL Abonnement aux forums de discussion]** pour afficher la liste, puis cliquez sur l&#39;élément qui vous intéresse pour accéder à son forum.
+* Votre tableau de bord personnel répertorie les forums auxquels vous êtes abonné. Cliquez sur le lien **[!UICONTROL Abonnement aux forums de discussion]** lien pour afficher la liste, puis cliquez sur l&#39;élément qui vous intéresse pour accéder à son forum.
 
   ![](assets/forum-subscribed.png)
 
@@ -78,4 +78,4 @@ Si des opérateurs/opératrices abonné(e)s à un forum ne reçoivent pas les no
    * Depuis la page d’accueil d’Adobe Campaign, accédez à **[!UICONTROL Campagnes > Navigation > Diffusions]**, puis ouvrez la diffusion **[!UICONTROL Notification des forums de discussion]**.
    * Dans l’explorateur Campaign, accédez à **[!UICONTROL Administration > Exploitation > Objets créés automatiquement > Diffusions techniques > Notifications de workflow]**, puis cliquez sur **[!UICONTROL Notification des forums de discussion]**.
 
-  Dans le **[!UICONTROL Notifications des forums de discussion]** , les logs de diffusion se trouvent dans la variable **[!UICONTROL Modifier > Diffusion]** . Vous pouvez également afficher la variable **[!UICONTROL Tracking > Journal]** et la variable **[!UICONTROL Exclusions appliquées]** onglets.
+  Dans le **[!UICONTROL Notification des forums de discussion]** , les logs de diffusion se trouvent dans la **[!UICONTROL Modifier > Diffusion]** onglet. Vous pouvez également consulter le **[!UICONTROL Tracking > Journal]** et le **[!UICONTROL Causes d’exclusion]** onglets.

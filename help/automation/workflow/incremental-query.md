@@ -33,7 +33,7 @@ La requête est définie selon le même mode que pour les requêtes standard, ma
 
 Pour cela :
 
-1. Dans le **[!UICONTROL Planification et historique]** , sélectionnez l’onglet **[!UICONTROL Planifier l&#39;exécution]** . La tâche reste active une fois créée et ne sera déclenchée qu&#39;aux heures spécifiées par le planning d&#39;exécution de la requête. Cependant, si l&#39;option est désactivée, la requête est exécutée immédiatement. **et en une seule fois**.
+1. Dans le **[!UICONTROL Planification et historique]** , sélectionnez l’onglet **[!UICONTROL Planifier l’exécution]** option. La tâche reste active une fois créée et ne sera déclenchée qu&#39;aux heures spécifiées par le planning d&#39;exécution de la requête. Cependant, si cette option est désactivée, la requête est exécutée immédiatement **et en une seule fois**.
 1. Cliquez sur le bouton **[!UICONTROL Changer]**.
 
    Dans la fenêtre **[!UICONTROL Assistant d&#39;édition d&#39;un planning]** qui s&#39;affiche, vous pouvez paramétrer le type de périodicité, les événements de la périodicité et la période de validité des événements.

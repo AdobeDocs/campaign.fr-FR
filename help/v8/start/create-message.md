@@ -46,7 +46,7 @@ Une fois votre message créé et son contenu conçu et testé, vous pouvez chois
 
   ![](assets/deliveries-in-a-campaign.png)
 
-  Découvrez comment envoyer des messages dans le contexte d’une campagne dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=fr){target="_blank"}
+  Découvrez comment envoyer des messages dans le cadre d’une campagne dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=fr){target="_blank"}
 
 * Envoyer des messages via un [workflow](../config/workflows.md)
 

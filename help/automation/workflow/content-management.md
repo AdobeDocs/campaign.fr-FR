@@ -36,19 +36,19 @@ Les propriétés de l&#39;activité se divisent en trois étapes :
 
    * **[!UICONTROL Explicite]**
 
-     Cette option permet de sélectionner un contenu déjà créé, à partir du **[!UICONTROL Contenu]** champ . Ce champ n’est visible que lorsque la variable **[!UICONTROL Explicite]** est sélectionnée.
+     Cette option permet de sélectionner un contenu déjà créé, via le **[!UICONTROL Contenu]** champ . Ce champ n’est visible que lorsque **[!UICONTROL Explicite]** est sélectionnée.
 
      ![](assets/content_mgmt_explicit.png)
 
    * **[!UICONTROL Calculé par un script]**
 
-     L&#39;identifiant du contenu est calculé par un script. La variable **[!UICONTROL Script]** permet de définir un template JavaScript évaluant l&#39;identifiant (la clé primaire) du contenu. Ce champ n’est visible que lorsque la variable **[!UICONTROL Calculé par un script]** est sélectionnée.
+     L&#39;identifiant du contenu est calculé par un script. Le **[!UICONTROL Script]** vous permet de définir un template JavaScript qui évalue l&#39;identifiant (clé primaire) du contenu. Ce champ n’est visible que lorsque **[!UICONTROL Calculé par un script]** est sélectionnée.
 
      ![](assets/content_mgmt_script.png)
 
    * **[!UICONTROL Nouveau, créé depuis un modèle de publication]**
 
-     Crée un nouveau contenu à partir d&#39;un modèle de publication. Ce nouveau contenu sera enregistré dans le fichier spécifié dans la variable **[!UICONTROL Chaîne]** champ . La variable **[!UICONTROL Modèle]** indique le modèle de publication à utiliser pour créer le contenu.
+     Crée un nouveau contenu à partir d&#39;un modèle de publication. Ce nouveau contenu sera enregistré dans le fichier spécifié dans le **[!UICONTROL String]** champ . Le **[!UICONTROL Modèle]** champ indique le modèle de publication à utiliser pour créer le contenu.
 
      ![](assets/content_mgmt_new.png)
 
@@ -60,7 +60,7 @@ Les propriétés de l&#39;activité se divisent en trois étapes :
 
    * **[!UICONTROL Accès aux données provenant d&#39;un flux XML]**
 
-     Cette option permet de construire le contenu à partir d&#39;un document XML téléchargé via une feuille de style XSL. Lorsque cette option est sélectionnée, la variable **[!UICONTROL URL]** spécifie l’URL de téléchargement du contenu XML. La variable **[!UICONTROL Feuille de style XSL]** permet de spécifier la feuille de style à utiliser pour transformer le document XML téléchargé. Cette propriété est facultative.
+     Cette option permet de construire le contenu à partir d&#39;un document XML téléchargé via une feuille de style XSL. Lorsque cette option est sélectionnée, le **[!UICONTROL URL]** Le champ indique l’URL de téléchargement de contenu XML. Le **[!UICONTROL Feuille de style XSL]** permet de spécifier la feuille de style à utiliser pour transformer le document XML téléchargé. Cette propriété est facultative.
 
      ![](assets/content_mgmt_xmlcontent.png)
 

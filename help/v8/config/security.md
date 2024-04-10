@@ -30,7 +30,7 @@ La configuration et le renforcement de la confidentialité sont des éléments c
 
 >[!NOTE]
 >
->En tant qu’utilisateur Cloud Service géré, Adobe collaborera avec vous pour mettre en oeuvre ces configurations dans votre environnement.
+>En tant qu’utilisateur Managed Cloud Service, Adobe vous accompagne dans l’implémentation de ces configurations dans votre environnement.
 
 
 ## Gestion des accès

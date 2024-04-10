@@ -106,7 +106,7 @@ Double-cliquez sur une activité pour la paramétrer ou cliquez avec le bouton d
 >
 >Les activités de workflow d’opérations disponibles sont présentées dans [cette section](activities.md).
 
-Le premier onglet contient le paramétrage de base. La variable **[!UICONTROL Avancé]** contient les paramètres supplémentaires, qui sont notamment utilisés pour définir le comportement en cas d’erreur, définir la durée d’exécution d’une activité et saisir un script d’initialisation.
+Le premier onglet contient la configuration de base. Le **[!UICONTROL Avancé]** contient les paramètres additionnels qui servent notamment à définir le comportement en cas d&#39;erreur, à préciser la durée d&#39;exécution d&#39;une activité et à renseigner un script d&#39;initialisation.
 
 Pour une meilleure compréhension des activités et une meilleure lisibilité des workflows, vous pouvez saisir des commentaires dans les activités.
 

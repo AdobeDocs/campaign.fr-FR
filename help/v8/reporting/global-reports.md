@@ -45,13 +45,13 @@ Ce rapport contient les informations relatives au débit de diffusion de l&#39;e
 
 ![](assets/report-toolbar.png)
 
-Vous pouvez paramétrer l&#39;affichage des valeurs en sélectionnant le périmètre de la vue : 1 heure, 3 heures, 24 heures, etc. Cliquez sur **[!UICONTROL Actualiser]** pour confirmer votre sélection.
+Vous pouvez paramétrer l&#39;affichage des valeurs en modifiant l&#39;échelle de temps : affichage sur 1 heure, affichage sur 3 heures, affichage sur 24 heures, etc. Clic **[!UICONTROL Actualiser]** pour confirmer votre sélection.
 
 >[!NOTE]
 >
->Vous pouvez également surveiller le nombre de diffusions envoyées par heure à l’aide de la variable [Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=fr){target="_blank"}.
+>Vous pouvez également surveiller le nombre de diffusions envoyées par heure à l’aide du [Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=fr){target="_blank"}.
 >
->Le Panneau de contrôle est accessible à tous les utilisateurs administrateurs. Les étapes pour accorder un accès administrateur à un utilisateur sont présentées dans la section [cette page](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=fr#discover-control-panel){target="_blank"}.
+>Le Panneau de contrôle est accessible à tous les utilisateurs administrateurs. Les étapes permettant d&#39;octroyer un accès administrateur à un utilisateur sont présentées dans [cette page](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=fr#discover-control-panel){target="_blank"}.
 >
 
 ## Activités utilisateurs {#user-activities}
@@ -61,7 +61,7 @@ Ce rapport présente la répartition des ouvertures, clics et transactions, par 
 Les options disponibles sont les suivantes :
 
 * **[!UICONTROL Ouvertures]** : Nombre total de messages ouverts. Les emails au format texte ne sont pas pris en compte. [En savoir plus](metrics-calculation.md#tracking-opens-).
-* **[!UICONTROL Clics]** : Nombre total de clics sur les liens des diffusions. Les clics sur les liens de désinscription et les pages miroir ne sont pas pris en compte.
+* **[!UICONTROL Clics]** : nombre total de clics sur les liens des diffusions. Les clics sur les liens de désinscription et les pages miroir ne sont pas pris en compte.
 <!--
 * **[!UICONTROL Transactions]** : Total number of transactions after a message is received. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
@@ -76,7 +76,7 @@ Le **[!UICONTROL Nombre de messages traités]** représente le nombre total de m
 
 >[!NOTE]
 >
->Les erreurs présentées dans ce rapport déclenchent le processus de mise en quarantaine. Pour plus d&#39;informations sur la gestion des quarantaines, voir [Gestion des quarantaines](../send/quarantines.md).
+>Les erreurs présentées dans ce rapport déclenchent le processus de mise en quarantaine. Pour plus d’informations sur la gestion des quarantaines, voir [Gestion des quarantaines](../send/quarantines.md).
 
 La première partie de ce rapport présente la répartition des messages en échec sous la forme d&#39;un tableau de valeurs et d&#39;un graphique.
 
@@ -118,7 +118,7 @@ Vous pouvez déplier chaque ligne du tableau de valeurs en cliquant sur le symbo
 
 >[!NOTE]
 >
->Les noms de domaine affichés dans ce rapport sont définis au niveau des cubes. Pour modifier ces valeurs, modifiez la variable **[!UICONTROL Logs de diffusion (broadlogrcp)]** cube. Pour plus d’informations, consultez [cette section](gs-cubes.md). La variable **[!UICONTROL Autres]** category comprend les noms de domaine qui n’appartiennent pas à une classe spécifique.
+>Les noms de domaine affichés dans ce rapport sont définis au niveau des cubes. Pour modifier ces valeurs, modifiez le **[!UICONTROL Logs de diffusion (broadlogrcp)]** cube. Pour plus d’informations, consultez [cette section](gs-cubes.md). Le **[!UICONTROL Autres]** La catégorie comprend les noms de domaine qui n’appartiennent pas à une classe spécifique.
 
 ## Navigateurs {#browsers}
 
@@ -253,7 +253,7 @@ Ce rapport permet d&#39;assurer le suivi des abonnements aux services d&#39;info
 
 ![](assets/service-report.png)
 
-Il peut être affiché pour un abonnement en cliquant sur l’icône **[!UICONTROL Profils et cibles > Services et abonnements]** du noeud de la page d&#39;accueil ou de l&#39;explorateur. Sélectionnez l’abonnement souhaité, puis cliquez sur le bouton **[!UICONTROL Rapports]** . La variable **[!UICONTROL Tracking des abonnements]** est disponible par défaut. Il vous permet de visualiser les tendances d&#39;inscription et de désinscription, ainsi que le taux de fidélité sur une période. Vous pouvez paramétrer la représentation de ces données depuis la liste déroulante. Cliquez sur **[!UICONTROL Actualiser]** pour valider la configuration sélectionnée.
+Elle peut être affichée pour un abonnement en cliquant sur le lien **[!UICONTROL Profils et cibles > Services et abonnements]** nœud de la page d’accueil ou de l’explorateur. Sélectionnez l’abonnement souhaité, puis cliquez sur le bouton **[!UICONTROL Rapports]** onglet. Le **[!UICONTROL Tracking des abonnements]** Rapport disponible par défaut. Il permet de voir les tendances d’abonnement et de désabonnement, ainsi que le taux de fidélité sur une période. Vous pouvez configurer la représentation de ces données à partir de la liste déroulante. Clic **[!UICONTROL Actualiser]** pour valider la configuration sélectionnée.
 
 Voir à ce propos [cette page](../start/subscriptions.md).
 

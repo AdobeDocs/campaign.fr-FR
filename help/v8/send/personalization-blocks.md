@@ -32,7 +32,7 @@ Pour insérer un bloc de personnalisation dans un message, procédez comme suit�
 1. Le bloc de personnalisation est alors inséré sous forme de script. Il sera automatiquement adapté au profil du ou de la destinataire lors de la génération de la personnalisation.
 1. Accédez à l’onglet **[!UICONTROL Prévisualisation]**, puis sélectionnez un destinataire pour visualiser le contenu de ce bloc en fonction de ce dernier.
 
-Vous pouvez inclure le code source d&#39;un bloc de personnalisation dans le contenu de la diffusion. Pour ce faire, sélectionnez **[!UICONTROL Inclure le code source du HTML du bloc]** lors de sa sélection.
+Vous pouvez inclure le code source d’un bloc de personnalisation dans le contenu de la diffusion. Pour ce faire, sélectionnez **[!UICONTROL Inclure le code source du HTML]** lors de sa sélection.
 
 ## Blocs de personnalisation intégrés {#ootb-personalization-blocks}
 

@@ -18,7 +18,7 @@ La messagerie transactionnelle (Message Center) est un module de Campaign conçu
 
 >[!NOTE]
 >
->En tant qu’utilisateur Cloud Service géré, [contact Adobe](../start/campaign-faq.md#support){target="_blank"} pour configurer les messages transactionnels Campaign dans votre environnement.
+>En tant qu’utilisateur Managed Cloud Service, [Adobe de contact](../start/campaign-faq.md#support){target="_blank"} pour configurer la messagerie transactionnelle de Campaign dans votre environnement.
 
 Les messages transactionnels sont utilisés pour envoyer :
 
@@ -120,7 +120,7 @@ Lorsque vous avez défini le contenu de votre message, vous pouvez intégrer les
 ![](assets/messagecenter_create_content.png)
 
 * Tous les champs de personnalisation proviennent de la payload.
-* Vous pouvez référencer un ou plusieurs blocs de personnalisation dans un message transactionnel. <!--The block content will be added to the delivery content during the publication to the execution instance.-->
+* Il est possible de référencer un ou plusieurs blocs de personnalisation dans un message transactionnel. <!--The block content will be added to the delivery content during the publication to the execution instance.-->
 
 Pour insérer des balises de personnalisation dans le corps d&#39;un message email, procédez comme suit :
 
@@ -130,7 +130,7 @@ Pour insérer des balises de personnalisation dans le corps d&#39;un message ema
 
    ![](assets/messagecenter_create_custo_1.png)
 
-1. Renseignez la balise en utilisant la syntaxe suivante : **nom de l’élément**.@**nom de l’attribut** comme illustré ci-dessous.
+1. Complétez la balise selon la syntaxe suivante : **nom de l’élément**.@**nom de l’attribut** comme illustré ci-dessous.
 
    ![](assets/messagecenter_create_custo_2.png)
 

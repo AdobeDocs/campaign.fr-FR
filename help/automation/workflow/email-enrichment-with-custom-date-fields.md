@@ -30,7 +30,7 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
    ![](assets/uc_enrichment_1.png)
 
 1. Ajoutez une activité **[!UICONTROL Partage]** pour différencier les destinataires qui célébreront leur anniversaire ce mois-ci des autres destinataires.
-1. Pour fractionner votre liste, dans la variable **[!UICONTROL Filtrage des enregistrements sélectionnés]** catégorie, sélectionnez **[!UICONTROL Ajouter une condition de filtrage sur la population entrante]**. Cliquez ensuite sur **[!UICONTROL Modifier]**.
+1. Pour fractionner votre liste, dans le **[!UICONTROL Filtrage des enregistrements sélectionnés]** catégorie, sélectionner **[!UICONTROL Ajout d&#39;une condition de filtrage sur la population entrante]**. Cliquez ensuite sur **[!UICONTROL Modifier]**.
 
    ![](assets/uc_enrichment_2.png)
 
@@ -46,9 +46,9 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
    ![](assets/uc_enrichment_4.png)
 
-1. Cliquez sur **[!UICONTROL Terminer]**. Ensuite, dans la variable **[!UICONTROL Général]** de votre **[!UICONTROL Partage]** , cliquez sur l’activité **[!UICONTROL Générer le complémentaire]** dans le **[!UICONTROL Résultats]** catégorie.
+1. Cliquez sur **[!UICONTROL Terminer]**. Ensuite, dans le **[!UICONTROL Général]** onglet de votre **[!UICONTROL Fractionner]** activité, cliquez sur **[!UICONTROL Générer le complémentaire]** dans le **[!UICONTROL Résultats]** catégorie.
 
-   Avec la variable **[!UICONTROL Complémentaire]** par conséquent, vous pouvez ajouter une activité de diffusion ou mettre à jour une liste. Ici, nous avons ajouté une **[!UICONTROL Fin]** activité.
+   Avec le **[!UICONTROL Complémentaire]** Vous pouvez donc ajouter une activité de diffusion ou mettre à jour une liste. Ici, nous venons d’ajouter une **[!UICONTROL Fin]** activité.
 
    ![](assets/uc_enrichment_6.png)
 
@@ -58,7 +58,7 @@ Vous devez maintenant paramétrer votre activité **[!UICONTROL Enrichissement]*
 
    ![](assets/uc_enrichment_7.png)
 
-1. Ouvrez votre **[!UICONTROL Enrichissement]** activité. Dans le **[!UICONTROL Informations complémentaires]** catégorie, cliquez sur **[!UICONTROL Ajouter des données]**.
+1. Ouvrez votre **[!UICONTROL Enrichissement]** activité. Dans le **[!UICONTROL Complément d&#39;information]** catégorie, cliquez sur **[!UICONTROL Ajouter des données]**.
 
    ![](assets/uc_enrichment_8.png)
 
@@ -67,7 +67,7 @@ Vous devez maintenant paramétrer votre activité **[!UICONTROL Enrichissement]*
 
    ![](assets/uc_enrichment_9.png)
 
-1. Ajouter un **[!UICONTROL Libellé]**. Ensuite, dans la variable **[!UICONTROL Expression]** colonne, cliquez sur **[!UICONTROL Expression d’édition]**.
+1. Ajouter un **[!UICONTROL Libellé]**. Ensuite, dans le **[!UICONTROL Expression]** colonne, cliquez sur **[!UICONTROL Modifier l’expression]**.
 
    ![](assets/uc_enrichment_10.png)
 
@@ -108,7 +108,7 @@ Vous pouvez maintenant commencer à concevoir votre diffusion par email avec les
            formatDate(targetData.alias of your expression,"%2D.%2M")  %>
    ```
 
-1. Cliquez sur ![](assets/uc_enrichment_16.png). Sélectionner **[!UICONTROL Extension Target]** puis les dates de validité personnalisées créées précédemment avec l’événement **[!UICONTROL Enrichissement]** activité pour ajouter votre extension à l’expression formatDate.
+1. Clic ![](assets/uc_enrichment_16.png). Sélectionner **[!UICONTROL Extension Target]** puis les dates de validité personnalisées créées précédemment avec **[!UICONTROL Enrichissement]** activité permettant d’ajouter votre extension à l’expression formatDate.
 
    ![](assets/uc_enrichment_19.png)
 

@@ -38,11 +38,11 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
    ![](assets/query_editor_tracklog_05.png)
 
-1. Dans le **[!UICONTROL Données à extraire]** , nous voulons créer un agrégat pour collecter des informations. Pour cela, ajoutez la clé primaire (située au-dessus de la clé principale). **[!UICONTROL Logs de tracking des destinataires]** element) : Le nombre de logs de tracking est effectué sur cet élément **[!UICONTROL Clé Principal]** champ . L’expression modifiée sera **[!UICONTROL x=count(clé primaire)]**. Il relie la somme des différents logs de tracking à une seule adresse email.
+1. Dans le **[!UICONTROL Données à extraire]** , nous voulons créer un agrégat pour collecter des informations. Pour ce faire, ajoutez la clé primaire (située au-dessus de la clé principale **[!UICONTROL Logs de tracking du destinataire]** (élément ) : Le comptage des logs de tracking est effectué sur ce(tte) **[!UICONTROL clé de Principal]** champ . L’expression modifiée sera **[!UICONTROL x=count(clé primaire)]**. Elle associe la somme des différents logs de tracking à une seule adresse e-mail.
 
    Pour cela :
 
-   * Cliquez sur le bouton **[!UICONTROL Ajouter]** à droite de l’icône **[!UICONTROL Colonnes de sortie]** champ . Dans le **[!UICONTROL Type de formule]** , sélectionnez l’option **[!UICONTROL Editer la formule à partir d&#39;une expression]** et cliquez sur **[!UICONTROL Suivant]**. Dans le **[!UICONTROL Champ à sélectionner]** fenêtre, cliquez sur **[!UICONTROL Sélection avancée]**.
+   * Cliquez sur le lien **[!UICONTROL Ajouter]** à droite de l’icône **[!UICONTROL Colonnes de sortie]** champ . Dans le **[!UICONTROL Type de formule]** , sélectionnez la **[!UICONTROL Modifier la formule à l’aide d’une expression]** option et clic **[!UICONTROL Suivant]**. Dans le **[!UICONTROL Champ à sélectionner]** fenêtre, cliquer **[!UICONTROL Sélection avancée]**.
 
      ![](assets/query_editor_tracklog_06.png)
 
@@ -54,15 +54,15 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
      Cliquez sur **[!UICONTROL Suivant]**.
 
-   * Sélectionnez la variable **[!UICONTROL Clé Principal (@id)]** champ . La variable **[!UICONTROL count (clé primaire)]** La colonne output est configurée.
+   * Sélectionner le **[!UICONTROL Clé du Principal (@id)]** champ . Le **[!UICONTROL count (clé primaire)]** La colonne de sortie est configurée.
 
      ![](assets/query_editor_nveau_19.png)
 
-1. Sélectionnez l&#39;autre champ à afficher en colonne de sortie. Dans le **[!UICONTROL Champs disponibles]** , ouvrez la colonne **[!UICONTROL Destinataire]** noeud et choisissez **[!UICONTROL Email]**. Vérifiez les **[!UICONTROL Groupe]** à **[!UICONTROL Oui]** pour regrouper les logs de tracking par adresse email : ce groupe relie chaque log à son destinataire.
+1. Sélectionnez l&#39;autre champ à afficher dans la colonne de sortie. Dans le **[!UICONTROL Champs disponibles]** , ouvrez la colonne **[!UICONTROL Destinataire]** nœud et choisissez **[!UICONTROL E-mail]**. Vérifier le **[!UICONTROL Groupe]** box to **[!UICONTROL Oui]** pour regrouper les logs de tracking par adresse email : ce groupe associe chaque log à son destinataire.
 
    ![](assets/query_editor_nveau_20.png)
 
-1. Paramétrez le tri des colonnes afin que les destinataires les plus actifs (avec le plus de logs de tracking) s&#39;affichent en premier. Vérifier **[!UICONTROL Oui]** dans le **[!UICONTROL Tri descendant]** colonne .
+1. Configurez le tri des colonnes afin que les destinataires les plus actifs (avec le plus grand nombre de logs de tracking) soient affichés en premier. Vérifier **[!UICONTROL Oui]** dans le **[!UICONTROL Tri descendant]** colonne.
 
    ![](assets/query_editor_nveau_64.png)
 
@@ -70,25 +70,25 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
    Pour cela :
 
-   * Configurer le filtrage des données Pour ce faire, sélectionnez **[!UICONTROL Conditions de filtrage]** puis cliquez sur **[!UICONTROL Suivant]**.
+   * Configurez le filtrage des données. Pour ce faire, sélectionnez **[!UICONTROL Conditions de filtrage]** puis cliquez sur **[!UICONTROL Suivant]**.
 
      ![](assets/query_editor_nveau_22.png)
 
    * Récupérez les logs de tracking d&#39;une diffusion spécifique et sur une période donnée. Pour cela, utilisez trois conditions de filtrage : deux conditions de date pour situer la période recherchée entre 15 jours avant la date courante et la veille de la date courante, et une autre condition pour restreindre la recherche à une diffusion particulière.
 
-     Dans le **[!UICONTROL Elément cible]** paramétrez la date de prise en compte des logs de tracking. Cliquez sur **[!UICONTROL Ajouter]**. Une ligne de condition s’affiche. Modifiez la variable **[!UICONTROL Expression]** en cliquant sur **[!UICONTROL Expression d’édition]** de la fonction Dans le **[!UICONTROL Champ à sélectionner]** fenêtre, choisissez **[!UICONTROL Date (@logDate)]**.
+     Dans le **[!UICONTROL Élément cible]** , configurez la date à partir de laquelle les logs de tracking seront pris en compte. Cliquez sur **[!UICONTROL Ajouter]**. Une ligne de condition s’affiche. Modifier le **[!UICONTROL Expression]** en cliquant sur la colonne **[!UICONTROL Modifier l’expression]** fonction. Dans le **[!UICONTROL Champ à sélectionner]** fenêtre, choisir **[!UICONTROL Date (@logDate)]**.
 
      ![](assets/query_editor_nveau_23.png)
 
-     Sélectionnez la variable **[!UICONTROL supérieur à]** de l’opérateur. Dans le **[!UICONTROL Valeur]** colonne, cliquez sur **[!UICONTROL Expression d’édition]**, et dans la variable **[!UICONTROL Type de formule]** fenêtre, sélectionnez **[!UICONTROL Traitement des dates]**. Enfin, **[!UICONTROL Date courante moins n jours]**, saisissez &quot;15&quot;.
+     Sélectionner le **[!UICONTROL supérieur à]** opérateur. Dans le **[!UICONTROL Valeur]** colonne, cliquez sur **[!UICONTROL Modifier l’expression]**, et dans le **[!UICONTROL Type de formule]** fenêtre, sélectionner **[!UICONTROL Traitement sur les dates]**. Enfin, dans **[!UICONTROL Date actuelle moins jours]**, saisissez « 15 ».
 
      Cliquez sur **[!UICONTROL Terminer]**.
 
      ![](assets/query_editor_nveau_24.png)
 
-   * Pour sélectionner la date de fin de la recherche du log de tracking, créez une seconde condition en cliquant sur **[!UICONTROL Ajouter]**. Dans le **[!UICONTROL Expression]** colonne, choisissez **[!UICONTROL Date (@logDate)]** encore une fois.
+   * Pour sélectionner la date de fin de recherche du log de tracking, créez une deuxième condition en cliquant sur **[!UICONTROL Ajouter]**. Dans le **[!UICONTROL Expression]** colonne, choisissez **[!UICONTROL Date (@logDate)]** encore une fois.
 
-     Sélectionnez la variable **[!UICONTROL inférieur à]** de l’opérateur. Dans le **[!UICONTROL Valeur]** colonne, cliquez sur **[!UICONTROL Expression d’édition]**. Pour le traitement des dates, accédez au **[!UICONTROL Type de formule]** , saisissez &quot;1&quot; dans **[!UICONTROL Date courante moins n jours]**.
+     Sélectionner le **[!UICONTROL inférieur à]** opérateur. Dans le **[!UICONTROL Valeur]** colonne, cliquez sur **[!UICONTROL Modifier l’expression]**. Pour le traitement des dates, accédez à **[!UICONTROL Type de formule]** , saisissez « 1 » dans **[!UICONTROL Date actuelle moins jours]**.
 
      Cliquez sur **[!UICONTROL Terminer]**.
 
@@ -96,13 +96,13 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
      L&#39;intervalle de temps est configuré. La troisième condition de filtrage est à paramétrer : elle permettra d&#39;identifier la diffusion sur laquelle porte la recherche.
 
-   * Cliquez sur le bouton **[!UICONTROL Ajouter]** pour créer une autre condition de filtrage. Dans le **[!UICONTROL Expression]** colonne, cliquez sur **[!UICONTROL Expression d’édition]**. Dans le **[!UICONTROL Champ à sélectionner]** fenêtre, choisissez **[!UICONTROL Libellé]** dans le **[!UICONTROL Diffusion]** noeud .
+   * Cliquez sur le lien **[!UICONTROL Ajouter]** pour créer une autre condition de filtrage. Dans le **[!UICONTROL Expression]** colonne, cliquez sur **[!UICONTROL Modifier l’expression]**. Dans le **[!UICONTROL Champ à sélectionner]** fenêtre, choisir **[!UICONTROL Libellé]** dans le **[!UICONTROL Diffusion]** nœud.
 
      Cliquez sur **[!UICONTROL Terminer]**.
 
      ![](assets/query_editor_nveau_66.png)
 
-     Recherchez une diffusion contenant le mot &quot;soldes&quot;. Comme vous ne vous souvenez pas de son libellé exact, vous pouvez choisir la variable **[!UICONTROL contains]** et saisissez &quot;soldes&quot; dans la variable **[!UICONTROL Valeur]** colonne .
+     Recherchez une diffusion contenant le mot « ventes ». Comme vous ne vous souvenez pas de son libellé exact, vous pouvez choisir le **[!UICONTROL contient]** opérateur et saisissez « sales » dans le champ **[!UICONTROL Valeur]** colonne.
 
      ![](assets/query_editor_nveau_25.png)
 
@@ -137,7 +137,7 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
    ![](assets/query_open_2.png)
 
-1. Ajoutez une autre expression et sélectionnez **[!UICONTROL Date]**. **[!UICONTROL Opérateur]** doit être défini sur **[!UICONTROL sur ou après]**.
+1. Ajoutez une autre expression et sélectionnez **[!UICONTROL Date]**. **[!UICONTROL Opérateur]** doit être défini sur **[!UICONTROL le ou après]**.
 
    ![](assets/query_open_3.png)
 
@@ -156,11 +156,11 @@ Si, au contraire, vous souhaitez filtrer les destinataires ayant ouvert au moins
 
 L&#39;exemple suivant montre comment cibler les profils ayant ouvert une diffusion au cours des 2 dernières semaines :
 
-1. Pour cibler les profils ayant ouvert une diffusion, vous devez utiliser les logs de tracking. ils sont stockés dans une table liée : vous devez d&#39;abord sélectionner cette table dans la liste déroulante du **[!UICONTROL Dimension de filtrage]** , comme illustré ci-dessous :
+1. Pour cibler des profils ayant ouvert une diffusion, vous devez utiliser les logs de tracking. elles sont stockées dans une table liée : vous devez d&#39;abord sélectionner cette table dans la liste déroulante de la **[!UICONTROL Dimension de filtrage]** , comme dans l&#39;exemple ci-dessous :
 
    ![](assets/s_advuser_query_sample1.0.png)
 
-1. Au niveau des conditions de filtrage, cliquez sur le bouton **[!UICONTROL Expression d’édition]** icône des critères affichée dans la sous-arborescence des logs de tracking. Sélectionnez la variable **[!UICONTROL Date]** champ .
+1. Concernant les conditions de filtrage, cliquez sur le lien **[!UICONTROL Modifier l’expression]** icône des critères affichés dans la sous-arborescence des logs de tracking. Sélectionner le **[!UICONTROL Date]** champ .
 
    ![](assets/s_advuser_query_sample1.1.png)
 
@@ -170,21 +170,21 @@ L&#39;exemple suivant montre comment cibler les profils ayant ouvert une diffusi
 
    ![](assets/s_advuser_query_sample1.4.png)
 
-   Cliquez ensuite sur le bouton **[!UICONTROL Expression d’édition]** dans le **[!UICONTROL Valeur]** pour définir la formule de calcul à appliquer. Sélectionnez la variable **[!UICONTROL Date courante moins n jours]** formule et saisissez 15 dans le champ correspondant.
+   Cliquez ensuite sur **[!UICONTROL Modifier l’expression]** dans le **[!UICONTROL Valeur]** pour définir la formule de calcul à appliquer. Sélectionner le **[!UICONTROL Date actuelle moins jours]** et saisissez 15 dans le champ correspondant.
 
    ![](assets/s_advuser_query_sample1.5.png)
 
-   Cliquez sur le bouton **[!UICONTROL Terminer]** de la fenêtre de formule. Dans la fenêtre de filtrage, cliquez sur le bouton **[!UICONTROL Aperçu]** pour vérifier les critères de ciblage.
+   Cliquez sur le lien **[!UICONTROL Terminer]** bouton de la fenêtre de formule. Dans la fenêtre de filtrage, cliquez sur **[!UICONTROL Aperçu]** pour vérifier les critères de ciblage.
 
    ![](assets/s_advuser_query_sample1.6.png)
 
 ## Filtrage du comportement des destinataires après une diffusion {#filtering-recipients--behavior-folllowing-a-delivery}
 
-Dans un workflow, la variable **[!UICONTROL Requête]** et **[!UICONTROL Partage]** permettent de sélectionner un comportement suite à une diffusion précédente. Cette sélection est réalisée à partir du **[!UICONTROL Destinataire de la diffusion]** filtre.
+Dans un workflow, le **[!UICONTROL Requête]** et **[!UICONTROL Fractionner]** Les boîtes de dialogue permettent de sélectionner un comportement suite à une diffusion précédente. Cette sélection s’effectue à partir du **[!UICONTROL Destinataire de la diffusion]** filtre.
 
 * But de l&#39;exemple
 
-  Dans un workflow de diffusion, plusieurs méthodes permettent de suivre une première communication email. Ce type d’opération implique l’utilisation de la variable **[!UICONTROL Partage]** de la boîte.
+  Dans un workflow de diffusion, il existe plusieurs façons de suivre une première communication par e-mail. Ce type d’opération implique l’utilisation de l’ **[!UICONTROL Fractionner]** boîte.
 
 * Contexte
 
@@ -198,12 +198,12 @@ Les étapes suivantes indiquent comment paramétrer la boîte **[!UICONTROL Part
 
    ![](assets/query_editor_ex_09.png)
 
-1. Ouvrez le **[!UICONTROL Partage]** de la boîte. Dans le **[!UICONTROL Général]** , saisissez un libellé : **Partage en fonction du comportement** par exemple.
+1. Ouvrez le . **[!UICONTROL Fractionner]** boîte. Dans le **[!UICONTROL Général]** , saisissez un libellé : **Partage en fonction du comportement** par exemple.
 
    ![](assets/query_editor_ex_04.png)
 
-1. Dans le **[!UICONTROL Sous-ensembles]** , définissez la première branche de partage. Par exemple, saisissez la variable **Cliqué** libellé de cette branche.
-1. Sélectionnez la variable **[!UICONTROL Ajouter une condition de filtrage sur la population entrante]** . Cliquez sur **[!UICONTROL Modifier]**.
+1. Dans le **[!UICONTROL Sous-ensembles]** , définissez la première branche fractionnée. Par exemple, saisissez le **A cliqué** libellé pour cette branche.
+1. Sélectionner le **[!UICONTROL Ajouter une condition de filtrage sur la population entrante]** option. Clic **[!UICONTROL Modifier]**.
 1. Dans la fenêtre **[!UICONTROL Dimension de ciblage et de filtrage]**, double-cliquez sur le filtre **[!UICONTROL Destinataires d&#39;une diffusion]**.
 
    ![](assets/query_editor_ex_05.png)
@@ -216,17 +216,17 @@ Les étapes suivantes indiquent comment paramétrer la boîte **[!UICONTROL Part
 
    ![](assets/query_editor_ex_08.png)
 
-1. Définissez la seconde branche. Cette branche va inclure l&#39;email de relance avec le même contenu que pour la première diffusion. Accédez au **[!UICONTROL Sous-ensembles]** et cliquez sur **[!UICONTROL Ajouter]** pour le créer.
+1. Définissez la deuxième branche. Cette branche inclura l&#39;email de relance avec le même contenu que pour la première diffusion. Accéder à **[!UICONTROL Sous-ensembles]** tabulation et clic **[!UICONTROL Ajouter]** pour le créer.
 
    ![](assets/query_editor_ex_06.png)
 
-1. Un autre sous-onglet s’affiche. Nommez-le &quot;**Ne pas cliquer**&quot;.
-1. Cliquez sur **[!UICONTROL Ajouter une condition de filtrage sur la population entrante]**. Cliquez ensuite sur **[!UICONTROL Modifier...]**.
+1. Un autre sous-onglet s’affiche. Lui donner le nom « **N’a pas cliqué**«.
+1. Clic **[!UICONTROL Ajout d&#39;une condition de filtrage sur la population entrante]**. Cliquez ensuite sur **[!UICONTROL Modifier...]**.
 
    ![](assets/query_editor_ex_07.png)
 
 1. Cliquez sur **[!UICONTROL Destinataires d&#39;une diffusion]** dans la fenêtre **[!UICONTROL Dimension de ciblage et de filtrage]**.
-1. Dans le **[!UICONTROL Elément cible]** , sélectionnez l’option **[!UICONTROL Destinataires n&#39;ayant pas cliqué (email)]** comportement. Sélectionnez la variable **[!UICONTROL Diffusion spécifiée par la transition]** comme pour la dernière branche.
+1. Dans le **[!UICONTROL Élément cible]** , sélectionnez la **[!UICONTROL Destinataires n&#39;ayant pas cliqué (email)]** comportement. Sélectionner le **[!UICONTROL Diffusion spécifiée par la transition]** comme indiqué pour la dernière branche.
 
    La boîte **[!UICONTROL Partage]** est maintenant paramétrée.
 

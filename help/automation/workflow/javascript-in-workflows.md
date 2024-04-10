@@ -273,7 +273,7 @@ for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-La boucle comprend une variable de destinataire locale. L’e-mail de chaque destinataire renvoyé dans la collection de destinataires est imprimé. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=fr){target="_blank"} à propos de `logInfo` de la fonction
+La boucle comprend une variable de destinataire locale. L’e-mail de chaque destinataire renvoyé dans la collection de destinataires est imprimé. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=fr){target="_blank"} à propos du `logInfo` fonction.
 
 #### Résultats d’une opération `getIfExists`
 
@@ -611,7 +611,7 @@ Cette vidéo présente un exemple d’utilisation d’une méthode d’API non s
 
 ### Documentation des API
 
-* [Exemples d&#39;appels SOAP](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=fr){target="_blank"}
+* [Exemples d’appels SOAP](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=fr){target="_blank"}
 * Méthodes :
    * [Créer](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=fr){target="_blank"}
    * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=fr){target="_blank"}

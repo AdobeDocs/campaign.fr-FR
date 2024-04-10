@@ -20,7 +20,7 @@ Dans le contexte d’un [Déploiement Enterprise (FFDA)](enterprise-deployment.m
 
 Ces workflows effectuent des opérations de maintenance sur la base de données, tirent parti des informations de tracking contenues dans les logs de diffusion, créent des campagnes récurrentes, etc.
 
-La liste complète des workflows techniques est présentée dans la section [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=fr){target="_blank"}.
+La liste complète des workflows techniques est détaillée dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=fr){target="_blank"}.
 
 Outre ces workflows techniques, Campaign v8 s&#39;appuie sur des workflows techniques spécifiques pour gérer la [réplication des données](#data-replication).
 
@@ -74,6 +74,6 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 
 **Rubriques connexes**
 
-* [Découvrez comment commencer à utiliser les workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=fr){target="_blank"}
+* [Découvrez comment prendre en main les workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=fr){target="_blank"}
 
 * [Périodes de conservation des données](../dev/datamodel-best-practices.md#data-retention)

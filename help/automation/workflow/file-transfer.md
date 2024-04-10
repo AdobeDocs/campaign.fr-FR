@@ -15,7 +15,7 @@ ht-degree: 72%
 # Envoi de fichier{#file-transfer}
 
 L&#39;activité **Transfert de fichier** permet de recevoir ou d&#39;envoyer des fichiers, de tester la présence de fichiers ou de répertorier les fichiers sur un serveur. Le protocole utilisé est le suivant : stockage Blob Azure, S3 (Amazon Simple Storage Service), FTP ou SFTP.
-Avec la connexion SFTP, S3, ou stockage Blob Azure, vous pouvez également importer des données de segments vers Adobe Campaign avec la plateforme de données clientes en temps réel d&#39;Adobe. Voir à ce sujet la section [documentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=fr){target="_blank"}.
+Avec la connexion SFTP, S3, ou stockage Blob Azure, vous pouvez également importer des données de segments vers Adobe Campaign avec la plateforme de données clientes en temps réel d&#39;Adobe. Pour plus d’informations à ce sujet, reportez-vous à : [documentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=fr){target="_blank"}.
 
 ## Propriétés {#properties}
 
@@ -37,13 +37,13 @@ Le paramétrage dépend de l&#39;action sélectionnée.
 
 1. **Envoi de fichier**
 
-   Pour envoyer un fichier à un serveur, sélectionnez **[!UICONTROL Chargement de fichier]** dans le **[!UICONTROL Action]** champ . Vous devez spécifier le serveur cible dans la variable **[!UICONTROL Serveur distant]** de l’éditeur. Les paramètres sont les mêmes que pour les fichiers entrants. Voir ci-dessus.
+   Pour envoyer un fichier à un serveur, sélectionnez **[!UICONTROL Chargement de fichier]** dans le **[!UICONTROL Action]** champ . Vous devez indiquer le serveur cible dans le champ **[!UICONTROL Serveur distant]** de l’éditeur. Les paramètres sont les mêmes que pour les fichiers entrants. Voir ci-dessus.
 
-   Le fichier source peut provenir de l’activité précédente. Dans ce cas, la variable **[!UICONTROL Utiliser le fichier généré par l&#39;activité précédente]** doit être sélectionnée.
+   Le fichier source peut provenir de l&#39;activité précédente. Dans ce cas, le **[!UICONTROL Utiliser le fichier généré par l&#39;activité précédente]** L’option doit être sélectionnée.
 
    ![](assets/file_transfert_edit_send.png)
 
-   Cela peut également concerner un ou plusieurs autres fichiers. Pour les sélectionner, désélectionnez l’option, puis cliquez sur **[!UICONTROL Insérer]**. Spécifiez le chemin d’accès au fichier à envoyer. Pour ajouter un autre fichier, cliquez sur **[!UICONTROL Insérer]** encore une fois. Les fichiers ont maintenant chacun leur propre onglet.
+   Il peut également s&#39;agir d&#39;un ou plusieurs autres fichiers. Pour les sélectionner, décochez l’option , puis cliquez sur **[!UICONTROL Insérer]**. Indiquez le chemin d’accès au fichier à envoyer. Pour ajouter un autre fichier, cliquez sur **[!UICONTROL Insérer]** encore une fois. Les fichiers ont désormais chacun leur propre onglet.
 
    ![](assets/file_transfert_source.png)
 
@@ -53,13 +53,13 @@ Le paramétrage dépend de l&#39;action sélectionnée.
 
 1. **Test d&#39;existence de fichier**
 
-   Pour tester l’existence d’un fichier, sélectionnez l’option **[!UICONTROL Test d’existence de fichier]** dans le **[!UICONTROL Action]** champ . La configuration du serveur distant est la même que pour le téléchargement de fichier. Pour plus d&#39;informations, consultez cette [section](#properties).
+   Pour tester l’existence d’un fichier, sélectionnez le **[!UICONTROL Test d’existence de fichier]** dans le **[!UICONTROL Action]** champ . La configuration du serveur distant est la même que pour le téléchargement de fichiers. Pour plus d&#39;informations, consultez cette [section](#properties).
 
    ![](assets/file_transfert_edit_test.png)
 
 1. **Listage des fichiers**
 
-   Pour répertorier les fichiers, sélectionnez la variable **[!UICONTROL Listes de fichiers]** de l’option **[!UICONTROL Action]** champ . La configuration du serveur distant est la même que pour la réception de fichiers. Pour plus d&#39;informations, consultez cette [section](#properties).
+   Pour répertorier les fichiers, sélectionnez la **[!UICONTROL Listage de fichiers]** option à partir du **[!UICONTROL Action]** champ . La configuration du serveur distant est la même que pour la réception de fichiers. Pour plus d&#39;informations, consultez cette [section](#properties).
 
    L’option **[!UICONTROL Lister tous les fichiers]**, disponible lors de la sélection de l’action **[!UICONTROL Listage de fichiers]** permet de répertorier tous les fichiers présents sur le serveur dans la variable d’événement **vars.filenames**. Les noms des fichiers y sont séparés par les caractères `\n`.
 

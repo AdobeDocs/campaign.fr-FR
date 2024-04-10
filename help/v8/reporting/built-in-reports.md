@@ -25,7 +25,7 @@ Vous pouvez accéder aux rapports intégrés à partir de la page d’accueil de
 
 Une liste des principaux rapports est disponible sur la page d’accueil et permet d’accéder rapidement aux données de diffusion. Cette liste peut être modifiée en fonction de vos besoins. Vous pouvez également apprendre à ajouter vos propres rapports à l’onglet **[!UICONTROL Rapports.]**
 
-Pour plus d’informations sur ces configurations personnalisées, voir [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=fr){target="_blank"}.
+Pour plus d’informations sur ces configurations personnalisées, reportez-vous à [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=fr){target="_blank"}.
 
 
 ## Accès aux rapports intégrés {#access-ootb-reports}

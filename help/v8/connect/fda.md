@@ -22,7 +22,7 @@ Utilisez le connecteur FDA (Federated Data Access) pour connecter Campaign à un
 >
 >* Dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), un compte externe spécifique est disponible pour gérer la communication entre la base de données locale Campaign et la base de données cloud Snowflake. Ce compte externe est configuré pour vous par Adobe et **ne doit pas** être modifié.
 >
->* En tant qu’utilisateur Cloud Service géré, [contact Adobe](../start/campaign-faq.md#support) pour connecter vos bases de données externes à Campaign.
+>* En tant qu’utilisateur Managed Cloud Service, [Adobe de contact](../start/campaign-faq.md#support) pour connecter vos bases de données externes à Campaign.
 
 
 ## Bonnes pratiques et limites
@@ -71,7 +71,7 @@ Par exemple, dans l&#39;activité **[!UICONTROL Requête]**, vous pouvez défini
 1. Choisissez l&#39;option **[!UICONTROL En définissant localement la source de données]**.
 1. Sélectionnez le moteur de la base de données cible dans la liste déroulante. Saisissez le nom du serveur et renseignez les paramètres d&#39;authentification. Indiquez également le nom de la base de données externe.
 1. Sélectionnez la table où sont stockées les données. Vous pouvez saisir le nom de la table directement dans le champ correspondant ou cliquer sur l&#39;icône d&#39;édition pour accéder à la liste des tables de la base de données.
-1. Cliquez sur le bouton **[!UICONTROL Ajouter]** pour définir un ou plusieurs champs de réconciliation entre les données de la base externe et celles de la base Adobe Campaign. La variable **[!UICONTROL Expression d’édition]** des icônes **[!UICONTROL Champ distant]** et **[!UICONTROL Champ local]** permet d&#39;accéder à la liste des champs de chacune des tables.
+1. Cliquez sur le lien **[!UICONTROL Ajouter]** pour définir un ou plusieurs champs de réconciliation entre les données de la base externe et celles de la base Adobe Campaign. Le **[!UICONTROL Modifier l’expression]** icônes du **[!UICONTROL Champ distant]** et **[!UICONTROL Champ local]** permet d&#39;accéder à la liste des champs de chacune des tables.
 1. Au besoin, indiquez une condition de filtrage et le mode de tri des données.
-1. Sélectionnez les données additionnelles à collecter dans la base externe. Pour ce faire, double-cliquez sur le ou les champs que vous souhaitez ajouter afin de les afficher dans le **[!UICONTROL Colonnes de sortie]**.
+1. Sélectionnez les données additionnelles à collecter dans la base externe. Pour ce faire, double-cliquez sur le ou les champs que vous souhaitez ajouter pour les afficher dans le **[!UICONTROL Colonnes de sortie]**.
 1. Cliquez sur le bouton **[!UICONTROL Terminer]** pour valider ce paramétrage.

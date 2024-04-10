@@ -49,5 +49,5 @@ Pour cela :
 
    ![](assets/delivery_loadcontent_script.png)
 
-1. Enregistrez et exécutez le workflow. Une nouvelle diffusion avec le contenu chargé est créée sous **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Diffusions]**.
+1. Enregistrez et exécutez le workflow. Une nouvelle diffusion avec le contenu chargé est créée sous . **[!UICONTROL Gestion des campagnes]** > **[!UICONTROL Diffusions]**.
 

@@ -87,7 +87,7 @@ Avant de commencer à envoyer des messages et à créer des campagnes marketing,
 
    Découvrez comment configurer un modèle de workflow dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=fr){target="_blank"}.
 
-   En savoir plus sur les modèles d’email dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr){target="_blank"}.
+   En savoir plus sur les modèles d’e-mail dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr){target="_blank"}.
 
 
 1. **Configurer les règles de typologie**
@@ -100,7 +100,7 @@ Avant de commencer à envoyer des messages et à créer des campagnes marketing,
 
    Un modèle de données d’usine est fourni avec Adobe Campaign. Afin d’implémenter et de personnaliser votre environnement, vous devez connaître les tables natives du modèle de données d’Adobe Campaign ainsi que la manière dont elles sont liées les unes aux autres.
 
-   [En savoir plus sur le modèle de données Campaign](../dev/datamodel.md).
+   [En savoir plus sur le modèle de données de Campaign](../dev/datamodel.md).
 
 ## Personnaliser votre instance{#implementation-custom-your-instance}
 
@@ -110,15 +110,15 @@ Vous pouvez personnaliser de nombreuses zones et fonctionnalités Campaign. La p
 
    Adobe Campaign s’accompagne de schémas courants pour identifier les données tels que : destinataires, logs de diffusion, abonnements, etc.
 
-   Consultez cette section pour en savoir plus sur [Modèle de données intégré à Campaign](../dev/datamodel.md).
+   Voir cette section pour en savoir plus sur [Modèle de données natif de Campaign](../dev/datamodel.md).
 
-   Vous pouvez étendre les schémas existants ou créer de nouveaux schémas à partir de zéro. Apprenez-en davantage en consultant [cette page](../dev/customize.md).
+   Vous pouvez étendre les schémas existants ou en créer d’autres de A à Z. Apprenez-en davantage en consultant [cette page](../dev/customize.md).
 
 1. **Tableaux de bord et listes**
 
    Vous pouvez facilement configurer des listes, ajouter et supprimer des champs ou personnaliser des colonnes.
 
-   Découvrez comment gérer les filtres et les listes dans Campaign dans [cette page](../dev/customize.md#gs-lists-and-filters).
+   Découvrez comment gérer les filtres et les listes de Campaign dans [cette page](../dev/customize.md#gs-lists-and-filters).
 
    Vous pouvez également créer des tableaux de bord pour afficher les données de Campaign en fonction de vos besoins.
 
@@ -130,7 +130,7 @@ Vous pouvez personnaliser de nombreuses zones et fonctionnalités Campaign. La p
 
    En complément des rapports natifs, Adobe Campaign permet de générer des rapports dans différents contextes et de répondre à des besoins variés. Ce document détaille les principes d&#39;utilisation ainsi que les modes d&#39;implémentation.
 
-   En savoir plus sur les fonctionnalités de reporting dans Campaign dans [cette page](../reporting/gs-reporting.md).
+   En savoir plus sur les fonctionnalités de reporting de Campaign dans [cette page](../reporting/gs-reporting.md).
 
 
 ## Configuration de l&#39;automatisation des campagnes{#implementation-automation}
@@ -162,7 +162,7 @@ Si vous utilisez d&#39;autres solutions Adobe, vous pouvez les connecter à votr
 
 Vous pouvez également utiliser l’authentification unique (SSO) pour vous connecter à Campaign. En savoir plus sur [cette page](connect.md).
 
-Découvrez la liste complète de la solution Adobe qui peut être intégrée à Adobe Campaign [dans cette page](../connect/integration.md).
+Découvrez la liste complète des solutions d’Adobe qui peuvent être intégrées à Adobe Campaign [dans cette page](../connect/integration.md).
 
 ### Connecteurs{#implementation-connectors}
 
@@ -180,4 +180,4 @@ Découvrez comment connecter votre système CRM à Campaign dans [cette section]
 
 Vous pouvez connecter la base de données cloud de Campaign à des systèmes externes via le module Federated Data Access (FDA).
 
-Découvrez comment configurer le module Campaign FDA pour définir les paramètres d’accès dans [cette section](../connect/integration.md#gs-fda)
+Découvrez comment configurer le module FDA de Campaign pour définir les paramètres d’accès dans [cette section](../connect/integration.md#gs-fda)

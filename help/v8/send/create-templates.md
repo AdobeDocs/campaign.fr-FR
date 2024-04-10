@@ -87,7 +87,7 @@ Pour configurer un modèle de diffusion à partir de zéro, procédez comme suit
 1. Dans l&#39;onglet **Général**, validez ou modifiez les emplacements sélectionnés dans les menus déroulants **Dossier d&#39;exécution**, **Dossier** et **Routage**.
 1. Remplissez la catégorie **Paramètres de l’e-mail** avec l’objet de l’e-mail et la population ciblée.
 1. Ajoutez votre **contenu HTML** afin de personnaliser votre modèle. Vous pouvez afficher un [lien de page miroir](../send/mirror-page.md) et un lien de désinscription.
-1. Sélectionnez la variable **Aperçu** . Dans le **Test de la personnalisation** menu déroulant, sélectionnez **Destinataire** pour prévisualiser votre modèle en tant que profil sélectionné.
+1. Sélectionner le **Aperçu** onglet. Dans le **Tester la personnalisation** menu déroulant, sélectionnez **Destinataire** pour prévisualiser votre modèle en tant que profil sélectionné.
 1. Cliquez sur **Enregistrer**. Votre modèle est maintenant prêt à être utilisé dans une diffusion.
 
 

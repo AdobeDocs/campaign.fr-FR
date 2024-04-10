@@ -46,7 +46,7 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
   <tr> 
    <td> <span class="uicontrol">Traitements sur les opérations</span> <br /> </td> 
    <td> <span class="uicontrol">operationMgt</span> <br /> </td> 
-   <td> Ce workflow gère les traitements sur les opérations marketing (démarrage du ciblage, extraction des fichiers, etc.). Il crée également des workflows relatifs aux campagnes récurrentes et périodiques.<br /> </td> 
+   <td> Ce workflow gère les traitements des campagnes marketing (ciblage des lancements, extraction de fichiers, etc.). Il crée également des workflows liés aux campagnes récurrentes et périodiques.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Traitements sur les prestataires</span> <br /> </td> 

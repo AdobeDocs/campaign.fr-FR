@@ -74,7 +74,7 @@ Les balises **`<element>`** définissent les noms des éléments d&#39;entité. 
 
 Un schéma de données est identifié par son nom et son espace de noms.
 
-Un espace de noms permet de regrouper un ensemble de schémas par zone d’intérêt. Par exemple, la variable **cus** L’espace de noms est utilisé pour la configuration spécifique au client (**clients**).
+Un espace de noms permet de regrouper un ensemble de schémas par centres d&#39;intérêt. Par exemple, le **cus** l’espace de noms est utilisé pour la configuration spécifique au client (**clients**).
 
 >[!CAUTION]
 >
@@ -100,11 +100,11 @@ La clé d&#39;identification d&#39;un schéma est une chaîne construite avec l&
 
 Pour ajouter un champ ou tout autre élément à l&#39;un des principaux schémas de données de Campaign, comme la table des destinataires (nms:recipient), vous devez étendre ce schéma.
 
-Voir à ce sujet la section [Étendre un schéma](extend-schema.md).
+Pour plus d&#39;informations à ce sujet, voir [Extension d’un schéma](extend-schema.md).
 
 Pour ajouter un tout nouveau type de données qui n’existe pas par défaut dans Adobe Campaign (une table des contrats par exemple), vous pouvez directement créer un schéma personnalisé.
 
-Voir à ce sujet la section [Création d’un nouveau schéma](create-schema.md).
+Pour plus d&#39;informations à ce sujet, voir [Création d’un schéma](create-schema.md).
 
 ![](assets/schemaextension_1.png)
 
@@ -194,13 +194,13 @@ En savoir plus sur les clés dans [cette section](database-mapping.md#management
 
 ## Attributs (champs) {#attributes--fields-}
 
-Les attributs vous permettent de définir les champs qui constituent votre objet de données. Vous pouvez utiliser la variable **[!UICONTROL Insérer]** dans la barre d’outils d’édition de schéma pour déposer les modèles d’attribut vides dans votre XML où se trouve votre curseur. En savoir plus dans [cette section](create-schema.md).
+Les attributs vous permettent de définir les champs qui constituent votre objet de données. Vous pouvez utiliser la variable **[!UICONTROL Insérer]** dans la barre d’outils d’édition de schéma pour déposer les modèles d’attribut vides dans votre XML à l’endroit où se trouve votre curseur. En savoir plus dans [cette section](create-schema.md).
 
 ![](assets/schemaextension_2.png)
 
-La liste complète des attributs est disponible dans la variable `<attribute>` section élément dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=fr#content-model){target="_blank"}. Voici quelques-uns des attributs les plus utilisés : **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
+La liste complète des attributs est disponible dans `<attribute>` section d’élément dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=fr#content-model){target="_blank"}. Voici quelques-uns des attributs les plus utilisés : **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
 
-Pour plus d’informations sur chaque attribut, consultez la description de l’attribut dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=fr#configuring-campaign-classic){target="_blank"}.
+Pour plus d’informations sur chaque attribut, consultez la description des attributs dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=fr#configuring-campaign-classic){target="_blank"}.
 
 ### Exemples {#examples}
 
@@ -286,4 +286,4 @@ Pour plus d&#39;informations à ce sujet, consultez [cette section](update-datab
 
 >[!NOTE]
 >
->Lorsque les modifications n’ont pas d’impact sur la structure de la base de données, il vous suffit de régénérer les schémas. Pour cela, sélectionnez le ou les schémas à mettre à jour, cliquez avec le bouton droit et choisissez **[!UICONTROL Actions > Régénérer les schémas sélectionnés...]**.
+>Lorsque les modifications n’ont aucun impact sur la structure de la base de données, vous devez uniquement régénérer les schémas. Pour ce faire, sélectionnez le ou les schémas à mettre à jour, faites un clic droit et choisissez . **[!UICONTROL Actions > Régénérer les schémas sélectionnés...]**.

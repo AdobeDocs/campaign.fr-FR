@@ -28,7 +28,7 @@ La destination d’archivage est l’adresse e-mail en Cci de votre choix, qui r
 
 >[!NOTE]
 >
->En tant qu’utilisateur Cloud Service géré, [contact Adobe](../start/campaign-faq.md#support){target="_blank"} communiquer l&#39;adresse email en Cci à utiliser pour l&#39;archivage.
+>En tant qu’utilisateur Managed Cloud Service, [Adobe de contact](../start/campaign-faq.md#support){target="_blank"} pour communiquer l’adresse e-mail en Cci à utiliser pour l’archivage.
 
 >[!CAUTION]
 >

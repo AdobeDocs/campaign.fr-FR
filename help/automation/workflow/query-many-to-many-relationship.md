@@ -52,11 +52,11 @@ Les étapes sont les suivantes :
 
      Sélectionnez l&#39;opérateur **[!UICONTROL n&#39;existent pas tel que]**. Il n&#39;y a pas de seconde valeur à sélectionner dans cette ligne.
 
-   * Le contenu de la seconde condition de filtrage dépend du premier. Ici, le **[!UICONTROL Date de l’événement]** est directement proposé dans la section **[!UICONTROL Logs de diffusion des destinataires]** car il existe un lien vers cette table.
+   * Le contenu de la deuxième condition de filtrage dépend de la première. Ici, le **[!UICONTROL Date de l’événement]** le champ est proposé directement dans **[!UICONTROL Logs de diffusion des destinataires]** , car il existe un lien vers cette table.
 
      ![](assets/query_editor_nveau_36.png)
 
-     Sélectionner **[!UICONTROL Date de l’événement]** avec la propriété **[!UICONTROL supérieur ou égal à]** de l’opérateur. Sélectionnez la variable **[!UICONTROL DaysAgo (7)]** . Pour ce faire, cliquez sur **[!UICONTROL Expression d’édition]** dans le **[!UICONTROL Valeur]** champ . Dans le **[!UICONTROL Type de formule]** fenêtre, sélectionnez **[!UICONTROL Traitement des dates]** et **[!UICONTROL Date courante moins n jours]**, avec la valeur &quot;7&quot;.
+     Sélectionner **[!UICONTROL Date de l’événement]** par le **[!UICONTROL supérieur ou égal à]** opérateur. Sélectionner le **[!UICONTROL Il y a jours (7)]** valeur. Pour ce faire, cliquez sur **[!UICONTROL Modifier l’expression]** dans le **[!UICONTROL Valeur]** champ . Dans le **[!UICONTROL Type de formule]** fenêtre, sélectionner **[!UICONTROL Traitement sur les dates]** et **[!UICONTROL Date actuelle moins jours]**, en indiquant « 7 » comme valeur.
 
      ![](assets/query_editor_nveau_37.png)
 
@@ -64,13 +64,13 @@ Les étapes sont les suivantes :
 
      ![](assets/query_editor_nveau_38.png)
 
-1. Dans le **[!UICONTROL Formatage des données]** , remplacez les noms par des majuscules. Cliquez sur le bouton **[!UICONTROL Nom]** dans la **[!UICONTROL Transformation]** et sélectionnez **[!UICONTROL Passer en majuscules]** dans le menu déroulant.
+1. Dans le **[!UICONTROL Formatage des données]** , modifiez la casse des noms de famille. Cliquez sur le lien **[!UICONTROL Nom]** ligne dans le **[!UICONTROL Transformation]** Colonne et sélection **[!UICONTROL Passer en majuscules]** dans le menu déroulant.
 
    ![](assets/query_editor_nveau_39.png)
 
 1. Utilisez la fonction **[!UICONTROL Ajouter un champ calculé]** pour insérer une colonne dans la fenêtre de prévisualisation des données.
 
-   Dans cet exemple, ajoutez un champ calculé avec les prénoms et les noms des destinataires dans une seule colonne. Cliquez sur le bouton **[!UICONTROL Ajouter un champ calculé]** de la fonction Dans le **[!UICONTROL Exporter la définition de champ calculé]** , saisissez un libellé et un nom interne, puis choisissez la **[!UICONTROL Expression JavaScript]** type. Saisissez ensuite l’expression suivante :
+   Dans cet exemple, ajoutez un champ calculé avec les noms et prénoms des destinataires dans une seule colonne. Cliquez sur le lien **[!UICONTROL Ajout d’un champ calculé]** fonction. Dans le **[!UICONTROL Exporter la définition des champs calculés]** , saisissez un libellé et un nom interne, puis choisissez la **[!UICONTROL Expression JavaScript]** tapez . Saisissez ensuite l’expression suivante :
 
    ```
    var rep = source._firstName+" - "+source._lastName
@@ -79,7 +79,7 @@ Les étapes sont les suivantes :
 
    ![](assets/query_editor_nveau_40.png)
 
-   Cliquez sur **[!UICONTROL OK]**. La variable **[!UICONTROL Formatage des données]** est configurée.
+   Clic **[!UICONTROL OK]**. Le **[!UICONTROL Formatage des données]** La fenêtre est configurée.
 
    Pour plus d&#39;informations sur l&#39;ajout de champs calculés, consultez cette section.
 

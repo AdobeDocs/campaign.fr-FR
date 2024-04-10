@@ -28,7 +28,7 @@ Un ensemble de règles livrées d&#39;usine assurent les contrôles usuels. Ces 
 
 ## Créer une règle de contrôle {#create-a-control-rule}
 
-Il est possible de créer de nouvelles règles de contrôle en fonction de vos besoins. Pour ce faire, créez une **[!UICONTROL Contrôle]** règle de typologie et renseigner la formule de contrôle en SQL dans la **[!UICONTROL Code]** .
+Il est possible de créer de nouvelles règles de contrôle en fonction de vos besoins. Pour ce faire, créez un **[!UICONTROL Contrôle]** et saisir la formule de contrôle en SQL dans le champ **[!UICONTROL Code]** onglet.
 
 **Exemple:**
 
@@ -36,7 +36,7 @@ Dans l&#39;exemple suivant, nous allons créer une règle afin de ne pas diffuse
 
 Les étapes sont les suivantes :
 
-1. Créez un **[!UICONTROL Contrôle]** règle de typologie. Sélectionnez une **[!UICONTROL Avertissement]** niveau d’alerte.
+1. Création d’un **[!UICONTROL Contrôle]** règle de typologie. Sélectionner une **[!UICONTROL Attention]** niveau d’alerte.
 
    ![](assets/campaign_opt_create_control_01.png)
 

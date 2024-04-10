@@ -42,7 +42,7 @@ Chaque workflow comprend :
 
 * **[!UICONTROL Activities]**
 
-  Une activité décrit un modèle de tâche. Les différentes activités disponibles sont représentées sur le diagramme par des icônes. Chaque type possède des propriétés communes et des propriétés spécifiques. Par exemple, si toutes les activités ont un nom et un libellé, seule la variable **[!UICONTROL Validation]** a une affectation.
+  Une activité décrit un modèle de tâche. Les différentes activités disponibles sont représentées sur le diagramme par des icônes. Chaque type possède des propriétés communes et des propriétés spécifiques. Par exemple, alors que toutes les activités ont un nom et un libellé, seule la **[!UICONTROL Approbation]** L’activité a une affectation.
 
   Dans un diagramme de workflow, une même activité peut engendrer plusieurs tâches, notamment en cas de boucle ou d&#39;actions récurrentes (périodiques).
 
@@ -72,7 +72,7 @@ Reportez-vous à ces sections qui contiennent des conseils et de bonnes pratique
 
 * En savoir plus sur les activités de workflow dans [cette page](use-workflow-data.md).
 * Découvrez comment créer un workflow dans [cette section](build-a-workflow.md).
-* Découvrez comment utiliser des workflows pour importer des données dans Campaign dans [cette section](campaign-workflows.md).
+* Découvrez comment utiliser des workflows pour importer des données dans Campaign dans [cette section](campaign-workflows.md)..
 * Les bonnes pratiques de workflow sont détaillées dans [cette page](workflow-best-practices.md).
 * Consultez [cette section](start-a-workflow.md) pour en savoir plus sur l&#39;exécution des workflows.
 * Découvrez comment surveiller les workflows dans [cette page](monitor-workflow-execution.md).

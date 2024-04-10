@@ -23,7 +23,7 @@ Le module **Gestion des réseaux sociaux (Social Marketing)** vous permet d’i
 
 >[!NOTE]
 >
->En tant qu’utilisateur Cloud Service géré, [contact Adobe](../start/campaign-faq.md#support) pour connecter Campaign à X. Le  **Gestion des réseaux sociaux (Social Marketing)** le module complémentaire doit être installé sur votre environnement, par le biais du module dédié, et le compte externe Twitter doit être configuré.
+>En tant qu’utilisateur Managed Cloud Service, [Adobe de contact](../start/campaign-faq.md#support) pour connecter Campaign à X. L’élément  **Gestion des réseaux sociaux (Social Marketing)** Le module complémentaire doit être installé sur votre environnement, par le biais du package dédié, et le compte externe par Twitter doit être configuré.
 
 
 Pour configurer Adobe Campaign afin de publier des posts sur vos comptes X, vous devez déléguer à Adobe Campaign les droits d’écriture sur ces comptes. Pour cela, vous devez effectuer les actions suivantes :
@@ -45,7 +45,7 @@ Campaign utilise la version 1.1 de l’API X. Pour l’utiliser, vous devez dem
 Une fois que vous avez reçu l’autorisation d’accès élevé, créez une application X pour permettre à Adobe Campaign de créer des publications sur votre compte X. Pour ce faire, procédez comme suit :
 
 1. Connectez-vous à votre compte X.
-1. Se connecter à [Portail de développement X](https://developer.twitter.com/en/apps){target="_blank"}.
+1. Se connecter à [X portail destiné aux développeurs](https://developer.twitter.com/en/apps){target="_blank"}.
 1. Sélectionnez **Créer une application**.
 1. Laissez-vous guider par l’assistant X.
 1. Pour permettre à Adobe Campaign de créer des publications sur votre compte, modifiez les **Autorisations d’application** dans la section Configuration de l’authentification de l’utilisateur ou de l’utilisatrice de votre application. Sélectionnez **Lecture, écriture et messages directs**.

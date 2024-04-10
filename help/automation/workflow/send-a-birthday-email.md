@@ -75,7 +75,7 @@ Pour cela, les étapes sont les suivantes :
 
    Cliquez sur **[!UICONTROL Terminer]** pour valider.
 
-1. Répétez cette procédure pour récupérer le mois de naissance correspondant au mois en cours. Pour ce faire, cliquez sur le bouton **[!UICONTROL Ajouter]** et répétez les étapes 3 à 10, en remplaçant **[!UICONTROL Jour]** avec **[!UICONTROL Mois]**.
+1. Répétez cette procédure pour récupérer le mois de naissance correspondant au mois en cours. Pour ce faire, cliquez sur le lien **[!UICONTROL Ajouter]** et répétez les étapes 3 à 10, en remplaçant **[!UICONTROL Jour]** par **[!UICONTROL Mois]**.
 
    La requête complète est la suivante :
 
@@ -115,7 +115,7 @@ La sélection des destinataires dont l’anniversaire correspond à la date actu
 
 L&#39;activité **[!UICONTROL Test]** permet de vérifier si l&#39;année est bissextile ou non et si la date courante est le 1er mars.
 
-Si le test est vérifié (l’année n’est pas bissextile - il n’y a pas de 29 février - et la date courante est bien le 1er mars), la variable **[!UICONTROL True]** La transition est activée et les destinataires nés le 29 février seront ajoutés à la diffusion du 1er mars. Sinon, la variable **[!UICONTROL False]** est activée et seuls les destinataires nés à la date courante recevront la diffusion.
+Si le test est vérifié (l&#39;année n&#39;est pas bissextile - il n&#39;y a pas de 29 février - et la date courante est bien le 1er mars), le **[!UICONTROL Vrai]** La transition est activée et les destinataires nés le 29 février seront ajoutés à la diffusion du 1er mars. Sinon, le **[!UICONTROL Faux]** La transition est activée et seuls les destinataires nés à la date actuelle recevront la diffusion.
 
 Copiez et collez le code ci-dessous dans la section **[!UICONTROL Script d&#39;initialisation]** de l&#39;onglet **[!UICONTROL Avancé]**.
 

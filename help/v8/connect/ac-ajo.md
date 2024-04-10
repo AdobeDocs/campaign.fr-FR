@@ -22,7 +22,7 @@ Les étapes de base consistent à créer un modèle de message transactionnel da
 ![](assets/ajo-integration.png)
 
 
-[Découvrez cette intégration dans cet exemple de bout en bout](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=fr){target="_blank"}.
+[Découvrez cette intégration dans cet exemple complet](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=fr){target="_blank"}.
 
 
 [En savoir plus dans la documentation Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=fr){target="_blank"}.

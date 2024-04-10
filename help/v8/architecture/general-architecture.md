@@ -32,7 +32,7 @@ Un déploiement classique de la solution Adobe Campaign comprend les composants
 
 L’accès à l’application peut se faire de différentes manières : interface utilisateur web, console cliente (client riche), accès web (client léger) ou intégration via les API.
 
-[En savoir plus sur l’interface utilisateur de Campaign](../start/campaign-ui.md).
+[En savoir plus sur l&#39;interface utilisateur de Campaign](../start/campaign-ui.md).
 
 ## Environnement de développement {#dev-env}
 

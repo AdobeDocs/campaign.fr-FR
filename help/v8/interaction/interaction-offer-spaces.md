@@ -131,9 +131,9 @@ Dès lors qu&#39;un visiteur clique sur l&#39;offre, et donc sur l&#39;URL, le s
 
 >[!NOTE]
 >
->Si vous souhaitez spécifier un autre état dans l’URL (par exemple si une proposition d’offre est refusée), utilisez la valeur correspondant à l’état souhaité. Exemple : **[!UICONTROL Rejetés]** = &quot;5&quot;, **[!UICONTROL Présenté]** = &quot;1&quot;, etc.
+>Si vous souhaitez spécifier un autre statut dans l&#39;url (par exemple si une proposition d&#39;offre est rejetée), utilisez la valeur correspondant au statut souhaité. Exemple : **[!UICONTROL Rejetés]** = « 5 », **[!UICONTROL Présentée]** = « 1 », etc.
 >
->Les états et leurs valeurs peuvent être récupérés dans la variable **[!UICONTROL Propositions d&#39;offres (nms)]** schéma de données. Pour plus d’informations, consultez [cette page](../dev/create-schema.md).
+>Les statuts et leurs valeurs peuvent être récupérés dans le **[!UICONTROL Propositions d’offre (nms)]** schéma de données. Pour plus d’informations, consultez [cette page](../dev/create-schema.md).
 
 **Interaction sortante**
 
@@ -156,4 +156,4 @@ Dans le cas où le destinataire n&#39;est éligible à aucune offre, la prévisu
 
 La prévisualisation peut ne pas tenir compte des contextes lorsqu&#39;ils sont limités à un emplacement. C&#39;est le cas lorsque le schéma d&#39;interaction a été étendu de façon à ajouter des champs qui sont référencés dans un emplacement utilisant un canal entrant.
 
-Voir à ce propos cet exemple dans la section [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=fr){target="_blank"}.
+Voir à ce propos cet exemple dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=fr){target="_blank"}.

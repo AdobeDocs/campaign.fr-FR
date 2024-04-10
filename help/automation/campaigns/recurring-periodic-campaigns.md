@@ -44,7 +44,7 @@ Pour créer un modèle pour les campagnes récurrentes, procédez de la manière
 
    >[!NOTE]
    >
-   >Ce workflow doit être enregistré comme un modèle de workflow récurrent. Pour ce faire, éditez les propriétés du workflow et sélectionnez l’option **[!UICONTROL Modèle de workflow récurrent]** dans le **[!UICONTROL Exécution]** .
+   >Ce workflow doit être enregistré comme un modèle de workflow récurrent. Pour ce faire, modifiez les propriétés du workflow et sélectionnez le **[!UICONTROL Modèle de workflow récurrent]** dans le **[!UICONTROL Exécution]** onglet.
 
    ![](assets/recurring-campaign-wf-properties.png)
 
@@ -64,7 +64,7 @@ Pour créer la campagne récurrente et exécuter ses workflows selon le planning
 
    A l&#39;exécution du workflow **[!UICONTROL Traitements sur les opérations]**, les workflows dédiés sont créés selon les occurrences définies dans le planning de l&#39;opération. Ainsi, un workflow est créé pour chaque date d&#39;exécution.
 
-1. Les workflows récurrents sont créés automatiquement à partir du modèle de workflow présent dans l&#39;opération. Elles sont visibles à partir de la variable **[!UICONTROL Ciblage et workflows]** de l&#39;opération.
+1. Les workflows récurrents sont créés automatiquement à partir du modèle de workflow présent dans la campagne. Elles sont visibles à partir de **[!UICONTROL Ciblage et workflows]** onglet de la campagne.
 
    ![](assets/recurring-wf-created.png)
 

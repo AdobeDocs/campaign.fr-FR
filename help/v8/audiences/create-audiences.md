@@ -79,7 +79,7 @@ Sélectionnez l&#39;option **[!UICONTROL Recréer la liste]** pour supprimer le 
 
 Si vous décochez l&#39;option **[!UICONTROL Ne pas conserver trace de ce traitement dans la base de données]**, vous pouvez sélectionner (ou créer) le dossier d&#39;exécution où seront stockées les informations relatives à ce traitement.
 
-La section supérieure de la fenêtre permet de suivre l&#39;exécution. La variable **[!UICONTROL Arrêter]** vous permet d’arrêter le processus. Les contacts déjà traités seront associés à la liste.
+La section supérieure de la fenêtre permet de surveiller l’exécution. Le **[!UICONTROL Arrêter]** vous permet d’arrêter le processus. Les contacts déjà traités seront associés à la liste.
 
 Une fois l&#39;exécution terminée, accédez au menu **[!UICONTROL Profils et cibles > Listes]** et sélectionnez la liste : l&#39;onglet **[!UICONTROL Contenu]** affiche les profils associés à cette liste.
 

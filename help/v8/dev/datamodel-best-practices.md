@@ -20,7 +20,7 @@ Le système Adobe Campaign est très flexible et peut être étendu au-delà de
 
 Afin de mieux comprendre le fonctionnement des tables intégrées de Campaign et leurs interactions les unes avec les autres, consultez [cette section](datamodel.md).
 
-Lire [cette section](schemas.md) pour commencer à utiliser les schémas de Campaign.
+Lecture [cette section](schemas.md) pour commencer à utiliser les schémas de Campaign.
 
 Découvrez comment configurer des schémas d’extension afin d’étendre le modèle de données conceptuel de la base de données Adobe Campaign dans [cette page](extend-schema.md).
 
@@ -175,7 +175,7 @@ Il existe un certain nombre de solutions pour minimiser le besoin d&#39;enregist
 
 Vous pouvez déclarer l&#39;attribut &quot;deleteStatus&quot; dans un schéma. Il est plus efficace de marquer l&#39;enregistrement comme supprimé, puis de différer la suppression au cours de la tâche de nettoyage.
 
-En tant qu’utilisateur Cloud Service géré, contactez les consultants Adobe ou les administrateurs techniques pour en savoir plus sur la rétention ou pour définir la rétention pour les tables personnalisées.
+En tant qu’utilisateur Managed Cloud Service, contactez les consultants ou administrateurs techniques Adobe pour en savoir plus sur la conservation des données ou si vous devez définir la conservation des tables personnalisées.
 
 ## Performances {#performance}
 

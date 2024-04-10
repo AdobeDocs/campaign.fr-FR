@@ -46,10 +46,10 @@ Adobe Campaign propose un ensemble d&#39;outils de reporting répertoriés dans
 
   ![](assets/desc-analysis-report.png)
 
-  Le rapport d’analyse descriptive d’une campagne est présenté dans la section [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target="_blank"}.
+  Le rapport d&#39;analyse descriptive d&#39;une campagne est présenté dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target="_blank"}.
 
 * **Rapports personnalisés**
 
   Utilisez Adobe Campaign pour créer des rapports sur les données de la base de données. Une fois créés, rendez-les accessibles dans les contextes appropriés.
 
-  Les étapes de création d&#39;un rapport sont présentées dans la section [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=fr){target="_blank"}. La création de rapports personnalisés est réservée aux utilisateurs avancés.
+  Les étapes de création d’un rapport sont présentées dans la section [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=fr){target="_blank"}. La création de rapports personnalisés est réservée aux utilisateurs avancés.

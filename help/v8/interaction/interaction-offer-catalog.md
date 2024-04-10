@@ -36,7 +36,7 @@ Pour créer une nouvelle catégorie, procédez comme suit :
 
    ![](assets/offer_cat_create_002.png)
 
-1. Renommez la catégorie. Vous pouvez modifier le libellé ultérieurement à l’aide du **[!UICONTROL Général]** .
+1. Renommez la catégorie. Vous pouvez modifier le libellé ultérieurement à l’aide de l’ **[!UICONTROL Général]** onglet.
 
    ![](assets/offer_cat_create_003.png)
 

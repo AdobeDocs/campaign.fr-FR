@@ -30,7 +30,7 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
   <tr> 
    <td> <span class="uicontrol">Mid-sourcing (logs de diffusion)</span> <br /> </td> 
    <td> <span class="uicontrol">defaultMidSourcingLog</span> <br /> </td> 
-   <td> Ce workflow collecte les logs de diffusion sur le serveur de mid-sourcing. Par défaut, il se déclenche toutes les heures.<br /> </td> 
+   <td> Ce workflow collecte les logs de diffusion sur le serveur de mid-sourcing. Il est déclenché toutes les heures par défaut.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

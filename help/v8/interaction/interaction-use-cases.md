@@ -16,10 +16,10 @@ ht-degree: 56%
 
 Tirez parti des fonctionnalités présentes dans le module Interaction de Campaign grâce à ces cas pratiques et détaillés disponibles dans la documentation de Campaign Classic v7 :
 
-[Créer et appliquer une règle de présentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html?lang=fr){target="_blank"}
+[Création et application d&#39;une règle de présentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html?lang=fr){target="_blank"}
 
-[Envoyer une diffusion d’offre par email](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=fr){target="_blank"}
+[Envoyer une diffusion d&#39;offre par e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=fr){target="_blank"}
 
-[Présenter une offre à un visiteur anonyme](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=fr){target="_blank"}
+[Présentation d&#39;une offre à un visiteur anonyme](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=fr){target="_blank"}
 
 [Effectuer une simulation d&#39;offres](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=fr){target="_blank"}

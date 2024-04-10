@@ -80,11 +80,11 @@ Le workflow de l&#39;opération doit intégrer l&#39;activité de type **Validat
 * **[!UICONTROL Contexte de répartition]** : Explicite.
 * **[!UICONTROL Répartition des données]** : Répartition pour les entités locales.
 
-**Répartition des entités locales** La répartition de données de type doit être créée. Le modèle de répartition de données permet de limiter le nombre d&#39;enregistrements à partir d&#39;une liste de valeurs de groupement. Dans **[!UICONTROL Ressources > Gestion de campagne > Répartition des données]**, cliquez sur le **[!UICONTROL Nouveau]** pour créer une icône **[!UICONTROL Répartition des données]**. Pour plus d’informations sur la répartition des données,
+**Répartition pour les entités locales** la répartition de données de type doit être créée. Le modèle de répartition de données permet de limiter le nombre d&#39;enregistrements à partir d&#39;une liste de valeurs de groupement. In **[!UICONTROL Ressources > Gestion de campagne > Répartition des données]**, cliquez sur le lien **[!UICONTROL Nouveau]** pour créer une **[!UICONTROL Répartition des données]**. Pour plus d&#39;informations sur la distribution des données,
 
 ![](assets/mkg_dist_data_distribution.png)
 
-Sélectionnez la variable **Dimension de ciblage** et la variable **[!UICONTROL Champ de répartition]**. Pour le **[!UICONTROL Type d&#39;affectation]**, sélectionnez **Entité locale**.
+Sélectionner le **Dimension de ciblage** et le **[!UICONTROL Champ de répartition]**. Pour le **[!UICONTROL Type d&#39;affectation]**, sélectionnez **Entité locale**.
 
 Dans l&#39;onglet **[!UICONTROL Répartition]**, ajoutez un champ pour chaque entité locale et spécifiez la valeur.
 

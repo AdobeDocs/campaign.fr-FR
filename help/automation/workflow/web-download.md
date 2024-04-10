@@ -29,7 +29,7 @@ L&#39;activité de type **Téléchargement Web** permet de lancer le télécharg
 
    * Pour utiliser un **[!UICONTROL Compte externe]**, sélectionnez le compte dans la liste déroulante et indiquez le fichier à télécharger.
 
-     Les comptes externes sont configurés à partir de la variable **[!UICONTROL Administration > Plateforme > Comptes externes]** du noeud de l’arborescence Adobe Campaign. Les paramètres du compte peuvent être édités à partir du **[!UICONTROL Lien d’édition]** Icône
+     Les comptes externes sont configurés à partir du **[!UICONTROL Administration > Plateforme > Comptes externes]** nœud de l’arborescence Adobe Campaign. Les paramètres du compte peuvent être modifiés à partir de **[!UICONTROL Modifier le lien]** icône.
 
      ![](assets/download_web_edit_external.png)
 
@@ -45,7 +45,7 @@ L&#39;activité de type **Téléchargement Web** permet de lancer le télécharg
 
    Les options disponibles sont les suivantes :
 
-   * **[!UICONTROL Utiliser un répertoire de stockage par défaut]**: le fichier est toujours déplacé avant d’être traité. Si cette option est cochée, le fichier est déplacé dans le répertoire de stockage par défaut (le **vars** répertoire du dossier d’installation d’Adobe Campaign). Pour spécifier un répertoire de stockage, décochez la case et saisissez son chemin dans le champ **[!UICONTROL Répertoire de stockage]** field
+   * **[!UICONTROL Utiliser un répertoire de stockage par défaut]**: le fichier est toujours déplacé avant d’être traité. Si cette option est cochée, le fichier est déplacé dans le répertoire de stockage par défaut (le **vars** répertoire du répertoire d’installation d’Adobe Campaign). Pour spécifier un répertoire de stockage, décochez la case et saisissez son chemin dans le champ **[!UICONTROL Répertoire de stockage]** champ
    * **[!UICONTROL Nombre de fichiers]** : saisissez le nombre maximal de fichiers à conserver dans le répertoire de stockage.
    * **[!UICONTROL Taille maximale (en Mo)]** : saisissez la capacité maximale du répertoire de stockage (en méga octets).
 

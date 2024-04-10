@@ -3,7 +3,7 @@ title: Mise à niveau de l’infrastructure d’envoi d’e-mails dans Campaign
 description: Mise à niveau de l’infrastructure d’envoi d’e-mails dans Campaign
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 100%
 
@@ -55,7 +55,7 @@ Les mises à niveau des environnements de production ont commencé en **janvier�
 
 * **Quels sont les tests requis par les clientes et clients ?**
 
-  Nous ne nous attendons pas à ce que les clientes et clients aient à effectuer des tests en rapport avec cet événement de mise à niveau. Contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=fr#support) pour tout problème rencontré{target="_blank"}.
+  Nous ne nous attendons pas à ce que les clientes et clients aient à effectuer des tests en rapport avec cet événement de mise à niveau. Contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=fr#support){target="_blank"} pour tout problème rencontré.
 
 
 * **Puis-je demander un changement de date/heure du créneau prévu pour la mise à niveau de sécurité ?**

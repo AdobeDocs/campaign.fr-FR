@@ -53,11 +53,11 @@ Vous pouvez également utiliser l&#39;icône **[!UICONTROL Ajouter]** pour séle
 
 ![](assets/s_advuser_update_data_3.png)
 
-Sélectionnez tous les champs à mettre à jour et, au besoin, ajoutez des conditions selon lesquelles effectuer la mise à jour. Pour cela, utilisez la colonne **[!UICONTROL Prise en compte si]**. Les conditions sont appliquées les unes après les autres, dans l&#39;ordre de la liste. Utilisez les flèches situées à droite pour modifier l&#39;ordre des mises à jour.
+Sélectionnez tous les champs à mettre à jour et, au besoin, ajoutez des conditions en fonction de la mise à jour à effectuer. Pour cela, utilisez la colonne **[!UICONTROL Prise en compte si]**. Les conditions sont appliquées l&#39;une après l&#39;autre et dans l&#39;ordre de la liste. Utilisez les flèches situées à droite pour modifier l’ordre des mises à jour.
 
 Vous pouvez utiliser plusieurs fois le même champ de destination.
 
-Dans un **[!UICONTROL Insérer ou mettre à jour]** , vous pouvez sélectionner l&#39;opération à appliquer, individuellement ou pour chaque champ. Pour ce faire, sélectionnez la valeur souhaitée dans la variable **[!UICONTROL Opération]** colonne .
+Dans un **[!UICONTROL Insertion ou mise à jour]** , vous pouvez sélectionner la campagne à appliquer, soit individuellement, soit pour chaque champ. Pour ce faire, sélectionnez la valeur souhaitée dans le champ **[!UICONTROL Opération]** colonne.
 
 ![](assets/s_advuser_update_data_5.png)
 
@@ -72,7 +72,7 @@ Le lien **[!UICONTROL Paramètres avancés]** permet de spécifier des options s
 * **[!UICONTROL Vider la valeur destination si la valeur source est vide (NULL)]**. Cette option est cochée par défaut.
 * **[!UICONTROL Mettre à jour toutes les colonnes dont les noms correspondent]**.
 * Préciser les conditions de prise en compte des éléments de la source à l&#39;aide d&#39;une expression dans le champ **[!UICONTROL Prise en compte]**.
-* Spécifiez les conditions de prise en compte des doublons à l’aide d’une expression. Si vous cochez la variable **[!UICONTROL Ignorer les enregistrements relatifs à la même cible]** , seul le premier de la liste des expressions sera pris en compte.
+* Spécifiez des conditions qui prennent en compte les doublons à l’aide d’une expression. Si vous vérifiez le **[!UICONTROL Ignorer les enregistrements concernant la même cible]** , seule la première expression de la liste est prise en compte.
 
 **[!UICONTROL Générer une transition sortante]**
 

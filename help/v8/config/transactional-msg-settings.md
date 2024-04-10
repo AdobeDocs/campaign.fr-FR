@@ -21,7 +21,7 @@ Découvrez l’architecture de la messagerie transactionnelle sur [cette page](.
 
 >[!NOTE]
 >
->En tant qu’utilisateur Cloud Service géré, [contact Adobe](../start/campaign-faq.md#support) pour installer et configurer les messages transactionnels Campaign dans votre environnement.
+>En tant qu’utilisateur Managed Cloud Service, [Adobe de contact](../start/campaign-faq.md#support) pour installer et configurer la messagerie transactionnelle de Campaign dans votre environnement.
 
 ## Définition des autorisations {#mc-permissions}
 

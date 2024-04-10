@@ -16,9 +16,9 @@ ht-degree: 84%
 
 Campaign vous aide à ajouter des contacts à la base de données cloud. Vous pouvez charger un fichier, planifier et automatiser plusieurs mises à jour des contacts, collecter des données sur le Web ou saisir des informations de profil directement dans la table des destinataires.
 
-Prise en main d’ [audiences](audiences.md)
+Prise en main de [audiences](audiences.md)
 
-Présentation de Campaign [datamodel](../dev/datamodel.md)
+Présentation de Campaign [modèle de données](../dev/datamodel.md)
 
 ## Import de profils dans un workflow
 
@@ -33,7 +33,7 @@ Créez et exécutez un traitement d&#39;import de données générique pour char
 
 ![](assets/new-import.png)
 
-Découvrez comment exécuter des tâches d’importation unitaire pour alimenter votre base de données dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=fr){target="_blank"}.
+Découvrez comment exécuter des traitements d’imports unitaires pour alimenter votre base de données [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=fr){target="_blank"}.
 
 ## Collecte de profils via des applications web
 

@@ -32,7 +32,7 @@ Depuis le tableau de bord des diffusions, vous pouvez vérifier les messages tra
 >Les statuts des diffusions ne s’affichent pas en temps réel. Découvrez le service de retour par e-mail dans [cette section](#email-feedback-service).
 
 
-[En savoir plus sur le monitoring des diffusions dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=fr){target="_blank"}
+[En savoir plus sur la surveillance des diffusions dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=fr){target="_blank"}
 
 ## MTA de Campaign {#mta}
 

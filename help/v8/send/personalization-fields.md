@@ -50,7 +50,7 @@ Dans le cas d’utilisation ci-dessous, apprenez à personnaliser l’objet et l
 
 1. Créez une nouvelle diffusion ou ouvrez une diffusion existante d’e-mail.
 1. Accédez au lien **[!UICONTROL Objet]** pour modifier l’objet du message.
-1. Saisissez &quot; **Offre spéciale pour** &quot; et utilisez le bouton de la barre d&#39;outils pour insérer un champ de personnalisation. Sélectionner **[!UICONTROL Destinataires > Titre]**.
+1. Enter «  **Offre spéciale pour** » et utilisez le bouton de la barre d’outils pour insérer un champ de personnalisation. Sélectionner **[!UICONTROL Destinataires>Titre]**.
 1. Répétez l&#39;opération pour insérer le nom du destinataire. Insérez des espaces entre chacun de ces champs de personnalisation.
 1. Cliquez sur **[!UICONTROL OK]** pour valider.
 1. Insérez ensuite la personnalisation dans le corps du message. Pour cela, cliquez dans le contenu du message et cliquez sur le bouton d&#39;insertion de champs.

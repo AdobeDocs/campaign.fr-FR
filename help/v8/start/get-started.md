@@ -34,7 +34,7 @@ Les profils sont centralisés dans une puissante base de données cloud. Il exis
 
 Dans Adobe Campaign, les destinataires sont les profils par défaut ciblés pour l&#39;envoi des diffusions (e-mails, SMS, etc.). Grâce aux données de destinataires stockées dans la base, vous pouvez filtrer la cible recevant toute diffusion donnée et ajouter les données de personnalisation à votre contenu de diffusion. Il existe d&#39;autres types de profils dans la base de données qui sont conçus pour d&#39;autres utilisations. Par exemple, les profils d&#39;adresses de contrôle sont destinés à tester vos diffusions avant leur envoi à la cible finale.
 
-Les notions de base de la gestion des profils sont expliquées dans la section [cette section](audiences.md).
+Les notions de base de la gestion des profils sont décrites dans la section [cette section](audiences.md).
 
 Découvrez comment ajouter des profils à Campaign dans [cette section](import.md).
 
@@ -76,13 +76,13 @@ Outre des modèles de reporting d&#39;usine puissants, Adobe Campaign vous perme
 La fonctionnalité des rapports de l&#39;opération facilite la création de rapports dynamiques. Vous pouvez utiliser des variables par glisser-déposer afin de personnaliser vos rapports et d&#39;analyser la réussite de vos campagnes. En fonction de la complexité de vos requêtes et de vos calculs, les données peuvent être agrégées dans une vue de liste et sont accessibles dans un format qui facilite la génération de rapports d&#39;analytique marketing.
 
 
-En savoir plus sur les fonctionnalités de rapport et de suivi dans [cette section](../reporting/gs-reporting.md).
+En savoir plus sur les fonctionnalités de reporting et de tracking dans [cette section](../reporting/gs-reporting.md).
 
 ## Intégrations avec Adobe Experience Cloud {#adobe-experience-cloud-integrations}
 
 Vous pouvez combiner les fonctionnalités de diffusion et de gestion de campagnes avancées d&#39;Adobe Campaign avec un ensemble de solutions créées pour vous aider à personnaliser l&#39;expérience de vos utilisateurs, notamment Adobe Experience Manager, Adobe Analytics, Adobe Target ou les triggers Adobe Experience Cloud.
 
-Découvrez comment intégrer avec les services et solutions Adobe dans [cette section](../connect/integration.md).
+Découvrez comment intégrer les services et solutions Adobe dans [cette section](../connect/integration.md).
 
 ## En savoir plus sur les fonctionnalités de Campaign {#core-capabilities-and-add-ons}
 

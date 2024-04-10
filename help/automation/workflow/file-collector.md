@@ -70,7 +70,7 @@ Le premier onglet de l’activité du **[!UICONTROL Collecteur de fichiers]** vo
 
    Voir l’étape **[!UICONTROL Historisation des fichiers]** de la section [Téléchargement Web](web-download.md).
 
-L’ordre de traitement des fichiers ne peut pas être déterminé. Pour traiter un ensemble de fichiers de manière séquentielle, utilisez la variable **[!UICONTROL Terminer dès qu&#39;un fichier a été traité]** et créez une boucle. Dans ce cas, les fichiers seront traités par ordre alphabétique. La variable **[!UICONTROL Traiter l&#39;absence de fichier]** permet de terminer l’itération.
+Impossible de déterminer l’ordre de traitement du fichier. Pour traiter un ensemble de fichiers de manière séquentielle, utilisez **[!UICONTROL Terminer dès qu’un fichier est traité]** et créez une boucle. Dans ce cas, les fichiers seront traités par ordre alphabétique. Le **[!UICONTROL Non-existence du fichier de processus]** vous permet de terminer l’itération.
 
 ![](assets/file_collect_loop.png)
 

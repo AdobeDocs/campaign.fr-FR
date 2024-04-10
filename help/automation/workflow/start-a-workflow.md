@@ -17,7 +17,7 @@ ht-degree: 76%
 
 Un workflow est toujours démarré manuellement. Au démarrage, il peut toutefois rester inactif en fonction des informations spécifiées par le biais d&#39;un planificateur (voir [Planificateur](scheduler.md)) ou d&#39;une planification d&#39;activité.
 
-Actions liées à l&#39;exécution du workflow de ciblage (lancement, arrêt, pause, etc.) are **asynchrone** processus : la commande est enregistrée et sera effective dès que le serveur sera disponible pour l&#39;appliquer.
+Actions liées à l&#39;exécution du workflow de ciblage (lancement, arrêt, pause, etc.) sont **asynchrone** processus : la commande est enregistrée et sera effective dès que le serveur sera disponible pour l’appliquer.
 
 La barre d&#39;outils permet de lancer et suivre l&#39;exécution du workflow.
 
@@ -45,7 +45,7 @@ Le bouton **[!UICONTROL Actions]** de la barre d’outils permet d’accéder à
 
 * **[!UICONTROL Stopper]**
 
-  Cette action arrête un workflow en cours d’exécution. L’état de l’instance est défini sur **Terminé**. Si possible, les opérations en cours sont interrompues. Les imports et requêtes SQL sont immédiatement annulées.
+  Cette action arrête un workflow en cours d’exécution. Le statut de l’instance est défini sur **Terminé**. Les opérations en cours sont interrompues, si possible. Les imports et les requêtes SQL sont immédiatement annulées.
 
   >[!IMPORTANT]
   >
@@ -69,16 +69,16 @@ Le bouton **[!UICONTROL Actions]** de la barre d’outils permet d’accéder à
 
 * **[!UICONTROL Démarrer en mode simulation]**
 
-  Cette option permet de lancer le workflow en mode simulation et non en mode réel. Cela signifie que lorsque vous activez ce mode, seules les activités qui n&#39;ont pas d&#39;impact sur la base de données ou le système de fichiers sont exécutées (par exemple : **[!UICONTROL Requête]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). Activités qui ont un impact (par exemple, **[!UICONTROL Exporter]**, **[!UICONTROL Importer]**, etc.) ainsi que celles qui leur succèdent (dans la même branche) ne sont pas exécutées.
+  Cette option permet de lancer le workflow en mode simulation plutôt qu’en mode réel. Cela signifie que lorsque vous activez ce mode, seules les activités qui n&#39;ont aucun impact sur la base de données ou le système de fichiers sont exécutées (par ex. **[!UICONTROL Requête]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). Les activités qui ont un impact (p. ex. **[!UICONTROL Exporter]**, **[!UICONTROL Importer]**, etc.) ainsi que celles qui leur succèdent (dans la même branche) ne sont pas exécutées.
 
 * **[!UICONTROL Traitement anticipé des tâches en attente]**
 
-  Cette action permet de lancer dès que possible toutes les tâches en attente. Pour lancer une tâche spécifique, cliquez avec le bouton droit de la souris sur l&#39;activité correspondante et sélectionnez **[!UICONTROL Traitement anticipé des tâches en attente]**.
+  Cette action permet de lancer dès que possible toutes les tâches en attente. Pour démarrer une tâche spécifique, cliquez avec le bouton droit de la souris sur son activité et sélectionnez **[!UICONTROL Traitement anticipé de la (des) tâche(s)]**.
 
 
 * **[!UICONTROL Sauver comme modèle]**
 
-  Cette action crée un modèle de workflow à partir du workflow sélectionné. Vous devez spécifier le dossier dans lequel il sera enregistré (dans la variable **[!UICONTROL Dossier]** ).
+  Cette action crée un modèle de workflow basé sur le workflow sélectionné. Vous devez indiquer le dossier dans lequel il sera enregistré (dans le **[!UICONTROL Dossier]** (champ ).
 
 
 ## Bonnes pratiques relatives à l’exécution des workflows {#workflow-execution-best-practices}
@@ -87,12 +87,12 @@ Améliorez la stabilité de votre instance en implémentant les bonnes pratiques
 
 * **Ne planifiez pas l’exécution d’un workflow à une fréquence supérieure à toutes les 15 minutes**, car cela peut nuire aux performances générales du système et créer des blocs dans la base de données.
 
-* **Évitez de laisser vos workflows en pause**. Si vous créez un workflow temporaire, assurez-vous qu’il se terminera correctement et qu’il ne restera pas dans un **[!UICONTROL paused]** état. S’il est en pause, cela signifie que vous devez conserver les tables temporaires et ainsi augmenter la taille de la base de données. Affectez des superviseurs dans les propriétés du workflow pour envoyer une alerte en cas d’échec ou de suspension d’un workflow par le système.
+* **Éviter de laisser vos workflows en pause**. Si vous créez un workflow temporaire, assurez-vous qu’il pourra se terminer correctement et ne pas rester dans un **[!UICONTROL en pause]** état. Si elle est mise en pause, cela signifie que vous devez conserver les tables temporaires et augmenter ainsi la taille de la base de données. Affectez des superviseurs dans les propriétés du workflow pour envoyer une alerte en cas d’échec ou de suspension d’un workflow par le système.
 
   Pour éviter que les workflows soient dans un état en pause :
 
    * Vérifiez vos workflows régulièrement pour vous assurer qu&#39;il n&#39;y a pas d&#39;erreurs inattendues.
-   * Faites en sorte que vos workflows soient aussi simples que possible, en fractionnant par exemple les workflows volumineux en plusieurs workflows différents. Vous pouvez utiliser **[!UICONTROL Signal externe]** les activités déclenchent leur exécution en fonction de l’exécution d’autres workflows.
+   * Simplifiez autant que possible vos workflows, par exemple en divisant les workflows volumineux en plusieurs workflows différents. Vous pouvez utiliser **[!UICONTROL Signal externe]** Les activités déclenchent leur exécution en fonction de celle d’autres workflows.
    * Évitez de conserver dans vos workflows des activités désactivées contenant des flux. Cette situation conduit à maintenir des threads ouverts et de nombreuses tables temporaires qui consomment beaucoup d’espace. Ne conservez pas, dans vos workflows, des activités se trouvant dans les états **[!UICONTROL Ne pas activer]** ou **[!UICONTROL Activer, mais ne pas exécuter]**.
 
 * **Arrêtez les workflows qui ne sont pas utilisés**. En continuant à s’exécuter, ils maintiennent les connexions avec la base de données.

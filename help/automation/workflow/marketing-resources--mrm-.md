@@ -37,7 +37,7 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
   <tr> 
    <td> <span class="uicontrol">Traitements dans les forums de discussion</span> <br /> </td> 
    <td> <span class="uicontrol">newsgroupMgt</span> <br /> </td> 
-   <td> Ce workflow gère l'envoi des notifications dans les forums de discussion. Elle est déclenchée lorsqu’un signal de validation est reçu.<br /> </td> 
+   <td> Ce workflow gère la diffusion des notifications des forums de discussion. Il est déclenché lorsqu’un signal d’approbation est reçu.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

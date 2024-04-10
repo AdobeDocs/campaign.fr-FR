@@ -127,7 +127,7 @@ Découvrez comment surveiller l’exécution des workflows sur [cette page](http
 
 ### Surveiller votre instance
 
-Les instructions de surveillance des instances sont disponibles dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/introduction/monitoring-guidelines.html?lang=fr#monitoring-campaign-classic).{target="_blank"}
+Les instructions de surveillance des instances sont disponibles dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/introduction/monitoring-guidelines.html?lang=fr#monitoring-campaign-classic){target="_blank"}.
 
 Utilisez l&#39;interface en libre-service du journal d&#39;audit pour surveiller les modifications apportées à votre instance. Le journal d’audit capture, en temps réel, une liste complète d’actions et d’événements se produisant dans votre instance Adobe Campaign. Vous pouvez accéder à un historique des données pour répondre à des questions telles que : ce qui est arrivé à vos workflows et qui les a mis à jour en dernier, ou ce que vos utilisateurs ont fait dans l&#39;instance.
 

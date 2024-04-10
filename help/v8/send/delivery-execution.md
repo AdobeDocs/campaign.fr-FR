@@ -53,7 +53,7 @@ Le rapport **[!UICONTROL Historique des événements de Message Center]** prése
 
 Lors de l&#39;ouverture du rapport, les informations affichées par défaut correspondent au taux de messages transactionnels envoyés avec succès. Pour visualiser davantage de niveaux, vous pouvez déplier ou replier les différents noeuds et positionner le pointeur de la souris pour mettre en surbrillance le niveau voulu.
 
-Vous pouvez afficher les données spécifiques à chaque type d’événement, par période. La variable **[!UICONTROL Événements]** correspond au nombre d&#39;événements reçus par l&#39;instance de pilotage. Le nombre d’événements transformés en messages transactionnels personnalisés est détaillé dans la section **[!UICONTROL Envoyé]** colonne .
+Vous pouvez afficher les données spécifiques à chaque type d’événement, par période. Le **[!UICONTROL Événements]** colonne correspond au nombre d&#39;événements reçus par instance de pilotage. Le nombre d&#39;événements transformés en messages transactionnels personnalisés est détaillé dans la **[!UICONTROL Envoyé]** colonne.
 
 
 ### Temps de traitement Message Center {#processing-time}

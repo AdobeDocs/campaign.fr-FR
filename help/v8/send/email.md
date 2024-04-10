@@ -83,7 +83,7 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
 Votre première diffusion e-mail est prête. Vous devez maintenant définir l&#39;audience, valider la diffusion et l&#39;envoyer.
 
-Découvrez comment importer un contenu d&#39;email dans [cas d’utilisation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=fr){target="_blank"}.
+Découvrez comment importer un contenu d&#39;e-mail dans cette [cas d’utilisation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=fr){target="_blank"}.
 
 En savoir plus dans les sections suivantes :
 

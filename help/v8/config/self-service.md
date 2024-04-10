@@ -24,7 +24,7 @@ Principaux avantages :
 
 Vous pouvez également utiliser le Panneau de contrôle Campaign pour configurer les paramètres de votre instance, tels que les listes autorisées d’adresses IP, les autorisations d’URL et récupérer des informations sur votre instance.
 
-En savoir plus dans [Documentation du Panneau de Contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"}.
+En savoir plus dans [Documentation sur le Panneau de Contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"}.
 
 ## Comment accéder au Panneau de contrôle ? {#ac-control-panel-access}
 

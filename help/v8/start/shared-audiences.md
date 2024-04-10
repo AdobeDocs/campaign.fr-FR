@@ -25,7 +25,7 @@ Vous pouvez intégrer **Adobe Campaign** à **People Core Service** ou Adobe�
 
 * importer dans Adobe Campaign des audiences/segments provenant de différentes solutions d&#39;Adobe Experience Cloud. L&#39;import d&#39;audiences peut être réalisé depuis les listes dans Adobe Campaign.
 
-* Exportez des listes sous la forme d’audiences partagées Adobe Experience Cloud. Ces audiences peuvent être utilisées dans les différentes solutions Adobe Experience Cloud que vous utilisez. L&#39;export d&#39;audiences peut être réalisé à la suite d&#39;un ciblage dans un workflow, à l&#39;aide d&#39;une activité dédiée **[!UICONTROL Mise à jour d&#39;audience partagée]**.
+* exporter des listes sous la forme d’audiences partagées Adobe Experience Cloud ; Ces audiences peuvent être utilisées dans les différentes solutions Adobe Experience Cloud que vous utilisez. L&#39;export d&#39;audiences peut être réalisé à la suite d&#39;un ciblage dans un workflow, à l&#39;aide d&#39;une activité dédiée **[!UICONTROL Mise à jour d&#39;audience partagée]**.
 
 L’intégration prend en charge deux types d’identifiants Adobe Experience Cloud :
 
@@ -40,6 +40,6 @@ L’intégration prend en charge deux types d’identifiants Adobe Experience 
 
 Pour plus d’informations, consultez la section :
 
-[Documentation Adobe Audience Manager](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=fr){target="_blank"}
+[Documentation de Adobe Audience Manager](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=fr){target="_blank"}
 
 [Guide des composants de l’interface centrale de Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=fr){target="_blank"}

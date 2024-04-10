@@ -22,7 +22,7 @@ Lorsque vous créez l&#39;environnement anonyme via l&#39;assistant de création
 
 La **[!UICONTROL Dimension de ciblage]** est automatiquement préremplie. Elle pointe par défaut sur la table des visiteurs.
 
-La variable **[!UICONTROL Dossier du visiteur]** s’affiche. Il est automatiquement renseigné pour établir un lien vers la variable **[!UICONTROL Visiteurs]** dossier. Ce champ vous permet de choisir l’emplacement de stockage des profils du visiteur.
+Le **[!UICONTROL Dossier des visiteurs]** le champ s’affiche. Il est automatiquement renseigné pour créer un lien vers le **[!UICONTROL Visiteurs]** dossier. Ce champ vous permet de choisir où stocker les profils des visiteurs.
 
 ![](assets/anonymous_environment_option.png)
 

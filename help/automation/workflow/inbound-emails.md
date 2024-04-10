@@ -26,7 +26,7 @@ Le premier onglet de l&#39;activité **Réception d&#39;email** permet de rensei
 
    * **[!UICONTROL Utiliser un compte externe]**
 
-     Lorsque cette option est activée, vous pouvez sélectionner un compte externe POP3 au lieu de saisir les paramètres de connexion. La variable **[!UICONTROL Compte externe]** spécifie le compte POP3 externe à utiliser pour se connecter au service de messagerie. Ce champ n’est visible que si l’option &quot;Utiliser un compte externe&quot; est activée.
+     Lorsque cette option est activée, vous pouvez sélectionner un compte POP3 externe au lieu de saisir les paramètres de connexion. Le **[!UICONTROL Compte externe]** Le champ indique le compte POP3 externe à utiliser pour la connexion au service de messagerie. Ce champ n&#39;est visible que si l&#39;option &#39;Utiliser un compte externe&#39; est activée.
 
      Si cette option n&#39;est pas sélectionnée, vous devez indiquer les paramètres suivants :
 
@@ -67,7 +67,7 @@ Le premier onglet de l&#39;activité **Réception d&#39;email** permet de rensei
 
 1. **[!UICONTROL Planning]**
 
-   Pour définir un planning pour l’activité, cliquez sur le bouton **[!UICONTROL Planification]** onglet et vérification **[!UICONTROL Planifier l’exécution]**. Cliquez sur le bouton **[!UICONTROL Modifier]** pour configurer le planning.
+   Pour définir un planning pour l&#39;activité, cliquez sur le lien **[!UICONTROL Planification]** tabulation et vérification **[!UICONTROL Planifier l’exécution]**. Cliquez sur le lien **[!UICONTROL Modification]** pour configurer le planning.
 
    Le paramétrage du planning est le même que celui de l&#39;activité de planification. Pour plus d&#39;informations, consultez la section [Planificateur](scheduler.md).
 

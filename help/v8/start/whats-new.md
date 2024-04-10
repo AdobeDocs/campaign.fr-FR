@@ -52,7 +52,7 @@ Adobe Campaign v8 offre aux spécialistes marketing des fonctionnalités riches
 
 Les fonctionnalités incluent un profil intégré qui fournit une vue unique du client. Gestion des données et segmentation pour la création d’audiences de campagne à grande échelle. Gestion des workflows cross-canal pour automatiser les campagnes multicanal et de plusieurs vagues. Messagerie intégrée, ce qui réduit la dépendance à l’égard des FAI coûteux. Rapports et analyses pour comprendre le comportement des clients et les performances des campagnes.
 
-[En savoir plus sur la gestion des campagnes](campaigns.md)
+[En savoir plus sur la gestion de campagnes](campaigns.md)
 
 
 ### Connexions à Adobe Experience Platform {#connection-to-aep}
@@ -90,7 +90,7 @@ Adobe Campaign peut désormais tirer parti des technologies de base de données 
 
 [Campaign v8 Enterprise](../architecture/enterprise-deployment.md) présente le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud. Avec cette nouvelle offre, Campaign v8 simplifie la gestion des données : aucun index n&#39;est requis sur la base de données cloud. Il vous suffit de créer les tables et de copier les données pour démarrer. [!DNL Snowflake] est la base de données Cloud de Campaign. Grâce à sa vitesse et son endurance, vous ne constaterez aucun pic de surcharge d’activité du système. La technologie de base de données cloud ne nécessite pas de maintenance spécifique pour garantir le niveau de performances attendu.
 
-[En savoir plus sur le déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md)
+[En savoir plus sur le déploiement d’Enterprise (FFDA)](../architecture/enterprise-deployment.md)
 
 
 ## Interface d&#39;administrateur en libre-service{#self-service-admin}
@@ -105,6 +105,6 @@ Grâce à une interface utilisateur intuitive, les administrateurs peuvent surve
 
 ![](assets/subdomain1.png)
 
-[En savoir plus sur le Panneau de Contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"}
+[En savoir plus sur le Panneau de Contrôle de Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"}
 
 

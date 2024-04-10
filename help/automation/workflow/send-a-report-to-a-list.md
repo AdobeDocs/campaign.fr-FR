@@ -114,7 +114,7 @@ Pour créer ce workflow, procédez comme suit :
 
    Renseignez les variables suivantes :
 
-   * **var reportName**: saisissez le nom interne du rapport entre guillemets doubles. Dans ce cas, le nom interne de la variable **Indicateur de suivi** Le rapport est &quot;deliveryFeedback&quot;.
+   * **var reportName**: saisissez entre guillemets le nom interne du rapport. Dans ce cas, le nom interne du **Indicateur de tracking** Le rapport est « deliveryFeedback ».
    * **var path** : saisissez le chemin de sauvegarde du fichier (« tmp »), le nom que vous souhaitez lui donner (« deliveryFeedback ») et son extension (« .pdf »). Ici, nous avons utilisé le nom interne comme nom de fichier. Les valeurs doivent être comprises entre guillemets et séparées par le caractère « + ».
 
      >[!CAUTION]

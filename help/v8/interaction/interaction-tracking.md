@@ -52,4 +52,4 @@ Les statistiques sont classées selon trois critères :
 
   ![](assets/offer_report_perdeliveries.png)
 
-Les données peuvent être filtrées selon les différents critères disponibles dans la section supérieure du rapport. Une fois que vous avez sélectionné les critères souhaités, cliquez sur le bouton **[!UICONTROL Actualiser]** pour les appliquer au rapport.
+Les données peuvent être filtrées en fonction des différents critères disponibles dans la section supérieure du rapport. Une fois les critères sélectionnés, cliquez sur le lien **[!UICONTROL Actualiser]** lien pour les appliquer au rapport.

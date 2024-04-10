@@ -36,17 +36,17 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
    ![](assets/query_editor_02.png)
 
-1. Dans le **[!UICONTROL Données à extraire]** , sélectionnez l’option **[!UICONTROL Domaine de l&#39;email]** et **[!UICONTROL Clé Principal]** des champs. Exécutez un comptage sur la variable **[!UICONTROL Clé Principal]** champ .
+1. Dans le **[!UICONTROL Données à extraire]** , sélectionnez la **[!UICONTROL Domaine d’e-mail]** et **[!UICONTROL clé de Principal]** champs. Exécuter un comptage sur le **[!UICONTROL clé de Principal]** champ .
 
 1. Sélectionnez l&#39;option **[!UICONTROL Gérer les groupements (GROUP BY + HAVING)]**.
 
    ![](assets/query_editor_nveau_29.png)
 
-1. Dans le **[!UICONTROL Tri]** , triez les domaines d’email dans l’ordre décroissant. Pour ce faire, cochez la case **[!UICONTROL Oui]** dans le **[!UICONTROL Tri descendant]** colonne . Cliquez sur **[!UICONTROL Suivant]**.
+1. Dans le **[!UICONTROL Tri]** trier les domaines d’e-mail par ordre décroissant. Pour ce faire, cochez **[!UICONTROL Oui]** dans le **[!UICONTROL Tri descendant]** colonne. Cliquez sur **[!UICONTROL Suivant]**.
 
    ![](assets/query_editor_nveau_70.png)
 
-1. Dans **[!UICONTROL Filtrage des données]**, sélectionnez **[!UICONTROL Critères de filtrage]**. Accédez au **[!UICONTROL Eléments cibles]** puis cliquez sur **[!UICONTROL Suivant]**.
+1. In **[!UICONTROL Filtrage des données]**, sélectionnez **[!UICONTROL Conditions de filtrage]**. Accéder à **[!UICONTROL Éléments de la cible]** fenêtre et clic **[!UICONTROL Suivant]**.
 1. Dans la fenêtre **[!UICONTROL Groupement des données]**, sélectionnez le **[!UICONTROL Domaine de l&#39;email]** en cliquant sur **[!UICONTROL Ajouter]**.
 
    C&#39;est dans cette fenêtre que s&#39;opère le regroupement (GROUP BY) : cette fenêtre ne s&#39;affiche que si l&#39;option **[!UICONTROL Gérer les groupements (GROUP BY + HAVING)]** a été sélectionnée.

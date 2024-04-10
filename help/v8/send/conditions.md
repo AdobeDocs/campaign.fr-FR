@@ -43,7 +43,7 @@ Pour créer un contenu conditionnel en fonction de la valeur d’un champ, respe
 
 1. Cliquez sur l’onglet **[!UICONTROL Prévisualisation]** pour visualiser le contenu du message en fonction du ou de la destinataire de la diffusion. Sélectionnez un ou une destinataire pour lequel/laquelle la condition est remplie et vérifiez le contenu. Sélectionnez ensuite un ou une autre destinataire pour lequel/laquelle la condition n’est pas remplie et vérifiez à nouveau.
 
-Vous pouvez ajouter d’autres cas et définir un contenu différent en fonction des valeurs d’un ou de plusieurs champs. Pour ce faire, utilisez **[!UICONTROL Contenu conditionnel > Sinon]** et **[!UICONTROL Contenu conditionnel > Sinon si]**. Ces expressions sont configurées de la même manière que la fonction **if** expression.
+Vous pouvez ajouter d’autres cas et définir un contenu différent en fonction des valeurs d’un ou de plusieurs champs. Pour ce faire, utilisez **[!UICONTROL Contenu conditionnel > Sinon]** et **[!UICONTROL Contenu conditionnel > Sinon si]**. Ces expressions sont configurées de la même manière que le **si** expression.
 
 >[!CAUTION]
 >
@@ -54,7 +54,7 @@ Vous pouvez ajouter d’autres cas et définir un contenu différent en fonction
 
 Découvrez dans l’exemple ci-dessous comment créer un e-mail multilingue. Le contenu s’affiche dans une langue ou une autre, selon la préférence linguistique du ou de la destinataire.
 
-1. Créez un email et sélectionnez la population cible. Dans cet exemple, la condition d’affichage d’une version ou d’une autre sera basée sur la variable **Langue** valeur du profil du destinataire. Ces valeurs sont définies sur **EN**, **FR**, **ES**.
+1. Créez un e-mail et sélectionnez la population cible. Dans cet exemple, la condition d&#39;affichage d&#39;une version ou d&#39;une autre sera basée sur **Langue** valeur du profil du destinataire. Ces valeurs sont définies sur **FR**, **FR**, **ES**.
 1. Dans le contenu HTML de l&#39;email, cliquez sur l&#39;onglet **[!UICONTROL Source]** et collez le code suivant :
 
    ```

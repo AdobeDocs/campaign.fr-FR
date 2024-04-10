@@ -50,7 +50,7 @@ En conséquence :
 * Le statut des diffusions n’est pas mis à jour instantanément : un processus technique s’exécute sur l’instance Marketing pour mettre à jour les statuts des diffusions dans les délais impartis.
 
 
-En savoir plus sur l&#39;envoi de BAT de messages transactionnels lors de la transition de la v7 vers la version [cette page](../send/transactional-template.md#transition-from-v7).
+En savoir plus sur l&#39;envoi de BAT de messages transactionnels lors de la transition depuis la v7 [cette page](../send/transactional-template.md#transition-from-v7).
 
 
 ## [!DNL Campaign] et [!DNL Snowflake] {#ac-gs-snowflake}
@@ -66,7 +66,7 @@ En savoir plus sur [!DNL Campaign] Architecture v8 dans [cette page](../architec
 
 Les utilisateurs de Campaign se connectent via leur Adobe ID uniquement. Le même Adobe ID est utilisé pour conserver tous vos abonnements Adobe et produits associés à un seul compte, pour toutes les solutions Adobe Experience Cloud.
 
-Découvrez comment vous connecter à [!DNL Campaign] in [cette page](connect.md).
+Découvrez comment vous connecter à [!DNL Campaign] dans [cette page](connect.md).
 
 ## Analyse des données avec des cubes{#adobe-reporting}
 

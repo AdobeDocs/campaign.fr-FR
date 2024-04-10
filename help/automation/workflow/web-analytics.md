@@ -32,7 +32,7 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
   <tr> 
    <td> <span class="uicontrol">Identification des contacts convertis</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsFindConverted</span> <br /> </td> 
-   <td> Ce workflow répertorie les visiteurs du site qui ont concrétisé leur achat après une campagne de remarketing. Les données récupérées par ce workflow sont accessibles dans le <span class="uicontrol">Rapport Efficacité du remarketing</span> (Voir à ce sujet ). <br /> </td> 
+   <td> Ce workflow répertorie les visiteurs du site ayant concrétisé leur achat après une campagne de remarketing. Les données récupérées par ce workflow sont accessibles dans le <span class="uicontrol">Rapport Efficacité du remarketing</span> (Reportez-vous à ). <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Purge des événements</span> <br /> </td> 

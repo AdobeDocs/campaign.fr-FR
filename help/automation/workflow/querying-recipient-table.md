@@ -36,19 +36,19 @@ Dans cet exemple, vous allez récupérer les noms et emails des destinataires do
 
 Pour réaliser cet exemple, les étapes sont les suivantes :
 
-1. Cliquez sur **[!UICONTROL Outils > Requêteur générique...]** et sélectionnez la variable **Destinataires** (**nms:recipient**). Cliquez ensuite sur **[!UICONTROL Suivant]**.
-1. Choisissez : **[!UICONTROL Nom]**, **[!UICONTROL Prénom]**, **[!UICONTROL Email]**, **[!UICONTROL Ville]** et **[!UICONTROL Numéro de compte]**. Ces champs sont ajoutés à **[!UICONTROL Colonnes de sortie]**. Cliquez ensuite sur **[!UICONTROL Suivant]**.
+1. Clic **[!UICONTROL Outils > Requêteur générique...]** et choisissez le **Destinataires** (**nms:recipient**). Cliquez ensuite sur **[!UICONTROL Suivant]**.
+1. Choisir : **[!UICONTROL Nom]**, **[!UICONTROL Prénom]**, **[!UICONTROL E-mail]**, **[!UICONTROL Ville]** et **[!UICONTROL Numéro de compte]**. Ces champs sont ajoutés à **[!UICONTROL Colonnes de sortie]**. Cliquez ensuite sur **[!UICONTROL Suivant]**.
 
    ![](assets/query_editor_03.png)
 
-1. Triez les colonnes pour les afficher dans l’ordre approprié. Ici, nous allons trier les numéros de compte par ordre décroissant et les noms par ordre alphabétique. Cliquez ensuite sur **[!UICONTROL Suivant]**.
+1. Triez les colonnes pour les afficher dans le bon ordre. Ici, nous voulons trier les numéros de compte par ordre décroissant et les noms par ordre alphabétique. Cliquez ensuite sur **[!UICONTROL Suivant]**.
 
    ![](assets/query_editor_04.png)
 
 1. Dans la fenêtre **[!UICONTROL Filtrage des données]**, affinez votre recherche en sélectionnant **[!UICONTROL Critères de filtrage]**. Cliquez sur **[!UICONTROL Suivant]**.
 1. La fenêtre **[!UICONTROL Elément de la cible]** sert à renseigner les paramètres de filtrage.
 
-   Définissez la condition de filtrage suivante : destinataires dont le domaine de l&#39;email est égal à &quot;orange.co.uk&quot;. Pour cela, choisissez **Domaine de l&#39;email (@email)** dans le **[!UICONTROL Expression]** colonne, choisissez **égal à** dans le **[!UICONTROL Opérateur]** et saisissez &quot;orange.co.uk&quot; dans la colonne **[!UICONTROL Valeur]** colonne .
+   Définissez la condition de filtrage suivante : destinataires avec un domaine d&#39;email égal à « orange.co.uk ». Pour ce faire, choisissez **Domaine d’e-mail (@email)** dans le **[!UICONTROL Expression]** colonne, choisissez **égal à** dans le **[!UICONTROL Opérateur]** et saisissez « orange.co.uk » dans le champ **[!UICONTROL Valeur]** colonne.
 
    ![](assets/query_editor_05.png)
 

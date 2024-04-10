@@ -327,10 +327,10 @@ Pour effectuer des fonctionnalités de filtre avancé, utilisez des fonctions po
 
 Découvrez comment créer des requêtes avancées dans ces exemples complets :
 
-* Découvrez comment cibler sur des attributs de destinataires simples dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=fr){target="_blank"}.
+* Découvrez comment cibler des attributs de destinataires simples dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=fr){target="_blank"}.
 * Découvrez comment filtrer les destinataires non contactés au cours des 7 derniers jours dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=fr){target="_blank"}.
-* Découvrez comment récupérer la liste des opérateurs peut être filtrée par Compte actifs dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=fr){target="_blank"}.
-* Découvrez comment créer une audience d’anniversaire dans  [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=fr){target="_blank"}.
+* Découvrez comment la liste des opérateurs peut être filtrée par comptes actifs dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=fr){target="_blank"}.
+* Découvrez comment créer une audience e-mail d’anniversaire dans  [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=fr){target="_blank"}.
 
 
 ### Paramètres avancés des filtres prédéfinis {#param-for-data-filters}

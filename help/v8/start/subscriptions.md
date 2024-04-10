@@ -16,7 +16,7 @@ ht-degree: 92%
 
 Utilisez Adobe Campaign pour créer et surveiller vos services d’information, tels que les newsletters, et pour gérer les abonnements/désabonnements à ces services. Plusieurs services peuvent être définis en parallèle, par exemple : des newsletters spécialisées pour certaines catégories de produits, certains thèmes ou des zones particulières d’un site Web, des abonnements à divers types de messages d’alerte et des notifications en temps réel.
 
-Découvrez comment créer un service d’information, envoyer une newsletter et gérer les processus d’inscription et de désinscription [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=fr){target="_blank"}
+Découvrez comment créer un service d’information, envoyer une newsletter et gérer l’opt-in et l’opt-out dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=fr){target="_blank"}
 
 Pour abonner (opt-in) un profil à un service, les options disponibles sont les suivantes :
 
@@ -69,7 +69,7 @@ Pour désabonner (opt-out) un profil d&#39;un service, les options disponibles s
 **Désabonnement automatique**
 
 * Définissez une limite de durée du service d&#39;information : les destinataires seront automatiquement désabonnés à l&#39;expiration de la période de validité. Cette période est spécifiée dans l&#39;onglet Édition des propriétés du service. Elle est exprimée en jours.
-* Configurez un workflow de désinscription pour une population.
+* Configurer un workflow de désinscription pour une population.
 
 Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=fr#unsubscribing-a-recipient-from-a-service){target="_blank"}.
 

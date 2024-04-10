@@ -27,6 +27,6 @@ Dans le champ **[!UICONTROL Durée]**, la valeur peut être exprimée dans l&#39
 
   L&#39;unité par défaut est le jour (**j**).
 
-* Si, par exemple, les paramètres régionaux sont définis sur &quot;Français&quot; : **s** pour les secondes, **mn** pour les minutes, **h** pour les heures, **j** pour les jours, **m** pour les mois, **a** pour des années. Au moment de la validation, la valeur est automatiquement convertie en unité la plus lisible, comme dans l&#39;exemple ci-dessus. **90 s** a été converti en **30 min**.
+* Tandis que si, par exemple, les paramètres régionaux sont définis sur « Français » : **s** pour les secondes, **mn** pendant minutes, **h** pendant heures, **j** pour les jours, **m** pendant des mois, **un** depuis des années. Lors de la validation, la valeur est automatiquement convertie dans l&#39;unité la plus lisible, comme dans l&#39;exemple ci-dessus **années 90** a été converti en **1mn 30s**.
 
   L&#39;unité par défaut est le jour (**j**).

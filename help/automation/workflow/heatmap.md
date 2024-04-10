@@ -31,7 +31,7 @@ Elle permet plus précisément aux administrateurs de la plateforme d’effectue
 
 >[!NOTE]
 >
->En plus de la variable **Carte thermique des workflows**, vous pouvez créer un workflow qui vous permettra de surveiller l’état d’un ensemble de workflows et d’envoyer des messages récurrents aux superviseurs. Pour plus de détails, reportez-vous à la [section dédiée](workflow-supervision.md).
+>En plus du **Carte thermique des workflows**, vous pouvez créer un workflow qui vous permettra de surveiller le statut d&#39;un ensemble de workflows et d&#39;envoyer des messages récurrents aux superviseurs. Pour plus de détails, reportez-vous à la [section dédiée](workflow-supervision.md).
 
 L’utilisation de la carte thermique des workflows demande une bonne maîtrise des concepts suivants : [Workflows](about-workflows.md), [Activités](activities.md) et [Bonnes pratiques relatives aux workflows](workflow-best-practices.md).
 

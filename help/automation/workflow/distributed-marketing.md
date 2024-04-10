@@ -28,7 +28,7 @@ Le workflow présenté ci-dessous est installé par défaut avec le module **Mar
   <tr> 
    <td> <span class="uicontrol">Traitements sur le marketing distribué</span> <br /> </td> 
    <td> <span class="uicontrol">centralLocalMgt</span> <br /> </td> 
-   <td> Ce workflow lance le traitement associé à l'utilisation du module de marketing distribué. Il lance la création des opérations locales et gère les notifications relatives aux commandes et à la disponibilité des kits d'opération.<br /> </td> 
+   <td> Ce workflow démarre le traitement associé à l’utilisation du module Marketing distribué . Il lance la création des campagnes locales et gère les notifications liées aux commandes et à la disponibilité des kits d'opération.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

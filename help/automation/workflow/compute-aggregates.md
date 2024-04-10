@@ -30,7 +30,7 @@ Dans cet exemple, vous allez comptabiliser le nombre de destinataires domicilié
 
 Pour réaliser cet exemple, les étapes sont les suivantes :
 
-1. Dans **[!UICONTROL Données à extraire]**, définissez un nombre pour la clé primaire (comme illustré dans l’exemple précédent). Ajoutez la variable **[!UICONTROL Genre]** dans la colonne de sortie. Vérifiez les **[!UICONTROL Groupe]** dans le **[!UICONTROL Genre]** colonne . Ainsi, les destinataires seront regroupés par sexe.
+1. In **[!UICONTROL Données à extraire]**, définissez un nombre pour la clé primaire (comme illustré dans l&#39;exemple précédent). Ajouter le **[!UICONTROL Sexe]** dans la colonne de sortie. Vérifier le **[!UICONTROL Groupe]** dans le **[!UICONTROL Sexe]** colonne. Ainsi, les destinataires seront regroupés par genre.
 
    ![](assets/query_editor_nveau_27.png)
 

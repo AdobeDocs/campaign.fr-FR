@@ -43,7 +43,7 @@ Vous pouvez utiliser la table des destinataires par défaut avec les champs d&#3
 * [Étendez une table existante](extend-schema.md) avec de nouveaux champs. Par exemple, vous pouvez ajouter un nouveau champ « Fidélité » au tableau des destinataires.
 * [Créez un tableau](create-schema.md), par exemple un tableau « Achat » répertoriant tous les achats effectués par chaque profil de la base de données, et liez-le au tableau des destinataires.
 
-Découvrez les bonnes pratiques lors de l’utilisation du modèle de données Campaign dans [cette section](datamodel-best-practices.md).
+Découvrez les bonnes pratiques d’utilisation du modèle de données Campaign dans [cette section](datamodel-best-practices.md).
 
 ## Table des profils intégrée {#ootb-profiles}
 
@@ -60,7 +60,7 @@ Il est possible d&#39;étendre la table des destinataires, mais sans réduire le
 
 Découvrez comment étendre un schéma existant dans [cette section](extend-schema.md).
 
-Découvrez des exemples d’extensions de table de destinataires intégrées dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#extending-a-table){target="_blank"}
+Découvrez des exemples d’extensions de table de destinataires intégrées dans . [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#extending-a-table){target="_blank"}
 
 Vous pouvez également utiliser une autre table des destinataires, mieux adaptée à vos besoins professionnels ou fonctionnels. Cette méthode s&#39;accompagne de limitations et est décrite dans [cette section](custom-recipient.md).
 
@@ -73,4 +73,4 @@ En savoir plus sur la stratégie et les mécanismes de réplication dans [cette 
 **Rubriques connexes** 
 
 Découvrez comment importer des profils dans [cette section](../start/import.md)
-En savoir plus sur les audiences de Campaign dans [cette section](../start/audiences.md)
+En savoir plus sur les audiences Campaign dans [cette section](../start/audiences.md)

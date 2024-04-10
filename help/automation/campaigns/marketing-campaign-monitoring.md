@@ -30,7 +30,7 @@ Les informations accessibles à partir de ce sous-onglet sont les suivantes :
 
 * Le sous-onglet **[!UICONTROL Validations]** contient l&#39;ensemble du processus de validation de la campagne. Vous pouvez vérifier les détails et les commentaires.
 
-* Les workflows créés pour générer les messages pour les prestataires s&#39;affichent dans le **[!UICONTROL Traitements sur les prestataires]** sous-onglet. Cliquez sur le bouton **[!UICONTROL Détail]** pour afficher le workflow sélectionné.
+* Les workflows créés pour générer les messages aux fournisseurs s&#39;affichent dans le **[!UICONTROL Traitements sur les prestataires]** sous-onglet. Cliquez sur le lien **[!UICONTROL Détail]** pour afficher le workflow sélectionné.
 
 ## Suivre les diffusions {#delivery-tracking}
 

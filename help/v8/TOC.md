@@ -8,7 +8,7 @@ breadcrumb-title: Documentation Campaign v8
 source-git-commit: 782362d6d742a3121d3b87b26c2f1481731ff694
 workflow-type: tm+mt
 source-wordcount: '594'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 98%
    + [SMS](send/sms.md)
    + Notifications push {#push}
       + [Créer et envoyer des notifications push](send/push.md)
-      + [Créer une diffusion push Android enrichie](send/rich-push.md)
+      + [Créer une diffusion de notification push Android enrichie](send/rich-push.md)
       + [Configurer le canal de notification push](send/push-settings.md)
       + [Configurer vos notifications push avec la collecte de données](send/push-data-collection.md)
    + [Messagerie LINE](send/line.md)

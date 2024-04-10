@@ -15,7 +15,7 @@ ht-degree: 81%
 
 Une activité de type **Partage** permet de partitionner une cible en plusieurs sous-ensembles. La cible est construite avec tous les résultats reçus : toutes les activités antérieures doivent donc être terminées pour que cette activité soit exécutée.
 
-Cette activité ne déclenche pas d&#39;union des populations entrantes. Si plusieurs transitions arrivent sur une activité de partage, il est recommandé d&#39;insérer une **[!UICONTROL Union]** activité devant.
+Cette activité ne déclenche pas d’union des populations entrantes. Si plusieurs transitions se trouvent dans une seule activité de partage, nous vous recommandons d’insérer une **[!UICONTROL Union]** l’activité devant lui.
 
 Consultez un exemple d&#39;utilisation de l&#39;activité de partage dans [cette section](targeting-workflows.md#create-subsets-using-the-split-activity).
 
@@ -40,7 +40,7 @@ Pour créer un sous-ensemble :
    >
    >Vous pouvez filtrer les données contenues dans deux bases externes (FDA) maximum.
 
-1. Vous pouvez spécifier le nombre maximum d&#39;enregistrements à extraire de la cible pour créer le sous-ensemble. Pour ce faire, cochez la case **[!UICONTROL Limiter les enregistrements sélectionnés]** et cliquez sur l’option **[!UICONTROL Modifier...]** lien.
+1. Vous pouvez spécifier le nombre maximal d’enregistrements à extraire de la cible pour créer le sous-ensemble. Pour ce faire, vérifiez le **[!UICONTROL Limiter les enregistrements sélectionnés]** , puis cliquez sur le bouton **[!UICONTROL Modifier...]** lien.
 
    Un assistant vous permet de choisir le mode de sélection des enregistrements de ce sous-ensemble. [En savoir plus](#limit-the-number-of-subset-records).
 
@@ -70,7 +70,7 @@ Si vous ne souhaitez pas utiliser l&#39;ensemble de la population d&#39;un sous-
 1. Sélectionnez le type de limitation de votre choix :
 
    * **[!UICONTROL Activer le tirage aléatoire]** : cette option applique un tirage aléatoire aux enregistrements. Le tirage aléatoire appliqué dépend du moteur de base de données.
-   * **[!UICONTROL Conserver les premiers suite à un tri]**: cette option permet de définir une limitation en fonction d&#39;un ou plusieurs ordres de tri. Si vous sélectionnez l’option **[!UICONTROL Age]** champ comme critère de tri et 100 comme limite, seuls les 100 destinataires les plus jeunes seront conservés.
+   * **[!UICONTROL Conserver les premiers suite à un tri]**: cette option permet de définir une limitation suivant un ou plusieurs ordres de tri. Si vous sélectionnez **[!UICONTROL Âge]** champ comme critère de tri et 100 comme limite, seuls les 100 destinataires les moins âgés seront conservés.
    * **[!UICONTROL Conserver les premiers suite à un tri (critères, aléatoire)]** : cette option regroupe les deux options précédentes. Elle permet de définir une limitation suivant un ou plusieurs ordres de tri puis d&#39;appliquer une sélection aléatoire sur les premiers enregistrements dans le cas où certains enregistrements ont des valeurs égales pour les critères choisis.
 
      Par exemple, si vous choisissez le champ **[!UICONTROL Age]** comme critère de tri, et que vous définissez ensuite une limite de 100, mais que les 2000 destinataires les plus jeunes en base ont tous 18 ans, alors 100 destinataires seront sélectionnés aléatoirement parmi ces 2000.
@@ -113,7 +113,7 @@ Par exemple, si vous choisissez le champ **[!UICONTROL Langue]** comme champ de 
 
    ![](assets/s_user_segmentation_partage_wz4.png)
 
-1. Indiquez enfin les seuils de groupement des données (avec les valeurs fixes ou les pourcentages selon la méthode de groupement sélectionnée précédemment). Pour définir le même seuil pour chaque valeur, par exemple si vous souhaitez définir le nombre d&#39;enregistrements pour chaque langue sur 10, sélectionnez l&#39;option **[!UICONTROL La taille de tous les groupes de données est identique.]** . Pour définir une limite différente pour chaque valeur, sélectionnez la variable **[!UICONTROL Limites par valeur de regroupement]** . Vous pourrez ainsi choisir une autre limitation pour l&#39;anglais, le français, etc.
+1. Indiquez enfin les seuils de groupement de données (en utilisant les valeurs fixes ou les pourcentages en fonction de la méthode de groupement sélectionnée précédemment). Pour définir le même seuil pour chaque valeur, par exemple si vous souhaitez définir à 10 le nombre d’enregistrements pour chaque langue, sélectionnez la variable **[!UICONTROL Tous les regroupements de données ont la même taille]** option. Pour définir une limite différente pour chaque valeur, sélectionnez l’option **[!UICONTROL Limitations par valeur de groupement]** option. Cela vous permettra de choisir une limitation différente pour l’anglais, le français, etc.
 
    ![](assets/s_user_segmentation_partage_wz5.png)
 
@@ -145,7 +145,7 @@ Le modèle de répartition de données permet de limiter le nombre d&#39;enregis
 
    * **[!UICONTROL Libellé]** : libellé du modèle de répartition.
    * **[!UICONTROL Dimension de ciblage]** : renseignez le schéma de ciblage sur lequel la répartition de données sera appliquée, par exemple **[!UICONTROL Destinataire]**. Ce schéma doit toujours être compatible avec les données utilisées dans le workflow de ciblage.
-   * **[!UICONTROL Champ de répartition]**: sélectionnez un champ depuis la dimension de ciblage. Par exemple, si vous sélectionnez l’option **[!UICONTROL Domaine de l&#39;email]** , la liste des destinataires sera répartie par domaine.
+   * **[!UICONTROL Champ de répartition]**: sélection d&#39;un champ à partir de la dimension de ciblage. Par exemple, si vous sélectionnez **[!UICONTROL Domaine d’e-mail]** , la liste des destinataires sera répartie par domaine.
    * **[!UICONTROL Type de répartition]** : sélectionnez la manière dont sera exprimée la valeur de limitation de la cible dans l&#39;onglet **[!UICONTROL Distribution]** : **[!UICONTROL Pourcentage]** ou **[!UICONTROL Fixe]**.
    * **[!UICONTROL Stockage des validations]** : si vous utilisez une activité [Validation en local](local-approval.md) dans votre workflow de ciblage, indiquez le schéma dans lequel seront stockés les résultats de validation. Vous devez spécifier un schéma de stockage pour chaque schéma de ciblage. Si vous utilisez le schéma de ciblage **[!UICONTROL Destinataires]**, saisissez le schéma de stockage par défaut **[!UICONTROL Validation en local d&#39;un destinataire]**.
 
@@ -173,7 +173,7 @@ Le modèle de répartition de données permet de limiter le nombre d&#39;enregis
 
      ![](assets/local_validation_notification_4.png)
 
-   * **[!UICONTROL Interface Web]**: permet de lier une application web à la liste des destinataires. Dans la notification de validation et de retour, chaque destinataire sera cliquable et sera associé à l&#39;application web sélectionnée. La variable **[!UICONTROL Paramètres]** champ (par exemple, **[!UICONTROL recipientId]**) permet de paramétrer le paramètre supplémentaire à utiliser dans l&#39;URL et l&#39;application web.
+   * **[!UICONTROL Interface Web]**: permet d&#39;associer une application web à la liste des destinataires. Dans les notifications de validation et de retour, vous pourrez cliquer sur chaque destinataire qui sera associé à l&#39;application web sélectionnée. Le **[!UICONTROL Paramètres]** champ (par exemple, **[!UICONTROL recipientId]**) permet de configurer le paramètre supplémentaire à utiliser dans l’URL et l’application web.
 
 1. L&#39;onglet **[!UICONTROL Répartition]** permet de définir la liste des valeurs de répartition.
 
@@ -207,7 +207,7 @@ Pour que cette option fonctionne correctement, les données en entrée doivent p
 
 Par exemple si les données sont lues directement depuis une base de données externe telle que Netezza (qui ne supporte pas la notion d&#39;index) via une activité de **[!UICONTROL Chargement (SGBD)]**, le complémentaire généré par l&#39;activité de **[!UICONTROL Partage]** sera incorrect.
 
-Pour éviter cela, vous pouvez faire glisser et déposer un **[!UICONTROL Enrichissement]** activité juste avant la **[!UICONTROL Partage]** activité. Dans le **[!UICONTROL Enrichissement]** , vérifiez les **[!UICONTROL Conserver toutes les données additionnelles de l’ensemble principal]** et spécifier dans les données additionnelles les colonnes que vous souhaitez utiliser pour configurer les filtres du **[!UICONTROL Partage]** activité. Les données de la transition entrante de la **[!UICONTROL Partage]** Les activités sont ensuite stockées localement dans une table temporaire sur le serveur Adobe Campaign et le complémentaire peut être généré correctement.
+Pour éviter cela, vous pouvez faire glisser et déposer une **[!UICONTROL Enrichissement]** activité juste avant le **[!UICONTROL Fractionner]** activité. Dans le **[!UICONTROL Enrichissement]** activité, vérifiez le **[!UICONTROL Conserver toutes les données additionnelles de l&#39;ensemble principal]** et indiquez dans les données additionnelles les colonnes que vous souhaitez utiliser pour configurer les filtres du **[!UICONTROL Fractionner]** activité. Les données de la transition entrante du **[!UICONTROL Fractionner]** Les activités sont ensuite stockées localement dans une table temporaire sur le serveur Adobe Campaign et le complémentaire peut être généré correctement.
 
 L&#39;option **[!UICONTROL Permettre le recouvrement des populations de sortie]** permet de gérer les populations appartenant à plusieurs sous-ensembles :
 
@@ -227,6 +227,6 @@ Chacun des événements entrants doit spécifier une cible définie par ces para
 * schema
 * recCount
 
-Ce triplet de valeurs identifie la cible résultant de l’exclusion. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d’éléments dans la table.
+Cet ensemble de trois valeurs identifie la cible résultant de l’exclusion. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d’éléments dans la table.
 
 La transition associée au complémentaire possède les mêmes paramètres.
