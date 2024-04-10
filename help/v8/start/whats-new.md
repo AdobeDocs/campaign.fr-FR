@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1028'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Affichez l’ensemble de vos clients afin de pouvoir créer rapidement des campa
 
 Adobe Campaign vous aide à créer des profils client à partir des données collectées sur tous vos canaux. Avec ce profil, vous pouvez orchestrer des campagnes sur plusieurs canaux. En connectant tous vos canaux marketing, vous pouvez personnaliser les différents parcours que chaque client suivra de la manière qui lui sera logique.
 
-[En savoir plus sur la gestion des données client](audiences.md)
+[En savoir plus sur la gestion des données client et cliente](audiences.md)
 
 ### Gestion de campagnes la plus performante {#best-in-campaign-mgt}
 
@@ -61,7 +61,7 @@ Adobe Campaign v8 prend en charge les connecteurs de données avec Real-Time CD
 
 En outre, Adobe Campaign v8 est nativement intégré aux fonctionnalités d’orchestration des parcours en temps réel afin que les spécialistes marketing puissent réutiliser les mêmes modèles et fonctionnalités de diffusion dans Adobe Campaign pour interagir avec les clients en temps réel. Ces investissements vont permettre d’optimiser l’expérience client dans Adobe Campaign. Ils débloqueront notamment de nouveaux cas d’utilisation, tels que la possibilité d’ajouter des parcours clients en temps réel personnalisés aux campagnes.
 
-Vous pouvez également configurer l&#39;optimisation de l&#39;heure d&#39;envoi prédictive ainsi que le score d&#39;engagement prédictif grâce à l&#39;IA dédiée au parcours. Cela permet d&#39;augmenter les taux d&#39;ouverture, les clics et les revenus.
+Vous pouvez également configurer l’optimisation de l’heure d’envoi prédictive ainsi que le score d’engagement prédictif grâce à l’IA dédiée au parcours. Cela permet d’augmenter les taux d’ouverture, les clics et les revenus.
 
 [En savoir plus sur les intégrations de Campaign](../connect/integration.md)
 
@@ -105,6 +105,6 @@ Grâce à une interface utilisateur intuitive, les administrateurs peuvent surve
 
 ![](assets/subdomain1.png)
 
-[En savoir plus sur le Panneau de Contrôle de Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"}
+[En savoir plus sur le panneau de contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"}
 
 

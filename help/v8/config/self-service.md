@@ -6,9 +6,9 @@ role: Admin
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '307'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Principaux avantages :
 
 Vous pouvez également utiliser le Panneau de contrôle Campaign pour configurer les paramètres de votre instance, tels que les listes autorisées d’adresses IP, les autorisations d’URL et récupérer des informations sur votre instance.
 
-En savoir plus dans [Documentation sur le Panneau de Contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"}.
+En savoir plus dans la [documentation du Panneau de contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"}.
 
 ## Comment accéder au Panneau de contrôle ? {#ac-control-panel-access}
 
@@ -32,7 +32,7 @@ Le Panneau de contrôle est directement accessible à partir d&#39;Adobe Experi
 
 ## Questions fréquentes sur le panneau de contrôle {#ac-control-faq}
 
-[Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#control-panel){target="_blank"} pour accéder aux questions fréquentes sur le panneau de contrôle Campaign.
+[Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=fr#control-panel){target="_blank"} pour accéder aux questions fréquentes sur le panneau de contrôle Campaign.
 
 ## Gestion SFTP {#ac-control-sftp}
 

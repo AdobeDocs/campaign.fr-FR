@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '994'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Les profils sont centralisés dans une puissante base de données cloud. Il exis
 
 Dans Adobe Campaign, les destinataires sont les profils par défaut ciblés pour l&#39;envoi des diffusions (e-mails, SMS, etc.). Grâce aux données de destinataires stockées dans la base, vous pouvez filtrer la cible recevant toute diffusion donnée et ajouter les données de personnalisation à votre contenu de diffusion. Il existe d&#39;autres types de profils dans la base de données qui sont conçus pour d&#39;autres utilisations. Par exemple, les profils d&#39;adresses de contrôle sont destinés à tester vos diffusions avant leur envoi à la cible finale.
 
-Les notions de base de la gestion des profils sont décrites dans la section [cette section](audiences.md).
+Les notions de base de la gestion des profils sont décrites dans [cette section](audiences.md).
 
 Découvrez comment ajouter des profils à Campaign dans [cette section](import.md).
 
@@ -82,13 +82,13 @@ En savoir plus sur les fonctionnalités de reporting et de tracking dans [cette 
 
 Vous pouvez combiner les fonctionnalités de diffusion et de gestion de campagnes avancées d&#39;Adobe Campaign avec un ensemble de solutions créées pour vous aider à personnaliser l&#39;expérience de vos utilisateurs, notamment Adobe Experience Manager, Adobe Analytics, Adobe Target ou les triggers Adobe Experience Cloud.
 
-Découvrez comment intégrer les services et solutions Adobe dans [cette section](../connect/integration.md).
+Découvrez comment intégrer les services et solutions d’Adobe dans [cette section](../connect/integration.md).
 
 ## En savoir plus sur les fonctionnalités de Campaign {#core-capabilities-and-add-ons}
 
 Adobe Campaign vous propose un ensemble de fonctionnalités qui vous permettent d’implémenter et optimiser les fonctionnalités de marketing conversationnel selon vos besoins et votre architecture. Certaines de ces fonctionnalités sont intégrées. D&#39;autres dépendent de l&#39;installation d&#39;un package au sein de votre configuration. Une description détaillée du produit est disponible ici : [Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html).
 
-Vous connaissez déjà Campaign Classic ? Découvrez les principales différences entre Campaign Classic et Campaign v8 sur [cette page](v7-to-v8.md).
+Vous connaissez déjà Campaign Classic ? Découvrez les principales différences entre Campaign Classic et Campaign v8 sur [cette page](v7-to-v8.md).
 
 **Voir aussi**
 
