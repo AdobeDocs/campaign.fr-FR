@@ -5,10 +5,10 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 99cb937a475997aae714a67b1f9f91c6bae932f4
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 85%
+source-wordcount: '525'
+ht-degree: 73%
 
 ---
 
@@ -41,15 +41,20 @@ Découvrez comment créer une audience dans un workflow de campagne dans [cette 
 
 ## Profils actifs {#active-profiles}
 
-Un profil actif est un profil avec lequel le client ou la cliente a tenté de communiquer au cours des 12 derniers mois via n’importe quel canal. Les mesures de licence sont basées sur des profils actifs. En savoir plus dans la [description du produit Adobe Campaign](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+
+Un profil actif est un profil avec lequel le client a tenté de communiquer au cours des 12 derniers mois via n’importe quel canal.
+
+Conformément à votre contrat, chacune de vos instances Campaign est configurée avec un nombre spécifique de profils actifs comptabilisés à des fins de facturation. Reportez-vous à votre dernier contrat pour connaître le nombre de profils actifs achetés. En savoir plus dans la [description du produit Adobe Campaign](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 Vous pouvez surveiller le nombre de profils actifs utilisés sur votre instance directement à partir du panneau de contrôle de Campaign. Pour plus d’informations à ce sujet, consultez la [documentation du Panneau de contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=fr){target="_blank"}.
 
->[!CAUTION]
->
->* Un profil qui a été ciblé par plusieurs diffusions n’est comptabilisé qu’une seule fois.
->
->* Les profils ciblés dans le cadre du marketing social sur X (anciennement Twitter) ne sont pas pris en compte comme profils actifs.
+
+Les barrières de sécurité et limitations suivantes s’appliquent :
+
+* Un profil qui a été ciblé par plusieurs diffusions n’est comptabilisé qu’une seule fois.
+* Les profils ciblés dans le cadre du marketing social sur X (anciennement Twitter) ne sont pas pris en compte comme profils actifs.
+* Le comptage est basé sur la clé primaire du destinataire. Par conséquent, si un profil est présent dans deux tables de destinataires différentes, il peut être compté deux fois comme profil actif.
+
 
 ## Confidentialité et consentement{#privacy-and-consent}
 
