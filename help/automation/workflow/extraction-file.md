@@ -5,9 +5,9 @@ description: En savoir plus sur l’activité de workflow d’extraction (fichie
 feature: Workflows, Data Management Activity
 role: User
 exl-id: 8510e879-2862-491f-bc52-ca8f56105932
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 014743172e09d46cb83b2fe2befaa8f3c54669b1
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '338'
 ht-degree: 100%
 
 ---
@@ -46,8 +46,6 @@ Pour paramétrer l&#39;extraction des données, les étapes sont les suivantes 
    ![](assets/s_advuser_extract_file_agregate_values.png)
 
 Vous pouvez définir un post-traitement à exécuter pendant l’extraction des données, ce qui vous permet de compresser ou de chiffrer les fichiers. Pour ce faire, la commande souhaitée doit être ajoutée dans l’onglet **[!UICONTROL Script]** de l’activité.
-
-Pour plus d’informations à ce sujet, consultez cette section : [Compresser ou chiffrer un fichier](use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ![](assets/postprocessing_dataextraction.png)
 
