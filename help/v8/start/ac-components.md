@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '533'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -54,4 +54,4 @@ La communication globale entre les processus de Campaign est décrite dans le di
 
 L&#39;utilisateur se connecte au serveur applicatif Campaign à l&#39;aide du protocole HTTP. Toutes les données et informations sont gérées dans la base de données Campaign. Si un développeur Campaign effectue des modifications de configuration, celles-ci sont capturées dans la base de données. Si un spécialiste marketing crée une nouvelle campagne, toutes les informations et données relatives à cette nouvelle campagne sont également gérées dans la base de données. Lorsqu&#39;un spécialiste marketing exécute une campagne, les diffusions par e-mail sont envoyées aux profils à partir du serveur Campaign via le serveur SMTP. Lorsque les profils interagissent avec des diffusions par e-mail, telles que l&#39;ouverture de l&#39;e-mail, ces données de tracking sont renvoyées au serveur de tracking.
 
-[En savoir plus sur les processus de Campaign](../architecture/general-architecture.md#dev-env).
+[En savoir plus sur les processus Campaign](../architecture/general-architecture.md#dev-env).

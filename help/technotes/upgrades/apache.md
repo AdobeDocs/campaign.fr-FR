@@ -4,9 +4,9 @@ title: Note technique - Adobe Campaign - Mise à jour de sécurité de la versi
 description: Adobe Campaign - Mise à jour de sécurité de la version Apache
 exl-id: 68e42fe4-7fb6-4b53-9f39-e77374e3753d
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '466'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ Adobe Campaign fonctionne avec des outils tiers, qui bénéficient de mises à j
 
 Adobe Campaign comprend Apache Tomcat, qui agit comme point d’entrée dans le serveur d’applications via HTTP et est intégré au serveur web Apache. L’Apache Software Foundation a publié le serveur HTTP Apache 2.4.53. Cette version corrige des vulnérabilités qui peuvent permettre à une personne malveillante de prendre le contrôle d’un système affecté. En savoir plus sur la page d’[Annonce d’Apache 2.4.53](https://downloads.apache.org/httpd/Announcement2.4.html){target="_blank"}.
 
-L’équipe d’Adobe Campaign procédera à la mise à niveau de sécurité de la version Apache d’ici le **15 juin 2022**. Celle-ci permettra d’atténuer cette vulnérabilité Apache et de rendre votre environnement d’instance plus sûr. Cette mise à niveau s’applique à tous les clients de Campaign Classic v7 Managed Services, Campaign v8 et de Campaign Standard qui s’exécutent sur une version vulnérable du serveur HTTP Apache. Si vous êtes concerné, Adobe vous a déjà contacté pour vous informer de cette mise à niveau.
+L’équipe d’Adobe Campaign procédera à la mise à niveau de sécurité de la version Apache d’ici le **15 juin 2022**. Celle-ci permettra d’atténuer cette vulnérabilité Apache et de rendre votre environnement d’instance plus sûr. Cette mise à niveau s’applique à tous les clients de Campaign Classic v7 Managed Services, Campaign v8 et de Campaign Standard qui s’exécutent sur une version vulnérable du serveur HTTP Apache. Si vous êtes concerné, Adobe vous a déjà contacté pour vous informer de cette mise à niveau.
 
 Cette mise à niveau s’exécutera automatiquement en dehors de vos heures de bureau normales, afin que vous puissiez continuer à utiliser le service Campaign sans aucune interruption.
 
-Vos instances hors production seront mises à niveau par nos équipes, suivies par vos instances de production. Comme il s’agit d’un processus de mise à niveau automatique relevant d’Adobe, aucune action n’est requise de votre part. Toutefois, si vous rencontrez des problèmes, contactez [Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=fr#support){target="_blank"}.
+Vos instances hors production seront mises à niveau par nos équipes, suivies par vos instances de production. Comme il s’agit d’un processus de mise à niveau automatique relevant d’Adobe, aucune action n’est requise de votre part. Toutefois, en cas de problème, contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=fr#support){target="_blank"}.
 
 
 >[!NOTE]
