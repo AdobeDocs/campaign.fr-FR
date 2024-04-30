@@ -6,9 +6,9 @@ role: Developer
 level: Intermediate
 exl-id: 96693af9-50db-4298-ae02-c238d35e52b4
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '315'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Pour mettre en œuvre le mécanisme d&#39;évaluation de Campaign sur une table 
    </srcSchema>
    ```
 
-   En savoir plus sur la création de schémas personnalisés dans [cette page](../dev/create-schema.md).
+   Pour en savoir plus sur la création de schémas personnalisés, consultez [cette page](../dev/create-schema.md).
 
 1. Enregistrez et mettez à jour la structure de la base de données.  [En savoir plus](../dev/update-database-structure.md)
 

@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '705'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Il est possible d&#39;étendre la table des destinataires, mais sans réduire le
 
 Découvrez comment étendre un schéma existant dans [cette section](extend-schema.md).
 
-Découvrez des exemples d’extensions de table de destinataires intégrées dans . [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#extending-a-table){target="_blank"}
+Découvrez des exemples d’extensions de table de destinataires intégrées dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#extending-a-table){target="_blank"}.
 
 Vous pouvez également utiliser une autre table des destinataires, mieux adaptée à vos besoins professionnels ou fonctionnels. Cette méthode s&#39;accompagne de limitations et est décrite dans [cette section](custom-recipient.md).
 
@@ -68,9 +68,9 @@ Vous pouvez également utiliser une autre table des destinataires, mieux adapté
 
 Pour une meilleure compréhension de la gestion des tables dans Campaign v8, notez que, dans le cadre d&#39;une [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), les tables sont répliquées entre Campaign et sa base de données Cloud Snowflake.
 
-En savoir plus sur la stratégie et les mécanismes de réplication dans [cette section](../architecture/replication.md).
+Pour en savoir plus sur la stratégie et les mécanismes de réplication, consultez [cette section](../architecture/replication.md).
 
-**Rubriques connexes** 
+**Rubriques connexes**.
 
-Découvrez comment importer des profils dans [cette section](../start/import.md)
-En savoir plus sur les audiences Campaign dans [cette section](../start/audiences.md)
+Découvrez comment importer des profils dans [cette section](../start/import.md). 
+Pour en savoir plus sur les audiences Campaign, consultez [cette section.](../start/audiences.md)

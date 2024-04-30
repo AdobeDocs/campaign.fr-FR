@@ -6,9 +6,9 @@ role: Admin, Developer
 level: Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '636'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ Découvrez l’architecture de la messagerie transactionnelle sur [cette page](.
 
 >[!NOTE]
 >
->En tant qu’utilisateur Managed Cloud Service, [Adobe de contact](../start/campaign-faq.md#support) pour installer et configurer la messagerie transactionnelle de Campaign dans votre environnement.
+>En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour installer et configurer la messagerie transactionnelle de Campaign dans votre environnement.
 
-## Définition des autorisations {#mc-permissions}
+## Définir les autorisations {#mc-permissions}
 
 Pour créer de nouveaux utilisateurs et utilisatrices pour les instances d’exécution Message Center hébergées sur Adobe Cloud, contactez la personne chargée de votre transition Adobe. Les utilisateurs et les utilisatrices de Message Center sont des opérateurs et des opératrices spécifiques qui ont besoin d’autorisations dédiées pour accéder aux dossiers « Événements en temps réel » (nmsRtEvent).
 

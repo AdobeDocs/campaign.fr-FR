@@ -5,9 +5,9 @@ role: Admin, User
 level: Beginner
 exl-id: 09a80d45-e600-4ebe-89a0-1ca9f7651ac9
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '102'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,4 +19,4 @@ Accélérez la diffusion des campagnes en associant Campaign à Adobe Workfront
 Les étapes de configuration de cette intégration sont détaillées dans la documentation Adobe Workfront.
 
 
-[Modules Adobe Campaign dans Adobe Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/adobe-campaign-classic-connector.html?lang=fr){target="_blank"}.
+[Modules Adobe Campaign dans Adobe Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/adobe-campaign-classic-connector.html?lang=fr){target="_blank"}.

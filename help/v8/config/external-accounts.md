@@ -6,9 +6,9 @@ role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1123'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -39,18 +39,18 @@ Adobe Campaign utilise les comptes techniques suivants pour activer et exécute
 
 >[!NOTE]
 >
->L’authentification OAuth 2.0 de Microsoft Exchange Online pour la fonctionnalité POP3 est disponible à partir de Campaign v8.3. Pour vérifier votre version, voir [cette section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
+>L’authentification OAuth 2.0 de Microsoft Exchange Online pour la fonctionnalité POP3 est disponible à partir de Campaign v8.3. Pour vérifier votre version, consultez [cette section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
 >
 
 Le compte externe **Mails rebonds** spécifie le compte externe POP3 à utiliser pour se connecter au service de messagerie. Tous les serveurs configurés pour l&#39;accès POP3 peuvent être utilisés pour recevoir les retours d&#39;e-mail.
 
-En savoir plus sur les e-mails entrants dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=fr){target="_blank"}.
+Pour en savoir plus sur les e-mails entrants, consultez [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=fr){target="_blank"}.
 
 ![](assets/bounce_external_1.png)
 
 Pour configurer le compte externe **[!UICONTROL Mails rebonds (defaultPopAccount)]** :
 
-* **[!UICONTROL Serveur]** - URL du serveur POP3
+* **[!UICONTROL Serveur]** - URL du serveur POP3.
 
 * **[!UICONTROL Port]** : numéro de port de la connexion POP3. Le port par défaut est 110.
 
@@ -73,7 +73,7 @@ Pour configurer le compte externe **[!UICONTROL Mails rebonds (defaultPopAccount
 
 Pour configurer un environnement externe POP3 à l’aide de Microsoft OAuth 2.0, cochez la case **[!UICONTROL Microsoft OAuth 2.0]** et renseignez les champs suivants :
 
-* **[!UICONTROL Client Azure]** - L’ID Azure (ou l’ID de répertoire (client)) se trouve dans le **Essentiels** liste déroulante de la présentation de votre application dans le portail Azure.
+* **[!UICONTROL Locataire Azure]** - L’identifiant Azure (ou identifiant de répertoire, ou de locataire) se trouve dans le menu déroulant **Essentiels** de la vue d’ensemble de votre application dans le portail Azure.
 
 * **[!UICONTROL ID du client Azure]** : ID du client (ou ID d’application (cliente)) se trouvant dans le menu déroulant **Essentiels** de la présentation de votre application dans le portail Azure.
 
@@ -93,15 +93,15 @@ Dans le contexte des messages transactionnels, les instances d’exécution sont
 
 ## Accès aux comptes externes de systèmes externes {#external-syst-external-accounts}
 
-* **Base de données externe (FDA)** - Le **Base externe** Le compte externe de type permet d’établir la connexion à une base de données externe via Federated Data Access (FDA). En savoir plus sur l’option Federated Data Access (FDA) dans [cette section](../connect/fda.md).
+* **Base de données externe (FDA)** - Le compte externe de type **Base de données externe** permet de se connecter à une base de données externe via Federated Data Access (FDA). En savoir plus sur l’option Federated Data Access (FDA) dans [cette section](../connect/fda.md).
 
   Les bases de données externes compatibles avec Adobe Campaign v8 sont répertoriées dans la [matrice de compatibilité](../start/compatibility-matrix.md).
 
 * **X (anciennement Twitter)** : le compte externe de type **Twitter** permet de connecter Campaign à votre compte X, afin de publier des messages en votre nom. En savoir plus sur l’intégration X dans [cette section](../connect/ac-tw.md).
 
-## Comptes externes d&#39;intégration de solutions Adobe {#adobe-integration-external-accounts}
+## Comptes externes d’intégration de solutions Adobe {#adobe-integration-external-accounts}
 
-* **Adobe Experience Cloud** - Le **[!UICONTROL Adobe Experience Cloud]** Le compte externe est utilisé pour implémenter le service Identity Management d’Adobe (IMS) pour se connecter à Adobe Campaign. Apprenez-en davantage sur le service Identity Management (IMS) d’Adobe dans [cette section](../start/connect.md#logon-to-ac).
+* **Adobe Experience Cloud** - Le compte externe **[!UICONTROL Adobe Experience Cloud]** permet d’implémenter Adobe Identity Management Service (IMS) pour se connecter à Adobe Campaign. Apprenez-en davantage sur le service Identity Management (IMS) d’Adobe dans [cette section](../start/connect.md#logon-to-ac).
 
 * **Web Analytics** : compte externe **[!UICONTROL Web Analytics (Adobe Analytics)]** permettant de configurer le transfert de données d’Adobe Analytics vers Adobe Campaign. Pour en savoir plus sur l’intégration Adobe Campaign - Adobe Analytics, consultez [cette page](../connect/ac-aa.md).
 
@@ -116,7 +116,7 @@ Dans le contexte des messages transactionnels, les instances d’exécution sont
 
 ## Comptes externes de transfert de données {#transfer-data-external-accounts}
 
-Ces comptes externes peuvent être utilisés pour importer ou exporter des données vers Adobe Campaign à l’aide d’une activité de workflow **[!UICONTROL Transfert de fichier.]** En savoir plus sur **Transfert de fichier** dans les workflows dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=fr){target="_blank"}.
+Ces comptes externes peuvent être utilisés pour importer ou exporter des données vers Adobe Campaign à l’aide d’une activité de workflow **[!UICONTROL Transfert de fichier.]** Pour en savoir plus sur le **transfert de fichiers** dans les workflows, consultez [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=fr){target="_blank"}.
 
 * **FTP et SFTP** : compte externe **FTP** permettant de configurer et de tester l’accès à un serveur en dehors d’Adobe Campaign. Pour configurer des connexions avec des systèmes externes comme des serveurs SFTP ou FTP 898 utilisés pour les transferts de fichiers, vous pouvez créer vos propres comptes externes.
 
@@ -128,7 +128,7 @@ Ces comptes externes peuvent être utilisés pour importer ou exporter des donn�
 
 * **Amazon Simple Storage Service (S3)** - Le connecteur **AWS S3** peut être utilisé pour importer ou exporter des données vers Adobe Campaign à l’aide d’une activité de workflow **[!UICONTROL Transfert de fichier]**. Lors de la configuration de ce nouveau compte externe, vous devez indiquer les informations suivantes :
 
-   * **[!UICONTROL Serveur de compte AWS S3]**: URL de votre serveur, renseignée comme suit :   `<S3bucket name>.s3.amazonaws.com/<s3object path>`
+   * **[!UICONTROL Serveur de compte AWS S3]** : l’URL de votre serveur, renseignée comme suit : `<S3bucket name>.s3.amazonaws.com/<s3object path>`
 
    * **[!UICONTROL ID de la clé d’accès AWS]** : découvrez comment trouver votre ID de clé d’accès AWS dans la [documentation Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
 

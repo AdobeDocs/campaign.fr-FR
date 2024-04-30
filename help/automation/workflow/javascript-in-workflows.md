@@ -6,9 +6,9 @@ feature: Workflows
 role: Developer
 exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1690'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Ces exemples montrent comment vous pouvez utiliser le code JavaScript dans un wo
 * [Déclenchement d’un workflow, à l’aide d’une méthode SOAP statique](#trigger-example)
 * [Interaction avec la base de données, à l’aide d’une méthode SOAP non statique](#interact-example)
 
-[En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=fr){target="_blank"} à propos des méthodes SOAP statiques et non statiques.
+[En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=fr){target="_blank"} sur les méthodes SOAP statiques et non statiques.
 
 Dans ces exemples, l’extension ECMAScript pour XML (E4X) est utilisée. Avec cette extension, vous pouvez combiner des appels JavaScript et des primitives XML dans le même script.
 
@@ -273,7 +273,7 @@ for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-La boucle comprend une variable de destinataire locale. L’e-mail de chaque destinataire renvoyé dans la collection de destinataires est imprimé. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=fr){target="_blank"} à propos du `logInfo` fonction.
+La boucle comprend une variable de destinataire locale. L’e-mail de chaque destinataire renvoyé dans la collection de destinataires est imprimé. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=fr){target="_blank"} sur la fonction `logInfo`.
 
 #### Résultats d’une opération `getIfExists`
 
@@ -613,7 +613,7 @@ Cette vidéo présente un exemple d’utilisation d’une méthode d’API non s
 
 * [Exemples d’appels SOAP](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=fr){target="_blank"}
 * Méthodes :
-   * [Créer](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=fr){target="_blank"}
+   * [Create](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=fr){target="_blank"}
    * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=fr){target="_blank"}
    * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=fr){target="_blank"}
    * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=fr){target="_blank"}

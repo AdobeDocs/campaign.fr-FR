@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1061'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Une fois la connexion OAuth en place, l’étape suivante consiste à créer une
 
    ![](assets/ac-lp-source.png){width="70%"}
 
-1. Configurez la connexion selon vos besoins. Des informations détaillées sur la configuration d’une connexion API HTTP sont disponibles dans [Documentation sur les sources Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=fr){target="_blank"}.
+1. Configurez la connexion selon vos besoins. Des informations détaillées sur comment configurer la connexion API HTTP sont disponibles dans [Documentation sur les sources Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=fr){target="_blank"}.
 
    À l’étape d’**[!UICONTROL Authentification]**, basculez sur l’option **[!UICONTROL Activer l’authentification]** pour vous authentifier à l’aide du jeton d’accès généré précédemment par le biais de l’intégration OAuth.
 
@@ -98,7 +98,7 @@ Parcourez les onglets ci-dessous pour découvrir les deux méthodes :
 
 >[!TAB Ajouter des options à l’aide d’une activité de code JavaScript]
 
-Pour configurer automatiquement ces options lors de l’exécution de votre workflow de pages de destination, ajoutez une activité de **[!UICONTROL code JavaScript]** à votre workflow avec le code ci-dessous. [Découvrez comment configurer une activité Code JavaScript](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html?lang=fr#JavaScript-code){target="_blank"}.
+Pour configurer automatiquement ces options lors de l’exécution de votre workflow de pages de destination, ajoutez une activité de **[!UICONTROL code JavaScript]** à votre workflow avec le code ci-dessous. [Découvrez comment configurer une activité de code JavaScript](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html?lang=fr#JavaScript-code){target="_blank"}.
 
 Lors de l’exécution du workflow, les options sont automatiquement créées dans la console Campaign avec les valeurs fournies.
 
@@ -344,5 +344,5 @@ Voici un exemple d’une page de destination et d’une activité de code JavaSc
 ### Informations supplémentaires
 
 * [Configurer une activité de code JavaScript](../../automation/workflow/sql-code-and-javascript-code.md#javascript-code)
-* [Création d’une landing page](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=fr){target="_blank"}
+* [Créer une page de destination](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=fr){target="_blank"}
 * [Gérer les abonnements et les désabonnements](../start/subscriptions.md)

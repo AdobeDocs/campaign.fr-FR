@@ -6,9 +6,9 @@ feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1125'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Le module **Gestion des réseaux sociaux (Social Marketing)** vous permet d’i
 
 >[!NOTE]
 >
->En tant qu’utilisateur Managed Cloud Service, [Adobe de contact](../start/campaign-faq.md#support) pour connecter Campaign à X. L’élément  **Gestion des réseaux sociaux (Social Marketing)** Le module complémentaire doit être installé sur votre environnement, par le biais du package dédié, et le compte externe par Twitter doit être configuré.
+>En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour connecter Campaign à X. Le module complémentaire **Gestion des réseaux sociaux (Marketing des médias sociaux)** doit être installé sur votre environnement, par le biais du module dédié, et le compte externe Twitter doit être configuré.
 
 
 Pour configurer Adobe Campaign afin de publier des posts sur vos comptes X, vous devez déléguer à Adobe Campaign les droits d’écriture sur ces comptes. Pour cela, vous devez effectuer les actions suivantes :
@@ -45,7 +45,7 @@ Campaign utilise la version 1.1 de l’API X. Pour l’utiliser, vous devez dem
 Une fois que vous avez reçu l’autorisation d’accès élevé, créez une application X pour permettre à Adobe Campaign de créer des publications sur votre compte X. Pour ce faire, procédez comme suit :
 
 1. Connectez-vous à votre compte X.
-1. Se connecter à [X portail destiné aux développeurs](https://developer.twitter.com/en/apps){target="_blank"}.
+1. Connectez-vous au [Portail de développement X](https://developer.twitter.com/en/apps){target="_blank"}.
 1. Sélectionnez **Créer une application**.
 1. Laissez-vous guider par l’assistant X.
 1. Pour permettre à Adobe Campaign de créer des publications sur votre compte, modifiez les **Autorisations d’application** dans la section Configuration de l’authentification de l’utilisateur ou de l’utilisatrice de votre application. Sélectionnez **Lecture, écriture et messages directs**.

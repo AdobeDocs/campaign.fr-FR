@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2745'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,9 @@ Le système Adobe Campaign est très flexible et peut être étendu au-delà de
 
 Afin de mieux comprendre le fonctionnement des tables intégrées de Campaign et leurs interactions les unes avec les autres, consultez [cette section](datamodel.md).
 
-Lecture [cette section](schemas.md) pour commencer à utiliser les schémas de Campaign.
+Pour commencer à utiliser les schémas de Campaign, consultez [cette section](schemas.md).
 
-Découvrez comment configurer des schémas d’extension afin d’étendre le modèle de données conceptuel de la base de données Adobe Campaign dans [cette page](extend-schema.md).
+Découvrez sur [cette page](extend-schema.md) comment configurer des schémas d’extension afin d’étendre le modèle de données conceptuel de la base de données Adobe Campaign.
 
 ## Architecture du modèle de données {#data-model-architecture}
 
@@ -175,7 +175,7 @@ Il existe un certain nombre de solutions pour minimiser le besoin d&#39;enregist
 
 Vous pouvez déclarer l&#39;attribut &quot;deleteStatus&quot; dans un schéma. Il est plus efficace de marquer l&#39;enregistrement comme supprimé, puis de différer la suppression au cours de la tâche de nettoyage.
 
-En tant qu’utilisateur Managed Cloud Service, contactez les consultants ou administrateurs techniques Adobe pour en savoir plus sur la conservation des données ou si vous devez définir la conservation des tables personnalisées.
+En tant qu’utilisateur ou utilisatrice Managed Cloud Services, contactez les consultants ou consultantes Adobe, ou les administrateurs ou administratrices techniques Adobe pour en savoir plus sur la conservation des données ou si vous devez configurer la conservation pour des tables personnalisées.
 
 ## Performances {#performance}
 
