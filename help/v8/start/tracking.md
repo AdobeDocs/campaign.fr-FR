@@ -5,10 +5,10 @@ feature: Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: f3de901f-519f-42ae-846c-f20c7cb560df
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: a78019d11a0a2acbd8c0d9ba7c2082c09f90356c
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 100%
+source-wordcount: '677'
+ht-degree: 98%
 
 ---
 
@@ -131,4 +131,4 @@ Les instructions de surveillance des instances sont disponibles dans la [documen
 
 Utilisez l&#39;interface en libre-service du journal d&#39;audit pour surveiller les modifications apportées à votre instance. Le journal d’audit capture, en temps réel, une liste complète d’actions et d’événements se produisant dans votre instance Adobe Campaign. Vous pouvez accéder à un historique des données pour répondre à des questions telles que : ce qui est arrivé à vos workflows et qui les a mis à jour en dernier, ou ce que vos utilisateurs ont fait dans l&#39;instance.
 
-En savoir plus sur le journal d’audit dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html?lang=fr#accessing-audit-trail){target="_blank"}
+En savoir plus sur le Suivi dans ce [page](../reporting/audit-trail.md){target="_blank"}

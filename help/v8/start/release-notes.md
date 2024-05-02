@@ -5,21 +5,58 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 3a63539bc6bb20fa79bdac76dd60efe7b232458b
+source-git-commit: 39a3412ab2fae2f45768598feffb7e5078c6acac
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 100%
+source-wordcount: '909'
+ht-degree: 59%
 
 ---
 
 # Dernière version{#latest-release}
 
-Adobe Campaign fait l&#39;objet de mises à jour régulières. Cette fréquence régulière de mise à jour a pour but de vous fournir les dernières fonctionnalités et améliorations. Vous bénéficiez ainsi d&#39;un environnement sécurisé et d&#39;une expérience optimale avec notre produit. Adobe recommande vivement à toute sa clientèle d’effectuer la mise à niveau vers la dernière version. Pour en savoir plus sur les versions de Campaign et les recommandations, consultez [cette page](upgrades.md).
+Adobe Campaign fait l&#39;objet de mises à jour régulières. Cette fréquence régulière de mise à jour a pour but de vous fournir les dernières fonctionnalités et améliorations. Vous bénéficiez ainsi d&#39;un environnement sécurisé et d&#39;une expérience optimale avec notre produit. Adobe recommande vivement à tous les clients et clientes d’effectuer la mise à niveau vers la dernière version.
 
-En tant qu’utilisateur ou utilisatrice de Managed Cloud Services, votre instance est mise à niveau par Adobe avec chaque nouvelle version. Adobe vous contactera et mettra à niveau vos environnements. La console cliente Campaign **doit être mise à niveau vers la même version** que les serveurs Campaign. Découvrez comment mettre à niveau votre console cliente [sur cette page](../start/connect.md#upgrade-ac-console).
+En tant qu’utilisateur ou utilisatrice de Managed Cloud Services, votre instance est mise à niveau par Adobe avec chaque nouvelle version. Adobe vous contactera et mettra à niveau vos environnements. La console cliente Campaign **doit être mise à niveau vers la même version** que les serveurs Campaign. Découvrez comment mettre à niveau votre console cliente sur cette [page](../start/connect.md#upgrade-ac-console).
 
-En outre, en tant que client ou cliente, assurez-vous d’utiliser la dernière version prise en charge des systèmes répertoriés dans la [matrice de compatibilité](compatibility-matrix.md).
+En outre, en tant que client ou cliente, assurez-vous d’utiliser les dernières versions prises en charge des systèmes répertoriés dans la [matrice de compatibilité](compatibility-matrix.md).
 
+## Version 8.7.1 {#release-8-7-1}
+
+_mercredi 30 avril 2024_
+
+>[!AVAILABILITY]
+>
+>Cette version est disponible dans **Disponibilité limitée** (LA). Il est limité aux clients effectuant la migration. **de Adobe Campaign Standard à Adobe Campaign v8** et ne peuvent pas être déployés dans un autre environnement.
+>
+>Reportez-vous aux pages de documentation suivantes : [Transition Campaign Standard vers Campaign v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/release-notes/acs-migration) et [Fonctionnalités pour les utilisateurs de Campaign Standard](https://experienceleague.adobe.com/docs/experience-cloud/campaign/campaign-standard-migration-home.html).
+
+### Nouveautés {#new-8-7-1}
+
+* **Modèles de notification push enrichis** - Vous pouvez désormais envoyer des notifications push enrichies via Android. La notification push enrichie est une forme améliorée de notification mobile qui va au-delà des messages texte simples en incorporant des éléments multimédias tels que des images, des boutons interactifs ou d’autres contenus multimédias enrichis. [En savoir plus](../send/rich-push.md)
+
+* **Marques** - En tant qu’utilisateur migré par un Campaign Standard, vos administrateurs techniques peuvent désormais définir une ou plusieurs marques afin de centraliser les paramètres qui affectent l’identité d’une marque. par exemple : le logo de la marque, le domaine d&#39;URL d&#39;accès aux landing pages ainsi que les paramètres du tracking des messages. Vous pouvez créer ces marques et les associer à des messages ou à des landing pages. Cette configuration est gérée dans des modèles. [En savoir plus](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html)
+
+* **API REST** - En tant qu’utilisateur migré Campaign Standard, vous pouvez utiliser les API REST pour créer des intégrations pour Adobe Campaign et créer votre propre écosystème en interfaçant Adobe Campaign avec le panneau de technologies que vous utilisez. [En savoir plus](https://experienceleague.adobe.com/docs/experience-cloud/campaign/apis/get-started-apis.html)
+
+* **Rapports dynamiques** - En tant qu’utilisateur migré Campaign Standard, vous pouvez accéder aux rapports dynamiques qui fournissent des rapports entièrement personnalisables en temps réel pour mesurer l’impact de vos activités marketing. Ils offrent la possibilité d’accéder aux données de profil, ce qui permet l’analyse démographique par dimensions de profil, telles que le genre, la ville et l’âge, en plus des données de campagne par e-mail fonctionnelles comme les ouvertures et les clics. [En savoir plus](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html)
+
+<!--
+* **New Enhanced security add-on**: To make your network connection more secure and provide improved security for your resources, Adobe Campaign offers a new Enhanced security add-on, which includes two features: Secure CMK integration and Secure VPN tunneling.
+-->
+
+### Mises à jour de compatibilité {#comp-8-7-1}
+
+Databricks est désormais pris en charge en tant que base de données externe avec Adobe Campaign Federated Data Access (FDA). Pour en savoir plus sur le module FDA, consultez [cette page](../connect/fda.md).
+
+### Améliorations générales {#improvements-8-7-1}
+
+* Plusieurs schémas ont été modifiés de 32 à 64 bits. Cela s’applique uniquement aux clients effectuant la migration depuis Campaign Standard. [En savoir plus](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html).
+
+* Dans les tables Campaign, un nouvel indicateur vous permet de gérer les modifications apportées aux attributs lastModified, created et createdBy-id. Lorsque l’indicateur est activé, les valeurs fournies par les utilisateurs à ces attributs sont ignorées. Seules l’heure et l’identifiant du serveur provenant du contexte de l’utilisateur sont utilisés. Lorsque l’indicateur est désactivé, les valeurs fournies par l’utilisateur pour ces attributs sont utilisées. L’indicateur ignoreTimestampsID se trouve dans le fichier serverConf.xml sous le noeud &quot;shared&quot;.
+
+### Correctifs {#fixes-8-7-1}
+
+Les problèmes suivants ont été corrigés dans cette version : NEO-72648, NEO-71534, NEO-71473, NEO-70263, NEO-70195, NEO-69651, NEO-68704 NEO-68192, NEO-67814, NEO-67702, NEO-67620, NEO-66022, NEO-65774, NEO-65633, NEO-641 99, NEO-63706, NEO-63705, NEO-63287, NEO-63197, NEO-62575, NEO-60250, NEO-60192, NEO-5 8596, NEO-58314, NEO-58004, NEO-40054
 
 ## Version 8.6.2 {#release-8-6-2}
 
