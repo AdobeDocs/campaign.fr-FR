@@ -5,9 +5,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 520a7798cd1969e7c29519cbc918b66a44ff2a71
+source-git-commit: c4a289e713d01297a7d38158b3cd4450ceef5276
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '907'
 ht-degree: 59%
 
 ---
@@ -46,7 +46,7 @@ _vendredi 2 mai 2024_
 
 ### Mises à jour de compatibilité {#comp-8-7-1}
 
-Databricks est désormais pris en charge en tant que base de données externe avec Adobe Campaign Federated Data Access (FDA). Pour en savoir plus sur le module FDA, consultez [cette page](../connect/fda.md).
+Databricks est désormais pris en charge en tant que base de données externe avec Adobe Campaign Federated Data Access (FDA). En savoir plus [sur cette page](compatibility-matrix.md#FederatedDataAccessFDA).
 
 ### Améliorations générales {#improvements-8-7-1}
 
