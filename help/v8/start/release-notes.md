@@ -5,9 +5,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: c4a289e713d01297a7d38158b3cd4450ceef5276
+source-git-commit: b4f54deaf35c852012a88d1445268bce9be4e8c1
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '912'
 ht-degree: 59%
 
 ---
@@ -28,7 +28,7 @@ _vendredi 2 mai 2024_
 >
 >Cette version est disponible dans **Disponibilité limitée** (LA). Il est limité aux clients effectuant la migration. **de Adobe Campaign Standard à Adobe Campaign v8** et ne peuvent pas être déployés dans un autre environnement.
 >
->Reportez-vous aux pages de documentation suivantes : [Transition Campaign Standard vers Campaign v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/release-notes/acs-migration) et [Fonctionnalités pour les utilisateurs de Campaign Standard](https://experienceleague.adobe.com/docs/experience-cloud/campaign/campaign-standard-migration-home.html).
+>En tant qu’utilisateur Campaign Standard passant à Campaign v8, reportez-vous à la section [Transition Campaign Standard vers Campaign v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/release-notes/acs-migration) et [Fonctionnalités pour les utilisateurs de Campaign Standard](https://experienceleague.adobe.com/docs/experience-cloud/campaign/campaign-standard-migration-home.html).
 
 ### Nouveautés {#new-8-7-1}
 
