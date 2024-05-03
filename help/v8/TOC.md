@@ -8,7 +8,7 @@ breadcrumb-title: Documentation Campaign v8
 source-git-commit: 574206bd243a2492e512ee62f057da940d29da6e
 workflow-type: tm+mt
 source-wordcount: '599'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -100,7 +100,7 @@ ht-degree: 98%
 + Gestion de la confidentialité et de la sécurité {#privacy}
    + [Gérer les demandes d’accès à des informations personnelles](start/privacy.md)
    + [Directives de sécurité](config/security.md)
-   + [Sécurité renforcée](config/enhanced-security.md)
+   + [Sécurité améliorée](config/enhanced-security.md)
 + Gestion des décisions {#offers}
    + [Prise en main des interactions en temps réel](interaction/interaction.md)
    + [Environnements et architecture](interaction/interaction-architecture.md)
