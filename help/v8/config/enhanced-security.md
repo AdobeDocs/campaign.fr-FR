@@ -1,5 +1,5 @@
 ---
-title: Module complémentaire de sécurité améliorée
+title: Module complémentaire de sécurité amélioré de Campaign
 description: Commencer à utiliser le module complémentaire Campaign de sécurité améliorée
 feature: Configuration
 role: Developer
@@ -7,26 +7,35 @@ level: Experienced
 hide: true
 hidefromtoc: true
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: f9b064dffa0f8792e8653760cb2ac44cfdf43848
-workflow-type: ht
-source-wordcount: '696'
-ht-degree: 100%
+source-git-commit: 042a1cc96b819a1a77442e274defbadeb393eafc
+workflow-type: tm+mt
+source-wordcount: '745'
+ht-degree: 79%
 
 ---
 
-# Module complémentaire de sécurité améliorée {#enhanced-security}
+
+# Module complémentaire de sécurité amélioré de Campaign {#enhanced-security}
 
 Pour sécuriser davantage votre connexion réseau et offrir une meilleure sécurité à vos ressources, [!DNL Adobe Campaign] fournit un nouveau module complémentaire de **Sécurité améliorée**.
 
 Ce module complémentaire comprend deux fonctionnalités réseau :
 
-* [Intégration de CMK sécurisée](#secure-cmk-integration)
+* [Intégration de la clé gérée par le client sécurisée (CMK)](#secure-cmk-integration)
 
-* [Tunnellisation VPN sécurisée](#secure-vpn-tunneling)
+* [Tunneling réseau privé virtuel (VPN) sécurisé](#secure-vpn-tunneling)
 
 Ces fonctionnalités sont décrites ci-dessous.
 
-## Intégration de CMK sécurisée {#secure-cmk-integration}
+Certaines barrières de sécurité et limites relatives aux fonctionnalités de sécurité améliorées sont répertoriées dans cette page. En outre, vous devez vous assurer que tous les cas d’utilisation de l’intégration du CMK sécurisé/de l’optimisation VPN sécurisée fonctionnent.
+
+Une fois ces fonctionnalités implémentées, Adobe contrôle :
+
+* La disponibilité de votre instance, et envoie une alerte si la clé n’est pas disponible.
+
+* Les tunnels VPN, et envoie une alerte en cas de problème.
+
+## Intégration sécurisée de la clé gérée par le client {#secure-cmk-integration}
 
 L’intégration sécurisée de la **Clé gérée par le client ou la cliente (CMK)** vous permet de chiffrer votre instance et vos données à l’aide de votre propre clé via votre compte Amazon Web Services (AWS).
 
@@ -48,7 +57,30 @@ Pour configurer l’intégration de CMK avec Campaign, procédez comme suit :
 
 1. Créez et testez les règles Amazon EventBridge pour permettre la surveillance de vos clés par Adobe. [En savoir plus](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
 
-## Tunnellisation VPN sécurisée {#secure-vpn-tunneling}
+
+### Mécanismes de sécurisation et limitations {#cmk-callouts}
+
+Les barrières de sécurité et limitations suivantes s’appliquent à l’intégration de CMK avec Adobe Campaign v8 :
+
+* L’Adobe ne fournit pas de [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"} compte . Vous devez disposer de votre propre compte AWS et le configurer pour générer et partager votre clé avec Adobe.
+
+* Seules les clés du [Service de gestion de clés AWS](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS) sont prises en charge. Aucune clé générée par le client ou la cliente en dehors du KMS ne peut être utilisée.
+
+* Les temps d’arrêt sont attendus lors de la première configuration. &#x200B;La durée d’interruption dépend de la taille de votre base de données.
+
+* En tant que client, vous détenez et conservez la clé . Vous devez contacter l&#39;Adobe en cas de changement de votre clé. &#x200B;
+
+* Vous pouvez vérifier votre clé à l’aide d’[AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html){target="_blank"} et la révoquer si nécessaire.
+
+* Si vous révoquez, désactivez ou supprimez la clé, vos ressources et votre instance chiffrées deviennent inaccessibles jusqu’à ce que vous annuliez l’action correspondante.
+
+  >[!CAUTION]
+  >
+  >Si vous désactivez la clé et que vous n’annulez pas cette action dans les 7 jours, votre base de données ne pourra être récupérée qu’à partir de la sauvegarde.
+  >
+  >Si vous supprimez la clé et que vous n’annulez pas cette action dans les 30 jours, toutes vos données seront définitivement supprimées et seront perdues.
+
+## Entonnoir de réseau privé virtuel sécurisé {#secure-vpn-tunneling}
 
 La tunnellisation sécurisée de **Réseau privé virtuel (VPN)** est un VPN site à site qui fournit un accès sécurisé à vos données en transit sur un réseau privé, de vos locaux jusqu’à l’instance [!DNL Adobe Campaign].
 
@@ -80,43 +112,10 @@ Pour garantir une utilisation correcte de cette fonctionnalité, suivez les inst
 
 * Configurez un mécanisme de reconnexion de votre côté en cas de déconnexion accidentelle.
 
-## Mécanismes de sécurisation {#callouts}
 
-Quelques mécanismes de sécurisation et limites relatives aux fonctionnalités de sécurité améliorées sont répertoriés ci-dessous.
+### Mécanismes de sécurisation et limitations {#vpn-callouts}
 
-* Assurez-vous que tous les cas d’utilisation de l’intégration sécurisée de CMK/de la tunnellisation VPN sécurisée fonctionnent.
-
-<!--* Adobe shall reach out to you or your technical team if any issue is found on your side.
-
-* Currently, when using Enhanced security features, any communication with Adobe must be performed manually via email.-->
-
-* Adobe surveille ce qui suit :
-
-   * La disponibilité de votre instance, et envoie une alerte si la clé n’est pas disponible.
-
-   * Les tunnels VPN, et envoie une alerte en cas de problème.
-
-### Mécanismes de sécurisation de l’intégration sécurisée de CMK {#cmk-callouts}
-
-* Adobe ne fournit pas de compte AWS. Vous devez disposer de votre propre compte AWS et le configurer pour générer et partager votre clé avec Adobe.
-
-* Seules les clés du [Service de gestion de clés AWS](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS) sont prises en charge. Aucune clé générée par le client ou la cliente en dehors du KMS ne peut être utilisée.
-
-* Un temps d’arrêt est nécessaire pour la première configuration.La durée de l’interruption dépend de la taille de votre base de données.
-
-* En tant que personne propriétaire et responsable de la gestion de la clé, vous devez contacter Adobe en cas de modification de votre clé.
-
-* Vous pouvez vérifier votre clé à l’aide d’[AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html){target="_blank"} et la révoquer si nécessaire.
-
-* Si vous révoquez, désactivez ou supprimez la clé, vos ressources et votre instance chiffrées deviennent inaccessibles jusqu’à ce que vous annuliez l’action correspondante.
-
-  >[!CAUTION]
-  >
-  >Si vous désactivez la clé et que vous n’annulez pas cette action dans les 7 jours, votre base de données ne pourra être récupérée qu’à partir de la sauvegarde.
-  >
-  >Si vous supprimez la clé et que vous n’annulez pas cette action dans les 30 jours, toutes vos données seront définitivement supprimées et seront perdues.
-
-### Mécanismes de sécurisation de la tunnellisation VPN sécurisée {#vpn-callouts}
+Les barrières de sécurité et limitations suivantes s&#39;appliquent à l&#39;intégration du tunneling VPN avec Adobe Campaign v8 :
 
 * Actuellement, seules les bases de données sur site sont prises en charge, telles que<!--Richa to check the list with PM--> :
 
@@ -124,7 +123,7 @@ Quelques mécanismes de sécurisation et limites relatives aux fonctionnalités 
    * Netezza
    * Oracle
    * SAP HANA
-   * SQL Server
+   * SQL Server 
    * Sybase
    * Teradata
    * Hadoop via HiveSQL
