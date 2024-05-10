@@ -8,12 +8,12 @@ breadcrumb-title: Documentation Campaign v8
 source-git-commit: 5312045424d74f8aa1eb44b2f40347553d471a12
 workflow-type: tm+mt
 source-wordcount: '600'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Documentation d’Adobe Campaign v8 (console) {#campaign-v8}
+# Documentation Adobe Campaign v8 (console) {#campaign-v8}
 
 + [Documentation Campaign v8](campaign-home.md)
 + Notes de mise à jour {#releases}
