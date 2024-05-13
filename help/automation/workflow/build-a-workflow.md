@@ -5,10 +5,10 @@ description: Découvrez comment créer un workflow
 feature: Workflows
 role: User
 exl-id: a6003fdb-1035-4b80-8831-73f30a0b4fb2
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: b7fa3dfb1e596d2ea41674278cbe315199264611
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 96%
+source-wordcount: '868'
+ht-degree: 95%
 
 ---
 
@@ -106,7 +106,7 @@ Double-cliquez sur une activité pour la paramétrer ou cliquez avec le bouton d
 >
 >Les activités de workflow d’opérations disponibles sont présentées dans [cette section](activities.md).
 
-Le premier onglet contient la configuration de base. Le **[!UICONTROL Avancé]** contient les paramètres additionnels qui servent notamment à définir le comportement en cas d&#39;erreur, à préciser la durée d&#39;exécution d&#39;une activité et à renseigner un script d&#39;initialisation.
+Le premier onglet contient le paramétrage de base. La variable **[!UICONTROL Avancé]** contient les paramètres supplémentaires, qui sont notamment utilisés pour définir le comportement en cas d’erreur, définir la durée d’exécution d’une activité et saisir un script d’initialisation.
 
 Pour une meilleure compréhension des activités et une meilleure lisibilité des workflows, vous pouvez saisir des commentaires dans les activités.
 
@@ -145,31 +145,3 @@ Vous pouvez dupliquer différents types de workflows. Une fois le workflow dupli
 1. Dans la fenêtre du workflow, modifiez le libellé du workflow.
 1. Cliquez sur **Enregistrer**.
 
-La fonction Dupliquer n&#39;est pas directement disponible dans l&#39;affichage d&#39;une campagne.
-
-Vous pouvez toutefois créer une vue pour afficher tous les workflows de votre instance. Dans cette vue, vous pouvez dupliquer des workflows à l&#39;aide de la fonction **Dupliquer vers**.
-
-**Création d’une vue**
-
-1. Dans **Explorateur**, accédez au dossier dans lequel vous devez créer votre vue.
-1. Cliquez avec le bouton droit de la souris, accédez à **Ajouter un nouveau dossier** > **Processus**, puis sélectionnez **Workflows**.
-
-   ![](assets/add-new-folder-workflows.png)
-
-Le nouveau dossier **Workflows** est créé.
-
-1. Cliquez avec le bouton droit et sélectionnez **Propriétés**.
-1. Sous l&#39;onglet **Restrictions**, activez l&#39;option **Ce dossier est une vue** et cliquez sur **Enregistrer**.
-
-   ![](assets/folder-is-a-view.png)
-
-Le dossier est désormais renseigné avec tous les workflows de votre instance.
-
-**Duplication dʼun workflow de campagne**
-
-1. Sélectionnez un workflow de campagne dans la vue de workflow.
-1. Cliquez avec le bouton droit de la souris sur **Dupliquer vers**.
-1. Modifiez le libellé du workflow.
-1. Cliquez sur **Enregistrer**.
-
-Le workflow dupliqué est affiché dans la vue de workflow.
