@@ -6,7 +6,7 @@ role: User
 level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
-source-git-commit: 5af8753e9412c239ba40997abc5f8e61f405e999
+source-git-commit: 91d19874dfb313a1a470ac4f39cf5af7ca7dfa19
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 72%
@@ -19,7 +19,7 @@ Cette page répertorie les dernières mises à jour de la documentation de [!DNL
 
 ## Mai 2024 {#may-2024}
 
-Une note a été ajoutée pour indiquer que : **[!UICONTROL Modification de la dimension]** et **[!UICONTROL Modification de la source de données]** Les activités ne doivent pas être ajoutées sur une seule ligne et doivent comporter une **[!UICONTROOL Enrichissement]** activité entre elles. En savoir plus dans la section [Modification de la dimension](../../automation/workflow/change-dimension.md) et [Modification de la source de données](../../automation/workflow/change-data-source.md) sections.
+Une note a été ajoutée pour indiquer que : **[!UICONTROL Modification de la dimension]** et **[!UICONTROL Modification de la source de données]** Les activités ne doivent pas être ajoutées sur une seule ligne et doivent comporter une **[!UICONTROL Enrichissement]** activité entre elles. En savoir plus dans la section [Modification de la dimension](../../automation/workflow/change-dimension.md) et [Modification de la source de données](../../automation/workflow/change-data-source.md) sections.
 
 ## Février 2024 {#feb-2024}
 
