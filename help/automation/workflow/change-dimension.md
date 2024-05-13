@@ -5,10 +5,10 @@ description: Découvrez comment utiliser l’activité « Changement de dimensi
 feature: Workflows, Targeting Activity
 role: User
 exl-id: 71f36413-377a-4be6-921c-9e794fe882fd
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 5af8753e9412c239ba40997abc5f8e61f405e999
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 100%
+source-wordcount: '449'
+ht-degree: 89%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 100%
 Utilisez l’activité **[!UICONTROL Changement de dimension]** pour changer la dimension de ciblage au fur et à mesure que vous créez une audience. Cette activité déplace l’axe en fonction du modèle de données et de la dimension d’entrée. Par exemple, vous passez de la dimension « contrats » à la dimension « clients ».
 
 Vous pouvez également utiliser cette activité pour définir les colonnes supplémentaires de la nouvelle cible et définir les critères de déduplication des données.
+
+>[!IMPORTANT]
+>
+>Veuillez noter que la variable **[!UICONTROL Modification de la dimension]** et **[!UICONTROL Modification de la source de données]** Les activités ne doivent pas être ajoutées sur une seule ligne. Si vous devez utiliser les deux activités consécutivement, veillez à inclure une **[!UICONTROOL Enrichissement]** activité entre elles. Cela garantit une bonne exécution et évite les conflits ou erreurs potentiels.
 
 Pour configurer l’activité de **[!UICONTROL changement de dimension]**, respectez les étapes suivantes :
 
