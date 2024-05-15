@@ -4,7 +4,7 @@ description: En savoir plus sur l’activité Modifier la source de données
 feature: Workflows, Data Management, Federated Data Access
 role: User
 exl-id: ca7eca9d-9112-4ea1-9a0c-a24cf6a978e6
-source-git-commit: 5af8753e9412c239ba40997abc5f8e61f405e999
+source-git-commit: b77c37ab9ba9556fdefc563deac6b55ab0d91dc8
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 86%
@@ -26,7 +26,7 @@ Notez que lorsque vous utilisez l&#39;activité **[!UICONTROL Modifier la source
 
 >[!IMPORTANT]
 >
->Veuillez noter que la variable **[!UICONTROL Modification de la dimension]** et **[!UICONTROL Modification de la source de données]** Les activités ne doivent pas être ajoutées sur une seule ligne. Si vous devez utiliser les deux activités consécutivement, veillez à inclure une **[!UICONTROOL Enrichissement]** activité entre elles. Cela garantit une bonne exécution et évite les conflits ou erreurs potentiels.
+>Veuillez noter que la variable **[!UICONTROL Modification de la dimension]** et **[!UICONTROL Modification de la source de données]** Les activités ne doivent pas être ajoutées sur une seule ligne. Si vous devez utiliser les deux activités consécutivement, veillez à inclure une **[!UICONTROL Enrichissement]** activité entre elles. Cela garantit une bonne exécution et évite les conflits ou erreurs potentiels.
 
 Pour utiliser l&#39;activité **[!UICONTROL Modifier la source de données]**, vous devez effectuer les opérations suivantes :
 
