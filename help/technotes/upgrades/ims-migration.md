@@ -7,7 +7,7 @@ exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
 source-git-commit: 5d3dd679eb7a756200d604601c20c3fed5770fc2
 workflow-type: tm+mt
 source-wordcount: '1511'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -145,7 +145,7 @@ Pour tester la connexion, procédez comme décrit dans le [guide des information
 
 ### Étape 8 : mettre à jour les intégrations d’API tierces {#ims-migration-step-8}
 
-Vous devez maintenant mettre à jour toutes les intégrations d’API qui appellent dans Adobe Campaign pour utiliser le compte technique nouvellement créé.
+Vous devez maintenant mettre à jour les intégrations d’API qui effectuent des appels dans Adobe Campaign pour utiliser le compte technique nouvellement créé.
 
 Pour plus d’informations sur les étapes d’intégration des API, y compris un exemple de code pour une intégration fluide, consultez la [documentation sur l’authentification de l’Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 

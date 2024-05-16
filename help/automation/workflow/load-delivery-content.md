@@ -8,7 +8,7 @@ exl-id: 08febcbc-1703-4d36-89e1-32c903618084
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '332'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -49,5 +49,5 @@ Pour cela :
 
    ![](assets/delivery_loadcontent_script.png)
 
-1. Enregistrez et exécutez le workflow. Une nouvelle diffusion avec le contenu chargé est créée sous . **[!UICONTROL Gestion des campagnes]** > **[!UICONTROL Diffusions]**.
+1. Enregistrez et exécutez le workflow. Une diffusion avec le contenu chargé est créé dans **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Diffusions]**.
 

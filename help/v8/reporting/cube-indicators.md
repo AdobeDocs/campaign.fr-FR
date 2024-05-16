@@ -8,7 +8,7 @@ exl-id: 03a6816b-e51a-4eaf-ab76-02d24f97ba46
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '796'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -104,11 +104,11 @@ Dans notre exemple, nous souhaitons afficher uniquement les années, mois et jou
 
 Vous pouvez activer la mise en classe afin de simplifier la lecture des informations et lier les valeurs à une valeur d&#39;énumération.
 
-Sélectionnez l’énumération dans la liste déroulante. Notez que cette énumération doit être définie comme **[!UICONTROL Réservée au compartimentage]**.
+Sélectionnez l&#39;énumération dans la liste déroulante. Notez que cette énumération doit être définie comme **[!UICONTROL Réservée au compartimentage]**.
 
 ![](assets/cube-dimension-with-enum.png)
 
-Seules les valeurs de l’énumération s’affichent. Les autres seront regroupées sous le libellé défini dans le **[!UICONTROL Libellé des autres valeurs]** champ .
+Seules les valeurs présentes dans l&#39;énumération seront affichées. Toutes les autres seront regroupées sous le libellé défini dans le champ **[!UICONTROL Libellé des autres valeurs]**.
 
 Pour plus d’informations, consultez [cette section](customize-cubes.md#dynamically-manage-bins).
 

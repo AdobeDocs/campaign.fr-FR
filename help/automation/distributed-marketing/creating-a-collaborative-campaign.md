@@ -8,7 +8,7 @@ exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '985'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
@@ -80,11 +80,11 @@ Le workflow de l&#39;opération doit intégrer l&#39;activité de type **Validat
 * **[!UICONTROL Contexte de répartition]** : Explicite.
 * **[!UICONTROL Répartition des données]** : Répartition pour les entités locales.
 
-**Répartition pour les entités locales** la répartition de données de type doit être créée. Le modèle de répartition de données permet de limiter le nombre d&#39;enregistrements à partir d&#39;une liste de valeurs de groupement. In **[!UICONTROL Ressources > Gestion de campagne > Répartition des données]**, cliquez sur le lien **[!UICONTROL Nouveau]** pour créer une **[!UICONTROL Répartition des données]**. Pour plus d&#39;informations sur la distribution des données,
+**Répartition des entités locales** La répartition de données de type doit être créée. Le modèle de répartition de données permet de limiter le nombre d&#39;enregistrements à partir d&#39;une liste de valeurs de groupement. Dans **[!UICONTROL Ressources > Gestion de campagnes > Répartition de données]**, cliquez sur l&#39;icône **[!UICONTROL Nouveau]** pour créer une **[!UICONTROL Répartition de données]**. Pour plus d’informations sur la répartition des données,
 
 ![](assets/mkg_dist_data_distribution.png)
 
-Sélectionner le **Dimension de ciblage** et le **[!UICONTROL Champ de répartition]**. Pour le **[!UICONTROL Type d&#39;affectation]**, sélectionnez **Entité locale**.
+Sélectionnez la variable **Dimension de ciblage** et la variable **[!UICONTROL Champ de répartition]**. Pour le **[!UICONTROL Type d&#39;affectation]**, sélectionnez **Entité locale**.
 
 Dans l&#39;onglet **[!UICONTROL Répartition]**, ajoutez un champ pour chaque entité locale et spécifiez la valeur.
 
@@ -152,7 +152,7 @@ En mode automatique, l&#39;entité locale est préinscrite à l&#39;opération e
 
 ### Notifications {#notifications}
 
-Le paramétrage des notifications est identique à celui d&#39;une entité locale. Consultez [cette section](creating-a-local-campaign.md#notifications).
+Le paramétrage des messages de notification est identique à celui d&#39;une opération locale. Consultez [cette section](creating-a-local-campaign.md#notifications).
 
 ## Commande dʼune opération {#ordering-a-campaign}
 
@@ -174,4 +174,4 @@ Pour plus d&#39;informations, consultez la section [Processus de validation](cre
 
 ## Validation dʼune commande {#approving-an-order}
 
-La validation d&#39;une commande d&#39;un kit d&#39;opération collaborative est identique à celle d&#39;une opération locale. Consultez [cette section](creating-a-local-campaign.md#approving-an-order).
+La validation dʼune commande dʼun kit dʼopération collaborative est identique à celle dʼune opération locale. Consultez [cette section](creating-a-local-campaign.md#approving-an-order).

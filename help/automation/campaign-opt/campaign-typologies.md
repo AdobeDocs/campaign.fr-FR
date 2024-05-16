@@ -21,7 +21,7 @@ ht-degree: 99%
 >
 >Selon votre offre, Campaign Optimization peut être inclus ou proposé sous la forme d&#39;un composant additionnel. Vérifiez votre contrat de licence.
 
-## Règles et typologies de typologie {#typology-rules}
+## Règles et typologies {#typology-rules}
 
 Par défaut, Campaign est fourni avec des typologies et des règles de typologie intégrées.
 

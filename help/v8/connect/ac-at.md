@@ -6,7 +6,7 @@ role: Admin, User
 level: Beginner, Intermediate
 exl-id: 891a9a87-f3a4-405a-87ed-a7703be90a67
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1026'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Dans cet e-mail, nous souhaitons que les images changent dynamiquement en foncti
 Les étapes suivantes doivent être complétées dans Adobe Campaign et Adobe Target :
 
 1. [Insertion de l&#39;offre dynamique dans un e-mail](#inserting-dynamic-offer)
-1. [Création d&#39;offres de redirection](#create-redirect-offers)
+1. [Créer des offres de redirection](#create-redirect-offers)
 1. [Création d’audiences](#audiences-target)
 1. [Création d&#39;une activité de ciblage d&#39;expérience](#creating-targeting-activity)
 1. [Prévisualisation et envoi du message](#preview-send-email)

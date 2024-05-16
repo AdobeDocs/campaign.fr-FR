@@ -8,7 +8,7 @@ exl-id: 7825426b-c9e4-49e9-840c-dc6d6d836fbe
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1371'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -122,17 +122,17 @@ Lorsque les validations sont approuvées, l&#39;opération peut démarrer automa
 
 1. Dans l&#39;onglet **[!UICONTROL Général]** vous devez indiquer :
 
-   * le **[!UICONTROL Dimension de ciblage]**. Voici le **Répartition des données** est effectuée sur le **Destinataires**.
-   * le **[!UICONTROL Type de répartition]**. Vous pouvez choisir une **Taille fixe** ou un **Taille en pourcentage**.
-   * le **[!UICONTROL Type d&#39;affectation]**. Sélectionner le **Entité locale** option.
-   * le **[!UICONTROL Type de répartition]**. Ici, c&#39;est le **[!UICONTROL Origine (@origin)]** Champ présent dans la Table des destinataires qui permet d&#39;identifier la relation entre le contact et l&#39;entité locale.
-   * Le **[!UICONTROL Stockage des validations]** champ . Sélectionner le **Validation en local d&#39;un destinataire** option.
+   * la **[!UICONTROL Dimension de ciblage]**. Ici la **Répartition de données** s&#39;effectue sur les **Destinataires**.
+   * le **[!UICONTROL Type de répartition]**. Vous pouvez choisir une **taille fixe** ou une **taille en pourcentage**.
+   * le **[!UICONTROL Type d&#39;affectation]**. Choisissez l&#39;option **Entité locale**.
+   * le **[!UICONTROL Type de répartition]**. Ici, c&#39;est le champ **[!UICONTROL Origine (@origin)]** présent dans la table des Destinataires qui vous permet d&#39;identifier la relation entre le contact et l&#39;entité locale.
+   * Le champ **[!UICONTROL Stockage des validations]**. Choisissez l&#39;option **Validation en local d&#39;un destinataire**.
 
 1. Dans l&#39;onglet **[!UICONTROL Répartition]**, indiquez :
 
    * la **[!UICONTROL Valeur du champ de répartition]**, qui correspond aux entités locales impliquées dans l&#39;opération à venir.
    * le **[!UICONTROL libellé]** de l&#39;entité locale.
-   * le **[!UICONTROL Taille]** (fixe ou en pourcentage). Le **0 valeur par défaut** implique la sélection de tous les destinataires liés à l&#39;entité locale.
+   * la **[!UICONTROL taille]** (fixe ou en pourcentage) choisie. La **valeur par défaut 0** implique la sélection de tous les destinataires liés à l&#39;entité locale.
 
    ![](assets/mkg_dist_use_case_target_valid4.png)
 
@@ -141,7 +141,7 @@ Lorsque les validations sont approuvées, l&#39;opération peut démarrer automa
 #### Création d’une opération collaborative {#creating-a-collaborative-campaign}
 
 1. À partir du dossier **[!UICONTROL Gestion de campagne > Campagne]** de l’explorateur Campaign, créez une **[!UICONTROL campagne collaborative (par validation de la cible)]**.
-1. Dans le **[!UICONTROL Ciblage et workflows]** , créez un workflow pour votre campagne. Celui-ci doit contenir un . **Fractionner** activité dans laquelle **[!UICONTROL Limitation du nombre d’enregistrements]** est défini par **[!UICONTROL Répartition des données]** activité.
+1. Dans l&#39;onglet **[!UICONTROL Ciblages et workflows]**, créez un workflow pour votre opération. Celui-ci doit contenir une activité de **Partage** dont la **[!UICONTROL limitation du nombre d&#39;enregistrements]** est définie par l&#39;activité **[!UICONTROL Répartition de données]**.
 
    ![](assets/mkg_dist_use_case_target_valid5.png)
 
@@ -159,7 +159,7 @@ Lorsque les validations sont approuvées, l&#39;opération peut démarrer automa
 
 Vous pouvez désormais ajouter un **kit de campagne** à partir de l’onglet **[!UICONTROL Campagnes]**.
 
-1. Choisir votre **[!UICONTROL Campagne de référence]**. Dans le **[!UICONTROL Modifier]** de votre package, vous pouvez sélectionner le **[!UICONTROL Mode de validation]** à utiliser pour votre campagne :
+1. Choisissez votre **[!UICONTROL Campagne de référence]**. Dans le **[!UICONTROL Modifier]** de votre package, vous pouvez sélectionner l’onglet **[!UICONTROL Mode de validation]** à utiliser pour votre campagne :
 
    * avec le mode **Manuel**, les entités locales participent à l&#39;opération si elles acceptent l&#39;invitation de l&#39;entité centrale. Elles peuvent supprimer des contacts pré-sélectionnés si elles le souhaitent et une validation d&#39;un manager est obligatoire pour confirmer la participation.
    * avec le mode **Automatique**, les entités locales participent obligatoirement à l&#39;opération, à moins qu&#39;elles ne s&#39;en désinscrivent. Elles peuvent supprimer des contacts sans qu&#39;aucune validation ne soit demandée.

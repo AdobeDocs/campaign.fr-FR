@@ -26,7 +26,7 @@ Une fois créés et configurés, les cubes sont utilisés dans les boîtes de re
 
 Le module Marketing Analytics de Campaign vous permet de :
 
-1. Création de cubes et d’indicateurs
+1. Créer des cubes et des indicateurs
 
    * agrégez et stockez des données dans une table de travail afin de pré-calculer des indicateurs, selon les besoins de lʼutilisateur,
    * réduisez le volume des données impliquées dans les différents calculs utilisés dans les rapports et dans les requêtes, afin dʼoptimiser grandement les temps de calcul des indicateurs.
@@ -34,7 +34,7 @@ Le module Marketing Analytics de Campaign vous permet de :
 
    Pour plus dʼinformations à ce sujet, consultez la section [Création dʼindicateurs](cube-indicators.md).
 
-1. Création de tableaux croisés dynamiques et exploration des données
+1. Créer des tableaux croisés dynamiques et explorer les données
 
    * explorez les données calculées, les mesures configurées,
    * sélectionnez les données à afficher et leur mode dʼaffichage,

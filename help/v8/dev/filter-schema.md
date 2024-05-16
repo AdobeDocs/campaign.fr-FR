@@ -8,7 +8,7 @@ exl-id: e8ad021c-ce2e-4a74-b9bf-a989d8879fd1
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '426'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Ces filtres sont renseignés au niveau de l’**élément** principal des schém
 
 * Restreindre les autorisations de LECTURE et d’ÉCRITURE :
 
-  Ici, le filtre sert à interdire à la fois les autorisations de LECTURE et d’ÉCRITURE sur le schéma à tous les opérateurs. Uniquement le **interne** Compte , représenté par l’expression « $(loginId) !=0 », dispose de ces autorisations.
+  Ici, le filtre sert à interdire à la fois les autorisations de LECTURE et d’ÉCRITURE du schéma à tous les opérateurs. Seul le compte **interne**, représenté par l’expression &quot;$(loginId)!=0&quot;, possède ces autorisations.
 
   ```
   <sysFilter name="readAccess"> 

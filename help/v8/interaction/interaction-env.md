@@ -8,7 +8,7 @@ exl-id: 31f38870-1781-4185-9022-d4fd6a31c94a
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 88%
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ Interaction fonctionne avec deux types d&#39;environnements d&#39;offres :
 
 ![](assets/offer_environments_overview_001.png)
 
-Each **[!UICONTROL Conception]** L’environnement est lié à un(e) **[!UICONTROL En direct]** environnement. Lorsqu&#39;une offre est terminée, son contenu et ses règles d&#39;éligibilité sont soumis à un cycle de validation. Une fois ce cycle terminé, l’offre concernée est automatiquement déployée sur le **[!UICONTROL En direct]** environnement. À partir de maintenant, il sera disponible pour la livraison.
+Chaque **[!UICONTROL Conception]** est lié à un **[!UICONTROL En direct]** environnement. Lorsqu&#39;une offre est terminée, son contenu et ses règles d&#39;éligibilité sont soumis à un cycle de validation. Lorsque le cycle de validation est complet, l’offre concernée est automatiquement déployée dans l’environnement **[!UICONTROL En ligne]**. Dès lors, elle est disponible pour être diffusée.
 
 Par défaut, Campaign comprend un environnement **[!UICONTROL En édition]** et un environnement **[!UICONTROL En ligne]** qui lui est associé. Les deux environnements sont préconfigurés pour cibler la [table de destinataires native](../dev/datamodel.md#ootb-profiles).
 

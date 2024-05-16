@@ -40,7 +40,7 @@ Vous trouverez ci-dessous un exemple d&#39;extension de schéma de destinataire 
 Les principales propriétés sont les suivantes :
 
 * **[!UICONTROL visibleIf]** : cache les champs des métadonnées. Ils ne sont donc pas accessibles dans la vue d&#39;un schéma, la sélection de colonnes ou l&#39;édition d&#39;expressions. Cette propriété ne masque toutefois aucune donnée. Si le nom du champ est saisi manuellement dans une expression, la valeur s&#39;affiche.
-* **[!UICONTROL accessibleIf]** : masque les données (en les remplaçant par des valeurs vides) de la requête obtenue. Si visibleIf est vide, il obtient la même expression que . **[!UICONTROL accessibleIf]**.
+* **[!UICONTROL accessibleIf]** : masque les données (en les remplaçant par des valeurs vides) de la requête obtenue. Si visibleIf est vide, il obtient la même expression que **[!UICONTROL accessibleIf]**.
 
 Les conséquences de l&#39;utilisation de cet attribut dans Adobe Campaign sont les suivantes :
 

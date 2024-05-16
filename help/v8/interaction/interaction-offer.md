@@ -8,7 +8,7 @@ exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ Utilisez l&#39;onglet **[!UICONTROL Contenu]** pour définir le contenu de l&#39
 
 1. Définissez les différents paramètres du contenu de l&#39;offre.
 
-   * **[!UICONTROL Titre]** : indiquez le titre que vous souhaitez faire apparaître dans votre offre. Avertissement : il ne s&#39;agit pas du libellé de l&#39;offre défini dans le champ **[!UICONTROL Général]** onglet.
+   * **[!UICONTROL Titre]** : indiquez le titre que vous souhaitez faire apparaître dans votre offre. Attention, il ne s’agit pas du libellé de l’offre, celui-ci étant défini dans l’onglet **[!UICONTROL Général]**.
    * **[!UICONTROL URL de destination]** : indiquez l&#39;URL de votre offre. Elle doit débuter par &quot;http://&quot; ou &quot;https://&quot;.
    * **[!UICONTROL URL de l&#39;image]** : indiquez une URL ou un chemin d&#39;accès vers l&#39;image de votre offre.
    * **[!UICONTROL Contenu HTML]** / **[!UICONTROL Contenu texte]** : saisissez le corps de votre offre dans l&#39;onglet de votre souhait. Pour générer le tracking, le **[!UICONTROL contenu HTML]** doit être constitué d&#39;éléments HTML intégrables dans un élément de type `<div>`. Par exemple, le résultat d&#39;un élément `<table>` dans la page HTML sera le suivant :
@@ -182,13 +182,13 @@ Creating hypotheses is detailed in [this page](../../campaign/using/about-respon
 
 Vous pouvez maintenant valider et activer l&#39;offre pour la rendre disponible dans l&#39;environnement **En ligne**.
 
-Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=fr#approving-offer-content){target="_blank"}.
+Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=fr#approving-offer-content){target="_blank"}.
 
 ## Gestion de la présentation des offres{#offer-presentation}
 
 Campaign vous permet de contrôler le flux des propositions d&#39;offres à l&#39;aide des règles de présentation. Ces règles, spécifiques à Campaign Interaction, sont des **règles de typologie**. Elles permettent d&#39;exclure les offres en fonction de l&#39;historique des propositions déjà faites à un destinataire. Elles sont référencées dans l&#39;environnement.
 
-Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=fr#managing-offers){target="_blank"}.
+Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=fr#managing-offers){target="_blank"}.
 
 ## Simulation d’offres
 
@@ -196,4 +196,4 @@ Le module **Simulation** vous permet de tester la répartition des offres d&#39;
 
 La simulation prend en compte les contextes et les règles d&#39;éligibilité précédemment appliqués aux offres ainsi que leurs règles de présentation. Il est ainsi possible de tester et d&#39;affiner différentes versions de votre proposition sans utiliser réellement une offre ou solliciter trop ou trop peu une cible, puisque la simulation n&#39;a aucun impact sur les destinataires ciblés.
 
-Pour plus d&#39;informations sur la simulation des offres, voir [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=fr){target="_blank"}.
+Pour plus d’informations sur les simulations d’offres, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=fr){target="_blank"}.

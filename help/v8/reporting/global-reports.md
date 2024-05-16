@@ -7,7 +7,7 @@ exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1880'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -41,17 +41,17 @@ Cliquez sur les noms des rapports pour les afficher. Par défaut, les rapports s
 
 ## Débit des diffusions {#delivery-throughput}
 
-Ce rapport contient les informations relatives au débit de diffusion de l&#39;ensemble de la plateforme sur une période donnée. Pour mesurer la vitesse de diffusion des messages, les critères sont le nombre de messages diffusés par heure et la taille des messages, en bits par seconde. Dans l&#39;exemple ci-dessous, le premier graphique indique, en bleu, les diffusions envoyées avec succès et, en orange, le nombre de messages en erreur.
+Ce rapport contient les informations relatives au débit de diffusion de l’ensemble de la plateforme sur une période donnée. Pour mesurer la vitesse de diffusion des messages, les critères sont le nombre de messages diffusés par heure et la taille des messages, en bits par seconde. Dans l’exemple ci-dessous, le premier graphique indique, en bleu, les diffusions envoyées avec succès et, en orange, le nombre de messages en erreur.
 
 ![](assets/report-toolbar.png)
 
-Vous pouvez paramétrer l&#39;affichage des valeurs en modifiant l&#39;échelle de temps : affichage sur 1 heure, affichage sur 3 heures, affichage sur 24 heures, etc. Clic **[!UICONTROL Actualiser]** pour confirmer votre sélection.
+Vous pouvez paramétrer l’affichage des valeurs en modifiant l’échelle de temps : affichage sur 1 heure, sur 3 heures, sur 24 heures, etc. Cliquez sur **[!UICONTROL Actualiser]** pour confirmer votre sélection.
 
 >[!NOTE]
 >
->Vous pouvez également surveiller le nombre de diffusions envoyées par heure à l’aide du [Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=fr){target="_blank"}.
+>Vous pouvez également surveiller le nombre de diffusions envoyées par heure dans le [Panneau de contrôle](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=fr){target="_blank"}.
 >
->Le Panneau de contrôle est accessible à tous les utilisateurs administrateurs. Les étapes permettant d&#39;octroyer un accès administrateur à un utilisateur sont présentées dans [cette page](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=fr#discover-control-panel){target="_blank"}.
+>Le Panneau de contrôle est accessible à tous les utilisateurs administrateurs et utilisatrices administratrices. Les étapes permettant d’accorder un accès d’administration à un utilisateur ou à une utilisatrice sont présentées sur [cette page](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=fr#discover-control-panel){target="_blank"}.
 >
 
 ## Activités utilisateurs {#user-activities}
@@ -61,7 +61,7 @@ Ce rapport présente la répartition des ouvertures, clics et transactions, par 
 Les options disponibles sont les suivantes :
 
 * **[!UICONTROL Ouvertures]** : Nombre total de messages ouverts. Les emails au format texte ne sont pas pris en compte. [En savoir plus](metrics-calculation.md#tracking-opens-).
-* **[!UICONTROL Clics]** : nombre total de clics sur les liens des diffusions. Les clics sur les liens de désinscription et les pages miroir ne sont pas pris en compte.
+* **[!UICONTROL Clics]** : nombre total de clics sur les liens dans les diffusions. Les clics sur les liens de désinscription et sur les pages miroir ne sont pas pris en compte.
 <!--
 * **[!UICONTROL Transactions]** : Total number of transactions after a message is received. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
@@ -76,7 +76,7 @@ Le **[!UICONTROL Nombre de messages traités]** représente le nombre total de m
 
 >[!NOTE]
 >
->Les erreurs présentées dans ce rapport déclenchent le processus de mise en quarantaine. Pour plus d’informations sur la gestion des quarantaines, voir [Gestion des quarantaines](../send/quarantines.md).
+>Les erreurs présentées dans ce rapport déclenchent le processus de mise en quarantaine. Pour plus d’informations sur la gestion de la quarantaine, consultez [Gestion de la quarantaine](../send/quarantines.md).
 
 La première partie de ce rapport présente la répartition des messages en échec sous la forme d&#39;un tableau de valeurs et d&#39;un graphique.
 
@@ -118,7 +118,7 @@ Vous pouvez déplier chaque ligne du tableau de valeurs en cliquant sur le symbo
 
 >[!NOTE]
 >
->Les noms de domaine affichés dans ce rapport sont définis au niveau des cubes. Pour modifier ces valeurs, modifiez le **[!UICONTROL Logs de diffusion (broadlogrcp)]** cube. Pour plus d’informations, consultez [cette section](gs-cubes.md). Le **[!UICONTROL Autres]** La catégorie comprend les noms de domaine qui n’appartiennent pas à une classe spécifique.
+>Les noms de domaine affichés dans ce rapport sont définis au niveau des cubes. Pour modifier ces valeurs, modifiez le cube des **[!UICONTROL Journaux de diffusion (broadlogrcp)]**. Pour plus d’informations, consultez [cette section](gs-cubes.md). La catégorie **[!UICONTROL Autres]** inclut les noms de domaine qui n’appartiennent pas à une classe spécifique.
 
 ## Navigateurs {#browsers}
 
@@ -249,11 +249,11 @@ Le tableau de valeurs utilise les indicateurs suivants :
 
 ## Tracking des abonnements {#subscription-tracking}
 
-Ce rapport permet d&#39;assurer le suivi des abonnements aux services d&#39;information. Il présente les inscriptions et désinscriptions.
+Ce rapport permet d’assurer la surveillance des abonnements aux services d’information. Il présente les inscriptions et désinscriptions.
 
 ![](assets/service-report.png)
 
-Elle peut être affichée pour un abonnement en cliquant sur le lien **[!UICONTROL Profils et cibles > Services et abonnements]** nœud de la page d’accueil ou de l’explorateur. Sélectionnez l’abonnement souhaité, puis cliquez sur le bouton **[!UICONTROL Rapports]** onglet. Le **[!UICONTROL Tracking des abonnements]** Rapport disponible par défaut. Il permet de voir les tendances d’abonnement et de désabonnement, ainsi que le taux de fidélité sur une période. Vous pouvez configurer la représentation de ces données à partir de la liste déroulante. Clic **[!UICONTROL Actualiser]** pour valider la configuration sélectionnée.
+Il peut être affiché pour un abonnement en cliquant sur le nœud **[!UICONTROL Profils et cibles > Services et abonnements]** de la page d’accueil ou de l’explorateur. Sélectionnez l’abonnement souhaité, puis cliquez sur l’onglet **[!UICONTROL Rapports]**. Le rapport **[!UICONTROL Suivi des abonnements]** est disponible par défaut. Il vous permet de visualiser les tendances d’abonnement et de désinscription, ainsi que le taux de fidélité sur une période. Vous pouvez paramétrer la représentation de ces données dans la liste déroulante. Cliquez sur **[!UICONTROL Actualiser]** pour valider la configuration sélectionnée.
 
 Voir à ce propos [cette page](../start/subscriptions.md).
 

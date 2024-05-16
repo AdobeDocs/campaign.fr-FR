@@ -8,7 +8,7 @@ exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1483'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -144,7 +144,7 @@ L&#39;appel au moteur d&#39;offres est de la forme suivante :
 
 * Le paramètre &quot;**cb**&quot; reçoit le nom de la fonction qui va interpréter le noeud XML renvoyé par le moteur contenant la ou les propositions (callback). Ce paramètre est optionnel.
 
-* Le «**t** » reçoit la valeur de la cible, uniquement pour une interaction identifiée. Ce paramètre peut également être transmis avec le **interactionTarget** variable. Ce paramètre est facultatif.
+* Le paramètre &quot;**t**&quot; reçoit l&#39;identifiant de la cible, pour une interaction identifiée uniquement. Ce paramètre peut également être passé avec la variable **interactionTarget**. Ce paramètre est optionnel.
 
 * le paramètre &quot;**c**&quot; reçoit la liste des noms internes des catégories. Ce paramètre est optionnel.
 
@@ -343,7 +343,7 @@ En réponse à la requête, le service SOAP renverra les paramètres suivants :
 Ajoutez la commande **nms:interaction#UpdateStatus** dans l&#39;URL, puis les paramètres suivants :
 
 * **proposition** : chaîne de caractères, contient l&#39;identifiant de la proposition donnée en sortie lors d&#39;un appel au moteur. Voir [Proposition d&#39;offres](#offer-proposition).
-* **statut**: type string, il indique le nouveau statut de l&#39;offre. Les valeurs possibles sont répertoriées dans le **propositionStatus** énumération, dans **nms:common** schéma. Par exemple, prêt à l’emploi, le nombre 3 correspond au **Acceptée** statut.
+* **status** : nombre, indique le nouveau statut de l&#39;offre. Les valeurs possibles sont listées dans l&#39;énumération **propositionStatus**, dans le schéma **nms:common**. Par exemple, d&#39;usine, le nombre 3 correspond au statut **Acceptée**.
 * **Context** : élément XML, vous permet d&#39;ajouter des informations contextuelles dans le schéma d&#39;espace. Si le schéma utilisé est **nms:interaction**, **`<empty>`** doit être ajouté.
 
 ### Exemple d&#39;utilisation d&#39;un appel SOAP {#example-using-a-soap-call}

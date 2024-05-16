@@ -7,7 +7,7 @@ exl-id: ca7eca9d-9112-4ea1-9a0c-a24cf6a978e6
 source-git-commit: b77c37ab9ba9556fdefc563deac6b55ab0d91dc8
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Notez que lorsque vous utilisez l&#39;activité **[!UICONTROL Modifier la source
 
 >[!IMPORTANT]
 >
->Veuillez noter que la variable **[!UICONTROL Modification de la dimension]** et **[!UICONTROL Modification de la source de données]** Les activités ne doivent pas être ajoutées sur une seule ligne. Si vous devez utiliser les deux activités consécutivement, veillez à inclure une **[!UICONTROL Enrichissement]** activité entre elles. Cela garantit une bonne exécution et évite les conflits ou erreurs potentiels.
+>Veuillez noter que les activités **[!UICONTROL Changer la dimension]** et **[!UICONTROL Modifier la source de données]** ne doivent pas être ajoutées sur une même ligne. Si vous devez utiliser les deux activités consécutivement, veillez à inclure une activité **[!UICONTROL Enrichissement]** entre les deux. Cela garantit une bonne exécution et évite les erreurs et conflits potentiels.
 
 Pour utiliser l&#39;activité **[!UICONTROL Modifier la source de données]**, vous devez effectuer les opérations suivantes :
 

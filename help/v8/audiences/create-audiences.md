@@ -8,7 +8,7 @@ exl-id: 6fbe5616-7b8b-4504-988b-2bbbfd062548
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '866'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -77,9 +77,9 @@ Vous pouvez sélectionner des profils et les ajouter à une liste. Pour ce faire
 
 Sélectionnez l&#39;option **[!UICONTROL Recréer la liste]** pour supprimer le contenu existant de la liste et optimiser la création de la liste (aucune requête n&#39;est nécessaire pour vérifier si les profils sont déjà associés à la liste).
 
-Si vous décochez l&#39;option **[!UICONTROL Ne pas conserver trace de ce traitement dans la base de données]**, vous pouvez sélectionner (ou créer) le dossier d&#39;exécution où seront stockées les informations relatives à ce traitement.
+Si vous décochez l’option **[!UICONTROL Ne pas conserver trace de ce traitement dans la base de données]**, vous pouvez sélectionner (ou créer) le dossier d’exécution où seront stockées les informations relatives à ce traitement.
 
-La section supérieure de la fenêtre permet de surveiller l’exécution. Le **[!UICONTROL Arrêter]** vous permet d’arrêter le processus. Les contacts déjà traités seront associés à la liste.
+La section supérieure de la fenêtre permet de suivre l’exécution. Le bouton **[!UICONTROL Arrêter]** vous permet d’arrêter le traitement. Les contacts déjà traités sont liés à la liste.
 
 Une fois l&#39;exécution terminée, accédez au menu **[!UICONTROL Profils et cibles > Listes]** et sélectionnez la liste : l&#39;onglet **[!UICONTROL Contenu]** affiche les profils associés à cette liste.
 

@@ -8,7 +8,7 @@ exl-id: 36033255-1e75-41c1-9816-126777f7330a
 source-git-commit: 3e95a56825a143a4457ab7ee242208d7daaeb414
 workflow-type: tm+mt
 source-wordcount: '1221'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -57,7 +57,7 @@ Pour équilibrer la charge, vous pouvez répartir les envois en plusieurs lots. 
 
    * Définissez la taille de chaque vague. Par exemple, si vous saisissez **[!UICONTROL 30 %]** dans le champ correspondant, chaque vague représentera 30 % des messages inclus dans l’envoi, à l’exception de la dernière vague qui représentera 10 % des messages.
 
-     Dans le **[!UICONTROL Période]** , spécifiez le délai entre le début de deux vagues consécutives. Par exemple, si vous saisissez **[!UICONTROL 2 j]**, la première vague démarre immédiatement, la deuxième démarre dans deux jours, la troisième dans quatre jours, etc.
+     Dans le champ **[!UICONTROL Période]**, définissez le délai entre le démarrage de deux vagues consécutives. Par exemple, si vous saisissez **[!UICONTROL 2 j]**, la première vague démarre immédiatement, la deuxième démarre dans deux jours, la troisième dans quatre jours, etc.
 
      ![](assets/delivery-waves-size.png)
 
@@ -77,7 +77,7 @@ Pour équilibrer la charge, vous pouvez répartir les envois en plusieurs lots. 
    >
    >Vous devez également prévoir suffisamment de temps pour les reprises lors de la configuration des dernières vagues. <!--See [this section]().-->
 
-1. Pour surveiller vos envois, accédez aux logs de diffusion. Voir [cette page](send.md)<!--ref TBC-->.
+1. Pour suivre vos envois, accédez aux logs de diffusion. Voir [cette page](send.md)<!--ref TBC-->.
 
    Vous pouvez visualiser les diffusions qui ont déjà été envoyées dans les vagues traitées (statut **[!UICONTROL Envoyé]**) et celles à envoyer dans les vagues restantes (statut **[!UICONTROL En attente]**).
 
@@ -89,7 +89,7 @@ Les deux exemples ci-dessous constituent les cas d&#39;utilisation les plus fré
 
   Pour éviter que les emails soient marqués comme spam, vous pouvez augmenter progressivement le volume envoyé à l&#39;aide de vagues. Cela permet d&#39;entamer la phase de démarrage en douceur et de réduire le nombre total d&#39;adresses invalides.
 
-  Pour ce faire, utilisez l’option **[!UICONTROL Planifier les vagues selon un calendrier]**. Par exemple, définissez la première vague sur 10 %, la seconde sur 15 %, etc.
+  Pour ce faire, utilisez l’option **[!UICONTROL Planifier les vagues selon un calendrier]**. Par exemple, définissez la première vague sur 10 %, la deuxième sur 15 %, etc.
 
   ![](assets/delivery-waves-ex-ramp-up.png)
 
@@ -165,7 +165,7 @@ Elle vous permet de différer la diffusion à une date ultérieure ou enregistre
 
   Cliquez sur le bouton **[!UICONTROL Envoyer]** et choisissez **[!UICONTROL Différer la diffusion]** puis lancez l&#39;analyse et confirmez l&#39;envoi. Une fois l&#39;analyse terminée, la cible de la diffusion est prête et les messages seront automatiquement envoyés à la date indiquée.
 
-Les dates et heures sont exprimées dans le fuseau horaire de l&#39;opérateur courant. Le **[!UICONTROL Fuseau horaire]** la liste déroulante située sous le champ de saisie date de contact permet de convertir automatiquement la date et l’heure saisies dans le fuseau horaire sélectionné.
+Les dates et heures sont entendues dans le fuseau horaire de l&#39;opérateur courant. La liste déroulante **[!UICONTROL Fuseau horaire]** située sous la zone de saisie de la date de contact permet d&#39;adapter automatiquement la date et l&#39;heure saisie dans le fuseau horaire sélectionné.
 
 Ainsi, si vous planifiez une diffusion pour qu&#39;elle s&#39;exécute automatiquement à 8h heure de Londres, l&#39;heure est automatiquement convertie dans le fuseau sélectionné :
 

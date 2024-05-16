@@ -8,7 +8,7 @@ exl-id: 3b3fa15f-b16e-42c8-a2e6-03350aee1903
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 70%
+ht-degree: 93%
 
 ---
 
@@ -22,7 +22,7 @@ Ce cas d’utilisation décrit les utilisations possibles de l’activité **[!U
 
 Vous trouverez également dans [cette section](email-enrichment-with-custom-date-fields.md) un cas pratique montrant comment enrichir une diffusion d’email avec des dates personnalisées.
 
-Les contacts de la base marketing reçoivent une invitation à participer à un concours via une application web. Les résultats de la compétition sont récupérés dans le **[!UICONTROL Résultats du concours]** tableau. Cette table est liée à la table des contacts (**[!UICONTROL Destinataires]**). Le **[!UICONTROL Résultats du concours]** Le tableau contient les champs suivants :
+Un jeu concours est proposé, par le biais d&#39;une application web, aux contacts de la base marketing. Les résultats du jeu concours sont récupérés dans la table **[!UICONTROL Résultats jeux]**. Cette table est liée à la table des contacts (**[!UICONTROL Destinataires]**). La table **[!UICONTROL Résultats jeux]** comporte les champs suivants :
 
 * Nom du jeu (@game)
 * Numéro de l&#39;essai (@trial)
@@ -71,19 +71,19 @@ Dans cet exemple, vous allez découvrir comment personnaliser les diffusions en 
 
    ![](assets/uc1_enrich_7.png)
 
-1. Saisissez un identifiant et un libellé, puis sélectionnez le **[!UICONTROL Limiter le nombre de lignes]** dans le **[!UICONTROL Données collectées]** champ . Dans le **[!UICONTROL Lignes à récupérer]** , sélectionnez « 1 » comme valeur. Pour chaque destinataire, l&#39;activité d&#39;enrichissement ajoutera une seule ligne provenant de la **[!UICONTROL Résultats du concours]** à la table de travail du workflow. Cliquez sur **[!UICONTROL Suivant]**.
+1. Saisissez un identifiant et un libellé, et choisissez l’option **[!UICONTROL Limiter le nombre de lignes]**, dans le champ **[!UICONTROL Données collectées]**. Dans le champ **[!UICONTROL Lignes à récupérer]**, choisissez la valeur « 1 ». Pour chaque destinataire, l’activité d’enrichissement ajoutera, à la table de travail du workflow, une seule ligne provenant de la table **[!UICONTROL Résultats jeux]**. Cliquez sur **[!UICONTROL Suivant]**.
 
    ![](assets/uc1_enrich_8.png)
 
-1. Dans cet exemple, nous souhaitons récupérer la note la plus élevée du destinataire, mais uniquement pour le dernier jeu. Pour ce faire, ajoutez un filtre au **[!UICONTROL Nom du concours]** pour exclure toutes les lignes relatives aux concours précédents. Cliquez sur **[!UICONTROL Suivant]**.
+1. Dans notre exemple, nous souhaitons récupérer le meilleur score du destinataire, mais uniquement sur le dernier jeu. Pour cela, ajoutez un filtre sur le champ **[!UICONTROL Nom du jeu]** pour exclure toutes les lignes correspondant aux jeux précédents. Cliquez sur **[!UICONTROL Suivant]**.
 
    ![](assets/uc1_enrich_9.png)
 
-1. Accéder à **[!UICONTROL Trier]** puis cliquez sur le **[!UICONTROL Ajouter]** , sélectionnez le **[!UICONTROL Score]** et cochez la case dans le **[!UICONTROL décroissant]** colonne pour trier les éléments de **[!UICONTROL Score]** champs dans l’ordre décroissant. Pour chaque destinataire, l’activité d’enrichissement ajoute une ligne correspondant au score le plus élevé du dernier jeu. Cliquez sur **[!UICONTROL Suivant]**.
+1. Accédez au **[!UICONTROL Tri]** et cliquez sur le bouton **[!UICONTROL Ajouter]** , sélectionnez **[!UICONTROL Score]** et cochez la case dans le champ **[!UICONTROL descendant]** pour trier les éléments de la variable **[!UICONTROL Score]** dans l’ordre décroissant. Pour chaque destinataire, l&#39;activité d&#39;enrichissement ajoute une ligne correspondant au meilleur score obtenu lors du dernier jeu. Cliquez sur **[!UICONTROL Suivant]**.
 
    ![](assets/uc1_enrich_10.png)
 
-1. Dans le **[!UICONTROL Données à ajouter]** , double-cliquez sur **[!UICONTROL Score]** champ . Pour chaque destinataire, l&#39;activité d&#39;enrichissement ajoute uniquement les **[!UICONTROL Score]** champ . Cliquez sur **[!UICONTROL Terminer]**.
+1. Dans l’écran **[!UICONTROL Données à ajouter]**, double-cliquez sur le champ **[!UICONTROL Score]**. Pour chaque destinataire, l’activité d’enrichissement ajoutera uniquement le champ **[!UICONTROL Score]**. Cliquez sur **[!UICONTROL Terminer]**.
 
    ![](assets/uc1_enrich_11.png)
 
@@ -117,7 +117,7 @@ Afin de répartir les destinataires en fonction de leur score, une activité de 
 
    ![](assets/uc1_enrich_17.png)
 
-1. La troisième (**perdants**) contient tous les autres destinataires. Accéder à **[!UICONTROL Général]** et vérifiez le **[!UICONTROL Générer le complémentaire]** pour cibler tous les destinataires qui n’ont pas obtenu les deux scores les plus élevés.
+1. Le troisième sous-ensemble (**Perdants**) contient tous les autres destinataires. Dans l&#39;onglet **[!UICONTROL Général]**, cochez la case **[!UICONTROL Générer le complémentaire]** pour cibler tous les destinataires qui n&#39;ont pas obtenu les deux meilleurs scores.
 
    ![](assets/uc1_enrich_19.png)
 

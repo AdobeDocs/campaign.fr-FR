@@ -8,7 +8,7 @@ exl-id: 58574983-86c7-46f5-b41b-bae90171048d
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 70%
+ht-degree: 90%
 
 ---
 
@@ -26,7 +26,7 @@ Pour la paramétrer, éditez l&#39;activité et renseignez les options de la dif
 
    Vous pouvez ainsi :
 
-   * Agir sur la diffusion spécifiée dans la transition entrante. Pour ce faire, sélectionnez la première option de l’option **[!UICONTROL Diffusion]** de la fenêtre.
+   * Agir sur la diffusion spécifiée dans la transition entrante. Pour cela, sélectionnez la première option de la section **[!UICONTROL Diffusion]** de la fenêtre.
 
      Cette option peut être utilisée lorsqu&#39;une activité précédente du workflow a déjà créé ou spécifié la diffusion. Cela peut avoir été effectué, comme dans l&#39;exemple ci-dessous, par une activité du même type ayant généré une transition sortante.
 
@@ -34,9 +34,9 @@ Pour la paramétrer, éditez l&#39;activité et renseignez les options de la dif
 
      ![](assets/specified_transition_option_exemple.png)
 
-   * Sélectionnez directement la diffusion concernée. Pour ce faire, sélectionnez l’option **[!UICONTROL Explicite]** et sélectionnez la diffusion dans la liste déroulante de **[!UICONTROL Diffusion]** champ .
+   * Sélectionner directement la diffusion concernée. Pour cela, sélectionnez l&#39;option **[!UICONTROL Explicite]** et choisissez la diffusion dans la liste déroulante du champ **[!UICONTROL Diffusion]**.
 
-     La liste affiche les diffusions inachevées contenues dans le **Diffusions** dossier par défaut. Pour accéder à d’autres campagnes, cliquez sur le lien **[!UICONTROL Sélectionner un lien]** icône.
+     La liste propose les diffusions non terminées présentes dans le dossier de **Diffusions** par défaut. Pour accéder aux autres diffusions, cliquez sur l&#39;icône **[!UICONTROL Choisir le lien]**.
 
      ![](assets/diffusion_edit_1.png)
 
@@ -50,7 +50,7 @@ Pour la paramétrer, éditez l&#39;activité et renseignez les options de la dif
 
      ![](assets/diffusion_edit_3.png)
 
-   * Créez une diffusion. Pour ce faire, sélectionnez l’option **[!UICONTROL Nouveau, créé depuis un modèle]** et sélectionnez le modèle de diffusion sur lequel la diffusion sera basée.
+   * Créez une nouvelle diffusion. Pour cela, sélectionnez l&#39;option **[!UICONTROL Nouvelle, créée depuis un modèle]** et sélectionnez le modèle de diffusion à partir duquel sera créée la diffusion.
 
      ![](assets/diffusion_edit_4.png)
 
@@ -77,10 +77,10 @@ Pour la paramétrer, éditez l&#39;activité et renseignez les options de la dif
    Sélectionnez le type d&#39;action à effectuer parmi les options disponibles :
 
    * **[!UICONTROL Enregistrer]** : cette option permet de créer la diffusion et de l&#39;enregistrer. Aucune analyse ni envoi n&#39;est effectué.
-   * **[!UICONTROL Estimer la cible]**: cette option permet de calculer la cible de la diffusion afin d&#39;en évaluer son potentiel (première phase d&#39;analyse). Cette action équivaut à sélectionner le **[!UICONTROL Estimer la population à cibler]** option et clic **[!UICONTROL Analyser]** lors de l&#39;envoi d&#39;une diffusion à la cible principale via **Diffusion**.
-   * **[!UICONTROL Préparer]**: cette option permet de lancer le processus d&#39;analyse complet (calcul de la cible et préparation du contenu). La diffusion n&#39;est pas envoyée. Cette action équivaut à sélectionner le **[!UICONTROL Livrer dès que possible]** option et clic **[!UICONTROL Analyser]** lors de l’envoi d’une diffusion à la cible principale avec **Diffusion**.
-   * **[!UICONTROL Envoi d&#39;un BAT]**: cette option permet d’envoyer un bon à tirer de la diffusion. Cette action équivaut à cliquer sur le lien **[!UICONTROL Envoi d&#39;un BAT]** bouton dans la barre d&#39;outils d&#39;une diffusion avec **Diffusion**
-   * **[!UICONTROL Préparer et démarrer]**: cette option lance le processus d&#39;analyse complet (calcul de la cible et préparation du contenu) et envoie la diffusion. Cette action équivaut à cliquer **[!UICONTROL Livrer dès que possible]**, **[!UICONTROL Analyser]**, et **[!UICONTROL Confirmer la diffusion]** lors de l&#39;envoi d&#39;une diffusion à la cible principale avec **Diffusion**.
+   * **[!UICONTROL Estimer la cible]** : cette option permet de calculer la cible de la diffusion afin d&#39;en évaluer son potentiel (première phase d&#39;analyse). Cette action équivaut à sélectionner l&#39;option **[!UICONTROL Estimer la population à cibler]** puis **[!UICONTROL Analyser]** lors de l&#39;envoi d&#39;une diffusion à la cible principale avec **Delivery**.
+   * **[!UICONTROL Préparer]**: cette option permet de lancer le processus d&#39;analyse complet (calcul de la cible et préparation du contenu). La diffusion n&#39;est pas envoyée. Cette action équivaut à sélectionner les options **[!UICONTROL Diffuser dès que possible]** puis **[!UICONTROL Analyser]** lors de l&#39;envoi d&#39;une diffusion à la cible principale avec **Delivery**.
+   * **[!UICONTROL Envoyer un bon à tirer]**: cette option permet d&#39;envoyer un BAT de la diffusion. Cette action équivaut à cliquer sur le bouton **[!UICONTROL Envoyer un bon à tirer]** dans la barre d&#39;outils d&#39;une diffusion avec **Diffusion**
+   * **[!UICONTROL Préparer et démarrer]** : cette option lance le processus d&#39;analyse complet (calcul de la cible et préparation du contenu) et envoie la diffusion. Cette action équivaut à sélectionner les options **[!UICONTROL Diffuser dès que possible]**, **[!UICONTROL Analyser]**, puis **[!UICONTROL Confirmer l&#39;envoi]** lors de l&#39;envoi d&#39;une diffusion à la cible principale avec **Delivery**.
 
    L’activité **[!UICONTROL Agir sur une diffusion]**, placée ultérieurement dans le workflow, vous permettra de lancer toutes les étapes restantes nécessaires au démarrage de la diffusion (calcul de la cible, préparation du contenu, diffusion). Pour plus d&#39;informations, consultez la section [Agir sur une diffusion](delivery-control.md).
 
@@ -161,7 +161,7 @@ Chacun des événements entrants doit spécifier une cible définie par ces para
 * schema
 * recCount
 
-Cet ensemble de trois valeurs identifie la cible issue de la diffusion. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schéma]** est le schéma de la population (généralement nms:recipient) et **[!UICONTROL recCount]** correspond au nombre d’éléments dans le tableau.
+Ce triplet de valeurs identifie la cible résultant de la diffusion. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d’éléments dans le tableau.
 
 La transition associée au complémentaire possède les mêmes paramètres.
 

@@ -6,7 +6,7 @@ feature: Workflows
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
   <tr> 
    <td> <span class="uicontrol">Mid-sourcing (logs de diffusion)</span> <br /> </td> 
    <td> <span class="uicontrol">defaultMidSourcingLog</span> <br /> </td> 
-   <td> Ce workflow collecte les logs de diffusion sur le serveur de mid-sourcing. Il est déclenché toutes les heures par défaut.<br /> </td> 
+   <td> Ce workflow collecte les logs des diffusions sur le serveur de mid-sourcing. Par défaut, il se déclenche toutes les heures.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

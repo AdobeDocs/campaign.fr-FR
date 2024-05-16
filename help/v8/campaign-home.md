@@ -6,11 +6,11 @@ exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74
 source-git-commit: 574206bd243a2492e512ee62f057da940d29da6e
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# Documentation d’Adobe Campaign v8 (console) {#campaign-documentation}
+# Documentation Adobe Campaign v8 (console) {#campaign-documentation}
 
 ## Nouveautés
 
@@ -18,9 +18,9 @@ Découvrez les dernières améliorations apportées à Adobe Campaign v8 (cons
 
 >[!BEGINTABS]
 
->[!TAB La version Campaign v8.7 est en ligne]
+>[!TAB La version de Campaign v8.7 est en ligne.]
 
-La dernière version d’Adobe Campaign est désormais en ligne. Il est publié dans **Disponibilité limitée** (LA). Pour plus d’informations, lisez les notes de mise à jour.
+La dernière version d’Adobe Campaign est désormais en ligne. Elle est publiée en **disponibilité limitée** (LA). Pour plus d’informations, lisez les notes de mise à jour.
 
 [![image](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md)
 

@@ -44,10 +44,10 @@ Pour correspondre aux critères de filtrage, le compte de l&#39;opérateur doit 
 >
 >La fonction **[!UICONTROL Upper]** permet de ne pas prendre en compte la casse des caractères (majuscules/minuscules).
 
-Le **[!UICONTROL Pris en compte si]** permet de définir les critères d&#39;application de ces conditions de filtrage. Ici, le **$(/tmp/@text)** Les caractères représentent le contenu du champ de saisie associé au filtre :
+La variable **[!UICONTROL Pris en compte si]** permet de définir les critères d&#39;application de ces conditions de filtrage. Ici, le **$(/tmp/@text)** les caractères représentent le contenu du champ de saisie associé au filtre :
 
 ![](assets/query_editor_filter_sample_5.png)
 
 Ici, **$(/tmp/@text)=&#39;agence&#39;**
 
-Le **$(/tmp/@text)!=&#39;&#39;** expression applique chaque condition lorsque le champ de saisie n’est pas vide.
+La variable **$(/tmp/@text) !=&#39;&#39;** applique chaque condition lorsque le champ de saisie n’est pas vide.

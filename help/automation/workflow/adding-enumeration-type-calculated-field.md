@@ -8,7 +8,7 @@ exl-id: 4fe2ae81-faa6-4777-a332-70c451bca75b
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 67%
+ht-degree: 77%
 
 ---
 
@@ -47,7 +47,7 @@ Les étapes sont les suivantes :
 
 1. Dans le champ **[!UICONTROL Type]** de la fenêtre **[!UICONTROL Définition d&#39;un champ calculé d&#39;export]**, sélectionnez **[!UICONTROL Enumérations]**.
 
-   Définissez la colonne à laquelle le nouveau champ calculé doit faire référence. Pour ce faire, sélectionnez l’option **[!UICONTROL Sexe]** dans le menu déroulant de **[!UICONTROL Colonne source]** champ : les valeurs de destination coïncideront avec le **[!UICONTROL Sexe]** colonne.
+   Définissez à quelle colonne doit se référer le nouveau champ calculé. Pour cela, sélectionnez la colonne **[!UICONTROL Genre]** dans le menu déroulant du champ **[!UICONTROL Colonne source]** : c&#39;est à la colonne **[!UICONTROL Genre]** que vont correspondre les valeurs de destination.
 
    ![](assets/query_editor_nveau_76.png)
 
@@ -75,10 +75,10 @@ Les étapes sont les suivantes :
 
    ![](assets/query_editor_nveau_78.png)
 
-   Par exemple, si vous ne saisissez pas le genre « 2 » dans le champ **[!UICONTROL Liste des valeurs d&#39;énumérations]**, et le **[!UICONTROL Générer un avertissement et continuer]** fonction du **[!UICONTROL Dans d&#39;autres cas]** Si le champ est sélectionné, un journal d’avertissement s’affiche. Ce journal indique que le genre « 2 » (Féminin) n&#39;a pas été saisi. Il s’affiche dans le **[!UICONTROL Logs générés lors de l’export]** champ de la fenêtre de prévisualisation des données.
+   Par exemple, si vous n’entrez pas le genre &quot;2&quot; dans la variable **[!UICONTROL Liste des valeurs d&#39;énumération]**, et la variable **[!UICONTROL Générer un avertissement et continuer]** de la fonction **[!UICONTROL Dans d’autres cas]** est sélectionné, vous obtiendrez un journal d’avertissement. Ce journal indique que le genre &quot;2&quot; (féminin) n&#39;a pas été renseigné. Il est affiché dans le champ **[!UICONTROL Logs générés lors de l&#39;export]**, dans la fenêtre de prévisualisation des données.
 
    ![](assets/query_editor_nveau_79.png)
 
-   Prenons un autre exemple et disons que la valeur d’énumération « 2 » n’est pas saisie. Sélectionner le **[!UICONTROL Générer une erreur et rejeter la ligne]** fonction : tous les destinataires de genre « 2 » signaleront des anomalies et les autres informations de la ligne (prénom, nom, etc.) ne sera pas exporté. Un journal des erreurs s’affiche dans le **[!UICONTROL Logs générés lors de l’export]** champ de la fenêtre de prévisualisation des données. Ce journal indique que la valeur d&#39;énumération « 2 » n&#39;est pas renseignée.
+   Prenons un autre exemple et disons que la valeur de l&#39;énumération &quot;2&quot; n&#39;est pas saisie. Sélectionnez la variable **[!UICONTROL Générer une erreur et rejeter la ligne]** fonction : tous les destinataires du genre &quot;2&quot; génèrent des anomalies et les autres informations de la ligne (prénom et nom, etc.) ne seront pas exportés. Un journal des erreurs s’affiche dans la variable **[!UICONTROL Logs générés lors de l&#39;export]** champ de la fenêtre de prévisualisation des données. Ce journal indique que la valeur de l&#39;énumération &quot;2&quot; n&#39;est pas saisie.
 
    ![](assets/query_editor_nveau_80.png)

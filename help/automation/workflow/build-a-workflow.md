@@ -8,7 +8,7 @@ exl-id: a6003fdb-1035-4b80-8831-73f30a0b4fb2
 source-git-commit: b7fa3dfb1e596d2ea41674278cbe315199264611
 workflow-type: tm+mt
 source-wordcount: '868'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -106,7 +106,7 @@ Double-cliquez sur une activité pour la paramétrer ou cliquez avec le bouton d
 >
 >Les activités de workflow d’opérations disponibles sont présentées dans [cette section](activities.md).
 
-Le premier onglet contient le paramétrage de base. La variable **[!UICONTROL Avancé]** contient les paramètres supplémentaires, qui sont notamment utilisés pour définir le comportement en cas d’erreur, définir la durée d’exécution d’une activité et saisir un script d’initialisation.
+Le premier onglet contient le paramétrage de base. L’onglet **[!UICONTROL Avancé]** contient des paramètres supplémentaires, qui permettent notamment de définir le comportement en cas d’erreur ainsi que la durée d’exécution de l’activité, et de saisir un script d’initialisation.
 
 Pour une meilleure compréhension des activités et une meilleure lisibilité des workflows, vous pouvez saisir des commentaires dans les activités.
 

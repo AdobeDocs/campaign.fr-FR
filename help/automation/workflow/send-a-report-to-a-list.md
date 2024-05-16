@@ -7,7 +7,7 @@ exl-id: 5bc576d0-cab7-4d26-a3a5-91982a00e356
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '733'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -114,7 +114,7 @@ Pour créer ce workflow, procédez comme suit :
 
    Renseignez les variables suivantes :
 
-   * **var reportName**: saisissez entre guillemets le nom interne du rapport. Dans ce cas, le nom interne du **Indicateur de tracking** Le rapport est « deliveryFeedback ».
+   * **var reportName** : saisissez, entre guillemets, le nom interne du rapport. Dans notre exemple, le nom interne du rapport **Indicateur de tracking** est &quot;deliveryFeedback&quot;.
    * **var path** : saisissez le chemin de sauvegarde du fichier (« tmp »), le nom que vous souhaitez lui donner (« deliveryFeedback ») et son extension (« .pdf »). Ici, nous avons utilisé le nom interne comme nom de fichier. Les valeurs doivent être comprises entre guillemets et séparées par le caractère « + ».
 
      >[!CAUTION]

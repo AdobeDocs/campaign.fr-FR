@@ -7,7 +7,7 @@ exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
 source-git-commit: 8247bed87deb3fb19a01447dab180ed9c97ea96c
 workflow-type: tm+mt
 source-wordcount: '796'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -38,9 +38,9 @@ Pour créer une règle de capacité, procédez comme suit :
 
    >[!NOTE]
    >
-   >Les lignes de disponibilité n&#39;ont qu&#39;un caractère indicatif. Si vous devez exclure des messages lorsque la limite de capacité est atteinte, voir [cette section](#exclude-messages-when-capacity-limit-reached).
+   >Les lignes de disponibilité n&#39;ont qu&#39;un caractère indicatif. Si vous devez exclure des messages lorsque la limite de capacité est atteinte, reportez-vous à [cette section](#exclude-messages-when-capacity-limit-reached).
 
-1. Associez cette règle à une typologie, puis référencez la typologie dans votre diffusion pour appliquer cette règle de capacité. Pour plus d’informations, consultez [cette section](apply-rules.md#apply-a-typology-to-a-delivery).
+1. Associez cette règle à une typologie, puis référencez cette typologie au niveau de la diffusion pour appliquer cette règle de capacité. Pour plus d’informations, consultez [cette section](apply-rules.md#apply-a-typology-to-a-delivery).
 1. Vous pouvez suivre la consommation dans les onglets **[!UICONTROL Consommations]** et **[!UICONTROL Capacité]**.
 
    Lorsqu&#39;une règle est utilisée dans une diffusion, les colonnes **[!UICONTROL Consommé]** et **[!UICONTROL Restant]** indiquent la charge utilisée, comme dans l&#39;exemple ci-dessous :
@@ -93,7 +93,7 @@ Le workflow **[!UICONTROL Prévisionnel]** crée automatiquement toutes les lign
 
 ## Exclure des messages lorsque la limite de capacité est atteinte {#exclude-messages-when-capacity-limit-reached}
 
-Les lignes de disponibilité n&#39;ont qu&#39;un caractère indicatif. Pour exclure les messages excédentaires, cochez la case **[!UICONTROL Exclure de la cible les messages en sur-capacité]** option. Cela empêche le dépassement de la capacité. Pour la même population que dans l&#39;exemple précédent, la consommation et la capacité restante ne peuvent dépasser la quantité initiale :
+Les lignes de disponibilité n’ont qu’un caractère indicatif. Pour exclure les messages excédentaires, cochez l’option **[!UICONTROL Exclure de la cible les messages en sur-capacité]**. Dans ce cas, la capacité ne pourra pas être dépassée. Pour la même population que dans l’exemple précédent, la consommation et la capacité restante ne pourront pas excéder la quantité initiale :
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
@@ -109,7 +109,7 @@ Le nombre maximum de messages qui peuvent être traités est réparti proportion
 
 ## Suivi de la consommation {#monitoring-consumption}
 
-Par défaut, les règles de capacité sont fournies à titre indicatif uniquement. Sélectionner le **[!UICONTROL Exclure de la cible les messages en sur-capacité]** pour empêcher le dépassement de la charge définie. Dans ce cas, les messages en excédent seront automatiquement exclus des diffusions à l&#39;aide de cette règle de typologie.
+Par défaut, les règles de capacité n&#39;ont qu&#39;un caractère indicatif. Sélectionnez l&#39;option **[!UICONTROL Exclure de la cible les messages en sur-capacité]** pour que la charge définie ne puisse pas être dépassée. Dans ce cas, les messages excédentaires seront automatiquement exclus des diffusions utilisant cette règle de typologie.
 
 Pour suivre les consommations, consultez les valeurs affichées dans la colonne **[!UICONTROL Consommé]** de l&#39;onglet **[!UICONTROL Capacité]** de la règle de typologie.
 

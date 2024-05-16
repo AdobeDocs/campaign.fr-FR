@@ -7,7 +7,7 @@ exl-id: 7522f449-341e-4aef-8c1e-c49e13809c08
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 89%
+ht-degree: 96%
 
 ---
 
@@ -33,11 +33,11 @@ Pour parvenir à effectuer un filtre du type **Date de création = max (Date de 
 1. Créez une requête. Ici, le but est de calculer la dernière date de création connue parmi la totalité des destinataires de la base. La requête ne contient donc pas de filtre.
 1. Sélectionnez **[!UICONTROL Ajouter des données]**.
 1. Dans les fenêtres successives, sélectionnez **[!UICONTROL Données liées à la dimension de filtrage]** puis **[!UICONTROL Données de la dimension de filtrage]**.
-1. Dans le **[!UICONTROL Données à ajouter]** , ajoutez une colonne qui calcule la valeur maximale de la **Date de création** dans le tableau des destinataires. Vous pouvez utiliser l’éditeur d’expression ou saisir **max(@created)** directement dans un champ du **[!UICONTROL Expression]** colonne. Cliquez ensuite sur **[!UICONTROL Terminer]** Bouton.
+1. Dans la fenêtre **[!UICONTROL Données à ajouter]**, ajoutez une colonne calculant la valeur maximale du champ **Date de création** de la table des destinataires. Vous pouvez vous aider de l&#39;éditeur d&#39;expression ou entrer directement **max(@created)** à hauteur du champ **[!UICONTROL Expression]**. Cliquez ensuite sur le bouton **[!UICONTROL Terminer]**.
 
    ![](assets/datamanagement_usecase_2.png)
 
-1. Clic **[!UICONTROL Modifier les données additionnelles]** ensuite **[!UICONTROL Paramètres avancés...]**. Vérifier le **[!UICONTROL Désactiver l&#39;ajout automatique des clés primaires de la dimension de ciblage]** option.
+1. Cliquez sur **[!UICONTROL Modification des données additionnelles]** then **[!UICONTROL Paramètres avancés...]**. Vérifiez les **[!UICONTROL Désactiver l&#39;ajout automatique des clés primaires de la dimension de ciblage]** .
 
    Cette option permet de ne pas renvoyer tous les destinataires comme résultat et de ne conserver que les données explicitement ajoutées. Dans le cas présent, il s&#39;agit de la dernière date à laquelle un destinataire a été créé.
 

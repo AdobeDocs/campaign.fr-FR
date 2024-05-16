@@ -8,7 +8,7 @@ exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '889'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -131,9 +131,9 @@ Dès lors qu&#39;un visiteur clique sur l&#39;offre, et donc sur l&#39;URL, le s
 
 >[!NOTE]
 >
->Si vous souhaitez spécifier un autre statut dans l&#39;url (par exemple si une proposition d&#39;offre est rejetée), utilisez la valeur correspondant au statut souhaité. Exemple : **[!UICONTROL Rejetés]** = « 5 », **[!UICONTROL Présentée]** = « 1 », etc.
+>Si vous souhaitez indiquer un autre statut dans l’URL (par exemple, si une proposition d’offre est refusée), utilisez la valeur correspondant au statut souhaité. Exemple : **[!UICONTROL Rejetée]** = « 5 », **[!UICONTROL Présentée]** = « 1 », etc.
 >
->Les statuts et leurs valeurs peuvent être récupérés dans le **[!UICONTROL Propositions d’offre (nms)]** schéma de données. Pour plus d’informations, consultez [cette page](../dev/create-schema.md).
+>Les statuts et leurs valeurs peuvent être récupérés dans le schéma de données **[!UICONTROL Propositions d’offres (nms)]**. Pour plus d’informations, consultez [cette page](../dev/create-schema.md).
 
 **Interaction sortante**
 
@@ -156,4 +156,4 @@ Dans le cas où le destinataire n&#39;est éligible à aucune offre, la prévisu
 
 La prévisualisation peut ne pas tenir compte des contextes lorsqu&#39;ils sont limités à un emplacement. C&#39;est le cas lorsque le schéma d&#39;interaction a été étendu de façon à ajouter des champs qui sont référencés dans un emplacement utilisant un canal entrant.
 
-Voir à ce propos cet exemple dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=fr){target="_blank"}.
+Pour en savoir plus, consultez cet exemple dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=fr){target="_blank"}.

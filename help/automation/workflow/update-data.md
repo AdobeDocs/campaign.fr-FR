@@ -7,7 +7,7 @@ exl-id: 63b214c7-bbbf-448b-b3af-b3b7a7a5b65c
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Une activité de type **Mise à jour de données** permet de mettre à jour en m
 
 ## Type d&#39;opération {#operation-type}
 
-Le champ **[!UICONTROL Type d&#39;opération]** permet de choisir le traitement à réaliser sur les données de la base :
+Le champ **[!UICONTROL Type d&#39;opération]** permet de choisir le traitement à réaliser sur les données de la base de données :
 
 * **[!UICONTROL Ajouter ou mettre à jour]** : ajouter des données ou les mettre à jour si elles ont déjà été ajoutées auparavant.
 * **[!UICONTROL Ajouter]** : ajouter des données uniquement.
@@ -53,11 +53,11 @@ Vous pouvez également utiliser l&#39;icône **[!UICONTROL Ajouter]** pour séle
 
 ![](assets/s_advuser_update_data_3.png)
 
-Sélectionnez tous les champs à mettre à jour et, au besoin, ajoutez des conditions en fonction de la mise à jour à effectuer. Pour cela, utilisez la colonne **[!UICONTROL Prise en compte si]**. Les conditions sont appliquées l&#39;une après l&#39;autre et dans l&#39;ordre de la liste. Utilisez les flèches situées à droite pour modifier l’ordre des mises à jour.
+Sélectionnez tous les champs à mettre à jour et, au besoin, ajoutez des conditions pour que cette mise à jour soit réalisée. Pour cela, utilisez la colonne **[!UICONTROL Prise en compte si]**. Les conditions sont appliquées les unes après les autres, dans l&#39;ordre de la liste. Utilisez les flèches situées à droite pour modifier l&#39;ordre des mises à jour.
 
 Vous pouvez utiliser plusieurs fois le même champ de destination.
 
-Dans un **[!UICONTROL Insertion ou mise à jour]** , vous pouvez sélectionner la campagne à appliquer, soit individuellement, soit pour chaque champ. Pour ce faire, sélectionnez la valeur souhaitée dans le champ **[!UICONTROL Opération]** colonne.
+Dans le cadre d&#39;une opération de type **[!UICONTROL Ajouter ou mettre à jour]**, vous pouvez sélectionner individuellement, pour chaque champ, l&#39;opération à appliquer. Pour cela, sélectionner la valeur souhaitée dans la colonne **[!UICONTROL Opération]**.
 
 ![](assets/s_advuser_update_data_5.png)
 
@@ -72,7 +72,7 @@ Le lien **[!UICONTROL Paramètres avancés]** permet de spécifier des options s
 * **[!UICONTROL Vider la valeur destination si la valeur source est vide (NULL)]**. Cette option est cochée par défaut.
 * **[!UICONTROL Mettre à jour toutes les colonnes dont les noms correspondent]**.
 * Préciser les conditions de prise en compte des éléments de la source à l&#39;aide d&#39;une expression dans le champ **[!UICONTROL Prise en compte]**.
-* Spécifiez des conditions qui prennent en compte les doublons à l’aide d’une expression. Si vous vérifiez le **[!UICONTROL Ignorer les enregistrements concernant la même cible]** , seule la première expression de la liste est prise en compte.
+* Préciser les conditions de prise en compte des doublons à l&#39;aide d&#39;une expression. Si vous cochez l&#39;option **[!UICONTROL Ignorer les enregistrements concernant la même cible]**, seul le premier de la liste des expressions sera pris en compte.
 
 **[!UICONTROL Générer une transition sortante]**
 

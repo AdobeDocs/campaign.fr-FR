@@ -22,7 +22,7 @@ Dans un workflow, vous pouvez adapter les plannings d&#39;exécution des activit
 
 Vous pouvez planifier l’exécution des tâches à l’aide du planificateur (voir [Planificateur](scheduler.md)). Vous pouvez également utiliser les options de planification disponibles dans les activités qui proposent cette fonctionnalité. Ces activités offrent un onglet **[!UICONTROL Planification]** : **[!UICONTROL Collecteur de fichiers]**, **[!UICONTROL Transfert de fichiers]**, **[!UICONTROL Téléchargement Web]**, **[!UICONTROL Réception d’emails]** et **[!UICONTROL SMS]**, etc.
 
-Pour toutes les tâches planifiées, c’est-à-dire toutes les activités comportant des options de planification, vous pouvez sélectionner le fuseau horaire à appliquer. Le fuseau horaire est sélectionné à partir de **[!UICONTROL Avancé]** onglet de l&#39;activité concernée :
+Pour toutes les tâches planifiées, c&#39;est-à-dire toutes les activités ayant des options de planification, vous pouvez sélectionner le fuseau horaire à appliquer. Le fuseau horaire est sélectionné à l&#39;aide de la fonction **[!UICONTROL Avancé]** onglet de l&#39;activité concernée :
 
 ![](assets/wf-timezone-in-a-box.png)
 

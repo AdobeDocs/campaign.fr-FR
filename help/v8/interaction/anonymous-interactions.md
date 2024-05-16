@@ -8,7 +8,7 @@ exl-id: b7a04360-f8c6-4c69-9594-2b44d3f819b7
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Lorsque vous créez l&#39;environnement anonyme via l&#39;assistant de création
 
 La **[!UICONTROL Dimension de ciblage]** est automatiquement préremplie. Elle pointe par défaut sur la table des visiteurs.
 
-Le **[!UICONTROL Dossier des visiteurs]** le champ s’affiche. Il est automatiquement renseigné pour créer un lien vers le **[!UICONTROL Visiteurs]** dossier. Ce champ vous permet de choisir où stocker les profils des visiteurs.
+Le champ **[!UICONTROL Dossier des visiteurs]** s&#39;affiche. Il est automatiquement prérempli pour pointer sur le dossier **[!UICONTROL Visiteurs]**. Ce champ permet de spécifier l&#39;endroit où sont stockés les profils des visiteurs.
 
 ![](assets/anonymous_environment_option.png)
 

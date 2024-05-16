@@ -8,7 +8,7 @@ exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
 source-git-commit: adfde71faebf3cec7e7b730c9753e6765aeadab0
 workflow-type: tm+mt
 source-wordcount: '1527'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Cette intégration permet à Adobe Campaign et Adobe Analytics d&#39;interagir
 
 >[!NOTE]
 >
->En tant qu’utilisateur Managed Cloud Service, [Adobe de contact](../start/campaign-faq.md#support) pour connecter Campaign aux services et solutions Adobe Experience Cloud. Le module complémentaire de connecteur Web Analytics doit être installé sur votre environnement, via le package dédié.
+>En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour connecter Campaign aux services et solutions Adobe Experience Cloud. Le module complémentaire de connecteur Web Analytics doit être installé sur votre environnement, via le package dédié.
 
 Avec le connecteur Adobe Analytics, Adobe Campaign permet de mesurer l&#39;audience Internet (Web Analytics). Les outils Web Analytics permettent à Adobe Campaign de transférer des indicateurs et des attributs de campagne vers Analytics.
 
@@ -55,7 +55,7 @@ Pour créer votre **[!UICONTROL suite de rapports]** dans [!DNL Adobe Analytics]
 
 1. Sur la page **[!UICONTROL Responsable des suites de rapports]**, cliquez sur **[!UICONTROL Créer]**, puis sur **[!UICONTROL Suite de rapports]**.
 
-   Pour la procédure détaillée sur **[!UICONTROL Suite de rapports]** création, voir [Documentation Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=fr#prerequisites){target="_blank"}.
+   Pour la procédure détaillée de création de **[!UICONTROL suites de rapports]**, consultez la [documentation Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=fr#prerequisites){target="_blank"}.
 
    ![](assets/analytics_connnector_3.png)
 
@@ -85,7 +85,7 @@ Après avoir créé votre **[!UICONTROL suite de rapports]**, vous devez configu
 
 1. Cliquez sur **[!UICONTROL Ajouter]** pour créer les identifiants nécessaires à la mesure de l&#39;impact de la campagne par e-mail, c&#39;est-à-dire le nom interne de la campagne (cid) et l&#39;identifiant de la table iNmsBroadlog (bid).
 
-   Pour savoir comment modifier **[!UICONTROL Variables de conversion]**, reportez-vous à [Documentation Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=fr#admin-tools){target="_blank"}.
+   Pour découvrir comment modifier les **[!UICONTROL variables de conversion]**, consultez la [documentation Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=fr#admin-tools){target="_blank"}.
 
    ![](assets/analytics_connnector_6.png)
 
@@ -108,7 +108,7 @@ Après avoir créé votre **[!UICONTROL suite de rapports]**, vous devez configu
    * **[!UICONTROL Ouvertures uniques]**
    * **[!UICONTROL Désabonnement]**
 
-   Pour savoir comment configurer **[!UICONTROL Événements de succès]**, reportez-vous à [Documentation Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=fr#admin-tools)
+   Pour découvrir comment configurer les **[!UICONTROL événements de succès]**, reportez-vous à la [documentation Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=fr#admin-tools).
 
    ![](assets/analytics_connnector_8.png)
 
@@ -122,9 +122,9 @@ Vous devez alors configurer votre compte externe **[!UICONTROL Web Analytics]** 
 
 Veuillez noter que si l&#39;une de vos **[!UICONTROL suites de rapports]**, **[!UICONTROL variables de conversion]** ou **[!UICONTROL événements de succès]** n&#39;est pas visible lors de la configuration de votre compte externe, cela signifie que vous ne disposez pas d&#39;une autorisation pour ce nouveau composant dans le **[!UICONTROL profil de produit]** associé à l&#39;utilisateur.
 
-Pour plus d&#39;informations à ce sujet, consultez [Profils de produit pour Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=fr#product-profile-admins){target="_blank"} page.
+Pour plus d’informations, consultez la page [Profils de produit pour Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=fr#product-profile-admins){target="_blank"}.
 
-1. Accédez à l’ **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Comptes externes]** dossier de l’arborescence de l’explorateur Adobe Campaign et cliquez sur **[!UICONTROL Nouveau]**.
+1. Accédez au dossier **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Comptes externes]** dans l’arborescence de l’explorateur d’Adobe Campaign et cliquez sur **[!UICONTROL Nouveau]**.
 
    ![](assets/analytics_connnector_9.png)
 
@@ -180,9 +180,9 @@ Pour plus d&#39;informations à ce sujet, consultez [Profils de produit pour Ado
    >
    >Ce type de paramétrage s&#39;adresse à des utilisateurs experts : toute erreur dans cette formule risque de bloquer la diffusion des e-mails.
 
-1. L&#39;onglet **[!UICONTROL Avancé]** vous permet de modifier des paramètres plus techniques.
+1. L’onglet **[!UICONTROL Avancé]** vous permet de configurer ou modifier des paramètres plus techniques.
 
-   * **[!UICONTROL Durée de vie]**: permet de définir le délai (en jours) après lequel les événements web récupérés dans Adobe Campaign par les workflows techniques. Valeur par défaut : 180 jours.
+   * **[!UICONTROL Durée de vie]** : vous permet de définir un délai (en jours) après lequel les événements web sont récupérés dans Adobe Campaign par les workflows techniques. Par défaut : 180 jours.
    * **[!UICONTROL Persistance]** : permet de définir la période pendant laquelle tout événement web (un achat par exemple) peut être attribué à une opération de remarketing. Par défaut : 7 jours.
 
 >[!NOTE]
@@ -245,11 +245,11 @@ Afin qu&#39;Adobe Experience Cloud puisse suivre l&#39;activité sur les sites
 1. Vous pouvez maintenant envoyer votre diffusion et accéder au rapport correspondant dans Adobe Analytics.
 
 
-## Création d’une campagne de remarketing {#create-a-re-marketing-campaign}
+## Créer une campagne de remarketing {#create-a-re-marketing-campaign}
 
-Pour préparer votre campagne de remarketing, vous devez créer des modèles de diffusion qui seront ensuite utilisés dans les opérations de type remarketing. Vous devez ensuite paramétrer votre opération de remarketing et lui associer un segment. A chaque segment doit correspondre une opération de remarketing différente.
+Pour préparer votre campagne de remarketing, vous devez créer des modèles de diffusion qui seront ensuite utilisés dans les opérations de type remarketing. Vous devez ensuite paramétrer votre opération de remarketing et lui associer un segment. À chaque segment doit correspondre une opération de remarketing différente.
 
-Les campagnes de remarketing sont automatiquement lancées une fois qu’Adobe Campaign a récupéré les segments analysant le comportement des personnes ciblées par la campagne initiale. En cas d’abandon de panier ou de consultation de produit sans achat, une diffusion est envoyée aux destinataires concernés afin que leur navigation sur le site finalise leur achat.
+Les campagnes de remarketing démarrent automatiquement une fois qu’Adobe Campaign a récupéré les segments qui analysent le comportement des personnes ciblées par la campagne initiale. En cas d’abandon de panier ou de consultation de produits sans achat, une diffusion est envoyée aux personnes destinataires concernées afin que leur navigation sur le site entraîne la finalisation de leur achat.
 
 Adobe Campaign met à votre disposition des modèles de diffusion personnalisés que vous pouvez utiliser ou dont vous pouvez vous inspirer pour préparer vos campagnes.
 
@@ -258,11 +258,11 @@ Adobe Campaign met à votre disposition des modèles de diffusion personnalisé
 1. Personnalisez le modèle selon vos besoins, puis enregistrez-le.
 1. Créez une opération et sélectionnez le modèle **[!UICONTROL Opération de remarketing]** dans la liste déroulante.
 1. Cliquez sur le lien **[!UICONTROL Paramétrer...]** pour indiquer le segment et le modèle de diffusion associé à l&#39;opération.
-1. Sélectionnez l’Analytics e[Compte externe](#external-account-ac)et le segment concerné.
+1. Sélectionnez le [compte externe](#external-account-ac) Analytics et le segment concerné.
 1. Sélectionnez le modèle de diffusion à utiliser pour cette opération de remarketing, puis cliquez sur **[!UICONTROL Terminer]** pour fermer la fenêtre.
 1. Cliquez sur **[!UICONTROL OK]** pour fermer la fenêtre de l&#39;opération.
 
-Le **[!UICONTROL Efficacité du remarketing]** le rapport est accessible via la page rapports globaux. Elle permet de visualiser le nombre de contacts convertis (ayant réalisés un achat) par rapport au nombre d’abandons de panier suite à la campagne de remarketing Adobe Campaign. Le taux de conversion est calculé sur une base hebdomadaire, mensuelle ou depuis le début de la synchronisation entre Adobe Campaign et Adobe Analytics.
+Le rapport d’**[!UICONTROL Efficacité du remarketing]** est accessible à partir de la page des rapports globaux. Il permet de visualiser le nombre de contacts convertis (c’est-à-dire qui ont réalisé un achat) par rapport au nombre d’abandons de panier, à la suite de la campagne de remarketing Adobe Campaign. Le taux de conversion est calculé par semaine, par mois ou depuis le début de la synchronisation entre Adobe Campaign et Adobe Analytics.
 
 **Rubriques connexes**
 

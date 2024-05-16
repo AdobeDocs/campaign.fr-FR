@@ -7,7 +7,7 @@ exl-id: 73bacf61-ac03-4a5c-b03b-6dfbe3fb9538
 source-git-commit: 76a5737e2326e9691113957d1c7bf390ea969695
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ L&#39;activité de type **Téléchargement Web** permet de lancer le télécharg
 
    * Pour utiliser un **[!UICONTROL Compte externe]**, sélectionnez le compte dans la liste déroulante et indiquez le fichier à télécharger.
 
-     Les comptes externes sont configurés à partir de la variable **[!UICONTROL Administration > Plateforme > Comptes externes]** du noeud de l’arborescence Adobe Campaign. Les paramètres du compte peuvent être édités à partir du **[!UICONTROL Lien d’édition]** Icône
+     Les comptes externes sont configurés à partir du nœud **[!UICONTROL Administration > Plateforme > Comptes externes]** de l’arborescence d’Adobe Campaign. Les paramètres du compte peuvent être modifiés à l’aide de l’icône **[!UICONTROL Modifier le lien]**.
 
      ![](assets/download_web_edit_external.png)
 
@@ -45,7 +45,7 @@ L&#39;activité de type **Téléchargement Web** permet de lancer le télécharg
 
    Les options disponibles sont les suivantes :
 
-   * **[!UICONTROL Utiliser un répertoire de stockage par défaut]**: le fichier est toujours déplacé avant d’être traité. Si cette option est cochée, le fichier est déplacé dans le répertoire de stockage par défaut (le **vars** répertoire du dossier d’installation d’Adobe Campaign). Pour spécifier un répertoire de stockage, décochez la case et saisissez son chemin dans le champ **[!UICONTROL Répertoire de stockage]** field
+   * **[!UICONTROL Utiliser un répertoire de stockage par défaut]** : le fichier est toujours déplacé avant d’être traité. Si cette option est cochée, le fichier est déplacé dans le répertoire de stockage par défaut (le répertoire **vars** du dossier d’installation d’Adobe Campaign). Pour spécifier un répertoire de stockage, décochez la case et saisissez le chemin de celui-ci dans le champ **[!UICONTROL Répertoire de stockage]**.
    * **[!UICONTROL Nombre de fichiers]** : saisissez le nombre maximal de fichiers à conserver dans le répertoire de stockage.
    * **[!UICONTROL Taille maximale (en Mo)]** : saisissez la capacité maximale du répertoire de stockage (en méga octets).
 
@@ -59,9 +59,9 @@ L&#39;activité de type **Téléchargement Web** permet de lancer le télécharg
 
    Le lien **[!UICONTROL Paramètres avancés...]** permet d&#39;indiquer les options supplémentaires ci-dessous :
 
-   * **[!UICONTROL Suivez les redirections]**: la redirection de fichier permet d&#39;utiliser des remplacements pour diriger la saisie ou la sortie de données vers un appareil d&#39;un autre type.
-   * **[!UICONTROL Ajout des en-têtes HTTP au fichier]**: dans certains cas, vous pouvez ajouter des en-têtes HTTP supplémentaires à un fichier. Le plus souvent, ces en-têtes seront utilisés pour fournir des informations supplémentaires à des fins de dépannage, pour les [Partage des ressources cross-origin (CORS)](https://developer.mozilla.org/docs/Web/HTTP/CORS)ou pour définir des directives de mise en cache spécifiques.
-   * **[!UICONTROL Ignorer le code de retour HTTP]**: les codes retour HTTP, également appelés codes d’état HTTP, indiquent le résultat d’une requête HTTP.
+   * **[!UICONTROL Suivre les redirections]** : la redirection de fichier permet d’utiliser des remplacements pour diriger les entrées ou les sorties de données vers un périphérique d’un différent type.
+   * **[!UICONTROL Ajouter des en-têtes HTTP au fichier]** : dans certains cas, vous pouvez ajouter des en-têtes HTTP supplémentaires à un fichier. Le plus souvent, ces en-têtes sont utilisés pour fournir des informations supplémentaires à des fins de résolution de problèmes, pour le [partage de ressources entre origines multiples (CORS)](https://developer.mozilla.org/fr/docs/Web/HTTP/CORS) ou pour définir des directives de mise en cache spécifiques.
+   * **[!UICONTROL Ignorer le code de retour HTTP]** : les codes de retour HTTP, également appelés codes d’état HTTP, indiquent le résultat d’une requête HTTP.
 
    ![](assets/download_web_edit_advanced.png)
 

@@ -7,7 +7,7 @@ exl-id: 0d4d13f6-7128-44d3-ad5c-4ed02257ee64
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 69%
 
 
 
-Une activité de type **Test** active la première transition qui vérifie la condition qui lui est associée. Si aucune condition n&#39;est vérifiée et si l&#39;option **[!UICONTROL Utiliser le branchement par défaut]** est activée, la transition par défaut sera activée.
+Une activité de type **Test** active la première transition qui vérifie la condition qui lui est associée. Si aucune condition n’est vérifiée et si l’option **[!UICONTROL Utiliser le branchement par défaut]** est activée, la transition par défaut sera activée.
 
-Une condition est une expression JavaScript qui doit être évaluée sur &#39;true&#39; ou &#39;false&#39;. Pour saisir l’expression, cliquez sur l’icône à droite du nom de la condition, puis sélectionnez **[!UICONTROL Modifier...]**.
+Une condition est une expression JavaScript qui doit être déterminée par « true » ou « false ». Pour saisir l’expression, cliquez sur l’icône située à droite du nom de la condition, puis sélectionnez **[!UICONTROL Modifier...]**.
 
 ![](assets/edit_test.png)
 
-Pour plus d’informations sur toutes les fonctions JavaScript et méthodes SOAP supplémentaires du serveur d’applications accessibles via le code JavaScript du workflow, reportez-vous à [Documentation JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=fr){target="_blank"}.
+Pour plus d’informations sur toutes les autres fonctions JavaScript et méthodes SOAP du serveur applicatif accessibles via le JavaScript de workflow, consultez la [documentation JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=fr){target="_blank"}.
 
 Vous pouvez insérer directement des variables également depuis cet éditeur. Pour plus d’informations sur l’utilisation des variables, consultez [cette section](javascript-scripts-and-templates.md#variables).
 
