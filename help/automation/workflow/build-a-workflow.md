@@ -5,10 +5,10 @@ description: Découvrez comment créer un workflow
 feature: Workflows
 role: User
 exl-id: a6003fdb-1035-4b80-8831-73f30a0b4fb2
-source-git-commit: b7fa3dfb1e596d2ea41674278cbe315199264611
+source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
 workflow-type: tm+mt
 source-wordcount: '868'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -133,9 +133,7 @@ En plus des propriétés habituelles des workflows, les propriétés du modèle 
 
 Vous pouvez dupliquer différents types de workflows. Une fois le workflow dupliqué, ses modifications ne sont pas appliquées à la copie de celui-ci.
 
->[!CAUTION]
->
->La fonction copier-coller est disponible dans les workflows, mais nous vous recommandons d&#39;utiliser **Dupliquer**. Une fois une activité copiée, l&#39;ensemble de sa configuration est conservée. Pour les activités de diffusion (email, SMS, notification Push...), l&#39;objet de la diffusion associé à l&#39;activité est également copié, ce qui peut entraîner un blocage.
+Adobe recommande de dupliquer un workflow plutôt que d’effectuer un copier/coller d’activités. Lorsqu’une activité est copiée, tous ses paramètres sont conservés. Pour les activités de canal, l’objet de diffusion associé à l’activité est également copié, ce qui peut entraîner des problèmes majeurs.
 
 1. Cliquez avec le bouton droit de la souris sur un workflow.
 1. Cliquez sur **Dupliquer**.

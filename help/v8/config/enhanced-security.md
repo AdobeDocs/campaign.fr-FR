@@ -7,10 +7,10 @@ level: Experienced
 hide: true
 hidefromtoc: true
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 042a1cc96b819a1a77442e274defbadeb393eafc
+source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 79%
+source-wordcount: '743'
+ht-degree: 76%
 
 ---
 
@@ -37,7 +37,7 @@ Une fois ces fonctionnalités implémentées, Adobe contrôle :
 
 ## Intégration sécurisée de la clé gérée par le client {#secure-cmk-integration}
 
-L’intégration sécurisée de la **Clé gérée par le client ou la cliente (CMK)** vous permet de chiffrer votre instance et vos données à l’aide de votre propre clé via votre compte Amazon Web Services (AWS).
+La variable **Intégration de la clé gérée par le client sécurisée (CMK)** vous permet de crypter des données au repos à l’aide de votre propre clé via votre compte Amazon Web Services (AWS).
 
 Les clés gérées par le client ou la cliente sont des clés de service de gestion des clés (KMS) dans votre compte AWS que vous créez, possédez et gérez. Vous avez un contrôle total sur ces clés KMS et vous pouvez les utiliser pour chiffrer et déchiffrer des données. En vous rendant responsable de la génération et de la gestion des clés de chiffrement, cette fonctionnalité vous permet de mieux les contrôler, en offrant notamment l’option de révoquer une clé.
 
