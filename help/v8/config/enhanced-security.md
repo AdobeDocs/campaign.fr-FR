@@ -4,13 +4,11 @@ description: Commencer à utiliser le module complémentaire Campaign de sécuri
 feature: Configuration
 role: Developer
 level: Experienced
-hide: true
-hidefromtoc: true
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
+source-git-commit: 55c16fe19125ea54035a8f97928484c7baea161b
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -90,7 +88,7 @@ Afin de garantir une haute disponibilité, cette fonctionnalité utilise deux tu
 
 Trois cas d’utilisation sont pris en charge :
 
-* Federated Data Access (FDA) via un VPN<!--to access your on-premise database from the Campaign instance over VPN-->
+* Federated Data Access (FDA) sur VPN, pour accéder à votre base de données sur site à partir de l’instance Campaign via VPN.
 
 * Connexion à l’instance via un VPN à partir d’un client épais
 
@@ -117,7 +115,7 @@ Pour garantir une utilisation correcte de cette fonctionnalité, suivez les inst
 
 Les mécanismes de sécurisation et limitations ci-après s’appliquent à l’intégration de la tunnellisation du VPN à Adobe Campaign v8 :
 
-* Actuellement, seules les bases de données sur site sont prises en charge, telles que<!--Richa to check the list with PM--> :
+* Seules les bases de données on-premise sont prises en charge, telles que<!--Richa to check the list with PM-->:
 
    * MySQL
    * Netezza
