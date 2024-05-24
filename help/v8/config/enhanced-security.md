@@ -6,9 +6,9 @@ role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
 source-git-commit: 55c16fe19125ea54035a8f97928484c7baea161b
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '753'
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Une fois ces fonctionnalités implémentées, Adobe surveille les éléments sui
 
 ## Intégration de la clé sécurisée gérée par le client ou la cliente {#secure-cmk-integration}
 
-La variable **Intégration de la clé gérée par le client sécurisée (CMK)** vous permet de crypter des données au repos à l’aide de votre propre clé via votre compte Amazon Web Services (AWS).
+L’**intégration de la clé sécurisée gérée par le client ou la cliente (CMK)** vous permet de chiffrer des données inactives à l’aide de votre propre clé via votre compte Amazon Web Services (AWS).
 
 Les clés gérées par le client ou la cliente sont des clés de service de gestion des clés (KMS) dans votre compte AWS que vous créez, possédez et gérez. Vous avez un contrôle total sur ces clés KMS et vous pouvez les utiliser pour chiffrer et déchiffrer des données. En vous rendant responsable de la génération et de la gestion des clés de chiffrement, cette fonctionnalité vous permet de mieux les contrôler, en offrant notamment l’option de révoquer une clé.
 
@@ -88,7 +88,7 @@ Afin de garantir une haute disponibilité, cette fonctionnalité utilise deux tu
 
 Trois cas d’utilisation sont pris en charge :
 
-* Federated Data Access (FDA) sur VPN, pour accéder à votre base de données sur site à partir de l’instance Campaign via VPN.
+* Federated Data Access (FDA) via un VPN, pour accéder à votre base de données On-Premise à partir de l’instance Campaign via un VPN
 
 * Connexion à l’instance via un VPN à partir d’un client épais
 
@@ -115,7 +115,7 @@ Pour garantir une utilisation correcte de cette fonctionnalité, suivez les inst
 
 Les mécanismes de sécurisation et limitations ci-après s’appliquent à l’intégration de la tunnellisation du VPN à Adobe Campaign v8 :
 
-* Seules les bases de données on-premise sont prises en charge, telles que<!--Richa to check the list with PM-->:
+* Seules les bases de données On-Premise sont prises en charge, telles que<!--Richa to check the list with PM--> :
 
    * MySQL
    * Netezza

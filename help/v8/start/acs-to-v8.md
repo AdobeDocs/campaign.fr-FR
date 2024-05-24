@@ -1,21 +1,21 @@
 ---
-title: Transition du Campaign Standard vers Campaign v8
-description: Transition du Campaign Standard vers Campaign v8
+title: Migrer de Campaign Standard vers Campaign v8
+description: Migrer de Campaign Standard vers Campaign v8
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: 2f4d422bbf41ad4def5e0cdedac938b208b0873e
-workflow-type: tm+mt
+exl-id: 98613a0a-7a6d-41a5-9541-e045d4ca318f
+source-git-commit: cb77f17bbc7b3ce09f7f2961d2eae5855ecca6e6
+workflow-type: ht
 source-wordcount: '159'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
-# Transition depuis [!DNL Campaign Standard] to [!DNL Campaign] v8 {#acs-to-acv8}
+# Migrer de [!DNL Campaign Standard] vers [!DNL Campaign] v8 {#acs-to-acv8}
 
-En tant qu’utilisateur Campaign Standard passant à Campaign v8, vous pouvez désormais bénéficier de la nouvelle version de l’interface utilisateur web d’Adobe Campaign et de la puissante console v8. La transition est transparente et vous permettra d’utiliser toutes les fonctionnalités intuitives conçues pour simplifier la création de campagnes cross-canal personnalisées. L’interface utilisateur web de Campaign contient également un canevas connecté avec Adobe Experience Platform pour une expérience unifiée. [En savoir plus](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/release-notes/acs-migration){target="_blank"}.
+En migrant de Campaign Standard à Campaign v8, vous pouvez maintenant profiter de la toute nouvelle version de l’interface d’utilisation d’Adobe Campaign Web ainsi que de la puissante console v8. La transition est fluide et vous permettra d’utiliser toutes les fonctionnalités intuitives conçues pour simplifier la création de campagnes cross-canal personnalisées. L’interface d’utilisation d’Adobe Campaign Web offre une zone de travail connectée à Adobe Experience Platform pour une expérience unifiée. [En savoir plus](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/release-notes/acs-migration){target="_blank"}.
 
-En tant qu&#39;utilisateur de Campaign v8, vous avez désormais accès à la nouvelle interface utilisateur web de Campaign et à la console cliente v8. Les données et les paramètres sont synchronisés d’un environnement à un autre. Toutes les données et tous les paramètres disponibles dans la console cliente sont visibles dans l&#39;interface utilisateur Web de Campaign, à partir du volet de navigation de gauche de l&#39;Explorateur.
+En tant qu’utilisateur ou utilisatrice de Campaign v8, vous avez accès à la nouvelle interface d’Adobe Campaign Web et à la console cliente v8. Les données et les paramètres sont synchronisés d’un environnement à un autre. L’ensemble de vos données et paramètres déjà disponibles dans la console cliente sont visibles dans l’interface d’utilisation de Campaign Web, à partir du volet de navigation de gauche de l’explorateur.
 
-En savoir plus sur la nouvelle interface utilisateur web de Campaign dans [cette documentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=fr){target="_blank"}.
-
+Apprenez-en davantage sur la nouvelle interface d’utilisation d’Adobe Campaign Web dans [cette documentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=fr){target="_blank"}.
