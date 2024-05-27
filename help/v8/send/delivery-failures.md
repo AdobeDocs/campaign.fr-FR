@@ -5,7 +5,7 @@ feature: Profiles, Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
 source-wordcount: '3042'
 ht-degree: 100%
@@ -103,7 +103,7 @@ Les reprises de rebonds temporaires et l’intervalle qui les sépare sont déte
 >
 >Les paramètres de reprise dans les propriétés de la diffusion ne sont pas utilisés par Campaign.
 
-## Période de validité
+## Période de validité {#valid-period}
 
 Le paramètre de la période de validité dans vos diffusions Campaign est limité à **3,5 jours ou moins**. Si vous définissez une valeur supérieure à 3,5 jours pour une diffusion dans Campaign, elle ne sera pas prise en compte.
 

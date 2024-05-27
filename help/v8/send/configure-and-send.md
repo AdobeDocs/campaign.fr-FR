@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 3e95a56825a143a4457ab7ee242208d7daaeb414
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 98%
+source-wordcount: '1251'
+ht-degree: 78%
 
 ---
 
@@ -44,42 +44,45 @@ Avant d’envoyer la diffusion, vous pouvez définir les paramètres d’envoi d
 
 Pour équilibrer la charge, vous pouvez répartir les envois en plusieurs lots. Configurez le nombre de lots et leur proportion par rapport à l&#39;ensemble de la diffusion.
 
->[!NOTE]
->
->Vous pouvez uniquement définir la taille et le délai entre deux vagues consécutives. Le critère de sélection des destinataires pour chaque vague n&#39;est pas paramétrable.
+Pour définir des vagues, procédez comme suit :
 
-1. Ouvrez la fenêtre des propriétés de la diffusion, puis cliquez sur l&#39;onglet **[!UICONTROL Diffusion]**.
-1. Sélectionnez l&#39;option **[!UICONTROL Envoyer en plusieurs vagues]**, puis cliquez sur le lien **[!UICONTROL Définition des vagues...]**.
+1. Ouvrez les propriétés de la diffusion et accédez à la **[!UICONTROL Diffusion]** .
+1. Activez la variable **[!UICONTROL Envoyer en plusieurs vagues]** , puis cliquez sur le bouton **[!UICONTROL Définir des vagues...]** lien.
 
    ![](assets/delivery-define-waves.png)
 
-1. Pour configurer des vagues, vous pouvez effectuer l&#39;une des opérations suivantes :
 
-   * Définissez la taille de chaque vague. Par exemple, si vous saisissez **[!UICONTROL 30 %]** dans le champ correspondant, chaque vague représentera 30 % des messages inclus dans l’envoi, à l’exception de la dernière vague qui représentera 10 % des messages.
+1. Configurez les vagues comme décrit ci-dessous.
 
-     Dans le champ **[!UICONTROL Période]**, définissez le délai entre le démarrage de deux vagues consécutives. Par exemple, si vous saisissez **[!UICONTROL 2 j]**, la première vague démarre immédiatement, la deuxième démarre dans deux jours, la troisième dans quatre jours, etc.
-
-     ![](assets/delivery-waves-size.png)
-
-   * Définissez un calendrier pour l&#39;envoi de chaque vague.
-
-     Dans la colonne **[!UICONTROL Début]**, indiquez le délai entre le démarrage de deux vagues consécutives. Dans la colonne **[!UICONTROL Taille]**, saisissez un nombre fixe ou un pourcentage.
-
-     Dans l’exemple ci-dessous, la première vague représente 25 % du nombre total des messages inclus dans l’envoi et démarre immédiatement. Les deux vagues suivantes terminent l’envoi et sont définies pour démarrer à six heures d’intervalle.
-
-     ![](assets/delivery-waves-calendar.png)
-
-   Une règle de typologie spécifique, la **[!UICONTROL Vérification de la planification des vagues]**, garantit que la dernière vague est planifiée avant la limite de validité de la diffusion. Les typologies de campagnes et leurs règles, configurées dans l’onglet **[!UICONTROL Typologie]** des propriétés de diffusion, sont présentées dans [cette section.](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->
-
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >Veillez à ce que les dernières vagues ne dépassent pas la date limite d&#39;envoi qui est définie dans l&#39;onglet **[!UICONTROL Validité]**.Sinon, certains messages peuvent ne pas être envoyés.
-   >
-   >Vous devez également prévoir suffisamment de temps pour les reprises lors de la configuration des dernières vagues. <!--See [this section]().-->
+   >Vous pouvez uniquement définir la taille et le délai entre deux vagues consécutives. Le critère de sélection des destinataires pour chaque vague n&#39;est pas paramétrable.
 
-1. Pour suivre vos envois, accédez aux logs de diffusion. Voir [cette page](send.md)<!--ref TBC-->.
+Vous pouvez définir :
 
-   Vous pouvez visualiser les diffusions qui ont déjà été envoyées dans les vagues traitées (statut **[!UICONTROL Envoyé]**) et celles à envoyer dans les vagues restantes (statut **[!UICONTROL En attente]**).
+    * **Taille de chaque vague**. Par exemple, si vous saisissez **[!UICONTROL 30 %]** dans le champ correspondant, chaque vague représentera 30% des messages inclus dans la diffusion, à l&#39;exception de la dernière vague qui représentera 10% des messages.
+    
+    Dans le **[!UICONTROL Période]**, indiquez le délai entre le démarrage de deux vagues consécutives. Par exemple, si vous saisissez **[!UICONTROL 2d]**, la première vague démarrera immédiatement, la deuxième démarrera dans deux jours, la troisième dans quatre jours, etc.
+    
+    ![](assets/delivery-waves-size.png)
+    
+    * **Calendrier pour l’envoi de chaque vague**.  Par exemple, la première vague représente 25% du nombre total de messages inclus dans la diffusion et démarre immédiatement. Les deux vagues suivantes terminent la diffusion et sont définies pour commencer à six heures d’intervalle.
+    
+    Dans le **[!UICONTROL Début]** , indiquez le délai entre le démarrage de deux vagues consécutives. Dans le **[!UICONTROL Taille]**, saisissez un nombre fixe ou un pourcentage.
+    
+    ![](assets/delivery-waves-calendar.png)
+
+Une règle de typologie spécifique, la **[!UICONTROL Vérification de la planification des vagues]**, garantit que la dernière vague est planifiée avant la limite de validité de la diffusion. Les typologies de campagnes et leurs règles, configurées dans l’onglet **[!UICONTROL Typologie]** des propriétés de diffusion, sont présentées dans [cette section.](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->
+
+>[!IMPORTANT]
+>
+>Veillez à ce que les dernières vagues ne dépassent pas la date limite d’envoi qui est définie dans l’onglet **[!UICONTROL Validité]**.Sinon, certains messages peuvent ne pas être envoyés. En savoir plus sur la période de validité d’une diffusion dans [cette section](delivery-failures.md#valid-period).
+>
+>Vous devez également prévoir suffisamment de temps pour les reprises lors de la configuration des dernières vagues. En savoir plus sur les reprises dans [cette section](delivery-failures.md#retries).
+
+Pour surveiller vos envois, accédez aux logs de diffusion. Voir [cette page](send.md).
+
+Vous pouvez visualiser les diffusions qui ont déjà été envoyées dans les vagues traitées (statut **[!UICONTROL Envoyé]**) et celles à envoyer dans les vagues restantes (statut **[!UICONTROL En attente]**).
 
 Les deux exemples ci-dessous constituent les cas d&#39;utilisation les plus fréquents de plusieurs vagues.
 
@@ -93,11 +96,11 @@ Les deux exemples ci-dessous constituent les cas d&#39;utilisation les plus fré
 
   ![](assets/delivery-waves-ex-ramp-up.png)
 
-* **Campagnes impliquant un centre d&#39;appels**
+* **Campagnes avec un centre d’appels**
 
-  Lorsque vous gérez une campagne téléphonique de fidélisation, votre entreprise a une capacité de traitement des appels limitée pour contacter les abonnés.
+  Lors de la gestion d’une campagne de fidélité par téléphone, votre entreprise dispose d’une capacité limitée de traitement du nombre d’appels pour contacter les abonnés.
 
-  Grâce aux vagues, vous pouvez limiter le nombre des messages à 20 par jour, ce qui correspond à la capacité de traitement quotidien d&#39;un centre d&#39;appels.
+  Grâce aux vagues, vous pouvez limiter le nombre de messages à 20 par jour, en tenant compte par exemple de la capacité de traitement quotidien d&#39;un centre d&#39;appels.
 
   Pour ce faire, sélectionnez l’option **[!UICONTROL Planification de plusieurs vagues de même taille]**. Saisissez **[!UICONTROL 20]** comme taille de vague et **[!UICONTROL 1 j]** dans le champ **[!UICONTROL Période]**.
 

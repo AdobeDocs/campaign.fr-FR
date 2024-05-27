@@ -5,10 +5,10 @@ description: Prestataires, stocks et budgets
 feature: Budget Management, Campaigns
 role: User
 exl-id: 1d4a98e6-af11-4645-864e-29aa5766d9d8
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
-source-wordcount: '1920'
-ht-degree: 100%
+source-wordcount: '1918'
+ht-degree: 99%
 
 ---
 
@@ -148,7 +148,7 @@ Lorsqu’un service est sélectionné, les catégories de coûts correspondant a
 
   ![](assets/supplier-mail-delivery-select.png)
 
-* Pour une diffusion sur canaux mobiles ou par téléphone, le mode de sélection est le même.
+* Pour une diffusion sur canaux mobiles, le mode de sélection est le même.
 * Pour une diffusion par email, la prestation est sélectionnée à partir de l&#39;onglet **[!UICONTROL Avancé]** des propriétés de la diffusion, comme dans l&#39;exemple ci-dessous :
 
   ![](assets/supplier-email-delivery-select.png)

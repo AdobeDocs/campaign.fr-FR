@@ -5,10 +5,10 @@ description: En savoir plus sur l’activité de workflow de déduplication
 feature: Workflows, Targeting Activity
 role: User
 exl-id: f79a979d-bd1d-4a86-8844-563886692941
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
 source-wordcount: '1172'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 
 
-La déduplication supprime les doublons dans le ou les résultats des activités entrantes. La déduplication peut être effectuée en fonction de l&#39;adresse email, du numéro de téléphone ou d&#39;un autre champ.
+La déduplication supprime les doublons dans le ou les résultats des activités entrantes. La déduplication peut être effectuée sur l’adresse électronique, le numéro de téléphone ou un autre champ.
 
 L&#39;activité **[!UICONTROL Déduplication]** est utilisée pour supprimer des lignes dupliquées d&#39;un jeu de données. Par exemple, les enregistrements ci-dessous peuvent être considérés comme des duplicatas, car ils ont la même adresse email et le même téléphone portable et/ou de domicile.
 

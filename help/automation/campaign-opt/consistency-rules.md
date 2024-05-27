@@ -4,10 +4,10 @@ title: Règles de cohérence
 description: Règles de cohérence
 feature: Typology Rules
 exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
-source-git-commit: 8247bed87deb3fb19a01447dab180ed9c97ea96c
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 100%
+source-wordcount: '794'
+ht-degree: 87%
 
 ---
 
@@ -19,11 +19,11 @@ Des règles de **capacité** peuvent par exemple éviter de surcharger la platef
 
 ## Contrôle de la capacité {#control-capacity}
 
-Avant de diffuser des messages, vous devez vous assurer que votre organisation a la capacité de gérer l&#39;envoi (infrastructure matérielle), les réponses que la diffusion peut générer (messages entrants), le nombre d&#39;appels à assurer pour contacter les abonnés (capacités de traitement du centre d&#39;appels), etc.
+Avant de diffuser des messages, vous devez vous assurer que votre organisation a la capacité (infrastructure physique) de traiter la diffusion, les réponses que la diffusion peut générer (messages entrants) et le nombre d&#39;appels à effectuer pour contacter les abonnés (capacité de traitement du centre d&#39;appels), par exemple.
 
-Pour cela, vous devez créer des règles de typologie de type **[!UICONTROL Capacité]**.
+Pour ce faire, créez des **[!UICONTROL Capacité]** règles de typologie.
 
-Dans l&#39;exemple suivant, nous allons créer une règle de typologie pour une campagne de fidélisation par téléphone. Elle permettra de limiter le nombre de messages à 20 par jour, c&#39;est-à-dire la capacité de traitement des appels par un centre d&#39;appels. Cette règle sera ensuite appliquée à deux diffusions afin de suivre son effet par le biais des logs.
+Dans l’exemple suivant, nous créons une règle de typologie pour une campagne de fidélité par téléphone. Nous limitons le nombre de messages à 20 par jour, c&#39;est-à-dire la capacité de traitement quotidien d&#39;un centre d&#39;appels. Une fois la règle appliquée à deux diffusions, nous pouvons suivre la consommation via les logs.
 
 Pour créer une règle de capacité, procédez comme suit :
 
