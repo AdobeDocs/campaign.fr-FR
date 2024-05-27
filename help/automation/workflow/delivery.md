@@ -5,7 +5,7 @@ description: En savoir plus sur l’activité de workflow de type Diffusion
 feature: Workflows, Channels Activity
 role: User
 exl-id: 58574983-86c7-46f5-b41b-bae90171048d
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: d6160d927601f66f450553a6dd6f91d74b0b1104
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 90%
@@ -13,8 +13,6 @@ ht-degree: 90%
 ---
 
 # Diffusion{#delivery}
-
-
 
 Une activité de type **Diffusion** permet de créer une action de diffusion. Elle peut être construite à partir des éléments entrants.
 
