@@ -6,10 +6,10 @@ role: User
 level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
-source-git-commit: d6160d927601f66f450553a6dd6f91d74b0b1104
+source-git-commit: 5f62addc95197ce5f4f80c026cc51ac14e61ff58
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 91%
+source-wordcount: '185'
+ht-degree: 85%
 
 ---
 
@@ -21,6 +21,7 @@ Cette page répertorie les dernières mises à jour de la documentation de [!DNL
 ## Mai 2024 {#may-2024}
 
 * La liste des canaux et types de diffusions est désormais répertoriée dans la section [cette page](create-message.md).
+* Les paramètres de diffusion et les sections de gestion des vagues ont été réorganisés et améliorés. [En savoir plus](../send/configure-and-send.md).
 * Une note a été ajoutée pour préciser que les activités **[!UICONTROL Changer la dimension]** et **[!UICONTROL Modifier la source de données]** ne doivent pas être ajoutées sur une même ligne et doivent être séparées par une activité **[!UICONTROL Enrichissement]**. Pour en savoir plus, consultez les sections [Changer la dimension](../../automation/workflow/change-dimension.md) et [Modifier la source de données](../../automation/workflow/change-data-source.md).
 
 ## Février 2024 {#feb-2024}
