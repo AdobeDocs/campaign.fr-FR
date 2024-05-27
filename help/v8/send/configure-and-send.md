@@ -5,14 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
+source-git-commit: 52863e9cb3b9ccf03c8e2b838827af862b30e3b9
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 78%
+source-wordcount: '1263'
+ht-degree: 69%
 
 ---
 
 # Configurer et envoyer la diffusion {#configure-delivery}
+
+Accédez aux paramètres de la diffusion pour configurer d&#39;autres paramètres et définir comment envoyer vos messages. Vous pouvez définir une diffusion. [priority](#delivery-priority), configurez [vagues](#sending-using-multiple-waves)et tester l&#39;envoi de la diffusion. Une fois cette configuration terminée, vous pouvez confirmer l’envoi, comme décrit dans la section [cette section](#confirm-delivery). Les messages sont alors envoyés immédiatement ou selon la diffusion. [planning](#schedule-delivery-sending).
 
 ## Configurer des paramètres supplémentaires {#delivery-additional-parameters}
 
@@ -20,25 +22,27 @@ Avant d’envoyer la diffusion, vous pouvez définir les paramètres d’envoi d
 
 ![](assets/delivery-properties-delivery.png)
 
-* **[!UICONTROL Priorité de diffusion]** : utilisez cette option pour modifier l’ordre d’envoi de vos diffusions en configurant leur niveau de priorité, de **[!UICONTROL Très basse]** à **[!UICONTROL Très haute]** (la valeur par défaut étant **[!UICONTROL Normale]**).
+### Delivery priority {#delivery-priority}
 
-* **[!UICONTROL Nombre de messages groupés]** : cette option permet de définir le nombre de messages regroupés dans un même package d’envoi XML. Si le paramètre est défini sur 0, les messages sont automatiquement regroupés. La taille du paquet est définie par le calcul `<delivery size>/1024`, avec un minimum de 8 messages et un maximum de 256 messages par package.
+Utilisez la variable **[!UICONTROL Priorité de diffusion]** pour modifier l&#39;ordre d&#39;envoi de vos diffusions en définissant leur niveau de priorité, à partir de **[!UICONTROL Très faible]** to **[!UICONTROL Très élevée]** (la valeur par défaut étant **[!UICONTROL Normal]**).
 
-  >[!IMPORTANT]
-  >
-  >Lorsque vous créez la diffusion en dupliquant une diffusion existante, vous réinitialisez également ce paramètre.
+### Quantité par lot
 
-* **[!UICONTROL Envoyer en plusieurs vagues]** : cette option vous permet d’envoyer vos messages par lots, plutôt qu’à toute votre audience en même temps. [En savoir plus](#sending-using-multiple-waves).
+Utilisez la variable  **[!UICONTROL Quantité de lot de messages]** pour définir le nombre de messages regroupés dans le même package de diffusion XML. Si le paramètre est défini sur 0, les messages sont automatiquement regroupés. La taille du paquet est définie par le calcul `<delivery size>/1024`, avec un minimum de 8 messages et un maximum de 256 messages par package.
 
-* **[!UICONTROL Tester la diffusion via SMTP]** : cette option vous permet de tester la diffusion par SMTP. La diffusion est traitée jusqu’à la connexion au serveur SMTP mais n’est pas envoyée : pour chaque destinataire de la diffusion, Campaign se connecte au serveur du fournisseur SMTP, exécute la commande SMTP RCPT TO et ferme la connexion avant la commande SMTP DATA.
+>[!IMPORTANT]
+>
+>Lorsque vous créez la diffusion en dupliquant une diffusion existante, vous réinitialisez également ce paramètre.
 
-  >[!NOTE]
-  >
-  >* Cette option ne doit pas être définie en midsourcing.
-  >
-  >* En savoir plus sur la configuration du serveur SMTP dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=fr#smtp-relay){target="_blank"}.
+### Tester l&#39;envoi de la diffusion
 
-* **[!UICONTROL E-mail Cci]** : cette option vous permet de stocker vos e-mails dans un système externe à l’aide de l’option Cci en ajoutant simplement une adresse e-mail à la cible des messages. [En savoir plus](email-parameters.md).
+Utilisez la variable  **[!UICONTROL Tester la diffusion SMTP]** pour tester l&#39;envoi par SMTP. La diffusion est traitée jusqu’à la connexion au serveur SMTP mais n’est pas envoyée : pour chaque destinataire de la diffusion, Campaign se connecte au serveur du fournisseur SMTP, exécute la commande SMTP RCPT TO et ferme la connexion avant la commande SMTP DATA.
+
+>[!NOTE]
+>
+>* Cette option ne doit pas être définie en midsourcing.
+>
+>* En savoir plus sur la configuration du serveur SMTP dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=fr#smtp-relay){target="_blank"}.
 
 ## Envoi en plusieurs vagues {#sending-using-multiple-waves}
 
