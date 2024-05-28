@@ -5,9 +5,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 306d827883a0c3a15fd52b8c9fb566d028f22360
+source-git-commit: 607ef2ab8f1f1c7400451019e188c70f8c7d6091
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1178'
 ht-degree: 74%
 
 ---
@@ -24,7 +24,7 @@ En outre, en tant que client ou cliente, assurez-vous d’utiliser les dernière
 
 _mercredi 28 mai 2024_
 
-### Migration des informations d’identification du compte de service (JWT) vers les informations d’identification OAuth serveur à serveur  {#change-8-5-3}
+### Migration vers OAuth Server-to-Server credential {#change-8-5-3}
 
 * À compter de cette version, les informations d’identification du compte de service (JWT) étant abandonnées par Adobe, les intégrations sortantes de Campaign avec les solutions et applications d’Adobe dépendent désormais des informations d’identification OAuth serveur à serveur. Adobe effectuera la migration JWT vers OAuth pour vos intégrations sortantes, telles que l’intégration Campaign-Analytics ou l’intégration des Triggers Experience Cloud.
 
