@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: b280be52621890c9bd840182d3ad0389912568d4
+source-git-commit: 306d827883a0c3a15fd52b8c9fb566d028f22360
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 84%
+source-wordcount: '1183'
+ht-degree: 74%
 
 ---
 
@@ -19,6 +19,21 @@ Adobe Campaign fait l&#39;objet de mises à jour régulières. Cette fréquence
 En tant qu’utilisateur ou utilisatrice de Managed Cloud Services, votre instance est mise à niveau par Adobe avec chaque nouvelle version. Adobe vous contactera et mettra à niveau vos environnements. La console cliente Campaign **doit être mise à niveau vers la même version** que les serveurs Campaign. Découvrez comment mettre à niveau votre console cliente sur cette [page](../start/connect.md#upgrade-ac-console).
 
 En outre, en tant que client ou cliente, assurez-vous d’utiliser les dernières versions prises en charge des systèmes répertoriés dans la [matrice de compatibilité](compatibility-matrix.md).
+
+## Version 8.5.3 {#release-8-5-3}
+
+_mercredi 28 mai 2024_
+
+### Migration des informations d’identification du compte de service (JWT) vers les informations d’identification OAuth serveur à serveur  {#change-8-5-3}
+
+* À compter de cette version, les informations d’identification du compte de service (JWT) étant abandonnées par Adobe, les intégrations sortantes de Campaign avec les solutions et applications d’Adobe dépendent désormais des informations d’identification OAuth serveur à serveur. Adobe effectuera la migration JWT vers OAuth pour vos intégrations sortantes, telles que l’intégration Campaign-Analytics ou l’intégration des Triggers Experience Cloud.
+
+  Si vous avez implémenté des intégrations entrantes avec Campaign, vous devez migrer votre compte technique comme décrit dans la section [cette documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}. Les informations d’identification de compte de service (JWT) existantes continueront à fonctionner jusqu’à ce que **27 janvier 2025**. En outre, Developer Console continuera à prendre en charge la création de nouvelles informations d’identification de compte de service (JWT) jusqu’à ce que **3 juin 2024**. Les informations d’identification d’un nouveau compte de service (JWT) ne peuvent plus être créées ni ajoutées à un projet après cette date.
+
+
+### Correctifs {#fixes-8-5-3}
+
+NEO-70263, NEO-64984, NEO-63657, NEO-63387, NEO-62964, NEO-62750, NEO-62686, NEO-595 44, NEO-52542
 
 ## Version 8.7.1 {#release-8-7-1}
 
