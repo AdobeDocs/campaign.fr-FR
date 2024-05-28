@@ -3,10 +3,10 @@ title: Utiliser les données d'un workflow
 description: Découvrez comment utiliser les données d'un workflow.
 feature: Workflows, Data Management
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
-source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
+source-git-commit: 41ba91fca46747760fc42ea6cd78600abbd74c02
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 90%
+source-wordcount: '736'
+ht-degree: 85%
 
 ---
 
@@ -42,9 +42,9 @@ Sélectionnez pour cela le menu correspondant :
 
 * **[!UICONTROL Analyser la cible...]**
 
-  Ce menu donne accès à l&#39;assistant d&#39;analyse descriptive, qui permet de produire des statistiques et des rapports sur les données de la transition.
+  Utilisez ce menu pour accéder à l&#39;assistant d&#39;analyse descriptive qui permet de générer des statistiques et des rapports sur les données de la transition.
 
-  Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target="_blank"}.
+  Découvrez comment utiliser l’assistant d’analyse descriptive dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target="_blank"}.
 
 Les données de la cible sont purgées au fur et à mesure de l&#39;exécution du workflow. Seule la dernière table de travail est accessible. Vous pouvez paramétrer le workflow pour que toutes les tables de travail restent accessibles : vérifiez les **[!UICONTROL Conserver le résultat des populations intermédiaires entre deux exécutions]** dans les propriétés du workflow.
 
