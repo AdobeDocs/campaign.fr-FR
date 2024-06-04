@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1322'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -24,14 +24,14 @@ Adobe Campaign v8 propose les canaux de diffusion suivants :
 
 * **Canal e-mail** : les diffusions e-mail permettent d&#39;envoyer des e-mails personnalisés à la population cible. [En savoir plus](#gs-channel-email)
 
-* **Canaux mobiles**: les diffusions sur canaux mobiles permettent d&#39;envoyer des messages personnalisés sur appareils mobiles à la population cible. [En savoir plus](#gs-channel-sms)
+* **Canaux mobiles** : les diffusions sur canaux mobiles permettent d’envoyer des messages personnalisés sur des appareils mobiles à la population cible. [En savoir plus](#gs-channel-sms)
 
-* **Canal des applications mobiles**: les diffusions d’applications mobiles vous permettent d’envoyer des notifications aux appareils iOS et Android. [En savoir plus](#gs-channel-push)
+* **Canal des applications mobiles** : les diffusions d’applications mobiles vous permettent d’envoyer des notifications aux systèmes iOS et Android. [En savoir plus](#gs-channel-push)
 
-* **Canal courrier** : les diffusions courrier permettent de générer un fichier d&#39;extraction contenant les données relatives à la population cible. [En savoir plus](#gs-channel-direct)
+* **Canal courrier** : les diffusions courrier permettent de générer un fichier d’extraction contenant les données relatives à la population cible. [En savoir plus](#gs-channel-direct)
 
 
-  Les autres canaux sont décrits sur [cette section](#other-channels).
+  Les autres canaux sont décrits sur [cette page](#other-channels).
 
   >[!NOTE]
   >
@@ -46,12 +46,12 @@ Le [canal Email](../send/direct-mail.md) est l&#39;un des principaux canaux dans
 Vous pouvez envoyer différents types d&#39;emails :
 
 * Emails uniques : emails que vous pouvez envoyer une fois à une cible définie. Ils sont généralement utilisés pour promouvoir un contenu spécifique qui ne sera préparé et envoyé qu&#39;une seule fois (newsletter, email promotionnel, etc.).
-* Emails récurrents : dans une campagne, envoyez régulièrement le même email et agrégez chaque envoi et ses rapports de manière périodique. Le même email est envoyé, mais généralement à une cible différente, en fonction de la cible éligible pour le jour de l’envoi. Un exemple courant est un email d&#39;anniversaire. Pour plus d&#39;informations, consultez la section [Diffusions récurrentes](../../automation/workflow/recurring-delivery.md).
-* Emails transactionnels : emails unitaires qui sont déclenchés en fonction du comportement de vos clients. Pour plus d&#39;informations, consultez la section [Messages transactionnels](../send/transactional.md).
+* E-mails récurrents : dans une campagne, envoyez un même e-mail régulièrement et agrégez chaque envoi et ses rapports de façon périodique. Le même e-mail est envoyé, mais généralement à une cible différente, selon la cible éligible au jour de l’envoi. Citons comme exemple les e-mails d’anniversaire. Pour plus d’informations, consultez la section [Diffusions récurrentes](../../automation/workflow/recurring-delivery.md).
+* Emails transactionnels : e-mails unitaires qui sont déclenchés en fonction du comportement de vos clientes et clients. Pour plus d’informations, consultez la section [Messages transactionnels](../send/transactional.md).
 
-Pour en savoir plus sur l’utilisation des diffusions et les recommandations, consultez Adobe Campaign Classic [Bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=fr#sending-messages){target="_blank"}
+Pour plus d’informations sur l’utilisation des diffusions et les recommandations relatives à celles-ci, consultez les [Bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=fr#sending-messages){target="_blank"} d’Adobe Campaign Classic.
 
-Pour plus d&#39;informations sur les différents types de diffusion, consultez [cette section](#types-of-deliveries).
+Pour plus d’informations sur les différents types de diffusion, consultez [cette section](#types-of-deliveries).
 
 ### Canal mobile {#gs-channel-sms}
 
@@ -69,28 +69,28 @@ Pour diffuser des SMS ou des messages LINE vers un téléphone mobile, il vous f
 
 ### Canal des notifications push {#gs-channel-push}
 
-Vous pouvez utiliser Adobe Campaign pour envoyer des données personnalisées et segmentées. [notifications push](../send/push.md) sur les appareils mobiles iOS et Android, via des applications dédiées. Une fois les étapes de configuration et d’intégration effectuées, les diffusions iOS et Android peuvent être créées et envoyées avec Adobe Campaign. Vous pouvez également concevoir et envoyer des notifications enrichies avec des images ou des vidéos aux appareils Android.
+Vous pouvez utiliser Adobe Campaign pour envoyer des [notifications push](../send/push.md) personnalisées et segmentées sur des appareils mobiles iOS et Android via des applications dédiées. Une fois les procédures de configuration et d’intégration effectuées, les diffusions sur iOS et Android peuvent être créées et envoyées avec Adobe Campaign. Vous pouvez également concevoir et envoyer des notifications enrichies avec des images ou des vidéos aux appareils Android.
 
 ### Canal courrier {#gs-channel-direct}
 
-[Canal Courrier](../send/direct-mail.md) est un canal hors ligne qui vous permet de créer, personnaliser et générer un fichier externe à partager avec vos fournisseurs de services postaux. Utilisez ce canal pour orchestrer les canaux en ligne et hors ligne dans vos parcours clients.
+Le [canal Courrier](../send/direct-mail.md) est un canal hors ligne qui vous permet de créer, personnaliser et générer un fichier externe à partager avec vos fournisseurs de services postaux. Utilisez ce canal pour orchestrer les canaux en ligne et hors ligne dans vos parcours clientèle.
 
-Lors de la préparation d&#39;une diffusion courrier, Adobe Campaign génère un fichier comprenant tous les profils ciblés et les informations de contact sélectionnées (adresse postale, par exemple). Vous pouvez ensuite envoyer ce fichier à votre opérateur de services postaux qui se chargera de l&#39;envoi réel.
+Lors de la préparation d’une diffusion courrier, Adobe Campaign génère un fichier comprenant tous les profils ciblés et les informations de contact sélectionnées (adresse postale, par exemple). Vous pouvez ensuite envoyer ce fichier à votre fournisseur de services postaux qui se chargera de l’envoi.
 
 
 ### Autres canaux {#other-channels}
 
-Adobe Campaign est également fourni avec un modèle de diffusion Téléphone, qui est utilisé pour créer des diffusions externes. L’utilisation de ce canal implique l’implémentation de méthodologies dédiées pour traiter les fichiers de sortie. Les étapes de configuration sont identiques à celles du [canal Courrier](../send/direct-mail.md).
+Adobe Campaign propose un modèle de diffusion téléphone, utilisé pour créer des diffusions externes. L’utilisation de ce canal implique la configuration de méthodologies dédiées pour traiter les fichiers de sortie. Les étapes de configuration sont identiques à celles du [canal Courrier](../send/direct-mail.md).
 
 >[!NOTE]
 >
->Le canal Téléphone n’est pas un canal intégré. Sa mise en œuvre nécessite la participation d&#39;Adobe Consulting ou d&#39;un partenaire Adobe. Pour plus d&#39;informations, contactez votre représentant Adobe.
+>Le canal téléphonique n’est pas un canal intégré. Sa mise en œuvre nécessite la participation d&#39;Adobe Consulting ou d&#39;un partenaire Adobe. Pour plus d&#39;informations, contactez votre représentant Adobe.
 
-Les diffusions de type &#39;Autre&#39; utilisent un modèle technique spécifique qui n&#39;exécute pas de processus : elles permettent ainsi de gérer les actions marketing exécutées en dehors de la plateforme Adobe Campaign.
+Les diffusions de type « Autre » utilisent un modèle technique spécifique qui n’exécute aucun processus. Elles permettent notamment de gérer des actions marketing exécutées en dehors de la plateforme Adobe Campaign.
 
-Ce canal n&#39;a aucun mécanisme spécifique. Il s’agit d’un canal générique qui possède sa propre option de routage de compte externe, son type de modèle de diffusion et son activité de workflow de campagne, tout comme tout autre canal de communication disponible dans Adobe Campaign. Ce canal a été conçu à des fins de description uniquement, pour définir par exemple les diffusions pour lesquelles vous souhaitez conserver une trace de la cible d&#39;une campagne effectuée dans un outil autre qu&#39;Adobe Campaign.
+Ce canal n’a aucun mécanisme spécifique. Il s’agit d’un canal générique qui possède une option de routage de compte externe, un type de modèle de diffusion et une activité de workflow de campagne, tout comme n’importe quel autre canal de communication disponible dans Adobe Campaign. Ce canal a été conçu à des fins de description uniquement, pour définir par exemple les diffusions pour lesquelles vous souhaitez conserver une trace de la cible d’une campagne effectuée dans un outil autre qu’Adobe Campaign.
 
-## Choisissez le type de diffusion {#types-of-deliveries}
+## Choisir le type de diffusion {#types-of-deliveries}
 
 Campaign contient trois types d&#39;objets de diffusion :
 
@@ -104,13 +104,13 @@ Les diffusions peuvent être créées à partir de la liste de diffusions ou au 
 
 ### Diffusion récurrente {#recurring-delivery}
 
-A **diffusion récurrente** est disponible dans le contexte d’un workflow. Il permet de créer une diffusion à chaque exécution de l&#39;activité. Cela évite d&#39;avoir à créer une diffusion pour les tâches récurrentes. Par exemple, si vous exécutez ce type d&#39;activité une fois par mois, vous obtiendrez 12 diffusions au bout d&#39;un an.
+Une **diffusion récurrente** est disponible dans le contexte d’un workflow. Elle permet de créer une diffusion à chaque exécution de l’activité. Ainsi, vous n’avez pas à créer de diffusion pour les tâches récurrentes. Par exemple, si vous exécutez ce type d’activité une fois par mois, vous obtiendrez 12 diffusions au bout d’un an.
 
-Les diffusions récurrentes sont créées dans des workflows via le [Activité de diffusion récurrente](../../automation/workflow/recurring-delivery.md). Un exemple d&#39;utilisation de cette activité est présenté dans cette section : [Créer une diffusion récurrente dans un workflow de ciblage](../../automation/workflow/send-a-birthday-email.md).
+Les diffusions récurrentes sont créées dans des workflows via l’[activité Diffusions récurrentes](../../automation/workflow/recurring-delivery.md). Vous trouverez un exemple d’utilisation de cette activité présenté dans cette section : [Créer une diffusion récurrente dans un workflow de ciblage](../../automation/workflow/send-a-birthday-email.md).
 
-### Diffusion au fil de l&#39;eau {#continuous-delivery}
+### Diffusion au fil de l’eau {#continuous-delivery}
 
-A **diffusion continue** est disponible dans le contexte d’un workflow. Il permet d&#39;ajouter de nouveaux destinataires à une diffusion existante, ce qui évite d&#39;avoir à créer une diffusion à chaque exécution.
+Une **diffusion au fil de l’eau** est disponible dans le contexte d’un workflow. Elle permet d’ajouter de nouvelles personnes destinataires à une diffusion existante, ce qui évite d’avoir à créer une diffusion à chaque exécution.
 
 Si des informations liées à diffusion changent (contenu, nom, etc.), un nouvel objet de diffusion est créé lors de l&#39;exécution de la diffusion. Si aucune information n&#39;a été modifiée, le même objet de diffusion est réutilisé, et les logs de diffusion et de tracking sont ajoutés au même objet.
 
@@ -153,9 +153,9 @@ Une fois votre message créé et son contenu conçu et testé, vous pouvez chois
 
   ![](assets/schedule-send.png)
 
-  Découvrez comment planifier l’envoi de vos diffusions dans [cette page](../send/configure-and-send.md)
+  Découvrir comment planifier l’envoi de vos diffusions sur [cette page](../send/configure-and-send.md)
 
-  Voir aussi [Cas pratique : découvrez comment planifier et envoyer un email d’anniversaire](../../automation/workflow/send-a-birthday-email.md)
+  Voir aussi ce [Cas d’utilisation : découvrir comment planifier et envoyer un e-mail d’anniversaire](../../automation/workflow/send-a-birthday-email.md)
 
 
 ## Ajouter de la personnalisation{#personalization}

@@ -6,9 +6,9 @@ feature: Workflows, Targeting Activity
 role: User
 exl-id: f79a979d-bd1d-4a86-8844-563886692941
 source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1172'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 95%
 
 
 
-La déduplication supprime les doublons dans le ou les résultats des activités entrantes. La déduplication peut être effectuée sur l’adresse électronique, le numéro de téléphone ou un autre champ.
+La déduplication supprime les doublons dans le ou les résultats des activités entrantes. La déduplication peut être effectuée en fonction de l’adresse e-mail, du numéro de téléphone ou d’un autre champ.
 
 L&#39;activité **[!UICONTROL Déduplication]** est utilisée pour supprimer des lignes dupliquées d&#39;un jeu de données. Par exemple, les enregistrements ci-dessous peuvent être considérés comme des duplicatas, car ils ont la même adresse email et le même téléphone portable et/ou de domicile.
 
@@ -172,6 +172,6 @@ Chacun des événements entrants doit spécifier une cible définie par ces para
 * schema
 * recCount
 
-Ce triplet de valeurs identifie la cible résultant de la déduplication. **[!UICONTROL tableName]** est le nom de la table qui enregistre les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d’éléments dans le tableau.
+Ce jeu de trois valeurs identifie la cible résultant de la déduplication. **[!UICONTROL tableName]** est le nom du tableau qui enregistre les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d’éléments dans le tableau.
 
-La transition associée au complémentaire possède les mêmes paramètres.
+La transition associée au complément possède les mêmes paramètres.

@@ -4,7 +4,7 @@ description: Liste des fonctionnalités et améliorations des versions 2022 de C
 feature: Release Notes
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
 source-git-commit: 4fecae16b2db0f174de6d77acf5b846906073aeb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1925'
 ht-degree: 100%
 

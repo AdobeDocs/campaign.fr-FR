@@ -5,9 +5,9 @@ description: En savoir plus sur le cycle de vie d’un workflow
 feature: Workflows
 exl-id: 4356b90c-9d7c-49ef-88cd-716b2ccdb7f0
 source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -37,6 +37,6 @@ Cela signifie que les deux premières activités ont été exécutées avec succ
 
 Les caractères **574 - Ok** affichés au-dessus de la transition suivant l&#39;activité **Diffusion** signifient que la préparation de la diffusion a ciblé 574 destinataires et que l&#39;opération s&#39;est déroulée correctement. Ces informations, ajoutées sur les transitions au moment de l&#39;exécution, sont calculées par les activités traitant des données.
 
-Le workflow est donc démarré et attend la décision d&#39;un opérateur du groupe spécifié dans l&#39;activité **Validation**. Les opérateurs appartenant au groupe et ayant une adresse email ou un numéro de téléphone portable sont notifiés.
+Le workflow est donc démarré et attend la décision d&#39;un opérateur du groupe spécifié dans l&#39;activité **Validation**. Les opérateurs et opératrices du groupe ayant une adresse e-mail ou un numéro de mobile renseigné reçoivent une notification.
 
 Pour plus d’informations sur la manière de surveiller vos workflows, reportez-vous à [cette section](monitor-workflow-execution.md).

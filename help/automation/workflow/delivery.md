@@ -6,9 +6,9 @@ feature: Workflows, Channels Activity
 role: User
 exl-id: 58574983-86c7-46f5-b41b-bae90171048d
 source-git-commit: d6160d927601f66f450553a6dd6f91d74b0b1104
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1040'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Pour la paramétrer, éditez l&#39;activité et renseignez les options de la dif
 
      ![](assets/specified_transition_option_exemple.png)
 
-   * Sélectionner directement la diffusion concernée. Pour cela, sélectionnez l&#39;option **[!UICONTROL Explicite]** et choisissez la diffusion dans la liste déroulante du champ **[!UICONTROL Diffusion]**.
+   * Sélectionner directement la diffusion concernée. Pour cela, sélectionnez l’option **[!UICONTROL Explicite]** et choisissez la diffusion dans la liste déroulante du champ **[!UICONTROL Diffusion]**.
 
      La liste propose les diffusions non terminées présentes dans le dossier de **Diffusions** par défaut. Pour accéder aux autres diffusions, cliquez sur l&#39;icône **[!UICONTROL Choisir le lien]**.
 
@@ -75,10 +75,10 @@ Pour la paramétrer, éditez l&#39;activité et renseignez les options de la dif
    Sélectionnez le type d&#39;action à effectuer parmi les options disponibles :
 
    * **[!UICONTROL Enregistrer]** : cette option permet de créer la diffusion et de l&#39;enregistrer. Aucune analyse ni envoi n&#39;est effectué.
-   * **[!UICONTROL Estimer la cible]** : cette option permet de calculer la cible de la diffusion afin d&#39;en évaluer son potentiel (première phase d&#39;analyse). Cette action équivaut à sélectionner l&#39;option **[!UICONTROL Estimer la population à cibler]** puis **[!UICONTROL Analyser]** lors de l&#39;envoi d&#39;une diffusion à la cible principale avec **Delivery**.
-   * **[!UICONTROL Préparer]**: cette option permet de lancer le processus d&#39;analyse complet (calcul de la cible et préparation du contenu). La diffusion n&#39;est pas envoyée. Cette action équivaut à sélectionner les options **[!UICONTROL Diffuser dès que possible]** puis **[!UICONTROL Analyser]** lors de l&#39;envoi d&#39;une diffusion à la cible principale avec **Delivery**.
-   * **[!UICONTROL Envoyer un bon à tirer]**: cette option permet d&#39;envoyer un BAT de la diffusion. Cette action équivaut à cliquer sur le bouton **[!UICONTROL Envoyer un bon à tirer]** dans la barre d&#39;outils d&#39;une diffusion avec **Diffusion**
-   * **[!UICONTROL Préparer et démarrer]** : cette option lance le processus d&#39;analyse complet (calcul de la cible et préparation du contenu) et envoie la diffusion. Cette action équivaut à sélectionner les options **[!UICONTROL Diffuser dès que possible]**, **[!UICONTROL Analyser]**, puis **[!UICONTROL Confirmer l&#39;envoi]** lors de l&#39;envoi d&#39;une diffusion à la cible principale avec **Delivery**.
+   * **[!UICONTROL Estimer la cible]** : cette option permet de calculer la cible de la diffusion afin d&#39;en évaluer son potentiel (première phase d&#39;analyse). Cette action équivaut à sélectionner l’option **[!UICONTROL Estimer la population à cibler]** puis à cliquer sur **[!UICONTROL Analyser]** lors de l’envoi d’une diffusion à la cible principale avec **Diffusion**.
+   * **[!UICONTROL Préparer]** : cette option permet de lancer le processus d’analyse complet (calcul de la cible et préparation du contenu). La diffusion n’est pas envoyée. Cette action équivaut à sélectionner l’option **[!UICONTROL Diffuser dès que possible]** puis à cliquer sur **[!UICONTROL Analyser]** lors de l’envoi d’une diffusion à la cible principale avec **Diffusion**.
+   * **[!UICONTROL Envoyer un BAT]** : cette option permet d’envoyer un BAT de la diffusion. Cette action équivaut à cliquer sur le bouton **[!UICONTROL Envoyer un BAT]** dans la barre d’outils d’une diffusion avec **Diffusion**.
+   * **[!UICONTROL Préparer et démarrer]** : cette option lance le processus d’analyse complet (calcul de la cible et préparation du contenu) et envoie la diffusion. Cette action équivaut à sélectionner les options **[!UICONTROL Diffuser dès que possible]**, **[!UICONTROL Analyser]**, puis **[!UICONTROL Confirmer l&#39;envoi]** lors de l&#39;envoi d&#39;une diffusion à la cible principale avec **Delivery**.
 
    L’activité **[!UICONTROL Agir sur une diffusion]**, placée ultérieurement dans le workflow, vous permettra de lancer toutes les étapes restantes nécessaires au démarrage de la diffusion (calcul de la cible, préparation du contenu, diffusion). Pour plus d&#39;informations, consultez la section [Agir sur une diffusion](delivery-control.md).
 
@@ -159,9 +159,9 @@ Chacun des événements entrants doit spécifier une cible définie par ces para
 * schema
 * recCount
 
-Ce triplet de valeurs identifie la cible résultant de la diffusion. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d’éléments dans le tableau.
+Ce jeu de trois valeurs identifie la cible résultant de la diffusion. **[!UICONTROL tableName]** est le nom du tableau qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d’éléments dans le tableau.
 
-La transition associée au complémentaire possède les mêmes paramètres.
+La transition associée au complément possède les mêmes paramètres.
 
 >[!NOTE]
 >

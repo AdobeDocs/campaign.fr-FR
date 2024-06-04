@@ -3,9 +3,9 @@ title: Notes de mise à jour de Campaign v8 (console) 2023
 description: Liste des fonctionnalités et améliorations des versions 2023 de Campaign v8.
 feature: Release Notes
 source-git-commit: 4fecae16b2db0f174de6d77acf5b846906073aeb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '381'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -51,6 +51,6 @@ _14 février 2024_
 
 ### Correctifs {#fixes-8-6-1}
 
-Les problèmes suivants ont été corrigés dans cette version :
+Les problèmes suivants ont été corrigés dans cette version :
 
-NEO-67892, NEO-67235, NEO-66797, NEO-66462, NEO-65091, NEO-65036, NEO-64984, NEO-646 80, NEO-63973, NEO-63879, NEO-63815, NEO-63657, NEO-63539, NEO-63387, NEO-63294, NEO-6 3174, NEO-62964, NEO-62750, NEO-62686, NEO-62455, NEO-62406, NEO-61580, NEO-61199 O-60786, NEO-59544, NEO-59198, NEO-59059, NEO-58637, NEO-55197, NEO-52542, NEO-5084 8, NEO-47789
+NEO-67892, NEO-67235, NEO-66797, NEO-66462, NEO-65091, NEO-65036, NEO-64984, NEO-64680, NEO-63973, NEO-63879, NEO-63815, NEO-63657, NEO-63539, NEO-63387, NEO-63294, NEO-63174, NEO-62964, NEO-62750, NEO-62686, NEO-62455, NEO-62406, NEO-61580, NEO-61199, NEO-60786, NEO-59544, NEO-59198, NEO-59059, NEO-58637, NEO-55197, NEO-52542, NEO-50488, NEO-47789

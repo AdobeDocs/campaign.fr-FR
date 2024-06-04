@@ -5,9 +5,9 @@ description: Règles de cohérence
 feature: Typology Rules
 exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
 source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '794'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ Des règles de **capacité** peuvent par exemple éviter de surcharger la platef
 
 ## Contrôle de la capacité {#control-capacity}
 
-Avant de diffuser des messages, vous devez vous assurer que votre organisation a la capacité (infrastructure physique) de traiter la diffusion, les réponses que la diffusion peut générer (messages entrants) et le nombre d&#39;appels à effectuer pour contacter les abonnés (capacité de traitement du centre d&#39;appels), par exemple.
+Avant de diffuser des messages, vous devez vous assurer que votre organisation a la capacité (infrastructure matérielle) de traiter la diffusion, les réponses que la diffusion peut générer (messages entrants) et le nombre d’appels à assurer pour contacter les personnes abonnées (capacité de traitement du centre d’appel), etc.
 
-Pour ce faire, créez des **[!UICONTROL Capacité]** règles de typologie.
+Pour cela, créez des règles de typologie de type **[!UICONTROL Capacité]**.
 
-Dans l’exemple suivant, nous créons une règle de typologie pour une campagne de fidélité par téléphone. Nous limitons le nombre de messages à 20 par jour, c&#39;est-à-dire la capacité de traitement quotidien d&#39;un centre d&#39;appels. Une fois la règle appliquée à deux diffusions, nous pouvons suivre la consommation via les logs.
+Dans l’exemple suivant, nous créons une règle de typologie pour une campagne de fidélité par téléphone. Nous limitons le nombre des messages à 20 par jour, ce qui correspond à la capacité de traitement quotidienne d’un centre d’appel. Une fois la règle appliquée à deux diffusions, nous pouvons suivre la consommation via les journaux.
 
 Pour créer une règle de capacité, procédez comme suit :
 
@@ -109,7 +109,7 @@ Le nombre maximum de messages qui peuvent être traités est réparti proportion
 
 ## Suivi de la consommation {#monitoring-consumption}
 
-Par défaut, les règles de capacité n&#39;ont qu&#39;un caractère indicatif. Sélectionnez l&#39;option **[!UICONTROL Exclure de la cible les messages en sur-capacité]** pour que la charge définie ne puisse pas être dépassée. Dans ce cas, les messages excédentaires seront automatiquement exclus des diffusions utilisant cette règle de typologie.
+Par défaut, les règles de capacité n’ont qu’un caractère indicatif. Sélectionnez l’option **[!UICONTROL Exclure de la cible les messages en sur-capacité]** pour que la charge définie ne puisse pas être dépassée. Dans ce cas, les messages excédentaires seront automatiquement exclus des diffusions utilisant cette règle de typologie.
 
 Pour suivre les consommations, consultez les valeurs affichées dans la colonne **[!UICONTROL Consommé]** de l&#39;onglet **[!UICONTROL Capacité]** de la règle de typologie.
 

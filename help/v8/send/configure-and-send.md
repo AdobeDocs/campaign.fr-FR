@@ -6,15 +6,15 @@ role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
 source-git-commit: 070aa96187c5654e40665cb5b23329d3f7d508d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1278'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 # Configurer et envoyer la diffusion {#configure-delivery}
 
-Accédez aux paramètres de la diffusion pour configurer d&#39;autres paramètres et définir comment envoyer vos messages. Vous pouvez définir une diffusion. [priority](#delivery-priority), configurez [vagues](#sending-using-multiple-waves)et tester l&#39;envoi de la diffusion. Une fois cette configuration terminée, vous pouvez confirmer l’envoi, comme décrit dans la section [cette section](#confirm-delivery). Les messages sont alors envoyés immédiatement ou selon la diffusion. [planning](#schedule-delivery-sending).
+Accédez aux paramètres de diffusion pour configurer d’autres paramètres et définir comment envoyer vos messages. Vous pouvez définir une [priorité](#delivery-priority) de diffusion, configurer des [vagues](#sending-using-multiple-waves) et tester l’envoi de votre diffusion. Une fois cette configuration terminée, vous pouvez confirmer l’envoi, comme décrit dans [cette section](#confirm-delivery). Les messages sont alors envoyés immédiatement ou selon le [planning](#schedule-delivery-sending) de diffusion.
 
 ## Configurer des paramètres supplémentaires {#delivery-additional-parameters}
 
@@ -22,21 +22,21 @@ Avant d’envoyer la diffusion, vous pouvez définir les paramètres d’envoi d
 
 ![](assets/delivery-properties-delivery.png)
 
-### Delivery priority {#delivery-priority}
+### Priorité de diffusion {#delivery-priority}
 
-Utilisez la variable **[!UICONTROL Priorité de diffusion]** pour modifier l&#39;ordre d&#39;envoi de vos diffusions en définissant leur niveau de priorité, à partir de **[!UICONTROL Très faible]** to **[!UICONTROL Très élevée]** (la valeur par défaut étant **[!UICONTROL Normal]**).
+Utilisez l’option **[!UICONTROL Priorité de diffusion]** pour modifier l’ordre d’envoi de vos diffusions en configurant leur niveau de priorité, de **[!UICONTROL Très basse]** à **[!UICONTROL Très haute]** (la valeur par défaut étant **[!UICONTROL Normale]**).
 
-### Quantité par lot
+### Nombre de lots
 
-Utilisez la variable  **[!UICONTROL Quantité de lot de messages]** pour définir le nombre de messages regroupés dans le même package de diffusion XML. Si le paramètre est défini sur 0, les messages sont automatiquement regroupés. La taille du paquet est définie par le calcul `<delivery size>/1024`, avec un minimum de 8 messages et un maximum de 256 messages par package.
+Utilisez l’option **[!UICONTROL Nombre de messages groupés]** pour définir le nombre de messages regroupés dans un même package de diffusion XML. Si le paramètre est défini sur 0, les messages sont automatiquement regroupés. La taille du paquet est définie par le calcul `<delivery size>/1024`, avec un minimum de 8 messages et un maximum de 256 messages par package.
 
 >[!IMPORTANT]
 >
 >Lorsque vous créez la diffusion en dupliquant une diffusion existante, vous réinitialisez également ce paramètre.
 
-### Tester l&#39;envoi de la diffusion
+### Tester lʼenvoi de votre diffusion
 
-Utilisez la variable  **[!UICONTROL Tester la diffusion SMTP]** pour tester l&#39;envoi par SMTP. La diffusion est traitée jusqu’à la connexion au serveur SMTP mais n’est pas envoyée : pour chaque destinataire de la diffusion, Campaign se connecte au serveur du fournisseur SMTP, exécute la commande SMTP RCPT TO et ferme la connexion avant la commande SMTP DATA.
+Utilisez l’option **[!UICONTROL Tester la diffusion par SMTP]** pour tester la diffusion via SMTP. La diffusion est traitée jusqu’à la connexion au serveur SMTP mais n’est pas envoyée : pour chaque destinataire de la diffusion, Campaign se connecte au serveur du fournisseur SMTP, exécute la commande SMTP RCPT TO et ferme la connexion avant la commande SMTP DATA.
 
 >[!NOTE]
 >
@@ -46,14 +46,14 @@ Utilisez la variable  **[!UICONTROL Tester la diffusion SMTP]** pour tester l&#3
 
 ## Envoi en plusieurs vagues {#sending-using-multiple-waves}
 
-Pour équilibrer la charge, vous pouvez répartir les envois en plusieurs lots. Configurez le nombre de lots et leur proportion par rapport à l&#39;ensemble de la diffusion.
+Pour équilibrer la charge, vous pouvez répartir les envois en plusieurs lots. Configurez le nombre de lots et leur proportion par rapport à l’ensemble de la diffusion.
 
 ### Activer les vagues {#enable-waves}
 
-Pour définir des vagues, procédez comme suit :
+Pour définir le vagues, procédez comme suit :
 
-1. Ouvrez les propriétés de la diffusion et accédez à la **[!UICONTROL Diffusion]** .
-1. Activez la variable **[!UICONTROL Envoyer en plusieurs vagues]** , puis cliquez sur le bouton **[!UICONTROL Définir des vagues...]** lien.
+1. Ouvrez les propriétés de la diffusion, puis cliquez sur l’onglet **[!UICONTROL Diffusion]**.
+1. Sélectionnez l’option **[!UICONTROL Envoyer en plusieurs vagues]**, puis cliquez sur le lien **[!UICONTROL Définition des vagues...]**.
 
    ![](assets/delivery-define-waves.png)
 
@@ -61,17 +61,17 @@ Pour définir des vagues, procédez comme suit :
 
 >[!NOTE]
 >
->Vous pouvez uniquement définir la taille et le délai entre deux vagues consécutives. Le critère de sélection des destinataires pour chaque vague n&#39;est pas paramétrable.
+>Vous pouvez uniquement définir la taille et le délai entre deux vagues consécutives. Le critère de sélection des personnes destinataires pour chaque vague n’est pas paramétrable.
 
 Vous pouvez soit définir la taille de chaque vague, soit les ajouter à un calendrier.
 
-* **Définir la taille de chaque vague**. Par exemple, si vous saisissez **[!UICONTROL 30 %]** dans le champ correspondant, chaque vague représentera 30 % des messages inclus dans l’envoi, à l’exception de la dernière vague qui représentera 10 % des messages.
+* **Définissez la taille de chaque vague**. Par exemple, si vous saisissez **[!UICONTROL 30 %]** dans le champ correspondant, chaque vague représentera 30 % des messages inclus dans l’envoi, à l’exception de la dernière vague qui représentera 10 % des messages.
 
   Dans le champ **[!UICONTROL Période]**, définissez le délai entre le démarrage de deux vagues consécutives. Par exemple, si vous saisissez **[!UICONTROL 2 j]**, la première vague démarre immédiatement, la deuxième démarre dans deux jours, la troisième dans quatre jours, etc.
 
   ![](assets/delivery-waves-size.png)
 
-* **Définition d’un calendrier pour l’envoi de chaque vague**.  Par exemple, la première vague représente 25% du nombre total de messages inclus dans la diffusion et démarre immédiatement. Les deux vagues suivantes terminent la diffusion et sont définies pour commencer à six heures d’intervalle.
+* **Définissez un calendrier pour l’envoi de chaque vague**.  Par exemple, la première vague représente 25 % du nombre total de messages inclus dans la diffusion et démarre immédiatement. Les deux vagues suivantes terminent la diffusion et sont définies pour commencer à six heures d’intervalle.
 
   Dans la colonne **[!UICONTROL Début]**, indiquez le délai entre le démarrage de deux vagues consécutives. Dans la colonne **[!UICONTROL Taille]**, saisissez un nombre fixe ou un pourcentage.
 
@@ -83,13 +83,13 @@ Une règle de typologie spécifique, la **[!UICONTROL Vérification de la planif
 
 >[!IMPORTANT]
 >
->Veillez à ce que les dernières vagues ne dépassent pas la date limite d’envoi qui est définie dans l’onglet **[!UICONTROL Validité]**.Sinon, certains messages peuvent ne pas être envoyés. En savoir plus sur la période de validité d’une diffusion dans [cette section](delivery-failures.md#valid-period).
+>Veillez à ce que les dernières vagues ne dépassent pas la date limite d’envoi qui est définie dans l’onglet **[!UICONTROL Validité]**. Sinon, certains messages peuvent ne pas être envoyés. En savoir plus sur la période de validité d’une diffusion dans [cette section](delivery-failures.md#valid-period).
 >
->Vous devez également prévoir suffisamment de temps pour les reprises lors de la configuration des dernières vagues. En savoir plus sur les reprises dans [cette section](delivery-failures.md#retries).
+>Lors de la configuration des dernières vagues, veillez également à définir assez de temps pour les reprises. En savoir plus sur les reprises dans [cette section](delivery-failures.md#retries).
 
 ### Surveiller les vagues {#monitor-waves}
 
-Pour surveiller vos envois, accédez aux logs de diffusion. Voir [cette page](send.md).
+Pour suivre vos envois, accédez aux logs de diffusion. Voir [cette page](send.md)
 
 Vous pouvez visualiser les diffusions qui ont déjà été envoyées dans les vagues traitées (statut **[!UICONTROL Envoyé]**) et celles à envoyer dans les vagues restantes (statut **[!UICONTROL En attente]**).
 
@@ -108,11 +108,11 @@ Les deux exemples ci-dessous constituent les cas d&#39;utilisation les plus fré
 
   ![](assets/delivery-waves-ex-ramp-up.png)
 
-* **Campagnes avec un centre d’appels**
+* **Campagnes avec un centre d’appel**
 
-  Lors de la gestion d’une campagne de fidélité par téléphone, votre entreprise dispose d’une capacité limitée de traitement du nombre d’appels pour contacter les abonnés.
+  Lorsque vous gérez une campagne de fidélisation par téléphone, votre organisation a une capacité de traitement des appels limitée pour contacter les personnes abonnées.
 
-  Grâce aux vagues, vous pouvez limiter le nombre de messages à 20 par jour, en tenant compte par exemple de la capacité de traitement quotidien d&#39;un centre d&#39;appels.
+  Grâce aux vagues, vous pouvez limiter le nombre de messages à 20 par jour, par exemple, ce qui correspond à la capacité de traitement quotidienne d’un centre d’appel.
 
   Pour ce faire, sélectionnez l’option **[!UICONTROL Planification de plusieurs vagues de même taille]**. Saisissez **[!UICONTROL 20]** comme taille de vague et **[!UICONTROL 1 j]** dans le champ **[!UICONTROL Période]**.
 
@@ -182,7 +182,7 @@ Elle vous permet de différer la diffusion à une date ultérieure ou enregistre
 
 Les dates et heures sont entendues dans le fuseau horaire de l&#39;opérateur courant. La liste déroulante **[!UICONTROL Fuseau horaire]** située sous la zone de saisie de la date de contact permet d&#39;adapter automatiquement la date et l&#39;heure saisie dans le fuseau horaire sélectionné.
 
-Ainsi, si vous planifiez une diffusion pour qu&#39;elle s&#39;exécute automatiquement à 8h heure de Londres, l&#39;heure est automatiquement convertie dans le fuseau sélectionné :
+Ainsi, si vous planifiez une diffusion pour qu’elle s’exécute automatiquement à 8 h 00, heure de Londres, l’heure est automatiquement convertie dans le fuseau sélectionné :
 
 ![](assets/delivery-schedule-time-zone.png)
 

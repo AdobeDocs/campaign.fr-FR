@@ -4,9 +4,9 @@ description: Découvrez comment utiliser les données d'un workflow.
 feature: Workflows, Data Management
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
 source-git-commit: 41ba91fca46747760fc42ea6cd78600abbd74c02
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '736'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -42,11 +42,11 @@ Sélectionnez pour cela le menu correspondant :
 
 * **[!UICONTROL Analyser la cible...]**
 
-  Utilisez ce menu pour accéder à l&#39;assistant d&#39;analyse descriptive qui permet de générer des statistiques et des rapports sur les données de la transition.
+  Ce menu donne accès à l’assistant d’analyse descriptive, qui permet de générer des statistiques et des rapports sur les données de la transition.
 
-  Découvrez comment utiliser l’assistant d’analyse descriptive dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target="_blank"}.
+  Découvrez comment commencer à utiliser l’assistant d’analyse descriptive dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target="_blank"}.
 
-Les données de la cible sont purgées au fur et à mesure de l&#39;exécution du workflow. Seule la dernière table de travail est accessible. Vous pouvez paramétrer le workflow pour que toutes les tables de travail restent accessibles : vérifiez les **[!UICONTROL Conserver le résultat des populations intermédiaires entre deux exécutions]** dans les propriétés du workflow.
+Les données de la cible sont purgées au fur et à mesure de l’exécution du workflow. Seule la dernière table de travail est accessible. Vous pouvez paramétrer le workflow pour que toutes les tables de travail restent accessibles : cochez l’option **[!UICONTROL Conserver le résultat des populations intermédiaires entre deux exécutions]** dans les propriétés du workflow.
 
 ![](assets/wf-purge-data-option.png)
 
@@ -99,7 +99,7 @@ Dans l&#39;exemple suivant, vous allez collecter une liste d&#39;informations su
 
    >[!CAUTION]
    >
-   >Seules les données contenues dans la transition peuvent être utilisées pour personnaliser la diffusion. **targetData** les champs de personnalisation de type ne sont disponibles que pour la population entrante de la variable **[!UICONTROL Diffusion]** activité.
+   >Seules les données contenues dans la transition peuvent être utilisées pour personnaliser la diffusion. Les champs de personnalisation de type **targetData** ne sont disponibles que pour la population entrante de l’activité **[!UICONTROL Diffusion]**.
 
 1. Dans le modèle de diffusion, utilisez les champs collectés dans le workflow.
 
