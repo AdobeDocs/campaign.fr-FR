@@ -6,7 +6,7 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: bf1ae889-9c07-4acf-8fd0-55b57151bc47
 source-git-commit: 69ef7e81d5fc0f5cf0dc74fa16d970ef89607331
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2020'
 ht-degree: 100%
 
@@ -225,7 +225,7 @@ Les entités peuvent être ajoutées directement à une définition de package �
 
 ### Paramétrer la génération des définitions de packages {#configure-package-definitions-generation}
 
-La génération de packages peut être paramétrée à partir de l’onglet **[!UICONTROL Contenu]** de définition de package. Pour ce faire, cliquez sur le lien **[!UICONTROL Paramètres de génération]**.
+La génération de packages peut être paramétrée à partir de l&#39;onglet **[!UICONTROL Contenu]** de définition de package. Pour ce faire, cliquez sur le lien **[!UICONTROL Paramètres de génération]**.
 
 ![](assets/packagedefinition_generationparameters.png)
 
