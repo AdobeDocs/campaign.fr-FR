@@ -73,7 +73,7 @@ Pour afficher la liste des adresses en quarantaine **pour l&#39;ensemble de la p
 >
 >Fin de l&#39;année 1 : (1 &#42; 0,33) / (1 + 0,5) = 22 %.
 >
-Fin de l&#39;année 2 : ((1,22 &#42; 0,33) + 0,33) / (1,5 + 0,75) = 32,5 %.
+>Fin de l&#39;année 2 : ((1,22 &#42; 0,33) + 0,33) / (1,5 + 0,75) = 32,5 %.
 
 En outre, le rapport intégré **[!UICONTROL Non-délivrables et rebonds]**, disponible à partir de la section **Rapports** de cette page d’accueil, affiche des informations sur les adresses en quarantaine, les types d’erreurs rencontrées et une répartition des échecs par domaine. Vous pouvez filtrer les données pour une diffusion spécifique ou personnaliser ce rapport si nécessaire.
 
@@ -104,7 +104,7 @@ Leur état devient ensuite **[!UICONTROL Valide]**.
 
 >[!CAUTION]
 >
-Les destinataires avec une adresse dont le statut est **[!UICONTROL En quarantaine]** ou **[!UICONTROL Sur liste bloquée]** ne seront jamais supprimés, même s&#39;ils reçoivent un e-mail.
+>Les destinataires avec une adresse dont le statut est **[!UICONTROL En quarantaine]** ou **[!UICONTROL Sur liste bloquée]** ne seront jamais supprimés, même s&#39;ils reçoivent un e-mail.
 
 Vous pouvez également supprimer manuellement une adresse de la liste de quarantaine. Pour supprimer une adresse de la quarantaine, vous pouvez :
 
