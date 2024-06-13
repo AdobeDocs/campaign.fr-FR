@@ -6,9 +6,9 @@ feature: Workflows
 role: User, Admin
 exl-id: 8bcaf367-5b1f-4d31-80c9-c77df43c6ed1
 source-git-commit: d4e28ddf6081881f02042416aa8214761ea42be9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1387'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ La carte thermique des workflows permet aux administrateurs de la plateforme Ado
 
 Lors du développement de votre workflow, toutes les activités seront dotées d’un nom, tout comme les objets Adobe Campaign. Bien que ce nom soit généré par l’outil, il est recommandé d’attribuer à une activité un nom explicite lors de sa configuration. Si vous le faites plus tard, le workflow peut être interrompu si les activités utilisent le nom d’activités précédentes et la mise à jour des noms risque d’être difficile.
 
-Le nom de l’activité se trouve dans la variable **[!UICONTROL Avancé]** . Ne les laissez pas nommées **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, mais attribuez-leur des noms explicites tels que **[!UICONTROL querySubscribedRecipients]**. Ce nom apparaît dans le journal et, le cas échéant, dans les journaux SQL. Il permet de déboguer le workflow lors de sa configuration.
+Le nom d&#39;une activité figure dans l&#39;onglet **[!UICONTROL Avancé]**. Ne conservez pas le nom **[!UICONTROL query]**, **[!UICONTROL query1]** ou **[!UICONTROL query11]**. Attribuez aux activités un nom explicite comme **[!UICONTROL querySubscribedRecipients]**. Ce nom apparaît dans le journal et les logs SQL, le cas échéant, et permet de déboguer le workflow lors de sa configuration.
 
 ### Premières et dernières activités {#first-and-last-activities}
 
@@ -91,7 +91,7 @@ Pour repérer plus facilement le workflow, il est conseillé d&#39;utiliser deux
 
 ### Signal {#signal}
 
-La plupart du temps, vous ne saurez pas d&#39;où vient l&#39;appel d&#39;un signal. Pour éviter ce problème, utilisez le champ **[!UICONTROL Commentaire]** de l&#39;onglet **[!UICONTROL Avancé]** de l&#39;activité de signal pour documenter l&#39;origine attendue d&#39;un signal pour l&#39;activité en question.
+La plupart du temps, vous ne saurez pas d&#39;où vient l&#39;appel d&#39;un signal. Pour éviter ce problème, utilisez le champ **[!UICONTROL Commentaire]** de l’onglet **[!UICONTROL Avancé]** de l’activité de signal pour documenter l’origine attendue d’un signal pour l’activité en question.
 
 ## Mises à jour des workflows {#workflow-update}
 
@@ -113,7 +113,7 @@ L&#39;option **Conserver le résultat des populations intermédiaires entre deux
 
 Elle est disponible dans l&#39;onglet **[!UICONTROL Général]** des propriétés du workflow et peut être utilisée à des fins de développement et de test pour surveiller les données et vérifier les résultats. Vous pouvez utiliser cette option dans les environnements de développement, mais ne l&#39;utilisez jamais dans les environnements de production. La conservation des tables temporaires peut entraîner une augmentation significative de la taille de la base de données et, par la suite, l&#39;atteinte de la limite de taille. De plus, cela ralentira la sauvegarde.
 
-Seules les tables de travail de la dernière exécution du workflow sont conservées. Celles des exécutions précédentes sont purgées par le workflow de **[!UICONTROL nettoyage]** qui s&#39;exécute tous les jours.
+Seules les tables de travail de la dernière exécution du workflow sont conservées. Les tables de travail des exécutions précédentes sont purgées par le workflow de **[!UICONTROL nettoyage]** qui s’exécute tous les jours.
 
 >[!CAUTION]
 >

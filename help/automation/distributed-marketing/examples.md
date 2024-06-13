@@ -6,9 +6,9 @@ feature: Distributed Marketing
 role: User
 exl-id: 7825426b-c9e4-49e9-840c-dc6d6d836fbe
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1371'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -141,7 +141,7 @@ Lorsque les validations sont approuvées, l&#39;opération peut démarrer automa
 #### Création d’une opération collaborative {#creating-a-collaborative-campaign}
 
 1. À partir du dossier **[!UICONTROL Gestion de campagne > Campagne]** de l’explorateur Campaign, créez une **[!UICONTROL campagne collaborative (par validation de la cible)]**.
-1. Dans l&#39;onglet **[!UICONTROL Ciblages et workflows]**, créez un workflow pour votre opération. Celui-ci doit contenir une activité de **Partage** dont la **[!UICONTROL limitation du nombre d&#39;enregistrements]** est définie par l&#39;activité **[!UICONTROL Répartition de données]**.
+1. Dans l’onglet **[!UICONTROL Ciblages et workflows]**, créez un workflow pour votre campagne. Celui-ci doit contenir une activité de **Partage** dont la **[!UICONTROL limitation du nombre d&#39;enregistrements]** est définie par l&#39;activité **[!UICONTROL Répartition de données]**.
 
    ![](assets/mkg_dist_use_case_target_valid5.png)
 
@@ -149,7 +149,7 @@ Lorsque les validations sont approuvées, l&#39;opération peut démarrer automa
 
    * le contenu du message qui sera envoyé aux entités locales lors de la notification,
    * le rappel pour la validation,
-   * le traitement attendu pour la campagne.
+   * le traitement anticipé de la campagne.
 
    ![](assets/mkg_dist_use_case_target_valid7.png)
 
@@ -159,7 +159,7 @@ Lorsque les validations sont approuvées, l&#39;opération peut démarrer automa
 
 Vous pouvez désormais ajouter un **kit de campagne** à partir de l’onglet **[!UICONTROL Campagnes]**.
 
-1. Choisissez votre **[!UICONTROL Campagne de référence]**. Dans le **[!UICONTROL Modifier]** de votre package, vous pouvez sélectionner l’onglet **[!UICONTROL Mode de validation]** à utiliser pour votre campagne :
+1. Sélectionnez votre **[!UICONTROL Campagne de référence]**. Dans l&#39;onglet **[!UICONTROL Edition]** de votre package, vous pouvez choisir le **[!UICONTROL Mode d’approbation]** que vous souhaitez utiliser pour votre campagne :
 
    * avec le mode **Manuel**, les entités locales participent à l&#39;opération si elles acceptent l&#39;invitation de l&#39;entité centrale. Elles peuvent supprimer des contacts pré-sélectionnés si elles le souhaitent et une validation d&#39;un manager est obligatoire pour confirmer la participation.
    * avec le mode **Automatique**, les entités locales participent obligatoirement à l&#39;opération, à moins qu&#39;elles ne s&#39;en désinscrivent. Elles peuvent supprimer des contacts sans qu&#39;aucune validation ne soit demandée.

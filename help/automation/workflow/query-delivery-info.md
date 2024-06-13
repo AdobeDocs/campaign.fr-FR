@@ -6,9 +6,9 @@ feature: Query Editor
 role: User
 exl-id: d11a1992-c07b-4133-8f0a-65f1b7552a99
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1552'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
    ![](assets/query_editor_tracklog_05.png)
 
-1. Dans le **[!UICONTROL Données à extraire]** , nous voulons créer un agrégat pour collecter des informations. Pour cela, ajoutez la clé primaire (située au-dessus de la clé principale). **[!UICONTROL Logs de tracking des destinataires]** element) : Le nombre de logs de tracking est effectué sur cet élément **[!UICONTROL Clé Principal]** champ . L’expression modifiée sera **[!UICONTROL x=count(clé primaire)]**. Il relie la somme des différents logs de tracking à une seule adresse email.
+1. Dans la fenêtre **[!UICONTROL Données à extraire]**, vous allez créer un agrégat afin de collecter des informations. Pour cela, ajoutez la clé primaire (située au-dessous de l&#39;élément principal **[!UICONTROL Logs de tracking des destinataires]**) : c&#39;est sur ce champ **[!UICONTROL Clé primaire]** qu&#39;est effectué le comptage des logs de tracking. L&#39;expression modifiée sera **[!UICONTROL x=count(clé primaire)]**. Elle associe la somme des différents logs de tracking à une seule adresse e-mail.
 
    Pour cela :
 
@@ -80,7 +80,7 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
      ![](assets/query_editor_nveau_23.png)
 
-     Sélectionnez la variable **[!UICONTROL supérieur à]** de l’opérateur. Dans le **[!UICONTROL Valeur]** colonne, cliquez sur **[!UICONTROL Expression d’édition]**, et dans la variable **[!UICONTROL Type de formule]** fenêtre, sélectionnez **[!UICONTROL Traitement des dates]**. Enfin, **[!UICONTROL Date courante moins n jours]**, saisissez &quot;15&quot;.
+     Sélectionnez l&#39;opérateur **[!UICONTROL supérieur à]**. Dans la colonne **[!UICONTROL Valeur]**, cliquez sur **[!UICONTROL Editer l&#39;expression]**. Dans la fenêtre **[!UICONTROL Type de formule]**, sélectionnez **[!UICONTROL Traitement sur les dates]**. Enfin, dans **[!UICONTROL Date courante moins n jours]**, saisissez la valeur « 15 ».
 
      Cliquez sur **[!UICONTROL Terminer]**.
 
@@ -102,7 +102,7 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
      ![](assets/query_editor_nveau_66.png)
 
-     Recherchez une diffusion contenant le mot &quot;soldes&quot;. Comme vous ne vous souvenez pas de son libellé exact, vous pouvez choisir la variable **[!UICONTROL contains]** et saisissez &quot;soldes&quot; dans la variable **[!UICONTROL Valeur]** colonne .
+     Recherchez une diffusion dont l&#39;intitulé contient le mot « soldes ». Puisque vous ne vous souvenez plus du libellé exact, vous pouvez sélectionner l&#39;opérateur **[!UICONTROL contient]** et saisir « soldes » dans la colonne **[!UICONTROL Valeur]**.
 
      ![](assets/query_editor_nveau_25.png)
 
@@ -156,7 +156,7 @@ Si, au contraire, vous souhaitez filtrer les destinataires ayant ouvert au moins
 
 L&#39;exemple suivant montre comment cibler les profils ayant ouvert une diffusion au cours des 2 dernières semaines :
 
-1. Pour cibler les profils ayant ouvert une diffusion, vous devez utiliser les logs de tracking. ils sont stockés dans une table liée : vous devez d&#39;abord sélectionner cette table dans la liste déroulante du **[!UICONTROL Dimension de filtrage]** , comme illustré ci-dessous :
+1. Pour cibler les profils ayant ouvert une diffusion, vous devez utiliser des logs de tracking. ils sont stockés dans une table liée : vous devez d&#39;abord sélectionner cette table dans la liste déroulante du champ **[!UICONTROL Dimension de filtrage]**, comme illustré ci-dessous :
 
    ![](assets/s_advuser_query_sample1.0.png)
 
@@ -198,7 +198,7 @@ Les étapes suivantes indiquent comment paramétrer la boîte **[!UICONTROL Part
 
    ![](assets/query_editor_ex_09.png)
 
-1. Ouvrez le **[!UICONTROL Partage]** de la boîte. Dans le **[!UICONTROL Général]** , saisissez un libellé : **Partage en fonction du comportement** par exemple.
+1. Ouvrez la boîte de dialogue **[!UICONTROL Partage]**. Dans l&#39;onglet **[!UICONTROL Général]**, saisissez un libellé : **Partage selon Comportement**, par exemple.
 
    ![](assets/query_editor_ex_04.png)
 
@@ -216,12 +216,12 @@ Les étapes suivantes indiquent comment paramétrer la boîte **[!UICONTROL Part
 
    ![](assets/query_editor_ex_08.png)
 
-1. Définissez la seconde branche. Cette branche va inclure l&#39;email de relance avec le même contenu que pour la première diffusion. Dans l&#39;onglet **[!UICONTROL Sous-ensembles]**, cliquez sur **[!UICONTROL Ajouter]** afin de la créer.
+1. Définissez la seconde branche. Cette branche va inclure l&#39;e-mail de relance avec le même contenu que pour la première diffusion. Dans l&#39;onglet **[!UICONTROL Sous-ensembles]**, cliquez sur **[!UICONTROL Ajouter]** afin de la créer.
 
    ![](assets/query_editor_ex_06.png)
 
 1. Un sous-onglet supplémentaire s&#39;affiche. Nommez-le &quot;**N&#39;ayant pas cliqué**&quot;.
-1. Cliquez sur **[!UICONTROL Ajouter une condition de filtrage sur la population entrante]**. Cliquez ensuite sur **[!UICONTROL Modifier...]**.
+1. Cliquez sur **[!UICONTROL Ajouter une condition de filtrage sur la population entrante]**. Cliquez ensuite sur **[!UICONTROL Editer…]**
 
    ![](assets/query_editor_ex_07.png)
 

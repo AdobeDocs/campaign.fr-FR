@@ -6,7 +6,7 @@ feature: Campaigns, Monitoring
 role: User
 exl-id: 13a7432e-6216-4a5c-84fc-bc374b5af5ee
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '231'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Les informations accessibles à partir de ce sous-onglet sont les suivantes :
 
 * Le sous-onglet **[!UICONTROL Validations]** contient l&#39;ensemble du processus de validation de la campagne. Vous pouvez vérifier les détails et les commentaires.
 
-* Les workflows créés pour générer les messages aux prestataires sont affichés dans le sous-onglet **[!UICONTROL Traitements sur les prestataires]**. Cliquez sur l&#39;icône **[!UICONTROL Détail]** pour afficher le workflow sélectionné.
+* Les workflows créés pour générer les messages aux prestataires sont affichés dans le sous-onglet **[!UICONTROL Traitements sur les prestataires]**. Cliquez sur l’icône **[!UICONTROL Détail]** pour afficher le workflow sélectionné.
 
 ## Suivre les diffusions {#delivery-tracking}
 

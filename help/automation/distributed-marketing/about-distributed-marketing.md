@@ -6,9 +6,9 @@ feature: Distributed Marketing
 role: User
 exl-id: c9f5b277-3ad8-4316-94b9-789d37813b8b
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1181'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -66,8 +66,7 @@ L&#39;entité centrale propose aux entités locales des opérations auxquelles e
   Une opération collaborative est une opération dont le **planning d&#39;exécution est défini** par l&#39;entité centrale. Les entités locales sont libres de participer ou non à l&#39;opération. En fonction du paramétrage de l&#39;opération, le contenu et la cible peuvent être localisés par l&#39;entité locale. Il existe plusieurs types d&#39;opérations collaboratives :
 
    * **[!UICONTROL Opération collaborative (par formulaire)]** : conseillée pour des opérations visant jusqu’à 300 entités locales. L’entité locale peut saisir des paramètres prédéfinis en terme de ciblage et de personnalisation de contenu dans un formulaire web. Le formulaire peut être un formulaire Adobe Campaign ou un formulaire externe (extranet client). La définition et le paramétrage de ce formulaire peuvent être réalisés par un administrateur fonctionnel sur la base d’un modèle de formulaire défini par l’intégrateur. Pour commander l’opération, l’entité locale a seulement besoin d’un accès web.
-   * **[!UICONTROL Opération collaborative par opération]**: recommandé pour les opérations visant des dizaines d&#39;entités locales. Ce type de campagne crée des campagnes enfants pour chaque entité locale. Lorsque la commande d’une **[!UICONTROL Opération collaborative par opération]** est validée par l’entité centrale, l’opération est mise à disposition de l’entité locale qui peut la modifier. L’exécution est automatiquement synchronisée entre les opérations enfants et l’opération parent. L’entité locale doit avoir accès à une instance pour commander une opération et y participer.
-
+   * **[!UICONTROL Campagne collaborative (par campagne)]** : recommandé pour les campagnes ciblant des dizaines d’entités locales. Ce type de campagne crée des campagnes enfants pour chaque entité locale. Lorsque la commande d’une **[!UICONTROL Opération collaborative par opération]** est validée par l’entité centrale, l’opération est mise à disposition de l’entité locale qui peut la modifier. L’exécution est automatiquement synchronisée entre les opérations enfants et l’opération parent. L’entité locale doit avoir accès à une instance pour commander une opération et y participer.
    * **[!UICONTROL Opération collaborative (par validation de la cible)]** : conseillée pour des opérations visant jusqu’à plusieurs milliers d’entités locales. L’entité locale reçoit une liste de contacts sélectionnés par l’entité centrale. L’entité locale choisit de garder ou non certains contacts en fonction du contenu de l’opération, grâce à un formulaire web. Les entités locales sont déduites de la liste de contacts sélectionnés. Pour participer à l’opération, l’entité locale a seulement besoin d’un accès web.
    * **[!UICONTROL Opération collaborative simple]** : ce mode permet d&#39;assurer la compatibilité avec les développements spécifiques réalisés dans les versions précédentes.
 
@@ -109,7 +108,7 @@ Pour créer une entité organisationnelle, sélectionnez le dossier **[!UICONTRO
 
 ![](assets/s_advuser_mkg_dist_local_list.png)
 
-Chaque entité organisationnelle contient des informations d&#39;identification (libellé, nom interne, coordonnées, etc.) et les groupes impliqués dans le processus de validation des commandes. Ils sont définis dans la variable **[!UICONTROL Notifications et validations]** se trouve dans la section **[!UICONTROL Général]** .
+Chaque entité organisationnelle contient des informations d’identification (libellé, nom interne, coordonnées, etc.) et les groupes impliqués dans le processus d’approbation des commandes. Ils sont définis dans la section **[!UICONTROL Notifications et validations]** de l’onglet **[!UICONTROL Général]** .
 
 * Vous devez définir un groupe de notification des kits : les opérateurs de ce groupe recevront un message de notification lorsqu&#39;un nouveau kit sera ajouté à la liste des kits d&#39;opération et lorsqu&#39;une opération est disponible.
 * Vous devez également sélectionner le groupe d&#39;opérateurs responsables de la validation des commandes, c&#39;est-à-dire chargés de valider les opérations commandées par l&#39;entité locale.

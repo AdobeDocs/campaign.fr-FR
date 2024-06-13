@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 911096e2-0307-46a8-873c-ee2248b8e3e8
 source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Pour créer une nouvelle catégorie, procédez comme suit :
 
    ![](assets/offer_cat_create_001.png)
 
-1. Cliquez avec le bouton droit de la souris et sélectionner **[!UICONTROL Ajouter un dossier &quot;Catégorie d&#39;offres&quot;]** dans le menu contextuel.
+1. Cliquez avec le bouton droit de la souris et sélectionnez **[!UICONTROL Créer un dossier « Catégorie d’offres »]** dans le menu contextuel.
 
    ![](assets/offer_cat_create_002.png)
 

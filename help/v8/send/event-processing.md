@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: c1deb0a1-aeba-4813-b674-a6a164b98b02
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '695'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -85,8 +85,7 @@ Les statuts possibles sont les suivants :
 
 * **En attente de diffusion**
 L’événement a été traité et le modèle de diffusion est associé. L’e-mail est en attente de diffusion et le processus de diffusion classique est appliqué. Pour plus d’informations, vous pouvez ouvrir la diffusion.
-* **Envoyé**, **Ignoré** et **Erreur de diffusion**
-Ces statuts de diffusion sont récupérés à partir du **updateEventsStatus** workflow. Pour plus d’informations, vous pouvez ouvrir la diffusion correspondante.
+* **Envoyé**, **Ignoré** et **Erreur de diffusion** : ces statuts de diffusion sont récupérés par le workflow **updateEventsStatus**. Pour plus d’informations, vous pouvez ouvrir la diffusion correspondante.
 * **Événement non pris en charge**
 La phase de routage des messages transactionnels a échoué. Par exemple, Adobe Campaign n’a pas trouvé l’e-mail qui sert de modèle pour l’événement.
 * **Evénement ayant expiré**

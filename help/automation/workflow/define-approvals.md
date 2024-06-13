@@ -6,7 +6,7 @@ feature: Approvals
 role: User
 exl-id: 8ac159c1-fd2e-4fb9-8275-18154f6f210c
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '857'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ Pour répondre, l&#39;opérateur dispose de deux modes : valider via la page we
 
 Il est possible de recevoir un message de validation contenant un lien vers une page web qui permet de répondre. Pour le recevoir, la personne ciblée doit renseigner son adresse e-mail complète dans son profil. Dans le cas contraire, elle devra passer par la console pour répondre.
 
-L&#39;envoi des emails de validation se fait grâce à une diffusion au fil de l&#39;eau. Le modèle de diffusion par défaut est **[!UICONTROL notifyAssignee]** : il est enregistré dans le dossier **[!UICONTROL Administration > Gestion de campagne > Modèles des diffusions techniques]**. Ce modèle peut être personnalisé, mais il est recommandé d&#39;en faire une copie et de changer de modèle pour chaque activité.
+Les e-mails de validation sont envoyés en continu. Le modèle de diffusion par défaut est **[!UICONTROL notifyAssignee]** : il est enregistré dans le dossier **[!UICONTROL Administration > Gestion de campagne > Modèles des diffusions techniques]**. Ce scénario peut être personnalisé. Il est également recommandé de faire une copie et de modifier les modèles pour chaque activité.
 
 Les diffusions créées depuis ce modèle sont stockées dans le dossier **[!UICONTROL Administration > Exploitation > Objets créés automatiquement > Diffusions techniques > Notifications de workflow]**.
 

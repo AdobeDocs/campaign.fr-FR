@@ -6,9 +6,9 @@ feature: Distributed Marketing
 role: User
 exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '985'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -80,11 +80,11 @@ Le workflow de l&#39;opération doit intégrer l&#39;activité de type **Validat
 * **[!UICONTROL Contexte de répartition]** : Explicite.
 * **[!UICONTROL Répartition des données]** : Répartition pour les entités locales.
 
-**Répartition des entités locales** La répartition de données de type doit être créée. Le modèle de répartition de données permet de limiter le nombre d&#39;enregistrements à partir d&#39;une liste de valeurs de groupement. Dans **[!UICONTROL Ressources > Gestion de campagnes > Répartition de données]**, cliquez sur l&#39;icône **[!UICONTROL Nouveau]** pour créer une **[!UICONTROL Répartition de données]**. Pour plus d’informations sur la répartition des données,
+La répartition de données de type **répartition des entités locales** doit être créée. Le modèle de répartition de données permet de limiter le nombre d&#39;enregistrements à partir d&#39;une liste de valeurs de groupement. Dans **[!UICONTROL Ressources > Gestion de campagnes > Répartition de données]**, cliquez sur l&#39;icône **[!UICONTROL Nouveau]** pour créer une **[!UICONTROL Répartition de données]**. Pour plus d’informations sur la répartition des données,
 
 ![](assets/mkg_dist_data_distribution.png)
 
-Sélectionnez la variable **Dimension de ciblage** et la variable **[!UICONTROL Champ de répartition]**. Pour le **[!UICONTROL Type d&#39;affectation]**, sélectionnez **Entité locale**.
+Sélectionnez la **Dimension de ciblage** et le **[!UICONTROL Champ de répartition]**. Pour le **[!UICONTROL Type d&#39;affectation]**, choisissez l&#39;option **Entité locale**.
 
 Dans l&#39;onglet **[!UICONTROL Répartition]**, ajoutez un champ pour chaque entité locale et spécifiez la valeur.
 

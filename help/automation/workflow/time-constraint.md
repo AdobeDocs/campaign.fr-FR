@@ -5,7 +5,7 @@ description: En savoir plus sur l’activité de workflow de contrainte horaire
 feature: Workflows
 exl-id: 0a922827-456d-425c-be04-d9efbb152c92
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '88'
 ht-degree: 100%
 

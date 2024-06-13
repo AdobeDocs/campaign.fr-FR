@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: bcbf3101-d43c-4ed3-ab02-a9936ec55b71
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '441'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Pour créer un contenu conditionnel en fonction de la valeur d’un champ, respe
 
 1. Cliquez sur l’onglet **[!UICONTROL Prévisualisation]** pour visualiser le contenu du message en fonction du ou de la destinataire de la diffusion. Sélectionnez un ou une destinataire pour lequel/laquelle la condition est remplie et vérifiez le contenu. Sélectionnez ensuite un ou une autre destinataire pour lequel/laquelle la condition n’est pas remplie et vérifiez à nouveau.
 
-Vous pouvez ajouter d&#39;autres cas et définir un contenu différent en fonction des valeurs d&#39;un ou plusieurs champs. Utilisez pour cela les options **[!UICONTROL Contenu conditionnel > Sinon]** et **[!UICONTROL Contenu conditionnel > Sinon si]**. Le paramétrage de ces expressions est le même que pour l&#39;expression **if**.
+Vous pouvez ajouter d’autres cas et définir un contenu différent en fonction des valeurs d’un ou plusieurs champs. Utilisez pour cela les options **[!UICONTROL Contenu conditionnel > Sinon]** et **[!UICONTROL Contenu conditionnel > Sinon si]**. La configuration de ces expressions est la même que pour l’expression **if**.
 
 >[!CAUTION]
 >
@@ -54,7 +54,7 @@ Vous pouvez ajouter d&#39;autres cas et définir un contenu différent en foncti
 
 Découvrez dans l’exemple ci-dessous comment créer un e-mail multilingue. Le contenu s’affiche dans une langue ou une autre, selon la préférence linguistique du ou de la destinataire.
 
-1. Créez un email et sélectionnez la population cible. Dans cet exemple, la condition d&#39;affichage d&#39;une version ou d&#39;une autre sera basée sur la valeur **Langue** du profil du destinataire. Ces valeurs sont définies sur **EN**, **FR**, **ES**.
+1. Créez un email et sélectionnez la population cible. Dans cet exemple, la condition d&#39;affichage d&#39;une version ou d&#39;une autre sera basée sur la valeur **Langue** du profil du destinataire. Ces valeurs sont définies sur **EN**, **FR**, **ES**.
 1. Dans le contenu HTML de l&#39;email, cliquez sur l&#39;onglet **[!UICONTROL Source]** et collez le code suivant :
 
    ```

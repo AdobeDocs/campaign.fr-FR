@@ -5,9 +5,9 @@ description: Découvrez comment configurer les simulations de campagnes.
 feature: Campaigns
 exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1341'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Pour créer une simulation, les étapes sont les suivantes :
 
    ![](assets/simu_campaign_opti_edit_scope_save.png)
 
-   Au besoin, vous pouvez utiliser une condition dynamique à partir du **[!UICONTROL Editer la condition dynamique..]** lien.
+   Au besoin, vous pouvez utiliser une condition dynamique à partir du lien **[!UICONTROL Modifier la condition dynamique…]**
 
    Cliquez sur le bouton **[!UICONTROL Enregistrer]** pour valider ce paramétrage.
 
@@ -93,7 +93,7 @@ Dans l&#39;onglet **[!UICONTROL Général]** de la simulation, vous pouvez indiq
 
 * **[!UICONTROL Différer l&#39;exécution vers une plage horaire de faible activité]** reporte le lancement de la simulation vers une plage horaire moins chargée, en fonction du degré de priorité choisie. Une simulation est très coûteuse en termes de ressources sur le moteur de base de données. A ce titre, il est souvent utile de décaler l&#39;exécution des simulations non urgentes vers une plage de faible activité (la nuit par exemple).
 * La **[!UICONTROL Priorité]** est le niveau appliqué à la simulation pour en différer le déclenchement.
-* **[!UICONTROL Enregistrer les requêtes SQL dans le journal]**. Les logs SQL permettent de diagnostiquer une simulation si elle se termine par des erreurs. Ils peuvent également vous aider à comprendre pourquoi une simulation est trop lente. Ces messages seront visibles après la simulation dans le sous-onglet **[!UICONTROL Logs SQL]** de l&#39;onglet **[!UICONTROL Suivi]**.
+* **[!UICONTROL Enregistrer les requêtes SQL dans le journal]**. Les journaux SQL permettent de diagnostiquer une simulation si elle se termine par des erreurs. Ils peuvent également vous aider à comprendre pourquoi une simulation est trop lente. Ces messages seront visibles après la simulation dans le sous-onglet **[!UICONTROL Logs SQL]** de l&#39;onglet **[!UICONTROL Suivi]**.
 
 ## Exécution dʼune simulation {#execute-a-simulation}
 
@@ -143,9 +143,9 @@ Le sous-onglet **[!UICONTROL Exploration des exclusions]** permet d&#39;analyser
 Descriptive analysis is detailed in [this section](../../reporting/using/about-adobe-campaign-reporting-tools.md).
 -->
 
-## Résultats d&#39;une simulation {#results-of-a-simulation}
+## Résultats d’une simulation {#results-of-a-simulation}
 
-Les indicateurs présentés dans l&#39;onglet **[!UICONTROL Résultats]** donnent un premier aperçu du résultat de la simulation. **** Pour obtenir une vue plus détaillée des résultats, ouvrez le **[!UICONTROL Rapports]** .
+Les indicateurs présentés dans l&#39;onglet **[!UICONTROL Résultats]** donnent un premier aperçu du résultat de la simulation. **** Pour obtenir une vue plus détaillée des résultats, ouvrez l&#39;onglet **[!UICONTROL Rapports]**.
 
 ### Rapports  {#reports}
 

@@ -4,9 +4,9 @@ description: Rapports de diffusion intégrés à Adobe Campaign
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1161'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Ce rapport regroupe les indicateurs clés qui permettent de suivre le comporteme
 
 >[!NOTE]
 >
->Les valeurs calculées à partir d’ouvertures de messages sont toujours des estimations en raison notamment de la marge d’erreur liée aux emails au format texte. Les indicateurs **[!UICONTROL Ouvertures distinctes / Somme des ouvertures sur la population atteinte]** prennent en compte cette marge d’erreur. [En savoir plus](metrics-calculation.md#tracking-opens-).
+>Les valeurs calculées à partir d’ouvertures de messages sont toujours des estimations en raison notamment de la marge d’erreur liée aux emails au format texte. Les indicateurs **[!UICONTROL Ouvertures distinctes/Somme des ouvertures pour la population atteinte]** prennent en compte cette marge d’erreur. [En savoir plus](metrics-calculation.md#tracking-opens-).
 
 ![](assets/tracking-report-synthesis.png)
 
@@ -81,7 +81,7 @@ Ce tableau de valeurs présente la répartition, par domaine Internet, des envoi
 
 >[!NOTE]
 >
->Les noms de domaine qui apparaissent dans ce rapport sont définis dans l&#39;énumération utilisée au niveau des cubes. Pour modifier, ajouter ou supprimer des domaines par défaut, éditez l&#39;énumération **[!UICONTROL Domaines]**, et modifiez les valeurs et les alias. La catégorie **[!UICONTROL Autres]** regroupe les noms de domaine qui n&#39;appartiennent à aucune valeur de l&#39;énumération.
+>Les noms de domaine qui apparaissent dans ce rapport sont définis dans l&#39;énumération utilisée au niveau des cubes. Pour modifier, ajouter ou supprimer des domaines par défaut, éditez l&#39;énumération **[!UICONTROL Domaines]**, et modifiez les valeurs et les alias. La catégorie **[!UICONTROL Autres]** regroupe les noms de domaine qui n’appartiennent à aucune valeur de l’énumération.
 >
 >Découvrez comment accéder à vos énumérations et la manière de les configurer sur [cette page](../config/ui-settings.md).
 
@@ -157,7 +157,7 @@ Ce rapport présente l&#39;ensemble des informations principales relatives à la
 Cette section comporte deux indicateurs :
 
 * **[!UICONTROL Population initiale]** : Nombre total de destinataires auxquels la diffusion est destinée.
-* **[!UICONTROL Messages rejetés par règle]** : Nombre d&#39;adresses ignorées lors de l&#39;analyse lors de l&#39;application des règles de typologie : adresse manquante, en quarantaine, en liste bloquée, etc. <!--For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).-->
+* **[!UICONTROL Messages rejetés par la règle]** : nombre d’adresses ignorées pendant l’analyse lors de l’application des règles de typologie : adresse manquante, mise en quarantaine, ajoutée à la liste des adresses bloquées, etc. <!--For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).-->
 
 **[!UICONTROL Causes d&#39;exclusion]**
 
@@ -185,7 +185,7 @@ Ce rapport présente le contenu du message (HTML et/ou texte) avec, sur chaque l
 
 Ce rapport présente les statistiques sur les taux d&#39;ouverture, clics et transactions.
 
-Il permet de suivre l&#39;impact marketing de la diffusion. Vous pouvez paramétrer l&#39;affichage des valeurs en sélectionnant le périmètre de la vue (vue 1 heure, 3 heures, 24 heures, etc.). Cliquez sur **[!UICONTROL Actualiser]** pour confirmer votre sélection.
+Il vous permet de suivre l&#39;impact marketing de la diffusion. Vous pouvez paramétrer l&#39;affichage des valeurs en sélectionnant l’échelle de temps (vue sur 1 heure, sur 3 heures, sur 24 heures, etc.). Cliquez sur **[!UICONTROL Actualiser]** pour confirmer votre sélection.
 
 Ce rapport se présente sous la forme d&#39;un tableau de valeur et d&#39;un diagramme de Pareto permettant de mesurer le temps mis pour que la diffusion atteigne son efficacité maximum. Les indicateurs utilisés sont les suivants :
 

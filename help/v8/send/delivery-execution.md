@@ -6,7 +6,7 @@ role: User
 level: Beginner, Intermediate
 exl-id: 084607f6-47d8-40c0-89ba-bfbb88fc2e53
 source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '862'
 ht-degree: 100%
 
@@ -51,7 +51,7 @@ Ces rapports Message Center sont accessibles à partir de l&#39;onglet **[!UICO
 
 Le rapport **[!UICONTROL Historique des événements de Message Center]** présente une vue d’ensemble de l’activité du module Message Center, c’est-à-dire le nombre d’événements traités et envoyés sous forme de messages transactionnels.
 
-Lors de l&#39;ouverture du rapport, les informations affichées par défaut correspondent au taux de messages transactionnels envoyés avec succès. Pour visualiser davantage de niveaux, vous pouvez déplier ou replier les différents noeuds et positionner le pointeur de la souris pour mettre en surbrillance le niveau voulu.
+Lors de l’ouverture du rapport, les informations affichées par défaut correspondent au taux de messages transactionnels envoyés avec succès. Pour visualiser davantage de niveaux, vous pouvez ouvrir les différents noeuds et positionner le pointeur de la souris pour mettre en surbrillance le niveau voulu.
 
 Pour chaque période de temps, vous pouvez visualiser les données propres à chacun des types d&#39;événements. La colonne **[!UICONTROL Evénements]** correspond au nombre d&#39;événements reçus par l&#39;instance de pilotage. Le calcul du nombre d&#39;événements transformés en message transactionnel personnalisé se trouve dans la colonne **[!UICONTROL Envoyés]**.
 

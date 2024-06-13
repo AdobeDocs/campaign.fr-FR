@@ -6,9 +6,9 @@ feature: Journey Optimizer Integration
 level: Beginner
 exl-id: 52d8e2a5-9fdf-498a-bdbd-13a9935a94d6
 source-git-commit: 202a0553f0c736086eca993b9647737732f57d07
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '95'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,4 +25,4 @@ Les étapes de base consistent à créer un modèle de message transactionnel da
 [Découvrez cette intégration dans cet exemple détaillé](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/orchestrate-journeys/journey-use-cases/business-use-cases/ajo-ac){target="_blank"}.
 
 
-[En savoir plus dans la documentation Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}.
+[En savoir plus dans la documentation Journey Optimizer](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}.

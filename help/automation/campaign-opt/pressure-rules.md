@@ -5,9 +5,9 @@ description: Découvrir comment configurer des règles de pression
 feature: Fatigue Management, Typology Rules
 exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
 source-git-commit: 5810f9b53bd3ad5383d4b9767bc65a3d595862c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3241'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,9 +29,9 @@ Les critères d&#39;arbitrage (poids du message et/ou seuil du nombre de message
 * les préférences des destinataires, qui correspondent à des informations déclaratives : abonnements à des newsletters, statut du destinataire (client ou prospect),
 * les comportements des destinataires : achats, liens visités, etc.
 
-La règle d&#39;arbitrage pour définir les messages éligibles est appliquée lors de l&#39;étape d&#39;analyse. Pour chaque destinataire et pour la période concernée, le message sera envoyé si la formule suivante est vraie : **(nombre de messages envoyés) + (nombre de messages avec un poids supérieur) &lt; seuil**.
+La règle d&#39;arbitrage pour définir les messages éligibles est appliquée lors de l&#39;étape d&#39;analyse. Pour chaque destinataire et pour la période concernée, le message sera envoyé si la formule suivante est vraie : **(nombre de messages envoyés) + (nombre de messages ayant un poids supérieur) &lt; seuil**.
 
-Dans le cas contraire, le destinataire sera **[!UICONTROL Exclu par arbitrage]**. [En savoir plus](#exclusion-after-arbitration).
+Dans le cas contraire, la personne destinataire sera **[!UICONTROL Exclue par arbitrage]**. [En savoir plus](#exclusion-after-arbitration).
 
 ## Créer une règle de pression {#create-a-pressure-rule}
 
@@ -43,11 +43,11 @@ Pour créer et paramétrer une règle de typologie de type **[!UICONTROL Pressio
 
    ![](assets/campaign_opt_create_a_rule_01.png)
 
-1. Dans l&#39;onglet **[!UICONTROL Général]** de la nouvelle règle, sélectionnez une règle de le type **Pression** et saisissez son nom et sa description.
+1. Dans l’onglet **[!UICONTROL Général]** de la nouvelle règle, sélectionnez une règle de type **Pression** et saisissez son nom et sa description.
 
    ![](assets/campaign_opt_create_a_rule_02.png)
 
-1. Changez l&#39;ordre d&#39;exécution en cas de besoin. Lorsque plusieurs règles de typologie sont appliquées en tant qu&#39;ensemble de **[!UICONTROL typologies]**, les règles dont l&#39;ordre est le plus bas sont appliquées en premier. [En savoir plus](apply-rules.md#execution-order).
+1. Changez l&#39;ordre d&#39;exécution en cas de besoin. Lorsque plusieurs règles de typologie sont appliquées en tant qu’ensemble de **[!UICONTROL typologies]**, les règles dont l’ordre est le plus bas sont appliquées en premier. [En savoir plus](apply-rules.md#execution-order).
 1. Dans la section **[!UICONTROL Paramètres de calcul]**, définissez une fréquence si vous souhaitez enregistrer le ciblage au-delà de la prochaine exécution de réarbitrage quotidienne. [En savoir plus](apply-rules.md#adjust-calculation-frequency).
 1. Cliquez sur l&#39;onglet **[!UICONTROL Pression]** et sélectionnez la période calendaire dans laquelle s&#39;inscrit la règle de typologie.
 
@@ -77,7 +77,7 @@ Pour créer et paramétrer une règle de typologie de type **[!UICONTROL Pressio
 
    Chaque diffusion a un poids, c&#39;est-à-dire une valeur qui correspond à son degré de priorité : il permet d&#39;arbitrer entre les campagnes. Le poids est calculé selon la formule définie dans la règle de typologie et/ou directement dans ses propriétés. [En savoir plus](#message-weight).
 
-1. Par défaut, tous les messages sont pris en compte pour le calcul du seuil. La variable **[!UICONTROL Restriction]** vous permet de filtrer les messages concernés par la règle de typologie :
+1. Par défaut, tous les messages sont pris en compte pour le calcul du seuil. L’onglet **[!UICONTROL Restriction]** vous permet de filtrer les messages concernés par la règle de typologie :
 
    * La section supérieure de cet onglet permet de restreindre les destinataires concernés.
    * La section inférieure de cet onglet permet de filtrer les messages à comptabiliser.
@@ -104,7 +104,7 @@ La valeur de ce seuil peut être constante ou calculée par une formule qui peut
 
 **Exemple:**
 
-Vous pouvez indexer le nombre de messages autorisés en fonction du segment auquel appartient le destinataire. Ainsi, un destinataire appartenant au segment web peut recevoir plus de messages que les autres destinataires. Une formule de type **[!UICONTROL Iif (@origin=&#39;Web&#39;, 5, 3)]** permet d’autoriser la diffusion de 5 messages à ces destinataires contre seulement 3 messages pour les destinataires des autres segments. Le paramétrage sera donc le suivant :
+Vous pouvez indexer le nombre de messages autorisés en fonction du segment auquel appartient le destinataire. Ainsi, il se peut qu’un destinataire appartenant au segment web reçoive davantage de messages que les autres destinataires. Une formule de type **[!UICONTROL Iif (@origin=&#39;Web&#39;, 5, 3)]** permet d’autoriser la diffusion de 5 messages à ces destinataires contre seulement 3 messages pour les destinataires des autres segments. La configuration sera donc la suivante :
 
 ![](assets/campaign_opt_pressure_sample.png)
 
@@ -281,7 +281,7 @@ Vous pouvez définir des règles de pression selon le comportement des destinata
 
 Dans l&#39;exemple suivant, nous allons créer une diffusion avec un poids de 5. A ce poids, seront ajoutées des valeurs d&#39;appétence selon le comportement des destinataires : ainsi, un client ayant déjà passé commande sur le site aura une valeur d&#39;appétence de 5, tandis qu&#39;un client n&#39;ayant jamais commandé en ligne aura une valeur d&#39;appétence de 4.
 
-Pour effectuer ce type de paramétrage, vous devez utiliser une formule pour définir le poids du message. Les informations sur les scores de propension et les réponses aux enquêtes doivent être accessibles dans le modèle de données. Dans notre exemple, le champs **Appétence** a été ajouté.
+Pour effectuer ce type de configuration, vous devez utiliser une formule afin de définir le poids des messages. Les informations relatives aux scores de propension et les réponses fournies aux questionnaires doivent être accessibles dans le modèle de données. Dans notre exemple, le champs **Appétence** a été ajouté.
 
 Les étapes de paramétrage sont les suivantes :
 
@@ -323,7 +323,7 @@ Tout d&#39;abord, configurez la règle de pression.
 Créez et configurez maintenant un workflow pour chaque diffusion à laquelle la règle de pression doit être appliquée.
 
 1. Créez une campagne. [En savoir plus](../campaigns/marketing-campaign-create.md#create-a-campaign).
-1. Dans l&#39;onglet **[!UICONTROL Ciblages et workflows]** de la campagne, ajoutez une activité **Requête** à votre workflow. Pour plus d’informations sur cette activité, consultez [cette section](../workflow/query.md).
+1. Dans l’onglet **[!UICONTROL Ciblages et workflows]** de la campagne, ajoutez une activité **Requête** à votre workflow. Pour plus d’informations sur cette activité, consultez [cette section](../workflow/query.md).
 1. Ajoutez une activité **[!UICONTROL Diffusion e-mail]** au workflow et ouvrez-la. Pour plus d’informations sur cette activité, consultez [cette section](../workflow/delivery.md).
 1. Accédez à l&#39;onglet **[!UICONTROL Validations]** des **[!UICONTROL Propriétés de la diffusion]** et désactivez toutes les validations.
 

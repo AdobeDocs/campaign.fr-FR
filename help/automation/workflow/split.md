@@ -5,9 +5,9 @@ description: En savoir plus sur l'activité de workflow de partage
 feature: Workflows, Targeting Activity
 exl-id: bf4935dd-87dc-4c5c-becf-8c4df61805fd
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1995'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 Une activité de type **Partage** permet de partitionner une cible en plusieurs sous-ensembles. La cible est construite avec tous les résultats reçus : toutes les activités antérieures doivent donc être terminées pour que cette activité soit exécutée.
 
-Cette activité ne fait pas l&#39;union des populations entrantes. Si plusieurs transitions arrivent sur une activité de partage, il est recommandé d&#39;insérer une activité d&#39;**[!UICONTROL Union]** avant.
+Cette activité ne fait pas l&#39;union des populations entrantes. Si plusieurs transitions arrivent sur une activité de partage, il est recommandé d’insérer une activité **[!UICONTROL Union]** avant.
 
 Consultez un exemple d&#39;utilisation de l&#39;activité de partage dans [cette section](targeting-workflows.md#create-subsets-using-the-split-activity).
 
@@ -173,7 +173,7 @@ Le modèle de répartition de données permet de limiter le nombre d&#39;enregis
 
      ![](assets/local_validation_notification_4.png)
 
-   * **[!UICONTROL Interface Web]**: permet de lier une application web à la liste des destinataires. Dans la notification de validation et de retour, chaque destinataire sera cliquable et sera associé à l&#39;application web sélectionnée. Le champ **[!UICONTROL Paramètres]** (par exemple, **[!UICONTROL recipientId]**) permet de renseigner le paramètre additionnel qui sera utilisé dans l&#39;URL de l&#39;application web.
+   * **[!UICONTROL Interface web]** : permet de lier une application web à la liste des destinataires. Dans la notification de validation et de retour, chaque destinataire sera cliquable et sera associé à l&#39;application web sélectionnée. Le champ **[!UICONTROL Paramètres]** (par exemple, **[!UICONTROL recipientId]**) permet de renseigner le paramètre additionnel qui sera utilisé dans l&#39;URL de l&#39;application web.
 
 1. L&#39;onglet **[!UICONTROL Répartition]** permet de définir la liste des valeurs de répartition.
 
@@ -227,6 +227,6 @@ Chacun des événements entrants doit spécifier une cible définie par ces para
 * schema
 * recCount
 
-Ce triplet de valeurs identifie la cible résultant de l’exclusion. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d’éléments dans la table.
+Ce triplet de valeurs identifie la cible résultant de l&#39;exclusion. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d’éléments dans la table.
 
 La transition associée au complémentaire possède les mêmes paramètres.

@@ -6,7 +6,7 @@ feature: Workflows, Channels Activity
 role: User
 exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '679'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Les principales étapes d&#39;implémentation pour ce cas pratique sont les suiv
 Pour définir votre cible, créez une requête afin d&#39;identifier les destinataires.
 
 1. Créez une campagne. En savoir plus sur [cette page](../campaigns/marketing-campaign-create.md).
-1. Dans l&#39;onglet **[!UICONTROL Ciblages et workflows]** de la campagne, ajoutez une activité **Requête** à votre workflow. Pour plus d’informations sur cette activité, consultez [cette section](query.md).
+1. Dans l’onglet **[!UICONTROL Ciblage et workflows]** de la campagne, ajoutez une activité **Requête** à votre workflow. Pour plus d’informations sur cette activité, consultez [cette section](query.md).
 1. Définissez les destinataires qui recevront vos diffusions. Par exemple, sélectionnez les membres &quot;Gold&quot; en tant que dimension cible.
 1. Ajoutez des conditions de filtrage à votre requête. Dans cet exemple, sélectionnez les destinataires disposant d&#39;une adresse email et d&#39;un numéro de téléphone portable.
 

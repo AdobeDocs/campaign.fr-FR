@@ -7,8 +7,8 @@ role: Admin, Developer
 level: Intermediate
 exl-id: 1a75f411-3f71-4114-b738-277820dc6138
 source-git-commit: 550e3cbd064ae7831855377f1d08d6acecd55c9e
-workflow-type: tm+mt
-source-wordcount: '1819'
+workflow-type: ht
+source-wordcount: '1835'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ Pour configurer votre application avec des SDK mobiles Adobe Experience Platfo
 1. Configurez une [propriété de balise mobile](#launch-property) dans la collecte de données Adobe Experience Platform.
 1. Obtenez le SDK mobile Adobe Experience Platform, comme expliqué [sur cette page](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}.
 1. (facultatif) Activez la journalisation et les mesures de cycle de vie, comme expliqué [sur cette page](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}.
-1. (facultatif) Ajoutez [Adobe Experience Platform Assurance dans votre application](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} to validate your implementation. Learn how to implement Adobe Experience Platform Assurance extension [in this page](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}.
+1. (Facultatif) Ajoutez [Adobe Experience Platform Assurance à votre application](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} pour valider votre implémentation. Découvrez comment implémenter l’extension Adobe Experience Platform Assurance [sur cette page](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}.
 1. Configurez vos services mobiles iOS et Android dans Adobe Campaign, comme expliqué [sur cette page](#push-service).
 1. Installez et configurez l’[extension Adobe Campaign](#configure-extension) dans votre propriété mobile.
 1. Suivez la [documentation du SDK mobile Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} pour obtenir une configuration avec les SDK mobiles Adobe Experience Platform dans votre application.

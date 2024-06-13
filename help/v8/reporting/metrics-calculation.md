@@ -5,9 +5,9 @@ feature: Reporting
 role: Data Engineer
 exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3097'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -129,7 +129,7 @@ Ce rapport se base sur la table **[!UICONTROL Statistiques d&#39;envoi et de tra
 
 **Répartition par domaine**
 
-La deuxième partie du rapport présente la répartition des messages en échec, par domaine Internet et non par type d&#39;erreur. La formule associée au **Erreur** Indicateur (@value) dans ce cas est : Count(@status=2 et @domain=&quot;Valeur du nom de domaine&quot;), c&#39;est-à-dire un comptage de tous les messages dont le statut est en échec pour ce domaine.
+La deuxième partie du rapport présente la répartition des messages en échec, non pas par type d&#39;erreur, mais par domaine Internet. Dans ce cas, la formule associée à l’indicateur **Erreur** (@value) est : Count(@status=2 et @domain=&quot;Valeur du nom de domaine&quot;), c&#39;est-à-dire un décompte de tous les messages dont le statut est en échec pour ce domaine.
 
 ## Navigateurs {#browsers-1}
 

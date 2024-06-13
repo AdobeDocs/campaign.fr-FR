@@ -5,9 +5,9 @@ description: En savoir plus sur les workflows de diffusions par défaut
 feature: Workflows
 role: User, Admin
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '317'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
   <tr> 
    <td> <span class="uicontrol">Mise à jour pour la délivrabilité</span> <br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td> Ce workflow permet de créer la liste des règles de qualification des mails rebonds, ainsi que la liste des domaines et des MX dans la plateforme. Ce workflow ne fonctionne que si le port HTTPS est ouvert. Ces listes ne sont pas mises à jour tant que le module Délivrabilité n'est pas installé.<br /> </td> 
+   <td> Ce workflow permet de créer la liste des règles de qualification des e-mails rejetés, ainsi que la liste des domaines et des MX dans la plateforme. Ce workflow ne fonctionne que si le port HTTPS est ouvert. Ces listes ne sont pas mises à jour tant que le module Délivrabilité n'est pas installé.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Nettoyage de la base</span> <br /> </td> 
@@ -68,7 +68,7 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
   <tr> 
    <td> <span class="uicontrol">Tracking</span> <br /> </td> 
    <td> <span class="uicontrol">tracking</span> <br /> </td> 
-   <td> Ce workflow effectue la récupération et la consolidation des informations de tracking. Il assure également le re-calcul des statistiques de tracking et de diffusions, notamment celles utilisées par les workflows d'archivage de Message Center. Par défaut, il est déclenché une fois par heure. <br /> </td> 
+   <td> Ce workflow effectue la récupération et la consolidation des informations de tracking. Il assure également le recalcul des statistiques de tracking et de diffusion, notamment celles utilisées par les workflows d'archivage de Message Center. Par défaut, il est déclenché une fois par heure. <br /> </td> 
   </tr> 
  </tbody> 
 </table>

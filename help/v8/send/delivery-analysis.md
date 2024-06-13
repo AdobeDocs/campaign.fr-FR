@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 1526048d-9f02-4853-948f-8fb618670dbd
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '750'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -90,4 +90,4 @@ Cet onglet permet d&#39;accéder aux options suivantes :
 
 * **[!UICONTROL Lancer le traitement dans un processus détaché]** : cette option permet de lancer l’analyse de la diffusion dans un processus à part. Par défaut, la fonction d’analyse utilise le processus du serveur applicatif d’Adobe Campaign (nlserver web). En cochant cette option, vous êtes assuré que l’analyse sera menée à son terme, même en cas de défaillance du serveur applicatif.
 * **[!UICONTROL Enregistrer les requêtes SQL générées pendant l’analyse dans le journal]** : cette option permet d&#39;ajouter les logs des requêtes SQL dans le journal de la diffusion lors de la phase d’analyse.
-* **[!UICONTROL Ignorer les scripts de personnalisation lors de l’envoi]** : cette option permet de ne pas interpréter les directives JavaScript présentes dans le contenu HTML. Elles seront affichées telles quelles dans le contenu diffusé. Ces directives sont introduites avec la méthode `<%=` balise .
+* **[!UICONTROL Ignorer les scripts de personnalisation lors de l’envoi]** : cette option permet de ne pas interpréter les directives JavaScript présentes dans le contenu HTML. Elles seront affichées telles quelles dans le contenu diffusé. Ces directives sont introduites par la balise `<%=`.

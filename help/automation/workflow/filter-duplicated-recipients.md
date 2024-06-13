@@ -6,9 +6,9 @@ feature: Workflows
 role: User
 exl-id: cfa1f45c-e1ac-4055-996c-6e8d041889bb
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '156'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
    ![](assets/query_recipients_1.png)
 
-1. Définissez la condition de filtrage suivante pour cibler les destinataires qui se trouvent dans le log de diffusion. Choisir **Log de diffusion des destinataires (broadlog)** dans le **Expression** colonne, choisissez **existent tels que** dans le **Opérateur** colonne .
+1. Définissez la condition de filtrage suivante pour cibler les destinataires qui se trouvent dans le log de diffusion. Sélectionnez **Log de diffusion d&#39;un destinataire (broadlog)** dans la colonne **Expression**. Sélectionnez ensuite **existent tel que** dans la colonne **Opérateur**.
 
    ![](assets/query_recipients_2.png)
 

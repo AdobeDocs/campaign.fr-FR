@@ -5,15 +5,15 @@ feature: Technote
 role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
 source-git-commit: 5d3dd679eb7a756200d604601c20c3fed5770fc2
-workflow-type: tm+mt
-source-wordcount: '1511'
+workflow-type: ht
+source-wordcount: '1530'
 ht-degree: 100%
 
 ---
 
 # Migration des opérateurs et opératrices techniques Campaign vers Adobe Developer Console {#migrate-tech-users-to-ims}
 
-Dans le cadre des efforts visant à renforcer le processus de sécurité et d’authentification, à partir de Campaign v8.5, le processus d’authentification à Campaign v8 est en cours d’amélioration. Les opérateurs et opératrices techniques peuvent désormais utiliser [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} to connect to Campaign. Learn more about the new server to server authentication process in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
+Dans le cadre des efforts visant à renforcer le processus de sécurité et d’authentification, à partir de Campaign v8.5, le processus d’authentification à Campaign v8 est en cours d’amélioration. Les opérateurs et opératrices techniques peuvent à présent utiliser [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} pour se connecter à Campaign. Pour en savoir plus sur le nouveau processus d’authentification serveur à serveur, consultez la [documentation d’Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
 Un opérateur ou une opératrice technique est un profil utilisateur de Campaign qui a été explicitement créé pour l’intégration de l’API. Cet article décrit les étapes à suivre pour migrer un opérateur ou une opératrice technique vers un compte technique par le biais de l’Adobe Developer Console.
 

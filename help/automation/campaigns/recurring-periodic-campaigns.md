@@ -6,7 +6,7 @@ feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 exl-id: 68c5b903-5043-4e74-b3f6-90a7f2fb3b9a
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '849'
 ht-degree: 100%
 
@@ -48,7 +48,7 @@ Pour créer un modèle pour les campagnes récurrentes, procédez de la manière
 
    ![](assets/recurring-campaign-wf-properties.png)
 
-### Créer l&#39;opération récurrente {#create-the-recurring-campaign}
+### Créer la campagne récurrente {#create-the-recurring-campaign}
 
 Pour créer la campagne récurrente et exécuter ses workflows selon le planning défini dans le modèle, vous devez effectuer les opérations suivantes :
 

@@ -2,7 +2,8 @@
 title: Notes de mise à jour de Campaign v8 (console) 2023
 description: Liste des fonctionnalités et améliorations des versions 2023 de Campaign v8.
 feature: Release Notes
-source-git-commit: 4fecae16b2db0f174de6d77acf5b846906073aeb
+exl-id: 6a0a9486-19a9-4ec3-9030-48dbf419f45f
+source-git-commit: 69ef7e81d5fc0f5cf0dc74fa16d970ef89607331
 workflow-type: ht
 source-wordcount: '381'
 ht-degree: 100%

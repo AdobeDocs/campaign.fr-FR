@@ -5,7 +5,7 @@ description: En savoir plus sur l’activité de workflow d’attente
 feature: Workflows
 exl-id: a9bcb214-5c87-4b26-804a-22b868905022
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
 ht-degree: 100%
 

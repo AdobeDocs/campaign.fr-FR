@@ -46,8 +46,8 @@ Le [canal Email](../send/direct-mail.md) est l&#39;un des principaux canaux dans
 Vous pouvez envoyer différents types d&#39;emails :
 
 * Emails uniques : emails que vous pouvez envoyer une fois à une cible définie. Ils sont généralement utilisés pour promouvoir un contenu spécifique qui ne sera préparé et envoyé qu&#39;une seule fois (newsletter, email promotionnel, etc.).
-* E-mails récurrents : dans une campagne, envoyez un même e-mail régulièrement et agrégez chaque envoi et ses rapports de façon périodique. Le même e-mail est envoyé, mais généralement à une cible différente, selon la cible éligible au jour de l’envoi. Citons comme exemple les e-mails d’anniversaire. Pour plus d’informations, consultez la section [Diffusions récurrentes](../../automation/workflow/recurring-delivery.md).
-* Emails transactionnels : e-mails unitaires qui sont déclenchés en fonction du comportement de vos clientes et clients. Pour plus d’informations, consultez la section [Messages transactionnels](../send/transactional.md).
+* E-mails récurrents : dans une campagne, envoyez un même e-mail régulièrement et agrégez chaque envoi et ses rapports de façon périodique. Un même e-mail est envoyé, mais généralement à une cible différente, selon la cible éligible pour le jour de l&#39;envoi. Un exemple courant est un e-mail d&#39;anniversaire. Pour plus d&#39;informations, consultez la section [Diffusions récurrentes](../../automation/workflow/recurring-delivery.md).
+* Emails transactionnels : emails unitaires qui sont déclenchés en fonction du comportement de vos clients. Pour plus d’informations, consultez la section [Messages transactionnels](../send/transactional.md).
 
 Pour plus d’informations sur l’utilisation des diffusions et les recommandations relatives à celles-ci, consultez les [Bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=fr#sending-messages){target="_blank"} d’Adobe Campaign Classic.
 
@@ -106,7 +106,7 @@ Les diffusions peuvent être créées à partir de la liste de diffusions ou au 
 
 Une **diffusion récurrente** est disponible dans le contexte d’un workflow. Elle permet de créer une diffusion à chaque exécution de l’activité. Ainsi, vous n’avez pas à créer de diffusion pour les tâches récurrentes. Par exemple, si vous exécutez ce type d’activité une fois par mois, vous obtiendrez 12 diffusions au bout d’un an.
 
-Les diffusions récurrentes sont créées dans des workflows via l’[activité Diffusions récurrentes](../../automation/workflow/recurring-delivery.md). Vous trouverez un exemple d’utilisation de cette activité présenté dans cette section : [Créer une diffusion récurrente dans un workflow de ciblage](../../automation/workflow/send-a-birthday-email.md).
+Les diffusions récurrentes sont créées dans des workflows par le biais de l&#39;activité [](../../automation/workflow/recurring-delivery.md)Diffusion récurrente. Un exemple d&#39;utilisation de cette activité est présenté dans la section suivante : [Création d’une diffusion récurrente dans un workflow de ciblage](../../automation/workflow/send-a-birthday-email.md).
 
 ### Diffusion au fil de l’eau {#continuous-delivery}
 

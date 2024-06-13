@@ -6,9 +6,9 @@ feature: Workflows, Enrichment Activity
 role: User
 exl-id: 3b3fa15f-b16e-42c8-a2e6-03350aee1903
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '825'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Dans cet exemple, vous allez découvrir comment personnaliser les diffusions en 
 
    ![](assets/uc1_enrich_9.png)
 
-1. Accédez au **[!UICONTROL Tri]** et cliquez sur le bouton **[!UICONTROL Ajouter]** , sélectionnez **[!UICONTROL Score]** et cochez la case dans le champ **[!UICONTROL descendant]** pour trier les éléments de la variable **[!UICONTROL Score]** dans l’ordre décroissant. Pour chaque destinataire, l&#39;activité d&#39;enrichissement ajoute une ligne correspondant au meilleur score obtenu lors du dernier jeu. Cliquez sur **[!UICONTROL Suivant]**.
+1. Dans l’écran **[!UICONTROL Tri]**, cliquez sur le bouton **[!UICONTROL Ajouter]**, sélectionnez le champ **[!UICONTROL Score]** et cochez la case dans la colonne **[!UICONTROL Descendant]** afin de classer les éléments des champs **[!UICONTROL Score]** par ordre décroissant. Pour chaque destinataire, l’activité d’enrichissement ajoutera la ligne correspondant au meilleur score réalisé, sur le dernier jeu. Cliquez sur **[!UICONTROL Suivant]**.
 
    ![](assets/uc1_enrich_10.png)
 

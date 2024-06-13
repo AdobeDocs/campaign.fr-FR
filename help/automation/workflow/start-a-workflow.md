@@ -7,9 +7,9 @@ level: Beginner
 role: User, Admin
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1146'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 84%
 
 Un workflow est toujours démarré manuellement. Au démarrage, il peut toutefois rester inactif en fonction des informations spécifiées par le biais d&#39;un planificateur (voir [Planificateur](scheduler.md)) ou d&#39;une planification d&#39;activité.
 
-Actions liées à l&#39;exécution du workflow de ciblage (lancement, arrêt, pause, etc.) are **asynchrone** processus : la commande est enregistrée et sera effective dès que le serveur sera disponible pour l&#39;appliquer.
+Les actions liées à l&#39;exécution du workflow de ciblage (lancement, arrêt, pause, etc.) sont des processus **asynchrones** : la commande est enregistrée et est effective dès que le serveur est disponible pour l’appliquer.
 
 La barre d&#39;outils permet de lancer et suivre l&#39;exécution du workflow.
 
@@ -45,7 +45,7 @@ Le bouton **[!UICONTROL Actions]** de la barre d’outils permet d’accéder à
 
 * **[!UICONTROL Stopper]**
 
-  Cette action arrête un workflow en cours d’exécution. L’état de l’instance est défini sur **Terminé**. Si possible, les opérations en cours sont interrompues. Les imports et requêtes SQL sont immédiatement annulées.
+  Cette action arrête un workflow en cours d’exécution. Le statut de l’instance est défini sur **Terminé**. Les opérations en cours sont interrompues, si possible. Les imports et requêtes SQL sont immédiatement annulés.
 
   >[!IMPORTANT]
   >
@@ -69,7 +69,7 @@ Le bouton **[!UICONTROL Actions]** de la barre d’outils permet d’accéder à
 
 * **[!UICONTROL Démarrer en mode simulation]**
 
-  Cette option permet de lancer le workflow en mode simulation et non en mode réel. Cela signifie que lorsque vous activez ce mode, seules les activités qui n&#39;ont pas d&#39;impact sur la base de données ou le système de fichiers sont exécutées (par exemple : **[!UICONTROL Requête]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). Activités qui ont un impact (par exemple, **[!UICONTROL Exporter]**, **[!UICONTROL Importer]**, etc.) ainsi que celles qui leur succèdent (dans la même branche) ne sont pas exécutées.
+  Cette option permet de lancer le workflow en mode simulation et non en mode réel. Cela signifie que lorsque vous activez ce mode, seules les activités qui n&#39;ont pas d&#39;impact sur la base de données ou le système de fichiers sont exécutées (par exemple : **[!UICONTROL Requête]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). Les activités qui ont un impact (par exemple, **[!UICONTROL Exporter]**, **[!UICONTROL Importer]**, etc.) ainsi que celles qui les suivent (dans la même branche) ne sont pas exécutées.
 
 * **[!UICONTROL Traitement anticipé des tâches en attente]**
 
@@ -87,7 +87,7 @@ Améliorez la stabilité de votre instance en implémentant les bonnes pratiques
 
 * **Ne planifiez pas l’exécution d’un workflow à une fréquence supérieure à toutes les 15 minutes**, car cela peut nuire aux performances générales du système et créer des blocs dans la base de données.
 
-* **Évitez de laisser vos workflows en pause**. Si vous créez un workflow temporaire, assurez-vous qu’il se terminera correctement et qu’il ne restera pas dans un **[!UICONTROL paused]** état. S’il est en pause, cela signifie que vous devez conserver les tables temporaires et ainsi augmenter la taille de la base de données. Affectez des superviseurs dans les propriétés du workflow pour envoyer une alerte en cas d’échec ou de suspension d’un workflow par le système.
+* **Évitez de laisser vos workflows en pause**. Si vous créez un workflow temporaire, assurez-vous qu’il se terminera correctement et qu’il ne restera pas dans l’état **[!UICONTROL en pause]**. S’il est en pause, cela signifie que vous devez conserver les tables temporaires et ainsi augmenter la taille de la base de données. Affectez des superviseurs dans les propriétés du workflow pour envoyer une alerte en cas d’échec ou de suspension d’un workflow par le système.
 
   Pour éviter que les workflows soient dans un état en pause :
 

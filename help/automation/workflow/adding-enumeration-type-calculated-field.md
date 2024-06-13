@@ -6,9 +6,9 @@ feature: Workflows, Data Management
 role: User
 exl-id: 4fe2ae81-faa6-4777-a332-70c451bca75b
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -75,10 +75,10 @@ Les étapes sont les suivantes :
 
    ![](assets/query_editor_nveau_78.png)
 
-   Par exemple, si vous n’entrez pas le genre &quot;2&quot; dans la variable **[!UICONTROL Liste des valeurs d&#39;énumération]**, et la variable **[!UICONTROL Générer un avertissement et continuer]** de la fonction **[!UICONTROL Dans d’autres cas]** est sélectionné, vous obtiendrez un journal d’avertissement. Ce journal indique que le genre &quot;2&quot; (féminin) n&#39;a pas été renseigné. Il est affiché dans le champ **[!UICONTROL Logs générés lors de l&#39;export]**, dans la fenêtre de prévisualisation des données.
+   Par exemple, si vous ne renseignez pas le genre « 2 » dans la **[!UICONTROL Liste de valeurs d’énumération]** et que la fonction **[!UICONTROL Générer un avertissement et continuer]** du champ **[!UICONTROL Dans les autres cas]** est sélectionnée, un journal d’avertissement est généré. Ce journal signale que le genre « 2 » (féminin) n’a pas été renseigné. Il est affiché dans le champ **[!UICONTROL Logs générés lors de l&#39;export]**, dans la fenêtre de prévisualisation des données.
 
    ![](assets/query_editor_nveau_79.png)
 
-   Prenons un autre exemple et disons que la valeur de l&#39;énumération &quot;2&quot; n&#39;est pas saisie. Sélectionnez la variable **[!UICONTROL Générer une erreur et rejeter la ligne]** fonction : tous les destinataires du genre &quot;2&quot; génèrent des anomalies et les autres informations de la ligne (prénom et nom, etc.) ne seront pas exportés. Un journal des erreurs s’affiche dans la variable **[!UICONTROL Logs générés lors de l&#39;export]** champ de la fenêtre de prévisualisation des données. Ce journal indique que la valeur de l&#39;énumération &quot;2&quot; n&#39;est pas saisie.
+   Prenons un autre exemple et supposons que la valeur d’énumération « 2 » n’ait pas été saisie. Sélectionnez la fonction **[!UICONTROL Générer une erreur et rejeter la ligne]** : les destinataires du genre « 2 » génèrent des anomalies et les autres informations de la ligne (prénom et nom, etc.) ne sont pas exportés. Un journal des erreurs s’affiche dans le champ **[!UICONTROL Logs générés lors de l&#39;export]** de la fenêtre de prévisualisation des données. Ce journal indique que la valeur d’énumération « 2 » n’a pas été saisie.
 
    ![](assets/query_editor_nveau_80.png)

@@ -6,9 +6,9 @@ feature: Workflows, Enrichment Activity, Targeting Activity
 role: User
 exl-id: 23bfabac-62cc-4f86-a739-a34a0e183c31
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1427'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -124,7 +124,7 @@ Pour cela, les étapes sont les suivantes :
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. Sélectionnez la variable **[!UICONTROL Définition de lien]** et cliquez sur l’option **[!UICONTROL Suivant]** bouton . Indiquez le type de lien à créer. Dans cet exemple, nous allons réconcilier le pays du destinataire du fichier avec un pays dans la liste des pays disponibles de la table dédiée de la base de données. Vous devez donc choisir l&#39;option **[!UICONTROL Définir un lien en recherchant une référence parmi plusieurs possibilités]**. Sélectionnez la table des pays dans le champ **[!UICONTROL Schéma cible]**.
+1. Sélectionnez l&#39;option **[!UICONTROL Définition de lien]** et cliquez sur le bouton **[!UICONTROL Suivant]**. Indiquez le type de lien à créer. Dans cet exemple, nous allons réconcilier le pays du destinataire du fichier avec un pays dans la liste des pays disponibles de la table dédiée de la base de données. Vous devez donc choisir l&#39;option **[!UICONTROL Définir un lien en recherchant une référence parmi plusieurs possibilités]**. Sélectionnez la table des pays dans le champ **[!UICONTROL Schéma cible]**.
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
@@ -169,7 +169,7 @@ Après avoir paramétré votre requête (voir cette [section](query.md)) :
 1. Indiquez un identifiant ainsi qu&#39;un libellé pour la proposition qui sera ajoutée.
 1. Définissez la sélection de l&#39;offre. Deux options sont possibles :
 
-   * **[!UICONTROL Rechercher la meilleure offre dans une catégorie]**: cochez cette option et définissez les paramètres d&#39;appel au moteur d&#39;offres (emplacement, catégorie ou thème(s), date de contact, nombre d&#39;offres à conserver). Le moteur calculera automatiquement la ou les offres à ajouter en fonction de ces paramètres. Nous vous recommandons de renseigner soit le champ **[!UICONTROL Catégorie]**, soit le champ le **[!UICONTROL Thème]**, plutôt que les deux à la fois.
+   * **[!UICONTROL Rechercher la meilleure offre dans une catégorie]** : cochez cette option et définissez les paramètres d’appel du moteur dʼoffres (emplacement, catégorie ou thèmes, date de contact, nombre dʼoffres à conserver). Le moteur calcule automatiquement la ou les offres à ajouter en fonction de ces paramètres. Nous vous recommandons de renseigner soit le champ **[!UICONTROL Catégorie]**, soit le champ le **[!UICONTROL Thème]**, plutôt que les deux à la fois.
 
      ![](assets/int_enrichment_offer3.png)
 

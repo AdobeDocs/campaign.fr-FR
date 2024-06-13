@@ -6,8 +6,8 @@ role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: tm+mt
-source-wordcount: '1049'
+workflow-type: ht
+source-wordcount: '1045'
 ht-degree: 100%
 
 ---
@@ -37,11 +37,11 @@ Deux modèles de déploiement sont disponibles : **Déploiement FDA de Campaig
 Dans son [déploiement FDA](fda-deployment.md), [!DNL Adobe Campaign] v8 peut être connecté à [!DNL Snowflake] pour accéder aux données via la fonctionnalité Federated Data Access : vous pouvez accéder aux données et aux informations externes stockées dans votre base de données [!DNL Snowflake] sans modifier la structure des données Adobe Campaign. PostgreSQL est la base de données principale. Vous pouvez utiliser Snowflake comme base de données secondaire pour étendre ensuite votre modèle de données et stocker vos données dans Snowflake. Par la suite, vous pourrez exécuter ETL, la segmentation et les rapports sur un jeu de données volumineux avec des performances optimales.
 
 
-![](assets/P1-P3-architecture.png){zoomable=&quot;yes&quot;}
+![](assets/P1-P3-architecture.png){zoomable="yes"}
 
 >[!NOTE]
 >
->Dans ce modèle de déploiement, la base de données [!DNL Snowflake] secondaire n’est disponible que sur demande. Pour mettre à jour votre déploiement avec [!DNL Snowflake], contactez la personne chargée de votre transition Adobe.
+>Dans ce modèle de déploiement, la base de données [!DNL Snowflake] secondaire n’est disponible que sur demande. Pour mettre à jour votre déploiement avec [!DNL Snowflake], contactez la personne chargée de votre transition Adobe.
 >
 
 ### Déploiement Campaign Grands comptes (FFDA) {#ac-deployment-ffda}
@@ -50,7 +50,7 @@ Dans un [déploiement Grands comptes (FFDA)](enterprise-deployment.md), [!DNL Ad
 
 Campaign v8 Enterprise présente le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud. Avec cette nouvelle architecture, le déploiement Campaign v8 Enterprise (FFDA) simplifie la gestion des données : aucun index n&#39;est requis sur la base de données cloud. Il vous suffit de créer les tables et de copier les données pour démarrer. La technologie de base de données cloud ne nécessite pas de maintenance spécifique pour garantir le niveau de performances attendu.
 
-![](assets/P4-architecture.png){zoomable=&quot;yes&quot;}
+![](assets/P4-architecture.png){zoomable="yes"}
 
 
 ## Partager l’exécution d’une diffusion {#split}

@@ -6,9 +6,9 @@ feature: Query Editor, Workflows
 role: User
 exl-id: 8e6fd9b4-77c4-4af8-921b-c3fe104fa5bc
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '222'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -50,4 +50,4 @@ La variable **[!UICONTROL Pris en compte si]** permet de définir les critères 
 
 Ici, **$(/tmp/@text)=&#39;agence&#39;**
 
-La variable **$(/tmp/@text) !=&#39;&#39;** applique chaque condition lorsque le champ de saisie n’est pas vide.
+La variable **$(/tmp/@text) !L&#39;expression =&#39;’** applique chaque condition lorsque le champ de saisie n&#39;est pas vide.

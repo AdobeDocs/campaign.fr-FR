@@ -6,9 +6,9 @@ feature: Workflows
 role: User, Developer
 exl-id: 2bb3443c-37d8-4d49-9be1-81217f56823c
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '631'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
    ![](assets/uc_enrichment_1.png)
 
 1. Ajoutez une activité **[!UICONTROL Partage]** pour différencier les destinataires qui célébreront leur anniversaire ce mois-ci des autres destinataires.
-1. Pour fractionner votre liste, dans la variable **[!UICONTROL Filtrage des enregistrements sélectionnés]** catégorie, sélectionnez **[!UICONTROL Ajouter une condition de filtrage sur la population entrante]**. Cliquez ensuite sur **[!UICONTROL Modifier]**.
+1. Pour partager votre liste, dans la catégorie **[!UICONTROL Filtrage des enregistrements sélectionnés]**, sélectionnez **[!UICONTROL Ajouter une condition de filtrage sur la population entrante]**. Cliquez ensuite sur **[!UICONTROL Editer]**.
 
    ![](assets/uc_enrichment_2.png)
 
@@ -108,7 +108,7 @@ Vous pouvez maintenant commencer à concevoir votre diffusion par email avec les
            formatDate(targetData.alias of your expression,"%2D.%2M")  %>
    ```
 
-1. Cliquez sur ![](assets/uc_enrichment_16.png). Sélectionner **[!UICONTROL Extension Target]** puis les dates de validité personnalisées créées précédemment avec l’événement **[!UICONTROL Enrichissement]** activité pour ajouter votre extension à l’expression formatDate.
+1. Cliquez sur ![](assets/uc_enrichment_16.png). Sélectionnez **[!UICONTROL Extension de la cible]**, puis les dates de validité personnalisées créées précédemment avec l’activité **[!UICONTROL Enrichissement]** pour ajouter votre extension à l’expression formatDate.
 
    ![](assets/uc_enrichment_19.png)
 
