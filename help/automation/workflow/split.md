@@ -4,10 +4,10 @@ title: Partage
 description: En savoir plus sur l'activité de workflow de partage
 feature: Workflows, Targeting Activity
 exl-id: bf4935dd-87dc-4c5c-becf-8c4df61805fd
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: ht
-source-wordcount: '1995'
-ht-degree: 100%
+source-git-commit: a5d44321c3d68b9370cfb6e9b1df62435de0dbda
+workflow-type: tm+mt
+source-wordcount: '2020'
+ht-degree: 98%
 
 ---
 
@@ -17,11 +17,13 @@ Une activité de type **Partage** permet de partitionner une cible en plusieurs 
 
 Cette activité ne fait pas l&#39;union des populations entrantes. Si plusieurs transitions arrivent sur une activité de partage, il est recommandé d’insérer une activité **[!UICONTROL Union]** avant.
 
-Consultez un exemple d&#39;utilisation de l&#39;activité de partage dans [cette section](targeting-workflows.md#create-subsets-using-the-split-activity).
+>[!NOTE]
+>
+>Les opérations de fractionnement ne peuvent pas être effectuées pour les tables qui ont des sources différentes. Pour ce faire, vous devez ajouter une **Enrichissement** avant l’activité **Partage** activité.
 
-Un exemple d&#39;utilisation de l&#39;activité de Partage pour segmenter la cible en différentes populations à l&#39;aide des conditions de filtrage est présenté dans [cette section](cross-channel-delivery-workflow.md).
-
-Un exemple d&#39;utilisation d&#39;une variable d&#39;instance dans une activité de Partage est présenté dans [cette section](javascript-scripts-and-templates.md).
+* Consultez un exemple d&#39;utilisation de l&#39;activité de partage dans [cette section](targeting-workflows.md#create-subsets-using-the-split-activity).
+* Un exemple d&#39;utilisation de l&#39;activité de Partage pour segmenter la cible en différentes populations à l&#39;aide des conditions de filtrage est présenté dans [cette section](cross-channel-delivery-workflow.md).
+* Un exemple d&#39;utilisation d&#39;une variable d&#39;instance dans une activité de Partage est présenté dans [cette section](javascript-scripts-and-templates.md).
 
 Pour paramétrer cette activité, vous devez définir le contenu et le libellé des sous-ensembles souhaités dans l&#39;onglet **[!UICONTROL Sous-ensembles]**, puis choisir la dimension de ciblage dans l&#39;onglet **[!UICONTROL Général]**.
 

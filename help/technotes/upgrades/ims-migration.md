@@ -4,10 +4,10 @@ description: Découvrez comment migrer les opérateurs et opératrices technique
 feature: Technote
 role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
-source-git-commit: 5d3dd679eb7a756200d604601c20c3fed5770fc2
-workflow-type: ht
-source-wordcount: '1530'
-ht-degree: 100%
+source-git-commit: 07c2a7460c407a0afb536d8b64f4105d8bc547f4
+workflow-type: tm+mt
+source-wordcount: '1551'
+ht-degree: 98%
 
 ---
 
@@ -151,9 +151,13 @@ Pour plus d’informations sur les étapes d’intégration des API, y compris u
 
 Vous trouverez ci-dessous des exemples d’appels SOAP indiquant les appels avant et après la migration pour les systèmes tiers.
 
+Lors de l’utilisation de l’authentification Adobe Identity Management System (IMS), pour générer un fichier WSDL, vous devez ajouter le `Authorization: Bearer <IMS_Technical_Token_Token>` dans l&#39;appel postman :
+
+```
+curl --location --request POST 'https://<instance_url>/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent' \--header 'Authorization: Bearer <Technical account access token>'
+```
+
 Une fois le processus de migration réalisé et validé, les appels Soap sont mis à jour comme indiqué ci-dessous :
-
-
 
 * Avant la migration : le jeton d’accès au compte technique n’est pas pris en charge.
 
@@ -201,8 +205,6 @@ Une fois le processus de migration réalisé et validé, les appels Soap sont mi
   </soapenv:Body>
   </soapenv:Envelope>
   ```
-
-
 
 ### Étape 9 : (facultatif) mettre à jour l’opérateur ou opératrice du compte technique dans la console cliente Campaign {#ims-migration-step-9}
 
