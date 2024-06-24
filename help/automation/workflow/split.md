@@ -5,9 +5,9 @@ description: En savoir plus sur l'activité de workflow de partage
 feature: Workflows, Targeting Activity
 exl-id: bf4935dd-87dc-4c5c-becf-8c4df61805fd
 source-git-commit: a5d44321c3d68b9370cfb6e9b1df62435de0dbda
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2020'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Cette activité ne fait pas l&#39;union des populations entrantes. Si plusieurs 
 
 >[!NOTE]
 >
->Les opérations de fractionnement ne peuvent pas être effectuées pour les tables qui ont des sources différentes. Pour ce faire, vous devez ajouter une **Enrichissement** avant l’activité **Partage** activité.
+>Les opérations de fractionnement ne peuvent pas être effectuées pour les tables qui ont des sources différentes. Pour le réaliser, vous devez ajouter une activité d’**Enrichissement** avant l’activité **Partage**.
 
 * Consultez un exemple d&#39;utilisation de l&#39;activité de partage dans [cette section](targeting-workflows.md#create-subsets-using-the-split-activity).
 * Un exemple d&#39;utilisation de l&#39;activité de Partage pour segmenter la cible en différentes populations à l&#39;aide des conditions de filtrage est présenté dans [cette section](cross-channel-delivery-workflow.md).

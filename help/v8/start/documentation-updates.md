@@ -7,9 +7,9 @@ level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
 source-git-commit: ab6c16af7652f2e8dbfa5c899c2152cefb7fc7c6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '204'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Cette page répertorie les dernières mises à jour de la documentation de [!DNL
 
 ## Juin 2024 {#june-2024}
 
-Une note a été ajoutée pour indiquer comment effacer les variables d&#39;instance lors du redémarrage des workflows. [En savoir plus](../../automation/workflow/start-a-workflow.md)
+Une note a été ajoutée pour indiquer comment effacer les variables d’instance lors du redémarrage des workflows. [En savoir plus](../../automation/workflow/start-a-workflow.md)
 
 ## Mai 2024 {#may-2024}
 
