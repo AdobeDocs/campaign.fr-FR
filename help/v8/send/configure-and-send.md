@@ -5,8 +5,8 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 070aa96187c5654e40665cb5b23329d3f7d508d6
-workflow-type: ht
+source-git-commit: 2e9c9f8e677233b2906f6ebb8f42dd86afe4e111
+workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Avant d’envoyer la diffusion, vous pouvez définir les paramètres d’envoi d
 
 Utilisez l’option **[!UICONTROL Priorité de diffusion]** pour modifier l’ordre d’envoi de vos diffusions en configurant leur niveau de priorité, de **[!UICONTROL Très basse]** à **[!UICONTROL Très haute]** (la valeur par défaut étant **[!UICONTROL Normale]**).
 
-### Nombre de lots
+### Nombre de lots {#delivery-batch-quantity}
 
 Utilisez l’option **[!UICONTROL Nombre de messages groupés]** pour définir le nombre de messages regroupés dans un même package de diffusion XML. Si le paramètre est défini sur 0, les messages sont automatiquement regroupés. La taille du paquet est définie par le calcul `<delivery size>/1024`, avec un minimum de 8 messages et un maximum de 256 messages par package.
 

@@ -8,7 +8,7 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="S’applique également à Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="S’applique à Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 9eb8521a1cc264d4d0137c68654ca45ccade81bd
+source-git-commit: 2e9c9f8e677233b2906f6ebb8f42dd86afe4e111
 workflow-type: tm+mt
 source-wordcount: '1478'
 ht-degree: 95%
@@ -84,7 +84,7 @@ Pour déplacer votre environnement vers HTTP v1, procédez comme suit :
    | Message de données | N/A | validate_only |
    | Message de notification | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
 
-1. Une fois la transition HTTP v1 terminée, vous devez mettre à jour votre **modèles de diffusion** pour les notifications push Android afin d’augmenter le nombre de messages par lot. Pour ce faire, accédez aux propriétés de votre modèle de diffusion Android et, dans le **Diffusion** , définissez **Quantité de lot de messages** to **256**. Appliquez cette modification à tous les modèles de diffusion Android utilisés pour vos diffusions Android, ainsi qu’à toutes vos diffusions Android existantes.
+1. Une fois la transition HTTP v1 terminée, vous devez mettre à jour votre **modèles de diffusion** pour les notifications push Android afin d’augmenter le nombre de messages par lot. Pour ce faire, accédez aux propriétés de votre modèle de diffusion Android et, dans le **Diffusion** , définissez [Quantité de lot de messages](../../v8/send/configure-and-send.md#delivery-batch-quantity) to **256**. Appliquez cette modification à tous les modèles de diffusion Android utilisés pour vos diffusions Android, ainsi qu’à toutes vos diffusions Android existantes.
 
 
 >[!NOTE]
