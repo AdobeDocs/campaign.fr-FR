@@ -8,10 +8,10 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="S’applique également à Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="S’applique à Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 24d9adddbc983a600f99dab8bab1235585b48ceb
+source-git-commit: 9eb8521a1cc264d4d0137c68654ca45ccade81bd
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 100%
+source-wordcount: '1478'
+ht-degree: 95%
 
 ---
 
@@ -77,12 +77,14 @@ Pour déplacer votre environnement vers HTTP v1, procédez comme suit :
 1. Vous pouvez, si nécessaire, enrichir un contenu de message push avec certaines **[!UICONTROL variables d&#39;application]**. Elles sont entièrement personnalisables et font partie de la payload du message envoyé à l&#39;appareil mobile.
 1. Cliquez sur **[!UICONTROL Terminer]**, puis sur **[!UICONTROL Enregistrer]**.
 
-Vous trouverez ci-dessous les noms de payload FCM pour personnaliser davantage votre notification push. Ces options sont décrites [ici](#fcm-apps).
+   Vous trouverez ci-dessous les noms de payload FCM pour personnaliser davantage votre notification push. Ces options sont décrites [ici](#fcm-apps).
 
-| Type de message | Élément de message configurable (nom de payload FCM) | Options configurables (nom de payload FCM) |
-|:-:|:-:|:-:|
-| Message de données | N/A | validate_only |
-| Message de notification | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
+   | Type de message | Élément de message configurable (nom de payload FCM) | Options configurables (nom de payload FCM) |
+   |:-:|:-:|:-:|
+   | Message de données | N/A | validate_only |
+   | Message de notification | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
+
+1. Une fois la transition HTTP v1 terminée, vous devez mettre à jour votre **modèles de diffusion** pour les notifications push Android afin d’augmenter le nombre de messages par lot. Pour ce faire, accédez aux propriétés de votre modèle de diffusion Android et, dans le **Diffusion** , définissez **Quantité de lot de messages** to **256**. Appliquez cette modification à tous les modèles de diffusion Android utilisés pour vos diffusions Android, ainsi qu’à toutes vos diffusions Android existantes.
 
 
 >[!NOTE]
@@ -107,7 +109,6 @@ Vous pouvez ainsi :
 * définir le niveau de **[!UICONTROL visibilité]** de votre notification sur public, privé ou secret.
 
 Pour plus d’informations sur les **[!UICONTROL options supplémentaires HTTP v1]** et sur la façon de remplir ces champs, consultez la [documentation FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
-
 
 
 
