@@ -2,9 +2,11 @@
 product: campaign
 title: Obsolescence de la console cliente 32 bits
 description: Obsolescence de la console cliente 32 bits
+hide: true
+hidefromtoc: true
 exl-id: 9411e38a-5783-439c-ad54-f33bd374f2b8
-source-git-commit: 9df599ec0a898a1af16cb92d334d50375fde86ba
-workflow-type: ht
+source-git-commit: 50dcdf1f6bcc8c8a195a0bf0a37af254f33b80d5
+workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 100%
 

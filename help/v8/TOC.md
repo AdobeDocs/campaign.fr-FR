@@ -5,10 +5,10 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: 41ba91fca46747760fc42ea6cd78600abbd74c02
-workflow-type: ht
-source-wordcount: '613'
-ht-degree: 100%
+source-git-commit: 50dcdf1f6bcc8c8a195a0bf0a37af254f33b80d5
+workflow-type: tm+mt
+source-wordcount: '615'
+ht-degree: 99%
 
 ---
 
@@ -99,6 +99,8 @@ ht-degree: 100%
    + [Gérer les abonnements](start/subscriptions.md)
 + Gestion de contenu {#content}
    + [Concevoir des formulaires et des applications web](dev/webapps.md)
++ Automatisation et workflows {#automation}
+   + [Guide d’automatisation de Campaign >](https://experienceleague.adobe.com/fr/docs/campaign/automation/home)
 + Gestion de la confidentialité et de la sécurité {#privacy}
    + [Gérer les demandes d’accès à des informations personnelles](start/privacy.md)
    + [Directives de sécurité](config/security.md)
@@ -203,7 +205,6 @@ ht-degree: 100%
       + [Formulaires de saisie](dev/forms.md)
    + [Utiliser les packages de données](dev/packages.md)
    + [API Campaign](dev/api.md)
-+ [Panneau de contrôle de Campaign >](https://experienceleague.adobe.com/fr/docs/control-panel/using/control-panel-home)
-+ [Guide d’automatisation de Campaign >](https://experienceleague.adobe.com/fr/docs/campaign/automation/home)
++ [Notes techniques de Campaign >](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/technotes-home)
 + [Documentation de l’interface d’utilisation de Campaign Web >](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/campaign-web-home)
 
