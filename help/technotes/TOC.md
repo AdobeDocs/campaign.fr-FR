@@ -5,10 +5,10 @@ type: Event
 title: Notes techniques d’Adobe Campaign
 description: Notes techniques de Campaign
 breadcrumb-title: Notes techniques de Campaign
-source-git-commit: 50dcdf1f6bcc8c8a195a0bf0a37af254f33b80d5
+source-git-commit: 29665df166a12a4928c6e356e1ff1a3bb47e30e5
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 93%
+source-wordcount: '64'
+ht-degree: 85%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 93%
 
 + [Notes techniques de Campaign](technotes-home.md)
 + Mises à niveau{#tn-new}
+   + [Modifications du canal de notification push](upgrades/push-technote.md)
    + [Migrer les utilisateurs et utilisatrices vers IMS](upgrades/migrate-users-to-ims.md)
    + [Migrer un opérateur ou une opératrice technique vers Developer Console](upgrades/ims-migration.md)
    + [Migrer un opérateur ou une opératrice technique vers Developer Console](upgrades/ims-migration-old.md)
@@ -26,5 +27,4 @@ ht-degree: 93%
    + [Navigateurs Internet](upgrades/browsers.md)
    + [Mises à niveau du système en 2023](upgrades/tech-stack-upgrade.md)
    + [Abandon de la console cliente 32 bits](upgrades/console.md)
-   + [Modifications du canal de notification push](upgrades/push-technote.md)
-+ [Panneau de contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr)
++ [&lt; Retour à la documentation de Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr)
