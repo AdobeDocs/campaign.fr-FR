@@ -1,20 +1,20 @@
 ---
 keywords: Campaign Classic;accueil;thèmes populaires
-description: Notes techniques Adobe Campaign
+description: Notes techniques d’Adobe Campaign
 title: Articles techniques d’Adobe Campaign
 role: Developer
 level: Experienced
 exl-id: ae1ef010-24d5-4be4-a30c-899e2b0040a4
 source-git-commit: 0844a4fcd34220d825ae30368b284cbcaf93d02b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
-# Notes techniques d’Adobe Campaign v8 {#campaign-technotes}
+# Notes techniques d’Adobe Campaign v8 {#campaign-technotes}
 
-Découvrez les dernières technotes de Campaign dans cette section. Ces notes techniques s&#39;appliquent à Campaign v8.
+Découvrez les dernières notes techniques de Campaign dans cette section. Ces notes techniques s’appliquent à Campaign v8.
 
 >[!BEGINTABS]
 
@@ -28,7 +28,7 @@ Certaines modifications importantes apportées au service Android FCM (Firebas
 
 >[!TAB Système Identity Management (IMS)]
 
-Campaign v8.6 et les versions ultérieures apportent des améliorations au processus d’authentification de Campaign v8. Tous les opérateurs utiliseront Adobe Identity Management System (IMS) uniquement pour se connecter à Campaign.
+Campaign v8.6 et les versions ultérieures apportent des améliorations au processus d’authentification de Campaign v8. Tous les opérateurs et opératrices doivent utiliser Adobe Identity Management System (IMS) uniquement pour se connecter à Campaign.
 
 [![Image](../v8/assets/do-not-localize/learn-more-button.svg)](upgrades/migrate-users-to-ims.md)
 

@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
 source-git-commit: 48aba38f3dc8bb322e6d0b38c1b743e980671cd7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1049'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 87%
 
 Les diffusions d’applications mobiles vous permettent d’envoyer des notifications aux appareils iOS et Android.
 
-Avant de commencer à envoyer des notifications push avec Adobe Campaign, vous devez vous assurer que les configurations et les intégrations sont en place sur l’application mobile et pour les balises dans Adobe Experience Platform. [En savoir plus sur la configuration push.](push-settings.md).
+Avant de commencer à envoyer des notifications push avec Adobe Campaign, vous devez vous assurer que les configurations et les intégrations sont en place sur l’application mobile et pour les balises dans Adobe Experience Platform. [En savoir plus sur la configuration des notifications push](push-settings.md).
 
 >[!CAUTION]
 >
->Certaines modifications importantes apportées au service Android Firebase Cloud Messaging (FCM) sont publiées en 2024 et peuvent avoir une incidence sur votre mise en oeuvre d’Adobe Campaign. Il se peut que la configuration de vos services d’abonnement pour les notifications push Android doive être mise à jour pour prendre en charge cette modification. Vous pouvez déjà vérifier et agir. [En savoir plus](../../technotes/upgrades/push-technote.md).
+>Certaines modifications importantes apportées au service Android FCM (Firebase Cloud Messaging) seront publiées en 2024 et pourront avoir une incidence sur votre mise en œuvre d’Adobe Campaign. Il se peut que la configuration de vos services d’abonnement pour les notifications push Android doive être mise à jour pour prendre en charge cette modification. Vous pouvez déjà vérifier et agir. [En savoir plus](../../technotes/upgrades/push-technote.md).
 
 
 ## Création de votre première notification push {#push-create}
@@ -37,7 +37,7 @@ Pour créer une nouvelle diffusion, accédez à l&#39;onglet **[!UICONTROL Campa
 ![](assets/delivery_step_1.png)
 
 
-Par défaut, Adobe Campaign est livré avec deux modèles de diffusion : un pour iOS, un autre pour Android. Vous pouvez les dupliquer pour définir vos propres paramètres. Les étapes de configuration d&#39;une diffusion push basée sur ces modèles sont présentées ci-dessous.
+Par défaut, Adobe Campaign est livré avec deux modèles de diffusion : un pour iOS, un autre pour Android. Vous pouvez les dupliquer pour définir vos propres paramètres. Les étapes de configuration d’une diffusion push basée sur ces modèles sont présentées ci-dessous.
 
 >[!BEGINTABS]
 
@@ -139,7 +139,7 @@ Pour envoyer des notifications sur les appareils Android, procédez comme suit 
 
    >[!NOTE]
    > 
-   >Avec les dernières API FCM (HTTP v1), vous devez mettre à jour votre **modèles de diffusion** pour les notifications push Android afin d’augmenter le nombre de messages par lot. Pour ce faire, accédez aux propriétés de votre modèle de diffusion Android et, dans le **Diffusion** , définissez [Quantité de lot de messages](../../v8/send/configure-and-send.md#delivery-batch-quantity) to **256**. Appliquez cette modification à tous les modèles de diffusion utilisés pour vos diffusions Android, ainsi qu’à toutes vos diffusions Android existantes.
+   >Avec les dernières API FCM (HTTP v1), vous devez mettre à jour votre **modèles de diffusion** pour les notifications push Android afin d’augmenter le nombre de messages par lot. Pour ce faire, accédez aux propriétés de votre modèle de diffusion Android puis, dans l’onglet **Diffusion**, définissez [Nombre de lots de messages](../../v8/send/configure-and-send.md#delivery-batch-quantity) sur **256**. Appliquez cette modification à tous les modèles de diffusion utilisés pour vos diffusions Android, ainsi qu’à toutes vos diffusions Android existantes.
 
 
 1. Pour définir la cible de la notification, cliquez sur le lien **[!UICONTROL Pour]**, puis sur **[!UICONTROL Ajouter]**.
