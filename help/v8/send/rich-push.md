@@ -6,10 +6,10 @@ feature: Push
 role: User
 level: Beginner
 exl-id: 42e3623b-b401-4fcc-80a7-ea38347fddc6
-source-git-commit: 94dba45c59c699680675bdcd2b73da386d727435
-workflow-type: ht
-source-wordcount: '1241'
-ht-degree: 100%
+source-git-commit: 5236cc94e78db11b8975ad84c49594b282fdecf3
+workflow-type: tm+mt
+source-wordcount: '1263'
+ht-degree: 98%
 
 ---
 
@@ -26,6 +26,10 @@ Firebase Cloud Messaging vous permet de choisir entre deux types de messages 
 * Le **[!UICONTROL Message de notification]**, géré automatiquement par le SDK FCM. FCM affiche automatiquement le message sur les appareils de vos utilisateurs et utilisatrices pour le compte de l&#39;application cliente. Les messages de notification contiennent un ensemble de paramètres et d’options prédéfini, mais peuvent encore être personnalisés avec des variables d’application personnalisées.
 
 ## Définir le contenu de la notification {#push-message}
+
+>[!IMPORTANT]
+>
+>Avant de concevoir une notification push enrichie, vous devez d’abord configurer votre connecteur. Voir [cette page](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android) pour la procédure détaillée.
 
 Une fois votre diffusion de notification push créée, vous pouvez en définir le contenu. Trois modèles sont disponibles :
 
