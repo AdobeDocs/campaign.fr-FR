@@ -5,10 +5,10 @@ feature: Configuration
 role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 55c16fe19125ea54035a8f97928484c7baea161b
-workflow-type: ht
-source-wordcount: '753'
-ht-degree: 100%
+source-git-commit: c225b3ee5b356d98d6a5e3bb9bd1cb0feae0300a
+workflow-type: tm+mt
+source-wordcount: '738'
+ht-degree: 98%
 
 ---
 
@@ -96,7 +96,7 @@ Trois cas d’utilisation sont pris en charge :
 
 >[!CAUTION]
 >
->Seuls les bases de données On-Premise et les périphériques VPN compatibles avec AWS sont pris en charge. [En savoir plus](#vpn-callouts)
+>Seuls les bases de données On-Premise et les périphériques VPN compatibles avec AWS sont pris en charge. [En savoir plus](#vpn-databases)
 
 Pour garantir une utilisation correcte de cette fonctionnalité, suivez les instructions ci-dessous :
 
@@ -110,24 +110,23 @@ Pour garantir une utilisation correcte de cette fonctionnalité, suivez les inst
 
 * Configurez un mécanisme de reconnexion de votre côté en cas de déconnexion accidentelle.
 
+### Bases de données et périphériques pris en charge {#vpn-databases}
 
-### Mécanismes de sécurisation et limitations {#vpn-callouts}
+Les bases de données on-premise suivantes sont prises en charge :
 
-Les mécanismes de sécurisation et limitations ci-après s’appliquent à l’intégration de la tunnellisation du VPN à Adobe Campaign v8 :
+* MySQL
+* Netezza
+* Oracle
+* SAP HANA
+* SQL Server
+* Sybase
+* Teradata
+* Hadoop via HiveSQL
 
-* Seules les bases de données On-Premise sont prises en charge, telles que<!--Richa to check the list with PM--> :
+Seuls les périphériques VPN compatibles avec AWS sont pris en charge. Une liste des périphériques compatibles est disponible sur [cette page](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files){target="_blank"}.
 
-   * MySQL
-   * Netezza
-   * Oracle
-   * SAP HANA
-   * SQL Server
-   * Sybase
-   * Teradata
-   * Hadoop via HiveSQL
-
-* Seuls les périphériques VPN compatibles avec AWS sont pris en charge. Une liste des périphériques compatibles est disponible sur [cette page](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files){target="_blank"}<!--check which list should be communicated-->.
-
-* Les connexions VPN à des tiers ou à des fournisseurs externes ne sont pas prises en charge.
-
-* Les VPN supplémentaires gérés par Adobe et les bases de données privées Cloud ne sont pas inclus.
+>[!NOTE]
+>
+>* Les connexions VPN à des tiers ou à des fournisseurs externes ne sont pas prises en charge.
+>
+>* Les VPN supplémentaires gérés par Adobe et les bases de données privées Cloud ne sont pas inclus.

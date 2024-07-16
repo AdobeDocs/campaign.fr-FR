@@ -5,8 +5,8 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: 55c16fe19125ea54035a8f97928484c7baea161b
-workflow-type: ht
+source-git-commit: c225b3ee5b356d98d6a5e3bb9bd1cb0feae0300a
+workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 100%
 
@@ -60,7 +60,7 @@ Les bases de données externes compatibles avec le module Adobe Campaign Federa
 
 
 >[!AVAILABILITY]
->En outre, avec le [Module complémentaire de sécurité améliorée](../config/enhanced-security.md), vous pouvez accéder à vos bases de données On-Premise via la tunnellisation VPN sécurisée. [En savoir plus](../config/enhanced-security.md#vpn-callouts)
+>En outre, avec le [Module complémentaire de sécurité améliorée](../config/enhanced-security.md#secure-vpn-tunneling), vous pouvez accéder à vos bases de données On-Premise via la tunnellisation VPN sécurisée. [En savoir plus](../config/enhanced-security.md#vpn-callouts)
 
 ## SDK mobile {#MobileSDK}
 
