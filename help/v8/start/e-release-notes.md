@@ -7,51 +7,61 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: ht
-source-wordcount: '464'
-ht-degree: 100%
+source-git-commit: 09b8ced170ff28b24713722e0a82852038053201
+workflow-type: tm+mt
+source-wordcount: '372'
+ht-degree: 58%
 
 ---
 
 # Notes de mise à jour anticipées {#e-new-release}
 
-Cette page décrit les améliorations et correctifs inclus dans la prochaine version de Campaign .v8 Ce contenu est sujet à des modifications sans préavis jusqu’à la date de mise à jour. Les notes de mise à jour officielles sont disponibles sur cette [page](../start/release-notes.md).
+Cette page décrit les améliorations et correctifs inclus dans la prochaine version de Campaign .v8 **Les notes de mise à jour anticipées ci-dessous peuvent être modifiées sans préavis jusqu’à la date de publication.**. Les liens, les écrans et la documentation mise à jour sont publiés dans les [notes de mise à jour](release-notes.md), à la date de publication.
 
-## Version 8.6.1 {#release-8-6-1}
+## Version 8.7.2 {#release-8-7-2}
 
-_14 février 2024_
-
-
-### Nouveautés {#new-8-6-1}
-
-* À compter de cette version, vous avez accès à la nouvelle **interface utilisateur web de Campaign**, disponible via l’environnement central Adobe Experience Cloud. Experience Cloud est la famille intégrée d’applications, de produits et de services de marketing numérique d’Adobe. Grâce à son interface intuitive, vous pouvez accéder rapidement à vos applications cloud, fonctionnalités de produit et services. Découvrez comment vous connecter à Adobe Experience Cloud et accéder à l’interface web d’Adobe Campaign [dans cette page](campaign-ui.md#ac-web-ui).
-
-* La version 32 bits de la console cliente est désormais obsolète. À compter de la version 8.6, la console cliente sera uniquement disponible en 64 bits. La mise à niveau vers la version 64 bits de la console cliente est transparente. Pour plus d’informations sur la mise à niveau de votre système d’exploitation, reportez-vous à cette [note technique](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html?lang=fr){target="_blank"}.
+_mercredi 30 juillet 2024_
 
 
-### Améliorations générales {#improvements-8-6-1}
+>[!AVAILABILITY]
+>
+>Cette version est en **disponibilité limitée** (LA). Elle est limitée aux personnes effectuant la migration **depuis Adobe Campaign Standard vers Adobe Campaign v8** et ne peut pas être déployée dans un autre environnement.
+>
+>Si vous êtes un utilisateur ou une utilisatrice de Campaign Standard et que vous passez à Campaign v8, apprenez-en plus sur cette transition dans la [documentation sur l’interface d’utilisation d’Adobe Campaign Web v8](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/release-notes/acs-migration){target="_blank"}.
 
-* Campaign v8.6 améliore le débit des **indicateurs de tracking des diffusions par e-mail**. Grâce à nos processus optimisés, le suivi de l’ingestion et le temps de calcul sont réduits, et vous pouvez vérifier beaucoup plus rapidement vos indicateurs clés de diffusion.
+### Nouveautés {#new-8-7-2}
 
-* Vous pouvez désormais connecter votre instance Campaign v8 à la base de données externe Azure Synapse. Cette connexion est gérée à l’aide d’un nouveau compte externe.
+* **Nouveau connecteur d&#39;envoi de SMS** - Le connecteur d&#39;envoi de SMS a été modernisé et amélioré afin d&#39;activer les connexions SMPP en mode émetteur-récepteur, d&#39;activer les connexions SMPP persistantes et d&#39;assurer une meilleure compatibilité pour les environnements en transition depuis Adobe Campaign Standard. Un nouveau compte externe SMS est désormais disponible pour toutes les nouvelles implémentations SMS. L’implémentation existante est toujours prise en charge, mais il est recommandé de passer à ce nouveau connecteur moderne et étendu.
 
-* Adobe Campaign v8 s’intègre désormais à **Adobe Experience Manager as a Cloud Service**, la création étant exclusivement possible via l’interface utilisateur web d’Adobe Campaign.
+* **Notification push enrichie (GA)** - Vous pouvez désormais envoyer des notifications push enrichies. La notification push enrichie est une forme améliorée de notification mobile qui va au-delà des messages texte simples en incorporant des éléments multimédias tels que des images, des boutons interactifs ou d’autres contenus multimédias enrichis. Avec cette version, un ensemble de modèles pour les notifications push enrichies est désormais disponible pour vos applications iOS et Android. [En savoir plus](../send/rich-push.md).
 
-* Vous pouvez désormais utiliser votre **bibliothèque Adobe Experience Manager Assets** avec Experience Cloud Assets, même si le package **Intégration avec Adobe Experience Cloud** est installé sur votre instance Adobe Campaign.
+* **Marque** - Les options de marque sont désormais disponibles pour tous les canaux, y compris les SMS et les courriers. [En savoir plus](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html?lang=fr){target="_blank"}
 
-* Vous ne pouvez plus créer d’opérateurs ou d’opératrices à partir de la console cliente. Vous devez désormais utiliser Admin Console. [En savoir plus](../start/gs-permissions.md).
+<!--
+### Fixes {#fixes-8-7-2}
 
-* Plusieurs outils tiers ont été mis à jour pour optimiser la sécurité.
+The following issues are fixed in this release:
 
-### Mises à jour de la délivrabilité {#deliverability-8-6-1}
+NEO-76592, NEO-75400, NEO-77406, NEO-77674, NEO-77899, NEO-73989, NEO-76064, NEO-76039, NEO-76040, NEO-76845, NEO-76664, NEO-76682, NEO-76663, NEO-73602, NEO-72915, NEO-78134, NEO-77000, NEO-77002, NEO-76955, NEO-76864, NEO-76926, NEO-76495, NEO-77168, NEO-41058, NEO-75581, NEO-74647, NEO-74585, NEO-74586, NEO-74831, NEO-77319, NEO-78607.-->
 
-* D’ici février 2024, toute société qui envoie plus de 5 000 e-mails via Google ou Yahoo! devra commencer à utiliser une technologie d’authentification appelée DMARC (Domain-based Message Authentication Reporting and Conformance). Assurez-vous que l’enregistrement DMARC est configuré pour tous les sous-domaines que vous utilisez avec Adobe Campaign. [En savoir plus](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=fr){target="_blank"}
+## Version 8.6.3 {#release-8-6-3}
 
-* À compter du 1er juin 2024, Google et Yahoo! exigeront que les expéditeurs et expéditrices se conforment à List-Unsubscribe en un clic. Adobe Campaign prend désormais en charge cette option. [En savoir plus](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#one-click-list-unsubscribe){target="_blank"}
+_mercredi 30 juillet 2024_
 
 
-### Correctifs {#fixes-8-6-1}
+### Nouveautés {#new-8-6-3}
 
-Les problèmes suivants ont été corrigés dans cette version :
-NEO-67892, NEO-67235, NEO-66797, NEO-66462, NEO-65091, NEO-65036, NEO-64984, NEO-64680, NEO-63973, NEO-63879, NEO-63815, NEO-63657, NEO-63539, NEO-63387, NEO-63294, NEO-63174, NEO-62964, NEO-62750, NEO-62686, NEO-62455, NEO-62406, NEO-61580, NEO-61199, NEO-60786, NEO-59544, NEO-59198, NEO-59059, NEO-58637, NEO-55197, NEO-52542, NEO-50488, NEO-47789.
+* **Notification push enrichie** - Vous pouvez désormais envoyer des notifications push enrichies. La notification push enrichie est une forme améliorée de notification mobile qui va au-delà des messages texte simples en incorporant des éléments multimédias tels que des images, des boutons interactifs ou d’autres contenus multimédias enrichis. Avec cette version, un ensemble de modèles pour les notifications push enrichies est désormais disponible pour vos applications iOS et Android. [En savoir plus](../send/rich-push.md).
+
+* À compter de cette version, les informations d’identification du compte de service (JWT) étant abandonnées par Adobe, les intégrations sortantes de Campaign aux solutions et applications d’Adobe dépendent désormais des informations d’identification OAuth serveur à serveur. [En savoir plus](release-notes.md#change-8-7-1)
+
+
+### Améliorations générales {#improvements-8-6-3}
+
+* Pour accroître la sécurité de toutes les communications entre les applications, mTLS est désormais pris en charge pour les appels API externes.
+
+<!--
+### Fixes {#fixes-8-7-2}
+
+The following issues are fixed in this release:
+-->

@@ -3,10 +3,10 @@ title: Notes de mise à jour de Campaign v8
 description: Dernière version de Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: e119c415ce363a635f9f0318e3fd70f90f4bde06
-workflow-type: ht
-source-wordcount: '801'
-ht-degree: 100%
+source-git-commit: 09b8ced170ff28b24713722e0a82852038053201
+workflow-type: tm+mt
+source-wordcount: '781'
+ht-degree: 91%
 
 ---
 
@@ -71,7 +71,7 @@ _2 mai 2024_
 
 À compter de cette version, les informations d’identification du compte de service (JWT) étant abandonnées par Adobe, les intégrations sortantes de Campaign aux solutions et applications d’Adobe dépendent désormais des informations d’identification OAuth serveur à serveur. Adobe effectuera la migration JWT vers OAuth pour vos intégrations sortantes, telles que l’intégration Campaign-Analytics ou Triggers Experience Cloud.
 
-Si vous avez implémenté des intégrations entrantes avec Campaign, vous devez migrer votre compte technique comme décrit dans [cette documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}. Les informations d’identification de compte de service (JWT) existantes continueront à fonctionner jusqu’qu’au **27 janvier 2025**. En outre, la Developer Console continuera à prendre en charge la création de nouvelles informations d’identification de compte de service (JWT) jusqu’au **3 juin 2024**. Les informations d’identification d’un nouveau compte de service (JWT) ne peuvent plus être créées ni ajoutées à un projet après cette date.
+Si vous avez implémenté des intégrations entrantes avec Campaign, vous devez migrer votre compte technique comme décrit dans [cette documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}. Les informations d’identification de compte de service (JWT) existantes continueront à fonctionner jusqu’qu’au **27 janvier 2025**.
 
 
 ### Améliorations générales {#improvements-8-7-1}
@@ -80,7 +80,11 @@ Si vous avez implémenté des intégrations entrantes avec Campaign, vous devez 
 
 * Dans les tableaux Campaign, les attributs suivants sont désormais renseignés par défaut par la date et l’heure du serveur : `lastModified` et `created`. La valeur d’attribut `createdBy-id` est désormais renseignée par défaut avec l’identifiant de connexion actuel. Les valeurs fournies par les utilisateurs et les utilisatrices dans les appels API sont ignorées. <!--This configuration can be changed in the Campaign server configuration file. As a Managed Cloud Services customer, you must reach out to Adobe to change this default configuration.-->
 
+* Pour accroître la sécurité de toutes les communications entre les applications, mTLS est désormais pris en charge pour les appels API externes.
+
+
 ### Correctifs {#fixes-8-7-1}
 
 Les problèmes suivants ont été corrigés dans cette version :
-NEO-72648, NEO-71534, NEO-71473, NEO-70263, NEO-70195, NEO-69651, NEO-68704, NEO-68192, NEO-67814, NEO-67702, NEO-67620, NEO-66022, NEO-65774, NEO-65633, NEO-64199, NEO-63706, NEO-63705, NEO-63287, NEO-63197, NEO-62575, NEO-60250, NEO-60192, NEO-58596, NEO-58314, NEO-58004, NEO-40054
+
+NEO-72648, NEO-71534, NEO-71473, NEO-70263, NEO-70195, NEO-69651, NEO-68704, NEO-681 92, NEO-67814, NEO-67702, NEO-67620, NEO-66022, NEO-65774, NEO-65633, NEO-64199, NEO-6 3706, NEO-63705, NEO-63287, NEO-63197, NEO-62575, NEO-60250, NEO-60192, NEO-58596, O-58314, NEO-58004, NEO-40054
