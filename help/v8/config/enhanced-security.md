@@ -6,9 +6,9 @@ role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
 source-git-commit: c225b3ee5b356d98d6a5e3bb9bd1cb0feae0300a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '738'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -112,7 +112,7 @@ Pour garantir une utilisation correcte de cette fonctionnalité, suivez les inst
 
 ### Bases de données et périphériques pris en charge {#vpn-databases}
 
-Les bases de données on-premise suivantes sont prises en charge :
+Les bases de données On-Premise suivantes sont prises en charge :
 
 * MySQL
 * Netezza

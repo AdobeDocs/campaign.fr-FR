@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 42e3623b-b401-4fcc-80a7-ea38347fddc6
 source-git-commit: 5236cc94e78db11b8975ad84c49594b282fdecf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1263'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Firebase Cloud Messaging vous permet de choisir entre deux types de messages 
 
 >[!IMPORTANT]
 >
->Avant de concevoir une notification push enrichie, vous devez d’abord configurer votre connecteur. Voir [cette page](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android) pour la procédure détaillée.
+>Avant de concevoir une notification push enrichie, vous devez d’abord configurer votre connecteur. Consultez [cette page](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android) pour accéder à la procédure détaillée.
 
 Une fois votre diffusion de notification push créée, vous pouvez en définir le contenu. Trois modèles sont disponibles :
 
