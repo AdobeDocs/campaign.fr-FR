@@ -4,7 +4,7 @@ title: Marketing social
 description: En savoir plus sur les workflows techniques de Social Marketing
 feature: Workflows
 source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 100%
 

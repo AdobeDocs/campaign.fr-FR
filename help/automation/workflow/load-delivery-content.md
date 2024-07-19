@@ -6,7 +6,7 @@ feature: Workflows
 role: User
 exl-id: 08febcbc-1703-4d36-89e1-32c903618084
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ Si le contenu de votre diffusion figure dans un fichier HTML qui se trouve sur u
 
 Pour cela :
 
-1. Si vous n&#39;avez pas encore défini de connexion entre Adobe Campaign et le serveur FTP ou SFTP hébergeant les fichiers de contenu, créez un compte externe S3, FTP ou SFTP dans **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Comptes externes]**. Dans ce compte externe, indiquez l&#39;adresse et les identifiants qui permettront d&#39;établir la connexion au serveur S3, FTP ou SFTP.
+1. Si vous n’avez pas encore défini de connexion entre Adobe Campaign et le serveur FTP ou SFTP hébergeant les fichiers de contenu, créez un compte externe S3, FTP ou SFTP dans **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Comptes externes]**. Dans ce compte externe, indiquez l’adresse et les informations d’identification qui permettront d’établir la connexion au serveur S3, FTP ou SFTP.
 
    Voici un exemple d&#39;un compte externe S3 :
 

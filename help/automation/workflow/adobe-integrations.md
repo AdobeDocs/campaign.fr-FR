@@ -5,7 +5,7 @@ description: En savoir plus sur les workflows des intégrations avec les solutio
 role: User
 topic-tags: technical-workflows
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 100%
 

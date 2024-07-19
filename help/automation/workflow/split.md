@@ -5,7 +5,7 @@ description: En savoir plus sur l'activité de workflow de partage
 feature: Workflows, Targeting Activity
 exl-id: bf4935dd-87dc-4c5c-becf-8c4df61805fd
 source-git-commit: a5d44321c3d68b9370cfb6e9b1df62435de0dbda
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2020'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ Cette activité ne fait pas l&#39;union des populations entrantes. Si plusieurs 
 
 >[!NOTE]
 >
->Les opérations de fractionnement ne peuvent pas être effectuées pour les tables qui ont des sources différentes. Pour le réaliser, vous devez ajouter une activité d’**Enrichissement** avant l’activité **Partage**.
+>Les opérations de partage ne peuvent pas être effectuées pour les tables qui ont des sources différentes. Pour le réaliser, vous devez ajouter une activité d’**Enrichissement** avant l’activité **Partage**.
 
 * Consultez un exemple d&#39;utilisation de l&#39;activité de partage dans [cette section](targeting-workflows.md#create-subsets-using-the-split-activity).
 * Un exemple d&#39;utilisation de l&#39;activité de Partage pour segmenter la cible en différentes populations à l&#39;aide des conditions de filtrage est présenté dans [cette section](cross-channel-delivery-workflow.md).
@@ -214,7 +214,7 @@ Pour éviter cela, vous pouvez placer une activité d&#39;**[!UICONTROL Enrichis
 L&#39;option **[!UICONTROL Permettre le recouvrement des populations de sortie]** permet de gérer les populations appartenant à plusieurs sous-ensembles :
 
 * Lorsque la case est décochée, l&#39;activité de partage assure qu&#39;un destinataire ne sera pas présent dans plusieurs transitions en sortie, même s&#39;il vérifie les critères de plusieurs sous-ensembles. Il sera dans la cible du premier onglet dont les critères sont vérifiés.
-* Lorsque la case est cochée, les destinataires peuvent être présents dans plusieurs sous-ensembles s&#39;ils vérifient leurs critères de filtrage. Adobe Campaign vous recommande d&#39;utiliser des critères exclusifs.
+* Lorsque la case est cochée, les personnes destinataires peuvent apparaître dans plusieurs sous-ensembles si elles sont associées aux bons critères de filtrage. Adobe Campaign vous recommande d’utiliser des critères exclusifs.
 
 ## Paramètres d&#39;entrée {#input-parameters}
 

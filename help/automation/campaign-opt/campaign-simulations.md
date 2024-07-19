@@ -5,7 +5,7 @@ description: Découvrez comment configurer les simulations de campagnes.
 feature: Campaigns
 exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 100%
 

@@ -5,7 +5,7 @@ description: Découvrez comment envoyer un e-mail d’anniversaire à l’aide d
 feature: Workflows
 exl-id: c3a80871-e045-454c-b1ca-8f484d2e14e1
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 100%
 

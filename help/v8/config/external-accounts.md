@@ -6,7 +6,7 @@ role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 100%
 
@@ -120,7 +120,7 @@ Ces comptes externes peuvent être utilisés pour importer ou exporter des donn�
 
 * **FTP et SFTP** : compte externe **FTP** permettant de configurer et de tester l’accès à un serveur en dehors d’Adobe Campaign. Pour configurer des connexions avec des systèmes externes comme des serveurs SFTP ou FTP 898 utilisés pour les transferts de fichiers, vous pouvez créer vos propres comptes externes.
 
-  Pour ce faire, spécifiez dans ce compte externe l’adresse et les informations de connexion utilisées pour établir la connexion au serveur SFTP ou FTP.
+  Pour ce faire, spécifiez dans ce compte externe l’adresse et les informations d’identification utilisées pour établir la connexion au serveur SFTP ou FTP.
 
   >[!NOTE]
   >
