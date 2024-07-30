@@ -5,7 +5,7 @@ description: Découvrez comment concevoir une diffusion de notification push enr
 feature: Push
 role: User
 level: Beginner
-source-git-commit: 0b4fc6da8761d2efe57d8eb0ff87cd11d0e2d250
+source-git-commit: 0c13ee22a7d40aaa9a8c27d3450ec3275a02748f
 workflow-type: tm+mt
 source-wordcount: '1260'
 ht-degree: 42%
@@ -187,4 +187,3 @@ Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser
 | **[!UICONTROL Action de clic]** | Définissez l’action associée à un clic d’un utilisateur ou d’une utilisatrice sur votre notification. |
 | **[!UICONTROL Niveau d&#39;interruption]** | <ul><li>Actif : défini par défaut, le système présente immédiatement la notification, illumine l’écran et peut émettre un son. Les notifications ne passent pas en mode Ciblage .</li><li>Passif : le système ajoute la notification à la liste de notifications sans allumer l&#39;écran ni émettre un son. Les notifications ne passent pas en mode Thème.</li><li> Temps sensible : le système présente immédiatement la notification, allume l&#39;écran, peut émettre un son et passer en mode Mise au point. Ce niveau ne nécessite pas d’autorisation spéciale de la part d’Apple.</li><li>Critique : le système présente immédiatement la notification, allume l’écran et contourne le bouton d’arrêt ou le mode de focus. Notez que ce niveau nécessite une autorisation spéciale de la part d’Apple.</li></ul> |
 | **[!UICONTROL Score de pertinence]** | Définissez un score de pertinence compris entre 0 et 100. Le système l’utilise pour trier les notifications dans le résumé de la notification. |
-
