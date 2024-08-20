@@ -5,7 +5,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 98613a0a-7a6d-41a5-9541-e045d4ca318f
-source-git-commit: cb77f17bbc7b3ce09f7f2961d2eae5855ecca6e6
+source-git-commit: f0fc5dfdde4fa9a238c0f07aa2bd35da28eead3c
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 100%
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Migrer de [!DNL Campaign Standard] vers [!DNL Campaign] v8 {#acs-to-acv8}
 
-En migrant de Campaign Standard à Campaign v8, vous pouvez maintenant profiter de la toute nouvelle version de l’interface d’utilisation d’Adobe Campaign Web ainsi que de la puissante console v8. La transition est fluide et vous permettra d’utiliser toutes les fonctionnalités intuitives conçues pour simplifier la création de campagnes cross-canal personnalisées. L’interface d’utilisation d’Adobe Campaign Web offre une zone de travail connectée à Adobe Experience Platform pour une expérience unifiée. [En savoir plus](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/release-notes/acs-migration){target="_blank"}.
+En migrant de Campaign Standard à Campaign v8, vous pouvez maintenant profiter de la toute nouvelle version de l’interface d’utilisation d’Adobe Campaign Web ainsi que de la puissante console v8. La transition est fluide et vous permettra d’utiliser toutes les fonctionnalités intuitives conçues pour simplifier la création de campagnes cross-canal personnalisées. L’interface d’utilisation d’Adobe Campaign Web offre une zone de travail connectée à Adobe Experience Platform pour une expérience unifiée. [En savoir plus](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 
 En tant qu’utilisateur ou utilisatrice de Campaign v8, vous avez accès à la nouvelle interface d’Adobe Campaign Web et à la console cliente v8. Les données et les paramètres sont synchronisés d’un environnement à un autre. L’ensemble de vos données et paramètres déjà disponibles dans la console cliente sont visibles dans l’interface d’utilisation de Campaign Web, à partir du volet de navigation de gauche de l’explorateur.
 
