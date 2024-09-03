@@ -6,7 +6,7 @@ feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
-source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1525'
 ht-degree: 100%
@@ -70,7 +70,7 @@ Pour en savoir plus sur les énumérations, consultez [cette page](../../v8/conf
 
 Vous pouvez regrouper les valeurs dans des plages selon l&#39;intervalle souhaité.
 
-Pour définir manuellement les intervalles, cliquez sur le bouton **[!UICONTROL Ajouter]** et choisissez l&#39;option **[!UICONTROL Définir un intervalle]** :
+Pour définir manuellement les intervalles, cliquez sur le bouton **[!UICONTROL Ajouter]** et choisissez l&#39;option **[!UICONTROL Définir un intervalle]** :
 
 Indiquez ensuite les bornes inférieures et supérieures et cliquez sur **[!UICONTROL Ok]** pour valider.
 

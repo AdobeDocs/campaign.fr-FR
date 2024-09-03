@@ -5,10 +5,10 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: 4da3e69a-6230-4c94-a6f1-4e8c01e854ba
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1627'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -119,8 +119,8 @@ Découvrez les termes spécifiques aux offres et les conseils connexes avant de 
 * **Arbitrage** : sélection des offres à afficher dans un environnement donné (offres éligibles). Le principe de l’arbitrage permet de classer les offres par priorité en fonction des critères définis dans les catégories, les offres et les offres contextuelles.
 * **Contact** : contact à l&#39;origine d&#39;une interaction entrante. Lors du traitement de l&#39;appel au moteur, le contact est associé à une dimension de ciblage. On distingue deux types de contacts :
 
-   * **[!UICONTROL Contact identifié]** : contact s&#39;étant volontairement identifié sur le canal. Dans les interactions sortantes, le contact est systématiquement identifié.
-   * **[!UICONTROL Contact anonyme]** : contact qui ne s&#39;est pas volontairement inscrit sur le canal mais qui peut être identifié implicitement au moyen d&#39;un cookie. Cette terminologie n&#39;a lieu d&#39;être que dans le cadre d&#39;interactions entrantes.
+   * **[!UICONTROL Contact identifié]** : contact s’étant volontairement identifié sur le canal. Dans les interactions sortantes, le contact est systématiquement identifié.
+   * **[!UICONTROL Contact anonyme]** : contact qui ne s’est pas volontairement inscrit sur le canal mais qui peut être identifié implicitement au moyen d’un cookie. Cette terminologie n’a lieu d’être que dans le cadre d’interactions entrantes.
 
      >[!NOTE]
      >
@@ -132,9 +132,9 @@ Découvrez les termes spécifiques aux offres et les conseils connexes avant de 
 * **Mode unitaire** : un seul contact est traité à la fois. Ce mode est généralement utilisé pour les interactions entrantes et les messages transactionnels.
 * Le **Mode d’identification** fait référence au statut d’un contact :
 
-   * **[!UICONTROL explicite]** : les contacts sont identifiés par leur connexion à l’interface du canal.
-   * **[!UICONTROL implicite]** : les contacts sont identifiés par un cookie (permanent ou de session). Il peut être traité comme un contact anonyme ou identifié.
-   * **[!UICONTROL anonyme]** : les contacts ne peuvent pas être identifiés.
+   * **[!UICONTROL explicite]** : les contacts sont identifiés par leur connexion à l’interface du canal.
+   * **[!UICONTROL implicite]** : les contacts sont identifiés par un cookie (permanent ou session). Il peut être traité comme un contact anonyme ou identifié.
+   * **[!UICONTROL anonymous]** : les contacts ne peuvent pas être identifiés.
 
 * **Offre éligible** : offre répondant à des contraintes définies en amont pouvant être proposée de façon cohérente à une cible.
 * **Règles de présentation** : règles de typologie référencées au niveau de l&#39;environnement d&#39;offres permettant d&#39;exclure certaines offres en tenant compte de l&#39;historique des propositions.

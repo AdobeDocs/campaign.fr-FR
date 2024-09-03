@@ -5,10 +5,10 @@ description: Créer une campagne locale
 feature: Distributed Marketing
 role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1686'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -58,11 +58,11 @@ Sélectionnez le type d’interface à appliquer aux campagnes créées à parti
 
 Quatre types d’interface sont disponibles :
 
-* **[!UICONTROL Par brief]** : l’entité locale doit éditer un brief où elle peut saisir la description des paramètres de l’opération. Une fois la commande validée, l’entité centrale paramètre et exécute l’intégralité de l’opération.
+* **[!UICONTROL Par brief]** : l&#39;entité locale doit éditer un brief où elle peut saisir la description des paramètres de l&#39;opération. Une fois la commande validée, l&#39;entité centrale paramètre et exécute l&#39;intégralité de l&#39;opération.
 
   ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL Par formulaire]** : l’entité locale a accès à un formulaire web où elle peut, par exemple, modifier le contenu, la cible, la taille maximale de la cible, ainsi que les dates de création et d’extraction grâce à des champs de personnalisation, selon le formulaire utilisé. Il est possible pour l’entité locale d’évaluer la cible et de prévisualiser le contenu depuis ce formulaire web.
+* **[!UICONTROL Par formulaire]** : l’entité locale a accès à un formulaire web où, selon le modèle utilisé, elle peut éditer le contenu, la cible, sa taille maximale, ainsi que les dates de création et d’extraction à l’aide de champs de personnalisation. Il est possible pour l’entité locale d’évaluer la cible et de prévisualiser le contenu depuis ce formulaire web.
 
   ![](assets/mkt_distr_8.png)
 
@@ -74,8 +74,8 @@ Quatre types d’interface sont disponibles :
 
   ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL Par formulaire externe]** : l’entité locale a accès aux paramètres de la campagne dans son extranet (et non dans Adobe Campaign). Ces paramètres sont identiques à ceux d’une **campagne locale (par formulaire)**.
-* **[!UICONTROL Simple]** : l’entité locale commande l’opération en utilisant le formulaire par défaut, sans la localiser.
+* **[!UICONTROL Par formulaire externe]** : l’entité locale a accès aux paramètres de campagne dans son extranet (et non Adobe Campaign). Ces paramètres sont identiques à ceux d’une **campagne locale (par formulaire)**.
+* **[!UICONTROL Simple]** : l&#39;entité locale commande l&#39;opération en utilisant le formulaire par défaut, sans la localiser.
 
   ![](assets/mkt_distr_5.png)
 

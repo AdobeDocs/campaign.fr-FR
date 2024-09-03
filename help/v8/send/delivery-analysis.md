@@ -5,10 +5,10 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 1526048d-9f02-4853-948f-8fb618670dbd
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '750'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -74,9 +74,9 @@ Accédez à l’onglet **[!UICONTROL Analyse]** des propriétés de la diffusion
 
 Cet onglet permet d&#39;accéder aux options suivantes :
 
-* **[!UICONTROL Libellé et code diffusion]** : les options de cette section sont utilisées pour calculer les valeurs de ces champs pendant la phase d’analyse de diffusion. Le champ **[!UICONTROL Calculer le dossier d’exécution lors de l’analyse de la diffusion]** calcule le nom du dossier qui contiendra cette action de diffusion pendant la phase d’analyse.
+* **[!UICONTROL Libellé et code de la diffusion]** : les options de cette section sont utilisées pour calculer les valeurs de ces champs lors de la phase d&#39;analyse de la diffusion. Le champ **[!UICONTROL Calculer le dossier d’exécution lors de l’analyse de la diffusion]** calcule le nom du dossier qui contiendra cette action de diffusion pendant la phase d’analyse.
 
-* **[!UICONTROL Mode de validation]** : ce champ permet de définir une diffusion manuelle ou automatique, une fois l’analyse terminée.
+* **[!UICONTROL Mode de validation]** : ce champ vous permet de définir une diffusion manuelle ou automatique une fois l’analyse terminée.
 
   Si l’analyse génère des avertissements, (par exemple, si certains caractères sont accentués dans l’objet de la diffusion, etc.), vous pouvez choisir de continuer son exécution ou non dans les paramètres de la diffusion. Par défaut, l’utilisateur ou l’utilisatrice doit confirmer l’envoi des messages à la fin de la phase d’analyse : il s’agit d’une validation **manuelle**.
 
@@ -88,6 +88,6 @@ Cet onglet permet d&#39;accéder aux options suivantes :
    * **[!UICONTROL Semi-automatique]** : les envois démarrent automatiquement si la phase d’analyse ne génère aucun message d’avertissement.
    * **[!UICONTROL Automatique]** : les envois démarrent automatiquement à la fin de la phase d’analyse, quel qu’en soit le résultat.
 
-* **[!UICONTROL Lancer le traitement dans un processus détaché]** : cette option permet de lancer l’analyse de la diffusion dans un processus à part. Par défaut, la fonction d’analyse utilise le processus du serveur applicatif d’Adobe Campaign (nlserver web). En cochant cette option, vous êtes assuré que l’analyse sera menée à son terme, même en cas de défaillance du serveur applicatif.
-* **[!UICONTROL Enregistrer les requêtes SQL générées pendant l’analyse dans le journal]** : cette option permet d&#39;ajouter les logs des requêtes SQL dans le journal de la diffusion lors de la phase d’analyse.
-* **[!UICONTROL Ignorer les scripts de personnalisation lors de l’envoi]** : cette option permet de ne pas interpréter les directives JavaScript présentes dans le contenu HTML. Elles seront affichées telles quelles dans le contenu diffusé. Ces directives sont introduites par la balise `<%=`.
+* **[!UICONTROL Démarrer le traitement dans un processus détaché]** : cette option permet de lancer l&#39;analyse de la diffusion dans un processus distinct. Par défaut, la fonction d&#39;analyse utilise le processus du serveur applicatif d&#39;Adobe Campaign (nlserver web). En cochant cette option, vous êtes assuré que l&#39;analyse sera menée à son terme même en cas de défaillance du serveur applicatif.
+* **[!UICONTROL Enregistrer les requêtes de ciblage et de personnalisation dans le journal]** : cette option permet d&#39;ajouter les logs des requêtes SQL dans le journal de la diffusion lors de la phase d&#39;analyse.
+* **[!UICONTROL Ignorer les scripts de personnalisation lors de l&#39;envoi]** : cette option permet de contourner l&#39;interprétation des directives JavaScript trouvées dans le contenu de l&#39;HTML. Ils s’affichent tels quels dans le contenu diffusé. Ces directives sont introduites par la balise `<%=`.

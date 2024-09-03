@@ -5,10 +5,10 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: 0b4fc6da8761d2efe57d8eb0ff87cd11d0e2d250
-workflow-type: ht
-source-wordcount: '623'
-ht-degree: 100%
+source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
+workflow-type: tm+mt
+source-wordcount: '675'
+ht-degree: 94%
 
 ---
 
@@ -49,7 +49,23 @@ ht-degree: 100%
       + [Ajouter une adresse Cci](send/email-bcc.md)
       + [Définir les paramètres d’e-mail supplémentaires](send/email-parameters.md)
       + [Envoyer et surveiller des e-mails](send/send.md)
-   + [SMS](send/sms.md)
+   + SMS {#sms}
+      + [Prise en main des SMS](send/sms/sms.md)
+      + Configurer le canal SMS {#config-sms}
+         + [Paramètres du compte externe SMPP](send/sms/smpp-external-account.md)
+         + [Caractéristiques du canal SMS](send/sms/sms-channel.md)
+         + [Validation d&#39;une connexion SMPP](send/sms/smpp-connection.md)
+         + [Instance autonome](send/sms/sms-standalone-instance.md)
+         + [Infrastructure de mid-sourcing](send/sms/sms-mid-sourcing.md)
+         + [Description du connecteur SMPP](send/sms/smpp-connector-delivery.md)
+      + Créer un SMS {#create-sms}
+         + [Paramètres de diffusion SMS](send/sms/sms-delivery-settings.md)
+         + [Définir le contenu](send/sms/sms-content.md)
+         + [Sélection de l’audience](send/sms/sms-audience.md)
+      + Validation et envoi de SMS {#validate-sms}
+         + [Envoyer des BAT SMS](send/sms/sms-proofs.md)
+         + [Envoyer à l&#39;audience](send/sms/sms-send.md)
+      + [Surveillance et suivi de SMS](send/sms/sms-monitor.md)
    + Notifications push {#push}
       + [Créer et envoyer des notifications push](send/push.md)
       + Notification push enrichie {#rich-push}
@@ -67,10 +83,10 @@ ht-degree: 100%
       + [Utiliser les blocs de personnalisation](send/personalization-blocks.md)
       + [Créer des conditions](send/conditions.md)
    + Valider et envoyer votre diffusion {#validate}
-   + [Prévisualiser et créer des BAT](send/preview-and-proof.md)
-   + [Analyse des diffusions](send/delivery-analysis.md)
-   + [Configurer et envoyer la diffusion](send/configure-and-send.md)
-   + [Optimisation de l’heure d&#39;envoi](send/predictive.md)
+      + [Prévisualiser et créer des BAT](send/preview-and-proof.md)
+      + [Analyse des diffusions](send/delivery-analysis.md)
+      + [Configurer et envoyer la diffusion](send/configure-and-send.md)
+      + [Optimisation de l’heure d&#39;envoi](send/predictive.md)
    + Échecs, rebonds et mises en quarantaine{#failures}
       + [Quarantaines](send/quarantines.md)
       + [Diffusions en échec](send/delivery-failures.md)

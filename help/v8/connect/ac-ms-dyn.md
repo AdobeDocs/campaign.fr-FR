@@ -5,10 +5,10 @@ feature: Microsoft CRM Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1410'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -202,7 +202,7 @@ Pour Microsoft Dynamics 365, les types d&#39;attribut pris en charge/non pris 
 
 | Type d&#39;attribut | Pris en charge |
 | --------------------------------------------------------------------------------- | --------- |
-| Types simples : booléen, date et heure, nombre décimal, nombre à virgule flottante, doublon, nombre entier, entier long, chaîne | Oui |
+| Types de base : booléen, datetime, décimal, réel, double, entier, bigint, chaîne | Oui |
 | Devise (en tant que doublon) | Oui |
 | mémo, nom de l&#39;entité, clé primaire, identifiant unique (en tant que chaînes) | Oui |
 | Statut, liste de sélection (les valeurs possibles sont stockées dans des énumérations), état (chaîne) | Oui |
