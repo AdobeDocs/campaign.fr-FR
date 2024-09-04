@@ -4,9 +4,10 @@ description: A propos de la surveillance et du tracking d'une diffusion SMS
 feature: SMS
 role: User
 level: Beginner, Intermediate
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+badge: label="Disponibilité limitée" type="Informative"
+source-git-commit: a184a29301f2bd739bc3fd1373fc8cfad58f0393
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
