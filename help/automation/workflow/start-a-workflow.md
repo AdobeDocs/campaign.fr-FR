@@ -6,10 +6,10 @@ feature: Workflows
 level: Beginner
 role: User, Admin
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
-source-git-commit: ab6c16af7652f2e8dbfa5c899c2152cefb7fc7c6
+source-git-commit: d292c20e520b2466f782ccf86eb9d61e01915563
 workflow-type: tm+mt
-source-wordcount: '1209'
-ht-degree: 100%
+source-wordcount: '1216'
+ht-degree: 98%
 
 ---
 
@@ -57,7 +57,7 @@ Le bouton **[!UICONTROL Actions]** de la barre d’outils permet d’accéder à
 
   >[!CAUTION]
   >
-  >Cette option est réservée à un utilisateur expert.
+  >L’arrêt inconditionnel est limité aux utilisateurs administrateurs.
 
 * **[!UICONTROL Redémarrer]**
 
@@ -107,7 +107,7 @@ Améliorez la stabilité de votre instance en implémentant les bonnes pratiques
 
 * **Arrêtez les workflows qui ne sont pas utilisés**. En continuant à s’exécuter, ils maintiennent les connexions avec la base de données.
 
-* **N’utilisez l’arrêt inconditionnel quʼavec une extrême parcimonie**. Cette action ne doit pas être appliquée régulièrement. Une fermeture incorrecte des connexions générées par les workflows vers la base de données nuit aux performances.
+* **N’utilisez l’arrêt inconditionnel quʼavec une extrême parcimonie**. Cette option est limitée aux utilisateurs administrateurs. Cette action ne doit pas être appliquée régulièrement. Une fermeture incorrecte des connexions générées par les workflows vers la base de données nuit aux performances.
 
 * **N’effectuez pas plusieurs demandes d’arrêt sur le même workflow**. L’arrêt d’un workflow suit un processus asynchrone : la demande est enregistrée, puis le ou les serveurs de workflow annulent les opérations en cours. L’arrêt d’une instance de workflow peut donc prendre du temps, surtout si le workflow est exécuté sur plusieurs serveurs, car chacun d’eux doit alors prendre le contrôle pour annuler les tâches en cours. Pour éviter tout problème, attendez que l’opération d’arrêt soit terminée et évitez d’arrêter un workflow à de multiples reprises.
 
