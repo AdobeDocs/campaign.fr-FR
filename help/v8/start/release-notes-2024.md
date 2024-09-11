@@ -4,7 +4,7 @@ description: Liste des fonctionnalités et améliorations des versions 2023 de C
 feature: Release Notes
 exl-id: 6a0a9486-19a9-4ec3-9030-48dbf419f45f
 source-git-commit: 07e0bfdade0356eedb24641259aa754fdb1c6155
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1016'
 ht-degree: 100%
 
