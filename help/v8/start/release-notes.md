@@ -4,9 +4,9 @@ description: Dernière version de Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 07e0bfdade0356eedb24641259aa754fdb1c6155
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '532'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ En outre, en tant que client ou cliente, assurez-vous d’utiliser les dernière
 
 ## Version 8.7.2 {#release-8-7-2}
 
-_3 septembre 2024_
+_3 septembre 2024_
 
 >[!AVAILABILITY]
 >
@@ -31,7 +31,7 @@ _3 septembre 2024_
 
 ### Nouvelles fonctionnalités {#new-8-7-2}
 
-* **Nouveau connecteur d’envoi de SMS** : le connecteur d’envoi de SMS a été modernisé et amélioré afin d’activer les connexions SMPP en mode émetteur-récepteur, d’activer les connexions SMPP persistantes et d’assurer une meilleure compatibilité pour les environnements en transition depuis Adobe Campaign Standard. Un nouveau compte externe SMS est désormais disponible pour toutes les nouvelles implémentations SMS. L’implémentation existante est toujours prise en charge, mais il est recommandé de passer à ce nouveau connecteur moderne et étendu. [En savoir plus](../send/sms/sms.md).
+* **Nouveau connecteur d’envoi de SMS** : le connecteur d’envoi de SMS a été modernisé et amélioré afin d’activer les connexions SMPP en mode émetteur-récepteur, d’activer les connexions SMPP persistantes et d’assurer une meilleure compatibilité pour les environnements en transition depuis Adobe Campaign Standard. Un nouveau compte externe SMS est désormais disponible pour toutes les nouvelles implémentations SMS. L’implémentation existante est toujours prise en charge, mais il est recommandé de passer au nouveau connecteur moderne et étendu. [En savoir plus](../send/sms/sms.md).
 
 * **Modèles de notification push enrichis (disponibilité générale)** : vous pouvez désormais envoyer des notifications push enrichies via Android. La notification push enrichie est une forme améliorée de notification mobile qui va au-delà des messages texte simples en incorporant des éléments multimédias tels que des images, des boutons interactifs ou d’autres contenus multimédias enrichis. Avec cette version, un ensemble de modèles pour les notifications push enrichies est désormais disponible pour vos applications iOS et Android. [En savoir plus](../send/rich-push-android.md).
 
@@ -42,7 +42,7 @@ _3 septembre 2024_
 
 Les problèmes suivants ont été corrigés dans cette version :
 
-NEO-48232, NEO-56832, NEO-72504, NEO-74855, NEO-75898, NEO-76097, NEO-76958, NEO-770 14, NEO-7795, NEO-78843, NEO-79328.
+NEO-48232, NEO-56832, NEO-72504, NEO-74855, NEO-75898, NEO-76097, NEO-76958, NEO-77014, NEO-77795, NEO-78843, NEO-79328.
 
 
 ## Version 8.6.3 {#release-8-6-3}
