@@ -8,9 +8,9 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="S’applique également à Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="S’applique à Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: dffe082d5e31eda4ecfba369b92d8a2d441fca04
+source-git-commit: a6a1af4e0255a2fec359c415cbbf45da2e4baf67
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1689'
 ht-degree: 85%
 
 ---
@@ -91,7 +91,7 @@ Pour déplacer votre environnement vers HTTP v1, procédez comme suit :
 >
 >Une fois ces modifications appliquées à tous vos serveurs, toutes les **nouvelles** diffusions de notifications push vers les appareils Android utilisent l’API HTTP v1. Les diffusions push existantes en reprise, en cours et en cours d’utilisation utilisent toujours l’API HTTP (héritée). Découvrez comment les mettre à jour dans la section ci-dessous.
 
-### Mettre à jour les modèles existants {#fcm-transition-update}
+#### Mettre à jour les modèles existants {#fcm-transition-update}
 
 Une fois la transition HTTP v1 terminée, vous devez mettre à jour vos **modèles de diffusion** pour les notifications push Android afin d’augmenter le nombre de messages par lot. Pour ce faire, accédez aux propriétés de votre modèle de diffusion Android puis, dans l’onglet **Diffusion**, définissez [Nombre de lots de messages](../../v8/send/configure-and-send.md#delivery-batch-quantity) sur **256**. Appliquez cette modification à tous les modèles de diffusion utilisés pour vos diffusions Android, ainsi qu’à toutes vos diffusions Android existantes.
 
@@ -99,16 +99,16 @@ Vous pouvez également mettre à jour les diffusions existantes et les modèles 
 
 * En tant que Cloud Service gérés ou client hébergé, contactez Adobe pour mettre à jour vos modèles de diffusion Android existants.
 
-* Pour les environnements on-premise, téléchargez et exécutez le script `fcm-httpv1-migration.js` comme décrit ci-dessous.
+* Pour les environnements on-premise, téléchargez le script `fcm-httpv1-migration.js` et exécutez-le comme décrit ci-dessous.
 
-  Télécharger [fcm-httpv1-migration.js](assets/do-not-localize/fcm-httpv1-migration.js)
+  Télécharger [fcm-httpv1-migration.zip](assets/do-not-localize/fcm-httpv1-migration-js.zip)
 
   >[!CAUTION]
   >
   >Le script doit être exécuté dans vos environnements Marketing, Mid-sourcing et Temps réel.
 
 
-  +++Procédure de mise à jour des diffusions et des modèles existants
+  +++Étapes de mise à jour des diffusions et modèles existants (on-premise uniquement)
 
   Pour corriger tous les modèles de diffusions et de diffusions créés avant la mise à niveau vers une version prenant en charge HTTP v1, procédez comme suit :
 
