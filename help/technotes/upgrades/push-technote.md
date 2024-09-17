@@ -8,10 +8,10 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="S’applique également à Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="S’applique à Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 4ef40ff971519c064b980df8235188c717855f27
+source-git-commit: dffe082d5e31eda4ecfba369b92d8a2d441fca04
 workflow-type: tm+mt
-source-wordcount: '1477'
-ht-degree: 100%
+source-wordcount: '1686'
+ht-degree: 85%
 
 ---
 
@@ -56,6 +56,8 @@ Pour vérifier si cela vous concerne, vous pouvez filtrer vos **services et abon
 
 * En tant qu’utilisateur ou utilisatrice On-Premise de Campaign Classic v7, vous devez mettre à niveau les serveurs d’exécution Marketing et en temps réel. Le serveur de midsourcing n’est pas affecté.
 
+* En tant qu&#39;utilisateur on-premise ou hybride de la version v7 Campaign Classic, vérifiez que votre compte externe de routage Android est configuré avec `androidPushConnectorV2.js`. [En savoir plus](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android)
+
 #### Procédure de transition {#fcm-transition-steps}
 
 Pour déplacer votre environnement vers HTTP v1, procédez comme suit :
@@ -84,12 +86,73 @@ Pour déplacer votre environnement vers HTTP v1, procédez comme suit :
    | Message de données | N/A | validate_only |
    | Message de notification | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
 
-1. Une fois la transition HTTP v1 terminée, vous devez mettre à jour vos **modèles de diffusion** pour les notifications push Android afin d’augmenter le nombre de messages par lot. Pour ce faire, accédez aux propriétés de votre modèle de diffusion Android puis, dans l’onglet **Diffusion**, définissez [Nombre de lots de messages](../../v8/send/configure-and-send.md#delivery-batch-quantity) sur **256**. Appliquez cette modification à tous les modèles de diffusion utilisés pour vos diffusions Android, ainsi qu’à toutes vos diffusions Android existantes.
-
 
 >[!NOTE]
 >
->Une fois ces modifications appliquées à tous vos serveurs, toutes les nouvelles diffusions de notifications push vers les appareils Android utilisent l’API HTTP v1. Les diffusions de notifications push existantes en reprise, et actuellement utilisées continueront à utiliser l’API HTTP (héritée).
+>Une fois ces modifications appliquées à tous vos serveurs, toutes les **nouvelles** diffusions de notifications push vers les appareils Android utilisent l’API HTTP v1. Les diffusions push existantes en reprise, en cours et en cours d’utilisation utilisent toujours l’API HTTP (héritée). Découvrez comment les mettre à jour dans la section ci-dessous.
+
+### Mettre à jour les modèles existants {#fcm-transition-update}
+
+Une fois la transition HTTP v1 terminée, vous devez mettre à jour vos **modèles de diffusion** pour les notifications push Android afin d’augmenter le nombre de messages par lot. Pour ce faire, accédez aux propriétés de votre modèle de diffusion Android puis, dans l’onglet **Diffusion**, définissez [Nombre de lots de messages](../../v8/send/configure-and-send.md#delivery-batch-quantity) sur **256**. Appliquez cette modification à tous les modèles de diffusion utilisés pour vos diffusions Android, ainsi qu’à toutes vos diffusions Android existantes.
+
+Vous pouvez également mettre à jour les diffusions existantes et les modèles de diffusion créés avant la mise à niveau vers une version prenant en charge HTTP v1. Procédez comme suit :
+
+* En tant que Cloud Service gérés ou client hébergé, contactez Adobe pour mettre à jour vos modèles de diffusion Android existants.
+
+* Pour les environnements on-premise, téléchargez et exécutez le script `fcm-httpv1-migration.js` comme décrit ci-dessous.
+
+  Télécharger [fcm-httpv1-migration.js](assets/do-not-localize/fcm-httpv1-migration.js)
+
+  >[!CAUTION]
+  >
+  >Le script doit être exécuté dans vos environnements Marketing, Mid-sourcing et Temps réel.
+
+
+  +++Procédure de mise à jour des diffusions et des modèles existants
+
+  Pour corriger tous les modèles de diffusions et de diffusions créés avant la mise à niveau vers une version prenant en charge HTTP v1, procédez comme suit :
+
+   1. Exportez vos diffusions et modèles de diffusion existants dans un package afin de pouvoir les restaurer en cas de problème inattendu survenu pendant la correction.
+   1. Exécutez la commande suivante en Posgresql :
+
+      ```sql
+      pg_dump -Fp -f /sftp/<db_name>-nmsdelivery-before_rd_script.sql -t nmsdelivery -d <db_name>
+      ```
+
+   1. Par défaut, le script est en mode `dryrun`, vous pouvez le lancer dans ce mode pour vérifier si une diffusion doit être corrigée.
+
+      La commande
+
+      ```sql
+      nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js 
+      ```
+
+      Sortie
+
+      ```sql
+      ...
+      HH:MM:SS >   Processing delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
+      HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
+      HH:MM:SS >   Processing delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
+      HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
+      ...
+      HH:MM:SS >   Summary (XYZ processed deliverie(s) or delivery template(s)):
+      HH:MM:SS >>  - X had not patchable androidCheckParams formula!
+      HH:MM:SS >   - Y had androidCheckParams formula patched.
+      HH:MM:SS >   - Z ignored as alreading having androidCheckParams formula patched.
+      ```
+
+      >[!NOTE]
+      >
+      >Les diffusions `not patchable` doivent être mises à jour manuellement. Leur ID se trouve dans le journal.
+
+   1. Exécutez le script en mode d&#39;exécution de la manière suivante pour mettre à jour les diffusions :
+
+      ```sql
+      nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js -arg:run
+      ```
+
++++
 
 ### Quel est l’impact pour mes applications Android ? {#fcm-apps}
 
