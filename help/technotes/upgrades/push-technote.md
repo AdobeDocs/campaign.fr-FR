@@ -8,10 +8,10 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="S’applique également à Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="S’applique à Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: a6a1af4e0255a2fec359c415cbbf45da2e4baf67
+source-git-commit: aba0048e5aff1caa2067eb61d26548b08a3deb36
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 85%
+source-wordcount: '1720'
+ht-degree: 81%
 
 ---
 
@@ -48,15 +48,19 @@ Pour vérifier si cela vous concerne, vous pouvez filtrer vos **services et abon
 
 #### Conditions préalables {#fcm-transition-prerequisites}
 
-* Pour Campaign Classic v7, la prise en charge de HTTP v1 a été ajoutée à la version 20.3.1. Si votre environnement s’exécute sur une ancienne version, une condition préalable à la transition vers HTTP v1 est de mettre à niveau votre environnement vers la [dernière version de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=fr){target="_blank"}. Pour Campaign v8, HTTP v1 est pris en charge par toutes les versions et aucune mise à niveau n’est nécessaire.
-
 * Le fichier JSON du compte du service SDK Firebase Admin Android est nécessaire pour que l’application mobile soit déplacée vers HTTP v1. Découvrez comment obtenir ce fichier dans la [documentation de Google Firebase](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
-* Pour les déploiements hybrides, hébergés et Managed Services, en plus de la procédure de transition ci-dessous, contactez Adobe pour mettre à jour votre serveur d’exécution en temps réel (RT). Le serveur de midsourcing n’est pas affecté.
+* Pour Campaign Classic v7, la prise en charge de HTTP v1 a été ajoutée à la version 20.3.1. Si votre environnement s’exécute sur une ancienne version, une condition préalable à la transition vers HTTP v1 est de mettre à niveau votre environnement vers la [dernière version de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=fr){target="_blank"}. Pour Campaign v8, HTTP v1 est pris en charge par toutes les versions et aucune mise à niveau n’est nécessaire.
 
-* En tant qu’utilisateur ou utilisatrice On-Premise de Campaign Classic v7, vous devez mettre à niveau les serveurs d’exécution Marketing et en temps réel. Le serveur de midsourcing n’est pas affecté.
+* En tant qu&#39;utilisateur on-premise de Campaign Classic v7, vous devez mettre à niveau les serveurs d&#39;exécution Marketing et Temps réel.
 
-* En tant qu&#39;utilisateur on-premise ou hybride de la version v7 Campaign Classic, vérifiez que votre compte externe de routage Android est configuré avec `androidPushConnectorV2.js`. [En savoir plus](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android)
+* Pour les déploiements de Cloud Service hybrides, hébergés et gérés, en plus de la procédure de transition ci-dessous, contactez l’Adobe pour mettre à jour votre serveur d’exécution en temps réel (RT).
+
+* À propos du compte externe de routage Android :
+
+   * En tant qu&#39;utilisateur on-premise ou hybride de la version v7 Campaign Classic, vérifiez que votre compte externe de routage Android est configuré avec `androidPushConnectorV2.js`. En savoir plus dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
+
+   * Pour les déploiements de Cloud Service hybrides, hébergés et gérés, vous devez également vous connecter à l’équipe d’assistance clientèle d’Adobe pour vérifier que le connecteur `androidPushConnectorV2.js (nms)` est sélectionné dans le compte externe de routage Android de votre serveur de mid-sourcing.
 
 #### Procédure de transition {#fcm-transition-steps}
 
@@ -105,7 +109,7 @@ Vous pouvez également mettre à jour les diffusions existantes et les modèles 
 
   >[!CAUTION]
   >
-  >Le script doit être exécuté dans vos environnements Marketing, Mid-sourcing et Temps réel.
+  >Le script doit être exécuté sur votre instance Marketing.
 
 
   +++Étapes de mise à jour des diffusions et modèles existants (on-premise uniquement)
