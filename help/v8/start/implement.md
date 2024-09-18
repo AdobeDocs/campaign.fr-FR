@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 100%
+source-wordcount: '1148'
+ht-degree: 98%
 
 ---
 
@@ -100,7 +100,7 @@ Avant de commencer à envoyer des messages et à créer des campagnes marketing,
 
    Un modèle de données d’usine est fourni avec Adobe Campaign. Afin d’implémenter et de personnaliser votre environnement, vous devez connaître les tables natives du modèle de données d’Adobe Campaign ainsi que la manière dont elles sont liées les unes aux autres.
 
-   [En savoir plus sur le modèle de données de Campaign](../dev/datamodel.md)
+   [En savoir plus sur le modèle de données Campaign](../dev/datamodel.md).
 
 ## Personnaliser votre instance{#implementation-custom-your-instance}
 
