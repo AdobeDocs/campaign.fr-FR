@@ -6,9 +6,9 @@ role: User, Admin
 level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '927'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -116,10 +116,10 @@ Utilisez l&#39;onglet **[!UICONTROL Contenu]** pour définir le contenu de l&#39
 
 1. Définissez les différents paramètres du contenu de l&#39;offre.
 
-   * **[!UICONTROL Titre]** : indiquez le titre que vous souhaitez faire apparaître dans votre offre. Attention, il ne s’agit pas du libellé de l’offre, celui-ci étant défini dans l’onglet **[!UICONTROL Général]**.
-   * **[!UICONTROL URL de destination]** : spécifiez l’URL de votre offre. Il doit commencer par &quot;http://&quot; ou &quot;https://&quot;.
-   * **[!UICONTROL URL de l&#39;image]** : indiquez une URL ou un chemin d&#39;accès vers l&#39;image de votre offre.
-   * **[!UICONTROL HTML le contenu]** / **[!UICONTROL Contenu texte]** : saisissez le corps de votre offre dans l’onglet de votre choix. Pour générer le tracking, le **[!UICONTROL contenu HTML]** doit être constitué d&#39;éléments HTML intégrables dans un élément de type `<div>`. Par exemple, le résultat d&#39;un élément `<table>` dans la page HTML sera le suivant :
+   * **[!UICONTROL Titre]** : indiquez le titre que vous souhaitez faire apparaître dans votre offre. Attention, il ne s’agit pas du libellé de l’offre, celui-ci étant défini dans l’onglet **[!UICONTROL Général]**.
+   * **[!UICONTROL URL de destination]** : indiquez l’URL de votre offre. Toutes les URL doivent commencer par « http:// » ou « https:// ».
+   * **[!UICONTROL URL de l’image]** : indiquez une URL ou un chemin d’accès vers l’image de votre offre.
+   * **[!UICONTROL Contenu HTML]** / **[!UICONTROL Contenu texte]** : saisissez le corps de votre offre dans l’onglet de votre choix. Pour générer le tracking, le **[!UICONTROL contenu HTML]** doit être constitué d&#39;éléments HTML intégrables dans un élément de type `<div>`. Par exemple, le résultat d&#39;un élément `<table>` dans la page HTML sera le suivant :
 
    ```
       <div> 

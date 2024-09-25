@@ -6,9 +6,9 @@ role: Admin
 level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '980'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Chaque traitement **[!DNL Privacy Service]** est divisé en plusieurs demandes d
 
 En outre, un traitement peut être exécuté sur plusieurs instances. C&#39;est pourquoi plusieurs fichiers sont créés pour un seul traitement. Par exemple, si une demande contient deux espaces de noms et est exécutée sur trois instances, six fichiers sont envoyés. Soit un fichier par espace de noms et par instance.
 
-Le modèle d&#39;un nom de fichier est : `<InstanceName>-<NamespaceId>-<ReconciliationKey>.xml`
+Le modèle d’un nom de fichier est le suivant : `<InstanceName>-<NamespaceId>-<ReconciliationKey>.xml`.
 
 * **NomInstance** : nom de l&#39;instance dans Campaign
 * **IdEspaceDeNoms** : identifiant de l&#39;espace de noms du service d&#39;identités utilisé

@@ -5,7 +5,7 @@ description: Découvrez comment configurer les simulations de campagnes.
 feature: Campaigns
 exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1341'
 ht-degree: 100%
 
@@ -153,9 +153,9 @@ Pour analyser le résultat d&#39;une simulation, éditez les rapports qui lui so
 
 Par défaut, les rapports suivants sont proposés :
 
-* **[!UICONTROL Détail des exclusions de la simulation]** : ce rapport propose un tableau détaillé de toutes les causes d&#39;exclusion, pour toutes les diffusions concernées par cette simulation.
-* **[!UICONTROL Résumé de la simulation]** : ce rapport résume les volumes de populations exclues par la simulation, dans les différentes diffusions concernées.
-* **[!UICONTROL Synthèse des exclusions dues à la simulation]** : ce rapport affiche un tableau des exclusions dues à la simulation, avec la règle de typologie appliquée, et un graphique représentant la proportion d&#39;exclusion par règle.
+* **[!UICONTROL Détail des exclusions de la simulation]** : ce rapport propose un tableau détaillé de toutes les causes d’exclusion, pour toutes les diffusions concernées par cette simulation.
+* **[!UICONTROL Résumé de la simulation]** : ce rapport présente les populations exclues de la simulation, dans les différentes diffusions concernées.
+* **[!UICONTROL Synthèse des exclusions dues à la simulation]** : ce rapport affiche un tableau des exclusions dues à la simulation, avec la règle de typologie appliquée, et un graphique représentant la proportion d’exclusion par règle.
 
 <!--
 >[!NOTE]

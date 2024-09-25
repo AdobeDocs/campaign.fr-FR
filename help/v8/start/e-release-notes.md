@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
 source-git-commit: 695c481596271feef35c630c68d9bc52cbe1b6f8
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '290'
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Cette page décrit les améliorations et correctifs inclus dans la prochaine ver
 
 ## Version 8.7.2 {#release-8-7-2}
 
-_3 septembre 2024_
+_3 septembre 2024_
 
 >[!AVAILABILITY]
 >
@@ -42,4 +42,4 @@ _3 septembre 2024_
 
 Les problèmes suivants ont été corrigés dans cette version :
 
-NEO-48232, NEO-56832, NEO-72504, NEO-74855, NEO-75898, NEO-76097, NEO-76958, NEO-770 14, NEO-7795, NEO-78843, NEO-79328.
+NEO-48232, NEO-56832, NEO-72504, NEO-74855, NEO-75898, NEO-76097, NEO-76958, NEO-77014, NEO-77795, NEO-78843, NEO-79328.

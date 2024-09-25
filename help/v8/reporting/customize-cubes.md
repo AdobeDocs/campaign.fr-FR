@@ -7,7 +7,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1525'
 ht-degree: 100%
 
@@ -68,11 +68,11 @@ Pour en savoir plus sur les énumérations, consultez [cette page](../../v8/conf
 
 ### Création de plages de valeurs {#create-value-ranges}
 
-Vous pouvez regrouper les valeurs dans des plages selon l&#39;intervalle souhaité.
+Vous pouvez regrouper les valeurs dans des plages selon l’intervalle souhaité.
 
-Pour définir manuellement les intervalles, cliquez sur le bouton **[!UICONTROL Ajouter]** et choisissez l&#39;option **[!UICONTROL Définir un intervalle]** :
+Pour définir manuellement les plages, cliquez sur le bouton **[!UICONTROL Ajouter]** et choisissez l’option **[!UICONTROL Définir une plage]** :
 
-Indiquez ensuite les bornes inférieures et supérieures et cliquez sur **[!UICONTROL Ok]** pour valider.
+Indiquez ensuite les limites inférieures et supérieures et cliquez sur **[!UICONTROL OK]** pour valider.
 
 ### Génération automatique de classes {#generate-bins-automatically}
 

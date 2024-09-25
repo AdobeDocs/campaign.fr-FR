@@ -6,7 +6,7 @@ feature: Distributed Marketing
 role: User
 exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '985'
 ht-degree: 100%
 
@@ -76,9 +76,9 @@ Pour créer une opération collaborative par validation de la cible, le modèle 
 
 Le workflow de l&#39;opération doit intégrer l&#39;activité de type **Validation en local**. Les paramètres de l&#39;activité sont les suivants :
 
-* **[!UICONTROL Action à effectuer]** : Notification pour la validation de la cible.
-* **[!UICONTROL Contexte de répartition]** : Explicite.
-* **[!UICONTROL Répartition des données]** : Répartition pour les entités locales.
+* **[!UICONTROL Action à effectuer]** : notification pour la validation de la cible.
+* **[!UICONTROL Contexte de répartition]** : explicite.
+* **[!UICONTROL Répartition des données]** : répartition pour les entités locales.
 
 La répartition de données de type **répartition des entités locales** doit être créée. Le modèle de répartition de données permet de limiter le nombre d&#39;enregistrements à partir d&#39;une liste de valeurs de groupement. Dans **[!UICONTROL Ressources > Gestion de campagnes > Répartition de données]**, cliquez sur l&#39;icône **[!UICONTROL Nouveau]** pour créer une **[!UICONTROL Répartition de données]**. Pour plus d’informations sur la répartition des données,
 

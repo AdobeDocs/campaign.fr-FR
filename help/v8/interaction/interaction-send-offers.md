@@ -6,9 +6,9 @@ role: User, Admin
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1316'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -59,12 +59,12 @@ Pour insérer des propositions d&#39;offres dans une diffusion, procédez comme 
 
 ### Paramètres du moteur d&#39;offres {#parameters-for-calling-offer-engine}
 
-* **[!UICONTROL Espace]** : emplacement de l&#39;environnement des offres qui doit être sélectionné pour activer le moteur d&#39;offres.
-* **[!UICONTROL Catégorie]** : dossier spécifique dans lequel les offres sont triées. Si aucune catégorie n&#39;est spécifiée, toutes les offres contenues dans l&#39;environnement seront prises en compte par le moteur d&#39;offres, sauf si un thème est sélectionné.
-* **[!UICONTROL Thèmes]** : mots-clés définis préalablement au niveau des catégories. Ils agissent comme un filtre et permettent d&#39;affiner les offres à présenter en les sélectionnant dans un ensemble de catégories.
-* **[!UICONTROL Nombre de propositions]** : nombre d&#39;offres renvoyées par le moteur qui pourront être insérées dans le corps de la diffusion. Si elles ne sont pas insérées dans le message, les offres seront néanmoins générées, mais non présentées.
-* **[!UICONTROL Exclure les destinataires non éligibles]** : cette option permet d&#39;activer ou non l&#39;exclusion des destinataires pour lesquels il n&#39;y a pas assez d&#39;offres éligibles. Pour chaque destinataire, il se peut que le nombre de propositions éligibles soit inférieur au nombre de propositions requis. En cochant cette case, les destinataires pour lesquels le nombre de propositions requis n&#39;est pas atteint seront exclus de la diffusion. Si vous ne sélectionnez pas cette option, ces destinataires seront conservés, mais ils auront un nombre de propositions inférieur au nombre demandé.
-* **[!UICONTROL Ne rien afficher si aucune offre n&#39;est sélectionnée]** : cette option permet de choisir le traitement du message au cas où l&#39;une des propositions n&#39;existerait pas. En cochant cette case, la représentation de la proposition manquante ne s&#39;affichera pas et aucun contenu n&#39;apparaîtra dans le message pour cette proposition. Si la case est décochée, le message lui-même est annulé au moment de l&#39;envoi et les destinataires ne recevront aucun message.
+* **[!UICONTROL Emplacement]** : emplacement de l’environnement des offres qui doit être sélectionné pour activer le moteur d’offres.
+* **[!UICONTROL Catégorie]** : dossier spécifique dans lequel les offres sont classées. Si aucune catégorie n’est spécifiée, la totalité des offres contenues dans l’environnement sera prise en compte par le moteur d’offres, sauf si un thème est sélectionné.
+* **[!UICONTROL Thèmes]** : mots-clés définis préalablement au niveau des catégories. Ils agissent comme un filtre et permettent d’affiner les offres à présenter en les sélectionnant dans un ensemble de catégories.
+* **[!UICONTROL Nombre de propositions]** : nombre d’offres renvoyées par le moteur qui pourront être insérées dans le corps de la diffusion. Si elles ne sont pas insérées dans le message, les offres seront néanmoins générées, mais non présentées.
+* **[!UICONTROL Exclure les destinataires non éligibles]** : cette option permet d’activer ou non l’exclusion des destinataires pour lesquels il n’y a pas assez d’offres éligibles. Pour chaque destinataire, il se peut que le nombre de propositions éligibles soit inférieur au nombre de propositions requis. En cochant cette case, les destinataires pour lesquels le nombre de propositions requis n’est pas atteint seront exclus de la diffusion. Si vous ne sélectionnez pas cette option, ces destinataires seront conservés, mais ils auront un nombre de propositions inférieur au nombre demandé.
+* **[!UICONTROL Ne rien afficher si aucune offre n’est sélectionnée]** : cette option permet de choisir le traitement du message au cas où l’une des propositions n’existerait pas. En cochant cette case, la représentation de la proposition manquante ne s’affichera pas et aucun contenu n’apparaîtra dans le message pour cette proposition. Si la case est décochée, le message lui-même est annulé au moment de l’envoi et les destinataires ne recevront aucun message.
 
 ## Envoi d&#39;offres dans des workflows{#offer-via-wf}
 
@@ -100,11 +100,11 @@ Après avoir configuré votre activité **Requête** :
 1. Indiquez un identifiant ainsi qu&#39;un libellé pour la proposition qui sera ajoutée.
 1. Définissez la sélection de l&#39;offre. Deux options sont possibles :
 
-   * **[!UICONTROL Recherchez la meilleure offre dans une catégorie]** : cochez cette option et spécifiez les paramètres d&#39;appel au moteur d&#39;offres (emplacement, catégorie ou thème(s), date de contact, nombre d&#39;offres à conserver). Le moteur calculera automatiquement la ou les offres à ajouter en fonction de ces paramètres. Nous vous recommandons de renseigner soit le champ **[!UICONTROL Catégorie]**, soit le champ le **[!UICONTROL Thème]**, plutôt que les deux à la fois.
+   * **[!UICONTROL Rechercher la meilleure offre dans une catégorie]** : cochez cette option et définissez les paramètres de l’appel au moteur d’offres (emplacement, catégorie ou thématique, date de contact, nombre d’offres à conserver). Le moteur calculera automatiquement la ou les offres à ajouter en fonction de ces paramètres. Nous vous recommandons de renseigner soit le champ **[!UICONTROL Catégorie]**, soit le champ **[!UICONTROL Thème]**, plutôt que les deux à la fois.
 
      ![](assets/int_enrichment_offer3.png)
 
-   * **[!UICONTROL Une offre prédéfinie]** : cochez cette option et indiquez un emplacement, une offre spécifique et une date de contact pour configurer directement l&#39;offre que vous souhaitez ajouter, sans appeler le moteur d&#39;offres.
+   * **[!UICONTROL Une offre prédéfinie]** : cochez cette option et définissez un emplacement, une offre précise, ainsi quʼune date de contact afin de directement paramétrer lʼoffre que vous souhaitez ajouter, sans appeler le moteur dʼoffres.
 
      ![](assets/int_enrichment_offer4.png)
 

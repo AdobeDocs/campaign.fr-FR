@@ -6,9 +6,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: f7047c6e-f045-4534-b117-311dd90dd92b
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '919'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,14 +26,14 @@ Dans l’interface utilisateur, les cardinalités sont représentées par une ic
 
 Pour les relations de jointure avec une table/base de données de campagne :
 
-* ![](assets/do-not-localize/join_with_campaign11.png) : Cardinalité 1-1. Par exemple, entre un destinataire et une commande en cours. Un destinataire ne peut être associé qu&#39;à une seule occurrence à la fois de la table des commandes actuelle.
-* ![](assets/do-not-localize/externaljoin11.png) : Cardinalité 1-1, jointure externe. Par exemple, entre un destinataire et son pays. Un destinataire ne peut être associé qu&#39;à une seule occurrence dans la table des pays. Le contenu de la table des pays ne sera pas enregistré.
-* ![](assets/do-not-localize/join_with_campaign1n.png) : Cardinalité 1-N. Par exemple, entre un destinataire et la table des abonnements. Un destinataire peut être associé à plusieurs occurrences dans la table des abonnements.
+* ![](assets/do-not-localize/join_with_campaign11.png) : cardinalité 1-1. Par exemple, entre un destinataire et une commande en cours. Un destinataire ne peut être associé qu&#39;à une seule occurrence à la fois de la table des commandes actuelle.
+* ![](assets/do-not-localize/externaljoin11.png) : cardinalité 1-1, jointure externe. Par exemple, entre un destinataire et son pays. Un destinataire ne peut être associé qu&#39;à une seule occurrence dans la table des pays. Le contenu de la table des pays ne sera pas enregistré.
+* ![](assets/do-not-localize/join_with_campaign1n.png) : cardinalité 1-N. Par exemple, entre une personne destinataire et le tableau des abonnements. Une personne destinataire peut être associée à plusieurs occurrences dans le tableau des abonnements.
 
 Pour les relations de jointure utilisant Federated Database Access (FDA) :
 
-* ![](assets/do-not-localize/join_fda_11.png) : Cardinalité 1-1
-* ![](assets/do-not-localize/join_fda_1m.png) : Cardinalité 1-N
+* ![](assets/do-not-localize/join_fda_11.png) : cardinalité 1-1
+* ![](assets/do-not-localize/join_fda_1m.png) : cardinalité 1-N
 
 Pour plus d’informations sur les tables FDA, voir la section [Accès à une base de données externe](../connect/fda.md).
 

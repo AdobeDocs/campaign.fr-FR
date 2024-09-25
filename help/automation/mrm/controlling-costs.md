@@ -6,9 +6,9 @@ feature: Campaigns, Resource Management
 role: User
 exl-id: 51f3add9-a083-4db1-84a6-3aaaeec0465c
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2498'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Les étapes de mise en oeuvre de la gestion des budgets avec MRM sont les suivan
 
 1. Définissez la méthode de calcul des coûts : les structures de coûts sont définies pour les prestataires. [En savoir plus](../campaigns/providers-stocks-and-budgets.md).
 
-1. Définition des coûts de l&#39;opération (diffusions/tâches) : les coûts engendrés par les diffusions et les tâches sont renseignés unitairement ou globalement au niveau du modèle de l&#39;opération. [En savoir plus](../campaigns/marketing-campaign-deliveries.md#compute-costs-and-stocks).
+1. Définissez les coûts de la campagne (diffusions/tâches) : les coûts engendrés par les diffusions et les tâches sont renseignés unitairement ou globalement au niveau du modèle de campagne. [En savoir plus](../campaigns/marketing-campaign-deliveries.md#compute-costs-and-stocks).
 
 1. Consolidez : en fonction du statut de réalisation des tâches, des diffusions et de la campagne, les coûts seront calculés et répercutés au niveau du budget correspondant. Lorsque la création de la campagne est suffisamment avancée, le statut de réalisation du budget de la campagne peut être modifié en **[!UICONTROL Renseigné]**. Le coût calculé du programme est alors automatiquement renseigné avec les coûts calculés sur la cmapagne. [En savoir plus](#cost-commitment--calculation-and-charging).
 

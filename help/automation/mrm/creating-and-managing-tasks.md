@@ -6,7 +6,7 @@ feature: Campaigns, Resource Management
 role: User
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3928'
 ht-degree: 100%
 
@@ -374,10 +374,10 @@ Une tâche de notification peut avoir les états suivants :
 
 Lors de sa création, les éléments suivants doivent être renseignés dans la tâche :
 
-* **[!UICONTROL Affecté à]** : l&#39;opérateur ou le groupe d&#39;opérateurs à qui l&#39;email va être envoyé. Si vous réaffectez la tâche une fois l&#39;email envoyé, l&#39;email ne sera pas renvoyé au nouvel opérateur affecté à la tâche (pour cela, il faut réinitialiser la tâche et changer sa date de début).
+* **[!UICONTROL Affecté à]** : l’utilisateur ou utilisatrice ou le groupe d’utilisateurs ou d’utilisatrices à qui l’e-mail va être envoyé. Si vous réaffectez la tâche une fois l’e-mail envoyé, celui-ci ne sera pas renvoyé au nouvel utilisateur ou à la nouvelle utilisatrice à qui la tâche a été affectée (pour cela, il faut réinitialiser la tâche et changer sa date de début).
 * **Date de début de la tâche** : date à laquelle l&#39;email de notification sera envoyé. Cette date doit impérativement être située dans le futur par rapport au moment où vous enregistrez la tâche.
 * **Date de fin de la tâche** : date à laquelle la tâche prend le statut **[!UICONTROL Terminé]**. Par défaut, la date de fin est identique à celle de début. Cependant, donner une durée à la tâche permet, si besoin, de symboliser dans le planning le temps dont dispose l&#39;opérateur pour agir.
-* **[!UICONTROL Description]** : le texte entré ici apparaîtra dans le corps de l&#39;email de notification.
+* **[!UICONTROL Description]** : le texte saisi ici apparaîtra dans le corps de l’e-mail de notification.
 
   ![](assets/mrm_task_notif_dashboard_msg.png)
 
