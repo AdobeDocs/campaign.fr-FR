@@ -8,7 +8,7 @@ breadcrumb-title: Documentation Campaign v8
 source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -50,22 +50,22 @@ ht-degree: 94%
       + [Définir les paramètres d’e-mail supplémentaires](send/email-parameters.md)
       + [Envoyer et surveiller des e-mails](send/send.md)
    + SMS {#sms}
-      + [Prise en main des SMS](send/sms/sms.md)
+      + [Commencer avec les SMS](send/sms/sms.md)
       + Configurer le canal SMS {#config-sms}
-         + [Paramètres du compte externe SMPP](send/sms/smpp-external-account.md)
+         + [Paramètres de compte externe SMPP](send/sms/smpp-external-account.md)
          + [Caractéristiques du canal SMS](send/sms/sms-channel.md)
-         + [Validation d&#39;une connexion SMPP](send/sms/smpp-connection.md)
+         + [Valider une connexion SMPP](send/sms/smpp-connection.md)
          + [Instance autonome](send/sms/sms-standalone-instance.md)
-         + [Infrastructure de mid-sourcing](send/sms/sms-mid-sourcing.md)
+         + [Infrastructure de midsourcing](send/sms/sms-mid-sourcing.md)
          + [Description du connecteur SMPP](send/sms/smpp-connector-delivery.md)
       + Créer un SMS {#create-sms}
-         + [Paramètres de diffusion SMS](send/sms/sms-delivery-settings.md)
+         + [Paramètres de diffusion des SMS](send/sms/sms-delivery-settings.md)
          + [Définir le contenu](send/sms/sms-content.md)
-         + [Sélection de l’audience](send/sms/sms-audience.md)
-      + Validation et envoi de SMS {#validate-sms}
+         + [Sélectionner l’audience](send/sms/sms-audience.md)
+      + Valider et envoyer des SMS {#validate-sms}
          + [Envoyer des BAT SMS](send/sms/sms-proofs.md)
-         + [Envoyer à l&#39;audience](send/sms/sms-send.md)
-      + [Surveillance et suivi de SMS](send/sms/sms-monitor.md)
+         + [Envoyer à l’audience](send/sms/sms-send.md)
+      + [Surveiller et suivre les SMS](send/sms/sms-monitor.md)
    + Notifications push {#push}
       + [Créer et envoyer des notifications push](send/push.md)
       + Notification push enrichie {#rich-push}
