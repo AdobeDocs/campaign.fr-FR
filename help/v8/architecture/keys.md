@@ -5,10 +5,10 @@ feature: Configuration, FFDA
 role: Developer
 level: Intermediate
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
-source-git-commit: 202a0553f0c736086eca993b9647737732f57d07
+source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
 workflow-type: tm+mt
-source-wordcount: '568'
-ht-degree: 100%
+source-wordcount: '591'
+ht-degree: 96%
 
 ---
 
@@ -55,7 +55,7 @@ Une notification spécifique est envoyée au groupe d’opérateurs **[!UICONTRO
 ![](assets/wf-alert-activity.png)
 
 
-## Mécanismes de sécurisation supplémentaires{#duplicates-guardrails}
+## Mécanismes de sécurisation supplémentaires {#duplicates-guardrails}
 
 Campaign est fourni avec un ensemble de nouveaux mécanismes de sécurisation qui empêchent l’insertion de clés dupliquées dans la base de données [!DNL Snowflake].
 
@@ -63,19 +63,19 @@ Campaign est fourni avec un ensemble de nouveaux mécanismes de sécurisation qu
 >
 >Ces mécanismes de sécurisation sont disponibles à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-### Préparation de la diffusion{#remove-duplicates-delivery-preparation}
+### Préparation de la diffusion {#remove-duplicates-delivery-preparation}
 
 Adobe Campaign supprime automatiquement tout UUID dupliqué d’une audience lors de la préparation de la diffusion. Ce mécanisme empêche toute erreur lors de la préparation d&#39;une diffusion. En tant qu&#39;utilisateur final, vous pouvez vérifier ces informations dans les logs de diffusion : certains destinataires peuvent être exclus de la cible principale en raison de la clé dupliquée. Dans ce cas, l&#39;avertissement suivant s&#39;affiche : `Exclusion of duplicates (based on the primary key or targeted records)`.
 
 ![](assets/exclusion-duplicates-log.png)
 
-### Mise à jour de données dans un workflow{#duplicates-update-data}
+### Mise à jour de données dans un workflow {#duplicates-update-data}
 
 Dans le contexte d’un [Déploiement Enterprise (FFDA)](enterprise-deployment.md), vous ne pouvez pas sélectionner de clé interne (UUID) comme champ pour mettre à jour les données dans un workflow.
 
 ![](assets/update-data-no-internal-key.png)
 
-### Requête sur un schéma avec des doublons{#query-with-duplicates}
+### Requête sur un schéma avec des doublons {#query-with-duplicates}
 
 Lorsqu’un workflow démarre l’exécution de la requête sur un schéma, Adobe Campaign vérifie si un enregistrement dupliqué est signalé dans la variable [Table d’audit d’unicité](#unicity-wf). Si tel est le cas, le workflow consigne un avertissement, car l’opération suivante sur les données dupliquées peut avoir une incidence sur le résultat du workflow.
 
@@ -86,3 +86,8 @@ Ce contrôle est effectué dans les activités de workflow suivantes :
 * Requête
 * Requête incrémentale
 * Lecture de liste
+
+
+>[!NOTE]
+>
+>Si vous effectuez une transition depuis une autre version de Campaign, il est impératif de supprimer les doublons, de dépanner et d’assainir les données afin d’éviter tout impact sur votre transition.
