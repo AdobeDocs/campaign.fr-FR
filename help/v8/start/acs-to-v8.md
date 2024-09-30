@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 98613a0a-7a6d-41a5-9541-e045d4ca318f
-source-git-commit: f0fc5dfdde4fa9a238c0f07aa2bd35da28eead3c
-workflow-type: ht
-source-wordcount: '159'
-ht-degree: 100%
+source-git-commit: fb7abba9009591a2757c07f584c0a7c59c6eb01a
+workflow-type: tm+mt
+source-wordcount: '210'
+ht-degree: 75%
 
 ---
 
@@ -18,4 +18,11 @@ En migrant de Campaign Standard à Campaign v8, vous pouvez maintenant profite
 
 En tant qu’utilisateur ou utilisatrice de Campaign v8, vous avez accès à la nouvelle interface d’Adobe Campaign Web et à la console cliente v8. Les données et les paramètres sont synchronisés d’un environnement à un autre. L’ensemble de vos données et paramètres déjà disponibles dans la console cliente sont visibles dans l’interface d’utilisation de Campaign Web, à partir du volet de navigation de gauche de l’explorateur.
 
-Apprenez-en davantage sur la nouvelle interface d’utilisation d’Adobe Campaign Web dans [cette documentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=fr){target="_blank"}.
+Liens utiles pour commencer par :
+
+* Découvrez les principales différences et comment commencer à utiliser [ce guide d’adoption](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/home){target="_blank"}.
+
+* Apprenez-en davantage sur la nouvelle interface d’utilisation d’Adobe Campaign Web dans [cette documentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=fr){target="_blank"}.
+
+* Des fonctionnalités de Campaign Standard ont été ajoutées à Campaign v8 pour faciliter votre transition. Ces fonctionnalités sont limitées aux clients effectuant la transition depuis Campaign Standard et sont décrites dans cette [documentation](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/campaign-standard-migration-home){target="_blank"} de cette section.
+
