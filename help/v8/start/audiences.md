@@ -5,9 +5,9 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 99cb937a475997aae714a67b1f9f91c6bae932f4
+source-git-commit: 9ce5acd97e077105316c81029e3ccbc6fa4389dc
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '524'
 ht-degree: 100%
 
 ---
@@ -64,7 +64,7 @@ Découvrez comment gérer la confidentialité et le consentement dans la [docume
 
 **Rubriques connexes**.
 
-* [Concevoir et exécuter un workflow spécifique à une campagne](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/campaign-workflows.html?lang=fr){target="_blank"}
+* [Concevoir et exécuter un workflow spécifique à une campagne](../../automation/workflow/campaign-workflows.md){target="_blank"}
 
 * [Découvrir comment sélectionner l’audience d’une campagne](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=fr){target="_blank"}
 

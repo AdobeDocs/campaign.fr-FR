@@ -5,9 +5,9 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 10b1113a20c11e0b97804f597cb0a48568fcae3d
+source-git-commit: 9ce5acd97e077105316c81029e3ccbc6fa4389dc
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '952'
 ht-degree: 100%
 
 ---
@@ -43,7 +43,7 @@ Lorsque vous utilisez Campaign pour la première fois, vous devez télécharger 
 
 Deux options sont disponibles pour télécharger la console cliente :
 
-1. En tant qu’administrateur ou administratrice de Campaign, connectez-vous à la [distribution logicielle Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target="_blank"}.
+1. En tant qu’administrateur ou administratrice de Campaign, connectez-vous à la [distribution logicielle Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/fr/campaign.html){target="_blank"}.
 
 1. En tant qu’utilisateur final ou utilisatrice finale, votre administrateur ou administratrice Campaign déploie la console cliente pour vous et la rend disponible via une URL dédiée.
 
@@ -61,7 +61,7 @@ Une fois la console cliente installée, procédez comme suit pour créer la conn
 
 1. Définissez une connexion vers votre serveur applicatif Adobe Campaign à partir d&#39;une URL. Utilisez soit un DNS ou un alias de la machine, soit votre adresse IP.
 
-   Par exemple, vous pouvez utiliser une URL de type [`https://<machine>.<domain>.com`](https://myserver.adobe.com).
+   Par exemple, vous pouvez utiliser une URL de type `https://<machine>.<domain>.com`.
 
 1. Cochez l&#39;option **[!UICONTROL Se connecter avec un Adobe ID]**.
 
