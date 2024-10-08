@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
 source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '706'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Vous pouvez utiliser la table des destinataires par défaut avec les champs d&#3
 * [Étendez une table existante](extend-schema.md) avec de nouveaux champs. Par exemple, vous pouvez ajouter un nouveau champ « Fidélité » au tableau des destinataires.
 * [Créez un tableau](create-schema.md), par exemple un tableau « Achat » répertoriant tous les achats effectués par chaque profil de la base de données, et liez-le au tableau des destinataires.
 
-Découvrez les bonnes pratiques lors de l&#39;utilisation du modèle de données Campaign dans [cette section](datamodel-best-practices.md).
+Découvrez les bonnes pratiques d’utilisation du modèle de données Campaign dans [cette section](datamodel-best-practices.md).
 
 ## Table des profils intégrée {#ootb-profiles}
 

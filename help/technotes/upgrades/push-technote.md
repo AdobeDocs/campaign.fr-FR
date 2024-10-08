@@ -9,9 +9,9 @@ badge-v7: label="v7" type="Informative" tooltip="S’applique également à Camp
 badge-v8: label="v8" type="Positive" tooltip="S’applique à Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
 source-git-commit: a9aa9cb508ca1f5cdcd59e61b5be029e3de1a82f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1721'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -52,15 +52,15 @@ Pour vérifier si cela vous concerne, vous pouvez filtrer vos **services et abon
 
 * Pour Campaign Classic v7, la prise en charge de HTTP v1 a été ajoutée à la version 20.3.1. Si votre environnement s’exécute sur une ancienne version, une condition préalable à la transition vers HTTP v1 est de mettre à niveau votre environnement vers la [dernière version de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=fr){target="_blank"}. Pour Campaign v8, HTTP v1 est pris en charge par toutes les versions et aucune mise à niveau n’est nécessaire.
 
-* En tant qu&#39;utilisateur on-premise de Campaign Classic v7, vous devez mettre à niveau les serveurs d&#39;exécution Marketing et Temps réel.
+* En tant qu’utilisateur ou utilisatrice On-Premise de Campaign Classic v7, vous devez mettre à niveau les serveurs d’exécution Marketing et en temps réel.
 
-* Pour les déploiements de Cloud Service hybrides, hébergés et gérés, en plus de la procédure de transition ci-dessous, contactez l’Adobe pour mettre à jour votre serveur d’exécution en temps réel (RT).
+* Pour les déploiements hybrides, hébergés et Managed Cloud Services, en plus de la procédure de transition ci-dessous, contactez Adobe pour mettre à jour votre serveur d’exécution en temps réel (RT).
 
-* À propos du compte externe de routage Android :
+* À propos du compte externe de routage Android :
 
-   * En tant qu&#39;utilisateur on-premise ou hybride de la version v7 Campaign Classic, vérifiez que votre compte externe de routage Android est configuré avec `androidPushConnectorV2.js`. En savoir plus dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
+   * En tant qu’utilisateur ou utilisatrice On-Premise ou hybride de Campaign Classic v7, vérifiez que votre compte externe de routage Android est configuré avec `androidPushConnectorV2.js`. En savoir plus en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
 
-   * Pour les déploiements de Cloud Service hybrides, hébergés et gérés, vous devez également vous connecter à l’équipe d’assistance clientèle d’Adobe pour vérifier que le connecteur `androidPushConnectorV2.js (nms)` est sélectionné dans le compte externe de routage Android de votre serveur de mid-sourcing.
+   * Pour les déploiements hybrides, hébergés et Managed Cloud Services, contactez également l’Assistance clientèle d’Adobe pour confirmer que le connecteur `androidPushConnectorV2.js (nms)` est bien sélectionné dans le compte externe de routage Android de votre serveur de mid-sourcing.
 
 #### Procédure de transition {#fcm-transition-steps}
 
@@ -93,39 +93,39 @@ Pour déplacer votre environnement vers HTTP v1, procédez comme suit :
 
 >[!NOTE]
 >
->Une fois ces modifications appliquées à tous vos serveurs, toutes les **nouvelles** diffusions de notifications push vers les appareils Android utilisent l’API HTTP v1. Les diffusions push existantes en reprise, en cours et en cours d’utilisation utilisent toujours l’API HTTP (héritée). Découvrez comment les mettre à jour dans la section ci-dessous.
+>Une fois ces modifications appliquées à tous vos serveurs, toutes les **nouvelles** diffusions de notifications push vers les appareils Android utilisent l’API HTTP v1. Les diffusions de notifications push existantes en reprise, en cours et actuellement utilisées continueront à utiliser l’API HTTP (héritée). Découvrez comment les mettre à jour dans la section ci-dessous.
 
-#### Mettre à jour les modèles existants {#fcm-transition-update}
+#### Mise à jour des modèles existants {#fcm-transition-update}
 
 Une fois la transition HTTP v1 terminée, vous devez mettre à jour vos **modèles de diffusion** pour les notifications push Android afin d’augmenter le nombre de messages par lot. Pour ce faire, accédez aux propriétés de votre modèle de diffusion Android puis, dans l’onglet **Diffusion**, définissez [Nombre de lots de messages](../../v8/send/configure-and-send.md#delivery-batch-quantity) sur **256**. Appliquez cette modification à tous les modèles de diffusion utilisés pour vos diffusions Android, ainsi qu’à toutes vos diffusions Android existantes.
 
-Vous pouvez également mettre à jour les diffusions existantes et les modèles de diffusion créés avant la mise à niveau vers une version prenant en charge HTTP v1. Procédez comme suit :
+Vous pouvez également mettre à jour les diffusions existantes et les modèles de diffusion créés avant la mise à niveau vers une version prenant en charge HTTP v1. Procédez comme suit :
 
-* En tant que Cloud Service gérés ou client hébergé, contactez Adobe pour mettre à jour vos modèles de diffusion Android existants.
+* En tant que cliente ou client Managed Cloud Services ou hébergé, contactez Adobe pour mettre à jour vos modèles de diffusion Android existants.
 
-* Pour les environnements on-premise, téléchargez le script `fcm-httpv1-migration.js` et exécutez-le comme décrit ci-dessous.
+* Pour les environnements On-Premise, téléchargez le script `fcm-httpv1-migration.js` et exécutez-le comme décrit ci-dessous.
 
   Téléchargez [fcm-httpv1-migration.zip](assets/do-not-localize/fcm-httpv1-migration-js.zip).
 
   >[!CAUTION]
   >
-  >Le script doit être exécuté sur votre instance marketing on-premise.
+  >Le script doit être exécuté sur votre instance marketing On-Premise.
 
 
-  +++Étapes de mise à jour des diffusions et modèles existants (on-premise uniquement)
+  +++Étapes de mise à jour des diffusions et modèles existants (On-Premise uniquement)
 
-  Pour corriger tous les modèles de diffusions et de diffusions créés avant la mise à niveau vers une version prenant en charge HTTP v1, procédez comme suit :
+  Pour corriger tous les modèles de diffusions et de diffusions créés avant la mise à niveau vers une version prenant en charge HTTP v1, procédez comme suit :
 
-   1. Exportez vos diffusions et modèles de diffusion existants dans un package afin de pouvoir les restaurer en cas de problème inattendu survenu pendant la correction.
-   1. Exécutez la commande suivante en Posgresql :
+   1. Exportez vos diffusions existantes et les modèles de diffusion créés dans un package afin de pouvoir les restaurer en cas de problème inattendu pendant la correction.
+   1. Exécutez la commande suivante en Posgresql :
 
       ```sql
       pg_dump -Fp -f /sftp/<db_name>-nmsdelivery-before_rd_script.sql -t nmsdelivery -d <db_name>
       ```
 
-   1. Par défaut, le script est en mode `dryrun`, vous pouvez le lancer dans ce mode pour vérifier si une diffusion doit être corrigée.
+   1. Par défaut, le script est en mode `dryrun`. Vous pouvez le lancer dans ce mode pour vérifier si une diffusion doit être corrigée.
 
-      La commande
+      Commande
 
       ```sql
       nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js 
@@ -150,7 +150,7 @@ Vous pouvez également mettre à jour les diffusions existantes et les modèles 
       >
       >Les diffusions `not patchable` doivent être mises à jour manuellement. Leur ID se trouve dans le journal.
 
-   1. Exécutez le script en mode d&#39;exécution de la manière suivante pour mettre à jour les diffusions :
+   1. Exécutez le script en mode d’exécution de la manière suivante pour mettre à jour les diffusions :
 
       ```sql
       nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js -arg:run

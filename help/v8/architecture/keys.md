@@ -6,9 +6,9 @@ role: Developer
 level: Intermediate
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
 source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '591'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -90,4 +90,4 @@ Ce contrôle est effectué dans les activités de workflow suivantes :
 
 >[!NOTE]
 >
->Si vous effectuez une transition depuis une autre version de Campaign, il est impératif de supprimer les doublons, de dépanner et d’assainir les données afin d’éviter tout impact sur votre transition.
+>En cas de passage à une autre version de Campaign, il est indispensable d’éliminer les doublons, de résoudre les problèmes et d’assainir les données pour assurer une transition en douceur.
