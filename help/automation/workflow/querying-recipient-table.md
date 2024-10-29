@@ -6,9 +6,9 @@ feature: Query Editor
 role: User, Data Engineer
 exl-id: 7f859ce9-7ab8-46e1-8bd6-43aaffe30da2
 source-git-commit: 122d78e310e66d5f354ffbc86c27a2fbff007447
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -84,6 +84,6 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
    ![](assets/query_editor_nveau_13.png)
 
-   L’onglet **[!UICONTROL Requêtes SQL générées]** affiche le résultat de la requête au format SQL.
+   L’onglet **[!UICONTROL Requêtes SQL générées]** vous présente le résultat de la requête en langage SQL.
 
    ![](assets/query_editor_nveau_14.png)
