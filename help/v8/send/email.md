@@ -5,16 +5,18 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: cf292ecd7d30862d7d195536ecc5be709fe037b3
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '535'
+ht-degree: 97%
 
 ---
 
 # Concevoir et envoyer des e-mails
 
 Les diffusions e-mail permettent d’envoyer des e-mails personnalisés à la population cible. [En savoir plus](../send/send.md).
+
+Découvrez les étapes clés pour créer et configurer une diffusion dans [cette page](../start/create-message.md).
 
 ## Création de votre première diffusion e-mail
 

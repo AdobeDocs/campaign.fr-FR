@@ -5,7 +5,7 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: cf292ecd7d30862d7d195536ecc5be709fe037b3
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 45%
@@ -169,7 +169,7 @@ Le BAT est un message spécifique qui permet de tester un message avant son envo
 
 Pour plus d&#39;informations sur les destinataires du BAT et l&#39;envoi, consultez [cette section](../send/preview-and-proof.md#send-proofs).
 
-![](assets/do-not-localize/how-to-video.png) [Découvrez cette fonctionnalité en vidéo](#seeds-and-proofs-video)
+![](../send/assets/do-not-localize/how-to-video.png) [Découvrez cette fonctionnalité en vidéo](#seeds-and-proofs-video)
 
 
 #### Tutoriel vidéo {#seeds-and-proofs-video}
