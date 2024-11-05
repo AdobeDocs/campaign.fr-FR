@@ -1,177 +1,203 @@
 ---
-title: Prise en main des messages
-description: Prise en main des messages
+title: Créer votre première diffusion
+description: Créer votre première diffusion
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: c508c80bea39e4fc32786d92d06651a1f91ca697
-workflow-type: ht
-source-wordcount: '1322'
-ht-degree: 100%
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+workflow-type: tm+mt
+source-wordcount: '1614'
+ht-degree: 45%
 
 ---
 
-# Prise en main des messages {#gs-ac-audiences}
+# Créer votre première diffusion {#create-a-msg}
 
-## Canaux de diffusion {#gs-ac-channels}
+Dans cette page, vous apprendrez à créer une diffusion unique ponctuelle. Vous pouvez créer d’autres types de diffusions pour répondre à vos cas d’utilisation. Découvrez les différents types de diffusions et comment les créer dans [cette page](gs-message.md).
 
-Avec Adobe Campaign, vous pouvez réaliser des campagnes cross-canal, y compris sous forme d&#39;e-mails, SMS, notifications push et courrier, et mesurer leur efficacité à l&#39;aide de différents rapports dédiés. Ces messages sont conçus et envoyés par le biais de diffusions, et peuvent être personnalisés pour chaque destinataire.
+Les étapes clés de la création d&#39;une diffusion ponctuelle sont les suivantes :
 
-Les principales fonctionnalités comprennent le ciblage, la définition et la personnalisation des messages, l&#39;exécution des communications et les rapports opérationnels associés. Le principal point d&#39;accès fonctionnel est l&#39;assistant de diffusion. Ce point d’accès permet d’accéder à de multiples fonctionnalités proposées par Adobe Campaign.
+1. **Créez une diffusion**. [En savoir plus](#create-the-delivery)
 
-Adobe Campaign v8 propose les canaux de diffusion suivants :
+1. **Définir le contenu de la diffusion**. [En savoir plus](#content-of-the-delivery)
 
-* **Canal e-mail** : les diffusions e-mail permettent d&#39;envoyer des e-mails personnalisés à la population cible. [En savoir plus](#gs-channel-email)
+1. **Sélectionnez la population cible**. [En savoir plus](#target-population)
 
-* **Canaux mobiles** : les diffusions sur canaux mobiles permettent d’envoyer des messages personnalisés sur des appareils mobiles à la population cible. [En savoir plus](#gs-channel-sms)
-
-* **Canal des applications mobiles** : les diffusions d’applications mobiles vous permettent d’envoyer des notifications aux systèmes iOS et Android. [En savoir plus](#gs-channel-push)
-
-* **Canal courrier** : les diffusions courrier permettent de générer un fichier d’extraction contenant les données relatives à la population cible. [En savoir plus](#gs-channel-direct)
-
-
-  Les autres canaux sont décrits sur [cette page](#other-channels).
-
-  >[!NOTE]
-  >
-  >Le nombre de canaux disponibles dépend de votre contrat. Veuillez vérifier votre contrat de licence.
-
-## Choisir votre canal {#gs-channel}
-
-### Canal e-mail {#gs-channel-email}
-
-Le [canal Email](../send/direct-mail.md) est l&#39;un des principaux canaux dans Adobe Campaign. Il vous permet de planifier et d&#39;envoyer des emails personnalisés à des cibles spécifiques.
-
-Vous pouvez envoyer différents types d&#39;emails :
-
-* Emails uniques : emails que vous pouvez envoyer une fois à une cible définie. Ils sont généralement utilisés pour promouvoir un contenu spécifique qui ne sera préparé et envoyé qu&#39;une seule fois (newsletter, email promotionnel, etc.).
-* E-mails récurrents : dans une campagne, envoyez un même e-mail régulièrement et agrégez chaque envoi et ses rapports de façon périodique. Un même e-mail est envoyé, mais généralement à une cible différente, selon la cible éligible pour le jour de l&#39;envoi. Un exemple courant est un e-mail d&#39;anniversaire. Pour plus d&#39;informations, consultez la section [Diffusions récurrentes](../../automation/workflow/recurring-delivery.md).
-* Emails transactionnels : emails unitaires qui sont déclenchés en fonction du comportement de vos clients. Pour plus d’informations, consultez la section [Messages transactionnels](../send/transactional.md).
-
-Pour plus d’informations sur l’utilisation des diffusions et les recommandations relatives à celles-ci, consultez les [Bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=fr#sending-messages){target="_blank"} d’Adobe Campaign Classic.
-
-Pour plus d’informations sur les différents types de diffusion, consultez [cette section](#types-of-deliveries).
-
-### Canal mobile {#gs-channel-sms}
-
-Adobe Campaign permet de diffuser des [SMS](../send/sms/sms.md) et des messages [LINE](../send/line.md) sur des mobiles.
-
-Pour les SMS, vous pouvez créer, modifier et personnaliser des messages au format texte uniquement. Vous pouvez également prévisualiser les SMS avant leur envoi.
-
-Pour les messages LINE, vous pouvez envoyer du texte ou des images et des liens.
-
-Pour diffuser des SMS ou des messages LINE vers un téléphone mobile, il vous faut :
-
-* un compte externe paramétré sur le canal **[!UICONTROL Mobile (SMS)]** ou **[!UICONTROL LINE]**,
-* un modèle de diffusion SMS ou LINE correctement lié à ce compte externe.
-
-
-### Canal des notifications push {#gs-channel-push}
-
-Vous pouvez utiliser Adobe Campaign pour envoyer des [notifications push](../send/push.md) personnalisées et segmentées sur des appareils mobiles iOS et Android via des applications dédiées. Une fois les procédures de configuration et d’intégration effectuées, les diffusions sur iOS et Android peuvent être créées et envoyées avec Adobe Campaign. Vous pouvez également concevoir et envoyer des notifications enrichies avec des images ou des vidéos aux appareils Android.
-
-### Canal courrier {#gs-channel-direct}
-
-Le [canal Courrier](../send/direct-mail.md) est un canal hors ligne qui vous permet de créer, personnaliser et générer un fichier externe à partager avec vos fournisseurs de services postaux. Utilisez ce canal pour orchestrer les canaux en ligne et hors ligne dans vos parcours clientèle.
-
-Lors de la préparation d’une diffusion courrier, Adobe Campaign génère un fichier comprenant tous les profils ciblés et les informations de contact sélectionnées (adresse postale, par exemple). Vous pouvez ensuite envoyer ce fichier à votre fournisseur de services postaux qui se chargera de l’envoi.
-
-
-### Autres canaux {#other-channels}
-
-Adobe Campaign propose un modèle de diffusion téléphone, utilisé pour créer des diffusions externes. L’utilisation de ce canal implique la configuration de méthodologies dédiées pour traiter les fichiers de sortie. Les étapes de configuration sont identiques à celles du [canal Courrier](../send/direct-mail.md).
+Vous pouvez ensuite préparer, tester, envoyer et surveiller vos messages.
 
 >[!NOTE]
 >
->Le canal téléphonique n’est pas un canal intégré. Sa mise en œuvre nécessite la participation d&#39;Adobe Consulting ou d&#39;un partenaire Adobe. Pour plus d&#39;informations, contactez votre représentant Adobe.
+>Les étapes décrites dans cette section supposent que tous les destinataires cibles et leurs profils sont stockés dans la base de données, sauf dans le cas d&#39;une diffusion externe (voir [Sélectionner les destinataires externes](steps-defining-the-target-population.md#selecting-external-recipients)).
 
-Les diffusions de type « Autre » utilisent un modèle technique spécifique qui n’exécute aucun processus. Elles permettent notamment de gérer des actions marketing exécutées en dehors de la plateforme Adobe Campaign.
+## Création de la diffusion {#create-the-delivery}
 
-Ce canal n’a aucun mécanisme spécifique. Il s’agit d’un canal générique qui possède une option de routage de compte externe, un type de modèle de diffusion et une activité de workflow de campagne, tout comme n’importe quel autre canal de communication disponible dans Adobe Campaign. Ce canal a été conçu à des fins de description uniquement, pour définir par exemple les diffusions pour lesquelles vous souhaitez conserver une trace de la cible d’une campagne effectuée dans un outil autre qu’Adobe Campaign.
+Pour créer une diffusion, procédez comme suit :
 
-## Choisir le type de diffusion {#types-of-deliveries}
+1. Cliquez sur **[!UICONTROL Créer]** au-dessus de la liste des diffusions. Lorsque vous créez une diffusion, vous devez sélectionner le canal de diffusion. Pour cela, sélectionnez le modèle de diffusion correspondant, à partir de la liste déroulante du champ **[!UICONTROL Modèle de diffusion]**.
 
-Campaign contient trois types d&#39;objets de diffusion :
+   ![](../send/assets/select-the-new-template.png)
 
-### Diffusion unique {#single-delivery}
+   Un modèle intégré est fourni pour chaque canal installé : courrier, email, téléphone, canal mobile (SMS), X (Twitter), etc. Les canaux disponibles dans la liste dépendent de votre contrat de licence.
 
-Une **diffusion** est un objet de diffusion autonome exécuté une seule fois. Elle peut être dupliquée et préparée à nouveau. Toutefois, tant qu&#39;elle se trouve dans un état final (annulée, arrêtée, terminée), elle ne peut pas être réutilisée.
+   Vous pouvez créer de nouveaux modèles de diffusion afin de préconfigurer des paramètres spécifiques en fonction de vos besoins. Pour plus d’informations sur les modèles, consultez [cette section](about-templates.md).
 
-Les diffusions peuvent être créées à partir de la liste de diffusions ou au sein d&#39;un workflow via une activité [Diffusion](../../automation/workflow/delivery.md).
+1. Saisissez un nom pour le diffusion dans le champ **[!UICONTROL Libellé]**.
 
- Les workflows fournissent également des activités de diffusion spécifiques selon le type de canal que vous souhaitez utiliser. Pour plus d&#39;informations sur ces activités, voir [cette section](../../automation/workflow/cross-channel-deliveries.md).
+   (Facultatif) Un code de diffusion peut également être affecté à la diffusion. Le nom de la diffusion et son code sont visibles dans la liste des diffusions mais ne sont pas exposés aux destinataires.
 
-### Diffusion récurrente {#recurring-delivery}
+1. (Facultatif) Ajoutez une description dans le champ **[!UICONTROL Description]** .
+1. (Facultatif) Sélectionnez la nature de la diffusion dans le champ correspondant. Cette information est notamment utile pour le rtacking des diffusions : vous pouvez filtrer sur ce critère dans la liste des diffusions ou construire des requêtes en utilisant ce critère de sélection.
+1. Cliquez sur **[!UICONTROL Continuer]** pour valider ces informations et afficher la fenêtre de configuration du message.
 
-Une **diffusion récurrente** est disponible dans le contexte d’un workflow. Elle permet de créer une diffusion à chaque exécution de l’activité. Ainsi, vous n’avez pas à créer de diffusion pour les tâches récurrentes. Par exemple, si vous exécutez ce type d’activité une fois par mois, vous obtiendrez 12 diffusions au bout d’un an.
+## Définir le contenu de la diffusion {#content-of-the-delivery}
 
-Les diffusions récurrentes sont créées dans des workflows par le biais de l&#39;activité [](../../automation/workflow/recurring-delivery.md)Diffusion récurrente. Un exemple d&#39;utilisation de cette activité est présenté dans la section suivante : [Création d’une diffusion récurrente dans un workflow de ciblage](../../automation/workflow/send-a-birthday-email.md).
+Le contenu de la diffusion est prêt à être configuré. La définition du contenu de diffusion est spécifique à chaque canal. Voir à ce sujet la section dédiée :
 
-### Diffusion au fil de l’eau {#continuous-delivery}
-
-Une **diffusion au fil de l’eau** est disponible dans le contexte d’un workflow. Elle permet d’ajouter de nouvelles personnes destinataires à une diffusion existante, ce qui évite d’avoir à créer une diffusion à chaque exécution.
-
-Si des informations liées à diffusion changent (contenu, nom, etc.), un nouvel objet de diffusion est créé lors de l&#39;exécution de la diffusion. Si aucune information n&#39;a été modifiée, le même objet de diffusion est réutilisé, et les logs de diffusion et de tracking sont ajoutés au même objet.
-
-Par exemple, si vous exécutez ce type d&#39;activité une fois par mois, vous obtiendrez une seule diffusion au bout d&#39;un an (à condition que vous n&#39;ayez apporté aucune modification à la diffusion).
-
-Les diffusions au fil de l&#39;eau sont créées dans des workflows via l&#39;activité [Diffusion au fil de l&#39;eau](../../automation/workflow/continuous-delivery.md).
+* [Définition du contenu de l’e-mail](../send/email.md)
+* [Définition du contenu des SMS](../send/sms/sms-content.md)
+* [Définition du contenu du publipostage direct](../send/direct-mail.md)
+* [Dégrader le contenu de la notification push](../send/push.md)
 
 
-## Choisir comment envoyer vos messages{#gs-send-msg}
+## Définition de l’audience cible {#target-population}
 
-Une fois votre message créé et son contenu conçu et testé, vous pouvez choisir la façon dont vous souhaitez l&#39;envoyer. Campaign offre un ensemble de fonctionnalités pour :
+Pour chaque diffusion, vous pouvez définir plusieurs types d&#39;audiences cibles :
 
-* Envoyer les messages manuellement à la cible principale
+* **Audience principale** : profils recevant des messages. [En savoir plus](#select-the-main-target)
+* **Cible du BAT** : profils recevant des messages de BAT. Le bon à tirer (BAT) est un message spécifique qui permet de tester un message avant son envoi à la cible principale. [En savoir plus](#select-the-proof-target)
 
-  ![](assets/send-email.png)
+De plus, dans le cadre d&#39;une campagne marketing, vous pouvez ajouter :
 
-  Découvrez comment envoyer des messages dans [cette section](../send/send.md).
+* **Adresses de contrôle** : destinataires qui ne sont pas ciblés par la diffusion mais qui reçoivent la diffusion. [En savoir plus](../audiences/test-profiles.md)
+* **Populations témoins** : population qui ne reçoit pas la diffusion, utilisée pour suivre le comportement et l&#39;impact de la campagne. [En savoir plus](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group).
 
-* Envoyer des messages associés à une [campagne marketing](campaigns.md)
+### Sélection des principaux destinataires de la diffusion {#select-the-main-target}
 
-  ![](assets/deliveries-in-a-campaign.png)
+Dans la plupart des cas, la cible principale est extraite de la base de données Adobe Campaign (mode par défaut). Cependant, les destinataires peuvent également être stockés dans un [fichier externe](steps-defining-the-target-population.md#selecting-external-recipients).
 
-  Découvrez comment envoyer des messages dans le cadre d’une campagne dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=fr){target="_blank"}.
+Pour sélectionner les destinataires d’une diffusion, procédez comme suit :
 
-* Envoyer des messages via un [workflow](../config/workflows.md)
+1. Dans l’éditeur de diffusion, sélectionnez **[!UICONTROL Pour]**.
+1. Si les destinataires sont stockés dans la base de données, sélectionnez la première option.
 
-  ![](assets/send-in-a-wf.png)
+   ![](../send/sms/assets/audience_to.png){zoomable="yes"}
 
-  Découvrez comment automatiser les diffusions e-mail sur [cette page](../../automation/workflow/delivery.md)
+1. Sélectionnez le [mapping de ciblage](../audiences/target-mappings.md) dans la liste déroulante **[!UICONTROL Mapping de ciblage]** .
+1. Cliquez sur le bouton **[!UICONTROL Ajouter]** pour définir les filtres de restriction.
 
-* [Déclencher des messages](../send/transactional.md) à partir d’un événement
+   ![](assets/target-type.png){width="60%" align="left" zoomable="yes"}
 
-  La messagerie transactionnelle (Message Center) est le module de Campaign conçu pour gérer les messages de déclenchement.
+   Sélectionnez un type de filtre et cliquez sur **[!UICONTROL Suivant]** pour définir les conditions. Vous pouvez afficher les destinataires filtrés à partir de l&#39;onglet **[!UICONTROL Aperçu]**. Selon le type de cible, le bouton **[!UICONTROL Affiner la cible]** permet de combiner plusieurs critères de ciblage.
 
-  En savoir plus sur la fonctionnalité de messages transactionnels dans [cette section](../architecture/architecture.md#transac-msg-archi).
+   Les types de cibles disponibles sont les suivants :
 
-  Retrouvez les détails des étapes de configuration et d’envoi de messages transactionnels sur [cette page](../send/transactional.md).
+   * **[!UICONTROL Conditions de filtrage]** : utilisez cette option pour définir une requête et afficher le résultat. Découvrez comment concevoir une requête dans [cette section](../../automation/workflow/query.md).
+   * **[!UICONTROL Une liste de destinataires]** : utilisez cette option pour cibler une liste de profils. En savoir plus sur les listes dans [cette section](../audiences/create-audiences.md).
+   * **[!UICONTROL Un destinataire]** : utilisez cette option pour sélectionner un profil spécifique dans la base de données.
+   * **[!UICONTROL Destinataires inclus dans un dossier]** : utilisez cette option pour cibler tous les profils contenus dans un dossier spécifique.
+   * **[!UICONTROL Destinataires d&#39;une diffusion]** : utilisez cette option pour créer la cible à partir des destinataires d&#39;une diffusion. Vous devez ensuite sélectionner la diffusion dans la liste :
 
-* Planifier vos messages
+     ![](assets/target-recipient-delivery.png)
 
-  ![](assets/schedule-send.png)
+   * **[!UICONTROL Destinataires d&#39;une diffusion appartenant à un dossier]** : utilisez cette option pour créer la cible à partir des diffusions de destinataires incluses dans un dossier spécifique.
 
-  Découvrir comment planifier l’envoi de vos diffusions sur [cette page](../send/configure-and-send.md)
+     ![](assets/target-delivery-folder.png)
 
-  Voir aussi ce [Cas d’utilisation : découvrir comment planifier et envoyer un e-mail d’anniversaire](../../automation/workflow/send-a-birthday-email.md)
+     Vous pouvez filtrer sur le comportement des destinataires en le sélectionnant depuis la liste déroulante :
+
+     ![](assets/target-filter-behavior.png)
+
+     >[!NOTE]
+     >
+     >L&#39;option **[!UICONTROL Inclure les sous-dossiers]** permet de cibler également sur les diffusions contenues dans les dossiers situés en sous-arborescence du noeud sélectionné.
+
+   * **[!UICONTROL Abonnés d&#39;un service d&#39;information]** : cette option vous permet de sélectionner une newsletter à laquelle les destinataires doivent être abonnés pour être ciblés par la diffusion en cours de création.
+
+     ![](assets/target-service.png)
+
+   * **[!UICONTROL Filtres utilisateur]** : cette option permet d&#39;accéder aux filtres préconfigurés afin de les utiliser comme critères de filtrage pour les profils de la base de données. Les filtres préconfigurés sont présentés dans [cette section](../audiences/create-filters.md#default-filters).
+   * L&#39;option **[!UICONTROL Exclure les destinataires de ce segment]** permet de cibler sur les destinataires qui ne répondent pas aux critères de ciblage définis. Pour utiliser cette option, cochez la case correspondante puis opérez un ciblage, comme défini précédemment, pour exclure les profils en résultant.
+
+1. Saisissez un nom pour ce ciblage dans le champ **[!UICONTROL Libellé]**. Par défaut, le libellé est celui du premier critère de ciblage. Lorsque vous combinez des critères de filtrage, il est recommandé d&#39;utiliser un nom explicite.
+1. Cliquez sur **[!UICONTROL Terminer]** pour valider les options de ciblage.
+
+   Les critères de ciblage définis sont résumés dans la section centrale de l&#39;onglet de paramétrage de la cible principale. Cliquez sur un critère pour en visualiser le contenu (paramétrage et aperçu). Cliquez sur la croix située après le libellé d&#39;un critère pour le supprimer.
+
+   ![](assets/target-remove-criterion.png)
+
+#### Sélection de destinataires externes {#selecting-external-recipients}
+
+Vous pouvez envoyer des messages aux profils qui ne sont pas stockés dans la base de données, mais dans un fichier externe. Par exemple, pour envoyer une diffusion à des destinataires importés depuis un fichier texte, procédez comme suit :
+
+1. Cliquez sur le lien **[!UICONTROL Pour]** afin de sélectionner les destinataires de la diffusion.
+1. Sélectionnez l&#39;option **[!UICONTROL Définie dans un fichier externe]**.
+1. Sélectionnez le fichier contenant les destinataires.
+1. Lors de l&#39;import des destinataires, cliquez sur le lien **[!UICONTROL Définition du format du fichier...]** pour sélectionner et configurer le fichier externe.
+
+   Pour plus d&#39;informations sur l&#39;import de données, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}.
+
+1. Cliquez sur **[!UICONTROL Terminer]** et configurez votre diffusion comme une diffusion standard.
+
+>[!CAUTION]
+>
+>Lors de la définition du contenu du message pour une diffusion email, n&#39;incluez pas le lien vers la page miroir : elle ne peut pas être générée dans ce mode de diffusion.
+
+#### Définition des paramètres d’exclusion {#define-exclusion-settings}
+
+Lors de la définition de la cible d&#39;une diffusion, l&#39;onglet **[!UICONTROL Exclusions]** permet de limiter le nombre de messages. Bien que les paramètres par défaut soient recommandés, vous pouvez adapter les paramètres selon vos besoins. Ces options ne doivent toutefois être modifiées que par un utilisateur expert afin d&#39;éviter toute mauvaise utilisation et erreur.
+
+Vous pouvez choisir d&#39;exclure les adresses pour lesquelles un nombre d&#39;erreurs consécutives est atteint, ou dont l&#39;indice de qualité est inférieur au seuil spécifié dans cette fenêtre. Vous pouvez également choisir d&#39;autoriser ou non les adresses non-qualifiées, c&#39;est-à-dire celles pour lesquelles aucune information n&#39;a été remontée.
+
+Cliquez sur le lien **[!UICONTROL Editer]** pour modifier la configuration par défaut.
+
+![](assets/target-exclusion-settings.png)
+
+Les options disponibles sont les suivantes :
+
+* **[!UICONTROL Exclure les adresses en double lors de la diffusion]** : cette option est active par défaut et supprime les adresses email en double lors de la diffusion. La stratégie appliquée peut varier en fonction de l’utilisation d’Adobe Campaign et du type de données dans la base de données. La valeur de l&#39;option peut être paramétrée pour chaque modèle de diffusion.
+* **[!UICONTROL Exclure les destinataires qui ne veulent plus être contactés]**, c&#39;est-à-dire les destinataires dont les adresses email se trouvent sur une liste bloquée (&#39;opt out&#39;). Cette option doit rester sélectionnée afin de respecter l&#39;éthique professionnelle du e-marketing.
+* **[!UICONTROL Exclure les destinataires en quarantaine]** : cette option permet d&#39;exclure de la cible les profils dont l&#39;adresse est en quarantaine. Il est vivement recommandé de conserver cette option sélectionnée. Découvrez la gestion des quarantaines dans [cette section](understanding-quarantine-management.md).
+* **[!UICONTROL Limiter la diffusion]** à un nombre donné de messages. Cette option permet de renseigner le nombre maximum de messages à envoyer. Si l&#39;audience cible dépasse le nombre de messages indiqué, une sélection aléatoire est appliquée à la cible. Pour envoyer tous les messages, conservez cette valeur à &quot;0&quot;.
+* **[!UICONTROL Conserver les enregistrements en double (même identifiant)]** : cette option permet d&#39;envoyer plusieurs diffusions à des destinataires qui répondent à plusieurs critères de ciblage.
+
+### Sélection des destinataires des messages de BAT {#select-the-proof-target}
+
+Pour les diffusions e-mail, vous pouvez envoyer des BAT pour valider le contenu de votre message. L’envoi de BAT permet de vérifier le lien de désinscription (opt-out), la page miroir et d’autres liens, de valider le message, de vérifier le bon affichage des images, de détecter les erreurs possibles, etc. Vous souhaiterez peut-être également vérifier votre conception et le rendu sur différents appareils.
+
+Le BAT est un message spécifique qui permet de tester un message avant son envoi à l’audience principale. Les destinataires du BAT procèdent ensuite à la validation du message : rendu, contenu, paramètres de personnalisation et configuration.
+
+Pour plus d&#39;informations sur les destinataires du BAT et l&#39;envoi, consultez [cette section](../send/preview-and-proof.md#send-proofs).
+
+![](assets/do-not-localize/how-to-video.png) [Découvrez cette fonctionnalité en vidéo](#seeds-and-proofs-video)
 
 
-## Ajouter de la personnalisation{#personalization}
+#### Tutoriel vidéo {#seeds-and-proofs-video}
 
-Les messages diffusés par Adobe Campaign peuvent être personnalisés de différentes façons. [En savoir plus sur les fonctionnalités de personnalisation](../send/personalize.md)
+Dans cette vidéo, vous apprendrez comment ajouter des adresses de contrôle et des BAT à un email existant et comment l’envoyer.
 
-Vous pouvez ainsi :
-
-* Insérer des champs de personnalisation dynamiques. [En savoir plus](../send/personalization-fields.md)
-* Insérer des blocs de personnalisation prédéfinis. [En savoir plus](../send/personalization-blocks.md)
-* Créer du contenu conditionnel. [En savoir plus](../send/conditions.md)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 
-## Logs de tracking et de diffusion{#gs-tracking-logs}
+D’autres vidéos pratiques sur Campaign Classic sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=fr).
 
-La surveillance de vos diffusions après leur envoi est une étape clé pour vous assurer que vos campagnes marketing sont efficaces et atteignent vos clients. Vous pouvez ainsi surveiller une diffusion après son envoi et comprendre la gestion des diffusions en échec et des quarantaines.
+## Préparer et valider votre diffusion {#validate-the-delivery}
 
-Découvrez comment surveiller vos diffusions dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr#sending-messages){target="_blank"}.
+Une fois la diffusion créée et paramétrée, vous devez la valider avant de l&#39;envoyer à la cible principale.
 
+Pour cela :
+
+1. **Analyser la diffusion** : cette étape permet de procéder à la préparation des messages à envoyer. [En savoir plus](../send/delivery-analysis.md).
+
+1. **Envoyer des BAT** : cette étape permet de contrôler le contenu, les adresses URL, la personnalisation, etc. [En savoir plus](../send/preview-and-proof.md).
+
+>[!IMPORTANT]
+>
+>Les deux étapes ci-dessus DOIVENT être exécutées après chaque modification du contenu du message.
+
+
+## Configurer et envoyer la diffusion {#configuring-and-sending-the-delivery}
+
+Accédez aux paramètres de diffusion pour configurer d’autres paramètres et définir comment envoyer vos messages. Vous pouvez définir la priorité de diffusion, configurer les vagues d&#39;envoi, configurer les paramètres de reprise et tester l&#39;envoi de la diffusion. Une fois ce paramétrage effectué, vous pouvez confirmer l&#39;envoi. Les messages sont alors envoyés immédiatement ou selon le calendrier de diffusion.
+
+Découvrez comment configurer vos paramètres de diffusion dans [cette page](../send/configure-and-send.md).

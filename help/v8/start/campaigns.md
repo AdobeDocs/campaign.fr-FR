@@ -5,14 +5,14 @@ feature: Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 100%
+source-wordcount: '774'
+ht-degree: 94%
 
 ---
 
-# Prise en main des campagnes{#gs-ac-campaigns}
+# Prise en main des campagnes {#gs-ac-campaigns}
 
 Adobe Campaign propose un ensemble de solutions qui vous permettent de personnaliser et diffuser des campagnes à travers l’ensemble de vos canaux en ligne et hors ligne. Vous pouvez ainsi créer, configurer, exécuter et analyser des campagnes marketing. Toutes les campagnes marketing peuvent être gérées à partir d&#39;un centre de contrôle unifié. Dans cette section, découvrez comment parcourir et créer des campagnes marketing.
 
@@ -78,11 +78,9 @@ Les étapes clés permettant de créer une campagne marketing cross-canal sont l
 
    ![](assets/campaign-dashboard.png)
 
-   Découvrez comment créer et lancer des diffusions de campagnes marketing sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=fr){target="_blank"}.
+   Découvrez comment créer et démarrer des diffusions de campagne marketing dans [cette page](../../automation/campaigns/marketing-campaign-deliveries.md).
 
-   Vous pouvez associer divers documents à une campagne, comme des rapports, photos, pages web, diagrammes, etc.
-
-   En savoir plus sur les documents associés sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html?lang=fr){target="_blank"}.
+   Vous pouvez associer divers documents à une opération, comme des rapports, photos, pages web, diagrammes, etc. En savoir plus sur les documents associés dans [cette page](../../automation/campaigns/marketing-campaign-assets.md).
 
 1. **Configuration du processus de validation**
 
@@ -93,7 +91,7 @@ Les étapes clés permettant de créer une campagne marketing cross-canal sont l
 
 ## Module complémentaire Marketing distribué{#distributed-marketing-add-on}
 
-Adobe Campaign propose un module complémentaire **Marketing distribué** pour la mise en œuvre de campagnes de coopération entre entités centrales (sièges sociaux, services marketing, etc.) et les entités locales (boutiques, agences régionales, etc.). Cette coopération repose sur un espace de travail partagé appelé **[!UICONTROL Liste des kits d&#39;opération]**, où des modèles d&#39;opération conçus par des entités centrales sont proposés aux entités locales.
+Adobe Campaign propose un module complémentaire **Distributed Marketing** pour la mise en oeuvre de campagnes de coopération entre les entités centrales (siège social, départements de marketing, etc.) et les entités locales (magasins, agences régionales, etc.). Cette coopération repose sur un espace de travail partagé appelé **[!UICONTROL Liste des kits d&#39;opération]**, où des modèles d&#39;opération conçus par des entités centrales sont proposés aux entités locales.
 
 >[!NOTE]
 >

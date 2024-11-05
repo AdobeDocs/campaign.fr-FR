@@ -6,20 +6,20 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 100%
+source-wordcount: '746'
+ht-degree: 90%
 
 ---
 
-# Utilisation du modèle de diffusion{#work-with-delivery-template}
+# Utilisation du modèle de diffusion {#work-with-delivery-template}
 
-Utilisez les modèles de diffusion pour normaliser l’aspect créatif afin d’être plus rapide dans l’exécution et le lancement des campagnes.
+Chaque diffusion est créée à partir d&#39;un modèle. Des modèles natifs sont disponibles pour chaque canal. Vous pouvez les personnaliser pour appliquer les mêmes paramètres à un ensemble de diffusions.
 
-Un modèle peut inclure les éléments suivants :
+Un modèle comprend :
 
-* Typologies
+* Règles de typologie
 * Adresses d&#39;expéditeur et destinataire
 * [Blocs de personnalisation](../send/personalization-blocks.md) de base
 * Liens vers les [pages miroir](../send/mirror-page.md) et de désinscription
@@ -28,10 +28,9 @@ Un modèle peut inclure les éléments suivants :
 
 ![](assets/do-not-localize/how-to-video.png) [Découvrez cette fonctionnalité en vidéo](#delivery-template-video)
 
+## Création d’un modèle {#create-a-delivery-template}
 
-## Création d’un modèle{#create-a-delivery-template}
-
-Pour créer un modèle de diffusion, vous pouvez dupliquer un modèle intégré, convertir une diffusion existante en modèle ou créer un modèle de diffusion à partir de zéro.
+Pour créer un modèle de diffusion, vous pouvez dupliquer un modèle intégré ou convertir une diffusion existante en modèle. Vous pouvez également créer entièrement un modèle de diffusion, mais cela n&#39;est pas recommandé. Ces méthodes sont présentées ci-dessous.
 
 ### Duplication d’un modèle existant{#copy-an-existing-template}
 
@@ -91,9 +90,9 @@ Pour configurer un modèle de diffusion à partir de zéro, procédez comme suit
 1. Cliquez sur **Enregistrer**. Le modèle peut maintenant être utilisé dans une diffusion.
 
 
-## Utilisation de modèles{#use-a-delivery-template}
+## Utilisation de modèles {#use-a-delivery-template}
 
-### Création d’une diffusion depuis un modèle{#create-a-delivery-from-a-template}
+### Création d’une diffusion depuis un modèle {#create-a-delivery-from-a-template}
 
 Pour créer une diffusion basée sur un modèle existant, vous devez sélectionner le modèle dans la liste des modèles de diffusion proposés.
 

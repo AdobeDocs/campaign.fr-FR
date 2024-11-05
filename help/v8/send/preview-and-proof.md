@@ -5,7 +5,7 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
-source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 100%
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Une fois le contenu du message défini, prévisualisez-le et testez-le à l’aide de profils de test. Si vous avez inséré du [contenu personnalisé](personalize.md), vous pouvez vérifier son contenu dans le message à l’aide des données de profil de test. De plus, pour détecter d’éventuelles erreurs dans le contenu du message ou les paramètres de personnalisation, envoyez des BAT aux profils de test. Un BAT doit être envoyé à chaque modification afin de valider le contenu le plus récent.
 
-## Prévisualiser le contenu{#preview-content}
+## Prévisualiser le contenu {#preview-content}
 
 Avant d’envoyer des BAT, il est recommandé de vérifier le contenu du message dans la section de prévisualisation de la fenêtre de diffusion.
 
@@ -68,7 +68,7 @@ Par défaut, la substitution est effectuée de manière aléatoire, mais vous po
 
 * Utilisez l’option **[!UICONTROL Cible spécifique et Adresses de contrôle]** pour cumuler des adresses de contrôle et des adresses e-mail spécifiques. Les paramétrages correspondants sont alors définis dans deux sous-onglets distincts.
 
-### Envoyer un BAT{#proofs-send}
+### Envoyer un BAT {#proofs-send}
 
 Pour envoyer des BAT, procédez comme suit :
 
@@ -88,7 +88,7 @@ Il est recommandé d’envoyer des BAT après chaque modification du contenu du 
 >
 >Dans le BAT envoyé, le lien vers la page miroir est inactif. Il n’est actif que dans les messages finaux.
 
-### Propriétés du BAT{#proofs-properties}
+### Propriétés du BAT {#proofs-properties}
 
 Les propriétés du BAT sont définies sous l’onglet **[!UICONTROL Avancé]** de la fenêtre des propriétés de la diffusion. Accédez au lien **[!UICONTROL Propriétés du BAT...]** pour définir les paramètres et le libellé des BAT. Vous pouvez choisir de conserver les éléments suivants :
 

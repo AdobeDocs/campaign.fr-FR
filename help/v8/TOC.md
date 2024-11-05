@@ -5,10 +5,10 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
-workflow-type: ht
-source-wordcount: '677'
-ht-degree: 100%
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,8 @@ ht-degree: 100%
    + [Prise en main des campagnes](start/campaigns.md)
    + [Orchestration des campagnes >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=fr)
 + Envoyer des messages{#send}
-   + [Prise en main des messages](start/create-message.md)
+   + [Prise en main des messages](start/gs-message.md)
+   + [Créer votre première diffusion](start/create-message.md)
    + E-mails {#emails}
       + [Concevoir et valider des e-mails](send/email.md)
       + [Lien vers la page miroir](send/mirror-page.md)
