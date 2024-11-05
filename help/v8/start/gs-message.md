@@ -4,9 +4,9 @@ description: Prise en main des messages
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: 0ff645a87700c038b78fb4cc45062822d6d97148
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1308'
 ht-degree: 88%
 
 ---
@@ -17,7 +17,7 @@ Avec Adobe Campaign, vous pouvez réaliser des campagnes cross-canal, y compris
 
 Les principales fonctionnalités incluent le ciblage, la définition et la personnalisation des messages, l&#39;exécution des communications et les rapports opérationnels associés.
 
-## Créer une diffusion {#gs-ac-delivery}
+## Cas d’utilisation {#gs-ac-delivery}
 
 Pour envoyer des messages, vous devez créer une diffusion. Le mode de création de la diffusion dépend de votre cas d’utilisation.
 
@@ -147,7 +147,7 @@ Par exemple, si vous exécutez ce type d&#39;activité une fois par mois, vous o
 
 Les diffusions au fil de l&#39;eau sont créées dans des workflows via l&#39;activité [Diffusion au fil de l&#39;eau](../../automation/workflow/continuous-delivery.md).
 
-## Ajouter de la personnalisation{#personalization}
+## Ajouter de la personnalisation {#personalization}
 
 Les messages diffusés par Adobe Campaign peuvent être personnalisés de différentes façons. [En savoir plus sur les fonctionnalités de personnalisation](../send/personalize.md)
 
@@ -158,7 +158,7 @@ Vous pouvez ainsi :
 * Créer du contenu conditionnel. [En savoir plus](../send/conditions.md)
 
 
-## Logs de tracking et de diffusion{#gs-tracking-logs}
+## Envoi et suivi {#gs-tracking-logs}
 
 La surveillance de vos diffusions après leur envoi est une étape clé pour vous assurer que vos campagnes marketing sont efficaces et atteignent vos clients. Vous pouvez ainsi surveiller une diffusion après son envoi et comprendre la gestion des diffusions en échec et des quarantaines.
 
