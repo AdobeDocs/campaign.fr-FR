@@ -5,7 +5,7 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: cf292ecd7d30862d7d195536ecc5be709fe037b3
+source-git-commit: 1bf3c4b2d0c8d9b1bdbc82a9047c52c0d80cd997
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 45%
@@ -28,7 +28,7 @@ Vous pouvez ensuite préparer, tester, envoyer et surveiller vos messages.
 
 >[!NOTE]
 >
->Les étapes décrites dans cette section supposent que tous les destinataires cibles et leurs profils sont stockés dans la base de données, sauf dans le cas d&#39;une diffusion externe (voir [Sélectionner les destinataires externes](steps-defining-the-target-population.md#selecting-external-recipients)).
+>Les étapes décrites dans cette section supposent que tous les destinataires cibles et leurs profils sont stockés dans la base de données, sauf dans le cas d&#39;une diffusion externe. Voir [Sélection de destinataires externes](#selecting-external-recipients).
 
 ## Création de la diffusion {#create-the-delivery}
 
@@ -40,7 +40,7 @@ Pour créer une diffusion, procédez comme suit :
 
    Un modèle intégré est fourni pour chaque canal installé : courrier, email, téléphone, canal mobile (SMS), X (Twitter), etc. Les canaux disponibles dans la liste dépendent de votre contrat de licence.
 
-   Vous pouvez créer de nouveaux modèles de diffusion afin de préconfigurer des paramètres spécifiques en fonction de vos besoins. Pour plus d’informations sur les modèles, consultez [cette section](about-templates.md).
+   Vous pouvez créer de nouveaux modèles de diffusion afin de préconfigurer des paramètres spécifiques en fonction de vos besoins. Pour plus d’informations sur les modèles, consultez [cette section](../send/create-templates.md).
 
 1. Saisissez un nom pour le diffusion dans le champ **[!UICONTROL Libellé]**.
 
@@ -74,7 +74,7 @@ De plus, dans le cadre d&#39;une campagne marketing, vous pouvez ajouter :
 
 ### Sélection des principaux destinataires de la diffusion {#select-the-main-target}
 
-Dans la plupart des cas, la cible principale est extraite de la base de données Adobe Campaign (mode par défaut). Cependant, les destinataires peuvent également être stockés dans un [fichier externe](steps-defining-the-target-population.md#selecting-external-recipients).
+Dans la plupart des cas, la cible principale est extraite de la base de données Adobe Campaign (mode par défaut). Cependant, les destinataires peuvent également être stockés dans un [fichier externe](#selecting-external-recipients).
 
 Pour sélectionner les destinataires d’une diffusion, procédez comme suit :
 
@@ -157,7 +157,7 @@ Les options disponibles sont les suivantes :
 
 * **[!UICONTROL Exclure les adresses en double lors de la diffusion]** : cette option est active par défaut et supprime les adresses email en double lors de la diffusion. La stratégie appliquée peut varier en fonction de l’utilisation d’Adobe Campaign et du type de données dans la base de données. La valeur de l&#39;option peut être paramétrée pour chaque modèle de diffusion.
 * **[!UICONTROL Exclure les destinataires qui ne veulent plus être contactés]**, c&#39;est-à-dire les destinataires dont les adresses email se trouvent sur une liste bloquée (&#39;opt out&#39;). Cette option doit rester sélectionnée afin de respecter l&#39;éthique professionnelle du e-marketing.
-* **[!UICONTROL Exclure les destinataires en quarantaine]** : cette option permet d&#39;exclure de la cible les profils dont l&#39;adresse est en quarantaine. Il est vivement recommandé de conserver cette option sélectionnée. Découvrez la gestion des quarantaines dans [cette section](understanding-quarantine-management.md).
+* **[!UICONTROL Exclure les destinataires en quarantaine]** : cette option permet d&#39;exclure de la cible les profils dont l&#39;adresse est en quarantaine. Il est vivement recommandé de conserver cette option sélectionnée. Découvrez la gestion des quarantaines dans [cette section](../send/quarantines.md).
 * **[!UICONTROL Limiter la diffusion]** à un nombre donné de messages. Cette option permet de renseigner le nombre maximum de messages à envoyer. Si l&#39;audience cible dépasse le nombre de messages indiqué, une sélection aléatoire est appliquée à la cible. Pour envoyer tous les messages, conservez cette valeur à &quot;0&quot;.
 * **[!UICONTROL Conserver les enregistrements en double (même identifiant)]** : cette option permet d&#39;envoyer plusieurs diffusions à des destinataires qui répondent à plusieurs critères de ciblage.
 
