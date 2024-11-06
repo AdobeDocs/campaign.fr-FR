@@ -4,10 +4,10 @@ description: Prise en main des messages
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: a7225fb958ad168d89e09445f4fad27e7b6817aa
+source-git-commit: 5b2638927e39b6f839fb3a8639fe106d2c519fbf
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 88%
+source-wordcount: '1002'
+ht-degree: 74%
 
 ---
 
@@ -25,88 +25,44 @@ Pour envoyer des messages, vous devez créer une diffusion. Le mode de création
 >
 >Lors de la création d&#39;une diffusion, vous devez sélectionner un modèle. Les modèles par défaut sont disponibles pour chaque canal. Apprenez-en plus sur les modèles de diffusion sur [cette page](../send/create-templates.md).
 
-1. Messages ponctuels : vous pouvez envoyer des messages ponctuels à une audience. Découvrez comment envoyer votre premier message dans [cette section](create-message.md).
+1. **Messages ponctuels** - Vous pouvez envoyer des messages ponctuels à une audience. Découvrez comment envoyer votre premier message dans [cette section](create-message.md).
 
    ![](assets/send-email.png)
 
-1. Messages dans une campagne marketing : vous pouvez envoyer des messages dans le cadre d’une [campagne marketing](campaigns.md), définir un processus de validation, les envoyer et les suivre dans un tableau de bord consolidé. Découvrez comment dans [cette section](../../automation/campaigns/marketing-campaign-deliveries.md).
+1. **Messages dans une campagne marketing** - Vous pouvez envoyer des messages dans le contexte d’une [campagne marketing](campaigns.md), définir un processus de validation, les envoyer et les suivre dans un tableau de bord consolidé. Découvrez comment dans [cette section](../../automation/campaigns/marketing-campaign-deliveries.md).
 
    ![](assets/deliveries-in-a-campaign.png)
 
-1. Messages dans un workflow : vous pouvez envoyer des messages via un [workflow](../config/workflows.md) et automatiser vos diffusions. Découvrez comment dans [cette page](../../automation/workflow/delivery.md).
+1. **Messages dans un workflow** - Vous pouvez envoyer des messages via un [workflow](../config/workflows.md) et automatiser vos diffusions. Découvrez comment dans [cette page](../../automation/workflow/delivery.md).
 
    ![](assets/send-in-a-wf.png)
 
-1. Messages déclenchés : vous pouvez [Déclencher des messages](../send/transactional.md) à partir d’un événement. Les messages transactionnels (Message Center) sont le module Campaign conçu pour gérer les messages de déclenchement. Retrouvez les détails des étapes de configuration et d’envoi de messages transactionnels sur [cette page](../send/transactional.md).
+1. **Messages déclenchés** - Vous pouvez [Déclencher des messages](../send/transactional.md) à partir d’un événement. Les messages transactionnels (Message Center) sont le module Campaign conçu pour gérer les messages de déclenchement. Retrouvez les détails des étapes de configuration et d’envoi de messages transactionnels sur [cette page](../send/transactional.md).
 
-## Canal de communication {#gs-channel}
+## Canaux de communication {#gs-channel}
 
-Adobe Campaign v8 propose les canaux de diffusion suivants :
+Adobe Campaign v8 est fourni avec les canaux de diffusion répertoriés ci-dessous. Les canaux disponibles dans votre environnement dépendent de votre contrat. Veuillez vérifier votre contrat de licence.
 
-* **Canal e-mail** : les diffusions e-mail permettent d&#39;envoyer des e-mails personnalisés à la population cible. [En savoir plus](#gs-channel-email)
+* **Canal e-mail** : les diffusions e-mail permettent d&#39;envoyer des e-mails personnalisés à la population cible. [En savoir plus](../send/email.md)
 
-* **Canaux mobiles** : les diffusions sur canaux mobiles permettent d’envoyer des messages personnalisés sur des appareils mobiles à la population cible. [En savoir plus](#gs-channel-sms)
+* **Canaux mobiles** : les diffusions sur canaux mobiles permettent d’envoyer des messages personnalisés sur des appareils mobiles à la population cible. Vous pouvez envoyer des [SMS](../send/sms/sms.md) et des [messages LINE](../send/line.md) sur les mobiles.
 
-* **Canal des applications mobiles** : les diffusions d’applications mobiles vous permettent d’envoyer des notifications aux systèmes iOS et Android. [En savoir plus](#gs-channel-push)
+* **Canal d’application mobile** : vous pouvez utiliser Adobe Campaign pour envoyer des [ notifications push personnalisées et segmentées](../send/push.md) sur des appareils mobiles iOS et Android, par le biais d’applications dédiées. Une fois les procédures de configuration et d’intégration effectuées, les diffusions sur iOS et Android peuvent être créées et envoyées avec Adobe Campaign. Vous pouvez également concevoir et envoyer des notifications enrichies avec des images ou des vidéos aux appareils Android.
 
-* **Canal courrier** : les diffusions courrier permettent de générer un fichier d’extraction contenant les données relatives à la population cible. [En savoir plus](#gs-channel-direct)
+* **Canal courrier** : [Canal courrier](../send/direct-mail.md) est un canal hors ligne qui vous permet de créer, de personnaliser et de générer un fichier externe à partager avec vos fournisseurs de services postaux. Utilisez ce canal pour orchestrer les canaux en ligne et hors ligne dans vos parcours clientèle.
 
-  Les autres canaux sont décrits sur [cette page](#other-channels).
+  Lors de la préparation d’une diffusion courrier, Adobe Campaign génère un fichier comprenant tous les profils ciblés et les informations de contact sélectionnées (adresse postale, par exemple). Vous pouvez ensuite envoyer ce fichier à votre fournisseur de services postaux qui se chargera de l’envoi.
+
+
+* **Autres canaux** : Adobe Campaign est également fourni avec un modèle de diffusion Téléphone, qui est utilisé pour créer des diffusions externes. L’utilisation de ce canal implique la configuration de méthodologies dédiées pour traiter les fichiers de sortie. Les étapes de configuration sont identiques à celles du [canal Courrier](../send/direct-mail.md).
 
   >[!NOTE]
   >
-  >Le nombre de canaux disponibles dépend de votre contrat. Veuillez vérifier votre contrat de licence.
+  >Le canal téléphonique n’est pas un canal intégré. Sa mise en œuvre nécessite la participation d&#39;Adobe Consulting ou d&#39;un partenaire Adobe. Pour plus d&#39;informations, contactez votre représentant Adobe.
 
-### Canal e-mail {#gs-channel-email}
+  Les diffusions de type « Autre » utilisent un modèle technique spécifique qui n’exécute aucun processus. Elles permettent notamment de gérer des actions marketing exécutées en dehors de la plateforme Adobe Campaign.
 
-Le [canal Email](../send/direct-mail.md) est l&#39;un des principaux canaux dans Adobe Campaign. Il vous permet de planifier et d&#39;envoyer des emails personnalisés à des cibles spécifiques.
-
-Vous pouvez envoyer différents types d&#39;emails :
-
-* Emails uniques : emails que vous pouvez envoyer une fois à une cible définie. Ils sont généralement utilisés pour promouvoir un contenu spécifique qui ne sera préparé et envoyé qu&#39;une seule fois (newsletter, email promotionnel, etc.).
-* E-mails récurrents : dans une campagne, envoyez un même e-mail régulièrement et agrégez chaque envoi et ses rapports de façon périodique. Un même e-mail est envoyé, mais généralement à une cible différente, selon la cible éligible pour le jour de l&#39;envoi. Un exemple courant est un e-mail d&#39;anniversaire. Pour plus d&#39;informations, consultez la section [Diffusions récurrentes](../../automation/workflow/recurring-delivery.md).
-* Emails transactionnels : emails unitaires qui sont déclenchés en fonction du comportement de vos clients. Pour plus d’informations, consultez la section [Messages transactionnels](../send/transactional.md).
-
-Pour plus d’informations sur l’utilisation des diffusions et les recommandations relatives à celles-ci, consultez les [Bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=fr#sending-messages){target="_blank"} d’Adobe Campaign Classic.
-
-Pour plus d’informations sur les différents types de diffusion, consultez [cette section](#types-of-deliveries).
-
-### Canal mobile {#gs-channel-sms}
-
-Adobe Campaign permet de diffuser des [SMS](../send/sms/sms.md) et des messages [LINE](../send/line.md) sur des mobiles.
-
-Pour les SMS, vous pouvez créer, modifier et personnaliser des messages au format texte uniquement. Vous pouvez également prévisualiser les SMS avant leur envoi.
-
-Pour les messages LINE, vous pouvez envoyer du texte ou des images et des liens.
-
-Pour diffuser des SMS ou des messages LINE vers un téléphone mobile, il vous faut :
-
-* un compte externe paramétré sur le canal **[!UICONTROL Mobile (SMS)]** ou **[!UICONTROL LINE]**,
-* un modèle de diffusion SMS ou LINE correctement lié à ce compte externe.
-
-
-### Canal des notifications push {#gs-channel-push}
-
-Vous pouvez utiliser Adobe Campaign pour envoyer des [notifications push](../send/push.md) personnalisées et segmentées sur des appareils mobiles iOS et Android via des applications dédiées. Une fois les procédures de configuration et d’intégration effectuées, les diffusions sur iOS et Android peuvent être créées et envoyées avec Adobe Campaign. Vous pouvez également concevoir et envoyer des notifications enrichies avec des images ou des vidéos aux appareils Android.
-
-### Canal courrier {#gs-channel-direct}
-
-Le [canal Courrier](../send/direct-mail.md) est un canal hors ligne qui vous permet de créer, personnaliser et générer un fichier externe à partager avec vos fournisseurs de services postaux. Utilisez ce canal pour orchestrer les canaux en ligne et hors ligne dans vos parcours clientèle.
-
-Lors de la préparation d’une diffusion courrier, Adobe Campaign génère un fichier comprenant tous les profils ciblés et les informations de contact sélectionnées (adresse postale, par exemple). Vous pouvez ensuite envoyer ce fichier à votre fournisseur de services postaux qui se chargera de l’envoi.
-
-
-### Autres canaux {#other-channels}
-
-Adobe Campaign propose un modèle de diffusion téléphone, utilisé pour créer des diffusions externes. L’utilisation de ce canal implique la configuration de méthodologies dédiées pour traiter les fichiers de sortie. Les étapes de configuration sont identiques à celles du [canal Courrier](../send/direct-mail.md).
-
->[!NOTE]
->
->Le canal téléphonique n’est pas un canal intégré. Sa mise en œuvre nécessite la participation d&#39;Adobe Consulting ou d&#39;un partenaire Adobe. Pour plus d&#39;informations, contactez votre représentant Adobe.
-
-Les diffusions de type « Autre » utilisent un modèle technique spécifique qui n’exécute aucun processus. Elles permettent notamment de gérer des actions marketing exécutées en dehors de la plateforme Adobe Campaign.
-
-Ce canal n’a aucun mécanisme spécifique. Il s’agit d’un canal générique qui possède une option de routage de compte externe, un type de modèle de diffusion et une activité de workflow de campagne, tout comme n’importe quel autre canal de communication disponible dans Adobe Campaign. Ce canal a été conçu à des fins de description uniquement, pour définir par exemple les diffusions pour lesquelles vous souhaitez conserver une trace de la cible d’une campagne effectuée dans un outil autre qu’Adobe Campaign.
+  Ce canal n’a aucun mécanisme spécifique. Il s’agit d’un canal générique qui possède une option de routage de compte externe, un type de modèle de diffusion et une activité de workflow de campagne, tout comme n’importe quel autre canal de communication disponible dans Adobe Campaign. Ce canal a été conçu à des fins de description uniquement, pour définir par exemple les diffusions pour lesquelles vous souhaitez conserver une trace de la cible d’une campagne effectuée dans un outil autre qu’Adobe Campaign.
 
 ## Types de diffusion {#types-of-deliveries}
 

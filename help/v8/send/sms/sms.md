@@ -5,27 +5,27 @@ feature: SMS
 role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: 5b2638927e39b6f839fb3a8639fe106d2c519fbf
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 100%
+source-wordcount: '251'
+ht-degree: 79%
 
 ---
 
 # Commencer avec les SMS {#gs-sms-channel}
 
-Utilisez Adobe Campaign pour envoyer des messages SMS personnalisés.
+Adobe Campaign vous permet de diffuser des [SMS](../send/sms/sms.md) personnalisés sur des mobiles.
+
+Pour les SMS, vous pouvez créer, modifier et personnaliser des messages au format texte uniquement. Vous pouvez également prévisualiser les SMS avant leur envoi.
 
 >[!NOTE]
 >
->Adobe Campaign permet également d&#39;envoyer des notifications push sur les mobiles, via son option **Canal des applications mobiles Adobe Campaign (NMAC)**. En savoir plus dans [cette section](../push.md).
+>Vous pouvez également utiliser Adobe Campaign pour envoyer des messages [LINE](../send/line.md), avec du texte et/ou des images et des liens.
 
-La simplicité et la facilité d’utilisation des SMS en font un canal de communication très précieux en plus de sa robustesse et de sa compatibilité inégalée sur des milliards de terminaux.
+Pour diffuser des SMS vers un téléphone mobile avec Adobe Campaign, vous devez :
 
-Il existe deux façons principales d’envoyer un SMS :
-
-* Envoyez-le manuellement à partir d’un téléphone. C’est la façon habituelle de communiquer directement entre les personnes.
-* Envoyez-le depuis Internet. C’est la manière qu’Adobe Campaign utilise pour envoyer des messages. Pour cela, vous avez besoin d’un fournisseur de services de SMS destiné à connecter Internet au réseau mobile.
+* un compte externe paramétré sur le canal **[!UICONTROL Mobile (SMS)]** ou **[!UICONTROL LINE]**,
+* Un modèle de diffusion SMS correctement associé à ce compte externe.
 
 Vous pouvez voir dans cette documentation les étapes de configuration, d’envoi et de surveillance d’une diffusion SMS :
 

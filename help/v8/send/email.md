@@ -5,9 +5,9 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: cf292ecd7d30862d7d195536ecc5be709fe037b3
+source-git-commit: 5b2638927e39b6f839fb3a8639fe106d2c519fbf
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '534'
 ht-degree: 97%
 
 ---
@@ -18,7 +18,7 @@ Les diffusions e-mail permettent d’envoyer des e-mails personnalisés à la po
 
 Découvrez les étapes clés pour créer et configurer une diffusion dans [cette page](../start/create-message.md).
 
-## Création de votre première diffusion e-mail
+## Créer une diffusion par e-mail
 
 Créez des e-mails personnalisés et pertinents qui sont également conformes au reste de l&#39;expérience client.
 
