@@ -5,9 +5,9 @@ feature: SMS
 role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: c95bdc13237e67b885b6f9aa495a4753ca72a90e
+source-git-commit: 95dca48ae0e2ee82b80464cdf9414538776969ad
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '159'
 ht-degree: 20%
 
 ---
@@ -26,7 +26,7 @@ Une fois cette configuration effectuée, vérifiez votre connexion SMPP et sache
 
 >[!NOTE]
 >
->Vous pouvez également utiliser Adobe Campaign pour envoyer des messages [LINE](../../send/line.md), avec du texte et/ou des images et des liens.
+>Vous pouvez également utiliser Adobe Campaign pour envoyer des [notifications push](../push.md) et des [messages LINE](../line.md) vers des appareils mobiles.
 
 
 <table style="table-layout:fixed"><tr style="border: 0;">
