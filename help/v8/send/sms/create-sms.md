@@ -4,9 +4,9 @@ description: Découvrez comment créer une diffusion SMS
 feature: SMS
 role: User
 level: Beginner, Intermediate
-source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
+source-git-commit: 0ef082b49261d0d2de5a6891a4a7f0cf5aafa221
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '177'
 ht-degree: 72%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 72%
 
 Pour créer une diffusion SMS, procédez comme suit :
 
-1. Créez une nouvelle diffusion et sélectionnez le modèle de diffusion SMS que vous avez créé pour vos envois SMS. [En savoir plus ici](sms-mid-sourcing.md#sms-delivery-template).
+1. Créez une nouvelle diffusion et sélectionnez le [modèle de diffusion SMS](sms-mid-sourcing.md#sms-delivery-template) que vous avez créé pour vos envois de SMS.
 
    ![](assets/sms_create.png){zoomable="yes"}
 
-   En savoir plus sur les étapes de création de diffusion dans [cette page](../../start/create-message.md).
+   Les étapes de création d&#39;une diffusion sont détaillées dans [cette page](../../start/create-message.md).
 
 <!-- * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
 * For mid-sourcing infrastructure, -->
@@ -31,7 +31,7 @@ Pour créer une diffusion SMS, procédez comme suit :
 
 1. Vous pouvez archiver le bouton **[!UICONTROL Propriétés]** qui est configuré selon vos besoins. [En savoir plus sur l’onglet SMS](sms-delivery-settings.md#sms-tab)
 
-![](assets/sms_settings.png){zoomable="yes"}
+   ![](assets/sms_settings.png){zoomable="yes"}
 
 1. [Définissez le contenu](sms-content.md) de votre diffusion.
 
