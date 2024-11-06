@@ -5,7 +5,7 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
 workflow-type: tm+mt
 source-wordcount: '3650'
 ht-degree: 100%
@@ -16,16 +16,13 @@ ht-degree: 100%
 
 Adobe Campaign utilise le protocole SMPP pour envoyer des SMS à un fournisseur de services.
 
->[!IMPORTANT]
->
->Adobe Campaign prend en charge le protocole SMPP version 3.4.
-
-
 Le connecteur SMS dans Adobe Campaign offre de nombreuses options pour adapter son comportement afin d’être compatible avec la plupart des fournisseurs SMPP, qui ont tendance à s’écarter un peu de la spécification officielle.
 
 >[!IMPORTANT]
 >
->La configuration d&#39;une connexion à un nouveau fournisseur peut nécessiter des compétences techniques, des connaissances relatives au protocole TCP, au binaire, à la représentation hexadécimale et aux encodages de texte. Il faudra également une coopération active avec le fournisseur.
+>* Adobe Campaign prend en charge le protocole SMPP version 3.4.
+>
+>* La configuration d&#39;une connexion à un nouveau fournisseur peut nécessiter des compétences techniques, des connaissances relatives au protocole TCP, au binaire, à la représentation hexadécimale et aux encodages de texte. Il faudra également une coopération active avec le fournisseur.
 
 L’équipement réseau côté fournisseur SMS est souvent appelé SMSC.
 

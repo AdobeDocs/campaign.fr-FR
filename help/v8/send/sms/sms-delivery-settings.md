@@ -6,10 +6,10 @@ role: User
 level: Beginner, Intermediate
 badge: label="Disponibilité limitée" type="Informative"
 exl-id: c4d500ef-2339-491f-9ae2-9bfaf72088a9
-source-git-commit: 8dffc24ff859ded70ea9c5b9ede39512c1543e74
+source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 100%
+source-wordcount: '813'
+ht-degree: 98%
 
 ---
 
@@ -23,13 +23,12 @@ ht-degree: 100%
 
 Les paramètres techniques nécessaires à une diffusion SMS sont les suivants :
 
-* Routage : [le compte externe SMPP](smpp-external-account.md#smpp-connection-settings)
-
-* [Le ](#sms-tab)
+* Le compte externe SMPP pour le routage des messages. [En savoir plus](smpp-external-account.md#smpp-connection-settings)
+* Configurez l&#39;onglet SMS . [Voici comment procéder](#sms-tab)
 
 Vous pouvez configurer tout ceci dans un modèle de diffusion afin d’éviter d’effectuer le paramétrage pour chaque création de diffusion SMS.
 
-## Configurer l’onglet **[!UICONTROL SMS]** {#sms-tab}
+## Configuration de l’onglet SMS {#sms-tab}
 
 ![](assets/send_settings.png){zoomable="yes"}
 
@@ -97,25 +96,3 @@ Le tableau répertorie les paramètres facultatifs à envoyer avec chaque messag
   >
   >Les formats binaires sont toujours codés dans un format big-endian.
 
-## Créer une diffusion SMS {#sms-delivery}
-
-Pour créer une diffusion SMS, procédez comme suit :
-
-1. Créez une diffusion, par exemple à partir du tableau de bord de la diffusion, ou dans votre dossier de diffusion dans **[!UICONTROL Explorateur]**.  Par défaut, elle sera intitulée « Diffusion e-mail ».
-
-1. Sélectionnez le modèle de diffusion que vous avez créé pour vos envois SMS. [En savoir plus ici](sms-mid-sourcing.md#sms-delivery-template).
-
-   ![](assets/sms_create.png){zoomable="yes"}
-
-<!-- * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
-* For mid-sourcing infrastructure, -->
-
-1. Renommez votre diffusion dans le champ **[!UICONTROL Libellé]** et ajoutez des informations dans le champ **[!UICONTROL Code diffusion]** et la liste **[!UICONTROL Nature]** si nécessaire pour le suivi. Vous pouvez également ajouter une **[!UICONTROL description]** à votre diffusion.
-
-1. Cliquez sur le bouton **[!UICONTROL Continuer]**. Désormais, vous disposez de tous les paramètres de votre modèle dans votre diffusion.
-
-1. Vous pouvez archiver le bouton **[!UICONTROL Propriétés]** qui est configuré selon vos besoins. [En savoir plus sur l’onglet SMS](#sms-tab)
-
-![](assets/sms_settings.png){zoomable="yes"}
-
-Vous pouvez maintenant configurer votre [contenu SMS](sms-content.md).
