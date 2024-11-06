@@ -4,9 +4,9 @@ description: Prise en main des messages
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 0ff645a87700c038b78fb4cc45062822d6d97148
+source-git-commit: a7225fb958ad168d89e09445f4fad27e7b6817aa
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1294'
 ht-degree: 88%
 
 ---
@@ -25,31 +25,21 @@ Pour envoyer des messages, vous devez créer une diffusion. Le mode de création
 >
 >Lors de la création d&#39;une diffusion, vous devez sélectionner un modèle. Les modèles par défaut sont disponibles pour chaque canal. Apprenez-en plus sur les modèles de diffusion sur [cette page](../send/create-templates.md).
 
-### Messages ponctuels {#msg-single}
+1. Messages ponctuels : vous pouvez envoyer des messages ponctuels à une audience. Découvrez comment envoyer votre premier message dans [cette section](create-message.md).
 
-Vous pouvez envoyer manuellement des messages ponctuels à la cible principale. Découvrez comment envoyer votre premier message dans [cette section](create-message.md)
+   ![](assets/send-email.png)
 
-![](assets/send-email.png)
+1. Messages dans une campagne marketing : vous pouvez envoyer des messages dans le cadre d’une [campagne marketing](campaigns.md), définir un processus de validation, les envoyer et les suivre dans un tableau de bord consolidé. Découvrez comment dans [cette section](../../automation/campaigns/marketing-campaign-deliveries.md).
 
-### Messages dans une campagne marketing {#msg-campaign}
+   ![](assets/deliveries-in-a-campaign.png)
 
-Vous pouvez envoyer des messages dans le cadre d&#39;une [campagne marketing](campaigns.md), définir un processus de validation, les envoyer et les suivre dans un tableau de bord consolidé. Découvrez comment dans [cette section](../../automation/campaigns/marketing-campaign-deliveries.md)
+1. Messages dans un workflow : vous pouvez envoyer des messages via un [workflow](../config/workflows.md) et automatiser vos diffusions. Découvrez comment dans [cette page](../../automation/workflow/delivery.md).
 
-![](assets/deliveries-in-a-campaign.png)
+   ![](assets/send-in-a-wf.png)
 
-### Messages dans un workflow {#msg-wf}
+1. Messages déclenchés : vous pouvez [Déclencher des messages](../send/transactional.md) à partir d’un événement. Les messages transactionnels (Message Center) sont le module Campaign conçu pour gérer les messages de déclenchement. Retrouvez les détails des étapes de configuration et d’envoi de messages transactionnels sur [cette page](../send/transactional.md).
 
-Vous pouvez envoyer des messages via un [workflow](../config/workflows.md) et automatiser vos diffusions. Découvrez comment dans [cette page](../../automation/workflow/delivery.md)
-
-![](assets/send-in-a-wf.png)
-
-### Messages déclenchés {#msg-trigger}
-
-Vous pouvez [déclencher des messages](../send/transactional.md) à partir d&#39;un événement. Les messages transactionnels (Message Center) sont le module Campaign conçu pour gérer les messages de déclenchement.  En savoir plus sur la fonctionnalité de messages transactionnels dans [cette section](../architecture/architecture.md#transac-msg-archi).
-
-Retrouvez les détails des étapes de configuration et d’envoi de messages transactionnels sur [cette page](../send/transactional.md).
-
-## Choisir votre canal {#gs-channel}
+## Canal de communication {#gs-channel}
 
 Adobe Campaign v8 propose les canaux de diffusion suivants :
 
@@ -60,7 +50,6 @@ Adobe Campaign v8 propose les canaux de diffusion suivants :
 * **Canal des applications mobiles** : les diffusions d’applications mobiles vous permettent d’envoyer des notifications aux systèmes iOS et Android. [En savoir plus](#gs-channel-push)
 
 * **Canal courrier** : les diffusions courrier permettent de générer un fichier d’extraction contenant les données relatives à la population cible. [En savoir plus](#gs-channel-direct)
-
 
   Les autres canaux sont décrits sur [cette page](#other-channels).
 
@@ -119,7 +108,7 @@ Les diffusions de type « Autre » utilisent un modèle technique spécifique 
 
 Ce canal n’a aucun mécanisme spécifique. Il s’agit d’un canal générique qui possède une option de routage de compte externe, un type de modèle de diffusion et une activité de workflow de campagne, tout comme n’importe quel autre canal de communication disponible dans Adobe Campaign. Ce canal a été conçu à des fins de description uniquement, pour définir par exemple les diffusions pour lesquelles vous souhaitez conserver une trace de la cible d’une campagne effectuée dans un outil autre qu’Adobe Campaign.
 
-## Choisir le type de diffusion {#types-of-deliveries}
+## Types de diffusion {#types-of-deliveries}
 
 Campaign contient trois types d&#39;objets de diffusion :
 
@@ -147,7 +136,7 @@ Par exemple, si vous exécutez ce type d&#39;activité une fois par mois, vous o
 
 Les diffusions au fil de l&#39;eau sont créées dans des workflows via l&#39;activité [Diffusion au fil de l&#39;eau](../../automation/workflow/continuous-delivery.md).
 
-## Ajouter de la personnalisation {#personalization}
+## Fonctionnalités de Personalization {#personalization}
 
 Les messages diffusés par Adobe Campaign peuvent être personnalisés de différentes façons. [En savoir plus sur les fonctionnalités de personnalisation](../send/personalize.md)
 
@@ -158,7 +147,7 @@ Vous pouvez ainsi :
 * Créer du contenu conditionnel. [En savoir plus](../send/conditions.md)
 
 
-## Envoi et suivi {#gs-tracking-logs}
+## Tracking et suivi {#gs-tracking-logs}
 
 La surveillance de vos diffusions après leur envoi est une étape clé pour vous assurer que vos campagnes marketing sont efficaces et atteignent vos clients. Vous pouvez ainsi surveiller une diffusion après son envoi et comprendre la gestion des diffusions en échec et des quarantaines.
 
