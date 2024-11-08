@@ -5,10 +5,10 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
-source-git-commit: 6d54f072ad0e67b435cd6e03433fa9ddd0794dea
+source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 100%
+source-wordcount: '478'
+ht-degree: 93%
 
 ---
 
@@ -37,7 +37,7 @@ Vous pouvez personnaliser le contenu du message en procédant comme suit :
 
 * Créer du **contenu conditionnel**
 
-  Configurez du contenu conditionnel et ajoutez une touche de personnalisation dynamique (basée sur le profil du ou de la destinataire, par exemple). Lorsqu’une condition est rencontrée, des blocs de texte et/ou des images sont alors insérés. [En savoir plus](conditions.md).
+  Configurez du contenu conditionnel pour ajouter une personnalisation dynamique basée notamment sur le profil de la personne destinataire. Lorsqu’une condition est rencontrée, des blocs de texte et/ou des images sont alors insérés. [En savoir plus](conditions.md).
 
 <!--* Add **personalized offers**
     
@@ -47,13 +47,13 @@ Vous pouvez personnaliser le contenu du message en procédant comme suit :
 
 ## Mécanisme de sécurisation et recommandations{#perso-guardrails}
 
-### Délai d’expiration de la personnalisation{#perso-timeout}
+### Délai d’expiration de la personnalisation {#perso-timeout}
 
 Pour améliorer la protection de la diffusion, vous pouvez définir un délai d’expiration pour la phase de personnalisation.
 
 Dans l’onglet **[!UICONTROL Livraison]** des **[!UICONTROL Propriétés de diffusion]**, sélectionnez une valeur maximale en secondes pour l’option **[!UICONTROL Durée maximale d’exécution de la personnalisation]**.
 
-Lors de l’aperçu ou de l’envoi, si la phase de personnalisation dépasse la durée maximale définie dans ce champ, le processus est abandonné avec un message d’erreur et la diffusion échoue.
+Lors de l&#39;aperçu ou de l&#39;envoi, si la phase de personnalisation dépasse la durée maximale définie dans ce champ, le processus est abandonné avec un message d&#39;erreur et la diffusion échoue.
 
 La valeur par défaut est de 5 secondes.
 

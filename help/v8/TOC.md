@@ -5,9 +5,9 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
+source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '688'
 ht-degree: 99%
 
 ---
@@ -44,6 +44,7 @@ ht-degree: 99%
 + Envoyer des messages{#send}
    + [Prise en main des messages](start/gs-message.md)
    + [Créer votre première diffusion](start/create-message.md)
+   + [Bonnes pratiques relatives à la diffusion](start/delivery-best-practices.md)
    + E-mails {#emails}
       + [Concevoir et valider des e-mails](send/email.md)
       + [Lien vers la page miroir](send/mirror-page.md)
@@ -94,7 +95,7 @@ ht-degree: 99%
       + [Diffusions en échec](send/delivery-failures.md)
    + [Utiliser des modèles de diffusion](send/create-templates.md)
    + Messages transactionnels {#real-time}
-      + [Prise en main des messages transactionnels](send/transactional.md)
+      + [Commencer avec les messages transactionnels](send/transactional.md)
       + [Créer et publier votre modèle](send/transactional-template.md)
       + Gestion des événements {#event}
          + [Collecter et traiter les événements](send/event-processing.md)

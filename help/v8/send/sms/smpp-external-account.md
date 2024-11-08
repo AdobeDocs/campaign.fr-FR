@@ -5,7 +5,7 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
-source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
+source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
 workflow-type: tm+mt
 source-wordcount: '3650'
 ht-degree: 100%
@@ -71,7 +71,7 @@ Lorsque cette option est activée, des journaux supplémentaires sont générés
 
 ![](assets/smpp_channel_settings.png){zoomable="yes"}
 
-### Autoriser la translittération des caractères
+### Autoriser la translittération des caractères {#smpp-transliteration}
 
 La translittération est le processus de recherche de caractères équivalents à ceux qui sont manquants. Par exemple, le caractère français « ê » (avec un accent circonflexe) est absent de l’encodage GSM, mais il peut être remplacé par un « e » sans trop nuire à la lisibilité.
 
