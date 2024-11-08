@@ -5,10 +5,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: ad96c126836981f861c246eafa2ec7d2c0e179dc
+source-git-commit: 55b752713a29c035680dd39e42422b1743e15269
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 39%
+source-wordcount: '1612'
+ht-degree: 38%
 
 ---
 
@@ -176,15 +176,12 @@ Le BAT est un message spécifique qui permet de tester un message avant son envo
 
 Pour plus d&#39;informations sur les destinataires du BAT et l&#39;envoi, consultez [cette section](../send/preview-and-proof.md#send-proofs).
 
-![](../send/assets/do-not-localize/how-to-video.png) [Découvrez cette fonctionnalité en vidéo](#seeds-and-proofs-video)
-
 
 #### Tutoriel vidéo {#seeds-and-proofs-video}
 
 Dans cette vidéo, vous apprendrez comment ajouter des adresses de contrôle et des BAT à un email existant et comment l’envoyer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
-
 
 D’autres vidéos pratiques sur Campaign Classic sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=fr).
 
@@ -200,7 +197,7 @@ Pour cela :
 
 >[!IMPORTANT]
 >
->Les deux étapes ci-dessus DOIVENT être exécutées après chaque modification du contenu du message.
+>Les deux étapes au-dessus de **doivent être exécutées** après chaque modification du contenu du message.
 
 
 ## Configurer et envoyer la diffusion {#configuring-and-sending-the-delivery}
