@@ -4,7 +4,7 @@ description: Découvrez les bonnes pratiques lors de la conception et de l’env
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: b4fad76b43a77909a4ea2c0877527af80027681a
+source-git-commit: 10af828319569ad9aeeecc809bc213f9608791ac
 workflow-type: tm+mt
 source-wordcount: '2903'
 ht-degree: 76%
@@ -151,7 +151,7 @@ Le lien de désabonnement est indispensable. Il doit être visible, valide et le
 
 **Conseil** : comme une erreur humaine est toujours possible, vérifiez que le lien d’exclusion fonctionne correctement avant chaque envoi. Par exemple, lors de l&#39;envoi du BAT, vérifiez que le lien est valide, que le formulaire est en ligne et que le champ `No longer contact this recipient ` a été remplacé par `Yes`.
 
-Découvrez comment insérer un lien d&#39;opt-out [dans cette section](personalization-blocks.md#personalization-blocks-example).
+Découvrez comment insérer un lien d&#39;opt-out [dans cette section](../send/personalization-blocks.md).
 
 ### Taille des emails
 
@@ -328,7 +328,7 @@ Vous pouvez définir un processus de validation complet, impliquant des opérate
 
 #### Utiliser des vagues
 
-Vous pouvez augmenter progressivement le volume envoyé à l&#39;aide de vagues. Cela évitera que les emails soient marqués comme spam ou pour limiter le nombre de messages par jour. Grâce aux vagues, vous pouvez répartir les envois en plusieurs lots au lieu d’envoyer de gros volumes de messages en même temps. En savoir plus à ce sujet dans [cette section](../send/configure-and-send.mdsending-using-multiple-waves).
+Vous pouvez augmenter progressivement le volume envoyé à l&#39;aide de vagues. Cela évitera que les emails soient marqués comme spam ou pour limiter le nombre de messages par jour. Grâce aux vagues, vous pouvez répartir les envois en plusieurs lots au lieu d’envoyer de gros volumes de messages en même temps. En savoir plus à ce sujet dans [cette section](../send/configure-and-send.md#sending-using-multiple-waves).
 
 #### Définir la priorité des messages
 
