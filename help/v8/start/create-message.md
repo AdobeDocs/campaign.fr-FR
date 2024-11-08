@@ -5,10 +5,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 1bf3c4b2d0c8d9b1bdbc82a9047c52c0d80cd997
+source-git-commit: ad96c126836981f861c246eafa2ec7d2c0e179dc
 workflow-type: tm+mt
-source-wordcount: '1614'
-ht-degree: 45%
+source-wordcount: '1617'
+ht-degree: 39%
 
 ---
 
@@ -24,7 +24,7 @@ Les étapes clés de la création d&#39;une diffusion ponctuelle sont les suivan
 
 1. **Sélectionnez la population cible**. [En savoir plus](#target-population)
 
-Vous pouvez ensuite préparer, tester, envoyer et surveiller vos messages.
+Vous pouvez ensuite préparer, tester, envoyer et surveiller vos messages avec Adobe Campaign.
 
 >[!NOTE]
 >
@@ -34,13 +34,14 @@ Vous pouvez ensuite préparer, tester, envoyer et surveiller vos messages.
 
 Pour créer une diffusion, procédez comme suit :
 
-1. Cliquez sur **[!UICONTROL Créer]** au-dessus de la liste des diffusions. Lorsque vous créez une diffusion, vous devez sélectionner le canal de diffusion. Pour cela, sélectionnez le modèle de diffusion correspondant, à partir de la liste déroulante du champ **[!UICONTROL Modèle de diffusion]**.
+1. Accédez à la liste des diffusions et cliquez sur **[!UICONTROL Créer]**.
+1. Sélectionnez le canal de diffusion. Pour cela, choisissez le modèle de diffusion approprié dans la liste déroulante.
 
    ![](../send/assets/select-the-new-template.png)
 
-   Un modèle intégré est fourni pour chaque canal installé : courrier, email, téléphone, canal mobile (SMS), X (Twitter), etc. Les canaux disponibles dans la liste dépendent de votre contrat de licence.
+   Un modèle intégré est fourni pour chaque canal installé : email, téléphone, canaux mobiles (push/SMS), courrier, X (Twitter), etc. Les canaux disponibles dans la liste dépendent de votre contrat de licence.
 
-   Vous pouvez créer de nouveaux modèles de diffusion afin de préconfigurer des paramètres spécifiques en fonction de vos besoins. Pour plus d’informations sur les modèles, consultez [cette section](../send/create-templates.md).
+   Vous pouvez créer de nouveaux modèles de diffusion afin de préconfigurer des paramètres spécifiques en fonction de vos besoins.  [En savoir plus](../send/create-templates.md).
 
 1. Saisissez un nom pour le diffusion dans le champ **[!UICONTROL Libellé]**.
 
@@ -48,7 +49,7 @@ Pour créer une diffusion, procédez comme suit :
 
 1. (Facultatif) Ajoutez une description dans le champ **[!UICONTROL Description]** .
 1. (Facultatif) Sélectionnez la nature de la diffusion dans le champ correspondant. Cette information est notamment utile pour le rtacking des diffusions : vous pouvez filtrer sur ce critère dans la liste des diffusions ou construire des requêtes en utilisant ce critère de sélection.
-1. Cliquez sur **[!UICONTROL Continuer]** pour valider ces informations et afficher la fenêtre de configuration du message.
+1. Cliquez sur **[!UICONTROL Continuer]** pour afficher la fenêtre de contenu du message.
 
 ## Définir le contenu de la diffusion {#content-of-the-delivery}
 
@@ -126,7 +127,7 @@ Pour sélectionner les destinataires d’une diffusion, procédez comme suit :
 
    ![](assets/target-remove-criterion.png)
 
-#### Sélection de destinataires externes {#selecting-external-recipients}
+### Sélection de destinataires externes {#selecting-external-recipients}
 
 Vous pouvez envoyer des messages aux profils qui ne sont pas stockés dans la base de données, mais dans un fichier externe. Par exemple, pour envoyer une diffusion à des destinataires importés depuis un fichier texte, procédez comme suit :
 
@@ -141,25 +142,31 @@ Vous pouvez envoyer des messages aux profils qui ne sont pas stockés dans la ba
 
 >[!CAUTION]
 >
->Lors de la définition du contenu du message pour une diffusion email, n&#39;incluez pas le lien vers la page miroir : elle ne peut pas être générée dans ce mode de diffusion.
+>Lors de la définition du contenu du message pour une diffusion email à des destinataires externes, n&#39;incluez pas le lien vers la page miroir : elle ne peut pas être générée dans ce mode de diffusion.
 
-#### Définition des paramètres d’exclusion {#define-exclusion-settings}
+### Paramètres d&#39;exclusions {#define-exclusion-settings}
 
-Lors de la définition de la cible d&#39;une diffusion, l&#39;onglet **[!UICONTROL Exclusions]** permet de limiter le nombre de messages. Bien que les paramètres par défaut soient recommandés, vous pouvez adapter les paramètres selon vos besoins. Ces options ne doivent toutefois être modifiées que par un utilisateur expert afin d&#39;éviter toute mauvaise utilisation et erreur.
+Lors de la définition de l&#39;[audience d&#39;une diffusion](#target-population), l&#39;onglet **[!UICONTROL Exclusions]** est utilisé pour limiter le nombre de messages. Bien que les paramètres par défaut soient recommandés, vous pouvez adapter les paramètres selon vos besoins. Ces options ne doivent toutefois être modifiées que par un utilisateur expert afin d&#39;éviter toute mauvaise utilisation et erreur.
 
-Vous pouvez choisir d&#39;exclure les adresses pour lesquelles un nombre d&#39;erreurs consécutives est atteint, ou dont l&#39;indice de qualité est inférieur au seuil spécifié dans cette fenêtre. Vous pouvez également choisir d&#39;autoriser ou non les adresses non-qualifiées, c&#39;est-à-dire celles pour lesquelles aucune information n&#39;a été remontée.
+>[!CAUTION]
+>
+>En tant qu’utilisateur expert, vous pouvez modifier ces paramètres pour des cas d’utilisation spécifiques, mais Adobe recommande de conserver la configuration par défaut.
 
-Cliquez sur le lien **[!UICONTROL Editer]** pour modifier la configuration par défaut.
+Vous pouvez exclure les adresses qui ont fait l&#39;objet d&#39;un certain nombre d&#39;erreurs consécutives, ou dont l&#39;indice de qualité est inférieur au seuil spécifié dans cette fenêtre. Vous pouvez également choisir d&#39;autoriser ou non les adresses non-qualifiées, c&#39;est-à-dire celles pour lesquelles aucune information n&#39;a été remontée.
+
+Pour modifier la configuration par défaut, cliquez sur le lien **[!UICONTROL Editer...]** .
 
 ![](assets/target-exclusion-settings.png)
 
-Les options disponibles sont les suivantes :
++++ Voir les options disponibles
 
 * **[!UICONTROL Exclure les adresses en double lors de la diffusion]** : cette option est active par défaut et supprime les adresses email en double lors de la diffusion. La stratégie appliquée peut varier en fonction de l’utilisation d’Adobe Campaign et du type de données dans la base de données. La valeur de l&#39;option peut être paramétrée pour chaque modèle de diffusion.
 * **[!UICONTROL Exclure les destinataires qui ne veulent plus être contactés]**, c&#39;est-à-dire les destinataires dont les adresses email se trouvent sur une liste bloquée (&#39;opt out&#39;). Cette option doit rester sélectionnée afin de respecter l&#39;éthique professionnelle du e-marketing.
 * **[!UICONTROL Exclure les destinataires en quarantaine]** : cette option permet d&#39;exclure de la cible les profils dont l&#39;adresse est en quarantaine. Il est vivement recommandé de conserver cette option sélectionnée. Découvrez la gestion des quarantaines dans [cette section](../send/quarantines.md).
 * **[!UICONTROL Limiter la diffusion]** à un nombre donné de messages. Cette option permet de renseigner le nombre maximum de messages à envoyer. Si l&#39;audience cible dépasse le nombre de messages indiqué, une sélection aléatoire est appliquée à la cible. Pour envoyer tous les messages, conservez cette valeur à &quot;0&quot;.
 * **[!UICONTROL Conserver les enregistrements en double (même identifiant)]** : cette option permet d&#39;envoyer plusieurs diffusions à des destinataires qui répondent à plusieurs critères de ciblage.
++++
+
 
 ### Sélection des destinataires des messages de BAT {#select-the-proof-target}
 
