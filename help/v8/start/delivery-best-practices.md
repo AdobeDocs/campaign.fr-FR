@@ -4,10 +4,11 @@ description: Découvrez les bonnes pratiques lors de la conception et de l’env
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 10af828319569ad9aeeecc809bc213f9608791ac
+exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
+source-git-commit: 61c86c3c9d6dbbabf2d5174b8b7b1721b38280cb
 workflow-type: tm+mt
-source-wordcount: '2903'
-ht-degree: 76%
+source-wordcount: '2924'
+ht-degree: 74%
 
 ---
 
@@ -44,7 +45,7 @@ Découvrez comment démarrer une nouvelle plateforme dans le [Guide des bonnes p
 Les recommandations techniques sont répertoriées dans [cette section](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations){target="_blank"}.
 
 
-**Conseils**
++++ **Lisez quelques bonnes pratiques**
 
 * Si vous disposez d&#39;une liste d&#39;adresses invalides, Adobe recommande de l&#39;importer dans la table des quarantaines, par le biais de **[!UICONTROL Administration]** > **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Gestion des NP@I]** > **[!UICONTROL NP@I et Adresses]**.
 
@@ -52,6 +53,9 @@ Les recommandations techniques sont répertoriées dans [cette section](https://
 Le mode de gestion des adresses en erreur par Adobe Campaign dépend du type d’erreur retourné. [En savoir plus sur les quarantaines](../send/quarantines.md)
 
 * Certains fournisseurs d&#39;accès à internet considèrent automatiquement les e-mails comme du spam si le taux d&#39;adresses non valides est trop élevé. La quarantaine permet donc d&#39;éviter d&#39;être ajouté à une liste bloquée par ces fournisseurs.
+
++++
+
 
 
 ### Mécanisme de double opt-in {#double-opt-in}
@@ -74,6 +78,8 @@ Veillez à appliquer les directives suivantes :
 * Une adresse erronée peut causer un refus de la part du serveur receveur. Vous devez vous assurer qu’une adresse correcte est bien renseignée.
 * L&#39;adresse doit identifier explicitement l&#39;expéditeur. Le domaine doit appartenir à l&#39;expéditeur et être enregistré auprès de lui.
 * Adobe recommande de créer des comptes email qui correspondent aux adresses indiquées pour les envois et les réponses. Parlez-en avec votre administrateur du système de messagerie.
+
++++ **Configuration des adresses dans l’interface utilisateur de Campaign**
 
 Pour configurer les adresses dans l’interface de Campaign, procédez comme suit :
 
@@ -119,7 +125,9 @@ Vous pouvez préparer les données de personnalisation dans un workflow afin d�
 
 ### Créer du contenu optimisé {#build-optimized-content}
 
-Lors de la création de vos emails, tenez compte des bonnes pratiques générales suivantes :
+Lors de la création de vos emails, appliquez les bonnes pratiques générales pour le contenu des emails.
+
++++ **Lisez quelques bonnes pratiques**
 
 * Gardez le design de vos e-mails simple
 
@@ -131,15 +139,24 @@ Lors de la création de vos emails, tenez compte des bonnes pratiques générale
 
 * Encodez les caractères spéciaux
 
++++
+
+
 ### Objet
 
-Travaillez sur la [ligne d&#39;objet](../send/personalization-fields.md#personalization-fields-uc) pour améliorer les taux d&#39;ouverture :
+Travaillez sur l&#39;email [objet](../send/personalization-fields.md#personalization-fields-uc) pour améliorer les taux d&#39;ouverture.
+
+
++++ **Lisez quelques bonnes pratiques**
+
 
 * Évitez les objets trop longs. Utilisez 50 caractères au maximum
 
 * Évitez de répéter des mots tels que &quot;gratuit&quot; ou &quot;offre&quot; qui peuvent être considérés comme des messages indésirables
 
 * Évitez les majuscules et les caractères spéciaux tels que &quot;!&quot;, &quot;£&quot;, &quot;€&quot;, &quot;$&quot;
+
++++
 
 ### Page miroir
 
@@ -149,15 +166,20 @@ Incluez toujours un lien de page miroir. La partie supérieure de l&#39;e-mail c
 
 Le lien de désabonnement est indispensable. Il doit être visible, valide et le formulaire fonctionnel. Par défaut, lors de l’analyse du message, une **[!UICONTROL approbation du lien de désabonnement]** [ ](../../automation/campaign-opt/control-rules.md) vérifie si un lien de désinscription a été inclus et génère un avertissement en cas d’absence.
 
-**Conseil** : comme une erreur humaine est toujours possible, vérifiez que le lien d’exclusion fonctionne correctement avant chaque envoi. Par exemple, lors de l&#39;envoi du BAT, vérifiez que le lien est valide, que le formulaire est en ligne et que le champ `No longer contact this recipient ` a été remplacé par `Yes`.
-
 Découvrez comment insérer un lien d&#39;opt-out [dans cette section](../send/personalization-blocks.md).
+
++++ **Appliquez cette bonne pratique**
+
+Comme une erreur humaine est toujours possible, vérifiez que le lien de désinscription fonctionne correctement avant chaque envoi. Par exemple, lors de l&#39;envoi du BAT, vérifiez que le lien est valide, que le formulaire est en ligne et que le champ `No longer contact this recipient ` a été remplacé par `Yes`.
+
++++
 
 ### Taille des emails
 
 Pour éviter des problèmes de performances ou de délivrabilité, la taille maximale recommandée d’un email est d’environ **35 Ko**. Pour vérifier la taille du message, parcourez l&#39;onglet **[!UICONTROL Aperçu]** et choisissez un profil de test. Une fois généré, la taille du message s’affiche dans le coin supérieur droit.
 
-Pour maintenir la taille de l&#39;e-mail sous cette limite, tenez compte des possibilités suivantes :
+
++++ **Lisez quelques bonnes pratiques**
 
 * Supprimer les styles redondants ou inutilisés
 
@@ -167,19 +189,22 @@ Pour maintenir la taille de l&#39;e-mail sous cette limite, tenez compte des pos
 
 Veillez à tester toutes les modifications avant l’envoi final.
 
++++
+
+
 ### Longueur des SMS
 
 Par défaut, le nombre de caractère d&#39;un SMS respecte la norme de téléphonie mobile GSM (Global System for Mobile Communications). Les SMS utilisant l&#39;encodage GSM sont limités à 160 caractères, ou 153 caractères par SMS pour les messages envoyés en plusieurs parties.
 
 La translittération consiste à remplacer un caractère de SMS par un autre lorsque ce caractère n’est pas pris en charge par la norme GSM. Notez que l’insertion de champs de personnalisation dans le contenu de votre SMS peut introduire des caractères qui ne sont pas pris en charge par l’encodage GSM. Vous pouvez autoriser la translittération des caractères en cochant la case correspondante dans l&#39;onglet Paramètres du canal SMPP du **[!UICONTROL Compte externe]** correspondant.
 
-**Conseils**
++++ **Lisez quelques bonnes pratiques**
 
 * Pour conserver tous les caractères de vos SMS, afin de ne pas altérer les noms propres par exemple, n&#39;activez pas la translittération.
 
-* En revanche, si vos SMS contiennent beaucoup de caractères qui ne sont pas pris en charge par la norme GSM, activez la translittération afin de limiter le coût de vos envois.
+* Cependant, si vos SMS contiennent beaucoup de caractères qui ne sont pas pris en charge par la norme GSM, activez la translittération pour limiter les coûts d&#39;envoi de vos messages. En savoir plus [dans cette section](../send/sms/smpp-external-account.md#smpp-transliteration).
 
-En savoir plus dans [cette section](../send/sms/smpp-external-account.md#smpp-transliteration).
++++
 
 ### Éviter les pièces jointes
 
@@ -385,8 +410,7 @@ Depuis le tableau de bord des diffusions Campaign, vous pouvez vérifier les mes
 
 Pour mieux connaître le comportement de vos destinataires, vous pouvez suivre leur réaction à une diffusion : réception, ouverture, clics sur des liens, désabonnements, etc. Dans Campaign, ces informations sont affichées dans l&#39;onglet **Tracking** des destinataires ciblés par la diffusion et dans l&#39;onglet Tracking de la diffusion.
 
-**Conseil** : le tracking des messages est activé par défaut. Pour configurer les URL, sélectionnez l’option Afficher les URL dans la section inférieure de l’assistant de diffusion. Pour chaque URL du message, vous pouvez choisir d’activer ou non le tracking.
+Le tracking des messages est activé par défaut. Pour configurer les URL, sélectionnez l’option Afficher les URL dans la section inférieure de l’assistant de diffusion. Pour chaque URL du message, vous pouvez choisir d’activer ou non le tracking.
 
 
 [En savoir plus sur les fonctionnalités de suivi dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html?lang=fr#sending-messages){target="_blank"}
-
