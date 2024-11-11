@@ -5,7 +5,7 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 2e9c9f8e677233b2906f6ebb8f42dd86afe4e111
+source-git-commit: 768ebf4b350da61f0076eb9e43a16246be3b2628
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 100%
@@ -83,9 +83,9 @@ Une règle de typologie spécifique, la **[!UICONTROL Vérification de la planif
 
 >[!IMPORTANT]
 >
->Veillez à ce que les dernières vagues ne dépassent pas la date limite d’envoi qui est définie dans l’onglet **[!UICONTROL Validité]**. Sinon, certains messages peuvent ne pas être envoyés. En savoir plus sur la période de validité d’une diffusion dans [cette section](delivery-failures.md#valid-period).
+>* Veillez à ce que les dernières vagues ne dépassent pas la date limite d’envoi qui est définie dans l’onglet **[!UICONTROL Validité]**. Sinon, certains messages peuvent ne pas être envoyés. En savoir plus sur la période de validité d’une diffusion dans [cette section](delivery-failures.md#valid-period).
 >
->Lors de la configuration des dernières vagues, veillez également à définir assez de temps pour les reprises. En savoir plus sur les reprises dans [cette section](delivery-failures.md#retries).
+>* Lors de la configuration des dernières vagues, veillez également à définir assez de temps pour les reprises. En savoir plus sur les reprises dans [cette section](delivery-failures.md#retries).
 
 ### Surveiller les vagues {#monitor-waves}
 

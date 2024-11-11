@@ -1,20 +1,20 @@
 ---
 title: Bonnes pratiques relatives à la diffusion
 description: Découvrez les bonnes pratiques lors de la conception et de l’envoi de diffusions avec Adobe Campaign
-feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
+feature: Email, Push, SMS, Direct Mail
 role: User
 level: Beginner
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: 58d88498c8472381a43d735b4dfb2a802a293952
+source-git-commit: 768ebf4b350da61f0076eb9e43a16246be3b2628
 workflow-type: tm+mt
-source-wordcount: '2968'
+source-wordcount: '2970'
 ht-degree: 69%
 
 ---
 
 # Bonnes pratiques relatives à la diffusion {#delivery-best-practices}
 
-Découvrez les bonnes pratiques relatives aux fonctionnalités de diffusion de Campaign.
+Découvrez les bonnes pratiques suivantes avec les fonctionnalités de diffusion de Campaign.
 
 ## Optimisation de votre diffusion {#optimize-delivery}
 
