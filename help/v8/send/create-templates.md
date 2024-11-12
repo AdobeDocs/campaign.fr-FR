@@ -6,20 +6,22 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: acb559c74aea3f59c05792b7596d0f85ff05047c
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 90%
+source-wordcount: '971'
+ht-degree: 76%
 
 ---
 
 # Utilisation du modèle de diffusion {#work-with-delivery-template}
 
-Chaque diffusion est créée à partir d&#39;un modèle. Des modèles natifs sont disponibles pour chaque canal. Vous pouvez les personnaliser pour appliquer les mêmes paramètres à un ensemble de diffusions.
+## Prise en main des modèles de diffusion
 
-Un modèle comprend :
+Chaque diffusion est créée à partir d&#39;un modèle. Un modèle est une configuration qui peut être réutilisée pour faciliter et normaliser votre mise en oeuvre. Vous pouvez utiliser un modèle intégré ou personnalisé.
 
-* Règles de typologie
+Un modèle peut inclure des paramètres de configuration complets ou partiels, tels que :
+
+* [Règles de typologie](../../automation/campaign-opt/campaign-typologies.md)
 * Adresses d&#39;expéditeur et destinataire
 * [Blocs de personnalisation](../send/personalization-blocks.md) de base
 * Liens vers les [pages miroir](../send/mirror-page.md) et de désinscription
@@ -28,7 +30,18 @@ Un modèle comprend :
 
 ![](assets/do-not-localize/how-to-video.png) [Découvrez cette fonctionnalité en vidéo](#delivery-template-video)
 
-## Création d’un modèle {#create-a-delivery-template}
+Dans Adobe Campaign, vous pouvez utiliser deux types de modèles :
+
+1. Modèles de diffusion **intégrés d’Adobe Campaign - Des modèles intégrés sont disponibles pour chaque canal.** Elles NE DOIVENT PAS être modifiées ni supprimées. Ils incluent une configuration de base pour chaque canal de diffusion. En tant qu’administrateur, vous pouvez définir des valeurs par défaut ou restreindre certaines fonctions aux utilisateurs finaux, comme la modification des paramètres de suivi, des adresses email de l’expéditeur, etc. Les modèles natifs apparaissent en gras dans la liste des modèles.
+
+1. **Modèles de diffusion personnalisés** - En tant qu’administrateur Adobe Campaign, vous pouvez créer des modèles de diffusion. La bonne pratique consiste à dupliquer et mettre à jour un modèle intégré plutôt que de créer entièrement un modèle. Vous pouvez par exemple configurer un modèle de diffusion par email. Lorsque les utilisateurs créent une diffusion à partir de ce modèle, ils n&#39;ont qu&#39;à saisir le texte ou le contenu de l&#39;HTML. Tous les autres paramètres sont déjà définis.
+
+>[!NOTE]
+>
+>Les modèles disponibles dépendent de vos droits d’accès, de la configuration de votre instance et du contexte dans lequel ils sont appelés. Par exemple, lorsque vous créez un service d’information, vous pouvez y associer un modèle de diffusion pour les messages de confirmation : vous ne pourrez alors accéder qu’aux modèles dont le mapping de ciblage correspond à celui des abonnements. D’autres modèles ne sont pas visibles dans ce contexte. Pour plus dʼinformations, consultez les sections [Sélection dʼun mapping de ciblage](../audiences/target-mappings.md) et [Services et abonnements](../start/subscriptions.md).
+
+
+## Créer un modèle {#create-a-delivery-template}
 
 Pour créer un modèle de diffusion, vous pouvez dupliquer un modèle intégré ou convertir une diffusion existante en modèle. Vous pouvez également créer entièrement un modèle de diffusion, mais cela n&#39;est pas recommandé. Ces méthodes sont présentées ci-dessous.
 
