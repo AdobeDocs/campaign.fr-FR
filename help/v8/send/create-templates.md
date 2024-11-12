@@ -6,10 +6,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: acb559c74aea3f59c05792b7596d0f85ff05047c
+source-git-commit: 5054dd1352972b402d54c1b51cfee1fb41ff4d1c
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 76%
+source-wordcount: '1024'
+ht-degree: 71%
 
 ---
 
@@ -30,7 +30,7 @@ Un modèle peut inclure des paramètres de configuration complets ou partiels, t
 
 ![](assets/do-not-localize/how-to-video.png) [Découvrez cette fonctionnalité en vidéo](#delivery-template-video)
 
-Dans Adobe Campaign, vous pouvez utiliser deux types de modèles :
+Les modèles de diffusion sont stockés dans le dossier **[!UICONTROL Ressources > Modèles > Modèles de diffusion]** de l&#39;Explorateur. Dans Adobe Campaign, vous pouvez utiliser deux types de modèles :
 
 1. Modèles de diffusion **intégrés d’Adobe Campaign - Des modèles intégrés sont disponibles pour chaque canal.** Elles NE DOIVENT PAS être modifiées ni supprimées. Ils incluent une configuration de base pour chaque canal de diffusion. En tant qu’administrateur, vous pouvez définir des valeurs par défaut ou restreindre certaines fonctions aux utilisateurs finaux, comme la modification des paramètres de suivi, des adresses email de l’expéditeur, etc. Les modèles natifs apparaissent en gras dans la liste des modèles.
 
@@ -121,18 +121,19 @@ Sélectionnez le modèle de diffusion à utiliser et cliquez sur **[!UICONTROL O
 
 ### Exécution d’un modèle {#execute-a-template}
 
-Vous pouvez lancer l’exécution d’un modèle directement depuis la liste des modèles, sans devoir créer de diffusion au préalable.
+Vous pouvez lancer l&#39;exécution d&#39;un modèle directement depuis la liste des modèles, sans devoir créer de diffusion au préalable. Le modèle de diffusion peut être exécuté manuellement, comme décrit ci-dessous, ou déclenché par un événement (exécuté à un moment précis, lorsqu’un fichier est disponible sur le serveur, etc.), comme expliqué dans [cette section](../../automation/workflow/deliveries.md).
 
-Pour ce faire, sélectionnez le modèle à exécuter et cliquez avec le bouton droit de la souris. Sélectionnez **[!UICONTROL Actions > Exécuter le modèle de diffusion...]**.
+Pour exécuter manuellement un modèle, procédez comme suit :
 
-Vous pouvez aussi utiliser le menu **[!UICONTROL Fichier > Actions > Exécuter le modèle de diffusion...]**.
+1. Sélectionnez le modèle à exécuter et cliquez avec le bouton droit de la souris. Sélectionnez **[!UICONTROL Actions > Exécuter le modèle de diffusion...]**.
 
-![](assets/execute-delivery-template.png)
+   Vous pouvez aussi utiliser le menu **[!UICONTROL Fichier > Actions > Exécuter le modèle de diffusion...]**.
 
-Renseignez ensuite les paramètres de la diffusion et cliquez sur **[!UICONTROL Envoyer]**.
+   ![](assets/execute-delivery-template.png)
+
+1. Renseignez ensuite les paramètres de la diffusion et cliquez sur **[!UICONTROL Envoyer]**.
 
 Cette action génère une diffusion dans le dossier associé au modèle. Le nom de cette diffusion est le nom du modèle de diffusion à partir duquel elle a été créée.
-
 
 ## Tutoriels vidéo {#delivery-template-video}
 
