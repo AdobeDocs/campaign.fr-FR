@@ -5,16 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 5b2638927e39b6f839fb3a8639fe106d2c519fbf
+source-git-commit: 578f774152afbd42342da0f161b679ba9dd10c78
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 97%
+source-wordcount: '541'
+ht-degree: 87%
 
 ---
 
 # Concevoir et envoyer des e-mails
 
-Les diffusions e-mail permettent d’envoyer des e-mails personnalisés à la population cible. [En savoir plus](../send/send.md).
+Avec Adobe Campaign, créez des diffusions email pour envoyer des emails personnalisés à la population cible. [En savoir plus](../send/send.md)
 
 Découvrez les étapes clés pour créer et configurer une diffusion dans [cette page](../start/create-message.md).
 
@@ -85,15 +85,16 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
 Votre première diffusion e-mail est prête. Vous devez maintenant définir l&#39;audience, valider la diffusion et l&#39;envoyer.
 
-Découvrez comment importer du contenu d’un e-mail dans ce [cas d’utilisation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=fr){target="_blank"}.
+Découvrez comment créer un workflow pour importer un contenu d&#39;email dans ce [cas pratique](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=fr){target="_blank"}.
 
-En savoir plus dans les sections suivantes :
-
-<!--[Design an email in Campaign]-->
-* [Créer et utiliser un modèle d’e-mail](../send/create-templates.md)
-* [Sélectionner l’audience de votre e-mail](../audiences/gs-audiences.md)
-* [Valider une diffusion et envoyer des BAT](preview-and-proof.md)
-* [Configurer et envoyer la diffusion](configure-and-send.md)
+>[!MORELIKETHIS]
+>
+>* [Créer une diffusion](../start/create-message.md)
+>* [Créer et utiliser un modèle d’email](create-templates.md)
+>* [Sélectionnez l&#39;audience de votre email](../audiences/gs-audiences.md)
+>* [Valider une diffusion et envoyer des bons à tirer](preview-and-proof.md)
+>* [Configurer et envoyer la diffusion](configure-and-send.md)
+>* [Bonnes pratiques de diffusion](../start/delivery-best-practices.md)
 
 ## Tester et valider vos e-mails
 
