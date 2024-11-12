@@ -6,9 +6,9 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: 5054dd1352972b402d54c1b51cfee1fb41ff4d1c
+source-git-commit: 9f19d5c9836c21cea7b4b55241f828e295831339
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1025'
 ht-degree: 71%
 
 ---
@@ -121,7 +121,7 @@ Sélectionnez le modèle de diffusion à utiliser et cliquez sur **[!UICONTROL O
 
 ### Exécution d’un modèle {#execute-a-template}
 
-Vous pouvez lancer l&#39;exécution d&#39;un modèle directement depuis la liste des modèles, sans devoir créer de diffusion au préalable. Le modèle de diffusion peut être exécuté manuellement, comme décrit ci-dessous, ou déclenché par un événement (exécuté à un moment précis, lorsqu’un fichier est disponible sur le serveur, etc.), comme expliqué dans [cette section](../../automation/workflow/deliveries.md).
+Vous pouvez lancer l&#39;exécution d&#39;un modèle directement depuis la liste des modèles, sans devoir créer de diffusion au préalable. Le modèle de diffusion peut être exécuté manuellement, comme décrit ci-dessous, ou déclenché par un événement (exécuté à un moment précis, lorsqu’un fichier est disponible sur le serveur, etc.), comme expliqué dans [cette section](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/delivery).
 
 Pour exécuter manuellement un modèle, procédez comme suit :
 
