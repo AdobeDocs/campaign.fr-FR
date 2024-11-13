@@ -5,16 +5,16 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 55b752713a29c035680dd39e42422b1743e15269
+source-git-commit: 53fab31c21fdfe2f90c4793ccd025af1d5c0e061
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1610'
 ht-degree: 38%
 
 ---
 
 # Créer votre première diffusion {#create-a-msg}
 
-Dans cette page, vous apprendrez à créer une diffusion unique ponctuelle. Vous pouvez créer d’autres types de diffusions pour répondre à vos cas d’utilisation. Découvrez les différents types de diffusions et comment les créer dans [cette page](gs-message.md).
+Dans cette page, découvrez comment créer une diffusion unique ponctuelle. Vous pouvez créer d’autres types de diffusions pour créer vos cas d’utilisation. Découvrez les différents types de diffusions et comment les créer dans [cette page](gs-message.md).
 
 Les étapes clés de la création d&#39;une diffusion ponctuelle sont les suivantes :
 
