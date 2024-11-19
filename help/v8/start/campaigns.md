@@ -8,7 +8,7 @@ exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
 source-git-commit: 8d6c3e03f9b7533f7f325b755e3b6d4f74b63a8d
 workflow-type: tm+mt
 source-wordcount: '774'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -78,9 +78,9 @@ Les étapes clés permettant de créer une campagne marketing cross-canal sont l
 
    ![](assets/campaign-dashboard.png)
 
-   Découvrez comment créer et démarrer des diffusions de campagne marketing dans [cette page](../../automation/campaigns/marketing-campaign-deliveries.md).
+   Découvrez comment créer et lancer des diffusions de campagne marketing dans [cette page](../../automation/campaigns/marketing-campaign-deliveries.md).
 
-   Vous pouvez associer divers documents à une opération, comme des rapports, photos, pages web, diagrammes, etc. En savoir plus sur les documents associés dans [cette page](../../automation/campaigns/marketing-campaign-assets.md).
+   Vous pouvez associer divers documents à une campagne, comme des rapports, photos, pages web, diagrammes, etc. En savoir plus sur les documents associés dans [cette page](../../automation/campaigns/marketing-campaign-assets.md).
 
 1. **Configuration du processus de validation**
 
@@ -91,7 +91,7 @@ Les étapes clés permettant de créer une campagne marketing cross-canal sont l
 
 ## Module complémentaire Marketing distribué{#distributed-marketing-add-on}
 
-Adobe Campaign propose un module complémentaire **Distributed Marketing** pour la mise en oeuvre de campagnes de coopération entre les entités centrales (siège social, départements de marketing, etc.) et les entités locales (magasins, agences régionales, etc.). Cette coopération repose sur un espace de travail partagé appelé **[!UICONTROL Liste des kits d&#39;opération]**, où des modèles d&#39;opération conçus par des entités centrales sont proposés aux entités locales.
+Adobe Campaign propose un module complémentaire **Marketing distribué** pour la mise en œuvre de campagnes de coopération entre entités centrales (sièges sociaux, services marketing, etc.) et entités locales (magasins, agences régionales, etc.). Cette coopération repose sur un espace de travail partagé appelé **[!UICONTROL Liste des kits d&#39;opération]**, où des modèles d&#39;opération conçus par des entités centrales sont proposés aux entités locales.
 
 >[!NOTE]
 >
