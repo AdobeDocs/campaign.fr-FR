@@ -6,15 +6,15 @@ feature: Campaigns, Resource Management, Cross Channel Orchestration
 role: User
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
 source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '754'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Diffusions de campagnes marketing {#marketing-campaign-deliveries}
 
-Orchestrer vos diffusions cross-canal dans vos campagnes : rationalisez vos communications avec Adobe Campaign par le biais d&#39;e-mails personnalisés, de SMS, de notifications push et de messages in-app. Vous pouvez utiliser des médias enrichis tels que des vidéos, des émoticônes ou des GIFs, et les intégrer directement.
+Orchestrer vos diffusions cross-canal dans vos campagnes : rationalisez vos communications avec Adobe Campaign par le biais d&#39;e-mails personnalisés, de SMS, de notifications push et de messages in-app. Vous pouvez utiliser des médias riches tels que des vidéos, des émoticônes ou des GIF et les intégrer directement.
 
 Les diffusions peuvent être créées depuis le tableau de bord d&#39;une campagne, un workflow de campagne ou directement à partir de la vue d&#39;ensemble des diffusions. Une fois créées à partir d&#39;une campagne, les diffusions y sont liées et sont consolidées au niveau de cette campagne.
 

@@ -6,19 +6,19 @@ role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
 source-git-commit: 578f774152afbd42342da0f161b679ba9dd10c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '541'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # Concevoir et envoyer des e-mails
 
-Avec Adobe Campaign, créez des diffusions email pour envoyer des emails personnalisés à la population cible. [En savoir plus](../send/send.md)
+Avec Adobe Campaign, créez des diffusions e-mail pour envoyer des e-mails personnalisés à la population cible. [En savoir plus](../send/send.md)
 
-Découvrez les étapes clés pour créer et configurer une diffusion dans [cette page](../start/create-message.md).
+Découvrez les étapes clés de la création et de la configuration d’une diffusion dans [cette page](../start/create-message.md).
 
-## Créer une diffusion par e-mail
+## Créer une diffusion e-mail
 
 Créez des e-mails personnalisés et pertinents qui sont également conformes au reste de l&#39;expérience client.
 
@@ -85,14 +85,14 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
 Votre première diffusion e-mail est prête. Vous devez maintenant définir l&#39;audience, valider la diffusion et l&#39;envoyer.
 
-Découvrez comment créer un workflow pour importer un contenu d&#39;email dans ce [cas pratique](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=fr){target="_blank"}.
+Découvrez comment créer un workflow pour importer le contenu d’un e-mail dans ce [cas d’utilisation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=fr){target="_blank"}.
 
 >[!MORELIKETHIS]
 >
 >* [Créer une diffusion](../start/create-message.md)
->* [Créer et utiliser un modèle d’email](create-templates.md)
->* [Sélectionnez l&#39;audience de votre email](../audiences/gs-audiences.md)
->* [Valider une diffusion et envoyer des bons à tirer](preview-and-proof.md)
+>* [Créer et utiliser un modèle d’e-mail](create-templates.md)
+>* [Sélectionner l’audience de votre e-mail](../audiences/gs-audiences.md)
+>* [Valider une diffusion et envoyer des BAT](preview-and-proof.md)
 >* [Configurer et envoyer la diffusion](configure-and-send.md)
 >* [Bonnes pratiques de diffusion](../start/delivery-best-practices.md)
 

@@ -4,10 +4,11 @@ description: Prise en main des messages
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 5b2638927e39b6f839fb3a8639fe106d2c519fbf
-workflow-type: tm+mt
+exl-id: a523e76d-776c-47d3-9c15-34241cee1092
+source-git-commit: 25a4ac40f8a178b85e88fbce1ff32ebe2c027f4b
+workflow-type: ht
 source-wordcount: '1002'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 74%
 
 Avec Adobe Campaign, vous pouvez réaliser des campagnes cross-canal, y compris sous forme d&#39;e-mails, SMS, notifications push et courrier, et mesurer leur efficacité à l&#39;aide de différents rapports dédiés. Ces messages sont conçus et envoyés par le biais de diffusions, et peuvent être personnalisés pour chaque destinataire.
 
-Les principales fonctionnalités incluent le ciblage, la définition et la personnalisation des messages, l&#39;exécution des communications et les rapports opérationnels associés.
+Les principales fonctionnalités comprennent le ciblage, la définition et la personnalisation des messages, l’exécution des communications et les rapports opérationnels associés.
 
 ## Cas d’utilisation {#gs-ac-delivery}
 
@@ -23,38 +24,38 @@ Pour envoyer des messages, vous devez créer une diffusion. Le mode de création
 
 >[!NOTE]
 >
->Lors de la création d&#39;une diffusion, vous devez sélectionner un modèle. Les modèles par défaut sont disponibles pour chaque canal. Apprenez-en plus sur les modèles de diffusion sur [cette page](../send/create-templates.md).
+>Lors de la création d’une diffusion, vous devez sélectionner un modèle. Des modèles par défaut sont disponibles pour chaque canal. Apprenez-en plus sur les modèles de diffusion dans [cette page](../send/create-templates.md).
 
-1. **Messages ponctuels** - Vous pouvez envoyer des messages ponctuels à une audience. Découvrez comment envoyer votre premier message dans [cette section](create-message.md).
+1. **Messages ponctuels** : vous pouvez envoyer des messages ponctuels à une audience. Découvrez comment envoyer votre premier message dans [cette section](create-message.md).
 
    ![](assets/send-email.png)
 
-1. **Messages dans une campagne marketing** - Vous pouvez envoyer des messages dans le contexte d’une [campagne marketing](campaigns.md), définir un processus de validation, les envoyer et les suivre dans un tableau de bord consolidé. Découvrez comment dans [cette section](../../automation/campaigns/marketing-campaign-deliveries.md).
+1. **Messages dans une campagne marketing** : vous pouvez envoyer des messages dans le contexte d’une [campagne marketing](campaigns.md), définir un processus de validation, les envoyer et les suivre dans un tableau de bord consolidé. Découvrez comment dans [cette section](../../automation/campaigns/marketing-campaign-deliveries.md).
 
    ![](assets/deliveries-in-a-campaign.png)
 
-1. **Messages dans un workflow** - Vous pouvez envoyer des messages via un [workflow](../config/workflows.md) et automatiser vos diffusions. Découvrez comment dans [cette page](../../automation/workflow/delivery.md).
+1. **Messages dans un workflow** : vous pouvez envoyer des messages via un [workflow](../config/workflows.md) et automatiser vos diffusions. Découvrez comment dans [cette page](../../automation/workflow/delivery.md).
 
    ![](assets/send-in-a-wf.png)
 
-1. **Messages déclenchés** - Vous pouvez [Déclencher des messages](../send/transactional.md) à partir d’un événement. Les messages transactionnels (Message Center) sont le module Campaign conçu pour gérer les messages de déclenchement. Retrouvez les détails des étapes de configuration et d’envoi de messages transactionnels sur [cette page](../send/transactional.md).
+1. **Messages déclenchés** : vous pouvez [déclencher des messages](../send/transactional.md) à partir d’un événement. La messagerie transactionnelle (Message Center) est le module de Campaign conçu pour gérer les messages de déclenchement. Les étapes de configuration et d’envoi de messages transactionnels sont présentées dans [cette page](../send/transactional.md).
 
 ## Canaux de communication {#gs-channel}
 
-Adobe Campaign v8 est fourni avec les canaux de diffusion répertoriés ci-dessous. Les canaux disponibles dans votre environnement dépendent de votre contrat. Veuillez vérifier votre contrat de licence.
+Adobe Campaign v8 est fourni avec les canaux de diffusion répertoriés ci-dessous. Les canaux disponibles dans votre environnement dépendent de votre contrat. Veuillez vérifier votre contrat de licence.
 
-* **Canal e-mail** : les diffusions e-mail permettent d&#39;envoyer des e-mails personnalisés à la population cible. [En savoir plus](../send/email.md)
+* **Canal E-mail** : les diffusions e-mail permettent d&#39;envoyer des e-mails personnalisés à la population cible. [En savoir plus](../send/email.md)
 
-* **Canaux mobiles** : les diffusions sur canaux mobiles permettent d’envoyer des messages personnalisés sur des appareils mobiles à la population cible. Vous pouvez envoyer des [SMS](../send/sms/sms.md) et des [messages LINE](../send/line.md) sur les mobiles.
+* **Canaux mobiles** : les diffusions sur canaux mobiles permettent d’envoyer des messages personnalisés sur des appareils mobiles à la population cible. Vous pouvez envoyer des [SMS](../send/sms/sms.md) et des messages [LINE](../send/line.md) sur des mobiles.
 
-* **Canal d’application mobile** : vous pouvez utiliser Adobe Campaign pour envoyer des [ notifications push personnalisées et segmentées](../send/push.md) sur des appareils mobiles iOS et Android, par le biais d’applications dédiées. Une fois les procédures de configuration et d’intégration effectuées, les diffusions sur iOS et Android peuvent être créées et envoyées avec Adobe Campaign. Vous pouvez également concevoir et envoyer des notifications enrichies avec des images ou des vidéos aux appareils Android.
+* **Canal d’application mobile** : vous pouvez utiliser Adobe Campaign pour envoyer des [notifications push](../send/push.md) personnalisées et segmentées sur des appareils mobiles iOS et Android via des applications dédiées. Une fois les procédures de configuration et d’intégration effectuées, les diffusions sur iOS et Android peuvent être créées et envoyées avec Adobe Campaign. Vous pouvez également concevoir et envoyer des notifications enrichies avec des images ou des vidéos aux appareils Android.
 
-* **Canal courrier** : [Canal courrier](../send/direct-mail.md) est un canal hors ligne qui vous permet de créer, de personnaliser et de générer un fichier externe à partager avec vos fournisseurs de services postaux. Utilisez ce canal pour orchestrer les canaux en ligne et hors ligne dans vos parcours clientèle.
+* **Canal Courrier** : le canal [Courrier](../send/direct-mail.md) est un canal hors ligne qui vous permet de créer, de personnaliser et de générer un fichier externe à partager avec vos opérateurs de services postaux. Utilisez ce canal pour orchestrer les canaux en ligne et hors ligne dans vos parcours clientèle.
 
   Lors de la préparation d’une diffusion courrier, Adobe Campaign génère un fichier comprenant tous les profils ciblés et les informations de contact sélectionnées (adresse postale, par exemple). Vous pouvez ensuite envoyer ce fichier à votre fournisseur de services postaux qui se chargera de l’envoi.
 
 
-* **Autres canaux** : Adobe Campaign est également fourni avec un modèle de diffusion Téléphone, qui est utilisé pour créer des diffusions externes. L’utilisation de ce canal implique la configuration de méthodologies dédiées pour traiter les fichiers de sortie. Les étapes de configuration sont identiques à celles du [canal Courrier](../send/direct-mail.md).
+* **Autres canaux** : Adobe Campaign propose aussi un modèle de diffusion Téléphone utilisé pour créer des diffusions externes. L’utilisation de ce canal implique la configuration de méthodologies dédiées pour traiter les fichiers de sortie. Les étapes de configuration sont identiques à celles du [canal Courrier](../send/direct-mail.md).
 
   >[!NOTE]
   >
@@ -92,7 +93,7 @@ Par exemple, si vous exécutez ce type d&#39;activité une fois par mois, vous o
 
 Les diffusions au fil de l&#39;eau sont créées dans des workflows via l&#39;activité [Diffusion au fil de l&#39;eau](../../automation/workflow/continuous-delivery.md).
 
-## Fonctionnalités de Personalization {#personalization}
+## Fonctionnalités de personnalisation {#personalization}
 
 Les messages diffusés par Adobe Campaign peuvent être personnalisés de différentes façons. [En savoir plus sur les fonctionnalités de personnalisation](../send/personalize.md)
 
@@ -103,9 +104,8 @@ Vous pouvez ainsi :
 * Créer du contenu conditionnel. [En savoir plus](../send/conditions.md)
 
 
-## Tracking et suivi {#gs-tracking-logs}
+## Tracking et surveillance {#gs-tracking-logs}
 
 La surveillance de vos diffusions après leur envoi est une étape clé pour vous assurer que vos campagnes marketing sont efficaces et atteignent vos clients. Vous pouvez ainsi surveiller une diffusion après son envoi et comprendre la gestion des diffusions en échec et des quarantaines.
 
 Découvrez comment surveiller vos diffusions dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr#sending-messages){target="_blank"}.
-

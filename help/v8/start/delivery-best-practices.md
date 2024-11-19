@@ -1,14 +1,14 @@
 ---
 title: Bonnes pratiques relatives à la diffusion
-description: Découvrez les bonnes pratiques lors de la conception et de l’envoi de diffusions avec Adobe Campaign
+description: Découvrez les bonnes pratiques lors de la conception et de l’envoi de diffusions avec Adobe Campaign.
 feature: Email, Push, SMS, Direct Mail
 role: User
 level: Beginner
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
 source-git-commit: 768ebf4b350da61f0076eb9e43a16246be3b2628
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2970'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -16,22 +16,22 @@ ht-degree: 69%
 
 Découvrez les bonnes pratiques suivantes avec les fonctionnalités de diffusion de Campaign.
 
-## Optimisation de votre diffusion {#optimize-delivery}
+## Optimiser votre diffusion {#optimize-delivery}
 
-Avant même de commencer à créer des diffusions, vous pouvez prendre plusieurs mesures pour sécuriser et optimiser le processus d&#39;envoi en amont. La section suivante décrit les bonnes pratiques et les procédures recommandées pour une configuration optimale d’Adobe Campaign.
+Avant même de commencer à créer des diffusions, vous pouvez prendre des mesures pour sécuriser et optimiser le processus d’envoi en amont. La section suivante présente les bonnes pratiques et les procédures recommandées pour optimiser la configuration d’Adobe Campaign.
 
 ### Performances de la plateforme
 
-Plusieurs facteurs peuvent avoir un impact direct sur les performances du serveur et ralentir votre plateforme Campaign :
+Plusieurs facteurs peuvent avoir une incidence directe sur les performances du serveur et ralentir votre plateforme Campaign :
 
-* Nombre et type d&#39;éléments [personalization](../send/personalize.md) : la personnalisation dans les emails extrait les données de la base de données pour chaque destinataire. dans le cas de nombreux éléments de personnalisation, la quantité de données nécessaires à la préparation de la diffusion est plus élevée. Cela peut ralentir votre plateforme. Pour en savoir plus sur les barrières de sécurité de personnalisation, consultez [cette section](../send/personalize.md#perso-guardrails).
+* Nombre et type d’éléments de [personnalisation](../send/personalize.md) : dans les e-mails, la personnalisation extrait les données de la base de données pour chaque destinataire. Dans le cas de nombreux éléments de personnalisation, la quantité de données nécessaires à la préparation de la diffusion est plus élevée. Cela peut ralentir votre plateforme. Découvrez les mécanismes de sécurisation de la personnalisation dans [cette section](../send/personalize.md#perso-guardrails).
 
 * Charge du serveur : lorsque le serveur marketing gère simultanément trop de tâches différentes, cela peut diminuer les performances. Le serveur marketing doit coordonner toutes les données entrantes et sortantes pour l’ensemble des diffusions afin de s’assurer que les données sont correctes et disponibles à temps.
-Pour éviter cela, coordonnez la planification des diffusions avec les autres membres de votre équipe afin d’assurer les meilleures performances.
+Pour éviter cette situation, coordonnez la planification des diffusions avec les autres membres de votre équipe afin d’optimiser les performances.
 
 * Exécution du workflow : la surveillance de vos workflows est essentielle pour éviter tout problème de performances de la plateforme. Suivez les directives répertoriées [dans ce document](../../automation/workflow/workflow-best-practices.md#execution-and-performance).
 
-* Connectez-vous à vos [fonctionnalités de Panneau de Contrôle Campaign](https://experienceleague.adobe.com/en/docs/control-panel/using/discover-control-panel/key-features){target="_blank"} pour surveiller votre plateforme à l’aide des fonctionnalités de [ ](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/about-performance-monitoring){target="_blank"} de .
+* Connectez-vous à vos [fonctionnalités du Panneau de contrôle de Campaign](https://experienceleague.adobe.com/fr/docs/control-panel/using/discover-control-panel/key-features){target="_blank"} pour surveiller votre plateforme à l’aide des fonctionnalités de [surveillance des performances](https://experienceleague.adobe.com/fr/docs/control-panel/using/performance-monitoring/about-performance-monitoring){target="_blank"}.
 
 #### Gestion des quarantaines {#quarantine-management}
 
@@ -40,16 +40,16 @@ Vous avez tout intérêt à mettre en place et à conserver de bons processus de
 Lorsque vous commencez à envoyer des emails sur une nouvelle plateforme, vous pouvez utiliser une liste d’adresses qui ne sont pas entièrement qualifiées. Or l’envoi à des adresses non valides ou à des adresses pièges (boîtes mails créées dans le but de piéger les spammeurs) contribue à abaisser la réputation de la plateforme. De bons processus de gestion des quarantaines permettent de conserver la qualité des adresses, d&#39;éviter la mise sur liste bloquée de la part des FAI et de réduire le taux d&#39;erreur, tout en augmentant la vitesse des diffusions et le débit.
 
 
-Découvrez comment démarrer une nouvelle plateforme dans le [Guide des bonnes pratiques de délivrabilité des Adobes](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform){target="_blank"}.
+Découvrez comment démarrer une nouvelle plateforme dans le [Guide Adobe des bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform){target="_blank"}.
 
-Les recommandations techniques sont répertoriées dans [cette section](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations){target="_blank"}.
+Les recommandations techniques sont répertoriées dans [cette section](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations){target="_blank"}.
 
 
-+++ **Lisez quelques bonnes pratiques**
++++ **Lire quelques bonnes pratiques**
 
 * Si vous disposez d&#39;une liste d&#39;adresses invalides, Adobe recommande de l&#39;importer dans la table des quarantaines, par le biais de **[!UICONTROL Administration]** > **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Gestion des NP@I]** > **[!UICONTROL NP@I et Adresses]**.
 
-* Les destinataires dont l’adresse est en quarantaine sont par défaut exclus lors de l’analyse d’une diffusion : ils ne seront pas ciblés. Cela accélère les diffusions, car le taux d&#39;erreur a un effet significatif sur la vitesse de diffusion. Une adresse email peut être mise en quarantaine par exemple lorsque la boîte de réception est pleine ou si l&#39;adresse n&#39;existe pas.
+* Les destinataires dont l’adresse est en quarantaine sont par défaut exclus lors de l’analyse d’une diffusion : ils ne seront pas ciblés. Le taux d’erreur ayant une incidence importante sur la vitesse de diffusion, les envois sont ainsi accélérés. Une adresse e-mail peut être mise en quarantaine par exemple lorsque la boîte de réception est pleine ou si l’adresse n’existe pas.
 Le mode de gestion des adresses en erreur par Adobe Campaign dépend du type d’erreur retourné. [En savoir plus sur les quarantaines](../send/quarantines.md)
 
 * Certains fournisseurs d&#39;accès à internet considèrent automatiquement les e-mails comme du spam si le taux d&#39;adresses non valides est trop élevé. La quarantaine permet donc d&#39;éviter d&#39;être ajouté à une liste bloquée par ces fournisseurs.
@@ -60,21 +60,21 @@ Le mode de gestion des adresses en erreur par Adobe Campaign dépend du type d�
 
 ### Mécanisme de double opt-in {#double-opt-in}
 
-Pour éviter d&#39;envoyer des messages à des adresses invalides, limiter les communications abusives et améliorer la réputation de l&#39;expéditeur, Adobe recommande de mettre en place un mécanisme de double opt-in pour une confirmation après inscription. Cela vous permet de vous assurer que le destinataire est bien à l&#39;origine de l&#39;abonnement.
+Pour éviter d&#39;envoyer des messages à des adresses invalides, limiter les communications abusives et améliorer la réputation de l&#39;expéditeur ou de l’expéditrice, Adobe recommande de mettre en place un mécanisme de double opt-in pour une confirmation après inscription. Cela vous permet de vous assurer que la personne destinataire est bien à l&#39;origine de l&#39;abonnement.
 
-## Utilisation de modèles {#use-templates}
+## Utiliser des modèles {#use-templates}
 
-Les modèles de diffusion accroissent l’efficacité en offrant des configurations prêtes à l’emploi pour les types d’activité les plus courants. Grâce aux modèles, les marketeurs peuvent déployer de nouvelles campagnes avec une personnalisation minimale dans un délai plus court. [En savoir plus sur les modèles de diffusion](../send/create-templates.md).
+Les modèles de diffusion accroissent l’efficacité en offrant des configurations prêtes à l’emploi pour les types d’activité les plus courants. Grâce aux modèles, les spécialistes marketing peuvent déployer plus rapidement de nouvelles campagnes avec une personnalisation minimale. [En savoir plus sur les modèles de diffusion](../send/create-templates.md).
 
-### Sous-domaines et marque {#subdomains-and-branding}
+### Sous-domaines et branding {#subdomains-and-branding}
 
-Si vous gérez plusieurs marques dans Adobe Campaign, Adobe recommande de disposer d’un sous-domaine par marque. Une banque peut, par exemple, avoir plusieurs sous-domaines qui correspondent à chacune de ses agences régionales. Si une banque détient le domaine bluebank.com, ses sous-domaines peuvent être @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com, etc. Disposer d&#39;un modèle de diffusion par sous-domaine vous permet de toujours utiliser les paramètres préconfigurés adéquats pour chaque marque, ce qui permet d&#39;éviter les erreurs et de gagner du temps. Pour en savoir plus sur l’identité graphique des sous-domaines, consultez la [documentation sur le Panneau de Contrôle Campaign](https://experienceleague.adobe.com/fr/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
+Si vous gérez plusieurs marques dans Adobe Campaign, Adobe recommande de disposer d’un sous-domaine par marque. Une banque peut, par exemple, avoir plusieurs sous-domaines qui correspondent à chacune de ses agences régionales. Si une banque détient le domaine bluebank.com, ses sous-domaines peuvent être @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com, etc. Disposer d’un modèle de diffusion par sous-domaine vous permet de toujours utiliser les paramètres préconfigurés adéquats pour chaque marque et d’éviter ainsi des erreurs tout en gagnant du temps. En savoir plus sur le branding de sous-domaines dans la [documentation du Panneau de contrôle de Campaign](https://experienceleague.adobe.com/fr/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
 
 ### Configurer les adresses {#configure-addresses}
 
-Veillez à appliquer les directives suivantes :
+Veillez à appliquer les directives suivantes :
 
-* L&#39;adresse de l&#39;expéditeur est obligatoire pour permettre l&#39;envoi d&#39;un email. Certains FAI vérifient la validité de l’adresse de l’expéditeur avant d’accepter les messages.
+* L’adresse de l’expéditeur ou de l’expéditrice est obligatoire pour permettre l’envoi d’un e-mail. Certains FAI vérifient la validité de l’adresse de l’expéditeur avant d’accepter les messages.
 * Une adresse erronée peut causer un refus de la part du serveur receveur. Vous devez vous assurer qu’une adresse correcte est bien renseignée.
 * L&#39;adresse doit identifier explicitement l&#39;expéditeur. Le domaine doit appartenir à l&#39;expéditeur et être enregistré auprès de lui.
 * Adobe recommande de créer des comptes email qui correspondent aux adresses indiquées pour les envois et les réponses. Parlez-en avec votre administrateur du système de messagerie.
@@ -83,7 +83,7 @@ Veillez à appliquer les directives suivantes :
 
 Pour configurer les adresses dans l’interface de Campaign, procédez comme suit :
 
-1. Dans le [modèle de diffusion](../send/create-templates.md), cliquez sur le lien **[!UICONTROL De]**. Dans la fenêtre **[!UICONTROL Paramètres de l&#39;en-tête email]**, saisissez les paramètres.
+1. Dans le [modèle de diffusion](../send/create-templates.md), cliquez sur le lien **[!UICONTROL De]**. Dans la fenêtre **[!UICONTROL Paramètres d’en-tête des e-mails]**, saisissez les paramètres.
 
 1. Dans le champ **[!UICONTROL Adresse de l’expéditeur]**, assurez-vous que le domaine d’adresse est identique au sous-domaine que vous avez délégué à Adobe. Vous pouvez modifier la partie qui précède le signe « @ », mais pas l’adresse du domaine.
 
@@ -107,13 +107,13 @@ Pour plus d’informations sur les typologies, consultez [cette section](../../a
 
 ## Optimiser votre contenu {#optimize-content}
 
-### Création de contenu personnalisé {#perso-content}
+### Créer du contenu personnalisé {#perso-content}
 
-Pour personnaliser vos messages, vous pouvez utiliser les données des destinataires stockées dans la base de données, ou collectées par le biais du tracking, des landing pages, des abonnements, etc. Les principes de base de la personnalisation sont présentés dans [cette section](../send/personalize.md).
+Pour personnaliser vos messages, vous pouvez utiliser les données des destinataires stockées dans la base de données ou collectées par le biais du tracking, des pages de destination, des abonnements, etc. Les principes de base de la personnalisation sont présentés dans [cette section](../send/personalize.md).
 
-+++ **Lisez quelques bonnes pratiques**
++++ **Lire quelques bonnes pratiques**
 
-* Vérifiez vos paramètres de personnalisation : assurez-vous que le contenu de votre message est correctement conçu pour éviter toute erreur liée à la personnalisation. Une balise de personnalisation Adobe Campaign a toujours le format suivant : `<%=table.field%>`. L&#39;utilisation incorrecte des paramètres dans les blocs de personnalisation peut entraîner des problèmes. Par exemple, les variables en JavaScript doivent être utilisées comme suit :
+* Vérifier vos paramètres de personnalisation : vérifiez que le contenu de votre message est correctement conçu pour éviter toute erreur, qui pourrait être liée à la personnalisation. Une balise de personnalisation Adobe Campaign a toujours la forme suivante : `<%=table.field%>`. L&#39;utilisation incorrecte des paramètres dans les blocs de personnalisation peut entraîner des problèmes. Par exemple, les variables en JavaScript doivent être utilisées comme suit :
 
   ``
   <%
@@ -123,14 +123,14 @@ Pour personnaliser vos messages, vous pouvez utiliser les données des destinata
 
   Pour plus d&#39;informations sur les blocs de personnalisation, consultez [cette section](../send/personalization-blocks.md).
 
-* Préparer les données de personnalisation : vous pouvez préparer les données de personnalisation dans un workflow afin d’améliorer l’analyse de préparation des diffusions. Vous devez effectuer cette opération tout particulièrement si les données de personnalisation proviennent d&#39;une table externe via Federated Data Access (FDA). Cette option est décrite dans [cette section](../send/personalization-data.md#optimize-personalization)
+* Préparer les données de personnalisation : vous pouvez préparer les données de personnalisation dans un workflow afin d’améliorer l’analyse de préparation des diffusions. Vous devez effectuer cette opération tout particulièrement si les données de personnalisation proviennent d&#39;une table externe via Federated Data Access (FDA). Cette option est décrite dans [cette section](../send/personalization-data.md#optimize-personalization)
 +++
 
 ### Créer du contenu optimisé {#build-optimized-content}
 
-Lors de la création de vos emails, appliquez les bonnes pratiques générales pour le contenu des emails.
+Lorsque vous créez vos e-mails, appliquez les bonnes pratiques générales pour le contenu des e-mails.
 
-+++ **Lisez quelques bonnes pratiques**
++++ **Lire quelques bonnes pratiques**
 
 * Gardez le design de vos e-mails simple
 
@@ -147,44 +147,44 @@ Lors de la création de vos emails, appliquez les bonnes pratiques générales p
 
 ### Objet  {#subject-line-check}
 
-Travaillez sur l&#39;email [objet](../send/personalization-fields.md#personalization-fields-uc) pour améliorer les taux d&#39;ouverture.
+Travaillez sur la [ligne d’objet](../send/personalization-fields.md#personalization-fields-uc) pour améliorer les taux d’ouverture.
 
 
-+++ **Lisez quelques bonnes pratiques**
++++ **Lire quelques bonnes pratiques**
 
 
 * Évitez les objets trop longs. Utilisez 50 caractères au maximum
 
 * Évitez de répéter des mots tels que &quot;gratuit&quot; ou &quot;offre&quot; qui peuvent être considérés comme des messages indésirables
 
-* Éviter les majuscules
+* Évitez les lettres majuscules.
 
-* N’utilisez pas de caractères spéciaux tels que &quot;!&quot;, &quot;£&quot;, &quot;€&quot;, &quot;$&quot;
+* N’utilisez pas de caractères spéciaux tels que « ! », « £ », « € » et « $ ».
 
 +++
 
 ### Page miroir {#mirror-page-check}
 
-Incluez toujours un lien de page miroir. La partie supérieure de l&#39;e-mail constitue la position idéale. En savoir plus sur la page miroir dans [cette page](../send/mirror-page.md)
+Incluez toujours un lien de page miroir. La partie supérieure de l&#39;e-mail constitue la position idéale. En savoir plus sur la page miroir dans [cette section](../send/mirror-page.md).
 
 ### Lien de désabonnement {#unsub-link-check}
 
-Le lien de désabonnement est indispensable. Il doit être visible, valide et le formulaire fonctionnel. Par défaut, lors de l’analyse du message, une **[!UICONTROL approbation du lien de désabonnement]** [ ](../../automation/campaign-opt/control-rules.md) vérifie si un lien de désinscription a été inclus et génère un avertissement en cas d’absence.
+Le lien de désabonnement est indispensable. Il doit être visible, valide et le formulaire fonctionnel. Par défaut, lorsque le message est analysé, une [règle de typologie](../../automation/campaign-opt/control-rules.md) intégrée **[!UICONTROL Approbation du lien de désabonnement]** vérifie si un lien d’exclusion a été inclus et génère un avertissement en cas d’absence.
 
-Découvrez comment insérer un lien d&#39;opt-out [dans cette section](../send/personalization-blocks.md).
+Découvrez comment insérer un lien d&#39;exclusion [dans cette section](../send/personalization-blocks.md).
 
-+++ **Appliquez cette bonne pratique**
++++ **Appliquer cette bonne pratique**
 
-Comme une erreur humaine est toujours possible, vérifiez que le lien de désinscription fonctionne correctement avant chaque envoi. Par exemple, lors de l&#39;envoi du BAT, vérifiez que le lien est valide, que le formulaire est en ligne et que le champ `No longer contact this recipient ` a été remplacé par `Yes`.
+Comme une erreur humaine est toujours possible, vérifiez que le lien d’exclusion fonctionne correctement avant chaque envoi. Par exemple, lors de l’envoi du BAT, vérifiez que le lien est valide, que le formulaire est en ligne et que la valeur du champ `No longer contact this recipient ` est définie sur `Yes`.
 
 +++
 
 ### Taille des emails {#email-size-check}
 
-Pour éviter des problèmes de performances ou de délivrabilité, la taille maximale recommandée d’un email est d’environ **35 Ko**. Pour vérifier la taille du message, parcourez l&#39;onglet **[!UICONTROL Aperçu]** et choisissez un profil de test. Une fois généré, la taille du message s’affiche dans le coin supérieur droit.
+Pour éviter des problèmes de performances ou de délivrabilité, la taille maximale recommandée d’un email est d’environ **35 Ko**. Pour vérifier la taille du message, accédez à l’onglet **[!UICONTROL Aperçu]** et choisissez un profil de test. Une fois le message généré, sa taille s’affiche en haut à droite.
 
 
-+++ **Lisez quelques bonnes pratiques**
++++ **Lire quelques bonnes pratiques**
 
 * Supprimer les styles redondants ou inutilisés
 
@@ -202,13 +202,13 @@ Veillez à tester toutes les modifications avant l’envoi final.
 Par défaut, le nombre de caractère d&#39;un SMS respecte la norme de téléphonie mobile GSM (Global System for Mobile Communications). Les SMS utilisant l&#39;encodage GSM sont limités à 160 caractères, ou 153 caractères par SMS pour les messages envoyés en plusieurs parties.
 
 
-+++ **Lisez quelques bonnes pratiques**
++++ **Lire quelques bonnes pratiques**
 
 * Pour conserver tous les caractères de vos SMS, afin de ne pas altérer les noms propres par exemple, n&#39;activez pas la translittération.
 
-* Cependant, si vos SMS contiennent beaucoup de caractères qui ne sont pas pris en charge par la norme GSM, activez la translittération pour limiter les coûts d&#39;envoi de vos messages. En savoir plus [dans cette section](../send/sms/smpp-external-account.md#smpp-transliteration).
+* En revanche, si vos SMS contiennent beaucoup de caractères qui ne sont pas pris en charge par la norme GSM, activez la translittération afin de limiter le coût de vos envois. En savoir plus [dans cette section](../send/sms/smpp-external-account.md#smpp-transliteration).
 
-* Vous pouvez appliquer la translittération des SMS, qui consiste à remplacer un caractère d&#39;un SMS par un autre lorsque ce caractère n&#39;est pas pris en compte par la norme GSM. Notez que l&#39;insertion de champs de personnalisation dans le contenu du SMS peut introduire des caractères non pris en charge par l&#39;encodage GSM. En tant qu’administrateur de Campaign, vous pouvez activer la translittération des caractères en cochant la case correspondante dans l’onglet Paramètres du canal SMPP du **[!UICONTROL Compte externe]** correspondant. [En savoir plus](../send/sms/smpp-external-account.md#smpp-transliteration)
+* Vous pouvez appliquer la translittération aux SMS. Celle-ci consiste à remplacer un caractère d’un SMS par un autre lorsque ce caractère n’est pas pris en charge par la norme GSM. Notez que l&#39;insertion de champs de personnalisation dans le contenu du SMS peut introduire des caractères non pris en charge par l&#39;encodage GSM. En tant qu’administrateur ou administratrice Campaign, vous pouvez autoriser la translittération des caractères en cochant la case correspondante dans l’onglet des paramètres du canal SMPP du **[!UICONTROL compte externe]** correspondant. [En savoir plus](../send/sms/smpp-external-account.md#smpp-transliteration)
 
 +++
 
@@ -229,15 +229,15 @@ To avoid common formatting errors, check the following elements:
 
 ## Gestion des images {#manage-images}
 
-Voici quelques instructions spécifiques pour optimiser les images pour votre campagne de marketing par e-mail.
+Voici quelques instructions spécifiques pour optimiser les images de votre campagne de marketing par e-mail.
 
 ### Empêcher le blocage des images {#image-blocking}
 
-Certains clients de messagerie bloquent les images par défaut et les utilisateurs peuvent modifier leurs paramètres pour bloquer les images afin d’optimiser l’utilisation des données.  Par conséquent, si les images ne sont pas téléchargées, l’ensemble du message peut être perdu.
+Certains clients de messagerie bloquent les images par défaut, et les utilisateurs et utilisatrices peuvent modifier leurs paramètres pour bloquer les images afin de réduire l’utilisation des données. Dans ce cas, si les images ne sont pas téléchargées, il est possible que l’ensemble du message soit perdu.
 
-+++ Pour éviter cela, vous pouvez appliquer les bonnes pratiques suivantes :
++++ Pour éviter cela, vous pouvez appliquer les bonnes pratiques suivantes :
 
-* Évitez les emails basés entièrement sur des images. Équilibrez le contenu avec l’image et le texte.
+* Évitez les e-mails basés entièrement sur des images. Équilibrez le contenu entre image et texte.
 
 * Si le texte doit être contenu dans une image, utilisez du texte de titre et du texte alternatif pour vous assurer que votre message passe bien. Mettez en forme votre texte de titre et alternatif pour améliorer son aspect.
 
@@ -246,15 +246,15 @@ Certains clients de messagerie bloquent les images par défaut et les utilisateu
 
 ### Rendre les images réactives {#responsive-images}
 
-Essayez de rendre les images réactives et redimensionnables afin de les rendre visibles dans tous les contextes et appareils. Notez que ceci peut avoir un impact sur les coûts, car la création prend plus de temps.
+Essayez de rendre les images réactives et redimensionnables afin de les rendre visibles dans tous les contextes et appareils. Notez que cela peut avoir un impact sur les coûts, car la création prend plus de temps.
 
 ### Utiliser des références absolues pour l&#39;accès à l&#39;image {#absolute-images}
 
 Pour être accessibles depuis l&#39;extérieur, les images utilisées dans les e-mails et les ressources publiques associées aux opérations doivent être présentes sur un serveur accessible de l&#39;extérieur.
 
-* Depuis l’assistant de diffusion, vous pouvez importer une page HTML contenant des images ou insérer des images directement depuis l’éditeur HTML à partir de l’icône **[!UICONTROL Image]**.
+* Dans l’assistant de diffusion, vous pouvez importer une page HTML contenant des images ou insérer des images directement depuis l’éditeur HTML à l’aide de l’icône **[!UICONTROL Image]**.
 
-* Si les images ne sont pas affichées, vérifiez qu&#39;elles sont disponibles sur le serveur. Pour ce faire, accédez à l&#39;onglet **Source** de votre diffusion. Recherchez vos images, copiez l&#39;URL de chaque image et collez-la dans un navigateur web. Si les images ne sont toujours pas affichées, contactez votre administrateur informatique ou le fournisseur tiers du contenu de votre diffusion.
+* Si les images ne sont pas affichées, vérifiez qu&#39;elles sont disponibles sur le serveur. Pour ce faire, accédez à l’onglet **Source** de votre diffusion. Recherchez vos images, copiez l&#39;URL de chaque image et collez-la dans un navigateur web. Si les images ne sont toujours pas affichées, contactez votre administrateur ou administratrice informatique ou le fournisseur tiers du contenu de votre diffusion.
 
 ### Prévisualiser et tester votre message {#preview-msg}
 
@@ -269,7 +269,7 @@ Dans l’assistant de diffusion, le sous-onglet **[!UICONTROL Prévisualisation]
 
 ## Définition de lʼaudience appropriée {#define-the-right-audience}
 
-La population ciblée est essentielle : créez soigneusement vos listes, testez vos emails sur les clients de messagerie et les appareils mobiles les plus utilisés et vérifiez que vos listes email sont à jour (sans adresses inconnues ou obsolètes). Vous pouvez également envoyer des bons à tirer pour configurer un cycle de validation complet. Pour en savoir plus sur les audiences, consultez [cette section](../audiences/gs-audiences.md).
+La population ciblée est essentielle : créez soigneusement vos listes, testez vos emails sur les clients de messagerie et les appareils mobiles les plus utilisés et vérifiez que vos listes email sont à jour (sans adresses inconnues ou obsolètes). Vous pouvez également envoyer des BAT permettant de configurer un cycle de validation complet. Pour en savoir plus sur les audiences, consultez [cette section](../audiences/gs-audiences.md).
 
 ### Cibler la bonne audience {#target-the-right-audience}
 
@@ -279,7 +279,7 @@ Pour réussir votre diffusion, vous devez envoyer le contenu personnalisé le pl
 
 ### Mappings de ciblage {#target-mappings}
 
-Dans Campaign, par défaut, les modèles de diffusion ciblent **Destinataires**. Adobe Campaign propose d’autres mappings de ciblage pour vos diffusions, que vous pouvez modifier en fonction de vos besoins. Vous pouvez, par exemple, envoyer votre diffusion à des visiteurs dont le profil a été collecté par le biais des réseaux sociaux ou à des visiteurs qui se sont abonnés à un service d&#39;information.
+Par défaut, dans Campaign, les modèles de diffusion ciblent les **Destinataires**. Adobe Campaign propose d’autres mappings de ciblage pour vos diffusions, que vous pouvez modifier selon vos besoins. Vous pouvez, par exemple, envoyer votre diffusion à des visiteurs dont le profil a été collecté par le biais des réseaux sociaux ou à des visiteurs qui se sont abonnés à un service d&#39;information.
 
 Ces mappings sont présentés [dans cette section](../audiences/target-mappings.md).
 
@@ -312,12 +312,12 @@ Pour garantir votre réputation et assurer une bonne gestion des quarantaines, d
 **Rubriques connexes :**
 
 * [Activité Déduplication](../../automation/workflow/deduplication.md).
-* [Cas pratique : utilisation de la fonctionnalité de fusion de l’activité Déduplication](../../automation/workflow/deduplication-merge.md).
+* [Cas d’utilisation : utilisation de la fonctionnalité de fusion de l’activité Déduplication](../../automation/workflow/deduplication-merge.md).
 
 
-## Effectuer toutes les vérifications avant d’envoyer {#perform-all-checks}
+## Effectuer toutes les vérifications avant l’envoi {#perform-all-checks}
 
-Une fois votre message prêt, vérifiez que son contenu s&#39;affiche correctement sur tous les appareils et ne contient aucune erreur, telle qu&#39;une personnalisation incorrecte ou des liens rompus. Avant d’envoyer votre message, vérifiez également que les paramètres et la configuration sont cohérents par rapport à la diffusion.
+Une fois que votre message est prêt, vérifiez que le contenu s’affiche correctement sur tous les appareils et qu’il ne contient aucune erreur, comme des liens rompus ou une personnalisation incorrecte. Avant d’envoyer votre message, vérifiez également que les paramètres et la configuration sont cohérents par rapport à la diffusion.
 
 Les étapes de validation d&#39;une diffusion sont présentées [dans cette section](../send/preview-and-proof.md).
 
@@ -336,7 +336,7 @@ Learn more [in this section](inbox-rendering.md).-->
 
 ### Messages de BAT {#proof-messages}
 
-L’envoi de BAT permet de vérifier le lien de désinscription (opt-out), la page miroir et d’autres liens, de valider le message, de vérifier le bon affichage des images, de détecter les erreurs possibles, etc. Vous souhaiterez peut-être également vérifier votre conception et le rendu sur différents appareils.
+L’envoi de BAT permet de vérifier le lien d’exclusion, la page miroir et d’autres liens, de valider le message, de vérifier le bon affichage des images, de détecter les erreurs possibles, etc. Vous souhaiterez peut-être également vérifier votre conception et le rendu sur différents appareils.
 
 <!--
 ### Set up A/B testing deliveries {#a-b-testing-deliveries}
@@ -353,7 +353,7 @@ Learn more [in this section](get-started-a-b-testing.md).-->
 
 ### Vérifiez que votre message est bien délivré.  {#make-sure-your-message-is-delivered}
 
-En dernier lieu, tirez parti des fonctionnalités d&#39;Adobe Campaign et augmentez vos chances que votre message soit délivré aux bons destinataires.
+En dernier lieu, tirez parti des fonctionnalités d&#39;Adobe Campaign et augmentez vos chances que votre message soit délivré aux bonnes personnes destinataires.
 
 #### Suivre un processus de validation
 
@@ -407,18 +407,18 @@ Vous avez cliqué sur le bouton **Envoyer** ? Voyons maintenant ce qui se passe
 
 ## Surveillance des diffusions {#monitoring-deliveries}
 
-Pour contrôler vos campagnes, vous devez vérifier que le message a bien été diffusé à vos destinataires.
+Pour contrôler vos campagnes, vous devez vérifier que le message a bien été délivré à vos destinataires.
 
-Depuis le tableau de bord des diffusions Campaign, vous pouvez vérifier les messages traités et consulter les logs d&#39;audit de diffusion. Vous pouvez également contrôler le statut des messages dans les logs de diffusion.
+Dans le tableau de bord des diffusions de Campaign, vous pouvez vérifier les messages traités et consulter les logs d’audit de diffusion. Vous pouvez également contrôler le statut des messages dans les logs de diffusion.
 
 [En savoir plus sur la surveillance des diffusions dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=fr){target="_blank"}.
 
 
 ## Tracking du comportement {#track-behaviour}
 
-Pour mieux connaître le comportement de vos destinataires, vous pouvez suivre leur réaction à une diffusion : réception, ouverture, clics sur des liens, désabonnements, etc. Dans Campaign, ces informations sont affichées dans l&#39;onglet **Tracking** des destinataires ciblés par la diffusion et dans l&#39;onglet Tracking de la diffusion.
+Pour mieux connaître le comportement de vos destinataires, vous pouvez suivre leur réaction à une diffusion : réception, ouverture, clics sur des liens, désabonnements, etc. Dans Campaign, ces informations figurent dans l’onglet **Tracking** des personnes destinataires ciblées par la diffusion et dans l’onglet Tracking de la diffusion.
 
 Le tracking des messages est activé par défaut. Pour configurer les URL, sélectionnez l’option Afficher les URL dans la section inférieure de l’assistant de diffusion. Pour chaque URL du message, vous pouvez choisir d’activer ou non le tracking.
 
 
-[En savoir plus sur les fonctionnalités de suivi dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html?lang=fr#sending-messages){target="_blank"}
+[En savoir plus sur les fonctionnalités de tracking dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html?lang=fr#sending-messages){target="_blank"}.

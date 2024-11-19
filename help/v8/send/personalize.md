@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
 source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '478'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Pour améliorer la protection de la diffusion, vous pouvez définir un délai d�
 
 Dans l’onglet **[!UICONTROL Livraison]** des **[!UICONTROL Propriétés de diffusion]**, sélectionnez une valeur maximale en secondes pour l’option **[!UICONTROL Durée maximale d’exécution de la personnalisation]**.
 
-Lors de l&#39;aperçu ou de l&#39;envoi, si la phase de personnalisation dépasse la durée maximale définie dans ce champ, le processus est abandonné avec un message d&#39;erreur et la diffusion échoue.
+Lors de la prévisualisation ou de l’envoi, si la phase de personnalisation dépasse la durée maximale définie dans ce champ, le processus est abandonné avec un message d’erreur et la diffusion échoue.
 
 La valeur par défaut est de 5 secondes.
 

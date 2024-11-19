@@ -6,9 +6,9 @@ title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
 source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 99%
       + [Définir les paramètres d’e-mail supplémentaires](send/email-parameters.md)
       + [Envoyer et surveiller des e-mails](send/send.md)
    + SMS {#sms}
-      + [Commencer avec les SMS](send/sms/sms.md)
+      + [Prise en main des SMS](send/sms/sms.md)
       + Configurer le canal SMS {#config-sms}
          + [Paramètres de diffusion des SMS](send/sms/sms-delivery-settings.md)
          + [Paramètres de compte externe SMPP](send/sms/smpp-external-account.md)
@@ -62,7 +62,7 @@ ht-degree: 99%
          + [Infrastructure de midsourcing](send/sms/sms-mid-sourcing.md)
          + [Description du connecteur SMPP](send/sms/smpp-connector-delivery.md)
       + Créer un SMS {#create-sms}
-         + [Création d’une diffusion SMS](send/sms/create-sms.md)
+         + [Créer une diffusion SMS](send/sms/create-sms.md)
          + [Définir le contenu](send/sms/sms-content.md)
          + [Sélectionner l’audience](send/sms/sms-audience.md)
       + Valider et envoyer des SMS {#validate-sms}
@@ -143,7 +143,7 @@ ht-degree: 99%
       + [Appel dʼune offre dans une page web](interaction/interaction-integration.md)
       + [Gestion des interactions anonymes](interaction/anonymous-interactions.md)
    + [Rapports et historique](interaction/interaction-tracking.md)
-   + [Cas pratiques](interaction/interaction-use-cases.md)
+   + [Cas d’utilisation](interaction/interaction-use-cases.md)
 + Rapports et analyses {#analytics}
    + [Suivre et surveiller](start/tracking.md)
    + [Journal d’audit](reporting/audit-trail.md)

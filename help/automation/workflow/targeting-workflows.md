@@ -4,9 +4,9 @@ description: Découvrez comment créer des audiences cibles dans un workflow.
 feature: Query Editor, Data Management
 exl-id: 27be9d5a-168c-470e-a480-f3c71858fc75
 source-git-commit: 122d78e310e66d5f354ffbc86c27a2fbff007447
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2370'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -106,7 +106,7 @@ Dans les activités de type **[!UICONTROL Union]** ou **[!UICONTROL Intersection
 
 ![](assets/use-common-add-data-only.png)
 
-### Réconcilier avec les données additionnelles {#reconciliation-with-additional-data}
+### Réconcilier avec les données supplémentaires {#reconciliation-with-additional-data}
 
 Lors des phases de réconciliation des données (dans les activités **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.), il est possible de sélectionner les colonnes à utiliser pour la réconciliation des données parmi les colonnes additionnelles. Pour cela, paramétrez une réconciliation sur une sélection de colonnes et indiquez l&#39;ensemble principal. Sélectionnez ensuite les colonnes dans la section inférieure de la fenêtre, comme dans l&#39;exemple ci-dessous :
 

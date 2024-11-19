@@ -1,26 +1,26 @@
 ---
 title: Créer une diffusion SMS
-description: Découvrez comment créer une diffusion SMS
+description: Découvrez comment créer une diffusion SMS.
 feature: SMS
 role: User
 level: Beginner, Intermediate
-source-git-commit: 0ef082b49261d0d2de5a6891a4a7f0cf5aafa221
-workflow-type: tm+mt
+exl-id: 3b15eb3e-8625-4049-bf0d-327407ae5ea6
+source-git-commit: 25a4ac40f8a178b85e88fbce1ff32ebe2c027f4b
+workflow-type: ht
 source-wordcount: '177'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
-
-# Créer votre première diffusion par SMS {#sms-delivery}
+# Créer votre première diffusion SMS {#sms-delivery}
 
 Pour créer une diffusion SMS, procédez comme suit :
 
-1. Créez une nouvelle diffusion et sélectionnez le [modèle de diffusion SMS](sms-mid-sourcing.md#sms-delivery-template) que vous avez créé pour vos envois de SMS.
+1. Créez une diffusion et sélectionnez le [modèle de diffusion SMS](sms-mid-sourcing.md#sms-delivery-template) que vous avez créé pour vos envois de SMS.
 
    ![](assets/sms_create.png){zoomable="yes"}
 
-   Les étapes de création d&#39;une diffusion sont détaillées dans [cette page](../../start/create-message.md).
+   Les étapes de la création d’une diffusion sont présentées dans [cette page](../../start/create-message.md).
 
 <!-- * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
 * For mid-sourcing infrastructure, -->
@@ -39,9 +39,9 @@ Pour créer une diffusion SMS, procédez comme suit :
 
 Les étapes de définition d’une audience sont décrites sur [cette page](../../audiences/create-audiences.md).
 
-## Valider et envoyer des SMS {#sms-validate}
+## Valider et envoyer les SMS {#sms-validate}
 
-Après la création de votre diffusion, vous pouvez :
+Après la création de votre diffusion, vous pouvez effectuer les opérations suivantes :
 
 1. [Envoyez des BAT](sms-proofs.md) pour valider le rendu et le contenu.
 
@@ -50,5 +50,3 @@ Après la création de votre diffusion, vous pouvez :
 ## Surveiller et suivre les SMS {#sms-monitor}
 
 Après l’envoi, [apprenez à surveiller et suivre vos SMS](sms-monitor.md).
-
-

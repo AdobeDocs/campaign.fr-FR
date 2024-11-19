@@ -1,40 +1,40 @@
 ---
-title: Définir et personnaliser le contenu du SMS
-description: Découvrez comment définir et personnaliser le contenu d'une diffusion SMS
+title: Définir et personnaliser le contenu des SMS
+description: Découvrez comment définir et personnaliser le contenu d’une diffusion SMS.
 feature: SMS
 role: User
 level: Beginner, Intermediate
 exl-id: 71d9376c-86e8-41ec-92dc-863455d40c7a
 source-git-commit: 0ef082b49261d0d2de5a6891a4a7f0cf5aafa221
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
-# Définition du contenu des SMS {#sms-content}
+# Définir le contenu des SMS {#sms-content}
 
 Pour configurer le contenu de votre diffusion SMS :
 
-1. Saisissez le contenu de votre message dans l&#39;onglet **[!UICONTROL Contenu texte]** .
+1. Saisissez le contenu du message dans l’onglet **[!UICONTROL Contenu texte]**.
 
    ![](assets/sms_content.png){zoomable="yes"}
 
-1. Vous pouvez personnaliser votre message en insérant des champs de personnalisation (par exemple, en ajoutant le prénom) ou en insérant un bloc de personnalisation prédéfini (par exemple, en ajoutant les salutations). Cliquez sur le bouton de personnalisation pour ajouter ces éléments :
+1. Vous pouvez personnaliser votre message en insérant des champs de personnalisation (par exemple, en ajoutant le prénom) ou en insérant un bloc de personnalisation prédéfini (par exemple, en ajoutant les salutations). Cliquez sur le bouton de personnalisation pour ajouter ces éléments :
 
    ![](assets/sms_perso.png){zoomable="yes"}
 
-   Par exemple, après avoir cliqué sur **[!UICONTROL Destinataire]** > **[!UICONTROL Prénom]**, le contenu du SMS est mis à jour avec le champ de personnalisation, comme ci-dessous :
+   Par exemple, après avoir cliqué sur **[!UICONTROL Destinataire]** > **[!UICONTROL Prénom]**, le contenu du SMS est mis à jour avec le champ de personnalisation, comme ci-dessous :
 
    ![](assets/sms_perso_recipient.png){zoomable="yes"}
 
-   En savoir plus sur la personnalisation dans Adobe Campaign dans [cette section](../personalize.md).
+   En savoir plus sur la personnalisation dans Adobe Campaign dans [cette section](../personalize.md).
 
-1. Vous pouvez prévisualiser le contenu de la diffusion depuis l&#39;onglet **[!UICONTROL Aperçu]**. Pour vérifier vos paramètres de personnalisation, cliquez sur la liste déroulante **[!UICONTROL Tester la personnalisation]** et sélectionnez un destinataire.
+1. Vous pouvez prévisualiser le contenu de la diffusion dans l&#39;onglet **[!UICONTROL Aperçu]**. Pour vérifier vos paramètres de personnalisation, cliquez sur la liste déroulante **[!UICONTROL Tester la personnalisation]** et sélectionnez une personne destinataire.
 
    ![](assets/sms_preview.png){zoomable="yes"}
 
-   Vous pouvez vérifier l&#39;aperçu de votre SMS avec la personnalisation :
+   Vous pouvez vérifier la prévisualisation de votre SMS avec la personnalisation :
 
    ![](assets/sms_preview_phone.png){zoomable="yes"}
 
