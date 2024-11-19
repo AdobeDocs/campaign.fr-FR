@@ -6,7 +6,7 @@ role: User
 level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3042'
 ht-degree: 100%
 
@@ -312,7 +312,7 @@ Si l&#39;APNS renvoie de manière synchrone un statut &quot;désinscrit&quot; po
    <td> Non<br /> </td> 
   </tr> 
   <tr> 
-   <td> Problème de certificat (mot de passe, élément corrompu, etc.) et problème de test de la connexion aux APN<br /> </td> 
+   <td> Problème de certificat (mot de passe, endommagement, etc.) et problème de test de connexion à l'APNS<br /> </td> 
    <td> Echec<br /> </td> 
    <td> Messages d'erreur différents selon l'erreur<br /> </td> 
    <td> Soft<br /> </td> 

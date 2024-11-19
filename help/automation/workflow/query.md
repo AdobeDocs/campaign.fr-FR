@@ -88,7 +88,7 @@ Pour ajouter des données de la base Adobe Campaign :
 
      Vous pouvez également ajouter une collection d’informations, par exemple une liste de contrats, les 5 dernières diffusions, etc. Les collections correspondent à des champs dont les valeurs peuvent être multiples pour un même profil (relation 1-N). Pour plus dʼinformations, consultez la section [Modification des données additionnelles](targeting-workflows.md#editing-additional-data).
 
-Pour ajouter une collection d&#39;informations liées à une population ciblée :
+Pour ajouter une collection d’informations liées à une population ciblée, procédez comme suit :
 
 1. Sélectionnez l&#39;option **[!UICONTROL Données liées à la dimension de filtrage]** à la première étape de l&#39;assistant :
 1. Sélectionnez la table contenant les informations à collecter et cliquez sur le bouton **[!UICONTROL Suivant.]**

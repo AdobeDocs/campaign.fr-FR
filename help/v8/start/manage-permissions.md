@@ -8,7 +8,7 @@ exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
 source-wordcount: '1734'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -115,7 +115,7 @@ Ces profils de produit correspondent aux **groupes d’opérateurs** Campaign. L
 
 1. **[!UICONTROL Personnes chargées de la gestion de Campaign]** (opération)
 
-   Les opérateurs de ce groupe peuvent gérer les campagnes marketing : il permet d&#39;accéder aux objets relatifs aux opérations (plans, programmes, workflows, budgets, etc.) dans le cadre de **[!UICONTROL Campaign]** (module facultatif Adobe Campaign).
+   Les opérateurs de ce groupe peuvent gérer les opérations marketing : il permet d&#39;accéder aux objets liés aux opérations (plans, programmes, workflows, budgets, etc.) dans le cadre de **[!UICONTROL Campaign]** (module optionnel Adobe Campaign).
 
    Ce groupe contient les droits nommés suivants :
 

@@ -6,7 +6,7 @@ title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
 source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 100%
 

@@ -20,7 +20,7 @@ Par défaut, le module **Interaction** de Campaign comprend un environnement pr�
 
 Lorsque vous créez l&#39;environnement anonyme via l&#39;assistant de création de mapping, la case **[!UICONTROL Environnement dédié aux interactions anonymes entrantes]** est automatiquement cochée dans l&#39;onglet **[!UICONTROL Général]** de l&#39;environnement.
 
-La **[!UICONTROL Dimension de ciblage]** est automatiquement préremplie. Elle pointe par défaut sur la table des visiteurs.
+La **[!UICONTROL Dimension de ciblage]** est automatiquement préremplie. Elle pointe par défaut sur le tableau des visiteurs et visiteuses.
 
 Le champ **[!UICONTROL Dossier des visiteurs]** s&#39;affiche. Il est automatiquement prérempli pour pointer sur le dossier **[!UICONTROL Visiteurs]**. Ce champ permet de spécifier l&#39;endroit où sont stockés les profils des visiteurs.
 

@@ -7,9 +7,9 @@ level: Beginner
 role: User, Admin
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
 source-git-commit: d292c20e520b2466f782ccf86eb9d61e01915563
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1216'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Un workflow est toujours démarré manuellement. Au démarrage, il peut toutefois rester inactif en fonction des informations spécifiées par le biais d&#39;un planificateur (voir [Planificateur](scheduler.md)) ou d&#39;une planification d&#39;activité.
 
-Les actions liées à l&#39;exécution du workflow de ciblage (lancement, arrêt, pause, etc.) sont des processus **asynchrones** : la commande est enregistrée et est effective dès que le serveur est disponible pour l’appliquer.
+Les actions relatives à l&#39;exécution du workflow de ciblage (lancement, arrêt, pause, etc.) sont des processus **asynchrones** : la commande est enregistrée et sera effective dès que le serveur sera disponible pour l&#39;appliquer.
 
 La barre d&#39;outils permet de lancer et suivre l&#39;exécution du workflow.
 
@@ -79,7 +79,7 @@ Le bouton **[!UICONTROL Actions]** de la barre d’outils permet d’accéder à
 
 * **[!UICONTROL Démarrer en mode simulation]**
 
-  Cette option permet de lancer le workflow en mode simulation et non en mode réel. Cela signifie que lorsque vous activez ce mode, seules les activités qui n&#39;ont pas d&#39;impact sur la base de données ou le système de fichiers sont exécutées (par exemple : **[!UICONTROL Requête]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). Les activités qui ont un impact (par exemple, **[!UICONTROL Exporter]**, **[!UICONTROL Importer]**, etc.) ainsi que celles qui les suivent (dans la même branche) ne sont pas exécutées.
+  Cette option permet de lancer le workflow en mode simulation et non en mode réel. Cela signifie que lorsque vous activez ce mode, seules les activités qui n&#39;ont pas d&#39;impact sur la base de données ou le système de fichiers sont exécutées (par exemple : **[!UICONTROL Requête]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). Les activités qui ont un impact (par exemple **[!UICONTROL Export]**, **[!UICONTROL Import]**, etc.) ainsi que celles qui les suivent (dans la même branche) ne sont pas exécutées.
 
 * **[!UICONTROL Traitement anticipé des tâches en attente]**
 

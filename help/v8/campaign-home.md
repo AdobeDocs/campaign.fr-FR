@@ -4,7 +4,7 @@ description: Centre d'aide de Campaign v8
 title: Documentation du produit Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
 source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 100%
 

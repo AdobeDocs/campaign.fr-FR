@@ -6,9 +6,9 @@ role: Admin, Developer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
 source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1050'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -55,7 +55,7 @@ La base de données [!DNL Snowflake] côté marketing permet d’effectuer les o
 * Stocker toutes les données client : les profils, les données personnalisées comme les transactions, les produits, les emplacements, etc.
 * Stocker l’ensemble des événements et des données de comportement générés ou collectés par Campaign, tels que les logs de diffusion, les logs de tracking, les enregistrements push, etc.
 * Stocker tous les agrégats de données de l’exemple ci-dessus
-* Stocker une copie (h+1) des tables de référence (comme les diffusions, les énumérations, les pays, etc.) qui sont utilisées dans les workflows, les campagnes et les rapports
+* Stockez une copie (h+1) des tables de référence (diffusions, énumérations, pays, etc.) qui sont utilisées dans les workflows, les campagnes et les rapports.
 * Exécution de tous les processus et workloads par lots
 
 
@@ -63,7 +63,7 @@ La base de données PostgreSQL sur l&#39;instance marketing est utilisée pour 
 
 * Exécuter certaines workloads, telles que les API à faible volume
 * Stocker toutes les données de Campaign, y compris les paramètres de diffusion et de campagne, les définitions de workflow et de service
-* Stocker toutes les tables de référence intégrées (énumérations, pays, etc.) qui sont répliqués vers [!DNL Snowflake]
+* Stocker toutes les tables de référence intégrées (énumérations, pays, etc.) qui sont répliquées vers [!DNL Snowflake].
 
   Cependant, vous ne pouvez pas :
    * Créer des personnalisations pour les données client ; par exemple, ne créez pas de table domestique dans PostgreSQL, mais uniquement dans Snowflake

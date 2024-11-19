@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
 source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Pour prévisualiser le contenu du message, procédez comme suit :
 
 ## Envoyer des BAT {#send-proofs}
 
-Pour les diffusions e-mail, vous pouvez envoyer des BAT pour valider le contenu de votre message. L’envoi de BAT permet de vérifier le lien de désinscription (opt-out), la page miroir et d’autres liens, de valider le message, de vérifier le bon affichage des images, de détecter les erreurs possibles, etc. Vous souhaiterez peut-être également vérifier votre conception et le rendu sur différents appareils.
+Pour les diffusions e-mail, vous pouvez envoyer des BAT pour valider le contenu de votre message. L’envoi de BAT permet de vérifier le lien d’exclusion, la page miroir et d’autres liens, de valider le message, de vérifier le bon affichage des images, de détecter les erreurs possibles, etc. Vous souhaiterez peut-être également vérifier votre conception et le rendu sur différents appareils.
 
 Le BAT est un message spécifique qui permet de tester un message avant son envoi à l’audience principale. Les destinataires du BAT procèdent ensuite à la validation du message : rendu, contenu, paramètres de personnalisation et configuration.
 

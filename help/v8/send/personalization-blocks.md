@@ -8,7 +8,7 @@ exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -71,7 +71,7 @@ Pour créer un bloc de personnalisation, procédez comme suit :
    * Sélectionnez un type de contenu de **Diffusion**.
    * Sélectionnez l’option **[!UICONTROL Afficher dans les menus de personnalisation]** pour pouvoir accéder à ce bloc à partir de l’icône d’insertion de champs de personnalisation.
    * Le cas échéant, sélectionnez l’option **[!UICONTROL Le contenu du bloc de personnalisation dépend du format]** pour définir deux blocs distincts pour les e-mails au format HTML et texte.
-   * Saisissez le contenu (en langage HTML, texte, JavaScript, etc.) du bloc de personnalisation, puis cliquez sur **[!UICONTROL Enregistrer]**.
+   * Saisissez le contenu (dans l&#39;HTML, le texte, JavaScript, etc.) du bloc de personnalisation et cliquez sur **[!UICONTROL Enregistrer]**.
 
 Une fois enregistré, le nouveau bloc de personnalisation est disponible dans l’éditeur de diffusion.
 

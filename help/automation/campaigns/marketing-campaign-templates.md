@@ -8,7 +8,7 @@ exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1018'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -59,7 +59,7 @@ Le lien **[!UICONTROL Paramètres avancés de la campagne…]** vous permet d&#3
 
 ![](assets/campaign-template-select-modules.png)
 
-Si une fonctionnalité n&#39;est pas sélectionnée, les éléments relatifs au processus (menus, icônes, options, onglets, sous-onglets, etc.) n&#39;apparaîtront pas dans l&#39;interface du modèle ou dans les campagnes basées sur celui-ci. Les onglets situés à gauche des détails de la campagne, ainsi que ceux disponibles, coïncident généralement avec les processus sélectionnés dans le modèle. Par exemple, si la fonctionnalité **Dépenses et objectifs** n&#39;est pas sélectionnée, l&#39;onglet **[!UICONTROL Budget]** correspondant n&#39;apparaîtra pas dans les campagnes basées sur ce modèle.
+Si aucune fonctionnalité n&#39;est sélectionnée, les éléments concernant le processus (menus, icônes, options, onglets, sous-onglets, etc.) n&#39;apparaissent pas dans l&#39;interface du modèle ni dans les opérations basées sur ce modèle. Les onglets situés à gauche des détails de la campagne, ainsi que ceux disponibles, coïncident généralement avec les processus sélectionnés dans le modèle. Par exemple, si la fonctionnalité **Dépenses et objectifs** n&#39;est pas sélectionnée, l&#39;onglet **[!UICONTROL Budget]** correspondant n&#39;apparaîtra pas dans les campagnes basées sur ce modèle.
 
 De plus, des raccourcis vers les fenêtres de configuration sont ajoutés dans le tableau de bord de la campagne : lorsqu&#39;une fonctionnalité est activée, un lien direct permet d&#39;y accéder depuis le tableau de bord de la campagne.
 

@@ -5,7 +5,7 @@ feature: Reporting, Monitoring
 role: User, Data Engineer
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1880'
 ht-degree: 100%
 
@@ -61,7 +61,7 @@ Ce rapport présente la répartition des ouvertures, clics et transactions, par 
 Les options disponibles sont les suivantes :
 
 * **[!UICONTROL Ouvertures]** : nombre total de messages ouverts. Les e-mails au format texte ne sont pas pris en compte. [En savoir plus](metrics-calculation.md#tracking-opens-).
-* **[!UICONTROL Clics]** : nombre total de clics sur les liens des diffusions. Les clics sur les liens de désinscription et de page miroir ne sont pas pris en compte.
+* **[!UICONTROL Clics]** : Nombre total de clics sur les liens des diffusions. Les clics sur les liens de désinscription et de page miroir ne sont pas pris en compte.
 <!--
 * **[!UICONTROL Transactions]**: Total number of transactions after a message is received. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->

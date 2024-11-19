@@ -6,7 +6,7 @@ exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
 source-git-commit: 4fecae16b2db0f174de6d77acf5b846906073aeb
 workflow-type: tm+mt
 source-wordcount: '1925'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -205,7 +205,7 @@ _18 mai 2022_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Le marketing distribué de Campaign permet de mettre en place des opérations collaboratives entre les entités centrales (siège social, services marketing, etc.) et les entités locales (points de vente, agences régionales, etc.). Depuis un espace de travail partagé (kits d'opération), vous pouvez créer des modèles d’opération et les proposer à vos entités locales.</p>
+<td> <p>Le Marketing Distribué de Campaign permet de mettre en place des opérations collaboratives entre les entités centrales (siège social, départements marketing, etc.) et les entités locales (points de vente, agences régionales, etc.). Depuis un espace de travail partagé (kits d'opération), vous pouvez créer des modèles d’opération et les proposer à vos entités locales.</p>
 <p>Pour plus d’informations, consultez la <a href="../start/campaigns.md#distributed-marketing-add-on">documentation détaillée</a>.</p>
 </td> 
 </tr> 

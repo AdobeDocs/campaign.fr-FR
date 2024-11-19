@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 badge: label="Disponibilité limitée" type="Informative"
 exl-id: c4d500ef-2339-491f-9ae2-9bfaf72088a9
 source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 100%
 

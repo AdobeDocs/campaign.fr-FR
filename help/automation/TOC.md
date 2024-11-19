@@ -4,7 +4,7 @@ user-guide-title: Guide d'automatisation des campagnes
 user-guide-description: Guide d'automatisation des campagnes
 feature: Overview
 source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 100%
 

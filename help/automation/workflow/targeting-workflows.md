@@ -4,7 +4,7 @@ description: Découvrez comment créer des audiences cibles dans un workflow.
 feature: Query Editor, Data Management
 exl-id: 27be9d5a-168c-470e-a480-f3c71858fc75
 source-git-commit: 122d78e310e66d5f354ffbc86c27a2fbff007447
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2370'
 ht-degree: 100%
 
