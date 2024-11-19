@@ -5,10 +5,10 @@ description: En savoir plus sur les workflows techniques disponibles avec Campai
 feature: Workflows
 role: User, Admin
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: d4e28ddf6081881f02042416aa8214761ea42be9
+source-git-commit: 4cb825c1899243e72a66b9dea2e56c45dc466fde
 workflow-type: tm+mt
-source-wordcount: '1683'
-ht-degree: 100%
+source-wordcount: '1819'
+ht-degree: 92%
 
 ---
 
@@ -63,6 +63,7 @@ Découvrez comment surveiller les workflows techniques dans cette [section dédi
 | **Traitements sur le marketing distribué** (centralLocalMgt) | Marketing central/local (Marketing distribué) | Ce workflow exécute les traitements relatifs à l&#39;utilisation du module de marketing distribué. Il lance la création des opérations en local et gère les notifications relatives aux commandes et à la mise à disposition des kits d&#39;opération. |
 | **Purge des événements** (webAnalyticsPurgeWebEvents) | Connecteurs Web Analytics | Ce workflow permet de supprimer du champ de la base tous les événements selon la période paramétrée dans le champ Durée de vie. |
 | **Export d’audiences vers Adobe Experience Cloud** (exportSharedAudience) | Intégration avec Adobe Experience Cloud | Ce workflow permet d’exporter des audiences en tant qu’audiences/segments partagés. Ces audiences peuvent être exploitées dans les différentes solutions d’Adobe Experience Cloud que vous utilisez. |
+| **ffdaUnsuscribe** | Installé par défaut | Ce workflow gère les désabonnements reçus en tant que mails rebonds (à l’aide de la méthode `<mailto>` List-Unsubscribe). Il s’exécute tous les jours, toutes les 1 h, uniquement sur les instances marketing avec un déploiement d’entreprise (FFDA).<br/><br/>Le workflow vérifie les broadlogs d&#39;une période donnée (heure de dernier traitement et heure en cours) qui sont marqués comme bounces de désabonnement par le module inMail (marque définie dans la colonne iFlags de la table NmsBroadLog) et traite une désinscription selon que le service du broadlog est défini ou non :<ul><li>Si le serviceId est 0 (non défini), le destinataire sera placé sur la liste bloquée.</li><li>Si le serviceId n&#39;est pas 0 (associé à un service existant), le destinataire sera désabonné de ce service.</li></ul><br/>Remarque : Ce workflow gère uniquement les désabonnements en rebond ; les désabonnements effectués via le lien d’exclusion et la désinscription en un clic (méthode d’URL) sont gérés séparément en dehors de ce workflow. |
 | **Prévisionnel** (forecasting) | Diffusion | Ce workflow effectue l’analyse des diffusions enregistrées dans le calendrier prévisionnel (création des logs prévisionnels). Par défaut, il se déclenche tous les jours à 1h00. |
 | **Calcul de l&#39;agrégat full (cube propositionrcp)** (agg_nmspropositionrcp_full) | Moteur d’offres (Interaction) | Ce workflow met à jour l&#39;agrégat Complet (full) du cube Proposition d&#39;offre. Par défaut, il se déclenche tous les jours à 6H00. Cet agrégat capture les dimensions suivantes : Canal, Diffusion, Offre marketing et Date. Le cube Proposition d’offre est ensuite utilisé pour générer des rapports basés sur des offres. En savoir plus sur les cubes dans [cette section](../../v8/reporting/gs-cubes.md). |
 | **Identification des contacts convertis** (webAnalyticsFindConverted) | Connecteurs Web Analytics | Ce workflow répertorie les visiteurs du site ayant concrétisé leur achat après une campagne de remarketing. Les données récupérées par ce workflow sont accessibles dans le rapport Efficacité du remarketing (voir cette page). |
