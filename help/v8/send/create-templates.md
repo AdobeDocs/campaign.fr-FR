@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
 source-git-commit: 08e04f3642320df94d719a415e878e3a26d2e00f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1026'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 73%
 
 ## Prise en main des modèles de diffusion
 
-Chaque diffusion est créée à partir d&#39;un modèle. Un modèle est une configuration qui peut être réutilisée pour faciliter et normaliser votre mise en oeuvre. Vous pouvez utiliser un modèle intégré ou personnalisé.
+Chaque diffusion est créée à partir d’un modèle. Un modèle est une configuration qui peut être réutilisée pour faciliter et normaliser votre mise en œuvre. Vous pouvez utiliser un modèle intégré ou personnalisé.
 
-Un modèle peut inclure des paramètres de configuration complets ou partiels, tels que :
+Un modèle peut inclure des paramètres de configuration complets ou partiels, tels que :
 
 * [Règles de typologie](../../automation/campaign-opt/campaign-typologies.md)
 * Adresses d&#39;expéditeur et destinataire
@@ -30,20 +30,20 @@ Un modèle peut inclure des paramètres de configuration complets ou partiels, t
 
 ![](assets/do-not-localize/how-to-video.png) [Découvrez cette fonctionnalité en vidéo](#delivery-template-video)
 
-Les modèles de diffusion sont stockés dans le dossier **[!UICONTROL Ressources > Modèles > Modèles de diffusion]** de l&#39;Explorateur. Dans Adobe Campaign, vous pouvez utiliser deux types de modèles :
+Les modèles de diffusion sont stockés dans le dossier **[!UICONTROL Ressources > Modèles > Modèles de diffusion]** de l’explorateur. Dans Adobe Campaign, vous pouvez utiliser deux types de modèles :
 
-1. Modèles de diffusion **intégrés d’Adobe Campaign - Des modèles intégrés sont disponibles pour chaque canal.** Elles NE DOIVENT PAS être modifiées ni supprimées. Ils incluent une configuration de base pour chaque canal de diffusion. En tant qu’administrateur, vous pouvez définir des valeurs par défaut ou restreindre certaines fonctions aux utilisateurs finaux, comme la modification des paramètres de suivi, des adresses email de l’expéditeur, etc. Les modèles natifs apparaissent en gras dans la liste des modèles.
+1. Modèles de diffusion **intégrés** d’Adobe Campaign - Des modèles intégrés sont disponibles pour chaque canal. Ils ne doivent être NI modifiés NI supprimés. Ils incluent une configuration de base pour chaque canal de diffusion. En tant qu’administrateur ou administratrice, vous pouvez définir des valeurs par défaut ou restreindre certaines fonctions pour les utilisateurs et utilisatrices, comme la modification des paramètres de suivi, des adresses e-mail d’expédition, etc. Les modèles intégrés apparaissent en gras dans la liste des modèles.
 
-1. **Modèles de diffusion personnalisés** - En tant qu’administrateur Adobe Campaign, vous pouvez créer des modèles de diffusion. La bonne pratique consiste à dupliquer et mettre à jour un modèle intégré plutôt que de créer entièrement un modèle. Vous pouvez par exemple configurer un modèle de diffusion par email. Lorsque les utilisateurs créent une diffusion à partir de ce modèle, ils n&#39;ont qu&#39;à saisir le texte ou le contenu de l&#39;HTML. Tous les autres paramètres sont déjà définis.
+1. Modèles de diffusion **personnalisés** - En tant qu’administrateur ou administratrice Adobe Campaign, vous pouvez créer des modèles de diffusion. Il est conseillé de dupliquer et de mettre à jour un modèle intégré, plutôt que de créer un modèle entièrement nouveau. Vous pouvez par exemple configurer un modèle de diffusion par e-mail. Lorsque les utilisateurs et utilisatrices créeront une diffusion à partir de ce modèle, ils n’auront qu’à saisir le texte ou le contenu HTML. Tous les autres paramètres sont déjà définis.
 
 >[!NOTE]
 >
->Les modèles disponibles dépendent de vos droits d’accès, de la configuration de votre instance et du contexte dans lequel ils sont appelés. Par exemple, lorsque vous créez un service d’information, vous pouvez y associer un modèle de diffusion pour les messages de confirmation : vous ne pourrez alors accéder qu’aux modèles dont le mapping de ciblage correspond à celui des abonnements. D’autres modèles ne sont pas visibles dans ce contexte. Pour plus d&#39;informations à ce sujet, reportez-vous aux sections [Utilisation des mappings de ciblage](../audiences/target-mappings.md) et [Gestion des abonnements et des désabonnements](../start/subscriptions.md).
+>Les modèles disponibles dépendent de vos droits d’accès, de la configuration de votre instance et du contexte dans lequel ils sont appelés. Par exemple, lorsque vous créez un service d’information, vous pouvez y associer un modèle de diffusion pour les messages de confirmation : vous ne pourrez alors accéder qu’aux modèles dont le mapping de ciblage correspond à celui des abonnements. Les autres modèles ne sont pas visibles dans ce contexte. Pour plus d’informations à ce sujet, reportez-vous aux sections [Utiliser des mappings cibles](../audiences/target-mappings.md) et [Gérer des abonnements et des désabonnements](../start/subscriptions.md).
 
 
 ## Créer un modèle {#create-a-delivery-template}
 
-Pour créer un modèle de diffusion, vous pouvez dupliquer un modèle intégré ou convertir une diffusion existante en modèle. Vous pouvez également créer entièrement un modèle de diffusion, mais cela n&#39;est pas recommandé. Ces méthodes sont présentées ci-dessous.
+Pour créer un modèle de diffusion, vous pouvez dupliquer un modèle intégré ou convertir une diffusion existante en modèle. Vous pouvez également créer un modèle de diffusion entièrement nouveau, mais cela n’est pas recommandé. Ces méthodes sont décrites ci-dessous.
 
 ### Duplication d’un modèle existant{#copy-an-existing-template}
 
@@ -121,11 +121,11 @@ Sélectionnez le modèle de diffusion à utiliser et cliquez sur **[!UICONTROL O
 
 ### Exécution d’un modèle {#execute-a-template}
 
-Vous pouvez lancer l&#39;exécution d&#39;un modèle directement depuis la liste des modèles, sans devoir créer de diffusion au préalable. Le modèle de diffusion peut être exécuté manuellement, comme décrit ci-dessous, ou déclenché par un événement (exécuté à un moment précis, lorsqu’un fichier est disponible sur le serveur, etc.), comme expliqué dans [cette section](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/delivery).
+Vous pouvez lancer l&#39;exécution d&#39;un modèle directement depuis la liste des modèles, sans devoir créer de diffusion au préalable. Le modèle de diffusion peut être exécuté manuellement, comme décrit ci-dessous, ou déclenché par un événement (exécuté à un moment précis, lorsqu’un fichier est disponible sur le serveur, etc.), comme expliqué dans [cette section](https://experienceleague.adobe.com/fr/docs/campaign/automation/workflows/wf-activities/action-activities/delivery).
 
-Pour exécuter manuellement un modèle, procédez comme suit :
+Afin d’exécuter un modèle manuellement, voici la marche à suivre :
 
-1. Sélectionnez le modèle à exécuter et cliquez avec le bouton droit de la souris. Sélectionnez **[!UICONTROL Actions > Exécuter le modèle de diffusion...]**.
+1. sélectionnez le modèle à exécuter et cliquez avec le bouton droit de la souris. Sélectionnez **[!UICONTROL Actions > Exécuter le modèle de diffusion...]**.
 
    Vous pouvez aussi utiliser le menu **[!UICONTROL Fichier > Actions > Exécuter le modèle de diffusion...]**.
 

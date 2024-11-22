@@ -6,15 +6,15 @@ role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 53fab31c21fdfe2f90c4793ccd025af1d5c0e061
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1610'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Créer votre première diffusion {#create-a-msg}
 
-Dans cette page, découvrez comment créer une diffusion unique ponctuelle. Vous pouvez créer d’autres types de diffusions pour créer vos cas d’utilisation. Découvrez les différents types de diffusion et comment les créer dans [cette page](gs-message.md).
+Dans cette page, vous découvrirez comment créer une diffusion unique ponctuelle. Vous pouvez créer d’autres types de diffusions pour élaborer vos cas d’utilisation. Découvrez les différents types de diffusion et comment les créer dans [cette page](gs-message.md).
 
 Les étapes clés de la création d’une diffusion ponctuelle sont les suivantes :
 

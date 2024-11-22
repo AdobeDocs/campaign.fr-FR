@@ -1,14 +1,14 @@
 ---
-title: Prise en main des campagnes
+title: Commencer avec les campagnes
 description: Prise en main des campagnes
 feature: Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
 source-git-commit: 8d6c3e03f9b7533f7f325b755e3b6d4f74b63a8d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '774'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
