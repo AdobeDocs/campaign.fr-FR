@@ -5,7 +5,7 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 768ebf4b350da61f0076eb9e43a16246be3b2628
+source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 100%
@@ -126,7 +126,7 @@ Pour ce faire, suivez les étapes ci-après.
 
 1. Cliquez sur **[!UICONTROL Envoyer]**, puis sélectionnez l’action souhaitée.
 
-   * Pour envoyer immédiatement la diffusion, sélectionnez [**Diffuser dès que possible**].
+   * Pour envoyer immédiatement la diffusion, sélectionnez **[!UICONTROL Diffuser dès que possible]**.
    * Pour planifier l’envoi à une date ultérieure, sélectionnez **[!UICONTROL Différer la diffusion]**. [En savoir plus](#schedule-delivery-sending).
 
 1. Cliquez sur **[!UICONTROL Analyser]**. Pour plus d’informations, consultez [cette section](delivery-analysis.md).

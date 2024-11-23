@@ -5,7 +5,7 @@ description: En savoir plus sur l’activité de workflow de contrôle de diffus
 feature: Workflows
 role: User
 exl-id: 09fe638d-5e1c-49d1-9196-6300c1e56703
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 100%
@@ -13,8 +13,6 @@ ht-degree: 100%
 ---
 
 # Agir sur une diffusion{#delivery-control}
-
-
 
 Une action de type **Agir sur une diffusion** permet de démarrer, mettre en pause ou arrêter une diffusion.
 
@@ -38,4 +36,4 @@ Les options disponibles sont les suivantes :
 
 * deliveryId
 
-Identifiant de la diffusion, si l&#39;action sélectionnée est **[!UICONTROL Spécifiée par la transition]**.
+  Identifiant de la diffusion, si l&#39;action sélectionnée est **[!UICONTROL Spécifiée par la transition]**.
