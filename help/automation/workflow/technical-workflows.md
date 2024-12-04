@@ -5,48 +5,41 @@ description: En savoir plus sur les workflows techniques disponibles avec Campai
 feature: Workflows
 role: User, Admin
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 4cb825c1899243e72a66b9dea2e56c45dc466fde
-workflow-type: ht
-source-wordcount: '1819'
-ht-degree: 100%
+source-git-commit: 97ab8259c0044b65fec2ad5ddc44d28f0cbf65e5
+workflow-type: tm+mt
+source-wordcount: '1820'
+ht-degree: 91%
 
 ---
 
 # Workflows techniques{#about-technical-workflows}
 
-Adobe Campaign s’accompagne d’un ensemble de workflows techniques intégrés. Ils gèrent les opérations et traitements planifiés pour une exécution périodique sur le serveur. Ils vous permettent d&#39;effectuer la maintenance de la base de données, de transmettre les informations de tracking des diffusions ou de mettre en place des traitements provisoires des diffusions. Les workflows techniques sont configurés via le nœud **[!UICONTROL Administration > Exploitation > Workflows techniques]**.
-
-![](assets/navtree.png)
-
-Des modèles natifs sont disponibles pour créer des workflows techniques. Ils peuvent être paramétrés selon vos besoins.
-
-Le sous-dossier **[!UICONTROL Processus de campagne]** centralise les workflows nécessaires à l&#39;exécution des traitements dans les opérations : notification des tâches, gestion des stocks, calcul des coûts, etc.
-
-![](assets/campaign-processes-wf.png)
-
-
->[!NOTE]
->
->La liste des workflows techniques installés avec chaque module est disponible dans une [section dédiée](technical-workflows.md).
-
-Vous pouvez créer d&#39;autres workflows techniques dans le noeud **[!UICONTROL Administration > Exploitation > Workflows techniques]** de l&#39;arborescence. Cette manipulation est toutefois réservée à des utilisateurs experts.
-
-Les activités proposées sont les mêmes que pour les workflows de ciblage. [En savoir plus](targeting-workflows.md)
-
-Les workflows présentés dans cette section sont installés avec les différents packages intégrés d’Adobe Campaign. Ces packages, ainsi que les workflows techniques associés, dépendent de votre contrat de licence.
+Adobe Campaign s’accompagne d’un ensemble de workflows techniques intégrés. Ils contrôlent les opérations et traitements planifiés pour une exécution périodique sur le serveur. Les workflows techniques exécutent les opérations de maintenance sur votre base de données Campaign, gèrent les données de tracking sur les diffusions et configurent également les traitements prévisionnels sur les diffusions.
 
 Par défaut, les workflows techniques sont disponibles dans un sous-dossier du nœud suivant : **[!UICONTROL Administration]** > **[!UICONTROL Exploitation]** > **[!UICONTROL Workflows techniques]**.
 
-Notez que les workflows techniques ne peuvent être démarrés et modifiés que par les opérateurs disposant de droits d&#39;administration.
+![](assets/navtree.png){width="50%" align="center" zoomable="yes"}
 
 >[!NOTE]
 >
->Les workflows techniques associés au module Message Center module sont disponibles par défaut dans le nœud **[!UICONTROL Administration]** > **[!UICONTROL Exploitation]** > **[!UICONTROL Message Center]** > **[!UICONTROL Workflows techniques]**.
+>* La liste des workflows techniques installés avec chaque module est disponible dans [cette section](#list-technical-workflows).
+>
+>* Les workflows techniques associés au module complémentaire Message Center sont stockés par défaut dans le noeud **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Workflows techniques]** .
 
-Découvrez comment surveiller les workflows techniques dans cette [section dédiée](monitor-technical-workflows.md).
+Le sous-dossier **[!UICONTROL Processus de campagne]** centralise les workflows nécessaires à l&#39;exécution des traitements dans les opérations : notification des tâches, gestion des stocks, calcul des coûts, etc.
 
+![](assets/campaign-processes-wf.png){width="70%" align="center" zoomable="yes"}
+
+
+## Gérer et créer des workflows techniques {#manage-tech-workflows}
+
+Les workflows techniques de Campaign ne peuvent être démarrés et modifiés que par des opérateurs disposant des autorisations **Administration**. Découvrez comment surveiller les workflows techniques dans cette [section dédiée](monitor-technical-workflows.md).
+
+Vous pouvez créer des workflows techniques personnalisés dans le noeud **[!UICONTROL Administration > Exploitation > Workflows techniques]** de l&#39;arborescence. Des modèles natifs sont disponibles pour créer des workflows techniques. Ils peuvent être configurés selon vos besoins. Ce processus est toutefois réservé à des utilisateurs experts. Les activités disponibles dans les workflows techniques sont les mêmes que pour les workflows de ciblage. [En savoir plus](targeting-workflows.md).
 
 ## Liste des workflows techniques {#list-technical-workflows}
+
+Les workflows présentés dans cette page sont installés avec les packages standard d’Adobe Campaign. Ces packages, ainsi que les workflows techniques associés, dépendent de votre contrat de licence et de vos modules complémentaires.
 
 | Workflow technique | Package | Description |
 |------|--------|-----------|
@@ -59,12 +52,12 @@ Découvrez comment surveiller les workflows techniques dans cette [section dédi
 | **Nettoyage de la base de données** (cleanup) | Installé par défaut | Ce workflow est le workflow d’entretien de la base de données : il procède aux différents calculs des statistiques et traitements, et supprime les données obsolètes de la base de données selon le paramétrage défini dans l’assistant de déploiement. Par défaut, il se déclenche tous les jours à 4 h 00. |
 | **Nettoyage des utilisateurs LINE bloqués** (deleteBlockedLineUsersV2) | Canal LINE | Ce workflow assure la suppression des données des utilisateurs LINE V2 s’ils ont bloqué le compte officiel LINE pendant 180 jours. |
 | **Supprimer les données des demandes d’accès à des informations personnelles** (deletePrivacyRequestsData) | Règlement sur la protection des informations personnelles | Ce workflow supprime les données du destinataire stockées dans Adobe Campaign. |
-| **Indicateurs de diffusion** (deliveryIndicators) | Plateforme de Mid-sourcing | Ce workflow met à jour les indicateurs de tracking des diffusions. Par défaut, ce workflow se déclenche toutes les heures. |
+| **Indicateurs de diffusion** (deliveryIndicators) | Installé par défaut | Ce workflow met à jour les indicateurs de tracking des diffusions. Par défaut, ce workflow se déclenche toutes les heures. |
 | **Traitements sur le marketing distribué** (centralLocalMgt) | Marketing central/local (Marketing distribué) | Ce workflow exécute les traitements relatifs à l&#39;utilisation du module de marketing distribué. Il lance la création des opérations en local et gère les notifications relatives aux commandes et à la mise à disposition des kits d&#39;opération. |
 | **Purge des événements** (webAnalyticsPurgeWebEvents) | Connecteurs Web Analytics | Ce workflow permet de supprimer du champ de la base tous les événements selon la période paramétrée dans le champ Durée de vie. |
 | **Export d’audiences vers Adobe Experience Cloud** (exportSharedAudience) | Intégration avec Adobe Experience Cloud | Ce workflow permet d’exporter des audiences en tant qu’audiences/segments partagés. Ces audiences peuvent être exploitées dans les différentes solutions d’Adobe Experience Cloud que vous utilisez. |
 | **ffdaUnsuscribe** | Installé par défaut | Ce workflow gère les désinscriptions reçues en tant qu’e-mails rebonds (à l’aide de la méthode `<mailto>` List-Unsubscribe). Il s’exécute toutes les heures quotidiennement, uniquement sur des instances marketing disposant d’un déploiement d’entreprise (FFDA).<br/><br/>Le workflow vérifie les broadlogs d’une période donnée (heure de dernier traitement et heure actuelle) qui sont marqués comme rebonds de désinscription par le module inMail (marque définie dans la colonne iFlags de la table NmsBroadLog) et traite une désinscription selon si le service du broadlog est défini ou non :<ul><li>Si le serviceId vaut 0 (non défini), la personne destinataire sera placée sur la liste bloquée.</li><li>Si le serviceId ne vaut pas 0 (associé à un service existant), la personne destinataire sera désabonnée de ce service.</li></ul><br/>Note : ce workflow gère uniquement les désinscriptions en rebond. Les désinscriptions effectuées via le lien d’opt-ou et la désinscription en un clic (méthode URL) sont gérées séparément en dehors de ce workflow. |
-| **Prévisionnel** (forecasting) | Diffusion | Ce workflow effectue l’analyse des diffusions enregistrées dans le calendrier prévisionnel (création des logs prévisionnels). Par défaut, il se déclenche tous les jours à 1h00. |
+| **Prévisionnel** (forecasting) | Installé par défaut | Ce workflow effectue l’analyse des diffusions enregistrées dans le calendrier prévisionnel (création des logs prévisionnels). Par défaut, il se déclenche tous les jours à 1h00. |
 | **Calcul de l&#39;agrégat full (cube propositionrcp)** (agg_nmspropositionrcp_full) | Moteur d’offres (Interaction) | Ce workflow met à jour l&#39;agrégat Complet (full) du cube Proposition d&#39;offre. Par défaut, il se déclenche tous les jours à 6H00. Cet agrégat capture les dimensions suivantes : Canal, Diffusion, Offre marketing et Date. Le cube Proposition d’offre est ensuite utilisé pour générer des rapports basés sur des offres. En savoir plus sur les cubes dans [cette section](../../v8/reporting/gs-cubes.md). |
 | **Identification des contacts convertis** (webAnalyticsFindConverted) | Connecteurs Web Analytics | Ce workflow répertorie les visiteurs du site ayant concrétisé leur achat après une campagne de remarketing. Les données récupérées par ce workflow sont accessibles dans le rapport Efficacité du remarketing (voir cette page). |
 | **Import d’audiences depuis Adobe Experience Cloud** (importSharedAudience) | Intégration avec Adobe Experience Cloud | Ce workflow permet d’importer dans Adobe Campaign des audiences/segments provenant de différentes solutions d’Adobe Experience Cloud. |
