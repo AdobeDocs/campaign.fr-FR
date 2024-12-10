@@ -6,9 +6,9 @@ feature: Workflows
 role: User, Admin
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
 source-git-commit: 0a074b2ef84e89e67363b722372718e4c46d65e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1827'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -24,21 +24,21 @@ Par défaut, les workflows techniques sont disponibles dans un sous-dossier du n
 >
 >* La liste des workflows techniques installés avec chaque module est disponible dans [cette section](#list-technical-workflows).
 >
->* Les workflows techniques associés au module complémentaire Message Center sont stockés par défaut dans le noeud **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Workflows techniques]** .
+>* Les workflows techniques associés au module Message Center sont stockés par défaut dans le nœud **[!UICONTROL Administration]** > **[!UICONTROL Exploitation]** > **[!UICONTROL Message Center]** > **[!UICONTROL Workflows techniques]**.
 
-Le sous-dossier **[!UICONTROL Processus de campagne]** centralise les workflows nécessaires à l&#39;exécution des traitements dans les opérations : notification des tâches, gestion des stocks, calcul des coûts, etc.
+Le sous-dossier **[!UICONTROL Processus de campagne]** centralise les workflows nécessaires à l’exécution des traitements dans les opérations : notification des tâches, gestion des stocks, calcul des coûts, etc.
 
 ![](assets/campaign-processes-wf.png)
 
 ## Gérer et créer des workflows techniques {#manage-tech-workflows}
 
-Les workflows techniques de Campaign ne peuvent être démarrés et modifiés que par des opérateurs disposant des autorisations **Administration**. Découvrez comment surveiller les workflows techniques dans cette [section dédiée](monitor-technical-workflows.md).
+Les workflows techniques Campaign ne peuvent être lancés et modifiés que par les opérateurs disposant d’autorisations d’**administration**. Découvrez comment surveiller les workflows techniques dans cette [section dédiée](monitor-technical-workflows.md).
 
-Vous pouvez créer des workflows techniques personnalisés dans le noeud **[!UICONTROL Administration > Exploitation > Workflows techniques]** de l&#39;arborescence. Des modèles natifs sont disponibles pour créer des workflows techniques. Ils peuvent être configurés selon vos besoins. Ce processus est toutefois réservé à des utilisateurs experts. Les activités disponibles dans les workflows techniques sont les mêmes que pour les workflows de ciblage. [En savoir plus](targeting-workflows.md).
+Vous pouvez créer d’autres workflows techniques dans le nœud **[!UICONTROL Administration > Exploitation > Workflows techniques]** de l’arborescence. Des modèles natifs sont disponibles pour créer des workflows techniques. Ils peuvent être configurés selon vos besoins. Ce processus est toutefois réservé à des personnes expertes. Les activités disponibles dans les workflows techniques sont les mêmes que pour les workflows de ciblage. [En savoir plus](targeting-workflows.md).
 
 ## Workflows techniques intégrés {#list-technical-workflows}
 
-Les workflows présentés dans cette page sont installés avec les packages standard d’Adobe Campaign. Ces packages, ainsi que les workflows techniques associés, dépendent de votre contrat de licence et de vos modules complémentaires.
+Les workflows présentés dans cette page sont installés avec les packages intégrés d’Adobe Campaign. Ces packages, ainsi que les workflows techniques associés, dépendent de votre contrat de licence et des modules complémentaires.
 
 | Workflow technique | Package | Description |
 |------|--------|-----------|
@@ -81,4 +81,4 @@ Les workflows présentés dans cette page sont installés avec les packages stan
 | **Suivi** (suivi) | Installé par défaut | Ce workflow réalise la récupération et la consolidation des informations de tracking. Il assure également le re-calcul des statistiques de tracking et de diffusions, notamment celles utilisées par les workflows d&#39;archivage de Message Center. Par défaut, il se déclenche toutes les heures. |
 | **Mise à jour du statut des événements** (updateEventsStatus) | Exécution des messages transactionnels (Message Center - Exécution) | Ce workflow permet d&#39;attribuer un statut à l&#39;événement. Les statuts d&#39;un événement sont les suivants :<ul><li>En attente : l&#39;événement se trouve dans la file d&#39;attente. Aucun modèle de message ne lui a encore été associé.</li><li>En attente de diffusion : l&#39;événement est dans la file d&#39;attente, un modèle de message lui a été associé et il est en cours de traitement par la diffusion.</li><li>Envoyé : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a été envoyée.</li><li>Ignoré par la diffusion : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a été ignorée.</li><li>Erreur de diffusion : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a échoué.</li><li>Evénement non pris en charge : l&#39;association de l&#39;événement à un modèle de message a échoué. L&#39;événement ne sera pas retraité.</li></ul> |
 | **Mettre à jour pour la délivrabilité** (deliverabilityUpdate) | Installé par défaut | Une fois le package Supervision de la délivrabilité (Email Deliverability) installé, ce workflow s’exécute de nuit et gère les règles de qualification des e-mails rejetés, ainsi que la liste des domaines et des MX. Pour ce faire, le port HTTPS doit être ouvert sur la plateforme. |
-| **Mettre à jour les désabonnements** (ffdaUnsuscribe) | Installé par défaut sur les déploiements [Campaign Enterprise (FFDA)](../../v8/architecture/enterprise-deployment.md) uniquement | Ce workflow gère les désinscriptions reçues en tant qu’e-mails rebonds (à l’aide de la méthode `<mailto>` List-Unsubscribe). Il s’exécute toutes les heures quotidiennement, uniquement sur des instances marketing disposant d’un déploiement d’entreprise (FFDA).<br/><br/>Le workflow vérifie les broadlogs d’une période donnée (heure de dernier traitement et heure actuelle) qui sont marqués comme rebonds de désinscription par le module inMail (marque définie dans la colonne iFlags de la table NmsBroadLog) et traite une désinscription selon si le service du broadlog est défini ou non :<ul><li>Si le serviceId vaut 0 (non défini), la personne destinataire sera placée sur la liste bloquée.</li><li>Si le serviceId ne vaut pas 0 (associé à un service existant), la personne destinataire sera désabonnée de ce service.</li></ul><br/>Note : ce workflow gère uniquement les désinscriptions en rebond. Les désinscriptions effectuées via le lien d’opt-ou et la désinscription en un clic (méthode URL) sont gérées séparément en dehors de ce workflow. |
+| **Mettre à jour les désabonnements** (ffdaUnsubscribe) | Installé par défaut sur les [déploiements Campaign Grands comptes (FFDA)](../../v8/architecture/enterprise-deployment.md) uniquement | Ce workflow gère les désinscriptions reçues en tant qu’e-mails rebonds (à l’aide de la méthode `<mailto>` List-Unsubscribe). Il s’exécute toutes les heures quotidiennement, uniquement sur des instances marketing disposant d’un déploiement d’entreprise (FFDA).<br/><br/>Le workflow vérifie les broadlogs d’une période donnée (heure de dernier traitement et heure actuelle) qui sont marqués comme rebonds de désinscription par le module inMail (marque définie dans la colonne iFlags de la table NmsBroadLog) et traite une désinscription selon si le service du broadlog est défini ou non :<ul><li>Si le serviceId vaut 0 (non défini), la personne destinataire sera placée sur la liste bloquée.</li><li>Si le serviceId ne vaut pas 0 (associé à un service existant), la personne destinataire sera désabonnée de ce service.</li></ul><br/>Note : ce workflow gère uniquement les désinscriptions en rebond. Les désinscriptions effectuées via le lien d’opt-ou et la désinscription en un clic (méthode URL) sont gérées séparément en dehors de ce workflow. |

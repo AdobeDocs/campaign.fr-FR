@@ -7,9 +7,9 @@ level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
 source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '232'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Cette page répertorie les dernières mises à jour de la documentation de [!DNL
 
 ## Novembre 2024 {#october-2024}
 
-* Le workflow **ffdaUnsuscribe** a été ajouté à la liste des workflows techniques. [En savoir plus](../../automation/workflow/technical-workflows.md)
+* Le workflow **ffdaUnsubscribe** a été ajouté à la liste des workflows techniques. [En savoir plus](../../automation/workflow/technical-workflows.md)
 * La page sur les versions et mises à niveau de Campaign a été améliorée. [En savoir plus](upgrades.md)
 
 ## Juin 2024 {#june-2024}
