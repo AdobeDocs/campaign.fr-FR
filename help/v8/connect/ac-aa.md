@@ -5,10 +5,10 @@ feature: Analytics Integration, Reporting
 role: Admin, User
 level: Beginner
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
-source-git-commit: 9ce5acd97e077105316c81029e3ccbc6fa4389dc
+source-git-commit: e465b846b3144a2138bb912b4baa09238f8c5b4c
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 100%
+source-wordcount: '1552'
+ht-degree: 98%
 
 ---
 
@@ -143,6 +143,10 @@ Pour plus d’informations, consultez la page [Profils de produit pour Adobe An
 
 
 1. Dans la catégorie **[!UICONTROL eVars]**, mappez les deux **[!UICONTROL variables de conversion]** configurées dans [!DNL Adobe Analytics].
+
+   >[!NOTE]
+   >
+   >Les champs Identifiant de la campagne et Identifiant de la diffusion sont collectés via JavaScript sur la page de destination ou par le biais de règles de traitement. [En savoir plus sur les règles de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
 
    ![](assets/analytics_connnector_11.png)
 
