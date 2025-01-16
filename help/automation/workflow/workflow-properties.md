@@ -4,16 +4,14 @@ title: Propriétés d’exécution
 description: En savoir plus sur les propriétés des workflows de Campaign
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 63b7eaba3ea7b580d9b6c3c0e0c015c057539aa8
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 100%
+source-wordcount: '706'
+ht-degree: 87%
 
 ---
 
 # Propriétés d&#39;exécution        {#workflow-properties}
-
-
 
 ## Onglet Exécution {#execution-tab}
 
@@ -55,7 +53,17 @@ Cette section n&#39;apparaît que dans les workflows d&#39;opérations.
 
   Cette option ne doit être utilisée qu&#39;à des fins de débuggage et jamais en production. Lorsque cette option est activée, le workflow devient prioritaire, et tous les autres workflows sont stoppés par le moteur de workflow tant qu&#39;il n&#39;est pas terminé.
 
-### Gestion des erreurs        {#error-management}
+* **[!UICONTROL Autorisez le superviseur watchdog à maintenir le workflow en cours d&#39;exécution de manière permanente]**
+
+  Cette option force le redémarrage automatique des workflows en cas d’erreur. Lorsqu’il est activé, le redémarrage vérifie toutes les 30 secondes le statut du workflow et le redémarre si nécessaire. Pour ajuster l’intervalle de 30 secondes, vous pouvez créer l’option technique `XtkWorkflow_WatchdogTimerTimeout` et utiliser un type de données entier pour spécifier le délai souhaité.
+
+  >[!NOTE]
+  >
+  >Cette option est destinée aux utilisateurs avancés et ne doit être activée que pour les **workflows techniques**.
+  >
+  >Elle est activée par défaut pour les workflows de réplication centralisée disponibles avec le package `fullFdaMkt`.
+
+### Gestion des erreurs {#error-management}
 
 * **[!UICONTROL Résolution des problèmes]**
 
