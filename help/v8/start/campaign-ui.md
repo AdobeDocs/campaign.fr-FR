@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 87426a5924e1044faf212631ba868753ae43fad6
+source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 97%
+source-wordcount: '1063'
+ht-degree: 95%
 
 ---
 
@@ -25,6 +25,11 @@ Vous pouvez accéder à Adobe Campaign à partir de sa console cliente ou de so
   Découvrez comment installer et configurer la console cliente Campaign dans [cette section](../start/connect.md).
 
 * **Interface utilisateur web** : en tant qu’utilisateur ou utilisatrice de Campaign v8, à compter de la version v8.6.1, vous avez désormais accès à un environnement web, disponible via l’interface utilisateur centrale d’Adobe Experience Cloud. Vous pouvez ensuite vous connecter à Adobe Campaign à partir d’un navigateur web. Cette nouvelle interface vous permet de créer, de gérer et d’exécuter des actions marketing clés. Toutefois, toutes les fonctionnalités de Campaign ne sont pas disponibles. [En savoir plus](#ac-web-ui).
+
+  >[!AVAILABILITY]
+  >
+  >L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs qui se connectent à Adobe Campaign avec leur Adobe ID. En savoir plus sur le système Adobe Identity Management (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} [.
+  >
 
 * **Accès web** : les fonctionnalités d’accès web d’Adobe Campaign vous permettent d’accéder à un sous-ensemble de fonctionnalités de Campaign avec un navigateur web, à l’aide d’une interface utilisateur HTML. Utilisez cette interface web pour consulter des rapports, contrôler et valider les messages, accéder aux tableaux de bord de surveillance, et plus encore.  Pour en savoir plus sur l’accès web de Campaign, consultez [cette section](../start/connect.md#web-access).
 
@@ -108,6 +113,7 @@ En tant qu’utilisateur ou utilisatrice de la console cliente Campaign v8, de
 ![Page d’accueil de l’interface utilisateur web d’Adobe Campaign](assets/ac-web-home.png)
 
 >[!AVAILABILITY]
+>
 >L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs qui se connectent à Adobe Campaign avec leur Adobe ID. En savoir plus sur le système Adobe Identity Management (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} [.
 >
 

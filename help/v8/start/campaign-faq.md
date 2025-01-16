@@ -5,7 +5,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 100%
@@ -37,6 +37,7 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
    Découvrez comment vous connecter à Adobe Experience Cloud et accéder à l’interface d’Adobe Campaign Web [dans cette page](campaign-ui.md#ac-web-ui).
 
    Pour en savoir plus, consultez la [documentation sur l’interface utilisateur web d’Adobe Campaign](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+
 1. **Campaign v8 peut-il être installé dans un environnement On-Premise ou hybride ?**
 
    Campaign v8 n’est disponible que dans Managed Cloud Services, entièrement hébergé par Adobe.
