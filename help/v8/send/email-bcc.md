@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 1cb92c6075e9478b641b11eae52372a909258cd3
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -21,7 +21,12 @@ ht-degree: 100%
 
 ## À propos de la mise en copie Cci des e-mails {#gs-bcc}
 
-Vous pouvez configurer Adobe Campaign pour conserver une copie des e-mails envoyés depuis votre plateforme. Cette option vous permet d’envoyer les messages de votre choix à une adresse e-mail Cci (copie carbone invisible) dédiée, à partir de laquelle ils peuvent être traités et archivés au moyen d’un système externe.
+Vous pouvez configurer Adobe Campaign pour conserver une copie des e-mails envoyés depuis votre plateforme. Cette option vous permet d&#39;envoyer les messages à une adresse e-mail Cci (copie carbone invisible) dédiée, à partir de laquelle ils peuvent être traités et archivés à l&#39;aide d&#39;un système externe.
+
+>[!CAUTION]
+>
+>Pour des raisons de confidentialité, les e-mails en Cci doivent être traités dans un système d’archivage capable de stocker en toute sécurité les informations d’identification personnelles (PII).
+
 Adobe Campaign ne gère pas les fichiers archivés. Les fichiers .eml correspondant aux e-mails envoyés peuvent ensuite être transférés vers un serveur distant, tel qu’un serveur de messagerie SMTP.
 
 La destination d’archivage est l’adresse e-mail en Cci de votre choix, qui restera invisible pour les personnes destinataires de la diffusion. Une fois l’adresse e-mail en Cci définie, vous devez activer l’option dédiée au niveau du [modèle de diffusion](create-templates.md).
@@ -29,11 +34,6 @@ La destination d’archivage est l’adresse e-mail en Cci de votre choix, qui r
 >[!NOTE]
 >
 >En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support){target="_blank"} pour communiquer l’adresse e-mail en Cci à utiliser pour l’archivage.
-
->[!CAUTION]
->
->Pour des raisons de confidentialité, les e-mails en Cci doivent être traités dans un système d’archivage capable de stocker en toute sécurité les informations d’identification personnelles (PII).
-
 
 ## Activer la mise en copie Cci des e-mails {#enable-bcc}
 
