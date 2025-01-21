@@ -6,16 +6,20 @@ role: User
 level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
-source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
-workflow-type: ht
-source-wordcount: '232'
-ht-degree: 100%
+source-git-commit: fdd0e534feb80e3acaec0a68238ac4ac596980e2
+workflow-type: tm+mt
+source-wordcount: '252'
+ht-degree: 93%
 
 ---
 
 # Mises à jour de la documentation {#latest-updates}
 
 Cette page répertorie les dernières mises à jour de la documentation de [!DNL Campaign] v8 (console).
+
+## Janvier 2025 {#january-2025}
+
+La page sur la réplication des données pour les déploiements FFDA a été réorganisée et enrichie de nouvelles informations. [En savoir plus](../architecture/replication.md)
 
 ## Novembre 2024 {#october-2024}
 
