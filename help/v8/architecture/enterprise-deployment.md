@@ -55,7 +55,7 @@ La base de données [!DNL Snowflake] côté marketing permet d’effectuer les o
 * Stocker toutes les données client : les profils, les données personnalisées comme les transactions, les produits, les emplacements, etc.
 * Stocker l’ensemble des événements et des données de comportement générés ou collectés par Campaign, tels que les logs de diffusion, les logs de tracking, les enregistrements push, etc.
 * Stocker tous les agrégats de données de l’exemple ci-dessus
-* Stockez une copie (h+1) des tables de référence (diffusions, énumérations, pays, etc.) qui sont utilisées dans les workflows, les campagnes et les rapports.
+* Stocker une copie (h+1) des tables de référence (telles que les diffusions, les énumérations, les pays, etc.) utilisées dans les workflows, les campagnes et les rapports.
 * Exécution de tous les processus et workloads par lots
 
 

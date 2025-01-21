@@ -4,7 +4,8 @@ description: Commencer avec les pages de destination
 feature: Landing Pages
 role: User, Developer
 level: Beginner
-source-git-commit: 45999f56c2d9e4417c6a54987d8395b69cdd2b2f
+exl-id: ad639a39-f011-4f0f-9db6-d06078f2e7a2
+source-git-commit: 92dab3b2daf4de14b515d19a5a0ab66390a865f9
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 16%

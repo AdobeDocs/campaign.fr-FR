@@ -499,7 +499,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
    Pour les messages de notification, la réception du suivi doit être paramétrée à deux niveaux :
 
    * `onMessageReceived` (application non en arrière-plan) : la mise en œuvre a été effectuée dans la section précédente.
-   * `onCreate` de l’activité de lancement (ou de l’activité ciblée si la fonction `click_action` est utilisée.) (Application non en arrière-plan).
+   * `onCreate` de l&#39;activité de lancement (ou de l&#39;activité ciblée si la fonction `click_action` est utilisée) (Application non en arrière-plan).
 
    Elle doit être effectuée au même moment que le suivi des clics/ouvertures.
 

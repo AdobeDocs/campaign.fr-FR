@@ -9,7 +9,7 @@ exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
 source-git-commit: d292c20e520b2466f782ccf86eb9d61e01915563
 workflow-type: tm+mt
 source-wordcount: '1216'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Le bouton **[!UICONTROL Actions]** de la barre d’outils permet d’accéder à
 
 * **[!UICONTROL Démarrer en mode simulation]**
 
-  Cette option permet de lancer le workflow en mode simulation et non en mode réel. Cela signifie que lorsque vous activez ce mode, seules les activités qui n&#39;ont pas d&#39;impact sur la base de données ou le système de fichiers sont exécutées (par exemple : **[!UICONTROL Requête]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). Les activités qui ont un impact (par exemple **[!UICONTROL Export]**, **[!UICONTROL Import]**, etc.) ainsi que celles qui les suivent (dans la même branche) ne sont pas exécutées.
+  Cette option permet de lancer le workflow en mode simulation et non en mode réel. Cela signifie que lorsque vous activez ce mode, seules les activités qui n&#39;ont pas d&#39;impact sur la base de données ou le système de fichiers sont exécutées (par exemple : **[!UICONTROL Requête]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). Les activités qui ont un impact (par exemple, **[!UICONTROL Export]**, **[!UICONTROL Import]**, etc.), ainsi que celles qui leur succèdent (dans la même branche) ne sont pas exécutées.
 
 * **[!UICONTROL Traitement anticipé des tâches en attente]**
 
