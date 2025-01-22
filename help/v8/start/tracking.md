@@ -5,7 +5,7 @@ feature: Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: f3de901f-519f-42ae-846c-f20c7cb560df
-source-git-commit: 4a4bcb0b540d6e8a426839e77bf81ad30eb93653
+source-git-commit: a78019d11a0a2acbd8c0d9ba7c2082c09f90356c
 workflow-type: tm+mt
 source-wordcount: '677'
 ht-degree: 100%
