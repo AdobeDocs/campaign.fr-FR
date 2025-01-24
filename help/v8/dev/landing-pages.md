@@ -5,16 +5,18 @@ feature: Landing Pages
 role: User, Developer
 level: Beginner
 exl-id: ad639a39-f011-4f0f-9db6-d06078f2e7a2
-source-git-commit: 92dab3b2daf4de14b515d19a5a0ab66390a865f9
+source-git-commit: 2f7496a0376776d35cf88b0e81365f6e414655fd
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 16%
+source-wordcount: '228'
+ht-degree: 28%
 
 ---
 
 # Créer et gérer des pages de destination {#ac-gs-lp}
 
-L’interface utilisateur web d’[Adobe Campaign v8](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui) offre une expérience utilisateur repensée pour les pages de destination. Campaign vous permet de créer, concevoir et partager des pages de destination. Les landing pages vous permettent d’orienter vos utilisateurs vers des formulaires en ligne où ils peuvent mettre à jour leurs données, s’inscrire/refuser de recevoir vos communications ou s’abonner à un service spécifique tel qu’une newsletter. En tant qu’utilisateur de Campaign v8, vous avez accès à cette nouvelle interface utilisateur pour effectuer des tâches et simplifier votre expérience lorsque vous utilisez Adobe Campaign. En savoir plus sur
+Les pages de destination vous permettent d’orienter vos utilisateurs et utilisatrices vers des formulaires en ligne sur lesquels ils peuvent mettre à jour leurs données, s’abonner à vos communications ou à un service spécifique tel qu’une newsletter, ou s’en désabonner.
+
+Pour créer des pages de destination, accédez à l’[interface utilisateur web](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui). Adobe Campaign s’accompagne d’une expérience utilisateur repensée pour les pages de destination, disponible uniquement dans l’interface utilisateur web.
 
 
 >[!AVAILABILITY]

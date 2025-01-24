@@ -6,7 +6,7 @@ feature: Application Settings
 role: Admin, Developer
 level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 2f7496a0376776d35cf88b0e81365f6e414655fd
 workflow-type: tm+mt
 source-wordcount: '1948'
 ht-degree: 100%
@@ -30,7 +30,7 @@ Vous pouvez ajouter des dossiers à l&#39;explorateur Campaign, créer des vues 
 
 Découvrez comment gérer les dossiers et les vues dans [cette page](../audiences/folders-and-views.md)
 
-## Gérer et personnaliser des listes{#customize-lists}
+## Gérer et personnaliser des listes {#customize-lists}
 
 Dans la console cliente Campaign, les données sont affichées dans des listes. Vous pouvez adapter ces listes à vos besoins. Vous pouvez par exemple ajouter des colonnes, filtrer les données, comptabiliser les enregistrements, enregistrer et partager vos paramètres.
 
