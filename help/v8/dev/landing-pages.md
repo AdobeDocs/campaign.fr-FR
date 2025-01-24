@@ -5,19 +5,18 @@ feature: Landing Pages
 role: User, Developer
 level: Beginner
 exl-id: ad639a39-f011-4f0f-9db6-d06078f2e7a2
-source-git-commit: 2f7496a0376776d35cf88b0e81365f6e414655fd
+source-git-commit: 465d5d4ba10596ad2c3ced1fe621a93327fc48ab
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 28%
+source-wordcount: '294'
+ht-degree: 11%
 
 ---
 
 # Créer et gérer des pages de destination {#ac-gs-lp}
 
-Les pages de destination vous permettent d’orienter vos utilisateurs et utilisatrices vers des formulaires en ligne sur lesquels ils peuvent mettre à jour leurs données, s’abonner à vos communications ou à un service spécifique tel qu’une newsletter, ou s’en désabonner.
+Une page de destination est une page web dédiée conçue avec un objectif marketing spécifique. Les visiteurs arrivent généralement à une page de destination après avoir cliqué sur un lien dans un e-mail, une publication sur les médias sociaux ou un résultat de moteur de recherche. Contrairement aux pages générales du site web, les pages de destination se concentrent sur la réalisation d’une seule action bien définie, telle que l’achat, l’abonnement/le désabonnement à un service ou le téléchargement d’une ressource. Avec Adobe Campaign, créez des pages de destination pour diriger vos utilisateurs vers un formulaire en ligne où ils pourront mettre à jour leurs données, s’inscrire/refuser de recevoir vos communications ou s’abonner à un service spécifique, tel qu’une newsletter.
 
 Pour créer des pages de destination, accédez à l’[interface utilisateur web](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui). Adobe Campaign s’accompagne d’une expérience utilisateur repensée pour les pages de destination, disponible uniquement dans l’interface utilisateur web.
-
 
 >[!AVAILABILITY]
 >
