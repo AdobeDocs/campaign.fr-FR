@@ -5,10 +5,10 @@ feature: Architecture, FFDA, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
+source-git-commit: 3235701e0939466d4275b1e9202f82694ccdb352
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 96%
+source-wordcount: '1053'
+ht-degree: 91%
 
 ---
 
@@ -82,9 +82,7 @@ La base de données PostgreSQL sur l&#39;instance de mid-sourcing est utilisée 
 
 ### Mécanisme d&#39;évaluation des API [!DNL Campaign]{#staging-api}
 
-Avec la base de données [!DNL Campaign] cloud, les appels unitaires d&#39;explosion ne sont pas recommandés en raison des performances (latence et simultanéité). À moins que vous n’envoyiez un volume extrêmement important, l’opération par lots doit être utilisée afin de garantir des performances optimales des API ; Campaign gère toujours les appels API au niveau de la base de données locale.
-
-[Le mécanisme d’évaluation des API est présenté sur cette page.](staging.md)
+Avec la base de données [!DNL Campaign] Cloud, il n’est pas recommandé de dynamiser les appels unitaires en ce qui concerne les performances (latence et simultanéité). À moins que vous n’envoyiez un volume extrêmement faible, les opérations par lots doivent être utilisées pour garantir des performances d’API optimales. Pour améliorer les performances, les API d&#39;ingestion sont redirigées vers la base de données locale. [En savoir plus sur le mécanisme d&#39;évaluation des API Campaign](staging.md)
 
 ### Nouvelles API{#new-apis}
 
