@@ -5,16 +5,21 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 578f774152afbd42342da0f161b679ba9dd10c78
+source-git-commit: a76d2c30d3e1c723bcd4881f28980d346aade3dc
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 100%
+source-wordcount: '578'
+ht-degree: 93%
 
 ---
 
 # Concevoir et envoyer des e-mails
 
 Avec Adobe Campaign, créez des diffusions e-mail pour envoyer des e-mails personnalisés à la population cible. [En savoir plus](../send/send.md)
+
+>[!NOTE]
+>
+>Pour créer des e-mails captivants et personnalisés, accédez à l’[interface utilisateur web](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui). Adobe Campaign s’accompagne de Designer e-mail, une interface intuitive par glisser-déposer qui vous permet de concevoir et d’affiner tout le contenu de chaque e-mail.
+
 
 Découvrez les étapes clés de la création et de la configuration d’une diffusion dans [cette page](../start/create-message.md).
 
