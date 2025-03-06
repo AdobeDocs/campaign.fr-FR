@@ -5,10 +5,10 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: 5b649e17f464d09124064f61712856d9301fc6d6
+source-git-commit: ba27d1e56f7354e500e747f01a27412f8d553e2b
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 99%
+source-wordcount: '437'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,8 @@ Les systèmes de gestion de la relation client (CRM) compatibles avec Adobe Cam
 
 Les bases de données externes compatibles avec le module Adobe Campaign Federated Data Access (FDA) sont répertoriées ci-dessous. Pour en savoir plus sur le module FDA, consultez [cette page](../connect/fda.md).
 
-* **[!DNL Amazon Redshift]**
+* **[!DNL Amazon Redshift]** connecteur ODBC, démarrage de Campaign v8.6.4
+* Connecteur hérité **[!DNL Amazon Redshift]**
 * **[!DNL Azure Synapse]**, à partir de Campaign v8.5
 * **[!DNL Databricks]**, à partir de Campaign v8.6.4 / v8.7
 * **[!DNL Google Big Query]**

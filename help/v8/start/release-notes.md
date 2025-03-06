@@ -3,9 +3,9 @@ title: Notes de mise à jour de Campaign v8
 description: Dernière version de Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 15faa6850c035d2d26dd43dc221e0128c33999c2
+source-git-commit: ba27d1e56f7354e500e747f01a27412f8d553e2b
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '563'
 ht-degree: 21%
 
 ---
@@ -75,7 +75,6 @@ La connexion aux solutions et applications Adobe par le biais du compte externe 
 
    * Le nouveau connecteur repose sur l’interface ODBC qui s’aligne sur nos connecteurs FDA les plus récents. Cela garantit une prise en charge à long terme.
    * Il introduit également un nouveau mécanisme de chargement de données à l’aide d’intervalles s3, ce qui améliore considérablement les performances.
-   * Ajout de la prise en charge du spectre Redshift.
 
   Le connecteur hérité peut toujours être utilisé. Si vous souhaitez tester la nouvelle version, contactez votre représentant ou représentante Adobe.
 
