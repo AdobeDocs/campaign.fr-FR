@@ -5,10 +5,10 @@ role: User, Admin
 feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 100%
+source-wordcount: '1126'
+ht-degree: 98%
 
 ---
 
@@ -74,7 +74,7 @@ Pour lier votre instance Campaign à votre compte X, créez un service **Twitter
 >
 >Créez un service **Twitter** par compte X. Par conséquent, vous devez créer un autre service de test pour envoyer des BAT à votre [compte de test](#tw-test-account).
 >
->Chaque service **Twitter** doit également être créé par Adobe sur votre instance MID. Contactez votre représentant Adobe pour que votre environnement soit configuré.
+>Chaque service **Twitter** doit également être créé par Adobe sur votre instance de mid-sourcing (MID). Contactez votre représentant Adobe pour que votre environnement soit configuré.
 >
 
 Pour entrer des paramètres, vous devez accéder à la fois à la console cliente d’Adobe Campaign et aux autorisations de votre application X.

@@ -5,10 +5,10 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1123'
-ht-degree: 100%
+source-wordcount: '1135'
+ht-degree: 98%
 
 ---
 
@@ -86,6 +86,8 @@ Pour configurer un environnement externe POP3 à l’aide de Microsoft OAuth 2.0
 ### Routage  {#routing}
 
 Le compte externe **[!UICONTROL Routage]** vous permet de configurer chaque canal disponible dans Adobe Campaign en fonction des packages installés.
+
+En savoir plus sur la gestion des comptes externes et l&#39;exécution des diffusions dans [cette section](../architecture/architecture.md#split).
 
 ### Instance d&#39;exécution {#execution-instance}
 

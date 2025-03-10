@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: 253f3be945cbfa304fa7342c68f0c73b079e2870
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 100%
+source-wordcount: '1231'
+ht-degree: 98%
 
 ---
 
@@ -161,7 +161,7 @@ Les BAT sont accessibles au niveau de chaque modèle, depuis l&#39;onglet **[!UI
 
 #### Transition à partir de [!DNL Campaign Classic] v7 {#transition-from-v7}
 
-Si vous [effectuez une transition à partir de Campaign Classic v7](../start/v7-to-v8.md), toutes les diffusions passent par le serveur de midsourcing.
+Si vous effectuez une [transition à partir de Campaign Classic v7](../start/v7-to-v8.md), toutes les diffusions passent par le serveur de mid-sourcing (MID).
 
 Cependant, lors de la création d’un modèle de message transactionnel, le routage nécessaire pour que le modèle soit utilisé avec succès est **diffusion e-mail interne**. Ce routage vous empêche d’envoyer des BAT.
 

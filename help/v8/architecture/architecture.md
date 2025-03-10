@@ -5,10 +5,10 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 100%
+source-wordcount: '1049'
+ht-degree: 94%
 
 ---
 
@@ -57,11 +57,11 @@ Campaign v8 Enterprise présente le concept de **Full Federated Data Access** (
 
 >[!AVAILABILITY]
 >
->Cette fonctionnalité est disponible uniquement pour les clients et clientes disposant de plusieurs configurations d’instances MID.
+>Cette fonctionnalité est disponible uniquement pour les clients et clientes disposant de plusieurs configurations d’instances de mid-sourcing (MID).
 
 En fonction de votre package Campaign v8, vous disposez d’un nombre spécifique d’instances de midsourcing en charge de l’exécution des diffusions.
 
-Par défaut, les comptes externes de tous les canaux utilisent un mode de routage **[!UICONTROL alterné]**. Une diffusion est donc envoyée simultanément à partir de chaque instance mid-sourcing de manière alternée.
+Par défaut, les comptes externes de tous les canaux utilisent un mode de routage **[!UICONTROL alterné]**, ce qui signifie qu’une diffusion est envoyée simultanément à partir de chaque instance de mid-sourcing (MID) de manière alternée.
 
 Afin d’optimiser les performances à la fois en termes de vitesse et d’échelle, vous pouvez permettre le partage automatique des diffusions entre vos instances mid-sourcing afin qu’elles soient diffusées plus rapidement aux destinataires. Cette opération est transparente lors de l’exécution de la diffusion à partir de l’instance marketing : une fois la diffusion envoyée, tous les logs sont consolidés ensemble avant d’être renvoyés à l’instance marketing dans un seul objet de diffusion.
 
@@ -78,7 +78,7 @@ Pour ce faire, des comptes externes supplémentaires avec le mode de routage **[
 >
 >Le mode de routage partagé est activé par défaut pour le compte « Partager la diffusion - E-mail ». Pour tous les autres comptes externes de canaux, contactez la personne chargée de votre transition Adobe pour que l’option soit activée.
 >
->Par défaut, la valeur de la taille de seuil pour partager une diffusion entre plusieurs instances mid-sourcing est de 100 000. Vous pouvez modifier cette valeur dans l’option « NmsDelivery_MultiMidSplitThreshold » du menu **[!UICONTROL Administration]** / **[!UICONTROL Plateforme]** / **[!UICONTROL Options]** .
+>Par défaut, la valeur de la taille de seuil pour partager une diffusion entre plusieurs instances de mid-sourcing (MID) est de 100 000. Vous pouvez modifier cette valeur dans l’option « NmsDelivery_MultiMidSplitThreshold » du menu **[!UICONTROL Administration]** / **[!UICONTROL Plateforme]** / **[!UICONTROL Options]** .
 
 Pour que les comptes externes partagés soient le compte par défaut pour l’envoi des diffusions, vous devez modifier le fournisseur de routage dans vos modèles de diffusion. Pour ce faire, procédez comme suit :
 
