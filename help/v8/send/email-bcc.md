@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
-source-git-commit: 1cb92c6075e9478b641b11eae52372a909258cd3
+source-git-commit: 286af4739c33b79c74b3cb7fa90ad167670a4b4c
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 92%
+source-wordcount: '385'
+ht-degree: 89%
 
 ---
 
@@ -42,7 +42,7 @@ Pour activer la mise en copie Cci pour un [modèle de diffusion](create-template
 1. Depuis l’explorateur Campaign, accédez au dossier des modèles de diffusion. Par défaut, les modèles de diffusion sont stockés dans le dossier **[!UICONTROL Ressources]** > **[!UICONTROL Modèles]** > **[!UICONTROL Modèles de diffusion]**.
 1. Modifiez le modèle de diffusion à mettre à jour pour la mise en copie Cci.
 1. Cliquez sur le bouton **[!UICONTROL Propriétés]**.
-1. Dans l’onglet **[!UICONTROL Diffusion]**, cochez l’option **[!UICONTROL E-mail cci]**.
+1. Dans l’onglet **[!UICONTROL Diffusion]**, cochez l’option **[!UICONTROL E-mail Cci avec Momentum amélioré]**.
 
    ![](assets/email-bcc.png)
 
