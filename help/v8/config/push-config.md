@@ -1,14 +1,13 @@
 ---
 title: Intégrer les SDK Campaign à votre application
 description: Découvrez comment intégrer les SDK Android et iOS de Campaign avec votre application
-version: v8
 feature: Push
 role: Admin, Developer
 level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: a288845e1f092d293d679fa9aaaf6d609de85230
 workflow-type: tm+mt
 source-wordcount: '1232'
 ht-degree: 98%
