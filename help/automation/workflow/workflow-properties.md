@@ -4,7 +4,7 @@ title: Propriétés d’exécution
 description: En savoir plus sur les propriétés des workflows de Campaign
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: 63b7eaba3ea7b580d9b6c3c0e0c015c057539aa8
+source-git-commit: c6b4f4cee6f033218c77a495c39885e231c06126
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 87%
@@ -55,7 +55,7 @@ Cette section n&#39;apparaît que dans les workflows d&#39;opérations.
 
 * **[!UICONTROL Autorisez le superviseur watchdog à maintenir le workflow en cours d&#39;exécution de manière permanente]**
 
-  Cette option force le redémarrage automatique des workflows en cas d’erreur. Lorsqu’il est activé, le redémarrage vérifie toutes les 30 secondes le statut du workflow et le redémarre si nécessaire. Pour ajuster l’intervalle de 30 secondes, vous pouvez créer l’option technique `XtkWorkflow_WatchdogTimerTimeout` et utiliser un type de données entier pour spécifier le délai souhaité.
+  Cette option force le redémarrage automatique des workflows en cas d’erreur. Lorsqu’il est activé, le redémarrage vérifie toutes les 30 secondes le statut du workflow et le redémarre si nécessaire. Pour ajuster l’intervalle de 30 secondes, vous pouvez créer l’option technique `XtkWorkflow_WatchdogRestartTimerTimeout` et utiliser un type de données entier pour spécifier le délai souhaité.
 
   >[!NOTE]
   >
