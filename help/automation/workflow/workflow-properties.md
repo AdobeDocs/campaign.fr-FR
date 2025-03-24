@@ -4,7 +4,7 @@ title: Propriétés d’exécution
 description: En savoir plus sur les propriétés des workflows de Campaign
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: 13723ebda8daf57c6885a05a2d583c0c38c86441
+source-git-commit: d31040885ec45068d70a7d4c0b481269c8af7a33
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 86%
@@ -63,7 +63,7 @@ Cette section n&#39;apparaît que dans les workflows d&#39;opérations.
   >
   >* Cette option est destinée aux utilisateurs avancés et ne doit être activée que pour les **workflows techniques**.
   >
-  >* Cette option est activée par défaut pour les workflows de réplication centralisée disponibles dans un déploiement [ Entreprise (FFDA)](enterprise-deployment.md). [En savoir plus](../../v8/architecture/replication.md)
+  >* Cette option est activée par défaut pour les workflows de réplication centralisée disponibles dans un déploiement [ Entreprise (FFDA)](../../v8/architecture/enterprise-deployment.md). [En savoir plus](../../v8/architecture/replication.md)
 
 ### Gestion des erreurs {#error-management}
 
