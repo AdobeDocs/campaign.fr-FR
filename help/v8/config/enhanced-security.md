@@ -5,10 +5,10 @@ feature: Configuration
 role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: c225b3ee5b356d98d6a5e3bb9bd1cb0feae0300a
+source-git-commit: 24b252373923a9724743650b13a69d4f2c8dcd24
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 100%
+source-wordcount: '737'
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ Une fois ces fonctionnalités implémentées, Adobe surveille les éléments sui
 
 * Les tunnels VPN, et envoie une alerte en cas de problème.
 
-## Intégration de la clé sécurisée gérée par le client ou la cliente {#secure-cmk-integration}
+## Intégration sécurisée des clés gérées par le client {#secure-cmk-integration}
 
 L’**intégration de la clé sécurisée gérée par le client ou la cliente (CMK)** vous permet de chiffrer des données inactives à l’aide de votre propre clé via votre compte Amazon Web Services (AWS).
 
