@@ -5,10 +5,10 @@ description: En savoir plus sur l’activité de workflow de planificateur
 feature: Workflows
 role: User
 exl-id: ed70d2d3-251e-4ee8-84d4-73ad03e8dd35
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: ba8cf031db178f6575104858340e16d4e7bd6a31
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 100%
+source-wordcount: '400'
+ht-degree: 43%
 
 ---
 
@@ -22,15 +22,15 @@ L&#39;activité **[!UICONTROL Planificateur]** est à considérer comme un dépa
 
 ## Bonnes pratiques {#best-practices}
 
-* Ne planifiez pas l’exécution d’un workflow à une fréquence supérieure à toutes les 15 minutes, car cela peut nuire aux performances générales du système et créer des blocages dans la base de données.
+**Redémarrer le workflow après avoir modifié la planification** - Lorsque vous modifiez l’heure planifiée de l’activité **[!UICONTROL Planificateur]**, il est important de redémarrer le workflow. Cela permet de s’assurer que le workflow s’exécutera aux heures mises à jour. Sans redémarrer, le workflow continuera à s’exécuter selon l’ancien planning.
 
-* N’utilisez jamais plusieurs activités de **[!UICONTROL Planificateur]** par branche dans un workflow. Voir [Utilisation des activités](workflow-best-practices.md#using-activities).
+**Limiter la fréquence du planificateur** - Évitez de planifier des workflows pour qu’ils s’exécutent plus fréquemment que toutes les 15 minutes. Les exécuter plus souvent peut dégrader les performances du système et entraîner une congestion des bases de données.
 
-* L’utilisation d’une activité de planificateur peut entraîner plusieurs exécutions simultanées d’un workflow. Par exemple, il se peut qu’un planificateur déclenche l’exécution du workflow une fois par heure, mais parfois, l’exécution du workflow dans son ensemble dure plus d’une heure.
+**Utiliser un planificateur par branche** - Chaque branche de votre workflow ne doit comporter qu’une seule activité **[!UICONTROL Planificateur]**. Pour plus d&#39;informations sur les bonnes pratiques relatives à l&#39;utilisation des activités dans les workflows, consultez la page [Bonnes pratiques relatives aux workflows](workflow-best-practices.md#using-activities).
 
-  Vous pouvez ignorer l’exécution si le workflow est déjà en cours d’exécution. Pour plus d’informations sur la manière d’empêcher les exécutions simultanées d’un workflow, consultez [cette page](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions).
+**Empêcher les exécutions simultanées de workflows** - Si un workflow est déclenché par un planificateur, gardez à l’esprit que plusieurs instances du workflow peuvent s’exécuter en même temps. Par exemple, si un planificateur déclenche le workflow toutes les heures, mais que l&#39;exécution du workflow dure plus d&#39;une heure, vous risquez de vous retrouver avec des exécutions qui se chevauchent. Pour éviter cela, pensez à configurer des vérifications pour empêcher plusieurs exécutions simultanées. [Découvrez comment empêcher l’exécution simultanée de plusieurs workflows](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions).
 
-* Notez que la transition peut être activée plusieurs heures plus tard si le workflow exécutait une tâche à long terme, telle qu’un import, ou si le module wfserver a été arrêté pendant un certain temps. Dans ce cas, il peut être nécessaire de limiter l’exécution de la tâche activée par le planificateur à une certaine période.
+**Compte tenu des transitions retardées** - Les transitions déclenchées par le planificateur peuvent être retardées si le workflow exécute des tâches de longue durée (comme les imports) ou si le module wfserver a été temporairement arrêté. Pour atténuer ce problème, limitez les heures d’activation du planificateur afin de vous assurer que les tâches s’exécutent dans une fenêtre temporelle définie.
 
 ## Paramétrage de l’activité Planificateur {#configuring-scheduler-activity}
 
