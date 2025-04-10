@@ -3,10 +3,10 @@ title: Notes de mise à jour de Campaign v8
 description: Dernière version de Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 49ce7d776eb626d6a927da7630ed7d0e2644fda3
+source-git-commit: ff874a8e06303625b4c96f49fdf4f303b50fb908
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 20%
+source-wordcount: '600'
+ht-degree: 17%
 
 ---
 
@@ -45,29 +45,6 @@ _vendredi 10 avril 2025_
 Les problèmes suivants ont été corrigés dans cette version :
 
 NEO-80245, NEO-83559
-
-## Version 8.7.3 {#release-8-7-3}
-
-_14 février 2025_
-
->[!AVAILABILITY]
->
->Cette version est en **disponibilité limitée** (LA). Elle est limitée aux personnes effectuant la migration **depuis Adobe Campaign Standard vers Adobe Campaign v8** et ne peut pas être déployée dans un autre environnement.
->
->En tant qu’utilisateur Campaign Standard passant à Campaign v8, apprenez-en davantage sur cette transition dans la [documentation de l’interface utilisateur web de Campaign v8](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/acs-migration).
-
-### Nouvelles fonctionnalités {#features-8-7-3}
-
-* **Rapports dynamiques pour les messages transactionnels** - Vous pouvez désormais surveiller vos messages transactionnels dans l’interface utilisateur des rapports dynamiques. Ces rapports permettent au professionnel du marketing de visualiser toutes les mesures et dimensions de rapports des messages transactionnels, ainsi que la répartition des diffusions envoyées via un modèle en temps réel. [En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-cloud/campaign/reporting/get-started-reporting)
-
-* **API REST de messagerie transactionnelle** - Les API transactionnelles basées sur un événement sont désormais disponibles pour les e-mails. [En savoir plus](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/apis/managing-transactional-messages)
-
-### Correctifs {#fixes-8-7-3}
-
-Les problèmes suivants ont été corrigés dans cette version :
-
-NEO-79373, NEO-81908, NEO-83081.
-
 
 ## Version 8.6.4 {#release-8-6-4}
 
