@@ -5,10 +5,10 @@ description: En savoir plus sur l’activité de workflow de requête
 feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: cc0d1b7f662d39443ef82412d6df671af4ac8d97
 workflow-type: tm+mt
-source-wordcount: '1613'
-ht-degree: 100%
+source-wordcount: '1666'
+ht-degree: 96%
 
 ---
 
@@ -20,6 +20,11 @@ ht-degree: 100%
 
 Une requête permet de sélectionner une cible selon des critères. Vous pouvez associer un code segment au résultat de la requête et y insérer des données additionnelles.
 Pour plus d’informations sur des exemples de requêtes, voir [cette section](querying-recipient-table.md).
+
+>[!NOTE]
+>
+>L’interface utilisateur web d’Adobe Campaign dispose d’un puissant outil de modélisation des requêtes qui simplifie le processus de filtrage des bases de données afin de sélectionner des cibles spécifiques en fonction de divers critères, ce qui vous permet de créer et de gérer plus facilement vos requêtes. Pour en savoir plus sur Query modeler pour l’interface utilisateur web, consultez la [documentation de l’interface utilisateur web d’Adobe Campaign](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
+
 
 ![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
 
