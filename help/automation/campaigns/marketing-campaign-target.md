@@ -4,8 +4,9 @@ title: Audience cible de la campagne marketing
 description: Découvrez comment définir l’audience de vos campagnes marketing
 feature: Campaigns, Audiences
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: d292c20e520b2466f782ccf86eb9d61e01915563
+source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
 workflow-type: tm+mt
 source-wordcount: '1573'
 ht-degree: 100%

@@ -4,8 +4,9 @@ title: Diffusions de campagnes marketing
 description: En savoir plus sur les diffusions d'opérations marketing
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 100%
@@ -97,7 +98,7 @@ L&#39;extraction du fichier lance deux processus : le calcul du budget et celui
 
   ![](assets/campaign-budget-tab.png)
 
-  Le coût réel sera calculé au final en fonction des informations fournies par le routeur : seuls les courriers réellement envoyés sont facturés.
+  Le coût réel sera calculé au final en fonction des informations fournies par le routeur : seuls les messages réellement envoyés sont facturés.
 
 * Les stocks sont définis à partir du nœud **[!UICONTROL Administration > Gestion de campagnes > Stocks]** de l&#39;arborescence.
 

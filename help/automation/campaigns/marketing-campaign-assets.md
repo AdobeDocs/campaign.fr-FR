@@ -4,11 +4,12 @@ title: Ressources de campagne marketing, documents et compositions de diffusion
 description: En savoir plus sur les compositions de diffusions et sur les documents des campagnes marketing
 feature: Campaigns
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 352f6cd5-777d-413d-af79-6f53444b336f
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 91%
+ht-degree: 96%
 
 ---
 
@@ -58,7 +59,7 @@ Ils peuvent également être édités et modifiés depuis cette vue.
 
 ## Utiliser les compositions de diffusion {#delivery-outlines}
 
-Une composition est un ensemble structuré d&#39;éléments (documents, magasins, coupons promotionnels, etc.) créés par l&#39;entreprise et pour une opération particulière. Il est utilisé dans le cadre de diffusions par publipostage direct.
+Une composition de diffusion est un ensemble structuré d&#39;éléments (documents, magasins, coupons promotionnels, etc.) créé par la société et pour une campagne particulière. Il est utilisé dans le cadre de diffusions par publipostage direct.
 
 Ces éléments sont regroupés au sein de compositions de diffusions, chacune associée à une diffusion. La composition de diffusion sera référencée dans le fichier d&#39;extraction envoyé au **fournisseur** afin d&#39;être jointe à la diffusion. Par exemple, vous pouvez créer une composition de diffusion faisant référence à une unité et aux brochures marketing qu&#39;elle utilise.
 
@@ -89,7 +90,7 @@ Cliquez ensuite sur **[!UICONTROL Ajouter une composition de diffusion]** et cr�
 Une composition peut contenir des articles, des champs de personnalisation et des offres :
 
 * Les articles sont par exemple des documents physiques qui sont ici référencés et décrits, et seront joints à la diffusion.
-* Les champs de personnalisation permettent de créer des éléments de personnalisation relatifs aux diffusions et non aux destinataires. Il est ainsi possible de créer des valeurs à utiliser dans les diffusions pour une cible spécifique (offre de bienvenue, réduction, etc.) Ils sont créés dans Adobe Campaign et importés dans la composition via le lien **[!UICONTROL Importer des champs de personnalisation...]**.
+* Les champs de personnalisation permettent de créer des éléments de personnalisation relatifs aux diffusions et non aux destinataires. Ainsi, il est possible de créer des valeurs qui seront utilisées dans les diffusions pour une cible spécifique (offre de bienvenue, réduction, etc.) Ils sont créés dans Adobe Campaign et importés dans la composition, via le lien **[!UICONTROL Importer des champs de personnalisation...]**.
 
   ![](assets/del-outline-perso-field.png)
 
