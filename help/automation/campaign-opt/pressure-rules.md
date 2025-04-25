@@ -4,10 +4,10 @@ title: Configurer les règles de pression
 description: Découvrir comment configurer des règles de pression
 feature: Fatigue Management, Typology Rules
 exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
-source-git-commit: 5810f9b53bd3ad5383d4b9767bc65a3d595862c7
+source-git-commit: 8272550faefece753636418bcb748b36f989fcb5
 workflow-type: tm+mt
-source-wordcount: '3241'
-ht-degree: 100%
+source-wordcount: '3265'
+ht-degree: 99%
 
 ---
 
@@ -36,6 +36,10 @@ Dans le cas contraire, la personne destinataire sera **[!UICONTROL Exclue par ar
 ## Créer une règle de pression {#create-a-pressure-rule}
 
 Pour mettre en place l&#39;arbitrage entre les campagnes sous Adobe Campaign, vous devez d&#39;abord créer des typologies de campagnes et définir les règles de typologies associées. Ces règles seront de type **Pression**.
+
+>[!NOTE]
+>
+>Pour qu’une règle de pression soit appliquée correctement, la dimension de ciblage de la règle doit correspondre à la dimension de ciblage du mapping de diffusion.
 
 Pour créer et paramétrer une règle de typologie de type **[!UICONTROL Pression]**, les étapes sont les suivantes :
 

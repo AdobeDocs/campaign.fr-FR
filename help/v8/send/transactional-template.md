@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
+source-git-commit: 8272550faefece753636418bcb748b36f989fcb5
 workflow-type: tm+mt
-source-wordcount: '1231'
-ht-degree: 98%
+source-wordcount: '1238'
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ Pour créer un modèle de message, procédez comme suit :
    ![](assets/messagecenter_create_model_002.png)
 
 1. Modifiez le libellé si nécessaire.
-1. Sélectionnez le type d&#39;événement correspondant au message que vous souhaitez envoyer. Les types d&#39;événements destinés à être traités par Adobe Campaign doivent être créés au préalable. [En savoir plus](#create-event-types)
+1. Sélectionnez le type d&#39;événement correspondant au message que vous souhaitez envoyer. Les types d&#39;événements destinés à être traités par Adobe Campaign doivent être créés au préalable. [En savoir plus](../send/transactional.md#create-event-types)
 
    ![](assets/messagecenter_create_model_003.png)
 
@@ -86,7 +86,7 @@ Une adresse de contrôle vous permet d&#39;afficher une prévisualisation de vot
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. Insérez les données de test. Consultez [cette section](#personalization-data).
+1. Insérez les données de test. [En savoir plus sur les données de personnalisation dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-data.html){target="_blank"}
 
    ![](assets/messagecenter_create_custo_3.png)
 
