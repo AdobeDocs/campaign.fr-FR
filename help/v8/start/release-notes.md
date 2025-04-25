@@ -3,10 +3,10 @@ title: Notes de mise à jour de Campaign v8
 description: Dernière version de Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 66e4b59915eae595b28076622f7bcfb5b5a0ffa4
+source-git-commit: 5ece3ca4ebf9f3973d9cbd1a00ea57b29c1f2e93
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 17%
+source-wordcount: '786'
+ht-degree: 33%
 
 ---
 
@@ -18,10 +18,37 @@ Cette page répertorie les nouvelles fonctionnalités, les améliorations et les
 
 **Dans cette page**
 
+* [Version 8.6.5](#release-8-6-4)
 * [Version 8.7.4](#release-8-7-4)
 * [Version 8.6.4](#release-8-6-4)
 
 >[!ENDSHADEBOX]
+
+## Version 8.6.5 {#release-8-6-5}
+
+_samedi 25 avril 2025_
+
+>[!AVAILABILITY]
+>
+>Cette version est en **disponibilité limitée** (LA).
+
+### Nouvelles fonctionnalités {#features-8-6-5}
+
+**Nouveau connecteur d’envoi de SMS** : le connecteur d’envoi de SMS a été modernisé et amélioré afin d’activer les connexions SMPP en mode émetteur-récepteur, d’activer les connexions SMPP persistantes et d’assurer une meilleure compatibilité pour les environnements en transition depuis Adobe Campaign Standard. Un nouveau compte externe SMS est désormais disponible pour toutes les nouvelles implémentations SMS. L’implémentation existante est toujours prise en charge, mais il est recommandé de passer au nouveau connecteur moderne et étendu. [En savoir plus](../send/sms/sms.md).
+
+### Améliorations générales {#improvements-8-6-5}
+
+* Les performances globales de l’application ont été améliorées, dans le contexte d’un déploiement Enterprise (FFDA), notamment l’envoi de BAT de diffusion et le nettoyage de la base de données.
+
+* Pour accroître la sécurité de toutes les communications entre les applications, mTLS est désormais pris en charge pour les appels API externes.
+
+* MTA (Mail Transfer Agent) : correction du blocage d’un enfant MTA orphelin au statut **[!UICONTROL Démarrage en attente]**.
+
+### Correctifs {#fixes-8-6-5}
+
+Les problèmes suivants ont également été corrigés dans cette version :
+
+NEO-67620, NEO-71534, NEO-80245, NEO-81105, NEO-81758, NEO-81908, NEO-82351, NEO-82742, NEO-83044, NEO-83138, NEO-83350, NEO-83729, NEO-83793, NEO-83809, NEO-84038, NEO-84108, NEO-85269, NEO-86121, NEO-86556, NEO-86739
 
 ## Version 8.7.4 {#release-8-7-4}
 
