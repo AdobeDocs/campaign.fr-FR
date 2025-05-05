@@ -20,7 +20,7 @@ Pour créer des pages de destination, accédez à l’[interface utilisateur web
 
 >[!AVAILABILITY]
 >
->* L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs qui se connectent à Adobe Campaign avec leur Adobe ID. En savoir plus sur le système Adobe Identity Management (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} [.
+>* L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs qui se connectent à Adobe Campaign avec leur Adobe ID. En savoir plus sur le système Adobe Identity Management (IMS) [&#128279;](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} .
 >
 >* Les landing pages que vous créez dans l’interface utilisateur web de Campaign ne peuvent pas être affichées ni modifiées dans la console cliente Campaign.
 >

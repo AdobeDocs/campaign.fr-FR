@@ -28,7 +28,7 @@ Vous pouvez accéder à Adobe Campaign à partir de sa console cliente ou de so
 
   >[!AVAILABILITY]
   >
-  >L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs qui se connectent à Adobe Campaign avec leur Adobe ID. En savoir plus sur le système Adobe Identity Management (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} [.
+  >L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs qui se connectent à Adobe Campaign avec leur Adobe ID. En savoir plus sur le système Adobe Identity Management (IMS) [&#128279;](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} .
   >
 
 * **Accès web** : les fonctionnalités d’accès web d’Adobe Campaign vous permettent d’accéder à un sous-ensemble de fonctionnalités de Campaign avec un navigateur web, à l’aide d’une interface utilisateur HTML. Utilisez cette interface web pour consulter des rapports, contrôler et valider les messages, accéder aux tableaux de bord de surveillance, et plus encore.  Pour en savoir plus sur l’accès web de Campaign, consultez [cette section](../start/connect.md#web-access).
@@ -114,7 +114,7 @@ En tant qu’utilisateur ou utilisatrice de la console cliente Campaign v8, de
 
 >[!AVAILABILITY]
 >
->L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs qui se connectent à Adobe Campaign avec leur Adobe ID. En savoir plus sur le système Adobe Identity Management (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} [.
+>L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs qui se connectent à Adobe Campaign avec leur Adobe ID. En savoir plus sur le système Adobe Identity Management (IMS) [&#128279;](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} .
 >
 
 En savoir plus sur la nouvelle interface utilisateur web de Campaign dans [cette documentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=fr){target="_blank"}. Vous pouvez également consulter la page dédiée [Foire aux questions](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/faq){target="_blank"}, dans la documentation de l’interface utilisateur web de Campaign.

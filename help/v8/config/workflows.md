@@ -27,7 +27,7 @@ Ce que vous pouvez configurer :
 
 >[!NOTE]
 >
->L’interface utilisateur web d’Adobe Campaign s’accompagne d’une zone de travail repensée pour les workflows, ce qui permet de créer des parcours client plus dynamiques et personnalisés. Pour en savoir plus sur les workflows pour l’interface utilisateur web, reportez-vous à la documentation de l’interface utilisateur web d’Adobe Campaign [](https://experienceleague.adobe.com/en/docs/campaign-web/v8/wf/gs-workflows){target=_blank}.
+>L’interface utilisateur web d’Adobe Campaign s’accompagne d’une zone de travail repensée pour les workflows, ce qui permet de créer des parcours client plus dynamiques et personnalisés. Pour en savoir plus sur les workflows pour l’interface utilisateur web, reportez-vous à la documentation de l’interface utilisateur web d’Adobe Campaign [&#128279;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/wf/gs-workflows){target=_blank}.
 
 
 ## Conception et utilisation de workflows {#gs-ac-wf}

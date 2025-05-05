@@ -125,7 +125,7 @@ Depuis Campaign v8.6, vous avez accès à la nouvelle **interface utilisateur 
 
 >[!AVAILABILITY]
 >
->L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs qui se connectent à Adobe Campaign avec leur Adobe ID. En savoir plus sur le système Adobe Identity Management (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} [.
+>L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs qui se connectent à Adobe Campaign avec leur Adobe ID. En savoir plus sur le système Adobe Identity Management (IMS) [&#128279;](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} .
 >
 
 Découvrez comment vous connecter à Adobe Experience Cloud et accéder à l’interface d’Adobe Campaign Web [dans cette page](campaign-ui.md#ac-web-ui).
