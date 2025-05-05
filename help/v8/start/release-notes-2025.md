@@ -38,7 +38,7 @@ _Fév 14, 2025_
 
 * **Rapports dynamiques pour les messages** transactionnels - Vous pouvez désormais surveiller vos messages transactionnels dans l’interface utilisateur des rapports dynamiques. Ces rapports permettent au spécialiste du marketing de visualiser en temps réel toutes les métriques de reporting et les dimensions des messages transactionnels, la répartition des diffusions envoyées via un modèle. [En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-cloud/campaign/reporting/get-started-reporting){target="_blank"}
 
-* **API REST des messages transactionnels : les** API transactionnelles basées sur un événement sont désormais disponibles pour les emails. [En savoir plus](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/apis/managing-transactional-messages){target="_blank"}
+* **API REST des messages transactionnels : les** API transactionnelles basées sur un événement sont désormais disponibles pour les emails. [En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-cloud/campaign/apis/managing-transactional-messages){target="_blank"}
 
 ### Correctifs {#fixes-8-7-3}
 

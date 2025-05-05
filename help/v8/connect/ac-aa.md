@@ -146,7 +146,7 @@ Pour plus d’informations, consultez la page [Profils de produit pour Adobe An
 
    >[!NOTE]
    >
-   >Les champs Identifiant de la campagne et Identifiant de la diffusion sont collectés via JavaScript sur la page de destination ou par le biais de règles de traitement. [En savoir plus sur les règles de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
+   >Les champs Identifiant de la campagne et Identifiant de la diffusion sont collectés via JavaScript sur la page de destination ou par le biais de règles de traitement. [En savoir plus sur les règles de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
 
    ![](assets/analytics_connnector_11.png)
 

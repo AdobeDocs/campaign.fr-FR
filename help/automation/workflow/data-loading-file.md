@@ -26,7 +26,7 @@ La section supérieure de la fenêtre de configuration de cette activité permet
 
 >[!CAUTION]
 >
->Seuls les fichiers à structure « plate » sont pris en charge (par exemple, CSV, TXT, etc.). Il n’est pas recommandé d’utiliser le format XML. Avec la console cliente, vous pouvez charger des fichiers jusqu’à une taille maximale de 150MB. Dans l’interface utilisateur web, l’activité Chargement de fichier est limitée à 50 Mo. [En savoir plus](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html){target="_blank"}
+>Seuls les fichiers à structure « plate » sont pris en charge (par exemple, CSV, TXT, etc.). Il n’est pas recommandé d’utiliser le format XML. Avec la console cliente, vous pouvez charger des fichiers jusqu’à une taille maximale de 150MB. Dans l’interface utilisateur web, l’activité Chargement de fichier est limitée à 50 Mo. [En savoir plus](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html?lang=fr){target="_blank"}
 
 ![](assets/s_advuser_wf_etl_file.png)
 

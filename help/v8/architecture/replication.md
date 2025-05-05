@@ -117,4 +117,4 @@ Cette vidéo présente les concepts clés des bases de données utilisées par A
 
 >[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
-D’autres tutoriels sur la console cliente Campaign v8 sont disponibles [ici](https://experienceleague.adobe.com/en/docs/campaign-learn/tutorials/overview).
+D’autres tutoriels sur la console cliente Campaign v8 sont disponibles [ici](https://experienceleague.adobe.com/fr/docs/campaign-learn/tutorials/overview).
