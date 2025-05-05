@@ -59,4 +59,4 @@ Une fois ces étapes terminées, vous pouvez [lancer les diffusions](marketing-c
 
 Cette vidéo présente les concepts clés des campagnes marketing.
 
->[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/326571?quality=12&captions=fre_fr)

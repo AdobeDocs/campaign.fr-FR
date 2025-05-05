@@ -64,4 +64,4 @@ Dans le cas d’utilisation ci-dessous, apprenez à personnaliser l’objet et l
 
 Dans la vidéo suivante, découvrez comment ajouter un champ de personnalisation à la ligne d’objet et au contenu d’une diffusion e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/30950?quality=12&captions=fre_fr)

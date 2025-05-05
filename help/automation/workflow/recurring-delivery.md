@@ -52,6 +52,6 @@ Si vous souhaitez arrêter lʼexécution dʼune diffusion récurrente, vous deve
 
 Cette vidéo explique comment configurer une diffusion récurrente et une activité Planificateur.
 
->[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/30589?quality=12&captions=fre_fr)
 
 D’autres vidéos pratiques sur Campaign sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=fr){target="_blank"}.
