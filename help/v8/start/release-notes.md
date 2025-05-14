@@ -3,10 +3,10 @@ title: Notes de mise à jour de Campaign v8
 description: Dernière version de Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 5ece3ca4ebf9f3973d9cbd1a00ea57b29c1f2e93
+source-git-commit: 6d2425f7e7f35f5461151790fbda2bef2959bff4
 workflow-type: tm+mt
 source-wordcount: '786'
-ht-degree: 33%
+ht-degree: 36%
 
 ---
 
@@ -16,7 +16,7 @@ Cette page répertorie les nouvelles fonctionnalités, les améliorations et les
 
 >[!BEGINSHADEBOX]
 
-**Dans cette page**
+**Sur cette page**
 
 * [Version 8.6.5](#release-8-6-4)
 * [Version 8.7.4](#release-8-7-4)
@@ -62,7 +62,7 @@ _vendredi 10 avril 2025_
 
 ### Nouvelles fonctionnalités {#features-8-7-4}
 
-* **Prise en charge de l’API REST SMS** - L’API REST de messagerie transactionnelle est désormais disponible pour le canal SMS. Lorsque le payload contient à la fois un e-mail et un téléphone mobile, vous pouvez utiliser le champ « wishedChannel » pour spécifier le canal. S’il n’est pas fourni, l’e-mail est utilisé par défaut, sauf si wishedChannel demande explicitement un SMS.
+* **Prise en charge de l’API REST SMS** - L’API REST de messagerie transactionnelle est désormais disponible pour le canal SMS. Lorsque le payload contient à la fois un e-mail et un téléphone mobile, vous pouvez utiliser le champ « wishedChannel » pour spécifier le canal. S’il n’est pas fourni, l’e-mail est utilisé par défaut, sauf si wishedChannel demande explicitement un SMS.
 
 * **Diffusions multilingues** - À compter de la version d’avril de l’interface utilisateur web de Campaign, vous pourrez envoyer plusieurs diffusions par e-mail dans différentes langues et accéder aux rapports dynamiques associés. Cette fonctionnalité ne sera disponible dans l’interface utilisateur web d’Adobe Campaign qu’à la fin du mois d’avril et nécessite une mise à jour du serveur vers la version 8.7.4 de Campaign.
 
