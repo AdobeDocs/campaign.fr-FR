@@ -3,7 +3,7 @@ title: Prise en main des canaux externes personnalisés
 description: Découvrez comment créer et envoyer des diffusions de canal externe personnalisées avec Adobe Campaign Web
 role: User
 level: Beginner, Intermediate
-source-git-commit: 4a62c551c43cd5a4866df36cce10e294f35db363
+source-git-commit: 4ba419c52d6804e4f25f88990c226081ef0a06e6
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 4%
