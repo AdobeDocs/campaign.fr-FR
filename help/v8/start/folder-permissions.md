@@ -5,10 +5,10 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 5bd8dbba-7a06-4737-bc5a-60354f91c709
-source-git-commit: 0513b9f65e9431f5207b384a0e2d8c5aeb8e209f
+source-git-commit: 4a62c551c43cd5a4866df36cce10e294f35db363
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 100%
+source-wordcount: '319'
+ht-degree: 82%
 
 ---
 
@@ -30,6 +30,12 @@ Pour modifier les autorisations sur un dossier Campaign spécifique, procédez c
 * Pour **autoriser un groupe ou un opérateur**, cliquez sur le bouton **[!UICONTROL Ajouter]** et sélectionnez le groupe ou l&#39;opérateur auquel attribuer les autorisations pour ce dossier.
 * Pour **interdire un groupe ou un opérateur**, cliquez sur **[!UICONTROL Supprimer]** et sélectionnez le groupe ou l&#39;opérateur pour supprimer les autorisations pour ce dossier.
 * Pour **sélectionner les droits attribués à un groupe ou un opérateur**, cliquez sur le groupe ou l&#39;opérateur, sélectionnez les droits d&#39;accès que vous voulez attribuer, et décochez les autres.
+
+>[!NOTE]
+>
+>Vous ne devriez pas être en mesure de créer un objet pour lequel vous n’avez pas au moins un dossier avec des droits d’écriture.
+>
+>Vous n’avez pas besoin d’être administrateur pour créer des fragments, mais vous devez disposer de droits d’écriture sur au moins un dossier « Fragment visuel de contenu ». Sinon, vous ne pourrez pas créer de fragment visuel.
 
 ## Propager les autorisations {#propagate-permissions}
 
