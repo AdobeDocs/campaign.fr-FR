@@ -17,7 +17,7 @@ Adobe Campaign vous permet de créer des canaux externes personnalisés intégr�
 
 La création et l’envoi de la diffusion peuvent être effectués dans la console cliente et dans l’interface utilisateur web. Cependant, le canal externe personnalisé n’est exécuté que dans la console cliente.
 
-Pour savoir comment créer et envoyer une diffusion basée sur un canal externe personnalisé, consultez cette [page](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html).
+Pour savoir comment créer et envoyer une diffusion basée sur un canal externe personnalisé, consultez cette [page](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html?lang=fr).
 
 Pour créer un canal personnalisé externe dans la console cliente, procédez comme suit :
 
