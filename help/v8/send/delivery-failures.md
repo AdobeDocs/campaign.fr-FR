@@ -5,10 +5,10 @@ feature: Profiles, Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
-source-wordcount: '3042'
-ht-degree: 100%
+source-wordcount: '3028'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ Les rebonds temporaires sont des échecs temporaires que les FAI génèrent lors
 
 Le type d&#39;erreur **ignoré** est une erreur temporaire, par exemple « Absent du bureau », ou une erreur technique, par exemple si l&#39;expéditeur est de type « postmaster ».
 
-La boucle des retours fonctionne comme les e-mails rebonds : lorsqu&#39;un utilisateur qualifie un e-mail de spam, vous pouvez configurer des règles de messagerie dans Adobe Campaign pour bloquer toutes les diffusions à cet utilisateur. Les adresses de ces utilisateurs figurent sur la liste bloquée même s&#39;ils n&#39;ont pas cliqué sur le lien de désinscription. Les adresses sont ajoutées à la table des quarantaines (**NmsAddress**) et non à la table des destinataires (**NmsRecipient**), avec le statut **[!UICONTROL Placée sur la liste bloquée]**. En savoir plus sur sur le mécanisme de feedback loop dans le [guide des bonnes pratiques en matière de délivrabilité d’Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#feedback-loops){target="_blank"}.
+La boucle des retours fonctionne comme les e-mails rebonds : lorsqu&#39;un utilisateur qualifie un e-mail de spam, vous pouvez configurer des règles de messagerie dans Adobe Campaign pour bloquer toutes les diffusions à cet utilisateur. Les adresses de ces utilisateurs figurent sur la liste bloquée même s&#39;ils n&#39;ont pas cliqué sur le lien de désinscription. Les adresses sont ajoutées à la table des quarantaines (**NmsAddress**) et non à la table des destinataires (**NmsRecipient**), avec le statut **[!UICONTROL Placée sur la liste bloquée]**. Apprenez-en davantage sur le mécanisme de boucle des retours dans le [guide des bonnes pratiques en matière de délivrabilité d&#39;Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#feedback-loops){target="_blank"}.
 
 ## Erreurs synchrones et asynchrones {#synchronous-and-asynchronous-errors}
 
@@ -66,7 +66,7 @@ Actuellement, le traitement de la qualification des e-mails rejetés dans Adobe�
 
 * **Erreurs synchrones** : le MTA détermine le type et la qualification du rebond, puis renvoie ces informations à Campaign. Les qualifications de mails rebonds dans la table **[!UICONTROL Qualification des logs de diffusion]** ne sont plus utilisées pour les messages d&#39;erreur relatifs aux échecs des diffusions **synchrones**.
 
-* **Erreurs asynchrones** : les règles utilisées par Campaign pour qualifier les diffusions en échec asynchrones sont répertoriées dans le nœud **[!UICONTROL Administration > Gestion de campagne > Gestion des échecs > Qualification des logs de diffusion]**. Les rebonds asynchrones restent qualifiés par le processus inMail grâce aux règles **[!UICONTROL E-mail entrant]**. Pour en savoir plus, consultez la [documentation d’Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr#bounce-mail-qualification){target="_blank"}.
+* **Erreurs asynchrones** : les règles utilisées par Campaign pour qualifier les diffusions en échec asynchrones sont répertoriées dans le nœud **[!UICONTROL Administration > Gestion de campagne > Gestion des échecs > Qualification des logs de diffusion]**. Les rebonds asynchrones restent qualifiés par le processus inMail grâce aux règles **[!UICONTROL E-mail entrant]**. Pour en savoir plus à ce sujet, consultez la documentation de [Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr#bounce-mail-qualification){target="_blank"}.
 
 <!--NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
 
@@ -111,7 +111,7 @@ Par exemple, si la période de validité est définie sur la valeur par défaut 
 
 Une fois qu’un message figure dans la file d’attente du MTA depuis 3,5 jours et qu’il n’a pas été diffusé, il expire et son statut est mis à jour de **[!UICONTROL Envoi]** à **[!UICONTROL Échec]** dans les logs de diffusion.
 
-Pour plus d’informations sur la période de validité, consultez la [documentation d’Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#defining-validity-period){target="_blank"}.
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## Types d&#39;erreur e-mail {#email-error-types}
@@ -638,7 +638,7 @@ Les spécificités du canal SMS sont énumérées ci-dessous.
 
 **Pour le connecteur SMPP générique étendu**
 
-Lors de l&#39;utilisation du protocole SMPP pour envoyer des SMS, la gestion des erreurs est traitée différemment.
+Lors de l’utilisation du protocole SMPP pour envoyer des SMS, la gestion des erreurs est traitée différemment.
 
 Le connecteur SMPP récupère les données du message de rapport de statut (SR) renvoyé à l’aide d’expressions régulières (regex) pour filtrer son contenu. Ces données sont ensuite comparées aux informations trouvées dans le tableau **[!UICONTROL Qualification des logs de diffusion]** (disponible à partir du menu **[!UICONTROL Administration]** > **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Gestion des NP@I]**).
 

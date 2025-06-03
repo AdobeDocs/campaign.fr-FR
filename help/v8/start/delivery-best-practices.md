@@ -4,11 +4,12 @@ description: Découvrez les bonnes pratiques lors de la conception et de l’env
 feature: Email, Push, SMS, Direct Mail
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: 768ebf4b350da61f0076eb9e43a16246be3b2628
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '2970'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -31,7 +32,7 @@ Pour éviter cette situation, coordonnez la planification des diffusions avec le
 
 * Exécution du workflow : la surveillance de vos workflows est essentielle pour éviter tout problème de performances de la plateforme. Suivez les directives répertoriées [dans ce document](../../automation/workflow/workflow-best-practices.md#execution-and-performance).
 
-* Connectez-vous à vos [fonctionnalités du Panneau de contrôle de Campaign](https://experienceleague.adobe.com/fr/docs/control-panel/using/discover-control-panel/key-features){target="_blank"} pour surveiller votre plateforme à l’aide des fonctionnalités de [surveillance des performances](https://experienceleague.adobe.com/fr/docs/control-panel/using/performance-monitoring/about-performance-monitoring){target="_blank"}.
+* Connectez-vous à votre [fonctionnalités de Panneau de Contrôle Campaign](https://experienceleague.adobe.com/fr/docs/control-panel/using/discover-control-panel/key-features){target="_blank"} pour surveiller votre plateforme à l’aide des fonctionnalités de [surveillance des performances](https://experienceleague.adobe.com/fr/docs/control-panel/using/performance-monitoring/about-performance-monitoring){target="_blank"}.
 
 #### Gestion des quarantaines {#quarantine-management}
 
@@ -40,7 +41,7 @@ Vous avez tout intérêt à mettre en place et à conserver de bons processus de
 Lorsque vous commencez à envoyer des emails sur une nouvelle plateforme, vous pouvez utiliser une liste d’adresses qui ne sont pas entièrement qualifiées. Or l’envoi à des adresses non valides ou à des adresses pièges (boîtes mails créées dans le but de piéger les spammeurs) contribue à abaisser la réputation de la plateforme. De bons processus de gestion des quarantaines permettent de conserver la qualité des adresses, d&#39;éviter la mise sur liste bloquée de la part des FAI et de réduire le taux d&#39;erreur, tout en augmentant la vitesse des diffusions et le débit.
 
 
-Découvrez comment démarrer une nouvelle plateforme dans le [Guide Adobe des bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform){target="_blank"}.
+Découvrez comment démarrer une nouvelle plateforme dans le [Guide des bonnes pratiques en matière de délivrabilité d&#39;Adobe](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform){target="_blank"}.
 
 Les recommandations techniques sont répertoriées dans [cette section](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations){target="_blank"}.
 
@@ -68,7 +69,7 @@ Les modèles de diffusion accroissent l’efficacité en offrant des configurati
 
 ### Sous-domaines et branding {#subdomains-and-branding}
 
-Si vous gérez plusieurs marques dans Adobe Campaign, Adobe recommande de disposer d’un sous-domaine par marque. Une banque peut, par exemple, avoir plusieurs sous-domaines qui correspondent à chacune de ses agences régionales. Si une banque détient le domaine bluebank.com, ses sous-domaines peuvent être @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com, etc. Disposer d’un modèle de diffusion par sous-domaine vous permet de toujours utiliser les paramètres préconfigurés adéquats pour chaque marque et d’éviter ainsi des erreurs tout en gagnant du temps. En savoir plus sur le branding de sous-domaines dans la [documentation du Panneau de contrôle de Campaign](https://experienceleague.adobe.com/fr/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
+Si vous gérez plusieurs marques dans Adobe Campaign, Adobe recommande de disposer d’un sous-domaine par marque. Une banque peut, par exemple, avoir plusieurs sous-domaines qui correspondent à chacune de ses agences régionales. Si une banque détient le domaine bluebank.com, ses sous-domaines peuvent être @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com, etc. Disposer d’un modèle de diffusion par sous-domaine vous permet de toujours utiliser les paramètres préconfigurés adéquats pour chaque marque et d’éviter ainsi des erreurs tout en gagnant du temps. Pour en savoir plus sur le branding de sous-domaine, consultez la [documentation du Panneau de Contrôle Campaign](https://experienceleague.adobe.com/fr/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
 
 ### Configurer les adresses {#configure-addresses}
 
@@ -97,7 +98,7 @@ Une fois que la diffusion est envoyée, vous pouvez comparer le comportement des
 
 ### Utiliser des typologies pour appliquer des filtres ou des règles de contrôle {#create-typologies}
 
-Une typologie contient les règles de vérification qui sont appliquées lors de la phase d&#39;analyse, avant tout envoi.
+Une typologie contient les règles de vérification qui sont appliquées lors de la phase d’analyse, avant tout envoi.
 
 Dans l’onglet **[!UICONTROL Typologie]** des propriétés du modèle, vous pouvez sélectionner une typologie personnalisée si nécessaire.
 
@@ -204,11 +205,11 @@ Par défaut, le nombre de caractère d&#39;un SMS respecte la norme de télépho
 
 +++ **Lire quelques bonnes pratiques**
 
-* Pour conserver tous les caractères de vos SMS, afin de ne pas altérer les noms propres par exemple, n&#39;activez pas la translittération.
+* Pour conserver tous les caractères de vos SMS, afin de ne pas altérer les noms propres par exemple, n’activez pas la translittération.
 
 * En revanche, si vos SMS contiennent beaucoup de caractères qui ne sont pas pris en charge par la norme GSM, activez la translittération afin de limiter le coût de vos envois. En savoir plus [dans cette section](../send/sms/smpp-external-account.md#smpp-transliteration).
 
-* Vous pouvez appliquer la translittération aux SMS. Celle-ci consiste à remplacer un caractère d’un SMS par un autre lorsque ce caractère n’est pas pris en charge par la norme GSM. Notez que l&#39;insertion de champs de personnalisation dans le contenu du SMS peut introduire des caractères non pris en charge par l&#39;encodage GSM. En tant qu’administrateur ou administratrice Campaign, vous pouvez autoriser la translittération des caractères en cochant la case correspondante dans l’onglet des paramètres du canal SMPP du **[!UICONTROL compte externe]** correspondant. [En savoir plus](../send/sms/smpp-external-account.md#smpp-transliteration)
+* Vous pouvez appliquer la translittération aux SMS. Celle-ci consiste à remplacer un caractère d’un SMS par un autre lorsque ce caractère n’est pas pris en charge par la norme GSM. Notez que l’insertion de champs de personnalisation dans le contenu du SMS peut introduire des caractères non pris en charge par l’encodage GSM. En tant qu’administrateur ou administratrice Campaign, vous pouvez autoriser la translittération des caractères en cochant la case correspondante dans l’onglet des paramètres du canal SMPP du **[!UICONTROL compte externe]** correspondant. [En savoir plus](../send/sms/smpp-external-account.md#smpp-transliteration)
 
 +++
 
@@ -225,7 +226,7 @@ To avoid common formatting errors, check the following elements:
 
 * Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../../installation/using/configuring-campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode. 
 
-* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#authentication).-->
+* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).-->
 
 ## Gestion des images {#manage-images}
 
@@ -411,7 +412,7 @@ Pour contrôler vos campagnes, vous devez vérifier que le message a bien été 
 
 Dans le tableau de bord des diffusions de Campaign, vous pouvez vérifier les messages traités et consulter les logs d’audit de diffusion. Vous pouvez également contrôler le statut des messages dans les logs de diffusion.
 
-[En savoir plus sur la surveillance des diffusions dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=fr){target="_blank"}.
+[En savoir plus sur la surveillance des diffusions dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=fr){target="_blank"}
 
 
 ## Tracking du comportement {#track-behaviour}
@@ -421,4 +422,4 @@ Pour mieux connaître le comportement de vos destinataires, vous pouvez suivre l
 Le tracking des messages est activé par défaut. Pour configurer les URL, sélectionnez l’option Afficher les URL dans la section inférieure de l’assistant de diffusion. Pour chaque URL du message, vous pouvez choisir d’activer ou non le tracking.
 
 
-[En savoir plus sur les fonctionnalités de tracking dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html?lang=fr#sending-messages){target="_blank"}.
+[En savoir plus sur les fonctionnalités de tracking dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html?lang=fr#sending-messages){target="_blank"}

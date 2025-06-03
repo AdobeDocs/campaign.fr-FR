@@ -5,10 +5,10 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: 4a62c551c43cd5a4866df36cce10e294f35db363
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 91%
+source-wordcount: '712'
+ht-degree: 92%
 
 ---
 
@@ -48,10 +48,14 @@ ht-degree: 91%
    + [Bonnes pratiques relatives à la diffusion](start/delivery-best-practices.md)
    + E-mails {#emails}
       + [Concevoir et valider des e-mails](send/email.md)
+      + [Définition du contenu de l’e-mail](send/defining-the-email-content.md)
+      + [Définition du contenu interactif](send/defining-interactive-content.md)
       + [Lien vers la page miroir](send/mirror-page.md)
       + [Ajouter une adresse Cci](send/email-bcc.md)
       + [Définir les paramètres d’e-mail supplémentaires](send/email-parameters.md)
       + [Envoyer et surveiller des e-mails](send/send.md)
+      + [Envoi dʼe-mails sur mobiles japonais](send/sending-emails-on-japanese-mobiles.md)
+      + [Joindre des fichiers à un email ](send/attaching-files.md)
    + SMS {#sms}
       + [Prise en main des SMS](send/sms/sms.md)
       + Configurer le canal SMS {#config-sms}
