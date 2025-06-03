@@ -5,7 +5,7 @@ description: Surveiller l’exécution des workflows
 feature: Workflows
 role: Admin
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
-source-git-commit: a78019d11a0a2acbd8c0d9ba7c2082c09f90356c
+source-git-commit: 3ce23cadf94eb561fb406fff739edd3eddf83b58
 workflow-type: tm+mt
 source-wordcount: '2006'
 ht-degree: 100%
@@ -34,7 +34,7 @@ Lorsque cette option est sélectionnée, les activités exécutées apparaissent
 
 ## Afficher le journal {#displaying-logs}
 
-Le journal contient l&#39;historique de l&#39;exécution du workflow. Il mémorise les actions effectuées par les opérateurs, les opérations réalisées et les erreurs d&#39;exécution. Vous pouvez :
+Le journal contient l’historique ou le journal d’audit du workflow. Il mémorise les actions effectuées par les opérateurs, les opérations réalisées et les erreurs d’exécution. Vous pouvez :
 
 * Sélectionner l&#39;onglet **[!UICONTROL Suivi]** du détail. Cette liste affiche tous les messages du workflow.
 
@@ -122,7 +122,7 @@ Exemple de notification :
 
 ![](assets/wf-notification_error-msg.png)
 
-Le lien permet d’accéder en mode web à la console cliente Adobe Campaign et, après connexion, d’agir sur le workflow en erreur.
+Le lien permet d’accéder en mode Web à la console cliente Adobe Campaign et, après connexion, d’agir sur le workflow en erreur.
 
 ![](assets/wf-notification_error-console.png)
 

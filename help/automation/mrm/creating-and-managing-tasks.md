@@ -5,9 +5,9 @@ description: Créer et gérer les tâches
 feature: Campaigns, Resource Management
 role: User
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
 workflow-type: tm+mt
-source-wordcount: '3928'
+source-wordcount: '3927'
 ht-degree: 100%
 
 ---
@@ -468,7 +468,7 @@ Voici les différentes étapes du cycle de vie complet d&#39;une tâche pour laq
 1. Lorsqu&#39;un intervenant a terminé la partie qui lui a été assignée, il valide la tâche, au choix :
 
    * à partir de l&#39;email de notification.
-   * à partir de la console cliente ou de l’accès web, au niveau du tableau de bord de la tâche.
+   * à partir de la console ou de l’interface web, au niveau du tableau de bord de la tâche.
 
      ![](assets/s_ncs_user_task_start_rea.png)
 
@@ -482,7 +482,7 @@ Voici les différentes étapes du cycle de vie complet d&#39;une tâche pour laq
 
    ![](assets/s_ncs_user_task_follow_from_dashboard.png)
 
-1. Lorsqu’elle estime que la tâche est terminée, la personne responsable peut alors la clore de différentes manières : en cliquant sur le lien dans l’e-mail de notification envoyé à la date de début de la tâche, à partir de la console cliente ou dans l’interface web.
+1. Lorsqu’il ou elle estime que la tâche est terminée, le ou la responsable peut alors la clore de différentes manières : en cliquant sur le lien dans l’e-mail de notification envoyé à la date de début de la tâche, à partir de la console cliente ou dans l’interface web.
 
    ![](assets/s_ncs_user_task_console_ressource_validation.png)
 
@@ -492,7 +492,7 @@ Voici les différentes étapes du cycle de vie complet d&#39;une tâche pour laq
 
 1. La tâche passe alors à l&#39;état **[!UICONTROL A valider]**, et un email de notification est envoyé au validant.
 
-   La personne approuve la tâche à partir de l’e-mail de notification, de la console cliente ou d’un navigateur web.
+   Il ou elle approuve la tâche à partir de l’e-mail de notification, de la console cliente ou de l’interface web.
 
    Il peut agir depuis le tableau de bord de l&#39;opération :
 

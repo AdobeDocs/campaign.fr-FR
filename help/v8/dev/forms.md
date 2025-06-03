@@ -5,10 +5,10 @@ feature: Web Forms, Landing Pages
 role: Developer
 level: Beginner, Intermediate
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
 source-wordcount: '2573'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 100%
 
 Lorsque vous créez ou étendez un schéma, vous devez créer ou modifier les formulaires de saisie associés pour permettre aux utilisateurs finaux et utilisatrices finales de voir ces modifications.
 
-Un formulaire de saisie vous permet de modifier une instance associée à un schéma de données à partir de la console client Adobe Campaign. Le formulaire est identifié par ses nom et espace de noms.
+Un formulaire de saisie vous permet de modifier une instance associée à un schéma de données à partir de la console cliente Adobe Campaign. Le formulaire est identifié par ses nom et espace de noms.
 
 La clé d’identification d’un formulaire correspond à une chaîne constituée de l’espace de noms et du nom séparés par deux points, par exemple « cus:contact ».
 
 ## Modification des formulaires de saisie
 
-Créez et configurez des formulaires de saisie à partir du dossier **[!UICONTROL Administration] > [!UICONTROL Paramétrage] > [!UICONTROL Formulaires de saisie]** de la console cliente :
+Créez et configurez des formulaires de saisie à partir du dossier **[!UICONTROL Administration] > [!UICONTROL Configuration] > [!UICONTROL Formulaires de saisie]** de la console client :
 
 ![](assets/form_arbo.png)
 
@@ -87,7 +87,7 @@ Le contrôle d&#39;édition s&#39;adapte automatiquement au type de données cor
 
 Par défaut, chaque champ est affiché sur une seule ligne et occupe tout l&#39;espace disponible selon le type de données.
 
-Tous les attributs de formulaires sont répertoriés dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=fr){target="_blank"}.
+Tous les attributs de formulaires sont répertoriés dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=fr){target="_blank"}.
 
 ## Mise en forme {#formatting}
 

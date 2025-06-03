@@ -5,7 +5,7 @@ description: Validation en local
 feature: Workflows, Approvals
 role: User
 exl-id: 172b6827-ddfc-4c6e-87c9-eb49e73ab3ab
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 100%
@@ -82,7 +82,7 @@ Les champs à renseigner dans le cas d&#39;un rapport de retour de diffusion son
 
 Cet exemple montre comment configurer un processus de validation pour une diffusion de workflow. Pour plus d’informations sur la création de workflows de diffusion, voir la section [Exemple : workflow de diffusion](delivery.md#example--delivery-workflow).
 
-Pour valider une diffusion, les opérateurs et opératrices peuvent utiliser la page web dont l’URL est fournie dans l’e-mail envoyé ou valider directement à partir de la console cliente.
+Pour valider une diffusion, un opérateur ou une opératrice peut utiliser la page web dont l’URL est fournie dans l’e-mail envoyé ou valider directement à partir de la console cliente.
 
 * Validation Web
 

@@ -5,10 +5,10 @@ role: User, Admin
 feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
+source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
 source-wordcount: '1126'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -36,9 +36,9 @@ Pour configurer Adobe Campaign afin de publier des posts sur vos comptes X, vou
 
 ## Compte de développement X {#dev-account}
 
-Pour commencer cette intégration, vous devez vous inscrire à un [Compte de développement X](https://developer.twitter.com){target="_blank"}.
+Pour commencer avec cette intégration, vous devez vous inscrire à un compte de développeur [X](https://developer.twitter.com){target="_blank"}.
 
-Campaign utilise la version 1.1 de l’API X. Pour l’utiliser, vous devez demander un accès élevé via le portail destiné aux développeurs et aux développeuses. Pour en savoir plus sur l’accès élevé à X, consultez [cette page](https://developer.twitter.com/en/portal/products/elevated){target="_blank"}.
+Campaign utilise la version 1.1 de l’API X. Pour l’utiliser, vous devez demander un accès élevé via le portail destiné aux développeurs et aux développeuses. Pour en savoir plus sur l’accès élevé à X [consultez cette page](https://developer.twitter.com/en/portal/products/elevated){target="_blank"}.
 
 ## Créer une application sur X {#create-an-app-on-twitter}
 
@@ -101,7 +101,7 @@ Pour entrer des paramètres, vous devez accéder à la fois à la console client
 
 1. À partir de votre application X, copiez le contenu des champs **Jeton d’accès** et **Jeton d’accès secret**, puis collez-les dans les champs **[!UICONTROL Jeton d’accès]** et **[!UICONTROL Jeton d’accès secret]** de votre service **Twitter** de Campaign.
 
-1. Dans la console client Campaign, cliquez sur **[!UICONTROL Enregistrer]**. Vous avez désormais délégué l’accès en écriture à Adobe Campaign.
+1. Dans la console cliente Campaign, cliquez sur **[!UICONTROL Enregistrer]**. Vous avez désormais délégué l’accès en écriture à Adobe Campaign.
 
 Pour vérifier vos paramètres, vous pouvez :
 

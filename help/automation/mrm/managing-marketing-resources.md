@@ -5,7 +5,7 @@ description: Découvrez comment gérer les ressources marketing
 feature: Campaigns, Resource Management
 role: User
 exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
 source-wordcount: '1172'
 ht-degree: 100%
@@ -101,7 +101,7 @@ Pour valider une ressource, cliquez sur le bouton **[!UICONTROL Valider la resso
 
 ![](assets/mkt-resouce-approve.png)
 
-Les opérateurs ou opératrices habilités peuvent alors accepter ou refuser l’approbation. Cette action est à la fois possible à partir de l’e-mail envoyé (en cliquant sur le lien inclus dans le message de notification) ou de la console cliente (en cliquant sur le bouton **[!UICONTROL Approuver]**).
+Les opérateurs ou opératrices habilités peuvent alors accepter ou refuser l’approbation. Cette action est à la fois possible à partir de l’e-mail envoyé (en cliquant sur le lien inclus dans le message de notification ) ou de la console cliente (en cliquant sur le bouton **[!UICONTROL Approuver]**).
 
 La fenêtre de validation permet de saisir un commentaire.
 

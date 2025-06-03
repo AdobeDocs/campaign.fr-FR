@@ -5,7 +5,7 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
-source-git-commit: 9ce5acd97e077105316c81029e3ccbc6fa4389dc
+source-git-commit: e4f6c70ecdcf7414b5f49a43933cfd1c967a0905
 workflow-type: tm+mt
 source-wordcount: '1588'
 ht-degree: 100%
@@ -44,7 +44,7 @@ _28 octobre 2021_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Le module Optimisation des campagnes est désormais disponible. Ce module permet de contrôler, de filtrer et de surveiller l’envoi des diffusions. Pour éviter les conflits entre les campagnes, Adobe Campaign peut tester différentes combinaisons en appliquant des règles de contrainte spécifiques. Elles permettent de s’assurer que les messages envoyés répondent aux attentes et aux besoins des clients et des politiques de communication de l’entreprise.</p>
+<td> <p>Le module Optimisation des campagnes est désormais disponible. Ce module permet de contrôler, de filtrer et de surveiller l’envoi des diffusions. Pour éviter les conflits entre les campagnes, Adobe Campaign peut tester différentes combinaisons en appliquant des règles de contrainte spécifiques. Cela permet de s’assurer que les messages envoyés répondent aux attentes et aux besoins des clientes et clients et des politiques de communication de l’entreprise.</p>
 <p>Pour plus d’informations, consultez la <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=fr#campaign-optimization">documentation détaillée</a>.</p>
 </td> 
 </tr> 
@@ -116,7 +116,7 @@ _7 septembre 2021_
 **Améliorations**
 
 * Après sa fin de vie, Flash a été supprimé de toutes les fonctionnalités et composants de Campaign associés, et remplacé par HTML5. Le type de graphique **Jauge** a été supprimé. (NEO-30330) [En savoir plus](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-chart.html?lang=fr)
-* Lors de l’installation de la console cliente sous Windows, le programme d’installation vérifie maintenant s’il existe un nœud de registre parent et en crée un s’il n’en existe pas. Cela évite les problèmes potentiels lors du lancement de la console. (NEO-34854)
+* Lors de l’installation de la console cliente sous Windows, le programme d’installation vérifie maintenant s’il existe un nœud de registre parent et en crée un si ce n’est pas le cas. Cela évite les problèmes potentiels lors du lancement de la console. (NEO-34854)
 * La fonctionnalité de signature de tracking a été améliorée afin d’éviter les erreurs liées à la façon dont les outils tiers (clients de messagerie, navigateurs internet, etc.) gèrent les caractères spéciaux. Les paramètres d’URL sont désormais chiffrés.
 
 **Autres changements**

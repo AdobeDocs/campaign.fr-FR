@@ -5,9 +5,9 @@ description: Créer une campagne locale
 feature: Distributed Marketing
 role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1689'
 ht-degree: 100%
 
 ---
@@ -46,17 +46,17 @@ Dans la fenêtre de la campagne, cliquez sur l&#39;onglet **[!UICONTROL Modifier
 
 ![](assets/mkt_distr_4.png)
 
-### Type d’interface {#web-interface}
+### Interface Web {#web-interface}
 
-Dans l’onglet **Marketing Distribué**, vous pouvez choisir le type d’interface et les valeurs par défaut, puis indiquer les paramètres avancés à saisir lors de la commande par les entités locales.
+Dans l&#39;onglet **Marketing Distribué**, vous pouvez choisir le type d&#39;interface Web, les valeurs par défaut et indiquer les paramètres avancés à saisir lors de la commande par les entités locales.
 
-L’interface correspond à un formulaire à renseigner par l’entité locale lors de la commande de la campagne.
+L’interface web correspond à un formulaire à renseigner par l’entité locale lors de la commande de l’opération.
 
-Sélectionnez le type d’interface à appliquer aux campagnes créées à partir du modèle :
+Sélectionnez le type d’interface web à appliquer aux opérations créées à partir du modèle :
 
 ![](assets/mkt_distr_1.png)
 
-Quatre types d’interface sont disponibles :
+Quatre types d’interface web sont disponibles :
 
 * **[!UICONTROL Par brief]** : l’entité locale doit éditer un brief où elle peut saisir la description des paramètres de l’opération. Une fois la commande approuvée, l’entité centrale configure et exécute l’intégralité de la campagne.
 
@@ -186,7 +186,7 @@ La date de disponibilité est la date à partir de laquelle l&#39;opération est
 >
 >Si une entité locale n&#39;a pas réservé l&#39;opération avant la date limite d&#39;inscription, elle ne pourra pas y participer.
 
-Ces informations sont accessibles depuis le mail de notification adressé aux agences locales, comme dans l&#39;exemple ci-dessous :
+Ces informations sont accessibles depuis le message de notification adressé aux agences locales, comme dans l’exemple ci-dessous :
 
 ![](assets/s_advuser_mkg_dist_local_notif.png)
 

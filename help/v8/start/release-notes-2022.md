@@ -3,7 +3,7 @@ title: Notes de mise à jour de Campaign v8 2022
 description: Liste des fonctionnalités et améliorations des versions 2022 de Campaign v8.
 feature: Release Notes
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-source-git-commit: fe96eb65ac04fc2b89f0dfe1e8ed4286223c3f85
+source-git-commit: b3ca222fb28c1a5d35190e41cfbbe463c5d1bcad
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 97%
@@ -131,7 +131,7 @@ Reportez-vous à la [matrice de compatibilité de Campaign](compatibility-matrix
 
 >[!CAUTION]
 >
-> La mise à niveau de la console cliente est obligatoire. Découvrez comment mettre à niveau votre console cliente sur cette [page](../start/connect.md#download-ac-console).
+> La mise à niveau de la console client est obligatoire. Découvrez comment mettre à niveau votre console client sur cette [page](../start/connect.md#download-ac-console).
 
 _7 octobre 2022_
 

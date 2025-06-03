@@ -5,7 +5,7 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
-source-git-commit: 19f85d4e19f756d8a45ce5364dd0601373128f50
+source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 97%
@@ -33,7 +33,7 @@ En tant qu’administrateur/administratrice de produit, vous pouvez accorder des
 
 Les étapes clés sont les suivantes :
 
-* **Étape 1** : définissez les groupes d’opérateurs et attribuez-leur des autorisations dans la console cliente Campaign. [En savoir plus](manage-permissions.md#create-product-profile).
+* **Étape 1** : définissez les groupes d’opérateurs et d’opératrices et attribuez-leur des autorisations dans la console cliente Campaign. [En savoir plus](manage-permissions.md#create-product-profile).
 Vous pouvez également utiliser les groupes d’opérateurs intégrés pour commencer. Ces groupes par défaut et leurs autorisations sont répertoriés dans [cette section](manage-permissions.md#ootb-productprofiles).
 * **Étape 2** : créez des profils de produit correspondant à ces groupes dans Adobe Admin Console. [En savoir plus](manage-permissions.md#create-product-profile).
 Vous pouvez utiliser les profils de produit intégrés pour commencer. [En savoir plus](manage-permissions.md#ootb-productprofiles).

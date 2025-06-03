@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
 source-git-commit: b8f774ce507cff67163064b6bd1341b31512c08f
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 10%
+source-wordcount: '817'
+ht-degree: 9%
 
 ---
 
@@ -81,7 +81,7 @@ Outre le workflow technique intégré **Répliquer les tables de référence**, 
 
 >[!NOTE]
 >
->La réplication à la volée est gérée par des threads techniques spécifiques plutôt que par des workflows. La configuration de ce mode est gérée dans le fichier serverConf.xml . Vous pouvez configurer serverConf.xml pour qu’il corresponde à des cas d’utilisation spécifiques, comme demander que les tables XS soient répliquées de manière incrémentielle plutôt que entièrement. Pour plus d’informations, contactez votre représentant ou votre représentante Adobe.
+>La réplication à la volée est gérée par des threads techniques spécifiques plutôt que par des workflows. La configuration de ce mode est gérée dans le fichier serverConf.xml . Vous pouvez configurer serverConf.xml pour qu’il corresponde à des cas d’utilisation spécifiques, comme demander que les tables XS soient répliquées de manière incrémentielle plutôt que entièrement. Pour plus d’informations, contactez votre représentant ou représentante Adobe.
 
 ## API
 
@@ -115,6 +115,6 @@ Chaque file d&#39;attente est gérée par un workflow technique, qui gère la r�
 
 Cette vidéo présente les concepts clés des bases de données utilisées par Adobe Campaign v8, les raisons de la réplication des données, les données qui sont répliquées et le fonctionnement du processus de réplication.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416865?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
-D’autres tutoriels sur la console cliente Campaign v8 sont disponibles [ici](https://experienceleague.adobe.com/fr/docs/campaign-learn/tutorials/overview).
+D’autres tutoriels sur la console cliente Campaign v8 sont disponibles [ici](https://experienceleague.adobe.com/en/docs/campaign-learn/tutorials/overview).

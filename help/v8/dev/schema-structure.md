@@ -5,7 +5,7 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
 workflow-type: tm+mt
 source-wordcount: '1400'
 ht-degree: 100%
@@ -186,7 +186,7 @@ Les éléments **`<elements>`** et **`<attributes>`** du schéma de données peu
 
 * La propriété **desc** permet de saisir une description longue.
 
-  La description est visible à partir du formulaire de saisie dans la barre de statut de la fenêtre principale de la console cliente Adobe Campaign.
+  La description est visible à partir du formulaire de saisie dans la barre de statut de la fenêtre principale de la console cliente Adobe Campaign.
 
   >[!NOTE]
   >
@@ -213,7 +213,7 @@ La valeur doit être une expression conforme au langage XPath. Pour plus d&#39;i
 
   >[!NOTE]
   >
-  >Dans la console cliente Adobe Campaign, le noeud **[!UICONTROL Administration>Compteurs]** permet de gérer les compteurs.
+  >Dans la console cliente Adobe Campaign, le nœud **[!UICONTROL Administration>Compteurs]** permet de gérer les compteurs.
 
 Pour lier une valeur par défaut à un champ, vous pouvez utiliser le `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
@@ -237,7 +237,7 @@ Une liste déroulante énumère la liste de ces valeurs à partir du formulaire 
 
 >[!NOTE]
 >
->Dans la console cliente Adobe Campaign, le nœud **[!UICONTROL Administration > Enumérations]** permet de gérer les énumérations.
+>Dans la console cliente Adobe Campaign, le nœud **[!UICONTROL Administration > Énumérations]** permet de gérer les énumérations.
 
 #### Énumération fixe {#set-enumeration}
 
@@ -360,7 +360,7 @@ Il est aussi possible de définir des expressions complexes, telles que les opé
 
 Des fonctions de haut niveau ont été ajoutées aux expressions afin d&#39;enrichir les possibilités offertes par ce langage.
 
-La liste des fonctions disponibles est accessible à partir de n&#39;importe quel éditeur d&#39;expressions dans la console cliente Adobe Campaign :
+La liste des fonctions disponibles est accessible à partir de n’importe quel éditeur d’expression dans la console cliente Adobe Campaign :
 
 ![](assets/schema_function.png)
 

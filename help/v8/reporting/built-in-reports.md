@@ -5,7 +5,7 @@ feature: Reporting
 role: User
 level: Beginner
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
 source-wordcount: '1111'
 ht-degree: 100%
@@ -135,7 +135,7 @@ Pour plus d&#39;informations sur le contenu de ces rapports, consultez [cette se
   </tr> 
   <tr> 
    <td> Synthèse des diffusions (deliveryStatistics)<br /> </td> 
-   <td> Tableau de synthèse des diffusions sélectionnées : cibles, exclusions et envois.<br /> </td> 
+   <td> Tableau de synthèse des diffusions sélectionnées : cibles, exclusions et messages envoyés.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -204,7 +204,7 @@ Les rapports sur les campagnes portent sur les données du tableau **nms:operati
   </tr> 
   <tr> 
    <td> Synthèse des diffusions (operationStatistics)<br /> </td> 
-   <td> Tableau de synthèse des diffusions de l'opération : cibles, exclusions et envois.<br /> </td> 
+   <td> Tableau de synthèse des diffusions de l’opération : cibles, exclusions et messages envoyés.<br /> </td> 
   </tr> 
   <tr> 
    <td> URL et flux de clics (operationTopUrlDelivery)<br /> </td> 
