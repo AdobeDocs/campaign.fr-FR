@@ -150,7 +150,7 @@ Les diffusions par e-mail au format HTML peuvent contenir des images. Depuis l�
 
 Pour éviter des problèmes de performances, les images incluses dans les e-mails ne doivent pas dépasser 100 Ko. Cette limite, définie par défaut, peut être modifiée à partir de l’option `NmsDelivery_MaxDownloadedImageSize`. Cependant, Adobe recommande vivement d’éviter les images volumineuses dans vos diffusions e-mail.
 
-Pour en savoir plus sur la liste des options de Campaign, consultez la documentation de Campaign Classic [](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
+Pour en savoir plus sur la liste des options de Campaign, consultez la documentation de Campaign Classic [&#128279;](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
 
 ### Types d’images {#img-types}
 
