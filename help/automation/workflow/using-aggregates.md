@@ -3,8 +3,9 @@ product: campaign
 title: Utilisation d’agrégats
 description: Découvrez comment utiliser les agrégats
 feature: Workflows
+version: Campaign v8, Campaign Classic v7
 exl-id: 7522f449-341e-4aef-8c1e-c49e13809c08
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 100%
@@ -37,7 +38,7 @@ Pour parvenir à effectuer un filtre du type **Date de création = max (Date de 
 
    ![](assets/datamanagement_usecase_2.png)
 
-1. Cliquez sur **[!UICONTROL Editer les données additionnelles]**, puis sur **[!UICONTROL Paramètres avancés…]** Sélectionnez l’option **[!UICONTROL Désactiver l&#39;ajout automatique des clés primaires de la dimension de ciblage]**.
+1. Cliquez sur **[!UICONTROL Editer les données additionnelles]**, puis sur **[!UICONTROL Paramètres avancés…]** Sélectionnez l’option **[!UICONTROL Désactiver l’ajout automatique des clés primaires de la dimension de ciblage]**.
 
    Cette option permet de ne pas renvoyer tous les destinataires comme résultat et de ne conserver que les données explicitement ajoutées. Dans le cas présent, il s&#39;agit de la dernière date à laquelle un destinataire a été créé.
 

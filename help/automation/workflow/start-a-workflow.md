@@ -5,8 +5,9 @@ description: Découvrez comment démarrer un workflow et la barre d’outils des
 feature: Workflows
 level: Beginner
 role: User, Admin
+version: Campaign v8, Campaign Classic v7
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
-source-git-commit: d292c20e520b2466f782ccf86eb9d61e01915563
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 100%

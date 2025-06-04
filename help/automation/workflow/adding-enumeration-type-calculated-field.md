@@ -4,11 +4,12 @@ title: Ajouter un champ calculé de type Énumération
 description: Découvrez comment ajouter un champ calculé de type Énumération
 feature: Workflows, Data Management
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 4fe2ae81-faa6-4777-a332-70c451bca75b
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -79,6 +80,6 @@ Les étapes sont les suivantes :
 
    ![](assets/query_editor_nveau_79.png)
 
-   Prenons un autre exemple et supposons que la valeur d’énumération « 2 » n’ait pas été saisie. Sélectionnez la fonction **[!UICONTROL Générer une erreur et rejeter la ligne]** : tous les destinataires du genre &quot;2&quot; génèrent des anomalies et les autres informations de la ligne (prénom et nom, etc.) ne seront pas exportées. Un journal des erreurs s’affiche dans le champ **[!UICONTROL Logs générés lors de l&#39;export]** de la fenêtre de prévisualisation des données. Ce journal indique que la valeur d’énumération « 2 » n’a pas été saisie.
+   Prenons un autre exemple et supposons que la valeur d’énumération « 2 » n’ait pas été saisie. Sélectionnez la fonction **[!UICONTROL Générer une erreur et rejeter la ligne]** : tous les destinataires du genre « 2 » génèrent des anomalies et les autres informations de la ligne (prénom et nom, etc.) ne sont pas exportées. Un journal des erreurs s’affiche dans le champ **[!UICONTROL Logs générés lors de l&#39;export]** de la fenêtre de prévisualisation des données. Ce journal indique que la valeur d’énumération « 2 » n’a pas été saisie.
 
    ![](assets/query_editor_nveau_80.png)

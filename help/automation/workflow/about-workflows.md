@@ -3,9 +3,10 @@ product: campaign
 title: À propos des workflows
 description: Automatisez les processus avec des workflows, gérez les données et les audiences, envoyez des messages, et plus encore.
 feature: Workflows
+version: Campaign v8, Campaign Classic v7
 role: User
 exl-id: 297aa4e3-b672-46b5-9016-5accee8568b8
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '643'
 ht-degree: 100%
@@ -56,7 +57,7 @@ Chaque workflow comprend :
 
   >[!NOTE]
   >
-  >Un workflow contenant des transitions flottantes peut être exécuté : l&#39;exécution générera un avertissement et sera suspendue lors de l&#39;activation d&#39;une telle transition, mais aucune erreur ne sera générée. Il est ainsi possible de démarrer un workflow sans en avoir terminé la conception et de le compléter au fur et à mesure.
+  >Un workflow contenant des transitions flottantes peut être exécuté : l’exécution générera un avertissement et sera suspendue lors de l’activation d’une telle transition, mais aucune erreur ne sera générée. Il est ainsi possible de démarrer un workflow sans en avoir terminé la conception et de le compléter au fur et à mesure.
 
   Pour plus d&#39;informations sur la création d&#39;un workflow, consultez [cette section](build-a-workflow.md).
 

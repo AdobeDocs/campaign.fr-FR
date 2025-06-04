@@ -4,8 +4,9 @@ title: Diffusion récurrente
 description: En savoir plus sur l’activité de workflow de diffusion récurrente
 feature: Workflows
 role: User, Data Engineer
+version: Campaign v8, Campaign Classic v7
 exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
-source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 100%
@@ -52,6 +53,6 @@ Si vous souhaitez arrêter lʼexécution dʼune diffusion récurrente, vous deve
 
 Cette vidéo explique comment configurer une diffusion récurrente et une activité Planificateur.
 
->[!VIDEO](https://video.tv.adobe.com/v/30589?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
 D’autres vidéos pratiques sur Campaign sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=fr){target="_blank"}.

@@ -4,8 +4,9 @@ title: Surveiller les workflows techniques
 description: Surveiller les workflows techniques
 feature: Workflows
 role: Admin
+version: Campaign v8, Campaign Classic v7
 exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 100%
@@ -84,7 +85,7 @@ La planification de la surveillance des workflows améliore son efficacité. Cer
 
 Le fait de sauvegarder les workflows dans des dossiers nommés en fonction de leur récurrence et triés par planning d&#39;exécution augmente l&#39;efficacité de la surveillance.
 
-L&#39;automatisation de la surveillance permet d&#39;économiser des ressources et garantit la planification des tâches à un intervalle adapté.
+L’automatisation de la surveillance permet d’économiser des ressources et garantit la planification des tâches à une fréquence appropriée.
 
 Il est possible de construire un workflow de surveillance qui enverra un e-mail lorsque certaines tâches échouent ou lorsqu’une table critique devient trop volumineuse.
 

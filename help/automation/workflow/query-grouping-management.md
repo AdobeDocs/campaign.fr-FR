@@ -4,8 +4,9 @@ title: Exécuter des requêtes avec gestion des regroupements
 description: Découvrez comment exécuter des requêtes avec gestion des regroupements.
 feature: Query Editor
 role: User, Data Engineer
+version: Campaign v8, Campaign Classic v7
 exl-id: 6fc4ef67-5d75-4c8c-8bcc-41e3ed155ca2
-source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 100%
@@ -28,7 +29,7 @@ Vous allez effectuer une requête pour retrouver les domaines d&#39;email ciblé
 
 * Groupement des données ?
 
-  En fonction du domaine d&#39;email avec un comptage des clés primaires supérieures à 30. Cette opération s&#39;effectue avec l&#39;option **[!UICONTROL Group by + Having]**. **[!UICONTROL Group by + Having]** sert à effectuer un groupement (&quot;group by&quot;) et une sélection de ce qui a été groupé (&quot;having&quot;).
+  En fonction du domaine d’e-mail avec un comptage des clés primaires supérieur à 30. Cette opération s’effectue avec l’option **[!UICONTROL Group by + Having]**. **[!UICONTROL Group by + Having]** sert à effectuer un groupement (« group by ») et une sélection de ce qui a été groupé (« having»).
 
 Pour réaliser cet exemple, les étapes sont les suivantes :
 

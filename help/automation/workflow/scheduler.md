@@ -4,8 +4,9 @@ title: Planificateur
 description: En savoir plus sur l’activité de workflow de planificateur
 feature: Workflows
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: ed70d2d3-251e-4ee8-84d4-73ad03e8dd35
-source-git-commit: ba8cf031db178f6575104858340e16d4e7bd6a31
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 43%
@@ -44,7 +45,7 @@ Un assistant permet de définir la fréquence et la période de validité de l&#
 
    ![](assets/s_user_segmentation_scheduler2.png)
 
-1. Indiquez les heures et jours d&#39;activation. Les paramètres de cette étape dépendent de la périodicité sélectionnée à l&#39;étape précédente. Si vous choisissez de lancer l&#39;activité plusieurs fois par jour, les options de paramétrage seront les suivantes :
+1. Indiquez les heures et jours d’activation. Les paramètres de cette étape dépendent de la fréquence sélectionnée à l’étape précédente. Si vous choisissez de lancer l’activité plusieurs fois par jour, les options de configuration seront les suivantes :
 
    ![](assets/s_user_segmentation_scheduler3.png)
 

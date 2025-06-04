@@ -4,11 +4,12 @@ title: Accéder à une base de données externe (FDA)
 description: Accéder à une base de données externe (FDA)
 feature: Workflows, Data Management, Federated Data Access
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: ddafca28-1db4-42f2-9bfb-73da1240235c
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '98'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 

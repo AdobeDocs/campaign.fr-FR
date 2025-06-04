@@ -4,8 +4,9 @@ title: Exemples de code JavaScript dans les workflows
 description: Ces exemples montrent comment vous pouvez utiliser le code JavaScript dans un workflow
 feature: Workflows
 role: Developer
+version: Campaign v8, Campaign Classic v7
 exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '1690'
 ht-degree: 100%
@@ -273,7 +274,7 @@ for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-La boucle comprend une variable de destinataire locale. L’e-mail de chaque destinataire renvoyé dans la collection de destinataires est imprimé. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=fr){target="_blank"} sur la fonction `logInfo`.
+La boucle comprend une variable de destinataire locale. L’e-mail de chaque destinataire renvoyé dans la collection de destinataires est imprimé. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=fr){target="_blank"} sur la fonction `logInfo`.
 
 #### Résultats d’une opération `getIfExists`
 

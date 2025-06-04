@@ -3,8 +3,9 @@ product: campaign
 title: Envoi d’alertes personnalisées aux opérateurs
 description: Découvrez comment envoyer des alertes personnalisées aux opérateurs
 feature: Workflows
+version: Campaign v8, Campaign Classic v7
 exl-id: 41a009f6-d1e9-40c9-8494-3bbb4bd3d134
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 100%
@@ -23,7 +24,7 @@ Le processus créé un workflow comme ci-dessous :
 
 1. Utilisez une activité **[!UICONTROL Requête]** sur les données de la cible.
 1. Ajoutez une activité **[!UICONTROL Code JavaScript]** dans le workflow afin d&#39;enregistrer la population de la requête dans la variable d&#39;instance.
-1. Utilisez une activité **[!UICONTROL Test]** pour vérifier le nombre de personnes.
+1. Utilisez une activité **[!UICONTROL Test]** pour vérifier la population.
 1. Utilisez une activité **[!UICONTROL Alerte]** pour envoyer une alerte à un opérateur, selon le résultat de l&#39;activité **[!UICONTROL Test]**.
 
 ![](assets/uc_operator_1.png)

@@ -2,11 +2,12 @@
 title: Utiliser les données d'un workflow
 description: Découvrez comment utiliser les données d'un workflow.
 feature: Workflows, Data Management
+version: Campaign v8, Campaign Classic v7
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
-source-git-commit: 41ba91fca46747760fc42ea6cd78600abbd74c02
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '736'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -44,9 +45,9 @@ Sélectionnez pour cela le menu correspondant :
 
   Ce menu donne accès à l’assistant d’analyse descriptive, qui permet de générer des statistiques et des rapports sur les données de la transition.
 
-  Découvrez comment commencer à utiliser l’assistant d’analyse descriptive dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target="_blank"}.
+  Découvrez comment utiliser l&#39;assistant d&#39;analyse descriptive dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target="_blank"}.
 
-Les données de la cible sont purgées au fur et à mesure de l’exécution du workflow. Seule la dernière table de travail est accessible. Vous pouvez paramétrer le workflow pour que toutes les tables de travail restent accessibles : cochez l’option **[!UICONTROL Conserver le résultat des populations intermédiaires entre deux exécutions]** dans les propriétés du workflow.
+Les données de la cible sont purgées au fur et à mesure de l&#39;exécution du workflow. Seule la dernière table de travail est accessible. Vous pouvez paramétrer le workflow pour que toutes les tables de travail restent accessibles : cochez l’option **[!UICONTROL Conserver le résultat des populations intermédiaires entre deux exécutions]** dans les propriétés du workflow.
 
 ![](assets/wf-purge-data-option.png)
 

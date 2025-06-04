@@ -4,8 +4,9 @@ title: Requête incrémentale
 description: En savoir plus sur l’activité de workflow de requête incrémentale
 feature: Workflows, Targeting Activity
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 3e9f92c3-080f-441b-a15a-2ec9d056d1f9
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 100%
@@ -36,7 +37,7 @@ Pour cela :
 1. Dans l’onglet **[!UICONTROL Planification et historique]**, sélectionnez l’option **[!UICONTROL Planifier l&#39;exécution]**. La tâche reste active une fois créée et ne sera déclenchée qu&#39;aux heures spécifiées par le planning d&#39;exécution de la requête. En revanche, si l&#39;option est désactivée, la requête est exécutée immédiatement **et une seule fois**.
 1. Cliquez sur le bouton **[!UICONTROL Changer]**.
 
-   Dans la fenêtre **[!UICONTROL Assistant d&#39;édition d&#39;un planning]** qui s&#39;affiche, vous pouvez paramétrer le type de périodicité, les événements de la périodicité et la période de validité des événements.
+   Dans la fenêtre **[!UICONTROL Assistant d’édition d’un planning]** qui s’affiche, vous pouvez configurer le type de fréquence, la périodicité des événements et la période de validité des événements. 
 
    ![](assets/s_user_segmentation_wizard_11.png)
 

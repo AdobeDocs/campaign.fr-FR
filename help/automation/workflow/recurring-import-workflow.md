@@ -4,11 +4,12 @@ title: Configuration dʼun dʼimport récurrent
 description: Découvrez comment paramétrer un modèle de workflow pour les imports récurrents.
 feature: Workflows, Data Management
 role: User, Data Engineer
+version: Campaign v8, Campaign Classic v7
 exl-id: 13f0091b-b62c-47df-9658-6631ba1cf03a
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '1134'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -43,7 +44,7 @@ Par exemple :
 
    * Dans la section **[!UICONTROL Nom du fichier à charger]**, sélectionnez **[!UICONTROL Télécharger un fichier présent sur le poste local]** et laissez le champ vide. A chaque fois qu&#39;un nouveau workflow sera créé à partir de ce modèle, vous pourrez préciser ici le fichier souhaité (tant qu&#39;il correspond à la structure définie).
 
-     Toutes les options sont utilisables, mais il faut modifier le modèle en conséquence. Par exemple, en sélectionnant **[!UICONTROL Spécifié dans la transition]**, vous pouvez ajouter une activité **[!UICONTROL Transfert de fichier]** en amont pour récupérer le fichier à importer à partir d’un serveur FTP/SFTP. Avec la connexion S3 ou SFTP, vous pouvez également importer des données de segments vers Adobe Campaign avec Adobe Real-time Customer Data Platform. Pour plus d’informations, consultez la [documentation d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=fr){target="_blank"}.
+     Toutes les options sont utilisables, mais il faut modifier le modèle en conséquence. Par exemple, en sélectionnant **[!UICONTROL Spécifié dans la transition]**, vous pouvez ajouter une activité **[!UICONTROL Transfert de fichier]** en amont pour récupérer le fichier à importer à partir d’un serveur FTP/SFTP. Avec la connexion S3 ou SFTP, vous pouvez également importer des données de segments vers Adobe Campaign avec Adobe Real-time Customer Data Platform. Pour en savoir plus à ce sujet, consultez la documentation de [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=fr){target="_blank"}.
 
      ![](assets/import_template_example1.png)
 
