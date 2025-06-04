@@ -23,7 +23,7 @@ Une activité de type **Gestion de contenu** permet de créer et de manipuler un
 
 >[!NOTE]
 >
->L’interface utilisateur web d’Adobe Campaign vous permet d’utiliser des fragments de contenu pour votre contenu. Il permet aux utilisateurs et utilisatrices marketing de précréer plusieurs blocs de contenu personnalisés, grâce à des composants réutilisables pouvant être référencés dans un ou plusieurs messages, ce qui vous permet d’assembler rapidement le contenu des messages dans un processus de conception amélioré. Pour en savoir plus sur les fragments de contenu, reportez-vous à la documentation de l’interface utilisateur web d’Adobe Campaign [&#128279;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}.
+>L’interface utilisateur web d’Adobe Campaign vous permet d’utiliser des fragments de contenu pour votre contenu. Il permet aux utilisateurs et utilisatrices marketing de précréer plusieurs blocs de contenu personnalisés, grâce à des composants réutilisables pouvant être référencés dans un ou plusieurs messages, ce qui vous permet d’assembler rapidement le contenu des messages dans un processus de conception amélioré. Pour en savoir plus sur les fragments de contenu, reportez-vous à la documentation de l’interface utilisateur web d’Adobe Campaign [&#128279;](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}.
 
 Les propriétés de l&#39;activité se divisent en trois étapes :
 
