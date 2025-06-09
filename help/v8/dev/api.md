@@ -22,7 +22,7 @@ ht-degree: 100%
 Vous pouvez utiliser des API JavaScript pour écrire dans la base de données cloud de Campaign ou lire à partir de la base de données :
 
 * API spécifiques à l&#39;entreprise qui vous permettent d&#39;agir sur chaque objet : diffusions, workflows, abonnements, etc. Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=fr){target="_blank"}.
-* API génériques d’accès aux données pour interroger les données du modèle de données. Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html?lang=fr){target="_blank"}.
+* API génériques d&#39;accès aux données pour interroger les données du modèle de données. Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html?lang=fr){target="_blank"}.
 
 Veuillez notez que dans son [déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), Campaign fonctionne avec deux bases de données : une base de données locale pour la messagerie en temps réel de l’interface utilisateur et les requêtes et écritures unitaires à travers les API, et une base de données cloud pour l’exécution de campagnes, les rapports, l&#39;ingestion de données, les requêtes par lots et l’exécution de workflows.
 

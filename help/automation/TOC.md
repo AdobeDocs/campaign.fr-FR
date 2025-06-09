@@ -6,7 +6,7 @@ feature: Overview
 source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -28,11 +28,11 @@ ht-degree: 100%
       + [Démarrer un workflow](workflow/start-a-workflow.md)
       + [Cycle de vie d&#39;un workflow](workflow/workflow-life-cycle.md)
       + [Configurer les validations](workflow/define-approvals.md)
-   + Surveillance des workflows {#monitoring-workflows}
+   + Surveiller les workflows {#monitoring-workflows}
       + [Surveillance de l’exécution des workflows](workflow/monitor-workflow-execution.md)
       + [Surveillance des workflows techniques](workflow/monitor-technical-workflows.md)
       + [Carte thermique des workflows](workflow/heatmap.md)
-   + Activités de workflow {#wf-activities}
+   + Activités de workflows {#wf-activities}
       + [Commencer avec les activités](workflow/activities.md)
       + Activités de ciblage {#targeting-activities}
          + [Liste des activités de ciblage](workflow/targeting-activities.md)
@@ -86,15 +86,15 @@ ht-degree: 100%
          + [Diffusion récurrente](workflow/recurring-delivery.md)
          + [Code SQL et code JavaScript](workflow/sql-code-and-javascript-code.md)
          + [Gestion des données SQL](workflow/sql-data-management.md)
-         + [Mise à jour d&#39;agrégat](workflow/update-aggregate.md)
-      + Activités événementielles {#event-activities}
+         + [Mettre à jour l’agrégat](workflow/update-aggregate.md)
+      + Activités d&#39;événements {#event-activities}
          + [Liste des activités d&#39;événement](workflow/event-activities.md)
          + [Collecteur de fichiers](workflow/file-collector.md)
          + [Envoi de fichier](workflow/file-transfer.md)
          + [Réception d&#39;emails](workflow/inbound-emails.md)
          + [Réception de SMS](workflow/inbound-sms.md)
          + [Téléchargement Web](workflow/web-download.md)
-   + Cas pratiques {#use-cases}
+   + Cas d’utilisation {#use-cases}
       + [À propos des cas pratiques de workflows](workflow/workflow-use-cases.md)
       + Diffusions {#deliveries}
          + [Utilisation de l’activité de validation en local](workflow/local-approval-activity.md)
@@ -102,7 +102,7 @@ ht-degree: 100%
          + [Chargement du contenu de la diffusion](workflow/load-delivery-content.md)
          + [Workflow de diffusion cross-canal](workflow/cross-channel-delivery-workflow.md)
          + [Enrichissement des emails avec des champs de date personnalisés](workflow/email-enrichment-with-custom-date-fields.md)
-      + Surveillance {#monitoring}
+      + Contrôle      {#monitoring}
          + [Envoi d’un rapport à une liste](workflow/send-a-report-to-a-list.md)
          + [Supervision de vos workflows](workflow/workflow-supervision.md)
          + [Envoi d’alertes personnalisées aux opérateurs](workflow/send-alerts-to-operators.md)
@@ -114,7 +114,7 @@ ht-degree: 100%
          + [Utilisation de la fonctionnalité de fusion de l’activité de déduplication](workflow/deduplication-merge.md)
          + [Configuration d’un workflow d’import récurrent](workflow/recurring-import-workflow.md)
       + Requêtes de conception {#designing-queries}
-         + [Mise à jour de la liste trimestrielle à l’aide d’une requête incrémentielle](workflow/quarterly-list-update.md)
+         + [Mettre à jour la liste trimestrielle à l’aide d’une requête incrémentielle](workflow/quarterly-list-update.md)
       + Requête et filtre {#designing-queries}
          + [Requête de la table des destinataires](workflow/querying-recipient-table.md)
          + [Informations sur la diffusion de requêtes](workflow/query-delivery-info.md)

@@ -8,7 +8,7 @@ exl-id: 21cf5611-ccaa-4e83-8891-a1a2353515aa
 source-git-commit: ea37b72efd03afb212c060f809b6ba077b996701
 workflow-type: tm+mt
 source-wordcount: '557'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -36,7 +36,7 @@ Les principales étapes pour envoyer des audiences Adobe Experience Platform v
 
       ![](assets/aep-destination.png){width="800" align="center"}
 
-  Vous trouverez des informations détaillées sur la configuration de la destination dans la [documentation sur la connexion Adobe Campaign Managed Cloud Services](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}.
+  Des informations détaillées sur la configuration de la destination sont disponibles dans la documentation de connexion [Adobe Campaign Managed Cloud Services](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
 
 * Utilisez une **connexion source** Adobe Campaign Managed Cloud Services pour envoyer les logs de diffusion et de tracking Adobe Campaign à Adobe Experience Platform :
 
@@ -65,4 +65,4 @@ Les principales étapes de synchronisation des attributs de profil Adobe Experi
 1. Configurez les attributs de profil que vous souhaitez mettre à jour dans Adobe Campaign.
 1. Une fois le flux configuré, les attributs de profil sélectionnés seront synchronisés avec Adobe Campaign et mis à jour pour tous les profils ciblés par les segments configurés dans la destination.
 
-Vous trouverez des informations détaillées sur la configuration de la destination dans la [documentation sur la connexion Adobe Campaign Managed Cloud Services](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}.
+Des informations détaillées sur la configuration de la destination sont disponibles dans la documentation de connexion [Adobe Campaign Managed Cloud Services](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}

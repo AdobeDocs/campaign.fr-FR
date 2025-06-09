@@ -13,7 +13,7 @@ ht-degree: 73%
 
 # Marketing social {#social-marketing}
 
-Les workflows présentés ci-dessous sont installés par défaut avec le module **Social Marketing**. Ce module permet l’intégration à X (anciennement appelé Twitter).
+Les workflows présentés ci-dessous sont installés par défaut avec le module **Social Marketing**. Ce module permet l&#39;intégration avec X (anciennement appelé Twitter).
 
 
 >[!AVAILABILITY]

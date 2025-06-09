@@ -11,7 +11,7 @@ exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
 source-git-commit: a9aa9cb508ca1f5cdcd59e61b5be029e3de1a82f
 workflow-type: tm+mt
 source-wordcount: '1721'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 Vous pouvez utiliser Campaign pour envoyer des notifications push sur les appareils iOs et Android. Pour ce faire, Campaign repose sur des services d’abonnement à des application spécifiques.
 
-Certaines modifications importantes apportées au service Android FCM (Firebase Cloud Messaging), publiées en 2024, pourront avoir une incidence sur votre mise en œuvre d’Adobe Campaign. Il se peut que la configuration de vos services d’abonnement pour les notifications push Android doive être mise à jour pour prendre en charge cette modification.
+Certaines modifications importantes apportées au service Android FCM (Firebase Cloud Messaging), publiées en 2024, pourront avoir une incidence sur votre mise en œuvre d’Adobe Campaign. Il se peut que la configuration de vos services d’abonnement pour les messages push Android doive être mise à jour pour prendre en charge cette modification.
 
 En outre, Adobe recommande vivement de passer à une connexion au service APN basée sur des jetons plutôt que sur des certificats, pour une solution davantage sécurisée et évolutive.
 
@@ -27,7 +27,7 @@ En outre, Adobe recommande vivement de passer à une connexion au service APN b
 
 ### Qu’est-ce qui a changé ? {#fcm-changes}
 
-Dans le cadre des efforts constants de Google pour améliorer ses services, les API FCM héritées seront abandonnées le **22 juillet 2024**. Pour en savoir plus sur le protocole HTTP Firebase Cloud Messaging, consultez la [documentation de Google Firebase](https://firebase.google.com/docs/cloud-messaging/migrate-v1){target="_blank"}.
+Dans le cadre des efforts constants de Google pour améliorer ses services, les API FCM héritées seront abandonnées le **22 juillet 2024**. Apprenez-en davantage sur le protocole HTTP de Firebase Cloud Messaging en consultant la documentation de Firebase de Google [](https://firebase.google.com/docs/cloud-messaging/migrate-v1){target="_blank"}.
 
 Adobe Campaign Classic v7 et Adobe Campaign v8 prennent déjà en charge les dernières API pour envoyer des notifications push. Cependant, certaines anciennes implémentations dépendent toujours des API héritées. Ces implémentations doivent être mises à jour.
 
@@ -48,9 +48,9 @@ Pour vérifier si cela vous concerne, vous pouvez filtrer vos **services et abon
 
 #### Conditions préalables {#fcm-transition-prerequisites}
 
-* Le fichier JSON du compte du service SDK Firebase Admin Android est nécessaire pour que l’application mobile soit déplacée vers HTTP v1. Découvrez comment obtenir ce fichier dans la [documentation de Google Firebase](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+* Le fichier JSON du compte du service SDK Firebase Admin Android est nécessaire pour que l’application mobile soit déplacée vers HTTP v1. Découvrez comment obtenir ce fichier dans la documentation de [Google Firebase](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
-* Pour Campaign Classic v7, la prise en charge de HTTP v1 a été ajoutée à la version 20.3.1. Si votre environnement s’exécute sur une ancienne version, une condition préalable à la transition vers HTTP v1 est de mettre à niveau votre environnement vers la [dernière version de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=fr){target="_blank"}. Pour Campaign v8, HTTP v1 est pris en charge par toutes les versions et aucune mise à niveau n’est nécessaire.
+* Pour Campaign Classic v7, la prise en charge de HTTP v1 a été ajoutée à la version 20.3.1. Si votre environnement s’exécute sur une ancienne version, une condition préalable à la transition vers HTTP v1 est de mettre à niveau votre environnement vers la [dernière build Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=fr){target="_blank"}. Pour Campaign v8, HTTP v1 est pris en charge par toutes les versions et aucune mise à niveau n’est nécessaire.
 
 * En tant qu’utilisateur ou utilisatrice On-Premise de Campaign Classic v7, vous devez mettre à niveau les serveurs d’exécution Marketing et en temps réel.
 
@@ -58,7 +58,7 @@ Pour vérifier si cela vous concerne, vous pouvez filtrer vos **services et abon
 
 * À propos du compte externe de routage Android :
 
-   * En tant qu’utilisateur ou utilisatrice On-Premise ou hybride de Campaign Classic v7, vérifiez que votre compte externe de routage Android est configuré avec `androidPushConnectorV2.js`. En savoir plus en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
+   * En tant qu’utilisateur ou utilisatrice On-Premise ou hybride de Campaign Classic v7, vérifiez que votre compte externe de routage Android est configuré avec `androidPushConnectorV2.js`. Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
 
    * Pour les déploiements hybrides, hébergés et Managed Cloud Services, contactez également l’Assistance clientèle d’Adobe pour confirmer que le connecteur `androidPushConnectorV2.js (nms)` est bien sélectionné dans le compte externe de routage Android de votre serveur de mid-sourcing.
 
@@ -175,7 +175,7 @@ Vous pouvez ainsi :
 * définir le niveau de **[!UICONTROL priorité de notification]** de votre notification : par défaut, minimum, faible ou élevé ;
 * définir le niveau de **[!UICONTROL visibilité]** de votre notification sur public, privé ou secret.
 
-Pour plus d’informations sur les **[!UICONTROL options supplémentaires HTTP v1]** et sur la façon de remplir ces champs, consultez la [documentation FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
+Pour plus d&#39;informations sur les **[!UICONTROL options supplémentaires HTTPv1]** et sur la façon de remplir ces champs, consultez la [documentation FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
 
 
 
@@ -191,7 +191,7 @@ L’authentification par jeton offre un moyen sans état de communiquer avec le 
 
 * Vous pouvez utiliser un jeton pour distribuer des notifications pour toutes les applications de votre entreprise.
 
-En savoir plus sur les connexions au service APN basées sur les jetons dans la [Documentation destinée aux équipes de développement Apple](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"}.
+Apprenez-en davantage sur les connexions basées sur des jetons aux APNs dans la [documentation Apple Developer](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"}.
 
 Adobe Campaign Classic v7 et Adobe Campaign v8 prennent en charge les connexions basées sur des jetons et sur des certificats. Si votre mise en œuvre repose sur une connexion basée sur un certificat, Adobe vous recommande vivement de la mettre à jour vers une connexion basée sur un jeton.
 
@@ -212,9 +212,9 @@ Pour vérifier si cela vous concerne, vous pouvez filtrer vos **services et abon
 
 #### Conditions préalables {#ios-transition-prerequisites}
 
-* Pour Campaign Classic v7, la prise en charge du mode **Authentification basée sur les jetons** a été ajoutée à la version 20.2. Si votre environnement s’exécute sur une ancienne version, une condition préalable à ce changement est de mettre à niveau votre environnement vers la [dernière version de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=fr){target="_blank"}. Pour Campaign v8, le mode **Authentification basée sur les jetons** est pris en charge par toutes les versions et aucune mise à niveau n’est nécessaire.
+* Pour Campaign Classic v7, la prise en charge du mode **Authentification basée sur les jetons** a été ajoutée à la version 20.2. Si votre environnement s’exécute sur une ancienne version, une condition préalable à cette modification est de mettre à niveau votre environnement vers la [dernière build Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=fr){target="_blank"}. Pour Campaign v8, le mode **Authentification basée sur les jetons** est pris en charge par toutes les versions et aucune mise à niveau n’est nécessaire.
 
-* Vous avez besoin d’une clé de signature de jeton d’authentification APN pour générer les jetons utilisés par votre serveur. Vous pouvez demander cette clé à votre compte de développement Apple, en suivant la procédure décrite à la section [Documentation destinée aux équipes de développement Apple](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"}.
+* Vous avez besoin d’une clé de signature de jeton d’authentification APN pour générer les jetons utilisés par votre serveur. Vous demandez cette clé à partir de votre compte de développeur Apple, comme expliqué dans la [documentation du développeur Apple](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"}.
 
 * Pour les déploiements hybrides, hébergés et Managed Services, en plus de la procédure de transition ci-dessous, contactez Adobe pour mettre à jour votre serveur d’exécution en temps réel (RT). Le serveur de midsourcing n’est pas affecté.
 

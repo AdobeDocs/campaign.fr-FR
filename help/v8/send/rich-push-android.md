@@ -69,7 +69,7 @@ Accédez aux onglets ci-dessous pour en savoir plus sur la personnalisation de c
 
    ![](assets/rich_push_default_3.png)
 
-Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser des personnes abonnées test pour prévisualiser et tester le message.
+Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser des personnes abonnées de test pour prévisualiser et tester le message.
 
 >[!TAB De base]
 
@@ -114,7 +114,7 @@ Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser
 
    ![](assets/rich_push_basic_4.png)
 
-Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser des personnes abonnées test pour prévisualiser et tester le message.
+Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser des personnes abonnées de test pour prévisualiser et tester le message.
 
 >[!TAB Carrousel]
 
@@ -149,7 +149,7 @@ Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser
 
    ![](assets/rich_push_carousel_3.png)
 
-Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser des personnes abonnées test pour prévisualiser et tester le message.
+Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser des personnes abonnées de test pour prévisualiser et tester le message.
 
 >[!TAB Boutons d’icônes]
 
@@ -173,7 +173,7 @@ Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser
 
    ![](assets/rich_push_icon_5.png)
 
-Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser des personnes abonnées test pour prévisualiser et tester le message.
+Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser des personnes abonnées de test pour prévisualiser et tester le message.
 
 >[!TAB Zone d’entrée]
 
@@ -280,7 +280,7 @@ Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser
 
    ![](assets/rich_push_carousel_3.png)
 
-Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser des personnes abonnées test pour prévisualiser et tester le message.
+Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser des personnes abonnées de test pour prévisualiser et tester le message.
 
 >[!TAB Retardateur]
 
@@ -328,11 +328,11 @@ Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser
 
 1. Pour personnaliser davantage votre notification push, configurez les **[!UICONTROL Options de notification]** et les **[!UICONTROL Options supplémentaires HTTPv1]** de votre notification push. [En savoir plus](#push-advanced)
 
-Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser des personnes abonnées test pour prévisualiser et tester le message.
+Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser des personnes abonnées de test pour prévisualiser et tester le message.
 
 >[!ENDTABS]
 
-## Paramètres avancés des notifications push {#push-advanced}
+## Paramètres avancés des notifications Push {#push-advanced}
 
 ### Options de notification {#notification-options}
 

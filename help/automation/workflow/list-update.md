@@ -73,6 +73,6 @@ Identifie la population à sauvegarder dans le groupe.
 
 Cette vidéo montre comment créer une liste de destinataires à partir de l’Explorateur.
 
->[!VIDEO](https://video.tv.adobe.com/v/30599?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
 D’autres vidéos pratiques sur Campaign sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=fr){target="_blank"}.

@@ -56,7 +56,7 @@ Oui. À compter de la version 8.6, la console cliente Campaign v8 ne sera plus
 
 +++Comment effectuer une mise à niveau de Windows (32 bits) vers le système d’exploitation Windows (64 bits) ?
 
-Assurez-vous que votre processeur prend en charge l’installation d’un système d’exploitation 64 bits. Pour passer de la version 32 bits à la version 64 bits de Windows, vous devez reformater votre disque dur, installer la version 64 bits de Windows, puis réinstaller tout ce qui se trouvait sur votre appareil. Pour plus d’informations, voir [Windows 32 et 64 bits : questions fréquentes](https://support.microsoft.com/fr-fr/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d){target="_blank"}.
+Assurez-vous que votre processeur prend en charge l’installation d’un système d’exploitation 64 bits. Pour passer de la version 32 bits à la version 64 bits de Windows, vous devez reformater votre disque dur, installer la version 64 bits de Windows, puis réinstaller tout ce qui se trouvait sur votre appareil. Pour plus d’informations, voir [Windows 32 et 64 bits : forum aux questions](https://support.microsoft.com/fr-fr/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d){target="_blank"}.
 
 +++
 

@@ -8,7 +8,7 @@ exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
 source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
 workflow-type: tm+mt
 source-wordcount: '1221'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Deux types ou erreurs peuvent être capturés :
 Dans la liste des adresses en quarantaine, le champ **[!UICONTROL Raison de l&#39;erreur]** indique pourquoi l&#39;adresse sélectionnée a été mise en quarantaine. [En savoir plus](#identifying-quarantined-addresses-for-the-entire-platform).
 
 
-Si un utilisateur qualifie un e-mail comme spam, le message est automatiquement redirigé vers une boîte e-mail technique gérée par Adobe. L&#39;adresse e-mail de l&#39;utilisateur est alors automatiquement mise en quarantaine avec le statut **[!UICONTROL Sur liste bloquée]**. Ce statut ne concerne que l&#39;adresse. Le profil n&#39;est pas placé sur liste bloquée afin que l&#39;utilisateur puisse continuer à recevoir des SMS et des notifications push. Apprenez-en davantage sur les feedback loops dans la section [Guide des bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#feedback-loops){target="_blank"}.
+Si un utilisateur qualifie un e-mail comme spam, le message est automatiquement redirigé vers une boîte e-mail technique gérée par Adobe. L&#39;adresse e-mail de l&#39;utilisateur est alors automatiquement mise en quarantaine avec le statut **[!UICONTROL Sur liste bloquée]**. Ce statut ne concerne que l’adresse. Le profil n’est pas placé sur liste bloquée afin que l’utilisateur puisse continuer à recevoir des SMS et des notifications push. Apprenez-en davantage sur les boucles de retours dans la section [Guide des bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#feedback-loops){target="_blank"}.
 
 >[!NOTE]
 >
@@ -73,11 +73,11 @@ Pour afficher la liste des adresses en quarantaine **pour l&#39;ensemble de la p
 >
 >Fin de l&#39;année 1 : (1 &#42; 0,33) / (1 + 0,5) = 22 %.
 >
->Fin de l&#39;année 2 : ((1,22 &#42; 0,33) + 0,33) / (1,5 + 0,75) = 32,5 %.
+Fin de l&#39;année 2 : ((1,22 &#42; 0,33) + 0,33) / (1,5 + 0,75) = 32,5 %.
 
 En outre, le rapport intégré **[!UICONTROL Non-délivrables et rebonds]**, disponible à partir de la section **Rapports** de cette page d’accueil, affiche des informations sur les adresses en quarantaine, les types d’erreurs rencontrées et une répartition des échecs par domaine. Vous pouvez filtrer les données pour une diffusion spécifique ou personnaliser ce rapport si nécessaire.
 
-Apprenez-en davantage sur les adresses de rebond dans le [Guide des bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=fr){target="_blank"}.
+Pour en savoir plus sur les adresses bounce, consultez le [ Guide des bonnes pratiques en matière de délivrabilité ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=fr){target="_blank"}.
 
 ### E-mail en quarantaine {#quarantined-recipient}
 
@@ -104,7 +104,7 @@ Leur état devient ensuite **[!UICONTROL Valide]**.
 
 >[!CAUTION]
 >
->Les destinataires avec une adresse dont le statut est **[!UICONTROL En quarantaine]** ou **[!UICONTROL Sur liste bloquée]** ne seront jamais supprimés, même s&#39;ils reçoivent un e-mail.
+Les destinataires avec une adresse dont le statut est **[!UICONTROL En quarantaine]** ou **[!UICONTROL Sur liste bloquée]** ne seront jamais supprimés, même s&#39;ils reçoivent un e-mail.
 
 Vous pouvez également supprimer manuellement une adresse de la liste de quarantaine. Pour supprimer une adresse de la quarantaine, vous pouvez :
 

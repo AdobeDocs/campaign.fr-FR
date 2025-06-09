@@ -51,7 +51,7 @@ Vous pouvez paramétrer l’affichage des valeurs en modifiant l’échelle de t
 >
 >Vous pouvez également surveiller le nombre de diffusions envoyées par heure dans le [Panneau de contrôle](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=fr){target="_blank"}.
 >
->Le Panneau de contrôle est accessible à tous les utilisateurs administrateurs et utilisatrices administratrices. Les étapes permettant d’accorder un accès d’administration à un utilisateur ou à une utilisatrice sont présentées sur [cette page](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=fr#discover-control-panel){target="_blank"}.
+>Le Panneau de contrôle est accessible à tous les utilisateurs administrateurs. Les étapes permettant d&#39;octroyer un accès administrateur à un utilisateur sont présentées sur [cette page](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=fr#discover-control-panel){target="_blank"}.
 >
 
 ## Activités utilisateurs {#user-activities}
@@ -78,7 +78,7 @@ Le **[!UICONTROL Nombre de messages traités]** représente le nombre total de m
 >
 >Les erreurs présentées dans ce rapport déclenchent le processus de mise en quarantaine. Pour plus d’informations sur la gestion de la quarantaine, consultez [Gestion de la quarantaine](../send/quarantines.md).
 
-La première partie de ce rapport présente la répartition des messages en échec sous la forme d&#39;un tableau de valeurs et d&#39;un graphique.
+La première partie de ce rapport présente la répartition des non-délivrables sous la forme d’un tableau de valeurs et d’un graphique.
 
 A chaque type d&#39;erreur, est associé :
 

@@ -8,7 +8,7 @@ exl-id: 0848ee2d-3506-4167-9aea-a1589aa82805
 source-git-commit: 14e49a0b4de1b82239113bd670213449f464c27f
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -57,7 +57,7 @@ Pour la rotation des clés GPG, les étapes suivantes doivent être suivies :
 
 1. Déchiffrez les données existantes à l’aide de la clé existante. [En savoir plus](https://experienceleague.adobe.com/fr/docs/control-panel/using/instances-settings/gpg-keys-management#decrypting-data){target="_blank"}.
 
-1. Créez une paire de clés GPG. Pour en savoir plus sur la gestion des clés GPG, consultez [cette documentation](https://experienceleague.adobe.com/fr/docs/control-panel/using/instances-settings/gpg-keys-management#decrypting-data){target="_blank"}.
+1. Créez une paire de clés GPG. En savoir plus sur la gestion des clés GPG dans [cette documentation](https://experienceleague.adobe.com/fr/docs/control-panel/using/instances-settings/gpg-keys-management#decrypting-data){target="_blank"}.
 
 1. Remplacez l’utilisation de clés GPG existante dans tous les workflows par la clé nouvellement créée.
 

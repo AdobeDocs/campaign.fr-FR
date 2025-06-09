@@ -48,7 +48,7 @@ Avant de commencer le processus de migration, contactez votre la personne respon
 
 Les intégrations sont créées dans le cadre d’un **Projet** dans Adobe Developer Console. En savoir plus sur les projets dans la documentation de [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
 
-Vous pouvez utiliser n’importe quel projet précédemment créé par vous ou créer un nouveau projet. Les étapes de création d’un projet sont détaillées dans la documentation de Adobe Developer Console [&#128279;](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}.
+Vous pouvez utiliser n’importe quel projet précédemment créé par vous ou créer un nouveau projet. Les étapes de création d’un projet sont détaillées dans la documentation de Adobe Developer Console [](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}.
 
 Dans le cadre de cette migration, vous devez ajouter les API suivantes dans votre projet : **I/O Management** et **Adobe Campaign**.
 
@@ -181,7 +181,7 @@ Pour tester la connexion, suivez les étapes présentées dans le guide des info
 
 Vous devez mettre à jour les intégrations d’API avec vos systèmes tiers.
 
-Pour plus d’informations sur les étapes d’intégration des API, y compris un exemple de code pour une intégration fluide, consultez la documentation sur l’authentification Adobe Developer Console [&#128279;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
+Pour plus d’informations sur les étapes d’intégration des API, y compris un exemple de code pour une intégration fluide, consultez la documentation sur l’authentification Adobe Developer Console [](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
 
 ### Étape 7 : supprimer l’ancien opérateur ou l’ancienne opératrice technique {#ims-migration-step-7}

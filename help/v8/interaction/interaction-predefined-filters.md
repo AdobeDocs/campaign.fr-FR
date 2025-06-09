@@ -18,7 +18,7 @@ Créez des filtres prédéfinis afin de définir des règles d&#39;éligibilité
 
 >[!NOTE]
 >
->L’interface utilisateur web d’Adobe Campaign offre une interface conviviale permettant de gérer et de personnaliser facilement les filtres prédéfinis en fonction de vos besoins spécifiques. Créez-les une seule fois et enregistrez-les pour une utilisation ultérieure. Pour en savoir plus sur les filtres prédéfinis pour l’interface utilisateur web, reportez-vous à la documentation de l’interface utilisateur web d’Adobe Campaign [&#128279;](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/predefined-filters){target=_blank}.
+>L’interface utilisateur web d’Adobe Campaign offre une interface conviviale permettant de gérer et de personnaliser facilement les filtres prédéfinis en fonction de vos besoins spécifiques. Créez-les une seule fois et enregistrez-les pour une utilisation ultérieure. Pour en savoir plus sur les filtres prédéfinis pour l’interface utilisateur web, reportez-vous à la documentation de l’interface utilisateur web d’Adobe Campaign [](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/predefined-filters){target=_blank}.
 
 
 Pour créer un filtre prédéfini, procédez comme suit :

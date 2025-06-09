@@ -8,7 +8,7 @@ exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
 source-git-commit: 24b252373923a9724743650b13a69d4f2c8dcd24
 workflow-type: tm+mt
 source-wordcount: '737'
-ht-degree: 99%
+ht-degree: 91%
 
 ---
 
@@ -47,11 +47,11 @@ Pour configurer l’intégration de CMK avec Campaign, procédez comme suit :
 
 1. Connectez-vous à votre compte [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"}.
 
-1. Générez une clé avec la rotation automatique activée à l’aide du service de gestion de clés (KMS) AWS. [Découvrez comment procéder](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}.
+1. Générez une clé avec la rotation automatique activée à l’aide du service de gestion de clés (KMS) AWS. [Découvrez comment](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}.
 
-1. Appliquez la politique qui vous a été fournie par Adobe dans votre compte AWS, afin d’accorder l’accès à vos ressources. [En savoir plus](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}.<!--link TBC-->
+1. Appliquez la politique qui vous a été fournie par Adobe dans votre compte AWS, afin d’accorder l’accès à vos ressources. [En savoir plus](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}. <!--link TBC-->
 
-1. Partagez votre [Nom de ressource Amazon (clé ARN)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} avec [!DNL Adobe Campaign]. Pour ce faire, contactez votre représentant ou représentante Adobe.<!--or Adobe transition manager?-->
+1. Partagez votre [nom de ressource Amazon (ARN clé)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} avec [!DNL Adobe Campaign]. Pour ce faire, contactez votre représentant ou représentante Adobe.<!--or Adobe transition manager?-->
 
 1. Créez et testez les règles Amazon EventBridge pour permettre la surveillance de vos clés par Adobe. [En savoir plus](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
 
@@ -62,13 +62,13 @@ Les mécanismes de sécurisation et limitations ci-après s’appliquent à l’
 
 * Adobe ne fournit pas de compte [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"}. Vous devez disposer de votre propre compte AWS et le configurer pour générer et partager votre clé avec Adobe.
 
-* Seules les clés du [Service de gestion de clés AWS](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS) sont prises en charge. Aucune clé générée par le client ou la cliente en dehors du KMS ne peut être utilisée.
+* Seules les clés [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS) sont prises en charge. Aucune clé générée par le client ou la cliente en dehors du KMS ne peut être utilisée.
 
 * Des temps d’arrêt sont attendus lors de la première configuration.La durée de l’interruption dépend de la taille de votre base de données.
 
 * En tant que client ou cliente, vous détenez et devez conserver la clé. Vous devez contacter Adobe en cas de changement de la clé.
 
-* Vous pouvez vérifier votre clé à l’aide d’[AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html){target="_blank"} et la révoquer si nécessaire.
+* Vous pouvez auditer votre clé à l’aide de [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html){target="_blank"} et la révoquer si nécessaire&#x200B;
 
 * Si vous révoquez, désactivez ou supprimez la clé, vos ressources et votre instance chiffrées deviennent inaccessibles jusqu’à ce que vous annuliez l’action correspondante.
 
@@ -123,7 +123,7 @@ Les bases de données On-Premise suivantes sont prises en charge :
 * Teradata
 * Hadoop via HiveSQL
 
-Seuls les périphériques VPN compatibles avec AWS sont pris en charge. Une liste des périphériques compatibles est disponible sur [cette page](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files){target="_blank"}.
+Seuls les périphériques VPN compatibles avec AWS sont pris en charge. Une liste des appareils compatibles est disponible sur [cette page](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files){target="_blank"}.
 
 >[!NOTE]
 >

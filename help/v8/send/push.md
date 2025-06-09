@@ -20,7 +20,7 @@ Avant de commencer à envoyer des notifications push avec Adobe Campaign, vous 
 
 >[!CAUTION]
 >
->Certaines modifications importantes apportées au service Android FCM (Firebase Cloud Messaging) seront publiées en 2024 et pourront avoir une incidence sur votre mise en œuvre d’Adobe Campaign. Il se peut que la configuration de vos services d’abonnement pour les notifications push Android doive être mise à jour pour prendre en charge cette modification. Vous pouvez déjà vérifier et agir. [En savoir plus](../../technotes/upgrades/push-technote.md).
+>Certaines modifications importantes apportées au service Android FCM (Firebase Cloud Messaging) seront publiées en 2024 et pourront avoir une incidence sur votre mise en œuvre d’Adobe Campaign. Il se peut que la configuration de vos services d’abonnement pour les messages push Android doive être mise à jour pour prendre en charge cette modification. Vous pouvez déjà vérifier et agir. [En savoir plus](../../technotes/upgrades/push-technote.md).
 
 ## Création de votre première notification push {#push-create}
 

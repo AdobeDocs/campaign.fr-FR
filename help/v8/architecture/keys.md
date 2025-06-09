@@ -18,7 +18,7 @@ Dans le contexte d’un [Déploiement Enterprise (FFDA)](enterprise-deployment.m
 
 Adobe Campaign v8 utilise [!DNL Snowflake] comme base de données principale. L’architecture distribuée de la base de données [!DNL Snowflake] ne fournit pas de mécanisme permettant de gérer l’unicité d’une clé dans une table. Les utilisateurs finaux assurent la cohérence des clés au sein de la base de données Adobe Campaign.
 
-Pour préserver la cohérence de la base de données relationnelle, il est obligatoire d&#39;éviter les doublons sur les clés, et notamment sur les clés primaires. Les doublons sur des clés primaires entraînent des problèmes avec les activités de workflow de gestion des données telles que **Requête**, **Réconciliation**, **Mise à jour de données**, etc. Cette étape est essentielle pour définir des critères de réconciliation appropriés lors de la mise à jour des tables [!DNL Snowflake].
+Pour préserver la cohérence de la base de données relationnelle, il est obligatoire d’éviter les doublons sur les clés, et notamment sur les clés primaires. Les doublons sur des clés primaires entraînent des problèmes avec les activités de workflow de gestion des données telles que **Requête**, **Réconciliation**, **Mise à jour de données**, etc. Cette étape est essentielle pour définir des critères de réconciliation appropriés lors de la mise à jour des tables [!DNL Snowflake].
 
 
 >[!CAUTION]

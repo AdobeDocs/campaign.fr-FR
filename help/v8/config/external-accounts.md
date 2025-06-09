@@ -8,7 +8,7 @@ exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
 source-wordcount: '1135'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -132,13 +132,13 @@ Ces comptes externes peuvent être utilisés pour importer ou exporter des donn�
 
    * **[!UICONTROL Serveur de compte AWS S3]** : l’URL de votre serveur, renseignée comme suit : `<S3bucket name>.s3.amazonaws.com/<s3object path>`
 
-   * **[!UICONTROL ID de la clé d’accès AWS]** : découvrez comment trouver votre ID de clé d’accès AWS dans la [documentation Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
+   * **[!UICONTROL ID de la clé d’accès AWS]** : découvrez comment trouver votre ID de clé d’accès AWS dans la [documentation Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
 
-   * **[!UICONTROL Clé d’accès secrète à AWS]** : apprenez à trouver votre clé d’accès secrète à AWS en consultant la [documentation Amazon](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target="_blank"}.
+   * **[!UICONTROL Clé d&#39;accès secrète à AWS]** : apprenez à trouver votre clé d&#39;accès secrète à AWS en consultant la [documentation Amazon](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target="_blank"}.
 
    * **[!UICONTROL Région AWS]** : pour en savoir plus sur les régions AWS, consultez la [documentation Amazon](https://aws.amazon.com/fr/about-aws/global-infrastructure/regions_az/){target="_blank"}.
 
-   * La case à cocher **[!UICONTROL Utiliser le chiffrement côté serveur]** vous permet de stocker votre fichier en mode chiffré dans S3. Apprenez à trouver l’ID de clé d’accès et la clé d’accès secrète en consultant la [documentation Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
+   * La case à cocher **[!UICONTROL Utiliser le chiffrement coté serveur]** vous permet de stocker votre fichier en mode chiffré dans S3. Apprenez à trouver l&#39;ID de clé d&#39;accès et la clé d&#39;accès secrète en consultant la [documentation Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
 
 * **Stockage Blob Azure** : compte externe **Azure** pouvant être utilisé pour importer ou exporter des données vers Adobe Campaign à l’aide d’une activité de workflow **[!UICONTROL Transfert de fichier]**. Pour configurer le compte externe **Azure** afin de l&#39;utiliser avec Adobe Campaign, vous devez fournir les informations suivantes :
 
@@ -146,4 +146,4 @@ Ces comptes externes peuvent être utilisés pour importer ou exporter des donn�
 
    * **[!UICONTROL Chiffrement]** : type de chiffrement, **[!UICONTROL Aucun]** ou **[!UICONTROL SSL]**.
 
-   * **[!UICONTROL Clé d’accès]** : apprenez à trouver votre **[!UICONTROL clé d’accès]** en consultant la [documentation Microsoft](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target="_blank"}.
+   * **[!UICONTROL Clé d&#39;accès]** : apprenez à trouver votre **[!UICONTROL clé d&#39;accès]** en consultant la [documentation Microsoft](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target="_blank"}.

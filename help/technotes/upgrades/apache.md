@@ -8,7 +8,7 @@ exl-id: 68e42fe4-7fb6-4b53-9f39-e77374e3753d
 source-git-commit: 50dcdf1f6bcc8c8a195a0bf0a37af254f33b80d5
 workflow-type: tm+mt
 source-wordcount: '466'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 100%
 
 Adobe Campaign fonctionne avec des outils tiers, qui bénéficient de mises à jour de compatibilité fréquentes. Ainsi, seules les versions prises en charge dotées des derniers correctifs et améliorations sont implémentées.
 
-Adobe Campaign comprend Apache Tomcat, qui agit comme point d’entrée dans le serveur d’applications via HTTP et est intégré au serveur web Apache. L’Apache Software Foundation a publié le serveur HTTP Apache 2.4.53. Cette version corrige des vulnérabilités qui peuvent permettre à une personne malveillante de prendre le contrôle d’un système affecté. En savoir plus sur la page d’[Annonce d’Apache 2.4.53](https://downloads.apache.org/httpd/Announcement2.4.html){target="_blank"}.
+Adobe Campaign comprend Apache Tomcat, qui agit comme point d’entrée dans le serveur d’applications via HTTP et est intégré au serveur web Apache. L’Apache Software Foundation a publié le serveur HTTP Apache 2.4.53. Cette version corrige des vulnérabilités qui peuvent permettre à une personne malveillante de prendre le contrôle d’un système affecté. En savoir plus sur la page [Annonce d’Apache 2.4.53](https://downloads.apache.org/httpd/Announcement2.4.html){target="_blank"}.
 
 L’équipe d’Adobe Campaign procédera à la mise à niveau de sécurité de la version Apache d’ici le **15 juin 2022**. Celle-ci permettra d’atténuer cette vulnérabilité Apache et de rendre votre environnement d’instance plus sûr. Cette mise à niveau s’applique à tous les clients de Campaign Classic v7 Managed Services, Campaign v8 et de Campaign Standard qui s’exécutent sur une version vulnérable du serveur HTTP Apache. Si vous êtes concerné, Adobe vous a déjà contacté pour vous informer de cette mise à niveau.
 
 Cette mise à niveau s’exécutera automatiquement en dehors de vos heures de bureau normales, afin que vous puissiez continuer à utiliser le service Campaign sans aucune interruption.
 
-Vos instances hors production seront mises à niveau par nos équipes, suivies par vos instances de production. Comme il s’agit d’un processus de mise à niveau automatique relevant d’Adobe, aucune action n’est requise de votre part. Toutefois, en cas de problème, contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-solution=Campaign&amp;lang=fr#support){target="_blank"}.
+Vos instances hors production seront mises à niveau par nos équipes, suivies par vos instances de production. Comme il s’agit d’un processus de mise à niveau automatique relevant d’Adobe, aucune action n’est requise de votre part. Contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=fr#support){target="_blank"} pour tout problème rencontré.
 
 
 >[!NOTE]
@@ -53,7 +53,7 @@ Vos instances hors production seront mises à niveau par nos équipes, suivies p
 
 * **Le client doit-il effectuer des validations ?**
 
-  Aucun test spécifique n’est nécessaire pour cette mise à niveau de sécurité. Contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-solution=Campaign#support){target="_blank"} pour tout problème rencontré.
+  Aucun test spécifique n’est nécessaire pour cette mise à niveau de sécurité. Contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"} pour tout problème rencontré.
 
 
 * **Puis-je demander un changement de date/heure du créneau prévu pour la mise à niveau de sécurité ?**
@@ -61,4 +61,4 @@ Vos instances hors production seront mises à niveau par nos équipes, suivies p
   Comme il s’agit d’un correctif de sécurité, nous vous recommandons vivement de vous conformer au calendrier existant.
 
 
-Pour toute autre question, contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-solution=Campaign&amp;lang=fr#support){target="_blank"}.
+Pour toute autre question, contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=fr#support){target="_blank"}.

@@ -101,8 +101,8 @@ Voici le flux général de ce cas pratique :
 
 Adobe Campaign vous permet de collecter des données, y compris des informations personnelles et sensibles. Il est donc essentiel de recevoir et surveiller le consentement de vos destinataires.
 
-* Demandez toujours aux destinataires d&#39;accepter de recevoir des communications. Pour ce faire, continuez à honorer les demandes d&#39;opt-out le plus rapidement possible et vérifiez le consentement par le biais d&#39;un processus de double opt-in. Pour plus d&#39;informations à ce sujet, voir [Créer un formulaire d&#39;abonnement avec double opt-in](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms){target=_blank}.
-* N&#39;importez pas de listes frauduleuses et utilisez des adresses de contrôle pour vérifier que votre fichier client n&#39;est pas utilisé de façon frauduleuse. Pour plus d’informations à ce sujet, voir [À propos des adresses de contrôle](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses){target=_blank}.
+* Demandez toujours aux destinataires d&#39;accepter de recevoir des communications. Pour ce faire, continuez à honorer les demandes d&#39;opt-out le plus rapidement possible et vérifiez le consentement par le biais d&#39;un processus de double opt-in. Pour plus d&#39;informations à ce sujet, voir [Créer un formulaire d&#39;abonnement avec double opt-in](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms){target=_blank}.
+* N&#39;importez pas de listes frauduleuses et utilisez des adresses de contrôle pour vérifier que votre fichier client n&#39;est pas utilisé de façon frauduleuse. Pour plus d’informations à ce sujet, voir [À propos des adresses de contrôle](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses){target=_blank}.
 * Grâce à la gestion des droits et du consentement, vous pouvez tracker les préférences de vos destinataires et gérer les données correspondantes et les utilisateurs de votre organisation qui peuvent y accéder. Pour plus d’informations, consultez [cette section](#consent).
 * Faciliter et gérer les demandes d&#39;accès à des informations personnelles de vos destinataires. Pour plus d’informations, consultez [cette section](#privacy-requests).
 
@@ -123,7 +123,7 @@ Depuis l’origine, Adobe Campaign dispose de fonctions importantes, essentiell
 
 * **Gestion du consentement** : grâce au processus de gestion des abonnements, vous pouvez gérer vos préférences de destinataires et déterminer quels destinataires ont choisi quel type d&#39;abonnement. Pour plus d’informations, consultez la section [À propos des abonnements](../../automation/workflow/subscription-services.md).
 * **Conservation des données** : toutes les tables de journalisation standard natives comportent des périodes de rétention prédéfinies, limitant généralement le stockage de leurs données à 6 mois maximum. Il est possible de définir des périodes de conservation supplémentaires à l&#39;aide de workflows. Pour en savoir plus, contactez les consultants Adobe ou les administrateurs techniques.
-* **Gestion des droits** : Adobe Campaign permet de gérer les droits affectés aux divers opérateurs Campaign par l’intermédiaire de différents rôles préconfigurés ou personnalisés. Vous pouvez ainsi gérer qui, dans votre entreprise, peut accéder à différents types de données, les modifier ou les exporter. Pour plus d’informations à ce sujet, consultez la section [À propos de la gestion des accès](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management){target=_blank}.
+* **Gestion des droits** : Adobe Campaign permet de gérer les droits affectés aux divers opérateurs Campaign par l’intermédiaire de différents rôles préconfigurés ou personnalisés. Vous pouvez ainsi gérer qui, dans votre entreprise, peut accéder à différents types de données, les modifier ou les exporter. Pour plus d’informations à ce sujet, consultez la section [À propos de la gestion des accès](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management){target=_blank}.
 
 ### Demandes d&#39;accès à des informations personnelles {#privacy-requests}
 
@@ -166,7 +166,7 @@ Adobe Campaign vous permet également de contrôler la manière dont les destina
 
 La configuration du tracking web est expliquée dans [cette section](../start/tracking.md).
 
-Pour mieux gérer le tracking, Adobe Campaign vous permet d’afficher une bannière d’opt-out afin d’arrêter le tracking des comportements web des utilisateurs finaux qui se sont désinscrits du tracking comportemental. Pour plus d’informations, consultez la section [Désinscription (opt-out) du tracking des applications web](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-applications/web-application-tracking-opt-out){target=_blank}.
+Pour mieux gérer le tracking, Adobe Campaign vous permet d’afficher une bannière d’opt-out afin d’arrêter le tracking des comportements web des utilisateurs finaux qui se sont désinscrits du tracking comportemental. Pour plus d’informations, consultez la section [Désinscription (opt-out) du tracking des applications web](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-applications/web-application-tracking-opt-out){target=_blank}.
 
 <!--
 Privacy configuration and hardening is a key element of security optimization. Here are some best practices to follow regarding privacy:

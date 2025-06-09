@@ -18,7 +18,7 @@ La fonctionnalité **[!UICONTROL Journal d’audit]** d’Adobe Campaign offre 
 >[!NOTE]
 >
 >Adobe Campaign n’effectue pas le suivi des modifications apportées aux droits des utilisateurs, aux modèles, aux personnalisations ni aux campagnes.\
->Le Suivi peut uniquement être géré par les administrateurs de l’instance.
+>Le journal d’audit peut uniquement être géré par les administrateurs de l’instance.
 
 +++ En savoir plus sur les entités disponibles du journal d’audit
 
@@ -99,9 +99,9 @@ Pour accéder au **[!UICONTROL journal d’audit]** de votre instance, procédez
 >
 >Par défaut, la période de rétention est définie sur 180 jours pour les **[!UICONTROL logs d’audit]**. Cette valeur peut-être modifiée dans l’assistant de déploiement.
 
-## Activer/désactiver le Suivi {#enable-disable-audit-trail}
+## Activer/désactiver le journal d’audit {#enable-disable-audit-trail}
 
-Le Suivi peut être facilement activé ou désactivé pour une activité spécifique, par exemple si vous voulez économiser de l’espace sur la base de données.
+Le journal d’audit peut être facilement activé ou désactivé pour une activité spécifique, par exemple si vous voulez économiser de l’espace sur la base de données.
 
 Pour ce faire :
 

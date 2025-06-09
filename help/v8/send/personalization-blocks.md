@@ -71,7 +71,7 @@ Pour créer un bloc de personnalisation, procédez comme suit :
    * Sélectionnez un type de contenu de **Diffusion**.
    * Sélectionnez l’option **[!UICONTROL Afficher dans les menus de personnalisation]** pour pouvoir accéder à ce bloc à partir de l’icône d’insertion de champs de personnalisation.
    * Le cas échéant, sélectionnez l’option **[!UICONTROL Le contenu du bloc de personnalisation dépend du format]** pour définir deux blocs distincts pour les e-mails au format HTML et texte.
-   * Saisissez le contenu (en HTML, texte, JavaScript, etc.) du bloc de personnalisation, puis cliquez sur **[!UICONTROL Enregistrer]**.
+   * Saisissez le contenu (dans HTML, texte, JavaScript, etc.) du bloc de personnalisation et cliquez sur **[!UICONTROL Enregistrer]**.
 
 Une fois enregistré, le nouveau bloc de personnalisation est disponible dans l’éditeur de diffusion.
 
@@ -79,4 +79,4 @@ Une fois enregistré, le nouveau bloc de personnalisation est disponible dans l�
 
 Dans la vidéo suivante, découvrez comment créer des blocs de contenu dynamiques et apprenez à les utiliser pour personnaliser le contenu de votre diffusion e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449008?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

@@ -8,7 +8,7 @@ exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -72,7 +72,7 @@ Adobe Campaign v8 est disponible en tant que Managed Cloud Service, offrant 
 
 L’approche Managed Services permet aux personnes spécialisées dans le marketing de tirer parti de l’échelle opérationnelle et de l’économie de l’infrastructure cloud, sans avoir besoin d’une assistance importante de la part des ressources informatiques internes. Les équipes de conseil et d’implémentation d’Adobe vous aident à évaluer vos plans marketing, vos pratiques existantes, vos exigences en matière de données et votre volume de messages. Elles vous recommandent ensuite les services, l’assistance et les packages de délivrabilité les plus adaptés. L’équipe Adobe Campaign Managed Cloud Services peut ensuite surveiller les performances de la campagne, la réputation de la marque, les mesures d’expérience des clientes et clients, etc., et créer des rapports à ce sujet.
 
-[!BADGE PDF]{type=Informative}[Lisez ce livre blanc](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf){target="_blank"} pour en savoir plus sur la valeur commerciale d’Adobe Campaign Managed Cloud Services.
+[!BADGE PDF]{type=Informative} [Lisez ce livre blanc](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf){target="_blank"} pour en savoir plus sur la valeur commerciale de Adobe Campaign Managed Cloud Services.
 
 La nouvelle architecture cloud permet à Campaign de rationaliser les processus, de réduire les coûts, de gérer les risques et d’améliorer la sécurité des données. Votre environnement Campaign v8 est fourni avec un cloud privé virtuel (VPC) dédié et préconfiguré pour vous.
 
@@ -105,6 +105,6 @@ Grâce à une interface utilisateur intuitive, les administrateurs peuvent surve
 
 ![](assets/subdomain1.png)
 
-[En savoir plus sur le panneau de contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"}
+[En savoir plus sur le Panneau de Contrôle de Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"}
 
 

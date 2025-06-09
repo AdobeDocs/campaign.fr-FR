@@ -208,4 +208,4 @@ Vous pouvez également utiliser le lien contenu dans les messages de notificatio
 
 Cette vidéo explique comment créer un plan marketing, des programmes et des campagnes.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449897?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)

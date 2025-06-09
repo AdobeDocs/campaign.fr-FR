@@ -5,13 +5,13 @@ exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
 source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
 source-wordcount: '1343'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
 # Migrer les opérateurs et opératrices de Campaign vers Adobe Identity Management System (IMS) {#migrate-users-to-ims}
 
-Campaign v8.6 et les versions ultérieures apportent des améliorations au processus d’authentification de Campaign v8. Tous les opérateurs et opératrices doivent utiliser [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} **uniquement** pour se connecter à Campaign. La connexion avec l’utilisateur/mot de passe (ou authentification native) ne sera plus autorisée. Adobe recommande d’effectuer cette migration dans Campaign v8.5.2 afin de pouvoir migrer en douceur vers Campaign v8.6.
+Campaign v8.6 et les versions ultérieures apportent des améliorations au processus d’authentification de Campaign v8. Tous les opérateurs utiliseront [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} **uniquement** pour se connecter à Campaign. La connexion avec l’utilisateur/mot de passe (ou authentification native) ne sera plus autorisée. Adobe recommande d’effectuer cette migration dans Campaign v8.5.2 afin de pouvoir migrer en douceur vers Campaign v8.6.
 
 En tant que client ou cliente des services gérés v7 de Campaign Classic, si vous effectuez une migration vers Campaign v8, cette procédure s’applique également à vous.
 
@@ -29,7 +29,7 @@ Cette modification s’applique à partir de Campaign v8.5.2 et est **obligatoi
 
 Si les opérateurs et opératrices de votre entreprise se connectent à la console cliente Campaign à l’aide de leur nom d’utilisateur/mot de passe (c’est-à-dire via une authentification native), cette étape vous concerne et vous devez migrer ces opérateurs et opératrices vers Adobe IMS comme décrit ci-dessous.
 
-La migration vers [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} est un impératif de sécurité visant à sécuriser et normaliser vos environnements, car la plupart des autres solutions et applications Adobe Experience Cloud sont déjà sur IMS.
+La migration vers [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} est un impératif de sécurité pour rendre vos environnements sécurisés et normalisés, car la plupart des autres solutions et applications Adobe Experience Cloud sont déjà sur IMS.
 
 ## Migrer vers Adobe Developer Console{#ims-migration-procedure}
 
@@ -55,13 +55,13 @@ Une fois la migration terminée, confirmez auprès de votre Gestionnaire de tran
 
 ### Quand puis-je démarrer la migration ? {#ims-migration-start}
 
-La mise à niveau de votre environnement vers Campaign v8.5.2 constitue une condition préalable à la migration vers [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
+La mise à niveau de votre environnement vers Campaign v8.5.2 est une condition préalable à la migration vers [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
 
 Vous pouvez démarrer la migration IMS sur votre environnement intermédiaire, une fois qu’elle a été mise à niveau vers Campaign v8.5.2, et planifier en conséquence l’environnement de production.
 
 ### Que se passe-t-il après la mise à niveau de version vers Campaign v8.5.2 ? {#ims-migration-after-upgrade}
 
-Une fois les environnements mis à niveau vers Campaign v8.5.2, vous pouvez lancer la transition vers [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
+Une fois vos environnements mis à niveau vers Campaign v8.5.2, vous pouvez lancer votre transition vers [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
 
 La création d’un utilisateur natif ou d’une utilisatrice native est toujours autorisée jusqu’à la fin de la migration IMS.
 
@@ -170,4 +170,4 @@ Vous pouvez maintenant voir la liste de vos **Opérateurs** et leur **Type d’a
 * [Comment se connecter à Campaign v8](../../v8/start/connect.md)
 * [Accès et autorisations dans Adobe Campaign v8](../../v8/start/gs-permissions.md)
 * [Notes de mise à jour d’Adobe Campaign v8](../../v8/start/release-notes.md)
-* [Présentation d’Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}
+* [En quoi consiste Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}

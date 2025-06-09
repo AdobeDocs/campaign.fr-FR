@@ -8,7 +8,7 @@ exl-id: ae1ef010-24d5-4be4-a30c-899e2b0040a4
 source-git-commit: 0844a4fcd34220d825ae30368b284cbcaf93d02b
 workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -20,7 +20,7 @@ Découvrez les dernières notes techniques de Campaign dans cette section. Ces n
 
 >[!TAB Modifications du canal de notification push]
 
-Certaines modifications importantes apportées au service Android FCM (Firebase Cloud Messaging), publiées en 2024, pourront avoir une incidence sur votre mise en œuvre d’Adobe Campaign. Il se peut que la configuration de vos services d’abonnement pour les notifications push Android doive être mise à jour pour prendre en charge cette modification.
+Certaines modifications importantes apportées au service Android FCM (Firebase Cloud Messaging), publiées en 2024, pourront avoir une incidence sur votre mise en œuvre d’Adobe Campaign. Il se peut que la configuration de vos services d’abonnement pour les messages push Android doive être mise à jour pour prendre en charge cette modification.
 
 
 [![Image](../v8//assets/do-not-localize/learn-more-button.svg)](upgrades/push-technote.md)
@@ -75,5 +75,5 @@ Campaign v8.6 et les versions ultérieures apportent des améliorations au proc
 
 ## Autres ressources
 
-[Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Documentation de l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=fr){target="_blank"} - [Tutoriels](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=fr){target="_blank"} - Guide d’automatisation [[!DNL Adobe Campaign] ](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=fr){target="_blank"} - [Panneau de Contrôle de Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"}
+[Description du produit Adobe Campaign v8 ](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Documentation de l’interface utilisateur web d’Adobe Campaign ](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=fr){target="_blank"} - [Tutoriels](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=fr){target="_blank"} - [[!DNL Adobe Campaign] guide d’automatisation](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=fr){target="_blank"} - [Panneau de Contrôle pour Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"}
 

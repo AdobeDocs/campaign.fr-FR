@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Adobe Campaign permet d&#39;assurer la cohérence des communications au travers d&#39;un ensemble de règles regroupées dans des typologies de campagne. Ces règles ont pour objectif d&#39;assurer un contrôle sur les diffusions envoyées aux destinataires, leur volume, leur nature, leur pertinence, etc.
 
-Des règles de **capacité** peuvent par exemple éviter de surcharger la plateforme concernée par la diffusion. Par exemple, une offre spéciale contenant un lien de téléchargement ne doit pas s&#39;adresser au même moment à une population trop nombreuse afin de ne pas saturer le serveur, une campagne téléphonique ne doit pas excéder la capacité de traitement du centre d&#39;appels, etc.
+Des règles de **capacité** peuvent par exemple éviter de surcharger la plateforme concernée par la diffusion. Par exemple, une offre spéciale contenant un lien de téléchargement ne doit pas s’adresser au même moment à une population trop nombreuse afin de ne pas saturer le serveur, une campagne téléphonique ne doit pas excéder la capacité de traitement du centre d’appels, etc.
 
 ## Contrôle de la capacité {#control-capacity}
 

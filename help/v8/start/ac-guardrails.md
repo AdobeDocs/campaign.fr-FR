@@ -8,13 +8,13 @@ exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
 # Mécanismes de sécurisation des produits{#guardrails}
 
-Les droits, les limites de produit et les mécanismes de sécurisation des performances sont répertoriés dans la section [Page de description du produit Adobe Campaign Managed Cloud Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+Les droits, les limites de produit et les mécanismes de sécurisation des performances sont répertoriés dans la page de description du produit [Adobe Campaign Managed Cloud Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 Vous trouverez ci-dessous des mécanismes de sécurisation et des limites supplémentaires lors de l’utilisation de [!DNL Adobe Campaign].
 

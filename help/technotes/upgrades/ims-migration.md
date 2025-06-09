@@ -7,13 +7,13 @@ exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
 source-git-commit: 07c2a7460c407a0afb536d8b64f4105d8bc547f4
 workflow-type: tm+mt
 source-wordcount: '1551'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
 # Migration des opérateurs et opératrices techniques Campaign vers Adobe Developer Console {#migrate-tech-users-to-ims}
 
-Dans le cadre des efforts visant à renforcer le processus de sécurité et d’authentification, à partir de Campaign v8.5, le processus d’authentification à Campaign v8 est en cours d’amélioration. Les opérateurs et opératrices techniques peuvent à présent utiliser [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} pour se connecter à Campaign. Pour en savoir plus sur le nouveau processus d’authentification serveur à serveur, consultez la [documentation d’Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
+Dans le cadre des efforts visant à renforcer le processus de sécurité et d’authentification, à partir de Campaign v8.5, le processus d’authentification à Campaign v8 est en cours d’amélioration. Les opérateurs ou opératrices techniques peuvent désormais utiliser le système Adobe Identity Management (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} [ pour se connecter à Campaign. En savoir plus sur le nouveau processus d’authentification serveur à serveur dans la documentation de [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
 Un opérateur ou une opératrice technique est un profil utilisateur de Campaign qui a été explicitement créé pour l’intégration de l’API. Cet article décrit les étapes à suivre pour migrer un opérateur ou une opératrice technique vers un compte technique par le biais de l’Adobe Developer Console.
 
@@ -52,9 +52,9 @@ Dans d’autres cas, vous devez contacter la personne chargée de la gestion de 
 
 ### Étape 1 : créer votre projet Campaign dans l’Adobe Developer Console {#ims-migration-step-1}
 
-Les intégrations sont créées dans le cadre d’un **Projet** dans Adobe Developer Console. En savoir plus sur les projets dans la [documentation d’Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
+Les intégrations sont créées dans le cadre d’un **Projet** dans Adobe Developer Console. En savoir plus sur les projets dans la documentation de [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
 
-Vous pouvez utiliser n’importe quel projet précédemment créé par vous ou créer un nouveau projet. Les étapes de création d’un projet sont détaillées dans la [documentation d’Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}. Vous trouverez ci-dessous les étapes clés.
+Vous pouvez utiliser n’importe quel projet précédemment créé par vous ou créer un nouveau projet. Les étapes de création d’un projet sont détaillées dans la documentation de Adobe Developer Console [](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}. Vous trouverez ci-dessous les étapes clés.
 
 <!--
 For this migration, you must add below APIs in your project: **I/O Management API** and **Adobe Campaign**.
@@ -141,13 +141,13 @@ Vérifiez votre projet pour vous assurer qu’il ressemble à ce qui suit, avec 
 
 ### Étape 7 : valider votre configuration {#ims-migration-step-7}
 
-Pour tester la connexion, procédez comme décrit dans le [guide des informations d’identification de l’Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/#generate-access-tokens){target="_blank"} pour générer un jeton d’accès et copier la commande Sample cURL fournie. Vous pouvez créer un appel SOAP à l’aide de ces informations d’identification pour vérifier que vous pouvez vous authentifier et vous connecter correctement aux instances Adobe Campaign. Nous vous recommandons d’effectuer cette validation avant d’apporter toutes les modifications aux intégrations d’API tierces.
+Pour tester la connexion, suivez les étapes présentées dans le guide des informations d’identification de [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/#generate-access-tokens){target="_blank"} afin de générer un jeton d’accès et de copier la commande Sample cURL fournie. Vous pouvez créer un appel SOAP à l’aide de ces informations d’identification pour vérifier que vous pouvez vous authentifier et vous connecter correctement aux instances Adobe Campaign. Nous vous recommandons d’effectuer cette validation avant d’apporter toutes les modifications aux intégrations d’API tierces.
 
 ### Étape 8 : mettre à jour les intégrations d’API tierces {#ims-migration-step-8}
 
 Vous devez maintenant mettre à jour les intégrations d’API qui effectuent des appels dans Adobe Campaign pour utiliser le compte technique nouvellement créé.
 
-Pour plus d’informations sur les étapes d’intégration des API, y compris un exemple de code pour une intégration fluide, consultez la [documentation sur l’authentification de l’Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
+Pour plus d’informations sur les étapes d’intégration des API, y compris un exemple de code pour une intégration fluide, consultez la documentation sur l’authentification Adobe Developer Console [](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
 Vous trouverez ci-dessous des exemples d’appels SOAP indiquant les appels avant et après la migration pour les systèmes tiers.
 

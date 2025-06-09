@@ -30,7 +30,7 @@ Adobe Campaign est fourni avec les mappings de ciblage intégrés suivants :
 | Visiteurs | Diffuser aux visiteurs dont les profils ont été collectés par le biais d’une recommandation (marketing viral), par exemple. | mns:visitor |
 | Abonnements  | Diffuser aux destinataires abonnés à un service d&#39;information, par exemple une newsletter | nms:subscription |
 | Abonnements des visiteurs | Diffuser à des visiteurs abonnés à un service d&#39;information | nms:visitorSub |
-| Les opérateurs | Diffuser aux opérateurs Adobe Campaign | nms:operator |
+| Opérateurs | Diffuser aux opérateurs Adobe Campaign | nms:operator |
 | Fichier externe | Diffuser depuis un fichier contenant les toutes informations nécessaires à la diffusion | Aucun schéma associé, aucune cible renseignée |
 | Applications abonnés | Diffuser aux destinataires abonnés à une application | nms:appSubscriptionRcp |
 

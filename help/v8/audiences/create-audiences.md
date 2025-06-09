@@ -26,7 +26,7 @@ Vous pouvez créer une liste à l&#39;aide de l&#39;activité **Mettre à jour l
 
 Regardez cette vidéo pour en savoir plus sur la gestion des listes dans Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426459?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/334909?quality=12)
 
 
 ## Créer une liste de contacts {#create-a-list-of-contacts}

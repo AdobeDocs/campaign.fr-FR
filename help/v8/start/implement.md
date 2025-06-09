@@ -8,7 +8,7 @@ exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
 workflow-type: tm+mt
 source-wordcount: '1148'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -42,7 +42,7 @@ Adobe Campaign s’accompagne de processus et de paramètres qui vous permetten
 
 * **Consentement de l’utilisateur ou de l’utilisatrice et conservation des données** : vous devez obtenir le consentement de l’utilisateur ou de l’utilisatrice, configurer des mécanismes d’abonnement au double opt-in, faciliter la désinscription et configurer la conservation des données.
 
-  Apprenez-en davantage en consultant la [documentation sur la confidentialité de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr#consent){target="_blank"}.
+  En savoir plus dans la documentation sur la confidentialité de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr#consent){target="_blank"}
 
 * **Réglementations relatives à la confidentialité et à la protection des données** : voir [cette section](privacy.md) pour plus d’informations sur les exigences en matière de confidentialité et sur la manière dont ces réglementations impactent votre entreprise et Adobe Campaign.
 
@@ -87,14 +87,14 @@ Avant de commencer à envoyer des messages et à créer des campagnes marketing,
 
    Découvrez comment configurer un modèle de workflow sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=fr){target="_blank"}.
 
-   En savoir plus sur les modèles d’e-mail dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr){target="_blank"}.
+   En savoir plus sur les modèles d&#39;e-mail dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr){target="_blank"}.
 
 
 1. **Configurer les règles de typologie**
 
    Tirez parti des règles de typologies de Campaign pour filtrer, contrôler et surveiller l&#39;envoi de diffusions. Par exemple, les règles de fatigue contrôlent la fréquence et la quantité de messages pour éviter la sollicitation excessive de destinataires. Une fois implémentées, les règles de typologie sont référencées dans les diffusions.
 
-   En savoir plus sur les typologies et la gestion de la fatigue dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=fr){target="_blank"}.
+   Pour en savoir plus sur les typologies et la gestion de la fatigue, consultez [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=fr){target="_blank"}.
 
 1. **Se familiariser avec le modèle de données natif de Campaign**
 

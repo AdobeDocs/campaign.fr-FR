@@ -349,7 +349,7 @@ Toutes les entrées du tableau sont traitées dans l&#39;ordre spécifié, jusqu
 
 >[!NOTE]
 >
->Le paramètre d’**envoi du numéro de téléphone complet** a un impact sur le comportement du mécanisme de quarantaine de réponse automatique : si l’envoi du numéro de téléphone complet n’est pas vérifié, le numéro de téléphone mis en quarantaine sera précédé d’un signe plus (+) afin de le rendre compatible avec le format de numéro de téléphone international.
+>Le paramètre d’**envoi du numéro de téléphone complet** a un impact sur le comportement du mécanisme de quarantaine de réponse automatique : si l’envoi du numéro de téléphone complet n’est pas vérifié, le numéro de téléphone mis en quarantaine sera précédé d’un signe plus (« + ») afin de le rendre compatible avec le format de numéro de téléphone international.
 
 >[!NOTE]
 >

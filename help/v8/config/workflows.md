@@ -27,7 +27,7 @@ Ce que vous pouvez configurer :
 
 >[!NOTE]
 >
->L’interface utilisateur web d’Adobe Campaign s’accompagne d’une zone de travail repensée pour les workflows, ce qui permet de créer des parcours client plus dynamiques et personnalisés. Pour en savoir plus sur les workflows pour l’interface utilisateur web, reportez-vous à la documentation de l’interface utilisateur web d’Adobe Campaign [&#128279;](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/wf/gs-workflows){target=_blank}.
+>L’interface utilisateur web d’Adobe Campaign s’accompagne d’une zone de travail repensée pour les workflows, ce qui permet de créer des parcours client plus dynamiques et personnalisés. Pour en savoir plus sur les workflows pour l’interface utilisateur web, reportez-vous à la documentation de l’interface utilisateur web d’Adobe Campaign [](https://experienceleague.adobe.com/en/docs/campaign-web/v8/wf/gs-workflows){target=_blank}.
 
 
 ## Conception et utilisation de workflows {#gs-ac-wf}
@@ -230,7 +230,7 @@ In this use case, learn how to use the **[!UICONTROL Change data source]** activ
 
 1. Query your targeted recipients from the NmsRecipient table with a **[!UICONTROL Query]** activity. 
 
-    For more information on the **[!UICONTROL Query]** activity, refer to the [Query](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/query.html?lang=fr#creating-a-query) page in Campaign Classic V7 documentation.
+    For more information on the **[!UICONTROL Query]** activity, refer to the [Query](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/query.html#creating-a-query) page in Campaign Classic V7 documentation.
 
 1. 
 

@@ -64,6 +64,6 @@ Une diffusion au fil de l’eau crée une diffusion et des logs de diffusion UNI
 
 Cette vidéo montre comment configurer une diffusion en continu avec une requête incrémentale.
 
->[!VIDEO](https://video.tv.adobe.com/v/30233?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
 D’autres vidéos pratiques sur Campaign sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=fr){target="_blank"}.

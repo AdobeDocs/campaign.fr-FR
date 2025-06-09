@@ -5,7 +5,8 @@ description: Joindre des fichiers
 feature: Email
 role: User
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+exl-id: 27d13642-2971-466b-818d-39328c198b14
+source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 96%
@@ -20,7 +21,7 @@ Vous pouvez joindre un ou plusieurs fichiers à une diffusion d’email.
 
 >[!NOTE]
 >
->Pour éviter tout problème de performances, il est recommandé de ne pas inclure plusieurs pièces jointes par email. Le seuil recommandé peut être configuré à partir de la liste des options de Campaign. Consultez la documentation de [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=fr#delivery).
+>Pour éviter tout problème de performances, il est recommandé de ne pas inclure plusieurs pièces jointes par email. Le seuil recommandé peut être configuré à partir de la liste des options de Campaign. Consultez la documentation de [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
 
 Deux cas se présentent :
 
@@ -37,7 +38,7 @@ Pour éviter des problèmes de performances, les images incluses dans les e-mail
 
 Adobe recommande également de limiter la taille et le nombre de fichiers joints. Par défaut, vous ne pouvez ajouter qu’un seul fichier en tant que pièce jointe à un e-mail. Ce seuil peut être configuré à partir de l’option `NmsDelivery_MaxRecommendedAttachments`.
 
-Pour en savoir plus, consultez la liste des options de Campaign dans la documentation de [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=fr#delivery).
+Pour en savoir plus, consultez la liste des options de Campaign dans la documentation de [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
 
 ## Joindre un fichier local {#attaching-a-local-file}
 

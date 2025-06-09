@@ -8,7 +8,7 @@ exl-id: 52d8e2a5-9fdf-498a-bdbd-13a9935a94d6
 source-git-commit: 202a0553f0c736086eca993b9647737732f57d07
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -22,7 +22,7 @@ Les étapes de base consistent à créer un modèle de message transactionnel da
 ![](assets/ajo-integration.png)
 
 
-[Découvrez cette intégration dans cet exemple détaillé](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/orchestrate-journeys/journey-use-cases/business-use-cases/ajo-ac){target="_blank"}.
+[Découvrez cette intégration dans cet exemple complet](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/orchestrate-journeys/journey-use-cases/business-use-cases/ajo-ac){target="_blank"}.
 
 
-[En savoir plus dans la documentation Journey Optimizer](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}.
+[En savoir plus dans la documentation de Journey Optimizer](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}.

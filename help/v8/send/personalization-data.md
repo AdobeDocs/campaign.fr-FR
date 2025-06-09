@@ -18,7 +18,7 @@ Les données de personnalisation peuvent être récupérées à partir de diffé
 
 ## Source de données de la base de données Campaign
 
-Dans le cas le plus courant, les données de personnalisation sont stockées dans la base de données. Par exemple, les &quot;champs de personnalisation des destinataires&quot; sont tous les champs définis dans la table des destinataires, les champs standard (généralement : nom, prénom, adresse, ville, date de naissance, etc.) ou les champs personnalisés.
+Dans le cas le plus courant, les données de personnalisation sont stockées dans la base de données. Par exemple, les « champs de personnalisation des destinataires » sont tous les champs définis dans le tableau des destinataires, les champs standard (généralement : nom, prénom, adresse, ville, date de naissance, etc.) ou les champs personnalisés.
 
 ![Champs de personnalisation Campaign d’un e-mail](assets/perso-campaign-datasource.png)
 

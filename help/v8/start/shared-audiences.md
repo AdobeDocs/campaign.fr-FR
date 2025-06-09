@@ -10,7 +10,7 @@ exl-id: c4d30771-db5e-40be-8af6-50f0fab9f9af
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '252'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -40,6 +40,6 @@ L’intégration prend en charge deux types d’identifiants Adobe Experience 
 
 Pour plus d’informations, consultez la section :
 
-[Documentation Adobe Audience Manager](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=fr){target="_blank"}
+[Documentation Adobe Audience Manager](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=fr){target="_blank"}
 
-[Guide des composants de lʼinterface centrale dʼAdobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=fr){target="_blank"}
+[Guide des composants de l&#39;interface centrale de Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=fr){target="_blank"}

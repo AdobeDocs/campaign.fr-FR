@@ -70,7 +70,7 @@ L’optimisation de l’heure d’envoi prédictive est stockée au niveau du pr
 
 ## Score prédictif de l’engagement {#predictive-scoring}
 
-Le score prédictif de l’engagement estime la probabilité qu’un destinataire interagisse avec un message, ainsi que la probabilité de se désinscrire dans les 7 jours suivant l’envoi du prochain e-mail. Les probabilités sont divisées en compartiments en fonction du niveau d’engagement estimé pour votre contenu : élevé, moyen ou faible. Ces modèles fournissent également le rang centile du risque de désabonnement pour les clients, afin de comprendre où se situe le rang d’un certain client par rapport aux autres.
+Le score prédictif de l’engagement estime la probabilité qu’un destinataire interagisse avec un message, ainsi que la probabilité de se désinscrire dans les 7 jours suivant l’envoi du prochain e-mail. Les probabilités sont divisées en compartiments en fonction du niveau d’engagement estimé pour votre contenu : élevé, moyen ou faible. Ces modèles fournissent également le rang percentile du risque de désabonnement pour les clients, afin de comprendre où se situe le rang d’un certain client par rapport aux autres.
 
 Le scoring d’engagement prédictif vous permet d’effectuer les opérations suivantes :
 
@@ -83,7 +83,7 @@ Ce modèle utilise plusieurs scores pour indiquer :
 * **Score d’engagement avec ouverture/Score d’engagement avec clic** : cette valeur correspond à la probabilité qu’un abonné interagisse avec un message spécifique (ouverture ou clic). Les valeurs sont comprises entre 0,0 et 1,0.
 * **Probabilité de désabonnement** : cette valeur correspond à la probabilité pour le destinataire de se désabonner d’un canal email après l’ouverture d’un email. Les valeurs sont comprises entre 0,0 et 1,0.
 * **Niveau de rétention** : cette valeur classe les utilisateurs en trois niveaux : bas, moyen et élevé. Élevé indique que l’utilisateur est susceptible de rester fidèle à la marque et faible indique qu’il est susceptible de se désabonner.
-* **Rang centile de rétention** : profil classé en termes de probabilité de désabonnement. Les valeurs sont comprises entre 0,0 et 1,0. Par exemple, si le rang de pourcentage de rétention est de 0,953, ce destinataire est plus susceptible de rester fidèle à la marque et moins susceptible de se désabonner que 95,3 % de tous les destinataires.
+* **Rang percentile de rétention** : profil classé en termes de probabilité de désabonnement. Les valeurs sont comprises entre 0,0 et 1,0. Par exemple, si le rang de pourcentage de rétention est de 0,953, ce destinataire est plus susceptible de rester fidèle à la marque et moins susceptible de se désabonner que 95,3 % de tous les destinataires.
 
 >[!NOTE]
 >

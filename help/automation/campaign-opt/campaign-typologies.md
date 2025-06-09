@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Prise en main des typologies de campagne{#about-campaign-typologies}
 
-**Le module d’optimisation des campagnes** d’Adobe Campaign permet de contrôler, de filtrer et de surveiller l’envoi des diffusions. Pour éviter les conflits entre les campagnes, Adobe Campaign peut tester différentes combinaisons en appliquant des règles de contrainte spécifiques. Elles permettent de s’assurer que les messages envoyés répondent aux attentes et aux besoins des clients et des politiques de communication de l’entreprise.
+**Le module d’optimisation des campagnes** d’Adobe Campaign permet de contrôler, de filtrer et de surveiller l’envoi des diffusions. Pour éviter les conflits entre les campagnes, Adobe Campaign peut tester différentes combinaisons en appliquant des règles de contrainte spécifiques. Cela permet de s’assurer que les messages envoyés répondent aux attentes et aux besoins des clientes et clients et des politiques de communication de l’entreprise.
 
 ![](assets/do-not-localize/how-to-video.png) [Découvrez cette fonctionnalité en vidéo](#typologies-video)
 
@@ -79,11 +79,11 @@ Des exemples de cas d’utilisation des règles de typologie de pression sont di
 
 Cette vidéo explique comment implémenter la gestion de la fatigue dans Adobe Campaign en utilisant les règles de typologie.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448333?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/333787?quality=12)
 
 ### Configurer la gestion de la lassitude à l&#39;aide de filtres prédéfinis
 
 La gestion de la lassitude contrôle la fréquence et le nombre des messages afin d&#39;éviter une sollicitation excessive des destinataires. Si votre instance ne contient pas le module d&#39;optimisation de campagne, vous pouvez configurer un filtre prédéfini qui filtrera la population cible en fonction du nombre de messages reçus.
 Cette vidéo explique comment implémenter la gestion de la fatigue dans Adobe Campaign à l&#39;aide de filtres.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444602?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/333778?quality=12)

@@ -5,7 +5,8 @@ description: Découvrez comment configurer, concevoir et envoyer des e-mails qui
 feature: Email, Email Design
 role: User
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+exl-id: 02cca21f-b1ac-4ac2-9761-015f6c7f5567
+source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 97%
@@ -24,7 +25,7 @@ Pour qu&#39;un destinataire puisse recevoir correctement des messages dans l&#39
 
 Cependant, si vous laissez l&#39;option **[!UICONTROL Format des emails]** définie sur **[!UICONTROL Inconnu]**, **[!UICONTROL HTML]** ou **[!UICONTROL Texte]**, Adobe Campaign détectera automatiquement, lors de l&#39;envoi de l&#39;email, le format japonais à utiliser pour que le message s&#39;affiche correctement.
 
-Ce système de détection automatique repose sur la liste des domaines prédéfinis dans l&#39;ensemble de règles de mail **[!UICONTROL Gestion des formats des emails]**. Pour plus d&#39;informations sur la gestion des formats d&#39;email, consultez la documentation de Campaign Classic [&#128279;](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=fr#managing-email-formats).
+Ce système de détection automatique repose sur la liste des domaines prédéfinis dans l&#39;ensemble de règles de mail **[!UICONTROL Gestion des formats des emails]**. Pour plus d&#39;informations sur la gestion des formats d&#39;email, consultez la documentation de Campaign Classic [](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#managing-email-formats).
 
 ## Limites et recommandations {#limitations-and-recommendations}
 

@@ -8,7 +8,7 @@ exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
 source-git-commit: e465b846b3144a2138bb912b4baa09238f8c5b4c
 workflow-type: tm+mt
 source-wordcount: '1552'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -55,7 +55,7 @@ Pour créer votre **[!UICONTROL suite de rapports]** dans [!DNL Adobe Analytics]
 
 1. Sur la page **[!UICONTROL Responsable des suites de rapports]**, cliquez sur **[!UICONTROL Créer]**, puis sur **[!UICONTROL Suite de rapports]**.
 
-   Pour la procédure détaillée de création de **[!UICONTROL suites de rapports]**, consultez la [documentation Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=fr#prerequisites){target="_blank"}.
+   Pour connaître la procédure détaillée de création de **[!UICONTROL suite de rapports]**, consultez la [documentation Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=fr#prerequisites){target="_blank"}.
 
    ![](assets/analytics_connnector_3.png)
 
@@ -85,7 +85,7 @@ Après avoir créé votre **[!UICONTROL suite de rapports]**, vous devez configu
 
 1. Cliquez sur **[!UICONTROL Ajouter]** pour créer les identifiants nécessaires à la mesure de l&#39;impact de la campagne par e-mail, c&#39;est-à-dire le nom interne de la campagne (cid) et l&#39;identifiant de la table iNmsBroadlog (bid).
 
-   Pour découvrir comment modifier les **[!UICONTROL variables de conversion]**, consultez la [documentation Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=fr#admin-tools){target="_blank"}.
+   Pour savoir comment modifier les **[!UICONTROL variables de conversion]**, consultez cette [documentation Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=fr#admin-tools){target="_blank"}.
 
    ![](assets/analytics_connnector_6.png)
 
@@ -146,7 +146,7 @@ Pour plus d’informations, consultez la page [Profils de produit pour Adobe An
 
    >[!NOTE]
    >
-   >Les champs Identifiant de la campagne et Identifiant de la diffusion sont collectés via JavaScript sur la page de destination ou par le biais de règles de traitement. [En savoir plus sur les règles de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
+   >Les champs Identifiant de la campagne et Identifiant de la diffusion sont collectés via JavaScript sur la page de destination ou par le biais de règles de traitement. [En savoir plus sur les règles de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
 
    ![](assets/analytics_connnector_11.png)
 

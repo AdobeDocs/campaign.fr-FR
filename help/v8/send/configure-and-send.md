@@ -8,7 +8,7 @@ exl-id: 36033255-1e75-41c1-9816-126777f7330a
 source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
 source-wordcount: '1278'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Utilisez l’option **[!UICONTROL Tester la diffusion par SMTP]** pour tester la
 >
 >* Cette option ne doit pas être définie en midsourcing.
 >
->* En savoir plus sur la configuration du serveur SMTP dans [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=fr#smtp-relay){target="_blank"}.
+>* En savoir plus sur la configuration du serveur SMTP dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=fr#smtp-relay){target="_blank"}.
 
 ## Envoi en plusieurs vagues {#sending-using-multiple-waves}
 

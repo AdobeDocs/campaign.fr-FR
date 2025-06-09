@@ -56,7 +56,7 @@ Une fois la connexion OAuth en place, l’étape suivante consiste à créer une
 
    ![](assets/ac-lp-source.png){width="70%"}
 
-1. Configurez la connexion selon vos besoins. Des informations détaillées sur comment configurer la connexion API HTTP sont disponibles dans [Documentation sur les sources Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=fr){target="_blank"}.
+1. Configurez la connexion selon vos besoins. Des informations détaillées sur la configuration d’une connexion API HTTP sont disponibles dans la section [Documentation sur les sources Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=fr){target="_blank"}.
 
    À l’étape d’**[!UICONTROL Authentification]**, basculez sur l’option **[!UICONTROL Activer l’authentification]** pour vous authentifier à l’aide du jeton d’accès généré précédemment par le biais de l’intégration OAuth.
 
@@ -344,5 +344,5 @@ Voici un exemple d’une page de destination et d’une activité de code JavaSc
 ### Informations supplémentaires
 
 * [Configurer une activité de code JavaScript](../../automation/workflow/sql-code-and-javascript-code.md#javascript-code)
-* [Créer une page de destination](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=fr){target="_blank"}
+* [Créer une page de detination](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=fr){target="_blank"}
 * [Gérer les abonnements et les désabonnements](../start/subscriptions.md)

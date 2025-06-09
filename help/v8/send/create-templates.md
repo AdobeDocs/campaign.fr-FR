@@ -141,18 +141,18 @@ Cette action génère une diffusion dans le dossier associé au modèle. Le nom 
 
 La vidéo suivante montre comment configurer un modèle pour une diffusion ad hoc.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409245?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/342082?quality=12)
 
 ### Comment configurer les propriétés des modèles de diffusion
 
 La vidéo suivante montre comment définir les propriétés des modèles de diffusion et explique en détail chaque propriété.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443403?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/338969?quality=12)
 
 ### Comment déployer un modèle de diffusion ad hoc
 
 Cette vidéo montre comment déployer un modèle de diffusion email ad hoc. Elle explique aussi la différence entre une diffusion email et un workflow de diffusion.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444959?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
 
 D’autres vidéos pratiques sur Campaign sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=fr){target="_blank"}.

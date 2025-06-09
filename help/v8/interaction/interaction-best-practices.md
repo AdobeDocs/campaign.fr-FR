@@ -87,7 +87,7 @@ Toutefois, cela ne s&#39;applique qu&#39;aux interactions entrantes.
 
 Il est également possible de stocker des données supplémentaires dans la table des propositions si vous utilisez les interactions sortantes, ou les offres sortantes sans le module Interaction.
 
-Un champ de la table temporaire de workflow dont le nom correspond à celui d&#39;un champ de la table des propositions est copié dans le même champ de la table des propositions.
+Un champ de la table temporaire de workflow dont le nom correspond à celui d’un champ de la table des propositions est copié dans le même champ de la table des propositions.
 
 Par exemple, en cas de sélection manuelle d&#39;une offre (sans le module Interaction) dans une activité de workflow **Enrichissement**, les champs standard sont définis comme suit :
 

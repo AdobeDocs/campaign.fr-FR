@@ -8,7 +8,7 @@ exl-id: 98613a0a-7a6d-41a5-9541-e045d4ca318f
 source-git-commit: bc37a2a1075c7397f1656b38071dcae737043fb8
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
@@ -20,9 +20,9 @@ En tant qu’utilisateur ou utilisatrice de Campaign v8, vous avez accès à la
 
 **Liens utiles pour commencer :**
 
-* Découvrez les principales différences et la prise en main dans [ce guide d’adoption](https://experienceleague.adobe.com/fr/docs/campaign-web/acs-to-ac/home){target="_blank"}.
+* Découvrez les principales différences et comment commencer à utiliser [ce guide d’adoption](https://experienceleague.adobe.com/fr/docs/campaign-web/acs-to-ac/home){target="_blank"}.
 
-* Apprenez-en davantage sur la nouvelle interface d’utilisation d’Adobe Campaign Web dans [cette documentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=fr){target="_blank"}.
+* En savoir plus sur la nouvelle interface utilisateur web de Campaign dans [cette documentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=fr){target="_blank"}.
 
-* Pour faciliter votre transition, des fonctionnalités de Campaign Standard ont été ajoutées à Campaign v8. Ces fonctionnalités sont limitées aux clientes et aux clients effectuant la transition depuis Campaign Standard et sont présentées dans [cette documentation](https://experienceleague.adobe.com/fr/docs/experience-cloud/campaign/campaign-standard-migration-home){target="_blank"}.
+* Pour faciliter votre transition, des fonctionnalités de Campaign Standard ont été ajoutées à Campaign v8. Ces fonctionnalités sont limitées aux clients qui quittent Campaign Standard et sont décrites dans [cette documentation](https://experienceleague.adobe.com/fr/docs/experience-cloud/campaign/campaign-standard-migration-home){target="_blank"}.
 

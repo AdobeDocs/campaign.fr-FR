@@ -164,7 +164,7 @@ Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser
 
 >[!ENDTABS]
 
-## Paramètres avancés des notifications push {#push-advanced}
+## Paramètres avancés des notifications Push {#push-advanced}
 
 ### Options de son et pastille {#sound-badge}
 

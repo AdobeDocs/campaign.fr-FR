@@ -8,7 +8,7 @@ exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
 source-git-commit: 8d6c3e03f9b7533f7f325b755e3b6d4f74b63a8d
 workflow-type: tm+mt
 source-wordcount: '774'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -46,7 +46,7 @@ Avec Adobe Campaign, vous pouvez créer, configurer, exécuter et analyser tout
 
 ![](assets/calendar.png)
 
-Découvrez comment accéder aux campagnes marketing et les implémenter dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=fr){target="_blank"}.
+Découvrez comment accéder aux campagnes marketing et comment les implémenter dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=fr){target="_blank"}.
 
 ## Étapes clés pour bien démarrer{#gs-ac-start}
 
@@ -56,7 +56,7 @@ Les étapes clés permettant de créer une campagne marketing cross-canal sont l
 
    Définissez une hiérarchie, un planning et un budget, puis ajoutez des ressources et sélectionnez des opérateurs.
 
-   Découvrez comment créer un plan marketing et configurer des campagnes sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=fr){target="_blank"}.
+   Découvrez comment créer un plan marketing et configurer des campagnes dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=fr){target="_blank"}.
 
    Toutes les campagnes marketing sont basées sur un modèle qui stocke les principaux paramètres et fonctionnalités. Un modèle natif est fourni pour créer une opération pour laquelle aucune configuration spécifique n&#39;a été définie. Vous pouvez créer et configurer des modèles d&#39;opération, puis créer des opérations à partir de ces modèles.
 
@@ -86,7 +86,7 @@ Les étapes clés permettant de créer une campagne marketing cross-canal sont l
 
    Avec Adobe Campaign, vous pouvez mettre en place des processus collaboratifs de validation des principales étapes d’une campagne marketing. Pour chaque campagne, vous pouvez valider la cible de diffusion, le contenu et les coûts. Les opérateurs Adobe Campaign en charge de la validation peuvent être avertis par e-mail et peuvent accepter ou refuser la validation depuis la console ou via une connexion web.
 
-   Découvrez comment configurer et gérer les approbations sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=fr#campaign-orchestration?lang=fr){target="_blank"}.
+   Découvrez comment configurer et gérer les validations sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=fr#campaign-orchestration?lang=fr){target="_blank"}.
 
 
 ## Module complémentaire Marketing distribué{#distributed-marketing-add-on}
@@ -97,7 +97,7 @@ Adobe Campaign propose un module complémentaire **Marketing distribué** pour 
 >
 >Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-Découvrez comment configurer et utiliser les fonctionnalités du marketing distribué Campaign sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=fr){target="_blank"}.
+Découvrez comment configurer et utiliser les fonctionnalités du marketing distribué de Campaign dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=fr){target="_blank"}.
 
 ## Module complémentaire Gestion de la réaction{#response-manager-add-on}
 
@@ -107,4 +107,4 @@ Adobe Campaign propose un module complémentaire **Gestion de la réaction** qu
 >
 >Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-[](../assets/do-not-localize/book.png) Découvrez comment configurer et utiliser la Gestion de la réaction de Campaign dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=fr){target="_blank"}.
+[](../assets/do-not-localize/book.png) Découvrez comment configurer et utiliser la Gestion de la réaction de Campaign dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=fr){target="_blank"}.

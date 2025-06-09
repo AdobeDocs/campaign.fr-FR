@@ -8,7 +8,7 @@ exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1257'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -200,7 +200,7 @@ Les attributs vous permettent de définir les champs qui constituent votre objet
 
 La liste complète des attributs est disponible dans la section consacrée aux éléments `<attribute>` de la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=fr#content-model){target="_blank"}. Voici quelques-uns des attributs les plus utilisés : **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
 
-Pour plus d’informations sur chaque attribut, consultez la description des attributs dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=fr#configuring-campaign-classic){target="_blank"}.
+Pour plus d&#39;informations sur chaque attribut, consultez la description des attributs dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=fr#configuring-campaign-classic){target="_blank"}.
 
 ### Exemples {#examples}
 
@@ -268,7 +268,7 @@ Exemple d&#39;une jointure externe entre la table des destinataires et une table
 
 ## Journal d’audit {#audit-trail}
 
-Il peut être utile d&#39;ajouter à la fin de votre schéma un élément de suivi.
+Il peut être utile d’ajouter à la fin de votre schéma un élément de suivi (Journal d’audit).
 
 Procédez comme dans l&#39;exemple ci-dessous pour inclure les champs relatifs à la date de création, à l&#39;utilisateur qui a créé la donnée, à la date et à l&#39;auteur de la dernière modification pour toutes les données de votre table :
 

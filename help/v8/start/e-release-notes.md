@@ -10,7 +10,7 @@ exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
 source-git-commit: 9ce5acd97e077105316c81029e3ccbc6fa4389dc
 workflow-type: tm+mt
 source-wordcount: '290'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -27,7 +27,7 @@ _3 septembre 2024_
 >
 >Cette version est en **disponibilité limitée** (LA). Elle est limitée aux personnes effectuant la migration **depuis Adobe Campaign Standard vers Adobe Campaign v8** et ne peut pas être déployée dans un autre environnement.
 >
->Si vous êtes un utilisateur ou une utilisatrice de Campaign Standard et que vous passez à Campaign v8, apprenez-en plus sur cette transition dans la [documentation sur l’interface d’utilisation d’Adobe Campaign Web v8](https://experienceleague.adobe.com/docs/campaign-web/v8/start/acs-migration.html?lang=fr){target="_blank"}.
+>En tant qu’utilisateur Campaign Standard passant à Campaign v8, apprenez-en davantage sur cette transition dans la [documentation de l’interface utilisateur web de Campaign v8](https://experienceleague.adobe.com/docs/campaign-web/v8/start/acs-migration.html?lang=fr){target="_blank"}.
 
 ### Nouvelles fonctionnalités {#new-8-7-2}
 

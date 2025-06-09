@@ -12,7 +12,7 @@ ht-degree: 66%
 
 # Notes de mise à jour 2025 {#2025-rn}
 
-Cette page répertorie les nouvelles fonctionnalités, améliorations et correctifs des **versions** 2025 Campaign v8. Les dernières versions sont répertoriées sur [cette page](release-notes.md).
+Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs des versions **2025 de Campaign v8**. Les dernières versions sont répertoriées dans [cette page](release-notes.md).
 
 >[!BEGINSHADEBOX]
 
@@ -26,19 +26,19 @@ Cette page répertorie les nouvelles fonctionnalités, améliorations et correct
 
 ## Version 8.7.3 {#release-8-7-3}
 
-_Fév 14, 2025_
+_14 février 2025_
 
 >[!AVAILABILITY]
 >
 >Cette version est en **disponibilité limitée** (LA). Elle est limitée aux personnes effectuant la migration **depuis Adobe Campaign Standard vers Adobe Campaign v8** et ne peut pas être déployée dans un autre environnement.
 >
->En tant qu’utilisateur Campaign Standard en transition vers Campaign v8, apprenez-en plus sur cette transition dans [Campaign documentation](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/acs-migration){target="_blank"} de l’interface utilisateur Web v8.
+>En tant qu’utilisateur Campaign Standard passant à Campaign v8, apprenez-en davantage sur cette transition dans la [documentation de l’interface utilisateur web de Campaign v8](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 
 ### Nouvelles fonctionnalités {#features-8-7-3}
 
-* **Rapports dynamiques pour les messages** transactionnels - Vous pouvez désormais surveiller vos messages transactionnels dans l’interface utilisateur des rapports dynamiques. Ces rapports permettent au spécialiste du marketing de visualiser en temps réel toutes les métriques de reporting et les dimensions des messages transactionnels, la répartition des diffusions envoyées via un modèle. [En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-cloud/campaign/reporting/get-started-reporting){target="_blank"}
+* **Rapports dynamiques pour les messages transactionnels** - Vous pouvez désormais surveiller vos messages transactionnels dans l’interface utilisateur des rapports dynamiques. Ces rapports permettent au professionnel du marketing de visualiser toutes les mesures et dimensions de rapports des messages transactionnels, ainsi que la répartition des diffusions envoyées via un modèle en temps réel. [En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-cloud/campaign/reporting/get-started-reporting){target="_blank"}
 
-* **API REST des messages transactionnels : les** API transactionnelles basées sur un événement sont désormais disponibles pour les emails. [En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-cloud/campaign/apis/managing-transactional-messages){target="_blank"}
+* **API REST de messagerie transactionnelle** - Les API transactionnelles basées sur un événement sont désormais disponibles pour les e-mails. [En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-cloud/campaign/apis/managing-transactional-messages){target="_blank"}
 
 ### Correctifs {#fixes-8-7-3}
 
@@ -54,7 +54,7 @@ _3 septembre 2024_
 >
 >Cette version est en **disponibilité limitée** (LA). Elle est limitée aux personnes effectuant la migration **depuis Adobe Campaign Standard vers Adobe Campaign v8** et ne peut pas être déployée dans un autre environnement.
 >
->En tant qu’utilisateur Campaign Standard en transition vers Campaign v8, apprenez-en plus sur cette transition dans [Campaign documentation](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/acs-migration){target="_blank"} de l’interface utilisateur Web v8.
+>En tant qu’utilisateur Campaign Standard passant à Campaign v8, apprenez-en davantage sur cette transition dans la [documentation de l’interface utilisateur web de Campaign v8](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 
 ### Nouvelles fonctionnalités {#new-8-7-2}
 

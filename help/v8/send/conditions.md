@@ -86,4 +86,4 @@ Découvrez dans l’exemple ci-dessous comment créer un e-mail multilingue. Le 
 
 Découvrez comment ajouter du contenu conditionnel à une diffusion en prenant pour exemple une newsletter multilingue.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446713?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/335682?quality=12)
