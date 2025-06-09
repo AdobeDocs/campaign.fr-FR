@@ -70,4 +70,4 @@ Les variables suivantes sont des variables internes qui peuvent être utilisées
 Découvrez les différents types de contenu dynamique et apprenez à créer et à appliquer des blocs de personnalisation et des instructions conditionnelles à une diffusion.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/335734?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3452868?quality=12&captions=fre_fr)
