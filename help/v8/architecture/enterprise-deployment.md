@@ -98,7 +98,7 @@ Un workflow technique spécifique gère la réplication des tables qui doivent �
 >[!NOTE]
 >
 > Plusieurs politiques de réplication ont été créées en fonction de la taille de la table (XS, XL, etc.).
-> > Certaines tables sont répliquées en temps réel tandis que d&#39;autres le sont toutes les heures. Certaines tables disposeront de mises à jour incrémentielles tandis que d&#39;autres bénéficieront d&#39;une mise à jour complète.
+> &#x200B;> Certaines tables sont répliquées en temps réel tandis que d&#39;autres le sont toutes les heures. Certaines tables disposeront de mises à jour incrémentielles tandis que d&#39;autres bénéficieront d&#39;une mise à jour complète.
 >
 
 [En savoir plus sur la réplication des données](replication.md)

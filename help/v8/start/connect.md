@@ -126,7 +126,7 @@ Depuis Campaign v8.6, vous avez accès à la nouvelle **interface utilisateur 
 
 Découvrez comment vous connecter à Adobe Experience Cloud et accéder à l’interface d’Adobe Campaign Web [dans cette page](campaign-ui.md#ac-web-ui).
 
-Pour en savoir plus, consultez la documentation de l’interface utilisateur web d’Adobe Campaign [](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+Pour en savoir plus, consultez la documentation de l’interface utilisateur web d’Adobe Campaign [&#128279;](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 ### Accès web {#web-access}
 

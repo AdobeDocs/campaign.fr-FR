@@ -131,7 +131,7 @@ The mobile app push credential registration is required to authorize Adobe to se
 
 ## Configurer une propriété de balise mobile dans la collecte de données Adobe Experience Platform {#launch-property}
 
-La configuration d’une propriété mobile permet aux développeurs et développeuses d’applications mobiles ou aux spécialistes du marketing de configurer les SDK mobiles. En règle générale, vous créez une propriété mobile pour chaque application mobile que vous souhaitez gérer. Découvrez comment créer et configurer une propriété mobile dans la documentation de Adobe Experience Platform Mobile SDK [](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
+La configuration d’une propriété mobile permet aux développeurs et développeuses d’applications mobiles ou aux spécialistes du marketing de configurer les SDK mobiles. En règle générale, vous créez une propriété mobile pour chaque application mobile que vous souhaitez gérer. Découvrez comment créer et configurer une propriété mobile dans la documentation de Adobe Experience Platform Mobile SDK [&#128279;](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
 <!--
 To get the SDKs needed for push notification to work you will need the following SDK extensions, for both Android and iOS:
 
@@ -281,6 +281,6 @@ Cette extension, qui s’applique à la fois à Campaign Classic v7 et Campaig
 1. Ouvrez la propriété de balise que vous avez créée précédemment.
 1. Dans le volet de navigation de gauche, accédez à **Extensions**, puis ouvrez l’onglet **Catalogue**. Utilisez le champ de recherche pour rechercher l’extension **Adobe Campaign Classic**.
 1. Dans la vignette Campaign Classic, cliquez sur le bouton **Installer**.
-1. Saisissez les paramètres comme décrit dans la documentation de Adobe Experience Platform Mobile SDK [](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/){target="_blank"}.
+1. Saisissez les paramètres comme décrit dans la documentation de Adobe Experience Platform Mobile SDK [&#128279;](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/){target="_blank"}.
 
-Vous pouvez maintenant ajouter Campaign à votre application, comme indiqué dans la documentation de Adobe Experience Platform Mobile SDK [](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}.
+Vous pouvez maintenant ajouter Campaign à votre application, comme indiqué dans la documentation de Adobe Experience Platform Mobile SDK [&#128279;](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}.

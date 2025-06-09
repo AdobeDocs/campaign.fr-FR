@@ -38,7 +38,7 @@ Les systèmes d’exploitation et le navigateur ci-après sont nécessaires pour
 
 * **Microsoft Edge**
 
-* Dernière version de **Microsoft Edge WebView2**. Téléchargez-le à partir du site du développeur de Microsoft [](http://www.adobe.com/go/acc-ms-webview2-runtime-download_fr){target="_blank"}.
+* Dernière version de **Microsoft Edge WebView2**. Téléchargez-le à partir du site du développeur de Microsoft [&#128279;](http://www.adobe.com/go/acc-ms-webview2-runtime-download_fr){target="_blank"}.
 
 ## Connecteurs CRM {#CRMconnectors}
 
