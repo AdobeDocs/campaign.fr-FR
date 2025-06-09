@@ -34,7 +34,7 @@ Avec les pages de destination, vous pouvez :
 * Offrez à vos destinataires la possibilité de se désabonner de la réception de vos communications.
 
 
-En savoir plus sur les landing pages dans la [documentation de l’interface utilisateur web de Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}.
+En savoir plus sur les landing pages dans la [documentation de l’interface utilisateur web de Campaign](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}.
 
 Vous pouvez également parcourir les sections suivantes :
 

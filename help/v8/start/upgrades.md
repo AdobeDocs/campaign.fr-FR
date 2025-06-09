@@ -62,7 +62,7 @@ Les nouvelles versions et les modifications qu’elles apportent sont répertori
 
 Pour être informé des nouvelles versions de la solution Experience Cloud et de leur contenu, abonnez-vous à la communication [Mises à jour de produit prioritaires d’Adobe](https://www.adobe.com/fr/subscription/priority-product-update.html){target="_blank"}.
 
-Vous pouvez également consulter [Communauté Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&amp;sort=date&amp;order=desc&amp;filters=adobe-campaign-classic-community&amp;topic=Campaign+v8){target="_blank"} pour être informé des mises à jour des versions.
+Vous pouvez également consulter [Communauté Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?profile.language=fr&style=all&amp;sort=date&amp;order=desc&amp;filters=adobe-campaign-classic-community&amp;topic=Campaign+v8){target="_blank"} pour être informé des mises à jour des versions.
 
 
 ### Pourquoi mon entreprise a-t-elle besoin d’une mise à niveau ? {#upgrades-1}
