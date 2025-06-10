@@ -6,10 +6,10 @@ role: User
 level: Beginner, Intermediate
 exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: 567ca1cd8fa6e4f03c8871488152710753ea02f1
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 100%
+source-wordcount: '717'
+ht-degree: 98%
 
 ---
 
@@ -21,8 +21,8 @@ Une vue est un dossier spécifique qui ne contient aucune donnée, mais affiche 
 
 
 >[!NOTE]
->Pour distinguer les vues des dossiers standard, leur nom s&#39;affiche en bleu clair et non en noir.
 >
+>Pour distinguer les vues des dossiers standard, leur nom s&#39;affiche en bleu clair et non en noir.
 
 Notez que vous pouvez attribuer des autorisations aux dossiers pour restreindre l&#39;accès à certaines données. [En savoir plus](#restrict-access-to-a-folder)
 
@@ -52,14 +52,19 @@ Pour créer un autre type de dossier, cliquez avec le bouton droit de la souris 
 ![](assets/add-new-folder.png)
 
 >[!CAUTION]
->Ces modifications s&#39;appliquent à tous les utilisateurs de Campaign.
 >
+>Ces modifications s&#39;appliquent à tous les utilisateurs de Campaign.
 
 ## Transformer un dossier en vue{#turn-a-folder-to-a-view}
 
 Une vue est un dossier spécifique qui ne contient aucune donnée, mais affiche des données physiquement stockées dans d&#39;autres dossiers du même type.
 
 Vous pouvez transformer n&#39;importe quel dossier en vue, mais le dossier doit être vide. Toutes les données stockées dans le dossier sont supprimées lorsque vous convertissez le dossier en vue.
+
+>[!IMPORTANT]
+>
+>Les dossiers prêts à l’emploi ne doivent pas être transformés en vue.
+
 
 >[!CAUTION]
 >
