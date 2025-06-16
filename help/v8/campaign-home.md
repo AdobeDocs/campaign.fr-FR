@@ -3,7 +3,7 @@ keywords: Campaign Classic;accueil;thèmes populaires
 description: Centre d'aide de Campaign v8
 title: Documentation du produit Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 82622a4517356eaba1f7eba23d4b3050d8ca37c9
+source-git-commit: 9187ac7fd0d17a6dc28c3b6564913bcd93e45943
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 92%
@@ -18,11 +18,11 @@ Découvrez les dernières améliorations apportées à Adobe Campaign v8 (cons
 
 >[!BEGINTABS]
 
->[!TAB La version 8.6.4 de Campaign est en ligne]
+>[!TAB La version 8.6.5 de Campaign est en ligne]
 
 La dernière version d’Adobe Campaign est désormais en ligne. Pour plus d’informations, lisez les notes de mise à jour.
 
-[![image](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md#release-8-6-4)
+[![image](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md#release-8-6-5)
 
 
 >[!TAB Nouvelle interface utilisateur web de Campaign]
