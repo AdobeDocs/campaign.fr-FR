@@ -111,7 +111,7 @@ Par exemple, si la période de validité est définie sur la valeur par défaut 
 
 Une fois qu’un message figure dans la file d’attente du MTA depuis 3,5 jours et qu’il n’a pas été diffusé, il expire et son statut est mis à jour de **[!UICONTROL Envoi]** à **[!UICONTROL Échec]** dans les logs de diffusion.
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#defining-validity-period){target="_blank"}.-->
 
 
 ## Types d&#39;erreur e-mail {#email-error-types}
