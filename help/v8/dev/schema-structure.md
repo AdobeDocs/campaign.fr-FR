@@ -6,7 +6,7 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
 source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1400'
 ht-degree: 100%
 
@@ -215,7 +215,7 @@ La valeur doit être une expression conforme au langage XPath. Pour plus d&#39;i
   >
   >Dans la console cliente Adobe Campaign, le nœud **[!UICONTROL Administration>Compteurs]** permet de gérer les compteurs.
 
-Pour lier une valeur par défaut à un champ, vous pouvez utiliser le `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
+Pour lier une valeur par défaut à un champ, vous pouvez utiliser le `<default>  or  <sqldefault>   field.  </sqldefault> </default>`.
 
 `<default>` : vous permet de préremplir le champ avec une valeur par défaut lors de la création d’entités. La valeur ne sera pas une valeur SQL par défaut.
 

@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: 89a4ab6c-de8e-4408-97d2-8b8e574227f9
 source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '375'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Cette page répertorie les problèmes connus identifiés dans les **dernières v
 >
 >Adobe publie cette liste de problèmes connus à sa seule discrétion. Cette liste est établie en fonction du nombre de rapports de clients, la gravité et la disponibilité d’une solution de contournement. Si un problème que vous rencontrez n’est pas répertorié, il se peut qu’il ne réponde pas aux critères de publication sur cette page.
 
-## Campaign v8.3.8{#8.3-issues}
+## Campaign v8.3.8{#8.3-issues}
 
 ### Problème lié à l’activité Modifier la source de données {#issue-2}
 
@@ -84,7 +84,7 @@ Le processus ne se termine jamais.
 
 La solution de contournement consiste à utiliser une ancienne console cliente. Cela vous permettra de télécharger le fichier sur le serveur.
 
-En tant qu’administrateur ou administratrice Campaign, vous pouvez télécharger la console cliente Campaign v8.3.1 à partir de la [distribution logicielle Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/fr/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target="_blank"}.
+En tant qu’administrateur ou administratrice Campaign, vous pouvez télécharger la console cliente Campaign v8.3.1 à partir de la [Distribution logicielle Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/fr/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=4){target="_blank"}.
 
 Découvrez comment accéder à la distribution logicielle Adobe [sur cette page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr){target="_blank"}.
 

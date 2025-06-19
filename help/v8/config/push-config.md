@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
 source-git-commit: a288845e1f092d293d679fa9aaaf6d609de85230
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1232'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ En tant qu&#39;administrateur de Campaign, vous pouvez télécharger les SDK Cam
 
 >[!NOTE]
 >
->Vous pouvez également utiliser le SDK mobile Adobe Experience Platform en configurant l’extension Adobe Campaign dans l’interface utilisateur de collecte de données. [En savoir plus dans la documentation pour les développeurs](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+>Vous pouvez également utiliser le SDK mobile Adobe Experience Platform en configurant l’extension Adobe Campaign dans l’interface utilisateur de collecte de données. [En savoir plus dans la documentation pour l’équipe de développement](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 >
 
 ## Déclaration des paramètres d&#39;intégration {#declaring-integration-settings}
@@ -498,7 +498,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
    Pour les messages de notification, la réception du suivi doit être paramétrée à deux niveaux :
 
    * `onMessageReceived` (application non en arrière-plan) : la mise en œuvre a été effectuée dans la section précédente.
-   * `onCreate` de l&#39;activité de lancement (ou de l&#39;activité ciblée si la fonction `click_action` est utilisée) (Application non en arrière-plan).
+   * `onCreate` de l’activité de lancement (ou de l’activité ciblée si la fonction `click_action` est utilisée). (L’application n’est pas en arrière-plan.)
 
    Elle doit être effectuée au même moment que le suivi des clics/ouvertures.
 

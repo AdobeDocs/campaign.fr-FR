@@ -7,13 +7,13 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 27d13642-2971-466b-818d-39328c198b14
 source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1087'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Joindre des fichiers à un email {#attaching-files}
+# Joindre des fichiers à un e-mail{#attaching-files}
 
 ## À propos des pièces jointes à un email {#about-email-attachments}
 
@@ -21,7 +21,7 @@ Vous pouvez joindre un ou plusieurs fichiers à une diffusion d’email.
 
 >[!NOTE]
 >
->Pour éviter tout problème de performances, il est recommandé de ne pas inclure plusieurs pièces jointes par email. Le seuil recommandé peut être configuré à partir de la liste des options de Campaign. Consultez la documentation de [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=fr#delivery).
+>Pour éviter tout problème de performances, il est recommandé de ne pas inclure plusieurs pièces jointes par email. Le seuil recommandé peut être configuré à partir de la liste des options de Campaign. Reportez-vous à la [documentation de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=fr#delivery).
 
 Deux cas se présentent :
 
@@ -30,7 +30,7 @@ Deux cas se présentent :
 
 >[!NOTE]
 >
->Ce type de configuration est généralement réalisé dans les modèles de diffusion. Pour en savoir plus à ce sujet, consultez la documentation de [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr).
+>Ce type de configuration est généralement réalisé dans les modèles de diffusion. Consultez à ce sujet la [documentation de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr).
 
 ## Mécanismes de sécurisation {#attachments-guardrails}
 
@@ -38,7 +38,7 @@ Pour éviter des problèmes de performances, les images incluses dans les e-mail
 
 Adobe recommande également de limiter la taille et le nombre de fichiers joints. Par défaut, vous ne pouvez ajouter qu’un seul fichier en tant que pièce jointe à un e-mail. Ce seuil peut être configuré à partir de l’option `NmsDelivery_MaxRecommendedAttachments`.
 
-Pour en savoir plus, consultez la liste des options de Campaign dans la documentation de [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=fr#delivery).
+Pour en savoir plus, consultez la liste des options de Campaign dans la [documentation de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=fr#delivery).
 
 ## Joindre un fichier local {#attaching-a-local-file}
 

@@ -4,9 +4,9 @@ description: Liste des fonctionnalités et améliorations des versions 2024 de C
 feature: Release Notes
 exl-id: 6a0a9486-19a9-4ec3-9030-48dbf419f45f
 source-git-commit: 57b18835b87be2a201ce23f5b6053266d13b9cb8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1308'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ Cette page répertorie les nouvelles fonctionnalités, les améliorations et les
 
 **Dans cette page**
 
-* Campaign v8.7 - [Version 8.7.1](#release-8-7-1)
-* Campaign v8.6 - [Version 8.6.1](#release-8-6-1) | [Version 8.6.2](#release-8-6-2) | [Version 8.6.3](#release-8-6-3)
-* Campaign v8.5 - [version 8.5.3](#release-8-5-3)
+* Campaign v8.7 - [Version 8.7.1](#release-8-7-1)
+* Campaign v8.6 - [Version 8.6.1](#release-8-6-1) | [Version 8.6.2](#release-8-6-2) | [Version 8.6.3](#release-8-6-3)
+* Campaign v8.5 - [Version 8.5.3](#release-8-5-3)
 
 >[!ENDSHADEBOX]
 
@@ -34,7 +34,7 @@ _2 mai 2024_
 >
 >Cette version est en **disponibilité limitée** (LA). Elle est limitée aux personnes effectuant la migration **depuis Adobe Campaign Standard vers Adobe Campaign v8** et ne peut pas être déployée dans un autre environnement.
 >
->En tant qu’utilisateur Campaign Standard passant à Campaign v8, apprenez-en davantage sur cette transition dans la [documentation de l’interface utilisateur web de Campaign v8](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
+>Si vous êtes un utilisateur ou une utilisatrice de Campaign Standard et que vous passez à Campaign v8, apprenez-en plus sur cette transition dans la [documentation sur l’interface d’utilisation d’Adobe Campaign Web v8](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 
 ### Nouvelles fonctionnalités {#new-8-7-1}
 
@@ -48,14 +48,14 @@ _2 mai 2024_
 
 ### Mises à jour de compatibilité {#comp-8-7-1}
 
-Les connecteurs FDA suivants ont été ajoutés. Voir cette [page](compatibility-matrix.md#FederatedDataAccessFDA).
+Les connecteurs FDA suivants ont été ajoutés. Consultez cette [page](compatibility-matrix.md#FederatedDataAccessFDA).
 
-* Databricks est désormais pris en charge en tant que base de données externe avec Adobe Campaign Federated Data Access (FDA).
+* Databricks est désormais pris en charge en tant que base de données externe avec Adobe Campaign Federated Data Access (FDA).
 
-* Un nouveau connecteur ODBC FDA Amazon Redshift est désormais disponible. Elle offre une meilleure connectivité, une maintenance plus facile et une meilleure compatibilité. Cette nouvelle version apporte les améliorations suivantes :
+* Un nouveau connecteur ODBC FDA Amazon Redshift est désormais disponible. Il offre une connectivité améliorée, une maintenance plus facile et une meilleure compatibilité. Cette nouvelle version apporte les améliorations suivantes :
 
    * Le nouveau connecteur repose sur l’interface ODBC qui s’aligne sur nos connecteurs FDA les plus récents. Cela garantit une prise en charge à long terme.
-   * Il introduit également un nouveau mécanisme de chargement de données à l’aide d’intervalles s3, ce qui améliore considérablement les performances.
+   * Il introduit également un nouveau mécanisme de chargement de données à l’aide de compartiments s3, ce qui améliore considérablement les performances.
 
   Le connecteur hérité peut toujours être utilisé. Si vous souhaitez tester la nouvelle version, contactez votre représentant ou représentante Adobe.
 
@@ -63,7 +63,7 @@ Les connecteurs FDA suivants ont été ajoutés. Voir cette [page](compatibility
 
 À compter de cette version, les informations d’identification du compte de service (JWT) étant abandonnées par Adobe, les intégrations sortantes de Campaign aux solutions et applications d’Adobe dépendent désormais des informations d’identification OAuth serveur à serveur. Adobe effectuera la migration JWT vers OAuth pour vos intégrations sortantes, telles que l’intégration Campaign-Analytics ou Triggers Experience Cloud.
 
-Si vous avez implémenté des intégrations entrantes avec Campaign, vous devez migrer votre compte technique comme indiqué dans [cette documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}. Les informations d’identification de compte de service (JWT) existantes continueront à fonctionner jusqu’au **30 juin 2025**.
+Si vous avez implémenté des intégrations entrantes pour Campaign, vous devez migrer votre compte technique comme décrit dans [cette documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}. Les informations d’identification de compte de service (JWT) existantes continueront à fonctionner jusqu’au **30 juin 2025**.
 
 ### Améliorations générales {#improvements-8-7-1}
 
@@ -106,7 +106,7 @@ https://jira.corp.adobe.com/issues/?filter=585288&jql=fixVersion%20%3D%208.6.3%2
 -->
 
 
-## Mises à jour de mai 2024 {#may-updates}
+## Mises à jour de mai 2024 {#may-updates}
 
 La modification suivante a été publiée en mai et est désormais disponible pour les utilisateurs et utilisatrices de Campaign v8 :
 
@@ -126,13 +126,13 @@ Cette version corrige le problème suivant :
 
 _14 février 2024_
 
-### Nouveautés {#new-8-6-1}
+### Nouvelles fonctionnalités {#new-8-6-1}
 
 * À compter de cette version, vous avez accès à la nouvelle **interface utilisateur web de Campaign**, disponible via l’environnement central Adobe Experience Cloud. Experience Cloud est la famille intégrée d’applications, de produits et de services de marketing numérique d’Adobe. Grâce à son interface intuitive, vous pouvez accéder rapidement à vos applications cloud, fonctionnalités de produit et services. Découvrez comment vous connecter à Adobe Experience Cloud et accéder à l’interface d’Adobe Campaign Web [dans cette page](campaign-ui.md#ac-web-ui).
 
   >[!AVAILABILITY]
   >
-  >L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs qui se connectent à Adobe Campaign avec leur Adobe ID. En savoir plus sur [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
+  >L’interface d’utilisation de Campaign Web n’est disponible que pour les utilisateurs et utilisatrices qui se connectent à Adobe Campaign avec leur Adobe ID. En savoir plus sur [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
   >
 
 * Adobe Campaign v8 s’intègre désormais à **Adobe Experience Manager as a Cloud Service**, la création étant exclusivement possible via l’interface utilisateur web d’Adobe Campaign. [En savoir plus](../connect/ac-aem.md)

@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Envoyer des e-mails sur des mobiles japonais avec Adobe Campaign
+title: Envoyer des e-mails sur des mobiles japonais avec Adobe Campaign
 description: Découvrez comment configurer, concevoir et envoyer des e-mails qui seront lus sur un mobile japonais
 feature: Email, Email Design
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 02cca21f-b1ac-4ac2-9761-015f6c7f5567
 source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '766'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Envoi dʼe-mails sur mobiles japonais {#sending-emails-on-japanese-mobiles}
+# Envoyer des e-mails sur des mobiles japonais {#sending-emails-on-japanese-mobiles}
 
 ## Formats d&#39;email pour les mobiles japonais {#email-formats-for-japanese-mobiles}
 
@@ -25,7 +25,7 @@ Pour qu&#39;un destinataire puisse recevoir correctement des messages dans l&#39
 
 Cependant, si vous laissez l&#39;option **[!UICONTROL Format des emails]** définie sur **[!UICONTROL Inconnu]**, **[!UICONTROL HTML]** ou **[!UICONTROL Texte]**, Adobe Campaign détectera automatiquement, lors de l&#39;envoi de l&#39;email, le format japonais à utiliser pour que le message s&#39;affiche correctement.
 
-Ce système de détection automatique repose sur la liste des domaines prédéfinis dans l&#39;ensemble de règles de mail **[!UICONTROL Gestion des formats des emails]**. Pour plus d&#39;informations sur la gestion des formats d&#39;email, consultez la documentation de Campaign Classic [&#128279;](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=fr#managing-email-formats).
+Ce système de détection automatique repose sur la liste des domaines prédéfinis dans l&#39;ensemble de règles de mail **[!UICONTROL Gestion des formats des emails]**. Pour plus d’informations sur la gestion des formats d’e-mail, reportez-vous à la [documentation de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=fr#managing-email-formats).
 
 ## Limites et recommandations {#limitations-and-recommendations}
 
@@ -78,7 +78,7 @@ Par exemple, vous pouvez remplacer l&#39;adresse d&#39;un profil par test@softba
 
 ![](assets/deco-mail_05.png)
 
-## Envoi de messages {#sending-messages}
+## Envoyer des messages {#sending-messages}
 
 Pour envoyer une diffusion à des destinataires dont le format des emails est japonais, vous pouvez procéder de deux manières :
 

@@ -7,7 +7,7 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
 source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1319'
 ht-degree: 100%
 
@@ -159,7 +159,7 @@ En parcourant le calendrier, vous pouvez également créer un programme ou une c
 Lorsque vous créez une campagne à partir de l’onglet **[!UICONTROL Planning]** d’un programme, la campagne est automatiquement rattachée au programme concerné. Le champ **[!UICONTROL Programme]** est alors masqué.
 
 
-## Utiliser l&#39;interface web {#use-the-web-interface-}
+## Utiliser l’interface web {#use-the-web-interface-}
 
 Vous pouvez accéder aux écrans de la console cliente Adobe Campaign à partir d’un navigateur Internet afin de visualiser l’ensemble des campagnes et diffusions, ainsi que les rapports et informations relatifs aux profils de votre base de données. Cet accès ne permet pas la création d’enregistrements. En fonction des droits de l’opérateur ou de l’opératrice, vous pouvez afficher et/ou agir sur les données présentes dans la base de données. Vous pouvez par exemple approuver le contenu et le ciblage d’une campagne, relancer ou arrêter une diffusion, etc.
 
@@ -208,4 +208,4 @@ Vous pouvez également utiliser le lien contenu dans les messages de notificatio
 
 Cette vidéo explique comment créer un plan marketing, des programmes et des campagnes.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449897?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)

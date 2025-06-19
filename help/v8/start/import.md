@@ -7,9 +7,9 @@ level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 version: Campaign v8, Campaign Classic v7
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4360'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,11 +44,11 @@ Adobe Campaign vous permet d&#39;importer des données dans la base de données
 
 L’assistant d’import vous permet de configurer un import, de définir ses options (comme la transformation de données) et de lancer son exécution. Il s’agit d’une série d’écrans dont le contenu dépend du type d’import (simple ou multiple) et des droits de l’opérateur ou de l’opératrice.
 
-L’assistant d’importation s’affiche après la création d’une tâche d’importation.
+L’assistant d’import s’affiche après la création d’un traitement d’import.
 
 >[!NOTE]
 >
->Si vous utilisez un serveur web IIS, un paramétrage peut-être nécessaire afin d&#39;autoriser le téléchargement de gros fichiers (> 28 Mo).
+>Si vous utilisez un serveur web IIS, un paramétrage peut-être nécessaire afin d’autoriser le chargement de gros fichiers (> 28 Mo).
 
 #### Fichier source {#source-file}
 
@@ -104,7 +104,7 @@ Le lien **[!UICONTROL Paramètres avancés...]** permet d&#39;accéder aux optio
 
    * **[!UICONTROL Ne pas mettre à jour les énumérations]**
 
-     Sélectionnez cette option pour ne pas enrichir la liste des valeurs énumérées dans la base de données.
+     Cochez cette option pour ne pas enrichir la liste des valeurs énumérées dans la base de données.
 
 * Onglet **[!UICONTROL Variables]**
 
@@ -310,7 +310,7 @@ L’étape suivante de l’assistant d’import permet de choisir ou créer le d
 
       >[!NOTE]
       >
-      >Le dossier par défaut de l&#39;opérateur correspond au premier dossier dans lequel l&#39;opérateur a le droit d&#39;écrire. En savoir plus dans [Gestion des dossiers et des vues](../audiences/folders-and-views.md).
+      >Le dossier par défaut de l&#39;opérateur correspond au premier dossier dans lequel l&#39;opérateur a le droit d&#39;écrire. En savoir plus dans la section [Gérer les dossiers et vues](../audiences/folders-and-views.md).
 
       Pour choisir le dossier d&#39;import, cliquez sur la flèche située à droite du champ **[!UICONTROL Dossier]** et sélectionnez le dossier visé. Vous pouvez également utiliser l&#39;icône **[!UICONTROL Choisir le lien]** pour afficher l&#39;arborescence dans une nouvelle fenêtre ou créer un nouveau dossier.
 
@@ -330,7 +330,7 @@ L’étape suivante de l’assistant d’import permet de choisir ou créer le d
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      Vous pouvez créer une nouvelle liste pour ces destinataires en cliquant sur **[!UICONTROL Sélectionner le lien]**, puis **[!UICONTROL Créer]**.
+      Vous pouvez créer une liste pour ces destinataires en cliquant sur **[!UICONTROL Choisir le lien]**, puis sur **[!UICONTROL Créer]**.
 
       ![](assets/s_ncs_user_import_wizard05_6.png)
 
@@ -338,7 +338,7 @@ L’étape suivante de l’assistant d’import permet de choisir ou créer le d
 
    1. Abonner à un service
 
-      Pour abonner tous les destinataires importés à un service d&#39;information, cliquez sur le lien **[!UICONTROL Editer...]** **&#x200B;**&#x200B;Vous pouvez sélectionner l&#39;option **[!UICONTROL Envoyer un message de confirmation]** : le contenu de ce message est défini dans le modèle de diffusion associé au service d&#39;abonnement.
+      Pour abonner tous les destinataires importés à un service d&#39;information, cliquez sur le lien **[!UICONTROL Editer...]** **** Vous pouvez sélectionner l&#39;option **[!UICONTROL Envoyer un message de confirmation]** : le contenu de ce message est défini dans le modèle de diffusion associé au service d&#39;abonnement.
 
       ![](assets/s_ncs_user_import_wizard05_7.png)
 
@@ -354,17 +354,17 @@ La dernière étape de l’assistant permet de lancer l’import des données. P
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
-Vous pouvez ensuite surveiller l’exécution de la tâche d’importation (voir [Surveillance d’exécution des workflows](../../automation/workflow/monitor-workflow-execution.md)).
+Vous pouvez ensuite surveiller l’exécution du traitement d’import (consultez [Surveillance de l’exécution des workflows](../../automation/workflow/monitor-workflow-execution.md)).
 
 ### Exporter des données
 
-Les traitements d&#39;export vous permettent d&#39;accéder à la base de données et d&#39;en extraire les données : contacts, clients, listes, segments, etc.
+Les traitements d’export vous permettent d’accéder à la base de données et d’en extraire les données : contacts, clientes et clients, listes, segments, etc.
 
-Il peut, par exemple, être utile d&#39;exploiter dans un tableur les données de suivi d&#39;une campagne (historique de tracking, etc.). Les données de sortie peuvent être au format txt, CSV, TAB ou XML.
+Il peut, par exemple, être utile d’exploiter dans un tableur les données de suivi d’une campagne (historique de tracking, etc.). Les données de sortie peuvent être au format txt, CSV, TAB ou XML.
 
 L’assistant d’export vous permet de configurer un export, de définir ses options et de lancer son exécution. Il s’agit d’une série d’écrans dont le contenu dépend du type d’export (simple ou multiple) et des droits de l’opérateur ou de l’opératrice.
 
-L’assistant d’exportation s’affiche après la création d’une tâche d’exportation.
+L’assistant d’export s’affiche après la création d’un traitement d’export.
 
 #### Etape 1 - Choix du modèle d’export {#step-1---choosing-the-export-template}
 
@@ -424,7 +424,7 @@ Sélectionnez les champs à exporter. Pour cela :
 
    ![](assets/s_ncs_user_export_wizard04.png)
 
-1. Cliquez sur le bouton **[!UICONTROL Ajouter]** pour appeler des fonctions.
+1. Cliquez sur le bouton **[!UICONTROL Ajouter]** pour faire appel à des fonctions.
 
 #### Etape 5 - Tri des colonnes {#step-5---sorting-columns}
 
@@ -434,7 +434,7 @@ Sélectionnez l&#39;ordre de tri des colonnes.
 
 #### Etape 6 - Conditions de filtrage {#step-6---filter-conditions-}
 
-Vous pouvez ajouter des conditions de filtrage afin de ne pas exporter toutes les données. Le paramétrage de ce filtrage est le même que pour le ciblage des destinataires dans l’assistant de diffusion.
+Vous pouvez ajouter des conditions de filtrage afin de ne pas exporter toutes les données. La configuration de ce filtrage correspond à celle du ciblage des destinataires dans l’assistant de diffusion.
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 
@@ -452,9 +452,9 @@ Vous pouvez modifier l&#39;ordre et le libellé des champs pour le fichier de so
 
   ![](assets/s_ncs_user_export_wizard06.png)
 
-* Cliquez sur l&#39;icône **[!UICONTROL Ajouter un champ calculé]** si vous voulez créer un champ calculé (par exemple, une colonne contenant le nom+le prénom). Pour plus d&#39;informations, consultez la section Importer des données .
+* Cliquez sur l&#39;icône **[!UICONTROL Ajouter un champ calculé]** si vous voulez créer un champ calculé (par exemple, une colonne contenant le nom+le prénom). Pour plus d’informations, consultez la section Importer des données.
 
-Si vous exportez une collection d&#39;éléments (par exemple les abonnements des destinataires, les listes auxquelles ils appartiennent, etc.), vous devez indiquer le nombre d&#39;éléments de la collection que vous voulez exporter.
+Si vous exportez une collection d’éléments (par exemple les abonnements des personnes destinataires, les listes auxquelles elles appartiennent, etc.), vous devez indiquer le nombre d’éléments de la collection que vous voulez exporter.
 
 ![](assets/s_ncs_user_export_wizard06_c.png)
 
@@ -472,7 +472,7 @@ Cliquez sur **[!UICONTROL Démarrer]** pour lancer l’export des données.
 
 ![](assets/s_ncs_user_export_wizard08.png)
 
-Vous pouvez ensuite surveiller l’exécution du traitement d’importation.
+Vous pouvez ensuite surveiller l’exécution du traitement d’import.
 
 
 ## Collecte de profils via des applications web
@@ -481,10 +481,10 @@ Utilisez Campaign pour créer des formulaires web, et collecter et gérer facile
 
 ![](assets/web-form-page.png)
 
-Découvrez comment créer des formulaires web dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=fr){target="_blank"}.
+Découvrez comment créer des formulaires web dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=fr){target="_blank"}.
 
 **Rubriques connexes**
 
-* [Création d’audiences](audiences.md)
+* [Créer des audiences](audiences.md)
 * [Dédupliquer les profils](../../automation/workflow/deduplication-merge.md)
 * [Enrichir les données de profil](../../automation/workflow/enrich-data.md)

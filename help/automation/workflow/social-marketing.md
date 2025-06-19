@@ -4,21 +4,21 @@ title: Marketing social
 description: En savoir plus sur les workflows techniques de Social Marketing
 feature: Workflows
 source-git-commit: 472c9d13ca68d19b71b1a2bc7b9526f84bed04c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '138'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
 
 # Marketing social {#social-marketing}
 
-Les workflows présentés ci-dessous sont installés par défaut avec le module **Social Marketing**. Ce module permet l&#39;intégration avec X (anciennement appelé Twitter).
+Les workflows présentés ci-dessous sont installés par défaut avec le module de **Marketing social**. Ce module permet l’intégration avec X (anciennement Twitter).
 
 
 >[!AVAILABILITY]
 >
->`:warning:` Social Marketing avec Facebook est disponible uniquement dans Campaign Classic v7.
+>`:warning:` Marketing social avec Facebook est disponible uniquement dans Campaign Classic v7.
 
 <table> 
  <tbody> 

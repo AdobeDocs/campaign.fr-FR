@@ -7,9 +7,9 @@ level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
 source-git-commit: ba8cf031db178f6575104858340e16d4e7bd6a31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '282'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ Cette page répertorie les dernières mises à jour de la documentation de [!DNL
 
 ## Avril 2025 {#april-2025}
 
-Ajout d&#39;une bonne pratique consistant à redémarrer le workflow après avoir modifié l&#39;heure planifiée de l&#39;activité **[!UICONTROL Planificateur]** afin de s&#39;assurer qu&#39;elle s&#39;exécute selon le planning mis à jour. [En savoir plus](../../automation/workflow/scheduler.md)
+Ajout d’une bonne pratique consistant à redémarrer le workflow après avoir modifié l’heure planifiée de l’activité **[!UICONTROL Planificateur]** afin de s’assurer qu’elle s’exécute selon le planning mis à jour. [En savoir plus](../../automation/workflow/scheduler.md)
 
 ## Janvier 2025 {#january-2025}
 
-La page sur la réplication des données pour les déploiements FFDA a été réorganisée et enrichie de nouvelles informations. [En savoir plus](../architecture/replication.md)
+Réorganisation et de la page sur la réplication des données pour les déploiements FFDA et ajout de nouvelles informations. [En savoir plus](../architecture/replication.md)
 
 ## Novembre 2024 {#october-2024}
 

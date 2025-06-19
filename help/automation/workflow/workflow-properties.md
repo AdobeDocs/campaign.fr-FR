@@ -6,9 +6,9 @@ feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '718'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -54,17 +54,17 @@ Cette section n&#39;apparaît que dans les workflows d&#39;opérations.
 
   Cette option ne doit être utilisée qu&#39;à des fins de débuggage et jamais en production. Lorsque cette option est activée, le workflow devient prioritaire, et tous les autres workflows sont stoppés par le moteur de workflow tant qu&#39;il n&#39;est pas terminé.
 
-* **[!UICONTROL Autorisez le superviseur watchdog à maintenir le workflow en cours d&#39;exécution de manière permanente]**
+* **[!UICONTROL Activer le superviseur de surveillance pour que le workflow continue à fonctionner en permanence.]**
 
-  Cette option force le redémarrage automatique des workflows en cas d’erreur. Lorsqu’il est activé, le redémarrage vérifie toutes les 30 secondes le statut du workflow et le redémarre si nécessaire. Pour ajuster l’intervalle de 30 secondes, vous pouvez créer l’option technique `XtkWorkflow_WatchdogRestartTimerTimeout` et utiliser un type de données entier pour spécifier le délai souhaité.
+  Cette option force le redémarrage automatique des workflows en cas d’erreur. Lorsqu’elle est activée, le redémarrage vérifie toutes les 30 secondes le statut du workflow et le redémarre si nécessaire. Pour ajuster l’intervalle de 30 secondes, vous pouvez créer l’option technique `XtkWorkflow_WatchdogRestartTimerTimeout` et utiliser un type de données entier pour spécifier le délai souhaité.
 
   >[!NOTE]
   >
-  >* Cette option est disponible à partir de la version 8.6.4.
+  >* Cette option est disponible à partir de la version 8.6.4.
   >
-  >* Cette option est destinée aux utilisateurs avancés et ne doit être activée que pour les **workflows techniques**.
+  >* Cette option est destinée aux utilisateurs et utilisatrices de niveau avancé et ne doit être activée que pour les **workflows techniques**.
   >
-  >* Cette option est activée par défaut pour les workflows de réplication centralisée disponibles dans un déploiement [ Entreprise (FFDA)](../../v8/architecture/enterprise-deployment.md). [En savoir plus](../../v8/architecture/replication.md)
+  >* Cette option est activée par défaut pour les workflows de réplication centralisée disponibles dans un [déploiement Entreprise (FFDA)](../../v8/architecture/enterprise-deployment.md). [En savoir plus](../../v8/architecture/replication.md)
 
 ### Gestion des erreurs {#error-management}
 

@@ -7,9 +7,9 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '845'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Depuis le tableau de bord des diffusions, vous pouvez vérifier les messages tra
 >Les statuts des diffusions ne s’affichent pas en temps réel. Découvrez le service de retour par e-mail dans [cette section](#email-feedback-service).
 
 
-[En savoir plus sur la surveillance des diffusions dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=fr){target="_blank"}
+[En savoir plus sur la surveillance des diffusions dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=fr){target="_blank"}.
 
 ## MTA de Campaign {#mta}
 
@@ -76,7 +76,7 @@ Domain Keys Identified Mail (DKIM) est une méthode d’authentification utilis�
 
 Dans Adobe Campaign, la signature de l’authentification des e-mails DKIM est effectuée par le MTA.
 
-En savoir plus sur DKIM dans le [Guide des bonnes pratiques en matière de délivrabilité d&#39;Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#authentication){target="_blank"}.
+En savoir plus sur DKIM dans le [Guide Adobe des bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#authentication){target="_blank"}.
 
 ## Service de commentaires par e-mail {#email-feedback-service}
 

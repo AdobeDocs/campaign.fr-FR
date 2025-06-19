@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Définition du contenu de l’e-mail dans Adobe Campaign
+title: Définir le contenu d’e-mail dans Adobe Campaign
 description: Découvrez comment définir le contenu d'e-mail avec Adobe Campaign
 feature: Email Design
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: c3e107b5-6d2e-408f-9c7d-a81a4756b4ef
 source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2031'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Pour définir le nom et l’adresse de l’expéditeur qui apparaîtront dans l�
 
 Cette fenêtre permet de saisir toutes les informations nécessaires à l&#39;élaboration des en-têtes de messages email. Ces informations peuvent être personnalisées.Pour cela, vous devez utiliser des champs de personnalisation, insérés via des boutons situés à droite des champs de saisie.
 
-Pour savoir comment insérer et utiliser des champs de personnalisation, consultez [cette section](personalize.md).
+L’insertion et l’utilisation de champs de personnalisation sont présentées dans [cette section ](personalize.md).
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Par défaut, les messages sont envoyés en HTML ou en Texte, selon les préfére
 
 * Pour importer un contenu HTML, utilisez le bouton **[!UICONTROL Ouvrir]**. Vous pouvez également coller le code source directement dans le sous-onglet **[!UICONTROL Source]**.
 
-  Si vous utilisez le Digital Content Editor (DCE), consultez la documentation de [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case-creating-an-email-delivery.html?lang=fr#step-3---selecting-a-content).
+  Si vous utilisez DCE (Digital Content Editor), consultez la [Documentation de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case-creating-an-email-delivery.html?lang=fr#step-3---selecting-a-content).
 
   >[!IMPORTANT]
   >
@@ -92,7 +92,7 @@ Par défaut, les messages sont envoyés en HTML ou en Texte, selon les préfére
   >
   >L’utilisation des champs de personnalisation est présentée dans [cette section](personalize.md).
 
-  Les onglets en bas de page permettent d&#39;afficher le code HTML associé à la page en cours de création et de visualiser le rendu du message, avec sa personnalisation. Pour lancer la visualisation, cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** et sélectionnez un destinataire à partir du bouton **[!UICONTROL Tester la personnalisation]** situé dans la barre d&#39;outils. Vous pouvez sélectionner un destinataire parmi la ou les cibles définies ou choisir un autre destinataire.
+  Les onglets en bas de page permettent d’afficher le code HTML associé à la page en cours de création et de visualiser le rendu du message, avec sa personnalisation. Pour lancer la visualisation, cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** et sélectionnez un destinataire à partir du bouton **[!UICONTROL Tester la personnalisation]** situé dans la barre d&#39;outils. Vous pouvez sélectionner un destinataire parmi la ou les cibles définies ou choisir un autre destinataire.
 
   ![](assets/s_ncs_user_wizard_email01_139.png)
 
@@ -127,7 +127,7 @@ Ainsi, un onglet supplémentaire permet de saisir un contenu qui sera automatiqu
 
 >[!NOTE]
 >
->Pour plus d&#39;informations sur la gestion de contenu dans Adobe Campaign, consultez la documentation de [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/about-content-management.html?lang=fr).
+>Pour plus d’information sur la gestion de contenu dans Adobe Campaign, reportez-vous à la [documentation de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/about-content-management.html?lang=fr).
 
 ## Insérer des émoticônes {#inserting-emoticons}
 
@@ -140,7 +140,7 @@ Vous pouvez insérer des émoticônes dans le contenu d’un email.
 
 1. Cliquez sur le bouton **[!UICONTROL Fermer]** lorsque vous avez terminé.
 
-Pour personnaliser la liste des émoticônes, consultez la documentation de [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/customizing-emoticon-list.html?lang=fr).
+Pour personnaliser la liste des émoticônes, consultez la [documentation de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/customizing-emoticon-list.html?lang=fr).
 
 ## Ajouter des images {#adding-images}
 
@@ -151,7 +151,7 @@ Les diffusions par e-mail au format HTML peuvent contenir des images. Depuis l�
 
 Pour éviter des problèmes de performances, les images incluses dans les e-mails ne doivent pas dépasser 100 Ko. Cette limite, définie par défaut, peut être modifiée à partir de l’option `NmsDelivery_MaxDownloadedImageSize`. Cependant, Adobe recommande vivement d’éviter les images volumineuses dans vos diffusions e-mail.
 
-Pour en savoir plus sur la liste des options de Campaign, consultez la documentation de Campaign Classic [&#128279;](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=fr#delivery).
+Pour en savoir plus sur la liste des options de Campaign, consultez la [documentation de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=fr#delivery).
 
 ### Types d’images {#img-types}
 
@@ -162,7 +162,7 @@ Ces images peuvent être :
 
   Les ressources publiques sont accessibles à partir du nœud **[!UICONTROL Ressources > On-line]** de l’arborescence Adobe Campaign. Elles sont regroupées dans une bibliothèque et peuvent être incluses dans les e-mails, mais aussi utilisées au niveau des opérations ou des tâches, ainsi que pour la gestion de contenu.
 
-* Une ressource partagée via Adobe Experience Cloud. Consultez la documentation de [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=fr).
+* Une ressource partagée via Adobe Experience Cloud. Reportez-vous à la [documentation de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=fr).
 
 ### Insérer et gérer des images {#manage-images}
 

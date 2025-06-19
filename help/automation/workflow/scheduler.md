@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: ed70d2d3-251e-4ee8-84d4-73ad03e8dd35
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '400'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
@@ -23,15 +23,15 @@ L&#39;activité **[!UICONTROL Planificateur]** est à considérer comme un dépa
 
 ## Bonnes pratiques {#best-practices}
 
-**Redémarrer le workflow après avoir modifié la planification** - Lorsque vous modifiez l’heure planifiée de l’activité **[!UICONTROL Planificateur]**, il est important de redémarrer le workflow. Cela permet de s’assurer que le workflow s’exécutera aux heures mises à jour. Sans redémarrer, le workflow continuera à s’exécuter selon l’ancien planning.
+**Redémarrer le workflow après avoir modifié la programmation du planificateur** : lorsque vous modifiez l’heure planifiée de l’activité **[!UICONTROL Planificateur]**, il est important de redémarrer le workflow. Cette opération est nécessaire pour que le workflow s’exécute aux heures mises à jour. Sans redémarrage, le workflow continuera à s’exécuter selon l’ancien planning.
 
-**Limiter la fréquence du planificateur** - Évitez de planifier des workflows pour qu’ils s’exécutent plus fréquemment que toutes les 15 minutes. Les exécuter plus souvent peut dégrader les performances du système et entraîner une congestion des bases de données.
+**Limiter la fréquence du planificateur** : évitez de planifier des workflows pour qu’ils s’exécutent plus fréquemment que toutes les 15 minutes. Les exécuter plus souvent peut dégrader les performances du système et entraîner une congestion des bases de données.
 
-**Utiliser un planificateur par branche** - Chaque branche de votre workflow ne doit comporter qu’une seule activité **[!UICONTROL Planificateur]**. Pour plus d&#39;informations sur les bonnes pratiques relatives à l&#39;utilisation des activités dans les workflows, consultez la page [Bonnes pratiques relatives aux workflows](workflow-best-practices.md#using-activities).
+**Utiliser un planificateur par branche** : chaque branche de votre workflow ne doit comporter qu’une seule activité **[!UICONTROL Planificateur]**. Pour plus d’informations sur les bonnes pratiques relatives à l’utilisation des activités dans les workflows, consultez la page [Bonnes pratiques relatives aux workflows](workflow-best-practices.md#using-activities).
 
-**Empêcher les exécutions simultanées de workflows** - Si un workflow est déclenché par un planificateur, gardez à l’esprit que plusieurs instances du workflow peuvent s’exécuter en même temps. Par exemple, si un planificateur déclenche le workflow toutes les heures, mais que l&#39;exécution du workflow dure plus d&#39;une heure, vous risquez de vous retrouver avec des exécutions qui se chevauchent. Pour éviter cela, pensez à configurer des vérifications pour empêcher plusieurs exécutions simultanées. [Découvrez comment empêcher l’exécution simultanée de plusieurs workflows](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions).
+**Empêcher les exécutions simultanées de workflows** : si un workflow est déclenché par un planificateur, gardez à l’esprit que plusieurs instances du workflow peuvent s’exécuter en même temps. Par exemple, si un planificateur déclenche le workflow toutes les heures, mais que l’exécution du workflow dure plus d’une heure, vous risquez de vous retrouver avec des exécutions qui se chevauchent. Pour éviter cela, pensez à configurer des vérifications pour empêcher plusieurs exécutions simultanées. [Découvrez comment empêcher l’exécution simultanée de plusieurs workflows](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions).
 
-**Compte tenu des transitions retardées** - Les transitions déclenchées par le planificateur peuvent être retardées si le workflow exécute des tâches de longue durée (comme les imports) ou si le module wfserver a été temporairement arrêté. Pour atténuer ce problème, limitez les heures d’activation du planificateur afin de vous assurer que les tâches s’exécutent dans une fenêtre temporelle définie.
+**Prendre en compte les transitions retardées** : les transitions déclenchées par le planificateur peuvent être retardées si le workflow exécute des tâches de longue durée (comme les imports) ou si le module wfserver a été temporairement arrêté. Pour atténuer ce problème, limitez les heures d’activation du planificateur afin de vous assurer que les tâches s’exécutent dans une période définie.
 
 ## Paramétrage de l’activité Planificateur {#configuring-scheduler-activity}
 

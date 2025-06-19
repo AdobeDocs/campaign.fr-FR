@@ -6,7 +6,7 @@ feature: Workflows, Targeting Activity, Data Management
 version: Campaign v8, Campaign Classic v7
 exl-id: 63b214c7-bbbf-448b-b3af-b3b7a7a5b65c
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '941'
 ht-degree: 100%
 
@@ -26,11 +26,11 @@ Le champ **[!UICONTROL Type d&#39;opération]** permet de choisir le traitement 
 * **[!UICONTROL Ajouter]** : ajouter des données uniquement.
 * **[!UICONTROL Mettre à jour]** : mettre à jour des données uniquement.
 * **[!UICONTROL Mettre à jour et fusionner les collections]** : mettre à jour les données et choisir un enregistrement principal, puis lier les éléments liés aux duplicatas de cet enregistrement principal. Les duplicatas peuvent ensuite être supprimés sans créer d’éléments orphelins attachés.
-* **[!UICONTROL Supprimer]** : supprimer des données.
+* **[!UICONTROL Supprimer]** : supprimez des données.
 
 ![](assets/s_advuser_update_data_1.png)
 
-Le champ **[!UICONTROL Taille des mises à jours]** permet de sélectionner le nombre d&#39;éléments de la transition entrante qui seront mis à jour. Par exemple, si vous indiquez 500, les 500 premiers enregistrements traités seront mis à jour.
+Le champ **[!UICONTROL Taille de lot]** permet de sélectionner le nombre d’éléments de la transition entrante qui seront mis à jour. Par exemple, si vous indiquez 500, les 500 premiers enregistrements traités seront mis à jour.
 
 ## Identification des enregistrements {#record-identification}
 

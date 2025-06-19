@@ -6,9 +6,9 @@ role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1135'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Pour configurer un environnement externe POP3 à l’aide de Microsoft OAuth 2.0
 
 Le compte externe **[!UICONTROL Routage]** vous permet de configurer chaque canal disponible dans Adobe Campaign en fonction des packages installés.
 
-En savoir plus sur la gestion des comptes externes et l&#39;exécution des diffusions dans [cette section](../architecture/architecture.md#split).
+En savoir plus sur la gestion des comptes externes et l’exécution des diffusions dans [cette section](../architecture/architecture.md#split).
 
 ### Instance d&#39;exécution {#execution-instance}
 
@@ -132,7 +132,7 @@ Ces comptes externes peuvent être utilisés pour importer ou exporter des donn�
 
    * **[!UICONTROL Serveur de compte AWS S3]** : l’URL de votre serveur, renseignée comme suit : `<S3bucket name>.s3.amazonaws.com/<s3object path>`
 
-   * **[!UICONTROL ID de la clé d’accès AWS]** : découvrez comment trouver votre ID de clé d’accès AWS dans la [documentation Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
+   * **[!UICONTROL ID de la clé d’accès AWS]** : découvrez comment trouver votre ID de clé d’accès AWS dans la [documentation Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
 
    * **[!UICONTROL Clé d&#39;accès secrète à AWS]** : apprenez à trouver votre clé d&#39;accès secrète à AWS en consultant la [documentation Amazon](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target="_blank"}.
 

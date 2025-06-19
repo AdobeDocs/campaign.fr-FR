@@ -6,9 +6,9 @@ role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
 source-git-commit: fb2cf4407750f8cff65ca53f0e87c32e9702de92
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Les systèmes d’exploitation et le navigateur ci-après sont nécessaires pour
 
 * **Microsoft Edge**
 
-* Dernière version de **Microsoft Edge WebView2**. Téléchargez-le à partir du site du développeur de Microsoft [&#128279;](http://www.adobe.com/go/acc-ms-webview2-runtime-download_fr){target="_blank"}.
+* Dernière version de **Microsoft Edge WebView2**. Téléchargez-la depuis le [site de Microsoft Developer](http://www.adobe.com/go/acc-ms-webview2-runtime-download_fr){target="_blank"}.
 
 ## Connecteurs CRM {#CRMconnectors}
 
@@ -51,10 +51,10 @@ Les systèmes de gestion de la relation client (CRM) compatibles avec Adobe Cam
 
 Les bases de données externes compatibles avec le module Adobe Campaign Federated Data Access (FDA) sont répertoriées ci-dessous. Pour en savoir plus sur le module FDA, consultez [cette page](../connect/fda.md).
 
-* **[!DNL Amazon Redshift]** connecteur ODBC, démarrage de Campaign v8.6.4 / v8.7.1
+* Connecteur **[!DNL Amazon Redshift]** ODBC, démarrage de Campaign v8.6.4 / v8.7.1
 * Connecteur hérité **[!DNL Amazon Redshift]**
 * **[!DNL Azure Synapse]**, à partir de Campaign v8.5
-* **[!DNL Databricks]**, à partir de Campaign v8.6.4 / v8.7
+* **[!DNL Databricks]**, à partir de Campaign v8.6.4 / v8.7
 * **[!DNL Google Big Query]**
 * **[!DNL Snowflake]**
 * **[!DNL Vertica]**
@@ -67,7 +67,7 @@ Les bases de données externes compatibles avec le module Adobe Campaign Federa
 
 Pour envoyer des [notifications push](../send/push.md) avec Campaign, vous pouvez utiliser le SDK mobile Adobe Experience Platform en configurant l’extension Adobe Campaign Classic dans l’interface utilisateur de collecte de données.
 
-Les versions compatibles d’iOS et d’Android sont présentées dans la [documentation d’Adobe Developer](https://developer.adobe.com/client-sdks/home/){target="_blank"}.
+Les versions compatibles avec iOS et Android sont présentées dans la [documentation d’Adobe Developer](https://developer.adobe.com/client-sdks/home/){target="_blank"}
 
 ## Interface utilisateur web {#web-ui}
 
@@ -86,6 +86,6 @@ Les navigateurs ci-après sont compatibles avec Campaign pour un accès web. Pou
 * [Mises à jour des versions de Campaign](upgrades.md)
 * [Vérifier votre version de Campaign](upgrades.md#version)
 * [Installer la console cliente Campaign](connect.md)
-* [Versions du Panneau de contrôle](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=fr){target="_blank"}
+* [Versions du panneau de contrôle](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=fr){target="_blank"}
 
 Pour être informé des nouvelles versions de la solution Experience Cloud, abonnez-vous à la [Mise à jour produit prioritaire d’Adobe](https://www.adobe.com/fr/subscription/priority-product-update.html){target="_blank"}.

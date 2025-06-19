@@ -4,9 +4,9 @@ description: Liste des fonctionnalités et améliorations des versions 2022 de C
 feature: Release Notes
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
 source-git-commit: b3ca222fb28c1a5d35190e41cfbbe463c5d1bcad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1949'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ Cette page répertorie les nouvelles fonctionnalités, les améliorations et les
 
 **Dans cette page**
 
-* Campaign v8.4 - [Version 8.4.1](#release-8-4-1) | [Version 8.4.2](#release-8-4-2)
-* Campaign v8.3 - [version 8.3.8](#release-8-3-8) | [Version 8.3.9](#release-8-3-9)
-* Campaign v8.2 - [version 8.2.10](#release-8-2-10)
+* Campaign v8.4 - [Version 8.4.1](#release-8-4-1) | [Version 8.4.2](#release-8-4-2)
+* Campaign v8.3 - [version 8.3.8](#release-8-3-8) | [Version 8.3.9](#release-8-3-9)
+* Campaign v8.2 - [version 8.2.10](#release-8-2-10)
 
 >[!ENDSHADEBOX]
 
@@ -217,7 +217,7 @@ _18 mai 2022_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Le marketing distribué de Campaign permet de mettre en place des opérations collaboratives entre des entités centrales (siège social, services marketing, etc.) et des entités locales (points de vente, agences régionales, etc.). Depuis un espace de travail partagé (kits d'opération), vous pouvez créer des modèles d’opération et les proposer à vos entités locales.</p>
+<td> <p>Le marketing distribué de Campaign vous permet d’implémenter des campagnes collaboratives entre entités centrales (sièges sociaux, services marketing, etc.) et entités locales (magasins, agences régionales, etc.). Depuis un espace de travail partagé (kits d'opération), vous pouvez créer des modèles d’opération et les proposer à vos entités locales.</p>
 <p>Pour plus d’informations, consultez la <a href="../start/campaigns.md#distributed-marketing-add-on">documentation détaillée</a>.</p>
 </td> 
 </tr> 

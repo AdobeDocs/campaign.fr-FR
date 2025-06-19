@@ -7,9 +7,9 @@ role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
 version: Campaign v8, Campaign Classic v7
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1667'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Pour plus d’informations sur des exemples de requêtes, voir [cette section](q
 
 >[!NOTE]
 >
->L’interface utilisateur web d’Adobe Campaign dispose d’un puissant outil de modélisation des requêtes qui simplifie le processus de filtrage des bases de données afin de sélectionner des cibles spécifiques en fonction de divers critères, ce qui vous permet de créer et de gérer plus facilement vos requêtes. Pour en savoir plus sur Query modeler pour l’interface utilisateur web, consultez la [documentation de l’interface utilisateur web d’Adobe Campaign](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
+>L’interface d’utilisation d’Adobe Campaign Web dispose d’un puissant concepteur de requête qui simplifie le processus de filtrage des bases de données afin de sélectionner des cibles spécifiques en fonction de divers critères, ce qui vous permet de créer et de gérer plus facilement vos requêtes. Pour en savoir plus sur le concepteur de requête de l’interface d’utilisation web, reportez-vous à la [documentation de l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
 
 
 ![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}

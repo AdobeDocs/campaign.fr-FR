@@ -7,9 +7,9 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1610'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Le contenu de la diffusion est prêt à être configuré. La définition du cont
 * [Définition du contenu de l’e-mail](../send/email.md)
 * [Définir le contenu des SMS](../send/sms/sms-content.md)
 * [Définition du contenu du publipostage direct](../send/direct-mail.md)
-* [Définition du contenu de la notification push](../send/push.md)
+* [Définir le contenu de la notification push](../send/push.md)
 
 
 ## Définir l’audience cible {#target-population}
@@ -137,7 +137,7 @@ Vous pouvez envoyer des messages à des profils qui ne sont pas stockés dans la
 1. Sélectionnez le fichier contenant les personnes destinataires.
 1. Lors de l&#39;import des personnes destinataires, cliquez sur le lien **[!UICONTROL Définition du format du fichier...]** pour sélectionner et configurer le fichier externe.
 
-   Pour plus d&#39;informations sur l&#39;import de données, consultez la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}.
+   Pour plus d’informations sur l’import de données, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}.
 
 1. Cliquez sur **[!UICONTROL Terminer]** et configurez votre diffusion comme une diffusion standard.
 
@@ -182,7 +182,7 @@ Pour plus d’informations sur l’envoi et les personnes destinataires des BAT,
 
 Dans cette vidéo, vous apprendrez comment ajouter des adresses de contrôle et des BAT à un email existant et comment l’envoyer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447001?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 D’autres vidéos pratiques sur Campaign Classic sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=fr).
 

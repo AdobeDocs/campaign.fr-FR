@@ -7,9 +7,9 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Avec Adobe Campaign, créez des diffusions e-mail pour envoyer des e-mails pers
 
 >[!NOTE]
 >
->Pour créer des e-mails captivants et personnalisés, accédez à l’[interface utilisateur web](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui). Adobe Campaign est fourni avec le Designer d’e-mail, une interface intuitive par glisser-déposer, qui vous permet de concevoir et d’affiner tout le contenu de chaque e-mail.
+>Pour créer des e-mails captivants et personnalisés, accédez à l’[interface d’utilisation web](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui). Adobe Campaign est fourni avec le concepteur d’e-mail, une interface intuitive par glisser-déposer, qui vous permet de concevoir et d’affiner le contenu de chaque e-mail.
 
 
 Découvrez les étapes clés de la création et de la configuration d’une diffusion dans [cette page](../start/create-message.md).
@@ -91,7 +91,7 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
 Votre première diffusion e-mail est prête. Vous devez maintenant définir l&#39;audience, valider la diffusion et l&#39;envoyer.
 
-Découvrez comment créer un workflow pour importer un contenu d’e-mail dans ce [cas d’utilisation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=fr){target="_blank"}.
+Découvrez comment créer un workflow pour importer le contenu d’un e-mail dans ce [cas d’utilisation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=fr){target="_blank"}.
 
 >[!MORELIKETHIS]
 >

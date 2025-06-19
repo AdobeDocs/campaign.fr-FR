@@ -6,9 +6,9 @@ title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '712'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 92%
    + [Problèmes connus](start/known-issues.md)
    + [Matrice de compatibilité](start/compatibility-matrix.md)
    + [Mises à jour de la documentation](start/documentation-updates.md)
-+ Prise en main {#new}
++ Commencer {#new}
    + [Prise en main d’Adobe Campaign](start/get-started.md)
    + [Fonctionnalités principales](start/whats-new.md)
    + [Découvrir l’interface utilisateur](start/campaign-ui.md)
@@ -54,8 +54,8 @@ ht-degree: 92%
       + [Ajouter une adresse Cci](send/email-bcc.md)
       + [Définir les paramètres d’e-mail supplémentaires](send/email-parameters.md)
       + [Envoyer et surveiller des e-mails](send/send.md)
-      + [Envoi dʼe-mails sur mobiles japonais](send/sending-emails-on-japanese-mobiles.md)
-      + [Joindre des fichiers à un email ](send/attaching-files.md)
+      + [Envoyer des e-mails sur des mobiles japonais](send/sending-emails-on-japanese-mobiles.md)
+      + [Joindre des fichiers à un e-mail](send/attaching-files.md)
    + SMS {#sms}
       + [Prise en main des SMS](send/sms/sms.md)
       + Configurer le canal SMS {#config-sms}
@@ -70,7 +70,7 @@ ht-degree: 92%
          + [Créer une diffusion SMS](send/sms/create-sms.md)
          + [Définir le contenu](send/sms/sms-content.md)
          + [Sélectionner l’audience](send/sms/sms-audience.md)
-      + Valider et envoyer les SMS {#validate-sms}
+      + Valider et envoyer des SMS {#validate-sms}
          + [Envoyer des BAT SMS](send/sms/sms-proofs.md)
          + [Envoyer à l’audience](send/sms/sms-send.md)
       + [Surveiller et suivre les SMS](send/sms/sms-monitor.md)
@@ -95,8 +95,8 @@ ht-degree: 92%
       + [Prévisualiser et créer des BAT](send/preview-and-proof.md)
       + [Analyse des diffusions](send/delivery-analysis.md)
       + [Configurer et envoyer la diffusion](send/configure-and-send.md)
-      + [Optimisation de l’heure d&#39;envoi](send/predictive.md)
-   + Échecs, retours et mises en quarantaine{#failures}
+      + [Optimisation de l’heure d’envoi](send/predictive.md)
+   + Échecs, rebonds et mises en quarantaine{#failures}
       + [Quarantaines](send/quarantines.md)
       + [Diffusions en échec](send/delivery-failures.md)
    + [Utiliser des modèles de diffusion](send/create-templates.md)
@@ -111,7 +111,7 @@ ht-degree: 92%
    + [Prise en main des profils et des audiences](audiences/gs-audiences.md)
    + [Utiliser les audiences](start/audiences.md)
    + [Accès aux profils](audiences/view-profiles.md)
-   + Ajout de profils {#add-profiles}
+   + Ajouter des profils {#add-profiles}
       + [Création manuelle de profils](audiences/create-profiles.md)
       + [Importer des profils depuis un fichier](audiences/import-profiles.md)
       + [Utilisation de profils externes](audiences/external-profiles.md)
@@ -137,7 +137,7 @@ ht-degree: 92%
    + [Prise en main des interactions en temps réel](interaction/interaction.md)
    + [Environnements et architecture](interaction/interaction-architecture.md)
    + [Bonnes pratiques](interaction/interaction-best-practices.md)
-   + Définition des paramètres{#interaction-settings}
+   + Définir des paramètres{#interaction-settings}
       + [Création d&#39;opérateurs](interaction/interaction-operators.md)
       + [Création d&#39;environnements](interaction/interaction-env.md)
       + [Création de filtres prédéfinis](interaction/interaction-predefined-filters.md)
@@ -145,7 +145,7 @@ ht-degree: 92%
    + [Création d&#39;un catalogue d&#39;offres](interaction/interaction-offer-catalog.md)
    + [Création d&#39;une offre](interaction/interaction-offer.md)
    + [Envoyer une offre (sortante)](interaction/interaction-send-offers.md)
-   + Présentation d&#39;une offre (entrante){#inbound}
+   + Présenter une offre (entrante){#inbound}
       + [Contexte](interaction/interaction-present-offers.md)
       + [Appel dʼune offre dans une page web](interaction/interaction-integration.md)
       + [Gestion des interactions anonymes](interaction/anonymous-interactions.md)
@@ -154,7 +154,7 @@ ht-degree: 92%
 + Rapports et analyses {#analytics}
    + [Suivre et surveiller](start/tracking.md)
    + [Journal d’audit](reporting/audit-trail.md)
-   + Utilisation des rapports{#reports}
+   + Utiliser des rapports{#reports}
       + [Commencer avec les rapports](reporting/gs-reporting.md)
       + Créer des cubes{#cubes}
          + [Comencer avec les cubes](reporting/gs-cubes.md)
@@ -190,7 +190,7 @@ ht-degree: 92%
       + [Utilisation de Campaign et Microsoft Dynamics](connect/ac-ms-dyn.md)
       + [Synchroniser les données](connect/crm-data-sync.md)
 + Administration {#admin}
-   + Utilisateurs et autorisations {#permissions}
+   + Utilisateurs, utilisatrices et autorisations {#permissions}
       + [Prise en main des autorisations](start/gs-permissions.md)
       + [Gérer les autorisations utilisateur](start/manage-permissions.md)
       + [Ajouter des autorisations aux dossiers](start/folder-permissions.md)
@@ -200,7 +200,7 @@ ht-degree: 92%
       + [Principes généraux](architecture/general-architecture.md)
       + [Modèles d’architecture](architecture/architecture.md)
       + [Déploiement FDA de Campaign](architecture/fda-deployment.md)
-      + Déploiement Enterprise (FFDA) {#ffda}
+      + Déploiement Grands comptes (FFDA) {#ffda}
          + [Qu’est-ce que Campaign FFDA ?](architecture/enterprise-deployment.md)
          + [Gestion des clés et unicité](architecture/keys.md)
          + [Nouvelles API](architecture/new-apis.md)
@@ -216,7 +216,7 @@ ht-degree: 92%
       + [Paramètres de messagerie transactionnelle](config/transactional-msg-settings.md)
       + [Intégrer les SDK Campaign à votre application – PAGE OBSOLÈTE](config/push-config.md)
       + [Comptes externes](config/external-accounts.md)
-+ Ressources pour les développeurs {#developer}
++ Ressources de développement {#developer}
    + [Modèle de données Campaign](dev/datamodel.md)
    + Schémas et formulaires {#shemas-forms}
       + [Utiliser les schémas](dev/schemas.md)

@@ -1,24 +1,24 @@
 ---
 title: Notes de mise à jour de Campaign v8 (console) 2025
-description: Liste des fonctionnalités et améliorations des versions 2025 de Campaign v8.
+description: Liste des fonctionnalités et améliorations des versions 2025 de Campaign v8.
 feature: Release Notes
 exl-id: 3f91d83e-594e-49ee-a898-606e3de00bf3
 source-git-commit: 66e4b59915eae595b28076622f7bcfb5b5a0ffa4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '428'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 # Notes de mise à jour 2025 {#2025-rn}
 
-Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs des versions **2025 de Campaign v8**. Les dernières versions sont répertoriées dans [cette page](release-notes.md).
+Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs des **versions 2025 de Campaign v8**. Les différentes versions sont répertoriées dans [cette page](release-notes.md).
 
 >[!BEGINSHADEBOX]
 
 **Dans cette page**
 
-* Campaign v8.7 - [Version 8.7.2](#release-8-7-2) | [Version 8.7.3](#release-8-7-3)
+* Campaign v8.7 - [Version 8.7.2](#release-8-7-2) | [Version 8.7.3](#release-8-7-3)
 
 
 >[!ENDSHADEBOX]
@@ -26,19 +26,19 @@ Cette page répertorie les nouvelles fonctionnalités, les améliorations et les
 
 ## Version 8.7.3 {#release-8-7-3}
 
-_14 février 2025_
+_14 février 2025_
 
 >[!AVAILABILITY]
 >
 >Cette version est en **disponibilité limitée** (LA). Elle est limitée aux personnes effectuant la migration **depuis Adobe Campaign Standard vers Adobe Campaign v8** et ne peut pas être déployée dans un autre environnement.
 >
->En tant qu’utilisateur Campaign Standard passant à Campaign v8, apprenez-en davantage sur cette transition dans la [documentation de l’interface utilisateur web de Campaign v8](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
+>Si vous êtes un utilisateur ou une utilisatrice de Campaign Standard et que vous passez à Campaign v8, apprenez-en plus sur cette transition dans la [documentation sur l’interface d’utilisation d’Adobe Campaign Web v8](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 
 ### Nouvelles fonctionnalités {#features-8-7-3}
 
-* **Rapports dynamiques pour les messages transactionnels** - Vous pouvez désormais surveiller vos messages transactionnels dans l’interface utilisateur des rapports dynamiques. Ces rapports permettent au professionnel du marketing de visualiser toutes les mesures et dimensions de rapports des messages transactionnels, ainsi que la répartition des diffusions envoyées via un modèle en temps réel. [En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-cloud/campaign/reporting/get-started-reporting){target="_blank"}
+* **Rapports dynamiques pour les messages transactionnels** : vous pouvez désormais surveiller vos messages transactionnels dans l’interface d’utilisation des rapports dynamiques. Ces rapports permettent aux professionnelles et professionnels du marketing de visualiser toutes les mesures et dimensions de rapports des messages transactionnels, ainsi que la répartition des diffusions envoyées via un modèle en temps réel. [En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-cloud/campaign/reporting/get-started-reporting){target="_blank"}
 
-* **API REST de messagerie transactionnelle** - Les API transactionnelles basées sur un événement sont désormais disponibles pour les e-mails. [En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-cloud/campaign/apis/managing-transactional-messages){target="_blank"}
+* **API REST de messagerie transactionnelle** : les API transactionnelles basées sur un événement sont désormais disponibles pour les e-mails. [En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-cloud/campaign/apis/managing-transactional-messages){target="_blank"}
 
 ### Correctifs {#fixes-8-7-3}
 
@@ -54,7 +54,7 @@ _3 septembre 2024_
 >
 >Cette version est en **disponibilité limitée** (LA). Elle est limitée aux personnes effectuant la migration **depuis Adobe Campaign Standard vers Adobe Campaign v8** et ne peut pas être déployée dans un autre environnement.
 >
->En tant qu’utilisateur Campaign Standard passant à Campaign v8, apprenez-en davantage sur cette transition dans la [documentation de l’interface utilisateur web de Campaign v8](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
+>Si vous êtes un utilisateur ou une utilisatrice de Campaign Standard et que vous passez à Campaign v8, apprenez-en plus sur cette transition dans la [documentation sur l’interface d’utilisation d’Adobe Campaign Web v8](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 
 ### Nouvelles fonctionnalités {#new-8-7-2}
 

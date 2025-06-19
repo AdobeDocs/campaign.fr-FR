@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 878b5963-100c-4dd7-97a0-c59a62c493b1
 source-git-commit: e4f6c70ecdcf7414b5f49a43933cfd1c967a0905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '974'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Les profils de test sont créés en tant qu’adresses de contrôle. Ils sont ut
 
 Les avantages des adresses de contrôle sont les suivants :
 
-* Substitution aléatoire des champs avec des données issues des profils des destinataires : on peut ainsi renseigner seulement l’adresse e-mail, par exemple au niveau des adresses de contrôle, et laisser Campaign renseigner automatiquement les autres champs du profil. Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html?lang=fr){target="_blank"}.
+* Substitution aléatoire des champs avec des données issues des profils des destinataires : on peut ainsi renseigner seulement l’adresse e-mail, par exemple au niveau des adresses de contrôle, et laisser Campaign renseigner automatiquement les autres champs du profil. Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html?lang=fr){target="_blank"}.
 * Dans un contexte de workflow avec utilisation des fonctionnalités de Datamanagement, les données additionnelles exploitées dans les diffusions peuvent être renseignées au niveau des adresses de contrôle afin d&#39;en forcer la valeur : on s&#39;affranchit ainsi de la substitution aléatoire des valeurs.
 * Les adresses de contrôle sont automatiquement exclues des rapports sur les statistiques de diffusions suivants : **[!UICONTROL Clics]**, **[!UICONTROL Ouvertures]**, **[!UICONTROL Désinscriptions]**.
 
@@ -30,7 +30,7 @@ Les adresses de contrôle sont ajoutées à la cible de diffusions en étant imp
 >
 >Les adresses de contrôle ne sont pas créées dans la table des destinataires, mais dans une table distincte. Si vous étendez le tableau des destinataires avec de nouvelles données, vous devez étendre le tableau des adresses de contrôle avec les mêmes données. Sinon, les champs étendus ne seront pas pris en compte pour les adresses de contrôle.
 >
->Vous trouverez un exemple d&#39;extension du tableau des adresses de contrôle dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html?lang=fr){target="_blank"}.
+>Vous trouverez un exemple d’extension du tableau des adresses de contrôle dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html?lang=fr){target="_blank"}.
 
 ## Créer des adresses de contrôle
 
@@ -85,7 +85,7 @@ Trois modes d&#39;insertion sont possibles :
 
 1. Créez une condition pour sélectionner dynamiquement les adresses de contrôle à insérer. Pour cela, cliquez sur le lien **[!UICONTROL Modifier la condition dynamique...]**, puis indiquez les paramètres de sélection des adresses de contrôle. Vous pouvez par exemple inclure toutes les adresses de contrôle contenues dans un dossier spécifique ou les adresses de contrôle appartenant à un service particulier de votre société.
 
-   Vous trouverez un exemple dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html?lang=fr){target="_blank"}.
+   Vous trouverez un exemple dans la [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html?lang=fr){target="_blank"}.
 
 Pour les diffusions, vous pouvez personnaliser le mode d’insertion des adresses dans le fichier d’extraction. Par défaut, elles sont insérées dans l’ordre de tri du fichier de sortie, mais vous pouvez choisir de les insérer à la fin ou au début du fichier, ou aléatoirement parmi les destinataires de la cible principale.
 

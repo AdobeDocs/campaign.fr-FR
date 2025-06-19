@@ -6,9 +6,9 @@ role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
 source-git-commit: 8e1401ef0aada30d941905936b45c6c1819c83a7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1399'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Ce que vous pouvez configurer :
 
 >[!NOTE]
 >
->L’interface utilisateur web d’Adobe Campaign s’accompagne d’une zone de travail repensée pour les workflows, ce qui permet de créer des parcours client plus dynamiques et personnalisés. Pour en savoir plus sur les workflows pour l’interface utilisateur web, reportez-vous à la documentation de l’interface utilisateur web d’Adobe Campaign [&#128279;](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/wf/gs-workflows){target=_blank}.
+>L’interface d’utilisation d’Adobe Campaign Web est fournie avec une zone de travail repensée pour les workflows, ce qui permet de créer des parcours clients plus dynamiques et personnalisés. Pour en savoir plus sur les workflows pour l’interface d’utilisation web, reportez-vous à la [documentation de l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/wf/gs-workflows){target=_blank}.
 
 
 ## Conception et utilisation de workflows {#gs-ac-wf}
@@ -152,23 +152,23 @@ Lorsque le contenu de votre diffusion est disponible dans un fichier HTML situé
 * [Workflow de diffusion cross-canal](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/cross-channel-delivery-workflow.html?lang=fr){target="_blank"}
 Découvrez comment créer un workflow de diffusion cross-canal. L’objectif est de segmenter une audience des destinataires de votre base de données en différents groupes et d’envoyer un e-mail au premier groupe et un SMS à l’autre.
 
-* [Enrichissement des emails avec des champs de date personnalisés](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/email-enrichment-with-custom-date-fields.html?lang=fr){target="_blank"}
-Découvrez comment envoyer un e-mail avec des champs de données personnalisés aux profils qui célèbrent leur anniversaire ce mois-ci. L’e-mail contiendra un coupon valide une semaine avant et après leur anniversaire.
+* [Enrichissement d’un e-mail à l’aide de champs de date personnalisés](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/email-enrichment-with-custom-date-fields.html?lang=fr){target="_blank"}
+Découvrez comment envoyer un e-mail avec des champs de données personnalisés aux profils qui fêtent leur anniversaire ce mois-ci. L’e-mail contiendra un coupon valide une semaine avant et après leur anniversaire.
 
 Ainsi que ces pages dans la documentation de Campaign v7 :
 
 * [Automatiser la création, l’édition et la publication de contenu](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/automating-via-workflows.html?lang=fr){target="_blank"}
 Découvrez comment automatiser la création et la diffusion d’un bloc de contenu avec le module complémentaire de gestion de contenu de Campaign.
 
-* [Test A/B](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html?lang=fr){target="_blank"}
-Découvrez comment comparer deux contenus de diffusion par e-mail via un workflow de ciblage. Le message et le texte sont identiques dans les deux diffusions : seule la disposition change. La population ciblée est divisée en trois : deux groupes de test et la population restante. Une version différente de la diffusion est envoyée à chaque groupe de test.
+* [Tests AB](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html?lang=fr){target="_blank"}
+Découvrez comment comparer deux contenus de diffusion par e-mail via un workflow de ciblage. Le message et le texte sont identiques dans les deux diffusions : seule la disposition change. La population ciblée est divisée en trois : deux groupes de test et la population restante. Une version différente de la diffusion est envoyée à chaque groupe de test.
 
 ### Surveillance {#monitoring}
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
 * [Envoyer un rapport à une liste](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-a-report-to-a-list.html?lang=fr){target="_blank"}
-Découvrez comment générer un rapport mensuel intégré des indicateurs de tracking au format PDF et l&#39;envoyer à une liste d&#39;opérateurs Campaign.
+Découvrez comment générer un rapport mensuel intégré des indicateurs de suivi au format PDF et comment l’envoyer à une liste d’opérateurs et d’opératrices Campaign.
 
 * [Superviser vos workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=fr){target="_blank"}
 Découvrez comment créer un workflow qui vous permet de surveiller l’état d’un ensemble de workflows « en pause », « arrêtés » ou « contenant des erreurs ».
@@ -186,8 +186,8 @@ Découvrez comment vérifier que le processus de mise à jour est terminé avant
 * [Créer une liste récapitulative](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/create-a-summary-list.html?lang=fr){target="_blank"}
 Découvrez comment créer un workflow qui, après la collecte de fichiers et plusieurs enrichissements, permet de créer une liste récapitulative. L’exemple est basé sur une liste de contacts qui ont effectué des achats dans un magasin.
 
-* [Enrichissement des données](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/enrich-data.html?lang=fr){target="_blank"}
-Découvrez comment envoyer des diffusions personnalisées aux profils ayant participé au dernier jeu-concours en fonction de leur score.
+* [Enrichir des données](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/enrich-data.html?lang=fr){target="_blank"}
+Découvrez comment envoyer des diffusions personnalisées aux profils ayant participé au dernier jeu concours en fonction de leur score.
 
 * [Utiliser des agrégats](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html?lang=fr){target="_blank"}
 Découvrez comment identifier les derniers destinataires ajoutés à la base de données.
@@ -230,7 +230,7 @@ In this use case, learn how to use the **[!UICONTROL Change data source]** activ
 
 1. Query your targeted recipients from the NmsRecipient table with a **[!UICONTROL Query]** activity. 
 
-    For more information on the **[!UICONTROL Query]** activity, refer to the [Query](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/query.html?lang=fr#creating-a-query) page in Campaign Classic V7 documentation.
+    For more information on the **[!UICONTROL Query]** activity, refer to the [Query](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/query.html#creating-a-query) page in Campaign Classic V7 documentation.
 
 1. 
 
