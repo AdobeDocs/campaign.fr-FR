@@ -5,9 +5,9 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '712'
+source-git-commit: b4947c8c20e123877e24f57d5ad7a15aa3f304a2
+workflow-type: tm+mt
+source-wordcount: '725'
 ht-degree: 100%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 100%
 + Envoyer des messages{#send}
    + [Commencer avec les messages](start/gs-message.md)
    + [Créer votre première diffusion](start/create-message.md)
+   + [Utiliser des modèles de diffusion](send/create-templates.md)
    + [Bonnes pratiques relatives à la diffusion](start/delivery-best-practices.md)
    + E-mails {#emails}
       + [Concevoir et valider des e-mails](send/email.md)
@@ -99,7 +100,12 @@ ht-degree: 100%
    + Échecs, rebonds et mises en quarantaine{#failures}
       + [Quarantaines](send/quarantines.md)
       + [Diffusions en échec](send/delivery-failures.md)
-   + [Utiliser des modèles de diffusion](send/create-templates.md)
+   + Gestion de la délivrabilité {#deliverability-management}
+      + [Qu’est-ce que la délivrabilité ?](send/about-deliverability.md)
+      + [Contrôler le contenu du message](send/control-message-content.md)
+      + [Surveillance de la délivrabilité](send/monitoring-deliverability.md)
+      + [Inbox rendering](send/inbox-rendering.md)
+      + [SpamAssassin](send/spamassassin.md)
    + Messages transactionnels {#real-time}
       + [Prise en main des messages transactionnels](send/transactional.md)
       + [Créer et publier votre modèle](send/transactional-template.md)
