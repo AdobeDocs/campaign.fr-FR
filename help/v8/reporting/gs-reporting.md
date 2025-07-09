@@ -5,16 +5,20 @@ feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: f931fc0d-12c1-4bff-a4f2-153e8d91c339
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 3ca0b96c9235008148067dc9a309f420bd9a92f8
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 92%
+source-wordcount: '372'
+ht-degree: 85%
 
 ---
 
 # Prise en main du reporting{#gs-ac-reports}
 
 Adobe Campaign propose un ensemble d&#39;outils de reporting répertoriés dans cette page.
+
+* **Rapports dynamiques**
+
+  Disponible dans l’interface utilisateur web de Campaign, le rapport dynamique fournit des rapports entièrement personnalisables et en temps réel pour mesurer l’impact de vos activités marketing. Il offre la possibilité d’accéder aux données de profil, ce qui permet l’analyse démographique par dimensions de profil, telles que le genre, la ville et l’âge, en plus des données de campagne par e-mail fonctionnelles comme les ouvertures et les clics. Reportez-vous à la documentation de [Web UI v7](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html){target="_blank"}.
 
 * **Cubes**
 

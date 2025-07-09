@@ -5,10 +5,10 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
-source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
+source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '3650'
-ht-degree: 100%
+source-wordcount: '3666'
+ht-degree: 99%
 
 ---
 
@@ -332,6 +332,10 @@ Pour chaque champ, vous pouvez définir la balise associée ainsi que son format
 
 * Balise : valeur de la balise, soit au format décimal (par exemple, 12345), soit au format hexadécimal avec le préfixe 0x (par exemple, 0x12ab). Les balises peuvent aller entre 0 et 65535.
 * Format : format utilisé pour la valeur. Les valeurs binaires sont toutes des valeurs binaires signées big-endian. Pour les champs de texte, choisissez le codage utilisé par le fournisseur SMPP.
+
+>[!NOTE]
+>
+>Si le champ **Compte client** n’est pas renseigné, il sera remplacé par le numéro court.
 
 ### Réponse automatique aux MO  
 

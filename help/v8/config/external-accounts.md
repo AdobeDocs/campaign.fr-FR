@@ -5,10 +5,10 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
-workflow-type: ht
-source-wordcount: '1135'
-ht-degree: 100%
+source-git-commit: d43fb6dc75113e7e89315b731ed8b4a77951125c
+workflow-type: tm+mt
+source-wordcount: '1211'
+ht-degree: 93%
 
 ---
 
@@ -147,3 +147,11 @@ Ces comptes externes peuvent être utilisés pour importer ou exporter des donn�
    * **[!UICONTROL Chiffrement]** : type de chiffrement, **[!UICONTROL Aucun]** ou **[!UICONTROL SSL]**.
 
    * **[!UICONTROL Clé d&#39;accès]** : apprenez à trouver votre **[!UICONTROL clé d&#39;accès]** en consultant la [documentation Microsoft](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target="_blank"}.
+
+* **Microsoft Fabric** - Le compte externe **Microsoft Fabric** vous permet d’importer et d’exporter des données entre Microsoft Fabric et Adobe Campaign à l’aide de l’activité de workflow **[!UICONTROL Transfert de fichier]**. Pour configurer cette intégration, fournissez les détails suivants :
+
+   * **[!UICONTROL Serveur]** : URL de votre serveur de stockage Microsoft Fabric.
+
+   * **[!UICONTROL ID de l’application]** : identifiant unique de l’application utilisé pour authentifier les ressources Microsoft Fabric et y accéder.
+
+   * **[!UICONTROL Secret client]** : clé d’authentification ou mot de passe associé à l’application, requis pour se connecter en toute sécurité à Microsoft Fabric.

@@ -4,12 +4,11 @@ description: Découvrir comment configurer une diffusion SMS sur une infrastruct
 feature: SMS
 role: User
 level: Beginner, Intermediate
-badge: label="Disponibilité limitée" type="Informative"
 exl-id: b5eb9eaa-0ca8-478c-9ed5-e5006e9b5609
-source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
+source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '669'
+ht-degree: 96%
 
 ---
 
@@ -17,9 +16,9 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->Cette documentation concerne Adobe Campaign v8.7.2 et les versions ultérieures.
+>Cette documentation s’applique à Adobe Campaign v8.7.2 et versions ultérieures. Pour passer de l’ancien au nouveau connecteur SMS, reportez-vous à cette [note technique](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
 >
->Pour les versions plus anciennes, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up).
+>Pour les versions plus anciennes, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 L’envoi de diffusions SMS avec une infrastructure de midsourcing requiert les éléments suivants :
 

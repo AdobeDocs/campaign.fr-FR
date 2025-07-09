@@ -5,10 +5,10 @@ feature: Profiles, Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
+source-git-commit: 338013ac999ae0fedac132adf730c6f9477d73ca
+workflow-type: tm+mt
 source-wordcount: '3028'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -111,7 +111,7 @@ Par exemple, si la période de validité est définie sur la valeur par défaut 
 
 Une fois qu’un message figure dans la file d’attente du MTA depuis 3,5 jours et qu’il n’a pas été diffusé, il expire et son statut est mis à jour de **[!UICONTROL Envoi]** à **[!UICONTROL Échec]** dans les logs de diffusion.
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## Types d&#39;erreur e-mail {#email-error-types}
@@ -238,7 +238,7 @@ Pour le canal e-mail, les raisons possibles d&#39;un échec de diffusion sont r�
    <td> Inatteignable </td> 
    <td> Soft/Hard </td> 
    <td> 3 </td> 
-   <td> Une erreur s’est produite dans la chaîne de diffusion du message. Il peut s’agir d’un incident concernant le relais SMTP, d’un domaine temporairement inaccessible, etc. En fonction de l’erreur, l’adresse fera l’objet de nouvelles tentatives jusqu’à ce que le compteur d’erreurs atteigne 5, ou elle sera directement placée en quarantaine.<br /> </td> 
+   <td> Une erreur s’est produite dans la chaîne de diffusion du message. Il peut s’agir d’un incident concernant le relais SMTP, d’un domaine temporairement inaccessible, etc. En fonction de l’erreur, l’adresse sera réessayée jusqu’à ce que le compteur d’erreurs atteigne 5, ou elle sera directement mise en quarantaine.<br /> </td> 
   </tr> 
   <tr> 
    <td> Utilisateur inconnu </td> 

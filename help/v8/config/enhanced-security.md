@@ -5,10 +5,10 @@ feature: Configuration
 role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 24b252373923a9724743650b13a69d4f2c8dcd24
-workflow-type: ht
-source-wordcount: '737'
-ht-degree: 100%
+source-git-commit: 3f36d7c425dd5a9a13e1de7a77371b29a462dbea
+workflow-type: tm+mt
+source-wordcount: '727'
+ht-degree: 97%
 
 ---
 
@@ -96,7 +96,7 @@ Trois cas d’utilisation sont pris en charge :
 
 >[!CAUTION]
 >
->Seuls les bases de données On-Premise et les périphériques VPN compatibles avec AWS sont pris en charge. [En savoir plus](#vpn-databases)
+>Les bases de données On-premise et Cloud sont prises en charge. [En savoir plus](#vpn-databases)
 
 Pour garantir une utilisation correcte de cette fonctionnalité, suivez les instructions ci-dessous :
 
@@ -122,8 +122,9 @@ Les bases de données On-Premise suivantes sont prises en charge :
 * Sybase
 * Teradata
 * Hadoop via HiveSQL
+* PostgreSQL
 
-Seuls les périphériques VPN compatibles avec AWS sont pris en charge. Une liste des périphériques compatibles est disponible sur [cette page](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files){target="_blank"}.
+Les bases de données cloud sont prises en charge. Reportez-vous à la [ matrice de compatibilité ](../start/compatibility-matrix.md#FederatedDataAccessFDA).
 
 >[!NOTE]
 >

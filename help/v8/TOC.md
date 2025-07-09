@@ -5,10 +5,10 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: b4947c8c20e123877e24f57d5ad7a15aa3f304a2
+source-git-commit: 338013ac999ae0fedac132adf730c6f9477d73ca
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 100%
+source-wordcount: '790'
+ht-degree: 97%
 
 ---
 
@@ -97,8 +97,8 @@ ht-degree: 100%
       + [Analyse des diffusions](send/delivery-analysis.md)
       + [Configurer et envoyer la diffusion](send/configure-and-send.md)
       + [Optimisation de l’heure d’envoi](send/predictive.md)
-   + Échecs, rebonds et mises en quarantaine{#failures}
-      + [Quarantaines](send/quarantines.md)
+   + Échecs, rebonds et mises en quarantaine {#failures}
+      + [Quarantaine](send/quarantines.md)
       + [Diffusions en échec](send/delivery-failures.md)
    + Gestion de la délivrabilité {#deliverability-management}
       + [Qu’est-ce que la délivrabilité ?](send/about-deliverability.md)
@@ -239,6 +239,32 @@ ht-degree: 100%
       + [Formulaires de saisie](dev/forms.md)
    + [Utiliser les packages de données](dev/packages.md)
    + [API Campaign](dev/api.md)
+   + API REST {#apis}
+      + [Prise en main des API REST](dev/api/get-started-apis.md)
+      + [Recommandations et limitations](dev/api/limitations.md)
+      + [Pourquoi utiliser les API REST](dev/api/why-using-campaign-standard-apis.md)
+      + [Configuration de l&#39;accès aux API](dev/api/setting-up-api-access.md)
+      + Concepts globaux {#global-concepts}
+         + [À lire absolument](dev/api/must-read.md)
+         + [Points d’entrée](dev/api/endpoints.md)
+         + [Mécanisme des métadonnées](dev/api/metadata-mechanism.md)
+         + [Verbes](dev/api/verbs.md)
+         + [Autres opérations](dev/api/sorting.md)
+         + [Ressources personnalisées](dev/api/custom-resources.md)
+      + [Interaction avec des ressources personnalisées](dev/api/interacting-with-custom-resources.md)
+      + Gérer des profils {#managing-profiles}
+         + [Récupérer des profils](dev/api/retrieving-profiles.md)
+         + [Mettre à jour des profils](dev/api/updating-profiles.md)
+         + [Créer un profil](dev/api/creating-profiles-api.md)
+      + Gestion des services et des abonnements {#managing-services-and-subscriptiopns}
+         + [Créer un service](dev/api/creating-a-service.md)
+         + [Récupérer des abonnements](dev/api/retrieving-subscriptions.md)
+         + [Mise en œuvre des abonnements](dev/api/perform-subscriptions.md)
+         + [Supprimer des abonnements](dev/api/deleting-subscriptions.md)
+      + [Gestion des messages transactionnels](dev/api/managing-transactional-messages.md)
+      + Gestion des workflows {#managing-workflows}
+         + [Contrôle d&#39;un workflow](dev/api/controlling-a-workflow.md)
+         + [Déclenchement d&#39;une activité de signal](dev/api/triggering-a-signal-activity.md)
 + [Notes techniques de Campaign >](https://experienceleague.adobe.com/fr/docs/campaign/technotes-ac/technotes-home)
 + [Documentation de l’interface d’utilisation de Campaign Web >](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/campaign-web-home)
 

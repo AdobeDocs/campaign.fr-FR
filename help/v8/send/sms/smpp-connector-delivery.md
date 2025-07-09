@@ -4,12 +4,11 @@ description: À propos des paramètres du connecteur SMPP dans les diffusions
 feature: SMS
 role: User
 level: Beginner, Intermediate
-badge: label="Disponibilité limitée" type="Informative"
 exl-id: 704e151a-b863-46d0-b8a1-fca86abd88b9
-source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
+source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 99%
+source-wordcount: '1340'
+ht-degree: 98%
 
 ---
 
@@ -17,9 +16,9 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->Ceci s’applique à Adobe Campaign v8.7.2 et versions ultérieures.
+>Cette documentation s’applique à Adobe Campaign v8.7.2 et versions ultérieures. Pour passer de l’ancien au nouveau connecteur SMS, reportez-vous à cette [note technique](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}.
 >
->Pour les versions plus anciennes, consultez la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
+>Pour les versions plus anciennes, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 ## Flux de données du connecteur SMS {#sms-data-flow}
 
