@@ -5,18 +5,18 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 exl-id: 704e151a-b863-46d0-b8a1-fca86abd88b9
-source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
+source-git-commit: ea51863bdbc22489af35b2b3c81259b327380be4
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 98%
+source-wordcount: '1342'
+ht-degree: 83%
 
 ---
 
 # Description du connecteur SMPP {#smpp-connector-desc}
 
->[!IMPORTANT]
+>[!AVAILABILITY]
 >
->Cette documentation s’applique à Adobe Campaign v8.7.2 et versions ultérieures. Pour passer de l’ancien au nouveau connecteur SMS, reportez-vous à cette [note technique](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}.
+>Cette fonctionnalité est disponible dans tous les environnements FDA Campaign. Il n’est **pas** disponible pour les déploiements Campaign FFDA. Cette documentation s’applique à Adobe Campaign v8.7.2 et versions ultérieures. Pour passer de l’ancien au nouveau connecteur SMS, reportez-vous à cette [note technique](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
 >
 >Pour les versions plus anciennes, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
@@ -32,13 +32,13 @@ Le processus SMS héberge deux composants importants : le connecteur SMPP lu
 
 ### Flux de données pour les comptes SMPP {#sms-data-flow-smpp-accounts}
 
-Le processus SMS interroge nms:extAccount et crée de nouvelles connexions dans son connecteur SMPP, en transmettant les paramètres de chaque compte. La fréquence d’interrogation peut être ajustée dans serverConf, dans le paramètre *configRefreshMillis*.
+Le processus SMS interroge nms:extAccount et génère de nouvelles connexions dans son connecteur SMPP, en transmettant les paramètres de chaque compte. La fréquence d’interrogation peut être ajustée dans serverConf, dans le paramètre *configRefreshMillis*.
 
 Pour chaque compte SMPP actif, le connecteur SMPP tente de maintenir les connexions actives tout le temps. Il se reconnecte si la connexion est perdue.
 
 ### Flux de données lors de l’envoi de messages {#sms-data-flow-sending-msg}
 
-* Le processus SMS sélectionne les diffusions actives en analysant nms:delivery. Une diffusion est active lorsque :
+* Le processus SMS sélectionne les diffusions actives en analysant nms:delivery. Une diffusion est active lorsque :
    * Son état implique que les messages peuvent être envoyés.
    * Sa période de validité n’a pas expiré
    * Il s’agit en fait d’une diffusion (par exemple, ce n’est pas un modèle, il n’est pas supprimé).
@@ -49,28 +49,28 @@ Pour chaque compte SMPP actif, le connecteur SMPP tente de maintenir les conne
 * Le connecteur SMPP envoie le MT via une connexion d’émetteur (ou de récepteur).
 * Le fournisseur renvoie un identifiant pour ce MT. Il est inséré dans nms:providerMsgId.
 * Le processus SMS met à jour le broadlog vers le statut envoyé.
-* En cas d’erreur finale, le processus SMS met à jour le broadlog en conséquence et peut créer un nouveau type d’erreur dans nms:broadLogMsg.
+* En cas d’erreur finale, le processus SMS met à jour le broadlog en conséquence et peut créer un nouveau type d’erreur dans nms:broadLogMsg.
 
 ### Flux de données lors de la réception d’un SR {#sms-data-flow-sr}
 
 * Le connecteur SMPP reçoit et décode le SR (PDU DELIVER_SM). Il utilise des regex définis dans le compte externe pour obtenir l’identifiant et le statut du message.
-* L’identifiant du message et le statut sont insérés dans nms:providerMsgStatus.
+* L’identifiant et le statut du message sont insérés dans nms:providerMsgStatus
 * Une fois inséré, le connecteur SMPP répond avec un PDU DELIVER_SM_RESP.
 * En cas de problème au cours du processus, le connecteur SMPP envoie un PDU DELIVER_SM_RESP négatif et consigne un message.
 
 ### Flux de données lors de la réception d’un MO {#sms-data-flow-mo}
 
 * Le connecteur SMPP reçoit et décode le MO (PDU DELIVER_SM).
-* Le mot-clé est extrait du message. S’il correspond à un mot-clé déclaré, les actions correspondantes sont exécutées. Il peut écrire sur nms:address pour mettre à jour la quarantaine.
+* Le mot-clé est extrait du message. S’il correspond à un mot-clé déclaré, les actions correspondantes sont exécutées. Il peut écrire dans nms:address pour mettre à jour la quarantaine.
 * Si les fichiers TLV personnalisés sont déclarés, ils sont décodés selon leurs paramètres respectifs.
 * Le MO entièrement décodé et traité est inséré dans la table nms:inSms.
 * Le connecteur SMPP répond avec un PDU DELIVER_SM_RESP. Si une erreur a été détectée, un code d’erreur est renvoyé au fournisseur.
 
 ### Flux de données lors de la réconciliation du MT et du SR {#sms-reconciling-mt-sr}
 
-* Le composant de réconciliation SR lit périodiquement nms:providerMsgId et nms:providerMsgStatus. Les données des deux tables sont jointes.
-* Pour tous les messages qui comportent une entrée dans les deux tables, l’entrée nms:broadLog correspondante est mise à jour.
-* La table nms:broadLogMsg peut être mise à jour dans le processus si un nouveau type d’erreur est détecté, ou pour mettre à jour les compteurs des erreurs qui n’ont pas été qualifiées manuellement.
+* Le composant de réconciliation SR lit périodiquement nms:providerMsgId et nms:providerMsgStatus. Les données des deux tables sont jointes.
+* Pour tous les messages comportant une entrée dans les deux tables, l’entrée nms:broadLog correspondante est mise à jour.
+* La table nms:broadLogMsg peut être mise à jour au cours du processus si un nouveau type d&#39;erreur est détecté, ou pour mettre à jour les compteurs pour les erreurs qui n&#39;ont pas été qualifiées manuellement.
 
 ## Correspondance des entrées MT, SR et broadlog {#sms-matching-entries}
 
@@ -84,18 +84,18 @@ Voici un diagramme qui décrit l’ensemble du processus :
 * Le connecteur SMPP le formate en tant que PDU MT SUBMIT_SM.
 * Le MT est envoyé au fournisseur SMPP.
 * Le fournisseur répond avec SUBMIT_SM_RESP. SUBMIT_SM et SUBMIT_SM_RESP correspondent par leur sequence_number.
-* SUBMIT_SM_RESP fournit un identifiant provenant du fournisseur. Cet identifiant est inséré avec l’identifiant de broadlog dans la table nms:providerMsgId.
+* SUBMIT_SM_RESP fournit un identifiant provenant du fournisseur. Cet identifiant est inséré avec l’identifiant du journal large dans la table nms:providerMsgId.
 
 **Phase 2**
 
 * Le fournisseur envoie un PDU SR DELIVER_SM.
 * Le SR est analysé pour extraire l’identifiant du fournisseur, le statut et le code d’erreur. Cette étape utilise des regex d’extraction.
-* L’identifiant du fournisseur et son statut correspondant sont insérés dans nms:providerMsgStatus.
+* L&#39;identifiant du fournisseur et son statut correspondant sont insérés dans nms:providerMsgStatus.
 * Lorsque toutes les données sont insérées en toute sécurité dans la base de données, le connecteur SMPP répond avec DELIVER_SM_RESP. DELIVER_SM et DELIVER_SM_RESP correspondent par leur sequence_number.
 
 **Phase 3**
 
-* Le composant Réconciliation SR du processus SMS analyse régulièrement les tables nms:providerMsgId et nms:providerMsgStatus.
+* Le composant Réconciliation SR du processus SMS analyse périodiquement les tables nms:providerMsgId et nms:providerMsgStatus.
 * Si une ligne contient des identifiants de fournisseur correspondant dans les deux tables, les 2 entrées sont unies. Cela permet de faire correspondre l’identifiant de broadlog (stocké dans providerMsgId) avec le statut (stocké dans providerMsgStatus).
 * Le broadlog est mis à jour avec le statut correspondant.
 
