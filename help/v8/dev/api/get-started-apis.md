@@ -7,9 +7,9 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 exl-id: c6968252-a012-4029-bbb8-66f4f693e99b
-source-git-commit: ea51863bdbc22489af35b2b3c81259b327380be4
+source-git-commit: c74669a0ccdabe735eb905b7e8c1634140a7ea0b
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '239'
 ht-degree: 47%
 
 ---
@@ -43,4 +43,4 @@ Les API fournies utilisent des **concepts standard** avec une interface REST et 
 
 Tous les points d’entrée sont décrits en détail dans cette documentation avec les notions générales que vous devez connaître pour manipuler l’API, la référence complète de l’API, des exemples de code et des guides de démarrage rapide. Tous les exemples fonctionnent avec Postman, mais n’hésitez pas à utiliser votre client REST préféré.
 
-S’il manque quelque chose ou si une information semble incorrecte, posez une question à la [communauté](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-standard/ct-p/adobe-campaign-standard-community?profile.language=fr).
+S’il manque quelque chose ou si une information semble incorrecte, posez une question à la [communauté](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-standard/ct-p/adobe-campaign-standard-community).
