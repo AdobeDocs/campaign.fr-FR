@@ -1,12 +1,12 @@
 ---
 keywords: Campaign Classic;accueil;thèmes populaires
-description: Centre d'aide de Campaign v8
-title: Documentation du produit Adobe Campaign v8
+description: Trouvez de l’aide dans le centre d’aide d’Adobe Campaign v8. Découvrez les nouveautés, améliorations et correctifs de Campaign v8.
+title: Documentation du produit Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: e921339532697109758f7ca9f3a136cef58e48ab
+source-git-commit: dc8aef5fe542db06368a2cc0c832b4d43b069fc7
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 98%
+source-wordcount: '350'
+ht-degree: 91%
 
 ---
 
