@@ -5,18 +5,18 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: ad96c126836981f861c246eafa2ec7d2c0e179dc
+version: Campaign v8, Campaign Classic v7
+source-git-commit: b24e05f152bc299ea7953856bfa71950b5cc9837
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 93%
+source-wordcount: '497'
+ht-degree: 77%
 
 ---
 
+
 # Utiliser des audiences dans Campaign{#gs-ac-audiences}
 
-Les profils sont des contacts stockés dans la base de données Campaign.
-
-Dans Adobe Campaign, les **destinataires** sont les profils par défaut ciblés pour l&#39;envoi de diffusions (e-mails, SMS, etc.). Les données de destinataire stockées dans la base de données permettent de filtrer la cible qui recevra une diffusion donnée et d&#39;ajouter des données de personnalisation dans le contenu de votre diffusion. D&#39;autres types de profils existent dans la base de données. Ils sont conçus pour différents usages. Par exemple, les profils de contrôle servent à tester vos diffusions avant leur envoi vers la cible finale.
+Les profils représentent les contacts stockés dans votre base de données Adobe Campaign. Par défaut, les **destinataires** sont les profils principaux utilisés lors de l’envoi de diffusions telles que les e-mails, les SMS ou le publipostage direct. Les données de destinataires stockées dans la base de données vous permettent de définir et de filtrer les audiences cibles et de personnaliser le contenu des diffusions. Outre les destinataires, d’autres types de profils existent à des fins spécifiques. Par exemple, les profils de contrôle vous permettent de tester les diffusions avant leur envoi à votre audience réelle.
 
 Découvrez comment importer, mettre à jour et gérer des profils et des audiences [dans cette section](../audiences/gs-audiences.md).
 
