@@ -5,10 +5,10 @@ type: Event
 title: Notes techniques d’Adobe Campaign
 description: Notes techniques de Campaign
 breadcrumb-title: Notes techniques de Campaign
-source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
+source-git-commit: d80d81bf8c25c467c909c9ccac7c31e6963409f0
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 94%
+source-wordcount: '73'
+ht-degree: 91%
 
 ---
 
@@ -30,4 +30,5 @@ ht-degree: 94%
    + [Obsolescence de la console cliente 32 bits](upgrades/console.md)
    + Sécurité {#security}
       + [Rotation des informations d’identification de la clientèle](security/credential-rotation-guide.md)
+      + [Chiffrement asymétrique](security/asymetric-encryption.md)
 + [&lt; Retour à la documentation de Campaign v8](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/campaign-home)
