@@ -7,16 +7,14 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 exl-id: c6968252-a012-4029-bbb8-66f4f693e99b
-source-git-commit: 1d9d4111cde1e230220a04c8fd10a126116339ad
+source-git-commit: 115b7b6824f3736e03f9fb87898f1264f9bab636
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 46%
+source-wordcount: '231'
+ht-degree: 43%
 
 ---
 
 # Prise en main des API REST de Campaign {#get-started-apis}
-
-
 
 Les API REST Campaign ont pour but de vous permettre **de créer des intégrations** pour Adobe Campaign et **de créer votre propre écosystème** en interfaçant Adobe Campaign avec l’ensemble des technologies que vous utilisez.
 
@@ -24,7 +22,7 @@ Les API REST Campaign ont pour but de vous permettre **de créer des intégratio
 >
 >* Cette fonctionnalité est disponible uniquement à la demande, pour tous les [environnements FDA Campaign](../../architecture/fda-deployment.md). Il n’est **pas** disponible pour les déploiements [ Entreprise (FFDA)](../../architecture/enterprise-deployment.md). Pour y accéder, contactez votre représentant ou représentante Adobe.
 >
->* Avant d’effectuer des appels aux API, vérifiez les limites de taille correspondant à votre contrat de licence. Pour plus d&#39;informations, consultez la page [Description du produit Campaign](https://helpx.adobe.com/fr/legal/product-descriptions/campaign-standard.html#RessourcesdinfrastructureinformatiqueparniveauxdeProfilsactifs){target="_blank"}.
+>* Avant d’effectuer des appels aux API, vérifiez les limites de taille correspondant à votre contrat de licence. Pour en savoir plus à ce sujet, consultez la [Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 
 Avec les API REST Adobe Campaign, vous avez accès aux fonctionnalités suivantes :
@@ -44,4 +42,3 @@ Les API fournies utilisent des **concepts standard** avec une interface REST et 
 
 Tous les points d’entrée sont décrits en détail dans cette documentation avec les notions générales que vous devez connaître pour manipuler l’API, la référence complète de l’API, des exemples de code et des guides de démarrage rapide. Tous les exemples fonctionnent avec Postman, mais n’hésitez pas à utiliser votre client REST préféré.
 
-S’il manque quelque chose ou si une information semble incorrecte, posez une question à la [communauté](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-standard/ct-p/adobe-campaign-standard-community?profile.language=fr){target="_blank"}.

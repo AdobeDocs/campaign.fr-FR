@@ -5,10 +5,10 @@ feature: API
 role: Developer
 level: Intermediate, Experienced
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
-source-git-commit: 1d9d4111cde1e230220a04c8fd10a126116339ad
+source-git-commit: 115b7b6824f3736e03f9fb87898f1264f9bab636
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 95%
+source-wordcount: '286'
+ht-degree: 88%
 
 ---
 
@@ -21,10 +21,9 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->* Selon votre modèle de déploiement, vous pouvez également utiliser des API REST avec Campaign v8. [En savoir plus](../dev/api/get-started-apis.md).
+>Selon votre modèle de déploiement, vous pouvez également utiliser des API REST avec Campaign v8. [En savoir plus](../dev/api/get-started-apis.md).
 
-
-Vous pouvez utiliser des API JavaScript pour écrire dans la base de données cloud de Campaign ou lire à partir de la base de données :
+Vous pouvez utiliser les [API JavaScript de Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=fr){target="_blank"} pour écrire dans la base de données cloud de Campaign ou lire à partir de la base de données :
 
 * API spécifiques à l&#39;entreprise qui vous permettent d&#39;agir sur chaque objet : diffusions, workflows, abonnements, etc. Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=fr){target="_blank"}.
 * API génériques d&#39;accès aux données pour interroger les données du modèle de données. Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html?lang=fr){target="_blank"}.
@@ -55,3 +54,4 @@ Pour utiliser les API et interagir avec [!DNL Adobe Campaign], vous devez égale
 **Rubriques connexes**
 
 * [Bonnes pratiques relatives au modèle de données](datamodel-best-practices.md)
+* [Documentation JSAPI Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=fr){target="_blank"}
