@@ -6,10 +6,10 @@ role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '994'
-ht-degree: 100%
+source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 96%
 
 ---
 
@@ -28,6 +28,13 @@ En utilisant Campaign, vous pouvez :
 * **Automatiser** la diffusion de messages et d&#39;offres pertinents et opportuns
 
 ![](assets/do-not-localize/ac-capabilities.png)
+
+
+>[!AVAILABILITY]
+>
+>Sauf mention contraire dans les pages, la documentation d’Adobe Campaign (console) s’applique à Campaign Classic v7 et Campaign v8.
+>
+>Veuillez noter que certaines références contenues dans la documentation peuvent toujours faire référence à une image de marque antérieure, mais s’appliquent toujours à l’offre actuelle.
 
 ## Profil client intégré {#integrated-customer-profile}
 
