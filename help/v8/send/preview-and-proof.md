@@ -106,4 +106,4 @@ Par défaut, les messages de BAT sont identifiés par la mention `Proof #N` dans
 
 Découvrez comment envoyer et valider un BAT pour une diffusion e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/333404)
+>[!VIDEO](https://video.tv.adobe.com/v/3447001?captions=fre_fr)
