@@ -90,7 +90,7 @@ Dans l’interface utilisateur web de Campaign, configurez la définition d’é
 
    ![](assets/cus-schema2.png){zoomable="yes"}
 
-1. Sélectionnez l’onglet correspondant à votre canal et définissez comment les champs seront affichés dans l’écran de contenu de la diffusion. Pour plus d’informations sur la modification de l’écran, consultez cette [page](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html#fields){target="_blank"}.
+1. Sélectionnez l’onglet correspondant à votre canal et définissez comment les champs seront affichés dans l’écran de contenu de la diffusion. Pour plus d’informations sur la modification de l’écran, consultez cette [page](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html?lang=fr#fields){target="_blank"}.
 
    ![](assets/cus-schema3.png){zoomable="yes"}
 
