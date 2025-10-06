@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
+source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
 workflow-type: tm+mt
-source-wordcount: '1253'
-ht-degree: 72%
+source-wordcount: '1129'
+ht-degree: 74%
 
 ---
 
@@ -52,7 +52,7 @@ Une fois connecté à Campaign, vous accédez à la page d&#39;accueil d&#39;Ado
 
 >[!NOTE]
 >
->Si la carte d’interface utilisateur web n’est pas affichée, assurez-vous que les champs suivants ne restent pas vides dans votre compte externe A[Adobe Experience Cloud &#x200B;](../config/external-accounts.md) : **Serveur**, **Client**, **Serveur de rappel** et **Marque d’association**.
+>Si la carte d’interface utilisateur web n’est pas affichée, assurez-vous que les champs suivants ne restent pas vides dans votre compte externe A[Adobe Experience Cloud ](../config/external-accounts.md) : **Serveur**, **Client**, **Serveur de rappel** et **Marque d’association**.
 
 Vous pouvez également accéder au [Panneau de Contrôle de Campaign](../config/self-service.md) à partir de la page d&#39;accueil.
 
@@ -60,7 +60,7 @@ Vous pouvez également accéder au [Panneau de Contrôle de Campaign](../config/
 
 Une fois connecté à Campaign, vous accédez à la page d&#39;accueil d&#39;Adobe Campaign avec des liens et des raccourcis pour accéder aux fonctionnalités, à la documentation, au site web d&#39;assistance et à la communauté Campaign.
 
-Accueil de la console cliente ![Campaign Classic v7 &#x200B;](assets/v7_user_interface_home.png)
+Accueil de la console cliente ![Campaign Classic v7 ](assets/v7_user_interface_home.png)
 
 
 >[!ENDTABS]
@@ -189,25 +189,7 @@ Les principales différences entre l&#39;anglais américain et l&#39;anglais bri
 </table>
 
 
+## Ressources supplémentaires
 
-## Unités par défaut {#default-units}
-
-Dans les champs qui expriment une durée (par exemple : période de validité des ressources d&#39;une diffusion, délai de validation d&#39;une tâche, etc.), la valeur peut être exprimée dans les **unités** suivantes :
-
-* **[!UICONTROL s]** pour les secondes,
-* **[!UICONTROL mn]** pour les minutes,
-* **[!UICONTROL h]** pour les heures,
-* **[!UICONTROL j]** pour les jours.
-
-
-## Énumération {#enumeration}
-
-À l’aide des champs de saisie avec une liste déroulante, vous pouvez saisir une valeur d’énumération qui peut être stockée puis proposée en tant qu’option dans la liste déroulante.
-
-Par exemple, dans le champ **[!UICONTROL Ville]** de l’onglet **[!UICONTROL Général]** d’un profil de destinataire, vous pouvez saisir Londres. Lorsque vous appuyez sur Entrée pour confirmer cette valeur, un message vous demande si vous souhaitez enregistrer cette valeur pour l’énumération associée au champ.  Si vous cliquez sur **[!UICONTROL Oui]**, cette valeur est disponible dans la liste déroulante du champ approprié.
-
-Les énumérations (également appelées &#39;énumérations&#39;) sont gérées par l&#39;administrateur via la section **[!UICONTROL Administration > Plateforme > Énumérations]**.
-
-Découvrez comment [utiliser des énumérations](../dev/enumerations.md)
-
-En savoir plus sur [Énumérations dans les schémas](../dev/schema-structure.md#enumerations)
+* **[Utiliser des énumérations](../dev/enumerations.md)** - Standardisez les valeurs de champ avec des listes déroulantes prédéfinies pour une saisie plus rapide et plus cohérente des données.
+* **[Énumérations dans les schémas](../dev/schema-structure.md#enumerations)** - En tant que développeur ou développeuse Campaign, utilisez des énumérations libres, fixes ou basées sur des bases de données dans vos schémas pour contrôler les valeurs de champ.

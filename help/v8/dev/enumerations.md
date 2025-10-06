@@ -5,14 +5,14 @@ feature: Configuration, Application Settings
 role: Developer
 version: Campaign v8, Campaign Classic v7
 level: Intermediate, Experienced
-source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
+source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
 workflow-type: tm+mt
-source-wordcount: '858'
-ht-degree: 57%
+source-wordcount: '882'
+ht-degree: 89%
 
 ---
 
-# Gérer les énumérations {#manage-enumerations}
+# Utiliser les énumérations {#enumerations}
 
 Une énumération (également appelée liste détaillée) est une liste prédéfinie de valeurs que vous pouvez utiliser pour renseigner certains champs. Les énumérations permettent de normaliser les valeurs de champ, de rendre la saisie de données plus cohérente et de simplifier les requêtes.
 
@@ -22,101 +22,97 @@ Lorsqu’elles sont disponibles, les valeurs s’affichent dans une liste dérou
 
 Certains champs de console sont configurés avec des énumérations. Si une énumération est **ouverte**, vous pouvez également ajouter de nouvelles valeurs directement dans le champ.
 
-## Accéder aux énumérations
+![Accéder aux énumérations](assets/enumerations-menu.png)
 
-Les valeurs utilisées dans ces champs sont gérées de manière centralisée. Vous pouvez les ajouter, les modifier, les mettre à jour ou les supprimer dans l’arborescence de l’explorateur, sous **Administration** `>` **Plateforme** `>` **Énumérations**.
+## Types d’énumération {#types-of-enum}
 
-* La section supérieure propose la liste des champs pour lesquels une énumération a été définie.
-* La section inférieure répertorie les valeurs disponibles.
+Les énumérations sont stockées dans le dossier **[!UICONTROL Administration > Plateforme > Énumérations]** de l’explorateur.
 
-Lorsqu’une énumération est **[!UICONTROL ouverte]**, les utilisateurs peuvent saisir une nouvelle valeur directement dans le champ correspondant de l’interface utilisateur.
+Celles-ci peuvent être : Ouverte, Système, Émoticône ou Fermée.
 
-Lorsqu’une énumération est **[!UICONTROL Fermée]**, les nouvelles valeurs ne peuvent être ajoutées qu’à partir du menu **Énumération**.
+* Une énumération **Ouverte** permet aux utilisateurs et utilisatrices d’ajouter des valeurs directement dans les champs à partir de cette énumération.
+* Une énumération **Fermée** a une liste fixe de valeurs qui ne peut être modifiée qu’à partir du dossier **[!UICONTROL Administration > Plateforme > Énumérations]** de l’explorateur.
+* Une énumération **Émoticône** est utilisée pour mettre à jour la liste des émoticônes. En savoir plus
+* Une énumération **Système** est associée aux champs système et est fournie avec un nom interne.
 
-## Ajouter une nouvelle valeur
+Pour les énumérations **Ouverte** et **Fermée**, des options spécifiques sont disponibles :
 
-Pour créer une nouvelle valeur d&#39;énumération, cliquez sur le bouton **[!UICONTROL Ajouter]**.
-
-![](assets/enumeration_screen.png)
-
-Saisissez le libellé de la valeur.
+* L’**énumération simple** est le type standard.
+* L’énumération **Cleansing des alias** est utilisée pour harmoniser les valeurs d’énumération stockées dans la base de données. [En savoir plus](#alias-cleansing)
+* **Réservée à la mise en classe** est une option permettant de lier les valeurs d’un cube à cette énumération. [En savoir plus](../reporting/gs-cubes.md)
 
 
 ## Cleansing des alias {#alias-cleansing}
 
-Dans les champs d’énumération, vous pouvez saisir des valeurs autres que des valeurs d’énumération. Ces valeurs peuvent être stockées telles quelles ou faire l&#39;objet d&#39;une normalisation.
+Dans les champs d’énumération, vous pouvez sélectionner une valeur ou saisir une valeur personnalisée qui n’est pas disponible dans la liste déroulante. Les valeurs personnalisées peuvent être ajoutées aux valeurs d’énumération existantes, en tant que nouvelles. Dans ce cas, l’option **[!UICONTROL Ouverte]** doit être sélectionnée. Ces valeurs personnalisées peuvent être nettoyées à l’aide des fonctionnalités de cleansing des alias. Par exemple, si un utilisateur ou une utilisatrice accède à `Adob` au lieu de `Adobe`, le processus de cleansing des alias peut le remplacer automatiquement par le terme correct.
 
 >[!CAUTION]
 >
->La normalisation des données est un processus critique qui affecte les données de la base. En effet, Adobe Campaign procède à la mise à jour en masse de données, ce qui peut impliquer la suppression de certaines valeurs. Cette opération est donc réservée à des utilisateurs avertis.
+>La normalisation des données est un processus critique qui affecte les données de la base. En effet, Adobe Campaign procède à la mise à jour en masse de données, ce qui peut impliquer la suppression de certaines valeurs. Cette opération est donc réservée à des utilisateurs et utilisatrices avertis.
 
-En effet, la valeur saisie peut être :
+Activez l’option **[!UICONTROL Cleansing des alias]** pour utiliser les fonctionnalités de normalisation des données pour une énumération. Lorsque cette option est sélectionnée, l’onglet **[!UICONTROL Alias]** s’affiche au bas de la fenêtre.
 
-* ajoutée aux valeurs de l&#39;énumération : l&#39;option **[!UICONTROL Ouverte]** doit être cochée,
-* soit remplacé automatiquement par son alias correspondant : dans ce cas, ce cas doit alors être défini dans l&#39;onglet **[!UICONTROL Alias]** de l&#39;énumération,
-* stockée dans la liste des alias : un alias pourra lui être attribué ultérieurement.
+Lorsqu’un utilisateur ou une utilisatrice saisit une valeur qui n’existe pas dans une énumération Cleasing des alias, elle est ajoutée à la liste de **valeurs**. Vous pouvez [créer des alias à partir de ces valeurs](#convert-to-alias) ou [créer de nouveaux alias](#create-alias).
 
-### Créer un alias {#creating-an-alias}
-
-L&#39;option **[!UICONTROL Support des alias]** permet de gérer les alias pour l&#39;énumération sélectionnée. Lorsque cette option est sélectionnée, l’onglet **[!UICONTROL Alias]** s’affiche au bas de la fenêtre.
+### Créer un alias{#create-alias}
 
 Pour créer un alias, procédez comme suit :
 
-1. Accédez à l’énumération pour mettre à jour tout clic **[!UICONTROL Ajouter]**.
+1. Cliquez sur le bouton **[!UICONTROL Ajouter]** de l’onglet **[!UICONTROL Alias]**.
+1. Saisissez l’alias à convertir et sélectionnez la valeur à appliquer dans la liste déroulante.
 
-   ![](assets/enumeration_alias_create.png)
+   ![Créer un alias](assets/new-alias.png)
 
-1. Saisissez l&#39;alias à transformer et la valeur qui sera appliquée et cliquez sur **[!UICONTROL Ok]**.
+1. Cliquez sur **[!UICONTROL Ok]** pour confirmer.
 
-1. Vérifiez les paramètres avant de valider cette opération.
+1. Enregistrez vos modifications. Le remplacement des valeurs est effectué par le workflow **Cleansing des alias** exécuté toutes les nuits. Pour plus d’informations, consultez la section [Exécuter le cleansing des données](#running-data-cleansing).
 
->[!CAUTION]
->
->Une fois cette étape confirmée, les valeurs précédentes peuvent ne pas être récupérées : elles sont remplacées.
+Pour tous les champs basés sur cette énumération, lorsqu’un utilisateur ou une utilisatrice saisit la valeur **Adob** dans un champ « société » (dans la console cliente Adobe Campaign ou dans un formulaire web), cette valeur sera automatiquement remplacée par la valeur **Adobe**.
 
-Ainsi, lorsqu&#39;un utilisateur renseigne la valeur **NEILSEN** dans un champ « société » (dans la console Adobe Campaign ou dans un formulaire), elle est remplacée automatiquement par la valeur **NEILSEN Ltd**. Le remplacement des valeurs est effectué par le workflow **Cleansing des alias**. Pour plus d’informations, consultez la section [Exécuter le cleansing des données](#running-data-cleansing).
+### Convertir une valeur incorrecte en alias{#convert-to-alias}
 
-![](assets/enumeration_alias_use.png)
+Vous pouvez également convertir une valeur d’énumération existante en alias. Procédez comme suit :
 
-### Convertir les valeurs en alias {#values-into-aliases}
+1. Dans la liste des valeurs d’une énumération, faites un clic droit et accédez à **[!UICONTROL Actions... > Convertir les valeurs en alias...]**.
 
-Vous pouvez convertir des valeurs existantes en alias. Pour ce faire, procédez comme suit :
+   ![Convertir une valeur en alias](assets/convert-into-aliases.png)
 
-1. Faites un clic droit dans la liste des valeurs et choisissez **[!UICONTROL Convertir les valeurs en alias...]**.
-
-1. Sélectionnez les valeurs à convertir et cliquez sur **[!UICONTROL Suivant]**.
-
+1. Sélectionnez les valeurs à convertir en alias et cliquez sur **[!UICONTROL Suivant]**.
 1. Cliquez sur **[!UICONTROL Démarrer]** pour lancer la conversion.
 
-Une fois l&#39;exécution terminée, l&#39;alias est ajouté dans la liste des alias.
+   Une fois l’exécution terminée, des alias sont ajoutés à la liste, dans l’onglet **Alias**. Vous pouvez associer une valeur correcte pour remplacer les entrées incorrectes. Procédez comme suit :
 
-### Récupérer les hits d’alias {#alias-hits}
+1. Sélectionnez une valeur à nettoyer.
+1. Cliquez sur le bouton **Détail...**
+1. Sélectionnez la nouvelle valeur dans la liste déroulante.
 
-Lorsque les utilisateurs saisissent des valeurs qui ne sont pas incluses dans l’énumération, elles sont stockées dans l’onglet **[!UICONTROL Alias]**.
+   ![Créer un alias](assets/define-new-alias.png)
 
-Le workflow technique **Cleansing des alias** récupère ces valeurs toutes les nuits pour mettre à jour l’énumération. Pour plus d&#39;informations, consultez la section [Exécution du cleansing des données](#running-data-cleansing)
 
-Si nécessaire, la colonne **[!UICONTROL Accès]** peut afficher le nombre de fois où cette valeur a été saisie. Cependant, le calcul de cette valeur peut prendre du temps et de la mémoire. Voir à ce sujet la section [Calcul des occurrences de saisie](#calculating-entry-occurrences).
+>[!NOTE]
+>
+>Vous pouvez effectuer le suivi des occurrences d’un alias dans la colonne **[!UICONTROL Accès]** du sous-onglet **[!UICONTROL Alias]**. Cette action permet d’afficher le nombre de fois où cette valeur a été saisie.  [En savoir plus](#calculate-entry-occurrences).
 
-### Exécuter le cleansing des données {#run-data-cleansing}
+### Exécuter le cleansing des données {#running-data-cleansing}
 
-Le cleansing des données est effectué par le workflow technique **[!UICONTROL Cleansing des alias]**. Les paramétrages définis pour les énumérations sont appliqués lors de son exécution. Voir [Workflow de cleansing des alias](#alias-cleansing-workflow).
+Le cleansing des données est effectué par le workflow technique **[!UICONTROL Cleansing des alias]**. Par défaut, il est exécuté quotidiennement.
 
-Vous pouvez déclencher la normalisation via le lien **[!UICONTROL Uniformiser les valeurs...]**.
+Vous pouvez également déclencher le cleansing via le lien **[!UICONTROL Nettoyer les valeurs...]**.
 
 Le lien **[!UICONTROL Paramètres avancés...]** permet de définir la date de prise en compte des valeurs collectées.
 
 Cliquez sur le bouton **[!UICONTROL Démarrer]** pour lancer l&#39;uniformisation des données.
 
-### Calculer les occurrences de saisie {#entry-occurrences}
+### Surveiller les occurrences {#calculate-entry-occurrences}
 
-Le sous-onglet **[!UICONTROL Alias]** d&#39;une énumération peut afficher le nombre d&#39;occurrences d&#39;un alias parmi toutes les valeurs saisies. Ces informations sont une estimation qui sera affichée dans la colonne **[!UICONTROL Accès]**.
+Le sous-onglet **[!UICONTROL Alias]** d’une énumération peut afficher le nombre d’occurrences d’un alias parmi toutes les valeurs renseignées. Ces informations sont une estimation qui sera affichée dans la colonne **[!UICONTROL Accès]**.
 
 >[!CAUTION]
 >
->Le calcul des occurrences de saisie d&#39;un alias peut être long. Cette fonctionnalité doit par conséquent être utilisée avec précaution.
+>Le calcul des occurrences de saisie d’un alias peut prendre beaucoup de temps.
+>
 
-Vous pouvez lancer manuellement le calcul des occurrences via le lien **[!UICONTROL Nettoyer les valeurs...]**. Pour cela, cliquez sur le lien **[!UICONTROL Paramètres avancés]**, puis sélectionnez la ou les options souhaitées.
+Vous pouvez lancer manuellement le calcul des occurrences via le lien **[!UICONTROL Nettoyer les valeurs...]**. Pour ce faire, cliquez sur le lien **[!UICONTROL Paramètres avancés...]** et sélectionnez une ou plusieurs options.
 
 * **[!UICONTROL Actualiser le nombre d&#39;apparitions des alias]** : permet de mettre à jour les occurrences déjà calculées, à partir de la date de prise en compte renseignée.
 * **[!UICONTROL Recalculer depuis le début le nombre d&#39;apparitions des alias]** : permet de réinitialiser tout le calcul sur l&#39;ensemble de la plateforme Adobe Campaign.
@@ -127,11 +123,3 @@ Pour cela, créez une copie du workflow **[!UICONTROL Gestion des alias]**, modi
 
 * **updateHits** pour actualiser le nombre d’apparitions des alias,
 * **-updateHits:full** pour recalculer tous les accès aux alias.
-
-### Workflow de gestion des alias {#alias-cleansing-workflow}
-
-Le workflow **Gestion des alias** exécute la normalisation des valeurs d&#39;énumération. Par défaut, sa fréquence d&#39;exécution est quotidienne.
-
-Il est accessible à partir du noeud **[!UICONTROL Administration > Exploitation > Workflows techniques]**.
-
-

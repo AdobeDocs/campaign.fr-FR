@@ -5,10 +5,10 @@ feature: Microsoft CRM Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
-workflow-type: ht
-source-wordcount: '1410'
-ht-degree: 100%
+source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
+workflow-type: tm+mt
+source-wordcount: '1420'
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Pour connecter Microsoft Dynamics 365 à Adobe Campaign via l’**API Web**, co
 
 ### Obtention de l&#39;identifiant client Dynamics 365 {#get-client-id-microsoft}
 
-Pour obtenir l&#39;identifiant (client) d’application, vous devez enregistrer une application dans Azure Active Directory.
+Pour obtenir l’identifiant (client) d’application, vous devez enregistrer une application dans Azure Active Directory.
 
 1. Parcourez **Azure Active Directory > Enregistrements des applications**, puis sélectionnez **Nouvel enregistrement**.
 1. Saisissez un nom unique qui peut aider à identifier une instance, par exemple **adobecampaign`<instance identifier>`**.
@@ -57,7 +57,7 @@ Pour obtenir l’**Identifiant de la clé de certificat (customKeyIdentifier)** 
 
 Procédez comme suit :
 
-1. Parcourez **Azure Active Directory > Enregistrements des applications** et sélectionnez l&#39;application qui a été créée précédemment.
+1. Parcourez **Azure Active Directory > Enregistrements des applications** et sélectionnez l’application qui a été créée précédemment.
 1. Sélectionnez **Certificats et secret**.
 1. Dans l’onglet **Certificats**, cliquez sur **Téléchargement du certificat**.
 1. Téléchargez votre certificat public.
@@ -87,7 +87,7 @@ Vous devez ensuite encoder le certificat en base64. Pour cela, vous pouvez utili
 
 **Étape 1** : configurez les **autorisations obligatoires** pour l&#39;application qui a été créée.
 
-1. Accédez à **Azure Active Directory > Enregistrements des applications** et sélectionnez l&#39;application qui a été créée précédemment.
+1. Accédez à **Azure Active Directory > Enregistrements des applications** et sélectionnez l’application qui a été créée précédemment.
 1. Cliquez sur **Paramètres** en haut à gauche.
 1. Sur **Autorisations obligatoires**, cliquez sur **Ajouter** et **Sélectionner une API > Dynamics CRM Online**.
 1. Cliquez sur **Sélectionner**, activez la case **Accéder à Dynamics 365 en tant qu’utilisateurs de l’organisation** et cliquez sur **Sélectionner**.
@@ -128,7 +128,7 @@ L&#39;utilisateur de l&#39;application est l&#39;utilisateur que l&#39;applicati
 
 1. Depuis [Microsoft Azure](https://portal.azure.com), accédez à **Paramètres > Sécurité > Utilisateurs**.
 1. Cliquez dans la liste déroulante, sélectionnez **Utilisateurs de l&#39;application**, puis cliquez sur **Nouveau**.
-1. Utilisez le même nom d&#39;utilisateur que celui créé dans Active Directory ci-dessus.
+1. Utilisez le même nom d’utilisateur que celui créé dans Active Directory ci-dessus.
 1. Affectez l&#39;**ID de l&#39;application** à [l&#39;application que vous avez créée précédemment](#get-client-id-microsoft).
 1. Cliquez sur **Gérer les rôles** et sélectionnez le rôle **Administrateur système** pour l&#39;utilisateur.
 
@@ -194,6 +194,8 @@ Adobe Campaign et Microsoft Dynamics 365 sont maintenant connectés. Vous pouv
 Pour synchroniser les données entre Adobe Campaign et Microsoft CRM, créez un workflow et utilisez l’activité **[!UICONTROL Connecteur CRM]**.
 
 Pour en savoir plus sur la synchronisation des données, consultez [cette page](crm-data-sync.md).
+
+En savoir plus sur la gestion des énumérations dans Campaign [sur cette page](../dev/enumerations.md).
 
 ### Types de données de champ pris en charge {#ms-dyn-supported-types}
 
