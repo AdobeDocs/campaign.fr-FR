@@ -6,10 +6,10 @@ role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '4360'
-ht-degree: 100%
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
+workflow-type: tm+mt
+source-wordcount: '4363'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe Campaign vous permet d&#39;importer des données dans la base de données
 
 >[!NOTE]
 >
->Vous pouvez importer des données sans les associer aux données de la base en utilisant la fonction **[!UICONTROL Importer une liste.]** Les données seront alors utilisables exclusivement dans les workflows via l&#39;objet **[!UICONTROL Lecture de liste]**. Pour plus d’informations, consultez [cette page](../../automation/workflow/read-list.md).
+>Vous pouvez importer des données sans les mapper aux données de la base en utilisant la fonction **[!UICONTROL Importer une liste]**. Les données seront alors utilisables exclusivement dans les workflows via l&#39;objet **[!UICONTROL Lecture de liste]**. Pour plus d’informations, consultez [cette page](../../automation/workflow/read-list.md).
 
 L’assistant d’import vous permet de configurer un import, de définir ses options (comme la transformation de données) et de lancer son exécution. Il s’agit d’une série d’écrans dont le contenu dépend du type d’import (simple ou multiple) et des droits de l’opérateur ou de l’opératrice.
 
@@ -104,7 +104,7 @@ Le lien **[!UICONTROL Paramètres avancés...]** permet d&#39;accéder aux optio
 
    * **[!UICONTROL Ne pas mettre à jour les énumérations]**
 
-     Cochez cette option pour ne pas enrichir la liste des valeurs énumérées dans la base de données.
+     Cochez cette option pour ne pas enrichir la liste des valeurs énumérées en base. En savoir plus sur les [énumérations](../config/enumerations.md).
 
 * Onglet **[!UICONTROL Variables]**
 
@@ -146,7 +146,7 @@ Vous pouvez visualiser le résultat du paramétrage dans la zone d&#39;aperçu s
 
 Cliquez sur **[!UICONTROL OK]** pour enregistrer ce formatage puis sur **[!UICONTROL Suivant]** pour afficher l&#39;étape suivante.
 
-## Etape 3 - Association des champs {#step-3---field-mapping}
+## Étape 3 - Mapping des champs {#step-3---field-mapping}
 
 Vous devez ensuite choisir le schéma de destination et associer les données de chaque colonne à des champs de la base de données.
 
@@ -155,7 +155,7 @@ Vous devez ensuite choisir le schéma de destination et associer les données de
 * Le champ **[!UICONTROL Schéma destination]** permet de sélectionner le schéma dans lequel seront importées les données. Cette information est obligatoire. Cliquez sur l&#39;icône **[!UICONTROL Choisir le lien]** pour sélectionner un des schéma existants. Cliquez sur **[!UICONTROL Editer le lien]** pour visualiser le contenu de la table sélectionnée.
 * Le tableau central reprend tous les champs définis dans le fichier source. Sélectionnez les champs à importer afin de leur associer un champ de destination. Ces champs peuvent être associés manuellement ou automatiquement.
 
-  Pour associer un champ manuellement, cliquez sur la case à cocher pour sélectionner le champ source et cliquez dans la seconde colonne pour activer la cellule correspondant au champ sélectionné. Cliquez ensuite sur l&#39;icône **[!UICONTROL Editer l&#39;expression]** pour afficher tous les champs de la table courante. Sélectionnez le champ de destination et cliquez sur **[!UICONTROL OK]** pour valider l&#39;association.
+  Pour associer un champ manuellement, cliquez sur la case à cocher pour sélectionner le champ source et cliquez dans la seconde colonne pour activer la cellule correspondant au champ sélectionné. Cliquez ensuite sur l&#39;icône **[!UICONTROL Editer l&#39;expression]** pour afficher tous les champs de la table courante. Sélectionnez le champ de destination et cliquez sur **[!UICONTROL OK]** pour valider le mapping.
 
   Pour associer automatiquement les champs sources et les champs de destination, cliquez sur l&#39;icône **[!UICONTROL Deviner les champs destination]** située à droite de la liste des champs. Les champs proposés peuvent si besoin être modifiés.
 
@@ -246,11 +246,11 @@ Il convient aussi de ne pas choisir un champ qui risque d&#39;être modifié lor
 >
 >Un doublon est un élément qui est présent au moins deux fois dans le fichier à importer.
 >
->Un duplicata est un élément qui est présent à la fois dans le fichier à importer et dans la base.
+>Un doublon est un élément qui est présent à la fois dans le fichier à importer et dans la base de données.
 
 Le champ **[!UICONTROL Gestion des doublons]** permet de configurer le déduplication des données. Le déduplication concerne les enregistrements qui apparaissent plusieurs fois **dans le fichier source** (ou les fichiers sources dans le cas d&#39;un import multi-fichiers), c&#39;est-à-dire des lignes pour lesquelles les champs de la clé de réconciliation sont identiques.
 
-* La gestion des doublons en mode **[!UICONTROL Mise à jour]** (mode par défaut) n&#39;effectue pas de dédoublonnage. Par conséquent, le dernier enregistrement est prioritaire (puisqu&#39;il met à jour les données du ou des précédents enregistrements). Le comptage de doublons n&#39;est pas effectué dans ce mode.
+* La gestion des doublons en mode **[!UICONTROL Mise à jour]** (mode par défaut) n’effectue pas de déduplication. Par conséquent, le dernier enregistrement est prioritaire (puisqu’il met à jour les données du ou des précédents enregistrements). Le comptage de doublons n’est pas effectué dans ce mode.
 * Les gestions des doublons en mode **[!UICONTROL Ignorer]** ou **[!UICONTROL Rejeter l&#39;entité]** excluent les doublons de l&#39;import. Dans ce cas, aucun enregistrement n&#39;est importé.
 * En mode **[!UICONTROL Rejeter l&#39;entité]**, l&#39;élément n&#39;est pas importé et une erreur est générée dans les logs de l&#39;importation.
 * En mode **[!UICONTROL Ignorer]**, l&#39;élément n&#39;est pas importé mais aucune trace de l&#39;erreur n&#39;est conservée. Ce mode permet d&#39;optimiser les performances.
@@ -300,7 +300,7 @@ L’étape suivante de l’assistant d’import permet de choisir ou créer le d
 
 >[!NOTE]
 >
->Cette étape n&#39;est proposée que dans le cas d&#39;un import de destinataires et si vous utilisez la table des destinataires Adobe Campaign par défaut (**nms:recipient**).
+>Cette étape apparaît lors de l&#39;import des destinataires uniquement et lors de l&#39;utilisation du tableau des destinataires Adobe Campaign par défaut (**nms:recipient**).
 
 * Cliquez sur les liens **[!UICONTROL Editer]** pour choisir le dossier, la liste ou le service auxquels vous souhaitez associer ou abonner les destinataires.
 

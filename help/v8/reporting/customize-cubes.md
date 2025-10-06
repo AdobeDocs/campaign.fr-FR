@@ -6,10 +6,10 @@ feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '1525'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -22,14 +22,14 @@ Utilisez le compartimentage des données pour simplifier l’affichage des donn�
 Globalement, trois types de mise en classe sont possibles :
 
 1. Utilisation de plages de valeurs définies manuellement. Par exemple, âge, panier d’achat moyen, nombre de diffusions ouvertes, etc.). Voir à ce sujet la section [Définir chaque classe](#defining-each-bin).
-1. Dynamiquement, selon les valeurs d&#39;une énumération : on n&#39;affiche que les valeurs contenues dans l’énumération et toutes les valeurs différentes sont regroupées dans « Autres ». Pour plus d&#39;informations, consultez la section [Gérer dynamiquement les classes](#dynamically-managing-bins).
+1. Dynamiquement, en fonction des valeurs d&#39;une énumération [enumeration](../config/enumerations.md) : affichez uniquement les valeurs contenues dans l&#39;énumération, toutes les autres valeurs sont regroupées dans &#39;Autres&#39;. Pour plus d&#39;informations, consultez la section [Gérer dynamiquement les classes](#dynamically-managing-bins).
 1. En utilisant des plages de valeurs, toutes les autres étant regroupées. Par exemple, les 18 à 25 ans, les 26 à 59 ans, et les autres. Pour plus d&#39;informations, consultez la section [Créer des plages de valeurs](#creating-value-ranges).
 
 Pour activer la mise en classe, cochez l&#39;option correspondante lors de la création de la dimension.
 
 ![](assets/cube-class.png)
 
-Vous pouvez créer chaque classe manuellement ou les lier à une énumération existante.
+Vous pouvez créer des classes manuellement ou les lier à une [énumération](../config/enumerations.md) existante.
 
 Pour générer automatiquement les classes, Adobe Campaign propose également un assistant : les valeurs peuvent être réparties en N groupes, ou regroupées selon les plus représentées dans la base.
 
@@ -64,7 +64,7 @@ Pour créer ce type de mise en classe des valeurs, les étapes sont les suivante
 
    Lorsque les valeurs de l&#39;énumération sont mises à jour, les classes sont automatiquement adaptées, sans aucune action côté utilisateur.
 
-Pour en savoir plus sur les énumérations, consultez [cette page](../../v8/config/ui-settings.md#enumerations).
+   Pour en savoir plus sur les énumérations, consultez [cette page](../config/enumerations.md).
 
 ### Création de plages de valeurs {#create-value-ranges}
 

@@ -6,10 +6,10 @@ feature: Workflows
 role: User, Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
+workflow-type: tm+mt
 source-wordcount: '2080'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -43,7 +43,7 @@ Les workflows présentés dans cette page sont installés avec les packages int�
 
 | Workflow technique | Package | Description |
 |------|--------|-----------|
-| **Gestion des alias** (aliasCleansing) | Installé par défaut | Ce workflow réalise l’uniformisation des valeurs des énumérations. Par défaut, il se déclenche tous les jours à 3h00. |
+| **Gestion des alias** (aliasCleansing) | Installé par défaut | Ce workflow normalise les valeurs [énumération](../../v8/config/enumerations.md#alias-cleansing). Par défaut, il est déclenché tous les jours à 3 heures du matin. |
 | **Facturation** (billing) | Installé par défaut | Ce workflow transmet par email le rapport d&#39;activité du système à l&#39;opérateur &#39;billing&#39;. Il est déclenché le 25 de chaque mois sur l&#39;instance Marketing. |
 | **Traitements de la campagne** (operationMgt) | Installé par défaut | Ce workflow gère les traitements sur les opérations marketing (démarrage du ciblage, extraction des fichiers, etc.). Il crée également les workflows relatifs aux opérations récurrentes et périodiques. |
 | **Collecter les données pour le service Carte thermique** (collectDataHeatMapService) | Installé par défaut | Ce workflow récupère les données requises par le service Carte thermique. |
@@ -54,14 +54,14 @@ Les workflows présentés dans cette page sont installés avec les packages int�
 | **Supprimer les données des demandes d’accès à des informations personnelles** (deletePrivacyRequestsData) | Règlement sur la protection des informations personnelles | Ce workflow supprime les données du destinataire stockées dans Adobe Campaign. |
 | **Indicateurs de diffusion** (deliveryIndicators) | Installé par défaut | Ce workflow met à jour les indicateurs de tracking des diffusions. Par défaut, ce workflow se déclenche toutes les heures. |
 | **Déployer immédiatement FFDA** (ffdaDeploy) | Installé par défaut sur les [déploiements Campaign Grands comptes (FFDA)](../../v8/architecture/enterprise-deployment.md) uniquement | Effectue un déploiement immédiat dans la base de données cloud. [En savoir plus sur la réplication de données](../../v8/architecture/replication.md) |
-| **Traitements sur le marketing distribué** (centralLocalMgt) | Marketing central/local (Marketing distribué) | Ce workflow exécute les traitements relatifs à l&#39;utilisation du module de marketing distribué. Il lance la création des opérations en local et gère les notifications relatives aux commandes et à la mise à disposition des kits d&#39;opération. |
+| **Traitements sur le marketing distribué** (centralLocalMgt) | Marketing central/local (Marketing distribué) | Ce workflow exécute les traitements relatifs à l’utilisation du module de marketing distribué. Il lance la création des opérations en local et gère les notifications relatives aux commandes et à la mise à disposition des kits de campagne. |
 | **Purge des événements** (webAnalyticsPurgeWebEvents) | Connecteurs Web Analytics | Ce workflow permet de supprimer du champ de la base tous les événements selon la période paramétrée dans le champ Durée de vie. |
 | **Export d’audiences vers Adobe Experience Cloud** (exportSharedAudience) | Intégration avec Adobe Experience Cloud | Ce workflow permet d’exporter des audiences en tant qu’audiences/segments partagés. Ces audiences peuvent être exploitées dans les différentes solutions d’Adobe Experience Cloud que vous utilisez. |
 | **Prévisionnel** (forecasting) | Installé par défaut | Ce workflow effectue l’analyse des diffusions enregistrées dans le calendrier prévisionnel (création des logs prévisionnels). Par défaut, il se déclenche tous les jours à 1h00. |
 | **Calcul de l&#39;agrégat full (cube propositionrcp)** (agg_nmspropositionrcp_full) | Moteur d’offres (Interaction) | Ce workflow met à jour l&#39;agrégat Complet (full) du cube Proposition d&#39;offre. Par défaut, il se déclenche tous les jours à 6H00. Cet agrégat capture les dimensions suivantes : Canal, Diffusion, Offre marketing et Date. Le cube Proposition d’offre est ensuite utilisé pour générer des rapports basés sur des offres. En savoir plus sur les cubes dans [cette section](../../v8/reporting/gs-cubes.md). |
 | **Identification des contacts convertis** (webAnalyticsFindConverted) | Connecteurs Web Analytics | Ce workflow répertorie les visiteurs du site ayant concrétisé leur achat après une campagne de remarketing. Les données récupérées par ce workflow sont accessibles dans le rapport Efficacité du remarketing (voir cette page). |
 | **Import d’audiences depuis Adobe Experience Cloud** (importSharedAudience) | Intégration avec Adobe Experience Cloud | Ce workflow permet d’importer dans Adobe Campaign des audiences/segments provenant de différentes solutions d’Adobe Experience Cloud. |
-| **Traitements sur les diffusions dans les opérations** (deliveryMgt) | Installé par défaut | Ce workflow démarre les diffusions validées et lance les post-traitements du prestataire pour une diffusion externe. Il envoie également des notifications de validation et des rappels. |
+| **Traitements sur les diffusions dans les opérations** (deliveryMgt) | Installé par défaut | Ce workflow déclenche les diffusions validées et lance les post-traitements du prestataire pour une diffusion externe. Il envoie également des notifications de validation et des rappels. |
 | **Traitements sur les prestataires** (supplierMgt) | Installé par défaut | Ce workflow démarre les traitements du prestataire (e-mail au routeur et post-traitement) une fois que les diffusions ont été validées. |
 | **Migration du MID vers l’identifiant utilisateur Line** (MIDToUserIDMigration) | Canal LINE | Ce workflow génère les ID des utilisateurs LINE V2 pour la migration de LINE V1 vers LINE V2. |
 | **Message Center &lt;nom_compte_externe>** (mcSynch_&lt;nom_compte_externe>) | Contrôle des messages transactionnels (Message Center - Pilotage) | Ce workflow : <ul><li>récupère la liste des événements traités par la ou les opérations,</li><li>se synchronise avec la table NmsBroadLogMsg afin de récupérer les qualifications des messages de diffusion,</li><li>récupère les logs de diffusion d&#39;événements dès que la synchronisation avec la table NmsBroadLogMsg est terminée,</li><li>se synchronise avec la table NmsTrackingUrl afin de récupérer le tracking des URL de diffusion,</li><li>récupère les URL de tracking des événements dès que la synchronisation avec la table NmsTrackingUrl est terminée,</li><li>permet de récupérer toutes les adresses email mises en quarantaine toutes les trois heures après l&#39;envoi d&#39;une diffusion.</li></ul> |

@@ -5,10 +5,10 @@ description: Découvrez comment ajouter une offre dans une page web
 feature: Interaction, Offers
 role: User, Admin
 exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '1483'
-ht-degree: 100%
+source-wordcount: '1479'
+ht-degree: 95%
 
 ---
 
@@ -318,7 +318,7 @@ Les services web SOAP fournis pour la gestion des offres sont différents de ceu
 
 ### Proposition d&#39;offres {#offer-proposition}
 
-Pour une proposition d&#39;offres via SOAP, vous devez ajouter la commande **nms:proposition#Propose**, suivie des paramètres suivants :
+Pour une proposition d&#39;offre via SOAP, ajoutez la commande **nms:proposition#Propose** suivie des paramètres suivants :
 
 * **targetId** : clé primaire du destinataire (il peut s&#39;agir d&#39;une clé composite).
 * **maxCount** : indique le nombre de propositions d&#39;offre pour le contact.
@@ -340,10 +340,10 @@ En réponse à la requête, le service SOAP renverra les paramètres suivants :
 
 ### Mise à jour d&#39;une offre {#offer-update}
 
-Ajoutez la commande **nms:interaction#UpdateStatus** dans l&#39;URL, puis les paramètres suivants :
+Ajoutez la commande **nms:interaction#UpdateStatus** à l&#39;URL, puis les paramètres suivants :
 
 * **proposition** : chaîne de caractères, contient l&#39;identifiant de la proposition donnée en sortie lors d&#39;un appel au moteur. Voir [Proposition d&#39;offres](#offer-proposition).
-* **status** : nombre, indique le nouveau statut de l&#39;offre. Les valeurs possibles sont listées dans l&#39;énumération **propositionStatus**, dans le schéma **nms:common**. Par exemple, d&#39;usine, le nombre 3 correspond au statut **Acceptée**.
+* **status** : nombre, indique le nouveau statut de l&#39;offre. Les valeurs possibles sont répertoriées dans la **propositionStatus** [enumeration](../config/enumerations.md), dans le schéma **nms:common**. Par exemple, d&#39;usine, le nombre 3 correspond au statut **Acceptée**.
 * **Context** : élément XML, vous permet d&#39;ajouter des informations contextuelles dans le schéma d&#39;espace. Si le schéma utilisé est **nms:interaction**, **`<empty>`** doit être ajouté.
 
 ### Exemple d&#39;utilisation d&#39;un appel SOAP {#example-using-a-soap-call}

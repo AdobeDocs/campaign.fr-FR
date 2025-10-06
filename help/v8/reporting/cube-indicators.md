@@ -5,10 +5,10 @@ feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: 03a6816b-e51a-4eaf-ab76-02d24f97ba46
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '796'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -102,7 +102,7 @@ Dans notre exemple, nous souhaitons afficher uniquement les années, mois et jou
 
 1. Créez une autre dimension pour analyser les données relatives à la ville du destinataire. Pour cela, ajoutez une nouvelle dimension et sélectionnez la ville, sous le noeud **[!UICONTROL Localisation]** du schéma des destinataires.
 
-Vous pouvez activer la mise en classe afin de simplifier la lecture des informations et lier les valeurs à une valeur d&#39;énumération.
+Vous pouvez activer le compartimentage pour faciliter la lecture des informations et lier les valeurs à une [énumération](../config/enumerations.md).
 
 Sélectionnez l’énumération dans la liste déroulante. Notez que cette énumération doit être définie comme **[!UICONTROL Réservée au compartimentage]**.
 

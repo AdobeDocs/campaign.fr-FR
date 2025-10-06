@@ -6,8 +6,8 @@ feature: Campaigns, Templates
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
-source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
-workflow-type: ht
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
+workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Pour créer un modèle de campagne, procédez comme suit :
 
 ![](assets/campaign-template-node.png)
 
-Vous pouvez également **dupliquer** le modèle par intégré afin de le réutiliser et d&#39;adapter sa configuration à vos besoins. Pour cela, faites un clic droit sur le modèle et sélectionnez **Dupliquer**.
+Vous pouvez également **dupliquer** le modèle intégré afin de le réutiliser et d&#39;adapter sa configuration à vos besoins. Pour cela, faites un clic droit sur le modèle et sélectionnez **Dupliquer**.
 
 1. Saisissez le libellé du nouveau modèle d&#39;opération.
 1. Cliquez sur **Enregistrer**, puis rouvrez le modèle.
@@ -169,13 +169,12 @@ Lorsque vous créez un modèle de campagne, vous devez indiquer les informations
 * Saisissez le **libellé** du modèle : le libellé est obligatoire et constitue le libellé par défaut pour toutes les campagnes basées sur ce modèle.
 * Sélectionnez la **nature** de la campagne dans la liste déroulante. Les valeurs proposées dans cette liste correspondent à celles enregistrées dans l’énumération **[!UICONTROL natureOp]**.
 
-Découvrez comment accéder à vos énumérations et la manière de les configurer sur [cette page](../../v8/config/ui-settings.md#enumerations).
-
+  Découvrez comment accéder à vos énumérations et la manière de les configurer sur [cette page](../../v8/config/enumerations.md).
 
 * Sélectionnez le **type de campagne** : unique, récurrente ou périodique. Par défaut, les modèles de campagne s&#39;appliquent aux campagnes uniques. Les opérations périodiques et récurrentes sont décrites dans [cette section](recurring-periodic-campaigns.md).
-* Indiquez la durée de l&#39;opération, c&#39;est-à-dire la période sur laquelle s&#39;étalera l&#39;opération. Lors de la création d&#39;une opération basée sur ce modèle, les dates de début et de fin de l&#39;opération seront alors automatiquement renseignées.
+* Indiquez la durée de l’opération, c’est-à-dire la période sur laquelle s’étalera l’opération. Lors de la création d’une opération basée sur ce modèle, les dates de début et de fin de l’opération seront alors automatiquement renseignées.
 
-  S&#39;il s&#39;agit d&#39;une opération récurrente, vous devez indiquer les dates de début et de fin de l&#39;opération directement dans le modèle.
+  S’il s’agit d’une opération récurrente, vous devez indiquer les dates de début et de fin de l’opération directement dans le modèle.
 
 * Indiquez le **programme d&#39;appartenance** du modèle : les campagnes basées sur le modèle seront associées au programme sélectionné.
 

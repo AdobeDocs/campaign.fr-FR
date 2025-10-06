@@ -5,10 +5,10 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 100%
+source-wordcount: '751'
+ht-degree: 96%
 
 ---
 
@@ -48,8 +48,9 @@ La cible du BAT peut être définie dans le modèle de diffusion ou être spéci
 Sélectionnez le type de cible du BAT dans la liste déroulante **[!UICONTROL Mode de ciblage]**.
 
 * Utilisez l’option **[!UICONTROL Définition d’une cible de BAT spécifique]** pour sélectionner les destinataires cibles du BAT dans la base de données.
-* Utilisez l’option **[!UICONTROL Substitution de l’adresse]** pour saisir les adresses e-mail et utiliser les données des destinataires cibles pour valider le contenu. Les adresses de substitution peuvent être saisies manuellement ou sélectionnées dans la liste déroulante. L’énumération appropriée est « Substitution address » (rcpAddress).
-Par défaut, la substitution est effectuée de manière aléatoire, mais vous pouvez sélectionner un destinataire spécifique dans la cible principale à l’aide de l’icône **[!UICONTROL Détail]**.
+* Utilisez l’option **[!UICONTROL Substitution de l’adresse]** pour saisir les adresses e-mail et utiliser les données des destinataires cibles pour valider le contenu. Les adresses de substitution peuvent être saisies manuellement ou sélectionnées dans la liste déroulante. L’[énumération](../config/enumerations.md) associée est **Adresse de substitution (rcpAddress)**.
+
+  Par défaut, la substitution est effectuée de manière aléatoire, mais vous pouvez sélectionner un destinataire spécifique dans la cible principale à l’aide de l’icône **[!UICONTROL Détail]**.
 
   ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
 
@@ -62,7 +63,7 @@ Par défaut, la substitution est effectuée de manière aléatoire, mais vous po
 
   >[!NOTE]
   >
-  >Les adresses de contrôle n’appartiennent pas au tableau des destinataires par défaut (nms:recipient). Elles sont créées dans un tableau distinct. Si vous étendez le tableau des destinataires avec de nouvelles données, vous devez étendre le tableau des adresses de contrôle avec les mêmes données.
+  >Les adresses de contrôle n’appartiennent pas à la table des destinataires par défaut (nms:recipient). Elles sont créées dans une table distincte. Si vous étendez le tableau des destinataires avec de nouvelles données, vous devez étendre le tableau des adresses de contrôle avec les mêmes données.
 
   En savoir plus sur les adresses de contrôle dans [cette section](../audiences/test-profiles.md).
 
@@ -105,4 +106,4 @@ Par défaut, les messages de BAT sont identifiés par la mention `Proof #N` dans
 
 Découvrez comment envoyer et valider un BAT pour une diffusion e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447001?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/333404)

@@ -5,10 +5,10 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '1257'
-ht-degree: 98%
+source-wordcount: '1255'
+ht-degree: 94%
 
 ---
 
@@ -42,7 +42,7 @@ Pour une meilleure compréhension des tables intégrées de Campaign et de leur 
 
 >[!CAUTION]
 >
->Certains schémas Campaign prédéfinis comportent un schéma associé sur la base de données cloud. Ces schémas sont identifiés par l&#39;espace de noms **Xxl** et ne doivent pas être modifiés ou étendus.
+>Certains schémas Campaign natifs comportent un schéma associé sur la base de données cloud. Ces schémas sont identifiés par l&#39;espace de noms **Xxl** et ne doivent pas être modifiés ou étendus.
 
 ## Syntaxe des schémas {#syntax-of-schemas}
 
@@ -94,7 +94,7 @@ Certains espaces de noms sont réservés à la description des entités système
 * **temp** : réservé aux schémas temporaires
 * **crm** : réservé à l&#39;intégration des connecteurs CRM
 
-La clé d&#39;identification d&#39;un schéma est une chaîne construite avec l&#39;espace de noms et le nom séparés par le caractère &quot;:&quot;, par exemple **nms:recipient**.
+La clé d&#39;identification d&#39;un schéma est une chaîne construite avec l&#39;espace de noms et le nom séparés par le caractère &#39;:&#39; (par exemple : **nms:recipient**.
 
 ## Création ou extension de schémas Campaign {#create-or-extend-schemas}
 
@@ -117,7 +117,7 @@ Les énumérations sont définies avant l&#39;élément principal du schéma. El
 
 Exemple:
 
-```
+```xml
 <enumeration basetype="byte" name="exTransactionTypeEnum" default="store">
 <value label="Website" name="web" value="0"/>
 <value label="Call Center" name="phone" value="1"/>
@@ -127,7 +127,7 @@ Exemple:
 
 Quand vous définissez des champs, vous pouvez ensuite utiliser cette énumération de la façon suivante :
 
-```
+```xml
 <attribute desc="Type of Transaction" label="Transaction Type" name="transactionType" 
 type="string" enum="exTransactionTypeEnum"/>
 ```
@@ -178,7 +178,7 @@ La clé primaire peut également être définie au moyen de l&#39;attribut **int
 
 Exemple:
 
-```
+```xml
 <key name="householdId" internal="true">
   <keyfield xpath="@householdId"/>
 </key>
@@ -206,25 +206,25 @@ Pour plus d&#39;informations sur chaque attribut, consultez la description des a
 
 Exemple de définition d&#39;une valeur par défaut :
 
-```
+```xml
 <attribute name="transactionDate" label="Transaction Date" type="datetime" default="GetDate()"/>
 ```
 
 Exemple d&#39;utilisation d&#39;un attribut commun en tant que modèle pour un champ également marqué comme obligatoire :
 
-```
+```xml
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
 ```
 
 Exemple de champ calculé masqué au moyen de l&#39;attribut **@advanced** :
 
-```
+```xml
 <attribute name="domain" label="Email domain" desc="Domain of recipient email address" expr="GetEmailDomain([@email])" advanced="true" />
 ```
 
 Exemple de champ XML également stocké dans un champ SQL et qui a un attribut **@dataPolicy** :
 
-```
+```xml
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
 ```
 
@@ -246,19 +246,19 @@ Il existe trois types de cardinalité : 1-1, 1-N et N-N. C&#39;est le type d&#3
 
 Exemple de relation 1-N entre la table des destinataires (schéma d&#39;usine) et une table des transactions personnalisée :
 
-```
+```xml
 <element label="Recipient" name="lnkRecipient" revLink="lnkTransactions" target="nms:recipient" type="link"/>
 ```
 
 Exemple de relation 1-1 entre un schéma personnalisé &quot;Car&quot; (dans l&#39;espace de noms &quot;cus&quot;) et la table des destinataires :
 
-```
+```xml
 <element label="Car" name="lnkCar" revCardinality="single" revLink="recipient" target="cus:car" type="link"/>
 ```
 
 Exemple d&#39;une jointure externe entre la table des destinataires et une table des adresses reposant sur l&#39;adresse email et non une clé primaire :
 
-```
+```xml
 <element name="emailInfo" label="Email Info" revLink="recipient" target="nms:address" type="link" externalJoin="true">
   <join xpath-dst="@address" xpath-src="@email"/>
 </element>
@@ -272,7 +272,7 @@ Il peut être utile d’ajouter à la fin de votre schéma un élément de suivi
 
 Procédez comme dans l&#39;exemple ci-dessous pour inclure les champs relatifs à la date de création, à l&#39;utilisateur qui a créé la donnée, à la date et à l&#39;auteur de la dernière modification pour toutes les données de votre table :
 
-```
+```xml
 <element aggregate="xtk:common:auditTrail" name="auditTrail"/>
 ```
 

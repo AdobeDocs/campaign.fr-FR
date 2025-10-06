@@ -6,10 +6,10 @@ role: User
 level: Beginner, Intermediate
 version: Campaign v8, Campaign Classic v7
 exl-id: d2ec4d92-7f00-47c8-98e6-0613d6387de0
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
+workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ Vous pouvez envoyer un BAT pour votre diffusion SMS afin de la valider :
    Vous avez plusieurs modes pour envoyer un BAT :
 
    * **[!UICONTROL Définition d’une cible spécifique au BAT]** : permet d’interroger avec des filtres les adresses de la base de données en tant que cible du BAT.
-   * **[!UICONTROL Substitution de l’adresse]** : vous permet de saisir les adresses e-mail et d’utiliser les données des personnes destinataires cibles pour valider le contenu. Les adresses de substitution peuvent être saisies manuellement ou sélectionnées dans la liste déroulante. L’énumération appropriée est **[!UICONTROL Adresse de substitution (rcpAddress)]**.
+   * **[!UICONTROL Substitution de l’adresse]** : vous permet de saisir les adresses e-mail et d’utiliser les données des personnes destinataires cibles pour valider le contenu. Les adresses de substitution peuvent être saisies manuellement ou sélectionnées dans la liste déroulante. L’[énumération](../../config/enumerations.md) associée est **[!UICONTROL Adresse de substitution (rcpAddress)]**.
 Par défaut, la substitution est effectuée de manière aléatoire, mais vous pouvez sélectionner une personne destinataire spécifique dans la cible principale à l’aide de l’icône **[!UICONTROL Détail]**.
    * **[!UICONTROL Adresses de contrôle]** : vous permet d’accéder aux adresses de contrôle pour en faire la cible des BAT. Ces adresses peuvent être importées à partir d’un fichier ou saisies manuellement.
    * **[!UICONTROL Cible spécifique et adresses de contrôle]** : permet de combiner des adresses de contrôle et des adresses de personnes destinataires.
@@ -38,7 +38,7 @@ Par défaut, la substitution est effectuée de manière aléatoire, mais vous po
    ![](assets/proof_recipient.png){zoomable="yes"}
 
 1. Cliquez sur le bouton **[!UICONTROL Analyser]**.
-Adobe Campaign effectuera tout le contrôle avant de valider l’envoi du BAT. À la fin de l’analyse, le bouton **[!UICONTROL Confirmer la diffusion]** ne sera pas disponible.
+Adobe Campaign effectuera tout le contrôle avant de valider l’envoi du BAT. À la fin de l’analyse, le bouton **[!UICONTROL Confirmer la diffusion]** ne sera pas cliquable.
 
    ![](assets/proof_analyze.png){zoomable="yes"}
 

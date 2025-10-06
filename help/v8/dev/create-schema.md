@@ -5,8 +5,8 @@ feature: Schema Extension, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: 796af848-b537-4b8d-a601-fe0628a1fc83
-source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
-workflow-type: ht
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
+workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ Pour modifier, créer et paramétrer les schémas, cliquez sur le nœud **[!UICO
 
 >[!NOTE]
 >
->Les schémas de données prédéfinis peuvent uniquement être supprimés par un administrateur de votre console Adobe Campaign 
+>Les schémas de données natifs peuvent uniquement être supprimés par un administrateur ou une administratrice de votre console Adobe Campaign 
 
 ![](assets/schema_navtree.png)
 
@@ -67,7 +67,7 @@ Pour cela, vous devez créer le schéma de la table puis procéder à la mise à
 
    Il est recommandé de créer la table dans la base de données cloud en ajoutant l&#39;attribut `dataSource="nms:extAccount:ffda"`. Cet attribut est ajouté par défaut lors de la création d&#39;une nouvelle table.
 
-   ```
+   ```xml
    <srcSchema created="YYYY-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png"
            label="Contracts" labelSingular="Contract" lastModified="YYYY-MM-DD HH:MM:SS.TZ"
            mappingType="sql" name="Contracts" namespace="cus" xtkschema="xtk:srcSchema">
@@ -87,7 +87,7 @@ Pour cela, vous devez créer le schéma de la table puis procéder à la mise à
 
    Ajoutez le type d&#39;énumération de contrat.
 
-   ```
+   ```xml
    <srcSchema created="AA-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png" label="Contracts" labelSingular="Contract" AA-MM-DD HH:MM:SS.TZ"mappingType="sql" name="Contracts" namespace="cus" xtkschema="xtk:srcSchema">
       <enumeration basetype="byte" name="typeContract">
          <value label="Home" name="home" value="0"/>

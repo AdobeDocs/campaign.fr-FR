@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 253f3be945cbfa304fa7342c68f0c73b079e2870
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 100%
+source-wordcount: '455'
+ht-degree: 99%
 
 ---
 
@@ -73,6 +73,6 @@ Pour créer des types d&#39;événements qui seront traités par Adobe Campaign
 
 >[!NOTE]
 >
->Pour en savoir plus sur les énumérations, consultez [cette page](../../v8/config/ui-settings.md#enumerations).
+>En savoir plus sur les [énumérations](../config/enumerations.md).
 
 Pour l’étape suivante, découvrez comment [créer et publier votre modèle pour la messagerie transactionnelle](transactional-template.md).
