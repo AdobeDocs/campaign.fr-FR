@@ -5,7 +5,7 @@ feature: Query Editor
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 79cfde18cce2f9f48cbd6d77026350dec1a71536
 workflow-type: tm+mt
 source-wordcount: '3491'
 ht-degree: 99%
@@ -352,7 +352,7 @@ Si une formule de type **[!UICONTROL Expression]** est choisie, vous accédez à
 
 L&#39;éditeur d&#39;expression se présente comme suit :
 
-![](assets/s_ncs_user_filter_define_expression.png)
+![](assets/filter-define-expression.png)
 
 Il permet de sélectionner des champs dans les tables de la base de données et de leur adjoindre des fonctions avancées. Les fonctions disponibles sont les suivantes :
 
