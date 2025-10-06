@@ -6,10 +6,10 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+workflow-type: tm+mt
 source-wordcount: '1708'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -52,7 +52,7 @@ Utilisez le dernier onglet pour prévisualiser les données filtrées.
 ![](assets/built-in-filter-preview.png)
 
 
-Les filtres prédéfinis intégrés sont les suivants :
++++  Filtres prédéfinis intégrés
 
 <table> 
  <tbody> 
@@ -97,8 +97,8 @@ Les filtres prédéfinis intégrés sont les suivants :
    <td> Sélection des destinataires dont l'email est en quarantaine.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Emails dupliqués dans le dossier<br /> </td> 
-   <td> Sélection des destinataires dont l'email est dupliqué dans le dossier.<br /> </td> 
+   <td> E-mails dupliqués dans le dossier<br /> </td> 
+   <td> Sélection des destinataires dont l’e-mail est dupliqué dans le dossier.<br /> </td> 
   </tr> 
   <tr> 
    <td> N'ayant ni ouvert ni cliqué<br /> </td> 
@@ -159,6 +159,7 @@ Les filtres prédéfinis intégrés sont les suivants :
  </tbody> 
 </table>
 
++++
 
 ### Filtres par défaut{#default-filters}
 
@@ -352,4 +353,7 @@ Des paramètres avancés sont disponibles pour les filtres prédéfinis. Pour y 
 * Le lien **[!UICONTROL Paramètres avancés]** permet de définir des paramètres supplémentaires.
 
    * Vous pouvez associer une table SQL au filtre pour qu&#39;elle soit commune à tous les éditeurs qui la partagent.
-   * Pour empêcher un utilisateur de remplacer le filtre, sélectionnez l&#39;option **[!UICONTROL Ne pas restreindre le filtre]**. Par exemple, cette option est active pour les filtres « Destinataires d&#39;une diffusion » et « Destinataires des diffusions appartenant à un dossier » disponibles dans l&#39;assistant de diffusion. Ces filtres ne peuvent pas être surchargés.
+   * Pour empêcher un utilisateur de remplacer le filtre, sélectionnez l&#39;option **[!UICONTROL Ne pas restreindre le filtre]**. Par exemple, cette option est active pour les filtres « Destinataires d’une diffusion » et « Destinataires des diffusions appartenant à un dossier » disponibles dans l’assistant de diffusion. Ces filtres ne peuvent pas être surchargés.
+
+
+### Opérateurs

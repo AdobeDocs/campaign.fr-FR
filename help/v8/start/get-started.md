@@ -6,10 +6,10 @@ role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
 source-wordcount: '1033'
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -48,7 +48,7 @@ Découvrez comment ajouter des profils à Campaign dans [cette section](import.m
 
 ## Segmentation ciblée {#targeted-segmentation}
 
-Pour vous permettre de mettre en place des offres hautement ciblées et différenciées, Adobe Campaign intègre des fonctionnalités de ciblage et de segmentation simples d&#39;utilisation. Grâce aux fonctionnalités d&#39;analyse descriptive, vous avez la possibilité d&#39;analyser les informations en amont et en aval de vos campagnes marketing. D&#39;autre part, les fonctionnalités de gestion de filtres et du requêteur vous permettent de filtrer les populations d’abonnés, ainsi que d’échantillonner ou de créer des groupes cibles en fonction d’un nombre de critères illimité.
+Adobe Campaign intègre des fonctionnalités d’analyse et de ciblage pour vous permettre de mettre en place des offres hautement ciblées et différenciées. La fonctionnalité d&#39;analyse descriptive permet d&#39;analyser les informations en amont et en aval de vos campagnes marketing. La fonctionnalité [gestion des filtres](../audiences/create-filters.md) et la fonctionnalité graphique [éditeur de requêtes](query-editor.md) permettent de filtrer les populations d&#39;abonnés, d&#39;échantillonner ou de créer des groupes cibles en fonction d&#39;un nombre illimité de critères.
 
 Les fonctionnalités avancées de Data Management proposent une extension des capacités de traitement des données. Elles permettent de simplifier et d&#39;optimiser le processus de ciblage en incluant des données non modélisées dans le datamart.
 

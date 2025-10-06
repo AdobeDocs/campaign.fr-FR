@@ -6,8 +6,8 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+workflow-type: tm+mt
 source-wordcount: '1610'
 ht-degree: 100%
 
@@ -94,7 +94,7 @@ Pour sélectionner les destinataires d’une diffusion, procédez comme suit :
 
    Les types de cible suivants sont disponibles :
 
-   * **[!UICONTROL Conditions de filtrage]** : utilisez cette option pour définir une requête et afficher le résultat. Découvrez comment concevoir une requête dans [cette section](../../automation/workflow/query.md).
+   * **[!UICONTROL Conditions de filtrage]** : utilisez cette option pour définir une requête et afficher le résultat. Découvrez comment concevoir une requête dans [cette section](../start/query-editor.md).
    * **[!UICONTROL Une liste de destinataires]** : utilisez cette option pour cibler une liste de profils. Découvrez les listes dans [cette section](../audiences/create-audiences.md).
    * **[!UICONTROL Une personne destinataire]** : utilisez cette option pour sélectionner un profil spécifique dans la base de données.
    * **[!UICONTROL Destinataires présents dans un dossier]** : utilisez cette option pour cibler tous les profils contenus dans un dossier spécifique.
@@ -165,7 +165,7 @@ Pour modifier la configuration par défaut, cliquez sur le lien **[!UICONTROL É
 * **[!UICONTROL Exclure les destinataires qui ne veulent plus être contactés]**, c&#39;est-à-dire les destinataires dont les adresses email se trouvent sur une liste bloquée (&#39;opt out&#39;). Cette option doit rester sélectionnée afin de respecter l’éthique professionnelle du e-marketing.
 * **[!UICONTROL Exclure les destinataires en quarantaine]** : cette option permet d’exclure de la cible les profils dont l’adresse est en quarantaine. Nous vous recommandons vivement de ne pas décocher cette option. En savoir plus sur la gestion des quarantaines dans [cette section](../send/quarantines.md).
 * **[!UICONTROL Limiter la diffusion]** à un nombre donné de messages. Cette option permet de renseigner le nombre maximum de messages à envoyer. Si l’audience cible dépasse le nombre de messages indiqué, une sélection aléatoire est appliquée sur la cible. Pour envoyer tous les messages, conservez cette valeur sur « 0 ».
-* **[!UICONTROL Conserver les enregistrements en double (même identifiant)]** : cette option permet d’envoyer plusieurs diffusions à des personnes destinataires qui répondent à plusieurs critères de ciblage.
+* **[!UICONTROL Conserver les enregistrements en double (même identifiant)]** : cette option permet d’envoyer plusieurs diffusions à des destinataires qui répondent à plusieurs critères de ciblage.
 +++
 
 
@@ -182,7 +182,7 @@ Pour plus d’informations sur l’envoi et les personnes destinataires des BAT,
 
 Dans cette vidéo, vous apprendrez comment ajouter des adresses de contrôle et des BAT à un email existant et comment l’envoyer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447001?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 D’autres vidéos pratiques sur Campaign Classic sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=fr).
 

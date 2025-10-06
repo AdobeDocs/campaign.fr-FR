@@ -6,10 +6,10 @@ feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '1667'
-ht-degree: 100%
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+workflow-type: tm+mt
+source-wordcount: '1663'
+ht-degree: 94%
 
 ---
 
@@ -20,16 +20,13 @@ ht-degree: 100%
 ## Création dʼune requête {#creating-a-query}
 
 Une requête permet de sélectionner une cible selon des critères. Vous pouvez associer un code segment au résultat de la requête et y insérer des données additionnelles.
-Pour plus d’informations sur des exemples de requêtes, voir [cette section](querying-recipient-table.md).
-
->[!NOTE]
->
->L’interface d’utilisation d’Adobe Campaign Web dispose d’un puissant concepteur de requête qui simplifie le processus de filtrage des bases de données afin de sélectionner des cibles spécifiques en fonction de divers critères, ce qui vous permet de créer et de gérer plus facilement vos requêtes. Pour en savoir plus sur le concepteur de requête de l’interface d’utilisation web, reportez-vous à la [documentation de l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
-
+Découvrez comment créer des requêtes par le biais de cas d’utilisation dans [cette section](querying-recipient-table.md). Consultez également la section à propos du [Query editor](../../v8/start/query-editor.md).
 
 ![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
 
-Pour plus dʼinformations sur l’utilisation et la gestion des données additionnelles, consultez la section [Ajout de données](#adding-data).
+>[!NOTE]
+>
+>L’interface utilisateur web d’Adobe Campaign dispose d’un puissant outil de modélisation des requêtes qui simplifie le processus de filtrage des bases de données afin de sélectionner des cibles spécifiques en fonction de divers critères, ce qui vous permet de créer et de gérer plus facilement vos requêtes. Pour en savoir plus sur le concepteur de requête de l’interface d’utilisation web, reportez-vous à la [documentation de l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
 
 Le lien **[!UICONTROL Editer la requête...]** permet de définir le type de ciblage, les restrictions et les critères de sélection de la population de la manière suivante :
 
@@ -157,10 +154,10 @@ Dans l&#39;exemple suivant, la requête cherchera à identifier les hommes de 18
 ## Paramètres de sortie {#output-parameters}
 
 * tableName
-* schema
+* schéma
 * recCount
 
-Ce jeu de trois valeurs identifie la population ciblée par la requête. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d’éléments dans la table.
+Ce jeu de trois valeurs identifie la population ciblée par la requête. **[!UICONTROL tableName]** est le nom de la table qui enregistre les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (généralement nms:recipient) et **[!UICONTROL recCount]** est le nombre d&#39;éléments dans la table.
 
 Cette valeur correspond au schéma de la table de travail. Ce paramètre est valide pour toutes les transitions avec **[!UICONTROL tableName]** et **[!UICONTROL schema]**.
 

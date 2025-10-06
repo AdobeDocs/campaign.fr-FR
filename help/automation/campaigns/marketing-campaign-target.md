@@ -6,8 +6,8 @@ feature: Campaigns, Audiences
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
-workflow-type: ht
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+workflow-type: tm+mt
 source-wordcount: '1573'
 ht-degree: 100%
 
@@ -120,7 +120,7 @@ Les icônes de la barre d&#39;outils permettent d&#39;agir sur l&#39;exécution 
 
    * Les icônes de la barre d&#39;outils permettent d&#39;arrêter ou suspendre un workflow de ciblage en cours d&#39;exécution.
 
-     Lorsque vous cliquez sur l&#39;icône **[!UICONTROL Pause]**, les opérations en cours **[!UICONTROL ne sont pas]** suspendues, mais aucune autre activité n&#39;est lancée jusqu&#39;à la prochaine reprise.
+     Lorsque vous cliquez sur licône **[!UICONTROL Pause]**, les opérations en cours **[!UICONTROL ne sont pas]** suspendues, mais aucune autre activité nest lancée jusquau prochain redémarrage.
 
      ![](assets/pause.png)
 
@@ -222,7 +222,7 @@ Cette population peut provenir d&#39;un répertoire de destinataires ou vous pou
 
 >[!NOTE]
 >
->L&#39;éditeur de requête d&#39;Adobe Campaign est présenté dans [cette section](../workflow/query.md).
+>L&#39;éditeur de requête d&#39;Adobe Campaign est présenté dans [cette section](../../v8/start/query-editor.md).
 
 ### Extraire la population témoin de la cible principale {#extract-the-control-group-from-the-main-target}
 

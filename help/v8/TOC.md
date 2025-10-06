@@ -5,9 +5,9 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '791'
 ht-degree: 97%
 
 ---
@@ -133,8 +133,9 @@ ht-degree: 97%
 + Gestion de contenu {#content}
    + [Créer des pages de destination](dev/landing-pages.md)
    + [Concevoir des formulaires et des applications web](dev/webapps.md)
-+ Automatisation et workflows {#automation}
-   + [Guide d’automatisation de Campaign >](https://experienceleague.adobe.com/fr/docs/campaign/automation/home)
++ Workflows {#workflows}
+   + [Prise en main des workflows](config/workflows.md)
+   + [Documentation des workflows >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=fr)
 + Gestion de la confidentialité et de la sécurité {#privacy}
    + [Gérer les demandes d’accès à des informations personnelles](start/privacy.md)
    + [Directives de sécurité](config/security.md)
@@ -174,9 +175,11 @@ ht-degree: 97%
          + [Calcul des mesures intégrées](reporting/metrics-calculation.md)
       + [Rapports personnalisés](reporting/custom-reports.md)
 + Gestion des données {#data}
-   + [Prise en main des workflows](config/workflows.md)
+   + [Documentation des workflows >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=fr)
    + [Importer des données](start/import.md)
-   + [Documentation des workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=fr)
+   + Créer des requêtes {#query}
+      + [Requêtes de conception](start/query-editor.md)
+      + [Définition des conditions de filtre](start/filter-conditions.md)
 + Intégrations {#connect}
    + [Connecter des campagnes à d’autres solutions](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}

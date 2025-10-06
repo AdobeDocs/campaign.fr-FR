@@ -5,10 +5,10 @@ feature: Workflows
 role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 8e1401ef0aada30d941905936b45c6c1819c83a7
-workflow-type: ht
-source-wordcount: '1399'
-ht-degree: 100%
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+workflow-type: tm+mt
+source-wordcount: '512'
+ht-degree: 93%
 
 ---
 
@@ -27,14 +27,12 @@ Ce que vous pouvez configurer :
 
 >[!NOTE]
 >
->L’interface d’utilisation d’Adobe Campaign Web est fournie avec une zone de travail repensée pour les workflows, ce qui permet de créer des parcours clients plus dynamiques et personnalisés. Pour en savoir plus sur les workflows pour l’interface d’utilisation web, reportez-vous à la [documentation de l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/wf/gs-workflows){target=_blank}.
+>L’interface utilisateur web d’Adobe Campaign s’accompagne d’une zone de travail repensée pour les workflows, ce qui permet de créer des parcours client plus dynamiques et personnalisés. Pour en savoir plus sur les workflows pour l’interface d’utilisation web, reportez-vous à la [documentation de l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/wf/gs-workflows){target=_blank}.
 
 
 ## Conception et utilisation de workflows {#gs-ac-wf}
 
-Utilisez les workflows d&#39;Adobe Campaign pour améliorer la vitesse et l&#39;échelle relatives à chaque aspect de vos campagnes marketing, de la création de segments à la préparation des messages, en passant par leur diffusion.
-
-Découvrez comment concevoir des workflows dans ces [cas d&#39;utilisation complets](#end-to-end-uc).
+Utilisez les workflows d’Adobe Campaign pour améliorer la vitesse et l’échelle relatives à chaque aspect de vos campagnes marketing, de la création de segments à la préparation des messages, en passant par leur diffusion.
 
 Pour en savoir plus sur l’interface utilisateur et l’exécution des workflows, consultez ces pages :
 
@@ -59,39 +57,41 @@ Les activités de workflow sont regroupées par catégorie. Les quatre catégori
 * [Activités d&#39;action](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html?lang=fr){target="_blank"} : diffusions cross-canal, code JavaScript, activités CRM, mise à jour d&#39;agrégat, etc.
 * [Activités d&#39;événement](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/event-activities.html?lang=fr){target="_blank"} : transfert de fichiers, téléchargement web, etc.
 
-### Activité Modifier la source de données {#change-data-source-activity}
+<!--
+### Change data source activity {#change-data-source-activity}
 
-L&#39;activité **[!UICONTROL Modifier la source de données]** permet de modifier la source de données d&#39;un workflow **[!UICONTROL Table de travail]**. Vous bénéficiez ainsi d&#39;une plus grande flexibilité pour gérer les données entre différentes sources de données, telles que FDA, FFDA et base de données locale.
+The **[!UICONTROL Change data source]** activity allows you to change the data source of a workflow **[!UICONTROL Working table]**. This provides more flexibility to manage data across different data sources such as FDA, FFDA and local database.
 
-La **[!UICONTROL table de travail]** permet au workflow Adobe Campaign de gérer les données et de partager les données avec les activités de workflow.
-Par défaut, la **[!UICONTROL table de travail]** est créée dans la même base de données que la source des données sur lesquelles nous effectuons une requête.
+The **[!UICONTROL Working table]** allows Adobe Campaign workflow to handle data and share data with the workflow activities.
+By default, the **[!UICONTROL Working table]** is created in the same database as the source of the data we query on.
 
-Par exemple, lors de l&#39;interrogation de la table **[!UICONTROL Profils]** stockée dans la base de données cloud, vous allez créer une **[!UICONTROL table de travail]** sur la même base de données cloud.
-Pour modifier ce paramètre, vous pouvez ajouter l&#39;activité **[!UICONTROL Modifier la source de données]** afin de choisir une autre source de données pour votre **[!UICONTROL table de travail]**.
+For example, when querying the **[!UICONTROL Profiles]** table, stored on the Cloud database, you will create a **[!UICONTROL Working table]** on the same Cloud database.
+To change this, you can add the **[!UICONTROL Change Data Source]** activity to choose a different data source for your **[!UICONTROL Working table]**.
 
-Notez que lorsque vous utilisez l&#39;activité **[!UICONTROL Modifier la source de données]**, vous devez revenir à la base de données cloud pour continuer l&#39;exécution des workflows.
+Note that when using the **[!UICONTROL Change Data Source]** activity, you will need to switch back to the Cloud database to continue the workflow execution.
 
-Pour utiliser l&#39;activité **[!UICONTROL Modifier la source de données]** :
+To use the **[!UICONTROL Change Data Source]** activity:
 
-1. Créez un workflow.
+1. Create a workflow.
 
-1. Interrogez vos destinataires ciblés avec une activité **[!UICONTROL Requête]**.
+1. Query your targeted recipients with a **[!UICONTROL Query]** activity. 
 
-   Pour plus d’informations sur l’activité **[!UICONTROL Requête]**, consultez [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=fr){target="_blank"}.
+    For more information on the **[!UICONTROL Query]** activity, refer to [this page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
-1. Dans l&#39;onglet **[!UICONTROL Ciblage]**, ajoutez une activité **[!UICONTROL Modifier la source de données]** et double-cliquez dessus pour sélectionner **[!UICONTROL Source de données par défaut]**.
+1. From the **[!UICONTROL Targeting]** tab, add a **[!UICONTROL Change data source]** activity and double-click it to select **[!UICONTROL Default data source]**.
+    
+    The working table, which contains the result of your query, is then moved to the default PostgreSQL database.
 
-   La table de travail, qui contient le résultat de votre requête, est ensuite déplacée vers la base de données PostgreSQL par défaut.
+1. From the **[!UICONTROL Actions]** tab, drag and drop a **[!UICONTROL JavaScript code]** activity to perform unitary operations on the working table.
 
-1. Dans l&#39;onglet **[!UICONTROL Actions]**, effectuez un glisser-déposer d&#39;une activité **[!UICONTROL Code JavaScript]** pour réaliser des opérations unitaires sur la table de travail.
+    For more information on the **[!UICONTROL JavaScript code]** activity, refer to [this page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code.html){target="_blank"}.
 
-   Pour plus d’informations sur l’activité **[!UICONTROL Code Javascript]**, consultez [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code.html?lang=fr){target="_blank"}.
+1. Add another **[!UICONTROL Change data source]** activity to switch back to the Cloud database. 
+    
+    Double-click your activity and select **[!UICONTROL Active FDA external account]** then the corresponding external account.
 
-1. Ajoutez une autre activité **[!UICONTROL Modifier la source de données]** pour revenir à la base de données cloud.
-
-   Double-cliquez sur votre activité et sélectionnez **[!UICONTROL Compte externe FDA actif]** puis le compte externe correspondant.
-
-1. Vous pouvez maintenant démarrer votre workflow.
+1. You can now start your workflow.
+-->
 
 ## Gestion des entrepôts virtuels {#warehouse}
 
@@ -122,7 +122,7 @@ Concevez un workflow récurrent et créez une instance de diffusion à chaque ex
 Découvrez comment créer une campagne récurrente sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html?lang=fr){target="_blank"}.
 
 
-## Utilisation d&#39;événements trigger
+## Utilisation d’événements de déclenchement
 
 Utilisez la messagerie transactionnelle de Campaign pour automatiser les messages générés à partir d&#39;événements déclenchés depuis des systèmes d&#39;information. Ces messages transactionnels peuvent notamment être une facture, une confirmation de commande, une confirmation d&#39;expédition, une modification de mot de passe, une notification d&#39;indisponibilité du produit, un relevé de compte ou la création d&#39;un compte sur un site web. Ces messages peuvent être envoyés individuellement ou par lots via e-mail, SMS ou notifications push.
 
@@ -135,115 +135,4 @@ Découvrez comment intégrer Campaign à d’autres solutions dans [cette sectio
 
 ## Cas d’utilisation complets de workflow{#end-to-end-uc}
 
-Cette section présente différents cas d’utilisation utilisant des fonctionnalités de workflows dans Campaign.
-
-### Diffusions {#deliveries}
-
-<img src="assets/do-not-localize/icon_send.svg" width="60px">
-
-
-* [Envoyer un e-mail d’anniversaire](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=fr){target="_blank"}
-
-  Ce cas pratique présente comment planifier l’envoi d’un e-mail récurrent à une liste de destinataires le jour de leur anniversaire.
-
-* [Charger le contenu de la diffusion](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=fr){target="_blank"}
-Lorsque le contenu de votre diffusion est disponible dans un fichier HTML situé sur un serveur distant, vous pouvez facilement charger ce contenu dans les diffusions Adobe Campaign.
-
-* [Workflow de diffusion cross-canal](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/cross-channel-delivery-workflow.html?lang=fr){target="_blank"}
-Découvrez comment créer un workflow de diffusion cross-canal. L’objectif est de segmenter une audience des destinataires de votre base de données en différents groupes et d’envoyer un e-mail au premier groupe et un SMS à l’autre.
-
-* [Enrichissement d’un e-mail à l’aide de champs de date personnalisés](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/email-enrichment-with-custom-date-fields.html?lang=fr){target="_blank"}
-Découvrez comment envoyer un e-mail avec des champs de données personnalisés aux profils qui fêtent leur anniversaire ce mois-ci. L’e-mail contiendra un coupon valide une semaine avant et après leur anniversaire.
-
-Ainsi que ces pages dans la documentation de Campaign v7 :
-
-* [Automatiser la création, l’édition et la publication de contenu](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/automating-via-workflows.html?lang=fr){target="_blank"}
-Découvrez comment automatiser la création et la diffusion d’un bloc de contenu avec le module complémentaire de gestion de contenu de Campaign.
-
-* [Tests AB](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html?lang=fr){target="_blank"}
-Découvrez comment comparer deux contenus de diffusion par e-mail via un workflow de ciblage. Le message et le texte sont identiques dans les deux diffusions : seule la disposition change. La population ciblée est divisée en trois : deux groupes de test et la population restante. Une version différente de la diffusion est envoyée à chaque groupe de test.
-
-### Surveillance {#monitoring}
-
-<img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
-
-* [Envoyer un rapport à une liste](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-a-report-to-a-list.html?lang=fr){target="_blank"}
-Découvrez comment générer un rapport mensuel intégré des indicateurs de suivi au format PDF et comment l’envoyer à une liste d’opérateurs et d’opératrices Campaign.
-
-* [Superviser vos workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=fr){target="_blank"}
-Découvrez comment créer un workflow qui vous permet de surveiller l’état d’un ensemble de workflows « en pause », « arrêtés » ou « contenant des erreurs ».
-
-* [Envoyer des alertes personnalisées aux opérateurs](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-alerts-to-operators.html?lang=fr){target="_blank"}
-Découvrez comment envoyer à un opérateur une alerte contenant le nom des profils qui ont ouvert une newsletter, sans toutefois cliquer sur le lien qu’elle contient.
-
-### Gestion des données {#management}
-
-<img src="assets/do-not-localize/icon_manage.svg" width="60px">
-
-* [Coordonner les mises à jour de données](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/coordinate-data-updates.html?lang=fr){target="_blank"}
-Découvrez comment vérifier que le processus de mise à jour est terminé avant d’exécuter une autre opération de mise à jour. Pour ce faire, nous allons configurer une variable d&#39;instance et laisser le workflow tester si l’instance est en cours d’exécution afin de décider de continuer ou non l’exécution du workflow et d’effectuer la mise à jour.
-
-* [Créer une liste récapitulative](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/create-a-summary-list.html?lang=fr){target="_blank"}
-Découvrez comment créer un workflow qui, après la collecte de fichiers et plusieurs enrichissements, permet de créer une liste récapitulative. L’exemple est basé sur une liste de contacts qui ont effectué des achats dans un magasin.
-
-* [Enrichir des données](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/enrich-data.html?lang=fr){target="_blank"}
-Découvrez comment envoyer des diffusions personnalisées aux profils ayant participé au dernier jeu concours en fonction de leur score.
-
-* [Utiliser des agrégats](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html?lang=fr){target="_blank"}
-Découvrez comment identifier les derniers destinataires ajoutés à la base de données.
-
-* [Mise à jour trimestrielle de la liste à l’aide d’une requête incrémentale](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/quarterly-list-update.html?lang=fr){target="_blank"}
-Découvrez comment utiliser une requête incrémentale pour mettre automatiquement à jour une liste de destinataires.
-
-* [Configurer un workflow d’importation récurrent](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html?lang=fr){target="_blank"}
-Découvrez comment concevoir un workflow qui peut être réutilisé pour importer des profils en provenance d’un CRM dans la base de données Adobe Campaign.
-
-### Ciblage {#designing-queries}
-
-<img src="assets/do-not-localize/icon_filter.svg" width="60px">
-
-* [Effectuer une requête sur la table des destinataires](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/querying-recipient-table.html?lang=fr){target="_blank"}
-Découvrez comment récupérer les noms et les e-mails des destinataires dont le domaine d’e-mail est « orange.co.uk » et qui ne vivent pas à Londres.
-
-* [Informations sur la diffusion de requêtes](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-delivery-info.html?lang=fr){target="_blank"}
-Découvrez comment définir des requêtes sur les informations de diffusion pour récupérer le comportement du profil.
-
-* [Calculer les agrégats](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/compute-aggregates.html?lang=fr){target="_blank"}
-Découvrez comment compter le nombre de profils vivant à Londres, en fonction du genre.
-
-* [Requête avec une relation plusieurs-à-plusieurs](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=fr){target="_blank"}
-Découvrez comment trouver des profils qui n’ont pas été contactés au cours des 7 derniers jours.
-
-* [Appeler une variable d’instance dans une requête](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/javascript-scripts-and-templates.html?lang=fr){target="_blank"}
-Découvrez comment utiliser une variable d’instance pour calculer dynamiquement le pourcentage de partage à appliquer à une population.
-
-<!--
-### Change data source activity {#data-source-uc}
-
-The **[!UICONTROL Change data source]** activity allows you to change the data source of a workflow **[!UICONTROL Working table]**. 
-
-In this use case, learn how to use the **[!UICONTROL Change data source]** activity to perform unitary operations to insert or update information to the recipient table.
-
-![](assets/wf_data_source_uc.png)
-
-1. Create a workflow and add a **[!UICONTROL Start]** activity.
-
-1. Query your targeted recipients from the NmsRecipient table with a **[!UICONTROL Query]** activity. 
-
-    For more information on the **[!UICONTROL Query]** activity, refer to the [Query](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/query.html?lang=fr#creating-a-query) page in Campaign Classic V7 documentation.
-
-1. 
-
-1. From the **[!UICONTROL Targeting]** tab, add a **[!UICONTROL Change data source]** activity and double-click it to select **[!UICONTROL Default data source]**.
-    
-    The working table, which contains the result of your query, is then moved to the default PostgreSQL database.
-
-1. From the **[!UICONTROL Actions]** tab, drag and drop a **[!UICONTROL JavaScript code]** activity to perform unitary operations on the working table.
-
-1. Add another **[!UICONTROL Change data source]** activity to revert back to the Cloud database. 
-    
-    Double-click your activity and select **[!UICONTROL Active FDA external account]** then the corresponding external account.
-
-1. Add an **[!UICONTROL End]** activity and start your workflow.
--->
-
+Découvrez les cas pratiques utilisant les fonctionnalités des workflows Campaign [dans cette section](../../automation/workflow/workflow-use-cases.md).

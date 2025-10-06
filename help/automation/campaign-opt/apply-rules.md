@@ -4,10 +4,10 @@ title: Application de règles de typologie
 description: Découvrez comment appliquer des règles de typologie
 feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
-source-git-commit: a8568e0c1e9af11b533b7d435691dc12cc0a2485
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
 source-wordcount: '1019'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -46,7 +46,7 @@ En effet, les règles de typologie peuvent ne concerner que certaines diffusions
 
 Pour définir les critères d&#39;application d&#39;une règle, cliquez sur le lien **[!UICONTROL Editer les critères d&#39;application de la règle...]**, dans l&#39;onglet **[!UICONTROL Général]**.
 
-Utilisez alors le requêteur pour définir les conditions de filtrage. Dans l&#39;exemple ci-dessous, seules les diffusions contenant le terme &#39;offre&#39; dans leur libellé, et celles créées avant le 1er avril 2013, sont concernées par la règle de capacité.
+Utilisez ensuite le [requêteur](../../v8/start/query-editor.md) pour définir les conditions de filtrage. Dans l&#39;exemple suivant, la règle de capacité ne concerne que les diffusions dont le libellé contient le mot &#39;offre&#39; ou les diffusions créées avant le 1er avril 2013.
 
 ![](assets/campaign_opt_create_capacity_criterion.png)
 
