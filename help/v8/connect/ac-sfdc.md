@@ -5,7 +5,7 @@ feature: Salesforce Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 1e20f3b9-d1fc-411c-810b-6271360286f9
-source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
+source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 97%
@@ -80,4 +80,4 @@ Pour synchroniser les données entre Adobe Campaign et SFDC, créez un workflow
 
 Pour en savoir plus sur la synchronisation des données, consultez [cette page](crm-data-sync.md).
 
-En savoir plus sur la gestion des énumérations dans Campaign [sur cette page](../dev/enumerations.md).
+En savoir plus sur la gestion des énumérations dans Campaign [sur cette page](../config/enumerations.md).

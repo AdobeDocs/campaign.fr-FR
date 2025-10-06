@@ -5,7 +5,7 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
+source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
 source-wordcount: '1423'
 ht-degree: 98%
@@ -223,7 +223,7 @@ Pour lier une valeur par défaut à un champ, vous pouvez utiliser le `<default>
 
 ### Énumérations {#enumerations}
 
-Utilisez des énumérations libres, fixes ou basées sur une base de données [enumérations](../dev/enumerations.md) pour contrôler les valeurs de champ. Ils fournissent des listes déroulantes pour une saisie plus facile, des données cohérentes et une conception de schéma flexible.
+Utilisez des énumérations libres, fixes ou basées sur une base de données [enumérations](../config/enumerations.md) pour contrôler les valeurs de champ. Ils fournissent des listes déroulantes pour une saisie plus facile, des données cohérentes et une conception de schéma flexible.
 
 #### Énumération libre {#free-enumeration}
 

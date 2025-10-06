@@ -5,7 +5,7 @@ feature: Microsoft CRM Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
+source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 99%
@@ -195,7 +195,7 @@ Pour synchroniser les données entre Adobe Campaign et Microsoft CRM, créez un
 
 Pour en savoir plus sur la synchronisation des données, consultez [cette page](crm-data-sync.md).
 
-En savoir plus sur la gestion des énumérations dans Campaign [sur cette page](../dev/enumerations.md).
+En savoir plus sur la gestion des énumérations dans Campaign [sur cette page](../config/enumerations.md).
 
 ### Types de données de champ pris en charge {#ms-dyn-supported-types}
 

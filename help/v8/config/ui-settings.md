@@ -5,7 +5,7 @@ feature: Application Settings
 role: Admin, Developer
 level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
-source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
+source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 97%
@@ -160,4 +160,4 @@ Vous pouvez également paramétrer le tri ou combiner les critères de tri. Pour
 ## Ressources supplémentaires
 
 * **[Commencez par l’interface utilisateur de Campaign](../start/campaign-ui.md)** - Découvrez comment accéder à l’interface d’Adobe Campaign et la parcourir.
-* **[Utiliser des énumérations](../dev/enumerations.md)** - Standardisez les valeurs de champ avec des listes déroulantes prédéfinies pour une saisie plus rapide et plus cohérente des données.
+* **[Utiliser des énumérations](../config/enumerations.md)** - Standardisez les valeurs de champ avec des listes déroulantes prédéfinies pour une saisie plus rapide et plus cohérente des données.
