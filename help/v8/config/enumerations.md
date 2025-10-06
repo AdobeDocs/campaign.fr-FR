@@ -5,10 +5,10 @@ feature: Configuration, Application Settings
 role: Developer
 version: Campaign v8, Campaign Classic v7
 level: Intermediate, Experienced
-source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
+source-git-commit: a1f479538a2d93a2ec13e35cb6813e09c8c4a5f8
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 89%
+source-wordcount: '852'
+ht-degree: 79%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 89%
 
 Une énumération (également appelée liste détaillée) est une liste prédéfinie de valeurs que vous pouvez utiliser pour renseigner certains champs. Les énumérations permettent de normaliser les valeurs de champ, de rendre la saisie de données plus cohérente et de simplifier les requêtes.
 
-Lorsqu’elles sont disponibles, les valeurs s’affichent dans une liste déroulante. Vous pouvez sélectionner une valeur directement ou commencer à saisir : l’entrée prédictive suggère des valeurs correspondantes et les complète automatiquement.
+Une fois définies, les valeurs sont affichées dans une liste déroulante. Une valeur peut être sélectionnée directement ou saisie à l’aide d’une entrée prédictive, qui suggère et complète les entrées correspondantes. Certains champs contiennent des énumérations prédéfinies. Des énumérations supplémentaires peuvent être créées si nécessaire.
 
 ![](assets/enum_values.png)
 
-Certains champs de console sont configurés avec des énumérations. Si une énumération est **ouverte**, vous pouvez également ajouter de nouvelles valeurs directement dans le champ.
-
-![Accéder aux énumérations](../config/assets/enumerations-menu.png)
 
 ## Types d’énumération {#types-of-enum}
 
 Les énumérations sont stockées dans le dossier **[!UICONTROL Administration > Plateforme > Énumérations]** de l’explorateur.
 
-Celles-ci peuvent être : Ouverte, Système, Émoticône ou Fermée.
+![Accéder aux énumérations](../config/assets/enumerations-menu.png)
+
+
+Une énumération peut être : **Ouverte**, **Système**, **Émoticône** ou **Fermée**.
 
 * Une énumération **Ouverte** permet aux utilisateurs et utilisatrices d’ajouter des valeurs directement dans les champs à partir de cette énumération.
 * Une énumération **Fermée** a une liste fixe de valeurs qui ne peut être modifiée qu’à partir du dossier **[!UICONTROL Administration > Plateforme > Énumérations]** de l’explorateur.
@@ -44,11 +44,12 @@ Pour les énumérations **Ouverte** et **Fermée**, des options spécifiques son
 
 ## Cleansing des alias {#alias-cleansing}
 
-Dans les champs d’énumération, vous pouvez sélectionner une valeur ou saisir une valeur personnalisée qui n’est pas disponible dans la liste déroulante. Les valeurs personnalisées peuvent être ajoutées aux valeurs d’énumération existantes, en tant que nouvelles. Dans ce cas, l’option **[!UICONTROL Ouverte]** doit être sélectionnée. Ces valeurs personnalisées peuvent être nettoyées à l’aide des fonctionnalités de cleansing des alias. Par exemple, si un utilisateur ou une utilisatrice accède à `Adob` au lieu de `Adobe`, le processus de cleansing des alias peut le remplacer automatiquement par le terme correct.
+Dans les champs d’énumération, une valeur peut être sélectionnée dans la liste déroulante ou saisie manuellement si elle n’est pas disponible dans la liste. Les valeurs personnalisées peuvent être ajoutées à l’énumération lorsque l’option **[!UICONTROL Ouvrir]** est activée. Ces valeurs peuvent ensuite être normalisées par le biais de la normalisation des alias, qui remplace automatiquement les variations avec le terme correct (par exemple, conversion de `Adob` en `Adobe`).
+
 
 >[!CAUTION]
 >
->La normalisation des données est un processus critique qui affecte les données de la base. En effet, Adobe Campaign procède à la mise à jour en masse de données, ce qui peut impliquer la suppression de certaines valeurs. Cette opération est donc réservée à des utilisateurs et utilisatrices avertis.
+>La normalisation des données est une opération critique qui affecte les valeurs de la base de données. Adobe Campaign effectue des mises à jour en masse des données, ce qui peut entraîner la suppression de certaines valeurs. Cette opération est réservée à des utilisateurs experts.
 
 Activez l’option **[!UICONTROL Cleansing des alias]** pour utiliser les fonctionnalités de normalisation des données pour une énumération. Lorsque cette option est sélectionnée, l’onglet **[!UICONTROL Alias]** s’affiche au bas de la fenêtre.
 
