@@ -75,7 +75,7 @@ Vous pouvez insérer une URL personnalisée dans le fichier d’extraction. Pour
 
 >[!NOTE]
 >
->Cet assistant comprend les étapes de l’assistant d’exportation décrites dans la [ documentation de Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"}.
+>Cet assistant comprend les étapes de l’assistant d’exportation décrites dans la [&#x200B; documentation de Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"}.
 
 ## Validation de la diffusion{#validating}
 
