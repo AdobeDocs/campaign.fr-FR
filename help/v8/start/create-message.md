@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 56d5628312ea3dedf9335dd0933811e4bf66eb97
 workflow-type: tm+mt
-source-wordcount: '1610'
-ht-degree: 100%
+source-wordcount: '1611'
+ht-degree: 99%
 
 ---
 
@@ -94,7 +94,7 @@ Pour sélectionner les destinataires d’une diffusion, procédez comme suit :
 
    Les types de cible suivants sont disponibles :
 
-   * **[!UICONTROL Conditions de filtrage]** : utilisez cette option pour définir une requête et afficher le résultat. Découvrez comment concevoir une requête dans [cette section](../start/query-editor.md).
+   * **[!UICONTROL Conditions de filtrage]** : utilisez cette option pour définir une requête personnalisée afin de récupérer les destinataires. Découvrez comment concevoir une requête dans [cette section](../start/query-editor.md).
    * **[!UICONTROL Une liste de destinataires]** : utilisez cette option pour cibler une liste de profils. Découvrez les listes dans [cette section](../audiences/create-audiences.md).
    * **[!UICONTROL Une personne destinataire]** : utilisez cette option pour sélectionner un profil spécifique dans la base de données.
    * **[!UICONTROL Destinataires présents dans un dossier]** : utilisez cette option pour cibler tous les profils contenus dans un dossier spécifique.
@@ -182,7 +182,7 @@ Pour plus d’informations sur l’envoi et les personnes destinataires des BAT,
 
 Dans cette vidéo, vous apprendrez comment ajouter des adresses de contrôle et des BAT à un email existant et comment l’envoyer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447001?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 D’autres vidéos pratiques sur Campaign Classic sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=fr).
 
