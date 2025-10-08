@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 version: Campaign v8, Campaign Classic v7
-source-git-commit: f308f34afc16426d81d31eeaca5f14b10ac49c32
+source-git-commit: 72e3f643d0e53c22c5007aab431689ebeca7403c
 workflow-type: tm+mt
 source-wordcount: '1999'
 ht-degree: 84%
@@ -69,7 +69,7 @@ Selon le type d’informations affichées, vous pouvez appliquer un filtre par s
 
 Pour les diffusions, par exemple, vous pouvez choisir de n’afficher que les diffusions terminées, comme illustré ci-dessous :
 
-![](assets/d_ncs_user_interface_filter_delivery.png)
+![](assets/filter_delivery.png)
 
 >[!TAB Classer par]
 
@@ -83,7 +83,7 @@ Vous pouvez, par exemple, trier les tâches par priorité, date de création ou 
 
 Utilisez le champ de recherche pour accéder rapidement à l&#39;élément souhaité : saisissez les caractères contenus dans le libellé ou le nom interne de l&#39;élément à afficher puis validez pour appliquer un filtre automatique sur les données de la page.
 
-![](assets/d_ncs_user_interface_filter_search.png)
+![](assets/filter_search.png)
 
 Pour afficher à nouveau tous les éléments, cliquez sur la croix afin de supprimer le contenu du champ de recherche.
 
