@@ -5,10 +5,10 @@ description: En savoir plus sur l’activité de workflow de mise à jour des do
 feature: Workflows, Targeting Activity, Data Management
 version: Campaign v8, Campaign Classic v7
 exl-id: 63b214c7-bbbf-448b-b3af-b3b7a7a5b65c
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+source-git-commit: 2d13ba585b55f0e149d1bca53240b05fe5a8a9eb
+workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Le champ **[!UICONTROL Type d&#39;opération]** permet de choisir le traitement 
 * **[!UICONTROL Ajouter ou mettre à jour]** : ajouter des données ou les mettre à jour si elles ont déjà été ajoutées auparavant.
 * **[!UICONTROL Ajouter]** : ajouter des données uniquement.
 * **[!UICONTROL Mettre à jour]** : mettre à jour des données uniquement.
-* **[!UICONTROL Mettre à jour et fusionner les collections]** : mettre à jour les données et choisir un enregistrement principal, puis lier les éléments liés aux duplicatas de cet enregistrement principal. Les duplicatas peuvent ensuite être supprimés sans créer d’éléments orphelins attachés.
+* **[!UICONTROL Mettre à jour et fusionner les collections]** : mettre à jour les données et choisir un enregistrement principal, puis lier les éléments liés aux doublons de cet enregistrement principal. Les doublons peuvent ensuite être supprimés sans créer d’éléments orphelins attachés.
 * **[!UICONTROL Supprimer]** : supprimez des données.
 
 ![](assets/s_advuser_update_data_1.png)
@@ -101,7 +101,7 @@ La mise à jour des données et la fusion des collections permet de mettre à jo
 
 1. Indiquez les collections à déplacer vers l&#39;enregistrement primaire et les champs à mettre à jour.
 
-   Renseignez également les règles s’appliquant à ces derniers lorsqu’un ou plusieurs enregistrements secondaires sont identifiés. Pour cela, vous pouvez vous aider du Créateur d’expressions. Par exemple, en indiquant que c’est la valeur mise à jour le plus récemment parmi les différents enregistrements qui doit être conservée.
+   Renseignez également les règles s&#39;appliquant à ces derniers lorsqu&#39;un ou plusieurs enregistrements secondaires sont identifiés. Pour ce faire, vous pouvez utiliser le [créateur d’expressions](../../v8/start/filter-conditions.md#list-of-functions). Par exemple, en indiquant que c&#39;est la valeur mise à jour le plus récemment parmi les différents enregistrements qui doit être conservée.
 
    Indiquez ensuite les conditions de prise en compte de la règle.
 
@@ -122,6 +122,6 @@ La section [Étape 2 : Écriture des données enrichies dans la table « Achat
 ## Paramètres d&#39;entrée {#input-parameters}
 
 * tableName
-* schema
+* schéma
 
 Chacun des événements entrants doit spécifier une cible définie par ces paramètres.

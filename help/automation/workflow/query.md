@@ -6,10 +6,10 @@ feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 2d13ba585b55f0e149d1bca53240b05fe5a8a9eb
 workflow-type: tm+mt
 source-wordcount: '1663'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -52,7 +52,7 @@ Le lien **[!UICONTROL Editer la requête...]** permet de définir le type de cib
 
    Vous pouvez également ajouter des conditions de regroupement de données en cochant la case correspondante. Pour cela, la dimension de filtrage doit impérativement être différente de la dimension de ciblage de la requête. Pour plus d’informations sur les regroupements, consultez cette [section](query-grouping-management.md).
 
-   Vous pouvez également ajouter des critères supplémentaires en vous aidant du Créateur d’expressions et les combiner grâce aux options logiques ET, OU et SAUF.
+   Vous pouvez également ajouter d’autres critères à l’aide du [Générateur d’expression](../../v8/start/filter-conditions.md#using-and--or--except) et les combiner avec les options logiques ET, OU et SAUF.
 
    Enregistrez votre filtre si vous souhaitez le réutiliser ultérieurement.
 
