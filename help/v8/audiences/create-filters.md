@@ -6,10 +6,10 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 72e3f643d0e53c22c5007aab431689ebeca7403c
+source-git-commit: 24a5c4f1d73ea08e40d271db483da33bf5615fb2
 workflow-type: tm+mt
-source-wordcount: '1999'
-ht-degree: 84%
+source-wordcount: '1982'
+ht-degree: 83%
 
 ---
 
@@ -41,12 +41,7 @@ Par défaut, Adobe Campaign affiche tous les enregistrements de base de données
 
 ![](assets/filter_web_zone.png)
 
-Plusieurs modes de filtrage des données à afficher sont possibles. Si nécessaire, ils peuvent être utilisés ensemble.
-
-* Filtrage par dossier, voir la section [Filtrer par dossier](#filter-by-folder),
-* Filtrage par statut, voir la section [Filtrer par statut](#filter-by-status),
-* Tri des données, voir la section [Ordre de tri](#order-by),
-* Recherche, voir la section [Recherche rapide](#quick-search).
+Plusieurs modes de filtrage des données à afficher sont possibles. Si nécessaire, ils peuvent être utilisés ensemble. Parcourez les onglets ci-dessous pour en savoir plus sur les options de filtrage.
 
 
 >[!BEGINTABS]
