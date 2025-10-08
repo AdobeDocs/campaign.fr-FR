@@ -6,14 +6,14 @@ role: User
 level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
+source-git-commit: ec1b41ccf532b044e75c69e795eabfb19a523ec2
+workflow-type: tm+mt
 source-wordcount: '469'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
-# Affichage des profils existants{#view-profiles}
+# Affichage des profils existants {#view-profiles}
 
 Accédez à **[!UICONTROL Profils et cibles]** pour accéder aux destinataires stockés dans la base de données Adobe Campaign.
 
@@ -28,10 +28,10 @@ Pour des manipulations de profils plus avancées, accédez à l&#39;arborescence
 
 >[!CAUTION]
 >
->L&#39;écran de destinataire intégré est défini par le biais d&#39;un schéma XML et de son formulaire associé. Le schéma XML est stocké dans le nœud **[!UICONTROL Administration > Configuration > Schémas de données]** de l&#39;arborescence de l&#39;explorateur Adobe Campaign. Seuls les utilisateurs experts peuvent apporter des modifications à ces schémas.
+>L’écran de destinataire intégré est défini par le biais d’un schéma XML et de son formulaire associé. Le schéma XML est stocké dans le nœud **[!UICONTROL Administration > Configuration > Schémas de données]** de l&#39;arborescence de l&#39;explorateur Adobe Campaign. Seuls les utilisateurs experts peuvent apporter des modifications à ces schémas.
 >
 
-## Modification d&#39;un profil{#edit-a-profiles}
+## Modification d&#39;un profil {#edit-a-profiles}
 
 Sélectionnez un profil pour afficher les détails dans un nouvel onglet.
 
@@ -45,9 +45,9 @@ Pour un destinataire intégré standard, vous pouvez accéder aux onglets suivan
 
   Cet onglet stocke également l&#39;indicateur **opt-out** pour le profil : lorsque l&#39;option **[!UICONTROL Ne plus contacter (tous canaux)]** est sélectionnée, le profil est sur liste bloquée. Ces informations sont ajoutées aux données de contact si le destinataire a cliqué sur un lien de désinscription dans une newsletter par exemple. Ce destinataire ne sera plus ciblé sur aucun canal (e-mail, courrier, etc.). Pour en savoir plus, reportez-vous à [cette page](../send/quarantines.md).
 
-* L&#39;onglet **Coordonnées**, qui contient l&#39;adresse postale du profil sélectionné.
+* L’onglet **Coordonnées**, qui contient l’adresse postale du profil sélectionné.
 
-  Vous pouvez vérifier dans cet écran l&#39;indice de qualité de l&#39;adresse et le nombre d&#39;erreurs que contient l&#39;adresse. Ces informations sont directement utilisées par le prestataire de services postaux, en fonction du nombre d&#39;erreurs rencontrées lors des diffusions précédentes, et ne peuvent pas être modifiées manuellement.
+  Vous pouvez vérifier dans cet écran l&#39;indice de qualité de l&#39;adresse et le nombre d&#39;erreurs que contient l&#39;adresse. Ces informations sont directement utilisées par le fournisseur de courrier, en fonction du nombre d’erreurs rencontrées lors des diffusions précédentes, et ne peuvent pas être modifiées manuellement.
 
 * L&#39;onglet **Autre**, pour des champs spécifiques qui peuvent être personnalisés et renseignés selon vos besoins.
 
@@ -69,7 +69,7 @@ Pour un destinataire intégré standard, vous pouvez accéder aux onglets suivan
   >
 
 
-* L&#39;onglet **Abonnements**, pour tous les abonnements principaux aux services. Utilisez l&#39;onglet **Historique** pour accéder aux détails des abonnements et des désabonnements de ce contact.
+* L’onglet **Abonnements**, pour tous les abonnements principaux aux services. Utilisez l&#39;onglet **Historique** pour accéder aux détails des abonnements et des désabonnements de ce contact.
 
   ![](assets/subscription-tab.png)
 
