@@ -5,9 +5,9 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: 449f24cb23afa2d6bd7d6f2ad7ff3ba65e0a1d5d
+source-git-commit: f308f34afc16426d81d31eeaca5f14b10ac49c32
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '796'
 ht-degree: 96%
 
 ---
@@ -117,6 +117,7 @@ ht-degree: 96%
    + [Prise en main des profils et des audiences](audiences/gs-audiences.md)
    + [Utiliser les audiences](start/audiences.md)
    + [Accès aux profils](audiences/view-profiles.md)
+   + [Utilisation des filtres](audiences/create-filters.md)
    + Ajouter des profils {#add-profiles}
       + [Création manuelle de profils](audiences/create-profiles.md)
       + [Importer des profils depuis un fichier](audiences/import-profiles.md)
@@ -126,7 +127,6 @@ ht-degree: 96%
       + [Créer des profils de test](audiences/test-profiles.md)
    + Créer des audiences {#create-audiences}
       + [Créer une liste de contacts](audiences/create-audiences.md)
-      + [Créer et gérer des filtres](audiences/create-filters.md)
       + [Partager les audiences avec les solutions Adobe](start/shared-audiences.md)
    + [Bonnes pratiques](audiences/audiences-best-practices.md)
    + [Gérer les abonnements](start/subscriptions.md)

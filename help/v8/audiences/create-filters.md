@@ -6,22 +6,22 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: f308f34afc16426d81d31eeaca5f14b10ac49c32
 workflow-type: tm+mt
-source-wordcount: '1708'
-ht-degree: 99%
+source-wordcount: '1999'
+ht-degree: 84%
 
 ---
 
-# Créer et gérer des filtres{#create-filters}
+# Utilisation des filtres{#create-filters}
 
-Le filtrage des données est le processus de sélection d&#39;une petite partie de votre jeu de données, composée uniquement des enregistrements qui correspondent à certains critères, et d&#39;utilisation de ce sous-ensemble pour des actions spécifiques (mises à jour, création d&#39;audiences) ou des analyses.
+Le filtrage des données est le processus par lequel un jeu de données est limité aux enregistrements qui correspondent à des critères spécifiques. Ce sous-ensemble peut ensuite être utilisé pour des actions ciblées (telles que des mises à jour ou la création d’audiences) ou pour des analyses.
 
-Lors de la navigation dans Campaign à partir de l&#39;**[!UICONTROL explorateur]**, les données sont affichées dans des listes. Vous pouvez utiliser des filtres intégrés existants pour accéder à un sous-ensemble spécifique de ces données : adresses en quarantaine, destinataires non ciblés, tranche d&#39;âge spécifique ou date de création, par exemple.
+Lors de la navigation dans Campaign, les données sont affichées dans des listes. Vous pouvez appliquer des filtres intégrés pour accéder rapidement à un sous-ensemble défini, tel que des adresses en quarantaine, des destinataires non ciblés ou des enregistrements situés dans une plage d’âge spécifique ou à une date de création spécifique.
 
-Vous pouvez également créer vos propres filtres, les enregistrer pour une utilisation ultérieure ou les partager avec d&#39;autres utilisateurs de Campaign.
+En outre, vous pouvez créer des filtres personnalisés, les enregistrer pour une utilisation ultérieure et les partager avec d’autres utilisateurs de Campaign.
 
-La configuration des filtres permet de sélectionner des données dans une liste **[!UICONTROL de manière dynamique]** : lorsque les données sont modifiées, les données filtrées sont mises à jour.
+Les filtres sont appliqués **dynamiquement** : à chaque modification des données, les résultats filtrés sont automatiquement mis à jour.
 
 >[!NOTE]
 >
@@ -29,7 +29,67 @@ La configuration des filtres permet de sélectionner des données dans une liste
 
 Les types de filtres suivants sont disponibles dans Adobe Campaign :
 
+* [Filtres prédéfinis](#predefined-filters)
+* [Filtres rapides](#quick-filters)
+* [Filtres personnalisés avancés](#advanced-filters)
+
 ## Filtres prédéfinis{#predefined-filters}
+
+### Filtres prédéfinis dans les tableaux de bord
+
+Par défaut, Adobe Campaign affiche tous les enregistrements de base de données que l’opérateur est autorisé à lire. Vous pouvez filtrer ces données à l’aide des options disponibles dans la section supérieure de la fenêtre du navigateur.
+
+![](assets/filter_web_zone.png)
+
+Plusieurs modes de filtrage des données à afficher sont possibles. Si nécessaire, ils peuvent être utilisés ensemble.
+
+* Filtrage par dossier, voir la section [Filtrer par dossier](#filter-by-folder),
+* Filtrage par statut, voir la section [Filtrer par statut](#filter-by-status),
+* Tri des données, voir la section [Ordre de tri](#order-by),
+* Recherche, voir la section [Recherche rapide](#quick-search).
+
+
+>[!BEGINTABS]
+
+>[!TAB Filtrer par dossier]
+
+Pour filtrer les données en fonction de leur dossier, cliquez sur l’icône **[!UICONTROL Dossier]** et sélectionnez le dossier contenant les données à afficher.
+
+![](assets/filter_web_select_folder.png)
+
+Seuls les profils du dossier s’affichent :
+
+![](assets/filter_web_folder_display.png)
+
+Utilisez la croix située à droite du champ de sélection du dossier pour revenir à un mode d&#39;affichage par défaut.
+
+>[!TAB Filtrer par statut]
+
+Selon le type d’informations affichées, vous pouvez appliquer un filtre par statut ou par état.
+
+Pour les diffusions, par exemple, vous pouvez choisir de n’afficher que les diffusions terminées, comme illustré ci-dessous :
+
+![](assets/d_ncs_user_interface_filter_delivery.png)
+
+>[!TAB Classer par]
+
+Vous pouvez sélectionner l&#39;ordre de tri des données proposées dans les pages à partir de la liste déroulante située à droite du champ de filtrage par dossier. Le contenu de ce filtre dépend du type de données de la page.
+
+Vous pouvez, par exemple, trier les tâches par priorité, date de création ou ordre alphabétique.
+
+![](assets/order_data_sample.png)
+
+>[!TAB Recherche rapide ]
+
+Utilisez le champ de recherche pour accéder rapidement à l&#39;élément souhaité : saisissez les caractères contenus dans le libellé ou le nom interne de l&#39;élément à afficher puis validez pour appliquer un filtre automatique sur les données de la page.
+
+![](assets/d_ncs_user_interface_filter_search.png)
+
+Pour afficher à nouveau tous les éléments, cliquez sur la croix afin de supprimer le contenu du champ de recherche.
+
+>[!ENDTABS]
+
+### Filtres prédéfinis dans l’explorateur
 
 Les filtres prédéfinis sont disponibles à partir du bouton **Filtres** au-dessus de chaque liste.
 
@@ -52,7 +112,7 @@ Utilisez le dernier onglet pour prévisualiser les données filtrées.
 ![](assets/built-in-filter-preview.png)
 
 
-+++  Filtres prédéfinis intégrés
++++  Filtres prédéfinis intégrés pour les profils
 
 <table> 
  <tbody> 
@@ -161,7 +221,7 @@ Utilisez le dernier onglet pour prévisualiser les données filtrées.
 
 +++
 
-### Filtres par défaut{#default-filters}
+#### Filtres par défaut{#default-filters}
 
 Les champs situés au-dessus de chaque liste permettent d&#39;utiliser le **filtre par défaut prédéfini** pour cette liste. Pour la liste des destinataires, vous pouvez par défaut filtrer par nom et adresse e-mail.
 
@@ -191,7 +251,7 @@ Les étapes sont les suivantes :
 
 ## Filtres rapides{#quick-filters}
 
-Utilisez et combinez les **Filtres rapides** pour définir des filtres sur des champs spécifiques.
+Vous pouvez définir et combiner des **filtres rapides** pour créer des filtres personnalisés sur des champs spécifiques.
 
 Une fois ajoutés, les champs de filtre rapide s&#39;affichent au-dessus de la liste de données, les uns après les autres. Ils peuvent être supprimés indépendamment les uns des autres.
 
@@ -199,7 +259,7 @@ Les filtres rapides sont spécifiques à chaque opérateur et opératrice et son
 
 Si vous devez réutiliser un filtre, créez un **filtre avancé** et enregistrez-le. [En savoir plus](#advanced-filters).
 
-Pour créer un **filtre rapide**, procédez comme suit :
+Pour créer un **filtre rapide**, procédez comme suit :
 
 1. Cliquez avec le bouton droit sur le champ sur lequel vous souhaitez filtrer les données et choisissez **[!UICONTROL Filtrer sur ce champ]**.
 
@@ -216,7 +276,7 @@ Pour créer un **filtre rapide**, procédez comme suit :
    ![](assets/add-filter-above-the-list.png)
 
 
-Si vous devez appliquer un filtre sur un champ qui n&#39;est pas disponible dans le formulaire, il doit figurer dans les colonnes et être filtré sur cette colonne. Pour ce faire :
+Si vous devez filtrer sur un champ qui n’est pas disponible dans le formulaire, mais dans les colonnes, et filtrer sur cette colonne. Pour ce faire :
 
 1. Cliquez sur l&#39;icône **[!UICONTROL Configurer la liste]**.
 
@@ -236,7 +296,7 @@ Si vous devez appliquer un filtre sur un champ qui n&#39;est pas disponible dans
 
 ## Filtres avancés{#advanced-filters}
 
-Combinez des critères complexes dans **Filtres avancés**. Utilisez ces filtres pour créer une requête complexe ou une combinaison de requêtes sur vos données. Ces filtres peuvent être enregistrés et partagés avec d&#39;autres utilisateurs de Campaign.
+Combinez des critères complexes dans des **personnalisésFiltres avancés**. Utilisez ces filtres pour créer une requête complexe ou une combinaison de requêtes sur vos données. Ces filtres peuvent être enregistrés et partagés avec d&#39;autres utilisateurs de Campaign.
 
 ### Créer un filtre avancé{#create-adv-filters}
 
@@ -355,5 +415,3 @@ Des paramètres avancés sont disponibles pour les filtres prédéfinis. Pour y 
    * Vous pouvez associer une table SQL au filtre pour qu&#39;elle soit commune à tous les éditeurs qui la partagent.
    * Pour empêcher un utilisateur de remplacer le filtre, sélectionnez l&#39;option **[!UICONTROL Ne pas restreindre le filtre]**. Par exemple, cette option est active pour les filtres « Destinataires d’une diffusion » et « Destinataires des diffusions appartenant à un dossier » disponibles dans l’assistant de diffusion. Ces filtres ne peuvent pas être surchargés.
 
-
-### Opérateurs
