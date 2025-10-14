@@ -6,10 +6,10 @@ feature: Deliverability
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 11c8c4c51c7901ba0d119323c564a64b940428b7
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 98%
+source-wordcount: '754'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Pour obtenir des conseils supplémentaires sur l’optimisation de la délivrabi
 
 >[!NOTE]
 >
->Pour plus d’informations sur la modification du contenu des e-mails, voir [Définir le contenu d’un e-mail](defining-the-email-content.md).
+>Pour plus d’informations sur la modification du contenu des e-mails, consultez cette [page](defining-the-email-content.md).
 
 ## Adresse d’expéditeur {#sender-address}
 
@@ -37,7 +37,7 @@ Certains FAI vérifient la validité de l’adresse d’expédition (**[!UICONTR
 
 Il faut s’assurer qu’une adresse correcte est bien renseignée au niveau de l’instance (menu **[!UICONTROL Outils > Avancé > Assistant de déploiement...]**) ou dans les scénarios les plus couramment utilisés.
 
-Pour plus d&#39;informations sur la définition de l&#39;adresse de l&#39;expéditeur, voir [cette page](defining-the-email-content.md#sender).
+Pour plus d&#39;informations sur la définition de l&#39;adresse de l&#39;expéditeur, consultez cette [page](defining-the-email-content.md#sender).
 
 ## Personnalisation {#personalization}
 

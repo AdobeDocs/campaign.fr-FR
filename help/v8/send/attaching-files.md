@@ -6,9 +6,9 @@ feature: Email
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 27d13642-2971-466b-818d-39328c198b14
-source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
-workflow-type: ht
-source-wordcount: '1087'
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+workflow-type: tm+mt
+source-wordcount: '1084'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ Deux cas se présentent :
 
 >[!NOTE]
 >
->Ce type de configuration est généralement réalisé dans les modèles de diffusion. Consultez à ce sujet la [documentation de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr).
+>Ce type de configuration est généralement réalisé dans les modèles de diffusion. Pour en savoir plus à ce sujet, consultez cette [page](../send/create-templates.md).
 
 ## Mécanismes de sécurisation {#attachments-guardrails}
 
@@ -140,7 +140,7 @@ Vous pouvez calculer le nom d’une pièce jointe pendant la préparation de la 
 
 1. Analysez puis démarrez votre diffusion.
 
-   Le calcul du nom du fichier est visible dans le journal de l&#39;analyse.
+   Le calcul du nom du fichier est visible dans le log de l&#39;analyse.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_05.png)
 

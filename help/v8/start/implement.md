@@ -5,9 +5,9 @@ feature: Overview
 role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1145'
 ht-degree: 97%
 
 ---
@@ -87,7 +87,7 @@ Avant de commencer à envoyer des messages et à créer des campagnes marketing,
 
    Découvrez comment configurer un modèle de workflow sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=fr){target="_blank"}.
 
-   En savoir plus sur les modèles d&#39;e-mail dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=fr){target="_blank"}.
+   En savoir plus sur les modèles d’e-mail sur cette [page](../send/create-templates.md).
 
 
 1. **Configurer les règles de typologie**

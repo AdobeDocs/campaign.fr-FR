@@ -6,10 +6,10 @@ feature: Email, Deliverability
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 11c8c4c51c7901ba0d119323c564a64b940428b7
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -35,7 +35,8 @@ SpamAssassin utilise diverses techniques de détection des emails indésirables,
 
 Une fois que vous avez créé votre email et défini son contenu, suivez les étapes ci-après pour évaluer les risques.
 
-Pour plus d&#39;informations sur la conception d&#39;une diffusion, consultez [cette section](defining-the-email-content.md).
+La création et la conception d&#39;une diffusion sont présentées dans cette [page](defining-the-email-content.md).
+
 
 1. Accédez à l&#39;onglet **[!UICONTROL Aperçu]**.
 1. Sélectionnez un destinataire pour prévisualiser votre diffusion.

@@ -6,9 +6,9 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '2970'
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+workflow-type: tm+mt
+source-wordcount: '2959'
 ht-degree: 100%
 
 ---
@@ -209,7 +209,7 @@ Par défaut, le nombre de caractère d&#39;un SMS respecte la norme de télépho
 
 * En revanche, si vos SMS contiennent beaucoup de caractères qui ne sont pas pris en charge par la norme GSM, activez la translittération afin de limiter le coût de vos envois. En savoir plus [dans cette section](../send/sms/smpp-external-account.md#smpp-transliteration).
 
-* Vous pouvez appliquer la translittération aux SMS. Celle-ci consiste à remplacer un caractère d’un SMS par un autre lorsque ce caractère n’est pas pris en charge par la norme GSM. Notez que l’insertion de champs de personnalisation dans le contenu du SMS peut introduire des caractères non pris en charge par l’encodage GSM. En tant qu’administrateur ou administratrice Campaign, vous pouvez autoriser la translittération des caractères en cochant la case correspondante dans l’onglet des paramètres du canal SMPP du **[!UICONTROL compte externe]** correspondant. [En savoir plus](../send/sms/smpp-external-account.md#smpp-transliteration)
+* Vous pouvez appliquer la translittération aux SMS. Celle-ci consiste à remplacer un caractère d’un SMS par un autre lorsque ce caractère n’est pas pris en charge par la norme GSM. Notez que l’insertion de champs de personnalisation dans le contenu du SMS peut introduire des caractères non pris en charge par l’encodage GSM. En tant qu’administrateur ou administratrice Campaign, vous pouvez activer la translittération des caractères en cochant la case correspondante dans l’onglet des paramètres du canal SMPP du **[!UICONTROL compte externe]** correspondant. [En savoir plus](../send/sms/smpp-external-account.md#smpp-transliteration)
 
 +++
 
@@ -226,7 +226,7 @@ To avoid common formatting errors, check the following elements:
 
 * Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../../installation/using/configuring-campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode. 
 
-* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#authentication).-->
+* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).-->
 
 ## Gestion des images {#manage-images}
 
@@ -302,7 +302,7 @@ Veillez à sélectionner les destinataires du BAT appropriés, car ils valident 
 
 ### Dédupliquer les adresses {#deduplicate-addresses}
 
-Il est important d&#39;éviter d&#39;avoir des adresses email en double, car cela peut avoir un impact sur votre cible.
+Il est important d’éviter d’avoir des adresses e-mail en double, car cela peut avoir un impact sur votre cible :
 
 * Un même message peut être envoyé plusieurs fois lorsqu&#39;une une cible est partagée.
 
@@ -411,9 +411,6 @@ Vous avez cliqué sur le bouton **Envoyer** ? Voyons maintenant ce qui se passe
 Pour contrôler vos campagnes, vous devez vérifier que le message a bien été délivré à vos destinataires.
 
 Dans le tableau de bord des diffusions de Campaign, vous pouvez vérifier les messages traités et consulter les logs d’audit de diffusion. Vous pouvez également contrôler le statut des messages dans les logs de diffusion.
-
-[En savoir plus sur la surveillance des diffusions dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=fr){target="_blank"}.
-
 
 ## Tracking du comportement {#track-behaviour}
 

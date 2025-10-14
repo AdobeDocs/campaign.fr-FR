@@ -4,9 +4,9 @@ description: Découvrez comment utiliser le module Social Marketing d’Adobe 
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '859'
 ht-degree: 100%
 
 ---
@@ -149,14 +149,14 @@ Pour envoyer des messages directs à vos abonnés, procédez comme suit :
 
 >[!CAUTION]
 >
->Vous ne pouvez pas envoyer plus de 250 messages directs par jour. Pour éviter de dépasser ce seuil, vous pouvez effectuer une diffusion par vagues. Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#sending-using-multiple-waves){target="_blank"}.
+>Vous ne pouvez pas envoyer plus de 250 messages directs par jour. Pour éviter de dépasser ce seuil, vous pouvez effectuer une diffusion par vagues. Pour plus d’informations à ce sujet, consultez cette [section](configure-and-send.md#sending-using-multiple-waves).
 
 
 ## Accès aux données de suivi {#tw-tracking}
 
-Dans le modèle de diffusion **[!UICONTROL Tweet]**, le tracking est activé par défaut.
+Dans le modèle de diffusion **[!UICONTROL Tweet]** natif, le tracking est activé par défaut.
 
 Les données de tracking sont visualisables dans les rapports de diffusion et dans l&#39;onglet **[!UICONTROL Modifier > Tracking]** de la diffusion et du service.
 
-La configuration du tracking est le même que pour une diffusion e-mail. Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr){target="_blank"}.
+La configuration du tracking est le même que pour une diffusion e-mail. Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr){target="_blank"}.
 

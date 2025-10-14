@@ -6,10 +6,10 @@ role: Data Engineer
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '845'
-ht-degree: 100%
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+workflow-type: tm+mt
+source-wordcount: '834'
+ht-degree: 99%
 
 ---
 
@@ -31,9 +31,6 @@ Depuis le tableau de bord des diffusions, vous pouvez vérifier les messages tra
 >[!NOTE]
 >
 >Les statuts des diffusions ne s’affichent pas en temps réel. Découvrez le service de retour par e-mail dans [cette section](#email-feedback-service).
-
-
-[En savoir plus sur la surveillance des diffusions dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=fr){target="_blank"}.
 
 ## MTA de Campaign {#mta}
 
@@ -88,7 +85,7 @@ Lorsque le message est effectivement diffusé aux profils ciblés et que ces inf
 
 Lorsque des messages hard bounce sont signalés depuis le MTA, leur statut de log passe de **[!UICONTROL Pris en compte par le fournisseur d&#39;accès d&#39;accès]** à **[!UICONTROL En échec]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
-Lorsque des messages soft bounce sont signalés depuis le MTA, leur statut de log reste inchangé (**[!UICONTROL Pris en compte par le fournisseur d&#39;accès d&#39;accès]**) : seule le [motif de l’erreur](delivery-failures.md#delivery-failure-reasons) est mis à jour<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Le pourcentage **[!UICONTROL Succès]** reste inchangé. L&#39;envoi des messages soft bounce fait ensuite l&#39;objet de reprises tout au long de la [période de validité](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#defining-validity-period){target="_blank"} de la diffusion :
+Lorsque des messages soft bounce sont signalés depuis le MTA, leur statut de log reste inchangé (**[!UICONTROL Pris en compte par le fournisseur d&#39;accès d&#39;accès]**) : seule le [motif de l’erreur](delivery-failures.md#delivery-failure-reasons) est mis à jour<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Le pourcentage **[!UICONTROL Succès]** reste inchangé. L&#39;envoi des messages soft bounce fait ensuite l&#39;objet de reprises tout au long de la [période de validité](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/communication-channels){target="_blank"} de la diffusion :
 
 * Si une reprise est effectuée avec succès avant la fin de la période de validité, l’état du message passe à **[!UICONTROL Envoyé]** et le pourcentage **[!UICONTROL Succès]** augmente en conséquence.
 

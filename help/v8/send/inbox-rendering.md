@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Inbox rendering dans Campaign
-description: Découvrez comment capturer les rendus d'email et y accéder dans un rapport dédié
+description: Découvrez comment capturer les rendus des e-mails et y accéder dans un rapport dédié
 feature: Inbox Rendering, Monitoring, Email Rendering
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 11c8c4c51c7901ba0d119323c564a64b940428b7
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
 source-wordcount: '680'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -62,7 +62,8 @@ En règle générale, la fonctionnalité Inbox Rendering est utilisée pour test
 
 Une fois que vous avez créé votre diffusion email et défini son contenu ainsi que la population ciblée, suivez la procédure décrite ci-après.
 
-Pour plus d&#39;informations sur la conception et le ciblage d&#39;une diffusion, consultez [cette section](defining-the-email-content.md).
+La création, la conception et le ciblage d&#39;une diffusion sont présentés dans cette [page](defining-the-email-content.md).
+
 
 1. Dans la barre supérieure de la diffusion, cliquez sur le bouton **[!UICONTROL Inbox rendering]**.
 

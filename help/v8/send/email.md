@@ -6,9 +6,9 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '578'
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+workflow-type: tm+mt
+source-wordcount: '579'
 ht-degree: 100%
 
 ---
@@ -100,7 +100,7 @@ Découvrez comment créer un workflow pour importer le contenu d’un e-mail dan
 >* [Sélectionner l’audience de votre e-mail](../audiences/gs-audiences.md)
 >* [Valider une diffusion et envoyer des BAT](preview-and-proof.md)
 >* [Configurer et envoyer la diffusion](configure-and-send.md)
->* [Bonnes pratiques de diffusion](../start/delivery-best-practices.md)
+>* [Bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=fr){target="_blank"}
 
 ## Tester et valider vos e-mails
 
