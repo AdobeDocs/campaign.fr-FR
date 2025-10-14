@@ -32,7 +32,7 @@ Placer sur la liste bloquée D&#39;un autre côté, les **profils** peuvent êtr
 
 >[!NOTE]
 >
->Les destinataires désabonnés via la méthode List-Unsubscribe [ « mailto »](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} ne sont pas mis en quarantaine. Placer sur la liste bloquée Ils sont soit désabonnés du [service](../start/subscriptions.md) associé à la diffusion, soit envoyés à l’(visible dans la section **[!UICONTROL Ne plus contacter]** du profil) si aucun service n’a été défini pour la diffusion.
+>Les destinataires désabonnés via la méthode List-Unsubscribe [&#x200B; « mailto »](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} ne sont pas mis en quarantaine. Placer sur la liste bloquée Ils sont soit désabonnés du [service](../start/subscriptions.md) associé à la diffusion, soit envoyés à l’(visible dans la section **[!UICONTROL Ne plus contacter]** du profil) si aucun service n’a été défini pour la diffusion.
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 
@@ -83,7 +83,7 @@ Pour afficher la liste des adresses en quarantaine **pour l&#39;ensemble de la p
 
 En outre, le rapport intégré **[!UICONTROL Non-délivrables et rebonds]**, disponible à partir de la section **Rapports** de cette page d’accueil, affiche des informations sur les adresses en quarantaine, les types d’erreurs rencontrées et une répartition des échecs par domaine. Vous pouvez filtrer les données pour une diffusion spécifique ou personnaliser ce rapport si nécessaire.
 
-Pour en savoir plus sur les adresses bounce, consultez le [ Guide des bonnes pratiques en matière de délivrabilité ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=fr){target="_blank"}.
+Pour en savoir plus sur les adresses bounce, consultez le [&#x200B; Guide des bonnes pratiques en matière de délivrabilité &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=fr){target="_blank"}.
 
 ### E-mail en quarantaine {#quarantined-recipient}
 
