@@ -3,9 +3,9 @@ title: Notes de mise à jour de Campaign v8
 description: Dernière version de Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 3bc247ba81de3de56c26bdf8fa9b8aa5ea91fb2a
+source-git-commit: d31368428fc7d5b982bb5fc67d0369bb17ea0b2c
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '388'
 ht-degree: 24%
 
 ---
@@ -28,10 +28,10 @@ Le **nouveau connecteur d’envoi de SMS** est désormais disponible pour les [d
 
 Cette version comprend également un ensemble de fonctionnalités disponibles dans l’interface utilisateur web de Campaign :
 
-* [Enrichissement du profil dans les messages transactionnels](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=fr){target="_blank"}
-* [Fonctionnalités multilingues pour les messages transactionnels, les notifications push et les SMS](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=fr){target="_blank"}
+* [Enrichissement du profil dans les messages transactionnels](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Fonctionnalités multilingues pour les messages transactionnels, les notifications push et les SMS](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
 
-Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Campaign [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}
+Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Campaign [](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}
 
 ### Correctifs {#fixes-8-8-2}
 
@@ -52,7 +52,7 @@ Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Camp
 * Correction d’un problème en raison duquel le serveur en temps réel renvoyait un code de réponse incorrect pour les jetons IMS non valides. (NEO-87428)
 * Correction d’un problème en raison duquel les statistiques de diffusion pour les e-mails et les SMS n’étaient pas entièrement recalculées, entraînant des indicateurs de succès inexacts. (NEO-88106)
 * Correction d’un problème lié au nouveau connecteur d’envoi SMS en raison duquel les logs de diffusion attribuaient incorrectement le statut de diffusion pour un petit sous-ensemble de messages. (NEO-89581)
-* Correction d’un problème lié au nouveau connecteur d’envoi SMS en raison duquel les mesures de succès sur les diffusions T-Mobile n’étaient pas correctement mises à jour sur les serveurs marketing et de mid-sourcing. (NEO-89850)
+* Correction d’un problème lié au nouveau connecteur d’envoi SMS en raison duquel les diffusions de mesures de succès ne se mettaient pas correctement à jour sur les serveurs marketing et de mid-sourcing. (NEO-89850)
 * Correction d’un problème de synchronisation entre les instances Real-Time et Marketing qui entraînait l’absence de logs de tracking et des rapports incorrects. (NEO-90247)
 * Correction d’un problème d’enrichissement du workflow qui entraînait des erreurs lors de la sélection de champs sur deux liens 1-N consécutifs dans les schémas personnalisés. (NEO-87682)
 
