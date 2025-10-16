@@ -5,11 +5,10 @@ description: Découvrez comment créer et insérer des coupons personnalisés
 feature: Personalization
 role: User
 version: Campaign v8, Campaign Classic v7
-exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+source-git-commit: 33462c1e2af34000131ce81e23ac2360c2cc5a3a
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 98%
+source-wordcount: '969'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +22,7 @@ Le fait d’ajouter des coupons à vos diffusions peut donner une valeur ajouté
 
 La gestion des coupons nécessite un package qui doit être installé. Pour confirmer que vous disposez de la Gestion des coupons, allez dans **[!UICONTROL Administration > Configuration > Gestion des packages > Packages installés.]**
 
-Les données des coupons peuvent être importées et exportée à l’aide de formats CSV et XML. [En savoir plus](../../platform/using/get-started-data-import-export.md).
+Les données des coupons peuvent être importées et exportée à l’aide de formats CSV et XML. [En savoir plus](../start/import.md).
 
 ## Créer un coupon {#creating-a-coupon}
 
@@ -58,7 +57,7 @@ Avant d&#39;appliquer les étapes ci-dessous, vérifiez que vous savez quel type
 
    >[!NOTE]
    >
-   >Les coupons individuels peuvent être importés en masse. Pour plus de détails sur lʼimport et lʼexport, consultez [cette section](../../platform/using/get-started-data-import-export.md).
+   >Les coupons individuels peuvent être importés en masse. Pour plus de détails sur lʼimport et lʼexport, consultez [cette section](../start/import.md).
 
 ### Configuration de coupons individuels {#configuring-individual-coupons}
 
@@ -75,8 +74,7 @@ Les valeurs des champs **[!UICONTROL état]**, **[!UICONTROL canal]** et **[!UIC
 
 ## Insertion dʼun coupon dans une diffusion e-mail {#inserting-a-coupon-into-an-email-delivery}
 
-Dans l&#39;exemple ci-dessous, la diffusion est créée à partir de la Page d&#39;accueil. Pour des consignes détaillées de création d&#39;une diffusion, voir [cette section](about-email-channel.md). Il est également possible d&#39;ajouter un coupon à une diffusion dans un workflow.
-
+Dans l&#39;exemple ci-dessous, la diffusion est créée à partir de la Page d&#39;accueil. Pour obtenir des instructions détaillées sur la création d&#39;une diffusion, consultez [cette section](email.md)
 1. Allez sur **[!UICONTROL Campagnes]** et sélectionnez **[!UICONTROL Diffusions]**.
 1. Cliquez sur **[!UICONTROL Créer]**.
 
@@ -150,9 +148,9 @@ Pour confirmer que la diffusion a abouti :
 
 >[!NOTE]
 >
->Par défaut, le module de gestion des coupons utilise une table **nms:recipient**. [En savoir plus](../../configuration/using/about-data-model.md#default-recipient-table).
+>Par défaut, le module de gestion des coupons utilise une table **nms:recipient**. [En savoir plus](../dev/datamodel.md#ootb-profiles).
 >
->Découvrez comment utiliser une table des destinataires personnalisée [sur cette page](../../configuration/using/about-custom-recipient-table.md).
+>Découvrez comment utiliser une table des destinataires personnalisée [sur cette page](../dev/custom-recipient.md).
 
 ## Gestion des coupons insuffisants {#managing-insufficient-coupons}
 
