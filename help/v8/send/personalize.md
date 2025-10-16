@@ -4,8 +4,9 @@ description: Découvrez comment personnaliser le contenu des messages.
 feature: Personalization
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
-source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
+source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 100%
@@ -70,4 +71,4 @@ Les variables suivantes sont des variables internes qui peuvent être utilisées
 Découvrez les différents types de contenu dynamique et apprenez à créer et à appliquer des blocs de personnalisation et des instructions conditionnelles à une diffusion.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3452868?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/335734?quality=12)
