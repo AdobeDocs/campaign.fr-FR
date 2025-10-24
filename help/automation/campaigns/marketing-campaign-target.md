@@ -6,10 +6,10 @@ feature: Campaigns, Audiences
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 26829656f8e06434ca3207c0c7b62ba907765972
 workflow-type: tm+mt
-source-wordcount: '1573'
-ht-degree: 100%
+source-wordcount: '1587'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ Dans une campagne marketing, pour chaque diffusion, vous pouvez définir :
 
 * L&#39;audience cible. Vous pouvez envoyer des messages à une [liste des destinataires](#send-to-a-group) ou créer une [audience dans un workflow](#build-the-main-target-in-a-workflow).
 * Une population témoin. Vous pouvez [ajouter une population témoin](#add-a-control-group) pour surveiller le comportement des destinataires après diffusion du message.
-* Adresses de contrôle : en savoir plus dans [cette section](../../v8/audiences/test-profiles.md).-->
+* Adresses de contrôle : en savoir plus dans [cette section](../../v8/audiences/test-profiles.md).
 
 Certaines de ces informations sont héritées du [modèle de campagne](marketing-campaign-templates.md#campaign-templates).
 
@@ -176,6 +176,10 @@ Les icônes de la barre d&#39;outils permettent d&#39;agir sur l&#39;exécution 
 La population témoin est une population qui ne recevra pas la diffusion : elle est utilisée pour suivre les comportements après diffusion et l&#39;impact de la campagne, par comparaison du comportement de la population cible, qui, elle, a reçu la diffusion.
 
 La population témoin peut être extraite de la cible principale et/ou issue d&#39;un groupe ou d&#39;une requête spécifique.
+
+>[!CAUTION]
+>
+>Vous ne pouvez pas utiliser de population témoin lors du chargement de la population cible à partir d’un fichier externe.
 
 ### Activation de la population témoin pour une campagne {#activate-the-control-group-for-a-campaign}
 

@@ -5,10 +5,10 @@ feature: Workflows, Data Management, Federated Data Access
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: ca7eca9d-9112-4ea1-9a0c-a24cf6a978e6
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '329'
-ht-degree: 100%
+source-git-commit: 26829656f8e06434ca3207c0c7b62ba907765972
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 92%
 
 ---
 
@@ -28,6 +28,10 @@ Notez que lorsque vous utilisez l&#39;activité **[!UICONTROL Modifier la source
 >[!IMPORTANT]
 >
 >Veuillez noter que les activités **[!UICONTROL Changer la dimension]** et **[!UICONTROL Modifier la source de données]** ne doivent pas être ajoutées sur une même ligne. Si vous devez utiliser les deux activités consécutivement, veillez à inclure une activité **[!UICONTROL Enrichissement]** entre les deux. Cela garantit une bonne exécution et évite les erreurs et conflits potentiels.
+
+>[!NOTE]
+>
+>L’activité **Modifier la Source de données** peut traiter un maximum d’un million d’enregistrements par exécution. Contactez votre représentant ou représentante Adobe si vous devez augmenter cette limite.
 
 Pour utiliser l&#39;activité **[!UICONTROL Modifier la source de données]**, vous devez effectuer les opérations suivantes :
 
