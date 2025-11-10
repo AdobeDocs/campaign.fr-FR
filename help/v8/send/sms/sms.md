@@ -5,10 +5,10 @@ feature: SMS
 role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
+source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 100%
+source-wordcount: '187'
+ht-degree: 85%
 
 ---
 
@@ -27,7 +27,8 @@ Après cette configuration, vérifiez votre connexion SMPP et vos connaissances 
 >[!NOTE]
 >
 >Vous pouvez également utiliser Adobe Campaign pour envoyer des [notifications push](../push.md) et des messages [LINE](../line/line.md) aux appareils mobiles.
-
+>
+> Pour les clients qui utilisent l’ancien connecteur SMS, la mise en œuvre existante reste prise en charge. Nous vous recommandons toutefois de passer au nouveau connecteur. Contactez Adobe si vous souhaitez effectuer une transition.
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
