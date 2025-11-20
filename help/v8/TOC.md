@@ -46,7 +46,7 @@ ht-degree: 96%
    + [Commencer avec les messages](start/gs-message.md)
    + [Créer votre première diffusion](start/create-message.md)
    + [Utiliser des modèles de diffusion](send/create-templates.md)
-   + [Bonnes pratiques relatives à la diffusion](start/delivery-best-practices.md)
+   + [Bonnes pratiques de diffusion](start/delivery-best-practices.md)
    + E-mails {#emails}
       + [Concevoir et valider des e-mails](send/email.md)
       + [Définition du contenu de l’e-mail](send/defining-the-email-content.md)
@@ -107,7 +107,7 @@ ht-degree: 96%
       + [Qu’est-ce que la délivrabilité ?](send/about-deliverability.md)
       + [Contrôler le contenu du message](send/control-message-content.md)
       + [Surveillance de la délivrabilité](send/monitoring-deliverability.md)
-      + [Inbox rendering](send/inbox-rendering.md)
+      + [Rendu de la boîte de réception](send/inbox-rendering.md)
       + [SpamAssassin](send/spamassassin.md)
    + Messages transactionnels {#real-time}
       + [Prise en main des messages transactionnels](send/transactional.md)
@@ -137,7 +137,7 @@ ht-degree: 96%
    + [Créer des pages de destination](dev/landing-pages.md)
    + [Concevoir des formulaires et des applications web](dev/webapps.md)
 + Workflows {#workflows}
-   + [Prise en main des workflows](config/workflows.md)
+   + [Commencer avec les workflows](config/workflows.md)
    + [Documentation des workflows >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=fr)
 + Gestion de la confidentialité et de la sécurité {#privacy}
    + [Gérer les demandes d’accès à des informations personnelles](start/privacy.md)
