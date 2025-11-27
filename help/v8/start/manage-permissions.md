@@ -4,9 +4,10 @@ description: Découvrir comment octroyer des autorisations aux utilisateurs et u
 feature: Permissions
 role: User, Admin
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
-source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
-workflow-type: ht
+source-git-commit: df8ab43d9c7aee96c23240cd6c2775311da1abf2
+workflow-type: tm+mt
 source-wordcount: '1734'
 ht-degree: 100%
 
@@ -188,8 +189,8 @@ Les droits nommés octroient des autorisations pour :
 * L&#39;exécution d&#39;opérations
 Par exemple, le bouton **Analyser** de l&#39;éditeur de diffusions est activé pour les membres du groupe **Chargés de diffusion** qui disposent du droit nommé **Préparer la diffusion**.
 
-* L&#39;accès aux dossiers
-L&#39;appartenance à des groupes d&#39;opérateurs peut permettre de bénéficier ou de se voir refuser des droits d&#39;accès aux dossiers, à travers la modification des paramètres de sécurité des dossiers. [En savoir plus](folder-permissions.md#restrict-access-to-a-folder).
+* L’accès aux dossiers
+L’appartenance à des groupe d’utilisateurs ou d’utilisatrices peut permettre de bénéficier ou de se voir refuser des droits d’accès aux dossiers, à travers la modification des paramètres de sécurité des dossiers. [En savoir plus](folder-permissions.md#restrict-access-to-a-folder).
 
   Par exemple, elle peut avoir un impact sur : l’**accès en écriture** pour créer de nouvelles entités (telles que des diffusions, des profils, etc.), l’**accès en lecture** pour utiliser des entités, l’**accès en suppression** pour supprimer des entités.
 
@@ -215,7 +216,7 @@ Les droits nommés par défaut dans Adobe Campaign sont les suivants :
 
 * **[!UICONTROL LOCAL]** : droit de gestion en local (Marketing distribué).
 
-* **[!UICONTROL FUSION]** : droit de fusionner les enregistrements sélectionnés en un seul. S’il existe des doublons de destinataires, le droit **[!UICONTROL FUSION]** permet à l’utilisateur de les sélectionner et de les fusionner dans un destinataire principal.
+* **[!UICONTROL FUSION]** : droit de fusionner les enregistrements sélectionnés en un seul. S’il existe des doublons de destinataires, le droit **[!UICONTROL FUSION]** permet de les sélectionner et de les fusionner dans un destinataire principal.
 
 * **[!UICONTROL PRÉPARER DES DIFFUSIONS]** : droit de créer, éditer et enregistrer une diffusion. Les utilisateurs disposant du droit **[!UICONTROL PRÉPARER DES DIFFUSIONS]** peuvent également lancer le processus d’analyse de diffusion.
 

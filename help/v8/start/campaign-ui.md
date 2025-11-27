@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: f308f34afc16426d81d31eeaca5f14b10ac49c32
+source-git-commit: df8ab43d9c7aee96c23240cd6c2775311da1abf2
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 74%
+source-wordcount: '1185'
+ht-degree: 68%
 
 ---
 
@@ -29,7 +29,7 @@ Vous pouvez accéder à Adobe Campaign à partir de sa console cliente ou de so
 
   >[!AVAILABILITY]
   >
-  >L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs de Campaign v8 qui se connectent à Campaign avec leur Adobe ID. En savoir plus sur [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
+  >L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs de Campaign v8 qui se connectent à Campaign avec leur Adobe ID. En savoir plus sur [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
   >
 
 >[!CAUTION]
@@ -52,7 +52,7 @@ Une fois connecté à Campaign, vous accédez à la page d&#39;accueil d&#39;Ado
 
 >[!NOTE]
 >
->Si la carte d’interface utilisateur web n’est pas affichée, assurez-vous que les champs suivants ne restent pas vides dans votre compte externe A[Adobe Experience Cloud &#x200B;](../config/external-accounts.md) : **Serveur**, **Client**, **Serveur de rappel** et **Marque d’association**.
+>Si la carte d’interface utilisateur web n’est pas affichée, assurez-vous que les champs suivants ne restent pas vides dans votre compte externe A[Adobe Experience Cloud ](../config/external-accounts.md) : **Serveur**, **Client**, **Serveur de rappel** et **Marque d’association**.
 
 Vous pouvez également accéder au [Panneau de Contrôle de Campaign](../config/self-service.md) à partir de la page d&#39;accueil.
 
@@ -60,7 +60,7 @@ Vous pouvez également accéder au [Panneau de Contrôle de Campaign](../config/
 
 Une fois connecté à Campaign, vous accédez à la page d&#39;accueil d&#39;Adobe Campaign avec des liens et des raccourcis pour accéder aux fonctionnalités, à la documentation, au site web d&#39;assistance et à la communauté Campaign.
 
-Accueil de la console cliente ![Campaign Classic v7 &#x200B;](assets/v7_user_interface_home.png)
+Accueil de la console cliente ![Campaign Classic v7 ](assets/v7_user_interface_home.png)
 
 
 >[!ENDTABS]
@@ -82,19 +82,17 @@ Pour chaque fonctionnalité, vous pouvez accéder à l&#39;ensemble des fonction
 
 Par exemple, lorsque vous accédez à l&#39;onglet **[!UICONTROL Profils et cibles]** vous pouvez accéder aux listes de destinataires, services d&#39;abonnement, workflows de ciblage existants, ainsi qu&#39;aux raccourcis pour créer tous ces composants.
 
-![](assets/overview-list.png)
+![Interface utilisateur de la console Campaign montrant comment accéder aux listes à partir de l&#39;onglet Profils et cible](assets/overview-list.png)
 
 Lorsque vous sélectionnez un élément dans l&#39;écran, il est chargé dans un nouvel onglet afin que vous puissiez facilement parcourir le contenu.
 
-![](assets/new-tab.png)
+![Interface utilisateur de la console Campaign affichant comment modifier une liste dans un nouvel onglet](assets/new-tab.png)
 
 ### Créer un élément {#create-an-element}
 
 Utilisez les raccourcis dans la section **[!UICONTROL Créer]** sur la gauche de l&#39;écran pour ajouter de nouveaux éléments. Vous pouvez également utiliser le bouton **[!UICONTROL Créer]** au-dessus de la liste pour ajouter de nouveaux éléments à la liste en cours.
 
-Par exemple, au niveau de la page des diffusions, utilisez le bouton **[!UICONTROL Créer]** pour créer une nouvelle diffusion.
-
-![](assets/new-recipient.png)
+![Interface utilisateur de la console Campaign montrant comment créer un destinataire à partir de l&#39;écran Profils et cible](assets/new-recipient.png)
 
 <!--
 ## Use a web browser {#web-browser}
@@ -109,7 +107,7 @@ The web access interface is similar to the console interface. From a browser, yo
 
 Parcourez l&#39;explorateur Campaign pour accéder à l&#39;ensemble des fonctionnalités et paramètres d&#39;Adobe Campaign.
 
-![](assets/explorer.png)
+![Interface utilisateur de la console Campaign affichant l’explorateur avec un focus sur le menu Campagnes](assets/explorer.png)
 
 Cet espace de travail vous permet d&#39;accéder à l&#39;arborescence de l&#39;explorateur pour parcourir toutes les fonctionnalités et options.
 
@@ -128,7 +126,7 @@ En tant qu’utilisateur ou utilisatrice de Campaign v8, à partir de la version
 
 >[!AVAILABILITY]
 >
->L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs de Campaign v8 qui se connectent à Campaign avec leur Adobe ID. En savoir plus sur [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
+>L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs de Campaign v8 qui se connectent à Campaign avec leur Adobe ID. En savoir plus sur [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
 >
 
 En savoir plus sur la nouvelle interface d’utilisation de Campaign Web dans [cette documentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=fr){target="_blank"}. Vous pouvez également consulter la [page dédiée Questions fréquentes](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/faq){target="_blank"}, dans la documentation de l’interface d’utilisation de Campaign Web.
@@ -153,7 +151,7 @@ Les langues prises en charge dépendent de l’interface utilisateur.
   >
   >La langue est sélectionnée pendant le processus d&#39;installation et **ne peut pas être modifiée** par la suite.
 
-* Pour les langues prises en charge par l’interface d’utilisation de Campaign Web, [consultez cette page](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=fr#language-pref){target="_blank"}.
+* Pour les langues prises en charge par l’interface utilisateur web de Campaign, [consultez la documentation de l’interface utilisateur web de Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=fr#language-pref){target="_blank"}.
 
 ## Formats
 
