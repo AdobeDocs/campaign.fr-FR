@@ -29,7 +29,7 @@ Vous pouvez accéder à Adobe Campaign à partir de sa console cliente ou de so
 
   >[!AVAILABILITY]
   >
-  >L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs de Campaign v8 qui se connectent à Campaign avec leur Adobe ID. En savoir plus sur [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
+  >L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs de Campaign v8 qui se connectent à Campaign avec leur Adobe ID. En savoir plus sur [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
   >
 
 >[!CAUTION]
@@ -126,7 +126,7 @@ En tant qu’utilisateur ou utilisatrice de Campaign v8, à partir de la version
 
 >[!AVAILABILITY]
 >
->L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs de Campaign v8 qui se connectent à Campaign avec leur Adobe ID. En savoir plus sur [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
+>L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs de Campaign v8 qui se connectent à Campaign avec leur Adobe ID. En savoir plus sur [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
 >
 
 En savoir plus sur la nouvelle interface d’utilisation de Campaign Web dans [cette documentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=fr){target="_blank"}. Vous pouvez également consulter la [page dédiée Questions fréquentes](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/faq){target="_blank"}, dans la documentation de l’interface d’utilisation de Campaign Web.
