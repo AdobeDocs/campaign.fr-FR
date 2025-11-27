@@ -5,9 +5,9 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: 0e2e96a37165b82829df7421760de761a2c2b1a5
+source-git-commit: 0830dea0e04a67c2d0b4102e41c0e57d8c98302a
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '811'
 ht-degree: 96%
 
 ---
@@ -38,6 +38,7 @@ ht-degree: 96%
    + [Composants et processus](start/ac-components.md)
    + [De Campaign Classic v7 à v8](start/v7-to-v8.md)
    + [De Campaign Standard à v8](start/acs-to-v8.md)
+   + [Questions fréquentes](start/campaign-faq-comprehensive.md)
    + [Questions fréquentes](start/campaign-faq.md)
 + Gestion de campagnes {#campaigns}
    + [Commencer avec les campagnes](start/campaigns.md)
@@ -232,7 +233,7 @@ ht-degree: 96%
       + [Comptes externes](config/external-accounts.md)
 + Ressources de développement {#developer}
    + [Modèle de données Campaign](dev/datamodel.md)
-   + Schémas et formulaires {#shemas-forms}
+   + Schémas et formulaires {#schemas-forms}
       + [Utiliser les schémas](dev/schemas.md)
       + [Création de schémas](dev/create-schema.md)
       + [Extension de schémas](dev/extend-schema.md)
@@ -264,7 +265,7 @@ ht-degree: 96%
          + [Récupérer des profils](dev/api/retrieving-profiles.md)
          + [Mettre à jour des profils](dev/api/updating-profiles.md)
          + [Créer un profil](dev/api/creating-profiles-api.md)
-      + Gestion des services et des abonnements {#managing-services-and-subscriptiopns}
+      + Gestion des services et des abonnements {#managing-services-and-subscriptions}
          + [Créer un service](dev/api/creating-a-service.md)
          + [Récupérer des abonnements](dev/api/retrieving-subscriptions.md)
          + [Mise en œuvre des abonnements](dev/api/perform-subscriptions.md)
