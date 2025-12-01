@@ -635,7 +635,7 @@ Lorsque vous utilisez les méthodes queryDef et NLWS :
 * **Optimisation des requêtes** - Ajoutez des conditions de `where` appropriées pour limiter les jeux de résultats.
 * **Traitement par lots** - Traitez les jeux de données volumineux par lots pour éviter les dépassements de délai
 * **Sécurité des transactions** - Envisagez d’utiliser des transactions pour plusieurs mises à jour associées
-* **Prise de conscience de FFDA** - Dans les déploiements [ Entreprise (FFDA)](../architecture/enterprise-deployment.md), sachez que [!DNL Campaign] fonctionne avec deux bases de données
+* **Prise de conscience de FFDA** - Dans les déploiements [&#x200B; Entreprise (FFDA)](../architecture/enterprise-deployment.md), sachez que [!DNL Campaign] fonctionne avec deux bases de données
 
 
 
