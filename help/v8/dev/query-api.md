@@ -265,7 +265,7 @@ for each(var delivery in deliveries.delivery) {
 >* Utilisez `lineCount` pour définir explicitement le nombre maximal de résultats
 >* Pour les jeux de données volumineux (> 1 000 enregistrements), utilisez des workflows au lieu de queryDef. Les workflows sont conçus pour traiter efficacement des millions de lignes.
 
-En savoir plus sur les [ ExecuteQuery ](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=fr){target="_blank"} et [ les bonnes pratiques en matière de requêtes](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}.
+En savoir plus sur les [&#x200B; ExecuteQuery &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=fr){target="_blank"} et [&#x200B; les bonnes pratiques en matière de requêtes](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}.
 
 ## Données de transition du workflow de requête {#workflow-transition-data}
 
@@ -763,7 +763,7 @@ Lorsque vous utilisez les méthodes queryDef et NLWS :
 * **Utiliser l’analyse pour les énumérations** - Ajoutez des `analyze: true` pour sélectionner des nœuds afin d’obtenir des noms et des libellés d’énumération conviviaux
 * **Optimisation des requêtes** - Ajoutez des conditions de `where` appropriées pour limiter les jeux de résultats.
 * **Traitement par lots** - Traitez plusieurs enregistrements par lots pour éviter les problèmes de mémoire et les délais d’expiration
-* **Prise de conscience de FFDA** - Dans les déploiements [ Entreprise (FFDA)](../architecture/enterprise-deployment.md), sachez que [!DNL Campaign] fonctionne avec deux bases de données
+* **Prise de conscience de FFDA** - Dans les déploiements [&#x200B; Entreprise (FFDA)](../architecture/enterprise-deployment.md), sachez que [!DNL Campaign] fonctionne avec deux bases de données
 
 
 
