@@ -40,7 +40,7 @@ NLWS.<namespace><SchemaName>.<method>()
 
 Les méthodes d’API courantes incluent :
 
-* `load(id)` - Charge une entité par son identifiant. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/f-load.html){target="_blank"}
+* `load(id)` - Charge une entité par son identifiant. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/f-load.html?lang=fr){target="_blank"}
 * `create(data)` - Créer une nouvelle entité
 * `save()` - Enregistrer les modifications dans une entité
 
@@ -138,7 +138,7 @@ Le schéma `xtk:queryDef` fournit des méthodes pour créer et exécuter des req
 * `getIfExists` - Récupérez un seul enregistrement, renvoyez la valeur null s’il est introuvable.
 * `count` - Compter les enregistrements répondant aux critères
 
-Pour en savoir plus sur les méthodes queryDef, consultez la [documentation JSAPI Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html){target="_blank"}.
+Pour en savoir plus sur les méthodes queryDef, consultez la [documentation JSAPI Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html?lang=fr){target="_blank"}.
 
 ## Requête avec JSON {#query-json}
 
@@ -310,7 +310,7 @@ for each(var record in records.getElements()) {
 
 >[!CAUTION]
 >
->Utilisez toujours des requêtes paramétrées avec des `$(sz)` pour les chaînes et des `$(l)` pour les entiers afin d&#39;éviter les vulnérabilités d&#39;injection SQL. Pour en savoir plus, consultez la [documentation JSAPI Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/f-sqlExec.html){target="_blank"}.
+>Utilisez toujours des requêtes paramétrées avec des `$(sz)` pour les chaînes et des `$(l)` pour les entiers afin d&#39;éviter les vulnérabilités d&#39;injection SQL. Pour en savoir plus, consultez la [documentation JSAPI Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/f-sqlExec.html?lang=fr){target="_blank"}.
 
 ## Comptage des enregistrements {#count-records}
 
@@ -561,7 +561,7 @@ logInfo("Generated SQL: " + sql);
 // Output: "SELECT iRecipientId, sEmail FROM NmsRecipient WHERE sEmail IS NOT NULL"
 ```
 
-En savoir plus sur [BuildQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQuery.html){target="_blank"}.
+En savoir plus sur [BuildQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQuery.html?lang=fr){target="_blank"}.
 
 ### BuildQueryEx - Obtenir le code SQL avec la chaîne de format {#build-query-ex}
 
@@ -586,7 +586,7 @@ logInfo("Format: " + format);
 var results = sqlSelect(format, sql);
 ```
 
-En savoir plus sur [BuildQueryEx](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQueryEx.html){target="_blank"}.
+En savoir plus sur [BuildQueryEx](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQueryEx.html?lang=fr){target="_blank"}.
 
 ### SelectAll - Ajoute tous les champs à sélectionner {#select-all}
 
@@ -609,7 +609,7 @@ var result = query.ExecuteQuery();
 // Result contains all recipient fields
 ```
 
-En savoir plus sur [SelectAll](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-SelectAll.html){target="_blank"}.
+En savoir plus sur [SelectAll](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-SelectAll.html?lang=fr){target="_blank"}.
 
 ### Mise à jour - Enregistrements de mise à jour en masse {#mass-update}
 
@@ -639,7 +639,7 @@ logInfo("Mass update completed");
 >
 >Les mises à jour en masse affectent tous les enregistrements correspondant à la clause where. Testez toujours vos conditions WHERE avec une requête Select en premier pour vérifier quels enregistrements seront affectés.
 
-En savoir plus sur [Mise à jour](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-Update.html){target="_blank"}.
+En savoir plus sur [Mise à jour](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-Update.html?lang=fr){target="_blank"}.
 
 ### GetInstanceFromModel - Instances de modèle de requête {#get-instance-from-model}
 
@@ -662,7 +662,7 @@ var query = NLWS.xtkQueryDef.create(
 var instance = query.GetInstanceFromModel("nms:delivery");
 ```
 
-En savoir plus sur [GetInstanceFromModel](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-GetInstanceFromModel.html){target="_blank"}.
+En savoir plus sur [GetInstanceFromModel](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-GetInstanceFromModel.html?lang=fr){target="_blank"}.
 
 ## Opérations par lots {#batch-operations}
 
@@ -901,7 +901,7 @@ Structure complète de l’objet `queryDef` :
 
 * [Prise en main des API de Campaign](api.md)
 * [SDK de Campaign JavaScript - API de requête](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}
-* [Référence de l’API queryDef](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html){target="_blank"}
+* [Référence de l’API queryDef](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html?lang=fr){target="_blank"}
 * [Documentation JSAPI Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=fr){target="_blank"}
 * [Utiliser les schémas](schemas.md)
 * [Utiliser le requêteur](../start/query-editor.md)
