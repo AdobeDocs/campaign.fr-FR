@@ -7,10 +7,10 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 exl-id: 79eacc31-d5a2-4e13-aa0b-744d7ab7004f
-source-git-commit: 4ed5799c77c647c9f1aeabba7645fbb475d03c09
+source-git-commit: 5b9793d98d12afb28e987b16bc2e34f0ee72ac5f
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 100%
+source-wordcount: '80'
+ht-degree: 72%
 
 ---
 
@@ -22,7 +22,7 @@ Vous pouvez contrôler un workflow directement à partir de l’API REST, par le
 
 >[!CAUTION]
 >
->Si l’identifiant du workflow est modifié dans Adobe Campaign, la requête d’API ne fonctionnera plus.
+>Si l’ID du workflow est modifié dans Adobe Campaign, la demande d’API ne fonctionnera plus.
 
 Quatre commandes d’exécution sont disponibles pour contrôler un workflow :
 
@@ -31,9 +31,6 @@ Quatre commandes d’exécution sont disponibles pour contrôler un workflow :
 * Reprendre
 * Arrêter
 
-Pour plus d’informations sur les commandes d’exécution, reportez-vous à la [documentation de Campaign](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/executing-a-workflow/about-workflow-execution.html?lang=fr).
-
-<br/>
 
 ***Exemples de demande***
 
@@ -47,6 +44,34 @@ Pour plus d’informations sur les commandes d’exécution, reportez-vous à la
   -H 'X-Api-Key: <API_KEY>' \
   -i
   -d '{"method":"start"}'
+  ```
+
+  <!-- + réponse -->
+
+* Mettre en pause un workflow.
+
+  ```
+  -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/workflow/execution/<workflowID>/commands \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer <ACCESS_TOKEN>' \
+  -H 'Cache-Control: no-cache' \
+  -H 'X-Api-Key: <API_KEY>' \
+  -i
+  -d '{"method":"pause"}'
+  ```
+
+  <!-- + réponse -->
+
+* Reprendre un workflow.
+
+  ```
+  -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/workflow/execution/<workflowID>/commands \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer <ACCESS_TOKEN>' \
+  -H 'Cache-Control: no-cache' \
+  -H 'X-Api-Key: <API_KEY>' \
+  -i
+  -d '{"method":"resume"}'
   ```
 
   <!-- + réponse -->
