@@ -5,10 +5,10 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: 0830dea0e04a67c2d0b4102e41c0e57d8c98302a
+source-git-commit: 26fededf0ee83299477e45e891df30a46c6d40fe
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 96%
+source-wordcount: '816'
+ht-degree: 95%
 
 ---
 
@@ -248,6 +248,7 @@ ht-degree: 96%
       + [Formulaires de saisie](dev/forms.md)
    + [Utiliser les packages de données](dev/packages.md)
    + [API Campaign](dev/api.md)
+   + [Interroger la base de données avec queryDef](dev/query-api.md)
    + API REST {#apis}
       + [Prise en main des API REST](dev/api/get-started-apis.md)
       + [Recommandations et limitations](dev/api/limitations.md)
