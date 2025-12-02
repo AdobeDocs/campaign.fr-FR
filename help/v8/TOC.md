@@ -5,9 +5,9 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: 16c9cc60041f41702b4983383954033b06ba1d99
+source-git-commit: d886072b3a21d5e5b70662c67919223cf9a1b68e
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '815'
 ht-degree: 91%
 
 ---
@@ -121,7 +121,7 @@ ht-degree: 91%
          + [Collecter et traiter les événements](send/event-processing.md)
          + [Comprendre la description des événements](send/event-description.md)
          + [Envoyer et surveiller des messages](send/delivery-execution.md)
-+ Profil et audiences {#audience}
++ Profils et audiences {#audience}
    + [Prise en main des profils et des audiences](audiences/gs-audiences.md)
    + [Utiliser les audiences](start/audiences.md)
    + [Accès aux profils](audiences/view-profiles.md)
@@ -138,7 +138,7 @@ ht-degree: 91%
       + [Partager les audiences avec les solutions Adobe](start/shared-audiences.md)
    + [Bonnes pratiques](audiences/audiences-best-practices.md)
    + [Gérer les abonnements](start/subscriptions.md)
-+ Pages de destination et contenu web {#content}
++ Pages de destination et Forms {#content}
    + [Créer des pages de destination](dev/landing-pages.md)
    + [Concevoir des formulaires et des applications web](dev/webapps.md)
 + Workflows {#workflows}
