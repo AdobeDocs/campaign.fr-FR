@@ -5,10 +5,10 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: 26fededf0ee83299477e45e891df30a46c6d40fe
+source-git-commit: 16c9cc60041f41702b4983383954033b06ba1d99
 workflow-type: tm+mt
 source-wordcount: '816'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -40,10 +40,15 @@ ht-degree: 95%
    + [De Campaign Standard à v8](start/acs-to-v8.md)
    + [Questions fréquentes](start/campaign-faq-comprehensive.md)
    + [Questions fréquentes](start/campaign-faq.md)
++ Administration et autorisations {#permissions}
+   + [Prise en main des autorisations](start/gs-permissions.md)
+   + [Gérer les autorisations utilisateur](start/manage-permissions.md)
+   + [Ajouter des autorisations aux dossiers](start/folder-permissions.md)
+   + [Panneau de contrôle](config/self-service.md)
 + Gestion de campagnes {#campaigns}
    + [Commencer avec les campagnes](start/campaigns.md)
-   + [Orchestration des campagnes >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=fr)
-+ Envoyer des messages{#send}
+   + [Documentation de l’orchestration des campagnes >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=fr)
++ Envoyer des messages {#send}
    + [Commencer avec les messages](start/gs-message.md)
    + [Créer votre première diffusion](start/create-message.md)
    + [Utiliser des modèles de diffusion](send/create-templates.md)
@@ -60,22 +65,20 @@ ht-degree: 95%
       + [Joindre des fichiers à un e-mail](send/attaching-files.md)
    + SMS {#sms}
       + [Prise en main des SMS](send/sms/sms.md)
+      + [Caractéristiques du canal SMS](send/sms/sms-channel.md)
+      + [Créer une diffusion SMS](send/sms/create-sms.md)
+      + [Définir le contenu](send/sms/sms-content.md)
+      + [Sélectionner l’audience](send/sms/sms-audience.md)
+      + [Envoyer des BAT par SMS](send/sms/sms-proofs.md)
+      + [Envoyer à l’audience](send/sms/sms-send.md)
+      + [Surveiller et suivre les SMS](send/sms/sms-monitor.md)
       + Configurer le canal SMS {#config-sms}
          + [Paramètres de diffusion des SMS](send/sms/sms-delivery-settings.md)
          + [Paramètres de compte externe SMPP](send/sms/smpp-external-account.md)
-         + [Caractéristiques du canal SMS](send/sms/sms-channel.md)
          + [Valider une connexion SMPP](send/sms/smpp-connection.md)
          + [Instance autonome](send/sms/sms-standalone-instance.md)
          + [Infrastructure de midsourcing](send/sms/sms-mid-sourcing.md)
-         + [Description du connecteur SMPP](send/sms/smpp-connector-delivery.md)
-      + Créer un SMS  {#create-sms}
-         + [Créer une diffusion SMS](send/sms/create-sms.md)
-         + [Définir le contenu](send/sms/sms-content.md)
-         + [Sélectionner l’audience](send/sms/sms-audience.md)
-      + Valider et envoyer des SMS {#validate-sms}
-         + [Envoyer des BAT SMS](send/sms/sms-proofs.md)
-         + [Envoyer à l’audience](send/sms/sms-send.md)
-      + [Surveiller et suivre les SMS](send/sms/sms-monitor.md)
+         + [Description du connecteur SMPP](send/sms/smpp-connector-delivery.md)
    + Notifications push {#push}
       + [Créer et envoyer des notifications push](send/push.md)
       + Notification push enrichie {#rich-push}
@@ -83,10 +86,11 @@ ht-degree: 95%
          + [Concevoir une diffusion de notification push iOS enrichie](send/rich-push-ios.md)
       + [Configurer le canal de notification push](send/push-settings.md)
       + [Configurer vos notifications push avec la collecte de données](send/push-data-collection.md)
-   + [Messagerie LINE](send/line/line.md)
-   + [Courrier](send/direct-mail.md)
-   + [X (Twitter)](send/twitter.md)
-   + [Canal externe personnalisé](send/custom-channel.md)
+   + Autres canaux {#other-channels}
+      + [Messagerie LINE](send/line/line.md)
+      + [Courrier](send/direct-mail.md)
+      + [X (Twitter)](send/twitter.md)
+      + [Canal externe personnalisé](send/custom-channel.md)
    + Personnaliser le contenu {#personalize}
       + [Prise en main de la personnalisation](send/personalize.md)
       + [Données de personnalisation](send/personalization-data.md)
@@ -117,7 +121,7 @@ ht-degree: 95%
          + [Collecter et traiter les événements](send/event-processing.md)
          + [Comprendre la description des événements](send/event-description.md)
          + [Envoyer et surveiller des messages](send/delivery-execution.md)
-+ Gestion des profils et de l’audience {#audience}
++ Profil et audiences {#audience}
    + [Prise en main des profils et des audiences](audiences/gs-audiences.md)
    + [Utiliser les audiences](start/audiences.md)
    + [Accès aux profils](audiences/view-profiles.md)
@@ -134,21 +138,21 @@ ht-degree: 95%
       + [Partager les audiences avec les solutions Adobe](start/shared-audiences.md)
    + [Bonnes pratiques](audiences/audiences-best-practices.md)
    + [Gérer les abonnements](start/subscriptions.md)
-+ Gestion de contenu {#content}
++ Pages de destination et contenu web {#content}
    + [Créer des pages de destination](dev/landing-pages.md)
    + [Concevoir des formulaires et des applications web](dev/webapps.md)
 + Workflows {#workflows}
    + [Commencer avec les workflows](config/workflows.md)
    + [Documentation des workflows >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=fr)
-+ Gestion de la confidentialité et de la sécurité {#privacy}
++ Confidentialité et sécurité {#privacy}
    + [Gérer les demandes d’accès à des informations personnelles](start/privacy.md)
    + [Directives de sécurité](config/security.md)
    + [Module complémentaire de sécurité améliorée](config/enhanced-security.md)
-+ Gestion des décisions {#offers}
++ Gestion Des Offres - Interaction {#offers}
    + [Prise en main des interactions en temps réel](interaction/interaction.md)
    + [Environnements et architecture](interaction/interaction-architecture.md)
    + [Bonnes pratiques](interaction/interaction-best-practices.md)
-   + Définir des paramètres{#interaction-settings}
+   + Paramètres de configuration {#interaction-settings}
       + [Création d&#39;opérateurs](interaction/interaction-operators.md)
       + [Création d&#39;environnements](interaction/interaction-env.md)
       + [Création de filtres prédéfinis](interaction/interaction-predefined-filters.md)
@@ -203,12 +207,6 @@ ht-degree: 95%
       + [Utilisation de Campaign et SFDC](connect/ac-sfdc.md)
       + [Utilisation de Campaign et Microsoft Dynamics](connect/ac-ms-dyn.md)
       + [Synchroniser les données](connect/crm-data-sync.md)
-+ Administration {#admin}
-   + Utilisateurs, utilisatrices et autorisations {#permissions}
-      + [Prise en main des autorisations](start/gs-permissions.md)
-      + [Gérer les autorisations utilisateur](start/manage-permissions.md)
-      + [Ajouter des autorisations aux dossiers](start/folder-permissions.md)
-   + [Panneau de contrôle](config/self-service.md)
 + Architecture {#architecture}
    + [Principes généraux](architecture/general-architecture.md)
    + [Modèles d’architecture](architecture/architecture.md)
@@ -252,10 +250,10 @@ ht-degree: 95%
    + API REST {#apis}
       + [Prise en main des API REST](dev/api/get-started-apis.md)
       + [Recommandations et limitations](dev/api/limitations.md)
-      + [Pourquoi utiliser les API REST](dev/api/why-using-campaign-standard-apis.md)
+      + [Quand utiliser les API REST](dev/api/why-using-campaign-standard-apis.md)
       + [Configuration de l&#39;accès aux API](dev/api/setting-up-api-access.md)
       + Concepts globaux {#global-concepts}
-         + [À lire absolument](dev/api/must-read.md)
+         + [Concepts essentiels](dev/api/must-read.md)
          + [Points d’entrée](dev/api/endpoints.md)
          + [Mécanisme des métadonnées](dev/api/metadata-mechanism.md)
          + [Verbes](dev/api/verbs.md)
@@ -275,6 +273,7 @@ ht-degree: 95%
       + Gestion des workflows {#managing-workflows}
          + [Contrôle d&#39;un workflow](dev/api/controlling-a-workflow.md)
          + [Déclenchement d&#39;une activité de signal](dev/api/triggering-a-signal-activity.md)
-+ [Notes techniques de Campaign >](https://experienceleague.adobe.com/fr/docs/campaign/technotes-ac/technotes-home)
-+ [Documentation de l’interface d’utilisation de Campaign Web >](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/campaign-web-home)
++ Ressources supplémentaires {#resources}
+   + [Notes techniques de Campaign >](https://experienceleague.adobe.com/fr/docs/campaign/technotes-ac/technotes-home)
+   + [Documentation de l’interface utilisateur web de Campaign >](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/campaign-web-home)
 
