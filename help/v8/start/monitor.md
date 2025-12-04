@@ -125,7 +125,7 @@ Le Panneau de Contrôle Campaign permet aux administrateurs de surveiller et de 
 | **Infrastructure** | Surveiller la capacité de stockage SFTP, suivre la configuration des sous-domaines, surveiller l’expiration des certificats SSL, gérer les listes autorisées d’adresses IP |
 | **Instance** | Afficher la version de build et les packages installés, surveiller la configuration du système, gérer les domaines externes autorisés |
 
-En savoir plus sur la surveillance des performances des Panneau de Contrôle Panneaux de Contrôle [](../config/self-service.md) et [](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=fr){target="_blank"}
+En savoir plus sur la surveillance des performances des Panneau de Contrôle Panneaux de Contrôle [&#128279;](../config/self-service.md) et [&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=fr){target="_blank"}
 
 >[!NOTE]
 >
@@ -153,7 +153,7 @@ Adobe Campaign fournit un ensemble complet de rapports pour analyser les perform
 * **URL et flux de clics** : liens les plus populaires dans vos diffusions
 * **Position des clics** : représentation visuelle de l’emplacement où les destinataires ont cliqué dans votre e-mail
 
-En savoir plus sur les [ rapports de diffusion ](../reporting/delivery-reports.md)
+En savoir plus sur les [&#x200B; rapports de diffusion &#x200B;](../reporting/delivery-reports.md)
 
 ### Rapports globaux {#global-reports}
 
@@ -163,7 +163,7 @@ Accédez aux rapports globaux pour analyser les performances de toutes les campa
 * **Échecs et retours** : analyse des diffusions en échec
 * **Activités utilisateur** : s’ouvre, clique et se désabonne dans toutes les campagnes
 
-En savoir plus sur les [ rapports globaux ](../reporting/global-reports.md)
+En savoir plus sur les [&#x200B; rapports globaux &#x200B;](../reporting/global-reports.md)
 
 ## Rubriques connexes {#related-topics}
 
