@@ -1,14 +1,14 @@
 ---
 title: Requêtes de conception dans Campaign v8
-description: Découvrez comment créer des requêtes
+description: Découvrez comment créer des requêtes dans la console cliente Campaign
 feature: Query Editor, Data Management
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: adea4eb54f3d519802119646bc501aae2ef5f831
+source-git-commit: edd495a377559007dad7158c9ab4a4917d89ae73
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 29%
+source-wordcount: '958'
+ht-degree: 28%
 
 ---
 

@@ -82,13 +82,13 @@ En savoir plus sur le [Journal d’audit](../reporting/audit-trail.md)
 
 Campaign v8 fournit plusieurs fonctionnalités de surveillance pour suivre les performances de votre instance et garantir un fonctionnement optimal :
 
-**Surveillance de la base de données** - Surveillez l’utilisation et la capacité de la base de données par Panneau de Contrôle pour assurer une gestion optimale des performances et du stockage. [En savoir plus sur la surveillance des bases de données](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring.html?lang=fr){target="_blank"}
+**Surveillance de la base de données** - Surveillez l’utilisation et la capacité de la base de données par Panneau de Contrôle pour assurer une gestion optimale des performances et du stockage. [En savoir plus sur la surveillance des bases de données](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring.html){target="_blank"}
 
 **Surveillance des profils actifs** - Effectuez le suivi de l’utilisation des profils actifs par rapport à vos limites contractuelles pour maintenir la conformité et optimiser l’affectation des ressources. [En savoir plus sur les profils actifs](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=fr){target="_blank"}
 
 **Surveillance des workflows** - Surveillez le statut d’exécution des workflows pour identifier les workflows de longue durée et vérifier que tous les workflows techniques s’exécutent correctement. [En savoir plus sur les workflows techniques](#technical-workflows)
 
-**Débit de diffusion et latence** - Effectuez le suivi du débit de diffusion (messages envoyés par heure) et de la latence pour les communications transactionnelles par Panneau de Contrôle. [En savoir plus sur la surveillance du débit](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/throughputs-latencies.html?lang=fr){target="_blank"}
+**Débit de diffusion et latence** - Effectuez le suivi du débit de diffusion (messages envoyés par heure) et de la latence pour les communications transactionnelles par Panneau de Contrôle. [En savoir plus sur la surveillance du débit](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/throughputs-latencies.html){target="_blank"}
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Le Panneau de Contrôle Campaign permet aux administrateurs de surveiller et de 
 | **Infrastructure** | Surveiller la capacité de stockage SFTP, suivre la configuration des sous-domaines, surveiller l’expiration des certificats SSL, gérer les listes autorisées d’adresses IP |
 | **Instance** | Afficher la version de build et les packages installés, surveiller la configuration du système, gérer les domaines externes autorisés |
 
-En savoir plus sur la surveillance des performances des Panneau de Contrôle Panneaux de Contrôle [&#128279;](../config/self-service.md) et [&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=fr){target="_blank"}
+En savoir plus sur la surveillance des performances des Panneau de Contrôle Panneaux de Contrôle [](../config/self-service.md) et [](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=fr){target="_blank"}
 
 >[!NOTE]
 >
@@ -153,7 +153,7 @@ Adobe Campaign fournit un ensemble complet de rapports pour analyser les perform
 * **URL et flux de clics** : liens les plus populaires dans vos diffusions
 * **Position des clics** : représentation visuelle de l’emplacement où les destinataires ont cliqué dans votre e-mail
 
-En savoir plus sur les [&#x200B; rapports de diffusion &#x200B;](../reporting/delivery-reports.md)
+En savoir plus sur les [ rapports de diffusion ](../reporting/delivery-reports.md)
 
 ### Rapports globaux {#global-reports}
 
@@ -163,7 +163,7 @@ Accédez aux rapports globaux pour analyser les performances de toutes les campa
 * **Échecs et retours** : analyse des diffusions en échec
 * **Activités utilisateur** : s’ouvre, clique et se désabonne dans toutes les campagnes
 
-En savoir plus sur les [&#x200B; rapports globaux &#x200B;](../reporting/global-reports.md)
+En savoir plus sur les [ rapports globaux ](../reporting/global-reports.md)
 
 ## Rubriques connexes {#related-topics}
 

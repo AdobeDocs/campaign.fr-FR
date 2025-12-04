@@ -94,7 +94,7 @@ Si votre diffusion n&#39;est pas envoyée et reste dans un état **[!UICONTROL E
 
   La limite des campagnes simultanées est définie dans l’option **[!UICONTROL NmsOperation_LimitConcurrency]**. La valeur par défaut est 10.
 
-  En tant qu&#39;utilisateur Managed Cloud Services, vous pouvez travailler avec Adobe pour ajuster cette limite si nécessaire. En savoir plus sur les options dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=fr){target="_blank"}.
+  En tant qu&#39;utilisateur Managed Cloud Services, vous pouvez travailler avec Adobe pour ajuster cette limite si nécessaire. En savoir plus sur les options dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html){target="_blank"}.
 
 * **Problèmes de disponibilité des ressources**
 

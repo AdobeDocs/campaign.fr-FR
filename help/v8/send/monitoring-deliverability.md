@@ -97,7 +97,7 @@ Consultez attentivement les [logs de diffusion](delivery-dashboard.md#delivery-l
 
 [Guide des bonnes pratiques relatives à la délivrabilité d&#39;Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=fr){target="_blank"} fournit des conseils complets sur la stratégie, la définition, les mesures et les bonnes pratiques en matière de délivrabilité.
 
-[Qu&#39;est-ce que la délivrabilité &#x200B;](about-deliverability.md) présente les concepts clés de la délivrabilité et comment améliorer votre taux de délivrabilité dans Campaign.
+[Qu&#39;est-ce que la délivrabilité ](about-deliverability.md) présente les concepts clés de la délivrabilité et comment améliorer votre taux de délivrabilité dans Campaign.
 
 [Échecs et retours de diffusion](delivery-failures.md) décrit les différents types d’échecs de diffusion, la manière dont Campaign les gère et inclut des conseils de dépannage pour les problèmes courants.
 

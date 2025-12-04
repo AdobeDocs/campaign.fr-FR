@@ -82,7 +82,7 @@ Pour une diffusion, vous pouvez afficher par exemple seulement les destinataires
 
 Le lien **[!UICONTROL Afficher la page miroir de ce message...]** vous permet d&#39;afficher la page miroir du contenu de la diffusion sélectionnée dans la liste dans une nouvelle fenêtre.
 
-La page miroir est disponible uniquement pour les diffusions pour lesquelles un contenu HTML a été défini. Pour plus d&#39;informations, consultez la section [&#x200B; Lien vers la page miroir &#x200B;](mirror-page.md).
+La page miroir est disponible uniquement pour les diffusions pour lesquelles un contenu HTML a été défini. Pour plus d&#39;informations, consultez la section [ Lien vers la page miroir ](mirror-page.md).
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
