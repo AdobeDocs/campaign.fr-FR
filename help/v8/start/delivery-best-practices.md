@@ -128,11 +128,11 @@ Pour personnaliser vos messages, vous pouvez utiliser les données des destinata
 
 * Vérifier vos paramètres de personnalisation : vérifiez que le contenu de votre message est correctement conçu pour éviter toute erreur, qui pourrait être liée à la personnalisation. Une balise de personnalisation Adobe Campaign a toujours la forme suivante : `<%=table.field%>`. L&#39;utilisation incorrecte des paramètres dans les blocs de personnalisation peut entraîner des problèmes. Par exemple, les variables en JavaScript doivent être utilisées comme suit :
 
-  ``
+  &grave;&grave;
   <%
   var brand = "xxx"
   %>
-  ``
+  &grave;&grave;
 
   Pour plus d&#39;informations sur les blocs de personnalisation, consultez [cette section](../send/personalization-blocks.md).
 
