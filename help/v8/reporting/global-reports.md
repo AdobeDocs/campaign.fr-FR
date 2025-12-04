@@ -2,9 +2,9 @@
 title: Rapports globaux d’Adobe Campaign
 description: Découvrez comment accéder aux rapports globaux et les utiliser.
 feature: Reporting, Monitoring
-role: User, Data Engineer
+role: User, Developer
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '1880'
 ht-degree: 100%
@@ -104,7 +104,7 @@ Les indicateurs utilisés sont les suivants :
 
 **[!UICONTROL Répartition des erreurs par domaine]**
 
-La seconde partie de ce rapport présente la répartition des échecs par domaine Internet sous la forme d&#39;un tableau de valeurs et d&#39;un graphique.
+La seconde partie de ce rapport présente la répartition des erreurs par domaine Internet sous la forme d&#39;un tableau de valeurs et d&#39;un graphique.
 
 A chaque nom de domaine, est associé :
 

@@ -1,10 +1,10 @@
 ---
 title: Créer un service à l’aide des API
 description: Découvrez comment créer un service à l’aide des API
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 91bbce9e-a618-4be2-840b-c7d021271f4e
-source-git-commit: 4ed5799c77c647c9f1aeabba7645fbb475d03c09
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 100%

@@ -3,10 +3,10 @@ audience: user
 user-guide-title: Guide d'automatisation des campagnes
 user-guide-description: Guide d'automatisation des campagnes
 feature: Overview
-source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -14,8 +14,8 @@ ht-degree: 95%
 # Guides d&#39;automatisation des campagnes {#automation}
 
 + [Guide d&#39;automatisation des campagnes](home.md)
-+ Automatisation à l’aide de workflows {#workflows}
-   + Prise en main des workflows {#introduction}
++ Automatiser avec des workflows {#workflows}
+   + Commencer avec les workflows {#introduction}
       + [À propos des workflows](workflow/about-workflows.md)
       + Types de workflows {#wf-type}
          + [Les workflows de ciblage](workflow/targeting-workflows.md)
@@ -24,7 +24,7 @@ ht-degree: 95%
       + [Créer un workflow](workflow/build-a-workflow.md)
       + [Bonnes pratiques](workflow/workflow-best-practices.md)
       + [Utiliser les données d&#39;un workflow](workflow/use-workflow-data.md)
-   + Exécution d’un workflow {#executing-a-workflow}
+   + Exécuter un workflow {#executing-a-workflow}
       + [Démarrer un workflow](workflow/start-a-workflow.md)
       + [Cycle de vie d&#39;un workflow](workflow/workflow-life-cycle.md)
       + [Configurer les validations](workflow/define-approvals.md)
@@ -70,7 +70,7 @@ ht-degree: 95%
          + [Test](workflow/test.md)
          + [Contrainte horaire](workflow/time-constraint.md)
          + [Attente](workflow/wait.md)
-      + Activités d&#39;action {#action-activities}
+      + Activités d’action {#action-activities}
          + [Liste des activités d’action](workflow/action-activities.md)
          + [Gestion de contenu](workflow/content-management.md)
          + [Diffusion au fil de l&#39;eau](workflow/continuous-delivery.md)
@@ -87,7 +87,7 @@ ht-degree: 95%
          + [Code SQL et code JavaScript](workflow/sql-code-and-javascript-code.md)
          + [Gestion des données SQL](workflow/sql-data-management.md)
          + [Mettre à jour l’agrégat](workflow/update-aggregate.md)
-      + Activités d&#39;événements {#event-activities}
+      + Activités d’événement {#event-activities}
          + [Liste des activités d&#39;événement](workflow/event-activities.md)
          + [Collecteur de fichiers](workflow/file-collector.md)
          + [Envoi de fichier](workflow/file-transfer.md)
@@ -162,8 +162,8 @@ ht-degree: 95%
    + [Prise en main du marketing distribué](distributed-marketing/about-distributed-marketing.md)
    + [Création d’une campagne locale](distributed-marketing/creating-a-local-campaign.md)
    + [Création d’une opération collaborative](distributed-marketing/creating-a-collaborative-campaign.md)
-   + [Publication du kit d’opération](distributed-marketing/publishing-the-campaign-package.md)
+   + [Publication du kit de campagne](distributed-marketing/publishing-the-campaign-package.md)
    + [Accès aux campagnes](distributed-marketing/accessing-campaigns.md)
    + [Suivi d’une campagne](distributed-marketing/tracking-a-campaign.md)
-   + [Cas pratiques](distributed-marketing/examples.md)
+   + [Cas d’utilisation](distributed-marketing/examples.md)
 + [&lt; Retour à la documentation de Campaign v8](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/campaign-home)

@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
 version: Campaign v8, Campaign Classic v7
-source-git-commit: ec1b41ccf532b044e75c69e795eabfb19a523ec2
+source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 97%
@@ -80,4 +80,4 @@ Pour un destinataire intégré standard, vous pouvez accéder aux onglets suivan
 
 * L&#39;onglet **Tracking**, pour tous les logs de tracking du profil sélectionné. Ces informations sont utilisées pour effectuer le suivi du comportement des profils suite aux diffusions. Cet onglet présente le cumul de toutes les URL trackées dans les diffusions. La liste est paramétrable et contient généralement : l&#39;URL cliquée, la date et l&#39;heure du clic, le document dans lequel l&#39;URL figurait
 
-  Apprenez-en davantage sur le tracking dans [cette section](../start/tracking.md).
+  Apprenez-en davantage sur le tracking dans [cette section](../send/tracking.md).

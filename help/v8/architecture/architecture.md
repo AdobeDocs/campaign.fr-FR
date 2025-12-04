@@ -2,11 +2,11 @@
 title: Prise en main de l'architecture de Campaign
 description: Découvrez les environnements et les principes de base du déploiement, notamment comment créer des rapports sur un environnement de campagne.
 feature: Architecture, Deployment
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
-workflow-type: ht
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 100%
 

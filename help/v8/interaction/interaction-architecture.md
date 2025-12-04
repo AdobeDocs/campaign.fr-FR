@@ -2,13 +2,13 @@
 title: Compréhension de l'architecture des interactions dans Campaign
 description: Notions de base sur l'architecture des interactions dans Campaign
 feature: Interaction, Offers
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 99%
+source-wordcount: '1318'
+ht-degree: 97%
 
 ---
 

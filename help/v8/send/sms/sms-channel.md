@@ -5,7 +5,7 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: abab6f15-43ea-42fc-817b-8dbd88df82f7
-source-git-commit: 5c5d19c9b9b413bb630a4e5738c6697d2341665a
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 97%
@@ -70,7 +70,7 @@ Le champ *data_coding* indique l’encodage utilisé. Il existe un problème maj
 La taille maximale d&#39;un message dépend de son encodage. Ce tableau récapitule toutes les informations pertinentes :
 
 | Encodage | data_coding habituel | Taille du message (caractères) | Taille de partie pour SMS à plusieurs parties | Caractères disponibles |
-|:-:|:-:|:-:|:-:|:-:|  
+|:-:|:-:|:-:|:-:|:-:|
 | GSM 7 | 0 | 160 | 152 | Jeu de caractères de base GSM7 + extension (les caractères étendus prennent 2 caractères) |
 | Latin -1 | 3 | 140 | 134 | ISO-8859-1 |
 | UCS-2 UTF-16 | 8 | 70 | 67 | Unicode (varie d&#39;un téléphone à l&#39;autre) |

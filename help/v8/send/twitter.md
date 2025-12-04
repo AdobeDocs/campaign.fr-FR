@@ -4,10 +4,10 @@ description: Découvrez comment utiliser le module Social Marketing d’Adobe 
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 100%
+source-wordcount: '855'
+ht-degree: 99%
 
 ---
 
@@ -158,5 +158,5 @@ Dans le modèle de diffusion **[!UICONTROL Tweet]** natif, le tracking est activ
 
 Les données de tracking sont visualisables dans les rapports de diffusion et dans l&#39;onglet **[!UICONTROL Modifier > Tracking]** de la diffusion et du service.
 
-La configuration du tracking est le même que pour une diffusion e-mail. Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr){target="_blank"}.
+La configuration du tracking est le même que pour une diffusion e-mail. En savoir plus sur le [tracking](tracking.md).
 

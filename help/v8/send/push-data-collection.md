@@ -2,14 +2,14 @@
 title: Envoi de notification push avec Adobe Campaign
 description: Prise en main des notifications push dans Campaign
 feature: Push
-role: Data Engineer
+role: Developer
 level: Intermediate
 badge: label="Disponibilité limitée" type="Informative"
 exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
-source-git-commit: 1fb93efac4fee4965213f8b42f518f2c10638e20
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '1479'
-ht-degree: 97%
+source-wordcount: '1481'
+ht-degree: 94%
 
 ---
 
@@ -55,37 +55,43 @@ L’enregistrement des informations d’identification des notifications push de
 
 1. À partir de **[!UICONTROL Configuration des applications mobiles]**, sélectionnez Système opérationnel :
 
-   * **Pour iOS**
+>[!BEGINTABS]
 
-     ![](assets/push-config-2.png)
+>[!TAB iOS]
 
-      1. Saisissez **l’identifiant de bundle** de l’application mobile dans le champ de l’**[!UICONTROL ID d’application (ID de bundle iOS)]**.
+![](assets/push-config-2.png)
 
-         L’identifiant de bundle d’application se trouve dans l’onglet **Général** de la cible principale dans **XCode** de votre compte de développeur ou de développeuse Apple.
+1. Saisissez **l’identifiant de bundle** de l’application mobile dans le champ de l’**[!UICONTROL ID d’application (ID de bundle iOS)]**.
 
-      1. Activez **[!UICONTROL Informations d’identification des notifications push]** pour ajouter vos informations d’identification.
+   L’identifiant de bundle d’application se trouve dans l’onglet **Général** de la cible principale dans **XCode** de votre compte de développeur ou de développeuse Apple.
 
-      1. Glissez-déposez votre fichier de clé d’authentification de notification push Apple .p8.
+1. Activez **[!UICONTROL Informations d’identification des notifications push]** pour ajouter vos informations d’identification.
 
-         Cette clé peut être acquise à partir des pages **Certificats**, **Identificateurs** et **Profils** de votre compte de développeur ou développeuse Apple.
+1. Glissez-déposez votre fichier de clé d’authentification de notification push Apple .p8.
 
-      1. Fournissez l’**identifiant de clé**. Il s’agit d’une chaîne de 10 caractères attribuée lors de la création de la clé d’authentification p8.
+   Cette clé peut être acquise à partir des pages **Certificats**, **Identificateurs** et **Profils** de votre compte de développeur ou développeuse Apple.
 
-         Elle se trouve sous l’onglet **Clés** dans les pages **Certificats**, **Identificateurs** et **Profils** de votre compte de développeur Apple.
+1. Fournissez l’**identifiant de clé**. Il s’agit d’une chaîne de 10 caractères attribuée lors de la création de la clé d’authentification p8.
 
-      1. Fournissez l’**identifiant de l’équipe**. Il s’agit d’une valeur de chaîne qui se trouve sous l’onglet **Abonnement**.
-
-   * **Pour Android**
-
-     ![](assets/push-config-3.png)
-
-      1. Fournissez l’**[!UICONTROL identifiant de l’application (nom du package Android)]**. En règle générale, le nom du package est l’identifiant d’application dans votre fichier `build.gradle`.
-
-      1. Activez **[!UICONTROL Informations d’identification des notifications push]** pour ajouter vos informations d’identification.
-
-      1. Glissez-déposez les informations d’identification des notifications push FCM. Pour plus d&#39;informations sur l&#39;obtention des informations d&#39;identification push, consultez la documentation de [Google](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+       Elle se trouve sous l’onglet **Clés** dans les pages **Certificats**, **Identificateurs** et **Profils** de votre compte de développeur Apple.
+   
+1. Fournissez l’**identifiant de l’équipe**. Il s’agit d’une valeur de chaîne qui se trouve sous l’onglet **Abonnement**.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour créer la configuration de votre application.
+
+>[!TAB Android]
+
+![](assets/push-config-3.png)
+
+1. Fournissez l’**[!UICONTROL identifiant de l’application (nom du package Android)]**. En règle générale, le nom du package est l’identifiant d’application dans votre fichier `build.gradle`.
+
+1. Activez **[!UICONTROL Informations d’identification des notifications push]** pour ajouter vos informations d’identification.
+
+1. Glissez-déposez les informations d’identification des notifications push FCM. Pour plus d&#39;informations sur l&#39;obtention des informations d&#39;identification push, consultez la documentation de [Google](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour créer la configuration de votre application.
+
+>[!ENDTABS]
 
 ## Configurer les paramètres de votre application dans Adobe Campaign{#push-config-campaign}
 
@@ -105,7 +111,7 @@ Pour créer un service destiné à envoyer des notifications push, procédez com
 
    >[!NOTE]
    >
-   >Par défaut, le mapping de ciblage **[!UICONTROL Applications abonnées (nms:appSubscriptionRcp)]** est lié à la table des destinataires. Si vous souhaitez utiliser un autre mapping de ciblage, vous devez en créer un nouveau et le saisir dans le champ **[!UICONTROL Mapping de ciblage]** du service. Pour plus d’informations sur les mappings de ciblage, consultez [cette page](../audiences/target-mappings.md).
+   >Le mapping de ciblage **[!UICONTROL Applications abonnées (nms:appSubscriptionRcp)]** par défaut est lié à la table des destinataires. Si vous souhaitez utiliser un autre mapping de ciblage, vous devez en créer un nouveau et le saisir dans le champ **[!UICONTROL Mapping de ciblage]** du service. Pour plus d’informations sur les mappings de ciblage, consultez [cette page](../audiences/target-mappings.md).
 
 1. Ensuite, utilisez l’icône **[!UICONTROL Ajouter]** sur la droite pour définir les applications mobiles qui utilisent ce service.
 
@@ -145,7 +151,7 @@ Pour créer une application pour les appareils iOS, procédez comme suit :
 
    Assurez-vous que la même **[!UICONTROL clé d’intégration]** est définie dans Adobe Campaign et dans le code de l’application via le SDK.
 
-   En savoir plus dans [la documentation pour les développeurs](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   Pour en savoir plus, consultez la [documentation pour les développeurs et développeuses](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}.
 
 
    >[!NOTE]
@@ -180,7 +186,7 @@ Pour créer une application pour les appareils Android, procédez comme suit :
 
    Assurez-vous que la même **[!UICONTROL clé d’intégration]** est définie dans Adobe Campaign et dans le code de l’application via le SDK.
 
-   En savoir plus dans [la documentation pour les développeurs](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   Pour en savoir plus, consultez la [documentation pour les développeurs et développeuses](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}.
 
    >[!NOTE]
    >
@@ -248,7 +254,7 @@ Votre propriété mobile sera désormais automatiquement synchronisée avec le w
 
 Le SDK mobile Adobe Experience Platform permet d’optimiser les solutions et services Experience Cloud d’Adobe dans vos applications mobiles. La configuration des SDK s’effectue dans l’interface utilisateur de collecte de données, qui offre des options de configuration flexibles et des intégrations extensibles basées sur des règles.
 
-[En savoir plus dans la documentation Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}.
+[En savoir plus dans la documentation d’Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}.
 
 ## Créer votre notification push{#push-create}
 

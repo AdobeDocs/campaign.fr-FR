@@ -3,12 +3,12 @@ product: campaign
 title: Exécuter des requêtes avec gestion des regroupements
 description: Découvrez comment exécuter des requêtes avec gestion des regroupements.
 feature: Query Editor
-role: User, Data Engineer
+role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 6fc4ef67-5d75-4c8c-8bcc-41e3ed155ca2
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '304'
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+workflow-type: tm+mt
+source-wordcount: '302'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ Vous allez effectuer une requête pour retrouver les domaines d&#39;email ciblé
 
 * Quelle table doit-on sélectionner ?
 
-  La table des destinataires (nms:recipient).
+  Table des personnes destinataires (nms:recipient).
 
 * Quels sont les champs à sélectionner en colonne de sortie ?
 
@@ -29,15 +29,15 @@ Vous allez effectuer une requête pour retrouver les domaines d&#39;email ciblé
 
 * Groupement des données ?
 
-  En fonction du domaine d’e-mail avec un comptage des clés primaires supérieur à 30. Cette opération s’effectue avec l’option **[!UICONTROL Group by + Having]**. **[!UICONTROL Group by + Having]** sert à effectuer un groupement (« group by ») et une sélection de ce qui a été groupé (« having»).
+  En fonction du domaine d&#39;email avec un comptage des clés primaires supérieures à 30. Cette opération s’effectue avec l’option **[!UICONTROL Group by + Having]**. **[!UICONTROL Group by + Having]** sert à effectuer un groupement (&quot;group by&quot;) et une sélection de ce qui a été groupé (&quot;having&quot;).
 
 Pour réaliser cet exemple, les étapes sont les suivantes :
 
-1. Ouvrez le **[!UICONTROL Requêteur générique]** et choisissez la table des Destinataires (**nms:recipient**).
+1. Ouvrez le **[!UICONTROL Requêteur générique]** et choisissez la table Personnes destinataires (**nms:recipient**).
 
    ![](assets/query_editor_02.png)
 
-1. Dans la fenêtre **[!UICONTROL Données à extraire]**, sélectionnez les champs **[!UICONTROL Domaine de l&#39;email]** et **[!UICONTROL Clé primaire]**. Faites un comptage du champ **[!UICONTROL Clé primaire]**.
+1. Dans la fenêtre **[!UICONTROL Données à extraire]**, sélectionnez les champs **[!UICONTROL Domaine de l’email]** et **[!UICONTROL Clé primaire]**. Faites un comptage du champ **[!UICONTROL Clé primaire]**.
 
 1. Sélectionnez la zone **[!UICONTROL Gérer les groupements (GROUP BY + HAVING)]**.
 
@@ -48,7 +48,7 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
    ![](assets/query_editor_nveau_70.png)
 
 1. Dans **[!UICONTROL Filtrage des données]**, sélectionnez **[!UICONTROL Critères de filtrage]**. Accédez à la fenêtre **[!UICONTROL Éléments de la cible]** et cliquez sur **[!UICONTROL Suivant]**.
-1. Dans la fenêtre **[!UICONTROL Groupement des données]**, sélectionnez le **[!UICONTROL Domaine de l&#39;email]** en cliquant sur **[!UICONTROL Ajouter]**.
+1. Dans la fenêtre **[!UICONTROL Groupement des données]**, sélectionnez le **[!UICONTROL Domaine de l’email]** en cliquant sur **[!UICONTROL Ajouter]**.
 
    C&#39;est dans cette fenêtre que s&#39;opère le regroupement (GROUP BY) : cette fenêtre ne s&#39;affiche que si l&#39;option **[!UICONTROL Gérer les groupements (GROUP BY + HAVING)]** a été sélectionnée.
 

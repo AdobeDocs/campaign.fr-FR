@@ -2,12 +2,12 @@
 title: Calcul des mesures de rapport intégré
 description: Calcul des mesures de rapport intégré
 feature: Reporting
-role: Data Engineer
+role: Developer
 exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '3097'
-ht-degree: 100%
+source-wordcount: '3074'
+ht-degree: 92%
 
 ---
 
@@ -46,13 +46,13 @@ ht-degree: 100%
  </tbody> 
 </table>
 
-Ce rapport se base sur la table **[!UICONTROL Tracking consolidé]** (nms:trackingStats). Cette table d&#39;agrégats est utilisée pour des raisons de performance lors de l&#39;affichage des rapports, à la place de la table **[!UICONTROL Logs de tracking des destinaires]** (nms:trackingLogRcp) et n&#39;est pas calculée en temps réel. La table est générée quelques minutes après la récupération des logs de tracking. Si les indicateurs sont à jour, les résultats seront les mêmes que pour les indicateurs du rapport **Indicateurs de tracking**. L&#39;indicateur @totalclicks correspond à la somme des clics sur une période de 5 minutes.
+Ce rapport est basé sur la table **[!UICONTROL Tracking consolidé]** (nms:trackingStats). Ce tableau d’agrégats est utilisé pour des raisons de performances lors de l’affichage des rapports, à la place du tableau **[!UICONTROL Logs de tracking des destinataires]** (nms:trackingLogRcp) et n’est pas calculé en temps réel. La table est générée quelques minutes après la récupération des logs de tracking. Si les indicateurs sont à jour, les résultats seront les mêmes que pour les indicateurs du rapport **Indicateurs de tracking**. L&#39;indicateur @totalclicks correspond à la somme des clics sur une période de 5 minutes.
 
 ## Non-délivrables et rebonds {#non-deliverables-and-bounces-1}
 
 **Répartition par type d’erreur**
 
-Ce rapport se base sur la table **[!UICONTROL Statistiques d&#39;envoi et de tracking]** (nms:deliveryLogStats).
+Ce rapport repose sur le tableau **[!UICONTROL Statistiques de diffusion et de tracking]** (nms:deliveryLogStats).
 
 <table> 
  <thead> 
@@ -133,7 +133,7 @@ La deuxième partie du rapport présente la répartition des messages en échec,
 
 ## Navigateurs {#browsers-1}
 
-Ce rapport se base sur la table **[!UICONTROL Statistiques Navigateurs internet]** (nms:userAgentsStats).
+Ce rapport est basé sur le tableau **[!UICONTROL Statistiques du navigateur Internet]** (nms:userAgentsStats).
 
 **Statistiques globales**
 
@@ -203,7 +203,7 @@ Ce rapport se base sur la table **[!UICONTROL Statistiques Navigateurs internet]
 
 ## Partage vers les réseaux sociaux {#sharing-to-social-networks-1}
 
-Ce rapport se base sur les tables **[!UICONTROL Diffusion]** (nms:delivery), **[!UICONTROL Tracking consolidé]** (nms:trackingStats), et **[!UICONTROL Tracking Web]** (nms:webTrackingLog).
+Ce rapport est basé sur les tables **[!UICONTROL Diffusion]** (nms:delivery), **[!UICONTROL Tracking consolidé]** (nms:trackingStats) et **[!UICONTROL Tracking Web]** (nms:webTrackingLog).
 
 <table> 
  <thead> 
@@ -340,7 +340,7 @@ Ce rapport se base sur les tables **[!UICONTROL Diffusion]** (nms:delivery), **[
 
 ## Statistiques des activités de partage {#statistics-on-sharing-activities-1}
 
-Ce rapport se base sur les tables **[!UICONTROL Diffusion]** (nms:delivery), **[!UICONTROL Tracking consolidé]** (nms:trackingStats), et **[!UICONTROL Tracking Web]** (nms:webTrackingLog).
+Ce rapport est basé sur les tables **[!UICONTROL Diffusion]** (nms:delivery), **[!UICONTROL Tracking consolidé]** (nms:trackingStats) et **[!UICONTROL Tracking Web]** (nms:webTrackingLog).
 
 <table> 
  <thead> 
@@ -375,7 +375,7 @@ Ce rapport se base sur les tables **[!UICONTROL Diffusion]** (nms:delivery), **[
 
 ## Systèmes d’exploitation {#operating-systems-1}
 
-Ce rapport se base sur la table **[!UICONTROL Statistiques Navigateurs internet]** (nms:userAgentsStats).
+Ce rapport est basé sur le tableau **[!UICONTROL Statistiques du navigateur Internet]** (nms:userAgentsStats).
 
 **Statistiques globales**
 
@@ -445,7 +445,7 @@ Ce rapport se base sur la table **[!UICONTROL Statistiques Navigateurs internet]
 
 ## Tracking des abonnements {#subscription-tracking-1}
 
-Ce rapport se base sur la table **[!UICONTROL Services]** (nms:service).
+Ce rapport est basé sur la table **[!UICONTROL Services]** (nms:service).
 
 <table> 
  <thead> 
@@ -492,7 +492,7 @@ Ce rapport se base sur la table **[!UICONTROL Services]** (nms:service).
 
 ## Indicateurs de tracking {#tracking-indicators-1}
 
-Ce rapport se base sur les tables **[!UICONTROL Statistiques d&#39;envoi et de tracking]** (nms:deliveryLogStats) et **[!UICONTROL Tracking consolidé]** (nms:trackingStats).
+Ce rapport est basé sur les tables **[!UICONTROL Statistiques de diffusion et de tracking]** (nms:deliveryLogStats) et **[!UICONTROL Tracking consolidé]** (nms:trackingStats).
 
 <table> 
  <thead> 
@@ -689,7 +689,7 @@ Ce rapport se base sur les tables **[!UICONTROL Statistiques d&#39;envoi et de t
 
 ## URL et flux de clics {#urls-and-click-streams-1}
 
-Ce rapport se base sur la table **[!UICONTROL Diffusion]** (nms:delivery).
+Ce rapport est basé sur la table **[!UICONTROL Delivery]** (nms:delivery).
 
 <table> 
  <thead> 
@@ -736,7 +736,7 @@ Ce rapport se base sur la table **[!UICONTROL Diffusion]** (nms:delivery).
 
 ## Synthèse des diffusions {#delivery-summary-1}
 
-Ce rapport se base sur la table **[!UICONTROL Diffusion]** (nms:delivery).
+Ce rapport est basé sur la table **[!UICONTROL Delivery]** (nms:delivery).
 
 <table> 
  <thead> 
@@ -789,13 +789,13 @@ Ce rapport se base sur la table **[!UICONTROL Diffusion]** (nms:delivery).
 
 ## Hot clicks {#hot-clicks-1}
 
-Ce rapport se base sur les tables Diffusion (nms:delivery), et **[!UICONTROL Tracking consolidé]** (nms:trackingStats).
+Ce rapport est basé sur les tables Diffusion(nms:delivery) et **[!UICONTROL Tracking consolidé]** (nms:trackingStats) .
 
 Ce rapport présente le contenu du message (HTML et/ou texte) avec, sur chaque lien, le pourcentage de clics sur ce lien. Les liens situés dans les blocs de personnalisation, le lien de désinscription et le lien vers la page miroir sont comptabilisés dans le total des clics cumulés mais ne sont pas affichés dans le rapport.
 
 ## Statistiques de tracking {#tracking-statistics-1}
 
-Ce rapport se base sur la table **[!UICONTROL Diffusion]** (nms:delivery).
+Ce rapport est basé sur la table **[!UICONTROL Delivery]** (nms:delivery).
 
 <table> 
  <thead> 
@@ -830,7 +830,7 @@ Ce rapport se base sur la table **[!UICONTROL Diffusion]** (nms:delivery).
 
 ## Statistiques de diffusion {#delivery-statistics-1}
 
-Ce rapport se base sur la table **[!UICONTROL Statistiques d&#39;envoi et de tracking]** (nms:deliveryLogStats).
+Ce rapport repose sur le tableau **[!UICONTROL Statistiques de diffusion et de tracking]** (nms:deliveryLogStats).
 
 <table> 
  <thead> 
@@ -889,7 +889,7 @@ Ce rapport se base sur la table **[!UICONTROL Statistiques d&#39;envoi et de tra
 
 ## Répartition des ouvertures {#breakdown-of-opens-1}
 
-Ce rapport se base sur les tables **Diffusions** (nms:delivery) et **Logs de tracking** (nms:trackingLogRcp).
+Ce rapport est basé sur les tables **Diffusions** (nms:delivery) et **Logs de tracking** (nms:trackingLogRcp).
 
 <table> 
  <thead> 
@@ -912,7 +912,7 @@ Ce rapport se base sur les tables **Diffusions** (nms:delivery) et **Logs de tra
 
 ## Autres indicateurs {#other-indicators}
 
-L&#39;indicateur **Envoyés** (@sent), accessible à partir du noeud **Diffusions(nms:delivery)>Indicateurs**, correspond au nombre total de SMS envoyés au prestataire. Cet indicateur est utilisé uniquement pour les diffusions SMS et ne doit pas être utilisé pour les autres types de diffusions (ne pas confondre avec les indicateurs **@success** et **@processed**).
+L&#39;indicateur **Envoyés** (@sent), accessible à partir du nœud **Diffusions (nms:delivery) > Indicateurs** correspond au nombre total de SMS envoyés au prestataire. Cet indicateur est utilisé uniquement pour les diffusions SMS et ne doit pas être utilisé pour les autres types de diffusions (ne pas confondre avec les indicateurs **@success** et **@processed**).
 
 ## Synchronisation des indicateurs {#indicator-synchronization}
 

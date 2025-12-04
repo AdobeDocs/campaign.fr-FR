@@ -3,10 +3,10 @@ title: Rapports de diffusion intégrés à Adobe Campaign
 description: Rapports de diffusion intégrés à Adobe Campaign
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
-source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
+source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 100%
+source-wordcount: '1159'
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ Pour accéder aux rapports, suivez les étapes suivantes :
 
 ## Indicateurs de tracking {#tracking-indicators}
 
-Ce rapport regroupe les indicateurs clés qui permettent de suivre le comportement des destinataires à la réception de la diffusion. Il donne accès aux statistiques d’envoi, de réception, aux taux d’ouvertures et de clics, aux flux de clics générés, au tracking web et aux partages vers les réseaux sociaux.
+Ce rapport regroupe les indicateurs clés qui permettent de suivre le comportement des destinataires à la réception de la diffusion. Il donne accès aux statistiques d&#39;envoi et de réception, aux taux d&#39;ouverture et de clics, aux flux de clics générés, ainsi qu&#39;au partage d&#39;activités sur les réseaux sociaux.
 
 >[!NOTE]
 >

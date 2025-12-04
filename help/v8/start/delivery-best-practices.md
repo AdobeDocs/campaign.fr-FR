@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+source-git-commit: 096c453f727b461a7b09a47282e186e91ffc847e
 workflow-type: tm+mt
-source-wordcount: '2959'
-ht-degree: 100%
+source-wordcount: '3102'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,19 @@ Le mode de gestion des adresses en erreur par Adobe Campaign dépend du type d�
 
 +++
 
+### Livraison et maintenance {#delivery-maintenance}
 
+La maintenance régulière de vos diffusions est essentielle pour optimiser les performances de la plateforme.
+
++++ **Lire quelques bonnes pratiques**
+
+* **Supprimer les diffusions en échec et inutiles** : ne conservez pas les diffusions à l’état d’échec sur l’instance, car cela conserve les tables temporaires et a un impact sur les performances. Supprimez régulièrement les diffusions qui ne sont plus nécessaires pour libérer des ressources système.
+
+* **Nettoyer les destinataires inactifs** : les destinataires inactifs au cours des 12 derniers mois doivent être supprimés de la base de données pour conserver la qualité de l’adresse. Les FAI désactivent les adresses après une période d’inactivité et des messages de rebond sont envoyés aux expéditeurs pour les informer de ce nouveau statut. Le nettoyage régulier des listes améliore la délivrabilité et réduit les coûts.
+
+* **Planifier des diffusions volumineuses de manière appropriée** : ne planifiez pas de diffusions volumineuses ensemble. Coordonnez la planification des diffusions avec les autres membres de votre équipe afin de répartir la charge uniformément sur le système. L’envoi simultané de plusieurs diffusions volumineuses peut avoir une incidence sur les performances globales de la plateforme.
+
++++
 
 ### Mécanisme de double opt-in {#double-opt-in}
 
@@ -226,7 +238,7 @@ To avoid common formatting errors, check the following elements:
 
 * Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../../installation/using/configuring-campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode. 
 
-* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#authentication).-->
+* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).-->
 
 ## Gestion des images {#manage-images}
 
@@ -234,7 +246,7 @@ Voici quelques instructions spécifiques pour optimiser les images de votre camp
 
 ### Empêcher le blocage des images {#image-blocking}
 
-Certains clients de messagerie bloquent les images par défaut, et les utilisateurs et utilisatrices peuvent modifier leurs paramètres pour bloquer les images afin de réduire l’utilisation des données. Dans ce cas, si les images ne sont pas téléchargées, il est possible que l’ensemble du message soit perdu.
+Certains clients de messagerie bloquent les images par défaut, et les utilisateurs et utilisatrices peuvent modifier leurs paramètres pour bloquer les images afin de réduire l’utilisation des données. Par conséquent, si les images ne sont pas téléchargées, l’ensemble du message peut être perdu.
 
 +++ Pour éviter cela, vous pouvez appliquer les bonnes pratiques suivantes :
 
@@ -286,7 +298,7 @@ Ces mappings sont présentés [dans cette section](../audiences/target-mappings.
 
 ### Destinataires externes {#external-recipients}
 
-Vous pouvez effectuer une diffusion aux destinataires qui sont stockés dans un fichier externe plutôt qu&#39;enregistrés dans la base de données. En savoir plus dans [cette section](create-message.md#select-external-recipients-selecting-external-recipients).
+Vous pouvez effectuer une diffusion aux personnes destinataires qui sont stockées dans un fichier externe plutôt qu’enregistrées dans la base de données. En savoir plus dans [cette section](create-message.md#select-external-recipients-selecting-external-recipients).
 
 <!--
 ### Send to your subscribers {#send-to-subscribers}
@@ -419,4 +431,4 @@ Pour mieux connaître le comportement de vos destinataires, vous pouvez suivre l
 Le tracking des messages est activé par défaut. Pour configurer les URL, sélectionnez l’option Afficher les URL dans la section inférieure de l’assistant de diffusion. Pour chaque URL du message, vous pouvez choisir d’activer ou non le tracking.
 
 
-[En savoir plus sur les fonctionnalités de tracking dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html?lang=fr#sending-messages){target="_blank"}
+[En savoir plus sur les fonctionnalités de tracking](../send/tracking.md)

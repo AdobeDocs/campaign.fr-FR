@@ -4,13 +4,13 @@ description: Recommandations et limitations lors de la migration vers les API RE
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
 mini-toc-levels: 1
 exl-id: 45acebb1-9325-4e26-8fe9-cc73f745d801
-source-git-commit: 4ed5799c77c647c9f1aeabba7645fbb475d03c09
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1052'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ Certains champs de la base de données sont supprimés lors de la migration. Lor
 
 ## POST avec ressources liées
 
-Lors de l’utilisation du format de corps de requête suivant, avec « VehicleOwner » représentant le lien vers « nms:recipient » :
+Lors de l’utilisation du format de corps de requête suivant, avec « VehicleOwner » représentant le lien vers « nms :recipient » :
 
 ```
 {

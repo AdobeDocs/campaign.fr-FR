@@ -2,10 +2,10 @@
 title: Créer un cube dans Adobe Campaign
 description: Découvrez comment créer des cubes.
 feature: Reporting
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: 03a6816b-e51a-4eaf-ab76-02d24f97ba46
-source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 97%

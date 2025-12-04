@@ -3,10 +3,10 @@ product: campaign
 title: Utiliser des cubes pour créer des rapports sur mes données
 description: Découvrez comment utiliser les cubes pour créer des rapports.
 feature: Reporting
-role: User, Data Engineer
+role: User, Developer
 level: Beginner
 exl-id: 7dbc66ab-a468-40ff-9db2-b33e4fd27754
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 100%
@@ -119,7 +119,7 @@ Pour ajouter et configurer des mesures, procédez comme suit :
 
    * Proportion : ce type de mesure permet de calculer le nombre d&#39;enregistrements mesurés pour une dimension donnée. Vous pouvez calculer la proportionnalité par rapport à une dimension ou une sous-dimension.
    * Variation : cette mesure permet de calculer la variation des valeurs d&#39;un niveau.
-   * Ecart à la moyenne : ce type de mesure permet de calculer les écarts dans chaque groupe de cellules correspondantes, par rapport à la moyenne des valeurs. Vous pouvez par exemple comparer le volume des ventes pour chaque segment existant.
+   * Écart type : ce type de mesure permet de calculer les écarts dans chaque groupe de cellules, par rapport à la moyenne des valeurs. Vous pouvez par exemple comparer le volume des ventes pour chaque segment existant.
 
    Sitôt créée, la mesure est ajoutée dans le rapport.
 

@@ -2,13 +2,14 @@
 title: Gestion des quarantaines dans Campaign
 description: Comprendre la gestion des quarantaines dans Adobe Campaign
 feature: Profiles, Monitoring
-role: User, Data Engineer
+role: User, Developer
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: cb4cbc9ba14e953d2b3109e87eece4f310bfe838
+source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
 workflow-type: tm+mt
-source-wordcount: '1270'
-ht-degree: 92%
+source-wordcount: '1380'
+ht-degree: 73%
 
 ---
 
@@ -28,11 +29,11 @@ La **quarantaine** s&#39;applique uniquement à une **adresse**, un **numéro de
 >
 >Lorsque les destinataires signalent votre message comme spam ou répondent à un message SMS avec un mot-clé tel que « STOP », leur adresse ou numéro de téléphone est mis en quarantaine comme **[!UICONTROL Placé sur la liste bloquée]**. Leur profil est mis à jour en conséquence.
 
-Placer sur la liste bloquée D&#39;un autre côté, les **profils** peuvent être sur la **&#x200B;**&#x200B;comme après une désinscription (opt-out), pour un canal donné : cela signifie qu&#39;ils ne sont plus ciblés par aucune diffusion. Ainsi, si un profil de la liste bloquée pour le canal e-mail comporte deux adresses e-mail, les deux adresses seront exclues de la diffusion. Vous pouvez vérifier si un profil est sur liste bloquée pour un ou plusieurs canaux dans la section **[!UICONTROL Ne plus contacter]** de l’onglet **[!UICONTROL Général]** du profil. [En savoir plus](../audiences/view-profiles.md)
+Placer sur la liste bloquée D&#39;un autre côté, les **profils** peuvent être sur la **** comme après une désinscription (opt-out), pour un canal donné : cela signifie qu&#39;ils ne sont plus ciblés par aucune diffusion. Ainsi, si un profil de la liste bloquée pour le canal e-mail comporte deux adresses e-mail, les deux adresses seront exclues de la diffusion. Vous pouvez vérifier si un profil est sur liste bloquée pour un ou plusieurs canaux dans la section **[!UICONTROL Ne plus contacter]** de l’onglet **[!UICONTROL Général]** du profil. [En savoir plus](../audiences/view-profiles.md)
 
 >[!NOTE]
 >
->Les destinataires désabonnés via la méthode List-Unsubscribe [&#x200B; « mailto »](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} ne sont pas mis en quarantaine. Placer sur la liste bloquée Ils sont soit désabonnés du [service](../start/subscriptions.md) associé à la diffusion, soit envoyés à l’(visible dans la section **[!UICONTROL Ne plus contacter]** du profil) si aucun service n’a été défini pour la diffusion.
+>Les destinataires désabonnés via la méthode List-Unsubscribe [ « mailto »](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} ne sont pas mis en quarantaine. Placer sur la liste bloquée Ils sont soit désabonnés du [service](../start/subscriptions.md) associé à la diffusion, soit envoyés à l’(visible dans la section **[!UICONTROL Ne plus contacter]** du profil) si aucun service n’a été défini pour la diffusion.
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 
@@ -45,7 +46,7 @@ Deux types ou erreurs peuvent être capturés :
 * **Erreur de type Hard** : l&#39;adresse e-mail, le numéro de téléphone ou l&#39;appareil est immédiatement mis en quarantaine.
 * **Erreur de type Soft** : les erreurs soft incrémentent un compteur d&#39;erreurs et peuvent mettre en quarantaine un e-mail, un numéro de téléphone ou un jeton d&#39;appareil. Campaign effectue des [reprises](delivery-failures.md#retries) : lorsque le compteur d&#39;erreurs atteint le seuil limite, l&#39;adresse, le numéro de téléphone ou le jeton de l&#39;appareil est mis en quarantaine. [En savoir plus](delivery-failures.md#retries).
 
-Dans la liste des adresses en quarantaine, le champ **[!UICONTROL Raison de l&#39;erreur]** indique pourquoi l&#39;adresse sélectionnée a été mise en quarantaine. [En savoir plus](#identifying-quarantined-addresses-for-the-entire-platform).
+Dans la liste des adresses en quarantaine, le champ **[!UICONTROL Raison de l&#39;erreur]** indique pourquoi l&#39;adresse sélectionnée a été mise en quarantaine. [En savoir plus](#non-deliverable-bounces).
 
 
 Si un utilisateur qualifie un e-mail comme spam, le message est automatiquement redirigé vers une boîte e-mail technique gérée par Adobe. L&#39;adresse e-mail de l&#39;utilisateur est alors automatiquement mise en quarantaine avec le statut **[!UICONTROL Sur liste bloquée]**. Ce statut ne concerne que l’adresse. Le profil n’est pas placé sur liste bloquée afin que l’utilisateur puisse continuer à recevoir des SMS et des notifications push. Apprenez-en davantage sur les boucles de retours dans la section [Guide des bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#feedback-loops){target="_blank"}.
@@ -53,6 +54,12 @@ Si un utilisateur qualifie un e-mail comme spam, le message est automatiquement 
 >[!NOTE]
 >
 >La quarantaine dans Adobe Campaign respecte la casse. Veillez à importer les adresses e-mail en minuscules, de telle sorte qu&#39;elles ne soient pas reciblées ultérieurement.
+
+## Gestion des erreurs de type Soft {#soft-error-management}
+
+Contrairement aux erreurs de type Hard, les erreurs de type Soft n&#39;envoient pas immédiatement une adresse en quarantaine, mais incrémentent un compteur d&#39;erreurs. Lorsque le compteur d&#39;erreurs atteint le seuil limite, l&#39;adresse est mise en quarantaine. En savoir plus sur les reprises et les types d’erreur dans [Présentation des diffusions en échec](delivery-failures.md).
+
+Le compteur d&#39;erreurs est réinitialisé si la dernière erreur significative s&#39;est produite plus de 10 jours avant. Le statut de l&#39;adresse passe à **[!UICONTROL Valide]** et est supprimé de la liste des quarantaines grâce au workflow **[!UICONTROL Nettoyage de la base]**. [En savoir plus sur les workflows techniques](../config/workflows.md#technical-workflows).
 
 ## Accéder aux adresses en quarantaine {#access-quarantined-addresses}
 
@@ -66,6 +73,8 @@ Pour chaque diffusion, vous pouvez également consulter le rapport **[!UICONTROL
 
 * le nombre d&#39;adresses mises en quarantaine lors de l&#39;analyse de la diffusion,
 * le nombre d&#39;adresses passées en quarantaine suite à l&#39;action de diffusion.
+
+Pour en savoir plus sur les rapports de diffusion, consultez [cette section](../reporting/gs-reporting.md).
 
 ### Adresses de non-délivrabilité et de rebond{#non-deliverable-bounces}
 
@@ -81,9 +90,9 @@ Pour afficher la liste des adresses en quarantaine **pour l&#39;ensemble de la p
 >
 >Fin de l&#39;année 2 : ((1,22 &#42; 0,33) + 0,33) / (1,5 + 0,75) = 32,5 %.
 
-En outre, le rapport intégré **[!UICONTROL Non-délivrables et rebonds]**, disponible à partir de la section **Rapports** de cette page d’accueil, affiche des informations sur les adresses en quarantaine, les types d’erreurs rencontrées et une répartition des échecs par domaine. Vous pouvez filtrer les données pour une diffusion spécifique ou personnaliser ce rapport si nécessaire.
+En outre, le rapport intégré **[!UICONTROL Échecs et retours]** disponible à partir de la section **Rapports** de cette page d&#39;accueil, affiche des informations sur les adresses en quarantaine, les types d&#39;erreurs rencontrées et une répartition des échecs par domaine. Vous pouvez filtrer les données pour une diffusion spécifique ou personnaliser ce rapport si nécessaire.
 
-Pour en savoir plus sur les adresses bounce, consultez le [&#x200B; Guide des bonnes pratiques en matière de délivrabilité &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=fr){target="_blank"}.
+Pour en savoir plus sur les adresses bounce, consultez le [ Guide des bonnes pratiques en matière de délivrabilité ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=fr){target="_blank"}.
 
 ### E-mail en quarantaine {#quarantined-recipient}
 
@@ -98,7 +107,9 @@ Pour chaque dossier, vous ne pouvez afficher que les destinataires dont l&#39;ad
 
 ## Supprimer une adresse de la quarantaine {#remove-a-quarantined-address}
 
-Les adresses qui correspondent à des conditions spécifiques sont automatiquement supprimées de la liste de quarantaine par le workflow intégré **Nettoyage de la base**.
+### Mises à jour automatiques {#unquarantine-auto}
+
+Les adresses qui correspondent à des conditions spécifiques sont automatiquement supprimées de la liste de quarantaine par le workflow intégré **[!UICONTROL Nettoyage de la base]**.
 
 Les adresses sont automatiquement supprimées de la liste de quarantaine dans les cas suivants :
 
@@ -112,22 +123,30 @@ Leur état devient ensuite **[!UICONTROL Valide]**.
 >
 >Les destinataires avec une adresse dont le statut est **[!UICONTROL En quarantaine]** ou **[!UICONTROL Sur liste bloquée]** ne seront jamais supprimés, même s&#39;ils reçoivent un e-mail.
 
-Vous pouvez également supprimer manuellement une adresse de la liste de quarantaine. Pour supprimer une adresse de la quarantaine, vous pouvez :
+### Mises à jour manuelles {#unquarantine-manual}
 
-* Changer son statut en **[!UICONTROL Valide]** depuis le nœud **[!UICONTROL Administration > Campaign Management > Gestion des échecs > Échecs et bounce]**.
+Vous pouvez également supprimer manuellement une adresse de la liste de quarantaine. Pour supprimer manuellement une adresse de la quarantaine, vous pouvez changer son statut en **[!UICONTROL Valide]** à partir du nœud **[!UICONTROL Administration > Gestion de campagne > Gestion des échecs > Échecs de diffusion et adresses]**.
 
-  ![](assets/tech-quarantine-status.png)
+![](assets/tech-quarantine-status.png)
 
-Vous devrez peut-être effectuer des mises à jour en bloc sur la liste de quarantaine, par exemple en cas de panne du FAI, où les e-mails sont marqués comme des rebonds par erreur, car ils ne peuvent pas être correctement diffusés à leur destination.
+### Mises à jour en bloc {#unquarantine-bulk}
 
-Pour ce faire, créez un workflow et ajoutez une requête sur votre table de quarantaine pour filtrer toutes les destinations concernées, de façon à ce qu’elles puissent être supprimées de la liste de quarantaine et incluses dans les prochaines diffusions e-mail de Campaign.
+Vous devrez peut-être effectuer des mises à jour en bloc sur la liste de quarantaine dans des situations spécifiques, telles qu&#39;une panne du FAI au cours de laquelle les e-mails sont marqués comme des rebonds par erreur, car ils ne peuvent pas être correctement diffusés à leur destinataire.
 
-Vous trouverez ci-dessous les instructions recommandées pour cette requête :
+Pour effectuer une mise à jour en bloc :
 
-* **Texte d&#39;erreur (texte de la quarantaine)** contenant « Momen_Code10_InvalidRecipient »
-* **Domaine d’e-mail (@domain)** égal à domain1.com OU **domaine d’e-mail (@domain)** égal à domain2.com OU **domaine d’e-mail (@domain)** égal à domain3.com
-* **Statut de la mise à jour (@lastModified)** à partir du `MM/DD/YYYY HH:MM:SS AM`
-* **Statut de la mise à jour (@lastModified)** le ou avant le `MM/DD/YYYY HH:MM:SS PM`
+1. Créez un workflow et ajoutez une requête sur la table de quarantaine (**[!UICONTROL nms:address]**) pour filtrer les destinataires concernés
+2. Utilisez des conditions de requête pour identifier les adresses qui doivent être mises en quarantaine, telles que :
+   * **Domaine de l’e-mail (@domain)** est égal au(x) domaine(s) du FAI concerné(s)
+   * **État de la mise à jour (@lastModified)** pendant la période de panne
+   * **Statut (@status)** est égal au statut de quarantaine
+3. Ajoutez une activité **[!UICONTROL Mise à jour de données]** pour définir le statut de l&#39;adresse sur **[!UICONTROL Valide]**
 
-Une fois que vous disposez de la liste des destinations concernées, ajoutez une activité **[!UICONTROL Mise à jour de données]** pour définir leur statut sur **[!UICONTROL Valide]**, de façon à ce qu’elles soient supprimées de la liste de quarantaine par le workflow **[!UICONTROL Nettoyage de la base de données]**. Vous pouvez également les supprimer simplement de la table de quarantaine.
+Les adresses seront alors automatiquement supprimées de la liste de quarantaine par le workflow **[!UICONTROL Nettoyage de la base]** et pourront être incluses dans les prochaines diffusions.
+
+## Rubriques connexes
+
+* [Comprendre les échecs de diffusion](delivery-failures.md) - Découvrez les différents types d’échecs de diffusion et la manière dont Campaign gère les retours
+* [Surveiller les diffusions](delivery-dashboard.md) - Accédez aux logs de diffusion et surveillez les performances des diffusions
+* [Bonnes pratiques de diffusion](../start/delivery-best-practices.md) - Bonnes pratiques pour maintenir une bonne délivrabilité et éviter les quarantaines
 

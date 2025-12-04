@@ -2,11 +2,11 @@
 title: Mettre à jour les profils Adobe Experience Platform à partir des pages de destination Adobe Campaign
 description: Découvrez comment synchroniser les pages de destination Adobe Campaign et les attributs de profil Adobe Experience Platform.
 feature: Experience Platform Integration
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
-source-git-commit: 02d7909c409bd25cfa3cc7aad189247ce7b5176e
-workflow-type: ht
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 100%
 
@@ -134,7 +134,7 @@ Pour permettre la synchronisation des données entre les pages de destination et
 
    ![](assets/ac-lp-script.png){width="70%"}
 
-+++  Script 1 - Charger des attributs de profil depuis Experience Platform
+   +++  Script 1 - Charger des attributs de profil depuis Experience Platform
 
    Ce code vérifie si le profil existe dans Adobe Experience Platform avant de charger la page de destination. Il récupère les attributs de profil et les affiche dans les champs correspondants de la page de destination.
 
@@ -155,9 +155,9 @@ Pour permettre la synchronisation des données entre les pages de destination et
    }
    ```
 
-+++
+   +++
 
-+++ Script 2 - Mettre à jour les attributs de profil Experience Platform
+   +++ Script 2 - Mettre à jour les attributs de profil Experience Platform
 
    Ce code met à jour les attributs de profil dans Adobe Experience Platform avec les valeurs envoyées dans la page de destination.
 
@@ -203,7 +203,7 @@ Pour permettre la synchronisation des données entre les pages de destination et
    }
    ```
 
-+++
+   +++
 
 Maintenant que les codes JavaScript personnalisés sont créés dans Adobe Campaign, vous pouvez configurer le workflow contenant votre page de destination afin d’utiliser ces codes JavaScript pour la synchronisation des données.
 
@@ -213,7 +213,7 @@ Les codes JavaScript étant ajoutés à Adobe Campaign, vous pouvez les exploit
 
 * Pour charger des données à partir d’Experience Platform avant de charger la page de destination, ajoutez une activité de **[!UICONTROL code JavaScript]** avant l’activité de page de destination et copiez-collez le script 1.
 
-+++ Script 1 - Charger des attributs de profil depuis Experience Platform
+  +++ Script 1 - Charger des attributs de profil depuis Experience Platform
 
   ```javascript
   // Script code to read profile from AEP.
@@ -249,11 +249,11 @@ Les codes JavaScript étant ajoutés à Adobe Campaign, vous pouvez les exploit
   }
   ```
 
-+++
+  +++
 
 * Pour mettre à jour les attributs de profil Experience Platform avec les données envoyées dans la page de destination, ajoutez une activité de **[!UICONTROL code JavaScript]** après l’activité de page de destination et copiez-collez le script 2.
 
-+++ Script 2 - Mettre à jour les attributs de profil Experience Platform
+  +++ Script 2 - Mettre à jour les attributs de profil Experience Platform
 
   ```javascript
   // Script code to update profile in AEP and ACC.
@@ -323,7 +323,7 @@ Les codes JavaScript étant ajoutés à Adobe Campaign, vous pouvez les exploit
   }
   ```
 
-+++
+  +++
 
 >[!CAUTION]
 >

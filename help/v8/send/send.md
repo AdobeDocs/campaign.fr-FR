@@ -2,13 +2,13 @@
 title: Envoyer et surveiller vos e-mails
 description: Découvrez la portée et les spécificités de l’envoi d’e-mails avec Adobe Campaign
 feature: Email
-role: Data Engineer
+role: Developer
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+source-git-commit: c7f139dd7f139ba421eb034f4d8911671b3b3332
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '839'
 ht-degree: 99%
 
 ---
@@ -27,6 +27,8 @@ Suivre l’exécution de la diffusion depuis l’onglet **Diffusion**, accessibl
 Une fois les messages envoyés, vérifiez le statut de votre diffusion dans le **tableau de bord des diffusions** et accédez aux logs de diffusion et aux rapports pour confirmer que vos messages ont été correctement envoyés.
 
 Depuis le tableau de bord des diffusions, vous pouvez vérifier les messages traités et consulter les logs d’audit de diffusion. Vous pouvez également contrôler le statut des messages dans les logs de diffusion.
+
+En savoir plus sur les [états de diffusion](delivery-statuses.md).
 
 >[!NOTE]
 >

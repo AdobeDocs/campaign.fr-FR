@@ -2,10 +2,10 @@
 title: Prise en main du modèle de données de Campaign
 description: Commencez avec le modèle de données Campaign et l’utilisation des données provenant de vos sources pour améliorer vos sorties de communication et de marketing.
 feature: Data Model
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 98%
@@ -60,7 +60,7 @@ Il est possible d&#39;étendre la table des destinataires, mais sans réduire le
 
 Découvrez comment étendre un schéma existant dans [cette section](extend-schema.md).
 
-Découvrez des exemples d&#39;extensions de table de destinataires intégrées dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#extending-a-table){target="_blank"}
+Découvrez des exemples d&#39;extensions de table de destinataires intégrées dans la documentation de [Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#extending-a-table){target="_blank"}
 
 Vous pouvez également utiliser une autre table des destinataires, mieux adaptée à vos besoins professionnels ou fonctionnels. Cette méthode s&#39;accompagne de limitations et est décrite dans [cette section](custom-recipient.md).
 

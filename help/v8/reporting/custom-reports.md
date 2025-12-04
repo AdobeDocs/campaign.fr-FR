@@ -2,9 +2,9 @@
 title: Étapes clés de la création dʼun rapport personnalisé
 description: Découvrez les étapes principales de création d’un rapport personnalisé.
 feature: Reporting
-role: User, Data Engineer
+role: User, Developer
 exl-id: 39ab5cd9-cc84-430b-a8b3-691e377851fa
-source-git-commit: 0f5efba364ef924447324bdd806e15e6db8d799d
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 81%

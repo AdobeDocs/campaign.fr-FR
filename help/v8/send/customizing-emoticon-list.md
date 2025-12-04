@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Personnalisation de la liste des émoticônes
+title: Personnaliser la liste des émoticônes
 description: Découvrez comment personnaliser la liste des émoticônes avec Adobe Campaign
 feature: Email, Push
-role: User, Data Engineer
+role: User, Developer
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 96%
 
 ---
 
-# Personnalisation de la liste des émoticônes {#customize-emoticons}
+# Personnaliser la liste des émoticônes {#customize-emoticons}
 
 La liste des émoticônes affichée dans la fenêtre contextuelle est régie par une énumération. Vous pouvez ainsi afficher les valeurs contenues dans une liste pour limiter les choix de l’utilisateur ou de l’utilisatrice pour un champ donné.
 Il est possible de personnaliser l’ordre des émoticônes dans la liste et d’en ajouter d’autres.
