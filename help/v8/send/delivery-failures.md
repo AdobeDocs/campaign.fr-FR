@@ -4,11 +4,12 @@ description: Comprendre les échecs possibles lors de l'envoi de messages avec A
 feature: Profiles, Monitoring
 role: User
 level: Beginner, Intermediate
+version: Campaign v8, Campaign Classic v7
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 338013ac999ae0fedac132adf730c6f9477d73ca
+source-git-commit: 57e177dc6c30502f2ed3bb08b18586fa5399e89c
 workflow-type: tm+mt
-source-wordcount: '3028'
-ht-degree: 99%
+source-wordcount: '3464'
+ht-degree: 87%
 
 ---
 
@@ -66,7 +67,7 @@ Actuellement, le traitement de la qualification des e-mails rejetés dans Adobe�
 
 * **Erreurs synchrones** : le MTA détermine le type et la qualification du rebond, puis renvoie ces informations à Campaign. Les qualifications de mails rebonds dans la table **[!UICONTROL Qualification des logs de diffusion]** ne sont plus utilisées pour les messages d&#39;erreur relatifs aux échecs des diffusions **synchrones**.
 
-* **Erreurs asynchrones** : les règles utilisées par Campaign pour qualifier les diffusions en échec asynchrones sont répertoriées dans le nœud **[!UICONTROL Administration > Gestion de campagne > Gestion des échecs > Qualification des logs de diffusion]**. Les rebonds asynchrones restent qualifiés par le processus inMail grâce aux règles **[!UICONTROL E-mail entrant]**. Pour en savoir plus, consultez la [documentation d’Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr#bounce-mail-qualification){target="_blank"}.
+* **Erreurs asynchrones** : les règles utilisées par Campaign pour qualifier les diffusions en échec asynchrones sont répertoriées dans le nœud **[!UICONTROL Administration > Gestion de campagne > Gestion des échecs > Qualification des logs de diffusion]**. Les retours asynchrones sont qualifiés par le processus inMail grâce aux règles **[!UICONTROL E-mail entrant]**.
 
 <!--NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
 
@@ -111,12 +112,14 @@ Par exemple, si la période de validité est définie sur la valeur par défaut 
 
 Une fois qu’un message figure dans la file d’attente du MTA depuis 3,5 jours et qu’il n’a pas été diffusé, il expire et son statut est mis à jour de **[!UICONTROL Envoi]** à **[!UICONTROL Échec]** dans les logs de diffusion.
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## Types d&#39;erreur e-mail {#email-error-types}
 
 Pour le canal e-mail, les raisons possibles d&#39;un échec de diffusion sont répertoriées ci-dessous.
+
++++ Cliquer pour afficher la liste complète des types d’erreurs d’e-mail
 
 <table> 
  <tbody> 
@@ -249,7 +252,7 @@ Pour le canal e-mail, les raisons possibles d&#39;un échec de diffusion sont r�
  </tbody> 
 </table>
 
-
++++
 
 ## Types d&#39;erreur des notifications push {#push-error-types}
 
@@ -260,6 +263,8 @@ Pour le canal des applications mobiles, les raisons possibles d&#39;un échec de
 Le protocole HTTP/V2 permet des retours et un état directs pour chaque diffusion push. Si le connecteur de protocole HTTP/V2 est utilisé, le service des retours n&#39;est plus appelé par le workflow **[!UICONTROL mobileAppOptOutMgt]**. Un jeton est considéré comme non enregistré lorsqu&#39;une application mobile est désinstallée ou réinstallée.
 
 Si l&#39;APNS renvoie de manière synchrone un statut &quot;désinscrit&quot; pour un message, le jeton cible est immédiatement mis en quarantaine.
+
++++ Cliquer pour afficher les scénarios de quarantaine iOS
 
 <table> 
  <tbody> 
@@ -346,6 +351,8 @@ Si l&#39;APNS renvoie de manière synchrone un statut &quot;désinscrit&quot; po
  </tbody> 
 </table>
 
++++
+
 ### Quarantaine Android {#android-quarantine}
 
 **Pour Android V1**
@@ -373,6 +380,8 @@ Pendant l&#39;analyse de la diffusion, tous les appareils qui sont exclus de la 
 **Pour Android V2**
 
 Le mécanisme de mise en quarantaine d&#39;Android V2 utilise le même processus qu&#39;Android V1. Il en va de même pour la mise à jour des abonnements et des exclusions. Pour en savoir plus, consultez la section [Android V1](#android-quarantine).
+
++++ Cliquer pour afficher les scénarios de quarantaine d’Android V2
 
 <table> 
  <tbody> 
@@ -579,6 +588,8 @@ Le mécanisme de mise en quarantaine d&#39;Android V2 utilise le même processu
  </tbody> 
 </table>
 
++++
+
 ## Quarantaines des SMS {#sms-quarantines}
 
 **Pour les connecteurs standards**
@@ -588,6 +599,8 @@ Les spécificités du canal SMS sont énumérées ci-dessous.
 >[!NOTE]
 >
 >Le tableau **[!UICONTROL Qualification des logs de diffusion]** ne s&#39;applique pas au connecteur **SMPP Générique étendu**.
+
++++ Cliquer pour afficher les types d’erreurs SMS pour les connecteurs standard
 
 <table> 
  <tbody> 
@@ -636,6 +649,8 @@ Les spécificités du canal SMS sont énumérées ci-dessous.
  </tbody> 
 </table>
 
++++
+
 **Pour le connecteur SMPP générique étendu**
 
 Lors de l’utilisation du protocole SMPP pour envoyer des SMS, la gestion des erreurs est traitée différemment.
@@ -675,3 +690,61 @@ Par défaut, la regex extrait le champ **stat:** comme défini dans la section *
 * Tout ce qui se trouve après la barre verticale (|) s’affiche uniquement dans la colonne **[!UICONTROL Premier texte]** du tableau **[!UICONTROL Qualification des logs de diffusion]**. Ce contenu est toujours remplacé par **#MESSAGE#** une fois le message normalisé. Ce processus évite d’avoir plusieurs entrées pour des erreurs similaires et est identique à celui des e-mails.
 
 Le connecteur SMPP générique étendu applique une méthode heuristique pour rechercher des valeurs par défaut cohérentes : si le statut commence par **DELIV**, il est considéré comme une réussite, car il correspond aux statuts **DELIVRD** ou **DELIVERED** courants, utilisés par la plupart des prestataires. Tout autre statut correspond à un échec définitif.
+
+## Résolution des problèmes de diffusion {#troubleshooting}
+
+Cette section fournit des conseils sur le diagnostic et la résolution des problèmes courants liés aux échecs de diffusion.
+
+### Statut En échec avec erreurs de personnalisation {#personalization-errors}
+
+Si l’état d’une diffusion par email est **[!UICONTROL En échec]**, la raison peut être un problème lié aux blocs de personnalisation. Les blocs de personnalisation dans une diffusion peuvent générer des erreurs lorsque les schémas ne correspondent pas au mapping de diffusion.
+
+Les logs de diffusion sont essentiels pour savoir pourquoi une diffusion a échoué. Voici une erreur courante que vous pouvez rencontrer :
+
+Les messages des destinataires échouent avec une erreur &quot;Inatteignable&quot; indiquant :
+
+```
+Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
+```
+
+**Cause** : la personnalisation dans HTML tente d’appeler une table ou un champ qui n’a pas été défini ou mappé dans le ciblage amont ou dans le mapping de ciblage de la diffusion.
+
+**Résolution** : passez en revue le workflow et le contenu de la diffusion pour déterminer précisément quelle personnalisation tente d’appeler la table en question. Supprimez ensuite l’appel à cette table dans HTML ou corrigez le mapping sur la diffusion.
+
+En savoir plus sur la personnalisation dans [cette section](personalize.md).
+
+### Erreur de valeurs de personnalisation multiples {#multiple-values-error}
+
+En cas d’échec d’une diffusion, l’erreur suivante peut s’afficher dans les logs de diffusion :
+
+```
+DLV-XXXX The count of message prepared (123) is greater than the number of messages to send (111). Please contact support.
+```
+
+**Cause** : l’e-mail contient un champ ou un bloc de personnalisation qui comporte plusieurs valeurs pour le destinataire. Un bloc de personnalisation est utilisé et il récupère plusieurs enregistrements pour un destinataire spécifique.
+
+**Résolution** : vérifiez les données de personnalisation utilisées, puis vérifiez la cible pour les destinataires qui possèdent plusieurs entrées pour l’un de ces champs. Vous pouvez également utiliser une activité **[!UICONTROL Déduplication]** dans le workflow de ciblage avant l’activité de diffusion afin de vous assurer qu’il n’y a qu’un seul champ de personnalisation à la fois. Pour plus d’informations sur la déduplication, consultez la [documentation relative aux workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=fr){target="_blank"}.
+
+### Gestion des réponses automatiques {#auto-reply-handling}
+
+Certaines diffusions peuvent échouer avec une erreur « Inatteignable » indiquant :
+
+```
+Inbound email bounce (rule 'Auto_replies' has matched this bounce).
+```
+
+**Explication** : cela signifie que la diffusion a réussi mais qu’Adobe Campaign a reçu une réponse automatique du destinataire (par exemple, une réponse « Absent du bureau ») qui correspondait aux règles d&#39;email entrant « Réponses_automatiques ».
+
+L’e-mail de réponse automatique est ignoré par Adobe Campaign et l’adresse du destinataire n’est pas envoyée en quarantaine. Il s’agit d’un comportement attendu qui n’indique pas un échec de diffusion.
+
+## Rubriques connexes
+
+[Statuts de diffusion](delivery-statuses.md) décrit les différents statuts qu&#39;une diffusion peut avoir tout au long de son cycle de vie.
+
+[Surveiller les diffusions dans l’interface utilisateur de Campaign](delivery-dashboard.md) fournit des conseils sur l’utilisation du tableau de bord des diffusions pour suivre les performances des diffusions et diagnostiquer les problèmes.
+
+[Gestion des quarantaines](quarantines.md) explique comment Campaign gère les adresses en quarantaine pour protéger votre réputation d’envoi.
+
+[Surveiller votre délivrabilité](monitoring-deliverability.md) fournit des conseils pour maintenir une bonne délivrabilité et la réputation de l&#39;expéditeur.
+
+[Bonnes pratiques de diffusion](../start/delivery-best-practices.md) couvre les bonnes pratiques pour la création et l&#39;envoi de diffusions dans Campaign.
