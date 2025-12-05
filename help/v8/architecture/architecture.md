@@ -5,10 +5,10 @@ feature: Architecture, Deployment
 role: Developer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: 7465cacc74b8b7df38c5eb10d2928749c70a87ea
 workflow-type: tm+mt
 source-wordcount: '1049'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -34,7 +34,7 @@ Deux modèles de déploiement sont disponibles : **Déploiement FDA de Campaig
 
 ### Déploiement FDA de Campaign {#ac-deployment-fda}
 
-Dans son [déploiement FDA](fda-deployment.md), [!DNL Adobe Campaign] v8 peut être connecté à [!DNL Snowflake] pour accéder aux données via la fonctionnalité Federated Data Access : vous pouvez accéder aux données et aux informations externes stockées dans votre base de données [!DNL Snowflake] sans modifier la structure des données Adobe Campaign. PostgreSQL est la base de données principale. Vous pouvez utiliser Snowflake comme base de données secondaire pour étendre ensuite votre modèle de données et stocker vos données dans Snowflake. Par la suite, vous pourrez exécuter ETL, la segmentation et les rapports sur un jeu de données volumineux avec des performances optimales.
+Dans son [déploiement FDA](fda-deployment.md), [!DNL Adobe Campaign] v8 peut être connecté à [!DNL Snowflake] pour accéder aux données via la fonctionnalité Federated Data Access : vous pouvez accéder aux données et aux informations externes stockées dans votre base de données [!DNL Snowflake] sans modifier la structure des données Adobe Campaign. PostgreSQL est la base de données principale. Vous pouvez utiliser Snowflake comme base de données secondaire pour étendre votre modèle de données et stocker vos données dans Snowflake. Par la suite, vous pourrez exécuter ETL, la segmentation et les rapports sur un jeu de données volumineux avec des performances optimales.
 
 
 ![](assets/P1-P3-architecture.png){zoomable="yes"}
@@ -63,7 +63,7 @@ En fonction de votre package Campaign v8, vous disposez d’un nombre spécifiq
 
 Par défaut, les comptes externes de tous les canaux utilisent un mode de routage **[!UICONTROL alterné]**. Une diffusion est donc envoyée simultanément à partir de chaque instance MID de manière alternée.
 
-Afin d’optimiser les performances à la fois en termes de vitesse et d’échelle, vous pouvez permettre le partage automatique des diffusions entre vos instances mid-sourcing afin qu’elles soient diffusées plus rapidement aux destinataires. Cette opération est transparente lors de l’exécution de la diffusion à partir de l’instance marketing : une fois la diffusion envoyée, tous les logs sont consolidés ensemble avant d’être renvoyés à l’instance marketing dans un seul objet de diffusion.
+Pour optimiser les performances à la fois en termes de vitesse et d’échelle, vous pouvez permettre la répartition automatique des diffusions entre vos instances de mid-sourcing afin qu’elles soient diffusées plus rapidement aux destinataires. Cette opération est transparente lors de l’exécution de la diffusion à partir de l’instance marketing : une fois la diffusion envoyée, tous les logs sont consolidés ensemble avant d’être renvoyés à l’instance marketing dans un seul objet de diffusion.
 
 Pour ce faire, des comptes externes supplémentaires avec le mode de routage **[!UICONTROL Partagé]** sont créés lors de l’approvisionnement pour chaque canal :
 
@@ -76,7 +76,7 @@ Pour ce faire, des comptes externes supplémentaires avec le mode de routage **[
 
 >[!IMPORTANT]
 >
->Le mode de routage partagé est activé par défaut pour le compte « Partager la diffusion - E-mail ». Pour tous les autres comptes externes de canaux, contactez la personne chargée de votre transition Adobe pour que l’option soit activée.
+>Le mode de routage partagé est activé par défaut pour le compte « Partager la diffusion - E-mail ». Pour tous les autres canaux, contactez votre gestionnaire de transition Adobe pour que l’option soit activée.
 >
 >Par défaut, la valeur de la taille de seuil pour partager une diffusion entre plusieurs instances midsourcing (MID) est de 100 000. Vous pouvez modifier cette valeur dans l’option « NmsDelivery_MultiMidSplitThreshold » du menu **[!UICONTROL Administration]** / **[!UICONTROL Plateforme]** / **[!UICONTROL Options]** .
 
@@ -110,7 +110,7 @@ Dans cette architecture spécifique, la cellule d&#39;exécution est séparée d
 
   Découvrez comment créer et publier des modèles de messages dans [cette section](../send/transactional.md).
 
-* L&#39;**instance d&#39;exécution** renvoie les événements entrants (réinitialisation du mot de passe ou commandes à partir d&#39;un site web, par exemple) et envoie des messages personnalisés. Il peut y avoir plusieurs instances d&#39;exécution pour traiter les messages par l&#39;intermédiaire de la répartition de charge et mettre à l&#39;échelle le nombre d&#39;événements à poursuivre pour une disponibilité maximale.
+* L&#39;**instance d&#39;exécution** récupère les événements entrants (réinitialisation du mot de passe ou commandes à partir d&#39;un site web, par exemple) et envoie des messages personnalisés. Il peut y avoir plusieurs instances d&#39;exécution pour traiter les messages par l&#39;intermédiaire de la répartition de charge et mettre à l&#39;échelle le nombre d&#39;événements à traiter pour une disponibilité maximale.
 
 >[!CAUTION]
 >
@@ -127,6 +127,6 @@ Lors de l&#39;interaction avec une instance d&#39;exécution Message Center héb
 Ensuite, avec le jeton de session fourni par l&#39;instance d&#39;exécution en réponse à l&#39;appel ci-dessus, l&#39;application externe peut lancer des appels API SOAP (rtEvents ou batchEvents) pour envoyer des communications, et ce, sans qu&#39;il y ait besoin d&#39;inclure le nom d&#39;utilisateur et le mot de passe du compte dans chaque appel SOAP.
 
 * Instances d&#39;exécution multiples
-Dans une architecture d&#39;exécution multi-cellules avec des instances d&#39;exécution multiples derrière une répartition de charge, la méthode de connexion invoquée par l&#39;application externe passe par la répartition de charge. Pour cette raison, une authentification par jeton ne peut pas être utilisée. Une authentification par utilisateur/mot de passe est requise.
+Dans une architecture d&#39;exécution multi-cellules avec plusieurs instances d&#39;exécution derrière une répartition de charge, la méthode de connexion invoquée par l&#39;application externe passe par la répartition de charge. Pour cette raison, une authentification par jeton ne peut pas être utilisée. Une authentification par utilisateur/mot de passe est requise.
 
 En savoir plus sur les événements de messagerie transactionnelle sur [cette page](../send/event-processing.md).
