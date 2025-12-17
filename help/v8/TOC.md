@@ -5,9 +5,9 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
+source-git-commit: 050612f6d7ab20aed5880454eec9cfc6e5fc18c2
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '837'
 ht-degree: 89%
 
 ---
@@ -105,7 +105,7 @@ ht-degree: 89%
       + [Analyse des diffusions](send/delivery-analysis.md)
       + [Configurer et envoyer la diffusion](send/configure-and-send.md)
       + [Optimisation de l’heure d’envoi](send/predictive.md)
-   + Surveillance de vos diffusions {#monitor}
+   + Surveiller vos diffusions {#monitor}
       + [Surveiller les diffusions dans l’interface utilisateur de Campaign](send/delivery-dashboard.md)
       + [Statuts de diffusion](send/delivery-statuses.md)
       + [Diffusions en échec](send/delivery-failures.md)
@@ -131,7 +131,6 @@ ht-degree: 89%
    + Ajouter des profils {#add-profiles}
       + [Création manuelle de profils](audiences/create-profiles.md)
       + [Importer des profils depuis un fichier](audiences/import-profiles.md)
-      + [Utilisation de profils externes](audiences/external-profiles.md)
       + [Collecte de données de profil dans des formulaires web](audiences/collect-profiles.md)
       + [Utiliser les mappings de ciblage](audiences/target-mappings.md)
       + [Créer des profils de test](audiences/test-profiles.md)

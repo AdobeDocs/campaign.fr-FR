@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 43483085-8aa6-47e6-89e7-9211e37beaa4
 version: Campaign v8, Campaign Classic v7
-source-git-commit: b24e05f152bc299ea7953856bfa71950b5cc9837
+source-git-commit: 050612f6d7ab20aed5880454eec9cfc6e5fc18c2
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 100%
@@ -33,7 +33,5 @@ Pour renseigner des données de profil dans Adobe Campaign, vous pouvez :
 * saisir les profils manuellement dans la console cliente, comme indiqué ci-dessous :
 
 ![](assets/create-profile.png)
-
-<!--You can also select your message audience in an external file: recipients are stored not in the database, but in files. These are known as "external" deliveries. These contacts can be imported or not in Adobe Campaign. [Learn more](external-profiles.md).-->
 
 Une fois le fichier importé, vous pouvez créer des audiences pour envoyer vos messages. Découvrez comment créer des audiences [dans cette section](create-audiences.md).
