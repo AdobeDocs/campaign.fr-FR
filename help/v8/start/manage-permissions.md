@@ -6,10 +6,10 @@ role: User, Admin
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
-source-git-commit: df8ab43d9c7aee96c23240cd6c2775311da1abf2
+source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 100%
+source-wordcount: '1816'
+ht-degree: 93%
 
 ---
 
@@ -99,11 +99,15 @@ Ces profils de produit correspondent aux **groupes d’opérateurs** Campaign. L
 
 1. **[!UICONTROL Administrateur]** (admin)
 
-   Les opérateurs de ce groupe ont un accès complet à l’instance. Les administrateurs sont les utilisateurs pouvant accéder aux parties les plus techniques de l’interface utilisateur.
+   Les opérateurs de ce groupe ont un accès complet à l&#39;instance. Les administrateurs sont les utilisateurs pouvant accéder aux parties les plus techniques de l’interface utilisateur.
 
    Ce groupe contient les droits nommés suivants :
 
    * **[!UICONTROL ADMINISTRATION]** : droit pour exécuter, créer, éditer et supprimer tout objet tel que workflow, diffusion, script, etc.
+
+   >[!IMPORTANT]
+   >
+   >Le rôle **[!UICONTROL Administrateur]** accorde l&#39;accès au Panneau de Contrôle Campaign. Tout profil de produit dans le Adobe Admin Console contenant le mot « admin » dans son nom (tel que « Administrateurs », « admin », « admins », « administrateur d’approbation », etc.) accordera l’accès au Panneau de Contrôle. En savoir plus sur la [gestion de l’accès aux Panneaux de Contrôle ](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
 
 1. **[!UICONTROL Opérateurs et opératrices de diffusion]** (diffusion)
 
@@ -196,9 +200,9 @@ L’appartenance à des groupe d’utilisateurs ou d’utilisatrices peut permet
 
 Les droits nommés par défaut dans Adobe Campaign sont les suivants :
 
-* **[!UICONTROL ADMINISTRATION]** : les opérateurs disposant du droit **[!UICONTROL ADMINISTRATION]** ont un accès total à l’instance. Les administrateurs peuvent exécuter/créer/éditer/supprimer tout objet tel que workflow, diffusion, script, etc.
+* **[!UICONTROL ADMINISTRATION]** : les opérateurs disposant du droit **[!UICONTROL ADMINISTRATION]** ont un accès total à l’instance. Les utilisateurs administrateurs peuvent exécuter, créer, modifier et supprimer tout objet tel que le workflow, la diffusion, les scripts, etc. **Remarque :** les profils de produit dans le Adobe Admin Console contenant le mot « admin » accordent l’accès au Panneau de Contrôle Campaign.
 
-* **[!UICONTROL ADMINISTRATION DES VALIDATIONS]** : vous pouvez définir plusieurs étapes de validation dans les workflows et les diffusions pour vous assurer que l’état actuel a été validé par un opérateur ou un groupe affecté. Les utilisateurs disposant du droit **[!UICONTROL ADMINISTRATION DES VALIDATIONS]** peuvent définir les étapes de validation et affecter un opérateur ou un groupe d’opérateurs chargé de valider ces étapes.
+* **[!UICONTROL ADMINISTRATION DES VALIDATIONS]** : vous pouvez définir plusieurs étapes de validation dans les workflows et les diffusions pour vous assurer que l’état actuel a été validé par un opérateur ou un groupe affecté. Les utilisateurs disposant du droit **[!UICONTROL ADMINISTRATION DES VALIDATIONS]** peuvent définir des étapes de validation et également désigner un opérateur ou un groupe d’opérateurs qui doit valider ces étapes. **Remarque :** les profils de produit contenant le mot « admin » (tels que « approval admin ») accordent l’accès au Panneau de Contrôle Campaign.
 
 * **[!UICONTROL CENTRAL]** : droit de gestion en central (Marketing distribué).
 
@@ -249,4 +253,4 @@ Les droits nommés par défaut dans Adobe Campaign sont les suivants :
 * [Gestion des autorisations pour le marketing distribué](../../automation/distributed-marketing/about-distributed-marketing.md#operators)
 * [Gestion des autorisations relatives au module d’interaction](../interaction/interaction-operators.md)
 * [Filtrage de l’accès aux schémas](../dev/filter-schema.md)
-* [Limiter l’affichage des PI](../dev/restrict-pi-view.md)
+* [Limitation de l&#39;affichage des PI](../dev/restrict-pi-view.md)

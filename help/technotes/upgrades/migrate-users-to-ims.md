@@ -2,10 +2,10 @@
 title: Migrer les opérateurs et opératrices de Campaign vers Adobe Identity Management System (IMS)
 description: Découvrez comment migrer les opérateurs et opératrices Campaign vers Adobe Identity Management System (IMS).
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
-source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
+source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 93%
+source-wordcount: '1433'
+ht-degree: 86%
 
 ---
 
@@ -27,13 +27,21 @@ Cette modification s’applique à partir de Campaign v8.5.2 et est **obligatoi
 
 ## Cela vous concerne-t-il ?{#migrate-ims-impacts}
 
-Si les opérateurs et opératrices de votre entreprise se connectent à la console cliente Campaign à l’aide de leur nom d’utilisateur/mot de passe (c’est-à-dire via une authentification native), cette étape vous concerne et vous devez migrer ces opérateurs et opératrices vers Adobe IMS comme décrit ci-dessous.
+Si les opérateurs et opératrices de votre entreprise se connectent à la console cliente Campaign à l’aide de leur nom d’utilisateur ou d’utilisatrice/mot de passe (c’est-à-dire via une authentification native), cette étape vous concerne et vous devez migrer ces opérateurs et opératrices vers Adobe IMS comme décrit ci-dessous.
 
 La migration vers [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} est un impératif de sécurité pour rendre vos environnements sécurisés et normalisés, car la plupart des autres solutions et applications Adobe Experience Cloud sont déjà sur IMS.
 
+>[!IMPORTANT]
+>
+>**Impact sur l&#39;accès au Panneau de Contrôle**
+>
+>Une fois que vous avez migré vos utilisateurs vers IMS, sachez que tout profil de produit dans le Adobe Admin Console contenant le mot « admin » dans son nom (tel que « Administrateurs », « admin », « admins », « administrateur de validation », etc.) accordera automatiquement l’accès au Panneau de Contrôle Campaign. Panneau de Contrôle est un outil en libre-service qui permet d’apporter des modifications importantes aux instances de Campaign.
+>
+>Examinez attentivement les conventions de dénomination de votre profil de produit pour vous assurer que seuls les utilisateurs autorisés ont accès à Panneau de Contrôle. En savoir plus sur la gestion des autorisations de Panneau de Contrôle dans la documentation du Panneau de Contrôle [](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
+
 ## Migrer vers Adobe Developer Console{#ims-migration-procedure}
 
-### Conditions préalables{#ims-migration-prerequisites}
+### Conditions préalables requises{#ims-migration-prerequisites}
 
 Avant de commencer le processus de migration, contactez votre représentant ou représentante Adobe (Gestionnaire de transition), afin que les équipes techniques d’Adobe puissent migrer vos groupes d’opérateurs et opératrices existants et vos droits nommés vers Adobe Identity Management System (IMS).
 
@@ -51,7 +59,7 @@ Vous pouvez désormais migrer vos opérateurs et opératrices techniques vers la
 
 Une fois la migration terminée, confirmez auprès de votre Gestionnaire de transition Adobe. Adobe marque alors la migration comme terminée et bloque la création des utilisateurs natifs et utilisatrices natives, ainsi que leur connexion. Votre environnement est ensuite sécurisé et normalisé.
 
-## Questions fréquentes {#ims-migration-faq}
+## Forum aux questions {#ims-migration-faq}
 
 ### Quand puis-je démarrer la migration ? {#ims-migration-start}
 
@@ -70,7 +78,7 @@ La création d’un utilisateur natif ou d’une utilisatrice native est toujour
 Une fois la migration des utilisateurs finaux et utilisatices finales ainsi que des utilisateurs et utilisatrices et techniques vers Adobe Identity Management System (IMS) terminée, vous devez contacter votre Gestionnaire de transition Adobe pour qu’Adobe puisse marquer votre migration comme terminée, bloquer la création des personnes à partir de la console cliente et désactiver la connexion des utilisateurs finaux et utilisatrices finales.
 
 
-### Comment créer des utlisateurs et utilisatrices après la migration ? {#ims-migration-native}
+### Comment créer des utilisateurs et utilisatrices après la migration ? {#ims-migration-native}
 
 Une fois la migration IMS complète terminée, Adobe applique les restrictions qui bloquent la création des utilisateurs natifs et utilisatrices natives. Ces restrictions ne sont pas appliquées tant que la migration IMS n’est pas terminée.
 
@@ -89,7 +97,7 @@ En tant qu’administrateur ou administratrice Campaign, vous devez ajouter des 
 
 En tant que personne chargée de la supervision de workflow, ou de l’administratrice de Campaign, vous pouvez également effectuer une mise à jour en masse de vos opérateurs et opératrices avec un workflow.
 
-+++Principales étapes pour mettre à jour vos opérateurs et opératrices avec un workflow
++++Étapes clés pour mettre à jour vos opérateurs avec un workflow
 
 Pour effectuer une mise à jour en masse de vos opérateurs et opératrices natifs, procédez comme suit :
 
@@ -142,7 +150,7 @@ Adobe recommande vivement que toutes les personnes soient déconnectées pendant
 
 Cette migration comporte deux aspects : la migration des utilisateurs finaux et utilisatrices finales et la migration des utilisateurs et utilisatrices techniques (utilisée dans les API de votre code personnalisé).
 
-Si l’ensemble de vos utilisateurs et utilisatrices (opérateurs et opératrices Campaign) sont sur IMS, il n’est pas nécessaire d’effectuer cette migration. Cependant, vous devez toujours migrer les utilisateurs et utilisatrices techniques que vous avez peut-être utilisés dans le code personnalisé. En savoir plus sur [cette page](ims-migration.md).
+Si l’ensemble de vos utilisateurs et utilisatrices (opérateurs et opératrices Campaign) sont sur IMS, il n’est pas nécessaire d’effectuer cette migration. Cependant, vous devez toujours migrer les utilisateurs et utilisatrices techniques que vous avez peut-être utilisés dans le code personnalisé. En savoir plus à ce propos sur [cette page](ims-migration.md).
 
 Une fois cette migration terminée, vous devez contacter votre Gestionnaire de transition Adobe afin qu’Adobe termine la migration.
 

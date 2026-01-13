@@ -5,10 +5,10 @@ feature: Control Panel, Monitoring
 role: Admin
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 96%
+source-wordcount: '372'
+ht-degree: 77%
 
 ---
 
@@ -28,7 +28,15 @@ En savoir plus dans la [documentation du Panneau de Contrôle Campaign](https://
 
 ## Comment accéder au Panneau de contrôle ? {#ac-control-panel-access}
 
-Le Panneau de contrôle est directement accessible à partir d&#39;Adobe Experience Cloud. Il est accessible uniquement aux utilisateurs Admin. [Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=fr){target="_blank"} pour plus d&#39;informations.
+Le Panneau de contrôle est directement accessible à partir d&#39;Adobe Experience Cloud. Il est accessible uniquement aux utilisateurs administrateurs.
+
+>[!IMPORTANT]
+>
+>Par défaut, le Panneau de Contrôle est accessible aux utilisateurs administrateurs appartenant au profil de produit « Administrateurs ». Selon la configuration de votre organisation, le profil de produit peut être nommé différemment (« admin », « admins », « administrateur d’approbation », etc.). **Tout profil de produit contenant le mot « admin » dans son nom accordera automatiquement l’accès à Panneau de Contrôle.**
+>
+>Examinez attentivement la dénomination de votre profil de produit pour vous assurer que seuls les utilisateurs autorisés ont accès au Panneau de Contrôle.
+
+[Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=fr){target="_blank"} pour plus d&#39;informations.
 
 ## FAQ sur le Panneau de contrôle {#ac-control-faq}
 
