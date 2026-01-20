@@ -50,7 +50,7 @@ Activez la planification de diffusion basée sur des fichiers prêts à l’empl
 
 **Contexte :** piloté par le client (H&amp;M), exigence de parité ACS vers ACC
 
-**Références :** [Documentation ACS](https://experienceleague.adobe.com/en/docs/campaign-standard/using/testing-and-sending/scheduling-messages/computing-the-sending-date)
+**Références :** [Documentation ACS](https://experienceleague.adobe.com/fr/docs/campaign-standard/using/testing-and-sending/scheduling-messages/computing-the-sending-date)
 
 &#x200B;---
 
@@ -134,7 +134,7 @@ Intégration rationalisée d’AEM permettant la création en un clic de Live Co
 
 **Contexte :** exigence de Microsoft, travail transféré à l&#39;équipe de Himanshu
 
-**Références :** [Documentation ACS](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-experience-manager/creating-multilingual-email-aem.html)
+**Références :** [Documentation ACS](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-experience-manager/creating-multilingual-email-aem.html?lang=fr)
 
 &#x200B;---
 
@@ -201,7 +201,7 @@ Fonctionnalité de chargement de fichiers prête à l’emploi pour créer des d
 
 **Contexte :** piloté par le client (H&amp;M), parité ACS vers ACC, critique pour la migration
 
-**Références :** [Documentation ACS](https://experienceleague.adobe.com/en/docs/campaign-standard/using/communication-channels/push-notifications/generating-csv-multilingual-push)
+**Références :** [Documentation ACS](https://experienceleague.adobe.com/fr/docs/campaign-standard/using/communication-channels/push-notifications/generating-csv-multilingual-push)
 
 &#x200B;---
 
@@ -278,7 +278,7 @@ Gestion des processus de validation permettant les workflows de validation du co
 
 **Contexte :** piloté par le client (Pierre Fabre), exigence de Microsoft, développement terminé et en test
 
-**Références :** [Documentation classique](https://experienceleague.adobe.com/en/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval), [Simulations Figma](https://www.figma.com/design/r2vpqXoVyI3aucKgkt8TLN/Approvals)
+**Références :** [Documentation classique](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval), [Simulations Figma](https://www.figma.com/design/r2vpqXoVyI3aucKgkt8TLN/Approvals)
 
 &#x200B;---
 
