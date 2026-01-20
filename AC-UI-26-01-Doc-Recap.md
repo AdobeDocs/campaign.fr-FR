@@ -18,7 +18,7 @@ ht-degree: 5%
 | Vérifier le DOCAC | 3 |
 | Fermer DOCAC | 5 |
 
----
+&#x200B;---
 
 ## Plan d’action pour la documentation 📋
 
@@ -43,7 +43,7 @@ ht-degree: 5%
 | [NEO-91563](https://jira.corp.adobe.com/browse/NEO-91563) | 🔴 No | [DOCAC-13825](https://jira.corp.adobe.com/browse/DOCAC-13825) | ❌ Fermer |
 | [NEO-92151](https://jira.corp.adobe.com/browse/NEO-92151) | 🔴 No | [DOCAC-13823](https://jira.corp.adobe.com/browse/DOCAC-13823) | ❌ Fermer |
 
----
+&#x200B;---
 
 ## ⚠️ Attention Requise
 
