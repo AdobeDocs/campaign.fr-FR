@@ -34,7 +34,7 @@ Cette version est fournie avec un ensemble de fonctionnalités disponibles dans 
 * Expériences de contenu - Tests A/B
 * Activité de diffusion au fil de l&#39;eau
 
-Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Campaign [](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}
+Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Campaign [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}
 
 ### Améliorations de la sécurité {#security-8-9-1}
 
