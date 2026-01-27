@@ -1,14 +1,14 @@
 ---
 title: Comprendre la description des événements
-description: Découvrez comment les événements de message transactionnel sont gérés dans Adobe Campaign Classic à l’aide des méthodes SOAP.
+description: Découvrez comment les événements de message transactionnel sont gérés dans Adobe Campaign Classic à l'aide des méthodes SOAP.
 feature: Transactional Messaging
 role: User
 level: Intermediate
 exl-id: 2f679d1c-4eb6-4b3c-bdc5-02d3dea6b7d3
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: 6693bb8a62c0d126b871dc24a75b76de71b86f8d
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 92%
 
 ---
 
@@ -22,15 +22,15 @@ La messagerie transactionnelle repose sur le modèle de données d’Adobe Camp
 
 Cette section décrit les méthodes SOAP associées aux schémas du module des messages transactionnels.
 
-Deux méthodes SOAP **PushEvent** ou **PushEvents** sont associées aux deux schémas de données **nms:rtEvent** et **nms:BatchEvent**. C&#39;est le système d&#39;information qui détermine si un événement est de type &quot;batch&quot; ou &quot;temps réel&quot;.
+Deux méthodes SOAP **PushEvent** ou **PushEvents** sont liées aux deux schémas de données **nms:rtEvent** et **nms:BatchEvent**. C&#39;est le système d&#39;information qui détermine si un événement est de type &quot;batch&quot; ou &quot;temps réel&quot;.
 
 * **PushEvent** permet d&#39;insérer un seul événement dans le message,
 * **PushEvents** permet d&#39;insérer une collection d&#39;événements dans le message.
 
 Le chemin WSDL d&#39;accès aux deux méthodes est :
 
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** pour accéder au schéma de type temps réel.
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** pour accéder au schéma de type batch.
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** pour accéder au schéma de type en temps réel.
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** pour accéder au schéma de type de lot.
 
 Les deux méthodes contiennent un élément **`<urn:sessiontoken>`** permettant de se connecter au module de message transactionnel. Nous vous recommandons d&#39;utiliser une méthode d&#39;identification via des adresses IP approuvées. Pour récupérer le jeton de session, effectuez un appel SOAP de connexion, puis un jeton get suivi d’une fermeture de session. Utilisez le même jeton pour plusieurs appels RT. Les exemples inclus dans cette section utilisent la méthode du jeton de session qui est recommandée.
 
@@ -100,13 +100,13 @@ Exemple avec PushEvents :
 </urn:PushEvents>
 ```
 
-Les éléments **`<rtevent>`** et **`<batchevent>`** possèdent un jeu d&#39;attributs ainsi qu&#39;un élément enfant indispensable : **`<ctx>`** permettant d’intégrer les données du message.
+Les éléments **`<rtevent>`** et **`<batchEvent>`** possèdent un jeu d&#39;attributs ainsi qu&#39;un élément enfant indispensable : **`<ctx>`** permettant d’intégrer les données du message.
 
 >[!NOTE]
 >
->L’élément **`<batchevent>`** vous permet d’ajouter l’événement à la file d’attente &quot;batch&quot;. Le **`<rtevent>`** ajoute l’événement à la file d’attente &quot;temps réel&quot;.
+>L’élément **`<batchEvent>`** vous permet d’ajouter l’événement à la file d’attente &quot;batch&quot;. Le **`<rtevent>`** ajoute l’événement à la file d’attente &quot;temps réel&quot;.
 
-Les attributs obligatoires des éléments **`<rtevent>`** et **`<batchevent>`** sont @type et @email. La valeur de @type doit être identique à la valeur de liste détaillée définie lors de la configuration de l’instance d’exécution. Cette valeur vous permet de définir le modèle à lier au contenu de l’événement pendant la diffusion.
+Les attributs obligatoires des éléments **`<rtevent>`** et **`<batchEvent>`** sont @type et @email. La valeur de @type doit être identique à la valeur de liste détaillée définie lors de la configuration de l’instance d’exécution. Cette valeur vous permet de définir le modèle à lier au contenu de l’événement pendant la diffusion.
 
 `<rtevent> configuration example:`
 
@@ -122,7 +122,7 @@ Nous vous conseillons de remplir les attributs @wishedChannel et @emailFormat av
 
 >[!NOTE]
 >
->La description détaillée de tous les attributs autorisés et de leurs valeurs se trouve dans la description du schéma de données de **nms:rtEvent** et **nms:BatchEvent**.
+>Une description détaillée de tous les attributs autorisés, ainsi que de leurs valeurs, est disponible dans la section description du schéma de données **nms:rtEvent** et **nms:BatchEvent**.
 
 L’élément **`<ctx>`** contient les données du message. Son contenu XML est ouvert, ce qui signifie qu’il peut être configuré selon le contenu à diffuser.
 
