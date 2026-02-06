@@ -5,7 +5,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 334b327c7798c78fcfa90e90afe04896959037eb
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 98%
@@ -55,11 +55,11 @@ Pour en savoir plus sur l’envoi de BAT de messages transactionnels si vous eff
 
 ## [!DNL Campaign] et [!DNL Snowflake] {#ac-gs-snowflake}
 
-Dans son [déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), [!DNL Adobe Campaign] v8 fonctionne avec deux bases de données : une base de données [!DNL Campaign] locale pour la messagerie en temps réel de l’interface utilisateur et les requêtes et écritures unitaires à travers les API, et une base de données cloud [!DNL Snowflake] pour l’exécution de campagnes, les requêtes par lots et l’exécution de workflows.
+Dans son [déploiement Enterprise (FFDA)](../../v8/architecture/enterprise-deployment.md), [!DNL Adobe Campaign] v8 fonctionne avec deux bases de données : une base de données [!DNL Campaign] locale pour la messagerie en temps réel de l’interface utilisateur et les requêtes et écritures unitaires à travers les API, et une base de données cloud [!DNL Snowflake] pour l’exécution de campagnes, les requêtes par lots et l’exécution de workflows.
 
 Campaign v8 Enterprise présente le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud. Avec cette nouvelle architecture, le déploiement Campaign v8 Enterprise (FFDA) simplifie la gestion des données : aucun index n&#39;est requis sur la base de données cloud. Il vous suffit de créer les tables et de copier les données pour démarrer. La technologie de base de données cloud ne nécessite pas de maintenance spécifique pour garantir le niveau de performances attendu.
 
-Pour en savoir plus sur l’architecture de [!DNL Campaign] v8, consultez [cette page](../architecture/architecture.md).
+Pour en savoir plus sur l’architecture de [!DNL Campaign] v8, consultez [cette page](../../v8/architecture/architecture.md).
 
 
 ## Utiliser votre Adobe ID pour vous connecter à Campaign{#adobe-id}
@@ -76,7 +76,7 @@ Avec Adobe Campaign v8, les rapports de cube sont optimisés et offrent de mei
 
 ## Fonctionnalités non disponibles{#gs-unavailable-features}
 
-Certaines fonctionnalités ne sont pas disponibles dans le cadre d’un [déploiement Grands comptes (FFDA)](../architecture/enterprise-deployment.md) de Campaign, par exemple :
+Certaines fonctionnalités ne sont pas disponibles dans le cadre d’un [déploiement Grands comptes (FFDA)](../../v8/architecture/enterprise-deployment.md) de Campaign, par exemple :
 
 * Gestion des ressources marketing
 * Coupons
