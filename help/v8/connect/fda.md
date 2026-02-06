@@ -5,7 +5,7 @@ feature: Federated Data Access
 role: Admin
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 631c4986d24daeff870412566318adb170ce040f
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 100%
@@ -20,7 +20,7 @@ Utilisez le connecteur FDA (Federated Data Access) pour connecter Campaign à un
 >
 >* Les bases de données compatibles avec FDA (Federated Data Access) sont répertoriées dans la [Matrice de compatibilité](../start/compatibility-matrix.md).
 >
->* Dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), un compte externe spécifique est disponible pour gérer la communication entre la base de données locale Campaign et la base de données cloud Snowflake. Ce compte externe est configuré pour vous par Adobe et **ne doit pas** être modifié.
+>* Dans le contexte d’un [Déploiement Enterprise (FFDA)](../../v8/architecture/enterprise-deployment.md), un compte externe spécifique est disponible pour gérer la communication entre la base de données locale Campaign et la base de données cloud Snowflake. Ce compte externe est configuré pour vous par Adobe et **ne doit pas** être modifié.
 >
 >* En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour connecter vos bases de données externes à Campaign.
 
@@ -69,7 +69,7 @@ Par exemple, dans l&#39;activité **[!UICONTROL Requête]**, vous pouvez défini
 1. Ouvrez l&#39;activité et cliquez sur le lien **[!UICONTROL Ajouter des données...]**
 1. Sélectionnez les options des **[!UICONTROL Données externes]**.
 1. Choisissez l&#39;option **[!UICONTROL En définissant localement la source de données]**.
-1. Sélectionnez le moteur de la base de données cible dans la liste déroulante. Saisissez le nom du serveur et renseignez les paramètres d&#39;authentification. Indiquez également le nom de la base de données externe.
+1. Sélectionnez le moteur de la base de données cible dans la liste déroulante. Saisissez le nom du serveur et renseignez les paramètres d&#39;authentification. Indiquez également le nom de la base externe.
 1. Sélectionnez la table où sont stockées les données. Vous pouvez saisir le nom de la table directement dans le champ correspondant ou cliquer sur l’icône d’édition pour accéder à la liste des tables de la base de données.
 1. Cliquez sur le bouton **[!UICONTROL Ajouter]** pour définir un ou plusieurs champs de réconciliation entre les données de la base de données externe et les données de la base de données d’Adobe Campaign. Les icônes **[!UICONTROL Modifier l’expression]** du **[!UICONTROL Champ distant]** et du **[!UICONTROL Champ local]** permettent d’accéder à la liste des champs de chacune des tables.
 1. Au besoin, indiquez une condition de filtrage et le mode de tri des données.
