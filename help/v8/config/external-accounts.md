@@ -5,9 +5,9 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: a0aadd7e991dcceb5646f0afbc9cb1534e459e2c
+source-git-commit: 776a0e5eead9161b7e2c9d7746c72cba42ea42cb
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1376'
 ht-degree: 67%
 
 ---
@@ -101,7 +101,7 @@ Le compte externe de type **Base de données externe** permet d’établir la co
 >
 >Les bases de données externes compatibles avec Adobe Campaign v8 sont répertoriées dans la [matrice de compatibilité](../start/compatibility-matrix.md). Les connexions FDA utilisent les pilotes ODBC. Avec Adobe Campaign Managed Cloud Services, la configuration du pilote ODBC et du compte externe est configurée par Adobe.
 
-Les paramètres de configuration du compte externe dépendent du moteur de base de données. Avec Adobe Campaign Managed Cloud Services, la configuration des comptes externes est effectuée par Adobe. En savoir plus sur cette configuration dans la documentation de [Adobe Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
+Les paramètres de configuration du compte externe dépendent du moteur de base de données. Avec Adobe Campaign Managed Cloud Services, la configuration des comptes externes est effectuée par Adobe. En savoir plus sur cette configuration dans la documentation de [Adobe Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
 
 #### Compte externe des briques de données {#databricks-external-accounts}
 
@@ -113,7 +113,7 @@ Pour configurer l’authentification OAuth2 via le principal de service dans Cam
 
 1. L’administrateur de l’espace de travail Databricks active les principaux de service sur l’espace de travail Databricks et génère les informations d’identification. Pour autoriser l’accès à vos ressources de briques de données Azure avec OAuth, créez un secret OAuth (utilisé pour générer des jetons d’accès OAuth pour l’authentification).
 2. Dans Adobe Campaign, créez ou modifiez un compte externe Databricks et ouvrez l’onglet **OAuth** .
-3. Collez les informations d’identification dans le champ **Secret** de l’onglet OAuth du compte externe Databricks.
+3. Collez les informations d’identification dans les champs de l’onglet OAuth du compte externe Blocs de données .
 4. Utilisez **[!UICONTROL Tester la connexion]** pour valider la configuration.
 
 ### X (anciennement Twitter) {#twitter-external-account}
