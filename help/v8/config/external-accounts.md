@@ -101,7 +101,7 @@ Le compte externe de type **Base de données externe** permet d’établir la co
 >
 >Les bases de données externes compatibles avec Adobe Campaign v8 sont répertoriées dans la [matrice de compatibilité](../start/compatibility-matrix.md). Les connexions FDA utilisent les pilotes ODBC. Avec Adobe Campaign Managed Cloud Services, la configuration du pilote ODBC et du compte externe est configurée par Adobe.
 
-Les paramètres de configuration du compte externe dépendent du moteur de base de données. Avec Adobe Campaign Managed Cloud Services, la configuration des comptes externes est effectuée par Adobe. En savoir plus sur cette configuration dans la documentation de [Adobe Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
+Les paramètres de configuration du compte externe dépendent du moteur de base de données. Avec Adobe Campaign Managed Cloud Services, la configuration des comptes externes est effectuée par Adobe. En savoir plus sur cette configuration dans la documentation de [Adobe Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
 
 #### Compte externe des briques de données {#databricks-external-accounts}
 
