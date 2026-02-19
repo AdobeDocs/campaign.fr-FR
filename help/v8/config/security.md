@@ -1,15 +1,15 @@
 ---
 title: Bonnes pratiques de sécurité de Campaign
-description: Prise en main des bonnes pratiques de sécurité de Campaign
+description: Conseils de configuration sécurisée recommandés pour Campaign
 feature: Privacy, PI
 role: Developer
 level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 version: Campaign v8, Campaign Classic v7
-source-git-commit: da2274cfd19bb067fcc1e990360093f161d5638a
+source-git-commit: 925f8152d28f60f876c5ef4420064fa0d71cdb9d
 workflow-type: tm+mt
-source-wordcount: '2820'
-ht-degree: 69%
+source-wordcount: '2887'
+ht-degree: 67%
 
 ---
 
@@ -23,6 +23,7 @@ De plus, notre travail en collaboration avec des partenaires, des chercheurs de 
 >
 >**Managed Cloud Services de Campaign v8 : l’infrastructure** (réseau, serveur, TLS, application de correctifs) est gérée par Adobe. Cette page porte sur la configuration au niveau du client et de l’application que vous contrôlez : la gestion des accès, l’authentification, les paramètres d’instance, la protection des données, le codage et les pratiques opérationnelles.
 
+
 ## Liste de contrôle de sécurité {#security-checklist}
 
 Utilisez cette liste de contrôle pour aligner votre configuration avec les valeurs par défaut sécurisées recommandées :
@@ -31,9 +32,19 @@ Utilisez cette liste de contrôle pour aligner votre configuration avec les vale
 * [Authentification et session](#authentication-and-session) : utiliser Adobe IMS, politique d’identité forte, délai d’expiration de la session
 * [Sécurité des instances et du réseau](#instance-and-network-security) : place sur la liste autorisée IP, autorisations d’URL, clés GPG par Panneau de Contrôle
 * [Protection des données et des PII](#data-and-pii-protection) : HTTPS, limitation de l’affichage des PII, restriction des mots de passe, protection des pages sensibles
-* [Instructions de codage &#x200B;](#coding-guidelines) : aucun secret codé en dur, validation de l’entrée, SQL paramétré, captchas
+* [Instructions de codage ](#coding-guidelines) : aucun secret codé en dur, validation de l’entrée, SQL paramétré, captchas
 * [Restriction des données](#data-restriction) : limitez l’accès aux champs de mot de passe et de secret dans les comptes externes
 * [Opérationnel et conformité](#operational-and-compliance) : comparez régulièrement cette ligne de base et utilisez le journal d’audit
+
+### Où trouver ces conseils ? {#public-guidance}
+
+Ces conseils de configuration sécurisée recommandés sont publiés publiquement sur Experience League. Vous pouvez l’utiliser et le partager sans restriction :
+
+* **Cette page** - [Bonnes pratiques de sécurité de Campaign](#ac-security) (liste de contrôle et sections détaillées)
+* **[Module complémentaire de sécurité renforcée](enhanced-security.md)** - Intégration CMK sécurisée et tunneling VPN sécurisé
+* **[Prise en main des autorisations](../start/gs-permissions.md)** - Accès et profils de produits
+* **[Limitation de l’affichage des PII](../dev/restrict-pi-view.md)** - Limitation de l’accès aux champs sensibles
+* **[Instructions d’implémentation](../start/implement.md)** - Sécurité et confidentialité avant de commencer
 
 ## Confidentialité
 

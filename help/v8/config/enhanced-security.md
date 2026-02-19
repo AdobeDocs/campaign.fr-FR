@@ -1,19 +1,21 @@
 ---
 title: Module complémentaire de sécurité améliorée Campaign
-description: Commencer à utiliser le module complémentaire Campaign de sécurité améliorée
+description: Conseils de configuration sécurisée pour le module complémentaire de sécurité renforcée de Campaign
 feature: Configuration
 role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 3f36d7c425dd5a9a13e1de7a77371b29a462dbea
+source-git-commit: 925f8152d28f60f876c5ef4420064fa0d71cdb9d
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 97%
+source-wordcount: '743'
+ht-degree: 94%
 
 ---
 
 
 # Module complémentaire Campaign de sécurité améliorée {#enhanced-security}
+
+Cette page fait partie des conseils de configuration sécurisée recommandés [accessibles au public](security.md#public-guidance) d’Adobe pour Campaign v8.
 
 Pour sécuriser davantage votre connexion réseau et offrir une meilleure sécurité à vos ressources, [!DNL Adobe Campaign] fournit un nouveau module complémentaire de **Sécurité améliorée**.
 
@@ -124,7 +126,7 @@ Les bases de données On-Premise suivantes sont prises en charge :
 * Hadoop via HiveSQL
 * PostgreSQL
 
-Les bases de données cloud sont prises en charge. Reportez-vous à la [&#x200B; matrice de compatibilité &#x200B;](../start/compatibility-matrix.md#FederatedDataAccessFDA).
+Les bases de données cloud sont prises en charge. Reportez-vous à la [ matrice de compatibilité ](../start/compatibility-matrix.md#FederatedDataAccessFDA).
 
 >[!NOTE]
 >
