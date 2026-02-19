@@ -6,9 +6,9 @@ role: Developer
 level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 925f8152d28f60f876c5ef4420064fa0d71cdb9d
+source-git-commit: 956b2bf5bb8b08654c039b190c020d80ebea223d
 workflow-type: tm+mt
-source-wordcount: '2887'
+source-wordcount: '2906'
 ht-degree: 67%
 
 ---
@@ -32,15 +32,16 @@ Utilisez cette liste de contrôle pour aligner votre configuration avec les vale
 * [Authentification et session](#authentication-and-session) : utiliser Adobe IMS, politique d’identité forte, délai d’expiration de la session
 * [Sécurité des instances et du réseau](#instance-and-network-security) : place sur la liste autorisée IP, autorisations d’URL, clés GPG par Panneau de Contrôle
 * [Protection des données et des PII](#data-and-pii-protection) : HTTPS, limitation de l’affichage des PII, restriction des mots de passe, protection des pages sensibles
-* [Instructions de codage &#x200B;](#coding-guidelines) : aucun secret codé en dur, validation de l’entrée, SQL paramétré, captchas
+* [Instructions de codage ](#coding-guidelines) : aucun secret codé en dur, validation de l’entrée, SQL paramétré, captchas
 * [Restriction des données](#data-restriction) : limitez l’accès aux champs de mot de passe et de secret dans les comptes externes
 * [Opérationnel et conformité](#operational-and-compliance) : comparez régulièrement cette ligne de base et utilisez le journal d’audit
 
 ### Où trouver ces conseils ? {#public-guidance}
 
-Ces conseils de configuration sécurisée recommandés sont publiés publiquement sur Experience League. Vous pouvez l’utiliser et le partager sans restriction :
+Actuellement, Adobe Campaign ne fournit pas de conseils de configuration sécurisée recommandés dans un format lisible par machine. Vous pouvez utiliser la documentation suivante pour comparer vos paramètres actuels aux paramètres sécurisés par défaut recommandés :
 
 * **Cette page** - [Bonnes pratiques de sécurité de Campaign](#ac-security) (liste de contrôle et sections détaillées)
+* **[Paramètres de Campaign (FAQ)](../start/campaign-faq-comprehensive.md#settings)** - Comparez les paramètres aux paramètres sécurisés par défaut recommandés
 * **[Module complémentaire de sécurité renforcée](enhanced-security.md)** - Intégration CMK sécurisée et tunneling VPN sécurisé
 * **[Prise en main des autorisations](../start/gs-permissions.md)** - Accès et profils de produits
 * **[Limitation de l’affichage des PII](../dev/restrict-pi-view.md)** - Limitation de l’accès aux champs sensibles
