@@ -1,23 +1,23 @@
 ---
-title: Bonnes pratiques relatives à la diffusion
+title: Bonnes pratiques de diffusion
 description: Découvrez les bonnes pratiques lors de la conception et de l’envoi de diffusions avec Adobe Campaign.
 feature: Email, Push, SMS, Direct Mail
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: 096c453f727b461a7b09a47282e186e91ffc847e
+source-git-commit: 7bfe0ac7ba99ebf26844d2cea14a75f32ecb8b74
 workflow-type: tm+mt
 source-wordcount: '3102'
 ht-degree: 94%
 
 ---
 
-# Bonnes pratiques relatives à la diffusion {#delivery-best-practices}
+# Bonnes pratiques de diffusion {#delivery-best-practices}
 
 Découvrez les bonnes pratiques suivantes avec les fonctionnalités de diffusion de Campaign.
 
-## Optimiser votre diffusion {#optimize-delivery}
+## Optimisation de votre diffusion {#optimize-delivery}
 
 Avant même de commencer à créer des diffusions, vous pouvez prendre des mesures pour sécuriser et optimiser le processus d’envoi en amont. La section suivante présente les bonnes pratiques et les procédures recommandées pour optimiser la configuration d’Adobe Campaign.
 
@@ -75,7 +75,7 @@ La maintenance régulière de vos diffusions est essentielle pour optimiser les 
 
 Pour éviter d&#39;envoyer des messages à des adresses invalides, limiter les communications abusives et améliorer la réputation de l&#39;expéditeur ou de l’expéditrice, Adobe recommande de mettre en place un mécanisme de double opt-in pour une confirmation après inscription. Cela vous permet de vous assurer que la personne destinataire est bien à l&#39;origine de l&#39;abonnement.
 
-## Utiliser des modèles {#use-templates}
+## Utilisation de modèles {#use-templates}
 
 Les modèles de diffusion accroissent l’efficacité en offrant des configurations prêtes à l’emploi pour les types d’activité les plus courants. Grâce aux modèles, les spécialistes marketing peuvent déployer plus rapidement de nouvelles campagnes avec une personnalisation minimale. [En savoir plus sur les modèles de diffusion](../send/create-templates.md).
 
@@ -104,6 +104,8 @@ Pour configurer les adresses dans l’interface de Campaign, procédez comme sui
 
 1. Dans le champ **[!UICONTROL Texte de l’adresse de réponse]**, l’adresse de l’expéditeur est utilisée par défaut pour les réponses. Adobe recommande toutefois d’utiliser une adresse réelle existante, comme l’assistance clientèle de votre marque. Ainsi, si un destinataire envoie une réponse, l’assistance clientèle sera en mesure de la traiter.
 
++++
+
 ### Configurer une population témoin {#set-up-control-group}
 
 Une fois que la diffusion est envoyée, vous pouvez comparer le comportement des destinataires exclus à celui des destinataires qui ont reçu la diffusion. Vous pouvez ensuite mesurer l’efficacité de vos campagnes. En savoir plus sur les populations témoins dans [cette section](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group).
@@ -122,17 +124,17 @@ Pour plus d’informations sur les typologies, consultez [cette section](../../a
 
 ### Créer du contenu personnalisé {#perso-content}
 
-Pour personnaliser vos messages, vous pouvez utiliser les données des destinataires stockées dans la base de données ou collectées par le biais du tracking, des pages de destination, des abonnements, etc. Les principes de base de la personnalisation sont présentés dans [cette section](../send/personalize.md).
+Pour personnaliser vos messages, vous pouvez utiliser les données des destinataires stockées dans la base de données ou collectées par le biais du tracking, des landing pages, des abonnements, etc. Les principes de base de la personnalisation sont présentés dans [cette section](../send/personalize.md).
 
 +++ **Lire quelques bonnes pratiques**
 
 * Vérifier vos paramètres de personnalisation : vérifiez que le contenu de votre message est correctement conçu pour éviter toute erreur, qui pourrait être liée à la personnalisation. Une balise de personnalisation Adobe Campaign a toujours la forme suivante : `<%=table.field%>`. L&#39;utilisation incorrecte des paramètres dans les blocs de personnalisation peut entraîner des problèmes. Par exemple, les variables en JavaScript doivent être utilisées comme suit :
 
-  &grave;&grave;
+  ``
   <%
   var brand = "xxx"
   %>
-  &grave;&grave;
+  ``
 
   Pour plus d&#39;informations sur les blocs de personnalisation, consultez [cette section](../send/personalization-blocks.md).
 
@@ -184,7 +186,7 @@ Incluez toujours un lien de page miroir. La partie supérieure de l&#39;e-mail c
 
 Le lien de désabonnement est indispensable. Il doit être visible, valide et le formulaire fonctionnel. Par défaut, lorsque le message est analysé, une [règle de typologie](../../automation/campaign-opt/control-rules.md) intégrée **[!UICONTROL Approbation du lien de désabonnement]** vérifie si un lien d’exclusion a été inclus et génère un avertissement en cas d’absence.
 
-Découvrez comment insérer un lien d&#39;exclusion [dans cette section](../send/personalization-blocks.md).
+Découvrez comment insérer un lien d&#39;opt-out [dans cette section](../send/personalization-blocks.md).
 
 +++ **Appliquer cette bonne pratique**
 
@@ -219,7 +221,7 @@ Par défaut, le nombre de caractère d&#39;un SMS respecte la norme de télépho
 
 * Pour conserver tous les caractères de vos SMS, afin de ne pas altérer les noms propres par exemple, n’activez pas la translittération.
 
-* En revanche, si vos SMS contiennent beaucoup de caractères qui ne sont pas pris en charge par la norme GSM, activez la translittération afin de limiter le coût de vos envois. En savoir plus [dans cette section](../send/sms/smpp-external-account.md#smpp-transliteration).
+* En revanche, si vos SMS contiennent beaucoup de caractères qui ne sont pas pris en charge par la norme GSM, activez la translittération afin de limiter le coût de vos envois. En savoir plus dans [cette section](../send/sms/smpp-external-account.md#smpp-transliteration).
 
 * Vous pouvez appliquer la translittération aux SMS. Celle-ci consiste à remplacer un caractère d’un SMS par un autre lorsque ce caractère n’est pas pris en charge par la norme GSM. Notez que l’insertion de champs de personnalisation dans le contenu du SMS peut introduire des caractères non pris en charge par l’encodage GSM. En tant qu’administrateur ou administratrice Campaign, vous pouvez activer la translittération des caractères en cochant la case correspondante dans l’onglet des paramètres du canal SMPP du **[!UICONTROL compte externe]** correspondant. [En savoir plus](../send/sms/smpp-external-account.md#smpp-transliteration)
 
@@ -238,7 +240,7 @@ To avoid common formatting errors, check the following elements:
 
 * Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../../installation/using/configuring-campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode. 
 
-* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#authentication).-->
+* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).-->
 
 ## Gestion des images {#manage-images}
 
@@ -263,9 +265,9 @@ Essayez de rendre les images réactives et redimensionnables afin de les rendre 
 
 ### Utiliser des références absolues pour l&#39;accès à l&#39;image {#absolute-images}
 
-Pour être accessibles depuis l&#39;extérieur, les images utilisées dans les e-mails et les ressources publiques associées aux opérations doivent être présentes sur un serveur accessible de l&#39;extérieur.
+Pour être accessibles depuis l&#39;extérieur, les images utilisées dans les emails et les ressources publiques associées aux opérations doivent être présentes sur un serveur accessible de l&#39;extérieur.
 
-* Dans l’assistant de diffusion, vous pouvez importer une page HTML contenant des images ou insérer des images directement depuis l’éditeur HTML à l’aide de l’icône **[!UICONTROL Image]**.
+* Depuis l’assistant de diffusion, vous pouvez importer une page HTML contenant des images ou insérer des images directement depuis l’éditeur HTML à partir de l’icône **[!UICONTROL Image]**.
 
 * Si les images ne sont pas affichées, vérifiez qu&#39;elles sont disponibles sur le serveur. Pour ce faire, accédez à l’onglet **Source** de votre diffusion. Recherchez vos images, copiez l&#39;URL de chaque image et collez-la dans un navigateur web. Si les images ne sont toujours pas affichées, contactez votre administrateur ou administratrice informatique ou le fournisseur tiers du contenu de votre diffusion.
 
@@ -328,7 +330,7 @@ Pour garantir votre réputation et assurer une bonne gestion des quarantaines, d
 * [Cas d’utilisation : utilisation de la fonctionnalité de fusion de l’activité Déduplication](../../automation/workflow/deduplication-merge.md).
 
 
-## Effectuer toutes les vérifications avant l’envoi {#perform-all-checks}
+## Effectuer toutes les vérifications avant d’envoyer {#perform-all-checks}
 
 Une fois que votre message est prêt, vérifiez que le contenu s’affiche correctement sur tous les appareils et qu’il ne contient aucune erreur, comme des liens rompus ou une personnalisation incorrecte. Avant d’envoyer votre message, vérifiez également que les paramètres et la configuration sont cohérents par rapport à la diffusion.
 
@@ -418,7 +420,7 @@ Vous pouvez utiliser des règles de typologie pour exclure une partie de la cibl
 
 Vous avez cliqué sur le bouton **Envoyer** ? Voyons maintenant ce qui se passe. Une fois la diffusion envoyée, Adobe Campaign vous permet de conserver une trace des messages envoyés et de découvrir la réaction des destinataires face à votre diffusion. Vous pourrez ainsi améliorer les prochains envois et optimiser vos campagnes suivantes.
 
-## Surveillance des diffusions {#monitoring-deliveries}
+## Surveiller les diffusions {#monitoring-deliveries}
 
 Pour contrôler vos campagnes, vous devez vérifier que le message a bien été délivré à vos destinataires.
 
