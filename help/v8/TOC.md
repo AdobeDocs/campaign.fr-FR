@@ -5,9 +5,9 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: 050612f6d7ab20aed5880454eec9cfc6e5fc18c2
+source-git-commit: 4626d93dea22e0ee458babfd53758c8c63a98ad4
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '840'
 ht-degree: 89%
 
 ---
@@ -30,6 +30,7 @@ ht-degree: 89%
    + [Problèmes connus](start/known-issues.md)
    + [Matrice de compatibilité](start/compatibility-matrix.md)
    + [Mises à jour de la documentation](start/documentation-updates.md)
+   + [Rapport des mises à jour mensuelles](../../monthly-updates-report.md)
 + Commencer {#new}
    + [Prise en main d’Adobe Campaign](start/get-started.md)
    + [Fonctionnalités principales](start/whats-new.md)
@@ -38,10 +39,10 @@ ht-degree: 89%
    + [Composants et processus](start/ac-components.md)
    + [De Campaign Classic v7 à v8](start/v7-to-v8.md)
    + [De Campaign Standard à v8](start/acs-to-v8.md)
-   + [Questions fréquentes](start/campaign-faq-comprehensive.md)
-   + [Questions fréquentes](start/campaign-faq.md)
+   + [Forum aux questions](start/campaign-faq-comprehensive.md)
+   + [Forum aux questions](start/campaign-faq.md)
 + Administration et autorisations {#permissions}
-   + [Prise en main des autorisations](start/gs-permissions.md)
+   + [Commencer avec les autorisations](start/gs-permissions.md)
    + [Gérer les autorisations utilisateur](start/manage-permissions.md)
    + [Ajouter des autorisations aux dossiers](start/folder-permissions.md)
    + [Panneau de contrôle](config/self-service.md)
@@ -56,12 +57,12 @@ ht-degree: 89%
    + E-mails {#emails}
       + [Concevoir et valider des e-mails](send/email.md)
       + [Définition du contenu de l’e-mail](send/defining-the-email-content.md)
-      + [Définition du contenu interactif](send/defining-interactive-content.md)
+      + [Définir le contenu interactif](send/defining-interactive-content.md)
       + [Lien vers la page miroir](send/mirror-page.md)
       + [Ajouter une adresse Cci](send/email-bcc.md)
       + [Définir les paramètres d’e-mail supplémentaires](send/email-parameters.md)
       + [Envoyer et surveiller des e-mails](send/send.md)
-      + [Envoyer des e-mails sur des mobiles japonais](send/sending-emails-on-japanese-mobiles.md)
+      + [Envoi dʼe-mails sur mobiles japonais](send/sending-emails-on-japanese-mobiles.md)
       + [Joindre des fichiers à un e-mail](send/attaching-files.md)
    + SMS {#sms}
       + [Prise en main des SMS](send/sms/sms.md)
@@ -88,18 +89,18 @@ ht-degree: 89%
       + [Configurer vos notifications push avec la collecte de données](send/push-data-collection.md)
    + Autres canaux {#other-channels}
       + [Messagerie LINE](send/line/line.md)
-      + [Courrier](send/direct-mail.md)
+      + [Canal Courrier](send/direct-mail.md)
       + [X (Twitter)](send/twitter.md)
       + [Canal externe personnalisé](send/custom-channel.md)
    + Personnaliser le contenu {#personalize}
-      + [Prise en main de la personnalisation](send/personalize.md)
+      + [Commencer avec la personnalisation](send/personalize.md)
       + [Données de personnalisation](send/personalization-data.md)
       + [Ajouter des champs de personnalisation,](send/personalization-fields.md)
       + [Utiliser les blocs de personnalisation](send/personalization-blocks.md)
       + [Créer des conditions](send/conditions.md)
       + [Coupons personnalisés](send/personalized-coupons.md)
       + [Génération de documents PDF personnalisés](send/generating-personalized-pdf-documents.md)
-      + [Personnalisation de la liste des émoticônes](send/customizing-emoticon-list.md)
+      + [Personnaliser la liste des émoticônes](send/customizing-emoticon-list.md)
    + Valider et envoyer votre diffusion {#validate}
       + [Prévisualiser et créer des BAT](send/preview-and-proof.md)
       + [Analyse des diffusions](send/delivery-analysis.md)
@@ -128,25 +129,25 @@ ht-degree: 89%
    + [Utiliser les audiences](start/audiences.md)
    + [Accès aux profils](audiences/view-profiles.md)
    + [Utilisation des filtres](audiences/create-filters.md)
-   + Ajouter des profils {#add-profiles}
+   + Ajout de profils {#add-profiles}
       + [Création manuelle de profils](audiences/create-profiles.md)
       + [Importer des profils depuis un fichier](audiences/import-profiles.md)
       + [Collecte de données de profil dans des formulaires web](audiences/collect-profiles.md)
       + [Utiliser les mappings de ciblage](audiences/target-mappings.md)
       + [Créer des profils de test](audiences/test-profiles.md)
-   + Créer des audiences {#create-audiences}
+   + Création d’audiences {#create-audiences}
       + [Créer une liste de contacts](audiences/create-audiences.md)
       + [Partager les audiences avec les solutions Adobe](start/shared-audiences.md)
    + [Bonnes pratiques](audiences/audiences-best-practices.md)
    + [Gérer les abonnements](start/subscriptions.md)
 + Pages de destination et Forms {#content}
-   + [Créer des pages de destination](dev/landing-pages.md)
+   + [Créer des landing pages](dev/landing-pages.md)
    + [Concevoir des formulaires et des applications web](dev/webapps.md)
 + Workflows {#workflows}
    + [Commencer avec les workflows](config/workflows.md)
    + [Documentation des workflows >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=fr)
 + Confidentialité et sécurité {#privacy}
-   + [Gérer les demandes d’accès à des informations personnelles](start/privacy.md)
+   + [Gérer les demandes d&#39;accès à des informations personnelles](start/privacy.md)
    + [Directives de sécurité](config/security.md)
    + [Module complémentaire de sécurité améliorée](config/enhanced-security.md)
 + Gestion Des Offres - Interaction {#offers}
@@ -157,9 +158,9 @@ ht-degree: 89%
       + [Création d&#39;opérateurs](interaction/interaction-operators.md)
       + [Création d&#39;environnements](interaction/interaction-env.md)
       + [Création de filtres prédéfinis](interaction/interaction-predefined-filters.md)
-      + [Création d&#39;emplacements](interaction/interaction-offer-spaces.md)
+      + [Création d’emplacements d’offres](interaction/interaction-offer-spaces.md)
    + [Création d&#39;un catalogue d&#39;offres](interaction/interaction-offer-catalog.md)
-   + [Création d&#39;une offre](interaction/interaction-offer.md)
+   + [Création d’une offre](interaction/interaction-offer.md)
    + [Envoyer une offre (sortante)](interaction/interaction-send-offers.md)
    + Présenter une offre (entrante){#inbound}
       + [Contexte](interaction/interaction-present-offers.md)
@@ -180,17 +181,17 @@ ht-degree: 89%
    + Utiliser des rapports{#reports}
       + [Commencer avec les rapports](reporting/gs-reporting.md)
       + Créer des cubes{#cubes}
-         + [Comencer avec les cubes](reporting/gs-cubes.md)
+         + [Prise en main des cubes](reporting/gs-cubes.md)
          + [Créer un cube](reporting/cube-indicators.md)
          + [Utiliser des cubes pour créer des rapports](reporting/cube-tables.md)
          + [Personnaliser vos cubes](reporting/customize-cubes.md)
       + Rapports intégrés{#ac-reports}
          + [Liste des rapports intégrés](reporting/built-in-reports.md)
          + [Rapports globaux](reporting/global-reports.md)
-         + [Rapports de diffusion](reporting/delivery-reports.md)
+         + [Rapports sur les diffusions](reporting/delivery-reports.md)
          + [Calcul des mesures intégrées](reporting/metrics-calculation.md)
       + [Rapports personnalisés](reporting/custom-reports.md)
-+ Gestion des données {#data}
++ Data Management {#data}
    + Interrogation de la base de données {#query}
       + [Utiliser le requêteur](start/query-editor.md)
       + [Requêtes de conception](start/design-queries.md)
@@ -201,7 +202,7 @@ ht-degree: 89%
    + [Connecter des campagnes à d’autres solutions](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
       + [Partager et synchroniser des audiences et des attributs de profil](connect/ac-aep.md)
-      + [Mettre à jour les profils AEP depuis les pages des destination Campaign](connect/ac-aep-landing-pages.md)
+      + [Mettre à jour les profils AEP depuis les landing pages Campaign](connect/ac-aep-landing-pages.md)
    + [Campaign + Journey Optimizer](connect/ac-ajo.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
@@ -225,9 +226,9 @@ ht-degree: 89%
       + [Nouvelles API](architecture/new-apis.md)
       + [Mécanisme d&#39;évaluation des API](architecture/staging.md)
       + [Mécanisme de réplication](architecture/replication.md)
-+ Configuration {#config}
-   + Implémentation {#implement}
-      + [Étapes d&#39;implémentation](start/implement.md)
++ Configuration  {#config}
+   + Mise en œuvre {#implement}
+      + [Étapes dʼimplémentation](start/implement.md)
       + [Personnaliser votre instance](dev/customize.md)
       + [Bonnes pratiques relatives au modèle de données](dev/datamodel-best-practices.md)
    + Paramètres       {#settings}
@@ -248,9 +249,9 @@ ht-degree: 89%
       + [Mapping de la base de données](dev/database-mapping.md)
       + [Gestion des clés](dev/database-keys.md)
       + [Gestion des liens](dev/database-links.md)
-      + [Limiter l’affichage des PI](dev/restrict-pi-view.md)
+      + [Limitation de l&#39;affichage des PI](dev/restrict-pi-view.md)
       + [Utilisation d’une table des destinataires personnalisée](dev/custom-recipient.md)
-      + [Mise à jour de la base de données](dev/update-database-structure.md)
+      + [mettre à jour la base de données.](dev/update-database-structure.md)
       + [Formulaires de saisie](dev/forms.md)
    + [Utiliser les packages de données](dev/packages.md)
    + [API Campaign](dev/api.md)
