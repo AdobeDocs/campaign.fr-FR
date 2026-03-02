@@ -5,10 +5,10 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 776a0e5eead9161b7e2c9d7746c72cba42ea42cb
+source-git-commit: d18c876de44b367c79abb04a65fce0698ff6ff78
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 67%
+source-wordcount: '1643'
+ht-degree: 56%
 
 ---
 
@@ -101,7 +101,7 @@ Le compte externe de type **Base de données externe** permet d’établir la co
 >
 >Les bases de données externes compatibles avec Adobe Campaign v8 sont répertoriées dans la [matrice de compatibilité](../start/compatibility-matrix.md). Les connexions FDA utilisent les pilotes ODBC. Avec Adobe Campaign Managed Cloud Services, la configuration du pilote ODBC et du compte externe est configurée par Adobe.
 
-Les paramètres de configuration du compte externe dépendent du moteur de base de données. Avec Adobe Campaign Managed Cloud Services, la configuration des comptes externes est effectuée par Adobe. En savoir plus sur cette configuration dans la documentation de [Adobe Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
+Les paramètres de configuration du compte externe dépendent du moteur de base de données. Avec Adobe Campaign Managed Cloud Services, la configuration des comptes externes est effectuée par Adobe. En savoir plus sur cette configuration dans la documentation de [Adobe Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
 
 #### Compte externe des briques de données {#databricks-external-accounts}
 
@@ -115,6 +115,40 @@ Pour configurer l’authentification OAuth2 via le principal de service dans Cam
 2. Dans Adobe Campaign, créez ou modifiez un compte externe Databricks et ouvrez l’onglet **OAuth** .
 3. Collez les informations d’identification dans les champs de l’onglet OAuth du compte externe Blocs de données .
 4. Utilisez **[!UICONTROL Tester la connexion]** pour valider la configuration.
+
+#### Compte externe Snowflake {#snowflake-external-accounts}
+
+La connexion FDA Snowflake utilise le pilote ODBC Snowflake. À compter de Campaign v8.9.1, les comptes externes Snowflake prennent en charge l’authentification OAuth2, fournissant une authentification sécurisée pour l’accès aux données fédérées.
+
+En savoir plus sur OAuth dans Snowflake dans la documentation de Snowflake [](https://docs.snowflake.com/en/user-guide/oauth-intro){target="_blank"}.
+
+Tout d’abord, procédez comme suit sur Snowflake :
+
+1. Avant de configurer votre compte externe Snowflake à l’aide d’OAuth 2.0, vous devez d’abord créer une intégration de sécurité OAuth dans Snowflake. Le rôle **ACCOUNTADMIN** est requis pour créer l’intégration de sécurité.
+
+   En savoir plus sur la création de l’intégration de sécurité OAuth dans la documentation de Snowflake [](https://docs.snowflake.com/en/sql-reference/sql/create-security-integration-oauth-snowflake){target="_blank"}.
+
+1. Vous pouvez ensuite interroger l’ID client et le secret client à l’aide de :
+
+   ```
+   select system$show_oauth_client_secrets('OAUTH_INTEGRATION_ABC'); // use uppercase letters
+   ```
+
+Pour configurer l’authentification OAuth2 dans Campaign, procédez comme suit :
+
+1. Dans Adobe Campaign, créez ou modifiez un compte externe Snowflake et cochez l’option **[!UICONTROL Utiliser OAuth 2.0]** .
+
+1. Définissez le serveur, la base de données et le schéma , puis ouvrez l’onglet **[!UICONTROL OAuth]** .
+
+1. Définissez les paramètres d’intégration de sécurité **[!UICONTROL ID client]**, **[!UICONTROL Secret client]** et **[!UICONTROL URL de redirection]**. Ces paramètres sont obtenus à partir de votre intégration de sécurité OAuth Snowflake. Consultez la documentation de [Snowflake](https://docs.snowflake.com/en/user-guide/oauth-custom){target="_blank"}.
+
+1. Cliquez sur **[!UICONTROL Continuer pour vous connecter]** pour effectuer une connexion manuelle. Une nouvelle fenêtre de navigateur s’ouvre, dans laquelle vous êtes invité à saisir vos informations d’identification d’utilisateur Snowflake.
+
+1. Une fois le processus d’authentification terminé, le compte est authentifié pendant le nombre de jours définis dans votre intégration de sécurité OAuth Snowflake (à l’aide du paramètre `OAUTH_REFRESH_TOKEN_VALIDITY` ). Le jeton d’actualisation est stocké dans le compte externe.
+
+>[!CAUTION]
+>
+>Notez que l&#39;URL de redirection doit toujours cibler les `oauth.jsp` sur votre ordinateur serveur applicatif Campaign via HTTPS (port 443). En outre, les domaines de serveur avec des traits de soulignement ne sont pas pris en charge lors de l’utilisation d’OAuth. Utilisez des domaines de serveur sans traits de soulignement lorsque l’intention est d’utiliser OAuth.
 
 ### X (anciennement Twitter) {#twitter-external-account}
 
