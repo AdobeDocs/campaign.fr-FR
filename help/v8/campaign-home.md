@@ -3,7 +3,7 @@ keywords: Campaign Classic;accueil;thèmes populaires
 description: Trouvez de l’aide dans le centre d’aide d’Adobe Campaign v8. Découvrez les nouveautés, améliorations et correctifs de Campaign v8.
 title: Documentation du produit Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
+source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 90%
@@ -18,18 +18,18 @@ Découvrez les dernières améliorations apportées à Adobe Campaign v8 (cons
 
 >[!BEGINTABS]
 
->[!TAB La version 8.8 de Campaign est en ligne]
+>[!TAB La version 8.9 de Campaign est en ligne]
 
 La dernière version d’Adobe Campaign est désormais en ligne. Pour plus d’informations, lisez les notes de mise à jour.
 
-[![image](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md)
+[![Image](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md)
 
 
 >[!TAB Nouvelle interface utilisateur web de Campaign]
 
 Découvrez la nouvelle interface utilisateur d’Adobe Campaign. Plus moderne, intuitive et dynamique.
 
-[![image](assets/do-not-localize/learn-more-button.svg)](start/campaign-ui.md#ac-web-ui)
+[![Image](assets/do-not-localize/learn-more-button.svg)](start/campaign-ui.md#ac-web-ui)
 
 <!--
 >[!TAB Push channel upcoming changes] 
@@ -60,7 +60,7 @@ Some important changes to the Android Firebase Cloud Messaging (FCM) service wil
     </div></td>
     <td>
     <a href="audiences/create-profiles.md"><img src="assets/do-not-localize/start-profiles.png"></a>
-    <div><strong>Importer des profils</strong><br/> Explorez avec facilité la création de profils dans la base de données Adobe Campaign v8. Ajoutez des profils manuellement ou en les important, affinez les données client et personnalisez les campagnes en un tour de main.</div>
+    <div><strong>Importer des profils</strong><br/> Explorez avec facilité la création de profils dans la base de données Adobe Campaign v8. Ajoutez des profils manuellement ou importez-les, affinez les données client et personnalisez vos campagnes en toute facilité.</div>
     </td>
   </tr>
   <tr style="border: 0;">
@@ -71,7 +71,7 @@ Some important changes to the Android Firebase Cloud Messaging (FCM) service wil
     </tr>
 </table>
 
-## Parcourir la documentation
+## Accéder à la documentation
 
 <table style="table-layout:auto">
   <tr style="border: 0;">
@@ -112,5 +112,5 @@ Some important changes to the Android Firebase Cloud Messaging (FCM) service wil
 
 ## Autres ressources
 
-[Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Documentation de l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=fr){target="_blank"} - [Tutoriels](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=fr){target="_blank"} - [[!DNL Adobe Campaign] Guide d’automatisation &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=fr){target="_blank"} - [Panneau de contrôle de Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"}
+[Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Documentation de l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=fr){target="_blank"} - [Tutoriels](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=fr){target="_blank"} - [[!DNL Adobe Campaign] Guide d’automatisation ](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=fr){target="_blank"} - [Panneau de contrôle de Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"}
 

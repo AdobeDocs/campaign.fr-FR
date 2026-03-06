@@ -5,9 +5,9 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: 4626d93dea22e0ee458babfd53758c8c63a98ad4
+source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '842'
 ht-degree: 89%
 
 ---
@@ -66,6 +66,7 @@ ht-degree: 89%
       + [Joindre des fichiers à un e-mail](send/attaching-files.md)
    + SMS {#sms}
       + [Prise en main des SMS](send/sms/sms.md)
+      + [Connecteurs SMS](send/sms/sms-connectors.md)
       + [Caractéristiques du canal SMS](send/sms/sms-channel.md)
       + [Créer une diffusion SMS](send/sms/create-sms.md)
       + [Définir le contenu](send/sms/sms-content.md)

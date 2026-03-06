@@ -5,20 +5,14 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 exl-id: c4d500ef-2339-491f-9ae2-9bfaf72088a9
-source-git-commit: ea51863bdbc22489af35b2b3c81259b327380be4
+source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 95%
+source-wordcount: '791'
+ht-degree: 100%
 
 ---
 
 # Paramètres de diffusion SMS {#sms-settings}
-
->[!AVAILABILITY]
->
->Cette fonctionnalité est disponible dans tous les environnements FDA Campaign. Il n’est **pas** disponible pour les déploiements Campaign FFDA. Cette documentation s’applique à Adobe Campaign v8.7.2 et versions ultérieures. Pour passer de l’ancien au nouveau connecteur SMS, reportez-vous à cette [note technique](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
->
->Pour les versions plus anciennes, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 Les paramètres techniques nécessaires à une diffusion SMS sont les suivants :
 

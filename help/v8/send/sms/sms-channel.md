@@ -5,20 +5,14 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: abab6f15-43ea-42fc-817b-8dbd88df82f7
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 97%
+source-wordcount: '1343'
+ht-degree: 100%
 
 ---
 
 # Caractéristiques du canal SMS {#sms-channel}
-
->[!AVAILABILITY]
->
->Cette fonctionnalité est disponible dans tous les environnements FDA Campaign. Il n’est **pas** disponible pour les déploiements Campaign FFDA. Cette documentation s’applique à Adobe Campaign v8.7.2 et versions ultérieures. Pour passer de l’ancien au nouveau connecteur SMS, reportez-vous à cette [note technique](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
->
->Pour les versions plus anciennes, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 ## Types de SMS {#sms-types}
 
@@ -26,7 +20,7 @@ Lorsque vous enverrez des SMS par l’intermédiaire d’un fournisseur de servi
 
 * **SMS MT (Mobile Terminated)** : il s’agit d’un SMS émis par Adobe Campaign vers les téléphones portables par l’intermédiaire du fournisseur SMPP.
 * **SMS MO (Mobile Originated)** : il s’agit d’un SMS envoyé par un téléphone mobile à Adobe Campaign par l’intermédiaire du fournisseur SMPP.
-* **SMS SR (Status Report) ou DR ou DLR (Delivery Receipt)** : il s’agit d’un accusé de réception envoyé par le téléphone mobile à Adobe Campaign par l’intermédiaire du fournisseur SMPP indiquant que le SMS a été reçu. Adobe Campaign peut également recevoir des SR indiquant que le message n’a pas pu être remis, souvent avec une description de l’erreur.
+* **SMS SR (Status Report) ou DR ou DLR (Delivery Receipt)** : il s’agit d’un accusé de réception envoyé par le téléphone mobile à Adobe Campaign par l’intermédiaire du fournisseur SMPP indiquant que le SMS a été reçu. Adobe Campaign peut également recevoir des SR indiquant que le message n&#39;a pas pu être remis, souvent avec une description de l&#39;erreur.
 
 Vous devez faire la distinction entre les accusés de réception (PDU RESP, partie du protocole SMPP) et les SR. Un SR est un type de SMS qui est envoyé par le réseau de bout en bout, alors qu’un accusé de réception n’est qu’une confirmation de la réussite d’un transfert.
 
@@ -37,7 +31,7 @@ Les accusés de réception et les SR peuvent déclencher des erreurs, la distinc
 Un SMS contient plus d&#39;informations que de texte. Voici une liste de ce que vous pouvez vous attendre à trouver dans un SMS :
 
 * Le texte, qui est limité à 140 octets, ce qui signifie entre 70 et 160 caractères selon l&#39;encodage. Voir [Encodage du texte SMS](#sms-text-encoding) ci-dessous pour plus de détails et pour connaître les limitations.
-* Adresse de la personne destinataire, parfois appelée ADC ou MSISDN (le nom technique pour « numéro de téléphone »). C’est le numéro du mobile qui recevra le SMS.
+* Adresse de la personne destinataire, parfois appelée ADC ou MSISDN (le nom technique pour « numéro de téléphone »). C&#39;est le numéro du mobile qui recevra le SMS.
 * Adresse de l’expéditeur ou de l’expéditrice, souvent appelée oADC, peut aussi être désignée sous le terme d’ID d’expéditeur ou d’expéditrice. Il peut s’agir d’un numéro de téléphone (pour un usage courant), d’un code court (lorsqu’il est envoyé par l’intermédiaire d’un fournisseur) ou d’un nom (il s’agit d’une fonctionnalité en option, dans ce cas, vous ne pouvez pas répondre au SMS).
 * Un indicateur permettant de savoir si le message est un message Flash (un message Flash est une fenêtre contextuelle qui n’est pas stockée en mémoire).
 * Indicateur indiquant si un SR est attendu ou non.
@@ -56,11 +50,11 @@ Les messages SMS utilisent un encodage spécial de 7 bits, souvent appelé enco
 
 Dans le protocole SMPP, le texte GSM7 sera étendu à 8 bits par caractère pour faciliter le résolution des problèmes. La SMSC le compresse en 7 bits par caractère avant de l&#39;envoyer au mobile. Cela signifie que le champ short_message du SMS peut comporter jusqu’à 160 octets dans le cadre SMPP, alors qu’il est limité à 140 octets lorsqu’il est envoyé sur le réseau mobile (le bit le plus important est simplement supprimé).
 
-En cas de problème d’encodage, voici quelques éléments importants à vérifier :
+En cas de problème d&#39;encodage, voici quelques éléments importants à vérifier :
 * Assurez-vous d’abord de bien identifier quels caractères appartiennent à quel encodage. Le GSM7 est souvent critiqué pour sa gestion imparfaite des accents et autres signes diacritiques. Surtout en français, où &quot;é&quot; et &quot;è&quot; font partie de GSM7, mais &quot;ê&quot;, &quot;â&quot; ou &quot;ï&quot; non. Il en va de même pour l&#39;espagnol.
 * Le C avec cédille (ç) n’est présent que dans les majuscules de l’alphabet GSM7, mais certains téléphones le rendent en minuscules ou « smart » : la recommandation générale est de l’éviter complètement et de supprimer la cédille (le texte reste tout à fait compréhensible en français) ou de passer au système UCS-2.
 * **Évitez d’utiliser le format ASCII dans les SMS.** sauf requête explicite du fournisseur SMPP : cet encodage réduit l’espace car il contient des caractères 8 bits et une couverture inférieure à celle de GSM7. Cet encodage peut être requis pour les réseaux CDMA (utilisés en Amérique du Nord).
-* Latin-1 n’est pas toujours pris en charge. Vérifiez la compatibilité avec votre fournisseur SMSC avant de tenter d’utiliser Latin-1.
+* Latin-1 n&#39;est pas toujours pris en charge. Vérifiez la compatibilité avec votre fournisseur SMSC avant de tenter d’utiliser Latin-1.
 * Les tableaux de conversion de langue nationale ne sont pas pris en charge par le connecteur Adobe Campaign. Vous devez utiliser UCS-2 ou un autre data_coding à la place.
 * UCS-2 et UTF-16 sont souvent mélangés par les téléphones. Il s’agit d’un problème pour les personnes envoyant des émoticônes et autres caractères peu utilisés, non présents dans UCS-2.
 * Certains téléphones plus anciens ne contiennent pas de glyphes de police pour tous les caractères UCS-2. Les smartphones les plus récents sont généralement capables d’afficher des caractères rares assez facilement, les smartphones plus anciens manquent souvent d’émojis et les très anciens téléphones fonctionnels ont généralement un support limité à ce qui est utile dans la langue maternelle du pays dans lequel ils ont été achetés. Si vous voulez utiliser un emoji ou ASCII-art, testez-le sur un large éventail de téléphones avant de procéder à l’envoi. L’aperçu Campaign ne simule pas les glyphes manquants et affiche les symboles disponibles dans le navigateur Web dans laquel il s’affiche.
