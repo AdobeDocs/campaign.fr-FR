@@ -24,13 +24,13 @@ L’ancien connecteur SMS est le connecteur SMS basé sur le MTA utilisé dans l
 
 Pour savoir comment bénéficier du connecteur v2, reportez-vous à la section [Activation](#activation).
 
-Pour plus d’informations sur la configuration et l’utilisation de l’ancien connecteur SMS, consultez la documentation de Campaign Classic [](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
+Pour plus d’informations sur la configuration et l’utilisation de l’ancien connecteur SMS, consultez la documentation de Campaign Classic [&#128279;](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 ## Connecteur SMS v2 {#sms-connector-v2}
 
 Disponible dans GA à partir de la version 8.9.1, le connecteur v2 active les connexions SMPP en mode émetteur-récepteur, les connexions SMPP persistantes et assure une meilleure compatibilité. Un compte externe SMS dédié est disponible pour toutes les implémentations SMS utilisant le connecteur v2.
 
-Le connecteur v2 est activé par défaut pour les nouvelles installations. Si vous avez effectué une mise à niveau à partir d’une version précédente à l’aide de l’ancien connecteur, vous devez contacter votre représentant Adobe pour passer au connecteur v2. Pour plus d&#39;informations, consultez la section [ Activation ](#activation) .
+Le connecteur v2 est activé par défaut pour les nouvelles installations. Si vous avez effectué une mise à niveau à partir d’une version précédente à l’aide de l’ancien connecteur, vous devez contacter votre représentant Adobe pour passer au connecteur v2. Pour plus d&#39;informations, consultez la section [&#x200B; Activation &#x200B;](#activation) .
 
 Pour savoir comment utiliser le connecteur SMS v2 dans Campaign v8, reportez-vous à la [documentation SMS](sms.md).
 
