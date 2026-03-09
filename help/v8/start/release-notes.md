@@ -3,9 +3,9 @@ title: Notes de mise à jour de Campaign v8
 description: Dernière version de Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: d18c876de44b367c79abb04a65fce0698ff6ff78
+source-git-commit: 3ce922319646fae03ad7f6757ffdd94804120144
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '1076'
 ht-degree: 18%
 
 ---
@@ -13,6 +13,24 @@ ht-degree: 18%
 # Dernières versions {#latest-release}
 
 Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs des **dernières versions** de Campaign v8 (console). Pour en savoir plus sur les publications, les versions et les mises à niveau de Campaign, consultez [cette page](upgrades.md). Les autres versions sont répertoriées dans la section Versions précédentes de cette documentation.
+
+## Version 8.9.2 {#release-8-9-2}
+
+9 _2026_
+
+>[!CAUTION]
+>
+> La mise à niveau de la console cliente est obligatoire. Découvrez comment mettre à niveau votre console cliente sur cette [page](../start/connect.md#upgrade-ac-console).
+
+### Améliorations de la sécurité {#security-8-9-2}
+
+* Pour maintenir une sécurité, une stabilité et une conformité optimales, toutes les instances ont été mises à niveau vers Debian 13 et PostgreSQL 17.
+
+### Correctifs {#fixes-8-9-2}
+
+* Correction d’un problème où les dates d’événement dans les événements transactionnels étaient incorrectement définies en raison d’un problème de conversion de type de données, ce qui provoquait des dates incorrectes dans les rapports dynamiques. (NEO-93923)
+* Correction d’un problème en raison duquel les notifications push silencieuses d’Android et d’iOS échouaient lors de la préparation de la diffusion lorsque les champs de titre et de corps étaient vides. (NEO-93739)
+* Correction d’un problème qui empêchait la capture du champ de langue pour les jetons d’enregistrement de l’application Android en raison de clés de réconciliation incorrectes. (NEO-93100)
 
 ## Version 8.9.1 {#release-8-9-1}
 
@@ -28,14 +46,14 @@ Le **nouveau connecteur d&#39;envoi de SMS** est désormais disponible pour tous
 
 Cette version est fournie avec un ensemble de fonctionnalités disponibles dans l’interface utilisateur web de Campaign :
 
-* [Fonctionnalités de diffusion multilingue (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=fr){target="_blank"}
-* [Enrichissement du profil dans les messages transactionnels (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=fr){target="_blank"}
-* [Adobe Experience Manager Live et copies de langue](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=fr){target="_blank"}
-* [Expériences de contenu - Tests AB](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=fr){target="_blank"}
-* [Activité de diffusion au fil de l&#39;eau](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=fr){target="_blank"}
-* [Gestion de la validation des campagnes](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=fr){target="_blank"}
+* [Fonctionnalités de diffusion multilingue (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [Enrichissement du profil dans les messages transactionnels (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Adobe Experience Manager Live et copies de langue](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [Expériences de contenu - Tests AB](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [Activité de diffusion au fil de l&#39;eau](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [Gestion de la validation des campagnes](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
-Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Campaign [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}
+Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Campaign [](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}
 
 ### Améliorations de la sécurité {#security-8-9-1}
 
