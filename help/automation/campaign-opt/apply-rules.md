@@ -4,7 +4,7 @@ title: Application de règles de typologie
 description: Découvrez comment appliquer des règles de typologie
 feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 96%
@@ -134,7 +134,8 @@ Vous pouvez utiliser le champ **[!UICONTROL Gestion des affinités avec les adre
 >La gestion des affinités ne s&#39;applique pas pour les typologies de type **[!UICONTROL Filtrage]**.
 
 <!--
->Affinities are defined in the instance configuration file, on the Adobe Campaign server. For more on this, refer to [this section](../../installation/using/about-initial-configuration.md).-->
+>Affinities are defined in the instance configuration file, on the Adobe Campaign server. For more on this, refer to [this section](../../installation/using/about-initial-configuration.md).
+-->
 
 ### Campaign Optimization et le Marketing Distribué {#campaign-optimization-and-distributed-marketing}
 

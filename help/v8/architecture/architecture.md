@@ -5,7 +5,7 @@ feature: Architecture, Deployment
 role: Developer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 7465cacc74b8b7df38c5eb10d2928749c70a87ea
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 84%
@@ -92,9 +92,11 @@ Pour que les comptes externes partagés soient le compte par défaut pour l’en
 
 1. Enregistrez vos modifications. Toutes les diffusions envoyées à l’aide du modèle utilisent désormais le mode de routage partagé par défaut.
 
-<!--In addition, you can select split external accounts as the default routing provider for all future delivery templates. To do this, change the value of the **[!UICONTROL xtkoption NmsBroadcast_DefaultProvider]** option to the name of the split account.
+<!--
+In addition, you can select split external accounts as the default routing provider for all future delivery templates. To do this, change the value of the **[!UICONTROL xtkoption NmsBroadcast_DefaultProvider]** option to the name of the split account.
 
-![](assets/split-default-options.png) -->
+![](assets/split-default-options.png)
+-->
 
 ## Architecture de Message Center{#transac-msg-archi}
 
@@ -114,7 +116,7 @@ Dans cette architecture spécifique, la cellule d&#39;exécution est séparée d
 
 >[!CAUTION]
 >
->L&#39;instance de pilotage et la ou les instance(s) d&#39;exécution doivent être installées sur des machines différentes. Elles ne peuvent pas partager la même instance Campaign.
+>L&#39;instance de contrôle et la ou les instances d&#39;exécution doivent être installées sur des machines différentes. Elles ne peuvent pas partager la même instance Campaign.
 
 ![](assets/messagecenter_diagram.png)
 

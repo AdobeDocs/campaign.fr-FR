@@ -5,7 +5,7 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: a05b1d7d9b35f8d9189046fd4288d0b80f30967a
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1238'
 ht-degree: 99%
@@ -72,7 +72,7 @@ Pour insérer des balises de personnalisation dans le corps d&#39;un message ema
 
 ## Test du modèle de message transactionnel {#test-message-template}
 
-### Ajouter des adresses de contrôle{#add-seeds}
+### Ajout d’adresses de contrôle{#add-seeds}
 
 Une adresse de contrôle vous permet d&#39;afficher une prévisualisation de votre message, d&#39;envoyer un BAT et de tester la personnalisation du message avant l&#39;envoi. Les adresses de contrôle sont liées à la diffusion et ne peuvent pas être utilisées pour d&#39;autres diffusions.
 
@@ -82,11 +82,11 @@ Une adresse de contrôle vous permet d&#39;afficher une prévisualisation de vot
 
 1. Attribuez-lui un libellé afin de faciliter la sélection ultérieurement, puis saisissez l&#39;adresse de contrôle (e-mail ou téléphone portable selon le canal de communication).
 
-1. Renseignez l&#39;identifiant externe : ce champ optionnel vous permet de renseigner la clé métier (identifiant unique, nom + e-mail, etc.), commune à toutes les applications de votre site web, que vous utilisez pour identifier vos profils. Si ce champ est aussi présent dans la base marketing Adobe Campaign, vous pourrez alors réconcilier un événement avec un profil en base.
+1. Renseignez l&#39;identifiant externe : ce champ optionnel vous permet de renseigner la clé métier (identifiant unique, nom + email, etc.), commune à toutes les applications de votre site web, que vous utilisez pour identifier vos profils. Si ce champ est aussi présent dans la base marketing Adobe Campaign, vous pourrez alors réconcilier un évènement avec un profil en base.
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. Insérez les données de test. [En savoir plus sur les données de personnalisation dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
+1. Insérez les données de test. [En savoir plus sur les données de personnalisation dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
 
    ![](assets/messagecenter_create_custo_3.png)
 
@@ -99,14 +99,13 @@ Une adresse de contrôle vous permet d&#39;afficher une prévisualisation de vot
 Une fois les adresses créées, vous pouvez accéder à la prévisualisation et à la personnalisation.
 
 <!--
-
 ### Add personalization data{#personalization-data}
 
 You can add data in the message template to test transactional message personalization. This will allow you to generate a preview or send a proof. If you install the **Deliverability** module, this data allows you to display a rendering of the messages for various desktop, web or mobile clients.
 
 The purpose of this data is to test your messages before their final delivery. These messages do not coincide with actual data to be processed by Message Center.
 
-However, the XML structure must be identical to that of the event stored in the execution instance, as shown below. 
+However, the XML structure must be identical to that of the event stored in the execution instance, as shown below.
 
 ![](assets/messagecenter_create_custo_4.png)
 
@@ -175,11 +174,13 @@ Une fois les BAT envoyés, vous devez redéfinir le routage sur la diffusion e-m
 
 Lorsque le modèle de message créé<!-- on the control instance--> est terminé, vous pouvez le publier, ce qui vous permettra d’envoyer des messages liés à des événements temps réel et par lots.
 
-<!--This process will also publish it on all execution instances.
+<!--
+This process will also publish it on all execution instances.
 
 NOTE: When publishing transactional message templates, typology rules are also automatically published on the execution instances.
 
-Publication lets you automatically create two message templates on the execution instances, which will allow you to send messages linked to real-time and batch events.-->
+Publication lets you automatically create two message templates on the execution instances, which will allow you to send messages linked to real-time and batch events.
+-->
 
 >[!CAUTION]
 >
@@ -209,7 +210,7 @@ Une fois qu’un modèle est publié, si l’événement correspondant est décl
 
 Une fois qu’un modèle de message est publié <!--on the execution instances-->, il peut être dépublié.
 
-* En effet, un modèle publié peut toujours être appelé si l&#39;événement correspondant est déclenché : si vous n&#39;utilisez plus de modèle de message, il est recommandé de le dépublier. Vous éviterez ainsi d&#39;envoyer par erreur un message transactionnel indésirable.
+* En effet, un modèle publié peut toujours être appelé si l&#39;événement correspondant est déclenché : si vous n’utilisez plus de modèle de message, il est recommandé de le dépublier. Vous éviterez ainsi d&#39;envoyer par erreur un message transactionnel indésirable.
 
   Par exemple, vous avez publié un modèle de message utilisé uniquement pour les campagnes de Noël. Vous pouvez le dépublier une fois la période de Noël terminée et le publier de nouveau l&#39;année suivante.
 

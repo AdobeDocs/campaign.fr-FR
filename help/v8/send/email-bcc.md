@@ -6,8 +6,8 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
+workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
 
@@ -18,7 +18,8 @@ ht-degree: 100%
 <!--
 >[!NOTE]
 >
->This capability is available starting Campaign v8.3. To check your version, refer to [this section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)-->
+>This capability is available starting Campaign v8.3. To check your version, refer to [this section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+-->
 
 ## À propos de la mise en copie Cci des e-mails {#gs-bcc}
 
@@ -26,7 +27,7 @@ Vous pouvez configurer Adobe Campaign pour conserver une copie des e-mails envo
 
 >[!CAUTION]
 >
->Pour des raisons de confidentialité, les e-mails en Cci doivent être traités dans un système d’archivage capable de stocker en toute sécurité les informations d’identification personnelles (PII).
+>Pour des raisons de confidentialité, les emails en Cci doivent être traités dans un système d&#39;archivage capable de stocker en toute sécurité les informations d&#39;identification personnelles (PII).
 
 Adobe Campaign ne gère pas les fichiers archivés. Les fichiers .eml correspondant aux e-mails envoyés peuvent ensuite être transférés vers un serveur distant, tel qu’un serveur de messagerie SMTP.
 
@@ -55,7 +56,7 @@ Une copie de tous les messages envoyés pour chaque diffusion basée sur ce mod�
 
 Lors de l’utilisation de la fonctionnalité de mise en copie Cci des e-mails avec Adobe Campaign, ces mécanismes de sécurisation et recommandations s’appliquent :
 
-* Vous ne pouvez utiliser qu’une seule adresse e-mail en Cci.
+* Vous ne pouvez utiliser qu&#39;une seule adresse email en Cci.
 
 * Vérifiez que l’adresse en Cci dispose de suffisamment de capacité pour archiver tous les e-mails envoyés.
 

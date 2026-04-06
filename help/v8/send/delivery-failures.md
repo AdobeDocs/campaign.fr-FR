@@ -6,7 +6,7 @@ role: User
 level: Beginner, Intermediate
 version: Campaign v8, Campaign Classic v7
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 57e177dc6c30502f2ed3bb08b18586fa5399e89c
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '3464'
 ht-degree: 87%
@@ -57,11 +57,13 @@ Ces types d&#39;erreurs sont gérés comme suit :
 >
 >En tant qu’utilisateur de Managed Cloud Services, la configuration de la boîte de réception de rebonds est réalisée par Adobe.
 
-## Qualification des e-mails rebonds {#bounce-mail-qualification}
+## Qualification des e-mails rejetés {#bounce-mail-qualification}
 
-<!--NO LONGER WITH MOMENTUM - Rules used by Campaign to qualify delivery failures are listed in the **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** node. It is non-exhaustive, and is regularly updated by Adobe Campaign and can also be managed by the user.
+<!--
+NO LONGER WITH MOMENTUM - Rules used by Campaign to qualify delivery failures are listed in the **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** node. It is non-exhaustive, and is regularly updated by Adobe Campaign and can also be managed by the user.
 
-![](assets/delivery-log-qualification.png)-->
+![](assets/delivery-log-qualification.png)
+-->
 
 Actuellement, le traitement de la qualification des e-mails rejetés dans Adobe Campaign dépend du type d’erreur :
 
@@ -69,14 +71,15 @@ Actuellement, le traitement de la qualification des e-mails rejetés dans Adobe�
 
 * **Erreurs asynchrones** : les règles utilisées par Campaign pour qualifier les diffusions en échec asynchrones sont répertoriées dans le nœud **[!UICONTROL Administration > Gestion de campagne > Gestion des échecs > Qualification des logs de diffusion]**. Les retours asynchrones sont qualifiés par le processus inMail grâce aux règles **[!UICONTROL E-mail entrant]**.
 
-<!--NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
+<!--
+NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
 
 ![](assets/delivery-log-first-txt.png)
 
 Adobe Campaign filters this message to delete the variable content (such as IDs, dates, email addresses, phone numbers, etc.) and displays the filtered result in the **[!UICONTROL Text]** column. The variables are replaced with **`#xxx#`**, except addresses that are replaced with **`*`**.
 
 This process allows to bring together all failures of the same type and avoid multiple entries for similar errors in the Delivery log qualification table.
-  
+
 >[!NOTE]
 >
 >The **[!UICONTROL Number of occurrences]** field displays the number of occurrences of the message in the list. It is limited to 100 000 occurrences. You can edit the field, if you want, for example, to reset it.
@@ -91,7 +94,8 @@ Bounce mails can have the following qualification status:
 
 >[!NOTE]
 >
->In case of an outage of an ISP, emails sent through Campaign will be wrongly marked as bounces. To correct this, you need to update bounce qualification.-->
+>In case of an outage of an ISP, emails sent through Campaign will be wrongly marked as bounces. To correct this, you need to update bounce qualification.
+-->
 
 
 ## Gestion des reprises {#retries}
@@ -112,7 +116,7 @@ Par exemple, si la période de validité est définie sur la valeur par défaut 
 
 Une fois qu’un message figure dans la file d’attente du MTA depuis 3,5 jours et qu’il n’a pas été diffusé, il expire et son statut est mis à jour de **[!UICONTROL Envoi]** à **[!UICONTROL Échec]** dans les logs de diffusion.
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## Types d&#39;erreur e-mail {#email-error-types}
@@ -199,7 +203,7 @@ Pour le canal e-mail, les raisons possibles d&#39;un échec de diffusion sont r�
    <td> Boîte pleine </td> 
    <td> Soft </td> 
    <td> 5 </td> 
-   <td> La boîte de messagerie de l'utilisateur est pleine et ne peut plus accepter d'autres messages. Ce profil sera ciblé de nouveau jusqu'à ce que le nombre d'erreurs atteigne 5. Une fois ce chiffre atteint, l'enregistrement sera défini sur le statut Quarantaine et aucune autre reprise ne sera effectuée.<br /> Ce type d'erreur est géré par un processus de nettoyage, l'adresse est défini sur un statut valide au bout de 30 jours.<br /> Avertissement : pour que l'adresse soit automatiquement retirée de la liste des adresses en quarantaine, le workflow technique Nettoyage de la base de données doit être démarré.<br /> </td> 
+   <td> La boîte aux lettres de cet utilisateur est pleine et ne peut pas accepter d’autres messages. Ce profil sera ciblé de nouveau jusqu’à ce que le nombre d’erreurs atteigne 5. Ensuite, l’enregistrement sera défini sur le statut Quarantaine et aucune autre reprise ne sera effectuée.<br /> Ce type d'erreur est géré par un processus de nettoyage, l'adresse est défini sur un statut valide au bout de 30 jours.<br /> Avertissement : pour que l'adresse soit automatiquement retirée de la liste des adresses en quarantaine, le workflow technique Nettoyage de la base de données doit être démarré.<br /> </td> 
   </tr> 
   <tr> 
    <td> Non connecté </td> 
@@ -418,7 +422,7 @@ Le mécanisme de mise en quarantaine d&#39;Android V2 utilise le même processu
    <td> Oui<br /> </td> 
   </tr> 
   <tr> 
-   <td> Rejet du message par le FCM : le serveur FCM est temporairement hors service (par exemple avec des délais). <br /> </td> 
+   <td> Rejet du message par le FCM : le serveur FCM est temporairement hors service (par exemple avec des temporisations). <br /> </td> 
    <td> Echec<br /> </td> 
    <td> Le service Firebase Cloud Messaging est temporairement hors service<br /> </td> 
    <td> Soft<br /> </td> 

@@ -5,7 +5,7 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 98%
@@ -100,7 +100,7 @@ Après avoir configuré votre activité **Requête** :
 1. Indiquez un identifiant ainsi qu&#39;un libellé pour la proposition qui sera ajoutée.
 1. Définissez la sélection de l&#39;offre. Deux options sont possibles :
 
-   * **[!UICONTROL Rechercher la meilleure offre dans une catégorie]** : cochez cette option et définissez les paramètres de l’appel au moteur d’offres (emplacement, catégorie ou thématique, date de contact, nombre d’offres à conserver). Le moteur calculera automatiquement la ou les offres à ajouter en fonction de ces paramètres. Nous vous recommandons de renseigner soit le champ **[!UICONTROL Catégorie]**, soit le champ **[!UICONTROL Thème]**, plutôt que les deux à la fois.
+   * **[!UICONTROL Rechercher la meilleure offre dans une catégorie]** : cochez cette option et définissez les paramètres de l’appel au moteur d’offres (emplacement, catégorie ou thématique, date de contact, nombre d’offres à conserver). Le moteur calculera automatiquement la ou les offres à ajouter en fonction de ces paramètres. Nous vous recommandons de renseigner soit le champ **[!UICONTROL Catégorie]**, soit le champ le **[!UICONTROL Thème]**, plutôt que les deux à la fois.
 
      ![](assets/int_enrichment_offer3.png)
 
@@ -202,7 +202,6 @@ Pour cela :
 1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix.
 
 <!--
-
 ## Delivering with delivery outlines {#delivering-with-delivery-outlines}
 
 You can also present offers in a delivery using delivery outlines.

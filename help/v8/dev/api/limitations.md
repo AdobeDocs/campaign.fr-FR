@@ -8,7 +8,7 @@ role: Developer
 level: Experienced
 mini-toc-levels: 1
 exl-id: 45acebb1-9325-4e26-8fe9-cc73f745d801
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 1%
@@ -128,10 +128,12 @@ L’API Campaign Standard Workflow GET renvoie des noms de paramètre tels que l
 
 Campaign v8 ne prend pas en charge les variables d’instance de workflow publicitaire, mais s’attend à ce que les développeurs et développeuses les connaissent. Ainsi, après la migration, les informations sur les paramètres dans le corps de la requête POST devront être construites sans que les informations sur les paramètres ne soient disponibles dans la réponse de l’API GET.
 
-<!--## Transactional messages
+<!--
+## Transactional messages
 
 * With Campaign Standard, a POST request returns empty fields for elements and attributes in the request body. With Campaign v8, the response returns values that match the ones in the request body instead.
 
 * When publishing an event configuration, the API preview panel displays the REST URL alongside the request body syntax.
 
-    Since Campaign v8 does not support event configuration fields definition (event creation is just adding a value to eventType enumeration), there is no API preview panel when adding an event type. The REST URL is displayed  in the transactional message user interface once an event transactional message is published.-->
+    Since Campaign v8 does not support event configuration fields definition (event creation is just adding a value to eventType enumeration), there is no API preview panel when adding an event type. The REST URL is displayed  in the transactional message user interface once an event transactional message is published.
+-->

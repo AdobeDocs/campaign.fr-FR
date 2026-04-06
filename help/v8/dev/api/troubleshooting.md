@@ -3,10 +3,10 @@ title: Résolution des problèmes d’API
 description: Découvrez les problèmes courants liés aux API Campaign Standard
 role: Developer
 level: Experienced
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Dans la réponse, la valeur ORGANIZATION_ID doit être la même que dans votre p
 }
 ```
 
-* **Lorsque vous effectuez une requête à Adobe.io, vous obtenez {« code »:500, « message »:« Oups. Une erreur s’est produite. Vérifiez votre URI et réessayez.&quot;}**
+* **Lors d’une requête sur Adobe.io, vous obtenez {&quot;code&quot;:500, &quot;message&quot;:&quot;Oups. Une erreur s’est produite. Vérifiez votre URI et réessayez.&quot;}**
 
 Adobe.io déclare votre URI comme non valide : l’URI que vous demandez n’est probablement pas valide. Sur Adobe.io, lorsque vous sélectionnez le service Campaign, vous obtenez un sélecteur avec une liste des valeurs organization_ids possibles. Vous devez vérifier que celui choisi est celui que vous avez inséré dans votre URL.
 
@@ -84,7 +84,8 @@ Votre jeton n’est pas valide (appel IMS incorrect utilisé pour générer un j
 
 Selon la configuration de l’instance, le profil créé doit être associé à un **orgUnit**. Pour comprendre comment ajouter ce champ à votre création, consultez [cette section](creating-profiles-api.md).
 
-<!-- * (error duplicate key : quand tu crées un profile qui existe déjà , il faut faire un patch pour updater le profile plutôt qu'un POST)
+<!--
+ * (error duplicate key : quand tu crées un profile qui existe déjà , il faut faire un patch pour updater le profile plutôt qu'un POST)
 
 With Curl
 List all profiles
@@ -96,11 +97,9 @@ Update the mobilePhone attribute of a profile
 API Calls on Service
 
 GET the list of services
-
 -->
 
 <!--
-
 How to find and use a filter?
 Error codes:
 
@@ -128,5 +127,4 @@ Comment savoir quel filtre appliquer ?
 3) get sur la valeur du champ resTarget
 4) get sur le href dans filters
 5) retourne les filtres applicables sur l'url des data.
-
 -->

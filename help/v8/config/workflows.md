@@ -1,18 +1,18 @@
 ---
 title: Gestion et automatisation des processus avec les workflows Adobe Campaign
-description: Prise en main des workflows
+description: Commencer avec les workflows
 feature: Workflows
 role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 93%
 
 ---
 
-# Prise en main des workflows{#gs-with-workflows}
+# Commencer avec les workflows{#gs-with-workflows}
 
 Configurez Campaign afin de tirer parti de ses puissantes fonctionnalités d&#39;automatisation des campagnes marketing.
 
@@ -74,20 +74,20 @@ To use the **[!UICONTROL Change Data Source]** activity:
 
 1. Create a workflow.
 
-1. Query your targeted recipients with a **[!UICONTROL Query]** activity. 
+1. Query your targeted recipients with a **[!UICONTROL Query]** activity.
 
-    For more information on the **[!UICONTROL Query]** activity, refer to [this page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=fr){target="_blank"}.
+    For more information on the **[!UICONTROL Query]** activity, refer to [this page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
 1. From the **[!UICONTROL Targeting]** tab, add a **[!UICONTROL Change data source]** activity and double-click it to select **[!UICONTROL Default data source]**.
-    
+
     The working table, which contains the result of your query, is then moved to the default PostgreSQL database.
 
 1. From the **[!UICONTROL Actions]** tab, drag and drop a **[!UICONTROL JavaScript code]** activity to perform unitary operations on the working table.
 
-    For more information on the **[!UICONTROL JavaScript code]** activity, refer to [this page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code.html?lang=fr){target="_blank"}.
+    For more information on the **[!UICONTROL JavaScript code]** activity, refer to [this page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code.html){target="_blank"}.
 
-1. Add another **[!UICONTROL Change data source]** activity to switch back to the Cloud database. 
-    
+1. Add another **[!UICONTROL Change data source]** activity to switch back to the Cloud database.
+
     Double-click your activity and select **[!UICONTROL Active FDA external account]** then the corresponding external account.
 
 1. You can now start your workflow.

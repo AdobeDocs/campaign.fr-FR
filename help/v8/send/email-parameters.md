@@ -6,7 +6,7 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
-source-git-commit: 6b70ad987b828dc1c17bc4f0683046be4eff0408
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 70%
@@ -48,7 +48,8 @@ Sélectionnez le format du mail dans la section inférieure de la fenêtre :
 <!--
 >[!NOTE]
 >
->For more on defining the email content, see [this section]().-->
+>For more on defining the email content, see [this section]().
+-->
 
 ## Configurer le codage des caractères {#character-encoding}
 
@@ -78,7 +79,7 @@ Pour plus d’informations sur la gestion des e-mails de rebond, consultez [cett
 
 ## Activer le désabonnement de la liste en un clic {#one-click-list-unsubscribe}
 
-L’URL list-unsubscribe en un clic est un lien ou un bouton affiché en regard des informations de l’expéditeur de l’e-mail, qui permet aux destinataires de se désinscrire instantanément de vos listes de diffusion en un seul clic. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"}-->
+L’URL list-unsubscribe en un clic est un lien ou un bouton affiché en regard des informations de l’expéditeur de l’e-mail, qui permet aux destinataires de se désinscrire instantanément de vos listes de diffusion en un seul clic. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
 
 Il s’affiche sous la forme d’un lien **Se désabonner** dans les interfaces de messagerie des FAI. Par exemple :
 
@@ -101,7 +102,8 @@ Pour activer cette fonctionnalité, sélectionnez l&#39;option **[!UICONTROL Ajo
 <!--
 >[!WARNING]
 >
->If you uncheck this option in the delivery template, it will still be enabled by default in the deliveries created from this template. You need to enable the option again at the delivery level.-->
+>If you uncheck this option in the delivery template, it will still be enabled by default in the deliveries created from this template. You need to enable the option again at the delivery level.
+-->
 
 Selon le client de messagerie et la méthode qu’il utilise pour effectuer son opt-out, le fait de cliquer sur le lien **Se désabonner** dans l’en-tête de l’e-mail peut avoir les impacts suivants :
 
@@ -117,7 +119,7 @@ Selon le client de messagerie et la méthode qu’il utilise pour effectuer son 
 
 >[!NOTE]
 >
->Vous pouvez également définir manuellement les méthodes [List-Unsubscribe en un clic](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} et [« mailto » List-Unsubscribe](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}. Les étapes détaillées sont décrites dans le [&#x200B; Guide des bonnes pratiques en matière de délivrabilité d&#39;Experience Cloud](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"}.
+>Vous pouvez également définir manuellement les méthodes [List-Unsubscribe en un clic](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} et [« mailto » List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}. Les étapes détaillées sont décrites dans le [ Guide des bonnes pratiques en matière de délivrabilité d&#39;Experience Cloud](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"}.
 
 
 ## Ajouter des en-têtes SMTP {#adding-smtp-headers}

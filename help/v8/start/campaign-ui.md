@@ -6,7 +6,7 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: df8ab43d9c7aee96c23240cd6c2775311da1abf2
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 68%
@@ -52,15 +52,15 @@ Une fois connecté à Campaign, vous accédez à la page d&#39;accueil d&#39;Ado
 
 >[!NOTE]
 >
->Si la carte d’interface utilisateur web n’est pas affichée, assurez-vous que les champs suivants ne restent pas vides dans votre compte externe A[Adobe Experience Cloud &#x200B;](../config/external-accounts.md) : **Serveur**, **Client**, **Serveur de rappel** et **Marque d’association**.
+>Si la carte d’interface utilisateur web n’est pas affichée, assurez-vous que les champs suivants ne restent pas vides dans votre compte externe A[Adobe Experience Cloud ](../config/external-accounts.md) : **Serveur**, **Client**, **Serveur de rappel** et **Marque d’association**.
 
-Vous pouvez également accéder au [Panneau de Contrôle de Campaign](../config/self-service.md) à partir de la page d&#39;accueil.
+Vous pouvez également accéder au Panneau de Contrôle de Campaign[ à partir de la page d&#39;accueil.](../config/self-service.md)
 
 >[!TAB Campaign Classic v7]
 
 Une fois connecté à Campaign, vous accédez à la page d&#39;accueil d&#39;Adobe Campaign avec des liens et des raccourcis pour accéder aux fonctionnalités, à la documentation, au site web d&#39;assistance et à la communauté Campaign.
 
-Accueil de la console cliente ![Campaign Classic v7 &#x200B;](assets/v7_user_interface_home.png)
+Accueil de la console cliente ![Campaign Classic v7 ](assets/v7_user_interface_home.png)
 
 
 >[!ENDTABS]
@@ -88,7 +88,7 @@ Lorsque vous sélectionnez un élément dans l&#39;écran, il est chargé dans u
 
 ![Interface utilisateur de la console Campaign affichant comment modifier une liste dans un nouvel onglet](assets/new-tab.png)
 
-### Créer un élément {#create-an-element}
+### Création d’un élément {#create-an-element}
 
 Utilisez les raccourcis dans la section **[!UICONTROL Créer]** sur la gauche de l&#39;écran pour ajouter de nouveaux éléments. Vous pouvez également utiliser le bouton **[!UICONTROL Créer]** au-dessus de la liste pour ajouter de nouveaux éléments à la liste en cours.
 
@@ -99,9 +99,10 @@ Utilisez les raccourcis dans la section **[!UICONTROL Créer]** sur la gauche de
 
 You can also access a subset of Campaign capabilities through the a web browser.
 
-The web access interface is similar to the console interface. From a browser, you can use the same navigation and display features as in the console, but you can perform only a reduced set of actions on campaigns. For example, you can view and cancel campaigns, but you cannot modify campaigns. 
+The web access interface is similar to the console interface. From a browser, you can use the same navigation and display features as in the console, but you can perform only a reduced set of actions on campaigns. For example, you can view and cancel campaigns, but you cannot modify campaigns.
 
-[Learn more about Campaign web access](../start/connect.md#web-access).-->
+[Learn more about Campaign web access](../start/connect.md#web-access).
+-->
 
 ### Accéder à l&#39;explorateur Campaign {#ac-explorer-ui}
 

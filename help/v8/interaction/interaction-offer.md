@@ -5,14 +5,14 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 98%
 
 ---
 
-# Création d&#39;une offre
+# Création d’une offre
 
 Pour créer une offre, procédez comme suit :
 
@@ -163,7 +163,6 @@ Pour cela :
 1. Si vous avez personnalisé le contenu de l&#39;offre, sélectionnez la cible de l&#39;offre afin de visualiser la personnalisation.
 
 <!--
-
 ## Create a hypothesis on an offer {#creating-a-hypothesis-on-an-offer}
 
 You can create hypotheses on your offer propositions. This lets you determine the impact of your offers on purchases carried out for the product concerned.
@@ -175,10 +174,9 @@ You can create hypotheses on your offer propositions. This lets you determine th
 Hypotheses carried out on an offer proposition are referenced in their **[!UICONTROL Measure]** tab.
 
 Creating hypotheses is detailed in [this page](../../campaign/using/about-response-manager.md).
-
 -->
 
-## Validation et activation d&#39;une offre{#approve-offers}
+## Validation et activation d’une offre{#approve-offers}
 
 Vous pouvez maintenant valider et activer l&#39;offre pour la rendre disponible dans l&#39;environnement **En ligne**.
 
@@ -194,6 +192,6 @@ Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic
 
 Le module **Simulation** vous permet de tester la répartition des offres d&#39;une catégorie ou d&#39;un environnement avant de lancer votre proposition auprès de vos destinataires.
 
-La simulation prend en compte les contextes et les règles d&#39;éligibilité précédemment appliqués aux offres ainsi que leurs règles de présentation. Il est ainsi possible de tester et d&#39;affiner différentes versions de votre proposition sans utiliser réellement une offre ou solliciter trop ou trop peu une cible, puisque la simulation n&#39;a aucun impact sur les destinataires ciblés.
+La simulation prend en compte les contextes et les règles d&#39;éligibilité précédemment appliqués aux offres ainsi que leurs règles de présentation. Il est ainsi possible de tester et d&#39;affiner différentes versions de votre proposition sans utiliser effectivement une offre ou solliciter excessivement ou insuffisamment une cible. La simulation n&#39;a en effet aucun impact sur les destinataires ciblés.
 
 Pour plus d&#39;informations sur la simulation de l&#39;offre, consultez la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=fr){target="_blank"}.

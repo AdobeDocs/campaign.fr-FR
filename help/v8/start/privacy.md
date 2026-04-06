@@ -6,8 +6,8 @@ role: Admin
 level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
+workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 100%
 
@@ -39,7 +39,8 @@ Avant de créer une demande d’accès à des informations personnelles, vous de
 
 Actuellement, Adobe Campaign ne prend pas en charge l’importation d’espaces de noms à partir du service Espace de noms d’identité Experience Platform. Par conséquent, une fois que vous avez créé un espace de noms sur le service Espace de noms d’identité, vous devez créer manuellement l’espace de noms correspondant dans l’interface Adobe Campaign. Pour ce faire, suivez les étapes ci-après.
 
-<!--v7?
+<!--
+v7?
 Three namespaces are available out-of-the-box: email, phone and mobile phone. If you need a different namespace (a recipient custom field, for example), you can create a new one from **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**.
 
 >[!NOTE]
@@ -92,7 +93,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 Vous pouvez maintenant créer des demandes d&#39;accès à des informations personnelles basées sur votre nouvel espace de noms. Si vous utilisez plusieurs espaces de noms, créez une demande d’accès à des informations personnelles par espace de noms pour la même valeur de réconciliation.
 
-## Création d’une demande d’accès à des informations personnelles {#create-privacy-request}
+## Créer une demande d’accès à des informations personnelles {#create-privacy-request}
 
 L’intégration à **[!DNL Adobe Experience Platform Privacy Service]** vous permet d’automatiser vos demandes d’accès à des informations personnelles dans un contexte multisolution grâce à un seul appel API JSON. Adobe Campaign gère automatiquement les demandes transmises par Privacy Service via un workflow dédié.
 
@@ -112,7 +113,7 @@ Le modèle d’un nom de fichier est le suivant : `<InstanceName>-<NamespaceId>
 >
 >Pour envoyer une requête à l’aide du type d’espace de noms personnalisé, utilisez la [méthode JSON](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=fr#json){target="_blank"} et ajoutez l’identifiant de l’espace de noms à la requête, ou utilisez l’[appel API](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/privacy-jobs.html?lang=fr#access-delete){target="_blank"} pour effectuer la requête.
 >
->N’utilisez que l’[interface d’utilisation Confidentialité](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=fr#request-builder){target="_blank"} pour envoyer des requêtes à l’aide du type d’espace de nom standard.
+>N’utilisez que l’[interface d’utilisation Confidentialité](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=fr#request-builder){target="_blank"} pour envoyer des requêtes à l’aide du type d’espace de noms standard.
 
 ### Tables recherchées lors des demandes de traitement {#list-of-tables}
 
@@ -138,9 +139,10 @@ Si vous avez créé des tables personnalisées ayant un lien avec la table du de
 >If you perform Privacy batch requests using profile deletion workflows, please take into consideration the following remarks:
 >* Profile deletion via workflows do not process children tables.
 >* You need to handle the deletion for all the children tables.
->* Adobe recommends that you create an ETL workflow that add the lines to delete in the Privacy Access table and let the **[!UICONTROL Delete privacy requests data]** workflow perform the deletion. We suggest to limit to 200 profiles per day to delete for performance reasons.-->
+>* Adobe recommends that you create an ETL workflow that add the lines to delete in the Privacy Access table and let the **[!UICONTROL Delete privacy requests data]** workflow perform the deletion. We suggest to limit to 200 profiles per day to delete for performance reasons.
+-->
 
-### Statuts des demandes d’accès à des informations personnelles {#privacy-request-statuses}
+### États des demandes d&#39;accès à des informations personnelles {#privacy-request-statuses}
 
 Vous trouverez ci-dessous les différents statuts des demandes d’accès à des informations personnelles dans Adobe Campaign et comment les interpréter :
 
@@ -149,7 +151,7 @@ Vous trouverez ci-dessous les différents statuts des demandes d’accès à des
 * **[!UICONTROL Suppression en attente]** : le workflow a identifié toutes les données du destinataire à supprimer.
 * **[!UICONTROL Suppression en cours]** : le workflow traite la suppression.
 * **[!UICONTROL Terminé]** : le traitement de la demande s&#39;est terminé sans erreur.
-* **[!UICONTROL Erreur]** : le workflow a rencontré une erreur. La raison apparaît dans la colonne **[!UICONTROL État de la demande]** de la liste des demandes d&#39;accès à des informations personnelles. Par exemple, le statut **[!UICONTROL Erreur : données introuvables]** indique qu’aucune donnée du destinataire correspondant à la **[!UICONTROL Valeur de réconciliation]** du titulaire de données n’a été trouvée dans la base de données. 
+* **[!UICONTROL Erreur]** : le workflow a rencontré une erreur. La raison apparaît dans la colonne **[!UICONTROL État de la demande]** de la liste des demandes d’accès à des informations personnelles. Par exemple, le statut **[!UICONTROL Erreur : données introuvables]** indique qu’aucune donnée du destinataire correspondant à la **[!UICONTROL Valeur de réconciliation]** du titulaire de données n’a été trouvée dans la base de données.
 
 **Rubriques connexes dans la documentation de Campaign Classic v7 :**
 

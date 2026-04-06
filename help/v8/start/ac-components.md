@@ -5,8 +5,8 @@ feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: e4f6c70ecdcf7414b5f49a43933cfd1c967a0905
-workflow-type: ht
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
+workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 100%
 
@@ -62,9 +62,11 @@ Le serveur Web Campaign contrôle l&#39;accès aux processus Web Campaign. JavaS
 
 La console cliente Campaign se connecte au serveur Web à l’aide de SOAP XML via HTTP. Le serveur Web fournit la couche de sécurité, transmet les requêtes à la couche Application à l’aide de Javascript et l’accès des processus internes de Campaign à la base de données à l’aide de SQL.
 
-<!--The overall communication between Campaign processes are described in the following standalone deployment diagram: all Campaign components are installed in the same machine.
+<!--
+The overall communication between Campaign processes are described in the following standalone deployment diagram: all Campaign components are installed in the same machine.
 
-![](assets/do-not-localize//ac-standalone.png) -->
+![](assets/do-not-localize//ac-standalone.png)
+-->
 
 L&#39;utilisateur se connecte au serveur applicatif Campaign à l&#39;aide du protocole HTTP. Toutes les données et informations sont gérées dans la base de données Campaign. Si un développeur Campaign effectue des modifications de configuration, celles-ci sont capturées dans la base de données. Si un spécialiste marketing crée une nouvelle campagne, toutes les informations et données relatives à cette nouvelle campagne sont également gérées dans la base de données. Lorsqu&#39;un spécialiste marketing exécute une campagne, les diffusions par e-mail sont envoyées aux profils à partir du serveur Campaign via le serveur SMTP. Lorsque les profils interagissent avec des diffusions par e-mail, telles que l&#39;ouverture de l&#39;e-mail, ces données de tracking sont renvoyées au serveur de tracking.
 

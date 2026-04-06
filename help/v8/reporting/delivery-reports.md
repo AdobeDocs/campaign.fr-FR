@@ -3,14 +3,14 @@ title: Rapports de diffusion intégrés à Adobe Campaign
 description: Rapports de diffusion intégrés à Adobe Campaign
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
-source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1159'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
-# Rapports de diffusion {#delivery-reports}
+# Rapports sur les diffusions {#delivery-reports}
 
 Vous pouvez suivre l’exécution des diffusions à partir de différents rapports accessibles depuis la vue d’ensemble des diffusions.
 
@@ -101,9 +101,9 @@ Ce tableau de valeurs présente la répartition, par domaine Internet, des envoi
 
 * **[!UICONTROL Visited pages]**: Number of web pages visited following message reception.
 * **[!UICONTROL Transactions]**: Number of purchases following message reception.
-* **[!UICONTROL Total amount]**: Total amount of purchases following message reception. 
-* **[!UICONTROL Average transaction amount]**: Average purchase made by distinct delivery recipients. 
-* **[!UICONTROL Articles]**: Number of articles purchased by the delivery recipients. 
+* **[!UICONTROL Total amount]**: Total amount of purchases following message reception.
+* **[!UICONTROL Average transaction amount]**: Average purchase made by distinct delivery recipients.
+* **[!UICONTROL Articles]**: Number of articles purchased by the delivery recipients.
 * **[!UICONTROL Average count of articles per transaction]**: Average number of items per purchase made by distinct recipients.
 * **[!UICONTROL Average amount per message]**: Average amount of purchases generated per message.
 
@@ -117,7 +117,7 @@ This section shows the number of messages shared on each social network. For mor
 
 ## URLs and click streams {#urls-and-click-streams}
 
-This report shows the list of pages visited following a delivery. 
+This report shows the list of pages visited following a delivery.
 
 ![](assets/s_ncs_user_url_report.png)
 
@@ -131,14 +131,14 @@ The following rates are displayed in the upper section of the report:
   >
   >For more information on tracking opens, refer to [this section](metrics-calculation.md#tracking-opens-).
 
-* **[!UICONTROL Distinct clicks]**: Number of distinct people having clicked at least once (excluding unsubscription link and mirror page) in a delivery. The rate displayed is calculated based on the number of messages delivered successfully. 
+* **[!UICONTROL Distinct clicks]**: Number of distinct people having clicked at least once (excluding unsubscription link and mirror page) in a delivery. The rate displayed is calculated based on the number of messages delivered successfully.
 * **[!UICONTROL Cumulated clicks]**: Total number of clicks by targeted recipients (excluding unsubscription link and mirror page). The rate displayed is calculated based on the number of messages forwarded successfully.
 
 **[!UICONTROL Platform average]**: This average rate, displayed under each rate (reactivity, distinct clicks, and cumulated clicks), is calculated for deliveries sent over the previous six months. Only deliveries with the same typology and on the same channel are taken into account. Proofs are excluded.
 
 The central table provides the following information:
 
-* **[!UICONTROL Clicks]**: Number of cumulated clicks, per link. 
+* **[!UICONTROL Clicks]**: Number of cumulated clicks, per link.
 * **[!UICONTROL Clicks (in %)]**: Breakdown of the number of clicks per link, in relation to the total number of cumulated clicks.
 
 **[!UICONTROL Breakdown of clicks in time]**
@@ -168,7 +168,7 @@ Le graphique central présente la répartition, par règle, des messages rejeté
 Cette section comporte les indicateurs suivants :
 
 * **[!UICONTROL Message à diffuser]** : nombre total de messages à diffuser après l’analyse des diffusions.
-* **[!UICONTROL Succès]** : nombre de messages traités avec succès. Le taux associé est le ratio avec le nombre de messages à diffuser.
+* **[!UICONTROL Succès]** : nombre de messages traités avec succès. Le taux associé est le ratio par rapport au nombre de messages à délivrer.
 * **[!UICONTROL Erreurs]** : nombre total d’erreurs cumulées lors des diffusions et du traitement automatique des retours. Le taux associé est le ratio avec le nombre de messages à diffuser.
 * **[!UICONTROL Mises en quarantaine]** : nombre d’adresses mises en quarantaine à la suite d’un échec de diffusion (utilisateur inconnu, domaine non valide). Le taux associé est le ratio avec le nombre de messages à diffuser.
 
@@ -187,14 +187,13 @@ Ce rapport présente les statistiques sur les taux d&#39;ouverture, clics et tra
 
 Il vous permet de suivre l&#39;impact marketing de la diffusion. Vous pouvez paramétrer l&#39;affichage des valeurs en sélectionnant l’échelle de temps (vue sur 1 heure, sur 3 heures, sur 24 heures, etc.). Cliquez sur **[!UICONTROL Actualiser]** pour confirmer votre sélection.
 
-Ce rapport se présente sous la forme d’un tableau de valeur et d’un diagramme de Pareto permettant de mesurer le temps mis pour que la diffusion atteigne son efficacité maximum. Les indicateurs utilisés sont les suivants :
+Ce rapport se présente sous la forme d’un tableau de valeur et d’un graphique de Pareto permettant de mesurer le temps mis pour que la diffusion atteigne son efficacité maximum. Les indicateurs utilisés sont les suivants :
 
 * **[!UICONTROL Ouvertures]** : estimation du temps nécessaire pour atteindre un pourcentage du nombre total de messages ouverts. Les e-mails au format texte ne sont pas comptabilisés. [En savoir plus](metrics-calculation.md#tracking-opens-).
 * **[!UICONTROL Clics]** : estimation du temps nécessaire pour atteindre un pourcentage du nombre total de clics enregistrés. Les clics sur le lien de désinscription et la page miroir ne sont pas pris en compte.
 <!--
 * **[!UICONTROL Transactions]**: Time required to achieve a percentage of the total number of transactions following message reception. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
-
 
 ## Rapports cumulés {#cumulated-reports}
 

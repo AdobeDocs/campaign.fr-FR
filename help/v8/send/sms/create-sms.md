@@ -6,8 +6,8 @@ role: User
 level: Beginner, Intermediate
 version: Campaign v8, Campaign Classic v7
 exl-id: 3b15eb3e-8625-4049-bf0d-327407ae5ea6
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
+workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 100%
 
@@ -23,8 +23,10 @@ Pour créer une diffusion SMS, procédez comme suit :
 
    Les étapes de la création d’une diffusion sont présentées dans [cette page](../../start/create-message.md).
 
-<!-- * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
-* For mid-sourcing infrastructure, -->
+<!--
+ * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
+* For mid-sourcing infrastructure,
+-->
 
 1. Renommez votre diffusion dans le champ **[!UICONTROL Libellé]** et ajoutez des informations dans le champ **[!UICONTROL Code diffusion]** et la liste **[!UICONTROL Nature]** si nécessaire pour le suivi. Vous pouvez également ajouter une **[!UICONTROL description]** à votre diffusion.
 

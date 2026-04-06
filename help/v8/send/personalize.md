@@ -1,19 +1,19 @@
 ---
-title: Prise en main de la personnalisation
+title: Commencer avec la personnalisation
 description: Découvrez comment personnaliser le contenu des messages.
 feature: Personalization
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
-source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 100%
 
 ---
 
-# Prise en main de la personnalisation {#personalize-content}
+# Commencer avec la personnalisation {#personalize-content}
 
 Pour tirer le meilleur parti de chacune de vos campagnes marketing, Adobe Campaign permet de diffuser du contenu personnalisé adapté au profil de la clientèle. Les fonctionnalités de personnalisation d’Adobe Campaign, basées sur les données de profil, vous permettent de créer une expérience personnalisée pour chaque groupe et personne : adaptez vos messages en fonction du ou de la destinataire grâce aux données et informations dont vous disposez à son sujet. Il peut s’agir de son prénom, de ses centres d’intérêts, de l’endroit où il/elle vit, de ses achats et bien plus encore.
 
@@ -40,8 +40,9 @@ Vous pouvez personnaliser le contenu du message en procédant comme suit :
 
   Configurez du contenu conditionnel pour ajouter une personnalisation dynamique basée notamment sur le profil de la personne destinataire. Lorsqu’une condition est rencontrée, des blocs de texte et/ou des images sont alors insérés. [En savoir plus](conditions.md).
 
-<!--* Add **personalized offers**
-    
+<!--
+* Add **personalized offers**
+
     Insert personalized offers in your message content, depending on the recipient location, the current weather, or the last purchase order.
 -->
 
@@ -71,4 +72,4 @@ Les variables suivantes sont des variables internes qui peuvent être utilisées
 Découvrez les différents types de contenu dynamique et apprenez à créer et à appliquer des blocs de personnalisation et des instructions conditionnelles à une diffusion.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3452868?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/335734?quality=12)

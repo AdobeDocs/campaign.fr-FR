@@ -6,7 +6,7 @@ role: Developer
 level: Intermediate
 badge: label="Disponibilité limitée" type="Informative"
 exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: 52ea7f0a7690ef656568cc75925b9982e1f475e9
 workflow-type: tm+mt
 source-wordcount: '1481'
 ht-degree: 94%
@@ -73,8 +73,8 @@ L’enregistrement des informations d’identification des notifications push de
 
 1. Fournissez l’**identifiant de clé**. Il s’agit d’une chaîne de 10 caractères attribuée lors de la création de la clé d’authentification p8.
 
-       Elle se trouve sous l’onglet **Clés** dans les pages **Certificats**, **Identificateurs** et **Profils** de votre compte de développeur Apple.
-   
+   Elle se trouve sous l’onglet **Clés** dans les pages **Certificats**, **Identificateurs** et **Profils** de votre compte de développeur ou de développeuse Apple.
+
 1. Fournissez l’**identifiant de l’équipe**. Il s’agit d’une valeur de chaîne qui se trouve sous l’onglet **Abonnement**.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour créer la configuration de votre application.
@@ -87,7 +87,7 @@ L’enregistrement des informations d’identification des notifications push de
 
 1. Activez **[!UICONTROL Informations d’identification des notifications push]** pour ajouter vos informations d’identification.
 
-1. Glissez-déposez les informations d’identification des notifications push FCM. Pour plus d&#39;informations sur l&#39;obtention des informations d&#39;identification push, consultez la documentation de [Google](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+1. Glissez-déposez les informations d’identification des notifications push FCM. Pour plus d&#39;informations sur l&#39;obtention des informations d&#39;identification push, consultez la documentation de [](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour créer la configuration de votre application.
 
@@ -156,7 +156,7 @@ Pour créer une application pour les appareils iOS, procédez comme suit :
 
    >[!NOTE]
    >
-   > La **[!UICONTROL clé d&#39;intégration]** est entièrement personnalisable avec une valeur de chaîne, mais doit être exactement identique à celle spécifiée dans le SDK.
+   > La **[!UICONTROL clé d’intégration]** est entièrement personnalisable avec une valeur de chaîne, mais doit être exactement identique à celle spécifiée dans le SDK.
    >
    > Vous ne pouvez pas utiliser le même certificat pour la version de développement (sandbox) et la version de production de l’application.
 
@@ -190,7 +190,7 @@ Pour créer une application pour les appareils Android, procédez comme suit :
 
    >[!NOTE]
    >
-   > La **[!UICONTROL clé d&#39;intégration]** est entièrement personnalisable avec une valeur de chaîne, mais doit être exactement identique à celle spécifiée dans le SDK.
+   > La **[!UICONTROL clé d’intégration]** est entièrement personnalisable avec une valeur de chaîne, mais doit être exactement identique à celle spécifiée dans le SDK.
 
    ![](assets/push-config-12.png)
 
@@ -246,9 +246,9 @@ Vous trouverez ci-dessous les noms de payload FCM pour personnaliser davantage v
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-1. Vous devez maintenant publier la configuration à partir du menu **[!UICONTROL Flux de publication]**. [En savoir plus](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#publish-the-configuration).
+1. Vous devez maintenant publier la configuration à partir du menu **[!UICONTROL Flux de publication]**. [En savoir plus](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#publish-the-configuration)
 
-Votre propriété mobile sera désormais automatiquement synchronisée avec le workflow technique **[!UICONTROL Collecte de données Adobe Experience Platform]**. [En savoir plus](../../automation/workflow/technical-workflows.md#list-technical-workflows).
+Votre propriété mobile sera désormais automatiquement synchronisée avec le workflow technique **[!UICONTROL Collecte de données Adobe Experience Platform]**. [En savoir plus](../../automation/workflow/technical-workflows.md#list-technical-workflows)
 
 ## Ajouter Campaign Classic à votre application mobile {#campaign-mobile-app}
 

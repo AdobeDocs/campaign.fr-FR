@@ -7,7 +7,7 @@ topic-tags: campaign-standard-apis
 role: Developer
 level: Experienced
 exl-id: 7db25b8d-a6f1-4151-bf37-c47e9991ae48
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 98%
@@ -20,7 +20,7 @@ ht-degree: 98%
 
 Le tri est disponible par défaut dans l’ordre croissant. Pour trier par ordre décroissant, ajoutez **%20desc** à la valeur du paramètre **_order**.
 
-Pour savoir s’il est possible de trier un champ, vérifiez le paramètre « sortable » dans les métadonnées de la ressource. Voir à ce propos [cette section](metadata-mechanism.md).
+Pour savoir s’il est possible de trier un champ, vérifiez le paramètre « sortable » dans les métadonnées de la ressource. Pour plus d’informations, consultez [cette section](metadata-mechanism.md).
 
 <br/>
 
@@ -304,7 +304,8 @@ Response to the request.
 
 <!-- exemple à vérifier de bout en bout-->
 
-<!--+category = query editor
+<!--
++category = query editor
 privacy ?
 displayFOrmat ?
 pour faire un POST sur une enum, il faut lui passer le @name décrit dans le noeud values, chaque @name a une correspondance en format = au format définit par le resType
