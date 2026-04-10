@@ -2,9 +2,8 @@
 title: Mise à niveau de l’infrastructure d’envoi d’e-mails dans Campaign
 description: Mise à niveau de l’infrastructure d’envoi d’e-mails dans Campaign
 hide: true
-hidefromtoc: true
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 100%
@@ -37,7 +36,7 @@ Les mises à niveau des environnements de production ont commencé en **janvier�
 
 * Les instances de Campaign, que ce soit pour les environnements d’évaluation ou les environnements de production, ne pourront pas envoyer d’e-mails pendant la durée de la mise à niveau. Les autres fonctionnalités de Campaign ne devraient pas être affectées.
 
-## Questions fréquentes {#aws-faq}
+## Forum aux questions {#aws-faq}
 
 * **Cette mise à niveau est-elle obligatoire ?**
 
@@ -64,4 +63,4 @@ Les mises à niveau des environnements de production ont commencé en **janvier�
 
   Non. Nous ne pouvons pas prendre en charge les modifications demandées au planning existant, au risque de perturber l’événement de mise à niveau assigné à d’autres personnes.
 
-Pour toute autre question, contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-solution=Campaign&lang=fr#support){target="_blank"}.
+Pour toute autre question, contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-solution=Campaign#support){target="_blank"}.

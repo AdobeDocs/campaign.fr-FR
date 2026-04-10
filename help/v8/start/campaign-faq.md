@@ -6,21 +6,20 @@ role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
 hide: true
-hidefromtoc: true
-source-git-commit: 9c751429ac3da2a583990ba0d891744353bd65c8
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 96%
 
 ---
 
-# Questions fréquentes{#faq}
+# Forum aux questions{#faq}
 
 Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales questions/réponses ci-dessous.
 
 1. **Comment effectuer une mise à niveau de Campaign vers la dernière version ?**
 
-   Adobe Campaign fait l&#39;objet de mises à jour régulières. Des versions mineures sont publiées chaque année avec de nouvelles fonctionnalités, des améliorations et des correctifs. En outre, nous publions périodiquement des builds avec des correctifs cumulatifs uniquement.
+   Adobe Campaign fait l’objet de mises à jour régulières. Des versions mineures sont publiées chaque année avec de nouvelles fonctionnalités, des améliorations et des correctifs. En outre, nous publions périodiquement des builds avec des correctifs cumulatifs uniquement.
 
    Cette fréquence régulière de mise à jour a pour but de vous fournir les dernières fonctionnalités et améliorations. Vous bénéficiez ainsi d&#39;un environnement sécurisé et d&#39;une expérience optimale avec notre produit. C’est la raison pour laquelle nous pensons qu’il est important que vous exécutiez la version la plus récente d’Adobe Campaign.
 
@@ -97,7 +96,7 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
 1. **Comment signaler un problème ?**
 
-   La création d&#39;un ticket vous permet de contacter l&#39;équipe du Service clientèle d&#39;Adobe pour tout problème lié à vos produits Adobe. La console Adobe Admin Console vous permettra de discuter avec le Service clientèle d&#39;Adobe pour résoudre vos problèmes.
+   La création d’un ticket vous permet de contacter l’équipe du Service clientèle d’Adobe pour tout problème lié à vos produits Adobe. La console Adobe Admin Console vous permettra de discuter avec le Service clientèle d&#39;Adobe pour résoudre vos problèmes.
 
    Pour enregistrer un problème ou démarrer une session de conversation dans ce nouveau système, connectez-vous à la console [Adobe Admin Console](https://adminconsole.adobe.com/overview){target="_blank"}.
 

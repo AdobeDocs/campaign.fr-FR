@@ -3,9 +3,8 @@ title: Migration des utilisateurs et utilisatrices techniques vers Adobe Develo
 description: Découvrez comment migrer les opérateurs et opératrices techniques Campaign vers un compte technique sur Adobe Developer Console.
 exl-id: 63008b58-4384-4d2b-864a-57f11d701c01
 hide: true
-hidefromtoc: true
-source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
-workflow-type: ht
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
+workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 100%
 
@@ -40,7 +39,7 @@ Les étapes clés sont les suivantes :
 1. Migrez l’intégralité de l’implémentation de l’intégration de l’API Campaign vers le compte technique TA1 nouvellement créé.
 1. Une fois que toutes les API/intégrations destinées aux clientes et clients sont entièrement fonctionnelles sur TA1, remplacez l’opérateur/opératrice technique TO1 par le compte technique TA1.
 
-### Conditions préalables{#ims-migration-prerequisites}
+### Conditions préalables requises{#ims-migration-prerequisites}
 
 Avant de commencer le processus de migration, contactez votre la personne responsable de la gestion de votre transition Adobe afin que les équipes techniques d’Adobe puissent migrer vos groupes d’opérateurs et opératrices existants et vos droits nommés vers Adobe Identity Management System (IMS).
 

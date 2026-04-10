@@ -3,9 +3,8 @@ title: Notes de mise à jour de Campaign v8 2021
 description: Liste des fonctionnalités et améliorations des versions 2021 de Campaign v8
 feature: Release Notes
 hide: true
-hidefromtoc: true
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
-source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
 source-wordcount: '1584'
 ht-degree: 98%
@@ -18,7 +17,7 @@ Cette page répertorie les nouvelles fonctionnalités, les améliorations et les
 
 ## Version 8.2.8 {#release-8-2-8}
 
-_28 octobre 2021_
+_vendredi 28 octobre 2021_
 
 <table>
 <thead>
@@ -30,7 +29,7 @@ _28 octobre 2021_
 <tr>
 <td>
 <p>Real-time interaction management est désormais disponible pour les canaux entrants. Utilisez le module Interaction entrante Campaign pour présenter la meilleure offre à vos clients lorsqu’ils visitent votre site web ou contactent votre centre d’appel. Cette fonctionnalité est fournie avec Campaign v8 comme option et nécessite une configuration spécifique sur votre instance. Contactez votre représentant Adobe pour avoir accès au module Interaction entrante.</p>
-<p>Pour plus d’informations, consultez la <a href="../interaction/interaction-architecture.md">documentation détaillée</a>.</p>
+<p>Pour plus d'informations, consultez la <a href="../interaction/interaction-architecture.md">documentation détaillée</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -45,7 +44,7 @@ _28 octobre 2021_
 <tbody> 
 <tr> 
 <td> <p>Le module Optimisation des campagnes est désormais disponible. Ce module permet de contrôler, de filtrer et de surveiller l’envoi des diffusions. Pour éviter les conflits entre les campagnes, Adobe Campaign peut tester différentes combinaisons en appliquant des règles de contrainte spécifiques. Cela permet de s’assurer que les messages envoyés répondent aux attentes et aux besoins des clientes et clients et des politiques de communication de l’entreprise.</p>
-<p>Pour plus d’informations, consultez la <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=fr#campaign-optimization">documentation détaillée</a>.</p>
+<p>Pour plus d'informations, consultez la <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=fr#campaign-optimization">documentation détaillée</a>.</p>
 </td> 
 </tr> 
 </tbody> 
@@ -62,7 +61,7 @@ _28 octobre 2021_
 <td> <p>Unicity Service est un nouveau composant Cloud Database Manager. Il permet aux utilisateurs de préserver et de surveiller l’intégrité des contraintes de clé unique dans les tables de base de données cloud (Cloud Database). Cela permet de réduire le risque d’insertion de clés en double.
 <p>Comme Cloud Database n’applique pas les contraintes d’unicité, Unicity Service introduit au niveau de l’application, <b>un ensemble de nouveaux mécanismes de sécurisation</b> qui réduisent le risque d’insertion de doublons lors de la gestion des données avec Adobe Campaign.</p> 
 <p>Unicity Service lance un nouveau workflow intégré appelé <b>ffdaUnicity</b> pour surveiller les contraintes d’unicité et alerter lorsque des doublons sont détectés.</p>
-<p>Pour plus d’informations, consultez la <a href="../architecture/keys.md">documentation détaillée</a>.</p>
+<p>Pour plus d'informations, consultez la <a href="../architecture/keys.md">documentation détaillée</a>.</p>
 </td> </tr> 
 </tbody> 
 </table>
@@ -71,13 +70,13 @@ _28 octobre 2021_
 **Améliorations**
 
 * Le connecteur Snowflake a été amélioré en termes de performances.
-* À des fins de surveillance et de test, les journaux d’audit du workflow de données **[!UICONTROL Répliquer les données Staging]** incluent désormais le nombre d’enregistrements envoyés à la base de données FFDA (Full Federated Data Access).
+* À des fins de surveillance et de test, les logs d’audit du workflow de données **[!UICONTROL Répliquer les données Staging]** incluent désormais le nombre d’enregistrements envoyés à la base de données FFDA (Full Federated Data Access).
 * L’activité Code SQL permet désormais de choisir dans quelle base de données sera stocké le script SQL : la source de données par défaut ou le compte externe FDA principal choisi.
 * Un ensemble d’entrepôts prédéfinis est désormais disponible et peut être utilisé pour exécuter diverses requêtes en parallèle, telles que la segmentation, l’ETL ou les pics. [En savoir plus](../config/workflows.md)
 
 **Autres changements**
 
-* Le champ **[!UICONTROL Identifiant chiffré]** a été ajouté au schéma des visiteurs (`nms:visitor`). Ce champ est calculé et doit être utilisé pour les applications web.
+* Le champ **[!UICONTROL Identifiant chiffré]** a été ajouté au schéma des visiteurs et visiteuses (`nms:visitor`). Ce champ est calculé et doit être utilisé pour les applications web.
 * Correction dʼun problème qui entraînait lʼéchec de lʼanalyse des diffusions lorsque certaines affinités IP existaient dans certains conteneurs de mid-sourcing mais pas dans tous. Désormais, les affinités IP sont toutes stockées dans la base de données, de sorte que n’importe quel conteneur puisse accéder aux affinités présentes dans tous les autres conteneurs. (NEO-37564)
 * Vous pouvez désormais importer un package comportant plusieurs schémas et nœuds d’arborescence de navigation.
 
@@ -102,12 +101,12 @@ _28 octobre 2021_
 * Correction dʼun problème en raison duquel des résultats incorrects étaient renvoyés lors de lʼexécution des fonctions Amazon Redshift HoursDiff et MinutesDiff lors de la tentative dʼextraction du composant dʼheure.(NEO-31673)
 * Correction dʼun problème au cours duquel les utilisateurs ne parvenaient pas à se connecter à la console en raison dʼun problème de configuration du proxy. (NEO-38388)
 * Correction dʼun problème de régression qui empêchait la fonctionnalité **Purger le dossier** de fonctionner correctement. (NEO-37459)
-* Correction dʼun problème en raison duquel les diffusions mobiles jointes à un workflow ne pouvaient pas être prévisualisées.
+* Correction d’un problème qui vous empêchait de prévisualiser les diffusions mobiles jointes à un workflow.
 * Correction dʼun problème en raison duquel lʼactivité du workflow de **Lecture de liste** ne fonctionnait pas lorsque la liste était identifiée dans la base de données par un identifiant négatif. (NEO-39607)
 
-## Version 8.1.20 {#release-8-1-20}
+## Version 8.1.20 {#release-8-1-20}
 
-_7 septembre 2021_
+_7 septembre 2021_
 
 **Améliorations de la sécurité**
 
@@ -144,9 +143,9 @@ _7 septembre 2021_
 * Correction d’un problème qui empêchait l’affichage de la **Position des clics**.
 * Correction d’un problème qui entraînait des URL rompues dans les e-mails.
 
-## Version 8.1.14 {#release-8-1-14}
+## Version 8.1.14 {#release-8-1-14}
 
-_23 juillet 2021_
+_samedi 23 juillet 2021_
 
 **Nouveautés**
 

@@ -5,9 +5,8 @@ feature: API
 role: Developer
 level: Intermediate, Experienced
 hide: true
-hidefromtoc: true
-exl-id: 0fd39d6c-9e87-4b0f-a960-2aef76c9c8eb
-source-git-commit: ceab90331fab0725962a2a98f338ac3dc31a2588
+exl-id: c2862f94-7d15-4a49-a74e-df90d0ea7bc9
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 2%
@@ -54,7 +53,7 @@ var delivery = NLWS.nmsDelivery.load("12435")
 >
 >**Syntaxe alternative :** pour une compatibilité ascendante, vous pouvez également voir la syntaxe des espaces de noms en minuscules dans certains documents (par exemple, `nms.recipient.create()`, `xtk.queryDef.create()`). Les deux syntaxes fonctionnent, mais `NLWS` est la norme documentée dans la référence JSAPI officielle de Campaign.
 
-## Conditions préalables {#prerequisites}
+## Conditions préalables requises {#prerequisites}
 
 Avant d’utiliser les méthodes queryDef et NLWS, vous devez connaître les éléments suivants :
 
@@ -900,9 +899,8 @@ Structure complète de l’objet `queryDef` :
 ## Rubriques connexes {#related-topics}
 
 * [Prise en main des API de Campaign](api.md)
-* [SDK de Campaign JavaScript - API de requête](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}
+* SDK de Campaign JavaScript - API de requête[&#128279;](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}
 * [Référence de l’API queryDef](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html?lang=fr){target="_blank"}
 * [Documentation JSAPI Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=fr){target="_blank"}
 * [Utiliser les schémas](schemas.md)
 * [Utiliser le requêteur](../start/query-editor.md)
-
