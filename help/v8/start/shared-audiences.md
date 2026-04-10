@@ -39,6 +39,6 @@ L’intégration prend en charge deux types d’identifiants Adobe Experience 
 
 Pour plus d’informations, consultez la section :
 
-[Documentation ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=fr){target="_blank"}
+[Documentation &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=fr){target="_blank"}
 
-[Guide des composants de l&#39;interface centrale de ](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=fr){target="_blank"}
+[Guide des composants de l&#39;interface centrale de &#x200B;](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=fr){target="_blank"}
