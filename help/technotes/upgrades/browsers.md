@@ -3,9 +3,8 @@ product: campaign
 title: Composants web Campaign et version 100 dans les navigateurs Chrome, Firefox et Edge
 description: Composants web Campaign et version 100 dans les navigateurs Chrome, Firefox et Edge
 hide: true
-hidefromtoc: true
 exl-id: 912ad71e-2b23-4b16-b5f9-47d547fc83d5
-source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 100%
@@ -73,7 +72,7 @@ Pour tester l&#39;agent utilisateur Google Chrome 100 sur vos propres applicati
 1. Redémarrez le navigateur.
 1. Fermez l&#39;onglet `chrome://flags`.
 
-Pour rétablir la valeur par défaut de l&#39;agent utilisateur, suivez simplement ce processus et remplacez le paramètre de l&#39;indicateur par `Default`, puis redémarrez le navigateur.
+Pour rétablir la valeur par défaut de lagent utilisateur, suivez simplement ce processus et remplacez le paramètre de lindicateur par `Default`, puis redémarrez le navigateur.
 
 
 ### Tester avec Microsoft Edge 100{#test-ms-edge-100}
@@ -88,4 +87,4 @@ Pour rétablir la valeur par défaut de l&#39;agent utilisateur, suivez simpleme
 1. Redémarrez le navigateur.
 1. Fermez l&#39;onglet `edge://flags`.
 
-Pour rétablir la valeur par défaut de l&#39;agent utilisateur, suivez simplement ce processus et remplacez le paramètre de l&#39;indicateur par `Default`, puis redémarrez le navigateur.
+Pour rétablir la valeur par défaut de lagent utilisateur, suivez simplement ce processus et remplacez le paramètre de lindicateur par `Default`, puis redémarrez le navigateur.

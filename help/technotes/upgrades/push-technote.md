@@ -6,9 +6,8 @@ feature: Push
 role: Admin
 level: Experienced
 hide: true
-hidefromtoc: true
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 93%
@@ -17,7 +16,7 @@ ht-degree: 93%
 
 # Modifications du canal de notification push {#push-upgrade}
 
-Vous pouvez utiliser Campaign pour envoyer des notifications push sur les appareils iOs et Android. Pour ce faire, Campaign repose sur des services d’abonnement à des application spécifiques.
+Vous pouvez utiliser Campaign pour envoyer des notifications push sur les appareils iOs et Android. Pour ce faire, Campaign repose sur des services d’abonnement à des applications mobiles spécifiques.
 
 Certaines modifications importantes apportées au service Android FCM (Firebase Cloud Messaging), publiées en 2024, pourront avoir une incidence sur votre mise en œuvre d’Adobe Campaign. Il se peut que la configuration de vos services d’abonnement pour les messages push Android doive être mise à jour pour prendre en charge cette modification.
 
@@ -27,7 +26,7 @@ En outre, Adobe recommande vivement de passer à une connexion au service APN b
 
 ### Qu’est-ce qui a changé ? {#fcm-changes}
 
-Dans le cadre des efforts constants de Google pour améliorer ses services, les API FCM héritées seront abandonnées le **22 juillet 2024**. Apprenez-en davantage sur le protocole HTTP de Firebase Cloud Messaging en consultant la documentation de Firebase de Google [&#128279;](https://firebase.google.com/docs/cloud-messaging/migrate-v1){target="_blank"}.
+Dans le cadre des efforts constants de Google pour améliorer ses services, les API FCM héritées seront abandonnées le **mardi 22 juillet 2024**. Apprenez-en davantage sur le protocole HTTP de Firebase Cloud Messaging en consultant la documentation de Firebase de Google [](https://firebase.google.com/docs/cloud-messaging/migrate-v1){target="_blank"}.
 
 Adobe Campaign Classic v7 et Adobe Campaign v8 prennent déjà en charge les dernières API pour envoyer des notifications push. Cependant, certaines anciennes implémentations dépendent toujours des API héritées. Ces implémentations doivent être mises à jour.
 
@@ -46,7 +45,7 @@ Pour vérifier si cela vous concerne, vous pouvez filtrer vos **services et abon
 
 ### Comment effectuer la mise à jour ? {#fcm-transition-procedure}
 
-#### Conditions préalables {#fcm-transition-prerequisites}
+#### Conditions préalables requises {#fcm-transition-prerequisites}
 
 * Le fichier JSON du compte du service SDK Firebase Admin Android est nécessaire pour que l’application mobile soit déplacée vers HTTP v1. Découvrez comment obtenir ce fichier dans la documentation de [Google Firebase](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
@@ -125,7 +124,7 @@ Vous pouvez également mettre à jour les diffusions existantes et les modèles 
 
    1. Par défaut, le script est en mode `dryrun`. Vous pouvez le lancer dans ce mode pour vérifier si une diffusion doit être corrigée.
 
-      Commande
+      La commande
 
       ```sql
       nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js 
@@ -171,7 +170,7 @@ Vous pouvez ainsi :
 * utiliser le champ **[!UICONTROL Bandeau déroulant]** pour définir le texte du bandeau déroulant de votre notification ;
 * utiliser le champ **[!UICONTROL Image]** pour définir l’URL de l’image à afficher dans votre notification ;
 * utiliser le champ **[!UICONTROL Nombre de notifications]** pour définir le nombre de nouvelles informations non lues à afficher directement sur l’icône de l’application ;
-* définir l’option **[!UICONTROL Permanent]** sur false afin que la notification soit automatiquement ignorée lorsque l’utilisateur ou l’utilisatrice clique dessus. Si elle est définie sur true, la notification reste affichée même lorsque l’utilisateur ou l’utilisatrice clique dessus ;
+* définir l’option **[!UICONTROL Permanent]** sur false afin que la notification soit automatiquement ignorée lorsque l’utilisateur ou l’utilisatrice clique dessus. Si elle est définie sur true, la notification reste affichée même lorsque l&#39;utilisateur clique dessus.
 * définir le niveau de **[!UICONTROL priorité de notification]** de votre notification : par défaut, minimum, faible ou élevé ;
 * définir le niveau de **[!UICONTROL visibilité]** de votre notification sur public, privé ou secret.
 
@@ -210,7 +209,7 @@ Pour vérifier si cela vous concerne, vous pouvez filtrer vos **services et abon
 
 ### Comment effectuer la mise à jour ? {#ios-transition-procedure}
 
-#### Conditions préalables {#ios-transition-prerequisites}
+#### Conditions préalables requises {#ios-transition-prerequisites}
 
 * Pour Campaign Classic v7, la prise en charge du mode **Authentification basée sur les jetons** a été ajoutée à la version 20.2. Si votre environnement s’exécute sur une ancienne version, une condition préalable à cette modification est de mettre à niveau votre environnement vers la [dernière build Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=fr){target="_blank"}. Pour Campaign v8, le mode **Authentification basée sur les jetons** est pris en charge par toutes les versions et aucune mise à niveau n’est nécessaire.
 
