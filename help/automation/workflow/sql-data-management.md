@@ -7,10 +7,10 @@ Role: User
 level: Experienced
 version: Campaign v8, Campaign Classic v7
 exl-id: a1e08d57-0387-4802-b447-f6d9ad87072a
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '393'
-ht-degree: 100%
+source-git-commit: c9098683077d4a01e269801b4434fcf5eb1f90a4
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 87%
 
 ---
 
@@ -25,6 +25,16 @@ Avant de configurer l&#39;activité, vérifiez que les prérequis suivants sont 
 * L’activité est disponible uniquement pour les sources de données distantes.
 * Le schéma sortant doit exister dans la base de données et être lié à une base de données FDA.
 
+## Remarques importantes {#important-notes}
+
+À partir de la version 8.9.1, les activités de workflow **[!UICONTROL Code SQL]** et **[!UICONTROL Gestion des données SQL]** ont été améliorées afin de mieux protéger les bases de données PostgreSQL et de garantir le bon fonctionnement de vos workflows lorsque le code SQL personnalisé est exécuté à partir de Campaign.
+
+En cas d&#39;erreur, deux solutions sont disponibles :
+
+* Solution 1 — `XtkSecurity_FeatureFlag_SqlSensitive`
+* Solution 2 — `XtkSecurity_SqlSensitive_Methods`
+
+Pour plus d’informations et de bonnes pratiques[ voir ](sql-code-and-javascript-code.md#important-notes)Code SQL).
 
 ## Configuration de l&#39;activité Gestion des données SQL {#configuring-the-sql-data-management-activity}
 
@@ -65,7 +75,7 @@ L&#39;activité est maintenant configurée. Elle est prête à être exécutée 
 >
 >Une fois l&#39;activité exécutée, le nombre d&#39;enregistrements de la transition sortante est fourni à titre indicatif uniquement. Il peut varier en fonction du niveau de complexité du script SQL.
 >  
->Si l&#39;activité est redémarrée, l&#39;intégralité du script est exécutée depuis le début, quel que soit le statut d&#39;exécution.
+>Si lactivité est redémarrée, lintégralité du script est exécutée depuis le début, quel que soit le statut dexécution.
 
 ## Exemples de script SQL {#sql-script-samples}
 
