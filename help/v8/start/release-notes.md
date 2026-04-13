@@ -3,10 +3,10 @@ title: Notes de mise à jour de Campaign v8
 description: Dernière version de Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 3256a2c57e3ccfec40dde33a2daaccbc3ff57b9b
+source-git-commit: c9098683077d4a01e269801b4434fcf5eb1f90a4
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 18%
+source-wordcount: '1154'
+ht-degree: 17%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 18%
 
 Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs des **dernières versions** de Campaign v8 (console). Pour en savoir plus sur les publications, les versions et les mises à niveau de Campaign, consultez [cette page](upgrades.md). Les autres versions sont répertoriées dans la section Versions précédentes de cette documentation.
 
-## Version 8.9.2 {#release-8-9-2}
+## Version 8.9.2 {#release-8-9-2}
 
 _1 mars 2026_
 
@@ -34,7 +34,7 @@ _1 mars 2026_
 * Correction d’un problème en raison duquel la préparation de diffusion échouait lors de l’application de règles de typologie personnalisées avec des règles de pression. (NEO-94457)
 * Correction d’un problème en raison duquel la console cliente pouvait rencontrer des échecs de traitement des requêtes HTTP. (NEO-94071)
 
-## Version 8.9.1 {#release-8-9-1}
+## Version 8.9.1 {#release-8-9-1}
 
 _27 janvier 2026_
 
@@ -62,13 +62,14 @@ Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Camp
 * Les comptes externes Snowflake prennent désormais en charge l’authentification OAuth2, fournissant des méthodes d’authentification modernes et sécurisées pour les connexions d’accès aux données fédérées. (NEO-87013) [En savoir plus](../config/external-accounts.md#snowflake-external-accounts)
 * Les comptes externes de briques de données prennent désormais en charge l’authentification OAuth2 via le principal de service (flux d’informations d’identification client non interactif), fournissant des méthodes d’authentification sécurisées pour les connexions d’accès aux données fédérées. L’authentification OAuth2 interactive sera disponible dans une version ultérieure. (NEO-87422) [En savoir plus](../config/external-accounts.md#databricks-external-accounts)
 * Correction de vulnérabilités d’accès aux fichiers de workflow en limitant les opérations aux répertoires autorisés, en empêchant l’accès non autorisé et l’exécution potentielle de code à distance. (NEO-88460)
-* Placer sur la liste autorisée Ajout de contrôles d’URL FTP aux activités de code de JavaScript de workflow, limitant les connexions FTP sortantes aux adresses autorisées uniquement. (NEO-89083)
+* Ajout de contrôles d’URL FTP aux activités de code de JavaScript de workflow, limitant les connexions FTP sortantes aux adresses autorisées uniquement. (NEO-89083)
 
 ### Autres changements {#changes-8-9-1}
 
 * Amélioration de la gestion de la mémoire de conteneur en implémentant la limitation automatique des workflows dans des conditions de mémoire élevée, avec des fonctionnalités intelligentes de redémarrage des workflows et des mécanismes de sécurisation de la mémoire pour les processus non critiques. (NEO-89041)
 * Ajout de la prise en charge des fonctions de chiffrement et de déchiffrement asymétriques dans les workflows Campaign. (NEO-80257)
 * Amélioration des performances de l’agent de réplication et de la résilience de la mémoire pour les chargements de données volumineux dans les déploiements FFDA. (NEO-88430)
+* Les activités de workflow **[!UICONTROL Code SQL]** et **[!UICONTROL Gestion des données SQL]** ont été améliorées afin de mieux protéger les bases de données PostgreSQL et de garantir le bon fonctionnement de vos workflows lorsque du code SQL personnalisé est exécuté à partir de Campaign. Reportez-vous aux sections [Gestion des données SQL](../../automation/workflow/sql-data-management.md#important-notes) et [Code SQL](../../automation/workflow/sql-code-and-javascript-code.md#important-notes) pour plus d’informations et de bonnes pratiques. (NEO-86540)
 
 
 ### Correctifs {#fixes-8-9-1}

@@ -1,22 +1,20 @@
 ---
 product: campaign
 title: Code SQL et code JavaScript
-description: En savoir plus sur les activités du workflow des codes SQL et JavaScript
+description: En savoir plus sur les activités de workflow de code SQL et JavaScript
 feature: Workflows
 Role: User
 level: Experienced
 version: Campaign v8, Campaign Classic v7
 exl-id: 8c385847-a320-4cd9-9048-2bf9daf2ee07
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '300'
-ht-degree: 100%
+source-git-commit: aa9413dc794cf1a3683b33ca064ce228c90107f7
+workflow-type: tm+mt
+source-wordcount: '424'
+ht-degree: 69%
 
 ---
 
 # Code SQL et code JavaScript{#sql-code-and-javascript-code}
-
-
 
 ## Code SQL {#sql-code}
 
@@ -31,6 +29,22 @@ Une activité de type **[!UICONTROL Code SQL]** exécute un script SQL. Le scrip
 * **[!UICONTROL Traiter les erreurs]**
 
   Pour plus d&#39;informations, consultez la section [Erreurs de traitement](monitor-workflow-execution.md#processing-errors).
+
+### Remarques importantes {#important-notes}
+
+À partir de la version 8.9.1, les activités de workflow **[!UICONTROL Code SQL]** et **[!UICONTROL Gestion des données SQL]** ont été améliorées afin de mieux protéger les bases de données PostgreSQL et de garantir le bon fonctionnement de vos workflows lorsque le code SQL personnalisé est exécuté à partir de Campaign. Voici quelques bonnes pratiques à suivre en cas d’erreur.
+
+Les options sont disponibles sous **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Options]**. Deux solutions sont disponibles en cas d&#39;erreur :
+
+**Solution 1**
+
+Définissez `XtkSecurity_FeatureFlag_SqlSensitive` sur `0`. La fonction est désactivée.
+
+**Solution 2**
+
+Modifiez `XtkSecurity_SqlSensitive_Methods`. Vous pouvez remplacer `<method name="TRUNCATE" action="block"/>` par `<method name="TRUNCATE" action="warn"/>`
+
+D&#39;autres méthodes telles que VACUUM FULL, REINDEX, CREATE INDEX, DROP INDEX sont également bloquées par défaut afin de protéger l&#39;intégrité de la base de données. Soyez prudent si vous souhaitez les définir sur Avertissement plutôt que sur Bloc. Ces méthodes peuvent avoir un impact important sur les performances de la base de données lors de l’exécution.
 
 ## Code JavaScript et code JavaScript avancé {#javascript-code}
 
