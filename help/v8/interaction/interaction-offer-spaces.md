@@ -156,4 +156,4 @@ Dans le cas où le destinataire n&#39;est éligible à aucune offre, la prévisu
 
 L’aperçu peut ignorer les contextes lorsqu’ils sont limités à un espace. C’est le cas lorsque le schéma d’interaction a été étendu afin d’ajouter des champs référencés dans un espace utilisant un canal entrant.
 
-Pour en savoir plus à ce sujet, consultez cet exemple dans la documentation de [Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=fr){target="_blank"}.
+Pour en savoir plus à ce sujet, consultez cet exemple dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=fr){target="_blank"}.

@@ -107,7 +107,7 @@ Ces profils de produit correspondent aux **groupes d’opérateurs** Campaign. L
 
    >[!IMPORTANT]
    >
-   >Le rôle **[!UICONTROL Administrateur]** accorde l&#39;accès au Panneau de Contrôle Campaign. Tout profil de produit dans le Adobe Admin Console contenant le mot « admin » dans son nom (tel que « Administrateurs », « admin », « admins », « administrateur d’approbation », etc.) accordera l’accès au Panneau de Contrôle. En savoir plus sur la [gestion de l’accès aux Panneaux de Contrôle ](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
+   >Le rôle **[!UICONTROL Administrateur]** accorde l&#39;accès au Panneau de Contrôle Campaign. Tout profil de produit dans le Adobe Admin Console contenant le mot « admin » dans son nom (tel que « Administrateurs », « admin », « admins », « administrateur d’approbation », etc.) accordera l’accès au Panneau de Contrôle. En savoir plus sur la [gestion de l’accès aux Panneaux de Contrôle &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
 
 1. **[!UICONTROL Opérateurs et opératrices de diffusion]** (diffusion)
 

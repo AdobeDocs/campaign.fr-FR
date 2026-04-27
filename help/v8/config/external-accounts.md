@@ -28,7 +28,7 @@ Vous pouvez accéder aux comptes externes à partir de l&#39;**[!UICONTROL Explo
 >
 >* En tant qu’utilisateur ou utilisatrice Managed Cloud Services, les comptes externes sont configurés par Adobe pour votre instance et ne doivent pas être modifiés.
 >
->* Dans le contexte d’un déploiement [ Entreprise (FFDA)](../architecture/enterprise-deployment.md), un compte externe **[!UICONTROL Full FDA]** (ffda) gère la connexion entre la base de données locale Campaign et la base de données cloud ([!DNL Snowflake]).
+>* Dans le contexte d’un déploiement [&#x200B; Entreprise (FFDA)](../architecture/enterprise-deployment.md), un compte externe **[!UICONTROL Full FDA]** (ffda) gère la connexion entre la base de données locale Campaign et la base de données cloud ([!DNL Snowflake]).
 >
 
 ## Comptes externes spécifiques à Campaign {#ac-external-accounts}
@@ -113,7 +113,7 @@ La page de l’interface utilisateur web de Campaign fournit une liste plus comp
 * **[Amazon Redshift](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#amazon-redshift){target="_blank"}** / **[Amazon Redshift (hérité)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#amazon-redshift-legacy){target="_blank"}** : connectez Campaign aux environnements d’entrepôt de données cloud AWS Redshift.
 * **[Azure Synapse Analytics](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#azure-synapse-analytics){target="_blank"}** - Connectez Campaign aux pools SQL dédiés Microsoft Azure Synapse.
 * **[Databricks](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#databricks){target="_blank"}** - Connectez Campaign aux charges de travail SQL et Lakehouse de Databricks.
-* **[BigQuery Google ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#google-bigquery){target="_blank"}** - Connectez Campaign aux jeux de données d’analyse BigQuery Google Cloud.
+* **[BigQuery Google &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#google-bigquery){target="_blank"}** - Connectez Campaign aux jeux de données d’analyse BigQuery Google Cloud.
 * **[Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#microsoft-sql-server){target="_blank"}** - Connectez Campaign à des bases de données SQL Server on-premise ou hébergées.
 * **[MySQL](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#mysql){target="_blank"}** - Connectez Campaign aux bases de données MySQL pour obtenir des requêtes et des workflows fédérés.
 * **[Netezza](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#netezza){target="_blank"}** - Connectez Campaign aux systèmes IBM Netezza/Performance Server.
@@ -146,13 +146,13 @@ Pour configurer l’authentification OAuth2 via le principal de service dans Cam
 
 La connexion FDA Snowflake utilise le pilote ODBC Snowflake. À compter de Campaign v8.9.1, les comptes externes Snowflake prennent en charge l’authentification OAuth2, fournissant une authentification sécurisée pour l’accès aux données fédérées.
 
-En savoir plus sur OAuth dans Snowflake dans la documentation de Snowflake [](https://docs.snowflake.com/en/user-guide/oauth-intro){target="_blank"}.
+En savoir plus sur OAuth dans Snowflake dans la documentation de Snowflake [&#128279;](https://docs.snowflake.com/en/user-guide/oauth-intro){target="_blank"}.
 
 Tout d’abord, procédez comme suit sur Snowflake :
 
 1. Avant de configurer votre compte externe Snowflake à l’aide d’OAuth 2.0, vous devez d’abord créer une intégration de sécurité OAuth dans Snowflake. Le rôle **ACCOUNTADMIN** est requis pour créer l’intégration de sécurité.
 
-   En savoir plus sur la création de l’intégration de sécurité OAuth dans la documentation de Snowflake [](https://docs.snowflake.com/en/sql-reference/sql/create-security-integration-oauth-snowflake){target="_blank"}.
+   En savoir plus sur la création de l’intégration de sécurité OAuth dans la documentation de Snowflake [&#128279;](https://docs.snowflake.com/en/sql-reference/sql/create-security-integration-oauth-snowflake){target="_blank"}.
 
 1. Vous pouvez ensuite interroger l’ID client et le secret client à l’aide de :
 
