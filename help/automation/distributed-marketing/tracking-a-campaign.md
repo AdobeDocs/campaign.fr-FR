@@ -7,8 +7,8 @@ role: User
 exl-id: 9904c1c6-c233-4aa2-a237-338ebde15661
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 100%
+source-wordcount: '441'
+ht-degree: 69%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Les opérateurs de l&#39;entité centrale peuvent effectuer un tracking des commandes des opérations proposées dans la liste des kits d&#39;opération.
+Les opérateurs de l’entité centrale peuvent effectuer un tracking des commandes des opérations proposées dans la liste des kits de campagne.
 
 Ils peuvent ainsi :
 
@@ -27,25 +27,25 @@ Ils peuvent ainsi :
 
 ## Filtrer les kits {#filter-packages}
 
-Dans l’onglet **[!UICONTROL Campagnes]**, vous pouvez afficher la liste des **[!UICONTROL Kits de campagne]** qui regroupe toutes les campagnes de marketing distribué existantes. Vous pouvez filtrer cette liste pour faire en sorte qu’elle n’affiche que les campagnes publiées, en retard, en attente de validation, etc. Pour ce faire, cliquez sur les liens dans la section supérieure de cette vue ou utilisez le lien **[!UICONTROL Filtrer la liste]** et sélectionnez l’état du kit de campagne à afficher.
+Dans l’onglet **[!UICONTROL Campagnes]**, vous pouvez afficher la liste des **[!UICONTROL Kits de campagne]** qui regroupe toutes les campagnes de marketing distribué existantes. Vous pouvez filtrer cette liste afin qu’elle n’affiche que les campagnes publiées, en retard, en attente de validation, etc. Pour cela, cliquez sur les liens dans la section supérieure de cette vue ou utilisez le lien **[!UICONTROL Liste de filtres]** et sélectionnez le statut du kit d&#39;opération à afficher.
 
 ![](assets/mkg_dist_catalog_filter.png)
 
 ## Modifier les packages {#edit-packages}
 
-La page des **[!UICONTROL Kits d&#39;opération]** permet de visualiser le résumé de chaque kit.
+La page des **[!UICONTROL kits de campagne]** permet de visualiser le résumé de chaque kit.
 
 Ce résumé affiche les informations suivantes : le libellé, le type d&#39;opération, le nom de l&#39;opération à partir de laquelle le kit a été créé et le dossier d&#39;enregistrement.
 
-Cliquez sur le nom du kit pour l&#39;éditer. Vous pourrez alors visualiser les commandes réalisées par les entités locales et leur état.
+Cliquez sur le nom du package pour le modifier. Vous pouvez également visualiser les commandes par entité locale et par statut.
 
 Cette information est proposée aussi dans la vue **[!UICONTROL Commandes d&#39;opérations]** qui liste unitairement toutes les commandes réalisées.
 
 ![](assets/mkg_dist_catalog_op_command_details.png)
 
-L&#39;opérateur central peut éditer la commande. Pour cela, il dispose de deux modes :
+L&#39;opérateur central peut modifier la commande. Vous avez le choix entre les deux méthodes suivantes :
 
-1. L’opérateur peut cliquer sur le nom de la commande pour l’éditer : il accède alors aux détails de celle-ci.
+1. L’opérateur ou l’opératrice peut cliquer sur le nom de la commande pour l’éditer : il ou elle accède alors aux détails de celle-ci.
 
    ![](assets/mkg_dist_catalog_op_command_edit1.png)
 
@@ -53,15 +53,15 @@ L&#39;opérateur central peut éditer la commande. Pour cela, il dispose de deux
 
    ![](assets/mkg_dist_catalog_op_command_edit1a.png)
 
-1. L&#39;opérateur peut cliquer sur le libellé du kit d&#39;opération pour l&#39;éditer : il peut éventuellement modifier certains paramétrages.
+1. L’opérateur peut cliquer sur le libellé du kit de campagne pour l’éditer : il peut éventuellement modifier certains paramétrages.
 
    ![](assets/mkg_dist_catalog_op_command_edit2.png)
 
 ## Annuler un kit {#cancel-a-package}
 
-A tout moment, l&#39;entité centrale a la possibilité d&#39;annuler un kit d&#39;opération.
+À tout moment, l’entité centrale a la possibilité d’annuler un kit de campagne.
 
-Pour cela, cliquez sur le bouton **[!UICONTROL Annuler]** à partir du **[!UICONTROL Tableau de bord]** du kit d&#39;opération.
+Pour cela, cliquez sur le bouton **[!UICONTROL Annuler]** à partir du **[!UICONTROL Tableau de bord]** du kit de campagne.
 
 ![](assets/mkg_dist_cancel_op_from_dashboard.png)
 
@@ -69,13 +69,13 @@ Vous avez la possibilité de motiver cette annulation dans le champ **[!UICONTRO
 
 Pour les **opérations locales**, l&#39;annulation d&#39;un kit le supprime de la liste des opérations marketing disponibles.
 
-Pour les **campagnes collaboratives**, l&#39;annulation d&#39;un kit d&#39;opération provoque de nombreuses actions :
+Pour les **campagnes collaboratives**, l’annulation d’un kit d’opération provoque de nombreuses actions :
 
 1. L&#39;annulation de toutes les commandes relatives à ce kit,
 
    ![](assets/mkg_dist_mutual_op_cancelled.png)
 
-1. L&#39;annulation de l&#39;opération de référence et l&#39;arrêt de tous les traitements en cours (workflows, diffusions),
+1. L&#39;annulation de l&#39;opération de référence et l&#39;arrêt de tous les traitements actifs (workflows, diffusions),
 
    ![](assets/mkg_dist_mutual_op_cancelled1.png)
 
@@ -83,11 +83,11 @@ Pour les **campagnes collaboratives**, l&#39;annulation d&#39;un kit d&#39;opér
 
    ![](assets/mkg_dist_mutual_op_cancelled2.png)
 
-Une fois annulée, l&#39;entité centrale peut toujours accéder au kit et éventuellement le réinitialiser, au besoin. Il ne sera à nouveau proposée aux entités locales que lorsqu&#39;il sera validé et démarré. Le processus de réinitialisation d&#39;un kit d&#39;opération est présenté ci-après.
+Les packages annulés restent accessibles et réinitialisables par l&#39;entité centrale (voir ci-dessous) si nécessaire. Ils ne seront proposés aux entités locales qu&#39;une fois approuvés et démarrés. Le processus de réinitialisation du package est illustré ci-dessous.
 
 ## Réinitialisation dʼun package {#reinitializing-a-package}
 
-Vous pouvez réinitialiser un kit d&#39;opération déjà publié afin de le modifier puis le mettre à nouveau à disposition des entités locales.
+Vous pouvez réinitialiser un kit de campagne déjà publié afin de le modifier puis le mettre à nouveau à disposition des entités locales.
 
 1. Pour cela, sélectionnez le kit concerné.
 1. Cliquez sur le lien **[!UICONTROL Réinitialiser le kit pour l&#39;utiliser à nouveau]**, puis sur **[!UICONTROL OK]**.
@@ -98,8 +98,8 @@ Vous pouvez réinitialiser un kit d&#39;opération déjà publié afin de le mod
 
    ![](assets/mkg_dist_mutual_op_reinit2.png)
 
-1. Le kit prend le statut **[!UICONTROL En édition]**. Il peut alors être modifié puis validé et publié pour être à nouveau proposé dans la liste des kits d&#39;opération.
+1. Le statut du package passe à **[!UICONTROL En édition]**. Modifiez, approuvez et publiez-le à nouveau pour le restaurer dans la liste du package de campagne.
 
 >[!NOTE]
 >
->Vous pouvez également réinitialiser un kit d&#39;opération qui a été annulé.
+>Vous pouvez également réinitialiser un kit de campagne qui a été annulé.

@@ -8,8 +8,8 @@ hide: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
 source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 100%
+source-wordcount: '1273'
+ht-degree: 88%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 100%
 
 Vous pouvez utiliser les SDK Campaign pour iOS et Android afin de faciliter l’intégration de votre application mobile dans la plateforme Adobe Campaign.
 
-Les versions d’Android et iOS prises en charge, ainsi que les versions compatibles des SDK Campaign pour Campaign v8, sont répertoriées dans la [matrice de compatibilité](../start/compatibility-matrix.md#MobileSDK) 
+Les versions d’Android et iOS prises en charge, ainsi que les versions compatibles des SDK Campaign pour Campaign v8, sont répertoriées dans la [matrice de compatibilité](../start/compatibility-matrix.md#MobileSDK)
 
-En tant qu&#39;administrateur de Campaign, vous pouvez télécharger les SDK Campaign à partir de la [distribution logicielle d&#39;Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/fr/campaign.html). Pour plus d&#39;informations, contactez l&#39;[Assistance clientèle d&#39;Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+En tant qu&#39;administrateur de Campaign, vous pouvez télécharger les SDK Campaign à partir de la [distribution logicielle d&#39;Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). Pour plus d&#39;informations, contactez l&#39;[Assistance clientèle d&#39;Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 >[!NOTE]
@@ -497,7 +497,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
    Pour les messages de notification, la réception du suivi doit être paramétrée à deux niveaux :
 
    * `onMessageReceived` (application non en arrière-plan) : la mise en œuvre a été effectuée dans la section précédente.
-   * `onCreate` de l’activité de lancement (ou de l’activité ciblée si la fonction `click_action` est utilisée). (L’application n’est pas en arrière-plan.)
+   * `onCreate` de l’activité de lancement (ou de l’activité ciblée si la fonction `click_action` est utilisée). (Application non en arrière-plan).
 
    Elle doit être effectuée au même moment que le suivi des clics/ouvertures.
 
@@ -593,7 +593,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 
 1. **Suivi des notifications silencieuses**
 
-   iOS permet d&#39;envoyer des notifications silencieuses, des notifications ou des données qui seront directement envoyées à une application mobile sans les afficher. Adobe Campaign vous permet de les tracker.
+   iOS permet d&#39;envoyer des notifications silencieuses, une notification ou des données qui seront directement envoyées à une application mobile sans les afficher. Adobe Campaign permet de les tracker.
 
    Pour suivre votre notification silencieuse, suivez l&#39;exemple ci-après.
 
@@ -643,7 +643,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 
    * **Status** permet de déterminer si un enregistrement a été effectué avec succès ou si une erreur s&#39;est produite.
 
-   * **ErrorReason** fournit des informations supplémentaires sur les erreurs qui se sont produites. Pour en savoir plus sur les erreurs disponibles et leur description, reportez-vous au tableau ci-dessous.
+   * **ErrorReason** vous fournit plus d’informations sur les erreurs qui se sont produites. Pour plus d’informations sur les erreurs disponibles et leur description, reportez-vous au tableau ci-dessous.
 
    | Statut | Description | ErrorReason |
    | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
@@ -885,7 +885,7 @@ A ce niveau, vous devez effectuer les opérations suivantes :
 
 * Associer votre extension de contenu à la catégorie envoyée par Adobe Campaign :
 
-  Si vous souhaitez que l&#39;application mobile affiche une image, définissez la valeur de la catégorie dans Adobe Campaign, par exemple &quot;image&quot;. Dans l&#39;application mobile, vous créez une extension de notification avec le paramètre **UNNotificationExtensionCategory** ayant pour valeur &quot;image&quot;. Lorsque la notification push est reçue sur l&#39;appareil, l&#39;extension est appelée selon la valeur de la catégorie définie.
+  Si vous souhaitez que votre application mobile affiche une image, vous pouvez définir la valeur de la catégorie sur « image » dans Adobe Campaign et, dans votre application mobile, vous créez une extension de notification avec le paramètre **UNNotificationExtensionCategory** défini sur « image ». Lorsque la notification push est reçue sur l’appareil, l’extension est appelée en fonction de la valeur de catégorie définie.
 
 * Définir la mise en page de la notification
 
@@ -893,7 +893,7 @@ A ce niveau, vous devez effectuer les opérations suivantes :
 
 * Afficher le contenu multimédia
 
-  Vous devez ajouter du code pour alimenter le widget avec les données multimédia. Voici un exemple de code pour une image :
+  Vous devez ajouter du code pour alimenter le widget avec les données multimédia. Voici un exemple de code pour une image :
 
   ```sql
   #import "NotificationViewController.h"

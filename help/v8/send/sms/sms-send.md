@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 version: Campaign v8, Campaign Classic v7
 exl-id: 9469aeb6-831f-4c8f-8c25-b335dc47c764
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Dans la fenêtre qui s’ouvre, choisissez l’action qui vous convient.
 
    ![](assets/send_action.png){zoomable="yes"}
 
-   Adobe Campaign effectuera tout le contrôle avant de valider l’envoi du BAT. Vous y verrez le volume réel de l’audience. À la fin de l’analyse, le bouton **[!UICONTROL Confirmer la diffusion]** ne sera pas disponible.
+   Adobe Campaign effectuera tout le contrôle avant de valider l’envoi du BAT. Vous y verrez le volume réel de l’audience. À la fin de l’analyse, le bouton **[!UICONTROL Confirmer la diffusion]** ne sera pas cliquable.
 
    ![](assets/send_analyze.png){zoomable="yes"}
 

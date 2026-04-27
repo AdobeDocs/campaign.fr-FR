@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 1a75f411-3f71-4114-b738-277820dc6138
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 98%
+source-wordcount: '1985'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ Pour envoyer des notifications push avec Adobe Campaign, vous devez d’abord 
 
 >[!CAUTION]
 >
->Certaines modifications importantes apportées au service Android FCM (Firebase Cloud Messaging) seront publiées en 2024 et auront une incidence sur votre mise en œuvre d’Adobe Campaign. Il se peut que la configuration de vos services d’abonnement pour les messages push Android doive être mise à jour pour prendre en charge cette modification. Vous pouvez déjà vérifier et agir.
+>Certaines modifications importantes apportées au service Android FCM (Firebase Cloud Messaging) seront publiées en 2024 et pourront avoir une incidence sur votre mise en œuvre d’Adobe Campaign. Il se peut que la configuration de vos services d’abonnement pour les messages push Android doive être mise à jour pour prendre en charge cette modification. Vous pouvez déjà vérifier et agir.
 
 Avant de commencer à envoyer des notifications push avec Adobe Campaign, vous devez vous assurer que les configurations et les intégrations sont en place sur l’application mobile et pour les balises dans Adobe Experience Platform. Le SDK mobile Adobe Experience Platform fournit des API d’intégration côté client pour vos mobiles via les SDK compatibles Android et iOS.
 
@@ -163,7 +163,7 @@ Pour créer un service destiné à envoyer des notifications push, procédez com
 
    ![](assets/new-service-push.png){width="800" align="left"}
 
-1. Saisissez un **[!UICONTROL Libellé]** et un **[!UICONTROL Nom interne]**, puis sélectionnez un type d’**[!UICONTROL Application mobile]**. 
+1. Saisissez un **[!UICONTROL Libellé]** et un **[!UICONTROL Nom interne]**, puis sélectionnez un type d’**[!UICONTROL Application mobile]**.
 
    >[!NOTE]
    >
@@ -203,15 +203,15 @@ Pour créer une application pour les appareils iOS, procédez comme suit :
 
    >[!NOTE]
    >
-   > La **[!UICONTROL clé d’intégration]** est entièrement personnalisable avec une valeur de chaîne, mais doit être exactement identique à celle spécifiée dans le SDK.
+   > La **[!UICONTROL clé d&#39;intégration]** est entièrement personnalisable avec une valeur de chaîne, mais doit être exactement identique à celle spécifiée dans le SDK.
    >
    > Vous ne pouvez pas utiliser le même certificat pour la version de développement (sandbox) et la version de production de l’application.
 
 1. Sélectionnez l’icône dans le champ **[!UICONTROL Icône de l’application]** pour personnaliser l’application mobile dans votre service.
 
-1. Sélectionnez le **[!UICONTROL mode d&#39;authentification]**. Deux modes sont disponibles :
+1. Sélectionnez le **[!UICONTROL mode d’authentification]**. Deux modes sont disponibles :
 
-   * (Recommandé) **[!UICONTROL Authentification basée sur les jetons]** : renseignez les paramètres de connexion APNs **[!UICONTROL Identifiant de la clé]**, **[!UICONTROL Identifiant de l&#39;équipe]** et **[!UICONTROL Identifiant de paquet]**, puis sélectionnez votre certificat p8 en cliquant sur **[!UICONTROL Renseigner la clé privée…]**. Pour plus d’informations sur l’**[!UICONTROL authentification basée sur les jetons]**, consultez la [documentation Apple](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
+   * (Recommandé) **[!UICONTROL Authentification basée sur les jetons]** : renseignez les paramètres de connexion APNs **[!UICONTROL Identifiant de la clé]**, **[!UICONTROL Identifiant de l&#39;équipe]** et **[!UICONTROL Identifiant de paquet]** puis sélectionnez votre certificat p8 en cliquant sur **[!UICONTROL Renseigner la clé privée...]**. Pour plus d’informations sur l’**[!UICONTROL authentification basée sur les jetons]**, consultez la [documentation d’Apple](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
 
    * **[!UICONTROL Authentification basée sur les certificats]** : cliquez sur **[!UICONTROL Renseigner le certificat...]**, sélectionnez votre clé p12 et saisissez le mot de passe fourni par l’équipe de développement d’applications mobiles. Notez que ce certificat est fourni avec une date d’expiration et doit être renouvelé tous les ans. Pour éviter toute interruption de service pour vos utilisateurs et utilisatrices, mettez à jour vos certificats avant qu’ils n’expirent. Les certificats sont valides pendant un an. Vous devez les mettre à jour pour continuer à communiquer avec les APN.
 
@@ -241,7 +241,7 @@ Pour créer une application pour les appareils Android, procédez comme suit :
 
    >[!NOTE]
    >
-   > La **[!UICONTROL clé d’intégration]** est entièrement personnalisable avec une valeur de chaîne, mais doit être exactement identique à celle spécifiée dans le SDK.
+   > La **[!UICONTROL clé d&#39;intégration]** est entièrement personnalisable avec une valeur de chaîne, mais doit être exactement identique à celle spécifiée dans le SDK.
    >
 
 1. Sélectionnez l’icône dans le champ **[!UICONTROL Icône de l’application]** pour personnaliser l’application mobile dans votre service.

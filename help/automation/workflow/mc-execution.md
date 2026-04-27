@@ -6,8 +6,8 @@ feature: Workflows
 role: User
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 100%
+source-wordcount: '205'
+ht-degree: 56%
 
 ---
 
@@ -28,12 +28,12 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
    <td> <span class="uicontrol">updateEventsStatus</span> <br /> </td> 
    <td> Ce workflow vous permet d'attribuer un statut à un événement. Les statuts des événements sont les suivants :<br /> 
     <ul> 
-     <li> <p><strong>En attente</strong> : l'événement se trouve dans la file d'attente. Aucun modèle de message ne lui a encore été associé.</p> </li> 
+     <li> <p><strong>En attente</strong> : l’événement est dans la file d’attente. Aucun modèle de message ne lui a encore été associé.</p> </li> 
      <li> <p><strong>En attente de diffusion</strong> : l'événement est dans la file d'attente, un modèle de message lui a été associé et il est en cours de traitement par la diffusion.</p> </li> 
-     <li> <p><strong>Envoyé</strong> : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a été envoyée.</p> </li> 
-     <li> <p><strong>Ignoré par la diffusion</strong> : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a été ignorée.</p> </li> 
-     <li> <p><strong>Erreur de diffusion</strong> : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a échoué.</p> </li> 
-     <li> <p><strong>Evénement non pris en charge</strong> : l'association de l'événement à un modèle de message a échoué. L'événement ne sera pas retraité.</p> </li> 
+     <li> <p><strong>Envoyé</strong> : ce statut est copié depuis les logs de diffusion. Cela signifie que la diffusion a été envoyée.</p> </li> 
+     <li> <p><strong>Ignoré par la diffusion</strong> : ce statut est copié depuis les logs de diffusion. Cela signifie que la diffusion a été ignorée.</p> </li> 
+     <li> <p><strong>Erreur de diffusion</strong> : ce statut est copié depuis les logs de diffusion. Cela signifie que la diffusion a échoué.</p> </li> 
+     <li> <p><strong>Evénement non pris en charge</strong> : l'association de l'événement à un modèle de message a échoué. L'événement ne sera pas retraité.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

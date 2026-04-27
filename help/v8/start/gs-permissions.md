@@ -7,15 +7,15 @@ level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
 version: Campaign v8, Campaign Classic v7
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '515'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '517'
+ht-degree: 96%
 
 ---
 
-# Prise en main des autorisations{#gs-permissions}
+# Commencer avec les autorisations{#gs-permissions}
 
-Adobe Campaign vous permet de définir et gérer les droits attribués aux utilisateurs. Ces ensembles de droits et de restrictions permettent d’autoriser ou de refuser :
+Adobe Campaign vous permet de définir et gérer les droits attribués aux utilisateurs. Ces ensembles de droits et de restrictions permettent d&#39;autoriser ou de refuser :
 
 * l’accès à certaines fonctionnalités
 * l’accès à certaines données
@@ -23,14 +23,14 @@ Adobe Campaign vous permet de définir et gérer les droits attribués aux util
 
 Ces autorisations sont définies en combinant les autorisations des groupes d’opérateurs, les droits nommés et les autorisations sur les dossiers.
 
-Dans Adobe Campaign, les utilisateurs sont des **opérateurs** et les **groupes d’opérateurs** représentent des rôles d’utilisateur. Un opérateur/une opératrice est un utilisateur/une utilisatrice Adobe Campaign qui possède des autorisations pour se connecter et effectuer des actions. La création des utilisateurs s’effectue dans Admin Console. Les autorisations s’appliquent aux profils utilisateur ou aux groupes d’utilisateurs. Vous pouvez accorder deux types d’autorisations :
+Dans Adobe Campaign, les utilisateurs sont des **opérateurs** et les **groupes d’opérateurs** représentent des rôles d’utilisateur. Un opérateur est un utilisateur Adobe Campaign qui possède des autorisations pour se connecter et effectuer des actions. La création des utilisateurs s’effectue dans Admin Console. Les autorisations s’appliquent aux profils utilisateur ou aux groupes d’utilisateurs. Vous pouvez accorder deux types d’autorisations :
 
-* Vous pouvez définir des groupes d&#39;opérateurs auxquels vous attribuez des droits, puis associer les opérateurs à un ou plusieurs groupes. Ce mode de fonctionnement permet de mutualiser les autorisations et d’uniformiser les profils des opérateurs. Il permet également de faciliter la gestion et la maintenance des profils utilisateur.
+* Vous pouvez définir des groupes d&#39;opérateurs auxquels vous attribuez des droits, puis associer les opérateurs à un ou plusieurs groupes. Vous pouvez ainsi réutiliser des droits et rendre les profils d’opérateurs plus cohérents. Il permet également de faciliter la gestion et la maintenance des profils utilisateur.
 * Vous pouvez attribuer directement des droits nommés aux utilisateurs, éventuellement pour surcharger les droits attribués via les groupes.
 
 ## Étapes clés de l’octroi des autorisations{#key-steps-permissions}
 
-En tant qu’administrateur/administratrice de produit, vous pouvez accorder des autorisations aux utilisateurs de votre organisation. Les autorisations sont accordées par le biais d’Adobe Admin Console et de la console cliente Campaign. Les utilisateurs peuvent se connecter à Adobe Campaign au moyen de leur Adobe ID. Découvrez comment vous connecter à Adobe Campaign sur [cette page](connect.md).
+En tant qu’administrateur/administratrice de produit, vous pouvez accorder des autorisations aux utilisateurs de votre organisation. Les autorisations sont accordées par le biais d’Adobe Admin Console et de la console cliente Campaign. Les utilisateurs et utilisatrices peuvent se connecter à Adobe Campaign au moyen de leur Adobe ID. Découvrez comment vous connecter à Adobe Campaign sur [cette page](connect.md).
 
 Les étapes clés sont les suivantes :
 

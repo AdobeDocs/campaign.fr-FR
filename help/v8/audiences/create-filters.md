@@ -8,18 +8,18 @@ exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 version: Campaign v8, Campaign Classic v7
 source-git-commit: ec1b41ccf532b044e75c69e795eabfb19a523ec2
 workflow-type: tm+mt
-source-wordcount: '1983'
-ht-degree: 83%
+source-wordcount: '2044'
+ht-degree: 85%
 
 ---
 
 # Utilisation des filtres{#create-filters}
 
-Le filtrage des données est le processus par lequel un jeu de données est limité aux enregistrements qui correspondent à des critères spécifiques. Ce sous-ensemble peut ensuite être utilisé pour des actions ciblées (telles que des mises à jour ou la création d’audiences) ou pour des analyses.
+Le filtrage des données consiste à réduire un jeu de données aux enregistrements qui correspondent à des critères spécifiques. Ce sous-ensemble peut ensuite être utilisé pour des actions ciblées (telles que des mises à jour ou la création d’audiences) ou pour des analyses.
 
-Lors de la navigation dans Campaign, les données sont affichées dans des listes. Vous pouvez appliquer des filtres intégrés pour accéder rapidement à un sous-ensemble défini, tel que des adresses en quarantaine, des destinataires non ciblés ou des enregistrements situés dans une plage d’âge spécifique ou à une date de création spécifique.
+Lorsque vous naviguez dans Campaign, les données sont affichées dans des listes. Vous pouvez appliquer des filtres intégrés pour accéder rapidement à un sous-ensemble défini, tel que des adresses en quarantaine, des personnes destinataires non ciblées ou des enregistrements avec une plage d’âge spécifique ou une date de création spécifique.
 
-En outre, vous pouvez créer des filtres personnalisés, les enregistrer pour une utilisation ultérieure et les partager avec d’autres utilisateurs de Campaign.
+Vous pouvez également créer des filtres personnalisés, les enregistrer pour une utilisation ultérieure ou les partager avec d’autres utilisateurs et utilisatrices de Campaign.
 
 Les filtres sont appliqués **dynamiquement** : à chaque modification des données, les résultats filtrés sont automatiquement mis à jour.
 
@@ -68,7 +68,7 @@ Pour les diffusions, par exemple, vous pouvez choisir de n’afficher que les di
 
 >[!TAB Classer par]
 
-Vous pouvez sélectionner l&#39;ordre de tri des données proposées dans les pages à partir de la liste déroulante située à droite du champ de filtrage par dossier. Le contenu de ce filtre dépend du type de données de la page.
+Vous pouvez sélectionner l&#39;ordre de tri des données proposées sur les pages dans la liste déroulante située à droite du champ de filtrage &#39;par dossier&#39;. Le contenu de ce champ dépend du type de données sur la page.
 
 Vous pouvez, par exemple, trier les tâches par priorité, date de création ou ordre alphabétique.
 
@@ -384,7 +384,7 @@ Pour effectuer des fonctionnalités de filtre avancé, utilisez des fonctions po
 
 Découvrez comment créer des requêtes avancées dans ces exemples complets :
 
-* Découvrez comment cibler des attributs destinataires simples sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=fr){target="_blank"}.
+* Découvrez comment cibler des attributs destinataires simples sur [cette page](https://experienceleague.adobe.com/fr/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=fr){target="_blank"}.
 * Découvrez comment filtrer les destinataires non contactés au cours des 7 derniers jours sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=fr){target="_blank"}.
 * Découvrez comment la liste des opérateurs peut être filtrée par comptes actifs sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=fr){target="_blank"}.
 * Découvrez comment créer une audience d’envoi d’e-mail d’anniversaire sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=fr){target="_blank"}.
@@ -396,7 +396,7 @@ Des paramètres avancés sont disponibles pour les filtres prédéfinis. Pour y 
 
 * Pour afficher le filtre par défaut pour toutes les listes basées sur ce type de document, sélectionnez l&#39;option **[!UICONTROL Filtre par défaut pour le type de document associé]**.
 
-  Par exemple, le filtre **[!UICONTROL Par nom ou nom d&#39;utilisateur]** est appliqué aux opérateurs. Cette option est sélectionnée afin que le filtre soit systématiquement proposé sur toutes les listes d&#39;opérateurs.
+  Par exemple, le filtre **[!UICONTROL Par nom ou nom d’utilisateur]** est appliqué aux opérateurs et opératrices. Cette option est sélectionnée afin que le filtre soit systématiquement proposé sur toutes les listes d’opérateurs et d’opératrices.
 
 * Pour mettre un filtre à disposition de tous les opérateurs Campaign, sélectionnez l&#39;option **[!UICONTROL Filtre partagé avec les autres opérateurs]**.
 

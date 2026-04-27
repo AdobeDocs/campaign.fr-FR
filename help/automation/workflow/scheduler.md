@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: ed70d2d3-251e-4ee8-84d4-73ad03e8dd35
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '400'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 77%
 
 ---
 
@@ -29,7 +29,7 @@ L&#39;activité **[!UICONTROL Planificateur]** est à considérer comme un dépa
 
 **Utiliser un planificateur par branche** : chaque branche de votre workflow ne doit comporter qu’une seule activité **[!UICONTROL Planificateur]**. Pour plus d’informations sur les bonnes pratiques relatives à l’utilisation des activités dans les workflows, consultez la page [Bonnes pratiques relatives aux workflows](workflow-best-practices.md#using-activities).
 
-**Empêcher les exécutions simultanées de workflows** : si un workflow est déclenché par un planificateur, gardez à l’esprit que plusieurs instances du workflow peuvent s’exécuter en même temps. Par exemple, si un planificateur déclenche le workflow toutes les heures, mais que l’exécution du workflow dure plus d’une heure, vous risquez de vous retrouver avec des exécutions qui se chevauchent. Pour éviter cela, pensez à configurer des vérifications pour empêcher plusieurs exécutions simultanées. [Découvrez comment empêcher l’exécution simultanée de plusieurs workflows](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions).
+**Empêcher les exécutions simultanées de workflows** : si un workflow est déclenché par un planificateur, gardez à l’esprit que plusieurs instances du workflow peuvent s’exécuter en même temps. Par exemple, si un planificateur déclenche le workflow toutes les heures, mais que l’exécution du workflow dure plus d’une heure, vous pourriez vous retrouver avec des exécutions qui se chevauchent.Pour éviter cela, pensez à configurer des vérifications pour empêcher plusieurs exécutions simultanées. [Découvrez comment empêcher l’exécution simultanée de plusieurs workflows](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions).
 
 **Prendre en compte les transitions retardées** : les transitions déclenchées par le planificateur peuvent être retardées si le workflow exécute des tâches de longue durée (comme les imports) ou si le module wfserver a été temporairement arrêté. Pour atténuer ce problème, limitez les heures d’activation du planificateur afin de vous assurer que les tâches s’exécutent dans une période définie.
 
@@ -39,13 +39,13 @@ Le planificateur définit le planning d&#39;activation de la transition. Pour le
 
 ![](assets/s_user_segmentation_scheduler.png)
 
-Un assistant permet de définir la fréquence et la période de validité de l&#39;activité. Les étapes de paramétrage sont les suivantes :
+Un assistant permet de définir la fréquence et la période de validité de l&#39;activité. Les étapes de configuration sont les suivantes :
 
 1. Sélectionnez la fréquence d&#39;activation et cliquez sur **[!UICONTROL Suivant]**.
 
    ![](assets/s_user_segmentation_scheduler2.png)
 
-1. Indiquez les heures et jours d’activation. Les paramètres de cette étape dépendent de la fréquence sélectionnée à l’étape précédente. Si vous choisissez de lancer l’activité plusieurs fois par jour, les options de configuration seront les suivantes :
+1. Indiquez les heures et les jours d’activation. Les paramètres de cette étape dépendent de la fréquence sélectionnée à l’étape précédente. Si vous choisissez de lancer l&#39;activité plusieurs fois par jour, les options de paramétrage seront les suivantes :
 
    ![](assets/s_user_segmentation_scheduler3.png)
 

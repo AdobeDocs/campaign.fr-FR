@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
 source-git-commit: 329130d716054e5054fc0a5989a77d950c546ec0
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 100%
+source-wordcount: '468'
+ht-degree: 99%
 
 ---
 
@@ -87,6 +87,6 @@ Les navigateurs ci-après sont compatibles avec Campaign pour un accès web. Pou
 * [Mises à jour des versions de Campaign](upgrades.md)
 * [Vérifier votre version de Campaign](upgrades.md#version)
 * [Installer la console cliente Campaign](connect.md)
-* [Versions du panneau de contrôle](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=fr){target="_blank"}
+* [Versions du Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=fr){target="_blank"}
 
 Pour être informé des nouvelles versions de la solution Experience Cloud, abonnez-vous à la [Mise à jour produit prioritaire d’Adobe](https://www.adobe.com/fr/subscription/priority-product-update.html){target="_blank"}.

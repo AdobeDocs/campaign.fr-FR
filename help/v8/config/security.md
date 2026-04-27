@@ -8,8 +8,8 @@ exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 version: Campaign v8, Campaign Classic v7
 source-git-commit: 04dff810f5a838b2468280519948c88e29acf221
 workflow-type: tm+mt
-source-wordcount: '2875'
-ht-degree: 67%
+source-wordcount: '2987'
+ht-degree: 66%
 
 ---
 
@@ -32,7 +32,7 @@ Utilisez cette liste de contrôle pour aligner votre configuration avec les vale
 * [Authentification et session](#authentication-and-session) : utiliser Adobe IMS, politique d’identité forte, délai d’expiration de la session
 * [Sécurité des instances et du réseau](#instance-and-network-security) : place sur la liste autorisée IP, autorisations d’URL, clés GPG par Panneau de Contrôle
 * [Protection des données et des PII](#data-and-pii-protection) : HTTPS, limitation de l’affichage des PII, restriction des mots de passe, protection des pages sensibles
-* [Instructions de codage &#x200B;](#coding-guidelines) : aucun secret codé en dur, validation de l’entrée, SQL paramétré, captchas
+* [Instructions de codage ](#coding-guidelines) : aucun secret codé en dur, validation de l’entrée, SQL paramétré, captchas
 * [Restriction des données](#data-restriction) : limitez l’accès aux champs de mot de passe et de secret dans les comptes externes
 * [Opérationnel et conformité](#operational-and-compliance) : comparez régulièrement cette ligne de base et utilisez le journal d’audit
 
@@ -93,7 +93,7 @@ Les [principaux règlements](#privacy-regulations) se réfèrent de la manière 
 
 * Un **titulaire de données** est une personne vivante dont les données à caractère personnel sont collectées, utilisées ou partagées et qui peut être identifiée, directement ou indirectement, par référence à ces données à caractère personnel.
 
-Ainsi, en tant qu’entreprise qui collecte et partage des données personnelles, vous êtes le contrôleur de données, vos clients sont les titulaires de données et Adobe Campaign agit comme un responsable du traitement des données lors du traitement des données personnelles des clients selon vos instructions. Notez qu’en tant que contrôleur de données, il vous appartient de gérer les relations avec les titulaires de données, par exemple lors de la gestion des [demandes d’accès à des informations personnelles](#privacy-requests). 
+Ainsi, en tant qu’entreprise qui collecte et partage des données personnelles, vous êtes le contrôleur de données, vos clients sont les titulaires de données et Adobe Campaign agit comme un responsable du traitement des données lors du traitement des données personnelles des clients selon vos instructions. Notez qu’en tant que contrôleur de données, il vous appartient de gérer les relations avec les titulaires de données, par exemple lors de la gestion des [demandes d’accès à des informations personnelles](#privacy-requests).
 
 ### Scénario d’utilisation {#use-case-scenario}
 
@@ -149,7 +149,7 @@ Depuis l’origine, Adobe Campaign dispose de fonctions importantes, essentiell
 * **Conservation des données** : toutes les tables de journalisation standard natives comportent des périodes de rétention prédéfinies, limitant généralement le stockage de leurs données à 6 mois maximum. Il est possible de définir des périodes de conservation supplémentaires à l&#39;aide de workflows. Pour en savoir plus, contactez les consultants Adobe ou les administrateurs techniques.
 * **Gestion des droits** : Adobe Campaign permet de gérer les droits affectés aux divers opérateurs Campaign par l’intermédiaire de différents rôles préconfigurés ou personnalisés. Vous pouvez ainsi gérer qui, dans votre entreprise, peut accéder à différents types de données, les modifier ou les exporter. Pour plus d’informations à ce sujet, consultez la section [À propos de la gestion des accès](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management){target=_blank}.
 
-### Demandes d&#39;accès à des informations personnelles  {#privacy-requests}
+### Demandes d&#39;accès à des informations personnelles {#privacy-requests}
 
 Adobe Campaign dispose de fonctionnalités supplémentaires pour vous aider à vous préparer, en tant que contrôleur de données, à certaines demandes d’accès à des informations personnelles :
 
@@ -179,7 +179,7 @@ Des règlements, tels que le Règlement général sur la protection des données
 
 ### Tracking des messages {#message-tracking}
 
-Adobe Campaign vous permet de suivre les e-mails envoyés et le comportement de vos destinataires de diffusion : ouverture, clics sur des liens, désinscriptions, etc. Pour obtenir davantage de renseignements, consultez la section [À propos des messages](../start/gs-message.md).
+Adobe Campaign vous permet de suivre les emails envoyés et le comportement de vos destinataires de diffusion : ouverture, clics sur des liens, désabonnements, etc. Pour plus d&#39;informations, consultez la section [À propos des messages](../start/gs-message.md).
 
 Pour ce faire, ajoutez des liens suivis à vos messages afin de mesurer l’impact de votre diffusion et le comportement de la personne destinataire dans l’onglet Tracking du tableau de bord de diffusion. Les données de suivi sont interprétées dans le rapport des indicateurs de tracking. Pour en savoir plus sur le tracking, reportez-vous à [cette page](../send/tracking.md).
 

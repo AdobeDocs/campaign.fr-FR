@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 70%
+source-wordcount: '987'
+ht-degree: 57%
 
 ---
 
@@ -31,11 +31,11 @@ Sélectionnez le format du mail dans la section inférieure de la fenêtre :
 
 * **[!UICONTROL Tenir compte des préférences des destinataires]** (mode par défaut)
 
-  Le format du message est défini en fonction des informations enregistrées dans le profil du destinataire et stockées par défaut dans le champ **[!UICONTROL Format des emails]** (@emailFormat). Si un destinataire souhaite recevoir les messages dans un format particulier, ce format lui est envoyé. Si ce champ n&#39;est pas renseigné, le message sera envoyé en multipart-alternative (voir ci-dessous).
+  Le format du message est défini en fonction des données stockées dans le profil du destinataire et stockées par défaut dans le champ **[!UICONTROL format des e-mails]** (@emailFormat). Si une personne destinataire souhaite recevoir les messages dans un format particulier, ce format lui est envoyé. Si le champ n’est pas renseigné, un message multipart-alternative est envoyé (voir ci-dessous).
 
 * **[!UICONTROL Laisser le mailer des destinataires choisir le format le plus adapté]**
 
-  Le message contient les deux formats : texte et HTML. Le format affiché lors de la réception dépend de la configuration du logiciel de messagerie du destinataire (multipart-alternative).
+  Le message contient les deux formats : texte et HTML. Le format affiché lors de la réception dépend de la configuration du logiciel de messagerie de la personne destinataire (multipart-alternative).
 
   >[!IMPORTANT]
   >
@@ -43,7 +43,7 @@ Sélectionnez le format du mail dans la section inférieure de la fenêtre :
 
 * **[!UICONTROL Envoyer tous les messages au format texte]**
 
-  Le message est envoyé au format texte. Le format HTML ne sera pas envoyé mais uniquement utilisé pour la page miroir, lorsque le destinataire clique sur le lien dans le message.
+  Le message est envoyé au format texte. Le format HTML n’est pas envoyé, mais utilisé pour la page miroir uniquement lorsque le destinataire clique sur le message.
 
 <!--
 >[!NOTE]
@@ -79,7 +79,7 @@ Pour plus d’informations sur la gestion des e-mails de rebond, consultez [cett
 
 ## Activer le désabonnement de la liste en un clic {#one-click-list-unsubscribe}
 
-L’URL list-unsubscribe en un clic est un lien ou un bouton affiché en regard des informations de l’expéditeur de l’e-mail, qui permet aux destinataires de se désinscrire instantanément de vos listes de diffusion en un seul clic. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"}-->
+L’URL list-unsubscribe en un clic est un lien ou un bouton affiché en regard des informations de l’expéditeur de l’e-mail, qui permet aux destinataires de se désinscrire instantanément de vos listes de diffusion en un seul clic. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
 
 Il s’affiche sous la forme d’un lien **Se désabonner** dans les interfaces de messagerie des FAI. Par exemple :
 
@@ -119,7 +119,7 @@ Selon le client de messagerie et la méthode qu’il utilise pour effectuer son 
 
 >[!NOTE]
 >
->Vous pouvez également définir manuellement les méthodes [List-Unsubscribe en un clic](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} et [« mailto » List-Unsubscribe](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}. Les étapes détaillées sont décrites dans le [&#x200B; Guide des bonnes pratiques en matière de délivrabilité d&#39;Experience Cloud](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"}.
+>Vous pouvez également définir manuellement les méthodes [List-Unsubscribe en un clic](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} et [« mailto » List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}. Les étapes détaillées sont décrites dans le [ Guide des bonnes pratiques en matière de délivrabilité d&#39;Experience Cloud](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"}.
 
 
 ## Ajouter des en-têtes SMTP {#adding-smtp-headers}
@@ -132,7 +132,7 @@ Les valeurs sont automatiquement encodées, si nécessaire.
 
 >[!IMPORTANT]
 >
->L&#39;ajout d&#39;un script pour l&#39;insertion d&#39;en-têtes SMTP supplémentaires est réservé aux utilisateurs expérimentés.
+>L’ajout d’un script pour l’insertion d’en-têtes SMTP supplémentaires est réservé aux utilisateurs expérimentés.
 >
 >La syntaxe de ce script doit être strictement conforme aux exigences de ce type de contenu : aucun espace superflu, aucune ligne vide, etc.
 
@@ -141,6 +141,6 @@ Les valeurs sont automatiquement encodées, si nécessaire.
 
 ## Générer une page miroir {#generating-mirror-page}
 
-La page miroir est une page HTML accessible en ligne via un navigateur web et dont le contenu est identique à celui de l’e-mail. Cela peut être utile si vos personnes destinataires rencontrent des problèmes de rendu ou accèdent à des images endommagées quand ils affichent votre e-mail dans leur boîte de réception.
+La page miroir est une page HTML accessible en ligne via un navigateur web. Son contenu est identique à celui de l’e-mail. Cela peut être utile si vos personnes destinataires rencontrent des problèmes de rendu ou accèdent à des images endommagées quand ils affichent votre e-mail dans leur boîte de réception.
 
 Découvrez comment insérer un lien vers la page miroir dans [cette section](mirror-page.md).

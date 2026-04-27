@@ -7,15 +7,15 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 86dee66a-357a-4927-916e-51cde6c006d5
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1061'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
 # Créer une liste récapitulative{#creating-a-summary-list}
 
-Ce cas pratique détaille la création d&#39;un workflow permettant, à partir d&#39;une collecte de fichiers et suite à plusieurs enrichissements de données, de créer une liste récapitulative. L&#39;exemple est basé sur une liste de contacts ayant effectué des achats dans un magasin.
+Ce cas pratique présente la création d’un workflow qui, après la collecte de fichiers et plusieurs enrichissements, permet de créer une liste récapitulative. L’exemple est basé sur une liste de contacts qui ont effectué des achats dans un magasin.
 
 ![](assets/uc2_enrich_overview.png)
 
@@ -57,7 +57,7 @@ Ces données sont contenues dans un fichier texte : &quot;Achats.txt&quot;.
 
    Le **Collecteur de fichiers** permet de collecter et d&#39;envoyer des fichiers sur le serveur Adobe Campaign.
 
-   L’activité **Chargement (fichier)** permet d’alimenter la table de travail du workflow avec les données collectées. Pour plus d’informations sur cette activité, consultez [cette page](data-loading-file.md).
+   L&#39;activité **Chargement(fichier)** permet d&#39;alimenter la table de travail du workflow avec les données collectées. Pour plus d’informations sur cette activité, consultez [cette page](data-loading-file.md).
 
 1. Configurez l&#39;activité **Collecteur de fichiers** pour collecter des fichiers de type texte (&#42;.txt) du répertoire sélectionné.
 
@@ -133,14 +133,14 @@ Dans l&#39;activité **Mise à jour de données**, la configuration suivante est
 
 ## Étape 3 : Enrichissement des données &#39;Contacts&#39; {#step-3--enriching--contact--data-}
 
-Le schéma &quot;Contacts&quot; est relié par un lien physique au schéma &quot;Achats&quot;. Il est donc possible d&#39;utiliser une autre option de l&#39;activité &quot;Enrichissement&quot; : l&#39;ajout de données liées à la dimension de filtrage.
+Le schéma « Contacts » est relié par un lien physique au schéma « Achats ». Vous pouvez donc utiliser une autre option de l&#39;option « Enrichissement » : l&#39;ajout de données liées à la dimension de filtrage.
 
 L&#39;objectif de ce deuxième enrichissement est de créer un agrégat sur le schéma des achats pour calculer le montant total des achats pour chaque contact identifié.
 
 1. Positionnez une activité **Requête** permettant de récupérer l&#39;intégralité des **Contacts** stockés.
 1. Positionnez une activité **Enrichissement** puis sélectionnez l&#39;ensemble principal résultant de la requête précédente.
 1. Cliquez sur **[!UICONTROL Ajouter des données]**.
-1. Cliquez sur l&#39;option **[!UICONTROL Données liées à la dimension de filtrage]**.
+1. Cliquez sur l’option **[!UICONTROL Données liées à la dimension de ciblage]**.
 1. Cliquez sur **[!UICONTROL Données liées à la dimension de filtrage]** dans la fenêtre **[!UICONTROL Choix des données à ajouter]**.
 1. Sélectionnez le noeud **[!UICONTROL Achats]** puis cliquez sur **[!UICONTROL Suivant]**.
 
@@ -169,9 +169,9 @@ Pour préparer la liste récapitulative, il est nécessaire d&#39;ajouter des ch
 
 La dernière étape consiste à écrire toutes les données enrichies dans une liste.
 
-1. Placez une activité **Mise à jour de liste** dans le workflow. Cette activité doit être reliée à la transition sortante de la deuxième activité d’enrichissement.
+1. Ajoutez une activité **Mise à jour de liste** au workflow. Cette activité doit être liée à la transition sortante de la deuxième activité d&#39;enrichissement.
 1. Sélectionnez l&#39;option **[!UICONTROL Créer la liste si besoin (Nom calculé)]**.
-1. Sélectionnez une valeur pour le nom calculé. Le libellé choisi pour la liste est la date courante : &lt;%= formatDate(new Date(), &quot;%2D/%2M/%2Y&quot;) %>.
+1. Sélectionnez une valeur pour le nom calculé. Le libellé choisi pour la liste est la date actuelle : &lt;%= formatDate(new Date(), « %2D/%2M/%2Y ») %>.
 
 Une fois le workflow exécuté, la liste contient :
 

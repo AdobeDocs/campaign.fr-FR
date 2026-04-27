@@ -8,14 +8,14 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
 source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 92%
+source-wordcount: '275'
+ht-degree: 54%
 
 ---
 
 # SpamAssassin{#spamassassin}
 
-Adobe Campaign peut être configuré pour fonctionner avec [SpamAssassin](https://spamassassin.apache.org){target="_blank"}, service tiers destiné à filtrer les emails indésirables. Vous pouvez ainsi attribuer un score aux emails et déterminer si un message risque d&#39;être considéré comme indésirable par les outils anti-spams utilisés à sa réception.
+Adobe Campaign peut être configuré pour fonctionner avec [SpamAssassin](https://spamassassin.apache.org){target="_blank"}, service tiers destiné à filtrer les emails indésirables. Vous pouvez ainsi attribuer un score aux e-mails afin de déterminer si un message risque d&#39;être considéré comme indésirable par les outils anti-spam utilisés à sa réception.
 
 SpamAssassin utilise diverses techniques de détection des emails indésirables, notamment :
 
@@ -47,7 +47,7 @@ La création et la conception d&#39;une diffusion sont présentées dans cette [
    >
    >Si vous ne sélectionnez pas de destinataire, la vérification anti-spam ne peut pas être effectuée.
 
-1. Un message d&#39;avertissement affiche le résultat du test. Si un risque élevé est détecté, le message suivant est affiché :
+1. Un message d&#39;avertissement donne le résultat du test. Si un niveau élevé de risque est détecté, le message d&#39;avertissement suivant s&#39;affiche :
 
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
@@ -59,4 +59,4 @@ La création et la conception d&#39;une diffusion sont présentées dans cette [
 
 >[!NOTE]
 >
->Chaque fois que vous cliquez sur **[!UICONTROL Vérification anti-spam]**, le service SpamAssassin est appelé et le message est réanalysé pour la détection des emails indésirables. Veillez à modifier votre contenu avant de réexécuter l&#39;analyse anti-spam.
+>Chaque fois que vous cliquez sur le bouton **[!UICONTROL Vérification anti-spam]**, le service SpamAssassin est appelé et le message est de nouveau analysé en vue de la détection anti-spam. Assurez-vous d&#39;avoir modifié votre contenu avant de relancer l&#39;analyse anti-spam.

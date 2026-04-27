@@ -9,12 +9,12 @@ level: Experienced
 exl-id: ef045e5d-cd02-44a0-9a1e-d468483a38d9
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 81%
+source-wordcount: '486'
+ht-degree: 82%
 
 ---
 
-# Pourquoi utiliser les API de Campaign Standard ?  {#why-using-campaign-standard-apis}
+# Pourquoi utiliser les API de Campaign Standard ? {#why-using-campaign-standard-apis}
 
 Adobe Campaign Standard fournit des API qui permettent aux systèmes existants de s’intégrer à la plateforme Campaign pour résoudre des problèmes concrets en temps réel.
 
@@ -59,7 +59,7 @@ Les étapes ci-dessous décrivent un cas pratique détaillé. Vous pourrez ainsi
 
    ![texte alternatif](assets/postman_collection.png)
 
-1. Sélectionnez la requête **Créer un profil**, puis mettez à jour la requête POST et l’onglet **En-têtes** avec vos propres informations (&lt;ORGANIZATION>, &lt;API_KEY>, &lt;ACCESS_TOKEN>). Voir à ce propos [cette section](setting-up-api-access.md).
+1. Sélectionnez la requête **Créer un profil**, puis mettez à jour la requête POST et l’onglet **En-têtes** avec vos propres informations (&lt;ORGANIZATION>, &lt;API_KEY>, &lt;ACCESS_TOKEN>). Pour plus d’informations, consultez [cette section](setting-up-api-access.md).
 
    ![texte alternatif](assets/postman_uc1.png)
 

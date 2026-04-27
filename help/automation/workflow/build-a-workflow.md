@@ -7,19 +7,19 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: a6003fdb-1035-4b80-8831-73f30a0b4fb2
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '868'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '875'
+ht-degree: 87%
 
 ---
 
 # Création d’un workflow {#build-a-workflow}
 
-## Créer un workflow {#create-a-new-workflow}
+## Création dʼun workflow {#create-a-new-workflow}
 
 Le flux de création de workflow dépend du type de workflow. Vous pouvez ainsi :
 
-* Créer des [workflows de ciblage](#targeting-workflows) à partir du nœud **[!UICONTROL Profils et cibles]** > **[!UICONTROL Tâches]** > **[!UICONTROL Workflows de ciblage]** de l&#39;Explorateur ou de l&#39;onglet **[!UICONTROL Profils et cibles]** de la page d&#39;accueil, via le sous-onglet **[!UICONTROL Workflows de ciblage]**.
+* Créer des [workflows de ciblage](#targeting-workflows) à partir du nœud **[!UICONTROL Profils et cibles]** > **[!UICONTROL Traitements]** > **[!UICONTROL Workflows de ciblage]** de l’Explorateur ou de l’onglet **[!UICONTROL Profils et cibles]** de la page d’accueil, via le sous-onglet **[!UICONTROL Workflows de ciblage]**.
 
   ![](assets/create-targeting-wf.png)
 
@@ -31,11 +31,11 @@ Pour créer un workflow, cliquez sur le bouton **[!UICONTROL Nouveau]** situé a
 
 ![](assets/create_a_wf_icon.png)
 
-Saisissez un libellé, puis cliquez sur **[!UICONTROL Enregistrer]**.
+Saisissez un libellé puis cliquez sur **[!UICONTROL Enregistrer]**.
 
 ## Ajout et liaison dʼactivités {#add-and-link-activities}
 
-Vous devez maintenant définir les différentes activités et les relier entre elles dans un diagramme. À ce stade de la configuration, sont disponibles le libellé du diagramme et le statut du workflow (Édition en cours). La section inférieure de la fenêtre est réservée à l&#39;édition du diagramme. Elle contient une barre d&#39;outils, une palette d&#39;activités (à gauche) et le diagramme (à droite).
+Vous devez maintenant définir les différentes activités et les relier entre elles dans un diagramme. À ce stade de la configuration, nous pouvons voir le libellé du diagramme et le statut du workflow (Modification en cours). La section inférieure de la fenêtre est utilisée uniquement pour modifier le diagramme. Il contient une barre d&#39;outils, une palette d&#39;activités (à gauche) et le diagramme lui-même (à droite).
 
 ![](assets/new-workflow-2.png)
 
@@ -93,7 +93,7 @@ Lʼaffichage et la mise en page du diagramme peuvent être modifiés à lʼaide 
 
   Pour aligner les icônes, sélectionnez-les et cliquez sur l&#39;icône **[!UICONTROL Aligner verticalement]** ou **[!UICONTROL Aligner horizontalement]**.
 
-  Utilisez la touche **CTRL** pour sélectionner plusieurs activités discontinues ou désélectionner une ou plusieurs activités d&#39;une sélection. Cliquez sur l&#39;arrière-plan du diagramme pour tout désélectionner.
+  Utilisez la touche **CTRL** pour sélectionner plusieurs activités dispersées ou pour désélectionner une ou plusieurs activités. Cliquez sur l’arrière-plan du diagramme pour tout désélectionner.
 
 * **Gestion des images**
 
@@ -120,7 +120,7 @@ Ces commentaires s&#39;afficheront automatiquement quand des opérateurs balayer
 
 ## Les modèles de workflows {#workflow-templates}
 
-Un modèle de workflow contient le paramétrage global des propriétés et éventuellement d&#39;un ensemble d&#39;activités enchaînées dans un diagramme. Ce paramétrage peut être réutilisé pour créer de nouveaux workflows dont certains éléments sont pré-paramétrés.
+Les modèles de workflow contiennent la configuration globale des propriétés et éventuellement une plage d’activités concaténées dans un diagramme. Cette configuration peut être réutilisée pour créer de nouveaux workflows contenant un certain nombre d&#39;éléments préconfigurés
 
 Vous pouvez créer de nouveaux modèles de workflows à partir de modèles existants ou transformer directement un workflow en modèle.
 

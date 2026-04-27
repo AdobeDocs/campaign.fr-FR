@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 2a7ae88e-d47f-416b-84cd-986ab9be6aef
 source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 100%
+source-wordcount: '1410'
+ht-degree: 88%
 
 ---
 
@@ -39,7 +39,7 @@ Sélectionnez le compte externe correspondant au CRM avec lequel vous souhaitez 
 
 ![](assets/crm-remote-obj.png)
 
-La configuration de cette activité dépend ensuite du traitement à réaliser. Les différents types de paramétrages sont présentés ci-après.
+La configuration de cette activité dépend ensuite du traitement à réaliser. Différentes configurations sont présentées ci-dessous.
 
 ## Import depuis le CRM {#importing-from-the-crm}
 
@@ -57,7 +57,7 @@ Pour importer des données depuis le CRM dans Adobe Campaign, vous devez réali
 
    >[!CAUTION]
    >
-   >L&#39;identifiant de l&#39;enregistrement dans le CRM est obligatoire pour relier les objets côté CRM et côté Adobe Campaign. Il est automatiquement ajouté lors de la validation de la boîte.
+   >L&#39;identifiant de l&#39;enregistrement dans le CRM est obligatoire pour relier les objets présents dans CRM et dans Adobe Campaign. Il est ajouté automatiquement lorsque la boîte est approuvée.
    >
    >La date de la dernière modification côté CRM est également requise pour permettre l&#39;import incrémental des données.
 
@@ -75,7 +75,7 @@ Pour importer des données depuis le CRM dans Adobe Campaign, vous devez réali
 
    Pour plus d’informations, consultez [cette section](#variable-management).
 
-### Gestion des variables {#variable-management}
+### Gérer les variables {#variable-management}
 
 Activez l’option **[!UICONTROL Index automatique]** pour ne collecter que les objets modifiés depuis la dernière exécution de l’import.
 
@@ -85,7 +85,7 @@ La date de la dernière synchronisation est stockée dans l&#39;option indiquée
 
 >[!NOTE]
 >
->Cette note s&#39;applique uniquement à l&#39;activité **[!UICONTROL Connecteur CRM]** générique. Pour les autres activités CRM, le processus est automatique.
+>Cette note s’applique uniquement à l’activité générique **[!UICONTROL Connecteur CRM]**. Pour les autres activités CRM, le processus est automatique.
 >
 >Cette option doit être créée et renseignée manuellement sous **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Options]**. Il doit s’agir d’une option de texte et sa valeur doit correspondre au format suivant : **`yyyy/MM/dd hh:mm:ss`**.
 > 
@@ -98,7 +98,7 @@ Par défaut, les champs suivants sont utilisés (dans l&#39;ordre indiqué) :
 * Pour Microsoft Dynamics : **modifiedon**,
 * Pour Salesforce.com : **LastModifiedDate**, **SystemModstamp**.
 
-L&#39;activation de l&#39;option **[!UICONTROL Index automatique]** génère trois variables, qui pourront être exploitées dans le workflow de synchronisation, via une activité de type **[!UICONTROL Code JavaScript]**. Ces variables sont les suivantes :
+L&#39;activation de l&#39;option **[!UICONTROL Index automatique]** génère trois variables, qui pourront être exploitées dans le workflow de synchronisation, via une activité de type **[!UICONTROL Code JavaScript]**. Ces activités sont les suivantes :
 
 * **vars.crmOptionName** : nom de l&#39;option contenant la date du dernier import.
 * **vars.crmStartImport** : date de début (incluse) du dernier import de données.
@@ -114,10 +114,10 @@ Afin d&#39;assurer un bon fonctionnement avec les différents CRM, les filtres d
 
 * Chaque niveau de filtrage ne peut utiliser qu&#39;un seul type d&#39;opérateur.
 * L&#39;opérateur AND NOT n&#39;est pas supporté.
-* Les comparaisons ne peuvent porter que sur des valeurs nulles (de type &#39;est vide&#39;/&#39;n&#39;est pas vide&#39;) ou des nombres. Lorsque la colonne Valeur (colonne de droite) est évaluée, le résultat de cette évaluation doit être une valeur numérique.
+* Les comparaisons peuvent uniquement concerner des valeurs nulles (type &#39;is empty&#39;/&#39;is not empty&#39;) ou des nombres. Cela signifie que la valeur (colonne de droite) est évaluée et que le résultat de cette évaluation doit être un nombre. Les comparaisons de type JOIN ne sont donc pas prises en charge.
 * Les données de la colonne Valeur sont évaluées en JavaScript.
 * Les comparaisons de type JOIN ne sont pas supportées.
-* L&#39;expression indiquée dans la colonne de gauche doit nécessairement être un champ. Elle ne peut pas être une combinaison de plusieurs expressions, un nombre, etc.
+* L’expression dans la colonne de gauche doit être un champ. Il ne peut pas s’agir d’une combinaison de plusieurs expressions, d’un nombre, etc.
 
 ### Ordre de tri {#order-by}
 
@@ -147,7 +147,7 @@ Pour exporter des données vers votre CRM, créez un workflow du type suivant :
 
 ![](assets/crm-export-diagram.png)
 
-1. Sélectionnez une opération de type **[!UICONTROL Export vers le CRM]**.
+1. Sélectionnez une opération de type **[!UICONTROL Exporter vers le CRM]**.
 1. Accédez à la liste déroulante **[!UICONTROL Objet distant]** et sélectionnez l’objet à exporter. Cet objet correspond à l’une des tables créées dans Adobe Campaign lors de la configuration du connecteur.
 
    >[!CAUTION]
@@ -182,7 +182,7 @@ Pour cela, sélectionnez la conversion à appliquer dans la colonne correspondan
 
 ![](assets/crm-task-import.png)
 
-Le mode **[!UICONTROL par défaut]** applique une conversion automatique des données, qui correspond dans la plupart des cas, à un copier/coller des données. Toutefois, la gestion des fuseaux horaires est appliquée.
+Le mode **[!UICONTROL Par défaut]** applique la conversion automatique des données, qui correspond dans la plupart des cas à un copier/coller des données. Toutefois, la gestion des fuseaux horaires est appliquée.
 
 Les autres conversions possibles sont les suivantes :
 

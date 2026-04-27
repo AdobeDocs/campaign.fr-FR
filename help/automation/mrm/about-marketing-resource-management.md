@@ -7,8 +7,8 @@ role: Admin, User
 exl-id: 6fa4f4e3-c5a5-4d7f-8e71-826dee4e926a
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 100%
+source-wordcount: '369'
+ht-degree: 82%
 
 ---
 
@@ -34,7 +34,7 @@ Dans le cadre de la gestion des ressources marketing Adobe Campaign, les concep
 
 * **Tâche**
 
-  Une tâche correspond à une action à mener dans le cadre d&#39;une opération. Une tâche est assignée à un groupe ou à une personne. Une tâche enfant peut être dépendante d&#39;une tâche mère, ainsi la tâche parent ne sera accomplie que lorsque toutes les tâches filles seront terminées. Une tâche peut être par exemple : un référencement de site internet, une revue de budget, un brief, etc.
+  Une tâche correspond à une action à réaliser dans le cadre d&#39;une opération. Une tâche est affectée à un groupe ou à une personne. Une tâche enfant peut dépendre d&#39;une tâche parent, ce qui signifie que la tâche parent ne sera pas exécutée tant que toutes les tâches enfants ne seront pas terminées. Voici quelques exemples de tâches : référencer un site Web, réviser un budget, rédiger un mémoire, etc.
 
   Voir à ce sujet la section [Créer et gérer les tâches](creating-and-managing-tasks.md).
 

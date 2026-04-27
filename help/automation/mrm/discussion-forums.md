@@ -7,7 +7,7 @@ role: User
 exl-id: c2336507-beea-4ddb-aa8c-1ec591eb5683
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '585'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ Pour démarrer un nouveau thread, cliquez sur le bouton **[!UICONTROL Ajouter un
 ![](assets/mrm-forum-new-thread.png)
 
 
-Saisissez votre texte dans le champ **[!UICONTROL Message]** et, le cas échéant, saisissez un titre pour la discussion dans le champ **[!UICONTROL Objet]**.
+Saisissez votre texte dans la zone **[!UICONTROL Message]** et, le cas échéant, un titre pour la discussion dans le champ **[!UICONTROL Objet]**.
 
 Les opérateurs/opératrices ayant déjà publié un message dans ce forum reçoivent une notification par défaut. Vous pouvez sélectionner un opérateur/opératrice supplémentaire à avertir. Pour avertir plusieurs opérateurs/opératrices, sélectionnez un groupe d’opérateurs/opératrices.
 
@@ -50,7 +50,7 @@ Pour accéder au forum d’un opérateur/une opératrice, procédez comme suit 
 * Accédez au dossier **[!UICONTROL Administration > Gestion des accès > Opérateurs]** de l’explorateur Campaign, sélectionnez l’opérateur/opératrice afin d’ouvrir son tableau de bord, puis cliquez sur le lien **[!UICONTROL Forum]** dans le coin supérieur droit.
 * Recherchez le nom de l’opérateur/opératrice dans l’interface utilisateur d’Adobe Campaign (via un message publié dans le forum par cet opérateur/cette opératrice ou une tâche qui lui est affectée) et cliquez dessus pour accéder à son tableau de bord.
 
-## S’abonner à un forum {#subscribing-to-a-forum}
+## S&#39;abonner à un forum {#subscribing-to-a-forum}
 
 Vous pouvez vous abonner à un forum pour suivre toutes les discussions. Une fois abonné(e), vous recevez une notification par e-mail chaque fois qu’un message est publié sur le forum.
 
@@ -71,11 +71,11 @@ Pour répondre à un message, cliquez dans le corps de l’e-mail, puis connecte
 
 Si des opérateurs/opératrices abonné(e)s à un forum ne reçoivent pas les notifications attendues, procédez comme suit :
 
-* Vérifiez que les opérateurs/opératrices ont bien une adresse e-mail renseignée dans leur profil.
+* Vérifiez que les opérateurs ont bien une adresse email renseignée dans leur profil.
 * Accédez au dossier **[!UICONTROL Administration > Exploitation > Workflows techniques > Processus de Campaign]** de l’explorateur Campaign et vérifiez que le workflow **[!UICONTROL Traitements dans les forums de discussion]** a démarré sans erreur.
 * Vérifiez les logs de diffusion :
 
    * Depuis la page d’accueil d’Adobe Campaign, accédez à **[!UICONTROL Campagnes > Navigation > Diffusions]**, puis ouvrez la diffusion **[!UICONTROL Notification des forums de discussion]**.
    * Dans l’explorateur Campaign, accédez à **[!UICONTROL Administration > Exploitation > Objets créés automatiquement > Diffusions techniques > Notifications de workflow]**, puis cliquez sur **[!UICONTROL Notification des forums de discussion]**.
 
-  Dans la boîte **[!UICONTROL Notification des forums de discussion]**, les logs de diffusion se trouvent dans l’onglet **[!UICONTROL Édition > Diffusion]**. Consultez également les onglets **[!UICONTROL Tracking > Journal]** et **[!UICONTROL Causes d&#39;exclusion]**.
+  Dans la boîte **[!UICONTROL Notification des forums de discussion]**, les logs de diffusion se trouvent dans l’onglet **[!UICONTROL Édition > Diffusion]**. Consultez également les onglets **[!UICONTROL Tracking > Log]** et **[!UICONTROL Causes d&#39;exclusion]**.

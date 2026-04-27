@@ -7,9 +7,9 @@ role: Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: f5580401-3305-4915-88a2-3400a32aa7aa
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '174'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '175'
+ht-degree: 85%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 
 
-Les images utilisées dans les diagrammes des différents workflows peuvent être modifiées. Elles doivent toutefois respecter certaines contraintes. Les étapes de mise en oeuvre sont les suivantes :
+Les images utilisées dans les diagrammes des différents workflows peuvent être modifiées. Cependant, ils doivent respecter certaines contraintes. Les étapes de mise en œuvre sont les suivantes :
 
 * Pour changer l’image d’arrière-plan, sélectionnez le workflow de ciblage visé et cliquez sur **[!UICONTROL Propriétés]**.
 

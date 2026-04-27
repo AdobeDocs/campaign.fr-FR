@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1238'
-ht-degree: 99%
+source-wordcount: '1261'
+ht-degree: 88%
 
 ---
 
@@ -46,12 +46,12 @@ La définition du contenu du message transactionnel est la même que pour toutes
 
 >[!CAUTION]
 >
->Les images incluses dans le message doivent être accessibles publiquement. Adobe Campaign ne fournit pas de mécanisme de chargement des images pour les messages transactionnels.\
+>Les images incluses dans le message doivent être accessibles au public. Adobe Campaign ne fournit aucun mécanisme de chargement d’images pour les messages transactionnels.\
 >Contrairement à JSSP ou webApp, `<%=` n’a pas de séquence d’échappement par défaut.
 >
 >Vous devez appliquer une séquence d&#39;échappement correcte à toutes les données provenant de l&#39;événement. Cette séquence d&#39;échappement dépend de l&#39;utilisation de ce champ. Par exemple, dans une URL, utilisez encodeURIComponent. Pour un affichage dans le code HTML, vous pouvez utiliser escapeXMLString.
 
-Lorsque vous avez défini le contenu de votre message, vous pouvez intégrer les informations de l&#39;événement dans le corps du message et ainsi le personnaliser. Les informations de l&#39;événement sont insérées dans le corps du texte à l&#39;aide des balises de personnalisation.
+Une fois que vous avez défini le contenu de votre message, vous pouvez intégrer des informations d’événement dans le corps du message et les personnaliser. Les informations d’événement sont insérées dans le corps du texte grâce aux balises de personnalisation.
 
 ![](assets/messagecenter_create_content.png)
 
@@ -66,7 +66,7 @@ Pour insérer des balises de personnalisation dans le corps d&#39;un message ema
 
    ![](assets/messagecenter_create_custo_1.png)
 
-1. Renseignez la balise en utilisant la syntaxe suivante : **nom de l’élément**.@**nom de l’attribut** comme indiqué ci-dessous.
+1. Complétez la balise selon la syntaxe suivante : **nom de l&#39;élément**.@**nom de l&#39;attribut** comme illustré ci-dessous.
 
    ![](assets/messagecenter_create_custo_2.png)
 
@@ -82,11 +82,11 @@ Une adresse de contrôle vous permet d&#39;afficher une prévisualisation de vot
 
 1. Attribuez-lui un libellé afin de faciliter la sélection ultérieurement, puis saisissez l&#39;adresse de contrôle (e-mail ou téléphone portable selon le canal de communication).
 
-1. Renseignez l&#39;identifiant externe : ce champ optionnel vous permet de renseigner la clé métier (identifiant unique, nom + email, etc.), commune à toutes les applications de votre site web, que vous utilisez pour identifier vos profils. Si ce champ est aussi présent dans la base marketing Adobe Campaign, vous pourrez alors réconcilier un évènement avec un profil en base.
+1. Renseignez l&#39;identifiant externe : ce champ optionnel vous permet de renseigner la clé métier (identifiant unique, nom + email, etc.) commun à toutes les applications de votre site web, utilisé pour identifier vos profils. Si ce champ est également présent dans la base de données marketing d’Adobe Campaign, vous pouvez ensuite réconcilier un événement avec un profil dans la base de données.
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. Insérez les données de test. [En savoir plus sur les données de personnalisation dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
+1. Insérez les données de test. [En savoir plus sur les données de personnalisation dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
 
    ![](assets/messagecenter_create_custo_3.png)
 
@@ -154,7 +154,7 @@ Pour effectuer l&#39;envoi :
 
    ![](assets/messagecenter_send_proof_002.png)
 
-Les BAT sont accessibles au niveau de chaque modèle, depuis l&#39;onglet **[!UICONTROL Suivi]**.
+Les BAT sont accessibles au niveau de chaque modèle, depuis l&#39;onglet **[!UICONTROL Suivi.]**
 
 ![](assets/messagecenter_send_proof_003.png)
 

@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: c4d500ef-2339-491f-9ae2-9bfaf72088a9
 source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 100%
+source-wordcount: '794'
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ Voici les informations dont vous avez besoin pour remplir ce formulaire. Chaque 
   Spécifier 0 désactive la limite.
 
 * **[!UICONTROL Paramètres SMPP facultatifs (TLV)]**
-Vous pouvez spécifier des champs supplémentaires à envoyer en tant que paramètres SMPP (TLV) facultatifs. Ces champs supplémentaires sont envoyés avec chaque MT et les champs personnalisés permettent d’avoir des valeurs différentes pour chaque MT.
+Vous pouvez spécifier des champs supplémentaires à envoyer en tant que paramètres SMPP facultatifs (TLV). Ces champs supplémentaires sont envoyés avec chaque MT et les champs personnalisés permettent d’avoir des valeurs différentes pour chaque MT.
 Le tableau répertorie les paramètres facultatifs à envoyer avec chaque message. Les colonnes contiennent les informations suivantes :
    * **Libellé** : il s’agit d’un libellé de forme libre facultatif. Il n’est pas transmis au fournisseur. Vous pouvez fournir une description textuelle du paramètre.
    * **Balise** : valeur de balise, au format décimal (par exemple, 12345) ou hexadécimal avec le préfixe 0x (par exemple, 0x12ab). Les balises peuvent aller entre 0 et 65535. Demandez au fournisseur de services SMPP les balises qu’il prend en charge.

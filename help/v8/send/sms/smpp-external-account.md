@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
 source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '3666'
-ht-degree: 99%
+source-wordcount: '3682'
+ht-degree: 94%
 
 ---
 
@@ -24,7 +24,7 @@ Le connecteur SMS dans Adobe Campaign offre de nombreuses options pour adapter 
 >
 >* La configuration d&#39;une connexion à un nouveau fournisseur peut nécessiter des compétences techniques, des connaissances relatives au protocole TCP, au binaire, à la représentation hexadécimale et aux encodages de texte. Il faudra également une coopération active avec le fournisseur.
 
-L’équipement réseau côté fournisseur SMS est souvent appelé SMSC.
+L&#39;équipement réseau côté fournisseur SMS est souvent appelé SMSC.
 
 ## Paramètres de connexion {#smpp-connection-settings}
 
@@ -37,7 +37,7 @@ Voici les paramètres et leur rôle nécessaires pour configurer la connexion :
 * **Port** : port TCP auquel se connecter.
 * **Compte** : nom d’utilisateur ou d’utilisatrice de la connexion. Transmis dans le champ system_id du PDU BIND.
 * **Mot de passe** : mot de passe de la connexion SMPP. Transmis dans le champ du mot de passe du PDU BIND.
-* **Type de système** : valeur transmise dans le champ system_type du PDU BIND. Certains fournisseurs ont besoin d’une valeur spécifique ici.
+* **Type de système** : valeur transmise dans le champ system_type du PDU BIND. Certains fournisseurs ont besoin d&#39;une valeur spécifique ici.
 * **Nombre de connexions enfant MTA** : définit le nombre de connexions ouvertes par thread d’envoi.
 Le nombre total de connexions peut être calculé à l’aide de cette formule :
   *Nombre total de connexions = Nombre de processus SMS x nombre de threads d’envoi x nombre de connexions enfant MTA*
@@ -53,19 +53,19 @@ En **mode émetteur-récepteur**, il s’agit du nombre total de connexions.
 En **mode émetteur + récepteur**, cela définit le nombre de paires émetteur + récepteur (une paire = un émetteur + un récepteur).
 Il n’existe aucun moyen de modifier l’équilibre entre les émetteurs et les récepteurs.
 
-* **Envoyer des messages par le biais d’un processus dédié** :
-pour Adobe Campaign v8.7.2 et versions ultérieures, cette option doit toujours être activée. Cela a de nombreux impacts sur le mode de traitement des messages.
-* **Mode de connexion SMPP** :
-définissez la connexion en mode Émetteur-récepteur ou en mode Émetteur + récepteur séparé.
+* **Envoyez des messages par le biais d’un processus dédié** :
+Pour Adobe Campaign v8.7.2 et les versions ultérieures, cette option doit toujours être activée. Cela a de nombreux impacts sur le mode de traitement des messages.
+* **Mode de connexion SMPP** :
+Définissez la connexion en mode émetteur/récepteur ou en mode émetteur/récepteur séparé.
    * Émetteur + récepteur (ou TX+RX) : deux connexions TCP distinctes sont utilisées pour la transmission et la réception de messages.
    * Émetteur-récepteur (ou TRX) : une connexion TCP unique est utilisée pour transmettre et recevoir des messages.
-* **Utiliser des paramètres différents pour le récepteur** :
-disponible uniquement en mode Émetteur + récepteur.
+* **Utilisez différents paramètres pour le récepteur** :
+Disponible uniquement en mode émetteur + récepteur.
 Lorsque la case n’est pas cochée, les mêmes paramètres sont utilisés pour l’émetteur et le récepteur. Lorsque la case est cochée, les paramètres standard s’appliquent uniquement à l’émetteur, tandis que les paramètres du récepteur s’appliquent uniquement au récepteur.
-* **Serveur, port, compte, mot de passe, type de système du récepteur**
-Ces paramètres s’appliquent au récepteur en mode Émetteur + récepteur. Ils fonctionnent comme la partie émetteur, voir ci-dessus pour [plus de détails](#smpp-connection-settings).
-* **Activer les traces SMPP en mode verbeux dans le fichier journal**
-Lorsque cette option est activée, des journaux supplémentaires sont générés dans le fichier journal. Cela s’avère très utile pour le dépannage, mais doit être conservé désactivé sur les instances à débit élevé si aucun dépannage n’est requis.
+* **Serveur du récepteur, port, compte, mot de passe, type de système**
+Ces paramètres s&#39;appliquent au récepteur en mode Transmitter + receiver. Ils fonctionnent comme la partie émetteur, voir ci-dessus pour [plus de détails](#smpp-connection-settings).
+* **Activer les traces SMPP de verbose dans le fichier journal**
+Lorsqu’ils sont activés, les journaux supplémentaires sont générés dans le fichier journal. Cela s’avère très utile pour le dépannage, mais doit être conservé désactivé sur les instances à débit élevé si aucun dépannage n’est requis.
 
 ## Paramètres du canal SMPP {#smpp-channel-settings}
 
@@ -73,7 +73,7 @@ Lorsque cette option est activée, des journaux supplémentaires sont générés
 
 ### Autoriser la translittération des caractères {#smpp-transliteration}
 
-La translittération est le processus de recherche de caractères équivalents à ceux qui sont manquants. Par exemple, le caractère français « ê » (avec un accent circonflexe) est absent de l’encodage GSM, mais il peut être remplacé par un « e » sans trop nuire à la lisibilité.
+La translitération est le processus de recherche de caractères équivalents à ceux qui sont manquants. Par exemple, le caractère français « ê » (avec un accent circonflexe) est absent de l’encodage GSM, mais il peut être remplacé par un « e » sans trop nuire à la lisibilité.
 
 Si cette case n&#39;est pas cochée, l&#39;encodage du texte échoue s&#39;il ne peut pas coder la chaîne telle quelle.
 
@@ -83,7 +83,7 @@ Pour obtenir une explication plus générale du processus d&#39;encodage, consul
 
 ### Numéro source
 
-Définit l’adresse source par défaut des messages. Ce paramètre ne s’applique que si le numéro source a été laissé vide dans la diffusion. Par défaut, le champ du numéro source n’est pas transmis.Le fournisseur le remplace donc par le numéro court.
+Définit l’adresse source par défaut des messages. Ce paramètre ne s&#39;applique que si le numéro source a été laissé vide dans la diffusion. Par défaut, le champ du numéro source n&#39;est pas transmis.Le fournisseur le remplace donc par le numéro court.
 
 Ceci active la fonction d’écrasement de l’adresse d’expédition/oADC.
 
@@ -93,7 +93,7 @@ TON (type de numéro) et NPI (indicateur de plan de numérotation) décrits à l
 
 Elles sont transmises telles quelles dans les champs source_addr_ton, source_addr_npi, dest_addr_ton and dest_addr_npi du PDU SUBMIT_SM.
 
-### Type de service
+### Service type
 
 Ce champ est transmis tel quel dans le champ service_type du PDU SUBMIT_SM. Définissez cette variable en fonction des besoins du fournisseur.
 
@@ -103,7 +103,7 @@ Ce champ est transmis tel quel dans le champ service_type du PDU SUBMIT_SM. Déf
 
 Ces paramètres contrôlent tous les aspects du timing du canal SMPP. Certains fournisseurs ont besoin d’un contrôle très précis du taux de message, des délais de fenêtre et de reprise. Ces paramètres doivent donc être définis sur des valeurs correspondant à la capacité du fournisseur et aux conditions indiquées dans son contrat.
 
-### Fenêtre d’émission
+### Fenêtre d&#39;émission
 
 La fenêtre est le nombre de PDU SUBMIT_SM qui peuvent être envoyés sans attendre un SUBMIT_SM_RESP correspondant.
 
@@ -113,7 +113,7 @@ Exemple de transmission avec une fenêtre maximale de 4 :
 
 La fenêtre permet d’augmenter le débit lorsque la liaison réseau présente une latence élevée. La valeur de la fenêtre doit être au moins égale au nombre de SMS/s multiplié par la latence du lien en secondes, de sorte que le connecteur n’attend jamais un SUBMIT_SM_RESP avant d’envoyer le message suivant.
 
-Si la fenêtre est trop grande, vous pouvez envoyer plus de messages en doublons en cas de problème de connexion (cela est rare). En outre, la plupart des fournisseurs ont une limite très stricte pour la fenêtre et refusent les messages qui dépassent la limite.
+Si la fenêtre est trop grande, vous pouvez envoyer plus de messages en double en cas de problème de connexion (cela est rare). En outre, la plupart des fournisseurs ont une limite très stricte pour la fenêtre et refusent les messages qui dépassent la limite.
 
 Comment calculer la formule optimale de la fenêtre d&#39;émission :
 
@@ -139,15 +139,15 @@ Lorsque la connexion TCP est perdue, le connecteur attend ce nombre de secondes 
 
 ### Délai d&#39;expiration des MT
 
-Il s’agit du délai entre SUBMIT_SM et son SUBMIT_SM_RESP correspondant. Si le RESP n’est pas reçu à temps, le message sera considéré comme ayant échoué et la politique de reprise globale du MTA s’appliquera.
+Il s’agit du délai d’expiration entre SUBMIT_SM et son SUBMIT_SM_RESP correspondant. Si le RESP n’est pas reçu à temps, le message sera considéré comme ayant échoué et la politique de reprise globale du MTA s’appliquera.
 
-### Délai d’attente maximal d’un bind
+### Délai d’expiration maximal d’un bind
 
-Délai entre la tentative de connexion TCP et la réponse BIND_*_RESP. Lorsqu’elle expire, la connexion est fermée par le connecteur Campaign et il faut attendre la valeur du temps avant reconnexion avant de réessayer.
+Délai d’expiration entre la tentative de connexion TCP et la réponse BIND_*_RESP. Lorsqu’elle expire, la connexion est fermée par le connecteur Campaign et il faut attendre la valeur du temps avant reconnexion avant de réessayer.
 
-### Période enquire_link
+### Période d&#39;enquire_link
 
-enquire_link est un type spécial de PDU envoyé pour maintenir la connexion en vie. Cette période est en secondes. Le connecteur de campagne n’envoie enquire_link que lorsque la connexion est inactive pour économiser la bande passante. Si aucun RESP n’est reçu après deux fois cette période, la connexion est considérée comme étant inactive et un processus de reconnexion est déclenché.
+enquire_link est un type spécial de PDU envoyé pour maintenir la connexion en vie. Cette période est en secondes. Le connecteur de campagne n’envoie enquire_link que lorsque la connexion est inactive pour économiser la bande passante. Si aucun RESP n&#39;est reçu après deux fois cette période, la connexion est considérée comme étant inactive et un processus de reconnexion est déclenché.
 
 ## Mapping des encodages {#mapping-encodings}
 
@@ -166,7 +166,7 @@ Le mapping par défaut utilisé lorsque la case à cocher n&#39;est pas cochée 
 | data_coding | Encodage |
 |:-:|:-:|
 | 0 | GSM |
-| 8 | UCS-2 |
+| 8 | UCS -2 |
 
 Cela signifie que le MTA essaiera de coder le message en GSM, et s’il réussit, il l’envoie avec data_coding défini sur 0.
 
@@ -204,7 +204,7 @@ Envoyé tel quel dans le champ address_range du PDU BIND. Cette valeur doit êtr
 
 ### Nombre d&#39;acquittements d&#39;identifiant invalides
 
-Limite le nombre de DELIVER_SM_RESP « Identifiant de message non valide » pouvant être envoyés pour un seul SR. **Cette valeur ne doit être utilisée qu’à des fins de résolution des problèmes en tant que solution de contournement** et définie sur 0 dans des conditions normales.
+Limite le nombre de DELIVER_SM_RESP « Identifiant de message non valide » pouvant être envoyés pour un seul SR. **Cette valeur ne doit être utilisée qu&#39;à des fins de résolution des problèmes en tant que solution de contournement** et définie sur 0 dans des conditions normales.
 
 Explication détaillée : supposons que vous définissiez ce paramètre sur 2 :
 
@@ -219,7 +219,7 @@ Cette fonctionnalité est destinée à vider les tampons SR côté fournisseur l
 
 La définition de ce champ sur 0 désactive le mécanisme où « ID de message non valide » est toujours renvoyé, c’est un comportement normal.
 
-Si ce champ est défini sur 1, le connecteur répond toujours « OK » , même si l’ID n’est pas valide. Cette valeur doit être définie sur 1 uniquement sous supervision, à des fins de résolution des problèmes et pour une durée minimale, par exemple pour récupérer d’un problème côté fournisseur.
+Si ce champ est défini sur 1, le connecteur répond toujours &quot;OK&quot;, même si l&#39;ID n&#39;est pas valide. Cette valeur doit être définie sur 1 uniquement sous supervision, à des fins de résolution des problèmes et pour une durée minimale, par exemple pour récupérer d’un problème côté fournisseur.
 
 ### Expression régulière d&#39;extraction de l&#39;ID dans le SR
 
@@ -227,9 +227,9 @@ Le format SR n’est pas strictement appliqué par la spécification du protocol
 
 Par défaut, il capture jusqu’à 10 caractères alphanumériques après « id ».
 
-L’expression régulière doit comporter exactement un groupe de capture (une partie entre parenthèses). Les parenthèses doivent entourer la partie qui correspond à l’identifiant. Le format d’expression régulière est PCRE.
+L’expression régulière doit comporter exactement un groupe de capture (une partie entre parenthèses). Les parenthèses doivent entourer la partie qui correspond à l’identifiant. Le format d&#39;expression régulière est PCRE.
 
-Lors de la modification de ce paramètre, veillez à inclure le plus de contexte possible pour éviter les faux triggers. S’il existe des préfixes spécifiques, tels que « id » dans la norme, incluez-les dans l’expression régulière. Utilisez également autant que possible des délimiteurs de mots (\b) pour éviter de capturer du texte au milieu d’un mot.
+Lors de la modification de ce paramètre, veillez à inclure le plus de contexte possible pour éviter les faux déclencheurs. S’il existe des préfixes spécifiques, tels que « id » dans la norme, incluez-les dans l’expression régulière. Utilisez également autant que possible des délimiteurs de mots (\b) pour éviter de capturer du texte au milieu d’un mot.
 
 Ne pas inclure suffisamment de contexte dans l’expression régulière peut introduire un petit défaut de sécurité : le contenu réel du message peut être inclus dans le SR. Ainsi, si vous faites simplement correspondre un format d’ID spécifique sans contexte (par exemple un UUID), il peut analyser le contenu réel du texte (par exemple un UUID incorporé dans le champ de texte) au lieu de l’ID.
 
@@ -239,7 +239,7 @@ Cette expression régulière capture le statut à partir du champ de texte des m
 
 Par défaut, il capture entre 5 et 15 caractères après « stat: ».
 
-L’expression régulière doit comporter **exactement un groupe de capture** (une partie entre parenthèses). Les parenthèses doivent entourer la partie correspondant au statut. Le format d’expression régulière est PCRE.
+L’expression régulière doit comporter **exactement un groupe de capture** (une partie entre parenthèses). Les parenthèses doivent entourer la partie correspondant au statut. Le format d&#39;expression régulière est PCRE.
 
 ### Regex appliquée pour déterminer le statut de réussite
 
@@ -261,13 +261,13 @@ Les codes d’erreur peuvent être qualifiés dans la qualification des logs de 
 
 Par défaut, il capture 3 caractères après « err: ».
 
-### Format de l’ID dans l’acquittement MT
+### Format de l&#39;ID dans l&#39;acquittement MT
 
 Indique le format de l’ID renvoyé dans le champ message_id du PDU SUBMIT_SM_RESP.
 
 * **Ne pas modifier** : l&#39;ID est stocké tel quel dans la base de données, sous la forme de texte encodé en ASCII. Aucun prétraitement ni filtrage n&#39;est effectué.
 * **Nombre décimal** : l&#39;ID doit être un nombre décimal au format ASCII. Les espaces de début et de fin et les zéros de début sont supprimés lorsque ce paramètre est utilisé.
-* **Nombre hexadécimal** : l&#39;ID doit être un nombre hexadécimal au format ASCII, sans 0x ni h à la fin.L&#39;ID est ensuite converti en nombre décimal avant d&#39;être stocké dans la base de données.
+* **Nombre hexadécimal** : l’identifiant doit être un nombre hexadécimal au format ASCII, sans 0x au début ni h au fin. L’identifiant est ensuite converti en nombre décimal avant d’être stocké dans la base de données.
 * **Chaîne hexadécimale** : l&#39;ID doit être un texte encodé en ASCII qui est lui-même une chaîne d&#39;octets encodés en hexadécimal. Par exemple, dans le PDU, vous trouverez 0x34 0x31 0x34 0x32 0x34 0x33, qui se traduit par l’ASCII « 414243 » ; cette chaîne est décodée sous la forme d’une chaîne hexadécimale d’octets, ce qui vous donne « ABC » : vous stockerez l’ID « ABC » dans la base de données.
 
 ### Format de l’ID dans le SR
@@ -276,7 +276,7 @@ Ceci indique le format de l’ID capturé par l’expression régulière Extract
 
 ### L’identifiant du SR ou le code d’erreur dans un champ optionnel
 
-Si cette case est cochée, le contenu des champs facultatifs est ajouté au texte traité par les expressions régulières ci-dessus. Le texte aura le format « 0xTAG:VALUE », 0xTAG étant la valeur hexadécimale à 4 chiffres de la balise en majuscules, par exemple 0x002E.
+Si cette case est cochée, le contenu des champs facultatifs est ajouté au texte traité par les expressions régulières ci-dessus. Le texte aura le format «  0xTAG:VALUE », 0xTAG étant la valeur hexadécimale à 4 chiffres de la balise en majuscules (par exemple 0x002E).
 
 Par exemple, vous pouvez capturer l’identifiant dans le champ receipted_message_id. Pour cela, activez cette case à cocher et le texte suivant est ajouté au statut :
 
@@ -286,11 +286,11 @@ Dans cet exemple, 0x001E est la balise du champ facultatif et UUID est la valeur
 
 Pour capturer cette valeur, vous pouvez désormais définir l&#39;expression régulière suivante dans l&#39;expression régulière d&#39;extraction de l&#39;ID dans le champ de SR :
 
-\b0x001E:([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\b
+\b0x001E:([0-9a-f][-[0-9a-f][-{4}0-9a-f]{4}-[0-9a-f]{4}-{8}0-9a-f]{12})\b
 
 >[!IMPORTANT]
 >
->Vous pouvez uniquement capturer les champs facultatifs contenant des valeurs de texte 8 bits (ASCII/UTF-8). En particulier, les champs binaires ne peuvent pas être capturés de manière fiable avec le système d’expressions régulières actuel.
+>Vous pouvez uniquement capturer les champs facultatifs contenant des valeurs de texte 8 bits (ASCII/UTF-8). En particulier, les champs binaires ne peuvent pas être capturés de manière fiable avec le système d&#39;expressions régulières actuel.
 
 ### Stocker l’identifiant du SR ou le code d’erreur dans un champ de texte
 
@@ -304,7 +304,7 @@ Permet d&#39;ajouter un fichier TLV personnalisé. Ce champ définit la balise, 
 
 La valeur du TLV personnalisé doit être définie dans la diffusion, dans le champ « Identifiant de service ou de programme », dans les paramètres avancés de la diffusion. La valeur est envoyée sous forme de texte codé UTF-8.
 
-Ce paramètre permet uniquement d’ajouter une option TLV par message.
+Ce paramètre permet uniquement d&#39;ajouter une option TLV par message.
 
 >[!NOTE]
 >
@@ -318,7 +318,7 @@ Si cette option est activée, toutes les connexions au SMSC sont chiffrées à l
 
 * **Vérification complète du certificat** : vérifiez le certificat TLS et le nom d’hôte distant lors de la connexion. Cette valeur donne le niveau de sécurité le plus élevé.
 * **Ignorer la vérification du nom d’hôte** : vérifiez le certificat TLS distant, mais ne vérifiez pas si le nom d’hôte distant correspond. Diminue légèrement la sécurité.
-* **Ignorer la vérification du certificat** : ne pas du tout vérifier le certificat TLS. La connexion est toujours chiffrée, mais elle est vulnérable aux attaques de l’homme du milieu (HDM). La sécurité diminue beaucoup.
+* **Ignorer la vérification du certificat** : ne pas du tout vérifier le certificat TLS. La connexion est toujours chiffrée, mais elle est vulnérable aux attaques de l’homme du milieu. La sécurité diminue beaucoup.
 
 ## Trafic entrant {#incoming-traffic}
 
@@ -326,7 +326,7 @@ Si cette option est activée, toutes les connexions au SMSC sont chiffrées à l
 
 ### Paramètres SMPP facultatifs (TLV) dans MO
 
-Campaign permet de recevoir 3 champs supplémentaires dans MO (table nms:inSms) : SMS lié, alias et compte volumineux. Avec le connecteur SMPP, ces champs peuvent être remplis avec des données provenant de n’importe quel paramètre SMPP facultatif (TLV), avec n’importe quel format commun.
+Campaign permet de recevoir 3 champs supplémentaires dans MO (nms:inSms table) : SMS lié, alias et grand compte. Avec le connecteur SMPP, ces champs peuvent être remplis avec des données provenant de n’importe quel paramètre SMPP facultatif (TLV), avec n’importe quel format commun.
 
 Pour chaque champ, vous pouvez définir la balise associée ainsi que son format. Demandez au fournisseur de services SMPP de disposer de ces informations.
 
@@ -337,11 +337,11 @@ Pour chaque champ, vous pouvez définir la balise associée ainsi que son format
 >
 >Si le champ **Compte client** n’est pas renseigné, il sera remplacé par le numéro court.
 
-### Réponse automatique aux MO  
+### Réponse automatique aux MO
 
 Cette fonctionnalité permet de répondre rapidement du texte au MO et de gérer les listes bloquées par numéro court.
 
-Les colonnes *Mot-clé* et *Numéro court* définissent les conditions pour déclencher la réponse automatique : si les deux champs correspondent, le MO est envoyé et l’action supplémentaire est déclenchée. Pour spécifier un caractère de remplacement, vous devez laisser le champ vide. Le mot-clé correspond au premier mot alphanumérique du texte MO : il ignore la ponctuation et les espaces de début. Cela signifie que le champ Mot-clé ne peut pas contenir d’espaces et doit être un seul mot.
+Les colonnes *Mot-clé* et *Numéro court* définissent les conditions pour déclencher la réponse automatique : si les deux champs correspondent, le MO est envoyé et l’action supplémentaire est déclenchée. Pour spécifier un caractère de remplacement, vous devez laisser le champ vide. Le mot-clé correspond au premier mot alphanumérique du texte MO, en ignorant la ponctuation et les espaces de début. Cela signifie que le champ Mot-clé ne peut pas contenir d’espaces et doit être un seul mot.
 
 Le paramètre *Mot-clé* est un préfixe. Par exemple, si vous spécifiez AD, cela correspondra à AD, ADAPT et ADOBE. Si vous avez plusieurs mots-clés avec un préfixe commun, prêtez attention à l’ordre, les mots-clés étant traités de haut en bas.
 

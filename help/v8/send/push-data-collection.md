@@ -8,7 +8,7 @@ badge: label="Disponibilité limitée" type="Informative"
 exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
 source-git-commit: 52ea7f0a7690ef656568cc75925b9982e1f475e9
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1552'
 ht-degree: 94%
 
 ---
@@ -87,7 +87,7 @@ L’enregistrement des informations d’identification des notifications push de
 
 1. Activez **[!UICONTROL Informations d’identification des notifications push]** pour ajouter vos informations d’identification.
 
-1. Glissez-déposez les informations d’identification des notifications push FCM. Pour plus d&#39;informations sur l&#39;obtention des informations d&#39;identification push, consultez la documentation de [&#128279;](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+1. Glissez-déposez les informations d’identification des notifications push FCM. Pour plus d&#39;informations sur l&#39;obtention des informations d&#39;identification push, consultez la documentation de [Google](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour créer la configuration de votre application.
 
@@ -107,7 +107,7 @@ Pour créer un service destiné à envoyer des notifications push, procédez com
 
    ![](assets/push-config-4.png){width="800" align="left"}
 
-1. Saisissez un **[!UICONTROL Libellé]** et un **[!UICONTROL Nom interne]**, puis sélectionnez un type d’**[!UICONTROL Application mobile]**. 
+1. Saisissez un **[!UICONTROL Libellé]** et un **[!UICONTROL Nom interne]**, puis sélectionnez un type d’**[!UICONTROL Application mobile]**.
 
    >[!NOTE]
    >
@@ -156,7 +156,7 @@ Pour créer une application pour les appareils iOS, procédez comme suit :
 
    >[!NOTE]
    >
-   > La **[!UICONTROL clé d’intégration]** est entièrement personnalisable avec une valeur de chaîne, mais doit être exactement identique à celle spécifiée dans le SDK.
+   > La **[!UICONTROL clé d&#39;intégration]** est entièrement personnalisable avec une valeur de chaîne, mais doit être exactement identique à celle spécifiée dans le SDK.
    >
    > Vous ne pouvez pas utiliser le même certificat pour la version de développement (sandbox) et la version de production de l’application.
 
@@ -190,7 +190,7 @@ Pour créer une application pour les appareils Android, procédez comme suit :
 
    >[!NOTE]
    >
-   > La **[!UICONTROL clé d’intégration]** est entièrement personnalisable avec une valeur de chaîne, mais doit être exactement identique à celle spécifiée dans le SDK.
+   > La **[!UICONTROL clé d&#39;intégration]** est entièrement personnalisable avec une valeur de chaîne, mais doit être exactement identique à celle spécifiée dans le SDK.
 
    ![](assets/push-config-12.png)
 

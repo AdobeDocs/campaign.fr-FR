@@ -6,8 +6,8 @@ hide: true
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
 source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
-source-wordcount: '1584'
-ht-degree: 98%
+source-wordcount: '1651'
+ht-degree: 95%
 
 ---
 
@@ -43,7 +43,7 @@ _vendredi 28 octobre 2021_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Le module Optimisation des campagnes est désormais disponible. Ce module permet de contrôler, de filtrer et de surveiller l’envoi des diffusions. Pour éviter les conflits entre les campagnes, Adobe Campaign peut tester différentes combinaisons en appliquant des règles de contrainte spécifiques. Cela permet de s’assurer que les messages envoyés répondent aux attentes et aux besoins des clientes et clients et des politiques de communication de l’entreprise.</p>
+<td> <p>Le module Optimisation des campagnes est désormais disponible. Ce module permet de contrôler, de filtrer et de surveiller l’envoi des diffusions. Pour éviter les conflits entre les campagnes, Adobe Campaign peut tester différentes combinaisons en appliquant des règles de contrainte spécifiques. Elles permettent de s’assurer que les messages envoyés répondent aux attentes et aux besoins des clientes et clients et des politiques de communication de l’entreprise.</p>
 <p>Pour plus d'informations, consultez la <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=fr#campaign-optimization">documentation détaillée</a>.</p>
 </td> 
 </tr> 
@@ -98,7 +98,7 @@ _vendredi 28 octobre 2021_
 * Correction dʼun problème qui entraînait le blocage du workflow de facturation sur les instances marketing.
 * Correction dʼun problème qui pouvait entraîner la duplication de clés dans les tables FFDA Snowflake prêtes à lʼemploi. (NEO-38583)
 * Correction dʼun problème qui pouvait entraîner la perte de schémas temporaires de workflow lors de la modification de deux activités de déduplication lʼune après lʼautre. (NEO-34063)
-* Correction dʼun problème en raison duquel des résultats incorrects étaient renvoyés lors de lʼexécution des fonctions Amazon Redshift HoursDiff et MinutesDiff lors de la tentative dʼextraction du composant dʼheure.(NEO-31673)
+* Correction d’un problème qui renvoyait des résultats incorrects lors de l’exécution des fonctions Amazon Redshift HoursDiff et MinutesDiff lors de l’extraction du composant Heure.(NEO-31673)
 * Correction dʼun problème au cours duquel les utilisateurs ne parvenaient pas à se connecter à la console en raison dʼun problème de configuration du proxy. (NEO-38388)
 * Correction dʼun problème de régression qui empêchait la fonctionnalité **Purger le dossier** de fonctionner correctement. (NEO-37459)
 * Correction d’un problème qui vous empêchait de prévisualiser les diffusions mobiles jointes à un workflow.
@@ -116,7 +116,7 @@ _7 septembre 2021_
 
 * Après sa fin de vie, Flash a été supprimé de toutes les fonctionnalités et composants de Campaign associés, et remplacé par HTML5. Le type de graphique **Jauge** a été supprimé. (NEO-30330) [En savoir plus](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-chart.html?lang=fr)
 * Lors de l’installation de la console cliente sous Windows, le programme d’installation vérifie maintenant s’il existe un nœud de registre parent et en crée un si ce n’est pas le cas. Cela évite les problèmes potentiels lors du lancement de la console. (NEO-34854)
-* La fonctionnalité de signature de tracking a été améliorée afin d’éviter les erreurs liées à la façon dont les outils tiers (clients de messagerie, navigateurs internet, etc.) gèrent les caractères spéciaux. Les paramètres d’URL sont désormais chiffrés.
+* La fonctionnalité de signature de tracking a été améliorée afin d’éviter les erreurs liées à la manière dont les outils tiers (clients de messagerie, navigateurs Internet, etc.) gérer les caractères spéciaux. Les paramètres d’URL sont désormais chiffrés.
 
 **Autres changements**
 

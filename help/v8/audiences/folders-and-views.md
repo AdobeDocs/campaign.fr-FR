@@ -8,8 +8,8 @@ exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
 version: Campaign v8, Campaign Classic v7
 source-git-commit: 567ca1cd8fa6e4f03c8871488152710753ea02f1
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 98%
+source-wordcount: '727'
+ht-degree: 93%
 
 ---
 
@@ -34,8 +34,8 @@ Notez que vous pouvez attribuer des autorisations aux dossiers pour restreindre 
 
 * **Définissez et appliquez une convention de nommage**, par exemple, vous pouvez nommer les workflows par ordre alphabétique afin qu&#39;ils apparaissent triés dans l&#39;ordre d&#39;exécution, par exemple :
 
-  A1 – import des destinataires, débute à 10 h 00;
-A2 – import des tickets, débute à 11 h 00.
+  A1 - import des destinataires, à partir de 10 :00 ;
+A2 - import de tickets, commence à 11:00.
 
 ## Créer un dossier{#create-a-folder}
 
@@ -76,7 +76,7 @@ Dans l&#39;exemple ci-dessous, nous allons créer un dossier afin de n&#39;affic
 
 1. Créez un dossier de **[!UICONTROL diffusions]** et nommez-le **Diffusions US**.
 1. Cliquez avec le bouton droit sur ce dossier et choisissez **[!UICONTROL Propriétés...]**.
-1. Depuis l&#39;onglet **[!UICONTROL Restriction]**, sélectionnez l&#39;option **[!UICONTROL Ce dossier est une vue]** : toutes les diffusions de la base y seront alors affichées.
+1. Dans l&#39;onglet **[!UICONTROL Restriction]**, sélectionnez **[!UICONTROL Ce dossier est une vue]**. Toutes les diffusions de la base s’affichent alors.
 
    ![](assets/this-folder-is-a-view.png)
 

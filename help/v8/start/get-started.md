@@ -8,8 +8,8 @@ exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
 version: Campaign v8, Campaign Classic v7
 source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 92%
+source-wordcount: '1058'
+ht-degree: 73%
 
 ---
 
@@ -40,7 +40,7 @@ En utilisant Campaign, vous pouvez :
 
 Les profils sont centralisés dans une puissante base de données cloud. Il existe de nombreux mécanismes permettant d&#39;acquérir des profils et de créer cette base de données : collection en ligne par le biais de formulaires web, importation manuelle ou automatique de fichiers texte, réplication avec des bases de données d&#39;entreprises ou d&#39;autres systèmes d&#39;information. Adobe Campaign vous permet d&#39;intégrer des données d&#39;historique marketing, des informations d&#39;achat, des préférences, des données CRM et des données d&#39;informations d&#39;identification personnelles pertinentes dans une vue consolidée afin d&#39;effectuer une analyse et de prendre des mesures.
 
-Dans Adobe Campaign, les destinataires sont les profils par défaut ciblés pour l&#39;envoi des diffusions (e-mails, SMS, etc.). Grâce aux données de destinataires stockées dans la base, vous pouvez filtrer la cible recevant toute diffusion donnée et ajouter les données de personnalisation à votre contenu de diffusion. Il existe d&#39;autres types de profils dans la base de données qui sont conçus pour d&#39;autres utilisations. Par exemple, les profils d&#39;adresses de contrôle sont destinés à tester vos diffusions avant leur envoi à la cible finale.
+Dans Adobe Campaign, les destinataires sont les profils par défaut ciblés pour l’envoi de diffusions (emails, SMS, etc.). Grâce aux données de destinataires stockées dans la base de données, vous pourrez filtrer la cible qui recevra toute diffusion donnée et ajouter des données de personnalisation dans le contenu de votre diffusion. D&#39;autres types de profils existent dans la base de données. Ils sont conçus pour différents usages. Par exemple, les profils de contrôle servent à tester vos diffusions avant leur envoi vers la cible finale.
 
 Les notions de base de la gestion des profils sont décrites dans [cette section](audiences.md).
 
@@ -50,19 +50,19 @@ Découvrez comment ajouter des profils à Campaign dans [cette section](import.m
 
 Adobe Campaign intègre des fonctionnalités d’analyse et de ciblage pour vous permettre de mettre en place des offres hautement ciblées et différenciées. La fonctionnalité d&#39;analyse descriptive permet d&#39;analyser les informations en amont et en aval de vos campagnes marketing. La fonctionnalité [gestion des filtres](../audiences/create-filters.md) et la fonctionnalité graphique [éditeur de requêtes](query-editor.md) permettent de filtrer les populations d&#39;abonnés, d&#39;échantillonner ou de créer des groupes cibles en fonction d&#39;un nombre illimité de critères.
 
-Les fonctionnalités avancées de Data Management proposent une extension des capacités de traitement des données. Elles permettent de simplifier et d&#39;optimiser le processus de ciblage en incluant des données non modélisées dans le datamart.
+Les fonctionnalités avancées de Data Management proposent une extension des capacités de traitement des données. Il simplifie et optimise le processus de ciblage en incluant des données non modélisées dans le datamart.
 
 En savoir plus sur la segmentation et la création d’audiences dans [cette section](audiences.md).
 
 ## Orchestration de campagnes cross-canal {#cross-channel-campaign-orchestration}
 
-Adobe Campaign vous permet de concevoir et d’orchestrer des campagnes ciblées et personnalisées sur plusieurs canaux tels que l’e-mail, le courrier, les SMS, les notifications push, etc. Vous bénéficiez dans une seule interface de toutes les fonctions nécessaires pour planifier, orchestrer, configurer, personnaliser, automatiser, exécuter et mesurer l’ensemble des campagnes et communications.
+Adobe Campaign vous permet de concevoir et d&#39;orchestrer des campagnes ciblées et personnalisées sur plusieurs canaux tels que l&#39;email, le courrier, les SMS, les notifications push. Une seule interface vous fournit toutes les fonctions nécessaires pour planifier, orchestrer, configurer, personnaliser, automatiser, exécuter et mesurer toutes vos campagnes et communications.
 
 Découvrez comment concevoir, planifier et exécuter une campagne dans [cette section](campaigns.md).
 
 ## Workflows {#wf-gsv8}
 
-Adobe Campaign propose un environnement graphique qui permet de construire des processus complexes englobant segmentation, exécution de campagnes, manipulation de fichiers, validations, etc. Un workflow permet par exemple de télécharger un fichier depuis un serveur, de le décompresser et d&#39;importer ses enregistrements dans la base de données Adobe Campaign.
+Adobe Campaign propose un environnement graphique qui permet de concevoir des processus complexes englobant segmentation, exécution de campagnes, manipulation de fichiers, etc. Par exemple, vous pouvez utiliser un workflow pour télécharger un fichier depuis un serveur, le décompresser, puis importer ses enregistrements dans la base de données Adobe Campaign.
 
 Un workflow peut également faire intervenir des utilisateurs, pour leur affecter une tâche ou demander la validation d&#39;une tâche accomplie. Ainsi, il est possible d&#39;assigner une tâche à un ou plusieurs utilisateurs qui seront chargés de saisir son contenu ou spécifier sa cible, puis de faire valider un BAT avant d&#39;envoyer un message.
 
@@ -77,7 +77,7 @@ Découvrez comment concevoir et exécuter des workflows dans [cette section](../
 
 ## Reporting et analyse {#analysis-and-reporting}
 
-Adobe Campaign vous permet de suivre et comprendre les comportements de vos clients en enrichissant progressivement leurs données et profil. Grâce aux outils de reporting et d&#39;analyse, vous capitalisez sur chaque nouvelle campagne, bénéficiez d&#39;un meilleur ciblage de vos actions marketing, et optimisez leur impact ainsi que leur retour sur investissement.
+Adobe Campaign vous permet de surveiller et d’interpréter le comportement de vos clients en enrichissant progressivement leurs données et profils. Les outils de reporting et d’analyse vous permettent de capitaliser sur chaque nouvelle campagne, de mieux cibler vos initiatives marketing, ainsi que d’optimiser leur impact et leur retour sur investissement.
 
 Outre des modèles de reporting d&#39;usine puissants, Adobe Campaign vous permet de créer des rapports personnalisés au niveau d&#39;une diffusion, d&#39;une campagne, d&#39;un utilisateur ou d&#39;un segment. Effectuez une analyse descriptive, un résumé du retour sur investissement ou exportez des données vers Adobe Analytics et d&#39;autres solutions pour une visualisation et une analyse plus approfondies des données.
 

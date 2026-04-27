@@ -5,8 +5,8 @@ feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: c9098683077d4a01e269801b4434fcf5eb1f90a4
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 17%
+source-wordcount: '1219'
+ht-degree: 8%
 
 ---
 
@@ -48,14 +48,14 @@ Le **nouveau connecteur d&#39;envoi de SMS** est désormais disponible pour tous
 
 Cette version est fournie avec un ensemble de fonctionnalités disponibles dans l’interface utilisateur web de Campaign :
 
-* [Fonctionnalités de diffusion multilingue (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=fr){target="_blank"}
-* [Enrichissement du profil dans les messages transactionnels (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=fr){target="_blank"}
-* [Adobe Experience Manager Live et copies de langue](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=fr){target="_blank"}
-* [Expériences de contenu - Tests AB](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=fr){target="_blank"}
-* [Activité de diffusion au fil de l&#39;eau](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=fr){target="_blank"}
-* [Gestion de la validation des campagnes](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=fr){target="_blank"}
+* [Fonctionnalités de diffusion multilingue (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [Enrichissement du profil dans les messages transactionnels (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Adobe Experience Manager Live et copies de langue](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [Expériences de contenu - Tests AB](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [Activité de diffusion au fil de l&#39;eau](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [Gestion de la validation des campagnes](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
-Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Campaign [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}
+Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Campaign [](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}
 
 ### Améliorations de la sécurité {#security-8-9-1}
 

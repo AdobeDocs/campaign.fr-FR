@@ -6,9 +6,9 @@ role: Admin, Developer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
 source-git-commit: 3235701e0939466d4275b1e9202f82694ccdb352
-workflow-type: ht
-source-wordcount: '1053'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1073'
+ht-degree: 95%
 
 ---
 
@@ -55,7 +55,7 @@ La base de données [!DNL Snowflake] côté marketing permet d’effectuer les o
 * Stocker toutes les données client : les profils, les données personnalisées comme les transactions, les produits, les emplacements, etc.
 * Stocker l’ensemble des événements et des données de comportement générés ou collectés par Campaign, tels que les logs de diffusion, les logs de tracking, les enregistrements push, etc.
 * Stocker tous les agrégats de données de l’exemple ci-dessus
-* Stockez une copie (h+1) des tables de référence (telles que les diffusions, les énumérations, les pays, etc.) utilisées dans les workflows, les campagnes et les rapports.
+* Stocker une copie (h+1) des tables de référence (telles que les diffusions, les énumérations, les pays, etc.) utilisés dans les workflows, les campagnes et les rapports.
 * Exécution de tous les processus et workloads par lots
 
 
@@ -63,11 +63,11 @@ La base de données PostgreSQL sur l&#39;instance marketing est utilisée pour 
 
 * Exécuter certaines workloads, telles que les API à faible volume
 * Stocker toutes les données de Campaign, y compris les paramètres de diffusion et de campagne, les définitions de workflow et de service
-* Stockez toutes les tables de référence intégrées (énumérations, pays, etc.) qui sont répliquées vers [!DNL Snowflake].
+* Stocker toutes les tables de référence intégrées (énumérations, pays, etc.) qui sont répliqués vers [!DNL Snowflake].
 
   Cependant, vous ne pouvez pas :
    * Créer des personnalisations pour les données client ; par exemple, ne créez pas de table domestique dans PostgreSQL, mais uniquement dans Snowflake
-   * Stocker les logs de diffusion, les logs de tracking, etc. sur la dimension de ciblage FFDA
+   * Stocker les logs de diffusion, les logs de tracking, etc. sur la dimension de ciblage FFDA.
    * Stocker un grand volume de données
 
 
@@ -91,14 +91,14 @@ De nouvelles API sont disponibles pour gérer la synchronisation des données en
 [Les nouvelles API sont présentées sur cette page.](new-apis.md)
 
 
-### Réplication de données{#data-replication}
+### Réplication des données{#data-replication}
 
 Un workflow technique spécifique gère la réplication des tables qui doivent être présentes des deux côtés (base de données locale de Campaign et base de données dans le cloud). Ce workflow est déclenché toutes les heures et repose sur une nouvelle bibliothèque JavaScript intégrée.
 
 >[!NOTE]
 >
 > Plusieurs politiques de réplication ont été créées en fonction de la taille de la table (XS, XL, etc.).
-> > Certaines tables sont répliquées en temps réel tandis que d&#39;autres le sont toutes les heures. Certaines tables disposeront de mises à jour incrémentielles tandis que d&#39;autres bénéficieront d&#39;une mise à jour complète.
+> Certaines tables sont répliquées en temps réel tandis que d&#39;autres le sont toutes les heures. Certaines tables disposeront de mises à jour incrémentielles tandis que d&#39;autres bénéficieront d&#39;une mise à jour complète.
 >
 
 [En savoir plus sur la réplication des données](replication.md)
@@ -123,6 +123,6 @@ Certaines fonctionnalités ne sont pas disponibles dans le cadre d’un déploie
 * Questionnaires
 
 
-**Rubriques connexes**
+**Rubriques connexes :**
 
 * [Bonnes pratiques relatives au modèle de données](../dev/datamodel-best-practices.md)

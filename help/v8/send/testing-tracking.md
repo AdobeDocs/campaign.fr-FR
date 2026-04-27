@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
 source-git-commit: edbe7ab49a628436dfb4d27ae17122917d7371e9
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '666'
 ht-degree: 7%
 
 ---
@@ -30,11 +30,11 @@ Vous pouvez tester le suivi sur les pages miroir, les journaux d’e-mail et les
 
 1. Créez une diffusion e-mail qui sera utilisée à des fins de test. [Apprendre à créer une diffusion](../start/create-message.md)
 1. Concevez le contenu de votre e-mail avec les liens que vous souhaitez suivre. [En savoir plus sur la conception du contenu d&#39;un email](defining-the-email-content.md)
-1. Ajoutez un bloc de personnalisation de page miroir dans le contenu de l’e-mail. [En savoir plus sur les blocs de personnalisation &#x200B;](personalization-blocks.md)
+1. Ajoutez un bloc de personnalisation de page miroir dans le contenu de l’e-mail. [En savoir plus sur les blocs de personnalisation ](personalization-blocks.md)
 
    ![](assets/mirror-page-insert.png)
 
-1. Spécifiez l&#39;utilisateur qui recevra l&#39;email. Comme cet utilisateur devra ouvrir l’e-mail et cliquer sur les liens qu’il contient, veillez à sélectionner une adresse de destinataire de test que vous contrôlez. [En savoir plus sur les profils de test &#x200B;](../audiences/test-profiles.md)
+1. Spécifiez l&#39;utilisateur qui recevra l&#39;email. Comme cet utilisateur devra ouvrir l’e-mail et cliquer sur les liens qu’il contient, veillez à sélectionner une adresse de destinataire de test que vous contrôlez. [En savoir plus sur les profils de test ](../audiences/test-profiles.md)
 
 ## Étape 2 : envoyer la diffusion test {#send-test}
 
@@ -46,13 +46,13 @@ Vous pouvez tester le suivi sur les pages miroir, les journaux d’e-mail et les
 
    ![](assets/s_ncs_user_email_del_tracking_param.png)
 
-[En savoir plus sur les options de tracking des URL](url-tracking.md)
+   [En savoir plus sur les options de tracking des URL](url-tracking.md)
 
 1. Envoyez la diffusion à votre destinataire test. [En savoir plus sur l&#39;envoi de diffusions](configure-and-send.md)
 
 ## Étape 3 : vérification de la fonctionnalité de suivi {#verify-tracking}
 
-1. Une fois que vous avez reçu l’e-mail, ouvrez-le et cliquez sur le lien de la page miroir. [En savoir plus sur les pages miroir &#x200B;](mirror-page.md)
+1. Une fois que vous avez reçu l’e-mail, ouvrez-le et cliquez sur le lien de la page miroir. [En savoir plus sur les pages miroir ](mirror-page.md)
 1. Cliquez sur différents liens de l’e-mail pour générer des données de tracking.
 1. Après avoir été correctement redirigé vers la page miroir, accédez au dossier **[!UICONTROL Administration > Exploitation > Workflows techniques]**. [En savoir plus sur les workflows](../config/workflows.md)
 1. Ouvrez le workflow **[!UICONTROL Tracking]**.

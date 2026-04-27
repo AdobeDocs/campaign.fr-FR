@@ -7,9 +7,9 @@ role: User, Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: d77858e1-3cd5-4372-b1bc-ea4b518c958d
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '140'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 81%
 
 ---
 
@@ -24,7 +24,7 @@ Cette activité fonctionne sur le même principe que l’activité d’enrichiss
 Après avoir paramétré votre requête (voir cette [section](query.md)) :
 
 1. Placez et ouvrez une activité **[!UICONTROL Moteur d&#39;offres]**.
-1. Renseignez les différents champs disponibles afin de définir les paramètres d&#39;appel au moteur (emplacement, catégorie ou thème(s), date de contact, nombre d&#39;offres à conserver). Le moteur calculera automatiquement la ou les offres à ajouter en fonction de ces paramètres.
+1. Renseignez les différents champs disponibles afin de définir les paramètres de l&#39;appel au moteur d&#39;offres (emplacement, catégorie ou thème(s), date de contact, nombre d&#39;offres à conserver). Le moteur calculera automatiquement la ou les offres à ajouter en fonction de ces paramètres.
 
    >[!CAUTION]
    >
@@ -32,4 +32,4 @@ Après avoir paramétré votre requête (voir cette [section](query.md)) :
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix. Voir à ce sujet la section [Diffusions cross-canal](cross-channel-deliveries.md).
+1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix. Voir [Diffusions cross-canal](cross-channel-deliveries.md).

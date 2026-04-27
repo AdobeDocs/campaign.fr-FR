@@ -7,9 +7,9 @@ role: Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '1155'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1162'
+ht-degree: 78%
 
 ---
 
@@ -48,17 +48,17 @@ L’utilisation de la carte thermique des workflows demande une bonne maîtrise 
 
 1. Cliquez sur le calendrier pour sélectionner un jour.
 
-   Par défaut, la page affiche l&#39;activité des workflows pour le jour en cours. Vous pouvez le changer et sélectionner n&#39;importe quel jour précédent.
+   Par défaut, la page affiche l’activité de workflow du jour en cours. Vous pouvez le modifier et sélectionner n’importe quel jour dans le passé.
 
    >[!NOTE]
    > 
-   >Par défaut, le fuseau horaire de la carte thermique des workflows est celui défini pour l&#39;utilisateur administrateur actuel. Vous pouvez vouloir le changer si, par exemple, vous ne vous trouvez pas dans la même zone géographique que les utilisateurs marketing avec lesquels vous travaillez.
+   >Par défaut, le fuseau horaire Carte thermique des workflows est celui défini pour l’utilisateur administrateur actuel. Par exemple, vous pouvez la modifier si vous ne vous trouvez pas dans la même zone que les utilisateurs et utilisatrices marketing avec lesquels vous travaillez.
 
 1. Cliquez sur le bouton **[!UICONTROL Filtres]**.
 
    ![](assets/wkf_monitoring_filters.png)
 
-1. Utilisez le curseur pour définir la durée minimale de 0 seconde à 1 heure. Vous pouvez ainsi rechercher uniquement des workflows exécutés pendant plus d&#39;un certain nombre de secondes ou de minutes.
+1. Utilisez le curseur pour définir la durée minimale de 0 seconde à 1 heure. Vous pouvez ainsi rechercher uniquement les workflows qui s’exécutent pendant plus d’un certain nombre de secondes ou de minutes.
 
    ![](assets/wkf_monitoring_filters_duration.png)
 
@@ -68,7 +68,7 @@ L’utilisation de la carte thermique des workflows demande une bonne maîtrise 
 
    >[!NOTE]
    >
-   >Le filtre **[!UICONTROL Durée min.]** est appliqué. Si vous ne parvenez pas à trouver un workflow spécifique, réinitialisez la durée minimale à 0 afin que tous les workflows soient affichés dans la liste.
+   >Le filtre **[!UICONTROL Durée min]** est appliqué. Si vous ne trouvez pas de workflow spécifique, réinitialisez la durée minimale sur 0 afin que tous les workflows soient affichés dans la liste.
 
 1. Vous pouvez également appliquer un filtre selon le **[!UICONTROL Type de workflow]** :
 
@@ -94,7 +94,7 @@ Chaque ligne représente une heure de la journée et chaque cellule, 5 minutes 
 
 La grille affiche tous les workflows exécutés à la même heure pour chacune de ces périodes de 5 minutes.
 
-Dans l&#39;exemple suivant, trois workflows sont en cours d&#39;exécution (quelle que soit leur durée) entre 8h00 et 8h05 :
+Dans l’exemple ci-dessous, entre 8 h et 8 :05am, trois workflows sont en cours d’exécution (quelle que soit leur durée individuelle) :
 
 ![](assets/wkf_monitoring_ex_8am.png)
 
@@ -123,8 +123,8 @@ En tant qu&#39;administrateur de Campaign, la carte thermique des workflows peut
 
 1. Examinez les résultats pour analyser la charge de l&#39;instance, puis prenez les mesures adéquates :
 
-   * Si vous rencontrez des problèmes de performances et si la grille contient une ou plusieurs cellules rouges, songez à modifier les heures de début de plusieurs workflows. Demandez aux utilisateurs marketing de déplacer manuellement les workflows des périodes surchargées (&quot;chaudes&quot;) vers des créneaux horaires moins chargés. Un niveau d&#39;activité stable devrait ainsi être maintenu tout au long de la journée.
-   * Pour éviter les pics et la surcharge de l&#39;instance, examinez la carte thermique avant de planifier de nouveaux workflows et choisissez le meilleur horaire. Prenez en compte les créneaux horaires correspondant aux cellules grises ou vertes de la grille pour démarrer de nouveaux workflows.
+   * Si vous rencontrez des problèmes de performances et si une ou plusieurs cellules rouges sont affichées dans la grille, pensez à modifier les heures de début de plusieurs workflows. Demandez aux utilisateurs marketing de déplacer manuellement les workflows des périodes occupées (« chaudes ») vers des créneaux horaires plus disponibles. Cela devrait maintenir un niveau d&#39;activité stable tout au long de la journée.
+   * Pour éviter les pics et empêcher la surcharge de l’instance, consultez la Carte thermique avant de planifier de nouveaux workflows et choisissez le meilleur moment. Tenez compte des intervalles de temps correspondant aux cellules grises ou vertes de la grille pour démarrer de nouveaux workflows.
 
 ### Recherche des workflows de longue exécution ayant un impact sur les performances {#finding-long-running-workflows-that-impact-performance}
 
@@ -146,7 +146,7 @@ En tant qu&#39;administrateur de Campaign, la carte thermique des workflows vous
 
 L&#39;exemple ci-dessous montre comment rendre la planification plus efficace et améliorer les performances grâce à l&#39;utilisation de la Carte thermique des workflows d&#39;Adobe Campaign.
 
-Dans ce cas pratique, de nombreux utilisateurs se plaignent des performances des workflows. Vous devez rechercher ce qui ralentit l&#39;activité et comment résoudre le problème.
+Dans ce cas, de nombreux utilisateurs se plaignent des performances des workflows. Vous devez vérifier ce qui ralentit l’activité et comment résoudre le problème.
 
 1. Accédez à **[!UICONTROL Suivi]**, puis cliquez sur le lien **[!UICONTROL Workflows]** pour afficher la page **[!UICONTROL Carte thermique des workflows Campaign]**.
 1. Définissez le filtre **[!UICONTROL Durée min.]** sur 5 minutes.

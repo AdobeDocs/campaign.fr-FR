@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 71f36413-377a-4be6-921c-9e794fe882fd
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '449'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 74%
 
 ---
 
@@ -29,11 +29,11 @@ Pour configurer l’activité de **[!UICONTROL changement de dimension]**, respe
 
    ![](assets/s_user_change_dimension_param1.png)
 
-1. Lors du changement de dimension, vous pouvez conserver tous les éléments ou sélectionner ceux à conserver en sortie. Dans l&#39;exemple ci-dessous, le nombre maximal de doublons est fixé à 2.
+1. Lors du changement de dimension, vous pouvez conserver tous les éléments ou les sélectionner pour les conserver dans la sortie. Dans l’exemple suivant, la valeur maximale. nombre de doublons défini sur 2.
 
    ![](assets/s_user_change_dimension_limit.png)
 
-   Lorsque vous choisissez de ne conserver qu&#39;un seul enregistrement, une collection apparaît dans le schéma de travail : cette collection représente tous les enregistrements qui ne seront pas ciblés dans le résultat final (puisqu&#39;un seul enregistrement est conservé). Cette collection permet, comme toute autre collection, de calculer des agrégats ou de récupérer des informations en colonne.
+   Lorsque vous choisissez de ne conserver qu&#39;un seul enregistrement, une collection apparaît dans le schéma de travail : cette collection représente tous les enregistrements qui ne seront pas ciblés dans le résultat final (puisqu&#39;un seul enregistrement est conservé). Comme toutes les autres collections, celle-ci permet de calculer des agrégats ou de récupérer des informations en colonnes.
 
    Par exemple, si on passe de la dimension des **[!UICONTROL Clients]** à celle des **[!UICONTROL Destinataires]**, il sera possible de cibler les clients d&#39;un magasin, en précisant le nombre d&#39;achats réalisés.
 
@@ -43,7 +43,7 @@ Pour configurer l’activité de **[!UICONTROL changement de dimension]**, respe
 
    Les flèches bleues permettent de définir l&#39;ordre de priorité de traitement des doublons.
 
-   Dans l&#39;exemple ci-dessus, les destinataires seront dédoublonnés d&#39;abord sur leur adresse email, puis, au besoin, sur leur numéro de compte.
+   Dans l’exemple ci-dessus, les destinataires seront dédupliqués d’abord sur leur adresse e-mail puis, au besoin, sur leur numéro de compte.
 
 1. L&#39;onglet **[!UICONTROL Résultat]** permet d&#39;ajouter des informations complémentaires.
 
@@ -73,7 +73,7 @@ Pour configurer l’activité de **[!UICONTROL changement de dimension]**, respe
 
      ![](assets/wf_change-dimension_sample_05.png)
 
-1. Exécutez le workflow pour visualiser le résultat de ce paramétrage. Comparez les données contenues dans les tables avant et après l&#39;activité de changement de dimension, comparez également la structure des tables du workflow, comme dans les exemples suivants :
+1. Exécutez le workflow pour afficher le résultat de cette configuration. Comparez les données contenues dans les tableaux avant et après l’activité de changement de dimension, comparez également la structure des tableaux de workflow, comme dans les exemples suivants :
 
    ![](assets/wf_change-dimension_sample_06.png)
 

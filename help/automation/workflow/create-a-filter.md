@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 8e6fd9b4-77c4-4af8-921b-c3fe104fa5bc
 source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 77%
+source-wordcount: '237'
+ht-degree: 71%
 
 ---
 
@@ -51,4 +51,4 @@ La variable **[!UICONTROL Pris en compte si]** permet de définir les critères 
 
 Ici, **$(/tmp/@text)=&#39;agence&#39;**
 
-La variable **$(/tmp/@text) !L&#39;expression =&#39;’** applique chaque condition lorsque le champ de saisie n&#39;est pas vide.
+L’expression **$(/tmp/@text)!=&#39;&#39;** applique chaque condition lorsque le champ d’entrée n’est pas vide.

@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 98%
+source-wordcount: '977'
+ht-degree: 83%
 
 ---
 
@@ -56,11 +56,11 @@ Si des filtres prédéfinis ont déjà été créés, vous pouvez les sélection
 
 ### Définissez le poids de l&#39;offre {#offer-weight}
 
-Pour permettre au moteur d&#39;arbitrer entre plusieurs offres auxquelles la personne ciblée serait éligible, vous devez attribuer un ou plusieurs poids à l&#39;offre. Vous pouvez également appliquer des filtres sur la cible si nécessaire ou restreindre l&#39;emplacement auquel doit s&#39;appliquer le poids. Une offre dont le poids est plus important sera préférée à une offre avec un poids moindre.
+Pour permettre au moteur de décider entre plusieurs offres auxquelles la cible est éligible, vous devez attribuer un ou plusieurs poids à l’offre. Vous pouvez également appliquer des filtres sur la cible si nécessaire ou restreindre l&#39;emplacement auquel le poids s&#39;appliquera. Une offre ayant un poids plus important sera préférée à une offre ayant moins de poids.
 
 Vous pouvez paramétrer plusieurs poids pour une même offre, notamment en fonction d&#39;une période, d&#39;une cible ou encore d&#39;un emplacement.
 
-Par exemple, une offre peut avoir un poids A pour les contacts âgés de 18 à 25 ans et un poids B pour les contacts plus âgés. Ou, si une offre est éligible tout l&#39;été, elle peut avoir un poids A au mois de juillet, et un poids B au mois d&#39;août.
+Par exemple, une offre peut avoir un poids de A pour les contacts âgés de 18 à 25 ans et un poids de B pour les contacts au-dessus de cette plage. Si une offre est éligible tout l&#39;été, elle peut également avoir un poids de A en juillet et un poids de B en août.
 
 >[!NOTE]
 >
@@ -98,7 +98,7 @@ Pour créer un poids dans une offre, procédez comme suit :
 
    >[!NOTE]
    >
-   >Si une cible est éligible à plusieurs poids pour une offre sélectionnée, le moteur garde le meilleur poids (le plus élevé). Lors d&#39;un appel au moteur d&#39;offres, une offre ne sort qu&#39;une seule fois maximum par contact.
+   >Si une cible est éligible à plusieurs poids pour une offre sélectionnée, le moteur conserve le meilleur poids (le plus élevé). Lors d&#39;un appel au moteur d&#39;offres, une offre est sélectionnée au maximum une fois par contact.
 
 ### Résumé des règles d&#39;éligibilité d&#39;une offre {#a-summary-of-offer-eligibility-rules}
 

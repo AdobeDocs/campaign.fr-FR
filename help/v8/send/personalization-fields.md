@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 14a741dd-794e-4760-bfa3-bafbe993a3f7
 source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 100%
+source-wordcount: '338'
+ht-degree: 83%
 
 ---
 
@@ -52,12 +52,12 @@ Dans le cas d’utilisation ci-dessous, apprenez à personnaliser l’objet et l
 1. Créez une nouvelle diffusion ou ouvrez une diffusion existante d’e-mail.
 1. Accédez au lien **[!UICONTROL Objet]** pour modifier l’objet du message.
 1. Saisissez le texte « **Offre spéciale pour** » et utilisez le dernier bouton de la barre d’outils pour insérer un champ de personnalisation. Choisissez **[!UICONTROL Destinataire>Prénom]**.
-1. Répétez l&#39;opération pour insérer le nom du destinataire. Insérez des espaces entre chacun de ces champs de personnalisation.
+1. Répétez l&#39;opération pour insérer le nom du destinataire. Insérez des espaces entre tous les champs de personnalisation.
 1. Cliquez sur **[!UICONTROL OK]** pour valider.
-1. Insérez ensuite la personnalisation dans le corps du message. Pour cela, cliquez dans le contenu du message et cliquez sur le bouton d&#39;insertion de champs.
+1. Insérez la personnalisation dans le corps du message. Pour cela, cliquez dans le contenu du message et cliquez sur le bouton d&#39;insertion de champ.
 1. Choisissez **[!UICONTROL Destinataire > Autre...]**.
 1. Sélectionnez le champ contenant l&#39;information à afficher et cliquez sur **[!UICONTROL Ok]**.
-1. Cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** pour visualiser le résultat de la personnalisation. Vous devez sélectionner un destinataire pour afficher son message.
+1. Cliquez sur l’onglet **[!UICONTROL Aperçu]** pour afficher le résultat de la personnalisation. Vous devez sélectionner un destinataire pour afficher son message.
 
 
 
@@ -65,4 +65,4 @@ Dans le cas d’utilisation ci-dessous, apprenez à personnaliser l’objet et l
 
 Dans la vidéo suivante, découvrez comment ajouter un champ de personnalisation à la ligne d’objet et au contenu d’une diffusion e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/30950?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)

@@ -7,15 +7,15 @@ level: Beginner
 exl-id: c2d34ee9-4427-48e7-a8cf-0ae02a801d50
 version: Campaign v8, Campaign Classic v7
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '329'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '339'
+ht-degree: 87%
 
 ---
 
 # Connexion de votre CRM à Campaign {#gs-crm}
 
-Adobe Campaign propose différents connecteurs CRM pour relier votre plateforme Adobe Campaign à vos systèmes tiers. Ces connecteurs CRM permettent par exemple de synchroniser les contacts, les comptes, les commandes, les achats, etc. Ils facilitent l’intégration de votre application à vos différentes applications tierces et métiers.
+Adobe Campaign fournit divers connecteurs CRM pour lier votre plateforme Adobe Campaign à vos systèmes tiers. Ces connecteurs CRM permettent de synchroniser les contacts, les comptes, les achats, etc. Ils facilitent l’intégration de votre application à diverses applications tierces et commerciales.
 
 Ces connecteurs permettent une intégration rapide et facile des données : Adobe Campaign fournit un assistant dédié à la collecte et à la sélection des tableaux disponibles dans le CRM. Cela garantit une synchronisation bidirectionnelle et permet de s&#39;assurer que les données sont à jour en tout temps, et ce, sur l&#39;ensemble des systèmes.
 
@@ -46,4 +46,4 @@ Découvrez la procédure détaillée pour connecter Campaign et Microsoft Dynam
 
 Découvrez la procédure détaillée pour connecter Campaign et Salesforce.com dans [cette page](ac-sfdc.md).
 
-La synchronisation des données entre Adobe Campaign et le CRM est réalisée à travers une activité de workflow dédiée. Créez vos workflows pour automatiser la synchronisation entre Campaign et votre CRM. Vous pouvez créer un workflow qui importe les contacts depuis Microsoft Dynamics, les synchronise avec les données Adobe Campaign existantes, déduplique les contacts et met à jour la base de données Adobe Campaign. En savoir plus sur [cette page](crm-data-sync.md).
+La synchronisation des données entre Adobe Campaign et le CRM est réalisée à travers une activité de workflow dédiée. Créez vos workflows pour automatiser la synchronisation entre Campaign et votre CRM. Vous pouvez créer un workflow qui importe les contacts depuis Microsoft Dynamics, les synchronise avec les données Adobe Campaign existantes, déduplique les contacts et met à jour la base de données Adobe Campaign. En savoir plus à ce propos sur [cette page](crm-data-sync.md).

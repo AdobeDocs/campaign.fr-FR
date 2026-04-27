@@ -7,12 +7,12 @@ level: Beginner
 exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 98%
+source-wordcount: '900'
+ht-degree: 87%
 
 ---
 
-# Création d&#39;emplacements{#creating-offer-spaces}
+# Création d’emplacements d’offres{#creating-offer-spaces}
 
 Le contenu du catalogue d&#39;offres est paramétré dans des emplacements. Par défaut, le contenu peut contenir les champs suivants : **[!UICONTROL Titre]**, **[!UICONTROL URL de destination]**, **[!UICONTROL URL d&#39;image]**, **[!UICONTROL Contenu HTML]** et **[!UICONTROL Contenu texte]**. La séquence des champs est paramétrée dans l&#39;emplacement.
 
@@ -32,13 +32,13 @@ Pour créer un nouvel emplacement, procédez comme suit :
 
    ![](assets/offer_space_create_002.png)
 
-1. Cochez l&#39;option **[!UICONTROL Autoriser le mode unitaire]**.
+1. Cochez l’option **[!UICONTROL Activer le mode unitaire]**.
 
-1. Dans la fenêtre **[!UICONTROL Champs du contenu]**, cliquez sur **[!UICONTROL Ajouter]**.
+1. Dans la fenêtre **[!UICONTROL Champs de contenu]**, cliquez sur **[!UICONTROL Ajouter]**.
 
    ![](assets/offer_space_create_003.png)
 
-1. Depuis le nœud **[!UICONTROL Contenu]** sélectionnez successivement les champs dans l&#39;ordre suivant : **[!UICONTROL Titre]**, puis **[!UICONTROL URL de l&#39;image]**, puis **[!UICONTROL Contenu HTML]**, puis **[!UICONTROL URL de destination]**.
+1. Depuis le noeud **[!UICONTROL Contenu]** sélectionnez successivement les champs dans l&#39;ordre suivant : **[!UICONTROL Titre]**, puis **[!UICONTROL URL de l&#39;image]**, puis **[!UICONTROL Contenu HTML]**, puis **[!UICONTROL URL de destination]**.
 
    ![](assets/offer_space_create_004.png)
 
@@ -50,9 +50,9 @@ Pour créer un nouvel emplacement, procédez comme suit :
 
    ![](assets/offer_space_create_005.png)
 
-1. Cliquez sur **[!UICONTROL Éditer les fonctions]** pour créer une fonction de rendu.
+1. Cliquez sur **[!UICONTROL Editer les fonctions]** pour créer une fonction de rendu.
 
-   Ces fonctions sont utilisées pour générer des représentations d&#39;offres sur un emplacement. Il existe plusieurs formats possibles : HTML ou texte.
+   Ces fonctions sont utilisées pour générer des représentations d&#39;offres sur un emplacement. Il existe plusieurs formats possibles : HTML ou texte.
 
    **Remarque** - Le format XML est limité aux interactions entrantes qui ne sont pas disponibles dans cette version du produit. [En savoir plus](../start/v7-to-v8.md#gs-unavailable-features)
 
@@ -96,7 +96,7 @@ Dans l&#39;environnement **[!UICONTROL En édition]**, configurez pour chaque em
 
 Pour ce faire, procédez comme suit :
 
-1. Accédez à l&#39;onglet **[!UICONTROL Stockage]** de l&#39;emplacement de votre choix.
+1. Positionnez-vous dans l&#39;onglet **[!UICONTROL Stockage]** de l&#39;emplacement de votre choix.
 1. Sélectionnez l&#39;état à appliquer lors de la création de la proposition.
 
    ![](assets/offer_update_status_001.png)
@@ -107,7 +107,7 @@ Une fois qu&#39;une proposition d&#39;offre a été **acceptée**, utilisez l&#3
 
 Pour ce faire, procédez comme suit :
 
-1. Accédez à l&#39;onglet **[!UICONTROL Stockage]** de l&#39;emplacement de votre choix.
+1. Positionnez-vous dans l&#39;onglet **[!UICONTROL Stockage]** de l&#39;emplacement de votre choix.
 1. Sélectionnez l&#39;état que vous souhaitez appliquer à la proposition lorsqu&#39;elle est acceptée.
 
    ![](assets/offer_update_status_002.png)
@@ -115,13 +115,13 @@ Pour ce faire, procédez comme suit :
 
 **Interaction entrante**
 
-L&#39;onglet **[!UICONTROL Stockage]** permet de définir les statuts des propositions d&#39;offre **présentées** et **acceptées** uniquement. Dans le cas d&#39;une interaction entrante, vous devez préciser directement le statut de la proposition d&#39;offre dans l&#39;URL d&#39;appel du moteur d&#39;offre plutôt que dans l&#39;interface. Vous serez ainsi en mesure de spécifier le statut à appliquer dans d&#39;autres cas, par exemple si une proposition d&#39;offre est rejetée.
+L&#39;onglet **[!UICONTROL Stockage]** permet de définir les statuts des propositions d&#39;offre **proposées** et **acceptées** uniquement. Dans le cas d&#39;une interaction entrante, le statut des propositions d&#39;offre doit être spécifié directement dans l&#39;URL d&#39;appel du moteur d&#39;offres, plutôt que via l&#39;interface. Vous serez ainsi en mesure de spécifier l&#39;état à appliquer dans d&#39;autres cas, par exemple si une proposition d&#39;offre est rejetée.
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
 ```
 
-Par exemple, la proposition (identifiant **40004**) correspondant à l&#39;offre **Assurance habitation** et diffusée sur la page du site **Neobank** contient l&#39;URL suivante :
+Par exemple, la proposition (identifiant **40004**) correspondant à l’offre **Assurance habitation** et diffusée sur la page du site **Neobank** contient l’URL suivante :
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<40004>&st=<3>&r=<"http://www.neobank.com/insurance/subscribe.html">
@@ -154,6 +154,6 @@ Dans le cas où le destinataire n&#39;est éligible à aucune offre, la prévisu
 ![](assets/offer_space_overview_001.png)
 
 
-La prévisualisation peut ne pas tenir compte des contextes lorsqu&#39;ils sont limités à un emplacement. C&#39;est le cas lorsque le schéma d&#39;interaction a été étendu de façon à ajouter des champs qui sont référencés dans un emplacement utilisant un canal entrant.
+L’aperçu peut ignorer les contextes lorsqu’ils sont limités à un espace. C’est le cas lorsque le schéma d’interaction a été étendu afin d’ajouter des champs référencés dans un espace utilisant un canal entrant.
 
-Pour en savoir plus à ce sujet, consultez cet exemple dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=fr){target="_blank"}.
+Pour en savoir plus à ce sujet, consultez cet exemple dans la documentation de [Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=fr){target="_blank"}.

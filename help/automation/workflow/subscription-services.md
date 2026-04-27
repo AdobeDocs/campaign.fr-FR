@@ -6,8 +6,8 @@ feature: Workflows, Targeting Activity, Subscription Services Activity
 version: Campaign v8, Campaign Classic v7
 exl-id: 919630ed-b39f-40e5-b893-f3a203713b15
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '421'
+workflow-type: tm+mt
+source-wordcount: '423'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ Pour la paramétrer, éditez l&#39;activité et saisissez son libellé, puis cho
 1. Cliquez sur **[!UICONTROL Inscription]** ou **[!UICONTROL Désinscription]** si vous souhaitez abonner ou désabonner la population spécifiée au service d&#39;information sélectionné.
 1. Sélectionnez **[!UICONTROL Envoyer un message de confirmation]** pour prévenir un destinataire lorsqu&#39;il est abonné ou désabonné à un service.
 
-   Le contenu de ce message est précisé dans un modèle de diffusion associé au service d’information.
+   Le contenu de ce message est précisé dans un modèle de diffusion attaché au service d&#39;information.
 
 ## Exemple : inscrire une liste de destinataires à une newsletter {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
@@ -46,7 +46,7 @@ Pour cela, il faut également exclure les destinataires déjà abonnés.
 
 1. Placez les trois requêtes suivantes :
 
-   * Une première ciblant les destinataires âgés de 18 à 60 ans.
+   * Une première ciblant les destinataires âgés de 18 à 60 ans.
    * Une seconde ciblant les destinataires résidant à Paris.
    * Une troisième ciblant les destinataires n&#39;étant pas actuellement pas abonnés à la newsletter.
 
@@ -67,6 +67,6 @@ Vous avez la possibilité de vérifier que l&#39;abonnement a bien été effectu
 ## Paramètres d&#39;entrée {#input-parameters}
 
 * tableName
-* schema
+* schéma
 
 Chacun des événements entrants doit spécifier une cible définie par ces paramètres.

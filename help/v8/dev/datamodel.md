@@ -7,26 +7,26 @@ level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 98%
+source-wordcount: '737'
+ht-degree: 92%
 
 ---
 
 # Prise en main du modèle de données de Campaign {#gs-ac-datamodel}
 
-Un modèle de données d’usine est fourni avec Adobe Campaign. Cette section fournit un certain nombre de détails sur les tables intégrées du modèle de données d&#39;Adobe Campaign et leurs interactions. Adobe Campaign repose sur une base de données cloud contenant des tables liées entre elles.
+Un modèle de données d’usine est fourni avec Adobe Campaign. Cette section donne un certain nombre de détails sur les tables intégrées du modèle de données d’Adobe Campaign et leurs interactions. Adobe Campaign repose sur une base de données cloud contenant des tables liées entre elles.
 
 La structure de base du modèle de données Adobe Campaign peut être décrite comme suit :
 
 * **Table des destinataires** : le modèle de données repose sur une table principale qui est par défaut la table des destinataires (**nmsRecipient**). Cette table enregistre tous les profils marketing. En savoir plus sur la table des destinataires dans [cette section](#ootb-profiles).
 
-* **Table de diffusion** : cette table stocke un enregistrement par action de diffusion. Généralement, il s’agit de la table de diffusion (**NmsDelivery**). de cette table représente une action de diffusion ou un modèle de diffusion. Elle contient tous les paramètres nécessaires pour effectuer des diffusions telles que la cible, le contenu, etc. Chaque enregistrement est mis à jour plusieurs fois pour refléter la progression de la diffusion.
+* **Table de diffusion** : cette table stocke un enregistrement par action de diffusion. Généralement, il s&#39;agit de la table de diffusion (**NmsDelivery**). de cette table représente une action de diffusion ou un modèle de diffusion. Il contient tous les paramètres nécessaires à l’exécution des diffusions, tels que la cible, le contenu, etc. Chaque enregistrement est mis à jour plusieurs fois pour refléter la progression de la diffusion
 
 * **Tables de logs** : ces tables stockent tous les logs associés à l&#39;exécution des campagnes.
 
-   * Les logs de diffusion sont tous les messages envoyés aux destinataires ou aux appareils sur tous les canaux. La table principale des logs de diffusion (**NmsBroadLogRcp**) contient les logs de diffusion de tous les destinataires.
+   * Les logs de diffusion sont tous des messages envoyés aux destinataires ou aux appareils sur tous les canaux. La table principale des logs de diffusion (**NmsBroadLogRcp**) contient les logs de diffusion de tous les destinataires.
    * La table **nmsBroadlog** est la plus volumineuse du système. Elle stocke un enregistrement par message envoyé. Les enregistrements sont insérés et mis à jour, afin de suivre le statut de la diffusion, puis supprimés lorsque l’historique est purgé.
-   * La table principale des logs de tracking (**NmsTrackingLogRcp**) stocke les logs de tracking pour tous les destinataires. Les logs de tracking se rapportent aux réactions des destinataires, telles que les ouvertures d’e-mail et les clics. Chaque réaction correspond à un log de tracking.
+   * La table principale des logs de tracking (**NmsTrackingLogRcp**) stocke les logs de tracking pour tous les destinataires. Les logs de tracking se rapportent aux réactions des destinataires, telles que les ouvertures d’email et les clics. Chaque réaction correspond à un log de tracking.
 
   Les mpgs de diffusion et de tracking sont supprimés après une certaine période, spécifiée dans Adobe Campaign et modifiable. Il est donc vivement recommandé d&#39;exporter les logs de façon régulière.
 
@@ -38,16 +38,16 @@ La structure de base du modèle de données Adobe Campaign peut être décrite 
 
 Lorsque vous commencez à utiliser Adobe Campaign, vous devez évaluer le modèle de données par défaut pour déterminer quelle table est adaptée au stockage de vos données marketing.
 
-Vous pouvez utiliser la table des destinataires par défaut avec les champs d&#39;usine, comme décrit dans [cette section](#ootb-profiles). Le cas échéant, vous pouvez l&#39;étendre avec deux mécanismes :
+Vous pouvez utiliser la table des destinataires par défaut avec les champs d&#39;usine, comme décrit dans [cette section](#ootb-profiles). En cas de besoin, vous pouvez l’étendre avec deux mécanismes :
 
-* [Étendez une table existante](extend-schema.md) avec de nouveaux champs. Par exemple, vous pouvez ajouter un nouveau champ « Fidélité » au tableau des destinataires.
+* [Étendez une table existante](extend-schema.md) avec de nouveaux champs. Par exemple, vous pouvez ajouter un nouveau champ « Fidélité » à la table des destinataires.
 * [Créez un tableau](create-schema.md), par exemple un tableau « Achat » répertoriant tous les achats effectués par chaque profil de la base de données, et liez-le au tableau des destinataires.
 
 Découvrez les bonnes pratiques d’utilisation du modèle de données Campaign dans [cette section](datamodel-best-practices.md).
 
 ## Table des profils intégrée {#ootb-profiles}
 
-La table des destinataires intégrée (nmsrecipient) dʼAdobe Campaign est un bon point de départ pour créer votre modèle de données. Elle comporte un certain nombre de champs prédéfinis et de liens vers des tables faciles à étendre. Son emploi est particulièrement efficace si vous ciblez principalement les destinataires, car elle sʼappuie sur un modèle de données centré sur ces derniers.
+La table des destinataires intégrée (nmsrecipient) dʼAdobe Campaign est un bon point de départ pour créer votre modèle de données. Elle comporte un certain nombre de champs prédéfinis et de liens vers des tables faciles à étendre. Son emploi est particulièrement efficace si vous ciblez principalement les destinataires, car elle s&#39;appuie sur un modèle de données centré sur ces derniers.
 
 Les avantages liés à l&#39;utilisation d&#39;une table des destinataires standard sont les suivants :
 
@@ -60,7 +60,7 @@ Il est possible d&#39;étendre la table des destinataires, mais sans réduire le
 
 Découvrez comment étendre un schéma existant dans [cette section](extend-schema.md).
 
-Découvrez des exemples d&#39;extensions de table de destinataires intégrées dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#extending-a-table){target="_blank"}
+Découvrez des exemples d&#39;extensions de table de destinataires intégrées dans la documentation de [Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#extending-a-table){target="_blank"}
 
 Vous pouvez également utiliser une autre table des destinataires, mieux adaptée à vos besoins professionnels ou fonctionnels. Cette méthode s&#39;accompagne de limitations et est décrite dans [cette section](custom-recipient.md).
 
@@ -70,7 +70,7 @@ Pour une meilleure compréhension de la gestion des tables dans Campaign v8, not
 
 Pour en savoir plus sur la stratégie et les mécanismes de réplication, consultez [cette section](../architecture/replication.md).
 
-**Rubriques connexes**.
+**Rubriques connexes :**
 
-Découvrez comment importer des profils dans [cette section](../start/import.md). 
-Pour en savoir plus sur les audiences Campaign, consultez [cette section.](../start/audiences.md)
+Découvrez comment importer des profils dans [cette section](../start/import.md)
+En savoir plus sur les audiences Campaign dans [cette section](../start/audiences.md)

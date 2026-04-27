@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: a523e76d-776c-47d3-9c15-34241cee1092
 source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 99%
+source-wordcount: '1003'
+ht-degree: 91%
 
 ---
 
@@ -72,23 +72,23 @@ Campaign contient trois types d&#39;objets de diffusion :
 
 ### Diffusion unique {#single-delivery}
 
-Une **diffusion** est un objet de diffusion autonome exécuté une seule fois. Elle peut être dupliquée et préparée à nouveau. Toutefois, tant qu&#39;elle se trouve dans un état final (annulée, arrêtée, terminée), elle ne peut pas être réutilisée.
+Une **diffusion** est un objet de diffusion autonome qui est exécuté une seule fois. Il peut être dupliqué, préparé à nouveau, mais tant qu&#39;il est dans son état final (annulé, arrêté, terminé), il ne peut pas être réutilisé.
 
 Les diffusions peuvent être créées à partir de la liste de diffusions ou au sein d&#39;un workflow via une activité [Diffusion](../../automation/workflow/delivery.md).
 
- Les workflows fournissent également des activités de diffusion spécifiques selon le type de canal que vous souhaitez utiliser. Pour plus d&#39;informations sur ces activités, voir [cette section](../../automation/workflow/cross-channel-deliveries.md).
+Les workflows fournissent également des activités de diffusion spécifiques selon le type de canal que vous souhaitez utiliser. Pour plus d&#39;informations sur ces activités, voir [cette section](../../automation/workflow/cross-channel-deliveries.md).
 
 ### Diffusion récurrente {#recurring-delivery}
 
 Une **diffusion récurrente** est disponible dans le contexte d’un workflow. Elle permet de créer une diffusion à chaque exécution de l’activité. Ainsi, vous n’avez pas à créer de diffusion pour les tâches récurrentes. Par exemple, si vous exécutez ce type d’activité une fois par mois, vous obtiendrez 12 diffusions au bout d’un an.
 
-Les diffusions récurrentes sont créées dans des workflows par le biais de l&#39;activité [&#128279;](../../automation/workflow/recurring-delivery.md)Diffusion récurrente. Un exemple d&#39;utilisation de cette activité est présenté dans la section suivante : [Création d’une diffusion récurrente dans un workflow de ciblage](../../automation/workflow/send-a-birthday-email.md).
+Les diffusions récurrentes sont créées dans des workflows par le biais de l&#39;activité [](../../automation/workflow/recurring-delivery.md)Diffusion récurrente. Un exemple d&#39;utilisation de cette activité est présenté dans la section suivante : [Création d’une diffusion récurrente dans un workflow de ciblage](../../automation/workflow/send-a-birthday-email.md).
 
-### Diffusion au fil de l’eau {#continuous-delivery}
+### Diffusion continue {#continuous-delivery}
 
 Une **diffusion au fil de l’eau** est disponible dans le contexte d’un workflow. Elle permet d’ajouter de nouvelles personnes destinataires à une diffusion existante, ce qui évite d’avoir à créer une diffusion à chaque exécution.
 
-Si des informations liées à diffusion changent (contenu, nom, etc.), un nouvel objet de diffusion est créé lors de l&#39;exécution de la diffusion. Si aucune information n&#39;a été modifiée, le même objet de diffusion est réutilisé, et les logs de diffusion et de tracking sont ajoutés au même objet.
+Si des informations sont modifiées au niveau de la diffusion (contenu, nom, etc.), un nouvel objet de diffusion est créé lors de l’exécution de la diffusion. Si aucune information n&#39;a été modifiée, le même objet de diffusion est réutilisé et les logs de diffusion et de tracking sont ajoutés dans le même objet.
 
 Par exemple, si vous exécutez ce type d&#39;activité une fois par mois, vous obtiendrez une seule diffusion au bout d&#39;un an (à condition que vous n&#39;ayez apporté aucune modification à la diffusion).
 

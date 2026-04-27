@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
-workflow-type: ht
-source-wordcount: '1022'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1057'
+ht-degree: 95%
 
 ---
 
@@ -39,7 +39,7 @@ Lorsque vous utilisez Campaign pour la première fois, vous devez télécharger 
 
 Deux options sont disponibles pour télécharger la console cliente :
 
-1. En tant qu’administrateur ou administratrice de Campaign, connectez-vous à la [distribution logicielle Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/fr/campaign.html){target="_blank"}.
+1. En tant qu’administrateur ou administratrice de Campaign, connectez-vous à la [distribution logicielle Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target="_blank"}.
 
 1. En tant qu’utilisateur/utilisatrice final(e), votre administrateur ou administratrice Campaign déploie la console cliente pour vous et la rend disponible via une URL dédiée.
 
@@ -55,7 +55,7 @@ Une fois la console cliente installée, procédez comme suit pour créer la conn
 
 1. Cliquez sur le menu **[!UICONTROL Ajouter > Connexion]** et saisissez le libellé et l&#39;URL du serveur applicatif Adobe Campaign.
 
-1. Définissez une connexion vers votre serveur applicatif Adobe Campaign à partir d&#39;une URL. Utilisez soit un DNS ou un alias de la machine, soit votre adresse IP.
+1. Définissez une connexion vers votre serveur applicatif Adobe Campaign via une URL. Utilisez un DNS ou un alias de la machine, ou votre adresse IP.
 
    Par exemple, vous pouvez utiliser une URL de type `https://<machine>.<domain>.com`.
 
@@ -63,11 +63,11 @@ Une fois la console cliente installée, procédez comme suit pour créer la conn
 
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer vos paramètres.
 
-Vous pouvez ajouter autant de connexions que nécessaire pour vous connecter, par exemple, à vos environnements de test, d&#39;évaluation et de production.
+Vous pouvez ajouter autant de connexions que nécessaire pour vous connecter, par exemple, à vos environnements de test, d’évaluation et de production.
 
 >[!NOTE]
 >
->Le bouton **[!UICONTROL Ajouter]** permet de créer des **[!UICONTROL dossiers]** dans lesquels vous pourrez classer vos différentes connexions par des opérations de glisser-déposer.
+>Le bouton **[!UICONTROL Ajouter]** permet de créer **[!UICONTROL dossiers]** pour organiser l&#39;ensemble des connexions. Il vous suffit de glisser-déposer chaque connexion dans un dossier.
 
 ## Connexion à Adobe Campaign {#logon-to-ac}
 

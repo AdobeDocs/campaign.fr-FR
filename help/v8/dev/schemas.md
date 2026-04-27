@@ -7,16 +7,16 @@ level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
 source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 94%
+source-wordcount: '1302'
+ht-degree: 81%
 
 ---
 
 # Utilisation des schémas{#gs-ac-schemas}
 
-La structure physique et logique des données véhiculées dans l&#39;application est décrite en XML et respecte une grammaire propre à Adobe Campaign appelée **schéma**.
+La structure physique et logique des données véhiculées dans l’application est décrite en XML. Il obéit à une grammaire spécifique à Adobe Campaign, appelée **schéma**.
 
-Un schéma est un document XML associé à une table de la base de données, il définit la structuration des données et décrit la définition SQL de la table :
+Un schéma est un document XML associé à une table de base de données. Il définit la structure des données et décrit la définition SQL de la table :
 
 * le nom de la table,
 * des champs ;
@@ -30,7 +30,7 @@ mais aussi la structure XML utilisée pour stocker les données :
 * Les valeurs par défaut
 * les libellés, les descriptions et autres propriétés.
 
-Les schémas servent à définir en base une entité. A chaque entité, correspond un schéma.
+Les schémas permettent de définir une entité dans la base de données. Il existe un schéma pour chaque entité.
 
 Dans Adobe Campaign, les schémas de données permettent de :
 
@@ -80,7 +80,7 @@ Un espace de noms vous permet de regrouper un ensemble de schémas par domaine d
 >
 >Par convention, le nom de l&#39;espace de noms doit être concis et ne comprendre que des caractères autorisés conformes aux règles de nommage des noms XML.
 >
->Les identifieurs ne doivent pas commencer par des caractères numériques.
+>Les identifiants ne doivent pas commencer par des caractères numériques.
 
 ## Espaces de noms réservés {#reserved-namespaces}
 
@@ -113,7 +113,7 @@ Une fois que vous avez créé ou étendu un schéma, il est recommandé de défi
 
 ## Énumérations {#enumerations}
 
-Les énumérations sont définies avant l&#39;élément principal du schéma. Elles permettent d&#39;afficher des valeurs dans une liste afin de restreindre les choix de l&#39;utilisateur pour un champ donné.
+Les énumérations sont définies en premier, avant l&#39;élément principal du schéma. Elles permettent d’afficher des valeurs dans une liste afin de restreindre les choix de l’utilisateur ou de l’utilisatrice pour un champ donné.
 
 Exemple:
 
@@ -134,7 +134,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 >[!NOTE]
 >
->Vous pouvez également ajouter des énumérations gérées par l&#39;utilisateur (accessibles depuis le nœud **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]**) pour spécifier les valeurs d&#39;un champ donné. Cela peut être judicieux si vous envisagez d&#39;utiliser votre énumération en dehors du schéma sur lequel vous travaillez.
+>Vous pouvez également utiliser des énumérations gérées par l&#39;utilisateur (généralement sous **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** ) pour spécifier les valeurs d&#39;un champ donné. Il s’agit en fait d’énumérations globales, un meilleur choix si votre énumération peut être utilisée en dehors du schéma spécifique dans lequel vous travaillez.
 
 <!--
 ## Index {#index} 
@@ -236,13 +236,13 @@ Exemple de champ XML également stocké dans un champ SQL et qui a un attribut *
 
 ## Liens {#links}
 
-Les liens sont parmi les derniers éléments de l&#39;élément principal de votre schéma. Ils définissent comment les différents schémas de votre instance sont associés les uns aux autres.
+Les liens sont certains des derniers éléments de l’élément principal de votre schéma. Ils définissent la manière dont tous les différents schémas de votre instance sont liés les uns aux autres.
 
 Les liens sont déclarés dans le schéma qui contient la **clé étrangère** de la table à laquelle il est lié.
 
 Il existe trois types de cardinalité : 1-1, 1-N et N-N. C&#39;est le type d&#39;association 1-N qui est utilisé par défaut.
 
-### Exemples       {#examples-1}
+### Exemples {#examples-1}
 
 Exemple de relation 1-N entre la table des destinataires (schéma d&#39;usine) et une table des transactions personnalisée :
 
@@ -282,7 +282,7 @@ Une fois vos modifications apportées et enregistrées, toutes les modifications
 
 ![](assets/schemaextension_3.png)
 
-Pour plus d&#39;informations à ce sujet, consultez [cette section](update-database-structure.md).
+Pour plus d’informations, consultez [cette section](update-database-structure.md).
 
 >[!NOTE]
 >

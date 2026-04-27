@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
 source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '1479'
-ht-degree: 95%
+source-wordcount: '1483'
+ht-degree: 81%
 
 ---
 
@@ -106,7 +106,7 @@ Dans le contenu de la page web, vous devez ajouter le script suivant qui permett
 
    Dans cet exemple, la clé d&#39;identification est composite puisqu&#39;elle s&#39;appuie à la fois sur l&#39;email et le nom du destinataire.
 
-1. Lors de l&#39;affichage de la page web, l&#39;évaluation du script permet de passer l&#39;identifiant du destinataire au moteur d&#39;offres. Si l&#39;identifiant est composite, les clés sont affichées dans la même séquence que celle utilisée dans les paramètres avancés et sont séparées par un |.
+1. Lors de l&#39;affichage de la page web, l&#39;évaluation du script permet de transmettre l&#39;identifiant du destinataire au moteur d&#39;offres. Si l’identifiant est composite, les clés sont affichées dans la même séquence que celle utilisée dans les paramètres avancés et sont séparées par un |.
 
    Dans l&#39;exemple suivant, le contact s&#39;est identifié sur le site web et a été reconnu lors de l&#39;appel au moteur d&#39;offres via son adresse e-mail et son nom de famille.
 
@@ -142,15 +142,15 @@ L&#39;appel au moteur d&#39;offres est de la forme suivante :
 
 * Le paramètre &quot;**env**&quot; reçoit le nom interne de l&#39;environnement en ligne.
 
-* Le paramètre &quot;**cb**&quot; reçoit le nom de la fonction qui va interpréter le noeud XML renvoyé par le moteur contenant la ou les propositions (callback). Ce paramètre est optionnel.
+* Le paramètre « **cb** » reçoit le nom de la fonction qui lira le nœud XML renvoyé par le moteur contenant la ou les propositions (de rappel). Ce paramètre est optionnel.
 
 * Le paramètre &quot;**t**&quot; reçoit l&#39;identifiant de la cible, pour une interaction identifiée uniquement. Ce paramètre peut également être passé avec la variable **interactionTarget**. Ce paramètre est optionnel.
 
-* le paramètre &quot;**c**&quot; reçoit la liste des noms internes des catégories. Ce paramètre est optionnel.
+* Le paramètre « **c** » reçoit la liste des noms internes des catégories. Ce paramètre est optionnel.
 
-* Le paramètre &quot;**th**&quot; reçoit la liste des thèmes. Ce paramètre est optionnel.
+* Le paramètre « **th** » reçoit la liste des thèmes. Ce paramètre est optionnel.
 
-* Le paramètre &quot;**gctx**&quot; reçoit les données d&#39;appel globales (contexte) à toute la page. Ce paramètre est optionnel.
+* Le paramètre « **gctx** » reçoit les données d’appel globales (contexte) pour la page entière. Ce paramètre est optionnel.
 
 Le noeud XML retourné est de la forme suivante :
 
@@ -202,11 +202,11 @@ Le cas d&#39;utilisation suivant décrit les paramétrages à effectuer dans Ado
 
    >[!CAUTION]
    >
-   >Il est nécessaire de définir deux fois chaque élément. Les éléments de type CDATA (&quot;_jst&quot;) peuvent contenir des champs de personnalisation.
+   >Chaque élément doit être défini deux fois. Les éléments de type CDATA (« _jst ») peuvent contenir des champs de personnalisation.
    >
    >Ne pas oublier de mettre à jour la structure de la base de données.
 
-   Vous pouvez étendre le schéma des offres afin d&#39;ajouter des champs à la fois dans les modes batch et unitaire, et dans n&#39;importe quel format (texte, HTML et XML).
+   Vous pouvez étendre le schéma des offres afin d’ajouter des champs à la fois dans les modes batch et unitaire, et dans n’importe quel format (texte, HTML et XML).
 
 1. **Étendre le formulaire des offres pour éditer les nouveaux champs et modifier un champ existant**
 
@@ -273,7 +273,7 @@ Le cas d&#39;utilisation suivant décrit les paramétrages à effectuer dans Ado
 
    Le paramètre &quot;**env**&quot; a pour valeur le nom interne de l&#39;environnement en ligne.
 
-   Le paramètre &quot;**cb**&quot; a pour valeur le nom de la fonction qui doit interpréter le noeud XML renvoyé par le moteur. Dans notre exemple, la fonction appelée ouvre une fenêtre modale (fonction alert() ).
+   La valeur du paramètre « **cb** » est le nom de la fonction qui doit interpréter le nœud XML renvoyé par le moteur. Dans notre exemple, la fonction appelée ouvre une fenêtre modale (alert() function).
 
    Le nœud XML renvoyé par le moteur d&#39;offres a la forme suivante :
 
@@ -314,7 +314,7 @@ Il est possible d&#39;utiliser une fonction de rendu XML pour créer une présen
 
 ## Configuration d&#39;une intégration SOAP
 
-Les services web SOAP fournis pour la gestion des offres sont différents de ceux habituellement utilisés dans Adobe Campaign. Ils sont accessibles via l&#39;URL d&#39;interaction décrite dans la section précédente et permettent de proposer ou mettre à jour des offres pour un contact donné.
+Les services web SOAP fournis pour la gestion des offres sont différents de ceux généralement utilisés dans Adobe Campaign. Ils sont accessibles via l&#39;URL d&#39;interaction décrite dans la section précédente et permettent de présenter ou de mettre à jour des offres pour un contact donné.
 
 ### Proposition d&#39;offres {#offer-proposition}
 
@@ -331,7 +331,7 @@ Pour une proposition d&#39;offre via SOAP, ajoutez la commande **nms:proposition
 
 >[!NOTE]
 >
->Les paramètres **targetId** et **maxCount** sont obligatoires. Les autres sont optionnels.
+>Les paramètres **targetId** et **maxCount** sont obligatoires. Les autres sont facultatifs.
 
 En réponse à la requête, le service SOAP renverra les paramètres suivants :
 

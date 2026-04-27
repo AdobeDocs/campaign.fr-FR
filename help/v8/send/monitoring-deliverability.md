@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
 source-git-commit: 3dd4f6041ef193a0d7ea74a0b2c06183861c2797
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 56%
+source-wordcount: '582'
+ht-degree: 57%
 
 ---
 
@@ -59,7 +59,7 @@ Utilisez [SpamAssassin](spamassassin.md) pour tester le contenu de votre email e
 >
 >Le Panneau de Contrôle est disponible pour les utilisateurs de Campaign v8 Managed Cloud Services. En savoir plus sur le [Panneau de contrôle](../config/self-service.md).
 
-Le Panneau de Contrôle [de Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"} fournit des fonctionnalités de surveillance de la délivrabilité, notamment la gestion des sous-domaines et des certificats, la surveillance des profils actifs, ainsi que les mesures de débit et de latence des diffusions.
+Le Panneau de Contrôle [de Campaign](https://experienceleague.adobe.com/fr/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"} fournit des fonctionnalités de surveillance de la délivrabilité, notamment la gestion des sous-domaines et des certificats, la surveillance des profils actifs, ainsi que les mesures de débit et de latence des diffusions.
 
 ## Instructions de surveillance {#monitoring-guidelines}
 
@@ -97,7 +97,7 @@ Consultez attentivement les [logs de diffusion](delivery-dashboard.md#delivery-l
 
 [Guide des bonnes pratiques relatives à la délivrabilité d&#39;Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=fr){target="_blank"} fournit des conseils complets sur la stratégie, la définition, les mesures et les bonnes pratiques en matière de délivrabilité.
 
-[Qu&#39;est-ce que la délivrabilité &#x200B;](about-deliverability.md) présente les concepts clés de la délivrabilité et comment améliorer votre taux de délivrabilité dans Campaign.
+[Qu&#39;est-ce que la délivrabilité ](about-deliverability.md) présente les concepts clés de la délivrabilité et comment améliorer votre taux de délivrabilité dans Campaign.
 
 [Échecs et retours de diffusion](delivery-failures.md) décrit les différents types d’échecs de diffusion, la manière dont Campaign les gère et inclut des conseils de dépannage pour les problèmes courants.
 

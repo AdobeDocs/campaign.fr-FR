@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 56d5628312ea3dedf9335dd0933811e4bf66eb97
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 99%
+source-wordcount: '1653'
+ht-degree: 90%
 
 ---
 
@@ -31,7 +31,7 @@ Vous pouvez ensuite préparer, tester, envoyer et surveiller vos messages avec A
 >
 >Les étapes décrites dans cette section supposent que toutes les personnes destinataires cibles et leurs profils sont stockés dans la base de données, sauf dans le cas d’une diffusion externe. Voir [Sélection des personnes destinataires externes](#selecting-external-recipients).
 
-## Créer une diffusion {#create-the-delivery}
+## Création de la diffusion {#create-the-delivery}
 
 Pour créer une diffusion, procédez comme suit :
 
@@ -40,7 +40,7 @@ Pour créer une diffusion, procédez comme suit :
 
    ![](../send/assets/select-the-new-template.png)
 
-   Un modèle intégré est fourni pour chaque canal installé : e-mail, téléphone, canaux mobiles (notifications push, SMS), courrier, X (Twitter), etc. Les canaux disponibles dans la liste dépendent de votre contrat de licence.
+   Un modèle natif est fourni pour chaque canal installé : email, téléphone, canaux mobiles (push/SMS), courrier, X (Twitter), etc. Les canaux disponibles dans la liste dépendent de votre contrat de licence.
 
    Vous pouvez créer des modèles de diffusion afin de préconfigurer des paramètres spécifiques en fonction de vos besoins.  [En savoir plus](../send/create-templates.md).
 
@@ -114,7 +114,7 @@ Pour sélectionner les destinataires d’une diffusion, procédez comme suit :
      >
      >L&#39;option **[!UICONTROL Inclure les sous-dossiers]** permet de cibler également sur les diffusions contenues dans les dossiers situés en sous-arborescence du noeud sélectionné.
 
-   * **[!UICONTROL Personnes abonnées à un service d’information]** : cette option vous permet de sélectionner une newsletter à laquelle les personnes destinataires doivent être abonnées pour être ciblées par la diffusion en cours de création.
+   * **[!UICONTROL Abonnés d&#39;un service d&#39;information]** : cette option vous permet de sélectionner une newsletter à laquelle les destinataires doivent être abonnés pour être ciblés par la diffusion en cours de création.
 
      ![](assets/target-service.png)
 
@@ -124,7 +124,7 @@ Pour sélectionner les destinataires d’une diffusion, procédez comme suit :
 1. Saisissez un nom pour ce ciblage dans le champ **[!UICONTROL Libellé]**. Par défaut, le libellé est celui correspondant au premier critère de ciblage. Lorsque vous combinez des critères de filtrage, il est recommandé d’utiliser un nom explicite.
 1. Cliquez sur **[!UICONTROL Terminer]** pour valider les options de ciblage.
 
-   Les critères de ciblage définis sont résumés dans la section centrale de l&#39;onglet de paramétrage de la cible principale. Cliquez sur un critère pour en visualiser le contenu (paramétrage et aperçu). Cliquez sur la croix située après le libellé d&#39;un critère pour le supprimer.
+   Les critères de ciblage définis sont résumés dans la section centrale de l’onglet principal de configuration de la cible. Cliquez sur un critère pour en afficher le contenu (configuration et prévisualisation). Pour supprimer un critère, cliquez sur la croix située après son libellé.
 
    ![](assets/target-remove-criterion.png)
 
@@ -135,7 +135,7 @@ Vous pouvez envoyer des messages à des profils qui ne sont pas stockés dans la
 1. Cliquez sur le lien **[!UICONTROL Pour]** afin de sélectionner les destinataires de la diffusion.
 1. Sélectionnez l&#39;option **[!UICONTROL Définie dans un fichier externe]**.
 1. Sélectionnez le fichier contenant les personnes destinataires.
-1. Lors de l&#39;import des personnes destinataires, cliquez sur le lien **[!UICONTROL Définition du format du fichier...]** pour sélectionner et configurer le fichier externe.
+1. Lors de l&#39;import des destinataires, cliquez sur le lien **[!UICONTROL Définition du format du fichier...]** pour sélectionner et configurer le fichier externe.
 
    Pour plus d’informations sur l’import de données, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}.
 
@@ -147,7 +147,7 @@ Vous pouvez envoyer des messages à des profils qui ne sont pas stockés dans la
 
 ### Paramètres d&#39;exclusion {#define-exclusion-settings}
 
-Lors de la définition de l’[audience d’une diffusion](#target-population), l’onglet **[!UICONTROL Exclusions]** est utilisé pour limiter le nombre de messages. Bien que les paramètres par défaut soient recommandés, vous pouvez adapter les paramètres selon vos besoins. Ces options ne doivent toutefois être modifiées que par une personne experte afin d&#39;éviter toute mauvaise utilisation et erreur.
+Lors de la définition de l’[audience d’une diffusion](#target-population), l’onglet **[!UICONTROL Exclusions]** est utilisé pour limiter le nombre de messages. Les paramètres par défaut sont recommandés, mais vous pouvez les adapter en fonction de vos besoins. Toutefois, ces options ne doivent être modifiées que par un utilisateur expert afin d’éviter tout mésusage et erreur.
 
 >[!CAUTION]
 >
@@ -164,12 +164,12 @@ Pour modifier la configuration par défaut, cliquez sur le lien **[!UICONTROL É
 * **[!UICONTROL Exclure les adresses en double lors de la diffusion]** : cette option est active par défaut et supprime les adresses e-mail en double lors de la diffusion. La stratégie appliquée peut varier en fonction de l’utilisation d’Adobe Campaign et du type de données dans la base de données. La valeur de l’option peut être configurée pour chaque modèle de diffusion.
 * **[!UICONTROL Exclure les destinataires qui ne veulent plus être contactés]**, c&#39;est-à-dire les destinataires dont les adresses email se trouvent sur une liste bloquée (&#39;opt out&#39;). Cette option doit rester sélectionnée afin de respecter l’éthique professionnelle du e-marketing.
 * **[!UICONTROL Exclure les destinataires en quarantaine]** : cette option permet d’exclure de la cible les profils dont l’adresse est en quarantaine. Nous vous recommandons vivement de ne pas décocher cette option. En savoir plus sur la gestion des quarantaines dans [cette section](../send/quarantines.md).
-* **[!UICONTROL Limiter la diffusion]** à un nombre donné de messages. Cette option permet de renseigner le nombre maximum de messages à envoyer. Si l’audience cible dépasse le nombre de messages indiqué, une sélection aléatoire est appliquée sur la cible. Pour envoyer tous les messages, conservez cette valeur sur « 0 ».
+* **[!UICONTROL Limiter la diffusion]** à un nombre donné de messages. Cette option permet de saisir le nombre maximal de messages à envoyer. Si l’audience cible dépasse le nombre de messages indiqué, une sélection aléatoire est appliquée sur la cible. Pour envoyer tous les messages, conservez cette valeur sur « 0 ».
 * **[!UICONTROL Conserver les enregistrements en double (même identifiant)]** : cette option permet d’envoyer plusieurs diffusions à des destinataires qui répondent à plusieurs critères de ciblage.
 +++
 
 
-### Sélectionner les personnes destinataires des messages de BAT {#select-the-proof-target}
+### Sélection des destinataires des messages de BAT {#select-the-proof-target}
 
 Pour les diffusions e-mail, vous pouvez envoyer des BAT pour valider le contenu de votre message. L’envoi de BAT permet de vérifier le lien d’exclusion, la page miroir et d’autres liens, de valider le message, de vérifier le bon affichage des images, de détecter les erreurs possibles, etc. Vous souhaiterez peut-être également vérifier votre conception et le rendu sur différents appareils.
 
@@ -182,9 +182,9 @@ Pour plus d’informations sur l’envoi et les personnes destinataires des BAT,
 
 Dans cette vidéo, vous apprendrez comment ajouter des adresses de contrôle et des BAT à un email existant et comment l’envoyer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447001?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
-D’autres vidéos pratiques sur Campaign Classic sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=fr).
+D&#39;autres vidéos pratiques sur Campaign Classic sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=fr).
 
 ## Préparer et valider votre diffusion {#validate-the-delivery}
 
@@ -194,7 +194,7 @@ Pour cela :
 
 1. **Analyser la diffusion** : cette étape permet de procéder à la préparation des messages à envoyer. [En savoir plus](../send/delivery-analysis.md).
 
-1. **Envoyer des BAT** : cette étape permet de contrôler le contenu, les adresses URL, la personnalisation, etc. [En savoir plus](../send/preview-and-proof.md).
+1. **Envoi de BAT** : cette étape vous permet de contrôler le contenu, les URL, la personnalisation, etc. [En savoir plus](../send/preview-and-proof.md).
 
 >[!IMPORTANT]
 >

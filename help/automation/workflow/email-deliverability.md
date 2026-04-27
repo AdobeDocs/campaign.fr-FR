@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Supervision de la délivrabilité (Email Deliverability){#email-deliverability}
 
-Le workflow décrit ci-dessous est installé par défaut sur toutes les instances et permet d’initialiser la liste des règles de qualification des emails rebonds, la liste des domaines et la liste des MX. Une fois le package **Supervision de la délivrabilité (Email Deliverability)** installé, le workflow s’exécute de nuit.
+Le workflow décrit ci-dessous est installé par défaut sur toutes les instances et permet d’initialiser la liste des règles de qualification des emails rebonds, la liste des domaines et la liste des MX. Une fois le package **Supervision de la délivrabilité (Email Deliverability)** installé, le workflow s&#39;exécute de nuit.
 <table> 
  <tbody> 
   <tr> 

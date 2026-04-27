@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
 source-git-commit: c7f139dd7f139ba421eb034f4d8911671b3b3332
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 99%
+source-wordcount: '875'
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ En savoir plus sur les [états de diffusion](delivery-statuses.md).
 
 Le MTA (Mail Transfer Agent) de Campaign v8 fournit la meilleure infrastructure d’envoi de sa catégorie. Il offre des performances optimales en matière de délivrabilité, de réputation, de débit, de reporting, de gestion des rebonds, de préchauffage des adresses IP et de gestion des paramètres de connexion.
 
-Disponible pour tous les clients de Campaign v8, le MTA garantit une évolutivité ainsi qu’un débit de diffusion élevé et permet d’envoyer plus d’e-mails plus rapidement. Ces améliorations sont possibles grâce à de nouvelles techniques de diffusion adaptatives qui modifient en temps réel les paramètres d’envoi des e-mails en fonction des retours des fournisseurs d’accès à Internet.
+Disponible pour tous les clients de Campaign v8, le MTA garantit une évolutivité ainsi qu’un débit de diffusion élevé et permet d’envoyer plus d’e-mails plus rapidement. Ces améliorations sont possibles grâce à de nouvelles techniques de diffusion adaptatives qui modifient en temps réel les paramètres d’envoi des emails en fonction des retours des fournisseurs d’accès à Internet.
 
 ### Avantages
 
@@ -48,7 +48,7 @@ Momentum offre une technologie MTA innovante et extrêmement performante. Elle c
 
 * Le MTA permet une augmentation considérable de la vitesse de débit globale et une réduction significative des rebonds temporaires.
 * Il utilise la dernière technologie MTA pour vous offrir des vitesses de débit optimales pour votre diffusion par e-mail.
-* En s&#39;adaptant instantanément et automatiquement aux retours qu&#39;il reçoit, il garantit également une diffusion par e-mail plus précise et plus intelligente avec des données de diffusion en temps réel.
+* En s&#39;adaptant instantanément et automatiquement aux retours qu&#39;il reçoit, il garantit également une diffusion par email plus précise et plus intelligente avec des données de diffusion en temps réel.
 
 ### Qualification des rebonds
 

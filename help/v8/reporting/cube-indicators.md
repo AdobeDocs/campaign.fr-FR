@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 03a6816b-e51a-4eaf-ab76-02d24f97ba46
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 97%
+source-wordcount: '797'
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Les cubes vous permettent d’effectuer les opérations suivantes :
 
   Les cubes sont des modèles à partir desquels des rapports sont créés. Une fois le modèle sélectionné, cliquez sur **[!UICONTROL Créer]** pour configurer et afficher le nouveau rapport.
 
-  Vous pouvez alors adapter les mesures, modifier le mode d’affichage ou configurer le tableau, puis afficher le rapport à partir du bouton central.
+  Vous pouvez alors adapter les mesures, modifier le mode d&#39;affichage ou configurer le tableau, puis afficher le rapport à partir du bouton central.
 
   ![](assets/display-cube-table.png)
 
@@ -63,7 +63,7 @@ Pour créer un cube, procédez comme suit :
 
 Dans l’exemple ci-dessous, vous allez découvrir comment créer rapidement un cube simple et l’utiliser dans un rapport afin d’en exporter ses mesures.
 
-### Sélectionner la table de travail {#select-the-work-table}
+### Sélection de la table de travail {#select-the-work-table}
 
 Pour créer un cube, procédez comme suit :
 
@@ -78,7 +78,7 @@ Pour créer un cube, procédez comme suit :
 
    ![](assets/cube-filter-source.png)
 
-### Définir les dimensions {#define-dimensions}
+### Définition des dimensions {#define-dimensions}
 
 Une fois le cube créé, vous pouvez définir ses dimensions. Les dimensions sont les angles d’analyse définis pour chaque cube en fonction du schéma des faits qui leur est associé. Il s’agit des dimensions explorées dans l’analyse, comme le temps (année, mois, date), une classification de produits ou de contrats (famille, référence, etc.), un segment de population (par ville, tranche d’âge, statut, etc.).
 
@@ -91,9 +91,9 @@ Pour créer des dimensions, procédez comme suit :
 
 1. Dans cet exemple, nous avons choisi l’**Âge** du destinataire. Pour ce champ, vous pouvez définir un compartimentage afin de regrouper les âges et faciliter la lisibilité des informations. Il est recommandé de définir un compartimentage lorsqu’il peut y avoir plusieurs valeurs distinctes.
 
-Pour cela, cochez l’option **[!UICONTROL Activer le compatimentage.]** [En savoir plus](customize-cubes.md#data-binning).
+Pour cela, cochez l&#39;option **[!UICONTROL Activer la mise en classe.]** [En savoir plus](customize-cubes.md#data-binning).
 
-1. Ajoutez une dimension de type **Date**. Ici, nous souhaitons afficher les dates de création des profils de destinataires. Pour ce faire, cliquez sur **[!UICONTROL Ajouter]** et choisissez le champ **[!UICONTROL Date de création]** dans la table des destinataires.
+1. Ajoutez une dimension de type **Date**. Ici, nous souhaitons afficher les dates de création des profils de destinataires. Pour cela, cliquez sur **[!UICONTROL Ajouter]** et choisissez le champ **[!UICONTROL Date de création]** dans la table des destinataires.
 Vous pouvez personnaliser le mode d’affichage de la date. Pour ce faire, sélectionnez la hiérarchie à utiliser et les niveaux à générer :
 
 ![](assets/cube-date-dimension.png)
@@ -112,7 +112,7 @@ Seules les valeurs présentes dans l’énumération seront affichées. Toutes l
 
 Pour plus d’informations, consultez [cette section](customize-cubes.md#dynamically-manage-bins).
 
-### Construire des indicateurs {#build-indicators}
+### Construction des indicateurs {#build-indicators}
 
 Une fois les dimensions définies, vous pouvez indiquer un mode de calcul pour les valeurs à afficher dans les cellules.
 
@@ -121,7 +121,7 @@ Pour ce faire, créez les indicateurs sous l’onglet **[!UICONTROL Mesures]**. 
 Pour créer les indicateurs, procédez comme suit :
 
 1. Accédez à l’onglet **[!UICONTROL Mesures]** et cliquez sur le bouton **[!UICONTROL Ajouter]**.
-1. Sélectionnez le type de mesure et la formule à appliquer. Dans cet exemple, nous souhaitons comptabiliser le nombre de femmes parmi les destinataires. Notre mesure se base sur le schéma des faits et utilise l’opérateur **[!UICONTROL Comptage]**.
+1. Sélectionnez le type de mesure et la formule à appliquer. Dans cet exemple, nous souhaitons comptabiliser le nombre de femmes parmi les destinataires. Notre mesure se base sur le schéma des faits et utilise l&#39;opérateur **[!UICONTROL Comptage]**.
 
    ![](assets/cube-new-measure.png)
 

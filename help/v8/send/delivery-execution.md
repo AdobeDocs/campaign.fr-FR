@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: 084607f6-47d8-40c0-89ba-bfbb88fc2e53
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 100%
+source-wordcount: '863'
+ht-degree: 77%
 
 ---
 
@@ -52,7 +52,7 @@ Ces rapports Message Center sont accessibles à partir de l&#39;onglet **[!UICO
 
 Le rapport **[!UICONTROL Historique des événements de Message Center]** présente une vue d’ensemble de l’activité du module Message Center, c’est-à-dire le nombre d’événements traités et envoyés sous forme de messages transactionnels.
 
-Lors de l’ouverture du rapport, les informations affichées par défaut correspondent au taux de messages transactionnels envoyés avec succès. Pour visualiser davantage de niveaux, vous pouvez ouvrir les différents noeuds et positionner le pointeur de la souris pour mettre en surbrillance le niveau voulu.
+Lorsque le rapport est ouvert, les informations affichées par défaut correspondent au taux de messages transactionnels envoyés avec succès. Pour afficher d’autres niveaux, vous pouvez ouvrir les différents nœuds et placer votre curseur sur le niveau approprié pour le sélectionner.
 
 Pour chaque période de temps, vous pouvez visualiser les données propres à chacun des types d&#39;événements. La colonne **[!UICONTROL Evénements]** correspond au nombre d&#39;événements reçus par l&#39;instance de pilotage. Le calcul du nombre d&#39;événements transformés en message transactionnel personnalisé se trouve dans la colonne **[!UICONTROL Envoyés]**.
 
@@ -67,9 +67,9 @@ Vous pouvez choisir d’afficher les statistiques globales ou relatives à une i
 
 Les indicateurs affichés dans la section **[!UICONTROL Indicateurs sur la période]** sont calculés sur la période sélectionnée :
 
-* **[!UICONTROL Temps moyen dans la file]** : temps moyen passé dans Message Center pour les événements traités avec succès. Seul le temps de traitement est pris en compte.
-* **[!UICONTROL Temps moyen d’envoi des messages (s)]** : temps moyen passé dans Message Center pour les événements traités avec succès. Seul le temps d’envoi par le MTA est pris en compte.
-* **[!UICONTROL Temps moyen de traitement]** : temps moyen passé dans Message Center pour les événements traités avec succès. Ce calcul prend en compte le temps de traitement et le temps d’envoi par le MTA.
+* **[!UICONTROL Temps moyen dans la file]** : temps moyen passé dans Message Center pour les événements traités avec succès. Seul le temps de traitement est pris en compte.
+* **[!UICONTROL Temps moyen d’envoi des messages (s)]** : temps moyen passé dans Message Center pour les événements traités avec succès. Seule l’heure d’envoi par le MTA est prise en compte.
+* **[!UICONTROL Temps moyen de traitement (s)]** : temps moyen passé dans Message Center pour les événements traités avec succès. Le calcul prend en compte le temps de traitement et le temps d’envoi par le MTA.
 * **[!UICONTROL Nombre maximum d’événements en file d’attente]** : nombre maximum d’événements présents dans la file d’attente Message Center à un moment donné.
 * **[!UICONTROL Nombre minimum d’événements en file d’attente]** : nombre minimum d’événements présents dans la file d’attente Message Center à un même moment.
 * **[!UICONTROL Nombre moyen d’événements en file d’attente]** : nombre moyen d’événements présents dans la file d’attente Message Center à un moment donné.
@@ -84,7 +84,7 @@ Les indicateurs affichés dans la section **[!UICONTROL Indicateurs sur la péri
 
 Le rapport **[!UICONTROL Niveau de service Message Center]** affiche les statistiques de diffusion relatives aux messages transactionnels, ainsi que la répartition des erreurs. Vous pouvez cliquer sur un type d’erreur pour en afficher les détails.
 
-Ce rapport destiné aux administrateurs et administratrices techniques est également accessible à partir de l’onglet **[!UICONTROL Surveillance]** de l’instance de pilotage.
+Ce rapport est également accessible à partir de l’onglet **[!UICONTROL Surveillance]** de l’instance de pilotage.
 
 Vous pouvez choisir d’afficher les statistiques globales ou relatives à une instance d’exécution particulière. Vous pouvez également filtrer les données par canal et sur une période spécifique.
 
@@ -94,8 +94,8 @@ Les indicateurs affichés dans la section **[!UICONTROL Indicateurs sur la péri
 * **[!UICONTROL Entrant (volume evt)]** : nombre d’événements entrés dans la file d’attente Message Center.
 * **[!UICONTROL Sortant (débit msg/h)]** : moyenne horaire du nombre d’événements sortant avec succès de Message Center (envoyés par une diffusion).
 * **[!UICONTROL Sortant (volume msg)]** : nombre d’événements sortant avec succès de Message Center (envoyés par une diffusion).
-* **[!UICONTROL Temps d’envoi moyen]** : temps moyen passé dans Message Center pour les événements traités avec succès. Ce calcul prend en compte le temps de traitement et le temps d’envoi par le MTA.
-* **[!UICONTROL Taux d’erreur]** : nombre d’événements en erreur par rapport au nombre d’événements entrés dans la file d’attente Message Center. Les erreurs suivantes sont prises en compte : erreur de routage, événement ayant expiré (événement resté trop longtemps dans la file d’attente), erreur de diffusion, ignoré par la diffusion (quarantaine, etc.).
+* **[!UICONTROL Temps moyen d’envoi (secondes)]** : temps moyen passé dans Message Center pour les événements traités avec succès. Le calcul prend en compte le temps de traitement et le temps d’envoi par le MTA.
+* **[!UICONTROL Taux d’erreur]** : nombre d’événements en erreur par rapport au nombre d’événements entrés dans la file d’attente Message Center. Les erreurs suivantes sont prises en compte : erreur de routage, événement expiré (événement resté trop longtemps dans la file d&#39;attente), erreur de diffusion, ignoré par la diffusion (quarantaine, etc.).
 
 >[!NOTE]
 >

@@ -9,7 +9,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 75a57ddb-558e-4dd2-a684-e63e51545554
 source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
-source-wordcount: '1260'
+source-wordcount: '1284'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ Une fois votre diffusion push créée, vous pouvez définir son contenu à l’a
 
 * Le **modèle de base** peut inclure du texte, des images et des boutons dans vos notifications.
 
-* Le **modèle de carrousel** vous permet d’envoyer des notifications avec du texte et plusieurs images que les utilisateurs et utilisatrices peuvent faire défiler.
+* Le **carousel** vous permet d’envoyer des notifications avec du texte et plusieurs images que les utilisateurs et utilisatrices peuvent faire défiler.
 
 Accédez aux onglets ci-dessous pour en savoir plus sur la personnalisation de ces modèles.
 
@@ -62,7 +62,7 @@ Accédez aux onglets ci-dessous pour en savoir plus sur la personnalisation de c
 
    ![](assets/rich_push_ios_default_4.png)
 
-1. Une fois la notification configurée, cliquez sur l’onglet **[!UICONTROL Aperçu]** pour la prévisualiser.
+1. Une fois la notification configurée, cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** pour la prévisualiser.
 
 >[!TAB De base]
 
@@ -183,9 +183,9 @@ Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser
 |---------|---------|
 | **[!UICONTROL Contenu modifiable]** | Activez cette option pour permettre à l’application mobile de télécharger le contenu multimédia. |
 | **[!UICONTROL Thread-id]** | Définissez l’identifiant utilisé pour regrouper les notifications associées. |
-| **[!UICONTROL Catégorie]** | Définissez le nom de votre identifiant de catégorie qui affichera les boutons d’action. Ces notifications permettent à la personne d’effectuer plus rapidement différentes tâches en réponse à une notification, sans ouvrir l’application ou la parcourir. |
+| **[!UICONTROL Catégorie]** | Définissez le nom de votre identifiant de catégorie qui affichera les boutons d’action. Ces notifications permettent à l&#39;utilisateur d&#39;effectuer plus rapidement différentes tâches en réponse à celles-ci, sans ouvrir l&#39;application ou la parcourir. |
 | **[!UICONTROL Identifiant du contenu Target]** | Définissez un identifiant utilisé pour cibler la fenêtre d’application à afficher au premier plan à l’ouverture de la notification. |
-| **[!UICONTROL Image de Launch]** | Définissez le nom du fichier image de Launch à afficher. Si la personne choisit de lancer votre application, l’image sélectionnée s’affichera au lieu de l’écran de lancement de votre application. |
+| **[!UICONTROL Image de Launch]** | Définissez le nom du fichier image de Launch à afficher. Si l’utilisateur choisit de lancer votre application, l’image sélectionnée s’affichera au lieu de l’écran de lancement de votre application. |
 | **[!UICONTROL Action de clic]** | Définissez l’action associée à un clic d’un utilisateur ou d’une utilisatrice sur votre notification. |
-| **[!UICONTROL Niveau d’interruption]** | <ul><li>Actif : défini par défaut, le système présente immédiatement la notification, illumine l’écran et peut émettre un son. Les notifications n’outrepassent pas le mode Concentration.</li><li>Passif : le système ajoute la notification à la liste de notifications sans allumer l’écran ni émettre de son. Les notifications n’outrepassent pas le mode Concentration.</li><li> Sensible à l’heure : le système présente immédiatement la notification, allume l’écran, peut émettre un son et outrepasser le mode Concentration. Ce niveau ne nécessite pas d’autorisation spéciale de la part d’Apple.</li><li>Critique : le système présente immédiatement la notification, allume l’écran et contourne le bouton de désactivation du son ou le mode Concentration. Notez que ce niveau nécessite une autorisation spéciale de la part d’Apple.</li></ul> |
+| **[!UICONTROL Niveau d’interruption]** | <ul><li>Actif : défini par défaut, le système présente immédiatement la notification, illumine l’écran et peut émettre un son. Les notifications n’outrepassent pas le mode Concentration.</li><li>Passif : le système ajoute la notification à la liste de notifications sans allumer l’écran ni émettre de son. Les notifications ne passent pas en mode Thème.</li><li> Sensible à l’heure : le système présente immédiatement la notification, allume l’écran, peut émettre un son et outrepasser le mode Concentration. Ce niveau ne nécessite pas d’autorisation spéciale de la part d’Apple.</li><li>Critique : le système présente immédiatement la notification, allume l’écran et contourne le bouton de désactivation du son ou le mode Concentration. Notez que ce niveau nécessite une autorisation spéciale de la part d’Apple.</li></ul> |
 | **[!UICONTROL Score de pertinence]** | Définissez un score de pertinence compris entre 0 et 100. Le système l’utilise pour trier les notifications dans le résumé de la notification. |

@@ -6,9 +6,9 @@ feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: 362b347b-f914-4ebf-84d7-9989aef28a82
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '650'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '654'
+ht-degree: 95%
 
 ---
 
@@ -36,7 +36,7 @@ Pour suivre le statut d&#39;un ensemble de workflows, vous devez procéder comme
 
 ## Etape 1: Création du workflow de suivi {#step-1--creating-the-monitoring-workflow}
 
-Le dossier de workflows que nous allons suivre est le dossier **&quot;CustomWorkflows&quot;** stocké dans le noeud : **Administration > Exploitation > Workflows Techniques**. Ce dossier contient un ensemble de workflows métiers.
+Le dossier de workflows que nous allons suivre est le dossier **« CustomWorkflows »** stocké dans le nœud **Administration > Exploitation > Workflows techniques**. Ce dossier contient un ensemble de workflows métier.
 
 Le **workflow de suivi** est stocké à la racine du dossier Workflows Techniques. Le libellé utilisé est **&quot;Suivi&quot;**.
 

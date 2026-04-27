@@ -6,8 +6,8 @@ feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: 5bc576d0-cab7-4d26-a3a5-91982a00e356
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '733'
+workflow-type: tm+mt
+source-wordcount: '739'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ Les étapes principales de mise en oeuvre de ce cas pratique sont les suivantes�
 
 * Créez une liste de destinataires pour ce rapport. [En savoir plus](#step-1--create-the-recipient-list).
 * Créez un modèle de diffusion qui crée une diffusion à chaque exécution du workflow. [En savoir plus](#step-2--create-the-delivery-template).
-* Créez un workflow qui génère le rapport au format PDF et l’envoie à la liste des destinataires. [En savoir plus](#step-3--create-the-workflow).
+* Créez un workflow qui génère le rapport au format PDF et l’envoie à la liste des destinataires. [En savoir plus](#step-3--create-the-workflow)).
 
 ## Étape 1 : créer la liste de destinataires {#step-1--create-the-recipient-list}
 
@@ -38,7 +38,7 @@ Pour plus d’informations sur la création de listes, consultez [cette section]
 
 Pour créer un modèle de diffusion, procédez comme suit :
 
-1. Dans l’explorateur Adobe Campaign, accédez au nœud **[!UICONTROL Ressources > Modèles > Modèles de diffusion]** et dupliquez le modèle intégré **[!UICONTROL Diffuser par email]**.
+1. Dans l’explorateur Adobe Campaign, accédez au nœud **[!UICONTROL Ressources > Modèles > Modèles de diffusion]** et dupliquez le modèle intégré **[!UICONTROL Diffuser par e-mail]**.
 
    Pour plus d’informations sur la création d’un modèle de diffusion, consultez [cette section](../../v8/send/create-templates.md).
 
@@ -56,7 +56,7 @@ Pour créer un modèle de diffusion, procédez comme suit :
 
      ![](assets/use_case_report_5.png)
 
-     La valeur renseignée dans le champ **[!UICONTROL Libellé]** n’apparaîtra pas dans la diffusion finale.
+     La valeur renseignée dans le champ **[!UICONTROL Libellé]** n&#39;apparaîtra pas dans la diffusion finale.
 
    * Dans la zone de texte, saisissez le chemin d’accès et le nom du fichier.
 

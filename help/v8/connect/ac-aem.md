@@ -6,15 +6,15 @@ role: Admin, User
 level: Beginner
 exl-id: e83893f7-a8be-48a3-a7a6-aced7b4d4f69
 source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
-workflow-type: ht
-source-wordcount: '667'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '729'
+ht-degree: 97%
 
 ---
 
 # Utiliser Campaign et Adobe Experience Manager {#ac-aem}
 
-L&#39;intégration entre Adobe Campaign et Adobe Experience Manager vous permet de gérer le contenu de vos diffusions e-mail, ainsi que vos formulaires directement dans Adobe Experience Manager.
+L&#39;intégration entre Adobe Campaign et Adobe Experience Manager vous permet de gérer le contenu de vos diffusions email, ainsi que vos formulaires directement dans Adobe Experience Manager.
 
 [Découvrez comment modifier votre contenu Adobe Experience Manager as a Cloud Service dans l’interface de Campaign Web](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-content.html?lang=fr){target="_blank"}.
 
@@ -47,7 +47,7 @@ Cette intégration peut être utilisée, par exemple, pour créer une newsletter
 
    ![](assets/aem_authoring_3.png)
 
-1. Modifiez le contenu de votre e-mail en ajoutant des composants, par exemple des champs de personnalisation à partir d’Adobe Campaign. En savoir plus dans la [documentation d’Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html?lang=fr#editing-email-content){target="_blank"}.
+1. Personnalisez le contenu de votre e-mail en ajoutant des composants, tels que des champs de personnalisation d&#39;Adobe Campaign. En savoir plus dans la documentation de [Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html?lang=fr#editing-email-content){target="_blank"}.
 
 1. Lorsque votre e-mail est prêt, accédez au menu **[!UICONTROL Informations sur la page]**, puis cliquez sur **[!UICONTROL Démarrer le workflow]**.
 
@@ -91,7 +91,7 @@ Votre newsletter est maintenant prête et synchronisée dans Adobe Campaign.
 
 1. Pour supprimer la connexion entre Experience Manager et Campaign, cliquez sur **[!UICONTROL Désynchroniser]**.
 
-Votre e-mail est maintenant prêt à être envoyé à votre audience.
+Votre email est maintenant prêt à être envoyé à votre audience.
 
 ## Importer des ressources à partir de la bibliothèque Adobe Experience Manager Assets {#assets-library}
 

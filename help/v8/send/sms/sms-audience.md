@@ -7,9 +7,9 @@ level: Beginner, Intermediate
 version: Campaign v8, Campaign Classic v7
 exl-id: e0603a4d-cde1-4199-a164-bf0c992ba937
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Pour sélectionner l’audience d’une diffusion, procédez comme suit :
 
    ![](assets/audience_to.png){zoomable="yes"}
 
-1. Sélectionnez le **[!UICONTROL Mapping de ciblage]** dans la liste déroulante. Le mapping de ciblage par défaut d’Adobe Campaign est Destinataires, selon le schéma **[!UICONTROL nms:recipient]**.
+1. Sélectionnez le **[!UICONTROL Mapping de ciblage]** dans la liste déroulante. Le mapping de ciblage par défaut d&#39;Adobe Campaign est Destinataire , selon le schéma **[!UICONTROL nms:recipient]** .
 
    D’autres mappings de ciblage sont disponibles et certains d’entre eux peuvent être liés à votre configuration spécifique. Pour plus d’informations sur les mappings de ciblage, voir la section [Utiliser des mappings de ciblage](../../audiences/target-mappings.md).
 
@@ -43,7 +43,7 @@ Pour sélectionner l’audience d’une diffusion, procédez comme suit :
 
    Voici les types de cibles proposés par défaut :
 
-   * **[!UICONTROL Conditions de filtrage]** : cette option permet de définir une requête et d’en visualiser le résultat.
+   * **[!UICONTROL Conditions de filtrage]** : cette option permet de définir une requête et d’en afficher le résultat.
    * **[!UICONTROL Liste de destinataires]** : vous permet de sélectionner une liste que vous avez préparée contenant votre audience.
    * **[!UICONTROL Destinataire]** : permet de sélectionner directement une personne destinataire dans le tableau.
    * **[!UICONTROL Personnes destinataires inclues dans un dossier]** : permet de sélectionner un dossier dans l’arborescence de navigation de l’explorateur.

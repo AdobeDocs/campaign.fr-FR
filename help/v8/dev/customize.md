@@ -7,8 +7,8 @@ level: Intermediate, Experienced
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
 source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 88%
+source-wordcount: '525'
+ht-degree: 79%
 
 ---
 
@@ -28,25 +28,25 @@ Dans Adobe Campaign, les schémas de données permettent de :
 * définir des liens entre les différents objets de données de l&#39;application Campaign ;
 * définir et décrire les champs individuels inclus dans chaque objet.
 
-Par exemple, pour ajouter un champ à une table existante, comme la table de destinataires (nms:destinataire), vous devez étendre ce schéma.
+Par exemple, pour ajouter un champ à une table existante, comme la table des destinataires (nms:recipient), vous devez étendre ce schéma.
 
 Deux modes d&#39;extension de table sont disponibles :
 
 * Dans l&#39;interface, par le biais de l&#39;assistant **Nouveau champ**
 
-  Découvrez comment ajouter rapidement un nouveau champ dans Campaign dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=fr#configuring-campaign-classic){target="_blank"}
+  Découvrez comment ajouter rapidement un nouveau champ dans Campaign dans la documentation de [Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=fr#configuring-campaign-classic){target="_blank"}
 
 * Par programme, en étendant le schéma. Découvrez comment étendre un schéma existant dans [cette section](../dev/extend-schema.md).
 
 Vous pouvez également créer des tables dans la base de données Campaign et étendre le modèle de données natif.
 
-Pour ajouter un nouveau type de données qui n’existe pas par défaut dans Adobe Campaign (une table des contrats par exemple), vous pouvez directement créer un schéma personnalisé. Pour plus d&#39;informations à ce propos, consultez [cet exemple](../dev/create-schema.md#example--creating-a-contract-table).
+Pour ajouter un nouveau type de données qui n&#39;existe pas par défaut dans Adobe Campaign (une table des contrats par exemple), vous pouvez directement créer un schéma personnalisé. Pour plus d&#39;informations à ce propos, consultez [cet exemple](../dev/create-schema.md#example--creating-a-contract-table).
 
-**Rubriques connexes**
+**Rubriques connexes :**
 
-Exemple d&#39;édition de schéma dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#configuring-campaign-classic){target="_blank"}
+Exemple d&#39;édition de schéma dans la documentation de [Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#configuring-campaign-classic){target="_blank"}
 
-Cas d&#39;utilisation : liaison d&#39;un champ à une table de référence existante dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#uc-link){target="_blank"}
+Cas d&#39;utilisation : liaison d&#39;un champ à une table de référence existante dans la documentation de [Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#uc-link){target="_blank"}
 
 
 ## Modification des formulaires de saisie
@@ -57,11 +57,11 @@ Découvrez comment modifier un formulaire de saisie existant ou en créer un dan
 
 ## Personnalisation des tableaux de bord{#gs-custom-dashboards}
 
-L’interface d’Adobe Campaign utilise de nombreuses applications web afin d’accéder aux destinataires, aux diffusions, aux campagnes, aux stocks, etc., puis de gérer et d’agir sur ceux-ci. Elles se présentent dans l&#39;interface sous la forme de tableaux de bord et ne sont composées que d&#39;une seule page.
+L’interface d’Adobe Campaign utilise de nombreuses applications web afin d’accéder aux destinataires, aux diffusions, aux campagnes, aux stocks, etc., puis de gérer et d’interagir avec eux. Elles se présentent dans l’interface sous la forme de tableaux de bord et ne sont composées que d’une seule page.
 
 Les applications Web intégrées sont stockées dans le dossier **Administration > Paramétrage > Applications Web** de l’explorateur.
 
-Découvrez comment créer une page d&#39;aperçu dans Campaign dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=fr#creating-a-single-page-web-application){target="_blank"}
+Découvrez comment créer une page d&#39;aperçu dans Campaign dans la documentation de [Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=fr#creating-a-single-page-web-application){target="_blank"}
 
 
 ## Personnaliser des listes et créer des filtres {#gs-lists-and-filters}

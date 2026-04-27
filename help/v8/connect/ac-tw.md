@@ -6,9 +6,9 @@ feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
 source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
-workflow-type: ht
-source-wordcount: '1126'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1137'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ Le module **Gestion des réseaux sociaux (Social Marketing)** vous permet d’i
 >En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour connecter Campaign à X. Le module complémentaire **Gestion des réseaux sociaux (Marketing des médias sociaux)** doit être installé sur votre environnement, par le biais du module dédié, et le compte externe Twitter doit être configuré.
 
 
-Pour configurer Adobe Campaign afin de publier des posts sur vos comptes X, vous devez déléguer à Adobe Campaign les droits d’écriture sur ces comptes. Pour cela, vous devez effectuer les actions suivantes :
+Pour configurer Adobe Campaign afin de publier des posts sur vos comptes X, vous devez déléguer à Adobe Campaign les droits d’écriture sur ces comptes. Pour ce faire, procédez comme suit :
 
 1. Vous inscrire sur X et créer un compte de développement. [En savoir plus](#dev-account)
 1. Créer un compte X de test dédié à l’envoi de BAT (facultatif). [En savoir plus](#tw-test-account)
@@ -117,7 +117,7 @@ Ils sont arrêtés par défaut : vous devez les démarrer manuellement lorsque 
 
 Le workflow technique **[!UICONTROL Synchronisation des comptes Twitter]** synchronise les comptes X dans Adobe Campaign. Ce workflow récupère la liste des abonnées et abonnés X afin que vous puissiez leur envoyer des messages directs. [En savoir plus](../send/twitter.md#direct-tw-messages)
 
-Par défaut, ce workflow est déclenché tous les jeudis à 7 h 30. Vous pouvez utiliser l’option **[!UICONTROL Exécuter la ou les tâches en attente maintenant]** pour démarrer le workflow à tout moment pendant que vous mettez en œuvre cette intégration.  Vous pouvez également modifier le planificateur pour modifier la fréquence de déclenchement du workflow. En savoir plus sur [cette page](../../automation/workflow/scheduler.md).
+Par défaut, ce workflow est déclenché tous les jeudis à 7 :30AM. Vous pouvez utiliser l’option **[!UICONTROL Exécuter la ou les tâches en attente maintenant]** pour démarrer le workflow à tout moment pendant que vous mettez en œuvre cette intégration.  Vous pouvez également modifier le planificateur pour modifier la fréquence de déclenchement du workflow. En savoir plus à ce propos sur [cette page](../../automation/workflow/scheduler.md).
 
 >[!CAUTION]
 >

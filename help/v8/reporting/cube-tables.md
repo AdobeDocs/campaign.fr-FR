@@ -8,18 +8,18 @@ level: Beginner
 exl-id: 7dbc66ab-a468-40ff-9db2-b33e4fd27754
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 100%
+source-wordcount: '989'
+ht-degree: 88%
 
 ---
 
-# Utiliser des cubes pour explorer les données{#use-cubes-to-create-reports}
+# Utilisation des cubes pour explorer les données{#use-cubes-to-create-reports}
 
 Utilisez des cubes pour créer des rapports, ainsi que pour identifier et sélectionner des données dans la base de données. Vous pouvez ainsi :
 
 * Créer des rapports basés sur des cubes. [En savoir plus](#explore-the-data-in-a-report).
-* Collecter des données de la base de données et les regrouper dans des listes, par exemple pour identifier et construire des cibles et des diffusions. [En savoir plus](#build-a-target-population).
-* Insérez un tableau croisé dynamique dans un rapport, au sein duquel vous référencez un cube existant. [En savoir plus](#insert-a-pivot-table-into-a-report).
+* Collecter des données de la base et les regrouper dans des listes, par exemple pour identifier et construire les cibles des diffusions. [En savoir plus](#build-a-target-population).
+* Insérer un tableau croisé dynamique dans un rapport, au sein duquel vous référencez un cube existant. [En savoir plus](#insert-a-pivot-table-into-a-report).
 
 ## Exploration des données dans un rapport {#explore-the-data-in-a-report}
 
@@ -35,11 +35,11 @@ Pour créer un rapport basé sur un cube existant, procédez comme suit :
 
 1. Cliquez sur le bouton **[!UICONTROL Créer]** pour valider : vous accédez alors à la page de configuration et de visualisation du rapport.
 
-   Par défaut, les deux premières dimensions disponibles sont proposées en colonne et en ligne mais aucune valeur n&#39;est affichée dans le tableau. Pour générer le tableau, cliquez sur l&#39;icône centrale :
+   Par défaut, les deux premières dimensions disponibles sont proposées en lignes et en colonnes, mais aucune valeur n’est affichée dans le tableau. Pour générer le tableau, cliquez sur l&#39;icône principale :
 
    ![](assets/cube-report-config.png)
 
-1. Vous pouvez déplacer les dimensions d&#39;un axe à l&#39;autre, les supprimer, ajouter de nouvelles mesures, etc. Pour cela, utilisez les icônes correspondantes.
+1. Vous pouvez changer les axes de la dimension, les supprimer, ajouter de nouvelles mesures, etc. Pour ce faire, utilisez les icônes appropriées.
 
    ![](assets/cube-switch-axis.png)
 
@@ -71,7 +71,7 @@ Les boutons **[!UICONTROL Ajouter]** situés sur chacun des axes permettent d&#3
 
    Vous pouvez, au choix :
 
-   * Déplier les données au chargement : les valeurs seront alors affichées par défaut à chaque actualisation du rapport (valeur par défaut : non).
+   * Déplier les données au chargement : les valeurs seront alors affichées par défaut à chaque mise à jour du rapport (valeur par défaut : non).
    * Afficher le total en fin de ligne : pour les données affichées en colonne, une options supplémentaire est proposée afin d&#39;afficher le total en fin de ligne : une colonne supplémentaire est alors ajoutée dans le tableau (valeur par défaut : oui).
    * Appliquer un tri : les valeurs de la colonne peuvent être triées par valeur, par libellé, ou selon une mesure (valeur par défaut : par valeur).
    * Afficher les valeurs dans l&#39;ordre ascendant (a-z, 0-9) ou descendant (z-a, 9-0).
@@ -117,9 +117,9 @@ Pour ajouter et configurer des mesures, procédez comme suit :
 
      Entre ces mesures, les opérateurs disponibles sont : somme, différence, multiplication et taux.
 
-   * Proportion : ce type de mesure permet de calculer le nombre d&#39;enregistrements mesurés pour une dimension donnée. Vous pouvez calculer la proportionnalité par rapport à une dimension ou une sous-dimension.
+   * Proportion : ce type de mesure permet de calculer le nombre d&#39;enregistrements mesurés pour une dimension donnée. Vous pouvez calculer la proportionnalité par rapport à une dimension ou une sous-dimension.
    * Variation : cette mesure permet de calculer la variation des valeurs d&#39;un niveau.
-   * Écart type : ce type de mesure permet de calculer les écarts dans chaque groupe de cellules, par rapport à la moyenne des valeurs. Vous pouvez par exemple comparer le volume des ventes pour chaque segment existant.
+   * Ecart à la moyenne : ce type de mesure permet de calculer les écarts dans chaque groupe de cellules par rapport à la moyenne des valeurs. Par exemple, vous pouvez comparer le volume des achats pour tous les segments existants.
 
    Sitôt créée, la mesure est ajoutée dans le rapport.
 
@@ -163,7 +163,7 @@ Pour regrouper une population dans une liste, procédez comme suit :
 
    ![](assets/cube-list-available.png)
 
-## Insérer un tableau croisé dynamique dans un rapport {#insert-a-pivot-table-into-a-report}
+## Insertion dʼun tableau croisé dynamique dans un rapport {#insert-a-pivot-table-into-a-report}
 
 Pour créer un tableau et explorer les données d’un cube, procédez comme suit :
 

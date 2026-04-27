@@ -6,8 +6,8 @@ level: Beginner, Intermediate
 exl-id: d2d92de6-3974-41c5-a0fd-09bbf6cf0020
 source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 36%
+source-wordcount: '560'
+ht-degree: 37%
 
 ---
 
@@ -33,7 +33,7 @@ Tout d’abord, configurez le schéma pour ajouter le nouveau canal à la liste 
 
 1. Dans l’explorateur Campaign, sélectionnez **Administration** > **Configuration** > **Schémas de données**.
 
-1. Créez une extension de schéma pour étendre l’énumération **messageType** [&#128279;](../config/enumerations.md) avec le nouveau canal.
+1. Créez une extension de schéma pour étendre l’énumération **messageType** [](../config/enumerations.md) avec le nouveau canal.
 
    Par exemple :
 
@@ -46,7 +46,7 @@ Tout d’abord, configurez le schéma pour ajouter le nouveau canal à la liste 
 
    ![](assets/cus-schema.png){zoomable="yes"}
 
-## Créer un compte externe{#create-ext-account}
+## Création d&#39;un nouveau compte externe{#create-ext-account}
 
 Ensuite, vous devez créer un compte externe de routage.
 
@@ -90,7 +90,7 @@ Dans l’interface utilisateur web de Campaign, configurez la définition d’é
 
    ![](assets/cus-schema2.png){zoomable="yes"}
 
-1. Sélectionnez l’onglet correspondant à votre canal et définissez comment les champs seront affichés dans l’écran de contenu de la diffusion. Pour plus d’informations sur la modification de l’écran, consultez cette [page](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html?lang=fr#fields){target="_blank"}.
+1. Sélectionnez l’onglet correspondant à votre canal et définissez comment les champs seront affichés dans l’écran de contenu de la diffusion. Pour plus d’informations sur la modification de l’écran, consultez cette [page](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html#fields){target="_blank"}.
 
    ![](assets/cus-schema3.png){zoomable="yes"}
 

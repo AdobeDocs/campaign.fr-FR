@@ -9,7 +9,7 @@ hide: true
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
 source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1832'
 ht-degree: 93%
 
 ---
@@ -26,7 +26,7 @@ En outre, Adobe recommande vivement de passer à une connexion au service APN b
 
 ### Qu’est-ce qui a changé ? {#fcm-changes}
 
-Dans le cadre des efforts constants de Google pour améliorer ses services, les API FCM héritées seront abandonnées le **mardi 22 juillet 2024**. Apprenez-en davantage sur le protocole HTTP de Firebase Cloud Messaging en consultant la documentation de Firebase de Google [&#128279;](https://firebase.google.com/docs/cloud-messaging/migrate-v1){target="_blank"}.
+Dans le cadre des efforts constants de Google pour améliorer ses services, les API FCM héritées seront abandonnées le **mardi 22 juillet 2024**. Apprenez-en davantage sur le protocole HTTP de Firebase Cloud Messaging en consultant la documentation de Firebase de Google [](https://firebase.google.com/docs/cloud-messaging/migrate-v1){target="_blank"}.
 
 Adobe Campaign Classic v7 et Adobe Campaign v8 prennent déjà en charge les dernières API pour envoyer des notifications push. Cependant, certaines anciennes implémentations dépendent toujours des API héritées. Ces implémentations doivent être mises à jour.
 

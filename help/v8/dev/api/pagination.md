@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Par défaut, 25 ressources sont chargées dans une liste.
 
-Le paramètre **_lineCount** permet de limiter le nombre de ressources répertoriées dans la réponse. Vous pouvez ensuite utiliser le nœud **suivant** pour afficher les résultats suivants.
+Le paramètre **_lineCount** permet de limiter le nombre de ressources répertoriées dans la réponse.  Vous pouvez ensuite utiliser le nœud **suivant** pour afficher les résultats suivants.
 
 >[!NOTE]
 >

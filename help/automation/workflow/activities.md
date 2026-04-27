@@ -7,7 +7,7 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 636f9ad0-9576-421e-ad8b-62d6602ee26a
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 100%
 
@@ -34,5 +34,5 @@ Toutes les activités sont présentées dans les sections ci-dessous :
 * [Activités de ciblage](targeting-activities.md)
 * [Activités de contrôle de flux](flow-control-activities.md)
 * [Activités d&#39;actions](action-activities.md)
-* [Activités d&#39;événements](event-activities.md)
+* [Activités d’événement](event-activities.md)
 * [Activités spécifiques au workflow de campagne](../campaigns/marketing-campaign-deliveries.md)

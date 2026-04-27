@@ -6,7 +6,7 @@ level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
 source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '860'
 ht-degree: 99%
 
 ---
@@ -46,7 +46,7 @@ Pour publier un message sur votre compte X, procédez comme suit :
    1. Sélectionnez **[!UICONTROL Un compte Twitter]**.
    1. Dans le champ **[!UICONTROL Dossier]**, sélectionnez le dossier de services contenant votre compte X. Sélectionnez ensuite le compte X auquel vous souhaitez envoyer votre publication.
 
-1. Sélectionner la cible du BAT
+1. Sélection de la cible du BAT
 
    L’onglet **[!UICONTROL Cible des BAT]** vous permet de définir le compte X à utiliser pour les diffusions test avant la diffusion finale.
 
@@ -80,7 +80,7 @@ Pour publier un message sur votre compte X, procédez comme suit :
    1. Cliquez sur le menu déroulant **[!UICONTROL Tester la personnalisation]** et sélectionnez **[!UICONTROL Service]**.
    1. Dans le champ **[!UICONTROL Dossier]**, sélectionnez le dossier de services contenant votre compte X.
 
-1. Envoyer un BAT
+1. Envoi d&#39;un BAT
 
    Avant de publier votre publication, veillez à la valider en envoyant un BAT de votre publication : vous pouvez ensuite obtenir un rendu exact de la publication sur une page de test X privée.
 
@@ -136,7 +136,7 @@ Pour envoyer des messages directs à vos abonnés, procédez comme suit :
    1. Cliquez sur le menu déroulant **[!UICONTROL Tester la personnalisation]** et sélectionnez **[!UICONTROL Abonnements des visiteurs]**.
    1. Sélectionnez le compte X sur lequel vous souhaitez tester l’aperçu.
 
-1. Envoyer un BAT
+1. Envoi d&#39;un BAT
 
    Avant d’envoyer votre message, veillez à le valider en [envoyant un BAT vers un compte test](../send/preview-and-proof.md) : vous pouvez ensuite obtenir un rendu exact du message sur un compte X privé et vérifier le contenu et la personnalisation.
 

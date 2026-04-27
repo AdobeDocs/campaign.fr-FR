@@ -6,8 +6,8 @@ feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 96%
+source-wordcount: '1031'
+ht-degree: 84%
 
 ---
 
@@ -56,7 +56,7 @@ Utilisez ensuite le [requêteur](../../v8/start/query-editor.md) pour définir l
 
 ## Réglage de la fréquence des calculs {#adjust-calculation-frequency}
 
-Les arbitrages sont automatiquement ré-exécutés chaque nuit, via le workflow de nettoyage de la base de données. Vous pouvez toutefois conserver les valeurs calculées au-delà de ce délai.
+Les arbitrages sont automatiquement ré-exécutés chaque nuit, via le workflow de nettoyage de la base de données. Toutefois, les valeurs peuvent être enregistrées au-delà de cette période.
 
 En effet, certains calculs utilisent des valeurs qui ne sont pas modifiées tous les jours. Il est donc inutile de recalculer les données chaque jour et de surcharger inutilement la base de données. Par exemple, si un processus enrichit la base de données marketing avec des informations relatives aux affinités et aux achats des clients et des clientes sur une base hebdomadaire, les données basées sur ces valeurs n’ont pas besoin d’être recalculées tous les jours.
 
@@ -115,7 +115,7 @@ Les valeurs possibles sont les suivantes :
 
 * **[!UICONTROL Au début de la personnalisation]**
 
-  Cette phase doit être sélectionnée lorsque le contrôle porte sur la validation de la personnalisation des messages. La personnalisation des messages est réalisée au cours de la phase d&#39;analyse.
+  Cette phase doit être sélectionnée si le contrôle concerne la validation de la personnalisation du message. La personnalisation des messages est réalisée au cours de la phase d’analyse.
 
 * **[!UICONTROL A la fin de l&#39;analyse]**
 
@@ -125,7 +125,7 @@ Les valeurs possibles sont les suivantes :
 
 ### Contrôle du trafic SMTP sortant {#control-outgoing-smtp-traffic}
 
-Vous pouvez utiliser le champ **[!UICONTROL Gestion des affinités avec les adresses IP]** pour associer les diffusions au serveur de diffusions (MTA) qui gère l&#39;affinité en question. Ainsi, il est possible de limiter l&#39;envoi d&#39;emails pour des diffusions spécifiques, vers certaines machines ou adresses de sortie.
+Par défaut, vous pouvez utiliser le champ **[!UICONTROL Gestion des affinités avec les adresses IP]** pour lier les diffusions au serveur de diffusion (MTA) avec cette affinité. Ainsi, il est possible de limiter l’envoi d’emails pour des diffusions spécifiques, vers certaines machines ou adresses de sortie.
 
 ![](assets/campaign_opt_select_ip_affinity.png)
 
@@ -139,7 +139,7 @@ Vous pouvez utiliser le champ **[!UICONTROL Gestion des affinités avec les adre
 
 ### Campaign Optimization et le Marketing Distribué {#campaign-optimization-and-distributed-marketing}
 
-L&#39;onglet **[!UICONTROL Marketing Distribué]** permet de définir le paramétrage d&#39;une opération collaborative et les entités locales impliquées par cette opération lors de la commande de celle-ci. Les typologies/règles définies pour une entité locale (associées aux typologies/règles définies pour le central) remplacent les règles/typologies associées au central. Le remapping permet d&#39;adapter les règles du central aux règles des entités locales qui ont commandé l&#39;opération.
+L&#39;onglet **[!UICONTROL Marketing Distribué]** permet de définir le re-mapping des typologies et/ou des règles qui s&#39;applique lorsqu&#39;une campagne partagée est commandée et/ou réservée. Les typologies/règles définies pour une entité locale (liées à celles définies pour l&#39;entité centrale) remplacent les règles/typologies liées à l&#39;entité centrale. Le recodification permet d&#39;adapter les règles des entités centrales aux entités locales qui commandent l&#39;opération.
 
 ![](assets/simu_campaign_opti_distrib_mkg.png)
 

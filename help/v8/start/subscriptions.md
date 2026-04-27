@@ -7,8 +7,8 @@ level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 95%
+source-wordcount: '524'
+ht-degree: 93%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 95%
 
 Utilisez Adobe Campaign pour créer et surveiller vos services d’information, tels que les newsletters, et pour gérer les abonnements/désabonnements à ces services. Plusieurs services peuvent être définis en parallèle, par exemple : des newsletters spécialisées pour certaines catégories de produits, certains thèmes ou des zones particulières d’un site Web, des abonnements à divers types de messages d’alerte et des notifications en temps réel.
 
-Découvrez comment créer un service d&#39;information, envoyer une newsletter et gérer l&#39;opt-in et l&#39;opt-out dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=fr){target="_blank"}
+Découvrez comment créer un service d&#39;information, envoyer une newsletter et gérer l&#39;opt-in et l&#39;opt-out dans la documentation de [Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=fr){target="_blank"}
 
 Pour abonner (opt-in) un profil à un service, les options disponibles sont les suivantes :
 
@@ -37,7 +37,7 @@ Pour abonner (opt-in) un profil à un service, les options disponibles sont les 
   Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=fr#deliveries-tab){target="_blank"}.
 
 
-* Importez des personnes destinataires et abonnez-les automatiquement à un service d’information. Pour ce faire, sélectionnez le service visé dans la dernière étape de l’assistant d’import.
+* Importez des destinataires et abonnez-les automatiquement à un service d’information. Pour cela, sélectionnez le service visé dans la dernière étape de l&#39;assistant d&#39;import.
 
   Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=fr#step-5---additional-step-when-importing-recipients){target="_blank"}.
 
@@ -81,5 +81,5 @@ Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](
 <!--
 You can also enable your delivery recipients to forward messages to a friend. To do this, insert the relevant links into your delivery. You may then track this sharing process as well as the number of visits to the concerned pages.
 
-For more on this capability, refer to [Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=fr#viral-marketing--forward-to-a-friend){target="_blank"}
+For more on this capability, refer to [Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html#viral-marketing--forward-to-a-friend){target="_blank"}
 -->

@@ -7,19 +7,19 @@ level: Beginner
 exl-id: 21cf5611-ccaa-4e83-8891-a1a2353515aa
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '583'
 ht-degree: 93%
 
 ---
 
-# Partager et synchroniser des audiences avec Adobe Experience Platform{#gs-ac-aep}
+# Partager et synchroniser des audiences avec Adobe Experience Platform {#gs-ac-aep}
 
 La destination et les connecteurs source d’Adobe Campaign Managed Cloud Services permettent une intégration transparente entre Adobe Campaign et Adobe Experience Platform. Avec cette intégration, vous pouvez effectuer les actions suivantes :
 
 * Envoyer des audiences Adobe Experience Platform vers Adobe Campaign, puis renvoyer les logs de tracking et de diffusion vers Adobe Experience Platform à des fins d’analyse.
 * Importer des attributs de profil Adobe Experience Platform dans Adobe Campaign et mettre en place un processus de synchronisation afin de les mettre à jour régulièrement.
 
-## Envoyer des audiences Adobe Experience Platform vers Campaign.{#audiences}
+## Envoyer des audiences Adobe Experience Platform vers Campaign. {#audiences}
 
 Les principales étapes pour envoyer des audiences Adobe Experience Platform vers Adobe Campaign et renvoyer les logs de diffusion et de tracking sont les suivantes :
 

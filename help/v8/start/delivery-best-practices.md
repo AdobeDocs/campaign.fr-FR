@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '3102'
-ht-degree: 94%
+source-wordcount: '3188'
+ht-degree: 84%
 
 ---
 
@@ -19,7 +19,7 @@ Découvrez les bonnes pratiques suivantes avec les fonctionnalités de diffusion
 
 ## Optimisation de votre diffusion {#optimize-delivery}
 
-Avant même de commencer à créer des diffusions, vous pouvez prendre des mesures pour sécuriser et optimiser le processus d’envoi en amont. La section suivante présente les bonnes pratiques et les procédures recommandées pour optimiser la configuration d’Adobe Campaign.
+Avant même de commencer à créer des diffusions, vous pouvez prendre des mesures pour sécuriser et optimiser le processus d&#39;envoi en amont. La section suivante présente les bonnes pratiques et les procédures recommandées pour optimiser la configuration d’Adobe Campaign.
 
 ### Performances de la plateforme
 
@@ -73,7 +73,7 @@ La maintenance régulière de vos diffusions est essentielle pour optimiser les 
 
 ### Mécanisme de double opt-in {#double-opt-in}
 
-Pour éviter d&#39;envoyer des messages à des adresses invalides, limiter les communications abusives et améliorer la réputation de l&#39;expéditeur ou de l’expéditrice, Adobe recommande de mettre en place un mécanisme de double opt-in pour une confirmation après inscription. Cela vous permet de vous assurer que la personne destinataire est bien à l&#39;origine de l&#39;abonnement.
+Pour éviter d&#39;envoyer des messages à des adresses non valides, limiter les communications abusives et améliorer la réputation de l&#39;expéditeur, Adobe recommande de mettre en œuvre un mécanisme de double opt-in pour la confirmation après abonnement. Cela permet de s’assurer qu’un destinataire s’est abonné intentionnellement.
 
 ## Utilisation de modèles {#use-templates}
 
@@ -81,16 +81,16 @@ Les modèles de diffusion accroissent l’efficacité en offrant des configurati
 
 ### Sous-domaines et branding {#subdomains-and-branding}
 
-Si vous gérez plusieurs marques dans Adobe Campaign, Adobe recommande de disposer d’un sous-domaine par marque. Une banque peut, par exemple, avoir plusieurs sous-domaines qui correspondent à chacune de ses agences régionales. Si une banque détient le domaine bluebank.com, ses sous-domaines peuvent être @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com, etc. Disposer d’un modèle de diffusion par sous-domaine vous permet de toujours utiliser les paramètres préconfigurés adéquats pour chaque marque et d’éviter ainsi des erreurs tout en gagnant du temps. En savoir plus sur le branding de sous-domaines dans la [documentation du Panneau de contrôle de Campaign](https://experienceleague.adobe.com/fr/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
+Si vous gérez plusieurs marques dans Adobe Campaign, Adobe recommande de disposer d’un sous-domaine par marque. Une banque peut, par exemple, avoir plusieurs sous-domaines qui correspondent à chacune de ses agences régionales. Si une banque possède le domaine bluebank.com, ses sous-domaines peuvent être @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com, etc. Disposer d’un modèle de diffusion par sous-domaine vous permet de toujours utiliser les paramètres préconfigurés adéquats pour chaque marque, ce qui évite les erreurs et vous fait gagner du temps. En savoir plus sur le branding de sous-domaines dans la [documentation du Panneau de contrôle de Campaign](https://experienceleague.adobe.com/fr/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
 
 ### Configurer les adresses {#configure-addresses}
 
 Veillez à appliquer les directives suivantes :
 
-* L’adresse de l’expéditeur ou de l’expéditrice est obligatoire pour permettre l’envoi d’un e-mail. Certains FAI vérifient la validité de l’adresse de l’expéditeur avant d’accepter les messages.
+* L&#39;adresse de l&#39;expéditeur est obligatoire pour permettre l&#39;envoi d&#39;un email. Certains FAI vérifient la validité de l’adresse de l’expéditeur avant d’accepter les messages.
 * Une adresse erronée peut causer un refus de la part du serveur receveur. Vous devez vous assurer qu’une adresse correcte est bien renseignée.
-* L&#39;adresse doit identifier explicitement l&#39;expéditeur. Le domaine doit appartenir à l&#39;expéditeur et être enregistré auprès de lui.
-* Adobe recommande de créer des comptes email qui correspondent aux adresses indiquées pour les envois et les réponses. Parlez-en avec votre administrateur du système de messagerie.
+* L’adresse doit identifier explicitement l’expéditeur. Le domaine doit appartenir à l’expéditeur et lui être enregistré.
+* Adobe recommande la création de comptes e-mail qui correspondent aux adresses spécifiées pour les diffusions et les réponses. Vérifiez auprès de votre administrateur système de messagerie.
 
 +++ **Étapes de configuration des adresses dans l’interface utilisateur de Campaign**
 
@@ -116,7 +116,7 @@ Une typologie contient les règles de vérification qui sont appliquées lors de
 
 Dans l’onglet **[!UICONTROL Typologie]** des propriétés du modèle, vous pouvez sélectionner une typologie personnalisée si nécessaire.
 
-Pour mieux contrôler le trafic sortant, par exemple, vous pouvez définir quelles adresses IP peuvent être utilisées en spécifiant une affinité par sous-domaine et en créant une typologie par affinité. Les affinités sont définies directement dans le fichier de configuration de l&#39;instance. Contactez votre administrateur Adobe Campaign.
+Par exemple, pour mieux contrôler le trafic sortant, vous pouvez définir quelles adresses IP peuvent être utilisées en définissant une affinité par sous-domaine et en créant une typologie par affinité. Les affinités sont définies dans le fichier de configuration de l’instance. Contactez votre administrateur Adobe Campaign.
 
 Pour plus d’informations sur les typologies, consultez [cette section](../../automation/campaign-opt/campaign-typologies.md).
 
@@ -124,17 +124,17 @@ Pour plus d’informations sur les typologies, consultez [cette section](../../a
 
 ### Créer du contenu personnalisé {#perso-content}
 
-Pour personnaliser vos messages, vous pouvez utiliser les données des destinataires stockées dans la base de données ou collectées par le biais du tracking, des landing pages, des abonnements, etc. Les principes de base de la personnalisation sont présentés dans [cette section](../send/personalize.md).
+Pour personnaliser vos messages, vous pouvez utiliser les données des destinataires stockées dans la base de données ou collectées par le biais de tracking, de landing pages, d’abonnements, etc. Les notions de base de Personalization sont présentées dans [cette section](../send/personalize.md).
 
 +++ **Lire quelques bonnes pratiques**
 
-* Vérifier vos paramètres de personnalisation : vérifiez que le contenu de votre message est correctement conçu pour éviter toute erreur, qui pourrait être liée à la personnalisation. Une balise de personnalisation Adobe Campaign a toujours la forme suivante : `<%=table.field%>`. L&#39;utilisation incorrecte des paramètres dans les blocs de personnalisation peut entraîner des problèmes. Par exemple, les variables en JavaScript doivent être utilisées comme suit :
+* Vérifier vos paramètres de personnalisation : vérifiez que le contenu de votre message est correctement conçu pour éviter toute erreur, qui pourrait être liée à la personnalisation. Une balise de personnalisation Adobe Campaign a toujours la forme suivante : `<%=table.field%>`. L’utilisation incorrecte des paramètres dans les blocs de personnalisation peut poser problème. Par exemple, les variables dans JavaScript doivent être utilisées comme suit :
 
-  &grave;&grave;
+  ``
   <%
   var brand = "xxx"
   %>
-  &grave;&grave;
+  ``
 
   Pour plus d&#39;informations sur les blocs de personnalisation, consultez [cette section](../send/personalization-blocks.md).
 
@@ -184,7 +184,7 @@ Incluez toujours un lien de page miroir. La partie supérieure de l&#39;e-mail c
 
 ### Lien de désabonnement {#unsub-link-check}
 
-Le lien de désabonnement est indispensable. Il doit être visible, valide et le formulaire fonctionnel. Par défaut, lorsque le message est analysé, une [règle de typologie](../../automation/campaign-opt/control-rules.md) intégrée **[!UICONTROL Approbation du lien de désabonnement]** vérifie si un lien d’exclusion a été inclus et génère un avertissement en cas d’absence.
+Le lien de désinscription est essentiel. Il doit être visible et valide, et le formulaire doit être fonctionnel. Par défaut, lorsque le message est analysé, une [règle de typologie](../../automation/campaign-opt/control-rules.md) intégrée **[!UICONTROL Approbation du lien de désabonnement]** vérifie si un lien d’exclusion a été inclus et génère un avertissement en cas d’absence.
 
 Découvrez comment insérer un lien d&#39;opt-out [dans cette section](../send/personalization-blocks.md).
 
@@ -240,7 +240,7 @@ To avoid common formatting errors, check the following elements:
 
 * Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../../installation/using/configuring-campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode.
 
-* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#authentication).
+* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 -->
 
 ## Gestion des images {#manage-images}
@@ -249,7 +249,7 @@ Voici quelques instructions spécifiques pour optimiser les images de votre camp
 
 ### Empêcher le blocage des images {#image-blocking}
 
-Certains clients de messagerie bloquent les images par défaut, et les utilisateurs et utilisatrices peuvent modifier leurs paramètres pour bloquer les images afin de réduire l’utilisation des données. Par conséquent, si les images ne sont pas téléchargées, l’ensemble du message peut être perdu.
+Certains clients de messagerie bloquent les images par défaut, et les utilisateurs et utilisatrices peuvent modifier leurs paramètres pour bloquer les images afin de réduire l’utilisation des données.  Dans ce cas, si les images ne sont pas téléchargées, il est possible que l&#39;ensemble du message soit perdu.
 
 +++ Pour éviter cela, vous pouvez appliquer les bonnes pratiques suivantes :
 
@@ -291,7 +291,7 @@ La population ciblée est essentielle : créez soigneusement vos listes, testez
 
 Lorsque votre contenu est prêt, vous devez soigneusement définir qui recevra votre message.
 
-Pour réussir votre diffusion, vous devez envoyer le contenu personnalisé le plus pertinent aux bons destinataires. Adobe Campaign vous permet de créer la cible la plus précise qui soit : vous pouvez sélectionner les destinataires selon leur âge, leur emplacement géographique, leurs achats ou selon qu’ils ont cliqué ou non sur un lien dans une diffusion précédente, par exemple. Avec Adobe Campaign, vous pouvez également définir des profils de test, des populations témoins et des adresses de contrôle pour vérifier que votre cible est correcte.
+Pour réussir votre diffusion, vous devez envoyer le contenu personnalisé le plus pertinent aux bons destinataires. Adobe Campaign permet de construire la cible la plus précise : vous pouvez sélectionner les destinataires en fonction de leur âge, de leur localisation, de ce qu&#39;ils ont acheté, s&#39;ils ont cliqué sur un lien dans une diffusion précédente, etc. Avec Adobe Campaign, vous pouvez également définir des profils de test, des populations témoins et des adresses de contrôle pour vous assurer que votre cible est correcte.
 
 ### Mappings de ciblage {#target-mappings}
 
@@ -334,7 +334,7 @@ Pour garantir votre réputation et assurer une bonne gestion des quarantaines, d
 
 ## Effectuer toutes les vérifications avant d’envoyer {#perform-all-checks}
 
-Une fois que votre message est prêt, vérifiez que le contenu s’affiche correctement sur tous les appareils et qu’il ne contient aucune erreur, comme des liens rompus ou une personnalisation incorrecte. Avant d’envoyer votre message, vérifiez également que les paramètres et la configuration sont cohérents par rapport à la diffusion.
+Une fois que votre message est prêt, vérifiez que le contenu s&#39;affiche correctement sur tous les appareils et qu&#39;il ne contient aucune erreur, comme des liens rompus ou une personnalisation incorrecte. Avant d’envoyer votre message, vérifiez également que les paramètres et la configuration sont cohérents par rapport à la diffusion.
 
 Les étapes de validation d&#39;une diffusion sont présentées [dans cette section](../send/preview-and-proof.md).
 
@@ -370,7 +370,7 @@ If you have several contents for an email delivery, you can use A/B testing to f
 Learn more [in this section](get-started-a-b-testing.md).
 -->
 
-### Vérifiez que votre message est bien délivré.  {#make-sure-your-message-is-delivered}
+### Vérifiez que votre message est bien délivré. {#make-sure-your-message-is-delivered}
 
 En dernier lieu, tirez parti des fonctionnalités d&#39;Adobe Campaign et augmentez vos chances que votre message soit délivré aux bonnes personnes destinataires.
 
@@ -423,7 +423,7 @@ Vous pouvez utiliser des règles de typologie pour exclure une partie de la cibl
 
 ## Tracker et suivre vos diffusions {#track-and-monitor}
 
-Vous avez cliqué sur le bouton **Envoyer** ? Voyons maintenant ce qui se passe. Une fois la diffusion envoyée, Adobe Campaign vous permet de conserver une trace des messages envoyés et de découvrir la réaction des destinataires face à votre diffusion. Vous pourrez ainsi améliorer les prochains envois et optimiser vos campagnes suivantes.
+Vous avez cliqué sur le bouton **Envoyer** ? Voyons ce qui se passe. Une fois la diffusion envoyée, Adobe Campaign vous permet de conserver une trace des messages envoyés et de découvrir la réaction des destinataires face à votre diffusion. Vous pourrez ainsi améliorer les prochains envois et optimiser vos campagnes suivantes.
 
 ## Surveiller les diffusions {#monitoring-deliveries}
 
@@ -433,7 +433,7 @@ Dans le tableau de bord des diffusions de Campaign, vous pouvez vérifier les me
 
 ## Tracking du comportement {#track-behaviour}
 
-Pour mieux connaître le comportement de vos destinataires, vous pouvez suivre leur réaction à une diffusion : réception, ouverture, clics sur des liens, désabonnements, etc. Dans Campaign, ces informations figurent dans l’onglet **Tracking** des personnes destinataires ciblées par la diffusion et dans l’onglet Tracking de la diffusion.
+Pour mieux connaître le comportement de vos destinataires, vous pouvez suivre leur réaction à une diffusion : réception, ouverture, clics sur des liens, désabonnements, etc. Dans Campaign, ces informations sont affichées dans l&#39;onglet **Tracking** des destinataires ciblés par la diffusion et dans l&#39;onglet Tracking de la diffusion.
 
 Le tracking des messages est activé par défaut. Pour configurer les URL, sélectionnez l’option Afficher les URL dans la section inférieure de l’assistant de diffusion. Pour chaque URL du message, vous pouvez choisir d’activer ou non le tracking.
 

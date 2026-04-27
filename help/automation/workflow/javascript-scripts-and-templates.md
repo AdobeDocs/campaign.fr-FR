@@ -7,9 +7,9 @@ role: Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 14160de5-23d2-4f53-84c6-0f9e3b1dcf21
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '1268'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1272'
+ht-degree: 73%
 
 ---
 
@@ -21,10 +21,10 @@ Les scripts vont permettre de calculer des valeurs, d&#39;échanger des données
 
 Les scripts sont omniprésents dans un diagramme de workflow :
 
-* Toute activité possède un script d&#39;initialisation. Ce script est exécuté à l&#39;activation de l&#39;activité, il permet d&#39;initialiser des variables ou de modifier les propriétés de l&#39;activité.
+* Toutes les activités comportent des scripts d’initialisation. Un script d’initialisation est exécuté lorsque l’activité est activée et peut être utilisé pour initialiser des variables et modifier les propriétés.
 * L&#39;activité &#39;Code JavaScript&#39; a pour seule fonction d&#39;exécuter un script.
 * L&#39;activité &#39;Test&#39; évalue des expressions JavaScript pour activer la bonne transition.
-* La plupart des champs de type texte sont des templates JavaScript : ils peuvent inclure des expressions JavaScript entre les caractères &lt;%= et %>. Ces champs proposent un bouton qui permet d&#39;accéder à une liste déroulante pour l&#39;aide à la saisie des expressions.
+* La plupart des champs de texte sont des modèles JavaScript : les expressions JavaScript peuvent être incluses entre &lt;%= et %>. Ces champs contiennent un bouton qui ouvre une liste déroulante pour vous aider à saisir des expressions.
 
   ![](assets/script-button.png)
 
@@ -44,7 +44,7 @@ Les propriétés disponibles pour ces objets sont accessibles depuis le menu dé
 >
 >Les propriétés de ces objets sont accessibles en lecture seule à l&#39;exception des sous-propriétés de la propriété vars.
 >  
->La plupart de ces propriétés ne sont mises à jour qu&#39;après l&#39;exécution d&#39;une tâche élémentaire ou au moment de la passivation de l&#39;instance. Les valeurs lues ne correspondent pas nécessairement à l&#39;état en cours mais à l&#39;état précédent.
+>La plupart de ces propriétés ne sont mises à jour qu&#39;après l&#39;exécution d&#39;une tâche élémentaire ou lorsque l&#39;instance est passivée. Les valeurs lues ne correspondent pas nécessairement au statut actuel, mais au statut précédent.
 
 **Exemple**
 
@@ -59,9 +59,9 @@ logInfo("Label: " + instance.label)
 logInfo("Start date: " + task.creationDate)
 ```
 
-La fonction **[!UICONTROL logInfo(message)]** ajoute un message dans le journal.
+La fonction **[!UICONTROL logInfo(message)]** ajoute un message dans le log.
 
-Cliquez sur **[!UICONTROL OK]** pour fermer l&#39;assistant de création, puis démarrez le workflow en utilisant les boutons d&#39;action en haut à droite de la liste des workflows. A la fin de l&#39;exécution, consultez le journal. Vous devez voir deux messages correspondant au script : l&#39;un affiche le libellé du workflow, l&#39;autre affiche la date d&#39;activation du script.
+Cliquez sur **[!UICONTROL OK]** pour fermer l’assistant de création, puis démarrez le workflow à l’aide des boutons d’action situés en haut à droite de la liste des workflows. À la fin de l’exécution, consultez le log. Vous devez voir deux messages correspondant au script : l’un affiche le libellé du workflow, l’autre affiche la date d’activation du script.
 
 ## Variables {#variables}
 
@@ -69,15 +69,15 @@ Les variables sont des propriétés libres des objets **[!UICONTROL instance]**,
 
 ### Les variables d&#39;instances {#instance-variables}
 
-Les variables d’instances (**[!UICONTROL instance.vars.xxx]**) sont comparables à des variables globales. Elles sont partagées par toutes les activités.
+Les variables d’instance (**[!UICONTROL instance.vars.xxx]**) sont comparables à des variables globales. Elles sont partagées par toutes les activités.
 
 ### Les variables de tâches {#task-variables}
 
-Les variables de tâches (**[!UICONTROL task.vars.xxx]**) sont comparables à des variables locales. Elles ne sont accessibles que par la tâche en cours. Ces variables sont utilisées par des activités persistantes pour conserver des données et sont parfois utilisées pour échanger des valeurs entre différents scripts d’une même activité.
+Les variables de tâche (**[!UICONTROL task.vars.xxx]**) sont comparables à des variables locales. Elles ne sont utilisées que par la tâche en cours. Ces variables sont utilisées par les activités persistantes pour conserver les données et sont parfois utilisées pour échanger des données entre les différents scripts d’une même activité.
 
 ### Les variables d&#39;événements {#event-variables}
 
-Les variables d&#39;événements (**[!UICONTROL vars.xxx]**) permettent l&#39;échange de données entre les tâches élémentaires d&#39;un processus de workflow. Ces variables sont passées par la tâche qui a activé la tâche en cours. Il est possible de les modifier ou d&#39;en définir de nouvelles, elles sont ensuite transmises aux activités suivantes.
+Les variables d’événement (**[!UICONTROL vars.xxx]**) permettent l’échange de données entre les tâches élémentaires d’un processus de workflow. Ces variables sont transmises par la tâche qui a activé la tâche en cours. Il est possible de les modifier et d’en définir de nouveaux. Elles sont ensuite transmises aux activités suivantes.
 
 >[!CAUTION]
 >
@@ -85,7 +85,7 @@ Les variables d&#39;événements (**[!UICONTROL vars.xxx]**) permettent l&#39;é
 
 Les événements sont les variables les plus communément utilisées et doivent être préférées aux variables d&#39;instances.
 
-Certaines variables d&#39;événements sont modifiées ou lues par les différentes activités. Il s’agit des variables de type chaîne. Par exemple, un export définit la variable **[!UICONTROL vars.filename]** avec le nom complet du fichier qui vient d’être exporté. Toutes ces variables lues ou modifiées sont documentées dans [À propos des activités](activities.md), dans les sections **Paramètres d’entrée** et **Paramètres de sortie** des activités.
+Certaines variables d’événement sont modifiées ou lues par les différentes activités. Il s’agit toutes de variables de type chaîne. Par exemple, un export définit la variable **[!UICONTROL vars.filename]** avec le nom complet du fichier qui vient d’être exporté. Toutes ces variables lues ou modifiées sont documentées dans [À propos des activités](activities.md), dans les sections **Paramètres d’entrée** et **Paramètres de sortie** des activités.
 
 ### Cas pratiques {#example}
 
@@ -145,7 +145,7 @@ Dans cet exemple, une variable d’instance est utilisée pour calculer dynamiqu
    logInfo("task.vars.foo = " + task.vars.foo)
    ```
 
-1. Démarrez le workflow, puis consultez le journal.
+1. Démarrez le workflow, puis consultez le log.
 
    ```
    Workflow finished
@@ -169,7 +169,7 @@ Par exemple :
 
    ![](assets/wkf_js_activity_1.png)
 
-1. Créez une requête dont les dimensions de ciblage et de filtrage sont les destinataires. Dans les conditions, indiquez que vous souhaitez trouver tous les destinataires auxquels la diffusion spécifiée par la variable a été envoyée.
+1. Créez une requête dont les dimensions de ciblage et de filtrage sont les destinataires. Dans les conditions, indiquez que vous souhaitez rechercher tous les destinataires auxquels a été envoyée la diffusion spécifiée par la variable .
 
    Pour rappel, ces informations sont stockées dans les logs de diffusion.
 
@@ -181,13 +181,13 @@ Par exemple :
 
 ## Fonctions avancées {#advanced-functions}
 
-En plus des fonctions JavaScript standard, d&#39;autres fonctions spécifiques sont disponibles pour manipuler les fichiers, lire ou modifier des données dans la base ou encore ajouter des messages dans le journal.
+En plus des fonctions JavaScript standard, d&#39;autres fonctions spécifiques sont disponibles pour manipuler les fichiers, lire ou modifier des données dans la base ou encore ajouter des messages dans le log.
 
 ### Journal {#journal}
 
-**[!UICONTROL logInfo(message)]** a déjà été présenté dans les exemples précédents. Cette fonction ajoute un message d&#39;information au journal.
+**[!UICONTROL logInfo(message)]** a été présenté dans les exemples ci-dessus. Cette fonction ajoute un message d&#39;information au journal.
 
-**[!UICONTROL logError(message)]** ajoute un message d&#39;erreur au journal. Le script interrompt son exécution et le workflow passe en état d&#39;erreur (par défaut, l&#39;instance sera mise en pause).
+**[!UICONTROL logError(message)]** ajoute un message d’erreur au journal. Le script interrompt son exécution et le workflow passe en statut d’erreur (par défaut, l’instance est mise en pause).
 
 ## Script d&#39;initialisation {#initialization-script}
 
@@ -195,7 +195,7 @@ Vous pouvez modifier une propriété d&#39;une activité au moment de l&#39;exé
 
 La plupart des propriétés des activités peuvent être calculées dynamiquement, soit en utilisant un template JavaScript, soit parce que les propriétés du workflow permettent explicitement de calculer la valeur par un script.
 
-Toutefois, pour d’autres propriétés, vous devez utiliser le script d’initialisation. Ce script est évalué avant l’exécution de la tâche. La variable **[!UICONTROL activity]** référence l&#39;activité correspondant à la tâche. Les propriétés de cette activité peuvent être modifiées et n&#39;affecteront que cette tâche.
+Toutefois, pour les autres propriétés, vous devez utiliser le script d’initialisation. Ce script est évalué avant l’exécution de la tâche. La variable **[!UICONTROL activity]** référence l&#39;activité correspondant à la tâche. Les propriétés de cette activité peuvent être modifiées et n&#39;affecteront que cette tâche.
 
 **Rubriques connexes**
 [Exemples de code JavaScript dans les workflows](javascript-in-workflows.md)

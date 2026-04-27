@@ -7,8 +7,8 @@ level: Beginner
 hide: true
 source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 95%
+source-wordcount: '263'
+ht-degree: 82%
 
 ---
 
@@ -20,9 +20,9 @@ Option 2 : Adobe People/AAM
 
 Vous pouvez intégrer **Adobe Campaign** à **People Core Service** ou Adobe Audience Manager. Vous pourrez alors :
 
-* importer dans Adobe Campaign des audiences/segments provenant de différentes solutions d’Adobe Experience Cloud. L’import d’audiences peut être réalisé depuis les listes dans Adobe Campaign ;
+* Importez les audiences/segments partagés de différentes solutions Adobe Experience Cloud dans Adobe Campaign. L&#39;import d&#39;audiences peut être réalisé depuis les listes dans Adobe Campaign.
 
-* exporter des listes sous la forme d’audiences partagées Adobe Experience Cloud. Ces audiences peuvent être exploitées dans les différentes solutions d’Adobe Experience Cloud que vous utilisez. L’export d’audiences peut être réalisé à la suite d’un ciblage dans un workflow, à l’aide d’une activité dédiée **[!UICONTROL Mise à jour d’audience partagée]**.
+* exporter des listes sous la forme d’audiences partagées Adobe Experience Cloud ; Ces audiences peuvent être exploitées dans les différentes solutions d’Adobe Experience Cloud que vous utilisez. L’export d’audiences peut être réalisé à la suite d’un ciblage dans un workflow, à l’aide d’une activité dédiée **[!UICONTROL Mise à jour d’audience partagée]**.
 
 L’intégration prend en charge deux types d’identifiants Adobe Experience Cloud :
 
@@ -37,6 +37,6 @@ L’intégration prend en charge deux types d’identifiants Adobe Experience 
 
 Pour plus d’informations, consultez la section :
 
-[Base de connaissances &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=fr){target="_blank"}.
+[Base de connaissances Adobe Audience Manager](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=fr){target="_blank"}.
 
-[Guide des composants de l&#39;interface centrale de &#x200B;](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=fr){target="_blank"}.
+[Guide des composants de l&#39;interface centrale de Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=fr){target="_blank"}.

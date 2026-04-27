@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 878b5963-100c-4dd7-97a0-c59a62c493b1
 source-git-commit: e4f6c70ecdcf7414b5f49a43933cfd1c967a0905
-workflow-type: ht
-source-wordcount: '974'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1026'
+ht-degree: 86%
 
 ---
 
@@ -43,17 +43,17 @@ Adobe Campaign permet également de créer des modèles dʼadresses de contrôl
 Pour créer des adresses de contrôle, procédez comme suit :
 
 1. Cliquez sur le bouton **[!UICONTROL Nouveau]** situé au-dessus de la liste des adresses de contrôle.
-1. Saisissez les données associées à l&#39;adresse dans les champs correspondants de l&#39;onglet **[!UICONTROL Destinataire]**. Les champs disponibles correspondent aux champs standards dans les profils des destinataires de la diffusion (nms:recipient table) : nom, prénom, email, etc.
+1. Saisissez les données associées à l&#39;adresse dans les champs correspondants de l&#39;onglet **[!UICONTROL Destinataire]**. Les champs disponibles correspondent aux champs standard dans les profils des personnes destinataires de la diffusion (table nms:recipient) : nom, prénom, e-mail, etc.
 
    >[!NOTE]
    >
-   >Le libellé de l&#39;adresse reprend automatiquement le nom et le prénom saisis.
+   >Le libellé de l’adresse reprend automatiquement le nom et le prénom saisis.
    >
    >Lors de la création d’une adresse de contrôle, il n’est pas nécessaire de renseigner tous les champs de chaque onglet. En effet, les éléments de personnalisation manquants sont renseignés de manière aléatoire lors de l’analyse de la diffusion.
 
-1. Indiquez dans l’onglet **[!UICONTROL Champs de l’adresse]** les valeurs qui seront insérées dans les logs de diffusion lors de la phase d’analyse, dans la table **[!UICONTROL nms:broadLog]**.
+1. Dans l&#39;onglet **[!UICONTROL Champs de l&#39;adresse]** , renseignez les valeurs à insérer dans les logs de diffusion lors de la phase d&#39;analyse, dans la table **[!UICONTROL nms:broadLog]** .
 
-1. Dans l’onglet **[!UICONTROL Données additionnelles]**, renseignez les données de personnalisation utilisées pour les diffusions créées dans les workflows Data management et auxquelles vous souhaitez affecter une valeur spécifique.
+1. Dans l&#39;onglet **[!UICONTROL Données additionnelles]**, renseignez les données de personnalisation utilisées pour les diffusions créées dans les workflows Data management et auxquelles vous souhaitez affecter une valeur spécifique.
 
    Assurez-vous que les données additionnelles de la cible ont été définies avec un alias commençant par &#39;@&#39; dans l’activité du workflow **[!UICONTROL Enrichissement]**. Sinon, vous ne pourrez pas les utiliser correctement avec vos adresses de contrôle dans votre activité de diffusion.
 
@@ -77,21 +77,21 @@ Pour ajouter des adresses de contrôle spécifiques à une diffusion, cliquez su
 
 Trois modes d&#39;insertion sont possibles :
 
-1. Saisissez des adresses de contrôle uniques.  Pour cela, cliquez sur le bouton **[!UICONTROL Ajouter]** et définissez le contenu des champs de l’adresse. Répétez l’opération pour chaque adresse à ajouter.
+1. Saisissez des adresses de contrôle uniques.  Pour cela, cliquez sur le bouton **[!UICONTROL Ajouter]** et définissez le contenu des champs de l&#39;adresse. Répétez l’opération pour chaque adresse.
 
 1. Importez des [modèles d’adresses de contrôle](#creating-seed-address-template) et adaptez-les selon vos besoins. Pour cela, cliquez sur le lien **[!UICONTROL Importer des adresses de contrôle...]** et sélectionnez le dossier contenant les modèles d’adresses.
 
    Au besoin, une fois ajoutées, vous pouvez double-cliquer dessus ou cliquer sur le bouton **[!UICONTROL Détail...]** pour adapter le contenu des champs de chaque adresse.
 
-1. Créez une condition pour sélectionner dynamiquement les adresses de contrôle à insérer. Pour cela, cliquez sur le lien **[!UICONTROL Modifier la condition dynamique...]**, puis indiquez les paramètres de sélection des adresses de contrôle. Vous pouvez par exemple inclure toutes les adresses de contrôle contenues dans un dossier spécifique ou les adresses de contrôle appartenant à un service particulier de votre société.
+1. Créez une condition pour sélectionner dynamiquement les adresses de contrôle à insérer. Pour cela, cliquez sur le lien **[!UICONTROL Modifier la condition dynamique...]**, puis renseignez les paramètres de sélection des adresses de contrôle. Par exemple, vous pouvez inclure toutes les adresses de contrôle contenues dans un dossier spécifique ou les adresses de contrôle appartenant à un service spécifique de votre entreprise.
 
    Vous trouverez un exemple dans la [Documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html?lang=fr){target="_blank"}.
 
-Pour les diffusions, vous pouvez personnaliser le mode d’insertion des adresses dans le fichier d’extraction. Par défaut, elles sont insérées dans l’ordre de tri du fichier de sortie, mais vous pouvez choisir de les insérer à la fin ou au début du fichier, ou aléatoirement parmi les destinataires de la cible principale.
+Pour les diffusions , vous pouvez également personnaliser le mode d’insertion des adresses dans le fichier d’extraction. Par défaut, elles sont insérées dans l’ordre de tri du fichier de sortie, mais vous pouvez choisir de les insérer à la fin ou au début du fichier, ou aléatoirement parmi les destinataires de la cible principale.
 
 ## Ajouter des adresses de contrôle dans une campagne {#seed-addresses-in-a-campaign}
 
-Pour ajouter des adresses de contrôle dans la cible au niveau d’une opération, sélectionnez l’opération visée et cliquez sur l’onglet **[!UICONTROL Modifier]**.
+Pour ajouter des adresses de contrôle dans la cible au niveau d&#39;une opération, sélectionnez l&#39;opération visée et cliquez sur l&#39;onglet **[!UICONTROL Edition]**.
 
 Cliquez sur le lien **[!UICONTROL Paramètres avancés de la campagne...]**, puis sur l’onglet **[!UICONTROL Adresses de contrôle]**. Les adresses de contrôle insérées depuis la campagne sont ajoutées à la cible de chacune des diffusions de cette campagne.
 

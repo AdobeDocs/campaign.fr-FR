@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
 source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 97%
+source-wordcount: '643'
+ht-degree: 94%
 
 ---
 
@@ -30,7 +30,7 @@ Pour insérer un bloc de personnalisation dans un message, procédez comme suit�
 
    ![](assets/perso-content-block.png)
 
-1. Le bloc de personnalisation est alors inséré sous forme de script. Il sera automatiquement adapté au profil du ou de la destinataire lors de la génération de la personnalisation.
+1. Le bloc de personnalisation est alors inséré sous forme de script. Il est automatiquement adapté au profil du ou de la destinataire lors de la génération de la personnalisation.
 1. Accédez à l’onglet **[!UICONTROL Prévisualisation]**, puis sélectionnez un destinataire pour visualiser le contenu de ce bloc en fonction de ce dernier.
 
 Vous pouvez inclure le code source d’un bloc de personnalisation dans le contenu de la diffusion. Pour cela, cochez l&#39;option **[!UICONTROL Inclure le code source HTML du bloc]** lorsque vous le sélectionnez.
@@ -64,7 +64,7 @@ Pour créer un bloc de personnalisation, procédez comme suit :
 
    ![](assets/perso-new-block.png)
 
-1. Renseignez les paramètres du bloc de personnalisation :
+1. Renseignez le paramétrage du bloc de personnalisation :
 
    ![](assets/perso-custom-block.png)
 
@@ -72,7 +72,7 @@ Pour créer un bloc de personnalisation, procédez comme suit :
    * Sélectionnez un type de contenu de **Diffusion**.
    * Sélectionnez l’option **[!UICONTROL Afficher dans les menus de personnalisation]** pour pouvoir accéder à ce bloc à partir de l’icône d’insertion de champs de personnalisation.
    * Le cas échéant, sélectionnez l’option **[!UICONTROL Le contenu du bloc de personnalisation dépend du format]** pour définir deux blocs distincts pour les e-mails au format HTML et texte.
-   * Saisissez le contenu (dans HTML, texte, JavaScript, etc.) du bloc de personnalisation et cliquez sur **[!UICONTROL Enregistrer]**.
+   * Saisissez le contenu (dans HTML, texte, JavaScript, etc.) du bloc de personnalisation, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
 Une fois enregistré, le nouveau bloc de personnalisation est disponible dans l’éditeur de diffusion.
 
@@ -80,4 +80,4 @@ Une fois enregistré, le nouveau bloc de personnalisation est disponible dans l�
 
 Dans la vidéo suivante, découvrez comment créer des blocs de contenu dynamiques et apprenez à les utiliser pour personnaliser le contenu de votre diffusion e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449008?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

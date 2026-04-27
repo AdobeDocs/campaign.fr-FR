@@ -7,13 +7,13 @@ version: Campaign v8, Campaign Classic v7
 role: User
 exl-id: 297aa4e3-b672-46b5-9016-5accee8568b8
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '643'
-ht-degree: 100%
+ht-degree: 54%
 
 ---
 
-# Prise en main des workflows{#gs-workflows}
+# Commencer avec les workflows{#gs-workflows}
 
 ## À propos des workflows{#about-workflows}
 
@@ -21,7 +21,7 @@ Adobe Campaign comprend un module de workflow qui vous permet d’orchestrer l�
 
 Un workflow permet par exemple de télécharger un fichier depuis un serveur, de le décompresser et d&#39;importer ses enregistrements dans la base de données Adobe Campaign.
 
-Un workflow peut également faire intervenir des opérateurs afin de notifier ou valider une opération ou faire un choix. Ainsi, il est possible de créer une action de diffusion, d&#39;assigner une tâche à un ou plusieurs opérateurs qui seront chargés de saisir son contenu ou spécifier sa cible, puis de faire valider le BAT avant de démarrer la diffusion.
+Un workflow peut également impliquer un ou plusieurs opérateurs et opératrices à avertir ou pouvant effectuer des choix et valider des processus. Ainsi, il est possible de créer une action de diffusion, d&#39;affecter une tâche à un ou plusieurs opérateurs pour travailler sur le contenu, de spécifier des cibles et de valider les BAT avant de démarrer la diffusion.
 
 Les workflows interviennent dans différents contextes et à différentes étapes du processus de gestion des campagnes.
 
@@ -33,7 +33,7 @@ Ainsi, Adobe Campaign utilise des workflows pour :
 
 Un workflow est une définition de processus : le diagramme de workflow, qui est une représentation de ce qui est censé se produire. Un workflow est également une instance de ce processus : une instance de workflow, qui est une représentation de ce qui se passe réellement.
 
-Le modèle de workflow décrit les différentes tâches à effectuer et la façon de les enchaîner. Les modèles de tâches sont appelés des activités et sont représentées par des icônes. Elles sont reliées entre elles par des transitions.
+Le modèle de workflow décrit les différentes tâches à effectuer et la manière dont elles sont liées. Les modèles de tâche sont appelés activités et sont représentés par des icônes. Elles sont reliées entre elles par des transitions.
 
 ![](assets/example1.png)
 
@@ -51,19 +51,19 @@ Chaque workflow comprend :
 
 * **[!UICONTROL Transitions]**
 
-  Les transitions permettent de relier entres elles les activités et de définir leur ordre d&#39;enchaînement. Une transition relie une activité source à une activité destination. Il existe différents types de transitions, qui dépendent de l&#39;activité source. Certaines transitions possèdent des paramètres supplémentaires tels qu&#39;une durée, une condition ou un filtre.
+  Les transitions permettent de lier des activités et de définir leur séquence. Une transition relie une activité source à une activité de destination. Il existe plusieurs types de transitions, qui dépendent de l’activité source. Certaines transitions comportent des paramètres supplémentaires tels qu’une durée, une condition ou un filtre.
 
   Une transition est flottante si elle n&#39;est pas rattachée à une activité destination. Les transitions flottantes apparaissent en orange et la pointe de leur flèche est remplacée par un losange.
 
   >[!NOTE]
   >
-  >Un workflow contenant des transitions flottantes peut être exécuté : l’exécution générera un avertissement et sera suspendue lors de l’activation d’une telle transition, mais aucune erreur ne sera générée. Il est ainsi possible de démarrer un workflow sans en avoir terminé la conception et de le compléter au fur et à mesure.
+  >Un workflow contenant des transitions flottantes peut être exécuté : lors de l’activation d’une telle transition, l’exécution génère un avertissement et se trouve suspendue, mais aucune erreur n’est entraînée. Il est ainsi possible de démarrer un workflow sans qu’il soit terminé et de le compléter au fur et à mesure.
 
   Pour plus d&#39;informations sur la création d&#39;un workflow, consultez [cette section](build-a-workflow.md).
 
 * **[!UICONTROL Tables de travail]**
 
-  La table de travail contient l&#39;ensemble des informations portées par la transition. Ainsi, chaque workflow utilise plusieurs tables de travail. Les données véhiculées dans ces tables peuvent être accédées et utilisées tout au long du cycle de vie du workflow, sous réserve qu&#39;elles ne soient pas purgées. En effet, les tables inutiles sont purgées à chaque passivation du workflow, et potentiellement en cours d&#39;exécution pour les plus volumineuses afin de ne pas surcharger le serveur.
+  La table de travail contient toutes les informations véhiculées par la transition. Chaque workflow utilise plusieurs tables de travail. Les données transmises dans ces tableaux peuvent être accélérées et utilisées tout au long du cycle de vie du workflow, tant qu’elles ne sont pas purgées. En effet, les tableaux inutiles sont purgés à chaque passivation du workflow, et potentiellement en cours d’exécution pour les workflows les plus volumineux afin de ne pas surcharger le serveur.
 
   Pour plus d&#39;informations sur les données de workflow et les tables, consultez [cette section](use-workflow-data.md).
 

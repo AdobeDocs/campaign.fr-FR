@@ -7,8 +7,8 @@ level: Beginner
 exl-id: f931fc0d-12c1-4bff-a4f2-153e8d91c339
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 85%
+source-wordcount: '411'
+ht-degree: 64%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Campaign propose un ensemble d&#39;outils de reporting répertoriés dans
 
 * **Rapports dynamiques**
 
-  Disponible dans l’interface utilisateur web de Campaign, le rapport dynamique fournit des rapports entièrement personnalisables et en temps réel pour mesurer l’impact de vos activités marketing. Ils offrent la possibilité d’accéder aux données de profil, ce qui permet l’analyse démographique par dimensions de profil, comme le genre, la ville et l’âge, en plus des données de campagne par e-mail fonctionnelles comme les ouvertures et les clics. Reportez-vous à la documentation de [Web UI v7](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=fr){target="_blank"}.
+  Disponible dans l’interface utilisateur web de Campaign, le rapport dynamique fournit des rapports entièrement personnalisables et en temps réel pour mesurer l’impact de vos activités marketing. Ils offrent la possibilité d’accéder aux données de profil, ce qui permet l’analyse démographique par dimensions de profil, comme le genre, la ville et l’âge, en plus des données de campagne par e-mail fonctionnelles comme les ouvertures et les clics. Reportez-vous à la documentation de [Web UI v7](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html){target="_blank"}.
 
 * **Cubes**
 
@@ -28,13 +28,13 @@ Adobe Campaign propose un ensemble d&#39;outils de reporting répertoriés dans
 
   ![](assets/create-a-report.png)
 
-  Selon la complexité des requêtes, des calculs et des volumes manipulés, les données analysées dans ces rapports peuvent être collectées via une requête et préagrégées dans une liste (workflow de type « data management ») ou dans un cube (via l’utilisation de Marketing Analytics). Elles sont ensuite affichées sous la forme d’un tableau croisé dynamique ou d’une liste avec regroupement.
+  Selon la complexité des requêtes, des calculs et des volumes manipulés, les données analysées dans ces rapports peuvent être collectées via une requête et pré-agrégées dans une liste (workflow de type Data Management) ou dans un cube (via l&#39;utilisation de Marketing Analytics). Elle s&#39;affiche sous la forme d&#39;un tableau croisé dynamique ou d&#39;une liste de groupes.
 
   Pour plus d’informations, consultez [cette section](gs-cubes.md).
 
 * **Rapports natifs**
 
-  Adobe Campaign est fourni avec des rapports sur les diffusions, les campagnes, les activités de plateforme, les fonctionnalités en option, etc. Ces rapports sont disponibles à partir des différentes fonctionnalités auxquelles ils se rapportent. Ils peuvent être adaptés à vos besoins spécifiques.
+  Adobe Campaign est fourni avec des rapports sur les diffusions, les campagnes, les activités de plateforme, les fonctionnalités facultatives, etc. Ces rapports sont disponibles à partir des différentes fonctionnalités auxquelles ils se rapportent. Ils peuvent être adaptés à vos besoins spécifiques.
 
   Utilisez l&#39;onglet **Rapports** pour accéder à ces rapports.
 
@@ -44,7 +44,7 @@ Adobe Campaign propose un ensemble d&#39;outils de reporting répertoriés dans
 
 * **Analyse descriptive des données**
 
-  Adobe Campaign fournit un outil visuel permettant de produire des statistiques sur les données contenues dans la base de données. Vous pouvez créer des rapports d&#39;analyse descriptifs à l&#39;aide d&#39;un assistant dédié et adapter leur contenu ainsi que leur mise en page en fonction de vos besoins.
+  Adobe Campaign fournit un outil visuel permettant de produire des statistiques sur les données contenues dans la base de données. Vous pouvez créer des rapports d’analyse descriptive à l’aide d’un assistant dédié et adapter leur contenu ainsi que leur mise en page en fonction de vos besoins.
 
   Utilisez le menu **[!UICONTROL Outils > Analyse descriptive...]** pour créer un nouveau rapport.
 

@@ -5,10 +5,11 @@ feature: Monitoring, Deliverability
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
+exl-id: 90f2b7b2-db9e-42aa-aef2-e90aee5d208e
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 71%
+source-wordcount: '561'
+ht-degree: 55%
 
 ---
 
@@ -23,7 +24,7 @@ Pour plus d’informations sur les différents échecs de diffusion que vous pou
 **Rubriques connexes :**
 
 * [Envoyer et surveiller vos e-mails](send.md)
-* [Comprendre les diffusions en échec](delivery-failures.md)
+* [Présentation des diffusions en échec](delivery-failures.md)
 * [Prise en main de la délivrabilité](about-deliverability.md)
 
 ## Liste des statuts de diffusion {#list-delivery-statuses}
@@ -46,7 +47,7 @@ Pour plus d’informations sur les différents échecs de diffusion que vous pou
   </tr> 
   <tr> 
    <td> En échec<br /> </td> 
-   <td> La diffusion n'a pas pu atteindre le destinataire en raison d'une adresse invalide ou d'une boîte de réception pleine par exemple.La raison peut être également un problème lié aux blocs de personnalisation.Ils peuvent générer des erreurs lorsque les schémas ne correspondent pas au mapping de diffusion. Voir <a href="delivery-failures.md" target="_blank">Comprendre les diffusions en échec</a><br /> </td> 
+   <td> La diffusion n’a pas pu atteindre le destinataire en raison d’une adresse non valide ou d’une boîte de réception pleine, par exemple. Elle peut également être liée à un problème lié aux blocs de personnalisation, car ils peuvent générer des erreurs lorsque les schémas ne correspondent pas au mapping de diffusion. Voir <a href="delivery-failures.md" target="_blank">Comprendre les diffusions en échec</a><br /> </td> 
   </tr>
   <tr> 
    <td> En attente<br /> </td> 
@@ -62,7 +63,7 @@ Pour plus d’informations sur les différents échecs de diffusion que vous pou
   </tr> 
   <tr> 
    <td> Pris en compte par le fournisseur de services<br /> </td> 
-   <td> Pour les diffusions SMS, le fournisseur de services SMS a reçu la diffusion.<br /> Pour les diffusions par e-mail, le message a été relayé avec succès de Campaign vers le MTA (Mail Transfer Agent).</td> 
+   <td> Pour les diffusions SMS, le fournisseur de services SMS a reçu la diffusion.<br /> Pour les diffusions e-mail, le message a été relayé avec succès de Campaign au MTA (Mail Transfer Agent).</td> 
   </tr> 
   <tr> 
    <td> Reçu sur le mobile<br /> </td> 
@@ -70,7 +71,7 @@ Pour plus d’informations sur les différents échecs de diffusion que vous pou
   </tr>
   <tr> 
    <td> Transmis au prestataire<br /> </td> 
-   <td> La diffusion a été envoyée au fournisseur de services SMS qui ne l'a pas encore reçue.<br />
+   <td> La diffusion a été envoyée au fournisseur de services SMS, mais n’a pas encore été reçue.<br />
    </td> 
   </tr> 
   <tr> 
@@ -84,7 +85,7 @@ Pour découvrir comment optimiser la délivrabilité de vos emails Adobe Campai
 
 ## Statut En attente {#pending-status}
 
-Après avoir validé votre diffusion, vous pouvez constater que son statut est **[!UICONTROL En attente]**.Ce statut signifie que le processus d&#39;exécution attend la disponibilité de certaines ressources.
+Après avoir confirmé votre diffusion, vous pouvez constater que le statut de votre diffusion est **[!UICONTROL En attente]**. Ce statut signifie que le processus d&#39;exécution attend la disponibilité de certaines ressources.
 
 Le statut **[!UICONTROL En attente]** peut d&#39;abord signifier que votre diffusion a été planifiée et qu&#39;elle est en attente jusqu&#39;à la date spécifiée. Pour plus d&#39;informations, consultez la section [Planifier l&#39;envoi des diffusions](configure-and-send.md#schedule-delivery-sending) .
 
@@ -94,7 +95,7 @@ Si votre diffusion n&#39;est pas envoyée et reste dans un état **[!UICONTROL E
 
   La limite des campagnes simultanées est définie dans l’option **[!UICONTROL NmsOperation_LimitConcurrency]**. La valeur par défaut est 10.
 
-  En tant qu&#39;utilisateur Managed Cloud Services, vous pouvez travailler avec Adobe pour ajuster cette limite si nécessaire. En savoir plus sur les options dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=fr){target="_blank"}.
+  En tant qu&#39;utilisateur Managed Cloud Services, vous pouvez travailler avec Adobe pour ajuster cette limite si nécessaire. En savoir plus sur les options dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html){target="_blank"}.
 
 * **Problèmes de disponibilité des ressources**
 
@@ -107,6 +108,5 @@ Si votre diffusion n&#39;est pas envoyée et reste dans un état **[!UICONTROL E
 **Rubriques connexes :**
 
 * [Envoyer et surveiller vos e-mails](send.md#email-monitoring)
-* [Comprendre les diffusions en échec](delivery-failures.md)
+* [Présentation des diffusions en échec](delivery-failures.md)
 * [Surveillance de votre environnement Campaign](../start/monitor.md#monitor-deliveries)
-

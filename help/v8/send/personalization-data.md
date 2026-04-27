@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 711256e2-ab77-404a-b052-6793a85da193
 source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 95%
+source-wordcount: '653'
+ht-degree: 84%
 
 ---
 
@@ -19,7 +19,7 @@ Les données de personnalisation peuvent être récupérées à partir de diffé
 
 ## Source de données de la base de données Campaign
 
-Dans le cas le plus courant, les données de personnalisation sont stockées dans la base de données. Par exemple, les « champs de personnalisation des destinataires » sont tous les champs définis dans le tableau des destinataires, les champs standard (généralement : nom, prénom, adresse, ville, date de naissance, etc.) ou les champs personnalisés.
+Dans le cas le plus courant, les données de personnalisation sont stockées dans la base de données. Par exemple, les « champs de personnalisation des destinataires » sont tous les champs définis dans le tableau des destinataires, les champs standard (généralement : nom, prénom, adresse, ville, date de naissance, etc.) ou des champs personnalisés.
 
 ![Champs de personnalisation Campaign d’un e-mail](assets/perso-campaign-datasource.png)
 
@@ -63,9 +63,9 @@ Pour utiliser cette option, procédez comme suit :
 
 Une fois l&#39;analyse terminée, les données de personnalisation sont stockées dans une table temporaire via un workflow technique temporaire créé à la volée lors de l&#39;analyse.
 
-Ce workflow n&#39;est pas visible dans l&#39;interface d&#39;Adobe Campaign. Il s&#39;agit uniquement d&#39;un moyen technique permettant de stocker et de traiter rapidement les données de personnalisation.
+Ce workflow n’est pas visible dans l’interface d’Adobe Campaign. Il s’agit uniquement d’un moyen technique permettant de stocker et de gérer rapidement des données de personnalisation.
 
-Une fois l&#39;analyse terminée, accédez aux **[!UICONTROL Propriétés]** du workflow et sélectionnez l&#39;onglet **[!UICONTROL Variables]**. Celui-ci contient le nom de la table temporaire que vous pouvez utiliser pour effectuer un appel SQL afin d&#39;afficher les identifiants qu&#39;elle contient.
+Une fois l’analyse terminée, accédez au workflow **[!UICONTROL Propriétés]** et sélectionnez l’onglet **[!UICONTROL Variables]**. Vous pouvez y voir le nom de la table temporaire que vous pouvez utiliser pour effectuer un appel SQL afin d’afficher les identifiants qu’elle contient.
 
 ## Données de personnalisation dans un workflow
 

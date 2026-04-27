@@ -7,13 +7,13 @@ level: Beginner, Intermediate
 version: Campaign v8, Campaign Classic v7
 exl-id: 71d9376c-86e8-41ec-92dc-863455d40c7a
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '261'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 70%
 
 ---
 
-# Définir le contenu des SMS {#sms-content}
+# Définition du contenu du SMS {#sms-content}
 
 Pour configurer le contenu de votre diffusion SMS :
 
@@ -41,9 +41,9 @@ Pour configurer le contenu de votre diffusion SMS :
 
 >[!NOTE]
 >
->* La longueur des messages SMS est limitée à 160 caractères si la page de code Latin-1 (ISO-8859-1) est utilisée. Si le message est rédigé en unicode, il ne peut dépasser 70 caractères. Certains caractères spéciaux peuvent avoir une influence sur la longueur du message. Pour plus d’informations sur la longueur des messages, voir la section [Translittération des caractères SMS](smpp-external-account.md#smpp-channel-settings).
+>* Les SMS sont limités à une longueur de 160 caractères si la page de code Latin-1 (ISO-8859-1) est utilisée. Si le message est écrit en Unicode, il ne doit pas dépasser 70 caractères. Certains caractères spéciaux peuvent affecter la longueur du message. Pour plus d’informations sur la longueur des messages, voir la section [Translittération des caractères SMS](smpp-external-account.md#smpp-channel-settings).
 >
->* Lors de la présence de champs de personnalisation ou de contenu conditionnel, la taille du message varie d’une personne destinataire à l’autre. La longueur du message doit être évaluée une fois la personnalisation effectuée.
+>* En présence de champs de personnalisation ou de contenu conditionnel, la taille du message varie d&#39;un destinataire à l&#39;autre. La longueur du message doit être évaluée une fois la personnalisation effectuée.
 >
 >*Lorsque vous lancez l’analyse, la longueur des messages est contrôlée et un message d’avertissement est affiché en cas de dépassement.
 

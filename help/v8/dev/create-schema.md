@@ -7,8 +7,8 @@ level: Intermediate, Experienced
 exl-id: 796af848-b537-4b8d-a601-fe0628a1fc83
 source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 100%
+source-wordcount: '435'
+ht-degree: 83%
 
 ---
 
@@ -18,7 +18,7 @@ Pour modifier, créer et paramétrer les schémas, cliquez sur le nœud **[!UICO
 
 >[!NOTE]
 >
->Les schémas de données natifs peuvent uniquement être supprimés par un administrateur ou une administratrice de votre console Adobe Campaign 
+>Les schémas de données natifs peuvent uniquement être supprimés par un administrateur ou une administratrice de votre console Adobe Campaign
 
 ![](assets/schema_navtree.png)
 
@@ -28,7 +28,7 @@ L&#39;onglet **[!UICONTROL Édition]** affiche le contenu XML d&#39;un schéma 
 
 >[!NOTE]
 >
->Le contrôle de modification &quot;Nom&quot; permet de saisir la clé du schéma, composée du nom et de l&#39;espace de noms. Les attributs &quot;name&quot; et &quot;namespace&quot; de l&#39;élément racine du schéma sont automatiquement mis à jour dans la zone d&#39;édition XML du schéma. Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces)
+>Le contrôle d’édition « Nom » permet de saisir la clé du schéma, composée du nom et de l’espace de noms. Les attributs « name » et « namespace » de l&#39;élément racine du schéma sont automatiquement mis à jour dans la zone d&#39;édition XML du schéma. Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces)
 
 L&#39;onglet **[!UICONTROL Aperçu]** génère automatiquement le schéma étendu :
 
@@ -36,9 +36,9 @@ L&#39;onglet **[!UICONTROL Aperçu]** génère automatiquement le schéma étend
 
 >[!NOTE]
 >
->L&#39;enregistrement du schéma source lance automatiquement la génération du schéma étendu.
+>La sauvegarde du schéma source va automatiquement lancer la génération du schéma étendu.
 
-Si vous devez vérifier la structure complète d’un schéma, vous pouvez utiliser l’onglet **[!UICONTROL Aperçu]**. Si le schéma a été étendu, vous pourrez visualiser toutes ses extensions. En complément, l’onglet **[!UICONTROL Documentation]** affiche tous les attributs et éléments du schéma, ainsi que ses propriétés (champ SQL, type/longueur, libellé, description). L’onglet **[!UICONTROL Documentation]** s’applique uniquement aux schémas générés.
+Si vous devez vérifier la structure complète d’un schéma, vous pouvez utiliser l’onglet **[!UICONTROL Aperçu]**. Si le schéma a été étendu, vous pourrez alors visualiser toutes ses extensions. En complément, l’onglet **[!UICONTROL Documentation]** affiche tous les attributs et éléments du schéma, ainsi que ses propriétés (champ SQL, type/longueur, libellé, description). L’onglet **[!UICONTROL Documentation]** s’applique uniquement aux schémas générés.
 
 ## Cas d&#39;utilisation : créer une table des contrats {#example--creating-a-contract-table}
 
@@ -113,4 +113,4 @@ Pour cela, vous devez créer le schéma de la table puis procéder à la mise à
 
    ![](assets/configuration_structure.png)
 
-1. Mettez à jour la structure de la base de données pour créer la table à laquelle le schéma sera lié. Pour plus d&#39;informations à ce sujet, consultez [cette section](update-database-structure.md).
+1. Mettez à jour la structure de la base de données pour créer la table à laquelle le schéma sera lié. Voir à ce propos [cette section](update-database-structure.md).

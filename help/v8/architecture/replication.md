@@ -1,19 +1,19 @@
 ---
-title: Réplication de données
+title: Réplication des données
 description: Workflows techniques et réplication de données
 feature: Workflows, FFDA
 role: Developer
 level: Intermediate
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
 source-git-commit: b8f774ce507cff67163064b6bd1341b31512c08f
-workflow-type: ht
-source-wordcount: '817'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '851'
+ht-degree: 99%
 
 ---
 
 
-# Réplication de données {#wf-data-replication}
+# Réplication des données {#wf-data-replication}
 
 ## Principe
 
@@ -57,7 +57,7 @@ Si nécessaire, vous pouvez lancer manuellement la synchronisation des données.
 
 Outre le workflow technique intégré **Répliquer les tables de référence**, vous pouvez forcer la réplication des données dans vos workflows à l’aide de l’une de ces méthodes.
 
-+++Comment forcer la réplication de données
++++Comment forcer la réplication des données
 
 * Ajoutez une activité **Code JavaScript** spécifique avec le code suivant :
 
@@ -115,6 +115,6 @@ Chaque file d’attente est gérée par un workflow technique, qui gère la rép
 
 Cette vidéo présente les concepts clés concernant les bases de données utilisées par Adobe Campaign v8, les raisons de la réplication des données, les données concernées par cette réplication et le fonctionnement du processus de réplication.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416865?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
 D’autres tutoriels sur la console cliente Campaign v8 sont disponibles [ici](https://experienceleague.adobe.com/fr/docs/campaign-learn/tutorials/overview).

@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '481'
 ht-degree: 100%
 
 ---
@@ -72,4 +72,4 @@ Les variables suivantes sont des variables internes qui peuvent être utilisées
 Découvrez les différents types de contenu dynamique et apprenez à créer et à appliquer des blocs de personnalisation et des instructions conditionnelles à une diffusion.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3452868?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/335734?quality=12)

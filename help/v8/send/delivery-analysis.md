@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 1526048d-9f02-4853-948f-8fb618670dbd
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 100%
+source-wordcount: '754'
+ht-degree: 96%
 
 ---
 
@@ -72,7 +72,7 @@ Accédez à l’onglet **[!UICONTROL Analyse]** des propriétés de la diffusion
 
 ![](assets/delivery-properties-analysis-tab.png){width="800" align="left"}
 
-Cet onglet permet d’accéder aux options suivantes :
+Cet onglet permet d&#39;accéder aux options suivantes :
 
 * **[!UICONTROL Libellé et code de diffusion]** : les options de cette section sont utilisées pour calculer les valeurs de ces champs pendant la phase d’analyse de diffusion. Le champ **[!UICONTROL Calculer le dossier d’exécution lors de l’analyse de la diffusion]** calcule le nom du dossier qui contiendra cette action de diffusion pendant la phase d’analyse.
 
@@ -89,5 +89,5 @@ Cet onglet permet d’accéder aux options suivantes :
    * **[!UICONTROL Automatique]** : les envois démarrent automatiquement à la fin de la phase d’analyse, quel qu’en soit le résultat.
 
 * **[!UICONTROL Lancer le traitement dans un processus détaché]** : cette option permet de lancer l’analyse de la diffusion dans un processus à part. Par défaut, la fonction d’analyse utilise le processus du serveur applicatif d&#39;Adobe Campaign (nlserver web). En cochant cette option, vous garantissez que l’analyse sera menée à son terme même en cas de défaillance du serveur applicatif.
-* **[!UICONTROL Enregistrer les requêtes SQL pendant l’analyse dans le journal]** : cette option permet d’ajouter les logs des requêtes SQL dans le journal de la diffusion lors de la phase d&#39;analyse.
-* **[!UICONTROL Ignorer les scripts de personnalisation lors de l’envoi]** : cette option permet de ne pas interpréter les directives JavaScript présentes dans le contenu HTML. Elles seront affichées telles quelles dans le contenu diffusé. Ces directives sont introduites par la balise `<%=`.
+* **[!UICONTROL Enregistrer les requêtes SQL pendant l’analyse dans le journal]** : cette option permet d’ajouter les logs des requêtes SQL dans le log de la diffusion lors de la phase d&#39;analyse.
+* **[!UICONTROL Ignorer les scripts de personnalisation lors de l’envoi]** : cette option permet de contourner l’interprétation des directives JavaScript présentes dans le contenu HTML. Ils s’affichent tels quels dans le contenu diffusé. Ces directives sont introduites par la balise `<%=`.

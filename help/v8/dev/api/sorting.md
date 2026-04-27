@@ -9,8 +9,8 @@ level: Experienced
 exl-id: 7db25b8d-a6f1-4151-bf37-c47e9991ae48
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 98%
+source-wordcount: '762'
+ht-degree: 94%
 
 ---
 
@@ -193,8 +193,8 @@ Il est possible de combiner plusieurs filtres dans une seule requête :
   }
   ```
 
-* Exemple de requête GET pour récupérer les ressources &quot;profile&quot; contenant &quot;Doe&quot; dans
-les champs email ou nom (le filtre byText effectue une recherche dans les champs email et nom).
+* Exemple de requête GET pour récupérer les ressources « profile » contenant « Doe » dans
+les champs e-mail ou nom (le filtre byText effectue une recherche dans les champs e-mail et nom ).
 
   ```
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/byText?text=Doe \
@@ -386,7 +386,7 @@ Elle renvoie le nombre d’enregistrements.
 
 Par défaut, 25 ressources sont chargées dans une liste.
 
-Le paramètre **_lineCount** permet de limiter le nombre de ressources répertoriées dans la réponse. Vous pouvez ensuite utiliser le nœud **suivant** pour afficher les résultats suivants.
+Le paramètre **_lineCount** permet de limiter le nombre de ressources répertoriées dans la réponse.  Vous pouvez ensuite utiliser le nœud **suivant** pour afficher les résultats suivants.
 
 >[!NOTE]
 >

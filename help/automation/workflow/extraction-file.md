@@ -7,8 +7,8 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 8510e879-2862-491f-bc52-ca8f56105932
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '338'
+workflow-type: tm+mt
+source-wordcount: '341'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ Pour paramétrer l&#39;extraction des données, les étapes sont les suivantes 
 
    ![](assets/s_advuser_extract_file_param.png)
 
-   L&#39;option **[!UICONTROL Gérer les groupements (GROUP BY + HAVING)]** ajoute une étape supplémentaire afin de filtrer sur le résultat final de l&#39;agrégat, par exemple sur tel type de commande, sur les clients ayant passé plus de 10 commandes, etc.
+   L’option **[!UICONTROL Gérer les groupements (GROUP BY + HAVING)]** ajoute une étape supplémentaire afin de filtrer sur le résultat final de l’agrégat, par exemple sur tel type de bon de commande, sur les clientes et clients ayant passé plus de 10 commandes, etc.
 
 1. Au besoin, vous pouvez ajouter de nouvelles colonnes dans le fichier de sortie, comme résultat de calculs ou de traitement sur les données. Pour ce faire, cliquez sur l’icône **[!UICONTROL Ajouter]**.
 
@@ -54,7 +54,7 @@ Vous pouvez définir un post-traitement à exécuter pendant l’extraction des 
 
 Les fonctions d&#39;agrégat disponibles sont les suivantes :
 
-* **[!UICONTROL Comptage]** pour compter toutes les valeurs non-nulles du champ à agréger, y compris les valeurs en double (du champ agrégé),
+* **[!UICONTROL Comptage]** pour compter toutes les valeurs non nulles du champ à agréger, y compris les valeurs en double (du champ agrégé),
 
   **[!UICONTROL Comptage distinct]** pour compter le nombre total de valeurs différentes et non nulles du champ à agréger (les valeurs en double sont éliminées avant le calcul),
 

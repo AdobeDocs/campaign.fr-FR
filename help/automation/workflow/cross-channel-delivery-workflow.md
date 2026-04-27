@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '679'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '691'
+ht-degree: 91%
 
 ---
 
@@ -35,10 +35,10 @@ Les principales étapes d&#39;implémentation pour ce cas pratique sont les suiv
 
 Pour définir votre cible, créez une requête afin d&#39;identifier les destinataires.
 
-1. Créez une campagne. En savoir plus sur [cette page](../campaigns/marketing-campaign-create.md).
+1. Créez une campagne. En savoir plus à ce propos sur [cette page](../campaigns/marketing-campaign-create.md).
 1. Dans l’onglet **[!UICONTROL Ciblage et workflows]** de la campagne, ajoutez une activité **Requête** à votre workflow. Pour plus d’informations sur cette activité, consultez [cette section](query.md).
-1. Définissez les destinataires qui recevront vos diffusions. Par exemple, sélectionnez les membres &quot;Gold&quot; en tant que dimension cible.
-1. Ajoutez des conditions de filtrage à votre requête. Dans cet exemple, sélectionnez les destinataires disposant d&#39;une adresse email et d&#39;un numéro de téléphone portable.
+1. Définissez les destinataires qui recevront vos diffusions. Par exemple, sélectionnez Membres « Gold » comme dimension cible.
+1. Ajoutez des conditions de filtrage à votre requête. Dans cet exemple, sélectionnez les destinataires qui disposent d’une adresse e-mail et d’un numéro de mobile.
 
    ![](assets/wkf_cross-channel_3.png)
 
@@ -109,7 +109,7 @@ Une fois votre cible identifiée et votre première diffusion créée, vous deve
    * Ajoutez une activité **[!UICONTROL Diffusion mobile]** pour envoyer un SMS au deuxième sous-ensemble.
    * Ajoutez une activité **[!UICONTROL Mise à jour des listes]** pour ajouter les destinataires correspondants à la base de données.
 
-1. Double-cliquez sur les activités de diffusion de votre workflow pour les modifier.
+1. Double-cliquez sur les activités de la diffusion dans votre workflow pour les éditer.
 1. Double-cliquez sur l’activité **[!UICONTROL Mise à jour des listes]** et sélectionnez l’option **[!UICONTROL Générer une transition sortante]**.
 1. Cliquez sur le bouton **Démarrer** de la barre d&#39;actions pour exécuter le workflow.
 

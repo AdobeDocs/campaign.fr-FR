@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
 source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1048'
 ht-degree: 100%
 
 ---
@@ -158,7 +158,7 @@ Pour envoyer des notifications sur les appareils Android, procédez comme suit 
 
 1. Dans le champ **[!UICONTROL Variables de l&#39;application]**, saisissez la valeur de chaque variable. Vous pouvez par exemple paramétrer un écran d&#39;application spécifique qui s&#39;affichera lorsque l&#39;utilisateur activera la notification.
 
-1. Une fois la notification renseignée, cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** pour prévisualiser la notification.
+1. Une fois la notification configurée, cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** pour la prévisualiser.
 
    <!--![](assets/push-android-preview.png)-->
 

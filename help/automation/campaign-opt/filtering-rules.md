@@ -6,8 +6,8 @@ feature: Typology Rules
 exl-id: 17507cdf-211f-4fa2-abb9-33d4f6dc47bb
 source-git-commit: 1fb93efac4fee4965213f8b42f518f2c10638e20
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 100%
+source-wordcount: '550'
+ht-degree: 81%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Utilisez les règles de filtrage pour sélectionner les messages à exclure en fonction des critères définis dans une requête. Ces règles sont liées à une dimension de ciblage.
 
-Les règles de filtrage peuvent être associées à d’autres types de règles (contrôle, pression, etc.) dans des typologies, ou regroupées dans une typologie dédiée de type **Filtrage**. [En savoir plus](#create-and-use-a-filtering-typology).
+Les règles de filtrage peuvent être associées à d’autres types de règles (contrôle, pression, etc.) dans les typologies, ou regroupées dans une typologie dédiée **Filtrage**. [En savoir plus](#create-and-use-a-filtering-typology).
 
 ## Création dʼune règle de filtrage {#create-a-filtering-rule}
 
@@ -28,11 +28,11 @@ Pour définir ce filtrage, les étapes sont les suivantes :
 
    ![](assets/campaign_opt_create_filter_01.png)
 
-1. Sous l’onglet **Filtre**, modifiez la dimension de ciblage par défaut sur **Abonnements** (**nms:subscription**).
+1. Dans l’onglet **Filtre** modifiez la dimension de ciblage par défaut en **Abonnements** (**nms:subscription**).
 
    ![](assets/campaign_opt_create_filter_02.png)
 
-1. Créez le filtre à partir du lien **[!UICONTROL Éditer la requête à partir de la dimension de ciblage...]**.
+1. Créez le filtre à partir du lien **[!UICONTROL Editer la requête à partir de la dimension de ciblage...]**.
 
    ![](assets/campaign_opt_create_filter_03.png)
 
@@ -76,7 +76,7 @@ Ces typologies spécifiques peuvent être associées à une diffusion lors du ch
 
 Sélectionnez ensuite la typologie de filtrage à appliquer à la diffusion. Pour ce faire, cliquez sur le bouton **[!UICONTROL Ajouter]** et sélectionnez les typologies à appliquer.
 
-Vous pouvez également associer directement des règles de filtrage depuis cet onglet, sans qu&#39;elles soient regroupées dans une typologie. Pour cela, utilisez la section inférieure de la fenêtre.
+Vous pouvez également lier des règles de filtrage directement à partir de cet onglet, sans qu&#39;elles ne soient regroupées dans une typologie. Pour ce faire, utilisez la section inférieure de la fenêtre.
 
 ![](assets/campaign_opt_select_typo_filtering.png)
 
@@ -87,12 +87,12 @@ Vous pouvez également associer directement des règles de filtrage depuis cet o
 >Ces paramétrages peuvent être définis au niveau du modèle de diffusion afin de les appliquer automatiquement à toute nouvelle diffusion créée à partir de ce modèle.
 >
 
-## Règles d&#39;exclusion de délivrabilité par défaut      {#default-deliverability-exclusion-rules}
+## Règles d&#39;exclusion de délivrabilité par défaut {#default-deliverability-exclusion-rules}
 
-Deux règles de filtrage sont disponibles par défaut : **[!UICONTROL Exclusion des adresses]** (**[!UICONTROL addressExclusions]**) et **[!UICONTROL Exclusion des domaines]** (**[!UICONTROL domainExclusions]**). Pendant l&#39;analyse de l&#39;e-mail, ces règles comparent les adresses e-mail des destinataires aux adresses ou noms de domaine interdits contenus dans une liste de suppression globale chiffrée, gérée dans l&#39;instance de délivrabilité. S&#39;il existe une correspondance, le message n&#39;est pas envoyé au destinataire concerné.
+Deux règles de filtrage sont disponibles par défaut : **[!UICONTROL Exclusion des adresses]** ( **[!UICONTROL addressExclusions]** ) et **[!UICONTROL Exclusion des domaines]** ( **[!UICONTROL domainExclusions]** ). Pendant l’analyse de l’e-mail, ces règles comparent les adresses e-mail des destinataires aux adresses ou noms de domaine interdits contenus dans une liste de suppression globale chiffrée, gérée dans l’instance de délivrabilité. S&#39;il existe une correspondance, le message n&#39;est pas envoyé au destinataire concerné.
 
 Ces règles d’exclusion permettent d’éviter toute mise en liste bloquée liée à une activité malveillante, notamment l’utilisation d’un spam trap (piège à spam). Si un spam trap est par exemple utilisé pour s’abonner par le biais de l’un de vos formulaires web, un email de confirmation lui est automatiquement envoyé. Votre adresse est alors automatiquement mise en liste bloquée.
 
 >[!NOTE]
 >
->Les adresses et les noms de domaine contenus dans la liste de suppression globale sont masqués. Seul le nombre des destinataires exclus est indiqué dans les logs d&#39;analyse de diffusion.
+>Les adresses et les noms de domaine contenus dans la liste de suppression globale sont masqués. Seul le nombre de destinataires exclus est indiqué dans les logs d’analyse de la diffusion.

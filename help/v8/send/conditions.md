@@ -8,30 +8,30 @@ exl-id: bcbf3101-d43c-4ed3-ab02-a9936ec55b71
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '441'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
 # Créer du contenu conditionnel{#conditional-content}
 
-La configuration des champs de contenu conditionnel permet d’atteindre un niveau de personnalisation évolué. Des blocs complets de texte et/ou des images sont remplacés lorsqu’une condition particulière est remplie.
+En configurant des champs de contenu conditionnel, vous pouvez créer une personnalisation avancée. Des blocs de texte complets et/ou des images sont remplacés lorsqu’une condition particulière est remplie.
 
 
-## Utiliser des conditions dans un e-mail {#conditions-in-an-email}
+## Utilisation de conditions dans un e-mail {#conditions-in-an-email}
 
 Dans l’exemple ci-dessous, découvrez comment créer de manière dynamique un message personnalisé selon la ville et les centres d’intérêt du ou de la destinataire.
 
 * Modifiez le message en fonction de la ville du ou de la destinataire,
 * Personnalisez le contenu de l’offre selon les centres d’intérêt du ou de la destinataire.
 
-Pour créer un contenu conditionnel en fonction de la valeur d’un champ, respectez les étapes suivantes :
+Pour créer un contenu conditionnel en fonction de la valeur d&#39;un champ, respectez les étapes suivantes :
 
 1. Ouvrez une diffusion existante ou créez une diffusion par e-mail.
 1. Dans l’éditeur de contenu d’e-mail, cliquez sur l’icône de personnalisation et sélectionnez **[!UICONTROL Contenu conditionnel > Si]**.
 
    ![Insérer une condition](assets/condition-insert.png)
 
-   Les éléments de personnalisation sont insérés dans le corps du message : vous devez maintenant les configurer.
+   Les éléments de personnalisation sont insérés dans le corps du message. Vous devez maintenant les configurer.
 
 1. Renseignez les paramètres de l’expression **Si**.
 
@@ -86,4 +86,4 @@ Découvrez dans l’exemple ci-dessous comment créer un e-mail multilingue. Le 
 
 Découvrez comment ajouter du contenu conditionnel à une diffusion en prenant pour exemple une newsletter multilingue.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446713?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/335682?quality=12)

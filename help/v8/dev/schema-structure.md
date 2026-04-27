@@ -7,8 +7,8 @@ level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
 source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 98%
+source-wordcount: '1453'
+ht-degree: 88%
 
 ---
 
@@ -126,28 +126,28 @@ Le type de données est renseigné à partir de l&#39;attribut **type** sur les 
 
 Une liste détaillée est disponible dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=fr#configuring-campaign-classic){target="_blank"}.
 
-Lorsque cet attribut n&#39;est pas renseigné, **string** est le type de données par défaut, sauf si l&#39;élément contient des éléments enfants. Si tel est le cas, il est utilisé uniquement pour structurer les éléments de manière hiérarchique (élément **`<location>`** dans notre exemple).
+Lorsque cet attribut n’est pas renseigné, **string** est le type de données par défaut, sauf si l’élément contient des éléments enfants. Si tel est le cas, il est utilisé uniquement pour structurer les éléments de manière hiérarchique (élément **`<location>`** dans notre exemple).
 
-Les types de données supportés dans un schéma sont les suivants :
+Les types de données pris en charge dans un schéma sont les suivants :
 
-* **string** : chaîne de caractères. Exemples : un prénom, une ville, etc.
+* **string** : chaîne de caractères. Exemples : un prénom, une ville, etc.
 
   La taille peut être spécifiée via l&#39;attribut **length** (optionnel, valeur par défaut &quot;255&quot;).
 
-* **boolean** : champ booléen. Exemples de valeurs possibles : vrai/faux, 0/1, oui/non, etc.
-* **byte**, **short**, **long** : entiers (1 octet, 2 octets, 4 octets). Exemples : un age, un numéro de compte, un nombre de points, etc.
-* **double** : nombre flottant à double précision. Exemples : un prix, un taux, etc.
-* **date**, **datetime**: dates et dates + heures. Exemples : une date de naissance, une date d&#39;achat, etc.
+* **boolean** : champ booléen. Exemple de valeurs possibles : vrai/faux, 0/1, oui/non, etc.
+* **byte**, **short**, **long** : entiers (1 octet, 2 octets, 4 octets). Exemples : un âge, un numéro de compte, un nombre de points, etc.
+* **double** : nombre flottant en double précision. Exemples : un prix, un taux, etc.
+* **date**, **datetime** : dates et dates + heures. Exemples : date de naissance, date d’achat, etc.
 * **datetimenotz** : date + heure sans données de fuseau horaire.
-* **timespan** : durée. Exemple : l&#39;ancienneté.
-* **memo** : champ texte long (multi-lignes). Exemples : une description, un commentaire, etc.
+* **timespan** : durées. Exemple : l&#39;ancienneté.
+* **memo** : champs texte longs (multi-lignes). Exemples : description, commentaire, etc.
 * **uuid** : champs &quot;uniqueidentifier&quot;
 
   >[!NOTE]
   >
   >Pour contenir un champ **uuid**, la fonction &quot;newuuid()&quot; doit être ajoutée et complétée avec sa valeur par défaut.
 
-Voici notre schéma d&#39;exemple complété avec les types :
+Notre schéma d&#39;exemple complété avec les types :
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -202,7 +202,7 @@ Les éléments **`<elements>`** et **`<attributes>`** du schéma de données peu
 
 La propriété **default** permet de définir une expression retournant une valeur par défaut à la création du contenu.
 
-La valeur doit être une expression conforme au langage XPath. Pour plus d&#39;informations à ce sujet, consultez [cette section](#reference-with-xpath).
+La valeur doit être une expression conforme au langage XPath. Pour plus d’informations, consultez [cette section](#reference-with-xpath).
 
 **Exemple**:
 
@@ -349,7 +349,7 @@ Les éléments sont désignés par leur nom, les attributs sont désignés par l
 
 >[!NOTE]
 >
->Une contrainte supplémentaire a été ajoutée lorsque le chemin traverse un sous-élément. Dans ce cas, il faut mettre l&#39;expression entre crochets :
+>Une contrainte supplémentaire est ajoutée lorsque le chemin traverse un sous-élément. Dans ce cas, l&#39;expression suivante doit être placée entre crochets :
 >
 >* **Location/@city** n&#39;est pas valide ; veuillez utiliser **`[location/@city]`**
 >* **`[@email]`** et **@email** sont équivalents

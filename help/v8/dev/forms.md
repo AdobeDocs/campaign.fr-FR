@@ -6,9 +6,9 @@ role: Developer
 level: Beginner, Intermediate
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
 source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
-workflow-type: ht
-source-wordcount: '2573'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '2593'
+ht-degree: 82%
 
 ---
 
@@ -18,7 +18,7 @@ Lorsque vous créez ou étendez un schéma, vous devez créer ou modifier les fo
 
 Un formulaire de saisie vous permet de modifier une instance associée à un schéma de données à partir de la console cliente Adobe Campaign. Le formulaire est identifié par ses nom et espace de noms.
 
-La clé d’identification d’un formulaire correspond à une chaîne constituée de l’espace de noms et du nom séparés par deux points, par exemple « cus:contact ».
+La clé d&#39;identification d&#39;un formulaire correspond à une chaîne construite avec l&#39;espace de noms et le nom séparés par le caractère &#39;:&#39; (par exemple : « cus:contact »).
 
 ## Modification des formulaires de saisie
 
@@ -34,9 +34,9 @@ L&#39;aperçu génère l&#39;affichage du formulaire de saisie :
 
 ![](assets/form_preview.png)
 
-## Structure d&#39;un formulaire
+## Structure de formulaire
 
-La description d’un formulaire est un document XML structuré respectant la grammaire du schéma de formulaire **xtk:form**.
+La description d’un formulaire est un document XML structuré respectant la grammaire du schéma des formes **xtk:form**.
 
 Le document XML du formulaire de saisie doit contenir l&#39;élément racine `<form>` avec les attributs **name** et **namespace** pour renseigner respectivement le nom du formulaire et son espace de noms.
 
@@ -46,7 +46,7 @@ Le document XML du formulaire de saisie doit contenir l&#39;élément racine `<f
 </form>
 ```
 
-Par défaut, un formulaire est associé au schéma de données possédant un nom et un espace de noms identiques. Pour associer un formulaire avec un nom différent, définissez l&#39;attribut **entity-schema** de l&#39;élément `<form>` sur le nom de la clé de schéma. Pour illustrer la structure d&#39;un formulaire de saisie, nous allons décrire une interface à partir du schéma d&#39;exemple &quot;cus:recipient&quot; :
+Par défaut, un formulaire est associé au schéma de données possédant un nom et un espace de noms identiques. Pour associer un formulaire avec un nom différent, définissez l&#39;attribut **entity-schema** de l&#39;élément `<form>` sur le nom de la clé de schéma. Pour illustrer la structure d’un formulaire de saisie, nous allons décrire une interface à partir du schéma d’exemple « cus:recipient » :
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -91,7 +91,7 @@ Tous les attributs de formulaires sont répertoriés dans la [documentation de C
 
 ## Mise en forme {#formatting}
 
-La disposition des contrôles entre eux ressemble à celle utilisée dans les tableaux HTML, avec la possibilité de diviser un contrôle en plusieurs colonnes, utiliser des imbrications d&#39;éléments ou de spécifier l&#39;occupation de l&#39;espace disponible. Il faut cependant retenir que la mise en page autorise seulement des répartitions de proportions, il n&#39;est pas possible de spécifier des dimensions fixes pour un objet.
+La disposition des contrôles est similaire à celle utilisée dans les tableaux HTML, avec la possibilité de diviser un contrôle en plusieurs colonnes, d&#39;entrelacer des éléments, ou de spécifier l&#39;occupation de l&#39;espace disponible. Toutefois, n&#39;oubliez pas que la mise en forme permet uniquement de diviser la zone par proportions ; vous ne pouvez pas spécifier de cotes fixes pour un objet.
 
 Pour afficher les contrôles de l&#39;exemple précédent sur deux colonnes :
 
@@ -151,13 +151,13 @@ Un élément **`<static>`** peut être utilisé pour mettre en forme le formulai
 </form>
 ```
 
-La balise **`<static>`** avec le type **separator** permet d&#39;ajouter une barre de séparation avec un libellé contenu dans l&#39;attribut **label**.
+La balise **`<static>`** avec le type **separator** permet d’ajouter une barre de séparation avec un libellé contenu dans l’attribut **label**.
 
 Un texte d&#39;aide a été ajouté à l&#39;aide de la balise `<static>` avec le type d&#39;aide. Le contenu du texte est saisi dans l&#39;attribut **label**.
 
 ## Utilisation de conteneurs {#containers}
 
-Utilisez des **conteneurs** pour regrouper un ensemble de contrôles. Ils sont représentés par l&#39;élément **`<container>`**. Ils ont été utilisés ci-dessus pour mettre en forme les contrôles sur plusieurs colonnes.
+Utilisez des **conteneurs** pour regrouper un ensemble de contrôles. Ils sont représentés par l’élément **`<container>`**. Ils ont été utilisés ci-dessus pour mettre en forme les contrôles sur plusieurs colonnes.
 
 L’attribut **xpath** sur un `<container>` permet de simplifier le référencement des contrôles enfants. Le référencement des contrôles est alors relatif au `<container>` parent.
 
@@ -227,11 +227,11 @@ Utilisez ce conteneur pour afficher une barre d’icônes verticale permettant d
 </container>
 ```
 
-Le conteneur principal est défini par l’attribut **type=&quot;iconbox&quot;**. Les pages associées aux icônes sont déclarées dans les conteneurs enfants. Le libellé des icônes est renseigné à partir de l’attribut **label**.
+Le conteneur principal est défini par l’attribut **type=« iconbox »** . Les pages associées aux icônes sont déclarées dans les conteneurs enfants. Le libellé des icônes est renseigné à partir de l’attribut **label**.
 
-L&#39;icône d&#39;une page est renseignée à partir de l&#39;attribut `img="<image>"`, où `<image>` est le nom de l&#39;image correspondant à sa clé construite avec le nom et l&#39;espace de noms (par exemple &quot;xtk:properties.png&quot;).
+L’icône d’une page est renseignée à partir de l’attribut `img="<image>"`, où `<image>` est le nom de l’image correspondant à sa clé construite avec le nom et l’espace de noms (par exemple « xtk:properties.png »).
 
-Les images sont disponibles à partir du nœud **[!UICONTROL Administration > Paramétrage > Images]**.
+Les images sont disponibles à partir du nœud **[!UICONTROL Administration > Configuration > Images]**.
 
 ### Masquage des conteneurs (visibleGroup) {#visibility-container}
 
@@ -253,12 +253,12 @@ Un conteneur de visibilité est défini par l’attribut **type=&quot;visibleGro
 Exemples de syntaxes de conditions :
 
 * **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;** : teste l&#39;égalité sur les données de type chaîne. La valeur de comparaison doit être entre guillemets.
-* **visibleIf=&quot;@gender >= 1 and @gender != 2&quot;** : condition sur une valeur numérique.
+* **visibleIf=« @gender >= 1 et @gender != 2 »** : condition sur une valeur numérique.
 * **visibleIf=&quot;@boolean1=true or @boolean2=false&quot;** : test sur des champs booléens.
 
 ### Affichage conditionnel (enabledGroup) {#enabling-container}
 
-Ce conteneur pemet l’activation ou la désactivation d’un ensemble de données à partir d’une condition dynamique. La désactivation d’un contrôle empêche son édition. L’exemple suivant illustre l’activation des contrôles à partir de la valeur du champ « Genre » :
+Ce conteneur permet d’activer ou de désactiver un ensemble de données à partir d’une condition dynamique. La désactivation d&#39;un contrôle empêche sa modification. L&#39;exemple suivant illustre l&#39;activation des contrôles à partir de la valeur du champ « Genre » :
 
 ```
 <container type="enabledGroup" enabledIf="@gender=1">
@@ -287,13 +287,13 @@ Le contrôle d&#39;édition du lien dans son formulaire de saisie est :
 <input xpath="company"/>
 ```
 
-La sélection de la cible est possible à partir du champ d’édition. L’entrée est facilitée par l’auto-complétion de sorte qu’un élément cible puisse être facilement retrouvé à partir des premiers caractères saisis. La recherche est ensuite basée sur l’élément **Compute string** défini dans le schéma ciblé. Si le schéma n’existe pas après validation dans le contrôle, un message de confirmation de création de la cible à la volée s’affiche. La confirmation crée un nouvel enregistrement dans le tableau cible et l’associe au lien.
+La sélection de la cible est accessible à partir du champ d&#39;édition. La saisie semi-automatique facilite la recherche d’un élément cible à partir des premiers caractères saisis. La recherche est ensuite basée sur l’élément **Compute string** défini dans le schéma ciblé. Si le schéma n’existe pas après validation dans le contrôle, un message de confirmation de création de la cible à la volée s’affiche. La confirmation crée un nouvel enregistrement dans le tableau cible et l’associe au lien.
 
 Une liste déroulante permet de sélectionner un élément de la cible parmi la liste des enregistrements déjà créés.
 
 L&#39;icône **[!UICONTROL Modifier le lien]** (dossier) lance un formulaire de sélection avec la liste des éléments ciblés et une zone de filtre.
 
-L’icône **[!UICONTROL Modifier le lien]** (loupe) lance le formulaire d’édition de l’élément lié. Le formulaire utilisé est déduit par défaut de la clé du schéma ciblé. L’attribut **form** permet d’imposer le nom du formulaire d’édition (par exemple, « cus:company2 »).
+L&#39;icône **[!UICONTROL Editer le lien]** (loupe) lance la forme d&#39;édition de l&#39;élément lié. Le formulaire utilisé est déduit par défaut sur la clé du schéma ciblé. L’attribut **form** permet d’imposer le nom du formulaire d’édition (par exemple, « cus:company2 »).
 
 Vous pouvez restreindre le choix des éléments de la cible en ajoutant l’élément **`<sysfilter>`** à partir de la définition du lien dans le formulaire de saisie :
 
@@ -318,11 +318,11 @@ Vous pouvez aussi trier la liste avec l&#39;élément **`<orderby>`** :
 ## Propriétés du contrôle {#control-properties}
 
 * **noAutoComplete** : désactive l&#39;auto-complétion (avec la valeur &quot;true&quot;)
-* **createMode** : crée le lien à la volée s&#39;il n&#39;existe pas, les valeurs possibles sont :
+* **createMode** : crée le lien à la volée s&#39;il n&#39;existe pas. Les valeurs possibles sont les suivantes :
 
-   * **none** : désactive la création, un message d&#39;erreur est affiché si le lien n&#39;existe pas
+   * **none** : désactive la création. Un message d’erreur s’affiche si le lien n’existe pas
    * **inline** : crée le lien avec le contenu dans la zone d&#39;édition
-   * **edition** : affiche la forme d&#39;édition sur le lien, la validation de la forme enregistre les données (mode par défaut)
+   * **edition** : affiche la forme d&#39;édition sur le lien. Lorsque le formulaire est validé, les données sont enregistrées (mode par défaut)
 
 * **noZoom** : pas de forme d&#39;édition sur le lien (avec la valeur &quot;true&quot;)
 * **form** : surcharge la forme d&#39;édition de l&#39;élément ciblé
@@ -350,7 +350,7 @@ La liste dans son formulaire de saisie :
 </input>
 ```
 
-Le contrôle liste est defini par l&#39;attribut **type=&quot;linklist&quot;**, le chemin de la liste doit porter sur le lien de collection.
+Le contrôle de liste est défini par l&#39;attribut **type=« linklist »**. Le chemin d’accès à la liste doit faire référence au lien de collection.
 
 Les colonnes sont déclarées via les éléments **`<input>`** fils de la liste. L&#39;attribut **xpath** fait référence au chemin du champ dans le schéma cible.
 
@@ -358,7 +358,7 @@ Une barre d&#39;outils avec un libellé (défini sur le lien dans le schéma) es
 
 La liste peut être filtrée à partir du bouton **[!UICONTROL Filtres]** et configurée pour ajouter et trier les colonnes.
 
-Les boutons **[!UICONTROL Ajouter]** et **[!UICONTROL Supprimer]** permettent l&#39;ajout et la suppression des éléments de collection du lien. L&#39;ajout d&#39;un élément lance par défaut la forme d&#39;édition du schéma cible.
+Les boutons **[!UICONTROL Ajouter]** et **[!UICONTROL Supprimer]** permettent d&#39;ajouter et de supprimer des éléments de collection sur le lien. Par défaut, l’ajout d’un élément lance la forme d’édition du schéma cible.
 
 Le bouton **[!UICONTROL Détail]** est automatiquement ajouté lorsque l&#39;attribut **zoom=&quot;true&quot;** est renseigné sur la balise **`<input>`** de la liste : il permet de lancer la forme d&#39;édition de la ligne sélectionnée.
 
@@ -392,7 +392,7 @@ Exemple de table de relation dans un schéma :
 </srcSchema>
 ```
 
-Pour notre exemple, nous partirons du formulaire de saisie du schéma &quot;cus:recipient&quot;. La liste doit afficher les associations avec les abonnements aux services et permettre d&#39;ajouter un abonnement en sélectionnant un service déjà existant.
+Pour notre exemple, nous partirons du formulaire de saisie du schéma « cus:recipient ». La liste doit afficher les associations avec les abonnements aux services et permettre d’ajouter un abonnement en sélectionnant un service déjà existant.
 
 ![](assets/do-not-localize/form_exemple12.png)
 
@@ -403,7 +403,7 @@ Pour notre exemple, nous partirons du formulaire de saisie du schéma &quot;cus:
 </input>
 ```
 
-L’attribut **xpathChoiceTarget** permet de lancer un formulaire de sélection à partir du lien saisi. La création de l’enregistrement de la table de relation va automatiquement mettre à jour le lien sur le destinataire courant et le service sélectionné.
+L&#39;attribut **xpathChoiceTarget** permet de lancer un formulaire de sélection à partir du lien renseigné. La création de l&#39;enregistrement de la table de relation met automatiquement à jour le lien vers le destinataire actuel et le service sélectionné.
 
 >[!NOTE]
 >
@@ -422,7 +422,7 @@ L’attribut **xpathChoiceTarget** permet de lancer un formulaire de sélection 
 
 ## Ajout de contrôles de liste mémoire {#memory-list-controls}
 
-Les listes mémoire permettent d&#39;éditer les éléments de collection avec le préchargement des données la liste. Cette liste ne peut être ni filtrée, ni configurée.
+Les listes de mémoire permettent de modifier les éléments de collection à l&#39;aide du préchargement des données de liste. Cette liste ne peut pas être filtrée ni configurée.
 
 Ces listes sont utilisées sur les éléments de collections mappés en XML ou sur les liens à faible volume.
 
@@ -458,7 +458,7 @@ L&#39;attribut **toolbarCaption** force l&#39;alignement horizontal de la barre 
 
 ### Activation du zoom dans une liste {#zoom-in-a-list}
 
-L&#39;insertion et l&#39;édition des données d&#39;une liste peut être renseigné dans une forme d&#39;édition séparée.
+L’insertion et l’édition des données d’une liste peuvent être renseignées dans un formulaire de modification séparé.
 
 ```
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true" zoomOnAdd="true">
@@ -518,7 +518,7 @@ Exemple sur le champ &quot;Genre&quot; :
 
 ## Ajout d&#39;une case à cocher {#checkbox}
 
-Une case à cocher permet de refléter un état booléen (qu’elle soit cochée ou non). Par défaut, ce contrôle est utilisé par les champs de type « booléen » (true/false). On peut associer à ce bouton une variable qui prendra par défaut la valeur 0 ou 1. Cette valeur peut être surchargée à partir de l’attribut **checkValue**.
+Une case à cocher reflète un état booléen (sélectionné ou non). Par défaut, ce contrôle est utilisé par les champs de type « booléen » (true/false). Une variable prenant une valeur par défaut de 0 ou 1 peut être associée à ce bouton. Cette valeur peut être surchargée à partir de l’attribut **checkValue**.
 
 ```
 <input xpath="@boolean1"/>
@@ -613,7 +613,7 @@ La balise **`<check expr="<condition>" />`** combinée avec la balise **`<error>
 </leave>
 ```
 
-## Assistant  {#wizards}
+## Assistant {#wizards}
 
 Un assistant vous guide à travers un ensemble d&#39;étapes de saisie de données, présentées sous forme de pages. Les données saisies sont enregistrées lorsque vous validez le formulaire.
 
@@ -653,7 +653,7 @@ Le nom du service et son schéma d&#39;implémentation sont renseignés à parti
 
 Les paramètres en entrée sont décrits sur les éléments **`<param>`** sous la balise **`<soapcall>`**.
 
-Le type du paramètre doit être spécifié à partir de l&#39;attribut **type**. Les différents types possibles sont les suivants :
+Le type du paramètre doit être spécifié à partir de l&#39;attribut **type**. Les types possibles sont les suivants :
 
 * **string** : chaîne de caractères
 * **boolean** : booléen

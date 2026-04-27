@@ -7,12 +7,12 @@ level: Intermediate, Experienced
 exl-id: e4dcb228-0683-437a-88cd-bd7ed33da921
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '275'
 ht-degree: 100%
 
 ---
 
-# Extension d&#39;un schéma{#extend-schemas}
+# Extension dʼun schéma{#extend-schemas}
 
 En tant qu&#39;utilisateur technique, vous pouvez personnaliser le modèle de données Campaign pour répondre aux besoins de votre implémentation. Vous pouvez notamment ajouter des éléments à un schéma existant, modifier un élément dans un schéma ou supprimer des éléments.
 
@@ -23,7 +23,7 @@ Les étapes clés de personnalisation du modèle de données Campaign sont les s
 1. Adaptation du formulaire de saisie
 
 >[!CAUTION]
->Le schéma prédéfini ne doit pas être modifié directement. Si vous devez adapter un schéma prédéfini, vous devez l&#39;étendre.
+>Le schéma natif ne doit pas être modifié directement. Si vous devez adapter un schéma natif, vous devez l’étendre.
 
 Pour une meilleure compréhension des tables intégrées de Campaign et de leurs interactions, consultez [cette page](datamodel.md). Reportez-vous également aux recommandations lors de la création d&#39;un nouveau schéma dans [cette page](create-schema.md).
 
@@ -34,11 +34,11 @@ Pour étendre un schéma, procédez comme suit :
 
    ![](assets/extend-schema-option.png)
 
-1. Identifiez le schéma prédéfini à étendre et sélectionnez-le.
+1. Identifiez le schéma natif à étendre et sélectionnez-le.
 
    ![](assets/extend-schema-select.png)
 
-   Par convention, nommez le schéma d&#39;extension de la même manière que le schéma prédéfini et utilisez un espace de noms personnalisé.  Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces)
+   Par convention, nommez le schéma d’extension de la même manière que le schéma natif et utilisez un espace de noms personnalisé.  Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces)
 
    ![](assets/extend-schema-validate.png)
 
@@ -46,7 +46,7 @@ Pour étendre un schéma, procédez comme suit :
 
    ![](assets/extend-schema-edit.png)
 
-   Dans l&#39;exemple ci-dessous, nous ajoutons l&#39;attribut **MembershipYear**, fixons une limite de longueur pour le nom (cette limite remplacera la valeur par défaut) et supprimons la date de naissance du schéma prédéfini.
+   Dans l’exemple ci-dessous, nous ajoutons l’attribut **MembershipYear**, fixons une limite de longueur pour le nom (cette limite remplacera la valeur par défaut) et supprimons la date de naissance du schéma prédéfini.
 
    ![](assets/extend-schema-sample.png)
 

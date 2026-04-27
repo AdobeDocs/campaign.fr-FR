@@ -5,7 +5,7 @@ feature: Release Notes
 exl-id: 6a0a9486-19a9-4ec3-9030-48dbf419f45f
 source-git-commit: b52308bcbe68a7c382918fe28f8166e3bfcb6cde
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1679'
 ht-degree: 97%
 
 ---
@@ -43,7 +43,7 @@ _3 septembre 2024_
 
 * **Modèles de notification push enrichis (disponibilité générale)** : vous pouvez désormais envoyer des notifications push enrichies via Android. La notification push enrichie est une forme améliorée de notification mobile qui va au-delà des messages texte simples en incorporant des éléments multimédias tels que des images, des boutons interactifs ou d’autres contenus multimédias enrichis. Avec cette version, un ensemble de modèles pour les notifications push enrichies est désormais disponible pour vos applications iOS et Android. [En savoir plus](../send/rich-push-android.md).
 
-* **Branding** : les options de branding sont désormais disponibles pour tous les canaux, y compris les SMS et les courriers. [En savoir plus](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=fr){target="_blank"}
+* **Branding** : les options de branding sont désormais disponibles pour tous les canaux, y compris les SMS et les courriers. [En savoir plus](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=fr){target="_blank"}
 
 ### Correctifs {#fixes-8-7-2}
 
@@ -53,7 +53,7 @@ NEO-48232, NEO-56832, NEO-72504, NEO-74855, NEO-75898, NEO-76097, NEO-76958, NEO
 
 ## Version 8.7.1 {#release-8-7-1}
 
-_2 mai 2024_
+_vendredi 2 mai 2024_
 
 >[!AVAILABILITY]
 >
@@ -65,15 +65,15 @@ _2 mai 2024_
 
 * **Modèles de notification push enrichis** : vous pouvez désormais envoyer des notifications push enrichies via Android. La notification push enrichie est une forme améliorée de notification mobile qui va au-delà des messages texte simples en incorporant des éléments multimédias tels que des images, des boutons interactifs ou d’autres contenus multimédias enrichis. [En savoir plus](../send/rich-push-ios.md).
 
-* **Branding** : en tant qu’utilisateur ou utilisatrice ayant effectué la migration depuis Campaign Standard, votre administration technique peut désormais définir une ou plusieurs marques afin de centraliser les paramètres qui affectent leur identité. Par exemple : le logo de la marque, le domaine d’URL d’accès aux pages de destination ainsi que les paramètres du tracking des messages. Vous pouvez créer ces marques et les associer à des messages ou à des pages de destination. Cette configuration est gérée dans des modèles. [En savoir plus](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=fr){target="_blank"}
+* **Branding** : en tant qu’utilisateur ou utilisatrice ayant effectué la migration depuis Campaign Standard, votre administration technique peut désormais définir une ou plusieurs marques afin de centraliser les paramètres qui affectent leur identité. Par exemple : le logo de la marque, le domaine d’URL d’accès aux landing pages ainsi que les paramètres de suivi des messages. Vous pouvez créer ces marques et les associer à des messages ou à des landing pages. Cette configuration est gérée dans des modèles. [En savoir plus](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=fr){target="_blank"}
 
 * **API REST** : en tant qu’utilisateur ou utilisatrice ayant effectué la migration depuis Campaign Standard, vous pouvez utiliser les API REST pour créer des intégrations pour Adobe Campaign et créer votre propre réseau en interfaçant Adobe Campaign avec le panneau de technologies que vous utilisez. [En savoir plus](../dev/api/get-started-apis.md)
 
-* **Rapports dynamiques** : en tant qu’utilisateur ou utilisatrice ayant effectué la migration depuis Campaign Standard, vous pouvez accéder aux rapports dynamiques qui fournissent des rapports entièrement personnalisables en temps réel pour mesurer l’impact de vos activités marketing. Ils offrent la possibilité d’accéder aux données de profil, ce qui permet l’analyse démographique par dimensions de profil, telles que le genre, la ville et l’âge, en plus des données de campagne par e-mail fonctionnelles comme les ouvertures et les clics. [En savoir plus](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=fr){target="_blank"}
+* **Rapports dynamiques** : en tant qu’utilisateur ou utilisatrice ayant effectué la migration depuis Campaign Standard, vous pouvez accéder aux rapports dynamiques qui fournissent des rapports entièrement personnalisables en temps réel pour mesurer l’impact de vos activités marketing. Ils offrent la possibilité d’accéder aux données de profil, ce qui permet l’analyse démographique par dimensions de profil, comme le genre, la ville et l’âge, en plus des données de campagne par e-mail fonctionnelles comme les ouvertures et les clics. [En savoir plus](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html){target="_blank"}
 
 ### Mises à jour de compatibilité {#comp-8-7-1}
 
-Les connecteurs FDA suivants ont été ajoutés. Consultez cette [page](compatibility-matrix.md#FederatedDataAccessFDA).
+Les connecteurs FDA suivants ont été ajoutés. Voir cette [page](compatibility-matrix.md#FederatedDataAccessFDA).
 
 * Databricks est désormais pris en charge en tant que base de données externe avec Adobe Campaign Federated Data Access (FDA).
 
@@ -108,7 +108,7 @@ NEO-72648, NEO-71534, NEO-71473, NEO-70263, NEO-70195, NEO-69651, NEO-68704, NEO
 
 ## Version 8.6.3 {#release-8-6-3}
 
-_30 juillet 2024_
+_mercredi 30 juillet 2024_
 
 ### Nouvelles fonctionnalités {#new-8-6-3}
 
@@ -186,7 +186,7 @@ NEO-67892, NEO-67235, NEO-66797, NEO-66462, NEO-65091, NEO-65036, NEO-64984, NEO
 
 ## Version 8.5.3 {#release-8-5-3}
 
-_28 mai 2024_
+_mercredi 28 mai 2024_
 
 ### Migration vers les informations d’identification OAuth serveur à serveur {#change-8-5-3}
 

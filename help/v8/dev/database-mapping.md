@@ -7,8 +7,8 @@ level: Intermediate, Experienced
 exl-id: a804d164-58bf-4b15-a48e-8cf75d793668
 source-git-commit: 673298a60927902bba71fd9167c5408e538f4929
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 100%
+source-wordcount: '372'
+ht-degree: 80%
 
 ---
 
@@ -39,7 +39,7 @@ Le mapping SQL de notre schéma d&#39;exemple donne le document XML suivant :
 
 L&#39;élément racine du schéma n&#39;est plus **`<srcschema>`**, mais **`<schema>`**.
 
-Nous sommes sur un autre type de document qui est généré automatiquement à partir du schéma source, on parle alors simplement de schéma. C&#39;est ce schéma qui sera utilisé par l&#39;application Adobe Campaign.
+Nous sommes sur un autre type de document qui est généré automatiquement à partir du schéma source, on parle alors simplement de schéma. Ce schéma sera utilisé par l’application Adobe Campaign.
 
 Les noms SQL sont déduits automatiquement en fonction du nom et du type de l&#39;élément.
 
@@ -63,7 +63,7 @@ Les règles de nommage des noms SQL sont les suivantes :
 
 >[!NOTE]
 >
->Les noms SQL peuvent être surchargés à partir du schéma source, il faut renseigner les attributs &quot;sqltable&quot; ou &quot;sqlname&quot; sur l&#39;élément concerné.
+>Les noms SQL peuvent être surchargés à partir du schéma source. Pour cela, renseignez les attributs « sqltable » ou « sqlname » sur l&#39;élément concerné.
 
 Le script SQL de création de la table généré à partir du schéma étendu est le suivant :
 
@@ -102,4 +102,4 @@ Pour renseigner un champ en XML, il faut ajouter l&#39;attribut **xml** avec la 
 
   Le type &quot;html&quot; permet de stocker le contenu HTML dans une balise CDATA et d&#39;afficher un contrôle spécifique d&#39;édition HTML dans l&#39;interface cliente Adobe Campaign.
 
-L&#39;utilisation de champs XML permet d&#39;ajouter des champs sans avoir à modifier la structure physique de la base. Un autre avantage est d&#39;utiliser moins de ressources (taille alouée des champs SQL, limite sur le nombre de champs par table, etc.).
+L&#39;utilisation de champs XML permet d&#39;ajouter des champs sans avoir à modifier la structure physique de la base de données. Un autre avantage est d&#39;utiliser moins de ressources (taille allouée des champs SQL, limite du nombre de champs par table, etc.).

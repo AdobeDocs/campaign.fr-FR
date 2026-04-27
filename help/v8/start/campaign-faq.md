@@ -8,7 +8,7 @@ exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
 hide: true
 source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '785'
 ht-degree: 96%
 
 ---
@@ -85,19 +85,19 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
    Vous pouvez obtenir le programme d&#39;installation et la console cliente à partir du Centre de téléchargement d&#39;Adobe.
 
-   En tant qu’utilisateur administrateur ou utilisatrice administratrice, accédez à la [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/fr/campaign.html){target="_blank"} d’Adobe  pour télécharger Adobe Campaign.
+   En tant qu’utilisateur administrateur ou utilisatrice administratrice, accédez à la [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/fr/campaign.html) d’Adobe {target="_blank"} pour télécharger Adobe Campaign.
 
    En savoir plus sur le Centre de distribution [sur cette page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr){target="_blank"}.
 
 1. **Puis-je contacter des experts Campaign ?**
 
-   Rejoignez la communauté Campaign et recherchez des réponses parmi les questions existantes ou consultez les expertes et experts. [Prenez part à la conversation](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=fr){target="_blank"}
+   Rejoignez la communauté Campaign et recherchez des réponses parmi les questions existantes ou consultez les expertes et experts. [Prenez part à la conversation](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 
 
 1. **Comment signaler un problème ?**
 
    La création d’un ticket vous permet de contacter l’équipe du Service clientèle d’Adobe pour tout problème lié à vos produits Adobe. La console Adobe Admin Console vous permettra de discuter avec le Service clientèle d&#39;Adobe pour résoudre vos problèmes.
 
-   Pour enregistrer un problème ou démarrer une session de conversation dans ce nouveau système, connectez-vous à la console [Adobe Admin Console](https://adminconsole.adobe.com/overview){target="_blank"}.
+   Pour signaler un problème ou démarrer une session de conversation dans ce nouveau système, connectez-vous à la console [Adobe Admin Console](https://adminconsole.adobe.com/overview){target="_blank"}.
 
    Ce système nécessite des comptes individuels pour chaque utilisateur, avec les autorisations adéquates. Si vous constatez que vous ne pouvez pas vous connecter à l’aide de votre Adobe ID, demandez l’accès par le biais d’Experience League. L’équipe d’assistance clientèle vous assistera dès que possible. [En savoir plus](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}

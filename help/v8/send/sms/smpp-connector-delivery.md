@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: 704e151a-b863-46d0-b8a1-fca86abd88b9
 source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 86%
+source-wordcount: '1291'
+ht-degree: 83%
 
 ---
 
@@ -108,7 +108,7 @@ Ce tableau résume tous les paramètres. Les valeurs raisonnables min./max. donn
 | batchUpdateSize | Taille des microlots de mise à jour | 5000 | 100 : latence très faible | maxWaitingMessages/updateThreads : des valeurs au-dessus de celle-ci est inutile, car maxWaitingMessages limitera quand même la mise en mémoire tampon. | 1 : Désactiver le traitement des microlots, mettre à jour les messages un par un |
 | configRefreshMillis | Période de rechargement de la configuration, en millisecondes | 10000 | pollPeriodMillis : faible latence | 600000 : ne rechargez pas trop vite pour économiser des ressources | 500 : une faible latence permet d’essayer de nouveaux paramètres plus rapidement. |
 | deliveryPartRetryCount | Nombre maximal de fois où une deliveryPart est reprise ou reportée. Attention : le redémarrage du processus d’envoi compte comme une reprise. Les blocages peuvent aussi être considérés comme une reprise. | 20 | 1 : désactivez les reprises. | 50 : rendez les messages plus persistants pour contourner les fournisseurs instables. | 1 : désactivez les reprises. 1000 : évitez de vider les messages en échec. |
-| deliveryPartRetryDelaySeconds | Délai minimum avant de reprendre une deliveryPart. Il s’agit d’un processus et d’un conteneur croisés. Le délai est exprimé en secondes. | 60 | 0 : reprises immédiates | 3600 : reprises très lentes (1 heure entre chaque reprise) | 1 : facilite le suivi des reprises dans les logs occupés. |
+| deliveryPartRetryDelaySeconds | Délai minimum avant de retenter un deliveryPart. Il s’agit d’un processus et d’un conteneur croisés. Le délai est en secondes. | 60 | 0 : reprises immédiates | 3600 : reprises très lentes (1 heure entre chaque reprise) | 1 : facilite le suivi des reprises dans les logs occupés. |
 | logOutput | Envoyez des données de surveillance et de profilage sur la sortie du log principal. | true | false : peut augmenter légèrement le débit. Déconseillé. | true : activez la journalisation. | true |
 | maxWaitingMessages | Nombre maximum de messages traités à tout moment | 50000 | 256 : suffisant pour une seule deliveryPart | 200000 : limité par la longueur de requête SQL (64 k) | 1 : traitez les messages un par un. |
 | pollPeriodMillis | Fréquence d’interrogation de la base de données (en millisecondes) afin de rechercher les nouveaux messages | 2000 | 500 : latence très faible | 10000 : lots plus volumineux | 500 : une faible latence facilite le débogage. |
@@ -116,7 +116,7 @@ Ce tableau résume tous les paramètres. Les valeurs raisonnables min./max. donn
 | profDeliveryStat | Enregistrer diverses statistiques agrégées sur les internes du processus SMS | true | false : peut augmenter légèrement le débit. Déconseillé. | true : log de faible verbosité | true |
 | profLogPerMessage | Enregistrer chaque étape de traitement pour chaque message | False | false : réduisez la verbosité du log. | true : log de très haute verbosité. **À n’utiliser que lorsque cela est absolument nécessaire**. Impact important sur les performances. **Veuillez désactiver ce paramètre dès que suffisamment de données ont été collectées**. | true |
 | providerIdScanPeriod | Période, en secondes, entre les analyses pour les nouveaux identifiants de fournisseurs à réconcilier | 10 | 1 : faible latence | 60 : lots plus volumineux pour plus de débit | 1 : une faible latence permet de déboguer le traitement des messages. |
-| providerIdThreads | Nombre de threads pour la réconciliation des ID de fournisseur. 1 thread par instance est suffisant. Définissez sur 0 pour désactiver sur ce conteneur. | 1 | 0 : désactiver sur ce conteneur | 1 | 1 |
+| providerIdThreads | Nombre de threads pour la réconciliation de l&#39;identifiant du fournisseur. 1 thread par instance suffit. Définissez sur 0 pour désactiver sur ce conteneur. | 1 | 0 : désactiver sur ce conteneur | 1 | 1 |
 | sendingThreads | Nombre de threads d’envoi | 1 | 1 : un seul thread | Nombre de processeurs. Trop de threads nuisent généralement aux performances. | 1 : un thread unique génère des logs plus propres. |
 | updateThreads | Nombre de threads pour la mise à jour des bases de données | 1 | 1 : un seul thread | Nombre de processeurs. Chaque thread crée sa propre connexion DB. | 1 : un thread unique génère des logs plus propres. |
 | verifyMode | Simulez l’envoi de messages. Les messages ne sont pas réellement envoyés. Utile au débogage | False | False | true | false : exécutez le système normalement. true : testez uniquement l’accès à la base de données et la préparation des messages. |

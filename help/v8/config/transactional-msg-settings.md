@@ -7,8 +7,8 @@ level: Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 100%
+source-wordcount: '637'
+ht-degree: 89%
 
 ---
 
@@ -37,7 +37,7 @@ Couplés au module [Canal des applications mobiles](../send/push.md), les messag
 
 Pour envoyer des notifications push transactionnelles, vous devez exécuter les configurations suivantes :
 
-1. Installez le package **Canal des applications mobiles** sur les instances de pilotage et d’exécution.
+1. Installez le package **Canal des applications mobiles** sur les instances de pilotage et d&#39;exécution.
 
    >[!CAUTION]
    >
@@ -75,7 +75,7 @@ Vous trouverez ci-dessous un exemple de configuration d’événement permettant
 </SOAP-ENV:Envelope>
 ```
 
-## Purger des événements {#purge-events}
+## Purge des événements {#purge-events}
 
 Vous pouvez adapter les paramètres de l’assistant de déploiement pour configurer la durée pendant laquelle vous souhaitez conserver les événements dans la base de données.
 
@@ -90,23 +90,23 @@ Vous devez vous assurer que les workflows techniques de vos instances d’exécu
 
 Ces workflows sont ensuite accessibles à partir du dossier **Administration > Production > Message Center.**
 
-### Workflows de l’instance de pilotage {#control-instance-workflows}
+### Workflows de l&#39;instance de pilotage {#control-instance-workflows}
 
-Sur l’instance de pilotage, vous devez créer un workflow d’archivage pour chaque compte externe **[!UICONTROL Instance d’exécution de Message Center]**. Cliquez sur le bouton **[!UICONTROL Créer le workflow d’archivage]** pour créer et démarrer le processus.
+Sur l’instance de pilotage, vous devez créer un workflow d’archivage pour chaque compte externe **[!UICONTROL Instance d’exécution de Message Center]**. Cliquez sur le bouton **[!UICONTROL Créer le workflow d&#39;archivage]** pour créer et démarrer le processus.
 
-### Workflows de l’instance d’exécution {#execution-instance-workflows}
+### Workflows de l&#39;instance d&#39;exécution {#execution-instance-workflows}
 
 Sur la ou les instances d’exécution, vous devez démarrer les workflows techniques suivants :
 
 * **[!UICONTROL Traitement des événements batch]** (nom interne : **[!UICONTROL batchEventsProcessing]**) : ce workflow permet de répartir les événements batch dans une file d&#39;attente avant qu&#39;ils ne soient associés à un modèle de message.
 * **[!UICONTROL Traitement des événements temps réel]** (nom interne : **[!UICONTROL rtEventsProcessing]**) : ce workflow permet de répartir les événements temps réel dans une file d&#39;attente avant qu&#39;ils ne soient associés à un modèle de message.
-* **[!UICONTROL Mise à jour du statut des événements]** (nom interne : **[!UICONTROL updateEventStatus]**) : ce workflow permet d&#39;attribuer un statut à l&#39;événement.
+* **[!UICONTROL Mise à jour du statut des événements]** (nom interne : **[!UICONTROL updateEventsStatus]**) : ce workflow permet d&#39;attribuer un statut à l&#39;événement.
 
   Les statuts possibles des événements sont les suivants :
 
-   * **[!UICONTROL En attente]** : l’événement se trouve dans la file d’attente. Aucun modèle de message ne lui a encore été affecté.
+   * **[!UICONTROL En attente]** : l’événement est dans la file d’attente. Aucun modèle de message ne lui a encore été associé.
    * **[!UICONTROL En attente de diffusion]** : l’événement est dans la file d’attente, un modèle de message lui a été associé et il est en cours de traitement par la diffusion.
-   * **[!UICONTROL Envoyé]** : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a été envoyée.
-   * **[!UICONTROL Ignoré par la diffusion]** : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a été ignorée.
-   * **[!UICONTROL Erreur de diffusion]** : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a échoué.
-   * **[!UICONTROL Evénement non pris en charge]** : l’association de l’événement à un modèle de message a échoué. L’événement ne sera pas retraité.
+   * **[!UICONTROL Envoyé]** : ce statut est copié depuis les logs de diffusion. Cela signifie que la diffusion a été envoyée.
+   * **[!UICONTROL Ignoré par la diffusion]** : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a été ignorée.
+   * **[!UICONTROL La diffusion a échoué]** : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a échoué.
+   * **[!UICONTROL Evénement non pris en charge]** : l&#39;association de l&#39;événement à un modèle de message a échoué. L’événement ne sera pas traité.

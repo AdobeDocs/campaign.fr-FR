@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 172b6827-ddfc-4c6e-87c9-eb49e73ab3ab
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '703'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '705'
+ht-degree: 67%
 
 ---
 
@@ -21,7 +21,7 @@ Intégrée à un workflow de ciblage, l&#39;activité **[!UICONTROL Validation e
 
 >[!CAUTION]
 >
->Pour utiliser cette activité, vous devez acquérir le module Distributed Marketing, qui est une option de Campaign. Vérifiez votre contrat de licence.
+>Pour utiliser cette activité, vous devez avoir acheté le module Marketing distribué , qui est une option de Campaign. Veuillez vérifier votre contrat de licence.
 
 Pour un exemple de l’activité **[!UICONTROL Validation en local]** avec un modèle de distribution, consultez la section [Utiliser l’activité Validation en local](local-approval-activity.md).
 
@@ -31,7 +31,7 @@ Renseignez tout d&#39;abord libellé de l&#39;activité et le champ **[!UICONTRO
 
 * Sélectionnez l&#39;option **[!UICONTROL Notification pour la validation de la cible]** pour envoyer un email de notification aux responsables locaux, avant la diffusion, afin qu&#39;ils valident les destinataires qui leur sont assignés.
 
-* **Requête incrémentale** : vous permet d’effectuer une requête et d’en planifier l’exécution. Pour plus d&#39;informations, consultez la section [Requête incrémentale](incremental-query.md).
+* **Requête incrémentale** : permet d&#39;effectuer une requête et d&#39;en planifier l&#39;exécution. Pour plus d&#39;informations, consultez la section [Requête incrémentale](incremental-query.md).
 
   ![](assets/local_validation_intro_3.png)
 
@@ -45,14 +45,14 @@ Les champs à renseigner dans le cas d&#39;une notification pour la validation d
 
 ![](assets/local_validation_3.png)
 
-* **[!UICONTROL Contexte de distribution]** : sélectionnez l’option **[!UICONTROL Spécifié dans la transition]** si vous utilisez une activité de type **[!UICONTROL Partage]** pour limiter la population ciblée. Dans ce cas, le modèle de répartition est renseigné dans l’activité de partage. Si vous ne limitez pas la population ciblée, sélectionnez ici l’option **[!UICONTROL Explicite]** et renseignez le modèle de répartition dans le champ **[!UICONTROL Répartition des données]**.
+* **[!UICONTROL Contexte de répartition]** : sélectionnez l&#39;option **[!UICONTROL Spécifié par la transition]** si vous utilisez une activité de type **[!UICONTROL Partage]** pour limiter la population ciblée. Dans ce cas, le modèle de répartition est renseigné dans l&#39;activité de partage. Si vous ne limitez pas la population ciblée, sélectionnez ici l’option **[!UICONTROL Explicite]** et renseignez le modèle de répartition dans le champ **[!UICONTROL Répartition des données]**.
 
   Pour plus d’informations sur la création d’un modèle de distribution de données, voir [Limiter le nombre d&#39;enregistrements des sous-ensembles par répartition de données](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 * **[!UICONTROL Gestion de la validation :]**
 
    * Sélectionnez le modèle de diffusion et l’objet qui seront utilisés pour l’e-mail de notification. Un modèle par défaut est disponible : **[!UICONTROL Notification de validation locale]**. Vous pouvez également ajouter une description qui apparaîtra au-dessus des listes de personnes destinataires dans les notifications d’approbation et de commentaires.
-   * Définissez le **[!UICONTROL Type de validation]**, qui correspond à la date limite de validation (date ou délai à partir du début de la validation). A cette date, le workflow reprend et les destinataires qui n&#39;ont pas été validés ne sont pas pris en compte dans le ciblage. Lorsque les notifications sont envoyées, l&#39;activité est mise en attente afin que les responsables locaux puissent valider leurs contacts.
+   * Indiquez le **[!UICONTROL Type de validation]** correspondant à la date limite de validation (date ou date limite à partir du début de la validation). A cette date, le workflow recommence et les destinataires qui n&#39;ont pas été validés ne sont pas pris en compte dans le ciblage. Une fois les notifications envoyées, l&#39;activité est mise en file d&#39;attente afin que les responsables locaux puissent valider leurs contacts.
 
      >[!NOTE]
      >
@@ -87,7 +87,7 @@ Pour valider une diffusion, un opérateur ou une opératrice peut utiliser la pa
 
 * Validation Web
 
-  L&#39;email adressé aux opérateurs du groupe Administrateur permet de valider la cible de l&#39;envoi. Le message reprend le texte défini en remplaçant l&#39;expression JavaScript par la valeur calculée (ici &#39;574&#39;).
+  L&#39;email envoyé aux opérateurs du groupe Administrateur permet de valider la cible de la diffusion. Le message utilise le texte défini et l&#39;expression JavaScript est remplacée par la valeur calculée (dans ce cas, &#39;574&#39;)
 
   Pour valider la diffusion, cliquez sur le lien correspondant et connectez-vous à la console cliente Adobe Campaign.
 
@@ -99,14 +99,14 @@ Pour valider une diffusion, un opérateur ou une opératrice peut utiliser la pa
 
 * Approbation à partir de la console cliente
 
-  Dans l&#39;arborescence, le noeud **[!UICONTROL Administration > Exploitation > Objets créés automatiquement > Validations en attente]** contient la liste des tâches à valider par l&#39;opérateur actuellement connecté. La liste doit afficher une ligne. Double-cliquez sur la ligne pour répondre. La fenêtre suivante s&#39;affiche :
+  Dans l&#39;arborescence, le nœud **[!UICONTROL Administration > Exploitation > Objets créés automatiquement > Validations en attente]** contient la liste des tâches à valider par l&#39;opérateur actuellement connecté. La liste doit afficher une ligne. Double-cliquez sur cette ligne pour répondre. La fenêtre suivante s’affiche :
 
 ![](assets/new-workflow-7.png)
 
-Sélectionnez l&#39;option **Oui**, puis cliquez sur le bouton **[!UICONTROL Valider]**. Un message vous informe que la réponse est enregistrée.
+Sélectionnez **Oui**, puis cliquez sur **[!UICONTROL Approuver]**. Un message vous informera que la réponse a été enregistrée.
 
-Revenez sur l&#39;écran des workflows : au bout de quelques dizaines de secondes, le diagramme se présente comme suit:
+Revenez sur l’écran des workflows : au bout de quelques dizaines de secondes, le diagramme se présente comme suit :
 
 ![](assets/new-workflow-8.png)
 
-Le workflow a exécuté la tâche **[!UICONTROL Agir sur une diffusion]**, qui consiste ici à démarrer la diffusion précédemment créée, puis est arrivé jusqu&#39;à la fin. Le workflow s&#39;est terminé avec succès.
+Le workflow a exécuté la tâche **[!UICONTROL Agir sur une diffusion]**, ce qui revient dans ce cas à lancer la diffusion précédemment créée. Le workflow s’est terminé sans erreur.

@@ -6,8 +6,8 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: ee201cfd-a351-41d8-a5ad-2f2e538dc643
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '590'
+workflow-type: tm+mt
+source-wordcount: '610'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ Ce cas d’utilisation décrit l’utilisation de la fonctionnalité **[!UICONTR
 
 Pour plus d’informations sur cette fonctionnalité, consultez [cette section](deduplication.md#merging-fields-into-single-record).
 
-L&#39;activité **[!UICONTROL Déduplication]** est utilisée pour supprimer des lignes en double d&#39;un jeu de données. Dans ce cas pratique, les données présentées ci-dessous sont dupliquées en fonction du champ Email.
+L’activité **[!UICONTROL Déduplication]** est utilisée pour supprimer des lignes en double d’un jeu de données. Dans ce cas pratique, les données présentées ci-dessous sont dupliquées en fonction du champ E-mail.
 
 | Date de la dernière modification | Prénom | Nom | Email | Téléphone mobile | Phone |
 |-----|------------|-----------|-------|--------------|------|
@@ -30,7 +30,7 @@ L&#39;activité **[!UICONTROL Déduplication]** est utilisée pour supprimer des
 | 7/22/2020 | Bobby | Tisner | bob@mycompany.com | | 777-777-7777 |
 | 10/03/2020 | Bob |  | bob@mycompany.com | | 888-888-8888 |
 
-Avec la fonctionnalité **[!UICONTROL Fusion]** de l&#39;activité Déduplication, vous pouvez configurer un jeu de règles pour que la déduplication définisse un groupe de champs à fusionner dans un seul enregistrement de données obtenu. Par exemple, avec un ensemble d’enregistrements en doublon, vous pouvez choisir de conserver le numéro de téléphone le plus ancien ou le nom le plus récent.
+Avec la fonctionnalité **[!UICONTROL Fusion]** de l&#39;activité Déduplication, vous pouvez configurer un jeu de règles pour que la déduplication définisse un groupe de champs à fusionner dans un seul enregistrement de données obtenu. Par exemple, avec un ensemble d’enregistrements en double, vous pouvez choisir de conserver le numéro de téléphone le plus ancien ou le nom le plus récent.
 
 ## Activation de la fonctionnalité Fusion {#activating-merge}
 
@@ -39,7 +39,7 @@ Pour activer la fonctionnalité de fusion, vous devez d&#39;abord configurer l&#
 
 1. Ouvrez l’activité, puis cliquez sur le lien **[Editer la configuration]**.
 
-1. Sélectionnez le champ de réconciliation à utiliser pour la déduplication, puis cliquez sur **[!UICONTROL Suivant]**. Dans cet exemple, nous voulons dédupliquer en fonction du champ de l&#39;email.
+1. Sélectionnez le champ de réconciliation à utiliser pour la déduplication, puis cliquez sur **[!UICONTROL Suivant]**. Dans cet exemple, nous voulons dédupliquer en fonction du champ de l’e-mail.
 
    ![](assets/uc_merge_edit.png)
 

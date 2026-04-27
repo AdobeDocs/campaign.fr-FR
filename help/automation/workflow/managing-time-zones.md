@@ -7,17 +7,17 @@ role: User, Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: 04b7638d-55dd-4317-b605-5d618ef014ba
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '280'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 59%
 
 ---
 
 # Gérer les fuseaux horaires{#managing-time-zones}
 
-Adobe Campaign permet de gérer les décalages horaires entre plusieurs pays concernés par la même instance. La configuration appliquée est paramétrée lors de la création de l’instance.
+Adobe Campaign permet de gérer les décalages horaires entre plusieurs pays concernés par la même instance. La configuration appliquée est configurée lors de la création de l’instance.
 
-Dans un workflow, vous pouvez adapter les plannings d&#39;exécution des activités, mais aussi associer un fuseau horaire spécifique à une activité ou à tout le workflow. Ce paramétrage peut être utile par exemple lors de l&#39;import de fichier ou dans le cadre de la planification des diffusions.
+Dans un workflow, vous pouvez adapter les plannings d’exécution des activités et associer un fuseau horaire spécifique à une activité ou à l’ensemble du workflow. Cette configuration peut s&#39;avérer utile lors de l&#39;import du fichier ou dans le cadre de la planification des diffusions.
 
 ## Planifier l&#39;exécution {#execution-scheduling}
 
@@ -49,4 +49,4 @@ Si la valeur **[!UICONTROL Par défaut]** est sélectionnée, le fuseau horaire 
 
 ## Associer un fuseau horaire à une activité {#linking-a-time-zone-to-an-activity}
 
-L&#39;onglet **[!UICONTROL Avancé]** des activités de workflow permet de sélectionner le fuseau horaire de l&#39;activité. Si, la plupart du temps, le fuseau horaire du workflow est suffisant, il peut être utile de le surcharger ponctuellement pour telle ou telle activité, par exemple dans le cadre d&#39;un import de données, afin d&#39;associer aux dates le bon fuseau horaire.
+L&#39;onglet **[!UICONTROL Avancé]** des activités de workflow permet de sélectionner le fuseau horaire de l&#39;activité. Bien que la plupart du temps, le fuseau horaire du workflow soit suffisant, il peut être nécessaire de le surcharger de temps en temps pour une activité spécifique, telle que l’importation de données, afin de lier les dates au fuseau horaire approprié.

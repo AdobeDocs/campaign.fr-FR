@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: c1deb0a1-aeba-4813-b674-a6a164b98b02
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 100%
+source-wordcount: '697'
+ht-degree: 84%
 
 ---
 
@@ -22,7 +22,7 @@ Cet événement contient des données liées à l’événement, telles que :
 * l’adresse e-mail ou le numéro de téléphone ;
 * toute autre information visant à enrichir et personnaliser le message transactionnel avant sa diffusion : coordonnées du client ou de la cliente, langue du message, format de l’e-mail, etc.
 
-Exemple de données d’événement :
+Exemple de données d&#39;un événement :
 
 ![](assets/mc-event-request.png)
 
@@ -84,16 +84,17 @@ Les statuts possibles sont les suivants :
    * Un événement en attente peut également être un événement traité, mais dont la confirmation est erronée. La colonne **[!UICONTROL Nombre d’erreurs]** affiche une valeur différente de 0. Pour savoir quand cet événement sera traité à nouveau, consultez la colonne **[!UICONTROL Traitement demandé le]**.
 
 * **En attente de diffusion**
-L’événement a été traité et le modèle de diffusion est associé. L’e-mail est en attente de diffusion et le processus de diffusion classique est appliqué. Pour plus d’informations, vous pouvez ouvrir la diffusion.
-* **Envoyé**, **Ignoré** et **Erreur de diffusion** : ces statuts de diffusion sont récupérés par le workflow **updateEventsStatus**. Pour plus d’informations, vous pouvez ouvrir la diffusion correspondante.
-* **Événement non pris en charge**
-La phase de routage des messages transactionnels a échoué. Par exemple, Adobe Campaign n’a pas trouvé l’e-mail qui sert de modèle pour l’événement.
-* **Evénement ayant expiré**
-Le nombre maximum de tentatives d’envoi a été atteint. L’événement est considéré comme nul.
+L’événement a été traité et le modèle de diffusion est lié. L’e-mail est en attente de diffusion et le processus de diffusion classique est appliqué. Pour plus d’informations, vous pouvez ouvrir la diffusion.
+* **Envoyé**, **Ignoré** et **Erreur de diffusion**
+Ces statuts de diffusion sont récupérés par le workflow **updateEventsStatus**. Pour plus d’informations, vous pouvez ouvrir la diffusion correspondante.
+* **Evénement non pris en charge**
+Échec de la phase de routage des messages transactionnels. Par exemple, Adobe Campaign n&#39;a pas trouvé l&#39;e-mail qui sert de modèle pour l&#39;événement.
+* **Evénement expiré**
+Le nombre maximum de tentatives d&#39;envoi a été atteint. L’événement est considéré comme nul.
 
 ## Recycler les événements {#event-recycling}
 
-Si l&#39;envoi d&#39;un message sur un canal spécifique échoue, Adobe Campaign peut renvoyer le message en utilisant un autre canal. Par exemple, si l&#39;envoi d&#39;un message sur le canal SMS échoue, le message est renvoyé en utilisant le canal email.
+Si l’envoi d’un message sur un canal spécifique échoue, Adobe Campaign peut renvoyer le message à l’aide d’un autre canal. Par exemple, si une diffusion sur le canal SMS échoue, le message est renvoyé à l’aide du canal e-mail.
 
 Pour cela, vous devez paramétrer un workflow qui recrée tous les événements dont le statut est **Erreur de diffusion**, et leur assigner un canal différent de celui utilisé précédemment.
 

@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: 891a9a87-f3a4-405a-87ed-a7703be90a67
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 98%
+source-wordcount: '1049'
+ht-degree: 93%
 
 ---
 
@@ -57,7 +57,7 @@ Dans Adobe Campaign, définissez la cible et le contenu de votre e-mail. Vous p
 
 Pour ce faire, spécifiez l’URL de l’image par défaut, le nom de l’emplacement et les champs que vous souhaitez transférer à Adobe Target.
 
-Dans Adobe Campaign, vous pouvez insérer une image dynamique de Target dans un e-mail de deux manières différentes :
+Dans Adobe Campaign, vous pouvez insérer une image dynamique de Target dans un email de deux manières différentes :
 
 * Si vous utilisez l&#39;éditeur Digital Content Editor, choisissez une image existante, puis sélectionnez **[!UICONTROL Insérer]** > **[!UICONTROL Image dynamique servie par Adobe Target]** depuis la barre d&#39;outils.
 
@@ -69,22 +69,22 @@ Dans Adobe Campaign, vous pouvez insérer une image dynamique de Target dans un
 
 Vous pouvez ensuite définir les paramètres de l&#39;image :
 
-* L&#39;URL de l&#39;**[!UICONTROL image par défaut]** correspond à l&#39;image affichée lorsqu&#39;aucune des conditions n&#39;est remplie. Vous pouvez également sélectionner une image dans votre bibliothèque de ressources.
+* L&#39;URL de l&#39;**[!UICONTROL image par défaut]** correspond à l&#39;image affichée lorsqu&#39;aucune des conditions n&#39;est remplie. Vous pouvez également sélectionner une image dans votre bibliothèque Assets.
 * L&#39;**[!UICONTROL emplacement de la cible]** correspond au nom de l&#39;emplacement de votre offre dynamique. Vous devrez sélectionner cet emplacement dans votre activité Adobe Target.
 * La **[!UICONTROL landing page]** vous permet de rediriger l&#39;image par défaut vers une landing page par défaut. Cette URL s&#39;applique uniquement lorsque l&#39;image par défaut est affichée dans l&#39;e-mail final. Elle est facultative.
-* Les **[!UICONTROL Paramètres de décision additionnels]** définissent le mappage entre les champs définis dans les segments d&#39;Adobe Target et les champs d&#39;Adobe Campaign. Les champs d&#39;Adobe Campaign utilisés doivent avoir été spécifiés au niveau du &quot;rawbox&quot;. Dans notre exemple, nous avons ajouté le champ Pays.
+* Les **[!UICONTROL Paramètres de décision additionnels]** définissent le mapping entre les champs définis dans les segments d’Adobe Target et les champs d’Adobe Campaign. Les champs d’Adobe Campaign utilisés doivent avoir été spécifiés au niveau du « rawbox ». Dans notre exemple, nous avons ajouté le champ Pays.
 
 Dans Adobe Target, si vous utilisez les autorisations Enterprise, ajoutez la propriété correspondante dans ce champ. En savoir plus sur les autorisations de Target Enterprise dans la documentation d’[Adobe Target](https://experienceleague.adobe.com/fr/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
 
 ![](assets/target_13.png)
 
-### Création d&#39;offres de redirection {#create-redirect-offers}
+### Créer des offres de redirection {#create-redirect-offers}
 
 Dans Adobe Target, vous pouvez créer différentes versions de votre offre. Selon chaque expérience utilisateur, vous pouvez créer une offre de redirection et spécifier l&#39;image qui sera affichée.
 
 Dans notre cas, nous avons besoin de deux offres de redirection, la troisième (celle par défaut) étant définie dans Adobe Campaign.
 
-1. Pour créer une offre de redirection dans Target Standard, cliquez sur **[!UICONTROL Offres (code)]** dans l&#39;onglet **[!UICONTROL Contenu]**.
+1. Pour créer une offre de redirection dans Target Standard, cliquez sur **[!UICONTROL Offres (code)]** dans l’onglet **[!UICONTROL Contenu]**.
 
 1. Cliquez sur **[!UICONTROL Créer]**, puis sur **[!UICONTROL Offre de redirection]**.
 
@@ -98,9 +98,9 @@ Dans notre cas, nous avons besoin de deux offres de redirection, la troisième (
 
 ### Création d’audiences {#audiences-target}
 
-Dans Adobe Target, vous devez créer les deux audiences dans lesquelles les visiteurs de votre offre seront classés selon les différents contenus à diffuser. Pour chaque audience, ajoutez une règle pour définir qui pourra visualiser l&#39;offre.
+Dans Adobe Target, vous devez créer les deux audiences dans lesquelles les visiteurs de votre offre seront classés selon les différents contenus à diffuser. Pour chaque audience, ajoutez une règle pour définir qui pourra visualiser l’offre.
 
-1. Pour créer une audience avec Target, dans l&#39;onglet **[!UICONTROL Audiences]**, cliquez sur **[!UICONTROL Créer une audience]**.
+1. Pour créer une audience avec Target, dans l’onglet **[!UICONTROL Audiences]**, cliquez sur **[!UICONTROL Créer une audience]**.
 
    ![](assets/audiences_1.png)
 
@@ -108,7 +108,7 @@ Dans Adobe Target, vous devez créer les deux audiences dans lesquelles les vis
 
    ![](assets/audiences_2.png)
 
-1. Cliquez sur **[!UICONTROL Ajouter une règle]** et sélectionnez une catégorie. La règle utilise des critères spécifiques pour cibler les visiteurs. Vous pouvez affiner les règles en ajoutant des conditions ou en créant des règles dans d&#39;autres catégories.
+1. Cliquez sur **[!UICONTROL Ajouter une règle]** et sélectionnez une catégorie. La règle utilise des critères spécifiques pour cibler les visiteurs. Vous pouvez affiner les règles en ajoutant des conditions ou en créant des règles dans d’autres catégories.
 
 1. Suivez la même procédure pour les audiences restantes.
 
@@ -136,7 +136,7 @@ Vous devez d&#39;abord définir l&#39;audience :
 
 Ensuite, ajoutez un contenu pour chaque audience :
 
-1. Sélectionnez le nom de l&#39;emplacement choisi lors de l&#39;insertion de l&#39;offre dynamique dans Adobe Campaign.
+1. Sélectionnez le nom de l’emplacement choisi lors de l’insertion de l’offre dynamique dans Adobe Campaign.
 
    ![](assets/target_15.png)
 
@@ -150,7 +150,7 @@ Ensuite, ajoutez un contenu pour chaque audience :
 
 1. Suivez la même procédure pour la deuxième expérience.
 
-La fenêtre **[!UICONTROL Target]** résume votre activité. Au besoin, vous pouvez ajouter d&#39;autres expériences.
+La fenêtre **[!UICONTROL Target]** résume votre activité. Si nécessaire, vous pouvez ajouter d’autres expériences.
 
 ![](assets/target_experience.png)
 

@@ -7,8 +7,8 @@ level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
 source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 77%
+source-wordcount: '496'
+ht-degree: 96%
 
 ---
 
@@ -24,17 +24,17 @@ Principaux avantages :
 
 Vous pouvez également utiliser le Panneau de contrôle Campaign pour configurer les paramètres de votre instance, tels que les listes autorisées d’adresses IP, les autorisations d’URL et récupérer des informations sur votre instance.
 
-En savoir plus dans la [documentation du Panneau de Contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"}.
+En savoir plus dans la [documentation du Panneau de Contrôle Campaign](https://experienceleague.adobe.com/fr/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"}.
 
 ## Comment accéder au Panneau de contrôle ? {#ac-control-panel-access}
 
-Le Panneau de contrôle est directement accessible à partir d&#39;Adobe Experience Cloud. Il est accessible uniquement aux utilisateurs administrateurs.
+Le Panneau de contrôle est directement accessible à partir d&#39;Adobe Experience Cloud. Il est accessible uniquement aux utilisateurs Admin.
 
 >[!IMPORTANT]
 >
->Par défaut, le Panneau de Contrôle est accessible aux utilisateurs administrateurs appartenant au profil de produit « Administrateurs ». Selon la configuration de votre organisation, le profil de produit peut être nommé différemment (« admin », « admins », « administrateur d’approbation », etc.). **Tout profil de produit contenant le mot « admin » dans son nom accordera automatiquement l’accès à Panneau de Contrôle.**
+>Par défaut, le panneau de contrôle est accessible aux administrateurs et administratrices appartenant au profil de produit « Administration ». Selon la configuration de votre organisation, le profil de produit peut être appelé différemment (« admin », « admins », « admin d’approbation », etc.). **Tout profil de produit contenant le mot « admin » dans son nom donne automatiquement accès au panneau de contrôle.**
 >
->Examinez attentivement la dénomination de votre profil de produit pour vous assurer que seuls les utilisateurs autorisés ont accès au Panneau de Contrôle.
+>Examinez attentivement la dénomination de votre profil de produit pour vous assurer que seules les personnes autorisées ont accès au panneau de contrôle.
 
 [Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=fr){target="_blank"} pour plus d&#39;informations.
 
@@ -62,7 +62,7 @@ Le panneau de contrôle propose plusieurs fonctionnalités pour vous aider à su
 ## Paramètres des instances
 
 Découvrez comment gérer vos paramètres d’instances Campaign dans le Panneau de contrôle.
-* [Adresses IP sur la liste autorisée](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=fr){target="_blank"}
-* [Autorisations d&#39;URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=fr){target="_blank"}
-* [Détails de l&#39;instance](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=fr){target="_blank"}
+* [IP sur la liste autorisée](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=fr){target="_blank"}
+* [Autorisations d’URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=fr){target="_blank"}
+* [Détails de l’instance](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=fr){target="_blank"}
 * [Gestion des clés GPG](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=fr){target="_blank"}

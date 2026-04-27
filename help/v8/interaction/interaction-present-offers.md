@@ -7,14 +7,14 @@ role: User, Admin
 exl-id: d0137fa7-3d04-4205-b49c-46973e45a5b8
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 100%
+source-wordcount: '209'
+ht-degree: 70%
 
 ---
 
 # Présentation de la meilleure offre{#interaction-present-offers}
 
-Les offres peuvent être présentées à divers emplacements utilisant [un canal entrant ou sortant](interaction-architecture.md#interaction-types). Ce chapitre traite des spécificités des canaux entrants.
+Les offres peuvent être présentées à divers emplacements utilisant [un canal entrant ou sortant](interaction-architecture.md#interaction-types). Ce chapitre présente certaines fonctionnalités spécifiques aux canaux entrants.
 
 ![](assets/inbound-interactions.png)
 
@@ -24,10 +24,10 @@ Pour en savoir plus à ce sujet, consultez la [documentation de Campaign Classic
 
 Lorsqu&#39;il s&#39;agit d&#39;un contact entrant, l&#39;utilisateur qui navigue sur la page peut être identifié ou non par le site web. Le moteur d&#39;offres présente des offres différentes selon qu&#39;il s&#39;agit de profils identifiés ou de profils anonymes.
 
-Avant de pouvoir proposer des offres sur un canal entrant, vous devez paramétrer l&#39;appel au moteur d&#39;offres à l&#39;endroit où vous souhaitez que les offres soient présentées. Le cas le plus courant dans le cadre d&#39;une interaction entrante est la page web.
+Avant de pouvoir proposer des offres sur un canal entrant, vous devez configurer l’appel au moteur d’offres à l’endroit où vous souhaitez que les offres soient présentées. Dans la plupart des cas, pour une interaction entrante, il s’agit de la page web.
 
 >[!NOTE]
 >
->Dans le cas d&#39;interactions entrantes, il est nécessaire de paramétrer spécifiquement le moteur d&#39;offres pour proposer et mettre à jour une ou plusieurs offres.
+>Dans le cas d’interactions entrantes, il est nécessaire de paramétrer spécifiquement le moteur d’offres pour proposer et mettre à jour une ou plusieurs offres.
 >
->Vous devez également autoriser le mode unitaire sur vos emplacements. Pour plus d&#39;informations, consultez [cette page](interaction-offer-spaces.md).
+>Vous devez également activer le mode unitaire sur vos emplacements. Pour plus d’informations, consultez [cette page](interaction-offer-spaces.md).

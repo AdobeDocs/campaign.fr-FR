@@ -1,23 +1,23 @@
 ---
-title: Mettre à jour les profils Adobe Experience Platform à partir des pages de destination Adobe Campaign
-description: Découvrez comment synchroniser les pages de destination Adobe Campaign et les attributs de profil Adobe Experience Platform.
+title: Mettre à jour les profils Adobe Experience Platform à partir des landing pages Adobe Campaign
+description: Découvrez comment synchroniser les landing pages Adobe Campaign et les attributs de profil Adobe Experience Platform.
 feature: Experience Platform Integration
 role: Developer
 level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1072'
 ht-degree: 100%
 
 ---
 
-# Mettre à jour les profils Adobe Experience Platform à partir des pages de destination Adobe Campaign{#ac-aep-lp}
+# Mettre à jour les profils Adobe Experience Platform à partir des landing pages Adobe Campaign {#ac-aep-lp}
 
-L’intégration entre Adobe Campaign et Adobe Experience Platform permet de synchroniser facilement les données de profils entre vos pages de destination Adobe Campaign et Adobe Experience Platform. Avec cette intégration, vous pouvez effectuer les actions suivantes :
+L’intégration entre Adobe Campaign et Adobe Experience Platform permet de synchroniser facilement les données de profils entre vos landing pages Adobe Campaign et Adobe Experience Platform. Avec cette intégration, vous pouvez effectuer les actions suivantes :
 
-* Récupérer les attributs de profil Adobe Experience Platform pour afficher les informations mises à jour sur les pages de destination Adobe Campaign.
-* Renvoyer à Adobe Experience Platform les attributs de profil mis à jour afin de mettre à jour les attributs correspondants en fonction des données renseignées et envoyées sur les pages de destination.
+* Récupérer les attributs de profil Adobe Experience Platform pour afficher les informations mises à jour sur les landing pages Adobe Campaign.
+* Renvoyer à Adobe Experience Platform les attributs de profil mis à jour afin de mettre à jour les attributs correspondants en fonction des données renseignées et envoyées sur les landing pages.
 
 Les principales étapes de configuration de cette intégration sont les suivantes :
 
@@ -98,7 +98,7 @@ Parcourez les onglets ci-dessous pour découvrir les deux méthodes :
 
 >[!TAB Ajouter des options à l’aide d’une activité de code JavaScript]
 
-Pour configurer automatiquement ces options lors de l’exécution de votre workflow de pages de destination, ajoutez une activité de **[!UICONTROL code JavaScript]** à votre workflow avec le code ci-dessous. [Découvrez comment configurer une activité de code JavaScript](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html?lang=fr#JavaScript-code){target="_blank"}.
+Pour configurer automatiquement ces options lors de l’exécution de votre workflow de landing pages, ajoutez une activité de **[!UICONTROL code JavaScript]** à votre workflow avec le code ci-dessous. [Découvrez comment configurer une activité de code JavaScript](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html?lang=fr#JavaScript-code){target="_blank"}.
 
 Lors de l’exécution du workflow, les options sont automatiquement créées dans la console Campaign avec les valeurs fournies.
 
@@ -123,7 +123,7 @@ Maintenant que les options d’authentification sont configurées dans Campaign,
 
 ## Ajouter des options à l’exécution du workflow {#javascript}
 
-Pour permettre la synchronisation des données entre les pages de destination et Adobe Experience Platform, des codes JavaScript personnalisés doivent être ajoutés à Adobe Campaign. Procédez comme suit :
+Pour permettre la synchronisation des données entre les landing pages et Adobe Experience Platform, des codes JavaScript personnalisés doivent être ajoutés à Adobe Campaign. Procédez comme suit :
 
 1. Accédez au menu **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Codes JavaScript]**.
 1. Créez de nouveaux codes JavaScript et copiez-collez les fragments de code ci-dessous.
@@ -344,5 +344,5 @@ Voici un exemple d’une page de destination et d’une activité de code JavaSc
 ### Informations supplémentaires
 
 * [Configurer une activité de code JavaScript](../../automation/workflow/sql-code-and-javascript-code.md#javascript-code)
-* [Créer une page de detination](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=fr){target="_blank"}
+* [Créer une landing page](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=fr){target="_blank"}
 * [Gérer les abonnements et les désabonnements](../start/subscriptions.md)

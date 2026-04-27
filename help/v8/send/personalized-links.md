@@ -7,8 +7,8 @@ level: Beginner
 exl-id: d0e00b40-e7dd-4484-b37c-fd3f3ac70fda
 source-git-commit: 6e465ec24f72d0b30c4fc287da5d4c4bcaeda05b
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 50%
+source-wordcount: '642'
+ht-degree: 51%
 
 ---
 
@@ -75,7 +75,7 @@ Après avoir traité `<%@` instructions, l’URL à tracker doit respecter la sy
 
 Pour garantir le suivi correct des URL personnalisées, vous devez utiliser la fonction `escapeUrl()` ou la méthode de codage appropriée pour les paramètres de vos URL.
 
-**Exemple :**
+**Exemple:**
 
 ```
 <a href="http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>">Click here</a>
