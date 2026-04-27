@@ -127,7 +127,7 @@ La page de l’interface utilisateur web de Campaign fournit une liste plus comp
 * **[Vertica Analytics](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#vertica-analytics){target="_blank"}** - Connectez Campaign aux bases de données d’analyse OpenText Vertica.
 * **[Microsoft Fabric](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#fabric){target="_blank"}** - Connectez Campaign aux services SQL et de stockage Microsoft Fabric.
 
-Pour obtenir des détails sur la console cliente héritée et des références supplémentaires, consultez la documentation de [Adobe Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
+Pour obtenir des détails sur la console cliente héritée et des références supplémentaires, consultez la documentation de [Adobe Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
 
 #### Compte externe des briques de données {#databricks-external-accounts}
 
