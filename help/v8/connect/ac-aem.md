@@ -47,7 +47,7 @@ Cette intégration peut être utilisée, par exemple, pour créer une newsletter
 
    ![](assets/aem_authoring_3.png)
 
-1. Personnalisez le contenu de votre e-mail en ajoutant des composants, tels que des champs de personnalisation d&#39;Adobe Campaign. En savoir plus dans la documentation de [](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html?lang=fr#editing-email-content){target="_blank"}.
+1. Personnalisez le contenu de votre e-mail en ajoutant des composants, tels que des champs de personnalisation d&#39;Adobe Campaign. En savoir plus dans la documentation de [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html?lang=fr#editing-email-content){target="_blank"}.
 
 1. Lorsque votre e-mail est prêt, accédez au menu **[!UICONTROL Informations sur la page]**, puis cliquez sur **[!UICONTROL Démarrer le workflow]**.
 

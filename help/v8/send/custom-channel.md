@@ -33,7 +33,7 @@ Tout d’abord, configurez le schéma pour ajouter le nouveau canal à la liste 
 
 1. Dans l’explorateur Campaign, sélectionnez **Administration** > **Configuration** > **Schémas de données**.
 
-1. Créez une extension de schéma pour étendre l’énumération **messageType** [](../config/enumerations.md) avec le nouveau canal.
+1. Créez une extension de schéma pour étendre l’énumération **messageType** [&#128279;](../config/enumerations.md) avec le nouveau canal.
 
    Par exemple :
 

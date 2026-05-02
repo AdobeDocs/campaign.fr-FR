@@ -32,7 +32,7 @@ Utilisez cette liste de contrôle pour aligner votre configuration avec les vale
 * [Authentification et session](#authentication-and-session) : utiliser Adobe IMS, politique d’identité forte, délai d’expiration de la session
 * [Sécurité des instances et du réseau](#instance-and-network-security) : place sur la liste autorisée IP, autorisations d’URL, clés GPG par Panneau de Contrôle
 * [Protection des données et des PII](#data-and-pii-protection) : HTTPS, limitation de l’affichage des PII, restriction des mots de passe, protection des pages sensibles
-* [Instructions de codage ](#coding-guidelines) : aucun secret codé en dur, validation de l’entrée, SQL paramétré, captchas
+* [Instructions de codage &#x200B;](#coding-guidelines) : aucun secret codé en dur, validation de l’entrée, SQL paramétré, captchas
 * [Restriction des données](#data-restriction) : limitez l’accès aux champs de mot de passe et de secret dans les comptes externes
 * [Opérationnel et conformité](#operational-and-compliance) : comparez régulièrement cette ligne de base et utilisez le journal d’audit
 
@@ -225,7 +225,7 @@ Pour en savoir plus sur les autorisations, consultez [cette section](../start/gs
 
 ## Sécurité des instances et du réseau {#instance-and-network-security}
 
-En tant qu’administrateur ou administratrice de produit Campaign v8, utilisez Panneau de Contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"} pour gérer la sécurité au niveau de l’instance :[
+En tant qu’administrateur ou administratrice de produit Campaign v8, utilisez Panneau de Contrôle Campaign[&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"} pour gérer la sécurité au niveau de l’instance :
 
 * place sur la liste autorisée IP **- Gérez la liste autorisée IP pour l&#39;accès aux instances ; limitez-la aux réseaux connus (par exemple bureau, VPN) et évitez autant que possible les plages trop larges.**
 * **Autorisations d’URL** - Restreignez les autorisations d’URL aux domaines que votre instance doit appeler (API, tracking, services externes) pour réduire le risque d’utilisation abusive des requêtes côté serveur.

@@ -126,7 +126,7 @@ Les bases de données On-Premise suivantes sont prises en charge :
 * Hadoop via HiveSQL
 * PostgreSQL
 
-Les bases de données cloud sont prises en charge. Reportez-vous à la [ matrice de compatibilité ](../start/compatibility-matrix.md#FederatedDataAccessFDA).
+Les bases de données cloud sont prises en charge. Reportez-vous à la [&#x200B; matrice de compatibilité &#x200B;](../start/compatibility-matrix.md#FederatedDataAccessFDA).
 
 >[!NOTE]
 >

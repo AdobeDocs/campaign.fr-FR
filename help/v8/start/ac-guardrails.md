@@ -14,7 +14,7 @@ ht-degree: 93%
 
 # Mécanismes de sécurisation des produits{#guardrails}
 
-Les droits, les limites de produit et les mécanismes de sécurisation des performances sont répertoriés dans la page de description du produit [](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+Les droits, les limites de produit et les mécanismes de sécurisation des performances sont répertoriés dans la page de description du produit [&#128279;](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 Vous trouverez ci-dessous des mécanismes de sécurisation et des limites supplémentaires lors de l’utilisation de [!DNL Adobe Campaign].
 
