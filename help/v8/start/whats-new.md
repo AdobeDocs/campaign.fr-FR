@@ -88,7 +88,7 @@ Adobe Campaign v8 est disponible en tant que Managed Cloud Service, offrant 
 
 L’approche Managed Services permet aux personnes spécialisées dans le marketing de tirer parti de l’échelle opérationnelle et de l’économie de l’infrastructure cloud, sans avoir besoin d’une assistance importante de la part des ressources informatiques internes. Les équipes de conseil et d’implémentation d’Adobe vous aident à évaluer vos plans marketing, vos pratiques existantes, vos exigences en matière de données et votre volume de messages. Elles vous recommandent ensuite les services, l’assistance et les packages de délivrabilité les plus adaptés. L’équipe Adobe Campaign Managed Cloud Services peut ensuite surveiller les performances de la campagne, la réputation de la marque, les mesures d’expérience des clientes et clients, etc., et créer des rapports à ce sujet.
 
-[!BADGE PDF]{type=Informative} [Lisez ce livre blanc](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf){target="_blank"} pour en savoir plus sur la valeur commerciale de Adobe Campaign Managed Cloud Services.
+[!BADGE ]{type=Informative} [Lisez ce livre blanc](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf){target="_blank"} pour en savoir plus sur la valeur commerciale de Adobe Campaign Managed Cloud Services.
 
 La nouvelle architecture cloud permet à Campaign de rationaliser les processus, de réduire les coûts, de gérer les risques et d’améliorer la sécurité des données. Votre environnement Campaign v8 est fourni avec un cloud privé virtuel (VPC) dédié et préconfiguré pour vous.
 
@@ -150,7 +150,7 @@ Créez des expériences mobiles attrayantes avec :
 
 **Intégrations améliorées**
 
-* **Adobe Experience Manager as a Cloud Service** - Gestion de contenu transparente et intégration des ressources
+* **** - Gestion de contenu transparente et intégration des ressources
 * **API REST** - Architecture d’API moderne pour des intégrations et un développement plus faciles
 * **Rapports dynamiques** - Fonctionnalités d’analyse avancées pour les utilisateurs de Campaign Standard en transition vers v8
 

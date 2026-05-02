@@ -59,7 +59,7 @@ Dans une infrastructure de midsourcing, vous devez créer un compte externe SMS 
 >
 >L’utilisation du même compte et du même mot de passe pour plusieurs comptes SMS externes peut entraîner des conflits et des chevauchements entre les comptes. En savoir plus sur la [page de dépannage des SMS](smpp-connection.md#sms-troubleshooting).
 
-1. Dans **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Comptes externes]**, cliquez sur l’icône **[!UICONTROL Nouveau]**.
+1. Dans **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Comptes externes]**, cliquez sur l’icône **[!UICONTROL Nouveau]**
 
    ![](assets/sms_extaccount.png){zoomable="yes"}
 

@@ -29,8 +29,8 @@ Deux méthodes SOAP **PushEvent** ou **PushEvents** sont liées aux deux schéma
 
 Le chemin WSDL d&#39;accès aux deux méthodes est :
 
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** pour accéder au schéma de type en temps réel.
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** pour accéder au schéma de type de lot.
+* **:rtEvent** pour accéder au schéma de type en temps réel.
+* **:batchEvent** pour accéder au schéma de type de lot.
 
 Les deux méthodes contiennent un élément **`<urn:sessiontoken>`** permettant de se connecter au module de message transactionnel. Nous vous recommandons d&#39;utiliser une méthode d&#39;identification via des adresses IP approuvées. Pour récupérer le jeton de session, effectuez un appel SOAP de connexion, puis un jeton get suivi d’une fermeture de session. Utilisez le même jeton pour plusieurs appels RT. Les exemples inclus dans cette section utilisent la méthode du jeton de session qui est recommandée.
 

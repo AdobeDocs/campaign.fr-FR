@@ -26,9 +26,9 @@ ht-degree: 45%
    + {hide-from-toc}[Mise à niveau de l&#39;infrastructure d&#39;envoi d&#39;emails de Campaign](upgrades/upgrade-to-aws.md)
    + {hide-from-toc}[Mettre à niveau la version Apache](upgrades/apache.md)
    + {hide-from-toc}[Navigateurs Internet](upgrades/browsers.md)
-   + {hide-from-toc}[Mises à niveau du système 2023](upgrades/tech-stack-upgrade.md)
+   + Mises à niveau du système {hide-from-toc}[2023](upgrades/tech-stack-upgrade.md)
    + {hide-from-toc}[obsolescence de la console cliente 32 bits](upgrades/console.md)
    + Sécurité {#security}
       + {hide-from-toc}[Rotation des informations d’identification du client](security/credential-rotation-guide.md)
-      + {hide-from-toc}[&#x200B; Chiffrement asymétrique &#x200B;](security/asymetric-encryption.md)
+      + {hide-from-toc}[ Chiffrement asymétrique ](security/asymetric-encryption.md)
 + [&lt; Retour à la documentation de Campaign v8](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/campaign-home)

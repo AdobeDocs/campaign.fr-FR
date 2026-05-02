@@ -35,7 +35,7 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
 1. **Création de la diffusion**
 
-   Pour créer une nouvelle diffusion, accédez à l&#39;onglet **Campagnes**, cliquez sur **Diffusions** et cliquez sur le bouton **Créer** au-dessus de la liste des diffusions existantes.
+   Pour créer une nouvelle diffusion, accédez à l&#39;onglet **Campagnes**, cliquez sur **Diffusions**, puis sur le bouton **Créer** au-dessus de la liste des diffusions existantes.
 
    ![](assets/delivery_step_1.png)
 

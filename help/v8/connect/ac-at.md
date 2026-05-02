@@ -74,7 +74,7 @@ Vous pouvez ensuite définir les paramètres de l&#39;image :
 * La **[!UICONTROL landing page]** vous permet de rediriger l&#39;image par défaut vers une landing page par défaut. Cette URL s&#39;applique uniquement lorsque l&#39;image par défaut est affichée dans l&#39;e-mail final. Elle est facultative.
 * Les **[!UICONTROL Paramètres de décision additionnels]** définissent le mapping entre les champs définis dans les segments d’Adobe Target et les champs d’Adobe Campaign. Les champs d’Adobe Campaign utilisés doivent avoir été spécifiés au niveau du « rawbox ». Dans notre exemple, nous avons ajouté le champ Pays.
 
-Dans Adobe Target, si vous utilisez les autorisations Enterprise, ajoutez la propriété correspondante dans ce champ. En savoir plus sur les autorisations de Target Enterprise dans la documentation d’[Adobe Target](https://experienceleague.adobe.com/fr/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
+Dans Adobe Target, si vous utilisez les autorisations Enterprise, ajoutez la propriété correspondante dans ce champ. En savoir plus sur les autorisations de Target Enterprise dans la documentation d’[](https://experienceleague.adobe.com/fr/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
 
 ![](assets/target_13.png)
 
@@ -94,7 +94,7 @@ Dans notre cas, nous avons besoin de deux offres de redirection, la troisième (
 
    ![](assets/target_6.png)
 
-1. Suivez la même procédure pour l&#39;offre de redirection restante. Pour en savoir plus à ce sujet, consultez cette [documentation Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=fr#experiences){target="_blank"}.
+1. Suivez la même procédure pour l&#39;offre de redirection restante. Pour en savoir plus à ce sujet, consultez cette [documentation ](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=fr#experiences){target="_blank"}.
 
 ### Création d’audiences {#audiences-target}
 

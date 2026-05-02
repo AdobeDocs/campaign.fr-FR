@@ -182,7 +182,7 @@ Pour plus d’informations sur l’envoi et les personnes destinataires des BAT,
 
 Dans cette vidéo, vous apprendrez comment ajouter des adresses de contrôle et des BAT à un email existant et comment l’envoyer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447001?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 D&#39;autres vidéos pratiques sur Campaign Classic sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=fr).
 

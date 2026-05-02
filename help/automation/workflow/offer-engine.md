@@ -32,4 +32,4 @@ Après avoir paramétré votre requête (voir cette [section](query.md)) :
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix. Voir [Diffusions cross-canal](cross-channel-deliveries.md).
+1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix. Pour plus d&#39;informations, consultez la section [Diffusions cross-canal](cross-channel-deliveries.md).

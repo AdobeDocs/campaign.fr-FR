@@ -40,7 +40,7 @@ Apprenez-en davantage sur le **partage de ressources** entre les solutions Exper
 
 >[!NOTE]
 >
->En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour connecter Campaign aux services et aux solutions Adobe Experience Cloud.
+>En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour connecter Campaign aux services et solutions Adobe Experience Cloud.
 
 
 ## Intégration à votre connecteur CRM{#gs-crm-connectors}

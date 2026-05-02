@@ -29,7 +29,7 @@ ht-degree: 87%
    + [Mécanismes de sécurisation](start/ac-guardrails.md)
    + {hide-from-toc}[Problèmes connus](start/known-issues.md)
    + [Matrice de compatibilité](start/compatibility-matrix.md)
-   + {hide-from-toc}[&#x200B; Mises à jour de la documentation &#x200B;](start/documentation-updates.md)
+   + {hide-from-toc}[ Mises à jour de la documentation ](start/documentation-updates.md)
    + [Rapport des mises à jour mensuelles](../../monthly-updates-report.md)
 + Commencer {#new}
    + [Prise en main d’Adobe Campaign](start/get-started.md)

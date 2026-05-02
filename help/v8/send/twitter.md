@@ -50,7 +50,7 @@ Pour publier un message sur votre compte X, procédez comme suit :
 
    L’onglet **[!UICONTROL Cible des BAT]** vous permet de définir le compte X à utiliser pour les diffusions test avant la diffusion finale.
 
-   Comme indiqué dans les [étapes de configuration](../connect/ac-tw.md#tw-test-account), vous devez créer un compte X de test privé dédié à l’envoi de BAT.
+   Comme indiqué dans les [étapes de configuration](../connect/ac-tw.md#tw-test-account), vous devez créer un compte test X privé dédié à l’envoi de BAT.
 
    >[!NOTE]
    >

@@ -228,7 +228,7 @@ Les étapes sont les suivantes :
 
    ![](assets/mkg_dist_use_case_form_1.png)
 
-1. Sous l&#39;onglet **[!UICONTROL Modifier]** de la campagne, cliquez sur le lien **[!UICONTROL Paramètres avancés de la campagne...]** pour la configurer comme une campagne locale. Pour plus d&#39;informations, consultez la section [Créer une campagne locale (par formulaire)](#creating-a-local-campaign--by-form-).
+1. Sous l&#39;onglet **[!UICONTROL Modifier]** de la campagne, cliquez sur le lien **[!UICONTROL Paramètres avancés de la campagne...]** pour la configurer comme une campagne locale. Pour plus d&#39;informations, consultez la section [Créer une opération locale (par formulaire)](#creating-a-local-campaign--by-form-).
 
    ![](assets/mkg_dist_use_case_form_2.png)
 
