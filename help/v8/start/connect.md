@@ -5,10 +5,10 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
+source-git-commit: 5319391ca0f76292e57fafae540b7edb7925892b
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 95%
+source-wordcount: '1133'
+ht-degree: 89%
 
 ---
 
@@ -90,6 +90,19 @@ Vous pouvez ensuite vous connecter à Campaign à l’aide de votre Adobe ID.
 >[!NOTE]
 >
 >Comme Microsoft Edge WebView 2 n’enregistre pas les informations d’identification du proxy, la console peut vous demander de vous authentifier deux fois lors de votre première connexion.
+
+## Résolution des problèmes de connexion à Adobe ID {#troubleshoot-ims-login}
+
+Si vous rencontrez des problèmes lors de la connexion à la **[!UICONTROL console cliente]** avec votre Adobe ID, essayez d’effacer le cache WebView2 local. Dans la plupart des cas, cela résout le problème. Suivez les étapes ci-dessous :
+
+1. Fermez la **[!UICONTROL console cliente]** et arrêtez tout processus `nlclient` en cours d’exécution.
+
+1. Supprimez tous les dossiers `webview2` et `webview2Cache` des emplacements suivants.
+
+   * `C:\ProgramData\Neolane\NL_5\nlclient\`
+   * `C:\Users\<username>\AppData\Roaming\Neolane\NL_5\nlclient\`
+
+1. Redémarrez la **[!UICONTROL console cliente]** et connectez-vous avec votre Adobe ID. Les dossiers de cache seront automatiquement recréés lors du prochain lancement.
 
 ## Mettre à niveau votre console cliente{#upgrade-ac-console}
 
