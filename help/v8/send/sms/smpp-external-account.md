@@ -5,10 +5,10 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
-source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
+source-git-commit: fc0a610a2215db3bfc15c5df3a1a7d1d30783545
 workflow-type: tm+mt
-source-wordcount: '3682'
-ht-degree: 94%
+source-wordcount: '3659'
+ht-degree: 96%
 
 ---
 
@@ -267,7 +267,7 @@ Indique le format de l’ID renvoyé dans le champ message_id du PDU SUBMIT_SM_R
 
 * **Ne pas modifier** : l&#39;ID est stocké tel quel dans la base de données, sous la forme de texte encodé en ASCII. Aucun prétraitement ni filtrage n&#39;est effectué.
 * **Nombre décimal** : l&#39;ID doit être un nombre décimal au format ASCII. Les espaces de début et de fin et les zéros de début sont supprimés lorsque ce paramètre est utilisé.
-* **Nombre hexadécimal** : l’identifiant doit être un nombre hexadécimal au format ASCII, sans 0x au début ni h au fin. L’identifiant est ensuite converti en nombre décimal avant d’être stocké dans la base de données.
+* **Nombre hexadécimal** : l’ID doit être un nombre hexadécimal au format ASCII, sans 0x au début ni h à la fin. L’ID est ensuite converti en nombre décimal avant d’être stocké dans la base de données.
 * **Chaîne hexadécimale** : l&#39;ID doit être un texte encodé en ASCII qui est lui-même une chaîne d&#39;octets encodés en hexadécimal. Par exemple, dans le PDU, vous trouverez 0x34 0x31 0x34 0x32 0x34 0x33, qui se traduit par l’ASCII « 414243 » ; cette chaîne est décodée sous la forme d’une chaîne hexadécimale d’octets, ce qui vous donne « ABC » : vous stockerez l’ID « ABC » dans la base de données.
 
 ### Format de l’ID dans le SR
@@ -280,13 +280,13 @@ Si cette case est cochée, le contenu des champs facultatifs est ajouté au text
 
 Par exemple, vous pouvez capturer l’identifiant dans le champ receipted_message_id. Pour cela, activez cette case à cocher et le texte suivant est ajouté au statut :
 
-0x001E:05e3299e-8d37-49d0-97c6-8e4fe60c7739
+`0x001E:05e3299e-8d37-49d0-97c6-8e4fe60c7739`
 
 Dans cet exemple, 0x001E est la balise du champ facultatif et UUID est la valeur du champ.
 
 Pour capturer cette valeur, vous pouvez désormais définir l&#39;expression régulière suivante dans l&#39;expression régulière d&#39;extraction de l&#39;ID dans le champ de SR :
 
-\b0x001E:([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\b
+`\b0x001E:([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\b`
 
 >[!IMPORTANT]
 >
