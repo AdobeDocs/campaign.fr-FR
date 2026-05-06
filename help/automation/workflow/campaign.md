@@ -7,8 +7,8 @@ role: User, Admin
 version: Campaign v8, Campaign Classic v7
 topic-tags: technical-workflows
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '155'
+workflow-type: tm+mt
+source-wordcount: '157'
 ht-degree: 100%
 
 ---
@@ -42,7 +42,7 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
   <tr> 
    <td> <span class="uicontrol">Traitements sur les diffusions dans les opérations</span> <br /> </td> 
    <td> <span class="uicontrol">deliveryMgt</span> <br /> </td> 
-   <td> Ce workflow démarre les diffusions validées et lance les post-traitements du prestataire pour une diffusion externe. Il envoie également des notifications de validation et des rappels.<br /> </td> 
+   <td> Ce workflow déclenche les diffusions validées et lance les post-traitements du prestataire pour une diffusion externe. Il envoie également des notifications de validation et des rappels.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Traitements sur les opérations</span> <br /> </td> 

@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: ff2be012-72f3-428d-a973-196fea7ec4ab
 source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 91%
+source-wordcount: '933'
+ht-degree: 72%
 
 ---
 
@@ -20,7 +20,7 @@ Les diffusions courrier permettent de générer un fichier d&#39;extraction cont
 Les étapes de génération du fichier sont les suivantes :
 
 1. [Création de la diffusion](#creating-a-direct-mail-delivery)
-1. [Définir l’audience](#defining-the-direct-mail-audience)
+1. [Définition de l’audience](#defining-the-direct-mail-audience)
 1. [Définition du contenu du fichier](#defining-the-direct-mail-content)
 1. [Validation de la diffusion](#validating)
 1. [Lancement de la diffusion](#start-delivery)
@@ -57,9 +57,9 @@ En savoir plus dans [cette section](../start/create-message.md#target-population
 
 Utilisez l&#39;assistant d&#39;extraction pour définir les informations (colonnes) à exporter dans le fichier de sortie.
 
-Le nom du fichier contenant les données extraites est défini dans le champ **[!UICONTROL Fichier]**. Le bouton situé à droite du champ permet d&#39;utiliser des champs de personnalisation pour créer le nom du fichier.
+Le nom du fichier qui contient les données extraites est défini dans le champ **[!UICONTROL Fichier]**. Le bouton situé à droite du champ permet d’utiliser des champs de personnalisation pour créer le nom du fichier.
 
-Par défaut, le fichier d&#39;extraction est créé et stocké sur le serveur. Vous pouvez l&#39;enregistrer sur votre ordinateur. Pour cela, cochez l&#39;option **[!UICONTROL Rapatrier en local le fichier généré après l&#39;export]**. Dans ce cas, vous devez indiquer le chemin d&#39;accès au répertoire de stockage local et le nom du fichier.
+Par défaut, le fichier d’extraction est créé et stocké sur le serveur. Vous pouvez l&#39;enregistrer sur votre ordinateur. Pour cela, cochez l&#39;option **[!UICONTROL Rapatrier en local le fichier généré après l&#39;export]**. Dans ce cas, vous devez indiquer le chemin d&#39;accès au répertoire de stockage local et le nom du fichier.
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 
@@ -81,7 +81,7 @@ Vous pouvez insérer une URL personnalisée dans le fichier d’extraction. Pour
 
 Vérifiez le résultat de l&#39;analyse et le contenu du fichier de sortie.
 
-Dans le cadre d&#39;une opération marketing, à la date d&#39;extraction, le fichier d&#39;extraction est créé. Vous pouvez visualiser le contenu du fichier extrait, le valider ou modifier le format et relancer l&#39;extraction en cas de besoin. Une fois le fichier validé, vous pouvez envoyer l’e-mail de notification au routeur. En savoir plus sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=fr){target="_blank"}.
+Dans le cadre d&#39;une opération marketing, à la date d&#39;extraction, le fichier d&#39;extraction est créé. Vous pouvez visualiser le contenu du fichier extrait, le valider ou modifier le format et relancer l&#39;extraction en cas de besoin. Une fois le fichier validé, vous pouvez envoyer l’e-mail de notification au routeur. En savoir plus à ce propos sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=fr){target="_blank"}.
 
 Les concepts généraux de validation d&#39;une diffusion sont présentés dans [cette section](../start/create-message.md#validate-the-delivery).
 
@@ -91,9 +91,9 @@ Le fichier de sortie d&#39;une diffusion par courrier est généré pendant l&#3
 >
 >La phase d’analyse est détaillée dans cette [section](delivery-analysis.md).
 
-Pendant la phase d&#39;analyse, le fichier est généré mais aucune information concernant les destinataires (à savoir les logs de diffusion) n&#39;est mise à jour. Vous pouvez donc annuler cette opération sans aucun risque.
+Lors de la phase d’analyse, le fichier est généré mais les informations relatives aux destinataires (c’est-à-dire les logs de diffusion) ne sont pas mises à jour. Vous pouvez donc annuler ce traitement sans courir de risque.
 
-Vérifiez le résultat de l&#39;analyse et le contenu du fichier de sortie avant de cliquer sur le bouton **[!UICONTROL Confirmer l&#39;envoi]**. Un message d&#39;avertissement vous permet de confirmer la diffusion.
+Vérifiez le résultat de l&#39;analyse et le contenu du fichier de sortie avant de cliquer sur **[!UICONTROL Confirmer la diffusion]**. Un message de confirmation permet de lancer la diffusion.
 
 La confirmation de l&#39;envoi lance l&#39;extraction des données dans le fichier spécifié.
 
@@ -106,13 +106,13 @@ Vous pouvez paramétrer le mode de récupération des logs de diffusion à parti
 Deux modes sont proposés :
 
 * **[!UICONTROL Les messages sont considérés envoyés suite à la validation]** (mode par défaut) : dans ce mode de fonctionnement, tous les broadlogs sont mis à jour lorsque l&#39;opérateur confirme l&#39;envoi (leur statut passe de &#39;En attente de diffusion&#39; à &#39;Envoyé&#39;) et le statut de la diffusion devient automatiquement **[!UICONTROL Terminé]**.
-* **[!UICONTROL Un fichier de résultats détermine les messages envoyés et en échec]** : ce mode permet de mettre à jour les broadlogs via un fichier externe transmis par le prestataire. Dans ce cas, il est nécessaire de mettre en place un workflow de traitement de ces informations afin de mettre à jour le statut des broadlogs.
+* **[!UICONTROL Un fichier de résultats détermine les messages envoyés et en échec]** : ce mode permet de mettre à jour les broadlogs via un fichier externe transmis par le prestataire. Dans ce cas, un workflow pour traiter ces informations doit être utilisé afin de mettre à jour le statut du broadlog.
 
   >[!NOTE]
   >
   >Dans ce cas, l&#39;utilisateur doit aussi modifier l&#39;état de la diffusion en **[!UICONTROL Terminé]** dès que les broadlogs sont mis à jour.
 
-## Démarrer la diffusion{#start-delivery}
+## Lancement de la diffusion{#start-delivery}
 
 Une fois le fichier d&#39;extraction validé, cliquez sur **Confirmer l&#39;envoi**. Un message de confirmation vous permet de lancer la diffusion.
 

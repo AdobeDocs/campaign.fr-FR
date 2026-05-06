@@ -4,10 +4,11 @@ description: Découvrez les connecteurs SMS dans Adobe Campaign
 feature: SMS
 role: User, Admin
 level: Intermediate
-source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
+exl-id: 5ec3f172-22dc-458b-8688-9974009c985e
+source-git-commit: 0278c5161b4b32cd2158c7694d3c7a9996a401cb
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 1%
+source-wordcount: '472'
+ht-degree: 5%
 
 ---
 
@@ -46,7 +47,7 @@ Pour savoir comment utiliser le connecteur SMS v2 dans Campaign v8, reportez-vou
 
 Le processus SMS dédié introduit la prise en charge du mode émetteur-récepteur SMPP, réduisant le nombre de connexions et améliorant l’efficacité des ressources, tout en prenant toujours en charge les configurations émetteur/récepteur si nécessaire. Il offre une stabilité nettement supérieure, avec une récupération plus rapide en cas d’erreur, des connexions persistantes et aucune dépendance aux fichiers locaux ou à la communication entre processus. Les performances sont également améliorées, avec une latence plus faible, un débit plus élevé et un microtraitement intelligent pour équilibrer la vitesse et la fiabilité. En outre, l’isolation du processus SMS simplifie la résolution des problèmes et réduit l’impact cross-canal. Ces améliorations font du connecteur dédié une solution plus robuste et évolutive pour la diffusion de SMS.
 
-### Configuration  {#configuration}
+### Configuration {#configuration}
 
 Avec Adobe Campaign Managed Cloud Services, la configuration du serveur et la migration du connecteur SMS sont gérées par Adobe. Cette procédure technique nécessite un accès direct aux fichiers de configuration du serveur et aux opérations de base de données.
 

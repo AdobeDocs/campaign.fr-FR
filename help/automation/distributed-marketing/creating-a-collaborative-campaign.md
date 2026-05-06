@@ -7,8 +7,8 @@ role: User
 exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 100%
+source-wordcount: '990'
+ht-degree: 67%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Lʼentité centrale crée les opérations collaboratives à partir des modèles dʼopération du **Marketing Distribué**. Pour en savoir, consultez [cette page](about-distributed-marketing.md#collaborative-campaign).
+L&#39;entité centrale crée les opérations collaboratives à partir des modèles d&#39;opération **Marketing Distribué**. Reportez-vous à [cette page](about-distributed-marketing.md#collaborative-campaign).
 
 ## Création d’une opération collaborative {#creating-a-collaborative-campaign}
 
@@ -26,7 +26,7 @@ Pour créer une campagne collaborative, sélectionnez le dossier **[!UICONTROL G
 >
 >Excepté les **[!UICONTROL opérations collaboratives par opération]**, ces opérations peuvent être paramétrées et exécutées depuis une interface Web.
 
-Le paramétrage de base d&#39;une opération collaborative est similaire à celui d&#39;un modèle d&#39;opération locale. Les spécificités des différents types d&#39;opération collaborative sont présentées ci-dessous.
+Le paramétrage d&#39;une base collaborative est similaire à celui d&#39;un modèle d&#39;opération locale. Les spécifications des différents types de campagnes collaboratives sont détaillées ci-dessous.
 
 ### Par formulaire {#by-form}
 
@@ -36,11 +36,11 @@ Pour créer une opération collaborative par formulaire, le modèle **[!UICONTRO
 
 Dans l&#39;onglet **[!UICONTROL Modifier]**, cliquez sur le lien **[!UICONTROL Paramètres avancés de l&#39;opération...]** pour accéder à l&#39;onglet **Marketing distribué**.
 
-Sélectionnez le type d’interface web **Par formulaire**. Ce type d’interface permet la création de champs de personnalisation qui seront utilisés par les entités locales lors de la commande de l’opération. Pour plus d&#39;informations, consultez la section [Création d’une campagne locale (par formulaire)](examples.md#creating-a-local-campaign--by-form-).
+Sélectionnez l’interface web **Par formulaire**. Ce type d&#39;interface permet de créer des champs de personnalisation qui seront utilisés par les entités locales lors de la commande d&#39;une opération. Pour plus d&#39;informations, consultez la section [Création d’une campagne locale (par formulaire)](examples.md#creating-a-local-campaign--by-form-).
 
-Enregistrez votre campagne. Vous pouvez désormais l’utiliser depuis la vue **Kits d’opération** de l’onglet **Campagnes**, en cliquant sur le bouton **[!UICONTROL Créer]**.
+Enregistrez votre campagne. Vous pouvez désormais l’utiliser depuis la vue **Kits de campagne** de l’onglet **Campagnes**, en cliquant sur le bouton **[!UICONTROL Créer]**.
 
-La vue **[!UICONTROL Kit d&#39;opération]** vous permet d&#39;utiliser les modèles d&#39;opérations locales (d&#39;usine ou dupliqués), ainsi que les opérations de référence pour les opérations collaboratives, dans le but de créer des campagnes pour vos différentes entités organisationnelles.
+La vue **[!UICONTROL Kit de campagne]** vous permet d’utiliser les modèles de campagnes locales (d’usine ou dupliqués), ainsi que les campagnes de référence pour les campagnes collaboratives, dans le but de créer des campagnes pour vos différentes entités organisationnelles.
 
 ![](assets/mkg_dist_mutual_op_form1b.png)
 
@@ -52,13 +52,13 @@ Pour créer une opération collaborative par opération, le modèle **[!UICONTRO
 
 Lors de la commande de l&#39;opération, l&#39;entité locale peut remplir des critères prédéfinis par l&#39;entité centrale, et évaluer l&#39;opération avant de la commander.
 
-Lorsque la commande d&#39;une **Opération collaborative par opération** est validée par l&#39;entité centrale, une opération enfant est créée pour l&#39;entité locale. La mise à disposition de l&#39;opération permet à l&#39;entité locale de modifier :
+Lorsqu&#39;une commande d&#39;une **Opération collaborative par opération)** est validée par l&#39;entité centrale, une opération enfant est créée pour l&#39;entité locale. Une fois disponible, l&#39;entité locale peut alors modifier :
 
 * le workflow de l&#39;opération,
 * les règles de typologie,
 * et les champs de personnalisation.
 
-L&#39;exécution de l&#39;opération enfant est faite par l&#39;entité locale. L&#39;entité centrale exécute l&#39;opération parent.
+L’entité locale exécute l’opération enfant. L&#39;entité centrale exécute la campagne parent.
 
 L&#39;entité centrale peut visualiser toutes les opérations enfants associées à une **Opération collaborative par opération** à partir du tableau de bord de celle-ci (via le lien **[!UICONTROL Liste des opérations liées]**).
 
@@ -74,13 +74,13 @@ Pour créer une opération collaborative par validation de la cible, le modèle 
 >
 >Dans ce mode, l&#39;entité centrale n&#39;a pas à spécifier les entités locales.
 
-Le workflow de l&#39;opération doit intégrer l&#39;activité de type **Validation en local**. Les paramètres de l&#39;activité sont les suivants :
+Le workflow de l&#39;opération doit intégrer l&#39;activité de type **Validation en local**. Les paramètres de l&#39;activité sont les suivants :
 
 * **[!UICONTROL Action à effectuer]** : notification pour la validation de la cible.
 * **[!UICONTROL Contexte de répartition]** : explicite.
 * **[!UICONTROL Répartition des données]** : répartition pour les entités locales.
 
-La répartition de données de type **répartition des entités locales** doit être créée. Le modèle de répartition de données permet de limiter le nombre d&#39;enregistrements à partir d&#39;une liste de valeurs de groupement. Dans **[!UICONTROL Ressources > Gestion de campagnes > Répartition de données]**, cliquez sur l&#39;icône **[!UICONTROL Nouveau]** pour créer une **[!UICONTROL Répartition de données]**. Pour plus d’informations sur la répartition des données,
+**Répartition pour les entités locales** une répartition de données de type doit être créée. Le modèle de répartition de données permet de limiter le nombre d&#39;enregistrements à partir d&#39;une liste de valeurs de groupement. Dans **[!UICONTROL Ressources > Gestion de campagnes > Répartition de données]**, cliquez sur l&#39;icône **[!UICONTROL Nouveau]** pour créer une **[!UICONTROL Répartition de données]**. Pour plus d’informations sur la répartition des données,
 
 ![](assets/mkg_dist_data_distribution.png)
 
@@ -104,27 +104,27 @@ L&#39;entité locale peut supprimer certains contacts en fonction du contenu de 
 
 Pour créer une opération collaborative simple, le modèle **[!UICONTROL Opération collaborative simple (opCollaborativeSimple)]** doit être sélectionné.
 
-## Créer un kit d&#39;opération collaborative {#creating-a-collaborative-campaign-package}
+## Créer un kit de campagne collaborative {#creating-a-collaborative-campaign-package}
 
-Pour mettre à disposition l&#39;opération auprès des entités locales, l&#39;entité centrale doit créer un kit d&#39;opération.
+Pour mettre à disposition l’opération auprès des entités locales, l’entité centrale doit créer un kit de campagne.
 
 Les étapes sont les suivantes :
 
-1. Dans la section **[!UICONTROL Navigation]** de l&#39;univers **Campagnes**, cliquez sur le lien **[!UICONTROL Kits d&#39;opération]**.
+1. Dans la section **[!UICONTROL Navigation]** de l’univers **Campagnes**, cliquez sur le lien **[!UICONTROL Kits de campagne]**.
 1. Cliquez sur le bouton **[!UICONTROL Créer]**.
 1. La section supérieure de l&#39;éditeur permet de sélectionner le modèle d&#39;opération **[!UICONTROL Nouveau kit collaboratif (mutualizedEmpty)]**.
 1. Sélectionnez l&#39;opération de référence.
-1. Définissez le libellé du kit d&#39;opération, son dossier d&#39;enregistrement et indiquez son planning de réalisation.
+1. Définissez le libellé du kit de campagne, son dossier d’enregistrement et indiquez son planning de réalisation.
 
-### Dates       {#dates}
+### Dates {#dates}
 
-Les dates de début et de fin correspondent à la période de visibilité de l&#39;opération dans la liste des kits.
+Les dates de début et de fin correspondent à la période de visibilité de l’opération dans la liste des kits de campagne.
 
 Pour les **opérations collaboratives**, l&#39;entité centrale doit indiquer la date limite d&#39;inscription à l&#39;opération et éventuellement la date de remise des éléments.
 
 >[!NOTE]
 >
->L&#39;option **[!UICONTROL Remise des éléments]** permet à l&#39;entité centrale de choisir une date butoir avant laquelle les entités locales doivent lui faire parvenir des documents (tableurs, images) qui pourraient lui être utiles pour le paramétrage définitif de l&#39;opération. Cette option est facultative. Le non-respect de cette date n&#39;affecte pas la mise en oeuvre de l&#39;opération.
+>L&#39;échéance **&#x200B;**&#x200B;permet à l&#39;entité centrale de choisir une échéance à laquelle les entités locales doivent avoir remis les documents (feuilles de calcul, images) à utiliser pour paramétrer l&#39;opération. Il ne s’agit pas d’une option obligatoire. Le contournement de cette date n’affecte pas la mise en œuvre de la campagne.
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry.png)
 
@@ -146,7 +146,7 @@ Pour les **opérations collaboratives**, il est possible de définir le type de 
 
 En mode manuel, l&#39;entité locale doit s&#39;inscrire à l&#39;opération pour pouvoir y participer.
 
-En mode automatique, l&#39;entité locale est préinscrite à l&#39;opération et cette inscription est validée. Elle peut se désinscrire de l&#39;opération, ou en modifier le paramétrage sans qu&#39;aucune validation par l&#39;entité centrale ne soit possible.
+En mode automatique, l&#39;entité locale est pré-abonnée pour la campagne. Il peut annuler l&#39;abonnement à la campagne ou modifier ses paramètres sans avoir besoin de l&#39;approbation de l&#39;entité centrale.
 
 ![](assets/mkg_dist_edit_kit2.png)
 
@@ -156,13 +156,13 @@ Le paramétrage des messages de notification est identique à celui d&#39;une op
 
 ## Commande dʼune opération {#ordering-a-campaign}
 
-Lorsqu&#39;une opération collaborative est ajoutée dans la liste des kits d&#39;opération, les entités locales faisant partie de l&#39;audience définie par l&#39;entité centrale sont avisées par un message de notification (les **opérations collaboratives par validation de la cible** n&#39;ont pas d&#39;audience prédéfinie). Ce message propose un lien pour s&#39;inscrire à l&#39;opération, comme dans l&#39;exemple ci-dessous :
+Lorsqu&#39;une opération collaborative est ajoutée dans la liste des kits d&#39;opération, les entités locales faisant partie de l&#39;audience définie par l&#39;entité centrale sont avisées par un message de notification (les **opérations collaboratives par validation de la cible)** n&#39;ont pas d&#39;audience prédéfinie). Le message envoyé contient un lien permettant de s&#39;inscrire à la campagne, comme dans l&#39;exemple ci-dessous :
 
 ![](assets/mkg_dist_mutual_op_notification.png)
 
-Ce message permet également aux entités locales de visualiser la description renseignée par l&#39;opérateur central qui a créé le kit, et les documents associés à l&#39;opération, s&#39;ils existent. Ces documents permettent de compléter la description de l&#39;opération mais ils n&#39;appartiennent pas à l&#39;opération.
+Ce message permet également aux entités locales de visualiser la description renseignée par l&#39;opérateur central créateur du kit, ainsi que les documents liés à l&#39;opération. Ils n’appartiennent pas à la campagne elle-même, bien qu’ils fournissent des informations supplémentaires à son sujet.
 
-Une fois connecté via une interface Web, l&#39;entité locale peut indiquer les informations de personnalisation pour l&#39;opération collaborative qu&#39;elle souhaite commander :
+Une fois la connexion établie via une interface web, des informations personnalisées peuvent être saisies pour la campagne collaborative que les opérateurs et opératrices souhaitent commander :
 
 ![](assets/mkg_dist_mutual_op_command.png)
 

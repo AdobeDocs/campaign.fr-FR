@@ -5,10 +5,11 @@ feature: Monitoring
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
+exl-id: 254765d3-f664-4200-9a70-f8876f2b2933
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '1200'
-ht-degree: 70%
+source-wordcount: '1207'
+ht-degree: 63%
 
 ---
 
@@ -22,7 +23,7 @@ Vous pouvez accéder aux diffusions à partir de la liste des diffusions accessi
 
 ![](assets/deliveries-list.png)
 
-Par défaut, la liste des diffusions affiche les noms et états des diffusions créées dans le nœud sélectionné. Elle affiche également le nombre de messages à envoyer, traités et envoyés avec succès.
+Par défaut, la liste des diffusions contient les noms et statuts des diffusions créées dans le nœud sélectionné. Elle affiche également le nombre de messages à envoyer, traités et envoyés avec succès.
 
 * Le nombre de **[!UICONTROL messages à envoyer]** correspond au nombre de destinataires ciblés après analyse de la diffusion et avant envoi.
 * Le nombre de messages de la colonne **[!UICONTROL succès]** correspond au nombre de messages émis par le serveur et bien reçus par le destinataire.
@@ -30,7 +31,7 @@ Par défaut, la liste des diffusions affiche les noms et états des diffusions c
 
 >[!NOTE]
 >
->Pour les diffusions volumineuses, vous pouvez mettre à jour ces valeurs. Pour cela, sélectionnez la diffusion concernée et cliquez ensuite avec le bouton droit de la souris. Sélectionnez **[!UICONTROL Action > Recalculer les indicateurs de diffusion et de tracking]** et utilisez ensuite l’assistant pour mettre à jour ces informations.
+>Pour les diffusions volumineuses, vous pouvez mettre à jour ces valeurs. Pour ce faire, sélectionnez la diffusion en question, puis cliquez dessus avec le bouton droit. Sélectionnez **[!UICONTROL Action > Recalculer les indicateurs de diffusion et de tracking]** et utilisez ensuite l’assistant pour mettre à jour ces informations.
 
 ## Présentation du tableau de bord des diffusions {#delivery-dashboard-overview}
 
@@ -51,9 +52,9 @@ Vous trouverez ci-dessous les informations à surveiller à l&#39;aide des diff�
 
 **Rubriques connexes :**
 
-* [Comprendre les diffusions en échec](delivery-failures.md)
+* [Présentation des diffusions en échec](delivery-failures.md)
 * [Gestion des quarantaines](quarantines.md)
-* [Bonnes pratiques relatives à la diffusion](../start/delivery-best-practices.md)
+* [Bonnes pratiques de diffusion](../start/delivery-best-practices.md)
 * [Gestion de la délivrabilité](about-deliverability.md)
 
 ## Synthèse des diffusions {#delivery-summary}
@@ -70,7 +71,7 @@ Le contenu de cet onglet peut être configuré en fonction de vos besoins. Pour 
 
 ## Logs, historique et exclusions de diffusion {#delivery-logs-and-history}
 
-L&#39;onglet **[!UICONTROL Diffusion]** propose un historique des occurrences de cette diffusion. Il contient les logs de diffusion, c&#39;est-à-dire la liste des messages envoyés et leur statut. Il permet de visualiser l&#39;état de la diffusion pour chaque destinataire et les messages associés.
+L&#39;onglet **[!UICONTROL Diffusion]** propose un historique des occurrences dans cette diffusion. Il contient les logs de diffusion, c&#39;est-à-dire la liste des messages envoyés et leur statut et les messages associés.
 
 Pour une diffusion, vous pouvez afficher par exemple seulement les destinataires pour lesquels l&#39;envoi a échoué ou ceux dont l&#39;adresse est en quarantaine. Pour cela, cliquez sur le bouton **[!UICONTROL Filtres]** et choisissez **[!UICONTROL Par Statut]**. Sélectionnez ensuite le statut dans la liste déroulante affichée au-dessus de la liste. Différents statuts sont répertoriés dans la page [statuts de diffusion](delivery-statuses.md).
 
@@ -96,7 +97,7 @@ L’onglet **[!UICONTROL Tracking]** liste l’historique du tracking pour cette
 
 La configuration du suivi est effectué dans l’assistant de diffusion, à l’étape concernée. Voir à ce sujet la section [Comment configurer des liens suivis](tracking.md).
 
-Les données de **[!UICONTROL tracking]** sont interprétées dans les rapports de diffusion. Consultez [cette section](../reporting/delivery-reports.md).
+Les données de **[!UICONTROL tracking]** sont interprétées dans les rapports de diffusion. Voir [cette section](../reporting/delivery-reports.md).
 
 ![](assets/s_ncs_user_delivery_tracking_tab.png)
 
@@ -164,4 +165,3 @@ Des problèmes système peuvent empêcher les serveurs de traiter efficacement l
 >[!NOTE]
 >
 >En tant qu’utilisateur de Campaign v8 Managed Cloud Services, la surveillance de l’infrastructure serveur est gérée par Adobe. Si vous rencontrez des problèmes de performances persistants lors de l’envoi de la diffusion, contactez l’Assistance clientèle d’Adobe avec vos logs de diffusion.
-

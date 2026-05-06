@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 6fbe5616-7b8b-4504-988b-2bbbfd062548
 source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 100%
+source-wordcount: '889'
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ Vous pouvez créer une liste à l&#39;aide de l&#39;activité **Mettre à jour l
 
 Regardez cette vidéo pour en savoir plus sur la gestion des listes dans Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426459?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3426459?captions=fre_fr&quality=12)
 
 
 ## Créer une liste de contacts {#create-a-list-of-contacts}
@@ -52,7 +52,7 @@ Pour créer une liste de contacts, procédez comme suit :
 
    Vous pouvez créer un nouveau profil et l&#39;ajouter dans la liste directement depuis cette fenêtre à l&#39;aide de l&#39;icône **[!UICONTROL Créer]**. Le profil sera ajouté à la base de données.
 
-1. Cliquez sur le bouton **[!UICONTROL Enregistrer]** pour enregistrer cette liste. Elle est alors ajoutée dans la vue d&#39;ensemble des listes.
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer la liste. Il est ensuite ajouté à la vue d’ensemble des listes.
 
 
 ## Convertir des contacts filtrés en liste {#convert-data-to-a-list}
@@ -71,7 +71,7 @@ Vous pouvez sélectionner des profils et les ajouter à une liste. Pour ce faire
 
    ![](assets/select-the-list.png)
 
-1. Cliquez sur le bouton **[!UICONTROL Démarrer]** pour lancer l&#39;opération.
+1. Cliquez sur le bouton **[!UICONTROL Démarrer]** pour lancer l’opération.
 
    ![](assets/record-a-list.png)
 
@@ -103,7 +103,7 @@ Dans l&#39;exemple ci-dessous, vous créez une liste de tous les destinataires c
 
    ![](assets/targeting-wf-age-filter.png)
 
-   Découvrez comment créer une requête dans un workflow dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=fr){target="_blank"}.
+   Découvrez comment créer une requête dans un workflow dans [cette section](https://experienceleague.adobe.com/fr/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=fr){target="_blank"}.
 
 1. Ajoutez un libellé pour cette requête et enregistrez vos modifications.
 1. Ajoutez une activité **[!UICONTROL Mise à jour de liste]** et modifiez-la.

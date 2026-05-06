@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: Activités d'action dans les workflows
+title: Activités d’action dans les workflows
 description: À propos des activités d'action
 feature: Workflows, Data Management
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: feed4cc1-d654-45e7-a3b2-2bc46418a90b
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '198'
+workflow-type: tm+mt
+source-wordcount: '199'
 ht-degree: 100%
 
 ---

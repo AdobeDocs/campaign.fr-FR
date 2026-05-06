@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 89%
+source-wordcount: '1163'
+ht-degree: 85%
 
 ---
 
@@ -36,14 +36,14 @@ L’accès à l’application peut se faire de différentes manières : interfa
 
 ## Environnement de développement {#dev-env}
 
-Adobe Campaign est une plateforme unique comprenant différentes applications visant à créer une architecture ouverte et évolutive. La plateforme Adobe Campaign est écrite sur une couche d&#39;application flexible. Elle est facilement configurable pour répondre aux besoins de votre entreprise. L&#39;architecture distribuée assure une évolutivité linéaire du système, capable de passer de milliers de messages à des millions.
+Adobe Campaign est une plateforme unique comprenant différentes applications visant à créer une architecture ouverte et évolutive. La plateforme Adobe Campaign est écrite sur une couche d&#39;application flexible. Elle est facilement configurable pour répondre aux besoins de votre entreprise. L’architecture distribuée assure une évolutivité linéaire du système, capable de passer de milliers de messages à des millions.
 
 Certains modules Campaign fonctionnent en continu, tandis que d&#39;autres sont démarrés ponctuellement pour effectuer des actions d&#39;administration (par exemple configurer la connexion à la base de données) ou lancer une tâche récurrente (par exemple consolider les informations de tracking).
 
 On distingue trois types de modules Adobe Campaign :
 
-* **Modules multi-instances** : un seul processus est exécuté pour toutes les instances. Cela s&#39;applique aux modules suivants : web, syslogd, trackinglogd et watchdog.
-* **Modules mono-instances** : un processus est exécuté par instance. Cela s&#39;applique aux modules suivants : mta, wfserver, inMail, sms et stat.
+* **Modules multi-instances** : un seul processus est exécuté pour toutes les instances. Cela s’applique aux modules suivants : web, syslogd, trackinglogd et watchdog.
+* **Modules mono-instances** : un processus est exécuté par instance. Cela s’applique aux modules suivants : mta, wfserver, inMail, sms et stat.
 * **Modules utilitaires** : il s&#39;agit de modules démarrés occasionnellement pour réaliser des opérations ponctuelles ou récurrentes (nettoyage, configuration, téléchargement de logs de tracking, etc.).
 
 Les principaux processus sont les suivants :
@@ -56,15 +56,15 @@ Les principaux processus sont les suivants :
    * **Nettoyage** : nettoie la base de données, vide les anciens enregistrements et évite que la base de données ne se développe de manière exponentielle.
    * **Facturation** : envoie un rapport d&#39;activité pour la plateforme (taille de la base, nombre d&#39;actions marketing, etc.).
 
-* **Serveur de diffusion** (nlserver mta) : Adobe Campaign dispose d’une fonctionnalité de diffusion d’emails native. Ce processus fonctionne comme un agent de transfert d’e-mails SMTP (MTA). Il effectue une personnalisation « un à un » des messages et gère leur diffusion physique. Il s&#39;exécute à l&#39;aide de traitements de diffusion et gère les reprises automatiques. De plus, lorsque le tracking est activé, il remplace automatiquement les URL afin qu&#39;elles pointent vers le serveur de redirection. Ce processus peut assurer la personnalisation et l’envoi automatique vers un prestataire externe pour les diffusions de type SMS, Fax ou Courrier.
+* **Serveur de diffusion** (nlserver mta) : Adobe Campaign dispose d’une fonctionnalité de diffusion d’emails native. Ce processus fonctionne comme un agent de transfert d’e-mails SMTP (MTA). Il effectue une personnalisation « un à un » des messages et gère leur diffusion physique. Il s&#39;exécute à l&#39;aide de traitements de diffusion et gère les reprises automatiques. De plus, lorsque le tracking est activé, il remplace automatiquement les URL afin qu&#39;elles pointent vers le serveur de redirection. Ce processus peut assurer la personnalisation et l&#39;envoi automatique vers un prestataire externe pour les diffusions de type SMS, Fax ou Courrier papier.
 
 * **Serveur de redirection** (nlserver webmdl) : pour les e-mails, Adobe Campaign gère automatiquement le suivi des ouvertures et des clics (le suivi transactionnel au niveau du site web est une autre possibilité). Pour ce faire, les URL intégrées dans les e-mails sont réécrites afin de pointer vers ce module qui enregistre la transmission de l’utilisateur Internet avant de le rediriger vers l’URL requise.
 
-  Pour garantir une disponibilité maximale, ce processus est totalement indépendant de la base de données : les autres processus serveur communiquent uniquement avec elle à l&#39;aide d&#39;appels SOAP (HTTP, HTTP(S) et XML). Techniquement, cette fonctionnalité est implémentée dans un module d&#39;extension d&#39;un serveur HTTP (extension ISAPI dans IIS, ou module DSO Apache, etc.) et n&#39;est disponible que sous Windows.
+  Pour garantir une disponibilité maximale, ce processus est totalement indépendant de la base de données : les autres processus serveur communiquent uniquement avec elle à l&#39;aide d&#39;appels SOAP (HTTP, HTTP(S) et XML). Techniquement, cette fonctionnalité est implémentée dans un module d&#39;extension d&#39;un serveur HTTP (extension ISAPI dans IIS, ou module DSO Apache, etc.) et est disponible uniquement sous Windows.
 
-D’autres processus plus techniques sont également disponibles :
+D&#39;autres processus plus techniques sont également disponibles :
 
-* **Gérer les e-mails de rebond** (nlserver inMail) : ce processus permet de récupérer automatiquement les e-mails des boîtes de réception configurées pour recevoir les messages rebonds renvoyés en cas d’échec de la diffusion. Ces messages sont ensuite soumis à un traitement selon des règles afin de déterminer les raisons de leur non-diffusion (destinataire inconnu, dépassement de quota, etc.) et de mettre à jour l&#39;état de la diffusion dans la base de données. Toutes ces opérations sont entièrement automatiques et préconfigurées.
+* **Gérer les e-mails de rebond** (nlserver inMail) : ce processus permet de récupérer automatiquement les e-mails des boîtes de réception configurées pour recevoir les messages rebonds renvoyés en cas d’échec de la diffusion. Ces messages sont ensuite soumis à un traitement selon des règles afin de déterminer les raisons de leur non-diffusion (destinataire inconnu, dépassement de quota, etc.) et pour mettre à jour le statut de la diffusion dans la base de données. Toutes ces opérations sont entièrement automatiques et préconfigurées.
 
 * **Statut de diffusion par SMS (nlserver sms)** : ce processus interroge le routeur des SMS afin de collecter le statut de la progression et de mettre à jour la base de données.
 
@@ -81,7 +81,7 @@ D’autres processus plus techniques sont également disponibles :
 
 ## Conteneurs de base de données {#db-containers}
 
-Dans son [déploiement Grands comptes (FFDA)](enterprise-deployment.md), la base de données cloud d’Adobe Campaign repose sur des [!DNL Snowflake] qui contiennent les données fonctionnelles (profils, abonnements, contenu, etc.), les données techniques (traitement et journaux de diffusion, logs de tracking, etc.) et les données de travail (achats, prospects) pour la solution. Tous les composants d’Adobe Campaign communiquent avec la base de données afin d’exécuter leurs tâches spécifiques.
+Dans son [Déploiement Enterprise (FFDA)](enterprise-deployment.md), la base de données cloud d’Adobe Campaign repose sur des [!DNL Snowflake] qui contiennent les données fonctionnelles (profils, abonnements, contenu, etc.), les données techniques (traitement et journaux de diffusion, logs de tracking, etc.) ainsi que les données de travail (achats, leads) pour la solution. En outre, tous les composants Adobe Campaign communiquent avec la base de données afin d’exécuter leurs tâches spécifiques.
 
 Vous pouvez déployer Adobe Campaign à l&#39;aide de la base de données et des schémas prédéfinis. Si nécessaire, cet environnement prédéfini peut être étendu. Toutes les données du datamart sont accessibles par Adobe Campaign via des appels SQL. Adobe Campaign fournit également un ensemble complet d’outils ETL (extraction, transformation, chargement) pour importer et exporter des données dans et en dehors du système.
 

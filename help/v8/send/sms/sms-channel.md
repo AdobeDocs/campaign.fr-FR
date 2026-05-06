@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: abab6f15-43ea-42fc-817b-8dbd88df82f7
 source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 100%
+source-wordcount: '1353'
+ht-degree: 97%
 
 ---
 
@@ -53,7 +53,7 @@ Dans le protocole SMPP, le texte GSM7 sera étendu à 8 bits par caractère pou
 En cas de problème d&#39;encodage, voici quelques éléments importants à vérifier :
 * Assurez-vous d’abord de bien identifier quels caractères appartiennent à quel encodage. Le GSM7 est souvent critiqué pour sa gestion imparfaite des accents et autres signes diacritiques. Surtout en français, où &quot;é&quot; et &quot;è&quot; font partie de GSM7, mais &quot;ê&quot;, &quot;â&quot; ou &quot;ï&quot; non. Il en va de même pour l&#39;espagnol.
 * Le C avec cédille (ç) n’est présent que dans les majuscules de l’alphabet GSM7, mais certains téléphones le rendent en minuscules ou « smart » : la recommandation générale est de l’éviter complètement et de supprimer la cédille (le texte reste tout à fait compréhensible en français) ou de passer au système UCS-2.
-* **Évitez d’utiliser le format ASCII dans les SMS.** sauf requête explicite du fournisseur SMPP : cet encodage réduit l’espace car il contient des caractères 8 bits et une couverture inférieure à celle de GSM7. Cet encodage peut être requis pour les réseaux CDMA (utilisés en Amérique du Nord).
+* **N’utilisez pas d’ASCII dans les SMS !** sauf si le fournisseur SMPP le demande explicitement : cet encodage gaspille de l’espace, car il contient des caractères 8 bits et une couverture inférieure à celle de GSM7. Cet encodage peut être requis pour les réseaux CDMA (utilisés en Amérique du Nord).
 * Latin-1 n&#39;est pas toujours pris en charge. Vérifiez la compatibilité avec votre fournisseur SMSC avant de tenter d’utiliser Latin-1.
 * Les tableaux de conversion de langue nationale ne sont pas pris en charge par le connecteur Adobe Campaign. Vous devez utiliser UCS-2 ou un autre data_coding à la place.
 * UCS-2 et UTF-16 sont souvent mélangés par les téléphones. Il s’agit d’un problème pour les personnes envoyant des émoticônes et autres caractères peu utilisés, non présents dans UCS-2.

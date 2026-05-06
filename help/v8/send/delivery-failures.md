@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '3464'
-ht-degree: 87%
+source-wordcount: '3496'
+ht-degree: 76%
 
 ---
 
@@ -29,13 +29,13 @@ Lorsqu&#39;une adresse e-mail est mise en quarantaine ou qu&#39;un profil est en
 
 Deux types d&#39;erreur sont liés à un message en échec. Chaque type d&#39;échec de diffusion détermine si une adresse est envoyée en [quarantaine](quarantines.md#quarantine-reason) ou non.
 
-* **Rebonds définitifs**
-Les rebonds définitifs sont des échecs permanents générés lorsqu’un FAI détermine qu’une tentative de publipostage vers une adresse d’abonné n’est pas livrable. Dans Adobe Campaign, les rebonds définitifs indiqués comme non diffusables sont ajoutés à la liste de quarantaine, ce qui signifie qu’ils ne feront pas l’objet d’une nouvelle tentative. Dans certains cas, un rebond définitif peut être ignoré si la cause de l’échec est inconnue.
+* **Erreurs hard**
+Les erreurs hard sont des échecs permanents générés lorsqu&#39;un FAI détermine qu&#39;une tentative de publipostage vers une adresse d&#39;abonné n&#39;est pas livrable. Dans Adobe Campaign, les rebonds définitifs indiqués comme non diffusables sont ajoutés à la liste de quarantaine, ce qui signifie qu’ils ne feront pas l’objet d’une nouvelle tentative. Dans certains cas, un rebond définitif peut être ignoré si la cause de l’échec est inconnue.
 
   Voici quelques exemples courants de rebonds définitifs : adresse inexistante, compte désactivé, syntaxe incorrecte, domaine incorrect.
 
-* **Rebonds temporaires**
-Les rebonds temporaires sont des échecs temporaires que les FAI génèrent lorsqu’ils ont des difficultés à diffuser des e-mails. Les échecs de type soft feront l&#39;objet de plusieurs [reprises](#retries) (avec des variations selon l&#39;utilisation de paramètres de diffusion personnalisés ou prêts à l&#39;emploi) afin de tenter une diffusion réussie. Les adresses qui continuent à provoquer des rebonds temporaires ne seront pas mises en quarantaine tant que le nombre maximum de tentatives n’aura pas été effectué (qui varie encore selon les paramètres).
+* **Soft bounces**
+Les soft bounces sont des échecs temporaires générés par les FAI lorsqu&#39;ils ont des difficultés à diffuser des emails. Les échecs de type soft feront l&#39;objet de plusieurs [reprises](#retries) (avec des variations selon l&#39;utilisation de paramètres de diffusion personnalisés ou prêts à l&#39;emploi) afin de tenter une diffusion réussie. Les adresses qui continuent à provoquer des rebonds temporaires ne seront pas mises en quarantaine tant que le nombre maximum de tentatives n’aura pas été effectué (qui varie encore selon les paramètres).
 
   Voici quelques causes courantes des rebonds temporaires : boîte pleine, serveur de messagerie de réception en panne, problèmes de réputation de l’expéditeur
 
@@ -49,7 +49,7 @@ Une diffusion de message peut échouer immédiatement. Dans ce cas, nous qualifi
 
 Ces types d&#39;erreurs sont gérés comme suit :
 
-* **Erreur synchrone** : le serveur distant contacté par le serveur de diffusion Adobe Campaign retourne immédiatement un message d&#39;erreur. L&#39;envoi de la diffusion au serveur du profil n&#39;est pas autorisé. Le MTA (Mail Transfer Agent) détermine le type de rebond et qualifie l’erreur, puis renvoie ces informations à Campaign afin de déterminer si les adresses e-mail concernées doivent être mises en quarantaine. Voir [Qualification des e-mails rejetés](#bounce-mail-qualification).
+* **Erreur synchrone** : le serveur distant contacté par le serveur de diffusion Adobe Campaign retourne immédiatement un message d&#39;erreur. L’envoi de la diffusion au serveur du profil n’est pas autorisé. Le MTA (Mail Transfer Agent) détermine le type de rebond et qualifie l’erreur, puis renvoie ces informations à Campaign afin de déterminer si les adresses e-mail concernées doivent être mises en quarantaine. Voir [Qualification des e-mails rejetés](#bounce-mail-qualification).
 
 * **Erreur asynchrone** : un e-mail rejeté ou un SR est renvoyé plus tard par le serveur de réception. Cette erreur est qualifiée avec un libellé associé à l&#39;erreur. Les erreurs asynchrones peuvent se produire jusqu&#39;à une semaine après l&#39;envoi d&#39;une diffusion.
 
@@ -137,7 +137,7 @@ Pour le canal e-mail, les raisons possibles d&#39;un échec de diffusion sont r�
    <td> Compte désactivé </td> 
    <td> Soft/Hard </td> 
    <td> 4 </td> 
-   <td> Le compte associé à l’adresse n’est plus actif. Lorsque le fournisseur d’accès internet (FAI) détecte une inactivité prolongée, il peut fermer le compte de l’utilisateur ou de l’utilisatrice, ce qui rend les diffusions vers son adresse impossibles. Si le compte est temporairement désactivé en raison d’une inactivité de 6 mois et qu’il peut toujours être activé, le statut En erreur sera affecté. De nouvelles tentatives vers ce compte seront alors effectuées jusqu’à ce que le compteur d’erreurs atteigne 5. Si l’erreur indique que le compte est définitivement désactivé, il sera directement placé en quarantaine.<br /> </td> 
+   <td> Le compte associé à l'adresse n'est plus actif. Lorsque le fournisseur d’accès Internet (FAI) détecte une longue période d’inactivité, il peut fermer le compte de l’utilisateur. Les diffusions vers l'adresse de l'utilisateur seront alors impossibles. Si le compte est temporairement désactivé en raison de six mois d’inactivité et qu’il peut toujours être activé, le statut Avec des erreurs sera affecté et une nouvelle tentative sera effectuée pour le compte jusqu’à ce que le compteur d’erreurs atteigne 5. Si l’erreur indique que le compte est définitivement désactivé, il sera directement placé en quarantaine.<br /> </td> 
   </tr> 
   <tr> 
    <td> Adresse en quarantaine </td> 
@@ -197,13 +197,13 @@ Pour le canal e-mail, les raisons possibles d&#39;un échec de diffusion sont r�
    <td> Domaine invalide </td> 
    <td> Soft </td> 
    <td> 2 </td> 
-   <td> Le domaine de l’adresse e-mail est incorrect ou n’existe plus. Ce profil sera ciblé de nouveau jusqu’à ce que le compteur d’erreurs atteigne 5. Ensuite, l’enregistrement sera défini sur le statut Quarantaine et aucune autre reprise ne sera effectuée.<br /> </td> 
+   <td> Le domaine de l’adresse e-mail est incorrect ou n’existe plus. Ce profil sera ciblé de nouveau jusqu’à ce que le nombre d’erreurs atteigne 5. Ensuite, l’enregistrement sera défini sur le statut Quarantaine et aucune autre reprise ne sera effectuée.<br /> </td> 
   </tr> 
   <tr> 
    <td> Boîte pleine </td> 
    <td> Soft </td> 
    <td> 5 </td> 
-   <td> La boîte aux lettres de cet utilisateur est pleine et ne peut pas accepter d’autres messages. Ce profil sera ciblé de nouveau jusqu’à ce que le nombre d’erreurs atteigne 5. Ensuite, l’enregistrement sera défini sur le statut Quarantaine et aucune autre reprise ne sera effectuée.<br /> Ce type d'erreur est géré par un processus de nettoyage, l'adresse est défini sur un statut valide au bout de 30 jours.<br /> Avertissement : pour que l'adresse soit automatiquement retirée de la liste des adresses en quarantaine, le workflow technique Nettoyage de la base de données doit être démarré.<br /> </td> 
+   <td> La boîte aux lettres de cet utilisateur est pleine et ne peut pas accepter d’autres messages. Ce profil sera ciblé de nouveau jusqu’à ce que le nombre d’erreurs atteigne 5. Ensuite, l’enregistrement sera défini sur le statut Quarantaine et aucune autre reprise ne sera effectuée.<br /> Ce type d’erreur est géré par un processus de nettoyage. L’adresse est définie sur un statut valide après 30 jours.<br /> Avertissement : pour que l'adresse soit automatiquement retirée de la liste des adresses en quarantaine, le workflow technique Nettoyage de la base de données doit être démarré.<br /> </td> 
   </tr> 
   <tr> 
    <td> Non connecté </td> 
@@ -245,7 +245,7 @@ Pour le canal e-mail, les raisons possibles d&#39;un échec de diffusion sont r�
    <td> Inatteignable </td> 
    <td> Soft/Hard </td> 
    <td> 3 </td> 
-   <td> Une erreur s’est produite dans la chaîne de diffusion du message. Il peut s’agir d’un incident concernant le relais SMTP, d’un domaine temporairement inaccessible, etc. En fonction de l’erreur, l’adresse sera réessayée jusqu’à ce que le compteur d’erreurs atteigne 5, ou elle sera directement mise en quarantaine.<br /> </td> 
+   <td> Une erreur s’est produite dans la chaîne de diffusion du message. Il peut s’agir d’un incident sur le relais SMTP, d’un domaine temporairement inaccessible, etc. En fonction de l’erreur, l’adresse sera réessayée jusqu’à ce que le compteur d’erreurs atteigne 5, ou elle sera directement mise en quarantaine.<br /> </td> 
   </tr> 
   <tr> 
    <td> Utilisateur inconnu </td> 
@@ -321,7 +321,7 @@ Si l&#39;APNS renvoie de manière synchrone un statut &quot;désinscrit&quot; po
    <td> Non<br /> </td> 
   </tr> 
   <tr> 
-   <td> Problème de certificat (mot de passe, endommagement, etc.) et problème de test de connexion à l'APNS<br /> </td> 
+   <td> Problème de certificat (mot de passe, corruption, etc.) et tester la connexion au problème APNs <br /> </td> 
    <td> Echec<br /> </td> 
    <td> Messages d'erreur différents selon l'erreur<br /> </td> 
    <td> Soft<br /> </td> 
@@ -361,7 +361,7 @@ Si l&#39;APNS renvoie de manière synchrone un statut &quot;désinscrit&quot; po
 
 **Pour Android V1**
 
-Pour chaque notification, Adobe Campaign reçoit les erreurs synchrones directement du serveur FCM. Adobe Campaign les gère à la volée et génère des erreurs hard ou soft selon la gravité des erreurs. Des reprises peuvent être effectuées :
+Pour chaque notification, Adobe Campaign reçoit les erreurs synchrones directement du serveur FCM. Adobe Campaign les gère à la volée et génère des erreurs hard ou soft en fonction de la gravité de l&#39;erreur. Des reprises peuvent être effectuées :
 
 * Dépassement de la longueur de la payload, problème de connexion, problème lié à la disponibilité du service : reprise effectuée, erreur soft, raison de l&#39;échec : **[!UICONTROL Refusés]**.
 * Dépassement du quota d&#39;appareils : aucune reprise, erreur soft, raison de l&#39;échec : **[!UICONTROL Refusés]**.
@@ -400,7 +400,7 @@ Le mécanisme de mise en quarantaine d&#39;Android V2 utilise le même processu
   <tr> 
    <td> Création du message/phase d'analyse : mots-clés illégaux utilisés dans les champs personnalisés<br /> </td> 
    <td> Echec<br /> </td> 
-   <td> Les mots-clés suivants ne peuvent être utilisés : {1}<br /> </td> 
+   <td> Les mots-clés suivants ne peuvent pas être utilisés : {1}<br /> </td> 
    <td> Soft<br /> </td> 
    <td> </td> 
    <td> Non<br /> </td> 
@@ -408,7 +408,7 @@ Le mécanisme de mise en quarantaine d&#39;Android V2 utilise le même processu
   <tr> 
    <td> Création du message/phase d'analyse : payload trop volumineuse<br /> </td> 
    <td> Echec<br /> </td> 
-   <td> La notification est trop lourde : {1} bits contre {2} autorisés<br /> </td> 
+   <td> La notification est trop lourde : {1} bits, alors que seuls les {2} sont autorisés<br /> </td> 
    <td> Soft<br /> </td> 
    <td> Refusés<br /> </td> 
    <td> Non<br /> </td> 
@@ -416,7 +416,7 @@ Le mécanisme de mise en quarantaine d&#39;Android V2 utilise le même processu
   <tr> 
    <td> Perte de la connexion réseau pendant l'envoi<br /> </td> 
    <td> Echec<br /> </td> 
-   <td> Aucune réponse du service Firebase Cloud Messaging pour cette adresse : {1}<br /> </td> 
+   <td> Aucune réponse du service Firebase Cloud Messaging à l'adresse : {1}<br />. </td> 
    <td> Soft<br /> </td> 
    <td> Inatteignable<br /> </td> 
    <td> Oui<br /> </td> 
@@ -456,7 +456,7 @@ Le mécanisme de mise en quarantaine d&#39;Android V2 utilise le même processu
   <tr> 
    <td> Rejet du message par le FCM : toutes les autres erreurs<br /> </td> 
    <td> Echec<br /> </td> 
-   <td> Le serveur Firebase Cloud Messaging a retourné un code d'erreur non attendu : {1} </td> 
+   <td> Le serveur Firebase Cloud Messaging a renvoyé un code d'erreur inattendu : {1}. </td> 
    <td> </td> 
    <td> Refusés<br /> </td> 
    <td> Non<br /> </td> 
@@ -639,7 +639,7 @@ Les spécificités du canal SMS sont énumérées ci-dessous.
   <tr> 
    <td> Accusé de réception du MT non valide<br /> </td> 
    <td> Echec<br /> </td> 
-   <td> Erreur '{1}' lors du traitement de la trame d'accusé réception d'une requête d'envoi.<br /> </td> 
+   <td> Erreur '{1}' lors du traitement de la trame d'accusé de réception pour la requête d'envoi<br /> </td> 
    <td> Soft<br /> </td> 
    <td> Inatteignable<br /> </td> 
   </tr> 
@@ -678,7 +678,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 * Tous les messages d&#39;erreur commencent par **SR** pour faire la distinction entre les codes d&#39;erreur SMS et les codes d&#39;erreur email.
 * La seconde partie (**Generic**, dans cet exemple) du message d&#39;erreur fait référence au nom de l&#39;implémentation du SMSC comme défini dans le champ **[!UICONTROL Nom de l&#39;implémentation du SMSC]** du compte externe SMS.
 
-  Comme un même code d&#39;erreur peut avoir une signification différente pour chaque prestataire, ce champ vous permet de déterminer quel prestataire a généré le code d&#39;erreur. Vous pouvez alors rechercher l&#39;erreur dans la documentation du prestataire adéquat.
+  Le même code d’erreur pouvant avoir une signification différente pour chaque fournisseur, ce champ vous permet de savoir quel fournisseur a généré le code d’erreur. Vous pouvez ensuite trouver l’erreur dans la documentation du fournisseur approprié.
 
 * La troisième partie (**DELIVRD**, dans cet exemple) du message d&#39;erreur correspond au code d&#39;état récupéré du SR à l&#39;aide de la regex d&#39;extraction de code d&#39;état définie dans le compte externe SMS.
 
@@ -693,7 +693,7 @@ Par défaut, la regex extrait le champ **stat:** comme défini dans la section *
 
 * Tout ce qui se trouve après la barre verticale (|) s’affiche uniquement dans la colonne **[!UICONTROL Premier texte]** du tableau **[!UICONTROL Qualification des logs de diffusion]**. Ce contenu est toujours remplacé par **#MESSAGE#** une fois le message normalisé. Ce processus évite d’avoir plusieurs entrées pour des erreurs similaires et est identique à celui des e-mails.
 
-Le connecteur SMPP générique étendu applique une méthode heuristique pour rechercher des valeurs par défaut cohérentes : si le statut commence par **DELIV**, il est considéré comme une réussite, car il correspond aux statuts **DELIVRD** ou **DELIVERED** courants, utilisés par la plupart des prestataires. Tout autre statut correspond à un échec définitif.
+Le connecteur SMPP générique étendu applique une méthode heuristique pour rechercher des valeurs par défaut sensibles : si l&#39;état commence par **DELIV**, il est considéré comme une réussite, car il correspond aux états courants **DELIVRD** ou **DELIVERED** utilisés par la plupart des fournisseurs. Tout autre statut entraîne une défaillance matérielle.
 
 ## Résolution des problèmes de diffusion {#troubleshooting}
 

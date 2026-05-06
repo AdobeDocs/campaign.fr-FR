@@ -6,9 +6,9 @@ feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: c3a80871-e045-454c-b1ca-8f484d2e14e1
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '860'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '866'
+ht-degree: 90%
 
 ---
 
@@ -46,11 +46,11 @@ Pour cela, les étapes sont les suivantes :
    ![](assets/s_ncs_user_create_exp_exple_a.png)
 
 1. Choisissez l&#39;option **[!UICONTROL Editer la formule à partir d&#39;une expression]** et cliquez sur le bouton **[!UICONTROL Suivant]** afin d&#39;afficher l&#39;éditeur d&#39;expressions.
-1. Dans la liste des fonctions, double-cliquez sur la fonction **[!UICONTROL Day]** accessible depuis le noeud **[!UICONTROL Date]**. Cette fonction renvoie le nombre représentant le jour de la date passée en paramètre.
+1. Dans la liste des fonctions, double-cliquez sur la fonction **[!UICONTROL Day]** accessible depuis le noeud **[!UICONTROL Date]**. Cette fonction renvoie le nombre représentant le jour correspondant à la date passée en paramètre.
 
    ![](assets/s_ncs_user_create_exp_exple01.png)
 
-1. Dans la liste des champs disponibles, double-cliquez sur la **[!UICONTROL Date de naissance]**. La section supérieure de l&#39;éditeur d&#39;expression affiche alors la formule suivante :
+1. Dans la liste des champs disponibles, double-cliquez sur **[!UICONTROL Date de naissance]**. La section supérieure de l&#39;éditeur affiche alors la formule suivante :
 
    ```
    Day(@birthDate)
@@ -98,7 +98,7 @@ Pour réaliser ce cas d&#39;utilisation, nous avons créé le workflow de ciblag
 
 
 
-Si l&#39;année en cours **n&#39;est pas une année bissextile** et que le workflow est exécuté le 1er mars, il faut sélectionner tous les destinataires dont l&#39;anniversaire était la veille (le 29 février) et les ajouter à la liste des destinataires. Dans tous les autres cas, aucune action supplémentaire n&#39;est requise.
+Si l’année en cours **n’est pas une année bissextile** et que le workflow est exécuté le 1er mars, nous devons sélectionner tous les destinataires qui auraient eu leur anniversaire hier (29 février) et les ajouter à la liste des destinataires. Dans tous les autres cas, aucune action supplémentaire n’est requise.
 
 ### Étape 1 : sélectionner les destinataires {#step-1--selecting-the-recipients}
 
@@ -190,7 +190,7 @@ Ajoutez une activité de type **Diffusion récurrente** basée sur le modèle de
 
 >[!CAUTION]
 >
->Pour que les workflows s’exécutent, les workflows techniques liés au package Campaign doivent être démarrés. Voir à ce sujet la section [Liste des workflows techniques](technical-workflows.md).
+>Pour que les workflows s’exécutent, les workflows techniques liés au kit de campagne doivent être démarrés. Voir à ce sujet la section [Liste des workflows techniques](technical-workflows.md).
 >
 >Si les étapes d&#39;approbation sont activées pour la campagne, les diffusions ne sont envoyées qu&#39;une fois ces étapes confirmées. Pour plus d&#39;informations, reportez-vous à .
 

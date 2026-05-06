@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
 source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
-workflow-type: ht
-source-wordcount: '1319'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1309'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Les composants d’orchestration de Campaign se trouvent dans l’onglet **[!UICONTROL Campagnes]** : vous y trouverez un aperçu des programmes et campagnes marketing, ainsi que des éléments connexes.
 
-Un programme marketing est constitué de campagnes, elles-mêmes constituées de diffusions, de ressources, etc. Toutes les informations relatives aux diffusions, budgets, validants et documents connexes sont regroupées au sein de la campagne.
+Un programme marketing est constitué de campagnes, qui sont constituées de diffusions, de ressources, etc. Toutes les informations relatives aux diffusions, budgets, validants et documents associés sont regroupées au sein de la campagne.
 
 ![](assets/campaigns-create-from-home.png)
 
@@ -57,7 +57,7 @@ Lorsque vous éditez un programme, utilisez les onglets présentés ci-dessous p
 
 * L&#39;onglet **Planning** affiche le calendrier du programme sur un mois, une semaine ou une journée selon que vous cliquez sur l&#39;un des onglets dans l&#39;en-tête du calendrier. Vous pouvez créer une campagne, un programme ou une tâche à partir de cette page. [En savoir plus](#campaign-calendar)
 
-* L&#39;onglet **Modifier** vous permet de modifier le programme : son nom, ses dates de début et fin, son budget, ses documents associés, etc.
+* L’onglet **Modifier** vous permet de modifier le programme : son nom, ses dates de début et fin, son budget, ses documents associés, etc.
 
   ![](assets/new-program-edit-tab.png)
 
@@ -67,7 +67,7 @@ Lorsque vous éditez un programme, utilisez les onglets présentés ci-dessous p
 
 Vous pouvez créer une campagne à partir de la liste des campagnes. Pour afficher cette vue, sélectionnez le menu **[!UICONTROL Campagnes]** dans le tableau de bord **[!UICONTROL Campagnes]**, puis cliquez sur **[!UICONTROL Créer]**.
 
-Le champ **[!UICONTROL Programme]** permet de sélectionner le programme auquel sera rattachée l’opération. Cette information est obligatoire.
+Le champ **[!UICONTROL Programme]** permet de sélectionner le programme auquel sera rattachée la campagne. Cette information est obligatoire.
 
 ![](assets/new-campaign-settings.png)
 
@@ -98,13 +98,13 @@ Accédez aux sections suivantes pour apprendre à configurer votre campagne :
 
 ### Modifier les paramètres de la campagne {#campaign-settings}
 
-Les campagnes sont créées à partir de modèles de campagne. Vous pouvez configurer des modèles réutilisables pour lesquels certaines options sont sélectionnées et d’autres paramètres sont déjà enregistrés.
+Les campagnes sont créées à l’aide de modèles de campagne. Vous pouvez configurer des modèles réutilisables pour lesquels certaines options sont sélectionnées et d’autres paramètres sont déjà enregistrés.
 
 Pour chaque campagne, les fonctionnalités suivantes sont disponibles :
 
 * Documents de référence et ressources : vous pouvez associer des documents à la campagne (brief, compte-rendu, images, etc.). Tous les formats de document sont pris en charge. [En savoir plus](marketing-campaign-deliveries.md#manage-associated-documents).
-* Définir les coûts : pour chaque campagne, Adobe Campaign permet de définir les postes de coût et les structures de calcul des coûts qui pourront être utilisés lors de la création de la campagne marketing. Par exemple : coûts d’impression, utilisation d’une agence externe, location de salle, etc. [En savoir plus](providers-stocks-and-budgets.md#defining-cost-categories).
-* Définir des objectifs : vous pouvez définir des objectifs quantifiables pour une campagne, tels que le nombre d’abonnés, le chiffre d’affaires, etc. Ces informations sont ensuite utilisées dans les rapports de campagne.
+* Définir les coûts : pour chaque campagne, Adobe Campaign permet de définir les postes de coût et les structures de calcul des coûts qui pourront être utilisés lors de la création de la campagne marketing. Par exemple : frais d&#39;impression, recours à une agence externe, location de salle, etc. [En savoir plus](providers-stocks-and-budgets.md#defining-cost-categories).
+* Définir des objectifs : vous pouvez définir des objectifs à réaliser dans le cadre d&#39;une campagne. Ces objectifs sont quantifiables, par exemple : nombre d&#39;abonnés à atteindre, chiffre d&#39;affaires à réaliser, etc. Ces informations sont ensuite utilisées dans les rapports de campagne.
 * Gérer les adresses de contrôle et les populations témoin. [En savoir plus](marketing-campaign-deliveries.md#defining-a-control-group).
 * Gestion des validations : vous pouvez sélectionner les traitements qui feront l&#39;objet d&#39;une validation et éventuellement sélectionner les opérateurs ou groupes d&#39;opérateurs validants. [En savoir plus](marketing-campaign-approval.md#checking-and-approving-deliveries).
 
@@ -116,7 +116,7 @@ Pour chaque campagne, les fonctionnalités suivantes sont disponibles :
 
 Pour chaque campagne, les traitements, ressources et diffusions sont regroupés dans le tableau de bord. Cette interface vous permet de gérer et d&#39;orchestrer des actions marketing.
 
-Avec Adobe Campaign, vous pouvez mettre en place des processus collaboratifs pour la réalisation, mais aussi pour la validation des différentes étapes de vos campagnes : validation du budget, de la cible, du contenu, etc. Cette orchestration est présentée dans [cette section](marketing-campaign-approval.md).
+Avec Adobe Campaign, vous pouvez mettre en place des processus collaboratifs pour la création et la validation des différentes étapes de vos campagnes : validation du budget, de la cible, du contenu, etc. Cette orchestration est présentée dans [cette section](marketing-campaign-approval.md).
 
 ![](assets/campaigns-dashboard-approval-tab.png)
 
@@ -187,7 +187,7 @@ Ce tableau résume les actions que vous pouvez effectuer sur les campagnes à pa
 | Offre | Valider le contenu et l’éligibilité de l’offre<br/>Désactiver une offre en ligne |
 | Tâche | Terminer une tâche<br/>Annuler une tâche |
 | Ressource marketing | Approuver une ressource<br/>Verrouiller et déverrouiller une ressource |
-| Package de campagnes | Soumettre un package pour validation<br/>Valider ou refuser un package<br/>Annuler un package |
+| Kits de campagne | Soumettre un package pour validation<br/>Valider ou refuser un package<br/>Annuler un package |
 | Commande de campagne | Créer une commande<br/>Accepter ou refuser une commande |
 | Stock | Supprimer des données de stock |
 | Simulation d’offres | Démarrer et arrêter une simulation |
@@ -201,11 +201,11 @@ Les validations de la cible ou du contenu d&#39;une diffusion peuvent être réa
 
 ![](assets/web-access-approval.png)
 
-Vous pouvez également utiliser le lien contenu dans les messages de notification. Pour plus d&#39;informations, consultez [cette section](marketing-campaign-approval.md#checking-and-approving-deliveries).
+Vous pouvez également utiliser le lien contenu dans les messages de notification. Pour plus d’informations, consultez [cette section](marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 
 ## Tutoriel vidéo {#video}
 
 Cette vidéo explique comment créer un plan marketing, des programmes et des campagnes.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449897?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3449897?captions=fre_fr&quality=12)

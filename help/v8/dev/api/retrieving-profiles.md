@@ -6,7 +6,7 @@ level: Experienced
 exl-id: 19679804-f728-49fa-b26e-8f31b67c29bf
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '235'
 ht-degree: 100%
 
 ---
@@ -17,7 +17,7 @@ La récupération des profils est effectuée avec une requête **GET**.
 
 Vous pouvez ensuite affiner votre recherche à l’aide de filtres, de classements et de paginations. Pour plus d&#39;informations, consultez la section [Autres opérations](sorting.md).
 
-En outre, les API Campaign Standard vous permettent de rechercher des profils en fonction de l’un de ces champs : email, prénom, nom ou tout champ personnalisé. Voir à ce propos [cette section](#searching-field).
+En outre, les API Campaign Standard vous permettent de rechercher des profils en fonction de l’un de ces champs : email, prénom, nom ou tout champ personnalisé. Pour plus d’informations, consultez [cette section](#searching-field).
 
 <br/>
 

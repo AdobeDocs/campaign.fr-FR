@@ -1,13 +1,13 @@
 ---
 title: Utiliser les données d'un workflow
-description: Découvrez comment utiliser les données d'un workflow.
+description: Découvrez comment utiliser les données d'un workflow
 feature: Workflows, Data Management
 version: Campaign v8, Campaign Classic v7
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '736'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '749'
+ht-degree: 77%
 
 ---
 
@@ -39,7 +39,7 @@ Sélectionnez pour cela le menu correspondant :
 
   ![](assets/wf-right-click-schema.png)
 
-  Pour plus d&#39;informations, consultez [cette section](monitor-workflow-execution.md#worktables-and-workflow-schema).
+  Pour plus d’informations, consultez [cette section](monitor-workflow-execution.md#worktables-and-workflow-schema).
 
 * **[!UICONTROL Analyser la cible...]**
 
@@ -47,13 +47,13 @@ Sélectionnez pour cela le menu correspondant :
 
   Découvrez comment commencer à utiliser l’assistant d’analyse descriptive dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target="_blank"}.
 
-Les données de la cible sont purgées au fur et à mesure de l&#39;exécution du workflow. Seule la dernière table de travail est accessible. Vous pouvez paramétrer le workflow pour que toutes les tables de travail restent accessibles : cochez l’option **[!UICONTROL Conserver le résultat des populations intermédiaires entre deux exécutions]** dans les propriétés du workflow.
+Les données de la cible sont purgées lors de l’exécution du workflow. Seule la dernière table de travail est accessible. Vous pouvez paramétrer le workflow pour que toutes les tables de travail restent accessibles. Pour cela, cochez l&#39;option **[!UICONTROL Conserver le résultat des populations intermédiaires entre deux exécutions]** dans les propriétés du workflow.
 
 ![](assets/wf-purge-data-option.png)
 
 >[!CAUTION]
 >
->Ne cochez **jamais** cette option dans un workflow de **production**. Elle sert à analyser les résultats et est conçue uniquement à des fins de test. Elle ne doit donc être utilisée que dans les environnements de développement ou d&#39;évaluation.
+>Ne cochez **jamais** cette option dans un workflow de **production**. Elle sert à analyser les résultats et est conçue uniquement à des fins de test. Elle ne doit donc être utilisée que dans les environnements de développement ou d’évaluation.
 
 
 ### Utiliser les données de la cible {#target-data}
@@ -66,7 +66,7 @@ Vous pouvez par exemple utiliser les données collectées à travers une liste d
 %= targetData.FIELD %
 ```
 
-Les éléments de personnalisation de type **[!UICONTROL Extension de la cible]** (targetData) ne sont pas disponibles dans les workflows de ciblage. Ainsi, la cible de la diffusion doit être construite dans le workflow et spécifiée dans la transition entrante de la diffusion.
+Les éléments de personnalisation de type **[!UICONTROL Extension de la cible]** (targetData) ne sont pas disponibles pour les workflows de ciblage. La cible de la diffusion doit être construite dans le workflow et spécifiée dans la transition entrante de la diffusion.
 
 Dans l&#39;exemple suivant, vous allez collecter une liste d&#39;informations sur des clients, qui sera utilisée dans un e-mail personnalisé. Les étapes sont les suivantes :
 
@@ -114,12 +114,12 @@ Dans l&#39;exemple suivant, vous allez collecter une liste d&#39;informations su
 
    ![](assets/wf-targetdata-sample-6.png)
 
-   Les données de type **[!UICONTROL Extension de la cible]** (targetData) sont insérées dans les diffusions selon les mêmes caractéristiques que tous les champs de personnalisation. Elles peuvent ainsi par exemple être utilisées dans l&#39;objet du message, les libellés des liens ou les liens eux-mêmes, etc.
+   Les données de type **[!UICONTROL extension cible]** (targetData) sont insérées dans les diffusions en utilisant les mêmes caractéristiques que tous les champs de personnalisation. Ils peuvent également être utilisés dans l’objet, les libellés du lien ou les liens eux-mêmes.
 
 
-## Mettre à jour la base de données {#update-the-database}
+## mettre à jour la base de données. {#update-the-database}
 
-Toutes les données collectées peuvent être utilisées pour mettre à jour la base de données, ou dans des diffusions. Par exemple, vous pouvez enrichir les possibilités de personnalisation du contenu des messages (inclure le nombre de contrats dans le message, indiquer le panier moyen pour l&#39;année écoulée, etc.) ou affiner le ciblage des populations (adresser un message aux co-titulaires d&#39;un contrat, cibler les 1 000 meilleurs abonnés aux services en ligne, etc.). Ces données peuvent également être exportées ou archivées dans une liste.
+Toutes les données collectées peuvent être utilisées pour mettre à jour la base de données ou dans des diffusions. Vous pouvez, par exemple, enrichir les possibilités de personnalisation du contenu des messages (inclure le nombre de contrats dans le message, indiquer le panier moyen pour l’année écoulée, etc.) ou un ciblage détaillé de la population (envoyer un message aux co-titulaires d’un contrat, cibler les 1 000 meilleurs abonnés aux services en ligne, etc.). Ces données peuvent également être exportées ou archivées dans une liste.
 
 ### Mettre à jour les listes  {#list-updates}
 
@@ -127,7 +127,7 @@ Les données de la base Adobe Campaign et les listes existantes peuvent être m
 
 * L&#39;activité **[!UICONTROL Mise à jour de liste]** permet de stocker les tables de travail dans une liste de données.
 
-  Vous pouvez sélectionner une liste existante ou la créer. Dans ce cas, le nom et éventuellement le dossier d&#39;enregistrement sont calculés.
+  Vous pouvez sélectionner une liste existante ou la créer. Dans ce cas, le nom et éventuellement le dossier d’enregistrement sont calculés.
 
   ![](assets/s_user_create_list.png)
 
@@ -139,4 +139,4 @@ Les données de la base Adobe Campaign et les listes existantes peuvent être m
 
 ### Gérer les abonnements {#subscription-management}
 
-Pour comprendre comment abonner et désabonner des destinataires à un service d&#39;information via un workflow, consultez la section [Services d&#39;abonnement](subscription-services.md).
+Pour comprendre comment abonner et désabonner des destinataires à un service d&#39;information via un workflow, consultez la section [Services d’abonnement](subscription-services.md).

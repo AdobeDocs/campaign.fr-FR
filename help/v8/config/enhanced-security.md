@@ -7,8 +7,8 @@ level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
 source-git-commit: 925f8152d28f60f876c5ef4420064fa0d71cdb9d
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 94%
+source-wordcount: '801'
+ht-degree: 90%
 
 ---
 
@@ -55,7 +55,7 @@ Pour configurer l’intégration de CMK avec Campaign, procédez comme suit :
 
 1. Partagez votre [Nom de ressource Amazon (clé ARN)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} avec [!DNL Adobe Campaign]. Pour ce faire, contactez votre représentant ou représentante Adobe.<!--or Adobe transition manager?-->
 
-1. Créez et testez les règles Amazon EventBridge pour permettre la surveillance de vos clés par Adobe. [En savoir plus](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
+1. Créez et testez les règles Amazon EventBridge pour permettre la surveillance de vos clés par Adobe. &#x200B; [En savoir plus](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
 
 
 ### Mécanismes de sécurisation et limitations {#cmk-callouts}
@@ -66,7 +66,7 @@ Les mécanismes de sécurisation et limitations ci-après s’appliquent à l’
 
 * Seules les clés du [Service de gestion de clés AWS](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS) sont prises en charge. Aucune clé générée par le client ou la cliente en dehors du KMS ne peut être utilisée.
 
-* Des temps d’arrêt sont attendus lors de la première configuration.La durée de l’interruption dépend de la taille de votre base de données.
+* Un temps d’arrêt est prévu lors de la première configuration. &#x200B;La durée du temps d’arrêt dépend de la taille de votre base de données.
 
 * En tant que client ou cliente, vous détenez et devez conserver la clé. Vous devez contacter Adobe en cas de changement de la clé.
 

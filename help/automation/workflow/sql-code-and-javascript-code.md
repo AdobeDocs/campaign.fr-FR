@@ -9,8 +9,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 8c385847-a320-4cd9-9048-2bf9daf2ee07
 source-git-commit: aa9413dc794cf1a3683b33ca064ce228c90107f7
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 69%
+source-wordcount: '423'
+ht-degree: 59%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 69%
 
 ## Code SQL {#sql-code}
 
-Une activité de type **[!UICONTROL Code SQL]** exécute un script SQL. Le script est un template JST.
+Une activité **[!UICONTROL Code SQL]** exécute un script SQL. Le script est un modèle JST.
 
 ![](assets/sql_code.png)
 
 * **[!UICONTROL Script]**
 
-  La zone centrale de l&#39;éditeur contient le script à exécuter. Ce script est un template JST et peut donc être paramétré en fonction du contexte du workflow.
+  La zone centrale de l&#39;éditeur contient le script à exécuter. Ce script est un template JST et peut donc être configuré en fonction du contexte du workflow.
 
 * **[!UICONTROL Traiter les erreurs]**
 

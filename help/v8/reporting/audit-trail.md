@@ -6,14 +6,14 @@ feature: Audit Trail, Monitoring, Workflows
 exl-id: 6a937575-42d4-4dc5-8168-43c25bb2cde6
 source-git-commit: b4b361a4aabd1b33554166c2638989b99a02baec
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '664'
 ht-degree: 100%
 
 ---
 
 # Journal d’audit{#audit-trail}
 
-La fonctionnalité **[!UICONTROL Journal d’audit]** d’Adobe Campaign offre un enregistrement granulaire de toutes les modifications apportées à des entités importantes de votre instance, généralement celles qui ont un impact significatif sur le bon fonctionnement de l’instance. Fonctionnant en tant que journal en temps réel, elle capture une liste détaillée des actions et événements au fur et à mesure qu’ils se produisent.
+La fonctionnalité **[!UICONTROL Journal d’audit]** d’Adobe Campaign offre un enregistrement granulaire de toutes les modifications apportées à des entités importantes de votre instance, généralement celles qui ont un impact significatif sur le bon fonctionnement de l’instance. Fonctionnant en tant que log en temps réel, elle capture une liste détaillée des actions et événements au fur et à mesure qu’ils se produisent.
 
 >[!NOTE]
 >

@@ -4,9 +4,9 @@ description: Liste des fonctionnalités et améliorations des versions 2022 de C
 feature: Release Notes
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
 source-git-commit: b3ca222fb28c1a5d35190e41cfbbe463c5d1bcad
-workflow-type: ht
-source-wordcount: '1949'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1952'
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ Cette page répertorie les nouvelles fonctionnalités, les améliorations et les
 
 ## Version 8.4.2 {#release-8-4-2}
 
-_28 octobre 2022_
+_samedi 28 octobre 2022_
 
 **Correctifs**
 
@@ -36,7 +36,7 @@ _28 octobre 2022_
 
 ## Version 8.4.1 {#release-8-4-1}
 
-_30 septembre 2022_
+_samedi 30 septembre 2022_
 
 **Nouveautés**
 
@@ -52,7 +52,7 @@ _30 septembre 2022_
 <ul><li>Utilisez le connecteur de destination Adobe Campaign Managed Cloud Services pour envoyer des segments Experience Platform à Adobe Campaign en vue de leur activation,</li>
 <li>Utilisez le connecteur source Adobe Campaign Managed Cloud Service pour envoyer les logs de diffusion et de tracking Adobe Campaign à Adobe Experience Platform.</li>
 </ul>
-<p>Pour plus d’informations, consultez la <a href="../connect/ac-aep.md">documentation détaillée</a>.</p>
+<p>Pour plus d'informations, consultez la <a href="../connect/ac-aep.md">documentation détaillée</a>.</p>
 </td> 
 </tr> 
 </tbody> 
@@ -66,7 +66,7 @@ _30 septembre 2022_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Le <a href="../send/twitter.md">canal social X</a> est désormais disponible avec Campaign v8. Vous pouvez ainsi effectuer les actions suivantes :</p>
+<td> <p>Le <a href="../send/twitter.md">canal social X</a> est désormais disponible avec Campaign v8. Vous pouvez ainsi :</p>
 <ul> 
 <li><p>Envoyer des messages sur X (anciennement Twitter) : Adobe Campaign vous permet de publier des messages directement sur votre compte X. Vous pouvez également envoyer des messages directs à tous les abonnées et abonnés de vos comptes.
 </p></li>
@@ -96,7 +96,7 @@ Pour optimiser la sécurité, les jetons de sécurité ont été supprimés des 
 
 * Compte tenu de la fin de vie d’Internet Explorer 11, le moteur de rendu HTML dans la console utilise désormais **Microsoft Edge Chromium**. En outre, l’installation du runtime **Microsoft Edge WebView 2** est désormais requise pour toute installation de la console cliente.
 * Amélioration de l’exécution des workflows avec une haute disponibilité des workflows. Cela permet d’exécuter simultanément plusieurs workflows dans différents conteneurs, afin de prévenir la perte du service de workflow et d’éviter les erreurs d’exécution associées. **Remarque** : cette nouvelle fonctionnalité est en disponibilité limitée et est réservée à un ensemble de clients uniquement.
-* Les demandes d’accès à des informations personnelles sont désormais exécutées par lots pour un espace de nommage de confidentialité donné. Cette amélioration augmente le temps d’exécution des demandes de suppression en vertu du RGPD/de la confidentialité.
+* Les demandes d’accès à des informations personnelles sont désormais exécutées par lots pour un espace de noms de confidentialité donné. Cette amélioration augmente le temps d’exécution des demandes de suppression en vertu du RGPD/de la confidentialité.
 
 **Mises à jour de compatibilité**
 
@@ -106,7 +106,7 @@ Reportez-vous à la [matrice de compatibilité de Campaign](compatibility-matrix
 
 **Correctifs**
 
-* Correction d’un problème qui affectait les mises à jour du statut du journal de diffusion sur l’instance MID, lorsque l’option FeatureFlag_GZIP_Compression était activée. (NEO-49183)
+* Correction d’un problème qui affectait les mises à jour du statut du log de diffusion sur l’instance MID, lorsque l’option FeatureFlag_GZIP_Compression était activée. (NEO-49183)
 * Correction d’un problème en raison duquel les diffusions pouvaient garder le statut **En attente** même si la date de contact avait été atteinte. (NEO-48079)
 * Correction d’un problème dans les workflows en raison duquel des fichiers sur le serveur ne pouvaient pas être mis à jour lors de l’utilisation de l’activité **Chargement de données (fichier)**. Le processus s’est arrêté à 100 % mais n’a jamais pris fin. (NEO-47269)
 * Correction d’un problème lors du postupgrade sur les environnements japonais. (NEO-46640)
@@ -131,13 +131,13 @@ Reportez-vous à la [matrice de compatibilité de Campaign](compatibility-matrix
 
 >[!CAUTION]
 >
-> La mise à niveau de la console client est obligatoire. Découvrez comment mettre à niveau votre console client sur cette [page](../start/connect.md#download-ac-console).
+> La mise à niveau de la console cliente est obligatoire. Découvrez comment mettre à niveau votre console cliente sur cette [page](../start/connect.md#download-ac-console).
 
-_7 octobre 2022_
+_samedi 7 octobre 2022_
 
 **Correctifs**
 
-* Correction d’un problème qui affectait les mises à jour du statut du journal de diffusion sur l’instance MID, lorsque l’option FeatureFlag_GZIP_Compression était activée. (NEO-49183)
+* Correction d’un problème qui affectait les mises à jour du statut du log de diffusion sur l’instance MID, lorsque l’option FeatureFlag_GZIP_Compression était activée. (NEO-49183)
 * Le workflow technique **Nettoyage de la base de données** gère désormais également les schémas d’évaluation personnalisés. (NEO-48974)
 * Correction d’un problème en raison duquel les diffusions pouvaient garder le statut **En attente** même si la date de contact avait été atteinte. (NEO-48079, NEO-48251)
 * Stabilité améliorée lors de la gestion des chaînes XML non valides lors des appels SOAP. (NEO-48027)
@@ -159,7 +159,7 @@ _7 octobre 2022_
 
 ## Version 8.3.8 {#release-8-3-8}
 
-_18 mai 2022_
+_jeudi 18 mai 2022_
 
 **Nouveautés**
 
@@ -171,8 +171,8 @@ _18 mai 2022_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Avec iOS 15, Apple a ajouté une notion de notification urgente qui permet au développeur de l’application de contourner le mode Focus lorsqu’une notification est considérée comme urgente et doit atteindre l’utilisateur en temps réel.</p>
-<p>Pour plus d’informations, consultez la <a href="../send/push.md#send-notifications-on-ios">documentation détaillée</a>.</p>
+<td> <p>Avec iOS 15, Apple a ajouté une notion de notification urgente qui permet à la personne qui développe l’application de contourner le mode Focus lorsqu’une notification est considérée comme urgente et doit atteindre l’utilisateur ou l’utilisatrice en temps réel.</p>
+<p>Pour plus d'informations, consultez la <a href="../send/push.md#send-notifications-on-ios">documentation détaillée</a>.</p>
 </td> 
 </tr> 
 </tbody> 
@@ -187,7 +187,7 @@ _18 mai 2022_
 <tbody> 
 <tr> 
 <td> <p>Campaign v8 s’intègre désormais à Adobe Privacy Core Service. Les demandes d'accès à des informations personnelles transmises par Privacy Core Service à toutes les solutions Experience Cloud sont automatiquement traitées par Campaign via un workflow dédié.</p>
-<p>Pour plus d’informations, consultez la <a href="privacy.md">documentation détaillée</a>.</p>
+<p>Pour plus d'informations, consultez la <a href="privacy.md">documentation détaillée</a>.</p>
 </td> 
 </tr> 
 </tbody> 
@@ -203,7 +203,7 @@ _18 mai 2022_
 <tr>
 <td>
 <p>La gestion de la réaction des campagnes permet de mesurer le succès et le ROI de vos campagnes marketing ou de vos propositions d’offres sur tous les canaux : e-mail, mobile, courrier, etc.</p>
-<p>Pour plus d’informations, consultez la <a href="../start/campaigns.md#response-manager-add-on">documentation détaillée</a>.</p>
+<p>Pour plus d'informations, consultez la <a href="../start/campaigns.md#response-manager-add-on">documentation détaillée</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -212,13 +212,13 @@ _18 mai 2022_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Distributed Marketing (Marketing distribué)</strong><br /> </th> 
+<th> <strong>Marketing distribué</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Le marketing distribué de Campaign vous permet d’implémenter des campagnes collaboratives entre entités centrales (sièges sociaux, services marketing, etc.) et entités locales (magasins, agences régionales, etc.). Depuis un espace de travail partagé (kits d'opération), vous pouvez créer des modèles d’opération et les proposer à vos entités locales.</p>
-<p>Pour plus d’informations, consultez la <a href="../start/campaigns.md#distributed-marketing-add-on">documentation détaillée</a>.</p>
+<td> <p>Le marketing distribué de Campaign permet de mettre en place des opérations collaboratives entre les entités centrales (siège social, services marketing, etc.) et les entités locales (points de vente, agences régionales, etc.). Depuis un espace de travail partagé (kits de campagne), vous pouvez créer des modèles d’opération et les proposer à vos entités locales.</p>
+<p>Pour plus d'informations, consultez la <a href="../start/campaigns.md#distributed-marketing-add-on">documentation détaillée</a>.</p>
 </td> 
 </tr> 
 </tbody> 
@@ -251,7 +251,7 @@ Reportez-vous à la [matrice de compatibilité de Campaign](compatibility-matrix
 
 ## Version 8.2.10 {#release-8-2-10}
 
-_2 février 2022_
+_jeudi 2 février 2022_
 
 **Correctifs**
 

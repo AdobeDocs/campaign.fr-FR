@@ -6,13 +6,13 @@ feature: Campaigns, Resource Management
 role: User
 exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
 source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
-workflow-type: ht
-source-wordcount: '1172'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1175'
+ht-degree: 91%
 
 ---
 
-# Gérer des ressources marketing{#managing-marketing-resources}
+# Gestion des ressources marketing{#managing-marketing-resources}
 
 Utilisez Adobe Campaign pour gérer et suivre les ressources marketing impliquées dans le cycle de vie de la campagne. Ces ressources marketing peuvent être un livre blanc, un fichier de données, un logo ou toute autre ressource liée à une campagne.
 
@@ -47,13 +47,13 @@ Vous pouvez également sélectionner les opérateurs et opératrices ou les grou
 
 Ces opérateurs et opératrices sont avertis par e-mail lorsque le processus de validation de la ressource est lancé.
 
-En l’absence de validant(e) sélectionné(e), la ressource **[!UICONTROL ne pourra pas]** être soumise à validation.
+Si aucun opérateur validant n&#39;est sélectionné, la ressource **[!UICONTROL ne pourra pas]** être soumise à validation.
 
 L’onglet **[!UICONTROL Audit]** vous permet d’ajouter un relecteur ou une relectrice et de définir une date de disponibilité pour la ressource. Au-delà de cette date, la ressource reçoit le statut **[!UICONTROL En retard]**.
 
 >[!NOTE]
 >
->L’onglet **[!UICONTROL Historique]** contient le journal de téléchargement et de mise à jour de la ressource. Le bouton **[!UICONTROL Détails]** permet de visualiser la version sélectionnée.
+>L’onglet **[!UICONTROL Historique]** contient le log de téléchargement et de mise à jour de la ressource. Le bouton **[!UICONTROL Détails]** permet de visualiser la version sélectionnée.
 >
 >L’onglet **[!UICONTROL Audit]** permet de suivre les actions effectuées sur la ressource : validations, refus de validation, commentaires associés ou publications.
 
@@ -72,7 +72,7 @@ Pour verrouiller une ressource, vous devez cliquer sur le bouton **[!UICONTROL V
 
 Une fois la ressource mise à jour, cliquez sur le bouton **[!UICONTROL Verrouiller]** dans le tableau de bord de la ressource pour la rendre à nouveau accessible à tous les opérateurs et opératrices.
 
-Un message spécifique vient avertir l’opérateur ou l’opératrice qui souhaite y accéder :
+Un message spécifique vient avertir l&#39;opérateur qui souhaite y accéder :
 
 ![](assets/mkt-resource-locked.png)
 
@@ -111,11 +111,11 @@ Accédez à l’onglet **[!UICONTROL Tracking]** pour consulter les validations.
 
 >[!NOTE]
 >
->En plus de l’opérateur ou de l’opératrice validant(e) désigné(e) au niveau de chaque ressource marketing, les opérateurs et opératrices ayant les droits d’administration et le ou la responsable de la ressource sont habilités à valider une ressource marketing.
+>En plus de l&#39;opérateur validant désigné au niveau de chaque ressource marketing, les opérateurs ayant les droits d&#39;administration et le responsable de la ressource sont habilités à valider une ressource marketing.
 
 ### Publier une ressource {#publishing-a-resource}
 
-Une fois validée, la ressource marketing doit être publiée. Le processus de publication doit faire l&#39;objet d&#39;une implémentation spécifique en fonction des besoins de l&#39;entreprise. Ainsi, les ressources peuvent être publiées sur un extranet ou tout autre serveur, une information spécifique peut être transmise à un prestataire externe, etc.
+Une fois approuvée, la ressource marketing doit être publiée. Le processus de publication doit faire l&#39;objet d&#39;une mise en œuvre spécifique en fonction des exigences de l&#39;entreprise. Cela signifie que les ressources peuvent être publiées sur un extranet ou tout autre serveur, que des informations spécifiques peuvent être envoyées à un prestataire externe, etc.
 
 Pour publier une ressource, cliquez sur le bouton **[!UICONTROL Publier]** situé dans sa zone d&#39;édition dans le tableau de bord des ressources marketing.
 
@@ -123,7 +123,7 @@ Pour publier une ressource, cliquez sur le bouton **[!UICONTROL Publier]** situ�
 
 Vous pouvez également automatiser la publication d&#39;une ressource via un workflow.
 
-Publier une ressource signifie la rendre disponible afin qu&#39;elle puisse être utilisée (par exemple dans une autre tâche). La publication proprement dite varie suivant la nature de votre ressource : pour un flyer, la publication peut consister à envoyer le fichier à un imprimeur, pour une page web, la publier sur un site...
+Publier une ressource signifie la rendre disponible pour une utilisation (par exemple, dans une autre tâche). La publication proprement dite varie selon la nature de votre ressource : pour un flyer, la publication peut consister à envoyer le fichier à un imprimeur, pour une agence web, le publier sur un site web, etc.
 
 Pour qu’Adobe Campaign puisse effectuer la publication, vous devez créer un workflow adéquat et le lier à la ressource. Pour ce faire, ouvrez la boîte de dialogue **[!UICONTROL Paramètres avancés…]** de la ressource, puis sélectionnez le workflow de votre choix dans le champ **[!UICONTROL Post-traitement]**.
 
@@ -131,7 +131,7 @@ Pour qu’Adobe Campaign puisse effectuer la publication, vous devez créer un 
 
 Le workflow est lancé :
 
-* Lorsque le ou la validant(e) de publication cliquera sur **[!UICONTROL Publier la ressource]** (ou, en l’absence de validant(e) de publication défini(e), le ou la responsable de la ressource).
+* Lorsque le validant de publication cliquera sur **[!UICONTROL Publier la ressource]** (ou, si aucun validant de publication n&#39;a été défini, le responsable de la ressource).
 * Si la ressource est gérée via une tâche de création de ressource marketing, elle sera exécutée lorsque la tâche sera définie sur **[!UICONTROL Terminé]** à condition que la case **[!UICONTROL Publier la ressource marketing]** ait été cochée dans la tâche. [En savoir plus](creating-and-managing-tasks.md#marketing-resource-creation-task))
 
 Si un workflow n’est pas lancé immédiatement (par exemple, si le workflow est arrêté), le statut de la ressource passe à **[!UICONTROL En attente de publication]**. Une fois le workflow démarré, le statut de la ressource passe à **[!UICONTROL Publié]**. Ce statut ne prend pas en compte les éventuelles erreurs dans le processus de publication. Vérifiez le statut de votre workflow pour vous assurer qu’il se soit exécuté correctement.
@@ -180,6 +180,6 @@ Pour associer une ressource marketing à un stock, procédez comme suit :
 
    Vous pouvez modifier la ressource sélectionnée à partir de l’icône **[!UICONTROL Modifier le lien]**, située à droite de la ressource.
 
-1. Indiquez le stock initial et le stock d’alerte puis enregistrez.
+1. Indiquez le stock initial et le stock d&#39;alerte puis enregistrez.
 
 Le stock est indiqué dans l’onglet **Stocks** de la ressource marketing.

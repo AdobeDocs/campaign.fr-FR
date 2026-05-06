@@ -7,8 +7,8 @@ level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1316'
-ht-degree: 98%
+source-wordcount: '1354'
+ht-degree: 70%
 
 ---
 
@@ -30,7 +30,7 @@ Pour insérer des propositions d&#39;offres dans une diffusion, procédez comme 
 
    ![](assets/offer_delivery_002.png)
 
-1. Choisissez la catégorie dont la ou les offres à présenter font partie ou un ou plusieurs thèmes pour affiner le choix des offres réalisé par le moteur. Il est conseillé de ne pas utiliser ces deux champs conjointement afin de ne pas surcharger les restrictions.
+1. Pour affiner le choix des offres du moteur, sélectionnez soit la catégorie dont fait partie la ou les offres à présenter, soit un ou plusieurs thèmes. Nous vous recommandons de n’utiliser qu’un seul de ces champs à la fois pour éviter de surcharger les restrictions.
 
    ![](assets/offer_delivery_003.png)
 
@@ -61,10 +61,10 @@ Pour insérer des propositions d&#39;offres dans une diffusion, procédez comme 
 
 * **[!UICONTROL Emplacement]** : emplacement de l’environnement des offres qui doit être sélectionné pour activer le moteur d’offres.
 * **[!UICONTROL Catégorie]** : dossier spécifique dans lequel les offres sont classées. Si aucune catégorie n’est spécifiée, la totalité des offres contenues dans l’environnement sera prise en compte par le moteur d’offres, sauf si un thème est sélectionné.
-* **[!UICONTROL Thèmes]** : mots-clés définis préalablement au niveau des catégories. Ils agissent comme un filtre et permettent d’affiner les offres à présenter en les sélectionnant dans un ensemble de catégories.
-* **[!UICONTROL Nombre de propositions]** : nombre d’offres renvoyées par le moteur qui pourront être insérées dans le corps de la diffusion. Si elles ne sont pas insérées dans le message, les offres seront néanmoins générées, mais non présentées.
-* **[!UICONTROL Exclure les destinataires non éligibles]** : cette option permet d’activer ou non l’exclusion des destinataires pour lesquels il n’y a pas assez d’offres éligibles. Pour chaque destinataire, il se peut que le nombre de propositions éligibles soit inférieur au nombre de propositions requis. En cochant cette case, les destinataires pour lesquels le nombre de propositions requis n’est pas atteint seront exclus de la diffusion. Si vous ne sélectionnez pas cette option, ces destinataires seront conservés, mais ils auront un nombre de propositions inférieur au nombre demandé.
-* **[!UICONTROL Ne rien afficher si aucune offre n’est sélectionnée]** : cette option permet de choisir le traitement du message au cas où l’une des propositions n’existerait pas. En cochant cette case, la représentation de la proposition manquante ne s’affichera pas et aucun contenu n’apparaîtra dans le message pour cette proposition. Si la case est décochée, le message lui-même est annulé au moment de l’envoi et les destinataires ne recevront aucun message.
+* **[!UICONTROL Thèmes]** : mots-clés définis en amont dans les catégories. Ils servent de filtre et permettent d&#39;affiner le nombre d&#39;offres à présenter en les sélectionnant dans un ensemble de catégories.
+* **[!UICONTROL Nombre de propositions]** : nombre d&#39;offres renvoyées par le moteur qui pourront être insérées dans le corps de la diffusion. Si elles ne sont pas insérées dans le message, les offres seront tout de même générées, mais non présentées.
+* **[!UICONTROL Exclure les destinataires non éligibles]** : cette option permet d&#39;activer ou non l&#39;exclusion des destinataires pour lesquels il n&#39;y a pas assez d&#39;offres éligibles. Le nombre de propositions éligibles peut être inférieur au nombre de propositions demandé. Si cette case est cochée, les destinataires qui n&#39;ont pas assez de propositions seront exclus de la diffusion. Si vous ne sélectionnez pas cette option, ces destinataires ne seront pas exclus, mais ils n’auront pas le nombre de propositions demandé.
+* **[!UICONTROL Ne rien afficher si aucune offre n&#39;est sélectionnée]** : cette option permet de choisir le traitement du message au cas où l&#39;une des propositions n&#39;existerait pas. Lorsque cette case est cochée, la représentation de la proposition manquante ne s&#39;affiche pas et aucun contenu n&#39;apparaît dans le message pour cette proposition. Si la case n&#39;est pas cochée, le message lui-même est annulé lors de l&#39;envoi et les destinataires ne recevront plus de messages.
 
 ## Envoi d&#39;offres dans des workflows{#offer-via-wf}
 
@@ -98,7 +98,7 @@ Après avoir configuré votre activité **Requête** :
    ![](assets/int_enrichment_offer2.png)
 
 1. Indiquez un identifiant ainsi qu&#39;un libellé pour la proposition qui sera ajoutée.
-1. Définissez la sélection de l&#39;offre. Deux options sont possibles :
+1. Définissez la sélection d’offres. Deux options sont possibles :
 
    * **[!UICONTROL Rechercher la meilleure offre dans une catégorie]** : cochez cette option et définissez les paramètres de l’appel au moteur d’offres (emplacement, catégorie ou thématique, date de contact, nombre d’offres à conserver). Le moteur calculera automatiquement la ou les offres à ajouter en fonction de ces paramètres. Nous vous recommandons de renseigner soit le champ **[!UICONTROL Catégorie]**, soit le champ le **[!UICONTROL Thème]**, plutôt que les deux à la fois.
 
@@ -122,11 +122,11 @@ Pour ce faire, procédez comme suit :
 
 1. Dans l&#39;onglet **[!UICONTROL Enrichissement]** de l&#39;activité, sélectionnez **[!UICONTROL Ajouter des données]**.
 1. Dans la fenêtre de sélection du type de données à ajouter, choisissez **[!UICONTROL Un lien]**.
-1. Sélectionnez le type du lien que vous souhaitez établir ainsi que sa cible. Dans le cas présent, la cible est le schéma des offres.
+1. Sélectionnez le type de lien que vous souhaitez établir ainsi que sa cible. Dans ce cas, la cible est le schéma d&#39;offre.
 
    ![](assets/int_enrichment_link1.png)
 
-1. Définissez la jointure entre les données de la table entrante dans l’activité d’enrichissement (ici la table des destinataires) et la table des offres. Vous pouvez par exemple associer un code offre à un destinataire.
+1. Indiquez la jointure entre les données de la table entrante dans l&#39;activité d&#39;enrichissement (ici la table des destinataires) et la table des offres. Vous pouvez, par exemple, lier un code d’offre à un destinataire.
 
    ![](assets/int_enrichment_link2.png)
 
@@ -172,7 +172,7 @@ Cette activité fonctionne sur le même principe que l&#39;activité **Enrichiss
 Après avoir configuré votre activité **Requête** :
 
 1. Placez et ouvrez une activité **[!UICONTROL Moteur d&#39;offres]**.
-1. Renseignez les différents champs disponibles afin de définir les paramètres de l&#39;appel au moteur d&#39;offres (emplacement, catégorie ou thème(s), date de contact, nombre d&#39;offres à conserver). Le moteur calculera automatiquement la ou les offres à placer en fonction de ces paramètres.
+1. Renseignez les différents champs disponibles afin de définir les paramètres de l&#39;appel au moteur d&#39;offres (emplacement, catégorie ou thème(s), date de contact, nombre d&#39;offres à conserver). Le moteur calculera automatiquement la ou les offres à ajouter en fonction de ces paramètres.
 
    >[!CAUTION]
    >
@@ -195,7 +195,7 @@ Pour cela :
 1. Dans l&#39;onglet **[!UICONTROL Cellules]**, définissez les différents sous-ensembles via le bouton **[!UICONTROL Ajouter]** :
 
    * Définissez la population du sous-ensemble grâce aux règles de filtrage et de limitation disponibles.
-   * Sélectionnez ensuite l&#39;offre que vous souhaitez proposer au sous-ensemble. Les offres disponibles sont celles éligibles sur l&#39;emplacement sélectionné à l&#39;étape précédente.
+   * Sélectionnez ensuite l&#39;offre que vous souhaitez présenter au sous-ensemble. Les offres disponibles sont celles qui sont éligibles dans l’environnement d’offres qui a été sélectionné à l’étape précédente.
 
      ![](assets/int_offer_per_cell1.png)
 

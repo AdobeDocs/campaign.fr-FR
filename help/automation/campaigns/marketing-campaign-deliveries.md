@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
 source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
-workflow-type: ht
-source-wordcount: '754'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 88%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 100%
 
 Orchestrer vos diffusions cross-canal dans vos campagnes : rationalisez vos communications avec Adobe Campaign par le biais d&#39;e-mails personnalisés, de SMS, de notifications push et de messages in-app. Vous pouvez utiliser des médias riches tels que des vidéos, des émoticônes ou des GIF et les intégrer directement.
 
-Les diffusions peuvent être créées depuis le tableau de bord d&#39;une campagne, un workflow de campagne ou directement à partir de la vue d&#39;ensemble des diffusions. Une fois créées à partir d&#39;une campagne, les diffusions y sont liées et sont consolidées au niveau de cette campagne.
+Les diffusions peuvent être créées depuis le tableau de bord d&#39;une opération, un workflow d&#39;opération ou directement à partir de la vue d&#39;ensemble des diffusions. Une fois créées à partir d’une campagne, les diffusions y sont liées et sont consolidées au niveau de cette campagne.
 
-## Créer des diffusions {#create-deliveries}
+## Création de diffusions {#create-deliveries}
 
 Vous pouvez ajouter des diffusions à vos campagnes marketing de deux façons :
 
@@ -37,7 +37,7 @@ Vous pouvez ajouter des diffusions à vos campagnes marketing de deux façons :
 
 Découvrez comment configurer et exécuter le flux de validation de diffusion [dans cette page](marketing-campaign-approval.md).
 
-## Démarrer une diffusion {#start-a-delivery}
+## Démarrage dʼune diffusion {#start-a-delivery}
 
 Une diffusion peut être envoyée une fois toutes les validations accordées. Le processus d&#39;exécution de la diffusion dépend du canal.
 
@@ -70,7 +70,7 @@ Une fois le workflow d&#39;extraction exécuté correctement, le fichier d&#39;e
 
 Suivez les étapes ci-dessous pour valider le contenu et envoyer le fichier au fournisseur :
 
-1. Une fois le fichier d&#39;extraction validé, vous pouvez générer le BAT de l&#39;e-mail de notification au routeur. Ce message e-mail est construit à partir d&#39;un modèle de diffusion. Il doit être approuvé.
+1. Une fois le fichier d’extraction validé, vous pouvez générer le BAT de l’e-mail de notification au routeur. Ce message e-mail est construit à partir d’un modèle de diffusion. Il doit être approuvé.
 
    Cette étape n&#39;est disponible que si l&#39;option **[!UICONTROL Activer l&#39;envoi et la validation des BAT (publipostage direct)]** est activée sous l&#39;onglet **[!UICONTROL Validations]** des paramètres avancés de la campagne.
 
@@ -98,7 +98,7 @@ L&#39;extraction du fichier lance deux processus : le calcul du budget et celui
 
   ![](assets/campaign-budget-tab.png)
 
-  Le coût réel sera calculé au final en fonction des informations fournies par le routeur : seuls les messages réellement envoyés sont facturés.
+  Le coût réel sera finalement calculé à partir des informations fournies par le routeur. Seuls les messages réellement envoyés sont facturés.
 
 * Les stocks sont définis à partir du nœud **[!UICONTROL Administration > Gestion de campagnes > Stocks]** de l&#39;arborescence.
 
@@ -108,7 +108,7 @@ L&#39;extraction du fichier lance deux processus : le calcul du budget et celui
 
   ![](assets/campaign-service-providers.png)
 
-  Au niveau des stocks, vous pouvez visualiser les lignes de stocks. Pour définir le stock initial, vous devez ouvrir une ligne de stock. Le stock est décrémenté au fur et à mesure des diffusions. Vous pouvez définir un niveau d&#39;alerte et des notifications.
+  Les lignes de stock sont visibles dans la section de stock. Pour définir le stock initial, ouvrez une ligne de stock. Le stock est décrémenté à chaque livraison. Vous pouvez définir un niveau d’alerte et des notifications.
 
 
   >[!NOTE]

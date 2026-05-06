@@ -7,8 +7,8 @@ level: Intermediate, Experienced
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
 source-git-commit: 75e0069ccd4e23dbf64b9052fd81817e438b333e
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 80%
+source-wordcount: '320'
+ht-degree: 82%
 
 ---
 
@@ -37,21 +37,21 @@ Veuillez notez que dans son [déploiement Entreprise (FFDA)](../architecture/ent
 >* [!DNL Adobe Campaign] v8 est fourni avec une limite au niveau du débit (TPS) de notre calque API. Le fait de rompre la limite entraîne une erreur HTTP standard (429). En tant qu&#39;utilisateur Managed Cloud Services, vous pouvez contacter Adobe pour adapter le contrôle de flux de chaque API.
 > 
 
-## Conditions préalables {#ac-api-prerequisites}
+## Conditions préalables requises {#ac-api-prerequisites}
 
 Avant d&#39;utiliser les API [!DNL Adobe Campaign], il est conseillé de posséder des notions sur les sujets suivants :
 
 * JavaScript
-* Protocole SOAP
+* protocole SOAP
 * Modèle de données [!DNL Adobe Campaign]
 
 Pour utiliser les API et interagir avec [!DNL Adobe Campaign], vous devez également connaître votre modèle de données.
 
 >[!NOTE]
->Vous pouvez générer une description complète de votre modèle de données. Apprenez-en davantage en consultant [cette page](datamodel.md).
+>Vous pouvez générer une description complète de votre modèle de données. En savoir plus à ce propos sur [cette page](datamodel.md).
 
 
-**Rubriques connexes**
+**Rubriques connexes :**
 
 <!-- * [Query the database with queryDef](query-api.md)-->
 * [Bonnes pratiques relatives au modèle de données](datamodel-best-practices.md)

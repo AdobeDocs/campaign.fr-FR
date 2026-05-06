@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 8fb36117-b126-470a-9c94-eb5c0a4aca1a
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '85'
-ht-degree: 100%
+ht-degree: 67%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 
 
-Une activité de type **Alerte** envoie un message à un groupe d’opératrices et d’opérateurs. Son fonctionnement est le même qu’une activité de type validation, mais ici, aucune réponse n’est attendue.
+Une activité **Alerte** envoie un message à un groupe d&#39;opérateurs. Elle fonctionne de la même manière qu’une activité d’approbation, mais aucune réponse n’est attendue dans ce cas.
 
 ![](assets/edit_alerte.png)
 

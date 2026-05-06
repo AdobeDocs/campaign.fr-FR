@@ -7,15 +7,15 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 1d4a98e6-af11-4645-864e-29aa5766d9d8
 source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
-workflow-type: ht
-source-wordcount: '1918'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1924'
+ht-degree: 69%
 
 ---
 
 # Prestataires, stocks et budgets{#providers-stocks-and-budgets}
 
-Adobe Campaign vous permet de définir des prestataires qui seront impliqués dans les traitements réalisés dans les opérations. Les informations relatives aux prestataires et les structures de coûts qui leur sont associées sont définies par l&#39;administrateur Adobe Campaign, à partir de la vue globale. Le prestataire est référencé au niveau de la diffusion : ses structures de coûts permettent le calcul des coûts liés à cette diffusion ainsi que la gestion des stocks impactés.
+Adobe Campaign permet de définir des prestataires qui seront impliqués dans les traitements réalisés au sein des opérations. Les informations relatives aux prestataires et les structures de coûts associées sont définies par l&#39;administrateur Adobe Campaign depuis la vue globale. Le prestataire est référencé à partir de la diffusion, et ses structures de coûts permettent le calcul des coûts liés à cette diffusion ainsi que la gestion du stock concerné.
 
 ## Créer les fournisseurs et leurs structures de coûts {#create-service-providers-and-their-cost-structures}
 
@@ -23,7 +23,7 @@ Chaque prestataire est enregistré dans une fiche avec ses coordonnées, ses mod
 
 Les prestataires sont paramétrés dans le dossier **[!UICONTROL Administration > Gestion de campagne]** de l’explorateur Campaign.
 
-Les traitements réalisés dans les diffusions sont assurés par des prestataires, notamment pour le courrier et les canaux mobiles. Ces prestataires peuvent par exemple intervenir dans les opérations d&#39;impression ou de distribution des messages. Ces traitements engendrent des configurations et des coûts spécifiques à chaque prestataire. La configuration des prestataires de service est composée de quatre étapes :
+Les traitements réalisés dans les diffusions sont assurés par des prestataires, notamment pour le courrier et les canaux mobiles. Ces prestataires peuvent par exemple être impliqués dans l&#39;impression ou la distribution de messages. Ces tâches impliquent des configurations et des coûts spécifiques à chaque fournisseur de services. La configuration des fournisseurs de services se déroule en quatre étapes :
 
 1. Création du prestataire dans Adobe Campaign. [En savoir plus](#add-a-service-provider)
 
@@ -37,7 +37,7 @@ Les traitements réalisés dans les diffusions sont assurés par des prestataire
 
 #### Ajouter un fournisseur {#add-a-service-provider}
 
-Vous pouvez créer autant de fournisseurs que nécessaire pour vos diffusions. Pour ajouter un fournisseur, les étapes sont les suivantes :
+Vous pouvez créer autant de fournisseurs que nécessaire pour vos diffusions. La procédure d&#39;ajout d&#39;un prestataire est la suivante :
 
 1. Cliquez sur le bouton **[!UICONTROL Nouveau]** situé au-dessus de la liste des fournisseurs.
 1. Dans la section inférieure de la fenêtre, indiquez son nom et ses coordonnées.
@@ -107,7 +107,7 @@ Si ce montant s&#39;applique à un lot de messages, indiquez le nombre de messag
 
 #### Structure linéaire par seuil {#linear-structure-by-threshold}
 
-Si le montant s&#39;applique par seuil pour chaque message, vous devez alors définir une structure de calcul **[!UICONTROL Linéaire par seuil]**. Dans ce type de structure de coût, chaque message coûtera, par exemple, 0,13 si le nombre total de message se situe entre 1 et 100, puis coûtera 0,12 entre 100 et 1000 messages envoyés, et 0,11 au-delà de 1000 messages.
+Si le montant s&#39;applique par seuil pour chaque message, vous devez définir une structure de calcul **[!UICONTROL Linéaire par seuil]**. Dans ce type de structure de coût, chaque message coûtera par exemple 0,13 si le nombre total de messages est compris entre 1 et 100, et coûtera 0,12 entre 100 et 1000 messages envoyés, ou 0,11 au-delà de 1000 messages.
 
 La configuration est la suivante :
 
@@ -129,17 +129,17 @@ Vous pouvez associer des informations sur les traitements liés à une prestatio
 
 * La section **[!UICONTROL Extraction de fichier]** indique le modèle d’export utilisé pour la diffusion lorsque cette prestation est sélectionnée. Vous pouvez indiquer le nom du fichier de sortie dans le champ **[!UICONTROL Fichier d’extraction]**. Le bouton situé à droite du champ permet d’insérer des variables.
 
-* La section **[!UICONTROL E-mail de notification]** permet d’indiquer le modèle de notification aux prestataires de service après l’envoi des fichiers. Vous devez sélectionner le modèle utilisé pour créer le message d’alerte et le groupe de destinataires.
+* La section **[!UICONTROL E-mail de notification]** permet d’indiquer le modèle de notification au fournisseur de services après l’envoi des fichiers. Sélectionnez le modèle utilisé pour créer le message d’alerte et le groupe de destinataires.
 
   Par défaut, les modèles de diffusion pour les messages de notification sont enregistrés dans le dossier **[!UICONTROL Administration > Gestion de campagne > Modèles des diffusions techniques]**, accessible à partir de la vue globale.
 
-* La section **[!UICONTROL Post-traitement]** permet de sélectionner le workflow à lancer une fois la diffusion validée. Si un modèle de workflow est renseigné, une instance de workflow sera automatiquement créée puis démarrée dès que la validation sera effective. Ce workflow peut par exemple permettre d’envoyer le fichier d’extraction vers un prestataire externe chargé de l’exploiter.
+* La section **[!UICONTROL Post-traitement]** permet de sélectionner le workflow à lancer une fois la diffusion validée. Si un modèle de workflow est saisi, une instance de workflow est automatiquement créée, puis lancée dès que l’approbation prend effet. Ce workflow peut, par exemple, envoyer le fichier d’extraction à un fournisseur de services externe pour traitement.
 
 ### Associer un service à une campagne {#associate-a-service-with-a-campaign}
 
 Les fournisseurs sont associés aux diffusions de campagnes. Ils sont référencés dans les modèles de diffusion pour offrir leurs services dans les diffusions créées via ce modèle.
 
-Lorsqu’un service est sélectionné, les catégories de coûts correspondant au type de diffusion (courrier, e-mail, etc.) sont automatiquement indiquées dans le tableau central, ainsi que les options de traitement qui ont été définies.
+Lorsqu’un service est sélectionné, les postes de coûts correspondant au type de diffusion (courrier, e-mail, etc.) sont automatiquement indiquées dans le tableau central, ainsi que les options de traitement qui ont été définies.
 
 >[!NOTE]
 >
@@ -176,7 +176,7 @@ Pour mettre en place la gestion des stocks et des commandes dans Adobe Campaign
 
 ### Gestion des stocks {#stock-management}
 
-Adobe Campaign peut alerter un groupe d’utilisateurs si le stock est épuisé ou a atteint un seuil minimum. Les niveaux de stock sont accessibles via le lien **[!UICONTROL Stocks]** de l’onglet **[!UICONTROL Campagnes]** à partir du lien **[!UICONTROL Autres choix]** dans la zone de navigation.
+Adobe Campaign peut alerter un groupe d’opérateurs et d’opératrices si le stock est épuisé ou a atteint un seuil minimum. Les niveaux de stock sont accessibles via le lien **[!UICONTROL Stocks]** de l’onglet **[!UICONTROL Campagnes]** à partir du lien **[!UICONTROL Autres choix]** dans la zone de navigation.
 
 ![](assets/stock-dashboard.png)
 
@@ -185,11 +185,11 @@ Adobe Campaign peut alerter un groupe d’utilisateurs si le stock est épuisé
 Pour créer un nouveau stock, les étapes sont les suivantes :
 
 1. Cliquez sur le bouton **[!UICONTROL Créer]** situé au-dessus de la liste des stocks.
-1. Saisissez le libellé du stock et sélectionnez dans la liste déroulante le fournisseur auquel il est associé. [En savoir plus](#create-service-providers-and-their-cost-structures).
+1. Saisissez le libellé du stock et sélectionnez dans la liste déroulante le prestataire auquel il est associé. [En savoir plus](#create-service-providers-and-their-cost-structures).
 
 #### Ajouter des lignes de stock {#add-stock-lines}
 
-Un stock est composé de différentes lignes de stocks. Une ligne de stock contient une quantité initiale de ressources qui seront consommées par les diffusions. Chaque ligne de stock indique aussi la quantité consommée, la quantité en stock et la quantité en commande.
+Un stock comprend différentes lignes de stock. Une ligne de stock contient une quantité initiale de ressources qui seront consommées par les diffusions. Chaque ligne de stock indique la quantité consommée, la quantité en stock et la quantité commandée.
 
 Lorsque vous créez un stock, cliquez sur l&#39;onglet **[!UICONTROL Lignes de stock]** pour ajouter des lignes de stocks.
 
@@ -205,7 +205,7 @@ Cliquez sur le bouton **[!UICONTROL Créer]** pour ajouter de nouvelles lignes d
 
   ![](assets/create-new-stock-line.png)
 
-* Indiquez, dans le champ **[!UICONTROL Niveau d’alerte]**, le seuil à partir duquel il faudra alerter les opérateurs de le renouveler. Lorsque le niveau d’alerte est atteint, un avertissement est affiché dans la fenêtre de validation des diffusions qui utilisent ce stock.
+* Indiquez le seuil à partir duquel les opérateurs doivent être alertés pour commander du stock dans le champ **[!UICONTROL Niveau d&#39;alerte]**. Lorsque le niveau d&#39;alerte est atteint, un message d&#39;avertissement s&#39;affiche dans la fenêtre de validation des diffusions utilisant ce stock.
 
 #### Associer un stock à des postes de coûts {#associate-a-stock-with-cost-categories}
 
@@ -217,7 +217,7 @@ Au niveau du prestataire, dans une prestation, une ligne de stock peut être ré
 
 #### Alerter les opérateurs {#alert-operators}
 
-Une alerte est affichée lorsqu&#39;un stock référencé dans une diffusion est insuffisant. Par exemple, l&#39;alerte suivante sera affichée lors de la validation d&#39;un fichier d&#39;extraction :
+Une alerte s&#39;affiche lorsqu&#39;un stock référencé dans une diffusion est insuffisant. Par exemple, l&#39;alerte suivante sera affichée lorsqu&#39;un fichier d&#39;extraction sera validé :
 
 ![](assets/stock-alert.png)
 
@@ -231,21 +231,21 @@ Pour enregistrer une commande, éditez la ligne de stock visée, cliquez sur le 
 
 >[!NOTE]
 >
->Une fois la date de livraison atteinte, la ligne de stock en commande disparaît automatiquement et la quantité renseignée dans le champ **[!UICONTROL Volume en commande]** passe dans l&#39;onglet **[!UICONTROL Tracking]**. Cette quantité est automatiquement ajoutée au volume en stock.
+>Une fois la date de livraison atteinte, la ligne de stock commandée disparaît automatiquement et la quantité renseignée dans le champ **[!UICONTROL Volume en commande]** est ajoutée dans l&#39;onglet **[!UICONTROL Tracking]**. Cette quantité est automatiquement ajoutée au volume de stock.
 
-L’onglet **[!UICONTROL Consommations]** contient le volume consommé par campagne. Les informations de cet onglet sont automatiquement renseignées en fonction des diffusions réalisées. Cliquez sur le bouton **[!UICONTROL Modifier]** pour ouvrir la campagne concernée.
+L’onglet **[!UICONTROL Consommations]** contient le volume consommé par campagne. Les informations de cet onglet sont automatiquement renseignées en fonction des diffusions effectuées. Cliquez sur le bouton **[!UICONTROL Modifier]** pour ouvrir la campagne concernée.
 
 ## Calculer les budgets {#calculate-budgets}
 
 ### Principe {#principle}
 
-Les coûts sont gérés pour les diffusions et les opérations. En fonction de l&#39;état d&#39;avancement, ces coûts seront répercutés sur les budgets.
+Les coûts sont gérés pour les diffusions et les campagnes. Selon les progrès réalisés, ces coûts sont imputés aux budgets.
 
-Les coûts de diffusion d&#39;une opération sont consolidés au niveau de l&#39;opération et les coûts de toutes les opérations d&#39;un programme sont répercutées au niveau du programme auquel elles sont associées. Des rapports dédiés permettent d&#39;assurer le suivi des budgets pour l&#39;ensemble de la plateforme ou au niveau de chaque plan et de chaque programme.
+Les coûts de diffusion d’une campagne sont consolidés au niveau de la campagne et les coûts de toutes les campagnes d’un programme sont répercutés sur le programme auquel ils sont associés. Les rapports dédiés permettent de suivre les budgets pour l&#39;ensemble de la plateforme ou pour chaque plan et chaque programme.
 
 ### Mise en œuvre {#implementation}
 
-Dans une opération, lorsque vous sélectionnez le budget, vous devez renseigner le montant initial. Les coûts calculés seront mis à jour automatiquement en fonction du degré d&#39;engagement des montants renseignés (dépenses réalisées, prévues, réservées, engagées).
+Dans une campagne, lorsque vous sélectionnez le budget, vous devez saisir le montant initial. Les coûts calculés seront mis à jour automatiquement en fonction du niveau d&#39;engagement des montants renseignés (dépenses réalisées, prévues, réservées, engagées).
 
 
 <!--

@@ -7,8 +7,8 @@ level: Beginner
 exl-id: a460c1b4-4266-46ff-8cca-748050afd579
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 84%
+source-wordcount: '194'
+ht-degree: 64%
 
 ---
 
@@ -22,6 +22,6 @@ Découvrez comment créer et publier des formulaires web dans la documentation d
 
 Adobe Campaign vous permet également de créer et de publier des **applications web** dynamiques et interactives, composées de données issues de la base de données et dont le contenu est adapté en fonction des droits de l’utilisateur connecté.
 
-Vous pouvez créer des pages, par exemple un formulaire d&#39;édition sur un extranet, ou des formulaires de notification incluant des données issues de la base de données avec des tables, des graphiques, des formulaires de saisie, etc. Cette fonctionnalité permet de concevoir et de publier des pages web dans lesquelles les utilisateurs peuvent rechercher ou saisir des informations.
+Vous pouvez créer des pages, telles qu&#39;un formulaire d&#39;édition sur un extranet, ou des formulaires de notification incluant des données de la base de données avec des tableaux, graphiques, formulaires de saisie, etc. Cette fonctionnalité vous permet de concevoir et de publier des pages web dans lesquelles les utilisateurs peuvent rechercher ou saisir des informations.
 
 Découvrez comment créer et publier des applications web dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html?lang=fr#designing-content){target="_blank"}

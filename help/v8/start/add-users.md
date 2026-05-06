@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 98%
+source-wordcount: '322'
+ht-degree: 68%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 Dans Adobe Campaign, les utilisateurs sont des **opérateurs** et les **groupes d’opérateurs** représentent des rôles d’utilisateur.
 
-Un opérateur/une opératrice est un utilisateur/une utilisatrice Adobe Campaign qui possède des autorisations pour se connecter et effectuer des actions. Les opérateurs sont stockés par défaut dans le nœud **[!UICONTROL Administration > Gestion des accès > Opérateurs]**.
+Un opérateur est un utilisateur Adobe Campaign qui possède des autorisations pour se connecter et effectuer des actions. Les opérateurs sont stockés par défaut dans le nœud **[!UICONTROL Administration > Gestion des accès > Opérateurs]**.
 
 Adobe Campaign est fourni avec des groupes d’opérateurs natifs, tels que les Chargé(e)s d’opération ou les Superviseurs/superviseuses de workflow. Pour en savoir plus sur les autorisations, consultez [cette section](../start/gs-permissions.md)
 
@@ -24,17 +24,17 @@ En tant que membre d&#39;un groupe d&#39;opérateurs, un utilisateur dispose de 
 
 Les droits nommés octroient des autorisations pour :
 
-* L&#39;exécution d&#39;opérations
-Par exemple, le bouton **Analyser** de l&#39;éditeur de diffusions est activé pour les membres du groupe **Chargés de diffusion** qui disposent du droit nommé **Préparer la diffusion**.
+* Effectuer des opérations
+Par exemple, le bouton **Analyser** de l&#39;éditeur de diffusions est activé pour les membres du groupe **Chargés de diffusion** qui disposent du droit nommé **Préparer la diffusion**
 
-* L&#39;accès aux dossiers
-L&#39;appartenance à des groupes d&#39;opérateurs peut permettre de bénéficier ou de se voir refuser des droits d&#39;accès aux dossiers, à travers la modification des paramètres de sécurité des dossiers. En savoir plus sur [cette page](../start/folder-permissions.md). Par exemple, elle peut avoir un impact sur : l&#39;**accès en écriture** pour créer de nouvelles entités (telles que des diffusions, des profils, etc.), l&#39;**accès en lecture** pour utiliser des entités, l&#39;**accès en suppression** pour supprimer des entités.
+* Accès aux dossiers
+L’appartenance à des groupes d’opérateurs peut accorder ou restreindre les droits d’accès aux dossiers en modifiant les paramètres de sécurité de ces derniers. En savoir plus sur [cette page](../start/folder-permissions.md). Par exemple, elle peut avoir un impact sur : l&#39;**accès en écriture** pour créer de nouvelles entités (telles que des diffusions, des profils, etc.), l&#39;**accès en lecture** pour utiliser des entités, l&#39;**accès en suppression** pour supprimer des entités.
 
 ## Zones de sécurité
 
-Chaque opérateur doit être associé à une zone pour se connecter à une instance et l’adresse IP de l’opérateur doit faire partie des adresses ou des plages d’adresses définies dans la zone de sécurité. La configuration des zones de sécurité est effectuée dans le fichier de configuration du serveur Adobe Campaign.
+Chaque opérateur doit être associé à une zone pour se connecter à une instance et l&#39;adresse IP de l&#39;opérateur doit faire partie des adresses ou des plages d&#39;adresses définies dans la zone de sécurité. La configuration des zones de sécurité est effectuée dans le fichier de configuration du serveur Adobe Campaign.
 
-Un opérateur est lié à une zone de sécurité à partir de son profil dans la console, accessible dans le nœud **[!UICONTROL Administration > Gestion des accès > Opérateurs.]**
+Un opérateur est lié à une zone de sécurité à partir de son profil dans la console, accessible dans le nœud **[!UICONTROL Administration > Gestion des accès > Opérateurs]**.
 
 >[!NOTE]
 >

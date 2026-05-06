@@ -6,14 +6,14 @@ role: User, Developer
 exl-id: 39ab5cd9-cc84-430b-a8b3-691e377851fa
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 81%
+source-wordcount: '321'
+ht-degree: 79%
 
 ---
 
 # Étapes clés de la création dʼun rapport personnalisé{#key-steps-to-create-a-report}
 
-Afin de produire des statistiques sur la base de données de Campaign, vous pouvez créer des rapports et adapter leur contenu et leur mise en page en fonction de vos besoins. Ces rapports peuvent être partagés ou non avec les autres opérateurs.
+Pour produire des statistiques sur les données de votre base de données Campaign, vous pouvez créer des rapports et adapter leur contenu ainsi que leur mise en page en fonction de vos besoins. Ces rapports peuvent être partagés avec d&#39;autres opérateurs.
 
 >[!NOTE]
 >
@@ -26,4 +26,4 @@ Les étapes nécessaires pour créer, publier et diffuser un rapport d&#39;analy
 1. Définition du contenu du rapport avec les activités et leurs conteneurs : consultez les sections [Création dʼun tableau](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-table.html?lang=fr){target="_blank"}, [Création dʼun graphique](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-chart.html?lang=fr){target="_blank"} et [Disposition des éléments](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/element-layout.html?lang=fr){target="_blank"},
 1. Configurez les options d’affichage : type d’affichage, rapports partagés : consultez les sections [Définir un contenu conditionnel](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/defining-a-conditional-content.html?lang=fr){target="_blank"} et [Configurer l’accès au rapport](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=fr){target="_blank"},
 1. Publication du rapport (assistant de publication) : consultez la section [Publication du rapport](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=fr#publishing-the-report){target="_blank"},
-1. Conversion du rapport (exportation, historique, affichage dans un navigateur) : consultez la section [Actions sur les rapports](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports.html?lang=fr){target="_blank"}.
+1. Conversion du rapport (export, historique, affichage dans un navigateur) : consultez la section [Actions sur les rapports](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports.html?lang=fr){target="_blank"}.

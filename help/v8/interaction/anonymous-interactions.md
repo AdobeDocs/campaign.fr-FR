@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: b7a04360-f8c6-4c69-9594-2b44d3f819b7
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 100%
+source-wordcount: '435'
+ht-degree: 82%
 
 ---
 
@@ -20,7 +20,7 @@ Par défaut, le module **Interaction** de Campaign comprend un environnement pr�
 
 Lorsque vous créez l&#39;environnement anonyme via l&#39;assistant de création de mapping, la case **[!UICONTROL Environnement dédié aux interactions anonymes entrantes]** est automatiquement cochée dans l&#39;onglet **[!UICONTROL Général]** de l&#39;environnement.
 
-La **[!UICONTROL Dimension de ciblage]** est automatiquement préremplie. Elle pointe par défaut sur le tableau des visiteurs et visiteuses.
+La **[!UICONTROL dimension de ciblage]** est automatiquement renseignée. Par défaut, il est lié au tableau des visiteurs.
 
 Le champ **[!UICONTROL Dossier des visiteurs]** s&#39;affiche. Il est automatiquement prérempli pour pointer sur le dossier **[!UICONTROL Visiteurs]**. Ce champ permet de spécifier l&#39;endroit où sont stockés les profils des visiteurs.
 
@@ -38,7 +38,7 @@ Pour créer les catégories et emplacements, procédez de la même manière que 
 
 ## Les visiteurs anonymes {#anonymous-visitors}
 
-Les visiteurs anonymes peuvent être soumis à un processus d&#39;identification par cookies intervenant au moment de la connexion. Cette reconnaissance implicite s&#39;effectue à partir de l&#39;historique de navigation du visiteur.
+Les visiteurs anonymes peuvent être soumis à un processus d’identification par cookies lorsqu’ils se connectent. Cette reconnaissance implicite s’effectue à partir de l’historique de navigation du visiteur.
 
 Ce processus consiste à comparer les données récupérées par les cookies avec celles de votre base de données. Dans certains cas, les visiteurs sont reconnus (ils sont alors identifiés implicitement) ; dans d&#39;autres cas, ils ne le sont pas (et restent donc anonymes).
 
@@ -48,7 +48,7 @@ Afin d&#39;effectuer cette analyse, au niveau de l&#39;emplacement, cochez la ca
 
 ## Traitement des visiteurs anonymes non identifiés {#processing-unidentified-anonymous-visitors}
 
-Après analyse, si un visiteur anonyme n&#39;est pas identifié, il vous est possible de stocker ses données dans un emplacement donné, ce qui vous permettra de proposer des offres spécifiquement destinées à ce type de visiteurs, répondant à des règles de typologie précises.
+Après analyse, si un visiteur anonyme n’est pas identifié, vous pouvez stocker ses données dans un emplacement donné. Vous pouvez ainsi proposer des offres destinées spécifiquement à ce type de visiteur et correspondant aux règles de typologie spécifiées.
 
 En cas d&#39;absence d&#39;élément permettant d&#39;identifier un contact ou si vous ne souhaitez pas proposer d&#39;offre identifiée à un contact pouvant être identifié implicitement, vous pouvez choisir d&#39;effectuer un basculement vers un environnement anonyme.
 

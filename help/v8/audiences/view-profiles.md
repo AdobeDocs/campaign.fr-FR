@@ -8,8 +8,8 @@ exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
 version: Campaign v8, Campaign Classic v7
 source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 97%
+source-wordcount: '472'
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ Pour des manipulations de profils plus avancées, accédez à l&#39;arborescence
 >L’écran de destinataire intégré est défini par le biais d’un schéma XML et de son formulaire associé. Le schéma XML est stocké dans le nœud **[!UICONTROL Administration > Configuration > Schémas de données]** de l&#39;arborescence de l&#39;explorateur Adobe Campaign. Seuls les utilisateurs experts peuvent apporter des modifications à ces schémas.
 >
 
-## Modification d&#39;un profil {#edit-a-profiles}
+## Modification d’un profil {#edit-a-profiles}
 
 Sélectionnez un profil pour afficher les détails dans un nouvel onglet.
 
@@ -43,7 +43,7 @@ Pour un destinataire intégré standard, vous pouvez accéder aux onglets suivan
 
 * **[!UICONTROL Général]**, pour toutes les données de profil générales. Il contient notamment le nom, le prénom, l&#39;adresse e-mail, le format des e-mails, etc.
 
-  Cet onglet stocke également l&#39;indicateur **opt-out** pour le profil : lorsque l&#39;option **[!UICONTROL Ne plus contacter (tous canaux)]** est sélectionnée, le profil est sur liste bloquée. Ces informations sont ajoutées aux données de contact si le destinataire a cliqué sur un lien de désinscription dans une newsletter par exemple. Ce destinataire ne sera plus ciblé sur aucun canal (e-mail, courrier, etc.). Pour en savoir plus, reportez-vous à [cette page](../send/quarantines.md).
+  Cet onglet stocke également l&#39;indicateur **opt-out** pour le profil : lorsque l&#39;option **[!UICONTROL Ne plus contacter (tous canaux)]** est sélectionnée, le profil est sur liste bloquée. Ces informations sont ajoutées aux données de contact si le destinataire a cliqué sur un lien de désinscription dans une newsletter par exemple. Ce destinataire ne sera plus ciblé sur aucun canal (e-mail, courrier, etc.). Pour plus d’informations, consultez [cette page](../send/quarantines.md).
 
 * L’onglet **Coordonnées**, qui contient l’adresse postale du profil sélectionné.
 

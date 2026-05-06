@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
 source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
 workflow-type: tm+mt
-source-wordcount: '1816'
-ht-degree: 93%
+source-wordcount: '1851'
+ht-degree: 87%
 
 ---
 
@@ -120,7 +120,7 @@ Ces profils de produit correspondent aux **groupes d’opérateurs** Campaign. L
 
 1. **[!UICONTROL Personnes chargées de la gestion de Campaign]** (opération)
 
-   Les opérateurs et opératrices de ce groupe peuvent gérer les campagnes marketing : il permet d’accéder aux objets relatifs aux opérations (plans, programmes, workflows, budgets, etc.) dans le cadre de **[!UICONTROL Campaign]** (module Adobe Campaign optionnel).
+   Les opérateurs de ce groupe peuvent gérer les campagnes marketing : il permet d&#39;accéder aux objets liés aux opérations (plans, programmes, workflows, budgets, etc.) dans le cadre de **[!UICONTROL Campaign]** (module optionnel Adobe Campaign).
 
    Ce groupe contient les droits nommés suivants :
 
@@ -141,7 +141,7 @@ Ces profils de produit correspondent aux **groupes d’opérateurs** Campaign. L
 
 1. **[!UICONTROL Exécution des workflows]** (workflow)
 
-   Le groupe **[!UICONTROL Exécution des workflows]** permet de contrôler l’exécution et l’approbation des workflows de ciblage : le droit nommé WORKFLOW est associé aux opérateurs et opératrices de ce groupe. Il est requis pour toutes les actions sur les workflows, en plus des droits d’accès aux fichiers de données. Par défaut, le groupe **[!UICONTROL Exécution des workflows]** a un accès en lecture seule aux fichiers de workflow de ciblage standard et aux modèles de workflow. Les opérateurs et opératrices de ce groupe ont également accès en lecture et écriture au fichier d’approbations en attente.
+   Le groupe **[!UICONTROL Exécution des workflows]** permet de contrôler l&#39;exécution et la validation des workflows de ciblage : le droit nommé WORKFLOW est associé aux opérateurs de ce groupe. Elle est nécessaire à toutes les actions sur les workflows, en plus des droits d&#39;accès aux fichiers de données. Par défaut, le groupe **[!UICONTROL Exécution des workflows]** a un accès en lecture seule aux fichiers de workflow de ciblage standard et aux modèles de workflow. Les opérateurs et opératrices de ce groupe ont également accès en lecture et écriture au fichier d’approbations en attente.
 
 1. **[!UICONTROL Superviseurs de workflow]** (workflowSupervisor)
 
@@ -190,19 +190,19 @@ Adobe Campaign s’accompagne d’un ensemble de droits nommés qui vous permett
 
 Les droits nommés octroient des autorisations pour :
 
-* L&#39;exécution d&#39;opérations
-Par exemple, le bouton **Analyser** de l&#39;éditeur de diffusions est activé pour les membres du groupe **Chargés de diffusion** qui disposent du droit nommé **Préparer la diffusion**.
+* Effectuer des opérations
+Par exemple, le bouton **Analyser** de l&#39;éditeur de diffusions est activé pour les membres du groupe **Chargés de diffusion** qui disposent du droit nommé **Préparer la diffusion**
 
-* L’accès aux dossiers
-L’appartenance à des groupe d’utilisateurs ou d’utilisatrices peut permettre de bénéficier ou de se voir refuser des droits d’accès aux dossiers, à travers la modification des paramètres de sécurité des dossiers. [En savoir plus](folder-permissions.md#restrict-access-to-a-folder).
+* Accès aux dossiers
+L’appartenance à des groupes d’opérateurs peut accorder ou restreindre les droits d’accès aux dossiers en modifiant les paramètres de sécurité de ces derniers. [En savoir plus](folder-permissions.md#restrict-access-to-a-folder).
 
   Par exemple, elle peut avoir un impact sur : l’**accès en écriture** pour créer de nouvelles entités (telles que des diffusions, des profils, etc.), l’**accès en lecture** pour utiliser des entités, l’**accès en suppression** pour supprimer des entités.
 
 Les droits nommés par défaut dans Adobe Campaign sont les suivants :
 
-* **[!UICONTROL ADMINISTRATION]** : les opérateurs disposant du droit **[!UICONTROL ADMINISTRATION]** ont un accès total à l’instance. Les utilisateurs administrateurs peuvent exécuter, créer, modifier et supprimer tout objet tel que le workflow, la diffusion, les scripts, etc. **Remarque :** les profils de produit dans le Adobe Admin Console contenant le mot « admin » accordent l’accès au Panneau de Contrôle Campaign.
+* **[!UICONTROL ADMINISTRATION]** : les opérateurs disposant du droit **[!UICONTROL ADMINISTRATION]** ont un accès total à l’instance. Les utilisateurs administrateurs peuvent exécuter, créer, modifier et supprimer tout objet tel qu’un workflow, une diffusion, des scripts, etc. **Remarque :** les profils de produit dans le Adobe Admin Console contenant le mot « admin » accordent l’accès au Panneau de Contrôle Campaign.
 
-* **[!UICONTROL ADMINISTRATION DES VALIDATIONS]** : vous pouvez définir plusieurs étapes de validation dans les workflows et les diffusions pour vous assurer que l’état actuel a été validé par un opérateur ou un groupe affecté. Les utilisateurs disposant du droit **[!UICONTROL ADMINISTRATION DES VALIDATIONS]** peuvent définir des étapes de validation et également désigner un opérateur ou un groupe d’opérateurs qui doit valider ces étapes. **Remarque :** les profils de produit contenant le mot « admin » (tels que « approval admin ») accordent l’accès au Panneau de Contrôle Campaign.
+* **[!UICONTROL ADMINISTRATION DES VALIDATIONS]** : vous pouvez définir plusieurs étapes de validation dans les workflows et les diffusions pour vous assurer que l’état actuel a été validé par un opérateur ou un groupe affecté. Les utilisateurs disposant du droit **[!UICONTROL ADMINISTRATION DES VALIDATIONS]** peuvent définir les étapes de validation et affecter un opérateur ou un groupe d’opérateurs chargé de valider ces étapes. **Remarque :** les profils de produit contenant le mot « admin » (tels que « approval admin ») accordent l’accès au Panneau de Contrôle Campaign.
 
 * **[!UICONTROL CENTRAL]** : droit de gestion en central (Marketing distribué).
 

@@ -6,7 +6,7 @@ level: Experienced
 exl-id: 76e2d102-c877-41a6-af87-2f407201a572
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '239'
 ht-degree: 100%
 
 ---
@@ -112,7 +112,7 @@ Récupérez l’enregistrement du service.
 -H 'X-Api-Key: <API_KEY>'
 ```
 
-La requête renvoie l’URL des abonnements du service.
+Elle renvoie l’URL des abonnements du service.
 
 ```
 {

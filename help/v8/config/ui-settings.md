@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
 source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 97%
+source-wordcount: '1094'
+ht-degree: 80%
 
 ---
 
@@ -29,7 +29,7 @@ Vous pouvez ajouter des dossiers à l&#39;explorateur Campaign, créer des vues 
 
 Découvrez comment gérer les dossiers et les vues dans [cette page](../audiences/folders-and-views.md)
 
-## Gérer et personnaliser des listes {#customize-lists}
+## Gestion et personnalisation de listes {#customize-lists}
 
 Dans la console cliente Campaign, les données sont affichées sous forme de listes. Vous pouvez adapter ces listes à vos besoins. Vous pouvez par exemple ajouter des colonnes, filtrer les données, comptabiliser les enregistrements, enregistrer et partager vos paramètres.
 
@@ -37,7 +37,7 @@ En outre, vous pouvez créer et enregistrer des filtres.  Pour en savoir plus su
 
 ### Nombre d’enregistrements {#number-of-records}
 
-Par défaut, Adobe Campaign charge en mémoire les 200 premiers enregistrements d&#39;une liste. Par conséquent, l&#39;affichage ne propose pas nécessairement l&#39;intégralité des enregistrements de la table dont vous affichez le contenu. Vous pouvez lancer un décompte du nombre d&#39;enregistrements de la liste et déclencher le chargement en mémoire d&#39;enregistrements supplémentaires.
+Par défaut, Adobe Campaign charge les 200 premiers enregistrements d’une liste. Cela signifie que l’affichage n’affiche pas nécessairement tous les enregistrements du tableau que vous consultez. Vous pouvez exécuter un décompte du nombre d’enregistrements dans la liste et charger d’autres enregistrements.
 
 En bas à droite de l&#39;écran de liste, un **compteur** indique le nombre d&#39;enregistrements chargés en mémoire par rapport au nombre total d&#39;enregistrements dans la base (après application de tous les filtres éventuels) :
 
@@ -83,7 +83,7 @@ Vous pouvez également utiliser l’écran de configuration de la liste pour ajo
 
 1. Utilisez les flèches haut/bas pour modifier l’**ordre d’affichage**.
 
-1. Cliquez sur **[!UICONTROL OK]** pour valider la configuration et visualiser le résultat.
+1. Cliquez sur **[!UICONTROL OK]** pour valider la configuration et affiche le résultat.
 
 Si vous devez supprimer une colonne, sélectionnez-la et cliquez sur l’icône **Corbeille**.
 
@@ -141,16 +141,16 @@ Pour exporter les données d’une liste, vous devez utiliser un assistant d’e
 
 ### Tri d’une liste {#sorting-a-list}
 
-Les listes peuvent contenir un grand nombre de données. Vous pouvez trier ces données ou appliquer des filtres simples ou avancés. Le tri permet d&#39;afficher les données dans un ordre ascendant ou descendant, tandis que les filtres permettent de définir et de combiner des critères afin de n&#39;afficher qu&#39;une sélection de données.
+Les listes peuvent contenir une grande quantité de données. Vous pouvez trier ces données ou appliquer des filtres simples ou avancés. Le tri permet d&#39;afficher les données par ordre croissant ou décroissant. Les filtres vous permettent de définir et de combiner des critères pour afficher uniquement les données sélectionnées.
 
-Cliquez sur l&#39;en-tête de la colonne pour appliquer un tri ascendant, un tri descendant ou annuler le tri des données. Une flèche bleue devant le libellé de la colonne indique qu&#39;un tri est actif et l&#39;ordre du tri. Un tiret rouge devant le libellé de la colonne indique que le tri est appliqué à des données indexées depuis la base de données. Ce mode de tri permet d&#39;optimiser les actions de tri.
+Cliquez sur l’en-tête de colonne pour appliquer un tri croissant ou décroissant, ou pour annuler le tri des données. Le statut de tri actif et l’ordre de tri sont indiqués par une flèche bleue devant le libellé de la colonne. Un tiret rouge avant le libellé de la colonne signifie que le tri est appliqué aux données indexées à partir de la base de données. Cette méthode de tri est utilisée pour optimiser les tâches de tri.
 
-Vous pouvez également paramétrer le tri ou combiner les critères de tri. Pour cela, procédez comme suit :
+Vous pouvez également configurer le tri ou combiner des critères de tri. Pour ce faire, procédez comme suit :
 
 1. Cliquez sur **[!UICONTROL Configurer la liste]** en bas à droite de la liste.
 1. Dans la fenêtre de configuration de la liste, cliquez sur l&#39;onglet **[!UICONTROL Tris]**.
 1. Sélectionnez les champs à trier et le sens du tri (ascendant/descendant).
-1. La priorité du tri est définie par l&#39;ordre des colonnes de tri. Pour changer la priorité, modifiez l&#39;ordre des colonnes à partir des icônes correspondantes.
+1. La priorité de tri est définie par l’ordre des colonnes de tri. Pour modifier la priorité, utilisez les icônes appropriées pour modifier l’ordre des colonnes.
 
    La priorité du tri n&#39;a aucune incidence sur l&#39;affichage des colonnes de la liste.
 

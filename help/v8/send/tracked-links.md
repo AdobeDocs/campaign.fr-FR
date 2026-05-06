@@ -7,20 +7,20 @@ level: Beginner
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
 source-git-commit: 5b23be4cb8f0896d2482e525e416713b1a6c4514
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 85%
+source-wordcount: '593'
+ht-degree: 52%
 
 ---
 
 # Configuration des liens trackés {#how-to-configure-tracked-links}
 
-La réception des messages ainsi que l’activation des liens insérés dans le contenu des messages peuvent être suivis pour chaque diffusion. Vous pouvez ainsi assurer un tracking du comportement des destinataires suite aux actions de diffusion dont ils ont été la cible.
+Pour chaque diffusion, vous pouvez suivre la réception des messages et l&#39;activation des liens insérés dans le contenu des messages. Vous pouvez ainsi suivre le comportement des destinataires à la suite des actions de diffusion qui les ont ciblés.
 
 >[!NOTE]
 >
 >Les liens inclus dans le contenu des emails qui comportent des éléments de personnalisation ont besoin d&#39;une syntaxe spécifique pour être suivis. Découvrez comment ajouter des liens dans des e-mails qui peuvent être personnalisés et qui prennent en charge le tracking dans [cette section](personalized-links.md).
 
-Le tracking des messages est activé par défaut. Pour personnaliser le tracking des URL, procédez comme suit :
+Le tracking des messages est activé par défaut. Pour personnaliser le suivi des URL, procédez comme suit :
 
 1. Sélectionnez l’option **[!UICONTROL Afficher les URL]**, située dans la section inférieure de l’assistant de diffusion, sous le contenu du message.
 
@@ -36,13 +36,13 @@ Le tracking des messages est activé par défaut. Pour personnaliser le tracking
    >
    >Lorsque l’URL du lien est utilisée comme libellé, il est recommandé de désactiver le suivi afin de prévenir tout risque de rejet pour cause d’hameçonnage.
    >
-   >Par exemple, si l’URL www.adobe.com est insérée dans le message et que l’URL est suivie, le contenu du lien hypertexte sera transformé en https://nlt.adobe.net/r/?id=xxxxxx. Il pourrait alors être considéré comme frauduleux par les clients de messagerie des destinataires.
+   >Par exemple, si l’URL www.adobe.com est insérée dans le message et que le suivi y est activé, le contenu du lien hypertexte sera modifié en https://nlt.adobe.net/r/?id=xxxxxx. Cela signifie qu’il peut être considéré comme frauduleux par les clients de messagerie des destinataires.
 
 1. Au besoin, modifiez le libellé du tracking, double-cliquez dessus et saisissez-en un nouveau.
 
    >[!NOTE]
    >
-   >Les noms des URL suivies et des libellés être modifiés afin de simplifier la lecture des informations lors du suivi des diffusions. Deux URL ou deux libellés portant le même nom seront cumulés lors du calcul des clics.
+   >Les libellés des URL suivies et des libellés peuvent être modifiés afin de simplifier la lecture des informations lors du suivi des diffusions. Deux URL ou deux libellés portant le même nom seront ajoutés lors du calcul du nombre de clics.
 
 1. Au besoin, modifiez le tracking, sélectionnez un nouveau mode dans la colonne **[!UICONTROL Tracking]** correspondant au lien visé, comme dans l’exemple ci-dessous :
 
@@ -52,8 +52,8 @@ Le tracking des messages est activé par défaut. Pour personnaliser le tracking
 
    * **[!UICONTROL Activé]** : active le tracking de cette URL.
    * **[!UICONTROL Non activé]** : désactive le suivi de cette URL.
-   * **[!UICONTROL Toujours activé]** : active toujours le tracking de cette URL. Cette information est enregistrée de sorte que si l&#39;URL réapparaît dans le contenu d&#39;un prochain message, son tracking est automatiquement activé.
-   * **[!UICONTROL Jamais activé]** : n&#39;active jamais le tracking de cette URL. Cette information est enregistrée de sorte que si l&#39;URL réapparaît dans le contenu d&#39;un prochain message, son tracking est automatiquement désactivé.
+   * **[!UICONTROL Toujours activé]** : active toujours le tracking de cette URL. Ces informations sont enregistrées afin que la prochaine fois, si l’URL apparaît à nouveau dans le contenu d’un futur message, son tracking soit automatiquement activé.
+   * **[!UICONTROL Jamais trackée]** : n&#39;active jamais le tracking de cette URL. Ces informations sont enregistrées afin que la prochaine fois, si l’URL apparaît à nouveau dans un futur message, son tracking soit automatiquement désactivé.
    * **[!UICONTROL Opt-out]** : considère cette URL comme une option d&#39;opt-out ou une URL de désabonnement.
    * **[!UICONTROL Page miroir]** : considère cette URL comme une URL de page miroir.
 

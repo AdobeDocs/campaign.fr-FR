@@ -7,7 +7,7 @@ level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '461'
 ht-degree: 92%
 
 ---
@@ -24,7 +24,7 @@ Combinez les solutions Adobe Experience Cloud pour moderniser votre implémentat
 
 Campaign v8 peut se connecter aux solutions Adobe suivantes. Parcourez les liens pour en savoir plus sur les cas d’utilisation, la configuration et les instructions :
 
-* Adobe Analytics.[En savoir plus](../connect/ac-aa.md)
+* Adobe Analytics.[En savoir plus](../connect/ac-aa.md)
 * Triggers Adobe Experience Cloud [En savoir plus](../connect/ac-triggers.md)
 * Adobe Experience Manager [En savoir plus](../connect/ac-aem.md)
 * Adobe Experience Platform [En savoir plus](../connect/ac-aep.md)
@@ -40,7 +40,7 @@ Apprenez-en davantage sur le **partage de ressources** entre les solutions Exper
 
 >[!NOTE]
 >
->En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour connecter Campaign aux services et aux solutions Adobe Experience Cloud.
+>En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour connecter Campaign aux services et solutions Adobe Experience Cloud.
 
 
 ## Intégration à votre connecteur CRM{#gs-crm-connectors}
@@ -50,7 +50,7 @@ Vous pouvez connecter votre plateforme Adobe Campaign à vos **systèmes CRM ti
 Activez vos données CRM lors de la communication cross-canal et découvrez comment transmettre des contacts de votre système de gestion de la relation client à Adobe Campaign. Partagez également les données de campagne d&#39;Adobe Campaign avec votre système CRM.
 Les connecteurs CRM permettent une intégration rapide et facile des données. Adobe Campaign fournit en effet un assistant dédié à la collecte et à la sélection des tables disponibles dans le système CRM. Cela garantit une synchronisation bidirectionnelle et permet de s&#39;assurer que les données sont à jour en tout temps, et ce, sur l&#39;ensemble des systèmes.
 
- Découvrez comment intégrer Campaign à Microsoft Dynamics 365 et Salesforce.com sur [cette page](crm.md).
+Découvrez comment intégrer Campaign à Microsoft Dynamics 365 et Salesforce.com sur [cette page](crm.md).
 
 ## Connecter des tiers à Federated Data Access{#gs-fda}
 
@@ -62,7 +62,7 @@ En savoir plus en consultant [cette page](fda.md)
 
 Utilisez Adobe Campaign pour interagir avec la clientèle et les prospects via X (anciennement Twitter).
 
-Vous pouvez ainsi effectuer les actions suivantes :
+Vous pouvez ainsi :
 
 * Envoyer des messages directs à vos abonnées et abonnés
 * Publier sur votre compte X

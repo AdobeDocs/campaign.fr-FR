@@ -8,8 +8,8 @@ exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
 version: Campaign v8, Campaign Classic v7
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 100%
+source-wordcount: '1131'
+ht-degree: 93%
 
 ---
 
@@ -132,7 +132,7 @@ Voici la liste des tables intégrées qui sont prises en compte lors de l’exé
 * Abonnements (subscription)
 * Proposition d&#39;offre d&#39;un destinataire (propositionRcp)
 
-Si vous avez créé des tables personnalisées ayant un lien avec la table du destinataire (type own), celles-ci sont également prises en compte. Par exemple, si une table de transaction est liée à la table du destinataire et si une table de détails de transaction est liée à la table de transaction, elles sont toutes deux prises en compte.
+Si vous avez créé des tables personnalisées avec un lien vers la table des destinataires (type own), elles seront également prises en compte. Par exemple, si vous avez une table de transactions liée à la table des destinataires et une table de détails de transactions liée à la table des transactions, elles seront toutes deux prises en compte.
 <!--
 >[!CAUTION]
 >
@@ -155,9 +155,9 @@ Vous trouverez ci-dessous les différents statuts des demandes d’accès à des
 
 **Rubriques connexes dans la documentation de Campaign Classic v7 :**
 
-* [Informations personnelles et consentement](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr){target="_blank"}
+* [Confidentialité et consentement](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr){target="_blank"}
 
-* [Commencer avec la gestion de la confidentialité](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=fr){target="_blank"}
+* [Prise en main de la gestion de la confidentialité](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=fr){target="_blank"}
 
 * [Règlements relatifs à la gestion de la confidentialité](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=fr#privacy-management-regulations){target="_blank"} (RGPD, CCPA, PDPA et LGPD)
 

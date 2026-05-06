@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: fedcffcd-cf9b-4c3d-bd25-cb87dda30192
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '258'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 91%
 
 ---
 
@@ -33,7 +33,7 @@ Dans l&#39;exemple ci-dessous, nous allons créer un workflow permettant d&#39;e
 
    ![](assets/cross_channel_delivery_1.png)
 
-1. Ajoutez les conditions de filtrage à votre requête. Ici, nous allons sélectionner les destinataires ayant un numéro de mobile ou une adresse email.
+1. Ajoutez les conditions de filtre à votre requête. Dans ce cas, nous sélectionnerons les destinataires qui ont un numéro de mobile ou une adresse e-mail.
 
    ![](assets/cross_channel_delivery_2.png)
 
@@ -47,7 +47,7 @@ Dans l&#39;exemple ci-dessous, nous allons créer un workflow permettant d&#39;e
 1. Pour éviter que les destinataires ne reçoivent trop de diffusion à la fois, ajoutez et configurez une activité **[!UICONTROL Attente]**.
 1. Ajoutez une activité **[!UICONTROL Partage]** pour diviser les abonnés aux applications mobiles iOS ou Android.
 
-   Sélectionnez un service pour chacun des systèmes d’exploitation.
+   Sélectionnez un service pour chacun des systèmes d&#39;exploitation.
 
    ![](assets/cross_channel_delivery_4.png)
 

@@ -5,8 +5,8 @@ title: Documentation du produit Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 90%
+source-wordcount: '331'
+ht-degree: 74%
 
 ---
 
@@ -78,34 +78,34 @@ Some important changes to the Android Firebase Cloud Messaging (FCM) service wil
     <td>
       <img src="assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
-      <strong>Prise en main</strong><br/> <a href="start/campaign-ui.md">Interface utilisateur</a> – <a href="start/ac-components.md">Composants et processus</a> – <a href="start/v7-to-v8.md">De Classic v7 à v8</a> – <a href="start/campaign-faq.md">FAQ</a>
+      <strong>Prise en main</strong><br/><a href="start/campaign-ui.md">Interface utilisateur</a> - <a href="start/ac-components.md">Composants et processus</a> - <a href="start/v7-to-v8.md">De Classic v7 à v8</a> - <a href="start/campaign-faq.md">FAQ</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Expérience du client ou de la cliente</strong><br/> <a href="../automation/workflow/about-workflows.md" target="_blank">Automatiser avec des workflows</a> – <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">Orchestration des campagnes</a> – <a href="interaction/interaction.md">Gestion des décisions</a> – <a href="send/personalize.md">Personnalisation</a>
+      <strong>Expérience client</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">Automatiser avec des workflows</a> - <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">Orchestration des campagnes</a> - <a href="interaction/interaction.md">Gestion des décisions</a> - <a href="send/personalize.md">Personalization</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>Envoyer des messages</strong><br/> <a href="start/create-message.md">Prise en main</a> – <a href="send/preview-and-proof.md">Aperçu et BAT</a> – <a href="send/predictive.md">Optimisation de l’heure d’envoi</a> – <a href="reporting/gs-reporting.md">Rapports et analyses</a>
+      <strong>Envoyer des messages</strong><br/><a href="start/create-message.md">Commencer</a> - <a href="send/preview-and-proof.md">Prévisualisation et BAT</a> - <a href="send/predictive.md">Optimisation de l’heure d’envoi</a> - <a href="reporting/gs-reporting.md">Reporting et analyses</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
     <br/>
-      <strong>Profils et audiences</strong><br/> <a href="audiences/create-profiles.md">Ajouter des profils</a> – <a href="audiences/create-audiences.md">Créer des audiences</a> – <a href="start/subscriptions.md">Gérer des abonnements</a> – <a href="start/privacy.md">Confidentialité</a>
+      <strong>Profils et audiences</strong><br/><a href="audiences/create-profiles.md">Ajouter des profils</a> - <a href="audiences/create-audiences.md">Créer des audiences</a> - <a href="start/subscriptions.md">Gérer les abonnements</a> - <a href="start/privacy.md">Confidentialité</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-configure.svg" width="35px">
     <br/>
-      <strong>Architecture et configuration</strong><br/> <a href="architecture/architecture.md">Architecture</a> – <a href="start/implement.md">Implémentation de Campaign v8</a> – <a href="connect/integration.md">Connexion à d’autres solutions</a> – <a href="start/gs-permissions.md">Utilisateurs, utilisatrices et autorisations</a>
+      <strong>Architecture et configuration</strong><br/><a href="architecture/architecture.md">Architecture</a> - <a href="start/implement.md">Implémentation de Campaign v8</a> - <a href="connect/integration.md">Connexion à d’autres solutions</a> - <a href="start/gs-permissions.md">Utilisateurs et autorisations</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
     <br/>
-      <strong>Ressources pour le développement</strong><br/><a href="dev/datamodel.md">Modèle de données de Campaign v8</a> - <a href="dev/schemas.md">Schémas</a> - <a href="dev/api.md">APIs</a>
+      <strong>Ressources pour les développeurs</strong><br/><a href="dev/datamodel.md">Modèle de données de Campaign v8</a> - <a href="dev/schemas.md">Schémas</a> - <a href="dev/api.md">API</a>
     </td>
   </tr>
 </table>

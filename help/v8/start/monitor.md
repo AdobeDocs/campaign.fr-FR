@@ -4,10 +4,11 @@ description: Découvrez comment surveiller les diffusions, les workflows et votr
 feature: Monitoring
 role: User
 level: Beginner
-source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
+exl-id: 2ad585f2-19bc-4391-8a19-9e892dbe01a3
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 4%
+source-wordcount: '1141'
+ht-degree: 8%
 
 ---
 
@@ -17,9 +18,9 @@ Adobe Campaign offre un ensemble complet de fonctionnalités permettant de surve
 
 >[!NOTE]
 >
->En tant qu’administrateur Campaign, vous pouvez également utiliser le [Panneau de Contrôle Campaign](#control-panel) pour surveiller vos instances, gérer les performances et configurer les paramètres avec des fonctionnalités en libre-service.
+>En tant qu’administrateur Campaign, vous pouvez également utiliser le Panneau de Contrôle Campaign[&#128279;](#control-panel) pour surveiller vos instances, gérer les performances et configurer les paramètres avec des fonctionnalités en libre-service.
 
-## Surveillance de vos diffusions {#monitor-deliveries}
+## Surveiller vos diffusions {#monitor-deliveries}
 
 La surveillance de vos diffusions après leur envoi est une étape clé pour vous assurer que vos campagnes marketing sont efficaces et atteignent vos clients. Après l’envoi d’une diffusion, vous pouvez surveiller son statut et suivre les mesures clés dans le tableau de bord de diffusion. Le tableau de bord permet d’accéder aux logs de diffusion, aux logs d’exclusion, aux logs de tracking et à d’autres fonctionnalités de surveillance pour vous aider à analyser les performances de votre diffusion sur tous les canaux.
 
@@ -125,7 +126,7 @@ Le Panneau de Contrôle Campaign permet aux administrateurs de surveiller et de 
 | **Infrastructure** | Surveiller la capacité de stockage SFTP, suivre la configuration des sous-domaines, surveiller l’expiration des certificats SSL, gérer les listes autorisées d’adresses IP |
 | **Instance** | Afficher la version de build et les packages installés, surveiller la configuration du système, gérer les domaines externes autorisés |
 
-En savoir plus sur la surveillance des performances des Panneau de Contrôle Panneaux de Contrôle [&#128279;](../config/self-service.md) et [&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=fr){target="_blank"}
+En savoir plus sur la surveillance des performances des Panneaux de Contrôle [&#128279;](../config/self-service.md) et [&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=fr){target="_blank"}
 
 >[!NOTE]
 >
@@ -144,7 +145,7 @@ Suivez le comportement des destinataires et mesurez l’efficacité de vos campa
 
 En savoir plus sur le [tracking des messages](../send/tracking.md)
 
-### Rapports de diffusion {#delivery-reports}
+### Rapports sur les diffusions {#delivery-reports}
 
 Adobe Campaign fournit un ensemble complet de rapports pour analyser les performances de vos diffusions :
 
@@ -170,5 +171,4 @@ En savoir plus sur les [&#x200B; rapports globaux &#x200B;](../reporting/global-
 * [Bonnes pratiques de diffusion](delivery-best-practices.md)
 * [Gestion des quarantaines](../send/quarantines.md)
 * [Configuration et envoi de diffusions](../send/configure-and-send.md)
-* [Commencer avec les rapports](../reporting/gs-reporting.md)
-
+* [Prise en main des rapports](../reporting/gs-reporting.md)

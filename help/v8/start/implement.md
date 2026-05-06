@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 97%
+source-wordcount: '1218'
+ht-degree: 95%
 
 ---
 
@@ -70,7 +70,7 @@ Avant de commencer à envoyer des messages et à créer des campagnes marketing,
 
 1. **Importer des profils et créer des audiences**
 
-   Campaign vous aide à ajouter des contacts à la base de données cloud. Vous pouvez charger un fichier, planifier et automatiser plusieurs mises à jour des contacts, collecter des données sur le Web ou saisir des informations de profil directement dans la table des destinataires.
+   Campaign vous aide à ajouter des contacts à la base de données cloud. Vous pouvez charger un fichier, planifier et automatiser plusieurs mises à jour des contacts, collecter des données sur le web ou saisir des informations de profil directement dans le tableau des destinataires.
 
    [Découvrez comment importer des profils](import.md).
 
@@ -112,7 +112,7 @@ Vous pouvez personnaliser de nombreuses zones et fonctionnalités Campaign. La p
 
    Reportez-vous à cette section pour en savoir plus sur le [modèle de données intégré de Campaign](../dev/datamodel.md).
 
-   Vous pouvez étendre les schémas existants ou en créer d’autres de A à Z. Apprenez-en davantage en consultant [cette page](../dev/customize.md).
+   Vous pouvez étendre les schémas existants ou en créer d’autres de A à Z. En savoir plus à ce propos sur [cette page](../dev/customize.md).
 
 1. **Tableaux de bord et listes**
 
@@ -122,13 +122,13 @@ Vous pouvez personnaliser de nombreuses zones et fonctionnalités Campaign. La p
 
    Vous pouvez également créer des tableaux de bord pour afficher les données de Campaign en fonction de vos besoins.
 
-   En savoir plus sur [cette page](../dev/customize.md#gs-custom-dashboards).
+   En savoir plus à ce propos sur [cette page](../dev/customize.md#gs-custom-dashboards).
 
 1. **Rapports**
 
    Campaign fournit un ensemble de rapports natifs relatifs à la surveillance des diffusions, aux URL et flux de clics, au tracking, aux indicateurs de délivrabilité, etc.
 
-   En complément des rapports natifs, Adobe Campaign permet de générer des rapports dans différents contextes et de répondre à des besoins variés. Ce document détaille les principes d&#39;utilisation ainsi que les modes d&#39;implémentation.
+   En complément des rapports natifs, Adobe Campaign permet de générer des rapports dans différents contextes et de répondre à des besoins variés. Les principes d’utilisation et les modes d’implémentation sont présentés dans ce document.
 
    En savoir plus sur les fonctionnalités de reporting de Campaign sur [cette page](../reporting/gs-reporting.md).
 
@@ -139,7 +139,7 @@ Pour orchestrer des campagnes marketing complexes vers différentes audiences su
 
 * Utilisez des **workflows** pour gérer les processus et les données. Apprenez-en davantage en consultant [cette documentation](../../automation/workflow/about-workflows.md).
 
-* Configurez les processus d’**abonnement** et les **pages de destination**.  Apprenez-en davantage en consultant [cette page](../start/subscriptions.md).
+* Configurez les processus d’**abonnement** et les **landing pages**.  Apprenez-en davantage en consultant [cette page](../start/subscriptions.md).
 
 * Configurez les **règles de typologie** pour définir la gestion de la fatigue et du contrôle.  Apprenez-en davantage en consultant [cette documentation](../../automation/campaign-opt/campaign-typologies.md).
 
@@ -160,7 +160,7 @@ Si vous utilisez d&#39;autres solutions Adobe, vous pouvez les connecter à votr
 * Campaign - Connecteurs de données Analytics
 
 
-Vous pouvez également utiliser l’authentification unique (SSO) pour vous connecter à Campaign. En savoir plus sur [cette page](connect.md).
+Vous pouvez également utiliser l’authentification unique (SSO) pour vous connecter à Campaign. En savoir plus à ce propos sur [cette page](connect.md).
 
 Découvrez la liste complète des solutions Adobe qui peuvent être intégrées à Adobe Campaign [sur cette page](../connect/integration.md).
 

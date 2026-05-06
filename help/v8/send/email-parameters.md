@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 70%
+source-wordcount: '987'
+ht-degree: 57%
 
 ---
 
@@ -31,11 +31,11 @@ Sélectionnez le format du mail dans la section inférieure de la fenêtre :
 
 * **[!UICONTROL Tenir compte des préférences des destinataires]** (mode par défaut)
 
-  Le format du message est défini en fonction des informations enregistrées dans le profil du destinataire et stockées par défaut dans le champ **[!UICONTROL Format des emails]** (@emailFormat). Si un destinataire souhaite recevoir les messages dans un format particulier, ce format lui est envoyé. Si ce champ n&#39;est pas renseigné, le message sera envoyé en multipart-alternative (voir ci-dessous).
+  Le format du message est défini en fonction des données stockées dans le profil du destinataire et stockées par défaut dans le champ **[!UICONTROL format des e-mails]** (@emailFormat). Si une personne destinataire souhaite recevoir les messages dans un format particulier, ce format lui est envoyé. Si le champ n’est pas renseigné, un message multipart-alternative est envoyé (voir ci-dessous).
 
 * **[!UICONTROL Laisser le mailer des destinataires choisir le format le plus adapté]**
 
-  Le message contient les deux formats : texte et HTML. Le format affiché lors de la réception dépend de la configuration du logiciel de messagerie du destinataire (multipart-alternative).
+  Le message contient les deux formats : texte et HTML. Le format affiché lors de la réception dépend de la configuration du logiciel de messagerie de la personne destinataire (multipart-alternative).
 
   >[!IMPORTANT]
   >
@@ -43,7 +43,7 @@ Sélectionnez le format du mail dans la section inférieure de la fenêtre :
 
 * **[!UICONTROL Envoyer tous les messages au format texte]**
 
-  Le message est envoyé au format texte. Le format HTML ne sera pas envoyé mais uniquement utilisé pour la page miroir, lorsque le destinataire clique sur le lien dans le message.
+  Le message est envoyé au format texte. Le format HTML n’est pas envoyé, mais utilisé pour la page miroir uniquement lorsque le destinataire clique sur le message.
 
 <!--
 >[!NOTE]
@@ -132,7 +132,7 @@ Les valeurs sont automatiquement encodées, si nécessaire.
 
 >[!IMPORTANT]
 >
->L&#39;ajout d&#39;un script pour l&#39;insertion d&#39;en-têtes SMTP supplémentaires est réservé aux utilisateurs expérimentés.
+>L’ajout d’un script pour l’insertion d’en-têtes SMTP supplémentaires est réservé aux utilisateurs expérimentés.
 >
 >La syntaxe de ce script doit être strictement conforme aux exigences de ce type de contenu : aucun espace superflu, aucune ligne vide, etc.
 
@@ -141,6 +141,6 @@ Les valeurs sont automatiquement encodées, si nécessaire.
 
 ## Générer une page miroir {#generating-mirror-page}
 
-La page miroir est une page HTML accessible en ligne via un navigateur web et dont le contenu est identique à celui de l’e-mail. Cela peut être utile si vos personnes destinataires rencontrent des problèmes de rendu ou accèdent à des images endommagées quand ils affichent votre e-mail dans leur boîte de réception.
+La page miroir est une page HTML accessible en ligne via un navigateur web. Son contenu est identique à celui de l’e-mail. Cela peut être utile si vos personnes destinataires rencontrent des problèmes de rendu ou accèdent à des images endommagées quand ils affichent votre e-mail dans leur boîte de réception.
 
 Découvrez comment insérer un lien vers la page miroir dans [cette section](mirror-page.md).

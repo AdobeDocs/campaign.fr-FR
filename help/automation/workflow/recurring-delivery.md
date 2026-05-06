@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '280'
 ht-degree: 100%
 
 ---
@@ -45,7 +45,7 @@ Si vous souhaitez arrêter lʼexécution dʼune diffusion récurrente, vous deve
 
 >[!NOTE]
 >
->Il n&#39;est pas possible d&#39;envoyer un BAT à partir d&#39;une activité de type **[!UICONTROL Diffusion récurrente]**.
+>Il n’est pas possible d’envoyer un BAT à partir d’une activité de type **[!UICONTROL Diffusion récurrente]**.
 > 
 >Pour directement créer une diffusion via un workflow de campagne, utilisez les activités de diffusion spécifiques à un canal, qui sont pré-paramétrées (ex : **[!UICONTROL Diffusion e-mail]**).
 

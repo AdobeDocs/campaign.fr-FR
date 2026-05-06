@@ -5,8 +5,8 @@ user-guide-description: Guide d'automatisation des campagnes
 feature: Overview
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 97%
+source-wordcount: '462'
+ht-degree: 95%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 97%
       + [À propos des workflows](workflow/about-workflows.md)
       + Types de workflows {#wf-type}
          + [Les workflows de ciblage](workflow/targeting-workflows.md)
-         + [Les workflows de campagne](workflow/campaign-workflows.md)
+         + [Les workflows des opérations](workflow/campaign-workflows.md)
          + [Workflows techniques](workflow/technical-workflows.md)
-      + [Créer un workflow](workflow/build-a-workflow.md)
+      + [Création d’un workflow](workflow/build-a-workflow.md)
       + [Bonnes pratiques](workflow/workflow-best-practices.md)
       + [Utiliser les données d&#39;un workflow](workflow/use-workflow-data.md)
    + Exécuter un workflow {#executing-a-workflow}
@@ -29,8 +29,8 @@ ht-degree: 97%
       + [Cycle de vie d&#39;un workflow](workflow/workflow-life-cycle.md)
       + [Configurer les validations](workflow/define-approvals.md)
    + Surveiller les workflows {#monitoring-workflows}
-      + [Surveillance de l’exécution des workflows](workflow/monitor-workflow-execution.md)
-      + [Surveillance des workflows techniques](workflow/monitor-technical-workflows.md)
+      + [Surveiller l’exécution des workflows](workflow/monitor-workflow-execution.md)
+      + [Surveiller les workflows techniques](workflow/monitor-technical-workflows.md)
       + [Carte thermique des workflows](workflow/heatmap.md)
    + Activités de workflows {#wf-activities}
       + [Commencer avec les activités](workflow/activities.md)
@@ -42,18 +42,18 @@ ht-degree: 97%
          + [Connecteur CRM](workflow/crm-connector.md)
          + [Déduplication](workflow/deduplication.md)
          + [Composition de diffusion](workflow/delivery-outline.md)
-         + [Modifier le schéma](workflow/edit-schema.md)
+         + [Edition du schéma](workflow/edit-schema.md)
          + [Enrichissement](workflow/enrichment.md)
          + [Exclusion](workflow/exclusion.md)
          + [Requête incrémentale](workflow/incremental-query.md)
          + [Intersection](workflow/intersection.md)
          + [Mise à jour de liste](workflow/list-update.md)
          + [Offres par cellule](workflow/offers-by-cell.md)
-         + [Moteur d&#39;offres](workflow/offer-engine.md)
+         + [Moteur d’offres](workflow/offer-engine.md)
          + [Requête](workflow/query.md)
          + [Lecture de liste](workflow/read-list.md)
          + [Partage](workflow/split.md)
-         + [Services d&#39;abonnements](workflow/subscription-services.md)
+         + [Services d’inscriptions](workflow/subscription-services.md)
          + [Union](workflow/union.md)
          + [Mise à jour de données](workflow/update-data.md)
       + Activités de contrôle de flux {#flow-control-activities}
@@ -73,7 +73,7 @@ ht-degree: 97%
       + Activités d’action {#action-activities}
          + [Liste des activités d’action](workflow/action-activities.md)
          + [Gestion de contenu](workflow/content-management.md)
-         + [Diffusion au fil de l&#39;eau](workflow/continuous-delivery.md)
+         + [Diffusion continue](workflow/continuous-delivery.md)
          + [Diffusions cross-canal](workflow/cross-channel-deliveries.md)
          + [Extraction (fichier)](workflow/extraction-file.md)
          + [Chargement (fichier)](workflow/data-loading-file.md)
@@ -98,34 +98,34 @@ ht-degree: 97%
       + [À propos des cas pratiques de workflows](workflow/workflow-use-cases.md)
       + Diffusions {#deliveries}
          + [Utilisation de l’activité de validation en local](workflow/local-approval-activity.md)
-         + [Envoi d’un email d’anniversaire](workflow/send-a-birthday-email.md)
-         + [Chargement du contenu de la diffusion](workflow/load-delivery-content.md)
+         + [Envoi d’un e-mail d’anniversaire](workflow/send-a-birthday-email.md)
+         + [Charger le contenu de la diffusion](workflow/load-delivery-content.md)
          + [Workflow de diffusion cross-canal](workflow/cross-channel-delivery-workflow.md)
          + [Enrichissement des emails avec des champs de date personnalisés](workflow/email-enrichment-with-custom-date-fields.md)
-      + Contrôle      {#monitoring}
+      + Contrôle {#monitoring}
          + [Envoi d’un rapport à une liste](workflow/send-a-report-to-a-list.md)
          + [Supervision de vos workflows](workflow/workflow-supervision.md)
          + [Envoi d’alertes personnalisées aux opérateurs](workflow/send-alerts-to-operators.md)
       + Gestion des données {#data-management}
-         + [Coordination des mises à jour de données](workflow/coordinate-data-updates.md)
-         + [Création d’une liste récapitulative](workflow/create-a-summary-list.md)
+         + [Coordonner les mises à jour de données](workflow/coordinate-data-updates.md)
+         + [Créer une liste récapitulative](workflow/create-a-summary-list.md)
          + [Enrichissement des données](workflow/enrich-data.md)
          + [Utilisation d’agrégats](workflow/using-aggregates.md)
          + [Utilisation de la fonctionnalité de fusion de l’activité de déduplication](workflow/deduplication-merge.md)
          + [Configuration d’un workflow d’import récurrent](workflow/recurring-import-workflow.md)
       + Requêtes de conception {#designing-queries}
-         + [Mettre à jour la liste trimestrielle à l’aide d’une requête incrémentielle](workflow/quarterly-list-update.md)
+         + [Mise à jour de la liste trimestrielle à l’aide d’une requête incrémentielle](workflow/quarterly-list-update.md)
       + Requête et filtre {#designing-queries}
-         + [Requête de la table des destinataires](workflow/querying-recipient-table.md)
+         + [Effectuer une requête sur la table des destinataires](workflow/querying-recipient-table.md)
          + [Informations sur la diffusion de requêtes](workflow/query-delivery-info.md)
          + [Calculer les agrégats](workflow/compute-aggregates.md)
-         + [Requête avec gestion des regroupements](workflow/query-grouping-management.md)
+         + [Exécuter des requêtes avec gestion des regroupements](workflow/query-grouping-management.md)
          + [Requête avec une relation multiple-à-multiple](workflow/query-many-to-many-relationship.md)
          + [Ajout d’un champ calculé de type Énumérations](workflow/adding-enumeration-type-calculated-field.md)
          + [Créer un filtre](workflow/create-a-filter.md)
-         + [Filtrage des destinataires dupliqués](workflow/filter-duplicated-recipients.md)
+         + [Filtrer les destinataires en double](workflow/filter-duplicated-recipients.md)
    + Paramètres avancés {#advanced-management}
-      + [Propriétés de workflow](workflow/workflow-properties.md)
+      + [Propriétés d&#39;exécution](workflow/workflow-properties.md)
       + [Paramètres avancés](workflow/advanced-parameters.md)
       + [Scripts et modèles JavaScript](workflow/javascript-scripts-and-templates.md)
       + [Exemples de code JavaScript dans les workflows](workflow/javascript-in-workflows.md)
@@ -141,7 +141,7 @@ ht-degree: 97%
    + [Sélection de l’audience](campaigns/marketing-campaign-target.md)
    + [Gestion des documents et des ressources](campaigns/marketing-campaign-assets.md)
    + [Configuration et gestion des validations](campaigns/marketing-campaign-approval.md)
-   + [Campagnes récurrentes et périodiques](campaigns/recurring-periodic-campaigns.md)
+   + [Les opérations récurrentes et périodiques](campaigns/recurring-periodic-campaigns.md)
    + [Surveillance de vos campagnes](campaigns/marketing-campaign-monitoring.md)
    + [Prestataires, stocks et budgets](campaigns/providers-stocks-and-budgets.md)
 + Optimisation des campagnes (module complémentaire){#campaign-optimization}
@@ -160,10 +160,10 @@ ht-degree: 97%
    + [Forums de discussion](mrm/discussion-forums.md)
 + Marketing distribué (module complémentaire) {#distributed-marketing}
    + [Prise en main du marketing distribué](distributed-marketing/about-distributed-marketing.md)
-   + [Création d’une campagne locale](distributed-marketing/creating-a-local-campaign.md)
+   + [Créer une campagne locale](distributed-marketing/creating-a-local-campaign.md)
    + [Création d’une opération collaborative](distributed-marketing/creating-a-collaborative-campaign.md)
-   + [Publication du kit de campagne](distributed-marketing/publishing-the-campaign-package.md)
+   + [Publier le kit de campagne](distributed-marketing/publishing-the-campaign-package.md)
    + [Accès aux campagnes](distributed-marketing/accessing-campaigns.md)
    + [Suivi d’une campagne](distributed-marketing/tracking-a-campaign.md)
    + [Cas d’utilisation](distributed-marketing/examples.md)
-+ [&lt; Retour à la documentation de Campaign v8](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/campaign-home)
++ [&lt; Retour à la documentation de Campaign v8](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/campaign-home)

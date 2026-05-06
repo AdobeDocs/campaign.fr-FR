@@ -7,9 +7,9 @@ role: Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '497'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ Le tableau de bord de supervision de l’instance est accessible à partir de l�
 
 ![](assets/monitoring_technical_workflows1.png)
 
-Dans Indicateurs système et fichiers core, vérifier qu&#39;aucun indicateur n&#39;est surligné en rouge. Si c&#39;est le cas et que certains indicateurs sont surlignés en rouge, procédez comme suit :
+Sous Indicateurs système et fichiers principaux, vérifiez qu’aucun indicateur n’est mis en surbrillance en rouge. Si c’est le cas et que certains le sont, vous devez :
 
 * Vérifiez que les traitements nécessaire sont toujours en cours d&#39;exécution,
 * Vérifiez qu&#39;aucun des traitement n&#39;est trop vieux,
@@ -81,9 +81,9 @@ Tous les workflows techniques personnalisés doivent être documentés dans une 
 
 ## Planification et automatisation de la surveillance {#planning-and-automation-of-monitoring}
 
-La planification de la surveillance des workflows améliore son efficacité. Certaines tâches doivent avoir lieu tous les jours, alors que d&#39;autres sont nécessaires une fois par semaine ou une fois par mois.
+La surveillance des workflows de planification améliore son efficacité. Certaines tâches doivent être effectuées quotidiennement, tandis que d’autres peuvent l’être une fois par semaine ou par mois.
 
-Le fait de sauvegarder les workflows dans des dossiers nommés en fonction de leur récurrence et triés par planning d&#39;exécution augmente l&#39;efficacité de la surveillance.
+Le fait de sauvegarder les workflows dans des dossiers nommés en fonction de leur récurrence et triés par planning d’exécution augmente l’efficacité de la surveillance.
 
 L’automatisation de la surveillance permet d’économiser des ressources et garantit la planification des tâches à une fréquence appropriée.
 

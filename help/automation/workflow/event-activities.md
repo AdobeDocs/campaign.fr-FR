@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Activités d'événement dans les workflows
+title: Activités d’événement dans les workflows
 description: Liste des activités d'événement dans les workflows
 feature: Workflows, Data Management
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 0e8ab370-06bc-431e-a685-310ac54a1246
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '101'
+workflow-type: tm+mt
+source-wordcount: '103'
 ht-degree: 100%
 
 ---
 
-# Activités d&#39;événement dans les workflows{#about-event-activities}
+# Activités d’événement dans les workflows{#about-event-activities}
 
 La tâche principale de ces activités consiste à attendre un événement. Il peut s&#39;agir, par exemple, de la réception d&#39;un fichier, d&#39;un e-mail ou d&#39;un signal envoyé par un système tiers.
 

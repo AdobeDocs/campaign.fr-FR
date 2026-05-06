@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
 source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1461'
 ht-degree: 99%
 
 ---
@@ -79,7 +79,7 @@ Par exemple :
 >
 >Vous pouvez modifier le nombre de jours, ici `-days 365`, dans l’exemple de code pour une période de validité du certificat plus longue.
 
-Vous devez ensuite encoder le certificat en base64. Pour cela, vous pouvez utiliser l&#39;aide d&#39;un encodeur Base64 ou vous servir de la ligne de commande `base64 -w0 private.key` sous Linux.
+Vous devez ensuite encoder le certificat en base64. Pour cela, vous pouvez utiliser l&#39;aide d&#39;un encodeur Base64 ou utiliser la ligne de commande `base64 -w0 private.key` sous Linux.
 
 +++
 
@@ -173,7 +173,7 @@ Vous pouvez maintenant configurer les tables à synchroniser.
 
 1. Cliquez sur l’**[!UICONTROL Assistant de configuration de Microsoft CRM...]**.
 1. Sélectionnez les tables à synchroniser et démarrez le processus.
-1. Vérifiez le schéma généré dans Adobe Campaign, sous le nœud **[!UICONTROL Administration > Paramétrage > Schéma de données]**.
+1. Vérifiez le schéma généré dans Adobe Campaign, sous le noeud **[!UICONTROL Administration > Paramétrage > Schéma de données]**.
 
 >[!NOTE]
 >

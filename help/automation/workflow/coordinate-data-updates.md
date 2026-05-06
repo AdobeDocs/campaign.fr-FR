@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 9faf7ee7-07c1-415b-b234-a945994792c7
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '303'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '304'
+ht-degree: 70%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 Ce cas pratique présente la création d’un workflow permettant de gérer des mises à jour concomitantes lors de l’utilisation de plusieurs exécutions d’un workflow.
 
-Le but est de vérifier que la procédure de mise à jour est terminée avant d&#39;exécuter une autre opération de mise à jour. Pour cela, nous allons configurer une variable d&#39;instance et laisser le workflow tester si l&#39;instance est en cours d&#39;exécution afin de décider de poursuivre ou non l&#39;exécution du workflow et d&#39;effectuer la mise à jour.
+Le but est de vérifier que le processus de mise à jour est terminé avant d&#39;exécuter une autre opération de mise à jour. Pour ce faire, nous allons configurer une variable d’instance et laisser le workflow tester si l’instance est en cours d’exécution afin de décider de continuer ou non l’exécution du workflow et d’effectuer la mise à jour.
 
 ![](assets/uc_dataupdate_wkf.png)
 
@@ -37,7 +37,7 @@ Pour créer le workflow, procédez comme suit :
 
    >[!NOTE]
    >
-   >&quot;isRunning&quot; est le nom de la variable d&#39;instance choisi pour cet exemple. Il ne s&#39;agit pas d&#39;une variable intégrée.
+   >« isRunning » est le nom de la variable d&#39;instance choisi pour cet exemple. Il ne s’agit pas d’une variable intégrée.
 
    ![](assets/uc_dataupdate_test.png)
 

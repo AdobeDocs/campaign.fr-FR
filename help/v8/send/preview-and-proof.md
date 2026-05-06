@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
 source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '756'
 ht-degree: 96%
 
 ---
@@ -33,7 +33,7 @@ Pour prévisualiser le contenu du message, procédez comme suit :
 
 1. Sélectionnez d’autres profils de test pour prévisualiser le rendu des e-mails pour chaque variante de votre message.
 
-## Envoyer des BAT {#send-proofs}
+## Envoi de BAT {#send-proofs}
 
 Pour les diffusions e-mail, vous pouvez envoyer des BAT pour valider le contenu de votre message. L’envoi de BAT permet de vérifier le lien d’exclusion, la page miroir et d’autres liens, de valider le message, de vérifier le bon affichage des images, de détecter les erreurs possibles, etc. Vous souhaiterez peut-être également vérifier votre conception et le rendu sur différents appareils.
 
@@ -69,7 +69,7 @@ Sélectionnez le type de cible du BAT dans la liste déroulante **[!UICONTROL Mo
 
 * Utilisez l’option **[!UICONTROL Cible spécifique et Adresses de contrôle]** pour cumuler des adresses de contrôle et des adresses e-mail spécifiques. Les paramétrages correspondants sont alors définis dans deux sous-onglets distincts.
 
-### Envoyer un BAT {#proofs-send}
+### Envoi d&#39;un BAT {#proofs-send}
 
 Pour envoyer des BAT, procédez comme suit :
 

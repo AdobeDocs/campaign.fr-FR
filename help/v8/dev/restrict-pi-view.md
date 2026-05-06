@@ -61,7 +61,7 @@ Les conséquences de l&#39;utilisation de cet attribut dans Adobe Campaign sont
 
 Dans chaque diffusion, les adresses e-mail sont copiées dans les tables de **[!UICONTROL broadLog]** et de **[!UICONTROL forecastLog]** : ces champs doivent donc également être protégés.
 
-Vous trouverez ci-dessous un exemple d&#39;extension de table de logs pour implémenter cela :
+Vous trouverez ci-dessous un exemple d’extension de table de logs pour mettre cela en œuvre :
 
 ```
 <srcSchema entitySchema="xtk:srcSchema" extendedSchema="nms:broadLogRcp" img="nms:broadLog.png"

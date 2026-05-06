@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 4de3b2c2-7eb7-4fd9-9350-64a6e9e2b7f8
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '1332'
-ht-degree: 96%
+source-wordcount: '1364'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ LINE est une application gratuite de messagerie instantanée, d’appels vocaux 
 Pour utiliser le canal [!DNL LINE], les étapes sont les suivantes :
 
 1. [Configuration du canal LINE](#setting-up-line-channel)
-1. [Création d&#39;une diffusion](#creating-the-delivery)
+1. [Création dʼune diffusion](#creating-the-delivery)
 1. [Configuration du type de contenu](#defining-the-content)
 1. [Suivi de la diffusion (tracking, mise en quarantaine, rapports, etc.)](#accessing-reports)
 
@@ -153,7 +153,7 @@ Une diffusion [!DNL LINE] de type **[!UICONTROL Message texte]** est un message 
 
 ![](assets/line_message_02.png)
 
-La configuration de ce type de message est similaire à la configuration du format **[!UICONTROL texte]** dans un e-mail. Pour plus d’informations, consultez cette [page](../defining-the-email-content.md#message-content).
+La configuration de ce type de message est similaire à la configuration du format **[!UICONTROL texte]** dans un e-mail. Pour plus d&#39;informations, consultez cette [page](../defining-the-email-content.md#message-content).
 
 ### Paramétrer une diffusion de type Image et lien {#configuring-an-image-and-link-delivery}
 

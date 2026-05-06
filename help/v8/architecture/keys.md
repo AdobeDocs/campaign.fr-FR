@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
 source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 100%
+source-wordcount: '595'
+ht-degree: 97%
 
 ---
 
@@ -46,11 +46,11 @@ Si le workflow **[!UICONTROL Alerte relative à l’unicité]** (ffdaUnicity) d�
 
 ![](assets/unicity-table.png)
 
-En tant qu’administrateur de base de données, vous pouvez utiliser une activité SQL pour supprimer les doublons ou contacter l’Assistance clientèle d’Adobe pour plus d’informations.
+En tant qu’administrateur ou administratrice de base de données, vous pouvez utiliser une activité SQL pour supprimer les doublons ou contacter l’Assistance clientèle d’Adobe pour plus d’informations.
 
 ### Alerte{#unicity-wf-alerting}
 
-Une notification spécifique est envoyée au groupe d’opérateurs **[!UICONTROL Superviseurs de workflow]** lorsque des clés dupliquées sont détectées. Le contenu et l’audience de cette alerte peuvent être modifiés dans l’activité **Alerte** du workflow **[!UICONTROL Alerte relative à l’unicité]**.
+Une notification spécifique est envoyée au groupe d’opérateurs ou opératrices **[!UICONTROL Superviseurs de workflow]** lorsque des clés dupliquées sont détectées. Le contenu et l’audience de cette alerte peuvent être modifiés dans l’activité **Alerte** du workflow **[!UICONTROL Alerte relative à l’unicité]**.
 
 ![](assets/wf-alert-activity.png)
 

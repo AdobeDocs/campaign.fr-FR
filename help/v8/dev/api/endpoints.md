@@ -9,7 +9,7 @@ level: Experienced
 exl-id: 9f6d3da6-374d-47f5-bc8f-b31b19cbb5ca
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '197'
 ht-degree: 100%
 
 ---
@@ -20,8 +20,8 @@ Points d’entrée disponibles des API REST d’Adobe Campaign :
 
 * **/profileAndServices** : permet d’interagir avec les champs d’usine. Les champs étendus ne sont pas accessibles par ce point d’entrée.
 * **/profileAndServicesExt** : permet d’interagir avec les champs personnalisés ajoutés lors de l’extension des ressources personnalisées Profile ou Services. Pour plus d’informations sur les ressources personnalisées, reportez-vous à [cette section](custom-resources.md).
-* **/&lt;transactionalAPI>** : permet d’interagir avec l’API des messages transactionnels (le nom du point d’entrée de l’API des messages transactionnels dépend de la configuration de votre instance). Voir à ce propos [cette section](managing-transactional-messages.md).
-* **/workflow/exécution** : permet d’interagir avec les workflows. Voir à ce propos [cette section](controlling-a-workflow.md).
+* **/&lt;transactionalAPI>** : permet d’interagir avec l’API des messages transactionnels (le nom du point d’entrée de l’API des messages transactionnels dépend de la configuration de votre instance). Pour plus d’informations, consultez [cette section](managing-transactional-messages.md).
+* **/workflow/exécution** : permet d’interagir avec les workflows. Pour plus d’informations, consultez [cette section](controlling-a-workflow.md).
 
 Par défaut, les principales ressources disponibles pour les API **profileAndServices** et **profileAndServicesExt** sont les suivantes :
 

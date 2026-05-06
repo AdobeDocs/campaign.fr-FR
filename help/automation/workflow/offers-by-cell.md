@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: e2216dfd-1ef8-4747-b716-576fd6498fa6
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '160'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '163'
+ht-degree: 80%
 
 ---
 
@@ -28,8 +28,8 @@ Pour cela :
 1. Dans l&#39;onglet **[!UICONTROL Cellules]**, définissez les différents sous-ensembles via le bouton **[!UICONTROL Ajouter]** :
 
    * Définissez la population du sous-ensemble grâce aux règles de filtrage et de limitation disponibles.
-   * Sélectionnez ensuite l&#39;offre que vous souhaitez proposer au sous-ensemble. Les offres disponibles sont celles éligibles sur l&#39;emplacement sélectionné à l&#39;étape précédente.
+   * Sélectionnez ensuite l&#39;offre que vous souhaitez présenter au sous-ensemble. Les offres disponibles sont celles qui sont éligibles sur l&#39;emplacement sélectionné à l&#39;étape précédente.
 
      ![](assets/int_offer_per_cell1.png)
 
-1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix. Voir à ce sujet la section [Diffusions cross-canal](cross-channel-deliveries.md).
+1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix. Pour plus d&#39;informations, consultez la section [Diffusions cross-canal](cross-channel-deliveries.md).

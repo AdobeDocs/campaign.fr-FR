@@ -7,8 +7,8 @@ level: Intermediate, Experienced
 exl-id: cf1f5cfc-172f-44ec-ac97-804d15f9d628
 source-git-commit: 0f5efba364ef924447324bdd806e15e6db8d799d
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 100%
+source-wordcount: '271'
+ht-degree: 77%
 
 ---
 
@@ -141,4 +141,4 @@ Outre la définition de la clé, un champ numérique nommé &quot;id&quot; a ét
 
 >[!CAUTION]
 >
->Un enregistrement avec une clé primaire à 0 est automatiquement inséré à la création de la table. Cet enregistrement est utilisé pour éviter les jointures externes, non efficaces sur les tables à volumes. Par défaut, toutes les clés étrangères sont initialisées avec la valeur 0, ce qui permet de toujours retourner un résultat sur la jointure lorsque la donnée n&#39;est pas renseignée.
+>Un enregistrement avec une clé primaire à 0 est automatiquement inséré à la création de la table. Cet enregistrement est utilisé pour éviter les jointures externes, qui ne sont pas efficaces sur les tables de volumes. Par défaut, toutes les clés étrangères sont initialisées avec la valeur 0 afin qu&#39;un résultat puisse toujours être retourné sur la jointure lorsque la donnée n&#39;est pas renseignée.

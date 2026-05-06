@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
 source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 99%
+source-wordcount: '1299'
+ht-degree: 84%
 
 ---
 
@@ -46,7 +46,7 @@ Utilisez l’option **[!UICONTROL Tester la diffusion par SMTP]** pour tester la
 
 ## Envoi en plusieurs vagues {#sending-using-multiple-waves}
 
-Pour équilibrer la charge, vous pouvez répartir les envois en plusieurs lots. Configurez le nombre de lots et leur proportion par rapport à l’ensemble de la diffusion.
+Pour équilibrer la charge, vous pouvez diviser les diffusions en plusieurs lots. Configurez le nombre de lots et leur proportion par rapport à l’ensemble de la diffusion.
 
 ### Activer les vagues {#enable-waves}
 
@@ -61,7 +61,7 @@ Pour définir le vagues, procédez comme suit :
 
 >[!NOTE]
 >
->Vous pouvez uniquement définir la taille et le délai entre deux vagues consécutives. Le critère de sélection des personnes destinataires pour chaque vague n’est pas paramétrable.
+>Vous ne pouvez définir la taille et le délai qu’entre deux vagues consécutives. Les critères de sélection des destinataires pour chaque vague ne peuvent pas être configurés.
 
 Vous pouvez soit définir la taille de chaque vague, soit les ajouter à un calendrier.
 
@@ -83,7 +83,7 @@ Une règle de typologie spécifique, la **[!UICONTROL Vérification de la planif
 
 >[!IMPORTANT]
 >
->* Veillez à ce que les dernières vagues ne dépassent pas la date limite d’envoi qui est définie dans l’onglet **[!UICONTROL Validité]**. Sinon, certains messages peuvent ne pas être envoyés. En savoir plus sur la période de validité d’une diffusion dans [cette section](delivery-failures.md#valid-period).
+>* Assurez-vous que les dernières vagues ne dépassent pas la date limite de diffusion, qui est définie dans l’onglet **[!UICONTROL Validité]**. Sinon, certains messages risquent de ne pas être envoyés. En savoir plus sur la période de validité d’une diffusion dans [cette section](delivery-failures.md#valid-period).
 >
 >* Lors de la configuration des dernières vagues, veillez également à définir assez de temps pour les reprises. En savoir plus sur les reprises dans [cette section](delivery-failures.md#retries).
 
@@ -100,9 +100,9 @@ Les deux exemples ci-dessous constituent les cas d&#39;utilisation les plus fré
 
 * **Lors de la phase de démarrage**
 
-  Lorsque vous envoyez des emails à l&#39;aide d&#39;une nouvelle plateforme, rien n&#39;est plus suspect pour un FAI (fournisseur d&#39;accès internet) que les adresses IP qui ne sont pas reconnues. Si des emails sont subitement envoyés en masse, le FAI les range souvent dans le courrier indésirable.
+  Lorsque des emails sont envoyés à l&#39;aide d&#39;une nouvelle plateforme, les fournisseurs d&#39;accès Internet (FAI) se méfient des adresses IP qui ne sont pas reconnues. Si des volumes importants d&#39;emails sont soudainement envoyés, les FAI les marquent souvent comme spam.
 
-  Pour éviter que les emails soient marqués comme spam, vous pouvez augmenter progressivement le volume envoyé à l&#39;aide de vagues. Cela permet d&#39;entamer la phase de démarrage en douceur et de réduire le nombre total d&#39;adresses invalides.
+  Pour éviter d’être marqué comme indésirable, vous pouvez augmenter progressivement le volume envoyé à l’aide des vagues. Cela permet d’entamer la phase de démarrage en douceur et de réduire le nombre total d’adresses invalides.
 
   Pour ce faire, utilisez l’option **[!UICONTROL Planifier les vagues selon un calendrier]**. Par exemple, définissez la première vague sur 10 %, la deuxième sur 15 %, etc.
 
@@ -127,9 +127,9 @@ Pour ce faire, suivez les étapes ci-après.
 1. Cliquez sur **[!UICONTROL Envoyer]**, puis sélectionnez l’action souhaitée.
 
    * Pour envoyer immédiatement la diffusion, sélectionnez **[!UICONTROL Diffuser dès que possible]**.
-   * Pour planifier l’envoi à une date ultérieure, sélectionnez **[!UICONTROL Différer la diffusion]**. [En savoir plus](#schedule-delivery-sending).
+   * Pour planifier l’envoi à une date ultérieure, sélectionnez **[!UICONTROL Différer la diffusion]**. [En savoir plus](#schedule-delivery-sending)
 
-1. Cliquez sur **[!UICONTROL Analyser]**. Pour plus d’informations, consultez [cette section](delivery-analysis.md).
+1. Cliquez sur **[!UICONTROL Analyser]**. Voir à ce propos [cette section](delivery-analysis.md).
 
    ![](assets/delivery-send-analyze.png)
 
@@ -152,7 +152,7 @@ Vous pouvez différer la diffusion des messages pour planifier l&#39;envoi ou po
 
 1. Cliquez sur le bouton **[!UICONTROL Envoyer]** et sélectionnez l’option **[!UICONTROL Différer la diffusion]**.
 
-1. Indiquez une date de démarrage dans le champ **[!UICONTROL Date de contact]**.
+1. Indiquez une date de début dans le champ **[!UICONTROL Date de contact]**.
 
    ![](assets/delivery-send-postpone.png)
 
@@ -160,7 +160,7 @@ Vous pouvez différer la diffusion des messages pour planifier l&#39;envoi ou po
 
    >[!IMPORTANT]
    >
-   >Une fois que vous avez lancé l&#39;analyse, la date de contact que vous avez définie est figée.Si vous modifiez cette date, veillez à relancer l&#39;analyse pour que vos modifications soient bien prises en compte.
+   >Une fois l’analyse lancée, la date de contact que vous avez définie est fixe. Si vous modifiez cette date, vous devrez relancer l’analyse afin que vos modifications soient prises en compte.
 
    ![](assets/delivery-send-scheduled.png)
 
@@ -174,15 +174,15 @@ Elle vous permet de différer la diffusion à une date ultérieure ou enregistre
 
 * L&#39;option **[!UICONTROL Planifier la diffusion (pas d&#39;exécution automatique)]** permet de planifier une analyse prévisionnelle de la diffusion.
 
-  Lorsque ce paramétrage est enregistré, la diffusion passe alors dans l&#39;état **[!UICONTROL Ciblage en attente]**.L&#39;analyse sera lancée à la date indiquée.
+  Lorsque cette configuration est enregistrée, la diffusion passe au statut **[!UICONTROL Ciblage en attente]**. L’analyse sera lancée à la date spécifiée.
 
 * L&#39;option **[!UICONTROL Planifier la diffusion (exécution automatique à la date prévue)]** permet d&#39;indiquer la date de contact.
 
-  Cliquez sur le bouton **[!UICONTROL Envoyer]** et choisissez **[!UICONTROL Différer la diffusion]** puis lancez l&#39;analyse et confirmez l&#39;envoi. Une fois l&#39;analyse terminée, la cible de la diffusion est prête et les messages seront automatiquement envoyés à la date indiquée.
+  Cliquez sur **[!UICONTROL Envoyer]** et sélectionnez **[!UICONTROL Différer la diffusion]** puis lancez l’analyse et confirmez la diffusion. Une fois l’analyse terminée, la cible de la diffusion est prête et les messages sont automatiquement envoyés à la date spécifiée.
 
 Les dates et heures sont entendues dans le fuseau horaire de l&#39;opérateur courant. La liste déroulante **[!UICONTROL Fuseau horaire]** située sous la zone de saisie de la date de contact permet d&#39;adapter automatiquement la date et l&#39;heure saisie dans le fuseau horaire sélectionné.
 
-Ainsi, si vous planifiez une diffusion pour qu’elle s’exécute automatiquement à 8 h 00, heure de Londres, l’heure est automatiquement convertie dans le fuseau sélectionné :
+Ainsi, si vous planifiez une diffusion pour qu&#39;elle s&#39;exécute automatiquement à 8h heure de Londres, l&#39;heure est automatiquement convertie dans le fuseau sélectionné :
 
 ![](assets/delivery-schedule-time-zone.png)
 

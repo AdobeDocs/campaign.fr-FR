@@ -5,7 +5,7 @@ hide: true
 exl-id: 50279a2f-0296-43f5-8967-16cc6a0c88f6
 source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '488'
 ht-degree: 98%
 
 ---
@@ -73,4 +73,4 @@ Cette action sera transparente :
 
   Puisqu’il s’agit d’une migration obligatoire, nous ne pouvons pas prendre en charge les modifications apportées au planning existant.
 
-Pour toute autre question, contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-solution=Campaign#support){target="_blank"}.
+Pour toute autre question, contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-solution=Campaign&lang=fr#support){target="_blank"}.

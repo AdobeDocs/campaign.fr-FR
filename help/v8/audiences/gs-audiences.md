@@ -8,7 +8,7 @@ exl-id: 43483085-8aa6-47e6-89e7-9211e37beaa4
 version: Campaign v8, Campaign Classic v7
 source-git-commit: 050612f6d7ab20aed5880454eec9cfc6e5fc18c2
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '346'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ Un profil est un enregistrement dans la table **nmsRecipient** ou une table exte
 
 Dans Adobe Campaign, les **destinataires** sont les profils par défaut ciblés pour l’envoi de diffusions (e-mails, SMS, etc.).
 
-Les données de destinataire stockées dans la base de données permettent de filtrer la cible qui recevra une diffusion donnée et d&#39;ajouter des données de personnalisation dans le contenu de votre diffusion. D&#39;autres types de profils existent dans la base de données. Ils sont conçus pour différents usages. Par exemple, les profils de contrôle servent à tester vos diffusions avant leur envoi vers la cible finale.
+Les données de destinataire stockées dans la base de données permettent de filtrer la cible qui recevra une diffusion donnée et d’ajouter des données de personnalisation dans le contenu de votre diffusion. D&#39;autres types de profils existent dans la base de données. Ils sont conçus pour différents usages. Par exemple, les profils de contrôle servent à tester vos diffusions avant leur envoi vers la cible finale.
 
 Pour renseigner des données de profil dans Adobe Campaign, vous pouvez :
 

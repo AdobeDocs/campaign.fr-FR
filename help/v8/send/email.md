@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
 source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 100%
+source-wordcount: '601'
+ht-degree: 88%
 
 ---
 
@@ -24,7 +24,7 @@ Avec Adobe Campaign, créez des diffusions e-mail pour envoyer des e-mails pers
 
 Découvrez les étapes clés de la création et de la configuration d’une diffusion dans [cette page](../start/create-message.md).
 
-## Créer une diffusion e-mail
+## Création d’une diffusion par e-mail
 
 Créez des e-mails personnalisés et pertinents qui sont également conformes au reste de l&#39;expérience client.
 
@@ -35,13 +35,13 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
 1. **Création de la diffusion**
 
-   Pour créer une nouvelle diffusion, accédez à l&#39;onglet **Campagnes**, cliquez sur **Diffusions** et cliquez sur le bouton **Créer** au-dessus de la liste des diffusions existantes.
+   Pour créer une nouvelle diffusion, accédez à l&#39;onglet **Campagnes**, cliquez sur **Diffusions**, puis sur le bouton **Créer** au-dessus de la liste des diffusions existantes.
 
    ![](assets/delivery_step_1.png)
 
 1. **Sélection du modèle**
 
-   Sélectionnez un modèle de diffusion, puis nommez votre diffusion. Ce nom sera visible uniquement par les utilisateurs de la console Adobe Campaign et non par vos destinataires mais cet intitulé s&#39;affichera dans la liste de vos diffusions. Cliquez sur **[!UICONTROL Continuer]**.
+   Sélectionnez un modèle de diffusion, puis attribuez un nom à votre diffusion. Ce nom sera visible uniquement par les utilisateurs de la console Adobe Campaign et non par vos destinataires, mais cet en-tête s’affichera dans votre liste de diffusions. Cliquez sur **[!UICONTROL Continuer]**.
 
    ![](assets/dce_delivery_model.png)
 
@@ -85,7 +85,7 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
      En savoir plus sur la gestion de la page miroir dans [cette section](mirror-page.md#link-to-mirror-page).
 
-1. Vous pouvez configurer des paramètres supplémentaires pour votre e-mail, tels que l’envoi d’une copie de vos messages à une adresse BBC, la modification du format du message, la configuration d’un encodage spécifique, etc. En savoir plus dans [cette section](email-parameters.md).
+1. Vous pouvez définir des paramètres supplémentaires pour votre e-mail, tels que l’envoi d’une copie de vos messages à une adresse BBC, la modification du format du message, la définition d’un codage spécifique, etc. En savoir plus dans [cette section](email-parameters.md).
 
 1. Une fois le contenu prêt, cliquez sur **Enregistrer** : elle s’affiche désormais dans votre liste de diffusions, sous l’onglet **[!UICONTROL Campagnes > Diffusions]**.
 
@@ -100,7 +100,7 @@ Découvrez comment créer un workflow pour importer le contenu d’un e-mail dan
 >* [Sélectionner l’audience de votre e-mail](../audiences/gs-audiences.md)
 >* [Valider une diffusion et envoyer des BAT](preview-and-proof.md)
 >* [Configurer et envoyer la diffusion](configure-and-send.md)
->* [Bonnes pratiques de diffusion](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=fr){target="_blank"}
+>* [Bonnes pratiques de diffusion](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=fr){target="_blank"}
 
 ## Tester et valider vos e-mails
 
@@ -109,6 +109,6 @@ Campaign propose plusieurs méthodes permettant de tester et valider vos e-mails
 Vous pouvez ainsi :
 
 * [Envoi de BAT](preview-and-proof.md)
-* [Ajouter des adresses de contrôle](../audiences/test-profiles.md)
+* [Ajout d’adresses de contrôle](../audiences/test-profiles.md)
 * [Vérifier les logs d’analyses de diffusion](delivery-analysis.md)
 

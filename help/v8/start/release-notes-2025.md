@@ -5,7 +5,7 @@ feature: Release Notes
 exl-id: 3f91d83e-594e-49ee-a898-606e3de00bf3
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '3477'
+source-wordcount: '3613'
 ht-degree: 33%
 
 ---
@@ -155,7 +155,7 @@ Outre les fonctionnalités répertoriées ci-dessus, cette version comprend éga
 
 * [Création de diffusion multilingue](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/edit-content.html?lang=fr#multilingual-delivery){target="_blank"}
 * [Alertes de diffusion](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/delivery-alerting/delivery-alerting.html?lang=fr){target="_blank"}
-* [Améliorations des landing pages](https://experienceleague.adobe.com/docs/campaign-web/v8/landing-pages/get-started-lp.html?lang=fr){target="_blank"}
+* [Améliorations des pages de destination](https://experienceleague.adobe.com/docs/campaign-web/v8/landing-pages/get-started-lp.html?lang=fr){target="_blank"}
 * [Rapports dynamiques](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=fr){target="_blank"} (à la demande)
 * [Valorisation de marque centralisée](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=fr){target="_blank"} (à la demande, nouvelles mises en œuvre)
 

@@ -7,8 +7,8 @@ level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: fce4f85386c18d0919a85e938d3c1f2cca8d79b9
 workflow-type: tm+mt
-source-wordcount: '1867'
-ht-degree: 44%
+source-wordcount: '2243'
+ht-degree: 40%
 
 ---
 
@@ -81,7 +81,7 @@ Pour configurer un compte externe POP3 à l’aide de Microsoft OAuth 2.0, coche
 
 Après avoir saisi vos informations d’identification, cliquez sur **[!UICONTROL Configurer la connexion]** pour terminer la configuration de votre compte externe.
 
-### Routage  {#routing}
+### Routage {#routing}
 
 Le compte externe **[!UICONTROL Routage]** vous permet de configurer chaque canal disponible dans Adobe Campaign en fonction des packages installés.
 
@@ -106,7 +106,7 @@ Les paramètres de configuration du compte externe dépendent du moteur de base 
 Pour l’interface utilisateur web de Campaign (v8), reportez-vous à :
 
 * [Créer un compte externe](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/create-external-account){target="_blank"}
-* [Comptes de base de données externe](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database){target="_blank"}
+* [Comptes de la base externe](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database){target="_blank"}
 
 La page de l’interface utilisateur web de Campaign fournit une liste plus complète des types de fournisseurs **Base de données externe**, notamment :
 
@@ -221,7 +221,7 @@ Ces comptes externes peuvent être utilisés pour importer ou exporter des donn�
 
 * **Stockage Blob Azure** : compte externe **Azure** pouvant être utilisé pour importer ou exporter des données vers Adobe Campaign à l’aide d’une activité de workflow **[!UICONTROL Transfert de fichier]**. Pour configurer le compte externe **Azure** afin de l&#39;utiliser avec Adobe Campaign, vous devez fournir les informations suivantes :
 
-   * **[!UICONTROL Serveur]** : URL de votre serveur de stockage Blob Azure.
+   * **[!UICONTROL Serveur]** : URL de votre serveur de stockage Azure Blob.
 
    * **[!UICONTROL Chiffrement]** : type de chiffrement : **[!UICONTROL Aucun]** ou **[!UICONTROL SSL]**.
 

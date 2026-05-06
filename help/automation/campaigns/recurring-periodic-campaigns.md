@@ -7,15 +7,15 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 68c5b903-5043-4e74-b3f6-90a7f2fb3b9a
 source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
-workflow-type: ht
-source-wordcount: '849'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '851'
+ht-degree: 70%
 
 ---
 
 # Campagnes récurrentes et périodiques {#recurring-and-periodic-campaigns}
 
-Une **campagne récurrente** est une campagne basée sur un modèle spécifique dont les workflows sont configurés pour être exécutés selon un planning associé. Le ciblage est dupliqué à chaque exécution et les différents processus et populations cibles sont suivis.  Une fois paramétrées, les campagnes récurrentes créent automatiquement un workflow (en dupliquant le modèle de workflow) et l&#39;exécutent. Par exemple, si vous devez envoyer un rappel mensuel à des segments ciblés, configurez une campagne récurrente afin qu&#39;au début de chaque année, elle crée 12 workflows, soit un pour chaque mois. [En savoir plus](#create-a-recurring-campaign)
+Une **campagne récurrente** est une campagne basée sur un modèle spécifique dont les workflows sont configurés pour être exécutés selon un planning associé. Le ciblage est dupliqué à chaque exécution et les différents processus et populations cibles sont suivis.  Une fois paramétrées, les campagnes récurrentes créent automatiquement un workflow (en dupliquant le modèle de workflow) et l&#39;exécutent. Par exemple, si vous devez envoyer un rappel mensuel à des segments d’audience, configurez une campagne récurrente afin qu’au début de chaque année, elle crée 12 workflows, soit un pour chaque mois. [En savoir plus](#create-a-recurring-campaign)
 
 Une **campagne périodique** est une campagne basée sur un modèle spécifique qui permet de créer des instances Campaign en fonction d&#39;un planning d&#39;exécution. Les instances Campaign sont créées automatiquement en fonction d&#39;un modèle de campagne périodique, selon la fréquence définie dans le planning du modèle. [En savoir plus](#create-a-periodic-campaign)
 
@@ -30,15 +30,15 @@ Pour créer un modèle pour les campagnes récurrentes, procédez de la manière
 1. Ouvrez l&#39;explorateur Campaign et accédez à **[!UICONTROL Ressources > Modèles > Modèles de campagne]**.
 1. Dupliquez le modèle de **[!UICONTROL Campagne récurrente]** intégré.
    ![](assets/recurring-campaign-duplicate.png)
-1. Saisissez le nom du modèle et renseignez la durée de la campagne.
-1. Pour ce type de campagne, un onglet **[!UICONTROL Planning]** est ajouté afin de créer le planning d&#39;exécution du modèle. Utilisez cet onglet pour définir les dates d&#39;exécution des campagnes en fonction de ce modèle.
+1. Saisissez le libellé du modèle et renseignez la durée de l&#39;opération.
+1. Pour ce type d&#39;opération, un onglet **[!UICONTROL Planning]** est ajouté afin de créer le planning d&#39;exécution du modèle. Utilisez cet onglet pour définir les dates d&#39;exécution des campagnes en fonction de ce modèle.
    ![](assets/recurring-campaign-schedule.png)
 
    Le mode de configuration du planning d&#39;exécution correspond à l&#39;objet **[!UICONTROL Planificateur]** du workflow. [En savoir plus](../workflow/scheduler.md).
 
    >[!CAUTION]
    >
-   >La configuration du planning d&#39;exécution doit être effectuée avec précaution. Les campagnes récurrentes dupliquent le(s) workflow(s) de leur modèle selon le planning spécifié. Cette opération peut surcharger votre base de données.
+   >La configuration du planning d’exécution doit être effectuée avec précaution. Les campagnes récurrentes dupliquent le ou les workflows de leur modèle selon le planning spécifié. Cette opération peut surcharger votre base de données.
 
 1. Indiquez une valeur dans le champ **[!UICONTROL Créer d&#39;avance pour]** afin de créer les workflows correspondants pour la période indiquée.
 1. Dans l&#39;onglet **[!UICONTROL Ciblages et workflows]**, concevez le modèle de workflow à utiliser lors des campagnes à partir de ce modèle. Ce workflow contient généralement les paramètres de ciblage ainsi qu&#39;une ou plusieurs diffusions.
@@ -63,7 +63,7 @@ Pour créer la campagne récurrente et exécuter ses workflows selon le planning
 
    Le champ **[!UICONTROL Créer d&#39;avance pour]** permet de créer l&#39;ensemble des workflows couvrant la période renseignée.
 
-   A l&#39;exécution du workflow **[!UICONTROL Traitements sur les opérations]**, les workflows dédiés sont créés selon les occurrences définies dans le planning de l&#39;opération. Ainsi, un workflow est créé pour chaque date d&#39;exécution.
+   Lors de l&#39;exécution du workflow **[!UICONTROL Traitements sur les campagnes]**, les workflows dédiés sont créés à partir des occurrences définies dans le planning de la campagne. Un workflow est ainsi créé pour chaque date d’exécution.
 
 1. Les workflows récurrents sont créés automatiquement à partir du modèle de workflow présent dans l&#39;opération. Ils sont visibles à partir de l&#39;onglet **[!UICONTROL Ciblages et workflows]** de l&#39;opération.
 
@@ -84,7 +84,7 @@ Pour créer la campagne récurrente et exécuter ses workflows selon le planning
 
 ## Création d’une campagne périodique {#create-a-periodic-campaign}
 
-Une campagne périodique est une opération basée sur un modèle spécifique qui permet de créer des instances de campagnes selon un planning d’exécution. Les instances de campagnes sont créées automatiquement sur la base d’un modèle de campagne périodique, selon la fréquence définie dans le planning du modèle.
+Une campagne périodique est une campagne basée sur un modèle spécifique qui permet de créer des instances Campaign en fonction d&#39;un planning d&#39;exécution. Les instances Campaign sont créées automatiquement en fonction d&#39;un modèle de campagne périodique, selon la fréquence définie dans le planning du modèle.
 
 ### Création du modèle de campagne {#create-the-campaign-template-1}
 
@@ -100,16 +100,16 @@ Une campagne périodique est une opération basée sur un modèle spécifique qu
 
    >[!NOTE]
    >
-   >Ce workflow est un modèle de workflow. Il ne peut pas être exécuté à partir du modèle d&#39;opération.
+   >Ce workflow est un modèle de workflow. Elle ne peut pas être exécutée à partir du modèle de campagne.
 
-1. Renseignez son planning d&#39;exécution selon le même mode que pour un modèle d&#39;opération récurrente : cliquez sur le bouton **[!UICONTROL Ajouter]** et définissez les dates de début et de fin, ou complétez le planning d&#39;exécution à partir du lien.
+1. Renseignez son planning d’exécution selon le même mode que pour un modèle d’opération récurrente : cliquez sur le bouton **[!UICONTROL Ajouter]** et définissez les dates de début et de fin, ou complétez le planning d’exécution à partir du lien.
 
    >[!CAUTION]
    >
-   >Les modèles d&#39;opérations périodiques créent de nouvelles opérations selon le planning défini ci-dessus. Il doit donc être renseigné avec précaution afin de ne pas surcharger la base Adobe Campaign.
+   >Les modèles d’opérations périodiques créent de nouvelles campagnes selon le planning défini ci-dessus. Elle doit donc être complétée avec précaution, afin de ne pas surcharger la base Adobe Campaign.
 
-1. Une fois la date de début d&#39;exécution atteinte, l&#39;opération correspondante est automatiquement créée. Elle reprend l&#39;ensemble des caractéristiques de son modèle.
+1. Une fois la date de début d’exécution atteinte, la campagne correspondante est créée automatiquement. Il reprend toutes les caractéristiques de son modèle.
 
    Chaque opération peut être éditée à partir du planning du modèle.
 
-   Chaque opération périodique contient les mêmes éléments. Une fois créée, elle est ensuite gérée comme une opération standard.
+   Chaque campagne périodique contient les mêmes éléments. Une fois créée, elle est gérée comme une campagne standard.

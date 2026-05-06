@@ -8,8 +8,8 @@ exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 version: Campaign v8, Campaign Classic v7
 source-git-commit: 04dff810f5a838b2468280519948c88e29acf221
 workflow-type: tm+mt
-source-wordcount: '2875'
-ht-degree: 67%
+source-wordcount: '2987'
+ht-degree: 66%
 
 ---
 
@@ -93,7 +93,7 @@ Les [principaux règlements](#privacy-regulations) se réfèrent de la manière 
 
 * Un **titulaire de données** est une personne vivante dont les données à caractère personnel sont collectées, utilisées ou partagées et qui peut être identifiée, directement ou indirectement, par référence à ces données à caractère personnel.
 
-Ainsi, en tant qu’entreprise qui collecte et partage des données personnelles, vous êtes le contrôleur de données, vos clients sont les titulaires de données et Adobe Campaign agit comme un responsable du traitement des données lors du traitement des données personnelles des clients selon vos instructions. Notez qu’en tant que contrôleur de données, il vous appartient de gérer les relations avec les titulaires de données, par exemple lors de la gestion des [demandes d’accès à des informations personnelles](#privacy-requests). 
+Ainsi, en tant qu’entreprise qui collecte et partage des données personnelles, vous êtes le contrôleur de données, vos clients sont les titulaires de données et Adobe Campaign agit comme un responsable du traitement des données lors du traitement des données personnelles des clients selon vos instructions. Notez qu’en tant que contrôleur de données, il vous appartient de gérer les relations avec les titulaires de données, par exemple lors de la gestion des [demandes d’accès à des informations personnelles](#privacy-requests).
 
 ### Scénario d’utilisation {#use-case-scenario}
 
@@ -149,7 +149,7 @@ Depuis l’origine, Adobe Campaign dispose de fonctions importantes, essentiell
 * **Conservation des données** : toutes les tables de journalisation standard natives comportent des périodes de rétention prédéfinies, limitant généralement le stockage de leurs données à 6 mois maximum. Il est possible de définir des périodes de conservation supplémentaires à l&#39;aide de workflows. Pour en savoir plus, contactez les consultants Adobe ou les administrateurs techniques.
 * **Gestion des droits** : Adobe Campaign permet de gérer les droits affectés aux divers opérateurs Campaign par l’intermédiaire de différents rôles préconfigurés ou personnalisés. Vous pouvez ainsi gérer qui, dans votre entreprise, peut accéder à différents types de données, les modifier ou les exporter. Pour plus d’informations à ce sujet, consultez la section [À propos de la gestion des accès](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management){target=_blank}.
 
-### Demandes d&#39;accès à des informations personnelles  {#privacy-requests}
+### Demandes d&#39;accès à des informations personnelles {#privacy-requests}
 
 Adobe Campaign dispose de fonctionnalités supplémentaires pour vous aider à vous préparer, en tant que contrôleur de données, à certaines demandes d’accès à des informations personnelles :
 
@@ -179,7 +179,7 @@ Des règlements, tels que le Règlement général sur la protection des données
 
 ### Tracking des messages {#message-tracking}
 
-Adobe Campaign vous permet de suivre les e-mails envoyés et le comportement de vos destinataires de diffusion : ouverture, clics sur des liens, désinscriptions, etc. Pour obtenir davantage de renseignements, consultez la section [À propos des messages](../start/gs-message.md).
+Adobe Campaign vous permet de suivre les emails envoyés et le comportement de vos destinataires de diffusion : ouverture, clics sur des liens, désabonnements, etc. Pour plus d&#39;informations, consultez la section [À propos des messages](../start/gs-message.md).
 
 Pour ce faire, ajoutez des liens suivis à vos messages afin de mesurer l’impact de votre diffusion et le comportement de la personne destinataire dans l’onglet Tracking du tableau de bord de diffusion. Les données de suivi sont interprétées dans le rapport des indicateurs de tracking. Pour en savoir plus sur le tracking, reportez-vous à [cette page](../send/tracking.md).
 
@@ -225,9 +225,9 @@ Pour en savoir plus sur les autorisations, consultez [cette section](../start/gs
 
 ## Sécurité des instances et du réseau {#instance-and-network-security}
 
-En tant qu’administrateur ou administratrice de produit Campaign v8, utilisez [Panneau de Contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"} pour gérer la sécurité au niveau de l’instance :
+En tant qu’administrateur ou administratrice de produit Campaign v8, utilisez Panneau de Contrôle Campaign[&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"} pour gérer la sécurité au niveau de l’instance :
 
-* **place sur la liste autorisée IP** - Gérez la liste autorisée IP pour l&#39;accès aux instances ; limitez-la aux réseaux connus (par exemple bureau, VPN) et évitez autant que possible les plages trop larges.
+* place sur la liste autorisée IP **- Gérez la liste autorisée IP pour l&#39;accès aux instances ; limitez-la aux réseaux connus (par exemple bureau, VPN) et évitez autant que possible les plages trop larges.**
 * **Autorisations d’URL** - Restreignez les autorisations d’URL aux domaines que votre instance doit appeler (API, tracking, services externes) pour réduire le risque d’utilisation abusive des requêtes côté serveur.
 * **Clés GPG** - Si vous utilisez le chiffrement pour les transferts de fichiers ou d’autres cas d’utilisation, gérez les clés GPG par Panneau de Contrôle et faites-les pivoter en fonction de votre politique de sécurité.
 

@@ -7,8 +7,8 @@ description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
 source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 86%
+source-wordcount: '893'
+ht-degree: 87%
 
 ---
 
@@ -212,7 +212,7 @@ ht-degree: 86%
    + [Campaign + Workfront](connect/ac-workfront.md)
    + [Campaign + X (Twitter)](connect/ac-tw.md)
    + [Campaign + base de données externe](connect/fda.md)
-   + Campaign + votre CRM   {#ac-crm}
+   + Campaign + votre CRM {#ac-crm}
       + [Prise en main des connecteurs CRM](connect/crm.md)
       + [Utilisation de Campaign et SFDC](connect/ac-sfdc.md)
       + [Utilisation de Campaign et Microsoft Dynamics](connect/ac-ms-dyn.md)
@@ -227,12 +227,12 @@ ht-degree: 86%
       + [Nouvelles API](architecture/new-apis.md)
       + [Mécanisme d&#39;évaluation des API](architecture/staging.md)
       + [Mécanisme de réplication](architecture/replication.md)
-+ Configuration  {#config}
++ Configuration {#config}
    + Mise en œuvre {#implement}
       + [Étapes dʼimplémentation](start/implement.md)
       + [Personnaliser votre instance](dev/customize.md)
       + [Bonnes pratiques relatives au modèle de données](dev/datamodel-best-practices.md)
-   + Paramètres       {#settings}
+   + Paramètres {#settings}
       + [Paramètres de l’interface utilisateur](config/ui-settings.md)
       + [Gérer les dossiers et les vues](audiences/folders-and-views.md)
       + [Utiliser les énumérations](config/enumerations.md)

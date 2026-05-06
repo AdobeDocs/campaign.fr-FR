@@ -6,9 +6,9 @@ feature: Distributed Marketing
 role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
 source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
-workflow-type: ht
-source-wordcount: '1689'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1691'
+ht-degree: 81%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 100%
 
 
 
-Une opération locale est une instance d&#39;opération créée à partir d&#39;un modèle d&#39;opération référencé dans la liste des **[!UICONTROL kits d&#39;opération]** avec un **planning d&#39;exécution spécifique** à chaque commande de l&#39;entité locale. L&#39;objectif est de répondre à un besoin local de communication en utilisant un modèle d&#39;opération formalisé et paramétré par l&#39;entité centrale. Les grandes étapes de la mise en oeuvre d&#39;une opération locale sont les suivantes :
+Une opération locale est une instance d&#39;opération créée à partir d&#39;un modèle référencé dans la liste des **[!UICONTROL kits d&#39;opération]** avec un **planning d&#39;exécution spécifique**. Son objectif est de répondre à un besoin local de communication à l&#39;aide d&#39;un modèle de campagne mis en place et paramétré par l&#39;entité centrale. Les principales étapes de mise en œuvre d&#39;une opération locale sont les suivantes :
 
 **Pour l&#39;entité centrale**
 
 1. Créer un modèle d&#39;opération locale.
-1. Créer un kit d&#39;opération à partir du modèle.
-1. Publier le kit d&#39;opération.
+1. Créer un kit de campagne à partir du modèle.
+1. Publier le kit de campagne.
 1. Valider les commandes.
 
 **Pour l&#39;entité locale**
@@ -32,9 +32,9 @@ Une opération locale est une instance d&#39;opération créée à partir d&#39;
 
 ## Créer un modèle d&#39;opération locale {#creating-a-local-campaign-template}
 
-Pour créer un kit d&#39;opération, vous devez d&#39;abord créer le **modèle d&#39;opération** à partir du noeud **[!UICONTROL Ressources > Modèles]**.
+Pour créer un kit de campagne, vous devez d’abord créer le **modèle d’opération** à partir du nœud **[!UICONTROL Ressources > Modèles]**.
 
-Pour créer un nouveau modèle d&#39;opération locale, dupliquez le modèle par défaut **[!UICONTROL Opération locale (opLocal)]**.
+Pour créer un nouveau modèle local, dupliquez le modèle **[!UICONTROL Campagne locale (opLocal)]** par défaut.
 
 ![](assets/mkg_dist_local_op_creation.png)
 
@@ -58,7 +58,7 @@ Sélectionnez le type d’interface web à appliquer aux opérations créées à
 
 Quatre types d’interface web sont disponibles :
 
-* **[!UICONTROL Par brief]** : l’entité locale doit éditer un brief où elle peut saisir la description des paramètres de l’opération. Une fois la commande approuvée, l’entité centrale configure et exécute l’intégralité de la campagne.
+* **[!UICONTROL Par brief]** : l&#39;entité locale doit éditer un brief où elle peut saisir la description des paramètres de l&#39;opération. Une fois la commande validée, l&#39;entité centrale paramètre et exécute l&#39;ensemble de la campagne.
 
   ![](assets/mkt_distr_6.png)
 
@@ -66,7 +66,7 @@ Quatre types d’interface web sont disponibles :
 
   ![](assets/mkt_distr_8.png)
 
-  Le formulaire proposé est indiqué dans une application web qui doit être sélectionnée dans la liste déroulante du champ **[!UICONTROL Interface web]** qui se trouve dans le lien **[!UICONTROL Paramètres avancés de la campagne...]**. Pour plus d&#39;informations, consultez la section [Créer une campagne locale (par formulaire)](examples.md#creating-a-local-campaign--by-form-).
+  Le formulaire proposé est indiqué dans une application web qui doit être sélectionnée dans la liste déroulante du champ **[!UICONTROL Interface web]** qui se trouve dans le lien **[!UICONTROL Paramètres avancés de la campagne...]**. Pour plus d&#39;informations, consultez la section [Créer une opération locale (par formulaire)](examples.md#creating-a-local-campaign--by-form-).
 
   >[!NOTE]
   >
@@ -82,7 +82,7 @@ Quatre types d’interface web sont disponibles :
 ### Les valeurs par défaut {#default-values}
 
 
-Sélectionnez les **[!UICONTROL Valeurs par défaut]** qui seront renseignées par les entités locales. Par exemple :
+Sélectionnez le **[!UICONTROL Valeurs par défaut]** à compléter par les entités locales. Par exemple :
 
 * les dates de contact et d&#39;extraction,
 * les caractéristiques de la cible (segment d&#39;âge, etc.).
@@ -107,11 +107,11 @@ Si l&#39;on ne souhaite pas renseigner de validants pour les opérations, le nom
 
 ### Documents {#documents}
 
-Vous pouvez permettre aux opérateurs et opératrices de l’entité locale d’associer des documents (fichiers texte, tableurs, images, descriptions de campagnes, etc.) à la campagne locale lors de la création de la commande. Le lien **[!UICONTROL Paramètres avancés de saisie de l’opération...]** permet de limiter le nombre de documents. Pour ce faire, il vous suffit de saisir le nombre maximal autorisé dans le champ **[!UICONTROL Nombre de documents]**.
+Vous pouvez autoriser des opérateurs d&#39;entités locales à lier des documents (fichiers texte, feuilles de calcul, images, descriptions de campagne, etc.) à la campagne locale lors de la création de la commande. Le lien **[!UICONTROL Paramètres avancés de saisie de l’opération...]** permet de limiter le nombre de documents. Pour ce faire, il vous suffit de saisir le nombre maximal autorisé dans le champ **[!UICONTROL Nombre de documents]**.
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 
-Lors de la commande d&#39;un kit d&#39;opération, le formulaire propose d&#39;associer autant de documents qu&#39;indiqué dans le champ correspondant du modèle :
+Lors de la commande d’un kit de campagne, le formulaire propose d’associer autant de documents qu’indiqué dans le champ correspondant du modèle :
 
 ![](assets/s_advuser_mkg_dist_add_docs.png)
 
@@ -151,7 +151,7 @@ Localisez le HTML de votre diffusion. Par exemple, dans **[!UICONTROL Diffusion 
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
-Enregistrez votre modèle de campagne. Vous pouvez désormais l’utiliser depuis la vue **[!UICONTROL Kits d’opération]** de l’onglet **[!UICONTROL Campagnes]**, en cliquant sur le bouton **[!UICONTROL Créer]**.
+Enregistrez votre modèle de campagne. Vous pouvez désormais l’utiliser depuis la vue **[!UICONTROL Kits de campagne]** de l’onglet **[!UICONTROL Campagnes]**, en cliquant sur le bouton **[!UICONTROL Créer]**.
 
 ![](assets/mkt_distr_9.png)
 
@@ -159,26 +159,26 @@ Enregistrez votre modèle de campagne. Vous pouvez désormais l’utiliser depui
 >
 >Les modèles de campagne et leur paramétrage général sont présentés sur [cette page](../campaigns/marketing-campaign-templates.md).
 
-## Créer le kit d&#39;opération {#creating-the-campaign-package}
+## Créer le kit de campagne {#creating-the-campaign-package}
 
-Pour mettre à disposition le modèle d&#39;opération auprès des entités locales, il doit être ajouté dans la liste. Pour cela, l&#39;entité centrale doit créer un nouveau kit.
+Pour que le modèle de l&#39;opération soit disponible pour les entités locales, il doit être ajouté à la liste. Pour ce faire, l’agence centrale doit créer un nouveau package.
 
 Les étapes sont les suivantes :
 
-1. Dans la section **[!UICONTROL Navigation]** de l&#39;univers **Campagnes**, cliquez sur le lien **[!UICONTROL Kits d&#39;opération]**.
+1. Dans la section **[!UICONTROL Navigation]** de l’univers **Campagnes**, cliquez sur le lien **[!UICONTROL Kits de campagne]**.
 1. Cliquez sur le bouton **[!UICONTROL Créer]**.
 
    ![](assets/mkg_dist_add_an_entry.png)
 
-1. La section supérieure de la fenêtre permet de sélectionner le modèle de kit d&#39;opération défini [précédemment](#creating-a-local-campaign-template).
+1. La section supérieure de la fenêtre permet de sélectionner le modèle de kit de campagne défini [précédemment](#creating-a-local-campaign-template).
 
-   Par défaut, le modèle **[!UICONTROL Nouveau kit d&#39;opération (localEmpty)]** peut être utilisé pour les opérations locales.
+   Par défaut, le modèle **[!UICONTROL Nouveau kit d’opération (localEmpty)]** peut être utilisé pour les campagnes locales.
 
-1. Définissez le libellé du kit d&#39;opération, son dossier d&#39;enregistrement et indiquez son planning de réalisation.
+1. Définissez le libellé du kit de campagne, son dossier d’enregistrement et indiquez son planning de réalisation.
 
-### Dates       {#dates}
+### Dates {#dates}
 
-Les dates de début et de fin correspondent à la période de visibilité de l&#39;opération dans la liste des kits.
+Les dates de début et de fin correspondent à la période de visibilité de l’opération dans la liste des kits de campagne.
 
 La date de disponibilité est la date à partir de laquelle l&#39;opération est disponible auprès des entités locales (pour la commander).
 
@@ -204,7 +204,7 @@ Lorsque le kit est enregistré, l&#39;entité centrale peut l&#39;éditer depuis
 
 Depuis l&#39;onglet **[!UICONTROL Général]**, l&#39;entité centrale peut :
 
-* paramétrer le ou les validants du kit d&#39;opération depuis le lien **[!UICONTROL Paramètres de validation...]**,
+* paramétrer le ou les validants du kit de campagne depuis le lien **[!UICONTROL Paramètres de validation...]**,
 * revoir le planning de réalisation,
 * ajouter ou supprimer des entités locales.
 
@@ -212,7 +212,7 @@ Depuis l&#39;onglet **[!UICONTROL Général]**, l&#39;entité centrale peut :
 >
 >Par défaut, chaque entité ne peut commander qu&#39;une seule fois une **opération locale**.
 >   
->Cochez l&#39;option **[!UICONTROL Autoriser la création multiple]** pour lui permettre de créer plusieurs opérations locales à partir du kit d&#39;opération.
+>Cochez l’option **[!UICONTROL Activer la création multiple]** pour lui permettre de créer plusieurs opérations locales à partir du kit de campagne.
 
 ![](assets/mkg_dist_local_op_multi_crea.png)
 
@@ -222,11 +222,11 @@ Lorsqu’une opération est disponible ou lorsque la date limite d’inscription
 
 ## Commander une opération {#ordering-a-campaign}
 
-Une fois validés et leur période de réalisation débutée, les kits d&#39;opération sont accessibles au niveau des entités locales. Les acteurs locaux sont avisés par email de la disponibilité d&#39;un nouveau kit d&#39;opération (dès que sa date de disponibilité est atteinte).
+Les kits d&#39;opération deviennent accessibles aux entités locales une fois qu&#39;ils sont approuvés et que leur période de mise en œuvre a commencé. Les entités locales reçoivent un email les informant qu&#39;un nouveau kit d&#39;opération est disponible (dès que sa date de disponibilité est atteinte).
 
 >[!NOTE]
 >
->Si des entités locales ont été indiquées lors de la création du kit d&#39;opération, elles seules recevront une notification. Si aucune entité locale n&#39;a été indiquée, toutes les entités locales recevront une notification.
+>Si certaines entités locales ont été définies lors de la création du kit d&#39;opération, elles seront les seules à recevoir une notification. Si aucune entité locale n&#39;a été spécifiée, toutes les entités locales reçoivent une notification.
 
 ![](assets/mkg_dist_local_op_notification.png)
 
@@ -236,7 +236,7 @@ Pour commander une opération :
 
 1. Cliquez sur lien **[!UICONTROL Commander l&#39;opération]** dans le message de notification, ou sur le bouton correspondant dans la console Adobe Campaign.
 
-   Saisissez votre identifiant et votre mot de passe pour procéder à la commande. L&#39;interface de saisie des paramétrages se compose d&#39;un ensemble de pages définies dans une application Web.
+   Saisissez votre identifiant et votre mot de passe pour commander la campagne. L&#39;interface est composée d&#39;un ensemble de pages défini dans une application web.
 
 1. Renseignez les informations utiles dans la première page (libellé de la commande et commentaire) et cliquez sur **[!UICONTROL Suivant]**.
 
@@ -248,7 +248,7 @@ Pour commander une opération :
 
    ![](assets/mkg_dist_subscribe_step3.png)
 
-1. L&#39;information est remontée au niveau de l&#39;entité locale et de l&#39;entité centrale. Si chaque entité locale ne voit que ses commandes, l&#39;entité centrale peut visualiser toutes les commandes de toutes les entités locales, comme ci-dessous :
+1. Les informations sont retournées aux entités locales et centrales. Alors que les entités locales ne peuvent visualiser que leurs propres commandes, l&#39;entité centrale peut visualiser toutes les commandes de n&#39;importe quelle entité locale, comme dans l&#39;exemple ci-dessous :
 
    ![](assets/mkg_dist_subscribe_central_view.png)
 
@@ -266,7 +266,7 @@ Pour commander une opération :
 
    Pour plus d&#39;informations, consultez la section [Processus de validation](#approval-process).
 
-1. L’opérateur local est alors notifié de la disponibilité de la campagne : elle est accessible à partir de la liste des kits d’opérations de l’onglet **Campagnes**. La campagne peut alors être utilisée. Pour plus d&#39;informations, consultez la section [Accéder aux opérations](accessing-campaigns.md).
+1. L’opérateur local est alors notifié de la disponibilité de la campagne : elle est accessible à partir de la liste des kits de campagne de l’onglet **Campagnes**. La campagne peut alors être utilisée. Pour plus d&#39;informations, consultez la section [Accéder aux opérations](accessing-campaigns.md).
 
    L&#39;option **[!UICONTROL Démarrer le ciblage à la validation de la commande]** permet à l&#39;entité locale d&#39;exécuter l&#39;opération dès que sa commande a été validée.
 
@@ -316,17 +316,17 @@ Pour plus d&#39;informations, consultez la section [Accéder aux opérations](ac
 
 ### Refuser une validation {#rejecting-an-approval}
 
-L&#39;opérateur validant peut refuser la validation d&#39;un kit d&#39;opération ou d&#39;une commande.
+L’opérateur validant peut refuser la validation d’un kit de campagne ou d’une commande.
 
 ![](assets/mkg_dist_do_not_valid.png)
 
 Si l&#39;opérateur validant refuse une commande, la notification correspondante est automatiquement envoyée aux entités locales concernées : elle affiche le commentaire saisi par l&#39;opérateur ayant refusé la validation.
 
-Les informations sont affichées dans la liste des pckages de campagne ou dans la page des commandes de campagne. Si les réviseurs et réviseuses ont accès à la console cliente Adobe Campaign, les entités locales sont informées de ce rejet.
+Les informations sont affichées dans la liste des kits de campagne ou dans la page des commandes de campagne. Si les réviseurs et réviseuses ont accès à la console cliente Adobe Campaign, les entités locales sont informées de ce rejet.
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 
-Elles peuvent visualiser le commentaire saisi dans l’onglet **[!UICONTROL Edition]** du package des campagnes.
+Elles peuvent visualiser le commentaire saisi dans l’onglet **[!UICONTROL Édition]** du kit de campagne.
 
 ![](assets/mkg_dist_do_not_valid_tab.png)
 

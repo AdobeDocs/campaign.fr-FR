@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
 source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
 workflow-type: tm+mt
-source-wordcount: '1380'
-ht-degree: 73%
+source-wordcount: '1427'
+ht-degree: 72%
 
 ---
 
@@ -21,7 +21,7 @@ Lors de la mise en quarantaine de leur adresse ou numéro de téléphone, les de
 
 <!--For more on best practices to secure and optimize your deliveries, refer to [this page](delivery-best-practices.md).-->
 
-## Placer sur la liste bloquée Quarantaine et durée
+## Quarantaine et durée
 
 La **quarantaine** s&#39;applique uniquement à une **adresse**, un **numéro de téléphone** ou un **jeton d&#39;appareil**, mais pas au profil lui-même. Par exemple, un profil dont l&#39;adresse e-mail est en quarantaine peut mettre à jour son profil et saisir une nouvelle adresse, puis être ciblé de nouveau par des actions de diffusion. De même, si deux profils ont le même numéro de téléphone, ils seront tous deux affectés si le numéro est mis en quarantaine. Les adresses ou numéros de téléphone mis en quarantaine s&#39;affichent dans les [logs d&#39;exclusion](#delivery-quarantines) (pour une diffusion) ou dans la [liste de quarantaine](#non-deliverable-bounces) (pour l&#39;ensemble de la plateforme).
 
@@ -29,11 +29,11 @@ La **quarantaine** s&#39;applique uniquement à une **adresse**, un **numéro de
 >
 >Lorsque les destinataires signalent votre message comme spam ou répondent à un message SMS avec un mot-clé tel que « STOP », leur adresse ou numéro de téléphone est mis en quarantaine comme **[!UICONTROL Placé sur la liste bloquée]**. Leur profil est mis à jour en conséquence.
 
-Placer sur la liste bloquée D&#39;un autre côté, les **profils** peuvent être sur la **&#x200B;**&#x200B;comme après une désinscription (opt-out), pour un canal donné : cela signifie qu&#39;ils ne sont plus ciblés par aucune diffusion. Ainsi, si un profil de la liste bloquée pour le canal e-mail comporte deux adresses e-mail, les deux adresses seront exclues de la diffusion. Vous pouvez vérifier si un profil est sur liste bloquée pour un ou plusieurs canaux dans la section **[!UICONTROL Ne plus contacter]** de l’onglet **[!UICONTROL Général]** du profil. [En savoir plus](../audiences/view-profiles.md)
+D&#39;un autre côté, les **profils** peuvent être sur la **&#x200B;**&#x200B;comme après une désinscription (opt-out), pour un canal donné : cela signifie qu&#39;ils ne sont plus ciblés par aucune diffusion. Ainsi, si un profil de la liste bloquée pour le canal e-mail comporte deux adresses e-mail, les deux adresses seront exclues de la diffusion. Vous pouvez vérifier si un profil est sur liste bloquée pour un ou plusieurs canaux dans la section **[!UICONTROL Ne plus contacter]** de l’onglet **[!UICONTROL Général]** du profil. [En savoir plus](../audiences/view-profiles.md)
 
 >[!NOTE]
 >
->Les destinataires désabonnés via la méthode List-Unsubscribe [&#x200B; « mailto »](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} ne sont pas mis en quarantaine. Placer sur la liste bloquée Ils sont soit désabonnés du [service](../start/subscriptions.md) associé à la diffusion, soit envoyés à l’(visible dans la section **[!UICONTROL Ne plus contacter]** du profil) si aucun service n’a été défini pour la diffusion.
+>Les destinataires désabonnés via la méthode List-Unsubscribe [&#x200B; « mailto »](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} ne sont pas mis en quarantaine. Ils sont soit désabonnés du [service](../start/subscriptions.md) associé à la diffusion, soit envoyés à l’(visible dans la section **[!UICONTROL Ne plus contacter]** du profil) si aucun service n’a été défini pour la diffusion.
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 

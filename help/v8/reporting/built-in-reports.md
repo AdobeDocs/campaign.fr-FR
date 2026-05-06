@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
 source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
-workflow-type: ht
-source-wordcount: '1111'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1115'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Une liste des principaux rapports est disponible sur la page d’accueil et perm
 Pour plus d’informations sur ces configurations personnalisées, consultez la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=fr){target="_blank"}.
 
 
-## Accès aux rapports intégrés {#access-ootb-reports}
+## Accéder aux rapports intégrés {#access-ootb-reports}
 
 Pour accéder aux rapports natifs de Campaign :
 
@@ -158,7 +158,7 @@ Pour plus d&#39;informations sur le contenu de ces rapports, consultez [cette se
 
 ## Rapports sur les opérations {#reports-on-campaigns}
 
-Les rapports sur les campagnes portent sur les données du tableau **nms:operation**.
+Les rapports sur les campagnes portent sur les données de la table **nms:operation**.
 
 <table> 
  <tbody> 
@@ -215,7 +215,7 @@ Les rapports sur les campagnes portent sur les données du tableau **nms:operati
 
 ## Rapports sur les services {#reports-on-services}
 
-Les rapports sur les services portent sur les données du tableau **nms:service**.
+Les rapports sur les services portent sur les données de la table **nms:service**.
 
 <table> 
  <tbody> 
@@ -302,7 +302,7 @@ Les rapports intégrés fournis par Adobe Campaign figurent dans le tableau ci-
 
 ## Rapports sur les simulations {#reports-on-simulations}
 
-Les rapports sur les simulations portent sur les données du tableau **nms:simulation**.
+Les rapports sur les simulations portent sur les données de la table **nms:simulation**.
 
 <table> 
  <tbody> 
@@ -335,7 +335,7 @@ Les rapports sur les simulations portent sur les données du tableau **nms:simul
 
 ## Rapports sur les applications Web {#reports-on-web-applications}
 
-Les rapports sur les applications Web portent sur les données du tableau **nms:WebApp**.
+Les rapports sur les applications web portent sur les données de la table **nms:WebApp**.
 
 <table> 
  <tbody> 
@@ -360,7 +360,7 @@ Les rapports sur les applications Web portent sur les données du tableau **nms:
 
 ## Autres rapports d&#39;usine {#other-ootb-reports}
 
-Les rapports suivants sont également fournis natifs. Pour plus d&#39;informations, reportez-vous au document relatif à la fonctionnalité à laquelle ils sont associés.
+Les rapports suivants sont également fournis de manière intégrée. Pour plus d’informations, consultez le document sur les fonctionnalités auxquelles ils se rapportent.
 
 <table> 
  <tbody> 

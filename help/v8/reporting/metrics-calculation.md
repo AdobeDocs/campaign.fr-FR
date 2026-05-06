@@ -6,8 +6,8 @@ role: Developer
 exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '3074'
-ht-degree: 92%
+source-wordcount: '3139'
+ht-degree: 85%
 
 ---
 
@@ -356,7 +356,7 @@ Ce rapport est basé sur les tables **[!UICONTROL Diffusion]** (nms:delivery), *
    <td> Nouveaux contacts<br /> </td> 
    <td> @newContacts<br /> </td> 
    <td> Comptage du nombre de visiteurs liés à un destinataire.<br /> </td> 
-   <td> Formule : count(@id)<br /> Filtre : @recipient-id != 0<br /> </td> 
+   <td> Formule : count(@id)<br /> Filtre : @recipient-id != 0<br /> </td> 
   </tr> 
   <tr> 
    <td> Ouvertures (Opens)<br /> </td> 
@@ -723,7 +723,7 @@ Ce rapport est basé sur la table **[!UICONTROL Delivery]** (nms:delivery).
    <td> Clics<br /> </td> 
    <td> @_click<br /> </td> 
    <td> Comptage de tous les @totalClicks dont la clé primaire de l'url est différente de 1<br /> </td> 
-   <td> count(Iif([@url-id]) != 1, @totalClicks, 0))<br /> </td> 
+   <td> count(Iif([@url-id] != 1, @totalClicks, 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Clics (en%)<br /> </td> 
@@ -791,7 +791,7 @@ Ce rapport est basé sur la table **[!UICONTROL Delivery]** (nms:delivery).
 
 Ce rapport est basé sur les tables Diffusion(nms:delivery) et **[!UICONTROL Tracking consolidé]** (nms:trackingStats) .
 
-Ce rapport présente le contenu du message (HTML et/ou texte) avec, sur chaque lien, le pourcentage de clics sur ce lien. Les liens situés dans les blocs de personnalisation, le lien de désinscription et le lien vers la page miroir sont comptabilisés dans le total des clics cumulés mais ne sont pas affichés dans le rapport.
+Ce rapport présente le contenu du message (HTML et/ou texte) avec, sur chaque lien, le pourcentage de clics sur les liens. Les liens de désinscription des blocs de personnalisation et des pages miroir sont pris en compte dans le total des clics cumulés mais ne sont pas affichés dans le rapport.
 
 ## Statistiques de tracking {#tracking-statistics-1}
 
@@ -920,7 +920,7 @@ Si vous observez une désynchronisation ou une incohérence de certains indicate
 
 ## Tracking des ouvertures {#tracking-opens-}
 
-Pour qu’Adobe Campaign puisse détecter l’ouverture d’un message, le destinataire doit télécharger les images de l’email. Les emails HTML et Multipart/Alternative incluent en effet une image de 0 pixel permettant, lorsque le destinataire l’affiche, de détecter qu’il a ouvert le message. Les messages au format texte ne contenant aucune image, il est impossible d’en détecter l’ouverture. Les valeurs calculées sur des ouvertures de messages sont donc toujours des estimations, en raison de la marge d’erreur liée à l’affichage des images.
+Pour qu’Adobe Campaign puisse détecter l’ouverture d’un message, le destinataire doit télécharger les images de l’e-mail. Les e-mails HTML et Multipart/Alternative incluent une image de 0 pixel, qui permet de détecter les messages qui ont été ouverts. Les messages au format texte ne contenant aucune image, il est impossible de détecter s&#39;ils ont été ouverts ou non. Les valeurs calculées à partir des ouvertures de messages sont toujours des estimations, en raison de la marge d’erreur liée à l’affichage des images.
 
 ## Distinction personnes / destinataires ciblés {#targeted-persons---recipients}
 
@@ -928,6 +928,6 @@ Adobe Campaign distingue les personnes et les destinataires ciblés dans les st
 
 Les destinataires ciblés correspondent à tous les destinataires à qui la diffusion a été envoyée.
 
-Le nombre de personnes englobe les destinataires ciblés, auxquels sont ajoutées toutes les personnes à qui l&#39;email a été transféré. A chaque fois qu&#39;une ouverture ou qu&#39;un clic est effectué dans un nouveau navigateur (avec lequel ce message n&#39;avait jamais été ouvert), une nouvelle personne est comptabilisée.
+Le nombre de personnes comprend les destinataires ciblés plus toutes les personnes à qui l’e-mail a été transféré. Chaque fois qu’il y a une ouverture ou un clic dans un nouveau navigateur (dans lequel le message n’a pas encore été ouvert), une autre personne est ajoutée aux statistiques.
 
-Par exemple, si vous recevez un email (envoyé par Adobe Campaign) au travail et que vous l&#39;ouvrez ou cliquez dedans, vous êtes comptabilisé comme un destinataire ciblé (donc destinataire=1, personne=1). Si vous transférez ce mail à deux amis, le nombre de destinataires ciblés sera toujours de un alors que le nombre de personnes sera de trois. La valeur 3 correspond donc à chaque ouverture/clic dans un nouveau navigateur.
+Par exemple, si vous recevez un e-mail (envoyé par Adobe Campaign) au travail et que vous l’ouvrez ou cliquez dessus, vous êtes comptabilisé comme un destinataire ciblé (c’est-à-dire destinataire=1, personne=1). Si vous transférez cet e-mail à deux amis, le nombre de destinataires ciblés sera toujours égal à un, tandis que le nombre de personnes sera égal à trois. La valeur 3 correspond à chaque ouverture/clic dans un nouveau navigateur.

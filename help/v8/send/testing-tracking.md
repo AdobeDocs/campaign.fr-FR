@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
 source-git-commit: edbe7ab49a628436dfb4d27ae17122917d7371e9
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '666'
 ht-degree: 7%
 
 ---
@@ -46,7 +46,7 @@ Vous pouvez tester le suivi sur les pages miroir, les journaux d’e-mail et les
 
    ![](assets/s_ncs_user_email_del_tracking_param.png)
 
-[En savoir plus sur les options de tracking des URL](url-tracking.md)
+   [En savoir plus sur les options de tracking des URL](url-tracking.md)
 
 1. Envoyez la diffusion à votre destinataire test. [En savoir plus sur l&#39;envoi de diffusions](configure-and-send.md)
 

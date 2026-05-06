@@ -7,9 +7,9 @@ level: Intermediate, Experienced
 exl-id: bf1ae889-9c07-4acf-8fd0-55b57151bc47
 version: Campaign v8, Campaign Classic v7
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '2020'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '2023'
+ht-degree: 93%
 
 ---
 
@@ -37,7 +37,7 @@ Vous pouvez travailler avec trois types de packages dans Adobe Campaign : les 
 
 ## Structure de données {#data-structure}
 
-La description d’un package de données est un document XML structuré respectant la grammaire du schéma de données **xrk:navtree**, comme dans l’exemple ci-dessous :
+La description d&#39;un package de données est un document XML structuré respectant la grammaire du schéma de données **xrk:navtree**, comme dans l&#39;exemple ci-dessous :
 
 ```xml
 <package>
@@ -93,7 +93,7 @@ Pour exporter un ensemble d’objets dans un package de données, procédez comm
 
    >[!CAUTION]
    >
-   >Si vous exportez un dossier de type **[!UICONTROL Catégorie d’offre]**, **[!UICONTROL Environnement d’offre]**, **[!UICONTROL Programme]** ou **[!UICONTROL Plan]**, ne sélectionnez en aucun cas l’entité **xtk:folder** au risque de perdre une partie des données. Sélectionnez l’entité correspondant au dossier : **nms:offerCategory** pour les catégories d’offres, **nms:offerEnv** pour les environnements d’offres, **nms:program** pour les programmes et **nms:plan** pour les plans.
+   >Si vous exportez un dossier de type **[!UICONTROL Catégorie d’offres]**, **[!UICONTROL Environnement d’offres]**, **[!UICONTROL Programme]** ou **[!UICONTROL Plan]**, ne sélectionnez en aucun cas l’**xtk:folder**, car vous risquez de perdre des données. Sélectionnez l&#39;entité correspondant au dossier : **nms:offerCategory** pour les catégories d&#39;offres, **nms:offerEnv** pour les environnements d&#39;offres, **nms:program** pour les programmes et **nms:plan** pour les plans.
 
    Le mécanisme de dépendance contrôle la séquence d&#39;exportation des entités. Pour plus d&#39;informations, consultez la section [Gestion des dépendances](#manage-dependencies).
 
@@ -192,7 +192,7 @@ Enfin, l’attribut `@pkgStatus` permet de définir les règles d’export sur l
 
 ## Gérer les définitions de packages {#manage-package-definitions}
 
-Les définitions de packages vous permettent de créer une structure de package dans laquelle vous ajoutez les entités qui seront exportées ultérieurement dans un même package. Vous pourrez ensuite importer ce package et toutes les entités ajoutées dans une autre instance Campaign.
+Les définitions de package permettent de créer une structure de package dans laquelle vous ajoutez des entités qui seront exportées ultérieurement dans un seul package. Vous pourrez ensuite importer ce package et toutes les entités ajoutées dans une autre instance Campaign.
 
 ### Créer une définition de package {#create-a-package-definition}
 
@@ -216,7 +216,7 @@ Dans l’onglet **[!UICONTROL Contenu]**, cliquez sur le bouton **[!UICONTROL Aj
 
 ![](assets/packagedefinition_addentities.png)
 
-Les entités peuvent être ajoutées directement à une définition de package à partir de leur emplacement dans l&#39;instance. Pour ce faire, suivez les étapes ci-dessous :
+Les entités peuvent être ajoutées à une définition de package directement à partir de leur emplacement dans l&#39;instance. Pour ce faire, procédez comme suit :
 
 1. Cliquez avec le bouton droit de la souris sur l&#39;entité désirée, puis sélectionnez **[!UICONTROL Actions > Exporter dans un package]**.
 
@@ -315,7 +315,7 @@ La première solution consisterait à réexporter l&#39;ensemble de la fonctionn
 
 Nous vous recommandons donc de créer un package de « mise à jour » contenant un seul type d’entité pour la fonctionnalité.
 
-Une mise à jour peut non seulement être constituée d&#39;un correctif, mais aussi d&#39;un nouvel élément de votre package d&#39;entité/de fonctionnalité/de campagne. Pour éviter de déployer l&#39;ensemble du package, vous pouvez exporter un package de mise à jour.
+Une mise à jour peut non seulement être constituée d’un correctif, mais aussi d’un nouvel élément de votre kit de campagne/entité/fonctionnalité. Pour éviter de déployer l&#39;ensemble du package, vous pouvez exporter un package de mise à jour.
 
 ### Conventions de dénomination {#data-package-naming}
 

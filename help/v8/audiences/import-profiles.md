@@ -7,8 +7,8 @@ level: Beginner
 exl-id: b6a5083f-2b5a-4f5b-ad30-d91363752896
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 94%
+source-wordcount: '291'
+ht-degree: 83%
 
 ---
 
@@ -18,7 +18,7 @@ Pour renseigner votre base de données Campaign, vous pouvez : [ajouter manuell
 
 ## Importer des profils avec un workflow {#import-profiles-with-a-wf}
 
-Les workflows peuvent être utiles pour automatiser certains de vos imports. Que vous importiez des données à partir d&#39;un fichier local ou d&#39;un serveur SFTP, vous pouvez utiliser des workflows pour standardiser vos procédures de Data Management.
+Les workflows peuvent être un moyen utile d’automatiser certains de vos processus d’importation. Que vous importiez des données à partir d’un fichier local ou d’un serveur SFTP, vous pouvez utiliser des workflows pour normaliser vos procédures de gestion des données.
 
 ### Utiliser les données d&#39;une liste : lecture de liste {#data-from-read-list}
 
@@ -34,7 +34,7 @@ Une fois les données collectées, vous pouvez les utiliser dans vos workflows, 
 
 Adobe Campaign offre une fonctionnalité d&#39;import générique qui permet, par exemple, d&#39;extraire une liste de clients ou de prospects qui feront alors partie d&#39;une population cible, ou de fournir à votre base de données des données provenant de fichiers externes.
 
-Les imports génériques sont gérés à partir du menu **[!UICONTROL Profils et cibles > Tâches]** de la page d&#39;accueil d&#39;Adobe Campaign.
+Les imports génériques sont gérés à partir du menu **[!UICONTROL Profils et cibles > Traitements]** de la page d’accueil d’Adobe Campaign.
 
 ![](assets/new-import-job.png)
 

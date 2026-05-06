@@ -7,16 +7,16 @@ level: Beginner, Intermediate
 exl-id: 5256fc15-1878-4064-9c75-7876a3826b83
 source-git-commit: 4c787abbf9b13c08263e602930bc532d73e08a5a
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '383'
 ht-degree: 100%
 
 ---
 
 # Utiliser les mappings de ciblage{#gs-target-mappings}
 
-Par défaut, les modèles de diffusion par e-mail et SMS ciblent les **[!UICONTROL destinataires]**. Leur mapping de ciblage utilise donc les champs du tableau **nms:recipient**.
+Par défaut, les modèles de diffusion par e-mail et SMS ciblent les **[!UICONTROL destinataires]**. Leur mapping de ciblage utilise donc les champs de la table **nms:recipient**.
 
-Pour les notifications push, le mapping de ciblage par défaut est **Applications Abonnés (nms:appSubscriptionRcp)**, qui est lié au tableau des destinataires.
+Pour les notifications push, le mapping de ciblage par défaut est **Applications abonnées (nms:appSubscriptionRcp)**, qui est lié à la table des personnes destinataires.
 
 Vous pouvez utiliser d’autres mappings de ciblage pour vos diffusions ou créer un nouveau mapping de ciblage.
 
@@ -27,10 +27,10 @@ Adobe Campaign est fourni avec les mappings de ciblage intégrés suivants :
 | Nom | Utilisation | Schéma |
 |---|---|---|
 | Destinataires | Diffuser aux destinataires (tableau de destinataires intégré) | nms:recipient |
-| Visiteurs | Diffuser aux visiteurs dont les profils ont été collectés par le biais d’une recommandation (marketing viral), par exemple. | mns:visitor |
-| Abonnements  | Diffuser aux destinataires abonnés à un service d&#39;information, par exemple une newsletter | nms:subscription |
-| Abonnements des visiteurs | Diffuser à des visiteurs abonnés à un service d&#39;information | nms:visitorSub |
-| Opérateurs | Diffuser aux opérateurs Adobe Campaign | nms:operator |
+| Visiteurs et visiteuses | Diffuser aux visiteurs dont les profils ont été collectés par le biais d’une recommandation (marketing viral), par exemple. | mns:visitor |
+| Abonnements | Diffuser aux destinataires abonnés à un service d&#39;information, par exemple une newsletter | nms:subscription |
+| Abonnements des visiteurs et visiteuses | Diffuser à des visiteurs abonnés à un service d&#39;information | nms:visitorSub |
+| Les opérateurs | Diffuser aux opérateurs Adobe Campaign | nms:operator |
 | Fichier externe | Diffuser depuis un fichier contenant les toutes informations nécessaires à la diffusion | Aucun schéma associé, aucune cible renseignée |
 | Applications abonnés | Diffuser aux destinataires abonnés à une application | nms:appSubscriptionRcp |
 

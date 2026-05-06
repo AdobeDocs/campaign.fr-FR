@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: dd822f88-b27d-4944-879c-087f68e79825
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 100%
+source-wordcount: '440'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ Dans le contexte d’un [déploiement Grands comptes (FFDA)](enterprise-deployme
 
 Un workflow intégré dédié synchronise les données dans la base de données cloud.
 
-## Insérer les données {#data-insert-api}
+## Insérer les données{#data-insert-api}
 
 L&#39;API **xtk.session.ingest** est réservée à l&#39;insertion de données uniquement. Aucune mise à jour/suppression.
 
@@ -210,6 +210,6 @@ La gestion des abonnements dans Campaign est décrite dans [cette page](../start
 L&#39;insertion des données d&#39;abonnement et de désabonnement repose sur le [mécanisme d&#39;évaluation](staging.md) de la base de données locale de Campaign. Les informations sur les abonnés sont temporaires et stockées dans des tables intermédiaires de la base de données locale. Le workflow de synchronisation envoie ces données de la base locale vers la base de données Cloud. Par conséquent, les processus d&#39;abonnement et de désabonnement sont **asynchrones**. Les demandes d&#39;opt-in et d&#39;opt-out sont traitées toutes les heures par le biais d&#39;un workflow technique spécifique. [En savoir plus](replication.md#tech-wf)
 
 
-**Rubriques connexes**
+**Rubriques connexes :**
 
 * [JSAPI Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=fr){target="_blank"}

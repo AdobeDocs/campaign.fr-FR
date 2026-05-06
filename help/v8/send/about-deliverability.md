@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
 source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '805'
 ht-degree: 100%
 
 ---
@@ -56,9 +56,9 @@ Adobe Campaign fournit différents outils pour suivre et améliorer les perform
 
 Lors de la configuration, de la conception et du test de votre message, assurez-vous de suivre les bonnes pratiques mentionnées dans les sections ci-dessous. Tirer parti de toutes les fonctionnalités d&#39;Adobe Campaign contribue à améliorer la délivrabilité.
 
-* [Bonnes pratiques relatives à la diffusion](../start/delivery-best-practices.md)
+* [Bonnes pratiques de diffusion](../start/delivery-best-practices.md)
 * [Contrôle du contenu des e-mails](control-message-content.md)
-* [Inbox rendering](inbox-rendering.md)
+* [Rendu de la boîte de réception](inbox-rendering.md)
 * [Envoyer un bon à tirer](preview-and-proof.md#send-proofs)
 
 ### Vérification du consentement par le biais du double opt-in {#double-opt-in}

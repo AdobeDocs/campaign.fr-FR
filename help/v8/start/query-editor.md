@@ -5,22 +5,23 @@ feature: Query Editor, Data Management
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 56d5628312ea3dedf9335dd0933811e4bf66eb97
+exl-id: 071274f1-7c60-445d-ac07-f5f4f229a489
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
 source-wordcount: '157'
-ht-degree: 5%
+ht-degree: 82%
 
 ---
 
 # Base de données Query Campaign
 
-Le requêteur est disponible à différents niveaux de l’application et peut être utilisé pour définir des populations cibles, segmenter les clients, extraire et filtrer des logs de tracking, créer des filtres, etc.
+L’outil de requête est disponible à différents niveaux dans l’application et peut être utilisé pour définir des populations cibles, segmenter la clientèle, extraire et filtrer des journaux de suivi, créer des filtres, etc.
 
-Il fournit un assistant dédié, le requêteur générique, accessible à partir du menu **[!UICONTROL Outils > Requêteur générique...]** . Cet éditeur permet aux requêtes de base de données d’extraire, d’organiser, de regrouper et de trier des informations. Elle peut, par exemple, récupérer les destinataires ayant cliqué plus de n fois sur un lien de newsletter au cours d’une période donnée.
+Il fournit un assistant dédié, le requêteur générique, accessible à partir du menu **[!UICONTROL Outils > Requêteur générique…]**. Ce requêteur permet aux requêtes de base de données d’extraire, d’organiser, de regrouper et de trier des informations. Il peut, par exemple, récupérer les destinataires ayant cliqué plus de n fois sur un lien de newsletter au cours d’une période donnée.
 
-Le requêteur générique centralise toutes les fonctionnalités d’interrogation. Elle permet la création et le stockage de filtres de restriction, qui peuvent ensuite être réutilisés dans d&#39;autres contextes, tels que la boîte de Requête d&#39;un workflow de ciblage.
+Le requêteur générique centralise toutes les fonctionnalités de requête. Il permet la création et le stockage de filtres de restriction, qui peuvent ensuite être réutilisés dans d’autres contextes, tels que la zone Requête d’un workflow de ciblage.
 
-![Accédez au requêteur et sélectionnez une table](assets/query_editor_nveau_21.png)
+![Accès au requêteur et sélection d’une table](assets/query_editor_nveau_21.png)
 
 
 Les étapes de création d’une requête sont détaillées [sur cette page](design-queries.md).
@@ -40,7 +41,7 @@ Contexts to use the query editor iin Campaign are listed below:
 |**Build conditional content**: Make email content dynamic by creating conditions that define which content should be displayed to different recipients, ensuring personalized and relevant messaging. [Learn how to build conditional content](../personalization/conditions.md)|![Image showing how to create conditional content](assets/conditional-content.png){width="200" align="center" zoomable="yes"}|
 -->
 
-**Rubriques connexes**.
+**Rubriques connexes :**
 
 * [Activité de requête de workflow](../../automation/workflow/query.md)
 * [Effectuer une requête sur la table des destinataires](../../automation/workflow/querying-recipient-table.md)

@@ -5,10 +5,11 @@ description: Découvrez comment générer des documents PDF personnalisés
 feature: Personalization
 role: User
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
+exl-id: f4a329e3-70d2-43cd-a04a-0bbd5e3ca390
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
 source-wordcount: '468'
-ht-degree: 97%
+ht-degree: 84%
 
 ---
 
@@ -22,7 +23,7 @@ Les extensions supportées sont : &quot;.docx&quot;, &quot;.doc&quot;, et &quot
 
 Pour personnaliser vos documents, vous disposez des mêmes fonctionnalités JavaScript que celles disponibles pour la personnalisation des e-mails.
 
-Vous devez activer l&#39;option **[!UICONTROL « Le contenu du fichier est personnalisé et converti en PDF au moment de l’envoi pour chaque message »]**. Cette option est accessible lors de l’ajout de la pièce jointe dans l’email de la diffusion. Pour plus d’informations sur l’ajout d’un fichier calculé en pièce jointe, consultez la documentation de [Campaign v8](attaching-files.md).
+Vous devez activer l&#39;option **[!UICONTROL « Le contenu du fichier est personnalisé et converti en PDF au moment de l&#39;envoi pour chaque message »]**. Cette option est accessible lorsque vous joignez le fichier à l’e-mail de diffusion. Pour en savoir plus sur l’ajout d’un fichier calculé en pièce jointe, consultez la [documentation de Campaign v8](attaching-files.md).
 
 Si vous souhaitez générer des tableaux dynamiques ou inclure des images à partir d&#39;URL, vous devez suivre une procédure particulière.
 
@@ -53,7 +54,7 @@ Pour cela, il est nécessaire de paramétrer un bloc de personnalisation, puis d
 
 * Allez dans le menu **[!UICONTROL Ressources > Gestion de campagne > Blocs de personnalisation]** de la console Adobe Campaign.
 * Créez un nouveau bloc de personnalisation &quot;Mon Logo&quot; avec pour nom interne &quot;Mon_Logo&quot;.
-* Cliquez sur le lien **[!UICONTROL Paramètres avancés…]** et cochez l’option **[!UICONTROL « Le bloc est inclus dans une pièce jointe »]**. Cette option va permettre de recopier la définition du bloc de personnalisation directement dans le contenu du fichier OpenOffice.
+* Cliquez sur le lien **[!UICONTROL Paramètres avancés...]** puis cochez l&#39;option **[!UICONTROL « Le contenu du bloc est inclus dans une pièce jointe »]**. Vous pouvez ainsi copier la définition du bloc de personnalisation directement dans le contenu du fichier OpenOffice.
 
   ![](assets/s_ncs_pdf_bloc_option.png)
 

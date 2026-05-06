@@ -6,7 +6,7 @@ feature: Workflows, Audiences, Targeting Activity
 version: Campaign v8, Campaign Classic v7
 exl-id: e89c9f20-fc10-421f-9c14-2e33be562a8d
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ Ces activités permettent de construire une ou plusieurs cibles en définissant 
 
 * **[Cellules](cells.md)** : propose une vue des différents sous-ensembles sous forme de colonnes de données, et permet de faciliter la manipulation de ces sous-ensembles, lorsqu&#39;ils sont nombreux.
 * **[Connecteur CRM](crm-connector.md)** : permet de paramétrer la synchronisation entre Adobe Campaign et un CRM.
-* **[Modifier la source de données](change-data-source.md)** : permet de modifier la source de données d&#39;un workflow **[!UICONTROL Table de travail]**. Vous bénéficiez ainsi d&#39;une plus grande flexibilité pour gérer les données entre différentes sources de données, telles que FDA, FFDA et base de données locale.
+* **[Modifier la source de données](change-data-source.md)** : permet de modifier la source de données d&#39;un workflow **[!UICONTROL Table de travail]**. Vous bénéficiez ainsi d’une plus grande flexibilité pour gérer les données entre différentes sources de données, telles que FDA, FFDA et base de données locale.
 * **[Modifier la dimension](change-dimension.md)** : permet de modifier la dimension de ciblage au cours du cycle de construction du workflow.
 * **[Déduplication](deduplication.md)** : permet de supprimer les doublons des activités entrantes.
 * **[Composition de diffusion](delivery-outline.md)** (dans les workflows de campagne uniquement) : permet d&#39;ajouter une composition de diffusion.

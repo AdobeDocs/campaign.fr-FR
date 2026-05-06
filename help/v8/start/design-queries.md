@@ -5,10 +5,11 @@ feature: Query Editor, Data Management
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: edd495a377559007dad7158c9ab4a4917d89ae73
+exl-id: d34b6073-a7e7-443a-a6d8-e74ef10a67e8
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 28%
+source-wordcount: '959'
+ht-degree: 20%
 
 ---
 
@@ -60,10 +61,10 @@ L’option **[!UICONTROL Supprimer les lignes en double (DISTINCT)]** élimine l
 
 ## Etape 3 - Tri des données {#step-3---sort-data}
 
-La fenêtre **[!UICONTROL Tris]** permet de trier le contenu des colonnes. Utilisez les flèches pour modifier l&#39;ordre de tri des colonnes :
+La fenêtre **[!UICONTROL Tri]** permet de trier le contenu des colonnes. Utilisez les flèches pour modifier l’ordre des colonnes :
 
 * Avec **[!UICONTROL Tri]**, le contenu de chaque colonne est ordonné de A à Z. Le contenu est ordonné par ordre croissant s&#39;il est chiffré.
-* Avec **[!UICONTROL Tri descendant]**, le contenu de la colonne est ordonné de Z à A ou dans un ordre décroissant si le contenu est chiffré. Un tri descendant est utile par exemple pour visualiser les ventes de disques, avec les meilleurs scores affichés en haut de la liste.
+* Le **[!UICONTROL tri décroissant]** organise le contenu de Z à A et dans l’ordre décroissant. Cela s’avère utile pour consulter les ventes d’enregistrements, par exemple : les chiffres les plus élevés sont affichés en haut de la liste.
 
 Dans cet exemple, les données seront triées en fonction de l&#39;âge des destinataires, du plus jeune au plus âgé.
 
@@ -97,7 +98,7 @@ Dans l&#39;exemple ci-dessous, pour ne récupérer que les destinataires de lang
 >
 >Vous pouvez accéder directement à une option en saisissant la formule suivante dans le champ **Valeur** : **$(options:OPTION_NAME)**.
 
-Cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** afin de visualiser le résultat de la condition de filtrage. Dans ce cas, chaque destinataire de langue française est affiché avec son nom, prénom et adresse email.
+Cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** pour visualiser le résultat de la condition de filtrage. Dans ce cas, tous les destinataires anglophones sont affichés avec leur nom, prénom et adresse e-mail.
 
 ![](assets/query_editor_nveau_98.png)
 
@@ -139,7 +140,7 @@ Dans cet exemple, les données sont triées selon l&#39;âge des destinataires c
 
 
 
-**Rubriques connexes**
+**Rubriques connexes :**
 
 * [Activité de requête de workflow](../../automation/workflow/query.md)
 * [Effectuer une requête sur la table des destinataires](../../automation/workflow/querying-recipient-table.md)

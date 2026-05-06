@@ -8,13 +8,13 @@ exl-id: df494786-5950-4646-aa9c-4dde45845057
 source-git-commit: 5b23be4cb8f0896d2482e525e416713b1a6c4514
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 18%
+ht-degree: 11%
 
 ---
 
 # Accéder aux logs de tracking {#accessing-the-tracking-logs}
 
-Une fois la diffusion envoyée et le tracking activé, le workflow technique **[!UICONTROL Tracking]** est chargé de récupérer les informations de tracking. Par défaut, il s&#39;exécute toutes les heures.
+Lorsque la diffusion a été envoyée et que le tracking a été activé, le workflow technique **[!UICONTROL Tracking]** est chargé de récupérer les données de tracking. Il est exécuté toutes les heures par défaut.
 
 ## Affichage du suivi dans les profils de destinataires {#recipient-tracking}
 

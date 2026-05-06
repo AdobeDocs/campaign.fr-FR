@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 648fefcc-6476-4af8-9f0d-c9a87a7a3019
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 100%
+source-wordcount: '796'
+ht-degree: 92%
 
 ---
 
@@ -43,7 +43,7 @@ Dans le modèle d’optimisation de l’heure d’envoi prédictive, il existe d
 
 Détails de la sortie :
 
-* Calculez la meilleure heure d’envoi de l’email pendant les 7 jours de la semaine avec des intervalles d’une heure (p. ex. : 9 h, 10 h, 11 h)
+* Calculez la meilleure heure d’envoi d’un e-mail pendant les 7 jours de la semaine avec des intervalles d’une heure (par exemple : 9:00h, 10:00, 11:00).
 * Le modèle indique le meilleur jour de la semaine et la meilleure heure de la journée.
 * Chaque heure optimale est calculée deux fois : une fois pour maximiser le taux d’ouverture et une fois pour maximiser le taux de clics
 * 16 champs sont proposés (14 pour les jours de la semaine et 2 pour toute la semaine) :
@@ -83,7 +83,7 @@ Ce modèle utilise plusieurs scores pour indiquer :
 * **Score d’engagement avec ouverture/Score d’engagement avec clic** : cette valeur correspond à la probabilité qu’un abonné interagisse avec un message spécifique (ouverture ou clic). Les valeurs sont comprises entre 0,0 et 1,0.
 * **Probabilité de désabonnement** : cette valeur correspond à la probabilité pour le destinataire de se désabonner d’un canal email après l’ouverture d’un email. Les valeurs sont comprises entre 0,0 et 1,0.
 * **Niveau de rétention** : cette valeur classe les utilisateurs en trois niveaux : bas, moyen et élevé. Élevé indique que l’utilisateur est susceptible de rester fidèle à la marque et faible indique qu’il est susceptible de se désabonner.
-* **Rang percentile de rétention** : profil classé en termes de probabilité de désabonnement. Les valeurs sont comprises entre 0,0 et 1,0. Par exemple, si le rang de pourcentage de rétention est de 0,953, ce destinataire est plus susceptible de rester fidèle à la marque et moins susceptible de se désabonner que 95,3 % de tous les destinataires.
+* **Rang percentile de rétention** : profil classé en termes de probabilité de désabonnement. Les valeurs sont comprises entre 0,0 et 1,0. Par exemple, si le rang de pourcentage de rétention est de 0,953, ce destinataire est plus susceptible de conserver la marque et moins susceptible de se désabonner que 95,3 % de tous les destinataires.
 
 >[!NOTE]
 >

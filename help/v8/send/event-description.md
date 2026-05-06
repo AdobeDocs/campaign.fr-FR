@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: 2f679d1c-4eb6-4b3c-bdc5-02d3dea6b7d3
 source-git-commit: 6693bb8a62c0d126b871dc24a75b76de71b86f8d
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 92%
+source-wordcount: '751'
+ht-degree: 75%
 
 ---
 
@@ -29,12 +29,12 @@ Deux méthodes SOAP **PushEvent** ou **PushEvents** sont liées aux deux schéma
 
 Le chemin WSDL d&#39;accès aux deux méthodes est :
 
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** pour accéder au schéma de type en temps réel.
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** pour accéder au schéma de type de lot.
+* **:rtEvent** pour accéder au schéma de type en temps réel.
+* **:batchEvent** pour accéder au schéma de type de lot.
 
 Les deux méthodes contiennent un élément **`<urn:sessiontoken>`** permettant de se connecter au module de message transactionnel. Nous vous recommandons d&#39;utiliser une méthode d&#39;identification via des adresses IP approuvées. Pour récupérer le jeton de session, effectuez un appel SOAP de connexion, puis un jeton get suivi d’une fermeture de session. Utilisez le même jeton pour plusieurs appels RT. Les exemples inclus dans cette section utilisent la méthode du jeton de session qui est recommandée.
 
-Si votre serveur présente une répartition de la charge, vous pouvez utiliser l’authentification par utilisateur/mot de passe (au niveau du message RT). Par exemple :
+Si vous utilisez un serveur avec équilibrage de charge, vous pouvez utiliser l’authentification Utilisateur/Mot de passe (au niveau du message RT). Exemple:
 
 ```
 <PushEvent xmlns="urn:nms:rtEvent">
@@ -116,9 +116,9 @@ Les attributs obligatoires des éléments **`<rtevent>`** et **`<batchEvent>`** 
 
 Dans cet exemple, deux canaux sont renseignés : l&#39;adresse email et le numéro de téléphone portable. Le champ **wishedChannel** permet de définir le canal qui sera utilisé lors de la transformation de l&#39;évènement en message. La valeur &quot;0&quot; correspond au canal email, la valeur &quot;1&quot; au canal mobile, etc.
 
-Si vous souhaitez différer le traitement d&#39;un évènement, ajoutez le champ **[!UICONTROL scheduled]** suivi de la date désirée. L&#39;évènement sera transformé en message à cette date.
+Si vous souhaitez reporter une diffusion d’événement, ajoutez le champ **[!UICONTROL planifié]** suivi de la date souhaitée. L&#39;événement sera transformé en message à cette date.
 
-Nous vous conseillons de remplir les attributs @wishedChannel et @emailFormat avec des valeurs numériques. La table de correspondance entre les valeurs numériques et les labels associés se trouve dans la description des schémas de données.
+Nous vous recommandons de renseigner les attributs @wishedChannel et @emailFormat avec des valeurs numériques. La table des fonctions qui lie les valeurs numériques et les libellés se trouve dans la description du schéma de données.
 
 >[!NOTE]
 >
@@ -153,11 +153,11 @@ Exemple de données :
 
 ## Informations retournées par l&#39;appel SOAP {#information-returned-by-the-soap-call}
 
-Lors de la réception d&#39;un événement, Adobe Campaign génère un identifiant unique de retour. Il correspond à l&#39;identifiant de la version historisée de l&#39;événement.
+Lorsqu’il reçoit un événement, Adobe Campaign génère un identifiant de retour unique. Il s’agit de l’identifiant de la version archivée de l’événement.
 
 >[!IMPORTANT]
 >
->Lors de la réception d&#39;appels SOAP, Adobe Campaign vérifie le format des adresses email. Si une adresse e-mail n&#39;est pas correctement mise en forme, une erreur est renvoyée.
+>Lors de la réception d’appels SOAP, Adobe Campaign vérifie le format des adresses e-mail. Si une adresse e-mail n’est pas correctement formatée, une erreur est renvoyée.
 
 * Exemple d&#39;identifiant renvoyé par la méthode lorsque le traitement d&#39;un événement a réussi :
 

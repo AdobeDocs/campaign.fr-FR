@@ -5,8 +5,8 @@ description: En savoir plus sur le package Web Analytics
 feature: Workflows, Analytics Integration
 version: Campaign v8, Campaign Classic v7
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '172'
+workflow-type: tm+mt
+source-wordcount: '177'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
   <tr> 
    <td> <span class="uicontrol">Envoi des indicateurs et des attributs de campagne</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsSendMetrics</span> <br /> </td> 
-   <td> Ce workflow permet d'envoyer les indicateurs des campagnes par e-mail d'Adobe Campaign à Adobe Experience Cloud Suite via le connecteur Adobe® Analytics. Les indicateurs concernés sont les suivants : <strong>Envoyés</strong> (iSent), <strong>Nombre total d'ouvertures</strong> (iTotalRecipientOpen), <strong>Nombre total de destinataires ayant cliqué</strong> (iTotalRecipientClick), <strong>Erreurs</strong> (iError), <strong>Opt-Out</strong> (opt-out) (iOptOut).<br /> </td> 
+   <td> Ce workflow permet d'envoyer les indicateurs des campagnes par e-mail d'Adobe Campaign vers Adobe Experience Cloud Suite via le connecteur Adobe® Analytics. Les indicateurs concernés sont les suivants : <strong>Envoyés</strong> (iSent), <strong>Nombre total d'ouvertures</strong> (iTotalRecipientOpen), <strong>Nombre total de destinataires ayant cliqué</strong> (iTotalRecipientClick), <strong>Erreurs</strong> (iError), <strong>Opt-Out</strong> (opt-out) (iOptOut).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Identification des contacts convertis</span> <br /> </td> 

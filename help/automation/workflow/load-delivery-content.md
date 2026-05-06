@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 08febcbc-1703-4d36-89e1-32c903618084
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '332'
-ht-degree: 100%
+ht-degree: 62%
 
 ---
 
@@ -19,7 +19,7 @@ Si le contenu de votre diffusion figure dans un fichier HTML qui se trouve sur u
 
 Pour cela :
 
-1. Si vous n’avez pas encore défini de connexion entre Adobe Campaign et le serveur FTP ou SFTP hébergeant les fichiers de contenu, créez un compte externe S3, FTP ou SFTP dans **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Comptes externes]**. Dans ce compte externe, indiquez l’adresse et les informations d’identification qui permettront d’établir la connexion au serveur S3, FTP ou SFTP.
+1. Si vous n’avez pas encore défini de connexion entre Adobe Campaign et le serveur FTP ou SFTP hébergeant les fichiers de contenu, créez un compte externe S3, FTP ou SFTP dans **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Comptes externes]**. Spécifiez dans ce compte externe l&#39;adresse et les informations d&#39;identification utilisées pour établir la connexion au serveur S3 ou (S)FTP.
 
    Voici un exemple d&#39;un compte externe S3 :
 
@@ -33,11 +33,11 @@ Pour cela :
 
    ![](assets/delivery_loadcontent_filetransfertexample.png)
 
-1. Ajoutez une activité **[!UICONTROL Diffusion]** et reliez-la à la transition sortante de l&#39;activité **[!UICONTROL Transfert de fichier]**. Configurez-la de la manière suivante :
+1. Ajoutez une activité **[!UICONTROL Diffusion]** et connectez-la à la transition sortante de l&#39;activité **[!UICONTROL Transfert de fichier]**. Configurez-le comme suit :
 
    * Diffusion : selon vos besoins, il peut s&#39;agir d&#39;une diffusion spécifique qui a déjà été créée dans le système ou d&#39;une nouvelle diffusion reposant sur un modèle existant.
    * Destinataires : dans cet exemple, la cible est spécifiée dans la diffusion elle-même.
-   * Contenu : même si le contenu est importé dans l&#39;activité précédente, sélectionnez **[!UICONTROL Spécifié dans la diffusion]**. Comme le contenu est directement importé d&#39;un fichier se trouvant sur un serveur distant, il n&#39;a pas d&#39;identifiant lors du traitement par le workflow et ne peut pas être identifié comme provenant de l&#39;événement entrant.
+   * Contenu : Même si le contenu est importé dans l&#39;activité précédente, sélectionnez **[!UICONTROL Spécifié dans la diffusion]**. Comme le contenu est importé directement à partir d&#39;un fichier situé sur un serveur distant, il n&#39;a pas d&#39;identifiant lorsqu&#39;il est traité par le workflow et ne peut pas être identifié comme provenant de l&#39;événement entrant.
    * Action à effectuer : sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la diffusion et y accéder depuis **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Diffusions]** une fois le workflow exécuté.
 
    ![](assets/delivery_loadcontent_activityexample.png)

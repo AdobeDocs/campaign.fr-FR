@@ -9,8 +9,8 @@ level: Experienced
 exl-id: 00d39438-a232-49f1-ae5e-1e98c73397e3
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 77%
+source-wordcount: '744'
+ht-degree: 80%
 
 ---
 
@@ -170,7 +170,7 @@ Dans la réponse, le champ &quot;status&quot; vous permet de savoir si l’évé
 
 * **pending** : l’événement est en attente ; il se trouve dans cet état lorsqu’il vient d’être déclenché.
 * **processing** : l’événement est en attente de diffusion ; il est transformé en message et ce message est envoyé.
-* **paused** : le processus d’événement est en pause. Il n’est plus traité, mais conservé dans une file d’attente, dans la base de données Adobe Campaign.
+* **paused** : le processus d’événement est en pause. L’événement n’est plus traité, mais il est conservé dans une file d’attente, dans la base de données Adobe Campaign.
 * **processed** : l’événement a été traité et le message a bien été envoyé.
 * **ignored** : l’événement a été ignoré par la diffusion, généralement lorsqu’une adresse est en quarantaine.
 * **deliveryFailed** : une erreur de diffusion s’est produite pendant le traitement de l’événement.
