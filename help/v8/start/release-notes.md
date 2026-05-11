@@ -30,7 +30,7 @@ _3 mai 2026_
 
 >[!NOTE]
 >
-> Les correctifs répertoriés ci-dessous ont été progressivement déployés sur plusieurs versions 8.9.2 successives. Accédez au **[!UICONTROL menu Aide > À propos...]** [](upgrades.md#version) pour vérifier que vous disposez de la version 8.9.2 (11d1c68) la plus récente. Pour plus d’informations, contactez votre représentant Adobe.
+> Les correctifs répertoriés ci-dessous ont été progressivement déployés sur plusieurs versions 8.9.2 successives. Accédez au **[!UICONTROL menu Aide > À propos...]** [&#128279;](upgrades.md#version) pour vérifier que vous disposez de la version 8.9.2 (11d1c68) la plus récente. Pour plus d’informations, contactez votre représentant Adobe.
 
 * Correction d’un problème où les dates d’événement dans les événements transactionnels étaient incorrectement définies en raison d’un problème de conversion de type de données, ce qui provoquait des dates incorrectes dans les rapports dynamiques. (NEO-93923)
 * Correction d’un problème en raison duquel les notifications push silencieuses d’Android et d’iOS échouaient lors de la préparation de la diffusion lorsque les champs de titre et de corps étaient vides. (NEO-93739)
@@ -112,7 +112,7 @@ Cette version est fournie avec un ensemble de fonctionnalités disponibles dans 
 * [Activité de diffusion au fil de l&#39;eau](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
 * [Gestion de la validation des campagnes](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
-Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Campaign ](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}[
+Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Campaign [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}
 
 ### Améliorations de la sécurité {#security-8-9-1}
 
