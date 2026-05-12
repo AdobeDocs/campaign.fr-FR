@@ -6,9 +6,12 @@ feature: Workflows, Targeting Activity
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: f79a979d-bd1d-4a86-8844-563886692941
-source-git-commit: f616f92e31abd51e3544f848ce272e80389aef73
+TQID: https://experienceleague.adobe.com/5MjpLOWpPziNQ7Kg7O2T-HfBNcq8re0Pui8QmyiJKjM
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: 1192
 ht-degree: 85%
 
 ---
@@ -86,7 +89,7 @@ Pour paramétrer une déduplication, vous devez renseigner son libellé, la mét
 
      ![](assets/s_user_segmentation_dedup_param5.png)
 
-   * **[!UICONTROL Valeur non vide]** : permet de conserver en priorité les enregistrements pour lesquels la valeur de l&#39;expression sélectionnée n&#39;est pas vide.
+   * **[!UICONTROL Valeur non vide]** : permet de conserver en priorité les enregistrements pour lesquels la valeur de l’expression sélectionnée n’est pas vide.
 
      ![](assets/s_user_segmentation_dedup_param6.png)
 

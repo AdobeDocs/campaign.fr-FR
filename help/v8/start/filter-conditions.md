@@ -6,9 +6,13 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 18e49a15-dbb5-42d6-9379-367e769f319a
-source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
+TQID: https://experienceleague.adobe.com/MvYtphJPgDXOp9-CR3rhTYNazED3seRZxt89W29PJlI
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '3512'
+source-wordcount: 3512
 ht-degree: 90%
 
 ---
@@ -35,7 +39,7 @@ Voici une liste descriptive des opérateurs disponibles :
  </thead> 
  <tbody> 
   <tr> 
-   <td> <span class="uicontrol">Egal à</span> <br /> </td> 
+   <td> <span class="uicontrol">Égal à</span> <br /> </td> 
    <td> Retrouver un résultat rigoureusement identique à ce qui est entré dans la seconde colonne Valeur.<br /> </td> 
    <td> <strong>Nom (@lastName) égal à 'Martin'</strong>. Ici ne seront retournés que les destinataires dont le nom est 'Martin', avec les seuls caractères indiqués.<br /> </td> 
   </tr> 
@@ -566,33 +570,33 @@ Il permet de sélectionner des champs dans les tables de la base de données et 
   </tr> 
   <tr> 
    <td> <strong>AddDays</strong><br /> </td> 
-   <td> Ajoute un nombre de jours à une date<br /> </td> 
-   <td> AddDays(&lt;date&gt;, &lt;nombre&gt;)<br /> </td>  
+   <td> Ajoute un nombre de jours à une date.<br /> </td> 
+   <td> AddDays(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>AddHours</strong><br /> </td> 
-   <td> Ajoute un nombre d'heures à une date<br /> </td> 
-   <td> AddHours(&lt;date&gt;, &lt;nombre&gt;)<br /> </td>  
+   <td> Ajoute un nombre d’heures à une date.<br /> </td> 
+   <td> AddHours(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>AddMinutes</strong><br /> </td> 
-   <td> Ajoute un nombre de minutes à une date<br /> </td> 
-   <td> AddMinutes(&lt;date&gt;, &lt;nombre&gt;)<br /> </td>  
+   <td> Ajoute un nombre de minutes à une date.<br /> </td> 
+   <td> AddMinutes(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>AddMonths</strong><br /> </td> 
-   <td> Ajoute un nombre de mois à une date<br /> </td> 
-   <td> AddMonths(&lt;date&gt;, &lt;nombre&gt;)<br /> </td>  
+   <td> Ajoute un nombre de mois à une date.<br /> </td> 
+   <td> AddMonths(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>AddSeconds</strong><br /> </td> 
-   <td> Ajoute un nombre de secondes à une date<br /> </td> 
-   <td> AddSeconds(&lt;date&gt;, &lt;nombre&gt;)<br /> </td>  
+   <td> Ajoute un nombre de secondes à une date.<br /> </td> 
+   <td> AddSeconds(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>AddYears</strong><br /> </td> 
-   <td> Ajoute un nombre d'années à une date<br /> </td> 
-   <td> AddYears(&lt;date&gt;, &lt;nombre&gt;)<br /> </td>  
+   <td> Ajoute un nombre d’années à une date.<br /> </td> 
+   <td> AddYears(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DateOnly</strong><br /> </td> 
@@ -600,8 +604,8 @@ Il permet de sélectionner des champs dans les tables de la base de données et 
    <td> DateOnly(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Jour</strong><br /> </td> 
-   <td> Renvoie le nombre représentant le jour de la date<br /> </td> 
+   <td> <strong>Day</strong><br /> </td> 
+   <td> Renvoie le nombre représentant le jour de la date.<br /> </td> 
    <td> Day(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -612,171 +616,171 @@ Il permet de sélectionner des champs dans les tables de la base de données et 
   <tr> 
    <td> <strong>DaysAgo</strong><br /> </td> 
    <td> Renvoie la date correspondant à la date courante moins n jours<br /> </td> 
-   <td> DaysAgo(&lt;nombre&gt;)<br /> </td>  
+   <td> DaysAgo(&lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysAgoInt</strong><br /> </td> 
    <td> Renvoie la date (entier aaaammjj) correspondant à la date courante moins n jours<br /> </td> 
-   <td> DaysAgoInt(&lt;nombre&gt;)<br /> </td>  
+   <td> DaysAgoInt(&lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysDiff</strong><br /> </td> 
-   <td> Nombre de jours entre deux dates<br /> </td> 
-   <td> DaysDiff(&lt;date de fin&gt;, &lt;date de début&gt;)<br /> </td>  
+   <td> Nombre de jours entre deux dates<br /> </td> 
+   <td> DaysDiff(&lt;end date&gt;, &lt;start date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysOld</strong><br /> </td> 
-   <td> Renvoie l'ancienneté en jours d'une date<br /> </td> 
+   <td> Renvoie l’ancienneté en jours d’une date.<br /> </td> 
    <td> DaysOld(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>GetDate</strong><br /> </td> 
-   <td> Renvoie la date système courante du serveur<br /> </td> 
+   <td> Renvoie la date système courante du serveur.<br /> </td> 
    <td> GetDate()<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Hour</strong><br /> </td> 
-   <td> Renvoie l'heure de la date<br /> </td> 
+   <td> Renvoie l’heure de la date.<br /> </td> 
    <td> Hour(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>HoursDiff</strong><br /> </td> 
-   <td> Renvoie le nombre d'heures entre deux dates<br /> </td> 
-   <td> HoursDiff(&lt;date de fin&gt;, &lt;date de début&gt;)<br /> </td>  
+   <td> Renvoie le nombre d’heures entre deux dates.<br /> </td> 
+   <td> HoursDiff(&lt;end date&gt;, &lt;start date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Minute</strong><br /> </td> 
-   <td> Renvoie les minutes de la date<br /> </td> 
+   <td> Renvoie les minutes de la date.<br /> </td> 
    <td> Minute(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>MinutesDiff</strong><br /> </td> 
-   <td> Renvoie le nombre de minutes entre deux dates<br /> </td> 
-   <td> MinutesDiff(&lt;date de fin&gt;, &lt;date de début&gt;)<br /> </td>  
+   <td> Renvoie le nombre de minutes entre deux dates.<br /> </td> 
+   <td> MinutesDiff(&lt;end date&gt;, &lt;start date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Month</strong><br /> </td> 
-   <td> Renvoie le nombre représentant le mois de la date<br /> </td> 
+   <td> Renvoie le nombre représentant le mois de la date.<br /> </td> 
    <td> Month(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>MonthsAgo</strong><br /> </td> 
-   <td> Renvoie la date correspondant à la date courante moins n mois<br /> </td> 
-   <td> MonthsAgo(&lt;nombre&gt;)<br /> </td>  
+   <td> Renvoie la date correspondant à la date courante moins n mois.<br /> </td> 
+   <td> MonthsAgo(&lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>MonthsDiff</strong><br /> </td> 
-   <td> Renvoie le nombre de mois entre deux dates<br /> </td> 
-   <td> MonthsDiff(&lt;date de fin&gt;, &lt;date de début&gt;)<br /> </td>  
+   <td> Renvoie le nombre de mois entre deux dates.<br /> </td> 
+   <td> MonthsDiff(&lt;end date&gt;, &lt;start date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>MonthsOld</strong><br /> </td> 
-   <td> Renvoie l'ancienneté en mois d'une date<br /> </td> 
+   <td> Renvoie l’ancienneté en mois d’une date.<br /> </td> 
    <td> MonthsOld(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Second</strong><br /> </td> 
-   <td> Renvoie les secondes de la date<br /> </td> 
+   <td> Renvoie les secondes de la date.<br /> </td> 
    <td> Second(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>SecondsDiff</strong><br /> </td> 
-   <td> Renvoie le nombre de secondes entre deux dates<br /> </td> 
-   <td> SecondsDiff(&lt;date de fin&gt;, &lt;date de début&gt;)<br /> </td>  
+   <td> Renvoie le nombre de secondes entre deux dates.<br /> </td> 
+   <td> SecondsDiff(&lt;end date&gt;, &lt;start date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>SubDays</strong><br /> </td> 
-   <td> Enlève un nombre de jours à une date<br /> </td> 
-   <td> SubDays(&lt;date&gt;, &lt;nombre&gt;)<br /> </td>  
+   <td> Enlève un nombre de jours à une date.<br /> </td> 
+   <td> SubDays(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>SubHours</strong><br /> </td> 
-   <td> Enlève un nombre d'heures à une date<br /> </td> 
-   <td> SubHours(&lt;date&gt;, &lt;nombre&gt;)<br /> </td>  
+   <td> Enlève un nombre d’heures à une date.<br /> </td> 
+   <td> SubHours(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>SubMinutes</strong><br /> </td> 
-   <td> Enlève un nombre de minutes à une date<br /> </td> 
-   <td> SubMinutes(&lt;date&gt;, &lt;nombre&gt;)<br /> </td>  
+   <td> Enlève un nombre de minutes à une date.<br /> </td> 
+   <td> SubMinutes(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>SubMonths</strong><br /> </td> 
-   <td> Enlève un nombre de mois à une date<br /> </td> 
-   <td> SubMonths(&lt;date&gt;, &lt;nombre&gt;)<br /> </td>  
+   <td> Enlève un nombre de mois à une date.<br /> </td> 
+   <td> SubMonths(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>SubSeconds</strong><br /> </td> 
-   <td> Enlève un nombre de secondes à une date<br /> </td> 
-   <td> SubSeconds(&lt;date&gt;, &lt;nombre&gt;)<br /> </td>  
+   <td> Enlève un nombre de secondes à une date.<br /> </td> 
+   <td> SubSeconds(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>SubYears</strong><br /> </td> 
-   <td> Enlève un nombre d'années à une date<br /> </td> 
-   <td> SubYears(&lt;date&gt;, &lt;nombre&gt;)<br /> </td>  
+   <td> Enlève un nombre d’années à une date.<br /> </td> 
+   <td> SubYears(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>ToDate</strong><br /> </td> 
-   <td> Convertit une date + heure en date seule<br /> </td> 
-   <td> ToDate(&lt;date + heure&gt;)<br /> </td>  
+   <td> Convertit une date + heure en date seule.<br /> </td> 
+   <td> ToDate(&lt;date + time&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>ToDateTime</strong><br /> </td> 
-   <td> Convertit une chaîne en date + heure<br /> </td> 
-   <td> ToDateTime(&lt;chaîne&gt;)<br /> </td>  
+   <td> Convertit une chaîne en date + heure.<br /> </td> 
+   <td> ToDateTime(&lt;string&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>TruncDate</strong><br /> </td> 
-   <td> Arrondit une date + heure à la seconde<br /> </td> 
-   <td> TruncDate(@lastModified, &lt;nombre de secondes&gt;)<br /> </td> 
+   <td> Arrondit une date + heure à la seconde.<br /> </td> 
+   <td> TruncDate(@lastModified, &lt;number of seconds&gt;)<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>TruncDateTZ</strong><br /> </td> 
-   <td> Arrondit une date + heure à la seconde près<br /> </td> 
-   <td> TruncDateTZ(&lt;date&gt;, &lt;nombre de secondes&gt;, &lt;fuseau horaire&gt;)<br /> </td> 
+   <td> Arrondit une date + heure à la seconde près.<br /> </td> 
+   <td> TruncDateTZ(&lt;date&gt;, &lt;number of seconds&gt;, &lt;time zone&gt;)<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>TruncQuarter</strong><br /> </td> 
-   <td> Arrondit une date au trimestre<br /> </td> 
+   <td> Arrondit une date au trimestre.<br /> </td> 
    <td> TruncQuarter(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>TruncTime</strong><br /> </td> 
-   <td> Arrondit la partie heure à la seconde<br /> </td> 
+   <td> Arrondit la partie heure à la seconde.<br /> </td> 
    <td> TruncTim(e&lt;date&gt;, &lt;nombre de secondes&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>TruncWeek</strong><br /> </td> 
-   <td> Arrondit une date à la semaine<br /> </td> 
+   <td> Arrondit une date à la semaine.<br /> </td> 
    <td> TruncWeek(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>TruncYear</strong><br /> </td> 
-   <td> Arrondit une date + heure au premier janvier de l'année<br /> </td> 
+   <td> Arrondit une date + heure au 1er janvier de l’année.<br /> </td> 
    <td> TruncYear(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>TruncWeek</strong><br /> </td> 
-   <td> Renvoie le numéro du jour dans la semaine de la date<br /> </td> 
+   <td> Renvoie le numéro du jour dans la semaine de la date.<br /> </td> 
    <td> WeekDay(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Year</strong><br /> </td> 
-   <td> Renvoie le nombre représentant l'année de la date<br /> </td> 
+   <td> Renvoie le nombre représentant l’année de la date.<br /> </td> 
    <td> Year(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>YearAnd Month</strong><br /> </td> 
-   <td> Renvoie le nombre représentant l'année et le mois de la date<br /> </td> 
+   <td> Renvoie le nombre représentant l’année et le mois de la date.<br /> </td> 
    <td> YearAndMonth(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>YearsDiff</strong><br /> </td> 
-   <td> Renvoie le nombre d'années entre deux dates<br /> </td> 
-   <td> YearsDiff(&lt;date de fin&gt;, &lt;date de début&gt;)<br /> </td>  
+   <td> Renvoie le nombre d’années entre deux dates.<br /> </td> 
+   <td> YearsDiff(&lt;end date&gt;, &lt;start date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>YearsOld</strong><br /> </td> 
-   <td> Renvoie l'ancienneté en années d'une date<br /> </td> 
+   <td> Renvoie l’ancienneté en années d’une date.<br /> </td> 
    <td> YearsOld(&lt;date&gt;)<br /> </td>  
   </tr> 
  </tbody> 
@@ -917,7 +921,7 @@ Il permet de sélectionner des champs dans les tables de la base de données et 
    <td> <strong>Syntaxe</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Casse</strong><br /> </td> 
+   <td> <strong>Case</strong><br /> </td> 
    <td> Renvoie la valeur 1 si la condition est vérifiée. Sinon, renvoie la valeur 2.<br /> </td> 
    <td> Case(When(&lt;condition&gt;, &lt;valeur 1&gt;), Else(&lt;valeur 2&gt;))<br /> </td> 
   </tr> 

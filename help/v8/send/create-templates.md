@@ -6,9 +6,14 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: 08e04f3642320df94d719a415e878e3a26d2e00f
+TQID: https://experienceleague.adobe.com/bgnDExQAdWAsulXRjLGA46VthqPYWfNZRJ66C4ppF9M
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: 1070
 ht-degree: 95%
 
 ---
@@ -141,18 +146,18 @@ Cette action génère une diffusion dans le dossier associé au modèle. Le nom 
 
 La vidéo suivante montre comment configurer un modèle pour une diffusion ad hoc.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409245?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342082?quality=12)
 
 ### Comment configurer les propriétés des modèles de diffusion
 
 La vidéo suivante montre comment définir les propriétés des modèles de diffusion et explique en détail chaque propriété.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443403?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/338969?quality=12)
 
 ### Comment déployer un modèle de diffusion ad hoc
 
 Cette vidéo montre comment déployer un modèle de diffusion email ad hoc. Elle explique aussi la différence entre une diffusion email et un workflow de diffusion.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444959?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
 
 D’autres vidéos pratiques sur Campaign sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=fr){target="_blank"}.

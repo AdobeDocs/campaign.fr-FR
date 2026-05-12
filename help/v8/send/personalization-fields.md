@@ -6,9 +6,14 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 14a741dd-794e-4760-bfa3-bafbe993a3f7
-source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
+TQID: https://experienceleague.adobe.com/9TZEv5GZwgyl5SJkod5GRaWGgMJMls3iNSVqE09BT7M
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: 338
 ht-degree: 83%
 
 ---
@@ -65,4 +70,4 @@ Dans le cas d’utilisation ci-dessous, apprenez à personnaliser l’objet et l
 
 Dans la vidéo suivante, découvrez comment ajouter un champ de personnalisation à la ligne d’objet et au contenu d’une diffusion e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/30950?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)

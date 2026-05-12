@@ -6,10 +6,14 @@ feature: Workflows, Data Management
 role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 13f0091b-b62c-47df-9658-6631ba1cf03a
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+TQID: https://experienceleague.adobe.com/vIpmjGcrExOXwjT5E81kTdPKSzs79XZumZDKU-hWqSI
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 71%
+source-wordcount: 1146
+ht-degree: 82%
 
 ---
 
@@ -34,7 +38,7 @@ Cet exemple montre comment pré-paramétrer un workflow qui pourra être réutil
 
 1. Configurez l&#39;activité **[!UICONTROL Chargement (fichier)]** :
 
-   * Définissez la structure attendue en chargeant un exemple de fichier. L’exemple de fichier doit contenir uniquement quelques lignes, mais toutes les colonnes nécessaires à l’importation. Vérifiez et modifiez le format du fichier pour vous assurer que le type de chaque colonne est correctement défini : texte, date, entier, etc. Par exemple :
+   * Définissez la structure attendue du fichier en chargeant un exemple de fichier. Il ne doit contenir que quelques lignes, mais toutes les colonnes nécessaires à l’import doivent y figurer. Vérifiez et modifiez le format du fichier pour vous assurer que le type de chaque colonne est correctement défini : texte, date, entier, etc. Par exemple :
 
      ```
      lastname;firstname;birthdate;email;crmID
@@ -56,7 +60,7 @@ Cet exemple montre comment pré-paramétrer un workflow qui pourra être réutil
 
 1. Configurez l&#39;activité de **[!UICONTROL Partage]** pour récupérer les destinataires réconciliés dans une transition, et les destinataires qui n&#39;ont pas pu être réconciliés mais qui disposent de suffisamment de données dans une autre transition.
 
-   La transition avec des destinataires réconciliés peut ensuite être utilisée pour mettre à jour la base de données. La transition avec des destinataires inconnus peut ensuite être utilisée pour créer de nouvelles entrées de destinataires dans la base de données si un ensemble minimum d&#39;informations est disponible dans le fichier.
+   La transition des personnes destinataires réconciliées peut alors être utilisée pour mettre à jour la base de données. La transition des personnes destinataires inconnues peut servir à créer de nouvelles entrées de destinataires dans la base de données si un ensemble d’informations minimum est disponible dans le fichier.
 
    Les destinataires ne pouvant pas être réconciliés et ne disposant pas de suffisamment de données sont sélectionnés dans une transition sortante complémentaire et peuvent être exportés dans un fichier séparé ou tout simplement ignorés.
 
@@ -90,7 +94,7 @@ Cet exemple montre comment pré-paramétrer un workflow qui pourra être réutil
 
      ![](assets/import_template_example4.png)
 
-   * Dans cet exemple, le champ e-mail est utilisé pour rechercher des profils uniques. Vous pouvez utiliser n’importe quel champ dont vous êtes sûr qu’il est rempli et qu’il fait partie d’une combinaison unique.
+   * Dans cet exemple, le champ d’e-mail est utilisé pour trouver les profils uniques. Vous pouvez utiliser n’importe quel champ dont vous avez la certitude qu’il est rempli et qu’il fait partie d’une combinaison unique.
    * Dans l&#39;écran **[!UICONTROL Méthode de déduplication]**, sélectionnez **[!UICONTROL Paramètres avancés]** et cochez l&#39;option **[!UICONTROL Désactiver le filtrage automatique des enregistrements d&#39;identifiant 0]** pour veiller à ce que les enregistrements dont la clé primaire est égale à 0 (normalement, tous les enregistrements de cette transition) sont exclus.
 
    ![](assets/import_template_example7.png)
