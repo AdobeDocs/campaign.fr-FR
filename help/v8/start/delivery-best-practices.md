@@ -6,10 +6,25 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
+TQID: https://experienceleague.adobe.com/20Kh0O94OY8Vpy5SmhVUUgVOCkWy7DNZiJko3EeOx-E
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '3188'
-ht-degree: 84%
+source-wordcount: 3188
+ht-degree: 92%
 
 ---
 
@@ -73,7 +88,7 @@ La maintenance régulière de vos diffusions est essentielle pour optimiser les 
 
 ### Mécanisme de double opt-in {#double-opt-in}
 
-Pour éviter d&#39;envoyer des messages à des adresses non valides, limiter les communications abusives et améliorer la réputation de l&#39;expéditeur, Adobe recommande de mettre en œuvre un mécanisme de double opt-in pour la confirmation après abonnement. Cela permet de s’assurer qu’un destinataire s’est abonné intentionnellement.
+Pour éviter d’envoyer des messages à des adresses non valides, limiter les communications abusives et améliorer la réputation de l’entité expéditrice, Adobe recommande de mettre en place un mécanisme de double opt-in pour la confirmation post-abonnement. Cela permet de s’assurer que les destinataires s’abonnent intentionnellement.
 
 ## Utilisation de modèles {#use-templates}
 
@@ -81,7 +96,7 @@ Les modèles de diffusion accroissent l’efficacité en offrant des configurati
 
 ### Sous-domaines et branding {#subdomains-and-branding}
 
-Si vous gérez plusieurs marques dans Adobe Campaign, Adobe recommande de disposer d’un sous-domaine par marque. Une banque peut, par exemple, avoir plusieurs sous-domaines qui correspondent à chacune de ses agences régionales. Si une banque possède le domaine bluebank.com, ses sous-domaines peuvent être @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com, etc. Disposer d’un modèle de diffusion par sous-domaine vous permet de toujours utiliser les paramètres préconfigurés adéquats pour chaque marque, ce qui évite les erreurs et vous fait gagner du temps. En savoir plus sur le branding de sous-domaines dans la [documentation du Panneau de contrôle de Campaign](https://experienceleague.adobe.com/fr/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
+Si vous gérez plusieurs marques dans Adobe Campaign, Adobe recommande de disposer d’un sous-domaine par marque. Une banque peut, par exemple, avoir plusieurs sous-domaines qui correspondent à chacune de ses agences régionales. Si une banque possède le domaine bluebank.com, ses sous-domaines peuvent être @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com, etc. Disposer d’un modèle de diffusion par sous-domaine vous permet de toujours utiliser les paramètres préconfigurés adéquats pour chaque marque et d’éviter ainsi des erreurs tout en gagnant du temps. En savoir plus sur le branding de sous-domaines dans la [documentation du Panneau de contrôle de Campaign](https://experienceleague.adobe.com/fr/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
 
 ### Configurer les adresses {#configure-addresses}
 
@@ -89,8 +104,8 @@ Veillez à appliquer les directives suivantes :
 
 * L&#39;adresse de l&#39;expéditeur est obligatoire pour permettre l&#39;envoi d&#39;un email. Certains FAI vérifient la validité de l’adresse de l’expéditeur avant d’accepter les messages.
 * Une adresse erronée peut causer un refus de la part du serveur receveur. Vous devez vous assurer qu’une adresse correcte est bien renseignée.
-* L’adresse doit identifier explicitement l’expéditeur. Le domaine doit appartenir à l’expéditeur et lui être enregistré.
-* Adobe recommande la création de comptes e-mail qui correspondent aux adresses spécifiées pour les diffusions et les réponses. Vérifiez auprès de votre administrateur système de messagerie.
+* L’adresse doit identifier explicitement l’expéditeur ou l’expéditrice. Le domaine doit appartenir à l’expéditeur ou à l’expéditrice et être enregistré en son nom.
+* Adobe recommande de créer des comptes e-mail qui correspondent aux adresses indiquées pour les diffusions et les réponses. Parlez-en avec l’administrateur ou l’administratrice de votre messagerie.
 
 +++ **Étapes de configuration des adresses dans l’interface utilisateur de Campaign**
 
@@ -116,7 +131,7 @@ Une typologie contient les règles de vérification qui sont appliquées lors de
 
 Dans l’onglet **[!UICONTROL Typologie]** des propriétés du modèle, vous pouvez sélectionner une typologie personnalisée si nécessaire.
 
-Par exemple, pour mieux contrôler le trafic sortant, vous pouvez définir quelles adresses IP peuvent être utilisées en définissant une affinité par sous-domaine et en créant une typologie par affinité. Les affinités sont définies dans le fichier de configuration de l’instance. Contactez votre administrateur Adobe Campaign.
+Pour mieux contrôler le trafic sortant, par exemple, vous pouvez définir quelles adresses IP peuvent être utilisées en spécifiant une affinité par sous-domaine et en créant une typologie par affinité. Celles-ci sont définies dans le fichier de configuration de l’instance. Contactez votre administrateur ou administratrice Adobe Campaign.
 
 Pour plus d’informations sur les typologies, consultez [cette section](../../automation/campaign-opt/campaign-typologies.md).
 
@@ -291,7 +306,7 @@ La population ciblée est essentielle : créez soigneusement vos listes, testez
 
 Lorsque votre contenu est prêt, vous devez soigneusement définir qui recevra votre message.
 
-Pour réussir votre diffusion, vous devez envoyer le contenu personnalisé le plus pertinent aux bons destinataires. Adobe Campaign permet de construire la cible la plus précise : vous pouvez sélectionner les destinataires en fonction de leur âge, de leur localisation, de ce qu&#39;ils ont acheté, s&#39;ils ont cliqué sur un lien dans une diffusion précédente, etc. Avec Adobe Campaign, vous pouvez également définir des profils de test, des populations témoins et des adresses de contrôle pour vous assurer que votre cible est correcte.
+Pour réussir votre diffusion, vous devez envoyer le contenu personnalisé le plus pertinent aux bons destinataires. Adobe Campaign vous permet de créer la cible la plus précise qui soit : vous pouvez sélectionner les personnes destinataires selon leur âge, leur emplacement géographique, leurs achats ou selon qu’elles ont cliqué ou non sur un lien dans une diffusion précédente, par exemple. Avec Adobe Campaign, vous pouvez également définir des profils de test, des groupes de contrôle et des adresses de contrôle pour vous assurer que votre ciblage est correct.
 
 ### Mappings de ciblage {#target-mappings}
 

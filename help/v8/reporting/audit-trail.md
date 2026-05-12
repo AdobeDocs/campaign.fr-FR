@@ -4,9 +4,18 @@ title: Journal d’audit
 description: Découvrez comment surveiller votre instance à lʼaide du journal dʼaudit Campaign
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 6a937575-42d4-4dc5-8168-43c25bb2cde6
-source-git-commit: b4b361a4aabd1b33554166c2638989b99a02baec
+TQID: https://experienceleague.adobe.com/0a5LrtW8EomSlw-mLwLTplBpEPovWLC-sXFdoSQYhV0
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: 664
 ht-degree: 100%
 
 ---
@@ -81,7 +90,7 @@ Pour accéder au **[!UICONTROL journal d’audit]** de votre instance, procédez
 
    ![](assets/audit-trail-1.png)
 
-1. La fenêtre **[!UICONTROL Journal d’audit]** s’ouvre avec la liste de vos entités. Adobe Campaign effectuera l’audit des actions de création, de modification et de suppression pour vos différentes entités.
+1. La fenêtre **[!UICONTROL Journal d&#39;audit]** s’ouvre avec la liste de vos entités. Adobe Campaign effectuera l’audit des actions de création, de modification et de suppression pour vos différentes entités.
 
    Sélectionnez l’une des entités pour en savoir plus sur les dernières modifications.
 
