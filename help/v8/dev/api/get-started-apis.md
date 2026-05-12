@@ -8,10 +8,15 @@ role: Developer
 level: Experienced
 exl-id: c6968252-a012-4029-bbb8-66f4f693e99b
 TQID: https://experienceleague.adobe.com/RRDY-7SFGUwxHk34LLhRHaFN-0U4A9NQfNvLPXO8GM8
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: d5ef99fa-df0c-4153-bf94-105ad0724167
-subfeature_v2: id: bf97c196-a4d1-4fa3-a151-e68a114c8ac0
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: b12f6872-9271-4369-85e5-86969a0b99a2
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2:
+  - id: bf97c196-a4d1-4fa3-a151-e68a114c8ac0
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 240
@@ -25,7 +30,7 @@ Les API REST Campaign ont pour but de vous permettre **de créer des intégratio
 
 >[!AVAILABILITY]
 >
->* Cette fonctionnalité est disponible uniquement à la demande, pour tous les [environnements FDA Campaign](../../architecture/fda-deployment.md). Il n’est **pas** disponible pour les déploiements [ Entreprise (FFDA)](../../architecture/enterprise-deployment.md). Pour y accéder, contactez votre représentant ou représentante Adobe.
+>* Cette fonctionnalité est disponible uniquement à la demande, pour tous les [environnements FDA Campaign](../../architecture/fda-deployment.md). Il n’est **pas** disponible pour les déploiements [&#x200B; Entreprise (FFDA)](../../architecture/enterprise-deployment.md). Pour y accéder, contactez votre représentant ou représentante Adobe.
 >
 >* Avant d’effectuer des appels aux API, vérifiez les limites de taille correspondant à votre contrat de licence. Pour en savoir plus à ce sujet, consultez la [Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 

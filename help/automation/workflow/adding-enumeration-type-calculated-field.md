@@ -7,9 +7,12 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 4fe2ae81-faa6-4777-a332-70c451bca75b
 TQID: https://experienceleague.adobe.com/SC-bh-Ms6cMAg0YV14vjf0wA-Ijw-D4MY-s4kqWXZiQ
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 519
@@ -56,7 +59,7 @@ Les étapes sont les suivantes :
 
    ![](assets/query_editor_nveau_76.png)
 
-   Définissez les valeurs **** et **Destination** : la valeur de destination facilite la lecture du résultat de la requête. Cette requête doit renvoyer le genre du destinataire et le résultat sera 0, 1 ou 2.
+   Définissez les valeurs **&#x200B;**&#x200B;et **Destination** : la valeur de destination facilite la lecture du résultat de la requête. Cette requête doit renvoyer le genre du destinataire et le résultat sera 0, 1 ou 2.
 
    Pour chaque équivalence &quot;source-destination&quot; à renseigner, cliquez sur **[!UICONTROL Ajouter]** dans le champ **[!UICONTROL Liste des valeurs d&#39;énumérations]** :
 
