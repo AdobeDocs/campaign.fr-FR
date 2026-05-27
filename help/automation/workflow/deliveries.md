@@ -47,8 +47,8 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
    <td> Ce workflow permet de créer la liste des règles de qualification des mails rebonds, ainsi que la liste des domaines et des MX dans la plateforme. Ce workflow ne fonctionne que si le port HTTPS est ouvert. Ces listes ne sont pas mises à jour tant que le module Délivrabilité n'est pas installé.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Nettoyage de la base</span> <br /> </td> 
-   <td> <span class="uicontrol">nettoyage</span> <br /> </td> 
+   <td> <span class="uicontrol">Nettoyage de la base de données</span> <br /> </td> 
+   <td> <span class="uicontrol">cleanup</span> <br /> </td> 
    <td> <p>Ce workflow est le workflow de maintenance de la base de données : il procède aux différents calculs des statistiques et traitements, et supprime les données obsolètes de la base de données selon le paramétrage défini dans l'assistant de déploiement. Par défaut, il se déclenche tous les jours à 4H00.</p></td> 
   </tr> 
   <tr> 
