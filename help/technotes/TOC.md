@@ -31,5 +31,5 @@ ht-degree: 47%
    + [Schémas 64 bits](upgrades/64-bit-tables.md)
    + Sécurité {#security}
       + {hide-from-toc}[Rotation des informations d’identification du client](security/credential-rotation-guide.md)
-      + {hide-from-toc}[ Chiffrement asymétrique ](security/asymetric-encryption.md)
+      + {hide-from-toc}[&#x200B; Chiffrement asymétrique &#x200B;](security/asymetric-encryption.md)
 + [&lt; Retour à la documentation de Campaign v8](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/campaign-home)
