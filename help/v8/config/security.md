@@ -7,10 +7,19 @@ level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 version: Campaign v8, Campaign Classic v7
 TQID: https://experienceleague.adobe.com/u-utzgRutjQjoInyMi2Ow2L2NXyx44P1ru1CLr5Ji5c
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 2987
@@ -37,7 +46,7 @@ Utilisez cette liste de contrôle pour aligner votre configuration avec les vale
 * [Authentification et session](#authentication-and-session) : utiliser Adobe IMS, politique d’identité forte, délai d’expiration de la session
 * [Sécurité des instances et du réseau](#instance-and-network-security) : place sur la liste autorisée IP, autorisations d’URL, clés GPG par Panneau de Contrôle
 * [Protection des données et des PII](#data-and-pii-protection) : HTTPS, limitation de l’affichage des PII, restriction des mots de passe, protection des pages sensibles
-* [Instructions de codage ](#coding-guidelines) : aucun secret codé en dur, validation de l’entrée, SQL paramétré, captchas
+* [Instructions de codage &#x200B;](#coding-guidelines) : aucun secret codé en dur, validation de l’entrée, SQL paramétré, captchas
 * [Restriction des données](#data-restriction) : limitez l’accès aux champs de mot de passe et de secret dans les comptes externes
 * [Opérationnel et conformité](#operational-and-compliance) : comparez régulièrement cette ligne de base et utilisez le journal d’audit
 
@@ -230,7 +239,7 @@ Pour en savoir plus sur les autorisations, consultez [cette section](../start/gs
 
 ## Sécurité des instances et du réseau {#instance-and-network-security}
 
-En tant qu’administrateur ou administratrice de produit Campaign v8, utilisez Panneau de Contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"} pour gérer la sécurité au niveau de l’instance :[
+En tant qu’administrateur ou administratrice de produit Campaign v8, utilisez Panneau de Contrôle Campaign[&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"} pour gérer la sécurité au niveau de l’instance :
 
 * place sur la liste autorisée IP **- Gérez la liste autorisée IP pour l&#39;accès aux instances ; limitez-la aux réseaux connus (par exemple bureau, VPN) et évitez autant que possible les plages trop larges.**
 * **Autorisations d’URL** - Restreignez les autorisations d’URL aux domaines que votre instance doit appeler (API, tracking, services externes) pour réduire le risque d’utilisation abusive des requêtes côté serveur.

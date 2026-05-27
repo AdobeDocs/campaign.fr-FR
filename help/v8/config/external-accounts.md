@@ -6,10 +6,16 @@ role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 TQID: https://experienceleague.adobe.com/15Nn-l031JWcYJAEooiP6ZN4btvuwd9r1soU3a77Jqk
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 2243
@@ -32,7 +38,7 @@ Vous pouvez accéder aux comptes externes à partir de l&#39;**[!UICONTROL Explo
 >
 >* En tant qu’utilisateur ou utilisatrice Managed Cloud Services, les comptes externes sont configurés par Adobe pour votre instance et ne doivent pas être modifiés.
 >
->* Dans le contexte d’un déploiement [ Entreprise (FFDA)](../architecture/enterprise-deployment.md), un compte externe **[!UICONTROL Full FDA]** (ffda) gère la connexion entre la base de données locale Campaign et la base de données cloud ([!DNL Snowflake]).
+>* Dans le contexte d’un déploiement [&#x200B; Entreprise (FFDA)](../architecture/enterprise-deployment.md), un compte externe **[!UICONTROL Full FDA]** (ffda) gère la connexion entre la base de données locale Campaign et la base de données cloud ([!DNL Snowflake]).
 >
 
 ## Comptes externes spécifiques à Campaign {#ac-external-accounts}
@@ -117,18 +123,18 @@ La page de l’interface utilisateur web de Campaign fournit une liste plus comp
 * **[Amazon Redshift](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#amazon-redshift){target="_blank"}** / **[Amazon Redshift (hérité)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#amazon-redshift-legacy){target="_blank"}** : connectez Campaign aux environnements d’entrepôt de données cloud AWS Redshift.
 * **[Azure Synapse Analytics](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#azure-synapse-analytics){target="_blank"}** - Connectez Campaign aux pools SQL dédiés Microsoft Azure Synapse.
 * **[Databricks](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#databricks){target="_blank"}** - Connectez Campaign aux charges de travail SQL et Lakehouse de Databricks.
-* **[BigQuery Google ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#google-bigquery){target="_blank"}** - Connectez Campaign aux jeux de données d’analyse BigQuery Google Cloud.
+* **[BigQuery Google &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#google-bigquery){target="_blank"}** - Connectez Campaign aux jeux de données d’analyse BigQuery Google Cloud.
 * **[Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#microsoft-sql-server){target="_blank"}** - Connectez Campaign à des bases de données SQL Server on-premise ou hébergées.
 * **[MySQL](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#mysql){target="_blank"}** - Connectez Campaign aux bases de données MySQL pour obtenir des requêtes et des workflows fédérés.
-* **[](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#netezza){target="_blank"}** - Connectez Campaign aux systèmes IBM Netezza/Performance Server.
+* **[&#128279;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#netezza){target="_blank"}** - Connectez Campaign aux systèmes IBM Netezza/Performance Server.
 * **[ODBC (Sybase ASE, Sybase IQ)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#odbc-sybase-ase-sybase-iq){target="_blank"}** : connectez Campaign aux moteurs de base de données Sybase via ODBC.
 * **[Relais HTTP vers la base de données distante](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#http-relay-to-remote-database){target="_blank"}** : connectez-vous à une base de données distante par le biais d’un point d’entrée de relais HTTP.
-* **[](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#oracle){target="_blank"}** - Connectez Campaign aux bases de données Oracle pour les cas d’utilisation de l’accès fédéré.
+* **[&#128279;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#oracle){target="_blank"}** - Connectez Campaign aux bases de données Oracle pour les cas d’utilisation de l’accès fédéré.
 * **[PostgreSQL](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#postgresql){target="_blank"}** - Connectez Campaign aux bases de données PostgreSQL à l’aide de comptes externes FDA.
-* **[](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#sap-hana){target="_blank"}** - Connectez Campaign aux environnements de base de données en mémoire de SAP HANA.
-* **[](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#snowflake){target="_blank"}** - Connectez Campaign aux environnements de plateforme de données cloud Snowflake.
-* **[](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#teradata){target="_blank"}** - Connectez Campaign aux systèmes d’entrepôt de données d’entreprise Teradata.
-* **[](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#vertica-analytics){target="_blank"}** - Connectez Campaign aux bases de données d’analyse OpenText Vertica.
+* **[&#128279;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#sap-hana){target="_blank"}** - Connectez Campaign aux environnements de base de données en mémoire de SAP HANA.
+* **[&#128279;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#snowflake){target="_blank"}** - Connectez Campaign aux environnements de plateforme de données cloud Snowflake.
+* **[&#128279;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#teradata){target="_blank"}** - Connectez Campaign aux systèmes d’entrepôt de données d’entreprise Teradata.
+* **[&#128279;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#vertica-analytics){target="_blank"}** - Connectez Campaign aux bases de données d’analyse OpenText Vertica.
 * **[Microsoft Fabric](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#fabric){target="_blank"}** - Connectez Campaign aux services SQL et de stockage Microsoft Fabric.
 
 Pour obtenir des détails sur la console cliente héritée et des références supplémentaires, consultez la documentation de [Adobe Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
@@ -137,7 +143,7 @@ Pour obtenir des détails sur la console cliente héritée et des références s
 
 La connexion FDA Databricks utilise le pilote ODBC Databricks. À partir de la version 8.9.1 de Campaign, les comptes externes Databricks prennent en charge l’authentification OAuth2 via le principal de service (flux d’informations d’identification client non interactif), fournissant une authentification sécurisée pour l’accès aux données fédérées.
 
-En savoir plus sur les principaux de service dans la documentation de [](https://learn.microsoft.com/en-us/azure/databricks/admin/users-groups/service-principals){target="_blank"}.
+En savoir plus sur les principaux de service dans la documentation de [&#128279;](https://learn.microsoft.com/en-us/azure/databricks/admin/users-groups/service-principals){target="_blank"}.
 
 Pour configurer l’authentification OAuth2 via le principal de service dans Campaign :
 
@@ -150,13 +156,13 @@ Pour configurer l’authentification OAuth2 via le principal de service dans Cam
 
 La connexion FDA Snowflake utilise le pilote ODBC Snowflake. À compter de Campaign v8.9.1, les comptes externes Snowflake prennent en charge l’authentification OAuth2, fournissant une authentification sécurisée pour l’accès aux données fédérées.
 
-En savoir plus sur OAuth dans Snowflake dans la documentation de Snowflake [](https://docs.snowflake.com/en/user-guide/oauth-intro){target="_blank"}.
+En savoir plus sur OAuth dans Snowflake dans la documentation de Snowflake [&#128279;](https://docs.snowflake.com/en/user-guide/oauth-intro){target="_blank"}.
 
 Tout d’abord, procédez comme suit sur Snowflake :
 
 1. Avant de configurer votre compte externe Snowflake à l’aide d’OAuth 2.0, vous devez d’abord créer une intégration de sécurité OAuth dans Snowflake. Le rôle **ACCOUNTADMIN** est requis pour créer l’intégration de sécurité.
 
-   En savoir plus sur la création de l’intégration de sécurité OAuth dans la documentation de Snowflake [](https://docs.snowflake.com/en/sql-reference/sql/create-security-integration-oauth-snowflake){target="_blank"}.
+   En savoir plus sur la création de l’intégration de sécurité OAuth dans la documentation de Snowflake [&#128279;](https://docs.snowflake.com/en/sql-reference/sql/create-security-integration-oauth-snowflake){target="_blank"}.
 
 1. Vous pouvez ensuite interroger l’ID client et le secret client à l’aide de :
 
@@ -170,7 +176,7 @@ Pour configurer l’authentification OAuth2 dans Campaign, procédez comme suit 
 
 1. Définissez le serveur, la base de données et le schéma , puis ouvrez l’onglet **[!UICONTROL OAuth]** .
 
-1. Définissez les paramètres d’intégration de sécurité **[!UICONTROL ID client]**, **[!UICONTROL Secret client]** et **[!UICONTROL URL de redirection]**. Ces paramètres sont obtenus à partir de votre intégration de sécurité OAuth Snowflake. Consultez la documentation de [](https://docs.snowflake.com/en/user-guide/oauth-custom){target="_blank"}.
+1. Définissez les paramètres d’intégration de sécurité **[!UICONTROL ID client]**, **[!UICONTROL Secret client]** et **[!UICONTROL URL de redirection]**. Ces paramètres sont obtenus à partir de votre intégration de sécurité OAuth Snowflake. Consultez la documentation de [&#128279;](https://docs.snowflake.com/en/user-guide/oauth-custom){target="_blank"}.
 
 1. Cliquez sur **[!UICONTROL Continuer pour vous connecter]** pour effectuer une connexion manuelle. Une nouvelle fenêtre de navigateur s’ouvre, dans laquelle vous êtes invité à saisir vos informations d’identification d’utilisateur Snowflake.
 
@@ -186,7 +192,7 @@ Le compte externe de type **Twitter** permet de connecter Campaign à votre comp
 
 ## Comptes externes d&#39;intégration de la solution Adobe {#adobe-integration-external-accounts}
 
-* **** - Le compte externe **[!UICONTROL Adobe Experience Cloud]** est utilisé pour implémenter le service Adobe Identity Management (IMS) afin de se connecter à Adobe Campaign. Apprenez-en davantage sur le service Identity Management (IMS) d’Adobe dans [cette section](../start/connect.md#logon-to-ac).
+* **&#x200B;**&#x200B;- Le compte externe **[!UICONTROL Adobe Experience Cloud]** est utilisé pour implémenter le service Adobe Identity Management (IMS) afin de se connecter à Adobe Campaign. Apprenez-en davantage sur le service Identity Management (IMS) d’Adobe dans [cette section](../start/connect.md#logon-to-ac).
 
 * **Web Analytics** : compte externe **[!UICONTROL Web Analytics (Adobe Analytics)]** permettant de configurer le transfert de données d’Adobe Analytics vers Adobe Campaign. Pour en savoir plus sur l’intégration Adobe Campaign - Adobe Analytics, consultez [cette page](../connect/ac-aa.md).
 
