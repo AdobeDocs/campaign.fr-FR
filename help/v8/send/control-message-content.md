@@ -9,7 +9,7 @@ exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
 source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 75%
+ht-degree: 84%
 
 ---
 
@@ -22,8 +22,8 @@ Suivez les principes ci-dessous lors de la conception du contenu de votre messag
 * [Adresse expéditeur](#sender-address) : l’adresse doit identifier explicitement l’expéditeur. Le domaine doit appartenir à l’expéditeur et être enregistré auprès de lui. Le registre des domaines ne doit pas être privatisé.
 * [Personnalisation](#personalization) : la personnalisation du contenu et la définition d’une heure d’envoi par destinataire augmentent les chances d’ouverture de votre message.
 * Images et texte : respectez un ratio texte/images correct (par exemple, 60 % de texte et 40 % d’images).
-* [Lien de désinscription](#opt-out) et page de destination : le lien de désinscription est essentiel. Il doit être visible et valide, et le formulaire doit être fonctionnel.
-* Prévisualisation : utilisez les outils fournis par Adobe Campaign pour vérifier et optimiser le contenu de votre email ([Inbox Rendering](#message-responsiveness), [&#x200B; SpamAssassin emails](#spamassassin)).
+* [Lien de désinscription](#opt-out) et page de destination correspondante : le lien de désinscription est indispensable. Il doit être visible et valide, et le formulaire doit être fonctionnel.
+* Prévisualisation : utilisez les outils fournis par Adobe Campaign pour vérifier et optimiser le contenu de votre email ([Inbox Rendering](#message-responsiveness), [ SpamAssassin emails](#spamassassin)).
 
 Pour obtenir des conseils supplémentaires sur l’optimisation de la délivrabilité lors de la conception du contenu, consultez le [Guide des bonnes pratiques relatives à la délivrabilité d’Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=fr){target="_blank"}.
 
@@ -33,7 +33,7 @@ Pour obtenir des conseils supplémentaires sur l’optimisation de la délivrabi
 
 ## Adresse d’expéditeur {#sender-address}
 
-Certains FAI vérifient la validité de l’adresse de l’expéditeur (**[!UICONTROL De]**) avant d’accepter des messages. Une adresse erronée peut causer un refus de la part du serveur receveur.
+Certains FAI vérifient la validité de l’adresse d’expédition (**[!UICONTROL De]**) avant d’accepter les messages. Une adresse erronée peut causer un refus de la part du serveur receveur.
 
 Vous devez vous assurer qu&#39;une adresse correcte est donnée au niveau de l&#39;instance (menu **[!UICONTROL Outils > Avancé > assistant de déploiement...]**) ou dans les scénarios les plus fréquemment utilisés.
 
@@ -63,7 +63,7 @@ Demander une confirmation supplémentaire n’est pas fiable, car un utilisateur
 
 Avant d’envoyer votre message, vous pouvez tester sa réactivité en vérifiant son apparence sur différents appareils. Vous vous assurez ainsi que son affichage sera optimal sur divers clients web, webmails et appareils.
 
-Pour permettre cette opération, Adobe Campaign capture le rendu et le rend disponible dans un rapport dédié. Vous pouvez ainsi prévisualiser le message envoyé dans les différents contextes dans lesquels il peut être reçu.
+Pour permettre cette opération, Adobe Campaign capture le rendu et le rend disponible dans un rapport dédié. Vous pouvez ainsi prévisualiser le message envoyé dans les différents contextes de réception.
 
 Pour plus d&#39;informations, consultez la section [Inbox rendering](inbox-rendering.md).
 
