@@ -6,21 +6,12 @@ role: User
 level: Beginner
 exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
 TQID: https://experienceleague.adobe.com/sCrSBuIMzs-KanEWOMDXuWTHjSnwNtkJe-PxOcumIBE
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-subfeature_v2:
-  - id: a39dbcf0-89cb-4765-9bcb-cf9dfbe2875f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: a39dbcf0-89cb-4765-9bcb-cf9dfbe2875f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 666
@@ -46,11 +37,11 @@ Vous pouvez tester le suivi sur les pages miroir, les journaux d’e-mail et les
 
 1. Créez une diffusion e-mail qui sera utilisée à des fins de test. [Apprendre à créer une diffusion](../start/create-message.md)
 1. Concevez le contenu de votre e-mail avec les liens que vous souhaitez suivre. [En savoir plus sur la conception du contenu d&#39;un email](defining-the-email-content.md)
-1. Ajoutez un bloc de personnalisation de page miroir dans le contenu de l’e-mail. [En savoir plus sur les blocs de personnalisation &#x200B;](personalization-blocks.md)
+1. Ajoutez un bloc de personnalisation de page miroir dans le contenu de l’e-mail. [En savoir plus sur les blocs de personnalisation ](personalization-blocks.md)
 
    ![](assets/mirror-page-insert.png)
 
-1. Spécifiez l&#39;utilisateur qui recevra l&#39;email. Comme cet utilisateur devra ouvrir l’e-mail et cliquer sur les liens qu’il contient, veillez à sélectionner une adresse de destinataire de test que vous contrôlez. [En savoir plus sur les profils de test &#x200B;](../audiences/test-profiles.md)
+1. Spécifiez l&#39;utilisateur qui recevra l&#39;email. Comme cet utilisateur devra ouvrir l’e-mail et cliquer sur les liens qu’il contient, veillez à sélectionner une adresse de destinataire de test que vous contrôlez. [En savoir plus sur les profils de test ](../audiences/test-profiles.md)
 
 ## Étape 2 : envoyer la diffusion test {#send-test}
 
@@ -68,7 +59,7 @@ Vous pouvez tester le suivi sur les pages miroir, les journaux d’e-mail et les
 
 ## Étape 3 : vérification de la fonctionnalité de suivi {#verify-tracking}
 
-1. Une fois que vous avez reçu l’e-mail, ouvrez-le et cliquez sur le lien de la page miroir. [En savoir plus sur les pages miroir &#x200B;](mirror-page.md)
+1. Une fois que vous avez reçu l’e-mail, ouvrez-le et cliquez sur le lien de la page miroir. [En savoir plus sur les pages miroir ](mirror-page.md)
 1. Cliquez sur différents liens de l’e-mail pour générer des données de tracking.
 1. Après avoir été correctement redirigé vers la page miroir, accédez au dossier **[!UICONTROL Administration > Exploitation > Workflows techniques]**. [En savoir plus sur les workflows](../config/workflows.md)
 1. Ouvrez le workflow **[!UICONTROL Tracking]**.
