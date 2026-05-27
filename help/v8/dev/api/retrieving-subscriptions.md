@@ -47,7 +47,7 @@ Exécutez une requête GET pour récupérer le service.
 -H 'X-Api-Key: <API_KEY>'
 ```
 
-La requête renvoie l’URL des abonnements du service.
+Elle renvoie l’URL des abonnements du service.
 
 ```
   {
