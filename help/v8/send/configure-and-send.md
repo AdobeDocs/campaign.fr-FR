@@ -8,7 +8,7 @@ exl-id: 36033255-1e75-41c1-9816-126777f7330a
 source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
 source-wordcount: '1299'
-ht-degree: 84%
+ht-degree: 87%
 
 ---
 
@@ -100,7 +100,7 @@ Les deux exemples ci-dessous constituent les cas d&#39;utilisation les plus fré
 
 * **Lors de la phase de démarrage**
 
-  Lorsque des emails sont envoyés à l&#39;aide d&#39;une nouvelle plateforme, les fournisseurs d&#39;accès Internet (FAI) se méfient des adresses IP qui ne sont pas reconnues. Si des volumes importants d&#39;emails sont soudainement envoyés, les FAI les marquent souvent comme spam.
+  Lorsque vous envoyez des e-mails à l’aide d’une nouvelle plateforme, rien n’est plus suspect pour un FAI (fournisseur d’accès internet) que les adresses IP qui ne sont pas reconnues. Si des e-mails sont subitement envoyés en masse, le FAI les range souvent dans le courrier indésirable.
 
   Pour éviter d’être marqué comme indésirable, vous pouvez augmenter progressivement le volume envoyé à l’aide des vagues. Cela permet d’entamer la phase de démarrage en douceur et de réduire le nombre total d’adresses invalides.
 
