@@ -7,22 +7,12 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a523e76d-776c-47d3-9c15-34241cee1092
 TQID: https://experienceleague.adobe.com/yDpBvhUhNnDbzNP3jxIhniIwbVfWesVszxuBb5EB1YU
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-subfeature_v2:
-  - id: d3b34fea-a110-482f-adb2-aae8d686bac8
-  - id: ede6e1ec-9279-415e-b828-a09735018d48
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: a4671286-a59f-47e3-b97b-90627a1977d5
+subfeature_v2: id: d3b34fea-a110-482f-adb2-aae8d686bac8id: ede6e1ec-9279-415e-b828-a09735018d48
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 1003
@@ -99,7 +89,7 @@ Les workflows fournissent également des activités de diffusion spécifiques se
 
 Une **diffusion récurrente** est disponible dans le contexte d’un workflow. Elle permet de créer une diffusion à chaque exécution de l’activité. Ainsi, vous n’avez pas à créer de diffusion pour les tâches récurrentes. Par exemple, si vous exécutez ce type d’activité une fois par mois, vous obtiendrez 12 diffusions au bout d’un an.
 
-Les diffusions récurrentes sont créées dans des workflows par le biais de l&#39;activité [&#128279;](../../automation/workflow/recurring-delivery.md)Diffusion récurrente. Un exemple d&#39;utilisation de cette activité est présenté dans la section suivante : [Création d’une diffusion récurrente dans un workflow de ciblage](../../automation/workflow/send-a-birthday-email.md).
+Les diffusions récurrentes sont créées dans des workflows par le biais de l&#39;activité [](../../automation/workflow/recurring-delivery.md)Diffusion récurrente. Un exemple d&#39;utilisation de cette activité est présenté dans la section suivante : [Création d’une diffusion récurrente dans un workflow de ciblage](../../automation/workflow/send-a-birthday-email.md).
 
 ### Diffusion continue {#continuous-delivery}
 

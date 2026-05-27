@@ -7,14 +7,10 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 TQID: https://experienceleague.adobe.com/CSbxLgXnmrLFiEVEHHNM4rYDBn870UTuhcr1w6FOuRQ
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 1653
@@ -191,7 +187,7 @@ Pour plus d’informations sur l’envoi et les personnes destinataires des BAT,
 
 Dans cette vidéo, vous apprendrez comment ajouter des adresses de contrôle et des BAT à un email existant et comment l’envoyer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447001?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 D&#39;autres vidéos pratiques sur Campaign Classic sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=fr).
 
