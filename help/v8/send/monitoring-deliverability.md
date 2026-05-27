@@ -7,9 +7,14 @@ role: User, Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
 TQID: https://experienceleague.adobe.com/vLLMfBeoa-v0XWTC-l6-Bzkb3fyTq3dWr6WVJadw2vA
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 582
@@ -101,7 +106,7 @@ Consultez attentivement les [logs de diffusion](delivery-dashboard.md#delivery-l
 
 [Guide des bonnes pratiques relatives à la délivrabilité d&#39;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=fr){target="_blank"} fournit des conseils complets sur la stratégie, la définition, les mesures et les bonnes pratiques en matière de délivrabilité.
 
-[Qu&#39;est-ce que la délivrabilité ](about-deliverability.md) présente les concepts clés de la délivrabilité et comment améliorer votre taux de délivrabilité dans Campaign.
+[Qu&#39;est-ce que la délivrabilité &#x200B;](about-deliverability.md) présente les concepts clés de la délivrabilité et comment améliorer votre taux de délivrabilité dans Campaign.
 
 [Échecs et retours de diffusion](delivery-failures.md) décrit les différents types d’échecs de diffusion, la manière dont Campaign les gère et inclut des conseils de dépannage pour les problèmes courants.
 
