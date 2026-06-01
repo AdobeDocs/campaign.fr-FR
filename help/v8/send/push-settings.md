@@ -21,7 +21,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
 workflow-type: tm+mt
 source-wordcount: 1985
 ht-degree: 97%
@@ -34,7 +34,7 @@ Pour envoyer des notifications push avec Adobe Campaign, vous devez d’abord 
 
 >[!CAUTION]
 >
->Certaines modifications importantes apportées au service Android FCM (Firebase Cloud Messaging) seront publiées en 2024 et pourront avoir une incidence sur votre mise en œuvre d’Adobe Campaign. Il se peut que la configuration de vos services d’abonnement pour les messages push Android doive être mise à jour pour prendre en charge cette modification. Vous pouvez déjà vérifier et agir.
+>Certaines modifications importantes apportées au service Android FCM (Firebase Cloud Messaging) seront publiées en 2024 et auront une incidence sur votre mise en œuvre d’Adobe Campaign. Il se peut que la configuration de vos services d’abonnement pour les messages push Android doive être mise à jour pour prendre en charge cette modification. Vous pouvez déjà vérifier et agir.
 
 Avant de commencer à envoyer des notifications push avec Adobe Campaign, vous devez vous assurer que les configurations et les intégrations sont en place sur l’application mobile et pour les balises dans Adobe Experience Platform. Le SDK mobile Adobe Experience Platform fournit des API d’intégration côté client pour vos mobiles via les SDK compatibles Android et iOS.
 
@@ -176,7 +176,7 @@ Pour créer un service destiné à envoyer des notifications push, procédez com
 
 1. Accédez à l’onglet **[!UICONTROL Profils et cibles > Services et abonnements]**, puis cliquez sur **[!UICONTROL Créer]**.
 
-   ![](assets/new-service-push.png){width="800" align="left"}
+   ![](assets/new-service-push.png){width="800"}
 
 1. Saisissez un **[!UICONTROL Libellé]** et un **[!UICONTROL Nom interne]**, puis sélectionnez un type d’**[!UICONTROL Application mobile]**.
 
@@ -194,14 +194,14 @@ Pour créer une application pour les appareils iOS, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Créer une application iOS]**, puis cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/new-ios-app.png){width="600" align="left"}
+   ![](assets/new-ios-app.png){width="600"}
 
 1. Saisissez le nom de votre application dans le champ **[!UICONTROL Libellé]**.
 1. (facultatif) Vous pouvez enrichir le contenu d’un message push avec certaines **[!UICONTROL variables d’application]**. Elles sont entièrement personnalisables et font partie de la payload du message envoyé à l&#39;appareil mobile.
 
    Dans l’exemple suivant, les variables **mediaURl** et **mediaExt** sont ajoutées pour créer une notification push enrichie et fournir à l’application l’image à afficher dans la notification.
 
-   ![](assets/ios-app-parameters.png){width="600" align="left"}
+   ![](assets/ios-app-parameters.png){width="600"}
 
 1. Accédez à l’onglet **[!UICONTROL Paramètres d’abonnement]** pour définir le mapping avec une extension du schéma **[!UICONTROL Applications abonnées (nms:appsubscriptionRcp)]**.
 
@@ -218,7 +218,7 @@ Pour créer une application pour les appareils iOS, procédez comme suit :
 
    >[!NOTE]
    >
-   > La **[!UICONTROL clé d&#39;intégration]** est entièrement personnalisable avec une valeur de chaîne, mais doit être exactement identique à celle spécifiée dans le SDK.
+   > La **[!UICONTROL clé d’intégration]** est entièrement personnalisable avec une valeur de chaîne, mais doit être exactement identique à celle spécifiée dans le SDK.
    >
    > Vous ne pouvez pas utiliser le même certificat pour la version de développement (sandbox) et la version de production de l’application.
 
@@ -244,7 +244,7 @@ Pour créer une application pour les appareils Android, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Créer une application Android]**, puis cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/new-android-app.png){width="600" align="left"}
+   ![](assets/new-android-app.png){width="600"}
 
 1. Saisissez le nom de votre application dans le champ **[!UICONTROL Libellé]**.
 1. La clé d’intégration est spécifique à chaque application. Elle relie l’application mobile à Adobe Campaign.
@@ -256,7 +256,7 @@ Pour créer une application pour les appareils Android, procédez comme suit :
 
    >[!NOTE]
    >
-   > La **[!UICONTROL clé d&#39;intégration]** est entièrement personnalisable avec une valeur de chaîne, mais doit être exactement identique à celle spécifiée dans le SDK.
+   > La **[!UICONTROL clé d’intégration]** est entièrement personnalisable avec une valeur de chaîne, mais doit être exactement identique à celle spécifiée dans le SDK.
    >
 
 1. Sélectionnez l’icône dans le champ **[!UICONTROL Icône de l’application]** pour personnaliser l’application mobile dans votre service.

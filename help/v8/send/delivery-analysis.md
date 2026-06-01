@@ -15,7 +15,7 @@ level_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
 workflow-type: tm+mt
 source-wordcount: 754
 ht-degree: 96%
@@ -64,7 +64,7 @@ Pour préparer la diffusion, vérifiez que le contenu et la cible de la diffusio
    * L’icône jaune indique une erreur de traitement non critique.
    * L’icône rouge indique une erreur critique qui empêche l’envoi de la diffusion.
 
-   ![](assets/delivery-analysis-results.png){width="800" align="left"}
+   ![](assets/delivery-analysis-results.png){width="800"}
 
 1. Cliquez sur **[!UICONTROL Fermer]** pour corriger les erreurs, le cas échéant. Après avoir effectué les modifications, redémarrez l’analyse en cliquant sur **[!UICONTROL Analyser]**.
 
@@ -80,7 +80,7 @@ Pour préparer la diffusion, vérifiez que le contenu et la cible de la diffusio
 
 Accédez à l’onglet **[!UICONTROL Analyse]** des propriétés de la diffusion pour définir les paramètres de préparation du message lors de la phase d’analyse.
 
-![](assets/delivery-properties-analysis-tab.png){width="800" align="left"}
+![](assets/delivery-properties-analysis-tab.png){width="800"}
 
 Cet onglet permet d&#39;accéder aux options suivantes :
 

@@ -23,7 +23,7 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
 workflow-type: tm+mt
 source-wordcount: 2105
 ht-degree: 82%
@@ -36,7 +36,7 @@ Adobe Campaign s’accompagne d’un ensemble de workflows techniques intégré
 
 Par défaut, les workflows techniques sont disponibles dans un sous-dossier du nœud suivant : **[!UICONTROL Administration]** > **[!UICONTROL Exploitation]** > **[!UICONTROL Workflows techniques]**.
 
-![](assets/navtree.png){width="50%" align="left" zoomable="yes"}
+![](assets/navtree.png){width="50%" zoomable="yes"}
 
 >[!NOTE]
 >

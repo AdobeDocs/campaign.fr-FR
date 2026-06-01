@@ -14,7 +14,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
 workflow-type: tm+mt
 source-wordcount: 756
 ht-degree: 96%
@@ -61,11 +61,11 @@ Sélectionnez le type de cible du BAT dans la liste déroulante **[!UICONTROL Mo
 
   Par défaut, la substitution est effectuée de manière aléatoire, mais vous pouvez sélectionner un destinataire spécifique dans la cible principale à l’aide de l’icône **[!UICONTROL Détail]**.
 
-  ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
+  ![](assets/target-of-proofs-substitution-details.png){width="800"}
 
   Choisissez l’option **[!UICONTROL Sélectionner un profil (doit être inclus dans la cible)]** et sélectionnez un ou une destinataire.
 
-  ![](assets/target-of-proofs-substitution.png){width="800" align="left"}
+  ![](assets/target-of-proofs-substitution.png){width="800"}
 
 
 * Utilisez l’option **[!UICONTROL Adresses de contrôle]** pour utiliser des adresses de contrôle en tant que cible du BAT. Ces adresses peuvent être importées à partir d’un fichier ou saisies manuellement.
@@ -86,7 +86,7 @@ Pour envoyer des BAT, procédez comme suit :
 1. Dans la fenêtre **[!UICONTROL Envoyer un BAT]**, vérifiez les destinataires du BAT.
 1. Cliquez sur **[!UICONTROL Analyser]** pour lancer la préparation des messages de BAT.
 
-   ![](assets/send-proof-analyze.png){width="800" align="left"}
+   ![](assets/send-proof-analyze.png){width="800"}
 
 1. Une fois la préparation de la diffusion terminée, cliquez sur le bouton **[!UICONTROL Confirmer l’envoi]** pour commencer à envoyer les messages de BAT.
 
@@ -108,7 +108,7 @@ Les propriétés du BAT sont définies sous l’onglet **[!UICONTROL Avancé]** 
 
 Par défaut, les messages de BAT sont identifiés par la mention `Proof #N` dans l’objet, où `N` est le numéro du BAT. Ce nombre est incrémenté à chaque analyse de diffusion du BAT. Vous pouvez modifier le préfixe `proof`, le cas échéant.
 
-![](assets/proof-parameters.png){width="800" align="left"}
+![](assets/proof-parameters.png){width="800"}
 
 
 ## Vidéo pratique {#video-proof}

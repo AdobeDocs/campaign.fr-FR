@@ -6,7 +6,7 @@ feature: Inbox Rendering, Monitoring, Email Rendering
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 60%
@@ -89,7 +89,7 @@ Ce rapport affiche les rendus de la boîte de réception tels qu’ils apparaiss
 
 La section supérieure présente la répartition du nombre de messages reçus, indésirables (spam), non reçus ou en attente de réception au moyen d’une représentation graphique avec code-couleur.
 
-![](assets/s_tn_inbox_rendering_summary.png){width="40%" align="left"}
+![](assets/s_tn_inbox_rendering_summary.png){width="40%"}
 
 Survolez le graphique avec la souris pour afficher les détails de chaque couleur. Cliquez sur un élément de la liste pour masquer ou afficher la catégorie correspondante dans le graphique.
 
