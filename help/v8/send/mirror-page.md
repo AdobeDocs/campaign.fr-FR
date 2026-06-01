@@ -7,17 +7,11 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 7bf3937c-484d-4404-8a9b-de7a10f5455a
 TQID: https://experienceleague.adobe.com/IhK-z4Uj1G3O90YyCAlqdy39qACE6jcMvpjv875OhLc
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
 workflow-type: tm+mt
 source-wordcount: 468
 ht-degree: 100%
@@ -34,7 +28,7 @@ La plupart des clients de messagerie affichent les images sans problème. Toutef
 
 La page miroir générée par Adobe Campaign contient toutes les données de personnalisation.
 
-![exemple de lien miroir](assets/mirror-page-link.png){width="600" align="left"}
+![exemple de lien miroir](assets/mirror-page-link.png){width="600"}
 
 ## Ajouter un lien vers la page miroir {#link-to-mirror-page}
 
@@ -42,7 +36,7 @@ Il est recommandé d’insérer un lien vers la page miroir. Vous pouvez nommer 
 
 Dans Adobe Campaign, vous pouvez insérer un lien vers la page miroir dans le contenu de l’e-mail à l’aide du **bloc de personnalisation** dédié. Le bloc de personnalisation intégré **Lien vers la page miroir** insère le code suivant dans le contenu de votre e-mail : `<%@ include view='MirrorPage' %>`.
 
-![](assets/mirror-page-insert.png){width="800" align="left"}
+![](assets/mirror-page-insert.png){width="800"}
 
 
 Pour plus d’informations sur l’insertion de blocs de contenu de personnalisation, reportez-vous aux [blocs de personnalisation](personalization-blocks.md).
@@ -56,7 +50,7 @@ Vous pouvez choisir le mode de génération de la page miroir de l’e-mail. Plu
 1. Accédez à l’onglet **[!UICONTROL Validité]** des propriétés de l’e-mail.
 1. Dans la section **Gestion de la page miroir**, consultez la liste déroulante **[!UICONTROL Mode]** pour découvrir toutes les options.
 
-![](assets/mirror-page-generation.png){width="800" align="left"}
+![](assets/mirror-page-generation.png){width="800"}
 
 Outre le mode par défaut, les options suivantes sont disponibles :
 
@@ -74,6 +68,6 @@ Pour accéder à cette page miroir, procédez comme suit :
 
 1. Sélectionnez un ou une destinataire, puis cliquez sur le lien **[!UICONTROL Afficher la page miroir de ce message...]**.
 
-   ![](assets/mirror-page-display.png){width="800" align="left"}
+   ![](assets/mirror-page-display.png){width="800"}
 
    La page miroir s’affiche dans un écran dédié, avec les données de personnalisation du ou de la destinataire sélectionné(e).

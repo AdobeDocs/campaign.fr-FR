@@ -4,18 +4,13 @@ description: Liste des fonctionnalités et améliorations des versions 2022 de C
 feature: Release Notes
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
 TQID: https://experienceleague.adobe.com/PCye0NRsbFxzoRgD-2apCDpph-gvtX0eboiuzdmVQZE
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 531670de4c2f740e4f0a4b96049b23eb8000e40d
 workflow-type: tm+mt
-source-wordcount: 1952
-ht-degree: 97%
+source-wordcount: 1942
+ht-degree: 96%
 
 ---
 
@@ -77,7 +72,7 @@ _samedi 30 septembre 2022_
 <tr> 
 <td> <p>Le <a href="../send/twitter.md">canal social X</a> est désormais disponible avec Campaign v8. Vous pouvez ainsi :</p>
 <ul> 
-<li><p>Envoyer des messages sur X (anciennement Twitter) : Adobe Campaign vous permet de publier des messages directement sur votre compte X. Vous pouvez également envoyer des messages directs à tous les abonnées et abonnés de vos comptes.
+<li><p>Envoyer des messages sur X (anciennement appelé Twitter) : Adobe Campaign vous permet de publier des messages directement sur votre compte X. Vous pouvez également envoyer des messages directs à tous vos abonnés.
 </p></li>
 <li><p>Collecter de nouveaux contacts : Adobe Campaign peut récupérer automatiquement les données de profil, ce qui vous permet ainsi d’exécuter des campagnes de ciblage et, lorsque cela est possible, d’implémenter des stratégies cross-canal.
 </p></li>
@@ -96,7 +91,9 @@ Pour optimiser la sécurité, les jetons de sécurité ont été supprimés des 
 * Cette modification s’applique uniquement aux URL GET. D’autres types, y compris les URL POST, ne sont pas affectés.
 * Si vous utilisez du code personnalisé, les jetons de sécurité ne sont plus récupérés à partir du paramètre de jeton de sécurité de l’URL GET. Vous devez générer un nouveau jeton de sécurité à l’aide du code JSSP suivant :
 
-  ```getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);```
+  ```
+  getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);
+  ```
 
   Vous pouvez également utiliser l’API de connexion pour récupérer les jetons de sécurité.
 * La gestion des jetons de session ne change pas.
