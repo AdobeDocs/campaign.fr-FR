@@ -7,18 +7,14 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
 TQID: https://experienceleague.adobe.com/gBiPYIxSPqG0ks8b680AjfJK4eY1uCovk61e3ORbKug
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 62f279d8b36160ff56f4fdc1f7fba0099bdbc8ad
 workflow-type: tm+mt
 source-wordcount: 385
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -53,7 +49,7 @@ Pour activer la mise en copie Cci pour un [modèle de diffusion](create-template
 1. Depuis l’explorateur Campaign, accédez au dossier des modèles de diffusion. Par défaut, les modèles de diffusion sont stockés dans le dossier **[!UICONTROL Ressources]** > **[!UICONTROL Modèles]** > **[!UICONTROL Modèles de diffusion]**.
 1. Modifiez le modèle de diffusion à mettre à jour pour la mise en copie Cci.
 1. Cliquez sur le bouton **[!UICONTROL Propriétés]**.
-1. Dans l’onglet **[!UICONTROL Diffusion]**, cochez l’option **[!UICONTROL E-mail Cci avec Momentum amélioré]**.
+1. Dans l&#39;onglet **[!UICONTROL Diffusion]**, cochez l&#39;option **[!UICONTROL Email Cci avec MTA amélioré]** .
 
    ![](assets/email-bcc.png)
 
