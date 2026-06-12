@@ -7,12 +7,23 @@ level: Intermediate, Experienced
 hide: true
 exl-id: c2862f94-7d15-4a49-a74e-df90d0ea7bc9
 TQID: https://experienceleague.adobe.com/Kyg3a2wvNCe2sebfG01-qMnFurvDBYS7uQfGPfVmuGE
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-subfeature_v2: id: b5852c32-876b-41ae-92a7-9f588865ae52id: bf97c196-a4d1-4fa3-a151-e68a114c8ac0id: cfc95e9b-b035-4403-a6a9-b27a8a053a37id: e739ee2b-6228-412e-878f-45de0791417d
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: b12f6872-9271-4369-85e5-86969a0b99a2
+  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2:
+  - id: b5852c32-876b-41ae-92a7-9f588865ae52
+  - id: bf97c196-a4d1-4fa3-a151-e68a114c8ac0
+  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+  - id: e739ee2b-6228-412e-878f-45de0791417d
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: b285c321f3b905150b31621941ea99608d627739
 workflow-type: tm+mt
 source-wordcount: 1421
@@ -271,7 +282,7 @@ for each(var delivery in deliveries.delivery) {
 >* Utilisez `lineCount` pour définir explicitement le nombre maximal de résultats
 >* Pour les jeux de données volumineux (> 1 000 enregistrements), utilisez des workflows au lieu de queryDef. Les workflows sont conçus pour traiter efficacement des millions de lignes.
 
-En savoir plus sur les [ ExecuteQuery ](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=fr){target="_blank"} et [ les bonnes pratiques en matière de requêtes](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}.
+En savoir plus sur les [&#x200B; ExecuteQuery &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=fr){target="_blank"} et [&#x200B; les bonnes pratiques en matière de requêtes](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}.
 
 ## Données de transition du workflow de requête {#workflow-transition-data}
 
@@ -769,7 +780,7 @@ Lorsque vous utilisez les méthodes queryDef et NLWS :
 * **Utiliser l’analyse pour les énumérations** - Ajoutez des `analyze: true` pour sélectionner des nœuds afin d’obtenir des noms et des libellés d’énumération conviviaux
 * **Optimisation des requêtes** - Ajoutez des conditions de `where` appropriées pour limiter les jeux de résultats.
 * **Traitement par lots** - Traitez plusieurs enregistrements par lots pour éviter les problèmes de mémoire et les délais d’expiration
-* **Prise de conscience de FFDA** - Dans les déploiements [ Entreprise (FFDA)](../architecture/enterprise-deployment.md), sachez que [!DNL Campaign] fonctionne avec deux bases de données
+* **Prise de conscience de FFDA** - Dans les déploiements [&#x200B; Entreprise (FFDA)](../architecture/enterprise-deployment.md), sachez que [!DNL Campaign] fonctionne avec deux bases de données
 
 
 
