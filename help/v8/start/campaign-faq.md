@@ -7,13 +7,10 @@ level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
 hide: true
 TQID: https://experienceleague.adobe.com/Cpc-97Lab93SQhsFloibdhpvCDFockj6afFSZUTgKoM
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: b285c321f3b905150b31621941ea99608d627739
 workflow-type: tm+mt
 source-wordcount: 785
 ht-degree: 96%
@@ -92,13 +89,13 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
 
    Vous pouvez obtenir le programme d&#39;installation et la console cliente à partir du Centre de téléchargement d&#39;Adobe.
 
-   En tant qu’utilisateur administrateur ou utilisatrice administratrice, accédez à la [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/fr/campaign.html){target="_blank"} d’Adobe  pour télécharger Adobe Campaign.
+   En tant qu’utilisateur administrateur ou utilisatrice administratrice, accédez à la [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/fr/campaign.html) d’Adobe {target="_blank"} pour télécharger Adobe Campaign.
 
    En savoir plus sur le Centre de distribution [sur cette page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr){target="_blank"}.
 
 1. **Puis-je contacter des experts Campaign ?**
 
-   Rejoignez la communauté Campaign et recherchez des réponses parmi les questions existantes ou consultez les expertes et experts. [Prenez part à la conversation](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=fr){target="_blank"}
+   Rejoignez la communauté Campaign et recherchez des réponses parmi les questions existantes ou consultez les expertes et experts. [Prenez part à la conversation](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 
 
 1. **Comment signaler un problème ?**
@@ -108,3 +105,4 @@ Vous avez besoin d&#39;aide pour utiliser Campaign ? Lisez les principales ques
    Pour signaler un problème ou démarrer une session de conversation dans ce nouveau système, connectez-vous à la console [Adobe Admin Console](https://adminconsole.adobe.com/overview){target="_blank"}.
 
    Ce système nécessite des comptes individuels pour chaque utilisateur, avec les autorisations adéquates. Si vous constatez que vous ne pouvez pas vous connecter à l’aide de votre Adobe ID, demandez l’accès par le biais d’Experience League. L’équipe d’assistance clientèle vous assistera dès que possible. [En savoir plus](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
+
