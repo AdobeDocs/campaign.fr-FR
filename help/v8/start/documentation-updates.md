@@ -12,16 +12,20 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: b285c321f3b905150b31621941ea99608d627739
+source-git-commit: fc92f46a1df96412cc86b9a8c0946132f79a2da8
 workflow-type: tm+mt
-source-wordcount: 282
-ht-degree: 100%
+source-wordcount: 302
+ht-degree: 94%
 
 ---
 
 # Mises à jour de la documentation {#latest-updates}
 
 Cette page répertorie les dernières mises à jour de la documentation de [!DNL Campaign] v8 (console).
+
+## Juin 2026 {#june-2026}
+
+Ajout d&#39;une page sur les conseils de la CNIL pour les pixels de tracking email et les fonctionnalités Adobe Campaign associées. [En savoir plus](cnil-pixel-tracking.md)
 
 ## Avril 2025 {#april-2025}
 
