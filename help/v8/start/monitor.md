@@ -18,7 +18,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 4a626787cafd7cc9bfb1d26b26a703aa5fb86a58
+source-git-commit: e8438b85eec144e83b2660f9d66444c1a01863ab
 workflow-type: tm+mt
 source-wordcount: 2101
 ht-degree: 6%
@@ -27,11 +27,7 @@ ht-degree: 6%
 
 # Présentation de la surveillance des campagnes {#monitor-campaign}
 
-Adobe Campaign vous offre une visibilité à tous les niveaux, depuis le moment où un message individuel a été diffusé, les raisons de l’échec d’un workflow jusqu’à la capacité de base de données restante de votre instance. Cette page mappe toutes les fonctionnalités de surveillance afin que vous sachiez où chercher lorsque quelque chose nécessite votre attention.
-
->[!NOTE]
->
->En tant qu’administrateur Campaign, vous pouvez également utiliser le Panneau de Contrôle Campaign[&#128279;](#control-panel) pour surveiller vos instances, gérer les performances et configurer les paramètres avec des fonctionnalités en libre-service.
+Adobe Campaign vous offre une visibilité à tous les niveaux, depuis le moment où un message individuel a été diffusé, les raisons de l’échec d’un workflow jusqu’à la capacité de base de données restante de votre instance. Cette page mappe toutes les fonctionnalités de surveillance afin que vous sachiez où chercher lorsque quelque chose nécessite votre attention. En tant qu’administrateur Campaign, vous pouvez également utiliser le Panneau de Contrôle Campaign[&#128279;](#control-panel) pour surveiller vos instances, gérer les performances et configurer les paramètres avec des fonctionnalités en libre-service.
 
 >[!TIP]
 >
