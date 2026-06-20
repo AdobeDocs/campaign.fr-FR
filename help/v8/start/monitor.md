@@ -6,11 +6,18 @@ role: User
 level: Beginner
 exl-id: 2ad585f2-19bc-4391-8a19-9e892dbe01a3
 TQID: https://experienceleague.adobe.com/PjU1EFX5x4iB3yRsShGBWoR0k1D2-EI90-ss0FTcexE
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: e8438b85eec144e83b2660f9d66444c1a01863ab
 workflow-type: tm+mt
 source-wordcount: 2101
@@ -20,15 +27,15 @@ ht-degree: 6%
 
 # Présentation de la surveillance des campagnes {#monitor-campaign}
 
-Adobe Campaign vous offre une visibilité à tous les niveaux, depuis le moment où un message individuel a été diffusé, les raisons de l’échec d’un workflow jusqu’à la capacité de base de données restante de votre instance. Cette page mappe toutes les fonctionnalités de surveillance afin que vous sachiez où chercher lorsque quelque chose nécessite votre attention. En tant qu’administrateur Campaign, vous pouvez également utiliser le Panneau de Contrôle Campaign](#control-panel) pour surveiller vos instances, gérer les performances et configurer les paramètres avec des fonctionnalités en libre-service.[
+Adobe Campaign vous offre une visibilité à tous les niveaux, depuis le moment où un message individuel a été diffusé, les raisons de l’échec d’un workflow jusqu’à la capacité de base de données restante de votre instance. Cette page mappe toutes les fonctionnalités de surveillance afin que vous sachiez où chercher lorsque quelque chose nécessite votre attention. En tant qu’administrateur Campaign, vous pouvez également utiliser le Panneau de Contrôle Campaign[&#128279;](#control-panel) pour surveiller vos instances, gérer les performances et configurer les paramètres avec des fonctionnalités en libre-service.
 
 >[!TIP]
 >
 >**Vous ne savez pas par où commencer ?**
 >
->- [ Vérification du spécialiste marketing sur une campagne →surveiller vos diffusions](#monitor-deliveries)
+>- [&#x200B; Vérification du spécialiste marketing sur une campagne →surveiller vos diffusions](#monitor-deliveries)
 >- Résolution des problèmes liés à un workflow → [surveiller les workflows](#monitor-workflows)
->- L’administrateur vérifiant l’intégrité de l’instance → [ Surveiller votre instance ](#monitor-instance)
+>- L’administrateur vérifiant l’intégrité de l’instance → [&#x200B; Surveiller votre instance &#x200B;](#monitor-instance)
 
 ## Surveiller vos diffusions {#monitor-deliveries}
 
@@ -97,7 +104,7 @@ Les workflows sont le moteur de vos automatisations marketing et du traitement d
 
 ## Surveiller votre instance {#monitor-instance}
 
-La surveillance des instances couvre l’intégrité de votre environnement Campaign, à savoir la capacité de la base de données, l’utilisation des profils, le débit et l’infrastructure. Pour Campaign v8 Managed Cloud Services, Adobe surveille et gère l’infrastructure sous-jacente en votre nom, mais vous conservez une visibilité totale via la console cliente et le Panneau de Contrôle. En savoir plus sur la [surveillance gérée par ](#adobe-cloud-monitoring).
+La surveillance des instances couvre l’intégrité de votre environnement Campaign, à savoir la capacité de la base de données, l’utilisation des profils, le débit et l’infrastructure. Pour Campaign v8 Managed Cloud Services, Adobe surveille et gère l’infrastructure sous-jacente en votre nom, mais vous conservez une visibilité totale via la console cliente et le Panneau de Contrôle. En savoir plus sur la [surveillance gérée par &#x200B;](#adobe-cloud-monitoring).
 
 ### Journal d’audit {#audit-trail}
 
@@ -128,7 +135,7 @@ Campaign v8 fournit plusieurs fonctionnalités de surveillance pour suivre les p
 
 >[!NOTE]
 >
->Pour Campaign v8 Managed Cloud Services, l’infrastructure du serveur (CPU, mémoire, disque) est surveillée et gérée par Adobe. Les fonctionnalités de surveillance décrites sur cette page et dans le Panneau de Contrôle sont complémentaires : elles vous donnent une visibilité sur vos données et votre configuration sans avoir besoin d’accéder à l’infrastructure. Certaines actions entreprises par Adobe apparaissent dans vos logs Campaign sous l’utilisateur **campaign-loginmonitor**. En savoir plus sur la [surveillance gérée par ](#adobe-cloud-monitoring).
+>Pour Campaign v8 Managed Cloud Services, l’infrastructure du serveur (CPU, mémoire, disque) est surveillée et gérée par Adobe. Les fonctionnalités de surveillance décrites sur cette page et dans le Panneau de Contrôle sont complémentaires : elles vous donnent une visibilité sur vos données et votre configuration sans avoir besoin d’accéder à l’infrastructure. Certaines actions entreprises par Adobe apparaissent dans vos logs Campaign sous l’utilisateur **campaign-loginmonitor**. En savoir plus sur la [surveillance gérée par &#x200B;](#adobe-cloud-monitoring).
 
 ### Surveillance gérée par Adobe {#adobe-cloud-monitoring}
 
@@ -138,7 +145,7 @@ Adobe surveille vos environnements Campaign Cloud Services 24h/24 et 7j/7 afin d
 
 >[!TIP]
 >
->Vous pouvez vous abonner aux alertes d’instance en temps réel via le Panneau de Contrôle Campaign](#control-panel) et recevoir les étapes de résolution recommandées pour les problèmes détectés (par exemple, les certificats SSL arrivant à expiration).[
+>Vous pouvez vous abonner aux alertes d’instance en temps réel via le Panneau de Contrôle Campaign[&#128279;](#control-panel) et recevoir les étapes de résolution recommandées pour les problèmes détectés (par exemple, les certificats SSL arrivant à expiration).
 
 **Surveillance des niveaux**
 
@@ -192,7 +199,7 @@ Le Panneau de Contrôle Campaign permet aux administrateurs de surveiller et de 
 | **Infrastructure** | Capacité de stockage SFTP, configuration de sous-domaines, alertes d’expiration des certificats SSL, listes autorisées d’adresses IP |
 | **Instance** | Version de build et packages installés, présentation de la configuration du système, domaines externes autorisés |
 
-En savoir plus sur la surveillance des performances des Panneaux de Contrôle [](../config/self-service.md) et [](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=fr){target="_blank"}
+En savoir plus sur la surveillance des performances des Panneaux de Contrôle [&#128279;](../config/self-service.md) et [&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=fr){target="_blank"}
 
 >[!NOTE]
 >
@@ -220,7 +227,7 @@ Adobe Campaign fournit un ensemble complet de rapports pour analyser les perform
 - **URL et flux de clics** — Classement de la plupart des liens cliqués, avec décomptes et pourcentages
 - **Position des clics** — Superposition visuelle indiquant l’emplacement où les destinataires ont cliqué dans le corps de l’e-mail
 
-En savoir plus sur les [ rapports de diffusion ](../reporting/delivery-reports.md)
+En savoir plus sur les [&#x200B; rapports de diffusion &#x200B;](../reporting/delivery-reports.md)
 
 ### Rapports globaux {#global-reports}
 
@@ -230,7 +237,7 @@ Accédez aux rapports globaux pour analyser les performances de toutes les campa
 - **Échecs et retours** — Répartition des diffusions en échec par type d&#39;échec et par raison
 - **Activités utilisateur** — Ouvertures, clics et désabonnements agrégés sur toutes les campagnes
 
-En savoir plus sur les [ rapports globaux ](../reporting/global-reports.md)
+En savoir plus sur les [&#x200B; rapports globaux &#x200B;](../reporting/global-reports.md)
 
 ## Rubriques connexes {#related-topics}
 
