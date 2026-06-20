@@ -129,13 +129,13 @@ En savoir plus sur le [Journal d’audit](../reporting/audit-trail.md)
 
 Campaign v8 fournit plusieurs fonctionnalités de surveillance pour suivre les performances de votre instance et garantir un fonctionnement optimal :
 
-**Surveillance de la base de données** — Surveillez l&#39;utilisation et la capacité de la base de données par Panneau de Contrôle pour assurer une gestion optimale des performances et du stockage. [En savoir plus sur la surveillance des bases de données](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring.html){target="_blank"}
+**Surveillance de la base de données** — Surveillez l&#39;utilisation et la capacité de la base de données par Panneau de Contrôle pour assurer une gestion optimale des performances et du stockage. [En savoir plus sur la surveillance des bases de données](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring.html?lang=fr){target="_blank"}
 
 **Surveillance des profils actifs** — Effectuez le suivi de l’utilisation des profils actifs par rapport à vos limites contractuelles afin de maintenir la conformité et d’optimiser l’affectation des ressources. [En savoir plus sur les profils actifs](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=fr){target="_blank"}
 
 **Surveillance des workflows** — Surveillez le statut d&#39;exécution des workflows pour identifier les workflows de longue durée et vérifier que tous les workflows techniques s&#39;exécutent correctement. [En savoir plus sur les workflows techniques](#technical-workflows)
 
-**Débit de diffusion et latence** — Effectuez le suivi du débit de diffusion (messages envoyés par heure) et de la latence pour les communications transactionnelles par Panneau de Contrôle. [En savoir plus sur la surveillance du débit](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/throughputs-latencies.html){target="_blank"}
+**Débit de diffusion et latence** — Effectuez le suivi du débit de diffusion (messages envoyés par heure) et de la latence pour les communications transactionnelles par Panneau de Contrôle. [En savoir plus sur la surveillance du débit](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/throughputs-latencies.html?lang=fr){target="_blank"}
 
 >[!NOTE]
 >
