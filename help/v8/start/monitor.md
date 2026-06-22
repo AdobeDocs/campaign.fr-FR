@@ -49,13 +49,13 @@ La surveillance de vos diffusions après leur envoi est une étape clé pour vou
 >
 >**Vous découvrez Campaign ?** Le tableau de bord de la diffusion est votre principal écran quotidien. Ouvrez une diffusion envoyée, cliquez sur l’onglet **Logs** et vous verrez quels destinataires ont reçu le message, lesquels ont été exclus et pourquoi, et qui a cliqué ou ouvert.
 
-**Diffusions e-mail** - Surveillez le statut de diffusion des e-mails, suivez les mesures clés et accédez à des journaux détaillés. En savoir plus sur la [surveillance des diffusions dans l’interface utilisateur de Campaign](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/send/monitor/delivery-dashboard), [les statuts de diffusion](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/send/monitor/delivery-statuses) et [surveillance des diffusions par e-mail](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/send#email-monitoring).
+**Diffusions e-mail** - Surveillez le statut de diffusion des e-mails, suivez les mesures clés et accédez à des journaux détaillés. En savoir plus sur la [surveillance des diffusions dans l’interface utilisateur de Campaign](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/send/monitor/delivery-dashboard), [les statuts de diffusion](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/send/monitor/delivery-statuses) et [surveillance des diffusions par e-mail](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/send/emails/send#email-monitoring).
 
-**Diffusions SMS** - Suivez le statut des diffusions SMS et surveillez les mesures clés dans le tableau de bord des diffusions SMS. En savoir plus sur la [surveillance des SMS](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/sms-monitor).
+**Diffusions SMS** - Suivez le statut des diffusions SMS et surveillez les mesures clés dans le tableau de bord des diffusions SMS. En savoir plus sur la [surveillance des SMS](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/send/sms/sms-monitor).
 
-**Notifications push** - Surveillez les diffusions de notifications push pour vous assurer qu&#39;elles atteignent efficacement les utilisateurs de vos applications mobiles. En savoir plus sur la [surveillance des notifications push](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push#push-test).
+**Notifications push** - Surveillez les diffusions de notifications push pour vous assurer qu&#39;elles atteignent efficacement les utilisateurs de vos applications mobiles. En savoir plus sur la [surveillance des notifications push](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/send/push/push#push-test).
 
-**Messages transactionnels** - Pour les messages déclenchés par des événements, surveillez l’état du traitement des événements, l’exécution des messages et l’état de la diffusion. En savoir plus sur la [surveillance des messages transactionnels](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution#monitor-messages).
+**Messages transactionnels** - Pour les messages déclenchés par des événements, surveillez l’état du traitement des événements, l’exécution des messages et l’état de la diffusion. En savoir plus sur la [surveillance des messages transactionnels](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/send/real-time/event/delivery-execution#monitor-messages).
 
 **Diffusions en échec** - Il est essentiel de comprendre les raisons de l’échec d’une diffusion pour maintenir une base de données propre et garantir de bons taux de délivrabilité. Les diffusions en échec sont classées en trois types. Comprendre la différence vous permet de décider de l’action à entreprendre :
 
@@ -75,7 +75,7 @@ En savoir plus sur les [diffusions en échec et mises en quarantaine](https://ex
 
 La surveillance de la délivrabilité vous permet de vous assurer que vos messages atteignent les boîtes de réception de vos destinataires et évitent les filtres de spam. Adobe Campaign fournit plusieurs outils intégrés pour surveiller et améliorer la délivrabilité, notamment les rapports de diffusion, l’inbox rendering, les tests SpamAssassin et les statistiques de diffusion. Le respect des bonnes pratiques de délivrabilité, telles que la maintenance d&#39;une liste d&#39;emails propre, la surveillance de la réputation de l&#39;expéditeur et l&#39;authentification des domaines d&#39;envoi, est essentiel pour maintenir de bons taux de délivrabilité.
 
-Découvrez les [outils de surveillance de la délivrabilité](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/monitoring-deliverability) et [bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/about-deliverability).
+Découvrez les [outils de surveillance de la délivrabilité](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/send/deliverability-management/monitoring-deliverability) et [bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/send/deliverability-management/about-deliverability).
 
 ## Surveiller les workflows {#monitor-workflows}
 
@@ -93,11 +93,11 @@ Les workflows sont essentiels pour automatiser vos campagnes marketing et le tra
 
 **Surveillez les éléments de workflow suivants :**
 
-**Statut d’exécution du workflow** - Vérifiez si les workflows sont en cours d’exécution, en pause, en échec ou terminés. [En savoir plus sur l’exécution des workflows](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution#_blank)
+**Statut d’exécution du workflow** - Vérifiez si les workflows sont en cours d’exécution, en pause, en échec ou terminés. [En savoir plus sur l’exécution des workflows](https://experienceleague.adobe.com/fr/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution#_blank)
 
 **Journaux d’exécution des activités** - Accédez aux journaux détaillés de chaque activité de workflow pour résoudre les problèmes et optimiser les performances.
 
-**Carte thermique des workflows** - Aperçu visuel de tous les workflows s’exécutant simultanément sur votre instance. Utilisez-la pour identifier les périodes de charge maximale, repérer les workflows qui consomment des ressources disproportionnées et planifier la planification afin d’éviter les conflits d’exécution. Disponible uniquement pour les administrateurs de Campaign. [En savoir plus sur la carte thermique des workflows](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/heatmap#_blank)
+**Carte thermique des workflows** - Aperçu visuel de tous les workflows s’exécutant simultanément sur votre instance. Utilisez-la pour identifier les périodes de charge maximale, repérer les workflows qui consomment des ressources disproportionnées et planifier la planification afin d’éviter les conflits d’exécution. Disponible uniquement pour les administrateurs de Campaign. [En savoir plus sur la carte thermique des workflows](https://experienceleague.adobe.com/fr/docs/campaign/automation/workflows/monitoring-workflows/heatmap#_blank)
 
 **Historique des workflows** - Suivez toutes les exécutions et modifications de workflows au fil du temps pour comprendre leur comportement et leurs performances.
 
@@ -124,13 +124,13 @@ En savoir plus sur le [Journal d’audit](https://experienceleague.adobe.com/fr/
 
 Campaign v8 fournit plusieurs fonctionnalités de surveillance pour suivre les performances de votre instance et garantir un fonctionnement optimal :
 
-**Surveillance de la base de données** - Surveillez l’utilisation et la capacité de la base de données par Panneau de Contrôle pour assurer une gestion optimale des performances et du stockage. [En savoir plus sur la surveillance des bases de données](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring#_blank)
+**Surveillance de la base de données** - Surveillez l’utilisation et la capacité de la base de données par Panneau de Contrôle pour assurer une gestion optimale des performances et du stockage. [En savoir plus sur la surveillance des bases de données](https://experienceleague.adobe.com/fr/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring#_blank)
 
-**Surveillance des profils actifs** - Effectuez le suivi de l’utilisation des profils actifs par rapport à vos limites contractuelles pour maintenir la conformité et optimiser l’affectation des ressources. [En savoir plus sur les profils actifs](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/active-profiles-monitoring#_blank)
+**Surveillance des profils actifs** - Effectuez le suivi de l’utilisation des profils actifs par rapport à vos limites contractuelles pour maintenir la conformité et optimiser l’affectation des ressources. [En savoir plus sur les profils actifs](https://experienceleague.adobe.com/fr/docs/control-panel/using/performance-monitoring/active-profiles-monitoring#_blank)
 
 **Surveillance des workflows** - Surveillez le statut d’exécution des workflows pour identifier les workflows de longue durée et vérifier que tous les workflows techniques s’exécutent correctement. [En savoir plus sur les workflows techniques](#technical-workflows)
 
-**Débit de diffusion et latence** - Effectuez le suivi du débit de diffusion (messages envoyés par heure) et de la latence pour les communications transactionnelles par Panneau de Contrôle. [En savoir plus sur la surveillance du débit](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/throughputs-latencies#_blank)
+**Débit de diffusion et latence** - Effectuez le suivi du débit de diffusion (messages envoyés par heure) et de la latence pour les communications transactionnelles par Panneau de Contrôle. [En savoir plus sur la surveillance du débit](https://experienceleague.adobe.com/fr/docs/control-panel/using/performance-monitoring/throughputs-latencies#_blank)
 
 >[!NOTE]
 >
@@ -150,7 +150,7 @@ Adobe surveille tous les équipements réseau critiques sur le réseau Campaign 
 >
 >Certaines actions de surveillance effectuées par Adobe apparaissent dans les journaux Campaign sous l’utilisateur **campaign-loginmonitor**.
 
-Outre la surveillance interne d’Adobe, vous pouvez accéder aux fonctionnalités de surveillance directement depuis la console cliente Campaign ou le [Panneau de Contrôle Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/self-service). Par Panneau de Contrôle, vous pouvez vous abonner à des alertes en temps réel sur vos instances et recevoir des mesures correctives recommandées pour les incidents identifiés (par exemple, l’expiration prochaine des certificats SSL).
+Outre la surveillance interne d’Adobe, vous pouvez accéder aux fonctionnalités de surveillance directement depuis la console cliente Campaign ou le [Panneau de Contrôle Campaign](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/permissions/self-service). Par Panneau de Contrôle, vous pouvez vous abonner à des alertes en temps réel sur vos instances et recevoir des mesures correctives recommandées pour les incidents identifiés (par exemple, l’expiration prochaine des certificats SSL).
 
 **Surveillance de la taxonomie**
 
@@ -198,7 +198,7 @@ Les workflows techniques sont des processus essentiels qui s’exécutent en arr
 | **Mise à jour délivrabilité** | Met à jour les règles de délivrabilité et les modèles de filtre anti-spam | Les règles deviennent obsolètes ; la précision du filtrage peut se dégrader |
 | **Nettoyage de la base de données** | Purge les anciens logs de tracking et de diffusion | L’accumulation de journaux ralentit les requêtes et les rapports au fil du temps |
 
-En savoir plus sur les [workflows techniques](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows#_blank)
+En savoir plus sur les [workflows techniques](https://experienceleague.adobe.com/fr/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows#_blank)
 
 ### Panneau de contrôle Campaign {#control-panel}
 
@@ -210,7 +210,7 @@ Le Panneau de Contrôle Campaign permet aux administrateurs de surveiller et de 
 | **Infrastructure** | Surveiller la capacité de stockage SFTP, suivre la configuration des sous-domaines, surveiller l’expiration des certificats SSL, gérer les listes autorisées d’adresses IP |
 | **Instance** | Afficher la version de build et les packages installés, surveiller la configuration du système, gérer les domaines externes autorisés |
 
-En savoir plus sur la surveillance des performances des Panneaux de Contrôle [&#128279;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/self-service) et [&#128279;](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/about-performance-monitoring#_blank)
+En savoir plus sur la surveillance des performances des Panneaux de Contrôle [&#128279;](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/permissions/self-service) et [&#128279;](https://experienceleague.adobe.com/fr/docs/control-panel/using/performance-monitoring/about-performance-monitoring#_blank)
 
 >[!NOTE]
 >
@@ -238,7 +238,7 @@ Adobe Campaign fournit un ensemble complet de rapports pour analyser les perform
 - **URL et flux de clics** : liens les plus populaires dans vos diffusions
 - **Position des clics** : représentation visuelle de l’emplacement où les destinataires ont cliqué dans votre e-mail
 
-En savoir plus sur les [&#x200B; rapports de diffusion &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports)
+En savoir plus sur les [&#x200B; rapports de diffusion &#x200B;](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports)
 
 ### Rapports globaux {#global-reports}
 
@@ -248,11 +248,11 @@ Accédez aux rapports globaux pour analyser les performances de toutes les campa
 - **Échecs et retours** : analyse des diffusions en échec
 - **Activités utilisateur** : s’ouvre, clique et se désabonne dans toutes les campagnes
 
-En savoir plus sur les [&#x200B; rapports globaux &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports)
+En savoir plus sur les [&#x200B; rapports globaux &#x200B;](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports)
 
 ## Rubriques connexes {#related-topics}
 
 - [Bonnes pratiques de diffusion](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/send/delivery-best-practices)
 - [Gestion des quarantaines](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/send/monitor/quarantines)
-- [Configuration et envoi de diffusions](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/validate/configure-and-send)
+- [Configuration et envoi de diffusions](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/send/validate/configure-and-send)
 - [Prise en main des rapports](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/analytics/reports/gs-reporting)
