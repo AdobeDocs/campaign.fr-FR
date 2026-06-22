@@ -6,11 +6,18 @@ role: User
 level: Beginner
 exl-id: 2ad585f2-19bc-4391-8a19-9e892dbe01a3
 TQID: https://experienceleague.adobe.com/PjU1EFX5x4iB3yRsShGBWoR0k1D2-EI90-ss0FTcexE
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 6cf587ecc9cc1e4cf9b3de0d2067e0c4562afe01
 workflow-type: tm+mt
 source-wordcount: 2206
@@ -24,15 +31,15 @@ Adobe Campaign vous offre une visibilité à tous les niveaux, depuis le moment 
 
 >[!NOTE]
 >
->En tant qu’administrateur Campaign, vous pouvez également utiliser le Panneau de Contrôle Campaign](#control-panel) pour surveiller vos instances, gérer les performances et configurer les paramètres avec des fonctionnalités en libre-service.[
+>En tant qu’administrateur Campaign, vous pouvez également utiliser le Panneau de Contrôle Campaign[&#128279;](#control-panel) pour surveiller vos instances, gérer les performances et configurer les paramètres avec des fonctionnalités en libre-service.
 
 >[!TIP]
 >
 >**Vous ne savez pas par où commencer ?**
 >
->- [ Vérification du spécialiste marketing sur une campagne →surveiller vos diffusions](#monitor-deliveries)
+>- [&#x200B; Vérification du spécialiste marketing sur une campagne →surveiller vos diffusions](#monitor-deliveries)
 >- Résolution des problèmes liés à un workflow → [surveiller les workflows](#monitor-workflows)
->- L’administrateur vérifiant l’intégrité de l’instance → [ Surveiller votre instance ](#monitor-instance)
+>- L’administrateur vérifiant l’intégrité de l’instance → [&#x200B; Surveiller votre instance &#x200B;](#monitor-instance)
 
 ## Surveiller vos diffusions {#monitor-deliveries}
 
@@ -96,7 +103,7 @@ Les workflows sont essentiels pour automatiser vos campagnes marketing et le tra
 
 ## Surveiller votre instance {#monitor-instance}
 
-La surveillance des instances permet d’assurer l’intégrité et les performances de votre environnement Adobe Campaign. Pour Campaign v8 Managed Cloud Services, Adobe surveille et gère également l’infrastructure pour votre compte. En savoir plus sur la [surveillance gérée par ](#adobe-cloud-monitoring).
+La surveillance des instances permet d’assurer l’intégrité et les performances de votre environnement Adobe Campaign. Pour Campaign v8 Managed Cloud Services, Adobe surveille et gère également l’infrastructure pour votre compte. En savoir plus sur la [surveillance gérée par &#x200B;](#adobe-cloud-monitoring).
 
 ### Journal d’audit {#audit-trail}
 
@@ -127,7 +134,7 @@ Campaign v8 fournit plusieurs fonctionnalités de surveillance pour suivre les p
 
 >[!NOTE]
 >
->Pour Campaign v8 Managed Cloud Services, l’infrastructure du serveur (CPU, mémoire, disque) est surveillée et gérée par Adobe. En savoir plus sur la [surveillance gérée par ](#adobe-cloud-monitoring).
+>Pour Campaign v8 Managed Cloud Services, l’infrastructure du serveur (CPU, mémoire, disque) est surveillée et gérée par Adobe. En savoir plus sur la [surveillance gérée par &#x200B;](#adobe-cloud-monitoring).
 
 ### Surveillance gérée par Adobe {#adobe-cloud-monitoring}
 
@@ -203,11 +210,11 @@ Le Panneau de Contrôle Campaign permet aux administrateurs de surveiller et de 
 | **Infrastructure** | Surveiller la capacité de stockage SFTP, suivre la configuration des sous-domaines, surveiller l’expiration des certificats SSL, gérer les listes autorisées d’adresses IP |
 | **Instance** | Afficher la version de build et les packages installés, surveiller la configuration du système, gérer les domaines externes autorisés |
 
-En savoir plus sur la surveillance des performances des Panneaux de Contrôle [](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/self-service) et [](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/about-performance-monitoring#_blank)
+En savoir plus sur la surveillance des performances des Panneaux de Contrôle [&#128279;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/self-service) et [&#128279;](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/about-performance-monitoring#_blank)
 
 >[!NOTE]
 >
->Pour Campaign v8 Managed Cloud Services, Adobe surveille et gère l’infrastructure du serveur, le système d’exploitation et la couche applicative. En savoir plus sur la [surveillance gérée par ](#adobe-cloud-monitoring). Vous pouvez utiliser les fonctionnalités de surveillance décrites sur cette page et dans ce Panneau de Contrôle pour surveiller les performances de votre instance, les workflows et les diffusions.
+>Pour Campaign v8 Managed Cloud Services, Adobe surveille et gère l’infrastructure du serveur, le système d’exploitation et la couche applicative. En savoir plus sur la [surveillance gérée par &#x200B;](#adobe-cloud-monitoring). Vous pouvez utiliser les fonctionnalités de surveillance décrites sur cette page et dans ce Panneau de Contrôle pour surveiller les performances de votre instance, les workflows et les diffusions.
 
 ## Tracking et reporting {#tracking-reporting}
 
@@ -231,7 +238,7 @@ Adobe Campaign fournit un ensemble complet de rapports pour analyser les perform
 - **URL et flux de clics** : liens les plus populaires dans vos diffusions
 - **Position des clics** : représentation visuelle de l’emplacement où les destinataires ont cliqué dans votre e-mail
 
-En savoir plus sur les [ rapports de diffusion ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports)
+En savoir plus sur les [&#x200B; rapports de diffusion &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports)
 
 ### Rapports globaux {#global-reports}
 
@@ -241,7 +248,7 @@ Accédez aux rapports globaux pour analyser les performances de toutes les campa
 - **Échecs et retours** : analyse des diffusions en échec
 - **Activités utilisateur** : s’ouvre, clique et se désabonne dans toutes les campagnes
 
-En savoir plus sur les [ rapports globaux ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports)
+En savoir plus sur les [&#x200B; rapports globaux &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports)
 
 ## Rubriques connexes {#related-topics}
 
