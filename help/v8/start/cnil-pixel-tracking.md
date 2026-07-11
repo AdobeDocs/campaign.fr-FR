@@ -1,12 +1,12 @@
 ---
-title: Pixels de tracking e-mail et conseils de la CNIL
+title: Pixels de suivi d’e-mails et conseils de la CNIL
 description: Présentation des conseils mis à jour de la CNIL sur les pixels de tracking e-mail et les fonctionnalités d’Adobe Campaign pouvant prendre en charge les efforts de conformité.
-version: Campaign v8, Campaign Classic v7, Campaign Standard
+version: Campaign v8, Campaign Classic v7
 hide: true
-source-git-commit: fc92f46a1df96412cc86b9a8c0946132f79a2da8
+source-git-commit: 6466434e6d91445dd12a81effde68d8ab6ba8960
 workflow-type: tm+mt
 source-wordcount: '849'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
