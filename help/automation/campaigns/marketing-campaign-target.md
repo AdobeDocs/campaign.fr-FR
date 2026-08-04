@@ -260,6 +260,6 @@ Cette configuration équivaut à une activité **[!UICONTROL Partage]** dans le 
 
 Cette vidéo explique comment ajouter une population témoin à une campagne.
 
->[!VIDEO](https://video.tv.adobe.com/v/335606?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3446920?captions=fre_fr&quality=12)
 
 D’autres vidéos pratiques sur Campaign sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=fr){target="_blank"}.
