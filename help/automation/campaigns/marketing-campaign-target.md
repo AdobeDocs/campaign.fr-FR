@@ -7,19 +7,14 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
 TQID: https://experienceleague.adobe.com/vSbY229FQjQL7M44gjs3WgYbYwMkcts98tuVVhS1LEw
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 1607
-ht-degree: 84%
+ht-degree: 99%
 
 ---
 
@@ -69,7 +64,7 @@ La cible principale d’une diffusion peut également être définie au travers 
 
 ### Créer le workflow {#create-a-targeting-workflow}
 
-Le ciblage peut être créé à l’aide d’une combinaison de conditions de filtrage, enchaînées graphiquement dans un workflow. Vous pouvez créer des populations et sous-populations qui seront ciblées en fonction de vos besoins. Pour afficher l&#39;éditeur de workflows, cliquez sur l&#39;onglet **[!UICONTROL Ciblage et workflows]** dans le tableau de bord des campagnes.
+Le ciblage peut être créé au moyen d’une combinaison de conditions de filtrage dans une séquence graphique de workflow. Vous pouvez créer des populations et sous-populations qui seront ciblées en fonction de vos besoins. Pour afficher l&#39;éditeur de workflows, cliquez sur l&#39;onglet **[!UICONTROL Ciblage et workflows]** dans le tableau de bord des campagnes.
 
 ![](assets/targeting-and-wf-tab.png)
 
@@ -81,13 +76,13 @@ Sélectionnez les objets dans les listes situées à gauche de l&#39;espace de t
 
 ![](assets/campaign-wf.png)
 
-Dans le diagramme, reliez les requêtes de ciblage et de planification requises pour la construction de la cible. Vous pouvez exécuter le ciblage en cours de construction afin de contrôler la population extraite de la base de données.
+Dans le diagramme, reliez entre elles les requêtes de ciblage et de planification nécessaires à la construction de la cible. Vous pouvez exécuter le ciblage en cours de construction afin de contrôler la population extraite de la base de données.
 
 >[!NOTE]
 >
 >Les exemples et la procédure pour définir des requêtes sont présentés dans [cette section](../workflow/query.md).
 
-La section gauche de l&#39;éditeur contient une bibliothèque d&#39;objets graphiques représentant les activités. Le premier onglet contient les activités de ciblage et le second les activités de contrôle de flux, utilisées occasionnellement pour coordonner les activités de ciblage.
+La section gauche de l’éditeur contient une bibliothèque d’objets graphiques représentant les activités. Le premier onglet regroupe les activités de ciblage et le deuxième contient les activités de contrôle du flux, qui sont utilisées occasionnellement afin de coordonner les activités de ciblage.
 
 La barre d&#39;outils de l&#39;éditeur de diagramme permet d&#39;accéder aux fonctions de mise en page et d&#39;exécution du workflow de ciblage.
 
@@ -97,7 +92,7 @@ La barre d&#39;outils de l&#39;éditeur de diagramme permet d&#39;accéder aux f
 >
 >Les activités disponibles pour la construction du diagramme, ainsi que toutes les problématiques d&#39;affichage et de mise en page, sont présentées dans [cette section](../workflow/about-workflows.md).
 
-Vous pouvez créer plusieurs workflows de ciblage pour une même campagne. Pour ajouter un workflow :
+Vous pouvez créer plusieurs workflows de ciblage pour une même campagne. Pour ajouter un workflow, procédez comme suit :
 
 1. Positionnez le pointeur de la souris dans la section supérieure gauche de la zone de création des workflows, cliquez avec le bouton droit et choisissez **[!UICONTROL Ajouter]**. Vous pouvez également utiliser le bouton **[!UICONTROL Nouveau]** situé au-dessus de cette zone.
 
@@ -112,49 +107,49 @@ Les workflows de ciblage peuvent être lancés manuellement via le bouton **[!UI
 
 Le ciblage peut être planifié afin de s&#39;exécuter automatiquement selon un planning (planificateur) ou un événement (signal externe, import d&#39;un fichier, etc.).
 
-Actions liées à l&#39;exécution du workflow de ciblage (lancement, arrêt, pause, etc.) sont des processus **asynchrones** : la commande est enregistrée et sera effective dès que le serveur sera disponible pour l’appliquer.
+Les actions liées à l’exécution du workflow de ciblage (lancement, arrêt, pause, etc.) sont des processus **asynchrones** : la commande est enregistrée et sera effective dès que le serveur est disponible pour l’appliquer.
 
 Les icônes de la barre d&#39;outils permettent d&#39;agir sur l&#39;exécution du workflow de ciblage.
 
 * Démarrer ou redémarrer
 
-   * L&#39;icône **[!UICONTROL Démarrer]** permet de lancer le workflow de ciblage. Lorsque vous cliquez sur cette icône, toutes les activités sans transition d&#39;entrée sont activées (sauf les sauts de fin).
+  * L’icône **[!UICONTROL Démarrer]** permet de lancer le workflow de ciblage. Lorsque vous cliquez sur cette icône, toutes les activités qui n’ont pas de transition entrante sont activées (sauf les sauts de point d’entrée).
 
-     ![](assets/start.png)
+    ![](assets/start.png)
 
-     Le serveur prend la demande en compte, comme indiqué par son statut : **[!UICONTROL Démarrer dès que possible]**.
+    Le serveur prend la demande en compte, comme indiqué par son statut : **[!UICONTROL Démarrer dès que possible]**.
 
-   * Vous pouvez redémarrer le workflow de ciblage à partir de l’icône correspondante de la barre d’outils. Cette commande peut être utile si l&#39;icône **[!UICONTROL Démarrer]** n&#39;est pas disponible, par exemple lorsque l&#39;arrêt du workflow de ciblage est en cours. Dans ce cas, cliquez sur l&#39;icône **[!UICONTROL Redémarrer]** pour anticiper le démarrage. La demande est prise en compte par le serveur, comme le notifie son état : **[!UICONTROL Redémarrage demandé]**.
+  * Vous pouvez redémarrer le workflow de ciblage à partir de l’icône correspondante de la barre d’outils. Cette commande peut être utile si l&#39;icône **[!UICONTROL Démarrer]** n&#39;est pas disponible, par exemple lorsque l&#39;arrêt du workflow de ciblage est en cours. Dans ce cas, cliquez sur l&#39;icône **[!UICONTROL Redémarrer]** pour anticiper le démarrage. La demande est prise en compte par le serveur, comme le notifie son état : **[!UICONTROL Redémarrage demandé]**.
 
 * Arrêter ou suspendre
 
-   * Les icônes de la barre d&#39;outils permettent d&#39;arrêter ou suspendre un workflow de ciblage en cours d&#39;exécution.
+  * Les icônes de la barre d&#39;outils permettent d&#39;arrêter ou suspendre un workflow de ciblage en cours d&#39;exécution.
 
-     Lorsque vous cliquez sur licône **[!UICONTROL Pause]**, les opérations en cours **[!UICONTROL ne sont pas]** suspendues, mais aucune autre activité nest lancée jusquau prochain redémarrage.
+    Lorsque vous cliquez sur licône **[!UICONTROL Pause]**, les opérations en cours **[!UICONTROL ne sont pas]** suspendues, mais aucune autre activité nest lancée jusquau prochain redémarrage.
 
-     ![](assets/pause.png)
+    ![](assets/pause.png)
 
-     La commande est prise en compte par le serveur, comme indiqué par son statut : **[!UICONTROL Pause demandée]**.
+    La commande est prise en compte par le serveur, comme indiqué par son statut : **[!UICONTROL Pause demandée]**.
 
-     Vous pouvez également suspendre automatiquement un workflow de ciblage lorsque l’exécution arrive à une activité spécifique. Pour cela, cliquez avec le bouton droit sur l&#39;activité à partir de laquelle le workflow de ciblage sera suspendu et choisissez **[!UICONTROL Activer mais ne pas exécuter]**.
+    Vous pouvez également suspendre automatiquement un workflow de ciblage lorsque l’exécution arrive à une activité spécifique. Pour cela, cliquez avec le bouton droit sur l&#39;activité à partir de laquelle le workflow de ciblage sera suspendu et choisissez **[!UICONTROL Activer mais ne pas exécuter]**.
 
-     ![](assets/donotexecute.png)
+    ![](assets/donotexecute.png)
 
-     Une icône spécifique matérialise ce paramétrage.
+    Une icône spécifique matérialise ce paramétrage.
 
-     ![](assets/pause_activity.png)
+    ![](assets/pause_activity.png)
 
-     >[!NOTE]
-     >
-     >Cette option est utile lors des phases de conception et de test d&#39;une opération de ciblage.
+    >[!NOTE]
+    >
+    >Cette option est utile lors des phases de conception et de test d&#39;une opération de ciblage.
 
-     Cliquez sur **[!UICONTROL Démarrer]** pour reprendre l&#39;exécution.
+    Cliquez sur **[!UICONTROL Démarrer]** pour reprendre l&#39;exécution.
 
-   * Cliquez sur l&#39;icône **[!UICONTROL Arrêter]** pour stopper l&#39;exécution en cours.
+  * Cliquez sur l&#39;icône **[!UICONTROL Arrêter]** pour stopper l&#39;exécution en cours.
 
-     ![](assets/stop.png)
+    ![](assets/stop.png)
 
-     La commande est prise en compte par le serveur, comme indiqué par son statut : **[!UICONTROL Arrêt demandé]**.
+    La commande est prise en compte par le serveur, comme indiqué par son statut : **[!UICONTROL Arrêt demandé]**.
 
   Vous pouvez également arrêter automatiquement un workflow de ciblage lorsque l’exécution arrive à une activité. Pour cela, cliquez avec le bouton droit sur l&#39;activité à partir de laquelle le workflow de ciblage sera suspendu et choisissez **[!UICONTROL Ne pas activer]**.
 
@@ -173,7 +168,7 @@ Les icônes de la barre d&#39;outils permettent d&#39;agir sur l&#39;exécution 
 
   Dans l&#39;Explorateur, sélectionnez **[!UICONTROL Administration > Exploitation > Objets créés automatiquement > Workflows des opérations]** pour accéder aux workflows des opérations et agir sur ces derniers.
 
-  Vous pouvez arrêter votre workflow de manière inconditionnelle en cliquant sur l’icône **[!UICONTROL Actions]** et en sélectionnant **[!UICONTROL Inconditionnel]** arrêter. Cette action met fin à votre workflow de campagne.
+  Vous pouvez effectuer un arrêt sans conditions de votre workflow en cliquant sur l’icône **[!UICONTROL Actions]** et en sélectionnant **[!UICONTROL Arrêt inconditionnel]**. Cette action met fin à votre workflow de campagne.
 
   ![](assets/stop_unconditional.png)
 
@@ -211,7 +206,7 @@ La procédure complète est présentée dans [cette section](#extract-the-contro
 
 Vous pouvez définir une population témoin au niveau de la diffusion : elle sera alors appliquée à chaque diffusion de l&#39;opération concernée.
 
-Par défaut, la configuration de la population témoin définie au niveau de la campagne s’applique à chaque diffusion de cette campagne. Vous pouvez toutefois adapter la population témoin à une diffusion particulière.
+Par défaut, le paramétrage de la population témoin défini au niveau de la campagne s’applique pour chaque diffusion de cette campagne. Vous pouvez toutefois adapter la population témoin unitairement pour une diffusion.
 
 >[!NOTE]
 >
