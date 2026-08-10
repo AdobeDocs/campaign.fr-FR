@@ -89,7 +89,7 @@ Oui ! Grâce à l&#39;intégration avec l&#39;IMS (système Adobe Identity Manag
 
 Reportez-vous à [cette section](campaign-ui.md) pour en savoir plus sur les bases de l’interface utilisateur d’Adobe Campaign.
 
-À compter de la version 8.6 de Campaign, vous avez également accès à la nouvelle **interface utilisateur web de Campaign**, disponible via l’environnement Adobe Experience Cloud central.
+À compter de la version 8.6 de Campaign, vous avez également accès à la nouvelle **interface utilisateur web de Campaign**, disponible via l’environnement central d’Adobe Experience Cloud.
 
 [En savoir plus dans la documentation de l’interface utilisateur web d’Adobe Campaign](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
@@ -263,7 +263,7 @@ En tant qu’utilisateur Managed Cloud Services, Adobe gère les mises à niveau
 
 La mise à niveau vers la dernière version de Campaign est essentielle pour la sécurité, les performances et la qualité de support.
 
-**Principaux avantages :**
+**Principaux avantages :**
 
 * **Sécurité renforcée** - Protection contre les vulnérabilités, correctifs les plus récents, protection des données renforcée
 * **Meilleure prise en charge** - Résolution plus rapide des problèmes, accès aux correctifs, prise en charge prioritaire des versions récentes
@@ -336,7 +336,7 @@ Campaign v8 repose sur une architecture moderne native cloud, avec des améliora
 
 Campaign v8 est une plateforme Adobe idéale pour les organisations qui ont besoin de campagnes volumineuses (20 millions d’opérations par heure), d’une interface utilisateur web moderne, d’avantages natifs dans le cloud et d’une prise en charge à long terme.
 
-**Principaux avantages :**
+**Principaux avantages :**
 
 * **Pour les utilisateurs de Campaign Standard** interface utilisateur web familière, parité des fonctionnalités (rapports dynamiques, API REST, pages de destination), migration fluide des données
 * **Pour les utilisateurs de Campaign Classic v7** : interface double (console + interface utilisateur web), meilleures performances, mises à niveau automatiques, architecture FFDA améliorée
@@ -345,7 +345,7 @@ Campaign v8 est une plateforme Adobe idéale pour les organisations qui ont beso
 
 * Vous gérez des volumes de données importants ou rencontrez des problèmes de performances.
 * Envie de réduire les frais généraux informatiques et la gestion de l’infrastructure
-* Intégration de Adobe Experience Cloud/Platform requise
+* Intégration d’Adobe Experience Cloud/Platform requise
 * Vous souhaitez disposer d’une technologie évolutive avec des mises à jour automatiques.
 
 **Étapes suivantes :** contactez votre représentant ou représentante Adobe pour évaluer la préparation à la migration et accéder aux outils de migration.
@@ -906,7 +906,7 @@ Découvrez comment utiliser des workflows pour automatiser les processus, gérer
 
 +++ Qu’est-ce qu&#39;un workflow ?
 
-Adobe Campaign comprend des workflows pour orchestrer l’ensemble des processus et tâches dans les différents modules du serveur d’applications. Cet environnement graphique complet permet de concevoir des processus englobant segmentation, exécution de campagnes, traitement de fichiers, participation humaine, etc. Le moteur de workflow exécute et suit ces processus.
+Adobe Campaign comprend des workflows pour orchestrer l’ensemble des processus et tâches dans les différents modules du serveur d’applications. Cet environnement graphique complet vous permet de concevoir des processus englobant segmentation, exécution de campagnes, traitement de fichiers, participation humaine, etc. Le moteur de workflow exécute et assure le suivi de ces processus.
 
 Un workflow permet par exemple de télécharger un fichier depuis un serveur, de le décompresser et d&#39;importer ses enregistrements dans la base de données Adobe Campaign.
 
@@ -1189,7 +1189,7 @@ Le Panneau de Contrôle Campaign est une interface administrative web qui permet
 **Conditions d’accès requises :**
 
 * **Utilisateurs administrateurs uniquement** - Le Panneau de Contrôle est limité aux utilisateurs disposant de droits d’administrateur
-* **Authentification Adobe IMS** - Accès via Adobe Experience Cloud avec votre Adobe ID
+* **Authentification Adobe IMS** - Accédez à votre Adobe ID via Adobe Experience Cloud
 * **Campaign v8 Managed Cloud Services** - Disponible uniquement pour les instances hébergées
 
 **Ressources supplémentaires :**
