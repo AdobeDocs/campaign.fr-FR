@@ -6,22 +6,15 @@ role: Admin, User
 level: Beginner
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
 TQID: https://experienceleague.adobe.com/AdMAot4jNWYNIbQVxEYvvodsffQ-kc405Dk8D5FwHFk
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 989cd72ab555a1b81042bbc043c246427e22a0d4
 workflow-type: tm+mt
-source-wordcount: 1653
-ht-degree: 89%
+source-wordcount: 1836
+ht-degree: 79%
 
 ---
 
@@ -52,6 +45,7 @@ Pour configurer la connexion Campaign-Analytics, vous devez effectuer les opéra
 
 1. [Création de votre suite de rapports dans Adobe Analytics](#report-suite-analytics)
 1. [Configuration des variables de conversion et des événements de succès](#configure-conversion-success)
+1. [Créer un ensemble de classifications](#create-classification-set)
 1. [Configuration de votre compte externe dans Adobe Campaign](#external-account-ac)
 
 ## Création de votre suite de rapports Analytics {#report-suite-analytics}
@@ -127,7 +121,30 @@ Après avoir créé votre **[!UICONTROL suite de rapports]**, vous devez configu
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** lorsque vous avez terminé.
 
-Une fois votre suite de rapports configurée, vous devez configurer les **[!UICONTROL comptes externes]** dans Adobe Campaign.
+## Créer un ensemble de classifications {#create-classification-set}
+
+Depuis la migration vers l’API Adobe Analytics 2.0, vous devez également créer un **[!UICONTROL ensemble de classifications]** dans Adobe Analytics avant de configurer votre compte externe dans Campaign. Cet ensemble de classifications lie la variable de conversion que vous venez de créer (le nom de votre campagne interne) à la suite de rapports, de sorte que Campaign puisse automatiquement la découvrir et l’utiliser lorsque vous configurez le compte externe à l’étape suivante.
+
+Pour créer votre ensemble de classifications :
+
+1. Dans la barre de menus supérieure [!DNL Adobe Analytics], sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Ensembles de classifications]**, puis cliquez sur **[!UICONTROL Nouveau]**.
+
+   ![](assets/analytics_connnector_16.png)
+
+1. Dans la boîte de dialogue **[!UICONTROL Ajouter un nouvel ensemble de classifications]** :
+
+   ![](assets/analytics_connnector_17.png)
+
+   * Saisissez un **[!UICONTROL Nom]** pour l’ensemble de classifications.
+   * Définissez le **[!UICONTROL Type]** sur **[!UICONTROL Principal]**.
+   * Dans **[!UICONTROL Notifications de tâche]**, choisissez les personnes à avertir de la réussite ou de l’échec des tâches de l’ensemble de classifications et indiquez les adresses e-mail correspondantes.
+   * Dans **[!UICONTROL Abonnements]**, sélectionnez votre suite de rapports et la variable de conversion que vous avez créée pour le nom de la campagne interne à l’étape précédente.
+
+1. Cliquez sur **[!UICONTROL Enregistrer]**.
+
+Pour plus d’informations sur les ensembles de classifications, consultez la documentation d’[](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/create-set){target="_blank"}.
+
+Lorsque votre suite de rapports, vos variables de conversion, vos événements de succès et votre ensemble de classifications sont configurés, vous devez configurer les **[!UICONTROL comptes externes]** dans Adobe Campaign.
 
 ## Configuration de votre compte externe Campaign {#external-account-ac}
 
@@ -248,7 +265,7 @@ Les attributs envoyés sont les suivants :
 
 ## Suivi des diffusions {#tracking-deliveries-in-adobe-campaign}
 
-Pour que le Adobe Experience Cloud puisse suivre l’activité sur les sites une fois la diffusion envoyée par Adobe Campaign, vous devez référencer le connecteur correspondant dans les propriétés de la diffusion. Pour cela, les étapes sont les suivantes :
+Pour qu’Adobe Experience Cloud puisse suivre l’activité sur les sites une fois la diffusion envoyée par Adobe Campaign, vous devez référencer le connecteur correspondant dans les propriétés de la diffusion. Pour cela, les étapes sont les suivantes :
 
 1. Ouvrez la diffusion de la campagne destinée à être suivie.
 
