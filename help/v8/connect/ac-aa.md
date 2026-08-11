@@ -6,11 +6,18 @@ role: Admin, User
 level: Beginner
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
 TQID: https://experienceleague.adobe.com/AdMAot4jNWYNIbQVxEYvvodsffQ-kc405Dk8D5FwHFk
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 989cd72ab555a1b81042bbc043c246427e22a0d4
 workflow-type: tm+mt
 source-wordcount: 1836
@@ -142,7 +149,7 @@ Pour créer votre ensemble de classifications :
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-Pour plus d’informations sur les ensembles de classifications, consultez la documentation d’[](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/create-set){target="_blank"}.
+Pour plus d’informations sur les ensembles de classifications, consultez la documentation d’[&#128279;](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/create-set){target="_blank"}.
 
 Lorsque votre suite de rapports, vos variables de conversion, vos événements de succès et votre ensemble de classifications sont configurés, vous devez configurer les **[!UICONTROL comptes externes]** dans Adobe Campaign.
 
