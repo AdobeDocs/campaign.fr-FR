@@ -149,7 +149,7 @@ Pour créer votre ensemble de classifications :
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-Pour plus d’informations sur les ensembles de classifications, consultez la documentation d’[&#128279;](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/create-set){target="_blank"}.
+Pour plus d’informations sur les ensembles de classifications, consultez la documentation d’[&#128279;](https://experienceleague.adobe.com/fr/docs/analytics/components/classifications/sets/create-set){target="_blank"}.
 
 Lorsque votre suite de rapports, vos variables de conversion, vos événements de succès et votre ensemble de classifications sont configurés, vous devez configurer les **[!UICONTROL comptes externes]** dans Adobe Campaign.
 
