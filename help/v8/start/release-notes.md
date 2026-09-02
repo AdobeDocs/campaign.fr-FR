@@ -13,9 +13,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 989cd72ab555a1b81042bbc043c246427e22a0d4
+source-git-commit: 7e14d410aba444e792a24c99a843f122a8fcedc6
 workflow-type: tm+mt
-source-wordcount: 1995
+source-wordcount: 2007
 ht-degree: 6%
 
 ---
@@ -28,15 +28,21 @@ Cette page répertorie les nouvelles fonctionnalités, les améliorations et les
 
 _1 août 2026_
 
-Cette version comprend plusieurs améliorations du produit et correctifs de sécurité, notamment la mise à niveau du connecteur Adobe Analytics vers l’API Analytics 2.0.
+<!-- CONFIRM: is a client console upgrade required for 8.9.3? If yes, add the >[!CAUTION] notice used in 8.9.2/8.9.1. If no, add an explicit one-line "no console upgrade required for this release" statement so the absence reads as intentional. -->
 
->[!NOTE]
->
-> Accédez au menu **[!UICONTROL Aide > À propos...]** [&#128279;](upgrades.md#version) pour vérifier que vous disposez de la version 9835 ou ultérieure.
+### Améliorations de la sécurité {#security-8-9-3}
+
+Cette version comprend des correctifs de sécurité qui renforcent la position de sécurité globale de votre environnement Campaign. En tant que client hébergé, ces correctifs sont appliqués par Adobe dans le cadre de la mise à niveau, sans qu’aucune action ne soit requise de votre part.
 
 ### Connecteur Adobe Analytics mis à niveau vers l’API Analytics 2.0 {#analytics-2-0-8-9-3}
 
-Les API d’Adobe Analytics 1.4 étant [en fin de vie](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"}, le connecteur [Web Analytics](../connect/ac-aa.md), qui envoie vos indicateurs de campagne et vos données de classification à Adobe Analytics, prend en charge le flux de remarketing et est utilisé pour configurer de nouvelles suites de rapports, a été mis à niveau vers l’API Analytics 2.0 dans le cadre de cette version. En tant que client hébergé, Adobe prend en charge cette migration pour vous. Aucune configuration n’est requise de votre côté. La mise à niveau réimporte les workflows techniques intégrés qui alimentent le connecteur (**[!UICONTROL webAnalyticsSendMetrics]** et **[!UICONTROL webAnalyticsGetWebEvents]**) et met à jour les fichiers JavaScript Analytics intégrés. Par conséquent, si vous avez personnalisé l’un de ces workflows ou créé des workflows personnalisés qui référencent ces fichiers, réappliquez et adaptez cette personnalisation après la mise à niveau, car elle sera sinon remplacée ou interrompue. Il est recommandé d’éviter de modifier directement les workflows intégrés et de créer plutôt votre personnalisation dans un workflow personnalisé distinct, de sorte que les futures mises à niveau ne la remplacent pas. Une fois la mise à niveau terminée, validez les cas d’utilisation d’Adobe Analytics sur lesquels vous comptez (exportation de mesures, exportation de classifications et remarketing, le cas échéant) pour confirmer que les données continuent de circuler comme prévu.
+Les API d’Adobe Analytics 1.4 étant [en fin de vie](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"}, le [connecteur Web Analytics](../connect/ac-aa.md) a été mis à niveau vers l’API Analytics 2.0 dans le cadre de cette version. En tant que client hébergé, Adobe prend en charge cette migration pour vous. Aucune configuration n’est requise de votre côté.
+
++++ En savoir plus sur la mise à niveau d’Analytics 2.0
+
+Le [&#x200B; connecteur Web Analytics &#x200B;](../connect/ac-aa.md) envoie vos indicateurs de campagne et vos données de classification à Adobe Analytics, prend en charge le flux de remarketing et est utilisé pour configurer de nouvelles suites de rapports. La mise à niveau réimporte les workflows techniques intégrés qui alimentent le connecteur (**[!UICONTROL webAnalyticsSendMetrics]** et **[!UICONTROL webAnalyticsGetWebEvents]**) et met à jour les fichiers JavaScript Analytics intégrés. Par conséquent, si vous avez personnalisé l’un de ces workflows ou créé des workflows personnalisés qui référencent ces fichiers, réappliquez et adaptez cette personnalisation après la mise à niveau, car elle sera sinon remplacée ou interrompue. Il est recommandé d’éviter de modifier directement les workflows intégrés et de créer plutôt votre personnalisation dans un workflow personnalisé distinct, de sorte que les futures mises à niveau ne la remplacent pas. Une fois la mise à niveau terminée, validez les cas d’utilisation d’Adobe Analytics sur lesquels vous comptez (exportation de mesures, exportation de classifications et remarketing, le cas échéant) pour confirmer que les données continuent de circuler comme prévu.
+
++++
 
 ## Version 8.9.2 {#release-8-9-2}
 
@@ -61,35 +67,17 @@ _3 mai 2026_
 * Correction d’un problème qui empêchait la capture du champ de langue pour les jetons d’enregistrement de l’application Android en raison de clés de réconciliation incorrectes. (NEO-93100)
 * Correction d’un problème en raison duquel la préparation de diffusion échouait lors de l’application de règles de typologie personnalisées avec des règles de pression. (NEO-94457)
 * Correction d’un problème en raison duquel la console cliente pouvait rencontrer des échecs de traitement des requêtes HTTP. (NEO-94071)
-
-<!-- BUILD 8.9.2.9829.9669833 -->
-
 * La surveillance FDA est désormais désactivée par défaut pour éviter les erreurs d’insertion de journaux de connexion. (NEO-94841)
 * Correction d&#39;un problème en raison duquel les appels SOAP Interaction utilisés pour le rachat d&#39;offres pouvaient échouer avec une erreur de résolution d&#39;espace de noms. (NEO-94787)
-<!-- infra * Fixed an issue where Snowflake connections using private key authentication could fail on ARM64 architectures. (NEO-94350) -->
 * Correction d’un problème où les champs de chaîne de longueur 1 pouvaient entraîner des erreurs SQL dans les tables temporaires de workflow sur PostgreSQL 17. (NEO-94487)
-<!-- linked to previous build * Fixed an issue where the server could fail to restart after a Debian 13 build upgrade due to a missing dependency. (NEO-94598) -->
-
-<!-- BUILD 8.9.2.9829.c90aa36 -->
-
 * Correction d’un problème en raison duquel l’option **Afficher la page miroir** dans la console cliente et l’interface utilisateur web pouvait renvoyer une erreur « Page miroir incorrecte ». (NEO-93303)
-
-<!-- BUILD 8.9.2.9830.4a6f868 -->
-
 * Correction d’un problème en raison duquel le workflow technique prêt à l’emploi **Tracking** pouvait échouer après l’installation d’un package multivarié dans les déploiements FFDA. (NEO-94972)
 * Correction d’un problème en raison duquel la préparation de la diffusion pouvait ne pas ajouter de destinataires à la cible lorsque le modèle de diffusion utilisait une formule de poids faisant référence à la diffusion actuelle. (NEO-94892)
-<!-- hotfix -->
 * Correction d’un problème en raison duquel les enrichissements de workflow à l’aide de jointures sur deux liens 1-N consécutifs pouvaient échouer avec des erreurs SQL après une mise à niveau. (NEO-94893)
-
-<!-- BUILD 8.9.2.9831.f53d3d2 -->
-
 * Correction d’un problème dans le pipeline d’e-mail qui entraînait une consommation excessive de mémoire au fil du temps. (NEO-95088)
 * Correction d’un problème en raison duquel la règle de typologie des e-mails en conflit pouvait exclure de manière incorrecte les destinataires non dupliqués d’une cible de diffusion lors de l’utilisation d’adresses de contrôle ou de BAT. (NEO-95026)
 * Correction d&#39;un problème en raison duquel le workflow technique prêt à l&#39;emploi **Notification d&#39;offre** pouvait échouer après une mise à niveau. (NEO-95064)
 * Le processus d’installation de packages multivariés a été amélioré afin d’éviter les échecs de workflow de suivi lors des mises à niveau de build. (NEO-95018)
-
-<!-- BUILD 8.9.2.9831.11d1c68 -->
-
 * Correction d’un problème en raison duquel le serveur se bloquait à plusieurs reprises, provoquant des pannes d’instance. (NEO-95304)
 * Correction d’un problème en raison duquel le suivi et les liens de page miroir ne parvenaient pas à charger les diffusions. (NEO-95239)
 * Correction d’un problème qui entraînait une boucle de redirection lors de la connexion aux applications web de Campaign protégées par l’authentification unique IMS. (NEO-95188)
@@ -98,22 +86,10 @@ _3 mai 2026_
 * Correction d&#39;un problème en raison duquel l&#39;activité **Lecture de liste** pouvait remplacer les modèles de liste prédéfinis par des structures de liste générées par des workflows, provoquant des échecs dans les workflows en aval. (NEO-95103)
 * Correction d’un problème en raison duquel la gestion des commentaires sur les notifications push entraînait le blocage du serveur lors du traitement de diffusions en masse. (NEO-95150)
 * Correction d’un problème en raison duquel l’ouverture de l’onglet **Data** sur le schéma `xtk:workflow` dans l’explorateur de schémas pouvait déclencher un message d’erreur. (NEO-94923)
-<!-- hotfixes -->
 * Correction d’un problème en raison duquel l’activité **Enrichissement** ne pouvait plus récupérer les attributs de sortie des activités **Sous-workflow** en amont, ce qui entraînait l’échec des workflows. (NEO-95151)
 * Correction d’un problème d’ingestion des données de tracking qui empêchait les mises à jour de l’état des diffusions et bloquait le traitement des messages en aval. (NEO-94666)
 * Correction d’un problème en raison duquel certaines actions de la console cliente liées aux propositions d’offre pouvaient déclencher des requêtes de longue durée sur les bases de données Snowflake, provoquant des verrous et de la lenteur. (NEO-92936)
 * Correction d’un problème en raison duquel les options personnalisées de stockage des clés chiffrées ne pouvaient pas être configurées sur les comptes externes Snowflake. (NEO-93302)
-
-<!-- 
-Internal/non-customer-facing:
-* Internal test automation task added to cover NEO-94893. (NEO-94990) — autotest only
-Customer-specific hotfixes:
-* Fixed an issue affecting WhatsApp delivery preparation. (NEO-92480) — HeroMotoCorp only
-* Added a feature-flagged optimization to use dynamic shared memory in Customer Targeting Audience (CTA) processing. (NEO-93542) — DerTour only
-* Fixed an issue where the delivery alerting workflow could fire incorrect "long start pending" notifications even when deliveries were sent within the configured threshold. (NEO-93434) — non-ZDT hotfix, NORC only
-* Added a new parameter in the mobile SDK to allow identification of the source instance for push notifications. (NEO-94650) — ICICI only
-* Fixed an issue with the custom send time feature on the Web UI where deliveries waited until the contact date and time to execute instead of executing at the equivalent local time per recipient timezone, breaking parity with Campaign Standard behavior. (NEO-94762) — H&M only (in progress at time of writing)
--->
 
 ## Version 8.9.1 {#release-8-9-1}
 
@@ -123,6 +99,14 @@ _27 janvier 2026_
 >
 > La mise à niveau de la console cliente est obligatoire. Découvrez comment mettre à niveau votre console cliente sur cette [page](../start/connect.md#upgrade-ac-console).
 
+### Améliorations de la sécurité {#security-8-9-1}
+
+* Les comptes externes Snowflake prennent désormais en charge l’authentification OAuth2, fournissant des méthodes d’authentification modernes et sécurisées pour les connexions d’accès aux données fédérées. (NEO-87013) [En savoir plus](../config/external-accounts.md#snowflake-external-accounts)
+* Les comptes externes de briques de données prennent désormais en charge l’authentification OAuth2 via le principal de service (flux d’informations d’identification client non interactif), fournissant des méthodes d’authentification sécurisées pour les connexions d’accès aux données fédérées. L’authentification OAuth2 interactive sera disponible dans une version ultérieure. (NEO-87422) [En savoir plus](../config/external-accounts.md#databricks-external-accounts)
+* Correction de vulnérabilités d’accès aux fichiers de workflow en limitant les opérations aux répertoires autorisés, en empêchant l’accès non autorisé et l’exécution potentielle de code à distance. (NEO-88460)
+* Ajout de contrôles d’URL FTP aux activités de code de JavaScript de workflow, limitant les connexions FTP sortantes aux adresses autorisées uniquement. (NEO-89083)
+* Correction d’un problème de sécurité qui entraînait un déni de service de l’application. (NEO-89984)
+
 ### Nouvelles fonctionnalités {#new-8-9-1}
 
 Le **nouveau connecteur d&#39;envoi de SMS** est désormais disponible pour tous les clients (GA). Consultez la [documentation détaillée](../send/sms/sms.md).
@@ -131,19 +115,12 @@ Cette version est fournie avec un ensemble de fonctionnalités disponibles dans 
 
 * [Fonctionnalités de diffusion multilingue (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=fr){target="_blank"}
 * [Enrichissement du profil dans les messages transactionnels (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=fr){target="_blank"}
-* [Adobe Experience Manager Live et copies de langue](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=fr){target="_blank"}
+* [Live Copies et copies de langue de Adobe Experience Manager](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=fr){target="_blank"}
 * [Expériences de contenu - Tests AB](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=fr){target="_blank"}
-* [Activité de diffusion au fil de l&#39;eau](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=fr){target="_blank"}
-* [Gestion de la validation des campagnes](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=fr){target="_blank"}
+* [Activité de diffusion continue](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=fr){target="_blank"}
+* [Gestion de la validation de campagne](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=fr){target="_blank"}
 
 Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Campaign [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}
-
-### Améliorations de la sécurité {#security-8-9-1}
-
-* Les comptes externes Snowflake prennent désormais en charge l’authentification OAuth2, fournissant des méthodes d’authentification modernes et sécurisées pour les connexions d’accès aux données fédérées. (NEO-87013) [En savoir plus](../config/external-accounts.md#snowflake-external-accounts)
-* Les comptes externes de briques de données prennent désormais en charge l’authentification OAuth2 via le principal de service (flux d’informations d’identification client non interactif), fournissant des méthodes d’authentification sécurisées pour les connexions d’accès aux données fédérées. L’authentification OAuth2 interactive sera disponible dans une version ultérieure. (NEO-87422) [En savoir plus](../config/external-accounts.md#databricks-external-accounts)
-* Correction de vulnérabilités d’accès aux fichiers de workflow en limitant les opérations aux répertoires autorisés, en empêchant l’accès non autorisé et l’exécution potentielle de code à distance. (NEO-88460)
-* Ajout de contrôles d’URL FTP aux activités de code de JavaScript de workflow, limitant les connexions FTP sortantes aux adresses autorisées uniquement. (NEO-89083)
 
 ### Autres changements {#changes-8-9-1}
 
@@ -151,7 +128,6 @@ Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Camp
 * Ajout de la prise en charge des fonctions de chiffrement et de déchiffrement asymétriques dans les workflows Campaign. (NEO-80257)
 * Amélioration des performances de l’agent de réplication et de la résilience de la mémoire pour les chargements de données volumineux dans les déploiements FFDA. (NEO-88430)
 * Les activités de workflow **[!UICONTROL Code SQL]** et **[!UICONTROL Gestion des données SQL]** ont été améliorées afin de mieux protéger les bases de données PostgreSQL et de garantir le bon fonctionnement de vos workflows lorsque du code SQL personnalisé est exécuté à partir de Campaign. Reportez-vous aux sections [Gestion des données SQL](../../automation/workflow/sql-data-management.md#important-notes) et [Code SQL](../../automation/workflow/sql-code-and-javascript-code.md#important-notes) pour plus d’informations et de bonnes pratiques. (NEO-86540)
-
 
 ### Correctifs {#fixes-8-9-1}
 
@@ -171,7 +147,6 @@ Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Camp
 * Correction d’un problème en raison duquel l’origine d’abonnement ou de désabonnement était manquante pour les liens d’opt-out. (NEO-90714)
 * Correction d’un problème en raison duquel l’ajout de coupons échouait dans la préparation de la diffusion. (NEO-90547)
 * Correction d’un problème en raison duquel le nombre d’insertions et de rejets n’était pas reflété précisément dans l’onglet Audit. (NEO-90318)
-* Correction d’un problème de sécurité qui entraînait un déni de service de l’application. (NEO-89984)
 * Correction d’un problème en raison duquel le PDF téléchargé du rapport Hotclick était endommagé. (NEO-89954)
 * Correction d’une erreur SSL qui se produisait après une mise à niveau, provoquant un EOF inattendu lors de la lecture des erreurs. (NEO-89108)
 * Correction d’un problème en raison duquel les données ne pouvaient pas être interrogées dans un schéma de données après une mise à niveau. (NEO-88663)
