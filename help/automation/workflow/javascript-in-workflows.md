@@ -7,19 +7,14 @@ role: Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
 TQID: https://experienceleague.adobe.com/gdPa502-bqEhz1TwyQBQl7aLbCOvyD9wvjRMnXlHCqY
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
-subfeature_v2:
-  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2: id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 2425b8e500380076d56bccec41ac821f7c867d92
 workflow-type: tm+mt
-source-wordcount: 1819
-ht-degree: 99%
+source-wordcount: 1784
+ht-degree: 95%
 
 ---
 
@@ -32,7 +27,7 @@ Ces exemples montrent comment vous pouvez utiliser le code JavaScript dans un wo
 * [Déclenchement d’un workflow, à l’aide d’une méthode SOAP statique](#trigger-example)
 * [Interaction avec la base de données, à l’aide d’une méthode SOAP non statique](#interact-example)
 
-[En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=fr){target="_blank"} sur les méthodes SOAP statiques et non statiques.
+[En savoir plus](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"} sur les méthodes SOAP statiques et non statiques.
 
 Dans ces exemples, l’extension ECMAScript pour XML (E4X) est utilisée. Avec cette extension, vous pouvez combiner des appels JavaScript et des primitives XML dans le même script.
 
@@ -110,7 +105,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### Suppression d’un enregistrement
 
-Utilisez la méthode `DeleteCollection`. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=fr){target="_blank"}.
+Utilisez la méthode `DeleteCollection`. [En savoir plus](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}.
 
 Indiquez les informations suivantes :
 
@@ -284,7 +279,7 @@ for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-La boucle comprend une variable de destinataire locale. L’e-mail de chaque destinataire renvoyé dans la collection de destinataires est imprimé. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=fr){target="_blank"} sur la fonction `logInfo`.
+La boucle comprend une variable de destinataire locale. L’e-mail de chaque destinataire renvoyé dans la collection de destinataires est imprimé. [En savoir plus](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"} sur la fonction `logInfo`.
 
 #### Résultats d’une opération `getIfExists`
 
@@ -370,21 +365,21 @@ Vous pouvez déclencher des workflows par programme, par exemple dans des workfl
 
 Le déclenchement d’un workflow s’effectue à l’aide d’événements. Vous pouvez utiliser ces fonctionnalités pour les événements :
 
-* Pour publier un événement, vous pouvez utiliser la méthode statique `PostEvent`. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=fr){target="_blank"}.
+* Pour publier un événement, vous pouvez utiliser la méthode statique `PostEvent`. [En savoir plus](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}.
 * Pour recevoir un événement, vous pouvez utiliser l’activité **[!UICONTROL Signal externe]**. [En savoir plus](external-signal.md).
 
 Vous pouvez déclencher des workflows de différentes manières :
 
 * Vous pouvez déclencher un workflow en ligne, c’est-à-dire à partir du script principal d’une activité **[!UICONTROL Code JavaScript]**.
 * Vous pouvez déclencher un workflow à la fin d’un autre :
-   * Ajoutez un script d’initialisation à l’activité de **[!UICONTROL Fin]** du workflow initial.
-   * Ajoutez l’activité **[!UICONTROL Signal externe]** au début du workflow cible.
+  * Ajoutez un script d’initialisation à l’activité de **[!UICONTROL Fin]** du workflow initial.
+  * Ajoutez l’activité **[!UICONTROL Signal externe]** au début du workflow cible.
 
-     Une fois le workflow initial terminé, un événement est publié. La transition sortante est activée et les variables d’événement sont renseignées. Ensuite, l’événement est reçu par le workflow cible.
+    Une fois le workflow initial terminé, un événement est publié. La transition sortante est activée et les variables d’événement sont renseignées. Ensuite, l’événement est reçu par le workflow cible.
 
-     >[!TIP]
-     >
-     >Lorsque vous ajoutez un script à une activité, il est recommandé de placer le nom de l’activité entre des tirets doubles, par exemple : `-- end --`. [En savoir plus](workflow-best-practices.md) sur les bonnes pratiques relatives aux workflows.
+    >[!TIP]
+    >
+    >Lorsque vous ajoutez un script à une activité, il est recommandé de placer le nom de l’activité entre des tirets doubles, par exemple : `-- end --`. [En savoir plus](workflow-best-practices.md) sur les bonnes pratiques relatives aux workflows.
 
 Syntaxe de la méthode `PostEvent` :
 
@@ -437,10 +432,10 @@ Procédez comme suit :
 
 1. Définissez la requête :
 
-   * Récupérez une entité en utilisant la méthode `create` sur le schéma correspondant, par exemple, le schéma `xtk:workflow`. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=fr){target="_blank"}.
+   * Récupérez une entité en utilisant la méthode `create` sur le schéma correspondant, par exemple, le schéma `xtk:workflow`. [En savoir plus](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}.
    * Utilisez la méthode `queryDef` pour émettre une requête SQL.
 
-1. Exécutez la requête à l’aide de la méthode `ExecuteQuery`. [En savoir plus](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=fr){target="_blank"}.
+1. Exécutez la requête à l’aide de la méthode `ExecuteQuery`. [En savoir plus](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}.
 
    Utilisez la boucle `for each` pour récupérer les résultats.
 
@@ -622,11 +617,11 @@ Cette vidéo présente un exemple d’utilisation d’une méthode d’API non s
 
 ### Documentation des API
 
-* [Exemples d’appels SOAP](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=fr){target="_blank"}
+* [Exemples d’appels SOAP](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}
 * Méthodes :
-   * [Créer](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=fr){target="_blank"}
-   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=fr){target="_blank"}
-   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=fr){target="_blank"}
-   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=fr){target="_blank"}
-   * [Write](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=fr){target="_blank"}
-* [fonction logInfo](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=fr){target="_blank"}
+  * [Créer](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}
+  * [DeleteCollection](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}
+  * [ExecuteQuery](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}
+  * [PostEvent](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}
+  * [Write](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}
+* [Fonction logInfo](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}
