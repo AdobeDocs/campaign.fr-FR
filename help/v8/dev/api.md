@@ -36,7 +36,7 @@ ht-degree: 78%
 >
 >Selon votre modèle de déploiement, vous pouvez également utiliser des API REST avec Campaign v8. [En savoir plus](../dev/api/get-started-apis.md).
 
-Vous pouvez utiliser les [API JavaScript de Campaign](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"} pour écrire dans la base de données cloud de Campaign ou lire à partir de la base de données :
+Vous pouvez utiliser les [API JavaScript de Campaign](https://experienceleague.adobe.com/fr/tools/campaign-api){target="_blank"} pour écrire dans la base de données cloud de Campaign ou lire à partir de la base de données :
 
 * API spécifiques à l&#39;entreprise qui vous permettent d&#39;agir sur chaque objet : diffusions, workflows, abonnements, etc. Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=fr){target="_blank"}.
 * API génériques d’accès aux données pour interroger les données du modèle de données à l’aide de `queryDef` et de l’objet `NLWS`. Pour en savoir plus, consultez la section [Interroger la base de données avec queryDef](query-api.md).
@@ -68,4 +68,4 @@ Pour utiliser les API et interagir avec [!DNL Adobe Campaign], vous devez égale
 
 <!-- * [Query the database with queryDef](query-api.md)-->
 * [Bonnes pratiques relatives au modèle de données](datamodel-best-practices.md)
-* [Documentation JSAPI Campaign](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}
+* [Documentation JSAPI Campaign](https://experienceleague.adobe.com/fr/tools/campaign-api){target="_blank"}

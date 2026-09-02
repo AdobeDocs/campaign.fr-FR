@@ -221,4 +221,4 @@ L&#39;insertion des données d&#39;abonnement et de désabonnement repose sur le
 
 **Rubriques connexes :**
 
-* [JSAPI Campaign](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}
+* [JSAPI Campaign](https://experienceleague.adobe.com/fr/tools/campaign-api){target="_blank"}

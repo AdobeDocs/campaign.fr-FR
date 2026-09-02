@@ -54,4 +54,4 @@ var decrypted = rsaPrivateDecrypt(
 **Ressources supplémentaires**
 
 * [Prise en main  [!DNL Campaign]  API](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/developer/api){target="_blank"}
-* [Documentation JSAPI Campaign](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}
+* [Documentation JSAPI Campaign](https://experienceleague.adobe.com/fr/tools/campaign-api){target="_blank"}

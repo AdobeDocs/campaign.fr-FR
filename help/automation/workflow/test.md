@@ -25,7 +25,7 @@ Une condition est une expression JavaScript qui doit être déterminée par « 
 
 ![](assets/edit_test.png)
 
-Pour plus d’informations sur toutes les autres fonctions JavaScript et méthodes SOAP du serveur applicatif accessibles via workflow, consultez la [documentation JSAPI](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}.
+Pour plus d’informations sur toutes les autres fonctions JavaScript et méthodes SOAP du serveur applicatif accessibles via workflow, consultez la [documentation JSAPI](https://experienceleague.adobe.com/fr/tools/campaign-api){target="_blank"}.
 
 Vous pouvez insérer directement des variables également depuis cet éditeur. Pour plus d’informations sur l’utilisation des variables, consultez [cette section](javascript-scripts-and-templates.md#variables).
 

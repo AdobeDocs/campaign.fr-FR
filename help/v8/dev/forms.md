@@ -100,7 +100,7 @@ Le contrôle d&#39;édition s&#39;adapte automatiquement au type de données cor
 
 Par défaut, chaque champ est affiché sur une seule ligne et occupe tout l&#39;espace disponible selon le type de données.
 
-Tous les attributs de formulaires sont répertoriés dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}.
+Tous les attributs de formulaires sont répertoriés dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/tools/campaign-api){target="_blank"}.
 
 ## Mise en forme {#formatting}
 
