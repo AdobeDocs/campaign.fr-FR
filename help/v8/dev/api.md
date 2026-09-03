@@ -18,10 +18,10 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 2425b8e500380076d56bccec41ac821f7c867d92
 workflow-type: tm+mt
-source-wordcount: 320
-ht-degree: 82%
+source-wordcount: 314
+ht-degree: 78%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 82%
 >
 >Selon votre modèle de déploiement, vous pouvez également utiliser des API REST avec Campaign v8. [En savoir plus](../dev/api/get-started-apis.md).
 
-Vous pouvez utiliser les [API JavaScript de Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=fr){target="_blank"} pour écrire dans la base de données cloud de Campaign ou lire à partir de la base de données :
+Vous pouvez utiliser les [API JavaScript de Campaign](https://experienceleague.adobe.com/fr/tools/campaign-api){target="_blank"} pour écrire dans la base de données cloud de Campaign ou lire à partir de la base de données :
 
 * API spécifiques à l&#39;entreprise qui vous permettent d&#39;agir sur chaque objet : diffusions, workflows, abonnements, etc. Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=fr){target="_blank"}.
 * API génériques d’accès aux données pour interroger les données du modèle de données à l’aide de `queryDef` et de l’objet `NLWS`. Pour en savoir plus, consultez la section [Interroger la base de données avec queryDef](query-api.md).
@@ -68,4 +68,4 @@ Pour utiliser les API et interagir avec [!DNL Adobe Campaign], vous devez égale
 
 <!-- * [Query the database with queryDef](query-api.md)-->
 * [Bonnes pratiques relatives au modèle de données](datamodel-best-practices.md)
-* [Documentation JSAPI Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=fr){target="_blank"}
+* [Documentation JSAPI Campaign](https://experienceleague.adobe.com/fr/tools/campaign-api){target="_blank"}
