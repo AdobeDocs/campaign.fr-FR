@@ -49,7 +49,7 @@ La procédure pour générer des tableaux dynamiques est la suivante :
 
 >[!IMPORTANT]
 >
->La version 8.9.3 d’comprend une mise à jour de la liste autorisée URL externe. Assurez-vous que les domaines utilisés pour les images externes dans vos pièces jointes sont ajoutés à la liste autorisée de données approuvée de votre instance afin que les ressources continuent à se charger sans interruption. En tant qu’administrateur ou administratrice de Campaign, utilisez le Panneau de Contrôle pour ajouter et gérer des URL placées sur la liste autorisée. Pour connaître la procédure, voir [Ajout d’autorisations d’URL](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
+>La version 8.9.3 d’comprend une mise à jour de la liste autorisée URL externe. Assurez-vous que les domaines utilisés pour les images externes dans vos pièces jointes sont ajoutés à la liste autorisée de données approuvée de votre instance afin que les ressources continuent à se charger sans interruption. En tant qu’administrateur ou administratrice de Campaign, utilisez le Panneau de Contrôle pour ajouter et gérer des URL placées sur la liste autorisée. Pour connaître la procédure, voir [Ajout d’autorisations d’URL](https://experienceleague.adobe.com/fr/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
 
 L&#39;insertion d&#39;images externes est utile lorsque, par exemple, vous souhaitez personnaliser un document avec une image dont l&#39;URL est renseignée dans un champ du destinataire.
 

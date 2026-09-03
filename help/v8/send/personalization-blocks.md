@@ -66,7 +66,7 @@ Les blocs de personnalisation intégrés sont les suivants :
 
 >[!IMPORTANT]
 >
->La version 8.9.3 d’comprend une mise à jour de la liste autorisée URL externe. Si un bloc de personnalisation personnalisé fait référence à une URL externe (par exemple, une image hébergée en externe), assurez-vous que le domaine est ajouté à la liste autorisée de données approuvée de votre instance afin que celle-ci continue à se charger sans interruption. En tant qu’administrateur ou administratrice de Campaign, utilisez le Panneau de Contrôle pour ajouter et gérer des URL placées sur la liste autorisée. Pour connaître la procédure, voir [Ajout d’autorisations d’URL](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
+>La version 8.9.3 d’comprend une mise à jour de la liste autorisée URL externe. Si un bloc de personnalisation personnalisé fait référence à une URL externe (par exemple, une image hébergée en externe), assurez-vous que le domaine est ajouté à la liste autorisée de données approuvée de votre instance afin que celle-ci continue à se charger sans interruption. En tant qu’administrateur ou administratrice de Campaign, utilisez le Panneau de Contrôle pour ajouter et gérer des URL placées sur la liste autorisée. Pour connaître la procédure, voir [Ajout d’autorisations d’URL](https://experienceleague.adobe.com/fr/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
 
 Vous pouvez définir de nouveaux blocs de contenu personnalisés à insérer à partir de l’icône de personnalisation.
 

@@ -38,7 +38,7 @@ Cette version comprend des correctifs de sécurité qui renforcent la position d
 
 Cette version comprend une mise à jour de la liste autorisée URL externe utilisée pour le contenu de diffusion et les pièces jointes. Assurez-vous que tous les domaines que vous référencez actuellement sont ajoutés à la liste autorisée approuvée de votre instance.
 
-En tant qu’administrateur ou administratrice de Campaign, utilisez le Panneau de Contrôle pour ajouter à la liste autorisée de données les URL externes actuellement utilisées dans vos diffusions et suivez le même processus pour toute nouvelle URL externe à l’avenir. Terminez cette activité d’ici le 5 septembre 2026 afin d’éviter tout impact sur les diffusions affectées. Pour connaître la procédure, voir [Ajout d’autorisations d’URL](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
+En tant qu’administrateur ou administratrice de Campaign, utilisez le Panneau de Contrôle pour ajouter à la liste autorisée de données les URL externes actuellement utilisées dans vos diffusions et suivez le même processus pour toute nouvelle URL externe à l’avenir. Terminez cette activité d’ici le 5 septembre 2026 afin d’éviter tout impact sur les diffusions affectées. Pour connaître la procédure, voir [Ajout d’autorisations d’URL](https://experienceleague.adobe.com/fr/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
 
 ### Connecteur Adobe Analytics mis à niveau vers l’API Analytics 2.0 {#analytics-2-0-8-9-3}
 
@@ -119,12 +119,12 @@ Le **nouveau connecteur d&#39;envoi de SMS** est désormais disponible pour tous
 
 Cette version est fournie avec un ensemble de fonctionnalités disponibles dans l’interface utilisateur web de Campaign :
 
-* [Fonctionnalités de diffusion multilingue (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
-* [Enrichissement du profil dans les messages transactionnels (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
-* [Live Copies et copies de langue de Adobe Experience Manager](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
-* [Expériences de contenu - Tests AB](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
-* [Activité de diffusion continue](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
-* [Gestion de la validation de campagne](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
+* [Fonctionnalités de diffusion multilingue (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=fr){target="_blank"}
+* [Enrichissement du profil dans les messages transactionnels (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=fr){target="_blank"}
+* [Live Copies et copies de langue de Adobe Experience Manager](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=fr){target="_blank"}
+* [Expériences de contenu - Tests AB](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=fr){target="_blank"}
+* [Activité de diffusion continue](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=fr){target="_blank"}
+* [Gestion de la validation de campagne](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=fr){target="_blank"}
 
 Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Campaign [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}
 
