@@ -15,10 +15,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
 workflow-type: tm+mt
-source-wordcount: 643
-ht-degree: 94%
+source-wordcount: 722
+ht-degree: 88%
 
 ---
 
@@ -39,7 +39,7 @@ Pour insérer un bloc de personnalisation dans un message, procédez comme suit�
 
    ![](assets/perso-content-block.png)
 
-1. Le bloc de personnalisation est alors inséré sous forme de script. Il est automatiquement adapté au profil du ou de la destinataire lors de la génération de la personnalisation.
+1. Le bloc de personnalisation est alors inséré sous forme de script. Il est automatiquement adapté au profil de la personne destinataire lors de la génération de la personnalisation.
 1. Accédez à l’onglet **[!UICONTROL Prévisualisation]**, puis sélectionnez un destinataire pour visualiser le contenu de ce bloc en fonction de ce dernier.
 
 Vous pouvez inclure le code source d’un bloc de personnalisation dans le contenu de la diffusion. Pour cela, cochez l&#39;option **[!UICONTROL Inclure le code source HTML du bloc]** lorsque vous le sélectionnez.
@@ -64,6 +64,10 @@ Les blocs de personnalisation intégrés sont les suivants :
 
 ## Créer des blocs de personnalisation personnalisés {#create-custom-personalization-blocks}
 
+>[!IMPORTANT]
+>
+>La version 8.9.3 d’comprend une mise à jour de la liste autorisée URL externe. Si un bloc de personnalisation personnalisé fait référence à une URL externe (par exemple, une image hébergée en externe), assurez-vous que le domaine est ajouté à la liste autorisée de données approuvée de votre instance afin que celle-ci continue à se charger sans interruption. En tant qu’administrateur ou administratrice de Campaign, utilisez le Panneau de Contrôle pour ajouter et gérer des URL placées sur la liste autorisée. Pour connaître la procédure, voir [Ajout d’autorisations d’URL](https://experienceleague.adobe.com/fr/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
+
 Vous pouvez définir de nouveaux blocs de contenu personnalisés à insérer à partir de l’icône de personnalisation.
 
 Pour créer un bloc de personnalisation, procédez comme suit :
@@ -81,7 +85,7 @@ Pour créer un bloc de personnalisation, procédez comme suit :
    * Sélectionnez un type de contenu de **Diffusion**.
    * Sélectionnez l’option **[!UICONTROL Afficher dans les menus de personnalisation]** pour pouvoir accéder à ce bloc à partir de l’icône d’insertion de champs de personnalisation.
    * Le cas échéant, sélectionnez l’option **[!UICONTROL Le contenu du bloc de personnalisation dépend du format]** pour définir deux blocs distincts pour les e-mails au format HTML et texte.
-   * Saisissez le contenu (dans HTML, texte, JavaScript, etc.) du bloc de personnalisation, puis cliquez sur **[!UICONTROL Enregistrer]**.
+   * Saisissez le contenu (en HTML, texte, JavaScript, etc.) du bloc de personnalisation, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
 Une fois enregistré, le nouveau bloc de personnalisation est disponible dans l’éditeur de diffusion.
 

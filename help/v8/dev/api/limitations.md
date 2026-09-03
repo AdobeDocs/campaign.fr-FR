@@ -22,9 +22,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 66ed59f89f7e58ce0a04d1fe3e4bf34c81ce94cb
 workflow-type: tm+mt
-source-wordcount: 1058
+source-wordcount: 1059
 ht-degree: 1%
 
 ---
@@ -140,7 +140,7 @@ Avec Campaign v8, le fuseau horaire n’est affiché que dans le cadre des appel
 
 L’API GET Workflow Campaign Standard renvoie des noms de paramètre tels que les variables d’instance de workflow et leurs types de données (booléen, chaîne, etc.). Il est utilisé pour créer un corps de requête JSON correctement formaté lors du déclenchement du signal via un appel de l’API POST.
 
-Campaign v8 ne prend pas en charge les variables d’instance de workflow publicitaire, mais s’attend à ce que les développeurs et développeuses les connaissent. Ainsi, après la migration, les informations sur les paramètres dans le corps de la requête POST devront être construites sans que les informations sur les paramètres ne soient disponibles dans la réponse de l’API GET.
+Campaign v8 ne prend pas en charge les variables d’instance de workflow publicitaire, mais s’attend à ce que les développeurs et développeuses les connaissent. Ainsi, après la migration, les informations de paramètres dans le corps de la requête POST devront être construites sans que les informations de paramètres ne soient disponibles dans la réponse de l’API GET.
 
 <!--
 ## Transactional messages

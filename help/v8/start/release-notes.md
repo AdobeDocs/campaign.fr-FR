@@ -13,9 +13,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 7e14d410aba444e792a24c99a843f122a8fcedc6
+source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
 workflow-type: tm+mt
-source-wordcount: 2007
+source-wordcount: 2107
 ht-degree: 6%
 
 ---
@@ -26,13 +26,19 @@ Cette page répertorie les nouvelles fonctionnalités, les améliorations et les
 
 ## Version 8.9.3 {#release-8-9-3}
 
-_1 août 2026_
+_11 août 2026_
 
 <!-- CONFIRM: is a client console upgrade required for 8.9.3? If yes, add the >[!CAUTION] notice used in 8.9.2/8.9.1. If no, add an explicit one-line "no console upgrade required for this release" statement so the absence reads as intentional. -->
 
 ### Améliorations de la sécurité {#security-8-9-3}
 
 Cette version comprend des correctifs de sécurité qui renforcent la position de sécurité globale de votre environnement Campaign. En tant que client hébergé, ces correctifs sont appliqués par Adobe dans le cadre de la mise à niveau, sans qu’aucune action ne soit requise de votre part.
+
+### Mise à jour de la liste autorisée d’URL externe {#url-allow-list-update-8-9-3}
+
+Cette version comprend une mise à jour de la liste autorisée URL externe utilisée pour le contenu de diffusion et les pièces jointes. Assurez-vous que tous les domaines que vous référencez actuellement sont ajoutés à la liste autorisée approuvée de votre instance.
+
+En tant qu’administrateur ou administratrice de Campaign, utilisez le Panneau de Contrôle pour ajouter à la liste autorisée de données les URL externes actuellement utilisées dans vos diffusions et suivez le même processus pour toute nouvelle URL externe à l’avenir. Terminez cette activité d’ici le 5 septembre 2026 afin d’éviter tout impact sur les diffusions affectées. Pour connaître la procédure, voir [Ajout d’autorisations d’URL](https://experienceleague.adobe.com/fr/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
 
 ### Connecteur Adobe Analytics mis à niveau vers l’API Analytics 2.0 {#analytics-2-0-8-9-3}
 
