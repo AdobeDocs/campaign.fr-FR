@@ -59,11 +59,11 @@ Les mises à niveau des environnements de production ont commencé en **janvier�
 
 * **Quels sont les tests requis par les clientes et clients ?**
 
-  Nous ne nous attendons pas à ce que les clientes et clients aient à effectuer des tests en rapport avec cet événement de mise à niveau. Contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign&lang=fr#support){target="_blank"} pour tout problème rencontré.
+  Nous ne nous attendons pas à ce que les clientes et clients aient à effectuer des tests en rapport avec cet événement de mise à niveau. Contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-solution=Campaign&lang=fr#support){target="_blank"} pour tout problème rencontré.
 
 
 * **Puis-je demander un changement de date/heure du créneau prévu pour la mise à niveau de sécurité ?**
 
   Non. Nous ne pouvons pas prendre en charge les modifications demandées au planning existant, au risque de perturber l’événement de mise à niveau assigné à d’autres personnes.
 
-Pour toute autre question, contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Campaign&lang=fr#support){target="_blank"}.
+Pour toute autre question, contactez l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-solution=Campaign&lang=fr#support){target="_blank"}.
