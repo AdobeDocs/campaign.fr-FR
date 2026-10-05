@@ -5,27 +5,40 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-TQID: https://experienceleague.adobe.com/uHf2o7h-iEwuPhNgjT-sAOES0A-uzpye9UGgZkgxdOA
+TQID: 'https://experienceleague.adobe.com/uHf2o7h-iEwuPhNgjT-sAOES0A-uzpye9UGgZkgxdOA'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: d3b34fea-a110-482f-adb2-aae8d686bac8
+    internal-label: Transactional messaging
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1261
-ht-degree: 88%
-
+source-wordcount: '1261'
+ht-degree: 98%
 ---
-
 # Créer et publier votre modèle pour les messages transactionnels{#template-transactional-messages}
 
 Chaque événement peut déclencher un message personnalisé. Pour ce faire, vous devez créer un modèle de message correspondant à chaque type d&#39;événement. Les modèles contiennent les informations nécessaires à la personnalisation du message transactionnel. Vous pouvez également utiliser des modèles pour tester la prévisualisation des messages et envoyer des BAT à l&#39;aide d&#39;adresses de contrôle avant de les diffuser à la cible finale.
@@ -60,12 +73,12 @@ La définition du contenu du message transactionnel est la même que pour toutes
 
 >[!CAUTION]
 >
->Les images incluses dans le message doivent être accessibles au public. Adobe Campaign ne fournit aucun mécanisme de chargement d’images pour les messages transactionnels.\
+>Les images incluses dans le message doivent être accessibles publiquement. Adobe Campaign ne fournit pas de mécanisme de chargement des images pour les messages transactionnels.\
 >Contrairement à JSSP ou webApp, `<%=` n’a pas de séquence d’échappement par défaut.
 >
 >Vous devez appliquer une séquence d&#39;échappement correcte à toutes les données provenant de l&#39;événement. Cette séquence d&#39;échappement dépend de l&#39;utilisation de ce champ. Par exemple, dans une URL, utilisez encodeURIComponent. Pour un affichage dans le code HTML, vous pouvez utiliser escapeXMLString.
 
-Une fois que vous avez défini le contenu de votre message, vous pouvez intégrer des informations d’événement dans le corps du message et les personnaliser. Les informations d’événement sont insérées dans le corps du texte grâce aux balises de personnalisation.
+Lorsque vous avez défini le contenu de votre message, vous pouvez intégrer les informations sur l’événement dans le corps du message et les personnaliser. Les informations sur l’événement sont insérées dans le corps du texte à l’aide de balises de personnalisation.
 
 ![](assets/messagecenter_create_content.png)
 
@@ -80,7 +93,7 @@ Pour insérer des balises de personnalisation dans le corps d&#39;un message ema
 
    ![](assets/messagecenter_create_custo_1.png)
 
-1. Complétez la balise selon la syntaxe suivante : **nom de l&#39;élément**.@**nom de l&#39;attribut** comme illustré ci-dessous.
+1. Renseignez la balise en utilisant la syntaxe suivante : **nom de l’élément**.@**nom de l’attribut** comme illustré ci-dessous.
 
    ![](assets/messagecenter_create_custo_2.png)
 
@@ -96,11 +109,11 @@ Une adresse de contrôle vous permet d&#39;afficher une prévisualisation de vot
 
 1. Attribuez-lui un libellé afin de faciliter la sélection ultérieurement, puis saisissez l&#39;adresse de contrôle (e-mail ou téléphone portable selon le canal de communication).
 
-1. Renseignez l&#39;identifiant externe : ce champ optionnel vous permet de renseigner la clé métier (identifiant unique, nom + email, etc.) commun à toutes les applications de votre site web, utilisé pour identifier vos profils. Si ce champ est également présent dans la base de données marketing d’Adobe Campaign, vous pouvez ensuite réconcilier un événement avec un profil dans la base de données.
+1. Saisissez l’identifiant externe : ce champ facultatif vous permet de saisir une clé métier (ID unique, nom + adresse e-mail, etc.) commune à toutes les applications de votre site web, utilisée pour identifier vos profils. Si ce champ est également présent dans la base de données marketing Adobe Campaign, vous pouvez ensuite réconcilier un événement avec un profil dans la base de données.
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. Insérez les données de test. [En savoir plus sur les données de personnalisation dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
+1. Insérez les données de test. [En savoir plus sur les données de personnalisation dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
 
    ![](assets/messagecenter_create_custo_3.png)
 
@@ -168,7 +181,7 @@ Pour effectuer l&#39;envoi :
 
    ![](assets/messagecenter_send_proof_002.png)
 
-Les BAT sont accessibles au niveau de chaque modèle, depuis l&#39;onglet **[!UICONTROL Suivi.]**
+Les BAT sont accessibles au niveau de chaque modèle, depuis l&#39;onglet **[!UICONTROL Suivi]**.
 
 ![](assets/messagecenter_send_proof_003.png)
 

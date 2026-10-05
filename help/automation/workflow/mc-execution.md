@@ -4,13 +4,25 @@ title: Message Center (Execution)
 description: Message Center (Execution)
 feature: Workflows
 role: User
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '205'
-ht-degree: 56%
-
+ht-degree: 100%
 ---
-
 
 # Message Center (Execution){#message-center-execution}
 
@@ -28,12 +40,12 @@ Les workflows présentés ci-dessous sont installés par défaut avec le module 
    <td> <span class="uicontrol">updateEventsStatus</span> <br /> </td> 
    <td> Ce workflow vous permet d'attribuer un statut à un événement. Les statuts des événements sont les suivants :<br /> 
     <ul> 
-     <li> <p><strong>En attente</strong> : l’événement est dans la file d’attente. Aucun modèle de message ne lui a encore été associé.</p> </li> 
-     <li> <p><strong>En attente de diffusion</strong> : l'événement est dans la file d'attente, un modèle de message lui a été associé et il est en cours de traitement par la diffusion.</p> </li> 
-     <li> <p><strong>Envoyé</strong> : ce statut est copié depuis les logs de diffusion. Cela signifie que la diffusion a été envoyée.</p> </li> 
-     <li> <p><strong>Ignoré par la diffusion</strong> : ce statut est copié depuis les logs de diffusion. Cela signifie que la diffusion a été ignorée.</p> </li> 
-     <li> <p><strong>Erreur de diffusion</strong> : ce statut est copié depuis les logs de diffusion. Cela signifie que la diffusion a échoué.</p> </li> 
-     <li> <p><strong>Evénement non pris en charge</strong> : l'association de l'événement à un modèle de message a échoué. L'événement ne sera pas retraité.</p> </li> 
+     <li> <p><strong>En attente</strong> : l’événement se trouve dans une file d’attente. Aucun modèle de message ne lui a encore été associé.</p> </li> 
+     <li> <p><strong>En attente de diffusion</strong> : l’événement est dans une file d’attente, un modèle de message lui a été associé et il est en cours de traitement par la diffusion.</p> </li> 
+     <li> <p><strong>Envoyé</strong> : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a été envoyée.</p> </li> 
+     <li> <p><strong>Ignoré par la diffusion</strong> : ce statut est copié depuis les logs de diffusion. Cela signifie que la diffusion a été ignorée.</p> </li> 
+     <li> <p><strong>Erreur de diffusion</strong> : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a échoué.</p> </li> 
+     <li> <p><strong>Événement non pris en charge</strong> : l’association de l’événement à un modèle de message a échoué. L’événement ne sera pas traité à nouveau.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

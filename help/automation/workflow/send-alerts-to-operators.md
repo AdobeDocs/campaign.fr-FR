@@ -5,23 +5,30 @@ description: Découvrez comment envoyer des alertes personnalisées aux opérate
 feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: 41a009f6-d1e9-40c9-8494-3bbb4bd3d134
-TQID: https://experienceleague.adobe.com/dNaZR5YIugp9CIju-jKPHqztQu75IurMvxJtbTILOTY
+TQID: 'https://experienceleague.adobe.com/dNaZR5YIugp9CIju-jKPHqztQu75IurMvxJtbTILOTY'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 374
-ht-degree: 78%
-
+source-wordcount: '374'
+ht-degree: 100%
 ---
-
 # Envoi d’alertes personnalisées aux opérateurs{#sending-personalized-alerts-to-operators}
 
 
 
 Dans cet exemple, nous souhaitons envoyer à un opérateur une alerte qui contiendra le nom des profils qui ont ouvert une newsletter, sans toutefois cliquer sur le lien qu&#39;il contient.
 
-Les champs de prénom et de nom des profils sont liés à la dimension de ciblage **[!UICONTROL Destinataires]**, tandis que l&#39;activité **[!UICONTROL Alerte]** est liée à la dimension de ciblage **[!UICONTROL Opérateur]**. Par conséquent, aucun champ n’est disponible entre les deux dimensions de ciblage pour effectuer une réconciliation et récupérer les champs de prénom et de nom, puis les afficher dans l’activité Alerte .
+Les champs de prénom et nom des profils sont liés à la dimension de ciblage **[!UICONTROL Destinataires]**, alors que l’activité **[!UICONTROL Alerte]** est liée à la dimension de ciblage **[!UICONTROL Opérateur ou opératrice]**. En conséquence, aucun champ n’est disponible entre les deux dimensions de ciblage pour effectuer une réconciliation, récupérer les champs de prénom et nom, et les afficher dans l’activité Alerte.
 
 Le processus créé un workflow comme ci-dessous :
 
@@ -98,7 +105,7 @@ for each (var item in items){
 
 >[!NOTE]
 >
->La commande **[!UICONTROL &lt;%= item.target.recipient.@fieldName %>]** permet d&#39;ajouter un des champs qui a été enregistré dans la variable d&#39;instance via l&#39;activité **[!UICONTROL Code JavaScript]**.\
+>La commande **[!UICONTROL &lt;%= item.target.recipient.@fieldName %>]** vous permet d’ajouter l’un des champs qui ont été enregistrés dans la variable d’instance via l’activité **[!UICONTROL Code JavaScript]**.\
 >Vous pouvez ajouter autant de champs que vous le souhaitez, dès lors qu&#39;ils ont été insérés dans le code JavaScript.
 
 ![](assets/uc_operator_8.png)

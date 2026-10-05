@@ -6,22 +6,29 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
-TQID: https://experienceleague.adobe.com/G8-4BinRvCMosfdiTD6FuEztviEDn6ea8hKeQd8QVSA
+TQID: 'https://experienceleague.adobe.com/G8-4BinRvCMosfdiTD6FuEztviEDn6ea8hKeQd8QVSA'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 13af5358-448e-5a4a-850b-0db592bb0f8f
+    internal-label: Personalization
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 481
+source-wordcount: '481'
 ht-degree: 100%
-
 ---
-
 # Commencer avec la personnalisation {#personalize-content}
 
 Pour tirer le meilleur parti de chacune de vos campagnes marketing, Adobe Campaign permet de diffuser du contenu personnalisé adapté au profil de la clientèle. Les fonctionnalités de personnalisation d’Adobe Campaign, basées sur les données de profil, vous permettent de créer une expérience personnalisée pour chaque groupe et personne : adaptez vos messages en fonction du ou de la destinataire grâce aux données et informations dont vous disposez à son sujet. Il peut s’agir de son prénom, de ses centres d’intérêts, de l’endroit où il/elle vit, de ses achats et bien plus encore.
@@ -81,4 +88,4 @@ Les variables suivantes sont des variables internes qui peuvent être utilisées
 Découvrez les différents types de contenu dynamique et apprenez à créer et à appliquer des blocs de personnalisation et des instructions conditionnelles à une diffusion.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3452868?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/335734?quality=12)

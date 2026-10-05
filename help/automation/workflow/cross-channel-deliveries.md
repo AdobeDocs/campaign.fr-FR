@@ -6,18 +6,28 @@ feature: Workflows, Channels Activity
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: fedcffcd-cf9b-4c3d-bd25-cb87dda30192
-TQID: https://experienceleague.adobe.com/hD15kwTxO1uHeIQjrozZmONmVWI5ZrMn40ORMwrGbf8
+TQID: 'https://experienceleague.adobe.com/hD15kwTxO1uHeIQjrozZmONmVWI5ZrMn40ORMwrGbf8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: bce277d1-7efa-48d8-9a1b-b588bb45ba1c
+    internal-label: Channels Activity
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 263
-ht-degree: 91%
-
+source-wordcount: '263'
+ht-degree: 100%
 ---
-
 # Diffusions cross-canal{#cross-channel-deliveries}
 
 Les diffusions cross-canal sont disponibles dans l&#39;onglet **[!UICONTROL Diffusions]** des activités d&#39;un [workflow de campagne](campaign-workflows.md).
@@ -38,7 +48,7 @@ Dans l&#39;exemple ci-dessous, nous allons créer un workflow permettant d&#39;e
 
    ![](assets/cross_channel_delivery_1.png)
 
-1. Ajoutez les conditions de filtre à votre requête. Dans ce cas, nous sélectionnerons les destinataires qui ont un numéro de mobile ou une adresse e-mail.
+1. Ajoutez les conditions de filtre à votre requête. Ici, nous allons sélectionner les destinataires ayant un numéro de mobile ou une adresse e-mail.
 
    ![](assets/cross_channel_delivery_2.png)
 
@@ -52,7 +62,7 @@ Dans l&#39;exemple ci-dessous, nous allons créer un workflow permettant d&#39;e
 1. Pour éviter que les destinataires ne reçoivent trop de diffusion à la fois, ajoutez et configurez une activité **[!UICONTROL Attente]**.
 1. Ajoutez une activité **[!UICONTROL Partage]** pour diviser les abonnés aux applications mobiles iOS ou Android.
 
-   Sélectionnez un service pour chacun des systèmes d&#39;exploitation.
+   Sélectionnez un service pour chacun des systèmes d’exploitation.
 
    ![](assets/cross_channel_delivery_4.png)
 

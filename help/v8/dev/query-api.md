@@ -6,31 +6,44 @@ role: Developer
 level: Intermediate, Experienced
 hide: true
 exl-id: c2862f94-7d15-4a49-a74e-df90d0ea7bc9
-TQID: https://experienceleague.adobe.com/Kyg3a2wvNCe2sebfG01-qMnFurvDBYS7uQfGPfVmuGE
+TQID: 'https://experienceleague.adobe.com/Kyg3a2wvNCe2sebfG01-qMnFurvDBYS7uQfGPfVmuGE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: b5852c32-876b-41ae-92a7-9f588865ae52
+    internal-label: Best practices
   - id: bf97c196-a4d1-4fa3-a151-e68a114c8ac0
+    internal-label: REST API
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
   - id: e739ee2b-6228-412e-878f-45de0791417d
+    internal-label: Use cases
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2425b8e500380076d56bccec41ac821f7c867d92
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1384
-ht-degree: 3%
-
+source-wordcount: '1384'
+ht-degree: 8%
 ---
-
 # Interroger la base de données avec queryDef {#query-database-api}
 
 [!DNL Adobe Campaign] fournit des méthodes JavaScript puissantes pour interagir avec la base de données à l’aide de `queryDef` et de l’objet `NLWS` . Ces méthodes basées sur SOAP vous permettent de charger, créer, mettre à jour et interroger des données à l’aide de JSON, XML ou SQL.
@@ -282,7 +295,7 @@ for each(var delivery in deliveries.delivery) {
 >* Utilisez `lineCount` pour définir explicitement le nombre maximal de résultats
 >* Pour les jeux de données volumineux (> 1 000 enregistrements), utilisez des workflows au lieu de queryDef. Les workflows sont conçus pour traiter efficacement des millions de lignes.
 
-En savoir plus sur les [&#x200B; ExecuteQuery &#x200B;](https://experienceleague.adobe.com/fr/tools/campaign-api){target="_blank"} et [&#x200B; les bonnes pratiques en matière de requêtes](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}.
+En savoir plus sur les [ ExecuteQuery ](https://experienceleague.adobe.com/fr/tools/campaign-api){target="_blank"} et [ les bonnes pratiques en matière de requêtes](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}.
 
 ## Données de transition du workflow de requête {#workflow-transition-data}
 
@@ -780,7 +793,7 @@ Lorsque vous utilisez les méthodes queryDef et NLWS :
 * **Utiliser l’analyse pour les énumérations** - Ajoutez des `analyze: true` pour sélectionner des nœuds afin d’obtenir des noms et des libellés d’énumération conviviaux
 * **Optimisation des requêtes** - Ajoutez des conditions de `where` appropriées pour limiter les jeux de résultats.
 * **Traitement par lots** - Traitez plusieurs enregistrements par lots pour éviter les problèmes de mémoire et les délais d’expiration
-* **Prise de conscience de FFDA** - Dans les déploiements [&#x200B; Entreprise (FFDA)](../architecture/enterprise-deployment.md), sachez que [!DNL Campaign] fonctionne avec deux bases de données
+* **Prise de conscience de FFDA** - Dans les déploiements [ Entreprise (FFDA)](../architecture/enterprise-deployment.md), sachez que [!DNL Campaign] fonctionne avec deux bases de données
 
 
 

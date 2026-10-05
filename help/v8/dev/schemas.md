@@ -5,32 +5,49 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
-TQID: https://experienceleague.adobe.com/6mA-RBg1EohscNSZkxXng-e3ya4ePoAG66meI1zRVwE
+TQID: 'https://experienceleague.adobe.com/6mA-RBg1EohscNSZkxXng-e3ya4ePoAG66meI1zRVwE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
 subfeature_v2:
   - id: a72a22e0-8c8d-4019-ba42-3f2644aa91a3
+    internal-label: Schema extension
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
+  - id: a14877cc-63b1-41d9-bf0b-5f97cadd0417
+    internal-label: Configuration guidelines
+  - id: a1681cd8-6b2e-4955-9113-33b5f7a22b8c
+    internal-label: Data model architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1302
-ht-degree: 81%
-
+source-wordcount: '1302'
+ht-degree: 94%
 ---
-
 # Utilisation des schémas{#gs-ac-schemas}
 
-La structure physique et logique des données véhiculées dans l’application est décrite en XML. Il obéit à une grammaire spécifique à Adobe Campaign, appelée **schéma**.
+La structure physique et logique des données transportées dans l’application est décrite en XML. Il obéit à une grammaire spécifique à Adobe Campaign, appelée **schéma**.
 
-Un schéma est un document XML associé à une table de base de données. Il définit la structure des données et décrit la définition SQL de la table :
+Un schéma est un document XML associé à une table de base de données. Il définit la structure des données et décrit la définition SQL de la table :
 
 * le nom de la table,
 * des champs ;
@@ -44,7 +61,7 @@ mais aussi la structure XML utilisée pour stocker les données :
 * Les valeurs par défaut
 * les libellés, les descriptions et autres propriétés.
 
-Les schémas permettent de définir une entité dans la base de données. Il existe un schéma pour chaque entité.
+Les schémas vous permettent de définir une entité dans la base de données. À chaque entité correspond un schéma.
 
 Dans Adobe Campaign, les schémas de données permettent de :
 
@@ -127,7 +144,7 @@ Une fois que vous avez créé ou étendu un schéma, il est recommandé de défi
 
 ## Énumérations {#enumerations}
 
-Les énumérations sont définies en premier, avant l&#39;élément principal du schéma. Elles permettent d’afficher des valeurs dans une liste afin de restreindre les choix de l’utilisateur ou de l’utilisatrice pour un champ donné.
+Les énumérations sont définies avant l’élément principal du schéma. Elles vous permettent d’afficher des valeurs dans une liste afin de restreindre les choix de l’utilisateur ou de l’utilisatrice pour un champ donné.
 
 Exemple:
 
@@ -148,7 +165,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 >[!NOTE]
 >
->Vous pouvez également utiliser des énumérations gérées par l&#39;utilisateur (généralement sous **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** ) pour spécifier les valeurs d&#39;un champ donné. Il s’agit en fait d’énumérations globales, un meilleur choix si votre énumération peut être utilisée en dehors du schéma spécifique dans lequel vous travaillez.
+>Vous pouvez également utiliser des énumérations gérées par l’utilisateur ou l’utilisatrice (généralement sous **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]**) pour spécifier les valeurs d’un champ donné. Il s’agit d’énumérations globales efficaces et peuvent être judicieuses si vous envisagez d’utiliser votre énumération en dehors du schéma sur lequel vous travaillez.
 
 <!--
 ## Index {#index} 
@@ -250,7 +267,7 @@ Exemple de champ XML également stocké dans un champ SQL et qui a un attribut *
 
 ## Liens {#links}
 
-Les liens sont certains des derniers éléments de l’élément principal de votre schéma. Ils définissent la manière dont tous les différents schémas de votre instance sont liés les uns aux autres.
+Les liens sont parmi les derniers éléments de l’élément principal de votre schéma. Ils définissent comment les différents schémas de votre instance sont associés les uns aux autres.
 
 Les liens sont déclarés dans le schéma qui contient la **clé étrangère** de la table à laquelle il est lié.
 

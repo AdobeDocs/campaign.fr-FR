@@ -5,23 +5,30 @@ description: En savoir plus sur l’activité de sous-workflow
 feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: c530fb4e-d21e-4059-88e1-77a8d33a7832
-TQID: https://experienceleague.adobe.com/XS5rd13a3naqU6284JA3zTwHzZuNx1Efql-C-Ud-oV8
+TQID: 'https://experienceleague.adobe.com/XS5rd13a3naqU6284JA3zTwHzZuNx1Efql-C-Ud-oV8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 460
-ht-degree: 90%
-
+source-wordcount: '460'
+ht-degree: 100%
 ---
-
 # Sous-workflow{#sub-workflow}
 
 
 
-L&#39;activité **[!UICONTROL Sous-workflow]** permet de déclencher l&#39;exécution d&#39;un autre workflow et de récupérer le résultat. Cette activité permet d’utiliser des workflows complexes tout en utilisant une interface simplifiée.
+L’activité **[!UICONTROL Sous-workflow]** permet de déclencher l’exécution d’un autre workflow et de récupérer le résultat. Cette activité permet d’utiliser des workflows complexes tout en utilisant une interface simplifiée.
 
-Vous pouvez appeler plusieurs sous-workflows dans un seul workflow. Les sous-workflows sont exécutés de manière synchrone.
+Vous pouvez appeler plusieurs sous-workflows au sein d’un même workflow. Les sous-workflows sont exécutés de manière synchrone.
 
 Dans l’exemple ci-dessous, un workflow principal appelle un sous-workflow à l’aide de sauts. Pour plus d’informations sur les objets graphiques de type saut, voir [cette section](jump-start-point-and-end-point.md).
 

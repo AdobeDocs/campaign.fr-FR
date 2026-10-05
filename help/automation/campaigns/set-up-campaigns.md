@@ -6,20 +6,27 @@ feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: eb1a0e52-14d9-4ad2-8bf2-ea955c6fd0f5
-TQID: https://experienceleague.adobe.com/lxE52O9cAoD8RwzYdi5l4lRfkWcM8kZQ-T-fMZVKxaM
+TQID: 'https://experienceleague.adobe.com/lxE52O9cAoD8RwzYdi5l4lRfkWcM8kZQ-T-fMZVKxaM'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: 237333ba-90fa-554c-bc8d-2047e6173477
+    internal-label: Cross Channel Orchestration
+  - id: 6641bfdc-d19c-56e4-9045-0f6d06e8a43b
+    internal-label: Programs
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 449
-ht-degree: 63%
-
+source-wordcount: '472'
+ht-degree: 70%
 ---
-
 # Prise en main des campagnes marketing {#gs-marketing-campaigns}
 
 Adobe Campaign vous permet de définir, d’optimiser, d’exécuter et d’analyser des campagnes marketing et de communication. Adobe Campaign agit comme un centre de commande et d’exécution unifié pour les stratégies marketing. Gérez des sources de données multiples, définissez vos segments d’audience, planifiez et exécutez des campagnes cross-canal multi-étapes via une interface de workflow visuelle par glisser-déposer.
@@ -36,7 +43,7 @@ In addition, the **Marketing Resource Management (MRM)** module lets you control
 
 ## Étapes clés de la conception de vos campagnes {#key-steps-campaign}
 
-Les campagnes incluent des actions (diffusions) et des processus (importation ou extraction de fichiers), ainsi que des ressources (documents marketing, compositions de diffusion). Ils sont utilisés dans les campagnes marketing. Les campagnes font partie d&#39;un programme et les programmes sont inclus dans un plan de campagne.
+Les campagnes comprennent des actions (diffusions) et des processus (import ou extraction de fichiers), ainsi que des ressources (documents marketing, compositions de diffusion). Ces dernières sont utilisées dans les campagnes marketing. Les campagnes font partie d&#39;un programme et les programmes sont inclus dans un plan de campagne.
 
 Les étapes clés de création et d&#39;exécution d&#39;une campagne marketing dans Adobe Campaign sont répertoriées ci-dessous :
 
@@ -61,11 +68,11 @@ Effectuez le suivi de vos campagnes à partir du tableau de bord, vérifiez les 
 1. **Suivre les budgets, stocks et coûts associés**.
 Utilisez Adobe Campaign pour contrôler l&#39;allocation du budget, gérer vos fournisseurs, vos stocks et coûts. [En savoir plus](providers-stocks-and-budgets.md#create-service-providers-and-their-cost-structures).
 
-Une fois ces étapes terminées, vous pouvez [lancer les diffusions](marketing-campaign-deliveries.md#start-a-delivery), vérifier les données, les processus et les informations relatifs aux diffusions et, si nécessaire, [gérer les documents associés](marketing-campaign-deliveries.md#manage-associated-documents). Vous pouvez également [suivre et diriger l&#39;exécution](marketing-campaign-monitoring.md) de vos campagnes et diffusions.
+Une fois ces étapes terminées, vous pouvez [lancer les diffusions](marketing-campaign-deliveries.md#start-a-delivery), vérifier les données, les processus et les informations relatifs aux diffusions et, si nécessaire, [gérer les documents associés](marketing-campaign-deliveries.md#manage-associated-documents). Vous pouvez également [su et diriger l&#39;exécution](marketing-campaign-monitoring.md) de vos campagnes et diffusions.
 
 
 ## Vidéo sur les concepts clés {#key-concepts-video}
 
 Cette vidéo présente les concepts clés des campagnes marketing.
 
->[!VIDEO](https://video.tv.adobe.com/v/326571?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)

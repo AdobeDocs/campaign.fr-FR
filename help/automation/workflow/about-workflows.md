@@ -6,25 +6,33 @@ feature: Workflows
 version: Campaign v8, Campaign Classic v7
 role: User
 exl-id: 297aa4e3-b672-46b5-9016-5accee8568b8
-TQID: https://experienceleague.adobe.com/cJiFDBp4mynu0DFH51SWu6oW7EjTNu84kCuhP-Wm-aQ
+TQID: 'https://experienceleague.adobe.com/cJiFDBp4mynu0DFH51SWu6oW7EjTNu84kCuhP-Wm-aQ'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 643
-ht-degree: 54%
-
+source-wordcount: '643'
+ht-degree: 58%
 ---
-
 # Commencer avec les workflows{#gs-workflows}
 
 ## À propos des workflows{#about-workflows}
 
-Adobe Campaign comprend un module de workflow qui vous permet d’orchestrer l’ensemble des processus et tâches dans les différents modules du serveur d’applications. Cet environnement graphique complet permet de concevoir des processus englobant segmentation, exécution de campagnes, traitement de fichiers, participation humaine, etc. Le moteur de workflow exécute et suit ces processus.
+Adobe Campaign comprend un module de workflow qui vous permet d’orchestrer l’ensemble des processus et tâches dans les différents modules du serveur d’applications. Cet environnement graphique complet vous permet de concevoir des processus englobant segmentation, exécution de campagnes, traitement de fichiers, participation humaine, etc. Le moteur de workflow exécute et assure le suivi de ces processus.
 
 Un workflow permet par exemple de télécharger un fichier depuis un serveur, de le décompresser et d&#39;importer ses enregistrements dans la base de données Adobe Campaign.
 

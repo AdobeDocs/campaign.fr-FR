@@ -6,13 +6,22 @@ feature: Deliverability
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 63876777-85c3-57e1-a2da-81f02956c63c
+    internal-label: Deliverability
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 84%
-
+ht-degree: 97%
 ---
-
 # Contrôle du contenu de votre message{#control-message-content}
 
 Pour que vos emails atteignent vos destinataires et améliorer ainsi leur taux de délivrabilité, assurez-vous qu’ils respectent un certain nombre de règles. Dans le cas contraire, le contenu de certains messages peut être détecté comme du spam. Adobe Campaign fournit plusieurs outils vous permettant de vérifier que votre contenu respecte ces règles.
@@ -23,7 +32,7 @@ Suivez les principes ci-dessous lors de la conception du contenu de votre messag
 * [Personnalisation](#personalization) : la personnalisation du contenu et la définition d’une heure d’envoi par destinataire augmentent les chances d’ouverture de votre message.
 * Images et texte : respectez un ratio texte/images correct (par exemple, 60 % de texte et 40 % d’images).
 * [Lien de désinscription](#opt-out) et page de destination correspondante : le lien de désinscription est indispensable. Il doit être visible et valide, et le formulaire doit être fonctionnel.
-* Prévisualisation : utilisez les outils fournis par Adobe Campaign pour vérifier et optimiser le contenu de votre email ([Inbox Rendering](#message-responsiveness), [&#x200B; SpamAssassin emails](#spamassassin)).
+* Prévisualisation : utilisez les outils fournis par Adobe Campaign pour vérifier et optimiser le contenu de votre email ([Inbox Rendering](#message-responsiveness), [ SpamAssassin emails](#spamassassin)).
 
 Pour obtenir des conseils supplémentaires sur l’optimisation de la délivrabilité lors de la conception du contenu, consultez le [Guide des bonnes pratiques relatives à la délivrabilité d’Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=fr){target="_blank"}.
 
@@ -35,7 +44,7 @@ Pour obtenir des conseils supplémentaires sur l’optimisation de la délivrabi
 
 Certains FAI vérifient la validité de l’adresse d’expédition (**[!UICONTROL De]**) avant d’accepter les messages. Une adresse erronée peut causer un refus de la part du serveur receveur.
 
-Vous devez vous assurer qu&#39;une adresse correcte est donnée au niveau de l&#39;instance (menu **[!UICONTROL Outils > Avancé > assistant de déploiement...]**) ou dans les scénarios les plus fréquemment utilisés.
+Vous devez vous assurer qu’une adresse correcte est bien renseignée au niveau de l’instance (menu **[!UICONTROL Outils > Avancé > Assistant de déploiement…]**) ou dans les scénarios les plus fréquemment utilisés.
 
 Pour plus d&#39;informations sur la définition de l&#39;adresse de l&#39;expéditeur, consultez cette [page](defining-the-email-content.md#sender).
 
@@ -55,7 +64,7 @@ Découvrez comment insérer un lien d&#39;opt-out [dans cette section](personali
 
 Au cas où un problème empêchant l’exclusion ne serait détecté qu’après le démarrage de la diffusion, il sera toutefois possible d’exclure manuellement (à l’aide d’une mise à jour en masse, par exemple) les destinataires qui ont cliqué sur le lien d’opt-out, même s’ils n’ont pas pu confirmer ce choix.
 
-En règle générale, n’essayez pas d’empêcher les destinataires qui souhaitent se désinscrire de le faire en les obligeant à remplir des champs tels que leur adresse e-mail ou leur nom, par exemple. Le formulaire ne doit comporter qu&#39;un seul bouton de validation et la réconciliation ne doit être effectuée que sur l&#39;identifiant chiffré.
+De manière générale, n’essayez pas de faire obstacle aux personnes destinataires qui souhaitent se désinscrire en leur demandant de remplir des champs tels que leur adresse e-mail ou leur nom, par exemple. Le formulaire ne doit comporter qu’un seul bouton de validation et la réconciliation ne doit porter que sur l’identifiant chiffré.
 
 Demander une confirmation supplémentaire n’est pas fiable, car un utilisateur peut disposer de deux adresses email redirigées vers la même boîte (par exemple : prénom.nom@club.com et prénom.nom@internet-club.com). Si le destinataire est capable de se souvenir uniquement de la première adresse et souhaite s’exclure via un message envoyé à l’autre, le formulaire refusera cette adresse, car l’identifiant chiffré et l’adresse e-mail saisie ne correspondront pas.
 
@@ -71,6 +80,6 @@ Pour plus d&#39;informations, consultez la section [Inbox rendering](inbox-rende
 
 Adobe Campaign peut être configuré pour fonctionner avec SpamAssassin. Cela permet d&#39;attribuer un score aux emails afin de déterminer si un message risque d&#39;être considéré comme indésirable par les outils anti-spams utilisés à sa réception.
 
-Avant de démarrer une diffusion, l&#39;onglet **[!UICONTROL Aperçu]** permet d&#39;évaluer les risques. Un message d&#39;avertissement donne le résultat du test.
+Avant qu’une diffusion ne soit lancée, l’onglet **[!UICONTROL Prévisualisation]** vous permet d’évaluer les risques. Un message d’avertissement fournit le résultat du test.
 
 En savoir plus dans cette [section](spamassassin.md).

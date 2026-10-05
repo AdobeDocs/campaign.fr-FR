@@ -5,35 +5,45 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: 31f38870-1781-4185-9022-d4fd6a31c94a
-TQID: https://experienceleague.adobe.com/SQgbIgxLE5Ef10i6wI07XBeEgBsTpxpMrFIMjgv5Lwo
+TQID: 'https://experienceleague.adobe.com/SQgbIgxLE5Ef10i6wI07XBeEgBsTpxpMrFIMjgv5Lwo'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 65702805-0026-5ca1-843a-144fa79f0883
+    internal-label: Interaction
+  - id: ea08db70-4682-59a2-9408-9aedd9548e07
+    internal-label: Offers
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 445
-ht-degree: 70%
-
+source-wordcount: '445'
+ht-degree: 96%
 ---
-
 # Utilisation des environnements{#work-with-environments}
 
 ## Environnements en ligne et en édition{#live-design-environments}
 
 Interaction fonctionne avec deux types d&#39;environnements d&#39;offres :
 
-* **[!UICONTROL En édition]** environnements d’offres qui incluent des offres en cours d’édition et qui peuvent être modifiées. Ces offres n’ont pas fait l’objet d’un cycle de validation et ne sont pas diffusées aux contacts.
-* Environnements d’offres **[!UICONTROL en ligne]** qui incluent des offres approuvées telles qu’elles sont présentées aux contacts. Les offres de cet environnement sont en lecture seule.
+* Des environnements d’offres **[!UICONTROL Conception]**, dans lesquels les offres sont en cours de création et peuvent être modifiées. Ces offres ne sont pas encore passées par un cycle de validation et ne sont donc pas diffusées aux personnes contacts.
+* Des environnements d’offres **[!UICONTROL En ligne]**, qui contiennent les offres approuvées telles qu’elles sont présentées aux personnes contacts. Les offres contenues dans ces environnements sont en lecture seule.
 
 ![](assets/offer_environments_overview_001.png)
 
-Chaque environnement **[!UICONTROL En édition]** est lié à un environnement **[!UICONTROL En ligne]**. Lorsqu&#39;une offre est terminée, son contenu et ses règles d&#39;éligibilité sont soumis à un cycle de validation. Lorsque le cycle de validation est complet, l’offre concernée est automatiquement déployée dans l’environnement **[!UICONTROL En ligne]**. Dès lors, elle est disponible pour être diffusée.
+Chaque environnement **[!UICONTROL Conception]** est lié à un environnement **[!UICONTROL En ligne]**. Lorsqu’une offre est terminée, son contenu et ses règles d’éligibilité sont soumis à un cycle de validation. Lorsque le cycle de validation est complet, l’offre concernée est automatiquement déployée dans l’environnement **[!UICONTROL En ligne]**. Dès lors, elle est disponible pour être diffusée.
 
 Par défaut, Campaign comprend un environnement **[!UICONTROL En édition]** et un environnement **[!UICONTROL En ligne]** qui lui est associé. Les deux environnements sont préconfigurés pour cibler la [table de destinataires native](../dev/datamodel.md#ootb-profiles).
 
@@ -67,7 +77,7 @@ Procédez comme suit :
 
 Si vous avez activé le mapping **[!UICONTROL Visiteurs]**, la case **[!UICONTROL Environnement dédié aux interactions anonymes entrantes]** est automatiquement cochée dans l&#39;onglet **[!UICONTROL Général]** de l&#39;environnement.
 
-Cette option permet d&#39;activer les fonctions spécifiques aux interactions anonymes, notamment lors du paramétrage des emplacements d&#39;environnement. Vous pouvez également configurer des options qui vous permettent de passer d’un environnement « identifié » à un environnement « anonyme ».
+Cette option vous permet d’activer les fonctions spécifiques aux interactions anonymes, notamment lors de la configuration des emplacements d’environnement. Vous pouvez également configurer des options permettant de basculer d’un environnement « identifié » vers un environnement « anonyme ».
 
 Vous pouvez par exemple lier un emplacement d&#39;environnement de destinataire (contact identifié) à un emplacement correspondant d&#39;environnement de visiteur (contact non identifié). Ainsi, différentes offres seront mises à la disposition du contact, en fonction du caractère identifié ou non de ce dernier. Voir à ce sujet la section [Créer des emplacements](interaction-offer-spaces.md).
 

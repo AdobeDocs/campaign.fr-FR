@@ -5,25 +5,35 @@ feature: Send Time Optimization
 role: User
 level: Beginner
 exl-id: 648fefcc-6476-4af8-9f0d-c9a87a7a3019
-TQID: https://experienceleague.adobe.com/2mpd0w6VV-5VzV42SXgZl2zQuo-xQ2T4-63rwMfsHh8
+TQID: 'https://experienceleague.adobe.com/2mpd0w6VV-5VzV42SXgZl2zQuo-xQ2T4-63rwMfsHh8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 0d3d7867-163e-5570-9cfc-7132e55fb049
+    internal-label: Send Time Optimization
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Machine learning
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 796
-ht-degree: 96%
-
+source-wordcount: '799'
+ht-degree: 95%
 ---
-
 # Optimisation de l’heure d’envoi et score prédictif de l’engagement{#optimize-message-delivery}
 
 Perfectionnés par l’IA et le machine learning, l’optimisation de l’heure d’envoi et le score prédictif de l’engagement d’Adobe Campaign peuvent analyser et estimer les taux d’ouverture, les temps d’envoi optimaux et l’attrition probable en fonction des mesures d’engagement historiques.
@@ -55,18 +65,18 @@ Dans le modèle d’optimisation de l’heure d’envoi prédictive, il existe d
 
 Détails de la sortie :
 
-* Calculez la meilleure heure d’envoi d’un e-mail pendant les 7 jours de la semaine avec des intervalles d’une heure (par exemple : 9:00h, 10:00, 11:00).
+* Calculez la meilleure heure d’envoi d’un e-mail au cours des 7 jours de la semaine avec des intervalles d’une heure (par exemple : 9 h, 10 h, 11 h).
 * Le modèle indique le meilleur jour de la semaine et la meilleure heure de la journée.
 * Chaque heure optimale est calculée deux fois : une fois pour maximiser le taux d’ouverture et une fois pour maximiser le taux de clics
 * 16 champs sont proposés (14 pour les jours de la semaine et 2 pour toute la semaine) :
-   * meilleur moment pour envoyer un email afin d’optimiser les clics pour le lundi - valeurs comprises entre 0 et 23
-   * meilleur moment pour envoyer un email afin d’optimiser les ouvertures pour le lundi - valeurs comprises entre 0 et 23
-   * ...
-   * meilleur moment pour envoyer un email afin d’optimiser les clics pour le dimanche - valeurs comprises entre 0 et 23
-   * meilleur moment pour envoyer un email afin d’optimiser les ouvertures pour le dimanche - valeurs comprises entre 0 et 23
-   * ...
-   * meilleure journée pour envoyer un email afin d’optimiser les ouvertures pour toute la semaine - Du lundi au dimanche
-   * meilleur moment pour envoyer un email afin d’optimiser les ouvertures pour toute la semaine - valeurs comprises entre 0 et 23
+  * meilleur moment pour envoyer un email afin d’optimiser les clics pour le lundi - valeurs comprises entre 0 et 23
+  * meilleur moment pour envoyer un email afin d’optimiser les ouvertures pour le lundi - valeurs comprises entre 0 et 23
+  * ...
+  * meilleur moment pour envoyer un email afin d’optimiser les clics pour le dimanche - valeurs comprises entre 0 et 23
+  * meilleur moment pour envoyer un email afin d’optimiser les ouvertures pour le dimanche - valeurs comprises entre 0 et 23
+  * ...
+  * meilleure journée pour envoyer un email afin d’optimiser les ouvertures pour toute la semaine - Du lundi au dimanche
+  * meilleur moment pour envoyer un email afin d’optimiser les ouvertures pour toute la semaine - valeurs comprises entre 0 et 23
 
 
 L’optimisation de l’heure d’envoi prédictive est stockée au niveau du profil :

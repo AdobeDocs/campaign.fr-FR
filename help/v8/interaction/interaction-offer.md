@@ -5,25 +5,35 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
-TQID: https://experienceleague.adobe.com/RcdMeKFZIeitseKyZb72sz6O1y7lhtwajxwAr5V9vLo
+TQID: 'https://experienceleague.adobe.com/RcdMeKFZIeitseKyZb72sz6O1y7lhtwajxwAr5V9vLo'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: 65702805-0026-5ca1-843a-144fa79f0883
+    internal-label: Interaction
+  - id: ea08db70-4682-59a2-9408-9aedd9548e07
+    internal-label: Offers
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 977
-ht-degree: 83%
-
+source-wordcount: '977'
+ht-degree: 97%
 ---
-
 # Création d’une offre
 
 Pour créer une offre, procédez comme suit :
@@ -68,11 +78,11 @@ Si des filtres prédéfinis ont déjà été créés, vous pouvez les sélection
 
 ### Définissez le poids de l&#39;offre {#offer-weight}
 
-Pour permettre au moteur de décider entre plusieurs offres auxquelles la cible est éligible, vous devez attribuer un ou plusieurs poids à l’offre. Vous pouvez également appliquer des filtres sur la cible si nécessaire ou restreindre l&#39;emplacement auquel le poids s&#39;appliquera. Une offre ayant un poids plus important sera préférée à une offre ayant moins de poids.
+Pour permettre au moteur de décider entre plusieurs offres auxquelles la cible est éligible, vous devez attribuer un ou plusieurs poids à l’offre. Vous pouvez également appliquer des filtres sur la cible si nécessaire ou restreindre l’emplacement auquel le poids s’appliquera. Une offre ayant un poids plus important sera préférée à une offre ayant moins de poids.
 
 Vous pouvez paramétrer plusieurs poids pour une même offre, notamment en fonction d&#39;une période, d&#39;une cible ou encore d&#39;un emplacement.
 
-Par exemple, une offre peut avoir un poids de A pour les contacts âgés de 18 à 25 ans et un poids de B pour les contacts au-dessus de cette plage. Si une offre est éligible tout l&#39;été, elle peut également avoir un poids de A en juillet et un poids de B en août.
+Par exemple, une offre peut avoir un poids A pour les personnes contacts âgées de 18 à 25 ans et un poids B pour les personnes contacts plus âgées. Ou, si une offre est éligible tout l’été, elle peut avoir un poids A au mois de juillet, et un poids B au mois d’août.
 
 >[!NOTE]
 >
@@ -110,7 +120,7 @@ Pour créer un poids dans une offre, procédez comme suit :
 
    >[!NOTE]
    >
-   >Si une cible est éligible à plusieurs poids pour une offre sélectionnée, le moteur conserve le meilleur poids (le plus élevé). Lors d&#39;un appel au moteur d&#39;offres, une offre est sélectionnée au maximum une fois par contact.
+   >Si une cible est éligible à plusieurs poids pour une offre sélectionnée, le moteur garde le meilleur poids (le plus élevé). Lors d&#39;un appel au moteur d&#39;offres, une offre est sélectionnée au maximum une fois par contact.
 
 ### Résumé des règles d&#39;éligibilité d&#39;une offre {#a-summary-of-offer-eligibility-rules}
 

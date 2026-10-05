@@ -6,25 +6,33 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-TQID: https://experienceleague.adobe.com/4G6e5TId0jxkIt2p6uFpMVBNpz3WnIQSptcnvAarpDQ
+TQID: 'https://experienceleague.adobe.com/4G6e5TId0jxkIt2p6uFpMVBNpz3WnIQSptcnvAarpDQ'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: 50d1fd2e-0fc9-5627-bbc9-02dbc9d15e08
+    internal-label: Email
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 601
-ht-degree: 88%
-
+source-wordcount: '601'
+ht-degree: 94%
 ---
-
 # Concevoir et envoyer des e-mails
 
 Avec Adobe Campaign, créez des diffusions e-mail pour envoyer des e-mails personnalisés à la population cible. [En savoir plus](../send/send.md)
@@ -47,13 +55,13 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
 1. **Création de la diffusion**
 
-   Pour créer une nouvelle diffusion, accédez à l&#39;onglet **Campagnes**, cliquez sur **Diffusions**, puis sur le bouton **Créer** au-dessus de la liste des diffusions existantes.
+   Pour créer une nouvelle diffusion, accédez à l&#39;onglet **Campagnes**, cliquez sur **Diffusions** et cliquez sur le bouton **Créer** au-dessus de la liste des diffusions existantes.
 
    ![](assets/delivery_step_1.png)
 
 1. **Sélection du modèle**
 
-   Sélectionnez un modèle de diffusion, puis attribuez un nom à votre diffusion. Ce nom sera visible uniquement par les utilisateurs de la console Adobe Campaign et non par vos destinataires, mais cet en-tête s’affichera dans votre liste de diffusions. Cliquez sur **[!UICONTROL Continuer]**.
+   Sélectionnez un modèle de diffusion et nommez votre diffusion. Ce nom sera visible uniquement par les utilisateurs et utilisatrices de la console Adobe Campaign et non par vos destinataires, mais cet intitulé s’affichera dans la liste de vos diffusions. Cliquez sur **[!UICONTROL Continuer]**.
 
    ![](assets/dce_delivery_model.png)
 

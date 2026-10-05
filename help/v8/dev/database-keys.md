@@ -5,20 +5,35 @@ feature: Data Model, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: cf1f5cfc-172f-44ec-ac97-804d15f9d628
-TQID: https://experienceleague.adobe.com/vXtZ7fdqMhtrJt873qH3hfgTE7pO-SMBnqjCtcriFNQ
+TQID: 'https://experienceleague.adobe.com/vXtZ7fdqMhtrJt873qH3hfgTE7pO-SMBnqjCtcriFNQ'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: a1681cd8-6b2e-4955-9113-33b5f7a22b8c
+    internal-label: Data model architecture
+  - id: a14877cc-63b1-41d9-bf0b-5f97cadd0417
+    internal-label: Configuration guidelines
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 271
-ht-degree: 77%
-
+source-wordcount: '271'
+ht-degree: 100%
 ---
-
 # Gestion des clés {#management-of-keys}
 
 Chaque table associée à un schéma de données doit posséder au moins une clé pour identifier un enregistrement dans une table.
@@ -148,4 +163,4 @@ Outre la définition de la clé, un champ numérique nommé &quot;id&quot; a ét
 
 >[!CAUTION]
 >
->Un enregistrement avec une clé primaire à 0 est automatiquement inséré à la création de la table. Cet enregistrement est utilisé pour éviter les jointures externes, qui ne sont pas efficaces sur les tables de volumes. Par défaut, toutes les clés étrangères sont initialisées avec la valeur 0 afin qu&#39;un résultat puisse toujours être retourné sur la jointure lorsque la donnée n&#39;est pas renseignée.
+>Un enregistrement avec une clé primaire à 0 est automatiquement inséré lors de la création de la table. Cet enregistrement est utilisé pour éviter les jointures externes, qui ne sont pas efficaces sur les tables de volumes. Par défaut, toutes les clés étrangères sont initialisées avec la valeur 0, ce qui permet de toujours renvoyer un résultat sur la jointure lorsque la donnée n’est pas renseignée.

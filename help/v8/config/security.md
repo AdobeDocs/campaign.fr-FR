@@ -6,27 +6,46 @@ role: Developer
 level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 version: Campaign v8, Campaign Classic v7
-TQID: https://experienceleague.adobe.com/u-utzgRutjQjoInyMi2Ow2L2NXyx44P1ru1CLr5Ji5c
+TQID: 'https://experienceleague.adobe.com/u-utzgRutjQjoInyMi2Ow2L2NXyx44P1ru1CLr5Ji5c'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
+    internal-label: Security and privacy
+  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
+subfeature_v2:
+  - id: ac9c0a9c-8a76-4419-bd64-9c34c5782666
+    internal-label: Privacy
+  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Privacy
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 2987
-ht-degree: 66%
-
+source-wordcount: '2987'
+ht-degree: 67%
 ---
-
 # Bonnes pratiques de sécurité de Campaign {#ac-security}
 
 Chez Adobe, nous prenons la sécurité de votre expérience digitale très au sérieux. Les bonnes pratiques de sécurité sont profondément ancrées dans nos processus internes de développement et d&#39;exploitation de logiciels ainsi que dans nos outils. Nos équipes transverses suivent scrupuleusement ces différentes règles afin d&#39;éviter les incidents, mais aussi de pouvoir les détecter et y répondre rapidement.
@@ -46,7 +65,7 @@ Utilisez cette liste de contrôle pour aligner votre configuration avec les vale
 * [Authentification et session](#authentication-and-session) : utiliser Adobe IMS, politique d’identité forte, délai d’expiration de la session
 * [Sécurité des instances et du réseau](#instance-and-network-security) : place sur la liste autorisée IP, autorisations d’URL, clés GPG par Panneau de Contrôle
 * [Protection des données et des PII](#data-and-pii-protection) : HTTPS, limitation de l’affichage des PII, restriction des mots de passe, protection des pages sensibles
-* [Instructions de codage &#x200B;](#coding-guidelines) : aucun secret codé en dur, validation de l’entrée, SQL paramétré, captchas
+* [Instructions de codage ](#coding-guidelines) : aucun secret codé en dur, validation de l’entrée, SQL paramétré, captchas
 * [Restriction des données](#data-restriction) : limitez l’accès aux champs de mot de passe et de secret dans les comptes externes
 * [Opérationnel et conformité](#operational-and-compliance) : comparez régulièrement cette ligne de base et utilisez le journal d’audit
 
@@ -79,15 +98,15 @@ Adobe Campaign fait partie des solutions Adobe Experience Cloud. La façon do
 
 * **Modalités de collecte des informations dans Adobe Experience Cloud**
 
-   * Les solutions Adobe Experience Cloud utilisent des cookies et des technologies similaires, telles que les balises web (également appelées pixels), pour vous permettre de collecter des informations. Pour plus d’informations sur les cookies et les fonctionnalités de tracking avec Adobe Campaign, consultez [cette section](#tracking-capabilities).
-   * Vous pouvez également utiliser les technologies Adobe Experience Cloud dans vos applications mobiles. Pour plus d’informations sur l’envoi de diffusions mobiles avec Campaign, consultez [canal SMS](../send/sms/sms-channel.md) et canal d’application mobile.
+  * Les solutions Adobe Experience Cloud utilisent des cookies et des technologies similaires, telles que les balises web (également appelées pixels), pour vous permettre de collecter des informations. Pour plus d’informations sur les cookies et les fonctionnalités de tracking avec Adobe Campaign, consultez [cette section](#tracking-capabilities).
+  * Vous pouvez également utiliser les technologies Adobe Experience Cloud dans vos applications mobiles. Pour plus d’informations sur l’envoi de diffusions mobiles avec Campaign, consultez [canal SMS](../send/sms/sms-channel.md) et canal d’application mobile.
 
 * **Choix de confidentialité de vos utilisateurs concernant votre utilisation d&#39;Adobe Experience Cloud**
 
   Adobe vous demande de fournir à vos clients des politiques de confidentialité décrivant :
 
-   * Vos pratiques de confidentialité en rapport avec Adobe Experience Cloud
-   * La manière dont les utilisateurs peuvent définir leurs préférences pour la collecte ou l&#39;utilisation de leurs informations en rapport avec Adobe Experience Cloud
+  * Vos pratiques de confidentialité en rapport avec Adobe Experience Cloud
+  * La manière dont les utilisateurs peuvent définir leurs préférences pour la collecte ou l&#39;utilisation de leurs informations en rapport avec Adobe Experience Cloud
 
 Pour plus d’informations sur la confidentialité dans Adobe Experience Cloud, consultez [cette page](https://www.adobe.com/fr/privacy/marketing-cloud.html).
 
@@ -184,8 +203,8 @@ Grâce à ses fonctionnalités de suivi, Adobe Campaign vous permet de suivre l
 * Un cookie de **session** : le cookie **nlid** contient l&#39;identifiant de l&#39;email envoyé au contact (**broadlogId**) et l&#39;identifiant du modèle de message (**deliveryId**). Il est déposé lorsque le contact clique sur une URL contenue dans un e-mail envoyé par Adobe Campaign et permet de suivre son comportement sur le web. Ce cookie de session est effacé automatiquement à la fermeture du navigateur. Le contact a la possibilité d&#39;en interdire le dépôt en adaptant les paramètres de son navigateur.
 
 * Deux cookies **permanents** :
-   * Le cookie **UUID** (Universal Unique IDentifier) est partagé entre les solutions Adobe Experience Cloud. Il est défini une fois jusqu’à ce qu’il disparaisse du navigateur client lorsqu’une nouvelle valeur est générée. Il permet d&#39;identifier un internaute qui interagit avec les solutions Experience Cloud lors de ses visites sur un site web. Il peut être déposé par une landing page (pour associer des activités de clients inconnues à un destinataire) ou par une diffusion. La description de ce cookie est disponible dans [cette page](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=fr#ec-cookies).
-   * Le cookie **nllastdelid** (introduit dans Campaign Classic 20.3) est un cookie permanent qui contient l&#39;identifiant **deliveryId** de la dernière diffusion d&#39;où l&#39;utilisateur a cliqué sur le lien. Ce cookie est utilisé - lorsque le cookie de session est manquant - pour identifier la table de tracking qui sera utilisée.
+  * Le cookie **UUID** (Universal Unique IDentifier) est partagé entre les solutions Adobe Experience Cloud. Il est défini une fois jusqu’à ce qu’il disparaisse du navigateur client lorsqu’une nouvelle valeur est générée. Il permet d&#39;identifier un internaute qui interagit avec les solutions Experience Cloud lors de ses visites sur un site web. Il peut être déposé par une landing page (pour associer des activités de clients inconnues à un destinataire) ou par une diffusion. La description de ce cookie est disponible dans [cette page](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=fr#ec-cookies).
+  * Le cookie **nllastdelid** (introduit dans Campaign Classic 20.3) est un cookie permanent qui contient l&#39;identifiant **deliveryId** de la dernière diffusion d&#39;où l&#39;utilisateur a cliqué sur le lien. Ce cookie est utilisé - lorsque le cookie de session est manquant - pour identifier la table de tracking qui sera utilisée.
 
 Des règlements, tels que le Règlement général sur la protection des données (RGPD), imposent aux entreprises d’obtenir l’accord des utilisateurs du site web avant d’installer des cookies.
 
@@ -218,7 +237,7 @@ La configuration et le renforcement de la confidentialité sont des éléments c
 
 ## Gestion des accès {#access-management}
 
-La gestion des accès est un aspect important du renforcement de la sécurité. Les bonnes pratiques principales sont les suivantes :
+La gestion des accès joue un rôle important dans le renforcement de la sécurité. Les bonnes pratiques principales sont les suivantes :
 
 * **Créer suffisamment de groupes de sécurité** - Définissez des groupes d’opérateurs correspondant aux rôles et attribuez uniquement les droits dont chaque rôle a besoin.
 * **Vérifier que chaque opérateur dispose des droits d&#39;accès adéquats** - Appliquer le principe de moindre privilège ; éviter d&#39;accorder par défaut des droits d&#39;ADMINISTRATION ou autres droits étendus.
@@ -239,7 +258,7 @@ Pour en savoir plus sur les autorisations, consultez [cette section](../start/gs
 
 ## Sécurité des instances et du réseau {#instance-and-network-security}
 
-En tant qu’administrateur ou administratrice de produit Campaign v8, utilisez Panneau de Contrôle Campaign[&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"} pour gérer la sécurité au niveau de l’instance :
+En tant qu’administrateur ou administratrice de produit Campaign v8, utilisez Panneau de Contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"} pour gérer la sécurité au niveau de l’instance :[
 
 * place sur la liste autorisée IP **- Gérez la liste autorisée IP pour l&#39;accès aux instances ; limitez-la aux réseaux connus (par exemple bureau, VPN) et évitez autant que possible les plages trop larges.**
 * **Autorisations d’URL** - Restreignez les autorisations d’URL aux domaines que votre instance doit appeler (API, tracking, services externes) pour réduire le risque d’utilisation abusive des requêtes côté serveur.

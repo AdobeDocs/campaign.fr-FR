@@ -6,18 +6,26 @@ feature: Workflows
 role: Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 14160de5-23d2-4f53-84c6-0f9e3b1dcf21
-TQID: https://experienceleague.adobe.com/PbWDQXbUkUD125BnpQnw9SbKgUFnIqKeus1EVc-OAEk
+TQID: 'https://experienceleague.adobe.com/PbWDQXbUkUD125BnpQnw9SbKgUFnIqKeus1EVc-OAEk'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Developer
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1272
-ht-degree: 73%
-
+source-wordcount: '1272'
+ht-degree: 98%
 ---
-
 # Scripts et modèles JavaScript{#javascript-scripts-and-templates}
 
 
@@ -26,10 +34,10 @@ Les scripts vont permettre de calculer des valeurs, d&#39;échanger des données
 
 Les scripts sont omniprésents dans un diagramme de workflow :
 
-* Toutes les activités comportent des scripts d’initialisation. Un script d’initialisation est exécuté lorsque l’activité est activée et peut être utilisé pour initialiser des variables et modifier les propriétés.
+* Toutes les activités comportent des scripts d’initialisation. Un script d’initialisation est exécuté à l’activation de l’activité. Il permet d’initialiser des variables et de modifier les propriétés.
 * L&#39;activité &#39;Code JavaScript&#39; a pour seule fonction d&#39;exécuter un script.
 * L&#39;activité &#39;Test&#39; évalue des expressions JavaScript pour activer la bonne transition.
-* La plupart des champs de texte sont des modèles JavaScript : les expressions JavaScript peuvent être incluses entre &lt;%= et %>. Ces champs contiennent un bouton qui ouvre une liste déroulante pour vous aider à saisir des expressions.
+* La plupart des champs de texte sont des modèles JavaScript : les expressions JavaScript peuvent être incluses entre &lt;%= et %>. Ces champs contiennent un bouton qui ouvre une liste déroulante pour vous aider à saisir des expressions.
 
   ![](assets/script-button.png)
 
@@ -49,7 +57,7 @@ Les propriétés disponibles pour ces objets sont accessibles depuis le menu dé
 >
 >Les propriétés de ces objets sont accessibles en lecture seule à l&#39;exception des sous-propriétés de la propriété vars.
 >  
->La plupart de ces propriétés ne sont mises à jour qu&#39;après l&#39;exécution d&#39;une tâche élémentaire ou lorsque l&#39;instance est passivée. Les valeurs lues ne correspondent pas nécessairement au statut actuel, mais au statut précédent.
+>La plupart de ces propriétés ne sont mises à jour qu’après l’exécution d’une tâche élémentaire ou au moment de la passivation de l’instance. Les valeurs lues ne correspondent pas nécessairement au statut en cours mais au statut précédent.
 
 **Exemple**
 
@@ -78,11 +86,11 @@ Les variables d’instance (**[!UICONTROL instance.vars.xxx]**) sont comparables
 
 ### Les variables de tâches {#task-variables}
 
-Les variables de tâche (**[!UICONTROL task.vars.xxx]**) sont comparables à des variables locales. Elles ne sont utilisées que par la tâche en cours. Ces variables sont utilisées par les activités persistantes pour conserver les données et sont parfois utilisées pour échanger des données entre les différents scripts d’une même activité.
+Les variables de tâche (**[!UICONTROL task.vars.xxx]**) sont comparables à des variables locales. Elles ne sont utilisées que par la tâche en cours. Ces variables sont utilisées par des activités persistantes pour conserver des données et sont parfois utilisées pour échanger des données entre différents scripts d’une même activité.
 
 ### Les variables d&#39;événements {#event-variables}
 
-Les variables d’événement (**[!UICONTROL vars.xxx]**) permettent l’échange de données entre les tâches élémentaires d’un processus de workflow. Ces variables sont transmises par la tâche qui a activé la tâche en cours. Il est possible de les modifier et d’en définir de nouveaux. Elles sont ensuite transmises aux activités suivantes.
+Les variables d’événement (**[!UICONTROL vars.xxx]**) activent l’échange des données entre les tâches élémentaires d’un processus de workflow. Ces variables sont transmises par la tâche qui a activé la tâche en cours. Il est possible de les modifier et d’en définir de nouvelles. Elles sont ensuite transmises aux activités suivantes.
 
 >[!CAUTION]
 >
@@ -90,7 +98,7 @@ Les variables d’événement (**[!UICONTROL vars.xxx]**) permettent l’échang
 
 Les événements sont les variables les plus communément utilisées et doivent être préférées aux variables d&#39;instances.
 
-Certaines variables d’événement sont modifiées ou lues par les différentes activités. Il s’agit toutes de variables de type chaîne. Par exemple, un export définit la variable **[!UICONTROL vars.filename]** avec le nom complet du fichier qui vient d’être exporté. Toutes ces variables lues ou modifiées sont documentées dans [À propos des activités](activities.md), dans les sections **Paramètres d’entrée** et **Paramètres de sortie** des activités.
+Certaines variables d’événement sont modifiées ou lues par les différentes activités. Il s’agit de variables de type chaîne. Par exemple, un export définit la variable **[!UICONTROL vars.filename]** avec le nom complet du fichier qui vient d’être exporté. Toutes ces variables lues ou modifiées sont documentées dans [À propos des activités](activities.md), dans les sections **Paramètres d’entrée** et **Paramètres de sortie** des activités.
 
 ### Cas pratiques {#example}
 
@@ -174,7 +182,7 @@ Par exemple :
 
    ![](assets/wkf_js_activity_1.png)
 
-1. Créez une requête dont les dimensions de ciblage et de filtrage sont les destinataires. Dans les conditions, indiquez que vous souhaitez rechercher tous les destinataires auxquels a été envoyée la diffusion spécifiée par la variable .
+1. Créez une requête dont les dimensions de ciblage et de filtrage sont les destinataires. Dans les conditions, indiquez que vous souhaitez trouver toutes les personnes destinataires auxquelles la diffusion spécifiée par la variable a été envoyée.
 
    Pour rappel, ces informations sont stockées dans les logs de diffusion.
 
@@ -190,9 +198,9 @@ En plus des fonctions JavaScript standard, d&#39;autres fonctions spécifiques s
 
 ### Journal {#journal}
 
-**[!UICONTROL logInfo(message)]** a été présenté dans les exemples ci-dessus. Cette fonction ajoute un message d&#39;information au journal.
+**[!UICONTROL logInfo(message)]** a déjà été présenté dans les exemples précédents. Cette fonction ajoute un message d’information au journal.
 
-**[!UICONTROL logError(message)]** ajoute un message d’erreur au journal. Le script interrompt son exécution et le workflow passe en statut d’erreur (par défaut, l’instance est mise en pause).
+**[!UICONTROL logError(message)]** ajoute un message d’erreur au log. Le script interrompt son exécution et le workflow passe au statut d’erreur (par défaut, l’instance sera mise en pause).
 
 ## Script d&#39;initialisation {#initialization-script}
 

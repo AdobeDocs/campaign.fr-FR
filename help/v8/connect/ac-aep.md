@@ -5,20 +5,29 @@ feature: Experience Platform Integration
 role: Developer
 level: Beginner
 exl-id: 21cf5611-ccaa-4e83-8891-a1a2353515aa
-TQID: https://experienceleague.adobe.com/sQgS-ig3-OfCLseGyqsbismNI-qqy1E2io6P17HZsUU
+TQID: 'https://experienceleague.adobe.com/sQgS-ig3-OfCLseGyqsbismNI-qqy1E2io6P17HZsUU'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
+subfeature_v2:
+  - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Experience Platform integration
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Beginner
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 583
+source-wordcount: '583'
 ht-degree: 93%
-
 ---
-
 # Partager et synchroniser des audiences avec Adobe Experience Platform {#gs-ac-aep}
 
 La destination et les connecteurs source d’Adobe Campaign Managed Cloud Services permettent une intégration transparente entre Adobe Campaign et Adobe Experience Platform. Avec cette intégration, vous pouvez effectuer les actions suivantes :
@@ -32,18 +41,18 @@ Les principales étapes pour envoyer des audiences Adobe Experience Platform v
 
 * Utilisez une **connexion de destination** Adobe Campaign Managed Cloud Services pour envoyer des segments Experience Platform vers Adobe Campaign :
 
-   1. Accédez au catalogue des destinations Adobe Experience Platform et créez une nouvelle connexion **[!UICONTROL Adobe Campaign Managed Cloud Services]**.
-   1. Fournissez des détails sur l’instance de Campaign à utiliser et sélectionnez **[!UICONTROL Synchronisation de l’audience]** comme type de synchronisation.
+  1. Accédez au catalogue des destinations Adobe Experience Platform et créez une nouvelle connexion **[!UICONTROL Adobe Campaign Managed Cloud Services]**.
+  1. Fournissez des détails sur l’instance de Campaign à utiliser et sélectionnez **[!UICONTROL Synchronisation de l’audience]** comme type de synchronisation.
 
-      ![](assets/aep-audience-sync.png){width="800" align="center"}
+     ![](assets/aep-audience-sync.png){width="800" align="center"}
 
-   1. Sélectionnez les segments à envoyer vers Adobe Campaign.
-   1. Configurez les attributs que vous souhaitez exporter dans l’audience.
-   1. Une fois le flux configuré, les audiences sélectionnées seront disponibles pour activation dans Adobe Campaign.
+  1. Sélectionnez les segments à envoyer vers Adobe Campaign.
+  1. Configurez les attributs que vous souhaitez exporter dans l’audience.
+  1. Une fois le flux configuré, les audiences sélectionnées seront disponibles pour activation dans Adobe Campaign.
 
-      ![](assets/aep-destination.png){width="800" align="center"}
+     ![](assets/aep-destination.png){width="800" align="center"}
 
-  Des informations détaillées sur la configuration de la destination sont disponibles dans la documentation de connexion [&#128279;](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
+  Des informations détaillées sur la configuration de la destination sont disponibles dans la documentation de connexion [](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
 
 * Utilisez une **connexion source** Adobe Campaign Managed Cloud Services pour envoyer les logs de diffusion et de tracking Adobe Campaign à Adobe Experience Platform :
 
@@ -72,4 +81,4 @@ Les principales étapes de synchronisation des attributs de profil Adobe Experi
 1. Configurez les attributs de profil que vous souhaitez mettre à jour dans Adobe Campaign.
 1. Une fois le flux configuré, les attributs de profil sélectionnés seront synchronisés avec Adobe Campaign et mis à jour pour tous les profils ciblés par les segments configurés dans la destination.
 
-Des informations détaillées sur la configuration de la destination sont disponibles dans la documentation de connexion [&#128279;](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
+Des informations détaillées sur la configuration de la destination sont disponibles dans la documentation de connexion [](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}

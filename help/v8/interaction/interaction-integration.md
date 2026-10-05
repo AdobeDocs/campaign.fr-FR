@@ -5,21 +5,30 @@ description: Découvrez comment ajouter une offre dans une page web
 feature: Interaction, Offers
 role: User, Admin
 exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
-TQID: https://experienceleague.adobe.com/KBMGNRM-vmeYoar4Bdr2uILvjiIBHA3KlkELyirtuvk
+TQID: 'https://experienceleague.adobe.com/KBMGNRM-vmeYoar4Bdr2uILvjiIBHA3KlkELyirtuvk'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 65702805-0026-5ca1-843a-144fa79f0883
+    internal-label: Interaction
+  - id: ea08db70-4682-59a2-9408-9aedd9548e07
+    internal-label: Offers
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1483
-ht-degree: 81%
-
+source-wordcount: '1483'
+ht-degree: 97%
 ---
-
 # Ajouter une offre sur une page web{#add-an-offer-in-web}
 
 Pour appeler le moteur d&#39;offres dans une page web, insérez un appel à un code JavaScript directement dans la page. Cet appel renvoie le contenu de l&#39;offre dans un élément ciblé.
@@ -114,7 +123,7 @@ Dans le contenu de la page web, vous devez ajouter le script suivant qui permett
 
    Dans cet exemple, la clé d&#39;identification est composite puisqu&#39;elle s&#39;appuie à la fois sur l&#39;email et le nom du destinataire.
 
-1. Lors de l&#39;affichage de la page web, l&#39;évaluation du script permet de transmettre l&#39;identifiant du destinataire au moteur d&#39;offres. Si l’identifiant est composite, les clés sont affichées dans la même séquence que celle utilisée dans les paramètres avancés et sont séparées par un |.
+1. Lors de l&#39;affichage de la page web, l&#39;évaluation du script permet de transmettre l&#39;identifiant du destinataire au moteur d&#39;offres. Si l’identifiant est composite, les clés sont affichées dans la même séquence que celle utilisée dans les paramètres avancés et sont séparées par un caractère |.
 
    Dans l&#39;exemple suivant, le contact s&#39;est identifié sur le site web et a été reconnu lors de l&#39;appel au moteur d&#39;offres via son adresse e-mail et son nom de famille.
 
@@ -150,15 +159,15 @@ L&#39;appel au moteur d&#39;offres est de la forme suivante :
 
 * Le paramètre &quot;**env**&quot; reçoit le nom interne de l&#39;environnement en ligne.
 
-* Le paramètre « **cb** » reçoit le nom de la fonction qui lira le nœud XML renvoyé par le moteur contenant la ou les propositions (de rappel). Ce paramètre est optionnel.
+* Le paramètre « **cb** » reçoit le nom de la fonction qui va interpréter le nœud XML renvoyé par le moteur contenant la ou les propositions (de rappel). Ce paramètre est optionnel.
 
 * Le paramètre &quot;**t**&quot; reçoit l&#39;identifiant de la cible, pour une interaction identifiée uniquement. Ce paramètre peut également être passé avec la variable **interactionTarget**. Ce paramètre est optionnel.
 
-* Le paramètre « **c** » reçoit la liste des noms internes des catégories. Ce paramètre est optionnel.
+* Le paramètre « **c** » reçoit la liste des noms internes des catégories. Ce paramètre est optionnel.
 
-* Le paramètre « **th** » reçoit la liste des thèmes. Ce paramètre est optionnel.
+* Le paramètre « **th** » reçoit la liste des thèmes. Ce paramètre est optionnel.
 
-* Le paramètre « **gctx** » reçoit les données d’appel globales (contexte) pour la page entière. Ce paramètre est optionnel.
+* Le paramètre« **gctx** » reçoit les données d’appel globales (contexte) à toute la page. Ce paramètre est optionnel.
 
 Le noeud XML retourné est de la forme suivante :
 
@@ -183,7 +192,7 @@ Le cas d&#39;utilisation suivant décrit les paramétrages à effectuer dans Ado
 
    Ce schéma va définir les champs suivants : titre N°2 et prix.
 
-   Le nom du schéma dans l&#39;exemple est **cus:offer**
+   Le nom du schéma dans l’exemple est **cus:offer**.
 
    ```
    <srcSchema _cs="Marketing offers (cus)" created="2013-01-18 17:14:20.762Z" createdBy-id="0"
@@ -210,7 +219,7 @@ Le cas d&#39;utilisation suivant décrit les paramétrages à effectuer dans Ado
 
    >[!CAUTION]
    >
-   >Chaque élément doit être défini deux fois. Les éléments de type CDATA (« _jst ») peuvent contenir des champs de personnalisation.
+   >Chaque élément doit être défini deux fois. Les éléments de type CDATA (« _jst ») peuvent contenir des champs de personnalisation.
    >
    >Ne pas oublier de mettre à jour la structure de la base de données.
 
@@ -281,7 +290,7 @@ Le cas d&#39;utilisation suivant décrit les paramétrages à effectuer dans Ado
 
    Le paramètre &quot;**env**&quot; a pour valeur le nom interne de l&#39;environnement en ligne.
 
-   La valeur du paramètre « **cb** » est le nom de la fonction qui doit interpréter le nœud XML renvoyé par le moteur. Dans notre exemple, la fonction appelée ouvre une fenêtre modale (alert() function).
+   Le paramètre « **cb** » a pour valeur le nom de la fonction qui doit interpréter le nœud XML renvoyé par le moteur. Dans notre exemple, la fonction appelée ouvre une fenêtre modale (fonction alert()).
 
    Le nœud XML renvoyé par le moteur d&#39;offres a la forme suivante :
 
@@ -322,11 +331,11 @@ Il est possible d&#39;utiliser une fonction de rendu XML pour créer une présen
 
 ## Configuration d&#39;une intégration SOAP
 
-Les services web SOAP fournis pour la gestion des offres sont différents de ceux généralement utilisés dans Adobe Campaign. Ils sont accessibles via l&#39;URL d&#39;interaction décrite dans la section précédente et permettent de présenter ou de mettre à jour des offres pour un contact donné.
+Les services web SOAP fournis pour la gestion des offres sont différents de ceux généralement utilisés dans Adobe Campaign. Ils sont accessibles via l’URL d’interaction décrite dans la section précédente et permettent de proposer ou de mettre à jour des offres pour un contact donné.
 
 ### Proposition d&#39;offres {#offer-proposition}
 
-Pour une proposition d&#39;offre via SOAP, ajoutez la commande **nms:proposition#Propose** suivie des paramètres suivants :
+Pour une proposition d’offre via SOAP, ajoutez la commande **nms:proposition#Propose** suivie des paramètres suivants :
 
 * **targetId** : clé primaire du destinataire (il peut s&#39;agir d&#39;une clé composite).
 * **maxCount** : indique le nombre de propositions d&#39;offre pour le contact.
@@ -348,7 +357,7 @@ En réponse à la requête, le service SOAP renverra les paramètres suivants :
 
 ### Mise à jour d&#39;une offre {#offer-update}
 
-Ajoutez la commande **nms:interaction#UpdateStatus** à l&#39;URL, puis les paramètres suivants :
+Ajoutez la commande **nms:interaction#UpdateStatus** à l’URL, puis les paramètres suivants :
 
 * **proposition** : chaîne de caractères, contient l&#39;identifiant de la proposition donnée en sortie lors d&#39;un appel au moteur. Voir [Proposition d&#39;offres](#offer-proposition).
 * **status** : nombre, indique le nouveau statut de l&#39;offre. Les valeurs possibles sont répertoriées dans la **propositionStatus** [enumeration](../config/enumerations.md), dans le schéma **nms:common**. Par exemple, d&#39;usine, le nombre 3 correspond au statut **Acceptée**.

@@ -6,21 +6,28 @@ feature: Personalization
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: f4a329e3-70d2-43cd-a04a-0bbd5e3ca390
-TQID: https://experienceleague.adobe.com/qfSKBHeQUkAYJb-PSeTxYMxGp-WicmITitT9qh8tHBs
+TQID: 'https://experienceleague.adobe.com/qfSKBHeQUkAYJb-PSeTxYMxGp-WicmITitT9qh8tHBs'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 13af5358-448e-5a4a-850b-0db592bb0f8f
+    internal-label: Personalization
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 538
-ht-degree: 86%
-
+source-wordcount: '538'
+ht-degree: 97%
 ---
-
 # Génération de documents PDF personnalisés{#generating-personalized-pdf-documents}
 
 ## À propos des documents PDF variables {#about-variable-pdf-documents}
@@ -49,7 +56,7 @@ La procédure pour générer des tableaux dynamiques est la suivante :
 
 >[!IMPORTANT]
 >
->La version 8.9.3 d’comprend une mise à jour de la liste autorisée URL externe. Assurez-vous que les domaines utilisés pour les images externes dans vos pièces jointes sont ajoutés à la liste autorisée de données approuvée de votre instance afin que les ressources continuent à se charger sans interruption. En tant qu’administrateur ou administratrice de Campaign, utilisez le Panneau de Contrôle pour ajouter et gérer des URL placées sur la liste autorisée. Pour connaître la procédure, voir [Ajout d’autorisations d’URL](https://experienceleague.adobe.com/fr/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
+>La version 8.9.3 d’comprend une mise à jour de la liste autorisée URL externe. Assurez-vous que les domaines utilisés pour les images externes dans vos pièces jointes sont ajoutés à la liste autorisée approuvée de votre instance afin que les ressources continuent à se charger sans interruption. En tant qu’administrateur ou administratrice de Campaign, utilisez le panneau de contrôle pour ajouter et gérer des URL placées sur la liste autorisée. Pour connaître la procédure, consultez [Ajouter des autorisations d’URL](https://experienceleague.adobe.com/fr/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
 
 L&#39;insertion d&#39;images externes est utile lorsque, par exemple, vous souhaitez personnaliser un document avec une image dont l&#39;URL est renseignée dans un champ du destinataire.
 

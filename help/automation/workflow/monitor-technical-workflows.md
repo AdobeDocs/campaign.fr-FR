@@ -6,20 +6,29 @@ feature: Workflows
 role: Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
-TQID: https://experienceleague.adobe.com/xGSqzmm1kxKvSViuqdN0a-AwIuDxnNjWBHwH1bwAXtU
+TQID: 'https://experienceleague.adobe.com/xGSqzmm1kxKvSViuqdN0a-AwIuDxnNjWBHwH1bwAXtU'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 497
-ht-degree: 90%
-
+source-wordcount: '497'
+ht-degree: 100%
 ---
-
 # Surveiller les workflows techniques {#monitoring-technical-workflows}
 
 Les workflows techniques ont besoin d&#39;être surveillés, et des mesures doivent être prises en cas d&#39;échec.
@@ -30,7 +39,7 @@ Le tableau de bord de supervision de l’instance est accessible à partir de l�
 
 ![](assets/monitoring_technical_workflows1.png)
 
-Sous Indicateurs système et fichiers principaux, vérifiez qu’aucun indicateur n’est mis en surbrillance en rouge. Si c’est le cas et que certains le sont, vous devez :
+Dans Indicateurs système et fichiers core, vérifier qu’aucun indicateur n’est surligné en rouge. Si c’est le cas et que certains le sont :
 
 * Vérifiez que les traitements nécessaire sont toujours en cours d&#39;exécution,
 * Vérifiez qu&#39;aucun des traitement n&#39;est trop vieux,
@@ -88,7 +97,7 @@ Tous les workflows techniques personnalisés doivent être documentés dans une 
 
 ## Planification et automatisation de la surveillance {#planning-and-automation-of-monitoring}
 
-La surveillance des workflows de planification améliore son efficacité. Certaines tâches doivent être effectuées quotidiennement, tandis que d’autres peuvent l’être une fois par semaine ou par mois.
+La surveillance des workflows de planification améliore son efficacité. Certaines tâches doivent avoir lieu tous les jours, alors que d’autres sont nécessaires une fois par semaine ou une fois par mois.
 
 Le fait de sauvegarder les workflows dans des dossiers nommés en fonction de leur récurrence et triés par planning d’exécution augmente l’efficacité de la surveillance.
 

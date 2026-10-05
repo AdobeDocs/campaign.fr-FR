@@ -4,23 +4,31 @@ title: Configurer les règles de contrôle
 description: Découvrez comment configurer des règles de contrôle.
 feature: Typology Rules
 exl-id: 79e442ea-f856-41bf-b065-25cb2ad2c65b
-TQID: https://experienceleague.adobe.com/xluD-4nygREOMWZyFT6OrenJvfvFVWTVf7i6-ZoYfTI
+TQID: 'https://experienceleague.adobe.com/xluD-4nygREOMWZyFT6OrenJvfvFVWTVf7i6-ZoYfTI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
+subfeature_v2:
+  - id: e5fb657f-3c0a-4fcc-9980-3589a23ab4de
+    internal-label: Typology rules
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Optimization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 389
-ht-degree: 82%
-
+source-wordcount: '389'
+ht-degree: 100%
 ---
-
 # Règles de contrôle{#control-rules}
 
 Les règles de contrôle permettent de s&#39;assurer de la validité et la qualité des messages avant leur diffusion : bon affichage des caractères, taille des SMS, format des adresses, etc.
 
-Un ensemble de règles d&#39;usine permet d&#39;effectuer les contrôles usuels. Ces contrôles (affichés en gras dans l’interface) sont les suivants :
+Un ensemble de règles d’usine vous permet d’effectuer les vérifications habituelles. Ces vérifications (affichées en gras dans l’interface) sont les suivantes :
 
 * **[!UICONTROL Validation du sujet]** (email) : vérifie que le sujet et l&#39;adresse de l&#39;expéditeur du message ne contiennent pas de caractères spéciaux, susceptibles de poser des problèmes sur certains agents mail.
 * **[!UICONTROL Validation des libellés d&#39;URL]** (email) : vérifie la présence d&#39;un libellé pour chaque URL de tracking.
@@ -37,7 +45,7 @@ Afin de répondre à vos besoins, vous pouvez définir de nouvelles règles de c
 
 **Exemple:**
 
-Dans l&#39;exemple suivant, nous allons créer une règle pour empêcher l&#39;envoi d&#39;une offre SMS à plus de 100 destinataires. Cette règle sera associée à une typologie de campagne, puis aux diffusions SMS pour lesquelles l&#39;offre concernée est disponible.
+Dans l’exemple suivant, nous allons créer une règle afin de ne pas diffuser une offre par SMS à plus de 100 personnes destinataires. Cette règle sera liée à une typologie de campagne qui sera associée aux diffusions par SMS proposant l’offre concernée.
 
 Les étapes sont les suivantes :
 

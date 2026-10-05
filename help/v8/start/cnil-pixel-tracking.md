@@ -3,19 +3,22 @@ title: Pixels de suivi d’e-mails et conseils de la CNIL
 description: Présentation des conseils mis à jour de la CNIL sur les pixels de tracking e-mail et les fonctionnalités d’Adobe Campaign pouvant prendre en charge les efforts de conformité.
 version: Campaign v8, Campaign Classic v7
 hide: true
-source-git-commit: 124f23f384d0eb974a22e40eed3904ed43f8f9db
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 3%
-
 ---
-
 
 # Comprendre les nouveaux conseils de la CNIL sur les pixels de tracking email
 
 Cette publication est fournie à titre d&#39;information uniquement. Il ne s&#39;agit pas d&#39;un avis juridique et ne garantit pas votre conformité avec la loi applicable. Les fonctionnalités du produit Adobe Campaign décrites ci-dessous sont des blocs de création qui, configurés et utilisés de manière appropriée, peuvent prendre en charge une mise en œuvre conforme. Chaque client est responsable de déterminer et de respecter ses obligations en vertu de la loi applicable.
 
-## Vue d’ensemble
+## Présentation
 
 Le 14 avril 2026, la _Commission nationale de l&#39;informatique et des libertés_ (CNIL), l&#39;autorité française de protection des données, a publié une [recommandation sur l&#39;utilisation des pixels de tracking dans les emails](https://www.cnil.fr/sites/default/files/2026-04/recommandation-pixels_de_suivi.pdf). Ces conseils clarifient le moment où le consentement est requis et soulignent l’importance de bonnes pratiques de consentement pour le suivi des pixels d’e-mail. Cette politique peut avoir un impact sur les pratiques d’envoi pour toute entité diffusant des e-mails aux abonnés basés en France.
 
@@ -55,9 +58,9 @@ Pour plus d’informations sur le tracking e-mail dans les applications de marke
 | Produit | Référence de documentation |
 |---|---|
 | Campaign v8 | [Suivi des messages](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"} |
-| Campaign Classic | [Prise en main du tracking des messages](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-message-tracking){target="_blank"} |
-| Journey Optimizer | [Documentation sur le tracking des messages](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/channels/email/design-email/add-content/message-tracking){target="_blank"} |
-| Marketo Engage | [Désactiver le suivi d’un lien e-mail](https://experienceleague.adobe.com/fr/docs/marketo/using/product-docs/email-marketing/general/functions-in-the-editor/disable-tracking-for-an-email-link){target="_blank"} |
-| Journey Optimizer B2B | [Documentation sur les paramètres d’e-mail](https://experienceleague.adobe.com/fr/docs/journey-optimizer-b2b/user/journey-content/email-channel/add-email){target="_blank"} |
+| Campaign Classic | [Prise en main du tracking des messages](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-message-tracking){target="_blank"} |
+| Journey Optimizer | [Documentation sur le tracking des messages](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/add-content/message-tracking){target="_blank"} |
+| Marketo Engage | [Désactiver le suivi d’un lien e-mail](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/email-marketing/general/functions-in-the-editor/disable-tracking-for-an-email-link){target="_blank"} |
+| Journey Optimizer B2B | [Documentation sur les paramètres d’e-mail](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/journey-content/email-channel/add-email){target="_blank"} |
 
 

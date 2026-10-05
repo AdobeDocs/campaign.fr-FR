@@ -5,28 +5,40 @@ feature: Data Model
 role: Developer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-TQID: https://experienceleague.adobe.com/pUzg-KbbYOXppAjG0nQe9T16Co61ipNXywTjNaV76bU
+TQID: 'https://experienceleague.adobe.com/pUzg-KbbYOXppAjG0nQe9T16Co61ipNXywTjNaV76bU'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
 subfeature_v2:
   - id: b5852c32-876b-41ae-92a7-9f588865ae52
+    internal-label: Best practices
+  - id: a1681cd8-6b2e-4955-9113-33b5f7a22b8c
+    internal-label: Data model architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 737
+source-wordcount: '737'
 ht-degree: 92%
-
 ---
-
 # Prise en main du modèle de données de Campaign {#gs-ac-datamodel}
 
 Un modèle de données d’usine est fourni avec Adobe Campaign. Cette section donne un certain nombre de détails sur les tables intégrées du modèle de données d’Adobe Campaign et leurs interactions. Adobe Campaign repose sur une base de données cloud contenant des tables liées entre elles.
@@ -39,9 +51,9 @@ La structure de base du modèle de données Adobe Campaign peut être décrite 
 
 * **Tables de logs** : ces tables stockent tous les logs associés à l&#39;exécution des campagnes.
 
-   * Les logs de diffusion sont tous des messages envoyés aux destinataires ou aux appareils sur tous les canaux. La table principale des logs de diffusion (**NmsBroadLogRcp**) contient les logs de diffusion de tous les destinataires.
-   * La table **nmsBroadlog** est la plus volumineuse du système. Elle stocke un enregistrement par message envoyé. Les enregistrements sont insérés et mis à jour, afin de suivre le statut de la diffusion, puis supprimés lorsque l’historique est purgé.
-   * La table principale des logs de tracking (**NmsTrackingLogRcp**) stocke les logs de tracking pour tous les destinataires. Les logs de tracking se rapportent aux réactions des destinataires, telles que les ouvertures d’email et les clics. Chaque réaction correspond à un log de tracking.
+  * Les logs de diffusion sont tous des messages envoyés aux destinataires ou aux appareils sur tous les canaux. La table principale des logs de diffusion (**NmsBroadLogRcp**) contient les logs de diffusion de tous les destinataires.
+  * La table **nmsBroadlog** est la plus volumineuse du système. Elle stocke un enregistrement par message envoyé. Les enregistrements sont insérés et mis à jour, afin de suivre le statut de la diffusion, puis supprimés lorsque l’historique est purgé.
+  * La table principale des logs de tracking (**NmsTrackingLogRcp**) stocke les logs de tracking pour tous les destinataires. Les logs de tracking se rapportent aux réactions des destinataires, telles que les ouvertures d’email et les clics. Chaque réaction correspond à un log de tracking.
 
   Les mpgs de diffusion et de tracking sont supprimés après une certaine période, spécifiée dans Adobe Campaign et modifiable. Il est donc vivement recommandé d&#39;exporter les logs de façon régulière.
 
@@ -75,7 +87,7 @@ Il est possible d&#39;étendre la table des destinataires, mais sans réduire le
 
 Découvrez comment étendre un schéma existant dans [cette section](extend-schema.md).
 
-Découvrez des exemples d&#39;extensions de table de destinataires intégrées dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#extending-a-table){target="_blank"}
+Découvrez des exemples d&#39;extensions de table de destinataires intégrées dans la documentation de [Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#extending-a-table){target="_blank"}
 
 Vous pouvez également utiliser une autre table des destinataires, mieux adaptée à vos besoins professionnels ou fonctionnels. Cette méthode s&#39;accompagne de limitations et est décrite dans [cette section](custom-recipient.md).
 

@@ -5,22 +5,32 @@ feature: Federated Data Access
 role: Admin
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-TQID: https://experienceleague.adobe.com/lM7a0NhOPSZsHW4X60S3-TTlnnuTMb1Ip30uRpBctEQ
+TQID: 'https://experienceleague.adobe.com/lM7a0NhOPSZsHW4X60S3-TTlnnuTMb1Ip30uRpBctEQ'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: ee3dfd63-9a21-4961-9f24-ea3385284a21
+    internal-label: Federated Data Access
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 768
-ht-degree: 96%
-
+source-wordcount: '768'
+ht-degree: 99%
 ---
-
 # Federated Data Access (FDA){#gs-fda}
 
 Utilisez le connecteur FDA (Federated Data Access) pour connecter Campaign à une ou plusieurs **bases de données externes** et traiter les informations stockées dans celles-ci sans affecter vos données provenant des bases cloud de Campaign. Vous pouvez ensuite accéder à des données externes sans modifier la structure des données Adobe Campaign.
@@ -44,9 +54,9 @@ Gardez également à l’esprit les limites et bonnes pratiques suivantes :
 
 * Évitez autant que possible les opérations nécessitant d’utiliser à la fois la base de données Adobe Campaign et la base de données externe. Pour ce faire, vous pouvez :
 
-   * exporter les données de la base Adobe Campaign vers la base externe et effectuer les opérations uniquement depuis la base externe avant de réimporter les résultats dans Adobe Campaign.
+  * exporter les données de la base Adobe Campaign vers la base externe et effectuer les opérations uniquement depuis la base externe avant de réimporter les résultats dans Adobe Campaign.
 
-   * collecter les données de la base externe dans Adobe Campaign et effectuer les opérations localement.
+  * collecter les données de la base externe dans Adobe Campaign et effectuer les opérations localement.
 
   Si vous souhaitez effectuer une personnalisation dans vos diffusions en utilisant les données de la base externe, collectez les données à utiliser dans un workflow afin de les rendre disponibles dans un tableau temporaire. Utilisez ensuite les données du tableau temporaire pour personnaliser votre diffusion. Pour ce faire, pré-traitez la personnalisation des messages dans un workflow dédié à l’aide de la fonction **[!UICONTROL Préparer les données de personnalisation avec un workflow]**, disponible dans l’onglet **[!UICONTROL Analyse]** des propriétés de la diffusion. Cette option permet, lors de l&#39;analyse de la diffusion, de créer et d&#39;exécuter automatiquement un workflow qui stocke toutes les données liées à la cible dans une table temporaire, notamment les données issues des tables liées dans une base de données externe.
 
@@ -78,7 +88,7 @@ Par exemple, dans l&#39;activité **[!UICONTROL Requête]**, vous pouvez défini
 1. Ouvrez l&#39;activité et cliquez sur le lien **[!UICONTROL Ajouter des données...]**
 1. Sélectionnez les options des **[!UICONTROL Données externes]**.
 1. Choisissez l&#39;option **[!UICONTROL En définissant localement la source de données]**.
-1. Sélectionnez le moteur de la base de données cible dans la liste déroulante. Saisissez le nom du serveur et renseignez les paramètres d&#39;authentification. Indiquez également le nom de la base externe.
+1. Sélectionnez le moteur de base de données cible dans la liste déroulante. Saisissez le nom du serveur et renseignez les paramètres d’authentification. Indiquez également le nom de la base externe.
 1. Sélectionnez la table où sont stockées les données. Vous pouvez saisir le nom de la table directement dans le champ correspondant ou cliquer sur l’icône d’édition pour accéder à la liste des tables de la base de données.
 1. Cliquez sur le bouton **[!UICONTROL Ajouter]** pour définir un ou plusieurs champs de réconciliation entre les données de la base de données externe et les données de la base de données d’Adobe Campaign. Les icônes **[!UICONTROL Modifier l’expression]** du **[!UICONTROL Champ distant]** et du **[!UICONTROL Champ local]** permettent d’accéder à la liste des champs de chacune des tables.
 1. Au besoin, indiquez une condition de filtrage et le mode de tri des données.

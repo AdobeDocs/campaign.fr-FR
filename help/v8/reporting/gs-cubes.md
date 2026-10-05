@@ -5,22 +5,32 @@ feature: Reporting
 role: Developer
 level: Beginner
 exl-id: f57f3074-981f-4bcf-9274-7908cd00a4a2
-TQID: https://experienceleague.adobe.com/rWE0PPnY4uRgpGy9a-cucZFSGnRyaI9IwwjJFmvYY9s
+TQID: 'https://experienceleague.adobe.com/rWE0PPnY4uRgpGy9a-cucZFSGnRyaI9IwwjJFmvYY9s'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic reporting
+subfeature_v2:
+  - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+    internal-label: Reporting interface
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Reporting
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 529
-ht-degree: 80%
-
+source-wordcount: '529'
+ht-degree: 100%
 ---
-
 # Prise en main des rapports d’analyse de Campaign {#gs-cube}
 
 Adobe Campaign comprend un outil intuitif d’exploration des données permettant de créer des rapports dynamiques.
@@ -31,7 +41,7 @@ Vous pouvez ainsi d&#39;étendre les capacités d&#39;exploration et d&#39;analy
 
 Les cubes sont utilisés pour la génération de certains rapports intégrés, notamment les [rapports de diffusion](delivery-reports.md) (suivi des diffusions, clics, ouvertures, etc.).
 
-Une fois créés et paramétrés, les cubes sont utilisés dans les boîtes de requête des rapports et les applications Web. Ils peuvent être utilisés et manipulés dans des tableaux croisés dynamiques.
+Une fois créés et paramétrés, les cubes sont utilisés dans les boîtes de requête des rapports et les applications web. Ils peuvent être utilisés et manipulés dans des tableaux croisés dynamiques.
 
 Le module Marketing Analytics de Campaign vous permet de :
 
@@ -63,8 +73,8 @@ Les cubes emploient une terminologie spécifique, consultez les termes utilisés
 
 * **Table/schéma des faits** : la table des faits (ou le schéma des faits) contient les données brutes ou élémentaires sur lesquelles vont être construites les analyses. Il s’agit principalement de tables à gros volume (avec éventuellement des tables liées) et sur lesquelles les calculs peuvent être longs. Par exemple, une table des faits peut être : la table des broadlogs, la table des achats, etc.
 
-* **Dimension** : les dimensions permettent de segmenter les données en groupes. Une fois créées, elles font office dʼaxes dʼanalyse. Dans la plupart des cas, pour une même dimension, plusieurs niveaux seront définis. Par exemple, pour une dimension temporelle, les niveaux seront les mois, jours, heures, minutes, etc. Cet ensemble de niveaux représente la hiérarchie des dimensions et permet d&#39;analyser les données à différents niveaux.
+* **Dimension** : les dimensions permettent de segmenter les données en groupes. Une fois créées, elles font office dʼaxes dʼanalyse. Dans la plupart des cas, pour une même dimension, plusieurs niveaux seront définis. Par exemple, pour une dimension temporelle, les niveaux seront les mois, jours, heures, minutes, etc. Cet ensemble de niveaux représente la hiérarchie de la dimension et permet dʼanalyser plus ou moins finement les données.
 
 * **Mise en classe** : pour certains champs, vous pouvez définir une mise en classe afin de regrouper les valeurs et faciliter la lisibilité des informations. Les mises en classe sʼappliquent à des niveaux. Il est recommandé de définir une mise en classe lorsque les valeurs distinctes peuvent être nombreuses.
 
-* **Mesure** - Les mesures les plus fréquentes sont la somme, la moyenne, le maximum, le minimum, l’écart type, etc. Les mesures peuvent être calculées : par exemple, le taux d&#39;acceptation d&#39;une offre est le ratio du nombre de fois où elle a été présentée par rapport au nombre de fois où elle a été acceptée.
+* **Mesure** : les mesures les plus fréquentes sont la somme, la moyenne, le maximum, le minimum, l’écart-type, etc. Les mesures peuvent être calculées, par exemple le taux dʼacceptation dʼune offre est le rapport entre le nombre de fois où une offre a été présentée et le nombre de fois où elle a été acceptée.

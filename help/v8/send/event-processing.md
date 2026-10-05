@@ -5,22 +5,32 @@ feature: Transactional Messaging
 role: User
 level: Intermediate
 exl-id: c1deb0a1-aeba-4813-b674-a6a164b98b02
-TQID: https://experienceleague.adobe.com/Vg4aM-iHsB0c8MagdCuYkyseUBaN-T252-Lk9P5klB8
+TQID: 'https://experienceleague.adobe.com/Vg4aM-iHsB0c8MagdCuYkyseUBaN-T252-Lk9P5klB8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: d3b34fea-a110-482f-adb2-aae8d686bac8
+    internal-label: Transactional messaging
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 697
-ht-degree: 84%
-
+source-wordcount: '697'
+ht-degree: 93%
 ---
-
 # Traitement des événements {#event-processing}
 
 Dans le contexte des messages transactionnels, un événement est généré par un système d’informations externe et envoyé à Adobe Campaign via les méthodes **[!UICONTROL PushEvent]** et **[!UICONTROL PushEvents]**. Ces méthodes sont décrites dans [cette section](event-description.md).
@@ -89,8 +99,8 @@ Les statuts possibles sont les suivants :
 
 * **En attente**
 
-   * Un événement en attente peut être un événement qui vient d’être collecté et qui n’a pas encore été traité. La colonne **[!UICONTROL Nombre d’erreurs]** affiche la valeur 0. Le modèle d’e-mail n’a pas encore été lié.
-   * Un événement en attente peut également être un événement traité, mais dont la confirmation est erronée. La colonne **[!UICONTROL Nombre d’erreurs]** affiche une valeur différente de 0. Pour savoir quand cet événement sera traité à nouveau, consultez la colonne **[!UICONTROL Traitement demandé le]**.
+  * Un événement en attente peut être un événement qui vient d’être collecté et qui n’a pas encore été traité. La colonne **[!UICONTROL Nombre d’erreurs]** affiche la valeur 0. Le modèle d’e-mail n’a pas encore été lié.
+  * Un événement en attente peut également être un événement traité, mais dont la confirmation est erronée. La colonne **[!UICONTROL Nombre d’erreurs]** affiche une valeur différente de 0. Pour savoir quand cet événement sera traité à nouveau, consultez la colonne **[!UICONTROL Traitement demandé le]**.
 
 * **En attente de diffusion**
 L’événement a été traité et le modèle de diffusion est lié. L’e-mail est en attente de diffusion et le processus de diffusion classique est appliqué. Pour plus d’informations, vous pouvez ouvrir la diffusion.
@@ -103,7 +113,7 @@ Le nombre maximum de tentatives d&#39;envoi a été atteint. L’événement est
 
 ## Recycler les événements {#event-recycling}
 
-Si l’envoi d’un message sur un canal spécifique échoue, Adobe Campaign peut renvoyer le message à l’aide d’un autre canal. Par exemple, si une diffusion sur le canal SMS échoue, le message est renvoyé à l’aide du canal e-mail.
+Si la diffusion d’un message sur un canal spécifique échoue, Adobe Campaign peut renvoyer le message en utilisant un autre canal. Par exemple, si la diffusion d’un message sur le canal SMS échoue, le message est renvoyé en utilisant le canal e-mail.
 
 Pour cela, vous devez paramétrer un workflow qui recrée tous les événements dont le statut est **Erreur de diffusion**, et leur assigner un canal différent de celui utilisé précédemment.
 

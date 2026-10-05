@@ -6,27 +6,36 @@ feature: Workflows
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 08febcbc-1703-4d36-89e1-32c903618084
-TQID: https://experienceleague.adobe.com/iTopl-qZwqJdSMV-ZiJ3ymveNdCsAb8IR-SXQmt9VhI
+TQID: 'https://experienceleague.adobe.com/iTopl-qZwqJdSMV-ZiJ3ymveNdCsAb8IR-SXQmt9VhI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 332
-ht-degree: 62%
-
+source-wordcount: '332'
+ht-degree: 100%
 ---
-
 # Charger le contenu de la diffusion{#loading-delivery-content}
 
 Si le contenu de votre diffusion figure dans un fichier HTML qui se trouve sur un serveur Amazon S3, FTP ou SFTP, vous pouvez facilement charger ce contenu dans les diffusions Adobe Campaign.
 
 Pour cela :
 
-1. Si vous n’avez pas encore défini de connexion entre Adobe Campaign et le serveur FTP ou SFTP hébergeant les fichiers de contenu, créez un compte externe S3, FTP ou SFTP dans **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Comptes externes]**. Spécifiez dans ce compte externe l&#39;adresse et les informations d&#39;identification utilisées pour établir la connexion au serveur S3 ou (S)FTP.
+1. Si vous n’avez pas encore défini de connexion entre Adobe Campaign et le serveur FTP ou SFTP hébergeant les fichiers de contenu, créez un compte externe S3, FTP ou SFTP dans **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Comptes externes]**. Dans ce compte externe, indiquez l’adresse et les informations d’identification qui permettront d’établir la connexion au serveur S3, FTP ou SFTP.
 
    Voici un exemple d&#39;un compte externe S3 :
 
@@ -40,11 +49,11 @@ Pour cela :
 
    ![](assets/delivery_loadcontent_filetransfertexample.png)
 
-1. Ajoutez une activité **[!UICONTROL Diffusion]** et connectez-la à la transition sortante de l&#39;activité **[!UICONTROL Transfert de fichier]**. Configurez-le comme suit :
+1. Ajoutez une activité **[!UICONTROL Diffusion]** et reliez-la à la transition sortante de l’activité **[!UICONTROL Transfert de fichier]**. Configurez-la de la manière suivante :
 
    * Diffusion : selon vos besoins, il peut s&#39;agir d&#39;une diffusion spécifique qui a déjà été créée dans le système ou d&#39;une nouvelle diffusion reposant sur un modèle existant.
    * Destinataires : dans cet exemple, la cible est spécifiée dans la diffusion elle-même.
-   * Contenu : Même si le contenu est importé dans l&#39;activité précédente, sélectionnez **[!UICONTROL Spécifié dans la diffusion]**. Comme le contenu est importé directement à partir d&#39;un fichier situé sur un serveur distant, il n&#39;a pas d&#39;identifiant lorsqu&#39;il est traité par le workflow et ne peut pas être identifié comme provenant de l&#39;événement entrant.
+   * Contenu : même si le contenu est importé dans l’activité précédente, sélectionnez **[!UICONTROL Spécifié dans la diffusion]**. Comme le contenu est importé directement d’un fichier se trouvant sur un serveur distant, il n’a pas d’identifiant lors du traitement par le workflow et ne peut pas être identifié comme provenant de l’événement entrant.
    * Action à effectuer : sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la diffusion et y accéder depuis **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Diffusions]** une fois le workflow exécuté.
 
    ![](assets/delivery_loadcontent_activityexample.png)

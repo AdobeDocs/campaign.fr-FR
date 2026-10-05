@@ -3,23 +3,34 @@ title: Notes de mise à jour de Campaign v8
 description: Dernière version de Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-TQID: https://experienceleague.adobe.com/Zdo52RLQFbxlRNgE54yLDn3yAMmmOqxKyRhnCJa0Xwg
+TQID: 'https://experienceleague.adobe.com/Zdo52RLQFbxlRNgE54yLDn3yAMmmOqxKyRhnCJa0Xwg'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
+    internal-label: Release notes
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
+    internal-label: Security
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 2107
-ht-degree: 6%
-
+source-wordcount: '2107'
+ht-degree: 11%
 ---
-
 # Dernières versions {#latest-release}
 
 Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs des **dernières versions** de Campaign v8 (console). Pour en savoir plus sur les publications, les versions et les mises à niveau de Campaign, consultez [cette page](upgrades.md). Les autres versions sont répertoriées dans la section Versions précédentes de cette documentation.
@@ -34,11 +45,11 @@ _11 août 2026_
 
 Cette version comprend des correctifs de sécurité qui renforcent la position de sécurité globale de votre environnement Campaign. En tant que client hébergé, ces correctifs sont appliqués par Adobe dans le cadre de la mise à niveau, sans qu’aucune action ne soit requise de votre part.
 
-### Mise à jour de la liste autorisée d’URL externe {#url-allow-list-update-8-9-3}
+### Mise à jour de la liste des URL externes autorisées {#url-allow-list-update-8-9-3}
 
-Cette version comprend une mise à jour de la liste autorisée URL externe utilisée pour le contenu de diffusion et les pièces jointes. Assurez-vous que tous les domaines que vous référencez actuellement sont ajoutés à la liste autorisée approuvée de votre instance.
+Cette version comprend une mise à jour de la liste des URL externes autorisées, utilisée pour la diffusion de contenu et les pièces jointes. Assurez-vous que tous les domaines que vous référencez actuellement sont ajoutés à la liste autorisée approuvée de votre instance.
 
-En tant qu’administrateur ou administratrice de Campaign, utilisez le Panneau de Contrôle pour ajouter à la liste autorisée de données les URL externes actuellement utilisées dans vos diffusions et suivez le même processus pour toute nouvelle URL externe à l’avenir. Terminez cette activité d’ici le 5 septembre 2026 afin d’éviter tout impact sur les diffusions affectées. Pour connaître la procédure, voir [Ajout d’autorisations d’URL](https://experienceleague.adobe.com/fr/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
+En tant qu’administrateur ou administratrice de Campaign, utilisez le panneau de contrôle pour ajouter à la liste autorisée les URL externes actuellement utilisées dans vos diffusions et suivez le même processus pour toute nouvelle URL externe à l’avenir. Terminez cette activité d’ici le 5 septembre 2026 afin d’éviter tout impact sur les diffusions concernées. Pour connaître la procédure, consultez [Ajouter des autorisations d’URL](https://experienceleague.adobe.com/fr/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
 
 ### Connecteur Adobe Analytics mis à niveau vers l’API Analytics 2.0 {#analytics-2-0-8-9-3}
 
@@ -46,7 +57,7 @@ Les API d’Adobe Analytics 1.4 étant [en fin de vie](https://developer.adobe.c
 
 +++ En savoir plus sur la mise à niveau d’Analytics 2.0
 
-Le [&#x200B; connecteur Web Analytics &#x200B;](../connect/ac-aa.md) envoie vos indicateurs de campagne et vos données de classification à Adobe Analytics, prend en charge le flux de remarketing et est utilisé pour configurer de nouvelles suites de rapports. La mise à niveau réimporte les workflows techniques intégrés qui alimentent le connecteur (**[!UICONTROL webAnalyticsSendMetrics]** et **[!UICONTROL webAnalyticsGetWebEvents]**) et met à jour les fichiers JavaScript Analytics intégrés. Par conséquent, si vous avez personnalisé l’un de ces workflows ou créé des workflows personnalisés qui référencent ces fichiers, réappliquez et adaptez cette personnalisation après la mise à niveau, car elle sera sinon remplacée ou interrompue. Il est recommandé d’éviter de modifier directement les workflows intégrés et de créer plutôt votre personnalisation dans un workflow personnalisé distinct, de sorte que les futures mises à niveau ne la remplacent pas. Une fois la mise à niveau terminée, validez les cas d’utilisation d’Adobe Analytics sur lesquels vous comptez (exportation de mesures, exportation de classifications et remarketing, le cas échéant) pour confirmer que les données continuent de circuler comme prévu.
+Le [ connecteur Web Analytics ](../connect/ac-aa.md) envoie vos indicateurs de campagne et vos données de classification à Adobe Analytics, prend en charge le flux de remarketing et est utilisé pour configurer de nouvelles suites de rapports. La mise à niveau réimporte les workflows techniques intégrés qui alimentent le connecteur (**[!UICONTROL webAnalyticsSendMetrics]** et **[!UICONTROL webAnalyticsGetWebEvents]**) et met à jour les fichiers JavaScript Analytics intégrés. Par conséquent, si vous avez personnalisé l’un de ces workflows ou créé des workflows personnalisés qui référencent ces fichiers, réappliquez et adaptez cette personnalisation après la mise à niveau, car elle sera sinon remplacée ou interrompue. Il est recommandé d’éviter de modifier directement les workflows intégrés et de créer plutôt votre personnalisation dans un workflow personnalisé distinct, de sorte que les futures mises à niveau ne la remplacent pas. Une fois la mise à niveau terminée, validez les cas d’utilisation d’Adobe Analytics sur lesquels vous comptez (exportation de mesures, exportation de classifications et remarketing, le cas échéant) pour confirmer que les données continuent de circuler comme prévu.
 
 +++
 
@@ -66,7 +77,7 @@ _3 mai 2026_
 
 >[!NOTE]
 >
-> Les correctifs répertoriés ci-dessous ont été progressivement déployés sur plusieurs versions 8.9.2 successives. Accédez au **[!UICONTROL menu Aide > À propos...]** [&#128279;](upgrades.md#version) pour vérifier que vous disposez de la version 8.9.2 (11d1c68) la plus récente. Pour plus d’informations, contactez votre représentant ou représentante Adobe.
+> Les correctifs répertoriés ci-dessous ont été progressivement déployés sur plusieurs versions 8.9.2 successives. Accédez au **[!UICONTROL menu Aide > À propos...]** [](upgrades.md#version) pour vérifier que vous disposez de la version 8.9.2 (11d1c68) la plus récente. Pour plus d’informations, contactez votre représentant ou représentante Adobe.
 
 * Correction d’un problème où les dates d’événement dans les événements transactionnels étaient incorrectement définies en raison d’un problème de conversion de type de données, ce qui provoquait des dates incorrectes dans les rapports dynamiques. (NEO-93923)
 * Correction d’un problème en raison duquel les notifications push silencieuses d’Android et d’iOS échouaient lors de la préparation de la diffusion lorsque les champs de titre et de corps étaient vides. (NEO-93739)
@@ -119,14 +130,14 @@ Le **nouveau connecteur d&#39;envoi de SMS** est désormais disponible pour tous
 
 Cette version est fournie avec un ensemble de fonctionnalités disponibles dans l’interface utilisateur web de Campaign :
 
-* [Fonctionnalités de diffusion multilingue (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=fr){target="_blank"}
-* [Enrichissement du profil dans les messages transactionnels (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=fr){target="_blank"}
-* [Live Copies et copies de langue de Adobe Experience Manager](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=fr){target="_blank"}
-* [Expériences de contenu - Tests AB](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=fr){target="_blank"}
-* [Activité de diffusion continue](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=fr){target="_blank"}
-* [Gestion de la validation de campagne](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=fr){target="_blank"}
+* [Fonctionnalités de diffusion multilingue (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [Enrichissement du profil dans les messages transactionnels (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Live Copies et copies de langue de Adobe Experience Manager](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [Expériences de contenu - Tests AB](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [Activité de diffusion continue](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [Gestion de la validation de campagne](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
-Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Campaign [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}
+Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Campaign ](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}[
 
 ### Autres changements {#changes-8-9-1}
 

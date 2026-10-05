@@ -5,24 +5,36 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 exl-id: c4d500ef-2339-491f-9ae2-9bfaf72088a9
-TQID: https://experienceleague.adobe.com/SUOihPjlej-JYbpNBWLCIhWhM2NrUpz0pMuO3NAaCWM
+TQID: 'https://experienceleague.adobe.com/SUOihPjlej-JYbpNBWLCIhWhM2NrUpz0pMuO3NAaCWM'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: b1bd1421-1927-4c59-9bc6-ce292360e43b
+    internal-label: SMS Messaging
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 794
+source-wordcount: '799'
 ht-degree: 97%
-
 ---
-
 # Paramètres de diffusion SMS {#sms-settings}
 
 Les paramètres techniques nécessaires à une diffusion SMS sont les suivants :
@@ -60,10 +72,10 @@ Voici les informations dont vous avez besoin pour remplir ce formulaire. Chaque 
 
   Ce champ indique le type de SMS que vous souhaitez transférer : messages normaux ou flash, stockés sur le mobile ou la carte SIM. Ce paramètre est transmis dans le champ facultatif dest_addr_subunit du PDU SUBMIT_SM.
 
-   * **Flash** définit la valeur sur 1. Cela envoie un message Flash qui s&#39;affiche sur le mobile et n&#39;est pas stocké en mémoire.
-   * **Normal** définit la valeur sur 0. Cela envoie un message normal.
-   * **Enregistrer sur mobile** définit la valeur sur 2. Cela dit au téléphone de stocker le SMS dans la mémoire interne.
-   * **Enregistrer sur le terminal** définit la valeur sur 3. Cela indique au téléphone de stocker le SMS dans la carte SIM.
+  * **Flash** définit la valeur sur 1. Cela envoie un message Flash qui s&#39;affiche sur le mobile et n&#39;est pas stocké en mémoire.
+  * **Normal** définit la valeur sur 0. Cela envoie un message normal.
+  * **Enregistrer sur mobile** définit la valeur sur 2. Cela dit au téléphone de stocker le SMS dans la mémoire interne.
+  * **Enregistrer sur le terminal** définit la valeur sur 3. Cela indique au téléphone de stocker le SMS dans la carte SIM.
 
 * **[!UICONTROL Priorité, type de communication]**
 
@@ -82,11 +94,11 @@ Voici les informations dont vous avez besoin pour remplir ce formulaire. Chaque 
 * **[!UICONTROL Paramètres SMPP facultatifs (TLV)]**
 Vous pouvez spécifier des champs supplémentaires à envoyer en tant que paramètres SMPP facultatifs (TLV). Ces champs supplémentaires sont envoyés avec chaque MT et les champs personnalisés permettent d’avoir des valeurs différentes pour chaque MT.
 Le tableau répertorie les paramètres facultatifs à envoyer avec chaque message. Les colonnes contiennent les informations suivantes :
-   * **Libellé** : il s’agit d’un libellé de forme libre facultatif. Il n’est pas transmis au fournisseur. Vous pouvez fournir une description textuelle du paramètre.
-   * **Balise** : valeur de balise, au format décimal (par exemple, 12345) ou hexadécimal avec le préfixe 0x (par exemple, 0x12ab). Les balises peuvent aller entre 0 et 65535. Demandez au fournisseur de services SMPP les balises qu’il prend en charge.
-   * **Valeur** : valeur à envoyer dans le paramètre facultatif. Il s’agit d’un champ personnalisé.
-   * **Format** : codage utilisé pour le paramètre. Vous pouvez sélectionner n’importe quel codage de texte pris en charge ou les formats binaires les plus courants. Demandez au fournisseur de services SMPP le format requis.
-   * **Longueur maximale** : nombre maximal d’octets pour ce paramètre. Ceci est ignoré pour les champs binaires, car les champs binaires ont une taille fixe.
+  * **Libellé** : il s’agit d’un libellé de forme libre facultatif. Il n’est pas transmis au fournisseur. Vous pouvez fournir une description textuelle du paramètre.
+  * **Balise** : valeur de balise, au format décimal (par exemple, 12345) ou hexadécimal avec le préfixe 0x (par exemple, 0x12ab). Les balises peuvent aller entre 0 et 65535. Demandez au fournisseur de services SMPP les balises qu’il prend en charge.
+  * **Valeur** : valeur à envoyer dans le paramètre facultatif. Il s’agit d’un champ personnalisé.
+  * **Format** : codage utilisé pour le paramètre. Vous pouvez sélectionner n’importe quel codage de texte pris en charge ou les formats binaires les plus courants. Demandez au fournisseur de services SMPP le format requis.
+  * **Longueur maximale** : nombre maximal d’octets pour ce paramètre. Ceci est ignoré pour les champs binaires, car les champs binaires ont une taille fixe.
 
 * **[!UICONTROL Utiliser des formats binaires pour TLV]**
 

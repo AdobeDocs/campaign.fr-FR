@@ -5,27 +5,40 @@ feature: Schema Extension, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: 796af848-b537-4b8d-a601-fe0628a1fc83
-TQID: https://experienceleague.adobe.com/Dg-EjmzC6bY4nnsIWmEe-XE4xdWxukCbIfNBxXooGVY
+TQID: 'https://experienceleague.adobe.com/Dg-EjmzC6bY4nnsIWmEe-XE4xdWxukCbIfNBxXooGVY'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
+  - id: a72a22e0-8c8d-4019-ba42-3f2644aa91a3
+    internal-label: Schema extension
+  - id: a14877cc-63b1-41d9-bf0b-5f97cadd0417
+    internal-label: Configuration guidelines
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 435
-ht-degree: 83%
-
+source-wordcount: '435'
+ht-degree: 96%
 ---
-
 # Création d&#39;un schéma {#create-new-schema}
 
 Pour modifier, créer et paramétrer les schémas, cliquez sur le nœud **[!UICONTROL Administration > Configuration > Schémas de données]** de la console cliente Adobe Campaign.
@@ -42,7 +55,7 @@ L&#39;onglet **[!UICONTROL Édition]** affiche le contenu XML d&#39;un schéma 
 
 >[!NOTE]
 >
->Le contrôle d’édition « Nom » permet de saisir la clé du schéma, composée du nom et de l’espace de noms. Les attributs « name » et « namespace » de l&#39;élément racine du schéma sont automatiquement mis à jour dans la zone d&#39;édition XML du schéma. Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces)
+>Le contrôle d’édition « Nom » vous permet de saisir la clé du schéma composée du nom et de l’espace de noms. Les attributs « name » et « namespace » de l’élément racine du schéma sont automatiquement mis à jour dans la zone d’édition XML du schéma. Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces)
 
 L&#39;onglet **[!UICONTROL Aperçu]** génère automatiquement le schéma étendu :
 
@@ -52,7 +65,7 @@ L&#39;onglet **[!UICONTROL Aperçu]** génère automatiquement le schéma étend
 >
 >La sauvegarde du schéma source va automatiquement lancer la génération du schéma étendu.
 
-Si vous devez vérifier la structure complète d’un schéma, vous pouvez utiliser l’onglet **[!UICONTROL Aperçu]**. Si le schéma a été étendu, vous pourrez alors visualiser toutes ses extensions. En complément, l’onglet **[!UICONTROL Documentation]** affiche tous les attributs et éléments du schéma, ainsi que ses propriétés (champ SQL, type/longueur, libellé, description). L’onglet **[!UICONTROL Documentation]** s’applique uniquement aux schémas générés.
+Si vous devez vérifier la structure complète d’un schéma, vous pouvez utiliser l’onglet **[!UICONTROL Aperçu]**. Si le schéma a été étendu, vous pourrez visualiser toutes ses extensions. En complément, l’onglet **[!UICONTROL Documentation]** affiche tous les attributs et éléments du schéma, ainsi que ses propriétés (champ SQL, type/longueur, libellé, description). L’onglet **[!UICONTROL Documentation]** s’applique uniquement aux schémas générés.
 
 ## Cas d&#39;utilisation : créer une table des contrats {#example--creating-a-contract-table}
 

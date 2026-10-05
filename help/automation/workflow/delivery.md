@@ -6,26 +6,38 @@ feature: Workflows, Channels Activity
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 58574983-86c7-46f5-b41b-bae90171048d
-TQID: https://experienceleague.adobe.com/ui9ry7GeEH28K6h0jTg6Eg0JHdMQFak9KogF-h6LkX0
+TQID: 'https://experienceleague.adobe.com/ui9ry7GeEH28K6h0jTg6Eg0JHdMQFak9KogF-h6LkX0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: bce277d1-7efa-48d8-9a1b-b588bb45ba1c
+    internal-label: Channels Activity
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1045
-ht-degree: 73%
-
+source-wordcount: '1045'
+ht-degree: 100%
 ---
-
 # Diffusion{#delivery}
 
-Une activité de type **Diffusion** permet de créer une action de diffusion. Elle peut être créée à l’aide d’éléments d’entrée.
+Une activité de type **Diffusion** vous permet de créer une action de diffusion. Elle peut être créée à l’aide d’éléments d’entrée.
 
 Pour la paramétrer, éditez l&#39;activité et renseignez les options de la diffusion.
 
@@ -37,9 +49,9 @@ Pour la paramétrer, éditez l&#39;activité et renseignez les options de la dif
 
    * Agir sur la diffusion spécifiée dans la transition entrante. Pour cela, sélectionnez la première option de la section **[!UICONTROL Diffusion]** de la fenêtre.
 
-     Cette option peut être utilisée lorsqu’une activité de workflow précédente a déjà créé ou spécifié la diffusion. Cela peut avoir été fait, comme dans l&#39;exemple ci-dessous, par une activité du même type ayant généré une transition sortante.
+     Cette option peut être utilisée lorsqu’une activité de workflow précédente a déjà créé ou spécifié la diffusion. Cela peut avoir été effectué, comme dans l’exemple ci-dessous, par une activité du même type ayant généré une transition sortante.
 
-     Dans l’exemple suivant, la diffusion est créée pour la première fois. La population et le contenu sont définis ultérieurement. Ensuite, les informations pour ces trois éléments sont saisies à nouveau dans une nouvelle activité de diffusion à l’aide de la transition entrante afin qu’elles puissent être envoyées.
+     Dans l’exemple suivant, la diffusion est créée pour la première fois. La population et le contenu sont définis ensuite. Enfin, les informations de ces trois éléments sont reprises dans une nouvelle activité de diffusion via la transition entrante, afin qu’elle puisse être envoyée.
 
      ![](assets/specified_transition_option_exemple.png)
 
@@ -67,7 +79,7 @@ Pour la paramétrer, éditez l&#39;activité et renseignez les options de la dif
 
 1. **Destinataires**
 
-   Les destinataires peuvent être spécifiés par les événements entrants, par exemple suite à une importation de fichier, ou spécifiés dans l&#39;action de diffusion. Ils peuvent également être stockés dans un ou plusieurs fichiers.
+   Les personnes destinataires peuvent être spécifiées par les événements entrants, par exemple suite à l’import d’un fichier, ou spécifiés dans l’action de diffusion. Elles peuvent également être stockées dans un ou plusieurs fichiers.
 
    ![](assets/diffusion_edit_5.png)
 
@@ -85,9 +97,9 @@ Pour la paramétrer, éditez l&#39;activité et renseignez les options de la dif
 
    Sélectionnez le type d&#39;action à effectuer parmi les options disponibles :
 
-   * **[!UICONTROL Enregistrer]** : cette option permet de créer la diffusion et de l&#39;enregistrer. Il ne l&#39;analysera pas et ne le livrera pas.
+   * **[!UICONTROL Enregistrer]** : cette option vous permet de créer la diffusion et de l’enregistrer. Aucune analyse ni diffusion n’est effectuée.
    * **[!UICONTROL Estimer la cible]** : cette option permet de calculer la cible de la diffusion afin d&#39;en évaluer son potentiel (première phase d&#39;analyse). Cette action équivaut à sélectionner l&#39;option **[!UICONTROL Estimer la population à cibler]** puis **[!UICONTROL Analyser]** lors de l&#39;envoi d&#39;une diffusion à la cible principale avec **Delivery**.
-   * **[!UICONTROL Préparer]** : cette option permet de lancer le processus d&#39;analyse complet (calcul de la cible et préparation du contenu). La diffusion n&#39;est pas envoyée. Cette action équivaut à sélectionner les options **[!UICONTROL Diffuser dès que possible]** puis **[!UICONTROL Analyser]** lors de l&#39;envoi d&#39;une diffusion à la cible principale avec **Delivery**.
+   * **[!UICONTROL Préparer]** : cette option vous permet d’exécuter le processus d’analyse complet (calcul de la cible et préparation du contenu). La diffusion n’est pas envoyée. Cette action équivaut à sélectionner les options **[!UICONTROL Diffuser dès que possible]** puis **[!UICONTROL Analyser]** lors de l&#39;envoi d&#39;une diffusion à la cible principale avec **Delivery**.
    * **[!UICONTROL Envoyer un bon à tirer]** : cette option permet d&#39;envoyer un BAT de la diffusion. Cette action équivaut à cliquer sur le bouton **[!UICONTROL Envoyer un bon à tirer]** dans la barre d&#39;outils d&#39;une diffusion avec **Diffusion**
    * **[!UICONTROL Préparer et démarrer]** : cette option lance le processus d&#39;analyse complet (calcul de la cible et préparation du contenu) et envoie la diffusion. Cette action équivaut à sélectionner les options **[!UICONTROL Diffuser dès que possible]**, **[!UICONTROL Analyser]**, puis **[!UICONTROL Confirmer l&#39;envoi]** lors de l&#39;envoi d&#39;une diffusion à la cible principale avec **Delivery**.
 
@@ -97,7 +109,7 @@ Pour la paramétrer, éditez l&#39;activité et renseignez les options de la dif
 
    * **[!UICONTROL Générer une transition sortante]**
 
-     Crée une transition sortante qui sera activée en fin d&#39;exécution. Vous pouvez choisir de récupérer ou non la cible de la diffusion sortante.
+     Crée une transition sortante qui sera activée à la fin de l’exécution. Vous pouvez choisir de récupérer la cible de la diffusion sortante ou non.
 
    * **[!UICONTROL Ne pas récupérer la cible]**
 
@@ -125,11 +137,11 @@ Ouvrez l&#39;activité **Diffusion** et définissez ses propriétés comme suit�
 
 ![](assets/new-workflow-param-delivery.png)
 
-Cliquez sur **[!UICONTROL OK]** pour fermer la fenêtre des propriétés. Vous venez de paramétrer une activité qui consiste à créer et préparer une nouvelle diffusion à partir d&#39;un modèle de diffusion dont la cible sera spécifiée en son sein.
+Cliquez sur **[!UICONTROL OK]** pour fermer la fenêtre des propriétés. Vous venez de configurer une activité consistant à créer et préparer une nouvelle diffusion basée sur un modèle de diffusion dont la cible sera celle spécifiée dans le modèle.
 
 Ouvrez l&#39;activité **Validation** et définissez ses propriétés comme suit :
 
-1. Dans le champ **[!UICONTROL Type d’affectation]**, sélectionnez un groupe dans lequel vous êtes enregistré. Si vous êtes connecté à l&#39;aide du compte &#39;admin&#39;, sélectionnez le groupe Administration .
+1. Dans le champ **[!UICONTROL Type d’affectation]**, sélectionnez un groupe dont vous faites partie. Si votre connexion est effective avec le compte « admin », sélectionnez le groupe Administration.
 1. Saisissez ensuite un titre et insérez le texte suivant dans le corps du message :
 
    ```
@@ -170,7 +182,7 @@ Chacun des événements entrants doit spécifier une cible définie par ces para
 * schéma
 * recCount
 
-Ce triplet de valeurs identifie la cible résultant de la diffusion. **[!UICONTROL tableName]** est le nom de la table qui mémorise les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (généralement nms:recipient) et **[!UICONTROL recCount]** est le nombre d&#39;éléments dans la table.
+Ce triplet de valeurs identifie la cible résultant de la diffusion. **[!UICONTROL tableName]** est le nom de la table qui enregistre les identifiants de la cible, **[!UICONTROL schema]** est le schéma de la population (habituellement nms:recipient) et **[!UICONTROL recCount]** est le nombre d’éléments dans la table.
 
 La transition associée au complément possède les mêmes paramètres.
 

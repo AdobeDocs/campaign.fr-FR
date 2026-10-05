@@ -6,26 +6,35 @@ feature: Workflows
 role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 2bb3443c-37d8-4d49-9be1-81217f56823c
-TQID: https://experienceleague.adobe.com/Mgo8JMtAXLW86GgkEsoVTtMSfUUKPsp-G9lL0p9JBg8
+TQID: 'https://experienceleague.adobe.com/Mgo8JMtAXLW86GgkEsoVTtMSfUUKPsp-G9lL0p9JBg8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Developer
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 633
-ht-degree: 78%
-
+source-wordcount: '633'
+ht-degree: 100%
 ---
-
 # Enrichissement des emails avec des champs de date personnalisés{#email-enrichment-with-custom-date-fields}
 
 
 
-Dans cet exemple, nous souhaitons envoyer un e-mail avec des champs de données personnalisés aux destinataires qui célébreront leur anniversaire ce mois-ci. L’e-mail contiendra un coupon valide une semaine avant et après leur anniversaire.
+Dans cet exemple, nous souhaitons envoyer un e-mail avec des champs de données personnalisés aux personnes destinataires qui célèbrent leur anniversaire ce mois-ci. L’e-mail inclura un coupon valide une semaine avant et après leur anniversaire.
 
-Nous devons cibler les destinataires d&#39;une liste qui célèbreront leur anniversaire ce mois-ci avec une activité **[!UICONTROL Partage]**. Ensuite, à l&#39;aide de l&#39;activité **[!UICONTROL Enrichissement]**, le champ de données personnalisé agit comme des dates de validité dans l&#39;e-mail pour l&#39;offre spéciale du client ou de la cliente.
+Nous devons cibler les personnes destinataires d’une liste qui célébreront leur anniversaire ce mois-ci avec une activité **[!UICONTROL Partage]**. Ensuite, grâce à l’activité **[!UICONTROL Enrichissement]**, le champ de données personnalisé présentera les dates de validité dans l’e-mail pour l’offre spéciale du client ou de la cliente.
 
 ![](assets/uc_enrichment.png)
 
@@ -90,7 +99,7 @@ Vous devez maintenant paramétrer votre activité **[!UICONTROL Enrichissement]*
 
 1. Cliquez sur **[!UICONTROL OK]**. Votre enrichissement est maintenant prêt.
 
-Après votre activité **[!UICONTROL Enrichissement]**, vous pouvez ajouter une diffusion. Dans ce cas, nous avons ajouté une diffusion e-mail pour envoyer aux destinataires une offre spéciale avec des dates de validité pour les clients qui célèbrent leur anniversaire ce mois-ci.
+Après votre activité **[!UICONTROL Enrichissement]**, vous pouvez ajouter une diffusion. Dans ce cas, nous avons ajouté une diffusion par e-mail pour envoyer aux personnes destinataires une offre spéciale avec des dates de validité aux clientes et clients célébrant leur anniversaire ce mois-ci.
 
 1. Faites glisser et déposez une activité **[!UICONTROL Diffusion par email]** après votre activité **[!UICONTROL Enrichissement]**.
 
@@ -108,7 +117,7 @@ Après votre activité **[!UICONTROL Enrichissement]**, vous pouvez ajouter une 
 Vous pouvez maintenant commencer à concevoir votre diffusion par email avec les champs de date personnalisés créés dans l&#39;activité **[!UICONTROL Enrichissement]**.
 
 1. Double cliquez sur votre activité **[!UICONTROL Diffusion par email]**.
-1. Ajoutez vos extensions cibles à votre e-mail. Il doit se trouver dans l’expression suivante afin de configurer le format de vos dates de validité :
+1. Ajoutez vos extensions cibles à votre e-mail. Elles devraient se trouver dans l’expression suivante afin de configurer le format de vos dates de validité :
 
    ```
    <%=

@@ -5,33 +5,42 @@ description: Découvrez comment superviser les workflows de Campaign
 feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: 362b347b-f914-4ebf-84d7-9989aef28a82
-TQID: https://experienceleague.adobe.com/eISWAIog62CXwFXxOo2C0dMghM4xe7cJ-x9hmnfkcqw
+TQID: 'https://experienceleague.adobe.com/eISWAIog62CXwFXxOo2C0dMghM4xe7cJ-x9hmnfkcqw'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 654
-ht-degree: 95%
-
+source-wordcount: '654'
+ht-degree: 100%
 ---
-
 # Cas d’utilisation : supervision de vos workflows{#supervising-workflows}
 
-Ce cas pratique détaille la création d&#39;un workflow qui permet de suivre le statut d&#39;un ensemble de workflows dont l&#39;état est &quot;en pause&quot;, &quot;stoppé&quot; ou &quot;en erreur&quot;.
+Ce cas pratique détaille la création d&#39;un workflow qui permet de su le statut d&#39;un ensemble de workflows dont l&#39;état est &quot;en pause&quot;, &quot;stoppé&quot; ou &quot;en erreur&quot;.
 
 Son objectif est le suivant :
 
-* Utiliser un workflow pour suivre un groupe de workflows métiers.
+* Utiliser un workflow pour su un groupe de workflows métiers.
 * Envoyer un message à un superviseur via une activité &quot;diffusion&quot;.
 
-Pour suivre le statut d&#39;un ensemble de workflows, vous devez procéder comme suit :
+Pour su le statut d&#39;un ensemble de workflows, vous devez procéder comme suit :
 
-1. Créer le Workflow de suivi.
+1. Créer le orkflow de su.
 1. Ecrire le JavaScript permettant de déterminer les workflows ayant le statut en erreur, en pause ou stoppé.
 1. Créer l&#39;activité **[!UICONTROL Test]**.
 1. Préparer le modèle de diffusion.
@@ -44,9 +53,9 @@ Pour suivre le statut d&#39;un ensemble de workflows, vous devez procéder comme
 
 ## Etape 1: Création du workflow de suivi {#step-1--creating-the-monitoring-workflow}
 
-Le dossier de workflows que nous allons suivre est le dossier **« CustomWorkflows »** stocké dans le nœud **Administration > Exploitation > Workflows techniques**. Ce dossier contient un ensemble de workflows métier.
+Le dossier de workflows que nous allons surveiller est le dossier **« CustomWorkflows »** stocké dans le nœud : **Administration > Exploitation > Workflows techniques**. Ce dossier contient un ensemble de workflows métiers.
 
-Le **workflow de suivi** est stocké à la racine du dossier Workflows Techniques. Le libellé utilisé est **&quot;Suivi&quot;**.
+Le **workflow de suivi** est stocké à la racine du dossier Workflows Techniques. Le libellé utilisé est **&quot;Su&quot;**.
 
 Le schéma suivant montre l&#39;ordonnancement des activités :
 
@@ -64,7 +73,7 @@ Ce workflow se compose de :
 
 La première partie du code JavaScript correspond à **une requête (queryDef)** permettant d&#39;identifier les workflows ayant un statut &quot;pause&quot; (@state == 13), &quot;erreur&quot; (@failed == 1) ou &quot;stoppé&quot; (@state == 20).
 
-Le **nom interne** du dossier de workflow à suivre est donné dans la condition suivante :
+Le **nom interne** du dossier de workflow à su est donné dans la condition suivante :
 
 ```
 <condition boolOperator="AND" expr="[folder/@name] = 'Folder20'" internalId="1"/>
@@ -124,13 +133,13 @@ vars.strWorkflowStop = strStop;
 
 ## Etape 3: Création de l&#39;activité &#39;Test&#39; {#step-3--creating-the--test--activity}
 
-L&#39;activité &quot;Test&quot; permet de déterminer si une diffusion doit être envoyée ou bien si le workflow de suivi doit recommencer un cycle en se positionnant sur l&#39;activité &quot;Attente&quot;.
+L&#39;activité &quot;Test&quot; permet de déterminer si une diffusion doit être envoyée ou bien si le workflow de su doit recommencer un cycle en se positionnant sur l&#39;activité &quot;Attente&quot;.
 
 Une diffusion est envoyée au superviseur **si au moins une des trois variables d&#39;événements &quot;vars.strWorkflowError&quot;, &quot;vars.strWorkflowPaused&quot;, &quot;vars.strWorkflowStop&quot; est non nulle.**
 
 ![](assets/uc_monitoring_workflow_test.png)
 
-L&#39;activité &quot;Attente&quot; peut être paramétrée pour relancer le workflow de suivi à intervalle régulier. Pour ce cas pratique, **la durée d&#39;attente est fixée à une heure**.
+L&#39;activité &quot;Attente&quot; peut être paramétrée pour relancer le workflow de su à intervalle régulier. Pour ce cas pratique, **la durée d&#39;attente est fixée à une heure**.
 
 ![](assets/uc_monitoring_workflow_attente.png)
 

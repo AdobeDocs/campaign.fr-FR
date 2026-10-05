@@ -4,22 +4,38 @@ title: Journal d’audit
 description: Découvrez comment surveiller votre instance à lʼaide du journal dʼaudit Campaign
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 6a937575-42d4-4dc5-8168-43c25bb2cde6
-TQID: https://experienceleague.adobe.com/0a5LrtW8EomSlw-mLwLTplBpEPovWLC-sXFdoSQYhV0
+TQID: 'https://experienceleague.adobe.com/0a5LrtW8EomSlw-mLwLTplBpEPovWLC-sXFdoSQYhV0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: cebd7cfa-b9fa-4d9f-a2ab-fce31f32c4a3
+    internal-label: Audit trail
+  - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 664
+source-wordcount: '664'
 ht-degree: 100%
-
 ---
-
 # Journal d’audit{#audit-trail}
 
 La fonctionnalité **[!UICONTROL Journal d’audit]** d’Adobe Campaign offre un enregistrement granulaire de toutes les modifications apportées à des entités importantes de votre instance, généralement celles qui ont un impact significatif sur le bon fonctionnement de l’instance. Fonctionnant en tant que log en temps réel, elle capture une liste détaillée des actions et événements au fur et à mesure qu’ils se produisent.
@@ -37,14 +53,14 @@ La fonctionnalité **[!UICONTROL Journal d’audit]** d’Adobe Campaign offre 
 
 * **Journal d’audit des workflows** : effectue le suivi de toutes les actions liées à vos workflows, notamment :
 
-   * Démarrer
-   * Pause
-   * Arrêter
-   * Redémarrer
-   * Nettoyer qui correspond à l’action Purge de l’historique
-   * Simuler qui correspond à l’action Démarrer en mode simulation
-   * Réveiller qui correspond à l’action Traitement anticipé des tâches en attente
-   * Arrêt inconditionnel
+  * Démarrer
+  * Pause
+  * Arrêter
+  * Redémarrer
+  * Nettoyer qui correspond à l’action Purge de l’historique
+  * Simuler qui correspond à l’action Démarrer en mode simulation
+  * Réveiller qui correspond à l’action Traitement anticipé des tâches en attente
+  * Arrêt inconditionnel
 
   Pour plus d’informations sur les workflows, consultez [cette page](../../automation/workflow/about-workflows.md).
 
@@ -90,7 +106,7 @@ Pour accéder au **[!UICONTROL journal d’audit]** de votre instance, procédez
 
    ![](assets/audit-trail-1.png)
 
-1. La fenêtre **[!UICONTROL Journal d&#39;audit]** s’ouvre avec la liste de vos entités. Adobe Campaign effectuera l’audit des actions de création, de modification et de suppression pour vos différentes entités.
+1. La fenêtre **[!UICONTROL Journal d’audit]** s’ouvre avec la liste de vos entités. Adobe Campaign effectuera l’audit des actions de création, de modification et de suppression pour vos différentes entités.
 
    Sélectionnez l’une des entités pour en savoir plus sur les dernières modifications.
 

@@ -6,21 +6,33 @@ feature: Email, Push
 role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 8a714eef-ea72-48f3-86d9-5a98b8ddcc6f
-TQID: https://experienceleague.adobe.com/sCGiJu4peYEbt4i-NnuvOpfQp0WkG-iho-xz-4HNuvg
+TQID: 'https://experienceleague.adobe.com/sCGiJu4peYEbt4i-NnuvOpfQp0WkG-iho-xz-4HNuvg'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 50d1fd2e-0fc9-5627-bbc9-02dbc9d15e08
+    internal-label: Email
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: a4657621-810c-498b-8a27-7ced9c176dda
+    internal-label: Push notifications
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 499
+source-wordcount: '499'
 ht-degree: 96%
-
 ---
-
 # Personnaliser la liste des émoticônes {#customize-emoticons}
 
 La liste des émoticônes affichée dans la fenêtre contextuelle est régie par une énumération. Vous pouvez ainsi afficher les valeurs contenues dans une liste pour limiter les choix de l’utilisateur ou de l’utilisatrice pour un champ donné.
@@ -50,7 +62,7 @@ Notez que les émoticônes ne sont disponibles que pour les e-mails et les notif
 1. Renseignez les champs :
 
    * **[!UICONTROL U+]** : code de votre nouvelle émoticône. La liste des codes des émoticônes se trouve dans cette [page](https://unicode.org/emoji/charts/full-emoji-list.html).
-Pour éviter tout problème de compatibilité, il est conseillé de choisir des émoticônes prises en charge sur les navigateurs et sur tous les systèmes d’exploitation.
+     Pour éviter tout problème de compatibilité, il est conseillé de choisir des émoticônes prises en charge sur les navigateurs et sur tous les systèmes d’exploitation.
 
    * **[!UICONTROL Libellé]** : libellé de la nouvelle émoticône.
 

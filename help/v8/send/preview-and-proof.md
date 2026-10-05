@@ -5,22 +5,29 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
-TQID: https://experienceleague.adobe.com/uVVmB-6U7nTrC0ypEHAINNtp5tcE0gr8ambKwDK56ls
+TQID: 'https://experienceleague.adobe.com/uVVmB-6U7nTrC0ypEHAINNtp5tcE0gr8ambKwDK56ls'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 13af5358-448e-5a4a-850b-0db592bb0f8f
+    internal-label: Personalization
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: '756'
 ht-degree: 96%
-
 ---
-
 # Prévisualiser et tester votre e-mail {#preview-test}
 
 Une fois le contenu du message défini, prévisualisez-le et testez-le à l’aide de profils de test. Si vous avez inséré du [contenu personnalisé](personalize.md), vous pouvez vérifier son contenu dans le message à l’aide des données de profil de test. De plus, pour détecter d’éventuelles erreurs dans le contenu du message ou les paramètres de personnalisation, envoyez des BAT aux profils de test. Un BAT doit être envoyé à chaque modification afin de valider le contenu le plus récent.
@@ -115,4 +122,4 @@ Par défaut, les messages de BAT sont identifiés par la mention `Proof #N` dans
 
 Découvrez comment envoyer et valider un BAT pour une diffusion e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447001?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/333404)

@@ -6,19 +6,32 @@ feature: Workflows, Targeting Activity, Query Editor
 role: User, Developer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
 version: Campaign v8, Campaign Classic v7
-TQID: https://experienceleague.adobe.com/52OZPf93IeD62Vo1-G68JRoM9aeIK1Qgbw885s9eHnI
+TQID: 'https://experienceleague.adobe.com/52OZPf93IeD62Vo1-G68JRoM9aeIK1Qgbw885s9eHnI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: ff84ab2f-a7c2-4ced-a3c8-5113f4348d99
+    internal-label: Targeting Activity
+  - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Developer
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1681
-ht-degree: 72%
-
+source-wordcount: '1687'
+ht-degree: 93%
 ---
-
 # Requête{#query}
 
 
@@ -56,7 +69,7 @@ Le lien **[!UICONTROL Editer la requête...]** permet de définir le type de cib
 
 1. Vous devrez ajouter des critères de filtrage manuellement si vous avez sélectionné **[!UICONTROL Critères de filtrage]** à l’étape 1 ou via l’option **[!UICONTROL Filtres]** > **[!UICONTROL Filtre avancé...]**.
 
-   Vous pouvez également ajouter des conditions de groupement de données en cochant la case correspondante. Pour cela, la dimension de filtrage doit être différente de la dimension de ciblage de la requête. Pour plus d’informations sur les regroupements, consultez cette [section](query-grouping-management.md).
+   Vous pouvez également ajouter des conditions de groupement de données en cochant la case correspondante. Pour cela, la dimension de filtrage doit impérativement être différente de la dimension de ciblage de la requête. Pour plus d’informations sur les regroupements, consultez cette [section](query-grouping-management.md).
 
    Vous pouvez également ajouter d’autres critères à l’aide du [Générateur d’expression](../../v8/start/filter-conditions.md#using-and--or--except) et les combiner avec les options logiques ET, OU et SAUF.
 
@@ -64,7 +77,7 @@ Le lien **[!UICONTROL Editer la requête...]** permet de définir le type de cib
 
 ## Ajout de données {#adding-data}
 
-Les colonnes supplémentaires vous permettent de collecter des informations supplémentaires sur la population ciblée, par exemple ses numéros de contrat, ses abonnements à des newsletters ou son origine. Ces données peuvent être stockées dans la base de données Adobe Campaign ou dans une base de données externe.
+Les colonnes supplémentaires permettent de collecter des informations supplémentaires sur la population ciblée, par exemple ses numéros de contrats, ses abonnements à des newsletters ou son origine. Ces données peuvent être stockées dans la base de données Adobe Campaign ou dans une base de données externe.
 
 Le lien **[!UICONTROL Ajouter des données...]** permet de sélectionner les données additionnelles à collecter.
 
@@ -78,11 +91,11 @@ Sélectionnez d&#39;abord le type de données à ajouter :
 * Sélectionnez **[!UICONTROL Données externes]** pour ajouter des données provenant d’une base externe. Cette option n’est disponible que si vous avez acquis l’option **Federated Data Access**. Pour plus dʼinformations, consultez la section [Accès à une base de données externe (FDA)](accessing-an-external-database-fda.md).
 * Sélectionnez l’option **[!UICONTROL Une proposition d’offre]** pour ajouter un ensemble de colonnes permettant de stocker la meilleure proposition générée par le moteur d’offres. Cette option n’est disponible que si vous avez acquis le module **Interaction**.
 
-Si aucun module optionnel n&#39;est installé sur la plateforme, cette étape n&#39;est pas affichée. Vous passerez directement à l&#39;étape suivante.
+Si aucun module optionnel n’est installé sur la plateforme, cette étape n’est pas affichée. Vous passerez directement à l’étape suivante.
 
 Pour ajouter des données de la base Adobe Campaign :
 
-1. Sélectionnez le type de données à ajouter. Il peut s&#39;agir de données appartenant à la dimension de filtrage ou de données stockées dans des tables liées.
+1. Sélectionnez le type de données à ajouter. Il peut s’agir de données appartenant à la dimension de filtrage ou de données stockées dans des tables liées.
 
    ![](assets/query_add_columns.png){width="70%" align="center" zoomable="yes"}
 
@@ -104,7 +117,7 @@ Pour ajouter une collection d’informations liées à une population ciblée, p
 
    ![](assets/wf_add_data_linked_table.png){width="70%" align="center" zoomable="yes"}
 
-1. Si nécessaire, indiquez le nombre d&#39;éléments de la collection à conserver en sélectionnant une des valeurs du champ **[!UICONTROL Données collectées]**. Par défaut, toutes les lignes de la collection sont récupérées puis filtrées selon les conditions définies à l&#39;étape suivante.
+1. Au besoin, indiquez le nombre d’éléments de la collection que vous souhaitez conserver en sélectionnant une des valeurs du champ **[!UICONTROL Données collectées]**. Par défaut, toutes les lignes de la collection sont récupérées, puis filtrées selon les conditions définies à l’étape suivante.
 
    * Si un seul élément de la collection correspond aux conditions de filtrage définies à l&#39;étape suivante, sélectionnez **[!UICONTROL Ligne unique]** dans le champ **[!UICONTROL Données collectées]**.
 
@@ -115,7 +128,7 @@ Pour ajouter une collection d’informations liées à une population ciblée, p
      >Si la condition initiale n&#39;est pas respectée, le résultat peut être erroné (lignes manquantes ou doublons).
 
    * Si vous choisissez de récupérer plusieurs lignes (**[!UICONTROL Limiter le nombre de lignes]**), vous pouvez indiquer le nombre de lignes à collecter.
-   * Si les colonnes collectées contiennent des agrégats, par exemple le nombre de défaillances déclarées, les dépenses moyennes sur un site, etc., vous pouvez utiliser la valeur **[!UICONTROL Agrégats]**.
+   * Si les colonnes collectées contiennent des agrégats, par exemple le nombre de sinistres déclarés, la moyenne des dépenses sur un site, etc., vous pouvez utiliser la valeur **[!UICONTROL Agrégats]**.
 
    ![](assets/query_add_collection_param.png){width="70%" align="center" zoomable="yes"}
 
@@ -123,11 +136,11 @@ Pour ajouter une collection d’informations liées à une population ciblée, p
 
    ![](assets/query_add_columns_collection_filter.png){width="70%" align="center" zoomable="yes"}
 
-1. Si vous avez sélectionné l&#39;option **[!UICONTROL Limiter le nombre de lignes]**, définissez l&#39;ordre de tri des données collectées. Une fois que le nombre de lignes collectées est supérieur au nombre de lignes à conserver que vous avez indiqué, l&#39;ordre de filtrage permet de spécifier les lignes à conserver.
+1. Si vous avez sélectionné l’option **[!UICONTROL Limiter le nombre de lignes]**, définissez l’ordre de tri des données collectées. Lorsque le nombre de lignes collectées est supérieur au nombre de lignes à conserver que vous avez indiqué, l’ordre de tri permet de définir les lignes à conserver.
 
 ## Exemple : ciblage sur des attributs destinataires simples {#example--targeting-on-simple-recipient-attributes}
 
-Dans l’exemple suivant, la requête cherche à identifier les hommes âgés de 18 à 30 ans et vivant en France. Cette requête sera utilisée dans un workflow qui vise à en faire une offre exclusive par exemple.
+Dans l’exemple suivant, la requête cherchera à identifier les hommes de 18 à 30 ans qui vivent en France. Cette requête sera utilisée dans un workflow qui vise à en faire une offre exclusive par exemple.
 
 >[!NOTE]
 >
@@ -135,7 +148,7 @@ Dans l’exemple suivant, la requête cherche à identifier les hommes âgés de
 
 1. Nommez votre requête puis sélectionnez le lien **[!UICONTROL Editer la requête...]**.
 1. Sélectionnez **[!UICONTROL Critères de filtrage]** dans la liste des types de filtres disponibles.
-1. Renseignez les différents critères de la cible proposée. Ici, les critères sont combinés à l’aide de l’option ET . Pour être inclus dans la sélection, les destinataires devront remplir les quatre conditions suivantes :
+1. Renseignez les différents critères de la cible proposée. Ici, les critères sont combinés à l’aide de l’option ET. Pour être incluses dans la sélection, les personnes destinataires devront remplir les quatre conditions suivantes :
 
    * Les destinataires dont la civilité est &quot;M.&quot; (également possible en utilisant le champ **Genre** et la valeur **Masculin**).
    * Les destinataires ayant moins de 30 ans.
@@ -153,7 +166,7 @@ Dans l’exemple suivant, la requête cherche à identifier les hommes âgés de
    ![](assets/query_example_preview.png){width="70%" align="center" zoomable="yes"}
 
 1. Sauvegardez éventuellement vos filtres pour pouvoir les réutiliser ultérieurement puis cliquez sur **[!UICONTROL Terminer]** > **[!UICONTROL Ok]**.
-1. Continuez à modifier votre workflow en y ajoutant d’autres activités. Une fois lancée et l&#39;étape de requête précédente terminée, le nombre de destinataires trouvés s&#39;affiche. Vous pouvez afficher d’autres détails à l’aide du menu contextuel de la souris (cliquez avec le bouton droit de la souris sur la transition > **[!UICONTROL Afficher la cible...]**).
+1. Continuez à modifier votre workflow en y ajoutant d’autres activités. Après le lancement et une fois l’étape de requête précédente terminée, le nombre de personnes destinataires trouvées s’affiche. Vous pouvez afficher d’autres détails à l’aide du menu contextuel de la souris (cliquez avec le bouton droit de la souris sur la transition > **[!UICONTROL Afficher la cible...]**).
 
    ![](assets/query_example_result.png){width="70%" align="center" zoomable="yes"}
 
@@ -216,11 +229,11 @@ Pour plus d’informations sur les dimensions de filtrage, consultez [cette sec
 * Créez une plateforme de développement avec des volumes, des paramètres et une architecture similaires à ceux de la plateforme de production.
 * Utilisez les mêmes valeurs pour les environnements de développement et de production. Dans la mesure du possible, les éléments suivants doivent être identiques :
 
-   * Système d&#39;exploitation,
-   * Version,
-   * Données,
-   * Application,
-   * Volumes.
+  * Système d&#39;exploitation,
+  * Version,
+  * Données,
+  * Application,
+  * Volumes.
 
   >[!NOTE]
   >

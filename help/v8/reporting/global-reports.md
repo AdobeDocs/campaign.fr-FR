@@ -4,29 +4,44 @@ description: Découvrez comment accéder aux rapports globaux et les utiliser.
 feature: Reporting, Monitoring
 role: User, Developer
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
-TQID: https://experienceleague.adobe.com/4BSV9uMb9AfI4Su-UcDOwcvT7LN0HDNsW4s9PC8Bx90
+TQID: 'https://experienceleague.adobe.com/4BSV9uMb9AfI4Su-UcDOwcvT7LN0HDNsW4s9PC8Bx90'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic reporting
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+    internal-label: Reporting interface
+  - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Security
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1914
-ht-degree: 78%
-
+source-wordcount: '1914'
+ht-degree: 99%
 ---
-
 # Rapports globaux {#global-reports}
 
-Ces rapports concernent l’activité des données dans l’ensemble de la base de données. Pour afficher le tableau de bord des rapports, accédez à l’onglet **[!UICONTROL Rapports]**.
+Ces rapports portent sur l’activité de l’ensemble des données de la base. Pour accéder au tableau de bord des rapports, accédez à l’onglet **[!UICONTROL Rapports]**.
 
 ![](assets/reports-tab.png)
 
-Pour afficher les rapports, cliquez sur leur nom. Les rapports disponibles par défaut sont les suivants :
+Pour afficher les rapports, cliquez sur leur nom. Par défaut, les paramètres suivants sont disponibles :
 
 ![](assets/report-global-list.png)
 
@@ -50,11 +65,11 @@ Pour afficher les rapports, cliquez sur leur nom. Les rapports disponibles par d
 
 ## Débit des diffusions {#delivery-throughput}
 
-Ce rapport contient des informations sur le débit de diffusion de l&#39;ensemble de la plateforme sur une période donnée. Pour mesurer la vitesse à laquelle les messages sont diffusés, les critères sont le nombre de messages envoyés par heure et la taille des messages (en bits par seconde). Dans l’exemple ci-dessous, le premier graphique indique les diffusions réussies en bleu et le nombre de diffusions erronées en orange.
+Ce rapport contient les informations relatives au débit de diffusion de l’ensemble de la plateforme sur une période donnée. Pour mesurer la vitesse de diffusion des messages, les critères sont le nombre de messages diffusés par heure et la taille des messages (en bits par seconde). Dans l’exemple ci-dessous, le premier graphique indique les diffusions réussies en bleu et le nombre de diffusions erronées en orange.
 
 ![](assets/report-toolbar.png)
 
-Vous pouvez paramétrer l&#39;affichage des valeurs en sélectionnant le périmètre de la vue : 1 heure, 3 heures, 24 heures, etc. Cliquez sur **[!UICONTROL Actualiser]** pour confirmer votre sélection.
+Vous pouvez paramétrer l’affichage des valeurs en modifiant l’échelle de temps : affichage sur 1 heure, sur 3 heures, sur 24 heures, etc. Cliquez sur **[!UICONTROL Rafraîchir]** pour confirmer votre sélection.
 
 >[!NOTE]
 >
@@ -79,7 +94,7 @@ Les options disponibles sont les suivantes :
 
 Ce rapport présente la répartition des non-délivrables et la répartition des rebonds par domaine Internet.
 
-Le **[!UICONTROL Nombre de messages traités]** représente le nombre total de messages traités par le serveur de diffusion. Cette valeur est inférieure au nombre de messages à diffuser lorsque certaines diffusions ont été arrêtées ou mises en pause (avant d’être traitées par le serveur).
+Le **[!UICONTROL Nombre de messages traités]** représente le nombre total de messages traités par le serveur de diffusion. Cette valeur est inférieure au nombre de messages à diffuser lorsque certaines diffusions ont été stoppées ou mises en pause (avant d’être traitées par le serveur).
 
 **[!UICONTROL Répartition des erreurs par type]**
 
@@ -109,7 +124,7 @@ Les indicateurs utilisés sont les suivants :
   >
   >Cet indicateur ne porte que sur les diffusions sur les [canaux mobiles](../send/send.md).
 
-  Vous pouvez ouvrir chaque ligne du tableau de valeurs en cliquant sur le symbole `[+]`. Pour chaque type d’erreur, vous pouvez afficher la répartition des messages d’erreur par domaine.
+  Vous pouvez déplier chaque ligne du tableau de valeurs en cliquant sur le symbole `[+]`. Cela permet d’afficher, pour chaque type d’erreur, la répartition des messages d’erreur, par domaine.
 
 **[!UICONTROL Répartition des erreurs par domaine]**
 
@@ -121,7 +136,7 @@ A chaque nom de domaine, est associé :
 * le pourcentage du nombre de messages en erreur sur ce domaine par rapport au nombre total de messages traités sur ce domaine.
 * le pourcentage du nombre de messages en erreur sur ce domaine par rapport au nombre total de messages en erreur,
 
-Vous pouvez ouvrir chaque ligne du tableau de valeurs en cliquant sur le symbole [+]. Pour chaque type de domaine, vous pouvez afficher la répartition des messages d’erreur par type d’erreur.
+Vous pouvez déplier chaque ligne du tableau de valeurs en cliquant sur le symbole [+]. Cela permet d’afficher, pour chaque type d’erreur, la répartition des messages d’erreur, par domaine.
 
 ![](assets/errors-report-details.png)
 
@@ -157,7 +172,7 @@ Dans le tableau de valeurs des statistiques globales, vous pouvez cliquer sur le
 
 Les statistiques sont présentées sous la forme d&#39;une courbe, d&#39;un graphique et d&#39;un tableau de valeurs.
 
-La courbe **[!UICONTROL Historique]** représente le taux de fréquentation quotidienne de ce navigateur. Le taux est le ratio du nombre de visiteurs par jour (sur ce navigateur) par rapport au nombre de visiteurs mesuré le jour avec le taux de fréquentation le plus élevé.
+La courbe **[!UICONTROL Historique]** représente le taux de fréquentation quotidienne de ce navigateur. Le taux est le pourcentage du nombre de visiteurs et visiteuses quotidiens, sur ce navigateur, par rapport au nombre de visiteurs et visiteuses mesuré le jour le plus fréquenté.
 
 Le graphique **[!UICONTROL Répartition par version]** représente la répartition des visiteurs, par version, par rapport au nombre total de visiteurs sur ce navigateur.
 
@@ -247,7 +262,7 @@ Dans le tableau de valeurs des statistiques globales, vous pouvez cliquer sur le
 
 Les statistiques sont présentées sous la forme d&#39;une courbe, d&#39;un graphique et d&#39;un tableau de valeurs.
 
-La courbe **[!UICONTROL Historique]** représente le taux d&#39;utilisation de ce système d&#39;exploitation par jour. Ce taux est le ratio du nombre de visiteurs par jour (sur ces systèmes d’exploitation) par rapport au nombre de visiteurs mesuré le jour avec la plus grande affluence.
+La courbe **[!UICONTROL Historique]** représente le taux d’utilisation de ce système d’exploitation par jour. Ce taux est le ratio du nombre de visiteurs et visiteuses par jour (sur ce système d’exploitation) par rapport au nombre de visiteurs et visiteuses mesuré le jour le plus fréquenté.
 
 Le graphique **[!UICONTROL Répartition par version]** représente la répartition des visiteurs, par version, par rapport au nombre total de visiteurs sur ce système d&#39;exploitation.
 
@@ -258,7 +273,7 @@ Le tableau de valeurs utilise les indicateurs suivants :
 
 ## Tracking des abonnements {#subscription-tracking}
 
-Ce rapport permet de suivre les abonnements aux services d’information. Il affiche les abonnements et les désabonnements.
+Ce rapport vous permet de surveiller mes abonnements aux services d’information. Il présente les abonnements et désabonnements.
 
 ![](assets/service-report.png)
 
@@ -275,7 +290,7 @@ Le tableau de valeurs utilise les indicateurs suivants :
 * **[!UICONTROL Personnes inscrites]** : nombre total de personnes abonnés sur la période correspondante.
 * **[!UICONTROL Abonnements]** : nombre d’abonnements sur la période correspondante.
 * **[!UICONTROL Désabonnements]** : nombre de désabonnements sur la période correspondante.
-* **[!UICONTROL Evolution]** : Nombre de désabonnements soustrait au nombre d&#39;abonnements. Le taux est calculé par rapport au nombre total d&#39;abonnés.
+* **[!UICONTROL Evolution]** : Nombre de désabonnements soustrait au nombre d&#39;abonnements. Le taux est calculé par rapport au nombre total de personnes abonnées.
 * **[!UICONTROL Fidélité]** : taux de fidélité des personnes abonnées sur la période correspondante.
 
 **[!UICONTROL Courbes d&#39;évolution des inscriptions]**
@@ -305,9 +320,9 @@ Les indicateurs utilisés sont les suivants :
 
 ## Répartition des ouvertures {#breakdown-of-opens}
 
-Ce rapport présente la répartition des ouvertures par système d’exploitation, par appareil et par navigateur pour la période concernée. Deux graphiques sont utilisés pour chaque catégorie. Le premier affiche les statistiques d’ouverture sur un ordinateur et des appareils mobiles. Le second affiche des statistiques relatives uniquement aux ouvertures sur les appareils mobiles.
+Ce rapport affiche la répartition des ouvertures par système d’exploitation, appareil et navigateur sur la période concernée. Deux graphiques sont utilisés pour chaque catégorie. Le premier affiche les statistiques d’ouverture sur un ordinateur et des appareils mobiles. Le second affiche des statistiques relatives uniquement aux ouvertures sur les appareils mobiles.
 
-Le nombre d’ouvertures correspond au nombre total de messages ouverts. Les emails au format texte ne sont pas comptabilisés. Pour plus d’informations sur le tracking des ouvertures, consultez [cette section](metrics-calculation.md#tracking-opens-).
+Le nombre d’ouvertures correspond au nombre total de messages ouverts. Les e-mails au format texte ne sont pas comptabilisés. Pour plus d’informations sur le tracking des ouvertures, consultez [cette section](metrics-calculation.md#tracking-opens-).
 
 ![](assets/user-agent-report.png)
 

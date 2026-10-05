@@ -5,26 +5,42 @@ feature: Analytics Integration, Reporting
 role: Admin, User
 level: Beginner
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
-TQID: https://experienceleague.adobe.com/AdMAot4jNWYNIbQVxEYvvodsffQ-kc405Dk8D5FwHFk
+TQID: 'https://experienceleague.adobe.com/AdMAot4jNWYNIbQVxEYvvodsffQ-kc405Dk8D5FwHFk'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
+  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic reporting
+subfeature_v2:
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Analytics integration
+  - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+    internal-label: Reporting interface
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 989cd72ab555a1b81042bbc043c246427e22a0d4
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1836
-ht-degree: 79%
-
+source-wordcount: '1836'
+ht-degree: 85%
 ---
-
 # Utilisation de Campaign et Adobe Analytics {#ac-aa}
 
 Vous pouvez également configurer Adobe Analytics pour intégrer Campaign et Analytics.
@@ -132,24 +148,24 @@ Après avoir créé votre **[!UICONTROL suite de rapports]**, vous devez configu
 
 Depuis la migration vers l’API Adobe Analytics 2.0, vous devez également créer un **[!UICONTROL ensemble de classifications]** dans Adobe Analytics avant de configurer votre compte externe dans Campaign. Cet ensemble de classifications lie la variable de conversion que vous venez de créer (le nom de votre campagne interne) à la suite de rapports, de sorte que Campaign puisse automatiquement la découvrir et l’utiliser lorsque vous configurez le compte externe à l’étape suivante.
 
-Pour créer votre ensemble de classifications :
+Pour créer votre ensemble de classifications :
 
-1. Dans la barre de menus supérieure [!DNL Adobe Analytics], sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Ensembles de classifications]**, puis cliquez sur **[!UICONTROL Nouveau]**.
+1. Dans la barre de menu supérieure [!DNL Adobe Analytics], sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Ensembles de classifications]**, puis cliquez sur **[!UICONTROL Nouveau]**.
 
    ![](assets/analytics_connnector_16.png)
 
-1. Dans la boîte de dialogue **[!UICONTROL Ajouter un nouvel ensemble de classifications]** :
+1. Dans la boîte de dialogue **[!UICONTROL Ajouter un nouvel ensemble de classifications]** :
 
    ![](assets/analytics_connnector_17.png)
 
    * Saisissez un **[!UICONTROL Nom]** pour l’ensemble de classifications.
    * Définissez le **[!UICONTROL Type]** sur **[!UICONTROL Principal]**.
-   * Dans **[!UICONTROL Notifications de tâche]**, choisissez les personnes à avertir de la réussite ou de l’échec des tâches de l’ensemble de classifications et indiquez les adresses e-mail correspondantes.
+   * Dans **[!UICONTROL Notifications de traitement]**, choisissez les personnes à avertir de la réussite ou de l’échec des traitements de l’ensemble de classification et indiquez les adresses e-mail correspondantes.
    * Dans **[!UICONTROL Abonnements]**, sélectionnez votre suite de rapports et la variable de conversion que vous avez créée pour le nom de la campagne interne à l’étape précédente.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-Pour plus d’informations sur les ensembles de classifications, consultez la documentation d’[&#128279;](https://experienceleague.adobe.com/fr/docs/analytics/components/classifications/sets/create-set){target="_blank"}.
+Pour plus d’informations sur les ensembles de classification, consultez la [documentation Adobe Analytics](https://experienceleague.adobe.com/fr/docs/analytics/components/classifications/sets/create-set){target="_blank"}.
 
 Lorsque votre suite de rapports, vos variables de conversion, vos événements de succès et votre ensemble de classifications sont configurés, vous devez configurer les **[!UICONTROL comptes externes]** dans Adobe Campaign.
 

@@ -6,22 +6,32 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: ff2be012-72f3-428d-a973-196fea7ec4ab
-TQID: https://experienceleague.adobe.com/CDfK2RCVNzKde8WiEBdkq8ZB2JlPSjnFmP3cr9Nyox0
+TQID: 'https://experienceleague.adobe.com/CDfK2RCVNzKde8WiEBdkq8ZB2JlPSjnFmP3cr9Nyox0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: ede6e1ec-9279-415e-b828-a09735018d48
+    internal-label: Direct mail
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 933
-ht-degree: 72%
-
+source-wordcount: '933'
+ht-degree: 88%
 ---
-
 # Création de diffusions courrier
 
 Les diffusions courrier permettent de générer un fichier d&#39;extraction contenant les données relatives à la population cible. Vous pouvez ensuite partager ce fichier avec le fournisseur qui enverra les messages aux populations cibles.
@@ -66,9 +76,9 @@ En savoir plus dans [cette section](../start/create-message.md#target-population
 
 Utilisez l&#39;assistant d&#39;extraction pour définir les informations (colonnes) à exporter dans le fichier de sortie.
 
-Le nom du fichier qui contient les données extraites est défini dans le champ **[!UICONTROL Fichier]**. Le bouton situé à droite du champ permet d’utiliser des champs de personnalisation pour créer le nom du fichier.
+Le nom du fichier contenant les données extraites est défini dans le champ **[!UICONTROL Fichier]**. Le bouton situé à droite du champ vous permet d’utiliser des champs de personnalisation pour créer le nom du fichier.
 
-Par défaut, le fichier d’extraction est créé et stocké sur le serveur. Vous pouvez l&#39;enregistrer sur votre ordinateur. Pour cela, cochez l&#39;option **[!UICONTROL Rapatrier en local le fichier généré après l&#39;export]**. Dans ce cas, vous devez indiquer le chemin d&#39;accès au répertoire de stockage local et le nom du fichier.
+Par défaut, le fichier d’extraction est créé et stocké sur le serveur. Vous pouvez l’enregistrer sur votre ordinateur. Pour cela, cochez l&#39;option **[!UICONTROL Rapatrier en local le fichier généré après l&#39;export]**. Dans ce cas, vous devez indiquer le chemin d&#39;accès au répertoire de stockage local et le nom du fichier.
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 
@@ -80,11 +90,11 @@ Ce lien permet d’accéder à l’assistant d’extraction afin de définir les
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-Vous pouvez insérer une URL personnalisée dans le fichier d’extraction. Pour plus d’informations à ce sujet, consultez la [documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html?lang=fr){target="_blank"} de Adobe Campaign Classic.
+Vous pouvez insérer une URL personnalisée dans le fichier d’extraction. Pour plus d’informations à ce sujet, consultez la [documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html){target="_blank"} de Adobe Campaign Classic.
 
 >[!NOTE]
 >
->Cet assistant comprend les étapes de l’assistant d’exportation décrites dans la [&#x200B; documentation de Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=fr){target="_blank"}.
+>Cet assistant comprend les étapes de l’assistant d’exportation décrites dans la [ documentation de Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"}.
 
 ## Validation de la diffusion{#validating}
 
@@ -100,9 +110,9 @@ Le fichier de sortie d&#39;une diffusion par courrier est généré pendant l&#3
 >
 >La phase d’analyse est détaillée dans cette [section](delivery-analysis.md).
 
-Lors de la phase d’analyse, le fichier est généré mais les informations relatives aux destinataires (c’est-à-dire les logs de diffusion) ne sont pas mises à jour. Vous pouvez donc annuler ce traitement sans courir de risque.
+Pendant la phase d’analyse, le fichier est généré mais aucune information concernant les destinataires (à savoir les logs de diffusion) n’est mise à jour. Vous pouvez donc annuler ce traitement sans courir de risque.
 
-Vérifiez le résultat de l&#39;analyse et le contenu du fichier de sortie avant de cliquer sur **[!UICONTROL Confirmer la diffusion]**. Un message de confirmation permet de lancer la diffusion.
+Vérifiez le résultat de l’analyse et le contenu du fichier de sortie avant de cliquer sur le bouton **[!UICONTROL Confirmer la diffusion]**. Un message de confirmation permet de lancer la diffusion.
 
 La confirmation de l&#39;envoi lance l&#39;extraction des données dans le fichier spécifié.
 
@@ -115,7 +125,7 @@ Vous pouvez paramétrer le mode de récupération des logs de diffusion à parti
 Deux modes sont proposés :
 
 * **[!UICONTROL Les messages sont considérés envoyés suite à la validation]** (mode par défaut) : dans ce mode de fonctionnement, tous les broadlogs sont mis à jour lorsque l&#39;opérateur confirme l&#39;envoi (leur statut passe de &#39;En attente de diffusion&#39; à &#39;Envoyé&#39;) et le statut de la diffusion devient automatiquement **[!UICONTROL Terminé]**.
-* **[!UICONTROL Un fichier de résultats détermine les messages envoyés et en échec]** : ce mode permet de mettre à jour les broadlogs via un fichier externe transmis par le prestataire. Dans ce cas, un workflow pour traiter ces informations doit être utilisé afin de mettre à jour le statut du broadlog.
+* **[!UICONTROL Un fichier de résultats détermine les messages envoyés et en échec]** : ce mode permet de mettre à jour les broadlogs via un fichier externe transmis par le prestataire. Dans ce cas, un workflow pour traiter ces informations doit être utilisé afin de mettre à jour le statut du broadlog.
 
   >[!NOTE]
   >

@@ -7,29 +7,40 @@ Role: User
 level: Experienced
 version: Campaign v8, Campaign Classic v7
 exl-id: 8c385847-a320-4cd9-9048-2bf9daf2ee07
-TQID: https://experienceleague.adobe.com/J1oZUE7vCyJvodf0-09QoG24gWY9P9sSgqsH7rXibgk
+TQID: 'https://experienceleague.adobe.com/J1oZUE7vCyJvodf0-09QoG24gWY9P9sSgqsH7rXibgk'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Data management
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 423
-ht-degree: 59%
-
+source-wordcount: '423'
+ht-degree: 69%
 ---
-
 # Code SQL et code JavaScript{#sql-code-and-javascript-code}
 
 ## Code SQL {#sql-code}
 
-Une activité **[!UICONTROL Code SQL]** exécute un script SQL. Le script est un modèle JST.
+Une activité de type **[!UICONTROL Code SQL]** exécute un script SQL. Le script est un modèle JST.
 
 ![](assets/sql_code.png)
 
 * **[!UICONTROL Script]**
 
-  La zone centrale de l&#39;éditeur contient le script à exécuter. Ce script est un template JST et peut donc être configuré en fonction du contexte du workflow.
+  La zone centrale de l’éditeur contient le script à exécuter. Ce script est un modèle JST et peut donc être paramétré en fonction du contexte du workflow.
 
 * **[!UICONTROL Traiter les erreurs]**
 

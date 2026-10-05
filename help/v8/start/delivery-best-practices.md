@@ -6,28 +6,48 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-TQID: https://experienceleague.adobe.com/20Kh0O94OY8Vpy5SmhVUUgVOCkWy7DNZiJko3EeOx-E
+TQID: 'https://experienceleague.adobe.com/20Kh0O94OY8Vpy5SmhVUUgVOCkWy7DNZiJko3EeOx-E'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: 50d1fd2e-0fc9-5627-bbc9-02dbc9d15e08
+    internal-label: Email
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: a4657621-810c-498b-8a27-7ced9c176dda
+    internal-label: Push notifications
+  - id: b1bd1421-1927-4c59-9bc6-ce292360e43b
+    internal-label: SMS Messaging
+  - id: ede6e1ec-9279-415e-b828-a09735018d48
+    internal-label: Direct mail
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+    internal-label: Email marketing
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 3188
+source-wordcount: '3196'
 ht-degree: 92%
-
 ---
-
 # Bonnes pratiques de diffusion {#delivery-best-practices}
 
 Découvrez les bonnes pratiques suivantes avec les fonctionnalités de diffusion de Campaign.
@@ -143,13 +163,13 @@ Pour personnaliser vos messages, vous pouvez utiliser les données des destinata
 
 +++ **Lire quelques bonnes pratiques**
 
-* Vérifier vos paramètres de personnalisation : vérifiez que le contenu de votre message est correctement conçu pour éviter toute erreur, qui pourrait être liée à la personnalisation. Une balise de personnalisation Adobe Campaign a toujours la forme suivante : `<%=table.field%>`. L’utilisation incorrecte des paramètres dans les blocs de personnalisation peut poser problème. Par exemple, les variables dans JavaScript doivent être utilisées comme suit :
+* Vérifier vos paramètres de personnalisation : vérifiez que le contenu de votre message est correctement conçu pour éviter toute erreur, qui pourrait être liée à la personnalisation. Une balise de personnalisation Adobe Campaign a toujours la forme suivante : `<%=table.field%>`. L’utilisation incorrecte de paramètres dans les blocs de personnalisation peut entraîner des problèmes. Par exemple, les variables en JavaScript doivent être utilisées comme suit :
 
-  &grave;&grave;
+  ``
   <%
   var brand = "xxx"
   %>
-  &grave;&grave;
+  ``
 
   Pour plus d&#39;informations sur les blocs de personnalisation, consultez [cette section](../send/personalization-blocks.md).
 
@@ -255,7 +275,7 @@ To avoid common formatting errors, check the following elements:
 
 * Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../../installation/using/configuring-campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode.
 
-* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#authentication).
+* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 -->
 
 ## Gestion des images {#manage-images}
@@ -436,7 +456,7 @@ You can:
 Vous pouvez utiliser des règles de typologie pour exclure une partie de la cible en fonction de critères spécifiques. Elles permettent de s’assurer que les messages envoyés répondent le mieux possible aux attentes ou aux besoins du client, dans le respect des politiques de communication de l’entreprise. Vous pouvez, par exemple, filtrer les destinataires mineurs du public cible de votre newsletter. En savoir plus [dans cet exemple](../../automation/campaign-opt/filtering-rules.md).
 
 
-## Tracker et suivre vos diffusions {#track-and-monitor}
+## Tracker et su vos diffusions {#track-and-monitor}
 
 Vous avez cliqué sur le bouton **Envoyer** ? Voyons ce qui se passe. Une fois la diffusion envoyée, Adobe Campaign vous permet de conserver une trace des messages envoyés et de découvrir la réaction des destinataires face à votre diffusion. Vous pourrez ainsi améliorer les prochains envois et optimiser vos campagnes suivantes.
 

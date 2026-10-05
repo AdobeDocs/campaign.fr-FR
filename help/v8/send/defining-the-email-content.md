@@ -6,23 +6,33 @@ feature: Email Design
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: c3e107b5-6d2e-408f-9c7d-a81a4756b4ef
-TQID: https://experienceleague.adobe.com/9TXL-RQE41IZCKWoh7jvGNLfBonStPosLB7qkIHZdKo
+TQID: 'https://experienceleague.adobe.com/9TXL-RQE41IZCKWoh7jvGNLfBonStPosLB7qkIHZdKo'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
+subfeature_v2:
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
+    internal-label: Privacy
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 2170
-ht-degree: 96%
-
+source-wordcount: '2170'
+ht-degree: 99%
 ---
-
 # Définition du contenu de l’e-mail {#defining-the-email-content}
 
 ## Expéditeur {#sender}
@@ -33,7 +43,7 @@ Pour définir le nom et l’adresse de l’expéditeur qui apparaîtront dans l�
 
 Cette fenêtre permet de saisir toutes les informations nécessaires à l’élaboration des en-têtes de messages e-mail. Ces informations peuvent être personnalisées. Cette fenêtre permet de saisir toutes les informations nécessaires à l’élaboration des en-têtes de messages e-mail.
 
-L’insertion et l’utilisation de champs de personnalisation sont présentées dans [cette section &#x200B;](personalize.md).
+L’insertion et l’utilisation de champs de personnalisation sont présentées dans [cette section ](personalize.md).
 
 >[!NOTE]
 >
@@ -74,7 +84,7 @@ Vous pouvez également insérer des émoticônes dans votre ligne Objet à l’a
 
 >[!IMPORTANT]
 >
->La version 8.9.3 d’comprend une mise à jour de la liste autorisée URL externe. Assurez-vous que les domaines utilisés dans le contenu de votre message sont ajoutés à la liste autorisée de données approuvée de votre instance afin que les ressources puissent continuer à se charger sans interruption. En tant qu’administrateur ou administratrice de Campaign, utilisez le Panneau de Contrôle pour ajouter et gérer des URL placées sur la liste autorisée. Pour connaître la procédure, voir [Ajout d’autorisations d’URL](https://experienceleague.adobe.com/fr/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
+>La version 8.9.3 d’comprend une mise à jour de la liste autorisée URL externe. Assurez-vous que les domaines utilisés dans le contenu de votre message sont ajoutés à la liste autorisée approuvée de votre instance afin que les ressources puissent continuer à se charger sans interruption. En tant qu’administrateur ou administratrice de Campaign, utilisez le panneau de contrôle pour ajouter et gérer des URL placées sur la liste autorisée. Pour connaître la procédure, consultez [Ajouter des autorisations d’URL](https://experienceleague.adobe.com/fr/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
 
 Le contenu du message est défini dans la section inférieure de la fenêtre de configuration de la diffusion.
 

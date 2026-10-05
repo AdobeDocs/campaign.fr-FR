@@ -5,19 +5,28 @@ description: En savoir plus sur l’activité de workflow d’union
 feature: Workflows, Targeting Activity
 version: Campaign v8, Campaign Classic v7
 exl-id: 4109e198-bf9d-4dd2-92a1-16bbadbe30e8
-TQID: https://experienceleague.adobe.com/-P-pc2ps970pfhgXZfv8atoVKGB-vS0B8vBdrR0DLZQ
+TQID: 'https://experienceleague.adobe.com/-P-pc2ps970pfhgXZfv8atoVKGB-vS0B8vBdrR0DLZQ'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: ff84ab2f-a7c2-4ced-a3c8-5113f4348d99
+    internal-label: Targeting Activity
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 311
-ht-degree: 65%
-
+source-wordcount: '311'
+ht-degree: 95%
 ---
-
 # Union{#union}
 
-Une **[!UICONTROL Union]** regroupe le résultat de plusieurs activités entrantes dans une cible unique. La cible est créée avec tous les résultats reçus : toutes les activités antérieures doivent donc être terminées pour que l&#39;union soit exécutée.
+Une **[!UICONTROL Union]** regroupe le résultat de plusieurs activités entrantes dans une cible unique. La cible est créée avec tous les résultats reçus : toutes les activités antérieures doivent donc être terminées pour que l’union soit exécutée.
 
 ![](assets/s_user_segmentation_union.png)
 
@@ -27,7 +36,7 @@ Une **[!UICONTROL Union]** regroupe le résultat de plusieurs activités entrant
 
 ## Exemple d&#39;union {#union-example}
 
-Dans l’exemple suivant, les résultats de deux requêtes ont été combinés afin de mettre à jour la liste. Les deux requêtes ciblent les destinataires. Les résultats sont donc basés sur le même tableau.
+Dans l’exemple suivant, les résultats de deux requêtes sont réunis afin de mettre à jour la liste. Les deux requêtes ciblent les personnes destinataires. Les résultats sont donc basés sur la même table.
 
 1. Insérez une activité de type **[!UICONTROL Union]** directement après les deux requêtes et avant une activité de mise à jour de liste puis ouvrez-la.
 1. Indiquez éventuellement un libellé.
@@ -38,7 +47,7 @@ Dans l’exemple suivant, les résultats de deux requêtes ont été combinés a
    Définissez cette dernière en indiquant le nombre de destinataires maximal et en choisissant la requête dont la population sera prioritaire.
 
 1. Validez l&#39;activité **[!UICONTROL Union]** puis configurez l&#39;activité [Mise à jour de liste](list-update.md).
-1. Démarrez le workflow. Le nombre de résultats s&#39;affiche et la liste définie dans l&#39;activité de mise à jour de liste est créée ou mise à jour. Cette liste contient l&#39;ensemble des destinataires pour les deux requêtes ou, le cas échéant, le nombre défini à l&#39;étape précédente.
+1. Démarrez le workflow. Le nombre de résultats s’affiche et la liste définie au niveau de l’activité de mise à jour de liste est créée ou mise à jour. Cette liste contient l’ensemble des personnes destinataires des deux requêtes ou le nombre défini à l’étape précédente, le cas échéant.
 
    ![](assets/union_example.png)
 

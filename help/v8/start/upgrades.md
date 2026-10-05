@@ -5,23 +5,34 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 04bda36f-051f-41a3-84b3-6af3c5e34ab2
-TQID: https://experienceleague.adobe.com/EaoWEmt7vNplA6Cs6CdMvP-iwia6BkaDRjawsPoa6fs
+TQID: 'https://experienceleague.adobe.com/EaoWEmt7vNplA6Cs6CdMvP-iwia6BkaDRjawsPoa6fs'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
+    internal-label: Release notes
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 59a1ad4bbb194222f0c2b86117cc7dc6ecc3335d
+    internal-label: Privacy
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1190
+source-wordcount: '1190'
 ht-degree: 28%
-
 ---
-
 # Versions et mises à niveau {#upgrades}
 
 Adobe Campaign v8 est proposé exclusivement en tant que solution **Managed Cloud Services**. Adobe gère et effectue chaque mise à niveau côté serveur pour vous : il n’existe aucun déploiement local ou hybride de v8, ni aucune mise à niveau du serveur à planifier ou à effectuer vous-même.
@@ -50,7 +61,7 @@ Voici les mises à niveau possibles :
 * **Mises à niveau mineures**, d’une version mineure à une autre, par exemple de la v8.5 à la v8.6. Ces mises à niveau apportent des améliorations, des mises à jour de compatibilité et de sécurité, ainsi que des correctifs.
 * **Mises à niveau de correctifs**, d’une version de correctif à une autre, par exemple de la v8.5.1 à la v8.5.2. Ces mises à niveau apportent des mises à jour et des correctifs de sécurité.
 
-Des informations détaillées sur chaque nouvelle version sont disponibles dans les [notes de mise à jour](release-notes.md). Les correctifs liés à la sécurité sont répertoriés dans les notes de mise à jour de chaque version. Voir [&#x200B; Comment puis-je être informé de la publication d’une nouvelle version ?](#upgrades-0) ci-dessous.
+Des informations détaillées sur chaque nouvelle version sont disponibles dans les [notes de mise à jour](release-notes.md). Les correctifs liés à la sécurité sont répertoriés dans les notes de mise à jour de chaque version. Voir [ Comment puis-je être informé de la publication d’une nouvelle version ?](#upgrades-0) ci-dessous.
 
 Pour garantir une configuration stable, Adobe recommande d’installer **la même version** sur tous vos serveurs Campaign. En outre, sauf mention contraire dans les [notes de mise à jour](release-notes.md), la console cliente doit utiliser **la même version** que l’instance de serveur. Découvrez comment mettre à niveau votre console cliente [sur cette page](../start/connect.md#upgrade-ac-console).
 
@@ -63,7 +74,7 @@ Comme la mise à niveau du serveur se produit automatiquement, votre **console c
 * Vous risquez de ne plus pouvoir vous connecter à votre instance Campaign tant que la console n’est pas mise à jour.
 * Votre console cesse de bénéficier des correctifs et des mises à jour de sécurité fournis dans la version vers laquelle votre serveur a déjà été déplacé, même si le serveur lui-même est à jour.
 
-Pour éviter cela, mettez à niveau votre console cliente dès que vous êtes averti d’une nouvelle version. Découvrez comment [&#x200B; mettre à niveau votre console cliente &#x200B;](../start/connect.md#upgrade-ac-console).
+Pour éviter cela, mettez à niveau votre console cliente dès que vous êtes averti d’une nouvelle version. Découvrez comment [ mettre à niveau votre console cliente ](../start/connect.md#upgrade-ac-console).
 
 En tant que client, vous devez également vous assurer que vous utilisez les dernières versions prises en charge des systèmes répertoriés dans la [matrice de compatibilité](compatibility-matrix.md).
 
@@ -92,7 +103,7 @@ Les nouvelles versions et les modifications qu’elles apportent (correctifs de 
 
 Pour être informé des nouvelles versions de la solution Experience Cloud et de leur contenu, abonnez-vous à la communication [Mises à jour de produit prioritaires d’](https://www.adobe.com/fr/subscription/priority-product-update.html){target="_blank"}.
 
-Vous pouvez également consulter [Communauté Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?profile.language=fr&style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"} pour être informé des mises à jour des versions.
+Vous pouvez également consulter [Communauté Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"} pour être informé des mises à jour des versions.
 
 ### Pourquoi mon entreprise a-t-elle besoin d’une mise à niveau ? {#upgrades-1}
 

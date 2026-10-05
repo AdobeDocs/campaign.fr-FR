@@ -4,25 +4,32 @@ description: Découvrir comment créer et envoyer des diffusions de canaux perso
 role: User
 level: Beginner, Intermediate
 exl-id: d2d92de6-3974-41c5-a0fd-09bbf6cf0020
-TQID: https://experienceleague.adobe.com/vIbTQOF44tDuRchXTQ5m5cD0VsbTk0oftZbtCgicg2I
+TQID: 'https://experienceleague.adobe.com/vIbTQOF44tDuRchXTQ5m5cD0VsbTk0oftZbtCgicg2I'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 560
+source-wordcount: '560'
 ht-degree: 37%
-
 ---
-
 # Commencer avec les canaux personnalisés {#gs-custom-channel}
 
 Adobe Campaign vous permet de créer des canaux externes ou API personnalisés intégrés à des tiers. Vous pouvez ensuite orchestrer et exécuter des diffusions en fonction de ces canaux.
@@ -45,7 +52,7 @@ Tout d’abord, configurez le schéma pour ajouter le nouveau canal à la liste 
 
 1. Dans l’explorateur Campaign, sélectionnez **Administration** > **Configuration** > **Schémas de données**.
 
-1. Créez une extension de schéma pour étendre l’énumération **messageType** [&#128279;](../config/enumerations.md) avec le nouveau canal.
+1. Créez une extension de schéma pour étendre l’énumération **messageType** [](../config/enumerations.md) avec le nouveau canal.
 
    Par exemple :
 
