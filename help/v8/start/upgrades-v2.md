@@ -19,7 +19,7 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 829f03234f4899643a7af4c8f21707f4dc7c5389
+source-git-commit: 8e5d8570e198b0e6db350ba82e521bee8a2f6d9e
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 20%
@@ -52,7 +52,7 @@ Voici les mises à niveau possibles :
 * **Mises à niveau mineures**, d’une version mineure à une autre, par exemple de la v8.5 à la v8.6. Ces mises à niveau apportent des améliorations, des mises à jour de compatibilité et de sécurité, ainsi que des correctifs.
 * **Mises à niveau de correctifs**, d’une version de correctif à une autre, par exemple de la v8.5.1 à la v8.5.2. Ces mises à niveau apportent des mises à jour et des correctifs de sécurité.
 
-Des informations détaillées sur chaque nouvelle version sont disponibles dans les [notes de mise à jour](release-notes.md). Les correctifs liés à la sécurité sont répertoriés dans les notes de mise à jour de chaque version. Voir [&#x200B; Comment puis-je être informé de la publication d’une nouvelle version ?](#upgrades-0) ci-dessous.
+Des informations détaillées sur chaque nouvelle version sont disponibles dans les [notes de mise à jour](release-notes.md). Les correctifs liés à la sécurité sont répertoriés dans les notes de mise à jour de chaque version. Voir [ Comment puis-je être informé de la publication d’une nouvelle version ?](#upgrades-0) ci-dessous.
 
 Pour garantir une configuration stable, Adobe recommande d’installer **la même version** sur tous vos serveurs Campaign. En outre, sauf mention contraire dans les [notes de mise à jour](release-notes.md), la console cliente doit utiliser **la même version** que l’instance de serveur. Découvrez comment mettre à niveau votre console cliente [sur cette page](../start/connect.md#upgrade-ac-console).
 
@@ -65,7 +65,7 @@ Comme la mise à niveau du serveur se produit automatiquement, votre **console c
 * Vous risquez de ne plus pouvoir vous connecter à votre instance Campaign tant que la console n’est pas mise à jour.
 * Votre console cesse de bénéficier des correctifs et des mises à jour de sécurité fournis dans la version vers laquelle votre serveur a déjà été déplacé, même si le serveur lui-même est à jour.
 
-Pour éviter cela, mettez à niveau votre console cliente dès que vous êtes averti d’une nouvelle version. Découvrez comment [&#x200B; mettre à niveau votre console cliente &#x200B;](../start/connect.md#upgrade-ac-console).
+Pour éviter cela, mettez à niveau votre console cliente dès que vous êtes averti d’une nouvelle version. Découvrez comment [ mettre à niveau votre console cliente ](../start/connect.md#upgrade-ac-console).
 
 En tant que client, vous devez également vous assurer que vous utilisez les dernières versions prises en charge des systèmes répertoriés dans la [matrice de compatibilité](compatibility-matrix.md).
 
@@ -75,13 +75,13 @@ En tant que client, vous devez également vous assurer que vous utilisez les der
 
 Comme nous l’avons partagé dans [Protection plus rapide des clients : comment Adobe répond à la découverte de vulnérabilités accélérées par l’IA](https://blog.adobe.com/security/protecting-customers-faster-how-adobe-is-responding-to-ai-accelerated-vulnerability-discovery), les équipes de sécurité d’Adobe utilisent des outils assistés par l’IA pour identifier et corriger les vulnérabilités plus rapidement. Nous appliquons cette approche à l’ensemble de nos produits, y compris Adobe Campaign.
 
-Cette publication explique comment nous évaluons et hiérarchisons les problèmes de sécurité, comment nous déployons des correctifs et ce que cela signifie pour vous.
+Cette page explique comment nous évaluons et hiérarchisons les problèmes de sécurité, comment nous déployons les correctifs et ce que cela signifie pour vous.
 
 ### Évaluation et hiérarchisation des problèmes de sécurité {#assess-security-issues}
 
 Tous les problèmes de sécurité ne comportent pas le même risque. Adobe qualifie chaque problème par gravité, et cette gravité définit le niveau de priorité.
 
-Une vulnérabilité de type « jour zéro » est une faille inconnue jusqu’à présent que les attaquant(e)s pouvaient exploiter avant qu’un correctif ne soit disponible. Il peut donc être nécessaire d’agir de toute urgence en dehors de notre calendrier de publication régulier. Nous remédions à la plupart des autres vulnérabilités par le biais de [bulletins de sécurité &#x200B;](https://www.adobe.com/trust/security/bulletins-and-advisories.html), généralement publiés les deuxième et quatrième mardis de chaque mois.
+Une vulnérabilité de type « jour zéro » est une faille inconnue jusqu’à présent que les attaquant(e)s pouvaient exploiter avant qu’un correctif ne soit disponible. Il peut donc être nécessaire d’agir de toute urgence en dehors de notre calendrier de publication régulier. Nous remédions à la plupart des autres vulnérabilités par le biais de [bulletins de sécurité ](https://www.adobe.com/trust/security/bulletins-and-advisories.html), généralement publiés les deuxième et quatrième mardis de chaque mois.
 
 Nos cibles d’intervention suivent cette évaluation de la gravité. Pour les problèmes les plus graves, nous fermons d’abord la fenêtre d’exposition et partageons les détails annexes dès que possible par la suite. C&#39;est pourquoi certains correctifs vous parviennent avec peu ou pas de préavis. Le moment choisi est déterminé par la gravité de la vulnérabilité. Chaque mise à jour, y compris les mises à jour urgentes, est soumise à une validation de qualité avant d’être envoyée.
 
@@ -91,8 +91,8 @@ Nous validons les mises à jour de sécurité avant leur publication et choisiss
 
 Selon la portée de la mise à jour, nous utilisons l’une des deux approches de déploiement suivantes :
 
-- Maintenance de la pile de sécurité : mises à jour ciblées qui ne modifient pas votre numéro de build ou n’introduisent pas les modifications prévues dans les fonctionnalités du produit. Les clients disposant de configurations standard n’ont généralement pas besoin d’effectuer d’action.
-- Mises à niveau de build basées sur la sécurité : mises à jour qui modifient votre numéro de build et suivent les processus de notification, de note de mise à jour et de déploiement Adobe standard.
+* **Maintenance de la pile de sécurité** : mises à jour ciblées qui ne modifient pas votre numéro de build ou n’introduisent pas les modifications prévues dans les fonctionnalités du produit. Les clients disposant de configurations standard n’ont généralement pas besoin d’effectuer d’action.
+* **Mises à niveau de build basées sur la sécurité** : mises à jour qui modifient votre numéro de build et suivent les processus de notification, de note de mise à jour et de déploiement Adobe standard.
 
 Pour les configurations standard prêtes à l’emploi, vos intégrations et vos campagnes en cours d’exécution continuent de fonctionner comme avant.
 
@@ -135,7 +135,7 @@ Les nouvelles versions et les modifications qu’elles apportent (correctifs de 
 
 Pour être informé des nouvelles versions de la solution Experience Cloud et de leur contenu, abonnez-vous à la communication [Mises à jour de produit prioritaires d’](https://www.adobe.com/fr/subscription/priority-product-update.html){target="_blank"}.
 
-Vous pouvez également consulter [Communauté Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?profile.language=fr&style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"} pour être informé des mises à jour des versions.
+Vous pouvez également consulter [Communauté Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"} pour être informé des mises à jour des versions.
 
 ### Pourquoi mon entreprise a-t-elle besoin d’une mise à niveau ? {#upgrades-1}
 
