@@ -73,7 +73,7 @@ Comme la mise à niveau du serveur se produit automatiquement, votre **console c
 * Vous risquez de ne plus pouvoir vous connecter à votre instance Campaign tant que la console n’est pas mise à jour.
 * Votre console cesse de bénéficier des correctifs et des mises à jour de sécurité fournis dans la version vers laquelle votre serveur a déjà été déplacé, même si le serveur lui-même est à jour.
 
-Pour éviter cela, mettez à niveau votre console cliente dès que vous êtes averti d’une nouvelle version. Découvrez comment [ mettre à niveau votre console cliente ](../start/connect.md#upgrade-ac-console).
+Pour éviter cela, mettez à niveau votre console cliente dès que vous êtes averti d’une nouvelle version. Découvrez comment [&#x200B; mettre à niveau votre console cliente &#x200B;](../start/connect.md#upgrade-ac-console).
 
 En tant que client, vous devez également vous assurer que vous utilisez les dernières versions prises en charge des systèmes répertoriés dans la [matrice de compatibilité](compatibility-matrix.md).
 
@@ -96,7 +96,7 @@ Vous accédez aux informations suivantes :
 
 ### Annonces de mises à jour de produits {#upgrades-0}
 
-Les nouvelles versions et leurs modifications sont répertoriées dans les [ Notes de mise à jour ](release-notes.md).
+Les nouvelles versions et leurs modifications sont répertoriées dans les [&#x200B; Notes de mise à jour &#x200B;](release-notes.md).
 
 Pour connaître les mises à jour des versions de produits, abonnez-vous aux [Mises à jour de produits prioritaires d’](https://www.adobe.com/fr/subscription/priority-product-update.html){target="_blank"} ou visitez la [Communauté Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}.
 
@@ -150,7 +150,7 @@ Cette section explique comment nous évaluons et hiérarchisons les problèmes d
 
 Tous les problèmes de sécurité ne comportent pas le même risque. Adobe qualifie chaque problème par gravité, et cette gravité définit le niveau de priorité.
 
-Une vulnérabilité de type « jour zéro » est une faille inconnue jusqu’à présent que les attaquant(e)s pouvaient exploiter avant qu’un correctif ne soit disponible. Il peut donc être nécessaire d’agir de toute urgence en dehors de notre calendrier de publication régulier. Nous remédions à la plupart des autres vulnérabilités par le biais de [bulletins de sécurité ](https://www.adobe.com/trust/security/bulletins-and-advisories.html), généralement publiés les deuxième et quatrième mardis de chaque mois.
+Une vulnérabilité de type « jour zéro » est une faille inconnue jusqu’à présent que les attaquant(e)s pouvaient exploiter avant qu’un correctif ne soit disponible. Il peut donc être nécessaire d’agir de toute urgence en dehors de notre calendrier de publication régulier. Nous remédions à la plupart des autres vulnérabilités par le biais de [bulletins de sécurité &#x200B;](https://www.adobe.com/trust/security/bulletins-and-advisories.html), généralement publiés les deuxième et quatrième mardis de chaque mois.
 
 Nos cibles d’intervention suivent cette évaluation de la gravité. Pour les problèmes les plus graves, nous fermons d’abord la fenêtre d’exposition et partageons les détails annexes dès que possible par la suite. C&#39;est pourquoi certains correctifs vous parviennent avec peu ou pas de préavis. Le moment choisi est déterminé par la gravité de la vulnérabilité. Chaque mise à jour, y compris les mises à jour urgentes, est soumise à une validation de qualité avant d’être envoyée.
 

@@ -81,7 +81,7 @@ Découvrez comment surveiller vos sous-domaines et leurs certificats.
 
 Le panneau de contrôle propose plusieurs fonctionnalités pour vous aider à surveiller vos instances et à garantir des performances optimales. [Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=fr){target="_blank"}
 
-Pour Campaign v8 Managed Cloud Services, Adobe surveille également les processus d’infrastructure, de plateforme et logiciels en votre nom. En savoir plus sur la [surveillance gérée par ](../start/monitor.md#adobe-cloud-monitoring).
+Pour Campaign v8 Managed Cloud Services, Adobe surveille également les processus d’infrastructure, de plateforme et logiciels en votre nom. En savoir plus sur la [surveillance gérée par &#x200B;](../start/monitor.md#adobe-cloud-monitoring).
 
 
 ## Paramètres des instances

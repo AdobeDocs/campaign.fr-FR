@@ -61,7 +61,7 @@ Voici les mises à niveau possibles :
 * **Mises à niveau mineures**, d’une version mineure à une autre, par exemple de la v8.5 à la v8.6. Ces mises à niveau apportent des améliorations, des mises à jour de compatibilité et de sécurité, ainsi que des correctifs.
 * **Mises à niveau de correctifs**, d’une version de correctif à une autre, par exemple de la v8.5.1 à la v8.5.2. Ces mises à niveau apportent des mises à jour et des correctifs de sécurité.
 
-Des informations détaillées sur chaque nouvelle version sont disponibles dans les [notes de mise à jour](release-notes.md). Les correctifs liés à la sécurité sont répertoriés dans les notes de mise à jour de chaque version. Voir [ Comment puis-je être informé de la publication d’une nouvelle version ?](#upgrades-0) ci-dessous.
+Des informations détaillées sur chaque nouvelle version sont disponibles dans les [notes de mise à jour](release-notes.md). Les correctifs liés à la sécurité sont répertoriés dans les notes de mise à jour de chaque version. Voir [&#x200B; Comment puis-je être informé de la publication d’une nouvelle version ?](#upgrades-0) ci-dessous.
 
 Pour garantir une configuration stable, Adobe recommande d’installer **la même version** sur tous vos serveurs Campaign. En outre, sauf mention contraire dans les [notes de mise à jour](release-notes.md), la console cliente doit utiliser **la même version** que l’instance de serveur. Découvrez comment mettre à niveau votre console cliente [sur cette page](../start/connect.md#upgrade-ac-console).
 
@@ -74,7 +74,7 @@ Comme la mise à niveau du serveur se produit automatiquement, votre **console c
 * Vous risquez de ne plus pouvoir vous connecter à votre instance Campaign tant que la console n’est pas mise à jour.
 * Votre console cesse de bénéficier des correctifs et des mises à jour de sécurité fournis dans la version vers laquelle votre serveur a déjà été déplacé, même si le serveur lui-même est à jour.
 
-Pour éviter cela, mettez à niveau votre console cliente dès que vous êtes averti d’une nouvelle version. Découvrez comment [ mettre à niveau votre console cliente ](../start/connect.md#upgrade-ac-console).
+Pour éviter cela, mettez à niveau votre console cliente dès que vous êtes averti d’une nouvelle version. Découvrez comment [&#x200B; mettre à niveau votre console cliente &#x200B;](../start/connect.md#upgrade-ac-console).
 
 En tant que client, vous devez également vous assurer que vous utilisez les dernières versions prises en charge des systèmes répertoriés dans la [matrice de compatibilité](compatibility-matrix.md).
 

@@ -43,15 +43,15 @@ Adobe Campaign vous offre une visibilité à tous les niveaux, depuis le moment 
 
 >[!NOTE]
 >
->En tant qu’administrateur Campaign, vous pouvez également utiliser le Panneau de Contrôle Campaign](#control-panel) pour surveiller vos instances, gérer les performances et configurer les paramètres avec des fonctionnalités en libre-service.[
+>En tant qu’administrateur Campaign, vous pouvez également utiliser le Panneau de Contrôle Campaign[&#128279;](#control-panel) pour surveiller vos instances, gérer les performances et configurer les paramètres avec des fonctionnalités en libre-service.
 
 >[!TIP]
 >
 >**Vous ne savez pas par où commencer ?**
 >
->- [ Vérification du spécialiste marketing sur une campagne →surveiller vos diffusions](#monitor-deliveries)
+>- [&#x200B; Vérification du spécialiste marketing sur une campagne →surveiller vos diffusions](#monitor-deliveries)
 >- Résolution des problèmes liés à un workflow → [surveiller les workflows](#monitor-workflows)
->- L’administrateur vérifiant l’intégrité de l’instance → [ Surveiller votre instance ](#monitor-instance)
+>- L’administrateur vérifiant l’intégrité de l’instance → [&#x200B; Surveiller votre instance &#x200B;](#monitor-instance)
 
 ## Surveiller vos diffusions {#monitor-deliveries}
 
@@ -115,7 +115,7 @@ Les workflows sont essentiels pour automatiser vos campagnes marketing et le tra
 
 ## Surveiller votre instance {#monitor-instance}
 
-La surveillance des instances permet d’assurer l’intégrité et les performances de votre environnement Adobe Campaign. Pour Campaign v8 Managed Cloud Services, Adobe surveille et gère également l’infrastructure pour votre compte. En savoir plus sur la [surveillance gérée par ](#adobe-cloud-monitoring).
+La surveillance des instances permet d’assurer l’intégrité et les performances de votre environnement Adobe Campaign. Pour Campaign v8 Managed Cloud Services, Adobe surveille et gère également l’infrastructure pour votre compte. En savoir plus sur la [surveillance gérée par &#x200B;](#adobe-cloud-monitoring).
 
 ### Journal d’audit {#audit-trail}
 
@@ -146,7 +146,7 @@ Campaign v8 fournit plusieurs fonctionnalités de surveillance pour suivre les p
 
 >[!NOTE]
 >
->Pour Campaign v8 Managed Cloud Services, l’infrastructure du serveur (CPU, mémoire, disque) est surveillée et gérée par Adobe. En savoir plus sur la [surveillance gérée par ](#adobe-cloud-monitoring).
+>Pour Campaign v8 Managed Cloud Services, l’infrastructure du serveur (CPU, mémoire, disque) est surveillée et gérée par Adobe. En savoir plus sur la [surveillance gérée par &#x200B;](#adobe-cloud-monitoring).
 
 ### Surveillance gérée par Adobe {#adobe-cloud-monitoring}
 
@@ -222,11 +222,11 @@ Le Panneau de Contrôle Campaign permet aux administrateurs de surveiller et de 
 | **Infrastructure** | Surveiller la capacité de stockage SFTP, suivre la configuration des sous-domaines, surveiller l’expiration des certificats SSL, gérer les listes autorisées d’adresses IP |
 | **Instance** | Afficher la version de build et les packages installés, surveiller la configuration du système, gérer les domaines externes autorisés |
 
-En savoir plus sur la surveillance des performances des Panneaux de Contrôle [](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/self-service) et [](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/about-performance-monitoring#_blank)
+En savoir plus sur la surveillance des performances des Panneaux de Contrôle [&#128279;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/self-service) et [&#128279;](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/about-performance-monitoring#_blank)
 
 >[!NOTE]
 >
->Pour Campaign v8 Managed Cloud Services, Adobe surveille et gère l’infrastructure du serveur, le système d’exploitation et la couche applicative. En savoir plus sur la [surveillance gérée par ](#adobe-cloud-monitoring). Vous pouvez utiliser les fonctionnalités de surveillance décrites sur cette page et dans ce Panneau de Contrôle pour surveiller les performances de votre instance, les workflows et les diffusions.
+>Pour Campaign v8 Managed Cloud Services, Adobe surveille et gère l’infrastructure du serveur, le système d’exploitation et la couche applicative. En savoir plus sur la [surveillance gérée par &#x200B;](#adobe-cloud-monitoring). Vous pouvez utiliser les fonctionnalités de surveillance décrites sur cette page et dans ce Panneau de Contrôle pour surveiller les performances de votre instance, les workflows et les diffusions.
 
 ## Tracking et reporting {#tracking-reporting}
 
@@ -250,7 +250,7 @@ Adobe Campaign fournit un ensemble complet de rapports pour analyser les perform
 - **URL et flux de clics** : liens les plus populaires dans vos diffusions
 - **Position des clics** : représentation visuelle de l’emplacement où les destinataires ont cliqué dans votre e-mail
 
-En savoir plus sur les [ rapports de diffusion ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports)
+En savoir plus sur les [&#x200B; rapports de diffusion &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports)
 
 ### Rapports globaux {#global-reports}
 
@@ -260,7 +260,7 @@ Accédez aux rapports globaux pour analyser les performances de toutes les campa
 - **Échecs et retours** : analyse des diffusions en échec
 - **Activités utilisateur** : s’ouvre, clique et se désabonne dans toutes les campagnes
 
-En savoir plus sur les [ rapports globaux ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports)
+En savoir plus sur les [&#x200B; rapports globaux &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports)
 
 ## Rubriques connexes {#related-topics}
 

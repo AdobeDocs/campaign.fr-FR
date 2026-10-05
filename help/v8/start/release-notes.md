@@ -57,7 +57,7 @@ Les API d’Adobe Analytics 1.4 étant [en fin de vie](https://developer.adobe.c
 
 +++ En savoir plus sur la mise à niveau d’Analytics 2.0
 
-Le [ connecteur Web Analytics ](../connect/ac-aa.md) envoie vos indicateurs de campagne et vos données de classification à Adobe Analytics, prend en charge le flux de remarketing et est utilisé pour configurer de nouvelles suites de rapports. La mise à niveau réimporte les workflows techniques intégrés qui alimentent le connecteur (**[!UICONTROL webAnalyticsSendMetrics]** et **[!UICONTROL webAnalyticsGetWebEvents]**) et met à jour les fichiers JavaScript Analytics intégrés. Par conséquent, si vous avez personnalisé l’un de ces workflows ou créé des workflows personnalisés qui référencent ces fichiers, réappliquez et adaptez cette personnalisation après la mise à niveau, car elle sera sinon remplacée ou interrompue. Il est recommandé d’éviter de modifier directement les workflows intégrés et de créer plutôt votre personnalisation dans un workflow personnalisé distinct, de sorte que les futures mises à niveau ne la remplacent pas. Une fois la mise à niveau terminée, validez les cas d’utilisation d’Adobe Analytics sur lesquels vous comptez (exportation de mesures, exportation de classifications et remarketing, le cas échéant) pour confirmer que les données continuent de circuler comme prévu.
+Le [&#x200B; connecteur Web Analytics &#x200B;](../connect/ac-aa.md) envoie vos indicateurs de campagne et vos données de classification à Adobe Analytics, prend en charge le flux de remarketing et est utilisé pour configurer de nouvelles suites de rapports. La mise à niveau réimporte les workflows techniques intégrés qui alimentent le connecteur (**[!UICONTROL webAnalyticsSendMetrics]** et **[!UICONTROL webAnalyticsGetWebEvents]**) et met à jour les fichiers JavaScript Analytics intégrés. Par conséquent, si vous avez personnalisé l’un de ces workflows ou créé des workflows personnalisés qui référencent ces fichiers, réappliquez et adaptez cette personnalisation après la mise à niveau, car elle sera sinon remplacée ou interrompue. Il est recommandé d’éviter de modifier directement les workflows intégrés et de créer plutôt votre personnalisation dans un workflow personnalisé distinct, de sorte que les futures mises à niveau ne la remplacent pas. Une fois la mise à niveau terminée, validez les cas d’utilisation d’Adobe Analytics sur lesquels vous comptez (exportation de mesures, exportation de classifications et remarketing, le cas échéant) pour confirmer que les données continuent de circuler comme prévu.
 
 +++
 
@@ -77,7 +77,7 @@ _3 mai 2026_
 
 >[!NOTE]
 >
-> Les correctifs répertoriés ci-dessous ont été progressivement déployés sur plusieurs versions 8.9.2 successives. Accédez au **[!UICONTROL menu Aide > À propos...]** [](upgrades.md#version) pour vérifier que vous disposez de la version 8.9.2 (11d1c68) la plus récente. Pour plus d’informations, contactez votre représentant ou représentante Adobe.
+> Les correctifs répertoriés ci-dessous ont été progressivement déployés sur plusieurs versions 8.9.2 successives. Accédez au **[!UICONTROL menu Aide > À propos...]** [&#128279;](upgrades.md#version) pour vérifier que vous disposez de la version 8.9.2 (11d1c68) la plus récente. Pour plus d’informations, contactez votre représentant ou représentante Adobe.
 
 * Correction d’un problème où les dates d’événement dans les événements transactionnels étaient incorrectement définies en raison d’un problème de conversion de type de données, ce qui provoquait des dates incorrectes dans les rapports dynamiques. (NEO-93923)
 * Correction d’un problème en raison duquel les notifications push silencieuses d’Android et d’iOS échouaient lors de la préparation de la diffusion lorsque les champs de titre et de corps étaient vides. (NEO-93739)
@@ -137,7 +137,7 @@ Cette version est fournie avec un ensemble de fonctionnalités disponibles dans 
 * [Activité de diffusion continue](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
 * [Gestion de la validation de campagne](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
-Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Campaign ](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}[
+Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Campaign [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}
 
 ### Autres changements {#changes-8-9-1}
 
