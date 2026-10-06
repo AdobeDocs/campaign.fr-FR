@@ -4,26 +4,35 @@ title: Configurer les règles de filtrage
 description: Découvrir comment utiliser les règles de filtrage
 feature: Typology Rules
 exl-id: 17507cdf-211f-4fa2-abb9-33d4f6dc47bb
-TQID: https://experienceleague.adobe.com/4dOJKJq9bGT93592ugAfrbQU27OBBpUp25QRpzDqtW0
+TQID: 'https://experienceleague.adobe.com/4dOJKJq9bGT93592ugAfrbQU27OBBpUp25QRpzDqtW0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
+subfeature_v2:
+  - id: e5fb657f-3c0a-4fcc-9980-3589a23ab4de
+    internal-label: Typology rules
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 550
-ht-degree: 86%
-
+source-wordcount: '550'
+ht-degree: 97%
 ---
-
 # Règles de filtrage{#filtering-rules}
 
 Utilisez les règles de filtrage pour sélectionner les messages à exclure en fonction des critères définis dans une requête. Ces règles sont liées à une dimension de ciblage.
 
-Les règles de filtrage peuvent être associées à d’autres types de règles (contrôle, pression, etc.) dans les typologies, ou regroupées dans une typologie dédiée **Filtrage**. [En savoir plus](#create-and-use-a-filtering-typology).
+Les règles de filtrage peuvent être liées à d’autres types de règles (contrôle, pression, etc.) dans des typologies, ou regroupées dans une typologie dédiée de type **Filtrage**. [En savoir plus](#create-and-use-a-filtering-typology).
 
 ## Création dʼune règle de filtrage {#create-a-filtering-rule}
 
@@ -84,7 +93,7 @@ Ces typologies spécifiques peuvent être associées à une diffusion lors du ch
 
 Sélectionnez ensuite la typologie de filtrage à appliquer à la diffusion. Pour ce faire, cliquez sur le bouton **[!UICONTROL Ajouter]** et sélectionnez les typologies à appliquer.
 
-Vous pouvez également lier des règles de filtrage directement à partir de cet onglet, sans qu&#39;elles ne soient regroupées dans une typologie. Pour ce faire, utilisez la section inférieure de la fenêtre.
+Vous pouvez également lier directement des règles de filtrage depuis cet onglet, sans qu’elles soient regroupées dans une typologie. Pour cela, utilisez la section inférieure de la fenêtre.
 
 ![](assets/campaign_opt_select_typo_filtering.png)
 
@@ -97,7 +106,7 @@ Vous pouvez également lier des règles de filtrage directement à partir de cet
 
 ## Règles d&#39;exclusion de délivrabilité par défaut {#default-deliverability-exclusion-rules}
 
-Deux règles de filtrage sont disponibles par défaut : **[!UICONTROL Exclusion des adresses]** ( **[!UICONTROL addressExclusions]** ) et **[!UICONTROL Exclusion des domaines]** ( **[!UICONTROL domainExclusions]** ). Pendant l’analyse de l’e-mail, ces règles comparent les adresses e-mail des destinataires aux adresses ou noms de domaine interdits contenus dans une liste de suppression globale chiffrée, gérée dans l’instance de délivrabilité. S&#39;il existe une correspondance, le message n&#39;est pas envoyé au destinataire concerné.
+Deux règles de filtrage sont disponibles par défaut : **[!UICONTROL Exclure des adresses]** (**[!UICONTROL addressExclusions]**) et **[!UICONTROL Exclure des domaines]** (**[!UICONTROL domainExclusions]**). Pendant l’analyse de l’e-mail, ces règles comparent les adresses e-mail des destinataires aux adresses ou noms de domaine interdits contenus dans une liste de suppression globale chiffrée, gérée dans l’instance de délivrabilité. S&#39;il existe une correspondance, le message n&#39;est pas envoyé au destinataire concerné.
 
 Ces règles d’exclusion permettent d’éviter toute mise en liste bloquée liée à une activité malveillante, notamment l’utilisation d’un spam trap (piège à spam). Si un spam trap est par exemple utilisé pour s’abonner par le biais de l’un de vos formulaires web, un email de confirmation lui est automatiquement envoyé. Votre adresse est alors automatiquement mise en liste bloquée.
 

@@ -5,20 +5,35 @@ feature: Data Model, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: f7047c6e-f045-4534-b117-311dd90dd92b
-TQID: https://experienceleague.adobe.com/TmmGBnpgDSPi2gvmfY5Fu9Hm3NiIaVIfUEMDBYJSIaw
+TQID: 'https://experienceleague.adobe.com/TmmGBnpgDSPi2gvmfY5Fu9Hm3NiIaVIfUEMDBYJSIaw'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: a1681cd8-6b2e-4955-9113-33b5f7a22b8c
+    internal-label: Data model architecture
+  - id: a14877cc-63b1-41d9-bf0b-5f97cadd0417
+    internal-label: Configuration guidelines
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 921
-ht-degree: 97%
-
+source-wordcount: '921'
+ht-degree: 100%
 ---
-
 # Gestion des liens {#links--relation-between-tables}
 
 Un lien décrit l&#39;association d’une table vers une autre table.
@@ -58,23 +73,23 @@ Les liens suivent les règles suivantes :
 
 * La définition d&#39;un lien est renseignée sur un **`<element>`** de type **link** avec les attributs suivants :
 
-   * **name** : nom du lien à partir de la table source
-   * **target** : nom du schéma cible
-   * **label** : libellé du lien
-   * **revLink** (optionnel) : nom du lien inverse à partir du schéma cible (déduit automatiquement par défaut)
-   * **integrity** (optionnel) : intégrité référentielle de l’occurrence de la table source par rapport à l’occurrence de la table cible.
-Les valeurs possibles sont les suivantes :
+  * **name** : nom du lien à partir de la table source
+  * **target** : nom du schéma cible
+  * **label** : libellé du lien
+  * **revLink** (optionnel) : nom du lien inverse à partir du schéma cible (déduit automatiquement par défaut)
+  * **integrity** (optionnel) : intégrité référentielle de l’occurrence de la table source par rapport à l’occurrence de la table cible.
+    Les valeurs possibles sont les suivantes :
 
-      * **define** : la suppression de l’occurrence source est possible si elle n’est plus référencée par une occurrence cible
-      * **normal** : la suppression de l’occurrence source initialise les clés du lien sur l’occurrence cible (mode par défaut), ce type d’intégrité initialise toutes les clés étrangères
-      * **own** : la suppression de l’occurrence source entraîne la suppression de l’occurrence cible
-      * **owncopy** : semblable à **own** (en cas de suppression) ou duplique les occurrences (en cas de duplication)
-      * **neutral** : aucun comportement spécifique
+    * **define** : la suppression de l’occurrence source est possible si elle n’est plus référencée par une occurrence cible
+    * **normal** : la suppression de l’occurrence source initialise les clés du lien sur l’occurrence cible (mode par défaut), ce type d’intégrité initialise toutes les clés étrangères
+    * **own** : la suppression de l’occurrence source entraîne la suppression de l’occurrence cible
+    * **owncopy** : semblable à **own** (en cas de suppression) ou duplique les occurrences (en cas de duplication)
+    * **neutral** : aucun comportement spécifique
 
-   * **revIntegrity** (optionnel) : intégrité sur le schéma cible (optionnel, « normal » par défaut)
-   * **revCardinality** (optionnel) : avec la valeur « Single », renseigne la cardinalité de type 1-1 (par défaut 1-N)
-   * **externalJoin** (optionnel) : force la jointure externe
-   * **revExternalJoin** (optionnel) : force la jointure externe sur le lien reverse
+  * **revIntegrity** (optionnel) : intégrité sur le schéma cible (optionnel, « normal » par défaut)
+  * **revCardinality** (optionnel) : avec la valeur « Single », renseigne la cardinalité de type 1-1 (par défaut 1-N)
+  * **externalJoin** (optionnel) : force la jointure externe
+  * **revExternalJoin** (optionnel) : force la jointure externe sur le lien reverse
 
 * Un lien fait référence à un ou plusieurs champs de la table source vers la table de destination. Il n’est pas nécessaire de renseigner les champs constituant l’élément `<join>`, car ils sont automatiquement déduits par défaut à l’aide de la clé interne du schéma cible.
 * Un index sur la clé étrangère du lien est automatiquement ajouté dans le schéma étendu.
@@ -227,4 +242,4 @@ Le schéma généré :
 </schema>
 ```
 
-La définition de la clé de nom « companyEmail » a été étendue avec la clé étrangère du lien « company ». Cette clé génère un index unique sur les deux champs.
+La définition de la clé de nom « companyEmail » a été étendue avec la clé étrangère du lien « company ». Cette clé génère un index unique sur les deux champs.

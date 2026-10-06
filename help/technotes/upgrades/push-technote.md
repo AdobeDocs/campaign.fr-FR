@@ -7,13 +7,28 @@ role: Admin
 level: Experienced
 hide: true
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: a4657621-810c-498b-8a27-7ced9c176dda
+    internal-label: Push notifications
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '1832'
 ht-degree: 96%
-
 ---
-
 # Modifications du canal de notification push {#push-upgrade}
 
 Vous pouvez utiliser Campaign pour envoyer des notifications push sur les appareils iOs et Android. Pour ce faire, Campaign repose sur des services d’abonnement à des applications mobiles spécifiques.
@@ -57,9 +72,9 @@ Pour vérifier si cela vous concerne, vous pouvez filtrer vos **services et abon
 
 * À propos du compte externe de routage Android :
 
-   * En tant qu’utilisateur ou utilisatrice On-Premise ou hybride de Campaign Classic v7, vérifiez que votre compte externe de routage Android est configuré avec `androidPushConnectorV2.js`. Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
+  * En tant qu’utilisateur ou utilisatrice On-Premise ou hybride de Campaign Classic v7, vérifiez que votre compte externe de routage Android est configuré avec `androidPushConnectorV2.js`. Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
 
-   * Pour les déploiements hybrides, hébergés et Managed Cloud Services, contactez également l’Assistance clientèle d’Adobe pour confirmer que le connecteur `androidPushConnectorV2.js (nms)` est bien sélectionné dans le compte externe de routage Android de votre serveur de mid-sourcing.
+  * Pour les déploiements hybrides, hébergés et Managed Cloud Services, contactez également l’Assistance clientèle d’Adobe pour confirmer que le connecteur `androidPushConnectorV2.js (nms)` est bien sélectionné dans le compte externe de routage Android de votre serveur de mid-sourcing.
 
 #### Procédure de transition {#fcm-transition-steps}
 
@@ -115,45 +130,45 @@ Vous pouvez également mettre à jour les diffusions existantes et les modèles 
 
   Pour corriger tous les modèles de diffusions et de diffusions créés avant la mise à niveau vers une version prenant en charge HTTP v1, procédez comme suit :
 
-   1. Exportez vos diffusions existantes et les modèles de diffusion créés dans un package afin de pouvoir les restaurer en cas de problème inattendu pendant la correction.
-   1. Exécutez la commande suivante en Posgresql :
+  1. Exportez vos diffusions existantes et les modèles de diffusion créés dans un package afin de pouvoir les restaurer en cas de problème inattendu pendant la correction.
+  1. Exécutez la commande suivante en Posgresql :
 
-      ```sql
-      pg_dump -Fp -f /sftp/<db_name>-nmsdelivery-before_rd_script.sql -t nmsdelivery -d <db_name>
-      ```
+     ```sql
+     pg_dump -Fp -f /sftp/<db_name>-nmsdelivery-before_rd_script.sql -t nmsdelivery -d <db_name>
+     ```
 
-   1. Par défaut, le script est en mode `dryrun`. Vous pouvez le lancer dans ce mode pour vérifier si une diffusion doit être corrigée.
+  1. Par défaut, le script est en mode `dryrun`. Vous pouvez le lancer dans ce mode pour vérifier si une diffusion doit être corrigée.
 
-      La commande
+     La commande
 
-      ```sql
-      nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js 
-      ```
+     ```sql
+     nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js 
+     ```
 
-      Sortie
+     Sortie
 
-      ```sql
-      ...
-      HH:MM:SS >   Processing delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
-      HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
-      HH:MM:SS >   Processing delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
-      HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
-      ...
-      HH:MM:SS >   Summary (XYZ processed deliverie(s) or delivery template(s)):
-      HH:MM:SS >>  - X had not patchable androidCheckParams formula!
-      HH:MM:SS >   - Y had androidCheckParams formula patched.
-      HH:MM:SS >   - Z ignored as alreading having androidCheckParams formula patched.
-      ```
+     ```sql
+     ...
+     HH:MM:SS >   Processing delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
+     HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
+     HH:MM:SS >   Processing delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
+     HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
+     ...
+     HH:MM:SS >   Summary (XYZ processed deliverie(s) or delivery template(s)):
+     HH:MM:SS >>  - X had not patchable androidCheckParams formula!
+     HH:MM:SS >   - Y had androidCheckParams formula patched.
+     HH:MM:SS >   - Z ignored as alreading having androidCheckParams formula patched.
+     ```
 
-      >[!NOTE]
-      >
-      >Les diffusions `not patchable` doivent être mises à jour manuellement. Leur ID se trouve dans le log.
+     >[!NOTE]
+     >
+     >Les diffusions `not patchable` doivent être mises à jour manuellement. Leur ID se trouve dans le log.
 
-   1. Exécutez le script en mode d’exécution de la manière suivante pour mettre à jour les diffusions :
+  1. Exécutez le script en mode d’exécution de la manière suivante pour mettre à jour les diffusions :
 
-      ```sql
-      nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js -arg:run
-      ```
+     ```sql
+     nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js -arg:run
+     ```
 
   +++
 
@@ -227,7 +242,7 @@ Pour déplacer vos applications mobiles iOS vers le mode d’authentification b
 1. Répertoriez toutes les applications mobiles utilisant le mode **Authentification basée sur les certificats** (.p12).
 1. Modifiez chacune de ces applications mobiles et accédez à l’onglet **Certificat/clé privée**.
 1. Dans la liste déroulante **Mode d’authentification**, sélectionnez le mode **Authentification basée sur les jetons** (.p8).
-1. Renseignez les paramètres de connexion APN **[!UICONTROL Identifiant de la clé]**, **[!UICONTROL Identifiant de l’équipe]** et **[!UICONTROL Identifiant de version]**, puis sélectionnez votre certificat p8 en cliquant sur **[!UICONTROL Renseigner la clé privée...]**
+1. Renseignez les paramètres de connexion APN **[!UICONTROL Identifiant de la clé]**, **[!UICONTROL Identifiant de l’équipe]** et **[!UICONTROL Identifiant de bundle]**, puis sélectionnez votre certificat p8 en cliquant sur **[!UICONTROL Renseigner la clé privée...]**
 
    ![](assets/token-based-certif.png)
 

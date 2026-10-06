@@ -5,22 +5,28 @@ description: Découvrez comment gérer les ressources marketing
 feature: Campaigns, Resource Management
 role: User
 exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
-TQID: https://experienceleague.adobe.com/YowEClSN-SSHkR3yXX57hKjwXY-6JUjakGlccGKS6V8
+TQID: 'https://experienceleague.adobe.com/YowEClSN-SSHkR3yXX57hKjwXY-6JUjakGlccGKS6V8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: 8d5d4b17-44c6-5e7b-891c-b4277613013d
+    internal-label: Resource Management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Implementation
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1175
-ht-degree: 91%
-
+source-wordcount: '1175'
+ht-degree: 100%
 ---
-
 # Gestion des ressources marketing{#managing-marketing-resources}
 
 Utilisez Adobe Campaign pour gérer et suivre les ressources marketing impliquées dans le cycle de vie de la campagne. Ces ressources marketing peuvent être un livre blanc, un fichier de données, un logo ou toute autre ressource liée à une campagne.
@@ -64,7 +70,7 @@ L’onglet **[!UICONTROL Audit]** vous permet d’ajouter un relecteur ou une re
 >
 >L’onglet **[!UICONTROL Historique]** contient le log de téléchargement et de mise à jour de la ressource. Le bouton **[!UICONTROL Détails]** permet de visualiser la version sélectionnée.
 >
->L’onglet **[!UICONTROL Audit]** permet de suivre les actions effectuées sur la ressource : validations, refus de validation, commentaires associés ou publications.
+>L’onglet **[!UICONTROL Audit]** permet de su les actions effectuées sur la ressource : validations, refus de validation, commentaires associés ou publications.
 
 ### Verrouiller/déverrouiller une ressource {#locking-unlocking-a-resource}
 
@@ -124,7 +130,7 @@ Accédez à l’onglet **[!UICONTROL Tracking]** pour consulter les validations.
 
 ### Publier une ressource {#publishing-a-resource}
 
-Une fois approuvée, la ressource marketing doit être publiée. Le processus de publication doit faire l&#39;objet d&#39;une mise en œuvre spécifique en fonction des exigences de l&#39;entreprise. Cela signifie que les ressources peuvent être publiées sur un extranet ou tout autre serveur, que des informations spécifiques peuvent être envoyées à un prestataire externe, etc.
+Une fois approuvée, la ressource marketing doit être publiée. Le processus de publication doit faire l’objet d’une mise en œuvre spécifique en fonction des exigences de l’entreprise. Ainsi, les ressources peuvent être publiées sur un extranet ou tout autre serveur, une information spécifique peut être transmise à un prestataire externe, etc.
 
 Pour publier une ressource, cliquez sur le bouton **[!UICONTROL Publier]** situé dans sa zone d&#39;édition dans le tableau de bord des ressources marketing.
 
@@ -132,7 +138,7 @@ Pour publier une ressource, cliquez sur le bouton **[!UICONTROL Publier]** situ�
 
 Vous pouvez également automatiser la publication d&#39;une ressource via un workflow.
 
-Publier une ressource signifie la rendre disponible pour une utilisation (par exemple, dans une autre tâche). La publication proprement dite varie selon la nature de votre ressource : pour un flyer, la publication peut consister à envoyer le fichier à un imprimeur, pour une agence web, le publier sur un site web, etc.
+Publier une ressource signifie la rendre disponible pour une utilisation (par exemple, dans une autre tâche). La publication proprement dite varie suivant la nature de votre ressource : pour un flyer, la publication peut consister à envoyer le fichier à un imprimeur, pour une page web, à la publier sur un site…
 
 Pour qu’Adobe Campaign puisse effectuer la publication, vous devez créer un workflow adéquat et le lier à la ressource. Pour ce faire, ouvrez la boîte de dialogue **[!UICONTROL Paramètres avancés…]** de la ressource, puis sélectionnez le workflow de votre choix dans le champ **[!UICONTROL Post-traitement]**.
 

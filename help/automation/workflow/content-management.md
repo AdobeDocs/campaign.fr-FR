@@ -6,27 +6,36 @@ feature: Workflows, Data Management
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 9b225f78-1959-4e4f-aa4e-ff8a63051154
-TQID: https://experienceleague.adobe.com/7owt-TM494cZq-Knz55qMpCAAtGhlpaKOlf2iXXeqo4
+TQID: 'https://experienceleague.adobe.com/7owt-TM494cZq-Knz55qMpCAAtGhlpaKOlf2iXXeqo4'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Data management
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 518
-ht-degree: 85%
-
+source-wordcount: '518'
+ht-degree: 100%
 ---
-
 # Gestion de contenu{#content-management}
 
-Une activité **Gestion de contenu** permet de créer et manipuler un contenu et de générer des fichiers sur la base de ce contenu. Ce contenu peut ensuite être diffusé par le biais d’une activité « Diffusion ».
+Une activité **Gestion de contenu** vous permet de créer et de manipuler un contenu ainsi que de générer les fichiers à partir de ce contenu. Ce contenu peut ensuite être diffusé à l’aide d’une activité « Diffusion ».
 
 >[!CAUTION]
 >
->La gestion de contenu est un module optionnel d&#39;Adobe Campaign. Veuillez vérifier votre contrat de licence.
+>La gestion de contenu est un module optionnel d’Adobe Campaign. Veuillez vérifier votre contrat de licence.
 
 >[!NOTE]
 >
@@ -44,7 +53,7 @@ Les propriétés de l&#39;activité se divisent en trois étapes :
 
    * **[!UICONTROL Spécifié par la transition]**
 
-     Cette option permet d&#39;utiliser le contenu spécifié dans la transition, c&#39;est-à-dire que l&#39;événement qui active la gestion de contenu doit contenir une variable **[!UICONTROL contentId]**. Cette variable peut avoir été définie par une gestion de contenu précédente ou par n’importe quel script.
+     Cette option vous permet d’utiliser le contenu spécifié dans la transition, c’est-à-dire que l’événement qui active la gestion de contenu doit contenir une variable **[!UICONTROL contentId]**. Cette variable peut avoir été définie par une gestion de contenu précédente ou par un quelconque script.
 
    * **[!UICONTROL Explicite]**
 

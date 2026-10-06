@@ -6,24 +6,35 @@ feature: Workflows, Targeting Activity
 role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 91c87f8f-bdd2-4ca1-94c2-ec9e7affc1a0
-TQID: https://experienceleague.adobe.com/J-3G1xfCNkBVkmO0WqjHtstOGq5LE8ymd2oa8f-VSSE
+TQID: 'https://experienceleague.adobe.com/J-3G1xfCNkBVkmO0WqjHtstOGq5LE8ymd2oa8f-VSSE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: ff84ab2f-a7c2-4ced-a3c8-5113f4348d99
+    internal-label: Targeting Activity
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Developer
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 508
-ht-degree: 67%
-
+source-wordcount: '508'
+ht-degree: 100%
 ---
-
 # Lecture de liste{#read-list}
 
 Les données traitées dans un workflow peuvent provenir de listes dont les données ont été préparées et structurées au préalable (lors d&#39;une segmentation antérieure ou d&#39;un chargement de fichier).
 
-L&#39;activité **[!UICONTROL Lecture de liste]** permet de copier les données d&#39;une liste dans la table de travail d&#39;un workflow, comme les données d&#39;une requête. Il est ensuite accessible dans l’ensemble du workflow.
+L’activité **[!UICONTROL Lecture de liste]** permet de copier les données d’une liste dans une table de travail du workflow, comme les données issues d’une requête. Elle est ensuite accessible dans l’ensemble du workflow.
 
 La liste à traiter peut être spécifiée explicitement, calculée par un script ou localisée dynamiquement, selon les options sélectionnées et les paramètres définis dans l&#39;activité **[!UICONTROL Lecture de liste]**.
 
@@ -49,7 +60,7 @@ L&#39;exemple suivant permet d&#39;utiliser une liste d&#39;adresses emails à e
 
 ![](assets/s_advuser_list_read_sample_1.png)
 
-Les profils contenus dans le dossier **Nouveaux contacts** doivent être ciblés par une diffusion. Les adresses e-mail à exclure de la cible sont stockées dans une liste externe. Dans notre exemple, seules les informations relatives aux adresses e-mail sont requises pour l’exclusion.
+Les profils contenus dans le dossier **Nouveaux contacts** doivent être ciblés par une action de diffusion. Les adresses e-mail à exclure de la cible sont stockées dans une liste externe. Dans notre exemple, seules les informations relatives aux adresses e-mail sont requises pour l’exclusion.
 
 1. La requête de sélection du dossier **NvxContact** doit permettre de charger l&#39;adresse email des profils sélectionnés, ceci afin de permettre le rapprochement avec les informations contenues dans la liste.
 
@@ -59,7 +70,7 @@ Les profils contenus dans le dossier **Nouveaux contacts** doivent être ciblés
 
    ![](assets/s_advuser_list_read_sample_2.png)
 
-1. Pour exclure les adresses e-mail de la liste externe de la cible principale, vous devez configurer l’activité d’exclusion et spécifier que le dossier **Nouveaux contacts** contient les données à conserver. Les données conjointes entre cet ensemble et tout autre ensemble entrant provenant de l&#39;activité d&#39;exclusion seront supprimées de la cible.
+1. Afin d’exclure de la cible principale les adresses e-mail de la liste externe, vous devez paramétrer l’activité d’exclusion et indiquer que le dossier **Nouveaux contacts** contient les données à conserver. Les données communes entre cet ensemble et tout autre ensemble en entrée de l’activité d’exclusion seront supprimées de la cible.
 
    ![](assets/s_advuser_list_read_sample_3.png)
 
@@ -73,4 +84,4 @@ Les profils contenus dans le dossier **Nouveaux contacts** doivent être ciblés
 
    ![](assets/s_advuser_list_read_sample_4.png)
 
-1. Sélectionnez ensuite le champ correspondant à l’adresse e-mail dans les deux ensembles (Source et Destination). Les colonnes seront alors liées et les destinataires dont l&#39;adresse e-mail figure dans la liste des adresses importées seront exclus de la cible.
+1. Sélectionnez ensuite le champ correspondant à l’adresse e-mail dans les deux ensembles (Source et Destination). Les colonnes seront alors associées et les personnes destinataires dont l’adresse e-mail figure dans la liste d’adresses importée seront exclues de la cible.

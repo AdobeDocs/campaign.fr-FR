@@ -5,23 +5,31 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 1526048d-9f02-4853-948f-8fb618670dbd
-TQID: https://experienceleague.adobe.com/A1EyDmVc2Y7okJFeFT7lsckZm8-IFDD-XFIqpb-Q7v8
+TQID: 'https://experienceleague.adobe.com/A1EyDmVc2Y7okJFeFT7lsckZm8-IFDD-XFIqpb-Q7v8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 13af5358-448e-5a4a-850b-0db592bb0f8f
+    internal-label: Personalization
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 754
-ht-degree: 96%
-
+source-wordcount: '754'
+ht-degree: 97%
 ---
-
 # Analyse des diffusions {#analyze-delivery}
 
 L’analyse est l’étape de préparation de la diffusion. Lancez l’analyse une fois que l’audience cible est définie et que le contenu du message est rédigé et testé. L’analyse effectue le calcul de la population cible et prépare le contenu de la diffusion. Une fois la diffusion terminée, elle est prête à être envoyée.
@@ -94,10 +102,10 @@ Cet onglet permet d&#39;accéder aux options suivantes :
 
   Les modes de validation possibles sont les suivants :
 
-   * **[!UICONTROL Manuel]** : à la fin de la phase d’analyse, l’utilisateur doit confirmer la diffusion pour commencer l’envoi. Pour cela, cliquez sur le bouton **[!UICONTROL Démarrer]** afin de lancer la diffusion.
-   * **[!UICONTROL Semi-automatique]** : les envois démarrent automatiquement si la phase d’analyse ne génère aucun message d’avertissement.
-   * **[!UICONTROL Automatique]** : les envois démarrent automatiquement à la fin de la phase d’analyse, quel qu’en soit le résultat.
+  * **[!UICONTROL Manuel]** : à la fin de la phase d’analyse, l’utilisateur doit confirmer la diffusion pour commencer l’envoi. Pour cela, cliquez sur le bouton **[!UICONTROL Démarrer]** afin de lancer la diffusion.
+  * **[!UICONTROL Semi-automatique]** : les envois démarrent automatiquement si la phase d’analyse ne génère aucun message d’avertissement.
+  * **[!UICONTROL Automatique]** : les envois démarrent automatiquement à la fin de la phase d’analyse, quel qu’en soit le résultat.
 
 * **[!UICONTROL Lancer le traitement dans un processus détaché]** : cette option permet de lancer l’analyse de la diffusion dans un processus à part. Par défaut, la fonction d’analyse utilise le processus du serveur applicatif d&#39;Adobe Campaign (nlserver web). En cochant cette option, vous garantissez que l’analyse sera menée à son terme même en cas de défaillance du serveur applicatif.
 * **[!UICONTROL Enregistrer les requêtes SQL pendant l’analyse dans le journal]** : cette option permet d’ajouter les logs des requêtes SQL dans le log de la diffusion lors de la phase d&#39;analyse.
-* **[!UICONTROL Ignorer les scripts de personnalisation lors de l’envoi]** : cette option permet de contourner l’interprétation des directives JavaScript présentes dans le contenu HTML. Ils s’affichent tels quels dans le contenu diffusé. Ces directives sont introduites par la balise `<%=`.
+* **[!UICONTROL Ignorer les scripts de personnalisation lors de l’envoi]** : cette option permet de contourner l’interprétation des directives JavaScript présentes dans le contenu HTML. Elles seront affichées telles quelles dans le contenu diffusé. Ces directives sont introduites par la balise `<%=`.

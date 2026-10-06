@@ -6,13 +6,25 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
-source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 50d1fd2e-0fc9-5627-bbc9-02dbc9d15e08
+    internal-label: Email
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 57%
-
+ht-degree: 66%
 ---
-
 # Paramètres de l’e-mail {#email-parameters}
 
 Cette section présente les options et paramètres disponibles dans les propriétés de diffusion spécifiques à la diffusion e-mail.
@@ -31,11 +43,11 @@ Sélectionnez le format du mail dans la section inférieure de la fenêtre :
 
 * **[!UICONTROL Tenir compte des préférences des destinataires]** (mode par défaut)
 
-  Le format du message est défini en fonction des données stockées dans le profil du destinataire et stockées par défaut dans le champ **[!UICONTROL format des e-mails]** (@emailFormat). Si une personne destinataire souhaite recevoir les messages dans un format particulier, ce format lui est envoyé. Si le champ n’est pas renseigné, un message multipart-alternative est envoyé (voir ci-dessous).
+  Le format du message est défini en fonction des informations enregistrées dans le profil de la personne destinataire et est stocké par défaut dans le champ **[!UICONTROL Format des e-mails]** (@emailFormat). Si une personne destinataire souhaite recevoir les messages dans un format particulier, ce format lui est envoyé. Si le champ n’est pas renseigné, le message est envoyé au format multipart-alternative (voir ci-dessous).
 
 * **[!UICONTROL Laisser le mailer des destinataires choisir le format le plus adapté]**
 
-  Le message contient les deux formats : texte et HTML. Le format affiché lors de la réception dépend de la configuration du logiciel de messagerie de la personne destinataire (multipart-alternative).
+  Le message contient les deux formats : texte et HTML. Le format affiché lors de la réception dépend de la configuration du logiciel de messagerie de la personne destinataire (multipart-alternative).
 
   >[!IMPORTANT]
   >
@@ -43,7 +55,7 @@ Sélectionnez le format du mail dans la section inférieure de la fenêtre :
 
 * **[!UICONTROL Envoyer tous les messages au format texte]**
 
-  Le message est envoyé au format texte. Le format HTML n’est pas envoyé, mais utilisé pour la page miroir uniquement lorsque le destinataire clique sur le message.
+  Le message est envoyé au format texte. Le format HTML ne sera pas envoyé, mais uniquement utilisé pour la page miroir, lorsque la personne destinataire clique sur le message.
 
 <!--
 >[!NOTE]
@@ -119,7 +131,7 @@ Selon le client de messagerie et la méthode qu’il utilise pour effectuer son 
 
 >[!NOTE]
 >
->Vous pouvez également définir manuellement les méthodes [List-Unsubscribe en un clic](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} et [« mailto » List-Unsubscribe](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}. Les étapes détaillées sont décrites dans le [&#x200B; Guide des bonnes pratiques en matière de délivrabilité d&#39;Experience Cloud](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"}.
+>Vous pouvez également définir manuellement les méthodes [List-Unsubscribe en un clic](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} et [« mailto » List-Unsubscribe](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}. Les étapes détaillées sont décrites dans le [&#x200B; Guide des bonnes pratiques en matière de délivrabilité d’Experience Cloud](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"}.
 
 
 ## Ajouter des en-têtes SMTP {#adding-smtp-headers}
@@ -141,6 +153,6 @@ Les valeurs sont automatiquement encodées, si nécessaire.
 
 ## Générer une page miroir {#generating-mirror-page}
 
-La page miroir est une page HTML accessible en ligne via un navigateur web. Son contenu est identique à celui de l’e-mail. Cela peut être utile si vos personnes destinataires rencontrent des problèmes de rendu ou accèdent à des images endommagées quand ils affichent votre e-mail dans leur boîte de réception.
+La page miroir est une page HTML accessible en ligne via un navigateur web et dont le contenu est identique à celui de l’e-mail. Cela peut être utile si vos personnes destinataires rencontrent des problèmes de rendu ou accèdent à des images endommagées quand ils affichent votre e-mail dans leur boîte de réception.
 
 Découvrez comment insérer un lien vers la page miroir dans [cette section](mirror-page.md).

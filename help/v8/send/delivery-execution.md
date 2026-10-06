@@ -5,26 +5,38 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 084607f6-47d8-40c0-89ba-bfbb88fc2e53
-TQID: https://experienceleague.adobe.com/lF4AHDlqHrKUs5Vp5ycT8aCX-EzMzJG5mdULfZIl0ZY
+TQID: 'https://experienceleague.adobe.com/lF4AHDlqHrKUs5Vp5ycT8aCX-EzMzJG5mdULfZIl0ZY'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: d3b34fea-a110-482f-adb2-aae8d686bac8
+    internal-label: Transactional messaging
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 863
-ht-degree: 77%
-
+source-wordcount: '863'
+ht-degree: 90%
 ---
-
 # Envoyer et surveiller les messages transactionnels {#delivery-execution}
 
 ## Envoyer des messages{#send-transactional-msg}
@@ -65,7 +77,7 @@ Ces rapports Message Center sont accessibles à partir de l&#39;onglet **[!UICO
 
 Le rapport **[!UICONTROL Historique des événements de Message Center]** présente une vue d’ensemble de l’activité du module Message Center, c’est-à-dire le nombre d’événements traités et envoyés sous forme de messages transactionnels.
 
-Lorsque le rapport est ouvert, les informations affichées par défaut correspondent au taux de messages transactionnels envoyés avec succès. Pour afficher d’autres niveaux, vous pouvez ouvrir les différents nœuds et placer votre curseur sur le niveau approprié pour le sélectionner.
+Lors de l’ouverture du rapport, les informations affichées par défaut correspondent au taux de messages transactionnels dont l’envoi a réussi. Pour visualiser davantage de niveaux, vous pouvez ouvrir les différents nœuds et positionner le pointeur de la souris pour mettre en surbrillance le niveau voulu.
 
 Pour chaque période de temps, vous pouvez visualiser les données propres à chacun des types d&#39;événements. La colonne **[!UICONTROL Evénements]** correspond au nombre d&#39;événements reçus par l&#39;instance de pilotage. Le calcul du nombre d&#39;événements transformés en message transactionnel personnalisé se trouve dans la colonne **[!UICONTROL Envoyés]**.
 
@@ -81,7 +93,7 @@ Vous pouvez choisir d’afficher les statistiques globales ou relatives à une i
 Les indicateurs affichés dans la section **[!UICONTROL Indicateurs sur la période]** sont calculés sur la période sélectionnée :
 
 * **[!UICONTROL Temps moyen dans la file]** : temps moyen passé dans Message Center pour les événements traités avec succès. Seul le temps de traitement est pris en compte.
-* **[!UICONTROL Temps moyen d’envoi des messages (s)]** : temps moyen passé dans Message Center pour les événements traités avec succès. Seule l’heure d’envoi par le MTA est prise en compte.
+* **[!UICONTROL Temps moyen d’envoi des messages (s)]** : temps moyen passé dans Message Center pour les événements traités avec succès. Seul le temps de diffusion par le MTA est pris en compte.
 * **[!UICONTROL Temps moyen de traitement (s)]** : temps moyen passé dans Message Center pour les événements traités avec succès. Le calcul prend en compte le temps de traitement et le temps d’envoi par le MTA.
 * **[!UICONTROL Nombre maximum d’événements en file d’attente]** : nombre maximum d’événements présents dans la file d’attente Message Center à un moment donné.
 * **[!UICONTROL Nombre minimum d’événements en file d’attente]** : nombre minimum d’événements présents dans la file d’attente Message Center à un même moment.
@@ -89,7 +101,7 @@ Les indicateurs affichés dans la section **[!UICONTROL Indicateurs sur la péri
 
 >[!NOTE]
 >
->Les seuils d’avertissement (orange) et d’alerte (rouge) des indicateurs sont paramétrables dans l’assistant de déploiement d’Adobe Campaign. Voir [Seuils de suivi](#thresholds).
+>Les seuils d’avertissement (orange) et d’alerte (rouge) des indicateurs sont paramétrables dans l’assistant de déploiement d’Adobe Campaign. Voir [S](#thresholds).
 
 
 
@@ -108,11 +120,11 @@ Les indicateurs affichés dans la section **[!UICONTROL Indicateurs sur la péri
 * **[!UICONTROL Sortant (débit msg/h)]** : moyenne horaire du nombre d’événements sortant avec succès de Message Center (envoyés par une diffusion).
 * **[!UICONTROL Sortant (volume msg)]** : nombre d’événements sortant avec succès de Message Center (envoyés par une diffusion).
 * **[!UICONTROL Temps moyen d’envoi (secondes)]** : temps moyen passé dans Message Center pour les événements traités avec succès. Le calcul prend en compte le temps de traitement et le temps d’envoi par le MTA.
-* **[!UICONTROL Taux d’erreur]** : nombre d’événements en erreur par rapport au nombre d’événements entrés dans la file d’attente Message Center. Les erreurs suivantes sont prises en compte : erreur de routage, événement expiré (événement resté trop longtemps dans la file d&#39;attente), erreur de diffusion, ignoré par la diffusion (quarantaine, etc.).
+* **[!UICONTROL Taux d’erreur]** : nombre d’événements en erreur par rapport au nombre d’événements entrés dans la file d’attente Message Center. Les erreurs suivantes sont prises en compte : erreur de routage, événement expiré (événement resté trop longtemps dans la file d’attente), erreur de diffusion, ignoré par la diffusion (quarantaine, etc.).
 
 >[!NOTE]
 >
->Les seuils d’avertissement (orange) et d’alerte (rouge) des indicateurs sont paramétrables dans l’assistant de déploiement d’Adobe Campaign. Voir [Seuils de suivi](#thresholds).
+>Les seuils d’avertissement (orange) et d’alerte (rouge) des indicateurs sont paramétrables dans l’assistant de déploiement d’Adobe Campaign. Voir [S](#thresholds).
 
 ### Surveillance des seuils {#thresholds}
 

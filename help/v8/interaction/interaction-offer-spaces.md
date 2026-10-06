@@ -5,21 +5,30 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
-TQID: https://experienceleague.adobe.com/TKvl7xT7fg-r5vU8jW8sg0L-Xy-mC-JEvC2WeM4hmz4
+TQID: 'https://experienceleague.adobe.com/TKvl7xT7fg-r5vU8jW8sg0L-Xy-mC-JEvC2WeM4hmz4'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 65702805-0026-5ca1-843a-144fa79f0883
+    internal-label: Interaction
+  - id: ea08db70-4682-59a2-9408-9aedd9548e07
+    internal-label: Offers
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Beginner
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 900
-ht-degree: 87%
-
+source-wordcount: '903'
+ht-degree: 92%
 ---
-
 # Création d’emplacements d’offres{#creating-offer-spaces}
 
 Le contenu du catalogue d&#39;offres est paramétré dans des emplacements. Par défaut, le contenu peut contenir les champs suivants : **[!UICONTROL Titre]**, **[!UICONTROL URL de destination]**, **[!UICONTROL URL d&#39;image]**, **[!UICONTROL Contenu HTML]** et **[!UICONTROL Contenu texte]**. La séquence des champs est paramétrée dans l&#39;emplacement.
@@ -60,7 +69,7 @@ Pour créer un nouvel emplacement, procédez comme suit :
 
 1. Cliquez sur **[!UICONTROL Editer les fonctions]** pour créer une fonction de rendu.
 
-   Ces fonctions sont utilisées pour générer des représentations d&#39;offres sur un emplacement. Il existe plusieurs formats possibles : HTML ou texte.
+   Ces fonctions sont utilisées pour générer des représentations d’offres sur un emplacement. Il existe plusieurs formats possibles : HTML ou texte.
 
    **Remarque** - Le format XML est limité aux interactions entrantes qui ne sont pas disponibles dans cette version du produit. [En savoir plus](../start/v7-to-v8.md#gs-unavailable-features)
 
@@ -123,7 +132,7 @@ Pour ce faire, procédez comme suit :
 
 **Interaction entrante**
 
-L&#39;onglet **[!UICONTROL Stockage]** permet de définir les statuts des propositions d&#39;offre **proposées** et **acceptées** uniquement. Dans le cas d&#39;une interaction entrante, le statut des propositions d&#39;offre doit être spécifié directement dans l&#39;URL d&#39;appel du moteur d&#39;offres, plutôt que via l&#39;interface. Vous serez ainsi en mesure de spécifier l&#39;état à appliquer dans d&#39;autres cas, par exemple si une proposition d&#39;offre est rejetée.
+L’onglet **[!UICONTROL Stockage]** vous permet de définir les statuts des propositions d’offre **proposées** et **acceptées** uniquement. Dans le cas d&#39;une interaction entrante, le statut des propositions d&#39;offre doit être spécifié directement dans l&#39;URL d&#39;appel du moteur d&#39;offres, plutôt que via l&#39;interface. Vous serez ainsi en mesure de spécifier le statut à appliquer dans d’autres cas, par exemple si une proposition d’offre est rejetée.
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>

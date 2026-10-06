@@ -6,22 +6,29 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 711256e2-ab77-404a-b052-6793a85da193
-TQID: https://experienceleague.adobe.com/r-UxRa9G2ekC1yUYJnJB9WBRJckcdqE4JfHaf5Ia9vE
+TQID: 'https://experienceleague.adobe.com/r-UxRa9G2ekC1yUYJnJB9WBRJckcdqE4JfHaf5Ia9vE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 13af5358-448e-5a4a-850b-0db592bb0f8f
+    internal-label: Personalization
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 653
-ht-degree: 84%
-
+source-wordcount: '653'
+ht-degree: 95%
 ---
-
 # Sources de données de personnalisation{#personalization-data}
 
 Les données de personnalisation peuvent être récupérées à partir de différents types de sources : source de données de la base de données Campaign, de fichier externe ou de base de données externe.
@@ -72,9 +79,9 @@ Pour utiliser cette option, procédez comme suit :
 
 Une fois l&#39;analyse terminée, les données de personnalisation sont stockées dans une table temporaire via un workflow technique temporaire créé à la volée lors de l&#39;analyse.
 
-Ce workflow n’est pas visible dans l’interface d’Adobe Campaign. Il s’agit uniquement d’un moyen technique permettant de stocker et de gérer rapidement des données de personnalisation.
+Ce workflow n’est pas visible dans l’interface d’Adobe Campaign. Il s’agit uniquement d’un moyen technique permettant de stocker et de traiter rapidement les données de personnalisation.
 
-Une fois l’analyse terminée, accédez au workflow **[!UICONTROL Propriétés]** et sélectionnez l’onglet **[!UICONTROL Variables]**. Vous pouvez y voir le nom de la table temporaire que vous pouvez utiliser pour effectuer un appel SQL afin d’afficher les identifiants qu’elle contient.
+Une fois l’analyse terminée, accédez aux **[!UICONTROL Propriétés]** du workflow et sélectionnez l’onglet **[!UICONTROL Variables]**. Celui-ci contient le nom de la table temporaire que vous pouvez utiliser pour effectuer un appel SQL afin d’afficher les identifiants qu’elle contient.
 
 ## Données de personnalisation dans un workflow
 

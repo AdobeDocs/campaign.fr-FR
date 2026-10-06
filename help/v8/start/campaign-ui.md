@@ -6,25 +6,36 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-TQID: https://experienceleague.adobe.com/KNLqBQfgg8rT8syInLXJWAo5477JlxSXzG4xT6LFjBo
+TQID: 'https://experienceleague.adobe.com/KNLqBQfgg8rT8syInLXJWAo5477JlxSXzG4xT6LFjBo'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e8d937ec-9046-41b5-834b-d22a624e0d37
+    internal-label: Campaign overview
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Implementation
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1241
+source-wordcount: '1241'
 ht-degree: 70%
-
 ---
-
 # Découvrir l’interface utilisateur {#ui-client-console}
 
 Vous pouvez accéder à Adobe Campaign à partir de sa console cliente ou de son interface utilisateur web. Vous pouvez également utiliser des API pour gérer les données et effectuer des tâches dans votre plateforme Campaign.
@@ -64,7 +75,7 @@ Une fois connecté à Campaign, vous accédez à la page d&#39;accueil d&#39;Ado
 
 >[!NOTE]
 >
->Si la carte d’interface utilisateur web n’est pas affichée, assurez-vous que les champs suivants ne restent pas vides dans votre compte externe A[Adobe Experience Cloud &#x200B;](../config/external-accounts.md) : **Serveur**, **Client**, **Serveur de rappel** et **Marque d’association**.
+>[&#x200B; Si la carte d’interface utilisateur web n’est pas affichée, assurez-vous que les champs suivants ne restent pas vides dans votre compte externe Adobe Experience Cloud &#x200B;](../config/external-accounts.md) : **Serveur**, **Client**, **Serveur de rappel** et **Marque d’association**.
 
 Vous pouvez également accéder au Panneau de Contrôle de Campaign[&#128279;](../config/self-service.md) à partir de la page d&#39;accueil.
 
@@ -133,7 +144,7 @@ Cet espace de travail vous permet d&#39;accéder à l&#39;arborescence de l&#39;
 
 ## Interface utilisateur web de Campaign {#ac-web-ui}
 
-En tant qu’utilisateur ou utilisatrice de Campaign v8, à partir de la version 8.6.1, vous avez accès à un environnement web, disponible via l’interface utilisateur centrale de Adobe Experience Cloud. Experience Cloud est la famille intégrée d’applications, de produits et de services de marketing numérique d’Adobe. Grâce à son interface intuitive, vous pouvez accéder rapidement à vos applications cloud, fonctionnalités de produit et services.
+En tant qu’utilisateur ou utilisatrice de Campaign v8, à partir de la version 8.6.1, vous avez accès à un environnement web, disponible via l’interface utilisateur centrale d’Adobe Experience Cloud. Experience Cloud est la famille intégrée d’applications, de produits et de services de marketing numérique d’Adobe. Grâce à son interface intuitive, vous pouvez accéder rapidement à vos applications cloud, fonctionnalités de produit et services.
 
 ![Page d’accueil de l’interface utilisateur web d’Adobe Campaign](assets/ac-web-home.png)
 
@@ -153,11 +164,11 @@ Les langues prises en charge dépendent de l’interface utilisateur.
 
 * Pour l’interface de la console cliente Campaign, les langues prises en charge sont les suivantes :
 
-   * Anglais (Royaume-Uni)
-   * Anglais (États-Unis)
-   * Français
-   * Allemand
-   * Japonais
+  * Anglais (Royaume-Uni)
+  * Anglais (États-Unis)
+  * Français
+  * Allemand
+  * Japonais
 
 
   >[!CAUTION]

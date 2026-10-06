@@ -3,13 +3,16 @@ title: Mise à niveau de l’infrastructure d’envoi d’e-mails dans Campaign
 description: Mise à niveau de l’infrastructure d’envoi d’e-mails dans Campaign
 hide: true
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 100%
-
 ---
-
 # Mise à niveau de l’infrastructure d’envoi d’e-mails dans Campaign {#migrate-infra-to-aws}
 
 ## Quels éléments seront mis à niveau ?{#aws-changes}

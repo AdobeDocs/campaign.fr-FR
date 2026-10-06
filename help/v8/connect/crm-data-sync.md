@@ -5,22 +5,34 @@ feature: Salesforce Integration, Microsoft CRM Integration
 role: Admin
 level: Beginner
 exl-id: 2a7ae88e-d47f-416b-84cd-986ab9be6aef
-TQID: https://experienceleague.adobe.com/VhceB0hYF1J8cXouqmY3wgqYLkmVoBRFBVaIwa1VNr8
+TQID: 'https://experienceleague.adobe.com/VhceB0hYF1J8cXouqmY3wgqYLkmVoBRFBVaIwa1VNr8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
+subfeature_v2:
+  - id: f09afca2-2160-4624-bedb-639c4f4c236f
+    internal-label: Salesforce integration
+  - id: dd99420f-367d-4a14-bbc4-5140615992c2
+    internal-label: Microsoft CRM integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1410
-ht-degree: 88%
-
+source-wordcount: '1410'
+ht-degree: 100%
 ---
-
 # Synchronisation des données entre Campaign et votre CRM {#data-synchronization}
 
 La synchronisation des données entre Adobe Campaign et votre CRM est gérée par l’activité de workflow **Connecteur CRM**.
@@ -66,7 +78,7 @@ Pour importer des données depuis le CRM dans Adobe Campaign, vous devez réali
 
    >[!CAUTION]
    >
-   >L&#39;identifiant de l&#39;enregistrement dans le CRM est obligatoire pour relier les objets présents dans CRM et dans Adobe Campaign. Il est ajouté automatiquement lorsque la boîte est approuvée.
+   >L’identifiant de l’enregistrement dans le CRM est obligatoire pour relier les objets dans le CRM et dans Adobe Campaign. Il est ajouté automatiquement lorsque la zone est approuvée.
    >
    >La date de la dernière modification côté CRM est également requise pour permettre l&#39;import incrémental des données.
 
@@ -94,7 +106,7 @@ La date de la dernière synchronisation est stockée dans l&#39;option indiquée
 
 >[!NOTE]
 >
->Cette note s’applique uniquement à l’activité générique **[!UICONTROL Connecteur CRM]**. Pour les autres activités CRM, le processus est automatique.
+>Cette note s’applique uniquement à l’activité **[!UICONTROL Connecteur CRM]** générique. Pour les autres activités CRM, le processus est automatique.
 >
 >Cette option doit être créée et renseignée manuellement sous **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Options]**. Il doit s’agir d’une option de texte et sa valeur doit correspondre au format suivant : **`yyyy/MM/dd hh:mm:ss`**.
 > 
@@ -107,7 +119,7 @@ Par défaut, les champs suivants sont utilisés (dans l&#39;ordre indiqué) :
 * Pour Microsoft Dynamics : **modifiedon**,
 * Pour Salesforce.com : **LastModifiedDate**, **SystemModstamp**.
 
-L&#39;activation de l&#39;option **[!UICONTROL Index automatique]** génère trois variables, qui pourront être exploitées dans le workflow de synchronisation, via une activité de type **[!UICONTROL Code JavaScript]**. Ces activités sont les suivantes :
+L’activation de l’option **[!UICONTROL Index automatique]** génère trois variables, qui pourront être utilisées dans le workflow de synchronisation, via une activité de type **[!UICONTROL Code JavaScript]**. Ces activités sont les suivantes :
 
 * **vars.crmOptionName** : nom de l&#39;option contenant la date du dernier import.
 * **vars.crmStartImport** : date de début (incluse) du dernier import de données.
@@ -123,10 +135,10 @@ Afin d&#39;assurer un bon fonctionnement avec les différents CRM, les filtres d
 
 * Chaque niveau de filtrage ne peut utiliser qu&#39;un seul type d&#39;opérateur.
 * L&#39;opérateur AND NOT n&#39;est pas supporté.
-* Les comparaisons peuvent uniquement concerner des valeurs nulles (type &#39;is empty&#39;/&#39;is not empty&#39;) ou des nombres. Cela signifie que la valeur (colonne de droite) est évaluée et que le résultat de cette évaluation doit être un nombre. Les comparaisons de type JOIN ne sont donc pas prises en charge.
+* Les comparaisons peuvent uniquement concerner des valeurs nulles (type « is empty »/« is not empty ») ou des nombres. Cela signifie que la valeur (colonne de droite) est évaluée et que le résultat de cette évaluation doit être un nombre. Les comparaisons de type JOIN ne sont donc pas prises en charge.
 * Les données de la colonne Valeur sont évaluées en JavaScript.
 * Les comparaisons de type JOIN ne sont pas supportées.
-* L’expression dans la colonne de gauche doit être un champ. Il ne peut pas s’agir d’une combinaison de plusieurs expressions, d’un nombre, etc.
+* L’expression dans la colonne de gauche doit être un champ. Elle ne peut pas être une combinaison de plusieurs expressions, un nombre, etc.
 
 ### Ordre de tri {#order-by}
 
@@ -191,7 +203,7 @@ Pour cela, sélectionnez la conversion à appliquer dans la colonne correspondan
 
 ![](assets/crm-task-import.png)
 
-Le mode **[!UICONTROL Par défaut]** applique la conversion automatique des données, qui correspond dans la plupart des cas à un copier/coller des données. Toutefois, la gestion des fuseaux horaires est appliquée.
+Le mode **[!UICONTROL par défaut]** applique une conversion automatique des données, qui correspond dans la plupart des cas à un copier/coller des données. Toutefois, la gestion des fuseaux horaires est appliquée.
 
 Les autres conversions possibles sont les suivantes :
 

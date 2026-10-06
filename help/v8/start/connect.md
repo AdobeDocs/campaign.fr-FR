@@ -5,22 +5,29 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-TQID: https://experienceleague.adobe.com/aQ7qHePaWM8LnbvZmkebVyUUw8Vbjmgo2pj4MKZd1VE
+TQID: 'https://experienceleague.adobe.com/aQ7qHePaWM8LnbvZmkebVyUUw8Vbjmgo2pj4MKZd1VE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 5ea984c6-e1ec-59c0-bf35-0d3c05f585e1
+    internal-label: Client Console
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: ffeb9430b382b598af412555b1b0a6ff42bc68d0
+    internal-label: Reporting
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1133
-ht-degree: 89%
-
+source-wordcount: '1133'
+ht-degree: 98%
 ---
-
 # Se connecter à Adobe Campaign v8{#gs-ac-connect}
 
 Pour commencer à utiliser Campaign, vous devez installer et configurer la console cliente.
@@ -64,7 +71,7 @@ Une fois la console cliente installée, procédez comme suit pour créer la conn
 
 1. Cliquez sur le menu **[!UICONTROL Ajouter > Connexion]** et saisissez le libellé et l&#39;URL du serveur applicatif Adobe Campaign.
 
-1. Définissez une connexion vers votre serveur applicatif Adobe Campaign via une URL. Utilisez un DNS ou un alias de la machine, ou votre adresse IP.
+1. Définissez une connexion vers votre serveur applicatif Adobe Campaign via une URL. Utilisez soit un DNS ou un alias de la machine, soit votre adresse IP.
 
    Par exemple, vous pouvez utiliser une URL de type `https://<machine>.<domain>.com`.
 
@@ -76,7 +83,7 @@ Vous pouvez ajouter autant de connexions que nécessaire pour vous connecter, pa
 
 >[!NOTE]
 >
->Le bouton **[!UICONTROL Ajouter]** permet de créer **[!UICONTROL dossiers]** pour organiser l&#39;ensemble des connexions. Il vous suffit de glisser-déposer chaque connexion dans un dossier.
+>Le bouton **[!UICONTROL Ajouter]** permet de créer des **[!UICONTROL dossiers]** dans lesquels vous pourrez classer toutes vos connexions. Il vous suffit de glisser-déposer chaque connexion dans un dossier.
 
 ## Connexion à Adobe Campaign {#logon-to-ac}
 
@@ -102,7 +109,7 @@ Vous pouvez ensuite vous connecter à Campaign à l’aide de votre Adobe ID.
 
 ## Résolution des problèmes de connexion à Adobe ID {#troubleshoot-ims-login}
 
-Si vous rencontrez des problèmes lors de la connexion à la **[!UICONTROL console cliente]** avec votre Adobe ID, essayez d’effacer le cache WebView2 local. Dans la plupart des cas, cela résout le problème. Suivez les étapes ci-dessous :
+Si vous rencontrez des problèmes lors de la connexion à la **[!UICONTROL console cliente]** avec votre Adobe ID, essayez d’effacer le cache WebView2 local. Dans la plupart des cas, cela résout le problème. Suivez les étapes ci-dessous :
 
 1. Fermez la **[!UICONTROL console cliente]** et arrêtez tout processus `nlclient` en cours d’exécution.
 
@@ -111,7 +118,7 @@ Si vous rencontrez des problèmes lors de la connexion à la **[!UICONTROL conso
    * `C:\ProgramData\Neolane\NL_5\nlclient\`
    * `C:\Users\<username>\AppData\Roaming\Neolane\NL_5\nlclient\`
 
-1. Redémarrez la **[!UICONTROL console cliente]** et connectez-vous avec votre Adobe ID. Les dossiers de cache seront automatiquement recréés lors du prochain lancement.
+1. Redémarrez la **[!UICONTROL console cliente]** et connectez-vous avec votre Adobe ID. Les dossiers de cache seront automatiquement recréés lors du prochain lancement.
 
 ## Mettre à niveau votre console cliente{#upgrade-ac-console}
 

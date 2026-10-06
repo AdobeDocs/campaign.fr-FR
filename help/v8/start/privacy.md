@@ -6,26 +6,38 @@ role: Admin
 level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
 version: Campaign v8, Campaign Classic v7
-TQID: https://experienceleague.adobe.com/vtmmkcaWp7orKU-ya58ySw-kkTGa9GmgQzyUwgSfPK0
+TQID: 'https://experienceleague.adobe.com/vtmmkcaWp7orKU-ya58ySw-kkTGa9GmgQzyUwgSfPK0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
+  - id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
+    internal-label: Security and privacy
+subfeature_v2:
+  - id: ac9c0a9c-8a76-4419-bd64-9c34c5782666
+    internal-label: Privacy
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Privacy
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1131
-ht-degree: 93%
-
+source-wordcount: '1131'
+ht-degree: 98%
 ---
-
 # Gestion des demandes d’accès à des informations personnelles dans Campaign {#privacy}
 
 Selon la nature de votre entreprise et les juridictions sous lesquelles elle opère, vos opérations de données peuvent être soumises à des réglementations légales en matière de confidentialité. Ces réglementations donnent souvent à vos clients le droit de demander l’accès aux données que vous collectez auprès d’eux et le droit de demander la suppression de ces données stockées. Ces demandes de la clientèle concernant des données personnelles sont appelées « demandes d’accès à des informations personnelles » dans l’ensemble de la documentation.
@@ -145,7 +157,7 @@ Voici la liste des tables intégrées qui sont prises en compte lors de l’exé
 * Abonnements (subscription)
 * Proposition d&#39;offre d&#39;un destinataire (propositionRcp)
 
-Si vous avez créé des tables personnalisées avec un lien vers la table des destinataires (type own), elles seront également prises en compte. Par exemple, si vous avez une table de transactions liée à la table des destinataires et une table de détails de transactions liée à la table des transactions, elles seront toutes deux prises en compte.
+Si vous avez créé des tables personnalisées ayant un lien vers la table de personnes destinataires (type propre), celles-ci sont également prises en compte. Par exemple, si une table de transactions est liée à la table de personnes destinataires et si une table de détails de transaction est liée à la table de transactions, elles sont toutes deux prises en compte.
 <!--
 >[!CAUTION]
 >

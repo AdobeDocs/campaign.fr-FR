@@ -7,21 +7,31 @@ Role: User
 level: Experienced
 version: Campaign v8, Campaign Classic v7
 exl-id: a1e08d57-0387-4802-b447-f6d9ad87072a
-TQID: https://experienceleague.adobe.com/aQKYDkFnBDT-N-fFTRg8ggvxfjKOKBgE9dcuuh7L28k
+TQID: 'https://experienceleague.adobe.com/aQKYDkFnBDT-N-fFTRg8ggvxfjKOKBgE9dcuuh7L28k'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 450
-ht-degree: 66%
-
+source-wordcount: '450'
+ht-degree: 88%
 ---
-
 # Gestion des données SQL{#sql-data-management}
 
 L&#39;activité **Gestion des données SQL** permet d&#39;écrire vos requêtes SQL pour créer et remplir les tables de travail.
@@ -57,7 +67,7 @@ Pour plus d’informations et de bonnes pratiques[&#128279;](sql-code-and-javasc
 
    >[!CAUTION]
    >
-   >Il incombe au rédacteur de script SQL de s’assurer que le script SQL est fonctionnel et que ses références (noms de champs, etc.) sont conformes au schéma sortant.
+   >Il incombe à la personne chargée de l’écriture du script SQL de s’assurer que celui-ci est fonctionnel et que ses références (noms de champs, etc.) sont conformes au schéma sortant.
 
    Si vous souhaitez charger un code SQL existant, sélectionnez l&#39;option **[!UICONTROL Le code SQL est contenu dans une entité stockée dans la base]**. Les scripts SQL doivent être créés et stockés dans le menu **[!UICONTROL Administration]** / **[!UICONTROL Paramétrage]** / **[!UICONTROL Scripts SQL]**.
 
@@ -74,14 +84,14 @@ Pour plus d’informations et de bonnes pratiques[&#128279;](sql-code-and-javasc
      >
      >La valeur (&#39;nom&#39;) correspond au champ **[!UICONTROL Nom]** des propriétés de la transition.
 
-1. Si le script SQL contient déjà des commandes pour créer une table de travail sortante, désélectionnez l&#39;option **[!UICONTROL Créer automatiquement la table de travail]**. Dans le cas contraire, une table de travail est automatiquement créée une fois le workflow exécuté.
+1. Si le script SQL contient déjà des commandes pour créer une table de travail sortante, désélectionnez l’option **[!UICONTROL Créer automatiquement une table de travail]**. Sinon, une table de travail est automatiquement créée lorsque le workflow est exécuté.
 1. Cliquez sur **[!UICONTROL OK]** pour valider la configuration de l&#39;activité.
 
-L’activité est désormais configurée. Il est prêt à être exécuté dans le workflow.
+L’activité est désormais configurée. Elle est prête à être exécutée dans le workflow.
 
 >[!CAUTION]
 >
->Une fois l’activité exécutée, le nombre d’enregistrements de transition sortante n’est qu’indicatif. Elle peut varier en fonction du niveau de complexité du script SQL.
+>Une fois l’activité exécutée, le nombre d’enregistrements de la transition sortante est fourni à titre indicatif uniquement. Il peut varier en fonction du niveau de complexité du script SQL.
 >  
 >Si lactivité est redémarrée, lintégralité du script est exécutée depuis le début, quel que soit le statut dexécution.
 

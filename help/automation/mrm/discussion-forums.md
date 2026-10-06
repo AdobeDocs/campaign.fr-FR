@@ -5,25 +5,33 @@ description: Découvrez comment utiliser les forums de discussion de Campaign
 feature: Campaigns, Resource Management
 role: User
 exl-id: c2336507-beea-4ddb-aa8c-1ec591eb5683
-TQID: https://experienceleague.adobe.com/I855vY4L1Lz8qBtecg-bvTf-Rh2ci6Wd8MCsKJ7UqVo
+TQID: 'https://experienceleague.adobe.com/I855vY4L1Lz8qBtecg-bvTf-Rh2ci6Wd8MCsKJ7UqVo'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: 8d5d4b17-44c6-5e7b-891c-b4277613013d
+    internal-label: Resource Management
 subfeature_v2:
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 585
+source-wordcount: '585'
 ht-degree: 100%
-
 ---
-
 # Forums de discussion{#discussion-forums}
 
 Les opérateurs d’Adobe Campaign peuvent utiliser les forums de discussion pour partager des informations. Les éléments suivants disposent de leur propre forum : plans, programmes, campagnes, ressources marketing, simulations, stocks. Chaque opérateur/opératrice possède également un forum personnel. Toutes les discussions sont publiques, même sur des forums personnels.
@@ -87,7 +95,7 @@ Si des opérateurs/opératrices abonné(e)s à un forum ne reçoivent pas les no
 * Accédez au dossier **[!UICONTROL Administration > Exploitation > Workflows techniques > Processus de Campaign]** de l’explorateur Campaign et vérifiez que le workflow **[!UICONTROL Traitements dans les forums de discussion]** a démarré sans erreur.
 * Vérifiez les logs de diffusion :
 
-   * Depuis la page d’accueil d’Adobe Campaign, accédez à **[!UICONTROL Campagnes > Navigation > Diffusions]**, puis ouvrez la diffusion **[!UICONTROL Notification des forums de discussion]**.
-   * Dans l’explorateur Campaign, accédez à **[!UICONTROL Administration > Exploitation > Objets créés automatiquement > Diffusions techniques > Notifications de workflow]**, puis cliquez sur **[!UICONTROL Notification des forums de discussion]**.
+  * Depuis la page d’accueil d’Adobe Campaign, accédez à **[!UICONTROL Campagnes > Navigation > Diffusions]**, puis ouvrez la diffusion **[!UICONTROL Notification des forums de discussion]**.
+  * Dans l’explorateur Campaign, accédez à **[!UICONTROL Administration > Exploitation > Objets créés automatiquement > Diffusions techniques > Notifications de workflow]**, puis cliquez sur **[!UICONTROL Notification des forums de discussion]**.
 
   Dans la boîte **[!UICONTROL Notification des forums de discussion]**, les logs de diffusion se trouvent dans l’onglet **[!UICONTROL Édition > Diffusion]**. Consultez également les onglets **[!UICONTROL Tracking > Log]** et **[!UICONTROL Causes d&#39;exclusion]**.

@@ -6,20 +6,29 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 18e49a15-dbb5-42d6-9379-367e769f319a
-TQID: https://experienceleague.adobe.com/MvYtphJPgDXOp9-CR3rhTYNazED3seRZxt89W29PJlI
+TQID: 'https://experienceleague.adobe.com/MvYtphJPgDXOp9-CR3rhTYNazED3seRZxt89W29PJlI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Beginner
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 3512
-ht-degree: 90%
-
+source-wordcount: '3512'
+ht-degree: 99%
 ---
-
 # Définition des conditions de filtre{#filter-conditions}
 
 Pour concevoir votre requête, vous devez sélectionner les conditions de filtrage dans le requêteur. Les fonctionnalités disponibles et les cas d’utilisation sont présentés sur cette page .
@@ -89,7 +98,7 @@ Voici une liste descriptive des opérateurs disponibles :
   <tr> 
    <td> <span class="uicontrol">Ne contient pas</span> <br /> </td> 
    <td> Ne pas obtenir de résultats contenant au moins la valeur renseignée.<br /> </td> 
-   <td> <strong>Le domaine d'e-mail (@domain) ne contient pas 'vo'</strong>. Dans ce cas, les noms de domaine contenant « vo » ne seront pas renvoyés. Ainsi, le nom de domaine 'voila.fr' ne sera pas proposé dans les résultats.<br /> </td> 
+   <td> <strong>Le domaine d’e-mail (@domain) ne contient pas « vo »</strong>. Dans ce cas, les noms de domaine contenant « vo » ne seront pas renvoyés. Ainsi, le nom de domaine 'voila.fr' ne sera pas proposé dans les résultats.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Comme</span> <br /> </td> 
@@ -98,7 +107,7 @@ Voici une liste descriptive des opérateurs disponibles :
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Pas comme</span> <br /> </td> 
-   <td> Similaire à <span class="uicontrol">Like</span> . Permet de ne pas récupérer la valeur saisie. La valeur renseignée doit ici aussi comporter le caractère joker <span class="uicontrol">%</span>.<br /> </td> 
+   <td> Similaire à <span class="uicontrol">Comme</span>. Vous permet de ne pas obtenir la valeur saisie. La valeur renseignée doit ici aussi comporter le caractère joker <span class="uicontrol">%</span>.<br /> </td> 
    <td> <strong>Nom (@lastName) pas comme 'Smi%h'</strong>. Ici, les destinataires répondant au nom de 'Smi%h' ne seront pas retournés en résultat.<br /> </td> 
   </tr> 
   <tr> 
@@ -126,7 +135,7 @@ Voici une liste descriptive des opérateurs disponibles :
 
 ## Utiliser ET, OU, SAUF {#using-and--or--except}
 
-Pour les requêtes qui utilisent plusieurs conditions de filtrage, vous devez définir des liens entre les conditions. Il existe trois liens possibles :
+Dans les requêtes utilisant plusieurs conditions de filtrage, vous devez définir les liens entre conditions. Trois liens sont possibles :
 
 * **[!UICONTROL Et]** permet de cumuler deux conditions de filtrage,
 * **[!UICONTROL Ou]** sert à proposer une alternative,
@@ -170,7 +179,7 @@ Pointez votre curseur sur la condition de filtrage **[!UICONTROL Gender (@gender
 
 ![](assets/query_editor_nveau_32.png)
 
-La condition **[!UICONTROL Genre (@gender) égal à Masculin]** a été retirée de sa parenthèse. Elle est passée au même niveau que la condition « City égal à Londres ». Ces deux conditions sont liées par un **[!UICONTROL Et]**.
+La condition **[!UICONTROL Genre (@gender) égal à Masculin]** a été extraite de sa parenthèse. Elle se situe désormais au même niveau que la condition « Ville égal à Paris ». Ces deux conditions sont liées par un **[!UICONTROL Et]**.
 
 ## Sélectionner les données à extraire {#selecting-data-to-extract}
 
@@ -253,12 +262,12 @@ Liens vers une table et éléments de collection :
  <tbody> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_51.png" /> </td> 
-   <td> Liens vers une table en particulier. Elles coïncident avec des associations de type 1-1. Une occurrence de la table source ne peut correspondre qu'à une seule occurrence de la table cible. Un seul et même destinataire sera associé à un pays par exemple.<br /> </td> 
+   <td> Liens vers une table particulière. Ils correspondent à des associations de type 1-1. Une occurrence de la table source peut correspondre à une seule occurrence de la table cible. Un seul et même destinataire sera associé à un pays par exemple.<br /> </td> 
    <td> Dossier, Etat, Pays, etc. <br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_52.png" /> </td> 
-   <td> Elément de collection sur une table particulière. Elles coïncident avec des associations de type 1-N. Une occurrence de la table source peut correspondre à plusieurs occurrences de la table cible, mais une occurrence de la table cible ne peut correspondre qu'à une seule occurrence de la table source. Par exemple, un seul destinataire peut être inscrit à 'n' lettres d'abonnements.<br /> </td> 
+   <td> Élément de collection sur une table spécifique. Ils correspondent à des associations de type 1-N. Une occurrence de la table source peut correspondre à plusieurs occurrences de la table cible, mais une occurrence de la table cible ne peut correspondre qu’à une seule occurrence de la table source. Par exemple, un seul destinataire peut être inscrit à 'n' lettres d'abonnements.<br /> </td> 
    <td> Abonnements, listes, logs d'exclusion, etc.<br /> </td> 
   </tr> 
  </tbody> 
@@ -273,7 +282,7 @@ Liens vers une table et éléments de collection :
 
 ## Créer des champs calculés {#creating-calculated-fields}
 
-Si nécessaire, ajoutez une colonne lors de la mise en forme des données. Un champ calculé ajoute une colonne à la section de prévisualisation des données. Cliquez sur **[!UICONTROL Ajouter un champ calculé]**.
+Si nécessaire, ajoutez une colonne lors du formatage des données. Un champ calculé ajoute une colonne dans la section de prévisualisation des données. Cliquez sur **[!UICONTROL Ajouter un champ calculé]**.
 
 ![](assets/query_editor_nveau_43.png)
 
@@ -287,13 +296,13 @@ Quatre types de champ calculé sont proposés :
 
   ![](assets/query_editor_nveau_61.png)
 
-* **[!UICONTROL Expression JavaScript]** : la valeur du champ calculé est le résultat de l&#39;évaluation d&#39;une fonction JavaScript. La valeur renvoyée peut être saisie (nombre, date, etc.).
+* **[!UICONTROL Expression JavaScript]** : la valeur du champ calculé est le résultat de l’évaluation d’une fonction JavaScript. La valeur renvoyée peut être typée (nombre, date, etc.).
 
   ![](assets/query_editor_nveau_62.png)
 
 * **[!UICONTROL Énumérations]**. Ce type de champ permet d’utiliser/transformer le contenu d’une des colonnes de sortie dans une nouvelle colonne.
 
-  Il est possible d’utiliser la valeur source d’une colonne et de lui donner une valeur de destination. Cette valeur de destination s’affichera dans la nouvelle colonne de sortie.
+  Il est possible d’utiliser la valeur source d’une colonne et de lui donner une valeur de destination. Cette valeur de destination sera affichée dans la nouvelle colonne de sortie.
 
   Un exemple d’ajout de champ calculé de type **[!UICONTROL Énumérations]** est disponible. Reportez-vous à [cette section](../../automation/workflow/adding-enumeration-type-calculated-field.md).
 
@@ -301,10 +310,10 @@ Quatre types de champ calculé sont proposés :
 
   Le champ calculé de type **[!UICONTROL Énumérations]** peut comporter quatre conditions :
 
-   * **[!UICONTROL Conserver la valeur source]** restitue la valeur de la source, sans transformation dans la cible.
-   * **[!UICONTROL Utiliser la valeur suivante]** sert à saisir une valeur de destination par défaut, pour les valeurs sources non définies.
-   * **[!UICONTROL Générer un avertissement et continuer]** avertit l&#39;utilisateur que la valeur source ne peut être transformée.
-   * **[!UICONTROL Générer une erreur et rejeter la ligne]** empêche le calcul de la ligne et son export.
+  * **[!UICONTROL Conserver la valeur source]** restitue la valeur de la source, sans transformation dans la cible.
+  * **[!UICONTROL Utiliser la valeur suivante]** sert à saisir une valeur de destination par défaut, pour les valeurs sources non définies.
+  * **[!UICONTROL Générer un avertissement et continuer]** avertit l&#39;utilisateur que la valeur source ne peut être transformée.
+  * **[!UICONTROL Générer une erreur et rejeter la ligne]** empêche le calcul de la ligne et son export.
 
 Cliquez sur la loupe **[!UICONTROL Détail du champ calculé]** pour visualiser le champ inséré en détail.
 
@@ -337,7 +346,7 @@ Voici le détail des choix de la fenêtre **[!UICONTROL Types de formules]** :
 ![](assets/query_editor_nveau_05.png)
 
 1. **[!UICONTROL Champ simple]** permet de revenir à la fenêtre **[!UICONTROL Champ à sélectionner]**.
-1. **[!UICONTROL Agrégat (Traitement sur une fonction d’agrégat)]**. Voici quelques exemples d’utilisation des agrégats :
+1. **[!UICONTROL Agrégat (traitement sur une fonction d’agrégat)]**. Voici des exemples d’utilisation des agrégats :
 
    * **[!UICONTROL Comptage]** permet d&#39;effectuer un comptage de clé primaire.
    * **[!UICONTROL Somme]** sert à totaliser tous les achats d&#39;un prospect sur une année.
@@ -345,9 +354,9 @@ Voici le détail des choix de la fenêtre **[!UICONTROL Types de formules]** :
    * **[!UICONTROL Valeur minimum]** permet d&#39;obtenir parmi des clients, ceux qui ont souscrit à une offre le plus récemment.
    * **[!UICONTROL Moyenne]**. Cette fonction permet de calculer l&#39;âge moyen des destinataires.
 
-     La zone **[!UICONTROL Distinct]** permet de récupérer les valeurs uniques et non nulles d&#39;une colonne. Par exemple, vous pouvez récupérer tous les logs de tracking d’un destinataire et ces logs de tracking sont modifiés sur la valeur 1 car ils concernent tous le même destinataire.
+     La zone **[!UICONTROL Distinct]** vous permet de récupérer les valeurs uniques et non nulles d’une colonne. Par exemple, vous pouvez récupérer tous les logs de tracking d’une personne destinataire qui seront ramenés à la valeur 1, car ils concernent tous la même personne destinataire.
 
-1. **[!UICONTROL Expression]** ouvre la fenêtre **[!UICONTROL Modifier l’expression]**. Vous pouvez ainsi détecter les numéros de téléphone comportant trop de chiffres, susceptibles d’être des erreurs de saisie.
+1. **[!UICONTROL Expression]** ouvre la fenêtre **[!UICONTROL Édition de l’expression]**. Cela vous permet de détecter les numéros de téléphone contenant trop de chiffres, synonymes de possibles erreurs de saisie.
 
    ![](assets/query_editor_nveau_71.png)
 
@@ -361,7 +370,7 @@ L&#39;éditeur d&#39;expression se présente comme suit :
 
 ![](assets/filter-define-expression.png)
 
-Il permet de sélectionner des champs dans les tables de la base de données et de leur adjoindre des fonctions avancées. Les fonctions suivantes sont disponibles :
+Cela vous permet de sélectionner des champs dans les tables de la base de données et de leur adjoindre des fonctions avancées. Les fonctions suivantes sont disponibles :
 
 **Agrégats**
 

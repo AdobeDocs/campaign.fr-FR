@@ -5,18 +5,26 @@ description: Découvrez comment envoyer un e-mail d’anniversaire à l’aide d
 feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: c3a80871-e045-454c-b1ca-8f484d2e14e1
-TQID: https://experienceleague.adobe.com/K6fvJssifUJoE7PYvXlHwmGU6oNQztCvCqAKUYNdomE
+TQID: 'https://experienceleague.adobe.com/K6fvJssifUJoE7PYvXlHwmGU6oNQztCvCqAKUYNdomE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Implementation
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 866
-ht-degree: 90%
-
+source-wordcount: '866'
+ht-degree: 100%
 ---
-
 # Envoi d’un e-mail d’anniversaire{#sending-a-birthday-email}
 
 Ce cas pratique présente comment planifier l&#39;envoi d&#39;un email récurrent à une liste de destinataires le jour de leur anniversaire.
@@ -51,11 +59,11 @@ Pour cela, les étapes sont les suivantes :
    ![](assets/s_ncs_user_create_exp_exple_a.png)
 
 1. Choisissez l&#39;option **[!UICONTROL Editer la formule à partir d&#39;une expression]** et cliquez sur le bouton **[!UICONTROL Suivant]** afin d&#39;afficher l&#39;éditeur d&#39;expressions.
-1. Dans la liste des fonctions, double-cliquez sur la fonction **[!UICONTROL Day]** accessible depuis le noeud **[!UICONTROL Date]**. Cette fonction renvoie le nombre représentant le jour correspondant à la date passée en paramètre.
+1. Dans la liste des fonctions, double-cliquez sur la fonction **[!UICONTROL Day]** accessible depuis le noeud **[!UICONTROL Date]**. Cette fonction renvoie le nombre représentant le jour de la date transmise en tant que paramètre.
 
    ![](assets/s_ncs_user_create_exp_exple01.png)
 
-1. Dans la liste des champs disponibles, double-cliquez sur **[!UICONTROL Date de naissance]**. La section supérieure de l&#39;éditeur affiche alors la formule suivante :
+1. Dans la liste des champs disponibles, double-cliquez sur la **[!UICONTROL Date de naissance]**. La section supérieure de l’éditeur d’expression affiche alors la formule suivante :
 
    ```
    Day(@birthDate)
@@ -103,7 +111,7 @@ Pour réaliser ce cas d&#39;utilisation, nous avons créé le workflow de ciblag
 
 
 
-Si l’année en cours **n’est pas une année bissextile** et que le workflow est exécuté le 1er mars, nous devons sélectionner tous les destinataires qui auraient eu leur anniversaire hier (29 février) et les ajouter à la liste des destinataires. Dans tous les autres cas, aucune action supplémentaire n’est requise.
+Si l’année en cours **n’est pas une année bissextile** et que le workflow est exécuté le 1er mars, nous devons sélectionner toutes les personnes destinataires dont l’anniversaire était la veille (le 29 février) et les ajouter à la liste des personnes destinataires. Dans tous les autres cas, aucune action supplémentaire n’est requise.
 
 ### Étape 1 : sélectionner les destinataires {#step-1--selecting-the-recipients}
 

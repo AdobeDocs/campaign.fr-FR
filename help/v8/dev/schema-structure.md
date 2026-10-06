@@ -5,25 +5,44 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-TQID: https://experienceleague.adobe.com/RFayUnFrNC-V7ZsbldmoRTFt-hfNN5oPTvcxhXKt7e0
+TQID: 'https://experienceleague.adobe.com/RFayUnFrNC-V7ZsbldmoRTFt-hfNN5oPTvcxhXKt7e0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: a72a22e0-8c8d-4019-ba42-3f2644aa91a3
+    internal-label: Schema extension
+  - id: a14877cc-63b1-41d9-bf0b-5f97cadd0417
+    internal-label: Configuration guidelines
+  - id: a1681cd8-6b2e-4955-9113-33b5f7a22b8c
+    internal-label: Data model architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1453
-ht-degree: 88%
-
+source-wordcount: '1453'
+ht-degree: 96%
 ---
-
 # Structure d&#39;un schéma{#schema-structure}
 
 La structure de base d&#39;un `<srcschema>` est la suivante :
@@ -99,7 +118,7 @@ Avec son schéma de données correspondant :
 
 ## Description {#description}
 
-Le point d&#39;entrée du schéma est son élément principal. Il est facilement identifiable car son nom est identique à celui du schéma et il doit être enfant de l&#39;élément racine. C&#39;est à partir de cet élément que commence la description du contenu.
+Le point d’entrée du schéma est son élément principal. Il est facilement identifiable car son nom est identique à celui du schéma et il doit être enfant de l&#39;élément racine. C&#39;est à partir de cet élément que commence la description du contenu.
 
 Dans notre exemple, l&#39;élément principal est représenté par la ligne :
 
@@ -142,17 +161,17 @@ Lorsque cet attribut n’est pas renseigné, **string** est le type de données 
 
 Les types de données pris en charge dans un schéma sont les suivants :
 
-* **string** : chaîne de caractères. Exemples : un prénom, une ville, etc.
+* **string** : chaîne de caractères. Exemples : un prénom, une ville, etc.
 
   La taille peut être spécifiée via l&#39;attribut **length** (optionnel, valeur par défaut &quot;255&quot;).
 
-* **boolean** : champ booléen. Exemple de valeurs possibles : vrai/faux, 0/1, oui/non, etc.
-* **byte**, **short**, **long** : entiers (1 octet, 2 octets, 4 octets). Exemples : un âge, un numéro de compte, un nombre de points, etc.
-* **double** : nombre flottant en double précision. Exemples : un prix, un taux, etc.
-* **date**, **datetime** : dates et dates + heures. Exemples : date de naissance, date d’achat, etc.
+* **boolean** : champ booléen. Exemples de valeurs possibles : vrai/faux, 0/1, oui/non, etc.
+* **byte**, **short**, **long** : entiers (1 octet, 2 octets, 4 octets). Exemples : un âge, un numéro de compte, un nombre de points, etc.
+* **double** : nombre flottant précis à deux décimales. Exemples : un prix, un taux, etc.
+* **date**, **datetime** : dates et dates + heures. Exemples : une date de naissance, une date d’achat, etc.
 * **datetimenotz** : date + heure sans données de fuseau horaire.
-* **timespan** : durées. Exemple : l&#39;ancienneté.
-* **memo** : champs texte longs (multi-lignes). Exemples : description, commentaire, etc.
+* **timespan** : durées. Exemple : l’ancienneté.
+* **memo** : champs texte long (multi-lignes). Exemples : une description, un commentaire, etc.
 * **uuid** : champs &quot;uniqueidentifier&quot;
 
   >[!NOTE]
@@ -361,7 +380,7 @@ Les éléments sont désignés par leur nom, les attributs sont désignés par l
 
 >[!NOTE]
 >
->Une contrainte supplémentaire est ajoutée lorsque le chemin traverse un sous-élément. Dans ce cas, l&#39;expression suivante doit être placée entre crochets :
+>Une contrainte supplémentaire est ajoutée lorsque le chemin traverse un sous-élément. Dans ce cas, l’expression suivante doit être placée entre crochets :
 >
 >* **Location/@city** n&#39;est pas valide ; veuillez utiliser **`[location/@city]`**
 >* **`[@email]`** et **@email** sont équivalents

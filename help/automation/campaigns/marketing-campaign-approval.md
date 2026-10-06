@@ -6,27 +6,39 @@ feature: Approvals, Campaigns
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 03be5058-436e-4de9-99a7-91d799aa17f6
-TQID: https://experienceleague.adobe.com/YuwN3F1QHL4OR3KLaq2D2j-xxAGsuw4433TgKvMMzsI
+TQID: 'https://experienceleague.adobe.com/YuwN3F1QHL4OR3KLaq2D2j-xxAGsuw4433TgKvMMzsI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
 subfeature_v2:
   - id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
+    internal-label: Permissions
+  - id: ce296ecd-3d06-45ab-83c3-37214e8ce31c
+    internal-label: Approvals
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 2450
-ht-degree: 91%
-
+source-wordcount: '2457'
+ht-degree: 99%
 ---
-
 # Configuration et gestion du processus de validation {#approval-marketing-campaigns}
 
 Les méthodes et les personnes impliquées dans la création et la validation des campagnes marketing sont spécifiques à chaque organisation. Le processus de validation de la campagne implique la coordination de plusieurs parties prenantes à savoir des spécialistes marketing digital, des responsables de la diffusion, des gestionnaires de contenu et des propriétaires externes tels que des partenaires ou des fournisseurs.
@@ -164,7 +176,7 @@ Pour chaque diffusion de l&#39;opération, il est possible de valider les traite
 
 >[!CAUTION]
 >
->Pour valider un contenu, un cycle de BAT est obligatoire. Les BAT vous permettent de valider l’affichage des informations et des données de personnalisation, et de vérifier que les liens fonctionnent.
+>Pour approuver un contenu, un cycle de BAT est obligatoire. Les BAT vous permettent d’approuver l’affichage des informations, les données de personnalisation et de vérifier que les liens fonctionnent.
 >
 >Les fonctionnalités de validation du contenu décrites ci-dessous se rapportent à la diffusion du BAT.
 
@@ -204,12 +216,12 @@ Cette option vous permet de définir une personne responsable de l’édition du
 
    * le lien **[!UICONTROL Contenu disponible]** dans la console cliente Adobe Campaign.
    * le lien contenu dans le message de notification.
-L&#39;opérateur peut ajouter un commentaire avant de soumettre le contenu au responsable de l&#39;opération.
-Le message de notification permet au réviseur de valider ou refuser le contenu qui lui a été soumis.
+     L&#39;opérateur peut ajouter un commentaire avant de soumettre le contenu au responsable de l&#39;opération.
+     Le message de notification permet au réviseur de valider ou refuser le contenu qui lui a été soumis.
 
 #### Validation externe du contenu {#external-content-approval}
 
-Cette option permet de définir un opérateur externe chargé de valider le rendu de la diffusion, par exemple la cohérence de la communication de la marque, les taux, etc. Lorsque l&#39;option **[!UICONTROL Validation externe du contenu]** est sélectionnée dans la fenêtre de paramétrage de la validation des traitements, plusieurs étapes de validation sont ajoutées entre la validation du contenu par le responsable du traitement et la diffusion de la notification au responsable de l&#39;opération :
+Cette option vous permet de définir un opérateur ou une opératrice externe en charge de la validation du rendu de la diffusion, par exemple la cohérence de la communication de la marque, les taux, etc. Lorsque l’option **[!UICONTROL Validation externe du contenu]** est sélectionnée dans la fenêtre des paramètres de validation, plusieurs étapes de validation sont ajoutées entre la validation du contenu et la diffusion de la notification à la personne en charge de la campagne :
 
 1. Le responsable externe du contenu reçoit un email de notification l&#39;informant que le contenu a été validé et que la validation externe doit être effectuée.
 1. L&#39;email de notification propose des liens vers les BAT envoyés, lui permettant de visualiser le rendu de la diffusion, et un bouton pour valider ou refuser le contenu de la diffusion.
@@ -218,7 +230,7 @@ Ces liens ne sont disponibles que si un ou plusieurs BAT ont été envoyés. Dan
 
 ### Validation d’un fichier d’extraction {#approve-an-extraction-file}
 
-Pour les diffusions hors ligne, Adobe Campaign génère un fichier d’extraction qui, selon la configuration, est envoyé au routeur. Son contenu dépend du modèle d’exportation utilisé.
+Pour les diffusions hors ligne, Adobe Campaign génère un fichier d’extraction qui, selon la configuration, est envoyé au routeur. Son contenu dépend du modèle d’export utilisé.
 
 Une fois le contenu, le ciblage et le budget validés, la diffusion passe à l&#39;état **[!UICONTROL Extraction en attente]**, en attendant le lancement du workflow d&#39;extraction pour les opérations.
 
@@ -310,13 +322,13 @@ Lorsqu’un workflow de ciblage est en cours de construction, la validation manu
 
 Un message de confirmation permet d&#39;autoriser les validations sur les traitements sélectionnés pour cette diffusion.
 
-Les boutons de validation sont alors affichés dans le tableau de bord de l&#39;opération (pour cette diffusion), dans le tableau de bord de la diffusion et dans le tracking des diffusions. Si les notifications sont activées, elles sont envoyées en parallèle.
+Les boutons de validation sont alors affichés dans le tableau de bord de la campagne (au niveau de cette diffusion), dans le tableau de bord de la diffusion et dans le tracking des diffusions. Si les notifications sont activées, elles seront parallèlement envoyées.
 
 Ce mode d&#39;activation des validations permet de travailler sur des recherches de ciblage sans notifier les opérateurs validants de façon intempestive.
 
 ## Notifications {#notifications}
 
-Les notifications sont des e-mails spécifiques envoyés aux réviseurs pour les informer qu’un processus est en attente de validation. Lorsque l&#39;opérateur clique sur le lien du message, une page d&#39;authentification apparaît et, après connexion, l&#39;opérateur peut visualiser les informations et valider ou refuser le traitement. Un commentaire peut également être saisi dans la fenêtre de validation.
+Les notifications sont des e-mails spécifiques envoyés aux réviseurs et réviseuses pour les informer qu’un processus est en attente de validation. Lorsque l’opérateur ou l’opératrice clique sur le lien contenu dans le message, une page d’authentification s’affiche. Après connexion, l’opérateur ou l’opératrice peut consulter les informations et approuver ou rejeter le traitement. Un commentaire peut également être saisi dans la fenêtre de validation.
 
 Le contenu des emails de notification peut être personnalisé. Voir [Contenu des notifications](#notification-content).
 

@@ -6,23 +6,33 @@ feature: Workflows, Data Management
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 794de398-f35d-4c2b-af29-d6fd38eb9394
-TQID: https://experienceleague.adobe.com/VeDBB3FCIUIkD-IEdPlUtjhX9CKFiQptIH-eys-iG2o
+TQID: 'https://experienceleague.adobe.com/VeDBB3FCIUIkD-IEdPlUtjhX9CKFiQptIH-eys-iG2o'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 644
-ht-degree: 80%
-
+source-wordcount: '660'
+ht-degree: 100%
 ---
-
 # Envoi de fichier{#file-transfer}
 
 L&#39;activité **Transfert de fichier** permet de recevoir ou d&#39;envoyer des fichiers, de tester la présence de fichiers ou de répertorier les fichiers sur un serveur. Le protocole utilisé est le suivant : stockage Blob Azure, S3 (Amazon Simple Storage Service), FTP ou SFTP.
@@ -38,7 +48,7 @@ Le paramétrage dépend de l&#39;action sélectionnée.
 
 1. **Réception de fichier**
 
-   Pour recevoir des fichiers stockés sur un serveur distant, sélectionnez **[!UICONTROL Téléchargement de fichier]** dans le champ **[!UICONTROL Action]**. Vous devez spécifier son URL dans le champ correspondant.
+   Pour recevoir des fichiers stockés sur un serveur distant, sélectionnez l’option **[!UICONTROL Téléchargement de fichier]** dans le champ **[!UICONTROL Action]**. Vous devez indiquer son URL dans le champ correspondant.
 
    ![](assets/file_transfert_edit.png)
 
@@ -58,19 +68,19 @@ Le paramétrage dépend de l&#39;action sélectionnée.
 
    ![](assets/file_transfert_source.png)
 
-   Utilisez les flèches pour modifier l’ordre des onglets. Il s’agit de l’ordre dans lequel les fichiers sont envoyés au serveur.
+   Utilisez les flèches pour modifier l’ordre des onglets. Il correspond à l’ordre d’envoi des fichiers au serveur.
 
-   L&#39;option **[!UICONTROL Conserver l&#39;historique des fichiers envoyés]** permet de tracker les fichiers envoyés. Cet historique est accessible à partir du répertoire .
+   L’option **[!UICONTROL Garder un historique des fichiers envoyés]** vous permet de conserver une trace des fichiers envoyés. Cet historique est accessible à partir du répertoire.
 
 1. **Test d&#39;existence de fichier**
 
-   Pour tester l’existence d’un fichier, sélectionnez l’option **[!UICONTROL Tester pour vérifier si le fichier existe]** dans le champ **[!UICONTROL Action]**. La configuration du serveur distant est la même que pour le téléchargement de fichiers. Pour plus d’informations, consultez cette [section](#properties).
+   Pour tester l’existence d’un fichier, sélectionnez l’option **[!UICONTROL Test d’existence de fichier]** dans le champ **[!UICONTROL Action]**. La configuration du serveur distant est la même que pour le téléchargement de fichiers. Pour plus d’informations, consultez cette [section](#properties).
 
    ![](assets/file_transfert_edit_test.png)
 
 1. **Listage des fichiers**
 
-   Pour répertorier les fichiers, sélectionnez l’option **[!UICONTROL Listage de fichiers]** dans le champ **[!UICONTROL Action]**. La configuration du serveur distant est la même que pour la réception de fichiers. Pour plus d&#39;informations, consultez cette [section](#properties).
+   Pour lister les fichiers, sélectionnez l’option **[!UICONTROL Listage de fichiers]** dans le champ **[!UICONTROL Action]**. La configuration du serveur distant est la même que pour la réception de fichiers. Pour plus d&#39;informations, consultez cette [section](#properties).
 
    L’option **[!UICONTROL Lister tous les fichiers]**, disponible lors de la sélection de l’action **[!UICONTROL Listage de fichiers]** permet de répertorier tous les fichiers présents sur le serveur dans la variable d’événement **vars.filenames**. Les noms des fichiers y sont séparés par les caractères `\n`.
 

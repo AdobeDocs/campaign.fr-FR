@@ -6,23 +6,33 @@ feature: Email, Email Design
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 02cca21f-b1ac-4ac2-9761-015f6c7f5567
-TQID: https://experienceleague.adobe.com/LexEFgpaidGnonpgRFTasSk7Jr3Nc7443R8kj0kOLlM
+TQID: 'https://experienceleague.adobe.com/LexEFgpaidGnonpgRFTasSk7Jr3Nc7443R8kj0kOLlM'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 50d1fd2e-0fc9-5627-bbc9-02dbc9d15e08
+    internal-label: Email
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
+subfeature_v2:
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 790
-ht-degree: 90%
-
+source-wordcount: '790'
+ht-degree: 100%
 ---
-
 # Envoyer des e-mails sur des mobiles japonais {#sending-emails-on-japanese-mobiles}
 
 ## Formats d&#39;email pour les mobiles japonais {#email-formats-for-japanese-mobiles}
 
-Adobe Campaign gère trois formats japonais spécifiques pour les emails sur les mobiles : **Deco-mail** (mobiles DoCoMo), **Decore Mail** (mobiles Softbank) et **Decoration Mail** (mobiles KDDI AU). Ces formats imposent des contraintes particulières d’encodage, de structure et de taille. En savoir plus sur les limites et les recommandations dans [cette section](#limitations-and-recommendations).
+Adobe Campaign gère trois formats japonais spécifiques pour les e-mails sur les appareils mobiles : **Deco-mail** (appareils mobiles DoCoMo), **Decore Mail** (appareils mobiles Softbank) et **Decoration Mail** (appareils mobiles KDDI AU). Ces formats imposent des contraintes particulières d’encodage, de structure et de taille. Pour en savoir plus sur les limites et pour obtenir des recommandations, consultez [cette section](#limitations-and-recommendations).
 
 Pour qu&#39;un destinataire puisse recevoir correctement des messages dans l&#39;un de ces formats, il est recommandé de sélectionner **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** ou **[!UICONTROL Decoration Mail (KDDI AU)]** dans le profil correspondant :
 
@@ -77,7 +87,7 @@ Cette règle permet de s&#39;assurer que la diffusion respecte les [contraintes 
 
 ### Envoi de BAT {#sending-proofs}
 
-Vous pouvez envoyer des BAT pour tester votre diffusion. Lors de l’envoi du BAT, si vous utilisez des adresses de substitution, veuillez saisir des adresses qui correspondent au format d’e-mail du profil utilisé.
+Vous pouvez envoyer des BAT pour tester votre diffusion. Lors de l’envoi d’un BAT, si vous avez recours à des adresses de substitution, veillez à saisir des adresses correspondant au format des e-mails du profil utilisé.
 
 Par exemple, vous pouvez remplacer l&#39;adresse d&#39;un profil par test@softbank.ne.jp si le format des emails de ce profil a été défini au préalable sur **[!UICONTROL Decore Mail (Softbank)]**.
 

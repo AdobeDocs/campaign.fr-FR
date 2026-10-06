@@ -5,13 +5,25 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 50d1fd2e-0fc9-5627-bbc9-02dbc9d15e08
+    internal-label: Email
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '1299'
-ht-degree: 87%
-
+ht-degree: 97%
 ---
-
 # Configurer et envoyer la diffusion {#configure-delivery}
 
 Accédez aux paramètres de diffusion pour configurer d’autres paramètres et définir comment envoyer vos messages. Vous pouvez définir une [priorité](#delivery-priority) de diffusion, configurer des [vagues](#sending-using-multiple-waves) et tester l’envoi de votre diffusion. Une fois cette configuration terminée, vous pouvez confirmer l’envoi, comme décrit dans [cette section](#confirm-delivery). Les messages sont alors envoyés immédiatement ou selon le [planning](#schedule-delivery-sending) de diffusion.
@@ -61,7 +73,7 @@ Pour définir le vagues, procédez comme suit :
 
 >[!NOTE]
 >
->Vous ne pouvez définir la taille et le délai qu’entre deux vagues consécutives. Les critères de sélection des destinataires pour chaque vague ne peuvent pas être configurés.
+>Vous ne pouvez définir la taille et le délai qu’entre deux vagues consécutives. Le critère de sélection des personnes destinataires pour chaque vague ne peut pas être configuré.
 
 Vous pouvez soit définir la taille de chaque vague, soit les ajouter à un calendrier.
 
@@ -83,13 +95,13 @@ Une règle de typologie spécifique, la **[!UICONTROL Vérification de la planif
 
 >[!IMPORTANT]
 >
->* Assurez-vous que les dernières vagues ne dépassent pas la date limite de diffusion, qui est définie dans l’onglet **[!UICONTROL Validité]**. Sinon, certains messages risquent de ne pas être envoyés. En savoir plus sur la période de validité d’une diffusion dans [cette section](delivery-failures.md#valid-period).
+>* Veillez à ce que les dernières vagues ne dépassent pas la date limite de la diffusion qui est définie dans l’onglet **[!UICONTROL Validité]**. Sinon, certains messages peuvent ne pas être envoyés. En savoir plus sur la période de validité d’une diffusion dans [cette section](delivery-failures.md#valid-period).
 >
 >* Lors de la configuration des dernières vagues, veillez également à définir assez de temps pour les reprises. En savoir plus sur les reprises dans [cette section](delivery-failures.md#retries).
 
 ### Surveiller les vagues {#monitor-waves}
 
-Pour suivre vos envois, accédez aux logs de diffusion. Voir [cette page](send.md)
+Pour su vos envois, accédez aux logs de diffusion. Voir [cette page](send.md)
 
 Vous pouvez visualiser les diffusions qui ont déjà été envoyées dans les vagues traitées (statut **[!UICONTROL Envoyé]**) et celles à envoyer dans les vagues restantes (statut **[!UICONTROL En attente]**).
 
@@ -102,7 +114,7 @@ Les deux exemples ci-dessous constituent les cas d&#39;utilisation les plus fré
 
   Lorsque vous envoyez des e-mails à l’aide d’une nouvelle plateforme, rien n’est plus suspect pour un FAI (fournisseur d’accès internet) que les adresses IP qui ne sont pas reconnues. Si des e-mails sont subitement envoyés en masse, le FAI les range souvent dans le courrier indésirable.
 
-  Pour éviter d’être marqué comme indésirable, vous pouvez augmenter progressivement le volume envoyé à l’aide des vagues. Cela permet d’entamer la phase de démarrage en douceur et de réduire le nombre total d’adresses invalides.
+  Pour éviter que les e-mails soient marqués comme spam, vous pouvez augmenter progressivement le volume d’envoi à l’aide de vagues. Cela permet d’entamer la phase de démarrage en douceur et de réduire le nombre total d’adresses invalides.
 
   Pour ce faire, utilisez l’option **[!UICONTROL Planifier les vagues selon un calendrier]**. Par exemple, définissez la première vague sur 10 %, la deuxième sur 15 %, etc.
 
@@ -174,11 +186,11 @@ Elle vous permet de différer la diffusion à une date ultérieure ou enregistre
 
 * L&#39;option **[!UICONTROL Planifier la diffusion (pas d&#39;exécution automatique)]** permet de planifier une analyse prévisionnelle de la diffusion.
 
-  Lorsque cette configuration est enregistrée, la diffusion passe au statut **[!UICONTROL Ciblage en attente]**. L’analyse sera lancée à la date spécifiée.
+  Lorsque cette configuration est enregistrée, la diffusion passe au statut **[!UICONTROL Ciblage en attente]**. L’analyse sera lancée à la date indiquée.
 
 * L&#39;option **[!UICONTROL Planifier la diffusion (exécution automatique à la date prévue)]** permet d&#39;indiquer la date de contact.
 
-  Cliquez sur **[!UICONTROL Envoyer]** et sélectionnez **[!UICONTROL Différer la diffusion]** puis lancez l’analyse et confirmez la diffusion. Une fois l’analyse terminée, la cible de la diffusion est prête et les messages sont automatiquement envoyés à la date spécifiée.
+  Cliquez sur **[!UICONTROL Envoyer]** et sélectionnez **[!UICONTROL Différer la diffusion]**, puis lancez l’analyse et confirmez la diffusion. Une fois l’analyse terminée, la cible de la diffusion est prête et les messages seront automatiquement envoyés à la date indiquée.
 
 Les dates et heures sont entendues dans le fuseau horaire de l&#39;opérateur courant. La liste déroulante **[!UICONTROL Fuseau horaire]** située sous la zone de saisie de la date de contact permet d&#39;adapter automatiquement la date et l&#39;heure saisie dans le fuseau horaire sélectionné.
 

@@ -4,20 +4,30 @@ description: Découvrez comment utiliser les données d'un workflow
 feature: Workflows, Data Management
 version: Campaign v8, Campaign Classic v7
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
-TQID: https://experienceleague.adobe.com/MeXrY93e-BFOK0OdPAXrnv8baT15WZWwYhXMdFjf1vw
+TQID: 'https://experienceleague.adobe.com/MeXrY93e-BFOK0OdPAXrnv8baT15WZWwYhXMdFjf1vw'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Data management
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 749
-ht-degree: 77%
-
+source-wordcount: '749'
+ht-degree: 100%
 ---
-
 # Utiliser les données d&#39;un workflow{#how-to-use-workflow-data}
 
 Vous pouvez utiliser des activités de workflow pour effectuer plusieurs tâches. Vous trouverez ci-dessous des exemples d&#39;utilisation pour mettre à jour la base de données en créant des listes, gérer les abonnements, envoyer des messages par le biais d&#39;un workflow ou enrichir vos diffusions et leurs audiences.
@@ -54,7 +64,7 @@ Sélectionnez pour cela le menu correspondant :
 
   Découvrez comment commencer à utiliser l’assistant d’analyse descriptive dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target="_blank"}.
 
-Les données de la cible sont purgées lors de l’exécution du workflow. Seule la dernière table de travail est accessible. Vous pouvez paramétrer le workflow pour que toutes les tables de travail restent accessibles. Pour cela, cochez l&#39;option **[!UICONTROL Conserver le résultat des populations intermédiaires entre deux exécutions]** dans les propriétés du workflow.
+Les données de la cible sont purgées au fur et à mesure de l’exécution du workflow. Seule la dernière table de travail est accessible. Vous pouvez paramétrer le workflow pour que toutes les tables de travail restent accessibles. Pour cela, cochez l&#39;option **[!UICONTROL Conserver le résultat des populations intermédiaires entre deux exécutions]** dans les propriétés du workflow.
 
 ![](assets/wf-purge-data-option.png)
 
@@ -73,7 +83,7 @@ Vous pouvez par exemple utiliser les données collectées à travers une liste d
 %= targetData.FIELD %
 ```
 
-Les éléments de personnalisation de type **[!UICONTROL Extension de la cible]** (targetData) ne sont pas disponibles pour les workflows de ciblage. La cible de la diffusion doit être construite dans le workflow et spécifiée dans la transition entrante de la diffusion.
+Les éléments de personnalisation de type **[!UICONTROL Extension de la cible]** (targetData) ne sont pas disponibles pour les workflows de ciblage. Ainsi, la cible de la diffusion doit être construite dans le workflow et spécifiée dans la transition entrante de la diffusion.
 
 Dans l&#39;exemple suivant, vous allez collecter une liste d&#39;informations sur des clients, qui sera utilisée dans un e-mail personnalisé. Les étapes sont les suivantes :
 
@@ -121,12 +131,12 @@ Dans l&#39;exemple suivant, vous allez collecter une liste d&#39;informations su
 
    ![](assets/wf-targetdata-sample-6.png)
 
-   Les données de type **[!UICONTROL extension cible]** (targetData) sont insérées dans les diffusions en utilisant les mêmes caractéristiques que tous les champs de personnalisation. Ils peuvent également être utilisés dans l’objet, les libellés du lien ou les liens eux-mêmes.
+   Les données de type **[!UICONTROL Extension de la cible]** (targetData) sont insérées dans les diffusions selon les mêmes caractéristiques que tous les champs de personnalisation. Elles peuvent également être utilisées dans l’objet, les libellés du lien ou les liens eux-mêmes.
 
 
 ## mettre à jour la base de données. {#update-the-database}
 
-Toutes les données collectées peuvent être utilisées pour mettre à jour la base de données ou dans des diffusions. Vous pouvez, par exemple, enrichir les possibilités de personnalisation du contenu des messages (inclure le nombre de contrats dans le message, indiquer le panier moyen pour l’année écoulée, etc.) ou un ciblage détaillé de la population (envoyer un message aux co-titulaires d’un contrat, cibler les 1 000 meilleurs abonnés aux services en ligne, etc.). Ces données peuvent également être exportées ou archivées dans une liste.
+Toutes les données collectées peuvent être utilisées pour mettre à jour la base de données ou dans des diffusions. Vous pouvez, par exemple, enrichir les possibilités de personnalisation du contenu des messages (inclure le nombre de contrats dans le message, indiquer le panier moyen pour l’année écoulée, etc.) ou cibler précisément une population (envoyer un message aux personnes co-titulaires d’un contrat, cibler les 1 000 meilleures personnes abonnées aux services en ligne, etc.). Ces données peuvent également être exportées ou archivées sous forme de liste.
 
 ### Mettre à jour les listes  {#list-updates}
 
@@ -134,7 +144,7 @@ Les données de la base Adobe Campaign et les listes existantes peuvent être m
 
 * L&#39;activité **[!UICONTROL Mise à jour de liste]** permet de stocker les tables de travail dans une liste de données.
 
-  Vous pouvez sélectionner une liste existante ou la créer. Dans ce cas, le nom et éventuellement le dossier d’enregistrement sont calculés.
+  Vous pouvez sélectionner une liste existante ou en créer-une. Dans ce cas, le nom et éventuellement le dossier d’enregistrement sont calculés.
 
   ![](assets/s_user_create_list.png)
 

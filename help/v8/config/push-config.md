@@ -6,25 +6,38 @@ role: Admin, Developer
 level: Intermediate
 hide: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-TQID: https://experienceleague.adobe.com/P8-MVht-FT2EuZMz6C4YpLuzu3797L-f63XO--Ai7B4
+TQID: 'https://experienceleague.adobe.com/P8-MVht-FT2EuZMz6C4YpLuzu3797L-f63XO--Ai7B4'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: a4657621-810c-498b-8a27-7ced9c176dda
+    internal-label: Push notifications
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: b285c321f3b905150b31621941ea99608d627739
+    internal-label: Data collection
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1273
-ht-degree: 88%
-
+source-wordcount: '1273'
+ht-degree: 98%
 ---
-
 # Intégrer les SDK Campaign à votre application {#integrate-campaign-sdk}
 
 Vous pouvez utiliser les SDK Campaign pour iOS et Android afin de faciliter l’intégration de votre application mobile dans la plateforme Adobe Campaign.
@@ -605,7 +618,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 
 1. **Suivi des notifications silencieuses**
 
-   iOS permet d&#39;envoyer des notifications silencieuses, une notification ou des données qui seront directement envoyées à une application mobile sans les afficher. Adobe Campaign permet de les tracker.
+   iOS vous permet d’envoyer des notifications silencieuses, des notifications ou des données qui seront directement envoyées à une application mobile sans les afficher. Adobe Campaign vous permet de les suivre.
 
    Pour suivre votre notification silencieuse, suivez l&#39;exemple ci-après.
 
@@ -655,7 +668,7 @@ Découvrez comment implémenter FCM dans votre application dans la [documentatio
 
    * **Status** permet de déterminer si un enregistrement a été effectué avec succès ou si une erreur s&#39;est produite.
 
-   * **ErrorReason** vous fournit plus d’informations sur les erreurs qui se sont produites. Pour plus d’informations sur les erreurs disponibles et leur description, reportez-vous au tableau ci-dessous.
+   * **ErrorReason** vous fournit des informations supplémentaires sur les erreurs qui se sont produites. Pour plus d’informations sur les erreurs disponibles et leur description, reportez-vous au tableau ci-dessous.
 
    | Statut | Description | ErrorReason |
    | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
@@ -897,7 +910,7 @@ A ce niveau, vous devez effectuer les opérations suivantes :
 
 * Associer votre extension de contenu à la catégorie envoyée par Adobe Campaign :
 
-  Si vous souhaitez que votre application mobile affiche une image, vous pouvez définir la valeur de la catégorie sur « image » dans Adobe Campaign et, dans votre application mobile, vous créez une extension de notification avec le paramètre **UNNotificationExtensionCategory** défini sur « image ». Lorsque la notification push est reçue sur l’appareil, l’extension est appelée en fonction de la valeur de catégorie définie.
+  Si vous souhaitez que l’application mobile affiche une image, vous pouvez définir la valeur de la catégorie sur « image » dans Adobe Campaign et dans votre application mobile, vous créez une extension de notification avec le paramètre **UNNotificationExtensionCategory** défini sur « image ». Lorsque la notification push est reçue sur l’appareil, l’extension est appelée selon la valeur de la catégorie définie.
 
 * Définir la mise en page de la notification
 
@@ -905,7 +918,7 @@ A ce niveau, vous devez effectuer les opérations suivantes :
 
 * Afficher le contenu multimédia
 
-  Vous devez ajouter du code pour alimenter le widget avec les données multimédia. Voici un exemple de code pour une image :
+  Vous devez ajouter du code pour alimenter le widget avec les données multimédia. Voici un exemple de code pour une image :
 
   ```sql
   #import "NotificationViewController.h"

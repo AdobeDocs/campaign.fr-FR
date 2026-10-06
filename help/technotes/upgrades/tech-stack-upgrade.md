@@ -4,13 +4,16 @@ title: Note technique - mises à niveau du système Adobe Campaign
 description: Mise à niveau du système Adobe Campaign
 hide: true
 exl-id: cc64cce1-2473-4136-aadc-8b13e89ef7f9
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 100%
-
 ---
-
 # Mises à niveau de l’environnement Adobe Campaign 2023 {#ac-system-upgrade}
 
 L’infrastructure de Campaign repose sur des systèmes tiers qui doivent être régulièrement mis à jour avec les versions et les correctifs les plus récents. Ces mises à jour sont obligatoires pour assurer la continuité du service et sécuriser les environnements Campaign contre les risques de sécurité. En outre, une mise à niveau de Campaign est nécessaire pour garantir la compatibilité avec les modifications des systèmes tiers.
@@ -21,7 +24,7 @@ Pour des raisons de sécurité, Adobe doit [installer la version la plus récent
 
 >[!NOTE]
 >
->Pour toute question sur ces modifications, contactez l&#39;[Assistance clientèle d&#39;Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Pour toute question sur ces modifications, contactez l’[Assistance clientèle d’Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 >
 
 ## Mise à niveau de la version de Campaign {#ac-upgrade}

@@ -6,19 +6,28 @@ feature: Query Editor
 role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 7f859ce9-7ab8-46e1-8bd6-43aaffe30da2
-TQID: https://experienceleague.adobe.com/puAVnnwm21KiCWWCR5ZaexXnqysPINAkWAlcnR-gr1g
+TQID: 'https://experienceleague.adobe.com/puAVnnwm21KiCWWCR5ZaexXnqysPINAkWAlcnR-gr1g'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Developer
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 450
-ht-degree: 64%
-
+source-wordcount: '450'
+ht-degree: 100%
 ---
-
 # Requête de la table des destinataires {#querying-recipient-table}
 
 
@@ -43,12 +52,12 @@ Dans cet exemple, vous allez récupérer les noms et emails des destinataires do
 
 Pour réaliser cet exemple, les étapes sont les suivantes :
 
-1. Cliquez sur **[!UICONTROL Outils > Requêteur générique...]** et choisissez le tableau **Destinataires** (**nms:recipient**) . Cliquez sur **[!UICONTROL Suivant]**.
+1. Cliquez sur **[!UICONTROL Outils > Requêteur générique…]** et choisissez la table **Personnes destinataires** (**nms:recipient**). Cliquez sur **[!UICONTROL Suivant]**.
 1. Sélectionnez : **[!UICONTROL Nom]**, **[!UICONTROL Prénom]**, **[!UICONTROL Email]**, **[!UICONTROL Ville]** et **[!UICONTROL Numéro de compte]**. Ces champs sont alors ajoutés à **[!UICONTROL Colonnes de sortie]**. Cliquez sur **[!UICONTROL Suivant]**.
 
    ![](assets/query_editor_03.png)
 
-1. Triez les colonnes pour les afficher dans le bon ordre. Ici, nous voulons trier les numéros de compte par ordre décroissant et les noms par ordre alphabétique. Cliquez sur **[!UICONTROL Suivant]**.
+1. Triez les colonnes pour les afficher dans le bon ordre. Ici, triez les numéros de compte dans l’ordre décroissant et les noms par ordre alphabétique. Cliquez sur **[!UICONTROL Suivant]**.
 
    ![](assets/query_editor_04.png)
 
@@ -59,7 +68,7 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
    ![](assets/query_editor_05.png)
 
-1. Si nécessaire, cliquez sur le bouton **[!UICONTROL Répartition des valeurs]** pour visualiser une répartition selon le domaine d&#39;email des prospects. Un pourcentage est disponible pour chaque domaine d&#39;e-mail de la base de données. Les domaines autres que « orange.co.uk » sont affichés jusqu’à ce que le filtre soit appliqué.
+1. Si besoin, cliquez sur le bouton **[!UICONTROL Répartition des valeurs]** pour obtenir une répartition en fonction du domaine d’e-mail des prospects. Un pourcentage est disponible pour chaque domaine d’e-mail de la base de données. Les domaines autres que « orange.co.uk » sont affichés jusqu’à ce que le filtre soit appliqué.
 
    Le résumé de la requête s&#39;affiche au bas de la fenêtre, soit : **Domaine de l&#39;email égal à &#39;free.fr&#39;**.
 
@@ -73,17 +82,17 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
    ![](assets/query_editor_08.png)
 
-1. Vous accédez alors à la fenêtre **[!UICONTROL Formatage des données]**. Vérifiez l’ordre des colonnes. Déplacez la colonne « Ville » vers le haut sous la colonne « Numéro de compte ».
+1. Vous accédez alors à la fenêtre **[!UICONTROL Formatage des données]**. Vérifiez l’ordre des colonnes. Déplacez la colonne « Ville » pour la remonter après la colonne « Numéro de compte ».
 
    Décochez la ligne &quot;Prénom&quot; pour ne plus l&#39;afficher en résultat.
 
    ![](assets/query_editor_nveau_15.png)
 
-1. Dans la fenêtre **[!UICONTROL Aperçu des données]**, cliquez sur **[!UICONTROL Démarrer l&#39;aperçu des données]**. Cette fonction calcule le résultat de la requête.
+1. Dans la fenêtre **[!UICONTROL Prévisualisation des données]**, cliquez sur **[!UICONTROL Lancer la prévisualisation des données]**. Cette fonction calcule le résultat de la requête.
 
    L&#39;onglet **[!UICONTROL Résultat en colonnes]** vous présente le résultat de la requête en colonnes.
 
-   Le résultat affiche tous les destinataires avec un domaine d’e-mail « orange.co.uk » qui ne vivent pas à Londres. La colonne « Prénom » n’est pas affichée, car elle n’a pas été cochée lors de l’étape précédente. Les numéros de compte sont triés par ordre décroissant.
+   Le résultat affiche l’ensemble des destinataires avec un domaine d’e-mail « orange.co.uk » qui ne vivent pas à Londres. La colonne « Prénom » n’est pas affichée, car elle n’a pas été cochée lors de l’étape précédente. Les numéros de compte sont triés par ordre décroissant.
 
    ![](assets/query_editor_nveau_12.png)
 

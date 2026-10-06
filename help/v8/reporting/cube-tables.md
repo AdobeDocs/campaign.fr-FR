@@ -6,23 +6,34 @@ feature: Reporting
 role: User, Developer
 level: Beginner
 exl-id: 7dbc66ab-a468-40ff-9db2-b33e4fd27754
-TQID: https://experienceleague.adobe.com/fVo8tGw-kPgGgB7djOQr8tv5MoRvrPr-MF2bzYYKDgI
+TQID: 'https://experienceleague.adobe.com/fVo8tGw-kPgGgB7djOQr8tv5MoRvrPr-MF2bzYYKDgI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic reporting
+subfeature_v2:
+  - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+    internal-label: Reporting interface
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Reporting
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 989
-ht-degree: 88%
-
+source-wordcount: '989'
+ht-degree: 97%
 ---
-
 # Utilisation des cubes pour explorer les données{#use-cubes-to-create-reports}
 
 Utilisez des cubes pour créer des rapports, ainsi que pour identifier et sélectionner des données dans la base de données. Vous pouvez ainsi :
@@ -45,7 +56,7 @@ Pour créer un rapport basé sur un cube existant, procédez comme suit :
 
 1. Cliquez sur le bouton **[!UICONTROL Créer]** pour valider : vous accédez alors à la page de configuration et de visualisation du rapport.
 
-   Par défaut, les deux premières dimensions disponibles sont proposées en lignes et en colonnes, mais aucune valeur n’est affichée dans le tableau. Pour générer le tableau, cliquez sur l&#39;icône principale :
+   Par défaut, les deux premières dimensions disponibles sont proposées en ligne et en colonne mais aucune valeur n’est affichée dans le tableau. Pour générer le tableau, cliquez sur l’icône principale :
 
    ![](assets/cube-report-config.png)
 
@@ -127,9 +138,9 @@ Pour ajouter et configurer des mesures, procédez comme suit :
 
      Entre ces mesures, les opérateurs disponibles sont : somme, différence, multiplication et taux.
 
-   * Proportion : ce type de mesure permet de calculer le nombre d&#39;enregistrements mesurés pour une dimension donnée. Vous pouvez calculer la proportionnalité par rapport à une dimension ou une sous-dimension.
+   * Proportion : ce type de mesure vous permet de calculer le nombre d’enregistrements mesurés pour une dimension donnée. Vous pouvez calculer la proportionnalité par rapport à une dimension ou une sous-dimension.
    * Variation : cette mesure permet de calculer la variation des valeurs d&#39;un niveau.
-   * Ecart à la moyenne : ce type de mesure permet de calculer les écarts dans chaque groupe de cellules par rapport à la moyenne des valeurs. Par exemple, vous pouvez comparer le volume des achats pour tous les segments existants.
+   * Écart type : ce type de mesure vous permet de calculer les écarts dans chaque groupe de cellules par rapport à la moyenne des valeurs. Par exemple, vous pouvez comparer le volume des achats pour tous les segments existants.
 
    Sitôt créée, la mesure est ajoutée dans le rapport.
 

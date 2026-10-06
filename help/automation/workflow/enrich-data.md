@@ -6,20 +6,31 @@ feature: Workflows, Enrichment Activity
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 3b3fa15f-b16e-42c8-a2e6-03350aee1903
-TQID: https://experienceleague.adobe.com/QsJGsTwSeUjWCeXl8rWzlxFHdVl2HN29HA28matqZbs
+TQID: 'https://experienceleague.adobe.com/QsJGsTwSeUjWCeXl8rWzlxFHdVl2HN29HA28matqZbs'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: a643fca8-db7d-5178-8513-7b8f51dfd239
+    internal-label: Enrichment Activity
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 829
-ht-degree: 67%
-
+source-wordcount: '829'
+ht-degree: 100%
 ---
-
 # Enrichir les données{#enriching-data}
 
 
@@ -38,11 +49,11 @@ Un jeu concours est proposé, par le biais d&#39;une application web, aux contac
 
 ![](assets/uc1_enrich_1.png)
 
-Un contact présent dans le tableau **[!UICONTROL Destinataires]** peut être associé à plusieurs lignes dans le tableau **[!UICONTROL Résultats jeux]**. La relation entre ces deux tables est de type 1-n. Voici un exemple des logs de résultats pour un destinataire :
+Un contact présent dans la table des **[!UICONTROL Destinataires]** peut être associé à plusieurs lignes dans la table **[!UICONTROL Résultats de compétition]**. La relation entre ces deux tables est de type 1-n. Voici un exemple des logs de résultats pour une personne destinataire :
 
 ![](assets/uc1_enrich_2.png)
 
-Ce cas pratique a pour but d’envoyer des diffusions personnalisées aux personnes ayant participé au dernier jeu-concours en fonction de leurs scores les plus élevés. Le destinataire ayant obtenu la meilleure note obtient le premier prix, le destinataire ayant obtenu la deuxième meilleure note obtient un prix de consolation et tous les autres reçoivent un message leur souhaitant une meilleure chance la prochaine fois.
+Ce cas pratique a pour but d’envoyer des diffusions personnalisées aux personnes ayant participé à la dernière compétition en fonction de leurs scores les plus élevés. La personne qui a obtenu le meilleur score se voit offrir le 1er prix, celle qui a obtenu le second score reçoit un lot de consolation, et toutes les autres reçoivent un message leur proposant de retenter leur chance la prochaine fois.
 
 Pour réaliser ce cas d&#39;utilisation, nous avons créé le workflow de ciblage suivant :
 
@@ -87,7 +98,7 @@ Dans cet exemple, vous allez découvrir comment personnaliser les diffusions en 
 
    ![](assets/uc1_enrich_9.png)
 
-1. Dans l&#39;écran **[!UICONTROL Trier]**, cliquez sur le bouton **[!UICONTROL Ajouter]**, sélectionnez le champ **[!UICONTROL Score]** et cochez la case de la colonne **[!UICONTROL descendant]** pour trier les éléments des champs **[!UICONTROL Score]** par ordre décroissant. Pour chaque destinataire, l’activité d’enrichissement ajoute une ligne correspondant au score le plus élevé du dernier jeu. Cliquez sur **[!UICONTROL Suivant]**.
+1. Dans l’écran **[!UICONTROL Tri]**, cliquez sur le bouton **[!UICONTROL Ajouter]**, sélectionnez le champ **[!UICONTROL Score]** et cochez la case dans la colonne **[!UICONTROL Descendant]** afin de classer les éléments des champs **[!UICONTROL Score]** par ordre décroissant. Pour chaque destinataire, l’activité d’enrichissement ajoute une ligne correspondant au score le plus élevé du dernier jeu. Cliquez sur **[!UICONTROL Suivant]**.
 
    ![](assets/uc1_enrich_10.png)
 
@@ -95,7 +106,7 @@ Dans cet exemple, vous allez découvrir comment personnaliser les diffusions en 
 
    ![](assets/uc1_enrich_11.png)
 
-Cliquez avec le bouton droit sur la transition entrante de l&#39;activité d&#39;enrichissement et sélectionnez **[!UICONTROL Afficher la cible]**. La table de travail contient les données suivantes :
+Cliquez avec le bouton droit de la souris sur la transition entrante de l’activité d’enrichissement, et sélectionnez **[!UICONTROL Afficher la cible]**. La table de travail contient les données suivantes :
 
 ![](assets/uc1_enrich_13.png)
 
@@ -103,7 +114,7 @@ Le schéma associé est le suivant :
 
 ![](assets/uc1_enrich_15.png)
 
-Renouvelez cette opération sur la transition sortante de l&#39;activité d&#39;enrichissement. Nous pouvons constater que les données liées aux scores des destinataires ont été ajoutées. Le score le plus élevé de chaque destinataire a été récupéré.
+Renouvelez cette opération sur la transition sortante de l’activité d’enrichissement. Nous pouvons constater que les données liées aux scores des destinataires ont été ajoutées. Le score le plus élevé de chaque destinataire a été récupéré.
 
 ![](assets/uc1_enrich_12.png)
 
@@ -117,11 +128,11 @@ Afin de répartir les destinataires en fonction de leur score, une activité de 
 
 ![](assets/uc1_enrich_18.png)
 
-1. Un premier sous-ensemble (**gagnant**) a été défini pour inclure le destinataire ayant le score le plus élevé. Pour ce faire, définissez une limitation du nombre d’enregistrements, appliquez un tri décroissant au score et limitez le nombre d’enregistrements à 1.
+1. Un premier sous-ensemble (**Gagnant ou gagnante**) a été défini pour inclure la personne destinataire ayant le score le plus élevé. Pour cela, définissez une limitation du nombre d’enregistrements, appliquez un tri descendant sur le score, et limitez le nombre d’enregistrements à 1.
 
    ![](assets/uc1_enrich_16.png)
 
-1. Le deuxième sous-ensemble (**deuxième place**) comprend le destinataire ayant le deuxième score le plus élevé. La configuration est la même que pour le premier sous-ensemble.
+1. Le deuxième sous-ensemble (**Deuxième place**), inclut la personne destinataire ayant obtenu le second meilleur score. La configuration est la même que celle du premier sous-ensemble.
 
    ![](assets/uc1_enrich_17.png)
 

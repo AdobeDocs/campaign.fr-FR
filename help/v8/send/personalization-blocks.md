@@ -6,22 +6,29 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
-TQID: https://experienceleague.adobe.com/741rGWSBuFksbOfXbuszEXq56DOI-Pfg8tEiHQLhQf8
+TQID: 'https://experienceleague.adobe.com/741rGWSBuFksbOfXbuszEXq56DOI-Pfg8tEiHQLhQf8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 13af5358-448e-5a4a-850b-0db592bb0f8f
+    internal-label: Personalization
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 722
-ht-degree: 88%
-
+source-wordcount: '722'
+ht-degree: 97%
 ---
-
 # Utiliser les blocs de personnalisation{#personalization-blocks}
 
 Les blocs de personnalisation sont du contenu dynamique, qui contiennent un rendu spécifique que vous pouvez insérer dans vos diffusions. Vous pouvez par exemple ajouter un logo, un message de salutations ou un lien vers une page miroir.
@@ -66,7 +73,7 @@ Les blocs de personnalisation intégrés sont les suivants :
 
 >[!IMPORTANT]
 >
->La version 8.9.3 d’comprend une mise à jour de la liste autorisée URL externe. Si un bloc de personnalisation personnalisé fait référence à une URL externe (par exemple, une image hébergée en externe), assurez-vous que le domaine est ajouté à la liste autorisée de données approuvée de votre instance afin que celle-ci continue à se charger sans interruption. En tant qu’administrateur ou administratrice de Campaign, utilisez le Panneau de Contrôle pour ajouter et gérer des URL placées sur la liste autorisée. Pour connaître la procédure, voir [Ajout d’autorisations d’URL](https://experienceleague.adobe.com/fr/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
+>La version 8.9.3 d’comprend une mise à jour de la liste autorisée URL externe. Si un bloc de personnalisation personnalisé fait référence à une URL externe (par exemple, une image hébergée en externe), assurez-vous que le domaine est ajouté à la liste autorisée approuvée de votre instance afin que la ressource continue à se charger sans interruption. En tant qu’administrateur ou administratrice de Campaign, utilisez le panneau de contrôle pour ajouter et gérer des URL placées sur la liste autorisée. Pour connaître la procédure, consultez [Ajouter des autorisations d’URL](https://experienceleague.adobe.com/fr/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
 
 Vous pouvez définir de nouveaux blocs de contenu personnalisés à insérer à partir de l’icône de personnalisation.
 

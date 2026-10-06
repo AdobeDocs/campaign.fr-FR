@@ -4,22 +4,32 @@ title: Application de règles de typologie
 description: Découvrez comment appliquer des règles de typologie
 feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
-TQID: https://experienceleague.adobe.com/CqL2-BL-DuUY2-tMG4WD-ih3YJw0u3BuIkcL4HavFlg
+TQID: 'https://experienceleague.adobe.com/CqL2-BL-DuUY2-tMG4WD-ih3YJw0u3BuIkcL4HavFlg'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
+subfeature_v2:
+  - id: e5fb657f-3c0a-4fcc-9980-3589a23ab4de
+    internal-label: Typology rules
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1031
-ht-degree: 84%
-
+source-wordcount: '1031'
+ht-degree: 99%
 ---
-
 # Application de règles de typologie{#applying-rules}
 
 ## Application dʼune typologie à une diffusion {#apply-a-typology-to-a-delivery}
@@ -55,7 +65,7 @@ En effet, les règles de typologie peuvent ne concerner que certaines diffusions
 
 Pour définir les critères d&#39;application d&#39;une règle, cliquez sur le lien **[!UICONTROL Editer les critères d&#39;application de la règle...]**, dans l&#39;onglet **[!UICONTROL Général]**.
 
-Utilisez ensuite le [requêteur](../../v8/start/query-editor.md) pour définir les conditions de filtrage. Dans l&#39;exemple suivant, la règle de capacité ne concerne que les diffusions dont le libellé contient le mot &#39;offre&#39; ou les diffusions créées avant le 1er avril 2013.
+Utilisez ensuite le [requêteur](../../v8/start/query-editor.md) pour définir les conditions de filtrage. Dans l’exemple ci-dessous, seules les diffusions dont le libellé contient le terme « offre » et celles créées avant le 1er avril 2013, sont concernées par la règle de capacité.
 
 ![](assets/campaign_opt_create_capacity_criterion.png)
 
@@ -65,7 +75,7 @@ Utilisez ensuite le [requêteur](../../v8/start/query-editor.md) pour définir l
 
 ## Réglage de la fréquence des calculs {#adjust-calculation-frequency}
 
-Les arbitrages sont automatiquement ré-exécutés chaque nuit, via le workflow de nettoyage de la base de données. Toutefois, les valeurs peuvent être enregistrées au-delà de cette période.
+Les arbitrages sont réexécutés automatiquement chaque nuit, via le workflow de nettoyage de la base de données. Vous pouvez toutefois conserver les valeurs au-delà de ce délai.
 
 En effet, certains calculs utilisent des valeurs qui ne sont pas modifiées tous les jours. Il est donc inutile de recalculer les données chaque jour et de surcharger inutilement la base de données. Par exemple, si un processus enrichit la base de données marketing avec des informations relatives aux affinités et aux achats des clients et des clientes sur une base hebdomadaire, les données basées sur ces valeurs n’ont pas besoin d’être recalculées tous les jours.
 
@@ -124,7 +134,7 @@ Les valeurs possibles sont les suivantes :
 
 * **[!UICONTROL Au début de la personnalisation]**
 
-  Cette phase doit être sélectionnée si le contrôle concerne la validation de la personnalisation du message. La personnalisation des messages est réalisée au cours de la phase d’analyse.
+  Cette phase doit être sélectionnée lorsque le contrôle porte sur la validation de la personnalisation des messages. La personnalisation des messages est réalisée au cours de la phase d’analyse.
 
 * **[!UICONTROL A la fin de l&#39;analyse]**
 
@@ -134,7 +144,7 @@ Les valeurs possibles sont les suivantes :
 
 ### Contrôle du trafic SMTP sortant {#control-outgoing-smtp-traffic}
 
-Par défaut, vous pouvez utiliser le champ **[!UICONTROL Gestion des affinités avec les adresses IP]** pour lier les diffusions au serveur de diffusion (MTA) avec cette affinité. Ainsi, il est possible de limiter l’envoi d’emails pour des diffusions spécifiques, vers certaines machines ou adresses de sortie.
+Vous pouvez utiliser le champ **[!UICONTROL Gestion des affinités avec les adresses IP]** pour associer les diffusions au serveur de diffusions (MTA) qui gère l’affinité en question. Ainsi, il est possible de limiter l’envoi d’emails pour des diffusions spécifiques, vers certaines machines ou adresses de sortie.
 
 ![](assets/campaign_opt_select_ip_affinity.png)
 
@@ -148,7 +158,7 @@ Par défaut, vous pouvez utiliser le champ **[!UICONTROL Gestion des affinités 
 
 ### Campaign Optimization et le Marketing Distribué {#campaign-optimization-and-distributed-marketing}
 
-L&#39;onglet **[!UICONTROL Marketing Distribué]** permet de définir le re-mapping des typologies et/ou des règles qui s&#39;applique lorsqu&#39;une campagne partagée est commandée et/ou réservée. Les typologies/règles définies pour une entité locale (liées à celles définies pour l&#39;entité centrale) remplacent les règles/typologies liées à l&#39;entité centrale. Le recodification permet d&#39;adapter les règles des entités centrales aux entités locales qui commandent l&#39;opération.
+L’onglet **[!UICONTROL Marketing distribué]** vous permet de définir le nouveau mapping des typologies et/ou des règles qui s’applique lorsqu’une campagne partagée est commandée et/ou réservée. Les typologies/règles définies pour une entité locale (liées à celles définies pour l’entité centrale) remplacent les règles/typologies liées à l’entité centrale. Le nouveau mapping vous permet d’adapter les règles d’entité centrale aux entités locales qui commandent la campagne.
 
 ![](assets/simu_campaign_opti_distrib_mkg.png)
 

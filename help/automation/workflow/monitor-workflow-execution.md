@@ -6,28 +6,37 @@ feature: Workflows
 role: Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
-TQID: https://experienceleague.adobe.com/Rk6eyM-0GkwgC4yiewGSiB-6zr3x1ySJI6S72KzHNb0
+TQID: 'https://experienceleague.adobe.com/Rk6eyM-0GkwgC4yiewGSiB-6zr3x1ySJI6S72KzHNb0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: cebd7cfa-b9fa-4d9f-a2ab-fce31f32c4a3
+    internal-label: Audit trail
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 2017
-ht-degree: 71%
-
+source-wordcount: '2017'
+ht-degree: 99%
 ---
-
 # Surveiller l’exécution des workflows {#monitoring-workflow-execution}
 
 Cette section présente des informations sur la manière de surveiller l’exécution de vos workflows.
@@ -38,21 +47,21 @@ En outre, les administrateurs de l’instance peuvent utiliser le **journal d’
 
 ## Afficher la progression {#displaying-progress}
 
-Vous pouvez suivre l&#39;exécution en affichant la progression à partir de l&#39;icône correspondante de la barre d&#39;outils.
+Vous pouvez su l&#39;exécution en affichant la progression à partir de l&#39;icône correspondante de la barre d&#39;outils.
 
 L&#39;icône **[!UICONTROL Afficher la progression]** permet de matérialiser à l&#39;écran l&#39;exécution, l&#39;état et le résultat des activités.
 
 ![](assets/s_user_segmentation_toolbar_progr.png)
 
-Lorsque cette option est sélectionnée, les activités exécutées apparaissent en bleu, les activités en attente apparaissent en clignotant, les avertissements apparaissent en orange et les erreurs en rouge. Cette option affiche également le résultat des activités sur leur transition sortante, suivi du libellé du résultat tel que défini dans les propriétés de l&#39;activité et la durée du traitement s&#39;il dépasse une seconde
+Lorsque cette option est sélectionnée, les activités exécutées apparaissent en bleu, les activités en attente clignotent, les avertissements sont affichés en orange et les erreurs en rouge. Cette option affiche également le résultat des activités sur leur transition sortante, suivi du libellé du résultat tel qu’il a été défini dans les propriétés de l’activité et de la durée du traitement, lorsqu’elle est supérieure à une seconde.
 
 ![](assets/s_user_segmentation_results.png)
 
 ## Afficher le log {#displaying-logs}
 
-Le journal contient l’historique ou le journal d’audit du workflow. Il enregistre toutes les actions des utilisateurs, toutes les opérations effectuées et les erreurs rencontrées. Vous pouvez ainsi :
+Le log contient l’historique ou le journal d’audit du workflow. Il enregistre toutes les actions des utilisateurs et utilisatrices, toutes les opérations effectuées et les erreurs rencontrées. Vous pouvez ainsi :
 
-* Sélectionnez l’onglet **[!UICONTROL Tracking]** dans le détail. Cette liste contient tous les messages de workflow.
+* Sélectionnez l’onglet **[!UICONTROL Tracking]** du détail. Cette liste contient tous les messages de workflow.
 
   ![](assets/new-workflow-display-log-tab.png)
 
@@ -68,11 +77,11 @@ Le journal contient l’historique ou le journal d’audit du workflow. Il enreg
 
   ![](assets/new-workflow-display-tasks-activity.png)
 
-  Le bouton **[!UICONTROL Détails...]** permet d&#39;afficher toutes les informations complémentaires relatives à l&#39;exécution de l&#39;activité. Vous pouvez par exemple afficher l’opérateur validant et, le cas échéant, le commentaire qu’il a saisi lors de la validation.
+  Le bouton **[!UICONTROL Détails…]** vous permet d’afficher toutes les informations complémentaires relatives à l’exécution de l’activité. Vous pouvez par exemple afficher l’opérateur validant et, le cas échéant, le commentaire qu’il a saisi lors de la validation.
 
 >[!NOTE]
 >
->Le journal n’est pas purgé lors du redémarrage d’un workflow. Tous les messages sont conservés. Si vous souhaitez ignorer les messages d’une exécution précédente, vous devez purger l’historique.
+>Le log n’est pas purgé lors du redémarrage d’un workflow. Tous les messages sont conservés. Si ne vous pas conserver les messages d’une exécution précédente, vous devez purger l’historique.
 
 Le log affiche la liste chronologique des messages d&#39;exécution des activités du workflow de ciblage.
 
@@ -86,23 +95,23 @@ Le log affiche la liste chronologique des messages d&#39;exécution des activit�
 
 * Log d&#39;une activité
 
-  Vous pouvez également consulter le journal de l’exécution et les détails de chaque activité. Vous avez le choix entre les deux méthodes suivantes :
+  Vous pouvez également visualiser le log et les détails d’exécution de chaque activité. Vous avez le choix entre les deux méthodes suivantes :
 
-   1. Sélectionnez l&#39;activité visée et cliquez sur l&#39;icône **[!UICONTROL Afficher les tâches et le log]**.
+  1. Sélectionnez l&#39;activité visée et cliquez sur l&#39;icône **[!UICONTROL Afficher les tâches et le log]**.
 
-      ![](assets/s_user_segmentation_show_logs.png)
+     ![](assets/s_user_segmentation_show_logs.png)
 
-      La section inférieure du diagramme affiche alors deux onglets : Log et Tâches.
+     La section inférieure du diagramme affiche alors deux onglets : Log et Tâches.
 
-      La sélection d&#39;une activité sur le diagramme agit comme un filtre sur le log et la liste des tâches.
+     La sélection d&#39;une activité sur le diagramme agit comme un filtre sur le log et la liste des tâches.
 
-      ![](assets/s_user_segmentation_logs.png)
+     ![](assets/s_user_segmentation_logs.png)
 
-   1. Cliquez sur l&#39;activité visée avec le bouton droit de la souris et choisissez **[!UICONTROL Afficher le log]**.
+  1. Cliquez sur l&#39;activité visée avec le bouton droit de la souris et choisissez **[!UICONTROL Afficher le log]**.
 
-      ![](assets/s_user_segmentation_logs_menu.png)
+     ![](assets/s_user_segmentation_logs_menu.png)
 
-      Le log est alors affiché dans une fenêtre distincte.
+     Le log est alors affiché dans une fenêtre distincte.
 
 ## Purger l&#39;historique {#purging-the-logs}
 
@@ -112,15 +121,15 @@ L’historique d’un workflow n’est pas purgé automatiquement : tous les me
 
 ## Tables de travail et schémas des workflows {#worktables-and-workflow-schema}
 
-Le workflow véhicule des tables de travail qui peuvent être manipulées via certaines activités. Adobe Campaign permet, via les activités de Data Management, de modifier, renommer et enrichir les colonnes des tables de travail du workflow, par exemple pour les aligner sur la nomenclature en fonction des besoins du client, collecter des informations complémentaires sur le co-titulaire d&#39;un contrat, etc.
+Le workflow véhicule des tables de travail qui peuvent être manipulées via certaines activités. Adobe Campaign permet, via les activités de Data Management, de modifier, renommer et enrichir les colonnes des tables de travail du workflow, par exemple pour les aligner sur la nomenclature en fonction des besoins du client ou de la cliente, collecter des informations complémentaires sur la personne co-titulaire d’un contrat, etc.
 
-Il est également possible de créer des liens entre différentes dimensions de travail et de définir des changements de dimension. Par exemple, pour chaque contrat enregistré dans la base de données, indiquez le titulaire principal et utilisez les données du co-titulaire dans les informations complémentaires.
+Il est également possible de créer des liens entre des dimensions de travail différentes et de définir des changements de dimension. Par exemple, pour chaque contrat enregistré dans la base de données, s’adresser à la personne titulaire principale et utiliser les données relatives à la ou aux personnes co-titulaires dans les informations complémentaires.
 
 Les tables de travail du workflow sont automatiquement supprimées lorsque le workflow est passif. Si vous souhaitez conserver une table de travail, enregistrez-la dans une liste via l’activité **[!UICONTROL Mise à jour de liste]** (voir [Mise à jour de liste](list-update.md)).
 
 ## Gérer les erreurs {#managing-errors}
 
-Lorsqu’une erreur se produit, le workflow se met en pause et l’activité qui était en cours d’exécution lorsque l’erreur s’est produite clignote alors en rouge. Dans la vue d’ensemble du workflow, sous l’onglet **[!UICONTROL Supervision]** et le lien **[!UICONTROL Workflows]**, vous pouvez afficher les workflows avec des erreurs uniquement, comme illustré ci-dessous.
+Lorsqu’une erreur se produit, le workflow se met en pause et l’activité qui était en cours d’exécution lorsque l’erreur s’est produite clignote alors en rouge. Dans la vue d’ensemble du workflow, sous l’onglet **[!UICONTROL Su]** et le lien **[!UICONTROL Workflows]**, vous pouvez afficher les workflows avec des erreurs uniquement, comme illustré ci-dessous.
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
@@ -132,7 +141,7 @@ Lorsqu’un workflow est en erreur, les opérateurs et opératrices appartenant 
 
 ![](assets/wf-properties_select-supervisors.png)
 
-Le contenu de la notification est paramétré dans le modèle par défaut **[!UICONTROL Notification du responsable d&#39;un workflow]** : ce modèle est sélectionné dans l&#39;onglet **[!UICONTROL Exécution]** des propriétés du workflow. La notification indique le nom du workflow en erreur et la tâche concernée.
+Le contenu de la notification est configuré dans le modèle par défaut **[!UICONTROL Notification de la personne responsable d’un workflow]** : ce modèle est sélectionné dans l’onglet **[!UICONTROL Exécution]** des propriétés du workflow. La notification indique le nom du workflow en erreur et la tâche concernée.
 
 Exemple de notification :
 
@@ -144,7 +153,7 @@ Le lien permet d’accéder en mode Web à la console cliente Adobe Campaign et
 
 Vous pouvez paramétrer le workflow pour qu’il ne se mette pas en pause et continue son exécution en cas d’erreur. Pour ce faire, modifiez les **[!UICONTROL Propriétés]** du workflow et dans la section **[!UICONTROL Gestion des erreurs]**, sélectionnez **[!UICONTROL Ignorer]** dans le champ **[!UICONTROL En cas d’erreur]**. Vous pouvez indiquer le nombre d’erreurs qui peuvent être ignorées avant la suspension du processus.
 
-Dans ce cas, la tâche d&#39;erreur est abandonnée. Ce mode est particulièrement adapté aux workflows conçus pour relancer ultérieurement la campagne (actions périodiques).
+Dans ce cas, la tâche en erreur est abandonnée. Ce mode est particulièrement adapté aux workflows conçus pour retenter la campagne ultérieurement (actions périodiques).
 
 ![](assets/wf_edit_properties_for_error_mgt.png)
 
@@ -154,13 +163,13 @@ Dans ce cas, la tâche d&#39;erreur est abandonnée. Ce mode est particulièreme
 
 ## Traiter les erreurs {#processing-errors}
 
-Concernant les activités, l&#39;option **[!UICONTROL Traiter les erreurs]** affiche une transition spécifique qui sera activée si une erreur est générée. Dans ce cas, le workflow ne passe pas en mode d’erreur et l’exécution se poursuit.
+Au niveau des activités, l’option **[!UICONTROL Traiter les erreurs]** fait apparaître une transition particulière qui sera activée si une erreur est générée. Dans ce cas, le workflow ne passe pas en état d’erreur et l’exécution se poursuit.
 
 Les erreurs prises en compte sont les erreurs du système de fichiers (impossible de déplacer un fichier, impossible d&#39;accéder au répertoire, etc.).
 
-Cette option ne traite pas les erreurs liées au paramétrage de l&#39;activité, c&#39;est-à-dire des valeurs invalides. Les erreurs liées à une configuration défectueuse n’activeront pas cette transition (répertoire inexistant, etc.).
+Cette option ne traite pas les erreurs liées au paramétrage de l&#39;activité, c&#39;est-à-dire des valeurs invalides. Les erreurs liées à une mauvaise configuration n’activeront pas cette transition (répertoire inexistant, etc.).
 
-Si un workflow est en pause (manuellement ou automatiquement après une erreur), le bouton **[!UICONTROL Démarrer]** redémarre l’exécution du workflow à l’endroit où il a été arrêté. L’activité en erreur (ou en pause) sera exécutée à nouveau. Les activités précédentes ne sont pas réexécutées.
+Si un workflow est en mis en pause (manuellement ou automatiquement suite à une erreur), le bouton **[!UICONTROL Démarrer]** permet de redémarrer l’exécution du workflow là où elle s’est arrêtée. L’activité en erreur (ou en pause) sera exécutée à nouveau. Les activités précédentes ne sont pas exécutées à nouveau.
 
 Pour exécuter à nouveau toutes les activités du workflow, utilisez le bouton **[!UICONTROL Redémarrer]**.
 
@@ -180,7 +189,7 @@ Pour accéder à cette page, allez dans l’onglet **[!UICONTROL Supervision]** 
 
 ![](assets/wf-monitoring_from-homepage.png)
 
-Pour afficher tous les workflows, cliquez sur le lien **[!UICONTROL Workflows]**. Utilisez la liste déroulante pour afficher les workflows de la plateforme en fonction de leur état.
+Pour afficher tous les workflows, cliquez sur le lien **[!UICONTROL Workflows]**. Utilisez la liste déroulante pour afficher les workflows de la plateforme selon leur état.
 
 ![](assets/wf-monitoring_edit-wf.png)
 
@@ -190,7 +199,7 @@ Lorsqu&#39;un workflow est en erreur, cliquez sur le lien pour l&#39;ouvrir et v
 
 ## Empêcher les exécutions multiples simultanées {#preventing-simultaneous-multiple-executions}
 
-Un seul workflow peut avoir plusieurs exécutions s’exécutant en même temps. Dans certains cas, il est préférable d’éviter que cela se produise.
+Il peut arriver que plusieurs exécutions opèrent en même temps sur un même workflow. Dans certains cas, ce processus doit être empêché.
 
 Par exemple, il se peut qu’un planificateur déclenche l’exécution du workflow une fois par heure, mais parfois, l’exécution du workflow dans son ensemble dure plus d’une heure. Vous pouvez ignorer l’exécution si le workflow est déjà en cours d’exécution.
 
@@ -243,13 +252,13 @@ Cette section présente un cas d’utilisation : [Coordonner les mises à jour 
 
 Les workflows utilisent beaucoup de tables de travail qui occupent de l&#39;espace et finissent par ralentir l&#39;ensemble de la plateforme s&#39;ils ne sont pas maintenus.
 
-Le workflow **Nettoyage de la base** , accessible à partir du nœud **Administration > Exploitation > Workflows techniques** permet de supprimer les données obsolètes afin d&#39;éviter une croissance exponentielle de la base de données. Le workflow est déclenché automatiquement sans intervention de l’utilisateur.
+Le workflow **Nettoyage de la base de données**, accessible à partir du nœud **Administration > Exploitation > Workflows techniques**, vous permet de supprimer les données obsolètes afin d’éviter une croissance exponentielle de la base de données. Le workflow se déclenche automatiquement sans intervention de l’utilisateur ou de l’utilisatrice.
 
 Vous pouvez également créer des workflows techniques spécifiques pour purger les données inutiles qui occupent de l’espace. Référez-vous à   et à cette [section](#purging-the-logs).
 
 ## Gérer les workflows en pause {#handling-of-paused-workflows}
 
-Par défaut, si un workflow est en pause, ses tables de travail ne sont jamais purgées. À partir du build 8880, les workflows qui sont restés trop longtemps en pause sont automatiquement arrêtés et leurs tables de travail sont purgées. Ce comportement est déclenché comme suit :
+Par défaut, si un workflow est en pause, ses tables de travail ne sont jamais purgées. Depuis le build 8880, les workflows ayant été dans un état « en pause » pendant trop longtemps sont automatiquement arrêtés et leurs tables de travail sont purgées. Ce comportement est déclenché comme suit :
 
 * Les workflows qui sont en pause depuis plus de 7 jours apparaissent sous la forme d’un avertissement dans le tableau de bord de surveillance (et l’API de surveillance) et une notification est envoyée au groupe des personnes chargées de la supervision.
 * Cette situation se produit chaque semaine, lorsque le workflow technique **[!UICONTROL cleanupPausedWorkflows]** est déclenché. Pour plus d’informations sur le workflow, reportez-vous à [cette section](delivery.md).
@@ -257,7 +266,7 @@ Par défaut, si un workflow est en pause, ses tables de travail ne sont jamais p
 
 Ces périodes peuvent être configurées à l&#39;aide de l&#39;option NmsServer_PausedWorkflowPeriod.
 
-Les superviseurs de workflow sont avertis. Le créateur et le dernier utilisateur ou la dernière utilisatrice ayant modifié le workflow sont également avertis. Les administrateurs ne reçoivent pas les notifications.
+Les personnes responsables des workflows sont averties. Le créateur ou la créatrice et la dernière personne ayant modifié le workflow sont également informés. Les administrateurs et administratrices ne reçoivent pas les notifications.
 
 ## Filtrer des workflows en fonction de leur état {#filtering-workflows-status}
 

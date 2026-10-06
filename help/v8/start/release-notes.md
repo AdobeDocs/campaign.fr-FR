@@ -3,23 +3,34 @@ title: Notes de mise à jour de Campaign v8
 description: Dernière version de Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-TQID: https://experienceleague.adobe.com/Zdo52RLQFbxlRNgE54yLDn3yAMmmOqxKyRhnCJa0Xwg
+TQID: 'https://experienceleague.adobe.com/Zdo52RLQFbxlRNgE54yLDn3yAMmmOqxKyRhnCJa0Xwg'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
+    internal-label: Release notes
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
+    internal-label: Security
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 2107
-ht-degree: 6%
-
+source-wordcount: '2107'
+ht-degree: 11%
 ---
-
 # Dernières versions {#latest-release}
 
 Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs des **dernières versions** de Campaign v8 (console). Pour en savoir plus sur les publications, les versions et les mises à niveau de Campaign, consultez [cette page](upgrades.md). Les autres versions sont répertoriées dans la section Versions précédentes de cette documentation.
@@ -34,11 +45,11 @@ _11 août 2026_
 
 Cette version comprend des correctifs de sécurité qui renforcent la position de sécurité globale de votre environnement Campaign. En tant que client hébergé, ces correctifs sont appliqués par Adobe dans le cadre de la mise à niveau, sans qu’aucune action ne soit requise de votre part.
 
-### Mise à jour de la liste autorisée d’URL externe {#url-allow-list-update-8-9-3}
+### Mise à jour de la liste des URL externes autorisées {#url-allow-list-update-8-9-3}
 
-Cette version comprend une mise à jour de la liste autorisée URL externe utilisée pour le contenu de diffusion et les pièces jointes. Assurez-vous que tous les domaines que vous référencez actuellement sont ajoutés à la liste autorisée approuvée de votre instance.
+Cette version comprend une mise à jour de la liste des URL externes autorisées, utilisée pour la diffusion de contenu et les pièces jointes. Assurez-vous que tous les domaines que vous référencez actuellement sont ajoutés à la liste autorisée approuvée de votre instance.
 
-En tant qu’administrateur ou administratrice de Campaign, utilisez le Panneau de Contrôle pour ajouter à la liste autorisée de données les URL externes actuellement utilisées dans vos diffusions et suivez le même processus pour toute nouvelle URL externe à l’avenir. Terminez cette activité d’ici le 5 septembre 2026 afin d’éviter tout impact sur les diffusions affectées. Pour connaître la procédure, voir [Ajout d’autorisations d’URL](https://experienceleague.adobe.com/fr/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
+En tant qu’administrateur ou administratrice de Campaign, utilisez le panneau de contrôle pour ajouter à la liste autorisée les URL externes actuellement utilisées dans vos diffusions et suivez le même processus pour toute nouvelle URL externe à l’avenir. Terminez cette activité d’ici le 5 septembre 2026 afin d’éviter tout impact sur les diffusions concernées. Pour connaître la procédure, consultez [Ajouter des autorisations d’URL](https://experienceleague.adobe.com/fr/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
 
 ### Connecteur Adobe Analytics mis à niveau vers l’API Analytics 2.0 {#analytics-2-0-8-9-3}
 

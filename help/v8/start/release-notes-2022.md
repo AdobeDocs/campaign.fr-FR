@@ -3,22 +3,32 @@ title: Notes de mise à jour de Campaign v8 2022
 description: Liste des fonctionnalités et améliorations des versions 2022 de Campaign v8.
 feature: Release Notes
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-TQID: https://experienceleague.adobe.com/PCye0NRsbFxzoRgD-2apCDpph-gvtX0eboiuzdmVQZE
+TQID: 'https://experienceleague.adobe.com/PCye0NRsbFxzoRgD-2apCDpph-gvtX0eboiuzdmVQZE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
+    internal-label: Release notes
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 531670de4c2f740e4f0a4b96049b23eb8000e40d
+    internal-label: Privacy
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1942
-ht-degree: 96%
-
+source-wordcount: '1952'
+ht-degree: 97%
 ---
-
 # Notes de mise à jour 2022{#2022-rn}
 
 Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs des **versions 2022 de Campaign v8**.
@@ -77,7 +87,7 @@ _samedi 30 septembre 2022_
 <tr> 
 <td> <p>Le <a href="../send/twitter.md">canal social X</a> est désormais disponible avec Campaign v8. Vous pouvez ainsi :</p>
 <ul> 
-<li><p>Envoyer des messages sur X (anciennement appelé Twitter) : Adobe Campaign vous permet de publier des messages directement sur votre compte X. Vous pouvez également envoyer des messages directs à tous vos abonnés.
+<li><p>Envoyer des messages sur X (anciennement Twitter) : Adobe Campaign vous permet de publier des messages directement sur votre compte X. Vous pouvez également envoyer des messages directs à tous les abonnées et abonnés de vos comptes.
 </p></li>
 <li><p>Collecter de nouveaux contacts : Adobe Campaign peut récupérer automatiquement les données de profil, ce qui vous permet ainsi d’exécuter des campagnes de ciblage et, lorsque cela est possible, d’implémenter des stratégies cross-canal.
 </p></li>
@@ -228,7 +238,7 @@ _jeudi 18 mai 2022_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Le marketing distribué de Campaign permet de mettre en place des opérations collaboratives entre les entités centrales (siège social, services marketing, etc.) et les entités locales (points de vente, agences régionales, etc.). Depuis un espace de travail partagé (kits de campagne), vous pouvez créer des modèles d’opération et les proposer à vos entités locales.</p>
+<td> <p>Le marketing distribué de Campaign permet de mettre en place des opérations collaboratives entre les entités centrales (siège social, services marketing, etc.) et entités locales (magasins, agences régionales, etc.). Depuis un espace de travail partagé (kits de campagne), vous pouvez créer des modèles d’opération et les proposer à vos entités locales.</p>
 <p>Pour plus d'informations, consultez la <a href="../start/campaigns.md#distributed-marketing-add-on">documentation détaillée</a>.</p>
 </td> 
 </tr> 

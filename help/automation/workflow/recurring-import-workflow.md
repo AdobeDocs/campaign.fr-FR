@@ -6,21 +6,31 @@ feature: Workflows, Data Management
 role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 13f0091b-b62c-47df-9658-6631ba1cf03a
-TQID: https://experienceleague.adobe.com/vIpmjGcrExOXwjT5E81kTdPKSzs79XZumZDKU-hWqSI
+TQID: 'https://experienceleague.adobe.com/vIpmjGcrExOXwjT5E81kTdPKSzs79XZumZDKU-hWqSI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Data management
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1146
-ht-degree: 82%
-
+source-wordcount: '1146'
+ht-degree: 100%
 ---
-
 # Configuration d’un workflow d’import récurrent {#setting-up-a-recurring-import}
 
 
@@ -49,7 +59,7 @@ Cet exemple montre comment pré-paramétrer un workflow qui pourra être réutil
      Smith;Hayden;23/05/1989;hayden.smith@mailtest.com;123456
      ```
 
-   * Dans la section **[!UICONTROL Nom du fichier à charger]**, sélectionnez **[!UICONTROL Télécharger un fichier à partir de l’ordinateur local]** et laissez le champ vide. A chaque fois qu’un nouveau workflow sera créé à partir de ce modèle, vous pourrez préciser ici le fichier souhaité (tant qu’il correspond à la structure définie).
+   * Dans la section **[!UICONTROL Nom du fichier à charger]**, sélectionnez **[!UICONTROL Charger un fichier présent sur le poste local]** et laissez le champ vide. A chaque fois qu’un nouveau workflow sera créé à partir de ce modèle, vous pourrez préciser ici le fichier souhaité (tant qu’il correspond à la structure définie).
 
      Toutes les options sont utilisables, mais il faut modifier le modèle en conséquence. Par exemple, en sélectionnant **[!UICONTROL Spécifié dans la transition]**, vous pouvez ajouter une activité **[!UICONTROL Transfert de fichier]** en amont pour récupérer le fichier à importer à partir d’un serveur FTP/SFTP. Avec la connexion S3 ou SFTP, vous pouvez également importer des données de segments vers Adobe Campaign avec Adobe Real-time Customer Data Platform. Pour plus d’informations, consultez la [documentation d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=fr){target="_blank"}.
 
@@ -70,13 +80,13 @@ Cet exemple montre comment pré-paramétrer un workflow qui pourra être réutil
 
    * Dans l&#39;onglet **[!UICONTROL Général]** de l&#39;activité, sélectionnez **[!UICONTROL Utiliser les données additionnelles uniquement]** comme paramètre de filtrage et vérifiez que la **[!UICONTROL Dimension de ciblage]** est paramétrée automatiquement sur **[!UICONTROL Enrichissement]**.
 
-     Cochez l&#39;option **[!UICONTROL Générer le complémentaire]** pour voir si un enregistrement ne peut pas être inséré dans la base de données. Le cas échéant, vous pourrez alors appliquer d’autres traitements aux données complémentaires : export de fichier, mise à jour de liste, etc.
+     Cochez l’option **[!UICONTROL Générer le complémentaire]** pour voir si des enregistrements n’ont pas pu être intégrés dans la base de données. Le cas échéant, vous pourrez alors appliquer d’autres traitements aux données complémentaires : export de fichier, mise à jour de liste, etc.
 
-   * Dans le premier sous-ensemble de l&#39;onglet **[!UICONTROL Sous-ensembles]**, ajoutez une condition de filtrage sur la population entrante afin de ne sélectionner que les enregistrements dont la clé primaire du destinataire n&#39;est pas égale à 0. Ainsi, les données du fichier qui sont réconciliées avec les destinataires de la base de données sont sélectionnées dans ce sous-ensemble.
+   * Dans le premier sous-ensemble de l’onglet **[!UICONTROL Sous-ensembles]**, ajoutez une condition de filtrage sur la population entrante pour sélectionner uniquement les enregistrements pour lesquels la clé primaire de la personne destinataire est différente de 0. De cette manière, les données du fichier réconciliées avec les destinataires de la base de données sont sélectionnées dans ce sous-ensemble.
 
      ![](assets/import_template_example3.png)
 
-   * Ajoutez un second sous-ensemble qui sélectionne les enregistrements non rapprochés contenant suffisamment de données pour être insérés dans la base de données. Par exemple : adresse email, prénom et nom de famille.
+   * Ajoutez un second sous-ensemble pour sélectionner les enregistrements non réconciliés disposant de suffisamment de données pour être intégrés dans la base de données. Par exemple : adresse email, prénom et nom de famille.
 
      Les sous-ensembles sont traités dans l&#39;ordre dans lequel ils ont été créés, ce qui veut dire que lorsque ce second sous-ensemble est traité, tous les enregistrements qui existent déjà dans la base de données sont déjà sélectionnés dans le premier sous-ensemble.
 
@@ -111,7 +121,7 @@ Cet exemple montre comment pré-paramétrer un workflow qui pourra être réutil
 
      ![](assets/import_template_example8.png)
 
-1. Après la troisième transition de l&#39;activité **[!UICONTROL Partage]**, ajoutez une activité **[!UICONTROL Extraction (fichier)]** et une activité **[!UICONTROL Transfert de fichier]** si vous souhaitez conserver une trace des données non insérées dans la base de données. Paramétrez ces activités afin d’exporter la colonne dont vous avez besoin et de transférer le fichier sur un serveur FTP ou SFTP, où vous pourrez le récupérer.
+1. Après la troisième transition de l’activité **[!UICONTROL Partage]**, ajoutez une activité **[!UICONTROL Extraction des données (fichier)]** et une activité **[!UICONTROL Transfert de fichier]** si vous voulez tracker les données non insérées dans la base de données. Paramétrez ces activités afin d’exporter la colonne dont vous avez besoin et de transférer le fichier sur un serveur FTP ou SFTP, où vous pourrez le récupérer.
 1. Ajoutez une activité **[!UICONTROL Fin]** et enregistrez le modèle de workflow.
 
 Le modèle est à présent utilisable et disponible pour chaque nouveau workflow. Il suffit alors de spécifier le fichier qui contient les données à importer dans l’activité **[!UICONTROL Chargement de données (fichier)]**.

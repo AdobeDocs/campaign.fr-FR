@@ -7,26 +7,36 @@ level: Beginner
 role: User, Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
-TQID: https://experienceleague.adobe.com/VHBQEKUthZcW2WrbNjmlIC7FzJFDqX0PykJg95sM-WI
+TQID: 'https://experienceleague.adobe.com/VHBQEKUthZcW2WrbNjmlIC7FzJFDqX0PykJg95sM-WI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Beginner
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1223
-ht-degree: 81%
-
+source-wordcount: '1223'
+ht-degree: 100%
 ---
-
 # Démarrer, mettre en pause et arrêter un workflow {#starting-a-workflow}
 
 Un workflow est toujours démarré manuellement. Au démarrage, il peut toutefois rester inactif en fonction des informations spécifiées par le biais d&#39;un planificateur (voir [Planificateur](scheduler.md)) ou d&#39;une planification d&#39;activité.
 
-Actions liées à l&#39;exécution du workflow de ciblage (lancement, arrêt, pause, etc.) sont des processus **asynchrones** : la commande est enregistrée et sera effective dès que le serveur sera disponible pour l’appliquer.
+Les actions liées à l’exécution du workflow de ciblage (lancement, arrêt, pause, etc.) sont des processus **asynchrones** : la commande est enregistrée et sera effective dès que le serveur sera disponible pour l’appliquer.
 
 La barre d&#39;outils permet de lancer et suivre l&#39;exécution du workflow.
 
@@ -44,13 +54,13 @@ Le bouton **[!UICONTROL Actions]** de la barre d’outils permet d’accéder à
 
 * **[!UICONTROL Début]**
 
-  Cette action permet de lancer l&#39;exécution d&#39;un workflow : un workflow **Terminé**, **En édition** ou **En pause** passe alors en état **Démarré**. Le moteur de workflow gère ensuite l’exécution de ce workflow. Si le workflow était en pause, il s’agit d’une reprise, sinon il s’agit d’un démarrage et les activités initiales sont activées.
+  Cette action vous permet de lancer l’exécution d’un workflow : un workflow **Terminé**, **En cours d’édition** ou **En pause** passe alors au statut **Démarré**. Le moteur de workflow gère ensuite l’exécution de ce workflow. Si le workflow était en pause, il reprend. Sinon, le workflow redémarre depuis le début et les activités initiales sont activées.
 
   Le démarrage est un processus asynchrone : la demande est enregistrée et sera traitée dès que possible par un serveur de workflow.
 
 * **[!UICONTROL Pause]**
 
-  Cette action définit le statut du workflow sur **En pause**. Aucune activité n’est activée jusqu’à la reprise du workflow. Toutefois, les opérations en cours ne sont pas suspendues.
+  Cette action définit le statut du workflow sur **En pause**. Aucune activité n’est activée jusqu’à la prochaine reprise du workflow, mais les opérations en cours ne sont pas suspendues.
 
 * **[!UICONTROL Stopper]**
 
@@ -62,7 +72,7 @@ Le bouton **[!UICONTROL Actions]** de la barre d’outils permet d’accéder à
 
 * **[!UICONTROL Arrêt inconditionnel]**
 
-  Cette option modifie le statut du workflow en **[!UICONTROL Terminé]**. Cette action ne doit être utilisée qu’en dernier recours si le processus d’arrêt normal échoue après plusieurs minutes. N’utilisez l’arrêt inconditionnel que si vous êtes sûr qu’aucune tâche de workflow n’est en cours.
+  Cette option modifie le statut du workflow sur **[!UICONTROL Terminé]**. Cette action ne doit être utilisée qu’en dernier recours si le processus d’arrêt normal échoue après plusieurs minutes. N’utilisez l’arrêt inconditionnel que si vous avez la certitude qu’aucun traitement de workflow n’est en cours.
 
   >[!CAUTION]
   >
@@ -70,17 +80,17 @@ Le bouton **[!UICONTROL Actions]** de la barre d’outils permet d’accéder à
 
 * **[!UICONTROL Redémarrer]**
 
-  Cette action arrête puis redémarre le workflow. Dans la plupart des cas, il permet de redémarrer plus rapidement. Il est également utile d&#39;automatiser le redémarrage lorsque l&#39;arrêt prend un certain temps : en effet la commande &#39;Arrêter&#39; n&#39;est pas disponible lorsque l&#39;arrêt du workflow est en cours.
+  Cette action arrête puis redémarre le workflow. Dans la plupart des cas, elle permet de redémarrer plus rapidement. Elle est également utile pour automatiser le redémarrage lorsque l’arrêt prend un certain temps : en effet, la commande Arrêter n’est pas disponible lorsque le workflow est arrêté.
 
   Notez que l’action **Redémarrer** n’efface pas les variables d’instance de workflow comme les actions **Exécution**, **Arrêter**, et **Démarrer** (l’effacement des variables d’instance se produisant lors de l’action Démarrer). Lors du redémarrage d’un workflow, les variables d’instance peuvent toujours être utilisées avec leurs valeurs conservées. Pour les effacer, vous pouvez effectuer l’une des opérations suivantes :
-   * Effectuez les actions **Arrêter** et **Démarrer**.
-   * Ajoutez le code JavaScript ci-dessous à la fin de l’exécution de votre workflow :
+  * Effectuez les actions **Arrêter** et **Démarrer**.
+  * Ajoutez le code JavaScript ci-dessous à la fin de l’exécution de votre workflow :
 
-     ```
-     var wkf = xtk.workflow.load(instance.id)
-     wkf.variables='<variables/>'
-     wkf.save()
-     ```
+    ```
+    var wkf = xtk.workflow.load(instance.id)
+    wkf.variables='<variables/>'
+    wkf.save()
+    ```
 
 * **[!UICONTROL Purge de l&#39;historique]**
 
@@ -88,7 +98,7 @@ Le bouton **[!UICONTROL Actions]** de la barre d’outils permet d’accéder à
 
 * **[!UICONTROL Démarrer en mode simulation]**
 
-  Cette option permet de lancer le workflow en mode simulation et non en mode réel. Cela signifie que lorsque vous activez ce mode, seules les activités qui n&#39;ont pas d&#39;impact sur la base de données ou le système de fichiers sont exécutées (par exemple : **[!UICONTROL Requête]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). Les activités qui ont un impact (par exemple, **[!UICONTROL Export]**, **[!UICONTROL Import]**, etc.) ainsi que celles qui les suivent (dans la même branche) ne sont pas exécutées.
+  Cette option permet de lancer le workflow en mode simulation et non en mode réel. Cela signifie que lorsque vous activez ce mode, seules les activités qui n&#39;ont pas d&#39;impact sur la base de données ou le système de fichiers sont exécutées (par exemple : **[!UICONTROL Requête]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). Les activités qui ont un impact (par exemple, **[!UICONTROL Export]**, **[!UICONTROL Import]**, etc.), ainsi que celles qui leur succèdent (dans la même branche), ne sont pas exécutées.
 
 * **[!UICONTROL Traitement anticipé des tâches en attente]**
 
@@ -110,9 +120,9 @@ Améliorez la stabilité de votre instance en implémentant les bonnes pratiques
 
   Pour éviter que les workflows soient dans un état en pause :
 
-   * Vérifiez vos workflows régulièrement pour vous assurer qu&#39;il n&#39;y a pas d&#39;erreurs inattendues.
-   * Faites en sorte que vos workflows soient aussi simples que possible, en fractionnant par exemple les workflows volumineux en plusieurs workflows différents. Vous pouvez utiliser des activités **[!UICONTROL Signal externe]** pour déclencher leur exécution selon celle d&#39;autres workflows.
-   * Évitez de conserver dans vos workflows des activités désactivées contenant des flux. Cette situation conduit à maintenir des threads ouverts et de nombreuses tables temporaires qui consomment beaucoup d’espace. Ne conservez pas, dans vos workflows, des activités se trouvant dans les états **[!UICONTROL Ne pas activer]** ou **[!UICONTROL Activer, mais ne pas exécuter]**.
+  * Vérifiez vos workflows régulièrement pour vous assurer qu&#39;il n&#39;y a pas d&#39;erreurs inattendues.
+  * Faites en sorte que vos workflows soient aussi simples que possible, en fractionnant par exemple les workflows volumineux en plusieurs workflows différents. Vous pouvez utiliser des activités **[!UICONTROL Signal externe]** pour déclencher leur exécution selon celle d&#39;autres workflows.
+  * Évitez de conserver dans vos workflows des activités désactivées contenant des flux. Cette situation conduit à maintenir des threads ouverts et de nombreuses tables temporaires qui consomment beaucoup d’espace. Ne conservez pas, dans vos workflows, des activités se trouvant dans les états **[!UICONTROL Ne pas activer]** ou **[!UICONTROL Activer, mais ne pas exécuter]**.
 
 * **Arrêtez les workflows qui ne sont pas utilisés**. En continuant à s’exécuter, ils maintiennent les connexions avec la base de données.
 

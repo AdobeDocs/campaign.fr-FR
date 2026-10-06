@@ -6,18 +6,28 @@ feature: Workflows, Channels Activity
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 6cc2c415-1886-4f31-8020-dbaf97a3cc43
-TQID: https://experienceleague.adobe.com/5Kmhzi-ZkvEhkzJr6LGk-wPo8EPWsbUOjHwPymcNGtA
+TQID: 'https://experienceleague.adobe.com/5Kmhzi-ZkvEhkzJr6LGk-wPo8EPWsbUOjHwPymcNGtA'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: bce277d1-7efa-48d8-9a1b-b588bb45ba1c
+    internal-label: Channels Activity
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 372
-ht-degree: 66%
-
+source-wordcount: '372'
+ht-degree: 100%
 ---
-
 # Réception d&#39;emails{#inbound-emails}
 
 
@@ -26,7 +36,7 @@ L&#39;activité **Réception d&#39;emails** permet de récupérer et de traiter 
 
 ![](assets/email_rec_edit_1.png)
 
-Le premier onglet de l&#39;activité **Réception d&#39;emails** permet de renseigner les paramètres du serveur POP3 et de renseigner le script à exécuter à la réception de chaque message. Le deuxième onglet permet d&#39;attribuer un planning à l&#39;activité, le troisième définit les conditions d&#39;expiration de l&#39;activité.
+Le premier onglet de l’activité **Réception d’e-mails** vous permet de renseigner les paramètres du serveur POP3 et de saisir le script à exécuter à la réception de chaque message. Le deuxième onglet vous permet d’attribuer un planning à l’activité et le troisième onglet définit les conditions d’expiration de l’activité.
 
 1. **[!UICONTROL Réception d&#39;emails]**
 
@@ -38,29 +48,29 @@ Le premier onglet de l&#39;activité **Réception d&#39;emails** permet de rense
 
      ![](assets/email_rec_edit_1b.png)
 
-      * **[!UICONTROL Serveur POP3]**
+     * **[!UICONTROL Serveur POP3]**
 
-        Nom du serveur POP3.
+       Nom du serveur POP3.
 
-      * **[!UICONTROL Compte POP3]**
+     * **[!UICONTROL Compte POP3]**
 
-        Nom de l&#39;utilisateur.
+       Nom de l&#39;utilisateur.
 
-      * **[!UICONTROL Mot de passe]**
+     * **[!UICONTROL Mot de passe]**
 
-        Mot de passe du compte d’utilisateur.
+       Mot de passe du compte d’utilisateur.
 
-      * **[!UICONTROL Port]**
+     * **[!UICONTROL Port]**
 
-        Numéro de port de la connexion POP3. Le port par défaut est 110.
+       Numéro de port de la connexion POP3. Le port par défaut est 110.
 
    * **[!UICONTROL Terminer dès qu&#39;un email est traité]**
 
-     Cette option permet de traiter les e-mails un par un. L&#39;activité n&#39;active sa transition qu&#39;une seule fois puis termine le traitement, laissant les messages non traités sur le serveur.
+     Cette option vous permet de traiter les e-mails un par un. L’activité n’active sa transition qu’une seule fois puis termine le traitement en laissant les messages non traités sur le serveur.
 
 1. **[!UICONTROL Script]**
 
-   Le script permet de traiter le message et d’effectuer différentes opérations qui dépendent du contenu du message. Le script est exécuté pour chaque message et peut déterminer l&#39;opération à effectuer sur les messages (laisser ou supprimer le message) et l&#39;activation de la transition sortante.
+   Le script vous permet de traiter le message et d’effectuer différentes opérations dépendantes du contenu du message. Le script est exécuté pour chaque message et peut décider de l’opération à effectuer sur les messages (laisser ou supprimer le message) et de l’activation de la transition sortante.
 
    Le code retour doit être une des valeurs suivantes :
 

@@ -6,25 +6,35 @@ feature: Workflows, Targeting Activity
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 12777107-5ccc-4f19-9dcd-8f6cade3ee98
-TQID: https://experienceleague.adobe.com/YZ8ONYG9SwzsTKbVi7RwDkv2BIBq45DfMchcFAVr3Gw
+TQID: 'https://experienceleague.adobe.com/YZ8ONYG9SwzsTKbVi7RwDkv2BIBq45DfMchcFAVr3Gw'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: ff84ab2f-a7c2-4ced-a3c8-5113f4348d99
+    internal-label: Targeting Activity
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 411
-ht-degree: 68%
-
+source-wordcount: '411'
+ht-degree: 100%
 ---
-
 # Intersection{#intersection}
 
 
 
 Une activité de type **Intersection** crée une cible à partir de l&#39;intersection des cibles reçues.
 
-Une intersection permet d’extraire uniquement la population commune à tous les résultats de l’activité entrante. La cible est créée avec tous les résultats reçus : toutes les activités antérieures doivent donc être terminées avant que l&#39;intersection puisse être exécutée. Pour paramétrer cette activité, vous devez renseigner son libellé ainsi que les options relatives au résultat.
+Une intersection permet d’extraire uniquement la population commune à tous les résultats de l’activité entrante. La cible est créée avec tous les résultats reçus : toutes les activités antérieures doivent donc être terminées avant que l’intersection puisse être exécutée. Pour configurer cette activité, vous devez saisir son libellé ainsi que les options relatives au résultat.
 
 ![](assets/s_user_segmentation_inter.png)
 
@@ -45,10 +55,10 @@ Dans l&#39;exemple suivant, l&#39;intersection a pour but de calculer les destin
 1. Paramétrez l&#39;intersection. Pour cela, sélectionnez la méthode de réconciliation **[!UICONTROL Uniquement les clés]** dans la mesure où les populations issues des requêtes contiennent des données homogènes.
 1. Si vous avez ajouté des données additionnelles au niveau des requêtes, vous pouvez éventuellement choisir de ne conserver que celles qui sont communes en cochant la case correspondante.
 1. Si vous souhaitez utiliser le reste des données (correspondant aux requêtes, mais pas à leur intersection), cochez la case **[!UICONTROL Générer le complémentaire]**.
-1. Ajoutez une activité de mise à jour de liste après le résultat de l’intersection. Vous pouvez également ajouter une mise à jour de liste au complémentaire si vous souhaitez l’utiliser également.
-1. Exécutez le workflow. Ici, deux destinataires s’appliquent aux trois requêtes saisies en même temps. Le complémentaire est constitué de cinq destinataires qui ne s’appliquent qu’à une ou deux des trois requêtes.
+1. Ajoutez une activité de mise à jour de liste après le résultat de l’intersection. Vous pouvez aussi ajouter une mise à jour de liste après le complémentaire dans le cas où vous souhaiteriez également l’utiliser.
+1. Exécutez le workflow. Ici, deux personnes destinataires correspondent aux trois requêtes en entrée. Le complémentaire est composé de cinq personnes destinataires qui correspondent uniquement à une ou deux des trois requêtes.
 
-   Le résultat de l&#39;intersection est envoyé à la première mise à jour de la liste. Si vous avez choisi d’utiliser le complémentaire , il est également envoyé à la deuxième mise à jour de la liste.
+   Le résultat de l’intersection est envoyé vers la première mise à jour de liste. Si vous avez choisi d’utiliser le complémentaire, ce dernier est également envoyé vers la seconde mise à jour de liste.
 
    ![](assets/intersection_example.png)
 

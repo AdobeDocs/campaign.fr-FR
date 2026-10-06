@@ -6,22 +6,30 @@ feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-TQID: https://experienceleague.adobe.com/MWKNwVM6bS0V5jpaXEXZMuhgEHOWwBelpRBKyAnkY1I
+TQID: 'https://experienceleague.adobe.com/MWKNwVM6bS0V5jpaXEXZMuhgEHOWwBelpRBKyAnkY1I'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: 237333ba-90fa-554c-bc8d-2047e6173477
+    internal-label: Cross Channel Orchestration
+  - id: 6641bfdc-d19c-56e4-9045-0f6d06e8a43b
+    internal-label: Programs
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Reporting
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1309
-ht-degree: 88%
-
+source-wordcount: '1309'
+ht-degree: 91%
 ---
-
 # Créer les programmes et les campagnes{#create-programs-and-campaigns}
 
 Les composants d’orchestration de Campaign se trouvent dans l’onglet **[!UICONTROL Campagnes]** : vous y trouverez un aperçu des programmes et campagnes marketing, ainsi que des éléments connexes.
@@ -76,7 +84,7 @@ Lorsque vous éditez un programme, utilisez les onglets présentés ci-dessous p
 
 Vous pouvez créer une campagne à partir de la liste des campagnes. Pour afficher cette vue, sélectionnez le menu **[!UICONTROL Campagnes]** dans le tableau de bord **[!UICONTROL Campagnes]**, puis cliquez sur **[!UICONTROL Créer]**.
 
-Le champ **[!UICONTROL Programme]** permet de sélectionner le programme auquel sera rattachée la campagne. Cette information est obligatoire.
+Le champ **[!UICONTROL Programme]** vous permet de sélectionner le programme auquel sera rattachée la campagne. Cette information est obligatoire.
 
 ![](assets/new-campaign-settings.png)
 
@@ -107,7 +115,7 @@ Accédez aux sections suivantes pour apprendre à configurer votre campagne :
 
 ### Modifier les paramètres de la campagne {#campaign-settings}
 
-Les campagnes sont créées à l’aide de modèles de campagne. Vous pouvez configurer des modèles réutilisables pour lesquels certaines options sont sélectionnées et d’autres paramètres sont déjà enregistrés.
+Les campagnes sont créées à partir de modèles de campagne. Vous pouvez configurer des modèles réutilisables pour lesquels certaines options sont sélectionnées et d’autres paramètres sont déjà enregistrés.
 
 Pour chaque campagne, les fonctionnalités suivantes sont disponibles :
 

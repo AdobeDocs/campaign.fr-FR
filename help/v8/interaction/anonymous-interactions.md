@@ -5,19 +5,27 @@ description: Découvrez comment présenter des offres aux profils anonymes
 feature: Interaction, Offers
 role: User, Admin
 exl-id: b7a04360-f8c6-4c69-9594-2b44d3f819b7
-TQID: https://experienceleague.adobe.com/rl7SIcS-OkMmLnxvPiEfjs51xouGSSyLJV4in-vsoCE
+TQID: 'https://experienceleague.adobe.com/rl7SIcS-OkMmLnxvPiEfjs51xouGSSyLJV4in-vsoCE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 65702805-0026-5ca1-843a-144fa79f0883
+    internal-label: Interaction
+  - id: ea08db70-4682-59a2-9408-9aedd9548e07
+    internal-label: Offers
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Admin
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 435
-ht-degree: 82%
-
+source-wordcount: '435'
+ht-degree: 100%
 ---
-
 # Interactions anonymes {#anonymous-interactions}
 
 ## Environnement pour les interactions anonymes {#environment-for-anonymous-interactions}
@@ -26,7 +34,7 @@ Par défaut, le module **Interaction** de Campaign comprend un environnement pr�
 
 Lorsque vous créez l&#39;environnement anonyme via l&#39;assistant de création de mapping, la case **[!UICONTROL Environnement dédié aux interactions anonymes entrantes]** est automatiquement cochée dans l&#39;onglet **[!UICONTROL Général]** de l&#39;environnement.
 
-La **[!UICONTROL dimension de ciblage]** est automatiquement renseignée. Par défaut, il est lié au tableau des visiteurs.
+La **[!UICONTROL Dimension de ciblage]** est automatiquement remplie. Elle pointe par défaut sur le tableau des visiteurs et visiteuses.
 
 Le champ **[!UICONTROL Dossier des visiteurs]** s&#39;affiche. Il est automatiquement prérempli pour pointer sur le dossier **[!UICONTROL Visiteurs]**. Ce champ permet de spécifier l&#39;endroit où sont stockés les profils des visiteurs.
 
@@ -44,7 +52,7 @@ Pour créer les catégories et emplacements, procédez de la même manière que 
 
 ## Les visiteurs anonymes {#anonymous-visitors}
 
-Les visiteurs anonymes peuvent être soumis à un processus d’identification par cookies lorsqu’ils se connectent. Cette reconnaissance implicite s’effectue à partir de l’historique de navigation du visiteur.
+Les visiteurs et visiteuses anonymes peuvent être soumis à un processus d’identification par cookies lorsqu’ils se connectent. Cette reconnaissance implicite s’effectue à partir de l’historique de navigation du visiteur ou de la visiteuse.
 
 Ce processus consiste à comparer les données récupérées par les cookies avec celles de votre base de données. Dans certains cas, les visiteurs sont reconnus (ils sont alors identifiés implicitement) ; dans d&#39;autres cas, ils ne le sont pas (et restent donc anonymes).
 
@@ -54,7 +62,7 @@ Afin d&#39;effectuer cette analyse, au niveau de l&#39;emplacement, cochez la ca
 
 ## Traitement des visiteurs anonymes non identifiés {#processing-unidentified-anonymous-visitors}
 
-Après analyse, si un visiteur anonyme n’est pas identifié, vous pouvez stocker ses données dans un emplacement donné. Vous pouvez ainsi proposer des offres destinées spécifiquement à ce type de visiteur et correspondant aux règles de typologie spécifiées.
+Après analyse, si une personne anonyme n’est pas identifiée, vous pouvez stocker ses données dans un emplacement donné. Vous pouvez ainsi proposer des offres destinées spécifiquement à ce type de visiteur ou visiteuse, correspondant aux règles de typologie spécifiées.
 
 En cas d&#39;absence d&#39;élément permettant d&#39;identifier un contact ou si vous ne souhaitez pas proposer d&#39;offre identifiée à un contact pouvant être identifié implicitement, vous pouvez choisir d&#39;effectuer un basculement vers un environnement anonyme.
 

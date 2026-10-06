@@ -6,22 +6,40 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-TQID: https://experienceleague.adobe.com/CSbxLgXnmrLFiEVEHHNM4rYDBn870UTuhcr1w6FOuRQ
+TQID: 'https://experienceleague.adobe.com/CSbxLgXnmrLFiEVEHHNM4rYDBn870UTuhcr1w6FOuRQ'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 50d1fd2e-0fc9-5627-bbc9-02dbc9d15e08
+    internal-label: Email
+  - id: 237333ba-90fa-554c-bc8d-2047e6173477
+    internal-label: Cross Channel Orchestration
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: a4657621-810c-498b-8a27-7ced9c176dda
+    internal-label: Push notifications
+  - id: b1bd1421-1927-4c59-9bc6-ce292360e43b
+    internal-label: SMS Messaging
+  - id: ede6e1ec-9279-415e-b828-a09735018d48
+    internal-label: Direct mail
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1653
-ht-degree: 90%
-
+source-wordcount: '1653'
+ht-degree: 96%
 ---
-
 # Créer votre première diffusion {#create-a-msg}
 
 Dans cette page, vous découvrirez comment créer une diffusion unique ponctuelle. Vous pouvez créer d’autres types de diffusions pour élaborer vos cas d’utilisation. Découvrez les différents types de diffusion et comment les créer dans [cette page](gs-message.md).
@@ -156,7 +174,7 @@ Vous pouvez envoyer des messages à des profils qui ne sont pas stockés dans la
 
 ### Paramètres d&#39;exclusion {#define-exclusion-settings}
 
-Lors de la définition de l’[audience d’une diffusion](#target-population), l’onglet **[!UICONTROL Exclusions]** est utilisé pour limiter le nombre de messages. Les paramètres par défaut sont recommandés, mais vous pouvez les adapter en fonction de vos besoins. Toutefois, ces options ne doivent être modifiées que par un utilisateur expert afin d’éviter tout mésusage et erreur.
+Lors de la définition de l’[audience d’une diffusion](#target-population), l’onglet **[!UICONTROL Exclusions]** est utilisé pour limiter le nombre de messages. Les paramètres par défaut sont recommandés, mais vous pouvez les adapter en fonction de vos besoins. Toutefois, ces options ne doivent être modifiées que par une personne expérimentée afin d’éviter toute mauvaise utilisation et erreur.
 
 >[!CAUTION]
 >
@@ -173,7 +191,7 @@ Pour modifier la configuration par défaut, cliquez sur le lien **[!UICONTROL É
 * **[!UICONTROL Exclure les adresses en double lors de la diffusion]** : cette option est active par défaut et supprime les adresses e-mail en double lors de la diffusion. La stratégie appliquée peut varier en fonction de l’utilisation d’Adobe Campaign et du type de données dans la base de données. La valeur de l’option peut être configurée pour chaque modèle de diffusion.
 * **[!UICONTROL Exclure les destinataires qui ne veulent plus être contactés]**, c&#39;est-à-dire les destinataires dont les adresses email se trouvent sur une liste bloquée (&#39;opt out&#39;). Cette option doit rester sélectionnée afin de respecter l’éthique professionnelle du e-marketing.
 * **[!UICONTROL Exclure les destinataires en quarantaine]** : cette option permet d’exclure de la cible les profils dont l’adresse est en quarantaine. Nous vous recommandons vivement de ne pas décocher cette option. En savoir plus sur la gestion des quarantaines dans [cette section](../send/quarantines.md).
-* **[!UICONTROL Limiter la diffusion]** à un nombre donné de messages. Cette option permet de saisir le nombre maximal de messages à envoyer. Si l’audience cible dépasse le nombre de messages indiqué, une sélection aléatoire est appliquée sur la cible. Pour envoyer tous les messages, conservez cette valeur sur « 0 ».
+* **[!UICONTROL Limiter la diffusion]** à un nombre donné de messages. Cette option vous permet de saisir le nombre maximum de messages à envoyer. Si l’audience cible dépasse le nombre de messages indiqué, une sélection aléatoire est appliquée sur la cible. Pour envoyer tous les messages, conservez cette valeur sur « 0 ».
 * **[!UICONTROL Conserver les enregistrements en double (même identifiant)]** : cette option permet d’envoyer plusieurs diffusions à des destinataires qui répondent à plusieurs critères de ciblage.
 +++
 
