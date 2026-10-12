@@ -92,7 +92,7 @@ L’interface d’Adobe Campaign utilise de nombreuses applications web afin d�
 
 Les applications Web intégrées sont stockées dans le dossier **Administration > Paramétrage > Applications Web** de l’explorateur.
 
-Découvrez comment créer une page d&#39;aperçu dans Campaign dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-applications/use-cases-creating-overviews#creating-a-single-page-web-application){target="_blank"}
+Découvrez comment créer une page d&#39;aperçu dans Campaign dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-applications/use-cases-creating-overviews#creating-a-single-page-web-application){target="_blank"}
 
 
 ## Personnaliser des listes et créer des filtres {#gs-lists-and-filters}
