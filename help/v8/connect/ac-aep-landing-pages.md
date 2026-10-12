@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: f1f84f565326bd683b47e6e498add3100ea81c4c
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 100%
+source-wordcount: '1073'
+ht-degree: 98%
 ---
 # Mettre à jour les profils Adobe Experience Platform à partir des landing pages Adobe Campaign {#ac-aep-lp}
 
@@ -123,7 +123,7 @@ Parcourez les onglets ci-dessous pour découvrir les deux méthodes :
 
 >[!TAB Ajouter des options à l’aide d’une activité de code JavaScript]
 
-Pour configurer automatiquement ces options lors de l’exécution de votre workflow de landing pages, ajoutez une activité de **[!UICONTROL code JavaScript]** à votre workflow avec le code ci-dessous. [Découvrez comment configurer une activité de code JavaScript](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html?lang=fr#JavaScript-code){target="_blank"}.
+Pour configurer automatiquement ces options lors de l’exécution de votre workflow de landing pages, ajoutez une activité de **[!UICONTROL code JavaScript]** à votre workflow avec le code ci-dessous. [Découvrez comment configurer une activité de code JavaScript](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code#JavaScript-code){target="_blank"}.
 
 Lors de l’exécution du workflow, les options sont automatiquement créées dans la console Campaign avec les valeurs fournies.
 
