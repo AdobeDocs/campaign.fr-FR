@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: f1f84f565326bd683b47e6e498add3100ea81c4c
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 79%
+source-wordcount: '526'
+ht-degree: 75%
 ---
 # Personnaliser votre instance {#gs-ac-custom}
 
@@ -92,7 +92,7 @@ L’interface d’Adobe Campaign utilise de nombreuses applications web afin d�
 
 Les applications Web intégrées sont stockées dans le dossier **Administration > Paramétrage > Applications Web** de l’explorateur.
 
-Découvrez comment créer une page d&#39;aperçu dans Campaign dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=fr#creating-a-single-page-web-application){target="_blank"}
+Découvrez comment créer une page d&#39;aperçu dans Campaign dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-applications/use-cases-creating-overviews#creating-a-single-page-web-application){target="_blank"}
 
 
 ## Personnaliser des listes et créer des filtres {#gs-lists-and-filters}
