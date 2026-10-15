@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: b5e9265db5409f3f0fada35c43cb08fafa1ec4e0
+source-git-commit: 7ae0ea8d334af5e3580b594d5ddc8b52b10fa5b6
 workflow-type: tm+mt
-source-wordcount: '1621'
-ht-degree: 18%
+source-wordcount: '1780'
+ht-degree: 16%
 ---
 # Versions, mises à niveau et sécurité {#upgrades}
 
@@ -65,6 +65,16 @@ Des informations détaillées sur chaque nouvelle version sont disponibles dans 
 
 Pour garantir une configuration stable, Adobe recommande d’installer **la même version** sur tous vos serveurs Campaign. En outre, sauf mention contraire dans les [notes de mise à jour](release-notes.md), la console cliente doit utiliser **la même version** que l’instance de serveur. Découvrez comment mettre à niveau votre console cliente [sur cette page](../start/connect.md#upgrade-ac-console).
 
+### Correctifs {#hotflixes}
+
+Dans des cas exceptionnels, Adobe peut fournir un correctif spécifique au client pour résoudre un problème avant qu’un correctif ne soit disponible dans une version standard. Les demandes de correctif sont évaluées au cas par cas et ne font pas partie du cycle de publication standard.
+
+Les demandes de correctif doivent être envoyées via l’assistance clientèle d’Adobe. S’il est approuvé, un correctif est préparé pour le client et la version de produit concernés. Un correctif n’est pas une version générale pour tous les clients et clientes ; Adobe peut approuver son partage avec d’autres clients et clientes concernés après révision.
+
+Les détails du correctif ne sont pas nécessairement inclus dans les notes de mise à jour publiques lors de la diffusion du correctif. Adobe peut inclure ultérieurement un correctif dans une version standard pour la version applicable. L’inclusion et le calendrier ne sont pas garantis. Consultez les notes de mise à jour pour connaître les modifications incluses dans chaque version standard.
+
+Ce processus de correctif spécifique au client est distinct de la politique de correctif de sécurité critique décrite ci-dessus, en vertu de laquelle Adobe peut appliquer des correctifs de sécurité critiques aux environnements hébergés sans préavis.
+
 ### Maintenir la console cliente à jour {#ac-upgrades}
 
 En tant que client de Campaign Managed Services, lorsqu’une nouvelle version de Campaign est disponible, votre infrastructure serveur est mise à niveau par Adobe sans que vous n’ayez aucune autre action à effectuer.
@@ -74,7 +84,7 @@ Comme la mise à niveau du serveur se produit automatiquement, votre **console c
 * Vous risquez de ne plus pouvoir vous connecter à votre instance Campaign tant que la console n’est pas mise à jour.
 * Votre console cesse de bénéficier des correctifs et des mises à jour de sécurité fournis dans la version vers laquelle votre serveur a déjà été déplacé, même si le serveur lui-même est à jour.
 
-Pour éviter cela, mettez à niveau votre console cliente dès que vous êtes averti d’une nouvelle version. Découvrez comment [&#x200B; mettre à niveau votre console cliente &#x200B;](../start/connect.md#upgrade-ac-console).
+Pour éviter cela, mettez à niveau votre console cliente dès que vous êtes averti d’une nouvelle version. Découvrez comment [ mettre à niveau votre console cliente ](../start/connect.md#upgrade-ac-console).
 
 En tant que client, vous devez également vous assurer que vous utilisez les dernières versions prises en charge des systèmes répertoriés dans la [matrice de compatibilité](compatibility-matrix.md).
 
@@ -97,9 +107,9 @@ Vous accédez aux informations suivantes :
 
 ### Annonces de mises à jour de produits {#upgrades-0}
 
-Les nouvelles versions et leurs modifications sont répertoriées dans les [&#x200B; Notes de mise à jour &#x200B;](release-notes.md).
+Les nouvelles versions et leurs modifications sont répertoriées dans les [ Notes de mise à jour ](release-notes.md).
 
-Pour connaître les mises à jour des versions de produits, abonnez-vous aux [Mises à jour de produits prioritaires d’](https://www.adobe.com/fr/subscription/priority-product-update.html){target="_blank"} ou visitez la [Communauté Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?profile.language=fr&style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}.
+Pour connaître les mises à jour des versions de produits, abonnez-vous aux [Mises à jour de produits prioritaires d’](https://www.adobe.com/fr/subscription/priority-product-update.html){target="_blank"} ou visitez la [Communauté Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}.
 
 Pour obtenir des notifications de sécurité et des conseils sur la préparation de votre organisation aux mises à jour de sécurité, voir [Rester informé](#security-staying-informed).
 
@@ -151,7 +161,7 @@ Cette section explique comment nous évaluons et hiérarchisons les problèmes d
 
 Tous les problèmes de sécurité ne comportent pas le même risque. Adobe qualifie chaque problème par gravité, et cette gravité définit le niveau de priorité.
 
-Une vulnérabilité de type « jour zéro » est une faille inconnue jusqu’à présent que les attaquant(e)s pouvaient exploiter avant qu’un correctif ne soit disponible. Il peut donc être nécessaire d’agir de toute urgence en dehors de notre calendrier de publication régulier. Nous remédions à la plupart des autres vulnérabilités par le biais de [bulletins de sécurité &#x200B;](https://www.adobe.com/trust/security/bulletins-and-advisories.html), généralement publiés les deuxième et quatrième mardis de chaque mois.
+Une vulnérabilité de type « jour zéro » est une faille inconnue jusqu’à présent que les attaquant(e)s pouvaient exploiter avant qu’un correctif ne soit disponible. Il peut donc être nécessaire d’agir de toute urgence en dehors de notre calendrier de publication régulier. Nous remédions à la plupart des autres vulnérabilités par le biais de [bulletins de sécurité ](https://www.adobe.com/trust/security/bulletins-and-advisories.html), généralement publiés les deuxième et quatrième mardis de chaque mois.
 
 Nos cibles d’intervention suivent cette évaluation de la gravité. Pour les problèmes les plus graves, nous fermons d’abord la fenêtre d’exposition et partageons les détails annexes dès que possible par la suite. C&#39;est pourquoi certains correctifs vous parviennent avec peu ou pas de préavis. Le moment choisi est déterminé par la gravité de la vulnérabilité. Chaque mise à jour, y compris les mises à jour urgentes, est soumise à une validation de qualité avant d’être envoyée.
 
