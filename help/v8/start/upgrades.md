@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: b5e9265db5409f3f0fada35c43cb08fafa1ec4e0
+source-git-commit: 7ae0ea8d334af5e3580b594d5ddc8b52b10fa5b6
 workflow-type: tm+mt
-source-wordcount: '1621'
-ht-degree: 18%
+source-wordcount: '1780'
+ht-degree: 16%
 ---
 # Versions, mises à niveau et sécurité {#upgrades}
 
@@ -64,6 +64,16 @@ Voici les mises à niveau possibles :
 Des informations détaillées sur chaque nouvelle version sont disponibles dans les [notes de mise à jour](release-notes.md). Les correctifs liés à la sécurité sont décrits dans les notes de mise à jour de chaque version. Pour plus d’informations sur les notifications de sécurité, voir [Rester informé](#security-staying-informed).
 
 Pour garantir une configuration stable, Adobe recommande d’installer **la même version** sur tous vos serveurs Campaign. En outre, sauf mention contraire dans les [notes de mise à jour](release-notes.md), la console cliente doit utiliser **la même version** que l’instance de serveur. Découvrez comment mettre à niveau votre console cliente [sur cette page](../start/connect.md#upgrade-ac-console).
+
+### Correctifs {#hotflixes}
+
+Dans des cas exceptionnels, Adobe peut fournir un correctif spécifique au client pour résoudre un problème avant qu’un correctif ne soit disponible dans une version standard. Les demandes de correctif sont évaluées au cas par cas et ne font pas partie du cycle de publication standard.
+
+Les demandes de correctif doivent être envoyées via l’assistance clientèle d’Adobe. S’il est approuvé, un correctif est préparé pour le client et la version de produit concernés. Un correctif n’est pas une version générale pour tous les clients et clientes ; Adobe peut approuver son partage avec d’autres clients et clientes concernés après révision.
+
+Les détails du correctif ne sont pas nécessairement inclus dans les notes de mise à jour publiques lors de la diffusion du correctif. Adobe peut inclure ultérieurement un correctif dans une version standard pour la version applicable. L’inclusion et le calendrier ne sont pas garantis. Consultez les notes de mise à jour pour connaître les modifications incluses dans chaque version standard.
+
+Ce processus de correctif spécifique au client est distinct de la politique de correctif de sécurité critique décrite ci-dessus, en vertu de laquelle Adobe peut appliquer des correctifs de sécurité critiques aux environnements hébergés sans préavis.
 
 ### Maintenir la console cliente à jour {#ac-upgrades}
 

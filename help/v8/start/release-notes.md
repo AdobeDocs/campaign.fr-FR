@@ -26,20 +26,44 @@ topic_v2:
     internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 7ae0ea8d334af5e3580b594d5ddc8b52b10fa5b6
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 11%
+source-wordcount: '2455'
+ht-degree: 10%
 ---
 # Dernières versions {#latest-release}
 
 Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs des **dernières versions** de Campaign v8 (console). Pour en savoir plus sur les publications, les versions et les mises à niveau de Campaign, consultez [cette page](upgrades.md). Les autres versions sont répertoriées dans la section Versions précédentes de cette documentation.
 
+## Version 8.9.4 {#release-8-9-4}
+
+_15 octobre 2026_
+
+### Améliorations {#improvements-8-9-4}
+
+* Les thèmes de l’interface utilisateur de la console cliente peuvent désormais être stockés et partagés entre les utilisateurs. (NEO-96823)
+
+### Correctifs {#fixes-8-9-4}
+
+* Correction d&#39;un problème en raison duquel certains messages de retour sur bounce pouvaient entraîner le blocage des mises à jour de l&#39;état de diffusion, les diffusions affectées restant bloquées dans l&#39;état « Prise en compte par le fournisseur d&#39;accès d&#39;accès d&#39;accès ». (NEO-98183)
+* Correction d’un problème où les alertes de diffusion pour les diffusions bloquées dans un statut Démarrage long en attente pouvaient se déclencher incorrectement en raison d’une erreur de calcul du seuil. (NEO-93434)
+* Correction d’un problème en raison duquel l’envoi de diffusions de contenu texte pouvait entraîner le blocage du processus du serveur de mid-sourcing. (NEO-95122)
+* Correction d’un problème en raison duquel l’activité de workflow **Lecture de groupe** pouvait générer du code SQL non valide pour les champs d’expression calculés. (NEO-95233)
+* Correction d’un problème en raison duquel les identifiants de fragments de diffusion générés pour les diffusions de mid-sourcing FFDA pouvaient entrer en conflit. (NEO-95777)
+* Correction d’un problème en raison duquel certains caractères des URL de navigation de navigateur intégrées pouvaient provoquer le blocage de la console cliente. (NEO-96267)
+* Correction d’un problème en raison duquel les diffusions SMS étaient sous-signalées dans les rapports dynamiques. (NEO-96401)
+* Correction d&#39;un problème en raison duquel la préparation de diffusion pouvait échouer pour les cibles de fichiers externes Snowflake ou FFDA qui n&#39;utilisent pas le mapping de profil. (NEO-96507)
+* Correction d&#39;un problème en raison duquel les workflows contenant plusieurs requêtes liées à différentes sources FDA pouvaient échouer. (NEO-97249)
+* Correction d’un problème en raison duquel les workflows d’enrichissement en temps quasi réel pouvaient échouer par intermittence avec des erreurs SQL lors du déclenchement d’événements de traitement à des moments proches. (NEO-97557)
+* Correction d’un problème en raison duquel un mécanisme de verrouillage interne pouvait entrer dans une boucle de reprise et entraîner une utilisation élevée de CPU sur le serveur. (NEO-94845)
+* Correction d’un problème en raison duquel la préparation de la diffusion pouvait échouer avec une erreur SQL lors de l’utilisation d’adresses de contrôle avec un mapping de ciblage personnalisé. (NEO-94966)
+* Correction d’un problème en raison duquel les workflows FDA pouvaient échouer avec une erreur de débordement de colonne lors du chargement de données dans Redshift. (NEO-96125)
+* Correction d’un problème en raison duquel le compte externe Analytics pouvait échouer avec une erreur « Terminé » (410). (NEO-99019)
+* Correction d’un problème en raison duquel certaines diffusions pouvaient rester bloquées dans le statut en attente de personnalisation même si les messages correspondants avaient été envoyés avec succès. (NEO-94471)
+
 ## Version 8.9.3 {#release-8-9-3}
 
 _11 août 2026_
-
-<!-- CONFIRM: is a client console upgrade required for 8.9.3? If yes, add the >[!CAUTION] notice used in 8.9.2/8.9.1. If no, add an explicit one-line "no console upgrade required for this release" statement so the absence reads as intentional. -->
 
 ### Améliorations de la sécurité {#security-8-9-3}
 
@@ -170,8 +194,8 @@ Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Camp
 * Correction d’une erreur qui se produisait lors de la concaténation d’un champ « char » dans PostgreSQL 15. (NEO-88028)
 * Correction d’un problème en raison duquel l’ordre des variables du modèle de diffusion changeait lors de l’enregistrement ou de la duplication du modèle. (NEO-87845)
 * Correction d’un problème en raison duquel la création d’un schéma de bibliothèque de données entraînait le blocage de l’interface web. (NEO-87816)
-* Correction d’un problème en raison duquel avec les ensembles de compléments dans l’activité Déduplication . (NEO-87711)
-* Correction d’une demande de package d’installation sans dépendance X11. (NEO-87471)
+* Correction d’un problème en raison duquel les codes segment des ensembles de compléments ne fonctionnaient pas correctement dans l’activité Déduplication . (NEO-87711)
+* Ajout d’une option de package d’installation qui ne nécessite pas la dépendance X11. (NEO-87471)
 * Correction d’un problème en raison duquel les codes segment ne pouvaient pas être utilisés dans les rapports dynamiques. (NEO-87276)
 * Correction d’un problème en raison duquel les workflows étaient bloqués dans l’activité Mise à jour de données . (NEO-87252)
 * Correction d’un problème en raison duquel BigQuery utilisait un fuseau horaire incorrect. (NEO-86622)
@@ -183,7 +207,7 @@ Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Camp
 * Correction d’un problème en raison duquel les modèles de diffusion techniques n’étaient pas actualisés après les modifications apportées aux options. (NEO-84149)
 * Correction d’une erreur dans le workflow de facturation prêt à l’emploi. (NEO-83624)
 * Correction d&#39;un problème d&#39;exclusion des doublons basée uniquement sur la clé primaire des enregistrements ciblés. (NEO-82910)
-* Correction d’incohérences dans les rapports de l’interface utilisateur web de Campaign où les statistiques de tracking affichaient des valeurs différentes par rapport à la console. (NEO-82339)
+* Correction d’incohérences dans les rapports de l’interface utilisateur web de Campaign où les statistiques de tracking affichaient des valeurs différentes par rapport à la console cliente. (NEO-82339)
 * Correction d&#39;un problème en raison duquel la date de dernière modification était modifiée même si l&#39;enregistrement ne devait pas être mis à jour dans l&#39;activité Mise à jour de données . (NEO-82002)
 * Correction d’un problème en raison duquel l’ajout de nouveaux attributs dans une liste entraînait l’échec des workflows qui lisaient la liste. (NEO-80258)
 * Correction d’un problème en raison duquel le rapport des indicateurs de tracking affichait des valeurs incorrectes pour des ouvertures distinctes. (NEO-79466)
