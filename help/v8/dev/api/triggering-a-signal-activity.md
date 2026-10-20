@@ -118,7 +118,7 @@ Pour déclencher une activité de signal, exécutez une requête POST sur l’UR
 -d    "audience":"audience",
 -d    "email":"anna.varney@mail.com",
 -d    "template":"05",
--d    "contentURL":"http://www.adobe.com",
+-d    "contentURL":"http://www.adobe.com/fr",
 -d    "test":"true",
 -d    "segmentCode":"my segment",
 -d    "attribute":"2019-04-03 08:17:19.100Z"}

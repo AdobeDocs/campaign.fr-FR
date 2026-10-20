@@ -88,8 +88,8 @@ Nous vous recommandons vivement de placer les URL dans des délimiteurs dans l&#
 * Crochets [ ]
 * Accolades { }
 
-Dans cet exemple, l&#39;URL https://www.adobe.com est suivie d&#39;un point-virgule. Le point-virgule peut être interprété par les clients de messagerie des destinataires comme faisant partie de l&#39;URL. Par conséquent, le lien peut être rompu. Pour éviter ce problème, vous pouvez placer l&#39;URL dans des délimiteurs de l&#39;une des façons suivantes :
+Dans cet exemple, l&#39;URL https://www.adobe.com/fr est suivie d&#39;un point-virgule. Le point-virgule peut être interprété par les clients de messagerie des destinataires comme faisant partie de l&#39;URL. Par conséquent, le lien peut être rompu. Pour éviter ce problème, vous pouvez placer l&#39;URL dans des délimiteurs de l&#39;une des façons suivantes :
 
-* (https://www.adobe.com);
-* [https://www.adobe.com];
-* {https://www.adobe.com};
+* (https://www.adobe.com/fr);
+* [https://www.adobe.com/fr];
+* {https://www.adobe.com/fr};
