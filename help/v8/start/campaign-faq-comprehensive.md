@@ -1819,7 +1819,7 @@ Vous ne trouvez pas ce que vous recherchez ? Voici des ressources supplémentair
 Communiquez avec d’autres utilisateurs de Campaign et des experts d’Adobe pour partager vos connaissances et obtenir des réponses.
 
 * **[Communauté Adobe Campaign &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=fr){target="_blank"}** - Posez des questions, partagez des solutions et communiquez avec la communauté Campaign
-* **[Forums Experience League &#x200B;](https://experienceleaguecommunities.adobe.com/?profile.language=fr){target="_blank"}** - Parcourez les discussions sur tous les produits Adobe
+* **[Forums Experience League &#x200B;](https://experienceleaguecommunities.adobe.com/?profile.language=fr&lang=fr){target="_blank"}** - Parcourez les discussions sur tous les produits Adobe
 * **[Heures de bureau de la communauté Campaign](https://experienceleague.adobe.com/fr){target="_blank"}** - Participez à des sessions en direct avec des experts d’Adobe
 
 ### Documentation et apprentissage
