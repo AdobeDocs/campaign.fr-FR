@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: cb79282ed9b2b560201a001787c439a5da462ce1
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 88%
+source-wordcount: '977'
+ht-degree: 84%
 ---
 # Création de diffusions courrier
 
@@ -90,11 +90,11 @@ Ce lien permet d’accéder à l’assistant d’extraction afin de définir les
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-Vous pouvez insérer une URL personnalisée dans le fichier d’extraction. Pour plus d’informations à ce sujet, consultez la [documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html?lang=fr){target="_blank"} de Adobe Campaign Classic.
+Vous pouvez insérer une URL personnalisée dans le fichier d’extraction. Pour plus d’informations à ce sujet, consultez la [documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html){target="_blank"} de Adobe Campaign Classic.
 
 >[!NOTE]
 >
->Cet assistant comprend les étapes de l’assistant d’exportation décrites dans la [&#x200B; documentation de Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=fr){target="_blank"}.
+>Cet assistant comprend les étapes de l’assistant d’exportation décrites dans la [ documentation de Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"}.
 
 ## Validation de la diffusion{#validating}
 
@@ -138,3 +138,7 @@ Une fois le fichier d&#39;extraction validé, cliquez sur **Confirmer l&#39;envo
 La confirmation démarre l&#39;extraction des données dans le fichier spécifié.
 
 Dans le cadre d’une campagne marketing, lorsque toutes les validations ont été accordées, les fichiers d’extraction sont créés via un workflow spécifique qui, dans une configuration par défaut, démarre automatiquement lorsqu’une diffusion de publipostage direct est en attente d’extraction. En savoir plus dans [cette section](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=fr){target="_blank"}.
+
+>[!NOTE]
+>
+>Lorsque vous utilisez une activité **[!UICONTROL Publipostage direct]** dans un workflow, sa transition sortante transmet la population ciblée, et non le fichier d’extraction généré. Pour envoyer le fichier sur un serveur, ajoutez une activité **[!UICONTROL Extraction des données]** après l&#39;activité **[!UICONTROL Publipostage direct]**, puis une activité **[!UICONTROL Transfert de fichier]**.
