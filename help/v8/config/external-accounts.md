@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 0ad8b1536e0bc065131ea64d6778dc18a0f27f04
 workflow-type: tm+mt
-source-wordcount: '2243'
-ht-degree: 40%
+source-wordcount: '2294'
+ht-degree: 39%
 ---
 # Configuration de vos comptes externes {#config-external-accounts}
 
@@ -252,6 +252,10 @@ Ces comptes externes peuvent être utilisés pour importer ou exporter des donn�
   * **[!UICONTROL Chiffrement]** : type de chiffrement : **[!UICONTROL Aucun]** ou **[!UICONTROL SSL]**.
 
   * **[!UICONTROL Clé d&#39;accès]** : apprenez à trouver votre **[!UICONTROL clé d&#39;accès]** en consultant la [documentation Microsoft](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target="_blank"}.
+
+  >[!NOTE]
+  >
+  >Le stockage Blob d’Azure filtre les fichiers par préfixe de nom, et non par motif. Un astérisque de fin (`*`) dans un masque de fichier est supprimé, de sorte `TEST_EXPORT_AZURE_*` correspond à tous les fichiers commençant par `TEST_EXPORT_AZURE_`. Les caractères après l’astérisque, comme dans `TEST_EXPORT_AZURE_*.csv`, ne sont pas pris en charge. [En savoir plus dans la documentation de Microsoft](https://learn.microsoft.com/en-us/rest/api/storageservices/list-blobs){target="_blank"}.
 
 * **Microsoft Fabric** - Le compte externe **Microsoft Fabric** vous permet d’importer et d’exporter des données entre Microsoft Fabric et Adobe Campaign à l’aide de l’activité de workflow **[!UICONTROL Transfert de fichier]**. Pour configurer cette intégration, fournissez les détails suivants :
 

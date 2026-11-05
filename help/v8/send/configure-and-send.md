@@ -19,10 +19,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 2d8aa27d6565e216cc0842ba22678c884479ff43
 workflow-type: tm+mt
-source-wordcount: '1299'
-ht-degree: 97%
+source-wordcount: '1334'
+ht-degree: 95%
 ---
 # Configurer et envoyer la diffusion {#configure-delivery}
 
@@ -98,6 +98,8 @@ Une règle de typologie spécifique, la **[!UICONTROL Vérification de la planif
 >* Veillez à ce que les dernières vagues ne dépassent pas la date limite de la diffusion qui est définie dans l’onglet **[!UICONTROL Validité]**. Sinon, certains messages peuvent ne pas être envoyés. En savoir plus sur la période de validité d’une diffusion dans [cette section](delivery-failures.md#valid-period).
 >
 >* Lors de la configuration des dernières vagues, veillez également à définir assez de temps pour les reprises. En savoir plus sur les reprises dans [cette section](delivery-failures.md#retries).
+>
+>* Les vagues sont planifiées à partir de la date de contact de la diffusion. Si la diffusion démarre après l’heure prévue d’une ou de plusieurs vagues, ces vagues en retard sont toutes envoyées ensemble au lieu d’être espacées.
 
 ### Surveiller les vagues {#monitor-waves}
 
@@ -153,7 +155,7 @@ Pour ce faire, suivez les étapes ci-après.
 
    Pour plus de détails, reportez-vous à la section ci-dessous :
 
-   * [Contrôler une diffusion](send.md)
+   * [Surveiller une diffusion](send.md)
    * [Comprendre les échecs de diffusion](delivery-failures.md)
 
 <!--About message tracking-->

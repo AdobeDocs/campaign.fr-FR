@@ -18,10 +18,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8a7bf8408d15e0bd9e1c3e72f7846bf9a79c6885
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 100%
+source-wordcount: '112'
+ht-degree: 41%
 ---
 
 # Plateforme de Mid-sourcing{#mid-sourcing-platform}
@@ -45,3 +45,6 @@ Le workflow détaillé ci-dessous est installé par défaut avec le module **Pla
  </tbody> 
 </table>
 
+>[!NOTE]
+>
+>La période de conservation des logs sur le serveur de mid-sourcing doit être supérieure à la période de validité de la diffusion plus la valeur **indicatorsDuration**. Dans le cas contraire, les indicateurs de diffusion diminuent lorsque les anciens logs sont purgés et que les valeurs les plus faibles sont synchronisées avec l’instance marketing. Par exemple, avec une période de validité de 5 jours et un **indicatorsDuration** de 30 jours, définissez la période de conservation sur au moins 36 jours.
