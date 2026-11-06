@@ -71,7 +71,7 @@ Pour écrire dans la base de données, vous pouvez utiliser la méthode `Write` 
    1. Appelez la méthode `Write` sur le schéma `xtk:session`.
 
       >[!IMPORTANT]
-      > Si vous utilisez Adobe Campaign v8, nous vous recommandons d’utiliser le mécanisme d’évaluation avec les API d’**ingestion** et de **mise à jour/suppression des données** pour la méthode `Write` dans une table Snowflake. [En savoir plus](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/architecture/ffda/new-apis){target="_blank"}.
+      > Si vous utilisez Adobe Campaign v8, nous vous recommandons d’utiliser le mécanisme d’évaluation avec les API d’**ingestion** et de **mise à jour/suppression des données** pour la méthode `Write` dans une table Snowflake. [En savoir plus](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/architecture/ffda/new-apis){target="_blank"}.
 
    1. Transmettez le code XML en tant qu’argument de la demande d’écriture.
 
@@ -581,7 +581,7 @@ Vous pouvez insérer, mettre à jour et supprimer des enregistrements. Vous pouv
 * Opération `delete`
 
 >[!IMPORTANT]
-> Si vous utilisez Adobe Campaign v8, nous vous recommandons d’utiliser le mécanisme d’évaluation avec les API d’**ingestion** et de **mise à jour/suppression des données** pour la méthode `Write` dans une table Snowflake. [En savoir plus](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/architecture/ffda/new-apis){target="_blank"}.
+> Si vous utilisez Adobe Campaign v8, nous vous recommandons d’utiliser le mécanisme d’évaluation avec les API d’**ingestion** et de **mise à jour/suppression des données** pour la méthode `Write` dans une table Snowflake. [En savoir plus](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/architecture/ffda/new-apis){target="_blank"}.
 
 #### Exemple 1 : insertion ou mise à jour d’un enregistrement
 
