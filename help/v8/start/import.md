@@ -29,9 +29,9 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '4183'
+source-wordcount: '4168'
 ht-degree: 98%
 ---
 # Import de données dans Campaign {#ootb-profiles}
@@ -443,7 +443,7 @@ Cliquez sur **[!UICONTROL Lancer la prévisualisation des données]** pour obten
 
 >[!NOTE]
 >
->Comme pour toutes les listes disponibles dans la console, seules les 200 premières lignes sont affichées par défaut dans la fenêtre **[!UICONTROL Aperçu des données]**. Pour modifier ce paramétrage, saisissez un nombre dans la zone **[!UICONTROL Lignes à afficher]** puis cliquez sur **[!UICONTROL Démarrer l&#39;aperçu des données]**. [En savoir plus](../config/ui-settings.md#manage-and-customize-lists)
+>Comme pour toutes les listes disponibles dans la console, seules les 200 premières lignes sont affichées par défaut dans la fenêtre **[!UICONTROL Aperçu des données]**. Pour modifier ce paramétrage, saisissez un nombre dans la zone **[!UICONTROL Lignes à afficher]** puis cliquez sur **[!UICONTROL Démarrer l&#39;aperçu des données]**. [En savoir plus](../config/ui-settings.md#customize-lists)
 
 Cliquez sur les onglets en bas de l’assistant pour basculer de la prévisualisation des résultats en colonnes aux résultats en XML. Vous pouvez également visualiser les requêtes SQL générées.
 
@@ -462,7 +462,7 @@ Utilisez Campaign pour créer des formulaires web, et collecter et gérer facile
 
 ![](assets/web-form-page.png)
 
-Découvrez comment créer des formulaires web dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=fr){target="_blank"}.
+Découvrez comment créer des formulaires web dans [cette section](../dev/web/about-web-forms.md).
 
 **Rubriques connexes :**
 

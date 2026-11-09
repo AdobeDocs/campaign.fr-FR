@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 95%
@@ -109,14 +109,14 @@ Pour plus d&#39;informations, consultez la [documentation détaillée](../send/p
 
 **Améliorations de la sécurité**
 
-* Avec Campaign v8.5.1, le processus d’authentification de Campaign v8 a été amélioré et sécurisé. Les opérateurs ou opératrices techniques doivent à présent utiliser Adobe Identity Management System (IMS) pour se connecter à Campaign. Découvrez comment migrer votre ou vos comptes techniques existants dans [cette note technique](../../technotes/upgrades/ims-migration.md).
-* À compter de la version v8.6, vous n’aurez plus l’autorisation de créer des opérateurs et opératrices à partir de la console cliente Campaign. Si vous utilisez l’authentification native nom d’utilisateur/mot de passe, vous devez migrer vos opérateurs et opératrices vers Adobe Identity Management System (IMS). Découvrez comment effectuer la migration de vos opérateurs et opératrices dans [cette note technique](../../technotes/upgrades/migrate-users-to-ims.md).
+* Avec Campaign v8.5.1, le processus d’authentification de Campaign v8 a été amélioré et sécurisé. Les opérateurs ou opératrices techniques doivent à présent utiliser le système de gestion des identités (IMS) Adobe pour se connecter à Campaign. Découvrez comment migrer votre ou vos comptes techniques existants dans [cette note technique](../../technotes/upgrades/ims-migration.md).
+* À compter de la version v8.6, vous n’aurez plus l’autorisation de créer des opérateurs et opératrices à partir de la console cliente Campaign. Si vous utilisez l’authentification native nom d’utilisateur/mot de passe, vous devez migrer vos opérateurs et opératrices vers le système de gestion des identités (IMS) Adobe. Découvrez comment effectuer la migration de vos opérateurs et opératrices dans [cette note technique](../../technotes/upgrades/migrate-users-to-ims.md).
 * Plusieurs outils tiers ont été mis à jour pour optimiser la sécurité.
 
 **Mises à jour de compatibilité**
 
 * La version 32 bits de la console cliente est désormais obsolète. À compter de la version 8.6, la console cliente sera uniquement disponible en 64 bits. La mise à niveau vers la version 64 bits de la console cliente est transparente. Pour plus d’informations sur la mise à niveau de votre système d’exploitation, reportez-vous à cette [note technique](../../technotes/upgrades/console.md).
-* Vous pouvez désormais connecter votre instance Campaign v8 à la base de données externe Azure Synapse. Cette connexion est gérée à l’aide d’un nouveau compte externe. En savoir plus sur la [matrice de compatibilité de Campaign](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda).
+* Vous pouvez désormais connecter votre instance Campaign v8 à la base de données externe Azure Synapse. Cette connexion est gérée à l’aide d’un nouveau compte externe. En savoir plus sur la [matrice de compatibilité de Campaign](../start/compatibility-matrix.md#FederatedDataAccessFDA).
 
 
 **Correctifs**

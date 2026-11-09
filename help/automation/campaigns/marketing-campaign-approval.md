@@ -34,7 +34,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '2457'
 ht-degree: 99%
@@ -121,7 +121,7 @@ Pour chaque campagne, vous pouvez valider la cible de diffusion, le [contenu de 
 
 Pour les diffusions courrier, les opérateurs Adobe Campaign peuvent visualiser le fichier d&#39;extraction avant l&#39;envoi au routeur et, au besoin, modifier le format et relancer l&#39;extraction. [En savoir plus](#approve-an-extraction-file).
 
-Une fois ces phases de validation achevées, la diffusion peut être lancée. [En savoir plus](marketing-campaign-deliveries.md#starting-a-delivery).
+Une fois ces phases de validation achevées, la diffusion peut être lancée. [En savoir plus](marketing-campaign-deliveries.md#start-a-delivery).
 
 >[!NOTE]
 >

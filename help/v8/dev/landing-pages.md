@@ -28,7 +28,7 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 100%
@@ -37,11 +37,11 @@ ht-degree: 100%
 
 Une page de destination est un type de page web qui répond à un objectif marketing précis. Les visiteurs et visiteuses arrivent généralement à une page de destination après avoir cliqué sur un lien dans un e-mail, une publication sur les réseaux sociaux ou un résultat de moteur de recherche. Contrairement aux pages du site web proposant un contenu général, les landing pages ont pour objectif la réalisation d’une seule action bien définie, telle que l’achat, l’abonnement/le désabonnement à un service ou le téléchargement d’une ressource. Grâce à Adobe Campaign, créez des landing pages afin d’orienter vos utilisateurs et utilisatrices vers un formulaire en ligne où il leur est possible de mettre à jour leurs données, de s’abonner à vos communications ou à un service spécifique tel qu’une newsletter, ou de s’en désabonner.
 
-Pour créer des landing pages, accédez à l’[interface d’utilisation web](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui). Adobe Campaign offre une expérience d’utilisation repensée pour les landing pages, disponible uniquement dans l’interface d’utilisation web.
+Pour créer des landing pages, accédez à l’[interface d’utilisation web](../start/campaign-ui.md#ac-web-ui). Adobe Campaign offre une expérience d’utilisation repensée pour les landing pages, disponible uniquement dans l’interface d’utilisation web.
 
 >[!AVAILABILITY]
 >
->* L’interface d’utilisation de Campaign Web n’est disponible que pour les utilisateurs et utilisatrices qui se connectent à Adobe Campaign avec leur Adobe ID. En savoir plus sur [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
+>* L’interface d’utilisation de Campaign Web n’est disponible que pour les utilisateurs et utilisatrices qui se connectent à Adobe Campaign avec leur Adobe ID. En savoir plus sur [le système de gestion des identités (IMS) Adobe](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
 >
 >* Les landing pages que vous créez dans l’interface d’utilisation de Campaign Web ne peuvent pas être affichées ni modifiées dans la console cliente Campaign.
 >

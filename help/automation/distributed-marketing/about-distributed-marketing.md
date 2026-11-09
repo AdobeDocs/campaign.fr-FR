@@ -3,12 +3,15 @@ product: campaign
 title: Prise en main du marketing distribué
 description: Prise en main du marketing distribué
 feature: Distributed Marketing
+version: Campaign v8, Campaign Classic v7
 role: User
 exl-id: c9f5b277-3ad8-4316-94b9-789d37813b8b
 TQID: https://experienceleague.adobe.com/Xic-o4WB0jDoHpUAdN2U9Uunuf8rAcQ7rrcpXIFLqSI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
     internal-label: Campaigns
@@ -27,22 +30,20 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
-source-wordcount: 1181
-ht-degree: 59%
-
+source-wordcount: '1181'
+ht-degree: 71%
 ---
-
 # Prise en main du marketing distribué{#about-distributed-marketing}
 
-Adobe Campaign propose une application **Marketing Distribué** pour la mise en place de campagnes collaboratives entre les entités centrales (sièges sociaux, services marketing, etc.) et les entités locales (points de vente, agences régionales, etc.). Cette coopération repose sur un espace de travail partagé appelé la **[!UICONTROL liste des kits d&#39;opération]**, où des modèles et des instances d&#39;opération créés de manière centralisée sont proposés aux entités locales.
+Adobe Campaign propose une application de **marketing distribué** pour la mise en œuvre de campagnes de coopération entre entités centrales (sièges sociaux, services marketing, etc.) et entités locales (magasins, agences régionales, etc.). Cette coopération repose sur un espace de travail partagé, appelé la **[!UICONTROL liste des kits de campagne]**, où des modèles et des instances de campagne conçus de manière centralisée sont proposés aux entités locales.
 
-L&#39;entité centrale assure les opérations que les entités locales peuvent utiliser. Les campagnes sont matérialisées par des packages représentant des campagnes locales ou collaboratives. Pour utiliser une opération, l&#39;entité locale doit la commander et la commande doit être validée.
+L’entité centrale fournit les opérations que les entités locales peuvent utiliser. Les campagnes sont matérialisées par des packages représentant des campagnes locales ou collaboratives. Pour utiliser une campagne, l’entité locale doit la commander et la commande doit être approuvée.
 
 >[!CAUTION]
 >
->Le module Marketing distribué est une option **Campagne**. Veuillez vérifier votre contrat de licence.
+>Le module Marketing distribué est une option de **Campaign**. Veuillez vérifier votre contrat de licence.
 
 ## Terminologie {#terminology}
 
@@ -52,10 +53,10 @@ L&#39;entité centrale assure les opérations que les entités locales peuvent u
 
   L&#39;entité centrale peut, grâce au module de Marketing Distribué :
 
-   * mettre en place des kits de campagne marketing à destination des entités locales,
-   * favoriser l&#39;autonomie des entités locales dans le choix de leurs communications envers leurs clients/prospects, leur ciblage, leur contenu, etc.,
-   * gérer et maîtriser les coûts,
-   * animer un réseau d&#39;agences.
+  * mettre en place des kits de campagne marketing à destination des entités locales,
+  * favoriser l&#39;autonomie des entités locales dans le choix de leurs communications envers leurs clients/prospects, leur ciblage, leur contenu, etc.,
+  * gérer et maîtriser les coûts,
+  * animer un réseau d&#39;agences.
 
 * **Entité locale**
 
@@ -77,7 +78,7 @@ L&#39;entité centrale assure les opérations que les entités locales peuvent u
 
 * **Opération locale**
 
-  Une opération locale est une instance d&#39;opération créée à partir d&#39;un modèle référencé dans la liste des **[!UICONTROL kits d&#39;opération]** avec un **planning d&#39;exécution spécifique**. Son objectif est de répondre à un besoin local de communication à l&#39;aide d&#39;un modèle de campagne mis en place et paramétré par l&#39;entité centrale.
+  Une campagne locale est une instance créée à partir d’un modèle référencé dans la liste des **[!UICONTROL kits de campagne]** avec un **planning d’exécution spécifique**. L’objectif est de répondre à un besoin local de communication en utilisant un modèle de campagne mis en place et configuré par l’entité centrale.
 
   Le degré d&#39;autonomie de l&#39;entité locale dépend de la mise en oeuvre utilisée.
 
@@ -87,10 +88,10 @@ L&#39;entité centrale assure les opérations que les entités locales peuvent u
 
   Une opération collaborative est une opération dont le **planning d&#39;exécution est défini** par l&#39;entité centrale et que l&#39;entité locale peut utiliser. Le contenu reste le même pour chaque entité locale mais les coûts sont partagés. Pour participer, les entités locales s&#39;inscrivent à l&#39;opération collaborative.
 
-   * **[!UICONTROL Opération collaborative par formulaire)]** conseillée pour des opérations impliquant jusqu&#39;à 300 entités locales. L&#39;entité locale peut saisir des paramètres prédéfinis pour le ciblage et la personnalisation du contenu dans un formulaire web. Le formulaire peut être un formulaire Adobe Campaign ou un formulaire externe (extranet client). Un administrateur fonctionnel peut définir et configurer le formulaire en fonction d’un modèle de formulaire défini par l’intégrateur. Pour commander l&#39;opération, l&#39;entité locale a seulement besoin d&#39;un accès web.
-   * **[!UICONTROL Opération collaborative par opération)]** conseillée pour des opérations visant quelques dizaines d&#39;entités locales. Ce type d&#39;opération crée des opérations filles pour chaque entité locale. Lorsque la commande d’une **[!UICONTROL Opération collaborative par opération]** est validée par l’entité centrale, l’opération est mise à disposition de l’entité locale qui peut la modifier. L’exécution est automatiquement synchronisée entre les opérations enfants et l’opération parent. L’entité locale doit avoir accès à une instance pour commander une opération et y participer.
-   * **[!UICONTROL Opération collaborative par validation de la cible)]** conseillée pour des opérations visant jusqu&#39;à plusieurs milliers d&#39;entités locales. L&#39;entité locale reçoit une liste de contacts qui a été prédéfinie par l&#39;entité centrale. L&#39;entité locale décide de conserver ou non certains contacts en fonction du contenu de la campagne, via un formulaire web. Les entités locales sont déduites de la liste des contacts sélectionnés. Pour participer à la campagne, l&#39;entité locale a seulement besoin d&#39;un accès web.
-   * **[!UICONTROL Opération collaborative simple]** : ce mode permet d&#39;assurer la compatibilité avec les développements spécifiques réalisés dans les versions précédentes.
+  * **[!UICONTROL Opération collaborative par formulaire)]** conseillée pour des opérations impliquant jusqu&#39;à 300 entités locales. L&#39;entité locale peut saisir des paramètres prédéfinis pour le ciblage et la personnalisation du contenu dans un formulaire web. Le formulaire peut être un formulaire Adobe Campaign ou un formulaire externe (extranet client). Un administrateur fonctionnel peut définir et configurer le formulaire en fonction d’un modèle de formulaire défini par l’intégrateur. Pour commander l&#39;opération, l&#39;entité locale a seulement besoin d&#39;un accès web.
+  * **[!UICONTROL Opération collaborative par opération)]** conseillée pour des opérations visant quelques dizaines d&#39;entités locales. Ce type d&#39;opération crée des opérations filles pour chaque entité locale. Lorsque la commande d’une **[!UICONTROL Opération collaborative par opération]** est validée par l’entité centrale, l’opération est mise à disposition de l’entité locale qui peut la modifier. L’exécution est automatiquement synchronisée entre les opérations enfants et l’opération parent. L’entité locale doit avoir accès à une instance pour commander une opération et y participer.
+  * **[!UICONTROL Opération collaborative par validation de la cible)]** conseillée pour des opérations visant jusqu&#39;à plusieurs milliers d&#39;entités locales. L&#39;entité locale reçoit une liste de contacts qui a été prédéfinie par l&#39;entité centrale. L&#39;entité locale décide de conserver ou non certains contacts en fonction du contenu de la campagne, via un formulaire web. Les entités locales sont déduites de la liste des contacts sélectionnés. Pour participer à la campagne, l&#39;entité locale a seulement besoin d&#39;un accès web.
+  * **[!UICONTROL Opération collaborative simple]** : ce mode permet d&#39;assurer la compatibilité avec les développements spécifiques réalisés dans les versions précédentes.
 
   Voir [Création d’une campagne collaborative](creating-a-collaborative-campaign.md).
 

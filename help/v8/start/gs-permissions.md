@@ -26,7 +26,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 96%
@@ -73,7 +73,7 @@ Les profils de produit sont des groupes de produits et de services que vous pouv
 
 Dans Admin Console, chaque **profil de produit** Adobe Experience Cloud pour Campaign est associé à un **groupe d’opérateurs** dans la console cliente Campaign.
 
-Découvrez comment créer et affecter des profils de produit sur [cette page](manage-permissions.md#create-a-product-profile).
+Découvrez comment créer et affecter des profils de produit sur [cette page](manage-permissions.md#create-product-profile).
 
 ## Droits nommés dans Campaign{#named-rights}
 

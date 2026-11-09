@@ -28,7 +28,7 @@ topic_v2:
     internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 94%
@@ -39,7 +39,7 @@ Avec Adobe Campaign, créez des diffusions e-mail pour envoyer des e-mails pers
 
 >[!NOTE]
 >
->Pour créer des e-mails captivants et personnalisés, accédez à l’[interface d’utilisation web](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui). Adobe Campaign est fourni avec le concepteur d’e-mail, une interface intuitive par glisser-déposer, qui vous permet de concevoir et d’affiner le contenu de chaque e-mail.
+>Pour créer des e-mails captivants et personnalisés, accédez à l’[interface d’utilisation web](../start/campaign-ui.md#ac-web-ui). Adobe Campaign est fourni avec le concepteur d’e-mail, une interface intuitive par glisser-déposer, qui vous permet de concevoir et d’affiner le contenu de chaque e-mail.
 
 
 Découvrez les étapes clés de la création et de la configuration d’une diffusion dans [cette page](../start/create-message.md).

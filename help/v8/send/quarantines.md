@@ -37,7 +37,7 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1427'
 ht-degree: 72%
@@ -88,7 +88,7 @@ Si un utilisateur qualifie un e-mail comme spam, le message est automatiquement 
 
 Contrairement aux erreurs de type Hard, les erreurs de type Soft n&#39;envoient pas immédiatement une adresse en quarantaine, mais incrémentent un compteur d&#39;erreurs. Lorsque le compteur d&#39;erreurs atteint le seuil limite, l&#39;adresse est mise en quarantaine. En savoir plus sur les reprises et les types d’erreur dans [Présentation des diffusions en échec](delivery-failures.md).
 
-Le compteur d&#39;erreurs est réinitialisé si la dernière erreur significative s&#39;est produite plus de 10 jours avant. Le statut de l&#39;adresse passe à **[!UICONTROL Valide]** et est supprimé de la liste des quarantaines grâce au workflow **[!UICONTROL Nettoyage de la base]**. [En savoir plus sur les workflows techniques](../config/workflows.md#technical-workflows).
+Le compteur d&#39;erreurs est réinitialisé si la dernière erreur significative s&#39;est produite plus de 10 jours avant. Le statut de l&#39;adresse passe à **[!UICONTROL Valide]** et est supprimé de la liste des quarantaines grâce au workflow **[!UICONTROL Nettoyage de la base]**. [En savoir plus sur les workflows techniques](../config/workflows.md).
 
 ## Accéder aux adresses en quarantaine {#access-quarantined-addresses}
 

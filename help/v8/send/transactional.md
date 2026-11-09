@@ -30,7 +30,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 99%
@@ -41,7 +41,7 @@ La messagerie transactionnelle (Message Center) est un module de Campaign conçu
 
 >[!NOTE]
 >
->En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support){target="_blank"} pour configurer la messagerie transactionnelle de Campaign dans votre environnement.
+>En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq-comprehensive.md#support){target="_blank"} pour configurer la messagerie transactionnelle de Campaign dans votre environnement.
 
 Les messages transactionnels sont utilisés pour envoyer :
 

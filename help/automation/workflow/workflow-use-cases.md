@@ -20,7 +20,7 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 100%
@@ -56,7 +56,7 @@ Découvrez les différents contextes dans lesquels les workflows peuvent être u
 * [Créer une liste récapitulative](create-a-summary-list.md)
 * [Enrichir les données](enrich-data.md)
 * [Utilisation d’agrégats](using-aggregates.md)
-* [Chiffrer et exporter des données à l&#39;aide d&#39;une clé installée sur le Panneau de contrôle](use-workflow-data.md#use-case-gpg-encrypt)
+* [Chiffrer et exporter des données à l&#39;aide d&#39;une clé installée sur le Panneau de contrôle](use-workflow-data.md)
 * [Mise à jour de la liste trimestrielle à l’aide d’une requête incrémentielle](quarterly-list-update.md)
 * [Utilisation de la fonctionnalité de fusion de l’activité de déduplication](deduplication-merge.md)
 * [Configuration d’un workflow d’import récurrent](recurring-import-workflow.md)

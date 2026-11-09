@@ -43,7 +43,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '3196'
 ht-degree: 92%
@@ -336,7 +336,7 @@ Ces mappings sont présentés [dans cette section](../audiences/target-mappings.
 
 ### Destinataires externes {#external-recipients}
 
-Vous pouvez effectuer une diffusion aux personnes destinataires qui sont stockées dans un fichier externe plutôt qu’enregistrées dans la base de données. En savoir plus dans [cette section](create-message.md#select-external-recipients-selecting-external-recipients).
+Vous pouvez effectuer une diffusion aux personnes destinataires qui sont stockées dans un fichier externe plutôt qu’enregistrées dans la base de données. En savoir plus dans [cette section](create-message.md#selecting-external-recipients).
 
 <!--
 ### Send to your subscribers {#send-to-subscribers}
@@ -348,7 +348,7 @@ To send messages to the subscribers of a newsletter, you can directly target the
 
 Pour tester votre diffusion, utilisez des bons à tirer avant l&#39;envoi à la cible principale.
 
-Veillez à sélectionner les destinataires du BAT appropriés, car ils valident le formulaire et le contenu du message. Les étapes de définition des destinataires du BAT sont présentées [dans cette section](create-message.md#select-the-recipients-of-proof-messages-select-the-proof-target).
+Veillez à sélectionner les destinataires du BAT appropriés, car ils valident le formulaire et le contenu du message. Les étapes de définition des destinataires du BAT sont présentées [dans cette section](create-message.md#select-the-proof-target).
 
 
 ### Dédupliquer les adresses {#deduplicate-addresses}
@@ -456,7 +456,7 @@ You can:
 Vous pouvez utiliser des règles de typologie pour exclure une partie de la cible en fonction de critères spécifiques. Elles permettent de s’assurer que les messages envoyés répondent le mieux possible aux attentes ou aux besoins du client, dans le respect des politiques de communication de l’entreprise. Vous pouvez, par exemple, filtrer les destinataires mineurs du public cible de votre newsletter. En savoir plus [dans cet exemple](../../automation/campaign-opt/filtering-rules.md).
 
 
-## Tracker et su vos diffusions {#track-and-monitor}
+## Tracker et surveiller vos diffusions {#track-and-monitor}
 
 Vous avez cliqué sur le bouton **Envoyer** ? Voyons ce qui se passe. Une fois la diffusion envoyée, Adobe Campaign vous permet de conserver une trace des messages envoyés et de découvrir la réaction des destinataires face à votre diffusion. Vous pourrez ainsi améliorer les prochains envois et optimiser vos campagnes suivantes.
 

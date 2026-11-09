@@ -24,7 +24,7 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 97%
@@ -193,7 +193,7 @@ _jeudi 18 mai 2022_
 <tbody> 
 <tr> 
 <td> <p>Avec iOS 15, Apple a ajouté une notion de notification urgente qui permet à la personne qui développe l’application de contourner le mode Focus lorsqu’une notification est considérée comme urgente et doit atteindre l’utilisateur ou l’utilisatrice en temps réel.</p>
-<p>Pour plus d'informations, consultez la <a href="../send/push.md#send-notifications-on-ios">documentation détaillée</a>.</p>
+<p>Pour plus d'informations, consultez la <a href="../send/push.md">documentation détaillée</a>.</p>
 </td> 
 </tr> 
 </tbody> 

@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f1f84f565326bd683b47e6e498add3100ea81c4c
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1058'
 ht-degree: 98%
 ---
 # Mettre à jour les profils Adobe Experience Platform à partir des landing pages Adobe Campaign {#ac-aep-lp}
@@ -369,5 +369,5 @@ Voici un exemple d’une page de destination et d’une activité de code JavaSc
 ### Informations supplémentaires
 
 * [Configurer une activité de code JavaScript](../../automation/workflow/sql-code-and-javascript-code.md#javascript-code)
-* [Créer une landing page](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=fr){target="_blank"}
+* [Créer une landing page](../dev/web/creating-a-landing-page.md)
 * [Gérer les abonnements et les désabonnements](../start/subscriptions.md)

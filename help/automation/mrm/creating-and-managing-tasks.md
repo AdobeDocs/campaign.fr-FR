@@ -3,6 +3,7 @@ product: campaign
 title: Créer et gérer les tâches
 description: Créer et gérer les tâches
 feature: Campaigns, Resource Management
+version: Campaign v8, Campaign Classic v7
 role: User
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
 TQID: 'https://experienceleague.adobe.com/LggpejZ5h1fYPh3efYx2f7x3DEhqVlvPndjgNkNUUCs'
@@ -22,7 +23,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
 source-wordcount: '3936'
 ht-degree: 99%
@@ -31,7 +32,7 @@ ht-degree: 99%
 
 Adobe Campaign vous permet de créer des tâches et de gérer leur cycle de vie complet directement dans l’application. La mise en œuvre des programmes et des campagnes peut être découpée en tâches qui sont assignées à des opérateurs et opératrices Adobe Campaign ou à des prestataires externes. Ce mode de fonctionnement permet de créer un environnement de collaboration ouvert incluant tous les participantes et participants au programme et les participantes et participants externes.
 
-Les tâches peuvent être créées, visualisées et sus au niveau de liste des tâches et du tableau de bord d’une campagne. Elles peuvent également être visualisées et suivies au niveau des plannings du plan marketing, des programmes et des campagnes.
+Les tâches peuvent être créées, visualisées et surveillées au niveau de liste des tâches et du tableau de bord d’une campagne. Elles peuvent également être visualisées et suivies au niveau des plannings du plan marketing, des programmes et des campagnes.
 
 Les tâches sont attachées à des campagnes et peuvent avoir des dépendances, c’est-à-dire des tâches associées. Chaque tâche a un statut, une priorité, une charge estimée et des coûts associés.
 
@@ -205,7 +206,7 @@ Par défaut, le budget imputé est celui de la campagne à laquelle est rattach�
 
 >[!NOTE]
 >
->Pour plus d’informations sur les dépenses et les budgets, reportez-vous à [cette section](../campaigns/providers-stocks-and-budgets.md#cost-commitment--calculation-and-charging).
+>Pour plus d’informations sur les dépenses et les budgets, reportez-vous à [cette section](../campaigns/providers-stocks-and-budgets.md).
 
 Dans cette fenêtre, vous pouvez également définir les objectifs à atteindre. Les objectifs sont exprimés en termes de revenus prévisionnels pour la tâche.
 

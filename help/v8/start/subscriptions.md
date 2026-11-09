@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: f1f84f565326bd683b47e6e498add3100ea81c4c
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 88%
+source-wordcount: '500'
+ht-degree: 92%
 ---
 # Gestion des abonnements et des désabonnements {#optin-optout}
 
@@ -67,7 +67,7 @@ Pour abonner (opt-in) un profil à un service, les options disponibles sont les 
 
   ![](assets/web-app.png)
 
-  Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms#create-a-subscription--form-with-double-opt-in){target="_blank"}.
+  En savoir plus dans [cette section](../dev/web/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
 
 
 * Créez un workflow de ciblage et utilisez une activité de type **[!UICONTROL Service d’inscription]**.

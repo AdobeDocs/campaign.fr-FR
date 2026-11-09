@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 88%
+source-wordcount: '125'
+ht-degree: 77%
 ---
 # Utiliser Campaign et Adobe Journey Optimizer
 
@@ -43,7 +43,7 @@ Les étapes de base consistent à créer un modèle de message transactionnel da
 ![](assets/ajo-integration.png)
 
 
-[Découvrez cette intégration dans cet exemple complet](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/orchestrate-journeys/journey-use-cases/business-use-cases/ajo-ac){target="_blank"}.
+[Découvrez cette intégration dans cet exemple complet](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/connect-systems/adobe-solutions/acc-action){target="_blank"}.
 
 
 [En savoir plus dans la documentation de Journey Optimizer](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}.

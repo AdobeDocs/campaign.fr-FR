@@ -3,6 +3,7 @@ product: campaign
 title: Prise en main des simulations de campagnes
 description: Découvrez comment configurer les simulations de campagnes.
 feature: Campaigns
+version: Campaign v8, Campaign Classic v7
 exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
 TQID: 'https://experienceleague.adobe.com/U78259I0GrAXCvnDrUCP-RyQZ-caoY0fjWndcONm5EQ'
 product_v2:
@@ -20,7 +21,7 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
 source-wordcount: '1358'
 ht-degree: 100%
@@ -29,7 +30,7 @@ ht-degree: 100%
 
 L’optimisation de campagne permet de tester l’efficacité d’un plan de campagne à l’aide de simulations. Vous pouvez ainsi mesurer le succès potentiel d’une campagne : le revenu généré, le volume de la cible en fonction des règles de typologies appliquées, etc.
 
-La simulation permet de su et de comparer l&#39;impact des diffusions les unes par rapport aux autres.
+La simulation permet de surveiller et de comparer l&#39;impact des diffusions les unes par rapport aux autres.
 
 ## Configuration dʼune simulation {#set-up-a-simulation}
 
@@ -132,7 +133,7 @@ Une fois l&#39;exécution terminée, ouvrez la simulation et cliquez sur l&#39;o
 
      Pour comprendre ce calcul, éditez le sous-onglet **[!UICONTROL Exclusions]**.
 
-1. Le sous-onglet **[!UICONTROL Exclusions]** permet de visualiser la répartition des exclusions par diffusions.
+1. Le sous-onglet **[!UICONTROL Exclusions]** permet de visualiser la ventilation des exclusions par diffusions.
 
    ![](assets/simu_campaign_opti_14.png)
 
@@ -145,7 +146,7 @@ Une fois l&#39;exécution terminée, ouvrez la simulation et cliquez sur l&#39;o
 
 #### Journal {#audit}
 
-L&#39;onglet **[!UICONTROL Journal]** sert à su l&#39;exécution de la simulation. Le sous-onglet **[!UICONTROL Logs SQL]** est utile aux utilisateurs experts. Il répertorie les logs d&#39;exécution, en langage SQL. Ces logs ne s&#39;affichent que si l&#39;option **[!UICONTROL Enregistrer les requêtes SQL dans le log]** a été sélectionnée dans l&#39;onglet **[!UICONTROL Général]** avant l&#39;exécution de la simulation.
+L&#39;onglet **[!UICONTROL Journal]** sert à surveiller l&#39;exécution de la simulation. Le sous-onglet **[!UICONTROL Logs SQL]** est utile aux utilisateurs experts. Il répertorie les logs d&#39;exécution, en langage SQL. Ces logs ne s&#39;affichent que si l&#39;option **[!UICONTROL Enregistrer les requêtes SQL dans le log]** a été sélectionnée dans l&#39;onglet **[!UICONTROL Général]** avant l&#39;exécution de la simulation.
 
 ![](assets/simu_campaign_opti_11.png)
 

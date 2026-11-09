@@ -1,0 +1,142 @@
+---
+product: campaign
+title: Prise en main des applications web
+description: Créer et partager des applications web, des landing pages et des questionnaires
+feature: Landing Pages, Web Apps
+version: Campaign v8, Campaign Classic v7
+exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
+TQID: 'https://experienceleague.adobe.com/GP-1vCAYzcgjaOyUs-Zkx6rXOLSNbpF7962OEMsw5YM'
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
+    internal-label: Security and privacy
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: f391046b-0cf3-4e76-bd3b-97fe06654506
+    internal-label: Web Apps
+  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
+    internal-label: Web Forms
+  - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+    internal-label: Landing pages
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
+source-git-commit: 6db6c9152f6060b40596bd65a2ce705f916401be
+workflow-type: tm+mt
+source-wordcount: '877'
+ht-degree: 79%
+---
+# Prise en main des applications web{#about-web-applications}
+
+>[!NOTE]
+>
+>Pour les cas d’utilisation les plus courants, créez vos pages de destination dans l’interface utilisateur web de Campaign où vous pouvez facilement les concevoir et les publier. Les landing pages créées dans la console cliente, comme décrit dans cette section, offrent plus de paramètres et couvrent des cas d’utilisation plus avancés.
+>
+>[En savoir plus sur les landing pages dans l&#39;interface utilisateur web de Campaign](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+
+
+
+Adobe Campaign permet la création d’applications web dynamiques et interactives, composées de données issues de la base et dont le contenu est adapté en fonction des droits de l’utilisateur connecté.
+
+Vous pouvez créer des pages, par exemple un formulaire d’édition sur un extranet ou des formulaires de notification incluant des données issues de la base de données avec des tables, des graphiques, des formulaires de saisie, etc. Cette fonctionnalité permet de concevoir et de publier des pages web, sur lesquelles les utilisateurs et utilisatrices pourront chercher ou saisir des informations.
+
+Il peut par exemple s’agir d’un formulaire d’inscription dont les données ont été pré-remplies avec les informations contenues dans la base Adobe Campaign, comme dans l’exemple ci-dessous :
+
+![](assets/webapp_form_sample.png)
+
+Ce chapitre présente la gestion des applications web.
+
+>[!NOTE]
+>
+>Consultez la [Liste de contrôle relative à la sécurité et à la confidentialité](https://helpx.adobe.com/fr/campaign/kb/acc-security.html) pour savoir comment optimiser la sécurité pour les applications web.
+
+>[!CAUTION]
+>
+>Pour des raisons de confidentialité, nous vous recommandons d’utiliser HTTPS pour toutes les ressources externes.
+
+## Portée des applications web {#web-application-scope}
+
+Sous Adobe Campaign, les applications web permettent d’accéder aux fonctionnalités suivantes :
+
+* Création de formulaires multi-pages. Voir à ce propos [cette page](about-web-forms.md).
+* Gestion de formulaires multilingues, avec un outil de traduction intégré. Voir à ce propos [cette page](translating-a-web-application.md).
+* Interface graphique de gestion des pages, mise en page en multi-colonnes. Voir à ce propos [cette page](designing-a-web-application.md).
+* Personnalisation du rendu et du positionnement des champs. Voir à ce propos [cette page](editing-content.md#adding-personalization-content).
+* Affichage conditionnel des champs du formulaire en fonction des réponses. Voir à ce propos [cette page](form-rendering.md#defining-fields-conditional-display).
+* Affichage aléatoire de questions. Pour en savoir plus à ce sujet, consultez cette [page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/building-a-survey#adding-questions){target="_blank"} (documentation de Campaign v8).
+* Affichage conditionnel des pages. Voir à ce propos [cette page](defining-web-forms-page-sequencing.md#conditional-page-display).
+* Vérification des informations avant validation en fonction du type de données attendu (numéro, adresse e-mail, date, etc.) et des champs obligatoires. Pour en savoir plus à ce sujet, consultez cette [page](form-rendering.md#defining-control-settings).
+* Invitations ou notifications par e-mail. Voir à ce propos [cette page](publishing-a-web-form.md#delivering-a-form-via-email).
+* Personnalisation des messages d’erreur et de fin. Voir à ce propos [cette page](defining-web-forms-properties.md#setting-up-an-error-page).
+* Utilisation d’images, vidéos, liens hypertextes, captcha, etc. Pour davantage d’informations à ce sujet, consultez cette [page](editing-content.md).
+* Su des réponses en temps réel. Pour en savoir plus à ce sujet, consultez cette [page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#response-tracking){target="_blank"} (documentation de Campaign v8).
+
+Le module de création **Questionnaire** optionnel offre les fonctionnalités additionnelles suivantes :
+
+* Extension dynamique de la base de données : création de réponses ne faisant pas partie du modèle de données initial. Pour en savoir plus à ce sujet, consultez cette [page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/managing-answers#storing-collected-answers){target="_blank"} (documentation de Campaign v8).
+* Génération de rapports dédiés. Pour en savoir plus à ce sujet, consultez cette [page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"} (documentation de Campaign v8).
+
+Par rapport aux applications Web, les questionnaires proposent une interface graphique allégée : le nombre de contrôles d’édition est réduit.
+
+>[!NOTE]
+>
+>Les questionnaires sont détaillés dans [cette section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (documentation de Campaign v8).
+>
+>Les fonctionnalités générales des formulaires web sous Adobe Campaign sont présentées dans [cette section](about-web-forms.md).
+
+## Implémentation d’applications web {#web-application-implementation}
+
+Pour créer et rendre disponible une application web, vous devez :
+
+1. Créer le contenu (champs, listes, tableaux, graphiques, etc.)
+
+   Vous pouvez également consulter la section qui présente les champs disponibles pour les formulaires : tous ces champs sont aussi disponibles pour les applications web. Ces informations sont disponibles dans [cette page](adding-fields-to-a-web-form.md).
+
+1. Ajouter, au besoin, des étapes de préchargement, de test, d’enregistrement et paramétrer le contrôle d’accès (principalement dans le cadre d’une publication sur un extranet).
+1. Publier l’application web pour la rendre disponible sur un extranet ou dans Adobe Campaign.
+
+## Configuration initiale des applications web {#web-application-initial-configuration}
+
+Les application web sont créées à partir du lien **[!UICONTROL Applications web]** dans les onglets **[!UICONTROL Campagne]** et **[!UICONTROL Profils et cibles]**.
+
+Les applications web sont stockées dans le nœud **[!UICONTROL Ressources > En ligne > Applications web]** de l’arborescence Adobe Campaign. Les configurations sont réparties dans les dossiers suivants :
+
+* **[!UICONTROL Administration > Configuration > Rendus des formulaires]** : contient les modèles de rendu pour la présentation des formulaires web (applications et questionnaires). Le modèle permet de générer le formulaire. Il utilise également une feuille de style CSS. Cette feuille de style peut être surchargée au niveau du modèle. Pour plus d’informations, consultez [cette page](form-rendering.md#selecting-the-form-rendering-template).
+* **[!UICONTROL Ressources > Modèles > Modèles d’application web]** : contient des modèles de formulaire. Pour créer un formulaire ou une application web, vous devez partir d’un modèle.
+
+## Modèles d’applications web {#web-application-templates}
+
+Par défaut, Adobe Campaign fournit un modèle par type d’application web disponible sur votre instance.
+
+>[!NOTE]
+>
+>Vous pouvez convertir une application web existante en modèle. Pour cela, sélectionnez le formulaire et effectuez un clic droit. Choisissez **[!UICONTROL Actions > Sauver comme modèle]**.
+
+Vous pouvez créer des modèles à partir du nœud **[!UICONTROL Ressources > Modèles > Modèles d’applications web]** de l’arborescence Adobe Campaign.
+
+L’assistant de création vous permet de sélectionner les options à activer, comme dans l’exemple ci-dessous.
+
+![](assets/webapp_create_template.png)
+
+>[!CAUTION]
+>
+>Les applications disponibles dépendent de vos options et modules. Veuillez vérifier votre accord de licence.

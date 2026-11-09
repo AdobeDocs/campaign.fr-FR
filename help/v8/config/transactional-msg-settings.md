@@ -24,7 +24,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 94%
@@ -38,7 +38,7 @@ Découvrez l’architecture de la messagerie transactionnelle sur [cette page](.
 
 >[!NOTE]
 >
->En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour installer et configurer la messagerie transactionnelle de Campaign dans votre environnement.
+>En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq-comprehensive.md#support) pour installer et configurer la messagerie transactionnelle de Campaign dans votre environnement.
 
 ## Définir les autorisations {#mc-permissions}
 
@@ -115,8 +115,8 @@ Sur l’instance de pilotage, vous devez créer un workflow d’archivage pour c
 
 Sur la ou les instances d’exécution, vous devez démarrer les workflows techniques suivants :
 
-* **[!UICONTROL Traitement des événements batch]** (nom interne : **[!UICONTROL batchEventsProcessing]**) : ce workflow permet de répartir les événements batch dans une file d&#39;attente avant qu&#39;ils ne soient associés à un modèle de message.
-* **[!UICONTROL Traitement des événements temps réel]** (nom interne : **[!UICONTROL rtEventsProcessing]**) : ce workflow permet de répartir les événements temps réel dans une file d&#39;attente avant qu&#39;ils ne soient associés à un modèle de message.
+* **[!UICONTROL Traitement des événements batch]** (nom interne : **[!UICONTROL batchEventsProcessing]**) : ce workflow permet de ventiler les événements batch dans une file d&#39;attente avant qu&#39;ils ne soient associés à un modèle de message.
+* **[!UICONTROL Traitement des événements temps réel]** (nom interne : **[!UICONTROL rtEventsProcessing]**) : ce workflow permet de ventiler les événements temps réel dans une file d&#39;attente avant qu&#39;ils ne soient associés à un modèle de message.
 * **[!UICONTROL Mise à jour du statut des événements]** (nom interne : **[!UICONTROL updateEventsStatus]**) : ce workflow permet d&#39;attribuer un statut à l&#39;événement.
 
   Les statuts possibles des événements sont les suivants :

@@ -3,6 +3,7 @@ product: campaign
 title: Configurer les règles de pression
 description: Découvrir comment configurer des règles de pression
 feature: Fatigue Management, Typology Rules
+version: Campaign v8, Campaign Classic v7
 exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
 TQID: 'https://experienceleague.adobe.com/HBf2YMR-DobvQCsVSJC-cCSpwL8IbBH9cAbOPS9V5zk'
 product_v2:
@@ -27,7 +28,7 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
 source-wordcount: '3285'
 ht-degree: 100%
@@ -210,7 +211,7 @@ Enfin, si aucun groupement n&#39;est sélectionné, seule la **newsletter n°4**
 
 >[!NOTE]
 >
->Lorsque vous modifiez la définition d&#39;une règle de typologie, vous pouvez créer une **Simulation** afin de er son impact sur les diffusions auxquelles elle est appliquée et suivre l&#39;impact des diffusions entre elles. [En savoir plus](campaign-simulations.md).
+>Lorsque vous modifiez la définition d&#39;une règle de typologie, vous pouvez créer une **Simulation** afin de surveiller son impact sur les diffusions auxquelles elle est appliquée et suivre l&#39;impact des diffusions entre elles. [En savoir plus](campaign-simulations.md).
 
 ## Exclusion par un arbitrage {#exclusion-after-arbitration}
 

@@ -24,7 +24,7 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 99%
@@ -224,7 +224,7 @@ Par conséquent, le tableau d&#39;évaluation est mis à jour comme prévu.
 
 La gestion des abonnements dans Campaign est décrite dans [cette page](../start/subscriptions.md).
 
-L&#39;insertion des données d&#39;abonnement et de désabonnement repose sur le [mécanisme d&#39;évaluation](staging.md) de la base de données locale de Campaign. Les informations sur les abonnés sont temporaires et stockées dans des tables intermédiaires de la base de données locale. Le workflow de synchronisation envoie ces données de la base locale vers la base de données Cloud. Par conséquent, les processus d&#39;abonnement et de désabonnement sont **asynchrones**. Les demandes d&#39;opt-in et d&#39;opt-out sont traitées toutes les heures par le biais d&#39;un workflow technique spécifique. [En savoir plus](replication.md#tech-wf)
+L&#39;insertion des données d&#39;abonnement et de désabonnement repose sur le [mécanisme d&#39;évaluation](staging.md) de la base de données locale de Campaign. Les informations sur les abonnés sont temporaires et stockées dans des tables intermédiaires de la base de données locale. Le workflow de synchronisation envoie ces données de la base locale vers la base de données Cloud. Par conséquent, les processus d&#39;abonnement et de désabonnement sont **asynchrones**. Les demandes d&#39;opt-in et d&#39;opt-out sont traitées toutes les heures par le biais d&#39;un workflow technique spécifique. [En savoir plus](replication.md#workflows)
 
 
 **Rubriques connexes :**

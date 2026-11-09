@@ -25,7 +25,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 96%
@@ -36,7 +36,7 @@ Utilisez les listes Campaign pour créer et organiser vos audiences.
 
 Une liste est un ensemble statique de contacts qui peut être ciblé dans des actions de diffusion ou mis à jour pendant une importation ou lors d&#39;une autre action de workflow. Par exemple, une population extraite de la base de données via une requête peut être stockée en tant que liste.
 
-Les listes sont créées et gérées à partir du lien **[!UICONTROL Listes]** dans l&#39;onglet **[!UICONTROL Profils et cibles.]** Ces listes sont basées sur la table des profils Adobe Campaign par défaut (nms:recipient). [En savoir plus](../dev/datamodel.md#ootb-profiles.md)
+Les listes sont créées et gérées à partir du lien **[!UICONTROL Listes]** dans l&#39;onglet **[!UICONTROL Profils et cibles.]** Ces listes sont basées sur la table des profils Adobe Campaign par défaut (nms:recipient). [En savoir plus](../dev/datamodel.md#ootb-profiles)
 
 ![](assets/list-dashboard.png)
 

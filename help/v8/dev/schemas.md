@@ -38,7 +38,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1302'
 ht-degree: 94%
@@ -221,7 +221,7 @@ Dans cet exemple, au lieu de laisser l’attribut **@autopk** ou **@autouuid** c
 >
 >Lors de la création ou de l’extension d’un schéma, vous devez conserver la valeur de la séquence de la clé primaire (@pkSequence) pour l’ensemble du schéma.
 
-En savoir plus sur les clés dans [cette section](database-mapping.md#management-of-keys).
+En savoir plus sur les clés dans [cette section](database-mapping.md).
 
 ## Attributs (champs) {#attributes--fields-}
 

@@ -5,10 +5,10 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: b5e9265db5409f3f0fada35c43cb08fafa1ec4e0
+source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 87%
+source-wordcount: '1084'
+ht-degree: 89%
 ---
 
 # Documentation Adobe Campaign v8 (console) {#campaign-v8}
@@ -28,7 +28,7 @@ ht-degree: 87%
   + {hide-from-toc}[Problèmes connus](start/known-issues.md)
   + [Matrice de compatibilité](start/compatibility-matrix.md)
   + {hide-from-toc}[Mises à jour de la documentation](start/documentation-updates.md)
-+ Commencer {#new}
++ Prise en main {#new}
   + [Prise en main d’Adobe Campaign](start/get-started.md)
   + [Fonctionnalités principales](start/whats-new.md)
   + [Découvrir l’interface utilisateur](start/campaign-ui.md)
@@ -37,17 +37,8 @@ ht-degree: 87%
   + [De Campaign Classic v7 à v8](start/v7-to-v8.md)
   + [De Campaign Standard à v8](start/acs-to-v8.md)
   + [Forum aux questions](start/campaign-faq-comprehensive.md)
-  + {hide-from-toc}[Questions fréquentes](start/campaign-faq.md)
   + {hide-from-toc}[Pixels de tracking email et conseils CNIL](start/cnil-pixel-tracking.md)
-+ Administration et autorisations {#permissions}
-  + [Commencer avec les autorisations](start/gs-permissions.md)
-  + [Gérer les autorisations utilisateur](start/manage-permissions.md)
-  + [Ajouter des autorisations aux dossiers](start/folder-permissions.md)
-  + [Panneau de contrôle](config/self-service.md)
-+ Gestion de campagnes {#campaigns}
-  + [Commencer avec les campagnes](start/campaigns.md)
-  + [Documentation de l’orchestration des campagnes >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=fr)
-+ Envoyer des messages {#send}
++ Messages {#send}
   + [Commencer avec les messages](start/gs-message.md)
   + [Créer votre première diffusion](start/create-message.md)
   + [Utiliser des modèles de diffusion](send/create-templates.md)
@@ -123,7 +114,7 @@ ht-degree: 87%
       + [Collecter et traiter les événements](send/event-processing.md)
       + [Comprendre la description des événements](send/event-description.md)
       + [Envoyer et surveiller des messages](send/delivery-execution.md)
-+ Profils et audiences {#audience}
++ Profils &amp; audiences {#audience}
   + [Prise en main des profils et des audiences](audiences/gs-audiences.md)
   + [Utiliser les audiences](start/audiences.md)
   + [Accès aux profils](audiences/view-profiles.md)
@@ -139,17 +130,54 @@ ht-degree: 87%
     + {hide-from-toc}[Partager des audiences avec les solutions Adobe](start/shared-audiences.md)
   + {hide-from-toc}[Bonnes pratiques](audiences/audiences-best-practices.md)
   + [Gérer les abonnements](start/subscriptions.md)
-+ Pages de destination et Forms {#content}
++ Landing pages et formulaires {#content}
   + [Créer des landing pages](dev/landing-pages.md)
   + [Concevoir des formulaires et des applications web](dev/webapps.md)
+  + Applications web {#web-applications}
+    + [Prise en main des applications web](dev/web/about-web-applications.md)
+    + [Création d’une application web](dev/web/creating-a-new-web-application.md)
+    + [Conception d’une application web](dev/web/designing-a-web-application.md)
+    + [Cas d’utilisation : création de vues d’ensemble](dev/web/use-cases-creating-overviews.md)
+    + [Traduction d’une application web](dev/web/translating-a-web-application.md)
+    + [Tracking des visites sur une application web](dev/web/tracking-a-web-application.md)
+    + [Désinscription (opt-out) du tracking des applications web](dev/web/web-application-tracking-opt-out.md)
+  + Modifier du contenu HTML {#editing-html-content}
+    + [Prise en main de l’éditeur HTML](dev/web/about-campaign-html-editor.md)
+    + [Gestion des modèles](dev/web/template-management.md)
+    + [Interface de l&#39;éditeur de contenu](dev/web/content-editor-interface.md)
+    + [Modification du contenu](dev/web/editing-content.md)
+    + [Bonnes pratiques relatives à l&#39;édition de contenu](dev/web/content-editing-best-practices.md)
+    + [Création d’une landing page](dev/web/creating-a-landing-page.md)
+    + [Cas d’utilisation : création d’une diffusion email](dev/web/use-case-creating-an-email-delivery.md)
+  + Formulaires web {#web-forms}
+    + [Prise en main des formulaires web](dev/web/about-web-forms.md)
+    + [Utilisation d’un modèle de formulaire web](dev/web/using-a-web-form-template.md)
+    + [Ajout de champs à un formulaire web](dev/web/adding-fields-to-a-web-form.md)
+    + [Eléments statiques dans un formulaire web](dev/web/static-elements-in-a-web-form.md)
+    + [Définition de la disposition des formulaires web](dev/web/defining-web-forms-layout.md)
+    + [Rendu du formulaire](dev/web/form-rendering.md)
+    + [Définition de l’enchaînement des pages](dev/web/defining-web-forms-page-sequencing.md)
+    + [Enregistrement des réponses aux formulaires web](dev/web/web-forms-answers.md)
+    + [Publication d’un formulaire web](dev/web/publishing-a-web-form.md)
+    + [Définition des propriétés des formulaires web](dev/web/defining-web-forms-properties.md)
+    + [Traduction d’un formulaire web](dev/web/translating-a-web-form.md)
+    + [Cas pratiques : formulaires web](dev/web/use-cases-web-forms.md)
+  + Questionnaires {#surveys}
+    + [Prise en main des questionnaires](dev/surveys/about-surveys.md)
+    + [Étapes clés de création d’un questionnaire](dev/surveys/getting-started-with-surveys.md)
+    + [Conception d’un questionnaire](dev/surveys/building-a-survey.md)
+    + [Gestion des réponses](dev/surveys/managing-answers.md)
+    + [Publier, suivre et utiliser les données collectées](dev/surveys/publish-track-and-use-collected-data.md)
+    + [Configuration des questionnaires](dev/surveys/configuring-surveys.md)
+    + [Cas d’utilisation : création d’un formulaire de référence](dev/surveys/use-case-creating-a-refer-a-friend-form.md)
+    + [Cas d’utilisation : affichage d’un rapport sur les réponses à un questionnaire en ligne](dev/surveys/use-case-displaying-report-on-answers-to-an-online-survey.md)
++ Campagnes {#campaigns}
+  + [Commencer avec les campagnes](start/campaigns.md)
+  + [Documentation de l’orchestration des campagnes >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=fr)
 + Workflows {#workflows}
   + [Commencer avec les workflows](config/workflows.md)
   + [Documentation des workflows >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=fr)
-+ Confidentialité et sécurité {#privacy}
-  + [Gérer les demandes d&#39;accès à des informations personnelles](start/privacy.md)
-  + [Directives de sécurité](config/security.md)
-  + [Module complémentaire de sécurité améliorée](config/enhanced-security.md)
-+ Gestion Des Offres - Interaction {#offers}
++ Offres et interaction {#offers}
   + [Prise en main des interactions en temps réel](interaction/interaction.md)
   + [Environnements et architecture](interaction/interaction-architecture.md)
   + [Bonnes pratiques](interaction/interaction-best-practices.md)
@@ -165,9 +193,31 @@ ht-degree: 87%
     + [Contexte](interaction/interaction-present-offers.md)
     + [Appel dʼune offre dans une page web](interaction/interaction-integration.md)
     + [Gestion des interactions anonymes](interaction/anonymous-interactions.md)
+  + Gérer le catalogue d’offres {#managing-an-offer-catalog}
+    + [Validation et activation d’une offre](interaction/approving-and-activating-an-offer.md)
+    + [Gestion des modèles d’offre](interaction/managing-offer-templates.md)
+    + [Gestion de la présentation des offres](interaction/managing-offer-presentation.md)
+  + Simulation d’offres {#simulating-offers}
+    + [À propos de la simulation des offres](interaction/about-offers-simulation.md)
+    + [Paramètres d&#39;exécution](interaction/execution-settings.md)
+    + [Périmètre de la simulation](interaction/simulation-scope.md)
+    + [Suivi des simulations](interaction/simulation-tracking.md)
   + [Rapports et historique](interaction/interaction-tracking.md)
   + [Cas d’utilisation](interaction/interaction-use-cases.md)
-+ Suivi et analyses {#analytics}
+  + Exemples de cas d’utilisation {#case-study}
+    + [Règles de présentation](interaction/presentation-rules.md)
+    + [Offres sur canal entrant](interaction/offers-on-an-inbound-channel.md)
+    + [Offres sur canal sortant](interaction/offers-on-an-outbound-channel.md)
+  + [Paramètres avancés](interaction/interaction-advanced-settings.md)
+  + Paramètres avancés {#advanced-parameters}
+    + [Exemple d&#39;extension](interaction/extension-example.md)
++ Requête et données {#data}
+  + Interrogation de la base de données {#query}
+    + [Utiliser le requêteur](start/query-editor.md)
+    + [Requêtes de conception](start/design-queries.md)
+    + [Définition des conditions de filtre](start/filter-conditions.md)
+  + [Importer des données](start/import.md)
++ Rapports et suivi {#analytics}
   + Tracking des messages {#tracking}
     + [Commencer avec le tracking](send/tracking.md)
     + [Configuration des liens trackés](send/tracked-links.md)
@@ -190,13 +240,6 @@ ht-degree: 87%
       + [Rapports sur les diffusions](reporting/delivery-reports.md)
       + [Calcul des mesures intégrées](reporting/metrics-calculation.md)
     + [Rapports personnalisés](reporting/custom-reports.md)
-+ Data Management {#data}
-  + Interrogation de la base de données {#query}
-    + [Utiliser le requêteur](start/query-editor.md)
-    + [Requêtes de conception](start/design-queries.md)
-    + [Définition des conditions de filtre](start/filter-conditions.md)
-  + [Importer des données](start/import.md)
-  + [Documentation des workflows >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=fr)
 + Intégrations {#connect}
   + [Connecter des campagnes à d’autres solutions](connect/integration.md)
   + Campaign + Experience Platform {#ac-aep}
@@ -215,6 +258,15 @@ ht-degree: 87%
     + [Utilisation de Campaign et SFDC](connect/ac-sfdc.md)
     + [Utilisation de Campaign et Microsoft Dynamics](connect/ac-ms-dyn.md)
     + [Synchroniser les données](connect/crm-data-sync.md)
++ Administration et autorisations {#permissions}
+  + [Commencer avec les autorisations](start/gs-permissions.md)
+  + [Gérer les autorisations utilisateur](start/manage-permissions.md)
+  + [Ajouter des autorisations aux dossiers](start/folder-permissions.md)
+  + [Panneau de contrôle](config/self-service.md)
++ Confidentialité et sécurité {#privacy}
+  + [Gérer les demandes d&#39;accès à des informations personnelles](start/privacy.md)
+  + [Directives de sécurité](config/security.md)
+  + [Module complémentaire de sécurité améliorée](config/enhanced-security.md)
 + Architecture {#architecture}
   + [Principes généraux](architecture/general-architecture.md)
   + [Modèles d’architecture](architecture/architecture.md)
@@ -281,7 +333,7 @@ ht-degree: 87%
     + Gestion des workflows {#managing-workflows}
       + [Contrôle d&#39;un workflow](dev/api/controlling-a-workflow.md)
       + [Déclenchement d&#39;une activité de signal](dev/api/triggering-a-signal-activity.md)
-+ Ressources supplémentaires {#resources}
++ Autres ressources {#resources}
   + [Notes techniques de Campaign >](https://experienceleague.adobe.com/fr/docs/campaign/technotes-ac/technotes-home)
   + [Documentation de l’interface utilisateur web de Campaign >](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/campaign-web-home)
 

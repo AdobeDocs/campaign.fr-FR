@@ -27,7 +27,7 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 88%
@@ -36,7 +36,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour implémenter des déclencheurs Experience Cloud dans Campaign.
+>En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq-comprehensive.md#support) pour implémenter des déclencheurs Experience Cloud dans Campaign.
 
 Vous pouvez utiliser les triggers Experience Cloud afin de connecter des données entre Adobe Campaign et Adobe Analytics à l&#39;aide du pipeline. Le pipeline récupère les actions ou déclencheurs des utilisateurs et utilisatrices de votre site web. Un abandon de panier est un exemple de déclencheur. Les déclencheurs sont traités dans Adobe Campaign pour envoyer des emails en temps quasi réel.
 
