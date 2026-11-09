@@ -36,7 +36,7 @@ ht-degree: 84%
 
 Les questionnaires en ligne sont entièrement configurables et personnalisables pour répondre à vos besoins. Les paramètres doivent être renseignés dans la fenêtre des propriétés.
 
-Les paramètres disponibles sont présentés dans [ce document &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/defining-web-forms-properties){target="_blank"}.
+Les paramètres disponibles sont présentés dans [ce document &#x200B;](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-forms/defining-web-forms-properties){target="_blank"}.
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 

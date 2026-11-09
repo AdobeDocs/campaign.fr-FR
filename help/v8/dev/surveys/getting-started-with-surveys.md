@@ -125,7 +125,7 @@ Dans l&#39;exemple suivant, nous utiliserons une page de type **[!UICONTROL Page
 
   >[!NOTE]
   >
-  >Pour chaque champ ou chaque question, vous pouvez adapter la mise en page à vos besoins en utilisant les options de l&#39;onglet **[!UICONTROL Avancé]**. La mise en page des écrans du questionnaire est présentée dans [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+  >Pour chaque champ ou chaque question, vous pouvez adapter la mise en page à vos besoins en utilisant les options de l&#39;onglet **[!UICONTROL Avancé]**. La mise en page des écrans du questionnaire est présentée dans [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
 
   Dans l&#39;écran de détail, cliquez sur l&#39;onglet **[!UICONTROL Prévisualisation]** pour consulter le rendu du questionnaire que vous venez de créer.
 
