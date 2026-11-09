@@ -60,7 +60,7 @@ Notre objectif final est d&#39;obtenir une diffusion partant d&#39;un modèle pe
 
 ## Etape 1 - Créer une diffusion {#step-1---creating-a-delivery}
 
-Pour créer une diffusion, placez le curseur dans l’onglet **Campagnes** et cliquez sur **Diffusions**. Cliquez ensuite sur le bouton **Créer** au-dessus de la liste des diffusions existantes. Pour plus d’informations sur la création de diffusions, consultez [cette page](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/about-email-channel){target="_blank"}.
+Pour créer une diffusion, placez le curseur dans l’onglet **Campagnes** et cliquez sur **Diffusions**. Cliquez ensuite sur le bouton **Créer** au-dessus de la liste des diffusions existantes. Pour plus d’informations sur la création de diffusions, consultez [cette page](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/about-email-channel){target="_blank"}.
 
 ![](assets/delivery_step_1.png)
 

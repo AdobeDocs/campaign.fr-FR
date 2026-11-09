@@ -67,7 +67,7 @@ Ce chapitre présente la gestion des applications web.
 
 >[!NOTE]
 >
->Consultez la [Liste de contrôle relative à la sécurité et à la confidentialité](https://helpx.adobe.com/campaign/kb/acc-security.html) pour savoir comment optimiser la sécurité pour les applications web.
+>Consultez la [Liste de contrôle relative à la sécurité et à la confidentialité](https://helpx.adobe.com/fr/campaign/kb/acc-security.html) pour savoir comment optimiser la sécurité pour les applications web.
 
 >[!CAUTION]
 >

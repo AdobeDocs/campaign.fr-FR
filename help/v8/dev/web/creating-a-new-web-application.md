@@ -73,7 +73,7 @@ Ce modèle détermine le type d’application web. Vous pouvez créer les élém
 
 1. Des applications Facebook
 
-   Adobe Campaign permet, via l&#39;option **Social Marketing** de publier des contenus personnalisés dans une application Facebook. Pour plus d’informations, consultez [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}.
+   Adobe Campaign permet, via l&#39;option **Social Marketing** de publier des contenus personnalisés dans une application Facebook. Pour plus d’informations, consultez [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}.
 
    >[!CAUTION]
    >

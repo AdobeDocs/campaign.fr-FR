@@ -159,7 +159,7 @@ Lors de l&#39;accès au formulaire, la page d&#39;authentification suivante sera
 
 ![](assets/s_ncs_admin_survey_access_login.png)
 
-Les login et mot de passe sont ceux des opérateurs Adobe Campaign. Pour plus d’informations, consultez [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
+Les login et mot de passe sont ceux des opérateurs Adobe Campaign. Pour plus d’informations, consultez [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
 
 L’option **[!UICONTROL Utiliser un compte spécifique]** vous permet de circonscrire les autorisations en lecture ou écriture de l’opérateur ou de l’opératrice accédant au formulaire. Sélectionnez dans la liste déroulante un opérateur, une opératrice ou un groupe d’opérateurs et d’opératrices responsable de l’octroi de ces autorisations.
 
