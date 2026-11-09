@@ -25,7 +25,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1309'
 ht-degree: 91%
@@ -119,11 +119,11 @@ Les campagnes sont créées à partir de modèles de campagne. Vous pouvez confi
 
 Pour chaque campagne, les fonctionnalités suivantes sont disponibles :
 
-* Documents de référence et ressources : vous pouvez associer des documents à la campagne (brief, compte-rendu, images, etc.). Tous les formats de document sont pris en charge. [En savoir plus](marketing-campaign-deliveries.md#manage-associated-documents).
-* Définir les coûts : pour chaque campagne, Adobe Campaign permet de définir les postes de coût et les structures de calcul des coûts qui pourront être utilisés lors de la création de la campagne marketing. Par exemple : frais d&#39;impression, recours à une agence externe, location de salle, etc. [En savoir plus](providers-stocks-and-budgets.md#defining-cost-categories).
+* Documents de référence et ressources : vous pouvez associer des documents à la campagne (brief, compte-rendu, images, etc.). Tous les formats de document sont pris en charge. [En savoir plus](marketing-campaign-deliveries.md).
+* Définir les coûts : pour chaque campagne, Adobe Campaign permet de définir les postes de coût et les structures de calcul des coûts qui pourront être utilisés lors de la création de la campagne marketing. Par exemple : frais d&#39;impression, recours à une agence externe, location de salle, etc. [En savoir plus](providers-stocks-and-budgets.md#define-cost-categories).
 * Définir des objectifs : vous pouvez définir des objectifs à réaliser dans le cadre d&#39;une campagne. Ces objectifs sont quantifiables, par exemple : nombre d&#39;abonnés à atteindre, chiffre d&#39;affaires à réaliser, etc. Ces informations sont ensuite utilisées dans les rapports de campagne.
-* Gérer les adresses de contrôle et les populations témoin. [En savoir plus](marketing-campaign-deliveries.md#defining-a-control-group).
-* Gestion des validations : vous pouvez sélectionner les traitements qui feront l&#39;objet d&#39;une validation et éventuellement sélectionner les opérateurs ou groupes d&#39;opérateurs validants. [En savoir plus](marketing-campaign-approval.md#checking-and-approving-deliveries).
+* Gérer les adresses de contrôle et les populations témoin. [En savoir plus](marketing-campaign-deliveries.md).
+* Gestion des validations : vous pouvez sélectionner les traitements qui feront l&#39;objet d&#39;une validation et éventuellement sélectionner les opérateurs ou groupes d&#39;opérateurs validants. [En savoir plus](marketing-campaign-approval.md#review-and-approve-deliveries).
 
 >[!NOTE]
 >
@@ -218,11 +218,11 @@ Les validations de la cible ou du contenu d&#39;une diffusion peuvent être réa
 
 ![](assets/web-access-approval.png)
 
-Vous pouvez également utiliser le lien contenu dans les messages de notification. Pour plus d’informations, consultez [cette section](marketing-campaign-approval.md#checking-and-approving-deliveries).
+Vous pouvez également utiliser le lien contenu dans les messages de notification. Pour plus d’informations, consultez [cette section](marketing-campaign-approval.md#review-and-approve-deliveries).
 
 
 ## Tutoriel vidéo {#video}
 
 Cette vidéo explique comment créer un plan marketing, des programmes et des campagnes.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449897?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)

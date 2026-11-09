@@ -3,6 +3,7 @@ product: campaign
 title: Règles de cohérence
 description: Règles de cohérence
 feature: Typology Rules
+version: Campaign v8, Campaign Classic v7
 exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
 TQID: 'https://experienceleague.adobe.com/KaybpQFNgtTiMgQOWX0-bNqPEMeWGWR8vb6qjZzr63k'
 product_v2:
@@ -25,7 +26,7 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 95%
@@ -130,7 +131,7 @@ Le nombre maximum de messages qui peuvent être traités est réparti proportion
 
 Par défaut, les règles de capacité n&#39;ont qu&#39;un caractère indicatif. Sélectionnez l&#39;option **[!UICONTROL Exclure de la cible les messages en sur-capacité]** pour que la charge définie ne puisse pas être dépassée. Dans ce cas, les messages excédentaires seront automatiquement exclus des diffusions utilisant cette règle de typologie.
 
-Pour su les consommations, consultez les valeurs affichées dans la colonne **[!UICONTROL Consommé]** de l&#39;onglet **[!UICONTROL Capacité]** de la règle de typologie.
+Pour surveiller les consommations, consultez les valeurs affichées dans la colonne **[!UICONTROL Consommé]** de l&#39;onglet **[!UICONTROL Capacité]** de la règle de typologie.
 
 ![](assets/campaign_opt_create_capacity_04.png)
 

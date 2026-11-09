@@ -10,19 +10,19 @@ TQID: https://experienceleague.adobe.com/EzHUErLy7-OcfF0lxH4UHXm1N1HYGt6kP9Io1LI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
-source-wordcount: 875
-ht-degree: 87%
-
+source-wordcount: '875'
+ht-degree: 100%
 ---
-
 # Création d’un workflow {#build-a-workflow}
 
 ## Création dʼun workflow {#create-a-new-workflow}
@@ -45,7 +45,7 @@ Saisissez un libellé puis cliquez sur **[!UICONTROL Enregistrer]**.
 
 ## Ajout et liaison dʼactivités {#add-and-link-activities}
 
-Vous devez maintenant définir les différentes activités et les relier entre elles dans un diagramme. À ce stade de la configuration, nous pouvons voir le libellé du diagramme et le statut du workflow (Modification en cours). La section inférieure de la fenêtre est utilisée uniquement pour modifier le diagramme. Il contient une barre d&#39;outils, une palette d&#39;activités (à gauche) et le diagramme lui-même (à droite).
+Vous devez maintenant définir les différentes activités et les relier entre elles dans un diagramme. À ce stade de la configuration, nous pouvons voir le libellé du diagramme et le statut du workflow (Modification en cours). La section inférieure de la fenêtre est utilisée pour modifier le diagramme uniquement. Elle contient une barre d’outils, une palette d’activités (à gauche) et le diagramme lui-même (à droite).
 
 ![](assets/new-workflow-2.png)
 
@@ -96,14 +96,14 @@ Lʼaffichage et la mise en page du diagramme peuvent être modifiés à lʼaide 
 
   Les icônes relatives à la progression et l’affichage des logs sont présentées en détail dans les sections suivantes :
 
-   * [Afficher la progression](monitor-workflow-execution.md#displaying-progress)
-   * [Afficher les logs](monitor-workflow-execution.md#displaying-logs)
+  * [Afficher la progression](monitor-workflow-execution.md#displaying-progress)
+  * [Afficher les logs](monitor-workflow-execution.md#displaying-logs)
 
 * **Alignement des objets**
 
   Pour aligner les icônes, sélectionnez-les et cliquez sur l&#39;icône **[!UICONTROL Aligner verticalement]** ou **[!UICONTROL Aligner horizontalement]**.
 
-  Utilisez la touche **CTRL** pour sélectionner plusieurs activités dispersées ou pour désélectionner une ou plusieurs activités. Cliquez sur l’arrière-plan du diagramme pour tout désélectionner.
+  Utilisez la touche **CTRL** pour sélectionner plusieurs activités discontinues ou désélectionner une ou plusieurs activités d’une sélection. Cliquez sur l’arrière-plan du diagramme pour tout désélectionner.
 
 * **Gestion des images**
 
@@ -130,7 +130,7 @@ Ces commentaires s&#39;afficheront automatiquement quand des opérateurs balayer
 
 ## Les modèles de workflows {#workflow-templates}
 
-Les modèles de workflow contiennent la configuration globale des propriétés et éventuellement une plage d’activités concaténées dans un diagramme. Cette configuration peut être réutilisée pour créer de nouveaux workflows contenant un certain nombre d&#39;éléments préconfigurés
+Les modèles de workflows contiennent la configuration globale des propriétés et éventuellement d’un ensemble d’activités concaténées dans un diagramme. Cette configuration peut être réutilisée pour créer des workflows dont certains éléments sont préconfigurés.
 
 Vous pouvez créer de nouveaux modèles de workflows à partir de modèles existants ou transformer directement un workflow en modèle.
 

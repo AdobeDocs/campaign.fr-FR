@@ -3,25 +3,26 @@ product: campaign
 title: Accéder aux opérations
 description: Accéder aux opérations
 feature: Distributed Marketing
+version: Campaign v8, Campaign Classic v7
 role: User
 exl-id: 2edbb1d6-122c-418a-8893-4f683f804544
 TQID: https://experienceleague.adobe.com/W7RR9xZV1kwPtZgOG5AGDLUNl9Ix-qYh1Uj9mmQxgUM
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
     internal-label: Campaigns
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
-source-wordcount: 170
-ht-degree: 51%
-
+source-wordcount: '170'
+ht-degree: 100%
 ---
-
 # Accès aux campagnes{#accessing-campaigns}
 
 
@@ -32,9 +33,9 @@ Selon le type d&#39;opération et les options sélectionnées, elle est exécut�
 
 ## Accès à la campagne {#accessing-the-campaign}
 
-Une fois la commande validée et la date de disponibilité atteinte, la campagne est créée localement et peut être utilisée. Les opérateurs locaux sont informés de sa disponibilité.
+Une fois la commande approuvée et la date de disponibilité atteinte, la campagne est créée au niveau local et peut être utilisée. Les opérateurs et opératrices locaux sont informés de sa disponibilité.
 
-Il est ajouté au détail de l’ordre correspondant et peut être modifié. Le tableau de bord complet permet de le gérer au niveau local.
+Elle est ajoutée dans le détail de la commande correspondante et peut être modifiée. Le tableau de bord complet vous permet de la gérer au niveau local.
 
 ![](assets/mkg_dist_local_op_edit_new_op1.png)
 
@@ -42,7 +43,7 @@ L&#39;opération est également accessible à partir de la vue d&#39;ensemble de
 
 ## Paramétrages disponibles {#available-settings}
 
-Les entités locales peuvent adapter le contenu de la campagne selon leurs besoins, à l&#39;aide de tous les éléments du tableau de bord de la campagne. Leur tâche principale sera d&#39;adapter le workflow de ciblage et éventuellement de personnaliser le contenu de la diffusion.
+Les entités locales peuvent adapter le contenu de la campagne afin qu’elle réponde au mieux à leurs besoins. Pour cela, ils utilisent tous les éléments du tableau de bord de la campagne. Elles seront principalement amenées à adapter le workflow de ciblage et éventuellement à personnaliser le contenu de la diffusion.
 
 ## Exécution de l’opération {#campaign-execution}
 

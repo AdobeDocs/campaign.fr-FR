@@ -23,7 +23,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 100%
@@ -62,7 +62,7 @@ Les étapes principales du processus de validation en local sont les suivantes 
 
 Le modèle de répartition de données permet de limiter la population issue du ciblage selon un groupement de données, tout en permettant d&#39;affecter chaque valeur à un responsable local. Dans cet exemple, nous avons défini le champ **[!UICONTROL Domaine de l’adresse e-mail]** comme champ de répartition et affecté un domaine à chaque responsable local
 
-Pour plus d’informations sur la création d’un modèle de distribution de données, voir [Limiter le nombre d&#39;enregistrements des sous-ensembles par répartition de données](split.md#limiting-the-number-of-subset-records-per-data-distribution).
+Pour plus d’informations sur la création d’un modèle de distribution de données, voir [Limiter le nombre d&#39;enregistrements des sous-ensembles par répartition de données](split.md#limit-the-number-of-subset-records-per-data-distribution).
 
 1. Pour créer le modèle de répartition de données, positionnez-vous sur le noeud **[!UICONTROL Ressources > Gestion de campagne > Répartition de données]**, et cliquez sur le bouton **[!UICONTROL Nouveau]**.
 
@@ -117,7 +117,7 @@ Les activités suivantes ont été ajoutées :
 
 Le ciblage en amont est composé de deux requêtes, une intersection et un partage. La population issue du ciblage peut être limitée à l&#39;aide de l&#39;activité **[!UICONTROL Partage]** utilisant un modèle de répartition de données.
 
-Pour plus d’informations sur la configuration d’une activité de partage, voir [Partage](split.md). La création d’un modèle de distribution de données est détaillée dans [Limiter le nombre d&#39;enregistrements des sous-ensembles par répartition de données](split.md#limiting-the-number-of-subset-records-per-data-distribution).
+Pour plus d’informations sur la configuration d’une activité de partage, voir [Partage](split.md). La création d’un modèle de distribution de données est détaillée dans [Limiter le nombre d&#39;enregistrements des sous-ensembles par répartition de données](split.md#limit-the-number-of-subset-records-per-data-distribution).
 
 Si vous ne souhaitez pas limiter la population issue de la requête, il n&#39;est pas nécessaire d&#39;utiliser les activités **[!UICONTROL Requête]**, **[!UICONTROL Intersection]** et **[!UICONTROL Partage]**. Dans ce cas, renseignez le modèle de répartition de données dans la première activité de type **[!UICONTROL Validation en local]**.
 
@@ -195,7 +195,7 @@ Vous pouvez également accéder à la liste des tâches de validation en local �
 
 ![](assets/local_validation_admin_2.png)
 
-Sélectionnez la tâche que vous souhaitez su et cliquez sur le bouton **[!UICONTROL Détail]**. L&#39;onglet **[!UICONTROL Général]** de la tâche de validation en local vous permet de visualiser les informations générales de la tâche. Vous avez également la possibilité de modifier, si besoin, la limite de validation ainsi que la date de rappel.
+Sélectionnez la tâche que vous souhaitez surveiller et cliquez sur le bouton **[!UICONTROL Détail]**. L&#39;onglet **[!UICONTROL Général]** de la tâche de validation en local vous permet de visualiser les informations générales de la tâche. Vous avez également la possibilité de modifier, si besoin, la limite de validation ainsi que la date de rappel.
 
 ![](assets/local_validation_admin_3.png)
 

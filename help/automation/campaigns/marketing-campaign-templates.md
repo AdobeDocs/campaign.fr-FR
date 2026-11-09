@@ -20,7 +20,7 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 96%
@@ -126,7 +126,7 @@ De plus, des raccourcis vers les fenêtres de configuration sont ajoutés dans l
 
 * **Population témoin**
 
-  Lorsque ce module est sélectionné, un onglet supplémentaire est ajouté aux paramètres avancés du modèle et des campagnes basées sur ce modèle. La configuration peut être définie à partir du modèle ou individuellement au niveau de chaque campagne. En savoir plus sur les populations témoins dans [cette section](marketing-campaign-deliveries.md#defining-a-control-group).
+  Lorsque ce module est sélectionné, un onglet supplémentaire est ajouté aux paramètres avancés du modèle et des campagnes basées sur ce modèle. La configuration peut être définie à partir du modèle ou individuellement au niveau de chaque campagne. En savoir plus sur les populations témoins dans [cette section](marketing-campaign-deliveries.md).
 
   ![](assets/template-activate-1.png)
 
@@ -139,7 +139,7 @@ De plus, des raccourcis vers les fenêtres de configuration sont ajoutés dans l
 
 * **Documents**
 
-  Lorsque ce module est sélectionné, un onglet supplémentaire est ajouté à l&#39;onglet **[!UICONTROL Modifier]** du modèle et des campagnes basées sur ce modèle. Les documents attachés peuvent être ajoutés à partir du modèle ou individuellement au niveau de chaque campagne. En savoir plus sur les documents dans [cette section](marketing-campaign-deliveries.md#manage-associated-documents).
+  Lorsque ce module est sélectionné, un onglet supplémentaire est ajouté à l&#39;onglet **[!UICONTROL Modifier]** du modèle et des campagnes basées sur ce modèle. Les documents attachés peuvent être ajoutés à partir du modèle ou individuellement au niveau de chaque campagne. En savoir plus sur les documents dans [cette section](marketing-campaign-deliveries.md).
 
   ![](assets/template-activate-3.png)
 
@@ -151,7 +151,7 @@ De plus, des raccourcis vers les fenêtres de configuration sont ajoutés dans l
 
 * **Ciblages et workflows**
 
-  Lorsque vous sélectionnez le module **[!UICONTROL Ciblages et workflows]**, un onglet est ajouté pour vous permettre de créer un ou plusieurs workflows pour les opérations basées sur ce modèle. Les workflows peuvent également être configurés individuellement pour chaque opération en fonction de ce modèle.En savoir plus sur les workflows de campagne dans [cette section](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow).
+  Lorsque vous sélectionnez le module **[!UICONTROL Ciblages et workflows]**, un onglet est ajouté pour vous permettre de créer un ou plusieurs workflows pour les opérations basées sur ce modèle. Les workflows peuvent également être configurés individuellement pour chaque opération en fonction de ce modèle.En savoir plus sur les workflows de campagne dans [cette section](marketing-campaign-deliveries.md).
 
   ![](assets/template-activate-5.png)
 

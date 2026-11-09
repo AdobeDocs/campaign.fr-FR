@@ -21,7 +21,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 100%
@@ -42,4 +42,3 @@ Les activités suivantes sont des activités de base de données : elles serven
 * **[Test](test.md)** : active une transition en fonction du résultat d&#39;un test.
 * **[Contrainte horaire](time-constraint.md)** : permet de suspendre l&#39;exécution d&#39;une tâche pendant une période déterminée.
 * **[Attente](wait.md)** : active la transition sortante après un délai donné.
-  <!--* **Task**: lets you configure task execution. Refer to the [Task](task.md) section.-->

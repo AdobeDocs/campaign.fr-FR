@@ -30,7 +30,7 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 97%
@@ -46,7 +46,7 @@ L&#39;intégration entre Adobe Campaign et Adobe Experience Manager vous perm
 
 >[!NOTE]
 >
->En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour intégrer Adobe Experience Manager à Campaign.
+>En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq-comprehensive.md#support) pour intégrer Adobe Experience Manager à Campaign.
 
 ## Importer le contenu à partir d’Adobe Experience Manager {#integrating-with-aem}
 
@@ -70,7 +70,7 @@ Cette intégration peut être utilisée, par exemple, pour créer une newsletter
 
    ![](assets/aem_authoring_3.png)
 
-1. Personnalisez le contenu de votre e-mail en ajoutant des composants, tels que des champs de personnalisation d&#39;Adobe Campaign. En savoir plus dans la documentation de [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html?lang=fr#editing-email-content){target="_blank"}.
+1. Personnalisez le contenu de votre e-mail en ajoutant des composants, tels que des champs de personnalisation d&#39;Adobe Campaign. En savoir plus dans la documentation de [](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html?lang=fr#editing-email-content){target="_blank"}.
 
 1. Lorsque votre e-mail est prêt, accédez au menu **[!UICONTROL Informations sur la page]**, puis cliquez sur **[!UICONTROL Démarrer le workflow]**.
 

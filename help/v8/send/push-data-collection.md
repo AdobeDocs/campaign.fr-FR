@@ -1,5 +1,5 @@
 ---
-title: Envoi de notification push avec Adobe Campaign
+title: Configuration des notifications push avec la collecte de données
 description: Prise en main des notifications push dans Campaign
 feature: Push
 role: Developer
@@ -23,7 +23,7 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
 workflow-type: tm+mt
 source-wordcount: '1552'
 ht-degree: 94%
@@ -102,7 +102,7 @@ L’enregistrement des informations d’identification des notifications push de
 
 1. Activez **[!UICONTROL Informations d’identification des notifications push]** pour ajouter vos informations d’identification.
 
-1. Glissez-déposez les informations d’identification des notifications push FCM. Pour plus d&#39;informations sur l&#39;obtention des informations d&#39;identification push, consultez la documentation de [&#128279;](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+1. Glissez-déposez les informations d’identification des notifications push FCM. Pour plus d&#39;informations sur l&#39;obtention des informations d&#39;identification push, consultez la documentation de [](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour créer la configuration de votre application.
 

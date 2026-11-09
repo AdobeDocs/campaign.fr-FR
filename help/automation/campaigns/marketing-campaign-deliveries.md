@@ -27,7 +27,7 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 100%
@@ -85,7 +85,7 @@ Cependant, vous pouvez également permettre au propriétaire de la campagne de c
 
 Une fois toutes les validations accordées, le statut de la diffusion passe à **[!UICONTROL En attente d&#39;extraction]**. Les fichiers d&#39;extraction sont créés via un [workflow technique](../workflow/technical-workflows.md) spécifique qui, selon sa configuration par défaut, démarre automatiquement lorsqu&#39;une diffusion par publipostage direct est en attente d&#39;extraction. Lorsqu&#39;un processus est en cours, il est affiché dans le tableau de bord et peut être modifié à partir de son lien.
 
-Une fois le workflow d&#39;extraction exécuté correctement, le fichier d&#39;extraction doit être validé (sous réserve que la validation du fichier d&#39;extraction ait été sélectionnée dans le paramétrage de la diffusion). [En savoir plus](marketing-campaign-approval.md#approving-an-extraction-file).
+Une fois le workflow d&#39;extraction exécuté correctement, le fichier d&#39;extraction doit être validé (sous réserve que la validation du fichier d&#39;extraction ait été sélectionnée dans le paramétrage de la diffusion). [En savoir plus](marketing-campaign-approval.md#approve-an-extraction-file).
 
 Suivez les étapes ci-dessous pour valider le contenu et envoyer le fichier au fournisseur :
 

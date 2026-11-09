@@ -3,25 +3,26 @@ product: campaign
 title: Suivi d’une campagne
 description: Découvrez comment effectuer le suivi dʼune campagne grâce au marketing distribué de Campaign
 feature: Distributed Marketing
+version: Campaign v8, Campaign Classic v7
 role: User
 exl-id: 9904c1c6-c233-4aa2-a237-338ebde15661
 TQID: https://experienceleague.adobe.com/v-ZkfPAMBCbVOb0FheuwmYILdV4uFjbGu6cv2uoKccc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
     internal-label: Campaigns
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
-source-wordcount: 441
-ht-degree: 69%
-
+source-wordcount: '441'
+ht-degree: 100%
 ---
-
 # Suivi d’une campagne{#tracking-a-campaign}
 
 
@@ -37,7 +38,7 @@ Ils peuvent ainsi :
 
 ## Filtrer les kits {#filter-packages}
 
-Dans l’onglet **[!UICONTROL Campagnes]**, vous pouvez afficher la liste des **[!UICONTROL Kits de campagne]** qui regroupe toutes les campagnes de marketing distribué existantes. Vous pouvez filtrer cette liste afin qu’elle n’affiche que les campagnes publiées, en retard, en attente de validation, etc. Pour cela, cliquez sur les liens dans la section supérieure de cette vue ou utilisez le lien **[!UICONTROL Liste de filtres]** et sélectionnez le statut du kit d&#39;opération à afficher.
+Dans l’onglet **[!UICONTROL Campagnes]**, vous pouvez afficher la liste des **[!UICONTROL Kits de campagne]** qui regroupe toutes les campagnes de marketing distribué existantes. Vous pouvez filtrer cette liste de sorte qu’elle n’affiche que les campagnes qui sont déjà publiées, en retard, en attente de validation, etc. Pour ce faire, cliquez sur les liens dans la section supérieure de cette vue ou utilisez le lien **[!UICONTROL Filtrer la liste]** et sélectionnez le statut du kit de campagne à afficher.
 
 ![](assets/mkg_dist_catalog_filter.png)
 
@@ -47,13 +48,13 @@ La page des **[!UICONTROL kits de campagne]** permet de visualiser le résumé d
 
 Ce résumé affiche les informations suivantes : le libellé, le type d&#39;opération, le nom de l&#39;opération à partir de laquelle le kit a été créé et le dossier d&#39;enregistrement.
 
-Cliquez sur le nom du package pour le modifier. Vous pouvez également visualiser les commandes par entité locale et par statut.
+Cliquez sur le nom du kit pour le modifier. Vous pouvez alors visualiser les commandes réalisées par les entités locales et leur statut.
 
 Cette information est proposée aussi dans la vue **[!UICONTROL Commandes d&#39;opérations]** qui liste unitairement toutes les commandes réalisées.
 
 ![](assets/mkg_dist_catalog_op_command_details.png)
 
-L&#39;opérateur central peut modifier la commande. Vous avez le choix entre les deux méthodes suivantes :
+Les opérateurs et opératrices centraux peuvent modifier la commande. Vous avez le choix entre les deux méthodes suivantes :
 
 1. L’opérateur ou l’opératrice peut cliquer sur le nom de la commande pour l’éditer : il ou elle accède alors aux détails de celle-ci.
 
@@ -93,7 +94,7 @@ Pour les **campagnes collaboratives**, l’annulation d’un kit d’opération 
 
    ![](assets/mkg_dist_mutual_op_cancelled2.png)
 
-Les packages annulés restent accessibles et réinitialisables par l&#39;entité centrale (voir ci-dessous) si nécessaire. Ils ne seront proposés aux entités locales qu&#39;une fois approuvés et démarrés. Le processus de réinitialisation du package est illustré ci-dessous.
+Les kits annulés restent accessibles et peuvent être réinitialisés par l’entité centrale (voir ci-dessous) si nécessaire. Ils ne seront proposés aux entités locales qu’une fois approuvés et démarrés. Le processus de réinitialisation d’un package est présenté ci-dessous.
 
 ## Réinitialisation dʼun package {#reinitializing-a-package}
 
@@ -108,7 +109,7 @@ Vous pouvez réinitialiser un kit de campagne déjà publié afin de le modifier
 
    ![](assets/mkg_dist_mutual_op_reinit2.png)
 
-1. Le statut du package passe à **[!UICONTROL En édition]**. Modifiez, approuvez et publiez-le à nouveau pour le restaurer dans la liste du package de campagne.
+1. Le statut du package passe à **[!UICONTROL En cours d’édition]**. Il peut alors être modifié, approuvé et publié pour être à nouveau proposé dans la liste des kits de campagne.
 
 >[!NOTE]
 >

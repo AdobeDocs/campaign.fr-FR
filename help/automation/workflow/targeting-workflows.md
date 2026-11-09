@@ -29,7 +29,7 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '2377'
 ht-degree: 100%
@@ -86,11 +86,11 @@ Tandis que pour les **visiteurs**, la liste proposera les dimensions de filtrage
 
 ### Travailler avec les données additionnelles {#select-data}
 
-Une activité **[!UICONTROL Requête]** permet de sélectionner des données de base pour créer la population cible. Pour plus d’informations, consultez [cette section](query.md#create-a-query).
+Une activité **[!UICONTROL Requête]** permet de sélectionner des données de base pour créer la population cible. Pour plus d’informations, consultez [cette section](query.md#creating-a-query).
 
 Les activités suivantes peuvent également servir à lancer des requêtes et à affiner les données de la base de données : [Requête incrémentale](incremental-query.md), [Lecture de liste](read-list.md).
 
-Il est possible de collecter des données supplémentaires pour les transférer et les traiter tout au long du cycle de vie du workflow. Pour en savoir plus à ce sujet, consultez les sections [Ajouter des données](query.md#add-data) et [Modifier les données additionnelles](#edit-additional-data).
+Il est possible de collecter des données supplémentaires pour les transférer et les traiter tout au long du cycle de vie du workflow. Pour en savoir plus à ce sujet, consultez les sections [Ajouter des données](query.md#adding-data) et [Modifier les données additionnelles](#edit-additional-data).
 
 ### Modification des données additionnelles {#edit-additional-data}
 

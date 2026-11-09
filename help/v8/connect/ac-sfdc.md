@@ -34,7 +34,7 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 97%
@@ -99,7 +99,7 @@ Vous pouvez remplacer toutes les valeurs d&#39;une énumération Adobe Campaign
 
 1. Cliquez sur **[!UICONTROL Suivant]** puis **[!UICONTROL Démarrer]** pour lancer l&#39;import des énumérations.
 
-1. Parcourez le nœud **[!UICONTROL Administration > Plateforme > Énumérations]** pour vérifier les valeurs importées. Pour en savoir plus sur les énumérations, consultez [cette page](../config/ui-settings.md#enumerations).
+1. Parcourez le nœud **[!UICONTROL Administration > Plateforme > Énumérations]** pour vérifier les valeurs importées. Pour en savoir plus sur les énumérations, consultez [cette page](../config/ui-settings.md).
 
 Adobe Campaign et Salesforce.com sont maintenant connectés. Vous pouvez configurer la synchronisation des données entre les deux systèmes.
 

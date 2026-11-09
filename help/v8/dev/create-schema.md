@@ -34,7 +34,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 96%
@@ -84,7 +84,7 @@ Pour cela, vous devez créer le schéma de la table puis procéder à la mise à
 
    >[!NOTE]
    >
-   >Par défaut, les schémas créés par les utilisateurs sont stockés dans l&#39;espace de noms « cus ». Pour plus d&#39;informations, consultez la section [Identification d&#39;un schéma](extend-schema.md#identification-of-a-schema).
+   >Par défaut, les schémas créés par les utilisateurs sont stockés dans l&#39;espace de noms « cus ». Pour plus d&#39;informations, consultez la section [Identification d&#39;un schéma](extend-schema.md).
 
 1. Créez le contenu de la table. Nous vous recommandons d&#39;utiliser l&#39;assistant dédié pour vous assurer qu&#39;aucun paramètre n&#39;est manquant. Pour ce faire, cliquez sur le bouton **[!UICONTROL Insérer]** et sélectionnez le type de paramètre à ajouter.
 

@@ -32,7 +32,7 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 98%
@@ -46,7 +46,7 @@ Cette intégration vous aide à implémenter les cas d&#39;utilisation comme sui
 >[!NOTE]
 >* L&#39;intégration prend uniquement en charge les images statiques. Les autres types de contenu ne peuvent pas être personnalisés.
 >
->* En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour implémenter des déclencheurs Experience Cloud dans Campaign.
+>* En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq-comprehensive.md#support) pour implémenter des déclencheurs Experience Cloud dans Campaign.
 
 Adobe Target peut utiliser les types de données suivants :
 
@@ -99,7 +99,7 @@ Vous pouvez ensuite définir les paramètres de l&#39;image :
 * La **[!UICONTROL landing page]** vous permet de rediriger l&#39;image par défaut vers une landing page par défaut. Cette URL s&#39;applique uniquement lorsque l&#39;image par défaut est affichée dans l&#39;e-mail final. Elle est facultative.
 * Les **[!UICONTROL Paramètres de décision additionnels]** définissent le mapping entre les champs définis dans les segments d’Adobe Target et les champs d’Adobe Campaign. Les champs d’Adobe Campaign utilisés doivent avoir été spécifiés au niveau du « rawbox ». Dans notre exemple, nous avons ajouté le champ Pays.
 
-Dans Adobe Target, si vous utilisez les autorisations Enterprise, ajoutez la propriété correspondante dans ce champ. En savoir plus sur les autorisations de Target Enterprise dans la documentation d’[&#128279;](https://experienceleague.adobe.com/fr/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
+Dans Adobe Target, si vous utilisez les autorisations Enterprise, ajoutez la propriété correspondante dans ce champ. En savoir plus sur les autorisations de Target Enterprise dans la documentation d’[](https://experienceleague.adobe.com/fr/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
 
 ![](assets/target_13.png)
 
@@ -119,7 +119,7 @@ Dans notre cas, nous avons besoin de deux offres de redirection, la troisième (
 
    ![](assets/target_6.png)
 
-1. Suivez la même procédure pour l&#39;offre de redirection restante. Pour en savoir plus à ce sujet, consultez cette [documentation &#x200B;](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=fr#experiences){target="_blank"}.
+1. Suivez la même procédure pour l&#39;offre de redirection restante. Pour en savoir plus à ce sujet, consultez cette [documentation ](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=fr#experiences){target="_blank"}.
 
 ### Création d’audiences {#audiences-target}
 

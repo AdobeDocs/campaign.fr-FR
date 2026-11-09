@@ -3,6 +3,7 @@ product: campaign
 title: Prise en main de la gestion des ressources marketing
 description: Découvrez la gestion des ressources marketing
 feature: Campaigns, Resource Management
+version: Campaign v8, Campaign Classic v7
 role: Admin, User
 exl-id: 6fa4f4e3-c5a5-4d7f-8e71-826dee4e926a
 TQID: 'https://experienceleague.adobe.com/pbJIafh8oVqlRrL4IKSmpWWNEx-rLE2fujmzcdKg5WE'
@@ -26,7 +27,7 @@ topic_v2:
     internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 82%
@@ -39,7 +40,7 @@ Les opérateurs Adobe Campaign peuvent coordonner leurs actions et en valider l
 
 Ainsi, dans le cadre des programmes et sous-programmes des plans marketing, des tâches peuvent être créées et affectées aux opérateurs impliqués, puis gérées durant toutes leurs étapes de réalisation.
 
-**MRM** permet également de gérer des ressources marketing sur lesquelles plusieurs intervenants sont appelés à intervenir : l&#39;intégrité et l de ces ressources est assuré via un tableau de bord dédié.
+**MRM** permet également de gérer des ressources marketing sur lesquelles plusieurs intervenants sont appelés à intervenir : l&#39;intégrité et la surveillance de ces ressources est assuré via un tableau de bord dédié.
 
 Enfin, la fonctionnalité de gestion budgétaire est étendue à la gestion des objectifs et des lignes de dépenses, ainsi qu&#39;aux rapports natifs étendus. Vous pouvez ensuite surveiller et mesurer la productivité et les performances de toutes les activités marketing.
 

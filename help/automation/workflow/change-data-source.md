@@ -25,14 +25,14 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 100%
 ---
 # Modifier la source de données {#change-data-source}
 
-L&#39;activité **[!UICONTROL Modifier la source de données]** permet de modifier la source de données d&#39;une [table de travail d&#39;un workflow](use-workflow-data.md#workflow-temporary-work-table). Cette activité offre davantage de flexibilité permettant de gérer les données entre les différentes sources de données, telles que Federated Data Access (FDA), la base de données cloud de Campaign (FFDA) et la base de données locale de Campaign.
+L&#39;activité **[!UICONTROL Modifier la source de données]** permet de modifier la source de données d&#39;une [table de travail d&#39;un workflow](use-workflow-data.md#work-table). Cette activité offre davantage de flexibilité permettant de gérer les données entre les différentes sources de données, telles que Federated Data Access (FDA), la base de données cloud de Campaign (FFDA) et la base de données locale de Campaign.
 
 La **[!UICONTROL table de travail]** du workflow est utilisée pour gérer et partager des données avec les activités du workflow.
 
@@ -57,7 +57,7 @@ Pour utiliser l&#39;activité **[!UICONTROL Modifier la source de données]**, v
 
 1. Interrogez vos destinataires ciblés avec une activité **[!UICONTROL Requête]**.
 
-   Pour plus d&#39;informations sur l&#39;activité **[!UICONTROL Requête]**, consultez cette [page](query.md#create-a-query).
+   Pour plus d&#39;informations sur l&#39;activité **[!UICONTROL Requête]**, consultez cette [page](query.md#creating-a-query).
 
 1. Ajoutez une activité **[!UICONTROL Modifier la source de données]**.
 

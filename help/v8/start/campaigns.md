@@ -27,7 +27,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 73%
@@ -115,7 +115,7 @@ Adobe Campaign propose un module complémentaire **Marketing distribué** pour l
 
 >[!NOTE]
 >
->Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](compatibility-matrix.md)
 
 Découvrez comment configurer et utiliser les fonctionnalités du marketing distribué de Campaign dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=fr){target="_blank"}.
 
@@ -125,6 +125,6 @@ Adobe Campaign propose un module complémentaire **Gestion de la réaction** qu
 
 >[!NOTE]
 >
->Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](compatibility-matrix.md)
 
-[&#128279;](../assets/do-not-localize/book.png) Découvrez comment configurer et utiliser la Gestion de la réaction de Campaign dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=fr){target="_blank"}.
+[](../assets/do-not-localize/book.png) Découvrez comment configurer et utiliser la Gestion de la réaction de Campaign dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=fr){target="_blank"}.

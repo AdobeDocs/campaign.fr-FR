@@ -16,9 +16,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '340'
 ht-degree: 28%
 ---
 # Notes techniques d’Adobe Campaign v8 {#campaign-technotes}
@@ -52,7 +52,7 @@ Starting Campaign v8.6, the authentication process to Campaign v8 is being impro
     <td>
       <img src="../v8/assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
-      <strong>Prise en main</strong><br/><a href="../v8/start/campaign-ui.md">Interface utilisateur</a> - <a href="../v8/start/ac-components.md">Composants et processus</a> - <a href="../v8/start/v7-to-v8.md">De Classic v7 à v8</a> - <a href="../v8/start/campaign-faq.md">FAQ</a>
+      <strong>Prise en main</strong><br/><a href="../v8/start/campaign-ui.md">Interface utilisateur</a> - <a href="../v8/start/ac-components.md">Composants et processus</a> - <a href="../v8/start/v7-to-v8.md">De Classic v7 à v8</a> - <a href="../v8/start/campaign-faq-comprehensive.md">FAQ</a>
     </td>
     <td>
       <img src="../v8/assets/do-not-localize/icon-experience.svg" width="35px">
@@ -86,5 +86,5 @@ Starting Campaign v8.6, the authentication process to Campaign v8 is being impro
 
 ## Autres ressources
 
-[Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Documentation de l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=fr){target="_blank"} - [Tutoriels](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=fr){target="_blank"} - [[!DNL Adobe Campaign] Guide d’automatisation &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=fr){target="_blank"} - [Panneau de contrôle de Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"}
+[Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Documentation de l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=fr){target="_blank"} - [Tutoriels](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=fr){target="_blank"} - [[!DNL Adobe Campaign] Guide d’automatisation ](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=fr){target="_blank"} - [Panneau de contrôle de Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"}
 

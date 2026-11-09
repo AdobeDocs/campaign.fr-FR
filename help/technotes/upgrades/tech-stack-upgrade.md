@@ -9,9 +9,9 @@ product_v2:
     internal-label: Campaign
   - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
     internal-label: Campaign v8
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '325'
 ht-degree: 100%
 ---
 # Mises à niveau de l’environnement Adobe Campaign 2023 {#ac-system-upgrade}
@@ -24,7 +24,7 @@ Pour des raisons de sécurité, Adobe doit [installer la version la plus récent
 
 >[!NOTE]
 >
->Pour toute question sur ces modifications, contactez l’[Assistance clientèle d’Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Pour toute question sur ces modifications, contactez l’[Assistance clientèle d’Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 >
 
 ## Mise à niveau de la version de Campaign {#ac-upgrade}

@@ -3,6 +3,7 @@ product: campaign
 title: Prise en main des typologies de campagne
 description: Découvrez comment configurer et implémenter des typologies de campagne.
 feature: Typology Rules
+version: Campaign v8, Campaign Classic v7
 exl-id: 7832ffe1-eb65-4b37-9fc5-1374516755d9
 TQID: 'https://experienceleague.adobe.com/Pxzz3-z8BorlEgP1gGwLK--l6hEAGZ-DQhGuxsLk6oU'
 product_v2:
@@ -27,7 +28,7 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 88%
@@ -67,7 +68,7 @@ Campaign est fourni avec un ensemble de règles de **filtrage** et de **contrôl
 Le module complémentaire Optimisation de campagne propose deux types supplémentaires de **règles de typologie** :
 
 * Les règles de **pression** qui vous permettent de contrôler la lassitude marketing. [En savoir plus](pressure-rules.md).
-* Les règles de **capacité** qui vous permettent de limiter les charges pour garantir des conditions de traitement optimales. [En savoir plus](consistency-rules.md#controlling-capacity).
+* Les règles de **capacité** qui vous permettent de limiter les charges pour garantir des conditions de traitement optimales. [En savoir plus](consistency-rules.md#control-capacity).
 
 
 >[!NOTE]
@@ -100,11 +101,11 @@ Des exemples de cas d’utilisation des règles de typologie de pression sont di
 
 Cette vidéo explique comment implémenter la gestion de la fatigue dans Adobe Campaign en utilisant les règles de typologie.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448333?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333787?quality=12)
 
 ### Configurer la gestion de la lassitude à l&#39;aide de filtres prédéfinis
 
 La gestion de la lassitude contrôle la fréquence et le nombre des messages afin d&#39;éviter une sollicitation excessive des destinataires. Si votre instance de campagne ne contient pas le module d’optimisation de campagne, vous pouvez configurer un filtre prédéfini qui filtrera la population cible en fonction du nombre de messages reçus
 Cette vidéo explique comment implémenter la gestion de la fatigue dans Adobe Campaign à l’aide de filtres.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444602?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333778?quality=12)

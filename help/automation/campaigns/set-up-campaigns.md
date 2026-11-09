@@ -22,7 +22,7 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 70%
@@ -54,7 +54,7 @@ Un programme est un ensemble d’activités marketing défini pour une période.
 Une campagne centralise tous les éléments liés à une campagne marketing : les diffusions, les règles de ciblage, les coûts, les fichiers d&#39;export, les documents connexes, etc. Chaque campagne est associée à un programme. Découvrez comment créer une campagne [dans cette section](marketing-campaign-create.md#create-a-campaign).
 
 1. **Sélectionner l’audience**
-Les audiences peuvent être importées depuis une liste ou construites dans un workflow de campagne à l&#39;aide de requêtes. Découvrez comment définir l&#39;audience cible d&#39;une campagne [dans cette section](marketing-campaign-target.md#select-the-target-population).
+Les audiences peuvent être importées depuis une liste ou construites dans un workflow de campagne à l&#39;aide de requêtes. Découvrez comment définir l&#39;audience cible d&#39;une campagne [dans cette section](marketing-campaign-target.md).
 
 1. **Création de diffusions**
 Orchestrez vos diffusions cross-canal dans vos campagnes. Rationalisez vos communications avec Adobe Campaign par le biais d&#39;e-mails personnalisés, de SMS, de notifications push et de messages in-app. Vous pouvez également ajouter des diffusions par publipostage direct. Découvrez comment créer, valider et surveiller les diffusions dans vos campagnes [dans cette section](marketing-campaign-deliveries.md).
@@ -68,11 +68,11 @@ Effectuez le suivi de vos campagnes à partir du tableau de bord, vérifiez les 
 1. **Suivre les budgets, stocks et coûts associés**.
 Utilisez Adobe Campaign pour contrôler l&#39;allocation du budget, gérer vos fournisseurs, vos stocks et coûts. [En savoir plus](providers-stocks-and-budgets.md#create-service-providers-and-their-cost-structures).
 
-Une fois ces étapes terminées, vous pouvez [lancer les diffusions](marketing-campaign-deliveries.md#start-a-delivery), vérifier les données, les processus et les informations relatifs aux diffusions et, si nécessaire, [gérer les documents associés](marketing-campaign-deliveries.md#manage-associated-documents). Vous pouvez également [su et diriger l&#39;exécution](marketing-campaign-monitoring.md) de vos campagnes et diffusions.
+Une fois ces étapes terminées, vous pouvez [lancer les diffusions](marketing-campaign-deliveries.md#start-a-delivery), vérifier les données, les processus et les informations relatifs aux diffusions et, si nécessaire, [gérer les documents associés](marketing-campaign-deliveries.md). Vous pouvez également [surveiller et diriger l&#39;exécution](marketing-campaign-monitoring.md) de vos campagnes et diffusions.
 
 
 ## Vidéo sur les concepts clés {#key-concepts-video}
 
 Cette vidéo présente les concepts clés des campagnes marketing.
 
->[!VIDEO](https://video.tv.adobe.com/v/326571?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)

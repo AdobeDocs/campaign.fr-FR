@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 99%
@@ -54,7 +54,7 @@ Le module **Gestion des réseaux sociaux (Social Marketing)** vous permet d’i
 
 >[!NOTE]
 >
->En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour connecter Campaign à X. Le module complémentaire **Gestion des réseaux sociaux (Marketing des médias sociaux)** doit être installé sur votre environnement, par le biais du module dédié, et le compte externe Twitter doit être configuré.
+>En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq-comprehensive.md#support) pour connecter Campaign à X. Le module complémentaire **Gestion des réseaux sociaux (Marketing des médias sociaux)** doit être installé sur votre environnement, par le biais du module dédié, et le compte externe Twitter doit être configuré.
 
 
 Pour configurer Adobe Campaign afin de publier des posts sur vos comptes X, vous devez déléguer à Adobe Campaign les droits d’écriture sur ces comptes. Pour ce faire, procédez comme suit :
@@ -169,7 +169,7 @@ Une fois cette configuration terminée, vous pouvez créer des publications sur 
 
 ## Créer un compte X de test {#tw-test-account}
 
-Outre le compte X, créez un compte X privé destiné à l’envoi de [BAT de publication](../send/twitter.md#send-tw-proofs). Pour ce faire, procédez comme suit :
+Outre le compte X, créez un compte X privé destiné à l’envoi de [BAT de publication](../send/twitter.md). Pour ce faire, procédez comme suit :
 
 1. Créez un nouveau compte X.
 1. Accédez aux **Paramètres** du compte.

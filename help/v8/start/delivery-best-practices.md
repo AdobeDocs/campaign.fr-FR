@@ -43,7 +43,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '3196'
 ht-degree: 92%
@@ -165,11 +165,11 @@ Pour personnaliser vos messages, vous pouvez utiliser les données des destinata
 
 * Vérifier vos paramètres de personnalisation : vérifiez que le contenu de votre message est correctement conçu pour éviter toute erreur, qui pourrait être liée à la personnalisation. Une balise de personnalisation Adobe Campaign a toujours la forme suivante : `<%=table.field%>`. L’utilisation incorrecte de paramètres dans les blocs de personnalisation peut entraîner des problèmes. Par exemple, les variables en JavaScript doivent être utilisées comme suit :
 
-  &grave;&grave;
+  ``
   <%
   var brand = "xxx"
   %>
-  &grave;&grave;
+  ``
 
   Pour plus d&#39;informations sur les blocs de personnalisation, consultez [cette section](../send/personalization-blocks.md).
 
@@ -275,7 +275,7 @@ To avoid common formatting errors, check the following elements:
 
 * Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../../installation/using/configuring-campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode.
 
-* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#authentication).
+* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 -->
 
 ## Gestion des images {#manage-images}
@@ -336,7 +336,7 @@ Ces mappings sont présentés [dans cette section](../audiences/target-mappings.
 
 ### Destinataires externes {#external-recipients}
 
-Vous pouvez effectuer une diffusion aux personnes destinataires qui sont stockées dans un fichier externe plutôt qu’enregistrées dans la base de données. En savoir plus dans [cette section](create-message.md#select-external-recipients-selecting-external-recipients).
+Vous pouvez effectuer une diffusion aux personnes destinataires qui sont stockées dans un fichier externe plutôt qu’enregistrées dans la base de données. En savoir plus dans [cette section](create-message.md#selecting-external-recipients).
 
 <!--
 ### Send to your subscribers {#send-to-subscribers}
@@ -348,7 +348,7 @@ To send messages to the subscribers of a newsletter, you can directly target the
 
 Pour tester votre diffusion, utilisez des bons à tirer avant l&#39;envoi à la cible principale.
 
-Veillez à sélectionner les destinataires du BAT appropriés, car ils valident le formulaire et le contenu du message. Les étapes de définition des destinataires du BAT sont présentées [dans cette section](create-message.md#select-the-recipients-of-proof-messages-select-the-proof-target).
+Veillez à sélectionner les destinataires du BAT appropriés, car ils valident le formulaire et le contenu du message. Les étapes de définition des destinataires du BAT sont présentées [dans cette section](create-message.md#select-the-proof-target).
 
 
 ### Dédupliquer les adresses {#deduplicate-addresses}
@@ -456,7 +456,7 @@ You can:
 Vous pouvez utiliser des règles de typologie pour exclure une partie de la cible en fonction de critères spécifiques. Elles permettent de s’assurer que les messages envoyés répondent le mieux possible aux attentes ou aux besoins du client, dans le respect des politiques de communication de l’entreprise. Vous pouvez, par exemple, filtrer les destinataires mineurs du public cible de votre newsletter. En savoir plus [dans cet exemple](../../automation/campaign-opt/filtering-rules.md).
 
 
-## Tracker et su vos diffusions {#track-and-monitor}
+## Tracker et surveiller vos diffusions {#track-and-monitor}
 
 Vous avez cliqué sur le bouton **Envoyer** ? Voyons ce qui se passe. Une fois la diffusion envoyée, Adobe Campaign vous permet de conserver une trace des messages envoyés et de découvrir la réaction des destinataires face à votre diffusion. Vous pourrez ainsi améliorer les prochains envois et optimiser vos campagnes suivantes.
 

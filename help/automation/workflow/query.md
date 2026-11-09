@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1687'
 ht-degree: 93%
@@ -105,10 +105,10 @@ Pour ajouter des données de la base Adobe Campaign :
 
    Vous pouvez ajouter :
 
-   * Un champ calculé à partir de données issues de la population ciblée ou un agrégat (nombre d’achats en attente au cours du dernier mois, montant moyen d’un ticket de caisse, etc.). Un exemple est proposé dans la section [Sélection des données](targeting-workflows.md#selecting-data).
+   * Un champ calculé à partir de données issues de la population ciblée ou un agrégat (nombre d’achats en attente au cours du dernier mois, montant moyen d’un ticket de caisse, etc.). Un exemple est proposé dans la section [Sélection des données](targeting-workflows.md).
    * Un nouveau champ, créé à partir du bouton **[!UICONTROL Ajouter]** situé à droite de la liste des colonnes de sortie.
 
-     Vous pouvez également ajouter une collection d’informations, par exemple une liste de contrats, les 5 dernières diffusions, etc. Les collections correspondent à des champs dont les valeurs peuvent être multiples pour un même profil (relation 1-N). Pour plus dʼinformations, consultez la section [Modification des données additionnelles](targeting-workflows.md#editing-additional-data).
+     Vous pouvez également ajouter une collection d’informations, par exemple une liste de contrats, les 5 dernières diffusions, etc. Les collections correspondent à des champs dont les valeurs peuvent être multiples pour un même profil (relation 1-N). Pour plus dʼinformations, consultez la section [Modification des données additionnelles](targeting-workflows.md#edit-additional-data).
 
 Pour ajouter une collection d’informations liées à une population ciblée, procédez comme suit :
 
@@ -222,7 +222,7 @@ L’équivalent de la dimension de filtrage dans SQL est la jointure interne :
 
 `select iRecipientId from nmsRecipient INNER JOIN nmsBroadLog ON (...)`
 
-Pour plus d’informations sur les dimensions de filtrage, consultez [cette section](build-a-workflow.md#targeting-and-filtering-dimensions).
+Pour plus d’informations sur les dimensions de filtrage, consultez [cette section](build-a-workflow.md).
 
 ### Architecture {#architecture}
 

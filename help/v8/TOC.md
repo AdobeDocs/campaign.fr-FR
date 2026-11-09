@@ -5,9 +5,9 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: 9b9c573de6120f4b3da0d5eee98192b56b4754df
+source-git-commit: a4655bbf4566da21f097ae1106212c55965ef1bd
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '881'
 ht-degree: 87%
 ---
 
@@ -37,7 +37,6 @@ ht-degree: 87%
   + [De Campaign Classic v7 à v8](start/v7-to-v8.md)
   + [De Campaign Standard à v8](start/acs-to-v8.md)
   + [Forum aux questions](start/campaign-faq-comprehensive.md)
-  + {hide-from-toc}[Questions fréquentes](start/campaign-faq.md)
   + {hide-from-toc}[Pixels de tracking email et conseils CNIL](start/cnil-pixel-tracking.md)
 + Messages {#send}
   + [Commencer avec les messages](start/gs-message.md)
@@ -158,6 +157,7 @@ ht-degree: 87%
     + [Gestion des interactions anonymes](interaction/anonymous-interactions.md)
   + [Rapports et historique](interaction/interaction-tracking.md)
   + [Cas d’utilisation](interaction/interaction-use-cases.md)
+  + [Paramètres avancés](interaction/interaction-advanced-settings.md)
 + Requête et données {#data}
   + Interrogation de la base de données {#query}
     + [Utiliser le requêteur](start/query-editor.md)

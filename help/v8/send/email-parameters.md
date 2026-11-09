@@ -20,7 +20,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 66%
@@ -87,11 +87,11 @@ Chacun de ces champs peut être personnalisé à l’aide de l’icône dédiée
 
 ![](assets/email-smtp-bounce.png)
 
-Pour plus d’informations sur la gestion des e-mails de rebond, consultez [cette section](delivery-failures.md#bounce-mail-management).
+Pour plus d’informations sur la gestion des e-mails de rebond, consultez [cette section](delivery-failures.md#bounce-mail-qualification).
 
 ## Activer le désabonnement de la liste en un clic {#one-click-list-unsubscribe}
 
-L’URL list-unsubscribe en un clic est un lien ou un bouton affiché en regard des informations de l’expéditeur de l’e-mail, qui permet aux destinataires de se désinscrire instantanément de vos listes de diffusion en un seul clic. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"}-->
+L’URL list-unsubscribe en un clic est un lien ou un bouton affiché en regard des informations de l’expéditeur de l’e-mail, qui permet aux destinataires de se désinscrire instantanément de vos listes de diffusion en un seul clic. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
 
 Il s’affiche sous la forme d’un lien **Se désabonner** dans les interfaces de messagerie des FAI. Par exemple :
 
@@ -131,7 +131,7 @@ Selon le client de messagerie et la méthode qu’il utilise pour effectuer son 
 
 >[!NOTE]
 >
->Vous pouvez également définir manuellement les méthodes [List-Unsubscribe en un clic](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} et [« mailto » List-Unsubscribe](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}. Les étapes détaillées sont décrites dans le [&#x200B; Guide des bonnes pratiques en matière de délivrabilité d’Experience Cloud](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"}.
+>Vous pouvez également définir manuellement les méthodes [List-Unsubscribe en un clic](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} et [« mailto » List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}. Les étapes détaillées sont décrites dans le [ Guide des bonnes pratiques en matière de délivrabilité d’Experience Cloud](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"}.
 
 
 ## Ajouter des en-têtes SMTP {#adding-smtp-headers}

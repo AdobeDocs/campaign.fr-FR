@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
-source-wordcount: '1836'
-ht-degree: 85%
+source-wordcount: '1840'
+ht-degree: 84%
 ---
 # Utilisation de Campaign et Adobe Analytics {#ac-aa}
 
@@ -49,7 +49,7 @@ Cette intégration permet à Adobe Campaign et Adobe Analytics d&#39;interagir
 
 >[!NOTE]
 >
->En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq.md#support) pour connecter Campaign aux services et solutions Adobe Experience Cloud. Le module complémentaire de connecteur Web Analytics doit être installé sur votre environnement, via le package dédié.
+>En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq-comprehensive.md#support) pour connecter Campaign aux services et solutions Adobe Experience Cloud. Le module complémentaire de connecteur Web Analytics doit être installé sur votre environnement, via le package dédié.
 
 Avec le connecteur Adobe Analytics, Adobe Campaign permet de mesurer l&#39;audience Internet (Web Analytics). Les outils Web Analytics permettent à Adobe Campaign de transférer des indicateurs et des attributs de campagne vers Analytics.
 
@@ -85,7 +85,7 @@ Pour créer votre **[!UICONTROL suite de rapports]** dans [!DNL Adobe Analytics]
 
 1. Sur la page **[!UICONTROL Responsable des suites de rapports]**, cliquez sur **[!UICONTROL Créer]**, puis sur **[!UICONTROL Suite de rapports]**.
 
-   Pour la procédure détaillée de création de **[!UICONTROL suites de rapports]**, consultez la [documentation d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=fr#prerequisites){target="_blank"}.
+   Pour la procédure détaillée de création de **[!UICONTROL suites de rapports]**, consultez la [documentation d’Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite#prerequisites){target="_blank"}.
 
    ![](assets/analytics_connnector_3.png)
 

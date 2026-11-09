@@ -40,7 +40,7 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 97%
@@ -94,7 +94,7 @@ Campaign est fourni avec un ensemble de nouveaux mécanismes de sécurisation qu
 
 >[!NOTE]
 >
->Ces mécanismes de sécurisation sont disponibles à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>Ces mécanismes de sécurisation sont disponibles à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](../start/compatibility-matrix.md)
 
 ### Préparation de la diffusion {#remove-duplicates-delivery-preparation}
 
