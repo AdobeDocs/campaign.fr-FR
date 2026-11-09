@@ -44,12 +44,12 @@ Les résultats de la simulation contiennent une répartition des propositions pa
 
 Vous pouvez conserver ces résultats et les exporter si nécessaire en créant un rapport d’analyse descriptive. Pour cela, cliquez sur le lien disponible dans la fenêtre des résultats.
 
-Reportez-vous à [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"} pour plus d’informations sur l’assistant d’analyse descriptive.
+Reportez-vous à [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"} pour plus d’informations sur l’assistant d’analyse descriptive.
 
 ![](assets/offer_simulation_012.png)
 
 Un tableau croisé dynamique permet de visualiser rapidement la répartition des offres par rang. Comme tout rapport dans Adobe Campaign, il peut être exporté, imprimé, archivé ou affiché dans un navigateur web.
 
-Voir à ce propos [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}.
+Voir à ce propos [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}.
 
 ![](assets/offer_simulation_013.png)
