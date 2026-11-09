@@ -36,7 +36,7 @@ ht-degree: 93%
 
 Les questionnaires en ligne sont entièrement configurables et personnalisables pour répondre à vos besoins. Les paramètres doivent être renseignés dans la fenêtre des propriétés.
 
-Les paramètres disponibles sont présentés dans [ce document ](../web/defining-web-forms-properties.md).
+Les paramètres disponibles sont présentés dans [ce document &#x200B;](../web/defining-web-forms-properties.md).
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 
