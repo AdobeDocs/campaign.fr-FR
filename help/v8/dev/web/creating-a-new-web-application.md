@@ -65,7 +65,7 @@ Ce modèle détermine le type d’application web. Vous pouvez créer les élém
 
 1. Questionnaires
 
-   Adobe Campaign permet, via l&#39;option **Survey Manager**, de concevoir et gérer des enquêtes et questionnaires en ligne, et d&#39;en exploiter les résultats : création dynamique de champs, gestion des scores, export des réponses et rapports dédiés. Pour en savoir plus, consultez [cette section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (documentation de Campaign v8).
+   Adobe Campaign permet, via l&#39;option **Survey Manager**, de concevoir et gérer des enquêtes et questionnaires en ligne, et d&#39;en exploiter les résultats : création dynamique de champs, gestion des scores, export des réponses et rapports dédiés. Pour en savoir plus, consultez [cette section](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (documentation de Campaign v8).
 
    >[!CAUTION]
    >
