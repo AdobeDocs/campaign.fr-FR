@@ -24,9 +24,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '889'
 ht-degree: 92%
 ---
 # Création d’emplacements d’offres{#creating-offer-spaces}
@@ -173,4 +173,4 @@ Dans le cas où le destinataire n&#39;est éligible à aucune offre, la prévisu
 
 L’aperçu peut ignorer les contextes lorsqu’ils sont limités à un espace. C’est le cas lorsque le schéma d’interaction a été étendu afin d’ajouter des champs référencés dans un espace utilisant un canal entrant.
 
-Pour en savoir plus à ce sujet, consultez cet exemple dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=fr){target="_blank"}.
+Voir à ce propos cet exemple dans [cette section](extension-example.md).

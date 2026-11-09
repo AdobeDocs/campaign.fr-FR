@@ -5,10 +5,10 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 88%
+source-wordcount: '1084'
+ht-degree: 89%
 ---
 
 # Documentation Adobe Campaign v8 (console) {#campaign-v8}
@@ -133,6 +133,35 @@ ht-degree: 88%
 + Landing pages et formulaires {#content}
   + [Créer des landing pages](dev/landing-pages.md)
   + [Concevoir des formulaires et des applications web](dev/webapps.md)
+  + Applications web {#web-applications}
+    + [Prise en main des applications web](dev/web/about-web-applications.md)
+    + [Création d’une application web](dev/web/creating-a-new-web-application.md)
+    + [Conception d’une application web](dev/web/designing-a-web-application.md)
+    + [Cas d’utilisation : création de vues d’ensemble](dev/web/use-cases-creating-overviews.md)
+    + [Traduction d’une application web](dev/web/translating-a-web-application.md)
+    + [Tracking des visites sur une application web](dev/web/tracking-a-web-application.md)
+    + [Désinscription (opt-out) du tracking des applications web](dev/web/web-application-tracking-opt-out.md)
+  + Modifier du contenu HTML {#editing-html-content}
+    + [Prise en main de l’éditeur HTML](dev/web/about-campaign-html-editor.md)
+    + [Gestion des modèles](dev/web/template-management.md)
+    + [Interface de l&#39;éditeur de contenu](dev/web/content-editor-interface.md)
+    + [Modification du contenu](dev/web/editing-content.md)
+    + [Bonnes pratiques relatives à l&#39;édition de contenu](dev/web/content-editing-best-practices.md)
+    + [Création d’une landing page](dev/web/creating-a-landing-page.md)
+    + [Cas d’utilisation : création d’une diffusion email](dev/web/use-case-creating-an-email-delivery.md)
+  + Formulaires web {#web-forms}
+    + [Prise en main des formulaires web](dev/web/about-web-forms.md)
+    + [Utilisation d’un modèle de formulaire web](dev/web/using-a-web-form-template.md)
+    + [Ajout de champs à un formulaire web](dev/web/adding-fields-to-a-web-form.md)
+    + [Eléments statiques dans un formulaire web](dev/web/static-elements-in-a-web-form.md)
+    + [Définition de la disposition des formulaires web](dev/web/defining-web-forms-layout.md)
+    + [Rendu du formulaire](dev/web/form-rendering.md)
+    + [Définition de l’enchaînement des pages](dev/web/defining-web-forms-page-sequencing.md)
+    + [Enregistrement des réponses aux formulaires web](dev/web/web-forms-answers.md)
+    + [Publication d’un formulaire web](dev/web/publishing-a-web-form.md)
+    + [Définition des propriétés des formulaires web](dev/web/defining-web-forms-properties.md)
+    + [Traduction d’un formulaire web](dev/web/translating-a-web-form.md)
+    + [Cas pratiques : formulaires web](dev/web/use-cases-web-forms.md)
   + Questionnaires {#surveys}
     + [Prise en main des questionnaires](dev/surveys/about-surveys.md)
     + [Étapes clés de création d’un questionnaire](dev/surveys/getting-started-with-surveys.md)
@@ -164,9 +193,24 @@ ht-degree: 88%
     + [Contexte](interaction/interaction-present-offers.md)
     + [Appel dʼune offre dans une page web](interaction/interaction-integration.md)
     + [Gestion des interactions anonymes](interaction/anonymous-interactions.md)
+  + Gérer le catalogue d’offres {#managing-an-offer-catalog}
+    + [Validation et activation d’une offre](interaction/approving-and-activating-an-offer.md)
+    + [Gestion des modèles d’offre](interaction/managing-offer-templates.md)
+    + [Gestion de la présentation des offres](interaction/managing-offer-presentation.md)
+  + Simulation d’offres {#simulating-offers}
+    + [À propos de la simulation des offres](interaction/about-offers-simulation.md)
+    + [Paramètres d&#39;exécution](interaction/execution-settings.md)
+    + [Périmètre de la simulation](interaction/simulation-scope.md)
+    + [Suivi des simulations](interaction/simulation-tracking.md)
   + [Rapports et historique](interaction/interaction-tracking.md)
   + [Cas d’utilisation](interaction/interaction-use-cases.md)
+  + Exemples de cas d’utilisation {#case-study}
+    + [Règles de présentation](interaction/presentation-rules.md)
+    + [Offres sur canal entrant](interaction/offers-on-an-inbound-channel.md)
+    + [Offres sur canal sortant](interaction/offers-on-an-outbound-channel.md)
   + [Paramètres avancés](interaction/interaction-advanced-settings.md)
+  + Paramètres avancés {#advanced-parameters}
+    + [Exemple d&#39;extension](interaction/extension-example.md)
 + Requête et données {#data}
   + Interrogation de la base de données {#query}
     + [Utiliser le requêteur](start/query-editor.md)
