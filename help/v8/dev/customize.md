@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f1f84f565326bd683b47e6e498add3100ea81c4c
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 75%
+source-wordcount: '503'
+ht-degree: 78%
 ---
 # Personnaliser votre instance {#gs-ac-custom}
 
@@ -65,7 +65,7 @@ Deux modes d&#39;extension de table sont disponibles :
 
 * Dans l&#39;interface, par le biais de l&#39;assistant **Nouveau champ**
 
-  Découvrez comment ajouter rapidement un nouveau champ dans Campaign dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=fr#configuring-campaign-classic){target="_blank"}
+  Découvrez comment ajouter rapidement un nouveau champ dans Campaign dans la documentation de [Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=fr#configuring-campaign-classic){target="_blank"}
 
 * Par programme, en étendant le schéma. Découvrez comment étendre un schéma existant dans [cette section](../dev/extend-schema.md).
 
@@ -75,9 +75,9 @@ Pour ajouter un nouveau type de données qui n&#39;existe pas par défaut dans A
 
 **Rubriques connexes :**
 
-Exemple d&#39;édition de schéma dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#configuring-campaign-classic){target="_blank"}
+Exemple d&#39;édition de schéma dans la documentation de [Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#configuring-campaign-classic){target="_blank"}
 
-Cas d&#39;utilisation : liaison d&#39;un champ à une table de référence existante dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#uc-link){target="_blank"}
+Cas d&#39;utilisation : liaison d&#39;un champ à une table de référence existante dans la documentation de [Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#uc-link){target="_blank"}
 
 
 ## Modification des formulaires de saisie
@@ -92,7 +92,7 @@ L’interface d’Adobe Campaign utilise de nombreuses applications web afin d�
 
 Les applications Web intégrées sont stockées dans le dossier **Administration > Paramétrage > Applications Web** de l’explorateur.
 
-Découvrez comment créer une page d&#39;aperçu dans Campaign dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-applications/use-cases-creating-overviews#creating-a-single-page-web-application){target="_blank"}
+Découvrez comment créer une page d&#39;aperçu dans Campaign dans [cette section](web/use-cases-creating-overviews.md#creating-a-single-page-web-application)
 
 
 ## Personnaliser des listes et créer des filtres {#gs-lists-and-filters}

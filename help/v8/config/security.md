@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '2979'
+source-wordcount: '2964'
 ht-degree: 67%
 ---
 # Bonnes pratiques de sécurité de Campaign {#ac-security}
@@ -65,7 +65,7 @@ Utilisez cette liste de contrôle pour aligner votre configuration avec les vale
 * [Authentification et session](#authentication-and-session) : utiliser Adobe IMS, politique d’identité forte, délai d’expiration de la session
 * [Sécurité des instances et du réseau](#instance-and-network-security) : place sur la liste autorisée IP, autorisations d’URL, clés GPG par Panneau de Contrôle
 * [Protection des données et des PII](#data-and-pii-protection) : HTTPS, limitation de l’affichage des PII, restriction des mots de passe, protection des pages sensibles
-* [Instructions de codage &#x200B;](#coding-guidelines) : aucun secret codé en dur, validation de l’entrée, SQL paramétré, captchas
+* [Instructions de codage ](#coding-guidelines) : aucun secret codé en dur, validation de l’entrée, SQL paramétré, captchas
 * [Restriction des données](#data-restriction) : limitez l’accès aux champs de mot de passe et de secret dans les comptes externes
 * [Opérationnel et conformité](#operational-and-compliance) : comparez régulièrement cette ligne de base et utilisez le journal d’audit
 
@@ -158,7 +158,7 @@ Voici le flux général de ce cas pratique :
 
 Adobe Campaign vous permet de collecter des données, y compris des informations personnelles et sensibles. Il est donc essentiel de recevoir et surveiller le consentement de vos destinataires.
 
-* Demandez toujours aux destinataires d&#39;accepter de recevoir des communications. Pour ce faire, continuez à honorer les demandes d&#39;opt-out le plus rapidement possible et vérifiez le consentement par le biais d&#39;un processus de double opt-in. Pour plus d&#39;informations à ce sujet, voir [Créer un formulaire d&#39;abonnement avec double opt-in](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms){target=_blank}.
+* Demandez toujours aux destinataires d&#39;accepter de recevoir des communications. Pour ce faire, continuez à honorer les demandes d&#39;opt-out le plus rapidement possible et vérifiez le consentement par le biais d&#39;un processus de double opt-in. Pour plus d&#39;informations à ce sujet, voir [Créer un formulaire d&#39;abonnement avec double opt-in](../dev/web/use-cases-web-forms.md).
 * N&#39;importez pas de listes frauduleuses et utilisez des adresses de contrôle pour vérifier que votre fichier client n&#39;est pas utilisé de façon frauduleuse. Pour plus d’informations à ce sujet, voir [À propos des adresses de contrôle](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses){target=_blank}.
 * Grâce à la gestion des droits et du consentement, vous pouvez tracker les préférences de vos destinataires et gérer les données correspondantes et les utilisateurs de votre organisation qui peuvent y accéder. Voir à ce propos [cette section](#consent).
 * Faciliter et gérer les demandes d&#39;accès à des informations personnelles de vos destinataires. Voir à ce propos [cette section](#privacy-requests).
@@ -258,7 +258,7 @@ Pour en savoir plus sur les autorisations, consultez [cette section](../start/gs
 
 ## Sécurité des instances et du réseau {#instance-and-network-security}
 
-En tant qu’administrateur ou administratrice de produit Campaign v8, utilisez Panneau de Contrôle Campaign[&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"} pour gérer la sécurité au niveau de l’instance :
+En tant qu’administrateur ou administratrice de produit Campaign v8, utilisez Panneau de Contrôle Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"} pour gérer la sécurité au niveau de l’instance :[
 
 * place sur la liste autorisée IP **- Gérez la liste autorisée IP pour l&#39;accès aux instances ; limitez-la aux réseaux connus (par exemple bureau, VPN) et évitez autant que possible les plages trop larges.**
 * **Autorisations d’URL** - Restreignez les autorisations d’URL aux domaines que votre instance doit appeler (API, tracking, services externes) pour réduire le risque d’utilisation abusive des requêtes côté serveur.

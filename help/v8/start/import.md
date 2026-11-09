@@ -29,9 +29,9 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '4183'
+source-wordcount: '4168'
 ht-degree: 98%
 ---
 # Import de données dans Campaign {#ootb-profiles}
@@ -315,7 +315,7 @@ L’étape suivante de l’assistant d’import permet de choisir ou créer le d
 
   1. Abonner à un service
 
-     Pour abonner tous les destinataires importés à un service d&#39;information, cliquez sur le lien **[!UICONTROL Editer...]** **&#x200B;**&#x200B;Vous pouvez sélectionner l&#39;option **[!UICONTROL Envoyer un message de confirmation]** : le contenu de ce message est défini dans le modèle de diffusion associé au service d&#39;abonnement.
+     Pour abonner tous les destinataires importés à un service d&#39;information, cliquez sur le lien **[!UICONTROL Editer...]** **** Vous pouvez sélectionner l&#39;option **[!UICONTROL Envoyer un message de confirmation]** : le contenu de ce message est défini dans le modèle de diffusion associé au service d&#39;abonnement.
 
      ![](assets/s_ncs_user_import_wizard05_7.png)
 
@@ -462,7 +462,7 @@ Utilisez Campaign pour créer des formulaires web, et collecter et gérer facile
 
 ![](assets/web-form-page.png)
 
-Découvrez comment créer des formulaires web dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=fr){target="_blank"}.
+Découvrez comment créer des formulaires web dans [cette section](../dev/web/about-web-forms.md).
 
 **Rubriques connexes :**
 

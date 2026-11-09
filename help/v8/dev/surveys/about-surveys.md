@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 87%
+source-wordcount: '550'
+ht-degree: 98%
 ---
 # Prise en main des questionnaires{#about-surveys}
 
@@ -53,13 +53,13 @@ Découvrez comment créer votre premier questionnaire dans [cette page](getting-
 
 >[!NOTE]
 >
->* Les étapes détaillées de création d&#39;un formulaire web standard sont présentées dans [ce document](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+>* Les étapes détaillées de création d&#39;un formulaire web standard sont présentées dans [ce document](../web/about-web-forms.md).
 >
->* La gestion des applications web est présentée dans [ce document](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-applications/about-web-applications){target="_blank"}. Pour plus d&#39;informations, reportez-vous à ce chapitre.
+>* La gestion des applications web est présentée dans [ce document](../web/about-web-applications.md). Pour plus d&#39;informations, reportez-vous à ce chapitre.
 
 ## Périmètre de la fonctionnalité {#campaign-surveys-scope}
 
-Dans Adobe Campaign, utilisez [Applications Web](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"} pour :
+Dans Adobe Campaign, utilisez [Applications Web](../web/about-web-forms.md) pour :
 
 * créer des formulaires multi-pages ;
 * gérer des formulaires multilingues avec un outil de traduction intégré ;
@@ -90,7 +90,7 @@ Pour créer, diffuser et exploiter les résultats d&#39;un questionnaire, les é
 1. Publiez puis diffusez le questionnaire aux destinataires (par exemple, incluez un lien dans une diffusion ou dans un site Web).
 1. Suivre les réponses et consulter les rapports.
 
-Pour plus d&#39;informations sur la configuration et le séquencement de ces étapes, voir [ce document &#x200B;](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}. Seules les configurations spécifiques aux questionnaires sont détaillées dans ce chapitre.
+Pour plus d&#39;informations sur la configuration et le séquencement de ces étapes, voir [ce document ](../web/about-web-forms.md). Seules les configurations spécifiques aux questionnaires sont détaillées dans ce chapitre.
 
 >[!CAUTION]
 >
@@ -107,4 +107,4 @@ Les paramètres sont stockés dans les dossiers suivants :
 
 >[!NOTE]
 >
->Les détails des paramètres sont disponibles dans [ce document](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+>Les détails des paramètres sont disponibles dans [ce document](../web/about-web-forms.md).

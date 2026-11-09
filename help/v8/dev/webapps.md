@@ -27,16 +27,22 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6db6c9152f6060b40596bd65a2ce705f916401be
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 86%
+source-wordcount: '227'
+ht-degree: 66%
 ---
 # Prise en main des applications et formulaires web{#gs-ac-web}
 
+>[!NOTE]
+>
+>Pour les cas d’utilisation les plus courants, créez vos pages de destination dans l’interface utilisateur web de Campaign où vous pouvez facilement les concevoir et les publier. Les landing pages créées dans la console cliente, comme décrit dans cette section, offrent plus de paramètres et couvrent des cas d’utilisation plus avancés.
+>
+>[En savoir plus sur les landing pages dans l&#39;interface utilisateur web de Campaign](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+
 Adobe Campaign intègre un module graphique pour la définition et la publication des **formulaires web** pour créer des pages avec des champs de saisie et de sélection, et qui peuvent inclure des données de la base de données. Vous pouvez ainsi concevoir et publier des pages web auxquelles les utilisateurs peuvent accéder pour afficher ou saisir des informations.
 
-Découvrez comment créer et publier des formulaires web dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=fr#designing-content){target="_blank"}
+Découvrez comment créer et publier des formulaires web dans [cette section](web/about-web-forms.md)
 
 ![](assets/sample.png)
 
@@ -44,4 +50,4 @@ Adobe Campaign vous permet également de créer et de publier des **application
 
 Vous pouvez créer des pages, par exemple un formulaire d’édition sur un extranet ou des formulaires de notification incluant des données issues de la base de données avec des tables, des graphiques, des formulaires de saisie, etc. Cette fonctionnalité permet de concevoir et de publier des pages web, sur lesquelles les utilisateurs et utilisatrices pourront chercher ou saisir des informations.
 
-Découvrez comment créer et publier des applications web dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html?lang=fr#designing-content){target="_blank"}
+Découvrez comment créer et publier des applications web dans [cette section](web/about-web-applications.md)

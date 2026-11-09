@@ -15,10 +15,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 92%
+source-wordcount: '835'
+ht-degree: 99%
 ---
 # Conception d’un questionnaire{#building-a-survey}
 
@@ -42,7 +42,7 @@ Les pages du formulaire sont créées à l’aide d’un éditeur spécifique qu
 
 >[!NOTE]
 >
->La définition du contenu et de la mise en page des écrans d&#39;un formulaire web sont présentés dans [ce document &#x200B;](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+>La définition du contenu et de la mise en page des écrans d&#39;un formulaire web sont présentés dans [ce document ](../web/about-web-forms.md).
 
 ## Ajouter des champs {#adding-fields}
 
@@ -71,7 +71,7 @@ La nature du champ à ajouter (liste déroulante, champ de texte, case à cocher
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
-Les différents types de champs disponibles sont présentés dans [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+Les différents types de champs disponibles sont présentés dans [cette section](../web/about-web-forms.md).
 
 ## Éléments spécifiques aux questionnaires {#survey-specific-elements}
 
@@ -106,7 +106,7 @@ De plus, l&#39;espace de stockage pour ce champ de saisie doit être un **champ 
 
 ### Ajouter des questions {#adding-questions}
 
-Il existe deux types de conteneurs : standard et question. Les conteneurs standard sont utilisés pour configurer la mise en page et l’affichage conditionnel dans une page. [En savoir plus](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+Il existe deux types de conteneurs : standard et question. Les conteneurs standard sont utilisés pour configurer la mise en page et l’affichage conditionnel dans une page. [En savoir plus](../web/about-web-forms.md).
 
 Utilisez un conteneur de type **Question** pour ajouter une question dans la page et insérer les réponses possibles en sous-arborescence. Les réponses des utilisateurs et utilisatrices aux questions qui ont été placées dans ce type de conteneur peuvent être analysées dans des rapports.
 
@@ -120,7 +120,7 @@ Le libellé de la question est saisi dans le champ de libellé. Dans ce cas, le 
 
 >[!NOTE]
 >
->L&#39;utilisation de l&#39;éditeur HTML est présentée dans [ce document &#x200B;](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+>L&#39;utilisation de l&#39;éditeur HTML est présentée dans [ce document ](../web/about-web-forms.md).
 
 Par exemple :
 

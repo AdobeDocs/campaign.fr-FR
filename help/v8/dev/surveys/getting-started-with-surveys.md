@@ -21,10 +21,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 97%
+source-wordcount: '992'
+ht-degree: 99%
 ---
 # Étapes clés de création d’un questionnaire{#getting-started-with-surveys}
 
@@ -125,7 +125,7 @@ Dans l&#39;exemple suivant, nous utiliserons une page de type **[!UICONTROL Page
 
   >[!NOTE]
   >
-  >Pour chaque champ ou chaque question, vous pouvez adapter la mise en page à vos besoins en utilisant les options de l&#39;onglet **[!UICONTROL Avancé]**. La mise en page des écrans du questionnaire est présentée dans [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+  >Pour chaque champ ou chaque question, vous pouvez adapter la mise en page à vos besoins en utilisant les options de l&#39;onglet **[!UICONTROL Avancé]**. La mise en page des écrans du questionnaire est présentée dans [cette section](../web/about-web-forms.md).
 
   Dans l&#39;écran de détail, cliquez sur l&#39;onglet **[!UICONTROL Prévisualisation]** pour consulter le rendu du questionnaire que vous venez de créer.
 

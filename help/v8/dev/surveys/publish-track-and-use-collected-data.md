@@ -22,10 +22,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 94%
+source-wordcount: '944'
+ht-degree: 97%
 ---
 # Publier, suivre et utiliser les données collectées{#publish-track-and-use-collected-data}
 
@@ -39,7 +39,7 @@ Une fois que le formulaire a été créé, paramétré et publié, vous pouvez p
 
 >[!NOTE]
 >
->Le cycle de vie d’un questionnaire sous Adobe Campaign ainsi que ses modes de publication et de diffusion sont similaires à ceux d’un formulaire web : ils sont présentés dans [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+>Le cycle de vie d’un questionnaire sous Adobe Campaign ainsi que ses modes de publication et de diffusion sont similaires à ceux d’un formulaire web : ils sont présentés dans [cette section](../web/about-web-forms.md).
 
 ## Tableau de bord du questionnaire {#survey-dashboard}
 
@@ -69,7 +69,7 @@ L&#39;origine est une information indiquée dans l&#39;URL du questionnaire en y
 
 tant que le questionnaire est en cours d’édition, son URL contient le paramètre **[!UICONTROL __uuid]**, qui indique qu’il est en phase de test et qu’il n’est pas encore en ligne. Lorsque vous accédez au questionnaire via cette URL, les enregistrements créés ne sont pas pris en compte dans le tracking (rapports). L&#39;origine est alors forcée à la valeur **[!UICONTROL Adobe Campaign]**.
 
-Pour plus d&#39;informations sur les paramètres d&#39;URL, consultez [cette page](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/designing-content/web-forms/defining-web-forms-properties#form-url-parameters){target="_blank"}.
+Pour plus d&#39;informations sur les paramètres d&#39;URL, consultez [cette page](../web/defining-web-forms-properties.md#form-url-parameters).
 
 ### Les rapports sur les questionnaires {#reports-on-surveys}
 
@@ -103,7 +103,7 @@ Les réponses à un questionnaire peuvent être exportées dans un fichier exter
 
    Pour exporter les données d&#39;un rapport, cliquez sur le bouton **[!UICONTROL Exporter]** et sélectionnez le format d&#39;export.
 
-   L&#39;export des données d&#39;un rapport est présenté dans [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}.
+   L&#39;export des données d&#39;un rapport est présenté dans [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}.
 
 1. Exporter les réponses
 
