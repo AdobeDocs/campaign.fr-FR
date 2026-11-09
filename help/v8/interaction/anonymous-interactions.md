@@ -3,6 +3,7 @@ product: campaign
 title: Présentation d'offres aux profils anonymes (interaction entrante)
 description: Découvrez comment présenter des offres aux profils anonymes
 feature: Interaction, Offers
+version: Campaign v8, Campaign Classic v7
 role: User, Admin
 exl-id: b7a04360-f8c6-4c69-9594-2b44d3f819b7
 TQID: 'https://experienceleague.adobe.com/rl7SIcS-OkMmLnxvPiEfjs51xouGSSyLJV4in-vsoCE'
@@ -21,7 +22,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 100%
@@ -48,7 +49,7 @@ Le champ **[!UICONTROL Dossier des visiteurs]** s&#39;affiche. Il est automatiqu
 
 Tout comme les interactions sortantes, les interactions entrantes sont organisées au sein d&#39;un catalogue d&#39;offres composé de catégories et d&#39;offres.
 
-Pour créer les catégories et emplacements, procédez de la même manière que dans le cas de visiteurs identifiés. Consultez les sections [Création d&#39;une catégorie d&#39;offres](interaction-offer-catalog.md#creating-offer-categories) et [Création d&#39;un environnement d&#39;offres](interaction-env.md#creating-an-offer-environment).
+Pour créer les catégories et emplacements, procédez de la même manière que dans le cas de visiteurs identifiés. Consultez les sections [Création d&#39;une catégorie d&#39;offres](interaction-offer-catalog.md#creating-offer-categories) et [Création d&#39;un environnement d&#39;offres](interaction-env.md#create-an-offer-environment).
 
 ## Les visiteurs anonymes {#anonymous-visitors}
 
