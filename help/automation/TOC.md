@@ -3,10 +3,10 @@ audience: user
 user-guide-title: Guide d'automatisation des campagnes
 user-guide-description: Guide d'automatisation des campagnes
 feature: Overview
-source-git-commit: 7e18801756113db5273f0108447c20d6b3ef85a3
+source-git-commit: c8cb0f8a3f752a46fae533c8fd0608aa4545d37c
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 95%
+source-wordcount: '477'
+ht-degree: 94%
 ---
 
 # Guides d&#39;automatisation des campagnes {#automation}
@@ -164,4 +164,10 @@ ht-degree: 95%
   + [Contrôler les coûts](mrm/controlling-costs.md)
   + [Gérer des ressources marketing](mrm/managing-marketing-resources.md)
   + [Forums de discussion](mrm/discussion-forums.md)
++ Responsable de la réaction (module complémentaire) {#response-manager}
+  + [Prise en main de la gestion de la réaction](response/about-response-manager.md)
+  + [Configuration de Response Manager](response/configure-response-manager.md)
+  + [Modèles d&#39;hypothèse](response/hypothesis-templates.md)
+  + [Création d’hypothèses](response/creating-hypotheses.md)
+  + [Suivi des hypothèses](response/hypothesis-tracking.md)
 + [&lt; Retour à la documentation de Campaign v8](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/campaign-home)

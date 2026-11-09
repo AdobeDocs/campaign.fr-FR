@@ -22,10 +22,10 @@ subfeature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c8cb0f8a3f752a46fae533c8fd0608aa4545d37c
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 100%
+source-wordcount: '197'
+ht-degree: 98%
 ---
 # Automatisation d&#39;Adobe Campaign {#automation-home}
 
@@ -93,6 +93,10 @@ Consultez les guides ci-dessous et découvrez comment créer l&#39;automatisatio
     <br>
     <div>
     <a href="mrm/about-marketing-resource-management.md">Marketing Resource Management (MRM)</a>
+    </div>
+    <br>
+    <div>
+    <a href="response/about-response-manager.md">Responsable de la réaction</a>
     </div>
     <br>
   </td>
