@@ -42,7 +42,7 @@ Les pages du formulaire sont créées à l’aide d’un éditeur spécifique qu
 
 >[!NOTE]
 >
->La définition du contenu et de la mise en page des écrans d&#39;un formulaire web sont présentés dans [ce document ](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+>La définition du contenu et de la mise en page des écrans d&#39;un formulaire web sont présentés dans [ce document &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
 
 ## Ajouter des champs {#adding-fields}
 
@@ -120,7 +120,7 @@ Le libellé de la question est saisi dans le champ de libellé. Dans ce cas, le 
 
 >[!NOTE]
 >
->L&#39;utilisation de l&#39;éditeur HTML est présentée dans [ce document ](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+>L&#39;utilisation de l&#39;éditeur HTML est présentée dans [ce document &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
 
 Par exemple :
 

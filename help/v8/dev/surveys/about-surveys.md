@@ -90,7 +90,7 @@ Pour créer, diffuser et exploiter les résultats d&#39;un questionnaire, les é
 1. Publiez puis diffusez le questionnaire aux destinataires (par exemple, incluez un lien dans une diffusion ou dans un site Web).
 1. Suivre les réponses et consulter les rapports.
 
-Pour plus d&#39;informations sur la configuration et le séquencement de ces étapes, voir [ce document ](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}. Seules les configurations spécifiques aux questionnaires sont détaillées dans ce chapitre.
+Pour plus d&#39;informations sur la configuration et le séquencement de ces étapes, voir [ce document &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}. Seules les configurations spécifiques aux questionnaires sont détaillées dans ce chapitre.
 
 >[!CAUTION]
 >
