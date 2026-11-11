@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 66d00cbaf20d714f56ab02bba593cff4a0d23571
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 80%
+source-wordcount: '1081'
+ht-degree: 78%
 ---
 # Prise en main de l&#39;architecture de Campaign{#gs-ac-archi}
 
@@ -82,7 +82,7 @@ Campaign v8 Enterprise présente le concept de **Full Federated Data Access** (
 
 >[!AVAILABILITY]
 >
->Cette fonctionnalité est disponible uniquement pour les clientes et clients disposant de plusieurs configurations d’instances MID (midsourcing).
+>Cette fonctionnalité est en disponibilité limitée (LA) et est disponible uniquement pour les clients disposant de plusieurs configurations d’instances de mid-sourcing (MID).
 
 En fonction de votre package Campaign v8, vous disposez d’un nombre spécifique d’instances de midsourcing en charge de l’exécution des diffusions.
 
@@ -129,7 +129,7 @@ La messagerie transactionnelle (Message Center) est le module de Campaign conçu
 
 Découvrez comment envoyer des messages transactionnels dans [cette section](../send/transactional.md).
 
-En réponse à l&#39;action d&#39;un client sur un site web, un événement est envoyé à Campaign par l&#39;intermédiaire d&#39;une API REST et le modèle de message est renseigné avec les informations ou les données fournies par le biais de l&#39;appel API. En outre, un message transactionnel est envoyé en temps réel au client. Ces messages peuvent être envoyés individuellement ou par lots via e-mail, SMS ou notifications push.
+En réponse à l’action d’un client sur un site web, un événement est envoyé à Campaign par l’intermédiaire d’une API REST et le modèle de message est renseigné avec les informations ou les données fournies par le biais de l’appel API. En outre, un message transactionnel est envoyé en temps réel au client. Ces messages peuvent être envoyés individuellement ou par lots via e-mail, SMS ou notifications push.
 
 Dans cette architecture spécifique, la cellule d&#39;exécution est séparée de l&#39;instance de pilotage, ce qui offre une grande disponibilité et une meilleure gestion de la charge.
 
@@ -147,7 +147,7 @@ Dans cette architecture spécifique, la cellule d&#39;exécution est séparée d
 
 ### Authentification
 
-Pour utiliser ces fonctionnalités, les utilisateurs d’Adobe Campaign se connectent à l’instance de pilotage afin de créer les modèles de messages transactionnels, générer la prévisualisation du message grâce à une adresse de contrôle, afficher des rapports et su les instances d’exécution.
+Pour utiliser ces fonctionnalités, les utilisateurs d’Adobe Campaign se connectent à l’instance de pilotage afin de créer les modèles de messages transactionnels, générer la prévisualisation du message grâce à une adresse de contrôle, afficher des rapports et surveiller les instances d’exécution.
 
 * Instance d&#39;exécution unique
 Lors de l’interaction avec une instance d’exécution Message Center hébergée par Adobe, un système externe peut d’abord récupérer un jeton de session (qui expire par défaut dans les 24 heures), en effectuant un appel api à la méthode de connexion à la session, à l’aide d’un nom d’utilisateur et d’un mot de passe de compte fournis.
