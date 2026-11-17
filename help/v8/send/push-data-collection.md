@@ -23,10 +23,10 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 94%
+source-wordcount: '1549'
+ht-degree: 93%
 ---
 # Configuration révisée des notifications push {#push-notifications-config}
 
@@ -44,7 +44,7 @@ Dans le cadre de cette mise à jour, procédez comme suit pour envoyer des notif
 
 1. [Créer et configurer une propriété mobile dans la collecte de données Adobe Experience Platform](#create-mobile-property)
 
-1. [Ajout de l’extension Adobe Adobe Experience Platform Assurance](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}(recommandé)
+1. [Ajouter l’extension Adobe Adobe Experience Platform Assurance](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}(recommandé)
 
 1. [Ajouter Campaign Classic à votre application mobile](#campaign-mobile-ap)
 
@@ -88,7 +88,7 @@ L’enregistrement des informations d’identification des notifications push de
 
 1. Fournissez l’**identifiant de clé**. Il s’agit d’une chaîne de 10 caractères attribuée lors de la création de la clé d’authentification p8.
 
-   Elle se trouve sous l’onglet **Clés** dans les pages **Certificats**, **Identificateurs** et **Profils** de votre compte de développeur ou de développeuse Apple.
+   Il se trouve sous l’onglet **Clés** dans les pages **Certificats**, **Identifiants** et **Profils** de votre compte de développeur Apple.
 
 1. Fournissez l’**identifiant de l’équipe**. Il s’agit d’une valeur de chaîne qui se trouve sous l’onglet **Abonnement**.
 
@@ -102,7 +102,7 @@ L’enregistrement des informations d’identification des notifications push de
 
 1. Activez **[!UICONTROL Informations d’identification des notifications push]** pour ajouter vos informations d’identification.
 
-1. Glissez-déposez les informations d’identification des notifications push FCM. Pour plus d&#39;informations sur l&#39;obtention des informations d&#39;identification push, consultez la documentation de [&#128279;](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+1. Glissez-déposez les informations d’identification des notifications push FCM. Pour plus d&#39;informations sur l&#39;obtention des informations d&#39;identification push, consultez la [Documentation Google](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour créer la configuration de votre application.
 
@@ -267,7 +267,7 @@ Votre propriété mobile sera désormais automatiquement synchronisée avec le w
 
 ## Ajouter Campaign Classic à votre application mobile {#campaign-mobile-app}
 
-Le SDK mobile Adobe Experience Platform permet d’optimiser les solutions et services Experience Cloud d’Adobe dans vos applications mobiles. La configuration des SDK s’effectue dans l’interface utilisateur de collecte de données, qui offre des options de configuration flexibles et des intégrations extensibles basées sur des règles.
+Adobe Experience Platform Mobile SDK permet d&#39;optimiser les solutions et services [!DNL Adobe CX Enterprise] dans vos applications mobiles. La configuration des SDK s’effectue dans l’interface utilisateur de collecte de données, qui offre des options de configuration flexibles et des intégrations extensibles basées sur des règles.
 
 [En savoir plus dans la documentation d’Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}.
 

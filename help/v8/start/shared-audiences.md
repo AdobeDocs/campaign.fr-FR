@@ -24,12 +24,12 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 95%
+source-wordcount: '258'
+ht-degree: 82%
 ---
-# Partager les audiences avec les solutions Adobe Experience Cloud{#shared-audiences}
+# Partager les audiences avec [!DNL Adobe CX Enterprise] solutions{#shared-audiences}
 
 
 Option 1 : Sources et destinations AEP
@@ -38,9 +38,9 @@ Option 2 : Adobe People/AAM
 
 Vous pouvez intégrer **Adobe Campaign** à **People Core Service** ou Adobe Audience Manager. Vous pourrez alors :
 
-* Importez dans Adobe Campaign des audiences/segments partagés provenant de différentes solutions d’Adobe Experience Cloud. L’import d’audiences peut être réalisé depuis les listes dans Adobe Campaign.
+* Importez les audiences/segments partagés de différentes solutions [!DNL CX Enterprise] dans Adobe Campaign. L’import d’audiences peut être réalisé depuis les listes dans Adobe Campaign.
 
-* Exportez des listes sous la forme d’audiences partagées Adobe Experience Cloud. Ces audiences peuvent être exploitées dans les différentes solutions d’Adobe Experience Cloud que vous utilisez. L’export d’audiences peut être réalisé à la suite d’un ciblage dans un workflow, à l’aide d’une activité dédiée **[!UICONTROL Mise à jour d’audience partagée]**.
+* Exporter les listes sous la forme de [!DNL CX Enterprise] audiences partagées. Ces audiences peuvent être utilisées dans les différentes solutions [!DNL CX Enterprise] que vous utilisez. L’export d’audiences peut être réalisé à la suite d’un ciblage dans un workflow, à l’aide d’une activité dédiée **[!UICONTROL Mise à jour d’audience partagée]**.
 
 L’intégration prend en charge deux types d’identifiants Adobe Experience Cloud :
 

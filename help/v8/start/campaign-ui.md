@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '1241'
-ht-degree: 70%
+source-wordcount: '1233'
+ht-degree: 67%
 ---
 # Découvrir l’interface utilisateur {#ui-client-console}
 
@@ -48,11 +48,11 @@ Vous pouvez accéder à Adobe Campaign à partir de sa console cliente ou de so
 
 * **API** : pour traiter plus de cas d’utilisation, le système peut être appelé par des applications externes qui utilisent les API Web Services exposées par le biais du protocole SOAP. Pour en savoir plus sur les API Campaign, reportez-vous à [cette page](../dev/api.md).
 
-* **Interface utilisateur web** : en tant qu’utilisateur ou utilisatrice de Campaign v8, à compter de la version v8.6.1, vous avez désormais accès à un environnement web, disponible via l’interface utilisateur centrale d’Adobe Experience Cloud. Vous pouvez ensuite vous connecter à Adobe Campaign à partir d’un navigateur web. Cette nouvelle interface vous permet de créer, de gérer et d’exécuter des actions marketing clés. Toutefois, toutes les fonctionnalités de Campaign ne sont pas disponibles. [En savoir plus](#ac-web-ui).
+* **Interface utilisateur web** - En tant qu’utilisateur de Campaign v8, à compter de la version 8.6.1, vous avez désormais accès à un environnement web, disponible via l’interface utilisateur centrale [!DNL Adobe CX Enterprise]. Vous pouvez ensuite vous connecter à Adobe Campaign à partir d’un navigateur web. Cette nouvelle interface vous permet de créer, de gérer et d’exécuter des actions marketing clés. Toutefois, toutes les fonctionnalités de Campaign ne sont pas disponibles. [En savoir plus](#ac-web-ui).
 
   >[!AVAILABILITY]
   >
-  >L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs de Campaign v8 qui se connectent à Campaign avec leur Adobe ID. En savoir plus sur [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
+  >L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs de Campaign v8 qui se connectent à Campaign avec leur Adobe ID. En savoir plus sur le [système de gestion des identités (IMS) Adobe](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
   >
 
 >[!CAUTION]
@@ -75,15 +75,15 @@ Une fois connecté à Campaign, vous accédez à la page d&#39;accueil d&#39;Ado
 
 >[!NOTE]
 >
->[&#x200B; Si la carte d’interface utilisateur web n’est pas affichée, assurez-vous que les champs suivants ne restent pas vides dans votre compte externe Adobe Experience Cloud &#x200B;](../config/external-accounts.md) : **Serveur**, **Client**, **Serveur de rappel** et **Marque d’association**.
+>Si la carte d’interface utilisateur web n’est pas affichée, assurez-vous que les champs suivants ne restent pas vides dans votre [compte externe Adobe Experience Cloud](../config/external-accounts.md) : **Serveur**, **Client**, **Serveur de rappel** et **Marque d’association**.
 
-Vous pouvez également accéder au Panneau de Contrôle de Campaign[&#128279;](../config/self-service.md) à partir de la page d&#39;accueil.
+Vous pouvez également accéder au [Panneau de Contrôle de campagne](../config/self-service.md) à partir de la page d&#39;accueil.
 
 >[!TAB Campaign Classic v7]
 
 Une fois connecté à Campaign, vous accédez à la page d&#39;accueil d&#39;Adobe Campaign avec des liens et des raccourcis pour accéder aux fonctionnalités, à la documentation, au site web d&#39;assistance et à la communauté Campaign.
 
-Accueil de la console cliente ![Campaign Classic v7 &#x200B;](assets/v7_user_interface_home.png)
+Accueil de la console cliente ![Campaign Classic v7](assets/v7_user_interface_home.png)
 
 
 >[!ENDTABS]
@@ -109,7 +109,7 @@ Par exemple, lorsque vous accédez à l&#39;onglet **[!UICONTROL Profils et cibl
 
 Lorsque vous sélectionnez un élément dans l&#39;écran, il est chargé dans un nouvel onglet afin que vous puissiez facilement parcourir le contenu.
 
-![Interface utilisateur de la console Campaign affichant comment modifier une liste dans un nouvel onglet](assets/new-tab.png)
+![L&#39;interface utilisateur de la console Campaign montre comment modifier une liste dans un nouvel onglet](assets/new-tab.png)
 
 ### Création d’un élément {#create-an-element}
 
@@ -131,7 +131,7 @@ The web access interface is similar to the console interface. From a browser, yo
 
 Parcourez l&#39;explorateur Campaign pour accéder à l&#39;ensemble des fonctionnalités et paramètres d&#39;Adobe Campaign.
 
-![Interface utilisateur de la console Campaign affichant l’explorateur avec un focus sur le menu Campagnes](assets/explorer.png)
+![Interface utilisateur de la console Campaign affichant l&#39;explorateur avec un focus sur le menu Campagnes](assets/explorer.png)
 
 Cet espace de travail vous permet d&#39;accéder à l&#39;arborescence de l&#39;explorateur pour parcourir toutes les fonctionnalités et options.
 
@@ -144,13 +144,13 @@ Cet espace de travail vous permet d&#39;accéder à l&#39;arborescence de l&#39;
 
 ## Interface utilisateur web de Campaign {#ac-web-ui}
 
-En tant qu’utilisateur ou utilisatrice de Campaign v8, à partir de la version 8.6.1, vous avez accès à un environnement web, disponible via l’interface utilisateur centrale d’Adobe Experience Cloud. Experience Cloud est la famille intégrée d’applications, de produits et de services de marketing numérique d’Adobe. Grâce à son interface intuitive, vous pouvez accéder rapidement à vos applications cloud, fonctionnalités de produit et services.
+En tant qu’utilisateur ou utilisatrice de Campaign v8, à partir de la version 8.6.1, vous avez accès à un environnement web, disponible via l’interface utilisateur centrale [!DNL CX Enterprise]. [!DNL CX Enterprise] Adobe la famille intégrée d’applications, de produits et de services de marketing numérique d’. Grâce à son interface intuitive, vous pouvez accéder rapidement à vos applications cloud, fonctionnalités de produit et services.
 
 ![Page d’accueil de l’interface utilisateur web d’Adobe Campaign](assets/ac-web-home.png)
 
 >[!AVAILABILITY]
 >
->L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs de Campaign v8 qui se connectent à Campaign avec leur Adobe ID. En savoir plus sur [Adobe Identity Management System (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
+>L’interface utilisateur web de Campaign n’est disponible que pour les utilisateurs de Campaign v8 qui se connectent à Campaign avec leur Adobe ID. En savoir plus sur le [système de gestion des identités (IMS) Adobe](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
 >
 
 En savoir plus sur la nouvelle interface d’utilisation de Campaign Web dans [cette documentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=fr){target="_blank"}. Vous pouvez également consulter la [page dédiée Questions fréquentes](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/faq){target="_blank"}, dans la documentation de l’interface d’utilisation de Campaign Web.
@@ -173,9 +173,9 @@ Les langues prises en charge dépendent de l’interface utilisateur.
 
   >[!CAUTION]
   >
-  >La langue est sélectionnée pendant le processus d&#39;installation et **ne peut pas être modifiée** par la suite.
+  >La langue est sélectionnée pendant le processus d&#39;installation et **ne peut pas être modifié** par la suite.
 
-* Pour les langues prises en charge par l’interface utilisateur web de Campaign, [consultez la documentation de l’interface utilisateur web de Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=fr#language-pref){target="_blank"}.
+* Pour connaître les langues prises en charge par l’interface utilisateur web de Campaign, [consultez la documentation de l’interface utilisateur web de Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=fr#language-pref){target="_blank"}.
 
 ## Formats
 
@@ -213,5 +213,5 @@ Les principales différences entre l&#39;anglais américain et l&#39;anglais bri
 
 ## Ressources supplémentaires
 
-* **[Utiliser des énumérations](../config/enumerations.md)** - Standardisez les valeurs de champ avec des listes déroulantes prédéfinies pour une saisie plus rapide et plus cohérente des données.
-* **[Filtrer les données](../audiences/create-filters.md)** - Découvrez les filtres intégrés existants pour accéder à un sous-ensemble spécifique de données Campaign. Découvrez également comment créer des filtres rapides ou concevoir et partager vos propres filtres avancés.
+* **[Utiliser des énumérations](../config/enumerations.md)** - Standardisez les valeurs de champ avec des listes déroulantes prédéfinies pour une entrée de données plus rapide et plus cohérente.
+* **[Filtrer les données](../audiences/create-filters.md)** - Découvrez les filtres intégrés existants pour accéder à un sous-ensemble spécifique de données Campaign, comment créer des filtres rapides ou concevoir et partager vos propres filtres avancés.

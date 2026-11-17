@@ -51,9 +51,9 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1055'
 ht-degree: 78%
 ---
 # Prise en main dʼAdobe Campaign{#gs-ac-v8}
@@ -91,7 +91,7 @@ Découvrez comment ajouter des profils à Campaign dans [cette section](import.m
 
 ## Segmentation ciblée {#targeted-segmentation}
 
-Adobe Campaign intègre des fonctionnalités d’analyse et de ciblage pour vous permettre de mettre en place des offres hautement ciblées et différenciées. La fonctionnalité d&#39;analyse descriptive permet d&#39;analyser les informations en amont et en aval de vos campagnes marketing. La fonctionnalité [gestion des filtres](../audiences/create-filters.md) et la fonctionnalité graphique [éditeur de requêtes](query-editor.md) permettent de filtrer les populations d&#39;abonnés, d&#39;échantillonner ou de créer des groupes cibles en fonction d&#39;un nombre illimité de critères.
+Adobe Campaign intègre des fonctionnalités d’analyse et de ciblage pour vous permettre de mettre en place des offres hautement ciblées et différenciées. La fonctionnalité d&#39;analyse descriptive vous permet d&#39;analyser les informations en amont et en aval de vos campagnes marketing. La fonctionnalité de [gestion des filtres](../audiences/create-filters.md) et le [requêteur](query-editor.md) graphique vous permettent de filtrer la population de vos abonnés et d&#39;échantillonner ou de créer des groupes cibles en fonction d&#39;un nombre illimité de critères.
 
 Les fonctionnalités avancées de Data Management proposent une extension des capacités de traitement des données. Il simplifie et optimise le processus de ciblage en incluant des données non modélisées dans le datamart.
 
@@ -129,7 +129,7 @@ La fonctionnalité des rapports de l&#39;opération facilite la création de rap
 
 En savoir plus sur les fonctionnalités de reporting et de tracking dans [cette section](../reporting/gs-reporting.md).
 
-## Intégrations avec Adobe Experience Cloud {#adobe-experience-cloud-integrations}
+## [!DNL Adobe CX Enterprise] intégrations {#adobe-experience-cloud-integrations}
 
 Vous pouvez combiner les fonctionnalités de diffusion et de gestion de campagnes avancées d&#39;Adobe Campaign avec un ensemble de solutions créées pour vous aider à personnaliser l&#39;expérience de vos utilisateurs, notamment Adobe Experience Manager, Adobe Analytics, Adobe Target ou les triggers Adobe Experience Cloud.
 
