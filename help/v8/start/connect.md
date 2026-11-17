@@ -153,7 +153,7 @@ En savoir plus sur les utilisateurs et la définition des autorisations adéquat
 >L’interface d’utilisation de Campaign Web n’est disponible que pour les utilisateurs et utilisatrices qui se connectent à Adobe Campaign avec leur Adobe ID. En savoir plus sur le [système de gestion des identités (IMS) Adobe](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
 >
 
-Découvrez comment vous connecter à [!DNL CX Enterprise] et accéder à l’interface web d’Adobe Campaign [ sur cette page](campaign-ui.md#ac-web-ui).
+Découvrez comment vous connecter à [!DNL CX Enterprise] et accéder à l’interface web d’Adobe Campaign [&#x200B; sur cette page](campaign-ui.md#ac-web-ui).
 
 Pour en savoir plus, consultez la [documentation sur l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
