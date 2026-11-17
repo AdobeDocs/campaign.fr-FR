@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '2146'
-ht-degree: 98%
+source-wordcount: '2185'
+ht-degree: 97%
 ---
 # Définition du contenu de l’e-mail {#defining-the-email-content}
 
@@ -86,13 +86,17 @@ Vous pouvez également insérer des émoticônes dans votre ligne Objet à l’a
 >
 >La version 8.9.3 d’comprend une mise à jour de la liste autorisée URL externe. Assurez-vous que les domaines utilisés dans le contenu de votre message sont ajoutés à la liste autorisée approuvée de votre instance afin que les ressources puissent continuer à se charger sans interruption. En tant qu’administrateur ou administratrice de Campaign, utilisez le panneau de contrôle pour ajouter et gérer des URL placées sur la liste autorisée. Pour connaître la procédure, consultez [Ajouter des autorisations d’URL](https://experienceleague.adobe.com/fr/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
 
+>[!IMPORTANT]
+>
+>N’utilisez pas la balise HTML `<base>` dans le contenu de votre e-mail. Pour des raisons de sécurité, cette balise n’est pas prise en charge et peut empêcher le chargement de votre contenu dans l’éditeur de contenu. Utilisez plutôt des URL absolues pour vos liens et ressources externes.
+
 Le contenu du message est défini dans la section inférieure de la fenêtre de configuration de la diffusion.
 
 Les messages sont envoyés par défaut au format HTML ou texte, selon les préférences des destinataires. Il est recommandé de créer un contenu dans les deux formats afin de permettre un affichage correct dans toutes les messageries. Voir à ce sujet la section [Sélection des formats du message](email-parameters.md#selecting-message-formats).
 
 * Pour importer un contenu HTML, utilisez le bouton **[!UICONTROL Ouvrir]**. Vous pouvez également coller le code source directement dans le sous-onglet **[!UICONTROL Source]**.
 
-  Si vous utilisez le Digital Content Editor (DCE), reportez-vous à [cette section](../dev/web/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
+  Si vous utilisez le Digital Content Editor (DCE), consultez [cette section](../dev/web/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
 
   >[!IMPORTANT]
   >

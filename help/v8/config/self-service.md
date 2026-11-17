@@ -30,10 +30,10 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 92%
+source-wordcount: '516'
+ht-degree: 90%
 ---
 # Panneau de contrôle Campaign {#ac-control-panel}
 
@@ -51,7 +51,7 @@ En savoir plus dans la [documentation du Panneau de Contrôle Campaign](https://
 
 ## Comment accéder au Panneau de contrôle ? {#ac-control-panel-access}
 
-Le Panneau de contrôle est directement accessible à partir d&#39;Adobe Experience Cloud. Il est accessible uniquement aux utilisateurs Admin.
+Le Panneau de Contrôle est disponible directement depuis [!DNL Adobe CX Enterprise]. Il est accessible uniquement aux utilisateurs Admin.
 
 >[!IMPORTANT]
 >
@@ -81,7 +81,7 @@ Découvrez comment surveiller vos sous-domaines et leurs certificats.
 
 Le panneau de contrôle propose plusieurs fonctionnalités pour vous aider à surveiller vos instances et à garantir des performances optimales. [Cliquez ici](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=fr){target="_blank"}
 
-Pour Campaign v8 Managed Cloud Services, Adobe surveille également les processus d’infrastructure, de plateforme et logiciels en votre nom. En savoir plus sur la [surveillance gérée par &#x200B;](../start/monitor.md#adobe-cloud-monitoring).
+Pour Campaign v8 Managed Cloud Services, Adobe surveille également les processus d’infrastructure, de plateforme et logiciels en votre nom. En savoir plus sur la [surveillance gérée par Adobe](../start/monitor.md#adobe-cloud-monitoring).
 
 
 ## Paramètres des instances

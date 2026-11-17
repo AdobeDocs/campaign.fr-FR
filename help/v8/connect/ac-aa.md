@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 84%
+source-wordcount: '1831'
+ht-degree: 82%
 ---
 # Utilisation de Campaign et Adobe Analytics {#ac-aa}
 
@@ -49,7 +49,7 @@ Cette intégration permet à Adobe Campaign et Adobe Analytics d&#39;interagir
 
 >[!NOTE]
 >
->En tant qu’utilisateur ou utilisatrice Managed Cloud Services, [contactez Adobe](../start/campaign-faq-comprehensive.md#support) pour connecter Campaign aux services et solutions Adobe Experience Cloud. Le module complémentaire de connecteur Web Analytics doit être installé sur votre environnement, via le package dédié.
+>En tant qu&#39;utilisateur Managed Cloud Services, [contactez Adobe](../start/campaign-faq-comprehensive.md#support) pour connecter Campaign aux services et solutions [!DNL Adobe CX Enterprise]. Le module complémentaire de connecteur Web Analytics doit être installé sur votre environnement, via le package dédié.
 
 Avec le connecteur Adobe Analytics, Adobe Campaign permet de mesurer l&#39;audience Internet (Web Analytics). Les outils Web Analytics permettent à Adobe Campaign de transférer des indicateurs et des attributs de campagne vers Analytics.
 
@@ -167,7 +167,7 @@ Pour créer votre ensemble de classifications :
 
 Pour plus d’informations sur les ensembles de classification, consultez la [documentation Adobe Analytics](https://experienceleague.adobe.com/fr/docs/analytics/components/classifications/sets/create-set){target="_blank"}.
 
-Lorsque votre suite de rapports, vos variables de conversion, vos événements de succès et votre ensemble de classifications sont configurés, vous devez configurer les **[!UICONTROL comptes externes]** dans Adobe Campaign.
+Lorsque votre suite de rapports, vos variables de conversion, vos événements de succès et votre ensemble de classifications seront configurés, vous devrez configurer les **[!UICONTROL comptes externes]** dans Adobe Campaign.
 
 ## Configuration de votre compte externe Campaign {#external-account-ac}
 
@@ -244,7 +244,7 @@ Pour plus d’informations, consultez la page [Profils de produit pour Adobe An
 
 >[!NOTE]
 >
->Si vous utilisez plusieurs outils de mesure d&#39;audience, vous pouvez sélectionner **[!UICONTROL Autre]** dans la liste déroulante **[!UICONTROL Partenaires]** lors de la création du compte externe. Vous ne pouvez référencer qu&#39;un seul compte externe dans les propriétés des diffusions : vous devrez donc adapter la formule des URL trackées en ajoutant les paramètres attendus par l&#39;Adobe et tous les autres outils de mesure utilisés.
+>Si vous utilisez plusieurs outils de mesure d’audience, vous pouvez sélectionner **[!UICONTROL Autre]** dans la liste déroulante **[!UICONTROL Partenaires]** lors de la création du compte externe. Vous ne pouvez référencer qu&#39;un seul compte externe dans les propriétés des diffusions : vous devrez donc adapter la formule des URL trackées en ajoutant les paramètres attendus par l&#39;Adobe et tous les autres outils de mesure utilisés.
 
 ## Workflow technique des processus Web Analytics {#technical-workflows-of-web-analytics-processes}
 
@@ -254,7 +254,7 @@ Ce workflow est disponible à partir de l&#39;arborescence de l&#39;explorateur 
 
 ![](assets/webanalytics_workflows.png)
 
-Le workflow **[!UICONTROL Envoi des indicateurs et des attributs de campagne]** permet d&#39;envoyer les indicateurs des campagnes e-mail depuis Adobe Campaign vers Adobe Experience Cloud à l&#39;aide du connecteur Adobe Analytics. Ce workflow est déclenché à 4 heures du matin tous les jours et peut prendre 24 heures pour que les données soient envoyées à Analytics.
+Le workflow **[!UICONTROL Envoi des indicateurs et des attributs de campagne]** permet d&#39;envoyer les indicateurs des campagnes par e-mail via Adobe Campaign vers [!DNL CX Enterprise] à l&#39;aide du connecteur Adobe Analytics. Ce workflow est déclenché à 4 heures du matin tous les jours et peut prendre 24 heures pour que les données soient envoyées à Analytics.
 
 Veuillez noter que ce workflow ne devrait pas être redémarré. Dans le cas contraire, il renverrait toutes les données précédentes, ce qui peut fausser les résultats dAnalytics.
 
@@ -288,7 +288,7 @@ Les attributs envoyés sont les suivants :
 
 ## Suivi des diffusions {#tracking-deliveries-in-adobe-campaign}
 
-Pour qu’Adobe Experience Cloud puisse suivre l’activité sur les sites une fois la diffusion envoyée par Adobe Campaign, vous devez référencer le connecteur correspondant dans les propriétés de la diffusion. Pour cela, les étapes sont les suivantes :
+Pour que [!DNL CX Enterprise] puisse suivre l&#39;activité sur les sites une fois la diffusion envoyée par Adobe Campaign, vous devez référencer le connecteur correspondant dans les propriétés de la diffusion. Pour cela, les étapes sont les suivantes :
 
 1. Ouvrez la diffusion de la campagne destinée à être suivie.
 

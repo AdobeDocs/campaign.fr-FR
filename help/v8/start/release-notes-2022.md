@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '1952'
-ht-degree: 97%
+source-wordcount: '1953'
+ht-degree: 96%
 ---
 # Notes de mise à jour 2022{#2022-rn}
 
@@ -207,7 +207,7 @@ _jeudi 18 mai 2022_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Campaign v8 s’intègre désormais à Adobe Privacy Core Service. Les demandes d'accès à des informations personnelles transmises par Privacy Core Service à toutes les solutions Experience Cloud sont automatiquement traitées par Campaign via un workflow dédié.</p>
+<td> <p>Campaign v8 s’intègre désormais à Adobe Privacy Core Service. Les demandes d'accès à des informations personnelles transmises par Privacy Core Service à toutes les solutions Adobe CX Enterprise sont automatiquement traitées par Campaign via un workflow dédié.</p>
 <p>Pour plus d'informations, consultez la <a href="privacy.md">documentation détaillée</a>.</p>
 </td> 
 </tr> 
@@ -256,7 +256,7 @@ Reportez-vous à la [matrice de compatibilité de Campaign](compatibility-matrix
 
 * L’authentification OAuth 2.0 de Microsoft Exchange Online pour POP3 est désormais prise en charge dans Campaign. [En savoir plus](../config/external-accounts.md#bounce-mails-external-account)
 * Des correctifs importants ont été appliqués concernant l’API web du connecteur Microsoft Dynamics.
-* Le nouveau droit nommé Opérateur et Écriture des schémas de groupe (operatorWrite) a été ajouté pour permettre aux utilisateurs d’insérer, de mettre à jour et de supprimer des schémas Opérateurs (xtk:operator) et Groupes d’opérateurs (xtk:group).
+* Le nouveau droit nommé Opérateur et Écriture du schéma de groupe (operatorWrite) a été ajouté pour permettre aux utilisateurs d’insérer, de mettre à jour et de supprimer des schémas Opérateurs (xtk:operator) et Groupes d’opérateurs (xtk:group).
   <!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
   <!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->
 * Plusieurs comptes actifs LINE peuvent désormais être paramétrés sur un seul mid-sourcing.
