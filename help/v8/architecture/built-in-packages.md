@@ -26,10 +26,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: b37128ff4180befd5655c0c16b9ff0834235a84a
+source-git-commit: 9f70a309a882347a0df658d00c47127f31d28eb9
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 17%
+source-wordcount: '826'
+ht-degree: 16%
 ---
 # Packages natifs {#built-in-packages}
 
@@ -65,7 +65,7 @@ Le tableau suivant répertorie les packages intégrés pour plus d’information
 | Contrôle et exécution des messages transactionnels (Message Center) | Gère les messages de déclenchement générés à partir d&#39;événements dans les systèmes d&#39;information, avec une disponibilité accrue et une meilleure gestion de la charge. [En savoir plus](../send/transactional.md) |
 | Canal Line | Envoie les diffusions via le canal LINE. [En savoir plus](../send/line/line.md) |
 | Canal courrier | Envoie les diffusions via le canal courrier. [En savoir plus](../send/direct-mail.md) |
-| Canal mobile (SMS) | Envoie les diffusions via le canal mobile (SMS). [En savoir plus](../send/sms/sms.md) |
+| Canal mobile (SMS) | Envoie les diffusions via le canal mobile (SMS), y compris le connecteur SMS v2 (généralement disponible depuis la version 8.9.1). [En savoir plus](../send/sms/sms.md) |
 | Canal des applications mobiles | Envoie des notifications personnalisées aux appareils iOS et Android par le biais d’applications. [En savoir plus](../send/push.md) |
 | Gestion de contenu (Content Manager) | Crée des newsletters ou des sites web récurrents, puis valide et publie vos messages. [En savoir plus](../../automation/workflow/content-management.md) |
 | Questionnaires en ligne (Survey Manager) | Crée et gère des formulaires en ligne pour ajouter ou modifier des informations de profil, s’abonner, se désabonner ou participer à un concours. [En savoir plus](../dev/surveys/about-surveys.md) |
