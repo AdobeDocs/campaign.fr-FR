@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 30b0f5eda9c80b72af5c8574e01cec6965b05564
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 93%
+source-wordcount: '2028'
+ht-degree: 91%
 ---
 # Utiliser les packages de données{#data-packages}
 
@@ -59,6 +59,8 @@ ht-degree: 93%
 Vous pouvez utiliser des packages de données pour exporter et importer les données et paramètres personnalisés de votre plateforme. Un package peut contenir différents types de configurations et de composants, filtrés ou non.
 
 Dans les packages de données Campaign, les entités de la base de données Adobe Campaign doivent être affichées dans des fichiers XML. Dans un package, chaque entité est représentée avec toutes ses données.
+
+Cette page décrit les packages de données **personnalisés** que vous créez et gérez. Les packages qui fournissent les fonctionnalités de Campaign sont les **packages natifs**, qui sont installés et gérés par Adobe. En savoir plus sur les [packages natifs](../architecture/built-in-packages.md).
 
 Le principe des **packages de données** consiste à exporter une configuration de données puis l’intégrer à un autre environnement Adobe Campaign. Découvrez comment conserver un ensemble cohérent de packages de données dans cette [section](#data-package-best-practices).
 
@@ -132,7 +134,7 @@ Pour exporter un ensemble d’objets dans un package de données, procédez comm
 
    >[!CAUTION]
    >
-   >Si vous exportez un dossier de type **[!UICONTROL Catégorie d’offres]**, **[!UICONTROL Environnement d’offres]**, **[!UICONTROL Programme]** ou **[!UICONTROL Plan]**, ne sélectionnez en aucun cas l’**xtk:folder**, car vous risquez de perdre des données. Sélectionnez l&#39;entité correspondant au dossier : **nms:offerCategory** pour les catégories d&#39;offres, **nms:offerEnv** pour les environnements d&#39;offres, **nms:program** pour les programmes et **nms:plan** pour les plans.
+   >Si vous exportez un dossier de type **[!UICONTROL Catégorie d’offres]**, **[!UICONTROL Environnement d’offres]**, **[!UICONTROL Programme]** ou **[!UICONTROL Plan]**, ne sélectionnez jamais le **xtk:folder**, car vous risquez de perdre des données. Sélectionnez l’entité correspondant au dossier : **nms:offerCategory** pour les catégories d’offres, **nms:offerEnv** pour les environnements d’offres, **nms:program** pour les programmes et **nms:plan** pour les plans.
 
    Le mécanisme de dépendance contrôle la séquence d&#39;exportation des entités. Pour plus d&#39;informations, consultez la section [Gestion des dépendances](#manage-dependencies).
 
@@ -302,11 +304,9 @@ Le contenu du package à importer est alors affiché dans la section centrale de
 
 Cliquez sur **[!UICONTROL Suivant]** puis sur **[!UICONTROL Démarrer]** pour lancer l&#39;import.
 
-### Installer un package natif {#install-a-standard-package}
+### Packages natifs {#install-a-standard-package}
 
-Les packages intégrés (ou packages standard) sont installés lors de la configuration d’Adobe Campaign. Selon vos autorisations, votre modèle de déploiement et votre offre de produit, vous pouvez importer de nouveaux packages standard.
-
-Reportez-vous à votre contrat de licence pour savoir quels packages peuvent être installés.
+Adobe installe et gère les packages natifs dans Campaign v8. En savoir plus sur les [packages natifs](../architecture/built-in-packages.md).
 
 ## Bonnes pratiques relatives aux packages de données {#data-package-best-practices}
 

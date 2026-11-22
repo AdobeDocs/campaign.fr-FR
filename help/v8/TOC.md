@@ -5,9 +5,9 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: b37128ff4180befd5655c0c16b9ff0834235a84a
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1087'
 ht-degree: 89%
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 89%
   + [De Campaign Classic v7 à v8](start/v7-to-v8.md)
   + [De Campaign Standard à v8](start/acs-to-v8.md)
   + [Forum aux questions](start/campaign-faq-comprehensive.md)
-  + {hide-from-toc}[Pixels de tracking email et conseils CNIL](start/cnil-pixel-tracking.md)
+  + {hide-from-toc}[Pixels de tracking e-mail et conseils CNIL](start/cnil-pixel-tracking.md)
 + Messages {#send}
   + [Commencer avec les messages](start/gs-message.md)
   + [Créer votre première diffusion](start/create-message.md)
@@ -127,7 +127,7 @@ ht-degree: 89%
     + [Créer des profils de test](audiences/test-profiles.md)
   + Création d’audiences {#create-audiences}
     + [Créer une liste de contacts](audiences/create-audiences.md)
-    + {hide-from-toc}[Partager des audiences avec les solutions Adobe](start/shared-audiences.md)
+    + {hide-from-toc}[Partage d’audiences avec les solutions Adobe](start/shared-audiences.md)
   + {hide-from-toc}[Bonnes pratiques](audiences/audiences-best-practices.md)
   + [Gérer les abonnements](start/subscriptions.md)
 + Landing pages et formulaires {#content}
@@ -270,6 +270,7 @@ ht-degree: 89%
 + Architecture {#architecture}
   + [Principes généraux](architecture/general-architecture.md)
   + [Modèles d’architecture](architecture/architecture.md)
+  + {hide-from-toc}[Packages natifs](architecture/built-in-packages.md)
   + [Déploiement FDA de Campaign](architecture/fda-deployment.md)
   + Déploiement Grands comptes (FFDA) {#ffda}
     + [Qu’est-ce que Campaign FFDA ?](architecture/enterprise-deployment.md)
