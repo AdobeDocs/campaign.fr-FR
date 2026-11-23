@@ -26,8 +26,8 @@ La fonction transforme les caractères &amp;, &lt;, > et \\ » en séquences d�
 
 * &amp;
 * &lt; &lt;
-* > >
-* &quot; &amp;quot;
+* &#x200B;> >
+* &quot; &quot;
 
 ## Fonctionnalités
 

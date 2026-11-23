@@ -14,7 +14,7 @@ InstallVendorPackages ( XML parameters )
 
 ## Paramètres
 
-Paramètres **1}**
+Paramètres **1&rbrace;**
 
 ## Valeur(s) renvoyée(s)
 

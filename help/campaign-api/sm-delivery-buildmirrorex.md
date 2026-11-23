@@ -16,7 +16,7 @@ Construit la page miroir HTML.
 
 **chiffré** Chiffrement réversible des identifiants de fragments de diffusion et de message
 
-Paramètres **1}**
+Paramètres **1&rbrace;**
 
 ## Valeur(s) renvoyée(s)
 

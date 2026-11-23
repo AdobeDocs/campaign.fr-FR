@@ -14,7 +14,7 @@ lookupNamespaceURI (prefix)
 
 ## Paramètres
 
-Préfixe ****.
+Préfixe **&#x200B;**.
 
 ## Valeur renvoyée
 
