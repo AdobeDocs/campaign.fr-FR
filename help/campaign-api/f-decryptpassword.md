@@ -8,7 +8,7 @@ ht-degree: 46%
 
 > Avertissement :
 >
-> Cette documentation a été mise à jour. Pour plus d’informations, reportez-vous à cette [page](https://experienceleague.adobe.com/en/docs/campaign-classic/using/technotes/gcm-functions#decryptpassword-headding-anchor-decryptpassword-javascript).
+> Cette documentation a été mise à jour. Pour plus d’informations, reportez-vous à cette [page](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/technotes/gcm-functions#decryptpassword-headding-anchor-decryptpassword-javascript).
 
 Déchiffre un mot de passe stocké dans un compte externe.
 

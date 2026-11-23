@@ -8,7 +8,7 @@ ht-degree: 38%
 
 > Avertissement :
 >
-> Cette fonction est complètement obsolète. Pour plus d’informations, reportez-vous à cette [page](https://experienceleague.adobe.com/en/docs/campaign-classic/using/technotes/gcm-functions#deprecated-functions-headding-anchor-depracated-functions).
+> Cette fonction est complètement obsolète. Pour plus d’informations, reportez-vous à cette [page](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/technotes/gcm-functions#deprecated-functions-headding-anchor-depracated-functions).
 
 Chiffre une chaîne de caractères avec la clé de l’instance ou toute autre clé.
 

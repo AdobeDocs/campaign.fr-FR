@@ -27,7 +27,7 @@ Aucune.
 La fonction ne s’applique pas à une requête, mais est une fonction de la classe HttpClientRequest . Exemple:
 
 ```javascript
-var req = new HttpClientRequest("http://www.adobe.com/")
+var req = new HttpClientRequest("http://www.adobe.com/fr/")
 req.complete = function(req, context, status) { logInfo(status) }
 req.execute(false, true)
 

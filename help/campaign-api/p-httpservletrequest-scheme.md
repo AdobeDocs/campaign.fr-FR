@@ -17,7 +17,7 @@ scheme
 Exemple : le schéma de l’URL suivante :
 
 ```javascript
-      http://adobe.com:8080/nms/test.jst?id=1234&param=dummy#aFragment
+      http://adobe.com/fr:8080/nms/test.jst?id=1234&param=dummy#aFragment
 ```
 
 renvoie la chaîne suivante :
