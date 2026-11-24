@@ -33,7 +33,7 @@ Découvrez comment utiliser des données contextuelles supplémentaires dans les
 
 Découvrez comment enrichir les critères d’éligibilité de vos offres [sur cette page](extension-example.md).
 
-Découvrez les étapes de la création d&#39;un environnement de test [ sur cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/creating-a-test-environment.html?lang=fr){target="_blank"}.
+Découvrez les étapes de la création d&#39;un environnement de test [&#x200B; sur cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/creating-a-test-environment.html?lang=fr){target="_blank"}.
 
-Découvrez comment utiliser des raccordements pour modifier le comportement standard du moteur d’offres [ sur cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/hooks.html?lang=fr){target="_blank"}.
+Découvrez comment utiliser des raccordements pour modifier le comportement standard du moteur d’offres [&#x200B; sur cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/hooks.html?lang=fr){target="_blank"}.
 

@@ -43,7 +43,7 @@ Pour définir le nom et l’adresse de l’expéditeur qui apparaîtront dans l�
 
 Cette fenêtre permet de saisir toutes les informations nécessaires à l’élaboration des en-têtes de messages e-mail. Ces informations peuvent être personnalisées. Cette fenêtre permet de saisir toutes les informations nécessaires à l’élaboration des en-têtes de messages e-mail.
 
-L’insertion et l’utilisation de champs de personnalisation sont présentées dans [cette section ](personalize.md).
+L’insertion et l’utilisation de champs de personnalisation sont présentées dans [cette section &#x200B;](personalize.md).
 
 >[!NOTE]
 >
