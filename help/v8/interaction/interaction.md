@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1639'
-ht-degree: 96%
+ht-degree: 93%
 ---
 # Gestion des interactions en temps réel
 
@@ -107,9 +107,9 @@ Découvrez les termes spécifiques aux offres et les conseils connexes avant de 
   * **Environnement en édition** : environnement dans lequel les offres sont créées et/ou les règles de typologie sont définies (règles qui déterminent les offres à présenter ou non à une personne ciblée). Le tableau des personnes à cibler par les offres et la table de stockage de toutes les propositions d’offres sont également définis dans cet environnement. Le nœud **[!UICONTROL Environnement en édition]** contient des sous-dossiers d&#39;’mplacements, des filtres prédéfinis et des catégories d’offres. Pour chaque **[!UICONTROL Environnement en édition]**, il existe un **[!UICONTROL Environnement en ligne]** correspondant, généré à partir de ce même **[!UICONTROL Environnement en édition]**.
   * **Environnement en ligne** : environnement associé à un **[!UICONTROL Environnement en édition]**. Il contient des offres en lecture seule dont le contenu et l’éligibilité ont été approuvés via l’**[!UICONTROL Environnement en édition]**. Ils peuvent être affichés sur un site web ou insérés dans un message.
 
-* Un **emplacement** désigne un dossier définissant l’emplacement d’exposition de l’offre. Lors de la définition d’un emplacement, vous pouvez :
+* Un **emplacement** désigne un dossier définissant l’emplacement d’exposition de l’offre. Lors de la définition d&#39;un emplacement, vous pouvez :
   * sélectionner le canal
-  * choisir d’utiliser le mode unitaire (ou par défaut, uniquement en mode Lot)
+  * choisissez s&#39;il peut être utilisé en mode unitaire (par défaut : uniquement en mode batch)
   * créer le contenu de l’offre à l’aide de fonctions de rendu
   * indiquer les offres à présenter
 
@@ -117,7 +117,7 @@ Découvrez les termes spécifiques aux offres et les conseils connexes avant de 
 
   >[!CAUTION]
   >
-  >Un emplacement n’est pas un canal de communication, il correspond à un lieu d’exposition sur le canal. Par exemple, les offres exposées sur un site web peuvent occuper deux emplacements sur la même page. Dans ce cas, vous avez deux espaces pour le même canal.
+  >Un emplacement n&#39;est pas un canal de communication ; il correspond à un lieu d&#39;exposition spécifique sur le canal. Par exemple, les offres exposées sur un site web peuvent occuper deux emplacements sur la même page. Dans ce cas, vous avez deux espaces pour le même canal.
   >
   >Les emplacements doivent être définis dans le cahier des charges et ne doivent pas être modifiés en cours de projet.
 
@@ -129,7 +129,7 @@ Découvrez les termes spécifiques aux offres et les conseils connexes avant de 
   >
   >Les catégories enfants héritent des thèmes définis au niveau de la catégorie parent.
 
-* **Règles d&#39;éligibilité** : contraintes appliquées à un environnement, à une catégorie ou à une offre, portant sur la période de validité, la cible et le poids. Elles vous permettent de vous assurer qu’une offre est en phase avec le contact ciblé.
+* **Règles d&#39;éligibilité** : contraintes appliquées à un environnement, une catégorie ou une offre concernant la période de validité, la cible et le poids. Elles vous permettent de vous assurer qu’une offre est en phase avec le contact ciblé.
 
   Au niveau des environnements, les règles d&#39;éligibilité comprennent les règles de présentation appliquées aux offres et les personnes à cibler.
 
@@ -154,7 +154,7 @@ Découvrez les termes spécifiques aux offres et les conseils connexes avant de 
 * Le **Mode d’identification** fait référence au statut d’un contact :
 
   * **[!UICONTROL Explicite]** : les contacts sont identifiés par leur connexion à l’interface du canal.
-  * **[!UICONTROL Implicite]** : les contacts sont identifiés par un cookie (permanent ou de session). Ils peuvent être traités comme des contacts anonymes ou identifiés.
+  * **[!UICONTROL implicite]** : les contacts sont identifiés par un cookie (permanent ou de session). Ils peuvent être traités comme des contacts anonymes ou identifiés.
   * **[!UICONTROL Anonyme]** : les contacts ne peuvent pas être identifiés.
 
 * **Offre éligible** : offre répondant à des contraintes définies en amont pouvant être proposée de façon cohérente à une cible.
@@ -164,6 +164,6 @@ Découvrez les termes spécifiques aux offres et les conseils connexes avant de 
 * **Proposition d’offre** : résultat de l’action qui consiste à présenter une ou plusieurs offres à un contact sur un emplacement donné (une bannière sur un site web, un e-mail ou un SMS, par exemple). Ce résultat est stocké dans la table des propositions d’offre. Il n’est cependant pas obligatoire d’enregistrer les propositions.
 * **Simulation** : module permettant de tester la présentation d&#39;offres auprès des personnes à cibler avant de procéder à la véritable présentation.
 * **Prévisualisation** : prévisualisation de l’offre telle qu’elle s’affiche dans son dossier. Elle est accessible à partir de la fenêtre des paramètres des offres ou du profil du contact.
-* **filtres prédéfinis** : règles de filtrage prédéfinis pouvant prendre en compte des paramètres d&#39;une offre (par exemple le code de l&#39;offre). Ils peuvent être réutilisés après la création des offres.
+* **filtres prédéfinis** : les règles de filtrage prédéfinies peuvent prendre en compte les paramètres de l&#39;offre (par exemple, un code d&#39;offre). Ils peuvent être réutilisés après la création des offres.
 * **Rendu de l’offre** : information utilisée par le canal pour afficher l’offre. La représentation de l’offre peut être construite à partir de la fonction de rendu de l’emplacement sur lequel l’offre est représentée ou saisie directement dans l’interface (par exemple, dans le bloc HTML). Une offre peut être représentée par emplacement.
 * **Processus de basculement** : processus activé dans un environnement identifié, chargé de diriger l&#39;appel vers un environnement anonyme si le contact n&#39;a pas pu être identifié explicitement et/ou implicitement.

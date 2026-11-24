@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1058'
-ht-degree: 98%
+ht-degree: 91%
 ---
 # Mettre à jour les profils Adobe Experience Platform à partir des landing pages Adobe Campaign {#ac-aep-lp}
 
@@ -55,7 +55,7 @@ Les principales étapes de configuration de cette intégration sont les suivante
 <td><img src="../assets/do-not-localize/icon-workflow.svg" width="60px"><p><a href="#script">Configurer le workflow de la page de destination</a></p></td>
 </table>
 
-## Configurer une connexion Oauth {#oauth}
+## Configurer une connexion OAuth {#oauth}
 
 Les API Adobe Cloud Platform utilisent le protocole OAuth 2.0 pour l’authentification et l’autorisation. Pour connecter Adobe Experience Platform à Adobe Campaign à l’aide d’appels API, vous devez générer un jeton d’accès à l’aide de l’intégration OAuth créée dans Adobe Developer Console.
 
@@ -71,7 +71,7 @@ Pour ce faire, procédez comme suit :
 
    ![](assets/ac-lp-oauth.png){width="70%"}
 
-Maintenant que votre connexion Oauth est configurée, créez et configurez une nouvelle connexion source d’**[!UICONTROL API HTTP]** pour lier Adobe Campaign à Adobe Experience Platform.
+Maintenant que votre connexion OAuth est configurée, créez et configurez une nouvelle connexion Source **[!UICONTROL API HTTP]** pour lier Adobe Campaign à Adobe Experience Platform.
 
 ## Créer une connexion source d’API HTTP {#source}
 
@@ -83,7 +83,7 @@ Une fois la connexion OAuth en place, l’étape suivante consiste à créer une
 
 1. Configurez la connexion selon vos besoins. Des informations détaillées sur la configuration d’une connexion API HTTP sont disponibles dans la section [Documentation sur les sources Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=fr){target="_blank"}.
 
-   À l’étape d’**[!UICONTROL Authentification]**, basculez sur l’option **[!UICONTROL Activer l’authentification]** pour vous authentifier à l’aide du jeton d’accès généré précédemment par le biais de l’intégration OAuth.
+   À l’étape **[!UICONTROL Authentification]**, activez l’option **[!UICONTROL Activer l’authentification]** pour vous authentifier à l’aide du jeton d’accès généré précédemment via l’intégration OAuth.
 
    ![](assets/ac-lp-source-authentication.png){width="70%"}
 
@@ -99,7 +99,7 @@ Maintenant que la connexion à la source de l’API HTTP est configurée, vous d
 
 ## Ajouter des options d’authentification à Adobe Campaign {#xtk}
 
-Une fois la connexion à la source de l’API HTTP configurée, vous devez ajouter des options spécifiques à Adobe Campaign pour activer la connexion à Adobe Experience Platform. Pour cela, accédez au menu Administration de campagnes ou exécutez le workflow de votre page de destination en ajoutant une activité de **[!UICONTROL code JavaScript]** spécifique.
+Une fois la connexion à la source de l’API HTTP configurée, vous devez ajouter des options spécifiques à Adobe Campaign pour activer la connexion à Adobe Experience Platform. Vous pouvez le faire dans le menu Administration de Campaign ou lors de l’exécution de votre workflow de page de destination en ajoutant une activité **[!UICONTROL Code JavaScript]** spécifique.
 
 Parcourez les onglets ci-dessous pour découvrir les deux méthodes :
 

@@ -19,10 +19,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 2d8aa27d6565e216cc0842ba22678c884479ff43
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1334'
-ht-degree: 95%
+ht-degree: 93%
 ---
 # Configurer et envoyer la diffusion {#configure-delivery}
 
@@ -54,7 +54,7 @@ Utilisez l’option **[!UICONTROL Tester la diffusion par SMTP]** pour tester la
 >
 >* Cette option ne doit pas être définie en midsourcing.
 >
->* En savoir plus sur la configuration du serveur SMTP dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=fr#smtp-relay){target="_blank"}.
+>* En savoir plus sur la configuration du serveur SMTP dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=fr#smtp-relay){target="_blank"}.
 
 ## Envoi en plusieurs vagues {#sending-using-multiple-waves}
 
@@ -75,7 +75,7 @@ Pour définir le vagues, procédez comme suit :
 >
 >Vous ne pouvez définir la taille et le délai qu’entre deux vagues consécutives. Le critère de sélection des personnes destinataires pour chaque vague ne peut pas être configuré.
 
-Vous pouvez soit définir la taille de chaque vague, soit les ajouter à un calendrier.
+Vous pouvez définir la taille de chaque vague ou les ajouter à un calendrier.
 
 * **Définissez la taille de chaque vague**. Par exemple, si vous saisissez **[!UICONTROL 30 %]** dans le champ correspondant, chaque vague représentera 30 % des messages inclus dans l’envoi, à l’exception de la dernière vague qui représentera 10 % des messages.
 

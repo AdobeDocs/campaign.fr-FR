@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 99%
+source-wordcount: '2590'
+ht-degree: 98%
 ---
 # Prise en main des formulaires de saisie {#gs-ac-forms}
 
@@ -45,7 +45,7 @@ Lorsque vous créez ou étendez un schéma, vous devez créer ou modifier les fo
 
 Un formulaire de saisie vous permet de modifier une instance associée à un schéma de données à partir de la console cliente Adobe Campaign. Le formulaire est identifié par ses nom et espace de noms.
 
-La clé d&#39;identification d&#39;un formulaire correspond à une chaîne construite avec l&#39;espace de noms et le nom séparés par le caractère &#39;:&#39; (par exemple : « cus:contact »).
+La clé d&#39;identification d&#39;un formulaire correspond à une chaîne construite avec l&#39;espace de noms et le nom séparés par le caractère &#39;:&#39;, par exemple « cus:contact ».
 
 ## Modification des formulaires de saisie
 
@@ -186,7 +186,7 @@ Un texte d&#39;aide a été ajouté à l&#39;aide de la balise `<static>` avec l
 
 Utilisez des **conteneurs** pour regrouper un ensemble de contrôles. Ils sont représentés par l’élément **`<container>`**. Ils ont été utilisés ci-dessus pour mettre en forme les contrôles sur plusieurs colonnes.
 
-L’attribut **xpath** sur un `<container>` permet de simplifier le référencement des contrôles enfants. Le référencement des contrôles est alors relatif au `<container>` parent.
+L’attribut **xpath** sur un `<container>` permet de simplifier le référencement des contrôles enfants. Le référencement des contrôles est alors relatif au parent `<container>`.
 
 Exemple de conteneur sans « xpath » :
 
@@ -529,7 +529,7 @@ Exemple sur le champ &quot;Genre&quot; :
 <input xpath="@gender" readOnly="true"/>
 ```
 
-## Ajout d&#39;un bouton radio {#radio-button}
+## Ajout d’un bouton radio {#radio-button}
 
 Un bouton radio permet d&#39;effectuer un choix parmi plusieurs options. Les balises **`<input>`** sont utilisées pour répertorier les options possibles et l&#39;attribut **checkedValue** spécifie la valeur associée au choix.
 

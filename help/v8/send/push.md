@@ -33,10 +33,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 100%
+source-wordcount: '1050'
+ht-degree: 92%
 ---
 # Créer et envoyer des notifications push{#push-notifications-create}
 
@@ -100,11 +100,11 @@ Pour envoyer des notifications sur les appareils iOS, procédez comme suit :
 
 1. Dans l’onglet **[!UICONTROL Son et pastille]** vous pouvez modifier les options suivantes :
 
-   * **[!UICONTROL Nettoyer la pastille]** : activez cette option pour actualiser la valeur de la pastille.
+   * **[!UICONTROL Nettoyer la pastille]** : activez cette option pour actualiser la valeur de la pastille.
 
    * **[!UICONTROL Valeur]** : définissez un nombre qui sera utilisé pour afficher directement sur l’icône de l’application le nombre de nouvelles informations non lues.
 
-   * **[!UICONTROL Mode d’alerte critique]** : activez cette option pour ajouter du son à votre notification, même si le téléphone de l&#39;utilisateur est en mode thème ou si l’iPhone est en mode silencieux.
+   * **[!UICONTROL Mode d’alerte critique]** : activez cette option pour ajouter du son à votre notification même si le téléphone de l’utilisateur est en mode thème ou si l’iPhone est en mode silencieux.
 
    * **[!UICONTROL Nom]** : sélectionnez le son que doit émettre le terminal mobile à la réception de la notification.
 
@@ -131,7 +131,7 @@ Pour envoyer des notifications sur les appareils iOS, procédez comme suit :
 
 1. Pour une notification sensible à l’heure, vous pouvez spécifier les options suivantes :
 
-   * **[!UICONTROL Identifiant du contenu Target]** : identifiant utilisé pour cibler la fenêtre d&#39;application à afficher au premier plan à l&#39;ouverture de la notification.
+   * **[!UICONTROL Identifiant du contenu Target]** : identifiant utilisé pour cibler la fenêtre d&#39;application à afficher au premier plan à l&#39;ouverture de la notification.
 
    * **[!UICONTROL Image de Launch]** : nom du fichier image de Launch à afficher. Si l’utilisateur choisit de lancer votre application, l’image sélectionnée s’affichera au lieu de l’écran de lancement de votre application.
 

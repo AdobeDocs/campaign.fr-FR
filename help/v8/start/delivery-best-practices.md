@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '3196'
-ht-degree: 92%
+ht-degree: 89%
 ---
 # Bonnes pratiques de diffusion {#delivery-best-practices}
 
@@ -60,7 +60,7 @@ Avant même de commencer à créer des diffusions, vous pouvez prendre des mesur
 
 Plusieurs facteurs peuvent avoir une incidence directe sur les performances du serveur et ralentir votre plateforme Campaign :
 
-* Nombre et type d’éléments de [personnalisation](../send/personalize.md) : dans les e-mails, la personnalisation extrait les données de la base de données pour chaque destinataire. Dans le cas de nombreux éléments de personnalisation, la quantité de données nécessaires à la préparation de la diffusion est plus élevée. Cela peut ralentir votre plateforme. Découvrez les mécanismes de sécurisation de la personnalisation dans [cette section](../send/personalize.md#perso-guardrails).
+* Nombre et type d’éléments de [personnalisation](../send/personalize.md) : dans les e-mails, la personnalisation extrait les données de la base de données pour chaque destinataire. Dans le cas de nombreux éléments de personnalisation, la quantité de données nécessaire pour préparer la diffusion est plus élevée. Cela peut ralentir votre plateforme. Découvrez les mécanismes de sécurisation de la personnalisation dans [cette section](../send/personalize.md#perso-guardrails).
 
 * Charge du serveur : lorsque le serveur marketing gère simultanément trop de tâches différentes, cela peut diminuer les performances. Le serveur marketing doit coordonner toutes les données entrantes et sortantes pour l’ensemble des diffusions afin de s’assurer que les données sont correctes et disponibles à temps.
 Pour éviter cette situation, coordonnez la planification des diffusions avec les autres membres de votre équipe afin d’optimiser les performances.
@@ -98,11 +98,11 @@ La maintenance régulière de vos diffusions est essentielle pour optimiser les 
 
 +++ **Lire quelques bonnes pratiques**
 
-* **Supprimer les diffusions en échec et inutiles** : ne conservez pas les diffusions à l’état d’échec sur l’instance, car cela conserve les tables temporaires et a un impact sur les performances. Supprimez régulièrement les diffusions qui ne sont plus nécessaires pour libérer des ressources système.
+* **Supprimer les diffusions en échec et inutiles** : ne conservez pas les diffusions à l’état d’échec sur l’instance, car cela conserve les tables temporaires et affecte les performances. Supprimez régulièrement les diffusions qui ne sont plus nécessaires pour libérer des ressources système.
 
 * **Nettoyer les destinataires inactifs** : les destinataires inactifs au cours des 12 derniers mois doivent être supprimés de la base de données pour conserver la qualité de l’adresse. Les FAI désactivent les adresses après une période d’inactivité et des messages de rebond sont envoyés aux expéditeurs pour les informer de ce nouveau statut. Le nettoyage régulier des listes améliore la délivrabilité et réduit les coûts.
 
-* **Planifier des diffusions volumineuses de manière appropriée** : ne planifiez pas de diffusions volumineuses ensemble. Coordonnez la planification des diffusions avec les autres membres de votre équipe afin de répartir la charge uniformément sur le système. L’envoi simultané de plusieurs diffusions volumineuses peut avoir une incidence sur les performances globales de la plateforme.
+* **Planifier des diffusions volumineuses de manière intelligente** : ne planifiez pas de diffusions volumineuses ensemble. Coordonnez la planification des diffusions avec les autres membres de votre équipe afin de répartir la charge uniformément sur le système. L’envoi simultané de plusieurs diffusions volumineuses peut avoir une incidence sur les performances globales de la plateforme.
 
 +++
 
@@ -116,7 +116,7 @@ Les modèles de diffusion accroissent l’efficacité en offrant des configurati
 
 ### Sous-domaines et branding {#subdomains-and-branding}
 
-Si vous gérez plusieurs marques dans Adobe Campaign, Adobe recommande de disposer d’un sous-domaine par marque. Une banque peut, par exemple, avoir plusieurs sous-domaines qui correspondent à chacune de ses agences régionales. Si une banque possède le domaine bluebank.com, ses sous-domaines peuvent être @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com, etc. Disposer d’un modèle de diffusion par sous-domaine vous permet de toujours utiliser les paramètres préconfigurés adéquats pour chaque marque et d’éviter ainsi des erreurs tout en gagnant du temps. En savoir plus sur le branding de sous-domaines dans la [documentation du Panneau de contrôle de Campaign](https://experienceleague.adobe.com/fr/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
+Si vous gérez plusieurs marques dans Adobe Campaign, Adobe recommande de disposer d’un sous-domaine par marque. Une banque peut, par exemple, avoir plusieurs sous-domaines qui correspondent à chacune de ses agences régionales. Si une banque possède le domaine bluebank.com, ses sous-domaines peuvent être @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com, etc. Disposer d’un modèle de diffusion par sous-domaine vous permet de toujours utiliser les paramètres préconfigurés adéquats pour chacune de vos marques, ce qui évite les erreurs et vous fait gagner du temps. En savoir plus sur le branding de sous-domaines dans la [documentation du Panneau de contrôle de Campaign](https://experienceleague.adobe.com/fr/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
 
 ### Configurer les adresses {#configure-addresses}
 
@@ -173,7 +173,7 @@ Pour personnaliser vos messages, vous pouvez utiliser les données des destinata
 
   Pour plus d&#39;informations sur les blocs de personnalisation, consultez [cette section](../send/personalization-blocks.md).
 
-* Préparer les données de personnalisation : vous pouvez préparer les données de personnalisation dans un workflow afin d’améliorer l’analyse de préparation des diffusions. Vous devez effectuer cette opération tout particulièrement si les données de personnalisation proviennent d&#39;une table externe via Federated Data Access (FDA). Cette option est décrite dans [cette section](../send/personalization-data.md#optimize-personalization)
+* Préparer les données de personnalisation : vous pouvez préparer les données de personnalisation dans un workflow afin d’améliorer l’analyse de préparation des diffusions. Cette méthode doit être utilisée en particulier si les données de personnalisation proviennent d’une table externe via Federated Data Access (FDA). Cette option est décrite dans [cette section](../send/personalization-data.md#optimize-personalization)
 +++
 
 ### Créer du contenu optimisé {#build-optimized-content}
@@ -215,7 +215,7 @@ Travaillez sur la [ligne d’objet](../send/personalization-fields.md#personaliz
 
 ### Page miroir {#mirror-page-check}
 
-Incluez toujours un lien de page miroir. La partie supérieure de l&#39;e-mail constitue la position idéale. En savoir plus sur la page miroir dans [cette section](../send/mirror-page.md).
+Incluez toujours un lien de page miroir. La position souhaitée se trouve en haut de l’e-mail. En savoir plus sur la page miroir dans [cette section](../send/mirror-page.md).
 
 ### Lien de désabonnement {#unsub-link-check}
 
@@ -468,7 +468,7 @@ Dans le tableau de bord des diffusions de Campaign, vous pouvez vérifier les me
 
 ## Tracking du comportement {#track-behaviour}
 
-Pour mieux connaître le comportement de vos destinataires, vous pouvez suivre leur réaction à une diffusion : réception, ouverture, clics sur des liens, désabonnements, etc. Dans Campaign, ces informations sont affichées dans l&#39;onglet **Tracking** des destinataires ciblés par la diffusion et dans l&#39;onglet Tracking de la diffusion.
+Pour mieux connaître le comportement de vos destinataires, vous pouvez suivre leur réaction à une diffusion : réception, ouverture, clics sur des liens, désabonnements, etc. Dans Campaign, ces informations sont affichées dans l’onglet **Tracking** des destinataires ciblés par la diffusion et dans l’onglet Tracking de la diffusion.
 
 Le tracking des messages est activé par défaut. Pour configurer les URL, sélectionnez l’option Afficher les URL dans la section inférieure de l’assistant de diffusion. Pour chaque URL du message, vous pouvez choisir d’activer ou non le tracking.
 

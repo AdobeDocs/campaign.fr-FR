@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1291'
-ht-degree: 83%
+ht-degree: 82%
 ---
 # Description du connecteur SMPP {#smpp-connector-desc}
 
@@ -64,12 +64,12 @@ Pour chaque compte SMPP actif, le connecteur SMPP tente de maintenir les conne
 * Le connecteur SMPP envoie le MT via une connexion d’émetteur (ou de récepteur).
 * Le fournisseur renvoie un identifiant pour ce MT. Il est inséré dans nms:providerMsgId.
 * Le processus SMS met à jour le broadlog vers le statut envoyé.
-* En cas d’erreur finale, le processus SMS met à jour le broadlog en conséquence et peut créer un nouveau type d’erreur dans nms:broadLogMsg.
+* En cas d&#39;erreur finale, le processus SMS met à jour le broadlog en conséquence et peut créer un nouveau type d&#39;erreur dans nms:broadLogMsg.
 
 ### Flux de données lors de la réception d’un SR {#sms-data-flow-sr}
 
 * Le connecteur SMPP reçoit et décode le SR (PDU DELIVER_SM). Il utilise des regex définis dans le compte externe pour obtenir l’identifiant et le statut du message.
-* L’identifiant et le statut du message sont insérés dans nms:providerMsgStatus
+* L&#39;identifiant et le statut du message sont insérés dans nms:providerMsgStatus
 * Une fois inséré, le connecteur SMPP répond avec un PDU DELIVER_SM_RESP.
 * En cas de problème au cours du processus, le connecteur SMPP envoie un PDU DELIVER_SM_RESP négatif et consigne un message.
 
@@ -83,9 +83,9 @@ Pour chaque compte SMPP actif, le connecteur SMPP tente de maintenir les conne
 
 ### Flux de données lors de la réconciliation du MT et du SR {#sms-reconciling-mt-sr}
 
-* Le composant de réconciliation SR lit périodiquement nms:providerMsgId et nms:providerMsgStatus. Les données des deux tables sont jointes.
-* Pour tous les messages comportant une entrée dans les deux tables, l’entrée nms:broadLog correspondante est mise à jour.
-* La table nms:broadLogMsg peut être mise à jour au cours du processus si un nouveau type d&#39;erreur est détecté, ou pour mettre à jour les compteurs pour les erreurs qui n&#39;ont pas été qualifiées manuellement.
+* Le composant de réconciliation SR lit régulièrement nms:providerMsgId et nms:providerMsgStatus. Les données des deux tables sont jointes.
+* Pour tous les messages qui ont une entrée dans les deux tables, l&#39;entrée nms:broadLog correspondante est mise à jour.
+* La table nms:broadLogMsg peut être mise à jour dans le processus si un nouveau type d&#39;erreur est détecté, ou pour mettre à jour les compteurs pour les erreurs qui n&#39;ont pas été qualifiées manuellement.
 
 ## Correspondance des entrées MT, SR et broadlog {#sms-matching-entries}
 
@@ -99,7 +99,7 @@ Voici un diagramme qui décrit l’ensemble du processus :
 * Le connecteur SMPP le formate en tant que PDU MT SUBMIT_SM.
 * Le MT est envoyé au fournisseur SMPP.
 * Le fournisseur répond avec SUBMIT_SM_RESP. SUBMIT_SM et SUBMIT_SM_RESP correspondent par leur sequence_number.
-* SUBMIT_SM_RESP fournit un identifiant provenant du fournisseur. Cet identifiant est inséré avec l’identifiant du journal large dans la table nms:providerMsgId.
+* SUBMIT_SM_RESP fournit un identifiant provenant du fournisseur. Cet identifiant est inséré avec l&#39;identifiant du broadlog dans la table nms:providerMsgId.
 
 **Phase 2**
 
@@ -120,7 +120,7 @@ Les affinités sont ignorées par le connecteur de processus dédié, il s’ex�
 
 ## Options serverConf {#sms-serverconf-options}
 
-Certains paramètres peuvent être réglés dans serverConf.xml. Comme tout autre paramètre de ce fichier, il doit être spécifié dans le fichier config-instance.xml. Tous les paramètres se trouvent dans l’élément &lt; mta2 >.
+Certains paramètres peuvent être réglés dans serverConf.xml. Comme tous les autres paramètres de ce fichier, ils doivent être spécifiés dans le fichier config-instance.xml. Tous les paramètres se trouvent dans l’élément &lt; mta2 >.
 
 Ce tableau résume tous les paramètres. Les valeurs raisonnables min./max. donnent une idée approximative de la plage à prendre en compte dans la plupart des cas. La valeur de débogage est la valeur à choisir lors de la recherche de problèmes qui ne sont pas liés aux performances.
 

@@ -26,14 +26,14 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1473'
-ht-degree: 100%
+ht-degree: 92%
 ---
 # Définir le contenu interactif{#defining-interactive-content}
 
-Adobe Campaign permet d’utiliser le format interactif [AMP for Email](https://amp.dev/fr/about/email/) qui sert, sous certaines conditions, à envoyer des e-mails dynamiques.
+Adobe Campaign permet d’utiliser le format interactif [AMP for Email](https://amp.dev/fr/about/email/), qui permet d’envoyer des e-mails dynamiques, sous certaines conditions.
 
 Avec AMP for Email, vous pouvez :
 * tester la diffusion des e-mails AMP vers des adresses spécifiques correctement configurées ;
@@ -41,11 +41,11 @@ Avec AMP for Email, vous pouvez :
 
 Pour plus d’informations sur le test et l’envoi d’e-mails AMP, consultez [cette section](#targeting-amp-email).
 
-Cette fonctionnalité est disponible via un package dédié dans Adobe Campaign. En fonction de vos autorisations et de votre modèle de déploiement, vous pouvez installer ce package ou contacter Adobe pour l’installer à votre place.
+Cette fonctionnalité est disponible via un package dédié dans Adobe Campaign. Selon vos autorisations et votre modèle de déploiement, vous pouvez installer ce package ou contacter Adobe pour l’installer à votre place.
 
 ## À propos d’AMP for Email {#about-amp-for-email}
 
-Utilisez le nouveau format **AMP for Email** pour inclure des composants AMP dans vos messages et améliorer l’expérience par e-mail avec un contenu riche et exploitable. Grâce à la fonctionnalité d’application moderne directement disponible dans les emails, les destinataires peuvent interagir dynamiquement avec le contenu du message.
+Utilisez le nouveau format **AMP for Email** pour inclure des composants AMP dans vos messages et améliorer l’expérience par e-mail avec du contenu riche et exploitable. Grâce à la fonctionnalité d’application moderne directement disponible dans les emails, les destinataires peuvent interagir dynamiquement avec le contenu du message.
 
 Par exemple :
 * Les emails écrits avec AMP peuvent contenir des éléments interactifs tels que des carrousels d’image.
@@ -67,7 +67,7 @@ Pour tester et envoyer un email AMP avec Adobe Campaign, procédez comme suit 
 
    >[!NOTE]
    >
-   >Actuellement, vous pouvez uniquement diffuser des e-mails AMP vers des [adresses e-mail spécifiques](#testing-amp-delivery-for-selected-addresses) (à des fins de test) ou après [enregistrement](#delivering-amp-emails-by-registering) auprès des clients de messagerie pris en charge.
+   >Actuellement, vous pouvez uniquement diffuser des e-mails AMP vers [des adresses e-mail spécifiques](#testing-amp-delivery-for-selected-addresses) (à des fins de test) ou après [enregistrement](#delivering-amp-emails-by-registering) auprès des clients de messagerie pris en charge.
 
 1. Envoyez votre email comme vous le feriez habituellement. Voir [Envoyer un email AMP](#sending-amp-email).
 
@@ -145,7 +145,7 @@ Lors de la création de votre contenu AMP dans Adobe Campaign, vous devez respe
 
 Deux fournisseurs de messagerie prennent actuellement en charge le test de ce format : Gmail et Mail.ru.
 
-Toutes les étapes et spécifications requises pour tester la diffusion avec le format AMP sur les comptes Gmail sont présentées dans les documentations [Gmail](https://developers.google.com/gmail/ampemail?) et [Mail.ru](https://postmaster.mail.ru/amp) correspondantes destinées aux développeurs et développeuses.
+Toutes les étapes et spécifications requises pour tester la diffusion avec le format AMP sur les comptes Gmail sont présentées dans les documents de développement [Gmail](https://developers.google.com/gmail/ampemail?) et [Mail.ru](https://postmaster.mail.ru/amp) correspondants.
 
 En particulier, les prérequis suivants doivent être remplis :
 * Nous vous invitons à suivre les exigences de sécurité AMP spécifiques à [Gmail](https://developers.google.com/gmail/ampemail/security-requirements) et [Mail.ru](https://postmaster.mail.ru/amp/#howto).

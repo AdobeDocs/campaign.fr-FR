@@ -23,10 +23,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 96%
+ht-degree: 94%
 ---
 # Prévisualiser et tester votre e-mail {#preview-test}
 
@@ -107,7 +107,7 @@ Il est recommandé d’envoyer des BAT après chaque modification du contenu du 
 
 ### Propriétés du BAT {#proofs-properties}
 
-Les propriétés du BAT sont définies sous l’onglet **[!UICONTROL Avancé]** de la fenêtre des propriétés de la diffusion. Accédez au lien **[!UICONTROL Propriétés du BAT...]** pour définir les paramètres et le libellé des BAT. Vous pouvez choisir de conserver les éléments suivants :
+Les propriétés du BAT sont définies dans l’onglet **[!UICONTROL Avancé]** de la fenêtre des propriétés de la diffusion. Accédez au lien **[!UICONTROL Propriétés du BAT...]** pour définir les paramètres et le libellé des BAT. Vous pouvez choisir de conserver les éléments suivants :
 
 * les adresses du BAT en double
 * les adresses du BAT placées sur la liste bloquée

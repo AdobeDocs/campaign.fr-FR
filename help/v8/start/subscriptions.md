@@ -25,16 +25,16 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 92%
+ht-degree: 90%
 ---
 # Gestion des abonnements et des désabonnements {#optin-optout}
 
 Utilisez Adobe Campaign pour créer et surveiller vos services d’information, tels que les newsletters, et pour gérer les abonnements/désabonnements à ces services. Plusieurs services peuvent être définis en parallèle, par exemple : des newsletters spécialisées pour certaines catégories de produits, certains thèmes ou des zones particulières d’un site Web, des abonnements à divers types de messages d’alerte et des notifications en temps réel.
 
-Découvrez comment créer un service d&#39;information, envoyer une newsletter et gérer l&#39;opt-in et l&#39;opt-out dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=fr){target="_blank"}
+Découvrez comment créer un service d&#39;information, envoyer des newsletters et gérer l&#39;opt-in et l&#39;opt-out dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=fr){target="_blank"}
 
 Pour abonner (opt-in) un profil à un service, les options disponibles sont les suivantes :
 
@@ -70,7 +70,7 @@ Pour abonner (opt-in) un profil à un service, les options disponibles sont les 
   En savoir plus dans [cette section](../dev/web/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
 
 
-* Créez un workflow de ciblage et utilisez une activité de type **[!UICONTROL Service d’inscription]**.
+* Créez un workflow de ciblage et utilisez une activité de type **[!UICONTROL Service d&#39;inscription]**.
 
   ![](assets/wf-subscription.png)
 

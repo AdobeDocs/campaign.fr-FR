@@ -25,16 +25,16 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 100%
+source-wordcount: '145'
+ht-degree: 93%
 ---
 # Interagir avec des ressources personnalisées {#interacting-with-custom-resources}
 
 Le point d’entrée **/customResources** vous permet d’exposer les ressources personnalisées Campaign dans REST. Grâce à cette API, l’intégration entre les entités personnalisées et les points d’entrée externes est possible.
 
-Le comportement du point d’entrée /customResources est identique à celui du point d’entrée /profileAndServices.
+Le point d’entrée /customResources a exactement la valeur comme point d’entrée /profileAndServices.
 
 Les ressources personnalisées exposées dans cette API sont les suivantes :
 

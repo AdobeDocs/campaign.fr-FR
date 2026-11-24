@@ -22,10 +22,10 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '239'
-ht-degree: 100%
+ht-degree: 89%
 ---
 # Supprimer des abonnements à l’aide des API {#mdeleting-subscriptions-api}
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 
 ## Suppression d’un abonnement de service pour un profil spécifique {#deleting-service-subscription}
 
-Cette procédure comporte trois étapes.
+Il s’agit d’une procédure en trois étapes.
 
 1. Récupérez l’URL des abonnements pour le profil souhaité.
 1. Exécutez une requête GET sur l’URL des abonnements.
@@ -106,10 +106,10 @@ Exécutez une requête DELETE sur l’URL de service souhaitée.
 
 ## Suppression d’un abonnement de service pour un profil spécifique
 
-Cette procédure comporte trois étapes.
+Il s’agit d’une procédure en trois étapes.
 
 1. Récupérez le service souhaité et son URL d’abonnement.
-1. Exécutez une requête GET sur l’URL d’abonnement pour récupérer tous les abonnements de profils.
+1. Exécutez une requête GET sur l’URL des abonnements pour récupérer tous les abonnements aux profils.
 1. Exécutez une requête DELETE sur l’URL d’abonnement au profil souhaité.
 
 Si la requête de suppression aboutit, l’état de la réponse est 204 No Content.

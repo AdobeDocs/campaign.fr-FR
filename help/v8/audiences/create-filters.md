@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '2044'
-ht-degree: 88%
+source-wordcount: '2045'
+ht-degree: 85%
 ---
 # Utilisation des filtres{#create-filters}
 
@@ -97,7 +97,7 @@ Vous pouvez, par exemple, trier les tâches par priorité, date de création ou 
 
 ![](assets/order_data_sample.png)
 
->[!TAB Recherche rapide ]
+>[!TAB Recherche rapide]
 
 Utilisez le champ de recherche pour accéder rapidement à l&#39;élément souhaité : saisissez les caractères contenus dans le libellé ou le nom interne de l&#39;élément à afficher puis validez pour appliquer un filtre automatique sur les données de la page.
 
@@ -294,7 +294,7 @@ Pour créer un **filtre rapide**, procédez comme suit :
    ![](assets/add-filter-above-the-list.png)
 
 
-Si vous devez filtrer sur un champ qui n’est pas disponible dans le formulaire, mais dans les colonnes, et filtrer sur cette colonne. Pour ce faire :
+Si vous devez filtrer sur un champ qui n’est pas disponible dans le formulaire, mais qui se trouve dans les colonnes, filtrez sur cette colonne. Pour ce faire :
 
 1. Cliquez sur l&#39;icône **[!UICONTROL Configurer la liste]**.
 
@@ -314,7 +314,7 @@ Si vous devez filtrer sur un champ qui n’est pas disponible dans le formulaire
 
 ## Filtres avancés{#advanced-filters}
 
-Combinez des critères complexes dans des **personnalisésFiltres avancés**. Utilisez ces filtres pour créer une requête complexe ou une combinaison de requêtes sur vos données. Ces filtres peuvent être enregistrés et partagés avec d&#39;autres utilisateurs de Campaign.
+Combinez des critères complexes dans des **filtres avancés** personnalisés. Utilisez ces filtres pour créer une requête complexe ou une combinaison de requêtes sur vos données. Ces filtres peuvent être enregistrés et partagés avec d&#39;autres utilisateurs de Campaign.
 
 ### Créer un filtre avancé{#create-adv-filters}
 
@@ -409,7 +409,7 @@ Découvrez comment créer des requêtes avancées dans ces exemples complets :
 
 * Découvrez comment cibler des attributs destinataires simples sur [cette page](https://experienceleague.adobe.com/fr/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=fr){target="_blank"}.
 * Découvrez comment filtrer les destinataires non contactés au cours des 7 derniers jours sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=fr){target="_blank"}.
-* Découvrez comment la liste des opérateurs peut être filtrée par comptes actifs sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=fr){target="_blank"}.
+* Découvrez comment récupérer la liste des opérateurs pouvant être filtrés par comptes actifs dans [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=fr){target="_blank"}.
 * Découvrez comment créer une audience d’envoi d’e-mail d’anniversaire sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=fr){target="_blank"}.
 
 
@@ -419,7 +419,7 @@ Des paramètres avancés sont disponibles pour les filtres prédéfinis. Pour y 
 
 * Pour afficher le filtre par défaut pour toutes les listes basées sur ce type de document, sélectionnez l&#39;option **[!UICONTROL Filtre par défaut pour le type de document associé]**.
 
-  Par exemple, le filtre **[!UICONTROL Par nom ou nom d’utilisateur]** est appliqué aux opérateurs et opératrices. Cette option est sélectionnée afin que le filtre soit systématiquement proposé sur toutes les listes d’opérateurs et d’opératrices.
+  Par exemple, le filtre **[!UICONTROL Par nom ou nom d&#39;utilisateur]** est appliqué aux opérateurs. Cette option est sélectionnée, de sorte que le filtre soit toujours affiché sur toutes les listes d’opérateurs.
 
 * Pour mettre un filtre à disposition de tous les opérateurs Campaign, sélectionnez l&#39;option **[!UICONTROL Filtre partagé avec les autres opérateurs]**.
 

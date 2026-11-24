@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 78%
+source-wordcount: '501'
+ht-degree: 69%
 ---
 # Personnaliser votre instance {#gs-ac-custom}
 
@@ -59,13 +59,13 @@ Dans Adobe Campaign, les schémas de données permettent de :
 * définir des liens entre les différents objets de données de l&#39;application Campaign ;
 * définir et décrire les champs individuels inclus dans chaque objet.
 
-Par exemple, pour ajouter un champ à une table existante, comme la table des destinataires (nms:recipient), vous devez étendre ce schéma.
+Par exemple, pour ajouter un champ à une table existante, telle que la table des destinataires (nms:recipient), vous devez étendre ce schéma.
 
 Deux modes d&#39;extension de table sont disponibles :
 
 * Dans l&#39;interface, par le biais de l&#39;assistant **Nouveau champ**
 
-  Découvrez comment ajouter rapidement un nouveau champ dans Campaign dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=fr#configuring-campaign-classic){target="_blank"}
+  Découvrez comment ajouter rapidement un nouveau champ dans Campaign dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=fr#configuring-campaign-classic){target="_blank"}
 
 * Par programme, en étendant le schéma. Découvrez comment étendre un schéma existant dans [cette section](../dev/extend-schema.md).
 
@@ -75,9 +75,9 @@ Pour ajouter un nouveau type de données qui n&#39;existe pas par défaut dans A
 
 **Rubriques connexes :**
 
-Exemple d&#39;édition de schéma dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#configuring-campaign-classic){target="_blank"}
+Exemple d&#39;édition de schéma dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#configuring-campaign-classic){target="_blank"}
 
-Cas d&#39;utilisation : liaison d&#39;un champ à une table de référence existante dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#uc-link){target="_blank"}
+Cas d’utilisation : liaison d’un champ à une table de référence existante dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=fr#uc-link){target="_blank"}
 
 
 ## Modification des formulaires de saisie
@@ -103,6 +103,6 @@ Lorsque vous naviguez dans l’arborescence de l’Explorateur Adobe Campaign, 
 
 Découvrez comment configurer des listes et enregistrer une configuration de liste sur [cette page](../start/campaign-ui.md).
 
-Vous pouvez appliquer un filtre sur ces listes afin d&#39;afficher uniquement les données nécessaires à l&#39;opérateur. Ensuite, les actions peuvent être exécutées sur les données filtrées. La configuration des filtres vous permet de sélectionner dynamiquement des données d&#39;une liste. Si les données sont modifiées, les données filtrées sont mises à jour.
+Vous pouvez appliquer des filtres à ces listes afin de n&#39;afficher que les données nécessaires à l&#39;opérateur. Des actions peuvent ensuite être exécutées sur les données filtrées. La configuration des filtres vous permet de sélectionner dynamiquement des données d&#39;une liste. Si les données sont modifiées, les données filtrées sont mises à jour.
 
 En savoir plus sur les options de filtrage sur [cette page](../audiences/create-filters.md).

@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 100%
+source-wordcount: '378'
+ht-degree: 83%
 ---
 # À lire absolument {#must-read}
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 
 * Les API d’Adobe Campaign ne doivent être utilisées que de serveur à serveur.
 * Vérifiez systématiquement avec votre contact technique Adobe si le cas pratique que vous souhaitez mettre en œuvre est conforme à l’échelle autorisée par les API Adobe Campaign.
-* La configuration d’un accès AdobeIO nécessite des autorisations spécifiques. Contactez le support technique d’Adobe pour tout problème.
+* La configuration d&#39;un accès Adobe IO nécessite des autorisations spécifiques. Pour tout problème, contactez l&#39;assistance Adobe.
 
 ## Droits et accès
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 ## Représentation des ressources
 
-Toutes les ressources d’API sont disponibles dans **JSON** avec une extension d’URL ou dans un en-tête HTTP Accept  :
+Toutes les ressources d’API sont disponibles dans **JSON** avec une extension d’URL ou dans un en-tête HTTP Accept :
 
 `GET /profileAndServices/<resourceName>.json`
 
@@ -65,7 +65,7 @@ Toutes les ressources d’API sont disponibles dans **JSON** avec une extension 
 
 ## Clé primaire et URL
 
-* N’essayez pas de créer d’URL par vous-même. Toutes les URL sont renvoyées par l’API. Cependant, il est possible de créer une URL basée sur le nom de ressource de niveau supérieur.
+* N’essayez pas de créer une URL par vous-même. Toutes les URL sont renvoyées par l’API. Cependant, il est possible de créer une URL basée sur le nom de ressource de niveau supérieur.
 
 * Les valeurs de clé primaire automatique (PKey) qui illustrent les exemples ne sont pas destinées à fonctionner dans un autre déploiement spécifique. Elles sont produites par l’API Adobe Campaign.
 

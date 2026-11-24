@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '2185'
-ht-degree: 97%
+ht-degree: 93%
 ---
 # Définition du contenu de l’e-mail {#defining-the-email-content}
 
@@ -94,7 +94,7 @@ Le contenu du message est défini dans la section inférieure de la fenêtre de 
 
 Les messages sont envoyés par défaut au format HTML ou texte, selon les préférences des destinataires. Il est recommandé de créer un contenu dans les deux formats afin de permettre un affichage correct dans toutes les messageries. Voir à ce sujet la section [Sélection des formats du message](email-parameters.md#selecting-message-formats).
 
-* Pour importer un contenu HTML, utilisez le bouton **[!UICONTROL Ouvrir]**. Vous pouvez également coller le code source directement dans le sous-onglet **[!UICONTROL Source]**.
+* Pour importer du contenu HTML, utilisez le bouton **[!UICONTROL Ouvrir]**. Vous pouvez également coller le code source directement dans le sous-onglet **[!UICONTROL Source]**.
 
   Si vous utilisez le Digital Content Editor (DCE), consultez [cette section](../dev/web/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
 
@@ -132,14 +132,14 @@ Les messages sont envoyés par défaut au format HTML ou texte, selon les préf�
 
   ![](assets/s_ncs_user_wizard_email01_141.png)
 
-  Comme pour le format HTML, cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** en bas de page pour visualiser le rendu du message, avec sa personnalisation.
+  En ce qui concerne le format HTML, cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** au bas de la page pour visualiser le rendu du message avec sa personnalisation.
 
   ![](assets/s_ncs_user_wizard_email01_142.png)
 
 
 ## Définition du contenu interactif {#amp-for-email-format}
 
-Adobe Campaign permet de tester le nouveau format interactif [AMP for email](https://amp.dev/fr/about/email/) qui sert, sous certaines conditions, à envoyer des e-mails dynamiques.
+Adobe Campaign permet de tester le nouveau format interactif [AMP for Email](https://amp.dev/fr/about/email/), qui permet d’envoyer des e-mails dynamiques, sous certaines conditions.
 
 Voir à ce propos [cette section](defining-interactive-content.md).
 
@@ -302,7 +302,7 @@ Puis paramétrez les éléments suivants en fonction de vos besoins :
      ![](assets/barcode_insert_12.png)
 
 1. Indiquez la taille du code-barres à insérer dans l&#39;email : le paramétrage de l&#39;échelle permet d&#39;augmenter ou de réduire la taille du code-barres, de x 1 à x 10.
-1. Le champ **[!UICONTROL Valeur]** permet de définir la valeur du code-barres. Une valeur peut correspondre à une offre promotionnelle et peut être une fonction d’un critère, ce peut être la valeur d’un champ de la base de données lié à la clientèle.
+1. Le champ **[!UICONTROL Valeur]** permet de définir la valeur du code-barres. Une valeur peut correspondre à une offre spéciale et peut être la fonction d&#39;un critère, elle peut être la valeur d&#39;un champ de base de données lié aux clients.
 
    L&#39;exemple ci-dessous montre un code-barres de type EAN-8 auquel a été ajouté le numéro de compte d&#39;un destinataire. Pour ajouter ce numéro de compte, cliquez sur le bouton de personnalisation situé à droite du champ **[!UICONTROL Valeur]** et sélectionnez **[!UICONTROL Destinataire > N° de compte]**.
 

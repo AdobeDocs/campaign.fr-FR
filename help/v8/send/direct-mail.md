@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 87%
+source-wordcount: '961'
+ht-degree: 86%
 ---
 # Création de diffusions courrier
 
@@ -66,7 +66,7 @@ Pour créer une diffusion courrier, procédez comme suit :
 
 Les profils des destinataires doivent contenir au minimum leurs noms et adresses postales.
 
-Les adresses postales sont des champs calculés. Par défaut, une adresse peut contenir jusqu’à six lignes : la première contient le prénom et le nom, les suivantes contiennent les coordonnées postales (rue et compléments), et la dernière contient le code postal et la ville. La définition du champ postalAddress calculé par défaut peut être consultée dans le schéma nms:recipient .
+Les adresses postales sont des champs calculés. Par défaut, une adresse peut contenir jusqu’à six lignes : la première contient le prénom et le nom, les suivantes contiennent les coordonnées postales (rue et compléments), et la dernière contient le code postal et la ville. La définition du champ postalAddress calculé par défaut peut être consultée dans le schéma nms:recipient.
 
 Une adresse est considérée comme complète si les champs relatifs au nom, au code postal et à la ville ne sont pas vides. Les personnes destinataires dont les adresses sont incomplètes seront exclues des diffusions par courrier.
 
@@ -94,7 +94,7 @@ Vous pouvez insérer une URL personnalisée dans le fichier d’extraction. Pour
 
 >[!NOTE]
 >
->Cet assistant comprend les étapes de l’assistant d’exportation décrites dans la [&#x200B; documentation de Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=fr){target="_blank"}.
+>Cet assistant comprend les étapes de l’assistant d’exportation détaillées dans la [documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=fr){target="_blank"} de Adobe Campaign Classic.
 
 ## Validation de la diffusion{#validating}
 
@@ -104,11 +104,11 @@ Dans le cadre d&#39;une opération marketing, à la date d&#39;extraction, le fi
 
 Les concepts généraux de validation d&#39;une diffusion sont présentés dans [cette section](../start/create-message.md#validate-the-delivery).
 
-Le fichier de sortie d&#39;une diffusion par courrier est généré pendant l&#39;analyse de la diffusion. Le contenu du fichier dépend des colonnes de sortie sélectionnées (voir cette [section fichier](#defining-the-direct-mail-content)).
+Le fichier de sortie d&#39;une diffusion par courrier est généré pendant l&#39;analyse de la diffusion. Le contenu du fichier dépend des colonnes de sortie sélectionnées (consultez ce [fichier de section](#defining-the-direct-mail-content)).
 
 >[!NOTE]
 >
->La phase d’analyse est détaillée dans cette [section](delivery-analysis.md).
+>La phase d&#39;analyse est présentée dans cette [section](delivery-analysis.md).
 
 Pendant la phase d’analyse, le fichier est généré mais aucune information concernant les destinataires (à savoir les logs de diffusion) n’est mise à jour. Vous pouvez donc annuler ce traitement sans courir de risque.
 
@@ -141,4 +141,4 @@ Dans le cadre d’une campagne marketing, lorsque toutes les validations ont ét
 
 >[!NOTE]
 >
->Lorsque vous utilisez une activité **[!UICONTROL Publipostage direct]** dans un workflow, sa transition sortante transmet la population ciblée, et non le fichier d’extraction généré. Pour envoyer le fichier sur un serveur, ajoutez une activité **[!UICONTROL Extraction des données]** après l&#39;activité **[!UICONTROL Publipostage direct]**, puis une activité **[!UICONTROL Transfert de fichier]**.
+>Lorsque vous utilisez une activité **[!UICONTROL Publipostage direct]** dans un workflow, sa transition sortante transmet la population ciblée, et non le fichier d’extraction généré. Pour envoyer le fichier à un serveur, ajoutez une activité **[!UICONTROL Extraction de données]** après l’activité **[!UICONTROL Publipostage direct]**, puis une activité **[!UICONTROL Transfert de fichier]**.

@@ -24,14 +24,14 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 100%
+source-wordcount: '483'
+ht-degree: 82%
 ---
 # Commencer avec la personnalisation {#personalize-content}
 
-Pour tirer le meilleur parti de chacune de vos campagnes marketing, Adobe Campaign permet de diffuser du contenu personnalisé adapté au profil de la clientèle. Les fonctionnalités de personnalisation d’Adobe Campaign, basées sur les données de profil, vous permettent de créer une expérience personnalisée pour chaque groupe et personne : adaptez vos messages en fonction du ou de la destinataire grâce aux données et informations dont vous disposez à son sujet. Il peut s’agir de son prénom, de ses centres d’intérêts, de l’endroit où il/elle vit, de ses achats et bien plus encore.
+Pour tirer le meilleur parti de chacune de vos campagnes marketing, Adobe Campaign permet de diffuser du contenu personnalisé adapté au profil de la clientèle. En fonction des données de profil, les fonctionnalités de personnalisation vous permettent de créer une expérience personnalisée pour différents groupes et individus : vous pouvez adapter vos messages à chaque destinataire spécifique en exploitant les données et informations que vous possédez à son sujet. Il peut s’agir de son prénom, de ses centres d’intérêts, de l’endroit où il/elle vit, de ses achats et bien plus encore.
 
 Adobe Campaign simplifie la personnalisation : affichez différents types de contenu personnalisé à chaque personne destinataire à l’aide d’un seul [modèle de message](create-templates.md). Dans vos messages transactionnels, tels que les e-mails de confirmation d’achat ou d’abandon de panier, incluez les informations sur les listes de produits pour chaque personne dans un modèle d’e-mail unique.
 
@@ -54,7 +54,7 @@ Vous pouvez personnaliser le contenu du message en procédant comme suit :
 
 * Créer du **contenu conditionnel**
 
-  Configurez du contenu conditionnel pour ajouter une personnalisation dynamique basée notamment sur le profil de la personne destinataire. Lorsqu’une condition est rencontrée, des blocs de texte et/ou des images sont alors insérés. [En savoir plus](conditions.md).
+  Configurez du contenu conditionnel et ajoutez une personnalisation dynamique basée sur le profil du ou de la destinataire, par exemple : Lorsqu’une condition est rencontrée, des blocs de texte et/ou des images sont alors insérés. [En savoir plus](conditions.md).
 
 <!--
 * Add **personalized offers**
@@ -85,7 +85,7 @@ Les variables suivantes sont des variables internes qui peuvent être utilisées
 
 ## Tutoriel vidéo {#personalization-video}
 
-Découvrez les différents types de contenu dynamique et apprenez à créer et à appliquer des blocs de personnalisation et des instructions conditionnelles à une diffusion.
+Découvrez les différents types de contenu dynamique et comment créer et appliquer des blocs de personnalisation et des instructions conditionnelles à une diffusion.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452868?captions=fre_fr&quality=12)

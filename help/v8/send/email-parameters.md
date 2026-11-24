@@ -20,10 +20,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 66%
+source-wordcount: '988'
+ht-degree: 64%
 ---
 # Paramètres de l’e-mail {#email-parameters}
 
@@ -81,7 +81,7 @@ L’onglet **[!UICONTROL SMTP]** des propriétés de la diffusion permet de conf
 
 * **[!UICONTROL Adresse en cas d’erreur]** : par défaut, les e-mails de rebond sont réceptionnés dans la boîte d’erreur par défaut de la plateforme. Vous pouvez toutefois définir une adresse d’erreur spécifique pour une diffusion.
 
-* **[!UICONTROL Adresse des rebonds]** : vous pouvez également définir une autre adresse vers laquelle les e-mails de rebond non traités seront transférés. Cette adresse permet d’étudier les raisons des rebonds lorsque les e-mails n’ont pas pu être qualifiés automatiquement par l’application.
+* **[!UICONTROL Adresse des rebonds]** : vous pouvez également définir une autre adresse vers laquelle les e-mails de rebond non traités seront transférés. Cette adresse vous permet d’étudier les raisons des rebonds lorsque les e-mails n’ont pas pu être qualifiés automatiquement par l’application.
 
 Chacun de ces champs peut être personnalisé à l’aide de l’icône dédiée. En savoir plus sur les champs de personnalisation dans [cette section](personalization-fields.md).
 
@@ -93,7 +93,7 @@ Pour plus d’informations sur la gestion des e-mails de rebond, consultez [cett
 
 L’URL list-unsubscribe en un clic est un lien ou un bouton affiché en regard des informations de l’expéditeur de l’e-mail, qui permet aux destinataires de se désinscrire instantanément de vos listes de diffusion en un seul clic. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"}-->
 
-Il s’affiche sous la forme d’un lien **Se désabonner** dans les interfaces de messagerie des FAI. Par exemple :
+Elle s&#39;affiche sous la forme d&#39;un lien **Se désabonner** dans les interfaces de messagerie des FAI. Par exemple :
 
 ![](assets/email-list-unsubscribe-example.png)
 
@@ -117,7 +117,7 @@ Pour activer cette fonctionnalité, sélectionnez l&#39;option **[!UICONTROL Ajo
 >If you uncheck this option in the delivery template, it will still be enabled by default in the deliveries created from this template. You need to enable the option again at the delivery level.
 -->
 
-Selon le client de messagerie et la méthode qu’il utilise pour effectuer son opt-out, le fait de cliquer sur le lien **Se désabonner** dans l’en-tête de l’e-mail peut avoir les impacts suivants :
+Selon le client de messagerie et la méthode qu&#39;il utilise pour effectuer un processus d&#39;opt-out, cliquer sur le lien **Se désabonner** dans l&#39;en-tête de l&#39;e-mail peut avoir les impacts suivants :
 
 * Si le client de messagerie utilise la méthode **One-Click** List-Unsubscribe, le destinataire est directement désabonné.
 
@@ -125,13 +125,13 @@ Selon le client de messagerie et la méthode qu’il utilise pour effectuer son 
   >
   >Les principaux FAI tels que Google et Yahoo ! exigent des expéditeurs qu&#39;ils se conforment à **List-Unsubscribe en un clic**.
 
-* Si le client de messagerie ne prend pas en charge List-Unsubscribe en un clic, il peut toujours utiliser la méthode **« mailto »** List-Unsubscribe, qui envoie un e-mail prérempli à l’adresse de désabonnement spécifiée dans l’en-tête de l’e-mail.
+* Si le client de messagerie ne prend pas en charge la méthode List-Unsubscribe en un clic, il peut toujours utiliser la méthode **« mailto »** List-Unsubscribe, qui envoie un e-mail prérempli à l’adresse de désabonnement spécifiée dans l’en-tête de l’e-mail.
 
   Vous pouvez définir l&#39;adresse explicitement dans l&#39;en-tête ou utiliser une adresse dynamique (par exemple à l&#39;aide de &lt;%=errorAddress%> ou de l&#39;option &#39;NmsEmail_DefaultErrorAddr&#39;) qui peut être définie via l&#39;assistant de déploiement.
 
 >[!NOTE]
 >
->Vous pouvez également définir manuellement les méthodes [List-Unsubscribe en un clic](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} et [« mailto » List-Unsubscribe](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}. Les étapes détaillées sont décrites dans le [&#x200B; Guide des bonnes pratiques en matière de délivrabilité d’Experience Cloud](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"}.
+>Vous pouvez également définir manuellement les méthodes [List-Unsubscribe en un clic](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} et [« mailto » List-Unsubscribe](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}. Les étapes détaillées sont décrites dans le [Guide des bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"} d’Experience Cloud.
 
 
 ## Ajouter des en-têtes SMTP {#adding-smtp-headers}

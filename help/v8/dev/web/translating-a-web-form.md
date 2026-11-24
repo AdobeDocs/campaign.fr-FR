@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1680'
-ht-degree: 100%
+ht-degree: 98%
 ---
 # Traduire un formulaire web{#translating-a-web-form}
 
@@ -85,7 +85,7 @@ Chaque fois qu&#39;une chaîne est traduite, sa traduction est ajoutée dans le 
 
 Lorsque l&#39;opération de collecte détecte qu&#39;une traduction existe déjà, celle-ci apparaît dans la colonne **[!UICONTROL Texte]** de la chaîne. Le statut de la chaîne est alors **[!UICONTROL Traduit]**.
 
-Lorsqu&#39;une chaîne de caractères n&#39;a jamais été traduite, le champ **[!UICONTROL Texte]** est vide et le statut est : **[!UICONTROL A traduire]**.
+Pour les chaînes de caractères qui n&#39;ont jamais été traduites, le champ **[!UICONTROL Texte]** est vide et le statut est **[!UICONTROL À traduire]**.
 
 ### Filtrer les chaînes {#filtering-strings}
 
@@ -143,7 +143,7 @@ Vous pouvez exporter et importer les chaînes de caractères afin de les traduir
      >
      >Ce type d&#39;export n&#39;est pas disponible pour l&#39;export en XLIFF.
 
-1. Choisissez ensuite le **[!UICONTROL Dossier cible]** dans lequel les fichiers seront enregistrés.
+1. Choisissez ensuite le **[!UICONTROL dossier cible]** où les fichiers seront enregistrés.
 1. Sélectionnez le format de fichier (**[!UICONTROL CSV]** ou **[!UICONTROL XLIFF]**) et cliquez enfin sur **[!UICONTROL Démarrer]**.
 
 ![](assets/s_ncs_admin_survey_trad_export_start.png)
@@ -188,7 +188,7 @@ si la langue est le premier ou le seul paramètre de l&#39;URL. Par exemple : *
 &lang=xx
 ```
 
-lorsque d&#39;autres paramètres précèdent celui de la langue dans l&#39;URL. Par exemple : **https://myserver/webApp/APP34?status=1&amp;lang=en**
+lorsque d&#39;autres paramètres précèdent celui de la langue dans l&#39;URL. Par exemple : **https://myserver/webApp/APP34?status=1&lang=en**
 
 Les langues de traduction et les dictionnaires disponibles par défaut sont répertoriés ci-dessous.
 
@@ -449,7 +449,7 @@ Vous pouvez ajouter les caractères **?lang=es** ou **?lang=de** pour l&#39;affi
 >[!NOTE]
 >
 >Si d&#39;autres paramètres sont déjà utilisés pour cette application web, ajoutez les caractères **&amp;lang=**.\
->Par exemple : **https://myserver/webApp/APP34?status=1&amp;lang=en**
+>Par exemple : **https://myserver/webApp/APP34?status=1&lang=en**
 
 ## Configuration avancée de traduction {#advanced-translation-configuration}
 

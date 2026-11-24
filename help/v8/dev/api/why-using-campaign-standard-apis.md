@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 82%
+source-wordcount: '489'
+ht-degree: 74%
 ---
 # Pourquoi utiliser les API de Campaign Standard ? {#why-using-campaign-standard-apis}
 
@@ -58,7 +58,7 @@ Ces messages sont élaborés à l’aide des éléments suivants :
 
 Un ensemble de requêtes est disponible pour mieux vous familiariser avec les requêtes d’API Campaign Standard. Cet ensemble au format JSON met à votre disposition des requêtes d’API prédéfinies représentant des cas pratiques courants.
 
-Les étapes ci-dessous décrivent un cas pratique détaillé. Vous pourrez ainsi importer et utiliser l’ensemble de requêtes pour créer un profil dans la base de données Campaign Standard.
+Les étapes ci-dessous décrivent un cas pratique détaillé pour importer et utiliser la collection pour créer un profil dans la base de données Campaign Standard.
 
 >[!NOTE]
 >

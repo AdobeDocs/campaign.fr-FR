@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1370'
-ht-degree: 100%
+ht-degree: 95%
 ---
 # Publier un formulaire web{#publishing-a-web-form}
 
@@ -119,7 +119,7 @@ Le cycle de vie d&#39;un formulaire se décompose en trois étapes :
 
    Une fois la phase de conception terminée, le formulaire peut être diffusé.
 
-   Lorsqu’un formulaire a le statut **[!UICONTROL En édition]** ou **[!UICONTROL En attente de publication]**, il doit être [publié](#publishing-a-form) afin d’être en ligne et accessible via l’URL du formulaire web dans un navigateur.
+   Lorsqu&#39;un formulaire a le statut **[!UICONTROL En édition]** ou **[!UICONTROL En attente de publication]**, il doit être [publié](#publishing-a-form) pour être en ligne et accessible via l&#39;URL du formulaire web dans un navigateur.
 
    Une fois publié, le formulaire est en ligne jusqu&#39;à son expiration.
 
@@ -203,7 +203,7 @@ Pour en savoir plus sur les différents statuts d&#39;un formulaire web, consult
 
   * Si le formulaire web existe déjà sur la nouvelle instance, il est remplacé par la nouvelle version et prend le statut **[!UICONTROL En attente de publication]**, même si l’ancienne version était **[!UICONTROL En ligne]**.
 
-  * Qu’il existait déjà ou non, le formulaire doit être [publié](#publishing-a-form) pour obtenir le statut **[!UICONTROL En ligne]** sur la nouvelle instance et être accessible via l’URL du formulaire web dans un navigateur.
+  * Que le formulaire existe ou non, il doit être [publié](#publishing-a-form) pour devenir **[!UICONTROL en ligne]** sur la nouvelle instance et accessible via l’URL du formulaire web dans un navigateur.
 
 * Si le statut du formulaire web était **[!UICONTROL En édition]** lorsqu’il a été exporté :
 

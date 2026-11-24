@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 92%
+source-wordcount: '655'
+ht-degree: 89%
 ---
 # Commencer avec les workflows{#gs-with-workflows}
 
@@ -52,7 +52,7 @@ Ce que vous pouvez configurer :
 
 >[!NOTE]
 >
->L’interface utilisateur web d’Adobe Campaign s’accompagne d’une zone de travail repensée pour les workflows, ce qui permet de créer des parcours client plus dynamiques et personnalisés. Pour en savoir plus sur les workflows pour l’interface d’utilisation web, reportez-vous à la [documentation de l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/wf/gs-workflows){target=_blank}.
+>L’interface utilisateur web d’Adobe Campaign s’accompagne d’une zone de travail repensée pour les workflows, ce qui vous permet de créer des parcours client plus dynamiques et personnalisés. Pour en savoir plus sur les workflows pour l’interface d’utilisation web, reportez-vous à la [documentation de l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/wf/gs-workflows){target=_blank}.
 
 
 ## Conception et utilisation de workflows {#gs-ac-wf}
@@ -65,7 +65,7 @@ Pour en savoir plus sur l’interface utilisateur et l’exécution des workflow
 
 * [Bonnes pratiques relatives aux workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=fr){target="_blank"}
 
-* [Workflows techniques natifs](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=fr){target="_blank"}
+* [Workflows techniques intégrés](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=fr){target="_blank"}
 
 * [Surveillance de l’exécution des workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=fr){target="_blank"}
 
@@ -151,7 +151,7 @@ Découvrez comment créer une campagne récurrente sur [cette page](https://expe
 
 Utilisez la messagerie transactionnelle de Campaign pour automatiser les messages générés à partir d&#39;événements déclenchés depuis des systèmes d&#39;information. Ces messages transactionnels peuvent notamment être une facture, une confirmation de commande, une confirmation d&#39;expédition, une modification de mot de passe, une notification d&#39;indisponibilité du produit, un relevé de compte ou la création d&#39;un compte sur un site web. Ces messages peuvent être envoyés individuellement ou par lots via e-mail, SMS ou notifications push.
 
-Pour en savoir plus sur les fonctionnalités de la messagerie transactionnelle, consultez [cette section](../send/transactional.md).
+En savoir plus sur les fonctionnalités des messages transactionnels dans [cette section](../send/transactional.md).
 
 Connectez Adobe Campaign et Adobe Analytics pour récupérer les actions utilisateur et envoyer des messages personnalisés en temps quasi réel.
 
@@ -160,4 +160,4 @@ Découvrez comment intégrer Campaign à d’autres solutions dans [cette sectio
 
 ## Cas d’utilisation complets de workflow{#end-to-end-uc}
 
-Découvrez les cas pratiques utilisant les fonctionnalités des workflows Campaign [dans cette section](../../automation/workflow/workflow-use-cases.md).
+Découvrez les cas pratiques utilisant les fonctionnalités des workflows Campaign [&#x200B; dans cette section](../../automation/workflow/workflow-use-cases.md).

@@ -21,10 +21,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 78%
+source-wordcount: '185'
+ht-degree: 66%
 ---
 # Présentation de la meilleure offre{#interaction-present-offers}
 
@@ -36,7 +36,7 @@ Pour qu&#39;une offre puisse être sélectionnée par le moteur d&#39;offres, el
 
 Pour plus d’informations, consultez [cette section](approving-and-activating-an-offer.md#approving-offer-content).
 
-Lorsqu&#39;il s&#39;agit d&#39;un contact entrant, l&#39;utilisateur qui navigue sur la page peut être identifié ou non par le site web. Le moteur d&#39;offres présente des offres différentes selon qu&#39;il s&#39;agit de profils identifiés ou de profils anonymes.
+Dans le contexte d’un contact entrant, l’utilisateur qui navigue sur la page peut être identifié par le site web ou non. Le moteur d&#39;offres présente des offres différentes selon qu&#39;il s&#39;agit de profils identifiés ou de profils anonymes.
 
 Avant de pouvoir proposer des offres sur un canal entrant, vous devez configurer l’appel au moteur d’offres à l’endroit où vous souhaitez que les offres soient présentées. Le cas le plus courant dans le cadre d’une interaction entrante est la page web.
 

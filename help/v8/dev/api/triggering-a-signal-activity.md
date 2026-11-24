@@ -22,20 +22,20 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 84%
 ---
 # Déclenchement d&#39;une activité de signal {#triggering-a-signal-activity}
 
 Un workflow Adobe Campaign Standard peut comporter une ou plusieurs activités **Signal externe**. Ces activités sont des « écouteurs » (listeners) qui attendent d’être déclenchés.
 
-Les API de Campaign Standard vous permettent de déclencher une activité **Signal externe** pour appeler un workflow. L’appel d’API peut inclure des paramètres à ingérer dans les variables d’événements du workflow (nom de l’audience à cibler, nom du fichier à importer, partie du contenu du message, etc.). De cette façon, vous pouvez facilement intégrer vos automatisations Campaign avec votre système externe.
+Les API de Campaign Standard vous permettent de déclencher une activité **Signal externe** pour appeler un workflow. L’appel API peut inclure des paramètres à ingérer dans les variables d’événement du workflow (nom de l’audience à cibler, nom du fichier à importer, partie du contenu du message, etc.). De cette façon, vous pouvez facilement intégrer vos automatisations Campaign avec votre système externe.
 
 >[!NOTE]
 >
->Les activités de signal externe ne peuvent pas être déclenchées plus souvent que toutes les 10 minutes et le workflow de destination doit être déjà en cours d’exécution.
+>Les activités de signal externe ne peuvent pas être déclenchées plus souvent que toutes les 10 minutes et le workflow de destination doit déjà être en cours d’exécution.
 
 Pour déclencher un workflow, procédez comme suit :
 

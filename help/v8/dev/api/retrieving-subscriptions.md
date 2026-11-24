@@ -22,16 +22,16 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 100%
+ht-degree: 94%
 ---
 # Récupérer des abonnements à l’aide des API {#retrieving-subscriptions-api}
 
 ## Récupération des profils abonnés à un service
 
-Cette procédure comporte deux étapes.
+Il s’agit d’une procédure en deux étapes.
 
 1. Récupérez l’URL des abonnements pour le service souhaité.
 1. Exécutez une requête GET sur l’URL des abonnements. Elle renvoie la liste des abonnements pour le service, avec chaque profil associé.
@@ -97,7 +97,7 @@ La liste des abonnements pour le service s’affiche, avec chaque profil associ�
 
 ## Récupération des services auxquels un profil s’est abonné
 
-Cette procédure comporte deux étapes.
+Il s’agit d’une procédure en deux étapes.
 
 1. Récupérez l’URL des abonnements pour un profil donné.
 1. Exécutez une requête GET sur l’URL. Elle renvoie la liste des abonnements pour le profil, avec chaque service associé.

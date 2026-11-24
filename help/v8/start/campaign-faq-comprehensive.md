@@ -24,7 +24,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '11618'
 ht-degree: 16%
@@ -175,7 +175,7 @@ Vous pouvez également rejoindre la [Communauté Campaign](https://experiencelea
 
 +++
 
-+++ Avec quels systèmes et composants Campaign v8 est-il compatible ?
++++ Avec quels systèmes et composants Campaign v8 est-il compatible ?
 
 Vous trouverez la liste de tous les systèmes et composants pris en charge dans le dernier build de Campaign dans la [matrice de compatibilité Adobe Campaign](compatibility-matrix.md).
 
@@ -220,7 +220,7 @@ Ces limitations évoluent à mesure qu’Adobe améliore v8. Consultez la docume
 
 La migration automatisée depuis un environnement Campaign Classic v7 existant n’est pas encore disponible.
 
-Campaign v8 est **uniquement** disponible en tant que Managed Cloud Service et ne peut pas être déployé dans des environnements On-Premise ou hybrides.
+Campaign v8 est **uniquement** disponible en tant que Managed Cloud Service et ne peut pas être déployé dans un environnement on-premise ou hybride.
 
 Pour plus d’informations sur le processus de migration, contactez votre représentant ou représentante Adobe.
 

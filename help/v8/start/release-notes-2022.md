@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1953'
-ht-degree: 96%
+ht-degree: 93%
 ---
 # Notes de mise à jour 2022{#2022-rn}
 
@@ -89,7 +89,7 @@ _samedi 30 septembre 2022_
 <ul> 
 <li><p>Envoyer des messages sur X (anciennement Twitter) : Adobe Campaign vous permet de publier des messages directement sur votre compte X. Vous pouvez également envoyer des messages directs à tous les abonnées et abonnés de vos comptes.
 </p></li>
-<li><p>Collecter de nouveaux contacts : Adobe Campaign peut récupérer automatiquement les données de profil, ce qui vous permet ainsi d’exécuter des campagnes de ciblage et, lorsque cela est possible, d’implémenter des stratégies cross-canal.
+<li><p>Collecter de nouveaux contacts : Adobe Campaign peut récupérer automatiquement les données de profil, ce qui permet de réaliser des campagnes de ciblage et d'implémenter des stratégies cross-canal.
 </p></li>
 </ul>
 <p>Découvrez comment connecter Campaign et X dans la <a href="../connect/ac-tw.md">documentation détaillée</a>.</p>
@@ -266,7 +266,7 @@ Reportez-vous à la [matrice de compatibilité de Campaign](compatibility-matrix
 **Correctifs**
 
 * Correction d’un problème qui se produisait lors de l’utilisation d’adresses de contrôle et de populations témoins dans la même diffusion récurrente. (NEO-41197)
-* Correction d’un problème sur FFDA en raison duquel l’envoi d’e-mails était bloqué pour tous les destinataires appartenant au même deliveryPart pendant le processus d’envoi (jusqu’à 256) lorsque les blocs de personnalisation contenaient l’un des caractères suivants : `' & < > "`. Ces caractères sont désormais pris en charge dans les blocs de personnalisation (par exemple : prénom=&quot;Brian O&#39;Neil&quot;). (NEO-43184)
+* Correction d’un problème sur FFDA en raison duquel l’envoi d’e-mails était bloqué pour tous les destinataires appartenant au même deliveryPart pendant le processus d’envoi (jusqu’à 256) lorsque les blocs de personnalisation contenaient l’un des caractères suivants : `' & < > "`. Ces caractères sont désormais pris en charge dans les blocs de personnalisation (par exemple : prénom=&quot;Brian O&#39;Neil&quot;). (NEO-43184)
 * Correction d&#39;un problème qui pouvait mener à l’échec du workflow de facturation lors de l&#39;utilisation d&#39;un schéma personnalisé comme mapping de ciblage. Nous nous assurons désormais que le type du lien étranger vers un schéma de ciblage personnalisé est correct lors de la génération du schéma broadLog via l’assistant de mapping de ciblage. (NEO-43506)
 * Correction d’un problème qui entraînait l’échec des workflows de déploiement FFDA pour des langues autres que l’anglais. (NEO-44561)
 

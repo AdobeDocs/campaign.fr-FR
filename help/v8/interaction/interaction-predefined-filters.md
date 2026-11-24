@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '173'
-ht-degree: 100%
+ht-degree: 87%
 ---
 # Création de filtres prédéfinis{#creating-pre-defined-filters}
 
@@ -38,7 +38,7 @@ Créez des filtres prédéfinis afin de définir des règles d&#39;éligibilité
 
 >[!NOTE]
 >
->L’interface d’utilisation de d’Adobe Campaign Web vous offre une interface conviviale pour gérer et personnaliser facilement des filtres prédéfinis qui répondent à vos besoins spécifiques. Créez-les une seule fois et enregistrez-les pour une utilisation ultérieure. Pour en savoir plus sur les filtres prédéfinis pour l’interface d’utilisation web, reportez-vous à la [documentation de l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/predefined-filters){target=_blank}.
+>L’interface utilisateur web d’Adobe Campaign offre une interface conviviale permettant de gérer et de personnaliser facilement les filtres prédéfinis en fonction de vos besoins spécifiques. Créez-les une seule fois et enregistrez-les pour une utilisation ultérieure. Pour en savoir plus sur les filtres prédéfinis pour l’interface d’utilisation web, reportez-vous à la [documentation de l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/predefined-filters){target=_blank}.
 
 
 Pour créer un filtre prédéfini, procédez comme suit :

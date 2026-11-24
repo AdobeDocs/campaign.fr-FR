@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 99%
+source-wordcount: '1466'
+ht-degree: 96%
 ---
 # Utilisation de Campaign et Microsoft Dynamics 365{#crm-ms-dynamics}
 
@@ -84,7 +84,7 @@ En savoir plus dans la [documentation de Microsoft Dynamics 365](https://docs.
 
 ### Génération de l’identifiant de clé de certificat Microsoft Dynamics et de l’ID de clé {#config-certificate-key-id}
 
-Pour obtenir l’**Identifiant de la clé de certificat (customKeyIdentifier)** et l’**identifiant de la clé (keyId)**, vous devez télécharger un certificat. Les certificats peuvent être utilisés comme secrets pour prouver l’identité de l’application lors de la demande d’un jeton. On peut également parler de clés publiques.
+Pour obtenir l’**Identifiant de la clé de certificat (customKeyIdentifier)** et l’**identifiant de la clé (keyId)**, vous devez télécharger un certificat. Les certificats peuvent être utilisés comme secrets pour prouver l’identité de l’application lors de la demande d’un jeton. Elles peuvent également être appelées clés publiques.
 
 Procédez comme suit :
 
@@ -145,7 +145,7 @@ L&#39;utilisateur de l&#39;application est l&#39;utilisateur que l&#39;applicati
 **Étape 1** : Création d&#39;un utilisateur non interactif sur Azure Active Directory
 
 1. Cliquez sur **Azure Active Directory > Utilisateurs** et sur **Nouvel utilisateur**.
-1. Donnez un nom adapté que vous souhaitez utiliser et le nom d&#39;utilisateur doit être au format d&#39;un email.
+1. Donnez un nom correct à utiliser et le nom d’utilisateur doit être un format d’e-mail.
 1. Sélectionnez **Administrateur Dynamics 365** dans le **Rôle de répertoire**.
 
 **Étape 2** : Attribuer une licence appropriée à l&#39;utilisateur créé
@@ -226,7 +226,7 @@ Pour synchroniser les données entre Adobe Campaign et Microsoft CRM, créez un
 
 Pour en savoir plus sur la synchronisation des données, consultez [cette page](crm-data-sync.md).
 
-En savoir plus sur la gestion des énumérations dans Campaign [sur cette page](../config/enumerations.md).
+En savoir plus sur la gestion des énumérations dans la campagne [&#x200B; sur cette page](../config/enumerations.md).
 
 ### Types de données de champ pris en charge {#ms-dyn-supported-types}
 

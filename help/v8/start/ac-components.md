@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 100%
+source-wordcount: '640'
+ht-degree: 78%
 ---
 # Présentation des composants et processus de Campaign {#components-and-processes}
 
@@ -55,7 +55,7 @@ Les composants et l&#39;architecture globale d&#39;Adobe Campaign sont décrits
 
 ### Couche de présentation{#presentation-layer}
 
-Vous pouvez accéder à Adobe Campaign via un client riche, un client léger ou une intégration d&#39;API.
+Vous pouvez accéder à Adobe Campaign via un client riche, un client léger ou une intégration d’API.
 
 * Client riche
 
@@ -63,7 +63,7 @@ Vous pouvez accéder à Adobe Campaign via un client riche, un client léger ou
 
 * Client léger
 
-  Les fonctionnalités d&#39;accès web d&#39;Adobe Campaign vous permettent d&#39;accéder à un sous-ensemble de fonctionnalités de Campaign avec un navigateur web, à l&#39;aide d&#39;une interface utilisateur HTML. Utilisez cette interface web pour consulter des rapports, contrôler et valider les messages, accéder aux tableaux de bord de surveillance, et plus encore.  [En savoir plus sur l&#39;accès web de Campaign](../start/connect.md).
+  Les fonctionnalités d&#39;accès web d&#39;Adobe Campaign vous permettent d&#39;accéder à un sous-ensemble de fonctionnalités de Campaign avec un navigateur web, à l&#39;aide d&#39;une interface utilisateur d&#39;HTML. Utilisez cette interface web pour consulter des rapports, contrôler et valider les messages, accéder aux tableaux de bord de surveillance, et plus encore.  [En savoir plus sur l&#39;accès web de Campaign](../start/connect.md).
 
 * Applications externes avec API
 
@@ -71,13 +71,13 @@ Vous pouvez accéder à Adobe Campaign via un client riche, un client léger ou
 
 ### Couche de persistance{#persistance-layer}
 
-Les bases de données de Campaign sont utilisées comme couches persistantes et contiennent presque toutes les informations et données gérées par Adobe Campaign. Ces données incluent : les données fonctionnelles, telles que les profils, les abonnements, le contenu ; les données techniques, telles que les traitements de diffusion et les logs, les logs de tracking ; et les données de travail (achats, pistes).
+Les bases de données de Campaign sont utilisées comme couche persistante et contiennent presque toutes les informations et données gérées par Adobe Campaign. Ces données incluent : les données fonctionnelles, telles que les profils, les abonnements, le contenu ; les données techniques, telles que les traitements de diffusion et les logs, les logs de tracking ; et les données de travail (achats, pistes).
 
 La fiabilité de la base de données est primordiale puisque la plupart des composants d&#39;Adobe Campaign doivent avoir accès à cette base afin d&#39;accomplir leurs tâches (hormis le module de redirection).
 
 ### Couche de logique applicative{#logical-app-layer}
 
-La couche de logique applicative de Campaign est facilement configurable pour répondre à des besoins métier complexes. Vous pouvez utiliser Campaign comme une plateforme unique avec différentes applications qui se combinent pour créer une architecture ouverte et évolutive. Chaque instance de Campaign est un ensemble de processus de la couche applicative, dont certains sont partagés et d&#39;autres dédiés.
+La couche de logique applicative de Campaign est facilement configurable pour répondre à des besoins métier complexes. Vous pouvez utiliser Campaign comme une plateforme unique avec différentes applications qui se combinent pour créer une architecture ouverte et évolutive. Chaque instance Campaign est un ensemble de processus de la couche applicative, dont certains sont partagés et d&#39;autres dédiés.
 
 ## Campaign Managed Cloud Services{#ac-managed-services}
 
@@ -89,7 +89,7 @@ Le serveur Web Campaign contrôle l&#39;accès aux processus Web Campaign. JavaS
 
 ![](assets/do-not-localize/ac-processes.png)
 
-La console cliente Campaign se connecte au serveur Web à l’aide de SOAP XML via HTTP. Le serveur Web fournit la couche de sécurité, transmet les requêtes à la couche Application à l’aide de Javascript et l’accès des processus internes de Campaign à la base de données à l’aide de SQL.
+La console cliente Campaign se connecte au serveur Web à l’aide de SOAP XML via HTTP. Le serveur Web fournit la couche de sécurité, transmet les requêtes à la couche Application à l’aide de Javascript et les processus internes de Campaign accèdent à la base de données à l’aide de SQL.
 
 <!--
 The overall communication between Campaign processes are described in the following standalone deployment diagram: all Campaign components are installed in the same machine.
@@ -97,6 +97,6 @@ The overall communication between Campaign processes are described in the follow
 ![](assets/do-not-localize//ac-standalone.png)
 -->
 
-L&#39;utilisateur se connecte au serveur applicatif Campaign à l&#39;aide du protocole HTTP. Toutes les données et informations sont gérées dans la base de données Campaign. Si un développeur Campaign effectue des modifications de configuration, celles-ci sont capturées dans la base de données. Si un spécialiste marketing crée une nouvelle campagne, toutes les informations et données relatives à cette nouvelle campagne sont également gérées dans la base de données. Lorsqu&#39;un spécialiste marketing exécute une campagne, les diffusions par e-mail sont envoyées aux profils à partir du serveur Campaign via le serveur SMTP. Lorsque les profils interagissent avec des diffusions par e-mail, telles que l&#39;ouverture de l&#39;e-mail, ces données de tracking sont renvoyées au serveur de tracking.
+L’utilisateur se connecte au serveur applicatif Campaign à l’aide du protocole HTTP. Toutes les données et informations sont gérées dans la base de données Campaign. Si un développeur Campaign effectue des modifications de configuration, celles-ci sont capturées dans la base de données. Si un spécialiste marketing crée une nouvelle campagne, toutes les informations et données relatives à cette nouvelle campagne sont également gérées dans la base de données. Lorsqu&#39;un spécialiste marketing exécute une campagne, les diffusions par e-mail sont envoyées aux profils à partir du serveur Campaign via le serveur SMTP. Lorsque les profils interagissent avec des diffusions par e-mail, telles que l&#39;ouverture de l&#39;e-mail, ces données de tracking sont renvoyées au serveur de tracking.
 
 [En savoir plus sur les processus Campaign](../architecture/general-architecture.md#dev-env).

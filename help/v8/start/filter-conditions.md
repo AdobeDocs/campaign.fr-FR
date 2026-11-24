@@ -24,10 +24,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '3510'
-ht-degree: 99%
+source-wordcount: '3509'
+ht-degree: 98%
 ---
 # Définition des conditions de filtre{#filter-conditions}
 
@@ -78,7 +78,7 @@ Voici une liste descriptive des opérateurs disponibles :
   <tr> 
    <td> <span class="uicontrol">Différent de</span> <br /> </td> 
    <td> Le résultat retourné ne doit pas être identique à la valeur renseignée.<br /> </td> 
-   <td> <strong>Langue (@language) différent de 'Anglais'</strong>.<br /> </td> 
+   <td> <strong>Langue (@language) différente de 'Anglais'</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Commence par</span> <br /> </td> 
@@ -185,7 +185,7 @@ La condition **[!UICONTROL Genre (@gender) égal à Masculin]** a été extraite
 
 Les champs disponibles varient d&#39;une table à l&#39;autre. Tous les champs sont stockés dans un nœud principal, nommé **[!UICONTROL Elément principal]**. Les champs de l&#39;exemple ci-dessous sont ceux de la table des destinataires (nms:recipient). Les champs sont toujours affichés par ordre alphabétique.
 
-Les détails du champ sélectionné sont visibles au bas de la fenêtre. Par exemple, le champ **[!UICONTROL Domaine d’e-mail]** est un **[!UICONTROL Champ calculé SQL]**. Son extension est **[!UICONTROL (@domain)]**.
+Le détail du champ sélectionné est visible au bas de la fenêtre. Par exemple, le champ **[!UICONTROL Domaine d’e-mail]** est un **[!UICONTROL Champ calculé SQL]**. Son extension est **[!UICONTROL (@domain)]**.
 
 ![](assets/query_editor_nveau_59.png)
 
@@ -323,7 +323,7 @@ Pour retirer le champ, cliquez sur la croix rouge **[!UICONTROL Enlever le champ
 
 ## Créer des expressions {#building-expressions}
 
-L&#39;outil d&#39;édition d&#39;une expression sert à calculer des agrégats, générer une fonction ou éditer une formule à partir d&#39;une expression.
+L&#39;outil d&#39;édition d&#39;expressions permet de calculer des agrégats, de générer des fonctions ou de modifier une formule à l&#39;aide d&#39;une expression.
 
 L&#39;exemple ci-dessous présente comment faire un comptage sur une clé primaire.
 
@@ -758,7 +758,7 @@ Cela vous permet de sélectionner des champs dans les tables de la base de donn�
   <tr> 
    <td> <strong>TruncTime</strong><br /> </td> 
    <td> Arrondit la partie heure à la seconde.<br /> </td> 
-   <td> TruncTim(e&lt;date&gt;, &lt;nombre de secondes&gt;)<br /> </td>  
+   <td> TruncTime(&lt;date&gt;, &lt;number of seconds&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>TruncWeek</strong><br /> </td> 
@@ -781,7 +781,7 @@ Cela vous permet de sélectionner des champs dans les tables de la base de donn�
    <td> Year(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>YearAnd Month</strong><br /> </td> 
+   <td> <strong>YearAndMonth</strong><br /> </td> 
    <td> Renvoie le nombre représentant l’année et le mois de la date.<br /> </td> 
    <td> YearAndMonth(&lt;date&gt;)<br /> </td>  
   </tr> 

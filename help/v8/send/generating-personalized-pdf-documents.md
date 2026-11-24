@@ -23,10 +23,10 @@ topic_v2:
     internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 97%
+source-wordcount: '539'
+ht-degree: 95%
 ---
 # Génération de documents PDF personnalisés{#generating-personalized-pdf-documents}
 
@@ -38,7 +38,7 @@ Les extensions supportées sont : &quot;.docx&quot;, &quot;.doc&quot;, et &quot
 
 Pour personnaliser vos documents, vous disposez des mêmes fonctionnalités JavaScript que celles disponibles pour la personnalisation des e-mails.
 
-Vous devez activer l’option **[!UICONTROL « Le contenu du fichier est personnalisé et converti en PDF au moment de la diffusion pour chaque message »]**. Cette option est accessible lors de l’ajout du fichier en pièce jointe à l’e-mail de la diffusion. Pour en savoir plus sur l’ajout d’un fichier calculé en pièce jointe, consultez la [documentation de Campaign v8](attaching-files.md).
+Vous devez activer l’option **[!UICONTROL « Le contenu du fichier est personnalisé et converti en PDF au moment de la diffusion pour chaque message »]**. Cette option est accessible lors de l’ajout du fichier en pièce jointe à l’e-mail de la diffusion. Pour plus d’informations sur l’ajout d’un fichier calculé en pièce jointe, consultez la [documentation de Campaign v8](attaching-files.md).
 
 Si vous souhaitez générer des tableaux dynamiques ou inclure des images à partir d&#39;URL, vous devez suivre une procédure particulière.
 

@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 96%
+source-wordcount: '888'
+ht-degree: 94%
 ---
 # Créer une audience dans une liste {#create-segments}
 
@@ -138,7 +138,7 @@ Dans l&#39;exemple ci-dessous, vous créez une liste de tous les destinataires c
 1. Cliquez sur **[!UICONTROL OK]** et enregistrez le workflow.
 1. Démarrez le workflow.
 
-   La liste de destinataires correspondante est alors créée. Vous pouvez accéder à cette liste à partir de l&#39;entrée **[!UICONTROL Listes]** de la page d&#39;accueil.
+   La liste de destinataires correspondante est alors créée. Vous pouvez accéder à cette liste à partir de l’entrée **[!UICONTROL Listes]** de la page d’accueil.
 
    ![](assets/access-new-list.png)
 

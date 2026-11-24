@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 96%
+source-wordcount: '790'
+ht-degree: 94%
 ---
 # Créer un cube{#create-a-cube}
 
@@ -77,7 +77,7 @@ Les cubes vous permettent d’effectuer les opérations suivantes :
 
 ## Créer un cube{#cube-create}
 
-Avant de commencer la création d’un rapport basé sur un cube, identifiez les dimensions et mesures pertinentes, puis créez-les dans le cube.
+Avant de créer un rapport basé sur un cube, identifiez les dimensions et mesures pertinentes, puis créez-les dans le cube.
 
 Pour créer un cube, procédez comme suit :
 

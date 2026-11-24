@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1207'
-ht-degree: 63%
+ht-degree: 62%
 ---
 # Surveiller vos diffusions dans l’interface utilisateur de Campaign {#delivery-dashboard}
 
@@ -64,7 +64,7 @@ Le **tableau de bord de la diffusion** est la clé pour su les diffusions et les
 
 Il vous permet de récupérer des informations sur une diffusion et de les modifier si nécessaire. Veuillez noter que le contenu de ces onglets n&#39;est plus modifiable lorsque la diffusion a été envoyée.
 
-Vous trouverez ci-dessous les informations à surveiller à l&#39;aide des différents onglets disponibles dans le tableau de bord :
+Voici les informations que vous pouvez surveiller à l’aide des différents onglets disponibles dans le tableau de bord :
 
 * [Synthèse des diffusions](#delivery-summary)
 * [Rapports sur les diffusions](#delivery-reports)
@@ -96,7 +96,7 @@ Le contenu de cet onglet peut être configuré en fonction de vos besoins. Pour 
 
 ## Logs, historique et exclusions de diffusion {#delivery-logs-and-history}
 
-L&#39;onglet **[!UICONTROL Diffusion]** propose un historique des occurrences dans cette diffusion. Il contient les logs de diffusion, c&#39;est-à-dire la liste des messages envoyés et leur statut et les messages associés.
+L&#39;onglet **[!UICONTROL Diffusion]** donne un historique des occurrences dans cette diffusion. Il contient les logs de diffusion, c&#39;est-à-dire la liste des messages envoyés et leur statut et les messages associés.
 
 Pour une diffusion, vous pouvez afficher par exemple seulement les destinataires pour lesquels l&#39;envoi a échoué ou ceux dont l&#39;adresse est en quarantaine. Pour cela, cliquez sur le bouton **[!UICONTROL Filtres]** et choisissez **[!UICONTROL Par Statut]**. Sélectionnez ensuite le statut dans la liste déroulante affichée au-dessus de la liste. Différents statuts sont répertoriés dans la page [statuts de diffusion](delivery-statuses.md).
 
@@ -108,7 +108,7 @@ Pour une diffusion, vous pouvez afficher par exemple seulement les destinataires
 
 Le lien **[!UICONTROL Afficher la page miroir de ce message...]** vous permet d&#39;afficher la page miroir du contenu de la diffusion sélectionnée dans la liste dans une nouvelle fenêtre.
 
-La page miroir est disponible uniquement pour les diffusions pour lesquelles un contenu HTML a été défini. Pour plus d&#39;informations, consultez la section [&#x200B; Lien vers la page miroir &#x200B;](mirror-page.md).
+La page miroir est disponible uniquement pour les diffusions pour lesquelles un contenu HTML a été défini. Pour plus d&#39;informations, consultez la section [Lien vers la page miroir](mirror-page.md).
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -171,7 +171,7 @@ Si votre diffusion semble prendre plus de temps que d&#39;habitude après avoir 
 
 ### Problèmes de réputation des adresses IP
 
-Certains fournisseurs de messagerie ont peut-être ajouté vos adresses IP à une liste bloquée. Vérifiez vos logs de diffusion (broadlogs) dans l’onglet **[!UICONTROL Diffusion]** pour détecter les messages rebonds indiquant des problèmes de réputation. Consultez la section [supervision de la délivrabilité](monitoring-deliverability.md) pour obtenir des conseils sur la gestion de la réputation.
+Certains fournisseurs de messagerie ont peut-être ajouté vos adresses IP à une liste bloquée. Vérifiez vos logs de diffusion (broadlogs) dans l’onglet **[!UICONTROL Diffusion]** pour détecter les messages bounce indiquant des problèmes de réputation. Consultez la section [surveillance de la délivrabilité](monitoring-deliverability.md) pour obtenir des conseils sur la gestion de la réputation.
 
 ### Taille et complexité de la diffusion
 
@@ -181,7 +181,7 @@ Une personnalisation JavaScript lourde qui nécessite un traitement des données
 
 Diffusion pesant plus de 60 kilo-octets en raison d’un contenu HTML volumineux, d’images incorporées ou d’une personnalisation poussée.
 
-Pour en savoir plus sur les directives relatives au contenu et les bonnes pratiques de personnalisation, voir [Bonnes pratiques de diffusion](../start/delivery-best-practices.md). La taille maximale recommandée est d’environ 35 Ko pour des performances optimales.
+Consultez [Bonnes pratiques de diffusion](../start/delivery-best-practices.md) pour en savoir plus sur les directives relatives au contenu et les bonnes pratiques de personnalisation. La taille maximale recommandée est d’environ 35 Ko pour des performances optimales.
 
 ### Performances du système
 

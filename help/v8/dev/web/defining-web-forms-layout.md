@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '530'
-ht-degree: 100%
+ht-degree: 96%
 ---
 # Définir la disposition des formulaires web{#defining-web-forms-layout}
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 ## Créer des conteneurs {#creating-containers}
 
-Les conteneurs permettent de regrouper les champs d&#39;une page et d&#39;en paramétrer la mise en page. Ils permettent d&#39;organiser les éléments dans la page.
+Les conteneurs vous permettent de combiner les champs d’une page, de configurer leur disposition et d’organiser les éléments dans la page.
 
 Pour chaque page du formulaire, les conteneurs sont créés à partir du bouton **[!UICONTROL Conteneurs]** de la barre d&#39;outils.
 

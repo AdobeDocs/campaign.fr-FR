@@ -34,14 +34,14 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 78%
 ---
 # Mécanisme d&#39;évaluation de l&#39;API Campaign
 
-Dans le contexte d’un [Déploiement Enterprise (FFDA)](enterprise-deployment.md), il n’est pas recommandé de dynamiser les appels unitaires en ce qui concerne les performances (latence et simultanéité). À moins que vous n’envoyiez un volume extrêmement faible, l’opération par lots **doit** être utilisée. Afin d’améliorer les performances, les API d&#39;ingestion sont redirigées vers la base de données locale.
+Dans le contexte d’un [Déploiement Enterprise (FFDA)](enterprise-deployment.md), il n’est pas recommandé de dynamiser les appels unitaires en ce qui concerne les performances (latence et simultanéité). Sauf si vous envoyez un volume extrêmement faible, les opérations par lots **doivent être utilisées**. Afin d’améliorer les performances, les API d&#39;ingestion sont redirigées vers la base de données locale.
 
 La fonctionnalité d’évaluation de Campaign est activée par défaut sur certains schémas natifs. Nous pouvons également l&#39;activer sur un schéma personnalisé. Description du mécanisme d&#39;évaluation :
 
@@ -51,7 +51,7 @@ La fonctionnalité d’évaluation de Campaign est activée par défaut sur cert
 
 Certains schémas natifs sont évalués par défaut, tels que nmsSubscriptionRcp, nmsAppSubscriptionRcp, nmsRecipient.
 
-Les API de Campaign Classic v7 sont toujours disponibles, mais ne peuvent pas bénéficier de ce nouveau mécanisme d&#39;évaluation : les appels d&#39;API sont acheminés directement vers la base de données cloud. Adobe recommande d&#39;utiliser le nouveau mécanisme d&#39;évaluation autant que possible afin de réduire la pression globale et la latence sur la base de données cloud de Campaign.
+Les API de Campaign Classic v7 sont toujours disponibles, mais ne peuvent pas bénéficier de ce nouveau mécanisme d&#39;évaluation : les appels d&#39;API sont acheminés directement vers la base de données cloud. Adobe recommande d’utiliser le nouveau mécanisme d’évaluation autant que possible afin de réduire la pression globale et la latence sur la base de données cloud de Campaign.
 
 >[!CAUTION]
 >

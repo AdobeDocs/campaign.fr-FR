@@ -25,10 +25,10 @@ subfeature_v2:
     internal-label: Landing pages
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
     internal-label: Email design
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 100%
+source-wordcount: '541'
+ht-degree: 95%
 ---
 # Interface de l&#39;éditeur de contenu{#content-editor-interface}
 
@@ -40,7 +40,7 @@ La fenêtre d’édition du DCE est divisée en trois sections différentes. El
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. La section **supérieure** est une zone d’affichage des messages destinés à l’utilisateur ou à l’utilisatrice. Ces messages indiquent le statut de l’application web ou de la diffusion en cours de création, ainsi que les avertissements et messages d’erreurs liés au contenu. Pour plus d&#39;informations, consultez la section [États du contenu HTML](content-editing-best-practices.md#html-content-statuses).
+1. La section **supérieure** est une zone d’affichage des messages destinés à l’utilisateur ou à l’utilisatrice. Ces messages indiquent l&#39;état de l&#39;application Web ou de la diffusion en cours de création, ainsi que les avertissements et les messages d&#39;erreur relatifs au contenu. Pour plus d&#39;informations, consultez la section [États du contenu HTML](content-editing-best-practices.md#html-content-statuses).
 1. La section **de gauche** de la fenêtre est la zone de modification du contenu. Dans cette zone, l’utilisateur ou l’utilisatrice peut interagir directement avec le contenu grâce à la barre d’outils pop-up : insérer un lien sur une image, modifier la police, supprimer un champ, etc. Pour en savoir plus à ce sujet, consultez la section [Modification des formulaires](editing-content.md#editing-forms).
 1. La section **de droite** de la fenêtre est la zone du panneau de contrôle. Cette zone regroupe les différentes options de l’éditeur, notamment celles liées à la configuration de l’en-tête de la page et aux options générales associées à un bloc : ajouter une bordure, lier un champ de la base de données à une zone de saisie, accéder aux propriétés de la page web, etc. Pour en savoir plus à ce sujet, consultez les sections [Options globales](#global-options) et [Modification du contenu](editing-content.md).
 

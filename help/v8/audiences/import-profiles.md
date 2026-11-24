@@ -32,10 +32,10 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: f1f84f565326bd683b47e6e498add3100ea81c4c
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 90%
+ht-degree: 82%
 ---
 # Importer des profils depuis un fichier{#create-profiles}
 
@@ -43,7 +43,7 @@ Pour renseigner votre base de données Campaign, vous pouvez : [ajouter manuell
 
 ## Importer des profils avec un workflow {#import-profiles-with-a-wf}
 
-Les workflows peuvent être utiles pour automatiser certains de vos imports. Que vous importiez des données à partir d’un fichier local ou d’un serveur SFTP, vous pouvez utiliser des workflows pour standardiser vos procédures de gestion des données.
+Les workflows peuvent être utiles pour automatiser certains de vos imports. Que vous importiez des données à partir d’un fichier local ou d’un serveur SFTP, vous pouvez utiliser des workflows pour normaliser vos procédures de gestion des données.
 
 ### Utiliser les données d&#39;une liste : lecture de liste {#data-from-read-list}
 
@@ -63,4 +63,4 @@ Les imports génériques sont gérés à partir du menu **[!UICONTROL Profils et
 
 ![](assets/new-import-job.png)
 
-Les étapes d&#39;un import générique sont détaillées dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=fr){target="_blank"}.
+Les étapes de réalisation d&#39;un import générique sont détaillées dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=fr){target="_blank"}.

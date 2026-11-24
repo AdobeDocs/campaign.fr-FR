@@ -30,12 +30,12 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '4464'
-ht-degree: 97%
+ht-degree: 89%
 ---
-# Valider une connexion SMPP {#validate-smpp-connection}
+# Validation d’une connexion SMPP {#validate-smpp-connection}
 
 Voici quelques vérifications pour vous assurer que votre connexion SMPP est correcte.
 
@@ -49,13 +49,13 @@ Avant de passer en production, assurez-vous que votre configuration SMPP est cor
 
 >[!NOTE]
 >
->Activez les traces SMPP en mode verbeux lors des vérifications. Cela vous aidera, ainsi que l’équipe de support, à comprendre les problèmes.
+>Activez les traces SMPP de verbose lors des vérifications, cela vous aidera, ainsi que l&#39;équipe d&#39;assistance, à comprendre le dépannage.
 
 ### Rechercher les conflits de compte externe {#sms-external-accounts-check}
 
 Vérifiez que vous n’avez pas de vieux comptes externes SMS. Supprimez les comptes de test afin d’éliminer les conflits potentiels.
 
-Vérifiez qu’aucune autre instance ne se connecte à ce compte externe. En particulier, assurez-vous que l’environnement d’évaluation ne se connecte pas au compte externe de production.
+Vérifiez qu’aucune autre instance ne se connecte au compte externe. En particulier, assurez-vous que l’environnement d’évaluation ne se connecte pas au compte externe de production.
 
 Si vous devez connecter plusieurs comptes de la même instance Adobe Campaign au même fournisseur, contactez ce dernier pour vérifier qu’il distingue effectivement les connexions entre ces comptes. La présence de plusieurs comptes avec le même nom d&#39;utilisateur nécessite une configuration supplémentaire.
 
@@ -67,7 +67,7 @@ Essayez d’envoyer quelques SMS sur différents mobiles.
 
 **Envoyer un SMS avec toutes sortes de caractères**
 
-Si vous devez envoyer des SMS avec des caractères non GSM ou non ASCII, essayez d’envoyer des messages avec les caractères les plus variés possible. Si vous définissez un tableau de mapping de caractères personnalisé, envoyez au moins un SMS pour toutes les valeurs data_coding possibles.
+Si vous devez envoyer des SMS avec des caractères non-GSM ou non-ASCII, essayez d’envoyer des messages avec les caractères les plus divers possibles. Si vous définissez un tableau de mapping de caractères personnalisé, envoyez au moins un SMS pour toutes les valeurs data_coding possibles.
 
 **Vérifier que les SR sont correctement traités**.
 
@@ -96,7 +96,7 @@ Le nombre minimum de messages à envoyer peut être calculé comme suit :
 Une fois la diffusion terminée, vérifiez les éléments suivants :
 
 * Vérifiez que tous les messages ont été envoyés (pas nécessairement reçus).
-* Il doit y avoir un PDU absolument nul avec command_status non 0x00000000, sauf si cela est explicitement indiqué par le fournisseur comme une opération normale.
+* Il doit y avoir absolument zéro PDU avec command_status non 0x00000000, à moins que cela ne soit explicitement déclaré par le fournisseur comme un fonctionnement normal
 * Les connexions doivent rester absolument stables (pas de PDU BIND) pendant l’ensemble du processus de diffusion.
 * Vérifiez que tous les messages ont un SR et qu’il a été correctement traité (voir [Vérifier que les SR sont correctement traités](#real-test)). Si un petit pourcentage contient des erreurs, vérifiez qu’il s’agit d’erreurs SR réelles, et non d’erreurs lors de l’envoi ou du traitement du côté Campaign.
 * Si vous vous posez des questions sur les performances, vérifiez que la latence est raisonnable, en particulier entre un PDU et son RESP correspondant. Avoir plus de 500 ms de latence peut être un problème pour un débit élevé. Utilisez cette latence pour vérifier la formule de la fenêtre d’émission (voir le paramètre Fenêtre d’émission pour plus de détails).
@@ -183,7 +183,7 @@ Pour isoler le compte externe qui pose problème, procédez comme suit :
 1. Désactivez tous les comptes externes.
 1. Activez un compte externe.
 1. Essayez de reproduire le problème.
-1. Si le problème n’apparaît pas avec ce compte unique, désactivez-le et redémarrez à l’étape 2 sur le compte suivant. Une fois que vous avez vérifié chaque compte individuellement, il existe 2 scénarios possibles :
+1. Si le problème napparaît pas avec ce compte unique, désactivez-le et redémarrez létape 2 sur le compte suivant. Une fois que vous avez vérifié chaque compte individuellement, il existe 2 scénarios possibles :
 
 **Le problème est apparu sur un ou plusieurs comptes.**
 
@@ -193,10 +193,10 @@ Dans ce cas, vous pouvez appliquer d&#39;autres procédures de résolution des p
 
 Vous avez un conflit entre les comptes. Comme nous l’avons déjà mentionné, Adobe Campaign traite les comptes individuellement, mais le fournisseur peut les traiter comme un compte unique.
 
-*Vous utilisez différentes combinaisons de nom d’utilisateur/mot de passe entre tous vos comptes*
+*Vous utilisez différentes combinaisons de nom d&#39;utilisateur/mot de passe entre tous vos comptes*
 Vous devrez contacter le fournisseur pour diagnostiquer les conflits potentiels de son côté.
 
-*Certains comptes externes partagent la même combinaison nom d’utilisateur/mot de passe*
+*Certains comptes externes partagent la même combinaison nom d&#39;utilisateur/mot de passe*
 Le fournisseur n’ayant aucun moyen de savoir de quel compte externe provient le PDU BIND, il traite toutes les connexions des différents comptes comme un seul et même compte. Il achemine donc probablement MO et SR de manière aléatoire sur les 2 comptes, provoquant des problèmes apparemment aléatoires.
 
 Si le fournisseur prend en charge plusieurs codes courts pour la même combinaison nom d’utilisateur ou d’utilisatrice/mot de passe, vous devrez lui demander où placer ce numéro court dans le PDU BIND. Notez que cette information doit être placée dans le PDU BIND et non dans SUBMIT_SM, puisque le PDU BIND est le seul endroit qui permettra d’utiliser correctement les MO de routage.
@@ -209,7 +209,7 @@ Adobe Campaign prend en charge la gestion de plusieurs numéros courts sur le m
 
 En général, les connexions SMPP ont tendance à être très stables au fil du temps, et une fois configurées correctement, elles doivent continuer à fonctionner.
 
-* Vérifiez si le connecteur a été changé récemment et par qui (vérifiez les comptes externes en tant que groupe).
+* Vérifiez si le connecteur a été modifié récemment - et par qui (vérifiez les comptes externes en tant que groupe).
 * Vérifiez si le système a été mis à niveau et quand.
 * Déterminez si des packages affectant les SMS ont pu être mis à niveau récemment.
 
@@ -220,7 +220,7 @@ Il est recommandé de rester en contact avec le fournisseur, qui communique souv
 #### Problème lié au mid-sourcing (hébergé)  {#sms-issue-hosted}
 
 * Si le problème se produit dans un environnement de midsourcing, vérifiez que les logs de diffusion et les broadlogs sont correctement créés et mis à jour sur le serveur de midsourcing. Si ce n’est pas le cas, il ne s’agit pas d’un problème de SMS.
-* Assurez-vous que le nom de l’opérateur de midsourcing est strictement en minuscules, sinon la diffusion restera en état d’attente.
+* Assurez-vous que le nom de l’opérateur mid est strictement en minuscules. Sinon, la diffusion restera dans l’état En attente .
 * Si tout fonctionne sur le server de midsourcing et que les SMS sont correctement envoyés, mais que l’instance marketing n’est pas correctement mise à jour, il est possible qu’un problème de synchronisation de midsourcing se produise.
 
 #### Problème lors de la connexion au fournisseur {#sms-issue-connection}
@@ -246,7 +246,7 @@ Une connexion est considérée comme instable si l’une des situations suivante
 
 **Comment résoudre les problèmes de stabilité de connexion :**
 
-* Les connexions instables sont rarement la cause première, il s’agit souvent du résultat d’un autre problème qui déclenche une déconnexion. Il est prioritaire d&#39;identifier la cause première.
+* Les connexions instables en sont rarement la cause première. C&#39;est souvent le résultat d&#39;un autre problème qui déclenche une déconnexion d&#39;une manière ou d&#39;une autre. Il est prioritaire d&#39;identifier la cause première.
 * Activez les traces SMPP de verbose. Vous aurez besoin d’elles pour voir ce qui se passe au redémarrage de la connexion.
 * Si le fournisseur envoie des PDU UNBIND, il fait probablement quelque chose d’une manière qui n’est pas correcte. Demandez-lui pourquoi il envoie UNBIND et cela mènera probablement à la cause racine.
 * La capture du réseau est parfois la seule façon de voir comment la connexion est fermée.
@@ -256,9 +256,9 @@ Une connexion est considérée comme instable si l’une des situations suivante
 
 #### Problème lors de l&#39;envoi d&#39;un MT (SMS régulier envoyé à un utilisateur final)
 
-* Vérifiez que la connexion est stable : une connexion SMPP doit rester active pendant au moins 1 heure en continu. Pour plus d’informations, consultez la section « Problème de connexions instables » ci-dessus.
+* Vérifiez que la connexion est stable : une connexion SMPP doit rester active pendant au moins 1 heure en continu. Pour plus d’informations, consultez la section « Problème de connexions instables » ci-dessus.
 * Si le redémarrage du processus SMS permet à nouveau d’envoyer des MT pendant une petite période de temps, vous avez probablement un ralentissement dû à une connexion instable. Pour plus d’informations, consultez la section « Problème de connexions instables » ci-dessus.
-* Vérifiez que le broadlog est présent et que son statut est correct avec les dates correctes. Si ce n’est pas le cas, il ne s’agit pas d’un problème de SMS, mais d’un problème de diffusion ou de préparation de diffusion (qui ne fait pas partie du cadre de ce document).
+* Vérifiez que le broadlog est présent et que son statut est correct avec les dates correctes. Si ce n’est pas le cas, il ne s’agit pas d’un problème de SMS, mais d’un problème de diffusion ou de préparation de la diffusion (cela n’entre pas dans le cadre de ce document).
 * Vérifiez que le connecteur SMS est effectivement lié à l&#39;équipement du fournisseur. Demandez au fournisseur de faire part de ses commentaires pour assurer que tous les systèmes communiquent correctement. Pour plus d’informations sur le processus de liaison, consultez les PDU BIND_TRANSMITTER et BIND_TRANSCEIVER. Vous devrez peut-être activer les traces SMPP pour résoudre correctement les problèmes.
 * Lorsque les traces SMPP sont activées, vérifiez que le PDU SUBMIT_SM contient les informations appropriées (voir la documentation ci-dessus).
 * Vérifiez que le fournisseur répond par un PDU SUBMIT_SM_RESP avec une valeur « OK » (code 0). Assurez-vous que le PDU arrive avec un délai raisonnable : tout ce qui dure plus d’une seconde doit faire l’objet d’une discussion avec le fournisseur (il arrive habituellement en moins de 100 ms).
@@ -281,12 +281,12 @@ Réduire le nombre de doublons en cas de reprise :
 
 * Vous aurez besoin de traces SMPP activées pour tous les types de résolution des problèmes SR.
 * Vérifiez que le PDU DELIVER_SM vient du fournisseur et qu’il est correctement formé.
-* Vérifiez qu’Adobe Campaign répond avec un PDU DELIVER_SM_RESP réussi dans les délais impartis. Cela garantit que le SR a été inséré dans le tableau providerMsgStatus pour le traitement différé par le processus SMS.
+* Vérifiez qu’Adobe Campaign répond avec un PDU DELIVER_SM_RESP réussi dans les délais impartis. Cela garantit que le SR a été inséré dans la table providerMsgStatus pour le traitement différé par le processus SMS.
 
 Si le PDU DELIVER_SM n’est pas reconnu, vous devez vérifier quelques éléments :
 
 * Vérifiez l’expression regex associée à l’extraction des identifiants et au traitement des erreurs dans le compte externe. Vous devrez peut-être les valider par rapport au contenu du PDU DELIVER_SM.
-* Vérifiez que les erreurs sont correctement configurées dans le tableau broadLogMsg (la documentation de Campaign l’explique en détail).
+* Vérifiez que les erreurs sont correctement configurées dans la table broadLogMsg (ce point est expliqué en détail dans la documentation de Campaign).
 
 Si le PDU DELIVER_SM a été reconnu par le connecteur SMPP étendu ACC mais que le broadLog n’est pas mis à jour correctement, vérifiez le processus de réconciliation des identifiants décrit dans la section Correspondance des entrées MT, SR et Broadlog ci-dessus.
 
@@ -294,7 +294,7 @@ Si vous avez tout corrigé, mais que des SR non valides figurent toujours dans l
 
 Si le traitement du SR est lent, essayez de qualifier les messages de statut les plus courants dans la table BroadLogMsg.
 
-Si seulement certains SR sont reçus, mais pas tous, vérifiez qu’aucun autre système ne se connecte au compte de votre fournisseur, par exemple un système de test. Le SR peut être routé sur n’importe quelle connexion, certains d’entre eux peuvent donc être acheminés vers cet autre système. Le fournisseur peut vous aider à trouver où se trouve cet autre système se connectant au compte.
+Si seuls certains SR sont reçus, mais pas tous, vérifiez qu&#39;aucun autre système ne se connecte au compte de votre fournisseur, tel qu&#39;un système de test. Le SR peut être routé sur n’importe quelle connexion, certains d’entre eux peuvent donc être acheminés vers cet autre système. Le fournisseur peut vous aider à trouver où se trouve cet autre système se connectant au compte.
 
 #### Problème lors du traitement de MO (et quarantaine/réponse automatique)
 
@@ -326,7 +326,7 @@ La source de problèmes la plus courante est le copier-coller d’un traitement 
 
 Ne copiez pas et ne collez pas votre message lors du test, saisissez-le toujours directement dans l&#39;interface.
 
-**Ne vous laissez pas intimider par l’hexadécimal**. L’hexadécimal semble étrange et peu naturel, mais il a une qualité très distincte : vous pouvez distinguer les caractères similaires. Un L minuscule, un I majuscule, un O, un 0, les différents types de guillemets, les encodages non latins ou même les différents types d’espaces peuvent tous avoir le même aspect ou ne pas s’afficher du tout. L’hexadécimal montre tout et aide à comparer les choses.
+**Ne vous laissez pas intimider par l’hexadécimal**. L’hexadécimal semble étrange et peu naturel, mais il a une qualité très distincte : vous pouvez distinguer les caractères similaires. Un L minuscule, un I majuscule, O, 0, tous les différents types de guillemets, les encodages non latins ou même différents types d&#39;espaces peuvent tous se ressembler (voire ne pas être affichés du tout). L’hexadécimal montre tout et aide à comparer les choses.
 
 Pour convertir les codes unicode en hexadécimal, vous pouvez utiliser des outils en ligne.
 
@@ -365,7 +365,7 @@ Si le fournisseur se plaint d’une surcharge de la mémoire tampon de son côt�
 
 ### Éléments à inclure lors de la communication sur un problème SMS
 
-Chaque fois que vous cherchez de l’aide sur une question de SMS, que ce soit en ouvrant un ticket d’assistance à Adobe Campaign, au fournisseur de SMS, ou tout autre type de communication sur la question, vous devrez inclure les informations suivantes pour vous assurer qu’elle sera correctement qualifiée. Des questions correctement qualifiées sont essentielles pour résoudre les problèmes plus rapidement, aussi prendre un peu plus de temps pour essayer de comprendre la situation et donner des informations significatives sera un bond en avant en termes d’efficacité.
+Chaque fois que vous cherchez de l&#39;aide sur un problème de SMS (qu&#39;il s&#39;agisse de l&#39;ouverture d&#39;un ticket d&#39;assistance à Adobe Campaign, au fournisseur de SMS, ou tout autre type de communication sur le problème), vous devrez inclure au moins les informations suivantes pour vous assurer qu&#39;il sera correctement qualifié. Des questions correctement qualifiées sont essentielles pour résoudre les problèmes plus rapidement, aussi prendre un peu plus de temps pour essayer de comprendre la situation et donner des informations significatives sera un bond en avant en termes d’efficacité.
 
 * Activez les messages SMPP en mode verbeux lorsque le problème apparaît. La plupart des problèmes de SMS sont impossibles à résoudre sans cela.
 * Si le problème est lié au trafic SMS, contactez d&#39;abord le fournisseur. Il est le mieux informé et sa plateforme est généralement adaptée pour un diagnostic efficace des problèmes de trafic SMS en temps réel.
@@ -376,7 +376,7 @@ Chaque fois que vous cherchez de l’aide sur une question de SMS, que ce soit e
 * Si vous incluez des logs, des traces ou des captures, indiquez l’emplacement exact dans le fichier lorsque le problème apparaît, ainsi que l’emplacement exact d’un exemple probant, le cas échéant. Les captures ou les traces peuvent être volumineuses et fastidieuses à regarder, donc tout ce qui aide à localiser les informations nécessaires est utile.
 * Si vous référencez des messages, des PDU ou des logs, indiquez clairement leur horodatage afin qu’ils soient faciles à trouver par d’autres personnes.
 * Essayez de reproduire le problème sur un environnement de test. Si vous n&#39;êtes pas sûr d&#39;un paramètre, essayez-le sur l&#39;environnement de test et vérifiez le résultat avec les traces SMPP. Il est généralement préférable de signaler les problèmes reproduits dans les environnements de test que de les signaler directement dans les environnements de production.
-* Incluez les modifications ou les ajustements apportés sur la plateforme : même un petit changement peut avoir des impacts énormes. Incluez également toute modification que le fournisseur peut avoir apportée de son côté.
+* Incluez tous les changements ou ajustements apportés à la plateforme : même un petit changement peut avoir d’énormes impacts. Incluez également toute modification que le fournisseur peut avoir apportée de son côté.
 
 #### Quand une capture réseau est-elle utile ?
 

@@ -25,10 +25,10 @@ subfeature_v2:
     internal-label: Landing pages
   - id: e739ee2b-6228-412e-878f-45de0791417d
     internal-label: Use cases
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 98%
+source-wordcount: '1023'
+ht-degree: 89%
 ---
 # Cas pratiques : formulaires web{#use-cases-web-forms}
 
@@ -63,7 +63,7 @@ Les messages de confirmation sont adressés via un modèle de diffusion dédié,
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Comme les destinataires de cette diffusion n&#39;ont pas confirmé leur approbation, ils sont toujours sur la liste bloquée de la base de données. Pour qu&#39;ils puissent recevoir cette communication, vous devez autoriser les diffusions basées sur ce modèle pour les destinataires cibles qui se trouvent sur la liste bloquée.
+1. Comme les destinataires de cette diffusion n&#39;ont pas confirmé leur approbation, ils sont toujours sur la liste bloquée de la base de données. Pour qu’ils puissent recevoir cette communication, vous devez autoriser les diffusions basées sur ce modèle à cibler les destinataires sur la place sur la liste bloquée.
 
    Pour cela, cliquez sur l&#39;onglet **[!UICONTROL Exclusions]**.
 
@@ -121,7 +121,7 @@ Pour ce faire, procédez comme suit :
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   La première activité **[!UICONTROL Script]** ajoutera des destinataires à la liste bloquée jusqu&#39;à ce qu&#39;ils confirment leur abonnement à la newsletter. Son contenu doit être le suivant :
+   La première activité **[!UICONTROL Script]** ajoutera des destinataires à la newsletter jusqu&#39;à ce qu&#39;ils aient confirmé leur inscription. Son contenu doit être le suivant :
 
    ```
    ctx.recipient.@blackList=1
@@ -129,7 +129,7 @@ Pour ce faire, procédez comme suit :
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
 
-   La seconde activité **[!UICONTROL Script]** autorise l’envoi des diffusions aux utilisateurs et utilisatrices, et les inscrit à la newsletter. Les deux dernières lignes du script vous permettront de transférer les personnes destinataires du dossier Temp vers un autre dossier et de les réconcilier avec les profils existants dès confirmation de l’abonnement.
+   La deuxième activité **[!UICONTROL Script]** autorise l&#39;envoi de diffusions aux utilisateurs et les abonne à la newsletter. Les deux dernières lignes du script vont vous permettre de transférer vos destinataires du dossier temporaire vers un autre dossier et d&#39;être réconciliés avec les profils existants dès qu&#39;ils auront confirmé l&#39;abonnement.
 
    ```
    ctx.recipient.@blackList=0

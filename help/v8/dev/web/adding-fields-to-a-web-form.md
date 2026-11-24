@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '2497'
-ht-degree: 99%
+ht-degree: 96%
 ---
 # Ajouter des champs à un formulaire web{#adding-fields-to-a-web-form}
 
@@ -88,11 +88,11 @@ Pour ajouter un champ de saisie, cliquez sur le bouton **[!UICONTROL Contrôle d
 
 Dans une page de formulaire, vous pouvez insérer cinq types de champs texte :
 
-* **Texte** : permet à l&#39;utilisateur de saisir du texte, sur une ligne.
+* **Texte** : permet à l&#39;utilisateur de saisir du texte sur une ligne.
 
   ![](assets/s_ncs_admin_survey_txt_ex.png)
 
-* **Nombre** : permet à l&#39;utilisateur de saisir un nombre sur une ligne. Voir à ce sujet la section [Ajouter des nombres](#adding-numbers).
+* **Nombre** : permet à l&#39;utilisateur de saisir un nombre sur une ligne. Pour plus d&#39;informations, consultez la section [Ajouter des numéros](#adding-numbers).
 
   Lors de la validation de la page, le contenu des champs est contrôlé afin de vérifier que la valeur saisie est compatible avec le champ. Voir à ce sujet la section [Définir les paramètres de contrôle](form-rendering.md#defining-control-settings).
 
@@ -233,7 +233,7 @@ Pour ajouter des boutons radio via une liste, sélectionnez le menu **[!UICONTRO
 
 ![](assets/s_ncs_admin_survey_radio_button_sample2.png)
 
-Ajoutez autant de cases d’option que de libellés. L’avantage est de pouvoir importer les valeurs d’un champ existant, s’il s’agit d’un champ énuméré, et de permettre le choix d’une des options proposées. En revanche, la disposition des boutons est moins souple.
+Ajoutez autant de cases d’option que de libellés. L&#39;avantage de cette fonctionnalité est que vous pouvez importer les valeurs d&#39;un champ existant (s&#39;il s&#39;agit d&#39;un champ énuméré) et permettre à l&#39;utilisateur de choisir une option. En revanche, la disposition des boutons est moins souple.
 
 >[!NOTE]
 >
@@ -350,7 +350,7 @@ Les **captcha** permettent de prévenir l&#39;utilisation frauduleuse de vos for
 >
 >Si votre formulaire est composé de plusieurs pages, le Captcha doit toujours être positionné dans la dernière page, immédiatement avant la boîte d&#39;enregistrement, afin de prévenir tout contournement de la sécurité.
 
-Pour insérer un Captcha dans un formulaire, cliquez sur le premier bouton de la barre d&#39;outils et choisissez **[!UICONTROL Contrôles avancés > Captcha]**.
+Pour insérer un Captcha dans un formulaire, cliquez sur le premier bouton de la barre d&#39;outils et sélectionnez **[!UICONTROL Contrôles avancés>Captcha]**.
 
 ![](assets/s_ncs_admin_survey_add_captcha.png)
 

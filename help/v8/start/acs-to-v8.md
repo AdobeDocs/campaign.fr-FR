@@ -25,20 +25,20 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 4cbf1340053ba2003ffade1c6d0c3af20a10717b
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 88%
+ht-degree: 62%
 ---
 # Migrer de [!DNL Campaign Standard] vers [!DNL Campaign] v8 {#acs-to-acv8}
 
-En migrant de Campaign Standard à Campaign v8, vous pouvez maintenant profiter de la toute nouvelle version de l’interface d’utilisation d’Adobe Campaign Web ainsi que de la puissante console v8. La transition est fluide et vous permettra d’utiliser toutes les fonctionnalités intuitives conçues pour simplifier la création de campagnes cross-canal personnalisées. L’interface d’utilisation d’Adobe Campaign Web offre une zone de travail connectée à Adobe Experience Platform pour une expérience unifiée. [En savoir plus](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
+En tant qu’utilisateur Campaign Standard passant à Campaign v8, vous pouvez désormais bénéficier de la nouvelle version de l’interface utilisateur web d’Adobe Campaign ainsi que de la puissante console v8. La transition est transparente et vous permet d’utiliser toutes les fonctionnalités intuitives conçues pour simplifier la création de campagnes cross-canal personnalisées. L’interface d’utilisation d’Adobe Campaign Web offre une zone de travail connectée à Adobe Experience Platform pour une expérience unifiée. [En savoir plus](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 
 En tant qu’utilisateur ou utilisatrice de Campaign v8, vous avez accès à la nouvelle interface d’Adobe Campaign Web et à la console cliente v8. Les données et les paramètres sont synchronisés d’un environnement à un autre. L’ensemble de vos données et paramètres déjà disponibles dans la console cliente sont visibles dans l’interface d’utilisation de Campaign Web, à partir du volet de navigation de gauche de l’explorateur.
 
 **Liens utiles pour commencer :**
 
-* Découvrez les principales différences et comment commencer à utiliser [ce guide d’adoption](https://experienceleague.adobe.com/fr/docs/campaign-web/acs-to-ac/home){target="_blank"}.
+* Découvrez les principales différences et comment commencer à utiliser [ce guide d&#39;adoption](https://experienceleague.adobe.com/fr/docs/campaign-web/acs-to-ac/home){target="_blank"}.
 
 * En savoir plus sur la nouvelle interface utilisateur web de Campaign dans [cette documentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=fr){target="_blank"}.
 

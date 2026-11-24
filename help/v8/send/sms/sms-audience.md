@@ -26,16 +26,16 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 97%
+source-wordcount: '534'
+ht-degree: 83%
 ---
 # Sélectionner l’audience de votre diffusion SMS {#sms-audience}
 
 Avant de sélectionner votre audience, [apprenez-en plus sur l’audience ici](../../audiences/gs-audiences.md).
 
-Dans la plupart des cas, la cible principale d&#39;une dffusion est extraite de la base de données Adobe Campaign (mode par défaut). Cependant, il est également possible de stocker l’audience dans un fichier externe. [En savoir plus dans cette section](#external-audience).
+Dans la plupart des cas, la cible principale d&#39;une diffusion est extraite de la base de données Adobe Campaign (mode par défaut). Cependant, il est également possible de stocker l’audience dans un fichier externe. [En savoir plus dans cette section](#external-audience).
 
 ## Audience dans Adobe Campaign
 
@@ -43,11 +43,11 @@ Pour sélectionner l’audience d’une diffusion, procédez comme suit :
 
 1. Dans l’éditeur de diffusion, cliquez sur le lien **[!UICONTROL À]**. Une fenêtre **[!UICONTROL Sélectionner la cible]** s’ouvre.
 
-1. L’audience étant stockée dans la base de données d’Adobe Campaign, dans l’onglet **[!UICONTROL Cible principale]**, sélectionnez l’option **[!UICONTROL Définie dans la base de données]**.
+1. L&#39;audience étant stockée dans la base de données Adobe Campaign, dans l&#39;onglet **[!UICONTROL Cible principale]**, choisissez l&#39;option **[!UICONTROL Définie dans la base de données]**.
 
    ![](assets/audience_to.png){zoomable="yes"}
 
-1. Sélectionnez le **[!UICONTROL Mapping de ciblage]** dans la liste déroulante. Le mapping de ciblage par défaut d&#39;Adobe Campaign est Destinataire , selon le schéma **[!UICONTROL nms:recipient]** .
+1. Sélectionnez le **[!UICONTROL Mapping de ciblage]** dans la liste déroulante. Le mapping de ciblage par défaut d&#39;Adobe Campaign est Destinataire , selon le schéma **[!UICONTROL nms:recipient]**.
 
    D’autres mappings de ciblage sont disponibles et certains d’entre eux peuvent être liés à votre configuration spécifique. Pour plus d’informations sur les mappings de ciblage, voir la section [Utiliser des mappings de ciblage](../../audiences/target-mappings.md).
 
@@ -80,7 +80,7 @@ Pour sélectionner l’audience d’une diffusion, procédez comme suit :
 
 ## Audience dans un fichier externe {#external-audience}
 
-Vous pouvez utiliser Adobe Campaign pour envoyer une diffusion sur une audience qui ne se trouve pas dans sa base de données mais dans un fichier externe.
+Vous pouvez utiliser Adobe Campaign pour envoyer une diffusion sur une audience qui ne se trouve pas dans sa base de données, mais dans un fichier externe.
 
 Pour cela, procédez comme suit :
 

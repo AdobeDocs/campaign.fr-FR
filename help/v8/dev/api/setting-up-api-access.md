@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 97%
+ht-degree: 89%
 ---
 # Configuration de l&#39;accès aux API {#setting-up-api-access}
 
@@ -49,7 +49,7 @@ Pour configurer l’accès aux API d’Adobe Campaign Standard, procédez comm
 
    >[!IMPORTANT]
    >
-   >JWT (JSON Web Tokens) est actuellement en voie de devenir obsolète et sera remplacé par OAuth. La transition se fera progressivement dans les prochaines versions de Campaign. Bien que les informations d’identification du compte de service (JWT) aient été marquées comme obsolètes, elles continueront de fonctionner jusqu’au 27 janvier 2025. Par conséquent, vous devez migrer votre application ou intégration pour utiliser les nouvelles informations d’identification OAuth serveur à serveur avant le 27 janvier 2025. L’authentification OAuth est préférable. Vous trouverez tous les éléments à migrer de l’authentification JWT vers l’authentification OAuth sur ces pages :
+   >JWT (JSON Web Tokens) est actuellement en cours d’obsolescence et est en cours de remplacement par OAuth. La transition se fera progressivement dans les prochaines versions de Campaign. Les informations d’identification du compte de service (JWT) ont été marquées comme obsolètes. Elles continueront à fonctionner jusqu’au 27 janvier 2025. Par conséquent, vous devez migrer votre application ou intégration pour utiliser les nouvelles informations d’identification OAuth serveur à serveur avant le 27 janvier 2025. L’authentification OAuth est préférable. Vous trouverez tous les éléments à migrer de l’authentification JWT vers l’authentification OAuth sur ces pages :
    >* [Migration](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
    >* [Mise en œuvre](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
    >* [Questions fréquentes sur l’obsolescence de JWT](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)

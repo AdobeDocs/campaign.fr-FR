@@ -26,10 +26,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 93%
+source-wordcount: '698'
+ht-degree: 90%
 ---
 # Traitement des événements {#event-processing}
 
@@ -99,16 +99,16 @@ Les statuts possibles sont les suivants :
 
 * **En attente**
 
-  * Un événement en attente peut être un événement qui vient d’être collecté et qui n’a pas encore été traité. La colonne **[!UICONTROL Nombre d’erreurs]** affiche la valeur 0. Le modèle d’e-mail n’a pas encore été lié.
+  * Un événement en attente peut être un événement qui vient d&#39;être collecté et qui n&#39;a pas encore été traité. La colonne **[!UICONTROL Nombre d’erreurs]** affiche la valeur 0. Le modèle d’e-mail n’a pas encore été lié.
   * Un événement en attente peut également être un événement traité, mais dont la confirmation est erronée. La colonne **[!UICONTROL Nombre d’erreurs]** affiche une valeur différente de 0. Pour savoir quand cet événement sera traité à nouveau, consultez la colonne **[!UICONTROL Traitement demandé le]**.
 
 * **En attente de diffusion**
 L’événement a été traité et le modèle de diffusion est lié. L’e-mail est en attente de diffusion et le processus de diffusion classique est appliqué. Pour plus d’informations, vous pouvez ouvrir la diffusion.
 * **Envoyé**, **Ignoré** et **Erreur de diffusion**
 Ces statuts de diffusion sont récupérés par le workflow **updateEventsStatus**. Pour plus d’informations, vous pouvez ouvrir la diffusion correspondante.
-* **Evénement non pris en charge**
+* **Événement non pris en charge**
 Échec de la phase de routage des messages transactionnels. Par exemple, Adobe Campaign n&#39;a pas trouvé l&#39;e-mail qui sert de modèle pour l&#39;événement.
-* **Evénement expiré**
+* **Événement expiré**
 Le nombre maximum de tentatives d&#39;envoi a été atteint. L’événement est considéré comme nul.
 
 ## Recycler les événements {#event-recycling}

@@ -18,10 +18,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '89'
-ht-degree: 95%
+ht-degree: 71%
 ---
 # Compter les résultats
 
@@ -31,7 +31,7 @@ L’API REST d’Adobe Campaign permet de comptabiliser le nombre d’enregistr
 
 ***Exemple de requête***
 
-Pour compter tous les services dont la valeur **messageType** est égale à « sms », exécutez une requête GET avec le filtre **byChannel**.
+Pour comptabiliser tous les services dont la valeur **messageType** est égale à « sms », effectuez une requête GET avec le filtre **byChannel**.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel?channel=sms \

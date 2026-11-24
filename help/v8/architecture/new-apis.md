@@ -24,10 +24,10 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 99%
+source-wordcount: '441'
+ht-degree: 72%
 ---
 # API de campagne FFDA spécifiques{#gs-new-api}
 
@@ -88,7 +88,7 @@ Une fois le workflow exécuté, la table d&#39;évaluation est alimentée comme 
    </soapenv:Envelope>
    ```
 
-1. UUID est renvoyé à la réponse SOAP :
+1. L’UUID est renvoyé dans la réponse de SOAP :
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -100,7 +100,7 @@ Une fois le workflow exécuté, la table d&#39;évaluation est alimentée comme 
    </SOAP-ENV:Envelope>
    ```
 
-Par conséquent, le tableau d&#39;évaluation est alimenté comme prévu.
+Par conséquent, la table d&#39;évaluation est alimentée comme prévu.
 
 ![](assets/no-reconciliation.png)
 
@@ -148,7 +148,7 @@ Une fois le workflow exécuté, la table d&#39;évaluation est alimentée comme 
    </soapenv:Envelope>
    ```
 
-1. Dans ce cas, l&#39;UUID n&#39;est pas renvoyé à la réponse, car il a été fourni dans la payload. La réponse est :
+1. Dans ce cas, l’UUID n’est pas renvoyé à la réponse, car il a été fourni dans la payload. La réponse est :
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -160,11 +160,11 @@ Une fois le workflow exécuté, la table d&#39;évaluation est alimentée comme 
    </SOAP-ENV:Envelope>
    ```
 
-Par conséquent, le tableau d&#39;évaluation est alimenté comme prévu.
+Par conséquent, la table d&#39;évaluation est alimentée comme prévu.
 
 ## Mise à jour ou suppression de données{#data-update-api}
 
-L&#39;API **xtk.session.IngestExt** est optimisée pour la mise à jour/suppression des données. Pour insérer uniquement, préférez **xtk.session.ingest**. L&#39;insertion fonctionne si la clé d&#39;enregistrement ne se trouve pas dans la table d&#39;évaluation.
+L&#39;API **xtk.session.IngestExt** est optimisée pour la mise à jour/suppression des données. Pour insérer uniquement, préférez **xtk.session.ingest**. L&#39;insertion fonctionne lorsque la clé d&#39;enregistrement ne se trouve pas dans la table d&#39;évaluation.
 
 ### Insertion/mise à jour
 
@@ -218,13 +218,13 @@ Une fois le workflow exécuté, la table d&#39;évaluation est mise à jour comm
    </SOAP-ENV:Envelope>
    ```
 
-Par conséquent, le tableau d&#39;évaluation est mis à jour comme prévu.
+Par conséquent, la table d&#39;évaluation est mise à jour comme prévu.
 
 ## Gestion des abonnements {#sub-apis}
 
 La gestion des abonnements dans Campaign est décrite dans [cette page](../start/subscriptions.md).
 
-L&#39;insertion des données d&#39;abonnement et de désabonnement repose sur le [mécanisme d&#39;évaluation](staging.md) de la base de données locale de Campaign. Les informations sur les abonnés sont temporaires et stockées dans des tables intermédiaires de la base de données locale. Le workflow de synchronisation envoie ces données de la base locale vers la base de données Cloud. Par conséquent, les processus d&#39;abonnement et de désabonnement sont **asynchrones**. Les demandes d&#39;opt-in et d&#39;opt-out sont traitées toutes les heures par le biais d&#39;un workflow technique spécifique. [En savoir plus](replication.md#workflows)
+L&#39;insertion des données d&#39;abonnement et de désabonnement repose sur le [mécanisme d&#39;évaluation](staging.md) de la base de données locale de Campaign. Les informations sur les abonnés sont temporairement stockées dans des tables intermédiaires de la base de données locale. Le workflow de synchronisation envoie ces données de la base locale vers la base de données cloud. Par conséquent, les processus d&#39;abonnement et de désabonnement sont **asynchrones**. Les demandes d&#39;opt-in et d&#39;opt-out sont traitées toutes les heures par le biais d&#39;un workflow technique spécifique. [En savoir plus](replication.md#workflows)
 
 
 **Rubriques connexes :**

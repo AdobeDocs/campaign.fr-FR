@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '515'
-ht-degree: 100%
+ht-degree: 98%
 ---
 # Prise en main des formulaires web{#about-web-forms}
 
@@ -85,7 +85,7 @@ Pour définir le paramétrage et le contenu du formulaire Web, les étapes sont 
 
 ## À propos de la conception des formulaires web {#about-web-forms-designing}
 
-Les pages du formulaire sont créées à l’aide d’un éditeur spécifique qui permet de définir et de configurer des zones d’entrée (texte), des champs de sélection (listes, cases à cocher, etc.) et des éléments statiques (images, contenus HTML, etc.). Ces éléments peuvent être regroupés en conteneurs et leur disposition modifiée en fonction de vos besoins (voir à ce sujet la section [Créer des conteneurs](defining-web-forms-layout.md#creating-containers)).
+Les pages du formulaire sont créées à l’aide d’un éditeur spécifique qui permet de définir et de configurer des zones d’entrée (texte), des champs de sélection (listes, cases à cocher, etc.) et les éléments statiques (images, contenus HTML, etc.). Ces éléments peuvent être regroupés en conteneurs et leur disposition modifiée en fonction de vos besoins (voir à ce sujet la section [Créer des conteneurs](defining-web-forms-layout.md#creating-containers)).
 
 La définition du contenu et de la mise en page des écrans du formulaire sont présentés dans les sections suivantes :
 

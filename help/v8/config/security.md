@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '2957'
-ht-degree: 64%
+ht-degree: 62%
 ---
 # Bonnes pratiques de sécurité de Campaign {#ac-security}
 
@@ -101,9 +101,9 @@ Adobe Campaign fait partie des solutions Adobe Experience Cloud. La façon do
   * Les solutions Adobe Experience Cloud utilisent des cookies et des technologies similaires, telles que les balises web (également appelées pixels), pour vous permettre de collecter des informations. Pour plus d’informations sur les cookies et les fonctionnalités de tracking avec Adobe Campaign, consultez [cette section](#tracking-capabilities).
   * Vous pouvez également utiliser les technologies Adobe Experience Cloud dans vos applications mobiles. Pour plus d’informations sur l’envoi de diffusions mobiles avec Campaign, consultez [canal SMS](../send/sms/sms-channel.md) et canal d’application mobile.
 
-* **Choix de confidentialité de vos utilisateurs concernant votre utilisation d&#39;Adobe Experience Cloud**
+* **Choix de confidentialité de vos utilisateurs concernant votre utilisation d’Adobe Experience Cloud**
 
-  Adobe vous demande de fournir à vos clients des politiques de confidentialité décrivant :
+  Adobe vous demande de fournir les politiques de confidentialité de vos clients, décrivant :
 
   * Vos pratiques de confidentialité en rapport avec Adobe Experience Cloud
   * La manière dont les utilisateurs peuvent définir leurs préférences pour la collecte ou l&#39;utilisation de leurs informations en rapport avec Adobe Experience Cloud
@@ -165,7 +165,7 @@ Adobe Campaign vous permet de collecter des données, y compris des information
 
 ## Gestion de la confidentialité {#privacy-management}
 
-La gestion de la confidentialité se rapporte à tous les processus et outils qui peuvent vous aider à vous conformer aux règlements relatifs à la confidentialité (RGPD, CCPA, etc.).
+La gestion de la confidentialité fait référence à tous les processus et outils qui peuvent vous aider à vous conformer aux règlements sur la confidentialité (RGPD, CCPA, etc.).
 
 Adobe Campaign vous propose divers ensembles de fonctionnalités dédiées à la gestion de la confidentialité :
 * Gestion du consentement, conservation des données et rôles utilisateur. Voir [cette section](#consent).
@@ -292,7 +292,7 @@ Lorsque vous ajoutez des liens personnalisés à votre contenu, évitez toujours
 
 Vous devez vous assurer que les mots de passe chiffrés ne sont pas accessibles par une personne authentifiée disposant de privilèges restreints. Pour ce faire, il existe deux méthodes : restreindre l&#39;accès aux champs de mots de passe uniquement ou à l&#39;entité entière.
 
-Cette restriction vous permet de supprimer les champs de mots de passe. Le compte externe reste toutefois accessible par tous les utilisateurs dans l&#39;interface. En savoir plus à ce propos sur [cette page](../dev/restrict-pi-view.md).
+Cette restriction vous permet de supprimer des champs de mot de passe. Le compte externe reste toutefois accessible par tous les utilisateurs dans l’interface. En savoir plus à ce propos sur [cette page](../dev/restrict-pi-view.md).
 
 1. Accédez à **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Schémas de données]**.
 

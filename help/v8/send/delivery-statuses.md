@@ -35,18 +35,18 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 55%
+source-wordcount: '562'
+ht-degree: 53%
 ---
 # Statuts de diffusion {#delivery-statuses}
 
-Une fois qu’une diffusion a été envoyée, le tableau de bord de diffusion affiche un statut qui vous permet de  si l’envoi a réussi. Les statuts possibles sont détaillés dans la section ci-dessous.
+Une fois qu’une diffusion a été envoyée, le tableau de bord de diffusion affiche un statut qui vous permet de surveiller si l’envoi a réussi. Les statuts possibles sont détaillés dans la section ci-dessous.
 
 ![](assets/delivery-status.png)
 
-Pour plus d’informations sur les différents échecs de diffusion que vous pouvez rencontrer et sur la manière de les résoudre, consultez la section [Comprendre les échecs de diffusion](delivery-failures.md).
+Pour plus d&#39;informations sur les différents échecs de diffusion que vous pouvez rencontrer et sur la manière de les résoudre, consultez [Comprendre les échecs de diffusion](delivery-failures.md).
 
 **Rubriques connexes :**
 
@@ -70,7 +70,7 @@ Pour plus d’informations sur les différents échecs de diffusion que vous pou
   </tr> 
   <tr> 
    <td> Ignoré<br /> </td> 
-   <td> La diffusion n’a pas été envoyée au destinataire en raison d’une erreur liée à son adresse. Elle était soit sur liste bloquée, soit mise en quarantaine, soit non fournie, ou il s'agissait d'un doublon.<br /> </td> 
+   <td> La diffusion n’a pas été envoyée au destinataire en raison d’une erreur liée à son adresse. Il était sur la liste bloquée, en quarantaine, non fourni ou en double. <br /> </td> 
   </tr> 
   <tr> 
    <td> En échec<br /> </td> 
@@ -114,15 +114,15 @@ Pour découvrir comment optimiser la délivrabilité de vos emails Adobe Campai
 
 Après avoir confirmé votre diffusion, vous pouvez constater que le statut de votre diffusion est **[!UICONTROL En attente]**. Ce statut signifie que le processus d&#39;exécution attend la disponibilité de certaines ressources.
 
-Le statut **[!UICONTROL En attente]** peut d&#39;abord signifier que votre diffusion a été planifiée et qu&#39;elle est en attente jusqu&#39;à la date spécifiée. Pour plus d&#39;informations, consultez la section [Planifier l&#39;envoi des diffusions](configure-and-send.md#schedule-delivery-sending) .
+Le statut **[!UICONTROL En attente]** peut d&#39;abord signifier que votre diffusion a été planifiée et qu&#39;elle est en attente jusqu&#39;à la date spécifiée. Pour plus d&#39;informations, consultez la section [Planifier l&#39;envoi de diffusions](configure-and-send.md#schedule-delivery-sending).
 
 Si votre diffusion n&#39;est pas envoyée et reste dans un état **[!UICONTROL En attente]**, la raison peut en être la suivante :
 
-* **Trop de campagnes exécutées simultanément**
+* **Trop de campagnes s’exécutant simultanément**
 
   La limite des campagnes simultanées est définie dans l’option **[!UICONTROL NmsOperation_LimitConcurrency]**. La valeur par défaut est 10.
 
-  En tant qu&#39;utilisateur Managed Cloud Services, vous pouvez travailler avec Adobe pour ajuster cette limite si nécessaire. En savoir plus sur les options dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=fr){target="_blank"}.
+  En tant qu&#39;utilisateur Managed Cloud Services, vous pouvez travailler avec Adobe pour ajuster cette limite si nécessaire. En savoir plus sur les options dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=fr){target="_blank"}.
 
 * **Problèmes de disponibilité des ressources**
 

@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 84%
+ht-degree: 80%
 ---
 # Déploiement FDA de [!DNL Campaign]{#gs-fda}
 
@@ -57,7 +57,7 @@ Ce modèle de déploiement présente les avantages suivants :
 * **Stockage et performances**
 Vous pouvez déplacer vos données historiques vers [!DNL Snowflake], puis réduire les dépendances à la limite des Adobe Campaign ID. Cette architecture réduit également votre dépendance aux limites de stockage et de performances PostgreSQL. Comme moins de données sont stockées dans la base de données Campaign, les performances sont meilleures et les tâches de maintenance sont exécutées plus rapidement.
 
-* **Extension du modèle de données et gestion des données**
+* **Extension de modèle de données et gestion des données**
 Vous pouvez créer des tables dans [!DNL Snowflake] et les lier à Adobe Campaign, par exemple pour utiliser les données archivées sur les périodes de rétention, ou exécuter des processus de segmentation avec des performances exceptionnelles.
 
   Cette architecture vous permet également d’utiliser les fonctionnalités de workflow de gestion de données dans [!DNL Snowflake]. Seuls les agrégats et les tables temporaires sont déplacés vers Campaign à des fins de personnalisation et de diffusion.

@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 52%
+source-wordcount: '594'
+ht-degree: 51%
 ---
 # Configuration des liens trackés {#how-to-configure-tracked-links}
 
@@ -39,7 +39,7 @@ Pour chaque diffusion, vous pouvez suivre la réception des messages et l&#39;ac
 
 >[!NOTE]
 >
->Les liens inclus dans le contenu des emails qui comportent des éléments de personnalisation ont besoin d&#39;une syntaxe spécifique pour être suivis. Découvrez comment ajouter des liens dans des e-mails qui peuvent être personnalisés et qui prennent en charge le tracking dans [cette section](personalized-links.md).
+>Les liens inclus dans le contenu des emails qui comportent des éléments de personnalisation ont besoin d&#39;une syntaxe spécifique pour être suivis. Découvrez comment ajouter dans [cette section](personalized-links.md) des liens dans les e-mails qui peuvent être personnalisés et qui prennent en charge le tracking.
 
 Le tracking des messages est activé par défaut. Pour personnaliser le suivi des URL, procédez comme suit :
 
@@ -73,12 +73,12 @@ Le tracking des messages est activé par défaut. Pour personnaliser le suivi de
 
    * **[!UICONTROL Activé]** : active le tracking de cette URL.
    * **[!UICONTROL Non activé]** : désactive le suivi de cette URL.
-   * **[!UICONTROL Toujours activé]** : active toujours le tracking de cette URL. Ces informations sont enregistrées afin que la prochaine fois, si l’URL apparaît à nouveau dans le contenu d’un futur message, son tracking soit automatiquement activé.
-   * **[!UICONTROL Jamais trackée]** : n&#39;active jamais le tracking de cette URL. Ces informations sont enregistrées afin que la prochaine fois, si l’URL apparaît à nouveau dans un futur message, son tracking soit automatiquement désactivé.
+   * **[!UICONTROL Toujours activé]** : active toujours le suivi de cette URL. Ces informations sont enregistrées afin que la prochaine fois, si l’URL apparaît à nouveau dans le contenu d’un futur message, son tracking soit automatiquement activé.
+   * **[!UICONTROL Jamais trackée]** : n&#39;active jamais le tracking de cette URL. Ces informations sont enregistrées de sorte que la prochaine fois, si l’URL apparaît à nouveau dans un futur message, son tracking est automatiquement désactivé.
    * **[!UICONTROL Opt-out]** : considère cette URL comme une option d&#39;opt-out ou une URL de désabonnement.
-   * **[!UICONTROL Page miroir]** : considère cette URL comme une URL de page miroir.
+   * **[!UICONTROL Page miroir]** : considère cette URL comme une URL de page miroir.
 
-1. De plus, vous pouvez sélectionner une catégorie pour chaque URL suivie dans la liste déroulante de la colonne **[!UICONTROL Catégorie]**. Ces catégories peuvent être affichées dans les rapports, par exemple dans le rapport **[!UICONTROL URL et flux de clics]** (voir [cette section](../reporting/delivery-reports.md#urls-and-click-streams)). Les catégories sont définies dans une énumération spécifique : **[!UICONTROL urlCategory]**. En savoir plus sur l’utilisation des énumérations dans [cette section](../config/enumerations.md).
+1. De plus, vous pouvez sélectionner une catégorie pour chaque URL suivie dans la liste déroulante de la colonne **[!UICONTROL Catégorie]**. Ces catégories peuvent être affichées dans les rapports, par exemple dans le rapport **[!UICONTROL URL et flux de clics]** (voir [cette section](../reporting/delivery-reports.md#urls-and-click-streams)). Les catégories sont définies dans une énumération spécifique : **[!UICONTROL urlCategory]**. Découvrez comment utiliser les énumérations dans [cette section](../config/enumerations.md).
 
 ## Bonnes pratiques relatives aux délimiteurs d’URL {#url-delimiters}
 

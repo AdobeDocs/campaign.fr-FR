@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '2365'
-ht-degree: 100%
+ht-degree: 99%
 ---
 # Concevoir une diffusion de notification push Android enrichie {#rich-push}
 
@@ -211,7 +211,7 @@ Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser
 
 1. Dans le menu **[!UICONTROL Options des couleurs]**, saisissez les codes hexadécimaux des couleurs de votre **[!UICONTROL Titre]**, **[!UICONTROL Message]** et **[!UICONTROL Arrière-plan]**.
 
-1. Dans le menu **[!UICONTROL Options de la zone d’entrée]**, renseignez l’option suivante :
+1. Dans le menu **[!UICONTROL Options de la zone de saisie]**, renseignez les options suivantes :
 
    * **[!UICONTROL Nom du récepteur d’entrée]** : saisissez le nom ou l’identifiant du récepteur d’entrée.
    * **[!UICONTROL Texte d’entrée]** : saisissez le texte de la **zone d’entrée**.

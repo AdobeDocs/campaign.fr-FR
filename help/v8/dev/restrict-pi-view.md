@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Implementation
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 94%
+ht-degree: 76%
 ---
 # Limitation de l&#39;affichage des PI{#restricting-pii-view}
 
@@ -73,8 +73,8 @@ Vous trouverez ci-dessous un exemple d&#39;extension de schéma de destinataire 
 
 Les principales propriétés sont les suivantes :
 
-* **[!UICONTROL visibleIf]** : masque les champs des métadonnées. Ils ne sont donc pas accessibles dans une vue de schéma, une sélection de colonne ou un [créateur d’expressions](../../v8/start/filter-conditions.md#list-of-functions). Toutefois, cela ne masque aucune donnée. Si le nom du champ est saisi manuellement dans une expression, la valeur s’affiche.
-* **[!UICONTROL accessibleIf]** : masque les données (en les remplaçant par des valeurs vides) de la requête obtenue. Si la propriété visibleIf est vide, elle obtient la même expression que la propriété **[!UICONTROL accessibleIf]**.
+* **[!UICONTROL visibleIf]** : masque les champs des métadonnées. Ils ne sont donc pas accessibles dans une vue de schéma, une sélection de colonne ou un [créateur d&#39;expressions](../../v8/start/filter-conditions.md#list-of-functions). Toutefois, cela ne masque aucune donnée. Si le nom du champ est saisi manuellement dans une expression, la valeur s’affiche.
+* **[!UICONTROL accessibleIf]** : masque les données (en les remplaçant par des valeurs vides) de la requête obtenue. Si visibleIf est vide, il obtient la même expression que **[!UICONTROL accessibleIf]**.
 
 Les conséquences de l&#39;utilisation de cet attribut dans Adobe Campaign sont les suivantes :
 
@@ -126,4 +126,4 @@ Vous trouverez ci-dessous un exemple d’extension de table de logs pour mettre 
 
 >[!CAUTION]
 >
->Cette restriction s&#39;applique uniquement aux utilisateurs non techniques et n&#39;isole pas les données. Un utilisateur technique disposant des autorisations associées peut ainsi récupérer les données.
+>Cette restriction s’applique uniquement aux utilisateurs non techniques et n’isole pas les données. Un utilisateur technique disposant des autorisations associées peut ainsi récupérer les données.

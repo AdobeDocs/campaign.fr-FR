@@ -28,20 +28,20 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 100%
+source-wordcount: '232'
+ht-degree: 71%
 ---
 # Surveiller et suivre un SMS
 
-Il est important de surveiller votre diffusion SMS, afin de vous assurer que vos campagnes marketing sont efficaces.
+Il est important de surveiller votre diffusion par SMS, afin de vous assurer que vos campagnes marketing sont efficaces.
 
-Vous trouvez ici les possibilités que vous devez connaître en ce qui concerne ce qui se passe après l’envoi de votre diffusion.
+Voici les possibilités dont vous disposez pour savoir ce qui se passe après l’envoi de votre diffusion
 
 ## Comprendre le tableau de bord de la diffusion SMS
 
-Le tableau de bord de la diffusion vous donne de nombreuses informations sur votre SMS.
+Le tableau de bord de la diffusion fournit de nombreuses informations sur votre SMS.
 
 Pour accéder au tableau de bord, double-cliquez sur votre diffusion dans la liste des diffusions.
 
@@ -59,7 +59,7 @@ Vous pouvez voir dans l’onglet **[!UICONTROL Exclusions]** les détails sur le
 
 ![](assets/sms_exclusions.png){zoomable="yes"}
 
-L’onglet **[!UICONTROL Tracking]** concerne le suivi. Voici l’exemple d’une URL trackée dans le contenu du SMS.
+L’onglet **[!UICONTROL Tracking]** concerne le suivi. Ci-dessous l&#39;exemple d&#39;une URL trackée dans le contenu du SMS.
 
 ![](assets/sms_trackinglogs.png){zoomable="yes"}
 

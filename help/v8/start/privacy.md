@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 96%
+ht-degree: 89%
 ---
 # Gestion des demandes d’accès à des informations personnelles dans Campaign {#privacy}
 
@@ -75,7 +75,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 1. Créez un espace de noms sur le [Service Espace de noms d’identité](https://developer.adobe.com/experience-platform-apis/references/identity-service/#tag/Identity-Namespace){target="_blank"}.
 
-1. Lorsque la [liste des espaces de noms d’identité](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target="_blank"} est disponible pour votre organisation, vous obtenez les détails suivants sur les espaces de noms, par exemple :
+1. Lorsque [la liste des espaces de noms d’identité](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target="_blank"} est disponible pour votre organisation, vous obtenez les détails suivants sur les espaces de noms, par exemple :
 
    ```
    {
@@ -98,7 +98,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 1. Saisissez un **[!UICONTROL Libellé]**.
 
-1. Renseignez les détails du nouvel espace de noms pour qu’il corresponde à l’espace de noms que vous avez créé sur le service Espace de noms d’identité :
+1. Renseignez les détails du nouvel espace de noms pour qu’il corresponde à l’espace de noms que vous avez créé sur le service Espace de noms d’identité :
 
    * l’**[!UICONTROL identifiant de l’espace de noms AEC]** doit correspondre à l’attribut « identifiant » ;
    * le **[!UICONTROL nom interne]** doit correspondre à l’attribut « code »
@@ -157,7 +157,7 @@ Voici la liste des tables intégrées qui sont prises en compte lors de l’exé
 * Abonnements (subscription)
 * Proposition d&#39;offre d&#39;un destinataire (propositionRcp)
 
-Si vous avez créé des tables personnalisées ayant un lien vers la table de personnes destinataires (type propre), celles-ci sont également prises en compte. Par exemple, si une table de transactions est liée à la table de personnes destinataires et si une table de détails de transaction est liée à la table de transactions, elles sont toutes deux prises en compte.
+Si vous avez créé des tables personnalisées ayant un lien vers la table de personnes destinataires (type propre), celles-ci sont également prises en compte. Par exemple, si vous avez une table de transactions liée à la table des destinataires et une table de détails de transactions liée à la table des transactions, elles seront toutes deux prises en compte.
 <!--
 >[!CAUTION]
 >

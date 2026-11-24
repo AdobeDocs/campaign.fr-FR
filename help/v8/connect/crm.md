@@ -35,10 +35,10 @@ topic_v2:
     internal-label: Email marketing
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 100%
+source-wordcount: '341'
+ht-degree: 88%
 ---
 # Connexion de votre CRM à Campaign {#gs-crm}
 
@@ -61,7 +61,7 @@ Les principaux avantages sont les suivants :
 
 ## Systèmes compatibles {#compatible-crm-systems-and-limitations}
 
-Les CRM et versions pris en charge sont présentés dans la [matrice de compatibilité](../start/compatibility-matrix.md) de Campaign.
+Les CRM et versions pris en charge sont détaillés dans la matrice de compatibilité [de Campaign](../start/compatibility-matrix.md).
 
 >[!CAUTION]
 >
@@ -69,7 +69,7 @@ Les CRM et versions pris en charge sont présentés dans la [matrice de compatib
 
 ## Étapes dʼimplémentation {#crm-implementation-steps}
 
-Découvrez la procédure détaillée pour connecter Campaign et Microsoft Dynamics dans [cette page](ac-ms-dyn.md).
+Découvrez la procédure détaillée pour connecter Campaign et Microsoft Dynamics dans [cette page](ac-ms-dyn.md).
 
 Découvrez la procédure détaillée pour connecter Campaign et Salesforce.com dans [cette page](ac-sfdc.md).
 

@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 99%
+source-wordcount: '763'
+ht-degree: 90%
 ---
 # Autres opérations {#additional-operations}
 
@@ -108,7 +108,7 @@ Pour identifier les métadonnées d’un filtre et déterminer comment l’utili
 
 ***Exemple de requête***
 
-Les exemples de payloads ci-dessous montrent comment récupérer les métadonnées de filtre « byText » pour la ressource « profile ». Commencez par exécuter une requête GET sur les métadonnées de la ressource « profile ».
+Les exemples de payloads ci-dessous montrent comment récupérer les métadonnées de filtre « byText » pour la ressource « profile ». Commencez par effectuer une requête GET sur les métadonnées de la ressource « profil ».
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/resourceType/profile \
@@ -243,7 +243,7 @@ dans les champs e-mail ou nom (le filtre byText effectue une recherche dans les 
   }
   ```
 
-* Exemple de requête GET pour récupérer les ressources « service » avec le type « email » et le libellé « sport ».
+* Exemple de requête GET pour récupérer les ressources du service avec le type « email » et le libellé « sport ».
 
   ```
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel/byText?channel=email&text=sport \
@@ -354,7 +354,7 @@ L’API REST d’Adobe Campaign permet de comptabiliser le nombre d’enregistr
 
 ***Exemple de requête***
 
-Pour compter tous les services dont la valeur **messageType** est égale à « sms », exécutez une requête GET avec le filtre **byChannel**.
+Pour comptabiliser tous les services dont la valeur **messageType** est égale à « sms », effectuez une requête GET avec le filtre **byChannel**.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel?channel=sms \
@@ -450,7 +450,7 @@ Réponse à la requête, avec le nœud **suivant** pour effectuer la pagination.
 }
 ```
 
-Par défaut, le nœud **suivant** n’est pas disponible lors de l’interaction avec des tableaux contenant une grande quantité de données. Pour pouvoir effectuer une pagination, vous devez ajouter le paramètre **_forcePagination=true** à votre URL d’appel.
+Par défaut, le nœud **next** n’est pas disponible lors de l’interaction avec des tables contenant une grande quantité de données. Pour pouvoir effectuer une pagination, vous devez ajouter le paramètre **_forcePagination=true** à votre URL d’appel.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile?_forcePagination=true \

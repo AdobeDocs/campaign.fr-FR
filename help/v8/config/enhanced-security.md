@@ -28,14 +28,14 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '801'
-ht-degree: 91%
+ht-degree: 89%
 ---
 # Module complémentaire Campaign de sécurité améliorée {#enhanced-security}
 
-Cette page fait partie des conseils de configuration sécurisée recommandés [accessibles au public](security.md#public-guidance) d’Adobe pour Campaign v8.
+Cette page fait partie des [conseils de configuration sécurisée recommandés](security.md#public-guidance) d’Adobe, accessibles au public, pour Campaign v8.
 
 Pour sécuriser davantage votre connexion réseau et offrir une meilleure sécurité à vos ressources, [!DNL Adobe Campaign] fournit un nouveau module complémentaire de **Sécurité améliorée**.
 
@@ -53,7 +53,7 @@ Une fois ces fonctionnalités implémentées, Adobe surveille les éléments sui
 
 * La disponibilité de votre instance, et envoie une alerte si la clé n’est pas disponible.
 
-* Les tunnels VPN, et envoie une alerte en cas de problème.
+* Les tunnels VPN, et procédez aux alertes en cas de problème.
 
 ## Intégration de la clé sécurisée gérée par le client ou la cliente {#secure-cmk-integration}
 

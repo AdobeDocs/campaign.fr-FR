@@ -26,10 +26,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 99%
+ht-degree: 93%
 ---
 # Federated Data Access (FDA){#gs-fda}
 
@@ -62,7 +62,7 @@ Gardez également à l’esprit les limites et bonnes pratiques suivantes :
 
   >[!CAUTION]
   >
-  >Cette option améliore considérablement les performances lors de l&#39;exécution de l&#39;étape de personnalisation.
+  >Cette option améliore considérablement les performances lors de l’exécution de l’étape de personnalisation.
 
 
 ## Utiliser des données externes dans un workflow
@@ -92,5 +92,5 @@ Par exemple, dans l&#39;activité **[!UICONTROL Requête]**, vous pouvez défini
 1. Sélectionnez la table où sont stockées les données. Vous pouvez saisir le nom de la table directement dans le champ correspondant ou cliquer sur l’icône d’édition pour accéder à la liste des tables de la base de données.
 1. Cliquez sur le bouton **[!UICONTROL Ajouter]** pour définir un ou plusieurs champs de réconciliation entre les données de la base de données externe et les données de la base de données d’Adobe Campaign. Les icônes **[!UICONTROL Modifier l’expression]** du **[!UICONTROL Champ distant]** et du **[!UICONTROL Champ local]** permettent d’accéder à la liste des champs de chacune des tables.
 1. Au besoin, indiquez une condition de filtrage et le mode de tri des données.
-1. Sélectionnez les données supplémentaires à collecter dans la base de données externe. Pour ce faire, double-cliquez sur le ou les champs que vous souhaitez ajouter afin de les afficher dans les **[!UICONTROL colonnes de sortie]**.
+1. Sélectionnez les données supplémentaires à collecter dans la base de données externe. Pour ce faire, double-cliquez sur le ou les champs à ajouter pour les afficher dans les **[!UICONTROL Colonnes de sortie]**.
 1. Cliquez sur le bouton **[!UICONTROL Terminer]** pour valider ce paramétrage.

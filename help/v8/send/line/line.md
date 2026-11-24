@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1364'
-ht-degree: 95%
+source-wordcount: '1366'
+ht-degree: 89%
 ---
 # Création de diffusions LINE
 
@@ -128,7 +128,7 @@ Pour créer une diffusion [!DNL LINE] vous devez suivre les étapes suivantes :
 
 1. Cliquez sur **[!UICONTROL Continuer]** pour valider la création de votre diffusion.
 
-1. Dans l&#39;éditeur de diffusion, sélectionnez **[!UICONTROL Pour]** afin de cibler les destinataires de votre diffusion [!DNL LINE]. Le ciblage est réalisé sur **[!UICONTROL abonnements des visiteurs (nms:visitorSub)]**.
+1. Dans l&#39;éditeur de diffusion, sélectionnez **[!UICONTROL Pour]** afin de cibler les destinataires de votre diffusion [!DNL LINE]. Le ciblage est réalisé sur **[!UICONTROL les abonnements des visiteurs (nms:visitorSub)]**.
 
    Pour plus d’informations, consultez [cette page](../../audiences/target-mappings.md).
 
@@ -144,7 +144,7 @@ Pour créer une diffusion [!DNL LINE] vous devez suivre les étapes suivantes :
 
    ![](assets/line_message_10.png)
 
-1. Dans l&#39;éditeur de diffusion, cliquez sur **[!UICONTROL Ajouter]** pour ajouter un ou plusieurs messages et sélectionnez le **[!UICONTROL type de contenu]**.
+1. Dans l’éditeur de diffusion, cliquez sur **[!UICONTROL Ajouter]** pour ajouter un ou plusieurs messages et sélectionnez le **[!UICONTROL Type de contenu]**.
 
    Pour plus d&#39;informations sur les différents **[!UICONTROL types de contenu]** disponibles, consultez la section [Définition du type de contenu](#defining-the-content).
 
@@ -222,7 +222,7 @@ Vous pouvez utiliser :
 
 ### Paramétrage d&#39;une diffusion de type Message vidéo {#configuring-a-video-message-delivery}
 
-Une diffusion **[!UICONTROL Message vidéo]** [!DNL LINE] est un message envoyé aux destinataires sous la forme d&#39;une vidéo pouvant contenir une URL.
+Une diffusion de type **[!UICONTROL Message vidéo]** [!DNL LINE] est un message envoyé aux destinataires sous la forme d&#39;une vidéo pouvant contenir une URL.
 
 Le champ **[!UICONTROL URL de l&#39;image d&#39;aperçu]** permet d&#39;ajouter l&#39;URL d&#39;une image d&#39;aperçu avec une limite de caractères de 1 000. Les formats JPEG et PNG sont pris en charge avec une taille de fichier limitée à 1 Mo.
 
@@ -282,7 +282,7 @@ Dans cet exemple, nous allons créer et paramétrer un message texte et une imag
 
 1. Dans la section **[!UICONTROL Liens]**, sélectionnez la disposition qui divisera l’image en plusieurs zones cliquables.
 
-1. Affectez une URL à chaque zone de votre image.
+1. Attribuez une URL à chaque zone géographique de votre image.
 
    ![](assets/line_usecase_08.png)
 

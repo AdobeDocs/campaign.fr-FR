@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '466'
-ht-degree: 96%
+ht-degree: 92%
 ---
 # Matrice de compatibilité de Campaign v8 {#compat-matrix}
 
@@ -85,7 +85,7 @@ Les bases de données externes compatibles avec le module Adobe Campaign Federa
 
 
 >[!AVAILABILITY]
->En outre, avec le [Module complémentaire de sécurité améliorée](../config/enhanced-security.md#secure-vpn-tunneling), vous pouvez accéder à vos bases de données On-Premise via la tunnellisation VPN sécurisée. [En savoir plus](../config/enhanced-security.md)
+>En outre, avec le [module complémentaire de sécurité renforcée](../config/enhanced-security.md#secure-vpn-tunneling), vous pouvez accéder à vos bases de données on-premise par le biais du tunneling VPN sécurisé. [En savoir plus](../config/enhanced-security.md)
 
 ## SDK mobile {#MobileSDK}
 

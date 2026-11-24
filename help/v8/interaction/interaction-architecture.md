@@ -25,10 +25,10 @@ level_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 85%
+source-wordcount: '1341'
+ht-degree: 82%
 ---
 # Compréhension des environnements et de l&#39;architecture des interactions dans Campaign
 
@@ -36,13 +36,13 @@ ht-degree: 85%
 
 Pour chaque dimension de ciblage utilisée dans le cadre de la gestion des offres existe un duo d&#39;environnements :
 
-* Un environnement **en édition** dans lequel le chargé d&#39;offres s&#39;occupe de créer et catégoriser les offres, de les modifier, de lancer le processus de validation afin qu&#39;elles puissent être utilisées. Les règles de chaque catégorie, les emplacements sur lesquels les offres peuvent être présentées et les filtres prédéfinis utilisés pour définir l&#39;éligibilité d&#39;une offre sont également définis dans cet environnement.
+* Un environnement **en édition** dans lequel le chargé d&#39;offres se charge de créer et catégoriser les offres, de les modifier et de lancer le processus de validation afin qu&#39;elles puissent être utilisées. Les règles de chaque catégorie, les emplacements sur lesquels les offres peuvent être présentées et les filtres prédéfinis utilisés pour définir l&#39;éligibilité d&#39;une offre sont également définis dans cet environnement.
 
   Les catégories peuvent également être publiées manuellement dans l&#39;environnement en ligne.
 
   La validation des offres est détaillée [dans cette section](interaction-offer.md#approve-offers).
 
-* Un environnement **en ligne** dans lequel se trouvent les offres approuvées de l&#39;environnement en édition, ainsi que les différents emplacements, filtres, catégories et règles configurés dans l&#39;environnement en édition. Lors d&#39;un appel au moteur d&#39;offres, ce dernier utilisera toujours les offres de l&#39;environnement en ligne.
+* Un environnement **en ligne** dans lequel se trouvent les offres approuvées de l’environnement en édition, ainsi que les différents emplacements, filtres, catégories et règles configurés dans l’environnement en édition. Lors d&#39;un appel au moteur d&#39;offres, ce dernier utilisera toujours les offres de l&#39;environnement en ligne.
 
 Une offre n’est déployée que sur les emplacements sélectionnés lors de la validation. Ainsi, une offre peut être en ligne mais non utilisable sur un emplacement lui aussi en ligne.
 
@@ -90,7 +90,7 @@ Vous devez prendre en compte les mécanismes de synchronisation suivants :
 
 * Si vous utilisez la fonction de basculement (fall back) d&#39;un environnement anonyme vers un environnement identifié, ces deux environnements doivent être sur la même instance d&#39;exécution.
 * La synchronisation entre plusieurs instances d’exécution n’est pas effectuée en temps réel. Les interactions d’une même personne contact doivent être envoyées à la même instance. L’instance de pilotage doit être dédiée au canal sortant (pas en temps réel).
-* La base de données marketing n’est pas synchronisée automatiquement. Les données marketing utilisées dans les règles de poids et d’éligibilité doivent être dupliquées sur les instances d’exécution. Ce processus n’est pas fourni en standard, vous devez le développer pendant la période d’intégration.
+* La base de données marketing n’est pas synchronisée automatiquement. Les données marketing utilisées dans les règles de poids et d’éligibilité doivent être dupliquées sur les instances d’exécution. Ce processus n’est pas fourni en standard ; vous devez le développer pendant la période d’intégration.
 * La synchronisation des propositions s&#39;effectue exclusivement par connexion FDA.
 * Si vous utilisez Interaction et Message Center sur une même instance, la synchronisation s&#39;effectuera par protocole FDA dans les deux cas.
 
@@ -102,7 +102,7 @@ Le package **Interaction** est installé sur toutes les instances (de pilotage e
 
 >[!NOTE]
 >
->Lors de l’installation du package, les champs de type **long** de la table **nms:proposition** comme l’identifiant de la proposition, deviennent des champs de type **int64**. Ce type de données est détaillé dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=fr#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
+>Lors de l’installation du package, les champs de type **long** de la table **nms:proposition** comme l’identifiant de la proposition, deviennent des champs de type **int64**. Ce type de données est détaillé dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=fr#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
 
 La durée de conservation des données est configurée sur chaque instance (via la fenêtre **[!UICONTROL Purge des données]** dans l&#39;assistant de déploiement). Sur les instances d&#39;exécution, cette période doit correspondre à la profondeur historique nécessaire au calcul des règles de typologie (période glissante) et d&#39;éligibilité.
 
@@ -168,7 +168,7 @@ Si votre instance ne possédait pas le package **Interaction** auparavant, aucun
 >
 >Selon le volume de propositions existantes dans votre instance, cette opération peut être très longue.
 
-* Si votre instance ne comporte pas ou peu de propositions, aucune modification manuelle de la table des propositions n’est nécessaire. La modification sera effectuée lors de l’installation des packages.
+* Si votre instance comporte peu ou pas de propositions, aucune modification manuelle de la table des propositions n&#39;est nécessaire. La modification sera effectuée lors de l’installation des packages.
 * Si votre instance comporte un grand nombre de propositions, il est préférable de changer la structure de la table des propositions avant l’installation des packages de pilotage et d’exécution. Nous vous recommandons d’exécuter les requêtes pendant une période de faible activité.
 
 >[!NOTE]

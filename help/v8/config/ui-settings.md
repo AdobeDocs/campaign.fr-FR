@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1094'
-ht-degree: 80%
+ht-degree: 79%
 ---
 # Paramètres de l’interface utilisateur de Campaign {#ui-settings}
 
@@ -145,7 +145,7 @@ Pour enregistrer cette configuration de liste en vue de la réutiliser, procéde
 1. Cliquez sur **[!UICONTROL Paramètres avancés]** et indiquez un nom dans le champ **[!UICONTROL Configuration]**.
 1. Cliquez sur **[!UICONTROL OK]**, puis sur **[!UICONTROL Enregistrer]**.
 
-Vous pouvez ensuite appliquer cette configuration à tout autre dossier du même type. Pour en savoir plus sur les dossiers, consultez [cette page](../audiences/folders-and-views.md).
+Vous pouvez ensuite appliquer cette configuration à un autre dossier du même type. Pour en savoir plus sur les dossiers, consultez [cette page](../audiences/folders-and-views.md).
 
 ### Exporter une liste {#exporting-a-list}
 
@@ -178,4 +178,4 @@ Vous pouvez également configurer le tri ou combiner des critères de tri. Pour 
 ## Ressources supplémentaires
 
 * **[Commencez par l’interface utilisateur de Campaign](../start/campaign-ui.md)** - Découvrez comment accéder à l’interface d’Adobe Campaign et la parcourir.
-* **[Utiliser des énumérations](../config/enumerations.md)** - Standardisez les valeurs de champ avec des listes déroulantes prédéfinies pour une saisie plus rapide et plus cohérente des données.
+* **[Utiliser des énumérations](../config/enumerations.md)** - Standardisez les valeurs de champ avec des listes déroulantes prédéfinies pour une entrée de données plus rapide et plus cohérente.

@@ -35,15 +35,15 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '149'
-ht-degree: 88%
+ht-degree: 53%
 ---
 # Utilisation d’une table des destinataires personnalisée{#gs-ac-custom-recipient}
 
 Adobe Campaign s’accompagne d’une table des profils native : nmsRecipient **.** Cette table comporte un certain nombre de champs prédéfinis et de tables faciles à étendre. En savoir plus au sujet de cette table sur [cette page](datamodel.md#ootb-profiles).
 
-L’extension de table native offre de la flexibilité. Toutefois, elle ne permet pas de supprimer certains champs ou liens inutilisés. Par conséquent, l’utilisation d&#39;une table des destinataires personnalisée peut être une bonne solution lorsque votre modèle de données diffère considérablement de la structure de la table des destinataires native de Campaign, ou si vous disposez d’un grand nombre de profils.  Toutefois, cette méthode nécessite de prendre certaines précautions lors de son implémentation.
+L’extension de table native offre de la flexibilité, mais elle ne permet pas de supprimer certains champs ou liens inutilisés. Par conséquent, l’utilisation d’une table de destinataires personnalisée est une option qui peut s’avérer pratique lorsque votre modèle de données diffère considérablement de la structure de table de destinataires native Campaign, ou encore si vous disposez d’un grand nombre de profils.  Toutefois, cette méthode nécessite de prendre certaines précautions lors de son implémentation.
 
-Découvrez comment configurer votre instance pour utiliser une table des destinataires personnalisée dans la documentation de [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/use-a-custom-recipient-table/about-custom-recipient-table.html?lang=fr){target="_blank"}.
+Découvrez comment configurer votre instance pour utiliser une table des destinataires personnalisée dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/use-a-custom-recipient-table/about-custom-recipient-table.html?lang=fr){target="_blank"}.

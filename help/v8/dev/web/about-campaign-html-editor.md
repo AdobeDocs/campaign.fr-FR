@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6db6c9152f6060b40596bd65a2ce705f916401be
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 84%
+source-wordcount: '351'
+ht-degree: 78%
 ---
 # Prise en main de l‘éditeur HTML Campaign{#about-campaign-html-editor}
 
@@ -68,7 +68,7 @@ Le fonctionnement général est le suivant :
 Pour créer une **application web** simple, vous devez :
 
 1. Créer une application web - [En savoir plus](creating-a-landing-page.md)
-1. Sélectionner un contenu existant ou créer du contenu à partir d‘un modèle standard - [En savoir plus](template-management.md)
+1. Sélectionner du contenu existant ou créer du contenu à partir d&#39;un modèle standard - [En savoir plus](template-management.md)
 1. Modifier et configurer le contenu - [En savoir plus](editing-content.md)
 1. Publier l‘application web - [En savoir plus](creating-a-landing-page.md#step-3---publishing-content)
 
@@ -79,7 +79,7 @@ Pour créer une **application web** simple, vous devez :
 Pour créer une **diffusion email**, vous devez :
 
 1. Créer une diffusion à partir d‘un modèle du DCE - [En savoir plus](use-case-creating-an-email-delivery.md)
-1. Sélectionner un contenu existant ou créer un contenu à partir d’un [modèle standard](template-management.md)
+1. Sélectionnez du contenu existant ou créez du contenu à partir d’un [modèle standard](template-management.md)
 1. Modifier et configurer du contenu en ligne
 1. Envoyer la diffusion - En savoir plus dans la [documentation de Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=fr){target="_blank"}
 

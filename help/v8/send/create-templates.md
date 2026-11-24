@@ -39,10 +39,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1070'
-ht-degree: 95%
+ht-degree: 94%
 ---
 # Utiliser des modèles de diffusion {#work-with-delivery-template}
 
@@ -69,7 +69,7 @@ Les modèles de diffusion sont stockés dans le dossier **[!UICONTROL Ressources
 
 >[!NOTE]
 >
->Les modèles disponibles dépendent de vos droits d’accès, de la configuration de votre instance et du contexte. Par exemple, lorsque vous créez un service d&#39;information, vous pouvez associer un modèle de diffusion pour les messages de confirmation : vous ne pourrez alors accéder qu&#39;aux modèles dont le mapping de ciblage correspond au mapping d&#39;abonnement. Les autres modèles ne sont pas visibles dans ce contexte. Pour plus d’informations à ce sujet, reportez-vous aux sections [Utiliser des mappings cibles](../audiences/target-mappings.md) et [Gérer des abonnements et des désabonnements](../start/subscriptions.md).
+>Les modèles disponibles dépendent de vos droits d’accès, de la configuration de votre instance et du contexte. Par exemple, lorsque vous créez un service d&#39;information, vous pouvez associer un modèle de diffusion pour les messages de confirmation : vous ne pourrez alors accéder qu&#39;aux modèles dont le mapping de ciblage correspond au mapping d&#39;abonnement. Les autres modèles ne sont pas visibles dans ce contexte. Pour plus d&#39;informations, consultez les sections [Utiliser les mappings de ciblage](../audiences/target-mappings.md) et [Gérer les abonnements et les désabonnements](../start/subscriptions.md).
 
 
 ## Créer un modèle {#create-a-delivery-template}

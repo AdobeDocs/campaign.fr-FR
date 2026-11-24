@@ -31,10 +31,10 @@ topic_v2:
     internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1914'
-ht-degree: 99%
+source-wordcount: '1913'
+ht-degree: 95%
 ---
 # Rapports globaux {#global-reports}
 
@@ -85,7 +85,7 @@ Ce rapport présente la répartition des ouvertures, clics et transactions, par 
 
 Les options disponibles sont les suivantes :
 
-* **[!UICONTROL Ouvertures]** : Nombre total de messages ouverts. Les e-mails au format texte ne sont pas pris en compte. [En savoir plus](metrics-calculation.md#tracking-opens-).
+* **[!UICONTROL Ouvertures]** : nombre total de messages ouverts. Les e-mails au format texte ne sont pas pris en compte. [En savoir plus](metrics-calculation.md#tracking-opens-).
 * **[!UICONTROL Clics]** : nombre total de clics sur les liens dans les diffusions. Les clics sur les liens de désinscription et sur les pages miroir ne sont pas pris en compte.
 <!--
 * **[!UICONTROL Transactions]**: Total number of transactions after a message is received. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
@@ -118,7 +118,7 @@ Les indicateurs utilisés sont les suivants :
 * **[!UICONTROL Boîte pleine]** : type d’erreur générée, après cinq tentatives d’envoi d’une diffusion, indiquant que la boîte de messagerie de la personne destinataire contient trop de messages.
 * **[!UICONTROL Compte désactivé]** : type d’erreur générée lors de l’envoi d’une diffusion indiquant que l’adresse n’existe plus.
 * **[!UICONTROL Refusé]** : type d’erreur générée lorsqu’une adresse est refusée par le FAI (Fournisseur d’accès Internet) suite, par exemple, à l’application d’une règle de sécurité (logiciel anti-spams).
-* **[!UICONTROL Inatteignable]** : type d’erreur survenue dans la chaîne de distribution du message : incident sur le relais SMTP, domaine temporairement inatteignable, etc.
+* **[!UICONTROL Inatteignable]** : type d&#39;erreur survenue dans la chaîne de distribution du message : incident sur le relais SMTP, domaine temporairement inatteignable, etc.
 * **[!UICONTROL Non connecté]** : type d’erreur indiquant que le téléphone portable de la personne destinataire est éteint ou n’est pas connecté au réseau au moment de l’envoi du message.
 
   >[!NOTE]
@@ -143,7 +143,7 @@ Vous pouvez déplier chaque ligne du tableau de valeurs en cliquant sur le symbo
 
 >[!NOTE]
 >
->Les noms de domaine affichés dans ce rapport sont définis au niveau des cubes. Pour modifier ces valeurs, modifiez le cube des **[!UICONTROL Journaux de diffusion (broadlogrcp)]**. Pour plus d’informations, consultez [cette section](gs-cubes.md). La catégorie **[!UICONTROL Autres]** inclut les noms de domaine qui n’appartiennent pas à une classe spécifique.
+>Les noms de domaine affichés dans ce rapport sont définis au niveau des cubes. Pour modifier ces valeurs, modifiez le cube **[!UICONTROL Logs de diffusion (broadlogrcp)]**. Pour plus d’informations, consultez [cette section](gs-cubes.md). La catégorie **[!UICONTROL Autres]** inclut les noms de domaine qui n’appartiennent pas à une classe spécifique.
 
 ## Navigateurs {#browsers}
 
@@ -263,7 +263,7 @@ Dans le tableau de valeurs des statistiques globales, vous pouvez cliquer sur le
 
 Les statistiques sont présentées sous la forme d&#39;une courbe, d&#39;un graphique et d&#39;un tableau de valeurs.
 
-La courbe **[!UICONTROL Historique]** représente le taux d’utilisation de ce système d’exploitation par jour. Ce taux est le ratio du nombre de visiteurs et visiteuses par jour (sur ce système d’exploitation) par rapport au nombre de visiteurs et visiteuses mesuré le jour le plus fréquenté.
+La courbe **[!UICONTROL Historique]** représente le taux d’utilisation de ce système d’exploitation par jour. Ce taux est le ratio du nombre de visiteurs par jour (sur ce système d’exploitation) par rapport au nombre de visiteurs mesuré le jour avec la plus grande affluence.
 
 Le graphique **[!UICONTROL Répartition par version]** représente la répartition des visiteurs, par version, par rapport au nombre total de visiteurs sur ce système d&#39;exploitation.
 
@@ -291,7 +291,7 @@ Le tableau de valeurs utilise les indicateurs suivants :
 * **[!UICONTROL Personnes inscrites]** : nombre total de personnes abonnés sur la période correspondante.
 * **[!UICONTROL Abonnements]** : nombre d’abonnements sur la période correspondante.
 * **[!UICONTROL Désabonnements]** : nombre de désabonnements sur la période correspondante.
-* **[!UICONTROL Evolution]** : Nombre de désabonnements soustrait au nombre d&#39;abonnements. Le taux est calculé par rapport au nombre total de personnes abonnées.
+* **[!UICONTROL Évolution]** : nombre de désabonnements moins le nombre d&#39;abonnements. Le taux est calculé par rapport au nombre total de personnes abonnées.
 * **[!UICONTROL Fidélité]** : taux de fidélité des personnes abonnées sur la période correspondante.
 
 **[!UICONTROL Courbes d&#39;évolution des inscriptions]**
@@ -329,4 +329,4 @@ Le nombre d’ouvertures correspond au nombre total de messages ouverts. Les e-m
 
 >[!NOTE]
 >
->Les noms des navigateurs et des systèmes d&#39;exploitation font partie des informations envoyées par l&#39;agent utilisateur du navigateur vers lequel le message a été ouvert. Adobe Campaign détermine le type d&#39;appareil en utilisant ses informations sur l&#39;appareil.
+>Les noms des navigateurs et des systèmes d&#39;exploitation font partie des informations envoyées par l&#39;agent utilisateur du navigateur vers lequel le message a été ouvert. Adobe Campaign déduit le type d’appareil à l’aide des informations sur l’appareil.

@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 97%
+source-wordcount: '922'
+ht-degree: 90%
 ---
 # Création d’une offre
 
@@ -80,7 +80,7 @@ Si des filtres prédéfinis ont déjà été créés, vous pouvez les sélection
 
 Pour permettre au moteur de décider entre plusieurs offres auxquelles la cible est éligible, vous devez attribuer un ou plusieurs poids à l’offre. Vous pouvez également appliquer des filtres sur la cible si nécessaire ou restreindre l’emplacement auquel le poids s’appliquera. Une offre ayant un poids plus important sera préférée à une offre ayant moins de poids.
 
-Vous pouvez paramétrer plusieurs poids pour une même offre, notamment en fonction d&#39;une période, d&#39;une cible ou encore d&#39;un emplacement.
+Vous pouvez paramétrer plusieurs poids pour une même offre, par exemple pour distinguer des sous-périodes, des cibles spécifiques ou encore un emplacement.
 
 Par exemple, une offre peut avoir un poids A pour les personnes contacts âgées de 18 à 25 ans et un poids B pour les personnes contacts plus âgées. Ou, si une offre est éligible tout l’été, elle peut avoir un poids A au mois de juillet, et un poids B au mois d’août.
 
@@ -94,7 +94,7 @@ Pour créer un poids dans une offre, procédez comme suit :
 
    ![](assets/offer_weight_create_001.png)
 
-1. Modifiez le libellé et attribuez un poids. La valeur par défaut est 1.
+1. Modifiez le libellé et attribuez un poids. La valeur par défaut est 1.
 
    ![](assets/offer_weight_create_006.png)
 
@@ -141,7 +141,7 @@ Utilisez l&#39;onglet **[!UICONTROL Contenu]** pour définir le contenu de l&#39
    * **[!UICONTROL Titre]** : indiquez le titre que vous souhaitez faire apparaître dans votre offre. Attention, il ne s’agit pas du libellé de l’offre, celui-ci étant défini dans l’onglet **[!UICONTROL Général]**.
    * **[!UICONTROL URL de destination]** : indiquez l’URL de votre offre. Toutes les URL doivent commencer par « http:// » ou « https:// ».
    * **[!UICONTROL URL de l’image]** : indiquez une URL ou un chemin d’accès vers l’image de votre offre.
-   * **[!UICONTROL Contenu HTML]** / **[!UICONTROL Contenu texte]** : saisissez le corps de votre offre dans l’onglet de votre choix. Pour générer le tracking, le **[!UICONTROL contenu HTML]** doit être constitué d&#39;éléments HTML intégrables dans un élément de type `<div>`. Par exemple, le résultat d&#39;un élément `<table>` dans la page HTML sera le suivant :
+   * **[!UICONTROL Contenu HTML]** / **[!UICONTROL Contenu texte]** : saisissez le corps de votre offre dans l’onglet de votre choix. Pour générer le tracking, le **[!UICONTROL contenu HTML]** doit être constitué d&#39;éléments HTML intégrables dans un élément de type `<div>`. Par exemple, le résultat d&#39;un élément `<table>` dans la page HTML sera le suivant :
 
    ```
       <div> 

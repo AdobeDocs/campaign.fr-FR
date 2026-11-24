@@ -31,10 +31,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1037'
-ht-degree: 100%
+ht-degree: 97%
 ---
 # Cas d’utilisation : création de pages de vue d’ensemble{#use-cases-creating-overviews}
 
@@ -56,7 +56,7 @@ Dans l’exemple suivant, nous allons créer des applications web de type vue d�
 
    ![](assets/s_ncs_configuration_webapp_create.png)
 
-1. Modifiez le titre de votre page.
+1. Modifiez le titre de la page.
 
    C&#39;est ce titre qui apparaîtra dans l&#39;en-tête d&#39;aperçu, ainsi que dans l&#39;aperçu de l&#39;application web.
 
@@ -103,7 +103,7 @@ Dans une vue d’ensemble, vous pouvez choisir d’accéder aux données en fonc
 
    >[!NOTE]
    >
-   >A ce stade, l&#39;application Web n&#39;est pas dans son contexte d&#39;application, il n&#39;est donc pas possible de tester le filtre sur dossier.
+   >À ce stade, l’application web n’est pas dans son contexte applicatif ; le filtre ne peut donc pas être testé sur le dossier .
 
 ## Ajouter un bouton pour paramétrer une nouvelle application web {#adding-a-button-to-configure-a-new-web-application}
 

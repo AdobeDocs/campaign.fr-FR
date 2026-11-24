@@ -30,16 +30,16 @@ topic_v2:
     internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 96%
+ht-degree: 94%
 ---
 # Cas d’utilisation : affichage d’un rapport sur les réponses à un questionnaire en ligne{#use-case-displaying-report-on-answers-to-an-online-survey}
 
 >[!AVAILABILITY]
 >
->Les questionnaires ne sont pas disponibles pour les [déploiements Campaign FFDA](../../architecture/enterprise-deployment.md).
+>Les questionnaires ne sont pas disponibles pour les [déploiements de Campaign FFDA](../../architecture/enterprise-deployment.md).
 
 
 
@@ -69,7 +69,7 @@ Pour collecter les réponses du questionnaire, les étapes sont les suivantes :
 
    ![](assets/reporting_usecase_1_01.png)
 
-1. Sélectionnez les colonnes à extraire (ici : tous les champs archivés). Les réponses sont contenues dans ces champs.
+1. Sélectionnez les colonnes à extraire (ici, sélectionnez tous les champs archivés). Les réponses sont contenues dans ces champs.
 
    ![](assets/reporting_usecase_1_02.png)
 

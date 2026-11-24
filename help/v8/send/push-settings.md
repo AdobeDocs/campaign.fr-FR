@@ -37,18 +37,18 @@ topic_v2:
     internal-label: Measurement
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1985'
-ht-degree: 99%
+source-wordcount: '1986'
+ht-degree: 90%
 ---
 # Configurer le canal de notification push {#push-notification-configuration}
 
-Pour envoyer des notifications push avec Adobe Campaign, vous devez d’abord configurer votre environnement et votre application, comme décrit sur cette page. Dans Adobe Campaign, le canal d’envoi des notifications push est le canal de l’application mobile.
+Pour envoyer des notifications push avec Adobe Campaign, vous devez d’abord configurer votre environnement et votre application, comme décrit sur cette page. Dans Adobe Campaign, le canal d’envoi des notifications push est le canal des applications mobiles.
 
 >[!CAUTION]
 >
->Certaines modifications importantes apportées au service Android FCM (Firebase Cloud Messaging) seront publiées en 2024 et auront une incidence sur votre mise en œuvre d’Adobe Campaign. Il se peut que la configuration de vos services d’abonnement pour les messages push Android doive être mise à jour pour prendre en charge cette modification. Vous pouvez déjà vérifier et agir.
+>Certaines modifications importantes apportées au service Android FCM (Firebase Cloud Messaging) seront publiées en 2024 et pourront avoir une incidence sur votre mise en œuvre d’Adobe Campaign. Il se peut que la configuration de vos services d’abonnement pour les messages push Android doive être mise à jour pour prendre en charge cette modification. Vous pouvez déjà vérifier et agir.
 
 Avant de commencer à envoyer des notifications push avec Adobe Campaign, vous devez vous assurer que les configurations et les intégrations sont en place sur l’application mobile et pour les balises dans Adobe Experience Platform. Le SDK mobile Adobe Experience Platform fournit des API d’intégration côté client pour vos mobiles via les SDK compatibles Android et iOS.
 
@@ -61,7 +61,7 @@ Pour configurer votre application avec des SDK mobiles Adobe Experience Platfo
 1. (Facultatif) Ajoutez [Adobe Experience Platform Assurance à votre application](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} pour valider votre implémentation. Découvrez comment implémenter l’extension Adobe Experience Platform Assurance [sur cette page](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}.
 1. Configurez vos services mobiles iOS et Android dans Adobe Campaign, comme expliqué [sur cette page](#push-service).
 1. Installez et configurez l’[extension Adobe Campaign](#configure-extension) dans votre propriété mobile.
-1. Suivez la [documentation du SDK mobile Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} pour obtenir une configuration avec les SDK mobiles Adobe Experience Platform dans votre application.
+1. Consultez la [documentation Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} pour configurer les SDK mobiles Adobe Experience Platform dans votre application.
 
 ## Conditions préalables requises {#before-starting}
 
@@ -79,7 +79,7 @@ Pour attribuer des droits **Propriété** et **Entreprise**, procédez comme sui
 1. Dans l’onglet **[!UICONTROL Produits]**, sélectionnez la vignette **[!UICONTROL Collecte de données Adobe Experience Platform]**.
 1. Sélectionnez un **[!UICONTROL Profil de produit]** ou créez-en un à l’aide du bouton **[!UICONTROL Nouveau profil]**. Découvrez comment créer un **[!UICONTROL Nouveau profil]** dans la [documentation d’Admin Console](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html?lang=fr#ui){target="_blank"}.
 1. Dans l’onglet **[!UICONTROL Autorisations]**, sélectionnez **[!UICONTROL Droits de propriété]**.
-1. Cliquez sur **[!UICONTROL Tout ajouter]**. Vous ajouterez ainsi les droits suivants à votre profil de produit :
+1. Cliquez sur **[!UICONTROL Tout ajouter]**. Les droits suivants seront ajoutés à votre profil de produit :
    * **[!UICONTROL Approuver]**
    * **[!UICONTROL Développer]**
    * **[!UICONTROL Modifier la propriété]**
@@ -118,7 +118,7 @@ La configuration technique implique une collaboration étroite entre le dévelop
 Suivez les étapes de mise en œuvre présentées dans les liens ci-dessous :
 
 * Pour **Apple iOS** : découvrez comment enregistrer votre application avec des APNS dans la [documentation Apple](https://developer.apple.com/documentation/usernotifications/registering_your_app_with_apns){target="_blank"}.
-* Pour **Google Android** : découvrez comment configurer une application cliente Firebase Cloud Messaging sur Android dans la [documentation Google](https://firebase.google.com/docs/cloud-messaging/android/client){target="_blank"}.
+* Pour **Google Android** : découvrez comment configurer une application cliente Firebase Cloud Messaging sur Android dans la [Documentation Google](https://firebase.google.com/docs/cloud-messaging/android/client){target="_blank"}
 
 <!--
 ## Add your app push credentials in Adobe Experience Platform Data Collection {#push-credentials}
@@ -213,7 +213,7 @@ Pour créer une application pour les appareils iOS, procédez comme suit :
 1. Saisissez le nom de votre application dans le champ **[!UICONTROL Libellé]**.
 1. (facultatif) Vous pouvez enrichir le contenu d’un message push avec certaines **[!UICONTROL variables d’application]**. Elles sont entièrement personnalisables et font partie de la payload du message envoyé à l&#39;appareil mobile.
 
-   Dans l’exemple suivant, les variables **mediaURl** et **mediaExt** sont ajoutées pour créer une notification push enrichie et fournir à l’application l’image à afficher dans la notification.
+   Dans l’exemple ci-dessous, les variables **mediaURl** et **mediaExt** sont ajoutées pour créer des notifications push enrichies, puis fournir à l’application l’image à afficher dans la notification.
 
    ![](assets/ios-app-parameters.png){width="600"}
 
@@ -304,7 +304,7 @@ Vous trouverez ci-dessous les noms de payload FCM pour personnaliser davantage v
 
 ## Configurer l’extension Adobe Campaign dans votre propriété mobile {#configure-extension}
 
-L’**Extension Adobe Campaign Classic** pour les SDK mobiles Adobe Experience Platform alimente les notifications push de vos applications mobiles. Elle vous aide à collecter des jetons push utilisateur et à gérer la mesure des interactions avec les services Adobe Experience Platform.
+L&#39;extension **Adobe Campaign Classic** pour les SDK mobiles Adobe Experience Platform alimente les notifications push de vos applications mobiles et vous aide à collecter des jetons push utilisateur et à gérer la mesure des interactions avec les services Adobe Experience Platform.
 
 Cette extension, qui s’applique à la fois à Campaign Classic v7 et Campaign v8, est préinstallée sur votre environnement et doit être configurée. Pour configurer l’extension de votre propriété de balise mobile, procédez comme suit :
 

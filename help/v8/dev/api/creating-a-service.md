@@ -19,14 +19,14 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '77'
-ht-degree: 100%
+ht-degree: 84%
 ---
 # Créer un service à l’aide des API{#creating-a-service-api}
 
-La création de services est effectuée avec une requête **POST** sur la ressource de service.
+La création du service est effectuée avec une requête **POST** sur la ressource de service.
 
 Si vous souhaitez créer le service avec des attributs spécifiques, ajoutez-les à la payload. Sinon, le nouveau service sera créé avec les services par défaut.
 

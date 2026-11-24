@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '754'
-ht-degree: 97%
+ht-degree: 93%
 ---
 # Analyse des diffusions {#analyze-delivery}
 
@@ -36,7 +36,7 @@ L’analyse est l’étape de préparation de la diffusion. Lancez l’analyse u
 
 ## Lancer l’analyse {#start-the-analysis}
 
-Pour préparer la diffusion, vérifiez que le contenu et la cible de la diffusion ont été définis, puis effectuez les étapes suivantes :
+Pour préparer la diffusion, vérifiez que le contenu et la cible de la diffusion ont été définis, puis procédez comme suit :
 
 1. Dans la fenêtre de la diffusion, cliquez sur le bouton **[!UICONTROL Envoyer]**.
 1. Sélectionnez **[!UICONTROL Diffuser dès que possible]** pour effectuer le calcul de l’audience et la préparation du contenu en vue d’un envoi immédiat. Vous pouvez également reporter la diffusion à une date ultérieure ou obtenir une estimation de la population sans préparer le contenu.
@@ -45,7 +45,7 @@ Pour préparer la diffusion, vérifiez que le contenu et la cible de la diffusio
 
 1. Cliquez sur **[!UICONTROL Analyser]** pour lancer l’analyse manuellement. La barre de progression indique la progression de l’analyse.
 
-   Un jeu de règles de vérification est appliqué lors de l’analyse de la diffusion. Ces règles sont définies dans une **typologie**, accessible sous l’onglet **[!UICONTROL Typologie]** des propriétés de la diffusion. En savoir plus sur les typologies dans [cette section](../../automation/campaign-opt/campaign-typologies.md).
+   Un ensemble de règles de vérification est appliqué lors de l’analyse de la diffusion. Ces règles sont définies dans une **typologie**, accessible sous l’onglet **[!UICONTROL Typologie]** des propriétés de la diffusion. En savoir plus sur les typologies dans [cette section](../../automation/campaign-opt/campaign-typologies.md).
 
    Par défaut pour les e-mails, l’analyse exécute les tâches suivantes :
 
@@ -108,4 +108,4 @@ Cet onglet permet d&#39;accéder aux options suivantes :
 
 * **[!UICONTROL Lancer le traitement dans un processus détaché]** : cette option permet de lancer l’analyse de la diffusion dans un processus à part. Par défaut, la fonction d’analyse utilise le processus du serveur applicatif d&#39;Adobe Campaign (nlserver web). En cochant cette option, vous garantissez que l’analyse sera menée à son terme même en cas de défaillance du serveur applicatif.
 * **[!UICONTROL Enregistrer les requêtes SQL pendant l’analyse dans le journal]** : cette option permet d’ajouter les logs des requêtes SQL dans le log de la diffusion lors de la phase d&#39;analyse.
-* **[!UICONTROL Ignorer les scripts de personnalisation lors de l’envoi]** : cette option permet de contourner l’interprétation des directives JavaScript présentes dans le contenu HTML. Elles seront affichées telles quelles dans le contenu diffusé. Ces directives sont introduites par la balise `<%=`.
+* **[!UICONTROL Ignorer les scripts de personnalisation lors de l&#39;envoi]** : cette option permet de contourner l&#39;interprétation des directives JavaScript présentes dans le contenu HTML. Elles seront affichées telles quelles dans le contenu diffusé. Ces directives sont introduites par la balise `<%=`.

@@ -38,7 +38,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1302'
 ht-degree: 94%
@@ -65,7 +65,7 @@ Les schémas vous permettent de définir une entité dans la base de données. �
 
 Dans Adobe Campaign, les schémas de données permettent de :
 
-* définir la façon dont les objets de données de l&#39;application sont liés à des tables de la base de données ;
+* définir la façon dont les objets de l&#39;application sont liés à des tables de la base de données ;
 * définir des liens entre les différents objets de l&#39;application ;
 * définir et décrire les champs individuels inclus dans chaque objet.
 
@@ -125,7 +125,7 @@ Certains espaces de noms sont réservés à la description des entités système
 * **temp** : réservé aux schémas temporaires
 * **crm** : réservé à l&#39;intégration des connecteurs CRM
 
-La clé d&#39;identification d&#39;un schéma est une chaîne construite avec l&#39;espace de noms et le nom séparés par le caractère &#39;:&#39; (par exemple : **nms:recipient**.
+La clé d&#39;identification d&#39;un schéma est une chaîne construite avec l&#39;espace de noms et le nom séparés par le caractère &#39;:&#39; (par exemple : **nms:recipient**).
 
 ## Création ou extension de schémas Campaign {#create-or-extend-schemas}
 
@@ -231,7 +231,7 @@ Les attributs vous permettent de définir les champs qui constituent votre objet
 
 La liste complète des attributs est disponible dans la section consacrée aux éléments `<attribute>` de la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=fr#content-model){target="_blank"}. Voici quelques-uns des attributs les plus utilisés : **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
 
-Pour plus d&#39;informations sur chaque attribut, consultez la description des attributs dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=fr#configuring-campaign-classic){target="_blank"}.
+Pour plus d&#39;informations sur chaque attribut, consultez la description des attributs dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=fr#configuring-campaign-classic){target="_blank"}.
 
 ### Exemples {#examples}
 

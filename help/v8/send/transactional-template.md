@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 98%
+source-wordcount: '1264'
+ht-degree: 94%
 ---
 # Créer et publier votre modèle pour les messages transactionnels{#template-transactional-messages}
 
@@ -76,7 +76,7 @@ La définition du contenu du message transactionnel est la même que pour toutes
 >Les images incluses dans le message doivent être accessibles publiquement. Adobe Campaign ne fournit pas de mécanisme de chargement des images pour les messages transactionnels.\
 >Contrairement à JSSP ou webApp, `<%=` n’a pas de séquence d’échappement par défaut.
 >
->Vous devez appliquer une séquence d&#39;échappement correcte à toutes les données provenant de l&#39;événement. Cette séquence d&#39;échappement dépend de l&#39;utilisation de ce champ. Par exemple, dans une URL, utilisez encodeURIComponent. Pour un affichage dans le code HTML, vous pouvez utiliser escapeXMLString.
+>Vous devez appliquer une séquence d’échappement correcte à chaque élément de données provenant de l’événement. Cette séquence d&#39;échappement dépend de l&#39;utilisation de ce champ. Par exemple, dans une URL, utilisez encodeURIComponent. Pour un affichage dans le code HTML, vous pouvez utiliser escapeXMLString.
 
 Lorsque vous avez défini le contenu de votre message, vous pouvez intégrer les informations sur l’événement dans le corps du message et les personnaliser. Les informations sur l’événement sont insérées dans le corps du texte à l’aide de balises de personnalisation.
 
@@ -191,7 +191,7 @@ Si vous [effectuez une transition à partir de Campaign Classic v7](../start/v
 
 Cependant, lors de la création d’un modèle de message transactionnel, le routage nécessaire pour que le modèle soit utilisé avec succès est **diffusion e-mail interne**. Ce routage vous empêche d’envoyer des BAT.
 
-Par conséquent, pour envoyer un BAT pour votre modèle de message transactionnel, vous devez modifier le routage de la diffusion e-mail interne vers le **compte de routage midsourcing**.
+Par conséquent, pour envoyer un BAT pour votre modèle de message transactionnel, vous devez modifier le routage de la diffusion e-mail interne vers le **compte de routage en midsourcing**.
 
 ![](assets/messagecenter_send_proof_004.png)
 

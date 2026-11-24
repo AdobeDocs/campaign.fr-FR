@@ -21,10 +21,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1113'
-ht-degree: 100%
+ht-degree: 99%
 ---
 # Joindre des fichiers à un e-mail{#attaching-files}
 
@@ -34,7 +34,7 @@ Vous pouvez joindre un ou plusieurs fichiers à une diffusion d’email.
 
 >[!NOTE]
 >
->Pour éviter tout problème de performances, il est recommandé de ne pas inclure plusieurs pièces jointes par email. Le seuil recommandé peut être configuré à partir de la liste des options de Campaign. Reportez-vous à la [documentation de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=fr#delivery).
+>Pour éviter tout problème de performances, il est recommandé de ne pas inclure plusieurs pièces jointes par e-mail. Le seuil recommandé peut être configuré à partir de la liste des options de Campaign. Reportez-vous à la [documentation de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=fr#delivery).
 
 Deux cas se présentent :
 
@@ -59,7 +59,7 @@ Pour joindre un fichier local à une diffusion, procédez comme suit.
 
 >[!NOTE]
 >
->Vous pouvez joindre plusieurs fichiers à une diffusion. Les pièces jointes peuvent être dans n’importe quel format, format compressé inclus.
+>Vous pouvez joindre plusieurs fichiers à une diffusion. Les pièces jointes peuvent avoir n’importe quel format, y compris le format compressé.
 
 1. Cliquez sur le lien **[!UICONTROL Pièces jointes]**.
 1. Cliquez sur le bouton **[!UICONTROL Ajouter]**.

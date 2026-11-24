@@ -29,14 +29,14 @@ level_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 79%
+source-wordcount: '538'
+ht-degree: 71%
 ---
 # Utiliser des audiences dans Campaign{#gs-ac-audiences}
 
-Les profils représentent les contacts stockés dans votre base de données Adobe Campaign. Par défaut, les **destinataires** sont les profils principaux utilisés lors de l’envoi de diffusions telles que les e-mails, les SMS ou le publipostage direct. Les données de destinataires stockées dans la base de données vous permettent de définir et de filtrer les audiences cibles et de personnaliser le contenu des diffusions. Outre les destinataires, d’autres types de profils existent à des fins spécifiques. Par exemple, les profils de contrôle vous permettent de tester les diffusions avant leur envoi à votre audience réelle.
+Les profils représentent les contacts stockés dans votre base de données Adobe Campaign. Par défaut, **destinataires** sont les profils principaux utilisés lors de l’envoi de diffusions telles que les e-mails, les SMS ou le publipostage direct. Les données de destinataires stockées dans la base de données vous permettent de définir et de filtrer les audiences cibles et de personnaliser le contenu des diffusions. Outre les destinataires, d’autres types de profils existent à des fins spécifiques. Par exemple, les profils de contrôle vous permettent de tester les diffusions avant leur envoi à votre audience réelle.
 
 Découvrez comment importer, mettre à jour et gérer des profils et des audiences [dans cette section](../audiences/gs-audiences.md).
 
@@ -61,9 +61,9 @@ Découvrez comment créer une audience dans un workflow de campagne sur [cette p
 
 ## Profils actifs {#active-profiles}
 
-Un profil actif est un profil avec lequel le client ou la cliente a tenté de communiquer au cours des 12 derniers mois via n’importe quel canal.
+Un profil actif est un profil avec lequel un client a tenté de communiquer au cours des 12 derniers mois via n’importe quel canal.
 
-Conformément à votre contrat, chacune de vos instances Campaign est configurée avec un nombre spécifique de profils actifs comptabilisés à des fins de facturation. Consultez votre dernier contrat pour connaître le nombre de profils actifs achetés. En savoir plus dans la description du produit [&#128279;](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+Conformément à votre contrat, chacune de vos instances Campaign est configurée avec un nombre spécifique de profils actifs comptabilisés à des fins de facturation. Consultez votre dernier contrat pour connaître le nombre de profils actifs achetés. En savoir plus dans la [description du produit Adobe Campaign](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 Vous pouvez surveiller le nombre de profils actifs utilisés sur votre instance directement à partir du panneau de contrôle de Campaign. Pour plus d&#39;informations, consultez la [documentation du Panneau de contrôle](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=fr){target="_blank"}.
 
@@ -76,7 +76,7 @@ Les limitations et mécanismes de sécurisation suivants s’appliquent :
 
 ## Confidentialité et consentement{#privacy-and-consent}
 
-Adobe Campaign est un puissant outil servant à collecter et à traiter de très grands volumes de données, notamment des informations personnelles et des données sensibles. Adobe Campaign vous permet de collecter des données, y compris des informations personnelles et sensibles. Il est donc essentiel de recevoir et surveiller le consentement de vos destinataires.
+Adobe Campaign est un outil puissant permettant de collecter et de traiter de grands volumes de données, notamment des informations personnelles et des données sensibles. Adobe Campaign vous permet de collecter des données, y compris des informations personnelles et sensibles. Il est donc essentiel de recevoir et surveiller le consentement de vos destinataires.
 
 Découvrez comment gérer la confidentialité et le consentement dans la documentation de [Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr){target="_blank"}.
 
