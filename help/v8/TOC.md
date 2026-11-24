@@ -5,9 +5,9 @@ user-guide-description: Documentation du produit pour Adobe Campaign v8 (conso
 title: Documentation Adobe Campaign v8
 description: Documentation Campaign v8
 breadcrumb-title: Documentation Campaign v8
-source-git-commit: ffa29306eb4402ed20c7d04bdbbaffd4dde5bfe4
+source-git-commit: 2da6239843538ec459e7d3dfe0514a56e4a941be
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1102'
 ht-degree: 88%
 ---
 
@@ -271,6 +271,7 @@ ht-degree: 88%
   + [Principes généraux](architecture/general-architecture.md)
   + [Modèles d’architecture](architecture/architecture.md)
   + {hide-from-toc}[Packages natifs](architecture/built-in-packages.md)
+  + {hide-from-toc}[Options de Campaign](architecture/campaign-options.md)
   + [Déploiement FDA de Campaign](architecture/fda-deployment.md)
   + Déploiement Grands comptes (FFDA) {#ffda}
     + [Qu’est-ce que Campaign FFDA ?](architecture/enterprise-deployment.md)
