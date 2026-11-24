@@ -109,7 +109,7 @@ Vous accédez aux informations suivantes :
 
 Les nouvelles versions et leurs modifications sont répertoriées dans les [notes de mise à jour](release-notes.md).
 
-Pour connaître les mises à jour des versions de produits, abonnez-vous aux [Mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/fr/subscription/priority-product-update.html){target="_blank"} ou visitez la [communauté de Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}.
+Pour connaître les mises à jour des versions de produits, abonnez-vous aux [Mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/fr/subscription/priority-product-update.html){target="_blank"} ou visitez la [communauté de Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?profile.language=fr&style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}.
 
 Pour obtenir des notifications de sécurité et des conseils sur la préparation de votre organisation aux mises à jour de sécurité, consultez [Rester informé](#security-staying-informed).
 

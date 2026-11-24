@@ -62,7 +62,7 @@ D&#39;un autre côté, les **profils** peuvent être sur la **liste bloquée**, 
 
 >[!NOTE]
 >
->Les destinataires désabonnés via la méthode List-Unsubscribe [« mailto »](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} ne sont pas mis en quarantaine. Ils sont soit désabonnés du [service](../start/subscriptions.md) associé à la diffusion, soit envoyés à la (visible dans la section **[!UICONTROL Ne plus contacter]** du profil) si aucun service n&#39;a été défini pour la diffusion.
+>Les destinataires désabonnés via la méthode List-Unsubscribe [« mailto »](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} ne sont pas mis en quarantaine. Ils sont soit désabonnés du [service](../start/subscriptions.md) associé à la diffusion, soit envoyés à la (visible dans la section **[!UICONTROL Ne plus contacter]** du profil) si aucun service n&#39;a été défini pour la diffusion.
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 
