@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '4464'
-ht-degree: 89%
+ht-degree: 88%
 ---
 # Validation d’une connexion SMPP {#validate-smpp-connection}
 
@@ -229,7 +229,7 @@ Il est recommandé de rester en contact avec le fournisseur, qui communique souv
 * Vérifiez que le réseau est correctement configuré pour que la connexion TCP puisse être établie avec le fournisseur.
 * Demandez au fournisseur de vérifier qu’il a correctement autorisé les adresses IP de l’instance Adobe Campaign (la plupart des fournisseurs l’exigent).
 * Vérifiez les paramètres de compte externe. Demandez au fournisseur en cas de doute sur la valeur de certains champs.
-* Si la connexion est réussie mais instable, consultez la section [Problèmes de connexion instable](#unstable-connections) ci-dessous.
+* Si la connexion a réussi mais est instable, vérifiez les [problèmes de connexions instables](#unstable-connections) ci-dessous.
 * Si les problèmes de connexion sont difficiles à diagnostiquer, une capture réseau vous apporte beaucoup d’informations. Assurez-vous que la capture réseau s’exécute simultanément pendant que le problème s’affiche pour pouvoir être analysé efficacement. Vous devez également noter l’heure exacte à laquelle le problème apparaît, afin qu’il soit plus facile de trouver le problème dans les captures réseau.
 
 #### Problèmes de connexion instable {#unstable-connections}
@@ -261,7 +261,7 @@ Une connexion est considérée comme instable si l’une des situations suivante
 * Vérifiez que le broadlog est présent et que son statut est correct avec les dates correctes. Si ce n’est pas le cas, il ne s’agit pas d’un problème de SMS, mais d’un problème de diffusion ou de préparation de la diffusion (cela n’entre pas dans le cadre de ce document).
 * Vérifiez que le connecteur SMS est effectivement lié à l&#39;équipement du fournisseur. Demandez au fournisseur de faire part de ses commentaires pour assurer que tous les systèmes communiquent correctement. Pour plus d’informations sur le processus de liaison, consultez les PDU BIND_TRANSMITTER et BIND_TRANSCEIVER. Vous devrez peut-être activer les traces SMPP pour résoudre correctement les problèmes.
 * Lorsque les traces SMPP sont activées, vérifiez que le PDU SUBMIT_SM contient les informations appropriées (voir la documentation ci-dessus).
-* Vérifiez que le fournisseur répond par un PDU SUBMIT_SM_RESP avec une valeur « OK » (code 0). Assurez-vous que le PDU arrive avec un délai raisonnable : tout ce qui dure plus d’une seconde doit faire l’objet d’une discussion avec le fournisseur (il arrive habituellement en moins de 100 ms).
+* Vérifiez que le fournisseur répond avec un PDU SUBMIT_SM_RESP avec une valeur « OK » (code 0). Assurez-vous que le PDU arrive avec un délai raisonnable : tout ce qui dure plus d’une seconde doit faire l’objet d’une discussion avec le fournisseur (il arrive habituellement en moins de 100 ms).
 * Si toutes ces étapes fonctionnent, vous pouvez être certain que le problème est du côté fournisseur. Il devra effectuer une résolution des problèmes sur sa plateforme.
 * Si cela fonctionne mais que le débit n&#39;est pas constant, essayez d&#39;ajuster la fenêtre d&#39;émission et d&#39;abaisser le débit MT. Vous devrez travailler avec le fournisseur pour l&#39;ajuster. Adobe Campaign peut envoyer des messages très rapidement de sorte que des problèmes de performances peuvent survenir sur l’équipement du fournisseur.
 

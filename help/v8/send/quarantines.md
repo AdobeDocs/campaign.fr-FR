@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d027f76f86f34524ddf5b620de32cdcc98e60d21
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1429'
 ht-degree: 67%
 ---
 # Quarantaine {#quarantine-management}
@@ -58,11 +58,11 @@ La **quarantaine** s&#39;applique uniquement à une **adresse**, un **numéro de
 >
 >Lorsque les destinataires signalent votre message comme spam ou répondent à un message SMS avec un mot-clé tel que « STOP », leur adresse ou numéro de téléphone est mis en quarantaine comme **[!UICONTROL Placé sur la liste bloquée]**. Leur profil est mis à jour en conséquence.
 
-D&#39;un autre côté, les **profils** peuvent être sur la **liste bloquée** comme après une désinscription (opt-out), pour un canal donné : cela signifie qu&#39;ils ne sont plus ciblés par aucune diffusion. Ainsi, si un profil de la liste bloquée pour le canal e-mail comporte deux adresses e-mail, les deux adresses seront exclues de la diffusion. Vous pouvez vérifier si un profil est sur liste bloquée pour un ou plusieurs canaux dans la section **[!UICONTROL Ne plus contacter]** de l’onglet **[!UICONTROL Général]** du profil. [En savoir plus](../audiences/view-profiles.md)
+D&#39;un autre côté, les **profils** peuvent être sur la **liste bloquée**, par exemple après une désinscription (opt-out), pour un canal donné : cela signifie qu&#39;ils ne sont plus ciblés par aucune diffusion. Ainsi, si un profil de la liste bloquée pour le canal e-mail comporte deux adresses e-mail, les deux adresses seront exclues de la diffusion. Vous pouvez vérifier si un profil est sur liste bloquée pour un ou plusieurs canaux dans la section **[!UICONTROL Ne plus contacter]** de l’onglet **[!UICONTROL Général]** du profil. [En savoir plus](../audiences/view-profiles.md)
 
 >[!NOTE]
 >
->Les destinataires désabonnés via la méthode List-Unsubscribe [« mailto »](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} ne sont pas mis en quarantaine. Ils sont soit désabonnés du [service](../start/subscriptions.md) associé à la diffusion, soit envoyés à la (visible dans la section **[!UICONTROL Ne plus contacter]** du profil) si aucun service n&#39;a été défini pour la diffusion.
+>Les destinataires désabonnés via la méthode List-Unsubscribe [« mailto »](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} ne sont pas mis en quarantaine. Ils sont soit désabonnés du [service](../start/subscriptions.md) associé à la diffusion, soit envoyés à la (visible dans la section **[!UICONTROL Ne plus contacter]** du profil) si aucun service n&#39;a été défini pour la diffusion.
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 

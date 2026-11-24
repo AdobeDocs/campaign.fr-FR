@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 96%
+source-wordcount: '907'
+ht-degree: 93%
 ---
 # Réponses aux formulaires web{#web-forms-answers}
 
@@ -99,19 +99,19 @@ Ainsi, si l&#39;utilisateur sélectionne un véhicule utilitaire, le formulaire 
 
 Pour chaque formulaire, les réponses fournies peuvent être réutilisées dans les champs ou les libellés. Les syntaxes à utiliser sont les suivantes :
 
-* Pour un contenu stocké dans un champ de la base :
+* Pour le contenu stocké dans un champ de la base :
 
   ```
   <%=ctx.recipient.@field name%
   ```
 
-* Pour un contenu stocké dans une variable locale :
+* Pour le contenu stocké dans une variable locale :
 
   ```
   <%= ctx.vars.variable name %
   ```
 
-* Pour un contenu stocké dans un champ texte HTML :
+* Pour le contenu stocké dans un champ de texte HTML :
 
   ```
   <%== HTML field name %
@@ -153,4 +153,4 @@ Vous pouvez sélectionner un dossier de recherche pour la réconciliation et le 
 >
 >Les opérations possibles sont : **[!UICONTROL Réconciliation seule]**,**[!UICONTROL Mise à jour ou insertion]**, **[!UICONTROL Insertion]**, **[!UICONTROL Mise à jour]**, **[!UICONTROL Suppression]**.\
 >Le dossier par défaut de l&#39;opérateur correspond au premier dossier dans lequel l&#39;opérateur a le droit d&#39;écrire.\
->Consultez [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
+>Consultez [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.

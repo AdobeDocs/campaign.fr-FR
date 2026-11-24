@@ -37,10 +37,10 @@ topic_v2:
     internal-label: Measurement
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '1986'
-ht-degree: 90%
+source-wordcount: '1989'
+ht-degree: 88%
 ---
 # Configurer le canal de notification push {#push-notification-configuration}
 
@@ -219,7 +219,7 @@ Pour créer une application pour les appareils iOS, procédez comme suit :
 
 1. Accédez à l’onglet **[!UICONTROL Paramètres d’abonnement]** pour définir le mapping avec une extension du schéma **[!UICONTROL Applications abonnées (nms:appsubscriptionRcp)]**.
 
-1. Accédez à l’onglet **[!UICONTROL Sons]** pour définir un son à lire. Cliquez sur **[!UICONTROL Ajouter]** et renseignez le champ **[!UICONTROL Nom interne]**. Il doit contenir le nom du fichier incorporé dans l’application ou le nom du son système.
+1. Accédez à l’onglet **[!UICONTROL Sons]** pour définir un son à lire. Cliquez sur **[!UICONTROL Ajouter]** et renseignez le champ **[!UICONTROL Nom interne]** qui doit contenir le nom du fichier incorporé dans l&#39;application ou le nom du son système.
 
 1. Cliquez sur **[!UICONTROL Suivant]** pour passer à la configuration de l’application de développement.
 
@@ -274,7 +274,7 @@ Pour créer une application pour les appareils Android, procédez comme suit :
    >
 
 1. Sélectionnez l’icône dans le champ **[!UICONTROL Icône de l’application]** pour personnaliser l’application mobile dans votre service.
-1. Sélectionnez **HTTP v1** dans la liste déroulante **[!UICONTROL Version de l’API]**.
+1. Sélectionnez **HTTP v1** dans la liste déroulante **[!UICONTROL Version de l’API]**.
 1. Cliquez sur le lien **[!UICONTROL Charger le fichier JSON du projet pour extraire les détails du projet…]** pour charger votre fichier de clé JSON. Pour plus d’informations sur l’extraction de votre fichier JSON, consultez la [documentation sur Google Firebase](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
    Vous pouvez également saisir manuellement les informations suivantes :

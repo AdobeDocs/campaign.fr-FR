@@ -19,7 +19,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1334'
 ht-degree: 93%
@@ -103,7 +103,7 @@ Une règle de typologie spécifique, la **[!UICONTROL Vérification de la planif
 
 ### Surveiller les vagues {#monitor-waves}
 
-Pour su vos envois, accédez aux logs de diffusion. Voir [cette page](send.md)
+Pour su vos envois, accédez aux logs de diffusion. Voir [cette page](send.md).
 
 Vous pouvez visualiser les diffusions qui ont déjà été envoyées dans les vagues traitées (statut **[!UICONTROL Envoyé]**) et celles à envoyer dans les vagues restantes (statut **[!UICONTROL En attente]**).
 

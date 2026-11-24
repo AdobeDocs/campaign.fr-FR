@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 90%
+source-wordcount: '764'
+ht-degree: 87%
 ---
 # Autres opérations {#additional-operations}
 
@@ -462,4 +462,4 @@ Par défaut, le nœud **next** n’est pas disponible lors de l’interaction av
 
 >[!NOTE]
 >
->Le nombre d’enregistrements au-dessus duquel un tableau est considéré comme volumineux est défini dans l’option **XtkBigTableThreshold** de Campaign Standard. La valeur par défaut est 100 000 enregistrements.
+>Le nombre d&#39;enregistrements au-dessus desquels un tableau est considéré comme volumineux est défini dans l&#39;option Campaign Standard **XtkBigTableThreshold**. La valeur par défaut est 100 000 enregistrements.

@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 100%
+source-wordcount: '107'
+ht-degree: 88%
 ---
 # Créer manuellement des profils{#create-profiles-manual}
 
@@ -36,7 +36,7 @@ Pour renseigner votre base de données Campaign, vous pouvez [importer des profi
 
 Pour créer un destinataire manuellement, procédez comme suit :
 
-1. Accédez à l&#39;onglet **[!UICONTROL Profils et cibles]** et sélectionnez la catégorie **[!UICONTROL Destinataires]**.
+1. Accédez à l’onglet **[!UICONTROL Profils et cibles]** et sélectionnez la catégorie **[!UICONTROL Destinataires]**.
 
    ![](assets/profiles-and-targets.png)
 

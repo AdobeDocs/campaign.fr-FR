@@ -26,10 +26,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 83%
+ht-degree: 78%
 ---
 # Sélectionner l’audience de votre diffusion SMS {#sms-audience}
 
@@ -41,7 +41,7 @@ Dans la plupart des cas, la cible principale d&#39;une diffusion est extraite de
 
 Pour sélectionner l’audience d’une diffusion, procédez comme suit :
 
-1. Dans l’éditeur de diffusion, cliquez sur le lien **[!UICONTROL À]**. Une fenêtre **[!UICONTROL Sélectionner la cible]** s’ouvre.
+1. Dans l&#39;éditeur de diffusion, cliquez sur le lien **[!UICONTROL Vers]**. Une fenêtre **[!UICONTROL Sélectionner la cible]** s’ouvre.
 
 1. L&#39;audience étant stockée dans la base de données Adobe Campaign, dans l&#39;onglet **[!UICONTROL Cible principale]**, choisissez l&#39;option **[!UICONTROL Définie dans la base de données]**.
 

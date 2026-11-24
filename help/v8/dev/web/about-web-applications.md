@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '877'
-ht-degree: 77%
+ht-degree: 75%
 ---
 # Prise en main des applications web{#about-web-applications}
 
@@ -67,7 +67,7 @@ Ce chapitre présente la gestion des applications web.
 
 >[!NOTE]
 >
->Consultez la [Liste de contrôle relative à la sécurité et à la confidentialité](https://helpx.adobe.com/fr/campaign/kb/acc-security.html) pour savoir comment optimiser la sécurité pour les applications web.
+>Consultez la [Liste de contrôle relative à la sécurité et à la confidentialité](https://helpx.adobe.com/campaign/kb/acc-security.html) pour savoir comment optimiser la sécurité pour les applications web.
 
 >[!CAUTION]
 >
@@ -82,24 +82,24 @@ Sous Adobe Campaign, les applications web permettent d’accéder aux fonctionn
 * Interface graphique de gestion des pages, mise en page en multi-colonnes. Voir à ce propos [cette page](designing-a-web-application.md).
 * Personnalisation du rendu et du positionnement des champs. Voir à ce propos [cette page](editing-content.md#adding-personalization-content).
 * Affichage conditionnel des champs du formulaire en fonction des réponses. Voir à ce propos [cette page](form-rendering.md#defining-fields-conditional-display).
-* Affichage aléatoire de questions. Pour en savoir plus à ce sujet, consultez cette [page](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/content/surveys/building-a-survey#adding-questions){target="_blank"} (documentation de Campaign v8).
+* Affichage aléatoire de questions. Pour en savoir plus à ce sujet, consultez cette [page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/building-a-survey#adding-questions){target="_blank"} (documentation de Campaign v8).
 * Affichage conditionnel des pages. Voir à ce propos [cette page](defining-web-forms-page-sequencing.md#conditional-page-display).
 * Vérification des informations avant validation en fonction du type de données attendu (numéro, adresse e-mail, date, etc.) et des champs obligatoires. Pour en savoir plus à ce sujet, consultez cette [page](form-rendering.md#defining-control-settings).
 * Invitations ou notifications par e-mail. Voir à ce propos [cette page](publishing-a-web-form.md#delivering-a-form-via-email).
 * Personnalisation des messages d’erreur et de fin. Voir à ce propos [cette page](defining-web-forms-properties.md#setting-up-an-error-page).
 * Utilisation d’images, vidéos, liens hypertextes, captcha, etc. Pour davantage d’informations à ce sujet, consultez cette [page](editing-content.md).
-* Su des réponses en temps réel. Pour en savoir plus à ce sujet, consultez cette [page](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#response-tracking){target="_blank"} (documentation de Campaign v8).
+* Su des réponses en temps réel. Pour en savoir plus à ce sujet, consultez cette [page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#response-tracking){target="_blank"} (documentation de Campaign v8).
 
 Le module de création **Questionnaire** optionnel offre les fonctionnalités additionnelles suivantes :
 
-* Extension dynamique de la base de données : création de réponses ne faisant pas partie du modèle de données initial. Pour en savoir plus à ce sujet, consultez cette [page](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/content/surveys/managing-answers#storing-collected-answers){target="_blank"} (documentation de Campaign v8).
-* Génération de rapports dédiés. Pour en savoir plus à ce sujet, consultez cette [page](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"} (documentation de Campaign v8).
+* Extension dynamique de la base de données : création de réponses ne faisant pas partie du modèle de données initial. Pour en savoir plus à ce sujet, consultez cette [page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/managing-answers#storing-collected-answers){target="_blank"} (documentation de Campaign v8).
+* Génération de rapports dédiés. Pour en savoir plus à ce sujet, consultez cette [page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"} (documentation de Campaign v8).
 
 Par rapport aux applications Web, les questionnaires proposent une interface graphique allégée : le nombre de contrôles d’édition est réduit.
 
 >[!NOTE]
 >
->Les questionnaires sont détaillés dans [cette section](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (documentation de Campaign v8).
+>Les questionnaires sont détaillés dans [cette section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (documentation de Campaign v8).
 >
 >Les fonctionnalités générales des formulaires web sous Adobe Campaign sont présentées dans [cette section](about-web-forms.md).
 
@@ -112,7 +112,7 @@ Pour créer et rendre disponible une application web, vous devez :
    Vous pouvez également consulter la section qui présente les champs disponibles pour les formulaires : tous ces champs sont aussi disponibles pour les applications web. Ces informations sont disponibles dans [cette page](adding-fields-to-a-web-form.md).
 
 1. Ajouter, au besoin, des étapes de préchargement, de test, d’enregistrement et paramétrer le contrôle d’accès (principalement dans le cadre d’une publication sur un extranet).
-1. Publier l’application web pour la rendre disponible sur un extranet ou dans Adobe Campaign.
+1. Publiez l&#39;application web pour la rendre disponible sur un extranet ou dans Adobe Campaign.
 
 ## Configuration initiale des applications web {#web-application-initial-configuration}
 

@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1111'
-ht-degree: 100%
+ht-degree: 98%
 ---
 # Gérer la présentation des offres{#managing-offer-presentation}
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 ## Aperçu des règles de présentation {#presentation-rules-overview}
 
-Interaction vous permet de contrôler le flux des propositions d’offre à l’aide des règles de présentation. Ces règles, spécifiques à Interaction, sont des règles de typologie. Elles permettent d&#39;exclure les offres en fonction de l&#39;historique des propositions déjà faites à un destinataire. Elles sont référencées dans l’environnement.
+Interaction vous permet de contrôler le flux des propositions d’offre à l’aide des règles de présentation. Ces règles, spécifiques à Interaction, sont des règles de typologie. Elles permettent d&#39;exclure les offres en fonction de l&#39;historique des propositions déjà faites à un destinataire. Elles sont référencées dans l&#39;environnement.
 
 ## Créer et référencer une règle de présentation d&#39;offre {#creating-and-referencing-an-offer-presentation-rule}
 
@@ -65,7 +65,7 @@ Interaction vous permet de contrôler le flux des propositions d’offre à l’
 
 ### Critères d&#39;application {#application-criteria-}
 
-Disponibles dans l’onglet **[!UICONTROL Général]**, les critères d’application vous permettent de déterminer les offres auxquelles la règle de présentation s’appliquera. Pour cela, vous devez créer une requête et choisir les offres concernées, comme décrit ci-dessous.
+Les critères d&#39;application disponibles dans l&#39;onglet **[!UICONTROL Général]** permettent de définir les offres auxquelles la règle de présentation s&#39;appliquera. Pour cela, vous devez créer une requête et choisir les offres concernées, comme décrit ci-dessous.
 
 1. Dans votre règle de typologie, cliquez sur le lien **[!UICONTROL Editer les critères d&#39;application de la règle]** pour créer votre requête.
 

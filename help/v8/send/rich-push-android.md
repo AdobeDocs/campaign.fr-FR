@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '2365'
-ht-degree: 99%
+source-wordcount: '2368'
+ht-degree: 97%
 ---
 # Concevoir une diffusion de notification push Android enrichie {#rich-push}
 
@@ -159,7 +159,7 @@ Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser
    * **[!UICONTROL Auto]** : fait automatiquement défiler les images sous forme de diapositives, selon des transitions à intervalles prédéfinis.
    * **[!UICONTROL Manuel]** : permet de passer manuellement d’une diapositive à l’autre pour naviguer dans les images.
 
-1. Dans le menu déroulant **[!UICONTROL Disposition]**, sélectionnez l’option **[!UICONTROL Pellicule]** pour inclure la prévisualisation des images précédente et suivante à côté de la diapositive principale.
+1. Dans la liste déroulante **[!UICONTROL Disposition]**, sélectionnez l’option **[!UICONTROL Filmstrip]** pour inclure des aperçus des images précédentes et suivantes à côté de la diapositive principale.
 
 1. Cliquez sur **[!UICONTROL Ajouter une image]** et saisissez l’URL, l’URL d’action, et le texte de votre image.
 
@@ -240,7 +240,7 @@ Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser
 
 1. Dans le menu **[!UICONTROL Options des couleurs]**, saisissez les codes hexadécimaux des couleurs de votre **[!UICONTROL Titre]**, **[!UICONTROL Message]** et **[!UICONTROL Arrière-plan]**.
 
-1. Dans le menu **[!UICONTROL Options du catalogue des produits]**, renseignez les options suivantes :
+1. Dans le menu **[!UICONTROL Options du catalogue de produits]**, renseignez les options suivantes :
 
    * **[!UICONTROL Texte du bouton d’action]** : texte affiché sur le bouton.
    * **[!UICONTROL Couleur du texte du bouton d’action]** : couleur du texte du bouton d’action.
@@ -284,7 +284,7 @@ Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser
 
    ![](assets/rich_push_rating_3.png)
 
-1. Dans le menu **[!UICONTROL Éléments d’évaluation des produits]**, cliquez sur **[!UICONTROL Ajouter]**, saisissez votre **[!UICONTROL URI de lien]** et choisissez votre **[!UICONTROL Type de lien]**.
+1. Dans le menu **[!UICONTROL Éléments d’évaluation de produit]**, cliquez sur **[!UICONTROL Ajouter]**, saisissez votre **[!UICONTROL URI de lien]** et choisissez votre **[!UICONTROL type de lien]**.
 
    * **[!UICONTROL URL web]** : les URL web orientent les utilisateurs et les utilisatrices vers du contenu en ligne. Après un clic, celles-ci entrainent l’ouverture du navigateur web par défaut de l’appareil qui accède ensuite à l’URL désignée.
 

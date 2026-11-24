@@ -31,10 +31,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1037'
-ht-degree: 97%
+ht-degree: 95%
 ---
 # Cas d’utilisation : création de pages de vue d’ensemble{#use-cases-creating-overviews}
 
@@ -140,7 +140,7 @@ Lorsque vous paramétrez une liste dans votre vue d&#39;ensemble, vous pouvez ch
 
    ![](assets/s_ncs_configuration_webapp_detail.png)
 
-1. Dans l&#39;onglet **[!UICONTROL Données]**, ajoutez les colonnes **[!UICONTROL Clé primaire]**, **[!UICONTROL Nom interne]** et **[!UICONTROL Description]** et cochez l&#39;option **[!UICONTROL Champ non visible]** pour chacune d&#39;elles.
+1. Dans l’onglet **[!UICONTROL Données]**, ajoutez les colonnes **[!UICONTROL Clé de Principal]** , **[!UICONTROL Nom interne]** et **[!UICONTROL Description]** et sélectionnez l’option **[!UICONTROL Champ masqué]** pour chacune.
 
    ![](assets/s_ncs_configuration_webapp_detail002.png)
 

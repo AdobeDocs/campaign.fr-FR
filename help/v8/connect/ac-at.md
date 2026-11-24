@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1047'
-ht-degree: 95%
+ht-degree: 93%
 ---
 # Utilisation de Campaign et Adobe Target
 
@@ -97,7 +97,7 @@ Vous pouvez ensuite définir les paramètres de l&#39;image :
 * L&#39;URL de l&#39;**[!UICONTROL image par défaut]** correspond à l&#39;image affichée lorsqu&#39;aucune des conditions n&#39;est remplie. Vous pouvez également sélectionner une image dans votre bibliothèque Assets.
 * L&#39;**[!UICONTROL emplacement de la cible]** correspond au nom de l&#39;emplacement de votre offre dynamique. Vous devrez sélectionner cet emplacement dans votre activité Adobe Target.
 * La **[!UICONTROL landing page]** vous permet de rediriger l&#39;image par défaut vers une landing page par défaut. Cette URL s&#39;applique uniquement lorsque l&#39;image par défaut est affichée dans l&#39;e-mail final. Elle est facultative.
-* Les **[!UICONTROL Paramètres de décision additionnels]** définissent le mapping entre les champs définis dans les segments d’Adobe Target et les champs d’Adobe Campaign. Les champs d’Adobe Campaign utilisés doivent avoir été spécifiés au niveau du « rawbox ». Dans notre exemple, nous avons ajouté le champ Pays.
+* Les **[!UICONTROL paramètres de décision additionnels]** définissent le mappage entre les champs définis dans les segments d&#39;Adobe Target et les champs d&#39;Adobe Campaign. Les champs d’Adobe Campaign utilisés doivent avoir été spécifiés au niveau du « rawbox ». Dans notre exemple, nous avons ajouté le champ Pays.
 
 Dans Adobe Target, si vous utilisez les autorisations Enterprise, ajoutez la propriété correspondante dans ce champ. En savoir plus sur les autorisations Target Enterprise dans la [documentation Adobe Target](https://experienceleague.adobe.com/fr/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
 

@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 83%
+ht-degree: 79%
 ---
 # À lire absolument {#must-read}
 
@@ -69,7 +69,7 @@ Toutes les ressources d’API sont disponibles dans **JSON** avec une extension 
 
 * Les valeurs de clé primaire automatique (PKey) qui illustrent les exemples ne sont pas destinées à fonctionner dans un autre déploiement spécifique. Elles sont produites par l’API Adobe Campaign.
 
-* Les valeurs de clé primaire automatique générées par Adobe Campaign ne doivent jamais être stockées dans une base de données ou un site web externe. Vous devez générer des champs de clés spécifiques dans la définition de votre base de données et les utiliser lors de vos développements.
+* Les valeurs de clé primaire automatique générées par Adobe Campaign ne doivent jamais être stockées dans une base de données ou un site web externe. Vous devez générer des champs clés spécifiques dans votre définition de base de données et les utiliser lors de vos développements.
 
 ## Clés personnalisées {#custom-keys}
 
