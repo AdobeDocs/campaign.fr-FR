@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e633414f053265108e33aa63d7b7504d307e05c3
 workflow-type: tm+mt
-source-wordcount: '3155'
-ht-degree: 100%
+source-wordcount: '3181'
+ht-degree: 99%
 ---
 # Calcul des mesures de rapport intégré {#metrics-calculation}
 
@@ -933,6 +933,8 @@ Ce rapport est basé sur les tables **Diffusions** (nms:delivery) et **Logs de t
 L’indicateur **Envoyés** (@sent), accessible à partir du nœud **Diffusions (nms:delivery) > Indicateurs** correspond au nombre total de SMS envoyés au prestataire. Cet indicateur est utilisé uniquement pour les diffusions SMS et ne doit pas être utilisé pour les autres types de diffusions (ne pas confondre avec les indicateurs **@success** et **@processed**).
 
 ## Synchronisation des indicateurs {#indicator-synchronization}
+
+L&#39;indicateur **Traités** peut dépasser temporairement le nombre de messages à envoyer pendant la mise à jour des indicateurs, par exemple pour les diffusions avec des reprises ou des diffusions liées.
 
 Si vous observez une désynchronisation ou une incohérence de certains indicateurs, sélectionnez la diffusion concernée dans l&#39;explorateur Adobe Campaign, cliquez avec le bouton droit et choisissez **[!UICONTROL Actions > Recalculer les indicateurs de diffusion et de tracking]**. Cliquez sur **[!UICONTROL Suivant]** puis sur **[!UICONTROL Terminer]**.
 
