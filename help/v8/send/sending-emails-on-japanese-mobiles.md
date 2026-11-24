@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '790'
-ht-degree: 100%
+ht-degree: 97%
 ---
 # Envoyer des e-mails sur des mobiles japonais {#sending-emails-on-japanese-mobiles}
 
@@ -114,7 +114,7 @@ Pour cela, utilisez une activité **[!UICONTROL Partage]** dans votre workflow e
 
 Lorsqu&#39;Adobe Campaign gère dynamiquement les formats en fonction du domaine (profils avec format des emails défini sur **[!UICONTROL Inconnu]**, **[!UICONTROL HTML]** ou **[!UICONTROL Texte]**), vous pouvez envoyer la même diffusion à tous vos destinataires.
 
-Le contenu du message s&#39;affichera correctement d&#39;une part pour les utilisateurs de mobiles japonais, d&#39;autre part pour les destinataires standard.
+Le contenu du message s&#39;affichera correctement pour les utilisateurs sur les mobiles japonais, tout comme pour les destinataires standard.
 
 >[!IMPORTANT]
 >

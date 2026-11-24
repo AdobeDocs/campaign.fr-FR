@@ -30,10 +30,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 99%
+source-wordcount: '459'
+ht-degree: 87%
 ---
 # Prise en main de la messagerie transactionnelle{#send-transactional-messages}
 
@@ -68,7 +68,7 @@ Les principales étapes de mise en place de ce système sont décrites ci-dessou
 1. [Tester le message](transactional-template.md#test-message-template).
 1. [Publier le modèle de message](transactional-template.md#publish-message-template).
 
-Une fois que vous avez conçu et publié le modèle de message transactionnel, si un événement correspondant est déclenché, les données pertinentes sont envoyées à Campaign via les [méthodes SOAP](../send/event-description.md) PushEvent et PushEvents, puis la diffusion est envoyée aux destinataires ciblés.
+Une fois que vous avez conçu et publié le modèle de message transactionnel, si un événement correspondant est déclenché, les données pertinentes sont envoyées à Campaign via les méthodes PushEvent et PushEvents [SOAP](../send/event-description.md), et la diffusion est envoyée aux destinataires ciblés.
 
 ## Création de types d&#39;événements {#create-event-types}
 
@@ -98,4 +98,4 @@ Pour créer des types d&#39;événements qui seront traités par Adobe Campaign
 >
 >En savoir plus sur les [énumérations](../config/enumerations.md).
 
-Pour l’étape suivante, découvrez comment [créer et publier votre modèle pour la messagerie transactionnelle](transactional-template.md).
+Pour l’étape suivante, découvrez comment [créer et publier votre modèle pour les messages transactionnels](transactional-template.md).

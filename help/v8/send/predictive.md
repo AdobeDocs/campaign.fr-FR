@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 95%
+source-wordcount: '800'
+ht-degree: 90%
 ---
 # Optimisation de l’heure d’envoi et score prédictif de l’engagement{#optimize-message-delivery}
 
@@ -65,7 +65,7 @@ Dans le modèle d’optimisation de l’heure d’envoi prédictive, il existe d
 
 Détails de la sortie :
 
-* Calculez la meilleure heure d’envoi d’un e-mail au cours des 7 jours de la semaine avec des intervalles d’une heure (par exemple : 9 h, 10 h, 11 h).
+* Calculez la meilleure heure pour envoyer un e-mail pendant les 7 jours de la semaine avec des intervalles d’une heure (par exemple : 9 h, 10 h, 11 h).
 * Le modèle indique le meilleur jour de la semaine et la meilleure heure de la journée.
 * Chaque heure optimale est calculée deux fois : une fois pour maximiser le taux d’ouverture et une fois pour maximiser le taux de clics
 * 16 champs sont proposés (14 pour les jours de la semaine et 2 pour toute la semaine) :
@@ -103,9 +103,9 @@ Le scoring d’engagement prédictif vous permet d’effectuer les opérations s
 Ce modèle utilise plusieurs scores pour indiquer :
 
 * **Score d’engagement avec ouverture/Score d’engagement avec clic** : cette valeur correspond à la probabilité qu’un abonné interagisse avec un message spécifique (ouverture ou clic). Les valeurs sont comprises entre 0,0 et 1,0.
-* **Probabilité de désabonnement** : cette valeur correspond à la probabilité pour le destinataire de se désabonner d’un canal email après l’ouverture d’un email. Les valeurs sont comprises entre 0,0 et 1,0.
+* **Probabilité de désabonnement** : cette valeur correspond à la probabilité pour un destinataire de se désabonner du canal e-mail, un e-mail étant ouvert. Les valeurs sont comprises entre 0,0 et 1,0.
 * **Niveau de rétention** : cette valeur classe les utilisateurs en trois niveaux : bas, moyen et élevé. Élevé indique que l’utilisateur est susceptible de rester fidèle à la marque et faible indique qu’il est susceptible de se désabonner.
-* **Rang percentile de rétention** : profil classé en termes de probabilité de désabonnement. Les valeurs sont comprises entre 0,0 et 1,0. Par exemple, si le rang de pourcentage de rétention est de 0,953, cette personne destinataire est plus susceptible de rester fidèle à la marque et moins susceptible de se désabonner que 95,3 % de toutes les personnes destinataires.
+* **Rang percentile de rétention** : profil classé en termes de probabilité de désabonnement. Les valeurs sont comprises entre 0,0 et 1,0. Par exemple, si le rang de pourcentage de rétention est de 0,953, ce destinataire est plus susceptible de rester avec la marque et moins susceptible de se désabonner que 95,3 % de tous les destinataires.
 
 >[!NOTE]
 >

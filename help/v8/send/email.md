@@ -28,7 +28,7 @@ topic_v2:
     internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 94%
@@ -105,7 +105,7 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
      En savoir plus sur la gestion de la page miroir dans [cette section](mirror-page.md#link-to-mirror-page).
 
-1. Vous pouvez définir des paramètres supplémentaires pour votre e-mail, tels que l’envoi d’une copie de vos messages à une adresse BBC, la modification du format du message, la définition d’un codage spécifique, etc. En savoir plus dans [cette section](email-parameters.md).
+1. Vous pouvez définir des paramètres supplémentaires pour votre e-mail, tels que l’envoi d’une copie de vos messages à une adresse en Cci, la modification du format du message, la définition d’un codage spécifique, etc. En savoir plus dans [cette section](email-parameters.md).
 
 1. Une fois le contenu prêt, cliquez sur **Enregistrer** : elle s’affiche désormais dans votre liste de diffusions, sous l’onglet **[!UICONTROL Campagnes > Diffusions]**.
 

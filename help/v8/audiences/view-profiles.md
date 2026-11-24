@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 96%
+source-wordcount: '473'
+ht-degree: 84%
 ---
 # Affichage des profils existants {#view-profiles}
 
@@ -66,7 +66,7 @@ Pour un destinataire intégré standard, vous pouvez accéder aux onglets suivan
 
 * **[!UICONTROL Général]**, pour toutes les données de profil générales. Il contient notamment le nom, le prénom, l&#39;adresse e-mail, le format des e-mails, etc.
 
-  Cet onglet stocke également l&#39;indicateur **opt-out** pour le profil : lorsque l&#39;option **[!UICONTROL Ne plus contacter (tous canaux)]** est sélectionnée, le profil est sur liste bloquée. Ces informations sont ajoutées aux données de contact si le destinataire a cliqué sur un lien de désinscription dans une newsletter par exemple. Ce destinataire ne sera plus ciblé sur aucun canal (e-mail, courrier, etc.). Pour plus d’informations, consultez [cette page](../send/quarantines.md).
+  Cet onglet stocke également l&#39;indicateur **opt-out** pour le profil : lorsque l&#39;option **[!UICONTROL Ne plus contacter (tous canaux)]** est sélectionnée, le profil est sur la liste bloquée. Ces informations sont ajoutées aux données de contact si le destinataire a cliqué sur un lien de désinscription dans une newsletter par exemple. Ce destinataire n’est plus ciblé sur aucun canal (e-mail, courrier, etc.). Pour plus d’informations, consultez [cette page](../send/quarantines.md).
 
 * L’onglet **Coordonnées**, qui contient l’adresse postale du profil sélectionné.
 

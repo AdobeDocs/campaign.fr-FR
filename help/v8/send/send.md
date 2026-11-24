@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '869'
-ht-degree: 96%
+ht-degree: 92%
 ---
 # Envoyer et surveiller vos e-mails  {#send-and-monitor-emails}
 
@@ -45,7 +45,7 @@ Une fois les messages envoyés, vérifiez le statut de votre diffusion dans le *
 
 Depuis le tableau de bord des diffusions, vous pouvez vérifier les messages traités et consulter les logs d’audit de diffusion. Vous pouvez également contrôler le statut des messages dans les logs de diffusion.
 
-En savoir plus sur les [états de diffusion](delivery-statuses.md).
+En savoir plus sur les [statuts de diffusion](delivery-statuses.md).
 
 >[!NOTE]
 >
@@ -92,11 +92,11 @@ Domain Keys Identified Mail (DKIM) est une méthode d’authentification utilis�
 
 Dans Adobe Campaign, la signature de l’authentification des e-mails DKIM est effectuée par le MTA.
 
-En savoir plus sur DKIM dans le [Guide Adobe des bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#authentication){target="_blank"}.
+En savoir plus sur DKIM dans le [Guide des bonnes pratiques en matière de délivrabilité d&#39;Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=fr#authentication){target="_blank"}.
 
 ## Service de commentaires par e-mail {#email-feedback-service}
 
-Le service de retour par e-mail (EFS) de Campaign indique le statut de chaque diffusion par e-mail envoyée avec Adobe Campaign.
+Le service de retour d&#39;e-mail (EFS - Email Feedback Service) de Campaign indique le statut de chaque diffusion envoyée avec Adobe Campaign.
 
 Une fois la diffusion lancée, le pourcentage **[!UICONTROL Succès]** n’est plus modifié lorsque le message est relayé avec succès de Campaign au MTA. Les logs de diffusion affichent le statut **[!UICONTROL Pris en compte par le fournisseur d&#39;accès d&#39;accès]** pour chaque adresse ciblée.
 
@@ -123,5 +123,5 @@ Le tableau ci-dessous montre comment les KPI et les statuts des logs d’envoi s
 | Le message est relayé avec succès de Campaign vers le MTA. | Le pourcentage **[!UICONTROL Succès]** n’est pas affiché (démarre à 0 %) | Pris en compte par le prestataire |
 | Les messages hard bounce sont renvoyés du MTA. | Aucun changement du pourcentage **[!UICONTROL Succès]** | En échec |
 | Les messages soft bounce sont renvoyés depuis le MTA. | Aucun changement du pourcentage **[!UICONTROL Succès]** | Pris en compte par le prestataire |
-| Les reprises des messages soft bounce sont effectuées avec succès | Le pourcentage **[!UICONTROL Succès]** augmente en conséquence | Envoyés |
+| Les reprises de messages soft bounce ont réussi | Le pourcentage **[!UICONTROL Succès]** augmente en conséquence | Envoyés |
 | Échec des reprises des messages soft bounce | Aucun changement du pourcentage **[!UICONTROL Succès]** | En échec |

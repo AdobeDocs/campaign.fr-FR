@@ -23,10 +23,10 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1549'
-ht-degree: 93%
+source-wordcount: '1550'
+ht-degree: 85%
 ---
 # Configuration révisée des notifications push {#push-notifications-config}
 
@@ -44,7 +44,7 @@ Dans le cadre de cette mise à jour, procédez comme suit pour envoyer des notif
 
 1. [Créer et configurer une propriété mobile dans la collecte de données Adobe Experience Platform](#create-mobile-property)
 
-1. [Ajouter l’extension Adobe Adobe Experience Platform Assurance](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}(recommandé)
+1. [Ajouter une extension Adobe Experience Platform Assurance](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}(recommandé)
 
 1. [Ajouter Campaign Classic à votre application mobile](#campaign-mobile-ap)
 
@@ -68,7 +68,7 @@ L’enregistrement des informations d’identification des notifications push de
 
 1. Saisissez un **[!UICONTROL nom]** pour la configuration.
 
-1. À partir de **[!UICONTROL Configuration des applications mobiles]**, sélectionnez Système opérationnel :
+1. Dans **[!UICONTROL Configuration de l&#39;application mobile]**, sélectionnez le système d&#39;exploitation :
 
 >[!BEGINTABS]
 
@@ -86,7 +86,7 @@ L’enregistrement des informations d’identification des notifications push de
 
    Cette clé peut être acquise à partir des pages **Certificats**, **Identificateurs** et **Profils** de votre compte de développeur ou développeuse Apple.
 
-1. Fournissez l’**identifiant de clé**. Il s’agit d’une chaîne de 10 caractères attribuée lors de la création de la clé d’authentification p8.
+1. Fournissez l’**identifiant de clé**. Il s’agit d’une chaîne de 10 caractères attribuée lors de la création de la clé d’authentification p8.
 
    Il se trouve sous l’onglet **Clés** dans les pages **Certificats**, **Identifiants** et **Profils** de votre compte de développeur Apple.
 
@@ -112,7 +112,7 @@ L’enregistrement des informations d’identification des notifications push de
 
 ### Créer un service {#create-service}
 
-Avant d’envoyer des notifications push, vous devez définir les paramètres de vos applications iOS et Android dans Adobe Campaign.
+Avant d&#39;envoyer des notifications push, vous devez définir les paramètres de votre application iOS et Android dans Adobe Campaign.
 
 Les notifications push sont envoyées aux utilisateurs et utilisatrices de votre application par le biais d’un service dédié. Lorsque les utilisateurs et utilisatrices installent votre application, ils s’abonnent à ce service : Adobe Campaign s’appuie sur ce service pour cibler uniquement les abonné(e)s de votre application. Dans ce service, vous devez ajouter vos applications iOS et Android à envoyer sur les appareils iOS et Android.
 
@@ -142,7 +142,7 @@ Après avoir créé votre service, vous devez définir les applications mobiles 
 
 Pour créer une application pour les appareils iOS, procédez comme suit :
 
-1. Depuis Service, cliquez sur **[!UICONTROL Ajouter]** puis sélectionnez **[!UICONTROL Créer une application iOS]**. Cliquez sur **[!UICONTROL Suivant]**.
+1. Dans votre Service, cliquez sur **[!UICONTROL Ajouter]** puis sélectionnez **[!UICONTROL Créer une application iOS]**. Cliquez sur **[!UICONTROL Suivant]**.
 
    ![](assets/push-config-6.png)
 
@@ -152,7 +152,7 @@ Pour créer une application pour les appareils iOS, procédez comme suit :
 
 1. (facultatif) Vous pouvez enrichir le contenu d’un message push avec certaines **[!UICONTROL variables d’application]**. Elles sont entièrement personnalisables et font partie de la payload du message envoyé à l&#39;appareil mobile.
 
-   Dans l’exemple suivant, les variables **mediaURl** et **mediaExt** sont ajoutées pour créer une notification push enrichie et fournir à l’application l’image à afficher dans la notification.
+   Dans l’exemple ci-dessous, les variables **mediaURl** et **mediaExt** sont ajoutées pour créer des notifications push enrichies, puis fournir à l’application l’image à afficher dans la notification.
 
    ![](assets/push-config-8.png)
 
@@ -263,7 +263,7 @@ Vous trouverez ci-dessous les noms de payload FCM pour personnaliser davantage v
 
 1. Vous devez maintenant publier la configuration à partir du menu **[!UICONTROL Flux de publication]**. [En savoir plus](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#publish-the-configuration)
 
-Votre propriété mobile sera désormais automatiquement synchronisée avec le workflow technique **[!UICONTROL Collecte de données Adobe Experience Platform]**. [En savoir plus](../../automation/workflow/technical-workflows.md#list-technical-workflows)
+Votre propriété mobile sera désormais automatiquement synchronisée avec le workflow technique **[!UICONTROL Collecte de données Adobe Experience Platform]**. [En savoir plus](../../automation/workflow/technical-workflows.md#list-technical-workflows)
 
 ## Ajouter Campaign Classic à votre application mobile {#campaign-mobile-app}
 

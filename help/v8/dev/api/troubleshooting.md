@@ -14,22 +14,22 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '353'
-ht-degree: 100%
+ht-degree: 74%
 ---
 # Résolution des problèmes d’API {#troubleshooting}
 
 * **Lorsque vous accédez à la console Adobe.io, l’erreur suivante s’affiche : « La console Adobe I/O est uniquement disponible pour sélectionner les membres des comptes d’entreprise. Si vous pensez que vous devriez y avoir accès, contactez votre administrateur système. »**
 
-Vous ne pouvez créer des clés d’API que pour les organisations dont vous êtes administrateur. Si ce message s’affiche et que vous souhaitez créer des clés d’API, demandez à l’un des administrateurs de l’organisation.
+Vous ne pouvez créer des clés d’API que pour les organisations dont vous êtes administrateur. Si ce message s’affiche et que vous souhaitez créer des clés API, demandez à l’un des administrateurs de l’organisation.
 
 * **Lors de l’exécution d’une requête sur Adobe.io, vous obtenez {&quot;error_code&quot;:&quot;403023&quot;,&quot;message&quot;:&quot;Profil non valide&quot;}.**
 
 Cela signifie qu’il existe un problème avec l’approvisionnement IMS de votre produit Campaign spécifique : l’équipe IMS doit le résoudre.
 
-Pour plus de détails, vous pouvez appeler l’API IMS avec votre jeton pour voir à quoi ressemble votre profil IMS : pour qu’Adobe.io puisse acheminer votre requête, vous devez disposer d’un prodCtx possédant un identifiant id_organization identique à celui inséré dans l’URL.
+Pour obtenir plus de détails, vous pouvez appeler l’API IMS avec votre jeton pour voir à quoi ressemble votre profil IMS : Vous devez disposer d’un prodCtx où l’identifiant_organisation est le même que celui que vous avez placé dans votre URL pour qu’Adobe.io puisse acheminer votre requête.
 S’il manque, l’approvisionnement IMS doit être corrigé.
 
 ```
@@ -83,7 +83,7 @@ Dans la réponse, la valeur ORGANIZATION_ID doit être la même que dans votre p
 
 * **Lors d’une requête sur Adobe.io, vous obtenez {&quot;code&quot;:500, &quot;message&quot;:&quot;Oups. Une erreur s’est produite. Vérifiez votre URI et réessayez.&quot;}**
 
-Adobe.io déclare votre URI comme non valide : l’URI que vous demandez n’est probablement pas valide. Sur Adobe.io, lorsque vous sélectionnez le service Campaign, vous obtenez un sélecteur avec une liste des valeurs organization_ids possibles. Vous devez vérifier que celui choisi est celui que vous avez inséré dans votre URL.
+Adobe.io déclare votre URI non valide : il est probable que l’URI que vous demandez ne soit pas valide. Sur Adobe.io, lorsque vous sélectionnez le service Campaign, vous obtenez un sélecteur avec une liste des valeurs organization_ids possibles. Vous devez vérifier que celui choisi est celui que vous avez inséré dans votre URL.
 
 * **Lors de l’exécution d’une requête sur Adobe.io, vous obtenez {&quot;error_code&quot;:&quot;401013&quot;,&quot;message&quot;:&quot;Le jeton Oauth n’est pas valide&quot;}.**
 

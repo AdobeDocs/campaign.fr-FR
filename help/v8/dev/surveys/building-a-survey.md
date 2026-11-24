@@ -15,16 +15,16 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '835'
-ht-degree: 99%
+ht-degree: 98%
 ---
 # Conception d’un questionnaire{#building-a-survey}
 
 >[!AVAILABILITY]
 >
->Les questionnaires ne sont pas disponibles pour les [déploiements Campaign FFDA](../../architecture/enterprise-deployment.md).
+>Les questionnaires ne sont pas disponibles pour les [déploiements de Campaign FFDA](../../architecture/enterprise-deployment.md).
 
 
 
@@ -38,11 +38,11 @@ Choisissez le modèle de questionnaire (par défaut **[!UICONTROL newSurvey]**).
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
-Les pages du formulaire sont créées à l’aide d’un éditeur spécifique qui vous permet de définir et de configuration des zones de saisie (texte), des champs de sélection (listes, cases à cocher, etc.) et des éléments statiques (images, contenu HTML, etc.). Ils peuvent être regroupés dans des « conteneurs » et mis en page selon vos besoins. [En savoir plus](#adding-questions)).
+Les pages du formulaire sont créées à l’aide d’un éditeur spécifique qui vous permet de définir et de configuration des zones de saisie (texte), des champs de sélection (listes, cases à cocher, etc.) et des éléments statiques (images, contenu HTML, etc.). Ils peuvent être regroupés dans des « conteneurs » et mis en page selon vos besoins. [En savoir plus](#adding-questions).
 
 >[!NOTE]
 >
->La définition du contenu et de la mise en page des écrans d&#39;un formulaire web sont présentés dans [ce document &#x200B;](../web/about-web-forms.md).
+>La définition du contenu et de la mise en page des écrans d&#39;un formulaire web sont présentés dans [ce document ](../web/about-web-forms.md).
 
 ## Ajouter des champs {#adding-fields}
 
@@ -120,7 +120,7 @@ Le libellé de la question est saisi dans le champ de libellé. Dans ce cas, le 
 
 >[!NOTE]
 >
->L&#39;utilisation de l&#39;éditeur HTML est présentée dans [ce document &#x200B;](../web/about-web-forms.md).
+>L&#39;utilisation de l&#39;éditeur HTML est présentée dans [ce document ](../web/about-web-forms.md).
 
 Par exemple :
 

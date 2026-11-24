@@ -20,10 +20,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 100%
+source-wordcount: '442'
+ht-degree: 95%
 ---
 # Créer du contenu conditionnel{#conditional-content}
 
@@ -93,10 +93,10 @@ Découvrez dans l’exemple ci-dessous comment créer un e-mail multilingue. Le 
 
    >[!NOTE]
    >
-   >Comme aucune autre version n&#39;a été définie dans le contenu de l&#39;email, veillez à filtrer la population cible avant d&#39;envoyer l&#39;email.
+   >Comme aucune version alternative n’a été définie dans le contenu de l’e-mail, veillez à filtrer la population cible avant d’envoyer l’e-mail.
 
 ## Tutoriel vidéo {#conditionnal-content-video}
 
 Découvrez comment ajouter du contenu conditionnel à une diffusion en prenant pour exemple une newsletter multilingue.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446713?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/335682?quality=12)

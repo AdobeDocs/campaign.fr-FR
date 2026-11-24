@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1851'
-ht-degree: 92%
+source-wordcount: '1850'
+ht-degree: 90%
 ---
 # Gérer les autorisations utilisateur{#manage-permissions}
 
@@ -146,7 +146,7 @@ Ces profils de produit correspondent aux **groupes d’opérateurs** Campaign. L
 
    >[!IMPORTANT]
    >
-   >Le rôle **[!UICONTROL Administrateur]** accorde l&#39;accès au Panneau de Contrôle Campaign. Tout profil de produit dans le Adobe Admin Console contenant le mot « admin » dans son nom (tel que « Administrateurs », « admin », « admins », « administrateur d’approbation », etc.) accordera l’accès au Panneau de Contrôle. En savoir plus sur la [gestion de l’accès aux Panneaux de Contrôle &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=fr){target="_blank"}.
+   >Le rôle **[!UICONTROL Administrateur]** accorde l&#39;accès au Panneau de Contrôle Campaign. Tout profil de produit dans le Adobe Admin Console contenant le mot « admin » dans son nom (tel que « Administrateurs », « admin », « admins », « administrateur d’approbation », etc.) accordera l’accès au Panneau de Contrôle. En savoir plus sur la [gestion de l&#39;accès au Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=fr){target="_blank"}.
 
 1. **[!UICONTROL Opérateurs et opératrices de diffusion]** (diffusion)
 
@@ -221,7 +221,7 @@ Admin Console vous permet de créer des groupes d’utilisateurs et d’affecte
 
 Un groupe d’utilisateurs consiste en plusieurs utilisateurs différents ayant un ensemble commun d’autorisations. Découvrez comment créer des groupes d’utilisateurs et d’utilisatrices dans [cette section](https://helpx.adobe.com/fr/enterprise/using/user-groups.html){target="_blank"}.
 
-Vous pouvez attribuer des profils de produit aux groupes d’utilisateurs. Tous les utilisateurs de ce groupe posséderont alors le même ensemble d’autorisations de produit.
+Vous pouvez attribuer des profils de produit aux groupes d’utilisateurs. Ainsi, tous les utilisateurs de ce groupe reçoivent le même ensemble d’autorisations de produit.
 
 ## Droits nommés{#use-named-rights}
 
@@ -230,7 +230,7 @@ Adobe Campaign s’accompagne d’un ensemble de droits nommés qui vous permett
 Les droits nommés octroient des autorisations pour :
 
 * Effectuer des opérations
-Par exemple, le bouton **Analyser** de l&#39;éditeur de diffusions est activé pour les membres du groupe **Chargés de diffusion** qui disposent du droit nommé **Préparer la diffusion**
+Par exemple, le bouton **Analyser** dans l’éditeur de diffusion est activé pour les membres du groupe **Opérateur de diffusion** qui disposent du droit nommé **Préparer la diffusion**
 
 * Accès aux dossiers
 L’appartenance à des groupes d’opérateurs peut accorder ou restreindre les droits d’accès aux dossiers en modifiant les paramètres de sécurité de ces derniers. [En savoir plus](folder-permissions.md#restrict-access-to-a-folder).
@@ -239,9 +239,9 @@ L’appartenance à des groupes d’opérateurs peut accorder ou restreindre les
 
 Les droits nommés par défaut dans Adobe Campaign sont les suivants :
 
-* **[!UICONTROL ADMINISTRATION]** : les opérateurs disposant du droit **[!UICONTROL ADMINISTRATION]** ont un accès total à l’instance. Les utilisateurs administrateurs peuvent exécuter, créer, modifier et supprimer tout objet tel qu’un workflow, une diffusion, des scripts, etc. **Remarque :** les profils de produit dans le Adobe Admin Console contenant le mot « admin » accordent l’accès au Panneau de Contrôle Campaign.
+* **[!UICONTROL ADMINISTRATION]** : les opérateurs disposant du droit **[!UICONTROL ADMINISTRATION]** ont un accès total à l’instance. Les utilisateurs administrateurs peuvent exécuter, créer, modifier ou supprimer tout objet tel qu’un workflow, une diffusion, des scripts, etc. **Remarque :** les profils de produit dans le Adobe Admin Console contenant le mot « admin » accordent l’accès au Panneau de Contrôle Campaign.
 
-* **[!UICONTROL ADMINISTRATION DES VALIDATIONS]** : vous pouvez définir plusieurs étapes de validation dans les workflows et les diffusions pour vous assurer que l’état actuel a été validé par un opérateur ou un groupe affecté. Les utilisateurs disposant du droit **[!UICONTROL ADMINISTRATION DES VALIDATIONS]** peuvent définir les étapes de validation et affecter un opérateur ou un groupe d’opérateurs chargé de valider ces étapes. **Remarque :** les profils de produit contenant le mot « admin » (tels que « approval admin ») accordent l’accès au Panneau de Contrôle Campaign.
+* **[!UICONTROL ADMINISTRATION DES VALIDATIONS]** : vous pouvez définir plusieurs étapes de validation dans les workflows et les diffusions pour vous assurer que l’état actuel a été validé par un opérateur ou un groupe affecté. Les utilisateurs disposant du droit **[!UICONTROL ADMINISTRATION DES VALIDATIONS]** peuvent définir les étapes de validation et affecter un opérateur ou un groupe d’opérateurs chargé de valider ces étapes. **Remarque :** les profils de produit contenant le mot « admin » (par exemple, « approbation admin ») accordent l’accès au Panneau de Contrôle Campaign.
 
 * **[!UICONTROL CENTRAL]** : droit de gestion en central (Marketing distribué).
 
@@ -259,7 +259,7 @@ Les droits nommés par défaut dans Adobe Campaign sont les suivants :
 
 * **[!UICONTROL LOCAL]** : droit de gestion en local (Marketing distribué).
 
-* **[!UICONTROL FUSION]** : droit de fusionner les enregistrements sélectionnés en un seul. S’il existe des doublons de destinataires, le droit **[!UICONTROL FUSION]** permet de les sélectionner et de les fusionner dans un destinataire principal.
+* **[!UICONTROL FUSION]** : droit de fusionner les enregistrements sélectionnés en un seul. Si les destinataires existent sous forme de doublons, le droit **[!UICONTROL MERGE]** permet aux utilisateurs de sélectionner les doublons et de les fusionner dans un destinataire principal.
 
 * **[!UICONTROL PRÉPARER DES DIFFUSIONS]** : droit de créer, éditer et enregistrer une diffusion. Les utilisateurs disposant du droit **[!UICONTROL PRÉPARER DES DIFFUSIONS]** peuvent également lancer le processus d’analyse de diffusion.
 

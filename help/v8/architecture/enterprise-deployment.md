@@ -42,10 +42,10 @@ topic_v2:
     internal-label: Reporting
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 95%
+ht-degree: 87%
 ---
 # Déploiement FFDA [!DNL Campaign] {#gs-ac-ffda}
 
@@ -59,7 +59,7 @@ Campaign v8 Enterprise (FFDA) fournit une mise à l&#39;échelle de bout en bou
 * Mise à l&#39;échelle des performances de requêtes pour la segmentation et le ciblage ainsi que pour l&#39;ingestion et la sortie des données
 * Mise à l&#39;échelle de la préparation des diffusions (des heures aux minutes)
 
-Il s&#39;agit d&#39;une modification fondamentale de l&#39;architecture logicielle. Les données sont désormais distantes et Campaign fédère l&#39;intégralité d&#39;entre elles, y compris les profils. Les processus [!DNL Campaign] évoluent désormais de bout en bout, du ciblage à l&#39;exécution des messages : l&#39;ingestion des données, la segmentation, le ciblage, les requêtes et les diffusions s&#39;exécutent désormais en quelques minutes. Cette nouvelle version résout le défi de la mise à l&#39;échelle tout en conservant le même niveau de flexibilité et d&#39;extensibilité. Le nombre de profils est presque illimité et la rétention des données peut être étendue.
+Il s&#39;agit d&#39;une modification fondamentale de l&#39;architecture logicielle. Les données sont désormais distantes et Campaign fédère l&#39;intégralité d&#39;entre elles, y compris les profils. Les processus [!DNL Campaign] sont désormais mis à l&#39;échelle de bout en bout, du ciblage à l&#39;exécution des messages : l&#39;ingestion des données, la segmentation, le ciblage, les requêtes et les diffusions s&#39;exécutent désormais en quelques minutes. Cette nouvelle version résout le défi de la mise à l&#39;échelle tout en conservant le même niveau de flexibilité et d&#39;extensibilité. Le nombre de profils est presque illimité et la rétention des données peut être étendue.
 
 Le stockage dans le cloud est effectué dans **[!DNL Snowflake]** : un nouveau **compte externe** natif assure la connectivité avec la base de données dans le cloud. Il est configuré par Adobe et ne doit pas être modifié. [En savoir plus](../config/external-accounts.md)
 
@@ -144,9 +144,9 @@ Les objets Campaign v8 utilisent désormais un **Identifiant universel unique (
 
 Veuillez noter que cet identifiant est basé sur des chaînes et n&#39;est pas séquentiel. La clé primaire n&#39;est pas une valeur numérique dans Campaign v8 et vous devez utiliser les attributs **autouuid** et **autopk** dans vos schémas.
 
-Dans Campaign Classic v7 et les versions antérieures, l&#39;unicité d&#39;une clé dans un schéma (c&#39;est-à-dire une table) est gérée au niveau du moteur de la base de données. Plus généralement, les moteurs de base de données classiques tels que PostgreSQL, Oracle ou SQL Server incluent un mécanisme natif pour empêcher l’insertion de lignes dupliquées à partir d’une colonne ou d’un ensemble de colonnes via des clés primaires et/ou des index uniques. Les ID en double n’existent pas dans ces versions lorsque l’index correct et les clés primaires sont définis au niveau de la base de données.
+Dans Campaign Classic v7 et les versions antérieures, l&#39;unicité d&#39;une clé dans un schéma (c&#39;est-à-dire une table) est gérée au niveau du moteur de la base de données. Plus généralement, les moteurs de base de données classiques tels que PostgreSQL, Oracle ou SQL Server incluent un mécanisme natif pour empêcher l’insertion de lignes dupliquées à partir d’une colonne ou d’un ensemble de colonnes via des clés primaires et/ou des index uniques. Les ID dupliqués n’existent pas dans ces versions lorsque l’index et les clés primaires appropriés sont définis au niveau de la base de données.
 
-Adobe Campaign v8 est fourni avec Snowflake comme base de données principale. Comme cela augmente considérablement l&#39;échelle des requêtes, l&#39;architecture répartie de la base de données Snowflake ne fournit pas de tels mécanismes de gestion et d&#39;application de l&#39;unicité d&#39;une clé dans une table. Par conséquent, avec Adobe Campaign v8, rien n&#39;empêche l&#39;ingestion de clés dupliquées dans une table. Les utilisateurs finaux sont désormais chargés d&#39;assurer la cohérence des clés au sein de la base de données Adobe Campaign. [En savoir plus](keys.md)
+Adobe Campaign v8 est fourni avec Snowflake comme base de données principale. Comme cela augmente considérablement l’échelle des requêtes, l’architecture distribuée de la base de données Snowflake ne fournit pas de tels mécanismes de gestion et d’application de l’unicité d’une clé dans une table. Par conséquent, avec Adobe Campaign v8, rien n&#39;empêche l&#39;ingestion de clés dupliquées dans une table. Les utilisateurs finaux sont désormais chargés d&#39;assurer la cohérence des clés au sein de la base de données Adobe Campaign. [En savoir plus](keys.md)
 
 ### Disponibilité des fonctionnalités {#feature-availability}
 

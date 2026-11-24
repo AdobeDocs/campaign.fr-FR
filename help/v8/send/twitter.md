@@ -24,10 +24,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 99%
+source-wordcount: '861'
+ht-degree: 94%
 ---
 # Publier des messages sur X (Twitter) avec Adobe Campaign {#post-tw-messages}
 
@@ -81,7 +81,7 @@ Pour publier un message sur votre compte X, procédez comme suit :
 
    >[!CAUTION]
    >
-   >Lors de la publication sur X, des restrictions s’appliquent :
+   >Lors de la publication sur X, les restrictions suivantes s’appliquent :
    >
    >* Le message ne peut pas dépasser 140 caractères.
    >* Le format HTML n&#39;est pas supporté.
@@ -114,7 +114,7 @@ Le workflow technique **[!UICONTROL Synchronisation des comptes X]** récupère 
 
 Pour envoyer des messages directs à vos abonnés, procédez comme suit :
 
-1. Créez une diffusion X basée sur le modèle de diffusion intégré **[!UICONTROL Poster (message direct)]**.
+1. Créez une diffusion X basée sur le modèle de diffusion intégré **[!UICONTROL Tweeter (Direct Message)]**.
 
 1. Sélection de la cible principale
 
@@ -151,7 +151,7 @@ Pour envoyer des messages directs à vos abonnés, procédez comme suit :
 
    1. Cliquez sur l&#39;onglet **[!UICONTROL Aperçu]**.
    1. Cliquez sur le menu déroulant **[!UICONTROL Tester la personnalisation]** et sélectionnez **[!UICONTROL Abonnements des visiteurs]**.
-   1. Sélectionnez le compte X sur lequel vous souhaitez tester l’aperçu.
+   1. Choisissez un compte X avec lequel vous souhaitez tester l’aperçu.
 
 1. Envoi d&#39;un BAT
 

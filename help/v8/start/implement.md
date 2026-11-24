@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1218'
-ht-degree: 96%
+ht-degree: 91%
 ---
 # Instructions d’implémentation de Campaign{#gs-implementation}
 
@@ -57,7 +57,7 @@ Dans cette section, découvrez comment adapter Adobe Campaign aux exigences de 
 
 >[!CAUTION]
 >
->Avec **Campaign Managed Cloud Services**, votre environnement et votre configuration initiale ont été définis par Adobe, conformément aux termes de votre contrat de licence. Vous n’avez pas l’autorisation de modifier les modules et les schémas intégrés ou les rapports.
+>Avec **Campaign Managed Cloud Services**, votre environnement et votre configuration initiale sont définis par Adobe, conformément aux termes de votre contrat de licence. Vous n’avez pas l’autorisation de modifier les modules et les schémas intégrés ou les rapports.
 >
 >Si vous devez utiliser un module complémentaire Campaign ou une fonctionnalité spécifique qui n’a pas été configurée pour vous, vous devez contacter la **personne chargée de votre transition Adobe**.
 
@@ -67,7 +67,7 @@ Cette section comporte des informations importantes au sujet de la confidentiali
 
 ### Confidentialité{#implementation-privacy}
 
-Adobe Campaign s’accompagne de processus et de paramètres qui vous permettent d’utiliser l’application conformément aux lois applicables en matière de confidentialité des données et selon les préférences des destinataires. Ce que vous pouvez gérer :
+Adobe Campaign est fourni avec des processus et des paramètres qui vous permettent d’utiliser Campaign en conformité avec les lois applicables en matière de confidentialité des données et les préférences de vos destinataires. Ce que vous pouvez gérer :
 
 * **Acquisition des données** : Adobe Campaign vous permet de collecter des données, y compris des informations personnelles et sensibles. Il est donc essentiel que vous receviez et gériez le consentement de vos destinataires.
 
@@ -75,7 +75,7 @@ Adobe Campaign s’accompagne de processus et de paramètres qui vous permetten
 
 * **Consentement de l’utilisateur ou de l’utilisatrice et conservation des données** : vous devez obtenir le consentement de l’utilisateur ou de l’utilisatrice, configurer des mécanismes d’abonnement au double opt-in, faciliter la désinscription et configurer la conservation des données.
 
-  En savoir plus dans la documentation sur la confidentialité de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr#consent){target="_blank"}
+  En savoir plus dans la [documentation sur la confidentialité de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=fr#consent){target="_blank"}
 
 * **Réglementations relatives à la confidentialité et à la protection des données** : voir [cette section](privacy.md) pour plus d’informations sur les exigences en matière de confidentialité et sur la manière dont ces réglementations impactent votre entreprise et Adobe Campaign.
 
@@ -195,7 +195,7 @@ Si vous utilisez d&#39;autres solutions Adobe, vous pouvez les connecter à votr
 
 Vous pouvez également utiliser l’authentification unique (SSO) pour vous connecter à Campaign. En savoir plus à ce propos sur [cette page](connect.md).
 
-Découvrez la liste complète des solutions Adobe qui peuvent être intégrées à Adobe Campaign [sur cette page](../connect/integration.md).
+Découvrez la liste complète des solutions Adobe qui peuvent être intégrées à Adobe Campaign [sur cette page](../connect/integration.md).
 
 ### Connecteurs{#implementation-connectors}
 

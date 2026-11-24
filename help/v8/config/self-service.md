@@ -30,10 +30,10 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 90%
+source-wordcount: '517'
+ht-degree: 83%
 ---
 # Panneau de contrôle Campaign {#ac-control-panel}
 
@@ -45,7 +45,7 @@ Principaux avantages :
 * Configurez les paramètres en fonction de vos besoins métier à différents instants.
 * Renforcez la sécurité en contrôlant les paramètres d&#39;accès au cas par cas.
 
-Vous pouvez également utiliser le Panneau de contrôle Campaign pour configurer les paramètres de votre instance, tels que les listes autorisées d’adresses IP, les autorisations d’URL et récupérer des informations sur votre instance.
+Vous pouvez également utiliser le Panneau de Contrôle Campaign pour configurer les paramètres de votre instance, tels que les listes autorisées d’adresses IP, les autorisations d’URL et pour récupérer des informations sur votre instance.
 
 En savoir plus dans la [documentation du Panneau de Contrôle Campaign](https://experienceleague.adobe.com/fr/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"}.
 
@@ -86,7 +86,7 @@ Pour Campaign v8 Managed Cloud Services, Adobe surveille également les processu
 
 ## Paramètres des instances
 
-Découvrez comment gérer vos paramètres d’instances Campaign dans le Panneau de contrôle.
+Découvrez comment gérer les paramètres de votre instance Campaign dans le Panneau de Contrôle.
 * [IP sur la liste autorisée](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=fr){target="_blank"}
 * [Autorisations d’URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=fr){target="_blank"}
 * [Détails de l’instance](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=fr){target="_blank"}

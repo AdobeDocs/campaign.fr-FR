@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: e633414f053265108e33aa63d7b7504d307e05c3
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '3181'
-ht-degree: 99%
+ht-degree: 97%
 ---
 # Calcul des mesures de rapport intégré {#metrics-calculation}
 
@@ -416,7 +416,7 @@ Ce rapport est basé sur la table **[!UICONTROL Statistiques du navigateur Inter
   <tr> 
    <td> Pages vues<br /> </td> 
    <td> @totalPages / @days<br /> </td> 
-   <td> Moyenne par jour du nombre total de clics sur les liens des diffusions, par système d'exploitation, dans l'ensemble des diffusions.<br /> </td> 
+   <td> Moyenne par jour du nombre total de clics sur les liens des diffusions, par système d'exploitation, pour l'ensemble des diffusions.<br /> </td> 
    <td> Sum(@pages)<br /> </td> 
   </tr> 
   <tr> 
@@ -809,7 +809,7 @@ Ce rapport est basé sur la table **[!UICONTROL Diffusion]** (nms:delivery).
 
 Ce rapport est basé sur les tables Diffusion (nms:delivery) et **[!UICONTROL Tracking consolidé]** (nms:trackingStats).
 
-Ce rapport présente le contenu du message (HTML et/ou texte) avec, sur chaque lien, le pourcentage de clics sur ce lien. Les blocs de personnalisation, liens de désinscription et liens de page miroir sont pris en compte dans le total des clics cumulés, mais ne sont pas affichés dans le rapport.
+Ce rapport présente le contenu du message (HTML et/ou texte) avec, sur chaque lien, le pourcentage de clics sur ce lien. Les blocs de personnalisation, les liens de désinscription et de page miroir sont pris en compte dans le total des clics cumulés mais ne sont pas affichés dans le rapport.
 
 ## Statistiques de tracking {#tracking-statistics-1}
 
@@ -940,7 +940,7 @@ Si vous observez une désynchronisation ou une incohérence de certains indicate
 
 ## Tracking des ouvertures {#tracking-opens-}
 
-Pour qu’Adobe Campaign détecte les ouvertures de messages, la personne destinataire doit télécharger les images contenues dans l’e-mail. Les e-mails HTML et Multipart/Alternative incluent une image de 0 pixel, qui vous permet de détecter les messages ouverts. Les messages au format texte ne contenant aucune image, il est impossible de détecter s’ils ont été ouverts ou non. Les valeurs calculées à partir du nombre de messages ouverts sont toujours des estimations, en raison de la marge d’erreur liée à l’affichage des images.
+Pour qu’Adobe Campaign détecte les ouvertures de messages, la personne destinataire doit télécharger les images contenues dans l’e-mail. Les e-mails HTML et Multipart/Alternative incluent une image de 0 pixel, qui permet de détecter les messages qui ont été ouverts. Les messages au format texte ne contenant aucune image, il est impossible de détecter s’ils ont été ouverts ou non. Les valeurs calculées à partir du nombre de messages ouverts sont toujours des estimations, en raison de la marge d’erreur liée à l’affichage des images.
 
 ## Distinction personnes / destinataires ciblés {#targeted-persons---recipients}
 

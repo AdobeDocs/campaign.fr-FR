@@ -21,16 +21,16 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 99%
+source-wordcount: '991'
+ht-degree: 96%
 ---
 # Étapes clés de création d’un questionnaire{#getting-started-with-surveys}
 
 >[!AVAILABILITY]
 >
->Les questionnaires ne sont pas disponibles pour les [déploiements Campaign FFDA](../../architecture/enterprise-deployment.md).
+>Les questionnaires ne sont pas disponibles pour les [déploiements de Campaign FFDA](../../architecture/enterprise-deployment.md).
 
 
 
@@ -109,7 +109,7 @@ Dans l&#39;exemple suivant, nous utiliserons une page de type **[!UICONTROL Page
 
   ![](assets/s_ncs_admin_survey_add_qu.png)
 
-  Saisissez le libellé de la question et insérez le ou les champs de réponse en tant que sous-branche de la question. Pour cela, le nœud lié à la question doit être sélectionné lors de la création du champ de réponse. Ajoutez une **[!UICONTROL liste déroulante]**, à partir de l&#39;icône **[!UICONTROL Contrôles de sélection]** ou en cliquant sur le bouton droit de la souris, comme ci-dessous :
+  Saisissez le libellé de la question et insérez le ou les champs de réponse en tant que sous-branche de la question. Pour cela, le nœud lié à la question doit être sélectionné lors de la création du champ de réponse. Ajoutez une liste déroulante **** à l&#39;aide de l&#39;icône **[!UICONTROL Contrôles de sélection]** ou en cliquant avec le bouton droit, comme dans l&#39;exemple ci-dessous :
 
   ![](assets/s_ncs_admin_survey_add_list.png)
 
@@ -125,7 +125,7 @@ Dans l&#39;exemple suivant, nous utiliserons une page de type **[!UICONTROL Page
 
   >[!NOTE]
   >
-  >Pour chaque champ ou chaque question, vous pouvez adapter la mise en page à vos besoins en utilisant les options de l&#39;onglet **[!UICONTROL Avancé]**. La mise en page des écrans du questionnaire est présentée dans [cette section](../web/about-web-forms.md).
+  >Pour chaque champ ou chaque question, vous pouvez adapter la mise en page à vos besoins en utilisant les options de l&#39;onglet **[!UICONTROL Avancé]**. La mise en page des écrans du questionnaire est détaillée dans [cette section](../web/about-web-forms.md).
 
   Dans l&#39;écran de détail, cliquez sur l&#39;onglet **[!UICONTROL Prévisualisation]** pour consulter le rendu du questionnaire que vous venez de créer.
 

@@ -24,10 +24,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 97%
+source-wordcount: '721'
+ht-degree: 87%
 ---
 # Utiliser les blocs de personnalisation{#personalization-blocks}
 
@@ -58,15 +58,15 @@ Les blocs de personnalisation intégrés sont les suivants :
 * **[!UICONTROL Enabled by Adobe Campaign]** : insère le logo « Enabled by Adobe Campaign ».
 * **[!UICONTROL Fonction de formatage d’un nom propre]** : génère la fonction JavaScript **[!UICONTROL toSmartCase]** qui convertit la première lettre de chaque mot en majuscule.
 * **[!UICONTROL Salutations]** : permet d’insérer des salutations avec le nom complet du ou de la destinataire, suivi d’une virgule. Exemple : « Bonjour Pierre Martin, ».
-* **[!UICONTROL Insertion du logo]** : insère un logo défini dans les paramètres de l’instance.
+* **[!UICONTROL Insérer le logo]** : insère un logo défini dans les paramètres de l&#39;instance.
 * **[!UICONTROL Lien vers la page miroir]** : insère un lien vers la [page miroir](mirror-page.md). Le format par défaut est : « Si vous ne parvenez pas à voir correctement ce message, cliquez ici »
 * **[!UICONTROL URL de page miroir]** : insère l’URL de page miroir qui permet aux concepteurs et conceptrices de diffusion de vérifier le lien.
-* **[!UICONTROL URL d’acceptation d’une offre en mode unitaire]** : insère une URL permettant de définir une offre comme étant **[!UICONTROL Acceptée]**. (Ce bloc est disponible si le module Interaction est activé).
+* **[!UICONTROL URL d’acceptation d’une offre en mode unitaire]** : insère une URL permettant de définir une offre sur **[!UICONTROL Acceptée]**. (Ce bloc est disponible si le module Interaction est activé).
 * **[!UICONTROL Confirmation de votre inscription]** : insère un lien permettant de confirmer l’abonnement.
 * **[!UICONTROL Lien d’inscription]** : insère un lien d’abonnement. Ce lien est défini dans les paramètres de l’instance. Le contenu par défaut est le suivant : « Pour vous inscrire, cliquez ici. ».
 * **[!UICONTROL Lien d’inscription (avec parrain)]** : insère un lien d’abonnement permettant d’identifier le visiteur ou la visiteuse et la diffusion. Ce lien est défini dans les paramètres de l’instance.
 * **[!UICONTROL URL de la page d’inscription]** : insère une URL d’abonnement.
-* **[!UICONTROL Style des e-mails de contenu]** et **[!UICONTROL Style de notification]** : permettent de générer un code qui formate l’e-mail avec les styles HTML par défaut.
+* **[!UICONTROL Style des e-mails de contenu]** et **[!UICONTROL Style de notification]** : génèrent un code qui formate un e-mail avec les styles HTML prédéfinis.
 * **[!UICONTROL Lien de désinscription]** : insère un lien permettant de se désabonner de toutes les diffusions (liste bloquée). Le contenu associé par défaut est : « Vous recevez ce message car vous avez été en contact avec ***nom de votre organisation*** ou une entité associée. Pour ne plus recevoir de messages de ***nom de votre organisation***, cliquez ici. »
 
 ## Créer des blocs de personnalisation personnalisés {#create-custom-personalization-blocks}
@@ -91,8 +91,8 @@ Pour créer un bloc de personnalisation, procédez comme suit :
    * Saisissez le libellé du bloc. Ce libellé est affiché dans la fenêtre d’insertion du champ de personnalisation.
    * Sélectionnez un type de contenu de **Diffusion**.
    * Sélectionnez l’option **[!UICONTROL Afficher dans les menus de personnalisation]** pour pouvoir accéder à ce bloc à partir de l’icône d’insertion de champs de personnalisation.
-   * Le cas échéant, sélectionnez l’option **[!UICONTROL Le contenu du bloc de personnalisation dépend du format]** pour définir deux blocs distincts pour les e-mails au format HTML et texte.
-   * Saisissez le contenu (en HTML, texte, JavaScript, etc.) du bloc de personnalisation, puis cliquez sur **[!UICONTROL Enregistrer]**.
+   * Le cas échéant, activez l&#39;option **[!UICONTROL Le contenu du bloc de personnalisation dépend du format]** afin de définir deux blocs différents pour les emails HTML et Texte.
+   * Saisissez le contenu (en HTML, texte, JavaScript, etc.) du bloc de personnalisation et cliquez sur **[!UICONTROL Enregistrer]**.
 
 Une fois enregistré, le nouveau bloc de personnalisation est disponible dans l’éditeur de diffusion.
 
@@ -100,4 +100,4 @@ Une fois enregistré, le nouveau bloc de personnalisation est disponible dans l�
 
 Dans la vidéo suivante, découvrez comment créer des blocs de contenu dynamiques et apprenez à les utiliser pour personnaliser le contenu de votre diffusion e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449008?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

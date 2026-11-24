@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 100%
+source-wordcount: '563'
+ht-degree: 93%
 ---
 # Bonnes pratiques relatives à l&#39;édition de contenu{#content-editing-best-practices}
 
@@ -55,12 +55,12 @@ Afin de garantir un fonctionnement optimal de l&#39;éditeur, il est recommandé
 
   La liste officielle des attributs « types » est disponible [sur ce site](https://www.w3schools.com/tags/att_input_type.asp).
 
-* Enchaînement des étapes pour simuler une page de fin avec le DCE :
+* Procédure à suivre pour simuler une page de fin avec le DCE :
 
   ![](assets/dce_enchainement.png)
 
 * Assurez-vous qu’il n’y a bien qu&#39;un seul `<body> </body>` dans la page.
-* Lorsqu’un fichier CSS ou JS est chargé, les images contenues dans le fichier .zip ne le sont pas. Les références à ces images dans le CSS ne sont donc pas mises à jour.
+* Lorsqu’un fichier CSS ou JS est chargé, les images contenues dans le fichier .zip ne sont pas chargées. Les références à ces images dans le CSS ne sont donc pas mises à jour.
 
 ## Formats pris en charge par l&#39;éditeur de contenus {#content-editor-supported-formats}
 
@@ -105,7 +105,7 @@ La section supérieure de l’éditeur affiche les message liés au statut du co
 * L&#39;application Web n&#39;a pas été publiée, elle n&#39;est pas accessible en ligne.
 * L&#39;application Web est en ligne, toute modification nécessite une nouvelle publication.
 * Le contenu de la page n’est pas fonctionnel. Elle doit inclure un formulaire HTML (`<form>`).
-* Il reste n zone(s) de saisie ou boutons à configurer.
+* Il n’y a pas de zone(s) de saisie ou de bouton à configurer.
 * Pour permettre le passage à la page suivante, vous devez associer l&#39;action &#39;Page Suivante&#39; à un bouton ou un lien de la page courante.
 
 ### Liste des messages pour l&#39;édition de diffusion {#list-of-messages-when-editing-a-delivery}

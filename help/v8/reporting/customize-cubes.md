@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 96%
+source-wordcount: '1531'
+ht-degree: 95%
 ---
 # Personnaliser vos cubes{#cube-custom}
 
@@ -41,14 +41,14 @@ Utilisez le compartimentage des données pour simplifier l’affichage des donn�
 Globalement, trois types de mise en classe sont possibles :
 
 1. En utilisant des plages de valeurs définies manuellement. Par exemple, âge, panier moyen, nombre de diffusions ouvertes, etc.). Voir à ce sujet la section [Définir chaque classe](#defining-each-bin).
-1. Dynamiquement, en fonction des valeurs d&#39;une énumération [enumeration](../config/enumerations.md) : affichez uniquement les valeurs contenues dans l&#39;énumération, toutes les autres valeurs sont regroupées dans &#39;Autres&#39;. Pour plus d&#39;informations, consultez la section [Gérer dynamiquement les classes](#dynamically-managing-bins).
+1. Dynamiquement, en fonction des valeurs d&#39;une énumération [](../config/enumerations.md) : affichez uniquement les valeurs contenues dans l&#39;énumération, toutes les autres valeurs sont regroupées dans &#39;Autres&#39;. Pour plus d&#39;informations, consultez la section [Gérer dynamiquement les classes](#dynamically-managing-bins).
 1. En utilisant des plages de valeurs, toutes les autres étant regroupées. Par exemple, les 18 à 25 ans, les 26 à 59 ans, et les autres. Pour plus d&#39;informations, consultez la section [Créer des plages de valeurs](#creating-value-ranges).
 
 Pour activer la mise en classe, cochez l&#39;option correspondante lors de la création de la dimension.
 
 ![](assets/cube-class.png)
 
-Vous pouvez créer des classes manuellement ou les lier à une [énumération](../config/enumerations.md) existante.
+Vous pouvez créer des classes manuellement ou les lier à une énumération [existante](../config/enumerations.md).
 
 Pour générer automatiquement les classes, Adobe Campaign propose également un assistant : les valeurs peuvent être réparties en N groupes, ou regroupées selon les plus représentées dans la base.
 
@@ -117,7 +117,7 @@ Adobe Campaign propose ainsi une énumération sur les domaines qui permet d&#3
 
 ![](assets/nmx_report_sample.png)
 
-Elle est construite selon le modèle suivant :
+Il est construit selon le modèle suivant :
 
 ![](assets/nmx_enum_domain.png)
 
@@ -255,7 +255,7 @@ Pour cela :
 
    ![](assets/cube_multiple_filters.png)
 
-A chaque modification (ajout, modification, suppression de filtres), cliquez sur la flèche pour relancer le calcul du rapport.
+Chaque fois qu&#39;un filtre est modifié (ajouté, supprimé, modifié), le rapport doit être recalculé.
 
 Un filtre peut également être créé à partir d&#39;une sélection. Pour cela, choisissez la ou les cellules, lignes et colonnes sources et cliquez sur l&#39;icône **[!UICONTROL Ajouter un filtre]**.
 

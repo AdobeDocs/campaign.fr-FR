@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '642'
-ht-degree: 51%
+ht-degree: 48%
 ---
 # Suivre les liens personnalisés {#tracking-personalized-links}
 
@@ -36,7 +36,7 @@ Les liens inclus dans le contenu des emails qui comportent des éléments de per
 
 L’utilisation de JavaScript dans le contenu des emails (HTML ou Texte) vous permet de générer et d&#39;envoyer du contenu dynamique aux destinataires, avec deux restrictions :
 
-* Le script ne peut pas accéder directement à la base de données (la fonction SQL et les fonctions API ne sont pas disponibles),
+* Le script ne peut pas accéder directement à la base (les fonctions SQL et API ne sont pas disponibles),
 * Adobe Campaign doit être en mesure de détecter les URL afin que les liens puissent être suivis.
 
 ## Instructions de pré-traitement {#pre-processing-instructions}
@@ -79,7 +79,7 @@ Dans ce cas, la page est téléchargée pendant l’analyse, avant la détection
 
 ### Modèle recommandé {#recommended-pattern}
 
-Après avoir traité `<%@` instructions, l’URL à tracker doit respecter la syntaxe suivante :
+Après avoir traité les instructions `<%@`, l’URL à suivre doit présenter la syntaxe suivante :
 
 ```
 <a href="http://myurl.com/a.php?param1=aaa&param2=<%=escapeUrl(recipient.xxx)%>&param3=<%=escapeUrl(recipient.xxx)%>">
@@ -101,9 +101,9 @@ Pour garantir le suivi correct des URL personnalisées, vous devez utiliser la f
 
 Vous aurez ainsi la garantie que le paramètre personnalisé est correctement encodé et suivi par Adobe Campaign.
 
-## Bouclage avec `<%@ foreach %>` {#foreach}
+## Boucle avec `<%@ foreach %>` {#foreach}
 
-L’instruction `<%@ foreach %>` vous permet d’effectuer une itération sur des tableaux d’objets chargés dans la diffusion pour effectuer le suivi de liens individuels liés aux objets.
+L&#39;instruction `<%@ foreach %>` vous permet d&#39;effectuer une itération sur des tableaux d&#39;objets chargés dans la diffusion pour effectuer le suivi de liens individuels liés aux objets.
 
 ### Syntaxe
 
@@ -113,12 +113,12 @@ L’instruction `<%@ foreach %>` vous permet d’effectuer une itération sur de
 <%@ end %>
 ```
 
-**Paramètres:**
+**Paramètres :**
 
-* **`object`** : nom de l’objet de départ (généralement un objet de script supplémentaire, mais il peut s’agir d’une diffusion)
+* **`object`** : nom de l’objet de départ (généralement un objet de script supplémentaire, mais peut être une diffusion)
 * **`xpath`** (facultatif) : XPath de la collection sur laquelle effectuer la boucle. La valeur par défaut est « . », ce qui signifie que l’objet est le tableau sur lequel effectuer une boucle
 * **`index`** (facultatif) : si xpath n’est pas « . » et objet est un tableau lui-même, index d’élément de l’objet (commence à 0)
-* **`item`** (facultatif) : nom d’un nouvel objet accessible avec des `<%@ value %>` à l’intérieur de la boucle foreach. La valeur par défaut est le nom du lien dans le schéma
+* **`item`** (facultatif) : nom d’un nouvel objet accessible avec `<%@ value %>` à l’intérieur de la boucle foreach. La valeur par défaut est le nom du lien dans le schéma
 
 ### Exemple
 

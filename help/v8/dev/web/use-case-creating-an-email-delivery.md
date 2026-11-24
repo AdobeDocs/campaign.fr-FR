@@ -34,16 +34,16 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 98%
+source-wordcount: '806'
+ht-degree: 89%
 ---
-# Cas d’utilisation : créer une diffusion e-mail{#use-case-creating-an-email-delivery}
+# Cas d’utilisation : création d’une diffusion email{#use-case-creating-an-email-delivery}
 
 
 
-Dans ce cas d’utilisation, vous apprendrez à concevoir une diffusion par email à l’aide du Digital Content Editor (DCE) d’Adobe Campaign.
+Dans ce cas d’utilisation, vous apprendrez les étapes de conception d’une diffusion e-mail à l’aide du Digital Content Editor (DCE) d’Adobe Campaign.
 
 Notre objectif final est d&#39;obtenir une diffusion partant d&#39;un modèle personnalisé contenant :
 
@@ -60,17 +60,17 @@ Notre objectif final est d&#39;obtenir une diffusion partant d&#39;un modèle pe
 
 ## Etape 1 - Créer une diffusion {#step-1---creating-a-delivery}
 
-Pour créer une diffusion, placez le curseur dans l’onglet **Campagnes** et cliquez sur **Diffusions**. Cliquez ensuite sur le bouton **Créer** au-dessus de la liste des diffusions existantes. Pour plus d’informations sur la création de diffusions, consultez [cette page](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/about-email-channel){target="_blank"}.
+Pour créer une diffusion, placez le curseur dans l’onglet **Campagnes** et cliquez sur **Diffusions**. Cliquez ensuite sur le bouton **Créer** au-dessus de la liste des diffusions existantes. Pour plus d’informations sur la création de diffusions, consultez [cette page](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/about-email-channel){target="_blank"}.
 
 ![](assets/delivery_step_1.png)
 
 ## Etape 2 - Sélectionner un modèle {#step-2---selecting-a-template}
 
-Sélectionnez un modèle de diffusion et nommez votre diffusion. Ce nom sera visible uniquement par les utilisateurs et utilisatrices de la console Adobe Campaign et non par vos destinataires, mais cet intitulé s’affichera dans la liste de vos diffusions. Cliquez sur **[!UICONTROL Continuer]**.
+Sélectionnez un modèle de diffusion et nommez votre diffusion. Ce nom sera visible uniquement par les utilisateurs de la console Adobe Campaign et non par vos destinataires ; toutefois, cet en-tête s&#39;affichera dans votre liste de diffusions. Cliquez sur **[!UICONTROL Continuer]**.
 
 ![](assets/dce_delivery_model.png)
 
-## Etape 3 - Sélectionner un contenu {#step-3---selecting-a-content}
+## Etape 3 - Sélection du contenu {#step-3---selecting-a-content}
 
 Le Digital Content Editor est livré avec plusieurs modèles d&#39;usine aux structures variables (colonnes, zones de textes, etc.).
 
@@ -78,7 +78,7 @@ Sélectionnez le modèle de contenu qui vous convient, puis cliquez sur le bouto
 
 ![](assets/dce_select_model.png)
 
-Vous pouvez également importer du contenu HTML créé en dehors d&#39;Adobe Campaign en sélectionnant l&#39;option **[!UICONTROL A partir d&#39;un fichier]**.
+Vous pouvez également importer du contenu HTML créé en dehors d’Adobe Campaign en sélectionnant **[!UICONTROL À partir d’un fichier]**.
 
 ![](assets/dce_select_from_file_template.png)
 

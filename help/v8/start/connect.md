@@ -23,10 +23,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1125'
-ht-degree: 94%
+ht-degree: 87%
 ---
 # Se connecter à Adobe Campaign v8{#gs-ac-connect}
 
@@ -39,7 +39,7 @@ Avant de commencer, vous devez :
 * Vérifier la compatibilité de votre système et de vos outils avec Adobe Campaign dans la [matrice de compatibilité](compatibility-matrix.md)
 * Obtenir l&#39;URL du serveur Campaign
 * Créer votre Adobe ID ou obtenir vos informations d’identification utilisateur de votre société
-* Installez le runtime de Microsoft Edge Webview2 sur votre système. [En savoir plus](#webview)
+* Installez le runtime de Microsoft Edge Webview2 sur votre système. [En savoir plus](#webview)
 
 ## Installer la console cliente{#download-ac-console}
 
@@ -57,7 +57,7 @@ Deux options sont disponibles pour télécharger la console cliente :
 
 1. En tant qu’administrateur ou administratrice de Campaign, connectez-vous à la [distribution logicielle Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target="_blank"}.
 
-1. En tant qu’utilisateur/utilisatrice final(e), votre administrateur ou administratrice Campaign déploie la console cliente pour vous et la rend disponible via une URL dédiée.
+1. En tant qu&#39;utilisateur final, votre administrateur Campaign déploie la console cliente pour vous et la rend disponible via une URL dédiée.
 
 Une fois le programme d’installation de la console cliente téléchargé, installez-le sur votre ordinateur local.
 
@@ -87,7 +87,7 @@ Vous pouvez ajouter autant de connexions que nécessaire pour vous connecter, pa
 
 ## Connexion à Adobe Campaign {#logon-to-ac}
 
-Les utilisateurs de Campaign se connectent à la console Adobe Campaign à l&#39;aide de leur Adobe ID, via le système de gestion des identités (IMS) Adobe. Ils peuvent utiliser le même identifiant pour toutes les solutions d&#39;Adobe. La connexion est enregistrée lors de l&#39;utilisation d&#39;Adobe Campaign avec d&#39;autres solutions. Pour en savoir plus sur l’IMS d’Adobe, consultez [cette page](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
+Les utilisateurs de Campaign se connectent à la console Adobe Campaign à l&#39;aide de leur Adobe ID, via le système de gestion des identités (IMS) Adobe. Ils peuvent utiliser le même identifiant pour toutes les solutions Adobe. La connexion est enregistrée lors de l&#39;utilisation d&#39;Adobe Campaign avec d&#39;autres solutions. Pour en savoir plus sur l’IMS d’Adobe, consultez [cette page](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
 
 Pour vous connecter à une instance, procédez comme suit :
 
@@ -153,7 +153,7 @@ En savoir plus sur les utilisateurs et la définition des autorisations adéquat
 >L’interface d’utilisation de Campaign Web n’est disponible que pour les utilisateurs et utilisatrices qui se connectent à Adobe Campaign avec leur Adobe ID. En savoir plus sur le [système de gestion des identités (IMS) Adobe](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
 >
 
-Découvrez comment vous connecter à [!DNL CX Enterprise] et accéder à l’interface web d’Adobe Campaign [&#x200B; sur cette page](campaign-ui.md#ac-web-ui).
+Découvrez comment vous connecter à [!DNL CX Enterprise] et accéder à l’interface web d’Adobe Campaign [ sur cette page](campaign-ui.md#ac-web-ui).
 
 Pour en savoir plus, consultez la [documentation sur l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
@@ -171,6 +171,6 @@ Dans le contexte d&#39;un accès web, les options seront en revanche principalem
 
 ![](assets/campaign-from-web.png)
 
-L&#39;accès web est également utilisé pour le processus de validation : les opérateurs peuvent cliquer sur l&#39;e-mail de demande de validation et se connecter à Campaign via leur navigateur web pour valider ou refuser le contenu ou le budget d&#39;une diffusion.
+L’accès web est également utilisé dans le processus de validation : les opérateurs peuvent cliquer sur l’e-mail de demande de validation et se connecter à Campaign via leur navigateur web pour valider ou refuser le contenu ou le budget d’une diffusion.
 
-Pour accéder à votre instance Campaign à partir du web, l&#39;URL est : `https://<your adobe campaign server>:<port number>/view/home`.
+Pour accéder à votre instance Campaign à partir du web, l&#39;URL est : `https://<your adobe campaign server>:<port number>/view/home`.

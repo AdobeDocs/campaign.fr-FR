@@ -51,18 +51,18 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1055'
-ht-degree: 78%
+ht-degree: 72%
 ---
 # Prise en main dʼAdobe Campaign{#gs-ac-v8}
 
 Adobe Campaign propose une plateforme qui permet de concevoir des expériences client cross-canal ainsi quʼun environnement pour lʼorchestration visuelle de campagnes, la gestion dʼinteractions en temps réel et lʼexécution cross-canal.
 
-Adobe Campaign v8 est l’outil de campagne de nouvelle génération conçu pour des canaux marketing variés, tels que les e-mails, les notifications push, les SMS et le publipostage direct. Il offre des fonctionnalités ETL et de gestion des données performantes pour concevoir et organiser une campagne parfaite. Son moteur d’orchestration fournit des programmes marketing multi-touch riches qui mettent l’accent sur les parcours pilotés par lots. Il est également associé à un serveur de messagerie en temps réel évolutif qui permet aux équipes marketing d’envoyer des messages prédéfinis sur la base d’une payload globale à partir de n’importe quel système informatique, pour des communications à propos de la réinitialisation d’un mot de passe, une confirmation de commande, une facturation en ligne, etc.
+Adobe Campaign v8 est l’outil de campagne de nouvelle génération conçu pour des canaux marketing variés, tels que les e-mails, les notifications push, les SMS et le publipostage direct. Il offre des fonctionnalités ETL et de gestion des données performantes pour concevoir et organiser une campagne parfaite. Son moteur d’orchestration fournit des programmes marketing multi-touch riches qui mettent l’accent sur les parcours pilotés par lots. Il est également fourni avec un serveur de messagerie en temps réel évolutif qui permet aux équipes marketing d’envoyer des messages prédéfinis sur la base d’une payload globale à partir de n’importe quel système informatique pour des communications telles que la réinitialisation du mot de passe, la confirmation de commande, les accusés de réception électroniques, etc.
 
-Adobe Campaign v8 a fortement amélioré son infrastructure, sa sécurité, sa délivrabilité et sa surveillance. Il est disponible en tant que **Managed Cloud Service** qui associe des services à une supervision proactive et à des alertes rapides. Pour en savoir plus sur Campaign Managed Cloud Services, consultez [cette page](whats-new.md#acms-desc).
+Adobe Campaign v8 a fortement amélioré son infrastructure, sa sécurité, sa délivrabilité et sa surveillance. Il est disponible sous la forme d’un **Managed Cloud Service** qui associe des services à une surveillance proactive et à des alertes opportunes. Pour en savoir plus sur Campaign Managed Cloud Services, consultez [cette page](whats-new.md#acms-desc).
 
 En utilisant Campaign, vous pouvez :
 

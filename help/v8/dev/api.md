@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 82%
+source-wordcount: '315'
+ht-degree: 74%
 ---
 # Prise en main des [!DNL Campaign] API {#gs-ac-api}
 
@@ -47,20 +47,20 @@ ht-degree: 82%
 Vous pouvez utiliser les [API JavaScript de Campaign](https://experienceleague.adobe.com/fr/tools/campaign-api){target="_blank"} pour écrire dans la base de données cloud de Campaign ou lire à partir de la base de données :
 
 * API spécifiques à l&#39;entreprise qui vous permettent d&#39;agir sur chaque objet : diffusions, workflows, abonnements, etc. Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=fr){target="_blank"}.
-* API génériques d’accès aux données pour interroger les données du modèle de données à l’aide de `queryDef` et de l’objet `NLWS`. Pour en savoir plus, consultez la section [Interroger la base de données avec queryDef](query-api.md).
+* API d&#39;accès aux données génériques pour interroger les données du modèle de données à l&#39;aide de `queryDef` et de l&#39;objet `NLWS`. En savoir plus dans [Interroger la base de données avec queryDef](query-api.md).
 
 Veuillez notez que dans son [déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), Campaign fonctionne avec deux bases de données : une base de données locale pour la messagerie en temps réel de l’interface utilisateur et les requêtes et écritures unitaires à travers les API, et une base de données cloud pour l’exécution de campagnes, les rapports, l&#39;ingestion de données, les requêtes par lots et l’exécution de workflows.
 
 >[!CAUTION]
 >
->* Campaign v8.5.1 et les versions ultérieures ont apporté des modifications au processus d’authentification de Campaign v8. Les opérateurs ou opératrices techniques doivent utiliser Adobe Identity Management System (IMS) pour se connecter à Campaign. Découvrez comment migrer votre ou vos comptes techniques existants dans [cette note technique](../../technotes/upgrades/ims-migration.md).
+>* À partir de la version 8.5.1 de Campaign, le processus d’authentification de Campaign v8 a été modifié. Les opérateurs ou opératrices techniques doivent utiliser le système de gestion des identités (IMS) Adobe pour se connecter à Campaign. Découvrez comment migrer votre ou vos comptes techniques existants dans [cette note technique](../../technotes/upgrades/ims-migration.md).
 >
 >* [!DNL Adobe Campaign] v8 est fourni avec une limite au niveau du débit (TPS) de notre calque API. Le fait de rompre la limite entraîne une erreur HTTP standard (429). En tant qu&#39;utilisateur Managed Cloud Services, vous pouvez contacter Adobe pour adapter le contrôle de flux de chaque API.
 > 
 
 ## Conditions préalables requises {#ac-api-prerequisites}
 
-Avant d&#39;utiliser les API [!DNL Adobe Campaign], il est conseillé de posséder des notions sur les sujets suivants :
+Avant d&#39;utiliser les API [!DNL Adobe Campaign], vous devez connaître les rubriques suivantes :
 
 * JavaScript
 * protocole SOAP

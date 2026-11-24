@@ -23,10 +23,10 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1172'
-ht-degree: 87%
+ht-degree: 82%
 ---
 # Rapports sur les diffusions {#delivery-reports}
 
@@ -80,7 +80,7 @@ Ce rapport regroupe les indicateurs clés qui permettent de suivre le comporteme
 * **[!UICONTROL Ouvertures distinctes sur la population atteinte]** : estimation du nombre de personnes destinataires ciblées distinctes ayant ouvert au moins une fois un message. Les clics sur les URL trackées sont pris en compte, car il faut ouvrir les e-mails pour cliquer sur un lien.
 * **[!UICONTROL Somme des ouvertures sur la population atteinte]** : estimation du nombre total d’ouvertures effectuées par des personnes destinataires ciblées.
 * **[!UICONTROL Clics sur le lien de désinscription]** : nombre de clics effectués sur le lien de désinscription.
-* **[!UICONTROL Clics sur le lien de la page miroir]** : nombre de clics effectués sur le lien de la [page miroir](../send/mirror-page.md). Pour être pris en compte, le lien doit être défini comme tel dans l’assistant de diffusion (URL suivies).
+* **[!UICONTROL Clics sur le lien de la page miroir]** : nombre de clics sur le lien de la [page miroir](../send/mirror-page.md). Pour être pris en compte, le lien doit être défini comme tel dans l’assistant de diffusion (URL suivies).
 * **[!UICONTROL Estimation des transferts]** : estimation du nombre d’e-mails transférés par les destinataires ciblé(e)s. Cette valeur est calculée en effectuant la différence entre le nombre de personnes distinctes et le nombre de personnes destinataires distinctes ayant cliqué au moins une fois dans l’e-mail.
 
   >[!NOTE]
@@ -192,7 +192,7 @@ Cette section comporte les indicateurs suivants :
 
 ## Hot clicks {#hot-clicks}
 
-Ce rapport présente le contenu du message (HTML et/ou texte) avec, sur chaque lien, le pourcentage de clics sur ce lien. Les blocs de personnalisation, liens de désinscription, liens de page miroir et liens d’offre sont pris en compte dans le total des clics cumulés, mais ne sont pas affichés dans le rapport.
+Ce rapport présente le contenu du message (HTML et/ou texte) avec, sur chaque lien, le pourcentage de clics sur ce lien. Les blocs de personnalisation, les liens de désinscription, les liens vers la page miroir et les liens des offres sont pris en compte dans le total des clics cumulés mais ne sont pas affichés dans le rapport.
 
 >[!NOTE]
 >
@@ -219,4 +219,4 @@ Vous pouvez afficher des rapports cumulés sur les diffusions. Pour cela, sélec
 
 Vous pouvez sélectionner des diffusions non consécutives dans la liste en maintenant la touche CTRL enfoncée pendant la sélection.
 
-Pour sélectionner des diffusions enregistrées dans un autre dossier, cliquez sur l’icône **[!UICONTROL Afficher les fils]**, accessible dans la barre d’outils. Elles s’affichent alors dans la même liste.
+Pour sélectionner des diffusions enregistrées dans un dossier différent, cliquez sur l&#39;icône **[!UICONTROL Afficher les fils]**, accessible dans la barre d&#39;outils. Elles s’affichent alors dans la même liste.

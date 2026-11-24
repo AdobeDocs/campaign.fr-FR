@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '972'
 ht-degree: 98%
 ---
 # Coupons personnalisés{#personalized-coupons}
@@ -94,7 +94,7 @@ Les valeurs des champs **[!UICONTROL état]**, **[!UICONTROL canal]** et **[!UIC
 
 ## Insertion dʼun coupon dans une diffusion e-mail {#inserting-a-coupon-into-an-email-delivery}
 
-Dans l&#39;exemple ci-dessous, la diffusion est créée à partir de la Page d&#39;accueil. Pour obtenir des instructions détaillées sur la création d&#39;une diffusion, consultez [cette section](email.md)
+Dans l&#39;exemple ci-dessous, la diffusion est créée à partir de la Page d&#39;accueil. Pour des consignes détaillées de création d&#39;une diffusion, voir [cette section](email.md).
 1. Allez sur **[!UICONTROL Campagnes]** et sélectionnez **[!UICONTROL Diffusions]**.
 1. Cliquez sur **[!UICONTROL Créer]**.
 

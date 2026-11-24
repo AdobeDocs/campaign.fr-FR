@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1446'
-ht-degree: 99%
+ht-degree: 96%
 ---
 # Définir les propriétés des formulaires web{#defining-web-forms-properties}
 
@@ -107,7 +107,7 @@ Un exemple de rendu est affiché dans la section inférieure de la fenêtre des 
 
 Vous pouvez remplacer le logo utilisé dans le formulaire par votre propre logo.
 
-Dans l’onglet **[!UICONTROL Rendu]** dans les **[!UICONTROL propriétés]** de votre application web, cliquez sur l’icône en forme de loupe de votre modèle :
+Dans l’onglet **[!UICONTROL Rendu]** des **[!UICONTROL Propriétés]** de votre application web, cliquez sur l’icône en forme de verre de votre modèle :
 
 ![](assets/logo_glass.png)
 
@@ -115,7 +115,7 @@ Dans la nouvelle fenêtre, cliquez sur le lien **[!UICONTROL Mise en page]** :
 
 ![](assets/logo_pagelayout.png)
 
-Vous aurez la possibilité de modifier le chemin de l’image du logo ici :
+Vous aurez la possibilité de modifier le chemin de l&#39;image du logo ici :
 
 ![](assets/logo_path.png)
 
@@ -159,7 +159,7 @@ Lors de l&#39;accès au formulaire, la page d&#39;authentification suivante sera
 
 ![](assets/s_ncs_admin_survey_access_login.png)
 
-Les login et mot de passe sont ceux des opérateurs Adobe Campaign. Pour plus d’informations, consultez [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
+Les login et mot de passe sont ceux des opérateurs Adobe Campaign. Pour plus d’informations, consultez [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
 
 L’option **[!UICONTROL Utiliser un compte spécifique]** vous permet de circonscrire les autorisations en lecture ou écriture de l’opérateur ou de l’opératrice accédant au formulaire. Sélectionnez dans la liste déroulante un opérateur, une opératrice ou un groupe d’opérateurs et d’opératrices responsable de l’octroi de ces autorisations.
 

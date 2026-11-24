@@ -30,19 +30,19 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 97%
+source-wordcount: '798'
+ht-degree: 92%
 ---
 # Paramètres de diffusion SMS {#sms-settings}
 
-Les paramètres techniques nécessaires à une diffusion SMS sont les suivants :
+Les paramètres techniques nécessaires à une diffusion par SMS sont les suivants :
 
 * Le compte externe SMPP pour le routage des messages. [En savoir plus](smpp-external-account.md#smpp-connection-settings)
 * Configurer l’onglet SMS. [Voici comment procéder](#sms-tab)
 
-Vous pouvez configurer tout ceci dans un modèle de diffusion afin d’éviter d’effectuer le paramétrage pour chaque création de diffusion SMS.
+Vous pouvez configurer toutes ces options dans un modèle de diffusion afin d’éviter d’avoir à définir les paramètres de chaque création de diffusion SMS.
 
 ## Configurer l’onglet SMS {#sms-tab}
 

@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1483'
-ht-degree: 97%
+ht-degree: 96%
 ---
 # Ajouter une offre sur une page web{#add-an-offer-in-web}
 
@@ -107,7 +107,7 @@ Le contenu du rendu de l&#39;offre est renvoyé à la page HTML par le moteur d&
 
 ### Présentation d&#39;une offre identifiée {#presenting-an-identified-offer}
 
-Pour présenter une offre à un contact identifié, le processus est similaire à celui détaillé [dans cette section](#presenting-an-anonymous-offer).
+Pour présenter une offre à un contact identifié, le processus est similaire à celui détaillé [dans cette section](#presenting-an-anonymous-offer).
 
 Dans le contenu de la page web, vous devez ajouter le script suivant qui permettra d&#39;identifier le contact lors de l&#39;appel au moteur d&#39;offres :
 
@@ -227,7 +227,7 @@ Le cas d&#39;utilisation suivant décrit les paramétrages à effectuer dans Ado
 
 1. **Étendre le formulaire des offres pour éditer les nouveaux champs et modifier un champ existant**
 
-   Editer le formulaire de saisie **Offre (nms)**.
+   Modifiez le formulaire de saisie **Offre (nms)**.
 
    Insérer dans la partie intitulée &quot;Views&quot;, les deux nouveaux champs avec le contenu suivant :
 
@@ -360,7 +360,7 @@ En réponse à la requête, le service SOAP renverra les paramètres suivants :
 Ajoutez la commande **nms:interaction#UpdateStatus** à l’URL, puis les paramètres suivants :
 
 * **proposition** : chaîne de caractères, contient l&#39;identifiant de la proposition donnée en sortie lors d&#39;un appel au moteur. Voir [Proposition d&#39;offres](#offer-proposition).
-* **status** : nombre, indique le nouveau statut de l&#39;offre. Les valeurs possibles sont répertoriées dans la **propositionStatus** [enumeration](../config/enumerations.md), dans le schéma **nms:common**. Par exemple, d&#39;usine, le nombre 3 correspond au statut **Acceptée**.
+* **status** : nombre, indique le nouveau statut de l&#39;offre. Les valeurs possibles sont répertoriées dans l&#39;énumération **propositionStatus** [enumeration](../config/enumerations.md), dans le schéma **nms:common**. Par exemple, d&#39;usine, le nombre 3 correspond au statut **Acceptée**.
 * **Context** : élément XML, vous permet d&#39;ajouter des informations contextuelles dans le schéma d&#39;espace. Si le schéma utilisé est **nms:interaction**, **`<empty>`** doit être ajouté.
 
 ### Exemple d&#39;utilisation d&#39;un appel SOAP {#example-using-a-soap-call}

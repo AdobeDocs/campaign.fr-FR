@@ -62,16 +62,16 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1501'
-ht-degree: 70%
+ht-degree: 63%
 ---
 # Fonctionnalités essentielles d’Adobe Campaign v8 {#ac-gs-what-is-new}
 
-Adobe Campaign v8 est conçu pour les spécialistes marketing cross-canal qui ont besoin de la solution cloud la plus performante pour la gestion de campagnes cross-canal à l’échelle de l’entreprise. Il offre des fonctionnalités ETL et de gestion des données performantes pour concevoir et organiser une campagne parfaite. Son moteur d’orchestration fournit des programmes marketing multi-touch riches qui mettent l’accent sur les parcours pilotés par lots. Il est également associé à un serveur de messagerie en temps réel évolutif qui permet aux équipes marketing d’envoyer des messages prédéfinis sur la base d’une payload globale à partir de n’importe quel système informatique, pour des tâches telles que la réinitialisation du mot de passe, la confirmation de commande, la facturation en ligne, etc.
+Adobe Campaign v8 est conçu pour les spécialistes marketing cross-canal qui ont besoin de la solution cloud la plus performante pour la gestion de campagnes cross-canal à l’échelle de l’entreprise. Il offre des fonctionnalités ETL et de gestion des données performantes pour concevoir et organiser une campagne parfaite. Son moteur d’orchestration fournit des programmes marketing multi-touch riches qui mettent l’accent sur les parcours pilotés par lots. Il est également fourni avec un serveur de messagerie en temps réel évolutif qui permet aux équipes marketing d’envoyer des messages prédéfinis sur la base d’une payload globale à partir de n’importe quel système informatique, pour des tâches telles que la réinitialisation du mot de passe, la confirmation de commande, les accusés de réception électroniques, etc.
 
-Adobe Campaign v8 a fortement amélioré son infrastructure, sa sécurité, sa délivrabilité et sa surveillance. Il est disponible en tant que **Managed Cloud Service** qui associe des services à une supervision proactive et à des alertes rapides. Pour en savoir plus sur Campaign Managed Cloud Services, consultez [cette section](#acms-desc).
+Adobe Campaign v8 a fortement amélioré son infrastructure, sa sécurité, sa délivrabilité et sa surveillance. Il est disponible sous la forme d’un **Managed Cloud Service** qui associe des services à une surveillance proactive et à des alertes opportunes. Pour en savoir plus sur Campaign Managed Cloud Services, consultez [cette section](#acms-desc).
 
 ![](assets/home-page.png)
 
@@ -117,7 +117,7 @@ Adobe Campaign vous aide à créer des profils client à partir des données col
 
 [En savoir plus sur la gestion des données client et cliente](audiences.md)
 
-### Gestion de campagnes de premier ordre {#best-in-campaign-mgt}
+### Gestion de campagnes la plus performante {#best-in-campaign-mgt}
 
 Adobe Campaign v8 offre aux spécialistes marketing des fonctionnalités riches pour planifier, lancer et mesurer des campagnes sur plusieurs canaux.
 
@@ -150,7 +150,7 @@ La nouvelle architecture cloud permet à Campaign de rationaliser les processus,
 
 >[!AVAILABILITY]
 >
->* Campaign v8 est **uniquement** disponible en tant que Managed Cloud Service et ne peut pas être déployé dans des environnements On-Premise ou hybrides.
+>* Campaign v8 est **uniquement** disponible en tant que Managed Cloud Service et ne peut pas être déployé dans un environnement on-premise ou hybride.
 >
 >* La migration automatisée depuis un environnement Campaign Classic v7 existant n’est pas encore disponible.
 
@@ -223,7 +223,7 @@ Cette approche garantit que votre instance Campaign est toujours sécurisée, op
 
 ## Interface d&#39;administrateur en libre-service{#self-service-admin}
 
-En tant qu&#39;administrateur de produit, vous pouvez gérer les paramètres et suivre l&#39;utilisation de chacune de vos instances Campaign v8 avec le **Panneau de contrôle Campaign**.
+En tant qu’administrateur de produit, vous pouvez gérer les paramètres et suivre l’utilisation de chacune de vos instances Campaign v8 avec le **Panneau de Contrôle Campaign**.
 
 Grâce à une interface utilisateur intuitive, les administrateurs peuvent surveiller l&#39;utilisation des ressources clés, effectuer des tâches avancées telles que les listes autorisées d&#39;adresses IP, la surveillance de l&#39;espace de stockage SFTP, la gestion des clés, etc. Cette interface en libre-service vous apporte davantage de flexibilité et vous permet d&#39;effectuer les opérations suivantes :
 

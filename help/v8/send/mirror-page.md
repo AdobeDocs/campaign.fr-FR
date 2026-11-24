@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 100%
+source-wordcount: '469'
+ht-degree: 90%
 ---
 # Lien vers la page miroir {#mirror-page}
 
@@ -71,7 +71,7 @@ Outre le mode par défaut, les options suivantes sont disponibles :
 
 * **[!UICONTROL Forcer la génération de la page miroir]** : ce mode permet de générer la page miroir même si aucun lien vers la page miroir n’est inséré dans la diffusion.
 * **[!UICONTROL Ne pas générer de page miroir]** : ce mode permet d’éviter de générer une page miroir, même si le lien est présent dans la diffusion.
-* **[!UICONTROL Générer une page miroir accessible uniquement depuis l’identifiant du message]** : lorsque le lien de la page miroir n’est pas présent dans le contenu de l’e-mail, utilisez cette option pour permettre l’accès au contenu de la page miroir, dans la fenêtre du log de diffusion, comme décrit ci-dessous.
+* **[!UICONTROL Générer une page miroir accessible depuis l’identifiant du message]** : ce mode permet d’accéder au contenu de la page miroir, dans la fenêtre du log de diffusion, lorsque l’e-mail ne contient pas de lien vers celle-ci, comme indiqué ci-dessous.
 
 ## Vérifier la page miroir pour un ou une destinataire {#mirror-page-access}
 

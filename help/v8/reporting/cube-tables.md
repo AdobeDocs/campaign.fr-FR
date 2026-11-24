@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '989'
-ht-degree: 97%
+ht-degree: 93%
 ---
 # Utilisation des cubes pour explorer les données{#use-cubes-to-create-reports}
 
@@ -114,7 +114,7 @@ Pour ajouter et configurer des mesures, procédez comme suit :
 
    ![](assets/cube-measure-button.png)
 
-1. À l’aide du bouton **[!UICONTROL Utiliser une mesure]**, sélectionnez une des mesures existantes.
+1. Avec le bouton **[!UICONTROL Utiliser une mesure]**, sélectionnez l&#39;une des mesures existantes.
 
    ![](assets/cube-add-measure.png)
 
@@ -160,7 +160,7 @@ Pour regrouper une population dans une liste, procédez comme suit :
 
    ![](assets/cube-add-to-cart.png)
 
-   Répétez l&#39;opération autant de fois que nécessaire, pour collecter les différents profils.
+   Effectuez cette opération autant de fois que nécessaire pour collecter différents profils.
 
 1. Cliquez sur le bouton **[!UICONTROL Afficher le panier]** pour en visualiser le contenu avant de réaliser l&#39;export.
 

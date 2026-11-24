@@ -35,7 +35,7 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1059'
 ht-degree: 1%
@@ -96,7 +96,7 @@ Certains champs de la base de données sont supprimés lors de la migration. Lor
 
 ## POST avec ressources liées
 
-Lors de l’utilisation du format de corps de requête suivant, avec « VehicleOwner » représentant le lien vers « nms :recipient » :
+Lors de l’utilisation du format de corps de requête suivant, avec « VehicleOwner » représentant le lien vers « nms:recipient » :
 
 ```
 {
@@ -145,7 +145,7 @@ La section ci-dessous répertorie les différences entre les codes d’erreur et
 
 Avec Campaign Standard, le fuseau horaire s’affiche dans le cadre de la réponse JSON des appels de l’API REST **profileAndServices/profile**.
 
-Avec Campaign v8, le fuseau horaire n’est affiché que dans le cadre des appels API REST **profileAndServicesExt/profile**. Il ne fait pas partie des appels de l’API REST **profileAndServices/profile**, car il est ajouté dans un schéma étendu.
+Avec Campaign v8, le fuseau horaire n’est affiché que dans le cadre des appels API REST **profileAndServicesExt/profile**. Il ne fait pas partie des appels API REST **profileAndServices/profile**, car il est ajouté dans un schéma étendu.
 
 ## Workflows - Déclenchement de signal externe
 

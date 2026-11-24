@@ -25,10 +25,10 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 99%
+source-wordcount: '1181'
+ht-degree: 90%
 ---
 # Bonnes pratiques relatives aux interactions {#interaction-best-practices}
 
@@ -40,28 +40,28 @@ Cette section présente les bonnes pratiques pour gérer le module **nteraction*
 
 * Lors de l&#39;**implémentation et de la configuration des interactions**, vous devez tenir compte des recommandations suivantes :
 
-  * Dans le cas du moteur batch (généralement utilisé dans les communications sortantes, telles que les e-mails), le débit est la préoccupation centrale, car plusieurs contacts peuvent être gérés simultanément. Le goulot d’étranglement typique est la performance de la base de données.
-  * La principale contrainte du moteur unitaire (généralement utilisé dans les communications entrantes, telles qu’une bannière sur un site web) est la latence, car une personne attend une réponse. Le goulot d’étranglement typique est la performance du processeur.
+  * Pour le moteur par lots (généralement utilisé dans les communications sortantes, telles que les e-mails), le débit est la préoccupation principale, car plusieurs contacts peuvent être gérés en même temps. Le goulot d’étranglement typique est la performance de la base de données.
+  * La principale contrainte du moteur unitaire (généralement utilisé dans les communications entrantes, telles qu’une bannière sur un site web) est la latence, car quelqu’un attend une réponse. Le goulot d’étranglement typique est la performance du processeur.
   * La conception du catalogue d&#39;offres a un impact considérable sur la performance d&#39;Adobe Campaign.
   * Lorsque vous travaillez avec un nombre élevé d&#39;offres, il est recommandé de les diviser en plusieurs catalogues d&#39;offres.
 
 * Retrouvez ci-dessous quelques bonnes pratiques relatives à l&#39;utilisation des **règles d&#39;éligibilité** :
 
-  * Simplifiez les règles. La complexité des règles a une incidence sur les performances, car elle étend la recherche. Une règle complexe est toute règle qui comporte plus de cinq conditions.
+  * Simplifiez les règles. La complexité des règles a une incidence sur les performances car elle étend la recherche. Une règle complexe est toute règle qui comporte plus de cinq conditions.
   * Afin d&#39;accroître la performance, les règles peuvent être décomposées en différents filtres prédéfinis partagés entre des offres multiples.
   * Placez les règles de catégorie d’offres les plus restrictives à la position la plus élevée possible dans l’arborescence. De cette manière, elles excluront le plus grand nombre de contacts en premier, réduisant ainsi le nombre de cibles et empêchant leur traitement par d’autres règles.
   * Placez les règles les plus coûteuses en termes de temps ou de traitement en bas de l’arborescence. De cette manière, ces règles seront uniquement exécutées sur l’audience cible restante.
   * Démarrez au niveau d&#39;une catégorie spécifique afin d&#39;éviter d&#39;analyser l&#39;ensemble de l&#39;arbre.
   * Pour gagner du temps de traitement, précalculez les agrégats au lieu de créer des règles complexes avec des jointures. Pour ce faire, essayez de stocker les données clientèle dans une table de référence qui peut faire l’objet de recherches dans des règles d’éligibilité.
   * Utilisez un nombre minimum de poids pour limiter le nombre de requêtes.
-  * Il est recommandé de disposer d’un nombre limité d’offres par emplacement. Cela accélère la récupération des offres dans n’importe quel emplacement donné.
+  * Il est recommandé de disposer d&#39;un nombre limité d&#39;offres par emplacement d&#39;offre. Cela accélère la récupération des offres dans n’importe quel emplacement donné.
   * Servez-vous d&#39;index, en particulier pour les colonnes de recherche fréquemment utilisées.
 
 * Vous trouverez ci-dessous quelques bonnes pratiques concernant la **table de proposition** :
 
   * Utilisez un nombre minimum de règles pour que le traitement soit le plus rapide possible.
   * Limitez le nombre d&#39;enregistrements dans la table de propositions : conservez uniquement les enregistrements requis pour contrôler la mise à jour de son statut et ce que requièrent les règles, puis archivez-les dans un autre système.
-  * Réalisez une maintenance de base de données intensive sur la table de propositions, par exemple, en reconstruisant les index ou en recréant la table.
+  * Effectuez une maintenance intensive de la base de données sur la table de proposition, comme reconstruire des index ou recréer la table.
   * Limitez le nombre de propositions demandées par cible. N’en définissez pas plus que ce que vous allez réellement utiliser.
   * Dans la mesure du possible, évitez les jointures dans les critères des règles.
 
@@ -129,9 +129,9 @@ Lorsque vous utilisez le module Interaction et que vous sélectionnez manuelleme
 
 ![](assets/Interaction-best-practices-manual-offer-combined.png)
 
-### Extension du schéma nms:offer {#extending-nms-offer-schema}
+### Étendre le schéma nms:offer {#extending-nms-offer-schema}
 
-Lors de l’extension du schéma nms:offer, veillez à suivre la structure prête à l’emploi déjà configurée :
+Lors de l&#39;extension du schéma nms:offer, veillez à suivre la structure prête à l&#39;emploi déjà configurée :
 * Définissez un nouveau champ pour le stockage du contenu sous `<element name="view">`.
 * Un nouveau champ doit être défini deux fois. Une fois sous forme de champ XML normal, et une autre fois sous forme de champ XML CDATA en ajoutant &quot;_jst&quot; au nom. Par exemple :
 

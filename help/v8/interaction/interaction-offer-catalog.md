@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '418'
-ht-degree: 98%
+ht-degree: 81%
 ---
 # Création d&#39;un catalogue d&#39;offres
 
@@ -41,9 +41,9 @@ Les offres sont organisées en catégories/sous-catégories. Les catégories son
 
 Pour chaque catégorie, vous pouvez définir des **dates d&#39;éligibilité**, c&#39;est-à-dire la période pendant laquelle les offres contenues dans la catégorie peuvent être présentées à leur cible. Vous pouvez également ajuster le poids d&#39;une catégorie pour donner la priorité à la présentation de l&#39;offre.
 
-Pour créer une nouvelle catégorie, procédez comme suit :
+Pour créer une nouvelle catégorie, procédez comme suit :
 
-1. Accédez au dossier **[!UICONTROL Catalogue d&#39;offres]**.
+1. Accédez au dossier **[!UICONTROL Catalogue d’offres]**.
 
    ![](assets/offer_cat_create_001.png)
 
@@ -67,7 +67,7 @@ Pour créer une nouvelle catégorie, procédez comme suit :
 
    * **[!UICONTROL Éditez la requête]** pour appliquer des filtres à la cible de l&#39;offre.
 
-   * Récapitulatif des règles d’éligibilité.Pour les visualiser, cliquez sur le lien **[!UICONTROL Planning et règles d&#39;éligibilité de l&#39;offre]**.
+   * Récapitulatif des règles d’éligibilité. Pour les visualiser, cliquez sur le lien **[!UICONTROL Planning et règles d&#39;éligibilité de l&#39;offre]**.
 
 ## Ajouter une catégorie de secours
 

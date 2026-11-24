@@ -39,10 +39,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 96%
+source-wordcount: '728'
+ht-degree: 91%
 ---
 # Gérer les dossiers et les vues {#folders-and-views}
 
@@ -137,7 +137,7 @@ Vous pouvez déplacer les dossiers avec les flèches à droite ou sélectionner 
 
 ## Filtrer les données dans un dossier{#filter-data-in-a-folder}
 
-Pour filtrer les données stockées dans un dossier, accédez aux propriétés du dossier et sélectionnez l&#39;onglet Restriction.
+Pour filtrer les données stockées dans un dossier, accédez aux propriétés du dossier et sélectionnez l&#39;onglet Restriction .
 
 Par exemple, le dossier ci-dessous contiendra uniquement des contacts avec une adresse e-mail et dont l&#39;origine n&#39;est pas marquée comme « Externe » ou est vide.
 

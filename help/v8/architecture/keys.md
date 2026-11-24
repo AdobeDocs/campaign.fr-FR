@@ -40,18 +40,18 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 97%
+source-wordcount: '600'
+ht-degree: 64%
 ---
 # Gestion des clés et unicité {#key-management}
 
 Dans le contexte d’un [Déploiement Enterprise (FFDA)](enterprise-deployment.md), la clé primaire est un identifiant universel unique (UUID), qui est une chaîne de caractères. Pour créer cet UUID, l’élément principal du schéma doit contenir les attributs **autouuid** et **autopk** définis sur **true**.
 
-Adobe Campaign v8 utilise [!DNL Snowflake] comme base de données principale. L’architecture distribuée de la base de données [!DNL Snowflake] ne fournit pas de mécanisme permettant de gérer l’unicité d’une clé dans une table. Les utilisateurs finaux assurent la cohérence des clés au sein de la base de données Adobe Campaign.
+Adobe Campaign v8 utilise [!DNL Snowflake] comme base de données principale. L&#39;architecture distribuée de la base de données [!DNL Snowflake] ne fournit pas de mécanisme permettant d&#39;assurer l&#39;unicité d&#39;une clé dans une table. Les utilisateurs finaux assurent la cohérence des clés au sein de la base de données Adobe Campaign.
 
-Pour préserver la cohérence de la base de données relationnelle, il est obligatoire d’éviter les doublons sur les clés, et notamment sur les clés primaires. Les doublons sur des clés primaires entraînent des problèmes avec les activités de workflow de gestion des données telles que **Requête**, **Réconciliation**, **Mise à jour de données**, etc. Cette étape est essentielle pour définir des critères de réconciliation appropriés lors de la mise à jour des tables [!DNL Snowflake].
+Pour préserver la cohérence de la base de données relationnelle, il est obligatoire d’éviter les doublons sur les clés, et notamment sur les clés primaires. Les doublons sur des clés primaires entraînent des problèmes avec les activités de workflow de gestion des données telles que **Requête**, **Réconciliation**, **Mise à jour de données**, etc. Ceci est essentiel pour définir des critères de réconciliation appropriés lors de la mise à jour de [!DNL Snowflake] tables.
 
 
 >[!CAUTION]
@@ -94,23 +94,23 @@ Campaign est fourni avec un ensemble de nouveaux mécanismes de sécurisation qu
 
 >[!NOTE]
 >
->Ces mécanismes de sécurisation sont disponibles à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à [cette section](../start/compatibility-matrix.md)
+>Ces mécanismes de sécurisation sont disponibles à partir de Campaign v8.3. Pour vérifier votre version, consultez [cette section](../start/compatibility-matrix.md)
 
 ### Préparation de la diffusion {#remove-duplicates-delivery-preparation}
 
-Adobe Campaign supprime automatiquement tout UUID dupliqué d’une audience lors de la préparation de la diffusion. Ce mécanisme empêche toute erreur lors de la préparation d&#39;une diffusion. En tant qu&#39;utilisateur final, vous pouvez vérifier ces informations dans les logs de diffusion : certains destinataires peuvent être exclus de la cible principale en raison de la clé dupliquée. Dans ce cas, l&#39;avertissement suivant s&#39;affiche : `Exclusion of duplicates (based on the primary key or targeted records)`.
+Adobe Campaign supprime automatiquement tout UUID dupliqué d’une audience lors de la préparation de la diffusion. Ce mécanisme empêche toute erreur lors de la préparation d&#39;une diffusion. En tant qu&#39;utilisateur final, vous pouvez vérifier ces informations dans les logs de diffusion : certains destinataires peuvent être exclus de la cible principale en raison de clés dupliquées. Dans ce cas, l&#39;avertissement suivant s&#39;affiche : `Exclusion of duplicates (based on the primary key or targeted records)`.
 
 ![](assets/exclusion-duplicates-log.png)
 
 ### Mise à jour de données dans un workflow {#duplicates-update-data}
 
-Dans le contexte d’un [Déploiement Enterprise (FFDA)](enterprise-deployment.md), vous ne pouvez pas sélectionner de clé interne (UUID) comme champ pour mettre à jour les données dans un workflow.
+Dans le contexte d’un déploiement [Entreprise (FFDA)](enterprise-deployment.md), vous ne pouvez pas sélectionner de clé interne (UUID) comme champ pour mettre à jour les données dans un workflow.
 
 ![](assets/update-data-no-internal-key.png)
 
 ### Requête sur un schéma avec des doublons {#query-with-duplicates}
 
-Lorsqu’un workflow démarre l’exécution de la requête sur un schéma, Adobe Campaign vérifie si un enregistrement dupliqué est signalé dans la variable [Table d’audit d’unicité](#unicity-wf). Si tel est le cas, le workflow consigne un avertissement, car l’opération suivante sur les données dupliquées peut avoir une incidence sur le résultat du workflow.
+Lorsqu&#39;un workflow démarre l&#39;exécution d&#39;une requête sur un schéma, Adobe Campaign vérifie si un enregistrement dupliqué est signalé dans la [table Audit d&#39;unicité](#unicity-wf). Si tel est le cas, le workflow consigne un avertissement, car l’opération suivante sur les données dupliquées peut avoir une incidence sur le résultat du workflow.
 
 ![](assets/query-with-duplicates.png)
 
@@ -123,4 +123,4 @@ Ce contrôle est effectué dans les activités de workflow suivantes :
 
 >[!NOTE]
 >
->En cas de passage à une autre version de Campaign, il est indispensable d’éliminer les doublons, de résoudre les problèmes et d’assainir les données pour assurer une transition en douceur.
+>Si vous effectuez une transition à partir d’une autre version de Campaign, il est impératif de supprimer les doublons, de résoudre les problèmes et d’assainir les données afin d’éviter d’impacter votre transition.

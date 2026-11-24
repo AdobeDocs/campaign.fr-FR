@@ -30,16 +30,16 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '643'
-ht-degree: 98%
+ht-degree: 95%
 ---
 # Cas d’utilisation : création d’un formulaire de référence{#use-case-creating-a-refer-a-friend-form}
 
 >[!AVAILABILITY]
 >
->Les questionnaires ne sont pas disponibles pour les [déploiements Campaign FFDA](../../architecture/enterprise-deployment.md).
+>Les questionnaires ne sont pas disponibles pour les [déploiements de Campaign FFDA](../../architecture/enterprise-deployment.md).
 
 
 
@@ -109,7 +109,7 @@ Les étapes de paramétrage et de réalisation du bloc de parrainage sont les su
 
    * Ce modèle contient un lien vers le formulaire du jeu-concours et le lien d&#39;inscription pour que le filleul puisse s&#39;abonner à la newsletter.
 
-     Le lien d&#39;inscription est inséré au travers d&#39;un bloc de personnalisation. Par défaut, il permet d&#39;abonner les profils au service **newsletter**. Ce bloc de personnalisation peut être modifié selon vos besoins, par exemple pour inscrire à un autre service.
+     Le lien d&#39;inscription est inséré au travers d&#39;un bloc de personnalisation. Par défaut, il permet d&#39;abonner les profils au service **newsletter**. Ce bloc de personnalisation peut être modifié en fonction de vos besoins, par exemple pour abonner le destinataire à un autre service.
 
    * Le nom interne (ici, « referrer ») sera utilisé dans le script de diffusion du message, à l’étape suivante.
 

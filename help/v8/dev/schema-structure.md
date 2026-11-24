@@ -39,9 +39,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1453'
+source-wordcount: '1454'
 ht-degree: 96%
 ---
 # Structure d&#39;un schéma{#schema-structure}
@@ -251,11 +251,11 @@ Pour lier une valeur par défaut à un champ, vous pouvez utiliser le `<default>
 
 `<default>` : vous permet de préremplir le champ avec une valeur par défaut lors de la création d’entités. La valeur ne sera pas une valeur SQL par défaut.
 
-`<sqldefault>` : vous permet d’avoir une valeur ajoutée lors de la création d’un champ. Cette valeur s&#39;affiche sous forme de résultat SQL. Lors de la mise à jour d&#39;un schéma, seuls les nouveaux enregistrements seront affectés par cette valeur.
+`<sqldefault>` : permet d&#39;avoir une valeur ajoutée lors de la création d&#39;un champ. Cette valeur s&#39;affiche sous forme de résultat SQL. Lors de la mise à jour d&#39;un schéma, seuls les nouveaux enregistrements seront affectés par cette valeur.
 
 ### Énumérations {#enumerations}
 
-Utilisez des énumérations libres, fixes ou basées sur une base de données [enumérations](../config/enumerations.md) pour contrôler les valeurs de champ. Ils fournissent des listes déroulantes pour une saisie plus facile, des données cohérentes et une conception de schéma flexible.
+Utilisez des [énumérations](../config/enumerations.md) libres, fixes ou basées sur une base de données pour contrôler les valeurs de champ. Ils fournissent des listes déroulantes pour une saisie plus facile, des données cohérentes et une conception de schéma flexible.
 
 #### Énumération libre {#free-enumeration}
 

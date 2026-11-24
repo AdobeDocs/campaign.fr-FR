@@ -35,10 +35,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1653'
-ht-degree: 96%
+ht-degree: 92%
 ---
 # Créer votre première diffusion {#create-a-msg}
 
@@ -129,7 +129,7 @@ Pour sélectionner les destinataires d’une diffusion, procédez comme suit :
 
      ![](assets/target-recipient-delivery.png)
 
-   * **[!UICONTROL Destinataires d’une diffusion appartenant à un dossier]** : utilisez cette option pour créer la cible à partir des diffusions de personnes destinataires incluses dans un dossier spécifique.
+   * **[!UICONTROL Destinataires de la diffusion appartenant à un dossier]** : utilisez cette option pour construire la cible à partir des destinataires des diffusions incluses dans un dossier spécifique.
 
      ![](assets/target-delivery-folder.png)
 
@@ -146,7 +146,7 @@ Pour sélectionner les destinataires d’une diffusion, procédez comme suit :
      ![](assets/target-service.png)
 
    * **[!UICONTROL Filtres utilisateur]** : cette option permet d’accéder aux filtres préconfigurés disponibles afin de les utiliser comme critères de filtrage des profils dans la base de données. Les filtres préconfigurés sont présentés dans [cette section](../audiences/create-filters.md#default-filters).
-   * L’option **[!UICONTROL Exclure les destinataires correspondant à ce segment]** permet de cibler les personnes destinataires ne répondant pas aux critères de ciblage définis. Pour utiliser cette option, cochez la case correspondante puis opérez un ciblage, comme défini précédemment, pour exclure les profils en résultant.
+   * L&#39;option **[!UICONTROL Exclure les destinataires de ce segment]** permet de cibler les destinataires qui ne répondent pas aux critères de ciblage définis. Pour utiliser cette option, cochez la case correspondante puis opérez un ciblage, comme défini précédemment, pour exclure les profils en résultant.
 
 1. Saisissez un nom pour ce ciblage dans le champ **[!UICONTROL Libellé]**. Par défaut, le libellé est celui correspondant au premier critère de ciblage. Lorsque vous combinez des critères de filtrage, il est recommandé d’utiliser un nom explicite.
 1. Cliquez sur **[!UICONTROL Terminer]** pour valider les options de ciblage.
@@ -209,7 +209,7 @@ Pour plus d’informations sur l’envoi et les personnes destinataires des BAT,
 
 Dans cette vidéo, vous apprendrez comment ajouter des adresses de contrôle et des BAT à un email existant et comment l’envoyer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447001?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 D’autres vidéos pratiques sur Campaign Classic sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=fr).
 
@@ -221,7 +221,7 @@ Pour cela :
 
 1. **Analyser la diffusion** : cette étape permet de procéder à la préparation des messages à envoyer. [En savoir plus](../send/delivery-analysis.md).
 
-1. **Envoi de BAT** : cette étape vous permet de contrôler le contenu, les URL, la personnalisation, etc. [En savoir plus](../send/preview-and-proof.md).
+1. **Envoyer des BAT** : cette étape vous permet de contrôler le contenu, les URL, la personnalisation, etc. [En savoir plus](../send/preview-and-proof.md).
 
 >[!IMPORTANT]
 >
@@ -230,6 +230,6 @@ Pour cela :
 
 ## Configurer et envoyer la diffusion {#configuring-and-sending-the-delivery}
 
-Accédez aux paramètres de diffusion pour configurer d’autres paramètres et définir comment envoyer vos messages. Vous pouvez définir une priorité de diffusion, configurer des vagues d’envoi, configurer les paramètres de reprise et tester l’envoi de votre diffusion. Une fois la configuration terminée, vous pouvez confirmer l’envoi. Les messages sont alors envoyés immédiatement ou selon le planning de diffusion.
+Accédez aux paramètres de diffusion pour configurer d’autres paramètres et définir comment envoyer vos messages. Vous pouvez définir la priorité de diffusion, configurer les vagues d’envoi, configurer les paramètres de reprise et tester l’envoi de votre diffusion. Une fois la configuration terminée, vous pouvez confirmer l’envoi. Les messages sont alors envoyés immédiatement ou selon le planning de diffusion.
 
 Découvrez comment configurer vos paramètres de diffusion dans [cette page](../send/configure-and-send.md).

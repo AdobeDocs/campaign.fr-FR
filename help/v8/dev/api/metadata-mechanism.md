@@ -25,14 +25,14 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 100%
+ht-degree: 78%
 ---
 # Mécanisme des métadonnées {#metadata-mechanism}
 
-Vous pouvez récupérer les métadonnées des ressources en utilisant **resourceType** dans une requête GET :
+Vous pouvez récupérer les métadonnées de la ressource à l’aide de **resourceType** dans une requête GET :
 
 `GET /profileAndServices/resourceType/<resourceName>`
 
@@ -44,12 +44,12 @@ La réponse renvoie les métadonnées principales de la ressource (tous les autr
   * &quot;type&quot; : définition de type de niveau supérieur (chaîne, nombre, lien, collection, énumération...).
   * &quot;dataPolicy&quot; : la valeur du champ doit respecter les politiques données. Par exemple, si la règle dataPolicy est définie sur &quot;email&quot;, la valeur doit être un email valide. Lors d’un PATCH ou d’un POST, la variable dataPolicy peut vérifier la valeur ou modifier la valeur à transformer (smartCase, par exemple).
   * &quot;category&quot; : indique la catégorie du champ dans le requêteur.
-  * &quot;resType&quot; : le type technique.
+  * « resType » : il s&#39;agit du type technique.
 
     Si &quot;type&quot; est renseigné avec la valeur &quot;link&quot; ou &quot;collection&quot;, la valeur resTarget est le nom de la ressource ciblée par le lien.
-    Si &quot;type&quot; est renseigné avec la valeur &quot;enumeration&quot;, un champ &quot;values&quot; est ajouté et chaque valeur d’énumération est détaillée dans le nœud **values** .
+    Si « type » est complété avec la valeur « enumeration », un champ « values » est ajouté et chaque valeur d&#39;énumération est détaillée dans le nœud **values**.
 
-* Le nœud **Filters** renvoie l’URL permettant de récupérer les filtres associés. Voir à ce propos [cette section](sorting.md#filtering).
+* Le nœud **Filters** renvoie l’URL permettant de récupérer les filtres associés. Pour plus d&#39;informations sur les filtres, consultez [cette section](sorting.md#filtering).
 
 <!-- créer une section au même niveau sur les liens -->
 <!--

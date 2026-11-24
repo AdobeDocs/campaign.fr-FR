@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 96%
+source-wordcount: '498'
+ht-degree: 91%
 ---
 # Personnaliser la liste des émoticônes {#customize-emoticons}
 
@@ -45,7 +45,7 @@ Notez que les émoticônes ne sont disponibles que pour les e-mails et les notif
 
 >[!CAUTION]
 >
->La liste des émoticônes ne peut pas afficher plus de 81 entrées.
+>La liste des émoticônes ne peut pas afficher plus de 81 entrées.
 
 1. Sélectionnez la nouvelle émoticône à ajouter dans cette [page](https://unicode.org/emoji/charts/full-emoji-list.html). Notez qu’elle doit être compatible avec les différentes plateformes, telles que le navigateur et le système d’exploitation.
 
@@ -62,7 +62,7 @@ Notez que les émoticônes ne sont disponibles que pour les e-mails et les notif
 1. Renseignez les champs :
 
    * **[!UICONTROL U+]** : code de votre nouvelle émoticône. La liste des codes des émoticônes se trouve dans cette [page](https://unicode.org/emoji/charts/full-emoji-list.html).
-     Pour éviter tout problème de compatibilité, il est conseillé de choisir des émoticônes prises en charge sur les navigateurs et sur tous les systèmes d’exploitation.
+     Pour éviter tout problème de compatibilité, nous vous conseillons de choisir des émoticônes qui sont prises en charge sur les navigateurs et sur chaque système d&#39;exploitation.
 
    * **[!UICONTROL Libellé]** : libellé de la nouvelle émoticône.
 

@@ -30,16 +30,16 @@ topic_v2:
     internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 96%
+ht-degree: 94%
 ---
 # Cas d’utilisation : affichage d’un rapport sur les réponses à un questionnaire en ligne{#use-case-displaying-report-on-answers-to-an-online-survey}
 
 >[!AVAILABILITY]
 >
->Les questionnaires ne sont pas disponibles pour les [déploiements Campaign FFDA](../../architecture/enterprise-deployment.md).
+>Les questionnaires ne sont pas disponibles pour les [déploiements de Campaign FFDA](../../architecture/enterprise-deployment.md).
 
 
 
@@ -69,7 +69,7 @@ Pour collecter les réponses du questionnaire, les étapes sont les suivantes :
 
    ![](assets/reporting_usecase_1_01.png)
 
-1. Sélectionnez les colonnes à extraire (ici : tous les champs archivés). Les réponses sont contenues dans ces champs.
+1. Sélectionnez les colonnes à extraire (ici, sélectionnez tous les champs archivés). Les réponses sont contenues dans ces champs.
 
    ![](assets/reporting_usecase_1_02.png)
 
@@ -93,7 +93,7 @@ Pour collecter les réponses du questionnaire, les étapes sont les suivantes :
 
 ## Etape 2 - Créer le cube, ses mesures et ses indicateurs {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-Vous pouvez ensuite créer le cube et paramétrer ses mesures : elles seront utilisées lors de la création des indicateurs. Ces indicateurs seront affichés dans le rapport. La création et le paramétrage des cubes sont présentés dans la section [À propos des cubes](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/reporting/ac-cubes){target="_blank"}.
+Vous pouvez ensuite créer le cube et paramétrer ses mesures : elles seront utilisées lors de la création des indicateurs. Ces indicateurs seront affichés dans le rapport. La création et le paramétrage des cubes sont présentés dans la section [À propos des cubes](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/ac-cubes){target="_blank"}.
 
 Dans cet exemple, le cube est basé sur les données de la liste alimentée par le workflow créé à l&#39;étape précédente.
 

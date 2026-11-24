@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '2212'
-ht-degree: 100%
+source-wordcount: '2210'
+ht-degree: 96%
 ---
 # Offres sur canal entrant{#offers-on-an-inbound-channel}
 
@@ -147,7 +147,7 @@ Vous obtenez une arborescence contenant votre nouvel environnement :
 
 ### Paramétrer l&#39;emplacement de l&#39;offre dans le site web {#configure-the-web-offer-space-on-the-website}
 
-Afin que les offres que vous venez de configurer apparaissent dans le site web, insérez un code JavaScript dans la page HTML de votre site destiné à appeler le moteur d’interaction (pour en savoir plus à ce sujet, consultez la section [À propos des canaux entrants](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (documentation de Campaign v8)).
+Pour que les offres que vous venez de paramétrer apparaissent dans le site web, insérez le code JavaScript dans la page HTML de votre site afin d&#39;appeler le moteur d&#39;Interaction (voir à ce sujet la section [À propos des canaux entrants](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (documentation de Campaign v8)).
 
 1. Accédez à votre page HTML et insérez un attribut @id dont la valeur correspond au nom interne de l&#39;emplacement anonyme créé précédemment (voir [Créer des emplacements anonymes ](#creating-anonymous-offer-spaces)), précédé de **i_**.
 
@@ -340,7 +340,7 @@ Dans cet exemple, l’identification de la personne contact se fait via son adre
 Vous allez créer deux catégories distinctes : la catégorie **Premium** et la catégorie **Partenaires**, chacune contiendra deux offres personnalisées.
 
 1. Dans l&#39;environnement identifié, positionnez-vous sur le noeud **[!UICONTROL Catalogue d&#39;offres]**.
-1. Comme dans l&#39;environnement anonyme, ajoutez deux dossiers de type **[!UICONTROL Catégorie d&#39;offres]** et attribuez-leur les libellés **Premium** et **Partenaires**.
+1. Comme dans l’environnement anonyme, ajoutez deux dossiers de **[!UICONTROL catégorie d’offres]** avec **Offre directe** et **Partenaire** comme libellés.
 
    ![](assets/offer_inbound_fallback_example_009.png)
 
@@ -417,7 +417,7 @@ Pour paramétrer les emplacements des offres dans la page HTML du site web, proc
 
    L&#39;URL contient le nom interne **OE18** de l&#39;environnement identifié.
 
-Lors de l’affichage de la page web, le script vous permet d’appeler le moteur Interaction afin d’afficher le contenu des offres dans les emplacements prévus à cet effet sur la page web. En un seul appel au serveur Adobe Campaign, le moteur détermine l’environnement, l’emplacement et les catégories à sélectionner.
+Lors de l&#39;ouverture de la page web, le script permet d&#39;appeler le moteur d&#39;Interaction afin que s&#39;affiche le contenu des offres dans les emplacements prévus à cet effet sur la page web. En un seul appel au serveur Adobe Campaign, le moteur détermine l’environnement, l’emplacement et les catégories à sélectionner.
 
 Dans notre exemple, le moteur reconnaît l&#39;environnement identifié (**OE18**). Il identifie l&#39;emplacement (**SPC27**) et la catégorie **Premium** (**OC34**) pour le premier et le deuxième emplacement de la page web, ainsi que l&#39;emplacement (**SPC29**) et la catégorie **Partenaires** (**OC35**) pour le troisième emplacement dans le site.
 

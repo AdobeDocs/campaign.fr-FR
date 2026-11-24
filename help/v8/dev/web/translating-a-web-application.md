@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 100%
+source-wordcount: '376'
+ht-degree: 93%
 ---
 # Traduire une application web{#translating-a-web-application}
 
@@ -55,7 +55,7 @@ Pour marquer les chaînes à traduire :
 
    Trois cas spécifiques sont à noter :
 
-   * Lorsque le bloc sélectionné contient plusieurs chaînes/blocs, il est marqué comme une seule chaîne à traduire. La chaîne contient alors le code HTML des éléments que ce bloc contient.
+   * Lorsque le bloc sélectionné contient plusieurs chaînes/blocs, il est marqué comme une seule chaîne à traduire. La chaîne contient alors le code HTML des éléments contenus dans ce bloc.
    * Lorsque vous souhaitez marquer un bloc contenant plusieurs chaînes dont au moins l’une d’entre-elles est déjà marquée, un avertissement s’affiche. Vous pouvez alors choisir de retirer la chaîne isolée et d’ajouter le bloc entier.
 
      ![](assets/dce_translation_4.png)
@@ -69,7 +69,7 @@ Pour marquer les chaînes à traduire :
 
    >[!NOTE]
    >
-   >Une fois les chaînes collectées, elles ne seront pas retirées de la liste si vous les marquez à nouveau comme n’étant pas à traduire dans le DCE. Cela permet de les conserver dans la mémoire de traduction.
+   >Une fois les chaînes collectées, elles ne seront pas retirées de la liste si vous les marquez à nouveau comme n’étant pas à traduire dans le DCE. Vous pouvez ainsi les conserver dans la mémoire de traduction.
 
 1. Traduisez et validez les chaînes.
 

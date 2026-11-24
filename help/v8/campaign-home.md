@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 44%
+source-wordcount: '504'
+ht-degree: 43%
 ---
 # Documentation Adobe Campaign v8 (console) {#campaign-documentation}
 
@@ -38,9 +38,9 @@ Découvrez les dernières améliorations apportées à Adobe Campaign v8 (cons
 
 >[!BEGINTABS]
 
->[!TAB La version 8.9 de Campaign est en ligne]
+>[!TAB La version de Campaign v8.9 est en ligne]
 
-La dernière version d’Adobe Campaign est désormais en ligne. Pour plus d’informations, lisez les notes de mise à jour.
+La dernière version d’Adobe Campaign est désormais en ligne. Lisez les notes de mise à jour pour plus d’informations.
 
 [![Image](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md)
 
@@ -103,12 +103,12 @@ Some important changes to the Android Firebase Cloud Messaging (FCM) service wil
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Expérience client</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">Automatiser avec des workflows</a> - <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">Orchestration des campagnes</a> - <a href="interaction/interaction.md">Gestion des décisions</a> - <a href="send/personalize.md">Personalization</a>
+      <strong>Expérience du client</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">Automatisation avec des workflows</a> - <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">Orchestration des campagnes</a> - <a href="interaction/interaction.md">Gestion des décisions</a> - <a href="send/personalize.md">Personalization</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>Envoyer des messages</strong><br/><a href="start/create-message.md">Commencer</a> - <a href="send/preview-and-proof.md">Prévisualisation et BAT</a> - <a href="send/predictive.md">Optimisation de l’heure d’envoi</a> - <a href="reporting/gs-reporting.md">Reporting et analyses</a>
+      <strong>Envoi des messages</strong><br/><a href="start/create-message.md">Prise en main</a> - <a href="send/preview-and-proof.md">Aperçu et BAT</a> - <a href="send/predictive.md">Optimisation de l’heure d’envoi</a> - <a href="reporting/gs-reporting.md">Reporting et analytics</a>
     </td>
   </tr>
   <tr style="border: 0;">
@@ -132,5 +132,5 @@ Some important changes to the Android Firebase Cloud Messaging (FCM) service wil
 
 ## Autres ressources
 
-[Description du produit Adobe Campaign v8 &#x200B;](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Documentation de l’interface utilisateur web Adobe Campaign &#x200B;](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=fr){target="_blank"} - [Tutoriels](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=fr){target="_blank"} - [[!DNL Adobe Campaign] guide d’automatisation](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=fr){target="_blank"} - [Panneau de Contrôle pour Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"} - [Pixels de suivi des e-mails et conseils CNIL](../v8/start/cnil-pixel-tracking.md)
+[Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Documentation de l’interface utilisateur web d’Adobe Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=fr){target="_blank"} - [Tutoriels](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=fr){target="_blank"} - [[!DNL Adobe Campaign] guide d’automatisation](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=fr){target="_blank"} - [Panneau de Contrôle pour Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=fr){target="_blank"} - [Pixels de suivi des e-mails et conseils CNIL](../v8/start/cnil-pixel-tracking.md)
 

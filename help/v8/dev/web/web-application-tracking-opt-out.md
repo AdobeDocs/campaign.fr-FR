@@ -32,18 +32,18 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '710'
-ht-degree: 100%
+ht-degree: 86%
 ---
 # Désinscription (opt-out) du tracking des applications web{#web-application-tracking-opt-out}
 
 
 
-Adobe Campaign vous permet d’arrêter le tracking des comportements web des utilisateurs et utilisatrices qui se désinscrivent du tracking comportemental grâce à des cookies ou des balises web. Il est ainsi possible d’afficher une bannière afin de proposer cette option à l’utilisateur ou à l’utilisatrice. Ces bannières peuvent être ajoutées à des applications web ou des pages de destination.
+Adobe Campaign vous permet d’arrêter le suivi des comportements web des utilisateurs finaux qui se désinscrivent du suivi comportemental via des cookies ou des balises web. Il est ainsi possible d’afficher une bannière afin de proposer cette option à l’utilisateur ou à l’utilisatrice. Ces bannières peuvent être ajoutées à des applications web ou des pages de destination.
 
-Si un utilisateur ou une utilisatrice se désinscrit du tracking comportemental via des cookies ou des balises web, ces informations sont transmises au serveur de tracking Adobe Campaign avec les API JavaScript. Certaines juridictions peuvent demander exiger des clientes et clients qu’ils proposent une option d’opt-in avant l’option d’opt-out (ou avoir d’autres exigences légales). Les clientes et clients ont la responsabilité de respecter les lois applicables.
+Si un utilisateur final se désinscrit du suivi comportemental via des cookies ou des balises web, ces informations sont transmises au serveur de suivi Adobe Campaign à l’aide des API JavaScript. Certaines juridictions peuvent demander exiger des clientes et clients qu’ils proposent une option d’opt-in avant l’option d’opt-out (ou avoir d’autres exigences légales). Les clientes et clients ont la responsabilité de respecter les lois applicables.
 
 >[!NOTE]
 >
@@ -94,7 +94,7 @@ La bannière est fournie avec une feuille CSS spécifique. Vous pouvez toutefoi
 
 ## Définir le cookie de désinscription (opt-out) à l&#39;aide des API {#setting-the-opt-out-cookie-using-api}
 
-Adobe Campaign est fourni avec des API qui permettent de gérer la valeur du cookie et de récupérer les préférences de l&#39;utilisateur.
+Adobe Campaign est fourni avec des API qui vous permettent de gérer la valeur du cookie et de récupérer les préférences de l’utilisateur.
 
 Le nom du cookie est **acoptout**. Les valeurs courantes sont les suivantes :
 
@@ -106,7 +106,7 @@ Les API côté client disponibles pour personnaliser la bannière sont les suiva
 
 * **NL.ClientWebTracking.allow()** : définit la valeur du cookie d’opt-out de sorte à autoriser le tracking web. Par défaut, le tracking web est autorisé.
 * **NL.ClientWebTracking.forbid()** : définit la valeur du cookie d’opt-out de sorte à interdire le tracking web. Le tracking web nécessite l’interdiction d’une entrée d’utilisation.
-* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)** : ferme la bannière du cookie d’opt-out une fois que l’utilisateur ou l’utilisatrice a cliqué sur le bouton d’acceptation ou de refus (pendant la phase de propagation de l’événement de clic).
+* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)** : ferme la bannière de cookie d’exclusion après que l’utilisateur a cliqué sur le bouton Accepter ou Refuser (pendant la phase de propagation d’événements de clic).
 
   bannerDomElt {DOMElement} : élément DOM racine de la bannière du cookie qui doit être supprimé.
 

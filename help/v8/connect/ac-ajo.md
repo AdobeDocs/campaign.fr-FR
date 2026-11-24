@@ -28,14 +28,14 @@ level_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 77%
+source-wordcount: '126'
+ht-degree: 52%
 ---
 # Utiliser Campaign et Adobe Journey Optimizer
 
-L’intégration entre Adobe Campaign et Adobe Journey Optimizer vous permet d’orchestrer des parcours client dans Adobe Journey Optimizer et d’envoyer des e-mails, des notifications push et/ou des SMS à l’aide des fonctionnalités de messagerie transactionnelle Adobe Campaign.
+L&#39;intégration entre Adobe Campaign et Adobe Journey Optimizer vous permet d&#39;orchestrer des parcours clients dans Adobe Journey Optimizer et d&#39;envoyer des e-mails, des notifications push et/ou des SMS à l&#39;aide des fonctionnalités de messagerie transactionnelle Adobe Campaign.
 
 Les étapes de base consistent à créer un modèle de message transactionnel dans Campaign, puis à créer l’événement, l’action et la conception du parcours dans Adobe Journey Optimizer.
 
@@ -43,7 +43,7 @@ Les étapes de base consistent à créer un modèle de message transactionnel da
 ![](assets/ajo-integration.png)
 
 
-[Découvrez cette intégration dans cet exemple complet](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/connect-systems/adobe-solutions/acc-action){target="_blank"}.
+[Découvrez cette intégration dans cet exemple complet](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/connect-systems/adobe-solutions/acc-action){target="_blank"}.
 
 
-[En savoir plus dans la documentation de Journey Optimizer](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}.
+[En savoir plus dans la documentation Journey Optimizer](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}.

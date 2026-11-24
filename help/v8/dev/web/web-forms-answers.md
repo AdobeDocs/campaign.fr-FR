@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 98%
+ht-degree: 96%
 ---
 # Réponses aux formulaires web{#web-forms-answers}
 
@@ -39,7 +39,7 @@ Pour chaque champ de saisie d&#39;un formulaire, les options de stockage suivant
 
 * **[!UICONTROL Editer un destinataire]**
 
-  Vous pouvez sélectionner un champ de la base de données : les réponses des utilisateurs seront stockées dans ce champ. Pour chaque utilisateur, seule la dernière valeur saisie est enregistrée et ajoutée à leur profil : voir à ce sujet la section [Stockage des données dans la base de données](#storing-data-in-the-database).
+  Vous pouvez sélectionner un champ de la base de données : les réponses des utilisateurs seront stockées dans ce champ. Pour chaque utilisateur, seule la dernière valeur saisie est enregistrée : elle est ajoutée à son profil. Voir [Stockage des données dans la base de données](#storing-data-in-the-database).
 
 * **[!UICONTROL Variable]**
 
@@ -153,4 +153,4 @@ Vous pouvez sélectionner un dossier de recherche pour la réconciliation et le 
 >
 >Les opérations possibles sont : **[!UICONTROL Réconciliation seule]**,**[!UICONTROL Mise à jour ou insertion]**, **[!UICONTROL Insertion]**, **[!UICONTROL Mise à jour]**, **[!UICONTROL Suppression]**.\
 >Le dossier par défaut de l&#39;opérateur correspond au premier dossier dans lequel l&#39;opérateur a le droit d&#39;écrire.\
->Consultez [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
+>Consultez [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.

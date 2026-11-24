@@ -39,10 +39,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1070'
-ht-degree: 95%
+ht-degree: 94%
 ---
 # Utiliser des modèles de diffusion {#work-with-delivery-template}
 
@@ -69,7 +69,7 @@ Les modèles de diffusion sont stockés dans le dossier **[!UICONTROL Ressources
 
 >[!NOTE]
 >
->Les modèles disponibles dépendent de vos droits d’accès, de la configuration de votre instance et du contexte. Par exemple, lorsque vous créez un service d&#39;information, vous pouvez associer un modèle de diffusion pour les messages de confirmation : vous ne pourrez alors accéder qu&#39;aux modèles dont le mapping de ciblage correspond au mapping d&#39;abonnement. Les autres modèles ne sont pas visibles dans ce contexte. Pour plus d’informations à ce sujet, reportez-vous aux sections [Utiliser des mappings cibles](../audiences/target-mappings.md) et [Gérer des abonnements et des désabonnements](../start/subscriptions.md).
+>Les modèles disponibles dépendent de vos droits d’accès, de la configuration de votre instance et du contexte. Par exemple, lorsque vous créez un service d&#39;information, vous pouvez associer un modèle de diffusion pour les messages de confirmation : vous ne pourrez alors accéder qu&#39;aux modèles dont le mapping de ciblage correspond au mapping d&#39;abonnement. Les autres modèles ne sont pas visibles dans ce contexte. Pour plus d&#39;informations, consultez les sections [Utiliser les mappings de ciblage](../audiences/target-mappings.md) et [Gérer les abonnements et les désabonnements](../start/subscriptions.md).
 
 
 ## Créer un modèle {#create-a-delivery-template}
@@ -172,18 +172,18 @@ Cette action génère une diffusion dans le dossier associé au modèle. Le nom 
 
 La vidéo suivante montre comment configurer un modèle pour une diffusion ad hoc.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409245?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342082?quality=12)
 
 ### Comment configurer les propriétés des modèles de diffusion
 
 La vidéo suivante montre comment définir les propriétés des modèles de diffusion et explique en détail chaque propriété.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443403?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/338969?quality=12)
 
 ### Comment déployer un modèle de diffusion ad hoc
 
 Cette vidéo montre comment déployer un modèle de diffusion email ad hoc. Elle explique aussi la différence entre une diffusion email et un workflow de diffusion.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444959?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
 
 D’autres vidéos pratiques sur Campaign sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=fr){target="_blank"}.

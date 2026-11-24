@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 99%
+source-wordcount: '1136'
+ht-degree: 87%
 ---
 # Utiliser Campaign et X (Twitter) {#tw-ac-ovv}
 
@@ -59,27 +59,27 @@ Le module **Gestion des réseaux sociaux (Social Marketing)** vous permet d’i
 
 Pour configurer Adobe Campaign afin de publier des posts sur vos comptes X, vous devez déléguer à Adobe Campaign les droits d’écriture sur ces comptes. Pour ce faire, procédez comme suit :
 
-1. Vous inscrire sur X et créer un compte de développement. [En savoir plus](#dev-account)
+1. Créez un compte X et inscrivez-vous à un compte de développeur. [En savoir plus](#dev-account)
 1. Créer un compte X de test dédié à l’envoi de BAT (facultatif). [En savoir plus](#tw-test-account)
-1. Créer une application X (une application par compte X). [En savoir plus](#create-an-app-on-twitter)
+1. Créez une application X (une application par compte X). [En savoir plus](#create-an-app-on-twitter)
 1. Créer un nouveau service pour **[!UICONTROL Twitter]** (un service par compte X). [En savoir plus](#create-tw-service)
 1. Synchroniser votre compte X avec Campaign. [En savoir plus](#synchro-tw-accounts)
 
 ## Compte de développement X {#dev-account}
 
-Pour commencer cette intégration, vous devez vous inscrire à un [Compte de développement X](https://developer.twitter.com){target="_blank"}.
+Pour commencer avec cette intégration, vous devez vous inscrire à un [X compte de développeur](https://developer.twitter.com){target="_blank"}.
 
 Campaign utilise la version 1.1 de l’API X. Pour l’utiliser, vous devez demander un accès élevé via le portail destiné aux développeurs et aux développeuses. Pour en savoir plus sur l’accès élevé à X, consultez [cette page](https://developer.twitter.com/en/portal/products/elevated){target="_blank"}.
 
 ## Créer une application sur X {#create-an-app-on-twitter}
 
-Une fois que vous avez reçu l’autorisation d’accès élevé, créez une application X pour permettre à Adobe Campaign de créer des publications sur votre compte X. Pour ce faire, procédez comme suit :
+Une fois que vous avez reçu l’autorisation d’accès élevé, créez une application X pour permettre à Adobe Campaign de créer des publications sur votre compte X. Pour ce faire, procédez comme suit :
 
 1. Connectez-vous à votre compte X.
 1. Connectez-vous au [Portail de développement X](https://developer.twitter.com/en/apps){target="_blank"}.
 1. Sélectionnez **Créer une application**.
 1. Laissez-vous guider par l’assistant X.
-1. Pour permettre à Adobe Campaign de créer des publications sur votre compte, modifiez les **Autorisations d’application** dans la section Configuration de l’authentification de l’utilisateur ou de l’utilisatrice de votre application. Sélectionnez **Lecture, écriture et messages directs**.
+1. Pour permettre à Adobe Campaign de créer des publications sur votre compte, modifiez les **autorisations d’application** de la section Configuration de l’authentification de l’utilisateur de votre application. Sélectionnez **Lecture, écriture et messages directs**.
 
    ![](assets/tw-permissions.png)
 
@@ -108,7 +108,7 @@ Pour lier votre instance Campaign à votre compte X, créez un service **Twitter
 >Chaque service **Twitter** doit également être créé par Adobe sur votre instance de midsourcing (MID). Contactez votre représentant ou représentante Adobe pour que votre environnement soit configuré.
 >
 
-Pour entrer des paramètres, vous devez accéder à la fois à la console cliente d’Adobe Campaign et aux autorisations de votre application X.
+Pour entrer des paramètres, vous devez accéder à la fois à la console cliente Adobe Campaign et aux autorisations de votre application X.
 
 1. Dans **Adobe Campaign**, accédez à l&#39;onglet **[!UICONTROL Profils et cibles]**, puis sélectionnez le lien **[!UICONTROL Services et abonnements]**.
 1. Créez un service.
@@ -144,7 +144,7 @@ Pour vérifier vos paramètres, vous pouvez :
 
 La synchronisation entre Campaign et X est gérée via des workflows techniques dédiés. Ces workflows sont stockés dans le dossier **[!UICONTROL Administration > Exploitation > Workflows techniques > Gestion des réseaux sociaux]**.
 
-Ils sont arrêtés par défaut : vous devez les démarrer manuellement lorsque vous commencez à utiliser le module **Marketing social**.
+Ils sont arrêtés par défaut : vous devez les démarrer manuellement lorsque vous commencez à utiliser le module **Marketing social**.
 
 Le workflow technique **[!UICONTROL Synchronisation des comptes Twitter]** synchronise les comptes X dans Adobe Campaign. Ce workflow récupère la liste des abonnées et abonnés X afin que vous puissiez leur envoyer des messages directs. [En savoir plus](../send/twitter.md#direct-tw-messages)
 
@@ -169,7 +169,7 @@ Une fois cette configuration terminée, vous pouvez créer des publications sur 
 
 ## Créer un compte X de test {#tw-test-account}
 
-Outre le compte X, créez un compte X privé destiné à l’envoi de [BAT de publication](../send/twitter.md). Pour ce faire, procédez comme suit :
+Outre un compte X, créez un compte X privé qui peut être utilisé pour envoyer [des BAT de tweets](../send/twitter.md). Pour ce faire, procédez comme suit :
 
 1. Créez un nouveau compte X.
 1. Accédez aux **Paramètres** du compte.

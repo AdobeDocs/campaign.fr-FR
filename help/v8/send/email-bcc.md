@@ -24,10 +24,10 @@ level_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 96%
+ht-degree: 81%
 ---
 # Envoyer une copie de vos messages à une adresse en Cci {#bcc}
 
@@ -39,7 +39,7 @@ ht-degree: 96%
 
 ## À propos de la mise en copie Cci des e-mails {#gs-bcc}
 
-Vous pouvez configurer Adobe Campaign pour conserver une copie des e-mails envoyés depuis votre plateforme. Cette option vous permet d’envoyer les messages de votre choix à une adresse e-mail Cci (copie carbone invisible) dédiée, à partir de laquelle ils peuvent être traités et archivés au moyen d’un système externe.
+Vous pouvez configurer Adobe Campaign pour conserver une copie des e-mails envoyés depuis votre plateforme. Cette option vous permet d’envoyer des messages à une adresse e-mail Cci (copie carbone invisible) dédiée, à partir de laquelle ils peuvent être traités et archivés à l’aide d’un système externe.
 
 >[!CAUTION]
 >
@@ -60,7 +60,7 @@ Pour activer la mise en copie Cci pour un [modèle de diffusion](create-template
 1. Depuis l’explorateur Campaign, accédez au dossier des modèles de diffusion. Par défaut, les modèles de diffusion sont stockés dans le dossier **[!UICONTROL Ressources]** > **[!UICONTROL Modèles]** > **[!UICONTROL Modèles de diffusion]**.
 1. Modifiez le modèle de diffusion à mettre à jour pour la mise en copie Cci.
 1. Cliquez sur le bouton **[!UICONTROL Propriétés]**.
-1. Dans l&#39;onglet **[!UICONTROL Diffusion]**, cochez l&#39;option **[!UICONTROL Email Cci avec MTA amélioré]** .
+1. Dans l’onglet **[!UICONTROL Diffusion]**, vérifiez l’option **[!UICONTROL Email Cci avec MTA amélioré]**.
 
    ![](assets/email-bcc.png)
 
@@ -78,6 +78,6 @@ Lors de l’utilisation de la fonctionnalité de mise en copie Cci des e-mails a
 
 * L’option E-mail Cci <!--with Enhanced MTA--> assure la diffusion auprès de l’adresse e-mail en Cci avant la diffusion aux destinataires, ce qui peut entraîner l’envoi de messages en Cci même si les diffusions d’origine ont pu faire l’objet de rebonds. Pour plus d’informations sur les rebonds, voir [Présentation des diffusions en échec](delivery-failures.md).
 
-* Les e-mails envoyés à l’adresse en Cci ne doivent pas être ouverts ni faire l’objet de clics, car ces activités sont prises en compte dans la variable **[!UICONTROL Ouvertures totales]** et **[!UICONTROL Clics]** de l’analyse d’envoi, ce qui peut entraîner des erreurs de calcul.
+* Les e-mails envoyés à l’adresse en Cci ne doivent pas être ouverts et faire l’objet de clics, car ces activités sont prises en compte dans les **[!UICONTROL ouvertures totales]** et **[!UICONTROL Clics]** de l’analyse d’envoi, ce qui peut entraîner des erreurs de calcul.
 
 <!--Only successfully sent emails are taken in account, bounces are not.-->

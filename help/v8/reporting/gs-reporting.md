@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 68%
+ht-degree: 64%
 ---
 # Prise en main du reporting{#gs-ac-reports}
 
@@ -43,13 +43,13 @@ Adobe Campaign propose un ensemble d&#39;outils de reporting répertoriés dans
 
 * **Rapports dynamiques**
 
-  Disponible dans l’interface utilisateur web de Campaign, le rapport dynamique fournit des rapports entièrement personnalisables et en temps réel pour mesurer l’impact de vos activités marketing. Ils offrent la possibilité d’accéder aux données de profil, ce qui permet l’analyse démographique par dimensions de profil, comme le genre, la ville et l’âge, en plus des données de campagne par e-mail fonctionnelles comme les ouvertures et les clics. Reportez-vous à la documentation de [Web UI v7](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=fr){target="_blank"}.
+  Disponible dans l’interface utilisateur web de Campaign, le rapport dynamique fournit des rapports entièrement personnalisables et en temps réel pour mesurer l’impact de vos activités marketing. Ils offrent la possibilité d’accéder aux données de profil, ce qui permet l’analyse démographique par dimensions de profil, comme le genre, la ville et l’âge, en plus des données de campagne par e-mail fonctionnelles comme les ouvertures et les clics. Consultez la [documentation de l&#39;UI web v7](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html){target="_blank"}.
 
 * **Cubes**
 
   Adobe Campaign comprend un outil intuitif d’exploration des données permettant de créer des rapports dynamiques.
 
-  Utilisez les fonctionnalités de Marketing Analytics pour analyser et mesurer les données, calculer les statistiques, simplifier et optimiser la création et le calcul de rapports. Grâce à ce module, vous pouvez créer des rapports et des populations cibles, puis les stocker dans des listes à des fins de ciblage ou de segmentation dans Adobe Campaign.
+  Utilisez les fonctionnalités d’analyse marketing pour analyser et mesurer les données, calculer les statistiques, simplifier et optimiser la création et le calcul de rapports. Grâce à ce module, vous pouvez créer des rapports et des populations cibles, puis les stocker dans des listes à des fins de ciblage ou de segmentation dans Adobe Campaign.
 
   ![](assets/create-a-report.png)
 
@@ -75,10 +75,10 @@ Adobe Campaign propose un ensemble d&#39;outils de reporting répertoriés dans
 
   ![](assets/desc-analysis-report.png)
 
-  Le rapport d&#39;analyse descriptive d&#39;une campagne est présenté dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target="_blank"}.
+  Le rapport d&#39;analyse descriptive d&#39;une campagne est présenté dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target="_blank"}.
 
 * **Rapports personnalisés**
 
   Utilisez Adobe Campaign pour créer des rapports sur les données de la base de données. Une fois créés, rendez-les accessibles dans les contextes appropriés.
 
-  Les étapes de création d&#39;un rapport sont détaillées dans la documentation de [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=fr){target="_blank"}. La création de rapports personnalisés est réservée aux utilisateurs et utilisatrices avancés.
+  Les étapes de création d&#39;un rapport sont détaillées dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=fr){target="_blank"}. La création de rapports personnalisés est réservée aux utilisateurs et utilisatrices avancés.

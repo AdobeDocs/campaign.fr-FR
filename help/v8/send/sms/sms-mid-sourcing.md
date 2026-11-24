@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 100%
+source-wordcount: '652'
+ht-degree: 91%
 ---
 # SMS dans une infrastructure de midsourcing {#sms-mid}
 
@@ -50,12 +50,12 @@ L’envoi de diffusions SMS avec une infrastructure de midsourcing requiert les 
 
 Tout d’abord, vous devez créer un opérateur SMS sur le serveur de midsourcing, qui sera utilisé par le compte externe SMS sur le serveur Marketing.
 
-Pour créer un opérateur SMS, procédez comme suit :
+Pour créer votre opérateur/opératrice SMS, procédez comme suit :
 
 1. Dans **[!UICONTROL Administration]** > **[!UICONTROL Gestion des accès]** > **[!UICONTROL Opérateurs]**, cliquez sur **[!UICONTROL Nouveau]** et remplissez le formulaire dans la nouvelle fenêtre ouverte.
 
    * Les champs **[!UICONTROL Nom (login)]** et **[!UICONTROL Libellé]** sont obligatoires.
-   * Le mot de passe n’est pas obligatoire, mais il est vivement recommandé pour la sécurité.
+   * Le mot de passe n’est pas obligatoire, mais il est vivement recommandé pour des raisons de sécurité.
 
    Notez que le champ Nom (login) sera utilisé ultérieurement pour nommer votre compte externe SMPP dans le serveur de midsourcing.
 
@@ -78,7 +78,7 @@ Vous pouvez maintenant le voir dans la liste des opérateurs.
 
 ## Créer un compte SMS externe sur le serveur Marketing {#sms-external-account}
 
-Dans une infrastructure de midsourcing, vous devez créer un compte externe SMS sur le serveur Marketing, comme ci-dessous.
+Dans une infrastructure intermédiaire, vous devez créer un compte externe SMS sur le serveur marketing, comme indiqué ci-dessous
 
 >[!IMPORTANT]
 >

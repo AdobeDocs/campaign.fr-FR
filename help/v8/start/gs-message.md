@@ -43,14 +43,14 @@ topic_v2:
     internal-label: Customer journeys
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 91%
+ht-degree: 88%
 ---
 # Prise en main des messages {#gs-ac-msg}
 
-Avec Adobe Campaign, vous pouvez réaliser des campagnes cross-canal, y compris sous forme d&#39;e-mails, SMS, notifications push et courrier, et mesurer leur efficacité à l&#39;aide de différents rapports dédiés. Ces messages sont conçus et envoyés par le biais de diffusions, et peuvent être personnalisés pour chaque destinataire.
+Avec Adobe Campaign, vous pouvez réaliser des campagnes cross-canal, y compris sous forme d&#39;e-mails, SMS, notifications push et courrier, et mesurer leur efficacité à l&#39;aide de différents rapports dédiés. Vous concevez et envoyez ces messages à l’aide de diffusions, et vous pouvez les personnaliser pour chaque destinataire.
 
 Les principales fonctionnalités comprennent le ciblage, la définition et la personnalisation des messages, l’exécution des communications et les rapports opérationnels associés.
 
@@ -117,13 +117,13 @@ Les workflows fournissent également des activités de diffusion spécifiques se
 
 Une **diffusion récurrente** est disponible dans le contexte d’un workflow. Elle permet de créer une diffusion à chaque exécution de l’activité. Ainsi, vous n’avez pas à créer de diffusion pour les tâches récurrentes. Par exemple, si vous exécutez ce type d’activité une fois par mois, vous obtiendrez 12 diffusions au bout d’un an.
 
-Les diffusions récurrentes sont créées dans des workflows par le biais de l&#39;activité [&#128279;](../../automation/workflow/recurring-delivery.md)Diffusion récurrente. Un exemple d&#39;utilisation de cette activité est présenté dans la section suivante : [Création d’une diffusion récurrente dans un workflow de ciblage](../../automation/workflow/send-a-birthday-email.md).
+Les diffusions récurrentes sont créées dans des workflows par le biais de l&#39;activité [](../../automation/workflow/recurring-delivery.md)Diffusion récurrente. Un exemple d&#39;utilisation de cette activité est présenté dans la section suivante : [Création d’une diffusion récurrente dans un workflow de ciblage](../../automation/workflow/send-a-birthday-email.md).
 
 ### Diffusion continue {#continuous-delivery}
 
 Une **diffusion au fil de l’eau** est disponible dans le contexte d’un workflow. Elle permet d’ajouter de nouvelles personnes destinataires à une diffusion existante, ce qui évite d’avoir à créer une diffusion à chaque exécution.
 
-Si des informations sont modifiées au niveau de la diffusion (contenu, nom, etc.), un nouvel objet de diffusion est créé lors de l’exécution de la diffusion. Si aucune information n&#39;a été modifiée, le même objet de diffusion est réutilisé et les logs de diffusion et de tracking sont ajoutés dans le même objet.
+Si des informations contenues dans la diffusion sont modifiées (contenu, nom, etc.), un nouvel objet de diffusion est créé lors de l’exécution de la diffusion. Si aucune information n&#39;a été modifiée, le même objet de diffusion est réutilisé et les logs de diffusion et de tracking sont ajoutés dans le même objet.
 
 Par exemple, si vous exécutez ce type d&#39;activité une fois par mois, vous obtiendrez une seule diffusion au bout d&#39;un an (à condition que vous n&#39;ayez apporté aucune modification à la diffusion).
 

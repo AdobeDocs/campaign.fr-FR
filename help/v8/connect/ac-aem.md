@@ -30,10 +30,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 97%
+ht-degree: 98%
 ---
 # Utiliser Campaign et Adobe Experience Manager {#ac-aem}
 
@@ -70,7 +70,7 @@ Cette intégration peut être utilisée, par exemple, pour créer une newsletter
 
    ![](assets/aem_authoring_3.png)
 
-1. Personnalisez le contenu de votre e-mail en ajoutant des composants, tels que des champs de personnalisation d&#39;Adobe Campaign. En savoir plus dans la documentation de [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html?lang=fr#editing-email-content){target="_blank"}.
+1. Personnalisez le contenu de votre e-mail en ajoutant des composants, comme des champs de personnalisation depuis Adobe Campaign. En savoir plus dans la [documentation d’Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html?lang=fr#editing-email-content){target="_blank"}.
 
 1. Lorsque votre e-mail est prêt, accédez au menu **[!UICONTROL Informations sur la page]**, puis cliquez sur **[!UICONTROL Démarrer le workflow]**.
 
@@ -114,7 +114,7 @@ Votre newsletter est maintenant prête et synchronisée dans Adobe Campaign.
 
 1. Pour supprimer la connexion entre Experience Manager et Campaign, cliquez sur **[!UICONTROL Désynchroniser]**.
 
-Votre email est maintenant prêt à être envoyé à votre audience.
+Votre e-mail est maintenant prêt à être envoyé à votre audience.
 
 ## Importer des ressources à partir de la bibliothèque Adobe Experience Manager Assets {#assets-library}
 

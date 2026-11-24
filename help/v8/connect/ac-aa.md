@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 82%
+source-wordcount: '1833'
+ht-degree: 76%
 ---
 # Utilisation de Campaign et Adobe Analytics {#ac-aa}
 
@@ -85,7 +85,7 @@ Pour créer votre **[!UICONTROL suite de rapports]** dans [!DNL Adobe Analytics]
 
 1. Sur la page **[!UICONTROL Responsable des suites de rapports]**, cliquez sur **[!UICONTROL Créer]**, puis sur **[!UICONTROL Suite de rapports]**.
 
-   Pour la procédure détaillée de création de **[!UICONTROL suites de rapports]**, consultez la [documentation d’Adobe Analytics](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite#prerequisites){target="_blank"}.
+   Pour la procédure détaillée de création de **[!UICONTROL suites de rapports]**, consultez la [documentation d’Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite#prerequisites){target="_blank"}.
 
    ![](assets/analytics_connnector_3.png)
 
@@ -199,7 +199,7 @@ Pour plus d’informations, consultez la page [Profils de produit pour Adobe An
 
    >[!NOTE]
    >
-   >Les champs Identifiant de la campagne et Identifiant de broadlog sont collectés via JavaScript sur la page de destination ou par le biais de règles de traitement. [En savoir plus sur les règles de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
+   >Les champs Identifiant de la campagne et Identifiant du broadlog sont collectés via JavaScript sur la landing page ou via des règles de traitement. [En savoir plus sur les règles de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
 
    ![](assets/analytics_connnector_11.png)
 
@@ -239,8 +239,8 @@ Pour plus d’informations, consultez la page [Profils de produit pour Adobe An
 
 1. L’onglet **[!UICONTROL Avancé]** vous permet de configurer ou modifier des paramètres plus techniques.
 
-   * **[!UICONTROL Durée de vie]** : vous permet de définir un délai (en jours) après lequel les événements web sont récupérés dans Adobe Campaign par les workflows techniques. Par défaut : 180 jours.
-   * **[!UICONTROL Persistance]** : permet de définir la période pendant laquelle tout événement web (un achat par exemple) peut être attribué à une opération de remarketing. Par défaut : 7 jours.
+   * **[!UICONTROL Durée de vie]** : permet de définir un délai (en jours) après lequel les événements web seront récupérés dans Adobe Campaign par les workflows techniques. Par défaut : 180 jours.
+   * **[!UICONTROL Persistance]** : permet de définir la période pendant laquelle tout événement web (un achat, par exemple) peut être attribué à une campagne de remarketing. Valeur par défaut : 7 jours.
 
 >[!NOTE]
 >
@@ -273,7 +273,7 @@ Les indicateurs concernés sont les suivants :
 
 >[!NOTE]
 >
->Les données envoyées correspondent au delta basé sur la dernière prise de photo, ce qui peut générer une valeur négative dans les données de mesure.
+>Les données envoyées sont le delta basé sur le dernier instantané qui peut entraîner des valeurs négatives dans les données de mesure.
 
 Les attributs envoyés sont les suivants :
 
@@ -308,7 +308,7 @@ Pour préparer votre campagne de remarketing, il vous suffit de créer des modè
 
 Les campagnes de remarketing démarrent automatiquement une fois qu’Adobe Campaign a récupéré les segments qui analysent le comportement des personnes ciblées par la campagne initiale. En cas d’abandon de panier ou de consultation de produits sans achat, une diffusion est envoyée aux personnes destinataires concernées afin que leur navigation sur le site entraîne la finalisation de leur achat.
 
-Adobe Campaign met à votre disposition des modèles de diffusion personnalisés que vous pouvez utiliser ou dont vous pouvez vous inspirer pour préparer vos campagnes.
+Adobe Campaign fournit des modèles de diffusion personnalisés que vous pouvez utiliser ou dont vous pouvez vous inspirer pour préparer vos campagnes.
 
 1. Dans l&#39;**[!UICONTROL Explorateur]**, accédez au dossier **[!UICONTROL Ressources]** > **[!UICONTROL Modèles]** > **[!UICONTROL Modèles de diffusion]** de l&#39;arborescence Adobe Campaign.
 1. Dupliquez le modèle **[!UICONTROL Diffuser par e-mail (remarketing)]** ou les exemples de modèles de remarketing proposés par Adobe Campaign.

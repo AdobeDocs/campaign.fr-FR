@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 87%
+source-wordcount: '858'
+ht-degree: 86%
 ---
 # Utiliser les énumérations {#enumerations}
 
@@ -68,7 +68,7 @@ Pour les énumérations **Ouverte** et **Fermée**, des options spécifiques son
 
 ## Cleansing des alias {#alias-cleansing}
 
-Dans les champs d’énumération, une valeur peut être sélectionnée dans la liste déroulante ou saisie manuellement si elle n’est pas disponible dans la liste. Les valeurs personnalisées peuvent être ajoutées à l’énumération lorsque l’option **[!UICONTROL Ouvrir]** est activée. Ces valeurs peuvent ensuite être normalisées par le biais de la normalisation des alias, qui remplace automatiquement les variations avec le terme correct (par exemple, conversion de `Adob` en `Adobe`).
+Dans les champs d’énumération, une valeur peut être sélectionnée dans la liste déroulante ou saisie manuellement si elle n’est pas disponible dans la liste. Les valeurs personnalisées peuvent être ajoutées à l&#39;énumération lorsque l&#39;option **[!UICONTROL Ouvrir]** est activée. Ces valeurs peuvent ensuite être normalisées par le biais de la normalisation des alias, qui remplace automatiquement les variations avec le terme correct (par exemple, conversion de `Adob` en `Adobe`).
 
 
 >[!CAUTION]

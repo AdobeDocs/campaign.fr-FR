@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 100%
+source-wordcount: '665'
+ht-degree: 96%
 ---
 # Journal d’audit{#audit-trail}
 
@@ -50,7 +50,7 @@ La fonctionnalité **[!UICONTROL Journal d’audit]** d’Adobe Campaign offre 
 
 * **Journal d’audit du schéma** : permet d’explorer les modifications apportées à vos schémas, ainsi que d’identifier qui a effectué ces modifications et quand elles ont eu lieu.
 
-  Pour plus d’informations sur les schémas, consultez cette [page](../dev/schemas.md).
+  Pour plus d’informations sur les schémas, consultez [cette page](../dev/schemas.md).
 
 * **Journal d’audit des workflows** : effectue le suivi de toutes les actions liées à vos workflows, notamment :
 
@@ -89,7 +89,7 @@ La fonctionnalité **[!UICONTROL Journal d’audit]** d’Adobe Campaign offre 
 
 * **Offre** : permet de vérifier les activités et les dernières modifications apportées à vos offres.
 
-  Pour plus d’informations sur l’offre, consultez cette [page](../interaction/interaction.md).
+  Pour plus d’informations sur les offres, consultez cette [page](../interaction/interaction.md).
 
 * **Opérateur ou opératrice** : permet de surveiller les activités et les modifications récentes apportées à vos opérateurs et opératrices.
 
@@ -115,7 +115,7 @@ Pour accéder au **[!UICONTROL journal d’audit]** de votre instance, procédez
 
    * **[!UICONTROL Type]** : workflow, options, diffusions ou schémas.
    * **[!UICONTROL Entité]** : nom interne de vos activités.
-   * **[!UICONTROL Modifié par]** : nom d’utilisateur ou d’utilisatrice de la dernière personne à avoir modifié cette entité.
+   * **[!UICONTROL Modifié par]** : nom d’utilisateur de la personne qui a effectué la dernière modification de cette entité.
    * **[!UICONTROL Action]** : dernière action réalisée sur cette entité (création, édition ou suppression).
    * **[!UICONTROL Date de modification]** : date de la dernière action effectuée sur cette entité.
 
@@ -123,7 +123,7 @@ Pour accéder au **[!UICONTROL journal d’audit]** de votre instance, procédez
 
 >[!NOTE]
 >
->Par défaut, la période de rétention est définie sur 180 jours pour les **[!UICONTROL logs d’audit]**. Cette valeur peut-être modifiée dans l’assistant de déploiement.
+>Par défaut, la période de conservation est définie sur 180 jours pour **[!UICONTROL les journaux d’audit]**. Cette valeur peut-être modifiée dans l’assistant de déploiement.
 
 ## Activer/désactiver le journal d’audit {#enable-disable-audit-trail}
 

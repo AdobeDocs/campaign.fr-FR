@@ -49,10 +49,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f0e325102f748f6268a21a5397774a08a6994e51
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '3529'
-ht-degree: 76%
+source-wordcount: '3530'
+ht-degree: 73%
 ---
 # Présentation des diffusions en échec {#delivery-failures}
 
@@ -64,13 +64,13 @@ Si un message ne peut pas être envoyé à un profil, le serveur distant envoie 
 
 Une fois un message envoyé, vous pouvez visualiser l&#39;état de la diffusion pour chaque profil, le type d&#39;échec et la raison associés dans les logs de diffusion.
 
-Lorsqu&#39;une adresse e-mail est mise en quarantaine ou qu&#39;un profil est en liste bloquée, le destinataire est exclu à l&#39;étape de préparation des diffusions. Les messages exclus sont répertoriés dans le tableau de bord de la diffusion.
+Lorsqu&#39;une adresse e-mail est mise en quarantaine ou qu&#39;un profil est en cours de traitement, le destinataire est exclu à l&#39;étape de préparation des diffusions. Les messages exclus sont répertoriés dans le tableau de bord de la diffusion.
 
 ## Pourquoi la diffusion du message a-t-elle échoué ? {#delivery-failure-reasons}
 
 Deux types d&#39;erreur sont liés à un message en échec. Chaque type d&#39;échec de diffusion détermine si une adresse est envoyée en [quarantaine](quarantines.md#quarantine-reason) ou non.
 
-* **Erreurs hard**
+* **Hard bounces**
 Les erreurs hard sont des échecs permanents générés lorsqu&#39;un FAI détermine qu&#39;une tentative de publipostage vers une adresse d&#39;abonné n&#39;est pas livrable. Dans Adobe Campaign, les rebonds définitifs indiqués comme non diffusables sont ajoutés à la liste de quarantaine, ce qui signifie qu’ils ne feront pas l’objet d’une nouvelle tentative. Dans certains cas, un rebond définitif peut être ignoré si la cause de l’échec est inconnue.
 
   Voici quelques exemples courants de rebonds définitifs : adresse inexistante, compte désactivé, syntaxe incorrecte, domaine incorrect.
@@ -110,7 +110,7 @@ Actuellement, le traitement de la qualification des e-mails rejetés dans Adobe�
 
 * **Erreurs synchrones** : le MTA détermine le type et la qualification du rebond, puis renvoie ces informations à Campaign. Les qualifications de mails rebonds dans la table **[!UICONTROL Qualification des logs de diffusion]** ne sont plus utilisées pour les messages d&#39;erreur relatifs aux échecs des diffusions **synchrones**.
 
-* **Erreurs asynchrones** : les règles utilisées par Campaign pour qualifier les diffusions en échec asynchrones sont répertoriées dans le nœud **[!UICONTROL Administration > Gestion de campagne > Gestion des échecs > Qualification des logs de diffusion]**. Les retours asynchrones sont qualifiés par le processus inMail grâce aux règles **[!UICONTROL E-mail entrant]**.
+* **Erreurs asynchrones** : les règles utilisées par Campaign pour qualifier les diffusions en échec asynchrones sont répertoriées dans le nœud **[!UICONTROL Administration > Gestion de campagne > Gestion des échecs > Qualification des logs de diffusion]**. Les retours asynchrones sont qualifiés par le processus inMail via les règles **[!UICONTROL E-mail entrant]**.
 
 <!--
 NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
@@ -159,7 +159,7 @@ Une fois qu’un message figure dans la file d’attente du MTA depuis 3,5 jour
 
 Un message peut expirer avant la fin de sa période de validité lorsque la prochaine reprise échouerait après l’heure d’expiration. Le log de diffusion affiche alors l&#39;échec de la dernière tentative de diffusion.
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## Types d&#39;erreur e-mail {#email-error-types}
@@ -246,7 +246,7 @@ Pour le canal e-mail, les raisons possibles d&#39;un échec de diffusion sont r�
    <td> Boîte pleine </td> 
    <td> Soft </td> 
    <td> 5 </td> 
-   <td> La boîte aux lettres de cet utilisateur est pleine et ne peut pas accepter d’autres messages. Ce profil sera ciblé de nouveau jusqu’à ce que le nombre d’erreurs atteigne 5. Ensuite, l’enregistrement sera défini sur le statut Quarantaine et aucune autre reprise ne sera effectuée.<br /> Ce type d’erreur est géré par un processus de nettoyage. L’adresse est définie sur un statut valide après 30 jours.<br /> Avertissement : pour que l'adresse soit automatiquement retirée de la liste des adresses en quarantaine, le workflow technique Nettoyage de la base de données doit être démarré.<br /> </td> 
+   <td> La boîte aux lettres de cet utilisateur est pleine et ne peut pas accepter d’autres messages. Ce profil sera ciblé de nouveau jusqu’à ce que le nombre d’erreurs atteigne 5. Ensuite, l’enregistrement sera défini sur le statut Quarantaine et aucune autre reprise ne sera effectuée.<br /> Ce type d'erreur est géré par un processus de nettoyage, l'adresse est définie sur un statut valide après 30 jours.<br /> Avertissement : pour que l'adresse soit automatiquement supprimée de la liste des adresses en quarantaine, le workflow technique Nettoyage de la base de données doit être démarré.<br /> </td> 
   </tr> 
   <tr> 
    <td> Non connecté </td> 
@@ -258,7 +258,7 @@ Pour le canal e-mail, les raisons possibles d&#39;un échec de diffusion sont r�
    <td> Non définie </td> 
    <td> Non définie </td> 
    <td> 0 </td> 
-   <td> L'adresse est en cours de qualification parce que l'erreur n'a pas encore été incrémentée. Ce type d'erreur apparaît lorsqu'un nouveau message d'erreur est envoyé par le serveur : il peut s'agir d'une erreur isolée, mais si elle se répète, le compteur d'erreur augmente, ce qui permet d'alerter les équipes techniques. Elles peuvent ensuite analyser les messages et qualifier cette erreur, via le nœud <span class="uicontrol">Administration</span>/<span class="uicontrol">Gestion de campagne</span>/<span class="uicontrol">Gestion des NP@I</span> dans l'arborescence.<br /> </td> 
+   <td> L’adresse est en cours de qualification, car l’erreur n’a pas encore été incrémentée. Ce type d'erreur apparaît lorsqu'un nouveau message d'erreur est envoyé par le serveur : il peut s'agir d'une erreur isolée, mais si elle se répète, le compteur d'erreur augmente, ce qui permet d'alerter les équipes techniques. Elles peuvent ensuite analyser les messages et qualifier cette erreur, via le nœud <span class="uicontrol">Administration</span>/<span class="uicontrol">Gestion de campagne</span>/<span class="uicontrol">Gestion des NP@I</span> dans l'arborescence.<br /> </td> 
   </tr> 
   <tr> 
    <td> Non éligible aux offres </td> 
@@ -288,7 +288,7 @@ Pour le canal e-mail, les raisons possibles d&#39;un échec de diffusion sont r�
    <td> Inatteignable </td> 
    <td> Soft/Hard </td> 
    <td> 3 </td> 
-   <td> Une erreur s’est produite dans la chaîne de diffusion du message. Il peut s’agir d’un incident sur le relais SMTP, d’un domaine temporairement inaccessible, etc. En fonction de l’erreur, l’adresse sera réessayée jusqu’à ce que le compteur d’erreurs atteigne 5, ou elle sera directement mise en quarantaine.<br /> </td> 
+   <td> Une erreur s’est produite dans la chaîne de diffusion du message. Il peut s’agir d’un incident sur le relais SMTP, d’un domaine temporairement inaccessible, etc. Selon l'erreur, l'adresse sera réessayée jusqu'à ce que le compteur d'erreurs atteigne 5, ou elle sera directement mise en quarantaine.<br /> </td> 
   </tr> 
   <tr> 
    <td> Utilisateur inconnu </td> 
@@ -309,7 +309,7 @@ Pour le canal des applications mobiles, les raisons possibles d&#39;un échec de
 
 Le protocole HTTP/V2 permet des retours et un état directs pour chaque diffusion push. Si le connecteur de protocole HTTP/V2 est utilisé, le service des retours n&#39;est plus appelé par le workflow **[!UICONTROL mobileAppOptOutMgt]**. Un jeton est considéré comme non enregistré lorsqu&#39;une application mobile est désinstallée ou réinstallée.
 
-Si l&#39;APNS renvoie de manière synchrone un statut &quot;désinscrit&quot; pour un message, le jeton cible est immédiatement mis en quarantaine.
+De manière synchrone, si les APNs renvoient un statut « non enregistré » pour un message, le jeton cible est immédiatement mis en quarantaine.
 
 +++ Cliquer pour afficher les scénarios de quarantaine iOS
 
@@ -364,7 +364,7 @@ Si l&#39;APNS renvoie de manière synchrone un statut &quot;désinscrit&quot; po
    <td> Non<br /> </td> 
   </tr> 
   <tr> 
-   <td> Problème de certificat (mot de passe, corruption, etc.) et tester la connexion au problème APNs <br /> </td> 
+   <td> Problème de certificat (mot de passe, corruption, etc.) et tester la connexion au problème APNs<br /> </td> 
    <td> Echec<br /> </td> 
    <td> Messages d'erreur différents selon l'erreur<br /> </td> 
    <td> Soft<br /> </td> 
@@ -451,7 +451,7 @@ Le mécanisme de mise en quarantaine d&#39;Android V2 utilise le même processu
   <tr> 
    <td> Création du message/phase d'analyse : payload trop volumineuse<br /> </td> 
    <td> Echec<br /> </td> 
-   <td> La notification est trop lourde : {1} bits, alors que seuls les {2} sont autorisés<br /> </td> 
+   <td> La notification est trop lourde : {1} bits, alors que seuls {2} sont autorisés<br /> </td> 
    <td> Soft<br /> </td> 
    <td> Refusés<br /> </td> 
    <td> Non<br /> </td> 
@@ -459,7 +459,7 @@ Le mécanisme de mise en quarantaine d&#39;Android V2 utilise le même processu
   <tr> 
    <td> Perte de la connexion réseau pendant l'envoi<br /> </td> 
    <td> Echec<br /> </td> 
-   <td> Aucune réponse du service Firebase Cloud Messaging à l'adresse : {1}<br />. </td> 
+   <td> Aucune réponse du service Firebase Cloud Messaging à l'adresse : {1}<br /> </td> 
    <td> Soft<br /> </td> 
    <td> Inatteignable<br /> </td> 
    <td> Oui<br /> </td> 
@@ -497,7 +497,7 @@ Le mécanisme de mise en quarantaine d&#39;Android V2 utilise le même processu
    <td> Non<br /> </td> 
   </tr> 
   <tr> 
-   <td> Rejet du message par le FCM : toutes les autres erreurs<br /> </td> 
+   <td> Rejet du message FCM : toutes les autres erreurs<br /> </td> 
    <td> Echec<br /> </td> 
    <td> Le serveur Firebase Cloud Messaging a renvoyé un code d'erreur inattendu : {1}. </td> 
    <td> </td> 
@@ -682,7 +682,7 @@ Les spécificités du canal SMS sont énumérées ci-dessous.
   <tr> 
    <td> Accusé de réception du MT non valide<br /> </td> 
    <td> Echec<br /> </td> 
-   <td> Erreur '{1}' lors du traitement de la trame d'accusé de réception pour la requête d'envoi<br /> </td> 
+   <td> Erreur '{1}' lors du traitement de la trame d'accusé de réception pour la requête d'envoi <br /> </td> 
    <td> Soft<br /> </td> 
    <td> Inatteignable<br /> </td> 
   </tr> 
@@ -754,7 +754,7 @@ Les messages des destinataires échouent avec une erreur &quot;Inatteignable&quo
 Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
 ```
 
-**Cause** : la personnalisation dans HTML tente d’appeler une table ou un champ qui n’a pas été défini ou mappé dans le ciblage amont ou dans le mapping de ciblage de la diffusion.
+**Cause** : la personnalisation dans HTML tente d&#39;appeler une table ou un champ qui n&#39;a pas été défini ou mappé dans le ciblage amont ou dans le mapping de ciblage de la diffusion.
 
 **Résolution** : passez en revue le workflow et le contenu de la diffusion pour déterminer précisément quelle personnalisation tente d’appeler la table en question. Supprimez ensuite l’appel à cette table dans HTML ou corrigez le mapping sur la diffusion.
 
@@ -768,9 +768,9 @@ En cas d’échec d’une diffusion, l’erreur suivante peut s’afficher dans 
 DLV-XXXX The count of message prepared (123) is greater than the number of messages to send (111). Please contact support.
 ```
 
-**Cause** : l’e-mail contient un champ ou un bloc de personnalisation qui comporte plusieurs valeurs pour le destinataire. Un bloc de personnalisation est utilisé et il récupère plusieurs enregistrements pour un destinataire spécifique.
+**Cause** : un champ ou un bloc de personnalisation dans l&#39;e-mail comporte plusieurs valeurs pour le destinataire. Un bloc de personnalisation est utilisé et il récupère plusieurs enregistrements pour un destinataire spécifique.
 
-**Résolution** : vérifiez les données de personnalisation utilisées, puis vérifiez la cible pour les destinataires qui possèdent plusieurs entrées pour l’un de ces champs. Vous pouvez également utiliser une activité **[!UICONTROL Déduplication]** dans le workflow de ciblage avant l’activité de diffusion afin de vous assurer qu’il n’y a qu’un seul champ de personnalisation à la fois. Pour plus d’informations sur la déduplication, consultez la [documentation relative aux workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=fr){target="_blank"}.
+**Résolution** : vérifiez les données de personnalisation utilisées, puis vérifiez la cible pour les destinataires qui possèdent plusieurs entrées pour l’un de ces champs. Vous pouvez également utiliser une activité **[!UICONTROL Déduplication]** dans le workflow de ciblage avant l’activité de diffusion pour vous assurer qu’il n’y a qu’un seul champ de personnalisation à la fois. Pour plus d&#39;informations sur la déduplication, consultez la [documentation des workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=fr){target="_blank"}.
 
 ### Gestion des réponses automatiques {#auto-reply-handling}
 
@@ -780,18 +780,18 @@ Certaines diffusions peuvent échouer avec une erreur « Inatteignable » indiqu
 Inbound email bounce (rule 'Auto_replies' has matched this bounce).
 ```
 
-**Explication** : cela signifie que la diffusion a réussi mais qu’Adobe Campaign a reçu une réponse automatique du destinataire (par exemple, une réponse « Absent du bureau ») qui correspondait aux règles d&#39;email entrant « Réponses_automatiques ».
+**Explication** : cela signifie que la diffusion a réussi mais qu&#39;Adobe Campaign a reçu une réponse automatique du destinataire (par exemple une réponse « Absent du bureau ») qui correspondait aux règles d&#39;email entrant « Réponses_automatiques ».
 
 L’e-mail de réponse automatique est ignoré par Adobe Campaign et l’adresse du destinataire n’est pas envoyée en quarantaine. Il s’agit d’un comportement attendu qui n’indique pas un échec de diffusion.
 
 ## Rubriques connexes
 
-[Statuts de diffusion](delivery-statuses.md) décrit les différents statuts qu&#39;une diffusion peut avoir tout au long de son cycle de vie.
+[Statuts de diffusion](delivery-statuses.md) décrit les différents statuts qu&#39;une diffusion peut avoir pendant son cycle de vie.
 
 [Surveiller les diffusions dans l’interface utilisateur de Campaign](delivery-dashboard.md) fournit des conseils sur l’utilisation du tableau de bord des diffusions pour suivre les performances des diffusions et diagnostiquer les problèmes.
 
-[Gestion des quarantaines](quarantines.md) explique comment Campaign gère les adresses en quarantaine pour protéger votre réputation d’envoi.
+[La gestion des quarantaines](quarantines.md) explique comment Campaign gère les adresses en quarantaine pour protéger votre réputation d’envoi.
 
-[Surveiller votre délivrabilité](monitoring-deliverability.md) fournit des conseils pour maintenir une bonne délivrabilité et la réputation de l&#39;expéditeur.
+[Surveiller votre délivrabilité](monitoring-deliverability.md) fournit des conseils sur le maintien d&#39;une bonne délivrabilité et d&#39;une bonne réputation de l&#39;expéditeur.
 
-[Bonnes pratiques de diffusion](../start/delivery-best-practices.md) couvre les bonnes pratiques pour la création et l&#39;envoi de diffusions dans Campaign.
+[Bonnes pratiques de diffusion](../start/delivery-best-practices.md) couvre les bonnes pratiques pour la création et l’envoi de diffusions dans Campaign.

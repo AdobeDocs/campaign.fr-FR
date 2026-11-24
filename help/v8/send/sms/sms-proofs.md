@@ -26,10 +26,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 97%
+source-wordcount: '281'
+ht-degree: 93%
 ---
 # Envoyer un BAT pour une diffusion SMS {#sms-proof}
 
@@ -46,7 +46,7 @@ Vous pouvez envoyer un BAT pour votre diffusion SMS afin de la valider :
    * **[!UICONTROL Définition d’une cible spécifique au BAT]** : permet d’interroger avec des filtres les adresses de la base de données en tant que cible du BAT.
    * **[!UICONTROL Substitution de l’adresse]** : vous permet de saisir les adresses e-mail et d’utiliser les données des personnes destinataires cibles pour valider le contenu. Les adresses de substitution peuvent être saisies manuellement ou sélectionnées dans la liste déroulante. L’[énumération](../../config/enumerations.md) associée est **[!UICONTROL Adresse de substitution (rcpAddress)]**.
      Par défaut, la substitution est effectuée de manière aléatoire, mais vous pouvez sélectionner une personne destinataire spécifique dans la cible principale à l’aide de l’icône **[!UICONTROL Détail]**.
-   * **[!UICONTROL Adresses de contrôle]** : vous permet d’accéder aux adresses de contrôle pour en faire la cible des BAT. Ces adresses peuvent être importées à partir d’un fichier ou saisies manuellement.
+   * **[!UICONTROL Adresses de contrôle]** : permet d’accéder aux adresses de contrôle pour en faire la cible du BAT. Ces adresses peuvent être importées à partir d’un fichier ou saisies manuellement.
    * **[!UICONTROL Cible spécifique et adresses de contrôle]** : permet de combiner des adresses de contrôle et des adresses de personnes destinataires.
 
 1. Après avoir choisi le **[!UICONTROL mode de ciblage]**, ajoutez vos adresses de BAT en fonction de celui-ci.

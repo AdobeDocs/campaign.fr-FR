@@ -29,27 +29,27 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 84%
+source-wordcount: '170'
+ht-degree: 64%
 ---
 # Suivi des simulations{#simulation-tracking}
 
 
 
-Une fois la simulation effectuée, vous pouvez analyser son résultat depuis l&#39;onglet **[!UICONTROL Résultats]** qui s&#39;ajoute dans la fenêtre de simulation et le rapport **[!UICONTROL Répartition des offres par rang]** disponible depuis le tableau de bord de la simulation.
+Une fois la simulation terminée, vous pouvez analyser son résultat à partir de l&#39;onglet **[!UICONTROL Résultats]** qui est ajouté à la fenêtre de simulation et du rapport **[!UICONTROL Répartition des offres par rang]**, disponible via le tableau de bord de la simulation.
 
 Les résultats de la simulation contiennent une répartition des propositions par rang et par destinataire. Les axes de reporting sont également pris en compte et affichés dans cet onglet.
 
 Vous pouvez conserver ces résultats et les exporter si nécessaire en créant un rapport d’analyse descriptive. Pour cela, cliquez sur le lien disponible dans la fenêtre des résultats.
 
-Reportez-vous à [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"} pour plus d’informations sur l’assistant d’analyse descriptive.
+Reportez-vous à [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"} pour plus d’informations sur l’assistant d’analyse descriptive.
 
 ![](assets/offer_simulation_012.png)
 
 Un tableau croisé dynamique permet de visualiser rapidement la répartition des offres par rang. Comme tout rapport dans Adobe Campaign, il peut être exporté, imprimé, archivé ou affiché dans un navigateur web.
 
-Voir à ce propos [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}.
+Voir à ce propos [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}.
 
 ![](assets/offer_simulation_013.png)
