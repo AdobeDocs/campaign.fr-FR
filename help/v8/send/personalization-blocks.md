@@ -100,4 +100,4 @@ Une fois enregistré, le nouveau bloc de personnalisation est disponible dans l�
 
 Dans la vidéo suivante, découvrez comment créer des blocs de contenu dynamiques et apprenez à les utiliser pour personnaliser le contenu de votre diffusion e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3449008?captions=fre_fr&quality=12)
