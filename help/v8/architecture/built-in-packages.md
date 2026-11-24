@@ -26,9 +26,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 9f70a309a882347a0df658d00c47127f31d28eb9
+source-git-commit: a2ca220e4be9dfb4a90465b69dd08a3552040a07
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '827'
 ht-degree: 16%
 ---
 # Packages natifs {#built-in-packages}
@@ -57,7 +57,7 @@ Le tableau suivant répertorie les packages intégrés pour plus d’information
 
 | Package | Description |
 |---|---|
-| Diffusion | Surveille les diffusions et les problèmes rencontrés lors de l’envoi des messages. [En savoir plus](../start/monitor.md) |
+| Diffusion | Package de base obligatoire d’Adobe Campaign. Il permet d’envoyer des diffusions. [En savoir plus](../start/gs-message.md) |
 | Campagnes marketing (Campaign) | Définit, optimise, exécute et analyse des campagnes marketing et de communication. [En savoir plus](../start/campaigns.md) |
 | Ressources marketing (MRM) | Contrôle les actions marketing en mode collaboratif, avec la gestion et le suivi des tâches, des budgets et des ressources marketing. [En savoir plus](../../automation/mrm/about-marketing-resource-management.md) |
 | Moteur d’offres (Interaction) | Répond en temps réel lors d&#39;une interaction avec un contact en proposant une ou plusieurs offres adaptées. [En savoir plus](../interaction/interaction.md) |
