@@ -23,9 +23,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 36111995a9a550d5089107bbc1f734c204db8aff
+source-git-commit: 92bab89570eca3eb13d6010db0deec74e7860c91
 workflow-type: tm+mt
-source-wordcount: '2836'
+source-wordcount: '2857'
 ht-degree: 4%
 ---
 # Options de Campaign {#campaign-options}
@@ -60,7 +60,7 @@ Vous pouvez lire et écrire des valeurs d’option à partir du code JavaScript,
 
 ## Options disponibles {#available-options}
 
-Les tableaux ci-dessous répertorient les options disponibles dans Campaign v8, regroupées par zone. Lorsqu’une autre page de la documentation décrit une option, le tableau fournit des liens vers celle-ci.
+Les tableaux ci-dessous répertorient les options disponibles dans Campaign v8, regroupées par zone. Lorsqu’une autre page de la documentation décrit une option, le tableau fournit des liens vers celle-ci. Certaines entrées sont des options d’information ou de maintenance. L’inscription d’une option ne signifie pas qu’elle peut être modifiée en toute sécurité.
 
 ### Diffusions {#delivery-options}
 
@@ -83,7 +83,6 @@ Ces options contrôlent la manière dont les diffusions sont préparées et envo
 | NmsMTA_Alert_Delay | Délai, en minutes, au delà duquel une diffusion est considérée comme retardée. La valeur par défaut est de 30 minutes. |
 | NmsServer_MirrorPageUrl | URL du serveur de pages miroir. Il s’agit de la valeur par défaut des diffusions e-mail lorsque la définition de routage ne spécifie aucune URL. Par défaut, elle est identique à l’URL du serveur de tracking. |
 | XtkBarcode_SpecialChar | Active ou désactive la prise en charge des caractères spéciaux pour les codes à barres Code128. |
-| XtkSecurity_Restrict_EditXML | Ajoutez-la avec la valeur 0 pour désactiver l&#39;édition du code XML des diffusions (Editer XML source ou Ctrl+F4). |
 | NMS_ActivateOwnerConfirmation | Définissez-la sur 1 afin que l’opérateur ou l’opératrice en charge de la diffusion puisse confirmer l’envoi, lorsqu’un opérateur ou un groupe spécifique est désigné pour démarrer la diffusion. Définissez-le sur 0 pour le désactiver : seul l’opérateur ou le groupe désigné, ou un administrateur, peut alors confirmer l’envoi. |
 | NmsDelivery_senderAddressMask | Liste séparée par des virgules des adresses expéditeur autorisées dans le champ E-mail de l’expéditeur des diffusions par e-mail. Lorsque l’option comporte une valeur, le champ devient une liste déroulante. La restriction est globale : elle s&#39;applique à chaque marque et modèle de diffusion et ne prend en charge que les adresses statiques. [En savoir plus](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/options#restrict-sender-address){target="_blank"} |
 
@@ -164,6 +163,8 @@ Ces options définissent les seuils qui déclenchent un avertissement ou une ale
 
 Le workflow de nettoyage purge les anciens enregistrements pour empêcher la croissance de la base de données. Ces options définissent la durée pendant laquelle Campaign conserve chaque type de données. Une option de délai de purge est créée automatiquement lorsque vous modifiez le délai dans l’interface. Si vous le modifiez dans la liste des options, exprimez la valeur en secondes. En savoir plus sur l’[architecture générale](general-architecture.md) et les [instructions de sécurité](../config/security.md#consent).
 
+Seuls les administrateurs peuvent modifier les options de délai de purge. Les valeurs appropriées dépendent de votre environnement. Par conséquent, vérifiez la valeur actuelle sur votre instance et ne supposez pas une valeur par défaut universelle.
+
 | Option | Description |
 |---|---|
 | NmsCleanup_BroadLogPurgeDelay | Délai après lequel les logs de diffusion (broadlogs) sont effacés. |
@@ -178,7 +179,6 @@ Le workflow de nettoyage purge les anciens enregistrements pour empêcher la cro
 | NmsCleanup_RejectsPurgeDelay | Délai après lequel les rejets sont effacés. |
 | NmsCleanup_VisitorPurgeDelay | Délai après lequel les visiteurs sont effacés. |
 | NmsCleanup_WorkflowResultPurgeDelay | Délai après lequel les résultats du workflow sont effacés. |
-| XtkCleanup_NoStats | Définissez-le sur 1 afin que le workflow de nettoyage ne mette pas à jour les statistiques de la base de données. |
 | WdbcKillSessionPolicy | Comportement de l’arrêt inconditionnel des workflows sur PostgreSQL. 0 (par défaut) : arrête le processus du workflow sans impact sur la base de données. 1 : arrête le processus et annule la requête (pg_cancel_backend). 2 : arrête le processus et termine la requête (pg_terminate_backend). |
 | XtkSequence_AutoGeneration | S’applique aux schémas personnalisés créés après la définition de cette option, avec autopk=« true » et aucun attribut pkSequence : Campaign génère automatiquement la séquence. |
 
@@ -201,8 +201,8 @@ Ces options s’appliquent à Campaign Interaction, le module de gestion des off
 | Option | Description |
 |---|---|
 | NmsInteraction_UseDaemon | Définissez-la sur 1 pour activer l’écriture asynchrone des propositions, ou sur 0 pour la désactiver. |
-| NmsInteraction_MapWorkflowId | Liste de tous les workflows de synchronisation générés. Option de maintenance de l’instance de pilotage. |
-| NmsExecutionInstanceId | Identifiant de l&#39;instance d&#39;exécution. Disponible sur les instances d&#39;exécution. |
+| NmsInteraction_MapWorkflowId | Liste de tous les workflows de synchronisation générés. Option de maintenance informative de l&#39;instance de pilotage : ne la modifiez pas. |
+| NmsExecutionInstanceId | Identifiant de l&#39;instance d&#39;exécution. Option d&#39;information disponible sur les instances d&#39;exécution : ne la modifiez pas. |
 
 Les options suivantes sont également des options de maintenance de l&#39;instance de pilotage :
 
