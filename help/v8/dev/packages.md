@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '2028'
-ht-degree: 85%
+ht-degree: 84%
 ---
 # Utiliser les packages de données{#data-packages}
 
@@ -263,7 +263,7 @@ Les entités peuvent être ajoutées à une définition de package directement �
 
 1. Sélectionnez **[!UICONTROL Ajout dans une définition de package]**, puis sélectionnez la définition de package dans laquelle vous voulez ajouter l&#39;entité.
 
-1. L&#39;entité est ajoutée dans la définition de package, elle sera exportée avec le package (voir [cette section](#export-packages-from-a-package-definition)).
+1. L&#39;entité est ajoutée à la définition de package et sera exportée avec le package (voir [cette section](#export-packages-from-a-package-definition)).
 
 ### Paramétrer la génération des définitions de packages {#configure-package-definitions-generation}
 

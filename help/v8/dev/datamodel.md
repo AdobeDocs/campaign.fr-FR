@@ -34,7 +34,7 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 90%
@@ -47,7 +47,7 @@ La structure de base du modèle de données Adobe Campaign peut être décrite 
 
 * **Table des destinataires** : le modèle de données repose sur une table principale qui est par défaut la table des destinataires (**nmsRecipient**). Cette table enregistre tous les profils marketing. En savoir plus sur la table des destinataires dans [cette section](#ootb-profiles).
 
-* **Table de diffusion** : cette table stocke un enregistrement par action de diffusion. Généralement, il s&#39;agit de la table de diffusion (**NmsDelivery**). Un enregistrement de cette table représente une action de diffusion ou un modèle de diffusion. Il contient tous les paramètres nécessaires à l’exécution des diffusions, tels que la cible, le contenu, etc. Chaque enregistrement est mis à jour plusieurs fois pour refléter la progression de la diffusion
+* **Table de diffusion** : cette table stocke un enregistrement par action de diffusion. Généralement, il s&#39;agit de la table de diffusion (**NmsDelivery**). Un enregistrement de cette table représente une action de diffusion ou un modèle de diffusion. Il contient tous les paramètres nécessaires à l’exécution des diffusions, tels que la cible, le contenu, etc. Chaque enregistrement est mis à jour plusieurs fois pour refléter la progression de la diffusion.
 
 * **Tables de logs** : ces tables stockent tous les logs associés à l&#39;exécution des campagnes.
 

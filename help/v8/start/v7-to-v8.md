@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Security
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '731'
 ht-degree: 92%
 ---
 # Transition de [!DNL Campaign Classic] v7 vers [!DNL Campaign] v8{#gs-matrix}
@@ -86,7 +86,7 @@ Dans son [déploiement Enterprise (FFDA)](../../v8/architecture/enterprise-deplo
 
 Campaign v8 Enterprise présente le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud. Avec cette nouvelle architecture, le déploiement Campaign v8 Enterprise (FFDA) simplifie la gestion des données : aucun index n&#39;est requis sur la base de données cloud. Il vous suffit de créer les tables et de copier les données pour démarrer. La technologie de base de données cloud ne nécessite pas de maintenance spécifique pour garantir le niveau de performances attendu.
 
-Pour en savoir plus sur l’architecture de [!DNL Campaign] v8, consultez [cette page](../../v8/architecture/architecture.md). Test
+Pour en savoir plus sur l’architecture de [!DNL Campaign] v8, consultez [cette page](../../v8/architecture/architecture.md).
 
 
 ## Utiliser votre Adobe ID pour vous connecter à Campaign{#adobe-id}

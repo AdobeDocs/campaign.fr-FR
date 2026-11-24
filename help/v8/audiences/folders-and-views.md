@@ -39,10 +39,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '728'
-ht-degree: 91%
+ht-degree: 89%
 ---
 # Gérer les dossiers et les vues {#folders-and-views}
 
@@ -128,7 +128,7 @@ Dans l&#39;exemple ci-dessous, nous allons créer un dossier afin de n&#39;affic
 
 Par défaut, un nouveau dossier est ajouté en haut de la hiérarchie.
 
-Parcourez l&#39;onglet **Sous-dossiers** des propriétés d&#39;un dossier pour organiser ses sous-dossiers.
+Parcourez l&#39;onglet **Sous-dossiers** des propriétés du dossier pour organiser ses sous-dossiers.
 
 Vous pouvez déplacer les dossiers avec les flèches à droite ou sélectionner l&#39;option **[!UICONTROL Trier les sous-dossiers par ordre alphabétique]** pour les trier automatiquement.
 

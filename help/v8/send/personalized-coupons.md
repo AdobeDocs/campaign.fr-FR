@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '972'
-ht-degree: 98%
+ht-degree: 97%
 ---
 # Coupons personnalisés{#personalized-coupons}
 
@@ -155,7 +155,7 @@ Dans l&#39;exemple ci-dessous, la diffusion est créée à partir de la Page d&#
 
 >[!NOTE]
 >
->Pour obtenir des instructions sur la gestion du manque de coupons pour une diffusion, consultez la section [Gestion des coupons insuffisants](#managing-insufficient-coupons).
+>Pour obtenir des instructions sur la gestion du manque de coupons pour une diffusion, voir [Gérer les coupons insuffisants](#managing-insufficient-coupons).
 
 Pour confirmer que la diffusion a abouti :
 

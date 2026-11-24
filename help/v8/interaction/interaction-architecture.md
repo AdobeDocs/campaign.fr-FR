@@ -25,10 +25,10 @@ level_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 709e38026d74ed707d10fc8109356289dc9f4ac9
 workflow-type: tm+mt
 source-wordcount: '1341'
-ht-degree: 82%
+ht-degree: 81%
 ---
 # Compréhension des environnements et de l&#39;architecture des interactions dans Campaign
 
@@ -68,7 +68,7 @@ Pour être en mesure d&#39;assurer l&#39;évolutivité et d&#39;offrir un servic
 
 ![](assets/interaction_powerbooster_schema.png)
 
-Les instances de pilotage sont dédiées au canal entrant et contiennent la version en ligne du catalogue. Chaque instance d’exécution est indépendante et dédiée à un segment de contact (par exemple, une instance d’exécution par pays). Les appels au moteur d&#39;offre doivent être effectués directement sur l&#39;instance d&#39;exécution (une URL spécifique par instance d&#39;exécution). Étant donné que la synchronisation entre les instances n&#39;est pas automatique, les interactions d&#39;un même contact doivent être envoyées à travers la même instance.
+Les instances d’exécution sont dédiées au canal entrant et contiennent la version en ligne du catalogue. Chaque instance d’exécution est indépendante et dédiée à un segment de contact (par exemple, une instance d’exécution par pays). Les appels au moteur d&#39;offre doivent être effectués directement sur l&#39;instance d&#39;exécution (une URL spécifique par instance d&#39;exécution). Étant donné que la synchronisation entre les instances n&#39;est pas automatique, les interactions d&#39;un même contact doivent être envoyées à travers la même instance.
 
 ### Synchronisation {#synchronization}
 

@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1531'
-ht-degree: 95%
+ht-degree: 92%
 ---
 # Personnaliser vos cubes{#cube-custom}
 
@@ -40,7 +40,7 @@ Utilisez le compartimentage des données pour simplifier l’affichage des donn�
 
 Globalement, trois types de mise en classe sont possibles :
 
-1. En utilisant des plages de valeurs définies manuellement. Par exemple, âge, panier moyen, nombre de diffusions ouvertes, etc.). Voir à ce sujet la section [Définir chaque classe](#defining-each-bin).
+1. En utilisant des plages de valeurs définies manuellement. Par exemple, l’âge, le panier moyen, le nombre de diffusions ouvertes, etc. Pour plus d&#39;informations, consultez la section [Définir chaque classe](#defining-each-bin).
 1. Dynamiquement, en fonction des valeurs d&#39;une énumération [&#128279;](../config/enumerations.md) : affichez uniquement les valeurs contenues dans l&#39;énumération, toutes les autres valeurs sont regroupées dans &#39;Autres&#39;. Pour plus d&#39;informations, consultez la section [Gérer dynamiquement les classes](#dynamically-managing-bins).
 1. En utilisant des plages de valeurs, toutes les autres étant regroupées. Par exemple, les 18 à 25 ans, les 26 à 59 ans, et les autres. Pour plus d&#39;informations, consultez la section [Créer des plages de valeurs](#creating-value-ranges).
 
@@ -139,7 +139,7 @@ Pour en savoir plus sur les énumérations, consultez [cette page](../../v8/conf
 
 Vous pouvez précalculer les données les plus volumineuses dans des agrégats.
 
-Les agrégats sont utiles lorsque vous manipulez de grands volumes de données. Ils sont mis à jour automatiquement selon les paramètres définis dans la zone de workflow dédiée, afin d’intégrer les dernières données collectées dans les indicateurs.
+Les agrégats sont utiles lorsque vous manipulez de grands volumes de données. Elles sont mises à jour automatiquement en fonction des paramètres définis dans la zone de workflow dédiée, afin d’intégrer dans les indicateurs les données collectées le plus récemment
 
 Les agrégats sont définis au niveau du cube, dans l&#39;onglet correspondant.
 

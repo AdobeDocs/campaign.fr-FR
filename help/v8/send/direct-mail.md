@@ -27,7 +27,7 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 86%
@@ -133,7 +133,7 @@ Deux modes sont proposés :
 
 ## Lancement de la diffusion{#start-delivery}
 
-Une fois le fichier d&#39;extraction validé, cliquez sur **Confirmer l&#39;envoi**. Un message de confirmation vous permet de lancer la diffusion.
+Une fois le fichier d’extraction validé, cliquez sur **Confirmer la diffusion**. Un message de confirmation permet de lancer la diffusion.
 
 La confirmation démarre l&#39;extraction des données dans le fichier spécifié.
 

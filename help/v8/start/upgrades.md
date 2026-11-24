@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1780'
-ht-degree: 25%
+ht-degree: 24%
 ---
 # Versions, mises à niveau et sécurité {#upgrades}
 
@@ -63,7 +63,7 @@ Voici les mises à niveau possibles :
 
 Des informations détaillées sur chaque nouvelle version sont disponibles dans les [notes de mise à jour](release-notes.md). Les correctifs liés à la sécurité sont décrits dans les notes de mise à jour de chaque version. Pour plus d&#39;informations sur les notifications de sécurité, consultez [Rester informé](#security-staying-informed).
 
-Pour garantir une configuration stable, Adobe recommande d’installer **la même version** sur tous vos serveurs Campaign. En outre, sauf mention contraire dans les [notes de mise à jour](release-notes.md), la console cliente doit utiliser **la même version** que l’instance de serveur. Découvrez comment mettre à niveau votre console cliente [sur cette page](../start/connect.md#upgrade-ac-console).
+Pour garantir une configuration stable, Adobe recommande d’installer **la même version** sur tous vos serveurs Campaign. En outre, sauf mention contraire dans les [notes de mise à jour](release-notes.md), la console cliente doit se trouver sur **la même version** que l’instance de serveur. Découvrez comment mettre à niveau votre console cliente [sur cette page](../start/connect.md#upgrade-ac-console).
 
 ### Correctifs {#hotflixes}
 

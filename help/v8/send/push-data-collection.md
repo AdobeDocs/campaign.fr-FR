@@ -23,10 +23,10 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 85%
+source-wordcount: '1553'
+ht-degree: 83%
 ---
 # Configuration révisée des notifications push {#push-notifications-config}
 
@@ -158,7 +158,7 @@ Pour créer une application pour les appareils iOS, procédez comme suit :
 
 1. Accédez à l’onglet **[!UICONTROL Paramètres d’abonnement]** pour définir le mapping avec une extension du schéma **[!UICONTROL Applications abonnées (nms:appsubscriptionRcp)]**.
 
-1. Accédez à l’onglet **[!UICONTROL Sons]** pour définir un son à lire. Cliquez sur **[!UICONTROL Ajouter]** et renseignez le champ **[!UICONTROL Nom interne]**. Il doit contenir le nom du fichier incorporé dans l’application ou le nom du son système.
+1. Accédez à l’onglet **[!UICONTROL Sons]** pour définir un son à lire. Cliquez sur **[!UICONTROL Ajouter]** et renseignez le champ **[!UICONTROL Nom interne]** qui doit contenir le nom du fichier incorporé dans l&#39;application ou le nom du son système.
 
 1. Cliquez sur **[!UICONTROL Suivant]** pour passer à la configuration de l’application de développement.
 

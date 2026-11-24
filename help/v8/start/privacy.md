@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 89%
+ht-degree: 88%
 ---
 # Gestion des demandes d’accès à des informations personnelles dans Campaign {#privacy}
 
@@ -144,7 +144,7 @@ Le modèle d’un nom de fichier est le suivant : `<InstanceName>-<NamespaceId>
 
 Lors de l’exécution d’une demande d’accès ou de suppression de données personnelles, Adobe Campaign recherche toutes les données du titulaire des données en fonction de la **[!UICONTROL Valeur de réconciliation]** dans toutes les tables ayant un lien avec la table du destinataire (type own).
 
-Voici la liste des tables intégrées qui sont prises en compte lors de l’exécution des demandes d’accès à des informations personnelles :
+La liste des tables intégrées prises en compte lors de l&#39;exécution des demandes d&#39;accès à des informations personnelles est la suivante :
 
 * Destinataires (recipient)
 * Log de diffusion des destinataires (broadLogRcp)

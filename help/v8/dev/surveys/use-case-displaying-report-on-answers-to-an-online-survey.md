@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 94%
+ht-degree: 90%
 ---
 # Cas d’utilisation : affichage d’un rapport sur les réponses à un questionnaire en ligne{#use-case-displaying-report-on-answers-to-an-online-survey}
 
@@ -45,7 +45,7 @@ ht-degree: 94%
 
 Les réponses à des questionnaires Adobe Campaign peuvent être collectées et analysées dans des rapports dédiés.
 
-Dans l&#39;exemple ci-dessous, nous allons collecter les réponses à un questionnaire en ligne et les afficher dans un rapport sous la forme d&#39;un tableau croisé dynamique.
+Dans l&#39;exemple suivant, nous allons collecter les réponses à un questionnaire en ligne et les afficher dans un tableau croisé dynamique.
 
 Les étapes sont les suivantes :
 

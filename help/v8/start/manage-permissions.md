@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1850'
-ht-degree: 90%
+ht-degree: 89%
 ---
 # Gérer les autorisations utilisateur{#manage-permissions}
 
@@ -239,7 +239,7 @@ L’appartenance à des groupes d’opérateurs peut accorder ou restreindre les
 
 Les droits nommés par défaut dans Adobe Campaign sont les suivants :
 
-* **[!UICONTROL ADMINISTRATION]** : les opérateurs disposant du droit **[!UICONTROL ADMINISTRATION]** ont un accès total à l’instance. Les utilisateurs administrateurs peuvent exécuter, créer, modifier ou supprimer tout objet tel qu’un workflow, une diffusion, des scripts, etc. **Remarque :** les profils de produit dans le Adobe Admin Console contenant le mot « admin » accordent l’accès au Panneau de Contrôle Campaign.
+* **[!UICONTROL ADMINISTRATION]** : les opérateurs disposant du droit **[!UICONTROL ADMINISTRATION]** disposent d&#39;un accès complet sur l&#39;instance. Les utilisateurs administrateurs peuvent exécuter, créer, modifier ou supprimer tout objet tel qu’un workflow, une diffusion, des scripts, etc. **Remarque :** les profils de produit dans le Adobe Admin Console contenant le mot « admin » accordent l’accès au Panneau de Contrôle Campaign.
 
 * **[!UICONTROL ADMINISTRATION DES VALIDATIONS]** : vous pouvez définir plusieurs étapes de validation dans les workflows et les diffusions pour vous assurer que l’état actuel a été validé par un opérateur ou un groupe affecté. Les utilisateurs disposant du droit **[!UICONTROL ADMINISTRATION DES VALIDATIONS]** peuvent définir les étapes de validation et affecter un opérateur ou un groupe d’opérateurs chargé de valider ces étapes. **Remarque :** les profils de produit contenant le mot « admin » (par exemple, « approbation admin ») accordent l’accès au Panneau de Contrôle Campaign.
 

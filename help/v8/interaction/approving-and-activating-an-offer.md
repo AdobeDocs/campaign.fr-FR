@@ -21,10 +21,10 @@ feature_v2:
     internal-label: Interaction
   - id: ea08db70-4682-59a2-9408-9aedd9548e07
     internal-label: Offers
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 100%
+source-wordcount: '664'
+ht-degree: 98%
 ---
 # Valider et activer une offre{#approving-and-activating-an-offer}
 
@@ -50,7 +50,7 @@ Vous pouvez ainsi choisir de valider le contenu d&#39;une offre sur certains emp
 
 Pour valider le contenu d&#39;une offre, procédez comme suit :
 
-1. Cliquez sur le bouton **[!UICONTROL Validation]** et sélectionnez **[!UICONTROL Valider le contenu]** dans le menu contextuel.
+1. Cliquez sur le bouton **[!UICONTROL Approbation]** et sélectionnez **[!UICONTROL Approuver le contenu]** dans la fenêtre contextuelle.
 
    ![](assets/offer_validate_002.png)
 

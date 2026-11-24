@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1287'
-ht-degree: 94%
+ht-degree: 93%
 ---
 # Concevoir une diffusion de notification push iOS enrichie {#rich-push}
 
@@ -153,7 +153,7 @@ Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser
 
    ![](assets/rich_push_ios_timer_1.png)
 
-1. Pour composer votre message, saisissez votre texte dans les champs **[!UICONTROL Titre]**, **[!UICONTROL Titre étendu]**, **[!UICONTROL Message]** et **[!UICONTROL Message étendu]**.
+1. Pour composer votre message, saisissez le texte dans les champs **[!UICONTROL Titre]**, **[!UICONTROL Titre développé]**, **[!UICONTROL Message]** et **[!UICONTROL Message développé]**.
 
    Le texte **[!UICONTROL Message]** s’affiche dans la vue réduite, alors que le **[!UICONTROL Message étendu]** s’affiche lorsque la notification est développée.
 

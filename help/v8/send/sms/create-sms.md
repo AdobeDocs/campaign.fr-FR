@@ -26,10 +26,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 100%
+source-wordcount: '178'
+ht-degree: 84%
 ---
 # Créer votre première diffusion SMS {#sms-delivery}
 
@@ -46,7 +46,7 @@ Pour créer une diffusion SMS, procédez comme suit :
 * For mid-sourcing infrastructure,
 -->
 
-1. Renommez votre diffusion dans le champ **[!UICONTROL Libellé]** et ajoutez des informations dans le champ **[!UICONTROL Code diffusion]** et la liste **[!UICONTROL Nature]** si nécessaire pour le suivi. Vous pouvez également ajouter une **[!UICONTROL description]** à votre diffusion.
+1. Renommez votre diffusion dans le champ **[!UICONTROL Libellé]** et ajoutez des informations dans le champ **[!UICONTROL Code de diffusion]** et dans la liste **[!UICONTROL Nature]** si nécessaire pour le suivi. Vous pouvez également ajouter une **[!UICONTROL description]** à votre diffusion.
 
 1. Cliquez sur le bouton **[!UICONTROL Continuer]**. Désormais, vous disposez de tous les paramètres de votre modèle dans votre diffusion.
 

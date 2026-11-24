@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '851'
-ht-degree: 99%
+ht-degree: 96%
 ---
 # Réplication des données {#wf-data-replication}
 
@@ -87,7 +87,7 @@ Les workflows techniques assurant la réplication des données sont les suivants
 
 Si nécessaire, vous pouvez lancer manuellement la synchronisation des données. Pour ce faire, cliquez avec le bouton droit de la souris sur l’activité **Planificateur** et sélectionnez **Traitement anticipé de la (des) tâche(s)**.
 
-Outre le workflow technique intégré **Répliquer les tables de référence**, vous pouvez forcer la réplication des données dans vos workflows à l’aide de l’une de ces méthodes.
+Outre le workflow technique intégré **Répliquer les tables de référence**, vous pouvez forcer la réplication des données dans vos workflows à l’aide de l’une des méthodes suivantes :
 
 +++Comment forcer la réplication des données
 

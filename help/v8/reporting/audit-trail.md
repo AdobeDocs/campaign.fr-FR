@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 96%
+source-wordcount: '662'
+ht-degree: 92%
 ---
 # Journal d’audit{#audit-trail}
 
@@ -58,9 +58,9 @@ La fonctionnalité **[!UICONTROL Journal d’audit]** d’Adobe Campaign offre 
   * Pause
   * Arrêter
   * Redémarrer
-  * Nettoyer qui correspond à l’action Purge de l’historique
-  * Simuler qui correspond à l’action Démarrer en mode simulation
-  * Réveiller qui correspond à l’action Traitement anticipé des tâches en attente
+  * Nettoyage correspondant à l’historique de purge de l’action
+  * Simuler qui est égal à l’action Démarrer en mode simulation
+  * Réveil égal à action Exécuter les tâches en attente maintenant
   * Arrêt inconditionnel
 
   Pour plus d’informations sur les workflows, consultez [cette page](../../automation/workflow/about-workflows.md).

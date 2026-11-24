@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 709e38026d74ed707d10fc8109356289dc9f4ac9
 workflow-type: tm+mt
 source-wordcount: '2210'
-ht-degree: 96%
+ht-degree: 95%
 ---
 # Offres sur canal entrant{#offers-on-an-inbound-channel}
 
@@ -415,7 +415,7 @@ Pour paramétrer les emplacements des offres dans la page HTML du site web, proc
 
    ![](assets/offer_inbound_fallback_example_049.png)
 
-   L&#39;URL contient le nom interne **OE18** de l&#39;environnement identifié.
+   L’URL contient **EnvNeobankIdnRecip**, le nom interne de l’environnement identifié.
 
 Lors de l&#39;ouverture de la page web, le script permet d&#39;appeler le moteur d&#39;Interaction afin que s&#39;affiche le contenu des offres dans les emplacements prévus à cet effet sur la page web. En un seul appel au serveur Adobe Campaign, le moteur détermine l’environnement, l’emplacement et les catégories à sélectionner.
 

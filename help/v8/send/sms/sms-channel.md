@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1354'
-ht-degree: 90%
+ht-degree: 87%
 ---
 # Caractéristiques du canal SMS {#sms-channel}
 
@@ -92,7 +92,7 @@ La taille maximale d&#39;un message dépend de son encodage. Ce tableau récapit
 
 ## SMS en plusieurs parties (SMS long) {#multipart-sms}
 
-Les SMS en plusieurs parties, ou SMS longs, sont des SMS envoyés en plusieurs parties. En raison de limitations techniques du protocole de réseau mobile, un SMS ne peut pas dépasser 140 octets (voir la section Encodage du texte SMS ci-dessous pour connaître le nombre de caractères pouvant tenir dans un SMS). Ainsi, les messages plus longs doivent être fractionnés.
+Les SMS en plusieurs parties, ou SMS longs, sont des SMS envoyés en plusieurs parties. En raison des limitations techniques du protocole de réseau mobile, un SMS ne peut pas dépasser 140 octets (voir la section Encodage du texte SMS ci-dessous pour connaître le nombre de caractères autorisés dans un SMS). Les messages plus longs doivent donc être fractionnés.
 
 Chaque partie d&#39;un long message est un SMS individuel. Ces pièces se déplacent indépendamment sur le réseau et sont assemblées par le téléphone mobile récepteur. Afin de gérer harmonieusement les reprises et les problèmes de connectivité, Campaign envoie les parties dans l’ordre inverse et ne demande un SR que sur la première partie du message (celle qui est envoyée en dernier). Comme le téléphone mobile n’affiche un message qu’à la réception de sa première partie, les reprises sur d’autres parties ne produisent pas de doublons sur le téléphone mobile.
 

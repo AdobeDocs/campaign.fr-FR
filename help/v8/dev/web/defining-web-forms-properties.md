@@ -26,7 +26,7 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1446'
 ht-degree: 96%
@@ -111,7 +111,7 @@ Dans l’onglet **[!UICONTROL Rendu]** des **[!UICONTROL Propriétés]** de votr
 
 ![](assets/logo_glass.png)
 
-Dans la nouvelle fenêtre, cliquez sur le lien **[!UICONTROL Mise en page]** :
+Dans la nouvelle fenêtre, cliquez sur le lien **[!UICONTROL Mise en page]** :
 
 ![](assets/logo_pagelayout.png)
 

@@ -42,10 +42,10 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1027'
-ht-degree: 85%
+ht-degree: 84%
 ---
 # Créer et gérer des profils de test {#create-test-profiles}
 
@@ -132,7 +132,7 @@ Cliquez sur le lien **[!UICONTROL Paramètres avancés de la campagne...]**, pui
 
 ## Adresses de contrôle et tableau personnalisé {#using-an-external-recipient-table}
 
-Si le tableau des diffusions est un tableau externe, vous devrez effectuer des configurations supplémentaires. Le schéma **[!UICONTROL nms:seedmember]** doit être étendu. Un onglet est ajouté aux adresses de contrôle afin de définir les champs adéquats.
+Si le tableau des diffusions est un tableau externe, vous devrez effectuer des configurations supplémentaires. Le schéma **[!UICONTROL nms:seedmember]** doit être étendu. Un onglet est ajouté aux adresses de contrôle pour définir les champs adéquats.
 
 Dans ce cas, pour ajouter les adresses de contrôle dans la diffusion, renseignez directement les champs adéquats dans l’onglet correspondant ou importez des modèles d’adresses.
 

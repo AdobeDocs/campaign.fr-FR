@@ -22,16 +22,16 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 92%
+source-wordcount: '437'
+ht-degree: 87%
 ---
 # Interactions anonymes {#anonymous-interactions}
 
 ## Environnement pour les interactions anonymes {#environment-for-anonymous-interactions}
 
-Par défaut, le module **Interaction** de Campaign comprend un environnement préconfiguré pour cibler la table des destinataires intégrée (offres identifiées). Si vous devez cibler une autre table, par exemple, une table des visiteurs pour les offres anonymes ou une table des destinataires personnalisée, vous devez utiliser l&#39;assistant de mapping de ciblage pour créer l&#39;environnement. [En savoir plus sur les environnements](interaction-env.md).
+Par défaut, le module Campaign **Interaction** est fourni avec un environnement préconfiguré pour cibler la table des destinataires intégrée (offres identifiées). Si vous devez cibler une autre table, par exemple, une table des visiteurs pour les offres anonymes ou une table des destinataires personnalisée, vous devez utiliser l&#39;assistant de mapping de ciblage pour créer l&#39;environnement. [En savoir plus sur les environnements](interaction-env.md).
 
 Lorsque vous créez l&#39;environnement anonyme via l&#39;assistant de création de mapping, la case **[!UICONTROL Environnement dédié aux interactions anonymes entrantes]** est automatiquement cochée dans l&#39;onglet **[!UICONTROL Général]** de l&#39;environnement.
 
