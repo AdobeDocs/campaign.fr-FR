@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 709e38026d74ed707d10fc8109356289dc9f4ac9
 workflow-type: tm+mt
 source-wordcount: '1639'
-ht-degree: 93%
+ht-degree: 91%
 ---
 # Gestion des interactions en temps réel
 
@@ -44,7 +44,7 @@ Interaction vous permet de créer et de gérer un catalogue d’offres, et de co
 
 ![](assets/interaction-cycle.png)
 
-Tout d’abord, un contact se produit entre un client et une entreprise par le biais d’un canal de communication : il peut s’agir d’un site web (interaction sortante), d’un e-mail, d’un SMS, d’une notification push (interactions entrantes). [En savoir plus](#interaction-types)
+Tout d’abord, un contact se produit entre un client et une entreprise par le biais d’un canal de communication : il peut s’agir d’un site web (interaction entrante), d’un e-mail, d’un SMS, d’une notification push (interactions sortantes). [En savoir plus](#interaction-types)
 
 Ce contact génère un appel au moteur d’offres. (1)
 
