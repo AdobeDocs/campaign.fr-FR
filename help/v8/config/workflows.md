@@ -160,4 +160,4 @@ Découvrez comment intégrer Campaign à d&#39;autres solutions dans [Connexion 
 
 ## Cas d’utilisation complets de workflow{#end-to-end-uc}
 
-Découvrez les cas pratiques utilisant les fonctionnalités des workflows Campaign [ dans cette section](../../automation/workflow/workflow-use-cases.md).
+Découvrez les cas pratiques utilisant les fonctionnalités des workflows Campaign [&#x200B; dans cette section](../../automation/workflow/workflow-use-cases.md).
