@@ -25,7 +25,7 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 86%
@@ -54,7 +54,7 @@ Dans ce cas, toutes les ressources des tables **Transaction**, **TransactionDeta
 
 Exemple de requête GET pour accéder à la ressource étendue profileAndServicesExt.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/\
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -64,7 +64,7 @@ Exemple de requête GET pour accéder à la ressource étendue profileAndService
 
 Elle renvoie la liste de toutes les ressources personnalisées liées. Vous pouvez ensuite utiliser les URL des ressources pour effectuer toute tâche d’API décrite dans cette documentation.
 
-```
+```json
 {
 "apiName": "resourceType",
 "cusProduct": {

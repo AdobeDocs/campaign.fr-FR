@@ -21,7 +21,7 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 93%
@@ -101,19 +101,19 @@ Pour chaque formulaire, les réponses fournies peuvent être réutilisées dans 
 
 * Pour le contenu stocké dans un champ de la base :
 
-  ```
+  ```html
   <%=ctx.recipient.@field name%
   ```
 
 * Pour le contenu stocké dans une variable locale :
 
-  ```
+  ```html
   <%= ctx.vars.variable name %
   ```
 
 * Pour le contenu stocké dans un champ de texte HTML :
 
-  ```
+  ```html
   <%== HTML field name %
   ```
 
@@ -153,4 +153,4 @@ Vous pouvez sélectionner un dossier de recherche pour la réconciliation et le 
 >
 >Les opérations possibles sont : **[!UICONTROL Réconciliation seule]**,**[!UICONTROL Mise à jour ou insertion]**, **[!UICONTROL Insertion]**, **[!UICONTROL Mise à jour]**, **[!UICONTROL Suppression]**.\
 >Le dossier par défaut de l&#39;opérateur correspond au premier dossier dans lequel l&#39;opérateur a le droit d&#39;écrire.\
->Consultez [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
+>Consultez [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.

@@ -19,7 +19,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 100%
@@ -30,7 +30,7 @@ ht-degree: 100%
 
 Exécutez une requête GET pour récupérer le profil.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -40,7 +40,7 @@ Exécutez une requête GET pour récupérer le profil.
 
 Elle renvoie l’URL des abonnements du profil.
 
-```
+```json
   {
     ...
     "postalAddress":...,
@@ -54,7 +54,7 @@ Elle renvoie l’URL des abonnements du profil.
 
 Exécutez une requête POST sur l’URL des abonnements avec la clé primaire du service dans la payload.
 
-```
+```bash
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY>/subscriptions \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -66,7 +66,7 @@ Exécutez une requête POST sur l’URL des abonnements avec la clé primaire du
 
 Elle renvoie le profil mis à jour avec le nœud de service complété.
 
-```
+```json
 {
   ...
   "service": {
@@ -83,7 +83,7 @@ Elle renvoie le profil mis à jour avec le nœud de service complété.
 
 Exécutez une requête GET pour récupérer le service.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -93,7 +93,7 @@ Exécutez une requête GET pour récupérer le service.
 
 Elle renvoie l’URL des abonnements du service.
 
-```
+```json
   {
     ...
     "messageType": "email",
@@ -107,7 +107,7 @@ Elle renvoie l’URL des abonnements du service.
 
 Exécutez une requête POST sur l’URL des abonnements avec la clé primaire du profil souhaité dans la payload.
 
-```
+```bash
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign//profileAndServices/service/<PKEY>/subscriptions/ \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -119,7 +119,7 @@ Exécutez une requête POST sur l’URL des abonnements avec la clé primaire du
 
 Elle renvoie le service mis à jour avec le nœud de abonnés complété.
 
-```
+```json
 {
   ...
   "service": ...,

@@ -24,7 +24,7 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 709e38026d74ed707d10fc8109356289dc9f4ac9
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '2210'
 ht-degree: 95%
@@ -81,7 +81,7 @@ Vous obtenez une arborescence contenant votre nouvel environnement :
 
 1. Éditez la fonction de rendu HTML, par exemple de la manière suivante :
 
-   ```
+   ```javascript
    function (imageUrl, targetUrl, shortContent, htmlSource){
          var html = "<p><b>" + shortContent + "</b></p>";
          html += "<p>" + htmlSource + "</p>";
@@ -149,7 +149,7 @@ Vous obtenez une arborescence contenant votre nouvel environnement :
 
 Pour que les offres que vous venez de paramétrer apparaissent dans le site web, insérez le code JavaScript dans la page HTML de votre site afin d&#39;appeler le moteur d&#39;Interaction (voir à ce sujet la section [À propos des canaux entrants](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (documentation de Campaign v8)).
 
-1. Accédez à votre page HTML et insérez un attribut @id dont la valeur correspond au nom interne de l&#39;emplacement anonyme créé précédemment (voir [Créer des emplacements anonymes &#x200B;](#creating-anonymous-offer-spaces)), précédé de **i_**.
+1. Accédez à votre page HTML et insérez un attribut @id dont la valeur correspond au nom interne de l&#39;emplacement anonyme créé précédemment (voir [Créer des emplacements anonymes ](#creating-anonymous-offer-spaces)), précédé de **i_**.
 
    ![](assets/offer_inbound_anonymous_example_019.png)
 

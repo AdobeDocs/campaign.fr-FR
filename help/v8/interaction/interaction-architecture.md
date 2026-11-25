@@ -25,7 +25,7 @@ level_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 709e38026d74ed707d10fc8109356289dc9f4ac9
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 81%
@@ -120,7 +120,7 @@ Sur les instances de pilotage :
    * Cochez le type d&#39;application utilisée : **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]**, ou les deux.
    * Saisissez le compte FDA utilisé. Un profil d’opérateur ou d’opératrice doit être créé sur les instances d’exécution et doit disposer des droits de lecture et d’écriture suivants sur la base de données de l’instance concernée :
 
-     ```
+     ```sql
      grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
      grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
      ```
@@ -180,7 +180,7 @@ Deux méthodes sont disponibles :
 
 **Table de travail** (recommandée)
 
-```
+```sql
 CREATE TABLE NmsPropositionRcp_tmp AS SELECT * FROM nmspropositionrcp WHERE 0=1;
 ALTER TABLE nmspropositionrcp_tmp
   ALTER COLUMN ipropositionid TYPE bigint,
@@ -198,7 +198,7 @@ ALTER TABLE nmspropositionrcp_tmp RENAME TO nmspropositionrcp;
 
 **Alter Table**
 
-```
+```sql
 ALTER TABLE nmspropositionrcp
   ALTER COLUMN ipropositionid TYPE bigint,
   ALTER COLUMN iinteractionid TYPE bigint;

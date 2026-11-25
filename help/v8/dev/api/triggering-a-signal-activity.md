@@ -22,7 +22,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 84%
@@ -47,7 +47,7 @@ Pour déclencher un workflow, procédez comme suit :
 
 Si vous souhaitez appeler le processus avec des paramètres, ajoutez-les à la payload avec l’attribut **&quot;parameters&quot;**. La syntaxe se compose du nom du paramètre suivi de sa valeur (les types suivants sont pris en charge : **string**, **number**, **boolean** et **date/time).**
 
-```
+```bash
   -X POST <TRIGGER_URL>
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
   -H 'Cache-Control: no-cache' \
@@ -76,7 +76,7 @@ Si vous souhaitez appeler le processus avec des paramètres, ajoutez-les à la p
 
 Exécutez une requête GET sur le workflow.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/workflow/execution/<workflowID> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -86,7 +86,7 @@ Exécutez une requête GET sur le workflow.
 
 Elle renvoie l’activité du signal de workflow et l’URL de déclenchement associée.
 
-```
+```json
 {
 "PKey": "<PKEY>",
 "activities": {
@@ -105,7 +105,7 @@ Elle renvoie l’activité du signal de workflow et l’URL de déclenchement as
 
 Pour déclencher une activité de signal, exécutez une requête POST sur l’URL de déclenchement avec la « source ». Ajoutez les attributs « parameters » si vous souhaitez appeler le workflow avec des paramètres.
 
-```
+```bash
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/workflow/execution/<PKEY>/activities/activity/<PKEY>/trigger \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -118,7 +118,7 @@ Pour déclencher une activité de signal, exécutez une requête POST sur l’UR
 -d    "audience":"audience",
 -d    "email":"anna.varney@mail.com",
 -d    "template":"05",
--d    "contentURL":"http://www.adobe.com/fr",
+-d    "contentURL":"http://www.adobe.com",
 -d    "test":"true",
 -d    "segmentCode":"my segment",
 -d    "attribute":"2019-04-03 08:17:19.100Z"}
@@ -129,7 +129,7 @@ Pour déclencher une activité de signal, exécutez une requête POST sur l’UR
 
 Si l’un des paramètres n’est pas déclaré dans l’activité Signal externe, la requête POST renvoie l’erreur ci-dessous, en indiquant le paramètre manquant.
 
-```
+```text
 RST-360011 An error has occurred - please contact your administrator.
 'contentURL' parameter isn't defined in signal activity.
 XTK-170006 Unable to parse expression 'HandleTrigger(@name, $(source), $({parameters}))'.

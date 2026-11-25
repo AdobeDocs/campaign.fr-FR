@@ -40,7 +40,7 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 96%
@@ -93,7 +93,7 @@ Outre le workflow technique intégré **Répliquer les tables de référence**, 
 
 * Ajoutez une activité **Code JavaScript** spécifique avec le code suivant :
 
-  ```
+  ```javascript
   nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
   ```
 
@@ -101,7 +101,7 @@ Outre le workflow technique intégré **Répliquer les tables de référence**, 
 
 * Ajoutez une activité **nlmodule** spécifique avec la commande suivante :
 
-  ```
+  ```bash
   nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
   ```
 
@@ -121,7 +121,7 @@ Les API permettent la réplication des données personnalisées et prêtes à l�
 
 Exemple :
 
-```
+```javascript
 var dataSource = "nms:extAccount:ffda";
 var xml = xtk.builder.CopyXxlData(
     <params dataSource={dataSource} policy="xs">
@@ -147,6 +147,6 @@ Chaque file d’attente est gérée par un workflow technique, qui gère la rép
 
 Cette vidéo présente les concepts clés concernant les bases de données utilisées par Adobe Campaign v8, les raisons de la réplication des données, les données concernées par cette réplication et le fonctionnement du processus de réplication.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416865?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
 D’autres tutoriels sur la console cliente Campaign v8 sont disponibles [ici](https://experienceleague.adobe.com/fr/docs/campaign-learn/tutorials/overview).

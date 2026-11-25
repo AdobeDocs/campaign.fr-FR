@@ -35,7 +35,7 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '1059'
 ht-degree: 1%
@@ -98,7 +98,7 @@ Certains champs de la base de données sont supprimés lors de la migration. Lor
 
 Lors de l’utilisation du format de corps de requête suivant, avec « VehicleOwner » représentant le lien vers « nms:recipient » :
 
-```
+```json
 {
     "vehicleNumber": "20009",
     "vehicleName": "Model E",

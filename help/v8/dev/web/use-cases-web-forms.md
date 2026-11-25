@@ -25,7 +25,7 @@ subfeature_v2:
     internal-label: Landing pages
   - id: e739ee2b-6228-412e-878f-45de0791417d
     internal-label: Use cases
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 89%
@@ -45,7 +45,7 @@ Le scénario mis en oeuvre dans cet exemple est le suivant :
 
 ### Etape 1 - Créer les services d’information {#step-1---creating-information-services}
 
-1. Créez le service d’inscription à la newsletter que vous souhaitez proposer à vos personnes destinataires. Pour plus d’informations sur la création d’une newsletter, consultez [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}.
+1. Créez le service d’inscription à la newsletter que vous souhaitez proposer à vos personnes destinataires. Pour plus d’informations sur la création d’une newsletter, consultez [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
@@ -123,7 +123,7 @@ Pour ce faire, procédez comme suit :
 
    La première activité **[!UICONTROL Script]** ajoutera des destinataires à la newsletter jusqu&#39;à ce qu&#39;ils aient confirmé leur inscription. Son contenu doit être le suivant :
 
-   ```
+   ```javascript
    ctx.recipient.@blackList=1
    ```
 
@@ -131,7 +131,7 @@ Pour ce faire, procédez comme suit :
 
    La deuxième activité **[!UICONTROL Script]** autorise l&#39;envoi de diffusions aux utilisateurs et les abonne à la newsletter. Les deux dernières lignes du script vont vous permettre de transférer vos destinataires du dossier temporaire vers un autre dossier et d&#39;être réconciliés avec les profils existants dès qu&#39;ils auront confirmé l&#39;abonnement.
 
-   ```
+   ```javascript
    ctx.recipient.@blackList=0
    nms.subscription.Subscribe("INTERNAL_NAME_OF_THE_NEWSLETTER", ctx.recipient, false)
    ctx.recipient.folder = <folder name="nmsRootRecipient"/>

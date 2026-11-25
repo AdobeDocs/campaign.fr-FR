@@ -25,7 +25,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 48%
@@ -45,7 +45,7 @@ Vous pouvez ajouter des instructions de pré-traitement spécifiques pour effect
 
 Par exemple :
 
-```
+```html
 <%@ value object="myObject" xpath="@myField" %>
 ```
 
@@ -71,7 +71,7 @@ Où :
 
 Lorsque la page à télécharger est la même pour tous les destinataires, il est recommandé d’utiliser les méthodes suivantes :
 
-```
+```html
 <%@ include url="http://mynewsletter.com" %>
 ```
 
@@ -81,7 +81,7 @@ Dans ce cas, la page est téléchargée pendant l’analyse, avant la détection
 
 Après avoir traité les instructions `<%@`, l’URL à suivre doit présenter la syntaxe suivante :
 
-```
+```xml
 <a href="http://myurl.com/a.php?param1=aaa&param2=<%=escapeUrl(recipient.xxx)%>&param3=<%=escapeUrl(recipient.xxx)%>">
 ```
 
@@ -95,7 +95,7 @@ Pour garantir le suivi correct des URL personnalisées, vous devez utiliser la f
 
 **Exemple:**
 
-```
+```xml
 <a href="http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>">Click here</a>
 ```
 
@@ -107,7 +107,7 @@ L&#39;instruction `<%@ foreach %>` vous permet d&#39;effectuer une itération su
 
 ### Syntaxe
 
-```
+```html
 <%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %>
   <!-- Content to repeat -->
 <%@ end %>
@@ -126,7 +126,7 @@ Dans les propriétés/personnalisation de la diffusion, chargez un tableau d’a
 
 Vous pouvez afficher des liens vers ces articles avec un suivi individuel :
 
-```
+```html
 <%@ foreach object="articleList" item="article" %>
   <a href="http://example.com/article.jsp?id=<%@ value object="article" xpath="@id" %>">
     <%@ value object="article" xpath="@title" %>

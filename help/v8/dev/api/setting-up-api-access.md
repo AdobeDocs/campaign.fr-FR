@@ -30,7 +30,7 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 89%
@@ -56,7 +56,7 @@ Pour configurer l’accès aux API d’Adobe Campaign Standard, procédez comm
 
 Pour établir une session d’API Adobe I/O de service à service sécurisée, chaque requête adressée à un service Adobe doit inclure les informations ci-dessous dans l’en-tête d’autorisation.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -81,7 +81,7 @@ Pour établir une session d’API Adobe I/O de service à service sécurisée, c
 
 Lors de l’intégration d’Adobe IO, si l’erreur suivante s’affiche :
 
-```
+```json
 { 
 "code": 502, 
 "message": "Oops. Something went wrong. Check your URI and try again." 

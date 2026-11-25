@@ -19,7 +19,7 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 99%
@@ -28,7 +28,7 @@ ht-degree: 99%
 
 >[!AVAILABILITY]
 >
->Les questionnaires ne sont pas disponibles pour les [déploiements Campaign FFDA](../../architecture/enterprise-deployment.md).
+>Les questionnaires ne sont pas disponibles pour les [déploiements de Campaign FFDA](../../architecture/enterprise-deployment.md).
 
 
 
@@ -106,7 +106,7 @@ Créez votre requête en fonction des profils que vous souhaitez récupérer. Da
 
 Pour chaque formulaire, les réponses fournies peuvent être réutilisées dans les champs ou les libellés. Utilisez la syntaxe suivante pour le contenu stocké dans un champ archivé :
 
-```
+```html
 <%= ctx.webAppLogRcpData.name of the archived field %
 ```
 

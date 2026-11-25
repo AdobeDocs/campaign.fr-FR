@@ -18,7 +18,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 76%
@@ -41,7 +41,7 @@ Le paramètre **_lineCount** permet de limiter le nombre de ressources répertor
 
 Exemple de requête GET pour afficher 1 enregistrement de la ressource de profil.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile?_lineCount=1 \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -51,7 +51,7 @@ Exemple de requête GET pour afficher 1 enregistrement de la ressource de profi
 
 Réponse à la requête, avec le nœud **suivant** pour effectuer la pagination.
 
-```
+```json
 {
     "content": [
         {
@@ -72,7 +72,7 @@ Réponse à la requête, avec le nœud **suivant** pour effectuer la pagination.
 
 Par défaut, le nœud **next** n’est pas disponible lors de l’interaction avec des tables contenant une grande quantité de données. Pour pouvoir effectuer une pagination, vous devez ajouter le paramètre **_forcePagination=true** à votre URL d’appel.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile?_forcePagination=true \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \

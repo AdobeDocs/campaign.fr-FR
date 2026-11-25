@@ -26,7 +26,7 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '1680'
 ht-degree: 98%
@@ -178,17 +178,17 @@ Un fois la traduction externe terminée, vous pouvez importer les fichiers tradu
 
 Les formulaires web sont affichés dans la langue par défaut indiquée dans l’onglet **[!UICONTROL Localisation]** des propriétés de l&#39;application web. Pour changer de langue, vous devez ajouter les caractères suivants à la fin de l’URL (où **xx** est le symbole de la langue) :
 
-```
+```text
 ?lang=xx
 ```
 
 si la langue est le premier ou le seul paramètre de l&#39;URL. Par exemple : **https://myserver/webApp/APP34**
 
-```
+```text
 &lang=xx
 ```
 
-lorsque d&#39;autres paramètres précèdent celui de la langue dans l&#39;URL. Par exemple : **https://myserver/webApp/APP34?status=1&lang=en**
+lorsque d&#39;autres paramètres précèdent celui de la langue dans l&#39;URL. Par exemple : **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 Les langues de traduction et les dictionnaires disponibles par défaut sont répertoriés ci-dessous.
 
@@ -449,7 +449,7 @@ Vous pouvez ajouter les caractères **?lang=es** ou **?lang=de** pour l&#39;affi
 >[!NOTE]
 >
 >Si d&#39;autres paramètres sont déjà utilisés pour cette application web, ajoutez les caractères **&amp;lang=**.\
->Par exemple : **https://myserver/webApp/APP34?status=1&lang=en**
+>Par exemple : **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 ## Configuration avancée de traduction {#advanced-translation-configuration}
 
