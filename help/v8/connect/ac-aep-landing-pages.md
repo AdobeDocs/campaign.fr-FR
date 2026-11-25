@@ -123,7 +123,7 @@ Parcourez les onglets ci-dessous pour découvrir les deux méthodes :
 
 >[!TAB Ajouter des options à l’aide d’une activité de code JavaScript]
 
-Pour configurer automatiquement ces options lors de l’exécution de votre workflow de landing pages, ajoutez une activité de **[!UICONTROL code JavaScript]** à votre workflow avec le code ci-dessous. [Découvrez comment configurer une activité de code JavaScript](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code#JavaScript-code){target="_blank"}.
+Pour configurer automatiquement ces options lors de l’exécution de votre workflow de landing pages, ajoutez une activité de **[!UICONTROL code JavaScript]** à votre workflow avec le code ci-dessous. [Découvrez comment configurer une activité de code JavaScript](https://experienceleague.adobe.com/fr/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code#JavaScript-code){target="_blank"}.
 
 Lors de l’exécution du workflow, les options sont automatiquement créées dans la console Campaign avec les valeurs fournies.
 
