@@ -149,7 +149,7 @@ Vous obtenez une arborescence contenant votre nouvel environnement :
 
 Pour que les offres que vous venez de configurer soient visibles sur le site web, insérez le code JavaScript dans la page HTML de votre site. Ce code appelle le moteur d’interaction. Pour en savoir plus à ce sujet, consultez la section [À propos des canaux entrants](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (documentation de Campaign v8).
 
-1. Accédez à votre page HTML et insérez un attribut @id dont la valeur correspond au nom interne de l&#39;emplacement anonyme créé précédemment (voir [Créer des emplacements anonymes ](#creating-anonymous-offer-spaces)), précédé de **i_**.
+1. Accédez à votre page HTML et insérez un attribut @id dont la valeur correspond au nom interne de l&#39;emplacement anonyme créé précédemment (voir [Créer des emplacements anonymes &#x200B;](#creating-anonymous-offer-spaces)), précédé de **i_**.
 
    ![source de la page HTML avec un div dont l’id est i_SPC3, le nom interne de l’emplacement précédé de i_](assets/offer_inbound_anonymous_example_019.png)
 
