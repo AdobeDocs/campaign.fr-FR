@@ -107,4 +107,4 @@ Pour synchroniser les données entre Adobe Campaign et SFDC, créez un workflow
 
 Pour en savoir plus sur la synchronisation des données, consultez [cette page](crm-data-sync.md).
 
-En savoir plus sur la gestion des énumérations dans la campagne [ sur cette page](../config/enumerations.md).
+En savoir plus sur la gestion des énumérations dans la campagne [&#x200B; sur cette page](../config/enumerations.md).
