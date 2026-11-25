@@ -332,7 +332,7 @@ Indiquez le libellé de la case à cocher et sélectionnez le service d&#39;info
 
 >[!NOTE]
 >
->Les services d&#39;informations sont présentés dans cette [page](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions){target="_blank"}.
+>Les services d&#39;informations sont présentés dans cette [page](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions){target="_blank"}.
 
 L&#39;utilisateur sera abonné au service spécifié s&#39;il coche l&#39;option correspondante.
 

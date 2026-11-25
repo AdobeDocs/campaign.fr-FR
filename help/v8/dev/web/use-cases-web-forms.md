@@ -45,7 +45,7 @@ Le scénario mis en oeuvre dans cet exemple est le suivant :
 
 ### Etape 1 - Créer les services d’information {#step-1---creating-information-services}
 
-1. Créez le service d’inscription à la newsletter que vous souhaitez proposer à vos personnes destinataires. Pour plus d’informations sur la création d’une newsletter, consultez [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}.
+1. Créez le service d’inscription à la newsletter que vous souhaitez proposer à vos personnes destinataires. Pour plus d’informations sur la création d’une newsletter, consultez [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}.
 
    ![Boîte de dialogue Service pour le service Newsletter hebdomadaire avec les champs Libellé, Nom interne, Type d&#39;e-mail et Mode Newsletter.](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 

@@ -103,7 +103,7 @@ Les réponses à un questionnaire peuvent être exportées dans un fichier exter
 
    Pour exporter les données d&#39;un rapport, cliquez sur le bouton **[!UICONTROL Exporter]** et sélectionnez le format d&#39;export.
 
-   L&#39;export des données d&#39;un rapport est présenté dans [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}.
+   L&#39;export des données d&#39;un rapport est présenté dans [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}.
 
 1. Exporter les réponses
 
