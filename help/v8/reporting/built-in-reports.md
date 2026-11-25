@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
     internal-label: Measurement
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 97%
+source-wordcount: '1192'
+ht-degree: 90%
 ---
 # Rapports intégrés d’Adobe Campaign {#ootb-reports}
 
@@ -57,32 +57,32 @@ Pour accéder aux rapports natifs de Campaign :
 
 1. Sélectionnez l&#39;onglet **[!UICONTROL Rapports]** de l&#39;interface Adobe Campaign.
 
-   ![](assets/reporting-access-from-home.png)
+   ![Onglet Rapports mis en surbrillance dans la page d&#39;accueil de Campaign, affichant la liste des rapports globaux des rapports intégrés.](assets/reporting-access-from-home.png)
 
 1. Utilisez les champs de recherche pour filtrer les rapports affichés.
 
 1. Cliquez ensuite sur le rapport souhaité pour l&#39;afficher.
 
-   ![](assets/edit-a-report.png)
+   ![Liste des rapports globaux filtrée avec le champ de recherche sur le budget, affichant les rapports correspondants à ouvrir.](assets/edit-a-report.png)
 
 1. Cliquez sur le lien **[!UICONTROL Retour]** en haut de l’écran pour revenir à la liste des rapports.
 
-   ![](assets/back-button.png)
+   ![Rapport d&#39;analyse des coûts avec le bouton Précédent en surbrillance en haut à droite pour revenir à la liste des rapports.](assets/back-button.png)
 
 Les rapports spécifiques à une opération ou à une diffusion sont accessibles à partir de leur tableau de bord respectif.
 
-![](assets/reporting-on-delivery.png)
+![Tableau de bord des diffusions avec le lien Rapports mis en surbrillance, répertoriant les rapports de diffusion.](assets/reporting-on-delivery.png)
 
 Le principe est le même pour les listes, les services, les offres, etc., comme dans l&#39;exemple ci-dessous :
 
-![](assets/reporting-on-offer.png)
+![Tableau de bord de liste avec le lien Rapports mis en surbrillance pour accéder aux rapports de liste.](assets/reporting-on-offer.png)
 
 
 ## Rapports sur les diffusions {#reports-on-deliveries}
 
 Les rapports intégrés fournis par Adobe Campaign figurent dans le tableau ci-après.
 
-Pour plus d&#39;informations sur le contenu de ces rapports, consultez [cette section](delivery-reports.md).
+Pour plus d’informations sur le contenu de ces rapports, reportez-vous à la section [Rapports de diffusion intégrés d’Adobe Campaign](delivery-reports.md).
 
 <table> 
  <tbody> 

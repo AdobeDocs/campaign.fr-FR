@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 94%
+source-wordcount: '1041'
+ht-degree: 71%
 ---
 # Créer un cube{#create-a-cube}
 
@@ -43,7 +43,7 @@ ht-degree: 94%
 
 Pour utiliser les cubes, accédez à **[!UICONTROL Administration > Configuration > Cubes]** dans l’Explorateur Campaign.
 
-![](assets/cube-node.png)
+![Nœud Cubes sous Administration > Configuration dans l&#39;explorateur, avec la liste des cubes et les détails des cubes sélectionnés](assets/cube-node.png)
 
 Les cubes vous permettent d’effectuer les opérations suivantes :
 
@@ -51,21 +51,21 @@ Les cubes vous permettent d’effectuer les opérations suivantes :
 
   Pour cela, créez un nouveau rapport et sélectionnez le cube à utiliser.
 
-  ![](assets/create-new-cube.png)
+  ![Création d&#39;un nouveau rapport à partir des modèles de cube disponibles, avec les destinataires sélectionnés et un libellé saisi avant la création](assets/create-new-cube.png)
 
   Les cubes sont des modèles à partir desquels des rapports sont créés. Une fois le modèle sélectionné, cliquez sur **[!UICONTROL Créer]** pour configurer et afficher le nouveau rapport.
 
   Vous pouvez alors adapter les mesures, modifier le mode d&#39;affichage ou configurer le tableau, puis afficher le rapport à partir du bouton central.
 
-  ![](assets/display-cube-table.png)
+  ![Nouveau rapport basé sur un cube, avec des mesures, des champs Age et Pays/Région et le bouton permettant d&#39;afficher le tableau croisé dynamique](assets/display-cube-table.png)
 
 * Vous pouvez référencer un cube dans la boîte de **[!UICONTROL Requête]** d’un rapport afin d’en utiliser les indicateurs, comme illustré dans l’exemple ci-dessous :
 
-  ![](assets/cube-report-query.png)
+  ![Activité de requête d&#39;un rapport avec l&#39;option Utiliser un cube sélectionnée et un cube choisi dans le champ Cube](assets/cube-report-query.png)
 
 * Insérer un tableau croisé dynamique basé sur un cube dans n’importe quelle page d’un rapport. Pour ce faire, référencez le cube à utiliser sous l’onglet **[!UICONTROL Données]** du tableau croisé dynamique de la page concernée.
 
-  ![](assets/cube-in-a-report.png)
+  ![Onglet Données d&#39;un tableau croisé dynamique sur une page de rapport, avec un cube sélectionné dans le champ Cube et les dimensions Âge et Ville](assets/cube-in-a-report.png)
 
   Pour plus dʼinformations, consultez la section [Exploration des données dans un rapport](cube-tables.md#explore-the-data-in-a-report).
 
@@ -94,14 +94,14 @@ Pour créer un cube, procédez comme suit :
 
 1. Cliquez sur le bouton **[!UICONTROL Nouveau]** situé au-dessus de la liste des cubes.
 
-   ![](assets/create-a-cube.png)
+   ![Boîte de dialogue Nouveau cube avec les options de la source de faits, le champ de schéma de faits, un libellé et le bouton Enregistrer](assets/create-a-cube.png)
 
 1. Sélectionnez le schéma qui contient les éléments que vous souhaitez explorer (également appelé « schéma des faits »). Dans cet exemple, sélectionnez le tableau par défaut **Destinataire**.
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour créer le cube. Il est alors ajouté à la liste des cubes. Vous pouvez maintenant utiliser les onglets pour le configurer.
 
 1. Cliquez sur le lien **[!UICONTROL Filtrer les données de la source...]** pour appliquer les calculs de ce cube aux données de la base de données.
 
-   ![](assets/cube-filter-source.png)
+   ![Onglet Général du cube avec le lien Filtrer les données sources ouvrant la boîte de dialogue Modifier le filtre avec la condition Âge supérieur à 18](assets/cube-filter-source.png)
 
 ### Définition des dimensions {#define-dimensions}
 
@@ -112,7 +112,7 @@ Pour créer des dimensions, procédez comme suit :
 1. Accédez à l’onglet **[!UICONTROL Dimension]** du cube et cliquez sur le bouton **[!UICONTROL Ajouter]** pour créer une dimension.
 1. Dans le **[!UICONTROL Champ d’expression]**, cliquez sur l’icône **[!UICONTROL Éditer l’expression]** pour sélectionner le champ qui contient les données concernées.
 
-   ![](assets/cube-add-dimension.png)
+   ![Onglet Dimensions avec le bouton Ajouter et la boîte de dialogue de nouvelle dimension ; l’icône Modifier l’expression sélectionne le champ](assets/cube-add-dimension.png)
 
 1. Dans cet exemple, nous avons choisi l’**Âge** du destinataire. Pour ce champ, vous pouvez définir un compartimentage afin de regrouper les âges et faciliter la lisibilité des informations. Il est recommandé de définir un compartimentage lorsqu’il peut y avoir plusieurs valeurs distinctes.
 
@@ -121,7 +121,7 @@ Pour cela, cochez l&#39;option **[!UICONTROL Activer la mise en classe.]** [En s
 1. Ajoutez une dimension de type **Date**. Ici, nous souhaitons afficher les dates de création des profils de destinataires. Pour cela, cliquez sur **[!UICONTROL Ajouter]** et choisissez le champ **[!UICONTROL Date de création]** dans la table des destinataires.
 Vous pouvez personnaliser le mode d’affichage de la date. Pour ce faire, sélectionnez la hiérarchie à utiliser et les niveaux à générer :
 
-![](assets/cube-date-dimension.png)
+![Boîte de dialogue de la dimension Date de création avec les Niveaux pour créer des options : Années, Trimestres, Mois, Jours et Heures](assets/cube-date-dimension.png)
 
 Dans notre exemple, nous souhaitons afficher uniquement les années, mois et jours. Il n’est pas possible d’utiliser à la fois les semaines et les trimestres/mois : ces niveaux ne sont pas compatibles.
 
@@ -131,11 +131,11 @@ Vous pouvez activer le compartimentage pour faciliter la lecture des information
 
 Sélectionnez l’énumération dans la liste déroulante. Notez que cette énumération doit être définie comme **[!UICONTROL Réservée au compartimentage]**.
 
-![](assets/cube-dimension-with-enum.png)
+![Dimension de ville avec Activer la mise en classe, lier dynamiquement les valeurs à une énumération et Libellé des autres valeurs](assets/cube-dimension-with-enum.png)
 
 Seules les valeurs présentes dans l’énumération seront affichées. Toutes les autres seront regroupées sous le libellé défini dans le champ **[!UICONTROL Libellé des autres valeurs]**.
 
-Pour plus d’informations, consultez [cette section](customize-cubes.md#dynamically-manage-bins).
+Pour plus d&#39;informations, consultez la section [Gérer dynamiquement les classes](customize-cubes.md#dynamically-manage-bins).
 
 ### Construction des indicateurs {#build-indicators}
 
@@ -148,15 +148,15 @@ Pour créer les indicateurs, procédez comme suit :
 1. Accédez à l’onglet **[!UICONTROL Mesures]** et cliquez sur le bouton **[!UICONTROL Ajouter]**.
 1. Sélectionnez le type de mesure et la formule à appliquer. Dans cet exemple, nous souhaitons comptabiliser le nombre de femmes parmi les destinataires. Notre mesure se base sur le schéma des faits et utilise l&#39;opérateur **[!UICONTROL Comptage]**.
 
-   ![](assets/cube-new-measure.png)
+   ![Boîte de dialogue de nouvelle mesure avec la mesure définie à l&#39;aide du schéma des faits, de l&#39;opérateur Compter et du lien Filtrer les données de la mesure](assets/cube-new-measure.png)
 
    Utilisez le lien **[!UICONTROL Filtrer les données de la mesure...]** pour ne sélectionner que les femmes. [En savoir plus](customize-cubes.md#define-measures).
 
-   ![](assets/cube-filter-measure-data.png)
+   ![Boîte de dialogue Modifier le filtre avec la condition Genre égal à et la valeur Femme sélectionnée dans la liste Valeur](assets/cube-filter-measure-data.png)
 
 1. Saisissez le libellé de la mesure et enregistrez-la.
 
-   ![](assets/cube-save-measure.png)
+   ![Les femmes terminées mesurent avec l&#39;opérateur Comptage, le genre de filtre égal à Femme et le champ Libellé avant d&#39;enregistrer](assets/cube-save-measure.png)
 
 1. Enregistrez le cube.
 

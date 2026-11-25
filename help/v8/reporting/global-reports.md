@@ -31,20 +31,20 @@ topic_v2:
     internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '1913'
-ht-degree: 95%
+source-wordcount: '2115'
+ht-degree: 84%
 ---
 # Rapports globaux {#global-reports}
 
 Ces rapports portent sur l’activité de l’ensemble des données de la base. Pour accéder au tableau de bord des rapports, accédez à l’onglet **[!UICONTROL Rapports]**.
 
-![](assets/reports-tab.png)
+![Onglet Rapports de la page d’accueil d’Adobe Campaign, affichant le tableau de bord des rapports globaux avec des mosaïques de rapports](assets/reports-tab.png)
 
 Pour afficher les rapports, cliquez sur leur nom. Par défaut, les paramètres suivants sont disponibles :
 
-![](assets/report-global-list.png)
+![Liste des rapports globaux affichant les rapports par défaut, tels que les activités utilisateur, le débit de diffusion et les navigateurs](assets/report-global-list.png)
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Pour afficher les rapports, cliquez sur leur nom. Par défaut, les paramètres s
 
 Ce rapport contient les informations relatives au débit de diffusion de l’ensemble de la plateforme sur une période donnée. Pour mesurer la vitesse de diffusion des messages, les critères sont le nombre de messages diffusés par heure et la taille des messages (en bits par seconde). Dans l’exemple ci-dessous, le premier graphique indique les diffusions réussies en bleu et le nombre de diffusions erronées en orange.
 
-![](assets/report-toolbar.png)
+![Rapport sur le débit des diffusions avec la période Paramètres, le lien Actualiser et les graphiques de succès et d&#39;erreurs par heure](assets/report-toolbar.png)
 
 Vous pouvez paramétrer l’affichage des valeurs en modifiant l’échelle de temps : affichage sur 1 heure, sur 3 heures, sur 24 heures, etc. Cliquez sur **[!UICONTROL Rafraîchir]** pour confirmer votre sélection.
 
@@ -139,11 +139,11 @@ A chaque nom de domaine, est associé :
 
 Vous pouvez déplier chaque ligne du tableau de valeurs en cliquant sur le symbole [+]. Cela permet d’afficher, pour chaque type d’erreur, la répartition des messages d’erreur, par domaine.
 
-![](assets/errors-report-details.png)
+![Répartition des erreurs par tableau de domaine, avec lignes de domaine extensibles indiquant le nombre d&#39;erreurs par type d&#39;erreur](assets/errors-report-details.png)
 
 >[!NOTE]
 >
->Les noms de domaine affichés dans ce rapport sont définis au niveau des cubes. Pour modifier ces valeurs, modifiez le cube **[!UICONTROL Logs de diffusion (broadlogrcp)]**. Pour plus d’informations, consultez [cette section](gs-cubes.md). La catégorie **[!UICONTROL Autres]** inclut les noms de domaine qui n’appartiennent pas à une classe spécifique.
+>Les noms de domaine affichés dans ce rapport sont définis au niveau des cubes. Pour modifier ces valeurs, modifiez le cube **[!UICONTROL Logs de diffusion (broadlogrcp)]**. Pour en savoir plus à ce sujet, consultez la section [Prise en main des rapports d’analyse d’Adobe Campaign](gs-cubes.md). La catégorie **[!UICONTROL Autres]** inclut les noms de domaine qui n’appartiennent pas à une classe spécifique.
 
 ## Navigateurs {#browsers}
 
@@ -157,7 +157,7 @@ Ce rapport présente la répartition entre les navigateurs internet utilisés pa
 
 Les statistiques globales d&#39;utilisation des navigateurs sont présentées sous la forme d&#39;un tableau de valeurs et d&#39;un graphique.
 
-![](assets/browser-report.png)
+![Rapports des navigateurs Internet avec un tableau des visiteurs, des pages consultées et du taux d&#39;utilisation par navigateur, ainsi qu&#39;un graphique en anneau](assets/browser-report.png)
 
 Les indicateurs utilisés sont les suivants :
 
@@ -169,7 +169,7 @@ Les indicateurs utilisés sont les suivants :
 
 Dans le tableau de valeurs des statistiques globales, vous pouvez cliquer sur le nom de chaque navigateur afin de visualiser les statistiques d&#39;utilisation correspondantes.
 
-![](assets/browser-report-info.png)
+![Statistiques pour un navigateur, avec la courbe Historique, le graphique Répartition par versions et les taux global et relatif](assets/browser-report-info.png)
 
 Les statistiques sont présentées sous la forme d&#39;une courbe, d&#39;un graphique et d&#39;un tableau de valeurs.
 
@@ -247,7 +247,7 @@ Ce rapport présente la répartition entre les systèmes d&#39;exploitation util
 
 Les statistiques globales d&#39;utilisation des systèmes d&#39;exploitation sont présentées sous la forme d&#39;un tableau de valeurs et d&#39;un graphique.
 
-![](assets/os-report.png)
+![Rapport sur les systèmes d&#39;exploitation avec un tableau des visiteurs, des pages consultées et du taux d&#39;utilisation par système, et un graphique en anneau](assets/os-report.png)
 
 Les indicateurs utilisés sont les suivants :
 
@@ -259,7 +259,7 @@ Les indicateurs utilisés sont les suivants :
 
 Dans le tableau de valeurs des statistiques globales, vous pouvez cliquer sur le nom de chaque système d&#39;exploitation afin de visualiser les statistiques d&#39;utilisation correspondantes.
 
-![](assets/os-report-details.png)
+![Page de statistiques Windows avec la courbe d&#39;historique, le graphique Répartition par versions et le taux global et le taux relatif par version](assets/os-report-details.png)
 
 Les statistiques sont présentées sous la forme d&#39;une courbe, d&#39;un graphique et d&#39;un tableau de valeurs.
 
@@ -276,11 +276,11 @@ Le tableau de valeurs utilise les indicateurs suivants :
 
 Ce rapport vous permet de surveiller mes abonnements aux services d’information. Il présente les abonnements et désabonnements.
 
-![](assets/service-report.png)
+![Rapport de tracking des abonnements avec l&#39;évolution globale du tableau des abonnements et les courbes d&#39;évolution des abonnements](assets/service-report.png)
 
 Il peut être affiché pour un abonnement en cliquant sur le nœud **[!UICONTROL Profils et cibles > Services et abonnements]** de la page d’accueil ou de l’explorateur. Sélectionnez l’abonnement souhaité, puis cliquez sur l’onglet **[!UICONTROL Rapports]**. Le rapport **[!UICONTROL Suivi des abonnements]** est disponible par défaut. Il vous permet de visualiser les tendances d’abonnement et de désinscription, ainsi que le taux de fidélité sur une période. Vous pouvez paramétrer la représentation de ces données dans la liste déroulante. Cliquez sur **[!UICONTROL Actualiser]** pour valider la configuration sélectionnée.
 
-Voir à ce propos [cette page](../start/subscriptions.md).
+Pour plus d&#39;informations, consultez la section [Gérer les abonnements et les désabonnements dans Campaign](../start/subscriptions.md).
 
 Le **[!UICONTROL Nombre d&#39;inscrits à ce jour]** représente le nombre total d&#39;abonnés à ce jour.
 
@@ -302,7 +302,7 @@ Ce graphique représente l&#39;évolution dans le temps des inscriptions et dés
 
 Ce rapport présente la répartition, par domaine Internet, des messages traités et envoyés, des rebonds définitifs et temporaires, des ouvertures, des clics et des désinscriptions.
 
-![](assets/broadcast-report.png)
+![Rapport des statistiques de diffusion affichant les e-mails traités, diffusés, bounces, ouvertures, clics et désabonnements par domaine d&#39;e-mail](assets/broadcast-report.png)
 
 Les indicateurs utilisés sont les suivants :
 
@@ -313,7 +313,7 @@ Les indicateurs utilisés sont les suivants :
 
   >[!NOTE]
   >
-  >Pour plus d’informations sur les rebonds définitifs et temporaires, consultez [cette page](../send/quarantines.md).
+  >Pour plus d&#39;informations sur les hard et soft bounces, consultez la section [Gestion des quarantaines dans Campaign](../send/quarantines.md).
 
 * **[!UICONTROL Ouvertures]** : pourcentage du nombre de personnes destinataires ciblées distinctes ayant ouvert au moins une fois un même message, par rapport au nombre de messages traités avec succès.
 * **[!UICONTROL Clics]** : pourcentage du nombre de personnes distinctes ayant cliqué au moins une fois dans une même diffusion, par rapport au nombre de messages traités avec succès.
@@ -323,9 +323,9 @@ Les indicateurs utilisés sont les suivants :
 
 Ce rapport affiche la répartition des ouvertures par système d’exploitation, appareil et navigateur sur la période concernée. Deux graphiques sont utilisés pour chaque catégorie. Le premier affiche les statistiques d’ouverture sur un ordinateur et des appareils mobiles. Le second affiche des statistiques relatives uniquement aux ouvertures sur les appareils mobiles.
 
-Le nombre d’ouvertures correspond au nombre total de messages ouverts. Les e-mails au format texte ne sont pas comptabilisés. Pour plus d’informations sur le tracking des ouvertures, consultez [cette section](metrics-calculation.md#tracking-opens-).
+Le nombre d’ouvertures correspond au nombre total de messages ouverts. Les e-mails au format texte ne sont pas comptabilisés. Pour plus d’informations sur le tracking des ouvertures, voir [Tracking des ouvertures](metrics-calculation.md#tracking-opens-).
 
-![](assets/user-agent-report.png)
+![Rapport de répartition des ouvertures avec des secteurs de systèmes d’exploitation, d’appareils et de navigateurs pour toutes les ouvertures et ouvertures mobiles uniquement](assets/user-agent-report.png)
 
 >[!NOTE]
 >

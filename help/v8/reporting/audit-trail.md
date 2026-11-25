@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 92%
+source-wordcount: '716'
+ht-degree: 85%
 ---
 # Journal d’audit{#audit-trail}
 
@@ -105,9 +105,9 @@ Pour accéder au **[!UICONTROL journal d’audit]** de votre instance, procédez
 
 1. Sous le menu **[!UICONTROL Administration]**, sélectionnez **[!UICONTROL Audit]**, puis **[!UICONTROL Journal d’audit]**.
 
-   ![](assets/audit-trail-1.png)
+   ![Arborescence de l&#39;Explorateur avec Administration, Audit, puis Journal d&#39;audit sélectionnés, et la liste des entités auditées](assets/audit-trail-1.png)
 
-1. La fenêtre **[!UICONTROL Journal d’audit]** s’ouvre avec la liste de vos entités. Adobe Campaign effectuera l’audit des actions de création, de modification et de suppression pour vos différentes entités.
+1. La fenêtre **[!UICONTROL Journal d&#39;audit]** s’ouvre avec la liste de vos entités. Adobe Campaign effectuera l’audit des actions de création, de modification et de suppression pour vos différentes entités.
 
    Sélectionnez l’une des entités pour en savoir plus sur les dernières modifications.
 
@@ -119,7 +119,7 @@ Pour accéder au **[!UICONTROL journal d’audit]** de votre instance, procédez
    * **[!UICONTROL Action]** : dernière action réalisée sur cette entité (création, édition ou suppression).
    * **[!UICONTROL Date de modification]** : date de la dernière action effectuée sur cette entité.
 
-   ![](assets/audit-trail-2.png)
+   ![Détails de l&#39;entité d&#39;audit affichant le type, l&#39;entité, modifié par, l&#39;action et la date de modification](assets/audit-trail-2.png)
 
 >[!NOTE]
 >
@@ -148,10 +148,10 @@ Pour ce faire :
    * Pour l’opérateur : **[!UICONTROL XtkAudit_Operator]**
    * Pour chaque entité : **[!UICONTROL XtkAudit_Enable_All]**
 
-   ![](assets/audit-trail-3.png)
+   ![Liste des options sous Administration, Platform filtrée sur XtkAudit_ avec l’option XtkAudit_Delivery sélectionnée](assets/audit-trail-3.png)
 
 1. Définissez la **[!UICONTROL Valeur]** sur 1 si vous voulez activer l’entité, ou sur 0 si vous voulez la désactiver.
 
-   ![](assets/audit-trail-4.png)
+   Option ![XtkAudit_Delivery avec le champ Valeur (entier) défini sur 1 pour activer le journal d’audit](assets/audit-trail-4.png)
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.

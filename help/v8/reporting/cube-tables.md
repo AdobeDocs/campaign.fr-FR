@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 82ae202007873dab2324bfa4b13a6014efd19887
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 93%
+source-wordcount: '1315'
+ht-degree: 70%
 ---
 # Utilisation des cubes pour explorer les données{#use-cubes-to-create-reports}
 
@@ -52,17 +52,17 @@ Pour créer un rapport basé sur un cube existant, procédez comme suit :
 
 1. Cliquez sur le bouton **[!UICONTROL Créer]** de l’onglet **[!UICONTROL Rapports]** et sélectionnez le cube que vous venez de créer.
 
-   ![](assets/new-report-based-on-cube.png)
+   ![Création d&#39;une page de rapport avec le nouveau modèle de cube Profil client sélectionné et le bouton Créer](assets/new-report-based-on-cube.png)
 
 1. Cliquez sur le bouton **[!UICONTROL Créer]** pour valider : vous accédez alors à la page de configuration et de visualisation du rapport.
 
    Par défaut, les deux premières dimensions disponibles sont proposées en ligne et en colonne mais aucune valeur n’est affichée dans le tableau. Pour générer le tableau, cliquez sur l’icône principale :
 
-   ![](assets/cube-report-config.png)
+   ![Nouveau rapport Profil client avec les axes Âge et Date de création et l&#39;icône pour afficher le tableau croisé dynamique](assets/cube-report-config.png)
 
 1. Vous pouvez changer les axes de la dimension, les supprimer, ajouter de nouvelles mesures, etc. Pour ce faire, utilisez les icônes appropriées.
 
-   ![](assets/cube-switch-axis.png)
+   ![Dimension Date de création glissée de l&#39;axe gauche vers l&#39;axe supérieur en regard de l&#39;Âge dans le rapport Nouveau profil client](assets/cube-switch-axis.png)
 
    Ces opérations sont décrites ci-dessous.
 
@@ -72,15 +72,15 @@ L&#39;affichage par défaut propose alors les deux premières dimensions du cube
 
 Les boutons **[!UICONTROL Ajouter]** situés sur chacun des axes permettent d&#39;ajouter d&#39;autres dimensions.
 
-![](assets/cube-switch.png)
+![Bouton Ajouter sur l&#39;axe des lignes du rapport Nouveau profil client pour ajouter une dimension](assets/cube-switch.png)
 
 1. Sélectionnez les dimensions à afficher dans les lignes et colonnes du tableau. Pour ce faire, faites glisser et déposez les dimensions disponibles.
 1. Sélectionnez la dimension à ajouter dans le tableau, parmi celles disponibles :
-   ![](assets/cube-select-dimension.png)
+   ![Ajoutez une dimension à la boîte de dialogue de colonne répertoriant la ville, le pays, la date du dernier achat et le montant des achats](assets/cube-select-dimension.png)
 
 1. Sélectionnez ensuite les paramètres de cette dimension.
 
-   ![](assets/cube-dimension-param.png)
+   ![Paramètres Dimension pour la ville : libellé, développer pendant le chargement, trier les données, ordre et nombre de lignes affichées](assets/cube-dimension-param.png)
 
    Les paramètres disponibles varient selon le type de données de la dimension sélectionnée.
 
@@ -88,7 +88,7 @@ Les boutons **[!UICONTROL Ajouter]** situés sur chacun des axes permettent d&#3
 
    À titre d’exemple, les options suivantes sont disponibles :
 
-   ![](assets/cube-config.png)
+   ![Paramètres de dimension de date par niveau, année et mois, y compris le format Long ou Court](assets/cube-config.png)
 
    Vous pouvez, au choix :
 
@@ -102,7 +102,7 @@ Les boutons **[!UICONTROL Ajouter]** situés sur chacun des axes permettent d&#3
 
    Le bandeau jaune situé au-dessus du tableau indique que vous avez effectué des modifications : cliquez sur le bouton **[!UICONTROL Enregistrer]** si vous souhaitez les sauvegarder.
 
-   ![](assets/cube-in-report.png)
+   ![Ville ajoutée à l&#39;axe des lignes, avec la bannière jaune vous invitant à enregistrer les modifications du rapport](assets/cube-in-report.png)
 
 ### Étape 3 : configuration des mesures à afficher {#step-3---configure-the-measures-to-display}
 
@@ -112,25 +112,25 @@ Pour ajouter et configurer des mesures, procédez comme suit :
 
 1. Cliquez sur le bouton **[!UICONTROL Mesures]**.
 
-   ![](assets/cube-measure-button.png)
+   ![Bouton Mesures ouvrant la boîte de dialogue Configurer les mesures avec les options Libellé, Formatage et Unité](assets/cube-measure-button.png)
 
 1. Avec le bouton **[!UICONTROL Utiliser une mesure]**, sélectionnez l&#39;une des mesures existantes.
 
-   ![](assets/cube-add-measure.png)
+   ![Ajouter une mesure existante à la boîte de dialogue du tableau croisé dynamique répertoriant le français, l&#39;allemand, les hommes et les femmes](assets/cube-add-measure.png)
 
    Choisissez les informations à afficher et les options de mise en forme. La liste des options disponibles varie selon le type de mesure sélectionné.
 
-   ![](assets/cube-measure-options.png)
+   ![Configurer la boîte de dialogue des mesures avec les options de formatage Nombre et Pourcentage et Modifier le bouton de mesure dynamique](assets/cube-measure-options.png)
 
    Une configuration globale des mesures est également possible à partir de l’icône **[!UICONTROL Modifier la configuration du tableau croisé dynamique]** située dans l’en-tête.
 
-   ![](assets/cube-pivot-table-config.png)
+   ![Modifier l&#39;icône de configuration du tableau croisé dynamique dans la barre d&#39;outils du rapport](assets/cube-pivot-table-config.png)
 
    Vous pouvez notamment choisir d&#39;afficher ou non les libellés des mesures. [En savoir plus](customize-cubes.md#configuring-the-display).
 
 1. Vous pouvez créer des mesures basées sur des mesures existantes. Pour ce faire, cliquez sur **[!UICONTROL Créer une mesure]** et configurez-la.
 
-   ![](assets/cube-create-new-measure.png)
+   ![Création d&#39;une boîte de dialogue de mesure dynamique avec la Combinaison du type de mesure, de l&#39;opérateur et de deux mesures](assets/cube-create-new-measure.png)
 
    Les types de mesures possibles sont les suivantes :
 
@@ -144,7 +144,7 @@ Pour ajouter et configurer des mesures, procédez comme suit :
 
    Sitôt créée, la mesure est ajoutée dans le rapport.
 
-   ![](assets/cube-display-new-measure.png)
+   ![Tableau croisé dynamique montrant la nouvelle mesure allemande et anglaise en regard de Hommes et Femmes, par entreprise](assets/cube-display-new-measure.png)
 
    Celle-ci peut toujours être configurée et modifiée ultérieurement. Pour ce faire, cliquez sur le bouton **[!UICONTROL Mesures]**, puis accédez à l’onglet de la mesure à modifier.
 
@@ -158,31 +158,31 @@ Pour regrouper une population dans une liste, procédez comme suit :
 
 1. Cliquez sur les cellules contenant les populations à collecter pour les sélectionner, puis cliquez sur l&#39;icône **[!UICONTROL Ajouter au panier]**.
 
-   ![](assets/cube-add-to-cart.png)
+   ![Icône Ajouter au panier dans la barre d’outils du tableau croisé dynamique CLIENTS avec les cellules sélectionnées](assets/cube-add-to-cart.png)
 
    Effectuez cette opération autant de fois que nécessaire pour collecter différents profils.
 
 1. Cliquez sur le bouton **[!UICONTROL Afficher le panier]** pour en visualiser le contenu avant de réaliser l&#39;export.
 
-   ![](assets/cube-show-cart.png)
+   ![Afficher le bouton Panier ouvrant la boîte de dialogue Détails du panier avec les articles du panier et le bouton Exporter](assets/cube-show-cart.png)
 
 1. Utilisez le bouton **[!UICONTROL Exporter]** pour regrouper les éléments du panier dans une liste.
 
    Saisissez le nom de la liste, puis sélectionnez le type d’export à réaliser.
 
-   ![](assets/cube-export-report.png)
+   ![Boîte de dialogue Exporter le panier 1/2 avec exportation vers une nouvelle liste, un nouveau libellé, un nouveau dossier et un nouveau type d&#39;exportation, et bouton Démarrer](assets/cube-export-report.png)
 
    Cliquez sur **[!UICONTROL Démarrer]** pour lancer l&#39;export.
 
 1. Une fois l&#39;export terminé, un message vous en confirme la bonne exécution, ainsi que le nombre d&#39;enregistrements traités.
 
-   ![](assets/cube-export-confirm.png)
+   ![Boîte de dialogue Exporter le panier 2/2 confirmant l’exportation terminée avec le nombre d’enregistrements et les boutons Fermer](assets/cube-export-confirm.png)
 
    Vous pouvez choisir de conserver le contenu du panier ou de le vider.
 
    La nouvelle liste est accessible à partir de l’onglet **[!UICONTROL Profils et cibles]**.
 
-   ![](assets/cube-list-available.png)
+   ![Page de listes sous Profils et cibles affichant la nouvelle liste de destinataires GOLD](assets/cube-list-available.png)
 
 ## Insertion dʼun tableau croisé dynamique dans un rapport {#insert-a-pivot-table-into-a-report}
 
@@ -190,10 +190,10 @@ Pour créer un tableau et explorer les données d’un cube, procédez comme sui
 
 1. Créez un nouveau rapport, avec une seule page, et insérez un tableau croisé dynamique.
 
-   ![](assets/cube-insert-in-report.png)
+   ![Éditeur de rapports avec une activité Page et l&#39;option Tableau croisé dynamique du menu de la barre d&#39;outils](assets/cube-insert-in-report.png)
 
 1. Dans l&#39;onglet **[!UICONTROL Données]** de la page, sélectionnez un cube afin d&#39;exploiter les dimensions qu&#39;il contient et afficher les mesures calculées.
 
-   ![](assets/cube-selected-in-report.png)
+   ![Onglet Données du tableau croisé dynamique avec le nouveau cube Profil client sélectionné dans le champ Cube](assets/cube-selected-in-report.png)
 
    Vous pourrez ainsi construire le rapport à afficher. Pour plus d’informations, consultez la section [Étape 2 - Sélectionner les lignes et les colonnes](#step-2---select-lines-and-columns).
