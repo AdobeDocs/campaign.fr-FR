@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f22ef7562e86372db4c5c05c04acd986d1c557fb
 workflow-type: tm+mt
-source-wordcount: '2957'
-ht-degree: 62%
+source-wordcount: '3000'
+ht-degree: 58%
 ---
 # Bonnes pratiques de sécurité de Campaign {#ac-security}
 
@@ -82,7 +82,7 @@ Actuellement, Adobe Campaign ne fournit pas de conseils de configuration sécuri
 
 ## Confidentialité
 
-Pour gérer correctement la confidentialité et les données personnelles, travaillez dans le cadre des législations applicables aux zones géographiques où vous intervenez. Les fonctionnalités d’Adobe Campaign vous aident à vous conformer aux réglementations répertoriées sur [cette page](../start/privacy.md).
+Pour gérer correctement la confidentialité et les données personnelles, travaillez dans le cadre des législations applicables aux zones géographiques où vous intervenez. Les fonctionnalités d’Adobe Campaign vous aident à vous conformer aux réglementations répertoriées dans la section [Gestion des demandes d’accès à des informations personnelles dans Campaign](../start/privacy.md)
 
 ### Confidentialité d&#39;Adobe Experience Cloud {#experience-cloud-privacy}
 
@@ -98,7 +98,7 @@ Adobe Campaign fait partie des solutions Adobe Experience Cloud. La façon do
 
 * **Modalités de collecte des informations dans Adobe Experience Cloud**
 
-  * Les solutions Adobe Experience Cloud utilisent des cookies et des technologies similaires, telles que les balises web (également appelées pixels), pour vous permettre de collecter des informations. Pour plus d’informations sur les cookies et les fonctionnalités de tracking avec Adobe Campaign, consultez [cette section](#tracking-capabilities).
+  * Les solutions Adobe Experience Cloud utilisent des cookies et des technologies similaires, telles que les balises web (également appelées pixels), pour vous permettre de collecter des informations. Pour plus d’informations sur les cookies et les fonctionnalités de tracking avec Adobe Campaign, consultez [Fonctionnalités de tracking](#tracking-capabilities).
   * Vous pouvez également utiliser les technologies Adobe Experience Cloud dans vos applications mobiles. Pour plus d’informations sur l’envoi de diffusions mobiles avec Campaign, consultez [canal SMS](../send/sms/sms-channel.md) et canal d’application mobile.
 
 * **Choix de confidentialité de vos utilisateurs concernant votre utilisation d’Adobe Experience Cloud**
@@ -142,7 +142,7 @@ Voici les différentes personnes utilisées dans cet exemple :
 
 * **Adobe Campaign** est le **responsable du traitement des données**.
 
-![](assets/privacy-gdpr-flow.png)
+![Flux de demande d&#39;accès à des informations personnelles : Laura envoie une demande, Anne interroge Adobe Campaign, les résultats sont renvoyés, puis Anne répond à Laura](assets/privacy-gdpr-flow.png)
 
 Voici le flux général de ce cas pratique :
 
@@ -160,19 +160,19 @@ Adobe Campaign vous permet de collecter des données, y compris des information
 
 * Demandez toujours aux destinataires d&#39;accepter de recevoir des communications. Pour ce faire, continuez à honorer les demandes d&#39;opt-out le plus rapidement possible et vérifiez le consentement par le biais d&#39;un processus de double opt-in. Pour plus d&#39;informations à ce sujet, voir [Créer un formulaire d&#39;abonnement avec double opt-in](../dev/web/use-cases-web-forms.md).
 * N&#39;importez pas de listes frauduleuses et utilisez des adresses de contrôle pour vérifier que votre fichier client n&#39;est pas utilisé de façon frauduleuse. Pour plus d’informations à ce sujet, voir [À propos des adresses de contrôle](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses){target=_blank}.
-* Grâce à la gestion des droits et du consentement, vous pouvez tracker les préférences de vos destinataires et gérer les données correspondantes et les utilisateurs de votre organisation qui peuvent y accéder. Voir à ce propos [cette section](#consent).
-* Faciliter et gérer les demandes d&#39;accès à des informations personnelles de vos destinataires. Voir à ce propos [cette section](#privacy-requests).
+* Grâce à la gestion des droits et du consentement, vous pouvez tracker les préférences de vos destinataires et gérer les données correspondantes et les utilisateurs de votre organisation qui peuvent y accéder. Pour plus d’informations, consultez la section [Consentement, conservation des données et rôles](#consent).
+* Faciliter et gérer les demandes d&#39;accès à des informations personnelles de vos destinataires. Pour plus d&#39;informations, consultez la section [Demandes d&#39;accès à des informations personnelles](#privacy-requests).
 
 ## Gestion de la confidentialité {#privacy-management}
 
 La gestion de la confidentialité fait référence à tous les processus et outils qui peuvent vous aider à vous conformer aux règlements sur la confidentialité (RGPD, CCPA, etc.).
 
 Adobe Campaign vous propose divers ensembles de fonctionnalités dédiées à la gestion de la confidentialité :
-* Gestion du consentement, conservation des données et rôles utilisateur. Voir [cette section](#consent).
-* Demandes d&#39;accès à des informations personnelles (droit d&#39;accès et droit à l&#39;oubli). Voir [cette section](#privacy-requests).
+* Gestion du consentement, conservation des données et rôles utilisateur. Voir [Consentement, conservation des données et rôles](#consent).
+* Demandes d&#39;accès à des informations personnelles (droit d&#39;accès et droit à l&#39;oubli). Voir [Demandes d’accès à des informations personnelles](#privacy-requests).
 * Droit d’opposition (opt-out) à la vente des informations personnelles (spécifique au règlement CCPA).
 
-Les principales fonctionnalités de confidentialité relatives à Campaign et un exemple des acteurs impliqués sont présentés dans [cette section](#personal-data).
+Les principales fonctionnalités de confidentialité de Campaign et un exemple des personnes impliquées sont présentées dans [Données personnelles et personnes](#personal-data).
 
 ### Consentement, conservation des données et rôles {#consent}
 
@@ -190,9 +190,9 @@ Adobe Campaign dispose de fonctionnalités supplémentaires pour vous aider à 
 
 * Le **Droit à l’oubli** (demande de suppression) autorise le titulaire de données à demander au contrôleur de données d’effacer ses données personnelles.
 
-Les demandes d&#39;**accès** et de **suppression** sont présentées dans [cette section](../start/privacy.md).
+Les demandes d’**accès** et de **suppression** sont présentées dans la section [Gestion des demandes d’accès à des informations personnelles dans Campaign](../start/privacy.md).
 
-La procédure de création de ces demandes est pour sa part détaillée sur [cette page](../start/privacy.md).
+Les étapes d’implémentation pour créer ces demandes sont détaillées dans la section [Gestion des demandes d’accès à des informations personnelles dans Campaign](../start/privacy.md).
 
 ## Fonctionnalités de tracking {#tracking-capabilities}
 
@@ -214,13 +214,13 @@ Des règlements, tels que le Règlement général sur la protection des données
 
 Adobe Campaign vous permet de suivre les emails envoyés et le comportement de vos destinataires de diffusion : ouverture, clics sur des liens, désabonnements, etc. Pour plus d&#39;informations, consultez la section [À propos des messages](../start/gs-message.md).
 
-Pour ce faire, ajoutez des liens suivis à vos messages afin de mesurer l’impact de votre diffusion et le comportement de la personne destinataire dans l’onglet Tracking du tableau de bord de diffusion. Les données de suivi sont interprétées dans le rapport des indicateurs de tracking. Pour en savoir plus sur le tracking, reportez-vous à [cette page](../send/tracking.md).
+Pour ce faire, ajoutez des liens suivis à vos messages afin de mesurer l’impact de votre diffusion et le comportement de la personne destinataire dans l’onglet Tracking du tableau de bord de diffusion. Les données de suivi sont interprétées dans le rapport des indicateurs de tracking. Pour en savoir plus sur le tracking, consultez [Prise en main du tracking des messages](../send/tracking.md).
 
 ### Tracking web {#web-tracking}
 
 >[!AVAILABILITY]
 >
->Le tracking web n’est pas disponible dans Campaign v8. En savoir plus sur les fonctionnalités non disponibles dans [cette page](../start/v7-to-v8.md#gs-unavailable-features).
+>Le tracking web n’est pas disponible dans Campaign v8. En savoir plus sur les fonctionnalités non disponibles dans [Fonctionnalités non disponibles](../start/v7-to-v8.md#gs-unavailable-features).
 
 ## Protection des données et des PII {#data-and-pii-protection}
 
@@ -248,7 +248,7 @@ La gestion des accès joue un rôle important dans le renforcement de la sécuri
 * **Utiliser les profils de produit de manière cohérente** - Préférez l’affectation d’utilisateurs aux profils de produit (groupes d’opérateurs) dans Admin Console ; veillez à la cohérence des noms (par exemple, `campaign - <instance> - <group>`). Voir [Prise en main des autorisations](../start/gs-permissions.md).
 * **Accès au Panneau de Contrôle** - Dans Campaign v8, les profils de produit ou les droits nommés dont le nom contient « admin » peuvent accorder l’accès au Panneau de Contrôle Campaign. Évitez d’utiliser « admin » dans les noms de profil ou de groupe, sauf si ces utilisateurs doivent disposer d’un accès en Panneau de Contrôle.
 
-Pour en savoir plus sur les autorisations, consultez [cette section](../start/gs-permissions.md).
+En savoir plus sur les autorisations dans [Prise en main des autorisations dans Campaign v8](../start/gs-permissions.md).
 
 ## Authentification et session {#authentication-and-session}
 
@@ -292,7 +292,7 @@ Lorsque vous ajoutez des liens personnalisés à votre contenu, évitez toujours
 
 Vous devez vous assurer que les mots de passe chiffrés ne sont pas accessibles par une personne authentifiée disposant de privilèges restreints. Pour ce faire, il existe deux méthodes : restreindre l&#39;accès aux champs de mots de passe uniquement ou à l&#39;entité entière.
 
-Cette restriction vous permet de supprimer des champs de mot de passe. Le compte externe reste toutefois accessible par tous les utilisateurs dans l’interface. En savoir plus à ce propos sur [cette page](../dev/restrict-pi-view.md).
+Cette restriction vous permet de supprimer des champs de mot de passe. Le compte externe reste toutefois accessible par tous les utilisateurs dans l’interface. En savoir plus dans [Limiter l&#39;affichage des PI](../dev/restrict-pi-view.md).
 
 1. Accédez à **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Schémas de données]**.
 
@@ -304,7 +304,7 @@ Cette restriction vous permet de supprimer des champs de mot de passe. Le compte
 
    Vous pouvez remplacer l&#39;élément principal (`<element name="extAccount" ... >`) par :
 
-   ```
+   ```xml
    <element name="extAccount">
        <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
        <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
@@ -325,7 +325,7 @@ Cette restriction vous permet de supprimer des champs de mot de passe. Le compte
 
    Le srcSchema étendu peut ressembler à ceci :
 
-   ```
+   ```xml
    <...>
        <element name="extAccount">
            <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>

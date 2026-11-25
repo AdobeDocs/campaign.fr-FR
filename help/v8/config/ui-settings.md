@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f22ef7562e86372db4c5c05c04acd986d1c557fb
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 76%
+source-wordcount: '1120'
+ht-degree: 72%
 ---
 # Paramètres de l’interface utilisateur de Campaign {#ui-settings}
 
@@ -45,13 +45,13 @@ Dans Adobe Campaign, pour les champs qui expriment une durée (par exemple la p
 
 Vous pouvez ajouter des dossiers à l&#39;explorateur Campaign, créer des vues et attribuer des autorisations.
 
-Découvrez comment gérer les dossiers et les vues dans [cette page](../audiences/folders-and-views.md)
+Découvrez comment gérer les dossiers et les vues dans [Dossiers et vues](../audiences/folders-and-views.md)
 
 ## Gestion et personnalisation de listes {#customize-lists}
 
 Dans la console cliente Campaign, les données sont affichées sous forme de listes. Vous pouvez adapter ces listes à vos besoins. Vous pouvez par exemple ajouter des colonnes, filtrer les données, comptabiliser les enregistrements, enregistrer et partager vos paramètres.
 
-En outre, vous pouvez créer et enregistrer des filtres.  Pour en savoir plus sur les filtres, consultez [cette page](../audiences/create-filters.md).
+En outre, vous pouvez créer et enregistrer des filtres.  En savoir plus sur les filtres dans [Utilisation des filtres dans Adobe Campaign](../audiences/create-filters.md).
 
 ### Nombre d’enregistrements {#number-of-records}
 
@@ -107,7 +107,7 @@ Si vous devez supprimer une colonne, sélectionnez-la et cliquez sur l’icône 
 
 Vous pouvez utiliser l’icône **[!UICONTROL Répartition des valeurs]** pour visualiser la répartition des valeurs du champ sélectionné dans le dossier courant.
 
-![](assets/value-distribution.png)
+![Boîte de dialogue Répartition des valeurs répertoriant chaque type avec son nombre et son pourcentage pour le dossier Services et abonnements](assets/value-distribution.png)
 
 
 ### Créer une nouvelle colonne {#create-a-new-column}
@@ -145,7 +145,7 @@ Pour enregistrer cette configuration de liste en vue de la réutiliser, procéde
 1. Cliquez sur **[!UICONTROL Paramètres avancés]** et indiquez un nom dans le champ **[!UICONTROL Configuration]**.
 1. Cliquez sur **[!UICONTROL OK]**, puis sur **[!UICONTROL Enregistrer]**.
 
-Vous pouvez ensuite appliquer cette configuration à un autre dossier du même type. Pour en savoir plus sur les dossiers, consultez [cette page](../audiences/folders-and-views.md).
+Vous pouvez ensuite appliquer cette configuration à un autre dossier du même type. En savoir plus sur les dossiers dans [Dossiers et vues](../audiences/folders-and-views.md).
 
 ### Exporter une liste {#exporting-a-list}
 
