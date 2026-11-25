@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '1466'
-ht-degree: 96%
+source-wordcount: '1506'
+ht-degree: 89%
 ---
 # Utilisation de Campaign et Microsoft Dynamics 365{#crm-ms-dynamics}
 
@@ -102,7 +102,7 @@ Pour générer le certificat, vous pouvez utiliser openssl.
 
 Par exemple :
 
-```
+```bash
 - openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout '<'private key name'>' -out '<'public certificate name'>
 ```
 
@@ -173,7 +173,7 @@ Tout d’abord, vous devez créer le compte externe Microsoft Dynamics 365.
 1. Sélectionnez le compte externe **[!UICONTROL Microsoft Dynamics CRM]** dans la section **Type**.
 1. Sélectionnez la méthode d’authentification dans la liste déroulante **[!UICONTROL Type O-Auth de CRM]**.
 
-   ![](assets/ms-dyn-external-account.png)
+   ![Compte externe Microsoft Dynamics CRM avec serveur, compte, type CRM O-Auth, mot de passe et version CRM](assets/ms-dyn-external-account.png)
 
    1. Pour configurer le compte externe Microsoft Dynamics CRM afin de vous connecter à Adobe Campaign avec des **mots de passe**, fournissez les détails suivants :
 
@@ -186,10 +186,10 @@ Tout d’abord, vous devez créer le compte externe Microsoft Dynamics 365.
    1. Pour configurer le compte externe Microsoft Dynamics CRM afin de vous connecter à Adobe Campaign avec un **Certificat**, fournissez les détails suivants :
 
       * **Serveur** : URL de votre serveur Microsoft CRM. Pour trouver votre URL de serveur Microsoft CRM, accédez à votre compte Microsoft Dynamics CRM, puis cliquez sur Dynamics 365 et sélectionnez votre application. Vous pouvez ensuite trouver votre URL de serveur dans la barre d’adresse de votre navigateur, par exemple : https://myserver.crm.dynamics.com/.
-      * **Clé privée** : copiez/collez la clé privée, encodée en base64, comme expliqué dans [cette section](#config-certificate-key-id).
-      * **Identifiant de clé** : clé disponible dans l’onglet **Manifeste** de votre application, en suivant la procédure décrite dans [cette section](#config-certificate-key-id).
-      * **Identifiant de clé personnalisée** : identifiant disponible dans l’onglet **Manifeste** de votre application, en suivant la procédure décrite dans [cette section](#config-certificate-key-id).
-      * **Identifiant du client** : identifiant (client) d’application qui se trouve sur le portail de gestion Microsoft Azure, comme expliqué dans [cette section](#get-client-id-microsoft).
+      * **Clé privée** : copiez/collez la clé privée, encodée en base64, comme expliqué dans [Générez l’identifiant de clé de certificat Microsoft Dynamics et l’ID de clé](#config-certificate-key-id).
+      * **ID de clé** : clé disponible dans l’onglet **Manifest** de votre application, comme expliqué dans [Générer l’identifiant de clé de certificat Microsoft Dynamics et l’ID de clé](#config-certificate-key-id).
+      * **Identifiant de clé personnalisée** : identifiant disponible dans l’onglet **Manifest** de votre application, comme expliqué dans [Générer l’identifiant de clé de certificat Microsoft Dynamics et l’ID de clé](#config-certificate-key-id).
+      * **Identifiant du client** : identifiant (client) d’application qui se trouve sur le portail de gestion Microsoft Azure, comme expliqué dans la section [Obtention de l’identifiant du client Dynamics 365](#get-client-id-microsoft).
       * **Version du CRM** : sélectionnez la version du CRM Dynamics 365 CRM.
 
 1. Sélectionnez l’option **Activer** pour activer le compte dans Campaign.
@@ -226,7 +226,7 @@ Pour synchroniser les données entre Adobe Campaign et Microsoft CRM, créez un
 
 Pour en savoir plus sur la synchronisation des données, consultez [cette page](crm-data-sync.md).
 
-En savoir plus sur la gestion des énumérations dans la campagne [&#x200B; sur cette page](../config/enumerations.md).
+En savoir plus sur la gestion des énumérations dans la campagne [ sur cette page](../config/enumerations.md).
 
 ### Types de données de champ pris en charge {#ms-dyn-supported-types}
 

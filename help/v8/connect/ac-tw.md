@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 87%
+source-wordcount: '1228'
+ht-degree: 80%
 ---
 # Utiliser Campaign et X (Twitter) {#tw-ac-ovv}
 
@@ -81,15 +81,15 @@ Une fois que vous avez reçu l’autorisation d’accès élevé, créez une app
 1. Laissez-vous guider par l’assistant X.
 1. Pour permettre à Adobe Campaign de créer des publications sur votre compte, modifiez les **autorisations d’application** de la section Configuration de l’authentification de l’utilisateur de votre application. Sélectionnez **Lecture, écriture et messages directs**.
 
-   ![](assets/tw-permissions.png)
+   ![Autorisations d&#39;application avec lecture et écriture et message direct sélectionnées](assets/tw-permissions.png)
 
 1. Dans la section **Type d’application**, sélectionnez **Application web, application automatisée ou robot**. Vous pouvez laisser le champ **URL de rappel** vide et enregistrer votre configuration.
 
-   ![](assets/tw-app-type.png)
+   ![Type d&#39;application avec application web, application automatisée ou robot sélectionné comme client confidentiel](assets/tw-app-type.png)
 
 1. Revenez au tableau de bord de votre application, sélectionnez votre application et accédez à l’onglet **Clés et jetons**. Sous **Jeton d’accès et secret**, si l’autorisation **Lecture, écriture et messages directs** n’est pas mentionnée, vous devez régénérer le jeton et le secret de votre application. Notez que toutes les clés et tous les jetons doivent être enregistrés lors de leur création. Vous en aurez besoin pour configurer votre service Campaign Twitter.
 
-   ![](assets/tw-permissions-check.png)
+   ![Jetons d’authentification affichant le jeton d’accès et le secret créés avec les autorisations de lecture, d’écriture et de messages directs](assets/tw-permissions-check.png)
 
 
 >[!NOTE]
@@ -122,7 +122,7 @@ Pour entrer des paramètres, vous devez accéder à la fois à la console client
 
 1. Par défaut, les abonnés sont enregistrés dans le dossier **[!UICONTROL Visiteurs]**. Vous pouvez sélectionner un autre emplacement dans le champ **[!UICONTROL Dossier des visiteurs]**. [En savoir plus](../send/twitter.md#direct-tw-messages)
 
-   ![](assets/tw-service-in-ac.png)
+   ![Formulaire de nouvelles offres de service disponibles avec libellé, type d’e-mail, dossier des visiteurs et champs de consommateur et de jeton d’accès OAuth](assets/tw-service-in-ac.png)
 
    >[!NOTE]
    >
@@ -138,7 +138,7 @@ Pour vérifier vos paramètres, vous pouvez :
 
 * Modifier le service **Twitter** que vous venez de créer.
 * Parcourir l’onglet **[!UICONTROL Page Twitter]** : votre compte Twitter doit s’afficher.
-  ![](assets/tw-page.png)
+  ![Onglet de la page Twitter du Service dans la console Adobe Campaign affichant le compte Jane Marge lié](assets/tw-page.png)
 
 ## Synchroniser votre compte X {#synchro-tw-accounts}
 
@@ -148,7 +148,7 @@ Ils sont arrêtés par défaut : vous devez les démarrer manuellement lorsque v
 
 Le workflow technique **[!UICONTROL Synchronisation des comptes Twitter]** synchronise les comptes X dans Adobe Campaign. Ce workflow récupère la liste des abonnées et abonnés X afin que vous puissiez leur envoyer des messages directs. [En savoir plus](../send/twitter.md#direct-tw-messages)
 
-Par défaut, ce workflow est déclenché tous les jeudis à 7 h 30. Vous pouvez utiliser l’option **[!UICONTROL Exécuter la ou les tâches en attente maintenant]** pour démarrer le workflow à tout moment pendant que vous mettez en œuvre cette intégration.  Vous pouvez également modifier le planificateur pour modifier la fréquence de déclenchement du workflow. En savoir plus à ce propos sur [cette page](../../automation/workflow/scheduler.md).
+Par défaut, ce workflow est déclenché tous les jeudis à 7 h 30. Vous pouvez utiliser l’option **[!UICONTROL Exécuter la ou les tâches en attente maintenant]** pour démarrer le workflow à tout moment pendant que vous mettez en œuvre cette intégration.  Vous pouvez également modifier le planificateur pour modifier la fréquence de déclenchement du workflow. En savoir plus sur la section [Configuration de l&#39;activité Planificateur](../../automation/workflow/scheduler.md#configuring-scheduler-activity).
 
 >[!CAUTION]
 >
@@ -175,6 +175,6 @@ Outre un compte X, créez un compte X privé qui peut être utilisé pour envoye
 1. Accédez aux **Paramètres** du compte.
 1. Accédez à **Confidentialité et sécurité**, puis à **Audience et identification**. Sélectionnez l’option **Protéger mes publications**. Vos publications et autres informations de compte ne sont visibles que par les personnes qui vous suivent.
 
-![](assets/do-not-localize/social_tw_test_page.png)
+![X paramètres Audience, média et page de balisage avec l&#39;option Protéger vos publications sélectionnée](assets/do-not-localize/social_tw_test_page.png)
 
 Configurez votre application X et le service Campaign pour qu’ils fonctionnent avec ce compte de test, comme décrit ci-dessus.
