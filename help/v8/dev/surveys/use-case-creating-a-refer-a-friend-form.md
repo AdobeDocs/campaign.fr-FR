@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 95%
+source-wordcount: '825'
+ht-degree: 74%
 ---
 # Cas d’utilisation : création d’un formulaire de référence{#use-case-creating-a-refer-a-friend-form}
 
@@ -45,7 +45,7 @@ ht-degree: 95%
 
 Dans cet exemple, nous allons proposer un jeu-concours aux destinataires de la base de données. Le formulaire web de participation inclura une section permettant d’indiquer des réponses, et une autre permettant de parrainer un ami ou une amie en communiquant son adresse e-mail.
 
-![](assets/s_ncs_admin_survey_viral_sample_0.png)
+![Formulaire de concours avec zone d&#39;identification, zone de quiz avec questions aléatoires et zone d&#39;invitation pour recommander un ami](assets/s_ncs_admin_survey_viral_sample_0.png)
 
 Les blocs d&#39;identification et de jeu sont construits selon les procédures décrites ci-avant, dans ce document.
 
@@ -53,7 +53,7 @@ Les étapes de paramétrage et de réalisation du bloc de parrainage sont les su
 
 1. Créez un formulaire Web de jeu-concours, avec des questions et une zone de saisie des coordonnées d&#39;un ami, comme dans l&#39;exemple ci-dessous :
 
-   ![](assets/s_ncs_admin_survey_viral_sample_2.png)
+   ![Structure de formulaire de concours avec une section Identification, Jeu et Parrainage avec des champs de contact d&#39;ami](assets/s_ncs_admin_survey_viral_sample_2.png)
 
    Le champ **Votre message** permet de saisir un message à l’intention du filleul ou de la filleule. Le parrain ou la marraine doit également saisir ses **Nom**, **Prénom** et **E-mail**.
 
@@ -65,7 +65,7 @@ Les étapes de paramétrage et de réalisation du bloc de parrainage sont les su
    >
    >Dans notre exemple, nous allons en cibler les destinataires pour leur proposer de participer à ce concours, sur les conseils de leur parrain ou marraine. Cependant, dans ce message, nous souhaitons également leur proposer un abonnement à l’un de nos services d’information. Si ces personnes s’abonnent, elles peuvent être stockés dans la base de données.
 
-   ![](assets/s_ncs_admin_survey_viral_sample_5.png)
+   ![Structure de formulaire avec le champ Son nom dans la section Référencer un ami sélectionnée](assets/s_ncs_admin_survey_viral_sample_5.png)
 
    Le contenu des champs relatifs au filleul sera utilisé dans le script de création de son profil ainsi que dans le message qui lui sera adressé.
 
@@ -73,7 +73,7 @@ Les étapes de paramétrage et de réalisation du bloc de parrainage sont les su
 
    Il contient les instructions suivantes :
 
-   ![](assets/s_ncs_admin_survey_viral_sample_4.png)
+   ![Diagramme de formulaire avec la zone de script d&#39;informations du parrain ouverte, définissant les champs d&#39;identifiant visiteur, d&#39;URL de transfert et de parrain](assets/s_ncs_admin_survey_viral_sample_4.png)
 
    ```javascript
    ctx.recipient.visitor.@id = xtk.session.GetNewIds(1)
@@ -89,23 +89,23 @@ Les étapes de paramétrage et de réalisation du bloc de parrainage sont les su
 
 1. La boîte d&#39;enregistrement permet de collecter les informations et les stocker dans la base de données.
 
-   ![](assets/s_ncs_admin_survey_viral_sample_4b.png)
+   ![Boîte de dialogue de stockage avec l&#39;élément Visiteur sélectionné dans les options de réconciliation pour stocker le filleul](assets/s_ncs_admin_survey_viral_sample_4b.png)
 
 1. Créez ensuite le modèle de diffusion associé au service d&#39;information créé lors de l&#39;étape 1. Il sera sélectionné dans le champ **[!UICONTROL Choix du scénario]** du service d&#39;information.
 
    Le modèle de diffusion utilisé pour créer le message de proposition de parrainage contient les informations suivantes :
 
-   ![](assets/s_ncs_admin_survey_viral_sample_7.png)
+   ![Inviter un modèle de diffusion ami avec un objet et du contenu HTML qui utilise des champs de personnalisation](assets/s_ncs_admin_survey_viral_sample_7.png)
 
    Les caractéristiques de ce modèle sont les suivantes :
 
    * Vous devez sélectionner la table des visiteurs comme mapping de ciblage.
 
-     ![](assets/s_ncs_admin_survey_viral_sample_7b.png)
+     ![Boîte de dialogue Sélectionner la cible avec les visiteurs (nms:visitor) sélectionnés comme mapping de ciblage de la diffusion](assets/s_ncs_admin_survey_viral_sample_7b.png)
 
    * Les coordonnées du filleul ou de la filleule, ainsi que les informations relatives au parrain ou à la marraine, proviennent de la table des visiteurs et visiteuses. Elles sont insérées à l’aide du bouton de personnalisation.
 
-     ![](assets/s_ncs_admin_survey_viral_sample_7a.png)
+     ![Menu Personalization dans le contenu de la diffusion, sous-menu Visiteur répertoriant les champs Nom, Prénom, E-mail et Référent](assets/s_ncs_admin_survey_viral_sample_7a.png)
 
    * Ce modèle contient un lien vers le formulaire du jeu-concours et le lien d&#39;inscription pour que le filleul puisse s&#39;abonner à la newsletter.
 
@@ -119,7 +119,7 @@ Les étapes de paramétrage et de réalisation du bloc de parrainage sont les su
 
 1. Créez le second script qui permet de procéder à l’envoi des messages d’abonnement.
 
-   ![](assets/s_ncs_admin_survey_viral_sample_7c.png)
+   ![Stockage du filleul de la boîte de script et envoi du message, avec un code qui met en file d&#39;attente la notification par e-mail au filleul](assets/s_ncs_admin_survey_viral_sample_7c.png)
 
    ```javascript
    // Updtate visitor to have a link to the referrer recipient
@@ -146,10 +146,10 @@ Les étapes de paramétrage et de réalisation du bloc de parrainage sont les su
 
 1. Publiez le formulaire du jeu-concours et envoyez une proposition de participation aux destinataires de la cible initiale. Lorsque l&#39;un d&#39;entre eux souhaite inviter un ami à participer, une diffusion basée sur le modèle **Offre de parrainage** est créée.
 
-   ![](assets/s_ncs_admin_survey_viral_sample_8.png)
+   ![Page du quiz terminée avec une section Inviter un ami et la liste des diffusions indiquant que la diffusion est en cours](assets/s_ncs_admin_survey_viral_sample_8.png)
 
    Le filleul est ajouté dans le dossier des visiteurs, sous le noeud **[!UICONTROL Administration > Visiteurs]** :
 
-   ![](assets/s_ncs_admin_survey_viral_sample_9.png)
+   ![Dossier des visiteurs répertoriant le filleul, avec l’onglet Général du visiteur indiquant le nom, l’adresse électronique et le référent](assets/s_ncs_admin_survey_viral_sample_9.png)
 
    Leur profil contient les informations saisies par leur parrain ou marraine. Il est stocké en fonction des paramétrages renseignés dans le script du formulaire. Si ces personnes décident de s’abonner à la newsletter, elles seront enregistrées dans la table des destinataires.

@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 100%
+source-wordcount: '1354'
+ht-degree: 77%
 ---
 # Rendu du formulaire{#form-rendering}
 
@@ -39,17 +39,17 @@ ht-degree: 100%
 
 Les paramètres du formulaire permettent de sélectionner le modèle utilisé pour générer les pages. Pour y accéder, cliquez sur le bouton **[!UICONTROL Propriétés]** dans la barre d’outils des détails du formulaire, puis sélectionnez l’onglet **[!UICONTROL Rendu]**. Plusieurs modèles (feuilles de style) sont disponibles par défaut.
 
-![](assets/s_ncs_admin_survey_rendering_select.png)
+![Onglet de rendu des propriétés du formulaire avec la liste Modèle ouverte, affichant le formulaire standard et le thème 1 au thème 7.](assets/s_ncs_admin_survey_rendering_select.png)
 
 La section inférieure de l&#39;éditeur permet de visualiser un exemple de rendu du modèle sélectionné.
 
 La loupe permet d&#39;éditer le modèle sélectionné.
 
-![](assets/s_ncs_admin_survey_render_edit.png)
+![Boîte de dialogue du thème 5 du modèle de génération de formulaire avec le lien de mise en page et les paramètres CSS.](assets/s_ncs_admin_survey_render_edit.png)
 
 Vous pouvez modifier ou remplacer ces modèles. Pour cela, cliquez sur le lien **[!UICONTROL Mise en page]** et personnalisez les informations.
 
-![](assets/s_ncs_admin_survey_render_edit_param.png)
+![Boîte de dialogue Disposition de page, onglet Propriétés, avec image du logo, largeur et hauteur, et chemin d&#39;accès à l&#39;image d&#39;aperçu.](assets/s_ncs_admin_survey_render_edit_param.png)
 
 Vous pouvez ainsi :
 
@@ -58,19 +58,19 @@ Vous pouvez ainsi :
 
 L&#39;onglet **[!UICONTROL En-têtes/Pieds]** permet de modifier les informations affichées en en-tête et pied de page de chacune des pages des formulaires utilisant ce modèle.
 
-![](assets/s_ncs_admin_survey_render_edit_header.png)
+![Boîte de dialogue Disposition de page, onglet En-têtes/pieds de page, avec des lignes d&#39;en-têtes de page et de pieds de page et des champs Position.](assets/s_ncs_admin_survey_render_edit_header.png)
 
 Chaque ligne des sections **[!UICONTROL En-têtes de page]** et **[!UICONTROL Pieds de page]** correspond à une ligne dans la page HTML. Cliquez sur **[!UICONTROL Ajouter]** pour créer une nouvelle ligne.
 
 Sélectionnez une ligne existante et cliquez sur le bouton **[!UICONTROL Détail]** pour la personnaliser.
 
-![](assets/s_ncs_admin_survey_render_edit_header_detail.png)
+![Boîte de dialogue détaillée des en-têtes de page avec les onglets Mise en page, Bordures et Police et contenu des zones gauche et droite.](assets/s_ncs_admin_survey_render_edit_header_detail.png)
 
 Vous pouvez modifier le contenu de la ligne, ajouter des bordures et changer les attributs de la police de caractères utilisée à partir des onglets correspondants. Cliquez sur **[!UICONTROL OK]** pour valider ces modifications.
 
 Les champs **[!UICONTROL Position]** permettent de définir la position des éléments dans l&#39;en-tête et dans le pied de page.
 
-![](assets/s_ncs_admin_survey_render_edit_header_position.png)
+![Onglet En-têtes/pieds de page avec les listes Position des en-têtes et pieds de page, offrant Masqué, En dehors de la page, Dans la page.](assets/s_ncs_admin_survey_render_edit_header_position.png)
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ Vous pouvez surcharger la feuille de style au niveau de chaque élément du form
 
 Pour cela, utilisez l&#39;onglet **[!UICONTROL Avancé]**.
 
-![](assets/s_ncs_admin_survey_advanced_tab.png)
+![Onglet avancé d’un élément de formulaire avec des paramètres d’affichage tels que le nombre de cellules et l’alignement vertical.](assets/s_ncs_admin_survey_advanced_tab.png)
 
 Il permet de définir les propriétés suivantes :
 
@@ -98,7 +98,7 @@ Il permet de définir les propriétés suivantes :
 * **[!UICONTROL Lignes]** : nombre de lignes pour une zone de type **[!UICONTROL Texte Multi-lignes]**,
 * **[!UICONTROL Style intégré]** : permet de surcharger la feuille de style CSS avec des paramètres supplémentaires. Ces derniers sont séparés à l’aide des caractères **;** comme illustré dans l’exemple ci-dessous :
 
-  ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
+  ![Onglet avancé avec la valeur Style intégrée définie sur font-size:16pt ; arrière-plan : bleu.](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
 ### Définir les en-têtes et pieds de page {#defining-headers-and-footers}
 
@@ -106,7 +106,7 @@ Les champs sont enchaînés dans une arborescence dont la racine porte le nom de
 
 Le titre de la fenêtre doit être saisi dans l’onglet **[!UICONTROL Page]** de la fenêtre des propriétés du formulaire. Vous pouvez également ajouter un contenu défini à l’en-tête et au pied-de-page (ces informations s’affichent sur chaque page). Ce contenu doit être saisi dans les sections correspondantes de l&#39;onglet **[!UICONTROL Textes]**, comme dans l&#39;exemple ci-dessous :
 
-![](assets/s_ncs_admin_survey_titles_config.png)
+![Onglet Page des propriétés du formulaire avec le titre de la fenêtre, l&#39;en-tête et le pied de page.](assets/s_ncs_admin_survey_titles_config.png)
 
 ### Ajouter des éléments dans l&#39;en-tête HTML {#adding-elements-to-html-header}
 
@@ -114,7 +114,7 @@ Vous pouvez saisir des élément additionnels à insérer dans l&#39;en-tête HT
 
 Ainsi, par exemple, vous pouvez y référencer une icône qui sera affichée dans la barre de titre de la page.
 
-![](assets/webform_header_page_tab.png)
+![Onglet En-tête de page avec un élément de lien pour une icône de raccourci ajoutée à l’en-tête HTML.](assets/webform_header_page_tab.png)
 
 ## Définir les paramètres de contrôle {#defining-control-settings}
 
@@ -124,19 +124,19 @@ Lorsque l&#39;utilisateur renseigne le formulaire, une vérification de certains
 
 Pour rendre obligatoire le renseignement d&#39;un champ, vous devez cocher l&#39;option correspondante lors de la création du champ.
 
-![](assets/s_ncs_admin_survey_required_field.png)
+![Onglet Général du champ avec l&#39;option Obligatoire activée pour le champ Nom.](assets/s_ncs_admin_survey_required_field.png)
 
 Lorsque l’utilisateur ou l’utilisatrice valide la page, si le champ n’est pas renseigné, le message d’erreur sera le suivant :
 
-![](assets/s_ncs_admin_survey_required_default_msg.png)
+![Page de formulaire affichant le message d&#39;erreur par défaut Le champ &#39;Nom&#39; est obligatoire, avec le champ vide en surbrillance.](assets/s_ncs_admin_survey_required_default_msg.png)
 
 Vous pouvez personnaliser ce message en cliquant sur le lien **[!UICONTROL Personnaliser ce message]**.
 
-![](assets/s_ncs_admin_survey_required_custom_msg.png)
+![La boîte de dialogue de personnalisation des messages s’est ouverte à partir de Personnaliser le message avec du texte personnalisé pour un champ obligatoire vide.](assets/s_ncs_admin_survey_required_custom_msg.png)
 
 Lorsque l’utilisateur ou l’utilisatrice valide la page, si le champ n’est pas renseigné, le message d’erreur sera le suivant :
 
-![](assets/s_ncs_admin_survey_required_custom_msg2.png)
+![Page de formulaire affichant le message CHAMP OBLIGATOIRE personnalisé au-dessus du champ vide mis en surbrillance.](assets/s_ncs_admin_survey_required_custom_msg2.png)
 
 ### Contrôler le format des données {#checking-data-format}
 
@@ -146,7 +146,7 @@ Pour les contrôles du formulaire dont les valeurs seront stockées dans une var
 
 Par exemple, si vous créez un contrôle de type **[!UICONTROL Nombre]** pour stocker le numéro du client, comme dans l&#39;exemple suivant :
 
-![](assets/s_ncs_admin_survey_choose_format.png)
+![Champ de type Nombre stockant sa valeur dans une variable client, avec boîtes de dialogue Stockage et Modifier les branches affichant le type Entier.](assets/s_ncs_admin_survey_choose_format.png)
 
 L&#39;utilisateur devra saisir un nombre entier dans le champ correspondant du formulaire.
 
@@ -156,13 +156,13 @@ Vous pouvez configurer l’affichage des champs de la page en fonction des valeu
 
 Pour chaque élément de la page, la section **[!UICONTROL Visibilité]** permet de définir la ou les conditions d&#39;affichage.
 
-![](assets/s_ncs_admin_survey_condition_edit.png)
+![Onglet Général du conteneur avec le lien Modification de la visibilité ouvrant la boîte de dialogue Condition de visibilité.](assets/s_ncs_admin_survey_condition_edit.png)
 
 Les conditions peuvent porter sur la valeur de champs de la base ou de variables.
 
 Dans la fenêtre de sélection d&#39;un champ, vous pouvez sélectionner parmi les données disponibles :
 
-![](assets/s_ncs_admin_survey_condition_select.png)
+![Sélectionnez une boîte de dialogue de champ affichant l&#39;arborescence contextuelle avec l&#39;identifiant, la langue, l&#39;origine, les destinataires et les variables.](assets/s_ncs_admin_survey_condition_select.png)
 
 * L’arborescence principale contient les paramètres du contexte du formulaire. Les paramètres par défaut sont Identifiant (qui correspond à l’identifiant chiffré de la personne destinataire), Langue et Origine.
 
@@ -186,11 +186,11 @@ Pour importer un élément dans un formulaire, les étapes sont les suivantes :
 
 1. Editez la page dans laquelle vous souhaitez inclure un ou plusieurs éléments et cliquez sur le bouton **[!UICONTROL Importer un bloc existant]** de la barre d&#39;outils.
 
-   ![](assets/s_ncs_admin_survey_import_block.png)
+   ![Barre d&#39;outils de l&#39;éditeur de page avec le bouton Importer un bloc existant en surbrillance.](assets/s_ncs_admin_survey_import_block.png)
 
 1. Sélectionnez le formulaire Web contenant les champs à importer et choisissez les conteneurs et les champs à importer.
 
-   ![](assets/s_ncs_admin_survey_import_block_selection.png)
+   ![Importez une boîte de dialogue de bloc existante avec une application Web source et les blocs à importer sont vérifiés.](assets/s_ncs_admin_survey_import_block_selection.png)
 
    >[!NOTE]
    >
@@ -198,4 +198,4 @@ Pour importer un élément dans un formulaire, les étapes sont les suivantes :
 
 1. Cliquez sur **[!UICONTROL Ok]** pour valider l&#39;insertion des éléments.
 
-   ![](assets/s_ncs_admin_survey_import_block_rendering.png)
+   ![Arborescence de pages après l&#39;importation, contenant désormais les champs Nom, Pays, N° de compte et E-mail.](assets/s_ncs_admin_survey_import_block_rendering.png)

@@ -25,24 +25,24 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 100%
+source-wordcount: '158'
+ht-degree: 61%
 ---
 # Mise à jour de la structure de la base de données {#updating-the-database-structure}
 
 Pour appliquer les modifications apportées aux schémas, lancez l’Assistant de mise à jour de la base de données. Cet assistant est accessible via **[!UICONTROL Outils > Avancé > Mise à jour de la structure de la base de données]**. Il vérifie que la structure physique de la base de données correspond bien à sa description logique et exécute les scripts de mise à jour SQL.
 
-![](assets/schema_update.png)
+![Assistant de mise à jour de la base de données : mettez à jour la page des paramètres avec le bouton Suivant pour lancer le processus de découverte automatique](assets/schema_update.png)
 
 Les modules présents dans la base de données sont automatiquement renseignés et activés.
 
-![](assets/schema_update_select2.png)
+![Assistant de mise à jour de la base de données : page Modifier les tables répertoriant les tables, la table CusContracts étant définie pour se synchroniser](assets/schema_update_select2.png)
 
 Suivez les étapes et visualisez le script SQL de mise à jour de la base de données :
 
-![](assets/schema_update2.png)
+![Assistant de mise à jour de la base de données : page Mettre à jour le script avec le script SQL CREATE TABLE pour CusContracts](assets/schema_update2.png)
 
 >[!NOTE]
 >
@@ -50,4 +50,4 @@ Suivez les étapes et visualisez le script SQL de mise à jour de la base de don
 
 Lancez ensuite la mise à jour de la base de données :
 
-![](assets/schema_update3.png)
+![Assistant de mise à jour de la base de données Démarrez la page de mise à jour de la base de données avec le journal indiquant la mise à jour effectuée à 100 %](assets/schema_update3.png)

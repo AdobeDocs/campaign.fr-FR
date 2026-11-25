@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 73%
+source-wordcount: '370'
+ht-degree: 69%
 ---
 # Prise en main de l‘éditeur HTML Campaign{#about-campaign-html-editor}
 
@@ -63,7 +63,7 @@ Cette section présente les étapes clés de modification et de chargement du co
 
 Le fonctionnement général est le suivant :
 
-![](assets/dce_schema.png)
+![La page de destination et la diffusion par e-mail passent par le Digital Content Editor, puis sont publiées ou envoyées](assets/dce_schema.png)
 
 Pour créer une **application web** simple, vous devez :
 

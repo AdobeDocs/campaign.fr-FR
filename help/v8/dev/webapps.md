@@ -27,10 +27,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 64%
+source-wordcount: '251'
+ht-degree: 59%
 ---
 # Prise en main des applications et formulaires web{#gs-ac-web}
 
@@ -44,7 +44,7 @@ Adobe Campaign intègre un module graphique pour la définition et la publicatio
 
 Découvrez comment créer et publier des formulaires web dans [Prise en main des formulaires web](web/about-web-forms.md).
 
-![](assets/sample.png)
+![Exemple de formulaire web pour un abonnement à une newsletter par e-mail avec des champs d&#39;e-mail, de nom et de pays et un bouton S&#39;abonner.](assets/sample.png)
 
 Adobe Campaign vous permet également de créer et de publier des **applications web** dynamiques et interactives, composées de données issues de la base de données et dont le contenu est adapté en fonction des droits de l’utilisateur connecté.
 

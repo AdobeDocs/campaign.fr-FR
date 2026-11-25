@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 86%
+source-wordcount: '740'
+ht-degree: 82%
 ---
 # Désinscription (opt-out) du tracking des applications web{#web-application-tracking-opt-out}
 
@@ -66,11 +66,11 @@ Si le tracking web est activé, vous pouvez sélectionner l&#39;une des options 
 * Aucune bannière.
 * Configurer la bannière manuellement dans chaque page : cochez cette option et sélectionnez la bannière dans chaque page dans les propriétés de page.
 
-  ![](assets/pageproperties.png)
+  ![En-tête de la boîte de dialogue Propriétés de la page avec l&#39;option Activer les transitions sortantes activée.](assets/pageproperties.png)
 
 * Ajouter automatiquement la bannière à toutes les pages : sélectionnez la bannière directement dans les propriétés de l&#39;application Web.
 
-  ![](assets/optoutconfig.png)
+  ![Onglet Général des propriétés de l&#39;application Web avec les options de bannière d&#39;opt-out : Pas de bannière, manuel par page ou automatique.](assets/optoutconfig.png)
 
 >[!NOTE]
 >

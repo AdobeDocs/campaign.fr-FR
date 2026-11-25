@@ -38,10 +38,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 90%
+source-wordcount: '1383'
+ht-degree: 85%
 ---
 # Utilisation des schémas{#gs-ac-schemas}
 
@@ -97,7 +97,7 @@ Le premier sous-élément **`<element>`** correspond à la racine de l&#39;entit
 >
 >L&#39;élément racine de l&#39;entité porte le nom du schéma.
 
-![](assets/schema_and_entity.png)
+![Un schéma définit la structure XML des données du destinataire ; une entité est un enregistrement spécifique qui la suit.](assets/schema_and_entity.png)
 
 Les balises **`<element>`** définissent les noms des éléments d&#39;entité. Les balises **`<attribute>`** du schéma définissent les noms des attributs dans les balises **`<element>`** auxquelles elles ont été liées.
 
@@ -137,7 +137,7 @@ Pour ajouter un tout nouveau type de données qui n’existe pas par défaut dan
 
 Pour plus d’informations, consultez la section [Créer un nouveau schéma](create-schema.md).
 
-![](assets/schemaextension_1.png)
+![Assistant de création de schéma de données, étape de type Schéma, avec les options Nouvelle table et Extension d&#39;un schéma mises en surbrillance.](assets/schemaextension_1.png)
 
 
 Une fois que vous avez créé ou étendu un schéma, il est recommandé de définir les éléments de son contenu XML dans l&#39;ordre présenté ci-dessous.
@@ -227,7 +227,7 @@ En savoir plus sur les clés dans [Mapping de la base de données Campaign](data
 
 Les attributs vous permettent de définir les champs qui constituent votre objet de données. Vous pouvez utiliser le bouton **[!UICONTROL Insérer]** dans la barre d’outils d’édition du schéma pour déposer les modèles d’attribut vides dans le XML où se trouve votre curseur. En savoir plus dans [Créer un schéma dans Campaign](create-schema.md).
 
-![](assets/schemaextension_2.png)
+![L&#39;étape Modifier le schéma avec le menu Insertion ouvert permet d&#39;ajouter un attribut tel qu&#39;une chaîne, une valeur booléenne, un entier ou une date.](assets/schemaextension_2.png)
 
 La liste complète des attributs est disponible dans la section consacrée aux éléments `<attribute>` de la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=fr#content-model){target="_blank"}. Voici quelques-uns des attributs les plus utilisés : **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
 
@@ -311,7 +311,7 @@ Procédez comme dans l&#39;exemple ci-dessous pour inclure les champs relatifs �
 
 Une fois vos modifications apportées et enregistrées, toutes les modifications susceptibles d&#39;avoir un impact sur la structure SQL doivent être appliquées à la base de données. Pour ce faire, utilisez l&#39;assistant de mise à jour de la base de données.
 
-![](assets/schemaextension_3.png)
+![Outils, menu Avancé dans la console avec Mettre à jour la structure de la base de données sélectionné pour appliquer les modifications du schéma.](assets/schemaextension_3.png)
 
 Pour plus d&#39;informations, consultez la section [Mettre à jour la structure de la base de données](update-database-structure.md).
 

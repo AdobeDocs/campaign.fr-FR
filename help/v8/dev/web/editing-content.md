@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1280'
-ht-degree: 100%
+source-wordcount: '1606'
+ht-degree: 79%
 ---
 # Modifier le contenu{#editing-content}
 
@@ -43,13 +43,13 @@ Vous pouvez spécifier une condition de visibilité sur un élément de la page 
 
 Pour ajouter une condition de visibilité, sélectionnez un bloc et saisissez la condition à remplir dans le champ **[!UICONTROL Condition de visibilité]** au moyen de l&#39;éditeur d&#39;expression.
 
-![](assets/dce_add_condition.png)
+![Éditeur de contenu avec le champ Condition de visibilité et l’icône d’édition en surbrillance dans le panneau d’options Bloc de droite](assets/dce_add_condition.png)
 
 >[!NOTE]
 >
 >La modification d’expression avancée est présentée dans [cette page](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} (documentation de Campaign v8).
 
-![](assets/dce_popup_visibilitycondition.png)
+![Boîte de dialogue de l&#39;éditeur d&#39;expression avec la liste Champs disponibles, la liste des fonctions et le bouton Insérer](assets/dce_popup_visibilitycondition.png)
 
 Ces conditions adoptent la syntaxe d’expression XTK (par exemple **ctx.recipient.@email != &quot;&quot;** ou **ctx.recipient.@status==&quot;0&quot;**). Par défaut, tous les champs sont visibles.
 
@@ -61,11 +61,11 @@ Ces conditions adoptent la syntaxe d’expression XTK (par exemple **ctx.recipie
 
 Vous pouvez ajouter une **bordure** au bloc sélectionné. Les bordures sont définies à l’aide de trois options : style, taille et couleur.
 
-![](assets/dce_popup_border.png)
+![Boîte de dialogue Bordures avec style, taille, sélecteur de couleurs et aperçu avec arrière-plans transparent, clair et sombre](assets/dce_popup_border.png)
 
 Vous pouvez aussi définir une **couleur d’arrière-plan** en sélectionnant une couleur dans le nuancier.
 
-![](assets/dce_popup_background.png)
+![Boîte de dialogue arrière avec un sélecteur de couleurs, un curseur d&#39;opacité et un aperçu avec les options Transparent, Light et Dark](assets/dce_popup_background.png)
 
 ## Editer les formulaires {#editing-forms}
 
@@ -73,7 +73,7 @@ Vous pouvez aussi définir une **couleur d’arrière-plan** en sélectionnant u
 
 Vous pouvez associer des champs de la base à des blocs de type zone de saisie, bouton radio ou case à cocher.
 
-![](assets/dce_sidebar_field.png)
+![Options de zone de saisie (texte) avec la section Données de formulaire, le champ défini sur Aucune donnée et le bouton bascule Obligatoire Oui/Non](assets/dce_sidebar_field.png)
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ La zone de sélection **Champ** permet de sélectionner un champ de la base de d
 
 Par défaut, les champs proposés sont ceux de la table **nms:recipient**.
 
-![](assets/dce_field_selection.png)
+![Champ de la boîte de dialogue Destinataire répertoriant les champs nms:recipient tels que l’e-mail, le prénom et le nom](assets/dce_field_selection.png)
 
 L’option **Champ obligatoire** permet de n’autoriser la validation de la page que si l’utilisateur ou l’utilisatrice a renseigné le champ. Si un champ obligatoire n’est pas renseigné, un message d’erreur s’affiche.
 
@@ -95,11 +95,11 @@ Pour ce faire :
 
 * Cliquez sur l&#39;icône **[!UICONTROL Edition]**.
 
-  ![](assets/dce_sidebar_options.png)
+  ![Options de case à cocher avec la section Données de formulaire et son icône Modifier mise en surbrillance au-dessus des paramètres Type, Champ et Obligatoire](assets/dce_sidebar_options.png)
 
 * Complétez le champ **[!UICONTROL Valeur]** avec la valeur de l&#39;énumération associée (définie par le champ sélectionné).
 
-  ![](assets/dce_sidebar_completeoptionradio.png)
+  ![Boîte de dialogue de données de formulaire avec les champs Valeur si coché et Valeur si non coché en surbrillance](assets/dce_sidebar_completeoptionradio.png)
 
 ### Modifier les champs de formulaires {#modifying-form-fields}
 
@@ -111,13 +111,13 @@ Vous pouvez ainsi :
 * Dupliquer le champ sélectionné en créant un nouveau bloc, à partir de l&#39;icône **[!UICONTROL Dupliquer]**.
 * Editer la fenêtre **[!UICONTROL Données de formulaire]** afin d&#39;associer un champ de la base à la zone du formulaire, à partir de l&#39;icône **[!UICONTROL Editer]**.
 
-  ![](assets/dce_toolbar_formblock_edition.png)
+  ![Boîte de dialogue de données de formulaire avec le sélecteur de champ défini sur Aucune donnée et le bouton bascule Obligatoire Oui/Non](assets/dce_toolbar_formblock_edition.png)
 
 ## Ajouter une action sur un bouton {#adding-an-action-to-a-button}
 
 Lorsque l’utilisateur ou l’utilisatrice clique sur un bouton, vous pouvez définir une action associée. Pour cela, sélectionnez l’action à réaliser dans la liste déroulante.
 
-![](assets/dce_sidebar_button.png)
+![Options de lien hypertexte avec la liste déroulante Action Pour définir, Aucune, Actualiser, Page suivante et Étape précédente](assets/dce_sidebar_button.png)
 
 Les actions disponibles sont les suivantes :
 
@@ -137,11 +137,11 @@ Vous pouvez insérer un lien sur tout élément de la page : image, mot, groupe
 
 Pour cela, sélectionnez l’élément, puis utilisez la première icône du menu pop-up.
 
-![](assets/dce_insertlink_icon.png)
+![Barre d&#39;outils de blocs avec l&#39;icône d&#39;insertion mise en surbrillance, utilisée pour ouvrir le menu de lien](assets/dce_insertlink_icon.png)
 
 Cette icône permet d&#39;accéder à tous les types de liens disponibles.
 
-![](assets/dce_insertlink_menu.png)
+![Menu Insertion avec champ Personalization, blocs Personalization et types de liens : URL externe, action, application web](assets/dce_insertlink_menu.png)
 
 Les blocs de personnalisation et champs de personnalisation ne peuvent être insérés que dans des blocs de type Texte.
 
@@ -163,7 +163,7 @@ Les blocs de personnalisation et champs de personnalisation ne peuvent être ins
 
 L&#39;option **Lien vers une URL externe** permet d&#39;ouvrir n&#39;importe quelle URL à partir du contenu source.
 
-![](assets/dce_toolbar_imgblock_externallink.png)
+![Insérer une boîte de dialogue de lien pour une URL externe avec les champs URL et Cible](assets/dce_toolbar_imgblock_externallink.png)
 
 Saisissez l&#39;adresse du lien en question dans le champ **URL**. Le champ URL doit être renseigné comme suit : **https://www.myURL.com**.
 
@@ -171,7 +171,7 @@ Saisissez l&#39;adresse du lien en question dans le champ **URL**. Le champ URL 
 
 L&#39;option **Lien vers une application Web** permet d&#39;accéder à une application Web Adobe Campaign.
 
-![](assets/dce_toolbar_imgblock_appweb.png)
+![Insérer une boîte de dialogue de lien pour une application web avec l&#39;application web et les champs cibles](assets/dce_toolbar_imgblock_appweb.png)
 
 Sélectionnez l&#39;application Web à partir du champ correspondant.
 
@@ -181,7 +181,7 @@ La liste des applications Web proposées correspond aux applications notamment d
 
 L&#39;option **Lien définissant une action** permet de paramétrer une action lors du clic sur l&#39;élément-source.
 
-![](assets/dce_toolbar_imgblock_action.png)
+![Insérer une boîte de dialogue de lien pour une action avec les champs Action et Cible](assets/dce_toolbar_imgblock_action.png)
 
 >[!NOTE]
 >
@@ -202,7 +202,7 @@ Lorsqu&#39;un lien a été inséré, la barre d&#39;outils propose deux nouvelle
 
 Lorsque vous sélectionnez un élément de texte, vous pouvez modifier les attributs de la police de caractères (style, format).
 
-![](assets/dce_toolbar_txt.png)
+![Boutons de la barre d&#39;outils Texte : agrandir ou réduire la police, gras, italique, souligné, alignement, couleur d&#39;arrière-plan et couleur de police](assets/dce_toolbar_txt.png)
 
 Les options disponibles sont les suivantes :
 
@@ -235,11 +235,11 @@ Le Digital Content Editor permet de travailler avec **tous types d&#39;images** 
 
 Pour insérer une image, sélectionnez un bloc de type Image et cliquez sur l&#39;icône **Image**.
 
-![](assets/dce_insert_image.png)
+Barre d&#39;outils du bloc d&#39;image ![avec l&#39;icône Image mise en surbrillance pour insérer une image](assets/dce_insert_image.png)
 
 Sélectionnez un fichier image enregistré en local.
 
-![](assets/dce_popup_imgupload.png)
+![Boîte de dialogue de sélection d’image avec le bouton Parcourir pour sélectionner un fichier image local](assets/dce_popup_imgupload.png)
 
 L’icône **Supprimer** supprime la balise contenant l’image.
 
@@ -256,7 +256,7 @@ Lorsque vous sélectionnez un bloc contenant une image, vous accédez aux propri
 * **Légende** permet de définir une légende associée à l&#39;image (correspond à l&#39;attribut HTML **alt**).
 * **Dimensions** permet de spécifier, en pixels, de la taille de l&#39;image.
 
-  ![](assets/dce_popup_imgsize.png)
+  Boîte de dialogue ![Dimensions avec champs Largeur et Hauteur en pixels, tous deux définis sur 96](assets/dce_popup_imgsize.png)
 
 ## Ajouter du contenu de personnalisation {#adding-personalization-content}
 
@@ -264,7 +264,7 @@ Lorsque vous sélectionnez un bloc contenant une image, vous accédez aux propri
 
 L’option **Champ de personnalisation** de l’icône d’insertion vous permet d’ajouter un champ de la base de données dans le contenu, le nom de la personne destinataire par exemple. Cette option n’est disponible que pour les blocs de type texte.
 
-![](assets/dce_toolbar_textblock_persofield.png)
+![Insérer une boîte de dialogue d’élément répertoriant les champs du destinataire tels que l’e-mail, le prénom et le nom](assets/dce_toolbar_textblock_persofield.png)
 
 Par défaut, les champs proposés sont ceux de la table **[!UICONTROL Personne destinataire]**. Si nécessaire, modifiez les propriétés de l’application web pour sélectionner une autre table.
 
@@ -276,7 +276,7 @@ Un exemple est présenté dans la section [Insertion d’un champ de personnalis
 
 L’option **Bloc de personnalisation** vous permet d’insérer des blocs dynamiques et personnalisés dans le contenu. Vous pouvez par exemple ajouter un logo ou un message de salutations. Elle n’est pas disponible pour les blocs de type Texte.
 
-![](assets/dce_toolbar_textblock_persoblock.png)
+![Une boîte de dialogue Insérer un élément répertoriant les blocs de personnalisation tels que Salutations, Insérer un logo et Lien de désinscription](assets/dce_toolbar_textblock_persoblock.png)
 
 Après l’insertion, le nom du bloc de personnalisation apparaît dans l’éditeur, surligné en jaune. Il est automatiquement adapté au profil de la personne destinataire lors de la génération de la personnalisation.
 

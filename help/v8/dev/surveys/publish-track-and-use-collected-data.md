@@ -22,10 +22,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 90%
+source-wordcount: '1198'
+ht-degree: 71%
 ---
 # Publier, suivre et utiliser les données collectées{#publish-track-and-use-collected-data}
 
@@ -47,7 +47,7 @@ Pour chaque questionnaire, le tableau de bord vous permet de visualiser rapideme
 
 L&#39;URL publique du questionnaire est affichée dans le tableau de bord :
 
-![](assets/survey_public_url.png)
+![Tableau de bord de l&#39;enquête indiquant le statut En ligne et une flèche pointant vers l&#39;URL publique utilisée pour accéder à l&#39;enquête](assets/survey_public_url.png)
 
 ## Suivre les réponses {#response-tracking}
 
@@ -57,7 +57,7 @@ Vous pouvez suivre les réponses au questionnaire dans les logs et dans les rapp
 
 Pour chaque questionnaire diffusé, vous pouvez suivre les réponses dans l’onglet **[!UICONTROL Logs]**. Cet onglet affiche la liste des utilisateurs et utilisatrices ayant répondu au questionnaire et leur origine :
 
-![](assets/s_ncs_admin_survey_logs.png)
+![Onglet Réponses du questionnaire répertoriant la date, le destinataire et l&#39;origine de chaque réponse](assets/s_ncs_admin_survey_logs.png)
 
 Double-cliquez sur une ligne pour afficher le formulaire du questionnaire tel qu’il a été renseigné par le participant ou la participante. Vous pouvez consulter toutes les pages du questionnaire et accéder à l’intégralité des réponses. Celles-ci peuvent être exportées dans un fichier externe. Voir à ce sujet la section [Exporter les réponses](#exporting-answers).
 
@@ -75,7 +75,7 @@ Pour plus d&#39;informations sur les paramètres d&#39;URL, consultez [Paramètr
 
 L’onglet Tableau de bord vous permet d’accéder aux rapports du questionnaire. Cliquez sur le nom d’un rapport pour l’afficher.
 
-![](assets/s_ncs_admin_survey_report_doc.png)
+![Vue Rapports du tableau de bord de l&#39;enquête avec répartition des réponses, rapports Général, Documentation et Analyse des microsites](assets/s_ncs_admin_survey_report_doc.png)
 
 La structure du questionnaire est synthétisée dans le rapport **[!UICONTROL Documentation]**.
 
@@ -87,13 +87,13 @@ Deux autres rapports sur les questionnaires Web sont également disponibles par 
 
   Exemple de rapport général :
 
-  ![](assets/s_ncs_admin_survey_report_0.png)
+  ![Rapport général avec date de début, nombre de réponses et diagramme de réponses dans le temps](assets/s_ncs_admin_survey_report_0.png)
 
 * Répartition des réponses
 
   Ce rapport permet de consulter la répartition des réponses pour chaque question. Cette répartition n&#39;est disponible que pour les réponses fournies à des champs stockés dans des conteneurs de type **[!UICONTROL Question]**. Elle n&#39;est valable que pour les contrôles de sélection (pas de répartition sur les champs de type texte, par exemple).
 
-  ![](assets/s_ncs_admin_survey_report_2.png)
+  ![Rapport sur la répartition des réponses avec le nombre et le pourcentage de chaque réponse à une question](assets/s_ncs_admin_survey_report_2.png)
 
 ## Exporter les réponses {#exporting-answers}
 
@@ -103,13 +103,13 @@ Les réponses à un questionnaire peuvent être exportées dans un fichier exter
 
    Pour exporter les données d&#39;un rapport, cliquez sur le bouton **[!UICONTROL Exporter]** et sélectionnez le format d&#39;export.
 
-   L&#39;export des données d&#39;un rapport est présenté dans [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}.
+   L&#39;export des données d&#39;un rapport est présenté dans [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}.
 
 1. Exporter les réponses
 
    Pour exporter les réponses, cliquez sur l&#39;onglet **[!UICONTROL Réponses]** du questionnaire et cliquez avec le bouton droit de la souris. Choisissez **[!UICONTROL Exporter...]**.
 
-   ![](assets/s_ncs_admin_survey_logs_export_menu.png)
+   ![Onglet Réponses avec toutes les réponses sélectionnées et le menu contextuel affichant l&#39;option Exporter](assets/s_ncs_admin_survey_logs_export_menu.png)
 
    Indiquez ensuite les informations à exporter et le fichier d’enregistrement.
 
@@ -123,7 +123,7 @@ Les réponses à un questionnaire peuvent être exportées dans un fichier exter
 
    Si le questionnaire que vous souhaitez exporter contient plusieurs champs **[!UICONTROL Texte multi-lignes]** ou **[!UICONTROL Texte HTML]**, il doit être exporté au format **[!UICONTROL XML]**. Pour ce faire, sélectionnez ce format dans la liste déroulante du champ **[!UICONTROL Format de sortie]**, comme illustré ci-dessous :
 
-   ![](assets/s_ncs_admin_survey_logs_export_xml.png)
+   ![Assistant Exporter la liste avec le menu déroulant Format de sortie ouvert et XML sélectionné](assets/s_ncs_admin_survey_logs_export_xml.png)
 
    Cliquez sur **[!UICONTROL Démarrer]** pour lancer l&#39;export.
 
@@ -137,25 +137,25 @@ Les informations collectées au travers des questionnaires en ligne peuvent êtr
 
 Dans l’exemple suivant, nous allons proposer une offre web spécifique aux cinq destinataires ayant au moins deux enfants et ayant réalisé le meilleur score à un questionnaire en ligne. Les réponses à cette enquête sont les suivantes :
 
-![](assets/s_ncs_admin_survey_responses_wf_box_4.png)
+![Onglet Réponses d&#39;un questionnaire répertoriant chaque répondant avec le score, le nombre d&#39;enfants et le type de contact](assets/s_ncs_admin_survey_responses_wf_box_4.png)
 
 Dans le workflow de ciblage, la boîte **[!UICONTROL Réponses à un questionnaire]** sera paramétrée comme suit :
 
-![](assets/s_ncs_admin_survey_responses_wf_box_1.png)
+![Zone Réponses à un questionnaire dans un workflow de ciblage, avec le questionnaire sélectionné et le lien pour sélectionner les colonnes à extraire](assets/s_ncs_admin_survey_responses_wf_box_1.png)
 
 Sélectionnez le questionnaire concerné puis les données à extraire dans la section centrale de la fenêtre. Ici, il est nécessaire d’extraire au moins la colonne du score, car elle sera utilisée dans la boîte de partage afin de ne récupérer que les cinq meilleurs scores parmi les réponses fournies.
 
 Indiquez les conditions de filtrage des réponses en cliquant sur le lien **[!UICONTROL Editer la requête...]**.
 
-![](assets/s_ncs_admin_survey_responses_wf_box_2.png)
+![Zone des réponses à l&#39;enquête avec une requête filtrant les réponses sur le nombre d&#39;enfants et un score supérieur à 50](assets/s_ncs_admin_survey_responses_wf_box_2.png)
 
 Démarrez le workflow de ciblage. La requête récupère 8 destinataires.
 
-![](assets/s_ncs_admin_survey_responses_wf_box_5.png)
+![Menu contextuel de la transition des résultats du workflow avec l&#39;option Afficher la cible mise en surbrillance](assets/s_ncs_admin_survey_responses_wf_box_5.png)
 
 Cliquez avec le bouton droit de la souris sur la transition sortante de la boîte de collecte pour les visualiser.
 
-![](assets/s_ncs_admin_survey_responses_wf_box_6.png)
+![Afficher la fenêtre de population répertoriant les 8 destinataires renvoyés par la requête de réponses à l&#39;enquête avec leurs scores](assets/s_ncs_admin_survey_responses_wf_box_6.png)
 
 Positionnez ensuite dans le workflow une boîte de partage afin de ne récupérer que les 5 destinataires ayant obtenu le meilleur score.
 
@@ -163,19 +163,19 @@ Editez la boîte de partage pour la paramétrer :
 
 * Sélectionnez d&#39;abord le schéma adéquat dans l&#39;onglet **[!UICONTROL Général]** avant de paramétrer le sous-ensemble :
 
-  ![](assets/s_ncs_admin_survey_responses_wf_box_6b.png)
+  ![Onglet Général de la case à cocher avec Utiliser uniquement les données additionnelles sélectionnée, après la case Réponses à l&#39;enquête](assets/s_ncs_admin_survey_responses_wf_box_6b.png)
 
 * Dans l&#39;onglet **[!UICONTROL Sous-ensembles]**, sélectionnez l&#39;option **[!UICONTROL Limiter les enregistrements sélectionnés]** puis cliquez sur le lien **[!UICONTROL Editer...]**.
 
-  ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
+  ![Onglet Sous-ensembles de la zone de partage avec l&#39;option Limiter les enregistrements sélectionnés et le lien Modifier](assets/s_ncs_admin_survey_responses_wf_box_7.png)
 
 * Sélectionnez l&#39;option **[!UICONTROL Conserver les premiers suite à un tri]** et indiquez la colonne de tri. Cochez l&#39;option **[!UICONTROL Tri descendant]**.
 
-  ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
+  Assistant de limitation du nombre d&#39;enregistrements ![avec Conserver uniquement les premiers enregistrements après le tri et un tri décroissant sur Score](assets/s_ncs_admin_survey_responses_wf_box_8.png)
 
 * Cliquez sur le bouton **[!UICONTROL Suivant]** et limitez le nombre d&#39;enregistrements à 5.
 
-  ![](assets/s_ncs_admin_survey_responses_wf_box_9.png)
+  ![Étape Limites du nombre d’enregistrements avec la taille maximale définie sur 5 et le bouton Terminer](assets/s_ncs_admin_survey_responses_wf_box_9.png)
 
 * Cliquez sur **[!UICONTROL Terminer]** puis redémarrez le workflow pour valider le ciblage.
 

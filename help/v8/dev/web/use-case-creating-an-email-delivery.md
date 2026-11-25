@@ -34,10 +34,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 89%
+source-wordcount: '915'
+ht-degree: 79%
 ---
 # Cas d’utilisation : création d’une diffusion email{#use-case-creating-an-email-delivery}
 
@@ -60,15 +60,15 @@ Notre objectif final est d&#39;obtenir une diffusion partant d&#39;un modèle pe
 
 ## Etape 1 - Créer une diffusion {#step-1---creating-a-delivery}
 
-Pour créer une diffusion, placez le curseur dans l’onglet **Campagnes** et cliquez sur **Diffusions**. Cliquez ensuite sur le bouton **Créer** au-dessus de la liste des diffusions existantes. Pour plus d’informations sur la création de diffusions, consultez [cette page](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/about-email-channel){target="_blank"}.
+Pour créer une diffusion, placez le curseur dans l’onglet **Campagnes** et cliquez sur **Diffusions**. Cliquez ensuite sur le bouton **Créer** au-dessus de la liste des diffusions existantes. Pour plus d’informations sur la création de diffusions, consultez [cette page](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/about-email-channel){target="_blank"}.
 
-![](assets/delivery_step_1.png)
+![Liste des diffusions dans l&#39;onglet Campagnes avec le bouton Créer utilisé pour démarrer une nouvelle diffusion.](assets/delivery_step_1.png)
 
 ## Etape 2 - Sélectionner un modèle {#step-2---selecting-a-template}
 
 Sélectionnez un modèle de diffusion et nommez votre diffusion. Ce nom sera visible uniquement par les utilisateurs de la console Adobe Campaign et non par vos destinataires ; toutefois, cet en-tête s&#39;affichera dans votre liste de diffusions. Cliquez sur **[!UICONTROL Continuer]**.
 
-![](assets/dce_delivery_model.png)
+![Boîte de dialogue de création de diffusion avec le modèle de diffusion E-mail, un champ Libellé et le bouton Continuer.](assets/dce_delivery_model.png)
 
 ## Etape 3 - Sélection du contenu {#step-3---selecting-a-content}
 
@@ -76,11 +76,11 @@ Le Digital Content Editor est livré avec plusieurs modèles d&#39;usine aux str
 
 Sélectionnez le modèle de contenu qui vous convient, puis cliquez sur le bouton **[!UICONTROL Commencer avec le contenu sélectionné]** afin d’afficher le modèle dans la diffusion créée.
 
-![](assets/dce_select_model.png)
+![Étape de contenu de la diffusion répertoriant les modèles de contenu avec le bouton Commencer par le contenu sélectionné.](assets/dce_select_model.png)
 
 Vous pouvez également importer du contenu HTML créé en dehors d’Adobe Campaign en sélectionnant **[!UICONTROL À partir d’un fichier]**.
 
-![](assets/dce_select_from_file_template.png)
+![Modèles de contenu disponibles avec l’option À partir d’un fichier mise en surbrillance.](assets/dce_select_from_file_template.png)
 
 Vous pouvez enregistrer ce contenu en tant que modèle pour une réutilisation ultérieure. Lorsqu’un modèle de contenu personnalisé est créé, son aperçu figure dans la liste des modèles. Voir à ce sujet la section [Gestion des modèles](template-management.md).
 
@@ -94,13 +94,13 @@ Vous pouvez enregistrer ce contenu en tant que modèle pour une réutilisation u
 
   Pour qu’un champ texte de votre diffusion contienne les noms et prénoms de vos destinataires, cliquez sur le champ texte de votre choix, puis positionnez le curseur à l’endroit exact où vous souhaitez les afficher. Cliquez sur la première icône de la barre d’outils pop-up, puis sur **[!UICONTROL Bloc de personnalisation]**. Sélectionnez **[!UICONTROL Salutations]**, puis cliquez sur **[!UICONTROL OK]**.
 
-  ![](assets/dce_personalizationblock_greetings.png)
+  ![Insérez une boîte de dialogue d&#39;élément avec le bloc de personnalisation Salutations sélectionné, ouvert à partir du menu de la barre d&#39;outils.](assets/dce_personalizationblock_greetings.png)
 
 * Insérer un lien sur une image
 
   Afin de permettre aux destinataires de vos diffusions de se rendre sur une adresse externe depuis une image, cliquez sur l’image concernée afin d’afficher la barre d’outils pop-up, positionnez le curseur sur la première icône, puis cliquez sur **[!UICONTROL Lien vers une URL externe]**. Voir à ce sujet la section [Ajouter un lien](editing-content.md#adding-a-link).
 
-  ![](assets/dce_externalpage.png)
+  ![Menu de la barre d&#39;outils Image avec l&#39;option Lier vers une URL externe sélectionnée.](assets/dce_externalpage.png)
 
   Saisissez l&#39;URL pour le lien dans le champ **URL** à l&#39;aide du format suivant **https://www.monURL.com**, puis confirmez.
 
@@ -122,7 +122,7 @@ Vous pouvez enregistrer ce contenu en tant que modèle pour une réutilisation u
 
   Cliquez sur le champ texte dans lequel vous souhaitez voir figurer le lien vers la page miroir. Cliquez sur la première icône de la barre d’outils pop-up, sélectionnez **[!UICONTROL Bloc de personnalisation]**, puis **[!UICONTROL Lien vers la page miroir (MirrorPage)]**. Cliquez sur **[!UICONTROL Enregistrer]** pour confirmer.
 
-  ![](assets/dce_mirrorpage.png)
+  ![Menu de la barre d&#39;outils dans l&#39;éditeur de texte avec l&#39;option du bloc Personalization sélectionnée.](assets/dce_mirrorpage.png)
 
   >[!CAUTION]
   >
@@ -134,7 +134,7 @@ Vous pouvez enregistrer ce contenu en tant que modèle pour une réutilisation u
 
   Sélectionnez un champ texte dans lequel figurera votre lien vers l&#39;application Web, puis cliquez sur la première icône. Choisissez **[!UICONTROL Lien vers une application Web]**, puis sélectionnez l&#39;application souhaitée en cliquant sur l&#39;icône située à la fin du champ **Application Web**.
 
-  ![](assets/dce_webapp.png)
+  ![Insérez une boîte de dialogue de lien avec les champs Libellé et Application web, ainsi qu&#39;un bouton OK.](assets/dce_webapp.png)
 
   Cliquez sur **Enregistrer** pour valider.
 

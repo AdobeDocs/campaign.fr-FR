@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 100%
+source-wordcount: '277'
+ht-degree: 83%
 ---
 # Utiliser un modèle de formulaire web{#using-a-web-form-template}
 
@@ -38,7 +38,7 @@ Vous pouvez créer des modèles depuis ce nœud ou transformer directement un fo
 
 Un formulaire peut être transformé en modèle afin que le paramétrage défini soit réutilisable. Pour cela, sélectionnez le formulaire, cliquez sur le bouton droit de la souris et choisissez **[!UICONTROL Actions > Sauver comme modèle...]**.
 
-![](assets/s_ncs_admin_survey_saveastemplate.png)
+![Liste des applications web avec le menu Actions (accessible par un clic droit) ouvert et Enregistrer en tant que modèle mis en surbrillance](assets/s_ncs_admin_survey_saveastemplate.png)
 
 Cette action ouvre la fenêtre de création des applications web. Vous pouvez saisir le nom et la description du modèle et sélectionner son dossier d’enregistrement.
 
@@ -46,11 +46,11 @@ Cette action ouvre la fenêtre de création des applications web. Vous pouvez sa
 
 Pour créer un modèle de formulaire Web, cliquez sur le bouton droit de la souris depuis la liste des modèles d&#39;applications Web, et choisissez **[!UICONTROL Nouveau]**. Vous pouvez également utiliser le bouton **[!UICONTROL Nouveau]** situé au-dessus de la liste des modèles.
 
-![](assets/s_ncs_admin_survey_createtemplate.png)
+![Dossier des modèles d&#39;applications web dans l&#39;Explorateur, avec le bouton Nouveau utilisé pour créer un modèle](assets/s_ncs_admin_survey_createtemplate.png)
 
 Saisissez le nom du modèle. Sélectionnez le dossier d&#39;enregistrement des formulaires web créés à partir de ce modèle dans le champ **[!UICONTROL Dossier des instances]**. Le champ **[!UICONTROL Nature]** vous permet d&#39;ajouter une information descriptive afin de classer et/ou filtrer vos différents modèles d&#39;applications web.
 
-![](assets/s_ncs_admin_survey_createtemplate_details.png)
+![Boîte de dialogue Nouvelle application web avec les options Libellé, Questionnaire et Site web avancé, champs de dossier Nature et Instances](assets/s_ncs_admin_survey_createtemplate_details.png)
 
 Cliquez sur **[!UICONTROL Enregistrer]** pour créer le modèle puis construisez le contenu de ce modèle et définissez ses paramètres.
 

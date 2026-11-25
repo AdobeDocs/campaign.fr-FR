@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1680'
-ht-degree: 98%
+source-wordcount: '1920'
+ht-degree: 85%
 ---
 # Traduire un formulaire web{#translating-a-web-form}
 
@@ -57,7 +57,7 @@ Pour définir une ou plusieurs langues de traduction, cliquez sur le bouton **[!
 >
 >Cet écran vous permet également de modifier la langue par défaut et la langue d&#39;édition.
 
-![](assets/s_ncs_admin_survey_add_lang.png)
+![Onglet Localisation des propriétés de l&#39;application Web avec conception et langue par défaut et autres langues Français et Espagnol](assets/s_ncs_admin_survey_add_lang.png)
 
 Lorsque vous ajoutez des langues de traduction pour une application web (ou lorsque la langue par défaut et la langue d&#39;édition sont différentes), un sous-onglet **[!UICONTROL Traductions]** est ajouté dans l&#39;onglet **[!UICONTROL Edition]** afin de gérer les traductions.
 
@@ -73,7 +73,7 @@ A la première ouverture de cet onglet, il ne contient aucun élément. Cliquez 
 
 Adobe Campaign collecte les libellés des champs et des chaînes des onglets **[!UICONTROL Textes]** de tous les éléments statiques : blocs HTML, Javascript, etc. Les éléments statiques sont détaillés dans la section [Éléments statiques dans un formulaire web](static-elements-in-a-web-form.md).
 
-![](assets/s_ncs_admin_survey_trad_tab.png)
+![Onglet Traductions d&#39;une application web avec le lien Collecter les chaînes à traduire et les chaînes à traduire](assets/s_ncs_admin_survey_trad_tab.png)
 
 >[!CAUTION]
 >
@@ -91,7 +91,7 @@ Pour les chaînes de caractères qui n&#39;ont jamais été traduites, le champ 
 
 Par défaut, chaque langue de traduction de l’application web est affichée. Il existe deux filtres par défaut : langue et statut. Cliquez sur le bouton **[!UICONTROL Filtres]**, puis sur **[!UICONTROL Par langue ou statut]** pour afficher les menus déroulants correspondants. Vous pouvez également créer un filtre avancé. Pour plus d’informations sur les filtres, consultez la [documentation de Campaign v8 (console)](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
-![](assets/s_ncs_admin_survey_trad_tab_en.png)
+![Onglet Traductions Menu Filtres avec Par langue ou statut, filtrage des chaînes françaises avec le statut À traduire](assets/s_ncs_admin_survey_trad_tab_en.png)
 
 Sélectionnez la langue de traduction souhaitée dans le menu déroulant **[!UICONTROL Langue]**.
 
@@ -101,7 +101,7 @@ Pour n’afficher que les chaînes non traduites, sélectionnez **[!UICONTROL À
 
 1. Pour traduire un terme, double-cliquez sur la ligne correspondante dans la liste des chaînes.
 
-   ![](assets/s_ncs_admin_survey_trad_tab_add_term.png)
+   ![Boîte de dialogue de traduction avec la chaîne source, la traduction française, l&#39;option Traduction validée et Enregistrer](assets/s_ncs_admin_survey_trad_tab_add_term.png)
 
    La chaîne source apparaît dans la partie supérieure de la fenêtre.
 
@@ -125,7 +125,7 @@ Vous pouvez exporter et importer les chaînes de caractères afin de les traduir
 
 1. Sélectionnez la ou les applications web dont vous souhaitez exporter les chaînes, cliquez avec le bouton droit, puis sélectionnez **[!UICONTROL Actions > Exporter les chaînes pour traduction...]**
 
-   ![](assets/s_ncs_admin_survey_trad_export.png)
+   ![Menu Actions de la liste des applications web accessible par un clic droit avec l&#39;option Exporter les chaînes à traduire mise en surbrillance](assets/s_ncs_admin_survey_trad_export.png)
 
 1. Choisissez la **[!UICONTROL Stratégie d&#39;export]** :
 
@@ -146,7 +146,7 @@ Vous pouvez exporter et importer les chaînes de caractères afin de les traduir
 1. Choisissez ensuite le **[!UICONTROL dossier cible]** où les fichiers seront enregistrés.
 1. Sélectionnez le format de fichier (**[!UICONTROL CSV]** ou **[!UICONTROL XLIFF]**) et cliquez enfin sur **[!UICONTROL Démarrer]**.
 
-![](assets/s_ncs_admin_survey_trad_export_start.png)
+![Exporter des chaînes pour l&#39;assistant de traduction avec un fichier par langue, un dossier cible, au format CSV ou XLIFF et Démarrer](assets/s_ncs_admin_survey_trad_export_start.png)
 
 >[!NOTE]
 >
@@ -164,11 +164,11 @@ Un fois la traduction externe terminée, vous pouvez importer les fichiers tradu
    >
    >Il n&#39;est pas nécessaire de sélectionner les applications web concernées par la traduction. Vous pouvez vous positionner sur n&#39;importe quelle ligne dans la liste des applications web.
 
-   ![](assets/s_ncs_admin_survey_trad_import.png)
+   ![Menu Actions de la liste des applications web accessible par un clic droit avec Importer les chaînes traduites en surbrillance](assets/s_ncs_admin_survey_trad_import.png)
 
 1. Sélectionnez le fichier à importer, puis cliquez sur **[!UICONTROL Télécharger]**.
 
-   ![](assets/s_ncs_admin_survey_trad_import_start.png)
+   ![Assistant Importer les chaînes traduites avec un fichier CSV local sélectionné pour l&#39;importation et le bouton Charger](assets/s_ncs_admin_survey_trad_import_start.png)
 
 >[!NOTE]
 >
@@ -188,7 +188,7 @@ si la langue est le premier ou le seul paramètre de l&#39;URL. Par exemple : *
 &lang=xx
 ```
 
-lorsque d&#39;autres paramètres précèdent celui de la langue dans l&#39;URL. Par exemple : **https://myserver/webApp/APP34?status=1&lang=en**
+lorsque d&#39;autres paramètres précèdent celui de la langue dans l&#39;URL. Par exemple : **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 Les langues de traduction et les dictionnaires disponibles par défaut sont répertoriés ci-dessous.
 
@@ -434,7 +434,7 @@ Les langues de traduction et les dictionnaires disponibles par défaut sont rép
 
 Le formulaire web suivant est disponible en quatre langues : allemand, anglais, espagnol et français. Les chaînes de caractères ont toutes été traduites à partir de l&#39;onglet **[!UICONTROL Traduction]** du formulaire web. La langue par défaut étant le français, une fois le questionnaire publié, utilisez l&#39;URL standard pour l&#39;afficher en français.
 
-![](assets/s_ncs_admin_survey_trad_sample_fr.png)
+![Page d&#39;accueil de formulaire Web affichée en anglais, avec les champs titre, nom, adresse électronique, téléphone et adresse et un bouton Suivant](assets/s_ncs_admin_survey_trad_sample_fr.png)
 
 Ajoutez les caractères **?lang=en** à la fin de l&#39;URL pour l&#39;afficher en anglais.
 
@@ -442,14 +442,14 @@ Ajoutez les caractères **?lang=en** à la fin de l&#39;URL pour l&#39;afficher 
 >
 >La liste des symboles de chaque langue est présentée dans la section [Changer la langue d&#39;affichage des formulaires](#changing-forms-display-language).
 
-![](assets/s_ncs_admin_survey_trad_sample_en.png)
+![Même page d&#39;accueil affichée en français après l&#39;ajout de lang=fr à l&#39;URL, avec le paramètre lang en surbrillance](assets/s_ncs_admin_survey_trad_sample_en.png)
 
 Vous pouvez ajouter les caractères **?lang=es** ou **?lang=de** pour l&#39;afficher en espagnol ou en allemand.
 
 >[!NOTE]
 >
 >Si d&#39;autres paramètres sont déjà utilisés pour cette application web, ajoutez les caractères **&amp;lang=**.\
->Par exemple : **https://myserver/webApp/APP34?status=1&lang=en**
+>Par exemple : **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 ## Configuration avancée de traduction {#advanced-translation-configuration}
 
@@ -463,18 +463,18 @@ Les chaînes système sont des chaînes de caractères par défaut utilisées pa
 
 Si vous traduisez votre application web vers une langue dans laquelle le dictionnaire système n&#39;est pas traduit, un message d&#39;avertissement vous informera que certaines traductions sont manquantes.
 
-![](assets/s_ncs_admin_survey_trad_error.png)
+![Avertissement dans l&#39;onglet Traductions : 27 traductions manquantes pour les langues es et fr dans le dictionnaire système](assets/s_ncs_admin_survey_trad_error.png)
 
 Pour ajouter une langue, procédez comme suit :
 
 1. Accédez à l&#39;arborescence Adobe Campaign et cliquez sur **[!UICONTROL Administration > Paramétrage > Dictionnaire global > Dictionnaire système]** .
 1. Dans la partie supérieure de la fenêtre, sélectionnez la chaîne système à traduire, puis cliquez sur le bouton **[!UICONTROL Ajouter]**, dans la partie inférieure.
 
-   ![](assets/s_ncs_admin_survey_trad_system_translation.png)
+   ![Dictionnaire système sous Dictionnaire global avec une chaîne telle que buttonPrevious sélectionnée et le bouton Ajouter mis en surbrillance](assets/s_ncs_admin_survey_trad_system_translation.png)
 
 1. Sélectionnez la langue de traduction et saisissez une traduction pour la chaîne. Vous pouvez approuver la traduction en cochant l&#39;option **[!UICONTROL Traduction validée]**.
 
-   ![](assets/s_ncs_admin_survey_trad_system_translation2.png)
+   ![Boîte de dialogue de traduction pour buttonPrevious avec le français sélectionné, le texte traduit et l&#39;option Traduction approuvée](assets/s_ncs_admin_survey_trad_system_translation2.png)
 
    >[!NOTE]
    >
@@ -490,8 +490,8 @@ Pour traduire vos applications web dans d&#39;autres langues que celles proposé
 
 1. Cliquez sur le nœud **[!UICONTROL Administration > Plateforme > Énumérations]** de l’arborescence d’Adobe Campaign et sélectionnez **[!UICONTROL Langues disponibles pour la traduction]** dans la liste. La liste des traductions disponibles s&#39;affiche dans la partie inférieure de la fenêtre.
 
-   ![](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
+   ![Liste des énumérations avec Langues disponibles pour la traduction (dictionaryLocale) sélectionnée et le bouton Ajouter mis en surbrillance](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
 
 1. Cliquez sur le bouton **[!UICONTROL Ajouter]**, puis renseignez le **[!UICONTROL Nom interne]**, le **[!UICONTROL Libellé]** et l’identifiant de l’image (drapeau). Pour ajouter une nouvelle image, contactez votre administrateur ou administratrice.
 
-   ![](assets/s_ncs_admin_survey_trad_new_itemized_list_2.png)
+   ![Boîte de dialogue de valeur d’énumération pour une nouvelle langue avec des champs Nom interne, Libellé gallois et Image](assets/s_ncs_admin_survey_trad_new_itemized_list_2.png)

@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 93%
+source-wordcount: '599'
+ht-degree: 87%
 ---
 # Bonnes pratiques relatives à l&#39;édition de contenu{#content-editing-best-practices}
 
@@ -51,13 +51,13 @@ Afin de garantir un fonctionnement optimal de l&#39;éditeur, il est recommandé
 
   L&#39;attribut **&#39;type&#39;** est visible dans l&#39;interface sous la forme :
 
-  ![](assets/dce_sidebar_inputtypechanges.png)
+  ![Panneau de la zone de saisie (e-mail) avec la section Données de formulaire, un sélecteur de champ et le bouton bascule Obligatoire Oui ou Non](assets/dce_sidebar_inputtypechanges.png)
 
   La liste officielle des attributs « types » est disponible [sur ce site](https://www.w3schools.com/tags/att_input_type.asp).
 
 * Procédure à suivre pour simuler une page de fin avec le DCE :
 
-  ![](assets/dce_enchainement.png)
+  ![Diagramme de formulaire avec préchargement, page, stockage et page 2 boîtes en séquence, simulant une page de fin](assets/dce_enchainement.png)
 
 * Assurez-vous qu’il n’y a bien qu&#39;un seul `<body> </body>` dans la page.
 * Lorsqu’un fichier CSS ou JS est chargé, les images contenues dans le fichier .zip ne sont pas chargées. Les références à ces images dans le CSS ne sont donc pas mises à jour.

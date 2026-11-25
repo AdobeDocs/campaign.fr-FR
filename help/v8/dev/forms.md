@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '2590'
-ht-degree: 98%
+source-wordcount: '2842'
+ht-degree: 89%
 ---
 # Prise en main des formulaires de saisie {#gs-ac-forms}
 
@@ -51,15 +51,15 @@ La clé d&#39;identification d&#39;un formulaire correspond à une chaîne const
 
 Créez et configurez des formulaires de saisie à partir du dossier **[!UICONTROL Administration] > [!UICONTROL Configuration] > [!UICONTROL Formulaires de saisie]** de la console client :
 
-![](assets/form_arbo.png)
+![Arborescence de l&#39;Explorateur sous Configuration avec le dossier Formulaires de saisie sélectionné](assets/form_arbo.png)
 
 La zone d&#39;édition permet de renseigner le contenu XML du formulaire de saisie :
 
-![](assets/form_edit.png)
+![Onglet Modifier de l&#39;éditeur de formulaire de saisie affichant le XML du formulaire Destinataire (cus) avec les entrées date de naissance, genre et e-mail](assets/form_edit.png)
 
 L&#39;aperçu génère l&#39;affichage du formulaire de saisie :
 
-![](assets/form_preview.png)
+![Onglet Aperçu du formulaire Destinataire (cus) affichant les champs Date de naissance, Genre et E-mail](assets/form_preview.png)
 
 ## Structure de formulaire
 
@@ -93,7 +93,7 @@ Par défaut, un formulaire est associé au schéma de données possédant un nom
 
 Le formulaire de saisie à partir du schéma d&#39;exemple :
 
-![](assets/do-not-localize/form_exemple1.png)
+![Rendu du formulaire de saisie : genre, date de naissance et e-mail sous la forme de trois champs empilés](assets/do-not-localize/form_exemple1.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -122,7 +122,7 @@ La disposition des contrôles ressemble à celle utilisée dans les tableaux HTM
 
 Pour afficher les contrôles de l&#39;exemple précédent sur deux colonnes :
 
-![](assets/do-not-localize/form_exemple2.png)
+![Formulaire de saisie avec genre et date de naissance côte à côte en deux colonnes et e-mail ci-dessous](assets/do-not-localize/form_exemple2.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -138,7 +138,7 @@ L&#39;élément **`<container>`** avec l&#39;attribut **colcount** permet de for
 
 L&#39;attribut **colspan** sur un contrôle étend celui-ci avec le nombre de colonnes renseignées dans sa valeur :
 
-![](assets/do-not-localize/form_exemple3.png)
+![Formulaire de saisie à deux colonnes avec le champ E-mail étendu sur les deux colonnes](assets/do-not-localize/form_exemple3.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -152,7 +152,7 @@ L&#39;attribut **colspan** sur un contrôle étend celui-ci avec le nombre de co
 
 En renseignant l&#39;attribut **type=&quot;frame&quot;**, le conteneur ajoute un habillage autour des contrôles enfants avec le libellé contenu dans l&#39;attribut **label** :
 
-![](assets/do-not-localize/form_exemple4.png)
+![Formulaire de saisie à deux colonnes avec genre, date de naissance et champ de courrier électronique pleine largeur, sans cadre visible](assets/do-not-localize/form_exemple4.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -166,7 +166,7 @@ En renseignant l&#39;attribut **type=&quot;frame&quot;**, le conteneur ajoute un
 
 Un élément **`<static>`** peut être utilisé pour mettre en forme le formulaire de saisie :
 
-![](assets/do-not-localize/form_exemple5.png)
+![Formulaire de saisie avec les champs Genre, Date et E-mail et une ligne d&#39;aide statique en dessous](assets/do-not-localize/form_exemple5.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -212,7 +212,7 @@ Les conteneurs sont utilisés pour construire des contrôles complexes ayant rec
 
 Utilisez un conteneur **notebook** pour formater les données dans des pages accessibles à partir d’onglets.
 
-![](assets/do-not-localize/form_exemple6.png)
+![Formulaire de saisie avec onglets Général et Emplacement au-dessus des champs Genre, Date et E-mail](assets/do-not-localize/form_exemple6.png)
 
 ```xml
 <container type="notebook">
@@ -231,7 +231,7 @@ Le conteneur principal est défini par l’attribut **type=&quot;notebook&quot;*
 
 Ajoutez l&#39;attribut **style=&quot;down&quot;** pour forcer le positionnement vertical des libellés d&#39;onglet sous le contrôle. Cet attribut est facultatif. La valeur par défaut est **&quot;up&quot;**.
 
-![](assets/do-not-localize/form_exemple7.png)
+![Formulaire de saisie avec les libellés de l&#39;onglet Général et Emplacement placés sous les champs Genre, Date et E-mail](assets/do-not-localize/form_exemple7.png)
 
 `<container style="down" type="notebook">  ... </container>`
 
@@ -239,7 +239,7 @@ Ajoutez l&#39;attribut **style=&quot;down&quot;** pour forcer le positionnement 
 
 Utilisez ce conteneur pour afficher une barre d’icônes verticale permettant de sélectionner les pages à afficher.
 
-![](assets/do-not-localize/form_exemple8.png)
+![Formulaire de saisie avec une barre d&#39;icônes verticale offrant les pages Général et Emplacement en regard des champs Genre, Date et E-mail](assets/do-not-localize/form_exemple8.png)
 
 ```xml
 <container type="iconbox">
@@ -308,7 +308,7 @@ Pour rappel, un lien est déclaré dans le schéma de données de la façon suiv
 
 Le contrôle d&#39;édition du lien dans son formulaire de saisie est :
 
-![](assets/do-not-localize/form_exemple9.png)
+![Champ de société affichant un contrôle de modification de liste déroulante pour un lien, avec Adobe sélectionné](assets/do-not-localize/form_exemple9.png)
 
 ```xml
 <input xpath="company"/>
@@ -421,7 +421,7 @@ Exemple de table de relation dans un schéma :
 
 Pour notre exemple, nous partirons du formulaire de saisie du schéma « cus:recipient ». La liste doit afficher les associations avec les abonnements aux services et permettre d’ajouter un abonnement en sélectionnant un service déjà existant.
 
-![](assets/do-not-localize/form_exemple12.png)
+![Sélectionnez la boîte de dialogue des services répertoriant les services en liste bloquée, MobApp, Newsletter et autres pour ajouter un abonnement](assets/do-not-localize/form_exemple12.png)
 
 ```xml
 <input type="linklist" xpath="subscription" xpathChoiceTarget="service" xpathEditTarget="service" zoom="true">
@@ -522,7 +522,7 @@ Pour afficher un champ et empêcher son édition, vous devez utiliser la balise 
 
 Exemple sur le champ &quot;Genre&quot; :
 
-![](assets/do-not-localize/form_exemple16.png)
+![Le champ Genre s’affiche sous forme de liste déroulante avec la valeur Male](assets/do-not-localize/form_exemple16.png)
 
 ```xml
 <value value="@gender"/>
@@ -541,7 +541,7 @@ Exemple sur le champ &quot;Genre&quot; :
 <input type="RadioButton" xpath="@gender" checkedValue="2" label="Choice 3"/>
 ```
 
-![](assets/do-not-localize/form_exemple17.png)
+![Champ Genre affiché sous forme de boutons radio Choix 1, Choix 2 et Choix 3, avec Choix 1 sélectionné](assets/do-not-localize/form_exemple17.png)
 
 ## Ajout d&#39;une case à cocher {#checkbox}
 
@@ -552,7 +552,7 @@ Une case à cocher reflète un état booléen (sélectionné ou non). Par défau
 <input xpath="@field1" type="checkbox" checkedValue="Y"/>
 ```
 
-![](assets/do-not-localize/form_exemple20.png)
+![Deux cases à cocher décochées intitulées Boolean1 et field1](assets/do-not-localize/form_exemple20.png)
 
 ## Modification de la hiérarchie de navigation {#navigation-hierarchy-edit}
 
@@ -573,7 +573,7 @@ Les contrôles à éditer sont regroupés dans un **`<container>`** renseigné s
 </input>
 ```
 
-![](assets/do-not-localize/form_exemple18.png)
+![Contrôle de modification d&#39;arborescence avec champs de texte et groupes de champs booléens, répertoriant text1 en text3 et Boolean1 en Boolean3](assets/do-not-localize/form_exemple18.png)
 
 ## Ajout d&#39;un champ d&#39;expression {#expression-field}
 

@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 88%
+source-wordcount: '686'
+ht-degree: 68%
 ---
 # Cas d’utilisation : affichage d’un rapport sur les réponses à un questionnaire en ligne{#use-case-displaying-report-on-answers-to-an-online-survey}
 
@@ -67,23 +67,23 @@ Pour collecter les réponses du questionnaire, les étapes sont les suivantes :
 1. Editez l&#39;activité et sélectionnez le questionnaire dont vous souhaitez analyser les réponses.
 1. Activez l&#39;option **[!UICONTROL Sélectionner toutes les données des réponses]** afin de collecter toutes les informations.
 
-   ![](assets/reporting_usecase_1_01.png)
+   ![Activité Réponses à un questionnaire dans le workflow Questionnaire en ligne avec un questionnaire sélectionné et l&#39;option Sélectionner toutes les données de réponse activée.](assets/reporting_usecase_1_01.png)
 
 1. Sélectionnez les colonnes à extraire (ici, sélectionnez tous les champs archivés). Les réponses sont contenues dans ces champs.
 
-   ![](assets/reporting_usecase_1_02.png)
+   ![Boîte de dialogue Sélectionner des colonnes supplémentaires pour choisir les champs archivés à ajouter aux colonnes de sortie.](assets/reporting_usecase_1_02.png)
 
 1. Une fois la boîte de collecte des réponses paramétrée, positionnez une activité de type **[!UICONTROL Mise à jour de liste]** pour sauvegarder ces données.
 
-   ![](assets/reporting_usecase_1_04.png)
+   ![Workflow avec une activité Réponses à un questionnaire liée par une transition de résultat à une activité Mise à jour de liste.](assets/reporting_usecase_1_04.png)
 
    Dans cette activité, indiquez la liste à mettre à jour et désélectionnez l’option **[!UICONTROL Purger puis réutiliser la liste si elle existe (sinon la compléter)]** : les réponses seront ajoutées à la table existante. Cette option permettra de référencer la liste dans un cube. Le schéma lié à la liste ne sera pas généré à nouveau à chaque mise à jour, ce qui permet de garantir l’intégrité du cube qui utilise cette liste.
 
-   ![](assets/reporting_usecase_1_03.png)
+   ![La boîte de dialogue de mise à jour de la liste s&#39;affiche avec l&#39;option Purger et réutiliser la liste si elle existe désélectionnée afin que les réponses soient ajoutées à la liste.](assets/reporting_usecase_1_03.png)
 
 1. Démarrez le workflow pour en valider la configuration.
 
-   ![](assets/reporting_usecase_1_05.png)
+   ![Diagramme de workflow Questionnaire en ligne avec réponses à un questionnaire connectées à la mise à jour de la liste, prêt à démarrer.](assets/reporting_usecase_1_05.png)
 
    La liste spécifiée est alors créée et contient le schéma des réponses au questionnaire.
 
@@ -93,15 +93,15 @@ Pour collecter les réponses du questionnaire, les étapes sont les suivantes :
 
 ## Etape 2 - Créer le cube, ses mesures et ses indicateurs {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-Vous pouvez ensuite créer le cube et paramétrer ses mesures : elles seront utilisées lors de la création des indicateurs. Ces indicateurs seront affichés dans le rapport. La création et le paramétrage des cubes sont présentés dans la section [À propos des cubes](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/reporting/ac-cubes){target="_blank"}.
+Vous pouvez ensuite créer le cube et paramétrer ses mesures : elles seront utilisées lors de la création des indicateurs. Ces indicateurs seront affichés dans le rapport. La création et le paramétrage des cubes sont présentés dans la section [À propos des cubes](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/ac-cubes){target="_blank"}.
 
 Dans cet exemple, le cube est basé sur les données de la liste alimentée par le workflow créé à l&#39;étape précédente.
 
-![](assets/reporting_usecase_2_01.png)
+![La boîte de dialogue Cube répond à un questionnaire en ligne avec Utiliser une liste sélectionnée et la liste REP WEB comme liste de faits.](assets/reporting_usecase_2_01.png)
 
 Définissez les dimensions et mesures à afficher dans le rapport. Ici, nous voulons afficher la date du contrat et le pays du participant ou de la participante.
 
-![](assets/reporting_usecase_2_02.png)
+![Onglet Dimensions du cube avec le pays et le service, et onglet Mesures avec le contrat de 2016 et 2017 ayant répondu.](assets/reporting_usecase_2_02.png)
 
 L&#39;onglet **[!UICONTROL Prévisualisation]** permet de contrôler le rendu du rapport.
 
@@ -109,8 +109,8 @@ L&#39;onglet **[!UICONTROL Prévisualisation]** permet de contrôler le rendu du
 
 Vous pouvez ensuite créer un rapport basé sur ce cube et en exploiter les données et les informations.
 
-![](assets/reporting_usecase_3_01.png)
+![Création d&#39;une page de rapport avec le modèle de cube Réponses à un questionnaire en ligne sélectionné et le bouton Créer.](assets/reporting_usecase_3_01.png)
 
 Adaptez les informations à afficher selon vos besoins.
 
-![](assets/reporting_usecase_3_02.png)
+![Tableau des rapports d&#39;enquête en ligne sur le nombre de contrats en 2016 et 2017 par pays, avec la dimension Pays dans les lignes.](assets/reporting_usecase_3_02.png)

@@ -25,10 +25,10 @@ subfeature_v2:
     internal-label: Landing pages
   - id: e739ee2b-6228-412e-878f-45de0791417d
     internal-label: Use cases
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 89%
+source-wordcount: '1486'
+ht-degree: 61%
 ---
 # Cas pratiques : formulaires web{#use-cases-web-forms}
 
@@ -45,13 +45,13 @@ Le scénario mis en oeuvre dans cet exemple est le suivant :
 
 ### Etape 1 - Créer les services d’information {#step-1---creating-information-services}
 
-1. Créez le service d’inscription à la newsletter que vous souhaitez proposer à vos personnes destinataires. Pour plus d’informations sur la création d’une newsletter, consultez [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}.
+1. Créez le service d’inscription à la newsletter que vous souhaitez proposer à vos personnes destinataires. Pour plus d’informations sur la création d’une newsletter, consultez [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
+   ![Boîte de dialogue Service pour le service Newsletter hebdomadaire avec les champs Libellé, Nom interne, Type d&#39;e-mail et Mode Newsletter.](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
 1. Créez un second service d’information, un service temporaire associé à un modèle de diffusion pour adresser les messages de confirmation d’abonnement.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_1c.png)
+   ![Tableau de bord du service temporaire (temp_service) affichant le type d’e-mail, le mode Newsletter et son dossier.](assets/s_ncs_admin_survey_double-opt-in_sample_1c.png)
 
 ### Etape 2 - Créer les messages de confirmation {#step-2---creating-confirmation-messages}
 
@@ -61,7 +61,7 @@ Les messages de confirmation sont adressés via un modèle de diffusion dédié,
 1. Créez un modèle de diffusion pour adresser les messages de confirmation d’abonnement.
 1. Cliquez sur le bouton **[!UICONTROL Pour]** dans les **[!UICONTROL Paramètres de l’email]** pour associer le modèle de diffusion au mapping de ciblage Abonnements au lieu de Destinataires.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
+   ![Sélectionnez la boîte de dialogue de ciblage sur le modèle de diffusion avec le mapping de ciblage Abonnements (nms:subscription) sélectionné.](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
 1. Comme les destinataires de cette diffusion n&#39;ont pas confirmé leur approbation, ils sont toujours sur la liste bloquée de la base de données. Pour qu’ils puissent recevoir cette communication, vous devez autoriser les diffusions basées sur ce modèle à cibler les destinataires sur la place sur la liste bloquée.
 
@@ -77,15 +77,15 @@ Les messages de confirmation sont adressés via un modèle de diffusion dédié,
 
 1. Personnalisez votre diffusion et insérez le lien de confirmation dans le contenu du message. Ce lien vous permet d’accéder au formulaire web afin qu’il enregistre la confirmation d’abonnement.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_1b.png)
+   ![E-mail de confirmation dans l&#39;éditeur de diffusion avec un champ de personnalisation de prénom et un lien Cliquez ici.](assets/s_ncs_admin_survey_double-opt-in_sample_1b.png)
 
 1. À l’aide du DCE, liez votre URL au formulaire web. Comme le formulaire web n’est pas encore créé, remplacez la valeur dès sa création.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_3.png)
+   ![Volet Lien hypertexte avec le champ Application Web, toujours vide, pour le lien Cliquez ici dans l&#39;email de confirmation.](assets/s_ncs_admin_survey_double-opt-in_sample_3.png)
 
 1. Associez enfin ce modèle au service temporaire créé précédemment.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_3c.png)
+   ![Onglet Modification temporaire du service avec la diffusion de confirmation sélectionnée dans le champ Abonnement.](assets/s_ncs_admin_survey_double-opt-in_sample_3c.png)
 
 ### Etape 3 - Créer le formulaire d’inscription {#step-3---creating-the-subscription-form}
 
@@ -93,33 +93,33 @@ Le formulaire web permet à la fois l’inscription et la confirmation de l’in
 
 Le workflow du formulaire web contiendra les activités suivantes :
 
-![](assets/s_ncs_admin_survey_double-opt-in_sample_4c.png)
+![Workflow de formulaire web : préchargement, test, puis e-mail vide mène au script, à la Liste bloquée, à l&#39;abonnement, au stockage, à la fin.](assets/s_ncs_admin_survey_double-opt-in_sample_4c.png)
 
 Pour ce faire, procédez comme suit :
 
 1. Créez un formulaire Web et sélectionnez le modèle **[!UICONTROL Inscription à la Newsletter (subNewsletter)]**.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5a.png)
+   ![Boîte de dialogue Nouvelle application web avec le modèle Abonnement à la newsletter (sous-newsletter) sélectionné.](assets/s_ncs_admin_survey_double-opt-in_sample_5a.png)
 
 1. Dans l’onglet **[!UICONTROL Edition]**, nous devons configurer le workflow existant, dans la mesure où nous souhaitons ajouter un message de confirmation pour les destinataires qui souhaitent s’inscrire.
 
    Pour cela, double-cliquez sur l’activité **[!UICONTROL Pré-chargement]** et configurez-la comme suit.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5b.png)
+   ![Boîte de dialogue de préchargement de l’activité avec les données de chargement automatique référencées dans le formulaire et Ignorer le préchargement si aucun identifiant n’est sélectionné.](assets/s_ncs_admin_survey_double-opt-in_sample_5b.png)
 
    Cela signifie que si l’utilisateur ou l’utilisatrice accède à ce formulaire par le biais du lien dans le message de confirmation, les informations de son profil seront chargées. Si la personne accède au formulaire web via une page du site web, aucune information ne sera chargée.
 
 1. Ajoutez une activité **[!UICONTROL Test]** à votre workflow.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6e.png)
+   ![Workflow de formulaire web avec une activité Test qui embranche sur E-mail vide sur Abonnement, Stockage et Fin.](assets/s_ncs_admin_survey_double-opt-in_sample_6e.png)
 
    L’activité **[!UICONTROL Test]** peut s’appliquer à l’e-mail des personnes destinataires. Dans ce cas, configurez-la comme suit :
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
+   ![L&#39;éditeur de branche d&#39;activité de test avec la condition @email n&#39;est pas vide.](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
 
 1. Ajoutez deux activités **[!UICONTROL Script]** à votre workflow.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
+   ![Workflow de formulaire web avec une activité Script sur chaque branche de l&#39;activité Test.](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
    La première activité **[!UICONTROL Script]** ajoutera des destinataires à la newsletter jusqu&#39;à ce qu&#39;ils aient confirmé leur inscription. Son contenu doit être le suivant :
 
@@ -127,7 +127,7 @@ Pour ce faire, procédez comme suit :
    ctx.recipient.@blackList=1
    ```
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
+   ![Activité de Place sur la liste bloquée de script contenant le script ctx.recipient.@blackList=1.](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
 
    La deuxième activité **[!UICONTROL Script]** autorise l&#39;envoi de diffusions aux utilisateurs et les abonne à la newsletter. Les deux dernières lignes du script vont vous permettre de transférer vos destinataires du dossier temporaire vers un autre dossier et d&#39;être réconciliés avec les profils existants dès qu&#39;ils auront confirmé l&#39;abonnement.
 
@@ -142,17 +142,17 @@ Pour ce faire, procédez comme suit :
    >
    >La partition **[!UICONTROL Temp]** peut être régulièrement purgée de son contenu à l’aide d’un workflow.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6b.png)
+   ![Deuxième activité Script contenant les lignes de script unblocklist, Subscribe, folder et Unsubscribe.](assets/s_ncs_admin_survey_double-opt-in_sample_6b.png)
 
 1. Double-cliquez sur l’activité **[!UICONTROL Inscription]** pour personnaliser le formulaire d’inscription et associer une case à cocher au service temporaire créé précédemment.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5c.png)
+   ![Éditeur de page avec la case à cocher de consentement liée au service temporaire dans le champ Service.](assets/s_ncs_admin_survey_double-opt-in_sample_5c.png)
 
 1. Configurez l’activité **[!UICONTROL Enregistrement]** afin de sauvegarder les informations renseignées dans la page du formulaire.
 
    Cette activité permet de créer les profils de destinataires dans un dossier temporaire dédié afin de les différencier des profils en base, auxquels des communications peuvent être adressées.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5g.png)
+   ![Boîte de dialogue d&#39;activité de stockage avec le dossier Temp défini comme dossier de création.](assets/s_ncs_admin_survey_double-opt-in_sample_5g.png)
 
    >[!NOTE]
    >
@@ -162,75 +162,75 @@ Pour ce faire, procédez comme suit :
 
    La seconde activité **[!UICONTROL Fin]** affichera le message de confirmation une fois l’inscription terminée.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5h.png)
+   ![Fermez la boîte de dialogue d&#39;activité avec le message Votre abonnement est terminé. Vous recevrez bientôt notre newsletter.](assets/s_ncs_admin_survey_double-opt-in_sample_5h.png)
 
 1. Une fois le formulaire web créé et paramétré, vous pouvez le référencer dans le modèle de diffusion pour l’envoi des messages de confirmation.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_7b.png)
+   ![Diffusion de confirmation avec le lien Cliquez ici pointant vers l&#39;application Web de double opt-in à l&#39;abonnement à la newsletter.](assets/s_ncs_admin_survey_double-opt-in_sample_7b.png)
 
 ### Etape 4 - Publier et tester le formulaire {#step-4---publishing-and-testing-the-form}
 
 Vous pouvez maintenant publier le formulaire afin de le rendre accessible aux utilisateurs.
 
-![](assets/s_ncs_admin_survey_double-opt-in_sample_8b.png)
+![Tableau de bord de l&#39;application web avec le bouton Publier et le message qu&#39;elle doit être publiée pour être accessible en ligne.](assets/s_ncs_admin_survey_double-opt-in_sample_8b.png)
 
 Ainsi, l&#39;inscription à la newsletter est réalisée selon les étapes suivantes :
 
 1. L’utilisateur du site Web se connecte à la page d’abonnement et valide le formulaire.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8c.png)
+   ![Formulaire d&#39;abonnement à la newsletter dans un navigateur dont le nom et l&#39;adresse e-mail sont renseignés, case de consentement cochée et bouton Je m&#39;abonne.](assets/s_ncs_admin_survey_double-opt-in_sample_8c.png)
 
    Il est informé de la prise en compte de sa demande via un message affiché dans son navigateur.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
+   ![Page de fin du navigateur indiquant que la demande a été enregistrée et qu&#39;un message suivra.](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
    À cette étape, l&#39;utilisateur est ajouté dans la base de données Adobe Campaign, dans le dossier **[!UICONTROL Temp]**, et son profil est placé sur la liste bloquée jusqu&#39;à ce qu&#39;il valide son inscription à l&#39;aide de l&#39;email.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
+   ![Dossier des destinataires temporaires avec le nouveau profil sélectionné et l&#39;option Ne plus contacter (tous canaux) sélectionnée.](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
 1. Un message de confirmation lui est adressé avec un lien pour valider définitivement son inscription.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8e.png)
+   ![E-mail de confirmation d&#39;inscription avec un lien Cliquez ici pour confirmer l&#39;inscription à la newsletter.](assets/s_ncs_admin_survey_double-opt-in_sample_8e.png)
 
 1. Lorsqu’il clique sur ce lien, la page de validation est affichée dans son navigateur.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8.png)
+   ![Page du navigateur intitulée Félicitations ! la confirmation de l&#39;abonnement est maintenant active.](assets/s_ncs_admin_survey_double-opt-in_sample_8.png)
 
    Dans Adobe Campaign, le profil de l&#39;utilisateur est mis à jour :
 
    * il n&#39;est plus sur la liste bloquée,
    * il est abonné au service d’information.
 
-     ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
+     ![Mise à jour du profil du destinataire avec l&#39;option Ne plus contacter effacée et l&#39;abonnement Newsletter Movie répertorié.](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
 
 ## Afficher différentes options en fonction de la valeur sélectionnée {#displaying-different-options-depending-on-the-selected-values}
 
 Dans l’exemple suivant, la personne est invitée à sélectionner un type de véhicule. Vous pouvez afficher les catégories de véhicules disponibles en fonction du type sélectionné. Cela signifie que les éléments affichés dans la colonne de droite dépendent de la sélection de l’utilisateur ou de l’utilisatrice :
 
-![](assets/s_ncs_admin_survey_condition_sample0.png)
+![Page de sélection des voitures avec une liste déroulante Type de voiture définie sur Sélectionner.](assets/s_ncs_admin_survey_condition_sample0.png)
 
 * Lorsqu&#39;il sélectionne un véhicule particulier, il pourra choisir entre un véhicule &quot;Voiture individuelle&quot; ou &quot;Monospace&quot; :
 
-  ![](assets/s_ncs_admin_survey_condition_sample2.png)
+  ![Page de sélection de voiture avec voiture personnelle sélectionnée, affichant les options Standard et Compact.](assets/s_ncs_admin_survey_condition_sample2.png)
 
 * Lorsqu’il sélectionne un véhicule professionnel, il pourra choisir parmi les utilitaires de la liste déroulante :
 
-  ![](assets/s_ncs_admin_survey_condition_sample1.png)
+  ![Page de sélection des voitures avec Camion mobile sélectionné et une liste déroulante Classe des types de véhicules.](assets/s_ncs_admin_survey_condition_sample1.png)
 
 Dans cet exemple, le type de véhicule n’est pas stocké dans la base de données. La liste déroulante est configurée comme suit :
 
-![](assets/s_ncs_admin_survey_condition_config1.png)
+![Type de propriétés de zone de liste modifiable de voiture avec les valeurs Sélectionner, Voiture personnelle et Camion mobile.](assets/s_ncs_admin_survey_condition_config1.png)
 
 Cette information est stockée dans une variable locale.
 
 Le conditionnement de l&#39;affichage de la colonne de droite est paramétré au niveau des conteneurs :
 
-![](assets/s_ncs_admin_survey_condition_config1bis.png)
+![Boîte de dialogue de stockage avec l&#39;option Variable sélectionnée pour le champ Type de voiture.](assets/s_ncs_admin_survey_condition_config1bis.png)
 
 * Conditionnement de la visibilité des champs pour un véhicule personnel :
 
-  ![](assets/s_ncs_admin_survey_condition_config2.png)
+  ![Condition de visibilité sur le conteneur Voiture personnelle : type de voiture égal à Voiture personnelle.](assets/s_ncs_admin_survey_condition_config2.png)
 
 * Conditionnement de la visibilité des champs pour un véhicule professionnel :
 
-  ![](assets/s_ncs_admin_survey_condition_config3.png)
+  ![Condition de visibilité sur le conteneur Camion/Van : type de voiture égal à Camion en mouvement.](assets/s_ncs_admin_survey_condition_config3.png)

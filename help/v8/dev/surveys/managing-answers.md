@@ -19,10 +19,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 99%
+source-wordcount: '1224'
+ht-degree: 74%
 ---
 # Gestion des réponses{#managing-answers}
 
@@ -44,7 +44,7 @@ En complément des modes de stockage standard communs à tous les formulaires We
 
 Il est facile d&#39;étendre le modèle de données en ajoutant de nouveaux espaces de stockage pour enregistrer les réponses fournies dans les questionnaires. Pour cela, sélectionnez l&#39;option **[!UICONTROL Stocker les réponses à une question]** lors de la création du champ de saisie. Cliquez sur le bouton **[!UICONTROL Nouveau champ]** et indiquez ses propriétés :
 
-![](assets/s_ncs_admin_survey_new_space.png)
+![Boîte de dialogue de stockage avec Stocker les réponses à une question sélectionnée et la boîte de dialogue Créer un champ archivé pour un champ Contrat.](assets/s_ncs_admin_survey_new_space.png)
 
 Saisissez le libellé et le nom du champ, puis sélectionnez le type de champ : Texte, Booléen, Nombre entier ou à virgule, Date, etc.
 
@@ -62,15 +62,15 @@ Si ce champ est utilisé dans une liste, les valeurs de l’énumération pourro
 
 Vous pouvez par exemple créer une liste déroulante dans laquelle l’utilisateur pourra sélectionner sa langue maternelle. Le champ archivé correspondant peut être associé à l’énumération **langue** contenant une liste de langues :
 
-![](assets/s_ncs_admin_survey_database_values_2b.png)
+![Créez une boîte de dialogue de champ archivée avec l&#39;énumération de langue sélectionnée et l&#39;icône Modifier le lien mise en surbrillance.](assets/s_ncs_admin_survey_database_values_2b.png)
 
 L&#39;icône **[!UICONTROL Editer le lien]** située à droite du champ permet d&#39;éditer le contenu de cette énumération :
 
-![](assets/s_ncs_admin_survey_database_values_2c.png)
+![Éditeur de langue d&#39;énumération (langue) répertoriant les valeurs Anglais, Français et Allemand.](assets/s_ncs_admin_survey_database_values_2c.png)
 
 Dans l&#39;onglet **[!UICONTROL Général]** du champ, le lien **[!UICONTROL Initialiser la liste des valeurs depuis la base de données]** permet de renseigner automatiquement la liste des libellés proposés.
 
-![](assets/s_ncs_admin_survey_database_values_2.png)
+![Onglet Général du champ déroulant, Initialiser la liste des valeurs à partir du lien de base de données remplissant les libellés de langue.](assets/s_ncs_admin_survey_database_values_2.png)
 
 **Exemple** : stocker tous les contrats d&#39;un destinataire dans un même champ
 
@@ -78,31 +78,31 @@ Pour stocker les types de contrats d&#39;un utilisateur dans un même champ, cr�
 
 Cliquez sur le lien **[!UICONTROL Nouveau champ]** et saisissez les propriétés du champ. Sélectionnez l&#39;option **[!UICONTROL Valeurs multiples]** afin de permettre le stockage de plusieurs valeurs.
 
-![](assets/s_ncs_admin_survey_storage_multi_ex1.png)
+![Boîte de dialogue Créer un champ archivé pour les contrats avec l&#39;option Valeurs multiples sélectionnée.](assets/s_ncs_admin_survey_storage_multi_ex1.png)
 
 Créez les champs de saisie des autres contrats, et stockez les informations dans le même champ archivé.
 
-![](assets/s_ncs_admin_survey_storage_multi_ex2.png)
+![Boîte de dialogue de stockage et sélecteur de champ liant un champ de saisie au champ archivé Contrats.](assets/s_ncs_admin_survey_storage_multi_ex2.png)
 
 Lorsque l&#39;utilisateur valide le questionnaire, ses réponses sont stockées dans le champ **[!UICONTROL Contrats]**.
 
 Dans notre exemple, pour les réponses suivantes :
 
-![](assets/s_ncs_admin_survey_storage_multi_ex3.png)
+![Page d&#39;enquête sur les contrats avec quatre champs de contrat remplis avec les valeurs M, L, T et V.](assets/s_ncs_admin_survey_storage_multi_ex3.png)
 
 Le profil du répondant contiendra les quatre contrats renseignés.
 
 Vous pouvez les visualiser dans l&#39;onglet **[!UICONTROL Réponses]** du questionnaire, en affichant les colonnes correspondantes.
 
-![](assets/s_ncs_admin_survey_storage_multi_ex4.png)
+![Onglet Réponses répertoriant les réponses avec les colonnes Contrat_1 à Contrat_4 affichant les valeurs des réponses à plusieurs valeurs.](assets/s_ncs_admin_survey_storage_multi_ex4.png)
 
 Vous pouvez également filtrer les destinataires en fonction des réponses fournies pour n&#39;afficher que les utilisateurs recherchés. Pour cela, créez un workflow de ciblage et utilisez la boîte **[!UICONTROL Réponses à un questionnaire]**.
 
-![](assets/s_ncs_admin_survey_read_responses_wf.png)
+![Workflow de ciblage avec l&#39;activité Réponses à un questionnaire glissée de la palette Ciblage vers le diagramme.](assets/s_ncs_admin_survey_read_responses_wf.png)
 
 Créez votre requête en fonction des profils que vous souhaitez récupérer. Dans l’exemple ci-dessous, la requête vous permet de sélectionner les profils ayant au moins deux contrats dont un contrat de type A.
 
-![](assets/s_ncs_admin_survey_read_responses_edit.png)
+![L&#39;activité Réponses à un questionnaire et sa boîte de dialogue de requête filtrent sur Contract_1 égal à E et Contract_2 égal à R.](assets/s_ncs_admin_survey_read_responses_edit.png)
 
 Pour chaque formulaire, les réponses fournies peuvent être réutilisées dans les champs ou les libellés. Utilisez la syntaxe suivante pour le contenu stocké dans un champ archivé :
 
@@ -127,17 +127,17 @@ Pour cela :
 * Editez les propriétés du questionnaire à partir du bouton **[!UICONTROL Propriétés]** de l&#39;onglet **[!UICONTROL Edition]**.
 * Cliquez sur le lien **[!UICONTROL Paramètres avancés]** et cochez l&#39;option **[!UICONTROL Conserver une copie des réponses brutes]**.
 
-![](assets/s_ncs_admin_survey_xml_archive_option.png)
+![Boîte de dialogue Paramètres avancés de l&#39;application Web avec l&#39;option Enregistrer une copie des réponses brutes sélectionnée.](assets/s_ncs_admin_survey_xml_archive_option.png)
 
 Vous pouvez l&#39;activer par défaut pour tous les questionnaires (cette option est appliquée à la publication du questionnaire). Pour ce faire, créez l’option **[!UICONTROL NmsWebApp_XmlBackup]** et affectez-lui la valeur **[!UICONTROL 1]**, comme illustré ci-dessous :
 
-![](assets/s_ncs_admin_survey_xml_global_option.png)
+![Nœud Options dans Administration, Plateforme avec l&#39;option NmsWebApp_XmlBackup créée avec la valeur 1.](assets/s_ncs_admin_survey_xml_global_option.png)
 
 ## Gestion des scores {#score-management}
 
 Vous pouvez attribuer un score aux options proposées dans les pages du formulaire. Les scores ne peuvent être associés qu’à des questions fermées : case à cocher, valeur d’une liste déroulante, abonnement, etc.
 
-![](assets/s_ncs_admin_survey_score_create.png)
+![Onglet Général du champ de zone de liste déroulante répertoriant les valeurs des cartes de fidélité de standard à VIP avec une colonne Score comprise entre 2.00 et 10.00.](assets/s_ncs_admin_survey_score_create.png)
 
 Les scores sont cumulés et sauvegardés côté serveur, au moment de la validation de la page, c&#39;est-à-dire lorsque l&#39;utilisateur clique sur un bouton **[!UICONTROL Suivant]** ou **[!UICONTROL Terminer]**.
 
@@ -153,7 +153,7 @@ Les scores peuvent être utilisés dans des tests et dans des scripts.
 
 * Pour utiliser les scores dans des tests, vous devez utiliser le champ **[!UICONTROL Score]** dans la formule de calcul du test, comme dans l&#39;exemple ci-dessous :
 
-  ![](assets/s_ncs_admin_survey_score_in_a_test.png)
+  ![Activité de test avec une condition sur le score supérieur à 6, en sélectionnant le champ Score dans le document contextuel.](assets/s_ncs_admin_survey_score_in_a_test.png)
 
 * Vous pouvez utiliser le score dans un script.
 
@@ -161,18 +161,18 @@ Les scores peuvent être utilisés dans des tests et dans des scripts.
 
 * Dans un questionnaire, la page suivante permet d&#39;attribuer un score différent à l&#39;utilisateur en fonction de la valeur sélectionnée dans la liste déroulante :
 
-  ![](assets/s_ncs_admin_survey_score_exa.png)
+  ![Champ déroulant des niveaux de classe, de l&#39;école maternelle à l&#39;université, avec des scores de 2.00 à 7.00.](assets/s_ncs_admin_survey_score_exa.png)
 
 * Vous pouvez cumuler ce score avec une seconde valeur, en fonction de l&#39;option sélectionnée :
 
-  ![](assets/s_ncs_admin_survey_score_exb.png)
+  ![Champ à choix multiples Vous êtes... avec un parent ayant obtenu une note de 7,00 et un élève ayant obtenu une note de 2,00.](assets/s_ncs_admin_survey_score_exb.png)
 
 * Lorsque l&#39;utilisateur clique sur le bouton **[!UICONTROL Suivant]**, les deux valeurs sont additionnées.
 
-  ![](assets/s_ncs_admin_survey_score_exe.png)
+  ![Page d&#39;accueil avec le niveau Junior élevé sélectionné dans la liste Niveau et l&#39;option Parent sélectionnée sous Statut.](assets/s_ncs_admin_survey_score_exe.png)
 
 * Des conditions peuvent être appliquées pour la page à afficher en fonction du score. Elle est configurée comme suit :
 
-  ![](assets/s_ncs_admin_survey_score_exd.png)
+  ![Activité de test avec une condition de branche Modifier : score supérieur à 7.00.](assets/s_ncs_admin_survey_score_exd.png)
 
-  ![](assets/s_ncs_admin_survey_score_exg.png)
+  ![L’activité de test atteint le niveau 1 lorsque le score est inférieur à 7, le niveau 2 lorsqu’il est égal à 7 et le niveau 3 lorsqu’il est supérieur à 7.](assets/s_ncs_admin_survey_score_exg.png)

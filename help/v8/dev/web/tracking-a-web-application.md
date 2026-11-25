@@ -32,10 +32,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 95%
+source-wordcount: '514'
+ht-degree: 76%
 ---
 # Tracker les visites sur une application web{#tracking-a-web-application}
 
@@ -50,11 +50,11 @@ Les principales fonctionnalités proposées dans cette version sont les suivante
 * Possibilité d&#39;insérer plusieurs balises de tracking sur une même page, afin de faciliter la définition de chemins de navigation (ex : achat, inscription, retour, etc.).
 * Visualisation des chemins de navigation et des balises de tracking des différentes pages depuis le tableau de bord de l&#39;application Web.
 
-  ![](assets/trackers_1.png)
+  ![Tableau de bord de l’application web avec section Balises de suivi répertoriant les chemins de conversion et l’étape de balise de suivi sur chaque page](assets/trackers_1.png)
 
 * Génération d&#39;un rapport de tracking complet.
 
-  ![](assets/trackers_5.png)
+  ![Rapport d’analyse des balises de tracking avec le nombre total de visites, de visiteurs uniques, le taux de conversion, le taux de rebond et un graphique de visites](assets/trackers_5.png)
 
   Les principaux indicateurs sont les suivants :
 
@@ -71,7 +71,7 @@ Deux modes différents permettent d&#39;identifier l&#39;origine du visiteur lor
 1. Envoyer une diffusion spécifique pour donner accès aux pages de l&#39;application Web : dans ce cas, la source de trafic est cette diffusion,
 1. Associer l&#39;application Web à une source de trafic dédiée : dans ce cas, il doit s&#39;agir d&#39;une diffusion externe de type &#39;traffic source&#39;. Le choix est effectué dans les propriétés de l&#39;application Web ou du mapping de ciblage.
 
-   ![](assets/trackers_6.png)
+   ![Boîte de dialogue des paramètres avancés des propriétés de l&#39;application web, avec le champ Source du trafic défini sur une diffusion web](assets/trackers_6.png)
 
 Afin d&#39;identifier la source de trafic sur une application Web, Adobe Campaign recherche successivement les informations suivantes :
 
@@ -87,12 +87,12 @@ Afin d&#39;identifier la source de trafic sur une application Web, Adobe Campai
 
 Lorsqu&#39;une application web est créée en utilisant l&#39;éditeur de contenus HTML - **Digital Content Editor (DCE)** -, les balises de tracking sont insérées depuis le sous-onglet **[!UICONTROL Propriétés]** de l&#39;éditeur. Pour plus d’informations sur le Digital Content Editor (DCE), consultez la section [Prise en main de l’éditeur HTML de Campaign](about-campaign-html-editor.md).
 
-![](assets/trackers_2.png)
+![Onglet Propriétés de la page DCE dans lequel une balise de tracking se voit attribuer un objectif tel que Abonnement, Conversion ou Mise à jour](assets/trackers_2.png)
 
 Lorsque l&#39;opérateur utilise l&#39;interface Web, les balises de tracking doivent être insérées depuis les propriétés de la page.
 
-![](assets/trackers_3.png)
+![Propriétés de la boîte de dialogue de la page, onglet Balises de suivi, répertoriant chaque balise avec son action d’évaluation et de cible](assets/trackers_3.png)
 
 L&#39;icône **[!UICONTROL Afficher les blocs]** permet de visualiser le nombre de balises de tracking configurées pour la page.
 
-![](assets/trackers_4.png)
+![Afficher l’icône Blocs dans l’éditeur web, avec une info-bulle indiquant 2 balises de suivi dans la page](assets/trackers_4.png)

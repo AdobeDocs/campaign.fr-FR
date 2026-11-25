@@ -21,10 +21,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 95%
+source-wordcount: '1292'
+ht-degree: 73%
 ---
 # Étapes clés de création d’un questionnaire{#getting-started-with-surveys}
 
@@ -36,7 +36,7 @@ ht-degree: 95%
 
 Nous vous proposons ici d&#39;aborder rapidement, en sept étapes clés, la création d&#39;un questionnaire simple, selon le modèle natif suivant :
 
-![](assets/s_ncs_admin_survey_result.png)
+![Page de l&#39;enquête Vos coordonnées avec le nom, le numéro de compte et les champs d&#39;adresse électronique, une liste de format d&#39;adresse électronique et un bouton Valider](assets/s_ncs_admin_survey_result.png)
 
 Ces étapes sont les suivantes :
 
@@ -52,13 +52,13 @@ Ces étapes sont les suivantes :
 
 Pour créer un questionnaire, accédez à l&#39;onglet **[!UICONTROL Campagnes]** ou **[!UICONTROL Profils et cibles]** et cliquez sur le menu **[!UICONTROL Applications Web]**. Cliquez sur le bouton **[!UICONTROL Créer]** situé au-dessus de la liste des formulaires.
 
-![](assets/s_ncs_admin_survey_create.png)
+![Liste Applications Web dans l&#39;onglet Campagnes avec le bouton Créer au-dessus de la liste des formulaires](assets/s_ncs_admin_survey_create.png)
 
 ## Étape 2 - Sélectionner le modèle {#step-2---selecting-the-template}
 
 Sélectionnez un modèle de questionnaire, puis attribuez un nom au questionnaire. Ce nom ne sera pas visible par les utilisateurs et utilisatrices finaux, mais il permettra d’identifier le questionnaire dans Adobe Campaign. Cliquez sur **[!UICONTROL Enregistrer]** : le questionnaire est ajouté dans la liste des applications Web.
 
-![](assets/s_ncs_admin_survey_wz_00.png)
+![Boîte de dialogue Nouvelle application web avec le nouveau modèle d&#39;enquête sélectionné, un libellé, un dossier et le bouton Enregistrer](assets/s_ncs_admin_survey_wz_00.png)
 
 ## Étape 3 - Construire le questionnaire {#step-3---building-the-survey}
 
@@ -70,34 +70,34 @@ Un questionnaire doit contenir **au minimum** les trois composants suivants : u
 
 * Pour créer une page, sélectionnez l&#39;objet **[!UICONTROL Page]** dans la section gauche de l&#39;éditeur et déposez-le dans la section centrale, comme ci-dessous :
 
-  ![](assets/s_ncs_admin_survey_new_page.png)
+  ![Éditeur de questionnaires avec l&#39;objet Page en cours de déplacement de la liste Commun vers la zone de diagramme](assets/s_ncs_admin_survey_new_page.png)
 
 * Sélectionnez ensuite l&#39;objet **[!UICONTROL Enregistrement]** et positionnez-le sur l&#39;extrémité de la transition sortante de la page.
 * Enfin, sélectionnez l&#39;objet **[!UICONTROL Fin]** et positionnez-le sur l&#39;extrémité de la transition sortante de la boîte d&#39;enregistrement, afin d&#39;obtenir le diagramme suivant :
 
-  ![](assets/s_ncs_admin_survey_end.png)
+  ![Diagramme d&#39;enquête avec une page, une boîte de stockage et un objet de fin liés par des transitions](assets/s_ncs_admin_survey_end.png)
 
 ## Étape 4 - Créer le contenu de la page {#step-4---creating-the-page-content}
 
 Dans l&#39;exemple suivant, nous utiliserons une page de type **[!UICONTROL Page (compatibilité v5)]**. Ce type de page est accessible à partir de la palette avancée de l&#39;onglet **[!UICONTROL Edition]**.
 
-![](assets/s_ncs_admin_survey_pagev5.png)
+![Liste avancée de l&#39;onglet Modifier avec l&#39;objet Page (compatibilité v5) sélectionné dans un diagramme Page, Stockage, Fin](assets/s_ncs_admin_survey_pagev5.png)
 
 * **Ajouter des champs de saisie**
 
   Pour créer le contenu de la page, vous devez d’abord l’éditer : pour cela, double-cliquez sur l’objet **[!UICONTROL Page]**. Cliquez sur la première icône de la barre d’outils pour exécuter l’assistant de création de champ. Pour créer un champ de saisie du nom de l&#39;utilisateur qui sera stocké dans le champ correspondant du profil du destinataire, choisissez **[!UICONTROL Editer un destinataire]**.
 
-  ![](assets/s_ncs_admin_survey_add_field_menu.png)
+  ![Assistant de création de champ avec l&#39;option Modifier un destinataire sélectionnée pour ajouter un champ de formulaire](assets/s_ncs_admin_survey_add_field_menu.png)
 
   Cliquez sur le bouton **[!UICONTROL Suivant]** afin de sélectionner le champ de stockage des informations dans la base de données. Dans ce cas, le champ « Nom ».
 
-  ![](assets/s_ncs_admin_survey_choose_field.png)
+  ![Assistant de création de champs répertoriant les champs du destinataire, avec le nom sélectionné comme champ à renseigner](assets/s_ncs_admin_survey_choose_field.png)
 
   Cliquez sur **[!UICONTROL Terminer]** pour valider la création de ce champ.
 
   Par défaut, lorsque les informations sont stockées dans un champ déjà existant de la base de données, le libellé du champ reprend le nom du champ sélectionné, soit dans notre exemple « Nom ». Vous pouvez modifier ce libellé comme illustré ci-dessous :
 
-  ![](assets/s_ncs_admin_survey_change_label.png)
+  ![Éditeur de page dans lequel le libellé du champ Nom est remplacé par Votre nom, stocké dans le champ de base de données @lastName](assets/s_ncs_admin_survey_change_label.png)
 
   Créez maintenant un champ de saisie pour le numéro de compte d’utilisateur ou d’utilisatrice. Répétez l’opération et choisissez le champ « N° de compte ».
 
@@ -107,19 +107,19 @@ Dans l&#39;exemple suivant, nous utiliserons une page de type **[!UICONTROL Page
 
   Pour créer une question, cliquez avec le bouton droit de la souris sur le dernier élément de l&#39;arborescence, et choisissez **[!UICONTROL Conteneurs > Question]**, ou cliquez sur l&#39;icône **[!UICONTROL Conteneurs]** et choisissez **[!UICONTROL Question]**.
 
-  ![](assets/s_ncs_admin_survey_add_qu.png)
+  ![Éditeur de page avec le menu Conteneurs ouvert et Question sélectionnée, sous les champs nom, numéro de compte et adresse électronique](assets/s_ncs_admin_survey_add_qu.png)
 
-  Saisissez le libellé de la question et insérez le ou les champs de réponse en tant que sous-branche de la question. Pour cela, le nœud lié à la question doit être sélectionné lors de la création du champ de réponse. Ajoutez une liste déroulante **&#x200B;**&#x200B;à l&#39;aide de l&#39;icône **[!UICONTROL Contrôles de sélection]** ou en cliquant avec le bouton droit, comme dans l&#39;exemple ci-dessous :
+  Saisissez le libellé de la question et insérez le ou les champs de réponse en tant que sous-branche de la question. Pour cela, le nœud lié à la question doit être sélectionné lors de la création du champ de réponse. Ajoutez une liste déroulante **** à l&#39;aide de l&#39;icône **[!UICONTROL Contrôles de sélection]** ou en cliquant avec le bouton droit, comme dans l&#39;exemple ci-dessous :
 
-  ![](assets/s_ncs_admin_survey_add_list.png)
+  ![Menu contextuel sur la question avec contrôles de sélection ouverts et zone de liste déroulante mise en surbrillance](assets/s_ncs_admin_survey_add_list.png)
 
   Sélectionnez un espace de stockage : choisissez un champ de type énumération afin de récupérer automatiquement les valeurs (ici, le format des emails).
 
-  ![](assets/s_ncs_admin_survey_add_itz_list.png)
+  ![Boîte de dialogue de stockage avec Modifier un destinataire sélectionné et le champ de base de données Format des emails (@emailFormat)](assets/s_ncs_admin_survey_add_itz_list.png)
 
   Dans l&#39;onglet **[!UICONTROL Général]**, cliquez sur le lien **[!UICONTROL Initialiser la liste des valeurs depuis la base de données]** : le tableau des valeurs est automatiquement renseigné.
 
-  ![](assets/s_ncs_admin_survey_add_value.png)
+  ![Onglet Général de la zone de liste déroulante avec le lien Initialiser la liste des valeurs à partir de la base de données et la liste remplie de valeurs](assets/s_ncs_admin_survey_add_value.png)
 
   Cliquez sur **[!UICONTROL OK]** pour fermer l&#39;éditeur, puis sur **[!UICONTROL Enregistrer]** pour sauvegarder les modifications.
 
@@ -129,7 +129,7 @@ Dans l&#39;exemple suivant, nous utiliserons une page de type **[!UICONTROL Page
 
   Dans l&#39;écran de détail, cliquez sur l&#39;onglet **[!UICONTROL Prévisualisation]** pour consulter le rendu du questionnaire que vous venez de créer.
 
-  ![](assets/s_ncs_admin_survey_preview.png)
+  ![Onglet Aperçu affichant la page du questionnaire avec le nom, le numéro de compte, les champs de format d&#39;e-mail et d&#39;e-mail et un bouton Valider](assets/s_ncs_admin_survey_preview.png)
 
 ## Étape 5 - Enregistrer les données du questionnaire {#step-5---storing-the-survey-data-}
 
@@ -139,7 +139,7 @@ Pour cela, éditez la boîte et cochez le champ qui sera utilisé comme clé de 
 
 Dans l’exemple ci-dessous, lors de l’enregistrement (validation), si un profil est enregistré en base avec le même numéro de compte que celui saisi dans le formulaire, le profil est mis à jour. Si le profil n’existe pas, il est créé.
 
-![](assets/s_ncs_admin_survey_save_edit.png)
+![Boîte de dialogue de stockage avec le champ N° de compte activé comme clé de réconciliation sous Destinataire](assets/s_ncs_admin_survey_save_edit.png)
 
 Cliquez sur **[!UICONTROL OK]** pour confirmer, puis sur **[!UICONTROL Enregistrer]** pour enregistrer le questionnaire.
 
@@ -150,17 +150,17 @@ Pour que les utilisateurs et utilisatrices puissent accéder aux pages HTML, l�
 * Cliquez sur le bouton **[!UICONTROL Publier]** situé dans le tableau de bord du questionnaire.
 * Cliquez sur **[!UICONTROL Démarrer]** pour lancer la publication et fermer l’assistant.
 
-  ![](assets/s_ncs_admin_survey_start_publ.png)
+  ![Bouton Publier le tableau de bord menant à la boîte de dialogue de publication de l&#39;application Web avec le bouton Démarrer](assets/s_ncs_admin_survey_start_publ.png)
 
   Le statut du questionnaire est alors modifié : il est **En ligne**.
 
-  ![](assets/survey_published.png)
+  ![Tableau de bord de l&#39;enquête dont le statut est passé à En ligne et dont la date de publication et l&#39;URL publique sont affichées](assets/survey_published.png)
 
 ## Étape 7 - Partager votre questionnaire en ligne {#step-7---sharing-your-online-survey}
 
 Une fois en production, le questionnaire est accessible sur le serveur et vous pouvez le diffuser. L’URL d’accès au questionnaire est affichée dans le tableau de bord.
 
-![](assets/survey_url_from_dashboard.png)
+![Tableau de bord de l&#39;enquête avec une flèche pointant vers le champ URL publique de l&#39;enquête en ligne](assets/survey_url_from_dashboard.png)
 
 Pour diffuser le questionnaire, vous pouvez envoyer un message contenant le lien d&#39;accès au questionnaire à la population cible ou positionner l&#39;URL d&#39;accès au questionnaire sur une page web, par exemple.
 

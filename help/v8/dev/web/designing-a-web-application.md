@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 100%
+source-wordcount: '360'
+ht-degree: 83%
 ---
 # Créer une application web{#designing-a-web-application}
 
@@ -47,21 +47,21 @@ Les applications web sont créées et gérées suivant le même principe que les
 
 Vous pouvez inclure des graphiques dans des applications web. Pour cela, utilisez la liste déroulante des graphiques dans la barre des tâches et sélectionnez le type de graphique à insérer.
 
-![](assets/s_ncs_admin_webapps_bar_graph.png)
+![Liste déroulante de graphique de la barre d&#39;outils de l&#39;éditeur de page répertoriant Histogramme, circulaire, radar, aires, courbes et Funnel.](assets/s_ncs_admin_webapps_bar_graph.png)
 
 Vous pouvez également sélectionner le menu **[!UICONTROL Ajouter un graphique]**.
 
-![](assets/s_ncs_admin_webapps_graph.png)
+![Menu contextuel de la page avec Ajout d&#39;un sous-menu de graphique répertoriant Histogramme, circulaire, radar, aires, courbes et Funnel.](assets/s_ncs_admin_webapps_graph.png)
 
 ## Insérer des tableaux dans une application web {#inserting-tables-in-a-web-application}
 
 Pour ajouter un tableau, utilisez la liste déroulante des tableaux dans la barre des tâches et sélectionnez le type de tableau voulu.
 
-![](assets/s_ncs_admin_webapps_bar_table.png)
+![Liste déroulante du tableau de la barre d&#39;outils de l&#39;éditeur de page, Tableau croisé dynamique, Liste avec groupe et Distribution.](assets/s_ncs_admin_webapps_bar_table.png)
 
 Vous pouvez également sélectionner le type de tableau dans le menu contextuel.
 
-![](assets/s_ncs_admin_webapps_table.png)
+![Menu contextuel de page avec sous-menu Ajouter un tableau répertoriant le tableau croisé dynamique, la liste avec groupe et la distribution.](assets/s_ncs_admin_webapps_table.png)
 
 ## Applications web de type vues d&#39;ensemble {#overview-type-web-applications}
 

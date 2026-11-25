@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1373'
-ht-degree: 94%
+source-wordcount: '1571'
+ht-degree: 82%
 ---
 # Publier un formulaire web{#publishing-a-web-form}
 
@@ -49,7 +49,7 @@ Les méthodes d&#39;identification possibles sont les suivantes :
 
 * **[!UICONTROL Chiffrement DES]**
 
-  ![](assets/s_ncs_admin_survey_preload_methods_001.png)
+  ![Précharger la section Identification avec la Méthode définie sur le chiffrement DES, un champ de clé DES et Ignorer le préchargement si aucun ID](assets/s_ncs_admin_survey_preload_methods_001.png)
 
   Cette méthode de chiffrement utilise un identifiant (ID) fourni de l&#39;extérieur associé à une clé commune entre Adobe Campaign et le fournisseur externe. Le champ **[!UICONTROL Clé DES]** permet de saisir cette clé de chiffrement.
 
@@ -57,7 +57,7 @@ Les méthodes d&#39;identification possibles sont les suivantes :
 
   Cette option permet de sélectionner parmi les champs du contexte courant du formulaire, ceux qui seront utilisés pour retrouver le profil correspondant dans la base de données.
 
-  ![](assets/s_ncs_admin_survey_preload_methods_002.png)
+  ![Préchargement de la section Identification avec la méthode Liste de champs et le champ d&#39;e-mail sélectionné comme identifiant](assets/s_ncs_admin_survey_preload_methods_002.png)
 
   Les champs peuvent être ajoutés aux propriétés du formulaire via l’onglet **[!UICONTROL Paramètres]** (voir [Ajouter des paramètres](defining-web-forms-properties.md#adding-parameters)). Ils sont placés dans l’URL du formulaire ou dans les zones d’entrée.
 
@@ -69,11 +69,11 @@ Les méthodes d&#39;identification possibles sont les suivantes :
 
   L&#39;URL peut contenir l&#39;adresse e-mail non chiffrée, auquel cas l&#39;utilisateur accède directement à la page qui le concerne.
 
-  ![](assets/s_ncs_admin_survey_preload_methods_003.png)
+  ![URL du formulaire web contenant l&#39;adresse e-mail, ouvrant directement le formulaire d&#39;informations client prérempli](assets/s_ncs_admin_survey_preload_methods_003.png)
 
   Dans le cas contraire, il devra fournir son mot de passe.
 
-  ![](assets/s_ncs_admin_survey_preload_methods_004.png)
+  ![URL du formulaire web sans l&#39;e-mail, ouverture d&#39;une page Saisir le mot de passe qui demande le mot de passe](assets/s_ncs_admin_survey_preload_methods_004.png)
 
   >[!CAUTION]
   >
@@ -89,7 +89,7 @@ L&#39;option **[!UICONTROL Chargement de données additionnelles]** permet d&#39
 
 Vous pouvez par exemple précharger le genre du destinataire et l’orienter automatiquement vers la page correspondante via une boîte de test.
 
-![](assets/s_ncs_admin_survey_preload_ex.png)
+![Boîte de préchargement chargeant le champ genre, suivie d&#39;une boîte de test qui envoie les destinataires à la page correspondante](assets/s_ncs_admin_survey_preload_ex.png)
 
 ## Gérer la diffusion et le tracking des formulaires web {#managing-web-forms-delivery-and-tracking}
 
@@ -137,13 +137,13 @@ Le cycle de vie d&#39;un formulaire se décompose en trois étapes :
 
 L&#39;état de publication d&#39;un formulaire est affiché dans la liste des formulaires.
 
-![](assets/s_ncs_admin_survey_status.png)
+![Liste des applications web affichant le statut de publication de chaque formulaire, par exemple En ligne et En édition](assets/s_ncs_admin_survey_status.png)
 
 ### Publier un formulaire {#publishing-a-form}
 
 Pour modifier l&#39;état d&#39;un formulaire, vous devez le publier. Pour cela, cliquez sur le bouton **[!UICONTROL Publication]** situé au-dessus de la liste des formulaires Web et sélectionnez l&#39;état dans la liste déroulante.
 
-![](assets/webapp_publish_webform.png)
+![Tableau de bord de formulaires web avec le bouton Publier, menant à la boîte de dialogue de publication de l&#39;application web avec un bouton Démarrer](assets/webapp_publish_webform.png)
 
 ### Mettre un formulaire à disposition {#making-a-form-available-online}
 
@@ -151,7 +151,7 @@ Pour que l’accès au formulaire soit possible, il doit être en production et 
 
 * Utilisez les champs de la section **[!UICONTROL Projet]** pour indiquer les dates de début et de fin du formulaire.
 
-  ![](assets/webapp_availability_date.png)
+  ![Onglet général des propriétés avec les champs de date de début et de fin dans la section Projet, et le calendrier de date de fin ouvert](assets/webapp_availability_date.png)
 
 * Cliquez sur le lien **[!UICONTROL Personnaliser le message affiché si le formulaire est fermé]** pour définir le message d&#39;erreur à afficher si l&#39;utilisateur tente d&#39;accéder au formulaire en dehors de sa période de validité.
 
@@ -169,21 +169,21 @@ Dans ce cas, la clé de réconciliation pour le stockage des données doit être
 
 Dans ce cas, vous devez cocher l’option **[!UICONTROL Mettre à jour l’enregistrement préchargé]** dans la zone d’enregistrement. Voir à ce sujet la section [Enregistrer les réponses aux formulaires web](web-forms-answers.md#saving-web-forms-answers).
 
-![](assets/s_ncs_admin_survey_save_box_option.png)
+![Boîte de dialogue de stockage avec l&#39;option Mettre à jour l&#39;enregistrement préchargé cochée](assets/s_ncs_admin_survey_save_box_option.png)
 
 ### Log responses {#log-responses}
 
 Le tracking des réponses peut être activé dans un onglet dédié afin de surveiller l&#39;impact de votre formulaire web. Pour ce faire, cliquez sur le bouton **[!UICONTROL Paramètres avancés]** dans la fenêtre des propriétés du formulaire et cochez ensuite la case **[!UICONTROL Enregistrer une trace des réponses]**.
 
-![](assets/s_ncs_admin_survey_trace.png)
+![Boîte de dialogue des paramètres avancés avec l&#39;option Enregistrer les réponses activée, ouverte à partir des propriétés du formulaire](assets/s_ncs_admin_survey_trace.png)
 
 L&#39;onglet **[!UICONTROL Réponses]** permet alors de visualiser l&#39;identité des répondants.
 
-![](assets/s_ncs_admin_survey_trace_tab.png)
+![Onglet Réponses du formulaire Web répertoriant la date et le destinataire de chaque réponse au formulaire](assets/s_ncs_admin_survey_trace_tab.png)
 
 Sélectionnez un destinataire et cliquez sur le bouton **[!UICONTROL Détail...]** pour visualiser les réponses fournies.
 
-![](assets/s_ncs_admin_survey_trace_edit.png)
+Bouton ![Détail sur l&#39;onglet Réponses ouvrant une fenêtre Réponses à un formulaire avec les réponses saisies par un destinataire](assets/s_ncs_admin_survey_trace_edit.png)
 
 Vous pouvez exploiter les traces des réponses fournies dans des requêtes, par exemple pour cibler uniquement les non-répondants dans le cadre d&#39;une relance ou proposer des communications spécifiques aux seuls répondants.
 

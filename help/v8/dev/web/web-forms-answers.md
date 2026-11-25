@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 93%
+source-wordcount: '1101'
+ht-degree: 77%
 ---
 # Réponses aux formulaires web{#web-forms-answers}
 
@@ -35,7 +35,7 @@ Les réponses aux formulaires peuvent être enregistrées dans un champ de la ba
 
 Pour chaque champ de saisie d&#39;un formulaire, les options de stockage suivantes sont disponibles :
 
-![](assets/s_ncs_admin_survey_select_storage.png)
+![Champ d’entrée Nom avec le lien Modifier le stockage et la boîte de dialogue Stockage affichant les options Modifier un destinataire et Variable.](assets/s_ncs_admin_survey_select_storage.png)
 
 * **[!UICONTROL Editer un destinataire]**
 
@@ -49,7 +49,7 @@ Pour chaque champ de saisie d&#39;un formulaire, les options de stockage suivant
 
 Pour enregistrer les données dans un champ existant de la base de données, cliquez sur l&#39;icône **[!UICONTROL Editer l&#39;expression]** et sélectionnez-le dans la liste des champs disponibles.
 
-![](assets/s_ncs_admin_survey_storage_type1.png)
+![Boîte de dialogue de stockage avec l&#39;expression Modifier ouvrant le sélecteur de champ, où Nom (@lastName) est sélectionné.](assets/s_ncs_admin_survey_storage_type1.png)
 
 >[!NOTE]
 >
@@ -61,15 +61,15 @@ Vous pouvez utiliser des variables locales : en effet, quoique non stockées da
 
 Ainsi, vous pouvez utiliser la valeur d’un champ non enregistré pour autoriser l’affichage d’un groupe d’options dans la page. Dans la page ci-dessous, le type de véhicule n’est pas stocké dans la base de données :
 
-![](assets/s_ncs_admin_survey_no_storage_variable.png)
+![Type de zone de liste modifiable de voiture avec le stockage défini sur la variable typeV et le lien Modifier le stockage.](assets/s_ncs_admin_survey_no_storage_variable.png)
 
 Il est enregistré dans une variable qui doit être sélectionnée lors de la création de la liste déroulante ou via le lien **[!UICONTROL Editer le stockage...]**.
 
-![](assets/s_ncs_admin_survey_no_storage_variable2.png)
+![Boîte de dialogue de stockage avec l&#39;option Variable et une liste déroulante Type de voiture, de camion de déménagement et de voiture personnelle.](assets/s_ncs_admin_survey_no_storage_variable2.png)
 
 Vous pouvez afficher les variables existantes et créer de nouvelles variables à partir du lien **[!UICONTROL Editer les variables...]**. Cliquez sur le bouton **[!UICONTROL Ajouter]** pour créer une nouvelle variable.
 
-![](assets/s_ncs_admin_survey_add_a_variable.png)
+![Modifiez la liste des variables et la boîte de dialogue Variable avec l&#39;étiquette et le nom de l&#39;énergie de la voiture, saisissez Texte, pour ajouter une variable.](assets/s_ncs_admin_survey_add_a_variable.png)
 
 La variable ajoutée sera disponible dans la liste des variables locales lors de la création des champs de saisie de la page.
 
@@ -81,19 +81,19 @@ La variable ajoutée sera disponible dans la liste des variables locales lors de
 
 Dans l&#39;exemple ci-dessus, le conteneur PARTICULIER (qui regroupe les données relatives aux véhicules particuliers) n&#39;est affiché que si l&#39;option **[!UICONTROL Particulier]** est sélectionnée dans la liste déroulante, comme indiqué dans la condition de visibilité :
 
-![](assets/s_ncs_admin_survey_add_a_condition.png)
+![Conteneur personnel de voiture Condition de visibilité : type de voiture égal à Personnel.](assets/s_ncs_admin_survey_add_a_condition.png)
 
 Ainsi, si l&#39;utilisateur sélectionne un véhicule particulier, le formulaire Web proposera les options suivantes :
 
-![](assets/s_ncs_admin_survey_no_storage_conda.png)
+![Page de formulaire de réservation de voiture affichant la liste déroulante Type de voiture avec Sélectionner, Compact, Intermédiaire et Standard.](assets/s_ncs_admin_survey_no_storage_conda.png)
 
 Le conteneur qui regroupe les données relatives aux utilitaires sera affiché si l&#39;option PROFESSIONNEL est sélectionnée, comme exprimé dans la condition de visibilité :
 
-![](assets/s_ncs_admin_survey_view_a_condition.png)
+![Conteneur camion/fourgon Condition de visibilité : origine égale à Camion.](assets/s_ncs_admin_survey_view_a_condition.png)
 
 Ainsi, si l&#39;utilisateur sélectionne un véhicule utilitaire, le formulaire proposera les options suivantes :
 
-![](assets/s_ncs_admin_survey_no_storage_condb.png)
+![Formulaire de réservation de voiture avec camion de déménagement sélectionné et une liste déroulante Classe énumérant Minibus, Pick-up, Fourgonnette et 20 Camions.](assets/s_ncs_admin_survey_no_storage_condb.png)
 
 ## Utiliser les informations collectées {#using-collected-information}
 
@@ -125,7 +125,7 @@ Pour chaque formulaire, les réponses fournies peuvent être réutilisées dans 
 
 Pour enregistrer les informations collectées dans les pages d&#39;un formulaire, vous devez positionner une boîte d&#39;enregistrement dans le diagramme.
 
-![](assets/s_ncs_admin_survey_save_box.png)
+![Diagramme de formulaire web avec les activités Page d’accueil, Abonnement, Stockage et Fin, la zone Stockage mise en surbrillance.](assets/s_ncs_admin_survey_save_box.png)
 
 Deux modes d&#39;utilisation de cette boîte sont possibles :
 
@@ -139,13 +139,13 @@ Deux modes d&#39;utilisation de cette boîte sont possibles :
 
 * Pour enrichir les données des personnes destinataires dans la base de données, modifiez la boîte de stockage et sélectionnez la clé de réconciliation. Pour une utilisation en interne (typiquement, sur un intranet) ou pour un formulaire de création de profils, par exemple, vous pouvez sélectionner le ou les champs de réconciliation. La boîte propose tous les champs de la base de données utilisés dans les différentes pages de l’application web :
 
-  ![](assets/s_ncs_admin_survey_save_box_edit.png)
+  ![Boîte de dialogue de l&#39;activité de stockage avec l&#39;arborescence des options de réconciliation des champs Destinataires et Dossier de recherche.](assets/s_ncs_admin_survey_save_box_edit.png)
 
 Par défaut, les données sont importées dans la base de données par une opération de **[!UICONTROL mise à jour ou insertion]** : s’il existe dans la base de données, l’élément est mis à jour (par exemple la newsletter sélectionnée ou l’adresse e-mail saisie). S’il n’existe pas, l’information est ajoutée.
 
 Vous pouvez toutefois modifier ce comportement. Pour cela, sélectionnez la racine de l’élément et sélectionnez l’opération à effectuer dans la liste déroulante :
 
-![](assets/s_ncs_admin_survey_save_operation.png)
+![Liste des opérations d&#39;activité de stockage : réconciliation uniquement, mise à jour ou insertion, insertion, mise à jour et suppression.](assets/s_ncs_admin_survey_save_operation.png)
 
 Vous pouvez sélectionner un dossier de recherche pour la réconciliation et le dossier de création pour les nouveaux profils. Si ces champs sont vides, les profils sont recherchés et créés dans le dossier par défaut de l’opérateur ou l’opératrice.
 
@@ -153,4 +153,4 @@ Vous pouvez sélectionner un dossier de recherche pour la réconciliation et le 
 >
 >Les opérations possibles sont : **[!UICONTROL Réconciliation seule]**,**[!UICONTROL Mise à jour ou insertion]**, **[!UICONTROL Insertion]**, **[!UICONTROL Mise à jour]**, **[!UICONTROL Suppression]**.\
 >Le dossier par défaut de l&#39;opérateur correspond au premier dossier dans lequel l&#39;opérateur a le droit d&#39;écrire.\
->Consultez [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
+>Consultez [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.

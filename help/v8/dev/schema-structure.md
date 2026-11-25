@@ -39,10 +39,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1455'
-ht-degree: 95%
+source-wordcount: '1530'
+ht-degree: 90%
 ---
 # Structure d&#39;un schéma{#schema-structure}
 
@@ -214,7 +214,7 @@ Les éléments **`<elements>`** et **`<attributes>`** du schéma de données peu
 
   Le libellé est visible à partir du formulaire de saisie de la console cliente Adobe Campaign :
 
-  ![](assets/schema_label.png)
+  ![Champ d’entrée d’e-mail dans la console, intitulé E-mail avec une adresse e-mail saisie.](assets/schema_label.png)
 
 * La propriété **desc** permet de saisir une description longue.
 
@@ -267,7 +267,7 @@ Le nom donné à l&#39;énumération est libre et peut être partagé avec d&#39
 
 Une liste déroulante énumère la liste de ces valeurs à partir du formulaire de saisie :
 
-![](assets/schema_user_enum.png)
+![Champ Ville dans le formulaire de saisie affichant une liste déroulante de valeurs d&#39;une énumération utilisateur.](assets/schema_user_enum.png)
 
 >[!NOTE]
 >
@@ -281,7 +281,7 @@ L&#39;attribut **enum** fait référence à la définition d&#39;une classe d&#3
 
 Les énumérations permettent à l&#39;utilisateur de sélectionner une valeur dans une liste déroulante au lieu de saisir cette valeur dans une zone de saisie classique :
 
-![](assets/schema_enum.png)
+![Liste déroulante Genre affichant les valeurs Aucune spécifiée, Masculin et Féminin.](assets/schema_enum.png)
 
 Exemple de déclaration d&#39;énumération dans le schéma de données :
 
@@ -317,7 +317,7 @@ Les valeurs de l&#39;énumération sont déclarées dans l&#39;élément **`<val
 
   Cette énumération est utilisée par exemple, pour spécifier la nature des opérations.
 
-  ![](assets/schema_dbenum.png)
+  ![Boîte de dialogue Nouvelle campagne marketing avec le menu déroulant Nature ouvert, affichant Aucun spécifié et Remarketing.](assets/schema_dbenum.png)
 
 ### Exemple {#example}
 
@@ -396,7 +396,7 @@ Des fonctions de haut niveau ont été ajoutées aux expressions afin d&#39;enri
 
 La liste des fonctions disponibles est accessible à partir de n’importe quel éditeur d’expression dans la console cliente Adobe Campaign :
 
-![](assets/schema_function.png)
+![Arborescence de fonctions de l&#39;éditeur d&#39;expression avec des groupes agrégat, chaîne, date et numérique, tels que Abs, Ceil et Round.](assets/schema_function.png)
 
 **Exemple**:
 
