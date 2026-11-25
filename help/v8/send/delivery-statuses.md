@@ -35,16 +35,16 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 53%
+source-wordcount: '580'
+ht-degree: 48%
 ---
 # Statuts de diffusion {#delivery-statuses}
 
 Une fois qu’une diffusion a été envoyée, le tableau de bord de diffusion affiche un statut qui vous permet de surveiller si l’envoi a réussi. Les statuts possibles sont détaillés dans la section ci-dessous.
 
-![](assets/delivery-status.png)
+![Résumé du tableau de bord de la diffusion avec le champ Statut en surbrillance, affichant Terminé et la date de fin](assets/delivery-status.png)
 
 Pour plus d&#39;informations sur les différents échecs de diffusion que vous pouvez rencontrer et sur la manière de les résoudre, consultez [Comprendre les échecs de diffusion](delivery-failures.md).
 
@@ -108,7 +108,7 @@ Pour plus d&#39;informations sur les différents échecs de diffusion que vous p
  </tbody> 
 </table>
 
-Pour découvrir comment optimiser la délivrabilité de vos emails Adobe Campaign, reportez-vous à [cette section](about-deliverability.md). Pour un examen plus approfondi de la délivrabilité, consultez le [Guide des bonnes pratiques relatives à la délivrabilité d’Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=fr).
+Pour savoir comment optimiser la délivrabilité de vos emails Adobe Campaign, consultez la section [Prise en main de la délivrabilité dans Campaign](about-deliverability.md). Pour un examen plus approfondi de la délivrabilité, consultez le [Guide des bonnes pratiques relatives à la délivrabilité d’Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=fr).
 
 ## Statut En attente {#pending-status}
 

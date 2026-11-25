@@ -15,10 +15,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 98%
+source-wordcount: '1034'
+ht-degree: 77%
 ---
 # Conception d’un questionnaire{#building-a-survey}
 
@@ -36,7 +36,7 @@ Les formulaires Web sont accessibles à partir du noeud **[!UICONTROL Ressources
 
 Choisissez le modèle de questionnaire (par défaut **[!UICONTROL newSurvey]**).
 
-![](assets/s_ncs_admin_survey_select_template.png)
+![Boîte de dialogue Nouvelle application web avec la liste de modèles ouverte pour choisir un questionnaire ou un modèle de formulaire web.](assets/s_ncs_admin_survey_select_template.png)
 
 Les pages du formulaire sont créées à l’aide d’un éditeur spécifique qui vous permet de définir et de configuration des zones de saisie (texte), des champs de sélection (listes, cases à cocher, etc.) et des éléments statiques (images, contenu HTML, etc.). Ils peuvent être regroupés dans des « conteneurs » et mis en page selon vos besoins. [En savoir plus](#adding-questions).
 
@@ -48,7 +48,7 @@ Les pages du formulaire sont créées à l’aide d’un éditeur spécifique qu
 
 Dans un formulaire, les champs permettent aux utilisateurs de saisir des informations et sélectionner des options. Pour chaque page du formulaire, ils sont créés via le premier bouton de la barre d’outils, depuis le menu **[!UICONTROL Ajouter à l’aide de l’assistant]**.
 
-![](assets/s_ncs_admin_survey_add_field_menu.png)
+![L&#39;assistant de création de champ s&#39;est ouvert à partir de l&#39;assistant Ajouter, avec quatre options de champ de Répondre à une question à importer.](assets/s_ncs_admin_survey_add_field_menu.png)
 
 >[!NOTE]
 >
@@ -65,13 +65,13 @@ Lorsque vous ajoutez un champ à un questionnaire, vous devez sélectionner son 
 
    >[!NOTE]
    >
-   >Les modes de stockage ainsi que l&#39;import de champs sont présentés dans [cette section](managing-answers.md#storing-collected-answers).
+   >Les modes de stockage et les imports de champs sont détaillés dans [Stocker les réponses collectées](managing-answers.md#storing-collected-answers).
 
 La nature du champ à ajouter (liste déroulante, champ de texte, case à cocher, etc.) s’adapte au mode de stockage sélectionné. Vous pouvez la modifier à l’aide du champ **[!UICONTROL Type]** de l&#39;onglet **[!UICONTROL Général]**, mais il faut veiller à rester cohérent avec le type de données.
 
-![](assets/s_ncs_admin_survey_change_type.png)
+![Onglet Général de l&#39;éditeur de page avec la liste Type ouverte, affichant Choix multiples, zone de liste modifiable et autres types de champs.](assets/s_ncs_admin_survey_change_type.png)
 
-Les différents types de champs disponibles sont présentés dans [cette section](../web/about-web-forms.md).
+Les différents types de champs disponibles sont détaillés dans [Prise en main des formulaires web](../web/about-web-forms.md).
 
 ## Éléments spécifiques aux questionnaires {#survey-specific-elements}
 
@@ -81,11 +81,11 @@ Les questionnaires en ligne reposent sur les fonctionnalités des applications w
 
 Pour les contrôles de type **[!UICONTROL Choix multiples]**, vous pouvez définir un nombre minimal et maximal de sélections. Par exemple, cette option vous permet de forcer la sélection sur au moins **2** valeurs et au plus **4** valeurs parmi les options disponibles :
 
-![](assets/s_ncs_admin_survey_multichoice_ex1.png)
+![Page de l&#39;enquête Veuillez sélectionner vos centres d&#39;intérêt avec des cases à cocher, trois à quatre options sélectionnées.](assets/s_ncs_admin_survey_multichoice_ex1.png)
 
 Si le nombre de sélections n&#39;est pas atteint ou s&#39;il est dépassé, le message correspondant sera affiché.
 
-![](assets/s_ncs_admin_survey_multichoice_ex2.png)
+![Page de sondage des intérêts affichant le message d&#39;erreur Veuillez ne pas choisir plus de quatre intérêts.](assets/s_ncs_admin_survey_multichoice_ex2.png)
 
 >[!NOTE]
 >
@@ -93,11 +93,11 @@ Si le nombre de sélections n&#39;est pas atteint ou s&#39;il est dépassé, le 
 
 Le paramétrage correspondant sera le suivant :
 
-![](assets/s_ncs_admin_survey_multichoice_ex3.png)
+![Champ à choix multiples défini pour autoriser les sélections multiples, avec 2 sélections obligatoires et 4 autorisées.](assets/s_ncs_admin_survey_multichoice_ex3.png)
 
 De plus, l&#39;espace de stockage pour ce champ de saisie doit être un **champ archivé** de type **[!UICONTROL Valeurs Multiples]** :
 
-![](assets/s_ncs_admin_survey_multiple_values_field.png)
+![Créez une boîte de dialogue de champ archivé avec l&#39;option Valeurs multiples activée pour le champ Centres d&#39;intérêt.](assets/s_ncs_admin_survey_multiple_values_field.png)
 
 >[!CAUTION]
 >
@@ -114,7 +114,7 @@ Utilisez un conteneur de type **Question** pour ajouter une question dans la pag
 >
 >Vous ne devez pas insérer un conteneur de type **Question** en sous arborescence d&#39;un autre conteneur de type **Question**.
 
-![](assets/s_ncs_admin_question_label.png)
+![Onglet Conteneur de questions Général avec l&#39;option Saisir le titre au format HTML cochée et l&#39;éditeur HTML affiché.](assets/s_ncs_admin_question_label.png)
 
 Le libellé de la question est saisi dans le champ de libellé. Dans ce cas, le style de la feuille de style du formulaire est appliqué. Cochez l&#39;option **[!UICONTROL Saisir le titre au format HTML]** pour le personnaliser. Vous accédez alors à l&#39;éditeur HTML.
 
@@ -124,11 +124,11 @@ Le libellé de la question est saisi dans le champ de libellé. Dans ce cas, le 
 
 Par exemple :
 
-![](assets/s_ncs_admin_survey_containers_qu_arbo.png)
+![Arborescence de page avec conteneurs Question pour le format des e-mails et des contrats, et paramètres de l&#39;onglet Général de la page.](assets/s_ncs_admin_survey_containers_qu_arbo.png)
 
 Dans l&#39;exemple ci-dessus, le rendu sera le suivant :
 
-![](assets/s_ncs_admin_survey_containers_qu_ex.png)
+![Page de l&#39;enquête générée avec champs, une liste déroulante de format d&#39;e-mail et une question de case à cocher de contrats.](assets/s_ncs_admin_survey_containers_qu_ex.png)
 
 >[!NOTE]
 >
@@ -136,11 +136,11 @@ Dans l&#39;exemple ci-dessus, le rendu sera le suivant :
 
 Vous pouvez activer le tirage aléatoire des questions par Adobe Campaign. Il est ensuite possible d’indiquer le nombre de questions à afficher dans la page, dans le champ situé en bas de la fenêtre de configuration.
 
-![](assets/s_ncs_admin_survey_containers_qu_display.png)
+![Onglet Général de la page avec Affichage vérifié de manière aléatoire et le nombre de questions à afficher défini sur 1.](assets/s_ncs_admin_survey_containers_qu_display.png)
 
 Le rendu sera par exemple :
 
-![](assets/s_ncs_admin_survey_containers_qu_display_rendering.png)
+![Page générée affichant uniquement deux questions sélectionnées de manière aléatoire, la question 2 et la question 3, avec le bouton Suivant.](assets/s_ncs_admin_survey_containers_qu_display_rendering.png)
 
 Lorsque la page est actualisée, les questions affichées ne sont pas les mêmes.
 

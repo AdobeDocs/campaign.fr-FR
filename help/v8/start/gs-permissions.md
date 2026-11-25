@@ -26,10 +26,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 90%
+source-wordcount: '517'
+ht-degree: 79%
 ---
 # Commencer avec les autorisations{#gs-permissions}
 
@@ -48,12 +48,12 @@ Dans Adobe Campaign, les utilisateurs sont des **opérateurs** et les **groupes
 
 ## Étapes clés de l’octroi des autorisations{#key-steps-permissions}
 
-En tant qu’administrateur/administratrice de produit, vous pouvez accorder des autorisations aux utilisateurs de votre organisation. Les autorisations sont accordées par le biais d’Adobe Admin Console et de la console cliente Campaign. Les utilisateurs et utilisatrices peuvent se connecter à Adobe Campaign au moyen de leur Adobe ID. Découvrez comment vous connecter à Adobe Campaign sur [cette page](connect.md).
+En tant qu’administrateur/administratrice de produit, vous pouvez accorder des autorisations aux utilisateurs de votre organisation. Les autorisations sont accordées par le biais d’Adobe Admin Console et de la console cliente Campaign. Les utilisateurs et utilisatrices peuvent se connecter à Adobe Campaign au moyen de leur Adobe ID. Découvrez comment vous connecter à Adobe Campaign dans [Connexion à Campaign v8](connect.md).
 
 Les étapes clés sont les suivantes :
 
 * **Étape 1** : définissez les groupes d’opérateurs et d’opératrices et attribuez-leur des autorisations dans la console cliente Campaign. [En savoir plus](manage-permissions.md#create-product-profile).
-Vous pouvez également utiliser les groupes d’opérateurs intégrés pour commencer. Ces groupes par défaut et leurs autorisations sont répertoriés dans [cette section](manage-permissions.md#ootb-productprofiles).
+Vous pouvez également utiliser les groupes d’opérateurs intégrés pour commencer. Ces groupes par défaut et leurs autorisations sont répertoriés dans [Profils de produit et groupes d’opérateurs par défaut](manage-permissions.md#ootb-productprofiles).
 * **Étape 2** : créez des profils de produit correspondant à ces groupes dans Adobe Admin Console. [En savoir plus](manage-permissions.md#create-product-profile).
 Vous pouvez utiliser les profils de produit intégrés pour commencer. [En savoir plus](manage-permissions.md#ootb-productprofiles).
 * **Étape 3** : créez des utilisateurs et utilisatrices dans Adobe Admin Console et affectez-les à un profil de produit. [En savoir plus](manage-permissions.md#add-users).
@@ -65,7 +65,7 @@ Adobe Admin Console permet de gérer les droits Adobe pour l’ensemble de vot
 
 Admin Console permet d’ajouter des utilisateurs, ainsi que de créer et d’attribuer des profils de produit (qui sont des groupes de rôles opérateurs).
 
-Découvrez comment ajouter des utilisateurs sur [cette page](manage-permissions.md#add-users).
+Découvrez comment ajouter des utilisateurs dans [Ajouter des utilisateurs](manage-permissions.md#add-users).
 
 ## À propos des profils de produit{#ootb-product-profiles}
 
@@ -73,10 +73,10 @@ Les profils de produit sont des groupes de produits et de services que vous pouv
 
 Dans Admin Console, chaque [!DNL CX Enterprise] **profil de produit** pour Campaign est associé à un **groupe d’opérateurs** dans la console cliente Campaign.
 
-Découvrez comment créer et affecter des profils de produit sur [cette page](manage-permissions.md#create-product-profile).
+Découvrez comment créer et affecter des profils de produit dans [Créer un profil de produit](manage-permissions.md#create-product-profile).
 
 ## Droits nommés dans Campaign{#named-rights}
 
 En tant que membre d’un profil de produit (c’est-à-dire un groupe d’opérateurs), un utilisateur/une utilisatrice dispose de droits lui permettant d’effectuer des opérations, appelés « Droit nommés » ainsi que d’un accès en lecture et/ou écriture aux données. Un opérateur /une opératrice peut être membre de plusieurs groupes d’opérateurs. Les droits et les autorisations d’accès se cumulent alors.
 
-En savoir plus sur les droits nommés dans [cette section](manage-permissions.md#use-named-rights).
+En savoir plus sur les droits nommés dans [Droits nommés](manage-permissions.md#use-named-rights).

@@ -24,10 +24,10 @@ level_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 81%
+source-wordcount: '398'
+ht-degree: 78%
 ---
 # Envoyer une copie de vos messages à une adresse en Cci {#bcc}
 
@@ -62,7 +62,7 @@ Pour activer la mise en copie Cci pour un [modèle de diffusion](create-template
 1. Cliquez sur le bouton **[!UICONTROL Propriétés]**.
 1. Dans l’onglet **[!UICONTROL Diffusion]**, vérifiez l’option **[!UICONTROL Email Cci avec MTA amélioré]**.
 
-   ![](assets/email-bcc.png)
+   ![Onglet Diffusion des propriétés avec l’option Email Cci avec Momentum amélioré mise en surbrillance](assets/email-bcc.png)
 
 1. Cliquez sur **[!UICONTROL OK]** pour confirmer.
 

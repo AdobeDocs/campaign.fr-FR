@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1446'
-ht-degree: 96%
+source-wordcount: '1774'
+ht-degree: 78%
 ---
 # Définir les propriétés des formulaires web{#defining-web-forms-properties}
 
@@ -39,13 +39,13 @@ Vous pouvez configurer et personnaliser entièrement les formulaires web pour r�
 
 La fenêtre des propriétés est accessible à partir du bouton **[!UICONTROL Propriétés]** situé dans la barre d’outils du formulaire web. Cette fenêtre vous permet d’accéder à un ensemble de paramètres spécifiques au formulaire web. Certains paramètres peuvent provenir de la configuration du modèle.
 
-![](assets/s_ncs_admin_survey_properties_general.png)
+![Éditeur d&#39;applications web avec le bouton Propriétés, qui ouvre la fenêtre des propriétés du formulaire, mise en surbrillance dans la barre d&#39;outils](assets/s_ncs_admin_survey_properties_general.png)
 
 ## Propriétés générales du formulaire {#overall-form-properties}
 
 Dans l&#39;onglet **[!UICONTROL Général]** de la fenêtre des propriétés, vous pouvez modifier le **Libellé** du formulaire. Il est fortement déconseillé de modifier le **Nom interne**.
 
-![](assets/s_ncs_admin_survey_properties_general_tab.png)
+![Onglet Général de la fenêtre Propriétés du formulaire avec Libellé, Nom interne, Nature, Statut, Date de début et de fin, Contrôle d&#39;accès](assets/s_ncs_admin_survey_properties_general_tab.png)
 
 Le modèle de formulaire est choisi lors de la création du formulaire. Il ne peut pas être modifié ultérieurement. Pour plus d’informations sur la création et la gestion des modèles de formulaire, voir [Utiliser un modèle de formulaire web](using-a-web-form-template.md).
 
@@ -63,11 +63,11 @@ La page d&#39;erreur est définie dans l&#39;onglet correspondant de la fenêtre
 
 Par défaut, elle affiche les informations suivantes :
 
-![](assets/s_ncs_admin_survey_default_error_page.png)
+![Page du navigateur affichant le message d&#39;erreur par défaut : Une erreur s&#39;est produite. Si ce problème persiste, contactez votre administrateur](assets/s_ncs_admin_survey_default_error_page.png)
 
 Le contenu des chaînes affichées est défini dans l&#39;onglet **[!UICONTROL Page d’erreur]** de la fenêtre des propriétés. L’onglet **[!UICONTROL HTML]** affiche le rendu, tandis que l’onglet **[!UICONTROL Textes]** vous permet de modifier les chaînes de texte et d’ajouter du texte si nécessaire :
 
-![](assets/s_ncs_admin_survey_error_page.png)
+![Onglet de page d&#39;erreur des Propriétés, avec l&#39;onglet Textes répertoriant les chaînes line1 et line2 du message d&#39;erreur](assets/s_ncs_admin_survey_error_page.png)
 
 ## Localisation d&#39;un formulaire {#form-localization}
 
@@ -81,7 +81,7 @@ L&#39;onglet **[!UICONTROL Rendu]** permet de définir le type de navigation ent
 
 Vous pouvez choisir de naviguer via des liens ou des boutons.
 
-![](assets/s_ncs_admin_survey_wz_02_navig_type.png)
+![Options de navigation : un bouton Suivant et un lien Suivant, les deux manières de passer d&#39;une page de formulaire à l&#39;autre](assets/s_ncs_admin_survey_wz_02_navig_type.png)
 
 Par défaut, les boutons constituent les éléments de navigation. Ils vous permettent d’effectuer les actions suivantes :
 
@@ -101,7 +101,7 @@ Les thèmes sont enregistrés dans le nœud **[!UICONTROL Administration > Conf
 
 Un exemple de rendu est affiché dans la section inférieure de la fenêtre des propriétés. L&#39;icône **[!UICONTROL Editer le lien]** permet de visualiser le paramétrage correspondant au thème sélectionné.
 
-![](assets/s_ncs_admin_survey_properties_render.png)
+![Onglet de rendu des propriétés avec les boutons Utiliser ou Utiliser les liens, Position du libellé et aperçu du modèle avec l’icône Modifier le lien](assets/s_ncs_admin_survey_properties_render.png)
 
 ## Logo dans le formulaire {#logo-in-the-form}
 
@@ -109,15 +109,15 @@ Vous pouvez remplacer le logo utilisé dans le formulaire par votre propre logo.
 
 Dans l’onglet **[!UICONTROL Rendu]** des **[!UICONTROL Propriétés]** de votre application web, cliquez sur l’icône en forme de verre de votre modèle :
 
-![](assets/logo_glass.png)
+![Onglet de rendu des propriétés avec l’icône de loupe en regard du champ Modèle mis en surbrillance pour ouvrir le modèle](assets/logo_glass.png)
 
 Dans la nouvelle fenêtre, cliquez sur le lien **[!UICONTROL Mise en page]** :
 
-![](assets/logo_pagelayout.png)
+![Fenêtre de modèle de génération de formulaire avec le lien Mise en page mis en surbrillance](assets/logo_pagelayout.png)
 
 Vous aurez la possibilité de modifier le chemin de l&#39;image du logo ici :
 
-![](assets/logo_path.png)
+![Fenêtre de mise en page avec le champ Image sous Logo en surbrillance, contenant le chemin de l’image du logo](assets/logo_path.png)
 
 Les images disponibles se trouvent sous **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]**. Vous pouvez ajouter votre logo ici.
 
@@ -141,7 +141,7 @@ Un formulaire web est accessible aux utilisateurs s’il est **[!UICONTROL En li
 
 La période de validité est comprise entre la date de **[!UICONTROL Début]** et la date de **[!UICONTROL Fin]**. Si aucune date n’est spécifiée dans ces champs, la validité du formulaire est permanente.
 
-![](assets/s_ncs_admin_survey_properties_date.png)
+![Onglet Général des propriétés avec le calendrier Date de fin ouvert pour sélectionner la date à laquelle le formulaire cesse d&#39;être valide](assets/s_ncs_admin_survey_properties_date.png)
 
 >[!NOTE]
 >
@@ -153,17 +153,17 @@ Par défaut, l&#39;accès aux formulaires Web se fait en mode anonyme : tous le
 
 Vous pouvez activer le contrôle d’accès pour l’affichage du formulaire, par exemple lorsque vous diffusez un formulaire sur un site intranet, afin d’authentifier les utilisateurs et utilisatrices. Pour ce faire, affichez la variable **[!UICONTROL Propriétés]** du formulaire concerné et cliquez sur l’option **[!UICONTROL Activer le contrôle d’accès]**, comme illustré ci-dessous :
 
-![](assets/s_ncs_admin_survey_access_ctrl.png)
+![Onglet Général des propriétés avec l&#39;option Activer le contrôle d&#39;accès sélectionnée sous Contrôle d&#39;accès](assets/s_ncs_admin_survey_access_ctrl.png)
 
 Lors de l&#39;accès au formulaire, la page d&#39;authentification suivante sera affichée :
 
-![](assets/s_ncs_admin_survey_access_login.png)
+![Formulaire d&#39;authentification avec champs de nom d&#39;utilisateur et de mot de passe et un bouton de connexion, affiché lorsque le contrôle d&#39;accès est activé](assets/s_ncs_admin_survey_access_login.png)
 
 Les login et mot de passe sont ceux des opérateurs Adobe Campaign. Pour plus d’informations, consultez [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
 
 L’option **[!UICONTROL Utiliser un compte spécifique]** vous permet de circonscrire les autorisations en lecture ou écriture de l’opérateur ou de l’opératrice accédant au formulaire. Sélectionnez dans la liste déroulante un opérateur, une opératrice ou un groupe d’opérateurs et d’opératrices responsable de l’octroi de ces autorisations.
 
-![](assets/s_ncs_admin_survey_access_op_select.png)
+![Utilisez une option de compte spécifique sélectionnée, le menu déroulant Opérateur répertoriant les opérateurs parmi lesquels choisir](assets/s_ncs_admin_survey_access_op_select.png)
 
 ## Paramètres d&#39;URL de formulaire {#form-url-parameters}
 
@@ -194,7 +194,7 @@ Par défaut, les paramètres suivants sont disponibles :
 
 Des paramètres peuvent être ajoutés à partir l’onglet **[!UICONTROL Paramètres…]** de la fenêtre des propriétés du formulaire. Ils peuvent être rendus obligatoires, comme dans l’exemple ci-dessous :
 
-![](assets/s_ncs_admin_survey_properties_param.png)
+![Onglet Paramètres répertoriant la société, le genre et le statut, avec l&#39;option Paramètre obligatoire activée pour le statut](assets/s_ncs_admin_survey_properties_param.png)
 
 Vous devez indiquer un espace de stockage d&#39;où sera récupérée la valeur du paramètre. Pour cela, sélectionnez une des options de stockage puis cliquez sur l&#39;onglet **[!UICONTROL Stockage]** pour sélectionner le champ ou la variable concernée. Les options de stockage sont détaillées dans les [Champs de stockage des réponses](web-forms-answers.md#response-storage-fields).
 
@@ -202,20 +202,20 @@ Le statut du participant ou de la participante (0, 1 ou toute autre valeur) peut
 
 1. Page d&#39;accueil pour les clients (**status=1**):
 
-   ![](assets/s_ncs_admin_survey_test_client.png)
+   Page d&#39;accueil du client ![du formulaire, ouverte avec le paramètre d&#39;URL status=1 et un champ d&#39;ID](assets/s_ncs_admin_survey_test_client.png)
 
 1. Page d&#39;accueil pour les prospects (**status=0**) :
 
-   ![](assets/s_ncs_admin_survey_test_prospect.png)
+   ![Page d&#39;accueil du prospect du formulaire, ouverte avec le paramètre URL status=0 et les champs nom, e-mail et captcha](assets/s_ncs_admin_survey_test_prospect.png)
 
 1. Page d&#39;accueil pour d&#39;autres profils (par exemple, **status =12**) :
 
-   ![](assets/s_ncs_admin_survey_test_other.png)
+   ![Page d&#39;accueil du formulaire de contact, ouverte avec le paramètre d&#39;URL status=12 et champs nom, e-mail et message](assets/s_ncs_admin_survey_test_other.png)
 
 Pour paramétrer ce formulaire, créez une boîte de test et positionnez-la au début du diagramme, comme suit :
 
-![](assets/s_ncs_admin_survey_test.png)
+![Diagramme de formulaire dans lequel une zone de test Client/Prospect/Contact est rattachée aux pages d&#39;accueil Prospect, Client et Contact](assets/s_ncs_admin_survey_test.png)
 
 La boîte de test permet de paramétrer les conditions d&#39;enchaînement des pages :
 
-![](assets/s_ncs_admin_survey_test_box.png)
+![Boîte de dialogue de la boîte de test avec des branches définies par statut, où la variable de statut est sélectionnée parmi les Champs contextuels](assets/s_ncs_admin_survey_test_box.png)

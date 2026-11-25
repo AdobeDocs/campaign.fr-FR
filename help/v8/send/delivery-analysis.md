@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 93%
+source-wordcount: '809'
+ht-degree: 86%
 ---
 # Analyse des diffusions {#analyze-delivery}
 
@@ -41,11 +41,11 @@ Pour préparer la diffusion, vérifiez que le contenu et la cible de la diffusio
 1. Dans la fenêtre de la diffusion, cliquez sur le bouton **[!UICONTROL Envoyer]**.
 1. Sélectionnez **[!UICONTROL Diffuser dès que possible]** pour effectuer le calcul de l’audience et la préparation du contenu en vue d’un envoi immédiat. Vous pouvez également reporter la diffusion à une date ultérieure ou obtenir une estimation de la population sans préparer le contenu.
 
-   ![](assets/delivery-analysis-start.png)
+   ![Envoyer à la boîte de dialogue principale de la cible de la diffusion avec l&#39;option Diffuser dès que possible sélectionnée, plus le bouton Analyser](assets/delivery-analysis-start.png)
 
 1. Cliquez sur **[!UICONTROL Analyser]** pour lancer l’analyse manuellement. La barre de progression indique la progression de l’analyse.
 
-   Un ensemble de règles de vérification est appliqué lors de l’analyse de la diffusion. Ces règles sont définies dans une **typologie**, accessible sous l’onglet **[!UICONTROL Typologie]** des propriétés de la diffusion. En savoir plus sur les typologies dans [cette section](../../automation/campaign-opt/campaign-typologies.md).
+   Un ensemble de règles de vérification est appliqué lors de l’analyse de la diffusion. Ces règles sont définies dans une **typologie**, accessible sous l’onglet **[!UICONTROL Typologie]** des propriétés de la diffusion. En savoir plus sur les typologies dans [Prise en main des typologies de campagne](../../automation/campaign-opt/campaign-typologies.md).
 
    Par défaut pour les e-mails, l’analyse exécute les tâches suivantes :
 
@@ -72,7 +72,7 @@ Pour préparer la diffusion, vérifiez que le contenu et la cible de la diffusio
    * L’icône jaune indique une erreur de traitement non critique.
    * L’icône rouge indique une erreur critique qui empêche l’envoi de la diffusion.
 
-   ![](assets/delivery-analysis-results.png){width="800"}
+   ![Résultats de l&#39;analyse : préparation terminée, 22 messages à envoyer, consigner avec un avertissement et le bouton Confirmer la diffusion](assets/delivery-analysis-results.png){width="800"}
 
 1. Cliquez sur **[!UICONTROL Fermer]** pour corriger les erreurs, le cas échéant. Après avoir effectué les modifications, redémarrez l’analyse en cliquant sur **[!UICONTROL Analyser]**.
 
@@ -88,7 +88,7 @@ Pour préparer la diffusion, vérifiez que le contenu et la cible de la diffusio
 
 Accédez à l’onglet **[!UICONTROL Analyse]** des propriétés de la diffusion pour définir les paramètres de préparation du message lors de la phase d’analyse.
 
-![](assets/delivery-properties-analysis-tab.png){width="800"}
+![Onglet Analyse des propriétés de la diffusion avec les options de libellé et de code, le mode de validation défini sur Manuel et les paramètres FFDA](assets/delivery-properties-analysis-tab.png){width="800"}
 
 Cet onglet permet d&#39;accéder aux options suivantes :
 

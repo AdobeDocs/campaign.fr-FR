@@ -22,10 +22,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 87%
+source-wordcount: '484'
+ht-degree: 79%
 ---
 # Interactions anonymes {#anonymous-interactions}
 
@@ -39,7 +39,7 @@ La **[!UICONTROL Dimension de ciblage]** est automatiquement remplie. Elle point
 
 Le champ **[!UICONTROL Dossier des visiteurs]** s&#39;affiche. Il est automatiquement prérempli pour pointer sur le dossier **[!UICONTROL Visiteurs]**. Ce champ permet de spécifier l&#39;endroit où sont stockés les profils des visiteurs.
 
-![](assets/anonymous_environment_option.png)
+![Environnement d’offres avec environnement dédié aux interactions anonymes entrantes sélectionnées et champs de dossier Visiteur](assets/anonymous_environment_option.png)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Ce processus consiste à comparer les données récupérées par les cookies ave
 
 Afin d&#39;effectuer cette analyse, au niveau de l&#39;emplacement, cochez la case **[!UICONTROL Identifier implicitement l&#39;individu à partir de son historique de navigation]**.
 
-![](assets/identification_anonymous_visitors.png)
+![Emplacement avec l&#39;option Identifier implicitement l&#39;individu à partir de son historique de navigation sélectionnée](assets/identification_anonymous_visitors.png)
 
 ## Traitement des visiteurs anonymes non identifiés {#processing-unidentified-anonymous-visitors}
 
@@ -69,4 +69,4 @@ En cas d&#39;absence d&#39;élément permettant d&#39;identifier un contact ou s
 
 Pour cela, cochez la case **[!UICONTROL Basculer sur un emplacement anonyme si aucun individu n&#39;a été identifié]**, puis spécifiez l&#39;environnement dédié à ces visiteurs non identifiés dans la zone **[!UICONTROL Emplacement anonyme associé]** de la définition d&#39;un emplacement.
 
-![](assets/anonymous_to_anonymous_environment.png)
+![Emplacement avec l&#39;option Retour en arrière sur un environnement anonyme sélectionnée et un champ Emplacement anonyme lié](assets/anonymous_to_anonymous_environment.png)

@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 94%
+source-wordcount: '717'
+ht-degree: 73%
 ---
 # Concevoir et envoyer des e-mails
 
@@ -42,34 +42,34 @@ Avec Adobe Campaign, créez des diffusions e-mail pour envoyer des e-mails pers
 >Pour créer des e-mails captivants et personnalisés, accédez à l’[interface d’utilisation web](../start/campaign-ui.md#ac-web-ui). Adobe Campaign est fourni avec le concepteur d’e-mail, une interface intuitive par glisser-déposer, qui vous permet de concevoir et d’affiner le contenu de chaque e-mail.
 
 
-Découvrez les étapes clés de la création et de la configuration d’une diffusion dans [cette page](../start/create-message.md).
+Découvrez les étapes clés de création et de configuration d’une diffusion dans [Créez votre première diffusion](../start/create-message.md).
 
 ## Création d’une diffusion par e-mail
 
 Créez des e-mails personnalisés et pertinents qui sont également conformes au reste de l&#39;expérience client.
 
-![](assets/new-email-content.png)
+![Éditeur de diffusion d&#39;email avec un objet, du contenu HTML et la liste des URL trackées affichée ci-dessous](assets/new-email-content.png)
 
 
 Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;une diffusion e-mail dans Adobe Campaign contenant des données personnalisées, des liens vers une URL externe et un lien vers la page miroir.
 
 1. **Création de la diffusion**
 
-   Pour créer une nouvelle diffusion, accédez à l&#39;onglet **Campagnes**, cliquez sur **Diffusions** et cliquez sur le bouton **Créer** au-dessus de la liste des diffusions existantes.
+   Pour créer une nouvelle diffusion, accédez à l&#39;onglet **Campagnes**, cliquez sur **Diffusions**, puis sur le bouton **Créer** au-dessus de la liste des diffusions existantes.
 
-   ![](assets/delivery_step_1.png)
+   ![Liste des diffusions dans l&#39;onglet Campagnes avec le nœud Diffusions et le bouton Créer en surbrillance](assets/delivery_step_1.png)
 
 1. **Sélection du modèle**
 
    Sélectionnez un modèle de diffusion et nommez votre diffusion. Ce nom sera visible uniquement par les utilisateurs et utilisatrices de la console Adobe Campaign et non par vos destinataires, mais cet intitulé s’affichera dans la liste de vos diffusions. Cliquez sur **[!UICONTROL Continuer]**.
 
-   ![](assets/dce_delivery_model.png)
+   ![Nouvelle boîte de dialogue de diffusion avec le modèle de diffusion E-mail sélectionné et un libellé saisi, puis Continuer](assets/dce_delivery_model.png)
 
 1. **Importation de votre contenu**
 
    Cliquez sur l&#39;onglet **Source** pour coller votre contenu HTML.
 
-   ![](assets/paste-content.png)
+   ![Éditeur de diffusion d’e-mail avec l’onglet Source ouvert affichant le code HTML à coller](assets/paste-content.png)
 
    >[!NOTE]
    >
@@ -81,13 +81,13 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
      Pour insérer les noms et prénoms des profils ciblés dans le contenu du message, placez le curseur à l&#39;endroit où vous souhaitez les insérer, cliquez sur la dernière icône de la barre d&#39;outils, puis cliquez sur **[!UICONTROL Inclure]** et sélectionnez **[!UICONTROL Salutations]**.
 
-     ![](assets/include-greetings.png)
+     ![Menu Personalization avec Inclure puis Salutations sélectionné dans le contenu de l’e-mail HTML](assets/include-greetings.png)
 
      Accédez à l’onglet Aperçu pour vérifier la personnalisation en sélectionnant un destinataire.
 
-     ![](assets/perso-check.png)
+     ![Onglet Aperçu avec un destinataire sélectionné et le message d&#39;accueil personnalisé mis en surbrillance dans le texte de l&#39;e-mail](assets/perso-check.png)
 
-     En savoir plus sur les options de personnalisation dans [cette section](personalize.md).
+     En savoir plus sur les options de personnalisation dans [Prise en main de la personnalisation](personalize.md).
 
    * Insertion d&#39;un lien tracké
 
@@ -95,7 +95,7 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
      Saisissez l&#39;URL pour le lien dans le champ **URL** à l&#39;aide du format suivant **https://www.monURL.com**, puis confirmez.
 
-     ![](assets/add-a-link.png)
+     ![Ajoutez une boîte de dialogue de lien hypertexte avec une URL saisie et le bouton Ajouter, sur le texte sélectionné](assets/add-a-link.png)
 
    * Ajouter une page miroir
 
@@ -103,9 +103,9 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
      Placez le curseur à l’endroit où vous souhaitez insérer ce lien, cliquez sur la dernière icône de la barre d’outils, puis sur **[!UICONTROL Inclure]** et sélectionnez **[!UICONTROL Lien vers la page miroir]**.
 
-     En savoir plus sur la gestion de la page miroir dans [cette section](mirror-page.md#link-to-mirror-page).
+     En savoir plus sur la gestion de la page miroir dans [Ajoutez un lien vers la page miroir](mirror-page.md#link-to-mirror-page).
 
-1. Vous pouvez définir des paramètres supplémentaires pour votre e-mail, tels que l’envoi d’une copie de vos messages à une adresse en Cci, la modification du format du message, la définition d’un codage spécifique, etc. En savoir plus dans [cette section](email-parameters.md).
+1. Vous pouvez définir des paramètres supplémentaires pour votre e-mail, tels que l’envoi d’une copie de vos messages à une adresse en Cci, la modification du format du message, la définition d’un codage spécifique, etc. En savoir plus sur les [paramètres d’e-mail dans Adobe Campaign](email-parameters.md).
 
 1. Une fois le contenu prêt, cliquez sur **Enregistrer** : elle s’affiche désormais dans votre liste de diffusions, sous l’onglet **[!UICONTROL Campagnes > Diffusions]**.
 
@@ -124,7 +124,7 @@ Découvrez comment créer un workflow pour importer le contenu d’un e-mail dan
 
 ## Tester et valider vos e-mails
 
-Campaign propose plusieurs méthodes permettant de tester et valider vos e-mails avant de les envoyer à vos audiences. Découvrez comment prévisualiser et tester le contenu de votre e-mail dans [cette section](../send/preview-and-proof.md).
+Campaign propose plusieurs méthodes permettant de tester et valider vos e-mails avant de les envoyer à vos audiences. Découvrez comment prévisualiser et tester le contenu de votre e-mail dans [Prévisualiser et tester votre e-mail](../send/preview-and-proof.md).
 
 Vous pouvez ainsi :
 

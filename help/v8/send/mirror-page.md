@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 90%
+source-wordcount: '515'
+ht-degree: 82%
 ---
 # Lien vers la page miroir {#mirror-page}
 
@@ -51,7 +51,7 @@ Il est recommandé d’insérer un lien vers la page miroir. Vous pouvez nommer 
 
 Dans Adobe Campaign, vous pouvez insérer un lien vers la page miroir dans le contenu de l’e-mail à l’aide du **bloc de personnalisation** dédié. Le bloc de personnalisation intégré **Lien vers la page miroir** insère le code suivant dans le contenu de votre e-mail : `<%@ include view='MirrorPage' %>`.
 
-![](assets/mirror-page-insert.png){width="800"}
+![Menu de personnalisation de l’éditeur d’e-mail avec l’option Inclure, puis Lien vers la page miroir sélectionnée](assets/mirror-page-insert.png){width="800"}
 
 
 Pour plus d’informations sur l’insertion de blocs de contenu de personnalisation, reportez-vous aux [blocs de personnalisation](personalization-blocks.md).
@@ -65,7 +65,7 @@ Vous pouvez choisir le mode de génération de la page miroir de l’e-mail. Plu
 1. Accédez à l’onglet **[!UICONTROL Validité]** des propriétés de l’e-mail.
 1. Dans la section **Gestion de la page miroir**, consultez la liste déroulante **[!UICONTROL Mode]** pour découvrir toutes les options.
 
-![](assets/mirror-page-generation.png){width="800"}
+![Onglet Validité avec le menu déroulant Mode de gestion de la page miroir répertoriant quatre options de génération](assets/mirror-page-generation.png){width="800"}
 
 Outre le mode par défaut, les options suivantes sont disponibles :
 
@@ -83,6 +83,6 @@ Pour accéder à cette page miroir, procédez comme suit :
 
 1. Sélectionnez un ou une destinataire, puis cliquez sur le lien **[!UICONTROL Afficher la page miroir de ce message...]**.
 
-   ![](assets/mirror-page-display.png){width="800"}
+   ![Logs de diffusion avec un journal sélectionné et le lien Afficher la page miroir de ce message en bas à gauche](assets/mirror-page-display.png){width="800"}
 
    La page miroir s’affiche dans un écran dédié, avec les données de personnalisation du ou de la destinataire sélectionné(e).

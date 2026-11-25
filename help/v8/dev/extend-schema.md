@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 100%
+source-wordcount: '368'
+ht-degree: 67%
 ---
 # Extension dʼun schéma{#extend-schemas}
 
@@ -54,32 +54,32 @@ Les étapes clés de personnalisation du modèle de données Campaign sont les s
 >[!CAUTION]
 >Le schéma natif ne doit pas être modifié directement. Si vous devez adapter un schéma natif, vous devez l’étendre.
 
-Pour une meilleure compréhension des tables intégrées de Campaign et de leurs interactions, consultez [cette page](datamodel.md). Reportez-vous également aux recommandations lors de la création d&#39;un nouveau schéma dans [cette page](create-schema.md).
+Pour une meilleure compréhension des tables intégrées de Campaign et de leur interaction, consultez la section [Prise en main du modèle de données de Campaign](datamodel.md). Consultez également les recommandations lors de la création d’un schéma dans [Créer un schéma dans Campaign](create-schema.md).
 
 Pour étendre un schéma, procédez comme suit :
 
 1. Accédez au dossier **[!UICONTROL Administration > Configuration > Schémas de données]** dans l&#39;Explorateur.
 1. Cliquez sur le bouton **Nouveau** et sélectionnez **[!UICONTROL Étendre les données d&#39;une table à l&#39;aide d&#39;un schéma d&#39;extension]**.
 
-   ![](assets/extend-schema-option.png)
+   ![Étape de type schéma avec Extension des données de la table à l&#39;aide d&#39;un schéma d&#39;extension sélectionné](assets/extend-schema-option.png)
 
 1. Identifiez le schéma natif à étendre et sélectionnez-le.
 
-   ![](assets/extend-schema-select.png)
+   ![La boîte de dialogue de sélection du schéma Source a été filtrée sur le destinataire, avec Destinataires (nms) sélectionnés](assets/extend-schema-select.png)
 
    Par convention, nommez le schéma d’extension de la même manière que le schéma natif et utilisez un espace de noms personnalisé.  Notez que certains espaces de noms sont internes uniquement. [En savoir plus](schemas.md#reserved-namespaces)
 
-   ![](assets/extend-schema-validate.png)
+   ![Étape des paramètres de schéma pour le schéma d&#39;extension avec espace de noms cus, destinataire du nom et libellé Destinataires](assets/extend-schema-validate.png)
 
 1. Une fois dans l&#39;éditeur de schémas, ajoutez les éléments dont vous avez besoin à l&#39;aide du menu contextuel, puis enregistrez votre schéma.
 
-   ![](assets/extend-schema-edit.png)
+   ![Éditeur de schémas avec le menu Insertion ouvert sur Attribut, répertoriant les types Chaîne, Booléen, Entier, Date et autres](assets/extend-schema-edit.png)
 
    Dans l’exemple ci-dessous, nous ajoutons l’attribut **MembershipYear**, fixons une limite de longueur pour le nom (cette limite remplacera la valeur par défaut) et supprimons la date de naissance du schéma prédéfini.
 
-   ![](assets/extend-schema-sample.png)
+   ![Schéma d&#39;extension XML ajoutant MembershipYear, une longueur de 50 caractères lastName et supprimant bornDate](assets/extend-schema-sample.png)
 
-   ```
+   ```xml
    <srcSchema created="YYYY-MM-DD" desc="Recipient table" extendedSchema="nms:recipient"
            img="nms:recipient.png" label="Recipients" labelSingular="Recipient" lastModified="YYYY-MM-DD"
            mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:srcSchema">
@@ -93,7 +93,7 @@ Pour étendre un schéma, procédez comme suit :
 
 1. Déconnectez-vous et reconnectez-vous à Campaign pour vérifier la mise à jour de la structure du schéma dans l&#39;onglet **[!UICONTROL Structure]**.
 
-   ![](assets/extend-schema-structure.png)
+   ![Onglet Structure du schéma cus:recipient répertoriant les champs, y compris le nouveau membre depuis le champ](assets/extend-schema-structure.png)
 
 1. Mettez à jour la structure de la base de données pour appliquer vos modifications. [En savoir plus](update-database-structure.md)
 

@@ -20,10 +20,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 64%
+source-wordcount: '1095'
+ht-degree: 55%
 ---
 # Paramètres de l’e-mail {#email-parameters}
 
@@ -31,13 +31,13 @@ Cette section présente les options et paramètres disponibles dans les proprié
 
 ## Utiliser E-mail Cci {#email-bcc}
 
-Vous pouvez configurer Adobe Campaign pour conserver une copie des e-mails envoyés depuis votre plateforme. Cette option est détaillée sur [cette page](email-bcc.md).
+Vous pouvez configurer Adobe Campaign pour conserver une copie des e-mails envoyés depuis votre plateforme. Cette option est détaillée dans [Envoyer une copie de vos messages à une adresse en Cci](email-bcc.md).
 
 ## Sélectionner des formats de message {#selecting-message-formats}
 
 Vous pouvez modifier le format des e-mails envoyés. Pour cela, éditez les propriétés de la diffusion et cliquez sur le bouton **[!UICONTROL Diffusion]**.
 
-![](assets/email-message-format.png)
+![Onglet Diffusion des propriétés de diffusion avec la section Formats des emails mise en surbrillance et trois options de format](assets/email-message-format.png)
 
 Sélectionnez le format du mail dans la section inférieure de la fenêtre :
 
@@ -73,7 +73,7 @@ Par exemple, vous souhaitez envoyer un email contenant des caractères japonais.
 
 Pour ce faire, sélectionnez l’option **[!UICONTROL Forcer l&#39;encodage des messages (codepage)]** dans la section **[!UICONTROL Encodage des caractères]**, puis choisissez un encodage dans la liste déroulante qui s’affiche.
 
-![](assets/email-smtp-encoding.png)
+![Onglet SMTP avec Forcer l&#39;encodage des messages sélectionnés et la liste déroulante Encodage ouverte](assets/email-smtp-encoding.png)
 
 ## Gérer les e-mails de rebond {#managing-bounce-emails}
 
@@ -83,11 +83,11 @@ L’onglet **[!UICONTROL SMTP]** des propriétés de la diffusion permet de conf
 
 * **[!UICONTROL Adresse des rebonds]** : vous pouvez également définir une autre adresse vers laquelle les e-mails de rebond non traités seront transférés. Cette adresse vous permet d’étudier les raisons des rebonds lorsque les e-mails n’ont pas pu être qualifiés automatiquement par l’application.
 
-Chacun de ces champs peut être personnalisé à l’aide de l’icône dédiée. En savoir plus sur les champs de personnalisation dans [cette section](personalization-fields.md).
+Chacun de ces champs peut être personnalisé à l’aide de l’icône dédiée. En savoir plus sur les champs de personnalisation dans la section [Ajouter des champs de personnalisation](personalization-fields.md).
 
-![](assets/email-smtp-bounce.png)
+![Onglet SMTP avec la section E-mails de rebond mise en surbrillance : champs Adresse de destination des erreurs et Adresse de rebond](assets/email-smtp-bounce.png)
 
-Pour plus d’informations sur la gestion des e-mails de rebond, consultez [cette section](delivery-failures.md#bounce-mail-qualification).
+Pour plus d&#39;informations sur la gestion des mails rebonds, consultez la section [Qualification des mails rebonds](delivery-failures.md#bounce-mail-qualification).
 
 ## Activer le désabonnement de la liste en un clic {#one-click-list-unsubscribe}
 
@@ -95,7 +95,7 @@ L’URL list-unsubscribe en un clic est un lien ou un bouton affiché en regard 
 
 Elle s&#39;affiche sous la forme d&#39;un lien **Se désabonner** dans les interfaces de messagerie des FAI. Par exemple :
 
-![](assets/email-list-unsubscribe-example.png)
+![Ligne d&#39;expéditeur du client de messagerie avec le lien de désabonnement affiché à côté de l&#39;adresse d&#39;expéditeur](assets/email-list-unsubscribe-example.png)
 
 L’ajout d’un en-tête SMTP appelé List-Unsubscribe est obligatoire pour assurer une gestion optimale de la délivrabilité et peut être utilisé comme alternative à l’icône « Signaler comme SPAM ». En effet, l&#39;utilisation de cette fonctionnalité réduit les taux de plainte et contribue à protéger votre réputation.
 
@@ -109,7 +109,7 @@ Pour activer cette fonctionnalité, sélectionnez l&#39;option **[!UICONTROL Ajo
 >
 >Cette option est activée par défaut.
 
-![](assets/email-smtp-list-unsubscribe.png)
+![Onglet SMTP avec la section List-Unsubscribe en un clic et l’option d’en-tête sélectionnée par défaut](assets/email-smtp-list-unsubscribe.png)
 
 <!--
 >[!WARNING]
@@ -148,11 +148,11 @@ Les valeurs sont automatiquement encodées, si nécessaire.
 >
 >La syntaxe de ce script doit être strictement conforme aux exigences de ce type de contenu : aucun espace superflu, aucune ligne vide, etc.
 
-![](assets/email-smtp-headers.png)
+Onglet ![SMTP avec la zone de script En-têtes SMTP supplémentaires mise en surbrillance, au format :value du nom](assets/email-smtp-headers.png)
 
 
 ## Générer une page miroir {#generating-mirror-page}
 
 La page miroir est une page HTML accessible en ligne via un navigateur web et dont le contenu est identique à celui de l’e-mail. Cela peut être utile si vos personnes destinataires rencontrent des problèmes de rendu ou accèdent à des images endommagées quand ils affichent votre e-mail dans leur boîte de réception.
 
-Découvrez comment insérer un lien vers la page miroir dans [cette section](mirror-page.md).
+Découvrez comment insérer un lien vers la page miroir dans [Ajouter un lien vers la page miroir](mirror-page.md)

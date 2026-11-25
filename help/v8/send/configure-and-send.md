@@ -19,20 +19,20 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 93%
+source-wordcount: '1530'
+ht-degree: 77%
 ---
 # Configurer et envoyer la diffusion {#configure-delivery}
 
-Accédez aux paramètres de diffusion pour configurer d’autres paramètres et définir comment envoyer vos messages. Vous pouvez définir une [priorité](#delivery-priority) de diffusion, configurer des [vagues](#sending-using-multiple-waves) et tester l’envoi de votre diffusion. Une fois cette configuration terminée, vous pouvez confirmer l’envoi, comme décrit dans [cette section](#confirm-delivery). Les messages sont alors envoyés immédiatement ou selon le [planning](#schedule-delivery-sending) de diffusion.
+Accédez aux paramètres de diffusion pour configurer d’autres paramètres et définir comment envoyer vos messages. Vous pouvez définir une [priorité](#delivery-priority) de diffusion, configurer des [vagues](#sending-using-multiple-waves) et tester l’envoi de votre diffusion. Une fois cette configuration terminée, vous pouvez confirmer l’envoi comme décrit dans [Confirmer la diffusion](#confirm-delivery). Les messages sont alors envoyés immédiatement ou selon le [planning](#schedule-delivery-sending) de diffusion.
 
 ## Configurer des paramètres supplémentaires {#delivery-additional-parameters}
 
 Avant d’envoyer la diffusion, vous pouvez définir les paramètres d’envoi dans les propriétés de la diffusion, via l’onglet **[!UICONTROL Diffusion]**.
 
-![](assets/delivery-properties-delivery.png)
+![Onglet Diffusion des propriétés avec les paramètres de priorité, vagues, reprises, personnalisation et format du mail](assets/delivery-properties-delivery.png)
 
 ### Priorité de diffusion {#delivery-priority}
 
@@ -67,7 +67,7 @@ Pour définir le vagues, procédez comme suit :
 1. Ouvrez les propriétés de la diffusion, puis cliquez sur l’onglet **[!UICONTROL Diffusion]**.
 1. Sélectionnez l’option **[!UICONTROL Envoyer en plusieurs vagues]**, puis cliquez sur le lien **[!UICONTROL Définition des vagues...]**.
 
-   ![](assets/delivery-define-waves.png)
+   ![Onglet Diffusion avec Envoi à l’aide de plusieurs vagues sélectionnées et le lien Définir des vagues mis en surbrillance](assets/delivery-define-waves.png)
 
 ### Configurer des vagues {#config-waves}
 
@@ -81,29 +81,29 @@ Vous pouvez définir la taille de chaque vague ou les ajouter à un calendrier.
 
   Dans le champ **[!UICONTROL Période]**, définissez le délai entre le démarrage de deux vagues consécutives. Par exemple, si vous saisissez **[!UICONTROL 2 j]**, la première vague démarre immédiatement, la deuxième démarre dans deux jours, la troisième dans quatre jours, etc.
 
-  ![](assets/delivery-waves-size.png)
+  ![Boîte de dialogue de définition des vagues avec des vagues de taille égale définies sur 30 % et une période 2d entre les vagues](assets/delivery-waves-size.png)
 
 * **Définissez un calendrier pour l’envoi de chaque vague**.  Par exemple, la première vague représente 25 % du nombre total de messages inclus dans la diffusion et démarre immédiatement. Les deux vagues suivantes terminent la diffusion et sont définies pour commencer à six heures d’intervalle.
 
   Dans la colonne **[!UICONTROL Début]**, indiquez le délai entre le démarrage de deux vagues consécutives. Dans la colonne **[!UICONTROL Taille]**, saisissez un nombre fixe ou un pourcentage.
 
-  ![](assets/delivery-waves-calendar.png)
+  ![Boîte de dialogue de définition des vagues avec un calendrier de trois vagues : 25 % à 0 s, 50 % à 6 h et 25 % à 6 h](assets/delivery-waves-calendar.png)
 
 ### Vérification de la planification des vagues {#check-waves}
 
-Une règle de typologie spécifique, la **[!UICONTROL Vérification de la planification des vagues]**, garantit que la dernière vague est planifiée avant la limite de validité de la diffusion. Les typologies de campagnes et leurs règles, configurées dans l’onglet **[!UICONTROL Typologie]** des propriétés de diffusion, sont présentées dans [cette section.](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->
+Une règle de typologie spécifique, la **[!UICONTROL Vérification de la planification des vagues]**, garantit que la dernière vague est planifiée avant la limite de validité de la diffusion. Les typologies de campagne et leurs règles, configurées dans l’onglet **[!UICONTROL Typologie]** des propriétés de diffusion, sont présentées dans [Règles de typologie et typologies](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
 
 >[!IMPORTANT]
 >
->* Veillez à ce que les dernières vagues ne dépassent pas la date limite de la diffusion qui est définie dans l’onglet **[!UICONTROL Validité]**. Sinon, certains messages peuvent ne pas être envoyés. En savoir plus sur la période de validité d’une diffusion dans [cette section](delivery-failures.md#valid-period).
+>* Veillez à ce que les dernières vagues ne dépassent pas la date limite de la diffusion qui est définie dans l’onglet **[!UICONTROL Validité]**. Sinon, certains messages peuvent ne pas être envoyés. En savoir plus sur la période de validité d&#39;une diffusion dans [Période de validité](delivery-failures.md#valid-period).
 >
->* Lors de la configuration des dernières vagues, veillez également à définir assez de temps pour les reprises. En savoir plus sur les reprises dans [cette section](delivery-failures.md#retries).
+>* Lors de la configuration des dernières vagues, veillez également à définir assez de temps pour les reprises. En savoir plus sur les reprises dans [Gestion des reprises](delivery-failures.md#retries).
 >
 >* Les vagues sont planifiées à partir de la date de contact de la diffusion. Si la diffusion démarre après l’heure prévue d’une ou de plusieurs vagues, ces vagues en retard sont toutes envoyées ensemble au lieu d’être espacées.
 
 ### Surveiller les vagues {#monitor-waves}
 
-Pour su vos envois, accédez aux logs de diffusion. Voir [cette page](send.md).
+Pour su vos envois, accédez aux logs de diffusion. Voir [Envoyer et surveiller vos emails](send.md).
 
 Vous pouvez visualiser les diffusions qui ont déjà été envoyées dans les vagues traitées (statut **[!UICONTROL Envoyé]**) et celles à envoyer dans les vagues restantes (statut **[!UICONTROL En attente]**).
 
@@ -120,7 +120,7 @@ Les deux exemples ci-dessous constituent les cas d&#39;utilisation les plus fré
 
   Pour ce faire, utilisez l’option **[!UICONTROL Planifier les vagues selon un calendrier]**. Par exemple, définissez la première vague sur 10 %, la deuxième sur 15 %, etc.
 
-  ![](assets/delivery-waves-ex-ramp-up.png)
+  ![Calendrier de définition des vagues avec cinq vagues de taille croissante, de 10 % à 30 %, à 12 h d&#39;intervalle](assets/delivery-waves-ex-ramp-up.png)
 
 * **Campagnes avec un centre d’appel**
 
@@ -130,7 +130,7 @@ Les deux exemples ci-dessous constituent les cas d&#39;utilisation les plus fré
 
   Pour ce faire, sélectionnez l’option **[!UICONTROL Planification de plusieurs vagues de même taille]**. Saisissez **[!UICONTROL 20]** comme taille de vague et **[!UICONTROL 1 j]** dans le champ **[!UICONTROL Période]**.
 
-  ![](assets/delivery-waves-ex-call-center.png)
+  ![Boîte de dialogue de définition des vagues avec des vagues de taille égale de 20 messages et une période 1j](assets/delivery-waves-ex-call-center.png)
 
 ## Confirmer la diffusion {#confirm-delivery}
 
@@ -143,13 +143,13 @@ Pour ce faire, suivez les étapes ci-après.
    * Pour envoyer immédiatement la diffusion, sélectionnez **[!UICONTROL Diffuser dès que possible]**.
    * Pour planifier l’envoi à une date ultérieure, sélectionnez **[!UICONTROL Différer la diffusion]**. [En savoir plus](#schedule-delivery-sending)
 
-1. Cliquez sur **[!UICONTROL Analyser]**. Voir à ce propos [cette section](delivery-analysis.md).
+1. Cliquez sur **[!UICONTROL Analyser]**. Pour plus d&#39;informations, consultez la section [Analyse de la diffusion](delivery-analysis.md).
 
-   ![](assets/delivery-send-analyze.png)
+   ![Envoyer à la boîte de dialogue principale de la cible de la diffusion avec l&#39;option Diffuser dès que possible sélectionnée et le bouton Analyser mis en surbrillance](assets/delivery-send-analyze.png)
 
 1. Une fois que vous avez terminé, cliquez sur **[!UICONTROL Confirmer l’envoi]** pour lancer la diffusion des messages.
 
-   ![](assets/delivery-send-confirm.png)
+   ![Envoyer à la boîte de dialogue cible de diffusion principale après analyse, avec le bouton Confirmer la diffusion en surbrillance](assets/delivery-send-confirm.png)
 
 1. Vous pouvez ensuite fermer l’assistant de diffusion et suivre l’exécution de la diffusion depuis l’onglet **[!UICONTROL Diffusion]** accessible à partir du détail de cette diffusion ou depuis la liste des diffusions.
 
@@ -168,7 +168,7 @@ Vous pouvez différer la diffusion des messages pour planifier l&#39;envoi ou po
 
 1. Indiquez une date de début dans le champ **[!UICONTROL Date de contact]**.
 
-   ![](assets/delivery-send-postpone.png)
+   ![Envoyez à la boîte de dialogue cible de la diffusion principale avec Différer la diffusion sélectionnée et une date de contact saisie](assets/delivery-send-postpone.png)
 
 1. Lancez l’analyse de la diffusion et confirmez l&#39;envoi de celle-ci. Toutefois, cet envoi ne démarrera pas avant la date indiquée dans le champ **[!UICONTROL Date de contact]**.
 
@@ -176,13 +176,13 @@ Vous pouvez différer la diffusion des messages pour planifier l&#39;envoi ou po
    >
    >Une fois l’analyse lancée, la date de contact que vous avez définie est fixe. Si vous modifiez cette date, vous devrez relancer l’analyse afin que vos modifications soient prises en compte.
 
-   ![](assets/delivery-send-scheduled.png)
+   ![Message indiquant la date de fin de la préparation de la diffusion et le bouton Confirmer la diffusion](assets/delivery-send-scheduled.png)
 
 Dans la liste des diffusions, la diffusion apparaît avec le statut **[!UICONTROL En attente]**.
 
 La planification peut aussi être paramétrée en amont via le bouton **[!UICONTROL Planification]** de la diffusion.
 
-![](assets/delivery-scheduling-button.png)
+![Boîte de dialogue de planification ouverte à partir du bouton Planification avec Planification de la diffusion (pas d&#39;exécution automatique) sélectionnée](assets/delivery-scheduling-button.png)
 
 Elle vous permet de différer la diffusion à une date ultérieure ou enregistrer la diffusion dans le calendrier prévisionnel.
 
@@ -198,7 +198,7 @@ Les dates et heures sont entendues dans le fuseau horaire de l&#39;opérateur co
 
 Ainsi, si vous planifiez une diffusion pour qu&#39;elle s&#39;exécute automatiquement à 8h heure de Londres, l&#39;heure est automatiquement convertie dans le fuseau sélectionné :
 
-![](assets/delivery-schedule-time-zone.png)
+![Boîte de dialogue Planification avec la liste déroulante Fuseau horaire ouverte pour convertir la date de contact en un autre fuseau horaire](assets/delivery-schedule-time-zone.png)
 
 <!--
 ## Adjust delivery failure management {#delivery-failure-management}

@@ -19,7 +19,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 84%
@@ -36,7 +36,7 @@ Si vous souhaitez créer le service avec des attributs spécifiques, ajoutez-les
 
 Exemple de requête POST pour créer un service avec des attributs spécifiques.
 
-```
+```bash
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/ \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -53,7 +53,7 @@ Exemple de requête POST pour créer un service avec des attributs spécifiques.
 
 Elle renvoie le service qui vient d’être créé avec les attributs mis à jour.
 
-```
+```json
 {
     "PKey": "<PKEY>",
     "builtIn": false,

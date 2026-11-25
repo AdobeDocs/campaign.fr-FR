@@ -22,7 +22,7 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 89%
@@ -47,7 +47,7 @@ Si la requête de suppression aboutit, l’état de la réponse est 204 No Conte
 
 Les exemples de payloads ci-dessous montrent comment désabonner un profil d’un service. Commencez par exécuter une requête GET pour récupérer le profil.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -57,7 +57,7 @@ Les exemples de payloads ci-dessous montrent comment désabonner un profil d’u
 
 Elle renvoie l’URL des abonnements du profil.
 
-```
+```json
   {
     ...
     "postalAddress":...,
@@ -70,7 +70,7 @@ Elle renvoie l’URL des abonnements du profil.
 
 Exécutez une requête GET sur l’URL des abonnements.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY>/subscriptions \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -80,7 +80,7 @@ Exécutez une requête GET sur l’URL des abonnements.
 
 Elle renvoie la liste des abonnements pour le profil sélectionné, avec une URL pour chaque service souscrit.
 
-```
+```json
 ...
 "service": {
   "PKey": "<PKEY>",
@@ -94,7 +94,7 @@ Elle renvoie la liste des abonnements pour le profil sélectionné, avec une URL
 
 Exécutez une requête DELETE sur l’URL de service souhaitée.
 
-```
+```bash
 -X DELETE https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -120,7 +120,7 @@ Si la requête de suppression aboutit, l’état de la réponse est 204 No Conte
 
 Récupérez l’enregistrement du service.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -130,7 +130,7 @@ Récupérez l’enregistrement du service.
 
 La requête renvoie l’URL des abonnements du service.
 
-```
+```json
 {
   ...
   "messageType": "email",
@@ -147,7 +147,7 @@ La requête renvoie l’URL des abonnements du service.
 
 Exécutez une requête GET sur l’URL des abonnements.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY>/subscriptions \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -157,7 +157,7 @@ Exécutez une requête GET sur l’URL des abonnements.
 
 Elle renvoie la liste des abonnements pour le service sélectionné, avec une URL (href) pour chaque abonnement de profil.
 
-```
+```json
 {
   "PKey": "<PKEY>",
   "created": "2019-03-26 08:58:04.764Z",
@@ -174,7 +174,7 @@ Elle renvoie la liste des abonnements pour le service sélectionné, avec une UR
 
 Exécutez une requête DELETE sur l’URL d’abonnement au profil souhaité.
 
-```
+```bash
 -X DELETE https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY>/subscriptions/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \

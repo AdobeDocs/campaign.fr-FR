@@ -24,10 +24,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '3509'
-ht-degree: 98%
+source-wordcount: '3872'
+ht-degree: 88%
 ---
 # Définition des conditions de filtre{#filter-conditions}
 
@@ -37,7 +37,7 @@ Pour concevoir votre requête, vous devez sélectionner les conditions de filtra
 
 Dans une condition de filtrage, il faut lier deux valeurs grâce à un opérateur.
 
-![](assets/query_editor_nveau_96.png)
+![Étape de l’élément cible avec le menu déroulant Opérateur ouvert, répertoriant les opérateurs égal à, supérieur à, inférieur à et autres.](assets/query_editor_nveau_96.png)
 
 Voici une liste descriptive des opérateurs disponibles :
 
@@ -143,24 +143,24 @@ Dans les requêtes utilisant plusieurs conditions de filtrage, vous devez défin
 
 Cliquez sur le **[!UICONTROL Et]** (proposé par défaut) et faites votre choix dans la liste déroulante.
 
-![](assets/query_condition_modif_01.png)
+![Les options de lien « Et, Ou et Sauf » dans une liste déroulante sous la condition Domaine d’e-mail égal à orange.co.uk.](assets/query_condition_modif_01.png)
 
 * **[!UICONTROL Et]** : ajoute une condition en plus de la précédente et permet de surfiltrer.
 * **[!UICONTROL Ou]** : permet de prendre en compte au moins un résultat par rapport aux conditions définies.
 
   L&#39;exemple ci-dessous permet de retrouver des destinataires dont le domaine d&#39;email contient &quot;voila.fr&quot; OU dont le code postal commence par le chiffre &quot;49&quot;.
 
-  ![](assets/query_condition_modif_02.png)
+  ![Deux conditions liées par Or : domaine de l&#39;e-mail égal à orange.co.uk ou code postal commençant par NW.](assets/query_condition_modif_02.png)
 
 * **[!UICONTROL Sauf]** : si vous avez deux filtres et que le premier permet de ne pas obtenir de valeur, une relation de ce type crée une exception.
 
   Dans l&#39;exemple ci-dessous, on recherche des destinataires dont le domaine d&#39;email contient &quot;voila.fr&quot; SAUF si le nom de famille des destinataires correspond à la valeur &quot;Smith&quot;.
 
-  ![](assets/query_condition_modif_03.png)
+  ![Deux conditions liées par Sauf : Domaine d&#39;email égal à orange.co.uk sauf Nom égal à Smith.](assets/query_condition_modif_03.png)
 
 Cet autre exemple montre un filtre permettant d&#39;afficher : les destinataires de langue espagnole OU les femmes dont le numéro de téléphone mobile est renseigné OU les destinataires qui n&#39;ont pas renseigné leur numéro de compte et dont le nom de société commence &quot;N&quot;.
 
-![](assets/query_editor_nveau_31.png)
+![Filtre combinant l&#39;espagnol, la femme avec un numéro de mobile et aucun numéro de compte avec une entreprise commençant par N.](assets/query_editor_nveau_31.png)
 
 ## Hiérarchiser les conditions {#prioritizing-conditions}
 
@@ -169,7 +169,7 @@ Cette section explique comment hiérarchiser les conditions. Ceci est possible g
 * La flèche pointant vers la droite permet d&#39;ajouter un niveau de parenthèses au filtrage.
 * La flèche pointant vers la gauche permet de supprimer un niveau de parenthèses.
 
-  ![](assets/query_condition_modif_04.png)
+  ![Barre d&#39;outils du requêteur avec les flèches de parenthèses gauche et droite et les flèches haut et bas en surbrillance.](assets/query_condition_modif_04.png)
 
 * Les flèches pointant vers le haut et vers le bas permettent de déplacer une condition. Cela modifie l&#39;ordre d&#39;exécution des filtres.
 
@@ -177,7 +177,7 @@ Cet exemple montre comment utiliser la flèche pour supprimer un niveau de paren
 
 Pointez votre curseur sur la condition de filtrage **[!UICONTROL Gender (@gender) égal à Masculin]** puis cliquez sur la flèche **[!UICONTROL Supprimer un niveau de parenthèses]**.
 
-![](assets/query_editor_nveau_32.png)
+![Avant et après la suppression d&#39;un niveau de parenthèse : le genre égal à Masculin passe au même niveau que le genre de ville égal à Londres.](assets/query_editor_nveau_32.png)
 
 La condition **[!UICONTROL Genre (@gender) égal à Masculin]** a été extraite de sa parenthèse. Elle se situe désormais au même niveau que la condition « Ville égal à Paris ». Ces deux conditions sont liées par un **[!UICONTROL Et]**.
 
@@ -187,7 +187,7 @@ Les champs disponibles varient d&#39;une table à l&#39;autre. Tous les champs s
 
 Le détail du champ sélectionné est visible au bas de la fenêtre. Par exemple, le champ **[!UICONTROL Domaine d’e-mail]** est un **[!UICONTROL Champ calculé SQL]**. Son extension est **[!UICONTROL (@domain)]**.
 
-![](assets/query_editor_nveau_59.png)
+![Étape d&#39;extraction des données avec le domaine d&#39;e-mail sélectionné ; le détail ci-dessous lit le champ calculé SQL (@domain).](assets/query_editor_nveau_59.png)
 
 >[!NOTE]
 >
@@ -195,7 +195,7 @@ Le détail du champ sélectionné est visible au bas de la fenêtre. Par exemple
 
 Double-cliquez sur un champ disponible pour l&#39;ajouter aux colonnes de sortie. En fin de requête, chaque champ sélectionné correspond à une colonne dans la fenêtre **[!UICONTROL Prévisualisation des données]**.
 
-![](assets/query_editor_nveau_01.png)
+![Données à extraire de l’étape avec l’âge, la clé de Principal, le domaine d’e-mail et la ville ajoutés à la liste Colonnes de sortie.](assets/query_editor_nveau_01.png)
 
 Les champs avancés ne sont pas affichés par défaut. Cliquez sur **[!UICONTROL Afficher les champs avancés]**, en bas à droite des champs disponibles pour les afficher. Cette fonction affiche le nom complet des champs.
 
@@ -203,7 +203,7 @@ Par exemple, dans la table des destinataires, les champs avancés sont **Boolée
 
 L&#39;exemple ci-dessous montre les champs avancés de la table des destinataires.
 
-![](assets/query_editor_nveau_53.png)
+![Liste des champs disponibles avec champs avancés en surbrillance et bouton Afficher les champs avancés en bas à droite.](assets/query_editor_nveau_53.png)
 
 Les différentes catégories de champs :
 
@@ -275,7 +275,7 @@ Liens vers une table et éléments de collection :
 
 >[!NOTE]
 >
->* Utilisez le bouton **[!UICONTROL Ajouter]** (au-dessus de la barre d’icônes latérale) pour ajouter une colonne de sortie dans laquelle vous souhaitez modifier l’expression. Pour plus d’informations sur la modification d’une expression, voir [cette section](#building-expressions).
+>* Utilisez le bouton **[!UICONTROL Ajouter]** (au-dessus de la barre d’icônes latérale) pour ajouter une colonne de sortie dans laquelle vous souhaitez modifier l’expression. Pour plus d&#39;informations sur la modification d&#39;une expression, voir [Créer des expressions](#building-expressions).
 >* Supprimez une colonne de sortie en cliquant sur la croix rouge **Supprimer**.
 >* Modifiez l&#39;ordre des colonnes de sortie grâce aux flèches.
 >* L’icône **[!UICONTROL Répartition des valeurs]** sert à visualiser la répartition des valeurs du champ sélectionné (par exemple, les répartitions liées aux villes des destinataires, à la langue des destinataires, etc.).
@@ -284,29 +284,29 @@ Liens vers une table et éléments de collection :
 
 Si nécessaire, ajoutez une colonne lors du formatage des données. Un champ calculé ajoute une colonne dans la section de prévisualisation des données. Cliquez sur **[!UICONTROL Ajouter un champ calculé]**.
 
-![](assets/query_editor_nveau_43.png)
+![Étape de formatage des données avec le bouton Ajouter un champ calculé et la boîte de dialogue de définition du champ calculé ouverte sur Type.](assets/query_editor_nveau_43.png)
 
 Quatre types de champ calculé sont proposés :
 
 * **[!UICONTROL Chaîne fixe]** : pour ajouter une chaîne de caractères.
 
-  ![](assets/query_editor_nveau_60.png)
+  ![Boîte de dialogue Exporter la définition du champ calculé avec le type de chaîne fixe et le texte « Ma chaîne » saisi.](assets/query_editor_nveau_60.png)
 
 * **[!UICONTROL Chaîne avec fusion JavaScript]** : la valeur du champ calculé combine une chaîne de caractères à des directives JavaScript.
 
-  ![](assets/query_editor_nveau_61.png)
+  ![Boîte de dialogue Exporter la définition du champ calculé avec le type Chaîne avec des balises JavaScript et des balises de script dans l&#39;éditeur.](assets/query_editor_nveau_61.png)
 
 * **[!UICONTROL Expression JavaScript]** : la valeur du champ calculé est le résultat de l’évaluation d’une fonction JavaScript. La valeur renvoyée peut être typée (nombre, date, etc.).
 
-  ![](assets/query_editor_nveau_62.png)
+  ![Boîte de dialogue Exporter la définition du champ calculé avec une expression JavaScript de type et un script if-else renvoyant A ou B.](assets/query_editor_nveau_62.png)
 
 * **[!UICONTROL Énumérations]**. Ce type de champ permet d’utiliser/transformer le contenu d’une des colonnes de sortie dans une nouvelle colonne.
 
   Il est possible d’utiliser la valeur source d’une colonne et de lui donner une valeur de destination. Cette valeur de destination sera affichée dans la nouvelle colonne de sortie.
 
-  Un exemple d’ajout de champ calculé de type **[!UICONTROL Énumérations]** est disponible. Reportez-vous à [cette section](../../automation/workflow/adding-enumeration-type-calculated-field.md).
+  Un exemple d&#39;ajout du type de champ calculé **[!UICONTROL Énumérations]** est disponible. Consultez la section [Ajouter un champ calculé de type Énumération](../../automation/workflow/adding-enumeration-type-calculated-field.md).
 
-  ![](assets/query_editor_nveau_63.png)
+  ![Boîte de dialogue du champ calculé Enumérations avec une liste de colonnes Source et les quatre options pour les autres cas.](assets/query_editor_nveau_63.png)
 
   Le champ calculé de type **[!UICONTROL Énumérations]** peut comporter quatre conditions :
 
@@ -319,7 +319,7 @@ Cliquez sur la loupe **[!UICONTROL Détail du champ calculé]** pour visualiser 
 
 Pour retirer le champ, cliquez sur la croix rouge **[!UICONTROL Enlever le champ calculé]**.
 
-![](assets/query_editor_nveau_58.png)
+![Étape de formatage des données avec le champ calculé Nouveau sélectionné et le bouton Détail du champ calculé en surbrillance.](assets/query_editor_nveau_58.png)
 
 ## Créer des expressions {#building-expressions}
 
@@ -335,15 +335,15 @@ Les étapes sont les suivantes :
 
    Sélectionnez **[!UICONTROL Traitement sur une fonction d&#39;agrégat]** puis **[!UICONTROL Comptage]**. Cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/query_editor_nveau_54.png)
+   ![Étape Données à extraire : l&#39;étape Ajouter ouvre un champ d&#39;expression avec le bouton Modifier l&#39;expression en surbrillance.](assets/query_editor_nveau_54.png)
 
 1. Le calcul de la clé primaire est effectué.
 
-   ![](assets/query_editor_nveau_88.png)
+   ![Liste des colonnes de sortie avec une expression count(clé primaire) ajoutée et mise en surbrillance.](assets/query_editor_nveau_88.png)
 
 Voici le détail des choix de la fenêtre **[!UICONTROL Types de formules]** :
 
-![](assets/query_editor_nveau_05.png)
+![Fenêtre de type formule avec Traitement sur une fonction d&#39;agrégat sélectionnée et l&#39;option Comptage sélectionnée.](assets/query_editor_nveau_05.png)
 
 1. **[!UICONTROL Champ simple]** permet de revenir à la fenêtre **[!UICONTROL Champ à sélectionner]**.
 1. **[!UICONTROL Agrégat (traitement sur une fonction d’agrégat)]**. Voici des exemples d’utilisation des agrégats :
@@ -358,7 +358,7 @@ Voici le détail des choix de la fenêtre **[!UICONTROL Types de formules]** :
 
 1. **[!UICONTROL Expression]** ouvre la fenêtre **[!UICONTROL Édition de l’expression]**. Cela vous permet de détecter les numéros de téléphone contenant trop de chiffres, synonymes de possibles erreurs de saisie.
 
-   ![](assets/query_editor_nveau_71.png)
+   ![Modifiez la fenêtre d&#39;expression avec une expression de longueur de téléphone et le filtre correspondant Phone supérieur à 10.](assets/query_editor_nveau_71.png)
 
    Pour une liste complète des fonctions disponibles, voir la section [Liste des fonctions](#list-of-functions).
 
@@ -368,7 +368,7 @@ Si une formule de type **[!UICONTROL Expression]** est choisie, vous accédez à
 
 L&#39;éditeur d&#39;expression se présente comme suit :
 
-![](assets/filter-define-expression.png)
+![Modifiez la fenêtre d&#39;expression avec les champs Disponibles et une Liste de fonctions avec des catégories telles que Agrégats et Chaîne.](assets/filter-define-expression.png)
 
 Cela vous permet de sélectionner des champs dans les tables de la base de données et de leur adjoindre des fonctions avancées. Les fonctions suivantes sont disponibles :
 

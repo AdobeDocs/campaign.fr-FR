@@ -26,10 +26,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 78%
+source-wordcount: '598'
+ht-degree: 69%
 ---
 # Sélectionner l’audience de votre diffusion SMS {#sms-audience}
 
@@ -45,7 +45,7 @@ Pour sélectionner l’audience d’une diffusion, procédez comme suit :
 
 1. L&#39;audience étant stockée dans la base de données Adobe Campaign, dans l&#39;onglet **[!UICONTROL Cible principale]**, choisissez l&#39;option **[!UICONTROL Définie dans la base de données]**.
 
-   ![](assets/audience_to.png){zoomable="yes"}
+   ![Sélectionnez la boîte de dialogue cible avec l&#39;option Définie dans la base de données sélectionnée, ouverte à partir du lien À](assets/audience_to.png){zoomable="yes"}
 
 1. Sélectionnez le **[!UICONTROL Mapping de ciblage]** dans la liste déroulante. Le mapping de ciblage par défaut d&#39;Adobe Campaign est Destinataire , selon le schéma **[!UICONTROL nms:recipient]**.
 
@@ -55,7 +55,7 @@ Pour sélectionner l’audience d’une diffusion, procédez comme suit :
 
    Vous pouvez alors sélectionner le type de filtrage à appliquer :
 
-   ![](assets/audience_filters.png){zoomable="yes"}
+   ![Boîte de dialogue Sélectionner un élément cible répertoriant les types de cible et les filtres utilisateur à sélectionner](assets/audience_filters.png){zoomable="yes"}
 
    Pour utiliser un type de cible, sélectionnez-le et cliquez sur **[!UICONTROL Suivant]**.
 
@@ -74,7 +74,7 @@ Pour sélectionner l’audience d’une diffusion, procédez comme suit :
 
 1. Saisissez le nom de votre audience dans le champ libellé, puis cliquez sur le bouton **[!UICONTROL Terminer]** pour valider votre audience.
 
-   ![](assets/audience_finish.png){zoomable="yes"}
+   ![La définition de l&#39;élément cible avec le libellé mobile n&#39;est pas vide, un filtre sur Mobile et Terminer mis en surbrillance](assets/audience_finish.png){zoomable="yes"}
 
    Vous pouvez ajouter autant de populations cibles que nécessaire en cliquant de nouveau sur le bouton **[!UICONTROL Ajouter]**. Vous pouvez également en supprimer certaines en cliquant sur la croix située après leur libellé.
 
@@ -88,7 +88,7 @@ Pour cela, procédez comme suit :
 
 1. Sélectionnez l’option **[!UICONTROL Définie dans un fichier externe]**.
 
-   ![](assets/audience_externalfile.png){zoomable="yes"}
+   ![Sélectionnez la boîte de dialogue cible avec l&#39;option Défini dans un fichier externe sélectionnée et le lien de définition du format de fichier](assets/audience_externalfile.png){zoomable="yes"}
 
 1. Par défaut, les personnes destinataires sont importées dans la base de données. Vous devez sélectionner le **[!UICONTROL mapping de ciblage]** dans ce cas. Pour plus d’informations sur les mappings de ciblage, voir la section [Utiliser un mapping de ciblage](../../audiences/target-mappings.md).
 

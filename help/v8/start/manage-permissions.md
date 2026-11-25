@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1850'
-ht-degree: 89%
+source-wordcount: '1933'
+ht-degree: 81%
 ---
 # Gérer les autorisations utilisateur{#manage-permissions}
 
@@ -62,16 +62,16 @@ Pour ajouter un utilisateur/une utilisatrice, procédez comme suit :
 
 1. Sur la page d’accueil d’[Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"}, sélectionnez **Ajouter des utilisateurs et des utilisatrices**.
 
-   ![](assets/add-a-user.png)
+   ![Page d’accueil d’Admin Console avec le lien rapide Ajouter des utilisateurs en surbrillance](assets/add-a-user.png)
 
 1. Saisissez l’adresse e-mail de l’utilisateur/utilisatrice.
 1. Utilisez le signe « + » pour sélectionner les profils de produit ou les groupes d’utilisateurs à affecter à l’utilisateur/utilisatrice.
 
-   ![](assets/add-a-product-profile.png)
+   ![Formulaire d’ajout d’utilisateurs avec la liste des profils de produit Adobe Campaign à sélectionner pour l’utilisateur](assets/add-a-product-profile.png)
 
-   Les profils de produit intégrés à Campaign sont répertoriés dans [cette section](#ootb-productprofiles).
+   Les profils de produit intégrés à Campaign sont répertoriés dans [Profils de produit et groupes d’opérateurs par défaut](#ootb-productprofiles).
 
-   Découvrez comment créer des groupes d’utilisateurs dans [cette section](#user-groups).
+   Découvrez comment créer des groupes d’utilisateurs dans [Utiliser des groupes d’utilisateurs](#user-groups)
 
 1. Cliquez sur **Enregistrer**. L’utilisateur/utilisatrice est ajouté(e) et s’affiche dans la liste des utilisateurs. Si vous attribuez un rôle d’administrateur ou un profil de produit aux utilisateurs, ils reçoivent une notification par e-mail. Les utilisateurs doivent suivre le lien pour compléter leur profil.
 
@@ -109,21 +109,21 @@ Par exemple, pour créer un profil de produit « validants », procédez comme
 
 1. Connectez-vous à Campaign, ouvrez l’explorateur et accédez à **[!UICONTROL Administration > Gestion des accès > Groupes d’opérateurs]**.
 1. Cliquez sur **[!UICONTROL Nouveau]** et définissez le nom du groupe d’opérateurs ainsi que son nom interne (« validants »).
-   ![](assets/new-op-group.png)
-1. Définissez les autorisations associées en sélectionnant les droits nommés. Pour en savoir plus sur les droits nommés, consultez [cette section](#use-named-rights).
+   ![Liste des groupes d&#39;opérateurs dans l&#39;Explorateur avec création d&#39;un groupe d&#39;opérateurs Réviseurs](assets/new-op-group.png)
+1. Définissez les autorisations associées en sélectionnant les droits nommés. Les droits nommés sont présentés dans la section [Droits nommés](#use-named-rights)
 1. Enregistrez le nouveau groupe d’opérateurs.
 
 #### Créer le profil de produit dans Admin Console{#create-profile-in-admin-console}
 
 1. Connectez-vous à [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"}.
 1. Dans la section **Produit et services** de la page d’accueil, ouvrez le produit Campaign.
-1. Cliquez sur **Nouveau profil** et saisissez le nom du profil de produit à créer, en respectant la syntaxe correcte, comme décrit [ici](#product-profiles). Dans notre exemple, nous avons saisi : campaign - `<your-instance-name>` - validants
+1. Cliquez sur **Nouveau profil** et saisissez le nom du profil de produit à créer, en respectant la syntaxe correcte, comme expliqué [Utiliser des profils de produit](#product-profiles). Dans notre exemple, nous avons saisi : campaign - `<your-instance-name>` - validants
 
-   ![](assets/new-product-profile-ui.png)
+   ![Créez une page de profil de produit avec le champ Nom du profil de produit renseigné](assets/new-product-profile-ui.png)
 
 1. Enregistrez vos modifications.
 
-Vous pouvez maintenant ajouter des utilisateurs à ce nouveau profil de produit, comme expliqué dans [cette section](#add-users).
+Vous pouvez maintenant ajouter des utilisateurs à ce nouveau profil de produit, comme expliqué dans [Ajouter des utilisateurs](#add-users).
 
 Il est recommandé d’attribuer des profils de produit à des groupes d’utilisateurs. La gestion des autorisations par utilisateur/utilisatrice unique n’est pas un modèle viable.
 
@@ -132,7 +132,7 @@ Il est recommandé d’attribuer des profils de produit à des groupes d’utili
 
 Adobe Campaign dispose de **profils de produit** intégrés, qui sont définis lorsqu’Adobe active votre environnement.
 
-![](assets/ootb-product-profiles.png)
+![Onglet Profils de produit Admin Console répertoriant les profils de produit Campaign intégrés tels que l’administrateur et l’opération](assets/ootb-product-profiles.png)
 
 Ces profils de produit correspondent aux **groupes d’opérateurs** Campaign. Les groupes d&#39;opérateurs par défaut et leurs [droits nommés](#use-named-rights) sont répertoriés ci-dessous :
 
@@ -213,7 +213,7 @@ Ces profils de produit correspondent aux **groupes d’opérateurs** Campaign. L
    >
    >**Les chargés d’offres** ne peuvent valider une offre que si aucun validant n’est spécifié ou s’ils ont été déclarés comme validants dans le modèle d’offre.
 
-   La matrice des droits des chargés d’offres par environnement est disponible sur [cette page](../interaction/interaction-operators.md#recap-of-rights-according-to-operator).
+   La matrice des autorisations des chargés d’offres par environnement est disponible dans [Matrice des autorisations par opérateur d’interaction](../interaction/interaction-operators.md#recap-of-rights-according-to-operator).
 
 ## Utiliser les groupes d’utilisateurs{#user-groups}
 

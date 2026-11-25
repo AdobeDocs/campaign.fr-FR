@@ -37,10 +37,10 @@ topic_v2:
     internal-label: Measurement
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 88%
+source-wordcount: '2049'
+ht-degree: 85%
 ---
 # Configurer le canal de notification push {#push-notification-configuration}
 
@@ -190,13 +190,13 @@ Pour créer un service destiné à envoyer des notifications push, procédez com
 
 1. Accédez à l’onglet **[!UICONTROL Profils et cibles > Services et abonnements]**, puis cliquez sur **[!UICONTROL Créer]**.
 
-   ![](assets/new-service-push.png){width="800"}
+   ![Boîte de dialogue Nouveau service avec le type d&#39;application mobile et le mapping de ciblage Applications abonnées](assets/new-service-push.png){width="800"}
 
 1. Saisissez un **[!UICONTROL Libellé]** et un **[!UICONTROL Nom interne]**, puis sélectionnez un type d’**[!UICONTROL Application mobile]**.
 
    >[!NOTE]
    >
-   >Le mapping de ciblage **[!UICONTROL Applications abonnées (nms:appSubscriptionRcp)]** par défaut est lié à la table des destinataires. Si vous souhaitez utiliser un autre mapping de ciblage, vous devez en créer un nouveau et le saisir dans le champ **[!UICONTROL Mapping de ciblage]** du service. Pour plus d’informations sur les mappings de ciblage, consultez [cette page](../audiences/target-mappings.md).
+   >Le mapping de ciblage **[!UICONTROL Applications abonnées (nms:appSubscriptionRcp)]** par défaut est lié à la table des destinataires. Si vous souhaitez utiliser un autre mapping de ciblage, vous devez en créer un nouveau et le saisir dans le champ **[!UICONTROL Mapping de ciblage]** du service. En savoir plus sur les mappings de ciblage dans [Utilisation des mappings de ciblage](../audiences/target-mappings.md).
 
 1. Ensuite, utilisez l’icône **[!UICONTROL Ajouter]** sur la droite pour définir les applications mobiles qui utilisent ce service.
 
@@ -208,14 +208,14 @@ Pour créer une application pour les appareils iOS, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Créer une application iOS]**, puis cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/new-ios-app.png){width="600"}
+   ![Assistant de création d&#39;applications mobiles avec l&#39;option Créer une application iOS sélectionnée et le bouton Suivant](assets/new-ios-app.png){width="600"}
 
 1. Saisissez le nom de votre application dans le champ **[!UICONTROL Libellé]**.
 1. (facultatif) Vous pouvez enrichir le contenu d’un message push avec certaines **[!UICONTROL variables d’application]**. Elles sont entièrement personnalisables et font partie de la payload du message envoyé à l&#39;appareil mobile.
 
    Dans l’exemple ci-dessous, les variables **mediaURl** et **mediaExt** sont ajoutées pour créer des notifications push enrichies, puis fournir à l’application l’image à afficher dans la notification.
 
-   ![](assets/ios-app-parameters.png){width="600"}
+   ![Étape des paramètres généraux de l’assistant d’application iOS avec mediaURL et mediaExt répertoriés comme variables d’application](assets/ios-app-parameters.png){width="600"}
 
 1. Accédez à l’onglet **[!UICONTROL Paramètres d’abonnement]** pour définir le mapping avec une extension du schéma **[!UICONTROL Applications abonnées (nms:appsubscriptionRcp)]**.
 
@@ -258,7 +258,7 @@ Pour créer une application pour les appareils Android, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Créer une application Android]**, puis cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/new-android-app.png){width="600"}
+   ![Assistant de création d&#39;applications mobiles avec l&#39;option Créer une application Android sélectionnée et le bouton Suivant](assets/new-android-app.png){width="600"}
 
 1. Saisissez le nom de votre application dans le champ **[!UICONTROL Libellé]**.
 1. La clé d’intégration est spécifique à chaque application. Elle relie l’application mobile à Adobe Campaign.

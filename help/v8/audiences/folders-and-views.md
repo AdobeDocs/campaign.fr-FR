@@ -39,10 +39,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 89%
+source-wordcount: '825'
+ht-degree: 76%
 ---
 # Gérer les dossiers et les vues {#folders-and-views}
 
@@ -74,13 +74,13 @@ Pour créer un dossier, cliquez avec le bouton droit de la souris sur un dossier
 
 Pour créer le même type de dossier que celui que vous avez sélectionné, choisissez la première option du menu contextuel. Par exemple, dans un dossier Destinataires, sélectionnez **[!UICONTROL Créer un dossier « Destinataires »]**.
 
-![](assets/create-recipient-folder.png)
+![Menu contextuel du dossier Destinataires avec l&#39;option Créer un dossier « Destinataires » mise en surbrillance](assets/create-recipient-folder.png)
 
 Vous pouvez faire un glisser-déposer du nouveau dossier pour organiser l&#39;arborescence de l&#39;explorateur Campaign selon vos besoins.
 
 Pour créer un autre type de dossier, cliquez avec le bouton droit de la souris sur un dossier existant et sélectionnez **[!UICONTROL Ajouter un nouveau dossier]**. Vous pouvez créer tous les types de dossiers, selon les données à stocker.
 
-![](assets/add-new-folder.png)
+![Ajout d&#39;un nouveau menu Dossier affichant le sous-menu Base de données avec le type de dossier Listes sélectionné](assets/add-new-folder.png)
 
 >[!CAUTION]
 >
@@ -109,15 +109,15 @@ Dans l&#39;exemple ci-dessous, nous allons créer un dossier afin de n&#39;affic
 1. Cliquez avec le bouton droit sur ce dossier et choisissez **[!UICONTROL Propriétés...]**.
 1. Dans l’onglet **[!UICONTROL Restriction]**, sélectionnez **[!UICONTROL Ce dossier est une vue]**. Toutes les diffusions de la base de données y seront alors affichées.
 
-   ![](assets/this-folder-is-a-view.png)
+   ![Propriétés du dossier des diffusions américaines avec l&#39;option Ce dossier est une vue sélectionnée dans l&#39;onglet Restriction](assets/this-folder-is-a-view.png)
 
 1. Définissez les critères de filtrage à partir du requêteur, dans la section centrale de la fenêtre : seules les diffusions correspondant au filtre sont affichées dans le dossier.
 
-   ![](assets/filter-view.png)
+   ![Conditions de filtrage de l&#39;onglet Restriction définissant la vue comme nom interne commençant par US](assets/filter-view.png)
 
    >[!NOTE]
    >
-   >Découvrez comment concevoir des requêtes dans [cette page](create-filters.md#advanced-filters)
+   >Découvrez comment concevoir des requêtes dans [Filtres avancés](create-filters.md#advanced-filters)
 
 
 >[!CAUTION]
@@ -132,7 +132,7 @@ Parcourez l&#39;onglet **Sous-dossiers** des propriétés du dossier pour organi
 
 Vous pouvez déplacer les dossiers avec les flèches à droite ou sélectionner l&#39;option **[!UICONTROL Trier les sous-dossiers par ordre alphabétique]** pour les trier automatiquement.
 
-![](assets/sort-folders.png)
+![Onglet Sous-dossiers des propriétés du dossier avec la flèche Déplacer vers le bas et l&#39;option de tri alphabétique](assets/sort-folders.png)
 
 
 ## Filtrer les données dans un dossier{#filter-data-in-a-folder}
@@ -141,9 +141,9 @@ Pour filtrer les données stockées dans un dossier, accédez aux propriétés d
 
 Par exemple, le dossier ci-dessous contiendra uniquement des contacts avec une adresse e-mail et dont l&#39;origine n&#39;est pas marquée comme « Externe » ou est vide.
 
-![](assets/add-a-filter-to-a-folder.png)
+![L&#39;onglet Restriction des propriétés du dossier Diffusions américaines, filtré sur le nom interne commence par US](assets/add-a-filter-to-a-folder.png)
 
 
 ## Limiter l&#39;accès à un dossier{#restrict-access-to-a-folder}
 
-Utilisez les autorisations sur les dossiers pour organiser et contrôler l’accès aux données de Campaign. Pour en savoir plus sur les autorisations de dossier, consultez [cette section](../start/folder-permissions.md).
+Utilisez les autorisations sur les dossiers pour organiser et contrôler l’accès aux données de Campaign. En savoir plus sur les autorisations sur les dossiers dans [Accorder et restreindre les autorisations sur les dossiers Campaign](../start/folder-permissions.md).

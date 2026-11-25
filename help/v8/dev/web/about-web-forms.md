@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 98%
+source-wordcount: '637'
+ht-degree: 79%
 ---
 # Prise en main des formulaires web{#about-web-forms}
 
@@ -55,19 +55,19 @@ Les formulaires web sont accessibles via le menu Applications Web de l&#39;ongle
 
 Pour créer un formulaire Web, cliquez sur le bouton **[!UICONTROL Créer]** situé au-dessus de la liste des applications Web.
 
-![](assets/webapp_create_new.png)
+![Liste des applications web sous Campagnes avec le bouton Créer en surbrillance pour démarrer un nouveau formulaire web.](assets/webapp_create_new.png)
 
 Choisissez le modèle de formulaire Web (par défaut **[!UICONTROL newWebForm]**).
 
-![](assets/s_ncs_admin_survey_select_template.png)
+![Boîte de dialogue Nouvelle application web avec le modèle Nouveau formulaire web (newWebForm) sélectionné dans la liste Modèle .](assets/s_ncs_admin_survey_select_template.png)
 
 Vous accédez alors au tableau de bord du formulaire.
 
-![](assets/webapp_empty_dashboard.png)
+![Onglet Tableau de bord d&#39;un nouveau formulaire web affichant son statut, le schéma, le dossier, l&#39;URL publique et le bouton Publier.](assets/webapp_empty_dashboard.png)
 
 L&#39;onglet **[!UICONTROL Edition]** permet d&#39;en créer le contenu.
 
-![](assets/webapp_edit_tab.png)
+![Onglet Modifier d&#39;un formulaire web affichant le diagramme des activités (Début, Page, Test, Stockage, Fin) et la palette de l&#39;activité.](assets/webapp_edit_tab.png)
 
 Pour définir le paramétrage et le contenu du formulaire Web, les étapes sont les suivantes :
 
@@ -104,12 +104,12 @@ La définition du contenu et de la mise en page des écrans du formulaire sont p
 
 Vous pouvez également utiliser les icônes de la barre d’outils ou le bouton droit de la souris pour insérer une zone de saisie.
 
-![](assets/s_ncs_admin_webform_add_selection.png)
+![Menu de la barre d&#39;outils de l&#39;éditeur de page permettant d&#39;ajouter un champ de saisie : zone de liste déroulante, case à cocher, bouton radio, choix multiples, date, grille.](assets/s_ncs_admin_webform_add_selection.png)
 
 Dans ce cas, vous devez d&#39;abord sélectionner le type de champ à ajouter puis le mode de stockage des réponses.
 
-![](assets/s_ncs_admin_webform_select_storage.png)
+![Boîte de dialogue de stockage : choisissez Modifier un destinataire ou une variable, puis choisissez le champ Base de données avec l&#39;expression Modifier.](assets/s_ncs_admin_webform_select_storage.png)
 
 Cliquez sur **[!UICONTROL Ok]** pour valider la sélection.
 
-![](assets/s_ncs_admin_webform_confirm_storage.png)
+![Sélectionner le champ Salutation dans Sélectionner une expression remplit le champ Base de données dans la boîte de dialogue Stockage ; cliquez sur OK.](assets/s_ncs_admin_webform_confirm_storage.png)

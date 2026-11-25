@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 94%
+source-wordcount: '1552'
+ht-degree: 76%
 ---
 # Créer et publier votre modèle pour les messages transactionnels{#template-transactional-messages}
 
@@ -50,16 +50,16 @@ Pour créer un modèle de message, procédez comme suit :
 1. Positionnez-vous au niveau du dossier **[!UICONTROL Message Center > Modèles de messages transactionnels]** dans l&#39;arborescence Adobe Campaign.
 1. Dans la liste des modèles de messages transactionnels, cliquez avec le bouton droit de la souris et sélectionnez **[!UICONTROL Nouveau]** dans le menu contextuel ou cliquez sur le bouton **[!UICONTROL Nouveau]** situé au-dessus de la liste des modèles de messages transactionnels.
 
-   ![](assets/messagecenter_create_model_001.png)
+   ![Nouveau bouton dans la liste Modèles de messages transactionnels, utilisé pour créer un modèle de message](assets/messagecenter_create_model_001.png)
 
 1. Dans la fenêtre de diffusion, sélectionnez le modèle de diffusion propre au canal que vous souhaitez utiliser.
 
-   ![](assets/messagecenter_create_model_002.png)
+   ![Liste des modèles de diffusion avec Android, publipostage direct, e-mail, iOS et modèles de messages transactionnels mobiles](assets/messagecenter_create_model_002.png)
 
 1. Modifiez le libellé si nécessaire.
 1. Sélectionnez le type d&#39;événement correspondant au message que vous souhaitez envoyer. Les types d&#39;événements destinés à être traités par Adobe Campaign doivent être créés au préalable. [En savoir plus](../send/transactional.md#create-event-types)
 
-   ![](assets/messagecenter_create_model_003.png)
+   ![Liste déroulante Type d&#39;événement dans la nouvelle fenêtre de diffusion des messages transactionnels, répertoriant les types d&#39;événements d&#39;achat et de commande](assets/messagecenter_create_model_003.png)
 
    >[!CAUTION]
    >
@@ -80,7 +80,7 @@ La définition du contenu du message transactionnel est la même que pour toutes
 
 Lorsque vous avez défini le contenu de votre message, vous pouvez intégrer les informations sur l’événement dans le corps du message et les personnaliser. Les informations sur l’événement sont insérées dans le corps du texte à l’aide de balises de personnalisation.
 
-![](assets/messagecenter_create_content.png)
+![Éditeur de contenu HTML avec le menu Message ouvert pour insérer des champs de personnalisation dans un message transactionnel](assets/messagecenter_create_content.png)
 
 * Tous les champs de personnalisation proviennent de la payload.
 * Il est possible de référencer un ou plusieurs blocs de personnalisation dans un message transactionnel. <!--The block content will be added to the delivery content during the publication to the execution instance.-->
@@ -91,11 +91,11 @@ Pour insérer des balises de personnalisation dans le corps d&#39;un message ema
 1. Rédigez le corps du message.
 1. Dans le corps du texte, insérez la balise à l&#39;aide des menus **[!UICONTROL Evénement temps réel>XML de l&#39;événement]**.
 
-   ![](assets/messagecenter_create_custo_1.png)
+   ![Menu d’événements en temps réel avec XML d’événement sélectionné pour insérer une balise de personnalisation d’événement dans le contenu HTML](assets/messagecenter_create_custo_1.png)
 
 1. Renseignez la balise en utilisant la syntaxe suivante : **nom de l’élément**.@**nom de l’attribut** comme illustré ci-dessous.
 
-   ![](assets/messagecenter_create_custo_2.png)
+   ![Balises de personnalisation d&#39;événement dans le contenu HTML à l&#39;aide du nom d&#39;élément et de la syntaxe d&#39;attribut, une balise soulignée](assets/messagecenter_create_custo_2.png)
 
 ## Test du modèle de message transactionnel {#test-message-template}
 
@@ -105,23 +105,23 @@ Une adresse de contrôle vous permet d&#39;afficher une prévisualisation de vot
 
 1. Dans le modèle de message transactionnel, cliquez sur l&#39;onglet **[!UICONTROL Adresses de contrôle]**, puis sur le bouton **[!UICONTROL Ajouter]**.
 
-   ![](assets/messagecenter_create_seed_1.png)
+   ![Onglet Adresses de contrôle du modèle avec le bouton Ajouter en surbrillance](assets/messagecenter_create_seed_1.png)
 
 1. Attribuez-lui un libellé afin de faciliter la sélection ultérieurement, puis saisissez l&#39;adresse de contrôle (e-mail ou téléphone portable selon le canal de communication).
 
 1. Saisissez l’identifiant externe : ce champ facultatif vous permet de saisir une clé métier (ID unique, nom + adresse e-mail, etc.) commune à toutes les applications de votre site web, utilisée pour identifier vos profils. Si ce champ est également présent dans la base de données marketing Adobe Campaign, vous pouvez ensuite réconcilier un événement avec un profil dans la base de données.
 
-   ![](assets/messagecenter_create_seed_2.png)
+   ![Boîte de dialogue Adresse de contrôle avec champs Libellé, E-mail et Identifiant externe renseignés](assets/messagecenter_create_seed_2.png)
 
 1. Insérez les données de test. [En savoir plus sur les données de personnalisation dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
 
-   ![](assets/messagecenter_create_custo_3.png)
+   ![Boîte de dialogue d’adresse de contrôle avec des données de test dans la section Contenu, écrite au format XML pour le contexte d’événement](assets/messagecenter_create_custo_3.png)
 
 1. Cliquez sur **[!UICONTROL OK]** pour valider la création de l&#39;adresse de contrôle.
 
 1. Répétez l&#39;opération pour créer le nombre d&#39;adresses voulu.
 
-   ![](assets/messagecenter_create_seed_6.png)
+   ![Onglet Adresses de contrôle répertoriant trois adresses de contrôle créées pour le modèle de diffusion Achat](assets/messagecenter_create_seed_6.png)
 
 Une fois les adresses créées, vous pouvez accéder à la prévisualisation et à la personnalisation.
 
@@ -150,11 +150,11 @@ Lorsque vous avez créé une ou plusieurs adresses de contrôle, ainsi que le co
 
 1. Dans le modèle de message, cliquez sur l&#39;onglet **[!UICONTROL Aperçu]**, puis sélectionnez **[!UICONTROL Une adresse de contrôle]** dans la liste déroulante.
 
-   ![](assets/messagecenter_preview_1.png)
+   ![Onglet Aperçu avec le menu Tester la personnalisation ouvert et Une adresse de contrôle sélectionnée](assets/messagecenter_preview_1.png)
 
 1. Sélectionnez l&#39;adresse de contrôle préalablement créée afin d&#39;afficher le message personnalisé.
 
-   ![](assets/messagecenter_create_seed_7.png)
+   ![Boîte de dialogue de sélection des adresses de contrôle et aperçu affichant le contenu du message personnalisé](assets/messagecenter_create_seed_7.png)
 
 ### Envoyer un BAT {#send-proof}
 
@@ -162,7 +162,7 @@ Vous pouvez tester la diffusion du message en envoyant un BAT vers une adresse d
 
 L&#39;envoi d&#39;un BAT engage le même processus que pour toute diffusion.
 
-Pour en savoir plus sur les BAT, consultez [cette section](../send/preview-and-proof.md#proofs-send).
+En savoir plus sur les BAT dans [Envoyer un BAT](../send/preview-and-proof.md#proofs-send).
 
 Toutefois, pour envoyer un BAT de message transactionnel, il vous faut exécuter les opérations suivantes :
 
@@ -175,15 +175,15 @@ Pour effectuer l&#39;envoi :
 1. Analysez la diffusion.
 1. Corrigez les erreurs et validez la diffusion.
 
-   ![](assets/messagecenter_send_proof_001.png)
+   ![Envoyez une boîte de dialogue de BAT affichant la préparation de la diffusion terminée avec les messages à envoyer et le bouton Confirmer la diffusion](assets/messagecenter_send_proof_001.png)
 
 1. Vérifiez que le message est bien parvenu à l&#39;adresse de contrôle et que son contenu est conforme à ce que vous aviez paramétré.
 
-   ![](assets/messagecenter_send_proof_002.png)
+   ![E-mail de BAT reçu avec les valeurs de personnalisation des données d&#39;adresse de contrôle soulignées](assets/messagecenter_send_proof_002.png)
 
-Les BAT sont accessibles au niveau de chaque modèle, depuis l&#39;onglet **[!UICONTROL Suivi]**.
+Les BAT sont accessibles au niveau de chaque modèle, depuis l&#39;onglet **[!UICONTROL Suivi.]**
 
-![](assets/messagecenter_send_proof_003.png)
+![Onglet Audit du modèle répertoriant les BAT envoyés, avec leurs messages à envoyer, traités et le nombre de succès](assets/messagecenter_send_proof_003.png)
 
 #### Transition à partir de [!DNL Campaign Classic] v7 {#transition-from-v7}
 
@@ -193,7 +193,7 @@ Cependant, lors de la création d’un modèle de message transactionnel, le rou
 
 Par conséquent, pour envoyer un BAT pour votre modèle de message transactionnel, vous devez modifier le routage de la diffusion e-mail interne vers le **compte de routage en midsourcing**.
 
-![](assets/messagecenter_send_proof_004.png)
+![Onglet Général des propriétés de la diffusion avec le champ Routage et le compte de mid-sourcing Routage des e-mails sélectionné](assets/messagecenter_send_proof_004.png)
 
 Une fois les BAT envoyés, vous devez redéfinir le routage sur la diffusion e-mail interne avant de publier le modèle de message transactionnel.
 
@@ -217,11 +217,11 @@ Publication lets you automatically create two message templates on the execution
 1. Sélectionnez le modèle que vous souhaitez publier<!--on your execution instances-->.
 1. Cliquez sur **[!UICONTROL Publier]**.
 
-   ![](assets/messagecenter_publish_template.png)
+   ![Publication de la boîte de dialogue de modèle avec Processus terminé et journal de la publication, après avoir cliqué sur Publier](assets/messagecenter_publish_template.png)
 
 Lorsque la publication est terminée, les deux modèles de messages destinés à être appliqués aux types d&#39;événements temps réel et par lots sont créés dans le dossier **[!UICONTROL Administration > Exploitation > Exécution Message Center > Défaut > Modèles de messages transactionnels]**.
 
-![](assets/messagecenter_deployed_model.png)
+![Modèle publié dans la liste et ses deux modèles déployés dans le dossier Exécution Message Center](assets/messagecenter_deployed_model.png)
 
 Une fois qu’un modèle est publié, si l’événement correspondant est déclenché, Adobe Campaign<!--execution instance-->reçoit l’événement, le lie au modèle transactionnel et envoie le message transactionnel correspondant à chaque destinataire.
 
@@ -250,7 +250,7 @@ Pour dépublier un modèle de message transactionnel, procédez comme décrit ci
 1. Cliquez sur **[!UICONTROL Dépublier]**.
 1. Cliquez sur **[!UICONTROL Démarrer]**.
 
-![](assets/message-center-unpublish.png)
+![Dépublication de la boîte de dialogue de modèle à l&#39;aide du bouton Démarrer, ouverte à partir du bouton Dépublier d&#39;un modèle publié](assets/message-center-unpublish.png)
 
 Le statut du modèle de message transactionnel passe de **[!UICONTROL Publié]** à **[!UICONTROL En édition]**.
 

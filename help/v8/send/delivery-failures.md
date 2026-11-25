@@ -49,9 +49,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '3530'
+source-wordcount: '3532'
 ht-degree: 73%
 ---
 # Présentation des diffusions en échec {#delivery-failures}
@@ -714,7 +714,7 @@ Avant qu’un nouveau type d’erreur ne soit qualifié, la raison de l’échec
 
 Exemple de message généré :
 
-```
+```text
 SR Generic DELIVRD 000|#MESSAGE#
 ```
 
@@ -750,7 +750,7 @@ Les logs de diffusion sont essentiels pour savoir pourquoi une diffusion a écho
 
 Les messages des destinataires échouent avec une erreur &quot;Inatteignable&quot; indiquant :
 
-```
+```text
 Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
 ```
 
@@ -758,13 +758,13 @@ Error while compiling script 'content htmlContent' line X: `[table]` is not defi
 
 **Résolution** : passez en revue le workflow et le contenu de la diffusion pour déterminer précisément quelle personnalisation tente d’appeler la table en question. Supprimez ensuite l’appel à cette table dans HTML ou corrigez le mapping sur la diffusion.
 
-En savoir plus sur la personnalisation dans [cette section](personalize.md).
+En savoir plus sur la personnalisation dans [Prise en main de la personnalisation](personalize.md).
 
 ### Erreur de valeurs de personnalisation multiples {#multiple-values-error}
 
 En cas d’échec d’une diffusion, l’erreur suivante peut s’afficher dans les logs de diffusion :
 
-```
+```text
 DLV-XXXX The count of message prepared (123) is greater than the number of messages to send (111). Please contact support.
 ```
 
@@ -776,7 +776,7 @@ DLV-XXXX The count of message prepared (123) is greater than the number of messa
 
 Certaines diffusions peuvent échouer avec une erreur « Inatteignable » indiquant :
 
-```
+```text
 Inbound email bounce (rule 'Auto_replies' has matched this bounce).
 ```
 

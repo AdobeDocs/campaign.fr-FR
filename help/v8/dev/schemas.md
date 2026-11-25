@@ -38,10 +38,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 94%
+source-wordcount: '1383'
+ht-degree: 85%
 ---
 # Utilisation des schémas{#gs-ac-schemas}
 
@@ -69,7 +69,7 @@ Dans Adobe Campaign, les schémas de données permettent de :
 * définir des liens entre les différents objets de l&#39;application ;
 * définir et décrire les champs individuels inclus dans chaque objet.
 
-Pour une meilleure compréhension des tables intégrées de Campaign et de leur interaction, consultez [cette section](datamodel.md).
+Pour une meilleure compréhension des tables intégrées de Campaign et de leur interaction, consultez la section [Prise en main du modèle de données de Campaign](datamodel.md).
 
 >[!CAUTION]
 >
@@ -81,7 +81,7 @@ L&#39;élément racine du schéma est **`<srcschema>`**. Il contient les sous-é
 
 Le premier sous-élément **`<element>`** correspond à la racine de l&#39;entité.
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">  
     <attribute name="lastName"/>
@@ -97,7 +97,7 @@ Le premier sous-élément **`<element>`** correspond à la racine de l&#39;entit
 >
 >L&#39;élément racine de l&#39;entité porte le nom du schéma.
 
-![](assets/schema_and_entity.png)
+![Un schéma définit la structure XML des données du destinataire ; une entité est un enregistrement spécifique qui la suit.](assets/schema_and_entity.png)
 
 Les balises **`<element>`** définissent les noms des éléments d&#39;entité. Les balises **`<attribute>`** du schéma définissent les noms des attributs dans les balises **`<element>`** auxquelles elles ont été liées.
 
@@ -137,7 +137,7 @@ Pour ajouter un tout nouveau type de données qui n’existe pas par défaut dan
 
 Pour plus d’informations, consultez la section [Créer un nouveau schéma](create-schema.md).
 
-![](assets/schemaextension_1.png)
+![Assistant de création de schéma de données, étape de type Schéma, avec les options Nouvelle table et Extension d&#39;un schéma mises en surbrillance.](assets/schemaextension_1.png)
 
 
 Une fois que vous avez créé ou étendu un schéma, il est recommandé de définir les éléments de son contenu XML dans l&#39;ordre présenté ci-dessous.
@@ -221,13 +221,13 @@ Dans cet exemple, au lieu de laisser l’attribut **@autopk** ou **@autouuid** c
 >
 >Lors de la création ou de l’extension d’un schéma, vous devez conserver la valeur de la séquence de la clé primaire (@pkSequence) pour l’ensemble du schéma.
 
-En savoir plus sur les clés dans [cette section](database-mapping.md).
+En savoir plus sur les clés dans [Mapping de la base de données Campaign](database-mapping.md).
 
 ## Attributs (champs) {#attributes--fields-}
 
-Les attributs vous permettent de définir les champs qui constituent votre objet de données. Vous pouvez utiliser le bouton **[!UICONTROL Insérer]** dans la barre d’outils d’édition du schéma pour déposer les modèles d’attribut vides dans le XML où se trouve votre curseur. En savoir plus dans [cette section](create-schema.md).
+Les attributs vous permettent de définir les champs qui constituent votre objet de données. Vous pouvez utiliser le bouton **[!UICONTROL Insérer]** dans la barre d’outils d’édition du schéma pour déposer les modèles d’attribut vides dans le XML où se trouve votre curseur. En savoir plus dans [Créer un schéma dans Campaign](create-schema.md).
 
-![](assets/schemaextension_2.png)
+![L&#39;étape Modifier le schéma avec le menu Insertion ouvert permet d&#39;ajouter un attribut tel qu&#39;une chaîne, une valeur booléenne, un entier ou une date.](assets/schemaextension_2.png)
 
 La liste complète des attributs est disponible dans la section consacrée aux éléments `<attribute>` de la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=fr#content-model){target="_blank"}. Voici quelques-uns des attributs les plus utilisés : **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
 
@@ -311,9 +311,9 @@ Procédez comme dans l&#39;exemple ci-dessous pour inclure les champs relatifs �
 
 Une fois vos modifications apportées et enregistrées, toutes les modifications susceptibles d&#39;avoir un impact sur la structure SQL doivent être appliquées à la base de données. Pour ce faire, utilisez l&#39;assistant de mise à jour de la base de données.
 
-![](assets/schemaextension_3.png)
+![Outils, menu Avancé dans la console avec Mettre à jour la structure de la base de données sélectionné pour appliquer les modifications du schéma.](assets/schemaextension_3.png)
 
-Pour plus d’informations, consultez [cette section](update-database-structure.md).
+Pour plus d&#39;informations, consultez la section [Mettre à jour la structure de la base de données](update-database-structure.md).
 
 >[!NOTE]
 >

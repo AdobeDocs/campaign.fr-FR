@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f22ef7562e86372db4c5c05c04acd986d1c557fb
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 89%
+source-wordcount: '675'
+ht-degree: 85%
 ---
 # Commencer avec les workflows{#gs-with-workflows}
 
@@ -126,7 +126,7 @@ Pour en savoir plus sur les **propriétés du workflow**, consultez [cette page]
 
 Dans l’onglet **[!UICONTROL Exécution]** de la fenêtre des **[!UICONTROL Propriétés]** de votre workflow, vous pouvez choisir de lier votre workflow à différents entrepôts et optimiser la gestion de votre charge de travail. Pour plus d&#39;informations sur les **Entrepôts**, consultez la [documentation de Snowflake](https://docs.snowflake.com/fr/user-guide/warehouses-overview.html){target="_blank"}.
 
-![](assets/warehouse.png)
+![Onglet Exécution des propriétés de workflow avec la liste déroulante Entrepôt ouverte : Par défaut, Campagne, Importation/Exportation et Rafale de campagne](assets/warehouse.png)
 
 En fonction de l&#39;objectif de votre workflow, vous pouvez choisir parmi les trois entrepôts suivants dans le menu déroulant **[!UICONTROL Entrepôt]** :
 
@@ -151,11 +151,11 @@ Découvrez comment créer une campagne récurrente sur [cette page](https://expe
 
 Utilisez la messagerie transactionnelle de Campaign pour automatiser les messages générés à partir d&#39;événements déclenchés depuis des systèmes d&#39;information. Ces messages transactionnels peuvent notamment être une facture, une confirmation de commande, une confirmation d&#39;expédition, une modification de mot de passe, une notification d&#39;indisponibilité du produit, un relevé de compte ou la création d&#39;un compte sur un site web. Ces messages peuvent être envoyés individuellement ou par lots via e-mail, SMS ou notifications push.
 
-En savoir plus sur les fonctionnalités des messages transactionnels dans [cette section](../send/transactional.md).
+En savoir plus sur les fonctionnalités des messages transactionnels dans [Messages transactionnels Campaign](../send/transactional.md).
 
 Connectez Adobe Campaign et Adobe Analytics pour récupérer les actions utilisateur et envoyer des messages personnalisés en temps quasi réel.
 
-Découvrez comment intégrer Campaign à d’autres solutions dans [cette section](../start/connect.md).
+Découvrez comment intégrer Campaign à d&#39;autres solutions dans [Connexion à Campaign v8](../start/connect.md)
 
 
 ## Cas d’utilisation complets de workflow{#end-to-end-uc}

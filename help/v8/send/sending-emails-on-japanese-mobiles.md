@@ -23,20 +23,20 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 97%
+source-wordcount: '893'
+ht-degree: 80%
 ---
 # Envoyer des e-mails sur des mobiles japonais {#sending-emails-on-japanese-mobiles}
 
 ## Formats d&#39;email pour les mobiles japonais {#email-formats-for-japanese-mobiles}
 
-Adobe Campaign gère trois formats japonais spécifiques pour les e-mails sur les appareils mobiles : **Deco-mail** (appareils mobiles DoCoMo), **Decore Mail** (appareils mobiles Softbank) et **Decoration Mail** (appareils mobiles KDDI AU). Ces formats imposent des contraintes particulières d’encodage, de structure et de taille. Pour en savoir plus sur les limites et pour obtenir des recommandations, consultez [cette section](#limitations-and-recommendations).
+Adobe Campaign gère trois formats japonais spécifiques pour les e-mails sur les appareils mobiles : **Deco-mail** (appareils mobiles DoCoMo), **Decore Mail** (appareils mobiles Softbank) et **Decoration Mail** (appareils mobiles KDDI AU). Ces formats imposent des contraintes particulières d’encodage, de structure et de taille. En savoir plus sur les limites et les recommandations dans [Limites et recommandations](#limitations-and-recommendations).
 
 Pour qu&#39;un destinataire puisse recevoir correctement des messages dans l&#39;un de ces formats, il est recommandé de sélectionner **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** ou **[!UICONTROL Decoration Mail (KDDI AU)]** dans le profil correspondant :
 
-![](assets/deco-mail_03.png)
+![Onglet Général du destinataire avec la liste Format d&#39;email ouverte : Inconnu, Texte, HTML, Deco-mail, Decoration Mail, Decore Mail](assets/deco-mail_03.png)
 
 Cependant, si vous laissez l&#39;option **[!UICONTROL Format des emails]** définie sur **[!UICONTROL Inconnu]**, **[!UICONTROL HTML]** ou **[!UICONTROL Texte]**, Adobe Campaign détectera automatiquement, lors de l&#39;envoi de l&#39;email, le format japonais à utiliser pour que le message s&#39;affiche correctement.
 
@@ -73,7 +73,7 @@ Dans l&#39;onglet **[!UICONTROL Aperçu]** de la fenêtre d&#39;édition du cont
 * vérifier que le nombre d&#39;images dans le message ne dépasse pas la limite imposée par le format (20 images).
 * vérifier la taille totale du message (inférieure à 100 Ko).
 
-  ![](assets/deco-mail_06.png)
+  ![Prévisualisez la fenêtre de résultats avec l&#39;onglet de diagnostic Deco-mail répertoriant les avertissements pour les balises non prises en charge et la limite de taille de 100 ko](assets/deco-mail_06.png)
 
 ### Exécution de la règle de typologie {#running-typology-rule}
 
@@ -91,14 +91,14 @@ Vous pouvez envoyer des BAT pour tester votre diffusion. Lors de l’envoi d’u
 
 Par exemple, vous pouvez remplacer l&#39;adresse d&#39;un profil par test@softbank.ne.jp si le format des emails de ce profil a été défini au préalable sur **[!UICONTROL Decore Mail (Softbank)]**.
 
-![](assets/deco-mail_05.png)
+![Envoyez une boîte de dialogue de BAT dans Substitution du mode adresse avec une adresse de test softbank.ne.jp mappée à un profil](assets/deco-mail_05.png)
 
 ## Envoyer des messages {#sending-messages}
 
 Pour envoyer une diffusion à des destinataires dont le format des emails est japonais, vous pouvez procéder de deux manières :
 
-* créer deux diffusions, une propre aux destinataires japonais et une pour les autres destinataires (voir [cette section](#designing-a-specific-delivery-for-japanese-formats)) ;
-* créer une seule diffusion et laisser Adobe Campaign détecter automatiquement le format à utiliser (voir [cette section](#designing-a-delivery-for-all-formats)).
+* Créez deux diffusions : une uniquement pour les destinataires japonais et une autre pour les autres destinataires. Consultez la section [Concevoir une diffusion spécifique pour les formats japonais](#designing-a-specific-delivery-for-japanese-formats).
+* Créez une seule diffusion et Adobe Campaign détectera automatiquement le format à utiliser. Voir [Concevoir une diffusion pour tous les formats](#designing-a-delivery-for-all-formats).
 
 ### Conception dʼune diffusion spécifique pour les formats japonais {#designing-a-specific-delivery-for-japanese-formats}
 
@@ -106,9 +106,9 @@ Vous pouvez créer un workflow comprenant deux diffusions : une destinée à ê
 
 Pour cela, utilisez une activité **[!UICONTROL Partage]** dans votre workflow et définissez les formats d&#39;email japonais (Deco-mail, Decoration Mail et Decore Mail) comme conditions de filtrage.
 
-![](assets/deco-mail_08.png)
+![Boîte de dialogue de filtrage avec trois conditions de format d&#39;email combinées par Or : Deco-mail, Decoration Mail et Decore Mail](assets/deco-mail_08.png)
 
-![](assets/deco-mail_07.png)
+![Workflow : requête, déduplication, puis partage par format d&#39;email vers une diffusion mobile japonaise et une diffusion standard](assets/deco-mail_07.png)
 
 ### Conception dʼune diffusion pour tous les formats {#designing-a-delivery-for-all-formats}
 
@@ -118,4 +118,4 @@ Le contenu du message s&#39;affichera correctement pour les utilisateurs sur les
 
 >[!IMPORTANT]
 >
->Veillez toutefois à respecter les spécificités liées à chaque format d&#39;email japonais (Deco-mail, Decoration Mail et Decore Mail). Pour plus d&#39;informations sur les limites, consultez [cette section](#limitations-and-recommendations).
+>Veillez toutefois à respecter les spécificités liées à chaque format d&#39;email japonais (Deco-mail, Decoration Mail et Decore Mail). Pour plus d&#39;informations sur les limitations, consultez [Limitations et recommandations](#limitations-and-recommendations).

@@ -25,9 +25,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '227'
 ht-degree: 78%
 ---
 # Mécanisme des métadonnées {#metadata-mechanism}
@@ -49,7 +49,7 @@ La réponse renvoie les métadonnées principales de la ressource (tous les autr
     Si &quot;type&quot; est renseigné avec la valeur &quot;link&quot; ou &quot;collection&quot;, la valeur resTarget est le nom de la ressource ciblée par le lien.
     Si « type » est complété avec la valeur « enumeration », un champ « values » est ajouté et chaque valeur d&#39;énumération est détaillée dans le nœud **values**.
 
-* Le nœud **Filters** renvoie l’URL permettant de récupérer les filtres associés. Pour plus d&#39;informations sur les filtres, consultez [cette section](sorting.md#filtering).
+* Le nœud **Filters** renvoie l’URL permettant de récupérer les filtres associés. Pour plus d&#39;informations sur les filtres, consultez la section [Filtrage](sorting.md#filtering).
 
 <!-- créer une section au même niveau sur les liens -->
 <!--
@@ -64,7 +64,7 @@ si on prend l'exemple de l'org unit, on aura un bon exemple lien
 
 Exécutez une requête GET sur la ressource.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/resourceType/profile \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -74,7 +74,7 @@ Exécutez une requête GET sur la ressource.
 
 Elle renvoie la description complète de la ressource de profil.
 
-```
+```json
 {
 ...
 "content": {

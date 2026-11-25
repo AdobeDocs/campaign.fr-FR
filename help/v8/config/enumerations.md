@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f22ef7562e86372db4c5c05c04acd986d1c557fb
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 85%
+source-wordcount: '877'
+ht-degree: 83%
 ---
 # Utiliser les énumérations {#enumerations}
 
@@ -42,7 +42,7 @@ Une énumération (également appelée liste détaillée) est une liste prédéf
 
 Une fois définies, les valeurs sont affichées dans une liste déroulante. Une valeur peut être sélectionnée directement ou saisie à l’aide d’une entrée prédictive, qui suggère et complète les entrées correspondantes. Certains champs contiennent des énumérations prédéfinies. Des énumérations supplémentaires peuvent être créées si nécessaire.
 
-![](assets/enum_values.png)
+![Formulaire du destinataire avec le menu déroulant Langue ouvert, répertoriant les valeurs d&#39;énumération Anglais, Français, Italien, Russe et Espagnol](assets/enum_values.png)
 
 
 ## Types d’énumération {#types-of-enum}

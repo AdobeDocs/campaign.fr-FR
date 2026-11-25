@@ -35,10 +35,10 @@ topic_v2:
     internal-label: Email marketing
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 88%
+source-wordcount: '350'
+ht-degree: 84%
 ---
 # Connexion de votre CRM à Campaign {#gs-crm}
 
@@ -69,8 +69,8 @@ Les CRM et versions pris en charge sont détaillés dans la matrice de compatibi
 
 ## Étapes dʼimplémentation {#crm-implementation-steps}
 
-Découvrez la procédure détaillée pour connecter Campaign et Microsoft Dynamics dans [cette page](ac-ms-dyn.md).
+Découvrez la procédure détaillée pour connecter Campaign et Microsoft Dynamics dans [Utiliser Campaign et Microsoft Dynamics](ac-ms-dyn.md).
 
-Découvrez la procédure détaillée pour connecter Campaign et Salesforce.com dans [cette page](ac-sfdc.md).
+Découvrez la procédure détaillée pour connecter Campaign et Salesforce.com dans [Utiliser Campaign et SFDC](ac-sfdc.md).
 
-La synchronisation des données entre Adobe Campaign et le CRM est réalisée à travers une activité de workflow dédiée. Créez vos workflows pour automatiser la synchronisation entre Campaign et votre CRM. Vous pouvez créer un workflow qui importe les contacts depuis Microsoft Dynamics, les synchronise avec les données Adobe Campaign existantes, déduplique les contacts et met à jour la base de données Adobe Campaign. En savoir plus à ce propos sur [cette page](crm-data-sync.md).
+La synchronisation des données entre Adobe Campaign et le CRM est réalisée à travers une activité de workflow dédiée. Créez vos workflows pour automatiser la synchronisation entre Campaign et votre CRM. Vous pouvez créer un workflow qui importe les contacts depuis Microsoft Dynamics, les synchronise avec les données Adobe Campaign existantes, déduplique les contacts et met à jour la base de données Adobe Campaign. En savoir plus sur la [synchronisation des données des connecteurs CRM](crm-data-sync.md).

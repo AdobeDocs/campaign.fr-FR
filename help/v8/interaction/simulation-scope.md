@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 100%
+source-wordcount: '274'
+ht-degree: 87%
 ---
 # Périmètre de la simulation{#simulation-scope}
 
@@ -50,7 +50,7 @@ Vous devez définir obligatoirement :
 
   La personne destinataire recevra autant de propositions que le nombre fixé. Par exemple, si le chiffre est 5, chaque personne ciblée recevra au plus 5 propositions d’offre.
 
-  ![](assets/offer_simulation_009.png)
+  ![Onglet Périmètre de la simulation avec la date de contact, le nombre de propositions et le dossier Requête cible des grands voyageurs](assets/offer_simulation_009.png)
 
 Pour affiner les offres à prendre en compte pour la simulation, vous pouvez ajouter un ou plusieurs thèmes (définis préalablement au niveau des catégories).
 
@@ -66,4 +66,4 @@ Vous pouvez enrichir l&#39;analyse de la simulation en ajoutant des axes de repo
 
 Pour ce faire, cliquez sur le bouton **[!UICONTROL Ajouter]** et sélectionnez les champs appropriés. Les axes seront utilisés pour le calcul de la simulation et apparaîtront dans le rapport d’analyse. Pour plus d&#39;informations, consultez la section [Suivi des simulations](simulation-tracking.md).
 
-![](assets/offer_simulation_011.png)
+![Onglet Calculs avec la boîte de dialogue Sélectionner une expression sélectionnant Date de fin pour ajouter un axe de reporting des offres](assets/offer_simulation_011.png)

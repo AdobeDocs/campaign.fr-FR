@@ -25,10 +25,10 @@ subfeature_v2:
     internal-label: Landing pages
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
     internal-label: Email design
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 95%
+source-wordcount: '665'
+ht-degree: 77%
 ---
 # Interface de l&#39;éditeur de contenu{#content-editor-interface}
 
@@ -38,7 +38,7 @@ ht-degree: 95%
 
 La fenêtre d’édition du DCE est divisée en trois sections différentes. Elles vous permettent d’afficher, de modifier et de vérifier l’état du contenu.
 
-![](assets/dce_decoupe_window_nb.png)
+![Fenêtre d&#39;édition du DCE avec trois sections numérotées : message de statut, zone de contenu et panneau des options de droite](assets/dce_decoupe_window_nb.png)
 
 1. La section **supérieure** est une zone d’affichage des messages destinés à l’utilisateur ou à l’utilisatrice. Ces messages indiquent l&#39;état de l&#39;application Web ou de la diffusion en cours de création, ainsi que les avertissements et les messages d&#39;erreur relatifs au contenu. Pour plus d&#39;informations, consultez la section [États du contenu HTML](content-editing-best-practices.md#html-content-statuses).
 1. La section **de gauche** de la fenêtre est la zone de modification du contenu. Dans cette zone, l’utilisateur ou l’utilisatrice peut interagir directement avec le contenu grâce à la barre d’outils pop-up : insérer un lien sur une image, modifier la police, supprimer un champ, etc. Pour en savoir plus à ce sujet, consultez la section [Modification des formulaires](editing-content.md#editing-forms).
@@ -48,17 +48,17 @@ La fenêtre d’édition du DCE est divisée en trois sections différentes. El
 
 La section supérieure droite de l&#39;éditeur permet d&#39;accéder à des options globales qui permettent d&#39;agir sur le contenu en cours de création.
 
-![](assets/dce_global_options.png)
+![En haut à droite de l&#39;éditeur avec quatre icônes d&#39;options globales au-dessus du panneau des options de bloc](assets/dce_global_options.png)
 
 Elle contient quatre icônes :
 
-![](assets/dce_icons_sidebar.png)
+![Icônes d&#39;options globales : afficher/masquer les blocs, choisir un autre contenu, enregistrer comme modèle et propriétés de la page](assets/dce_icons_sidebar.png)
 
 * L&#39;icône **Afficher / Masquer les blocs** permet d&#39;afficher des cadres bleus autour des blocs de contenu (correspond à la balise HTML `<div>`).
 
 * L&#39;icône **Choisir un autre contenu** permet à l&#39;utilisateur de charger un nouveau contenu à partir d&#39;un modèle (existant ou modèle livré d&#39;usine).
 
-  ![](assets/dce_popup_templatechoice.png)
+  ![Choisissez une boîte de dialogue de contenu avec À partir d&#39;un fichier et les modèles disponibles tels que Contact et Clickthrough](assets/dce_popup_templatechoice.png)
 
   >[!CAUTION]
   >
@@ -66,15 +66,15 @@ Elle contient quatre icônes :
 
 * L’icône **Enregistrer en tant que modèle** vous permet d’enregistrer le contenu actuel en tant que modèle. Vous devez saisir le libellé et le nom interne du modèle. Les modèles sont stockés dans le nœud : **[!UICONTROL Ressources > Modèles > Modèles de contenu]**.
 
-  ![](assets/dce_popup_savetemplate.png)
+  ![Boîte de dialogue Enregistrer en tant que modèle avec les champs Libellé, Nom interne et Dossier](assets/dce_popup_savetemplate.png)
 
   Une fois enregistré, le modèle est disponible et peut être sélectionné lors de la création d&#39;un nouveau contenu.
 
-  ![](assets/dce_create_fromtemplate.png)
+  ![Onglet Contenu HTML de diffusion par e-mail avec le modèle Music &amp; Arts enregistré disponible parmi les modèles de contenu](assets/dce_create_fromtemplate.png)
 
 * L&#39;icône **Propriétés de la page** permet de saisir les informations contenues dans la partie supérieure de la page HTML.
 
-  ![](assets/dce_popup_headerhtml.png)
+  ![Propriétés de la boîte de dialogue de page avec les champs Titre, Mots-clés et Description pour l’en-tête de page HTML](assets/dce_popup_headerhtml.png)
 
   >[!NOTE]
   >
@@ -86,7 +86,7 @@ Elle contient quatre icônes :
 
 La section de droite de l’éditeur regroupe les principales options qui permettent d’agir sur le contenu. Pour afficher ces options, vous devez sélectionner un bloc : la nature de ces options dépend du bloc sélectionné.
 
-![](assets/dce_right_section.png)
+![Section droite de l&#39;éditeur avec les options de bloc : condition de visibilité, bordures et couleur d&#39;arrière-plan](assets/dce_right_section.png)
 
 Vous pouvez ainsi :
 

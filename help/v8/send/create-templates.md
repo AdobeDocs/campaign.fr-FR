@@ -39,10 +39,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 94%
+source-wordcount: '1190'
+ht-degree: 84%
 ---
 # Utiliser des modèles de diffusion {#work-with-delivery-template}
 
@@ -59,7 +59,7 @@ Un modèle peut inclure des paramètres de configuration complets ou partiels, t
 * Contenu, logo de la société ou signature
 * Autres propriétés de diffusion, telles que la validité des ressources et les paramètres de reprise ou de mise en quarantaine.
 
-![](assets/do-not-localize/how-to-video.png) [Découvrez cette fonctionnalité en vidéo](#delivery-template-video)
+![Icône de lecture pour le lien vidéo](assets/do-not-localize/how-to-video.png) [Découvrez cette fonctionnalité en vidéo](#delivery-template-video)
 
 Les modèles de diffusion sont stockés dans le dossier **[!UICONTROL Ressources > Modèles > Modèles de diffusion]** de l’explorateur. Dans Adobe Campaign, vous pouvez utiliser deux types de modèles :
 
@@ -88,15 +88,15 @@ Pour dupliquer un modèle de diffusion, procédez comme suit :
 1. Sélectionnez un modèle de diffusion intégré. Les modèles intégrés sont affichés en gras dans la liste.
 1. Cliquez avec le bouton droit et sélectionnez **[!UICONTROL Dupliquer]**.
 
-   ![](assets/duplicate-built-in-template.png)
+   ![La liste des modèles de diffusion avec le menu contextuel ouvert et l&#39;option Dupliquer sélectionnée sur un modèle intégré](assets/duplicate-built-in-template.png)
 
 1. Définissez les paramètres du nouveau modèle et enregistrez-le.
 
-   ![](assets/delivery-template-new.png)
+   ![Propriétés d&#39;un modèle d&#39;e-mail dupliqué avec son libellé, son adresse d&#39;expédition, son objet et son contenu HTML](assets/delivery-template-new.png)
 
 Le modèle est alors ajouté dans la liste des modèles de diffusion. Vous pouvez désormais le sélectionner lors de la création d’une diffusion.
 
-![](assets/select-the-new-template.png)
+![Le modèle de diffusion répertorie dans une liste déroulante les modèles intégrés et le nouveau modèle personnalisé de diffusion Annonce par e-mail &#x200B;](assets/select-the-new-template.png)
 
 ### Conversion d’une diffusion existante en modèle {#convert-an-existing-delivery}
 
@@ -108,11 +108,11 @@ Pour convertir une diffusion en modèle, procédez comme suit :
 
 1. Cliquez avec le bouton droit et choisissez **[!UICONTROL Actions > Sauver comme modèle...]**.
 
-   ![](assets/save-as-template.png)
+   ![Menu contextuel de la liste de diffusion avec Actions et Enregistrer comme modèle sélectionnés](assets/save-as-template.png)
 
 1. Modifiez les propriétés de la diffusion et sélectionnez le dossier dans lequel le nouveau modèle doit être enregistré (dans le champ **[!UICONTROL Dossier]**), ainsi que celui où les diffusions créées à partir de ce modèle doivent être créées (dans le champ **[!UICONTROL Dossier d’exécution]**).
 
-   ![](assets/template-select-folders.png)
+   ![Propriétés de diffusion avec les champs Dossier d&#39;exécution, Dossier et Routage pour le nouveau modèle](assets/template-select-folders.png)
 
 ### Création d’un modèle {#create-a-new-template}
 
@@ -140,11 +140,11 @@ Pour configurer un modèle de diffusion à partir de zéro, procédez comme suit
 
 Pour créer une diffusion basée sur un modèle existant, vous devez sélectionner le modèle dans la liste des modèles de diffusion proposés.
 
-![](assets/select-the-new-template.png)
+![Le modèle de diffusion répertorie dans une liste déroulante les modèles intégrés et le nouveau modèle personnalisé de diffusion Annonce par e-mail &#x200B;](assets/select-the-new-template.png)
 
 Si le modèle ne s’affiche pas, cliquez sur le dossier **[!UICONTROL Choisir le lien]** situé à droite du champ permettant de parcourir les dossiers de Campaign.
 
-![](assets/browse-templates.png)
+![Boîte de dialogue de sélection du dossier affichant les modèles de diffusion, ouverte à partir du champ Modèle de diffusion](assets/browse-templates.png)
 
 Sélectionnez le répertoire visé depuis le champ **[!UICONTROL Dossier]** ou cliquez sur l&#39;icône **[!UICONTROL Afficher les fils]** pour afficher le contenu des répertoires situés en sous-arborescence du répertoire courant.
 
@@ -160,7 +160,7 @@ Afin d’exécuter un modèle manuellement, voici la marche à suivre :
 
    Vous pouvez aussi utiliser le menu **[!UICONTROL Fichier > Actions > Exécuter le modèle de diffusion...]**.
 
-   ![](assets/execute-delivery-template.png)
+   ![Liste des modèles de diffusion avec l&#39;option de menu Exécuter le modèle de diffusion sélectionnée](assets/execute-delivery-template.png)
 
 1. Renseignez ensuite les paramètres de la diffusion et cliquez sur **[!UICONTROL Envoyer]**.
 

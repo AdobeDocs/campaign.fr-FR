@@ -29,15 +29,15 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 88%
+source-wordcount: '100'
+ht-degree: 69%
 ---
 # Collecter et mettre à jour des profils avec des formulaires web
 
 Utilisez Campaign pour créer des formulaires web, et collecter et gérer facilement et efficacement les données de profil. Vous pouvez partager ces formulaires sur votre site web, ce qui permet à vos contacts de fournir facilement leurs informations. Les données sont envoyées à Campaign pour créer ou mettre à jour leur profil.
 
-![](assets/web-form-page.png)
+![Activité Page d’un workflow d’application web, affichant le formulaire de newsletter Luma avec un champ d’e-mail et un bouton Envoyer.](assets/web-form-page.png)
 
-Découvrez comment créer des formulaires web dans [cette section](../dev/web/about-web-forms.md).
+Découvrez comment créer des formulaires web dans [Prise en main des formulaires web](../dev/web/about-web-forms.md).

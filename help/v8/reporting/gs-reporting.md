@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 64%
+source-wordcount: '463'
+ht-degree: 53%
 ---
 # Prise en main du reporting{#gs-ac-reports}
 
@@ -51,11 +51,11 @@ Adobe Campaign propose un ensemble d&#39;outils de reporting répertoriés dans
 
   Utilisez les fonctionnalités d’analyse marketing pour analyser et mesurer les données, calculer les statistiques, simplifier et optimiser la création et le calcul de rapports. Grâce à ce module, vous pouvez créer des rapports et des populations cibles, puis les stocker dans des listes à des fins de ciblage ou de segmentation dans Adobe Campaign.
 
-  ![](assets/create-a-report.png)
+  ![Création d&#39;une page de rapport avec les modèles de cube disponibles et le modèle Destinataires sélectionné](assets/create-a-report.png)
 
   Selon la complexité des requêtes, des calculs et des volumes manipulés, les données analysées dans ces rapports peuvent être collectées via une requête et pré-agrégées dans une liste (workflow de type Data Management) ou dans un cube (via l&#39;utilisation de Marketing Analytics). Elles s’affichent sous la forme d’un tableau croisé dynamique ou d’une liste de groupes.
 
-  Pour plus d’informations, consultez [cette section](gs-cubes.md).
+  Pour en savoir plus à ce sujet, consultez la section [Prise en main des rapports d’analyse d’Adobe Campaign](gs-cubes.md).
 
 * **Rapports natifs**
 
@@ -63,9 +63,9 @@ Adobe Campaign propose un ensemble d&#39;outils de reporting répertoriés dans
 
   Utilisez l&#39;onglet **Rapports** pour accéder à ces rapports.
 
-  ![](assets/built-in-reports.png)
+  ![Onglet Rapports affichant la liste des rapports globaux des rapports intégrés, tels que les statistiques de diffusion et les navigateurs](assets/built-in-reports.png)
 
-  Pour plus d’informations, consultez [cette section](built-in-reports.md).
+  Pour en savoir plus à ce sujet, consultez la section [Rapports natifs Adobe Campaign](built-in-reports.md).
 
 * **Analyse descriptive des données**
 
@@ -73,7 +73,7 @@ Adobe Campaign propose un ensemble d&#39;outils de reporting répertoriés dans
 
   Utilisez le menu **[!UICONTROL Outils > Analyse descriptive...]** pour créer un nouveau rapport.
 
-  ![](assets/desc-analysis-report.png)
+  ![Assistant d&#39;analyse descriptive Configuration du tableau avec la boîte de dialogue Définition de variable ouverte à partir de l&#39;option Ajouter](assets/desc-analysis-report.png)
 
   Le rapport d&#39;analyse descriptive d&#39;une campagne est présenté dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=fr){target="_blank"}.
 

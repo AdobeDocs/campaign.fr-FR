@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 88%
+source-wordcount: '1057'
+ht-degree: 78%
 ---
 # Prise en main des messages {#gs-ac-msg}
 
@@ -60,21 +60,21 @@ Pour envoyer des messages, vous devez créer une diffusion. Le mode de création
 
 >[!NOTE]
 >
->Lors de la création d’une diffusion, vous devez sélectionner un modèle. Des modèles par défaut sont disponibles pour chaque canal. Apprenez-en plus sur les modèles de diffusion dans [cette page](../send/create-templates.md).
+>Lors de la création d’une diffusion, vous devez sélectionner un modèle. Des modèles par défaut sont disponibles pour chaque canal. En savoir plus sur les modèles de diffusion dans [Utiliser des modèles de diffusion](../send/create-templates.md).
 
-1. **Messages ponctuels** : vous pouvez envoyer des messages ponctuels à une audience. Découvrez comment envoyer votre premier message dans [cette section](create-message.md).
+1. **Messages ponctuels** : vous pouvez envoyer des messages ponctuels à une audience. Découvrez comment envoyer votre premier message dans [Créez votre première diffusion](create-message.md).
 
-   ![](assets/send-email.png)
+   ![Éditeur de diffusion d&#39;email avec les champs De, À et Objet, le contenu HTML et le bouton Envoyer](assets/send-email.png)
 
-1. **Messages dans une campagne marketing** : vous pouvez envoyer des messages dans le contexte d’une [campagne marketing](campaigns.md), définir un processus de validation, les envoyer et les suivre dans un tableau de bord consolidé. Découvrez comment dans [cette section](../../automation/campaigns/marketing-campaign-deliveries.md).
+1. **Messages dans une campagne marketing** : vous pouvez envoyer des messages dans le contexte d’une [campagne marketing](campaigns.md), définir un processus de validation, les envoyer et les suivre dans un tableau de bord consolidé. Découvrez comment dans [Diffusions de campagnes marketing](../../automation/campaigns/marketing-campaign-deliveries.md).
 
-   ![](assets/deliveries-in-a-campaign.png)
+   ![Tableau de bord de Campaign répertoriant les diffusions avec leurs statuts d&#39;approbation, tels que À approuver et À envoyer](assets/deliveries-in-a-campaign.png)
 
-1. **Messages dans un workflow** : vous pouvez envoyer des messages via un [workflow](../config/workflows.md) et automatiser vos diffusions. Découvrez comment dans [cette page](../../automation/workflow/delivery.md).
+1. **Messages dans un workflow** : vous pouvez envoyer des messages via un [workflow](../config/workflows.md) et automatiser vos diffusions. Découvrez comment dans [Diffusion](../../automation/workflow/delivery.md).
 
-   ![](assets/send-in-a-wf.png)
+   ![Workflow de campagne avec requête et lecture de liste alimentant une diffusion d&#39;offres d&#39;été, une diffusion d&#39;attente et une diffusion mobile](assets/send-in-a-wf.png)
 
-1. **Messages déclenchés** : vous pouvez [déclencher des messages](../send/transactional.md) à partir d’un événement. La messagerie transactionnelle (Message Center) est le module de Campaign conçu pour gérer les messages de déclenchement. Les étapes de configuration et d’envoi de messages transactionnels sont présentées dans [cette page](../send/transactional.md).
+1. **Messages déclenchés** : vous pouvez [déclencher des messages](../send/transactional.md) à partir d’un événement. La messagerie transactionnelle (Message Center) est le module de Campaign conçu pour gérer les messages de déclenchement. Les étapes de configuration et d&#39;envoi de messages transactionnels sont décrites dans la section [Messages transactionnels de Campaign](../send/transactional.md)
 
 ## Canaux de communication {#gs-channel}
 
@@ -111,7 +111,7 @@ Une **diffusion** est un objet de diffusion autonome qui est exécuté une seule
 
 Les diffusions peuvent être créées à partir de la liste de diffusions ou au sein d&#39;un workflow via une activité [Diffusion](../../automation/workflow/delivery.md).
 
-Les workflows fournissent également des activités de diffusion spécifiques selon le type de canal que vous souhaitez utiliser. Pour plus d&#39;informations sur ces activités, voir [cette section](../../automation/workflow/cross-channel-deliveries.md).
+Les workflows fournissent également des activités de diffusion spécifiques selon le type de canal que vous souhaitez utiliser. Pour plus d’informations sur ces activités, consultez la section [Diffusions cross-canal](../../automation/workflow/cross-channel-deliveries.md).
 
 ### Diffusion récurrente {#recurring-delivery}
 

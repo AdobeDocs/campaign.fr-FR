@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 75%
+source-wordcount: '914'
+ht-degree: 69%
 ---
 # Prise en main des applications web{#about-web-applications}
 
@@ -61,7 +61,7 @@ Vous pouvez créer des pages, par exemple un formulaire d’édition sur un extr
 
 Il peut par exemple s’agir d’un formulaire d’inscription dont les données ont été pré-remplies avec les informations contenues dans la base Adobe Campaign, comme dans l’exemple ci-dessous :
 
-![](assets/webapp_form_sample.png)
+![Formulaire d&#39;abonnement prérempli avec une adresse e-mail, un nom et un pays, avec un bouton S&#39;abonner.](assets/webapp_form_sample.png)
 
 Ce chapitre présente la gestion des applications web.
 
@@ -101,7 +101,7 @@ Par rapport aux applications Web, les questionnaires proposent une interface gra
 >
 >Les questionnaires sont détaillés dans [cette section](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (documentation de Campaign v8).
 >
->Les fonctionnalités générales des formulaires web sous Adobe Campaign sont présentées dans [cette section](about-web-forms.md).
+>Les fonctionnalités générales des formulaires web dans Adobe Campaign sont présentées dans la section [Prise en main des formulaires web](about-web-forms.md).
 
 ## Implémentation d’applications web {#web-application-implementation}
 
@@ -109,7 +109,7 @@ Pour créer et rendre disponible une application web, vous devez :
 
 1. Créer le contenu (champs, listes, tableaux, graphiques, etc.)
 
-   Vous pouvez également consulter la section qui présente les champs disponibles pour les formulaires : tous ces champs sont aussi disponibles pour les applications web. Ces informations sont disponibles dans [cette page](adding-fields-to-a-web-form.md).
+   Vous pouvez également consulter la section qui présente les champs disponibles pour les formulaires : tous ces champs sont aussi disponibles pour les applications web. Ces informations sont disponibles dans [Ajouter des champs à un formulaire web](adding-fields-to-a-web-form.md).
 
 1. Ajouter, au besoin, des étapes de préchargement, de test, d’enregistrement et paramétrer le contrôle d’accès (principalement dans le cadre d’une publication sur un extranet).
 1. Publiez l&#39;application web pour la rendre disponible sur un extranet ou dans Adobe Campaign.
@@ -120,7 +120,7 @@ Les applications web sont créées via le lien **[!UICONTROL Applications web]**
 
 Les applications web sont stockées dans le nœud **[!UICONTROL Ressources > En ligne > Applications web]** de l’arborescence Adobe Campaign. Les configurations sont réparties dans les dossiers suivants :
 
-* **[!UICONTROL Administration > Configuration > Rendus des formulaires]** : contient les modèles de rendu pour la présentation des formulaires web (applications et questionnaires). Le modèle permet de générer le formulaire. Il utilise également une feuille de style CSS. Cette feuille de style peut être surchargée au niveau du modèle. Pour plus d’informations, consultez [cette page](form-rendering.md#selecting-the-form-rendering-template).
+* **[!UICONTROL Administration > Configuration > Rendus des formulaires]** : contient les modèles de rendu pour la présentation des formulaires web (applications et questionnaires). Le modèle permet de générer le formulaire. Il utilise également une feuille de style CSS. Cette feuille de style peut être surchargée au niveau du modèle. Pour plus d&#39;informations, consultez la section [Sélection du modèle de rendu de formulaire](form-rendering.md#selecting-the-form-rendering-template).
 * **[!UICONTROL Ressources > Modèles > Modèles d’application web]** : contient des modèles de formulaire. Pour créer un formulaire ou une application web, vous devez partir d’un modèle.
 
 ## Modèles d’applications web {#web-application-templates}
@@ -135,7 +135,7 @@ Vous pouvez créer des modèles à partir du nœud **[!UICONTROL Ressources > M
 
 L’assistant de création vous permet de sélectionner les options à activer, comme dans l’exemple ci-dessous.
 
-![](assets/webapp_create_template.png)
+![Boîte de dialogue Nouvelle application web avec les options Questionnaire et Site web avancé (extranet) à activer.](assets/webapp_create_template.png)
 
 >[!CAUTION]
 >

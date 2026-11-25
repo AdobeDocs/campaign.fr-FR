@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 51%
+source-wordcount: '643'
+ht-degree: 47%
 ---
 # Configuration des liens trackés {#how-to-configure-tracked-links}
 
@@ -39,17 +39,17 @@ Pour chaque diffusion, vous pouvez suivre la réception des messages et l&#39;ac
 
 >[!NOTE]
 >
->Les liens inclus dans le contenu des emails qui comportent des éléments de personnalisation ont besoin d&#39;une syntaxe spécifique pour être suivis. Découvrez comment ajouter dans [cette section](personalized-links.md) des liens dans les e-mails qui peuvent être personnalisés et qui prennent en charge le tracking.
+>Les liens inclus dans le contenu des emails qui comportent des éléments de personnalisation ont besoin d&#39;une syntaxe spécifique pour être suivis. Découvrez comment ajouter des liens dans des e-mails qui peuvent être personnalisés et qui prennent en charge le suivi dans [Suivre les liens personnalisés](personalized-links.md).
 
 Le tracking des messages est activé par défaut. Pour personnaliser le suivi des URL, procédez comme suit :
 
 1. Sélectionnez l’option **[!UICONTROL Afficher les URL]**, située dans la section inférieure de l’assistant de diffusion, sous le contenu du message.
 
-   ![](assets/s_ncs_user_email_del_display_urls.png)
+   ![Diffuser du contenu HTML avec l&#39;option Afficher les URL sous le contenu, pas encore sélectionnée](assets/s_ncs_user_email_del_display_urls.png)
 
    Lorsque vous sélectionnez une URL dans la liste des URL suivies, elle est mise en surbrillance dans le contenu de la diffusion, à l’exception du lien de la page miroir et du lien de désinscription qui sont fournis par défaut.
 
-   ![](assets/s_ncs_user_email_del_show_urls.png)
+   ![Liste des URL suivies avec une URL sélectionnée et son lien correspondant mis en surbrillance dans le contenu de la diffusion](assets/s_ncs_user_email_del_show_urls.png)
 
 1. Pour chaque URL du message, choisissez d’activer ou non le tracking.
 
@@ -67,7 +67,7 @@ Le tracking des messages est activé par défaut. Pour personnaliser le suivi de
 
 1. Au besoin, modifiez le tracking, sélectionnez un nouveau mode dans la colonne **[!UICONTROL Tracking]** correspondant au lien visé, comme dans l’exemple ci-dessous :
 
-   ![](assets/s_ncs_user_select_tracking_mode.png)
+   ![Liste déroulante Colonne de tracking répertoriant les modes de tracking d’une URL, de Activé à Page miroir](assets/s_ncs_user_select_tracking_mode.png)
 
    Pour chaque URL, vous pouvez définir le mode de tracking sur l’une de ces valeurs :
 
@@ -78,7 +78,7 @@ Le tracking des messages est activé par défaut. Pour personnaliser le suivi de
    * **[!UICONTROL Opt-out]** : considère cette URL comme une option d&#39;opt-out ou une URL de désabonnement.
    * **[!UICONTROL Page miroir]** : considère cette URL comme une URL de page miroir.
 
-1. De plus, vous pouvez sélectionner une catégorie pour chaque URL suivie dans la liste déroulante de la colonne **[!UICONTROL Catégorie]**. Ces catégories peuvent être affichées dans les rapports, par exemple dans le rapport **[!UICONTROL URL et flux de clics]** (voir [cette section](../reporting/delivery-reports.md#urls-and-click-streams)). Les catégories sont définies dans une énumération spécifique : **[!UICONTROL urlCategory]**. Découvrez comment utiliser les énumérations dans [cette section](../config/enumerations.md).
+1. De plus, vous pouvez sélectionner une catégorie pour chaque URL suivie dans la liste déroulante de la colonne **[!UICONTROL Catégorie]**. Ces catégories peuvent être affichées dans les rapports, par exemple dans le rapport **[!UICONTROL URL et flux de clics]** (voir [URL et flux de clics](../reporting/delivery-reports.md#urls-and-click-streams)). Les catégories sont définies dans une énumération spécifique : **[!UICONTROL urlCategory]**. Découvrez comment utiliser les énumérations dans la section [Gérer les énumérations](../config/enumerations.md).
 
 ## Bonnes pratiques relatives aux délimiteurs d’URL {#url-delimiters}
 

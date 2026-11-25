@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 91%
+source-wordcount: '568'
+ht-degree: 79%
 ---
 # Personnaliser la liste des émoticônes {#customize-emoticons}
 
@@ -55,7 +55,7 @@ Notez que les émoticônes ne sont disponibles que pour les e-mails et les notif
    >
    >Les énumérations d’usine ne peuvent être gérées que par un administrateur de votre console Adobe Campaign Classic.
 
-   ![](assets/emoticon_1.png)
+   ![Explorateur avec Administration, Plateforme et Énumérations sélectionnées, et l&#39;énumération Liste d&#39;émoticônes mise en surbrillance](assets/emoticon_1.png)
 
 1. Cliquez sur **[!UICONTROL Ajouter]**.
 
@@ -66,7 +66,7 @@ Notez que les émoticônes ne sont disponibles que pour les e-mails et les notif
 
    * **[!UICONTROL Libellé]** : libellé de la nouvelle émoticône.
 
-   ![](assets/emoticon_5.png)
+   ![Boîte de dialogue de valeur d’énumération avec les champs Code U+ et Libellé pour une nouvelle émoticône](assets/emoticon_5.png)
 
 1. Cliquez sur **[!UICONTROL Ok]**, puis sur **[!UICONTROL Enregistrer]** lorsque la configuration est terminée.
 Votre nouvelle émoticône sera automatiquement placée dans le magasin.
@@ -77,7 +77,7 @@ Votre nouvelle émoticône sera automatiquement placée dans le magasin.
 
    <br>Dans cet exemple, nous avons choisi le numéro de position d’affichage 61. Si une entrée avait déjà cette position, elle serait automatiquement déplacée vers le magasin et la nouvelle entrée prendrait sa place dans la liste d’énumérations.
 
-   ![](assets/emoticon_2.png)
+   ![Boîte de dialogue de valeur d’énumération avec le code U+, le libellé et le champ Ordre d’affichage définis sur 61](assets/emoticon_2.png)
 
 1. La nouvelle émoticône a maintenant été ajoutée à l’énumération d’usine **[!UICONTROL Liste d’émoticônes]**. Vous pouvez modifier la **[!UICONTROL position d’affichage]** à tout moment ou déplacer l’émoticône vers le magasin si vous n’en avez plus besoin.
 
@@ -85,8 +85,8 @@ Votre nouvelle émoticône sera automatiquement placée dans le magasin.
 
 1. La nouvelle émoticône se trouve maintenant dans vos diffusions, dans la fenêtre pop-up **[!UICONTROL Insérer une émoticône]**, à la 61e position, suite à la configuration effectuée lors des étapes précédentes. Pour plus d&#39;informations sur l&#39;utilisation des émoticônes dans vos diffusions, consultez cette [section](defining-the-email-content.md#inserting-emoticons).
 
-   ![](assets/emoticon_4.png)
+   ![Insérer une fenêtre pop-up d&#39;émoticône avec la nouvelle émoticône ajoutée à la dernière position](assets/emoticon_4.png)
 
 1. Si les émoticônes suivantes apparaissent dans la fenêtre pop-up **[!UICONTROL Insérer une émoticône]**, cela signifie qu’elles n’ont pas été correctement configurées. Vérifiez si le code **[!UICONTROL U+]** ou la **[!UICONTROL position d’affichage]** est correcte dans la **[!UICONTROL liste des émoticônes]**.
 
-   ![](assets/emoticon_6.png)
+   ![Insérer une fenêtre pop-up d&#39;émoticône avec deux icônes croix rouge marquant les émoticônes incorrectement configurées](assets/emoticon_6.png)

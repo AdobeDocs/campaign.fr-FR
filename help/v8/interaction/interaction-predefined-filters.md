@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 87%
+source-wordcount: '251'
+ht-degree: 60%
 ---
 # Création de filtres prédéfinis{#creating-pre-defined-filters}
 
@@ -45,24 +45,24 @@ Pour créer un filtre prédéfini, procédez comme suit :
 
 1. Accédez au dossier **[!UICONTROL Administration]** et sélectionnez **[!UICONTROL Filtres d&#39;offre prédéfinis]**.
 
-   ![](assets/offer_filter_create_005.png)
+   ![Offres - arborescence de conception avec le nœud Filtres d’offres prédéfinis sélectionné sous Administration](assets/offer_filter_create_005.png)
 
 1. Cliquez sur **[!UICONTROL Nouveau]**.
 
-   ![](assets/offer_filter_create_001.png)
+   ![Liste des filtres d&#39;offre prédéfinis avec le bouton Nouveau en surbrillance et un filtre Age répertorié](assets/offer_filter_create_001.png)
 
 1. Modifiez le libellé afin de pouvoir identifier le filtre ultérieurement.
 
-   ![](assets/offer_filter_create_002.png)
+   ![Boîte de dialogue Filtre d’application avec le champ Libellé défini sur Canal e-mail](assets/offer_filter_create_002.png)
 
 1. Choisissez le champ sur lequel doit porter la condition de filtrage.
 
-   ![](assets/offer_filter_create_003.png)
+   ![Sélectionnez une boîte de dialogue d’expression avec le champ E-mail sélectionné parmi les champs Destinataire](assets/offer_filter_create_003.png)
 
 1. Choisissez un opérateur et si nécessaire une valeur, puis enregistrez la requête.
 
-   ![](assets/offer_filter_create_004.png)
+   ![La condition de filtre sur l&#39;expression d&#39;e-mail avec l&#39;opérateur défini sur n&#39;est pas vide](assets/offer_filter_create_004.png)
 
 1. Cliquez sur **[!UICONTROL Aperçu]** pour visualiser le résultat du filtre.
 
-   ![](assets/offer_filter_create_006.png)
+   ![Onglet Aperçu du filtre Canal e-mail répertoriant les destinataires qui correspondent au filtre](assets/offer_filter_create_006.png)

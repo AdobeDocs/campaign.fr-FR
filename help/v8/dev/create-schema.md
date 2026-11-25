@@ -34,10 +34,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 96%
+source-wordcount: '540'
+ht-degree: 75%
 ---
 # Création d&#39;un schéma {#create-new-schema}
 
@@ -47,11 +47,11 @@ Pour modifier, créer et paramétrer les schémas, cliquez sur le nœud **[!UICO
 >
 >Les schémas de données natifs peuvent uniquement être supprimés par un administrateur ou une administratrice de votre console Adobe Campaign
 
-![](assets/schema_navtree.png)
+![Arborescence de l&#39;explorateur avec Administration, Configuration et le nœud Schémas de données mis en surbrillance.](assets/schema_navtree.png)
 
 L&#39;onglet **[!UICONTROL Édition]** affiche le contenu XML d&#39;un schéma :
 
-![](assets/schema_edition.png)
+![Éditeur de schéma Source, onglet Modifier, affichant les champs Nom et Libellé ainsi que le contenu XML du schéma.](assets/schema_edition.png)
 
 >[!NOTE]
 >
@@ -59,13 +59,13 @@ L&#39;onglet **[!UICONTROL Édition]** affiche le contenu XML d&#39;un schéma 
 
 L&#39;onglet **[!UICONTROL Aperçu]** génère automatiquement le schéma étendu :
 
-![](assets/schema_edition2.png)
+![Éditeur de schéma Source, onglet Aperçu, affichant le XML du schéma étendu généré.](assets/schema_edition2.png)
 
 >[!NOTE]
 >
 >La sauvegarde du schéma source va automatiquement lancer la génération du schéma étendu.
 
-Si vous devez vérifier la structure complète d’un schéma, vous pouvez utiliser l’onglet **[!UICONTROL Aperçu]**. Si le schéma a été étendu, vous pourrez visualiser toutes ses extensions. En complément, l’onglet **[!UICONTROL Documentation]** affiche tous les attributs et éléments du schéma, ainsi que ses propriétés (champ SQL, type/longueur, libellé, description). L’onglet **[!UICONTROL Documentation]** s’applique uniquement aux schémas générés.
+Si vous devez vérifier la structure complète d&#39;un schéma, vous pouvez utiliser l&#39;onglet **[!UICONTROL Aperçu]**. Si le schéma a été étendu, vous pourrez visualiser toutes ses extensions. En complément, l’onglet **[!UICONTROL Documentation]** affiche tous les attributs et éléments du schéma, ainsi que ses propriétés (champ SQL, type/longueur, libellé, description). L’onglet **[!UICONTROL Documentation]** s’applique uniquement aux schémas générés.
 
 ## Cas d&#39;utilisation : créer une table des contrats {#example--creating-a-contract-table}
 
@@ -76,11 +76,11 @@ Pour cela, vous devez créer le schéma de la table puis procéder à la mise à
 1. Modifiez le nœud **[!UICONTROL Administration > Paramétrage > Schémas de données]** de l&#39;arborescence Adobe Campaign et cliquez sur l&#39;icône **[!UICONTROL Nouveau]**.
 1. Sélectionnez l&#39;option **[!UICONTROL Créer une nouvelle table dans le modèle de données de la base]** et cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/create_new_schema.png)
+   ![Page Type de schéma de l&#39;assistant de schéma de données avec l&#39;option Créer une nouvelle table dans le modèle de données sélectionné.](assets/create_new_schema.png)
 
 1. Indiquez le nom de la table et son espace de noms.
 
-   ![](assets/create_new_param.png)
+   ![Page des paramètres de schéma avec espace de noms cus, nom Contrats, libellé, libellé (au singulier) et description renseignés.](assets/create_new_param.png)
 
    >[!NOTE]
    >
@@ -88,7 +88,7 @@ Pour cela, vous devez créer le schéma de la table puis procéder à la mise à
 
 1. Créez le contenu de la table. Nous vous recommandons d&#39;utiliser l&#39;assistant dédié pour vous assurer qu&#39;aucun paramètre n&#39;est manquant. Pour ce faire, cliquez sur le bouton **[!UICONTROL Insérer]** et sélectionnez le type de paramètre à ajouter.
 
-   ![](assets/create_new_content.png)
+   ![Page Modifier le schéma avec le menu Insertion ouvert, affichant les types d&#39;attribut tels que String et Integer.](assets/create_new_content.png)
 
 1. Définissez les paramètres de la table des contrats.
 
@@ -138,6 +138,6 @@ Pour cela, vous devez créer le schéma de la table puis procéder à la mise à
 
 1. Enregistrez le schéma et cliquez sur l&#39;onglet **[!UICONTROL Structure]** pour générer la structure :
 
-   ![](assets/configuration_structure.png)
+   ![Onglet Structure du schéma Contrats répertoriant les attributs de titulaire, de co-titulaire, de numéro de contrat et de date d&#39;abonnement.](assets/configuration_structure.png)
 
-1. Mettez à jour la structure de la base de données pour créer la table à laquelle le schéma sera lié. Voir à ce propos [cette section](update-database-structure.md).
+1. Mettez à jour la structure de la base de données pour créer la table à laquelle le schéma sera lié. Pour plus d&#39;informations, consultez la section [Mettre à jour la structure de la base de données](update-database-structure.md).

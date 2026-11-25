@@ -31,10 +31,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 95%
+source-wordcount: '1346'
+ht-degree: 72%
 ---
 # Cas d’utilisation : création de pages de vue d’ensemble{#use-cases-creating-overviews}
 
@@ -48,13 +48,13 @@ Dans l’exemple suivant, nous allons créer des applications web de type vue d�
 * un filtre par outil d’édition de lien (voir la section [Créer un filtre à l’aide d’un éditeur de lien](#creating-a-filter-using-a-link-editor)),
 * un lien d’actualisation (voir la section [Créer un lien d’actualisation](#creating-a-refresh-link)).
 
-![](assets/s_ncs_configuration_webapp_overview.png)
+![Page d&#39;aperçu de l&#39;application Web avec les libellés : filtre de dossier, nouveau bouton, filtre de l&#39;éditeur de liens, actualiser le lien, liste, détail.](assets/s_ncs_configuration_webapp_overview.png)
 
 ## Créer une application Web mono-page {#creating-a-single-page-web-application}
 
 1. Créez une application Web constituée d&#39;une seule activité **[!UICONTROL Page]** et désactivez les transitions sortantes et le passage à la page suivante.
 
-   ![](assets/s_ncs_configuration_webapp_create.png)
+   ![Propriétés de page, onglet Général, avec Désactiver la page suivante sélectionnée et Activer les transitions sortantes effacées.](assets/s_ncs_configuration_webapp_create.png)
 
 1. Modifiez le titre de la page.
 
@@ -62,19 +62,19 @@ Dans l’exemple suivant, nous allons créer des applications web de type vue d�
 
 1. Dans les propriétés de l&#39;application web, modifiez le rendu de votre application web en sélectionnant le modèle **[!UICONTROL Application web Mono-page]**.
 
-   ![](assets/s_ncs_configuration_webapp_rendering.png)
+   Boîte de dialogue ![Propriétés, onglet Rendu, avec le modèle Application web monopage sélectionné dans la liste Modèle.](assets/s_ncs_configuration_webapp_rendering.png)
 
 1. Ouvrez l&#39;activité **[!UICONTROL Page]** de votre application web et créez une liste (**[!UICONTROL Elément statique > Liste]**).
 1. Dans l&#39;onglet **[!UICONTROL Données]** de votre liste, sélectionnez le type de document **[!UICONTROL Applications Web]** et les colonnes de sortie **[!UICONTROL Libellé]**, **[!UICONTROL Créé le]** et **[!UICONTROL Type d&#39;application]**.
 1. Dans le sous-onglet **[!UICONTROL Filtre]**, créez le filtre suivant comme illustré ci-dessous pour n&#39;afficher que les applications web et exclure les modèles de votre vue.
 
-   ![](assets/s_ncs_configuration_webapp_filter.png)
+   ![Onglet Données de liste, sous-onglet Filtre, avec des conditions Modèle égal à Non et clé de Principal non égale à 0.](assets/s_ncs_configuration_webapp_filter.png)
 
 1. Fermez la fenêtre de paramétrage de votre page et cliquez sur **[!UICONTROL Prévisualisation]**.
 
    La liste des applications Web disponibles dans votre base de données s&#39;affiche.
 
-   ![](assets/s_ncs_configuration_webapp_preview.png)
+   ![Onglet Aperçu de l&#39;application web affichant la liste des applications web par libellé.](assets/s_ncs_configuration_webapp_preview.png)
 
 ## Ajouter un filtre sur dossier {#adding-a-filter-on-a-folder}
 
@@ -91,15 +91,15 @@ Dans une vue d’ensemble, vous pouvez choisir d’accéder aux données en fonc
 
 1. Appliquez le type **[!UICONTROL XML]** à la variable.
 
-   ![](assets/s_ncs_configuration_webapp_variable_xml.png)
+   ![Sélectionnez l’entrée du dossier avec le stockage Modifier ouvert et les branches Modifier affichant la variable Folder de type XML.](assets/s_ncs_configuration_webapp_variable_xml.png)
 
 1. Sélectionnez l&#39;interaction **[!UICONTROL Actualiser la page]**.
 
-   ![](assets/s_ncs_configuration_webapp_variable.png)
+   ![Entrée du dossier avec l&#39;action Actualiser la page sélectionnée pour l&#39;action à effectuer lors de la sélection d&#39;un dossier.](assets/s_ncs_configuration_webapp_variable.png)
 
 1. Placez le curseur sur votre liste et, dans l’onglet **[!UICONTROL Avancé]**, faites référence à la variable précédemment créée dans l’onglet **[!UICONTROL XPath de filtrage par dossier]** de la liste. Vous devez utiliser le nom de l’élément concerné par le lien du dossier, c’est-à-dire le **dossier**.
 
-   ![](assets/s_ncs_configuration_webapp_variable002.png)
+   ![Onglet Avancé de la liste avec le champ XPath du filtre Dossier défini sur le dossier dans Stockage/Filtrage.](assets/s_ncs_configuration_webapp_variable002.png)
 
    >[!NOTE]
    >
@@ -129,7 +129,7 @@ Dans une vue d’ensemble, vous pouvez choisir d’accéder aux données en fonc
 
    Ce style est référencé dans le modèle **[!UICONTROL Application Web Mono-page]** sélectionné précédemment.
 
-   ![](assets/s_ncs_configuration_webapp_link.png)
+   ![Nouvel élément de lien avec l&#39;URL qui ouvre le nouveau formulaire d&#39;application web et le champ Style défini sur le bouton.](assets/s_ncs_configuration_webapp_link.png)
 
 ## Ajouter un détail à une liste {#adding-detail-to-a-list}
 
@@ -138,17 +138,17 @@ Lorsque vous paramétrez une liste dans votre vue d&#39;ensemble, vous pouvez ch
 1. Positionnez-vous sur votre élément liste créé précédemment.
 1. Dans l&#39;onglet **[!UICONTROL Général]**, sélectionnez le mode d&#39;affichage **[!UICONTROL Colonnes et détail additionnel]** dans la liste déroulante.
 
-   ![](assets/s_ncs_configuration_webapp_detail.png)
+   ![Onglet Général de la liste avec l&#39;option Afficher définie sur Colonnes et Détails supplémentaires.](assets/s_ncs_configuration_webapp_detail.png)
 
 1. Dans l’onglet **[!UICONTROL Données]**, ajoutez les colonnes **[!UICONTROL Clé de Principal]** , **[!UICONTROL Nom interne]** et **[!UICONTROL Description]** et sélectionnez l’option **[!UICONTROL Champ masqué]** pour chacune.
 
-   ![](assets/s_ncs_configuration_webapp_detail002.png)
+   ![Onglet Données de liste avec la clé de Principal, le nom interne et les colonnes de sortie Description marqués comme Champ masqué.](assets/s_ncs_configuration_webapp_detail002.png)
 
    De cette façon, ces informations ne seront visibles qu&#39;au niveau du détail de chaque entrée.
 
 1. Dans l&#39;onglet **[!UICONTROL Détail additionnel]**, ajoutez le code suivant :
 
-   ```
+   ```html
    <div class="detailBox">
      <div class="actionBox">
        <span class="action"><img src="/xtk/img/fileEdit.png"/><a title="Open" class="linkAction" href="xtk://open/?schema=nms:webApp&form=nms:webApp&pk=
@@ -192,22 +192,22 @@ Ces deux éléments seront rassemblés dans un même conteneur afin de les regro
 1. Positionnez-vous au niveau de l&#39;élément **[!UICONTROL Page]** et sélectionnez les menus **[!UICONTROL Conteneur > Standard]**.
 1. Paramétrez le nombre de colonnes à **2**, afin que l&#39;éditeur de lien et le lien soient côte à côte.
 
-   ![](assets/s_ncs_configuration_webapp_container.png)
+   ![Conteneur de filtres avec le champ Style d&#39;apparence défini sur dotedFilter et deux colonnes.](assets/s_ncs_configuration_webapp_container.png)
 
-   Pour la disposition des éléments, reportez-vous à [cette section](about-web-forms.md).
+   Pour plus d&#39;informations sur la disposition des éléments, consultez la section [Prise en main des formulaires web](about-web-forms.md).
 
 1. Appliquez **dottedFilter**.
 
    Ce style est référencé dans le modèle **[!UICONTROL Application web mono-page]** sélectionné précédemment.
 
-   ![](assets/s_ncs_configuration_webapp_container002.png)
+   ![Onglet Général du conteneur de filtres avec le champ Style d&#39;apparence défini sur dotedFilter.](assets/s_ncs_configuration_webapp_container002.png)
 
 ### Créer un filtre à l&#39;aide d&#39;un éditeur de lien {#creating-a-filter-using-a-link-editor}
 
 1. Positionnez-vous sur le conteneur créé à l&#39;étape précédente et insérez un éditeur de lien depuis le menu **[!UICONTROL Contrôles avancés]**.
 1. Dans la fenêtre de stockage qui s&#39;ouvre automatiquement, sélectionnez l&#39;option **[!UICONTROL Variable]** puis cliquez sur le lien **[!UICONTROL Editer les variables]** et créez une variable de type XML qui servira à filtrer les données.
 
-   ![](assets/s_ncs_configuration_webapp_variable003.png)
+   ![Entrée de l’éditeur de liens : modification du stockage, modification des variables et boîte de dialogue Variable créant la variable XML var2.](assets/s_ncs_configuration_webapp_variable003.png)
 
 1. Modifiez le libellé.
 
@@ -215,7 +215,7 @@ Ces deux éléments seront rassemblés dans un même conteneur afin de les regro
 
 1. Choisissez la table des Opérateurs comme schéma d&#39;application.
 
-   ![](assets/s_ncs_configuration_webapp_linkeditor.png)
+   ![Éditeur de liens intitulé Créé par, stockant dans la variable var2, avec le schéma d&#39;application de l&#39;opérateur sélectionné.](assets/s_ncs_configuration_webapp_linkeditor.png)
 
 1. Positionnez-vous sur l&#39;élément liste et créez un filtre depuis l&#39;onglet **[!UICONTROL Données > Filtre]** :
 
@@ -224,7 +224,7 @@ Ces deux éléments seront rassemblés dans un même conteneur afin de les regro
    * **Valeur :** variables (variables)
    * **Pris en compte si :** &#39;$(var2/@id)&#39;!=&#39;&#39;
 
-   ![](assets/s_ncs_configuration_webapp_filter002.png)
+   ![Les conditions de filtrage de liste, y compris la clé de lien Créé par égale à Variables, sont appliquées uniquement si l’ID var2 est défini.](assets/s_ncs_configuration_webapp_filter002.png)
 
 >[!CAUTION]
 >
@@ -237,13 +237,13 @@ Ces deux éléments seront rassemblés dans un même conteneur afin de les regro
 1. Choisissez l&#39;action **[!UICONTROL Actualiser les données d&#39;une liste]**.
 1. Ajoutez la liste créée précédemment.
 
-   ![](assets/s_ncs_configuration_webapp_refreshlink.png)
+   ![Actualisez le lien avec les données Actualiser dans une action de liste et la Liste 1 sélectionnée sous Listes à actualiser.](assets/s_ncs_configuration_webapp_refreshlink.png)
 
 1. Ajoutez l&#39;icône d&#39;actualisation dans le champ **[!UICONTROL Image]** : **/xtk/img/refresh.png**.
 1. Positionnez les différents éléments de votre application web dans l&#39;ordre comme illustré ci-dessous à l&#39;aide des flèches de déplacement.
 
-   ![](assets/s_ncs_configuration_webapp_orderelements.png)
+   ![Arborescence des éléments de page avec les flèches d&#39;ordre de tri mises en surbrillance pour déplacer la Liste 1 sous l&#39;élément de filtre.](assets/s_ncs_configuration_webapp_orderelements.png)
 
 L&#39;application Web est maintenant paramétrée. Vous pouvez cliquer sur l&#39;onglet **[!UICONTROL Prévisualisation]** pour en avoir un aperçu.
 
-![](assets/s_ncs_configuration_webapp_result.png)
+![Aperçu de l&#39;application web terminée : filtre de dossier, nouveau lien, créé par filtre, actualiser le lien et la liste.](assets/s_ncs_configuration_webapp_result.png)

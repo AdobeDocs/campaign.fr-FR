@@ -28,10 +28,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 71%
+source-wordcount: '317'
+ht-degree: 52%
 ---
 # Surveiller et suivre un SMS
 
@@ -47,25 +47,25 @@ Pour accéder au tableau de bord, double-cliquez sur votre diffusion dans la lis
 
 Dans l’onglet **[!UICONTROL Résumé]**, vous disposez des données principales comme le nombre de messages traités et le nombre de succès.
 
-![](assets/sms_summary.png){zoomable="yes"}
+![Onglet Résumé du tableau de bord des diffusions SMS avec les messages à envoyer, les taux de succès et de traitement, ainsi que le statut de la diffusion](assets/sms_summary.png){zoomable="yes"}
 
 Après l’envoi du SMS, l’onglet **[!UICONTROL SMS]**, qui concerne le contenu de la diffusion, n’est plus accessible pour une modification.
 
 Dans l’onglet **[!UICONTROL Diffusion]**, vous disposez des informations sur les logs de diffusion. Pour chaque adresse contactée, vous pouvez voir si le SMS a été envoyé ou non.
 
-![](assets/sms_deliverylogs.png){zoomable="yes"}
+![Liste des logs de l&#39;onglet Diffusion indiquant, pour chaque adresse contactée, si le SMS a été envoyé, avec statut et raison](assets/sms_deliverylogs.png){zoomable="yes"}
 
 Vous pouvez voir dans l’onglet **[!UICONTROL Exclusions]** les détails sur les raisons pour lesquelles certaines adresses sont exclues de la cible.
 
-![](assets/sms_exclusions.png){zoomable="yes"}
+![Onglet Diffusion Onglet Exclusions répertoriant les adresses ignorées avec la raison, telles que l&#39;adresse Placée sur la liste bloquée ou Double](assets/sms_exclusions.png){zoomable="yes"}
 
 L’onglet **[!UICONTROL Tracking]** concerne le suivi. Ci-dessous l&#39;exemple d&#39;une URL trackée dans le contenu du SMS.
 
-![](assets/sms_trackinglogs.png){zoomable="yes"}
+![Liste des URL de l&#39;onglet Tracking affichant une URL suivie à partir du contenu du SMS avec son libellé, son type et l&#39;URL source](assets/sms_trackinglogs.png){zoomable="yes"}
 
 Et enfin, l’onglet **[!UICONTROL Audit]** avec tous les détails pendant le lancement de la diffusion :
 
-![](assets/sms_audit.png){zoomable="yes"}
+![Onglet Audit Log répertoriant les messages enregistrés lors du lancement de la diffusion, avec les colonnes date et message](assets/sms_audit.png){zoomable="yes"}
 
 ## Comprendre les SMS en échec
 

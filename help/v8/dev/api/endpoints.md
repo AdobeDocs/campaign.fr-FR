@@ -28,19 +28,19 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 91%
+source-wordcount: '201'
+ht-degree: 78%
 ---
 # Points d’entrée {#endpoints}
 
 Points d’entrée disponibles pour l’API REST Adobe Campaign :
 
 * **/profileAndServices** : permet d’interagir avec les champs d’usine. Les champs étendus ne sont pas accessibles par ce point d’entrée.
-* **/profileAndServicesExt** : permet d’interagir avec les champs personnalisés ajoutés lors de l’extension des ressources personnalisées Profile ou Services. Pour plus d’informations sur les ressources personnalisées, reportez-vous à [cette section](custom-resources.md).
-* **/&lt;transactionalAPI>** : permet d’interagir avec l’API des messages transactionnels (le nom du point d’entrée de l’API des messages transactionnels dépend de la configuration de votre instance). Pour plus d’informations, consultez [cette section](managing-transactional-messages.md).
-* **/workflow/exécution** : permet d’interagir avec les workflows. Pour plus d’informations, consultez [cette section](controlling-a-workflow.md).
+* **/profileAndServicesExt** : permet d’interagir avec les champs personnalisés ajoutés lors de l’extension des ressources personnalisées Profile ou Services. Pour plus d&#39;informations sur les ressources personnalisées, consultez la section [Ressources personnalisées](custom-resources.md).
+* **/&lt;transactionalAPI>** : permet d’interagir avec l’API des messages transactionnels (le nom du point d’entrée de l’API des messages transactionnels dépend de la configuration de votre instance). Voir à ce sujet la section [Gestion des messages transactionnels](managing-transactional-messages.md).
+* **/workflow/exécution** : permet d’interagir avec les workflows. Pour plus d&#39;informations, consultez la section [Contrôle d&#39;un workflow](controlling-a-workflow.md).
 
 Par défaut, les principales ressources disponibles pour les API **profileAndServices** et **profileAndServicesExt** sont les suivantes :
 

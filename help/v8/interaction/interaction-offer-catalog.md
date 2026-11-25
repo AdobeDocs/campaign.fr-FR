@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 81%
+source-wordcount: '494'
+ht-degree: 68%
 ---
 # Création d&#39;un catalogue d&#39;offres
 
@@ -45,15 +45,15 @@ Pour créer une nouvelle catégorie, procédez comme suit :
 
 1. Accédez au dossier **[!UICONTROL Catalogue d’offres]**.
 
-   ![](assets/offer_cat_create_001.png)
+   ![Arborescence de l’Explorateur avec le dossier Catalogue d’offres sélectionné sous Offres - Conception et Environnement - Destinataire](assets/offer_cat_create_001.png)
 
 1. Cliquez avec le bouton droit de la souris et sélectionnez **[!UICONTROL Créer un dossier « Catégorie d’offres »]** dans le menu contextuel.
 
-   ![](assets/offer_cat_create_002.png)
+   ![Menu contextuel du Catalogue d&#39;offres avec l&#39;option Créer un dossier de catégorie d&#39;offres mise en surbrillance](assets/offer_cat_create_002.png)
 
 1. Renommez la catégorie. Vous pourrez modifier le libellé ultérieurement via l&#39;onglet **[!UICONTROL Général]** de la catégorie.
 
-   ![](assets/offer_cat_create_003.png)
+   ![Nouveau dossier de catégorie nommé Neobank - Personal banking dans l&#39;arborescence Catalogue d&#39;offres, prêt à être renommé](assets/offer_cat_create_003.png)
 
    >[!NOTE]
    >
@@ -63,7 +63,7 @@ Pour créer une nouvelle catégorie, procédez comme suit :
 
    * D&#39;attribuer des dates d&#39;éligibilité, depuis l&#39;onglet **[!UICONTROL Éligibilité]**.
 
-     ![](assets/offer_cat_create_004.png)
+     ![Onglet Éligibilité avec les champs Date de début et Date de fin, un calendrier ouvert et le lien Modifier la requête pour les filtres cibles](assets/offer_cat_create_004.png)
 
    * **[!UICONTROL Éditez la requête]** pour appliquer des filtres à la cible de l&#39;offre.
 
@@ -83,4 +83,4 @@ Pour inclure une catégorie de secours dans les recommandations, procédez comme
 1. Cliquez sur l&#39;onglet **[!UICONTROL Éligibilité]** et sélectionnez l&#39;option **[!UICONTROL Toujours inclure cette catégorie dans les recommandations]**.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-   ![](assets/offer_cat_default_001.png)
+   ![Onglet Éligibilité de la catégorie avec Toujours inclure cette catégorie dans les recommandations sélectionnées](assets/offer_cat_default_001.png)

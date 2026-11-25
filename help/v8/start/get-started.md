@@ -51,10 +51,10 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 72%
+source-wordcount: '1099'
+ht-degree: 61%
 ---
 # Prise en main dʼAdobe Campaign{#gs-ac-v8}
 
@@ -70,7 +70,7 @@ En utilisant Campaign, vous pouvez :
 * **Intégrer** les canaux e-mail, mobiles, en ligne et hors ligne au parcours client
 * **Automatiser** la diffusion de messages et d&#39;offres pertinents et opportuns
 
-![](assets/do-not-localize/ac-capabilities.png)
+![Fonctionnalités de Campaign, du profil client et de la segmentation à l&#39;orchestration, aux e-mails et aux appareils mobiles, en passant par le reporting](assets/do-not-localize/ac-capabilities.png)
 
 
 >[!AVAILABILITY]
@@ -85,9 +85,9 @@ Les profils sont centralisés dans une puissante base de données cloud. Il exis
 
 Dans Adobe Campaign, les destinataires sont les profils par défaut ciblés pour l’envoi de diffusions (emails, SMS, etc.). Grâce aux données de destinataires stockées dans la base de données, vous pourrez filtrer la cible qui recevra toute diffusion donnée et ajouter des données de personnalisation dans le contenu de votre diffusion. D&#39;autres types de profils existent dans la base de données. Ils sont conçus pour différents usages. Par exemple, les profils de contrôle servent à tester vos diffusions avant leur envoi vers la cible finale.
 
-Les notions de base de la gestion des profils sont décrites dans [cette section](audiences.md).
+Les notions de base de la gestion des profils sont expliquées dans la section [Utilisation des audiences dans Campaign](audiences.md).
 
-Découvrez comment ajouter des profils à Campaign dans [cette section](import.md).
+Découvrez comment ajouter des profils à Campaign dans [Prise en main des profils](import.md).
 
 ## Segmentation ciblée {#targeted-segmentation}
 
@@ -95,13 +95,13 @@ Adobe Campaign intègre des fonctionnalités d’analyse et de ciblage pour vou
 
 Les fonctionnalités avancées de Data Management proposent une extension des capacités de traitement des données. Il simplifie et optimise le processus de ciblage en incluant des données non modélisées dans le datamart.
 
-En savoir plus sur la segmentation et la création d’audiences dans [cette section](audiences.md).
+En savoir plus sur la segmentation et la création d’audiences dans [Utilisation des audiences dans Campaign](audiences.md).
 
 ## Orchestration de campagnes cross-canal {#cross-channel-campaign-orchestration}
 
 Adobe Campaign vous permet de concevoir et d&#39;orchestrer des campagnes ciblées et personnalisées sur plusieurs canaux tels que l&#39;email, le courrier, les SMS, les notifications push. Une seule interface vous fournit toutes les fonctions nécessaires pour planifier, orchestrer, configurer, personnaliser, automatiser, exécuter et mesurer toutes vos campagnes et communications.
 
-Découvrez comment concevoir, planifier et exécuter une campagne dans [cette section](campaigns.md).
+Découvrez comment concevoir, planifier et exécuter une campagne dans [Prise en main des campagnes](campaigns.md).
 
 ## Workflows {#wf-gsv8}
 
@@ -116,7 +116,7 @@ Les workflows peuvent intervenir dans différents contextes, par exemple :
 * Import de données dans la base de Campaign.
 * Processus techniques tels que les tâches de nettoyage de la base (cleanup), la récupération des informations de tracking, etc.
 
-Découvrez comment concevoir et exécuter des workflows dans [cette section](../config/workflows.md).
+Découvrez comment concevoir et exécuter des workflows dans [Gérer et automatiser des processus avec des workflows Adobe Campaign](../config/workflows.md).
 
 ## Reporting et analyse {#analysis-and-reporting}
 
@@ -127,19 +127,19 @@ Outre des modèles de reporting d&#39;usine puissants, Adobe Campaign vous perme
 La fonctionnalité des rapports de l&#39;opération facilite la création de rapports dynamiques. Vous pouvez utiliser des variables par glisser-déposer afin de personnaliser vos rapports et d&#39;analyser la réussite de vos campagnes. En fonction de la complexité de vos requêtes et de vos calculs, les données peuvent être agrégées dans une vue de liste et sont accessibles dans un format qui facilite la génération de rapports d&#39;analytique marketing.
 
 
-En savoir plus sur les fonctionnalités de reporting et de tracking dans [cette section](../reporting/gs-reporting.md).
+Découvrez les fonctionnalités de reporting et de tracking dans [Prise en main des outils de reporting d&#39;Adobe Campaign](../reporting/gs-reporting.md).
 
 ## [!DNL Adobe CX Enterprise] intégrations {#adobe-experience-cloud-integrations}
 
 Vous pouvez combiner les fonctionnalités de diffusion et de gestion de campagnes avancées d&#39;Adobe Campaign avec un ensemble de solutions créées pour vous aider à personnaliser l&#39;expérience de vos utilisateurs, notamment Adobe Experience Manager, Adobe Analytics, Adobe Target ou les triggers Adobe Experience Cloud.
 
-Découvrez comment intégrer les services et solutions d’Adobe dans [cette section](../connect/integration.md).
+Découvrez comment intégrer les services et solutions Adobe dans [Connectez Campaign à vos solutions](../connect/integration.md).
 
 ## En savoir plus sur les fonctionnalités de Campaign {#core-capabilities-and-add-ons}
 
 Adobe Campaign vous propose un ensemble de fonctionnalités qui vous permettent d’implémenter et optimiser les fonctionnalités de marketing conversationnel selon vos besoins et votre architecture. Certaines de ces fonctionnalités sont intégrées. D&#39;autres dépendent de l&#39;installation d&#39;un package au sein de votre configuration. Une description détaillée du produit est disponible ici : [Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html).
 
-Vous connaissez déjà Campaign Classic ? Découvrez les principales différences entre Campaign Classic et Campaign v8 sur [cette page](v7-to-v8.md).
+Vous connaissez déjà Campaign Classic ? Découvrez les principales différences entre Campaign Classic et Campaign v8 dans [Transition de Campaign Classic v7 vers Campaign v8](v7-to-v8.md).
 
 **Voir aussi**
 

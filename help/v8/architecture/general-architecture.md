@@ -50,10 +50,10 @@ topic_v2:
     internal-label: Personalization
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 81%
+source-wordcount: '1180'
+ht-degree: 80%
 ---
 # Architecture générale{#general-architecture}
 
@@ -128,7 +128,7 @@ Dans son déploiement [Enterprise (FFDA)](enterprise-deployment.md), la base de 
 
 Vous pouvez déployer Adobe Campaign à l&#39;aide de la base de données et des schémas prédéfinis. Si nécessaire, cet environnement prédéfini peut être étendu. Toutes les données du datamart sont accessibles par Adobe Campaign via des appels SQL. Adobe Campaign fournit également un ensemble complet d’outils ETL (extraction, transformation, chargement) pour importer et exporter des données dans et en dehors du système.
 
-![](assets/data-flow-diagram.png)
+![Trafic entre ordinateurs clients, serveurs frontaux avec suivi et MTA, serveur d&#39;applications, base de données, boîte aux lettres de rebond](assets/data-flow-diagram.png)
 
 
 >[!CAUTION]

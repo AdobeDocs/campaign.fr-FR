@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 93%
+source-wordcount: '439'
+ht-degree: 78%
 ---
 # Traduire une application web{#translating-a-web-application}
 
@@ -36,18 +36,18 @@ Lorsque vous sélectionnez une ou plusieurs langues supplémentaires via l&#39;o
 
 Cette option vous permet d&#39;indiquer si le contenu du bloc doit être traduit ou non.
 
-Les chaînes marquées sont collectées pour être traduites, de la même manière que les autres chaînes de l&#39;application web, via l&#39;onglet **[!UICONTROL Traductions]** de l&#39;application. Pour plus d’informations, consultez [cette page](translating-a-web-form.md).
+Les chaînes marquées sont collectées pour être traduites, de la même manière que les autres chaînes de l&#39;application web, via l&#39;onglet **[!UICONTROL Traductions]** de l&#39;application. Pour plus d&#39;informations, consultez la section [Traduire un formulaire web](translating-a-web-form.md).
 
 Pour marquer les chaînes à traduire :
 
 1. Ouvrez une page de contenu éditée via le DCE dans une application Web.
 
-   ![](assets/dce_translation_3.png)
+   ![Éditeur d&#39;applications web avec l&#39;activité Page mise en surbrillance dans le flux Préchargement, Page, Stockage, Fin](assets/dce_translation_3.png)
 
 1. Sélectionnez un bloc HTML.
 1. Dans le bloc de paramètres de droite, l’option **[!UICONTROL Localisation]** vous permet de marquer le contenu du bloc sélectionné. Par défaut, seul le titre de la page est à traduire.
 
-   ![](assets/dce_translation_1.png)
+   ![Bloquer les options avec la section Localisation et son bouton bascule Traduire Oui/Non mis en surbrillance](assets/dce_translation_1.png)
 
    >[!NOTE]
    >
@@ -58,11 +58,11 @@ Pour marquer les chaînes à traduire :
    * Lorsque le bloc sélectionné contient plusieurs chaînes/blocs, il est marqué comme une seule chaîne à traduire. La chaîne contient alors le code HTML des éléments contenus dans ce bloc.
    * Lorsque vous souhaitez marquer un bloc contenant plusieurs chaînes dont au moins l’une d’entre-elles est déjà marquée, un avertissement s’affiche. Vous pouvez alors choisir de retirer la chaîne isolée et d’ajouter le bloc entier.
 
-     ![](assets/dce_translation_4.png)
+     ![Boîte de dialogue de confirmation de regroupement indiquant que le bloc contient déjà 2 éléments à traduire](assets/dce_translation_4.png)
 
    * Lorsque vous souhaitez supprimer l’indicateur d’une chaîne contenue dans un bloc déjà marqué comme à traduire, vous ne pouvez pas modifier directement l’option de traduction de la chaîne. Vous pouvez toutefois accéder au bloc contenant la chaîne afin de la modifier.
 
-     ![](assets/dce_translation_2.png)
+     ![Avertissement de la section de localisation indiquant que l&#39;élément se trouve déjà dans un bloc à traduire, avec un bouton Sélectionner un bloc](assets/dce_translation_2.png)
 
 1. Une fois les chaînes marquées, revenez à l&#39;application Web et sélectionnez l&#39;onglet **[!UICONTROL Traductions]**.
 1. Sélectionnez **[!UICONTROL Collecter les chaînes à traduire]**. Les chaînes marquées dans le DCE viennent s’ajouter à celles de l’application web.

@@ -35,22 +35,22 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 92%
+source-wordcount: '1798'
+ht-degree: 81%
 ---
 # Créer votre première diffusion {#create-a-msg}
 
-Dans cette page, vous découvrirez comment créer une diffusion unique ponctuelle. Vous pouvez créer d’autres types de diffusions pour élaborer vos cas d’utilisation. Découvrez les différents types de diffusion et comment les créer dans [cette page](gs-message.md).
+Dans cette page, vous découvrirez comment créer une diffusion unique ponctuelle. Vous pouvez créer d’autres types de diffusions pour élaborer vos cas d’utilisation. Découvrez les différents types de diffusions et comment les créer dans [Prise en main des messages](gs-message.md).
 
 Les étapes clés de la création d’une diffusion ponctuelle sont les suivantes :
 
-1. **Créer une diffusion**. [En savoir plus](#create-the-delivery)
+1. **Créer une diffusion**. [Création de la diffusion](#create-the-delivery)
 
-1. **Définir le contenu de la diffusion**. [En savoir plus](#content-of-the-delivery)
+1. **Définir le contenu de la diffusion**. [Définir le contenu de la diffusion](#content-of-the-delivery)
 
-1. **Sélectionner la population cible**. [En savoir plus](#target-population)
+1. **Sélectionner la population cible**. [Définir l&#39;audience cible](#target-population)
 
 Vous pouvez ensuite préparer, tester, envoyer et surveiller vos messages avec Adobe Campaign.
 
@@ -65,7 +65,7 @@ Pour créer une diffusion, procédez comme suit :
 1. Accédez à la liste des diffusions et cliquez sur **[!UICONTROL Créer]**.
 1. Sélectionnez le canal de diffusion. Pour ce faire, choisissez le modèle de diffusion adéquat dans la liste déroulante.
 
-   ![](../send/assets/select-the-new-template.png)
+   ![Liste déroulante des modèles de diffusion répertoriant les e-mails, SMS, tweets et autres modèles de diffusion à choisir](../send/assets/select-the-new-template.png)
 
    Un modèle natif est fourni pour chaque canal installé : email, téléphone, canaux mobiles (push/SMS), courrier, X (Twitter), etc. Les canaux disponibles dans la liste dépendent de votre contrat de licence.
 
@@ -110,32 +110,32 @@ Pour sélectionner les destinataires d’une diffusion, procédez comme suit :
 1. Dans l’éditeur de diffusion, sélectionnez **[!UICONTROL Pour]**.
 1. Si les destinataires sont stockés dans la base de données, sélectionnez la première option.
 
-   ![](../send/sms/assets/audience_to.png){zoomable="yes"}
+   ![Sélectionner la boîte de dialogue cible avec le lien À et Défini dans l&#39;option de base de données sélectionnée](../send/sms/assets/audience_to.png){zoomable="yes"}
 
 1. Sélectionnez le [mapping de ciblage](../audiences/target-mappings.md) dans la liste déroulante **[!UICONTROL Mapping de ciblage]**.
 1. Cliquez sur le bouton **[!UICONTROL Ajouter]** pour définir les filtres de restriction.
 
-   ![](assets/target-type.png){width="60%" zoomable="yes"}
+   Boîte de dialogue ![Type de cible répertoriant les filtres de restriction tels que les destinataires inclus dans un dossier](assets/target-type.png){width="60%" zoomable="yes"}
 
    Sélectionnez un type de filtre et cliquez sur **[!UICONTROL Suivant]** pour définir les conditions. Vous pouvez afficher les personnes destinataires filtrées dans l’onglet **[!UICONTROL Aperçu]**. En fonction du type de cible, le bouton **[!UICONTROL Affiner la cible]** permet de combiner plusieurs critères de ciblage.
 
    Les types de cible suivants sont disponibles :
 
-   * **[!UICONTROL Conditions de filtrage]** : utilisez cette option pour définir une requête personnalisée afin de récupérer les destinataires. Découvrez comment concevoir une requête dans [cette section](../start/query-editor.md).
-   * **[!UICONTROL Une liste de destinataires]** : utilisez cette option pour cibler une liste de profils. Découvrez les listes dans [cette section](../audiences/create-audiences.md).
+   * **[!UICONTROL Conditions de filtrage]** : utilisez cette option pour définir une requête personnalisée afin de récupérer les destinataires. Découvrez comment concevoir une requête dans [Utiliser le requêteur](../start/query-editor.md).
+   * **[!UICONTROL Une liste de destinataires]** : utilisez cette option pour cibler une liste de profils. En savoir plus sur les listes dans [Créer des audiences de profil dans Campaign](../audiences/create-audiences.md).
    * **[!UICONTROL Une personne destinataire]** : utilisez cette option pour sélectionner un profil spécifique dans la base de données.
    * **[!UICONTROL Destinataires présents dans un dossier]** : utilisez cette option pour cibler tous les profils contenus dans un dossier spécifique.
    * **[!UICONTROL Destinataires d’une diffusion]** : utilisez cette option pour créer la cible à partir des personnes destinataires d’une diffusion. Vous devez ensuite sélectionner la diffusion dans la liste.
 
-     ![](assets/target-recipient-delivery.png)
+     Boîte de dialogue de l&#39;élément cible ![Sélection d&#39;une diffusion dont les destinataires sont ciblés, avec un filtre Comportement](assets/target-recipient-delivery.png)
 
    * **[!UICONTROL Destinataires de la diffusion appartenant à un dossier]** : utilisez cette option pour construire la cible à partir des destinataires des diffusions incluses dans un dossier spécifique.
 
-     ![](assets/target-delivery-folder.png)
+     ![Boîte de dialogue de l’élément cible pour sélectionner un dossier de diffusion, avec les options Comportement et Inclure les sous-dossiers](assets/target-delivery-folder.png)
 
      Vous pouvez filtrer sur le comportement des destinataires en le sélectionnant depuis la liste déroulante :
 
-     ![](assets/target-filter-behavior.png)
+     ![Liste déroulante des comportements répertoriant les filtres de destinataires tels que les messages ouverts ou sur lesquels l&#39;utilisateur a cliqué, les messages non ouverts et les messages en échec](assets/target-filter-behavior.png)
 
      >[!NOTE]
      >
@@ -143,9 +143,9 @@ Pour sélectionner les destinataires d’une diffusion, procédez comme suit :
 
    * **[!UICONTROL Abonnés d&#39;un service d&#39;information]** : cette option vous permet de sélectionner une newsletter à laquelle les destinataires doivent être abonnés pour être ciblés par la diffusion en cours de création.
 
-     ![](assets/target-service.png)
+     ![Boîte de dialogue de l’élément Target répertoriant les services d’information, tels que la newsletter, pour cibler les abonnés](assets/target-service.png)
 
-   * **[!UICONTROL Filtres utilisateur]** : cette option permet d’accéder aux filtres préconfigurés disponibles afin de les utiliser comme critères de filtrage des profils dans la base de données. Les filtres préconfigurés sont présentés dans [cette section](../audiences/create-filters.md#default-filters).
+   * **[!UICONTROL Filtres utilisateur]** : cette option permet d’accéder aux filtres préconfigurés disponibles afin de les utiliser comme critères de filtrage des profils dans la base de données. Les filtres préconfigurés sont présentés dans [Filtres par défaut](../audiences/create-filters.md#default-filters).
    * L&#39;option **[!UICONTROL Exclure les destinataires de ce segment]** permet de cibler les destinataires qui ne répondent pas aux critères de ciblage définis. Pour utiliser cette option, cochez la case correspondante puis opérez un ciblage, comme défini précédemment, pour exclure les profils en résultant.
 
 1. Saisissez un nom pour ce ciblage dans le champ **[!UICONTROL Libellé]**. Par défaut, le libellé est celui correspondant au premier critère de ciblage. Lorsque vous combinez des critères de filtrage, il est recommandé d’utiliser un nom explicite.
@@ -153,7 +153,7 @@ Pour sélectionner les destinataires d’une diffusion, procédez comme suit :
 
    Les critères de ciblage définis sont résumés dans la section centrale de l’onglet principal de configuration de la cible. Cliquez sur un critère pour en afficher le contenu (configuration et prévisualisation). Pour supprimer un critère, cliquez sur la croix située après son libellé.
 
-   ![](assets/target-remove-criterion.png)
+   ![Onglet cible principal avec la croix Supprimer après un critère de ciblage dans la population cible](assets/target-remove-criterion.png)
 
 ### Sélection de destinataires externes {#selecting-external-recipients}
 
@@ -184,13 +184,13 @@ Vous pouvez exclure les adresses pour lesquelles un nombre d’erreurs consécut
 
 Pour modifier la configuration par défaut, cliquez sur le lien **[!UICONTROL Éditer...]**.
 
-![](assets/target-exclusion-settings.png)
+![Options des paramètres d&#39;exclusion, y compris l&#39;exclusion des destinataires en quarantaine et en quarantaine et la conservation des doublons](assets/target-exclusion-settings.png)
 
 +++ Voir les options disponibles
 
 * **[!UICONTROL Exclure les adresses en double lors de la diffusion]** : cette option est active par défaut et supprime les adresses e-mail en double lors de la diffusion. La stratégie appliquée peut varier en fonction de l’utilisation d’Adobe Campaign et du type de données dans la base de données. La valeur de l’option peut être configurée pour chaque modèle de diffusion.
 * **[!UICONTROL Exclure les destinataires qui ne veulent plus être contactés]**, c&#39;est-à-dire les destinataires dont les adresses email se trouvent sur une liste bloquée (&#39;opt out&#39;). Cette option doit rester sélectionnée afin de respecter l’éthique professionnelle du e-marketing.
-* **[!UICONTROL Exclure les destinataires en quarantaine]** : cette option permet d’exclure de la cible les profils dont l’adresse est en quarantaine. Nous vous recommandons vivement de ne pas décocher cette option. En savoir plus sur la gestion des quarantaines dans [cette section](../send/quarantines.md).
+* **[!UICONTROL Exclure les destinataires en quarantaine]** : cette option permet d’exclure de la cible les profils dont l’adresse est en quarantaine. Nous vous recommandons vivement de ne pas décocher cette option. En savoir plus sur la gestion des quarantaines dans [Gestion des quarantaines dans Campaign](../send/quarantines.md).
 * **[!UICONTROL Limiter la diffusion]** à un nombre donné de messages. Cette option vous permet de saisir le nombre maximum de messages à envoyer. Si l’audience cible dépasse le nombre de messages indiqué, une sélection aléatoire est appliquée sur la cible. Pour envoyer tous les messages, conservez cette valeur sur « 0 ».
 * **[!UICONTROL Conserver les enregistrements en double (même identifiant)]** : cette option permet d’envoyer plusieurs diffusions à des destinataires qui répondent à plusieurs critères de ciblage.
 +++
@@ -202,7 +202,7 @@ Pour les diffusions e-mail, vous pouvez envoyer des BAT pour valider le contenu 
 
 Le BAT est un message spécifique qui permet de tester un message avant son envoi à l’audience principale. Les destinataires du BAT procèdent ensuite à la validation du message : rendu, contenu, paramètres de personnalisation et configuration.
 
-Pour plus d’informations sur l’envoi et les personnes destinataires des BAT, consultez [cette section](../send/preview-and-proof.md#send-proofs).
+Pour plus d&#39;informations sur les destinataires et l&#39;envoi de BAT, voir [Envoyer des BAT](../send/preview-and-proof.md#send-proofs).
 
 
 #### Tutoriel vidéo {#seeds-and-proofs-video}
@@ -232,4 +232,4 @@ Pour cela :
 
 Accédez aux paramètres de diffusion pour configurer d’autres paramètres et définir comment envoyer vos messages. Vous pouvez définir la priorité de diffusion, configurer les vagues d’envoi, configurer les paramètres de reprise et tester l’envoi de votre diffusion. Une fois la configuration terminée, vous pouvez confirmer l’envoi. Les messages sont alors envoyés immédiatement ou selon le planning de diffusion.
 
-Découvrez comment configurer vos paramètres de diffusion dans [cette page](../send/configure-and-send.md).
+Découvrez comment configurer vos paramètres de diffusion dans [Configurer des e-mails avec Adobe Campaign](../send/configure-and-send.md).

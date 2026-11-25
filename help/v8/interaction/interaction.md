@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 709e38026d74ed707d10fc8109356289dc9f4ac9
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1639'
-ht-degree: 91%
+source-wordcount: '1655'
+ht-degree: 90%
 ---
 # Gestion des interactions en temps réel
 
@@ -42,7 +42,7 @@ Vous pouvez créer un catalogue d’offres qui s’interface avec vos canaux sor
 
 Interaction vous permet de créer et de gérer un catalogue d’offres, et de configurer les règles d’éligibilité et les thèmes d’application qui lui sont associés. Selon le canal choisi, le contenu de l’offre peut être personnalisé grâce à différentes fonctions de rendu. Enfin, vous pouvez utiliser le module de simulation pour calculer l’impact d’une présentation des offres.
 
-![](assets/interaction-cycle.png)
+![Cycle du moteur d&#39;offres : appel au moteur, appel au catalogue, sélection et personnalisation, historique, présentation des offres](assets/interaction-cycle.png)
 
 Tout d’abord, un contact se produit entre un client et une entreprise par le biais d’un canal de communication : il peut s’agir d’un site web (interaction entrante), d’un e-mail, d’un SMS, d’une notification push (interactions sortantes). [En savoir plus](#interaction-types)
 
@@ -76,7 +76,7 @@ Si l&#39;emplacement est défini sur un canal unitaire en mode identifié, il es
 
 1. Paramétrez le moteur d’offres pour les interactions entrantes, afin de proposer et mettre à jour une ou plusieurs offres.
 
-   Les différents modes d’intégration sont décrits dans [cette section](interaction-present-offers.md).
+   Les différents modes d&#39;intégration sont présentés dans la section [Présentation d&#39;une offre (interaction entrante)](interaction-present-offers.md).
 
    >[!NOTE]
    >

@@ -25,10 +25,10 @@ level_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 709e38026d74ed707d10fc8109356289dc9f4ac9
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 81%
+source-wordcount: '1431'
+ht-degree: 76%
 ---
 # Compréhension des environnements et de l&#39;architecture des interactions dans Campaign
 
@@ -57,7 +57,7 @@ Ces deux types d&#39;interactions peuvent être réalisés soit en **mode unitai
 
 Dès lors qu&#39;une offre peut ou doit être présentée (en fonction des paramétrages réalisés), le moteur d&#39;offre joue le rôle d&#39;intermédiaire : il calcule automatiquement la meilleure offre possible pour un contact parmi celles disponibles, en combinant les données recueillies sur le contact et les différentes règles applicables définies dans l&#39;application.
 
-![](assets/architecture_interaction2.png)
+![Flux du moteur d&#39;offres : diffusion sortante par lots, interactions unitaires identifiées et unitaires anonymes avec leurs catalogues](assets/architecture_interaction2.png)
 
 ## Architecture répartie
 
@@ -66,7 +66,7 @@ Pour être en mesure d&#39;assurer l&#39;évolutivité et d&#39;offrir un servic
 * une ou plusieurs instances de pilotage dédiées au canal sortant et contenant la base marketing et l&#39;environnement en édition
 * une ou plusieurs instances d&#39;exécution dédiées au canal entrant
 
-![](assets/interaction_powerbooster_schema.png)
+![L&#39;instance de pilotage déploie les offres de conception en ligne et envoie les packages aux instances d&#39;exécution qui publient sur des sites web](assets/interaction_powerbooster_schema.png)
 
 Les instances d’exécution sont dédiées au canal entrant et contiennent la version en ligne du catalogue. Chaque instance d’exécution est indépendante et dédiée à un segment de contact (par exemple, une instance d’exécution par pays). Les appels au moteur d&#39;offre doivent être effectués directement sur l&#39;instance d&#39;exécution (une URL spécifique par instance d&#39;exécution). Étant donné que la synchronisation entre les instances n&#39;est pas automatique, les interactions d&#39;un même contact doivent être envoyées à travers la même instance.
 
@@ -82,7 +82,7 @@ Les offres sont automatiquement déployées puis publiées sur les instances d&#
 
 Les offres supprimées dans l&#39;environnement en édition sont désactivées sur toutes les instances en ligne. Les propositions et offres obsolètes sont automatiquement supprimées sur toutes les instances après la période de purge (spécifiée dans l’assistant de déploiement de chaque instance) et la période glissante (spécifiée dans les règles de typologie des propositions entrantes).
 
-![](assets/interaction_powerbooster_schema2.png)
+![Propositions d&#39;offres synchronisées dans les deux sens entre l&#39;instance de pilotage et chaque instance d&#39;exécution](assets/interaction_powerbooster_schema2.png)
 
 Un workflow est créé pour chaque environnement et compte externe pour la synchronisation des propositions. La fréquence de synchronisation peut être ajustée pour chaque environnement et compte externe.
 
@@ -110,7 +110,7 @@ Sur les instances de pilotage :
 
 1. Créez un compte externe par instance d&#39;exécution :
 
-   ![](assets/interaction_powerbooster1.png)
+   ![Formulaire de compte externe pour une instance d&#39;exécution avec les options Activé, Connexion, Message Center et Interaction](assets/interaction_powerbooster1.png)
 
    * Renseignez le libellé et un nom interne court et explicite.
    * Sélectionnez le type **[!UICONTROL Instance d&#39;exécution]**.
@@ -120,7 +120,7 @@ Sur les instances de pilotage :
    * Cochez le type d&#39;application utilisée : **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]**, ou les deux.
    * Saisissez le compte FDA utilisé. Un profil d’opérateur ou d’opératrice doit être créé sur les instances d’exécution et doit disposer des droits de lecture et d’écriture suivants sur la base de données de l’instance concernée :
 
-     ```
+     ```sql
      grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
      grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
      ```
@@ -131,7 +131,7 @@ Sur les instances de pilotage :
 
 1. Configurez l&#39;environnement :
 
-   ![](assets/interaction_powerbooster2.png)
+   ![Onglet Général de l&#39;environnement répertoriant les instances d&#39;exécution avec fréquence de mise à jour et filtrage des propositions par pays](assets/interaction_powerbooster2.png)
 
    * Ajoutez la liste des instances d&#39;exécutions.
    * Définissez pour chacune la fréquence de synchronisation et les critères de filtrage (par exemple par pays).
@@ -142,7 +142,7 @@ Sur les instances de pilotage :
 
 Si, pour des raisons d’optimisation, seule une partie de la base de données marketing est dupliquée sur les instances d’exécution, vous pouvez définir un schéma restreint lié à l’environnement afin de permettre aux utilisateurs et utilisatrices de n’utiliser que les données disponibles sur les instances d’exécution. Vous pouvez créer une offre utilisant des données non disponibles sur les instances d’exécution. Pour cela, vous devez désactiver la règle sur les autres canaux en limitant cette règle au canal sortant (champ **[!UICONTROL Pris en compte si]**).
 
-![](assets/ita_filtering.png)
+![Filtre d’élément de population sur le pays avec le champ Pris en compte si pour le canal](assets/ita_filtering.png)
 
 ### Options de maintenance {#maintenance-options}
 
@@ -180,7 +180,7 @@ Deux méthodes sont disponibles :
 
 **Table de travail** (recommandée)
 
-```
+```sql
 CREATE TABLE NmsPropositionRcp_tmp AS SELECT * FROM nmspropositionrcp WHERE 0=1;
 ALTER TABLE nmspropositionrcp_tmp
   ALTER COLUMN ipropositionid TYPE bigint,
@@ -198,7 +198,7 @@ ALTER TABLE nmspropositionrcp_tmp RENAME TO nmspropositionrcp;
 
 **Alter Table**
 
-```
+```sql
 ALTER TABLE nmspropositionrcp
   ALTER COLUMN ipropositionid TYPE bigint,
   ALTER COLUMN iinteractionid TYPE bigint;

@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 96%
+source-wordcount: '869'
+ht-degree: 94%
 ---
 # Réplication des données {#wf-data-replication}
 
@@ -93,19 +93,19 @@ Outre le workflow technique intégré **Répliquer les tables de référence**, 
 
 * Ajoutez une activité **Code JavaScript** spécifique avec le code suivant :
 
-  ```
+  ```javascript
   nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
   ```
 
-  ![](assets/jscode.png)
+  ![Activité du code JavaScript avec le script nms.replicationStrategy.StartReplicateStagingData pour dem:sampleTable](assets/jscode.png)
 
 * Ajoutez une activité **nlmodule** spécifique avec la commande suivante :
 
-  ```
+  ```bash
   nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
   ```
 
-  ![](assets/nlmodule.png)
+  ![activité du module nlserver avec le paramètre ffdaReplicateStaging -stagingSchema -instance:acc1](assets/nlmodule.png)
 
 +++
 
@@ -121,7 +121,7 @@ Les API permettent la réplication des données personnalisées et prêtes à l�
 
 Exemple :
 
-```
+```javascript
 var dataSource = "nms:extAccount:ffda";
 var xml = xtk.builder.CopyXxlData(
     <params dataSource={dataSource} policy="xs">

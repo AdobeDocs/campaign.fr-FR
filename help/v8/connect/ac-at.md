@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 93%
+source-wordcount: '1299'
+ht-degree: 75%
 ---
 # Utilisation de Campaign et Adobe Target
 
@@ -66,7 +66,7 @@ Dans cet e-mail, nous souhaitons que les images changent dynamiquement en foncti
 * L&#39;e-mail est ouvert aux États-Unis.
 * Si aucune de ces conditions n&#39;est remplie, une image par défaut s&#39;affiche.
 
-![](assets/target_4.png)
+![Variantes d&#39;e-mail par audience : par défaut, un avion, la Tour Eiffel française, la Statue de la Liberté américaine.](assets/target_4.png)
 
 Les étapes suivantes doivent être réalisées dans Adobe Campaign et Adobe Target :
 
@@ -86,11 +86,11 @@ Dans Adobe Campaign, vous pouvez insérer une image dynamique de Target dans un
 
 * Si vous utilisez l&#39;éditeur Digital Content Editor, choisissez une image existante, puis sélectionnez **[!UICONTROL Insérer]** > **[!UICONTROL Image dynamique servie par Adobe Target]** depuis la barre d&#39;outils.
 
-  ![](assets/target_5.png)
+  ![Éditeur de contenu numérique avec image dynamique servie par Adobe Target sélectionné dans le menu de la barre d&#39;outils image](assets/target_5.png)
 
 * Si vous utilisez l&#39;éditeur standard, placez le curseur à l&#39;endroit où vous souhaitez insérer l&#39;image et sélectionnez **[!UICONTROL Inclure]** > **[!UICONTROL Image dynamique servie par Adobe Target...]** dans le menu déroulant de personnalisation.
 
-  ![](assets/target_12.png)
+  ![Éditeur standard avec Inclure puis Image dynamique servie par Adobe Target sélectionné dans le menu de personnalisation](assets/target_12.png)
 
 Vous pouvez ensuite définir les paramètres de l&#39;image :
 
@@ -101,7 +101,7 @@ Vous pouvez ensuite définir les paramètres de l&#39;image :
 
 Dans Adobe Target, si vous utilisez les autorisations Enterprise, ajoutez la propriété correspondante dans ce champ. En savoir plus sur les autorisations Target Enterprise dans la [documentation Adobe Target](https://experienceleague.adobe.com/fr/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
 
-![](assets/target_13.png)
+![Insérer une image servie par la boîte de dialogue Adobe Target avec l’image par défaut, l’emplacement cible, la page de destination et les paramètres de décision](assets/target_13.png)
 
 ### Créer des offres de redirection {#create-redirect-offers}
 
@@ -113,11 +113,11 @@ Dans notre cas, nous avons besoin de deux offres de redirection, la troisième (
 
 1. Cliquez sur **[!UICONTROL Créer]**, puis sur **[!UICONTROL Offre de redirection]**.
 
-   ![](assets/target_9.png)
+   ![Onglet Offres Adobe Target, Offres de code, avec le menu Créer ouvert et Offre de redirection en surbrillance](assets/target_9.png)
 
 1. Saisissez le nom de votre offre et l&#39;URL de votre image.
 
-   ![](assets/target_6.png)
+   ![Formulaire de création d’offre de redirection Adobe Target avec le champ Nom défini sur Audience française et le champ URL de redirection](assets/target_6.png)
 
 1. Suivez la même procédure pour l&#39;offre de redirection restante. Pour en savoir plus à ce sujet, consultez cette [documentation Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=fr#experiences){target="_blank"}.
 
@@ -127,11 +127,11 @@ Dans Adobe Target, vous devez créer les deux audiences dans lesquelles les vis
 
 1. Pour créer une audience avec Target, dans l’onglet **[!UICONTROL Audiences]**, cliquez sur **[!UICONTROL Créer une audience]**.
 
-   ![](assets/audiences_1.png)
+   ![Onglet Audiences Adobe Target avec le bouton Créer une audience en surbrillance](assets/audiences_1.png)
 
 1. Ajoutez un nom à l&#39;audience.
 
-   ![](assets/audiences_2.png)
+   ![Boîte de dialogue Nouvelle audience Adobe Target avec le champ Nom de l’audience et le bouton Ajouter une règle](assets/audiences_2.png)
 
 1. Cliquez sur **[!UICONTROL Ajouter une règle]** et sélectionnez une catégorie. La règle utilise des critères spécifiques pour cibler les visiteurs et visiteuses. Vous pouvez affiner les règles en ajoutant des conditions ou en créant des règles dans d’autres catégories.
 
@@ -145,17 +145,17 @@ Vous devez d&#39;abord définir l&#39;audience :
 
 1. Pour créer une activité de ciblage d&#39;expérience, dans l&#39;onglet **[!UICONTROL Activités]**, cliquez sur **[!UICONTROL Créer une activité]**, puis sur **[!UICONTROL Ciblage d&#39;expérience]**.
 
-   ![](assets/target_10.png)
+   ![Onglet Activités Adobe Target avec le menu Créer une activité ouvert et le ciblage d’expérience mis en surbrillance](assets/target_10.png)
 
 1. Sélectionnez **[!UICONTROL Formulaire]** comme **[!UICONTROL compositeur d&#39;expérience]**.
 
 1. Choisissez une audience en cliquant sur le bouton **[!UICONTROL Changer l&#39;audience]**.
 
-   ![](assets/target_10_2.png)
+   ![Nouvelle étape Expériences d’activité avec l’option Modifier l’audience sélectionnée dans le menu Audience Tous les visiteurs](assets/target_10_2.png)
 
 1. Sélectionnez l&#39;audience créée aux étapes précédentes.
 
-   ![](assets/target_10_3.png)
+   ![Boîte de dialogue Choisir une audience répertoriant la bibliothèque d’audiences avec tous les visiteurs et autres audiences](assets/target_10_3.png)
 
 1. Créez une autre expérience en cliquant sur **[!UICONTROL Ajouter le ciblage d&#39;expérience]**.
 
@@ -163,27 +163,27 @@ Ajoutez ensuite le contenu pour chaque audience :
 
 1. Sélectionnez le nom de l’emplacement choisi lors de l’insertion de l’offre dynamique dans Adobe Campaign.
 
-   ![](assets/target_15.png)
+   ![Activité de ciblage d’expérience avec l’emplacement v_rawbox sélectionné dans la liste Sélectionner l’emplacement](assets/target_15.png)
 
 1. Cliquez sur le bouton de liste déroulante et sélectionnez **[!UICONTROL Modifier l&#39;offre de redirection]**.
 
-   ![](assets/target_content.png)
+   ![Menu Contenu de l’activité avec l’option Modifier l’offre de redirection mise en surbrillance](assets/target_content.png)
 
 1. Sélectionnez l&#39;offre de redirection précédemment créée.
 
-   ![](assets/target_content_2.png)
+   ![Boîte de dialogue Sélectionner une offre de redirection avec l’offre d’audience française sélectionnée et le bouton Enregistrer](assets/target_content_2.png)
 
 1. Suivez la même procédure pour la deuxième expérience.
 
 La fenêtre **[!UICONTROL Target]** résume votre activité. Si nécessaire, vous pouvez ajouter d’autres expériences.
 
-![](assets/target_experience.png)
+![Étape Cible répertoriant l’audience française comme expérience A et l’audience américaine comme expérience B avec Ajouter une expérience](assets/target_experience.png)
 
 La fenêtre **[!UICONTROL Objectif et paramètres]** permet de personnaliser votre activité en définissant une priorité, un objectif ou une durée.
 
 La section **[!UICONTROL Paramètres de création de rapports]** permet de sélectionner une action et d&#39;éditer les paramètres qui déterminent à quel moment votre objectif est atteint.
 
-![](assets/target_experience_2.png)
+![Étape Objectifs et paramètres avec la mesure d’objectif définie sur Conversion et Affichage d’une mbox pour v6_rawbox](assets/target_experience_2.png)
 
 ## Prévisualisation et envoi du message {#preview-send-email}
 
@@ -193,4 +193,4 @@ Vous pouvez constater que l&#39;image change selon les différentes expériences
 
 Votre e-mail comprenant une offre dynamique provenant de Target peut maintenant être envoyé.
 
-![](assets/target_20.png)
+![Aperçu de l&#39;email de Marie Dupont montrant l&#39;image de la Tour Eiffel diffusée par Adobe Target pour le public français](assets/target_20.png)

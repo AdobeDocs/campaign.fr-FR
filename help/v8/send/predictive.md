@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 90%
+source-wordcount: '817'
+ht-degree: 88%
 ---
 # Optimisation de l’heure d’envoi et score prédictif de l’engagement{#optimize-message-delivery}
 
@@ -81,7 +81,7 @@ Détails de la sortie :
 
 L’optimisation de l’heure d’envoi prédictive est stockée au niveau du profil :
 
-![](assets/sto-schema.png)
+![Structure du schéma des destinataires avec les champs d’optimisation de l’heure d’envoi prédictive pour choisir le meilleur moment pour cliquer et ouvrir](assets/sto-schema.png)
 
 
 >[!NOTE]

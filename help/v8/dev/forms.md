@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '2590'
-ht-degree: 98%
+source-wordcount: '2842'
+ht-degree: 89%
 ---
 # Prise en main des formulaires de saisie {#gs-ac-forms}
 
@@ -51,15 +51,15 @@ La clé d&#39;identification d&#39;un formulaire correspond à une chaîne const
 
 Créez et configurez des formulaires de saisie à partir du dossier **[!UICONTROL Administration] > [!UICONTROL Configuration] > [!UICONTROL Formulaires de saisie]** de la console client :
 
-![](assets/form_arbo.png)
+![Arborescence de l&#39;Explorateur sous Configuration avec le dossier Formulaires de saisie sélectionné](assets/form_arbo.png)
 
 La zone d&#39;édition permet de renseigner le contenu XML du formulaire de saisie :
 
-![](assets/form_edit.png)
+![Onglet Modifier de l&#39;éditeur de formulaire de saisie affichant le XML du formulaire Destinataire (cus) avec les entrées date de naissance, genre et e-mail](assets/form_edit.png)
 
 L&#39;aperçu génère l&#39;affichage du formulaire de saisie :
 
-![](assets/form_preview.png)
+![Onglet Aperçu du formulaire Destinataire (cus) affichant les champs Date de naissance, Genre et E-mail](assets/form_preview.png)
 
 ## Structure de formulaire
 
@@ -67,7 +67,7 @@ La description d’un formulaire est un document XML structuré respectant la gr
 
 Le document XML du formulaire de saisie doit contenir l&#39;élément racine `<form>` avec les attributs **name** et **namespace** pour renseigner respectivement le nom du formulaire et son espace de noms.
 
-```
+```xml
 <form name="form_name" namespace="name_space">
 ...
 </form>
@@ -75,7 +75,7 @@ Le document XML du formulaire de saisie doit contenir l&#39;élément racine `<f
 
 Par défaut, un formulaire est associé au schéma de données possédant un nom et un espace de noms identiques. Pour associer un formulaire avec un nom différent, définissez l&#39;attribut **entity-schema** de l&#39;élément `<form>` sur le nom de la clé de schéma. Pour illustrer la structure d’un formulaire de saisie, nous allons décrire une interface à partir du schéma d’exemple « cus:recipient » :
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <enumeration name="gender" basetype="byte">    
     <value name="unknown" label="Not specified" value="0"/>    
@@ -93,9 +93,9 @@ Par défaut, un formulaire est associé au schéma de données possédant un nom
 
 Le formulaire de saisie à partir du schéma d&#39;exemple :
 
-![](assets/do-not-localize/form_exemple1.png)
+![Rendu du formulaire de saisie : genre, date de naissance et e-mail sous la forme de trois champs empilés](assets/do-not-localize/form_exemple1.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <input xpath="@gender"/>
   <input xpath="@birthDate"/>
@@ -122,9 +122,9 @@ La disposition des contrôles ressemble à celle utilisée dans les tableaux HTM
 
 Pour afficher les contrôles de l&#39;exemple précédent sur deux colonnes :
 
-![](assets/do-not-localize/form_exemple2.png)
+![Formulaire de saisie avec genre et date de naissance côte à côte en deux colonnes et e-mail ci-dessous](assets/do-not-localize/form_exemple2.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2">
     <input xpath="@gender"/>
@@ -138,9 +138,9 @@ L&#39;élément **`<container>`** avec l&#39;attribut **colcount** permet de for
 
 L&#39;attribut **colspan** sur un contrôle étend celui-ci avec le nombre de colonnes renseignées dans sa valeur :
 
-![](assets/do-not-localize/form_exemple3.png)
+![Formulaire de saisie à deux colonnes avec le champ E-mail étendu sur les deux colonnes](assets/do-not-localize/form_exemple3.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2">
     <input xpath="@gender"/>
@@ -152,9 +152,9 @@ L&#39;attribut **colspan** sur un contrôle étend celui-ci avec le nombre de co
 
 En renseignant l&#39;attribut **type=&quot;frame&quot;**, le conteneur ajoute un habillage autour des contrôles enfants avec le libellé contenu dans l&#39;attribut **label** :
 
-![](assets/do-not-localize/form_exemple4.png)
+![Formulaire de saisie à deux colonnes avec genre, date de naissance et champ de courrier électronique pleine largeur, sans cadre visible](assets/do-not-localize/form_exemple4.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2" type="frame" label="General">
     <input xpath="@gender"/>
@@ -166,9 +166,9 @@ En renseignant l&#39;attribut **type=&quot;frame&quot;**, le conteneur ajoute un
 
 Un élément **`<static>`** peut être utilisé pour mettre en forme le formulaire de saisie :
 
-![](assets/do-not-localize/form_exemple5.png)
+![Formulaire de saisie avec les champs Genre, Date et E-mail et une ligne d&#39;aide statique en dessous](assets/do-not-localize/form_exemple5.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <static type="separator" colspan="2" label="General"/>
   <input xpath="@gender"/>
@@ -190,7 +190,7 @@ L’attribut **xpath** sur un `<container>` permet de simplifier le référencem
 
 Exemple de conteneur sans « xpath » :
 
-```
+```xml
 <container colcount="2">
   <input xpath="location/@zipCode"/>
   <input xpath="location/@city"/>
@@ -199,7 +199,7 @@ Exemple de conteneur sans « xpath » :
 
 Exemple avec ajout du « xpath » sur l’élément de nom « location » :
 
-```
+```xml
 <container colcount="2" xpath="location">
   <input xpath="@zipCode"/>
   <input xpath="@city"/>
@@ -212,9 +212,9 @@ Les conteneurs sont utilisés pour construire des contrôles complexes ayant rec
 
 Utilisez un conteneur **notebook** pour formater les données dans des pages accessibles à partir d’onglets.
 
-![](assets/do-not-localize/form_exemple6.png)
+![Formulaire de saisie avec onglets Général et Emplacement au-dessus des champs Genre, Date et E-mail](assets/do-not-localize/form_exemple6.png)
 
-```
+```xml
 <container type="notebook">
   <container colcount="2" label="General">
     <input xpath="@gender"/>
@@ -231,7 +231,7 @@ Le conteneur principal est défini par l’attribut **type=&quot;notebook&quot;*
 
 Ajoutez l&#39;attribut **style=&quot;down&quot;** pour forcer le positionnement vertical des libellés d&#39;onglet sous le contrôle. Cet attribut est facultatif. La valeur par défaut est **&quot;up&quot;**.
 
-![](assets/do-not-localize/form_exemple7.png)
+![Formulaire de saisie avec les libellés de l&#39;onglet Général et Emplacement placés sous les champs Genre, Date et E-mail](assets/do-not-localize/form_exemple7.png)
 
 `<container style="down" type="notebook">  ... </container>`
 
@@ -239,9 +239,9 @@ Ajoutez l&#39;attribut **style=&quot;down&quot;** pour forcer le positionnement 
 
 Utilisez ce conteneur pour afficher une barre d’icônes verticale permettant de sélectionner les pages à afficher.
 
-![](assets/do-not-localize/form_exemple8.png)
+![Formulaire de saisie avec une barre d&#39;icônes verticale offrant les pages Général et Emplacement en regard des champs Genre, Date et E-mail](assets/do-not-localize/form_exemple8.png)
 
-```
+```xml
 <container type="iconbox">
   <container colcount="2" label="General" img="xtk:properties.png">
     <input xpath="@gender"/>
@@ -266,7 +266,7 @@ Vous pouvez masquer un ensemble de contrôles à partir d&#39;une condition dyna
 
 Cet exemple illustre la visibilité des contrôles sur la valeur du champ &quot;Genre&quot; :
 
-```
+```xml
 <container type="visibleGroup" visibleIf="@gender=1">
   ...
 </container>
@@ -287,7 +287,7 @@ Exemples de syntaxes de conditions :
 
 Ce conteneur vous permet d’activer ou de désactiver un ensemble de données à partir d’une condition dynamique. La désactivation d’un contrôle empêche sa modification. L’exemple ci-dessous illustre l’activation des contrôles à partir de la valeur du champ « Gender » :
 
-```
+```xml
 <container type="enabledGroup" enabledIf="@gender=1">
   ...
 </container>
@@ -302,15 +302,15 @@ Un conteneur d’activation est défini par l’attribut **type=&quot;enabledGro
 
 Pour rappel, un lien est déclaré dans le schéma de données de la façon suivante :
 
-```
+```xml
 <element label="Company" name="company" target="cus:company" type="link"/>
 ```
 
 Le contrôle d&#39;édition du lien dans son formulaire de saisie est :
 
-![](assets/do-not-localize/form_exemple9.png)
+![Champ de société affichant un contrôle de modification de liste déroulante pour un lien, avec Adobe sélectionné](assets/do-not-localize/form_exemple9.png)
 
-```
+```xml
 <input xpath="company"/>
 ```
 
@@ -324,7 +324,7 @@ L’icône **[!UICONTROL Modifier le lien]** (loupe) lance le formulaire d’éd
 
 Vous pouvez restreindre le choix des éléments de la cible en ajoutant l’élément **`<sysfilter>`** à partir de la définition du lien dans le formulaire de saisie :
 
-```
+```xml
 <input xpath="company">
   <sysFilter>
     <condition expr="[location/@city] =  'Newton"/>
@@ -334,7 +334,7 @@ Vous pouvez restreindre le choix des éléments de la cible en ajoutant l’él�
 
 Vous pouvez aussi trier la liste avec l&#39;élément **`<orderby>`** :
 
-```
+```xml
 <input xpath="company">
   <orderBy>
     <node expr="[location/@zipCode]"/>
@@ -362,7 +362,7 @@ Le principe consiste à afficher la liste des éléments liés avec un chargemen
 
 Exemple de lien de collection dans un schéma :
 
-```
+```xml
 <element label="Events" name="rcpEvent" target="cus:event" type="link" unbound="true">
 ...
 </element>
@@ -370,7 +370,7 @@ Exemple de lien de collection dans un schéma :
 
 La liste dans son formulaire de saisie :
 
-```
+```xml
  <input xpath="rcpEvent" type="linklist">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -391,7 +391,7 @@ Le bouton **[!UICONTROL Détail]** est automatiquement ajouté lorsque l&#39;att
 
 Un filtre et un tri peuvent être appliqués lors du chargement de la liste :
 
-```
+```xml
  <input xpath="rcpEvent" type="linklist">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -412,7 +412,7 @@ L&#39;ajout d&#39;un élément dans la liste doit donc permettre de renseigner u
 
 Exemple de table de relation dans un schéma :
 
-```
+```xml
 <srcSchema name="subscription" namespace="cus">
   <element name="recipient" type="link" target="cus:recipient" label="Recipient"/>
   <element name="service" type="link" target="cus:service" label="Subscription service"/>
@@ -421,9 +421,9 @@ Exemple de table de relation dans un schéma :
 
 Pour notre exemple, nous partirons du formulaire de saisie du schéma « cus:recipient ». La liste doit afficher les associations avec les abonnements aux services et permettre d’ajouter un abonnement en sélectionnant un service déjà existant.
 
-![](assets/do-not-localize/form_exemple12.png)
+![Sélectionnez la boîte de dialogue des services répertoriant les services en liste bloquée, MobApp, Newsletter et autres pour ajouter un abonnement](assets/do-not-localize/form_exemple12.png)
 
-```
+```xml
 <input type="linklist" xpath="subscription" xpathChoiceTarget="service" xpathEditTarget="service" zoom="true">
   <input xpath="recipient"/>
   <input xpath="service"/>
@@ -457,7 +457,7 @@ Ces listes sont utilisées sur les éléments de collections mappés en XML ou s
 
 Ce contrôle affiche une liste à colonnes éditable avec une barre d&#39;outils contenant les boutons d&#39;ajout et de suppression.
 
-```
+```xml
 <input xpath="rcpEvent" type="list">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -474,7 +474,7 @@ Les colonnes sont déclarées dans les balises **`<input>`** enfants de la liste
 
 Les boutons de la barre d&#39;outils peuvent être alignés horizontalement :
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -487,7 +487,7 @@ L&#39;attribut **toolbarCaption** force l&#39;alignement horizontal de la barre 
 
 L’insertion et l’édition des données d’une liste peuvent être renseignées dans un formulaire de modification séparé.
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true" zoomOnAdd="true">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -522,9 +522,9 @@ Pour afficher un champ et empêcher son édition, vous devez utiliser la balise 
 
 Exemple sur le champ &quot;Genre&quot; :
 
-![](assets/do-not-localize/form_exemple16.png)
+![Le champ Genre s’affiche sous forme de liste déroulante avec la valeur Male](assets/do-not-localize/form_exemple16.png)
 
-```
+```xml
 <value value="@gender"/>
 <input xpath="@gender" readOnly="true"/>
 ```
@@ -535,24 +535,24 @@ Un bouton radio permet d&#39;effectuer un choix parmi plusieurs options. Les bal
 
 Exemple sur le champ &quot;Genre&quot; :
 
-```
+```xml
 <input type="RadioButton" xpath="@gender" checkedValue="0" label="Choice 1"/>
 <input type="RadioButton" xpath="@gender" checkedValue="1" label="Choice 2"/>
 <input type="RadioButton" xpath="@gender" checkedValue="2" label="Choice 3"/>
 ```
 
-![](assets/do-not-localize/form_exemple17.png)
+![Champ Genre affiché sous forme de boutons radio Choix 1, Choix 2 et Choix 3, avec Choix 1 sélectionné](assets/do-not-localize/form_exemple17.png)
 
 ## Ajout d&#39;une case à cocher {#checkbox}
 
 Une case à cocher reflète un état booléen (sélectionné ou non). Par défaut, ce contrôle est utilisé par les champs de type « booléen » (true/false). Une variable prenant une valeur par défaut de 0 ou 1 peut être associée à ce bouton. Cette valeur peut être surchargée à partir de l’attribut **checkValue**.
 
-```
+```xml
 <input xpath="@boolean1"/>
 <input xpath="@field1" type="checkbox" checkedValue="Y"/>
 ```
 
-![](assets/do-not-localize/form_exemple20.png)
+![Deux cases à cocher décochées intitulées Boolean1 et field1](assets/do-not-localize/form_exemple20.png)
 
 ## Modification de la hiérarchie de navigation {#navigation-hierarchy-edit}
 
@@ -560,7 +560,7 @@ Ce contrôle construit une arborescence sur un ensemble de champs à éditer.
 
 Les contrôles à éditer sont regroupés dans un **`<container>`** renseigné sous la balise **`<input>`** du contrôle arborescent :
 
-```
+```xml
 <input nolabel="true" type="treeEdit">
   <container label="Text fields">
     <input xpath="@text1"/>
@@ -573,13 +573,13 @@ Les contrôles à éditer sont regroupés dans un **`<container>`** renseigné s
 </input>
 ```
 
-![](assets/do-not-localize/form_exemple18.png)
+![Contrôle de modification d&#39;arborescence avec champs de texte et groupes de champs booléens, répertoriant text1 en text3 et Boolean1 en Boolean3](assets/do-not-localize/form_exemple18.png)
 
 ## Ajout d&#39;un champ d&#39;expression {#expression-field}
 
 Un champ d&#39;expression permet de mettre à jour dynamiquement un champ à partir d&#39;une expression ; la balise **`<input>`** est utilisée avec un attribut **xpath** pour renseigner le chemin du champ à mettre à jour et un attribut **expr** contenant l&#39;expression de mise à jour.
 
-```
+```xml
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->
 <input expr="Iif([/tmp/@flag]=='On', true, false)" type="expr" xpath="@boolean1"/>
 <input expr="[/ignored/@action] == 'FCP'" type="expr" xpath="@launchFCP"/>
@@ -602,7 +602,7 @@ Exemples d&#39;utilisation de la balise `<set>` :
 
 La mise à jour du contexte du formulaire peut être effectuée à l&#39;initialisation et à la fermeture du formulaire, à partir des balises **`<enter>`** et **`<leave>`**.
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <enter>
     <set...
@@ -624,7 +624,7 @@ Un macro-langage peut être utilisé dans la définition d&#39;un formulaire afi
 
 La balise **`<if expr="<expression>" />`** exécute les instructions spécifiées sous la balise si l&#39;expression est vérifiée :
 
-```
+```xml
 <if expr="([/tmp/@test] == 'Test' or @lastName != 'Doe') and @boolean2 == true">
   <set xpath="@boolean1" expr="true"/>
 </if>
@@ -632,7 +632,7 @@ La balise **`<if expr="<expression>" />`** exécute les instructions spécifiée
 
 La balise **`<check expr="<condition>" />`** combinée avec la balise **`<error>`** empêche la validation du formulaire et affiche un message d&#39;erreur si la condition n&#39;est pas respectée :
 
-```
+```xml
 <leave>
   <check expr="/tmp/@test != ''">
     <error>You must populate the 'Test' field!</error> 
@@ -646,7 +646,7 @@ Un assistant vous guide à travers un ensemble d&#39;étapes de saisie de donné
 
 Pour ajouter un assistant, utilisez le type de structure suivant :
 
-```
+```xml
 <form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Wizard example" entity-schema="nms:recipient">
   <container title="Title of page 1" desc="Long description of page 1">
     <input xpath="@lastName"/>
@@ -669,7 +669,7 @@ L&#39;exécution d&#39;une méthode SOAP peut être lancée à partir d&#39;une 
 
 La balise **`<soapcall>`** contient l&#39;appel de la méthode avec les paramètres en entrée :
 
-```
+```xml
 <soapCall name="<name>" service="<schema>">
   <param type="<type>" exprIn="<xpath>"/>  
   ...
@@ -695,7 +695,7 @@ L&#39;attribut **exprIn** contient l&#39;emplacement de la donnée à passer en 
 
 **Exemple**:
 
-```
+```xml
 <leave>
   <soapCall name="RegisterGroup" service="nms:recipient">         
     <param type="DOMElement" exprIn="/tmp/entityList"/>         

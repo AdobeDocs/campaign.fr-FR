@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '2045'
-ht-degree: 85%
+source-wordcount: '2493'
+ht-degree: 69%
 ---
 # Utilisation des filtres{#create-filters}
 
@@ -62,7 +62,7 @@ Les types de filtres suivants sont disponibles dans Adobe Campaign :
 
 Par défaut, Adobe Campaign affiche tous les enregistrements de base de données que l’opérateur est autorisé à lire. Vous pouvez filtrer ces données à l’aide des options disponibles dans la section supérieure de la fenêtre du navigateur.
 
-![](assets/filter_web_zone.png)
+![Tableau de bord des destinataires avec la zone de filtrage mise en surbrillance : icône de dossier, champ de recherche rapide et liste de tri](assets/filter_web_zone.png)
 
 Plusieurs méthodes de filtrage des données affichées sont possibles. Si nécessaire, ils peuvent être utilisés ensemble. Parcourez les onglets ci-dessous pour en savoir plus sur les options de filtrage.
 
@@ -73,11 +73,11 @@ Plusieurs méthodes de filtrage des données affichées sont possibles. Si néce
 
 Pour filtrer les données en fonction de leur dossier, cliquez sur l’icône **[!UICONTROL Dossier]** et sélectionnez le dossier contenant les données à afficher.
 
-![](assets/filter_web_select_folder.png)
+![Menu Dossier étendu des Profils et cibles aux Destinataires, Clients et Nouveaux](assets/filter_web_select_folder.png)
 
 Seuls les profils du dossier s’affichent :
 
-![](assets/filter_web_folder_display.png)
+![Liste des destinataires filtrée sur le dossier Profils et cibles > Destinataires > Clients > Nouveau](assets/filter_web_folder_display.png)
 
 Utilisez la croix située à droite du champ de sélection du dossier pour revenir à un mode d&#39;affichage par défaut.
 
@@ -87,7 +87,7 @@ Selon le type d’informations affichées, vous pouvez appliquer un filtre par s
 
 Pour les diffusions, par exemple, vous pouvez choisir de n’afficher que les diffusions terminées, comme illustré ci-dessous :
 
-![](assets/filter_delivery.png)
+![Liste déroulante du statut du tableau de bord Diffusions répertoriant Tous les statuts, En édition, Terminé et autres statuts](assets/filter_delivery.png)
 
 >[!TAB Classer par]
 
@@ -95,13 +95,13 @@ Vous pouvez sélectionner l’ordre de tri des données proposées dans les page
 
 Vous pouvez, par exemple, trier les tâches par priorité, date de création ou ordre alphabétique.
 
-![](assets/order_data_sample.png)
+![Liste déroulante de tri du tableau de bord Tâches avec le Libellé de A à Z, Le plus récent en premier, Le plus ancien en premier et Par priorité](assets/order_data_sample.png)
 
 >[!TAB Recherche rapide]
 
 Utilisez le champ de recherche pour accéder rapidement à l&#39;élément souhaité : saisissez les caractères contenus dans le libellé ou le nom interne de l&#39;élément à afficher puis validez pour appliquer un filtre automatique sur les données de la page.
 
-![](assets/filter_search.png)
+![Tableau de bord des diffusions filtré en saisissant les actualités dans le champ de recherche](assets/filter_search.png)
 
 Pour afficher à nouveau tous les éléments, cliquez sur la croix afin de supprimer le contenu du champ de recherche.
 
@@ -113,7 +113,7 @@ Les filtres prédéfinis sont disponibles à partir du bouton **Filtres** au-des
 
 Par exemple, pour les profils, les filtres intégrés suivants sont disponibles :
 
-![](assets/built-in-filters.png)
+![Liste déroulante Filtres de la liste des destinataires affichant les filtres intégrés tels que Ouvert mais pas cliqué](assets/built-in-filters.png)
 
 Vous pouvez accéder aux détails des filtres dans le nœud **[!UICONTROL Profils et cibles > Filtres prédéfinis]** de l&#39;explorateur.
 
@@ -123,11 +123,11 @@ Vous pouvez accéder aux détails des filtres dans le nœud **[!UICONTROL Profil
 
 Sélectionnez un filtre pour afficher sa définition.
 
-![](assets/predefined-filter-list.png)
+![Nœud Filtres prédéfinis dans l&#39;Explorateur avec le filtre Ouvert sélectionné et ses conditions de filtrage affichées](assets/predefined-filter-list.png)
 
 Utilisez le dernier onglet pour prévisualiser les données filtrées.
 
-![](assets/built-in-filter-preview.png)
+![Onglet Aperçu du filtre prédéfini Par tranche d&#39;âge, avec un âge minimum de 25 ans et un âge maximum de 45 ans et les destinataires correspondants](assets/built-in-filter-preview.png)
 
 
 +++  Filtres prédéfinis intégrés pour les profils
@@ -243,7 +243,7 @@ Utilisez le dernier onglet pour prévisualiser les données filtrées.
 
 Les champs situés au-dessus de chaque liste permettent d&#39;utiliser le **filtre par défaut prédéfini** pour cette liste. Pour la liste des destinataires, vous pouvez par défaut filtrer par nom et adresse e-mail.
 
-![](assets/filter-recipient-name.png)
+![Liste des destinataires filtrée avec Lucas dans le champ Nom par défaut, renvoyant deux profils](assets/filter-recipient-name.png)
 
 
 >[!NOTE]
@@ -259,12 +259,12 @@ Les étapes sont les suivantes :
 1. Dans la liste des filtres, sélectionnez le filtre que vous souhaitez voir proposé par défaut.
 1. Cliquez sur l&#39;onglet **[!UICONTROL Paramètres]** et cochez l&#39;option **[!UICONTROL Filtre par défaut pour le type de document associé]**.
 
-   ![](assets/change-default-filter.png)
+   ![Onglet Paramètres d&#39;un filtre prédéfini avec Filtre par défaut pour le type de document associé sélectionné](assets/change-default-filter.png)
 
 1. Décochez cette même option pour le filtre prédéfini par défaut actuel.
 1. Cliquez sur le bouton **[!UICONTROL Enregistrer]** pour appliquer ce filtre.
 1. Accédez au dossier Destinataire et cliquez sur l&#39;icône **[!UICONTROL Supprimer ce filtre]** à droite du filtre actuel : le nouveau filtre par défaut est disponible.
-   ![](assets/updated-default-filter.png)
+   ![Liste des destinataires avec le filtre Par abonnement par défaut et sa liste déroulante Champ de service](assets/updated-default-filter.png)
 
 
 ## Filtres rapides{#quick-filters}
@@ -281,36 +281,36 @@ Pour créer un **filtre rapide**, procédez comme suit :
 
 1. Cliquez avec le bouton droit sur le champ sur lequel vous souhaitez filtrer les données et choisissez **[!UICONTROL Filtrer sur ce champ]**.
 
-   ![](assets/quick-filter-on-this-field.png)
+   ![Menu contextuel dans le champ Langue avec le filtre sur ce champ en surbrillance](assets/quick-filter-on-this-field.png)
 
    Les champs de filtrage par défaut s&#39;affichent au-dessus de la liste.
 
-   ![](assets/quick-filter-above-list.png)
+   ![Liste de destinataires avec une langue égale à l&#39;anglais ajoutée au-dessus de la liste](assets/quick-filter-above-list.png)
 
 1. Sélectionnez les options de filtrage.
 1. Si nécessaire, utilisez l&#39;icône grise sur le côté droit d&#39;un filtre pour le supprimer.
 1. Vous pouvez combiner des filtres pour affiner votre filtrage.
 
-   ![](assets/add-filter-above-the-list.png)
+   ![Filtres rapides de langue et d’e-mail combinés au-dessus de la liste, avec la liste déroulante Opérateur d’e-mail ouverte](assets/add-filter-above-the-list.png)
 
 
 Si vous devez filtrer sur un champ qui n’est pas disponible dans le formulaire, mais qui se trouve dans les colonnes, filtrez sur cette colonne. Pour ce faire :
 
 1. Cliquez sur l&#39;icône **[!UICONTROL Configurer la liste]**.
 
-   ![](assets/configure-list.png)
+   ![Liste des destinataires avec l&#39;icône Configurer la liste en bas à droite de la liste](assets/configure-list.png)
 
 1. Sélectionnez la colonne à afficher, par exemple l&#39;âge des destinataires, puis cliquez sur **OK**.
 
-   ![](assets/add-age-column.png)
+   ![Boîte de dialogue de configuration de la liste avec le champ Âge ajouté aux colonnes de sortie](assets/add-age-column.png)
 
 1. Cliquez ensuite avec le bouton droit dans la liste des destinataires, dans la colonne **Age**, et choisissez **[!UICONTROL Filtrer sur cette colonne]**.
 
-   ![](assets/age-filter-on-this-column.png)
+   ![Menu contextuel dans la liste des destinataires avec Filtre sur cette colonne en surbrillance, colonne Age affichée](assets/age-filter-on-this-column.png)
 
    Vous pouvez alors sélectionner les options de filtrage sur l&#39;âge. Ajoutez un autre filtre sur l&#39;âge pour définir une plage.
 
-   ![](assets/filter-on-age.png)
+   ![Deux filtres Âge, supérieurs à 20 et inférieurs à 30, renvoyant quatre destinataires](assets/filter-on-age.png)
 
 ## Filtres avancés{#advanced-filters}
 
@@ -320,7 +320,7 @@ Combinez des critères complexes dans des **filtres avancés** personnalisés. U
 
 Pour créer un **filtre avancé**, cliquez sur le bouton **[!UICONTROL Filtres]** et sélectionnez **[!UICONTROL Filtre avancé...]**.
 
-![](assets/adv-filter.png)
+![Liste déroulante Filtres de la liste des destinataires avec Filtre avancé... mis en surbrillance en bas](assets/adv-filter.png)
 
 Vous pouvez également cliquer avec le bouton droit dans la liste de données et sélectionner **[!UICONTROL Filtre avancé...]**.
 
@@ -328,16 +328,16 @@ Définissez les conditions de filtrage. Dans l&#39;exemple ci-dessous, vous alle
 
 1. Cliquez sur l&#39;icône **[!UICONTROL Modifier l&#39;expression]** de la colonne **[!UICONTROL Expression]**.
 
-   ![](assets/edit-exp.png)
+   ![Boîte de dialogue Filtre avancé avec l&#39;icône Modifier l&#39;expression dans la colonne Expression](assets/edit-exp.png)
 
 1. Sélectionnez le champ sur lequel appliquer le filtre.
 1. Sélectionnez l&#39;opérateur à appliquer dans la liste déroulante.
 
-   ![](assets/select-operator.png)
+   ![Boîte de dialogue de filtre avancé avec l’expression Numéro de compte et la liste déroulante Opérateur ouverte](assets/select-operator.png)
 
 1. Sélectionnez une valeur attendue dans la colonne **[!UICONTROL Valeur]**. Vous pouvez combiner plusieurs filtres pour affiner votre requête. Pour ajouter une condition de filtre, cliquez sur **[!UICONTROL Ajouter]**.
 
-   ![](assets/add-an-exp.png)
+   ![La boîte de dialogue de filtrage avancé avec le numéro de compte commence par NL et une nouvelle ligne Et est ajoutée](assets/add-an-exp.png)
 
    >[!NOTE]
    >
@@ -345,13 +345,13 @@ Définissez les conditions de filtrage. Dans l&#39;exemple ci-dessous, vous alle
 
 1. Trois opérateurs sont disponibles pour combiner des expressions :  **Et**, **Ou**, **Sauf**. Cliquez sur la flèche pour passer à **Ou**.
 
-   ![](assets/select-or-operator.png)
+   ![Boîte de dialogue de filtrage avancé avec la liste des opérateurs Et, Ou et Sauf ouverte sur la deuxième condition de ville](assets/select-or-operator.png)
 
 1. Cliquez sur **[!UICONTROL OK]** pour créer le filtre et l&#39;appliquer à la liste actuelle.
 
 Le filtre appliqué est affiché au-dessus de la liste.
 
-![](assets/adv-filter-link.png)
+![Liste des destinataires avec le filtre avancé appliqué affiché sous la forme d&#39;un lien bleu au-dessus de la liste](assets/adv-filter-link.png)
 
 Pour éditer ou modifier ce filtre, cliquez sur son lien de description en bleu, au-dessus de la liste.
 
@@ -365,15 +365,15 @@ Pour enregistrer un filtre avancé, procédez comme suit :
 1. Cliquez sur la description du filtre pour le modifier.
 1. Cliquez sur l&#39;icône **[!UICONTROL Enregistrer en tant que filtre]** dans la section supérieure droite de la fenêtre.
 
-   ![](assets/save-as-filter.png)
+   ![Boîte de dialogue Filtre avancé avec l’icône Enregistrer en tant que filtre en haut à droite](assets/save-as-filter.png)
 
 1. Saisissez le nom de ce filtre et enregistrez-le.
 
-   ![](assets/application-filter-save.png)
+   ![Boîte de dialogue de filtrage d&#39;application avec le libellé Paris - LA Nouveaux utilisateurs et les conditions de filtrage](assets/application-filter-save.png)
 
 Le filtre est ajouté aux [filtres prédéfinis](#predefined-filters). Il peut être mis à jour à partir de ce nœud.
 
-![](assets/added-to-predefined-filters.png)
+![Nœud de filtres prédéfinis répertoriant le nouveau filtre Paris - LA New Users avec sa définition](assets/added-to-predefined-filters.png)
 
 >[!NOTE]
 >
@@ -383,7 +383,7 @@ Le filtre est ajouté aux [filtres prédéfinis](#predefined-filters). Il peut �
 
 Ce filtre est également disponible dans les filtres prédéfinis de la liste des destinataires.
 
-![](assets/access-to-new-predefined-filter.png)
+![Liste déroulante Filtres de la liste des destinataires avec le nouveau filtre Paris - LA Nouveaux utilisateurs mis en surbrillance](assets/access-to-new-predefined-filter.png)
 
 
 
@@ -393,7 +393,7 @@ Vous pouvez utiliser et combiner des filtres pour créer un segment de populatio
 
 Une fois enregistrés, des filtres avancés sont disponibles lors de la sélection de la population cible d&#39;un message, dans la section **[!UICONTROL Filtres utilisateur]**.
 
-![](assets/adv-filter-target-type.png)
+![Boîte de dialogue Type de cible avec le filtre Paris - LA New Users enregistré sélectionné sous Filtres utilisateur](assets/adv-filter-target-type.png)
 
 
 >[!NOTE]
@@ -425,7 +425,7 @@ Des paramètres avancés sont disponibles pour les filtres prédéfinis. Pour y 
 
 * Pour définir un formulaire de sélection des critères de filtrage, sélectionnez l&#39;option **[!UICONTROL Utiliser le formulaire de saisie des paramètres]**. Ce formulaire doit être saisi au format XML dans l&#39;onglet **[!UICONTROL Formulaire]**. Par exemple, le filtre prédéfini intégré **[!UICONTROL Destinataires ayant ouvert]**, disponible dans la liste des destinataires, affiche un champ de filtre qui permet de sélectionner la diffusion à laquelle s&#39;applique le filtre.
 
-![](assets/predefined-filters-parameters.png)
+![Onglet Paramètres d&#39;un filtre prédéfini et sa boîte de dialogue Paramètres avancés avec l&#39;option Ne pas restreindre le filtre](assets/predefined-filters-parameters.png)
 
 
 * Le lien **[!UICONTROL Paramètres avancés]** permet de définir des paramètres supplémentaires.

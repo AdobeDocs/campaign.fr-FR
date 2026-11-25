@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '3642'
-ht-degree: 92%
+source-wordcount: '3734'
+ht-degree: 89%
 ---
 # Paramètres de compte externe SMPP {#smpp-external-account}
 
@@ -53,7 +53,7 @@ L&#39;équipement réseau côté fournisseur SMS est souvent appelé SMSC.
 
 ## Paramètres de connexion {#smpp-connection-settings}
 
-![](assets/smpp_connection_settings.png){zoomable="yes"}
+![Onglet Paramètres de connexion du compte externe SMPP : serveur, port, compte, mot de passe et mode de connexion](assets/smpp_connection_settings.png){zoomable="yes"}
 
 Voici les paramètres et leur rôle nécessaires pour configurer la connexion :
 
@@ -94,7 +94,7 @@ Lorsqu’ils sont activés, les journaux supplémentaires sont générés dans l
 
 ## Paramètres du canal SMPP {#smpp-channel-settings}
 
-![](assets/smpp_channel_settings.png){zoomable="yes"}
+![Onglet Paramètres du canal SMPP : option de translittération, numéro source, TON/NPI source et destination, type de service](assets/smpp_channel_settings.png){zoomable="yes"}
 
 ### Autoriser la translittération des caractères {#smpp-transliteration}
 
@@ -124,7 +124,7 @@ Ce champ est transmis tel quel dans le champ service_type du PDU SUBMIT_SM. Déf
 
 ## Débits et délais {#smpp-delays}
 
-![](assets/smpp_throughput.png){zoomable="yes"}
+![Onglet Débit et délais : fenêtre d’envoi, débit MT maximal, reconnexion, expiration, délai d’attente de liaison, enquire_link](assets/smpp_throughput.png){zoomable="yes"}
 
 Ces paramètres contrôlent tous les aspects du timing du canal SMPP. Certains fournisseurs ont besoin d’un contrôle très précis du taux de message, des délais de fenêtre et de reprise. Ces paramètres doivent donc être définis sur des valeurs correspondant à la capacité du fournisseur et aux conditions indiquées dans son contrat.
 
@@ -134,7 +134,7 @@ La fenêtre est le nombre de PDU SUBMIT_SM qui peuvent être envoyés sans atten
 
 Exemple de transmission avec une fenêtre maximale de 4 :
 
-![](assets/sms_sending_window.png){zoomable="yes"}
+![Séquence entre Campaign et le SMSC : requêtes SUBMIT_SM et réponses SUBMIT_SM_RESP avec une fenêtre de 4](assets/sms_sending_window.png){zoomable="yes"}
 
 La fenêtre permet d’augmenter le débit lorsque la liaison réseau présente une latence élevée. La valeur de la fenêtre doit être au moins égale au nombre de SMS/s multiplié par la latence du lien en secondes, de sorte que le connecteur n’attend jamais un SUBMIT_SM_RESP avant d’envoyer le message suivant.
 
@@ -199,7 +199,7 @@ Si le message ne peut pas être encodé en GSM, il est encodé en UCS-2 et défi
 
 ## Spécificités du SMSC {#smsc-specificities}
 
-![](assets/smsc_specificities.png){zoomable="yes"}
+![Onglet Spécificités du SMSC avec message_payload, liaison TON/NPI, regexes de statut, formats d&#39;ID et options TLS](assets/smsc_specificities.png){zoomable="yes"}
 
 ### Activer message_payload
 
@@ -347,7 +347,7 @@ Si cette option est activée, toutes les connexions au SMSC sont chiffrées à l
 
 ## Trafic entrant {#incoming-traffic}
 
-![](assets/incoming_traffic.png){zoomable="yes"}
+![Onglet Trafic entrant : paramètres SMPP facultatifs (TLV) dans MO et la table de réponse automatique pour MO](assets/incoming_traffic.png){zoomable="yes"}
 
 ### Paramètres SMPP facultatifs (TLV) dans MO
 

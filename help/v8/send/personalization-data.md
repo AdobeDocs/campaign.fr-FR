@@ -24,10 +24,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 95%
+source-wordcount: '654'
+ht-degree: 92%
 ---
 # Sources de données de personnalisation{#personalization-data}
 
@@ -53,7 +53,7 @@ Pour sélectionner le fichier à utiliser comme source de données, accédez au 
 
 Les données de personnalisation peuvent être récupérées à partir d’un tableau externe via [Federated Data Access](../connect/fda.md).  Si vous souhaitez effectuer une personnalisation dans vos diffusions en utilisant les données de la base externe, collectez les données à utiliser dans un workflow afin de les rendre disponibles dans un tableau temporaire.
 
-Pour ce faire, ajoutez une activité **Requête** dans le workflow de ciblage et utilisez le lien **Ajouter des données...** pour sélectionner la base externe. Consultez le processus complet dans [cette section](../../automation/workflow/query.md#adding-data).
+Pour ce faire, ajoutez une activité **Requête** dans le workflow de ciblage et utilisez le lien **Ajouter des données...** pour sélectionner la base externe. Le processus détaillé est disponible dans [Ajouter des données](../../automation/workflow/query.md#adding-data).
 
 Utilisez ensuite les données du tableau temporaire pour personnaliser votre diffusion. Une fois l’activité de requête paramétrée, accédez aux données externes dans les options de personnalisation, à partir de l’entrée **Extension de la cible**.
 
@@ -87,4 +87,4 @@ Une fois l’analyse terminée, accédez aux **[!UICONTROL Propriétés]** du wo
 
 Lorsqu’une diffusion est créée dans le cadre d’un workflow, vous pouvez utiliser les données du tableau de workflow temporaire. Les données stockées dans la table de travail temporaire du workflow sont disponibles pour les tâches de personnalisation. Vous pouvez utiliser les données dans les champs de personnalisation.
 
-Ces données sont rassemblées dans le menu **[!UICONTROL Extension de la cible]**. Pour plus d’informations, consultez [cette section](../../automation/workflow/use-workflow-data.md#target-data).
+Ces données sont rassemblées dans le menu **[!UICONTROL Extension de la cible]**. Pour plus d&#39;informations, consultez la section [Exploiter les données de la cible](../../automation/workflow/use-workflow-data.md#target-data).

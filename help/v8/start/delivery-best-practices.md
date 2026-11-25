@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d027f76f86f34524ddf5b620de32cdcc98e60d21
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '3196'
-ht-degree: 89%
+source-wordcount: '3216'
+ht-degree: 87%
 ---
 # Bonnes pratiques de diffusion {#delivery-best-practices}
 
@@ -60,7 +60,7 @@ Avant même de commencer à créer des diffusions, vous pouvez prendre des mesur
 
 Plusieurs facteurs peuvent avoir une incidence directe sur les performances du serveur et ralentir votre plateforme Campaign :
 
-* Nombre et type d’éléments de [personnalisation](../send/personalize.md) : dans les e-mails, la personnalisation extrait les données de la base de données pour chaque destinataire. Dans le cas de nombreux éléments de personnalisation, la quantité de données nécessaire pour préparer la diffusion est plus élevée. Cela peut ralentir votre plateforme. Découvrez les mécanismes de sécurisation de la personnalisation dans [cette section](../send/personalize.md#perso-guardrails).
+* Nombre et type d’éléments de [personnalisation](../send/personalize.md) : dans les e-mails, la personnalisation extrait les données de la base de données pour chaque destinataire. Dans le cas de nombreux éléments de personnalisation, la quantité de données nécessaire pour préparer la diffusion est plus élevée. Cela peut ralentir votre plateforme. Découvrez les mécanismes de sécurisation de la personnalisation dans [Mécanismes de sécurisation et recommandations](../send/personalize.md#perso-guardrails).
 
 * Charge du serveur : lorsque le serveur marketing gère simultanément trop de tâches différentes, cela peut diminuer les performances. Le serveur marketing doit coordonner toutes les données entrantes et sortantes pour l’ensemble des diffusions afin de s’assurer que les données sont correctes et disponibles à temps.
 Pour éviter cette situation, coordonnez la planification des diffusions avec les autres membres de votre équipe afin d’optimiser les performances.
@@ -143,7 +143,7 @@ Pour configurer les adresses dans l’interface de Campaign, procédez comme sui
 
 ### Configurer une population témoin {#set-up-control-group}
 
-Une fois que la diffusion est envoyée, vous pouvez comparer le comportement des destinataires exclus à celui des destinataires qui ont reçu la diffusion. Vous pouvez ensuite mesurer l’efficacité de vos campagnes. En savoir plus sur les populations témoins dans [cette section](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group).
+Une fois que la diffusion est envoyée, vous pouvez comparer le comportement des destinataires exclus à celui des destinataires qui ont reçu la diffusion. Vous pouvez ensuite mesurer l’efficacité de vos campagnes. En savoir plus sur les populations témoins dans [Ajouter une population témoin](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group).
 
 ### Utiliser des typologies pour appliquer des filtres ou des règles de contrôle {#create-typologies}
 
@@ -153,13 +153,13 @@ Dans l’onglet **[!UICONTROL Typologie]** des propriétés du modèle, vous pou
 
 Pour mieux contrôler le trafic sortant, par exemple, vous pouvez définir quelles adresses IP peuvent être utilisées en spécifiant une affinité par sous-domaine et en créant une typologie par affinité. Celles-ci sont définies dans le fichier de configuration de l’instance. Contactez votre administrateur ou administratrice Adobe Campaign.
 
-Pour plus d’informations sur les typologies, consultez [cette section](../../automation/campaign-opt/campaign-typologies.md).
+Pour plus d&#39;informations sur les typologies, consultez la section [Prise en main des typologies de campagne](../../automation/campaign-opt/campaign-typologies.md).
 
 ## Optimiser votre contenu {#optimize-content}
 
 ### Créer du contenu personnalisé {#perso-content}
 
-Pour personnaliser vos messages, vous pouvez utiliser les données des destinataires stockées dans la base de données ou collectées par le biais de tracking, de landing pages, d’abonnements, etc. Les notions de base de Personalization sont présentées dans [cette section](../send/personalize.md).
+Pour personnaliser vos messages, vous pouvez utiliser les données des destinataires stockées dans la base de données ou collectées par le biais de tracking, de landing pages, d’abonnements, etc. Les notions de base de Personalization sont présentées dans la section [Prise en main de la personnalisation](../send/personalize.md).
 
 +++ **Lire quelques bonnes pratiques**
 
@@ -171,9 +171,9 @@ Pour personnaliser vos messages, vous pouvez utiliser les données des destinata
   %>
   &grave;&grave;
 
-  Pour plus d&#39;informations sur les blocs de personnalisation, consultez [cette section](../send/personalization-blocks.md).
+  Pour plus d&#39;informations sur les blocs de personnalisation, voir [Utiliser des blocs de personnalisation](../send/personalization-blocks.md).
 
-* Préparer les données de personnalisation : vous pouvez préparer les données de personnalisation dans un workflow afin d’améliorer l’analyse de préparation des diffusions. Cette méthode doit être utilisée en particulier si les données de personnalisation proviennent d’une table externe via Federated Data Access (FDA). Cette option est décrite dans [cette section](../send/personalization-data.md#optimize-personalization)
+* Préparer les données de personnalisation : vous pouvez préparer les données de personnalisation dans un workflow afin d’améliorer l’analyse de préparation des diffusions. Cette méthode doit être utilisée en particulier si les données de personnalisation proviennent d’une table externe via Federated Data Access (FDA). Cette option est décrite dans [Optimiser la personnalisation](../send/personalization-data.md#optimize-personalization)
 +++
 
 ### Créer du contenu optimisé {#build-optimized-content}
@@ -215,7 +215,7 @@ Travaillez sur la [ligne d’objet](../send/personalization-fields.md#personaliz
 
 ### Page miroir {#mirror-page-check}
 
-Incluez toujours un lien de page miroir. La position souhaitée se trouve en haut de l’e-mail. En savoir plus sur la page miroir dans [cette section](../send/mirror-page.md).
+Incluez toujours un lien de page miroir. La position souhaitée se trouve en haut de l’e-mail. En savoir plus sur la page miroir dans [Ajouter un lien vers la page miroir](../send/mirror-page.md)
 
 ### Lien de désabonnement {#unsub-link-check}
 
@@ -320,7 +320,7 @@ Dans l’assistant de diffusion, le sous-onglet **[!UICONTROL Prévisualisation]
 
 ## Définition de lʼaudience appropriée {#define-the-right-audience}
 
-La population ciblée est essentielle : créez soigneusement vos listes, testez vos emails sur les clients de messagerie et les appareils mobiles les plus utilisés et vérifiez que vos listes email sont à jour (sans adresses inconnues ou obsolètes). Vous pouvez également envoyer des BAT permettant de configurer un cycle de validation complet. Pour en savoir plus sur les audiences, consultez [cette section](../audiences/gs-audiences.md).
+La population ciblée est essentielle : créez soigneusement vos listes, testez vos emails sur les clients de messagerie et les appareils mobiles les plus utilisés et vérifiez que vos listes email sont à jour (sans adresses inconnues ou obsolètes). Vous pouvez également envoyer des BAT permettant de configurer un cycle de validation complet. En savoir plus sur les audiences dans [Prise en main des profils et des audiences dans Campaign](../audiences/gs-audiences.md).
 
 ### Cibler la bonne audience {#target-the-right-audience}
 

@@ -21,10 +21,10 @@ feature_v2:
     internal-label: Interaction
   - id: ea08db70-4682-59a2-9408-9aedd9548e07
     internal-label: Offers
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 98%
+source-wordcount: '887'
+ht-degree: 73%
 ---
 # Valider et activer une offre{#approving-and-activating-an-offer}
 
@@ -34,7 +34,7 @@ Une fois le contenu de l’offre terminé, vous devez procéder à son approbati
 
 Un bandeau dans le tableau de bord de l&#39;offre vous permet de voir si l&#39;offre doit passer par le cycle de validation ou non.
 
-![](assets/offer_validate_001.png)
+![La bannière du tableau de bord de l’offre indique que l’offre est en attente d’approbation, avec le bouton Approbation.](assets/offer_validate_001.png)
 
 ## Valider le contenu d&#39;une offre {#approving-offer-content}
 
@@ -52,15 +52,15 @@ Pour valider le contenu d&#39;une offre, procédez comme suit :
 
 1. Cliquez sur le bouton **[!UICONTROL Approbation]** et sélectionnez **[!UICONTROL Approuver le contenu]** dans la fenêtre contextuelle.
 
-   ![](assets/offer_validate_002.png)
+   ![Menu Approbation avec Approuver le contenu sélectionné, ouverture de l&#39;action dans la boîte de dialogue de l&#39;offre.](assets/offer_validate_002.png)
 
 1. A l&#39;aide de la liste déroulante, sélectionnez les représentations que vous souhaitez laisser en édition ou activer dans l&#39;environnement en ligne, puis cliquez sur **[!UICONTROL Validation du contenu]**.
 
-   ![](assets/offer_validate_003.png)
+   ![Action dans la boîte de dialogue de l&#39;offre : choisissez Continuer la modification ou Activer, ajoutez un commentaire, cliquez sur Validation du contenu.](assets/offer_validate_003.png)
 
    Lorsque le contenu de l&#39;offre est validé, les informations sont mises à jour dans le tableau de bord de l&#39;offre.
 
-   ![](assets/offer_validate_004.png)
+   ![Tableau de bord des offres après approbation : la représentation indique Activé et la section Approbations indique Contenu approuvé.](assets/offer_validate_004.png)
 
    >[!NOTE]
    >
@@ -76,33 +76,33 @@ Approuver l’éligibilité d’une offre signifie accepter ou rejeter les pond�
 
 * La liste complète des règles peut être consultée lorsque vous cliquez sur **[!UICONTROL Planning et règle d&#39;éligibilité de l&#39;offre]**.
 
-  ![](assets/offer_validate_005.png)
+  ![Liste des règles de planification et d&#39;éligibilité avec poids et périodes, ouverte à partir de la boîte de dialogue d&#39;approbation.](assets/offer_validate_005.png)
 
 * Si vous souhaitez modifier les règles d&#39;éligibilité, cliquez sur **[!UICONTROL Rejeter]**, puis sur **[!UICONTROL Validation de l&#39;éligibilité]**.
 
-  ![](assets/offer_validate_007.png)
+  ![Boîte de dialogue Approbation de l&#39;éligibilité avec l&#39;option Refuser sélectionnée, un commentaire et le bouton Approbation de l&#39;éligibilité.](assets/offer_validate_007.png)
 
   Les différents statuts sont mis à jour dans le tableau de bord de l&#39;offre.
 
-  ![](assets/offer_validate_006.png)
+  ![Tableau de bord après rejet : la validation de l&#39;éligibilité a été refusée bannière, bouton d&#39;éligibilité Envoyer, Eligibilité refusée.](assets/offer_validate_006.png)
 
 * Pour accepter l&#39;éligibilité de l&#39;offre, cliquez sur **[!UICONTROL Valider l&#39;éligibilité]**.
 
-  ![](assets/offer_validate_008.png)
+  ![Bouton Envoyer l’éligibilité ouvrant l’action dans la boîte de dialogue des offres avec les options Approuver et Rejeter.](assets/offer_validate_008.png)
 
   Approuvez l&#39;éligibilité, ajoutez un commentaire le cas échéant, puis cliquez sur **[!UICONTROL Validation de l&#39;éligibilité]**.
 
-  ![](assets/offer_validate_009.png)
+  ![Boîte de dialogue d&#39;approbation de l&#39;éligibilité avec Approuver sélectionné, un commentaire saisi et le bouton Approbation de l&#39;éligibilité.](assets/offer_validate_009.png)
 
   Les différents statuts sont mis à jour dans le tableau de bord de l&#39;offre.
 
-  ![](assets/offer_validate_010.png)
+  ![Tableau de bord présentant l&#39;offre en attente de déploiement dans l&#39;environnement en ligne, avec Éligibilité approuvée et Contenu approuvé.](assets/offer_validate_010.png)
 
 ## Suivi des validations {#approval-tracking}
 
 Le suivi des validations est disponible dans le tableau de bord de l&#39;offre. Cliquez sur **[!UICONTROL Afficher/cacher le journal]** pour y accéder.
 
-![](assets/offer_validate_012.png)
+![Tableau de bord des offres avec les journaux d&#39;approbation affichés après avoir cliqué sur Masquer/afficher les journaux, répertoriant l&#39;action, le type et l&#39;approbateur.](assets/offer_validate_012.png)
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Une fois la validation lancée, il est possible de la relancer. Pour ce faire, s
 1. Dans la fenêtre **[!UICONTROL Édition]** qui apparait, sélectionnez la validation à redémarrer, puis cliquez sur **[!UICONTROL Réinitialiser la validation pour la soumettre à nouveau]**.
 1. Confirmez en cliquant sur **[!UICONTROL Ok]**.
 
-![](assets/offer_validate_013.png)
+![Journal des approbations dans la fenêtre Modifier avec le lien Réinitialiser l&#39;approbation pour le soumettre à nouveau.](assets/offer_validate_013.png)
 
 ## Publication de l&#39;offre {#publishing-the-offer}
 
@@ -124,11 +124,11 @@ Une fois le contenu et l&#39;éligibilité d&#39;une offre approuvés, l&#39;off
 
 Le tableau de bord de l&#39;offre disponible dans l&#39;environnement en édition contient les informations relatives à la mise en ligne, notamment le nom de l&#39;offre correspondante dans l&#39;environnement en ligne.
 
-![](assets/offer_golive_001.png)
+![Tableau de bord de conception des offres : bannière de date de déploiement, lien Offres en ligne avec statut Publié, représentation en direct en ligne.](assets/offer_golive_001.png)
 
 Pour afficher l&#39;offre disponible dans l&#39;environnement en ligne, cliquez sur le libellé de l&#39;offre : l&#39;offre en ligne dispose d&#39;un tableau de bord dans lequel se trouvent toutes les informations qui lui sont relatives.
 
-![](assets/offer_golive_002.png)
+![Lien vers le tableau de bord de l&#39;offre en ligne, qui affiche le statut en ligne, son environnement, son planning et ses règles d&#39;éligibilité.](assets/offer_golive_002.png)
 
 ## Désactiver une offre {#disabling-an-offer}
 
@@ -142,4 +142,4 @@ Vous pouvez également désactiver directement une catégorie en vous rendant da
 >
 >Lorsqu’une offre est supprimée dans un environnement de conception, elle est automatiquement désactivée dans l’environnement en ligne associé. Après une période de rétention des propositions, les offres désactivées sont supprimées de l’environnement en ligne.
 
-![](assets/offer_preview_deactivate.png)
+![Tableau de bord de l&#39;offre en attente de déploiement, avec le bouton Désactiver l&#39;offre utilisé pour désactiver l&#39;offre.](assets/offer_preview_deactivate.png)

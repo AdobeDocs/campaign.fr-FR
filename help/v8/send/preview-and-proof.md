@@ -23,10 +23,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 94%
+source-wordcount: '878'
+ht-degree: 80%
 ---
 # Prévisualiser et tester votre e-mail {#preview-test}
 
@@ -41,11 +41,11 @@ Pour prévisualiser le contenu du message, procédez comme suit :
 1. Accédez à l’onglet **Prévisualisation** de la diffusion.
 1. Cliquez sur le bouton **[!UICONTROL Tester la personnalisation]** pour sélectionner un profil et remplir les données de personnalisation. Vous pouvez choisir un ou une destinataire spécifique dans la base, une adresse de contrôle ou sélectionner un profil parmi la population cible, s’il a déjà été défini. Vous pouvez également vérifier le contenu sans la personnalisation.
 
-   ![](assets/test-personalization.png)
+   ![Tester le menu de personnalisation dans l&#39;onglet Aperçu : Destinataire, Adresse de contrôle, Cible de la diffusion, Aucune personnalisation](assets/test-personalization.png)
 
 1. La prévisualisation s’affiche et vous pouvez vérifier le rendu du message. Dans la prévisualisation du message, les éléments personnalisés sont remplacés par les données du profil de test sélectionné.
 
-   ![](assets/test-personalization-with-a-recipient.png)
+   ![Aperçu de l&#39;e-mail avec l&#39;objet et l&#39;en-tête personnalisés avec le prénom du profil de test sélectionné](assets/test-personalization-with-a-recipient.png)
 
 1. Sélectionnez d’autres profils de test pour prévisualiser le rendu des e-mails pour chaque variante de votre message.
 
@@ -59,7 +59,7 @@ Le BAT est un message spécifique qui permet de tester un message avant son envo
 
 La cible du BAT peut être définie dans le modèle de diffusion ou être spécifique à une diffusion. Dans les deux cas, accédez à l’écran de définition de la cible à partir du lien **[!UICONTROL À]** et cliquez sur l’onglet **[!UICONTROL Cible des BAT]**.
 
-![](assets/target-of-proofs.png)
+![Boîte de dialogue Sélectionner la cible, Cible de l’onglet BAT, avec la liste déroulante Mode de ciblage et le bouton Ajouter](assets/target-of-proofs.png)
 
 Sélectionnez le type de cible du BAT dans la liste déroulante **[!UICONTROL Mode de ciblage]**.
 
@@ -68,11 +68,11 @@ Sélectionnez le type de cible du BAT dans la liste déroulante **[!UICONTROL Mo
 
   Par défaut, la substitution est effectuée de manière aléatoire, mais vous pouvez sélectionner un destinataire spécifique dans la cible principale à l’aide de l’icône **[!UICONTROL Détail]**.
 
-  ![](assets/target-of-proofs-substitution-details.png){width="800"}
+  ![Substitution du mode d&#39;adresse répertoriant les adresses de BAT, avec l&#39;icône Détail utilisée pour sélectionner un profil spécifique](assets/target-of-proofs-substitution-details.png){width="800"}
 
   Choisissez l’option **[!UICONTROL Sélectionner un profil (doit être inclus dans la cible)]** et sélectionnez un ou une destinataire.
 
-  ![](assets/target-of-proofs-substitution.png){width="800"}
+  ![Boîte de dialogue de destinataire de BAT autonome avec l&#39;option Sélectionner un profil et un destinataire choisi dans la liste](assets/target-of-proofs-substitution.png){width="800"}
 
 
 * Utilisez l’option **[!UICONTROL Adresses de contrôle]** pour utiliser des adresses de contrôle en tant que cible du BAT. Ces adresses peuvent être importées à partir d’un fichier ou saisies manuellement.
@@ -81,7 +81,7 @@ Sélectionnez le type de cible du BAT dans la liste déroulante **[!UICONTROL Mo
   >
   >Les adresses de contrôle n’appartiennent pas à la table des destinataires par défaut (nms:recipient). Elles sont créées dans une table distincte. Si vous étendez le tableau des destinataires avec de nouvelles données, vous devez étendre le tableau des adresses de contrôle avec les mêmes données.
 
-  En savoir plus sur les adresses de contrôle dans [cette section](../audiences/test-profiles.md).
+  En savoir plus sur les adresses de contrôle dans [Création de profils de test dans Campaign](../audiences/test-profiles.md).
 
 * Utilisez l’option **[!UICONTROL Cible spécifique et Adresses de contrôle]** pour cumuler des adresses de contrôle et des adresses e-mail spécifiques. Les paramétrages correspondants sont alors définis dans deux sous-onglets distincts.
 
@@ -93,7 +93,7 @@ Pour envoyer des BAT, procédez comme suit :
 1. Dans la fenêtre **[!UICONTROL Envoyer un BAT]**, vérifiez les destinataires du BAT.
 1. Cliquez sur **[!UICONTROL Analyser]** pour lancer la préparation des messages de BAT.
 
-   ![](assets/send-proof-analyze.png){width="800"}
+   ![Envoyez une fenêtre de BAT avec des adresses de substitution et le log d’analyse de diffusion s’exécutant après avoir cliqué sur Analyser](assets/send-proof-analyze.png){width="800"}
 
 1. Une fois la préparation de la diffusion terminée, cliquez sur le bouton **[!UICONTROL Confirmer l’envoi]** pour commencer à envoyer les messages de BAT.
 
@@ -115,7 +115,7 @@ Les propriétés du BAT sont définies dans l’onglet **[!UICONTROL Avancé]** 
 
 Par défaut, les messages de BAT sont identifiés par la mention `Proof #N` dans l’objet, où `N` est le numéro du BAT. Ce nombre est incrémenté à chaque analyse de diffusion du BAT. Vous pouvez modifier le préfixe `proof`, le cas échéant.
 
-![](assets/proof-parameters.png){width="800"}
+![Boîte de dialogue Propriétés de l’épreuve à partir de l’onglet Avancé avec les options de l’épreuve et le champ Préfixe de libellé défini sur Épreuve](assets/proof-parameters.png){width="800"}
 
 
 ## Vidéo pratique {#video-proof}

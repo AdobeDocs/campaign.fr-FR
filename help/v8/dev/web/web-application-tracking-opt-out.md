@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 86%
+source-wordcount: '740'
+ht-degree: 82%
 ---
 # Désinscription (opt-out) du tracking des applications web{#web-application-tracking-opt-out}
 
@@ -66,11 +66,11 @@ Si le tracking web est activé, vous pouvez sélectionner l&#39;une des options 
 * Aucune bannière.
 * Configurer la bannière manuellement dans chaque page : cochez cette option et sélectionnez la bannière dans chaque page dans les propriétés de page.
 
-  ![](assets/pageproperties.png)
+  ![En-tête de la boîte de dialogue Propriétés de la page avec l&#39;option Activer les transitions sortantes activée.](assets/pageproperties.png)
 
 * Ajouter automatiquement la bannière à toutes les pages : sélectionnez la bannière directement dans les propriétés de l&#39;application Web.
 
-  ![](assets/optoutconfig.png)
+  ![Onglet Général des propriétés de l&#39;application Web avec les options de bannière d&#39;opt-out : Pas de bannière, manuel par page ou automatique.](assets/optoutconfig.png)
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ Si le tracking web est activé, vous pouvez sélectionner l&#39;une des options 
 
 La bannière par défaut possède la structure suivante :
 
-```
+```xml
 <div onClick="NL.ClientWebTracking.closeOptOutBanner(this);" id="defaultOptOutBanner">
   <p>Please insert your message here
    <a onClick="NL.ClientWebTracking.allow();" class="optout-accept">Accept</a>
@@ -90,7 +90,7 @@ La bannière par défaut possède la structure suivante :
 
 Vous devez remplacer le texte **Veuillez insérer votre message ici** par le bloc qui contient les informations sur le tracking. Ce remplacement doit être effectué dans le nouveau bloc de personnalisation associé à la bannière d’opt-out.
 
-La bannière est fournie avec une feuille CSS spécifique. Vous pouvez toutefois remplacer les styles lors de la création et de la configuration d’une page web. Pour plus d’informations, consultez [cette page](content-editor-interface.md).
+La bannière est fournie avec une feuille CSS spécifique. Vous pouvez toutefois remplacer les styles lors de la création et de la configuration d’une page web. Reportez-vous à la section [Interface de l&#39;éditeur de contenu](content-editor-interface.md).
 
 ## Définir le cookie de désinscription (opt-out) à l&#39;aide des API {#setting-the-opt-out-cookie-using-api}
 
@@ -137,7 +137,7 @@ Si vous devez écrire du code JSSP, les API côté serveur suivantes sont dispon
 
 Exemple JSSP :
 
-```
+```html
 <%@ page import="/nl/core/shared/nl.js" %>
 <!doctype html>
 <%

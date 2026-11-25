@@ -34,10 +34,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 78%
+source-wordcount: '345'
+ht-degree: 70%
 ---
 # Mécanisme d&#39;évaluation de l&#39;API Campaign
 
@@ -66,7 +66,7 @@ Pour mettre en œuvre le mécanisme d&#39;évaluation de Campaign sur une table 
 
 1. Créez un exemple de schéma personnalisé sur la base de données cloud de Campaign. Aucune évaluation n&#39;est activée à cette étape.
 
-   ```
+   ```xml
    <srcSchema _cs="Sample Table (dem)" created="YYYY-DD-MM"
            entitySchema="xtk:srcSchema" img="xtk:schema.png" label="Sample Table"
            lastModified="YYYY-DD-MM HH:MM:SS.TZ" mappingType="sql" md5="XXX"
@@ -79,13 +79,13 @@ Pour mettre en œuvre le mécanisme d&#39;évaluation de Campaign sur une table 
    </srcSchema>
    ```
 
-   Pour en savoir plus sur la création de schémas personnalisés, consultez [cette page](../dev/create-schema.md).
+   En savoir plus sur la création de schémas personnalisés dans [Créez un schéma dans Campaign](../dev/create-schema.md).
 
 1. Enregistrez et mettez à jour la structure de la base de données.  [En savoir plus](../dev/update-database-structure.md)
 
 1. Activez le mécanisme d&#39;évaluation dans la définition du schéma en ajoutant le paramètre **autoStg=&quot;true&quot;**.
 
-   ```
+   ```xml
    <srcSchema _cs="Sample Table (dem)" "YYYY-DD-MM"
            entitySchema="xtk:srcSchema" img="xtk:schema.png" label="Sample Table"
            lastModified="YYYY-DD-MM HH:MM:SS.TZ" mappingType="sql" md5="XXX"
@@ -100,6 +100,6 @@ Pour mettre en œuvre le mécanisme d&#39;évaluation de Campaign sur une table 
 
 1. Enregistrez la modification. Un nouveau schéma d&#39;évaluation est disponible, qui est une copie locale du schéma initial.
 
-   ![](assets/staging-mechanism.png)
+   ![Source XML du schéma d&#39;évaluation généré dem:sampleTableStg pour la Table d&#39;exemple (Staging), une copie locale du schéma initial](assets/staging-mechanism.png)
 
 1. Mise à jour de la structure de la base de données. La table d&#39;évaluation sera créée sur la base de données locale de Campaign.

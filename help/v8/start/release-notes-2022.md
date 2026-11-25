@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1955'
 ht-degree: 93%
 ---
 # Notes de mise à jour 2022{#2022-rn}
@@ -106,7 +106,7 @@ Pour optimiser la sécurité, les jetons de sécurité ont été supprimés des 
 * Cette modification s’applique uniquement aux URL GET. D’autres types, y compris les URL POST, ne sont pas affectés.
 * Si vous utilisez du code personnalisé, les jetons de sécurité ne sont plus récupérés à partir du paramètre de jeton de sécurité de l’URL GET. Vous devez générer un nouveau jeton de sécurité à l’aide du code JSSP suivant :
 
-  ```
+  ```javascript
   getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);
   ```
 
@@ -254,14 +254,14 @@ Reportez-vous à la [matrice de compatibilité de Campaign](compatibility-matrix
 
 **Améliorations**
 
-* L’authentification OAuth 2.0 de Microsoft Exchange Online pour POP3 est désormais prise en charge dans Campaign. [En savoir plus](../config/external-accounts.md#bounce-mails-external-account)
+* L’authentification OAuth 2.0 de Microsoft Exchange Online pour POP3 est désormais prise en charge dans Campaign. [Mails rebonds](../config/external-accounts.md#bounce-mails-external-account)
 * Des correctifs importants ont été appliqués concernant l’API web du connecteur Microsoft Dynamics.
 * Le nouveau droit nommé Opérateur et Écriture du schéma de groupe (operatorWrite) a été ajouté pour permettre aux utilisateurs d’insérer, de mettre à jour et de supprimer des schémas Opérateurs (xtk:operator) et Groupes d’opérateurs (xtk:group).
   <!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
   <!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->
 * Plusieurs comptes actifs LINE peuvent désormais être paramétrés sur un seul mid-sourcing.
 * Le nombre de connexions par défaut pour le processus web a été augmenté de 50 à 150.
-* Campaign est fourni avec un ensemble de nouveaux mécanismes de sécurisation pour empêcher l’insertion de clés dupliquées dans la base de données Snowflake. [En savoir plus](../architecture/keys.md)
+* Campaign est fourni avec un ensemble de nouveaux mécanismes de sécurisation pour empêcher l’insertion de clés dupliquées dans la base de données Snowflake. [Gestion des clés dans Campaign](../architecture/keys.md)
 
 **Correctifs**
 

@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 81%
+source-wordcount: '599'
+ht-degree: 62%
 ---
 # Affichage des profils existants {#view-profiles}
 
@@ -42,11 +42,11 @@ Accédez à **[!UICONTROL Profils et cibles]** pour accéder aux destinataires s
 
 À partir de cette page, vous pouvez [créer un nouveau destinataire](create-profiles.md), modifier un destinataire existant et accéder aux détails de son profil.
 
-![](assets/profiles-and-targets.png)
+![Onglet Profils et cibles de la page d&#39;accueil de la campagne, affichant la liste des destinataires avec le bouton Créer](assets/profiles-and-targets.png)
 
 Pour des manipulations de profils plus avancées, accédez à l&#39;arborescence de Campaign à partir du lien **[!UICONTROL Explorateur]** sur la page d&#39;accueil d&#39;Adobe Campaign.
 
-![](assets/recipients-in-explorer.png)
+![Arborescence de l&#39;Explorateur avec le dossier Destinataires sélectionné, la liste des destinataires et les détails du destinataire sélectionné](assets/recipients-in-explorer.png)
 
 
 >[!CAUTION]
@@ -58,7 +58,7 @@ Pour des manipulations de profils plus avancées, accédez à l&#39;arborescence
 
 Sélectionnez un profil pour afficher les détails dans un nouvel onglet.
 
-![](assets/edit-a-profile.png)
+![Onglet Profil du destinataire avec les sections Général, Coordonnées, Autre, Abonnements, Diffusions et Tracking](assets/edit-a-profile.png)
 
 Les données relatives à un profil sont regroupées dans des onglets. Ces onglets et leur contenu dépendent de vos paramètres spécifiques et des packages installés.
 
@@ -66,7 +66,7 @@ Pour un destinataire intégré standard, vous pouvez accéder aux onglets suivan
 
 * **[!UICONTROL Général]**, pour toutes les données de profil générales. Il contient notamment le nom, le prénom, l&#39;adresse e-mail, le format des e-mails, etc.
 
-  Cet onglet stocke également l&#39;indicateur **opt-out** pour le profil : lorsque l&#39;option **[!UICONTROL Ne plus contacter (tous canaux)]** est sélectionnée, le profil est sur la liste bloquée. Ces informations sont ajoutées aux données de contact si le destinataire a cliqué sur un lien de désinscription dans une newsletter par exemple. Ce destinataire n’est plus ciblé sur aucun canal (e-mail, courrier, etc.). Pour plus d’informations, consultez [cette page](../send/quarantines.md).
+  Cet onglet stocke également l&#39;indicateur **opt-out** pour le profil : lorsque l&#39;option **[!UICONTROL Ne plus contacter (tous canaux)]** est sélectionnée, le profil est sur la liste bloquée. Ces informations sont ajoutées aux données de contact si le destinataire a cliqué sur un lien de désinscription dans une newsletter par exemple. Ce destinataire n’est plus ciblé sur aucun canal (e-mail, courrier, etc.). Pour plus d&#39;informations, consultez la section [Gestion des quarantaines dans Campaign](../send/quarantines.md).
 
 * L’onglet **Coordonnées**, qui contient l’adresse postale du profil sélectionné.
 
@@ -76,15 +76,15 @@ Pour un destinataire intégré standard, vous pouvez accéder aux onglets suivan
 
   Utilisez le menu contextuel **[!UICONTROL Propriétés du champ...]** pour modifier les noms des champs et définir leur format.
 
-  ![](assets/other-tab-field-properties.png)
+  ![Onglet Autre d&#39;un destinataire avec l&#39;option Propriétés du champ sélectionnée dans le menu contextuel du champ booléen 1](assets/other-tab-field-properties.png)
 
   Saisissez les nouveaux paramètres comme ci-dessous :
 
-  ![](assets/change-field-properties.png)
+  ![Boîte de dialogue Propriétés du champ avec le champ Libellé défini sur Programme Luma Gold et le champ Description renseigné](assets/change-field-properties.png)
 
   Vérifiez la mise à jour dans l&#39;interface utilisateur :
 
-  ![](assets/other-tab-updated.png)
+  ![Autre onglet d’un destinataire où le champ Booléen 1 s’affiche désormais sous la forme d’un programme Luma Gold avec une valeur Oui ou Non](assets/other-tab-updated.png)
 
 
   >[!CAUTION]
@@ -94,7 +94,7 @@ Pour un destinataire intégré standard, vous pouvez accéder aux onglets suivan
 
 * L’onglet **Abonnements**, pour tous les abonnements principaux aux services. Utilisez l&#39;onglet **Historique** pour accéder aux détails des abonnements et des désabonnements de ce contact.
 
-  ![](assets/subscription-tab.png)
+  ![Onglet Abonnements d’un destinataire répertoriant les abonnements actifs, avec les onglets Abonnements actifs et Historique](assets/subscription-tab.png)
 
   Apprenez-en davantage sur les abonnements dans [cette section](../start/subscriptions.md).
 

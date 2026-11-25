@@ -26,10 +26,10 @@ feature_v2:
 subfeature_v2:
   - id: e739ee2b-6228-412e-878f-45de0791417d
     internal-label: Use cases
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 100%
+source-wordcount: '193'
+ht-degree: 85%
 ---
 # Exemple d&#39;extension{#extension-example}
 
@@ -41,12 +41,12 @@ Dans le cas d&#39;un contact entrant (centre d&#39;appel ou site web), les offre
 
   Dans l&#39;exemple suivant, les critères ajoutés sont le code du pays et la dernière page visitée.
 
-  ![](assets/s_ncs_configuration_offer_schemas.png)
+  ![Schéma de données des interactions avec le code pays et les attributs de page Dernière visite ajoutés.](assets/s_ncs_configuration_offer_schemas.png)
 
 * Vous pourrez ensuite utiliser les attributs précédemment créés lors de la définition des critères d&#39;éligibilité.
 
   Dans l&#39;exemple suivant, il est possible de créer des critères d&#39;éligibilité pour afficher une offre en fonction du pays de l&#39;internaute ou de la dernière page sur laquelle il se sera rendu lors de sa navigation sur le site web concerné.
 
-  ![](assets/s_ncs_configuration_offer_context.png)
+  ![Éditeur de requêtes d&#39;éligibilité avec les champs Code pays et Interaction de la page Dernière visite sélectionnables en tant que critères.](assets/s_ncs_configuration_offer_context.png)
 
 * Lors du paramétrage des appels SOAP, insérez l&#39;élément XML **context** pour référencer les informations contextuelles ajoutées dans le schéma d&#39;interaction. Pour plus d’informations, consultez la section [Intégration via SOAP (côté serveur)](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/offers/inbound/interaction-integration){target="_blank"} (documentation de Campaign v8).

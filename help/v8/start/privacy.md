@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 88%
+source-wordcount: '1154'
+ht-degree: 86%
 ---
 # Gestion des demandes d’accès à des informations personnelles dans Campaign {#privacy}
 
@@ -52,7 +52,7 @@ Découvrez le **Droit d’accès** et le **Droit à l’oubli** (demande de supp
 
 >[!NOTE]
 >
->Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, consultez [cette section](compatibility-matrix.md)
+>Cette fonctionnalité est disponible à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à la [matrice de compatibilité de Campaign v8](compatibility-matrix.md)
 
 ## Définir un espace de noms {#namespaces}
 
@@ -77,7 +77,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 1. Lorsque [la liste des espaces de noms d’identité](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target="_blank"} est disponible pour votre organisation, vous obtenez les détails suivants sur les espaces de noms, par exemple :
 
-   ```
+   ```json
    {
            "updateTime": 1632903236731,
            "code": "lumanamespace",
@@ -94,7 +94,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 1. Dans Adobe Campaign, rendez-vous dans **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Espaces de noms]** et sélectionnez **[!UICONTROL Nouveau]**.
 
-   ![](assets/privacy-namespaces-new.png)
+   ![Administration du chemin de l&#39;Explorateur > Plateforme > Espaces de noms avec le nouveau bouton en surbrillance](assets/privacy-namespaces-new.png)
 
 1. Saisissez un **[!UICONTROL Libellé]**.
 
@@ -104,7 +104,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
    * le **[!UICONTROL nom interne]** doit correspondre à l’attribut « code »
    * la **[!UICONTROL clé de réconciliation]** doit correspondre à l’attribut « idType »
 
-   ![](assets/privacy-namespaces-details.png)
+   ![Nouveau formulaire d&#39;espace de noms avec identifiant d&#39;espace de noms AEC, nom interne et champs de clé de réconciliation mis en surbrillance](assets/privacy-namespaces-details.png)
 
    Le champ **[!UICONTROL Clé de réconciliation]** sera utilisé pour identifier le titulaire de données dans la base de données Adobe Campaign.
 

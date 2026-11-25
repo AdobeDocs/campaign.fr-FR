@@ -23,10 +23,10 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: d027f76f86f34524ddf5b620de32cdcc98e60d21
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '1172'
-ht-degree: 82%
+source-wordcount: '1215'
+ht-degree: 78%
 ---
 # Rapports sur les diffusions {#delivery-reports}
 
@@ -38,7 +38,7 @@ Pour accéder aux rapports, suivez les étapes suivantes :
 1. Cliquez sur le nom de la diffusion dont vous souhaitez accéder aux rapports.
 1. Sélectionnez l&#39;onglet **[!UICONTROL Résumé]** et cliquez sur le lien **[!UICONTROL Rapports]** pour accéder aux rapports propres à la diffusion.
 
-   ![](assets/detailed-report-2.png)
+   ![Onglet Résumé de la diffusion avec le lien Rapports mis en surbrillance, répertoriant les rapports de diffusion disponibles.](assets/detailed-report-2.png)
 
    Par défaut, les rapports disponibles sont les suivants :
 
@@ -64,7 +64,7 @@ Ce rapport regroupe les indicateurs clés qui permettent de suivre le comporteme
 >
 >Les valeurs calculées à partir d’ouvertures de messages sont toujours des estimations en raison notamment de la marge d’erreur liée aux emails au format texte. Les indicateurs **[!UICONTROL Ouvertures distinctes/Somme des ouvertures pour la population atteinte]** prennent en compte cette marge d’erreur. [En savoir plus](metrics-calculation.md#tracking-opens-).
 
-![](assets/tracking-report-synthesis.png)
+![Rapport des indicateurs de tracking avec quatre sections numérotées, des statistiques de diffusion aux flux de clics générés.](assets/tracking-report-synthesis.png)
 
 **[!UICONTROL 1. Statistiques de diffusion]**
 
@@ -101,7 +101,7 @@ Cette table de valeurs présente la répartition des diffusions, ouvertures, cli
 >
 >Les noms de domaine qui apparaissent dans ce rapport sont définis dans l’énumération utilisée au niveau des cubes. Pour modifier, ajouter ou supprimer des domaines par défaut, éditez l&#39;énumération **[!UICONTROL Domaines]**, et modifiez les valeurs et les alias. La catégorie **[!UICONTROL Autres]** regroupe les noms de domaine qui n’appartiennent à aucune valeur de l’énumération.
 >
->Découvrez comment accéder à vos énumérations et la manière de les configurer sur [cette page](../config/enumerations.md).
+>Découvrez comment accéder à vos énumérations et la manière de les configurer dans [Gérer les énumérations](../config/enumerations.md).
 
 
 **[!UICONTROL 4. Flux de clics générés]**
@@ -168,7 +168,7 @@ This chart shows the breakdown of cumulated clicks per day.
 
 Ce rapport présente l&#39;ensemble des informations principales relatives à la diffusion.
 
-![](assets/user-report-summary.png)
+![Résumé du rapport de diffusion avec la population cible initiale, sections Causes d&#39;exclusion et Statistiques de diffusion.](assets/user-report-summary.png)
 
 **[!UICONTROL Une population cible]**
 

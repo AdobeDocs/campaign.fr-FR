@@ -27,10 +27,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 66%
+source-wordcount: '251'
+ht-degree: 59%
 ---
 # Prise en main des applications et formulaires web{#gs-ac-web}
 
@@ -42,12 +42,12 @@ ht-degree: 66%
 
 Adobe Campaign intègre un module graphique pour la définition et la publication des **formulaires web** pour créer des pages avec des champs de saisie et de sélection, et qui peuvent inclure des données de la base de données. Vous pouvez ainsi concevoir et publier des pages web auxquelles les utilisateurs peuvent accéder pour afficher ou saisir des informations.
 
-Découvrez comment créer et publier des formulaires web dans [cette section](web/about-web-forms.md).
+Découvrez comment créer et publier des formulaires web dans [Prise en main des formulaires web](web/about-web-forms.md).
 
-![](assets/sample.png)
+![Exemple de formulaire web pour un abonnement à une newsletter par e-mail avec des champs d&#39;e-mail, de nom et de pays et un bouton S&#39;abonner.](assets/sample.png)
 
 Adobe Campaign vous permet également de créer et de publier des **applications web** dynamiques et interactives, composées de données issues de la base de données et dont le contenu est adapté en fonction des droits de l’utilisateur connecté.
 
 Vous pouvez créer des pages, par exemple un formulaire d’édition sur un extranet ou des formulaires de notification incluant des données issues de la base de données avec des tables, des graphiques, des formulaires de saisie, etc. Cette fonctionnalité permet de concevoir et de publier des pages web, sur lesquelles les utilisateurs et utilisatrices pourront chercher ou saisir des informations.
 
-Découvrez comment créer et publier des applications web dans [cette section](web/about-web-applications.md).
+Découvrez comment créer et publier des applications web dans [Prise en main des applications web](web/about-web-applications.md).

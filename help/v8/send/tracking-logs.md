@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 11%
+source-wordcount: '392'
+ht-degree: 10%
 ---
 # Accéder aux logs de tracking {#accessing-the-tracking-logs}
 
@@ -45,7 +45,7 @@ Lorsque la diffusion a été envoyée et que le tracking a été activé, le wor
 
 Ces informations sont remontées dans l&#39;onglet **[!UICONTROL Tracking]** du profil des destinataires ciblés par la diffusion, comme dans l&#39;exemple suivant :
 
-![](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
+![Onglet Tracking d&#39;un profil de destinataire répertoriant les clics suivis et les ouvertures avec date, libellé, type et diffusion](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
 
 Cet onglet affiche toutes les URL trackées et sur lesquelles le destinataire a cliqué, notamment :
 
@@ -60,11 +60,11 @@ Vous pouvez filtrer et trier ces informations pour analyser le comportement des 
 
 Les informations de tracking sont également accessibles à partir de l&#39;onglet **[!UICONTROL Tracking]** de la diffusion.
 
-![](assets/s_ncs_user_select_tracking_tab_from_del.png)
+![Onglet Tracking d&#39;une diffusion répertoriant les logs de tracking avec la date, le libellé, le type et le destinataire](assets/s_ncs_user_select_tracking_tab_from_del.png)
 
 Dans cet onglet, vous pouvez afficher :
 
-* **[!UICONTROL Statistiques de tracking]** : donne un aperçu des ouvertures, clics et autres événements de tracking
+* **[!UICONTROL Statistiques de tracking]** : fournit une vue d’ensemble des ouvertures, clics et autres événements de tracking
 * **[!UICONTROL URL et flux de clics]** : indique les liens sur lesquels l’utilisateur a cliqué et le nombre de fois qu’il a cliqué
 * **[!UICONTROL Position des clics]** : affiche une représentation visuelle de l’emplacement où les destinataires ont cliqué dans votre message
 * **[!UICONTROL Logs de tracking]** : fournit des enregistrements de tracking individuels détaillés
@@ -73,15 +73,15 @@ Dans cet onglet, vous pouvez afficher :
 
 >[!NOTE]
 >
->Si l’onglet **[!UICONTROL Tracking]** d’une diffusion n’est pas visible, cela signifie que le tracking n’a pas été activé. Reportez-vous à [cette section](tracked-links.md) pour savoir comment configurer le tracking.
+>Si l’onglet **[!UICONTROL Tracking]** d’une diffusion n’est pas visible, cela signifie que le tracking n’a pas été activé. Consultez [Configurer les liens suivis](tracked-links.md) pour savoir comment configurer le suivi.
 
 ### Vérifier le workflow technique Tracking {#check-tracking-workflow}
 
-Le workflow technique de Tracking doit être en cours d’exécution pour collecter les données de tracking. Le workflow technique de Tracking est disponible dans le dossier **[!UICONTROL Administration > Exploitation > Workflows techniques]**.
+Le workflow technique de Tracking doit être en cours d’exécution pour collecter les données de tracking. Le workflow technique de tracking est disponible dans le dossier **[!UICONTROL Administration > Production > Workflows techniques]**.
 
 Pour vérifier le workflow :
 
-1. Ouvrez le workflow **[!UICONTROL Tracking]**
+1. Ouvrir le workflow **[!UICONTROL Tracking]**
 1. Vérifier la date de dernière exécution
 1. Vérifiez qu’il n’y a aucune erreur dans les logs de workflow.
 
@@ -92,7 +92,7 @@ Si le workflow n’est pas en cours d’exécution ou présente des erreurs, con
 Après avoir envoyé une diffusion dont le tracking est activé :
 
 1. Attendez que le workflow Tracking s’exécute (par défaut, toutes les heures)
-1. Ouvrez la diffusion et accédez à l&#39;onglet **[!UICONTROL Tracking]**
+1. Ouvrez la diffusion et accédez à l’onglet **[!UICONTROL Tracking]**
 1. Vérifier l’affichage des données de tracking
 1. Si aucune donnée n’apparaît, vérifiez que :
    * Le tracking a été activé dans les paramètres de la diffusion

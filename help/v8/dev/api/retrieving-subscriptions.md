@@ -22,7 +22,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 94%
@@ -46,7 +46,7 @@ Il s’agit d’une procédure en deux étapes.
 
 Exécutez une requête GET pour récupérer le service.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -56,7 +56,7 @@ Exécutez une requête GET pour récupérer le service.
 
 Elle renvoie l’URL des abonnements du service.
 
-```
+```json
   {
     ...
     "messageType": "email",
@@ -70,7 +70,7 @@ Elle renvoie l’URL des abonnements du service.
 
 Exécutez une requête GET sur l’URL des abonnements.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY>/subscriptions \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -80,7 +80,7 @@ Exécutez une requête GET sur l’URL des abonnements.
 
 La liste des abonnements pour le service s’affiche, avec chaque profil associé.
 
-```
+```json
   {
     ...
     "service": ...,
@@ -108,7 +108,7 @@ Il s’agit d’une procédure en deux étapes.
 
 Exécutez une requête GET pour récupérer le profil.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -118,7 +118,7 @@ Exécutez une requête GET pour récupérer le profil.
 
 Elle renvoie l’URL des abonnements du profil.
 
-```
+```json
   {
     ...
     "postalAddress":...,
@@ -132,7 +132,7 @@ Elle renvoie l’URL des abonnements du profil.
 
 Exécutez une requête GET sur l’URL des abonnements.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY>/subscriptions \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -142,7 +142,7 @@ Exécutez une requête GET sur l’URL des abonnements.
 
 Elle renvoie la liste des services auxquels le profil s’est abonné.
 
-```
+```json
   {
     ...
     "PKey": "<PKEY>",

@@ -25,10 +25,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 87%
+source-wordcount: '148'
+ht-degree: 68%
 ---
 # Gestion des modèles{#template-management}
 
@@ -38,7 +38,7 @@ Le Digital Content Editor propose **des modèles standards** pour les applicatio
 
 Lors de la création d’une application web de type Page de destination, l’utilisateur ou l’utilisatrice peut choisir un de ces modèles. Vous pouvez également importer un modèle HTML créé en dehors d’Adobe Campaign.
 
-![](assets/dce_popup_templatechoice.png)
+![Choisissez une boîte de dialogue de contenu répertoriant les modèles de contenu disponibles tels que D&#39;un fichier, Contact et Clickthrough](assets/dce_popup_templatechoice.png)
 
 Pour ajouter un modèle, consultez la section [Options globales](content-editor-interface.md#global-options).
 
@@ -48,6 +48,6 @@ Pour ajouter un modèle, consultez la section [Options globales](content-editor-
 
 Dans l’onglet **Campagnes**, ouvrez la diffusion sélectionnée. Cliquez sur le bouton **Enregistrer en tant que modèle**, nommez le modèle, puis enregistrez-le.
 
-![](assets/dce_save_model.png)
+![Éditeur de contenu HTML avec l’icône Enregistrer en tant que modèle mise en surbrillance dans la barre d’outils de droite](assets/dce_save_model.png)
 
 Le nouveau modèle est enregistré sous le nœud **Ressources > Modèles > Modèles de contenu** de l’explorateur.

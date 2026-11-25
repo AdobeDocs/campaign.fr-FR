@@ -26,14 +26,14 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 90%
+source-wordcount: '760'
+ht-degree: 80%
 ---
 # Traitement des événements {#event-processing}
 
-Dans le contexte des messages transactionnels, un événement est généré par un système d’informations externe et envoyé à Adobe Campaign via les méthodes **[!UICONTROL PushEvent]** et **[!UICONTROL PushEvents]**. Ces méthodes sont décrites dans [cette section](event-description.md).
+Dans le contexte des messages transactionnels, un événement est généré par un système d’informations externe et envoyé à Adobe Campaign via les méthodes **[!UICONTROL PushEvent]** et **[!UICONTROL PushEvents]**. Ces méthodes sont décrites dans [Comprendre la description de l&#39;événement](event-description.md).
 
 Cet événement contient des données liées à l’événement, telles que :
 
@@ -43,7 +43,7 @@ Cet événement contient des données liées à l’événement, telles que :
 
 Exemple de données d&#39;un événement :
 
-![](assets/mc-event-request.png)
+![Exemple de XML d’événement : attributs de données d’événement (type, e-mail, origine) et données d’événement personnalisées dans l’élément ctx](assets/mc-event-request.png)
 
 Pour traiter les événements de message transactionnel, les étapes suivantes sont appliquées sur la ou les instances d&#39;exécution :
 
@@ -65,11 +65,11 @@ Les événements générés par le système d&#39;information peuvent être coll
 
 Une fois collectés, les événements sont scindés par workflows techniques entre les files d’attente en temps réel et par lot de la ou des instances d’exécution, tout en attendant d’être associés à un [modèle de message](transactional-template.md).
 
-![](assets/mc-event-queues.png)
+![Dossiers Message Center sur l&#39;instance d&#39;exécution : Événements temps réel et Événements batch sous le dossier Par défaut](assets/mc-event-queues.png)
 
 >[!NOTE]
 >
->Sur les instances d&#39;exécution, les dossiers **[!UICONTROL Événements en temps réel]** ou **[!UICONTROL Événements par lots]** ne doivent pas être définis comme des vues, car cela pourrait entraîner des problèmes de droit d&#39;accès. Pour plus d&#39;informations sur la définition d&#39;un dossier en tant que vue, consultez [cette section](../audiences/folders-and-views.md#turn-a-folder-to-a-view).
+>Sur les instances d&#39;exécution, les dossiers **[!UICONTROL Événements en temps réel]** ou **[!UICONTROL Événements par lots]** ne doivent pas être définis comme des vues, car cela pourrait entraîner des problèmes de droit d&#39;accès. Pour plus d&#39;informations sur la définition d&#39;un dossier en tant que vue, voir [Transformer un dossier en vue](../audiences/folders-and-views.md#turn-a-folder-to-a-view).
 
 ## Transférer un événement vers un modèle {#event-to-template}
 
@@ -79,11 +79,11 @@ L&#39;étape de routage consiste à associer un événement au modèle de messag
 
 * Type d&#39;événement spécifié dans les propriétés de l&#39;événement lui-même :
 
-  ![](assets/event-type-sample.png)
+  ![XML de l&#39;événement batch avec l&#39;attribut de type d&#39;événement défini sur purchase_order](assets/event-type-sample.png)
 
 * Type d&#39;événement spécifié dans les propriétés du modèle de message :
 
-  ![](assets/event-type-select.png)
+  Assistant de modèle de message ![avec la liste Type d&#39;événement affichant purchase et purchase_def](assets/event-type-select.png)
 
 Par défaut, le routage s&#39;appuie sur les informations suivantes :
 

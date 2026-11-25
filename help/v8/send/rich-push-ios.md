@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1287'
-ht-degree: 93%
+source-wordcount: '1506'
+ht-degree: 79%
 ---
 # Concevoir une diffusion de notification push iOS enrichie {#rich-push}
 
@@ -56,7 +56,7 @@ Accédez aux onglets ci-dessous pour en savoir plus sur la personnalisation de c
 
 1. Dans le menu déroulant **[!UICONTROL Type de notification]**, sélectionnez **[!UICONTROL Par défaut]**.
 
-   ![](assets/rich_push_ios_default_1.png)
+   ![Onglet Général avec la liste déroulante Type de notification par défaut, De base, Carrousel et Minuteur](assets/rich_push_ios_default_1.png)
 
 1. Dans le champ **[!UICONTROL Titre]**, saisissez le libellé du titre qui doit apparaître dans la liste des notifications disponibles depuis le centre de notifications.
 
@@ -66,17 +66,17 @@ Accédez aux onglets ci-dessous pour en savoir plus sur la personnalisation de c
 
 1. Saisissez le contenu du message dans la section **[!UICONTROL Contenu du message]** de l’assistant.
 
-   ![](assets/rich_push_ios_default_2.png)
+   ![Onglet Général avec Type de notification par défaut, titre et contenu du message renseigné](assets/rich_push_ios_default_2.png)
 
 1. Accédez à l’onglet **[!UICONTROL Son et pastille]** pour personnaliser des paramètres supplémentaires tels que les options de son et de pastille pour vos notifications. [En savoir plus](#sound-badge)
 
-   ![](assets/rich_push_ios_default_3.png)
+   ![Onglet Son et pastille avec l&#39;option Nettoyer la pastille activée, paramètres Mode d&#39;alerte critique et Nom du son](assets/rich_push_ios_default_3.png)
 
 1. Dans l’onglet **[!UICONTROL Variables de l’application]**, vos **[!UICONTROL variables d’application]** sont automatiquement ajoutées. Elles permettent de définir le comportement des notifications. Par exemple, vous pouvez configurer l’affichage d’un écran spécifique lorsque l’utilisateur active la notification.
 
 1. Pour une personnalisation plus poussée, explorez les **[!UICONTROL options avancées]** disponibles pour vos notifications push. [En savoir plus](#push-advanced)
 
-   ![](assets/rich_push_ios_default_4.png)
+   ![Onglet Avancé avec les champs Thread-id, Catégorie, ID de contenu Target, Image de Launch et Score de pertinence](assets/rich_push_ios_default_4.png)
 
 1. Une fois la notification configurée, cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** pour la prévisualiser.
 
@@ -86,13 +86,13 @@ Accédez aux onglets ci-dessous pour en savoir plus sur la personnalisation de c
 
 1. Dans le menu déroulant **[!UICONTROL Type de notification]**, sélectionnez **[!UICONTROL De base]**.
 
-   ![](assets/rich_push_ios_basic_1.png)
+   Liste déroulante ![Type de notification avec l’option De base sélectionnée, en ajoutant les champs Titre développé et Message développé](assets/rich_push_ios_basic_1.png)
 
 1. Pour composer votre message, saisissez votre texte dans les champs **[!UICONTROL Titre]**, **[!UICONTROL Message étendu]**, **[!UICONTROL Message]** et **[!UICONTROL Message étendu]**.
 
    Le texte **[!UICONTROL Message]** s’affiche dans la vue réduite, alors que le **[!UICONTROL Message étendu]** s’affiche lorsque la notification est développée.
 
-   ![](assets/rich_push_ios_basic_2.png)
+   ![Notification de base avec champs Titre, Titre développé, Message et Message développé renseignés](assets/rich_push_ios_basic_2.png)
 
 1. Vous pouvez éventuellement ajouter un **[!UICONTROL Sous-titre]**, qui correspond à la valeur du paramètre **sous-titre** du payload de notification iOS.
 
@@ -102,11 +102,11 @@ Accédez aux onglets ci-dessous pour en savoir plus sur la personnalisation de c
 
 1. Pour une personnalisation plus poussée, explorez les **[!UICONTROL options avancées]** disponibles pour vos notifications push. [En savoir plus](#push-advanced)
 
-   ![](assets/rich_push_ios_default_4.png)
+   ![Onglet Avancé avec les champs Thread-id, Catégorie, ID de contenu Target, Image de Launch et Score de pertinence](assets/rich_push_ios_default_4.png)
 
 1. Dans le menu **[!UICONTROL Options des couleurs]**, saisissez les codes hexadécimaux des couleurs de votre **[!UICONTROL Titre]**, **[!UICONTROL Message]** et **[!UICONTROL Arrière-plan]**.
 
-   ![](assets/rich_push_ios_basic_3.png)
+   ![Onglet Options de couleur avec les champs Couleur du titre, Couleur du message et Couleur d’arrière-plan](assets/rich_push_ios_basic_3.png)
 
 Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser des personnes abonnées de test pour prévisualiser et tester le message.
 
@@ -116,17 +116,17 @@ Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser
 
 1. Dans le menu déroulant **[!UICONTROL Type de notification]**, sélectionnez **[!UICONTROL Carrousel]**.
 
-   ![](assets/rich_push_ios_carousel_1.png)
+   ![Liste déroulante Type de notification avec le carrousel sélectionné, ajout des onglets Options de couleur et Options de carrousel](assets/rich_push_ios_carousel_1.png)
 
 1. Pour composer votre message, saisissez votre texte dans les champs **[!UICONTROL Titre]**, **[!UICONTROL Message étendu]** et **[!UICONTROL Message]**.
 
-   ![](assets/rich_push_ios_carousel_2.png)
+   ![Notification du carrousel avec champs Titre, Titre développé et Message renseignés](assets/rich_push_ios_carousel_2.png)
 
 1. Accédez à l’onglet **[!UICONTROL Son et pastille]** pour personnaliser des paramètres supplémentaires tels que les options de son et de pastille pour vos notifications. [En savoir plus](#sound-badge)
 
 1. Dans l’onglet **[!UICONTROL Variables de l’application]**, vos **[!UICONTROL variables d’application]** sont automatiquement ajoutées. Elles permettent de définir le comportement des notifications. Par exemple, vous pouvez configurer l’affichage d’un écran spécifique lorsque l’utilisateur active la notification.
 
-   ![](assets/rich_push_ios_carousel_4.png)
+   ![Onglet Avancé d’une notification de carrousel avec les champs Thread-id, Target Content id et ClickAction](assets/rich_push_ios_carousel_4.png)
 
 1. Pour une personnalisation plus poussée, explorez les **[!UICONTROL options avancées]** disponibles pour vos notifications push. [En savoir plus](#push-advanced)
 
@@ -141,7 +141,7 @@ Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser
 
    Veillez à inclure trois images minimum et cinq maximum.
 
-   ![](assets/rich_push_ios_carousel_3.png)
+   ![Onglet Options de carrousel avec mode de fonctionnement manuel et liste d&#39;images avec URI d&#39;action](assets/rich_push_ios_carousel_3.png)
 
 Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser des personnes abonnées de test pour prévisualiser et tester le message.
 
@@ -151,13 +151,13 @@ Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser
 
 1. Dans le menu déroulant **[!UICONTROL Type de notification]**, sélectionnez **[!UICONTROL Retardateur]**.
 
-   ![](assets/rich_push_ios_timer_1.png)
+   ![Liste déroulante Type de notification avec Minuteur sélectionné, ajout des onglets Options de couleur et Options de minuteur](assets/rich_push_ios_timer_1.png)
 
 1. Pour composer votre message, saisissez le texte dans les champs **[!UICONTROL Titre]**, **[!UICONTROL Titre développé]**, **[!UICONTROL Message]** et **[!UICONTROL Message développé]**.
 
    Le texte **[!UICONTROL Message]** s’affiche dans la vue réduite, alors que le **[!UICONTROL Message étendu]** s’affiche lorsque la notification est développée.
 
-   ![](assets/rich_push_ios_timer_2.png)
+   ![Notification du minuteur avec champs Titre, Titre développé et Message renseignés](assets/rich_push_ios_timer_2.png)
 
 1. Vous pouvez éventuellement ajouter un **[!UICONTROL Sous-titre]**, qui correspond à la valeur du paramètre **sous-titre** du payload de notification iOS.
 
@@ -169,13 +169,13 @@ Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser
 
 1. Dans le menu **[!UICONTROL Options des couleurs]**, saisissez les codes hexadécimaux des couleurs de votre **[!UICONTROL Titre]**, **[!UICONTROL Message]** et **[!UICONTROL Arrière-plan]**.
 
-   ![](assets/rich_push_ios_timer_4.png)
+   ![Onglet Options de couleur avec les champs Couleur du titre, Couleur du message, Couleur d&#39;arrière-plan et Couleur du minuteur](assets/rich_push_ios_timer_4.png)
 
 1. Dans l’onglet **[!UICONTROL Retardateur]**, définissez la **[!UICONTROL durée du retardateur]** en secondes ou l’**[!UICONTROL horodatage de fin du retardateur]** sur un horodatage d’époque spécifique.
 
 1. Saisissez le texte et l’image qui s’afficheront une fois le retardateur expiré dans les champs **[!UICONTROL Autre titre]**, **[!UICONTROL Autre message]** et **[!UICONTROL Autre image]**.
 
-   ![](assets/rich_push_ios_timer_3.png)
+   ![Onglet Options du minuteur avec les champs Titre alternatif, Durée du minuteur, Image alternative et Message alternatif](assets/rich_push_ios_timer_3.png)
 
 Une fois que vous avez défini le contenu de votre message, vous pouvez utiliser des personnes abonnées de test pour prévisualiser et tester le message.
 

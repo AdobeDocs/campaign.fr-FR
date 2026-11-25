@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 61%
+source-wordcount: '1247'
+ht-degree: 58%
 ---
 # Découvrir l’interface utilisateur {#ui-client-console}
 
@@ -42,7 +42,7 @@ Vous pouvez accéder à Adobe Campaign par le biais de sa console cliente ou de 
 
 * **Console cliente** : la console cliente Campaign est une application native qui communique avec le serveur applicatif d’Adobe Campaign par le biais de protocoles Internet standard, tels que SOAP et HTTP. La console cliente Campaign centralise toutes les fonctionnalités et tous les paramètres et requiert une bande passante minimale, car elle repose sur un cache local. Conçue pour un déploiement facile, la console cliente Campaign peut être déployée à partir d’un navigateur Internet et être mise à jour automatiquement. En outre, elle ne nécessite aucune configuration réseau spécifique, car elle génère uniquement du trafic HTTP(S). [En savoir plus](#ui-access)
 
-  Découvrez comment installer et configurer la console cliente Campaign dans [cette section](../start/connect.md).
+  Découvrez comment installer et configurer la console cliente Campaign dans [Connexion à Campaign v8](../start/connect.md).
 
 * **Accès web** - Les fonctionnalités d’accès web d’Adobe Campaign vous permettent d’accéder à un sous-ensemble de fonctionnalités de Campaign avec un navigateur web, à l’aide d’une interface utilisateur d’HTML. Utilisez cette interface web pour consulter des rapports, contrôler et valider les messages, accéder aux tableaux de bord de surveillance, et plus encore.  Pour en savoir plus sur l’accès web de Campaign, consultez [cette section](../start/connect.md#web-access).
 
@@ -95,7 +95,7 @@ Vous pouvez également utiliser un navigateur web pour accéder à Campaign. Dan
 
 Une fois connecté à la console cliente Campaign, parcourez les onglets de la section supérieure pour accéder aux fonctionnalités clés de Campaign :
 
-![](assets/overview-home.png)
+![Page d&#39;accueil de Campaign avec les onglets Campagnes, Profils et cibles, Surveillance et Rapports mis en surbrillance](assets/overview-home.png)
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ Parcourez l&#39;explorateur Campaign pour accéder à l&#39;ensemble des fonctio
 
 Cet espace de travail vous permet d&#39;accéder à l&#39;arborescence de l&#39;explorateur pour parcourir toutes les fonctionnalités et options.
 
-* La section de gauche affiche l’arborescence de l’explorateur Campaign et vous permet de parcourir tous les composants et paramètres de votre instance, en fonction de vos autorisations. Vous pouvez ajouter et personnaliser des dossiers comme expliqué sur [cette page](../audiences/folders-and-views.md).
+* La section de gauche affiche l’arborescence de l’explorateur Campaign et vous permet de parcourir tous les composants et paramètres de votre instance, en fonction de vos autorisations. Vous pouvez ajouter et personnaliser des dossiers comme expliqué dans [Dossiers et vues](../audiences/folders-and-views.md).
 
 * La section supérieure affiche la liste des enregistrements dans le dossier actif. Ces listes sont entièrement personnalisables. [En savoir plus](../config/ui-settings.md)
 

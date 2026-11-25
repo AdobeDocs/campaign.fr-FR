@@ -26,10 +26,10 @@ level_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 84%
+source-wordcount: '265'
+ht-degree: 82%
 ---
 # Mécanismes de sécurisation des produits{#guardrails}
 
@@ -47,4 +47,4 @@ Les limites et les mécanismes de sécurisation identifient les fonctionnalités
 * Dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), les mécanismes d’abonnement (opt-in) et de désabonnement (opt-out), et l’enregistrement mobile sont des processus asynchrones. Les demandes sont traitées toutes les heures par l&#39;intermédiaire d&#39;un workflow technique spécifique. [En savoir plus](../architecture/replication.md#workflows)
 * Dans le contexte d’un [Déploiement Entreprise (FFDA)](../architecture/enterprise-deployment.md), les doublons doivent être gérés manuellement par les utilisateurs et utilisatrices finaux. [En savoir plus](../architecture/keys.md)
 * Adobe Campaign v8 ne prend pas en charge le débit étendu sur les API et les applications web. Pour les besoins spécifiques, contactez Adobe pour obtenir des conseils.
-* Dans le cadre d’un déploiement [Enterprise (FFDA)](../architecture/enterprise-deployment.md), le module d’optimisation d’Adobe Campaign ne prend pas en compte les diffusions planifiées dans les règles de typologie de pression. Apprenez-en davantage en consultant [cette page](../../automation/campaign-opt/pressure-rules.md).
+* Dans le cadre d’un déploiement [Enterprise (FFDA)](../architecture/enterprise-deployment.md), le module d’optimisation d’Adobe Campaign ne prend pas en compte les diffusions planifiées dans les règles de typologie de pression. En savoir plus dans [Configurer les règles de pression](../../automation/campaign-opt/pressure-rules.md)

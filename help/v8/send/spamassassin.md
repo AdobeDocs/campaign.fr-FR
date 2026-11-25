@@ -19,10 +19,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 92%
+source-wordcount: '326'
+ht-degree: 78%
 ---
 # SpamAssassin{#spamassassin}
 
@@ -46,13 +46,13 @@ SpamAssassin utilise diverses techniques de détection des emails indésirables,
 
 Une fois que vous avez créé votre email et défini son contenu, suivez les étapes ci-après pour évaluer les risques.
 
-La création et la conception d&#39;une diffusion sont présentées dans cette [page](defining-the-email-content.md).
+Pour plus d&#39;informations sur la création et la conception d&#39;une diffusion, consultez cette [page](defining-the-email-content.md).
 
 
 1. Accédez à l&#39;onglet **[!UICONTROL Aperçu]**.
 1. Sélectionnez un destinataire pour prévisualiser votre diffusion.
 
-   ![](assets/s_tn_del_preview_spamassassin_recipient.png)
+   ![Onglet Aperçu de la diffusion avec la liste des destinataires ouverte pour choisir un destinataire pour la vérification anti-spam](assets/s_tn_del_preview_spamassassin_recipient.png)
 
    >[!NOTE]
    >
@@ -60,13 +60,13 @@ La création et la conception d&#39;une diffusion sont présentées dans cette [
 
 1. Un message d’avertissement fournit le résultat du test. Si un risque élevé est détecté, le message d’avertissement suivant est affiché :
 
-   ![](assets/s_tn_del_preview_spamassassin_ko.png)
+   ![Avertissement de l&#39;onglet Aperçu : la vérification anti-spam a détecté un risque élevé pour cet e-mail, avec le lien Plus](assets/s_tn_del_preview_spamassassin_ko.png)
 
 1. Cliquez sur le lien **[!UICONTROL Détail...]** situé en regard de l&#39;avertissement.
 1. Sélectionnez l&#39;onglet **[!UICONTROL Vérification anti-spam]**.
 1. Accédez à la section **[!UICONTROL Points / Règle / Description]** pour découvrir les raisons de ce risque.
 
-   ![](assets/s_tn_del_msg_spamassassin_ko.png)
+   ![Onglet Vérification anti-spam avec score de spam, score maximum autorisé et la liste Points / Règle / Description](assets/s_tn_del_msg_spamassassin_ko.png)
 
 >[!NOTE]
 >

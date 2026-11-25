@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 92%
+source-wordcount: '875'
+ht-degree: 88%
 ---
 # Envoyer et surveiller vos e-mails  {#send-and-monitor-emails}
 
@@ -77,7 +77,7 @@ Le MTA qualifie le rebond SMTP et envoie cette qualification à Campaign sous la
 >
 >Actuellement, les rebonds **asynchrones** sont qualifiés par le processus inMail grâce aux règles d’**[!UICONTROL e-mail entrant]**.
 
-En savoir plus sur les diffusions en échec dans [cette section](delivery-failures.md).
+En savoir plus sur les diffusions en échec dans [Diffusions en échec dans Campaign](delivery-failures.md).
 
 
 ### Règles MX spécifiques
@@ -112,9 +112,9 @@ Lorsque des messages soft bounce sont signalés depuis le MTA, leur statut de lo
 
 >[!NOTE]
 >
->Pour plus d’informations sur les rebonds temporaires et définitifs, voir [cette section](delivery-failures.md#delivery-failure-reasons).
+>Pour plus d&#39;informations sur les hard et soft bounces, voir [Pourquoi la diffusion du message a-t-elle échoué](delivery-failures.md#delivery-failure-reasons) ?
 >
->Pour plus d&#39;informations sur les reprises après une diffusion temporairement en échec, voir [cette section](delivery-failures.md#retries).
+>Pour plus d&#39;informations sur les reprises après un échec temporaire de diffusion, voir [Gestion des reprises](delivery-failures.md#retries).
 
 Le tableau ci-dessous montre comment les KPI et les statuts des logs d’envoi sont mis à jour à chaque étape du processus d’envoi.
 

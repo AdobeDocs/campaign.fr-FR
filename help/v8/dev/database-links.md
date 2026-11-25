@@ -30,10 +30,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 98%
+source-wordcount: '957'
+ht-degree: 92%
 ---
 # Gestion des liens {#links--relation-between-tables}
 
@@ -49,14 +49,14 @@ Dans l’interface utilisateur, les cardinalités sont représentées par une ic
 
 Pour les relations de jointure avec une table/base de données de campagne :
 
-* ![](assets/do-not-localize/join_with_campaign11.png) : cardinalité 1-1. Par exemple, entre un destinataire et une commande en cours. Un destinataire ne peut être associé qu&#39;à une seule occurrence à la fois de la table des commandes actuelle.
-* ![](assets/do-not-localize/externaljoin11.png) : cardinalité 1-1, jointure externe. Par exemple, entre un destinataire et son pays. Un destinataire ne peut être associé qu&#39;à une seule occurrence dans la table des pays. Le contenu de la table des pays ne sera pas enregistré.
-* ![](assets/do-not-localize/join_with_campaign1n.png) : cardinalité 1-N. Par exemple, entre une personne destinataire et le tableau des abonnements. Une personne destinataire peut être associée à plusieurs occurrences dans le tableau des abonnements.
+* ![Icône d&#39;un lien de cardinalité 1-1](assets/do-not-localize/join_with_campaign11.png) : cardinalité 1-1. Par exemple, entre un destinataire et une commande en cours. Un destinataire ne peut être associé qu&#39;à une seule occurrence à la fois de la table des commandes actuelle.
+* ![Icône de jointure externe de cardinalité 1-1](assets/do-not-localize/externaljoin11.png) : cardinalité 1-1, jointure externe. Par exemple, entre un destinataire et son pays. Un destinataire ne peut être associé qu&#39;à une seule occurrence dans la table des pays. Le contenu de la table des pays ne sera pas enregistré.
+* ![Icône d&#39;un lien de cardinalité 1-N](assets/do-not-localize/join_with_campaign1n.png) : cardinalité 1-N. Par exemple, entre un destinataire et la table des abonnements. Une personne destinataire peut être associée à plusieurs occurrences dans le tableau des abonnements.
 
 Pour les relations de jointure utilisant Federated Database Access (FDA) :
 
-* ![](assets/do-not-localize/join_fda_11.png) : cardinalité 1-1
-* ![](assets/do-not-localize/join_fda_1m.png) : cardinalité 1-N
+* ![Icône d&#39;un lien de cardinalité 1-1](assets/do-not-localize/join_fda_11.png) : cardinalité 1-1
+* ![Icône d&#39;un lien de cardinalité 1-N](assets/do-not-localize/join_fda_1m.png) : cardinalité 1-N
 
 Pour plus d’informations sur les tables FDA, voir la section [Accès à une base de données externe](../connect/fda.md).
 

@@ -36,10 +36,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 100%
+source-wordcount: '456'
+ht-degree: 82%
 ---
 # Utiliser les mappings de ciblage{#gs-target-mappings}
 
@@ -71,7 +71,7 @@ Vous pouvez également créer un mapping de ciblage. Vous devrez peut-être ajou
 * vous utilisez un tableau de destinataires personnalisé,
 * vous paramétrez une dimension de filtrage différente de la dimension de ciblage intégrée dans l’écran des mappings de ciblage.
 
-Pour en savoir plus sur la création des tableaux de destinataires personnalisés, consultez [cette page](../dev/custom-recipient.md).
+En savoir plus sur les tables de destinataires personnalisées dans [Modifiez votre table de destinataires par défaut](../dev/custom-recipient.md).
 
 L’assistant de création de mapping de ciblage Adobe Campaign vous permet de créer tous les schémas nécessaires pour utiliser votre mapping de ciblage personnalisé.
 
@@ -79,16 +79,16 @@ L’assistant de création de mapping de ciblage Adobe Campaign vous permet de 
 
 1. Créez un nouveau mapping de ciblage et sélectionnez votre schéma personnalisé comme dimension de ciblage.
 
-   ![](assets/new-target-mapping.png)
+   ![Sélectionnez l’étape Dimension de ciblage du nouvel assistant de mapping de ciblage, avec les libellés Clients et la dimension de ciblage Contrats.](assets/new-target-mapping.png)
 
 
 1. Indiquez les champs où sont stockées les informations de profil : nom, prénom, e-mail, adresse, etc.
 
-   ![](assets/wf_new_mapping_define_join.png)
+   ![L’étape Modifier les formulaires d’adresse, où chaque champ d’adresse de diffusion, tel que E-mail, est lié à un champ de la nouvelle dimension.](assets/wf_new_mapping_define_join.png)
 
 1. Indiquez les paramètres relatifs au stockage des informations, et notamment le suffixe des schémas d&#39;extension, pour qu&#39;ils soient facilement identifiables.
 
-   ![](assets/wf_new_mapping_define_names.png)
+   ![Étape de stockage avec espace de noms, suffixe des schémas d&#39;extension et options Exclusions pour stocker les exclusions et les messages.](assets/wf_new_mapping_define_names.png)
 
    Vous pouvez choisir de stocker ou non les exclusions (**excludelog**), avec les messages (**broadlog**) ou dans une table distincte.
 
@@ -96,6 +96,6 @@ L’assistant de création de mapping de ciblage Adobe Campaign vous permet de 
 
 1. Sélectionnez ensuite les extensions à prendre en compte. Le type d’extension dépend de vos paramètres de campagne et de vos modules complémentaires.
 
-   ![](assets/wf_new_mapping_define_extensions.png)
+   ![Étape des extensions avec l&#39;option Générer un schéma de stockage pour les propositions sélectionnée sous Moteur d&#39;offres.](assets/wf_new_mapping_define_extensions.png)
 
    Cliquez sur le bouton **[!UICONTROL Enregistrer]** pour lancer la création du mapping de diffusion : toutes les tables liées sont créées automatiquement, selon les paramètres sélectionnés.

@@ -23,10 +23,10 @@ topic_v2:
     internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 95%
+source-wordcount: '555'
+ht-degree: 92%
 ---
 # Génération de documents PDF personnalisés{#generating-personalized-pdf-documents}
 
@@ -75,7 +75,7 @@ Pour cela, il est nécessaire de paramétrer un bloc de personnalisation, puis d
 * Créez un nouveau bloc de personnalisation &quot;Mon Logo&quot; avec pour nom interne &quot;Mon_Logo&quot;.
 * Cliquez sur le lien **[!UICONTROL Paramètres avancés…]** et cochez l’option **[!UICONTROL « Le bloc est inclus dans une pièce jointe »]**. Cela vous permet de copier la définition du bloc de personnalisation directement dans le contenu du fichier OpenOffice.
 
-  ![](assets/s_ncs_pdf_bloc_option.png)
+  ![Bloc de personnalisation Mon logo avec son type de contenu et la définition XML OpenOffice dans l&#39;éditeur](assets/s_ncs_pdf_bloc_option.png)
 
   Il est nécessaire de distinguer deux types de déclaration à l&#39;intérieur du bloc de personnalisation :
 
@@ -84,7 +84,7 @@ Pour cela, il est nécessaire de paramétrer un bloc de personnalisation, puis d
 
 Dans l&#39;exemple, le bloc de personnalisation est de cette forme :
 
-```
+```html
 <% if (recipient.country.label == "Germany") { %>
 <draw:frame svg:width="4cm" svg:height="3cm">
 <draw:image xlink:href=https://..../logo_germany.png />

@@ -32,10 +32,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 94%
+source-wordcount: '219'
+ht-degree: 72%
 ---
 # Configurer les options de suivi d’URL {#personalizing-url-tracking}
 
@@ -45,7 +45,7 @@ Les paramètres avancés du tracking des messages sont accessibles à partir de 
 >
 >La gestion des images dans les e-mails est également paramétrée depuis cette fenêtre. Consultez la section [Ajout d’images](defining-the-email-content.md#adding-images).
 
-![](assets/s_ncs_user_email_del_tracking_ico.png)
+![Diffusion e-mail avec l’icône Tracking et images mise en surbrillance dans la barre d’outils](assets/s_ncs_user_email_del_tracking_ico.png)
 
 Vous pouvez configurer les options de tracking :
 
@@ -57,15 +57,15 @@ Vous pouvez configurer les options de tracking :
 
 * Activer/Désactiver le tracking à l&#39;ouverture du message.
 
-![](assets/s_ncs_user_email_del_tracking_param.png)
+![Fenêtre Tracking et images, onglet Tracking, avec les options Activer le tracking et Ouvertures du tracking et l&#39;arborescence des URL suivies](assets/s_ncs_user_email_del_tracking_param.png)
 
 Les URL trackées sont listées dans la fenêtre centrale, sous la forme d&#39;une arborescence.
 
-Vous pouvez activer ou désactiver unitairement le tracking pour chaque URL du message. Pour plus d’informations, consultez [cette section](tracked-links.md).
+Vous pouvez activer ou désactiver unitairement le tracking pour chaque URL du message. Pour plus d&#39;informations, consultez la section [Configurer les liens suivis](tracked-links.md).
 
 L&#39;onglet **[!UICONTROL Avancé]** permet de personnaliser les formules de calcul des URL trackées et de l&#39;URL d&#39;ouverture.
 
-![](assets/s_ncs_user_email_del_tracking_param_adv.png)
+![Fenêtre Tracking et images, onglet Avancé, avec les formules de calcul URL trackée et URL ouverte](assets/s_ncs_user_email_del_tracking_param_adv.png)
 
 >[!CAUTION]
 >

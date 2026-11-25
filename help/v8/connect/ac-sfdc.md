@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 97%
+source-wordcount: '432'
+ht-degree: 86%
 ---
 # Utilisation de Campaign et SFDC{#crm-sfdc}
 
@@ -59,7 +59,7 @@ Tout d’abord, vous devez créer le compte externe Salesforce.
 1. Sélectionnez le compte externe **[!UICONTROL Salesforce.com]** dans la section **Type**.
 1. Saisissez les paramètres pour activer la connexion.
 
-   ![](assets/sfdc-external-account.png)
+   ![Compte externe Salesforce CRM avec champs de compte, mot de passe, jeton de sécurité et version d’API](assets/sfdc-external-account.png)
 
    Pour configurer le compte externe Salesforce CRM afin de l’utiliser avec Adobe Campaign, vous devez fournir les détails suivants :
 
@@ -85,7 +85,7 @@ Vous pouvez maintenant configurer les tables à synchroniser.
 
    Exemple d’un schéma **Salesforce** importé dans Campaign :
 
-   ![](assets/sfdc-schemas.png)
+   ![Liste des schémas de données filtrée sur Salesforce affichant le schéma source CRM Salesforce importé](assets/sfdc-schemas.png)
 
 ## Synchronisation des énumérations{#sfdc-enum-sync}
 
@@ -95,11 +95,11 @@ Une fois le schéma créé, vous pouvez synchroniser automatiquement les énumé
 1. Sélectionnez l’énumération d’Adobe Campaign correspondant à l’énumération Salesforce.
 Vous pouvez remplacer toutes les valeurs d&#39;une énumération Adobe Campaign par celles du CRM : pour cela, sélectionnez **[!UICONTROL Oui]** dans la colonne **[!UICONTROL Remplacer]**.
 
-   ![](assets/sfdc-enum.png)
+   ![Boîte de dialogue de synchronisation des énumérations mappage des énumérations du CRM aux énumérations de Campaign avec la colonne Remplacer](assets/sfdc-enum.png)
 
 1. Cliquez sur **[!UICONTROL Suivant]** puis **[!UICONTROL Démarrer]** pour lancer l&#39;import des énumérations.
 
-1. Parcourez le nœud **[!UICONTROL Administration > Plateforme > Énumérations]** pour vérifier les valeurs importées. Pour en savoir plus sur les énumérations, consultez [cette page](../config/ui-settings.md).
+1. Parcourez le nœud **[!UICONTROL Administration > Plateforme > Énumérations]** pour vérifier les valeurs importées. En savoir plus sur les énumérations dans les [paramètres de l&#39;interface de Campaign](../config/ui-settings.md).
 
 Adobe Campaign et Salesforce.com sont maintenant connectés. Vous pouvez configurer la synchronisation des données entre les deux systèmes.
 
@@ -107,4 +107,4 @@ Pour synchroniser les données entre Adobe Campaign et SFDC, créez un workflow
 
 Pour en savoir plus sur la synchronisation des données, consultez [cette page](crm-data-sync.md).
 
-En savoir plus sur la gestion des énumérations dans Campaign [sur cette page](../config/enumerations.md).
+En savoir plus sur la gestion des énumérations dans la campagne [&#x200B; sur cette page](../config/enumerations.md).

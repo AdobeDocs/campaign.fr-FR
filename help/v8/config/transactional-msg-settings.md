@@ -24,16 +24,16 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 94%
+source-wordcount: '639'
+ht-degree: 92%
 ---
 # Paramètres de messagerie transactionnelle {#mc-settings}
 
-« Messages transactionnels » (Message Center) désigne un module de Campaign conçu pour gérer les messages déclenchés. Pour en savoir plus sur les fonctionnalités des messages transactionnels, consultez [cette section](../send/transactional.md).
+« Messages transactionnels » (Message Center) désigne un module de Campaign conçu pour gérer les messages déclenchés. En savoir plus sur la messagerie transactionnelle dans [La messagerie transactionnelle de Campaign](../send/transactional.md).
 
-Découvrez l’architecture de la messagerie transactionnelle sur [cette page](../architecture/architecture.md#transac-msg-archi).
+Découvrez l&#39;architecture de la messagerie transactionnelle dans l&#39;[architecture de Message Center](../architecture/architecture.md#transac-msg-archi).
 
 
 >[!NOTE]
@@ -121,9 +121,9 @@ Sur la ou les instances d’exécution, vous devez démarrer les workflows techn
 
   Les statuts possibles des événements sont les suivants :
 
-  * **[!UICONTROL En attente]** : l’événement est dans la file d’attente. Aucun modèle de message ne lui a encore été associé.
+  * **[!UICONTROL En attente]** : l&#39;événement est dans la file d&#39;attente. Aucun modèle de message ne lui a encore été associé.
   * **[!UICONTROL En attente de diffusion]** : l’événement est dans la file d’attente, un modèle de message lui a été associé et il est en cours de traitement par la diffusion.
   * **[!UICONTROL Envoyé]** : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a été envoyée.
   * **[!UICONTROL Ignoré par la diffusion]** : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a été ignorée.
-  * **[!UICONTROL La diffusion a échoué]** : ce statut est copié depuis les logs de diffusion. Il signifie que la diffusion a échoué.
+  * **[!UICONTROL Échec de la diffusion]** : ce statut est copié à partir des logs de diffusion. Il signifie que la diffusion a échoué.
   * **[!UICONTROL Evénement non pris en charge]** : l&#39;association de l&#39;événement à un modèle de message a échoué. L’événement ne sera pas traité.
