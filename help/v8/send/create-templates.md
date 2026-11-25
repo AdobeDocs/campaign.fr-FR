@@ -96,7 +96,7 @@ Pour dupliquer un modèle de diffusion, procédez comme suit :
 
 Le modèle est alors ajouté dans la liste des modèles de diffusion. Vous pouvez désormais le sélectionner lors de la création d’une diffusion.
 
-![Le modèle de diffusion répertorie dans une liste déroulante les modèles intégrés et le nouveau modèle personnalisé de diffusion Annonce par e-mail ](assets/select-the-new-template.png)
+![Le modèle de diffusion répertorie dans une liste déroulante les modèles intégrés et le nouveau modèle personnalisé de diffusion Annonce par e-mail &#x200B;](assets/select-the-new-template.png)
 
 ### Conversion d’une diffusion existante en modèle {#convert-an-existing-delivery}
 
@@ -140,7 +140,7 @@ Pour configurer un modèle de diffusion à partir de zéro, procédez comme suit
 
 Pour créer une diffusion basée sur un modèle existant, vous devez sélectionner le modèle dans la liste des modèles de diffusion proposés.
 
-![Le modèle de diffusion répertorie dans une liste déroulante les modèles intégrés et le nouveau modèle personnalisé de diffusion Annonce par e-mail ](assets/select-the-new-template.png)
+![Le modèle de diffusion répertorie dans une liste déroulante les modèles intégrés et le nouveau modèle personnalisé de diffusion Annonce par e-mail &#x200B;](assets/select-the-new-template.png)
 
 Si le modèle ne s’affiche pas, cliquez sur le dossier **[!UICONTROL Choisir le lien]** situé à droite du champ permettant de parcourir les dossiers de Campaign.
 
