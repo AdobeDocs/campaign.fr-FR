@@ -41,7 +41,7 @@ Utilisez le compartimentage des données pour simplifier l’affichage des donn�
 Globalement, trois types de mise en classe sont possibles :
 
 1. En utilisant des plages de valeurs définies manuellement. Par exemple, l’âge, le panier moyen, le nombre de diffusions ouvertes, etc. Pour plus d&#39;informations, consultez la section [Définir chaque classe](#defining-each-bin).
-1. Dynamiquement, en fonction des valeurs d&#39;une énumération [](../config/enumerations.md) : affichez uniquement les valeurs contenues dans l&#39;énumération, toutes les autres valeurs sont regroupées dans &#39;Autres&#39;. Pour plus d&#39;informations, consultez la section [Gérer dynamiquement les classes](#dynamically-managing-bins).
+1. Dynamiquement, en fonction des valeurs d&#39;une énumération [&#128279;](../config/enumerations.md) : affichez uniquement les valeurs contenues dans l&#39;énumération, toutes les autres valeurs sont regroupées dans &#39;Autres&#39;. Pour plus d&#39;informations, consultez la section [Gérer dynamiquement les classes](#dynamically-managing-bins).
 1. En utilisant des plages de valeurs, toutes les autres étant regroupées. Par exemple, les 18 à 25 ans, les 26 à 59 ans, et les autres. Pour plus d&#39;informations, consultez la section [Créer des plages de valeurs](#creating-value-ranges).
 
 Pour activer la mise en classe, cochez l&#39;option correspondante lors de la création de la dimension.
