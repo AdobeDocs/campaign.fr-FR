@@ -28,16 +28,16 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 88%
+source-wordcount: '514'
+ht-degree: 80%
 ---
 # Prise en main des typologies de campagne{#about-campaign-typologies}
 
 **Le module d’optimisation des campagnes** d’Adobe Campaign permet de contrôler, de filtrer et de surveiller l’envoi des diffusions. Pour éviter les conflits entre les campagnes, Adobe Campaign peut tester différentes combinaisons en appliquant des règles de contrainte spécifiques. Elles permettent de s’assurer que les messages envoyés répondent aux attentes et aux besoins des clientes et clients et des politiques de communication de l’entreprise.
 
-![](assets/do-not-localize/how-to-video.png) [Découvrez cette fonctionnalité en vidéo](#typologies-video)
+![Icône du bouton de lecture pour la vidéo sur les typologies](assets/do-not-localize/how-to-video.png) [Découvrez cette fonctionnalité en vidéo](#typologies-video)
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Les règles de typologies intégrées et les typologies sont disponibles dans le
 
 Pour chaque typologie, l’onglet **[!UICONTROL Règles]** vous permet d’ajouter, de supprimer ou de visualiser les règles de typologie à appliquer.
 
-![](assets/campaign_opt_rules_tab.png)
+![Liste des typologies avec une typologie sélectionnée et son onglet Règles répertoriant les règles de typologie à appliquer](assets/campaign_opt_rules_tab.png)
 
 Une fois créées, les règles de typologie sont regroupées dans les **typologies** de campagne, qui sont référencées dans les diffusions. [En savoir plus](#apply-typologies).
 
@@ -93,7 +93,7 @@ Des étapes détaillées sont répertoriées dans la section suivante :
 
 Lors de la préparation de la diffusion, les destinataires sont exclus lorsque le critère est rempli. Vous pouvez consulter les logs pour surveiller les exclusions.
 
-Des exemples de cas d’utilisation des règles de typologie de pression sont disponibles dans [cette page](pressure-rules.md#use-cases-on-pressure-rules).
+Des exemples de cas d&#39;utilisation des règles de typologie de pression sont disponibles dans [Cas d&#39;utilisation des règles de pression](pressure-rules.md#use-cases-on-pressure-rules).
 
 ## Tutoriels vidéo {#typologies-video}
 
@@ -101,11 +101,11 @@ Des exemples de cas d’utilisation des règles de typologie de pression sont di
 
 Cette vidéo explique comment implémenter la gestion de la fatigue dans Adobe Campaign en utilisant les règles de typologie.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448333?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333787?quality=12)
 
 ### Configurer la gestion de la lassitude à l&#39;aide de filtres prédéfinis
 
 La gestion de la lassitude contrôle la fréquence et le nombre des messages afin d&#39;éviter une sollicitation excessive des destinataires. Si votre instance de campagne ne contient pas le module d’optimisation de campagne, vous pouvez configurer un filtre prédéfini qui filtrera la population cible en fonction du nombre de messages reçus
 Cette vidéo explique comment implémenter la gestion de la fatigue dans Adobe Campaign à l’aide de filtres.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444602?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333778?quality=12)

@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
     internal-label: Measurement
-source-git-commit: c8cb0f8a3f752a46fae533c8fd0608aa4545d37c
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1545'
-ht-degree: 99%
+source-wordcount: '1957'
+ht-degree: 78%
 ---
 # Modèles d&#39;hypothèse{#hypothesis-templates}
 
@@ -46,7 +46,7 @@ Pour créer un modèle d&#39;hypothèse, les étapes sont les suivantes :
 
 1. Dans l&#39;explorateur Adobe Campaign, cliquez sur **[!UICONTROL Ressources > Modèles > Modèles d&#39;hypothèse]**.
 
-   ![](assets/response_hypothesis_model_creation_001.png)
+   ![Explorateur avec ressources > Modèles > Modèles d&#39;hypothèse sélectionnés et un modèle d&#39;hypothèse ouvert dans l&#39;onglet Général.](assets/response_hypothesis_model_creation_001.png)
 
 1. Cliquez sur le bouton **[!UICONTROL Nouveau]** ou cliquez avec le bouton droit de la souris dans la liste des modèles et sélectionnez **[!UICONTROL Nouveau]** dans le menu contextuel.
 1. Saisissez le libellé de l&#39;hypothèse.
@@ -88,7 +88,7 @@ L’onglet **[!UICONTROL Général]** du modèle permet de définir les options 
 
 * **[!UICONTROL Canal]** : vous pouvez choisir un canal spécifique ou mettre le modèle d&#39;hypothèse à la disposition de tous les canaux dans la console Adobe Campaign en sélectionnant l&#39;option **[!UICONTROL Tous les canaux]** dans la liste déroulante. Si vous paramétrez le modèle pour un canal particulier, cela permet de filtrer automatiquement les diffusions par canal au moment de la création de l&#39;hypothèse. [Apprenez-en davantage](creating-hypotheses.md)
 
-  ![](assets/response_properties_001.png)
+  ![Onglet Général du modèle d’hypothèse avec le menu déroulant Canal ouvert et Tous les canaux mis en surbrillance.](assets/response_properties_001.png)
 
 * **[!UICONTROL Dossier d&#39;exécution]** : permet de spécifier le dossier d&#39;exécution de l&#39;hypothèse.
 * **[!UICONTROL Prise en compte dans le calcul du ROI campagne]** : permet de prendre en compte le résultat de l&#39;hypothèse dans le calcul du ROI de la campagne associée (dans le cas d&#39;une diffusion de campagne).
@@ -99,29 +99,29 @@ L’onglet **[!UICONTROL Général]** du modèle permet également de définir l
 
 * **[!UICONTROL Différer l’exécution vers une plage horaire de faible activité]** : permet de différer le lancement de l’hypothèse afin d’optimiser les performances d’Adobe Campaign. Lorsque cette option est cochée, le workflow de traitement sur les campagnes exécute le calcul d’hypothèse pendant les temps d’arrêt.
 
-  ![](assets/response_exec_settings_002.png)
+  ![Paramètres d&#39;exécution du modèle d&#39;hypothèse avec vérification de la planification de l&#39;exécution pour une période de faible activité.](assets/response_exec_settings_002.png)
 
 * **[!UICONTROL Priorité]** : niveau appliqué à l&#39;hypothèse pour échelonner l&#39;ordre de calcul des hypothèses, dans le cas d&#39;exécutions simultanées.
 
-  ![](assets/response_exec_settings_003.png)
+  ![Liste déroulante Priorité du modèle d&#39;hypothèse - Faible, Moyenne et Élevée.](assets/response_exec_settings_003.png)
 
 * **[!UICONTROL Exécution automatique]** : permet, au besoin, de planifier le recalcul de l&#39;hypothèse (par exemple si l&#39;on souhaite mettre à jour les indicateurs à intervalle régulier jusqu&#39;à la date de fin de la diffusion).
 
-  ![](assets/response_exec_settings_001.png)
+  ![Exécution automatique vérifiée avec le lien Fréquence d&#39;exécution et sa boîte de dialogue Hypothèse avec le bouton Modifier.](assets/response_exec_settings_001.png)
 
   Pour définir la fréquence, procédez comme suit :
 
   1. Cliquez sur le lien **[!UICONTROL Fréquence d&#39;exécution...]**, puis sur le bouton **[!UICONTROL Changer]**.
 
-     ![](assets/response_frequency_execution_001.png)
+     ![Boîte de dialogue d&#39;hypothèse indiquant que la planification de la tâche n&#39;est pas définie, avec le bouton Modifier pour définir la fréquence.](assets/response_frequency_execution_001.png)
 
   1. Configurez la fréquence, la périodicité des événements et la période de validité.
 
-     ![](assets/response_frequency_execution_002.png)
+     ![Assistant de modification de planification : fréquence hebdomadaire, mercredi et vendredi sélectionnés et valide à partir de la période de validité.](assets/response_frequency_execution_002.png)
 
   1. Cliquez sur **[!UICONTROL Terminer]** pour enregistrer le planning.
 
-     ![](assets/response_frequency_execution_003.png)
+     ![Étape de résumé de l&#39;assistant de modification de la planification répertoriant les heures de lancement, avec le bouton Terminer.](assets/response_frequency_execution_003.png)
 
 * **[!UICONTROL Enregistrer les requêtes SQL dans le journal]** : cette fonction est réservée aux utilisateurs et utilisatrices experts. Elle permet d’ajouter un onglet à l’audit des hypothèses de mesure pour afficher les requêtes SQL. Cela permet de détecter d’éventuels dysfonctionnements si une simulation se termine avec des erreurs.
 * **[!UICONTROL Conserver le workflow d’exécution]** : permet de conserver le workflow généré automatiquement au lancement du calcul de l’hypothèse. Dans les hypothèses créées à partir d’un modèle dont l’option est cochée, le workflow généré est accessible afin d’en suivre le déroulement.
@@ -134,7 +134,7 @@ L’onglet **[!UICONTROL Général]** du modèle permet également de définir l
 
 ### Transactions {#transactions}
 
-Cet onglet contient les différents champs et tables permettant de conserver l&#39;historique des réactions des destinataires en termes de transactions. Consultez cette [section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/about-schema-reference){target="_blank"} pour plus d’informations sur les tables dédiées à la gestion de la réaction.
+Cet onglet contient les différents champs et tables permettant de conserver l&#39;historique des réactions des destinataires en termes de transactions. Consultez cette [section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/about-schema-reference){target="_blank"} pour plus d’informations sur les tables dédiées à la gestion de la réaction.
 
 * **[!UICONTROL Schéma (stockage des logs de réaction)]** : indiquez la table des réactions des destinataires. La table livrée d&#39;usine dans Adobe Campaign est **NmsRemaMatchRcp**.
 * **[!UICONTROL Schéma des transactions]** : choisissez la table sur laquelle vous allez effectuer vos hypothèses, soit la table des transactions ou des achats.
@@ -146,19 +146,19 @@ Cet onglet contient les différents champs et tables permettant de conserver l&#
 
   Lorsque l&#39;hypothèse est rattachée à une diffusion, la mesure se déclenche automatiquement quelques jours après la date de contact, dans le cas d&#39;une diffusion courrier, ou après la date d&#39;envoi s&#39;il s&#39;agit d&#39;une diffusion email ou SMS.
 
-  ![](assets/response_measurement_001.png)
+  ![Onglet Transactions avec le champ date de transaction et les périodes Début du calcul et Fin du calcul.](assets/response_measurement_001.png)
 
   Si l’hypothèse est lancée à la volée, elle peut être forcée pour se déclencher instantanément. Sinon, elle se déclenche automatiquement en fonction de la date de fin de calcul configurée à compter de la date de création de l’hypothèse. [En savoir plus](creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery)).
 
 * **[!UICONTROL Montant de transaction/de la marge]** : ces champs sont facultatifs et permettent de calculer automatiquement les indicateurs du chiffre d&#39;affaire. [Apprenez-en davantage](hypothesis-tracking.md#indicators)
 * **[!UICONTROL Montant unitaire]** : permet d&#39;indiquer un montant fixe pour le calcul du chiffre d&#39;affaire. [Apprenez-en davantage](hypothesis-tracking.md#indicators)
 
-  ![](assets/response_transactions_001.png)
+  ![Onglet Transactions avec Montant de la transaction défini sur @amount et une flèche pointant vers le champ Montant unitaire.](assets/response_transactions_001.png)
 
 * **[!UICONTROL Mesures et données additionnelles]** : permet de définir des mesures ou des axes de reporting supplémentaires à partir des champs des différentes tables.
 * **[!UICONTROL Mettre à jour l&#39;état de la proposition d&#39;offre]** : permet de modifier l&#39;état de la proposition d&#39;offre dans le cas où le destinataire d&#39;une offre est identifié par l&#39;hypothèse.
 
-  ![](assets/response_offer_status_001.png)
+  ![Section Propositions de l&#39;onglet Transactions avec l&#39;option Mettre à jour l&#39;état de la proposition d&#39;offre cochée et le menu déroulant État ouvert.](assets/response_offer_status_001.png)
 
 ### Périmètre de l&#39;hypothèse {#hypothesis-perimeter}
 
@@ -168,29 +168,29 @@ Lorsque la table des transactions et les champs sur lesquels va porter l’hypot
 
   1. Cliquez sur le lien **[!UICONTROL Editer la requête]**.
 
-     ![](assets/response_scope_filtering_001.png)
+     ![Onglet Portée avec le lien Modifier la requête sous Filtrage des transactions liées à des réactions.](assets/response_scope_filtering_001.png)
 
   1. Définissez vos critères de filtrage.
 
-     ![](assets/response_scope_filtering_002.png)
+     ![Assistant de modification de requête : sélection des conditions de filtrage, puis bouton Modifier l&#39;expression et arborescence de sélection des champs.](assets/response_scope_filtering_002.png)
 
   1. Sélectionnez la transaction sur laquelle doit porter l&#39;hypothèse.
 
-     ![](assets/response_scope_filtering_003.png)
+     ![Modifier les conditions de filtrage des requêtes : des lignes d&#39;achat existent, par exemple, avec la liste Achat égal à la valeur ouverte.](assets/response_scope_filtering_003.png)
 
 * **Filtre sur les destinataires** : dans l&#39;onglet **[!UICONTROL Périmètre]**, vous pouvez limiter votre hypothèse à toute information liée à un message (diffusion, destinataire, adresse email, service, etc.). Pour cela :
 
   1. Cliquez sur le lien **[!UICONTROL Ajouter un filtre]**, puis **[!UICONTROL Editer la requête]**.
 
-     ![](assets/response_scope_filtering_004.png)
+     ![Onglet Portée avec le lien Ajouter un filtre et le lien Modifier la requête sous Filtrage des messages de diffusion.](assets/response_scope_filtering_004.png)
 
   1. Définissez vos critères de filtrage.
 
-     ![](assets/response_scope_filtering_005.png)
+     ![L&#39;assistant de modification de requête sur le schéma Log de diffusion du destinataire avec un e-mail contient la condition de filtre.](assets/response_scope_filtering_005.png)
 
   1. Cliquez sur **[!UICONTROL Terminer]** pour sauvegarder votre requête.
 
-     ![](assets/response_scope_filtering_006.png)
+     ![Onglet Portée affichant le filtre des messages de diffusion enregistrés, Requête : l&#39;e-mail contient, mis en surbrillance.](assets/response_scope_filtering_006.png)
 
 * **Script** : vous pouvez utiliser un script JavaScript pour surcharger dynamiquement les paramètres de l&#39;hypothèse lors de son exécution.
 
@@ -200,7 +200,7 @@ Lorsque la table des transactions et les champs sur lesquels va porter l’hypot
   >
   >Cette option est destinée aux utilisateurs experts.
 
-  ![](assets/response_hypothesis_model_creation_011.png)
+  ![Boîte de dialogue des paramètres avancés avec saisie d&#39;un script d&#39;initialisation, ouverte à partir du lien Paramètres avancés sur l&#39;onglet Portée.](assets/response_hypothesis_model_creation_011.png)
 
 ## Exemple : création d&#39;un modèle d&#39;hypothèse sur une diffusion {#example--creating-a-hypothesis-template-on-a-delivery}
 
@@ -209,11 +209,11 @@ Dans cet exemple, vous allez créer un modèle d&#39;hypothèse sur une diffusio
 1. Dans l&#39;explorateur Adobe Campaign, positionnez-vous au niveau du noeud **[!UICONTROL Ressources > Modèles > Modèles d&#39;hypothèse]**.
 1. Cliquez sur **[!UICONTROL Nouveau]** pour créer un modèle.
 
-   ![](assets/response_hypothesis_model_example_001.png)
+   ![Liste des modèles d&#39;hypothèse avec le bouton Nouveau en surbrillance et un nouveau modèle ouvert dans l&#39;onglet Général.](assets/response_hypothesis_model_example_001.png)
 
 1. Modifiez le libellé du modèle.
 
-   ![](assets/response_hypothesis_model_example_002.png)
+   ![Onglet Général du modèle avec le libellé remplacé par Hypothèses sur les achats et Diffusions comme type d&#39;hypothèse.](assets/response_hypothesis_model_example_002.png)
 
 1. Choisissez le type d&#39;hypothèse **[!UICONTROL Diffusions]**.
 1. Indiquez que la diffusion peut contenir une population témoin en cochant la case correspondante.
@@ -225,33 +225,33 @@ Dans cet exemple, vous allez créer un modèle d&#39;hypothèse sur une diffusio
 
 1. Dans l&#39;onglet **[!UICONTROL Transactions]**, sélectionnez la table des réactions des destinataires.
 
-   ![](assets/response_hypothesis_model_example_006.png)
+   ![Onglet Transactions avec la boîte de dialogue Sélectionner un schéma et les réactions du schéma des destinataires sélectionnées.](assets/response_hypothesis_model_example_006.png)
 
 1. Dans le champ **[!UICONTROL Schéma des transactions]**, choisissez votre table d&#39;achats.
 
-   ![](assets/response_hypothesis_model_example_007.png)
+   ![Onglet Transactions avec la boîte de dialogue Sélectionner un document filtrée sur les achats et les achats sélectionnés.](assets/response_hypothesis_model_example_007.png)
 
 1. Sélectionnez les lignes d’achat dans le champ **[!UICONTROL Schéma de requête]**.
 
-   ![](assets/response_hypothesis_model_example_008.png)
+   ![Liste déroulante du schéma de requête répertoriant les lignes d&#39;achat, les achats et les réactions des destinataires.](assets/response_hypothesis_model_example_008.png)
 
 1. Sélectionnez les destinataires liés à la table des achats.
 
-   ![](assets/response_hypothesis_model_example_009.png)
+   ![Sélectionnez une boîte de dialogue d&#39;expression pour Lien vers les individus avec le lien Destinataire sélectionné sous Achat.](assets/response_hypothesis_model_example_009.png)
 
 1. Sélectionnez le champ correspondant à la date d&#39;achat.
 
    Vous pouvez ainsi définir une période pour les hypothèses. Cette étape n’est pas obligatoire, mais elle est recommandée.
 
-   ![](assets/response_hypothesis_model_example_010.png)
+   ![Sélectionnez une boîte de dialogue d&#39;expression pour la date de transaction avec le champ Date d&#39;achat sélectionné.](assets/response_hypothesis_model_example_010.png)
 
 1. Paramétrez la période de calcul entre 5 et 25 jours.
 
-   ![](assets/response_hypothesis_model_example_005.png)
+   ![Onglet Transactions avec Début du calcul défini sur 5j et Fin du calcul défini sur 25j en surbrillance.](assets/response_hypothesis_model_example_005.png)
 
 1. Dans l&#39;onglet **[!UICONTROL Périmètre]**, cliquez sur **[!UICONTROL Editer la requête]** pour créer un filtre sur les hypothèses.
 
-   ![](assets/response_hypothesis_model_example_011.png)
+   ![Onglet Portée avec l’option Modifier la requête sur laquelle l’utilisateur a cliqué et l’assistant Modifier la requête répertoriant les types de filtres, Filtrer par produit sélectionné.](assets/response_hypothesis_model_example_011.png)
 
    Le modèle ainsi créé vous permettra de faire des hypothèses sur les produits ou articles contenus dans la table des achats.
 

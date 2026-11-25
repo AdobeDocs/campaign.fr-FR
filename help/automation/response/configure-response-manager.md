@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Measurement
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: c8cb0f8a3f752a46fae533c8fd0608aa4545d37c
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 100%
+source-wordcount: '856'
+ht-degree: 91%
 ---
 # Configuration de la gestion de la réaction (Response Manager) de Campaign{#configuration}
 
@@ -78,7 +78,7 @@ L&#39;ajout d&#39;une date d&#39;évènement est également fortement recommand�
 
 Le schéma suivant représente les jointures entre les différentes tables une fois le paramétrage effectué :
 
-![](assets/response_data_model.png)
+![Modèle de données des tables de réponse : diffusions, logs de diffusion, hypothèses de mesure et destinataires liés aux réactions](assets/response_data_model.png)
 
 ### Gestion de la réaction et destinataires {#response-management-with-adobe-campaign-recipients}
 
@@ -89,17 +89,17 @@ La table des logs de réponse de la personne destinataire **[!UICONTROL nms:rema
 1. Via l&#39;explorateur Adobe Campaign, sélectionnez le noeud **[!UICONTROL Administration]** > **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Mappings de ciblage]**.
 1. Cliquez-droit sur **Destinataires** puis sélectionnez **[!UICONTROL Actions]** et **[!UICONTROL Modifier les options de la dimension de ciblage]**.
 
-   ![](assets/delivery_mapping1.png)
+   ![Liste des mappings de ciblage avec le menu Actions ouvert et Modifier les options de la dimension de ciblage sélectionnée](assets/delivery_mapping1.png)
 
 1. Dans la fenêtre qui s&#39;affiche, personnalisez éventuellement l&#39;**[!UICONTROL Espace de noms d&#39;extension]** puis cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/delivery_mapping2.png)
+   ![Étape de stockage des options de la dimension de ciblage avec l&#39;Espace de noms d&#39;extension et le Suffixe des champs de schémas d&#39;extension](assets/delivery_mapping2.png)
 
 1. Dans la catégorie **[!UICONTROL Gestion de la réaction]**, assurez-vous que la case **[!UICONTROL Générer un schéma de stockage pour les réactions]** est cochée.
 
    Cliquez ensuite sur **[!UICONTROL Définir des champs supplémentaires…]** pour sélectionner les tables de transactions associées et ajouter les champs souhaités à l’extension du schéma nms:remaMatchRcp.
 
-   ![](assets/delivery_mapping3.png)
+   ![Étape Extensions avec l’option Générer un schéma de stockage pour les réactions vérifiées et l’option Extension de la boîte de dialogue du schéma de réactions](assets/delivery_mapping3.png)
 
 Le schéma alors créé se présente comme suit :
 

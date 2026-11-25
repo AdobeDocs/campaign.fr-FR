@@ -21,10 +21,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 95%
+source-wordcount: '908'
+ht-degree: 75%
 ---
 # Gérer les ressources et les documents {#manage-assets-documents}
 
@@ -54,19 +54,19 @@ Pour une opération, l&#39;onglet **[!UICONTROL Documents]** contient :
 
 Les documents sont rattachés au programme ou à l&#39;opération via leur onglet **[!UICONTROL Edition > Documents]**.
 
-![](assets/op_add_document.png)
+![Onglet Modifier de la campagne, sous-onglet Documents : liste des documents joints avec boutons Ajouter, Supprimer et Détailler.](assets/op_add_document.png)
 
 Vous pouvez également ajouter un document dans une opération via le lien dédié de son tableau de bord.
 
-![](assets/add_a_document_in_op.png)
+![Tableau de bord de Campaign avec le lien Ajouter un document et la boîte de dialogue Document marketing pour charger un fichier.](assets/add_a_document_in_op.png)
 
 Cliquez sur l&#39;icône **[!UICONTROL Détails...]** pour afficher le contenu d&#39;un fichier et y ajouter des informations complémentaires :
 
-![](assets/add_document_details.png)
+![La boîte de dialogue du document s&#39;est ouverte à partir des Détails : libellé, version, nature, lien du fichier chargé et description.](assets/add_document_details.png)
 
 Au niveau du tableau de bord, les documents associés à l&#39;opération sont regroupés dans la section **[!UICONTROL Document(s)]**, comme dans l&#39;exemple ci-dessous :
 
-![](assets/edit_documents.png)
+![Tableau de bord de la campagne avec la section Document(s) mettant en surbrillance les documents joints à la campagne.](assets/edit_documents.png)
 
 Ils peuvent également être édités et modifiés depuis cette vue.
 
@@ -86,7 +86,7 @@ Les compositions de diffusions permettent, au niveau de l&#39;opération, de str
 
 Pour créer une composition de diffusion, cliquez sur le sous-onglet **[!UICONTROL Compositions de diffusion]** proposé sous l&#39;onglet **[!UICONTROL Modifier > Documents]** de l&#39;opération concernée.
 
-![](assets/add-a-delivery-outline.png)
+![Onglet Modifier la campagne, Sous-onglet Documents, compositions de diffusion avec le lien Ajouter une composition de diffusion.](assets/add-a-delivery-outline.png)
 
 
 >[!NOTE]
@@ -98,33 +98,33 @@ Cliquez ensuite sur **[!UICONTROL Ajouter une composition de diffusion]** et cr�
 1. Cliquez avec le bouton droit sur la racine de l&#39;arborescence et choisissez **[!UICONTROL Nouveau > Compositions de diffusion]**.
 1. Cliquez avec le bouton droit de la souris sur la composition que vous venez de créer et choisissez **[!UICONTROL Nouveau > Article]** ou **[!UICONTROL Nouveau > Champs de personnalisation]**.
 
-![](assets/del-outline-add-new-item.png)
+![Arborescence de compositions de diffusion avec le menu contextuel : Nouveau > Article, Champs de personnalisation ou Offre.](assets/del-outline-add-new-item.png)
 
 Une composition peut contenir des articles, des champs de personnalisation et des offres :
 
 * Les articles sont par exemple des documents physiques qui sont ici référencés et décrits, et seront joints à la diffusion.
 * Les champs de personnalisation permettent de créer des éléments de personnalisation relatifs aux diffusions et non aux destinataires. Il est ainsi possible de créer des valeurs qui seront utilisées dans les diffusions pour une cible spécifique (offre de bienvenue, remise, etc.). Elles sont créées dans Adobe Campaign et importées dans la composition via le lien **[!UICONTROL Importer des champs de personnalisation…]**.
 
-  ![](assets/del-outline-perso-field.png)
+  ![Sélectionnez la boîte de dialogue des champs de personnalisation répertoriant Pack, Gold et Premium, ouverte à partir de l&#39;option Importer des champs de personnalisation.](assets/del-outline-perso-field.png)
 
   Ils peuvent également être créés directement dans la composition, en cliquant sur l&#39;icône **[!UICONTROL Ajouter]** située à droite de la zone de liste.
 
-  ![](assets/add-del-outline-button.png)
+  ![Liste des champs de personnalisation dans une composition de diffusion avec des valeurs saisies et l&#39;icône Ajouter située à droite de la liste.](assets/add-del-outline-button.png)
 
 
 ### Sélection d’une composition {#select-an-outline}
 
 Pour chaque diffusion, vous pouvez sélectionner la composition à associer à partir de la section réservée à la configuration de l&#39;extraction, comme dans l&#39;exemple ci-dessous :
 
-![](assets/select-delivery-outline.png)
+![Onglet Publipostage direct d&#39;une diffusion avec la boîte de dialogue Sélectionner une composition de diffusion répertoriant l&#39;unité B, l&#39;unité C et l&#39;unité A.](assets/select-delivery-outline.png)
 
 La composition sélectionnée s’affiche alors dans la partie inférieure de la fenêtre. Elle peut être éditée à partir de l’icône située à droite du champ ou modifiée en utilisant la liste déroulante :
 
-![](assets/delivery-outline-selected.png)
+![Onglet Publipostage direct d&#39;une diffusion avec le champ Composition de diffusion mis en surbrillance et affichant l&#39;unité C.](assets/delivery-outline-selected.png)
 
 L&#39;onglet **[!UICONTROL Résumé]** de la diffusion affiche également cette information :
 
-![](assets/delivery-outline-in-dashboard.png)
+![Onglet Résumé de la diffusion avec une flèche pointant vers la valeur Composition de diffusion, Unité C.](assets/delivery-outline-in-dashboard.png)
 
 ### Résultat de l&#39;extraction {#extraction-result}
 
@@ -132,6 +132,6 @@ Dans le fichier extrait et transmis au prestataire, le nom de la composition et 
 
 Dans l&#39;exemple suivant, le libellé, le coût prévisionnel estimé et la description de la composition associée à la diffusion seront ajoutés dans le fichier d&#39;extraction.
 
-![](assets/campaign-export-template.png)
+![Données à extraire : étape du modèle d&#39;export avec la colonne de sortie Libellé (composition de diffusion/diffusion) mise en surbrillance.](assets/campaign-export-template.png)
 
 Le modèle d&#39;export doit être associé au prestataire sélectionné pour la diffusion concernée. Consultez [cette section](providers-stocks-and-budgets.md#create-service-providers-and-their-cost-structures).

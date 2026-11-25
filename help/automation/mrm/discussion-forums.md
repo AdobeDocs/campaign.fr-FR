@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 100%
+source-wordcount: '626'
+ht-degree: 93%
 ---
 # Forums de discussion{#discussion-forums}
 
@@ -43,13 +43,13 @@ Les opérateurs/opératrices peuvent s’abonner à des forums afin de recevoir 
 
 Pour consulter un forum, accédez à un tableau de bord et cliquez sur le lien **[!UICONTROL Forum]**, dans le coin supérieur droit.
 
-![](assets/mrm-forum-icon.png)
+![Tableau de bord de la campagne avec une flèche pointant vers le lien Forum et la liste des discussions.](assets/mrm-forum-icon.png)
 
 Les messages et leurs réponses sont classés du plus récent au plus ancien.
 
 Pour démarrer un nouveau thread, cliquez sur le bouton **[!UICONTROL Ajouter une discussion]** dans le coin supérieur droit. La boîte de dialogue **[!UICONTROL Forum de discussion]** s’affiche alors (cf. image ci-dessous).
 
-![](assets/mrm-forum-new-thread.png)
+![Boîte de dialogue de forum de discussion avec l&#39;objet, le message, l&#39;opérateur à avertir, joindre un document et créer le message.](assets/mrm-forum-new-thread.png)
 
 
 Saisissez votre texte dans la zone **[!UICONTROL Message]** et, le cas échéant, un titre pour la discussion dans le champ **[!UICONTROL Objet]**.
@@ -85,7 +85,7 @@ Pour répondre à un message, cliquez dans le corps de l’e-mail, puis connecte
 
 * Dans votre tableau de bord personnel, vous pouvez voir la liste des forums auxquels vous êtes abonné afin de pouvoir accéder à ceux-ci plus rapidement. Cliquez sur le lien **[!UICONTROL Abonnements aux forums de discussion]** pour afficher la liste, puis cliquez sur le nom de l’élément désiré pour accéder à son forum.
 
-  ![](assets/forum-subscribed.png)
+  ![Tableau de bord de l&#39;opérateur avec la liste Abonnements aux forums de discussion mise en surbrillance.](assets/forum-subscribed.png)
 
 
 ## Résoudre les problèmes de diffusion des notifications {#checking-notification-delivery}

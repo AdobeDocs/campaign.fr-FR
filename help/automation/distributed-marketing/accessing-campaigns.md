@@ -18,10 +18,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 100%
+source-wordcount: '188'
+ht-degree: 90%
 ---
 # Accès aux campagnes{#accessing-campaigns}
 
@@ -37,7 +37,7 @@ Une fois la commande approuvée et la date de disponibilité atteinte, la campag
 
 Elle est ajoutée dans le détail de la commande correspondante et peut être modifiée. Le tableau de bord complet vous permet de la gérer au niveau local.
 
-![](assets/mkg_dist_local_op_edit_new_op1.png)
+![Liste des packages de campagne avec une campagne locale ouverte sur son tableau de bord, affichant les diffusions et Ajout d&#39;un lien de diffusion](assets/mkg_dist_local_op_edit_new_op1.png)
 
 L&#39;opération est également accessible à partir de la vue d&#39;ensemble des opérations affichées à partir du lien **[!UICONTROL Opérations]** de la page d&#39;accueil.
 

@@ -21,10 +21,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 100%
+source-wordcount: '1636'
+ht-degree: 82%
 ---
 # Simulation de campagnes{#campaign-simulations}
 
@@ -43,7 +43,7 @@ Cela signifie que les règles de pression et de capacité ne s&#39;appliquent qu
 
 Le mode de diffusion est sélectionné dans les propriétés de la diffusion, sous l&#39;onglet **[!UICONTROL Typologie]**.
 
-![](assets/simu_campaign_select_delivery_mode.png)
+![Onglet Typologie des propriétés de diffusion avec le menu déroulant Mode de diffusion répertoriant trois modes.](assets/simu_campaign_select_delivery_mode.png)
 
 
 ### Création dʼune simulation {#create-a-simulation}
@@ -52,19 +52,19 @@ Pour créer une simulation, les étapes sont les suivantes :
 
 1. Ouvrez l’onglet **[!UICONTROL Campagnes]**, cliquez sur le lien **[!UICONTROL Autres choix]** de la section **[!UICONTROL Créer]** et choisissez l’option **[!UICONTROL Simulation]**.
 
-   ![](assets/simu_campaign_opti_01.png)
+   ![Page d&#39;accueil du calendrier Campaign avec le menu Plus sous Créer une ouverture et Simulation en surbrillance.](assets/simu_campaign_opti_01.png)
 
 1. Indiquez le modèle et le nom de la simulation. Cliquez sur le bouton **[!UICONTROL Enregistrer]** pour créer la simulation.
 
-   ![](assets/simu_campaign_opti_02.png)
+   ![Boîte de dialogue de création de la simulation avec les champs Modèle de simulation et Libellé en surbrillance et le bouton Enregistrer.](assets/simu_campaign_opti_02.png)
 
 1. Cliquez sur l&#39;onglet **[!UICONTROL Edition]** pour la paramétrer.
 
-   ![](assets/simu_campaign_opti_edit.png)
+   ![Onglet Modification de la simulation avec les sections Général, Périmètre, Calculs et Audit et les paramètres d&#39;exécution.](assets/simu_campaign_opti_edit.png)
 
 1. Dans l&#39;onglet **[!UICONTROL Périmètre]**, indiquez les diffusions à considérer dans cette simulation. Pour cela, cliquez sur le bouton **[!UICONTROL Ajouter]** et indiquez le mode de sélection des diffusions à prendre en compte.
 
-   ![](assets/simu_campaign_opti_edit_scope.png)
+   ![Section Portée avec le bouton Ajouter et la boîte de dialogue Élément de simulation pour choisir comment les diffusions sont sélectionnées.](assets/simu_campaign_opti_edit_scope.png)
 
    Vous pouvez sélectionner unitairement chaque diffusion ou considérer celles appartenant à une ou plusieurs opérations, programmes ou plans.
 
@@ -74,17 +74,17 @@ Pour créer une simulation, les étapes sont les suivantes :
    >  
    >Dans le cas contraire, seules les diffusions présentes dans le plan, le programme et la ou les opérations au moment de la création de la simulation seront prises en comptes : les diffusions ajoutées ultérieurement seront ignorées.
 
-   ![](assets/simu_campaign_opti_edit_scope_update.png)
+   ![Boîte de dialogue d’élément de simulation avec toutes les diffusions d’un ou de plusieurs programmes et l’option Actualiser la sélection cochée.](assets/simu_campaign_opti_edit_scope_update.png)
 
 1. Sélectionnez les éléments à inclure dans la portée de la simulation. Si nécessaire, sélectionnez plusieurs éléments en utilisant les touches MAJ et CTRL du clavier.
 
-   ![](assets/simu_campaign_opti_edit_scope_select.png)
+   ![Boîte de dialogue de sélection des diffusions avec plusieurs diffusions mises en surbrillance et le bouton Terminer.](assets/simu_campaign_opti_edit_scope_select.png)
 
    Cliquez sur le bouton **[!UICONTROL Terminer]** pour valider la sélection.
 
    Il est possible de combiner des diffusions sélectionnées manuellement avec celles appartenant à un ou plusieurs plans, programmes ou opérations.
 
-   ![](assets/simu_campaign_opti_edit_scope_save.png)
+   ![Étendue de la liste combinant programmes, campagnes et plan, avec le bouton Enregistrer et le lien Modifier la condition dynamique.](assets/simu_campaign_opti_edit_scope_save.png)
 
    Au besoin, vous pouvez utiliser une condition dynamique à partir du lien **[!UICONTROL Modifier la condition dynamique…]**
 
@@ -96,11 +96,11 @@ Pour créer une simulation, les étapes sont les suivantes :
 
 1. Dans l&#39;onglet **[!UICONTROL Calculs]**, sélectionnez une dimension d&#39;analyse comme, par exemple, le schéma des destinataires.
 
-   ![](assets/simu_campaign_opti_dimension.png)
+   ![Section des calculs avec la boîte de dialogue de sélection du schéma ouverte et les Destinataires (nms) sélectionnés comme dimension d&#39;analyse.](assets/simu_campaign_opti_dimension.png)
 
 1. Vous pouvez ensuite ajouter des expressions.
 
-   ![](assets/simu_campaign_opti_dimension_02.png)
+   ![Section Calculs avec les Destinataires (nms) comme dimension d&#39;analyse et axes de reporting Compte et Statut répertoriés.](assets/simu_campaign_opti_dimension_02.png)
 
 ### Paramètres d&#39;exécution {#execution-settings}
 
@@ -118,11 +118,11 @@ Une fois le périmètre de la simulation défini, vous pouvez l&#39;exécuter.
 
 Pour cela, ouvrez le tableau de bord de la simulation et cliquez sur le bouton **[!UICONTROL Démarrer la simulation]**.
 
-![](assets/simu_campaign_opti_start.png)
+![Tableau de bord de simulation avec le bouton Démarrer la simulation.](assets/simu_campaign_opti_start.png)
 
 Une fois l&#39;exécution terminée, ouvrez la simulation et cliquez sur l&#39;onglet **[!UICONTROL Résultats]** pour visualiser les cibles calculées pour chacune des diffusions considérées.
 
-![](assets/simu_campaign_opti_results.png)
+![Onglet Résultats, sous-onglet Diffusions répertoriant chaque diffusion avec son Nombre initial et son Nombre final.](assets/simu_campaign_opti_results.png)
 
 1. Le sous-onglet **[!UICONTROL Diffusions]** liste les diffusions prises en compte par la simulation. Il présente deux comptages :
 
@@ -135,12 +135,12 @@ Une fois l&#39;exécution terminée, ouvrez la simulation et cliquez sur l&#39;o
 
 1. Le sous-onglet **[!UICONTROL Exclusions]** permet de visualiser la ventilation des exclusions par diffusions.
 
-   ![](assets/simu_campaign_opti_14.png)
+   ![Onglet Résultats, sous-onglet Exclusions affichant le nombre d&#39;exclusions par diffusion et règle.](assets/simu_campaign_opti_14.png)
 
 1. Le sous-onglet **[!UICONTROL Alertes]** regroupe tous les messages d’alerte générés lors de la simulation. Ainsi, les messages d’alerte peuvent avertir d’un dépassement de capacité (par exemple : trop de personnes destinataires ciblées par rapport à la capacité fixée).
 1. Le sous-onglet **[!UICONTROL Exploration des exclusions]** permet de créer un tableau d’analyse des résultats. L’utilisateur ou l’utilisatrice doit indiquer des variables sur les axes des abscisses/ordonnées.
 
-   Pour obtenir un exemple de création de table d&#39;analyse, reportez-vous à la fin de [cette section](#explore-results).
+   Pour obtenir un exemple de création de table d&#39;analyse, reportez-vous à la fin de [Explorer les résultats](#explore-results).
 
 ### Affichage des résultats {#view-results}
 
@@ -148,7 +148,7 @@ Une fois l&#39;exécution terminée, ouvrez la simulation et cliquez sur l&#39;o
 
 L&#39;onglet **[!UICONTROL Journal]** sert à surveiller l&#39;exécution de la simulation. Le sous-onglet **[!UICONTROL Logs SQL]** est utile aux utilisateurs experts. Il répertorie les logs d&#39;exécution, en langage SQL. Ces logs ne s&#39;affichent que si l&#39;option **[!UICONTROL Enregistrer les requêtes SQL dans le log]** a été sélectionnée dans l&#39;onglet **[!UICONTROL Général]** avant l&#39;exécution de la simulation.
 
-![](assets/simu_campaign_opti_11.png)
+![Section d&#39;audit avec les sous-onglets Journal et Journaux SQL, les journaux SQL affichant les requêtes d&#39;exécution.](assets/simu_campaign_opti_11.png)
 
 #### Exploration des résultats {#explore-results}
 
@@ -180,7 +180,7 @@ Par défaut, les rapports suivants sont proposés :
 
 Pour accéder aux rapports, cliquez sur le lien **[!UICONTROL Rapports]** de la simulation visée à partir de son tableau de bord.
 
-![](assets/campaign_opt_reporting_edit_from_board.png)
+![Vue Tableau de bord de la simulation Rapports répertoriant les mosaïques de rapports telles que le détail des exclusions de la simulation.](assets/campaign_opt_reporting_edit_from_board.png)
 
 Vous pouvez également éditer les rapports à partir du lien **[!UICONTROL Rapports]** accessible depuis le tableau de bord de la simulation.
 
@@ -196,12 +196,12 @@ Pour comparer les résultats, vous devez utiliser des rapports. En effet, Adobe�
 1. Dans l&#39;onglet **[!UICONTROL Rapports]**, éditez un des rapports disponibles, par exemple **[!UICONTROL Détail des exclusions de la simulation]**.
 1. Dans la section supérieure droite du rapport, cliquez sur l&#39;icône de création d&#39;un nouvel historique.
 
-   ![](assets/campaign_opt_reporting_create_hist.png)
+   ![Détail du rapport des exclusions de la simulation avec l&#39;icône Nouvel historique mise en surbrillance dans la barre d&#39;outils.](assets/campaign_opt_reporting_create_hist.png)
 
 1. Fermez cette simulation et modifiez le paramétrage de la typologie **A**.
 1. Exécutez à nouveau la simulation et comparez le résultat obtenu à celui affiché dans le rapport dont vous avez créé l&#39;historique.
 
-   ![](assets/campaign_opt_reporting_edit_hist.png)
+   ![Détail du rapport des exclusions de la simulation par rapport à un historique enregistré ouvert à partir de l&#39;icône Historique disponible.](assets/campaign_opt_reporting_edit_hist.png)
 
    Vous pouvez enregistrer autant d&#39;historiques de rapports que nécessaire.
 
@@ -221,7 +221,7 @@ Dans l&#39;exemple suivant, nous allons créer un axe de reporting supplémentai
 1. Pour définir un axe de reporting, sélectionnez la table contenant les informations à exploiter dans le champ **[!UICONTROL Dimension d’analyse]**. Cette information est obligatoire.
 1. Ici, nous allons sélectionner le champ Segment de la table des destinataires.
 
-   ![](assets/simu_campaign_opti_09.png)
+   ![Section de calculs avec les destinataires (nms) comme dimension d&#39;analyse et un axe de rapport d&#39;état basé sur @status.](assets/simu_campaign_opti_09.png)
 
 1. Les options disponibles sont les suivantes :
 
@@ -241,7 +241,7 @@ A l&#39;affichage des résultats de la simulation, les informations relatives à
 
 Les recouvrements des cibles de diffusions indiquent les destinataires ciblés dans au moins deux des diffusions d&#39;une simulation.
 
-![](assets/simu_campaign_opti_13.png)
+![Onglet Résultats, sous-onglet Chevauchements répertoriant chaque diffusion, sa diffusion simultanée et le nombre de chevauchements.](assets/simu_campaign_opti_13.png)
 
 >[!NOTE]
 >

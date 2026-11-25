@@ -23,16 +23,16 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 100%
+source-wordcount: '1226'
+ht-degree: 79%
 ---
 # Création d’une opération collaborative{#creating-a-collaborative-campaign-intro}
 
 
 
-Lʼentité centrale crée les campagnes collaboratives à partir des modèles de campagne **Marketing distribué**. Reportez-vous à [cette page](about-distributed-marketing.md).
+Lʼentité centrale crée les campagnes collaboratives à partir des modèles de campagne **Marketing distribué**. Voir [Prise en main du marketing distribué](about-distributed-marketing.md).
 
 ## Création d’une opération collaborative {#creating-a-collaborative-campaign}
 
@@ -48,7 +48,7 @@ Le processus de configuration d’une base de données de campagne collaborative
 
 Pour créer une opération collaborative par formulaire, le modèle **[!UICONTROL Opération collaborative par formulaire (opCollaborativeByForm)]** doit être sélectionné.
 
-![](assets/mkg_dist_mutual_op_form2.png)
+![Boîte de dialogue Nouvelle campagne marketing avec le modèle Campagne collaborative (par formulaire) sélectionné.](assets/mkg_dist_mutual_op_form2.png)
 
 Dans l&#39;onglet **[!UICONTROL Modifier]**, cliquez sur le lien **[!UICONTROL Paramètres avancés de l&#39;opération...]** pour accéder à l&#39;onglet **Marketing distribué**.
 
@@ -58,13 +58,13 @@ Enregistrez votre campagne. Vous pouvez désormais l’utiliser depuis la vue **
 
 La vue **[!UICONTROL Kit de campagne]** vous permet d’utiliser les modèles de campagnes locales (d’usine ou dupliqués), ainsi que les campagnes de référence pour les campagnes collaboratives, dans le but de créer des campagnes pour vos différentes entités organisationnelles.
 
-![](assets/mkg_dist_mutual_op_form1b.png)
+![Liste des packages de campagne avec la boîte de dialogue de création de package et la liste déroulante campagne de référence ouverte.](assets/mkg_dist_mutual_op_form1b.png)
 
 ### Par opération {#by-campaign}
 
 Pour créer une opération collaborative par opération, le modèle **[!UICONTROL Opération collaborative par opération (opCollaborativeByCampaign)]** doit être sélectionné.
 
-![](assets/mkg_dist_mutual_op_by_op2.png)
+![Boîte de dialogue Nouvelle campagne marketing avec le modèle Campagne collaborative (par campagne) sélectionné.](assets/mkg_dist_mutual_op_by_op2.png)
 
 Lors de la commande de l&#39;opération, l&#39;entité locale peut remplir des critères prédéfinis par l&#39;entité centrale, et évaluer l&#39;opération avant de la commander.
 
@@ -78,13 +78,13 @@ L’entité locale exécute la campagne enfant. L’entité centrale exécute la
 
 L&#39;entité centrale peut visualiser toutes les opérations enfants associées à une **Opération collaborative par opération** à partir du tableau de bord de celle-ci (via le lien **[!UICONTROL Liste des opérations liées]**).
 
-![](assets/mkg_dist_mutual_op_by_op.png)
+![Tableau de bord d&#39;une campagne collaborative avec le lien Liste des campagnes liées ouvrant la liste des campagnes liées.](assets/mkg_dist_mutual_op_by_op.png)
 
 ### Par validation de la cible {#by-target-approval}
 
 Pour créer une opération collaborative par validation de la cible, le modèle **[!UICONTROL Opération collaborative par validation de la cible (opCollaborativeByValidation)]** doit être sélectionné.
 
-![](assets/mkg_dist_mutual_op_by_valid.png)
+![Boîte de dialogue Nouvelle campagne marketing avec le modèle Campagne collaborative (par validation de la cible) sélectionné.](assets/mkg_dist_mutual_op_by_valid.png)
 
 >[!NOTE]
 >
@@ -98,23 +98,23 @@ Le workflow de la campagne doit intégrer l’activité de type **Validation en 
 
 La répartition des données de type **Répartition des entités locales** doit être créée. Le modèle de répartition des données vous permet de limiter le nombre d’enregistrements à partir d’une liste de valeurs de groupement. Dans **[!UICONTROL Ressources > Gestion de campagnes > Répartition de données]**, cliquez sur l&#39;icône **[!UICONTROL Nouveau]** pour créer une **[!UICONTROL Répartition de données]**. Pour plus d’informations sur la répartition des données,
 
-![](assets/mkg_dist_data_distribution.png)
+![Formulaire de répartition de données avec dimension de ciblage, champ de répartition et type d&#39;affectation d&#39;entité locale.](assets/mkg_dist_data_distribution.png)
 
 Sélectionnez la **Dimension de ciblage** et le **[!UICONTROL Champ de répartition]**. Pour le **[!UICONTROL Type d&#39;affectation]**, choisissez l&#39;option **Entité locale**.
 
 Dans l&#39;onglet **[!UICONTROL Répartition]**, ajoutez un champ pour chaque entité locale et spécifiez la valeur.
 
-![](assets/mkg_dist_data_distribution2.png)
+![Onglet Répartition d&#39;une répartition de données répertoriant chaque valeur de champ de répartition, le nombre fixe et l&#39;entité locale.](assets/mkg_dist_data_distribution2.png)
 
 Il est possible de rajouter une deuxième activité de type **Validation de la cible** après l&#39;activité de type **Diffusion** pour paramétrer un rapport sur celle-ci.
 
 Dans le message de notification de création de la campagne, l’entité locale reçoit une liste de contact prédéfinie par les paramètres de l’entité centrale.
 
-![](assets/mkg_dist_mutual_op_by_valid1.png)
+![E-mail de validation de la cible renvoyant vers une page web sur laquelle l&#39;entité locale examine sa liste de contacts.](assets/mkg_dist_mutual_op_by_valid1.png)
 
 L&#39;entité locale peut supprimer certains contacts en fonction du contenu de l&#39;opération.
 
-![](assets/mkg_dist_mutual_op_by_valid2.png)
+![Page de validation de la cible avec des contacts effacés, un commentaire et le bouton Valider le ciblage.](assets/mkg_dist_mutual_op_by_valid2.png)
 
 ### Simple {#simple}
 
@@ -142,13 +142,13 @@ Pour les **opérations collaboratives**, l&#39;entité centrale doit indiquer la
 >
 >L’option **[!UICONTROL Date butoir de personnalisation]** permet à l’entité centrale de choisir une date butoir avant laquelle les entités locales doivent lui faire parvenir des documents (tableurs, images) qui pourraient lui être utiles pour la configuration de la campagne. Il ne s’agit pas d’une option obligatoire. Le contournement de cette date n’affecte pas la mise en œuvre de la campagne.
 
-![](assets/s_advuser_mkg_dist_create_mutual_entry.png)
+![Boîte de dialogue du package Campaign avec la section Planning d&#39;exécution, y compris les dates limites de personnalisation et d&#39;enregistrement.](assets/s_advuser_mkg_dist_create_mutual_entry.png)
 
 ### Audience {#audience}
 
 L&#39;entité centrale doit renseigner les entités locales impliquées par l&#39;opération dès la création de l&#39;opération collaborative.
 
-![](assets/s_advuser_mkg_dist_create_mutual_entry2.png)
+![Boîte de dialogue du package Campaign avec le bouton Ajouter ouvrant la sélection des entités locales pour l&#39;audience.](assets/s_advuser_mkg_dist_create_mutual_entry2.png)
 
 >[!CAUTION]
 >
@@ -158,36 +158,36 @@ L&#39;entité centrale doit renseigner les entités locales impliquées par l&#3
 
 Pour les **opérations collaboratives**, il est possible de définir le type de validation des commandes :
 
-![](assets/mkg_dist_edit_kit1.png)
+![Onglet Modifier du package de campagne avec la liste déroulante Mode de validation offrant Manuelle et Automatique.](assets/mkg_dist_edit_kit1.png)
 
 En mode manuel, l&#39;entité locale doit s&#39;inscrire à l&#39;opération pour pouvoir y participer.
 
 En mode automatique, l’entité locale est pré-abonnée pour la campagne. Elle peut se désinscrire de la campagne ou en modifier le paramétrage sans qu’aucune validation par l’entité centrale ne soit nécessaire.
 
-![](assets/mkg_dist_edit_kit2.png)
+![Envoyer un e-mail d&#39;abonnement à Campaign avec les liens Rejeter l&#39;abonnement et Modifier les paramètres de commande.](assets/mkg_dist_edit_kit2.png)
 
 ### Notifications {#notifications}
 
-Le paramétrage des messages de notification est identique à celui d&#39;une opération locale. Consultez [cette section](creating-a-local-campaign.md#notifications).
+Le paramétrage des messages de notification est identique à celui d&#39;une opération locale. Voir [Notifications](creating-a-local-campaign.md#notifications).
 
 ## Commande dʼune opération {#ordering-a-campaign}
 
 Lorsqu’une opération collaborative est ajoutée dans la liste des kits de campagne, les entités locales faisant partie de l’audience définie par l’entité centrale sont avisées par un message de notification (les **opérations collaboratives (par validation de la cible)** n’ont pas d’audience prédéfinie). Le message envoyé contient un lien permettant de s’inscrire à la campagne, comme dans l’exemple ci-dessous :
 
-![](assets/mkg_dist_mutual_op_notification.png)
+![E-mail d&#39;abonnement à la campagne avec le lien Enregistrer pour la campagne et les détails du package.](assets/mkg_dist_mutual_op_notification.png)
 
 Ce message permet également aux entités locales de visualiser la description renseignée par l’opérateur central qui a créé le kit, ainsi que les documents associés à la campagne. Ils n’appartiennent pas à la campagne elle-même, bien qu’ils fournissent des informations supplémentaires à son sujet.
 
 Une fois la connexion établie via une interface web, des informations personnalisées peuvent être saisies pour la campagne collaborative que les opérateurs et opératrices souhaitent commander :
 
-![](assets/mkg_dist_mutual_op_command.png)
+![Page web de commande de la campagne sur laquelle l&#39;entité locale saisit un libellé de commande et un commentaire de commande.](assets/mkg_dist_mutual_op_command.png)
 
 Lorsqu&#39;une entité locale enregistre sa participation, une notification est adressée par email à l&#39;entité centrale afin de valider sa commande.
 
-![](assets/mkg_dist_mutual_op_valid_command.png)
+![Validation de l&#39;e-mail de commande de campagne et de la page de validation de commande avec les options Accepter et Rejeter et un commentaire.](assets/mkg_dist_mutual_op_valid_command.png)
 
 Pour plus d&#39;informations, consultez la section [Processus de validation](creating-a-local-campaign.md#approval-process).
 
 ## Validation dʼune commande {#approving-an-order}
 
-La validation dʼune commande dʼun kit dʼopération collaborative est identique à celle dʼune opération locale. Consultez [cette section](creating-a-local-campaign.md#approving-an-order).
+La validation dʼune commande dʼun kit dʼopération collaborative est identique à celle dʼune opération locale. Pour plus d&#39;informations, consultez la section [Valider une commande](creating-a-local-campaign.md#approving-an-order).

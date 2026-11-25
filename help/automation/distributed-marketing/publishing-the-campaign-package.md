@@ -18,10 +18,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 100%
+source-wordcount: '586'
+ht-degree: 82%
 ---
 # Publier le kit de campagne{#publishing-the-campaign-package}
 
@@ -33,15 +33,15 @@ Avant de pouvoir être publiés dans la liste des kits de campagne, les kits de 
 
 Pour indiquer le validant, cliquez sur le lien **[!UICONTROL Paramètres de validation...]** du kit de campagne et choisissez l’opérateur concerné dans la liste déroulante.
 
-![](assets/s_advuser_mkg_dist_define_valid.png)
+![Boîte de dialogue des paramètres de validation d&#39;un kit de campagne avec le champ Réviseur défini sur un groupe de gestion central.](assets/s_advuser_mkg_dist_define_valid.png)
 
 Vous pouvez alors lancer le processus de validation en cliquant sur le bouton **[!UICONTROL Soumettre à validation]**.
 
-![](assets/s_advuser_mkg_dist_valid_process.png)
+![Tableau de bord du package de campagne affichant le message soumis à approbation et le bouton Approuver le package.](assets/s_advuser_mkg_dist_valid_process.png)
 
 Un message de notification est alors envoyé au réviseur ou à la réviseuse afin de confirmer la mise à disposition de ce kit de campagne. Le message propose un lien pour accepter ou rejeter la validation via un accès web.
 
-![](assets/s_advuser_mkg_dist_valid_process1.png)
+![E-mail d&#39;approbation avec le lien Accepter ou refuser ouvrant l&#39;action sur la page du package avec les options Accepter et Rejeter.](assets/s_advuser_mkg_dist_valid_process1.png)
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Un message de notification est alors envoyé au réviseur ou à la réviseuse af
 
 Depuis l’onglet **[!UICONTROL Paramètres de validation...]** du kit de campagne, le lien **[!UICONTROL Éditer...]** permet d’ajouter d’autres réviseurs et réviseuses.
 
-![](assets/s_advuser_mkg_dist_select_op_valid.png)
+![Lien Modifier dans les paramètres d&#39;approbation ouvrant la fenêtre Modifier les validants avec des validants supplémentaires et la planification de la validation.](assets/s_advuser_mkg_dist_select_op_valid.png)
 
 ## Chronologie d’approbation {#approval-periods}
 
@@ -61,7 +61,7 @@ Dans la fenêtre d’édition des réviseurs et des réviseuses, vous pouvez ég
 
 Les rappels peuvent être envoyés à une date donnée et/ou **x** jours après la date d’envoi. Le type de rappel peut être configuré dans la première colonne du tableau des rappels. Dans l’exemple ci-dessous, les réviseurs et réviseuses reçoivent un message de rappel le 11/01/2023, soit deux jours avant la date sélectionnée dans la colonne **[!UICONTROL Date]**, ainsi qu’un deuxième rappel un jour avant la fin de la période d’approbation, soit deux jours après la date d’approbation de l’envoi.
 
-![](assets/s_advuser_mkg_dist_reminder_planning.png)
+![Modifiez la fenêtre des réviseurs avec un délai d&#39;approbation 3D et deux rappels : Délai à partir de la date limite d&#39;approbation et Date donnée.](assets/s_advuser_mkg_dist_reminder_planning.png)
 
 Une fois défini et une fois que le kit a été envoyé pour validation, le planning d’exécution est affiché dans l’onglet **[!UICONTROL Audit]**. Il indique la date limite de traitement calculée à partir de la configuration précédente, ainsi que les dates de tous les rappels configurés.
 
@@ -69,6 +69,6 @@ Une fois défini et une fois que le kit a été envoyé pour validation, le plan
 
 Si aucun validant n’a été défini ou si aucun des opérateurs notifiés n’a validé le kit, le bouton **[!UICONTROL Valider le kit]** permet de procéder directement à la validation depuis l’onglet **[!UICONTROL Tableau de bord]** du kit de campagne ou depuis la vue d’ensemble des kits.
 
-![](assets/s_advuser_mkg_dist_valid_button.png)
+![Validez le bouton Package ouvrant la boîte de dialogue Action sur le package avec les options Accepter ou Rejeter et un champ Commentaire.](assets/s_advuser_mkg_dist_valid_button.png)
 
 Une fois validée, la campagne est publiée, ajoutée à la liste et, dès que sa date de disponibilité est atteinte, les entités locales peuvent l’utiliser. Si des entités locales ont été indiquées lors de la création de la campagne, un message est envoyé aux opérateurs et opératrices appartenant au groupe de notification pour les informer de la disponibilité de la campagne. Si aucune entité n’a été indiquée au préalable, la campagne est accessible par défaut à toutes les entités locales. Pour plus d&#39;informations, consultez la section [Entités organisationnelles](about-distributed-marketing.md#organizational-entities).

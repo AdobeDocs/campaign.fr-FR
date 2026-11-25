@@ -23,10 +23,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 100%
+source-wordcount: '1401'
+ht-degree: 82%
 ---
 # Gestion des ressources marketing{#managing-marketing-resources}
 
@@ -43,9 +43,9 @@ Pour ajouter une ressource marketing, procédez comme suit :
 1. Accédez à l’onglet **[!UICONTROL Campagnes]** et sélectionnez **[!UICONTROL Ressources marketing]**.
 
 1. Cliquez sur le bouton **[!UICONTROL Créer]**.
-   ![](assets/add-a-mkt-resource.png)
+   ![Liste des ressources marketing dans l&#39;onglet Campagnes avec le bouton Créer en surbrillance.](assets/add-a-mkt-resource.png)
 1. Faites glisser et déposez le fichier dans la fenêtre Ressource marketing pour le télécharger sur le serveur Campaign. Vous pouvez également utiliser le lien **[!UICONTROL Télécharger le fichier sur le serveur...]**.
-   ![](assets/mkt-resource-creation.png)
+   ![Fenêtre de création de ressource marketing avec le lien Charger le fichier sur le serveur pour ajouter le fichier.](assets/mkt-resource-creation.png)
 
 Une fois le téléchargement terminé, la ressource est ajoutée à la liste des ressources disponibles.
 
@@ -53,11 +53,11 @@ Une fois le téléchargement terminé, la ressource est ajoutée à la liste des
 
 Une fois le téléchargement effectué, la ressource marketing est disponible pour tous les opérateurs et opératrices Adobe Campaign. Ils peuvent la visualiser, en faire une copie pour la modifier ou mettre à jour le fichier sur le serveur.
 
-![](assets/open-a-marketing-resource.png)
+![Tableau de bord des ressources marketing avec onglets Tableau de bord, Modifier et Prévisualiser, statut, fichier et opérateur affecté.](assets/open-a-marketing-resource.png)
 
 Utilisez la liste déroulante **[!UICONTROL Affecté à]** dans l’onglet **[!UICONTROL Modifier]** pour sélectionner l’opérateur ou l’opératrice responsable de la ressource.
 
-![](assets/assign-a-mkt-resource.png)
+![Onglet Modifier d&#39;une ressource marketing avec la liste déroulante Affecté à ouverte d&#39;opérateurs.](assets/assign-a-mkt-resource.png)
 
 Vous pouvez également sélectionner les opérateurs et opératrices ou les groupes d’opérateurs et d’opératrices chargés de la validation et de la publication des ressources. Pour accéder à ces options, cliquez sur le lien **[!UICONTROL Paramètres avancés]**.
 
@@ -83,18 +83,18 @@ Une ressource marketing ne peut être verrouillée que si elle n’a pas été v
 
 Pour verrouiller une ressource, vous devez cliquer sur le bouton **[!UICONTROL Verrouiller]** de la ressource dans le tableau de bord de la ressource.
 
-![](assets/lock-a-resource.png)
+![Tableau de bord des ressources marketing avec une flèche pointant vers le bouton Verrouiller.](assets/lock-a-resource.png)
 
 
 Une fois la ressource mise à jour, cliquez sur le bouton **[!UICONTROL Verrouiller]** dans le tableau de bord de la ressource pour la rendre à nouveau accessible à tous les opérateurs et opératrices.
 
 Un message spécifique vient avertir l&#39;opérateur qui souhaite y accéder :
 
-![](assets/mkt-resource-locked.png)
+![Message de l&#39;onglet Modifier indiquant que le fichier se trouve sur le serveur et est en cours de modification par un autre opérateur.](assets/mkt-resource-locked.png)
 
 L’onglet **[!UICONTROL Tracking]** indique le nom de l’opérateur ou de l’opératrice qui a verrouillé la ressource.
 
-![](assets/mkt-resource-audit-tab.png)
+![Onglet Audit d&#39;une ressource marketing avec le relecteur, la date de disponibilité, le propriétaire et l&#39;entrée de verrouillage dans le journal.](assets/mkt-resource-audit-tab.png)
 
 
 >[!NOTE]
@@ -105,7 +105,7 @@ L’onglet **[!UICONTROL Tracking]** indique le nom de l’opérateur ou de l’
 
 Pour chaque ressource, l’onglet **[!UICONTROL Forum]** permet aux participant(e)s de partager des informations.
 
-![](assets/mkt-resource-forum.png)
+![Boîte de dialogue de forum de discussion sur une ressource marketing avec l’objet, le message et l’opérateur pour informer les champs.](assets/mkt-resource-forum.png)
 
 En savoir plus dans la section [Forums de discussion](discussion-forums.md).
 
@@ -115,13 +115,13 @@ La date de disponibilité prévue est affichée dans les détails de la ressourc
 
 Pour valider une ressource, cliquez sur le bouton **[!UICONTROL Valider la ressource]** sur son tableau de bord.
 
-![](assets/mkt-resouce-approve.png)
+![Tableau de bord des ressources marketing avec une flèche pointant vers le bouton Approuver la ressource.](assets/mkt-resouce-approve.png)
 
 Les opérateurs ou opératrices habilités peuvent alors accepter ou refuser l’approbation. Cette action est à la fois possible à partir de l’e-mail envoyé (en cliquant sur le lien inclus dans le message de notification ) ou de la console cliente (en cliquant sur le bouton **[!UICONTROL Approuver]**).
 
 La fenêtre de validation permet de saisir un commentaire.
 
-![](assets/mkt-resource-approval-confirmation.png)
+![Action dans la boîte de dialogue Ressource avec les options Accepter et Rejeter, un champ Commentaire et le bouton Approbation.](assets/mkt-resource-approval-confirmation.png)
 
 Accédez à l’onglet **[!UICONTROL Tracking]** pour consulter les validations.
 
@@ -135,7 +135,7 @@ Une fois approuvée, la ressource marketing doit être publiée. Le processus de
 
 Pour publier une ressource, cliquez sur le bouton **[!UICONTROL Publier]** situé dans sa zone d&#39;édition dans le tableau de bord des ressources marketing.
 
-![](assets/mkt-resource-publish.png)
+![Tableau de bord de la ressource marketing approuvée avec une flèche pointant vers le bouton Publier.](assets/mkt-resource-publish.png)
 
 Vous pouvez également automatiser la publication d&#39;une ressource via un workflow.
 
@@ -143,7 +143,7 @@ Publier une ressource signifie la rendre disponible pour une utilisation (par ex
 
 Pour qu’Adobe Campaign puisse effectuer la publication, vous devez créer un workflow adéquat et le lier à la ressource. Pour ce faire, ouvrez la boîte de dialogue **[!UICONTROL Paramètres avancés…]** de la ressource, puis sélectionnez le workflow de votre choix dans le champ **[!UICONTROL Post-traitement]**.
 
-![](assets/mkt-resource-post-processing-wf.png)
+![Boîte de dialogue des paramètres avancés avec le champ Workflow de post-traitement sous Publication des ressources.](assets/mkt-resource-post-processing-wf.png)
 
 Le workflow est lancé :
 
@@ -160,7 +160,7 @@ Les ressources marketing peuvent être associées aux campagnes, sous réserve q
 
 Accédez à l’onglet **[!UICONTROL Modifier > Documents > Ressources]** dans le tableau de bord de la campagne, puis cliquez sur **[!UICONTROL Ajouter]** pour sélectionner la ressource visée.
 
-![](assets/link-a-mkt-resource-to-a-campaign.png)
+![Onglet Ressources d’une campagne avec le bouton Ajouter et la boîte de dialogue de sélection des ressources marketing.](assets/link-a-mkt-resource-to-a-campaign.png)
 
 Vous pouvez filtrer les ressources par statut, par nature ou par type, ou appliquer un filtre personnalisé.
 
@@ -170,15 +170,15 @@ Utilisez le bouton **[!UICONTROL Détails]** pour modifier et prévisualiser la 
 
 Les ressources marketing peuvent être associées à des diffusions via les compositions.
 
-En savoir plus sur les compositions de diffusion dans [cette section](../campaigns/marketing-campaign-deliveries.md).
+En savoir plus sur les compositions de diffusion dans [Diffusions de campagnes marketing](../campaigns/marketing-campaign-deliveries.md).
 
 Pour ce faire, cliquez avec le bouton droit sur une composition de diffusion et sélectionnez **Nouveau > Ressource**.
 
-![](assets/mkt-resource-add-in-del-outline.png)
+![Menu contextuel des compositions de diffusion avec Nouveau et l&#39;option Ressource sélectionnée.](assets/mkt-resource-add-in-del-outline.png)
 
 Saisissez le nom de la ressource et sélectionnez-la dans la liste déroulante **Ressource marketing**.
 
-![](assets/mkt-resource-select-in-del-outline.png)
+![Liste déroulante des ressources marketing de la composition de diffusion présentant les ressources disponibles à sélectionner.](assets/mkt-resource-select-in-del-outline.png)
 
 
 ## Gestion des stocks {#stock-management}
@@ -188,11 +188,11 @@ Vous pouvez associer une ressource marketing à un ou plusieurs stocks afin de g
 
 Pour associer une ressource marketing à un stock, procédez comme suit :
 
-1. Modifiez ou créez un stock. En savoir plus sur les stocks dans [cette section](../campaigns/providers-stocks-and-budgets.md#stock-management).
+1. Modifiez ou créez un stock. En savoir plus sur les stocks dans la [Gestion des stocks](../campaigns/providers-stocks-and-budgets.md#stock-management).
 
 1. Ajoutez une ligne de stock et sélectionnez la ressource marketing correspondante.
 
-   ![](assets/mkt-resource-in-a-stock-line.png)
+   ![Boîte de dialogue de ligne de stock avec le champ Ressource marketing, le niveau de stock initial et le niveau d’alerte.](assets/mkt-resource-in-a-stock-line.png)
 
    Vous pouvez modifier la ressource sélectionnée à partir de l’icône **[!UICONTROL Modifier le lien]**, située à droite de la ressource.
 

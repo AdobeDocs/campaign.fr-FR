@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 100%
+source-wordcount: '285'
+ht-degree: 82%
 ---
 # Surveillance des campagnes marketing {#monitor-marketing-campaigns}
 
@@ -38,11 +38,11 @@ Les informations accessibles à partir de ce sous-onglet sont les suivantes :
 
 * Le sous-onglet **[!UICONTROL Audit]** affiche le journal des activités. Il contient les traitements exécutés lors de la campagne : création ou démarrage d&#39;un workflow, validation, extraction, gestion des stocks, etc.
 
-  ![](assets/campaign-audit-tab.png)
+  ![Onglet Modifier la campagne, section Audit, sous-onglet Journal répertoriant les messages du journal d’activité et les types de journaux](assets/campaign-audit-tab.png)
 
 * Le sous-onglet **[!UICONTROL Diffusions]** contient toutes les diffusions de la campagne. Elles peuvent être modifiées à partir de cet affichage. Pour cela, sélectionnez la diffusion et cliquez sur l&#39;icône **[!UICONTROL Détail]**.
 
-  ![](assets/campaign-delivery-tab.png)
+  ![Section d&#39;audit de la campagne, sous-onglet Diffusions répertoriant le canal, le statut, le statut de ciblage et le statut du contenu](assets/campaign-delivery-tab.png)
 
 * Le sous-onglet **[!UICONTROL Validations]** contient l&#39;ensemble du processus de validation de la campagne. Vous pouvez vérifier les détails et les commentaires.
 
@@ -52,7 +52,7 @@ Les informations accessibles à partir de ce sous-onglet sont les suivantes :
 
 La liste des diffusions peut être affichée à partir du lien **[!UICONTROL Diffusions]** de l&#39;univers des Campagnes.
 
-![](assets/filter-deliveries-from-homepage.png)
+![Liste des diffusions sur la page d’accueil avec la liste déroulante de filtre de statut En cours de modification, En cours et Terminé](assets/filter-deliveries-from-homepage.png)
 
 Pour chaque diffusion, vous pouvez accéder depuis cette liste aux indicateurs-clés : état, nombre de destinataires ciblés, opération de rattachement, etc.
 

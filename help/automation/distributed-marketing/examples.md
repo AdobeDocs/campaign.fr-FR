@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 100%
+source-wordcount: '1704'
+ht-degree: 80%
 ---
 # Exemples de marketing distribué{#distributed-marketing-samples}
 
@@ -38,7 +38,7 @@ L’interface web de type **Par formulaire** implique l’utilisation d’une **
 
 Lors de la création du modèle de campagne, cliquez sur l&#39;icône **[!UICONTROL Zoom]** de l&#39;option **[!UICONTROL Interface web]** du lien **[!UICONTROL Paramètres avancés de la campagne...]** pour accéder aux détails de l&#39;application web.
 
-![](assets/mkg_dist_local_op_form1.png)
+![Paramètres avancés, onglet Marketing distribué : champ de l&#39;interface Web avec l&#39;icône Modifier le lien en surbrillance.](assets/mkg_dist_local_op_form1.png)
 
 >[!NOTE]
 >
@@ -46,21 +46,21 @@ Lors de la création du modèle de campagne, cliquez sur l&#39;icône **[!UICONT
 
 Dans l&#39;onglet **[!UICONTROL Edition]**, sélectionnez l&#39;activité **Commande d&#39;opération** et ouvrez-la pour accéder à son contenu.
 
-![](assets/mkg_dist_web_app1.png)
+![Workflow d&#39;application web avec l&#39;activité de page de commande de campagne ouverte pour afficher son contenu.](assets/mkg_dist_web_app1.png)
 
 Dans cet exemple, l&#39;activité **Commande d&#39;opération** comprend :
 
 * des champs qui seront renseignés par l&#39;entité locale lors de la commande,
 
-  ![](assets/mkg_dist_web_app2.png)
+  ![Les champs de la page de commande de la campagne (date de contact, canal préféré, segment d&#39;âge, image, message) et leur formulaire web.](assets/mkg_dist_web_app2.png)
 
 * des liens qui permettront à l&#39;entité locale d&#39;évaluer l&#39;opération (par exemple la cible, le budget, le contenu, etc.),
 
-  ![](assets/mkg_dist_web_app3.png)
+  ![Évaluer le ciblage, le budget et les liens de contenu dans la page et dans le formulaire web.](assets/mkg_dist_web_app3.png)
 
 * des scripts qui permettent de calculer et d&#39;afficher le résultat de ces évaluations.
 
-  ![](assets/mkg_dist_web_app4.png)
+  ![Arborescence de page avec le résultat de ciblage, le résultat du budget et les éléments de résultat du contenu mis en surbrillance.](assets/mkg_dist_web_app4.png)
 
 Dans cet exemple, les APIs suivantes sont utilisées :
 
@@ -113,15 +113,15 @@ Les étapes sont les suivantes :
 
 1. Les entités locales sélectionnées pour participer à l&#39;opération reçoivent, par email, une notification.
 
-   ![](assets/mkg_dist_use_case_target_valid8.png)
+   ![E-mail de validation de la cible avec le lien Accéder à votre liste de contacts et valider le ciblage.](assets/mkg_dist_use_case_target_valid8.png)
 
 1. En cliquant sur le lien **[!UICONTROL Accéder à votre liste de contacts et valider le ciblage]**, l’entité locale a accès, depuis un navigateur web, à la liste de ses clients sélectionnés pour l’opération.
 
-   ![](assets/mkg_dist_use_case_target_valid9.png)
+   ![Page web Validation de la cible répertoriant les contacts ciblés avec des cases à cocher et le bouton Valider le ciblage.](assets/mkg_dist_use_case_target_valid9.png)
 
 1. L&#39;entité locale dé-sélectionne certains contacts de la liste, car ces derniers ont déjà été contactés pour une offre du même acabit depuis le début de l&#39;année.
 
-   ![](assets/mkg_dist_use_case_target_valid10.png)
+   ![Page de validation de la cible avec trois contacts décochés et un commentaire expliquant les suppressions.](assets/mkg_dist_use_case_target_valid10.png)
 
 Lorsque les validations sont approuvées, l&#39;opération peut démarrer automatiquement.
 
@@ -131,7 +131,7 @@ Lorsque les validations sont approuvées, l&#39;opération peut démarrer automa
 
 1. Pour mettre en place une campagne collaborative (par validation de la cible), vous devez d’abord créer une **[!UICONTROL Activité Répartition de données]**. Cliquez sur l’icône **[!UICONTROL Nouveau]** dans le dossier **[!UICONTROL Ressources > Gestion de campagne > Répartition de données]** de l’explorateur Campaign.
 
-   ![](assets/mkg_dist_use_case_target_valid3.png)
+   ![Onglet Général de la distribution de données : dimension de ciblage, champ de distribution Origine, type d&#39;affectation Entité locale.](assets/mkg_dist_use_case_target_valid3.png)
 
 1. Dans l&#39;onglet **[!UICONTROL Général]** vous devez indiquer :
 
@@ -147,7 +147,7 @@ Lorsque les validations sont approuvées, l&#39;opération peut démarrer automa
    * le **[!UICONTROL libellé]** de l&#39;entité locale.
    * la **[!UICONTROL taille]** (fixe ou en pourcentage) choisie. La **valeur par défaut 0** implique la sélection de tous les destinataires liés à l&#39;entité locale.
 
-   ![](assets/mkg_dist_use_case_target_valid4.png)
+   ![Onglet Répartition des données répertoriant les valeurs de répartition Est, Nord, Sud et Ouest et les entités locales.](assets/mkg_dist_use_case_target_valid4.png)
 
 1. Enregistrez votre nouvelle boîte de répartition.
 
@@ -156,7 +156,7 @@ Lorsque les validations sont approuvées, l&#39;opération peut démarrer automa
 1. À partir du dossier **[!UICONTROL Gestion de campagne > Campagne]** de l’explorateur Campaign, créez une **[!UICONTROL campagne collaborative (par validation de la cible)]**.
 1. Dans l’onglet **[!UICONTROL Ciblages et workflows]**, créez un workflow pour votre campagne. Celui-ci doit contenir une activité de **Partage** dont la **[!UICONTROL limitation du nombre d&#39;enregistrements]** est définie par l&#39;activité **[!UICONTROL Répartition de données]**.
 
-   ![](assets/mkg_dist_use_case_target_valid5.png)
+   ![Limitation du nombre d&#39;enregistrements d&#39;activité de partage définie sur Par répartition de données, à l&#39;aide de la répartition Entités locales.](assets/mkg_dist_use_case_target_valid5.png)
 
 1. Ajoutez une action **[!UICONTROL Validation en local]** où vous pouvez définir :
 
@@ -164,7 +164,7 @@ Lorsque les validations sont approuvées, l&#39;opération peut démarrer automa
    * le rappel pour la validation,
    * le traitement anticipé de la campagne.
 
-   ![](assets/mkg_dist_use_case_target_valid7.png)
+   ![Activité Validation en local : notification de validation de la cible, type de validation, modèle et description pour les entités locales.](assets/mkg_dist_use_case_target_valid7.png)
 
 1. Sauvegardez votre enregistrement.
 
@@ -177,15 +177,15 @@ Vous pouvez désormais ajouter un **kit de campagne** à partir de l’onglet **
    * avec le mode **Manuel**, les entités locales participent à la campagne si elles acceptent l’invitation de l’entité centrale. Elles peuvent supprimer des contacts pré-sélectionnés si elles le souhaitent. Une validation d’une personne responsable est obligatoire pour confirmer la participation.
    * avec le mode **Automatique**, les entités locales participent obligatoirement à la campagne, à moins qu’elles ne s’en désinscrivent. Elles peuvent supprimer des contacts sans qu’aucune validation ne soit demandée.
 
-   ![](assets/mkg_dist_use_case_target_valid.png)
+   ![Boîte de dialogue de création du package de campagne avec la campagne de référence et le champ Mode de validation défini sur Manuel.](assets/mkg_dist_use_case_target_valid.png)
 
 1. Dans l&#39;onglet **[!UICONTROL Description]**, vous pouvez ajouter une description pour votre opération, ainsi que des documents qui seront transmis aux entités locales.
 
-   ![](assets/mkg_dist_use_case_target_valid1.png)
+   ![Onglet Description du package de campagne avec la description du package et la liste des documents joints.](assets/mkg_dist_use_case_target_valid1.png)
 
 1. Validez votre kit de campagne puis lancez votre workflow pour que le kit soit publié et disponible pour les entités locales dans la liste des kits.
 
-   ![](assets/mkg_dist_use_case_target_valid2.png)
+   ![Tableau de bord du package avec le bouton Approuver le package, affichant le statut En édition.](assets/mkg_dist_use_case_target_valid2.png)
 
 ## Création dʼune opération collaborative (par formulaire) {#creating-a-collaborative-campaign--by-form-}
 
@@ -221,7 +221,7 @@ Les étapes sont les suivantes :
 
 1. Les entités locales sélectionnées pour participer à l&#39;opération reçoivent, par email, une notification les informant de la publication de l&#39;opération.
 
-   ![](assets/mkg_dist_use_case_form_7.png)
+   ![Enregistrement de l&#39;e-mail de campagne avec le lien Enregistrer pour la campagne pour les entités locales.](assets/mkg_dist_use_case_form_7.png)
 
 1. L&#39;entité locale remplit un formulaire personnalisé puis elle :
 
@@ -229,35 +229,35 @@ Les étapes sont les suivantes :
    * prévisualise le contenu de la diffusion,
    * valide sa participation.
 
-     ![](assets/mkg_dist_use_case_form_8.png)
+     ![Formulaire web de commande de campagne avec liens d&#39;évaluation, aperçu d&#39;image et bouton Valider.](assets/mkg_dist_use_case_form_8.png)
 
 1. L&#39;opérateur en charge de la validation des commandes approuve la participation.
 
-   ![](assets/mkg_dist_use_case_form_9.png)
+   ![Page de validation des commandes de la campagne avec les détails de la commande, le commentaire de la commande et le bouton Valider.](assets/mkg_dist_use_case_form_9.png)
 
 ### Côté entité centrale {#central-entity-side-1}
 
 1. Pour mettre en place une opération collaborative (par formulaire), vous devez créer une opération à partir du **modèle d&#39;opération collaborative (par formulaire)**.
 
-   ![](assets/mkg_dist_use_case_form_1.png)
+   ![Boîte de dialogue Nouvelle campagne marketing à l&#39;aide du modèle Campagne collaborative (par formulaire).](assets/mkg_dist_use_case_form_1.png)
 
-1. Sous l&#39;onglet **[!UICONTROL Modifier]** de la campagne, cliquez sur le lien **[!UICONTROL Paramètres avancés de la campagne...]** pour la configurer comme une campagne locale. Pour plus d&#39;informations, consultez la section [Créer une campagne locale (par formulaire)](#creating-a-local-campaign--by-form-).
+1. Sous l&#39;onglet **[!UICONTROL Modifier]** de la campagne, cliquez sur le lien **[!UICONTROL Paramètres avancés de la campagne...]** pour la configurer comme une campagne locale. Pour plus d&#39;informations, consultez la section [Créer une opération locale (par formulaire)](#creating-a-local-campaign--by-form-).
 
-   ![](assets/mkg_dist_use_case_form_2.png)
+   ![Paramètres avancés, onglet Marketing distribué : niveau collaboratif, configurable par formulaire, valeurs par défaut.](assets/mkg_dist_use_case_form_2.png)
 
 1. Configurez le workflow de l&#39;opération et le formulaire web. Pour plus d&#39;informations, consultez la section [Créer une campagne locale (par formulaire)](#creating-a-local-campaign--by-form-).
 1. Créez votre kit de campagne en spécifiant le planning de réalisation et les entités locales impliquées.
 
-   ![](assets/mkg_dist_use_case_form_3.png)
+   ![Boîte de dialogue du kit de campagne avec la campagne de référence, le planning d&#39;exécution, les dates limites et la liste des entités locales.](assets/mkg_dist_use_case_form_3.png)
 
 1. Finalisez le paramétrage du kit en choisissant le mode de validation dans l&#39;onglet **[!UICONTROL Edition]**.
 
-   ![](assets/mkg_dist_use_case_form_4.png)
+   ![Liste déroulante du mode de validation offrant les modes Manuel et Automatique.](assets/mkg_dist_use_case_form_4.png)
 
 1. Si besoin, dans l’onglet **[!UICONTROL Description]**, saisissez une description du kit de campagne, un message de notification qui sera envoyé aux entités locales lors de la publication du kit, et attachez des documents informatifs à votre kit de campagne.
 
-   ![](assets/mkg_dist_use_case_form_5.png)
+   ![Onglet Description du package avec l&#39;option email de notification, message pour l&#39;entité locale et documents joints.](assets/mkg_dist_use_case_form_5.png)
 
 1. Validez le kit pour activer sa publication.
 
-   ![](assets/mkg_dist_use_case_form_6.png)
+   ![Valider le bouton de package ouvrant la boîte de dialogue Action sur le package avec les options Accepter et Rejeter.](assets/mkg_dist_use_case_form_6.png)

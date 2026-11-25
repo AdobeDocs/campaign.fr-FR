@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 97%
+source-wordcount: '687'
+ht-degree: 78%
 ---
 # Règles de filtrage{#filtering-rules}
 
@@ -44,27 +44,27 @@ Pour définir ce filtrage, les étapes sont les suivantes :
 1. Accédez au dossier **[!UICONTROL Administration > Gestion de campagne > Gestion des typologies > Règles de typologie]** de l’explorateur Campaign, puis cliquez sur l’icône **Nouveau** pour créer une règle de typologie.
 1. Créez une règle de typologie de type **[!UICONTROL Filtrage]**, applicable à tous les canaux.
 
-   ![](assets/campaign_opt_create_filter_01.png)
+   ![Nouvelle règle de typologie avec le type de règle Filtrage et l&#39;option Tous les canaux sélectionnée dans la liste Canal.](assets/campaign_opt_create_filter_01.png)
 
-1. Dans l’onglet **Filtre** modifiez la dimension de ciblage par défaut en **Abonnements** (**nms:subscription**).
+1. Dans l’onglet **Filtre**, modifiez la dimension de ciblage par défaut en **Abonnements** (**nms:subscription**).
 
-   ![](assets/campaign_opt_create_filter_02.png)
+   ![Onglet Filtre avec le schéma Abonnements (nms) sélectionné comme dimension de ciblage.](assets/campaign_opt_create_filter_02.png)
 
 1. Créez le filtre à partir du lien **[!UICONTROL Editer la requête à partir de la dimension de ciblage...]**.
 
-   ![](assets/campaign_opt_create_filter_03.png)
+   ![Boîte de dialogue Modifier la requête de filtrage, étape Type de cible, avec conditions de filtrage sélectionnées.](assets/campaign_opt_create_filter_03.png)
 
 1. Filtrez par âge des destinataires et enregistrez la condition de filtrage.
 
-   ![](assets/campaign_opt_create_filter_03b.png)
+   ![Boîte de dialogue Modifier la requête de filtrage avec la condition Âge (destinataire/@age) supérieur à 18.](assets/campaign_opt_create_filter_03b.png)
 
 1. Sous l’onglet **Typologies**, liez cette règle à une typologie de campagne et enregistrez-la.
 
-   ![](assets/campaign_opt_create_filter_04.png)
+   ![Onglet Typologies de la règle de filtrage avec la boîte de dialogue Ajouter des typologies et la typologie Newsletters sélectionnées.](assets/campaign_opt_create_filter_04.png)
 
 Lorsque cette règle est utilisée dans une diffusion, les abonnés mineurs sont automatiquement exclus. Un message spécifique indique à quel moment la règle est appliquée :
 
-![](assets/campaign_opt_create_filter_05.png)
+![Log d&#39;analyse de diffusion avec une flèche sur les lignes appliquant les règles Exclure les adresses et Exclure les domaines .](assets/campaign_opt_create_filter_05.png)
 
 ## Traitement dʼune règle de filtrage {#condition-a-filtering-rule}
 
@@ -86,17 +86,17 @@ Dans ce cas, même si la règle est associée à toutes les diffusions, elle ne 
 
 Vous pouvez créer des typologies de **[!UICONTROL Filtrage]** : elles ne contiennent que des règles de filtrage.
 
-![](assets/campaign_opt_create_typo_filtering.png)
+![Typologie avec la liste Type définie sur Filtrage et son onglet Règles répertoriant les règles de filtrage à appliquer.](assets/campaign_opt_create_typo_filtering.png)
 
 Ces typologies spécifiques peuvent être associées à une diffusion lors du choix de la cible : dans l&#39;assistant de diffusion, cliquez sur le lien **[!UICONTROL Pour]**, puis sur l&#39;onglet **[!UICONTROL Exclusions]**.
 
-![](assets/campaign_opt_apply_typo_filtering.png)
+![Sélectionnez la boîte de dialogue cible, onglet Exclusions, avec le lien Ajouter une règle de filtrage sous Règles de filtrage.](assets/campaign_opt_apply_typo_filtering.png)
 
 Sélectionnez ensuite la typologie de filtrage à appliquer à la diffusion. Pour ce faire, cliquez sur le bouton **[!UICONTROL Ajouter]** et sélectionnez les typologies à appliquer.
 
 Vous pouvez également lier directement des règles de filtrage depuis cet onglet, sans qu’elles soient regroupées dans une typologie. Pour cela, utilisez la section inférieure de la fenêtre.
 
-![](assets/campaign_opt_select_typo_filtering.png)
+![Onglet Exclusions avec une typologie de filtrage et une règle de filtrage ajoutée par les deux boutons Ajouter.](assets/campaign_opt_select_typo_filtering.png)
 
 >[!NOTE]
 >

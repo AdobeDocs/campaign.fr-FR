@@ -15,14 +15,14 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '1602'
-ht-degree: 97%
+source-wordcount: '1767'
+ht-degree: 88%
 ---
 # Migration des opérateurs et opératrices techniques Campaign vers Adobe Developer Console {#migrate-tech-users-to-ims}
 
-Dans le cadre des efforts visant à renforcer le processus de sécurité et d’authentification, à partir de Campaign v8.5, le processus d’authentification à Campaign v8 est en cours d’amélioration. Les opérateurs ou opératrices techniques peuvent désormais utiliser le système Adobe Identity Management (IMS) [&#128279;](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}  pour se connecter à Campaign. Pour en savoir plus sur le nouveau processus d’authentification serveur à serveur, consultez la [documentation d’Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
+Dans le cadre des efforts visant à renforcer le processus de sécurité et d’authentification, à partir de Campaign v8.5, le processus d’authentification à Campaign v8 est en cours d’amélioration. Les opérateurs ou opératrices techniques peuvent désormais utiliser le [système Adobe Identity Management (IMS)](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"} pour se connecter à Campaign. Pour en savoir plus sur le nouveau processus d’authentification serveur à serveur, consultez la [documentation d’Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
 Un opérateur ou une opératrice technique est un profil utilisateur de Campaign qui a été explicitement créé pour l’intégration de l’API. Cet article décrit les étapes à suivre pour migrer un opérateur ou une opératrice technique vers un compte technique par le biais de l’Adobe Developer Console.
 
@@ -73,7 +73,7 @@ For this migration, you must add below APIs in your project: **I/O Management AP
 
 Pour créer un projet, cliquez sur **Créer un projet** dans l’écran principal de l’Adobe Developer Console.
 
-![](assets/New-Project.png)
+![Page d&#39;accueil de Adobe Developer Console avec l&#39;option de démarrage rapide Créer un projet mise en surbrillance.](assets/New-Project.png)
 
 Vous pouvez utiliser le bouton **Modifier le projet** pour renommer ce projet.
 
@@ -85,16 +85,16 @@ Dans l’écran du projet nouvellement créé, ajoutez les API nécessaires pour
 Pour ajouter des API à votre projet, procédez comme suit :
 
 1. Cliquez sur **Ajouter une API** pour sélectionner les API à ajouter à votre projet.
-   ![](assets/do-not-localize/ims-updates-01.png)
+   ![Nouvelle page de projet vide dans Adobe Developer Console avec les options Ajouter une API, Ajouter un événement et Ajouter un plug-in.](assets/do-not-localize/ims-updates-01.png)
 1. Sélectionnez l’API Adobe Campaign et ajoutez-la à votre projet en cochant la case située dans le coin supérieur droit de la carte Adobe Campaign qui s’affiche lorsque vous pointez sur la carte.
-   ![](assets/do-not-localize/ims-updates-02.png)
+   ![Ajoutez un écran d’API avec la carte Adobe Campaign sélectionnée sous Experience Cloud et le bouton Suivant.](assets/do-not-localize/ims-updates-02.png)
 1. Cliquez sur **Suivant** au bas de l’écran.
 
 ### Étape 3 : sélectionner le type d’authentification  {#ims-migration-step-3}
 
 Dans l’écran **Configurer l’API**, sélectionnez le type d’authentification nécessaire. L’authentification **OAuth serveur à serveur** est requise pour ce projet. Assurez-vous qu’elle est sélectionnée, puis cliquez sur **Suivant** au bas de l’écran.
 
-![](assets/do-not-localize/ims-updates-03.png)
+![Configurer l&#39;écran d&#39;API avec OAuth de serveur à serveur sélectionné, un champ de nom d&#39;informations d&#39;identification et le bouton Suivant.](assets/do-not-localize/ims-updates-03.png)
 
 <!--
 Once your project is created in the Adobe Developer Console, add an API that uses Server-to-Server authentication. Learn how to set up the OAuth Server-to-Server credential in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/){target="_blank"}.
@@ -129,17 +129,17 @@ You can now add your Campaign product profile to the project, as detailed below:
 
 Dans l’écran du projet, cliquez sur le bouton **[!UICONTROL + Ajouter au projet]** et choisissez **[!UICONTROL API]** dans le coin supérieur gauche de l’écran pour pouvoir ajouter l’API de gestion I/O à ce projet.
 
-![](assets/do-not-localize/ims-updates-04.png)
+![Page d’API Adobe Campaign avec le menu Ajouter au projet ouvert affichant l’API, l’événement et le plug-in.](assets/do-not-localize/ims-updates-04.png)
 
 Dans l’écran **Ajouter une API**, faites défiler l’écran vers le bas pour trouver la carte **API de gestion I/O**. Sélectionnez-la en cochant la case qui s’affiche lorsque vous pointez sur la carte. Cliquez ensuite sur **Suivant** au bas de l’écran.
 
-![](assets/do-not-localize/ims-updates-05.png)
+![Ajoutez un écran API avec la carte API I/O Management sélectionnée et le bouton Suivant.](assets/do-not-localize/ims-updates-05.png)
 
 
 Dans l’écran **Configurer l’API**, l’authentification OAuth serveur à serveur existe déjà. Cliquez sur **Enregistrer l’API configurée** au bas de l’écran.
 
 
-![](assets/do-not-localize/ims-updates-06.png)
+![Écran Configurer l’API affichant les informations d’identification de serveur à serveur OAuth existantes et le bouton Enregistrer l’API configurée.](assets/do-not-localize/ims-updates-06.png)
 
 Vous revenez alors à l’écran Projet dans l’API de gestion I/O du projet nouvellement créé. Cliquez sur le nom du projet dans les barres de navigation en haut de l’écran pour revenir à la page principale Détails du projet.
 
@@ -148,7 +148,7 @@ Vous revenez alors à l’écran Projet dans l’API de gestion I/O du projet no
 
 Vérifiez votre projet pour vous assurer qu’il ressemble à ce qui suit, avec l’**API de gestion I/O** et l’**API Adobe Campaign** visibles dans la section Produits et services et **OAuth serveur à serveur** dans la section Informations d’identification.
 
-![](assets/do-not-localize/ims-updates-07.png)
+![Présentation du projet répertoriant l’API I/O Management et Adobe Campaign sous Produits et services, ainsi que OAuth de serveur à serveur.](assets/do-not-localize/ims-updates-07.png)
 
 
 ### Étape 7 : valider votre configuration {#ims-migration-step-7}
@@ -159,11 +159,11 @@ Pour tester la connexion, procédez comme décrit dans la section [Guide des inf
 
 Vous devez maintenant mettre à jour les intégrations d’API qui effectuent des appels dans Adobe Campaign pour utiliser le compte technique nouvellement créé.
 
-Pour plus d’informations sur les étapes d’intégration des API, y compris un exemple de code pour une intégration fluide, consultez la documentation sur l’authentification Adobe Developer Console [&#128279;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
+Pour plus d’informations sur les étapes d’intégration des API, y compris un exemple de code pour une intégration fluide, consultez la [documentation sur l’authentification Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
 Vous trouverez ci-dessous des exemples d’appels SOAP indiquant les appels avant et après la migration pour les systèmes tiers.
 
-Lors de l’utilisation de l’authentification Adobe Identity Management System (IMS), pour générer un fichier WSDL, vous devez ajouter `Authorization: Bearer <IMS_Technical_Token_Token>` dans l’appel postman :
+Lors de l’utilisation de l’authentification du système de gestion des identités (IMS) Adobe, pour générer un fichier WSDL, vous devez ajouter `Authorization: Bearer <IMS_Technical_Token_Token>` dans l’appel postman :
 
 ```
 curl --location --request POST 'https://<instance_url>/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent' \--header 'Authorization: Bearer <Technical account access token>'
@@ -228,11 +228,11 @@ Notez que l’utilisateur ou l’utilisatrice du compte technique n’existera P
 
    Vous pouvez localiser cette adresse e-mail en cliquant sur le titre **OAuth serveur à serveur** dans la section **Informations d’identification** du projet.
 
-   ![](assets/do-not-localize/ims-updates-07.png)
+   ![Présentation du projet avec les informations d’identification de serveur à serveur OAuth à sélectionner dans la section Informations d’identification.](assets/do-not-localize/ims-updates-07.png)
 
    Dans l’écran Informations d’identification, faites défiler l’écran vers le bas pour localiser l’**adresse e-mail du compte technique**, puis cliquez sur le bouton **Copier**.
 
-   ![](assets/do-not-localize/ims-updates-08.png)
+   ![Informations d’identification de serveur à serveur OAuth avec le bouton Générer un jeton d’accès, l’ID client et le secret client.](assets/do-not-localize/ims-updates-08.png)
 
 1. Vous devez maintenant mettre à jour l’opérateur technique nouvellement créé ou l’opératrice technique nouvellement créée dans la console cliente Adobe Campaign. Vous devez appliquer les autorisations de dossier des opérateurs et opératrices techniques existants au nouvel opérateur ou à la nouvelle opératrice technique.
 
