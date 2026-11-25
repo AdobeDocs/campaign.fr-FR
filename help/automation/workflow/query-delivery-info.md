@@ -84,7 +84,7 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
    Pour cela :
 
-   * Paramétrez le filtrage des données. Cliquez sur **[!UICONTROL Suivant]**.****
+   * Paramétrez le filtrage des données. Cliquez sur **[!UICONTROL Suivant]**.**&#x200B;**
 
      ![Fenêtre de filtrage des données avec conditions de filtrage sélectionnées dans la liste des filtres de restriction.](assets/query_editor_nveau_22.png)
 

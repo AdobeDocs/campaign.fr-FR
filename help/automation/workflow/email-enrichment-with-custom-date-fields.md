@@ -124,7 +124,7 @@ Vous pouvez maintenant commencer à concevoir votre diffusion par email avec les
            formatDate(targetData.alias of your expression,"%2D.%2M")  %>
    ```
 
-1. Cliquez sur le bouton de la barre d&#39;outils de Personalization ![ avec une flèche déroulante.](assets/uc_enrichment_16.png). Sélectionnez **[!UICONTROL Extension de la cible]**, puis les dates de validité personnalisées créées précédemment avec l’activité **[!UICONTROL Enrichissement]** pour ajouter votre extension à l’expression formatDate.
+1. Cliquez sur le bouton de la barre d&#39;outils de Personalization ![&#x200B; avec une flèche déroulante.](assets/uc_enrichment_16.png). Sélectionnez **[!UICONTROL Extension de la cible]**, puis les dates de validité personnalisées créées précédemment avec l’activité **[!UICONTROL Enrichissement]** pour ajouter votre extension à l’expression formatDate.
 
    ![Menu Personalization Sous-menu Extension de la cible répertoriant la date de début de validité et la date de fin de validité.](assets/uc_enrichment_19.png)
 
