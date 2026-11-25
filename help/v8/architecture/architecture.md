@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 71%
+source-wordcount: '1176'
+ht-degree: 63%
 ---
 # Prise en main de l&#39;architecture de Campaign{#gs-ac-archi}
 
@@ -62,11 +62,11 @@ Deux modèles de déploiement sont disponibles : **Déploiement FDA de Campaig
 Dans son [déploiement FDA](fda-deployment.md), [!DNL Adobe Campaign] v8 peut être connecté à [!DNL Snowflake] pour accéder aux données via la fonctionnalité Federated Data Access : vous pouvez accéder aux données et aux informations externes stockées dans votre base de données [!DNL Snowflake] sans modifier la structure des données Adobe Campaign. PostgreSQL est la base de données principale. Vous pouvez utiliser Snowflake comme base de données secondaire pour étendre votre modèle de données et stocker vos données dans Snowflake. Par la suite, vous pourrez exécuter ETL, la segmentation et les rapports sur un jeu de données volumineux avec des performances optimales.
 
 
-![](assets/P1-P3-architecture.png){zoomable="yes"}
+![Architecture FDA de Campaign v8 : serveur d’applications, bases de données Postgres et Snowflake, serveurs de diffusion en temps réel et par lots](assets/P1-P3-architecture.png){zoomable="yes"}
 
 >[!NOTE]
 >
->Dans ce modèle de déploiement, la base de données [!DNL Snowflake] secondaire n’est disponible que sur demande. Pour mettre à jour votre déploiement avec [!DNL Snowflake], contactez la personne chargée de votre transition Adobe.
+>Dans ce modèle de déploiement, la base de données [!DNL Snowflake] secondaire n’est disponible que sur demande. Pour mettre à jour votre déploiement avec [!DNL Snowflake], contactez la personne chargée de votre transition Adobe.
 >
 
 ### Déploiement Campaign Grands comptes (FFDA) {#ac-deployment-ffda}
@@ -75,7 +75,7 @@ Dans un [déploiement Grands comptes (FFDA)](enterprise-deployment.md), [!DNL Ad
 
 Campaign v8 Enterprise présente le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud. Avec cette nouvelle architecture, le déploiement Campaign v8 Enterprise (FFDA) simplifie la gestion des données : aucun index n&#39;est requis sur la base de données cloud. Il vous suffit de créer les tables et de copier les données pour démarrer. La technologie de base de données cloud ne nécessite pas de maintenance spécifique pour garantir le niveau de performances attendu.
 
-![](assets/P4-architecture.png){zoomable="yes"}
+![Architecture FFDA de Campaign v8 : serveur d’applications, base de données cloud avec Snowflake, réplication Postgres, serveurs de diffusion](assets/P4-architecture.png){zoomable="yes"}
 
 
 ## Partager l’exécution d’une diffusion {#split}
@@ -97,7 +97,7 @@ Pour ce faire, des comptes externes supplémentaires avec le mode de routage **[
 * Partager la diffusion - iOS (splitDeliveryIOS)
 * Partager la diffusion - Android (splitDeliveryAndroid)
 
-![](assets/splitted-delivery.png)
+![Compte externe Fractionner la diffusion - E-mail : type de routage, canal e-mail, mode de diffusion de midsourcing, nom splitDeliveryE-mail](assets/splitted-delivery.png)
 
 >[!IMPORTANT]
 >
@@ -109,11 +109,11 @@ Pour que les comptes externes partagés soient le compte par défaut pour l’en
 
 1. Accédez au dossier **[!UICONTROL Ressources]** / **[!UICONTROL Modèles]** / **[!UICONTROL Modèles de diffusion]** et ouvrez le modèle de diffusion souhaité. Dans cet exemple, nous allons modifier le modèle de diffusion e-mail.
 
-   ![](assets/split-default-list.png)
+   ![Liste des modèles de diffusion dans Ressources, Modèles, avec le modèle de diffusion E-mail (courrier) sélectionné](assets/split-default-list.png)
 
 1. Cliquez sur le bouton **[!UICONTROL Propriétés]** et remplacez le fournisseur de routage par le compte externe de diffusion partagée correspondant.
 
-   ![](assets/split-default-delivery.png)
+   Boîte de dialogue des propriétés de la diffusion ![avec le champ Routage et la liste des comptes externes affichant SplitEmail](assets/split-default-delivery.png)
 
 1. Enregistrez vos modifications. Toutes les diffusions envoyées à l’aide du modèle utilisent désormais le mode de routage partagé par défaut.
 
@@ -127,7 +127,7 @@ In addition, you can select split external accounts as the default routing provi
 
 La messagerie transactionnelle (Message Center) est le module de Campaign conçu pour gérer les messages de déclenchement.
 
-Découvrez comment envoyer des messages transactionnels dans [cette section](../send/transactional.md).
+Découvrez comment envoyer des messages transactionnels dans les [messages transactionnels de Campaign](../send/transactional.md).
 
 En réponse à l’action d’un client sur un site web, un événement est envoyé à Campaign par l’intermédiaire d’une API REST et le modèle de message est renseigné avec les informations ou les données fournies par le biais de l’appel API. En outre, un message transactionnel est envoyé en temps réel au client. Ces messages peuvent être envoyés individuellement ou par lots via e-mail, SMS ou notifications push.
 
@@ -135,7 +135,7 @@ Dans cette architecture spécifique, la cellule d&#39;exécution est séparée d
 
 * L&#39;**instance de pilotage** (ou instance marketing) est utilisée par les spécialistes marketing et les équipes informatiques pour créer, configurer et publier des modèles de messages. Cette instance centralise également la surveillance et l’historique des événements.
 
-  Découvrez comment créer et publier des modèles de messages dans [cette section](../send/transactional.md).
+  Découvrez comment créer et publier des modèles de messages dans les [messages transactionnels de Campaign](../send/transactional.md).
 
 * L&#39;**instance d&#39;exécution** récupère les événements entrants (réinitialisation du mot de passe ou commandes à partir d&#39;un site web, par exemple) et envoie des messages personnalisés. Il peut y avoir plusieurs instances d&#39;exécution pour traiter les messages par l&#39;intermédiaire de la répartition de charge et mettre à l&#39;échelle le nombre d&#39;événements à traiter pour une disponibilité maximale.
 
@@ -143,7 +143,7 @@ Dans cette architecture spécifique, la cellule d&#39;exécution est séparée d
 >
 >L’instance de contrôle et la ou les instances d’exécution doivent être installées sur des machines différentes. Elles ne peuvent pas partager la même instance Campaign.
 
-![](assets/messagecenter_diagram.png)
+![Message Center : les événements du site web atteignent l&#39;instance de pilotage P et les instances d&#39;exécution E1 à EN, qui envoient des messages](assets/messagecenter_diagram.png)
 
 ### Authentification
 
@@ -156,4 +156,4 @@ Ensuite, avec le jeton de session fourni par l&#39;instance d&#39;exécution en 
 * Instances d&#39;exécution multiples
 Dans une architecture d&#39;exécution multi-cellules avec plusieurs instances d&#39;exécution derrière une répartition de charge, la méthode de connexion invoquée par l&#39;application externe passe par la répartition de charge. Pour cette raison, une authentification par jeton ne peut pas être utilisée. Une authentification par utilisateur/mot de passe est requise.
 
-En savoir plus sur les événements de messagerie transactionnelle sur [cette page](../send/event-processing.md).
+En savoir plus sur les événements de messagerie transactionnelle dans [Collecter et traiter les événements](../send/event-processing.md).

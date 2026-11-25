@@ -42,10 +42,10 @@ topic_v2:
     internal-label: Reporting
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 87%
+source-wordcount: '1093'
+ht-degree: 84%
 ---
 # Déploiement FFDA [!DNL Campaign] {#gs-ac-ffda}
 
@@ -76,11 +76,11 @@ Dans un [déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.m
 
 Campaign v8 Enterprise présente le concept de **Full Federated Data Access** (FFDA) : toutes les données sont désormais distantes sur la base de données cloud.
 
-Des API spécifiques sont disponibles pour gérer les données entre la base de données locale et la base de données cloud. Découvrez le fonctionnement de ces nouvelles API et comment les utiliser sur [cette page](new-apis.md).
+Des API spécifiques sont disponibles pour gérer les données entre la base de données locale et la base de données cloud. Découvrez le fonctionnement de ces nouvelles API et comment les utiliser dans [Les nouvelles API de Campaign v8](new-apis.md).
 
 La communication générale entre les serveurs et les processus est réalisée conformément au schéma suivant :
 
-![](assets/architecture.png)
+![Instance marketing avec Snowflake et PgSQL, instances Message Center et Mid-sourcing, consommateurs, tracking, étapes 1 à 4](assets/architecture.png)
 
 * Les modules de diffusion et de gestion des mails rebonds sont désactivés sur l&#39;instance.
 * L&#39;application est configurée pour déléguer les envois des messages à un serveur de mid-sourcing distant via des appels SOAP (sur HTTP ou HTTPS).

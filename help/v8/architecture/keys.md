@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 64%
+source-wordcount: '701'
+ht-degree: 55%
 ---
 # Gestion des clés et unicité {#key-management}
 
@@ -73,11 +73,11 @@ Ce workflow technique est disponible à partir du nœud **[!UICONTROL Administra
 
 Ce workflow vérifie tous les schémas personnalisés et intégrés afin de détecter les lignes dupliquées.
 
-![](assets/unicity-alerting-wf.png)
+![Workflow Alerte relative à l’unicité (ffdaUnicity) : vérifications de schéma, tests de lignes dupliquées détectées, activités Alerte, Fin et Nettoyage](assets/unicity-alerting-wf.png)
 
 Si le workflow **[!UICONTROL Alerte relative à l’unicité]** (ffdaUnicity) détecte certaines clés en double, elles sont ajoutées à une table **Audit de l’unicité** spécifique qui inclut le nom du schéma, le type de clé, le nombre de lignes impactées et la date. Vous pouvez accéder à des clés dupliquées à partir du nœud **[!UICONTROL Administration > Audit > Unicité des clés]**.
 
-![](assets/unicity-table.png)
+![Liste d&#39;unicité des clés avec ID de schéma, définition de clé, type de clé, valeur dupliquée, nombre dupliqué, date de création](assets/unicity-table.png)
 
 En tant qu’administrateur ou administratrice de base de données, vous pouvez utiliser une activité SQL pour supprimer les doublons ou contacter l’Assistance clientèle d’Adobe pour plus d’informations.
 
@@ -85,7 +85,7 @@ En tant qu’administrateur ou administratrice de base de données, vous pouvez 
 
 Une notification spécifique est envoyée au groupe d’opérateurs ou opératrices **[!UICONTROL Superviseurs de workflow]** lorsque des clés dupliquées sont détectées. Le contenu et l’audience de cette alerte peuvent être modifiés dans l’activité **Alerte** du workflow **[!UICONTROL Alerte relative à l’unicité]**.
 
-![](assets/wf-alert-activity.png)
+![Activité d’alerte dans Alerte relative à l’unicité, affectée au groupe Superviseurs de workflow avec le message Clés dupliquées](assets/wf-alert-activity.png)
 
 
 ## Mécanismes de sécurisation supplémentaires {#duplicates-guardrails}
@@ -94,25 +94,25 @@ Campaign est fourni avec un ensemble de nouveaux mécanismes de sécurisation qu
 
 >[!NOTE]
 >
->Ces mécanismes de sécurisation sont disponibles à partir de Campaign v8.3. Pour vérifier votre version, consultez [cette section](../start/compatibility-matrix.md)
+>Ces mécanismes de sécurisation sont disponibles à partir de Campaign v8.3. Pour vérifier votre version, reportez-vous à la [matrice de compatibilité de Campaign v8](../start/compatibility-matrix.md)
 
 ### Préparation de la diffusion {#remove-duplicates-delivery-preparation}
 
 Adobe Campaign supprime automatiquement tout UUID dupliqué d’une audience lors de la préparation de la diffusion. Ce mécanisme empêche toute erreur lors de la préparation d&#39;une diffusion. En tant qu&#39;utilisateur final, vous pouvez vérifier ces informations dans les logs de diffusion : certains destinataires peuvent être exclus de la cible principale en raison de clés dupliquées. Dans ce cas, l&#39;avertissement suivant s&#39;affiche : `Exclusion of duplicates (based on the primary key or targeted records)`.
 
-![](assets/exclusion-duplicates-log.png)
+![Log de diffusion avec la ligne Exclusion des doublons (en fonction de la clé primaire des enregistrements ciblés) mis en surbrillance par une flèche](assets/exclusion-duplicates-log.png)
 
 ### Mise à jour de données dans un workflow {#duplicates-update-data}
 
 Dans le contexte d’un déploiement [Entreprise (FFDA)](enterprise-deployment.md), vous ne pouvez pas sélectionner de clé interne (UUID) comme champ pour mettre à jour les données dans un workflow.
 
-![](assets/update-data-no-internal-key.png)
+![Activité Mise à jour des données avec le sélecteur de champ pour le destinataire (nms:recipient), où aucun champ de clé interne ne peut être sélectionné](assets/update-data-no-internal-key.png)
 
 ### Requête sur un schéma avec des doublons {#query-with-duplicates}
 
 Lorsqu&#39;un workflow démarre l&#39;exécution d&#39;une requête sur un schéma, Adobe Campaign vérifie si un enregistrement dupliqué est signalé dans la [table Audit d&#39;unicité](#unicity-wf). Si tel est le cas, le workflow consigne un avertissement, car l’opération suivante sur les données dupliquées peut avoir une incidence sur le résultat du workflow.
 
-![](assets/query-with-duplicates.png)
+![Le journal de workflow avec l&#39;avertissement Contrainte d&#39;unicité n&#39;a pas été respecté. Données dupliquées trouvées sur le schéma nms:recipient](assets/query-with-duplicates.png)
 
 Ce contrôle est effectué dans les activités de workflow suivantes :
 

@@ -24,10 +24,10 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 72%
+source-wordcount: '492'
+ht-degree: 63%
 ---
 # API de campagne FFDA spécifiques{#gs-new-api}
 
@@ -53,7 +53,7 @@ L&#39;API **xtk.session.ingest** est réservée à l&#39;insertion de données u
 
 Utilisez le code suivant dans une activité **Code JavaScript** pour insérer des données dans la base de données Cloud sans réconciliation :
 
-```
+```javascript
 var xmlStagingSampleTable = <sampleTableStg
                                 testcol1="testValue1"
                                 testcol2="testValue2"
@@ -70,7 +70,7 @@ Une fois le workflow exécuté, la table d&#39;évaluation est alimentée comme 
 1. Obtenez le jeton d&#39;authentification.
 1. Déclenchez l&#39;API. La payload est la suivante :
 
-   ```
+   ```xml
    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">
    <soapenv:Header/>
    <soapenv:Body>
@@ -90,7 +90,7 @@ Une fois le workflow exécuté, la table d&#39;évaluation est alimentée comme 
 
 1. L’UUID est renvoyé dans la réponse de SOAP :
 
-   ```
+   ```xml
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Body>
        <IngestResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns="urn:wpp:default">
@@ -102,7 +102,7 @@ Une fois le workflow exécuté, la table d&#39;évaluation est alimentée comme 
 
 Par conséquent, la table d&#39;évaluation est alimentée comme prévu.
 
-![](assets/no-reconciliation.png)
+![Contenu du tableau d&#39;exemple du schéma d&#39;évaluation (Staging) répertoriant quatre enregistrements avec les valeurs Test Col 1 et Test Col 2](assets/no-reconciliation.png)
 
 ### Insertion avec réconciliation
 
@@ -110,7 +110,7 @@ Par conséquent, la table d&#39;évaluation est alimentée comme prévu.
 
 Utilisez le code suivant dans une activité **Code JavaScript** pour insérer des données dans la base de données Cloud avec réconciliation :
 
-```
+```javascript
 var xmlStagingSampleTable = <sampleTableStg  _key="@id" id="ABC12345"
                               testcol1="testValue1"
                               testcol2="testValue2"
@@ -122,7 +122,7 @@ logInfo(strUuid);
 
 Une fois le workflow exécuté, la table d&#39;évaluation est alimentée comme prévu.
 
-![](assets/with-reconciliation.png)
+Le contenu de l&#39;exemple de table d&#39;évaluation du schéma d&#39;évaluation ![répertorie désormais six enregistrements, dont ABC12345 et ABDCD321](assets/with-reconciliation.png)
 
 
 **À partir d&#39;un appel SOAP**
@@ -130,7 +130,7 @@ Une fois le workflow exécuté, la table d&#39;évaluation est alimentée comme 
 1. Obtenez le jeton d&#39;authentification.
 1. Déclenchez l&#39;API. La payload est la suivante :
 
-   ```
+   ```xml
    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">
    <soapenv:Header/>
    <soapenv:Body>
@@ -150,7 +150,7 @@ Une fois le workflow exécuté, la table d&#39;évaluation est alimentée comme 
 
 1. Dans ce cas, l’UUID n’est pas renvoyé à la réponse, car il a été fourni dans la payload. La réponse est :
 
-   ```
+   ```xml
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Body>
        <IngestResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns="urn:wpp:default">
@@ -172,7 +172,7 @@ L&#39;API **xtk.session.IngestExt** est optimisée pour la mise à jour/suppress
 
 Utilisez le code suivant dans une activité **Code JavaScript** pour mettre à jour les données de la base de données Cloud :
 
-```
+```javascript
 var xmlStagingRecipient = <sampleTableStg  _key="@id" id="ABC12345"
                               testcol1="testValue A (updated)"
                               testcol2="testValue B (updated)"
@@ -183,14 +183,14 @@ xtk.session.IngestExt(xmlStagingRecipient);
 
 Une fois le workflow exécuté, la table d&#39;évaluation est mise à jour comme prévu.
 
-![](assets/updated-data.png)
+![Contenu de la table d&#39;évaluation où l&#39;enregistrement ABC12345 affiche désormais testValue A (mise à jour) et testValue B (mise à jour)](assets/updated-data.png)
 
 **À partir d&#39;un appel SOAP**
 
 1. Obtenez le jeton d&#39;authentification.
 1. Déclenchez l&#39;API. La payload est la suivante :
 
-   ```
+   ```xml
    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">
    <soapenv:Header/>
    <soapenv:Body>
@@ -210,7 +210,7 @@ Une fois le workflow exécuté, la table d&#39;évaluation est mise à jour comm
 
 1. La réponse SOAP est la suivante :
 
-   ```
+   ```xml
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Body>
        <IngestExtResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns="urn:wpp:default"/>
@@ -222,7 +222,7 @@ Par conséquent, la table d&#39;évaluation est mise à jour comme prévu.
 
 ## Gestion des abonnements {#sub-apis}
 
-La gestion des abonnements dans Campaign est décrite dans [cette page](../start/subscriptions.md).
+La gestion des abonnements dans Campaign est décrite dans la section [Gérer les abonnements et les désabonnements dans Campaign](../start/subscriptions.md).
 
 L&#39;insertion des données d&#39;abonnement et de désabonnement repose sur le [mécanisme d&#39;évaluation](staging.md) de la base de données locale de Campaign. Les informations sur les abonnés sont temporairement stockées dans des tables intermédiaires de la base de données locale. Le workflow de synchronisation envoie ces données de la base locale vers la base de données cloud. Par conséquent, les processus d&#39;abonnement et de désabonnement sont **asynchrones**. Les demandes d&#39;opt-in et d&#39;opt-out sont traitées toutes les heures par le biais d&#39;un workflow technique spécifique. [En savoir plus](replication.md#workflows)
 
