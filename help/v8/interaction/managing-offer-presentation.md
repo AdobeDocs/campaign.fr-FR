@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 98%
+source-wordcount: '1289'
+ht-degree: 84%
 ---
 # Gérer la présentation des offres{#managing-offer-presentation}
 
@@ -42,24 +42,24 @@ Interaction vous permet de contrôler le flux des propositions d’offre à l’
 1. Positionnez-vous au niveau du noeud **[!UICONTROL Administration]** > **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Gestion des typologies]** > **[!UICONTROL Règles de typologie]**.
 1. Créez une règle de typologie et sélectionnez le type **[!UICONTROL Présentation des offres]**.
 
-   ![](assets/offer_typology_001.png)
+   ![Nœud de règles de typologie avec un nouveau formulaire de règle et la liste Type de règle affichant la présentation de l&#39;offre](assets/offer_typology_001.png)
 
 1. Spécifiez éventuellement le canal sur lequel doit porter la règle.
 
-   ![](assets/offer_typology_002.png)
+   ![Liste des canaux de la règle de typologie avec Tous les canaux mis en surbrillance](assets/offer_typology_002.png)
 
 1. Configurez les critères d’application de la règle. Voir à ce sujet la section [Paramètres des règles de présentation](#presentation-rule-settings).
 1. Positionnez-vous au niveau du noeud **[!UICONTROL Administration]** > **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Gestion des typologies]** > **[!UICONTROL Typologies]** et créez une typologie destinée à regrouper toutes les règles de type **[!UICONTROL Présentation des offres]**.
 
-   ![](assets/offer_typology_003.png)
+   ![Nœud Typologies avec la typologie Offres sélectionnée et son onglet Général affiché](assets/offer_typology_003.png)
 
 1. Une fois la typologie créée, positionnez-vous au niveau des règles de typologie et regroupez-les sous la typologie que vous venez de créer.
 
-   ![](assets/offer_typology_004.png)
+   ![Onglet Typologies de la règle avec la boîte de dialogue Ajouter des typologies répertoriant la typologie Offres sélectionnée](assets/offer_typology_004.png)
 
 1. Au niveau de votre environnement d&#39;offres, référencez la typologie à l&#39;aide de la liste déroulante.
 
-   ![](assets/offer_typology_005.png)
+   ![Onglet Éligibilité de l’environnement - Visiteurs de l’environnement d’offres, liste de typologie de présentation des offres avec les offres](assets/offer_typology_005.png)
 
 ## Paramètres des règles de présentation {#presentation-rule-settings}
 
@@ -69,13 +69,13 @@ Les critères d&#39;application disponibles dans l&#39;onglet **[!UICONTROL Gén
 
 1. Dans votre règle de typologie, cliquez sur le lien **[!UICONTROL Editer les critères d&#39;application de la règle]** pour créer votre requête.
 
-   ![](assets/offer_typology_006.png)
+   ![Onglet Général d&#39;une règle de typologie avec le lien Modifier les conditions d&#39;application de la règle en surbrillance](assets/offer_typology_006.png)
 
 1. Dans la fenêtre de requête, vous pouvez appliquer un filtre sur les offres auxquelles vous souhaitez appliquer la règle de typologie.
 
    Vous pouvez par exemple sélectionner une catégorie d&#39;offres.
 
-   ![](assets/offer_typology_008.png)
+   ![Requête sur une catégorie égale à une catégorie d&#39;offres sélectionnée dans l&#39;arborescence des offres](assets/offer_typology_008.png)
 
 ### Dimensions des offres {#offer-dimensions}
 
@@ -83,7 +83,7 @@ Dans l&#39;onglet **[!UICONTROL Présentation des offres]**, vous devez spécifi
 
 La **[!UICONTROL Dimension de ciblage]** correspond à la table des destinataires (par défaut : `nms:recipients`) qui recevront les propositions d’offre. La **[!UICONTROL Dimension de stockage]** correspond à la table contenant l&#39;historique des propositions liées à la dimension de ciblage (par défaut : `nms:propositionRcp`).
 
-![](assets/offer_typology_009.png)
+![Onglet Présentation des offres avec les champs Dimension de ciblage et Dimension de stockage mis en surbrillance](assets/offer_typology_009.png)
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ La période débute **n** jours avant la date des propositions et prend fin **n*
 
 Utilisez les flèches du champ pour modifier le nombre de jours ou saisissez directement la durée souhaitée (par exemple : &quot;2j 6h&quot;).
 
-![](assets/offer_typology_010.png)
+![Onglet Présentation des offres avec la Période glissante, le champ Période concernée mis en surbrillance](assets/offer_typology_010.png)
 
 ### Nombre de propositions {#number-of-propositions}
 
@@ -108,7 +108,7 @@ Vous pouvez fixer le nombre maximum de propositions à faire avant d&#39;exclure
 
 Utilisez la flèche ascendante ou descendante pour modifier le nombre de propositions d&#39;offres.
 
-![](assets/offer_typology_011.png)
+![Onglet Présentation des offres avec le Nombre maximal de propositions, le champ Quantité mis en surbrillance](assets/offer_typology_011.png)
 
 ## Définir les propositions et les destinataires {#defining-propositions-and-recipients}
 
@@ -118,7 +118,7 @@ La section **[!UICONTROL Propositions à comptabiliser]** vous permet de précis
 
 Vous pouvez sélectionner des critères de filtrage pour exclure des propositions selon le canal, les offres impactées ou l&#39;état des propositions déjà effectuées.
 
-![](assets/offer_typology_014.png)
+![Section Propositions à comptabiliser avec sur le même canal uniquement, les filtres Offres et Statut des propositions mis en surbrillance](assets/offer_typology_014.png)
 
 Ces critères constituent les cas d&#39;application les plus courants d&#39;une règle de présentation. Si vous souhaitez utiliser d&#39;autres critères, vous pouvez créer une requête à l&#39;aide du lien **[!UICONTROL Limiter les propositions...]**. Voir à ce sujet la section [Créer une requête sur les propositions](#creating-a-query-on-propositions).
 
@@ -164,7 +164,7 @@ Ces critères constituent les cas d&#39;application les plus courants d&#39;une 
 
 Pour indiquer les destinataires, cliquez sur le lien **[!UICONTROL Editer la requête à partir de la dimension de ciblage...]**, puis sélectionnez les destinataires concernés par la règle.
 
-![](assets/offer_typology_012.png)
+![Assistant de modification de la requête de filtrage sélectionnant Destinataires inclus dans un dossier comme requête de dimension de ciblage](assets/offer_typology_012.png)
 
 ### Créer une requête sur les propositions {#creating-a-query-on-propositions}
 
@@ -172,4 +172,4 @@ Pour préciser les propositions à comptabiliser via une requête, cliquez sur l
 
 Dans l&#39;exemple ci-dessous, les propositions à comptabiliser au bout de deux présentations sont celles de la catégorie **Offres spéciales**, pour l&#39;emplacement **Centre d&#39;appels**, dont le poids est inférieur à **20**.
 
-![](assets/offer_typology_013.png)
+![Requête de limitation des propositions sur le poids, l&#39;emplacement et un poids inférieur à 20 pour que les propositions comptent](assets/offer_typology_013.png)

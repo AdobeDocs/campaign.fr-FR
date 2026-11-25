@@ -29,10 +29,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 64%
+source-wordcount: '204'
+ht-degree: 53%
 ---
 # Suivi des simulations{#simulation-tracking}
 
@@ -44,12 +44,12 @@ Les résultats de la simulation contiennent une répartition des propositions pa
 
 Vous pouvez conserver ces résultats et les exporter si nécessaire en créant un rapport d’analyse descriptive. Pour cela, cliquez sur le lien disponible dans la fenêtre des résultats.
 
-Reportez-vous à [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"} pour plus d’informations sur l’assistant d’analyse descriptive.
+Reportez-vous à [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"} pour plus d’informations sur l’assistant d’analyse descriptive.
 
-![](assets/offer_simulation_012.png)
+![Onglet Résultats de la simulation avec la répartition des propositions par offres et le lien Analyse descriptive des résultats](assets/offer_simulation_012.png)
 
 Un tableau croisé dynamique permet de visualiser rapidement la répartition des offres par rang. Comme tout rapport dans Adobe Campaign, il peut être exporté, imprimé, archivé ou affiché dans un navigateur web.
 
-Voir à ce propos [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}.
+Voir à ce propos [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}.
 
-![](assets/offer_simulation_013.png)
+![Tableau de bord de simulation, rapport Répartition des offres par rang, avec tableau de classement des offres, graphique en secteurs et barre d’outils d’exportation](assets/offer_simulation_013.png)

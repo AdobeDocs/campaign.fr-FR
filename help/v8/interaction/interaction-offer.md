@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: d027f76f86f34524ddf5b620de32cdcc98e60d21
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 90%
+source-wordcount: '1151'
+ht-degree: 70%
 ---
 # Création d’une offre
 
@@ -60,7 +60,7 @@ Vous pouvez désormais utiliser l&#39;onglet **[!UICONTROL Éligibilité]** pour
 
 Dans l&#39;onglet **[!UICONTROL Éligibilité]** de l&#39;offre, définissez la période d&#39;éligibilité. Utilisez les listes déroulantes pour sélectionner une date de début et une date de fin dans le calendrier.
 
-![](assets/offer_eligibility_create_002.png)
+![Onglet Éligibilité avec le calendrier déroulant des dates de début et de fin pour la période d&#39;éligibilité de l&#39;offre.](assets/offer_eligibility_create_002.png)
 
 En dehors de cette période, l&#39;offre ne sera pas sélectionnée. Si vous avez également paramétré des dates d&#39;éligibilité pour la catégorie d&#39;offre, la période la plus restrictive s&#39;applique.
 
@@ -70,11 +70,11 @@ Dans l&#39;onglet **[!UICONTROL Éligibilité]** de l&#39;offre, appliquez des f
 
 Pour cela, cliquez sur le lien **[!UICONTROL Édition de la requête]** et sélectionnez le filtre que vous souhaitez appliquer.
 
-![](assets/offer_eligibility_create_003.png)
+![Sélectionnez l&#39;assistant de sélection des conditions de filtrage du ciblage, ouvert à partir du lien Modifier la requête dans l&#39;onglet Éligibilité.](assets/offer_eligibility_create_003.png)
 
 Si des filtres prédéfinis ont déjà été créés, vous pouvez les sélectionner dans la liste des filtres utilisateur. [En savoir plus](interaction-predefined-filters.md)
 
-![](assets/offer_eligibility_create_004.png)
+![Liste des filtres utilisateur dans l&#39;assistant de ciblage, avec le filtre sélectionné appliqué et un aperçu des destinataires correspondants.](assets/offer_eligibility_create_004.png)
 
 ### Définissez le poids de l&#39;offre {#offer-weight}
 
@@ -92,11 +92,11 @@ Pour créer un poids dans une offre, procédez comme suit :
 
 1. Dans l&#39;onglet **[!UICONTROL Éligibilité]** de l&#39;offre, cliquez sur **[!UICONTROL Ajouter]**.
 
-   ![](assets/offer_weight_create_001.png)
+   ![Onglet Éligibilité avec le bouton Ajouter ouvrant la boîte de dialogue Poids pour créer un poids d&#39;offre.](assets/offer_weight_create_001.png)
 
 1. Modifiez le libellé et attribuez un poids. La valeur par défaut est 1.
 
-   ![](assets/offer_weight_create_006.png)
+   ![Boîte de dialogue Poids avec le champ Libellé et la valeur Poids dans la section Arbitrage.](assets/offer_weight_create_006.png)
 
    >[!CAUTION]
    >
@@ -104,19 +104,19 @@ Pour créer un poids dans une offre, procédez comme suit :
 
 1. Définissez des dates d&#39;éligibilité si vous souhaitez que le poids ne s&#39;applique que pendant une période donnée.
 
-   ![](assets/offer_weight_create_002.png)
+   ![Boîte de dialogue Poids avec date de début et date de fin définies dans la section Dates d&#39;éligibilité.](assets/offer_weight_create_002.png)
 
 1. Si besoin est, choisissez un emplacement auquel se limitera le poids.
 
-   ![](assets/offer_weight_create_003.png)
+   ![Boîte de dialogue Poids avec la liste déroulante Emplacement répertoriant les emplacements auxquels le poids peut être limité.](assets/offer_weight_create_003.png)
 
 1. Appliquez un filtre sur la cible.
 
-   ![](assets/offer_weight_create_004.png)
+   ![Boîte de dialogue de poids avec le lien Modifier la requête dans Filtres sur la cible mis en surbrillance.](assets/offer_weight_create_004.png)
 
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer le poids.
 
-   ![](assets/offer_weight_create_005.png)
+   ![Tableau de poids de l&#39;onglet Éligibilité répertoriant le nouveau poids Premium avec ses dates et son filtre.](assets/offer_weight_create_005.png)
 
    >[!NOTE]
    >
@@ -128,13 +128,13 @@ Une fois le paramétrage terminé, un résumé des règles d&#39;éligibilité e
 
 Pour le visualiser, cliquez sur le lien **[!UICONTROL Planning et règles d&#39;éligibilités de l&#39;offre]**.
 
-![](assets/offer_eligibility_create_005.png)
+![Tableau de bord des offres avec le lien Planification et règles d&#39;éligibilité mis en surbrillance.](assets/offer_eligibility_create_005.png)
 
 ## Créer le contenu de l&#39;offre {#creating-the-offer-content}
 
 Utilisez l&#39;onglet **[!UICONTROL Contenu]** pour définir le contenu de l&#39;offre.
 
-![](assets/offer_content_create_001.png)
+![Onglet Contenu de l&#39;offre avec les champs Titre, URL de destination, URL d&#39;image et éditeur de contenu HTML.](assets/offer_content_create_001.png)
 
 1. Définissez les différents paramètres du contenu de l&#39;offre.
 
@@ -143,7 +143,7 @@ Utilisez l&#39;onglet **[!UICONTROL Contenu]** pour définir le contenu de l&#39
    * **[!UICONTROL URL de l’image]** : indiquez une URL ou un chemin d’accès vers l’image de votre offre.
    * **[!UICONTROL Contenu HTML]** / **[!UICONTROL Contenu texte]** : saisissez le corps de votre offre dans l’onglet de votre choix. Pour générer le tracking, le **[!UICONTROL contenu HTML]** doit être constitué d&#39;éléments HTML intégrables dans un élément de type `<div>`. Par exemple, le résultat d&#39;un élément `<table>` dans la page HTML sera le suivant :
 
-   ```
+   ```xml
       <div> 
        <table>
         <tr>
@@ -158,13 +158,13 @@ Utilisez l&#39;onglet **[!UICONTROL Contenu]** pour définir le contenu de l&#39
       </div>
    ```
 
-   Découvrez comment définir l&#39;URL d&#39;acceptation dans [cette section](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted).
+   Découvrez comment définir l&#39;URL d&#39;acceptation dans l&#39;état [Offre lorsque la proposition est acceptée](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted).
 
-   ![](assets/offer_content_create_002.png)
+   ![Onglet Contenu renseigné avec un titre, une URL de destination et une URL d&#39;image, ainsi que le lien Définitions du contenu.](assets/offer_content_create_002.png)
 
    Pour retrouver les champs requis tels qu&#39;ils ont été définis lors du paramétrage des emplacements, cliquez sur le lien **[!UICONTROL Définitions du contenu]** pour afficher la liste. [En savoir plus](interaction-offer-spaces.md)
 
-   ![](assets/offer_content_create_003.png)
+   ![Boîte de dialogue Définitions du contenu répertoriant, pour chaque emplacement, les champs de contenu requis.](assets/offer_content_create_003.png)
 
    Dans notre exemple, l&#39;offre doit être constituée d&#39;un titre, d&#39;une image, d&#39;un contenu en HTML et d&#39;une URL de destination.
 
@@ -176,11 +176,11 @@ Pour cela :
 
 1. Cliquez sur l&#39;onglet **[!UICONTROL Aperçu]**.
 
-   ![](assets/offer_preview_create_001.png)
+   ![Onglet Aperçu de l&#39;offre répertoriant les représentations à prévisualiser pour chaque emplacement.](assets/offer_preview_create_001.png)
 
 1. Sélectionnez la représentation de l&#39;offre que vous souhaitez voir.
 
-   ![](assets/offer_preview_create_002.png)
+   ![Onglet Aperçu avec la représentation E-mail/clients développée pour afficher le contenu de l&#39;offre rendue.](assets/offer_preview_create_002.png)
 
 1. Si vous avez personnalisé le contenu de l&#39;offre, sélectionnez la cible de l&#39;offre afin de visualiser la personnalisation.
 
@@ -202,13 +202,13 @@ Creating hypotheses is detailed in [this page](../../automation/response/about-r
 
 Vous pouvez maintenant valider et activer l&#39;offre pour la rendre disponible dans l&#39;environnement **En ligne**.
 
-Pour plus d’informations, consultez [cette section](approving-and-activating-an-offer.md#approving-offer-content).
+Voir à ce sujet la section [Valider le contenu de l&#39;offre](approving-and-activating-an-offer.md#approving-offer-content).
 
 ## Gestion de la présentation des offres{#offer-presentation}
 
 Campaign vous permet de contrôler le flux des propositions d&#39;offres à l&#39;aide des règles de présentation. Ces règles, spécifiques à Campaign Interaction, sont des **règles de typologie**. Elles permettent d&#39;exclure les offres en fonction de l&#39;historique des propositions déjà faites à un destinataire. Elles sont référencées dans l&#39;environnement.
 
-Pour plus d’informations, consultez [cette section](managing-offer-presentation.md).
+Voir à ce sujet la section [Gestion de la présentation des offres](managing-offer-presentation.md).
 
 ## Simulation d’offres
 
@@ -216,4 +216,4 @@ Le module **Simulation** vous permet de tester la répartition des offres d&#39;
 
 La simulation prend en compte les contextes et les règles d&#39;éligibilité précédemment appliqués aux offres ainsi que leurs règles de présentation. Il est ainsi possible de tester et d&#39;affiner différentes versions de votre proposition sans utiliser effectivement une offre ou solliciter excessivement ou insuffisamment une cible. La simulation n&#39;a en effet aucun impact sur les destinataires ciblés.
 
-Pour plus d&#39;informations sur la simulation de l&#39;offre, consultez [cette section](about-offers-simulation.md).
+Pour plus d&#39;informations sur la simulation des offres, voir [À propos de la simulation des offres](about-offers-simulation.md).

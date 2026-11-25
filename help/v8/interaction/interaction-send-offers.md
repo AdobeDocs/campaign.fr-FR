@@ -24,10 +24,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1356'
-ht-degree: 88%
+source-wordcount: '1643'
+ht-degree: 73%
 ---
 # Envoi d&#39;une offre{#send}
 
@@ -41,37 +41,37 @@ Pour insérer des propositions d&#39;offres dans une diffusion, procédez comme 
 
 1. Dans la fenêtre de diffusion, cliquez sur l&#39;icône **Offres**.
 
-   ![](assets/offer_delivery_001.png)
+   ![Diffusion par e-mail avec le bouton Offres , ouvrant la boîte de dialogue Gestion des offres avec un champ Emplacement vide](assets/offer_delivery_001.png)
 
 1. Sélectionnez l&#39;emplacement correspondant à votre environnement d&#39;offres.
 
-   ![](assets/offer_delivery_002.png)
+   ![Liste déroulante d’emplacements dans la boîte de dialogue Gestion des offres répertoriant les emplacements d’e-mail disponibles](assets/offer_delivery_002.png)
 
 1. Choisissez la catégorie dont la ou les offres à présenter font partie ou un ou plusieurs thèmes pour affiner le choix des offres réalisé par le moteur. Il est recommandé de ne pas utiliser ces deux champs conjointement afin de ne pas surcharger les restrictions.
 
-   ![](assets/offer_delivery_003.png)
+   ![Boîte de dialogue Gestion des offres avec la liste déroulante Catégorie répertoriant les catégories du catalogue d&#39;offres](assets/offer_delivery_003.png)
 
-   ![](assets/offer_delivery_004.png)
+   ![Boîte de dialogue Gestion des offres avec le champ Thèmes renseigné](assets/offer_delivery_004.png)
 
 1. Indiquez le nombre d&#39;offres que vous souhaitez insérer dans le corps de la diffusion.
 
-   ![](assets/offer_delivery_005.png)
+   ![Boîte de dialogue Gestion des offres avec le champ Nombre de propositions par message défini sur 2](assets/offer_delivery_005.png)
 
 1. Sélectionnez l&#39;option **[!UICONTROL Exclure les destinataires non éligibles]**, si nécessaire. [En savoir plus](#parameters-for-calling-offer-engine)
 
-   ![](assets/offer_delivery_006.png)
+   ![Boîte de dialogue Gestion des offres avec l’option Exclure les destinataires non éligibles sélectionnée](assets/offer_delivery_006.png)
 
 1. Si besoin, sélectionnez l&#39;option **[!UICONTROL Ne rien afficher si aucune offre n&#39;est sélectionnée]**. [En savoir plus](#parameters-for-calling-offer-engine)
 
-   ![](assets/offer_delivery_007.png)
+   ![Boîte de dialogue Gestion des offres avec l’option Ne rien afficher si aucune offre n’est sélectionnée](assets/offer_delivery_007.png)
 
 1. Insérez les propriétés dans le contenu de la diffusion à l&#39;aide des champs de fusion. Le nombre de propositions disponibles dépend de la configuration de l&#39;appel au moteur et leur ordre dépend de la priorité des offres.
 
-   ![](assets/offer_delivery_008.png)
+   ![Chemin du menu de contenu de la diffusion, Propositions 2, Fonction de rendu, Rendu HTML](assets/offer_delivery_008.png)
 
 1. Finalisez le contenu, puis testez et envoyez votre diffusion.
 
-   ![](assets/offer_delivery_010.png)
+   ![Le contenu de diffusion par e-mail avec deux propositions comprend des scripts et le bouton Envoyer mis en surbrillance](assets/offer_delivery_010.png)
 
 
 ### Paramètres du moteur d&#39;offres {#parameters-for-calling-offer-engine}
@@ -97,7 +97,7 @@ L&#39;activité **Enrichissement** vous permet d&#39;ajouter des offres ou des l
 
 Vous pouvez par exemple enrichir les données d&#39;une requête sur les destinataires, avant une diffusion.
 
-![](assets/int_enrichment_offer1.png)
+![Workflow avec une activité Requête, Enrichissement et Diffusion Courrier liée par des transitions de résultat](assets/int_enrichment_offer1.png)
 
 Deux méthodes permettent de définir des propositions d&#39;offre.
 
@@ -112,18 +112,18 @@ Après avoir configuré votre activité **Requête** :
 1. Dans l&#39;onglet **[!UICONTROL Enrichissement]**, sélectionnez **[!UICONTROL Ajouter des données]**.
 1. Sélectionnez **[!UICONTROL Une proposition d&#39;offre]** dans les types de données à ajouter.
 
-   ![](assets/int_enrichment_offer2.png)
+   ![Assistant de données additionnelles avec l&#39;option Une proposition d&#39;offre sélectionnée](assets/int_enrichment_offer2.png)
 
 1. Indiquez un identifiant ainsi qu&#39;un libellé pour la proposition qui sera ajoutée.
 1. Définissez la sélection de l’offre. Deux options sont possibles :
 
    * **[!UICONTROL Rechercher la meilleure offre dans une catégorie]** : cochez cette option et définissez les paramètres de l’appel au moteur d’offres (emplacement, catégorie ou thématique, date de contact, nombre d’offres à conserver). Le moteur calculera automatiquement la ou les offres à ajouter en fonction de ces paramètres. Nous vous recommandons de renseigner soit le champ **[!UICONTROL Catégorie]**, soit le champ le **[!UICONTROL Thème]**, plutôt que les deux à la fois.
 
-     ![](assets/int_enrichment_offer3.png)
+     ![Étape de proposition d&#39;offre définie pour rechercher la meilleure offre dans une catégorie, avec un emplacement, une catégorie et des offres à conserver](assets/int_enrichment_offer3.png)
 
    * **[!UICONTROL Une offre prédéfinie]** : cochez cette option et définissez un emplacement, une offre précise, ainsi quʼune date de contact afin de directement paramétrer lʼoffre que vous souhaitez ajouter, sans appeler le moteur dʼoffres.
 
-     ![](assets/int_enrichment_offer4.png)
+     ![L’étape de proposition d’offre est définie sur une offre prédéfinie, avec les champs Emplacement et Offre](assets/int_enrichment_offer4.png)
 
 1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix. [En savoir plus](#offer-into-a-delivery)
 
@@ -141,11 +141,11 @@ Pour ce faire, procédez comme suit :
 1. Dans la fenêtre de sélection du type de données à ajouter, choisissez **[!UICONTROL Un lien]**.
 1. Sélectionnez le type du lien que vous souhaitez établir ainsi que sa cible. Dans ce cas, la cible est le schéma de l’offre.
 
-   ![](assets/int_enrichment_link1.png)
+   ![Étape de définition du lien avec un lien dont la cible est toujours disponible et le schéma Offres marketing comme cible](assets/int_enrichment_link1.png)
 
 1. Définissez la jointure entre les données de la table entrante dans l’activité d’enrichissement (ici la table de destinataire) et la table d’offre. Vous pouvez, par exemple, lier un code d’offre à une personne destinataire.
 
-   ![](assets/int_enrichment_link2.png)
+   ![Conditions de jointure de la définition de lien correspondant au champ source cryptedId au champ de code cible](assets/int_enrichment_link2.png)
 
 1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix. [En savoir plus](#offer-into-a-delivery)
 
@@ -166,11 +166,11 @@ Cependant, il est possible de stocker ces informations de la manière suivante 
 1. Créez un appel au moteur d’offres dans une activité d’enrichissement placée après une requête et avant une activité de diffusion. [En savoir plus](#specifying-an-offer-or-a-call-to-the-offer-engine)
 1. Dans la fenêtre principale de l&#39;activité, sélectionnez **[!UICONTROL Editer les données additionnelles]**.
 
-   ![](assets/ita_enrichment_rankweight_1.png)
+   ![Activité d&#39;enrichissement avec le lien Modifier les données additionnelles mis en surbrillance, répertoriant les données de proposition](assets/ita_enrichment_rankweight_1.png)
 
 1. Ajoutez les colonnes **[!UICONTROL @rank]** pour le rang et **[!UICONTROL @weight]** pour le poids des offres.
 
-   ![](assets/ita_enrichment_rankweight_2.png)
+   ![Boîte de dialogue Sélectionner des colonnes supplémentaires avec les colonnes de sortie Poids et Classement ajoutées sous la proposition](assets/ita_enrichment_rankweight_2.png)
 
 1. Validez votre ajout et enregistrez votre workflow.
 
@@ -184,7 +184,7 @@ Pour plus d&#39;informations sur l&#39;activité **Moteur d&#39;offres**, consul
 
 Cette activité fonctionne sur le même principe que l&#39;activité **Enrichissement** avec un appel au moteur, en enrichissant les données de la population entrante avec une offre calculée par le moteur, avant une diffusion.
 
-![](assets/int_offerengine_activity2.png)
+![Workflow avec une requête, un moteur d&#39;offres et une activité de diffusion Courrier liée par des transitions de résultat](assets/int_offerengine_activity2.png)
 
 Après avoir configuré votre activité **Requête** :
 
@@ -195,7 +195,7 @@ Après avoir configuré votre activité **Requête** :
    >
    >Si vous utilisez cette activité, seules les propositions utilisées dans la diffusion sont stockées.
 
-   ![](assets/int_offerengine_activity1.png)
+   ![Activité du moteur d&#39;offres avec l&#39;emplacement, la catégorie d&#39;offres et le nombre de propositions à calculer](assets/int_offerengine_activity1.png)
 
 1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix. [En savoir plus](#inserting-an-offer-proposition-into-a-delivery)
 
@@ -214,7 +214,7 @@ Pour cela :
    * Définissez la population du sous-ensemble grâce aux règles de filtrage et de limitation disponibles.
    * Sélectionnez ensuite l’offre que vous souhaitez présenter au sous-ensemble. Les offres disponibles sont celles éligibles sur l’environnement d’offre sélectionné à l’étape précédente.
 
-     ![](assets/int_offer_per_cell1.png)
+     ![Activité Sous-ensemble avec un emplacement E-mail et la liste déroulante Offre répertoriant les offres disponibles](assets/int_offer_per_cell1.png)
 
 1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix.
 

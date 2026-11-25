@@ -21,20 +21,20 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 66%
+source-wordcount: '209'
+ht-degree: 51%
 ---
 # Présentation de la meilleure offre{#interaction-present-offers}
 
 Les offres peuvent être présentées à divers emplacements utilisant [un canal entrant ou sortant](interaction-architecture.md#interaction-types). Ce chapitre présente certaines fonctionnalités spécifiques aux canaux entrants.
 
-![](assets/inbound-interactions.png)
+![Flux entrant : parcourez un site, identifiez le visiteur par cookie ou connexion, le moteur d’offres sélectionne la meilleure offre du catalogue](assets/inbound-interactions.png)
 
 Pour qu&#39;une offre puisse être sélectionnée par le moteur d&#39;offres, elle doit avoir été validée et être disponible dans un environnement en ligne.
 
-Pour plus d’informations, consultez [cette section](approving-and-activating-an-offer.md#approving-offer-content).
+Voir à ce sujet la section [Valider le contenu de l&#39;offre](approving-and-activating-an-offer.md#approving-offer-content).
 
 Dans le contexte d’un contact entrant, l’utilisateur qui navigue sur la page peut être identifié par le site web ou non. Le moteur d&#39;offres présente des offres différentes selon qu&#39;il s&#39;agit de profils identifiés ou de profils anonymes.
 
@@ -44,4 +44,4 @@ Avant de pouvoir proposer des offres sur un canal entrant, vous devez configurer
 >
 >Dans le cas d’interactions entrantes, il est nécessaire de paramétrer spécifiquement le moteur d’offres pour proposer et mettre à jour une ou plusieurs offres.
 >
->Vous devez également activer le mode unitaire sur vos emplacements. Pour plus d’informations, consultez [cette page](interaction-offer-spaces.md).
+>Vous devez également activer le mode unitaire sur vos emplacements. Pour plus d&#39;informations, consultez la section [Emplacements Interaction de Campaign](interaction-offer-spaces.md).

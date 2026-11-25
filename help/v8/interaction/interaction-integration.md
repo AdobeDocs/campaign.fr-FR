@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1483'
-ht-degree: 96%
+source-wordcount: '1591'
+ht-degree: 87%
 ---
 # Ajouter une offre sur une page web{#add-an-offer-in-web}
 
@@ -35,7 +35,7 @@ Pour appeler le moteur d&#39;offres dans une page web, insérez un appel à un c
 
 L&#39;URL d&#39;appel au script est de la forme suivante :
 
-```
+```xml
 <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=" type="text/javascript"></script>
 ```
 
@@ -61,13 +61,13 @@ La page HTML doit inclure un élément avec un attribut @id avec la valeur du no
 
 Dans l&#39;exemple, l&#39;attribut @id reçoit la valeur &quot;i_SPC12&quot; où &quot;SPC12&quot; est le nom interne de l&#39;emplacement précédemment créé :
 
-```
+```xml
 <div id="i_SPC12"></div>
 ```
 
 Dans l&#39;exemple, l&#39;URL d&#39;appel au script est la suivante (&quot;OE3&quot; est le nom interne de l&#39;environnement en ligne) :
 
-```
+```xml
 <script id="interactionProposalScript" src="https://instance.adobe.org:8080/nl/interactionProposal.js?env=OE3" type="text/javascript"></script>
 ```
 
@@ -83,7 +83,7 @@ Ce comportement permet d&#39;avoir plusieurs emplacements sur la même page gér
 
 Le contenu du rendu de l&#39;offre est renvoyé à la page HTML par le moteur d&#39;offres :
 
-```
+```xml
 <div id="banner_header">
  <div id="i_SPC12">
    <table>
@@ -111,7 +111,7 @@ Pour présenter une offre à un contact identifié, le processus est similaire �
 
 Dans le contenu de la page web, vous devez ajouter le script suivant qui permettra d&#39;identifier le contact lors de l&#39;appel au moteur d&#39;offres :
 
-```
+```xml
 <script type="text/javascript">
   interactionTarget = <contact_identifier>;
 </script>
@@ -119,7 +119,7 @@ Dans le contenu de la page web, vous devez ajouter le script suivant qui permett
 
 1. Dans l&#39;emplacement destiné à être appelé par la page web, cliquez sur **[!UICONTROL Paramètres avancés]** et ajoutez une ou plusieurs clés d&#39;identification.
 
-   ![](assets/interaction_htmlmode_001.png)
+   ![Onglet Identification de la cible avec le chemin de clé @email et le champ Nom ajouté comme deuxième clé](assets/interaction_htmlmode_001.png)
 
    Dans cet exemple, la clé d&#39;identification est composite puisqu&#39;elle s&#39;appuie à la fois sur l&#39;email et le nom du destinataire.
 
@@ -127,7 +127,7 @@ Dans le contenu de la page web, vous devez ajouter le script suivant qui permett
 
    Dans l&#39;exemple suivant, le contact s&#39;est identifié sur le site web et a été reconnu lors de l&#39;appel au moteur d&#39;offres via son adresse e-mail et son nom de famille.
 
-   ```
+   ```xml
    <script type="text/javascript">
      interactionTarget = myEmail|myName;
    </script>
@@ -141,7 +141,7 @@ Vous pouvez utiliser une fonction de rendu afin que la représentation HTML de l
 1. Sélectionnez **[!UICONTROL Surcharger la fonction de rendu HTML]**.
 1. Dans l&#39;onglet **[!UICONTROL Rendu HTML]**, insérez les variables correspondant aux champs définis pour le contenu de l&#39;offre dans l&#39;emplacement.
 
-   ![](assets/interaction_htmlmode_002.png)
+   ![Boîte de dialogue Modifier les fonctions de l&#39;emplacement, onglet Rendu HTML , avec l&#39;option et le script Surcharger la fonction de rendu HTML](assets/interaction_htmlmode_002.png)
 
    Dans cet exemple, l&#39;offre s&#39;affiche sous forme de bannière dans une page web et est composée d&#39;une image cliquable sous laquelle se trouve un titre conformément aux champs définis dans le contenu de l&#39;offre.
 
@@ -153,7 +153,7 @@ Le module **Interaction** de Campaign vous permet de renvoyer un nœud XML à la
 
 L&#39;appel au moteur d&#39;offres est de la forme suivante :
 
-```
+```xml
 <script type="text/javascript" id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=&cb="></script>
 ```
 
@@ -171,7 +171,7 @@ L&#39;appel au moteur d&#39;offres est de la forme suivante :
 
 Le noeud XML retourné est de la forme suivante :
 
-```
+```xml
 <propositions>
  <proposition id="" offer-id="" weight="" rank="" space="" div=""> //proposition identifiers
    ...XML content defined in Adobe Campaign...
@@ -184,9 +184,9 @@ Le cas d&#39;utilisation suivant décrit les paramétrages à effectuer dans Ado
 
 1. **Créer un environnement et un emplacement**
 
-   Pour plus d&#39;informations sur la création d&#39;un environnement, consultez [cette page](interaction-env.md).
+   Pour plus d&#39;informations sur la création d&#39;un environnement, consultez la section [Utiliser les environnements d&#39;interaction de Campaign](interaction-env.md).
 
-   La création d&#39;un emplacement est détaillée sur [cette page](interaction-offer-spaces.md).
+   Pour plus d&#39;informations sur la création d&#39;un emplacement, consultez la section [Emplacements Interaction de Campaign](interaction-offer-spaces.md).
 
 1. **Étendre le schéma des offres pour ajouter de nouveaux champs**
 
@@ -194,7 +194,7 @@ Le cas d&#39;utilisation suivant décrit les paramétrages à effectuer dans Ado
 
    Le nom du schéma dans l’exemple est **cus:offer**.
 
-   ```
+   ```xml
    <srcSchema _cs="Marketing offers (cus)" created="2013-01-18 17:14:20.762Z" createdBy-id="0"
               desc="" entitySchema="xtk:srcSchema" extendedSchema="nms:offer" img="nms:offer.png"
               label="Marketing offers" labelSingular="Marketing offers" lastModified="2013-01-18 15:20:18.373Z"
@@ -231,7 +231,7 @@ Le cas d&#39;utilisation suivant décrit les paramétrages à effectuer dans Ado
 
    Insérer dans la partie intitulée &quot;Views&quot;, les deux nouveaux champs avec le contenu suivant :
 
-   ```
+   ```xml
    <input label="Title 2" margin-right="5" prebuildSubForm="false" type="subFormLink" xpath="title2_jst">
         <form label="Edit title 2" name="editForm" nothingToSave="true">
             <input nolabel="true" toolbarAlign="horizontal" type="jstEdit" xpath="." xpathInsert="/ignored/customizeTitle2">
@@ -256,7 +256,7 @@ Le cas d&#39;utilisation suivant décrit les paramétrages à effectuer dans Ado
 
    Mettre en commentaire le champ URL de destination :
 
-   ![](assets/interaction_xmlmode_form_001.png)
+   ![Formulaire de représentation de l&#39;offre XML avec le bloc de saisie de l&#39;URL de destination commenté](assets/interaction_xmlmode_form_001.png)
 
    >[!CAUTION]
    >
@@ -264,17 +264,17 @@ Le cas d&#39;utilisation suivant décrit les paramétrages à effectuer dans Ado
 
    Le rendu dans le formulaire des représentations des offres est le suivant :
 
-   ![](assets/interaction_xmlmode_form.png)
+   ![Onglet Contenu de l&#39;offre avec des champs de titre, d&#39;URL de destination et d&#39;URL d&#39;image vides au-dessus de l&#39;éditeur de contenu HTML](assets/interaction_xmlmode_form.png)
 
    Les champs **[!UICONTROL Titre 2]** et **[!UICONTROL Prix]** ont été ajoutés et le champ **[!UICONTROL URL de destination]** n&#39;est plus affiché.
 
 1. **Création d&#39;une offre**
 
-   Pour plus d&#39;informations sur la création d&#39;offres, consultez [cette page](interaction-offer.md).
+   Pour plus d&#39;informations sur la création d&#39;offres, consultez la section [Offre d&#39;interaction de Campaign](interaction-offer.md).
 
    Dans le cas d&#39;utilisation suivant, l&#39;offre est remplie de cette manière :
 
-   ![](assets/interaction_xmlmode_offer.png)
+   ![Onglet Contenu de l’offre avec le titre, l’URL de destination et l’URL de l’image renseignés et le contenu HTML utilisant recipient.firstName](assets/interaction_xmlmode_offer.png)
 
 1. **Valider l&#39;offre**
 
@@ -284,7 +284,7 @@ Le cas d&#39;utilisation suivant décrit les paramétrages à effectuer dans Ado
 
    L&#39;appel au moteur d&#39;offres dans la page HTML est le suivant :
 
-   ```
+   ```xml
    <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=OE7&cb=alert" type="text/javascript">
    ```
 
@@ -294,7 +294,7 @@ Le cas d&#39;utilisation suivant décrit les paramétrages à effectuer dans Ado
 
    Le nœud XML renvoyé par le moteur d&#39;offres a la forme suivante :
 
-   ```
+   ```xml
    <propositions>
     <proposition id="a28002" offer-id="10322005" weight="1" rank="1" space="SPC14" div="i_SPC14">
      <xmlOfferView>
@@ -320,14 +320,14 @@ Il est possible d&#39;utiliser une fonction de rendu XML pour créer une présen
 
    La fonction peut ressembler à l&#39;exemple ci-dessous :
 
-   ```
+   ```javascript
    function (proposition) {
      delete proposition.@id;
      proposition.@newAttribute = "newValue";
    } 
    ```
 
-![](assets/interaction_xmlmode_001.png)
+![Boîte de dialogue Modifier les fonctions de l&#39;emplacement, onglet Rendu XML, avec l&#39;option et le script Surcharger la fonction de rendu XML](assets/interaction_xmlmode_001.png)
 
 ## Configuration d&#39;une intégration SOAP
 
@@ -367,7 +367,7 @@ Ajoutez la commande **nms:interaction#UpdateStatus** à l’URL, puis les param�
 
 Voici un exemple de code pour un appel SOAP :
 
-```
+```html
 <%
   var space = request.parameters.sp
   var cnx = new HttpSoapConnection(

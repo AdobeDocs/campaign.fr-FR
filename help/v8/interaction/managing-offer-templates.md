@@ -23,10 +23,10 @@ feature_v2:
     internal-label: Offers
   - id: baf8e746-117b-5e73-b179-0a83edc0295f
     internal-label: Templates
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 93%
+source-wordcount: '211'
+ht-degree: 76%
 ---
 # Gérer les modèles d&#39;offre{#managing-offer-templates}
 
@@ -41,7 +41,7 @@ Afin de créer un modèle d&#39;offre, voici la marche à suivre :
 1. Allez sur **Ressources** > **Modèles** > **Modèles d&#39;offre**.
 1. Cliquez sur l&#39;icône **Nouveau**.
 
-   ![](assets/offer_model_001.png)
+   ![Dossier de modèles d&#39;offres dans l&#39;Explorateur avec le bouton Nouveau en surbrillance et le nouvel onglet Général de l&#39;offre](assets/offer_model_001.png)
 
 1. Paramétrez votre modèle de la même manière qu&#39;une offre classique, puis sauvegardez-le avec le bouton **Enregistrer**.
 
@@ -52,10 +52,10 @@ Afin de dupliquer un modèle d&#39;offre (d&#39;usine ou non), voici la marche �
 1. Allez sur **Ressources > Modèles > Modèles d&#39;offre**.
 1. Cliquez avec le bouton droit de la souris sur le modèle que vous souhaitez dupliquer et sélectionnez **Dupliquer** dans le menu déroulant.
 
-   ![](assets/offer_model_002.png)
+   ![Menu contextuel des modèles d&#39;offre avec la commande Dupliquer mise en surbrillance](assets/offer_model_002.png)
 
 1. Modifiez si besoin les paramètres que vous souhaitez voir apparaître dans le modèle, puis sauvegardez ce modèle en cliquant sur **Enregistrer**.
 
 Ce modèle sera désormais proposé lors de la création d&#39;une offre.
 
-![](assets/offer_modelcreated_001.png)
+![Boîte de dialogue de sélection des offres marketing dans le dossier Modèles d’offres répertoriant deux modèles d’offres](assets/offer_modelcreated_001.png)

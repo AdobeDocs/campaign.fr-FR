@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 92%
+source-wordcount: '519'
+ht-degree: 79%
 ---
 # Utilisation des environnements{#work-with-environments}
 
@@ -41,7 +41,7 @@ Interaction fonctionne avec deux types d&#39;environnements d&#39;offres :
 * Des environnements d’offres **[!UICONTROL Conception]**, dans lesquels les offres sont en cours de création et peuvent être modifiées. Ces offres ne sont pas encore passées par un cycle de validation et ne sont donc pas diffusées aux personnes contacts.
 * Des environnements d’offres **[!UICONTROL En ligne]**, qui contiennent les offres approuvées telles qu’elles sont présentées aux personnes contacts. Les offres contenues dans ces environnements sont en lecture seule.
 
-![](assets/offer_environments_overview_001.png)
+![Arborescence de l&#39;Explorateur avec des environnements d&#39;offres en édition et en ligne, chacun avec des emplacements et des dossiers d&#39;administration.](assets/offer_environments_overview_001.png)
 
 Chaque environnement **[!UICONTROL Conception]** est lié à un environnement **[!UICONTROL En ligne]**. Lorsqu’une offre est terminée, son contenu et ses règles d’éligibilité sont soumis à un cycle de validation. Lorsque le cycle de validation est complet, l’offre concernée est automatiquement déployée dans l’environnement **[!UICONTROL En ligne]**. Dès lors, elle est disponible pour être diffusée.
 
@@ -51,7 +51,7 @@ Par défaut, Campaign comprend un environnement **[!UICONTROL En édition]** et 
 >
 >Pour cibler la table des destinataires, vous devez utiliser l&#39;assistant de mapping de ciblage pour créer les environnements. [En savoir plus](#creating-an-offer-environment).
 
-![](assets/offer_environments_overview_002.png)
+![Onglet Général de l’environnement en édition avec le Type d’édition et son champ Environnement en ligne lié en surbrillance.](assets/offer_environments_overview_002.png)
 
 Les chargés de diffusion peuvent uniquement afficher l&#39;environnement **[!UICONTROL En ligne]** et exploiter les offres pour les diffuser. Les chargés d&#39;offres peuvent consulter et utiliser l&#39;environnement **[!UICONTROL En édition]**, et consulter l&#39;environnement **[!UICONTROL En ligne]**. [En savoir plus](interaction-operators.md)
 
@@ -63,11 +63,11 @@ Procédez comme suit :
 
 1. Accédez à **[!UICONTROL Administration]** > **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Mappings de ciblage]**, cliquez avec le bouton droit sur le mapping de ciblage à utiliser et sélectionnez **[!UICONTROL Actions]** > **[!UICONTROL Modifier les options de la dimension de ciblage]**.
 
-   ![](assets/offer_env_anonymous_001.png)
+   ![Mappings de ciblage répertoriés avec le menu Actions et Modifiez les options de la dimension de ciblage sélectionnée.](assets/offer_env_anonymous_001.png)
 
 1. Cliquez sur **[!UICONTROL Suivant]**, sélectionnez l&#39;option **[!UICONTROL Générer un schéma de stockage pour les propositions]** et cliquez sur **[!UICONTROL Enregistrer]**.
 
-   ![](assets/offer_env_anonymous_002.png)
+   ![Étape Extensions de l&#39;assistant avec Générer un schéma de stockage pour les propositions sélectionnées.](assets/offer_env_anonymous_002.png)
 
    >[!NOTE]
    >
@@ -81,7 +81,7 @@ Cette option vous permet d’activer les fonctions spécifiques aux interactions
 
 Vous pouvez par exemple lier un emplacement d&#39;environnement de destinataire (contact identifié) à un emplacement correspondant d&#39;environnement de visiteur (contact non identifié). Ainsi, différentes offres seront mises à la disposition du contact, en fonction du caractère identifié ou non de ce dernier. Voir à ce sujet la section [Créer des emplacements](interaction-offer-spaces.md).
 
-![](assets/offer_env_anonymous_003.png)
+![Environnements en ligne et en édition de visiteurs, avec l&#39;option dédiée aux interactions anonymes entrantes cochée.](assets/offer_env_anonymous_003.png)
 
 >[!NOTE]
 >

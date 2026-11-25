@@ -24,10 +24,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 89%
+source-wordcount: '1067'
+ht-degree: 73%
 ---
 # Création d’emplacements d’offres{#creating-offer-spaces}
 
@@ -37,27 +37,27 @@ En tant qu&#39;**administrateur technique**, vous pouvez créer des emplacements
 
 Le rendu HTML est créé à partir d&#39;une fonction de rendu. L&#39;ordre des champs définis dans la fonction de rendu doit être identique à celui paramétré dans le contenu.
 
-![](assets/offer_space_create_009.png)
+![Propriétés de l&#39;emplacement avec les champs obligatoires Image URL, Destination URL, Titre et une fonction de rendu HTML correspondante](assets/offer_space_create_009.png)
 
 Pour créer un nouvel emplacement, procédez comme suit :
 
 1. Dans la liste des emplacements, cliquez sur **[!UICONTROL Nouveau]**.
 
-   ![](assets/offer_space_create_001.png)
+   ![Liste des emplacements avec le bouton Nouveau en surbrillance et emplacement sélectionné par e-mail](assets/offer_space_create_001.png)
 
 1. Sélectionnez le canal de votre choix et modifiez le libellé de l&#39;emplacement.
 
-   ![](assets/offer_space_create_002.png)
+   ![Onglet Propriétés de l’emplacement avec le Libellé défini sur E-mail / clients et le Canal défini sur E-mail](assets/offer_space_create_002.png)
 
 1. Cochez l&#39;option **[!UICONTROL Activer le mode unitaire]**.
 
 1. Dans la fenêtre **[!UICONTROL Champs de contenu]**, cliquez sur **[!UICONTROL Ajouter]**.
 
-   ![](assets/offer_space_create_003.png)
+   ![Propriétés de l&#39;emplacement avec le bouton d&#39;ajout en regard de la liste des champs de contenu de l&#39;offre](assets/offer_space_create_003.png)
 
 1. Depuis le noeud **[!UICONTROL Contenu]** sélectionnez successivement les champs dans l&#39;ordre suivant : **[!UICONTROL Titre]**, puis **[!UICONTROL URL de l&#39;image]**, puis **[!UICONTROL Contenu HTML]**, puis **[!UICONTROL URL de destination]**.
 
-   ![](assets/offer_space_create_004.png)
+   ![Sélectionnez une boîte de dialogue d&#39;expression répertoriant les champs de contenu, tels que l&#39;URL de l&#39;image, le contenu texte et le titre](assets/offer_space_create_004.png)
 
 1. Cochez l&#39;option **[!UICONTROL Obligatoire]** afin de rendre chaque champ obligatoire.
 
@@ -65,7 +65,7 @@ Pour créer un nouvel emplacement, procédez comme suit :
    >
    >Cette option est utilisée lors de la prévisualisation et rend les emplacements non valides lors de la publication si l&#39;un des champs obligatoires est absent de l&#39;offre. Toutefois, si une offre est déjà en ligne sur un emplacement, ces critères ne sont pas pris en compte.
 
-   ![](assets/offer_space_create_005.png)
+   ![Liste des champs de contenu de l&#39;offre avec le titre, l&#39;URL de l&#39;image, le contenu HTML et l&#39;URL de destination, tous obligatoires](assets/offer_space_create_005.png)
 
 1. Cliquez sur **[!UICONTROL Editer les fonctions]** pour créer une fonction de rendu.
 
@@ -73,12 +73,12 @@ Pour créer un nouvel emplacement, procédez comme suit :
 
    **Remarque** - Le format XML est limité aux interactions entrantes qui ne sont pas disponibles dans cette version du produit. [En savoir plus](../start/v7-to-v8.md#gs-unavailable-features)
 
-   ![](assets/offer_space_create_006.png)_
+   ![Propriétés de l&#39;emplacement avec le lien Modifier les fonctions sous Fonctions de rendu en surbrillance](assets/offer_space_create_006.png)_
 
 1. Positionnez-vous sur l&#39;onglet **[!UICONTROL Rendu HTML]** et sélectionnez **[!UICONTROL Surcharger la fonction de rendu HTML]**.
 1. Insérez votre fonction de rendu.
 
-   ![](assets/offer_space_create_007.png)
+   ![onglet de rendu HTML avec l’option Surcharger la fonction de rendu HTML et un exemple de fonction](assets/offer_space_create_007.png)
 
 ## États de la proposition d&#39;offre {#offer-proposition-statuses}
 
@@ -116,7 +116,7 @@ Pour ce faire, procédez comme suit :
 1. Positionnez-vous dans l&#39;onglet **[!UICONTROL Stockage]** de l&#39;emplacement de votre choix.
 1. Sélectionnez l&#39;état à appliquer lors de la création de la proposition.
 
-   ![](assets/offer_update_status_001.png)
+   ![Onglet Stockage avec la liste Statut Sur proposition ouverte et le statut Présenté sélectionné](assets/offer_update_status_001.png)
 
 ### État de l&#39;offre à l&#39;acceptation de la proposition {#configuring-the-status-when-the-proposition-is-accepted}
 
@@ -127,20 +127,20 @@ Pour ce faire, procédez comme suit :
 1. Positionnez-vous dans l&#39;onglet **[!UICONTROL Stockage]** de l&#39;emplacement de votre choix.
 1. Sélectionnez l&#39;état que vous souhaitez appliquer à la proposition lorsqu&#39;elle est acceptée.
 
-   ![](assets/offer_update_status_002.png)
+   ![Onglet Stockage avec la liste En cas d&#39;acceptation Statut ouvert et le statut Accepté sélectionné](assets/offer_update_status_002.png)
 
 
 **Interaction entrante**
 
 L’onglet **[!UICONTROL Stockage]** vous permet de définir les statuts des propositions d’offre **proposées** et **acceptées** uniquement. Dans le cas d&#39;une interaction entrante, le statut des propositions d&#39;offre doit être spécifié directement dans l&#39;URL d&#39;appel du moteur d&#39;offres, plutôt que via l&#39;interface. Vous serez ainsi en mesure de spécifier le statut à appliquer dans d’autres cas, par exemple si une proposition d’offre est rejetée.
 
-```
+```xml
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
 ```
 
 Par exemple, la proposition (identifiant **40004**) correspondant à l’offre **Assurance habitation** et diffusée sur la page du site **Neobank** contient l’URL suivante :
 
-```
+```xml
 <BASE_URL>?a=UpdateStatus&p=<40004>&st=<3>&r=<"http://www.neobank.com/insurance/subscribe.html">
 ```
 
@@ -150,13 +150,13 @@ Dès lors qu&#39;un visiteur clique sur l&#39;offre, et donc sur l&#39;URL, le s
 >
 >Si vous souhaitez indiquer un autre statut dans l’URL (par exemple, si une proposition d’offre est refusée), utilisez la valeur correspondant au statut souhaité. Exemple : **[!UICONTROL Rejetée]** = « 5 », **[!UICONTROL Présentée]** = « 1 », etc.
 >
->Les statuts et leurs valeurs peuvent être récupérés dans le schéma de données **[!UICONTROL Propositions d’offres (nms)]**. Pour plus d’informations, consultez [cette page](../dev/create-schema.md).
+>Les statuts et leurs valeurs peuvent être récupérés dans le schéma de données **[!UICONTROL Propositions d’offres (nms)]**. Pour plus d&#39;informations, consultez la section [Créer un schéma dans Campaign](../dev/create-schema.md).
 
 **Interaction sortante**
 
 Vous pouvez appliquer automatiquement l&#39;état **[!UICONTROL Intéressante]** à une proposition d&#39;offre lorsque la diffusion contient un lien. Ajoutez simplement la valeur **_urlType=&quot;11&quot;** au lien :
 
-```
+```xml
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>
 ```
 
@@ -164,13 +164,13 @@ Vous pouvez appliquer automatiquement l&#39;état **[!UICONTROL Intéressante]**
 
 Dans l&#39;onglet **[!UICONTROL Aperçu]**, vous pouvez visualiser les offres auxquelles le destinataire est éligible via une méthode sélectionnée. Dans l&#39;exemple ci-dessous, le destinataire est éligible à trois propositions d&#39;offres par mail.
 
-![](assets/offer_space_overview_002.png)
+![Onglet Aperçu de l’emplacement avec trois offres éligibles classées par poids et le contenu de l’offre rendu](assets/offer_space_overview_002.png)
 
 Dans le cas où le destinataire n&#39;est éligible à aucune offre, la prévisualisation vous permet d&#39;en faire la vérification.
 
-![](assets/offer_space_overview_001.png)
+![Onglet Aperçu de l’emplacement affichant le message Aucune offre n’est éligible](assets/offer_space_overview_001.png)
 
 
 L’aperçu peut ignorer les contextes lorsqu’ils sont limités à un espace. C’est le cas lorsque le schéma d’interaction a été étendu afin d’ajouter des champs référencés dans un espace utilisant un canal entrant.
 
-Pour en savoir plus à ce sujet, consultez cet exemple dans [cette section](extension-example.md).
+Pour en savoir plus à ce sujet, consultez cet exemple dans [Exemple d&#39;extension](extension-example.md).

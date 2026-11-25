@@ -25,10 +25,10 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 90%
+source-wordcount: '1273'
+ht-degree: 82%
 ---
 # Bonnes pratiques relatives aux interactions {#interaction-best-practices}
 
@@ -77,13 +77,13 @@ Lors de la sélection des offres dans une activité **Enrichissement**, vous pou
 
 Dans l&#39;exemple ci-dessous, l&#39;emplacement d&#39;offre sélectionné dans la diffusion est **[!UICONTROL Email (Environnement - Destinataire)]**:
 
-![](assets/Interaction-best-practices-offer-space-selected.png)
+![Section de sélection des offres d&#39;une diffusion avec le champ Emplacement défini sur E-mail (Environnement - Destinataire).](assets/Interaction-best-practices-offer-space-selected.png)
 
 Si l&#39;emplacement d&#39;offre sélectionné dans la diffusion ne dispose pas d&#39;une fonction de rendu HTML configurée, vous ne la verrez pas dans le menu de diffusion et elle ne sera pas disponible pour pouvoir le sélectionner. Cette situation est indépendante de l&#39;emplacement sélectionné dans l&#39;activité **Enrichissement**.
 
 Dans l&#39;exemple ci-dessous, la fonction de rendu HTML est disponible dans la liste déroulante, car l&#39;emplacement d&#39;offre sélectionné dans la diffusion comporte une fonction de rendu :
 
-![](assets/Interaction-best-practices-HTML-rendering.png)
+![Menu de champ Personalization avec propositions, proposition et option de rendu HTML mise en surbrillance.](assets/Interaction-best-practices-HTML-rendering.png)
 
 Cette fonction insère du code tel que : `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
@@ -99,7 +99,7 @@ Pour éviter tout problème, il est donc recommandé de définir une fonction de
 
 Les emplacements d&#39;offre permettent de stocker des données dans la table des propositions après génération ou acceptation de propositions :
 
-![](assets/Interaction-best-practices-offer-space-storage.png)
+![Onglet Stockage d&#39;un emplacement avec les expressions Sur proposition et Sur statut d&#39;acceptation et chemin de stockage.](assets/Interaction-best-practices-offer-space-storage.png)
 
 Toutefois, cela ne s&#39;applique qu&#39;aux interactions entrantes.
 
@@ -109,15 +109,15 @@ Un champ de la table temporaire de workflow dont le nom correspond à celui d’
 
 Par exemple, en cas de sélection manuelle d&#39;une offre (sans le module Interaction) dans une activité de workflow **Enrichissement**, les champs standard sont définis comme suit :
 
-![](assets/Interaction-best-practices-manual-offer-std-fields.png)
+![Colonnes de sortie d&#39;une activité Enrichissement avec les champs standard pour une offre sélectionnée manuellement.](assets/Interaction-best-practices-manual-offer-std-fields.png)
 
 Il est possible d&#39;ajouter d&#39;autres champs, par exemple un champ `@rank` :
 
-![](assets/Interaction-best-practices-manual-offer-add-fields.png)
+![Colonnes de sortie d&#39;une activité Enrichissement avec un champ de classement ajouté pour la proposition.](assets/Interaction-best-practices-manual-offer-add-fields.png)
 
 Puisqu&#39;il existe un champ appelé `@rank` dans la table des propositions, la valeur contenue dans la table temporaire du workflow sera copiée.
 
-Pour plus d&#39;informations sur le stockage de champs supplémentaires dans la table des propositions, consultez [cette section](interaction-send-offers.md#storing-offer-rankings-and-weights).
+Pour plus d&#39;informations sur le stockage de champs supplémentaires dans la table des propositions, consultez la section [Stocker le rang et le poids des offres](interaction-send-offers.md#storing-offer-rankings-and-weights).
 
 Pour les offres sortantes avec le module Interaction, cette possibilité est utile lorsque plusieurs offres sont sélectionnées et que vous souhaitez enregistrer l&#39;ordre dans lequel elles seront affichées dans un email.
 
@@ -127,7 +127,7 @@ En cas d&#39;utilisation d&#39;une interaction sortante, il est possible d&#39;a
 
 Lorsque vous utilisez le module Interaction et que vous sélectionnez manuellement des offres, l&#39;utilisateur peut combiner les deux approches. Par exemple, l&#39;utilisateur peut définir manuellement le champ `@rank` sur 1 pour l&#39;offre sélectionnée manuellement et utiliser une expression telle que `"1 + @rank"` pour les offres renvoyées par le module Interaction. En supposant que l&#39;interaction sélectionne trois offres, les offres renvoyées par les deux approches seront classées de 1 à 4 :
 
-![](assets/Interaction-best-practices-manual-offer-combined.png)
+![Colonnes de sortie combinant l&#39;interaction d&#39;offre avec une expression de classement + 1 pour définir manuellement le classement.](assets/Interaction-best-practices-manual-offer-combined.png)
 
 ### Étendre le schéma nms:offer {#extending-nms-offer-schema}
 
@@ -135,7 +135,7 @@ Lors de l&#39;extension du schéma nms:offer, veillez à suivre la structure pr�
 * Définissez un nouveau champ pour le stockage du contenu sous `<element name="view">`.
 * Un nouveau champ doit être défini deux fois. Une fois sous forme de champ XML normal, et une autre fois sous forme de champ XML CDATA en ajoutant &quot;_jst&quot; au nom. Par exemple :
 
-  ```
+  ```xml
   <element label="Price" name="price" type="long" xml="true"/>
   <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
   ```
