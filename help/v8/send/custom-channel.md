@@ -109,7 +109,7 @@ Dans l’interface utilisateur web de Campaign, configurez la définition d’é
 
    Page de schéma ![Diffusions (nms) avec le bouton Modification de l’écran en haut à droite](assets/cus-schema2.png){zoomable="yes"}
 
-1. Sélectionnez l’onglet correspondant à votre canal et définissez comment les champs seront affichés dans l’écran de contenu de la diffusion. Pour plus d’informations sur la modification de l’écran, consultez cette [page](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html#fields){target="_blank"}.
+1. Sélectionnez l’onglet correspondant à votre canal et définissez comment les champs seront affichés dans l’écran de contenu de la diffusion. Pour plus d’informations sur la modification de l’écran, consultez cette [page](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html?lang=fr#fields){target="_blank"}.
 
    ![Boîte de dialogue de définition d’écran, onglet de canal personnalisé, répertoriant les champs personnalisés avec le libellé, l’attribut, le type et l’option obligatoire](assets/cus-schema3.png){zoomable="yes"}
 

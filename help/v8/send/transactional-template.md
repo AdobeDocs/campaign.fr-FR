@@ -113,7 +113,7 @@ Une adresse de contrôle vous permet d&#39;afficher une prévisualisation de vot
 
    ![Boîte de dialogue Adresse de contrôle avec champs Libellé, E-mail et Identifiant externe renseignés](assets/messagecenter_create_seed_2.png)
 
-1. Insérez les données de test. [En savoir plus sur les données de personnalisation dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
+1. Insérez les données de test. [En savoir plus sur les données de personnalisation dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
 
    ![Boîte de dialogue d’adresse de contrôle avec des données de test dans la section Contenu, écrite au format XML pour le contexte d’événement](assets/messagecenter_create_custo_3.png)
 
