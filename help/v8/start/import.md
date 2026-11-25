@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
+source-git-commit: 9548dde346f10c57350f21e5946690f2f988b939
 workflow-type: tm+mt
-source-wordcount: '4821'
-ht-degree: 84%
+source-wordcount: '4826'
+ht-degree: 80%
 ---
 # Import de données dans Campaign {#ootb-profiles}
 
@@ -169,7 +169,7 @@ Quatre types de champ calculé sont proposés :
 
 ### Étape 4 - Réconciliation {#step-4---reconciliation}
 
-L’étape de réconciliation de l’assistant d’import permet de définir le mode de rapprochement des données issues du fichier avec les informations existantes dans la base de données, ainsi que de fixer les règles de priorité entre les données du fichier et celles de la base de données. La fenêtre de configuration se présente comme suit :
+L&#39;étape de réconciliation de l&#39;assistant d&#39;import permet de définir comment les données du fichier seront réconciliées avec les données existantes dans la base de données. Il permet également de définir les règles de priorité entre les données du fichier et celles de la base de données. La fenêtre de configuration se présente comme suit :
 
 ![Écran de réconciliation avec l&#39;arborescence des champs, où Prénom est défini dans le cadre de la clé de réconciliation 1.](assets/s_ncs_user_import_wizard04_1.png)
 
@@ -205,7 +205,7 @@ Il est nécessaire de renseigner au moins une clé de réconciliation pour gére
 
 Une clé de réconciliation est un ensemble de champs utilisés pour identifier un enregistrement. Par exemple, pour un import de destinataires, la clé de réconciliation peut être le numéro de compte, le champ « E-mail » ou encore les champs « Nom, Prénom, Société », etc.
 
-Dans ce cas, pour savoir si une ligne du fichier correspond à une personne destinataire existante dans la base de données, le moteur d’import compare les valeurs du fichier à celles de la base de données pour tous les champs de la clé. Plus les champs sont spécifiques à un enregistrement, plus la comparaison entre les données de source et de destination pourra être fine et garantir l’intégrité des données après l’import. Il est possible de renseigner une seconde clé de réconciliation pour une même table : elle sera utilisée pour les lignes dont la première clé est vide.
+Dans ce cas, le moteur d&#39;import compare les valeurs du fichier avec celles de la base de données pour tous les champs de la clé. Il détecte ainsi si une ligne du fichier correspond à un destinataire existant dans la base de données. Plus les champs sont spécifiques à un enregistrement, plus la comparaison entre les données de source et de destination pourra être fine et garantir l’intégrité des données après l’import. Il est possible de renseigner une seconde clé de réconciliation pour une même table : elle sera utilisée pour les lignes dont la première clé est vide.
 
 Il convient aussi de ne pas choisir un champ qui risque d&#39;être modifié lors de l&#39;import, auquel cas, le moteur risque de créer des enregistrements supplémentaires.
 
@@ -253,7 +253,7 @@ Le détail de ces rejets est visible depuis l&#39;onglet **[!UICONTROL Rejets]**
 Les rejets peuvent être de deux types (le type est affiché dans la colonne **[!UICONTROL Connecteur]**) :
 
 * Les rejets du connecteur de texte concernent les erreurs lors du traitement de la ligne du fichier (champ calculé, analyse de données, etc.). Dans ce cas, en cas d’erreur, la ligne entière est toujours rejetée.
-* Les rejets du connecteur de base de données concernent les erreurs survenant lors de la réconciliation des données ou lors de l’écriture dans la base de données. Dans le cas d’un import sur plusieurs tables, le rejet peut ne concerner qu’une portion de l’enregistrement (par exemple, pour un import de destinataires et d’événements associés, une erreur peut empêcher la mise à jour d’un événement sans pour autant rejeter la personne destinataire).
+* Les rejets du connecteur de base de données concernent les erreurs survenant lors de la réconciliation des données ou lors de l’écriture dans la base de données. Dans le cas d&#39;un import sur plusieurs tables, le rejet ne peut concerner qu&#39;une partie de l&#39;enregistrement. Par exemple, pour un import de destinataires et d&#39;événements associés, une erreur peut empêcher la mise à jour d&#39;un événement sans rejeter le destinataire.
 
 Dans la page de réconciliation des données, il est possible de définir champ par champ, et table par table, le type de gestion d&#39;erreur souhaité.
 
@@ -271,7 +271,7 @@ Vous pouvez générer un fichier comportant ces enregistrements via l&#39;icône
 
 ### Etape 5 - Etape supplémentaire lors de l&#39;import de destinataires {#step-5---additional-step-when-importing-recipients}
 
-L’étape suivante de l’assistant d’import permet de choisir ou créer le dossier dans lequel les données seront importées, d’associer automatiquement les personnes destinataires importées à une liste (existante ou nouvelle) et de les abonner à un service.
+L&#39;étape suivante de l&#39;assistant d&#39;import permet de sélectionner ou de créer le dossier dans lequel les données seront importées. Vous pouvez également mapper automatiquement des destinataires importés à une liste (nouvelle ou existante) et abonner des destinataires à un service.
 
 ![Importez l&#39;écran des destinataires avec des liens Modifier pour le dossier, la liste et le service, ainsi que le champ Origine.](assets/s_ncs_user_import_wizard05_1.png)
 
@@ -315,7 +315,7 @@ L’étape suivante de l’assistant d’import permet de choisir ou créer le d
 
   1. Abonner à un service
 
-     Pour abonner tous les destinataires importés à un service d&#39;information, cliquez sur le lien **[!UICONTROL Editer...]** **&#x200B;**&#x200B;Vous pouvez sélectionner l&#39;option **[!UICONTROL Envoyer un message de confirmation]** : le contenu de ce message est défini dans le modèle de diffusion associé au service d&#39;abonnement.
+     Pour abonner tous les destinataires importés à un service d&#39;information, cliquez sur le lien **[!UICONTROL Modifier...]** de la section **[!UICONTROL Abonner les destinataires à un service]**. Sélectionnez ou créez ensuite le service d&#39;information auquel les destinataires seront abonnés. Vous pouvez sélectionner l&#39;option **[!UICONTROL Envoyer un message de confirmation]** : le contenu de ce message est défini dans le modèle de diffusion associé au service d&#39;abonnement.
 
      ![Abonner les destinataires à une boîte de dialogue de service avec un service existant sélectionné et Envoyer un message de confirmation coché.](assets/s_ncs_user_import_wizard05_7.png)
 

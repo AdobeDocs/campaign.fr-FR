@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 9548dde346f10c57350f21e5946690f2f988b939
 workflow-type: tm+mt
-source-wordcount: '4464'
-ht-degree: 88%
+source-wordcount: '4454'
+ht-degree: 83%
 ---
 # Validation d’une connexion SMPP {#validate-smpp-connection}
 
@@ -197,11 +197,11 @@ Vous avez un conflit entre les comptes. Comme nous l’avons déjà mentionné, 
 Vous devrez contacter le fournisseur pour diagnostiquer les conflits potentiels de son côté.
 
 *Certains comptes externes partagent la même combinaison nom d&#39;utilisateur/mot de passe*
-Le fournisseur n’ayant aucun moyen de savoir de quel compte externe provient le PDU BIND, il traite toutes les connexions des différents comptes comme un seul et même compte. Il achemine donc probablement MO et SR de manière aléatoire sur les 2 comptes, provoquant des problèmes apparemment aléatoires.
+Le fournisseur n’a aucun moyen de savoir de quel compte externe provient un PDU BIND. Ils traitent toutes les connexions des différents comptes comme un seul et même compte. Ils acheminent donc probablement MO et SR de manière aléatoire sur les 2 comptes. Cela entraîne des problèmes apparemment aléatoires.
 
 Si le fournisseur prend en charge plusieurs codes courts pour la même combinaison nom d’utilisateur ou d’utilisatrice/mot de passe, vous devrez lui demander où placer ce numéro court dans le PDU BIND. Notez que cette information doit être placée dans le PDU BIND et non dans SUBMIT_SM, puisque le PDU BIND est le seul endroit qui permettra d’utiliser correctement les MO de routage.
 
-Consultez la section [Informations dans chaque type de PDU](#pdu) ci-dessus pour savoir quel champ est disponible dans le PDU BIND. En général, vous ajoutez le numéro court dans *address_range*, mais cela nécessite une assistance spéciale de la part du fournisseur. Contactez-le pour savoir comment il s’attend à acheminer de manière indépendante plusieurs numéros courts.
+Consultez les [informations dans chaque type de PDU](#pdu) ci-dessus pour connaître les champs disponibles dans le PDU BIND. En règle générale, vous placez le code court dans *address_range*, mais cela nécessite une prise en charge spéciale du fournisseur. Contactez-les pour savoir comment ils s’attendent à acheminer plusieurs numéros courts indépendamment.
 
 Adobe Campaign prend en charge la gestion de plusieurs numéros courts sur le même compte externe. Par conséquent, l’utilisation d’un seul compte pour l’ensemble du trafic fonctionne bien.
 
@@ -251,7 +251,7 @@ Une connexion est considérée comme instable si l’une des situations suivante
 * Si le fournisseur envoie des PDU UNBIND, il fait probablement quelque chose d’une manière qui n’est pas correcte. Demandez-lui pourquoi il envoie UNBIND et cela mènera probablement à la cause racine.
 * La capture du réseau est parfois la seule façon de voir comment la connexion est fermée.
 * Si le fournisseur ferme les connexions (en envoyant un paquet TCP FIN ou TCP RST), demandez-lui pourquoi il le fait. Cela devrait vous indiquer la cause racine du problème.
-* Si le fournisseur ferme la connexion après avoir envoyé une erreur de nettoyage telle que DELIVER_SM_RESP avec un code d’erreur, il doit réparer son connecteur, sinon il empêchera la transmission d’autres types de messages et déclenchera le ralentissement du MTA. Ceci est particulièrement important en mode émetteur-récepteur où la fermeture de la connexion a un impact à la fois sur les MT et SR.
+* Si le fournisseur ferme la connexion après avoir envoyé une erreur nette (comme DELIVER_SM_RESP avec un code d’erreur), il doit corriger son connecteur. La fermeture de la connexion empêche la transmission d’autres types de messages et déclenche le ralentissement du MTA. Ceci est particulièrement important en mode émetteur/récepteur, où la fermeture de la connexion a un impact sur les MT et SR.
 * En cas de temporisations (délais BIND, délais SUBMIT_SM), Campaign peut envoyer des messages trop rapidement pour ce fournisseur. Essayez d’abaisser le paramètre de *débit maximal MT* et vérifiez si cela résout le problème.
 
 #### Problème lors de l&#39;envoi d&#39;un MT (SMS régulier envoyé à un utilisateur final)
@@ -288,7 +288,7 @@ Si le PDU DELIVER_SM n’est pas reconnu, vous devez vérifier quelques élémen
 * Vérifiez l’expression regex associée à l’extraction des identifiants et au traitement des erreurs dans le compte externe. Vous devrez peut-être les valider par rapport au contenu du PDU DELIVER_SM.
 * Vérifiez que les erreurs sont correctement configurées dans la table broadLogMsg (ce point est expliqué en détail dans la documentation de Campaign).
 
-Si le PDU DELIVER_SM a été reconnu par le connecteur SMPP étendu ACC mais que le broadLog n’est pas mis à jour correctement, vérifiez le processus de réconciliation des identifiants décrit dans la section Correspondance des entrées MT, SR et Broadlog ci-dessus.
+Si le connecteur SMPP étendu ACC a reconnu le PDU DELIVER_SM mais que le broadLog n&#39;est pas mis à jour correctement, vérifiez le processus de réconciliation des identifiants. Elle est décrite dans la section Correspondance des entrées MT, SR et broadlog ci-dessus.
 
 Si vous avez tout corrigé, mais que des SR non valides figurent toujours dans les tampons du fournisseur, vous pouvez les ignorer à l&#39;aide de l&#39;option Nombre d&#39;acquittements d&#39;identifiant invalides. Cette option doit être utilisée avec soin et réinitialisée à 0 aussi vite que possible après le nettoyage des tampons.
 
@@ -303,7 +303,7 @@ Si seuls certains SR sont reçus, mais pas tous, vérifiez qu&#39;aucun autre sy
 * Si le MO (PDU DELIVER_SM) n’apparaît pas dans les traces, vous pouvez avoir la certitude que le problème est du côté fournisseur. Il devra effectuer une résolution des problèmes sur sa plateforme.
 * Si le PDU DELIVER_SM apparaît, vérifiez que Campaign a confirmé sa réception avec un PDU DELIVER_SM_RESP réussi (code 0). Ce RESP garantit que toute la logique de traitement a été appliquée par Campaign (réponse automatique et quarantaine). Si ce n&#39;est pas le cas, recherchez un message d&#39;erreur dans les logs de processus SMS.
 * Si les réponses automatiques sont activées, vérifiez que SUBMIT_SM a été envoyé au fournisseur. Si ce n&#39;est pas le cas, il est garanti qu&#39;un message d&#39;erreur se trouvera dans les logs de processus SMS.
-* Si le PDU MT SUBMIT_SM contenant la réponse se trouve dans les traces mais que le SMS ne parvient pas au téléphone portable, vous devez contacter le fournisseur pour obtenir de l’aide sur la résolution des problèmes, car le problème se trouve probablement de son côté.
+* Si le PDU MT SUBMIT_SM contenant la réponse se trouve dans les traces mais que le SMS n&#39;atteint pas le téléphone mobile, contactez le fournisseur pour obtenir de l&#39;aide en matière de dépannage. Le problème est probablement de leur côté.
 
 #### Problème lors de la préparation de la diffusion sans exclure les destinataires mis en quarantaine (mis en quarantaine par la fonction de réponse automatique)
 
@@ -322,7 +322,7 @@ Le fournisseur est l’entité experte qui sait comment fonctionne le SMS. Conta
 
 Vous devrez savoir ce qu’il y a dans votre message. Cette phrase peut sembler simpliste, mais ce n’est pas le cas. Unicode permet de nombreuses variantes pour les caractères identiques et Campaign ne peut pas toutes les gérer.
 
-La source de problèmes la plus courante est le copier-coller d’un traitement de texte, qui transforme les caractères habituels en versions typographiques correctes : espaces changés en espaces insécables, guillemets doubles changés en guillemets ouvrants et fermants, signes moins changés en différents types de tirets, etc.
+La source la plus courante de problèmes est le copier-coller à partir d’un traitement de texte. Il change les caractères habituels en versions correctes sur le plan typographique : les espaces sont transformés en espaces insécables, les guillemets doubles sont transformés en guillemets ouvrants et fermants, les signes moins sont transformés en divers types de traits d’union...
 
 Ne copiez pas et ne collez pas votre message lors du test, saisissez-le toujours directement dans l&#39;interface.
 
@@ -365,7 +365,7 @@ Si le fournisseur se plaint d’une surcharge de la mémoire tampon de son côt�
 
 ### Éléments à inclure lors de la communication sur un problème SMS
 
-Chaque fois que vous cherchez de l&#39;aide sur un problème de SMS (qu&#39;il s&#39;agisse de l&#39;ouverture d&#39;un ticket d&#39;assistance à Adobe Campaign, au fournisseur de SMS, ou tout autre type de communication sur le problème), vous devrez inclure au moins les informations suivantes pour vous assurer qu&#39;il sera correctement qualifié. Des questions correctement qualifiées sont essentielles pour résoudre les problèmes plus rapidement, aussi prendre un peu plus de temps pour essayer de comprendre la situation et donner des informations significatives sera un bond en avant en termes d’efficacité.
+Chaque fois que vous cherchez de l&#39;aide sur un problème de SMS, incluez au moins les informations suivantes afin que le problème puisse être correctement qualifié. Cela s’applique que vous ouvriez un ticket d’assistance auprès d’Adobe Campaign ou du fournisseur SMS, ou que vous communiquiez sur le problème de toute autre manière. Des questions correctement qualifiées sont essentielles pour résoudre les problèmes plus rapidement, aussi prendre un peu plus de temps pour essayer de comprendre la situation et donner des informations significatives sera un bond en avant en termes d’efficacité.
 
 * Activez les messages SMPP en mode verbeux lorsque le problème apparaît. La plupart des problèmes de SMS sont impossibles à résoudre sans cela.
 * Si le problème est lié au trafic SMS, contactez d&#39;abord le fournisseur. Il est le mieux informé et sa plateforme est généralement adaptée pour un diagnostic efficace des problèmes de trafic SMS en temps réel.
