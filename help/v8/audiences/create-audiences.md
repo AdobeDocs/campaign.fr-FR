@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 94%
+source-wordcount: '1080'
+ht-degree: 77%
 ---
 # Créer une audience dans une liste {#create-segments}
 
@@ -38,13 +38,13 @@ Une liste est un ensemble statique de contacts qui peut être ciblé dans des ac
 
 Les listes sont créées et gérées à partir du lien **[!UICONTROL Listes]** dans l&#39;onglet **[!UICONTROL Profils et cibles.]** Ces listes sont basées sur la table des profils Adobe Campaign par défaut (nms:recipient). [En savoir plus](../dev/datamodel.md#ootb-profiles)
 
-![](assets/list-dashboard.png)
+![Page Listes sous Profils et cibles affichant les listes existantes et le bouton Créer](assets/list-dashboard.png)
 
 Vous pouvez créer une liste à l&#39;aide de l&#39;activité **Mettre à jour la liste** dans un workflow. Cette activité stocke la population résultante dans une liste. Utilisez-la pour créer une liste ou mettre à jour une liste existante. Pour créer des listes contenant d&#39;autres types de données que la table de profils intégrée, vous devez exécuter un workflow. Par exemple, en utilisant une requête sur la table des visiteurs puis en mettant à jour la liste, vous pouvez créer une liste de visiteurs. [En savoir plus](#create-a-list-wf).
 
 Regardez cette vidéo pour en savoir plus sur la gestion des listes dans Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426459?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/334909?quality=12)
 
 
 ## Créer une liste de contacts {#create-a-list-of-contacts}
@@ -53,11 +53,11 @@ Pour créer une liste de contacts, procédez comme suit :
 
 1. Cliquez sur le bouton **[!UICONTROL Créer]** et choisissez **[!UICONTROL Nouvelle liste]**.
 
-   ![](assets/new-list.png)
+   ![Créez un menu sur la page Listes avec l&#39;option Nouvelle liste](assets/new-list.png)
 
 1. Renseignez les informations dans l&#39;onglet **[!UICONTROL Edition]** de la fenêtre de création de la liste.
 
-   ![](assets/list-details.png)
+   ![Onglet Modifier de la fenêtre de création de la liste avec les champs Libellé, Nom interne, Type de liste, Schéma et Dossier](assets/list-details.png)
 
    * Saisissez le nom de la liste dans le champ **[!UICONTROL Libellé]** et, au besoin, modifiez le nom interne.
    * Ajoutez une description pour cette liste.
@@ -66,7 +66,7 @@ Pour créer une liste de contacts, procédez comme suit :
 
 1. Dans l&#39;onglet **[!UICONTROL Contenu]**, cliquez sur **[!UICONTROL Ajouter]** pour sélectionner les profils appartenant à la liste.
 
-   ![](assets/add-profiles-to-a-list.png)
+   ![Ajouter des destinataires à la boîte de dialogue de liste avec plusieurs destinataires sélectionnés dans le dossier Jeu de données](assets/add-profiles-to-a-list.png)
 
    Vous pouvez créer un nouveau profil et l&#39;ajouter dans la liste directement depuis cette fenêtre à l&#39;aide de l&#39;icône **[!UICONTROL Créer]**. Le profil sera ajouté à la base de données.
 
@@ -83,15 +83,15 @@ Vous pouvez sélectionner des profils et les ajouter à une liste. Pour ce faire
 
 1. Sélectionnez **[!UICONTROL Actions > Associer la sélection à une liste...]**.
 
-   ![](assets/add-selection-to-a-list.png)
+   ![Menu Actions avec l&#39;option Associer la sélection à une liste pour les destinataires sélectionnés](assets/add-selection-to-a-list.png)
 
 1. Sélectionnez une liste existante ou créez-en une, puis cliquez sur **[!UICONTROL Suivant]**
 
-   ![](assets/select-the-list.png)
+   ![Étape Sélectionner une liste de l&#39;Assistant Destinataires et listes avec une liste sélectionnée et le bouton Suivant](assets/select-the-list.png)
 
 1. Cliquez sur le bouton **[!UICONTROL Démarrer]** pour lancer l’opération.
 
-   ![](assets/record-a-list.png)
+   ![Enregistrez dans une étape de liste de l&#39;assistant avec l&#39;option Recréer la liste et le bouton Démarrer](assets/record-a-list.png)
 
 Sélectionnez l&#39;option **[!UICONTROL Recréer la liste]** pour supprimer le contenu existant de la liste et optimiser la création de la liste (aucune requête n&#39;est nécessaire pour vérifier si les profils sont déjà associés à la liste).
 
@@ -111,22 +111,22 @@ Dans l&#39;exemple ci-dessous, vous créez une liste de tous les destinataires c
 1. Sélectionnez **[!UICONTROL Profils et cibles]**, et **[!UICONTROL Workflows de ciblage]**, puis créez un workflow avec le bouton **[!UICONTROL Créer]**.
 1. Saisissez un libellé pour ce workflow, par exemple « contacts 25-40 », ajoutez une description, puis cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/targeting-wf-sample.png)
+   ![Nouvelle boîte de dialogue de workflow dans les workflows de ciblage avec le libellé et la description renseignés pour 25 à 40 contacts](assets/targeting-wf-sample.png)
 
 1. Insérez une activité **[!UICONTROL Requête]** pour définir la population cible et modifier la requête.
 
-   ![](assets/targeting-wf-edit-query.png)
+   ![Activité Requête avec le lien Modifier la requête et l’étape Dimension de ciblage et de filtrage avec les conditions de filtrage](assets/targeting-wf-edit-query.png)
 
 1. Définissez les conditions de filtrage, comme ci-dessous :
 
-   ![](assets/targeting-wf-age-filter.png)
+   ![Étape de filtrage de la requête avec un âge supérieur ou égal à 25 et inférieur ou égal à 40](assets/targeting-wf-age-filter.png)
 
    Découvrez comment créer une requête dans un workflow dans [cette section](https://experienceleague.adobe.com/fr/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=fr){target="_blank"}.
 
 1. Ajoutez un libellé pour cette requête et enregistrez vos modifications.
 1. Ajoutez une activité **[!UICONTROL Mise à jour de liste]** et modifiez-la.
 
-   ![](assets/list-update-activity.png)
+   ![Paramètres de l&#39;activité de mise à jour de liste dans le workflow, avec les options de création de liste et de dossier et le bouton OK](assets/list-update-activity.png)
 
 1. Saisissez le libellé de l&#39;activité.
 1. Sélectionnez l&#39;option **[!UICONTROL Créer la liste si besoin (Nom calculé)]** afin d&#39;indiquer que la liste sera créée lors de la première exécution du workflow, puis mise à jour lors des exécutions suivantes.
@@ -140,7 +140,7 @@ Dans l&#39;exemple ci-dessous, vous créez une liste de tous les destinataires c
 
    La liste de destinataires correspondante est alors créée. Vous pouvez accéder à cette liste à partir de l’entrée **[!UICONTROL Listes]** de la page d’accueil.
 
-   ![](assets/access-new-list.png)
+   ![Page de listes affichant la nouvelle liste de contacts 25-40 en haut, accessible à partir de l&#39;entrée Listes](assets/access-new-list.png)
 
    Vous pouvez rendre ce workflow récurrent en ajoutant un planificateur au workflow. [En savoir plus](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=fr){target="_blank"}.
 

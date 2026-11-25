@@ -29,18 +29,18 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 92%
+source-wordcount: '383'
+ht-degree: 80%
 ---
 # Prise en main des profils et des audiences{#gs-profiles-and-audiences}
 
 Les profils sont des contacts stockés dans la base de données Campaign, tels que des clients, des abonnés à un service ou des prospects. Il existe de nombreux mécanismes permettant d&#39;acquérir des profils et de créer cette base de données : collecte en ligne par le biais de formulaires web, importation manuelle ou automatique de fichiers texte, réplication avec des bases de données d&#39;entreprises ou d&#39;autres systèmes d&#39;information. Adobe Campaign vous permet d&#39;intégrer des données d&#39;historique marketing, des informations d&#39;achat, des données de préférences, des données CRM et des données d&#39;informations personnelles pertinentes dans une vue consolidée afin d&#39;effectuer une analyse et de prendre des mesures. Les profils contiennent toutes les informations requises pour le ciblage, la qualification et le suivi des individus.
 
-Un profil est un enregistrement dans la table **nmsRecipient** ou une table externe qui stocke tous les attributs de profil, tels que le prénom, le nom, l&#39;adresse e-mail, un identifiant de cookie, l&#39;identifiant client, l&#39;identifiant mobile ou d&#39;autres informations relatives à un canal particulier. D&#39;autres tables liées à la table des destinataires contiennent des données relatives aux profils, par exemple la table des logs de diffusion qui contient les enregistrements de toutes les diffusions envoyées aux destinataires. En savoir plus sur les profils intégrés et les tables de destinataires dans [cette section](../dev/datamodel.md#ootb-profiles).
+Un profil est un enregistrement dans la table **nmsRecipient** ou une table externe qui stocke tous les attributs de profil, tels que le prénom, le nom, l&#39;adresse e-mail, un identifiant de cookie, l&#39;identifiant client, l&#39;identifiant mobile ou d&#39;autres informations relatives à un canal particulier. D&#39;autres tables liées à la table des destinataires contiennent des données relatives aux profils, par exemple la table des logs de diffusion qui contient les enregistrements de toutes les diffusions envoyées aux destinataires. En savoir plus sur les profils intégrés et les tables de destinataires dans [Table de profils intégrée](../dev/datamodel.md#ootb-profiles).
 
-![](assets/recipients-in-explorer.png)
+![Arborescence de l&#39;Explorateur avec le nœud Destinataires sélectionné, répertoriant les profils et les détails du destinataire sélectionné.](assets/recipients-in-explorer.png)
 
 Dans Adobe Campaign, les **destinataires** sont les profils par défaut ciblés pour l’envoi de diffusions (e-mails, SMS, etc.).
 
@@ -53,6 +53,6 @@ Pour renseigner des données de profil dans Adobe Campaign, vous pouvez :
 * [mapper à une base de données externe](../connect/fda.md) dans laquelle les profils sont stockés ;
 * saisir les profils manuellement dans la console cliente, comme indiqué ci-dessous :
 
-![](assets/create-profile.png)
+![Une boîte de dialogue Nouveau destinataire s&#39;est ouverte à partir de l&#39;option Créer de la page Destinataires, avec des champs Généraux tels que le Prénom et l&#39;E-mail.](assets/create-profile.png)
 
 Une fois le fichier importé, vous pouvez créer des audiences pour envoyer vos messages. Découvrez comment créer des audiences [dans cette section](create-audiences.md).

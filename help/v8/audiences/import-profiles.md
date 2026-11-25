@@ -32,10 +32,10 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 82%
+source-wordcount: '308'
+ht-degree: 78%
 ---
 # Importer des profils depuis un fichier{#create-profiles}
 
@@ -51,7 +51,7 @@ Préparez et structurez vos données dans un fichier pour les importer avec un w
 
 ### Charger des données depuis un fichier {#data-from-a-file}
 
-Les données traitées dans un workflow peuvent êtes extraites d&#39;un fichier structuré pour qu’elles puissent être importées dans Adobe Campaign. [En savoir plus](https://experienceleague.adobe.com/fr/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file){target="_blank"}.
+Les données traitées dans un workflow peuvent êtes extraites d&#39;un fichier structuré pour qu’elles puissent être importées dans Adobe Campaign. [En savoir plus](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file){target="_blank"}.
 
 Une fois les données collectées, vous pouvez les utiliser dans vos workflows, par exemple pour enrichir une diffusion ou mettre à jour la base de données. Pour plus d’informations, consultez [cette section](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=fr){target="_blank"}.
 
@@ -61,6 +61,6 @@ Adobe Campaign offre une fonctionnalité d&#39;import générique qui permet, pa
 
 Les imports génériques sont gérés à partir du menu **[!UICONTROL Profils et cibles > Traitements]** de la page d’accueil d’Adobe Campaign.
 
-![](assets/new-import-job.png)
+![Liste des tâches sous Profils et cibles avec le menu Créer ouvert aux nouvelles importations et exportations.](assets/new-import-job.png)
 
 Les étapes de réalisation d&#39;un import générique sont détaillées dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=fr){target="_blank"}.
