@@ -109,7 +109,7 @@ Dans l&#39;exemple suivant, nous utiliserons une page de type **[!UICONTROL Page
 
   ![Éditeur de page avec le menu Conteneurs ouvert et Question sélectionnée, sous les champs nom, numéro de compte et adresse électronique](assets/s_ncs_admin_survey_add_qu.png)
 
-  Saisissez le libellé de la question et insérez le ou les champs de réponse en tant que sous-branche de la question. Pour cela, le nœud lié à la question doit être sélectionné lors de la création du champ de réponse. Ajoutez une liste déroulante **** à l&#39;aide de l&#39;icône **[!UICONTROL Contrôles de sélection]** ou en cliquant avec le bouton droit, comme dans l&#39;exemple ci-dessous :
+  Saisissez le libellé de la question et insérez le ou les champs de réponse en tant que sous-branche de la question. Pour cela, le nœud lié à la question doit être sélectionné lors de la création du champ de réponse. Ajoutez une liste déroulante **&#x200B;**&#x200B;à l&#39;aide de l&#39;icône **[!UICONTROL Contrôles de sélection]** ou en cliquant avec le bouton droit, comme dans l&#39;exemple ci-dessous :
 
   ![Menu contextuel sur la question avec contrôles de sélection ouverts et zone de liste déroulante mise en surbrillance](assets/s_ncs_admin_survey_add_list.png)
 

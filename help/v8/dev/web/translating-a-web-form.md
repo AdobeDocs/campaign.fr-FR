@@ -188,7 +188,7 @@ si la langue est le premier ou le seul paramètre de l&#39;URL. Par exemple : *
 &lang=xx
 ```
 
-lorsque d&#39;autres paramètres précèdent celui de la langue dans l&#39;URL. Par exemple : **https://myserver/webApp/APP34?status=1&amp;lang=en**
+lorsque d&#39;autres paramètres précèdent celui de la langue dans l&#39;URL. Par exemple : **https://myserver/webApp/APP34?status=1&lang=en**
 
 Les langues de traduction et les dictionnaires disponibles par défaut sont répertoriés ci-dessous.
 
@@ -449,7 +449,7 @@ Vous pouvez ajouter les caractères **?lang=es** ou **?lang=de** pour l&#39;affi
 >[!NOTE]
 >
 >Si d&#39;autres paramètres sont déjà utilisés pour cette application web, ajoutez les caractères **&amp;lang=**.\
->Par exemple : **https://myserver/webApp/APP34?status=1&amp;lang=en**
+>Par exemple : **https://myserver/webApp/APP34?status=1&lang=en**
 
 ## Configuration avancée de traduction {#advanced-translation-configuration}
 
