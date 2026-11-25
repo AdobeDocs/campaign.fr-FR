@@ -188,7 +188,7 @@ _14 février 2024_
 
 ### Nouvelles fonctionnalités {#new-8-6-1}
 
-* À compter de cette version, vous avez accès à la nouvelle **interface utilisateur web de Campaign**, disponible via l’environnement central [!DNL Adobe CX Enterprise]. [!DNL CX Enterprise] Adobe la famille intégrée d’applications, de produits et de services de marketing numérique d’. Grâce à son interface intuitive, vous pouvez accéder rapidement à vos applications cloud, fonctionnalités de produit et services. Découvrez comment vous connecter à [!DNL CX Enterprise] et accéder à l’interface web d’Adobe Campaign [ sur cette page](campaign-ui.md#ac-web-ui).
+* À compter de cette version, vous avez accès à la nouvelle **interface utilisateur web de Campaign**, disponible via l’environnement central [!DNL Adobe CX Enterprise]. [!DNL CX Enterprise] Adobe la famille intégrée d’applications, de produits et de services de marketing numérique d’. Grâce à son interface intuitive, vous pouvez accéder rapidement à vos applications cloud, fonctionnalités de produit et services. Découvrez comment vous connecter à [!DNL CX Enterprise] et accéder à l’interface web d’Adobe Campaign [&#x200B; sur cette page](campaign-ui.md#ac-web-ui).
 
   >[!AVAILABILITY]
   >

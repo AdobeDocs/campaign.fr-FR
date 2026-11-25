@@ -68,7 +68,7 @@ Vous pouvez obtenir le programme d&#39;installation et la console cliente à par
 
 En tant qu’utilisateur administrateur, accédez à la [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/fr/campaign.html){target="_blank"} d’Adobe pour télécharger Adobe Campaign.
 
-En savoir plus sur le Centre de distribution [ sur cette page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr){target="_blank"}.
+En savoir plus sur le Centre de distribution [&#x200B; sur cette page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr){target="_blank"}.
 
 +++
 
@@ -78,7 +78,7 @@ Vous devez télécharger et installer la console cliente Campaign pour vous con
 
 À compter de la version 8.6 de Campaign, vous avez accès à l’**interface utilisateur web de Campaign**, disponible via l’environnement central [!DNL CX Enterprise]. [!DNL CX Enterprise] Adobe la famille intégrée d’applications, de produits et de services de marketing numérique d’.
 
-Découvrez comment vous connecter à [!DNL CX Enterprise] et accéder à l’interface web d’Adobe Campaign [ sur cette page](campaign-ui.md#ac-web-ui). Pour en savoir plus, consultez la [documentation sur l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+Découvrez comment vous connecter à [!DNL CX Enterprise] et accéder à l’interface web d’Adobe Campaign [&#x200B; sur cette page](campaign-ui.md#ac-web-ui). Pour en savoir plus, consultez la [documentation sur l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 
 **Rubriques connexes :**
@@ -331,7 +331,7 @@ Campaign v8 repose sur une architecture moderne native cloud, avec des améliora
 * **Mises à niveau automatiques** - Toujours sur la dernière version sans interruption
 * **Fonctionnalités améliorées** - Assistant IA, notifications push enrichies, SMS mis à niveau, intégrations améliorées avec [!DNL CX Enterprise]
 
-**Pour les utilisateurs de Campaign Classic v7 :** Découvrez [ la transition de v7 vers v8](v7-to-v8.md), notamment les modifications d’architecture, les fonctionnalités non disponibles et les considérations relatives à la migration.
+**Pour les utilisateurs de Campaign Classic v7 :** Découvrez [&#x200B; la transition de v7 vers v8](v7-to-v8.md), notamment les modifications d’architecture, les fonctionnalités non disponibles et les considérations relatives à la migration.
 
 **Pour les utilisateurs de Campaign Standard :** découvrez le [guide de migration vers la v8](acs-to-v8.md) et le [guide de migration de Campaign Standard](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 

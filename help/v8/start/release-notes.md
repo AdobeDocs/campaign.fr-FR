@@ -77,7 +77,7 @@ En tant qu’administrateur ou administratrice de Campaign, utilisez le panneau 
 
 ### Connecteur Adobe Analytics mis à niveau vers l’API Analytics 2.0 {#analytics-2-0-8-9-3}
 
-Les API d’Adobe Analytics 1.4 [ arrivent en fin de vie](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"}, le [connecteur Web Analytics](../connect/ac-aa.md) a donc été mis à niveau vers l’API Analytics 2.0 dans le cadre de cette version. En tant que client hébergé, Adobe prend en charge cette migration pour vous. Aucune configuration n’est requise de votre côté.
+Les API d’Adobe Analytics 1.4 [&#x200B; arrivent en fin de vie](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"}, le [connecteur Web Analytics](../connect/ac-aa.md) a donc été mis à niveau vers l’API Analytics 2.0 dans le cadre de cette version. En tant que client hébergé, Adobe prend en charge cette migration pour vous. Aucune configuration n’est requise de votre côté.
 
 +++ En savoir plus sur la mise à niveau d’Analytics 2.0
 
@@ -101,7 +101,7 @@ _3 Mai 2026_
 
 >[!NOTE]
 >
-> Les correctifs répertoriés ci-dessous ont été progressivement déployés sur plusieurs versions 8.9.2 successives. Accédez au **[!UICONTROL menu Aide > À propos...]** [3} pour vérifier que vous disposez de la version 8.9.2 (11d1c68) la plus récente. ](upgrades.md#version)Pour plus d’informations, contactez votre représentant ou représentante Adobe.
+> Les correctifs répertoriés ci-dessous ont été progressivement déployés sur plusieurs versions 8.9.2 successives. Accédez au **[!UICONTROL menu Aide > À propos...]** [3&rbrace; pour vérifier que vous disposez de la version 8.9.2 (11d1c68) la plus récente. &#x200B;](upgrades.md#version)Pour plus d’informations, contactez votre représentant ou représentante Adobe.
 
 * Correction d’un problème où les dates d’événement dans les événements transactionnels étaient incorrectement définies en raison d’un problème de conversion de type de données, ce qui provoquait des dates incorrectes dans les rapports dynamiques. (NEO-93923)
 * Correction d’un problème en raison duquel les notifications push silencieuses d’Android et d’iOS échouaient lors de la préparation de la diffusion lorsque les champs de titre et de corps étaient vides. (NEO-93739)
@@ -161,7 +161,7 @@ Cette version est fournie avec un ensemble de fonctionnalités disponibles dans 
 * [Activité de diffusion continue](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
 * [Gestion de la validation de campagne](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
-Consultez les [ notes de mise à jour de l’interface utilisateur web de Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}
+Consultez les [&#x200B; notes de mise à jour de l’interface utilisateur web de Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}
 
 ### Autres changements {#changes-8-9-1}
 
