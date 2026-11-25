@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 90%
+source-wordcount: '587'
+ht-degree: 76%
 ---
 # Gestion des abonnements et des désabonnements {#optin-optout}
 
@@ -40,17 +40,17 @@ Pour abonner (opt-in) un profil à un service, les options disponibles sont les 
 
 * Ajouter manuellement ce service au profil du destinataire : pour cela, depuis l&#39;onglet **[!UICONTROL Abonnements]** de son profil, cliquez sur le bouton **[!UICONTROL Ajouter]** et sélectionnez le service d&#39;information visé.
 
-  ![](assets/subscribe-to-a-service.png)
+  ![Onglet Abonnements d’un profil de destinataire avec la boîte de dialogue Sélectionner les services ouverte à partir de l’option Ajouter](assets/subscribe-to-a-service.png)
 
   Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=fr#deliveries-tab){target="_blank"}.
 
 * Abonner automatiquement un ensemble de destinataires au service. La liste des destinataires peut provenir d&#39;une opération de filtrage, d&#39;un groupe, d&#39;un dossier, d&#39;une importation ou d&#39;une sélection manuelle directe. Pour abonner ces destinataires, sélectionnez les profils et cliquez avec le bouton droit de la souris. Sélectionnez **[!UICONTROL Actions > Abonner la sélection à un service...]**.
 
-  ![](assets/subscribe-selection.png)
+  ![Menu contextuel sur les destinataires sélectionnés avec Actions > Abonner la sélection à un service](assets/subscribe-selection.png)
 
   Sélectionnez le service concerné et démarrez l&#39;opération.
 
-  ![](assets/subscribe-confirm.png)
+  ![Assistant d&#39;abonnement au service, étape de choix du service, avec l&#39;option Envoyer un message de confirmation](assets/subscribe-confirm.png)
 
   Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=fr#deliveries-tab){target="_blank"}.
 
@@ -61,18 +61,18 @@ Pour abonner (opt-in) un profil à un service, les options disponibles sont les 
 
 * Utiliser un formulaire web pour que les destinataires puissent s&#39;abonner à un service.
 
-  ![](assets/opt-in-webapp.png)
+  ![Workflow d&#39;application web d&#39;abonnement à la newsletter : préchargement, abonnement, stockage et fin](assets/opt-in-webapp.png)
 
   Campaign est fourni avec un formulaire web par défaut pour gérer l’opt-in. Vous pouvez le personnaliser et mapper les données de profil.
 
-  ![](assets/web-app.png)
+  ![Éditeur de page du formulaire web d&#39;abonnement avec nom, adresse e-mail, numéro de téléphone, case à cocher de consentement et bouton Je m&#39;abonne](assets/web-app.png)
 
-  En savoir plus dans [cette section](../dev/web/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
+  En savoir plus dans [Créer un formulaire d&#39;abonnement avec double opt-in](../dev/web/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
 
 
 * Créez un workflow de ciblage et utilisez une activité de type **[!UICONTROL Service d&#39;inscription]**.
 
-  ![](assets/wf-subscription.png)
+  ![Workflow avec lecture de liste, requêtes et collecteur de fichiers alimentant la déduplication et les services d&#39;abonnement](assets/wf-subscription.png)
 
   En savoir plus à ce propos sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html?lang=fr){target="_blank"}.
 
@@ -99,5 +99,5 @@ Apprenez-en davantage en consultant la [documentation de Campaign Classic v7](
 <!--
 You can also enable your delivery recipients to forward messages to a friend. To do this, insert the relevant links into your delivery. You may then track this sharing process as well as the number of visits to the concerned pages.
 
-For more on this capability, refer to [Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=fr#viral-marketing--forward-to-a-friend){target="_blank"}
+For more on this capability, refer to [Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html#viral-marketing--forward-to-a-friend){target="_blank"}
 -->

@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 100%
+source-wordcount: '342'
+ht-degree: 92%
 ---
 # Gérer les autorisations pour les dossiers{#manage-folder-permissions}
 
@@ -40,14 +40,14 @@ ht-degree: 100%
 
 Utilisez les autorisations sur les dossiers pour organiser et contrôler l’accès aux données de Campaign.
 
-La gestion des dossiers est présentée sur [cette page](../audiences/folders-and-views.md).
+La gestion des dossiers est présentée dans [Dossiers et vues](../audiences/folders-and-views.md).
 
 Pour modifier les autorisations sur un dossier Campaign spécifique, procédez comme suit :
 
 1. Cliquez avec le bouton droit sur le dossier et sélectionnez **[!UICONTROL Propriétés...]**.
 1. Accédez à l&#39;onglet **[!UICONTROL Sécurité]** pour visualiser les autorisations sur ce dossier.
 
-   ![](assets/folder-permissions.png)
+   ![Onglet Sécurité des propriétés du dossier avec les autorisations pour les opérateurs ou les groupes et les droits en lecture, écriture et suppression des données](assets/folder-permissions.png)
 
 * Pour **autoriser un groupe ou un opérateur**, cliquez sur le bouton **[!UICONTROL Ajouter]** et sélectionnez le groupe ou l&#39;opérateur auquel attribuer les autorisations pour ce dossier.
 * Pour **interdire un groupe ou un opérateur**, cliquez sur **[!UICONTROL Supprimer]** et sélectionnez le groupe ou l&#39;opérateur pour supprimer les autorisations pour ce dossier.

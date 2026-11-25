@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1780'
-ht-degree: 24%
+source-wordcount: '1796'
+ht-degree: 23%
 ---
 # Versions, mises à niveau et sécurité {#upgrades}
 
@@ -43,7 +43,7 @@ En tant qu’utilisateur Managed Cloud Services :
 
 * Votre instance de serveur Campaign est mise à niveau par Adobe avec chaque nouvelle version, automatiquement et sans nécessiter d&#39;action de votre part.
 * Votre représentant Adobe vous contacte avant une mise à niveau qui affecte votre environnement.
-* **Votre console cliente est le seul composant dont vous êtes responsable pour vous tenir à jour.** Il doit être mis à niveau vers la même version que votre serveur Campaign. Découvrez comment mettre à niveau votre console cliente sur [cette page](../start/connect.md#upgrade-ac-console).
+* **Votre console cliente est le seul composant dont vous êtes responsable pour vous tenir à jour.** Il doit être mis à niveau vers la même version que votre serveur Campaign. Découvrez comment mettre à niveau votre console cliente dans [Mettre à niveau votre console cliente](../start/connect.md#upgrade-ac-console).
 
 En outre, en tant que client ou cliente, assurez-vous d’utiliser les dernières versions prises en charge des systèmes répertoriés dans la [matrice de compatibilité](compatibility-matrix.md).
 
@@ -92,7 +92,7 @@ Notez qu&#39;en tant que client, vous devez également vous assurer d&#39;utilis
 
 Pour vérifier la version de Campaign, accédez au menu **Aide > À propos…** à partir de la console cliente.
 
-![](assets/ac-version.png)
+![À propos de la boîte de dialogue de la console cliente affichant les versions de la console cliente et du serveur d’applications](assets/ac-version.png)
 
 Vous accédez aux informations suivantes :
 
@@ -109,7 +109,7 @@ Vous accédez aux informations suivantes :
 
 Les nouvelles versions et leurs modifications sont répertoriées dans les [notes de mise à jour](release-notes.md).
 
-Pour connaître les mises à jour des versions de produits, abonnez-vous aux [Mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/fr/subscription/priority-product-update.html){target="_blank"} ou visitez la [communauté de Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?profile.language=fr&style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}.
+Pour connaître les mises à jour des versions de produits, abonnez-vous aux [Mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/fr/subscription/priority-product-update.html){target="_blank"} ou visitez la [communauté de Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}.
 
 Pour obtenir des notifications de sécurité et des conseils sur la préparation de votre organisation aux mises à jour de sécurité, consultez [Rester informé](#security-staying-informed).
 

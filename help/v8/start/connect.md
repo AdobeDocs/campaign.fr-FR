@@ -23,10 +23,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 87%
+source-wordcount: '1186'
+ht-degree: 81%
 ---
 # Se connecter à Adobe Campaign v8{#gs-ac-connect}
 
@@ -93,7 +93,7 @@ Pour vous connecter à une instance, procédez comme suit :
 
 1. Démarrez la console et parcourez le lien situé dans le coin droit pour accéder à l’écran de configuration de la connexion.
 
-   ![](assets/connectToCampaign.png)
+   ![Boîte de dialogue Connexions ouverte à partir de l&#39;écran de connexion, avec l&#39;option Se connecter avec un Adobe ID sélectionnée](assets/connectToCampaign.png)
 
 1. Sélectionnez l&#39;instance de Campaign à laquelle vous devez vous connecter.
 
@@ -101,7 +101,7 @@ Pour vous connecter à une instance, procédez comme suit :
 
 Vous pouvez ensuite vous connecter à Campaign à l’aide de votre Adobe ID.
 
-![](assets/adobeID.png)
+![Écran de connexion à Adobe ID de la console cliente Campaign avec le champ e-mail et le bouton Continuer](assets/adobeID.png)
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Adobe Campaign permet de définir et de gérer les droits attribués aux diffé
 
 En tant qu’administrateur/administratrice Campaign, vous êtes chargé(e) de créer les opérateurs et de partager leurs informations d’identification avec les utilisateurs.
 
-En savoir plus sur les utilisateurs et la définition des autorisations adéquates dans [cette section](gs-permissions.md).
+Découvrez-en plus sur les utilisateurs et comment définir leurs autorisations dans [Prise en main des autorisations dans Campaign v8](gs-permissions.md).
 
 
 ## Accéder à Campaign dans un navigateur web {#connect-web-ac}
@@ -153,7 +153,7 @@ En savoir plus sur les utilisateurs et la définition des autorisations adéquat
 >L’interface d’utilisation de Campaign Web n’est disponible que pour les utilisateurs et utilisatrices qui se connectent à Adobe Campaign avec leur Adobe ID. En savoir plus sur le [système de gestion des identités (IMS) Adobe](https://helpx.adobe.com/fr/enterprise/using/identity.html){target="_blank"}.
 >
 
-Découvrez comment vous connecter à [!DNL CX Enterprise] et accéder à l’interface web d’Adobe Campaign [&#x200B; sur cette page](campaign-ui.md#ac-web-ui).
+Découvrez comment vous connecter à [!DNL CX Enterprise] et accéder à l’interface web d’Adobe Campaign [ sur cette page](campaign-ui.md#ac-web-ui).
 
 Pour en savoir plus, consultez la [documentation sur l’interface d’utilisation d’Adobe Campaign Web](https://experienceleague.adobe.com/fr/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
@@ -165,11 +165,11 @@ L&#39;accès web présente une interface similaire à celle de la console, mais 
 
 Par exemple, pour un même opérateur, une opération sera affichée dans la console avec les options suivantes :
 
-![](assets/campaign-from-console.png)
+![Tableau de bord de Campaign dans la console cliente, avec des onglets de modification complets et des actions disponibles](assets/campaign-from-console.png)
 
 Dans le contexte d&#39;un accès web, les options seront en revanche principalement consultatives :
 
-![](assets/campaign-from-web.png)
+![Tableau de bord de Campaign dans l&#39;accès web, avec principalement des options d&#39;affichage](assets/campaign-from-web.png)
 
 L’accès web est également utilisé dans le processus de validation : les opérateurs peuvent cliquer sur l’e-mail de demande de validation et se connecter à Campaign via leur navigateur web pour valider ou refuser le contenu ou le budget d’une diffusion.
 
