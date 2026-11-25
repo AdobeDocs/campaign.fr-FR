@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 58%
+source-wordcount: '1329'
+ht-degree: 53%
 ---
 # Surveiller vos diffusions dans l’interface utilisateur de Campaign {#delivery-dashboard}
 
@@ -46,7 +46,7 @@ La surveillance de vos diffusions est essentielle pour vous assurer que vos camp
 
 Vous pouvez accéder aux diffusions à partir de la liste des diffusions accessible depuis le nœud **[!UICONTROL Gestion de campagne > Diffusions]** de l&#39;arborescence.
 
-![](assets/deliveries-list.png)
+![Liste des diffusions sous Gestion de campagne avec le nombre de statuts et de messages, et le tableau de bord des diffusions sélectionné ci-dessous](assets/deliveries-list.png)
 
 Par défaut, la liste des diffusions contient les noms et statuts des diffusions créées dans le nœud sélectionné. Elle affiche également le nombre de messages à envoyer, traités et envoyés avec succès.
 
@@ -73,7 +73,7 @@ Voici les informations que vous pouvez surveiller à l’aide des différents on
 * [Rendu des diffusions](#delivery-rendering)
 * [Suivi de la diffusion](#delivery-audit-)
 
-![](assets/s_ncs_user_del_details.png)
+![Onglet Résumé du tableau de bord de diffusion avec pour envoyer, traiter et succès les chiffres, le statut et la configuration des e-mails](assets/s_ncs_user_del_details.png)
 
 **Rubriques connexes :**
 
@@ -92,7 +92,7 @@ Le lien **[!UICONTROL Rapports]**, accessible à partir de l&#39;onglet **[!UICO
 
 Le contenu de cet onglet peut être configuré en fonction de vos besoins. Pour plus d&#39;informations sur les rapports de diffusion, reportez-vous à la section [Rapports de diffusion intégrés d&#39;Adobe Campaign](../reporting/delivery-reports.md).
 
-![](assets/delivery-report.png)
+![Vue Rapports de l&#39;onglet Résumé de la diffusion répertoriant les rapports de diffusion disponibles](assets/delivery-report.png)
 
 ## Logs, historique et exclusions de diffusion {#delivery-logs-and-history}
 
@@ -104,13 +104,13 @@ Pour une diffusion, vous pouvez afficher par exemple seulement les destinataires
 >
 >La liste des logs de diffusion peut être personnalisée, comme toute liste dans Campaign. Vous pouvez, par exemple, ajouter une colonne pour connaître l&#39;adresse IP qui a envoyé chaque email dans une diffusion. Pour plus d&#39;informations sur la configuration de l&#39;affichage des listes, consultez la section [Gérer et personnaliser les listes](../config/ui-settings.md#customize-lists).
 
-![](assets/s_ncs_user_delivery_delivery_tab.png)
+![Onglet Diffusion Sous-onglet Logs avec le filtre Statut qui répertorie les statuts des logs de diffusion](assets/s_ncs_user_delivery_delivery_tab.png)
 
 Le lien **[!UICONTROL Afficher la page miroir de ce message...]** vous permet d&#39;afficher la page miroir du contenu de la diffusion sélectionnée dans la liste dans une nouvelle fenêtre.
 
 La page miroir est disponible uniquement pour les diffusions pour lesquelles un contenu HTML a été défini. Pour plus d&#39;informations, consultez la section [Lien vers la page miroir](mirror-page.md).
 
-![](assets/s_ncs_user_wizard_miror_page_link.png)
+![Liste des logs de diffusion avec le lien Afficher la page miroir de ce message en surbrillance](assets/s_ncs_user_wizard_miror_page_link.png)
 
 ## Logs et historique de tracking des diffusions {#tracking-logs}
 
@@ -124,7 +124,7 @@ La configuration du suivi est effectué dans l’assistant de diffusion, à l’
 
 Les données de **[!UICONTROL tracking]** sont interprétées dans les rapports de diffusion. Voir [Rapports de diffusion intégrés à Adobe Campaign](../reporting/delivery-reports.md).
 
-![](assets/s_ncs_user_delivery_tracking_tab.png)
+![Onglet Tracking Sous-onglet Logs répertoriant les ouvertures suivies et les clics avec la date, le libellé, le type et le destinataire](assets/s_ncs_user_delivery_tracking_tab.png)
 
 ## Rendu de la boîte de réception {#delivery-rendering}
 
@@ -145,7 +145,7 @@ Des icônes spécifiques permettent de repérer les erreurs ou avertissements. V
 
 Le sous-onglet **[!UICONTROL BAT]** vous permet de voir la liste des BAT qui ont été envoyés.
 
-![](assets/s_ncs_user_delivery_log_tab.png)
+![Onglet Audit Sous-onglet BAT répertoriant les BAT envoyés pour la diffusion avec les messages à envoyer, traités et réussis](assets/s_ncs_user_delivery_log_tab.png)
 
 Vous pouvez modifier les informations affichées dans cette fenêtre (ainsi que celles des onglets **[!UICONTROL Diffusion]** et **[!UICONTROL Tracking]**) en sélectionnant les colonnes à afficher. Pour cela, cliquez sur l&#39;icône **[!UICONTROL Configurer la liste]**, située en bas à droite. Pour plus d&#39;informations sur la configuration de l&#39;affichage des listes, consultez la section [Gérer et personnaliser les listes](../config/ui-settings.md#customize-lists).
 

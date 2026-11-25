@@ -26,10 +26,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 93%
+source-wordcount: '337'
+ht-degree: 78%
 ---
 # Envoyer un BAT pour une diffusion SMS {#sms-proof}
 
@@ -39,7 +39,7 @@ Vous pouvez envoyer un BAT pour votre diffusion SMS afin de la valider :
 
 1. Cliquez sur le bouton **[!UICONTROL Envoyer un BAT]**, une fenêtre s’ouvre.
 
-   ![](assets/proof_targeting.png){zoomable="yes"}
+   ![Envoyez une boîte de dialogue de BAT avec la liste Mode de ciblage : cible du BAT spécifique, substitution d&#39;adresse, adresses de contrôle ou les deux](assets/proof_targeting.png){zoomable="yes"}
 
    Vous avez plusieurs modes pour envoyer un BAT :
 
@@ -53,12 +53,12 @@ Vous pouvez envoyer un BAT pour votre diffusion SMS afin de la valider :
 
    Dans l’exemple ci-dessous, nous choisissons **[!UICONTROL Définition d’une cible spécifique au BAT]** et ajoutons une personne destinataire :
 
-   ![](assets/proof_recipient.png){zoomable="yes"}
+   ![Envoyez une boîte de dialogue sur le BAT dans la Définition d’un mode cible de BAT spécifique avec un destinataire ajouté et le bouton Analyser](assets/proof_recipient.png){zoomable="yes"}
 
 1. Cliquez sur le bouton **[!UICONTROL Analyser]**.
 Adobe Campaign effectuera tout le contrôle avant de valider l’envoi du BAT. À la fin de l’analyse, le bouton **[!UICONTROL Confirmer la diffusion]** ne sera pas cliquable.
 
-   ![](assets/proof_analyze.png){zoomable="yes"}
+   ![Envoyer une boîte de dialogue de BAT après l&#39;analyse : préparation terminée, 1 message à envoyer, journal d&#39;analyse et bouton Confirmer la diffusion](assets/proof_analyze.png){zoomable="yes"}
 
 1. Pour envoyer le BAT de votre diffusion SMS, cliquez sur le bouton **[!UICONTROL Confirmer la diffusion]**.
 

@@ -26,10 +26,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 100%
+source-wordcount: '156'
+ht-degree: 79%
 ---
 # Envoyer votre diffusion SMS à l’audience {#sms-send-audience}
 
@@ -40,10 +40,10 @@ Dans la fenêtre qui s’ouvre, choisissez l’action qui vous convient.
 
    Dans l’exemple ci-dessous, nous choisissons de **[!UICONTROL le diffuser dès que possible]**, le bouton **[!UICONTROL Analyser]** s’affiche. Nous cliquons sur ce bouton **[!UICONTROL Analyser]**.
 
-   ![](assets/send_action.png){zoomable="yes"}
+   ![Envoyer à la boîte de dialogue principale de la cible de la diffusion avec Diffuser dès que possible sélectionné et Analyser mis en surbrillance](assets/send_action.png){zoomable="yes"}
 
    Adobe Campaign effectuera tout le contrôle avant de valider l’envoi du BAT. Vous y verrez le volume réel de l’audience. À la fin de l’analyse, le bouton **[!UICONTROL Confirmer la diffusion]** ne sera pas cliquable.
 
-   ![](assets/send_analyze.png){zoomable="yes"}
+   ![Analyse de la diffusion terminée indiquant le nombre de messages à envoyer et le bouton Confirmer la diffusion](assets/send_analyze.png){zoomable="yes"}
 
 1. Pour envoyer la diffusion SMS à son audience, cliquez sur le bouton **[!UICONTROL Confirmer la diffusion]**.

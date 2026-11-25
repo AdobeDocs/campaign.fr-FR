@@ -26,10 +26,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 96%
+source-wordcount: '802'
+ht-degree: 83%
 ---
 # Rendu de la boîte de réception{#inbox-rendering}
 
@@ -72,7 +72,7 @@ Chaque fois que vous utilisez la fonctionnalité **[!UICONTROL Inbox rendering]*
 
 Le nombre de jetons disponibles restants est indiqué dans le [rapport d’inbox rendering](#inbox-rendering-report).
 
-![](assets/s_tn_inbox_rendering_tokens.png)
+![Rapport Résultats de l’inbox rendering avec le nombre de jetons utilisés hors du package mensuel mis en surbrillance](assets/s_tn_inbox_rendering_tokens.png)
 
 En règle générale, la fonction d’inbox rendering permet de tester le framework HTML d’un e-mail nouvellement conçu. Chaque rendu nécessite environ jusqu’à 70 jetons (en fonction du nombre d’environnements généralement testés). Cependant, dans certains cas, vous aurez peut-être besoin de plusieurs rapports d’Inbox Rendering pour tester entièrement votre diffusion. Plusieurs contrôles pourraient donc nécessiter davantage de jetons.
 
@@ -87,17 +87,17 @@ Pour plus d&#39;informations sur la création, la conception et le ciblage d&#39
 
 1. Sélectionnez **[!UICONTROL Analyser]** pour commencer la capture.
 
-   ![](assets/s_tn_inbox_rendering_button.png)
+   ![Bouton Inbox rendering dans la barre d&#39;outils de diffusion et bouton Analyser de la boîte de dialogue Inbox rendering](assets/s_tn_inbox_rendering_button.png)
 
    Un BAT est envoyé. Les miniatures de rendu sont accessibles dans ce BAT quelques minutes après l’envoi des e-mails. Pour plus d&#39;informations sur l&#39;envoi de BAT, voir [Envoyer des BAT](preview-and-proof.md#send-proofs).
 
 1. Une fois envoyé, le BAT apparaît dans la liste de diffusion. Double-cliquez dessus.
 
-   ![](assets/s_tn_inbox_rendering_delivery_list.png)
+   ![Liste des diffusions avec le BAT de la diffusion e-mail sélectionnée après son envoi](assets/s_tn_inbox_rendering_delivery_list.png)
 
 1. Accédez à l&#39;onglet **Inbox Rendering** du BAT.
 
-   ![](assets/s_tn_inbox_rendering_tab.png)
+   ![Onglet Inbox Rendering du BAT, en surbrillance, avec le résumé du rapport et la section Mobile](assets/s_tn_inbox_rendering_tab.png)
 
    Le rapport d&#39;inbox rendering s&#39;affiche.
 
@@ -107,14 +107,14 @@ Ce rapport présente les Inbox Renderings tels qu’ils apparaissent côté dest
 
 La section supérieure présente la répartition du nombre de messages reçus, indésirables (spam), non reçus ou en attente de réception au moyen d’une représentation graphique avec code-couleur.
 
-![](assets/s_tn_inbox_rendering_summary.png){width="40%"}
+![Graphique à secteurs Boîte de réception, Spam, Non reçu et En attente de réception, avec Non reçu et En attente masqué](assets/s_tn_inbox_rendering_summary.png){width="40%"}
 
 Survolez le graphique avec la souris pour afficher les détails de chaque couleur. Cliquez sur un élément de la liste pour masquer ou afficher la catégorie correspondante dans le graphique.
 
 Le corps du rapport est divisé en trois parties : **[!UICONTROL Mobile]**, **[!UICONTROL Bureau]** et **[!UICONTROL Webmails]**. Faites défiler le rapport pour afficher tous les rendus regroupés dans ces trois catégories.
 
-![](assets/s_tn_inbox_rendering_report.png)
+![Section Webmails du rapport d&#39;Inbox rendering avec une carte pour chaque combinaison webmail et navigateur](assets/s_tn_inbox_rendering_report.png)
 
 Pour voir les détails de chaque rapport, cliquez sur la vignette correspondante. Le rendu s’affiche pour le moyen de réception sélectionné.
 
-![](assets/s_tn_inbox_rendering_example.png)
+![Rendu détaillé de l’e-mail dans Gmail sur Chrome, ouvert à partir de sa carte dans le rapport](assets/s_tn_inbox_rendering_example.png)

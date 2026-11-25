@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 90%
+source-wordcount: '904'
+ht-degree: 86%
 ---
 # Envoyer et surveiller les messages transactionnels {#delivery-execution}
 
@@ -71,7 +71,7 @@ Adobe Campaign propose plusieurs rapports qui permettent de contrôler l&#39;ac
 
 Ces rapports Message Center sont accessibles à partir de l&#39;onglet **[!UICONTROL Rapports]** de l&#39;**instance de pilotage**.
 
-![](assets/mc-reports.png)
+![Page des rapports globaux dans l&#39;onglet Rapports avec les trois rapports Message Center en surbrillance](assets/mc-reports.png)
 
 ### Historique des événements de Message Center {#history-events}
 
@@ -86,7 +86,7 @@ Pour chaque période de temps, vous pouvez visualiser les données propres à ch
 
 Le rapport **[!UICONTROL Temps de traitement Message Center]** affiche les principaux indicateurs relatifs à la file d’attente en temps réel. Ce rapport est également accessible à partir de l’onglet **[!UICONTROL Surveillance]** de l’instance de pilotage.
 
-![](assets/mc-processing-time-report.png)
+![Rapport Temps de traitement Message Center avec filtres de canal, d&#39;instance et de période, indicateurs et graphique](assets/mc-processing-time-report.png)
 
 Vous pouvez choisir d’afficher les statistiques globales ou relatives à une instance d’exécution particulière. Vous pouvez également filtrer les données par canal et sur une période spécifique.
 
@@ -119,8 +119,8 @@ Les indicateurs affichés dans la section **[!UICONTROL Indicateurs sur la péri
 * **[!UICONTROL Entrant (volume evt)]** : nombre d’événements entrés dans la file d’attente Message Center.
 * **[!UICONTROL Sortant (débit msg/h)]** : moyenne horaire du nombre d’événements sortant avec succès de Message Center (envoyés par une diffusion).
 * **[!UICONTROL Sortant (volume msg)]** : nombre d’événements sortant avec succès de Message Center (envoyés par une diffusion).
-* **[!UICONTROL Temps moyen d’envoi (secondes)]** : temps moyen passé dans Message Center pour les événements traités avec succès. Le calcul prend en compte le temps de traitement et le temps d’envoi par le MTA.
-* **[!UICONTROL Taux d’erreur]** : nombre d’événements en erreur par rapport au nombre d’événements entrés dans la file d’attente Message Center. Les erreurs suivantes sont prises en compte : erreur de routage, événement expiré (événement resté trop longtemps dans la file d’attente), erreur de diffusion, ignoré par la diffusion (quarantaine, etc.).
+* **[!UICONTROL Temps d’envoi moyen (secondes)]** : temps moyen passé dans Message Center pour les événements traités avec succès. Le calcul prend en compte le temps de traitement et le temps d’envoi par le MTA.
+* **[!UICONTROL Taux d&#39;erreur]** : nombre d&#39;événements en erreur par rapport au nombre d&#39;événements entrés dans la file d&#39;attente Message Center. Les erreurs suivantes sont prises en compte : erreur de routage, événement expiré (événement resté trop longtemps dans la file d’attente), erreur de diffusion, ignoré par la diffusion (quarantaine, etc.).
 
 >[!NOTE]
 >
@@ -135,4 +135,4 @@ Pour ce faire, procédez comme suit :
 1. Ouvrez l’assistant de déploiement dans l’**instance d’exécution** et accédez à la page **[!UICONTROL Message Center]**.
 1. Utilisez les flèches pour modifier les seuils.
 
-   ![](assets/mc-thresholds.png)
+   ![Assistant de configuration de Message Center avec paramètres de l&#39;instance d&#39;exécution et seuils d&#39;avertissement et d&#39;alerte](assets/mc-thresholds.png)

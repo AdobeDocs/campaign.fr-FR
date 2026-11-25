@@ -37,10 +37,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 66%
+source-wordcount: '1481'
+ht-degree: 64%
 ---
 # Quarantaine {#quarantine-management}
 
@@ -62,7 +62,7 @@ D&#39;un autre côté, les **profils** peuvent être sur la **liste bloquée**, 
 
 >[!NOTE]
 >
->Les destinataires désabonnés via la méthode List-Unsubscribe [« mailto »](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} ne sont pas mis en quarantaine. Ils sont soit désabonnés du [service](../start/subscriptions.md) associé à la diffusion, soit envoyés à la (visible dans la section **[!UICONTROL Ne plus contacter]** du profil) si aucun service n&#39;a été défini pour la diffusion.
+>Les destinataires désabonnés via la méthode List-Unsubscribe [« mailto »](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} ne sont pas mis en quarantaine. Ils sont soit désabonnés du [service](../start/subscriptions.md) associé à la diffusion, soit envoyés à la (visible dans la section **[!UICONTROL Ne plus contacter]** du profil) si aucun service n&#39;a été défini pour la diffusion.
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 
@@ -109,7 +109,7 @@ En savoir plus sur les rapports de diffusion dans [Prise en main des outils de r
 
 Pour afficher la liste des adresses en quarantaine **pour l&#39;ensemble de la plateforme**, les administrateurs de Campaign peuvent accéder à **[!UICONTROL Administration > Campaign Management > Gestion des échecs > Échecs et adresses]**. Cette section répertorie les éléments en quarantaine pour les canaux **e-mail**, **SMS** et **notification push**.
 
-![](assets/tech-quarantine.png)
+![Enregistrement d&#39;adresse en quarantaine avec statut Quarantaine, raison de l&#39;erreur, texte de l&#39;erreur et action de diffusion](assets/tech-quarantine.png)
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ Pour cela, sélectionnez le profil du destinataire et cliquez sur l&#39;onglet *
 
 Pour chaque dossier, vous ne pouvez afficher que les destinataires dont l&#39;adresse e-mail est en quarantaine, avec le filtre intégré **[!UICONTROL E-mail en quarantaine]**, comme ci-dessous :
 
-![](assets/quarantine-filter.png)
+![Menu Filtres de liste de destinataires avec le filtre intégré Adresse e-mail en quarantaine en surbrillance](assets/quarantine-filter.png)
 
 
 ## Supprimer une adresse de la quarantaine {#remove-a-quarantined-address}
@@ -156,7 +156,7 @@ Leur état devient ensuite **[!UICONTROL Valide]**.
 
 Vous pouvez également supprimer manuellement une adresse de la liste de quarantaine. Pour supprimer manuellement une adresse de la quarantaine, vous pouvez modifier son statut en **[!UICONTROL Valide]** à partir du nœud **[!UICONTROL Administration > Gestion de campagne > Gestion des échecs > Échecs et adresses]**.
 
-![](assets/tech-quarantine-status.png)
+![Enregistrement d&#39;adresse avec la liste déroulante Statut ouverte et le statut Valide sélectionné pour le supprimer de la quarantaine](assets/tech-quarantine-status.png)
 
 ### Mises à jour en bloc {#unquarantine-bulk}
 

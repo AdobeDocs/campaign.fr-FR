@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 50%
+source-wordcount: '643'
+ht-degree: 47%
 ---
 # Configuration des liens trackés {#how-to-configure-tracked-links}
 
@@ -45,11 +45,11 @@ Le tracking des messages est activé par défaut. Pour personnaliser le suivi de
 
 1. Sélectionnez l’option **[!UICONTROL Afficher les URL]**, située dans la section inférieure de l’assistant de diffusion, sous le contenu du message.
 
-   ![](assets/s_ncs_user_email_del_display_urls.png)
+   ![Diffuser du contenu HTML avec l&#39;option Afficher les URL sous le contenu, pas encore sélectionnée](assets/s_ncs_user_email_del_display_urls.png)
 
    Lorsque vous sélectionnez une URL dans la liste des URL suivies, elle est mise en surbrillance dans le contenu de la diffusion, à l’exception du lien de la page miroir et du lien de désinscription qui sont fournis par défaut.
 
-   ![](assets/s_ncs_user_email_del_show_urls.png)
+   ![Liste des URL suivies avec une URL sélectionnée et son lien correspondant mis en surbrillance dans le contenu de la diffusion](assets/s_ncs_user_email_del_show_urls.png)
 
 1. Pour chaque URL du message, choisissez d’activer ou non le tracking.
 
@@ -67,7 +67,7 @@ Le tracking des messages est activé par défaut. Pour personnaliser le suivi de
 
 1. Au besoin, modifiez le tracking, sélectionnez un nouveau mode dans la colonne **[!UICONTROL Tracking]** correspondant au lien visé, comme dans l’exemple ci-dessous :
 
-   ![](assets/s_ncs_user_select_tracking_mode.png)
+   ![Liste déroulante Colonne de tracking répertoriant les modes de tracking d’une URL, de Activé à Page miroir](assets/s_ncs_user_select_tracking_mode.png)
 
    Pour chaque URL, vous pouvez définir le mode de tracking sur l’une de ces valeurs :
 
@@ -88,8 +88,8 @@ Nous vous recommandons vivement de placer les URL dans des délimiteurs dans l&#
 * Crochets [ ]
 * Accolades { }
 
-Dans cet exemple, l&#39;URL https://www.adobe.com/fr est suivie d&#39;un point-virgule. Le point-virgule peut être interprété par les clients de messagerie des destinataires comme faisant partie de l&#39;URL. Par conséquent, le lien peut être rompu. Pour éviter ce problème, vous pouvez placer l&#39;URL dans des délimiteurs de l&#39;une des façons suivantes :
+Dans cet exemple, l&#39;URL https://www.adobe.com est suivie d&#39;un point-virgule. Le point-virgule peut être interprété par les clients de messagerie des destinataires comme faisant partie de l&#39;URL. Par conséquent, le lien peut être rompu. Pour éviter ce problème, vous pouvez placer l&#39;URL dans des délimiteurs de l&#39;une des façons suivantes :
 
-* (https://www.adobe.com/fr);
-* [https://www.adobe.com/fr];
-* {https://www.adobe.com/fr};
+* (https://www.adobe.com);
+* [https://www.adobe.com];
+* {https://www.adobe.com};

@@ -20,10 +20,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 60%
+source-wordcount: '1095'
+ht-degree: 55%
 ---
 # Paramètres de l’e-mail {#email-parameters}
 
@@ -37,7 +37,7 @@ Vous pouvez configurer Adobe Campaign pour conserver une copie des e-mails envo
 
 Vous pouvez modifier le format des e-mails envoyés. Pour cela, éditez les propriétés de la diffusion et cliquez sur le bouton **[!UICONTROL Diffusion]**.
 
-![](assets/email-message-format.png)
+![Onglet Diffusion des propriétés de diffusion avec la section Formats des emails mise en surbrillance et trois options de format](assets/email-message-format.png)
 
 Sélectionnez le format du mail dans la section inférieure de la fenêtre :
 
@@ -73,7 +73,7 @@ Par exemple, vous souhaitez envoyer un email contenant des caractères japonais.
 
 Pour ce faire, sélectionnez l’option **[!UICONTROL Forcer l&#39;encodage des messages (codepage)]** dans la section **[!UICONTROL Encodage des caractères]**, puis choisissez un encodage dans la liste déroulante qui s’affiche.
 
-![](assets/email-smtp-encoding.png)
+![Onglet SMTP avec Forcer l&#39;encodage des messages sélectionnés et la liste déroulante Encodage ouverte](assets/email-smtp-encoding.png)
 
 ## Gérer les e-mails de rebond {#managing-bounce-emails}
 
@@ -85,17 +85,17 @@ L’onglet **[!UICONTROL SMTP]** des propriétés de la diffusion permet de conf
 
 Chacun de ces champs peut être personnalisé à l’aide de l’icône dédiée. En savoir plus sur les champs de personnalisation dans la section [Ajouter des champs de personnalisation](personalization-fields.md).
 
-![](assets/email-smtp-bounce.png)
+![Onglet SMTP avec la section E-mails de rebond mise en surbrillance : champs Adresse de destination des erreurs et Adresse de rebond](assets/email-smtp-bounce.png)
 
 Pour plus d&#39;informations sur la gestion des mails rebonds, consultez la section [Qualification des mails rebonds](delivery-failures.md#bounce-mail-qualification).
 
 ## Activer le désabonnement de la liste en un clic {#one-click-list-unsubscribe}
 
-L’URL list-unsubscribe en un clic est un lien ou un bouton affiché en regard des informations de l’expéditeur de l’e-mail, qui permet aux destinataires de se désinscrire instantanément de vos listes de diffusion en un seul clic. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"}-->
+L’URL list-unsubscribe en un clic est un lien ou un bouton affiché en regard des informations de l’expéditeur de l’e-mail, qui permet aux destinataires de se désinscrire instantanément de vos listes de diffusion en un seul clic. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
 
 Elle s&#39;affiche sous la forme d&#39;un lien **Se désabonner** dans les interfaces de messagerie des FAI. Par exemple :
 
-![](assets/email-list-unsubscribe-example.png)
+![Ligne d&#39;expéditeur du client de messagerie avec le lien de désabonnement affiché à côté de l&#39;adresse d&#39;expéditeur](assets/email-list-unsubscribe-example.png)
 
 L’ajout d’un en-tête SMTP appelé List-Unsubscribe est obligatoire pour assurer une gestion optimale de la délivrabilité et peut être utilisé comme alternative à l’icône « Signaler comme SPAM ». En effet, l&#39;utilisation de cette fonctionnalité réduit les taux de plainte et contribue à protéger votre réputation.
 
@@ -109,7 +109,7 @@ Pour activer cette fonctionnalité, sélectionnez l&#39;option **[!UICONTROL Ajo
 >
 >Cette option est activée par défaut.
 
-![](assets/email-smtp-list-unsubscribe.png)
+![Onglet SMTP avec la section List-Unsubscribe en un clic et l’option d’en-tête sélectionnée par défaut](assets/email-smtp-list-unsubscribe.png)
 
 <!--
 >[!WARNING]
@@ -131,7 +131,7 @@ Selon le client de messagerie et la méthode qu&#39;il utilise pour effectuer un
 
 >[!NOTE]
 >
->Vous pouvez également définir manuellement les méthodes [List-Unsubscribe en un clic](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} et [« mailto » List-Unsubscribe](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}. Les étapes détaillées sont décrites dans le [Guide des bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"} d’Experience Cloud.
+>Vous pouvez également définir manuellement les méthodes [List-Unsubscribe en un clic](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} et [« mailto » List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}. Les étapes détaillées sont décrites dans le [Guide des bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"} d’Experience Cloud.
 
 
 ## Ajouter des en-têtes SMTP {#adding-smtp-headers}
@@ -148,7 +148,7 @@ Les valeurs sont automatiquement encodées, si nécessaire.
 >
 >La syntaxe de ce script doit être strictement conforme aux exigences de ce type de contenu : aucun espace superflu, aucune ligne vide, etc.
 
-![](assets/email-smtp-headers.png)
+Onglet ![SMTP avec la zone de script En-têtes SMTP supplémentaires mise en surbrillance, au format :value du nom](assets/email-smtp-headers.png)
 
 
 ## Générer une page miroir {#generating-mirror-page}

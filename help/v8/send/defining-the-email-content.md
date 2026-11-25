@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '2197'
-ht-degree: 90%
+source-wordcount: '2602'
+ht-degree: 76%
 ---
 # Définition du contenu de l’e-mail {#defining-the-email-content}
 
@@ -39,7 +39,7 @@ ht-degree: 90%
 
 Pour définir le nom et l’adresse de l’expéditeur qui apparaîtront dans l’en-tête des messages envoyés, cliquez sur le lien **[!UICONTROL De]**.
 
-![](assets/s_ncs_user_wizard_email02.png)
+![Boîte de dialogue des paramètres d’en-tête d’e-mail ouverte à partir du lien De, avec le menu de personnalisation dans le champ De](assets/s_ncs_user_wizard_email02.png)
 
 Cette fenêtre permet de saisir toutes les informations nécessaires à l’élaboration des en-têtes de messages e-mail. Ces informations peuvent être personnalisées. Cette fenêtre permet de saisir toutes les informations nécessaires à l’élaboration des en-têtes de messages e-mail.
 
@@ -64,7 +64,7 @@ L&#39;objet du message est paramétré dans le champ correspondant. Vous pouvez 
 >
 >L&#39;objet du message est obligatoire.
 
-![](assets/s_ncs_user_wizard_email_object.png)
+![Boîte de dialogue Modifier l’objet du message avec le menu de personnalisation ouvert sur Destinataire pour insérer le Prénom](assets/s_ncs_user_wizard_email_object.png)
 
 Le contenu des champs sera remplacé par la valeur enregistrée dans le profil du destinataire lors de l&#39;envoi du message.
 
@@ -106,11 +106,11 @@ Les messages sont envoyés par défaut au format HTML ou texte, selon les préf�
 
   Les boutons de la barre d&#39;outils permettent d&#39;accéder aux paramètres de mise en forme standard pour la page HTML.
 
-  ![](assets/s_ncs_user_wizard_email01_138.png)
+  ![Onglet de contenu HTML avec la barre d’outils de mise en forme et le bouton Insérer un lien hypertexte en surbrillance](assets/s_ncs_user_wizard_email01_138.png)
 
   Vous pouvez insérer des images dans les messages depuis un fichier local ou depuis la bibliothèque d&#39;images disponible dans Adobe Campaign. Pour cela, cliquez sur l&#39;icône **[!UICONTROL Image]** et sélectionnez l&#39;option adéquate.
 
-  ![](assets/s_ncs_user_wizard_email01_18.png)
+  ![Menu du bouton Image dans la barre d’outils HTML avec les options À partir d’un fichier local et À partir de la bibliothèque](assets/s_ncs_user_wizard_email01_18.png)
 
   Les images de la bibliothèque sont accessibles depuis le dossier **[!UICONTROL Ressources>On-line>Ressources publiques]** de l’arborescence. Voir aussi la section [Ajout d’images](#adding-images).
 
@@ -122,19 +122,19 @@ Les messages sont envoyés par défaut au format HTML ou texte, selon les préf�
 
   Les onglets en bas de page permettent d’afficher le code HTML associé à la page en cours de création et de visualiser le rendu du message, avec sa personnalisation. Pour lancer la visualisation, cliquez sur l’onglet **[!UICONTROL Aperçu]** et sélectionnez un destinataire à partir du bouton **[!UICONTROL Tester la personnalisation]** situé dans la barre d’outils. Vous pouvez sélectionner un destinataire parmi la ou les cibles définies ou choisir un autre destinataire.
 
-  ![](assets/s_ncs_user_wizard_email01_139.png)
+  ![Aperçu dans l&#39;onglet contenu d&#39;HTML : menu de personnalisation pour choisir un destinataire, une adresse de contrôle ou une population cible](assets/s_ncs_user_wizard_email01_139.png)
 
   Vous pouvez valider le message HTML. Vous pouvez également visualiser le contenu de l’en-tête de l’e-mail.
 
-  ![](assets/s_ncs_user_wizard_email01_140.png)
+  ![Aperçu HTML pour un destinataire sélectionné, avec un objet et un contenu personnalisés et l&#39;en-tête De, Objet et Taille](assets/s_ncs_user_wizard_email01_140.png)
 
 * Pour importer un contenu texte, utilisez le bouton **[!UICONTROL Ouvrir]** ou l’onglet **[!UICONTROL Contenu texte]** pour saisir le contenu du message lorsqu’il sera affiché au format texte. Utilisez les boutons de la barre d’outils pour accéder aux actions sur le contenu. Le dernier bouton permet d’insérer des champs de personnalisation.
 
-  ![](assets/s_ncs_user_wizard_email01_141.png)
+  ![Onglet Contenu texte avec la source du message en texte brut et les champs de personnalisation](assets/s_ncs_user_wizard_email01_141.png)
 
   En ce qui concerne le format HTML, cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** au bas de la page pour visualiser le rendu du message avec sa personnalisation.
 
-  ![](assets/s_ncs_user_wizard_email01_142.png)
+  ![Aperçu du contenu textuel pour un destinataire sélectionné, avec du texte personnalisé et la page miroir et les blocs de désinscription](assets/s_ncs_user_wizard_email01_142.png)
 
 
 ## Définition du contenu interactif {#amp-for-email-format}
@@ -147,11 +147,11 @@ Pour plus d&#39;informations, consultez la section [Définir du contenu interact
 
 Vous pouvez définir le contenu de la diffusion en utilisant les formulaires d’une gestion de contenu, directement dans l’assistant de diffusion. Pour cela, vous devez référencer le modèle de publication de la gestion de contenu à utiliser, dans l&#39;onglet **[!UICONTROL Avancé]** des propriétés de la diffusion.
 
-![](assets/s_ncs_content_in_delivery.png)
+![Onglet Avancé des propriétés de diffusion avec un modèle de publication sélectionné dans le champ Modèle](assets/s_ncs_content_in_delivery.png)
 
 Ainsi, un onglet supplémentaire permet de saisir un contenu qui sera automatiquement intégré et mis en forme selon les règles de la gestion de contenu.
 
-![](assets/s_ncs_content_in_delivery_edition_tab.png)
+![Diffusion avec un modèle de contenu, affichant l&#39;onglet Modifier avec les champs de contenu à remplir](assets/s_ncs_content_in_delivery_edition_tab.png)
 
 >[!NOTE]
 >
@@ -164,7 +164,7 @@ Vous pouvez insérer des émoticônes dans le contenu d’un email.
 1. Cliquez sur l’icône **[!UICONTROL Insérer une émoticône]**.
 1. Sélectionnez une émoticône dans la fenêtre pop-up.
 
-   ![](assets/emoticon_4.png)
+   ![Fenêtre pop-up Insérer une émoticône répertoriant les émoticônes disponibles, une étant sélectionnée pour le contenu HTML](assets/emoticon_4.png)
 
 1. Cliquez sur le bouton **[!UICONTROL Fermer]** lorsque vous avez terminé.
 
@@ -196,7 +196,7 @@ Ces images peuvent être :
 
 L’assistant de diffusion vous permet d’ajouter dans le contenu des messages des images locales ou des images stockées dans la bibliothèque. Pour cela, cliquez sur le bouton **[!UICONTROL Image]** situé dans la barre d&#39;outils du contenu HTML.
 
-![](assets/s_ncs_user_image_from_library.png)
+![Menu du bouton Image dans la barre d’outils HTML avec l’option À partir de la bibliothèque sélectionnée](assets/s_ncs_user_image_from_library.png)
 
 >[!IMPORTANT]
 >
@@ -205,18 +205,18 @@ L’assistant de diffusion vous permet d’ajouter dans le contenu des messages 
 Pour gérer les images via l’assistant de diffusion, procédez comme suit :
 
 1. Cliquez sur l’icône **[!UICONTROL Tracking &amp; Images]** dans la barre d’outils.
-   ![](assets/s_ncs_user_email_del_img_param.png)
+   ![Bouton Tracking et images mis en surbrillance dans la barre d&#39;outils de diffusion](assets/s_ncs_user_email_del_img_param.png)
 
 1. Sélectionnez **[!UICONTROL Chargement des images]** dans l’onglet **[!UICONTROL Images]**.
 1. Vous pouvez ensuite choisir d’inclure les images dans le message email.
-   ![](assets/s_ncs_user_email_del_img_upload.png)
+   Onglet ![Images avec l’option Charger les images sélectionnée et la liste des images détectées avec leur statut Pas encore en ligne](assets/s_ncs_user_email_del_img_upload.png)
 
 * Vous pouvez charger les images manuellement sans attendre la phase d’analyse de la diffusion. Pour ce faire, cliquez sur le lien **[!UICONTROL Charger les images tout de suite...]**.
 * Vous pouvez spécifier un autre chemin d’accès aux images sur le serveur de tracking. Pour ce faire, renseignez-le dans le champ **[!UICONTROL URL des images]**. Cette valeur remplace la valeur définie dans les paramètres de l’assistant d’installation.
 
 Dans l’assistant de diffusion, lorsque vous ouvrez un contenu HTML avec des images incluses, un message vous propose alors de charger immédiatement les images, selon les paramètres de la diffusion.
 
-![](assets/s_ncs_user_email_del_img_local.png)
+![Invite demandant s&#39;il faut publier maintenant les images relatives du fichier HTML ouvert, avec les boutons Oui et Non](assets/s_ncs_user_email_del_img_local.png)
 
 >[!IMPORTANT]
 >
@@ -227,11 +227,11 @@ Dans l’assistant de diffusion, lorsque vous ouvrez un contenu HTML avec des im
 
 Voici un exemple de diffusion avec quatre images :
 
-![](assets/s_ncs_user_images_in_delivery_wiz_1.png)
+![Contenu HTML d&#39;une diffusion avec des flèches pointant vers ses quatre images](assets/s_ncs_user_images_in_delivery_wiz_1.png)
 
 Ces images sont issues d&#39;un répertoire local ou d&#39;un site web, comme vous pouvez le vérifier depuis l&#39;onglet **[!UICONTROL Source]**.
 
-![](assets/s_ncs_user_images_in_delivery_wiz_2.png)
+![Onglet Source de la diffusion affichant les chemins d’accès aux images, depuis un répertoire local ou un site web, matérialisés par des flèches](assets/s_ncs_user_images_in_delivery_wiz_2.png)
 
 Cliquez sur l&#39;icône **[!UICONTROL Tracking &amp; Images]** puis sur l&#39;onglet **[!UICONTROL Images]** pour lancer la détection des images présentes dans le message.
 
@@ -249,7 +249,7 @@ Lors de la phase d&#39;analyse du message, les images sont automatiquement tél�
 
 Vous pouvez anticiper le chargement des images afin qu’elles puissent être visualisées par d’autres opérateurs et opératrices d’Adobe Campaign. Cela peut s’avérer utile si vous travaillez en collaboration. Pour cela, sélectionnez l&#39;option **[!UICONTROL Charger les images tout de suite]** et cliquez sur le lien pour charger les images sur le serveur.
 
-![](assets/s_ncs_user_images_in_delivery_wiz_3.png)
+Onglet ![Images répertoriant les chemins d’accès aux images locales avec le statut Pas encore en ligne et le lien Télécharger les images immédiatement](assets/s_ncs_user_images_in_delivery_wiz_3.png)
 
 >[!NOTE]
 >
@@ -257,11 +257,11 @@ Vous pouvez anticiper le chargement des images afin qu’elles puissent être vi
 
 Une fois les images en ligne, vous pouvez visualiser la modification de leur nom et de leur chemin d&#39;accès depuis l&#39;onglet **[!UICONTROL Source]** du message.
 
-![](assets/s_ncs_user_images_in_delivery_wiz_4.png)
+![Onglet Source après le chargement, avec les URL des images remplacées par de nouveaux chemins signalés par des flèches](assets/s_ncs_user_images_in_delivery_wiz_4.png)
 
 Si vous cochez l&#39;option **[!UICONTROL Inclure les images dans l&#39;email]**, vous pouvez choisir quelles images inclure ou ne pas inclure depuis la colonne correspondante.
 
-![](assets/s_ncs_user_images_in_delivery_wiz_5.png)
+![Onglet Images avec Inclure les images dans l’e-mail sélectionné et l’option Inclure dans l’e-mail pour une image](assets/s_ncs_user_images_in_delivery_wiz_5.png)
 
 >[!NOTE]
 >
@@ -275,7 +275,7 @@ Il est possible de générer dynamiquement un code-barres sous forme d’image b
 
 Pour insérer un code-barres dans un email, positionnez le curseur dans le contenu, là où vous souhaitez l&#39;afficher, et cliquez sur le bouton de personnalisation. Choisissez **[!UICONTROL Inclure > Code-barres...]**.
 
-![](assets/barcode_insert_14.png)
+![Menu Personalization dans l’éditeur HTML avec les options Inclure et Code à barres sélectionnées](assets/barcode_insert_14.png)
 
 Puis paramétrez les éléments suivants en fonction de vos besoins :
 
@@ -285,28 +285,28 @@ Puis paramétrez les éléments suivants en fonction de vos besoins :
 
      Exemple de code-barres 1D :
 
-     ![](assets/barcode_insert_08.png)
+     ![Exemple de code-barres 1D dont le numéro se trouve sous](assets/barcode_insert_08.png)
 
    * Les types DataMatrix et PDF417 concernent le format 2D.
 
      Exemple de code-barres 2D :
 
-     ![](assets/barcode_insert_09.png)
+     ![Exemple de code-barres DataMatrix 2D](assets/barcode_insert_09.png)
 
    * Pour insérer un code QR, sélectionnez ce type et indiquez le taux de correction d’erreur à appliquer. Ce taux définit la quantité d’informations répétées et donc une tolérance plus ou moins importante aux dégradations.
 
-     ![](assets/barcode_insert_06.png)
+     ![Paramètres de code à barres avec le type Code QR, une valeur avec un champ de personnalisation et une correction d&#39;erreur de 30 %](assets/barcode_insert_06.png)
 
      Exemple de QR Code :
 
-     ![](assets/barcode_insert_12.png)
+     ![Exemple de code QR](assets/barcode_insert_12.png)
 
 1. Indiquez la taille du code-barres à insérer dans l&#39;email : le paramétrage de l&#39;échelle permet d&#39;augmenter ou de réduire la taille du code-barres, de x 1 à x 10.
 1. Le champ **[!UICONTROL Valeur]** permet de définir la valeur du code-barres. Une valeur peut correspondre à une offre spéciale et peut être la fonction d&#39;un critère, elle peut être la valeur d&#39;un champ de base de données lié aux clients.
 
    L&#39;exemple ci-dessous montre un code-barres de type EAN-8 auquel a été ajouté le numéro de compte d&#39;un destinataire. Pour ajouter ce numéro de compte, cliquez sur le bouton de personnalisation situé à droite du champ **[!UICONTROL Valeur]** et sélectionnez **[!UICONTROL Destinataire > N° de compte]**.
 
-   ![](assets/barcode_insert_15.png)
+   ![Menu de personnalisation du champ Valeur du code-barres avec le destinataire et le numéro de compte sélectionnés](assets/barcode_insert_15.png)
 
 1. Le champ **[!UICONTROL Hauteur]** permet de paramétrer la hauteur du code-barres sans en modifier la largeur, soit l&#39;espacement entre chaque barre.
 
@@ -322,10 +322,10 @@ Puis paramétrez les éléments suivants en fonction de vos besoins :
 
 Une fois ces éléments paramétrés, vous pouvez finaliser votre email et l&#39;envoyer. Pour éviter toute erreur, vérifiez toujours avant une diffusion que votre contenu s&#39;affiche correctement en cliquant sur l&#39;onglet **[!UICONTROL Aperçu]**.
 
-![](assets/barcode_insert_10.png)
+![Aperçu de la diffusion avec un code QR inséré à la fin du contenu du message personnalisé](assets/barcode_insert_10.png)
 
 >[!NOTE]
 >
 >Si la valeur d&#39;un code-barres s&#39;avère incorrecte, le bitmap qui le représente s&#39;affiche barré d&#39;une croix rouge.
 
-![](assets/barcode_insert_11.png)
+![Aperçu d&#39;un e-mail dans lequel une valeur de code-barres non valide affiche le code-barres barré en rouge](assets/barcode_insert_11.png)

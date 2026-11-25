@@ -35,16 +35,16 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 49%
+source-wordcount: '580'
+ht-degree: 48%
 ---
 # Statuts de diffusion {#delivery-statuses}
 
 Une fois qu’une diffusion a été envoyée, le tableau de bord de diffusion affiche un statut qui vous permet de surveiller si l’envoi a réussi. Les statuts possibles sont détaillés dans la section ci-dessous.
 
-![](assets/delivery-status.png)
+![Résumé du tableau de bord de la diffusion avec le champ Statut en surbrillance, affichant Terminé et la date de fin](assets/delivery-status.png)
 
 Pour plus d&#39;informations sur les différents échecs de diffusion que vous pouvez rencontrer et sur la manière de les résoudre, consultez [Comprendre les échecs de diffusion](delivery-failures.md).
 
@@ -122,7 +122,7 @@ Si votre diffusion n&#39;est pas envoyée et reste dans un état **[!UICONTROL E
 
   La limite des campagnes simultanées est définie dans l’option **[!UICONTROL NmsOperation_LimitConcurrency]**. La valeur par défaut est 10.
 
-  En tant qu&#39;utilisateur Managed Cloud Services, vous pouvez travailler avec Adobe pour ajuster cette limite si nécessaire. En savoir plus sur les options dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=fr){target="_blank"}.
+  En tant qu&#39;utilisateur Managed Cloud Services, vous pouvez travailler avec Adobe pour ajuster cette limite si nécessaire. En savoir plus sur les options dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html){target="_blank"}.
 
 * **Problèmes de disponibilité des ressources**
 

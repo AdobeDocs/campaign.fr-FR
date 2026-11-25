@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 92%
+source-wordcount: '814'
+ht-degree: 90%
 ---
 # Paramètres de diffusion SMS {#sms-settings}
 
@@ -46,7 +46,7 @@ Vous pouvez configurer toutes ces options dans un modèle de diffusion afin d’
 
 ## Configurer l’onglet SMS {#sms-tab}
 
-![](assets/send_settings.png){zoomable="yes"}
+![Onglet SMS des propriétés de la diffusion avec les paramètres généraux et la table des paramètres SMPP facultatifs (TLV)](assets/send_settings.png){zoomable="yes"}
 
 Voici les informations dont vous avez besoin pour remplir ce formulaire. Chaque champ est expliqué ci-dessous :
 

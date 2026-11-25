@@ -24,10 +24,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 86%
+source-wordcount: '773'
+ht-degree: 80%
 ---
 # Utiliser les blocs de personnalisation{#personalization-blocks}
 
@@ -44,7 +44,7 @@ Pour insérer un bloc de personnalisation dans un message, procédez comme suit�
 1. Dans l’éditeur de contenu de l’assistant de diffusion, cliquez sur l’icône de personnalisation et sélectionnez le menu **[!UICONTROL Inclure]**.
 1. Sélectionnez un bloc de personnalisation dans la liste ou cliquez sur le menu **[!UICONTROL Autre...]** pour accéder à la liste complète.
 
-   ![](assets/perso-content-block.png)
+   ![Incluez le sous-menu dans le menu de personnalisation répertoriant les blocs tels que Lien vers la page miroir, avec Autre... à la fin](assets/perso-content-block.png)
 
 1. Le bloc de personnalisation est alors inséré sous forme de script. Il est automatiquement adapté au profil de la personne destinataire lors de la génération de la personnalisation.
 1. Accédez à l’onglet **[!UICONTROL Prévisualisation]**, puis sélectionnez un destinataire pour visualiser le contenu de ce bloc en fonction de ce dernier.
@@ -82,11 +82,11 @@ Pour créer un bloc de personnalisation, procédez comme suit :
 1. Accédez au dossier **[!UICONTROL Ressources > Gestion de campagne > Blocs de personnalisation]** de l’explorateur Campaign.
 1. Au-dessus de la liste des blocs intégrés, cliquez sur **[!UICONTROL Nouveau]**.
 
-   ![](assets/perso-new-block.png)
+   ![Liste des blocs de personnalisation dans l&#39;explorateur Campaign avec une flèche sur le bouton Nouveau](assets/perso-new-block.png)
 
 1. Renseignez le paramétrage du bloc de personnalisation :
 
-   ![](assets/perso-custom-block.png)
+   ![Nouveau formulaire de bloc de personnalisation avec libellé, nom interne, type de contenu et contenu de script pour un lien de désinscription](assets/perso-custom-block.png)
 
    * Saisissez le libellé du bloc. Ce libellé est affiché dans la fenêtre d’insertion du champ de personnalisation.
    * Sélectionnez un type de contenu de **Diffusion**.
@@ -100,4 +100,4 @@ Une fois enregistré, le nouveau bloc de personnalisation est disponible dans l�
 
 Dans la vidéo suivante, découvrez comment créer des blocs de contenu dynamiques et apprenez à les utiliser pour personnaliser le contenu de votre diffusion e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449008?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

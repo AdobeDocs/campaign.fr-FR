@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 32%
+source-wordcount: '647'
+ht-degree: 28%
 ---
 # Commencer avec les canaux personnalisés {#gs-custom-channel}
 
@@ -52,7 +52,7 @@ Tout d’abord, configurez le schéma pour ajouter le nouveau canal à la liste 
 
 1. Dans l’explorateur Campaign, sélectionnez **Administration** > **Configuration** > **Schémas de données**.
 
-1. Créez une extension de schéma pour étendre l’énumération **messageType** [&#128279;](../config/enumerations.md) avec le nouveau canal.
+1. Créez une extension de schéma pour étendre l’énumération **messageType** [](../config/enumerations.md) avec le nouveau canal.
 
    Par exemple :
 
@@ -63,7 +63,7 @@ Tout d’abord, configurez le schéma pour ajouter le nouveau canal à la liste 
    </enumeration>
    ```
 
-   ![](assets/cus-schema.png){zoomable="yes"}
+   ![Schéma source des diffusions (cus) avec l&#39;énumération messageType pour le canal personnalisé mise en surbrillance](assets/cus-schema.png){zoomable="yes"}
 
 ## Création d&#39;un nouveau compte externe{#create-ext-account}
 
@@ -75,7 +75,7 @@ Ensuite, vous devez créer un compte externe de routage.
 
 1. Sélectionnez le canal et changez le mode de diffusion. Choisissez **Externe** pour les canaux externes personnalisés et **En bloc** pour les canaux d’API personnalisés.
 
-   ![](assets/cus-ext-account.png){zoomable="yes"}
+   ![Compte externe de type Routage avec canal personnalisé sélectionné et mode de diffusion défini sur Externe](assets/cus-ext-account.png){zoomable="yes"}
 
 ## Créer un modèle de diffusion{#create-template}
 
@@ -87,7 +87,7 @@ Ensuite, vous devez créer un compte externe de routage.
 
 1. Cliquez sur **Propriétés** et sélectionnez le dossier et le routage appropriés.
 
-   ![](assets/cus-template.png){zoomable="yes"}
+   ![Propriétés du modèle de diffusion, onglet Général, avec les champs Dossier et Routage définis sur le compte externe de canal personnalisé](assets/cus-template.png){zoomable="yes"}
 
 Le nouveau canal est désormais disponible. Vous pouvez créer et exécuter des diffusions qui se déroulent sur ce canal.
 
@@ -107,11 +107,11 @@ Dans l’interface utilisateur web de Campaign, configurez la définition d’é
 
 1. Ouvrez le schéma **Diffusion** et cliquez sur **Modification de l’écran**.
 
-   ![](assets/cus-schema2.png){zoomable="yes"}
+   Page de schéma ![Diffusions (nms) avec le bouton Modification de l’écran en haut à droite](assets/cus-schema2.png){zoomable="yes"}
 
-1. Sélectionnez l’onglet correspondant à votre canal et définissez comment les champs seront affichés dans l’écran de contenu de la diffusion. Pour plus d’informations sur la modification de l’écran, consultez cette [page](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html?lang=fr#fields){target="_blank"}.
+1. Sélectionnez l’onglet correspondant à votre canal et définissez comment les champs seront affichés dans l’écran de contenu de la diffusion. Pour plus d’informations sur la modification de l’écran, consultez cette [page](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html#fields){target="_blank"}.
 
-   ![](assets/cus-schema3.png){zoomable="yes"}
+   ![Boîte de dialogue de définition d’écran, onglet de canal personnalisé, répertoriant les champs personnalisés avec le libellé, l’attribut, le type et l’option obligatoire](assets/cus-schema3.png){zoomable="yes"}
 
 1. Dans la section **Aperçu pour simuler le contenu**, sélectionnez le JSPP dédié. Cette option est facultative. L&#39;aperçu sera alors activé dans l&#39;écran de simulation de la diffusion. [Configurer l&#39;aperçu](#api-additional-preview)
 

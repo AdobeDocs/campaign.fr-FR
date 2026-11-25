@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 94%
+source-wordcount: '1241'
+ht-degree: 74%
 ---
 # Coupons personnalisés{#personalized-coupons}
 
@@ -55,12 +55,12 @@ Avant d&#39;appliquer les étapes ci-dessous, vérifiez que vous savez quel type
 
 1. Dans l&#39;arborescence Campaign, allez dans **[!UICONTROL Ressources > Gestion de campagne > Coupons]**.
 
-   ![](assets/deliv_coup_01.png)
+   ![Arborescence de campagnes avec des ressources, la gestion de campagnes développée et le nœud Coupons sélectionné](assets/deliv_coup_01.png)
 
 1. Cliquez sur le bouton **[!UICONTROL Nouveau]**.
 1. Saisissez le nom du coupon dans le champ **[!UICONTROL Libellé]**. Un code unique apparaît automatiquement dans **[!UICONTROL Code coupon]**. Vous pouvez garder ce code ou en saisir un nouveau.
 
-   ![](assets/deliv_coup_02.png)
+   ![Liste des coupons et onglet Général d&#39;un coupon avec les champs Libellé, Code de coupon, Type de coupon, Date de début et Date de fin](assets/deliv_coup_02.png)
 
 1. Sélectionnez **[!UICONTROL Date de début]** et **[!UICONTROL Date de fin]** pour configurer la période de validité du coupon.
 1. Dans **[!UICONTROL Type de coupon]**, sélectionnez Anonyme ou Individuel.
@@ -81,7 +81,7 @@ Avant d&#39;appliquer les étapes ci-dessous, vérifiez que vous savez quel type
 
 ### Configuration de coupons individuels {#configuring-individual-coupons}
 
-![](assets/deliv_coup_03.png)
+![Onglet Coupons d’un coupon répertoriant les codes coupon individuels, chacun avec un statut Disponible](assets/deliv_coup_03.png)
 
 L’onglet Coupons n’est disponible qu’avec les coupons individuels. Une fois qu’un coupon est associé à une diffusion, l’onglet Coupons fournit les détails suivants :
 
@@ -98,60 +98,60 @@ Dans l&#39;exemple ci-dessous, la diffusion est créée à partir de la Page d&#
 1. Allez sur **[!UICONTROL Campagnes]** et sélectionnez **[!UICONTROL Diffusions]**.
 1. Cliquez sur **[!UICONTROL Créer]**.
 
-   ![](assets/deliv_coup_04.png)
+   ![Liste des diffusions dans l&#39;onglet Campagnes avec le bouton Créer en surbrillance](assets/deliv_coup_04.png)
 
 1. Saisissez un nom dans le champ **[!UICONTROL Libellé]** et cliquez sur **[!UICONTROL Continuer]**.
 1. Cliquez sur **[!UICONTROL Pour]** pour ajouter des destinataires.
 1. Cliquez sur **[!UICONTROL Ajouter]** pour sélectionner des destinataires pour la diffusion. Une fois les destinataires sélectionnés, cliquez sur **[!UICONTROL Ok]** pour retourner à la diffusion.
 
-   ![](assets/deliv_coup_05.png)
+   ![Sélectionnez la boîte de dialogue cible dans l’onglet Cible principale avec le bouton Ajouter en surbrillance](assets/deliv_coup_05.png)
 
 1. Saisissez un objet et ajoutez du contenu au message.
 
-   ![](assets/deliv_coup_06.png)
+   ![Éditeur de diffusion avec un objet et du contenu HTML pour l&#39;e-mail de coupon](assets/deliv_coup_06.png)
 
 1. Dans la barre d&#39;outils, cliquez sur **[!UICONTROL Propriétés]** et sélectionnez l&#39;onglet **[!UICONTROL Avancé]**.
 1. Cliquez sur l&#39;icône dossier pour la **[!UICONTROL Gestion des coupons]**.
 
-   ![](assets/deliv_coup_07.png)
+   ![Onglet Avancé des propriétés de diffusion avec l’icône de dossier en regard du champ Coupon dans Gestion des coupons mise en surbrillance](assets/deliv_coup_07.png)
 
 1. Sélectionnez le coupon et cliquez sur **[!UICONTROL Ok]**. Cliquez à nouveau sur **[!UICONTROL Ok]**.
 
-   ![](assets/deliv_coup_08.png)
+   ![Boîte de dialogue de sélection des coupons répertoriant les documents de coupon avec les coupons de football sélectionnés](assets/deliv_coup_08.png)
 
 1. Cliquez sur le message pour choisir l&#39;emplacement du coupon.
 
-   ![](assets/deliv_coup_09.png)
+   ![Éditeur de contenu HTML avec le curseur placé à l&#39;endroit où le code de coupon doit être inséré](assets/deliv_coup_09.png)
 
 1. Cliquez sur l&#39;icône de personnalisation pour choisir l&#39;une des options suivantes en fonction du type de coupon :
 
    * Coupon anonyme : **[!UICONTROL Coupon > Code coupon]**
 
-     ![](assets/deliv_coup_10.png)
+     ![Menu Personalization avec Coupon puis Code de coupon sélectionné, pour un coupon anonyme](assets/deliv_coup_10.png)
 
    * Coupon individuel : **[!UICONTROL Valeur de coupon > Code coupon]**
 
-     ![](assets/deliv_coup_11.png)
+     ![Menu Personalization avec valeur de coupon, puis code de coupon sélectionné, pour un coupon individuel](assets/deliv_coup_11.png)
 
      Le bon est inséré dans le message sous forme de code plutôt que sous le nom que vous avez attribué. Le code est utilisé dans le modèle de données de l’ootb Campaign.
 
-   ![](assets/deliv_coup_12.png)
+   ![Contenu de l&#39;e-mail avec le script de code de coupon inséré, couponValue.couponCode, mis en surbrillance](assets/deliv_coup_12.png)
 
 1. Lancez un test pour confirmer le nom assigné au coupon. Allez dans l&#39;onglet **[!UICONTROL Prévisualisation]** et cliquez sur **[!UICONTROL Tester la personnalisation]**. Sélectionnez un destinataire pour le test.
 
-   ![](assets/deliv_coup_13.png)
+   ![Onglet Aperçu avec le menu Tester la personnalisation ouvert et l’option Destinataire mise en surbrillance](assets/deliv_coup_13.png)
 
    A la suite du test, le coupon devrait apparaître sous forme du nom assigné et non du code.
 
-   ![](assets/deliv_coup_14.png)
+   ![Aperçu de l&#39;e-mail avec le code de coupon Trynow affiché dans le corps du message](assets/deliv_coup_14.png)
 
 1. Dans la barre d&#39;outils, cliquez sur **[!UICONTROL Envoyer]** (en haut à gauche) et sélectionnez le mode d&#39;envoi de la diffusion.
 
-   ![](assets/deliv_coup_15.png)
+   ![Envoyez à la boîte de dialogue principale de la cible de diffusion avec l&#39;option Diffuser dès que possible et le bouton Analyser](assets/deliv_coup_15.png)
 
 1. Cliquez sur **[!UICONTROL Analyser]**. Si le log d&#39;analyse confirme qu&#39;il y a assez de coupons pour tous les destinataires, cliquez sur **[!UICONTROL Confirmer l&#39;envoi]** pour l&#39;envoyer.
 
-   ![](assets/deliv_coup_16.png)
+   ![Log d&#39;analyse d&#39;une diffusion affichant 2 coupons recyclés et le bouton Confirmer la diffusion disponible](assets/deliv_coup_16.png)
 
 >[!NOTE]
 >
@@ -162,7 +162,7 @@ Pour confirmer que la diffusion a abouti :
 1. Allez sur **[!UICONTROL Explorateur > Ressources > Gestion de campagne > Coupons]**.
 1. Cliquez sur l&#39;onglet **[!UICONTROL Diffusions]**.
 
-   ![](assets/deliv_coup_17.png)
+   ![Onglet Diffusions d&#39;un coupon répertoriant les diffusions qui l&#39;utilisent avec leur statut et leur nombre de messages](assets/deliv_coup_17.png)
 
    En cas de diffusion réussie, l&#39;état est **[!UICONTROL Terminé]**.
 
@@ -180,12 +180,12 @@ L’analyse de la diffusion s’arrête s’il y a moins de coupons que de messa
 1. Cliquez sur **[!UICONTROL Pour]**.
 1. Dans **[!UICONTROL Choix de la cible]**, allez dans l&#39;onglet **[!UICONTROL Exclusions]**.
 
-   ![](assets/deliv_coup_18.png)
+   ![Sélectionnez la boîte de dialogue cible avec l’onglet Exclusions mis en surbrillance et le lien Modifier pour les paramètres d’exclusion](assets/deliv_coup_18.png)
 
 1. Dans la section paramètres d&#39;exclusion, cliquez sur **[!UICONTROL Editer]**.
 1. Saisissez le nombre de messages à envoyer dans **[!UICONTROL Limiter la diffusion à … messages]** et cliquez sur **[!UICONTROL OK]**. Vous pouvez envoyer la diffusion.
 
-   ![](assets/deliv_coup_19.png)
+   ![Boîte de dialogue des paramètres d’exclusion avec le champ Limiter la diffusion à défini sur 20 messages en surbrillance](assets/deliv_coup_19.png)
 
 >[!NOTE]
 >

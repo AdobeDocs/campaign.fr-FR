@@ -24,10 +24,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 90%
+source-wordcount: '972'
+ht-degree: 80%
 ---
 # Publier des messages sur X (Twitter) avec Adobe Campaign {#post-tw-messages}
 
@@ -50,13 +50,13 @@ Pour publier un message sur votre compte X, procédez comme suit :
 
    Créez une diffusion basée sur le modèle de diffusion **[!UICONTROL Tweeter (Twitter)]**.
 
-   ![](assets/tw-new-delivery.png)
+   ![Nouvelle boîte de dialogue de diffusion avec le modèle de diffusion Tweeter (twitter) sélectionné dans la liste des modèles](assets/tw-new-delivery.png)
 
 1. Sélection de la cible principale
 
    Vous devez sélectionner le ou les comptes auxquels vous souhaitez envoyer des publications.
 
-   ![](assets/tw-define-target.png)
+   ![Sélectionnez la boîte de dialogue cible dans l’onglet Cible principale avec la cible du compte Twitter et le bouton Ajouter en surbrillance](assets/tw-define-target.png)
 
    1. Cliquez sur le lien **[!UICONTROL Pour]**.
    1. Cliquez sur le bouton **[!UICONTROL Ajouter]**.
@@ -77,7 +77,7 @@ Pour publier un message sur votre compte X, procédez comme suit :
 
    Saisissez le contenu de votre publication dans l&#39;onglet **[!UICONTROL Contenu]**.
 
-   ![](assets/tw-delivery-content.png)
+   ![Onglet Contenu d&#39;une diffusion Tweeter avec saisie du texte de la publication et d&#39;un champ de personnalisation](assets/tw-delivery-content.png)
 
    >[!CAUTION]
    >
@@ -91,7 +91,7 @@ Pour publier un message sur votre compte X, procédez comme suit :
 
    Accédez à l&#39;onglet **[!UICONTROL Aperçu]** pour vérifier le rendu de votre publication.
 
-   ![](assets/tw-delivery-preview.png)
+   ![Onglet Aperçu d&#39;une diffusion Tweet affichant le texte de publication rendu avec le nom du service](assets/tw-delivery-preview.png)
 
    1. Cliquez sur l&#39;onglet **[!UICONTROL Aperçu]**.
    1. Cliquez sur le menu déroulant **[!UICONTROL Tester la personnalisation]** et sélectionnez **[!UICONTROL Service]**.
@@ -118,7 +118,7 @@ Pour envoyer des messages directs à vos abonnés, procédez comme suit :
 
 1. Sélection de la cible principale
 
-   ![](assets/tw-dm-define-target.png)
+   ![Sélectionnez la boîte de dialogue cible avec le mappage Abonnements des visiteurs et le bouton Ajouter en surbrillance pour un message direct](assets/tw-dm-define-target.png)
 
    1. Sélectionnez le lien **[!UICONTROL À]** et le bouton **[!UICONTROL Ajouter]**.
 
@@ -139,7 +139,7 @@ Pour envoyer des messages directs à vos abonnés, procédez comme suit :
 
 1. Saisissez le contenu du message dans l&#39;onglet **[!UICONTROL Contenu]**.
 
-   ![](assets/tw-dm-content.png)
+   ![Onglet Contenu d&#39;une diffusion de messages directs Twitter avec du texte de message personnalisé](assets/tw-dm-content.png)
 
    Comme pour une diffusion par e-mail, il est possible d&#39;utiliser les champs de personnalisation, par exemple si vous souhaitez ajouter le nom de l&#39;abonné dans le corps du message. En savoir plus dans [Prise en main de la personnalisation](../send/personalize.md).
 
@@ -147,7 +147,7 @@ Pour envoyer des messages directs à vos abonnés, procédez comme suit :
 
    Accédez à l&#39;onglet **[!UICONTROL Aperçu]** pour vérifier le rendu de votre publication.
 
-   ![](assets/tw-dm-preview.png)
+   ![Onglet Aperçu d&#39;un message direct Twitter affichant le texte personnalisé pour un abonné sélectionné](assets/tw-dm-preview.png)
 
    1. Cliquez sur l&#39;onglet **[!UICONTROL Aperçu]**.
    1. Cliquez sur le menu déroulant **[!UICONTROL Tester la personnalisation]** et sélectionnez **[!UICONTROL Abonnements des visiteurs]**.

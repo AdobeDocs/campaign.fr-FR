@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 91%
+source-wordcount: '834'
+ht-degree: 71%
 ---
 # SMS dans une infrastructure de midsourcing {#sms-mid}
 
@@ -59,22 +59,22 @@ Pour créer votre opérateur/opératrice SMS, procédez comme suit :
 
    Notez que le champ Nom (login) sera utilisé ultérieurement pour nommer votre compte externe SMPP dans le serveur de midsourcing.
 
-   ![](assets/smsoperator_mid.png){zoomable="yes"}
+   ![Nouveau formulaire de l&#39;opérateur SMS sur le mid-server avec Nom (login), Mot de passe et Libellé, et le bouton Ajouter pour les droits](assets/smsoperator_mid.png){zoomable="yes"}
 
 1. Dans la partie **[!UICONTROL Groupes et droits nommés]**, cliquez sur le bouton **[!UICONTROL Ajouter]**.
 Dans la nouvelle fenêtre ouverte, sélectionnez **[!UICONTROL Droits nommés]** dans la liste **[!UICONTROL Dossier]** et sélectionnez **[!UICONTROL ADMINISTRATION]** dans la liste de droite.
 
 1. Cliquez sur le bouton **[!UICONTROL OK]**.
 
-   ![](assets/smsoperator_rights.png){zoomable="yes"}
+   ![Boîte de dialogue Ajouter des groupes ou des droits nommés avec le droit nommé ADMINISTRATION sélectionné](assets/smsoperator_rights.png){zoomable="yes"}
 
 1. Cliquez sur le bouton **[!UICONTROL Enregistrer]** pour finaliser la création de votre opérateur SMS.
 
-   ![](assets/smsoperator_save.png){zoomable="yes"}
+   ![Formulaire de l&#39;opérateur SMS avec le droit ADMINISTRATION ajouté et le bouton Enregistrer mis en surbrillance](assets/smsoperator_save.png){zoomable="yes"}
 
 Vous pouvez maintenant le voir dans la liste des opérateurs.
 
-![](assets/smsoperator_list.png){zoomable="yes"}
+![Liste des opérateurs affichant le nouvel opérateur Sms Mid (smsOperator)](assets/smsoperator_list.png){zoomable="yes"}
 
 ## Créer un compte SMS externe sur le serveur Marketing {#sms-external-account}
 
@@ -84,19 +84,19 @@ Dans une infrastructure intermédiaire, vous devez créer un compte externe SMS 
 >
 >L’utilisation du même compte et du même mot de passe pour plusieurs comptes SMS externes peut entraîner des conflits et des chevauchements entre les comptes. En savoir plus sur la [page de dépannage des SMS](smpp-connection.md#sms-troubleshooting).
 
-1. Dans **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Comptes externes]**, cliquez sur l’icône **[!UICONTROL Nouveau]**.
+1. Dans **[!UICONTROL Administration]** > **[!UICONTROL Plateforme]** > **[!UICONTROL Comptes externes]**, cliquez sur l’icône **[!UICONTROL Nouveau]**
 
-   ![](assets/sms_extaccount.png){zoomable="yes"}
+   ![Liste des comptes externes dans Administration > Plateforme avec l&#39;icône Nouveau en surbrillance](assets/sms_extaccount.png){zoomable="yes"}
 
 1. Définissez le **[!UICONTROL Libellé]** et le **[!UICONTROL Nom interne]** du compte externe. Définissez le type de compte sur **[!UICONTROL Routage]**, cochez la case **[!UICONTROL Activé]**, sélectionnez **[!UICONTROL Mobile (SMS)]** pour le canal et **[!UICONTROL Midsourcing]** pour le mode de diffusion.
 
-   ![](assets/mid_smsextaccount.png){zoomable="yes"}
+   ![Onglet Général du compte externe : Type de routage, Activé, Canal mobile (SMS) et Mode de diffusion en midsourcing](assets/mid_smsextaccount.png){zoomable="yes"}
 
 1. Dans l’onglet **[!UICONTROL Midsourcing]**, renseignez le formulaire avec l’URL du serveur de midsourcing et l’opérateur SMS créé précédemment sur le serveur de midsourcing.
 
    Confirmez la connexion en cliquant sur le bouton **[!UICONTROL Tester la connexion]**.
 
-   ![](assets/midtab_smsextaccount.png){zoomable="yes"}
+   ![Onglet Mid-sourcing avec URL de serveur, compte d&#39;opérateur SMS, mot de passe et bouton Tester la connexion](assets/midtab_smsextaccount.png){zoomable="yes"}
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -120,13 +120,13 @@ Pour ce faire, procédez comme suit :
    >
 
    Définissez le type de compte sur **[!UICONTROL Routage]**, cochez la case **[!UICONTROL Activé]**, sélectionnez **[!UICONTROL Mobile (SMS)]** pour le canal et **[!UICONTROL Envoi en masse]** pour le mode de diffusion.
-   ![](assets/mid_extaccount.png){zoomable="yes"}
+   ![Onglet Général du compte externe de serveur intermédiaire : Type de routage, Activé, Canal mobile (SMS) et Mode de diffusion en masse](assets/mid_extaccount.png){zoomable="yes"}
 
 1. Dans l’onglet **[!UICONTROL Mobile]**, sélectionnez **[!UICONTROL SMPP générique étendu]** dans la liste déroulante **[!UICONTROL Connecteur]**.
 
    La case **[!UICONTROL Envoyer les messages par le biais d’un processus dédié]** est cochée par défaut.
 
-   ![](assets/sms_extaccount_connector.png){zoomable="yes"}
+   ![Onglet Mobile avec le connecteur SMPP générique étendu et Envoyer des messages via un processus dédié vérifié](assets/sms_extaccount_connector.png){zoomable="yes"}
 
    Pour configurer la connexion, vous devez remplir les onglets de ce formulaire. Pour plus d’informations, consultez la rubrique [en savoir plus sur le compte externe SMPP](smpp-external-account.md#smpp-connection-settings).
 
@@ -136,18 +136,18 @@ Pour faciliter la création de votre diffusion SMS, créez un modèle de diffusi
 
 Dans **[!UICONTROL Ressources]** > **[!UICONTROL Modèles]** > **[!UICONTROL Modèles de diffusion]** sur le serveur Marketing, cliquez avec le bouton droit de la souris sur le modèle de diffusion Mobile existant, puis sélectionnez **[!UICONTROL Dupliquer]**.
 
-![](assets/sms_template_duplicate.png){zoomable="yes"}
+![Liste des modèles de diffusion avec l&#39;option Dupliquer sélectionnée dans le menu contextuel pour le modèle Mobile (SMS)](assets/sms_template_duplicate.png){zoomable="yes"}
 
 Modifiez le **[!UICONTROL libellé]** et le **[!UICONTROL nom interne]** de votre modèle pour le reconnaître facilement, puis cliquez sur le bouton **[!UICONTROL Propriétés]**.
 
-![](assets/sms_template_name.png){zoomable="yes"}
+![Modèle de diffusion dupliqué avec les champs Libellé et Nom interne et le bouton Propriétés mis en surbrillance](assets/sms_template_name.png){zoomable="yes"}
 
 Dans l’onglet **[!UICONTROL Général]**, dans **[!UICONTROL Routage]**, sélectionnez votre compte externe SMPP.
 
-![](assets/mid_template.png){zoomable="yes"}
+![Onglet Général des propriétés de la diffusion avec le champ Routage défini sur le compte externe SMPP](assets/mid_template.png){zoomable="yes"}
 
 Dans l’onglet **[!UICONTROL SMS]**, vous pouvez ajouter des paramètres facultatifs à votre modèle.
 
-![](assets/sms_template_properties.png){zoomable="yes"}
+![Onglet SMS des propriétés de diffusion avec des paramètres généraux et des paramètres SMPP facultatifs (TLV)](assets/sms_template_properties.png){zoomable="yes"}
 
 [En savoir plus sur cette configuration de l’onglet SMS](sms-delivery-settings.md).

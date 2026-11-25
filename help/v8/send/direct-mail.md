@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 80%
+source-wordcount: '1041'
+ht-degree: 75%
 ---
 # Création de diffusions courrier
 
@@ -57,7 +57,7 @@ Pour créer une diffusion courrier, procédez comme suit :
 1. Créez une diffusion, par exemple depuis le tableau de bord des diffusions.
 1. Sélectionnez le modèle de diffusion **Diffuser par courrier (papier)**.
 
-   ![](assets/direct_mail.png)
+   ![Nouvelle boîte de dialogue de diffusion avec le modèle Diffuser par courrier (papier) sélectionné dans la liste](assets/direct_mail.png)
 
 1. Identifiez votre diffusion avec un libellé, un code et une description. Voir à ce sujet la section [Créer la diffusion](../start/create-message.md#create-the-delivery).
 1. Cliquez sur **Continuer** pour valider ces informations et afficher la fenêtre de configuration du message.
@@ -80,21 +80,21 @@ Le nom du fichier contenant les données extraites est défini dans le champ **[
 
 Par défaut, le fichier d’extraction est créé et stocké sur le serveur. Vous pouvez l’enregistrer sur votre ordinateur. Pour cela, cochez l&#39;option **[!UICONTROL Rapatrier en local le fichier généré après l&#39;export]**. Dans ce cas, vous devez indiquer le chemin d&#39;accès au répertoire de stockage local et le nom du fichier.
 
-![](assets/s_ncs_user_mail_delivery_local_file.png)
+![Onglet Extraction avec l’option Télécharger le fichier généré cochée et un chemin d’accès au fichier local saisi](assets/s_ncs_user_mail_delivery_local_file.png)
 
 Pour une diffusion par courrier, le contenu de l’extraction est défini à partir du lien **[!UICONTROL Éditer le format du fichier d’extraction...]**.
 
-![](assets/s_ncs_user_mail_delivery_format_link.png)
+![Onglet Extraction avec le lien Modifier le format du fichier d’extraction mis en surbrillance](assets/s_ncs_user_mail_delivery_format_link.png)
 
 Ce lien permet d’accéder à l’assistant d’extraction afin de définir les informations (colonnes) à exporter dans le fichier de sortie.
 
-![](assets/s_ncs_user_mail_delivery_format_wz.png)
+![Assistant Données à extraire avec des champs déplacés des champs disponibles vers les colonnes de sortie](assets/s_ncs_user_mail_delivery_format_wz.png)
 
 Vous pouvez insérer une URL personnalisée dans le fichier d’extraction. Pour plus d&#39;informations, consultez la section [Publier un formulaire web](../dev/web/publishing-a-web-form.md).
 
 >[!NOTE]
 >
->Cet assistant comprend les étapes de l’assistant d’exportation détaillées dans la [documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=fr){target="_blank"} de Adobe Campaign Classic.
+>Cet assistant comprend les étapes de l’assistant d’exportation détaillées dans la [documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"} de Adobe Campaign Classic.
 
 ## Validation de la diffusion{#validating}
 
@@ -116,7 +116,7 @@ Vérifiez le résultat de l’analyse et le contenu du fichier de sortie avant d
 
 La confirmation de l&#39;envoi lance l&#39;extraction des données dans le fichier spécifié.
 
-![](assets/s_ncs_user_postal_del_send_confirm_postal.png)
+![Lancez la boîte de dialogue de confirmation de diffusion avec OK et Annulez pour une diffusion Courrier dont le statut est En attente](assets/s_ncs_user_postal_del_send_confirm_postal.png)
 
 Vous pouvez ensuite fermer l’assistant et consulter les logs de diffusion depuis l’onglet **[!UICONTROL Diffusion]** accessible à partir du détail de cette diffusion.
 

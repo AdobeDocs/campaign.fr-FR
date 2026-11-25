@@ -21,10 +21,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 99%
+source-wordcount: '1397'
+ht-degree: 79%
 ---
 # Joindre des fichiers à un e-mail{#attaching-files}
 
@@ -65,21 +65,21 @@ Pour joindre un fichier local à une diffusion, procédez comme suit.
 1. Cliquez sur le bouton **[!UICONTROL Ajouter]**.
 1. Cliquez sur **[!UICONTROL Fichier...]** pour sélectionner le fichier à joindre à la diffusion.
 
-   ![](assets/s_ncs_user_wizard_email_attachement.png)
+   ![Boîte de dialogue Modifier les fichiers joints avec le menu Ajouter ouvert et Fichier... sélectionné pour joindre un fichier à une diffusion par e-mail](assets/s_ncs_user_wizard_email_attachement.png)
 
 Vous pouvez également faire glisser et déposer directement le fichier dans le champ de diffusion **[!UICONTROL Pièces jointes]** ou utiliser l’icône **[!UICONTROL Joindre]** de la barre d’outils de l’assistant de diffusion.
 
-![](assets/s_ncs_user_wizard_add_file_ico.png)
+![Icône Joindre dans la barre d’outils de l’assistant de diffusion, en regard de la section Paramètres de l’e-mail](assets/s_ncs_user_wizard_add_file_ico.png)
 
 Une fois le fichier sélectionné, il est immédiatement téléchargé sur le serveur afin d&#39;être disponible au moment de la diffusion. Il est répertorié dans le champ **[!UICONTROL Pièces jointes]**.
 
-![](assets/s_ncs_user_wizard_email_attachement_e.png)
+![Paramètres de l&#39;e-mail avec le fichier chargé répertoriés dans le champ Pièces jointes](assets/s_ncs_user_wizard_email_attachement_e.png)
 
 ## Créer une pièce jointe calculée {#creating-a-calculated-attachment}
 
 Lorsque vous créez une pièce jointe calculée, le nom de la pièce jointe peut être calculé lors de l’analyse ou de la diffusion de chaque message et peut dépendre de la personne destinataire. Il peut également être personnalisé et converti au format PDF.
 
-![](assets/s_ncs_user_wizard_attachment.png)
+![Boîte de dialogue Modifier les fichiers joints avec le menu Ajouter ouvert et Pièce jointe calculée... sélectionnée](assets/s_ncs_user_wizard_attachment.png)
 
 Pour créer une pièce jointe personnalisée, procédez comme suit :
 
@@ -87,7 +87,7 @@ Pour créer une pièce jointe personnalisée, procédez comme suit :
 1. Cliquez sur le bouton **[!UICONTROL Ajouter]**, puis sélectionnez **[!UICONTROL Pièce jointe calculée]**.
 1. Sélectionnez le type de calcul dans la liste déroulante **[!UICONTROL Type]** :
 
-![](assets/s_ncs_user_wizard_email01_136.png)
+![Boîte de dialogue Définition d’une pièce jointe avec la liste déroulante Type affichant les quatre options de pièce jointe calculée](assets/s_ncs_user_wizard_email01_136.png)
 
 Les options disponibles sont les suivantes :
 
@@ -103,11 +103,11 @@ Si la pièce jointe est un fichier local, sélectionnez l’option : **[!UICONT
 1. Sélectionnez le fichier à télécharger dans le champ **[!UICONTROL Fichier local]**.
 1. Précisez le libellé si nécessaire. Le libellé remplace le nom de fichier lorsqu’il est affiché dans des systèmes de messagerie. Si rien n’est spécifié, le nom de fichier est utilisé par défaut.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_02.png)
+   ![Onglet Général de la définition de la pièce jointe avec les champs Type, Libellé et Fichier local et l&#39;option Télécharger le fichier sur le serveur](assets/s_ncs_user_wizard_email_calc_attachement_02.png)
 
 1. Au besoin, sélectionnez l&#39;option **[!UICONTROL Télécharger le fichier sur le serveur]**, puis cliquez sur le lien **[!UICONTROL Mettre à jour sur le serveur]** pour lancer le transfert.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_01.png)
+   ![Fenêtre de progression du chargement répertoriant les messages du journal et affichant le transfert du fichier vers le serveur à 100 pour cent](assets/s_ncs_user_wizard_email_calc_attachement_01.png)
 
 Le fichier est alors disponible sur le serveur pour être joint aux diffusions créées à partir de ce modèle.
 
@@ -115,7 +115,7 @@ Le fichier est alors disponible sur le serveur pour être joint aux diffusions c
 
 L’option **[!UICONTROL Le contenu du fichier est personnalisé et converti en PDF au moment de l’envoi pour chaque message]** permet de sélectionner un fichier avec des champs de personnalisation tels que le nom et le prénom du destinataire visé.
 
-![](assets/s_ncs_user_wizard_email_calc_attachement_06.png)
+![Document de traitement de texte contenant les champs de personnalisation du prénom et du nom du destinataire pour une pièce jointe PDF](assets/s_ncs_user_wizard_email_calc_attachement_06.png)
 
 Pour ce type de pièce jointe, les étapes de configuration sont les suivantes :
 
@@ -124,13 +124,13 @@ Pour ce type de pièce jointe, les étapes de configuration sont les suivantes 
 1. Sélectionnez l&#39;option **[!UICONTROL Télécharger le fichier sur le serveur]**, puis cliquez sur le lien **[!UICONTROL Mettre à jour sur le serveur]** pour lancer le transfert.
 1. Vous pouvez afficher une prévisualisation. Pour cela, sélectionnez une personne destinataire.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_07.png)
+   ![Boîte de dialogue de définition de pièce jointe prévisualisant le PDF personnalisé pour un destinataire sélectionné dans la liste de prévisualisation](assets/s_ncs_user_wizard_email_calc_attachement_07.png)
 
 1. Analysez votre diffusion puis démarrez-la.
 
    Chaque destinataire reçoit un PDF personnalisé en attachement de la diffusion.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
+   ![E-mail reçu avec une pièce jointe PDF personnalisée, ouvert pour afficher le nom du destinataire dans le message d&#39;accueil](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 
 
 
@@ -149,13 +149,13 @@ Vous pouvez calculer le nom d’une pièce jointe pendant la préparation de la 
    >
    >Le fichier doit être présent sur le serveur.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_04.png)
+   ![Définition d&#39;une pièce jointe avec un script calculant le chemin et le nom du fichier, y compris la date, lors de l&#39;analyse de la diffusion](assets/s_ncs_user_wizard_email_calc_attachement_04.png)
 
 1. Analysez puis démarrez votre diffusion.
 
    Le calcul du nom du fichier est visible dans le log de l&#39;analyse.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_05.png)
+   ![Log d&#39;analyse de la diffusion avec la ligne affichant le résultat du nom de fichier de pièce jointe calculé mis en surbrillance](assets/s_ncs_user_wizard_email_calc_attachement_05.png)
 
 ### Joindre un fichier personnalisé {#attach-a-personalized-file}
 
@@ -168,7 +168,7 @@ Lorsque vous sélectionnez la pièce jointe, vous pouvez choisir l’option **[!
 1. Précisez le libellé que vous souhaitez appliquer à la pièce jointe.
 1. Indiquez le chemin d&#39;accès au fichier et son nom exact dans la fenêtre de définition. Si le nom du fichier est personnalisé, vous pouvez utiliser les champs de personnalisation pour les valeurs correspondantes.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_010.png)
+   ![Définition d&#39;une pièce jointe utilisant le nom du destinataire dans le chemin d&#39;accès au fichier pour sélectionner un fichier différent pour chaque destinataire](assets/s_ncs_user_wizard_email_calc_attachement_010.png)
 
    >[!IMPORTANT]
    >
@@ -178,21 +178,21 @@ Lorsque vous sélectionnez la pièce jointe, vous pouvez choisir l’option **[!
 
    Dans l&#39;exemple ci-dessous, le fichier attaché a été choisi en fonction de son nom tel qu&#39;il a été défini à l&#39;aide des champs de fusion.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_011.png)
+   ![E-mail reçu avec un fichier joint dont le nom a été créé à partir du nom du destinataire](assets/s_ncs_user_wizard_email_calc_attachement_011.png)
 
 ### Paramètres des pièces jointes {#attachment-settings}
 
 Pour les deux premières options, vous pouvez choisir de **[!UICONTROL Télécharger le fichier sur le serveur]**, en cochant l&#39;option correspondante. Le lien **[!UICONTROL Mettre à jour sur le serveur]** permet de lancer le téléchargement.
 
-![](assets/s_ncs_user_wizard_email01_137.png)
+![Onglet Général de la définition de la pièce jointe avec Télécharger le fichier sur le serveur sélectionné et le lien Mettre à jour sur le serveur](assets/s_ncs_user_wizard_email01_137.png)
 
 Un message vous indique que le fichier a bien été téléchargé sur le serveur :
 
-![](assets/s_ncs_user_wizard_email01_1371.png)
+![La définition de la pièce jointe indiquant le fichier existe déjà sur le message du serveur](assets/s_ncs_user_wizard_email01_1371.png)
 
 En cas de changement de fichier, un message d&#39;avertissement est affiché :
 
-![](assets/s_ncs_user_wizard_email01_1372.png)
+![Définition d&#39;une pièce jointe affichant l&#39;avertissement que le fichier local n&#39;est pas égal à celui du serveur](assets/s_ncs_user_wizard_email01_1372.png)
 
 L&#39;onglet **[!UICONTROL Avancé]** permet de définir des options avancées sur les fichiers joints :
 
@@ -201,4 +201,4 @@ L&#39;onglet **[!UICONTROL Avancé]** permet de définir des options avancées s
 
   Saisissez votre texte dans la fenêtre et utilisez les champs de personnalisation disponibles dans la liste déroulante. Dans l’exemple ci-dessous, le nom du fichier est personnalisé pour contenir la date du jour et le nom de la personne destinataire.
 
-  ![](assets/s_ncs_user_wizard_email_calc_attachement_09.png)
+  ![Onglet Avancé avec un script qui personnalise le nom du fichier joint et l&#39;e-mail affichant le nom obtenu](assets/s_ncs_user_wizard_email_calc_attachement_09.png)

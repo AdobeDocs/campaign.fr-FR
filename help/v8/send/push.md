@@ -33,10 +33,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 89%
+source-wordcount: '1237'
+ht-degree: 76%
 ---
 # Créer et envoyer des notifications push{#push-notifications-create}
 
@@ -59,7 +59,7 @@ Cette section présente les éléments spécifiques à la diffusion de notificat
 
 Pour créer une nouvelle diffusion, accédez à l&#39;onglet **[!UICONTROL Campagnes]**, cliquez sur **[!UICONTROL Diffusions]**, puis sur le bouton **[!UICONTROL Créer]** au-dessus de la liste des diffusions existantes.
 
-![](assets/delivery_step_1.png)
+![Liste des diffusions dans l&#39;onglet Campagnes avec le lien Diffusions en surbrillance et une flèche sur le bouton Créer](assets/delivery_step_1.png)
 
 
 Par défaut, Adobe Campaign est livré avec deux modèles de diffusion : un pour iOS, un autre pour Android. Vous pouvez les dupliquer pour définir vos propres paramètres. Les étapes de configuration d’une diffusion push basée sur ces modèles sont présentées ci-dessous.
@@ -72,19 +72,19 @@ Pour envoyer des notifications sur les appareils iOS, procédez comme suit :
 
 1. Sélectionnez le modèle de diffusion **[!UICONTROL Diffuser sur iOS]**.
 
-   ![](assets/push_ios_1.png)
+   ![Liste des modèles de diffusion avec Diffuser sur iOS (ios) sélectionnée avant de cliquer sur Continuer](assets/push_ios_1.png)
 
 1. Pour définir la cible de la notification, cliquez sur le lien **[!UICONTROL Pour]**, puis sur **[!UICONTROL Ajouter]**.
 
-   ![](assets/push_ios_2.png)
+   ![Boîte de dialogue Sélectionner la cible avec le mapping Applications abonnées et le bouton Ajouter dans la population cible de la diffusion](assets/push_ios_2.png)
 
 1. Sélectionnez **[!UICONTROL Abonnés d&#39;une application mobile iOS (iPhone, iPad)]**, choisissez le service correspondant à votre application mobile, puis sélectionnez la version iOS de l&#39;application.
 
-   ![](assets/push_ios_3.png)
+   ![Étape de type Target avec Abonnés d&#39;une application mobile iOS (iPhone, iPad) sélectionnée](assets/push_ios_3.png)
 
 1. Choisissez votre **[!UICONTROL Type de notification]** entre **[!UICONTROL Notification générale (alerte, son, pastille)]** ou **[!UICONTROL Notification silencieuse]**.
 
-   ![](assets/push_ios_4.png)
+   ![Onglet Général avec le type de notification : notification générale (alerte, son, pastille) ou notification silencieuse](assets/push_ios_4.png)
 
    >[!NOTE]
    >
@@ -115,7 +115,7 @@ Pour envoyer des notifications sur les appareils iOS, procédez comme suit :
      >Les sons doivent être inclus dans l’application et définis lors de la création du service.
      >
 
-   ![](assets/push_ios_5.png)
+   ![Onglet Son et pastille avec valeur pastille, pastille propre, mode d&#39;alerte critique et paramètres de nom du son](assets/push_ios_5.png)
 
 1. Dans l’onglet **[!UICONTROL Variables de l’application]**, vos **[!UICONTROL variables d’application]** sont automatiquement ajoutées. Elles permettent de définir le comportement des notifications. Par exemple, vous pouvez configurer l’affichage d’un écran spécifique lorsque l’utilisateur active la notification.
 
@@ -127,7 +127,7 @@ Pour envoyer des notifications sur les appareils iOS, procédez comme suit :
 
    * **[!UICONTROL Catégorie]** : nom de votre identifiant de catégorie qui affichera les boutons d’action. Ces notifications permettent à l&#39;utilisateur d&#39;effectuer plus rapidement différentes tâches en réponse à celles-ci, sans ouvrir l&#39;application ou la parcourir.
 
-   ![](assets/push_ios_6.png)
+   ![Onglet avancé avec contenu modifiable, champs Thread-id et Catégorie mis en surbrillance](assets/push_ios_6.png)
 
 1. Pour une notification sensible à l’heure, vous pouvez spécifier les options suivantes :
 
@@ -147,11 +147,11 @@ Pour envoyer des notifications sur les appareils iOS, procédez comme suit :
 
    * **[!UICONTROL Score de pertinence]** : définissez un score de pertinence compris entre 0 et 100. Le système l’utilise pour trier les notifications dans le résumé de la notification.
 
-   ![](assets/push_ios_7.png)
+   ![Onglet Avancé avec ID de contenu Target, image de lancement, niveau d&#39;interruption et score de pertinence renseigné](assets/push_ios_7.png)
 
 1. Une fois la notification configurée, cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** pour la prévisualiser.
 
-   ![](assets/push-ios-preview.png)
+   ![Onglet Aperçu affichant le titre et le message de la notification push iOS dans une maquette de téléphone](assets/push-ios-preview.png)
 
 
 >[!TAB Android]
@@ -160,7 +160,7 @@ Pour envoyer des notifications sur les appareils Android, procédez comme suit 
 
 1. Sélectionnez le modèle de diffusion **[!UICONTROL Diffuser sur Android (android)]**.
 
-   ![](assets/push-template-android.png)
+   ![Liste des modèles de diffusion avec Diffuser sur Android (android) sélectionnée avant de cliquer sur Continuer](assets/push-template-android.png)
 
    >[!NOTE]
    > 
@@ -169,15 +169,15 @@ Pour envoyer des notifications sur les appareils Android, procédez comme suit 
 
 1. Pour définir la cible de la notification, cliquez sur le lien **[!UICONTROL Pour]**, puis sur **[!UICONTROL Ajouter]**.
 
-   ![](assets/push-android-select-target.png)
+   ![Sélectionnez la boîte de dialogue cible avec le mappage Applications abonnées et le bouton Ajouter pour la diffusion Android](assets/push-android-select-target.png)
 
 1. Sélectionnez **[!UICONTROL Abonnés d&#39;une application mobile Android]**, choisissez le service correspondant à votre application mobile (Neotrips, dans notre exemple), puis sélectionnez la version Android de l&#39;application.
 
-   ![](assets/push-android-subscribers.png)
+   ![Étape de type Target avec sélection des abonnés d&#39;une application mobile Android](assets/push-android-subscribers.png)
 
 1. Saisissez ensuite le contenu de la notification.
 
-   ![](assets/push-android-content.png)
+   ![Onglet Contenu de la diffusion Android avec les options Type de message, texte du message et tableau Variables de l&#39;application](assets/push-android-content.png)
 
 1. Cliquez sur l&#39;icône **[!UICONTROL Insérer une émoticône]** pour insérer des émoticônes dans votre notification push.
 

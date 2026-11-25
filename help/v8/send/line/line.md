@@ -33,18 +33,18 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 88%
+source-wordcount: '1746'
+ht-degree: 69%
 ---
 # Création de diffusions LINE
 
 LINE est une application gratuite de messagerie instantanée, d’appels vocaux et vidéo, disponible sur tous les appareils mobiles et sur PC. Vous pouvez utiliser Adobe Campaign pour envoyer des messages LINE.
 
-[!DNL LINE] peut également être associé au module des messages transactionnels pour envoyer des messages en temps réel sur l&#39;application [!DNL LINE] installée sur les appareils mobiles des clients. Pour en savoir plus à ce sujet, consultez cette [page](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) dans la documentation de Campaign Classic v7.
+[!DNL LINE] peut également être associé au module des messages transactionnels pour envoyer des messages en temps réel sur l&#39;application [!DNL LINE] installée sur les appareils mobiles des clients. Pour en savoir plus à ce sujet, consultez cette [page](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) dans la documentation de Campaign Classic v7.
 
-![](assets/line_message.png)
+![Conversation de l&#39;application LINE affichant un message texte reçu d&#39;un compte de boutique](assets/line_message.png)
 
 Pour utiliser le canal [!DNL LINE], les étapes sont les suivantes :
 
@@ -69,13 +69,13 @@ Pour créer votre service [!DNL LINE] :
 
 1. Dans le menu de gauche, sélectionnez **[!UICONTROL Services et abonnements]** et cliquez sur **[!UICONTROL Créer]**.
 
-   ![](assets/line_service_1.png)
+   ![Liste des services et abonnements avec le bouton Créer en surbrillance](assets/line_service_1.png)
 
 1. Ajoutez un **[!UICONTROL libellé]** et un **[!UICONTROL nom interne]** à votre nouveau service.
 
 1. Sélectionnez **[!UICONTROL LINE]** dans la liste déroulante **[!UICONTROL Type]**.
 
-   ![](assets/line_service_2.png)
+   ![Boîte de dialogue de création de service avec LINE sélectionnée dans la liste déroulante Type](assets/line_service_2.png)
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -89,16 +89,16 @@ Après avoir créé votre service [!DNL LINE], vous devez configurer le compte e
 
 1. Sélectionnez le compte externe **[!UICONTROL Routage LINE V2]** intégré.
 
-   ![](assets/line_config.png)
+   ![Liste des comptes externes avec le compte de routage LINE V2 intégré sélectionné](assets/line_config.png)
 
 1. Cliquez sur l&#39;onglet **[!UICONTROL LINE]** de votre compte externe pour commencer à le configurer. Remplissez les champs suivants :
 
-   ![](assets/line_config_2.png)
+   ![Onglet LINE du compte externe avec les champs identifiant du canal, clé secrète, jeton d&#39;accès et service d&#39;abonnement LINE](assets/line_config_2.png)
 
-   * **[!UICONTROL Alias du canal]**&#x200B;[!DNL LINE] : est fourni via votre compte dans l&#39;onglet **[!UICONTROL Channels]** > **[!UICONTROL Technical configuration]**.
-   * **[!UICONTROL Identifiant du canal]**&#x200B;[!DNL LINE] : est fourni via votre compte dans l&#39;onglet **[!UICONTROL Channels]**> **[!UICONTROL Basic Information panel]**.
-   * **[!UICONTROL Clé secrète du canal]**&#x200B;[!DNL LINE] : est fourni via votre compte dans l&#39;onglet **[!UICONTROL Channels]**> **[!UICONTROL Basic Information panel]**.
-   * **[!UICONTROL Jeton d&#39;accès]**&#x200B;[!DNL LINE] : est fourni via votre compte sur le portail destiné aux développeurs ou en cliquant sur le bouton **[!UICONTROL Récupérer le jeton d&#39;accès]**.
+   * **[!UICONTROL Alias du canal]**[!DNL LINE] : est fourni via votre compte dans l&#39;onglet **[!UICONTROL Channels]** > **[!UICONTROL Technical configuration]**.
+   * **[!UICONTROL Identifiant du canal]**[!DNL LINE] : est fourni via votre compte dans l&#39;onglet **[!UICONTROL Channels]**> **[!UICONTROL Basic Information panel]**.
+   * **[!UICONTROL Clé secrète du canal]**[!DNL LINE] : est fourni via votre compte dans l&#39;onglet **[!UICONTROL Channels]**> **[!UICONTROL Basic Information panel]**.
+   * **[!UICONTROL Jeton d&#39;accès]**[!DNL LINE] : est fourni via votre compte sur le portail destiné aux développeurs ou en cliquant sur le bouton **[!UICONTROL Récupérer le jeton d&#39;accès]**.
    * **[!UICONTROL Date d&#39;expiration du jeton d&#39;accès]** : permet de spécifier la date d&#39;expiration d&#39;Access token.
    * **[!UICONTROL Service d&#39;abonnement LINE]** : permet de spécifier le service auquel les utilisateurs seront abonnés.
 
@@ -118,11 +118,11 @@ Pour créer une diffusion [!DNL LINE] vous devez suivre les étapes suivantes :
 
 1. Depuis l&#39;onglet **[!UICONTROL Campagnes]**, sélectionnez **[!UICONTROL Diffusions]** puis cliquez sur le bouton **[!UICONTROL Créer]**.
 
-   ![](assets/line_message_07.png)
+   ![Liste des diffusions dans l&#39;onglet Campagnes avec le bouton Créer en surbrillance](assets/line_message_07.png)
 
 1. Sélectionnez le modèle de diffusion **[!UICONTROL Diffusion LINE V2]**.
 
-   ![](assets/line_message_01.png)
+   ![Nouvelle boîte de dialogue de diffusion avec le modèle de diffusion LINE V2 sélectionné](assets/line_message_01.png)
 
 1. Identifiez votre diffusion avec un **[!UICONTROL Libellé]**, un **[!UICONTROL Code de diffusion]** et une **[!UICONTROL Description]**. Voir à ce sujet la section [Créer la diffusion](../../start/create-message.md#create-the-delivery).
 
@@ -132,23 +132,23 @@ Pour créer une diffusion [!DNL LINE] vous devez suivre les étapes suivantes :
 
    Pour plus d&#39;informations, voir [Utilisation des mappings de ciblage](../../audiences/target-mappings.md).
 
-   ![](assets/line_message_08.png)
+   ![Diffusion LINE V2 avec le lien À mis en surbrillance et une liste de messages LINE vide](assets/line_message_08.png)
 
 1. Cliquez sur **[!UICONTROL Ajouter]** pour sélectionner la **[!UICONTROL population cible de la diffusion]**.
 
-   ![](assets/line_message_09.png)
+   ![Boîte de dialogue Sélectionner la cible, onglet Cible principale, avec le bouton Ajouter pour la population cible de la diffusion](assets/line_message_09.png)
 
 1. Choisissez si vous souhaitez cibler directement les abonnés [!DNL LINE] ou si vous souhaitez cibler les utilisateurs en fonction de leur abonnement [!DNL LINE] et cliquez sur **[!UICONTROL Suivant]**. Dans cet exemple, nous avons sélectionné **[!UICONTROL Par abonnement LINE V2]**.
 
 1. Sélectionnez **[!UICONTROL Line-V2]** dans la liste déroulante **[!UICONTROL Dossier]**, puis votre service [!DNL LINE]. Cliquez sur **[!UICONTROL Terminer]** puis sur **[!UICONTROL Ok]** pour commencer à personnaliser votre diffusion.
 
-   ![](assets/line_message_10.png)
+   ![Boîte de dialogue de l&#39;élément cible avec le dossier LINE-V2 et le service LINESVC sélectionné](assets/line_message_10.png)
 
 1. Dans l’éditeur de diffusion, cliquez sur **[!UICONTROL Ajouter]** pour ajouter un ou plusieurs messages et sélectionnez le **[!UICONTROL Type de contenu]**.
 
    Pour plus d&#39;informations sur les différents **[!UICONTROL types de contenu]** disponibles, consultez la section [Définition du type de contenu](#defining-the-content).
 
-   ![](assets/line_message_11.png)
+   ![Diffusion LINE V2 ciblant les abonnés du service avec le bouton Ajouter mis en surbrillance dans la section Message LINE](assets/line_message_11.png)
 
 1. Lorsque votre diffusion est correctement créée et paramétrée, vous pouvez l&#39;envoyer à la cible définie précédemment.
 
@@ -176,7 +176,7 @@ Vous pouvez effectuer un choix entre trois types de messages :
 
 Une diffusion [!DNL LINE] de type **[!UICONTROL Message texte]** est un message envoyé aux destinataires sous forme de texte.
 
-![](assets/line_message_02.png)
+![Éditeur de messages LINE avec type de message texte et texte promotionnel de trois paragraphes dans l&#39;onglet Contenu](assets/line_message_02.png)
 
 La configuration de ce type de message est similaire à la configuration du format **[!UICONTROL texte]** dans un e-mail. Pour plus d&#39;informations, consultez cette [page](../defining-the-email-content.md#message-content).
 
@@ -192,11 +192,11 @@ Vous pouvez utiliser :
   >
   >Vous pouvez utiliser la variable **%SIZE%** pour optimiser l&#39;affichage de l&#39;image en fonction de la taille de l&#39;écran de l&#39;appareil mobile du destinataire de la diffusion.
 
-  ![](assets/line_message_04.png)
+  ![Image et message de lien avec image personnalisée sélectionnée, URL de l’image et champs Texte secondaire mis en surbrillance](assets/line_message_04.png)
 
 * une **[!UICONTROL URL d&#39;image]** par taille d&#39;écran de l&#39;appareil,
 
-  ![](assets/line_message_03.png)
+  ![Message d’image et de lien avec Définir les images par taille d’écran d’appareil sélectionnée et quatre champs d’URL d’image par résolution](assets/line_message_03.png)
 
   L&#39;option **[!UICONTROL Définir les images par taille d&#39;écran d&#39;appareil]** vous permet d&#39;utiliser différentes résolutions d&#39;image pour optimiser la visibilité de la diffusion sur les appareils mobiles. Seules les images de même hauteur et largeur sont prises en charge.
 
@@ -218,7 +218,7 @@ Vous pouvez utiliser :
 
   La section **[!UICONTROL Liens]** permet d’effectuer un choix parmi différentes dispositions qui divisent votre image en plusieurs zones cliquables. Vous pouvez ensuite affecter à chacune d&#39;elles une **[!UICONTROL URL de lien]** dédiée.
 
-  ![](assets/line_message_05.png)
+  ![Section de liens avec une disposition à trois régions sélectionnée et un champ URL de lien pour chacune des régions A, B et C](assets/line_message_05.png)
 
 ### Paramétrage d&#39;une diffusion de type Message vidéo {#configuring-a-video-message-delivery}
 
@@ -230,7 +230,7 @@ Le champ **[!UICONTROL URL de l&#39;image vidéo]** vous permet d&#39;ajouter l&
 
 Veuillez noter que les vidéos larges ou de grande taille peuvent être recadrées lors de la lecture sur certains appareils.
 
-![](assets/line_message_06.png)
+![Contenu du message vidéo avec les champs URL de l&#39;image d&#39;aperçu et URL de l&#39;image vidéo](assets/line_message_06.png)
 
 ## Accès aux rapports {#accessing-reports}
 
@@ -240,11 +240,11 @@ Après l&#39;envoi de votre diffusion, vous pouvez afficher vos rapports [!DNL L
 >
 >Les rapports de suivi indiquent le taux de clics. [!DNL LINE] ne prend pas en compte le taux d&#39;ouverture.
 
-![](assets/line_reports_01.png)
+![Résumé de la diffusion LINE avec l&#39;onglet Rapports mis en surbrillance en regard de Général](assets/line_reports_01.png)
 
 Pour les rapports de service [!DNL LINE], accédez au menu **[!UICONTROL Profils et Cibles]** > **[!UICONTROL Services et abonnements]** > **[!UICONTROL LINE-V2]** à partir de l&#39;onglet **[!UICONTROL Explorateur]**. Cliquez ensuite sur l&#39;icône **[!UICONTROL Rapports]** dans le service [!DNL LINE].
 
-![](assets/line_reports.png)
+Tableau de bord du service ![LINESVC avec l&#39;onglet Rapports mis en surbrillance en regard de Général](assets/line_reports.png)
 
 ## Exemple : créer et envoyer un message LINE personnalisé {#example--create-and-send-a-personalized-line-message}
 
@@ -252,43 +252,43 @@ Dans cet exemple, nous allons créer et paramétrer un message texte et une imag
 
 1. Créez votre diffusion [!DNL LINE] en cliquant sur le bouton **[!UICONTROL Créer]** depuis l&#39;onglet **[!UICONTROL Campagne]**.
 
-   ![](assets/line_usecase.png)
+   ![Liste des diffusions dans l&#39;onglet Campagnes avec le bouton Créer en surbrillance](assets/line_usecase.png)
 
 1. Sélectionnez le modèle de diffusion **[!UICONTROL Diffusion LINE V2]** et nommez votre diffusion.
 
-   ![](assets/line_usecase_01.png)
+   ![Nouvelle boîte de dialogue de diffusion avec le modèle de diffusion LINE V2 sélectionné dans la liste déroulante](assets/line_usecase_01.png)
 
 1. Dans la fenêtre de paramétrage de votre diffusion, sélectionnez votre population cible.
 
    Pour plus d&#39;informations, voir la section [Identification des populations ciblées](../../start/create-message.md#target-population).
 
-   ![](assets/line_usecase_02.png)
+   ![Diffusion avec le lien À et la boîte de dialogue Sélectionner la cible affichant le bouton Ajouter pour définir la population cible](assets/line_usecase_02.png)
 
 1. Cliquez sur **[!UICONTROL Ajouter]** pour créer votre message et sélectionnez le **[!UICONTROL Type de contenu]**.
 
    Nous voulons d&#39;abord créer un **[!UICONTROL message texte]**.
 
-   ![](assets/line_usecase_03.png)
+   ![Éditeur de messages LINE avec le type Message défini sur Message texte et un texte de bienvenue avec un code promotion](assets/line_usecase_03.png)
 
 1. Positionnez votre curseur à l&#39;endroit où vous souhaitez insérer le texte personnalisé, cliquez sur l&#39;icône déroulante, puis sélectionnez **[!UICONTROL Visiteur]** > **[!UICONTROL Prénom]**.
 
-   ![](assets/line_usecase_05.png)
+   ![Menu Personalization avec Visiteur, puis Prénom sélectionné pour insérer le prénom dans le texte](assets/line_usecase_05.png)
 
 1. Suivez la même procédure pour ajouter une image, en sélectionnant **[!UICONTROL Image et liens]** dans la liste déroulante **[!UICONTROL Type de message]**.
 
    Ajoutez l&#39;**[!UICONTROL image URL]**.
 
-   ![](assets/line_usecase_07.png)
+   ![Image et lien du message avec le type de message, l&#39;URL de l&#39;image et le texte de remplacement 20 % de réduction renseignés](assets/line_usecase_07.png)
 
 1. Dans la section **[!UICONTROL Liens]**, sélectionnez la disposition qui divisera l’image en plusieurs zones cliquables.
 
 1. Attribuez une URL à chaque zone géographique de votre image.
 
-   ![](assets/line_usecase_08.png)
+   ![Message d&#39;image et de lien avec deux régions, A et B, chacune avec sa propre URL de lien mise en surbrillance](assets/line_usecase_08.png)
 
 1. Sauvegardez votre diffusion puis cliquez sur **[!UICONTROL Envoyer]** afin de l&#39;analyser puis de l&#39;envoyer à la cible.
 
    La diffusion est envoyée à la cible :
 
-   ![](assets/line_usecase_06.png)
+   ![Réception d&#39;un message LINE avec un message de salutations personnalisé, du texte de code promotion et une image de 20 % de réduction sur les chaussures](assets/line_usecase_06.png)
 

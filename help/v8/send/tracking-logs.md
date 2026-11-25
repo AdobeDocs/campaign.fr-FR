@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 11%
+source-wordcount: '392'
+ht-degree: 10%
 ---
 # Accéder aux logs de tracking {#accessing-the-tracking-logs}
 
@@ -45,7 +45,7 @@ Lorsque la diffusion a été envoyée et que le tracking a été activé, le wor
 
 Ces informations sont remontées dans l&#39;onglet **[!UICONTROL Tracking]** du profil des destinataires ciblés par la diffusion, comme dans l&#39;exemple suivant :
 
-![](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
+![Onglet Tracking d&#39;un profil de destinataire répertoriant les clics suivis et les ouvertures avec date, libellé, type et diffusion](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
 
 Cet onglet affiche toutes les URL trackées et sur lesquelles le destinataire a cliqué, notamment :
 
@@ -60,7 +60,7 @@ Vous pouvez filtrer et trier ces informations pour analyser le comportement des 
 
 Les informations de tracking sont également accessibles à partir de l&#39;onglet **[!UICONTROL Tracking]** de la diffusion.
 
-![](assets/s_ncs_user_select_tracking_tab_from_del.png)
+![Onglet Tracking d&#39;une diffusion répertoriant les logs de tracking avec la date, le libellé, le type et le destinataire](assets/s_ncs_user_select_tracking_tab_from_del.png)
 
 Dans cet onglet, vous pouvez afficher :
 

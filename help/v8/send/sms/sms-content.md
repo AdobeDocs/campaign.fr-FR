@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 82%
+source-wordcount: '342'
+ht-degree: 63%
 ---
 # Définition du contenu du SMS {#sms-content}
 
@@ -40,25 +40,25 @@ Pour configurer le contenu de votre diffusion SMS :
 
 1. Saisissez le contenu du message dans l’onglet **[!UICONTROL Contenu texte]**.
 
-   ![](assets/sms_content.png){zoomable="yes"}
+   ![Onglet Contenu textuel de la diffusion SMS avec le texte du message saisi](assets/sms_content.png){zoomable="yes"}
 
 1. Vous pouvez personnaliser votre message en insérant des champs de personnalisation (par exemple, en ajoutant le prénom) ou des blocs de personnalisation prédéfinis (par exemple, en ajoutant des salutations). Cliquez sur le bouton de personnalisation pour ajouter ces éléments :
 
-   ![](assets/sms_perso.png){zoomable="yes"}
+   ![Menu Personalization ouvert dans le contenu texte du SMS avec sous-menu Destinataire affichant le prénom et d&#39;autres champs](assets/sms_perso.png){zoomable="yes"}
 
    Par exemple, après avoir cliqué sur **[!UICONTROL Destinataire]** > **[!UICONTROL Prénom]**, le contenu du SMS est mis à jour avec le champ de personnalisation, comme ci-dessous :
 
-   ![](assets/sms_perso_recipient.png){zoomable="yes"}
+   ![Contenu textuel du SMS avec le champ de personnalisation Prénom inséré dans le message](assets/sms_perso_recipient.png){zoomable="yes"}
 
    En savoir plus sur la personnalisation dans Adobe Campaign dans [Prise en main de la personnalisation](../personalize.md).
 
 1. Vous pouvez prévisualiser le contenu de votre diffusion à partir de l’onglet **[!UICONTROL Aperçu]**. Pour vérifier vos paramètres de personnalisation, cliquez sur la liste déroulante **[!UICONTROL Tester la personnalisation]** et sélectionnez une personne destinataire.
 
-   ![](assets/sms_preview.png){zoomable="yes"}
+   ![Onglet Aperçu du SMS avec le menu déroulant Tester la personnalisation ouvert pour sélectionner un destinataire](assets/sms_preview.png){zoomable="yes"}
 
    Vous pouvez vérifier la prévisualisation de votre SMS avec la personnalisation :
 
-   ![](assets/sms_preview_phone.png){zoomable="yes"}
+   ![Aperçu SMS avec le prénom remplacé par la valeur du destinataire, affiché sous forme de texte et sur une maquette téléphonique](assets/sms_preview_phone.png){zoomable="yes"}
 
 >[!NOTE]
 >
