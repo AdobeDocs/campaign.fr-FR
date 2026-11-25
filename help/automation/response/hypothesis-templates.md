@@ -134,7 +134,7 @@ L’onglet **[!UICONTROL Général]** du modèle permet également de définir l
 
 ### Transactions {#transactions}
 
-Cet onglet contient les différents champs et tables permettant de conserver l&#39;historique des réactions des destinataires en termes de transactions. Consultez cette [section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/about-schema-reference){target="_blank"} pour plus d’informations sur les tables dédiées à la gestion de la réaction.
+Cet onglet contient les différents champs et tables permettant de conserver l&#39;historique des réactions des destinataires en termes de transactions. Consultez cette [section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/about-schema-reference){target="_blank"} pour plus d’informations sur les tables dédiées à la gestion de la réaction.
 
 * **[!UICONTROL Schéma (stockage des logs de réaction)]** : indiquez la table des réactions des destinataires. La table livrée d&#39;usine dans Adobe Campaign est **NmsRemaMatchRcp**.
 * **[!UICONTROL Schéma des transactions]** : choisissez la table sur laquelle vous allez effectuer vos hypothèses, soit la table des transactions ou des achats.
