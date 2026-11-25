@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 100%
+source-wordcount: '154'
+ht-degree: 77%
 ---
 # Saut (départ et arrivée){#jump-start-point-and-end-point}
 
@@ -36,12 +36,12 @@ Les sauts sont des transitions sans flèches.
 
 Ils vont d’une activité à l’autre, comme dans l’exemple suivant :
 
-![](assets/s_user_segmentation_jump_sample.png)
+![Workflow où les sauts de point de départ remplacent les longues transitions vers deux sauts de point d&#39;arrivée alimentant une union et une déduplication.](assets/s_user_segmentation_jump_sample.png)
 
 Pour chaque saut de type &quot;départ&quot;, un saut de type &quot;arrivée&quot; doit être positionné.
 
 Vous pouvez insérer plusieurs points de départ et d’arrivée dans un même workflow. Ils sont identifiés par un numéro qui doit être saisi dans les paramètres :
 
-![](assets/s_user_segmentation_jump_in.png)
+![Activité Saut (point de départ) avec le champ Libellé et le champ Numéro de saut définis sur 1.](assets/s_user_segmentation_jump_in.png)
 
 Afin d&#39;améliorer la lisibilité du diagramme, vous pouvez changer l&#39;image associée aux sauts afin d&#39;afficher le chiffre correspondant. Pour plus dʼinformations, consultez la section [Modification des images dʼactivité](change-activity-images.md).

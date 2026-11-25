@@ -22,10 +22,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 100%
+source-wordcount: '2337'
+ht-degree: 83%
 ---
 # Partage{#split}
 
@@ -37,9 +37,9 @@ Cette activité ne fait pas l&#39;union des populations entrantes. Si plusieurs 
 >
 >Les opérations de partage ne peuvent pas être effectuées pour les tables qui ont des sources différentes. Pour ce faire, vous devez ajouter une activité **Enrichissement** avant l’activité **Partage**.
 
-* Consultez un exemple d&#39;utilisation de l&#39;activité de partage dans [cette section](targeting-workflows.md#create-subsets-using-the-split-activity).
-* Un exemple d&#39;utilisation de l&#39;activité de Partage pour segmenter la cible en différentes populations à l&#39;aide des conditions de filtrage est présenté dans [cette section](cross-channel-delivery-workflow.md).
-* Un exemple d&#39;utilisation d&#39;une variable d&#39;instance dans une activité de Partage est présenté dans [cette section](javascript-scripts-and-templates.md).
+* Pour un exemple d&#39;utilisation de l&#39;activité de partage, consultez la section [Création de sous-ensembles à l&#39;aide de l&#39;activité Partage](targeting-workflows.md#create-subsets-using-the-split-activity).
+* Un exemple illustrant comment utiliser l&#39;activité Partage pour segmenter la cible en différentes populations à l&#39;aide de conditions de filtrage est décrit dans le [workflow de diffusion cross-canal](cross-channel-delivery-workflow.md).
+* Un exemple montrant comment utiliser une variable d&#39;instance dans une activité Partage est disponible dans [les scripts et modèles JavaScript](javascript-scripts-and-templates.md).
 
 Pour paramétrer cette activité, vous devez définir le contenu et le libellé des sous-ensembles souhaités dans l&#39;onglet **[!UICONTROL Sous-ensembles]**, puis choisir la dimension de ciblage dans l&#39;onglet **[!UICONTROL Général]**.
 
@@ -62,11 +62,11 @@ Pour créer un sous-ensemble :
 
    Un assistant vous permet de choisir le mode de sélection des enregistrements de ce sous-ensemble. [En savoir plus](#limit-the-number-of-subset-records).
 
-   ![](assets/s_user_segmentation_partage4.png)
+   ![Onglet Sous-ensembles avec Sous-ensemble 1, Limiter les enregistrements sélectionnés et le lien Modifier qui ouvre l&#39;assistant de limitation](assets/s_user_segmentation_partage4.png)
 
 1. Si vous le souhaitez, **ajoutez d&#39;autres sous-ensembles** en utilisant le bouton **[!UICONTROL Ajouter]**.
 
-   ![](assets/s_user_segmentation_partage_add.png)
+   ![Onglet Sous-ensembles avec le bouton Ajouter et les onglets Sous-ensemble 1, Sous-ensemble 2 et Sous-ensemble 3 en bas](assets/s_user_segmentation_partage_add.png)
 
    >[!NOTE]
    >
@@ -74,7 +74,7 @@ Pour créer un sous-ensemble :
 
    Pour chaque sous-ensemble créé, une transition sortante sera ajoutée à l&#39;activité de partage.
 
-   ![](assets/s_user_segmentation_partage_add2.png)
+   ![Diviser l&#39;activité avec une transition sortante par sous-ensemble : sous-ensemble 1, sous-ensemble 2 et sous-ensemble 3](assets/s_user_segmentation_partage_add2.png)
 
    Vous pouvez choisir de ne générer qu&#39;une seule transition sortante (et identifier les ensembles par exemple au travers du code segment) : pour cela, sélectionnez l&#39;option **[!UICONTROL Générer tous les sous-ensembles dans la même table]** dans l&#39;onglet **[!UICONTROL Général]**.
 
@@ -93,15 +93,15 @@ Si vous ne souhaitez pas utiliser l&#39;ensemble de la population d&#39;un sous-
 
      Par exemple, si vous choisissez le champ **[!UICONTROL Age]** comme critère de tri, et que vous définissez ensuite une limite de 100, mais que les 2000 destinataires les plus jeunes en base ont tous 18 ans, alors 100 destinataires seront sélectionnés aléatoirement parmi ces 2000.
 
-   ![](assets/s_user_segmentation_partage_wz1.png)
+   ![Type d&#39;étape de l&#39;assistant de limitation : échantillonnage aléatoire, premiers enregistrements après tri ou premiers enregistrements après tri (critères, aléatoire)](assets/s_user_segmentation_partage_wz1.png)
 
 1. Si vous choisissez de définir des critères de tri, une étape supplémentaire vous permet de définir les colonnes et l&#39;ordre de tri.
 
-   ![](assets/s_user_segmentation_partage_wz1.1.png)
+   ![Étape de l&#39;assistant de tri avec ciblage et filtrage des dimensions et tri des colonnes Date de création et Société, décroissant](assets/s_user_segmentation_partage_wz1.1.png)
 
 1. Choisissez ensuite la méthode de limitation des données.
 
-   ![](assets/s_user_segmentation_partage_wz2.png)
+   ![Étape de l&#39;assistant Limites avec Taille (en %) sélectionnée et définie sur 10,00, plus les autres options de limitation des données](assets/s_user_segmentation_partage_wz2.png)
 
    Vous avez le choix entre les différentes méthodes suivantes :
 
@@ -125,15 +125,15 @@ Par exemple, si vous choisissez le champ **[!UICONTROL Langue]** comme champ de 
 
 1. Lors de la sélection des valeurs de limitation de données, sélectionnez **[!UICONTROL Par groupement de données]** ou **[!UICONTROL Par groupement de données (en %)]** et cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/s_user_segmentation_partage_wz3.png)
+   ![Étape de l&#39;assistant Limites avec l&#39;option Par regroupement de données sélectionnée et une invite pour cliquer sur Suivant afin de saisir les informations supplémentaires](assets/s_user_segmentation_partage_wz3.png)
 
 1. Sélectionnez ensuite le ou les champs de groupement (par exemple, le champ **[!UICONTROL Langue]**) et cliquez sur le bouton **[!UICONTROL Suivant]**.
 
-   ![](assets/s_user_segmentation_partage_wz4.png)
+   ![Étape de l&#39;assistant de regroupement des données répertoriant le champ Langue comme expression de regroupement](assets/s_user_segmentation_partage_wz4.png)
 
 1. Définissez enfin les valeurs de limitation des groupements de données (à l&#39;aide de valeurs fixes ou de pourcentages selon la méthode de groupement sélectionnée auparavant). Pour définir la même limite pour toutes les valeurs, par exemple si vous souhaitez limiter à 10 le nombre d&#39;enregistrements pour chaque langue, sélectionnez l&#39;option **[!UICONTROL Tous les groupements de données ont la même taille]**. Pour définir une limite différente pour chaque valeur, sélectionnez l&#39;option **[!UICONTROL Limitations par valeur de groupement]**. Vous pourrez choisir une limite différente pour l&#39;anglais, le français, etc.
 
-   ![](assets/s_user_segmentation_partage_wz5.png)
+   ![Étape de regroupement des données avec Tous les regroupements de données ont la même taille sélectionnée et une valeur de 8](assets/s_user_segmentation_partage_wz5.png)
 
 1. Cliquez sur **[!UICONTROL Terminer]** pour valider la limitation et revenir à l&#39;édition de l&#39;activité de partage.
 
@@ -141,9 +141,9 @@ Par exemple, si vous choisissez le champ **[!UICONTROL Langue]** comme champ de 
 
 Si vos champs de groupement contiennent un trop grand nombre de valeurs ou si vous souhaitez éviter de réinitialiser les valeurs pour chaque nouvelle activité de partage, Adobe Campaign vous permet de créer une limite par répartition de données. Lors de la sélection de la section [valeurs de limitation des données](#create-subsets), choisissez l&#39;option **[!UICONTROL Par répartition de données]** et sélectionnez un modèle dans le menu déroulant. La création d&#39;un modèle de répartition de données est illustrée ci-dessous.
 
-Un exemple d’utilisation de l&#39;activité **[!UICONTROL Validation en local]** avec un modèle de répartition est présenté sur [cette page](local-approval-activity.md).
+Pour obtenir un exemple de l&#39;activité **[!UICONTROL Validation en local]** avec un modèle de distribution, consultez la section [Utiliser l&#39;activité Validation en local](local-approval-activity.md).
 
-![](assets/s_user_segmentation_partage_wz6.png)
+![Étape de l’assistant Limites avec l’option Par répartition de données sélectionnée et la répartition du modèle appliquée aux destinataires](assets/s_user_segmentation_partage_wz6.png)
 
 >[!CAUTION]
 >
@@ -153,11 +153,11 @@ Le modèle de répartition de données permet de limiter le nombre d’enregistr
 
 1. Pour créer le modèle de répartition de données, positionnez-vous sur le noeud **[!UICONTROL Ressources > Gestion de campagne > Répartition de données]**, et cliquez sur le bouton **[!UICONTROL Nouveau]**.
 
-   ![](assets/local_validation_data_distribution_1.png)
+   ![Arborescence de l&#39;Explorateur avec le nœud Distribution de données sous Gestion des ressources et des campagnes, et le bouton Nouveau](assets/local_validation_data_distribution_1.png)
 
 1. L&#39;onglet **[!UICONTROL Général]** permet de renseigner le libellé ainsi que le contexte d&#39;exécution de la répartition (dimension de ciblage, champ de répartition).
 
-   ![](assets/local_validation_data_distribution_2.png)
+   ![Onglet Général de la distribution de données avec dimension de ciblage, champ de distribution, type de distribution et stockage des validations](assets/local_validation_data_distribution_2.png)
 
    Les champs à renseigner sont les suivants :
 
@@ -171,7 +171,7 @@ Le modèle de répartition de données permet de limiter le nombre d’enregistr
 
 1. Si vous utilisez une activité [Validation en local](local-approval.md), renseignez ensuite les **[!UICONTROL Paramètres avancés]** du modèle de distribution :
 
-   ![](assets/local_validation_data_distribution_3.png)
+   ![Paramètres avancés avec les paramètres Approuver les messages ciblés, Libellé de diffusion, Champ de regroupement et Interface web](assets/local_validation_data_distribution_3.png)
 
    Les champs à renseigner sont les suivants :
 
@@ -181,21 +181,21 @@ Le modèle de répartition de données permet de limiter le nombre d’enregistr
      >
      >Cette option est cochée par défaut.
 
-     ![](assets/local_validation_notification.png)
+     ![Liste de notification d&#39;approbation des destinataires à approuver, chacun avec une case cochée en rouge](assets/local_validation_notification.png)
 
    * **[!UICONTROL Libellé de la diffusion]** : permet de définir une expression pour afficher le libellé de la diffusion dans la notification de retour. L’expression par défaut renseigne le libellé standard de la diffusion (compute string). Vous pouvez modifier cette expression.
 
-     ![](assets/local_validation_notification_3.png)
+     ![Notification de retour de diffusion avec la ligne de diffusion, qui affiche le libellé de la diffusion, surligné en rouge](assets/local_validation_notification_3.png)
 
    * **[!UICONTROL Champ de groupement]** : ce champ permet de définir le groupement utilisé pour l&#39;affichage des destinataires dans les notifications de validation et de retour.
 
-     ![](assets/local_validation_notification_4.png)
+     ![Liste de validation dans laquelle les destinataires sont regroupés sous les en-têtes Masculin et Féminin surlignés en rouge](assets/local_validation_notification_4.png)
 
    * **[!UICONTROL Interface web]** : permet d’associer une application web à la liste des destinataires. Dans la notification de validation et de retour, chaque personne destinataire sera cliquable et associée à l’application web sélectionnée. Le champ **[!UICONTROL Paramètres]** (par exemple, **[!UICONTROL recipientId]**) permet de renseigner le paramètre additionnel qui sera utilisé dans l&#39;URL de l&#39;application web.
 
 1. L&#39;onglet **[!UICONTROL Répartition]** permet de définir la liste des valeurs de répartition.
 
-   ![](assets/local_validation_data_distribution_4.png)
+   ![Onglet Répartition répertoriant les valeurs des champs de distribution avec leur pourcentage, libellé et groupe ou opérateur](assets/local_validation_data_distribution_4.png)
 
    * **[!UICONTROL Valeur]** : saisissez les valeurs de répartition.
    * **[!UICONTROL Pourcentage/Fixe]** : renseignez la limite d&#39;enregistrements (fixe ou en pourcentage) associée à chaque valeur.
@@ -215,11 +215,11 @@ Le modèle de répartition de données permet de limiter le nombre d’enregistr
 
 Cliquez sur l’onglet **[!UICONTROL Général]** pour saisir le libellé de l’activité. Sélectionnez la cible et les dimensions de filtre pour ce partage. Si nécessaire, vous pouvez modifier ces dimensions pour un sous-ensemble donné.
 
-![](assets/s_user_segmentation_partage_general.png)
+![Onglet Général de l&#39;activité Partage avec les dimensions de ciblage et de filtrage et l&#39;option Générer le complémentaire cochée](assets/s_user_segmentation_partage_general.png)
 
 Cochez l’option **[!UICONTROL Générer le complément]** si vous souhaitez exploiter la population restante. Le complément est la cible entrante, moins l’union des sous-ensembles. Une seconde transition sortante sera alors ajoutée à l’activité, comme suit :
 
-![](assets/s_user_segmentation_partage_compl.png)
+![Partager l&#39;activité avec les transitions sortantes Sous-ensemble 1, Sous-ensemble 2, Sous-ensemble 3 et une transition complémentaire supplémentaire](assets/s_user_segmentation_partage_compl.png)
 
 Pour que cette option fonctionne correctement, les données en entrée doivent posséder une clé primaire.
 

@@ -27,10 +27,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 100%
+source-wordcount: '1260'
+ht-degree: 97%
 ---
 # Démarrer, mettre en pause et arrêter un workflow {#starting-a-workflow}
 
@@ -50,7 +50,7 @@ La liste des options disponibles dans le menu **[!UICONTROL Actions]** et le men
 
 Le bouton **[!UICONTROL Actions]** de la barre d’outils permet d’accéder à des options d’exécution supplémentaires sur les workflows sélectionnés. Vous pouvez également utiliser le menu **[!UICONTROL Fichier > Actions]** ou cliquez avec le bouton droit de la souris sur un workflow et sélectionnez **[!UICONTROL Actions]**.
 
-![](assets/purge_historique.png)
+![Liste des workflows avec l’ouverture du menu Actions et l’historique de purge mis en surbrillance parmi les options Démarrer, Pause, Arrêter et Redémarrer.](assets/purge_historique.png)
 
 * **[!UICONTROL Début]**
 
@@ -134,7 +134,7 @@ Améliorez la stabilité de votre instance en implémentant les bonnes pratiques
 
 Lorsqu&#39;une ou plusieurs activités d&#39;un workflow sont sélectionnées, vous pouvez cliquer avec le bouton droit de la souris afin d&#39;agir sur votre sélection.
 
-![](assets/contextual_menu.png)
+![Menu contextuel sur une activité de workflow avec Afficher les journaux en surbrillance, et options Ouvrir, Couper, Copier, Supprimer et Enregistrer.](assets/contextual_menu.png)
 
 Les options disponibles dans le menu contextuel sont les suivantes :
 

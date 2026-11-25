@@ -23,16 +23,16 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 100%
+source-wordcount: '929'
+ht-degree: 79%
 ---
 # Utiliser les données d&#39;un workflow{#how-to-use-workflow-data}
 
 Vous pouvez utiliser des activités de workflow pour effectuer plusieurs tâches. Vous trouverez ci-dessous des exemples d&#39;utilisation pour mettre à jour la base de données en créant des listes, gérer les abonnements, envoyer des messages par le biais d&#39;un workflow ou enrichir vos diffusions et leurs audiences.
 
-Un ensemble de cas d&#39;utilisation de workflows est disponible dans [cette section](workflow-use-cases.md).
+Un ensemble de cas d&#39;utilisation de workflow est disponible dans [Cas d&#39;utilisation de workflow](workflow-use-cases.md).
 
 ## Cycle de vie des données {#data-life-cycle}
 
@@ -42,7 +42,7 @@ Dans un workflow, les données véhiculées d&#39;une activité à l&#39;autre s
 
 Ces données peuvent être affichées et analysées à partir du bouton droit de la souris sur la transition visée.
 
-![](assets/wf-right-click-analyze.png)
+![Workflow avec menu contextuel sur une transition affichant les options Afficher la cible et Analyser la cible.](assets/wf-right-click-analyze.png)
 
 Sélectionnez pour cela le menu correspondant :
 
@@ -50,13 +50,13 @@ Sélectionnez pour cela le menu correspondant :
 
   Ce menu affiche les données disponibles sur la population cible.
 
-  ![](assets/wf-right-click-display.png)
+  ![Afficher la fenêtre de population, onglet Données, répertoriant les enregistrements de la cible avec leurs champs.](assets/wf-right-click-display.png)
 
   Vous pouvez accéder à la structure de la table de travail dans l&#39;onglet **[!UICONTROL Schéma]**.
 
-  ![](assets/wf-right-click-schema.png)
+  ![Afficher la fenêtre de population, onglet Schéma, affichant la structure de la table de travail temporaire:enrich et de ses champs.](assets/wf-right-click-schema.png)
 
-  Pour plus d’informations, consultez [cette section](monitor-workflow-execution.md#worktables-and-workflow-schema).
+  Voir à ce sujet la section [Tables de travail et schémas des workflows](monitor-workflow-execution.md#worktables-and-workflow-schema).
 
 * **[!UICONTROL Analyser la cible...]**
 
@@ -66,7 +66,7 @@ Sélectionnez pour cela le menu correspondant :
 
 Les données de la cible sont purgées au fur et à mesure de l’exécution du workflow. Seule la dernière table de travail est accessible. Vous pouvez paramétrer le workflow pour que toutes les tables de travail restent accessibles. Pour cela, cochez l&#39;option **[!UICONTROL Conserver le résultat des populations intermédiaires entre deux exécutions]** dans les propriétés du workflow.
 
-![](assets/wf-purge-data-option.png)
+![Propriétés du workflow avec l&#39;option Conserver le résultat des populations intermédiaires entre deux exécutions activée.](assets/wf-purge-data-option.png)
 
 >[!CAUTION]
 >
@@ -89,7 +89,7 @@ Dans l&#39;exemple suivant, vous allez collecter une liste d&#39;informations su
 
 1. Créez un workflow afin de collecter les informations, les réconcilier avec celles de la base puis lancer une diffusion.
 
-   ![](assets/wf-targetdata-sample-1.png)
+   ![Workflow avec activités Chargement (fichier), Enrichissement et Diffusion connectées en séquence.](assets/wf-targetdata-sample-1.png)
 
 1. Dans notre exemple, le contenu du fichier est le suivant :
 
@@ -105,15 +105,15 @@ Dans l&#39;exemple suivant, vous allez collecter une liste d&#39;informations su
 
    Pour charger le fichier, configurez l&#39;activité **[!UICONTROL Chargement (fichier)]** comme indiqué ci-dessous :
 
-   ![](assets/wf-targetdata-sample-2.png)
+   ![Activité Chargement (fichier) avec un exemple de fichier CSV, un aperçu de ses colonnes et Chargez un fichier à partir de l’ordinateur local.](assets/wf-targetdata-sample-2.png)
 
 1. Paramétrez l&#39;activité **[!UICONTROL Enrichissement]** afin de réconcilier les données collectées avec celles de la base de données Adobe Campaign. Ici, la clé de réconciliation est le numéro de compte :
 
-   ![](assets/wf-targetdata-sample-3.png)
+   ![Activité Enrichissement, onglet Réconciliation, avec l&#39;expression source Compte correspondant au @account de destination.](assets/wf-targetdata-sample-3.png)
 
 1. Configurez ensuite la **[!UICONTROL Diffusion]** : elle est créée depuis un modèle et les destinataires sont ceux spécifiés par la transition entrante.
 
-   ![](assets/wf-targetdata-sample-4.png)
+   ![Activité de diffusion créée à partir d&#39;un modèle, avec des destinataires spécifiés par les événements entrants et l&#39;action de préparation.](assets/wf-targetdata-sample-4.png)
 
    >[!CAUTION]
    >
@@ -123,13 +123,13 @@ Dans l&#39;exemple suivant, vous allez collecter une liste d&#39;informations su
 
    Pour cela, insérez des champs de personnalisation de type **[!UICONTROL Extension de la cible]**.
 
-   ![](assets/wf-targetdata-sample-5.png)
+   ![Menu de personnalisation de l’éditeur de diffusion avec l’extension Target ouverte, répertoriant des champs tels que Musique, Compte et Carte.](assets/wf-targetdata-sample-5.png)
 
    Ici, nous allons insérer le genre musical favori du client, ainsi que le type de support privilégié (CD ou DVD), tels qu&#39;ils sont indiqués dans le fichier collecté via le workflow.
 
    En complément, nous ajouterons une promotion réservée aux porteurs de la carte de fidélité, soit ceux pour lesquels la valeur &#39;Carte&#39; est égale à 1.
 
-   ![](assets/wf-targetdata-sample-6.png)
+   ![Diffuser du contenu avec un script qui ajoute 10 % de réduction lorsque targetData.Card est égal à 1 et personnalisation targetData.Music.](assets/wf-targetdata-sample-6.png)
 
    Les données de type **[!UICONTROL Extension de la cible]** (targetData) sont insérées dans les diffusions selon les mêmes caractéristiques que tous les champs de personnalisation. Elles peuvent également être utilisées dans l’objet, les libellés du lien ou les liens eux-mêmes.
 
@@ -146,7 +146,7 @@ Les données de la base Adobe Campaign et les listes existantes peuvent être m
 
   Vous pouvez sélectionner une liste existante ou en créer-une. Dans ce cas, le nom et éventuellement le dossier d’enregistrement sont calculés.
 
-  ![](assets/s_user_create_list.png)
+  ![Activité de mise à jour de liste avec une liste spécifiée explicitement, enregistrée dans la base de données des dimensions de ciblage avec sa propre table.](assets/s_user_create_list.png)
 
   Pour plus d&#39;informations, consultez la section [Mise à jour de liste](list-update.md).
 

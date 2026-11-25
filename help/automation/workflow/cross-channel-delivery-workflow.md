@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 100%
+source-wordcount: '884'
+ht-degree: 75%
 ---
 # Workflow de diffusion cross-canal{#cross-channel-delivery-workflow}
 
@@ -47,18 +47,18 @@ Les principales étapes d&#39;implémentation pour ce cas pratique sont les suiv
    * envoyer un SMS aux destinataires ayant ouvert l&#39;email, mais n&#39;ayant pas cliqué sur le lien vers l&#39;offre ;
    * ajouter à la base de données les destinataires ayant ouvert l&#39;email et cliqué sur le lien.
 
-![](assets/wkf_cross-channel_7.png)
+![Workflow à partir d&#39;une requête de membres Gold et d&#39;un e-mail, via l&#39;Attente et le Partage, vers un e-mail de rappel, un SMS et une mise à jour de liste](assets/wkf_cross-channel_7.png)
 
 ## Étape 1 : créer l’audience {#step-1--build-the-audience}
 
 Pour définir votre cible, créez une requête afin d&#39;identifier les destinataires.
 
-1. Créez une campagne. En savoir plus à ce propos sur [cette page](../campaigns/marketing-campaign-create.md).
+1. Créez une campagne. En savoir plus sur la section [Créer des campagnes marketing](../campaigns/marketing-campaign-create.md).
 1. Dans l’onglet **[!UICONTROL Ciblage et workflows]** de la campagne, ajoutez une activité **Requête** à votre workflow. Pour plus d’informations sur cette activité, consultez [cette section](query.md).
 1. Définissez les personnes destinataires qui recevront vos diffusions. Par exemple, sélectionnez les membres « Gold » comme dimension cible.
 1. Ajoutez des conditions de filtrage à votre requête. Dans cet exemple, sélectionnez les personnes destinataires disposant d’une adresse e-mail et d’un numéro de téléphone portable.
 
-   ![](assets/wkf_cross-channel_3.png)
+   ![La fenêtre de filtrage pour les membres de la liste Gold avec des conditions E-mail n&#39;est pas vide et Mobile n&#39;est pas vide](assets/wkf_cross-channel_3.png)
 
 1. Enregistrez vos modifications.
 
@@ -67,21 +67,21 @@ Pour définir votre cible, créez une requête afin d&#39;identifier les destina
 1. Créez une diffusion e-mail.
 1. Concevez le message et insérez un lien comprenant une offre dans le contenu.
 
-   ![](assets/wkf_cross-channel_1.png)
+   ![Fenêtre de gestion des offres avec les options Sélection des offres, le champ Emplacement et Exclure les destinataires non éligibles](assets/wkf_cross-channel_1.png)
 
-   Pour plus d’informations sur l’intégration d’une offre dans le corps d’un message, consultez [cette page](../../v8/send/email.md).
+   Pour plus d&#39;informations sur l&#39;intégration d&#39;une offre dans le corps d&#39;un message, consultez la section [Envoyer des e-mails avec Adobe Campaign](../../v8/send/email.md).
 
 1. Enregistrez vos modifications.
 1. Cliquez avec le bouton droit sur l&#39;activité **[!UICONTROL Diffusion Email]** pour l&#39;ouvrir.
 1. Sélectionnez l&#39;option **[!UICONTROL Générer une transition sortante]** pour récupérer la population et les logs de tracking.
 
-   ![](assets/wkf_cross-channel_2.png)
+   ![Activité Diffusion e-mail avec l’option Générer une transition sortante sélectionnée](assets/wkf_cross-channel_2.png)
 
    Vous pourrez ainsi utiliser ces informations pour envoyer une autre diffusion en fonction du comportement des destinataires lors de la réception du premier email.
 
 1. Ajoutez une activité **[!UICONTROL Attente]** afin de laisser quelques jours aux destinataires pour ouvrir l&#39;email.
 
-   ![](assets/wkf_cross-channel_4.png)
+   ![Activité d’attente avec le champ Durée défini sur 3d](assets/wkf_cross-channel_4.png)
 
 ## Étape 3 : segmenter l’audience obtenue {#step-3--segment-the-resulting-audience}
 
@@ -90,32 +90,32 @@ Une fois votre cible identifiée et votre première diffusion créée, vous deve
 1. Ajoutez une activité **Partage** au workflow et ouvrez-la. Pour plus d’informations sur cette activité, consultez [cette section](split.md).
 1. Créez trois segments à partir de la population calculée en amont dans la requête.
 
-   ![](assets/wkf_cross-channel_6.png)
+   ![Onglet Sous-ensembles d’activités fractionnés avec trois sous-ensembles : n’a pas ouvert l’e-mail, a ouvert mais n’a pas cliqué sur le lien, a cliqué](assets/wkf_cross-channel_6.png)
 
 1. Pour le premier sous-ensemble, sélectionnez l&#39;option **[!UICONTROL Ajouter une condition de filtrage sur la population entrante]** et cliquez sur **[!UICONTROL Editer]**.
 
-   ![](assets/wkf_cross-channel_8.png)
+   ![Fractionner le sous-ensemble N’a pas ouvert l’e-mail avec l’option Ajouter une condition de filtrage sur la population entrante et le lien Modifier](assets/wkf_cross-channel_8.png)
 
 1. Sélectionnez **[!UICONTROL Destinataires d&#39;une diffusion]** en tant que filtre de restriction et cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/wkf_cross-channel_9.png)
+   ![Fenêtre Dimension de ciblage et de filtrage avec les destinataires d&#39;une diffusion sélectionnés dans la liste des filtres de restriction](assets/wkf_cross-channel_9.png)
 
 1. Dans les paramètres des filtres, sélectionnez **[!UICONTROL Les destinataires n&#39;ayant ni ouvert ni cliqué (email)]** dans la liste déroulante **[!UICONTROL Comportement]** et choisissez l&#39;email comprenant l&#39;offre à envoyer depuis la liste des destinataires. Cliquez sur **[!UICONTROL Terminer]**.
 
-   ![](assets/wkf_cross-channel_10.png)
+   ![Fenêtre de l’élément cible avec comportement défini sur Destinataires n’ayant ni ouvert ni cliqué (e-mail) et une diffusion sélectionnée](assets/wkf_cross-channel_10.png)
 
 1. Procédez de la même manière pour le deuxième sous-ensemble et sélectionnez **[!UICONTROL Les destinataires n&#39;ayant pas cliqué (email)]** dans la liste déroulante **[!UICONTROL Comportement]**.
 
-   ![](assets/wkf_cross-channel_11.png)
+   ![Liste de comportements ouverte avec les destinataires n&#39;ayant pas cliqué (e-mail) sélectionnés](assets/wkf_cross-channel_11.png)
 
 1. Pour le troisième sous-ensemble, après avoir sélectionné **[!UICONTROL Ajouter une condition de filtrage sur la population entrante]** et cliqué sur **[!UICONTROL Editer]**, sélectionnez l&#39;option **[!UICONTROL Utiliser une dimension de filtrage spécifique]**.
 1. Sélectionnez **[!UICONTROL Log de tracking d&#39;un destinataire]** dans la liste déroulante **[!UICONTROL Dimension de filtrage]**, mettez en surbrillance **[!UICONTROL Critères de filtrage]** dans **[!UICONTROL Liste des filtres de restrictions]**, puis cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/wkf_cross-channel_12.png)
+   ![Utilisez une dimension de filtrage spécifique sélectionnée avec la dimension de filtrage définie sur Log de suivi du destinataire](assets/wkf_cross-channel_12.png)
 
 1. Sélectionnez les conditions de filtres suivants :
 
-   ![](assets/wkf_cross-channel_13.png)
+   ![Conditions de filtrage : Type égal à Clic email, Libellé de diffusion égal à E-mail avec offre hiver et offre hiver](assets/wkf_cross-channel_13.png)
 
 1. Cliquez sur **[!UICONTROL Terminer]** pour enregistrer vos modifications.
 

@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 99%
+source-wordcount: '1123'
+ht-degree: 90%
 ---
 # Application de règles de typologie{#applying-rules}
 
@@ -45,14 +45,14 @@ Pour ce faire, procédez comme suit :
 
 1. Accédez à l&#39;onglet **[!UICONTROL Règles]**, cliquez sur le bouton **[!UICONTROL Ajouter]** et sélectionnez les règles à appliquer avec cette typologie.
 
-   ![](assets/campaign_opt_pressure_sample_1_6.png)
+   ![Onglet Règles de typologie avec le bouton Ajouter et la boîte de dialogue Ajouter des règles répertoriant les règles de typologie à sélectionner](assets/campaign_opt_pressure_sample_1_6.png)
 
 1. Enregistrez la typologie : elle est alors ajoutée à la liste des typologies existantes.
 1. Ouvrez la diffusion à laquelle vous souhaitez appliquer les règles.
 1. Accédez aux propriétés de la diffusion et ouvrez l’onglet **[!UICONTROL Typologie]**.
 1. Sélectionnez la typologie dans la liste déroulante.
 
-   ![](assets/campaign_opt_pressure_sample_1_7.png)
+   ![Propriétés de la diffusion, onglet Typologie, avec le menu déroulant Typologie répertoriant la pression des clients/prospects](assets/campaign_opt_pressure_sample_1_7.png)
 
    >[!NOTE]
    >
@@ -68,7 +68,7 @@ Pour définir les critères d&#39;application d&#39;une règle, cliquez sur le l
 
 Utilisez ensuite le [requêteur](../../v8/start/query-editor.md) pour définir les conditions de filtrage. Dans l’exemple ci-dessous, seules les diffusions dont le libellé contient le terme « offre » et celles créées avant le 1er avril 2013, sont concernées par la règle de capacité.
 
-![](assets/campaign_opt_create_capacity_criterion.png)
+![Onglet Général de la règle de capacité avec la requête des conditions de l&#39;application sur le libellé contient l&#39;offre et la date de création](assets/campaign_opt_create_capacity_criterion.png)
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ Par exemple, une règle de pression dont l’ordre d’exécution est positionn�
 
 Pour les règles de **[!UICONTROL contrôle]**, vous pouvez choisir l’étape du cycle de vie des diffusions à laquelle la règle sera appliquée : avant ou après le ciblage, au début de la personnalisation ou à la fin de l’analyse. Sélectionnez la valeur à appliquer dans la liste déroulante du champ **[!UICONTROL Phase]**, sous l’onglet **[!UICONTROL Général]** de la règle de typologie.
 
-![](assets/campaign_opt_define_control_phase.png)
+![Onglet Général de la règle de typologie de contrôle avec le menu déroulant Phase répertoriant les quatre phases de l&#39;application](assets/campaign_opt_define_control_phase.png)
 
 Les valeurs possibles sont les suivantes :
 
@@ -147,7 +147,7 @@ Les valeurs possibles sont les suivantes :
 
 Vous pouvez utiliser le champ **[!UICONTROL Gestion des affinités avec les adresses IP]** pour associer les diffusions au serveur de diffusions (MTA) qui gère l’affinité en question. Ainsi, il est possible de limiter l’envoi d’emails pour des diffusions spécifiques, vers certaines machines ou adresses de sortie.
 
-![](assets/campaign_opt_select_ip_affinity.png)
+![Onglet Général de la typologie avec le champ Affinité sous Gestion des affinités avec les adresses IP](assets/campaign_opt_select_ip_affinity.png)
 
 >[!NOTE]
 >
@@ -161,9 +161,9 @@ Vous pouvez utiliser le champ **[!UICONTROL Gestion des affinités avec les adre
 
 L’onglet **[!UICONTROL Marketing distribué]** vous permet de définir le nouveau mapping des typologies et/ou des règles qui s’applique lorsqu’une campagne partagée est commandée et/ou réservée. Les typologies/règles définies pour une entité locale (liées à celles définies pour l’entité centrale) remplacent les règles/typologies liées à l’entité centrale. Le nouveau mapping vous permet d’adapter les règles d’entité centrale aux entités locales qui commandent la campagne.
 
-![](assets/simu_campaign_opti_distrib_mkg.png)
+![Onglet Marketing distribué de la typologie avec les champs Entité organisationnelle et Typologie centrale associée](assets/simu_campaign_opti_distrib_mkg.png)
 
 >[!NOTE]
 >
 >Dans les typologies et règles de typologie, l&#39;onglet **[!UICONTROL Marketing Distribué]** est proposé si votre licence inclut cette option : vérifiez votre contrat de licence.\
->Pour plus d&#39;informations sur le marketing distribué, consultez [cette section](../distributed-marketing/about-distributed-marketing.md).
+>Pour plus d&#39;informations sur le marketing distribué, consultez [Prise en main du marketing distribué](../distributed-marketing/about-distributed-marketing.md).

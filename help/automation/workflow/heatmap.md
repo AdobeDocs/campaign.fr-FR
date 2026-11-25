@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 98%
+source-wordcount: '1356'
+ht-degree: 84%
 ---
 # Carte thermique des workflows {#workflow-heatmap}
 
@@ -64,7 +64,7 @@ L’utilisation de la carte thermique des workflows demande une bonne maîtrise 
 
 1. Accédez à **[!UICONTROL Su]**, puis cliquez sur le lien **[!UICONTROL Carte thermique des workflows]** pour afficher la page **[!UICONTROL Carte thermique des workflows Campaign]**.
 
-   ![](assets/wkf_monitoring_path.png)
+   ![Onglet Surveillance avec le lien Carte thermique des workflows sélectionné, ouverture de la grille Carte thermique des workflows Campaign.](assets/wkf_monitoring_path.png)
 
 1. Cliquez sur le calendrier pour sélectionner un jour.
 
@@ -76,15 +76,15 @@ L’utilisation de la carte thermique des workflows demande une bonne maîtrise 
 
 1. Cliquez sur le bouton **[!UICONTROL Filtres]**.
 
-   ![](assets/wkf_monitoring_filters.png)
+   ![Page Carte thermique des workflows Campaign avec le bouton Filtres en surbrillance en regard de l&#39;aide et Charger les données.](assets/wkf_monitoring_filters.png)
 
 1. Utilisez le curseur pour définir la durée minimale de 0 seconde à 1 heure. Vous pouvez ainsi rechercher uniquement des workflows exécutés pendant plus d’un certain nombre de secondes ou de minutes.
 
-   ![](assets/wkf_monitoring_filters_duration.png)
+   ![Panneau Filtres de carte thermique avec le curseur de durée minimale défini sur 30 minutes, au-dessus des champs Workflows et Type de workflow.](assets/wkf_monitoring_filters_duration.png)
 
 1. Vous pouvez également sélectionner un workflow spécifique dans la liste déroulante **[!UICONTROL Workflows]**.
 
-   ![](assets/wkf_monitoring_filters_workflows.png)
+   ![Liste déroulante des workflows dans les filtres de carte thermique affichant tous les workflows, le nettoyage de la base de données, les prévisions et autres.](assets/wkf_monitoring_filters_workflows.png)
 
    >[!NOTE]
    >
@@ -108,7 +108,7 @@ La Carte thermique des workflows Campaign est une grille qui se lit naturellemen
 
 Pour découvrir comment le code-couleur est appliqué et comment parcourir la carte thermique, cliquez sur le bouton **[!UICONTROL Aide]**.
 
-![](assets/wkf_monitoring_legend.png)
+![Le panneau d&#39;aide Carte thermique répertorie les commandes de clavier et la légende de couleur, du vert pour 1 workflow au rouge pour 50.](assets/wkf_monitoring_legend.png)
 
 Chaque ligne représente une heure de la journée et chaque cellule, 5 minutes de cette heure.
 
@@ -116,11 +116,11 @@ La grille affiche tous les workflows exécutés à la même heure pour chacune d
 
 Dans l’exemple ci-dessous, entre 8 h et 8 h 05, trois workflows sont en cours d’exécution (quelle que soit leur durée individuelle) :
 
-![](assets/wkf_monitoring_ex_8am.png)
+![Grille de carte thermique avec la ligne 08h, la cellule de colonne 00m mise en surbrillance, affichant trois workflows exécutés entre 8h et 8h05.](assets/wkf_monitoring_ex_8am.png)
 
 1. Cliquez sur une cellule en couleur pour afficher les détails de tous les workflows simultanés exécutés pendant cette période.
 
-   ![](assets/wkf_monitoring_details.png)
+   ![Carte thermique avec la cellule 08h sélectionnée et un tableau répertoriant les trois workflows simultanés avec l’activité et la durée.](assets/wkf_monitoring_details.png)
 
    Toutes les activités de chaque workflow sont répertoriées, avec leur durée.
 
@@ -139,7 +139,7 @@ En tant qu&#39;administrateur de Campaign, la carte thermique des workflows peut
 1. Définissez la durée sur quelques secondes ou minutes.
 1. Excluez les workflows les plus courts n&#39;étant pas significatifs en augmentant le filtre de durée.
 
-   ![](assets/wkf_monitoring_short_duration.png)
+   ![Les filtres de carte thermique avec le curseur de durée minimale défini sur 3 minutes (189 secondes) pour exclure les workflows les plus courts.](assets/wkf_monitoring_short_duration.png)
 
 1. Examinez les résultats pour analyser la charge de l&#39;instance, puis prenez les mesures adéquates :
 
@@ -153,7 +153,7 @@ En tant qu&#39;administrateur de Campaign, la carte thermique des workflows vous
 1. Dans la vue **[!UICONTROL Carte thermique des workflows Campaign]**, cliquez sur le bouton **[!UICONTROL Filtres]**.
 1. Définissez la durée sur 1 heure.
 
-   ![](assets/wkf_monitoring_long_duration.png)
+   ![Filtres de carte thermique avec le curseur de durée minimale défini sur une durée maximale d&#39;une heure (3 600 secondes).](assets/wkf_monitoring_long_duration.png)
 
 1. Incluez d&#39;autres résultats en diminuant le filtre **[!UICONTROL Durée min.]**.
 1. Examinez les résultats pour trouver les workflows les plus longs, susceptibles d&#39;avoir un impact plus important sur les ressources du serveur et de la base de données (CPU, RAM, réseau, IOPS, etc.).
@@ -173,7 +173,7 @@ Dans ce cas, de nombreux utilisateurs et utilisatrices se plaignent des performa
 1. Définissez le filtre **[!UICONTROL Type de workflow]** sur **[!UICONTROL Marketing]**.
 1. Dans la grille de la carte thermique, notez les points suivants :
 
-   ![](assets/wkf_monitoring_without.png)
+   ![Grille de carte thermique sans filtre de durée, avec un pic de 50 workflows sur la ligne des 10 heures et quelques cellules après 14 heures.](assets/wkf_monitoring_without.png)
 
    * 50 workflows de campagne de longue durée (plus de 5 minutes) sont exécutés à 10h00.
    * La plupart d&#39;entre eux ont un statut en attente (par défaut, la limite de la simultanéité est définie sur 20).
@@ -184,7 +184,7 @@ Dans ce cas, de nombreux utilisateurs et utilisatrices se plaignent des performa
 1. Retournez dans la page **[!UICONTROL Carte thermique des workflows Campaign]**, puis cliquez sur le bouton **[!UICONTROL Recharger les données]**.
 1. Notez maintenant les points suivants :
 
-   ![](assets/wkf_monitoring_with.png)
+   ![Grille de carte thermique avec le filtre de durée appliqué, affichant une distribution différente avec le pic réduit à 18 workflows.](assets/wkf_monitoring_with.png)
 
    * Seuls 18 workflows de campagne de longue durée s&#39;exécutent toujours à 10h00.
    * Aucun workflow n&#39;est en attente (la limite de la simultanéité est toujours définie sur 20).

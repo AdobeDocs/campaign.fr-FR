@@ -28,16 +28,16 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 100%
+source-wordcount: '879'
+ht-degree: 80%
 ---
 # Validation en local{#local-approval}
 
 Intégrée à un workflow de ciblage, l&#39;activité **[!UICONTROL Validation en local]** permet de mettre en place un processus de validation des destinataires avant l&#39;envoi d&#39;une diffusion.
 
-![](assets/local_validation_0.png)
+![Activité Validation en local avec action de notification de validation de la cible, gestion de la validation et option Générer le complémentaire.](assets/local_validation_0.png)
 
 >[!CAUTION]
 >
@@ -47,23 +47,23 @@ Pour un exemple de l’activité **[!UICONTROL Validation en local]** avec un mo
 
 Renseignez tout d&#39;abord libellé de l&#39;activité et le champ **[!UICONTROL Action à effectuer]** :
 
-![](assets/local_validation_1.png)
+![Libellé de l&#39;activité Validation en local et Action à effectuer : Notification de validation de la cible ou rapport de retour de diffusion.](assets/local_validation_1.png)
 
 * Sélectionnez l&#39;option **[!UICONTROL Notification pour la validation de la cible]** pour envoyer un email de notification aux responsables locaux, avant la diffusion, afin qu&#39;ils valident les destinataires qui leur sont assignés.
 
 * **Requête incrémentale** : permet d&#39;effectuer une requête et d&#39;en planifier l&#39;exécution. Pour plus d&#39;informations, consultez la section [Requête incrémentale](incremental-query.md).
 
-  ![](assets/local_validation_intro_3.png)
+  ![Page web de validation locale avec une liste de commentaires de diffusion des destinataires par genre et leur statut : envoyé, ouvert, sur lequel l&#39;utilisateur a cliqué](assets/local_validation_intro_3.png)
 
 ## Notification pour la validation de la cible {#target-approval-notification}
 
 Dans ce cas, l&#39;activité **[!UICONTROL Validation en local]** se place entre le ciblage en amont et la diffusion :
 
-![](assets/local_validation_2.png)
+![Workflow avec l&#39;activité Validation locale placé entre la requête 1 et la diffusion.](assets/local_validation_2.png)
 
 Les champs à renseigner dans le cas d&#39;une notification pour la validation de la cible sont les suivants :
 
-![](assets/local_validation_3.png)
+![Champs de validation en local pour une notification de validation de la cible : contexte de distribution, type de validation, modèle, rappel.](assets/local_validation_3.png)
 
 * **[!UICONTROL Contexte de distribution]** : sélectionnez l’option **[!UICONTROL Spécifié dans la transition]** si vous utilisez une activité de type **[!UICONTROL Partage]** pour limiter la population ciblée. Dans ce cas, le modèle de répartition est renseigné dans l’activité de partage. Si vous ne limitez pas la population ciblée, sélectionnez ici l’option **[!UICONTROL Explicite]** et renseignez le modèle de répartition dans le champ **[!UICONTROL Répartition des données]**.
 
@@ -90,11 +90,11 @@ Les champs à renseigner dans le cas d&#39;une notification pour la validation d
 
 Dans ce cas, l&#39;activité **[!UICONTROL Validation en local]** se place après la diffusion :
 
-![](assets/local_validation_4.png)
+![Workflow avec une activité Attente et Validation locale 2 placée après l&#39;activité Diffusion.](assets/local_validation_4.png)
 
 Les champs à renseigner dans le cas d&#39;un rapport de retour de diffusion sont les suivants :
 
-![](assets/local_validation_workflow_4.png)
+![Validation en local définie sur le rapport de retour de diffusion, avec le Spécifié dans l&#39;option de diffusion de transition et le modèle.](assets/local_validation_workflow_4.png)
 
 * Sélectionnez l’option **[!UICONTROL Spécifié dans la transition]** si la diffusion a été saisie au cours d’une activité précédente. Sélectionnez **[!UICONTROL Explicite]** pour définir la diffusion dans l’activité d’approbation locale.
 * Sélectionnez le modèle de diffusion et l’objet de l’e-mail de notification. Il existe un modèle par défaut : **[!UICONTROL Notification de validation locale]**.
@@ -111,22 +111,22 @@ Pour valider une diffusion, un opérateur ou une opératrice peut utiliser la pa
 
   Pour valider la diffusion, cliquez sur le lien correspondant et connectez-vous à la console cliente Adobe Campaign.
 
-  ![](assets/new-workflow-valid-webaccess.png)
+  ![E-mail de demande d&#39;approbation demandant d&#39;approuver les 574 destinataires, avec un lien Cliquez ici pour répondre.](assets/new-workflow-valid-webaccess.png)
 
   Sélectionnez votre choix et cliquez sur le bouton **[!UICONTROL Soumettre]**.
 
-  ![](assets/new-workflow-valid-webaccess-confirm.png)
+  ![Page web d&#39;approbation avec un champ Remarques, le choix Oui et Non et le bouton Envoyer.](assets/new-workflow-valid-webaccess-confirm.png)
 
 * Approbation à partir de la console cliente
 
   Dans l’arborescence, le nœud **[!UICONTROL Administration > Exploitation > Objets créés automatiquement > Approbations en attente]** contient la liste des tâches que les opérateurs et opératrices actuellement connectés doivent valider. La liste doit afficher une ligne. Double-cliquez sur cette ligne pour répondre. La fenêtre suivante s’affiche :
 
-![](assets/new-workflow-7.png)
+![Approbations en attente dans la console cliente et la fenêtre d’approbation de la tâche avec Oui sélectionné et le bouton Approuver.](assets/new-workflow-7.png)
 
 Sélectionnez l’option **Oui**, puis cliquez sur le bouton **[!UICONTROL Approuver]**. Un message vous informe que la réponse est enregistrée.
 
 Revenez sur l’écran des workflows : au bout de quelques dizaines de secondes, le diagramme se présente comme suit :
 
-![](assets/new-workflow-8.png)
+![Diagramme de workflow après approbation : diffusion, approbation, contrôle de la diffusion et fin, avec la branche Oui suivie.](assets/new-workflow-8.png)
 
 Le workflow a exécuté la tâche **[!UICONTROL Agir sur une diffusion]**, qui consiste ici à démarrer la diffusion précédemment créée. Le workflow s’est terminé sans erreurs.

@@ -25,10 +25,10 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 69%
+source-wordcount: '474'
+ht-degree: 61%
 ---
 # Code SQL et code JavaScript{#sql-code-and-javascript-code}
 
@@ -36,7 +36,7 @@ ht-degree: 69%
 
 Une activité de type **[!UICONTROL Code SQL]** exécute un script SQL. Le script est un modèle JST.
 
-![](assets/sql_code.png)
+![Boîte de dialogue d&#39;activité Code SQL avec le champ Libellé, l&#39;éditeur de script SQL et l&#39;option Traiter les erreurs](assets/sql_code.png)
 
 * **[!UICONTROL Script]**
 
@@ -54,11 +54,11 @@ Les options sont disponibles sous **[!UICONTROL Administration]** > **[!UICONTRO
 
 **Solution 1**
 
-Définissez `XtkSecurity_FeatureFlag_SqlSensitive` sur `0`. La fonction est désactivée.
+Définir `XtkSecurity_FeatureFlag_SqlSensitive` sur `0`. La fonction est désactivée.
 
 **Solution 2**
 
-Modifiez `XtkSecurity_SqlSensitive_Methods`. Vous pouvez remplacer `<method name="TRUNCATE" action="block"/>` par `<method name="TRUNCATE" action="warn"/>`
+Modifier `XtkSecurity_SqlSensitive_Methods`. Vous pouvez modifier `<method name="TRUNCATE" action="block"/>` en `<method name="TRUNCATE" action="warn"/>`
 
 D&#39;autres méthodes telles que VACUUM FULL, REINDEX, CREATE INDEX, DROP INDEX sont également bloquées par défaut afin de protéger l&#39;intégrité de la base de données. Soyez prudent si vous souhaitez les définir sur Avertissement plutôt que sur Bloc. Ces méthodes peuvent avoir un impact important sur les performances de la base de données lors de l’exécution.
 
@@ -79,7 +79,7 @@ Pour ignorer cette limite, vous devez définir la valeur sur **0**.
 
 ### Code JavaScript {#js-code-desc}
 
-![](assets/javascript_code.png)
+![Boîte de dialogue d’activité Code JavaScript avec les champs Libellé, Arrêter l’exécution après et Script et l’option Traiter les erreurs](assets/javascript_code.png)
 
 * **[!UICONTROL Script]** : la zone centrale de l’éditeur contient le script à exécuter.
 
@@ -87,7 +87,7 @@ Pour ignorer cette limite, vous devez définir la valeur sur **0**.
 
 ### Code JavaScript avancé {#adv-js-code-desc}
 
-![](assets/advanced_javascript_code.png)
+![Activité de code JavaScript avancée avec les éditeurs de script Premier appel et Appels suivants et la transition OK](assets/advanced_javascript_code.png)
 
 * **[!UICONTROL Premier appel]** : la première zone de l’éditeur contient le script à exécuter lors du premier appel.
 * **[!UICONTROL Appels suivants]** : la deuxième zone de l’éditeur contient le script à exécuter lors des appels suivants.

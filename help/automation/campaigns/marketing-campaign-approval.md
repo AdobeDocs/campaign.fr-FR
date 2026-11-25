@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '2457'
-ht-degree: 99%
+source-wordcount: '2799'
+ht-degree: 86%
 ---
 # Configuration et gestion du processus de validation {#approval-marketing-campaigns}
 
@@ -51,25 +51,25 @@ Des messages de notification sont envoyés aux opérateurs Adobe Campaign dési
 Les opérateurs peuvent valider les demandes de plusieurs manières :
 
 * À partir du message de notification. Le lien contenu dans l&#39;e-mail permet à l&#39;opérateur d&#39;accéder à Campaign à partir d&#39;un navigateur web. Une fois connecté, le réviseur peut choisir de valider ou non le contenu.
-  ![](assets/approval-content-email.png)
+  ![E-mail de notification de validation du contenu avec le lien Approuver ou refuser le contenu de la diffusion et les détails de la diffusion.](assets/approval-content-email.png)
 
 * À partir du tableau de bord de la campagne.
-  ![](assets/approval-from-dashboard.png)
+  ![Tableau de bord de Campaign dans la console Client avec le menu Validation ouvert et l’option Valider le ciblage mise en surbrillance.](assets/approval-from-dashboard.png)
 
 * À partir du tableau de bord de la diffusion.
-  ![](assets/approval-from-delivery-dashboard.png)
+  ![Tableau de bord de la diffusion avec le menu Approbation ouvert, répertoriant le contenu Envoyer, Approuver le ciblage et Approuver le budget.](assets/approval-from-delivery-dashboard.png)
 
 Les opérateurs peuvent accéder à la campagne ainsi qu&#39;à la diffusion à partir de la fenêtre de validation. Ils peuvent également saisir un commentaire.
 
-![](assets/approval-target-confirm.png)
+![Action sur la fenêtre de diffusion avec les options Accepter ou Rejeter, un champ Commentaire et le bouton Validation de la cible.](assets/approval-target-confirm.png)
 
 Une fois la validation effectuée par un opérateur, les informations sont affichées dans les tableaux de bord de la campagne et de la diffusion, ainsi que dans les logs.
 
-![](assets/approvals-from-delivery.png)
+![Section des approbations du tableau de bord de diffusion affichant le ciblage approuvé et le budget à approuver avec son échéance.](assets/approvals-from-delivery.png)
 
 Les informations sont également disponibles dans les logs de validation de la diffusion, ainsi que dans le log de validation de la campagne. Ces logs sont accessibles à partir des onglets **[!UICONTROL Modifier > Audit > Validations]**.
 
-![](assets/approval-logs.png)
+![Onglet Validations du contrôle de la diffusion avec le planning des échéances de validation et une entrée de journal des validations pour le ciblage.](assets/approval-logs.png)
 
 
 ## Activer les validations{#enable-approvals}
@@ -84,24 +84,24 @@ Ces paramètres peuvent être remplacés pour chaque campagne créée à partir 
 
 Dans l&#39;exemple ci-dessous, le contenu de cette diffusion courrier ne fera l&#39;objet d&#39;aucune validation :
 
-![](assets/approval-not-enabled.png)
+![Onglet Validations des propriétés de la diffusion avec Activer la validation du contenu effacé tandis que les validations de la cible et du budget sont activées.](assets/approval-not-enabled.png)
 
 
 >[!CAUTION]
 >
 >Vérifiez que les validants disposent des **autorisations appropriées** pour la validation et que leur zone de sécurité est correctement définie. [En savoir plus](#selecting-reviewers).
 
-Le processus de validation des diffusions est détaillé dans [cette section](#review-and-approve-deliveries).
+Le processus de validation des diffusions est détaillé dans la section [Vérification et validation des diffusions](#review-and-approve-deliveries).
 
 ## Sélection des validants {#select-reviewers}
 
 Pour chaque type de validation, les opérateurs ou groupes d’opérateurs chargés de la validation sont sélectionnés dans la liste déroulante de la diffusion. Vous pouvez ajouter d’autres opérateurs à l’aide du lien **[!UICONTROL Modifier...]**. Cette fenêtre vous permet également de modifier la date limite de validation. Par défaut, les réviseurs disposent de trois jours à partir de la date de soumission pour valider un processus. Pour ajouter un rappel automatique, utilisez le lien **[!UICONTROL Ajouter un rappel]**.
 
-![](assets/add-reviewers.png)
+![Onglet Approbations des paramètres avancés et fenêtre Modifier les réviseurs avec des réviseurs supplémentaires, retarder et Ajouter un rappel.](assets/add-reviewers.png)
 
 Si aucun réviseur n&#39;est spécifié, le propriétaire de la campagne est responsable des validations et reçoit les notifications. Le propriétaire de la campagne est indiqué dans l&#39;onglet **[!UICONTROL Modifier > Propriétés]** de la campagne :
 
-![](assets/campaign-owner.png)
+![Onglet Modifier la campagne avec le champ Affecté à mis en surbrillance pour définir le propriétaire de la campagne.](assets/campaign-owner.png)
 
 Tous les autres opérateurs Adobe Campaign ayant des droits **[!UICONTROL Administrateur]** sont également habilités à valider les traitements. En revanche, ils ne reçoivent pas de notifications.
 
@@ -112,7 +112,7 @@ Tous les autres opérateurs Adobe Campaign ayant des droits **[!UICONTROL Admin
 
 Si une liste de réviseurs est définie, un traitement est validé lorsqu&#39;un réviseur le valide. Le lien de validation n&#39;est alors plus disponible dans les tableaux de bord de la campagne et de la diffusion. Lorsque l’envoi de notifications est activé et qu’un autre validant clique sur le lien de validation du message de notification, il est alors averti qu’un autre opérateur a déjà validé le traitement.
 
-![](assets/delivery-target-already-approved.png)
+![E-mail de notification confirmant que le ciblage de la diffusion a déjà été validé par un autre opérateur.](assets/delivery-target-already-approved.png)
 
 
 ## Révision et validation des diffusions {#review-and-approve-deliveries}
@@ -132,7 +132,7 @@ Une fois ces phases de validation achevées, la diffusion peut être lancée. [E
 
 Les étapes qui doivent être approuvées apparaissent dans le tableau de bord de la campagne (dans la console cliente ou l’interface web). Elles apparaissent également dans la table de tracking des diffusions et dans le tableau de bord des diffusions.
 
-![](assets/delivery-approval-actions.png)
+![Résumé de diffusion avec le menu Validation répertoriant Soumettre du contenu, Valider le ciblage et Valider le budget.](assets/delivery-approval-actions.png)
 
 Pour chaque diffusion de l&#39;opération, il est possible de valider les traitements suivants :
 
@@ -140,7 +140,7 @@ Pour chaque diffusion de l&#39;opération, il est possible de valider les traite
 
   Lorsque les options **[!UICONTROL Activer la validation de la cible]**, **[!UICONTROL Activer la validation du contenu]** ou **[!UICONTROL Activer la validation du budget]** sont sélectionnées dans la fenêtre de paramétrage de la validation, les liens correspondants s&#39;affichent dans les tableaux de bord de la campagne et des diffusions.
 
-  ![](assets/template-activate-6.png)
+  ![Onglet Validations des paramètres avancés avec les options Activer la validation du contenu, de la cible, du budget et de l&#39;extraction et leurs réviseurs.](assets/template-activate-6.png)
 
   >[!NOTE]
   >
@@ -156,7 +156,7 @@ Pour chaque diffusion de l&#39;opération, il est possible de valider les traite
 
   L&#39;option **[!UICONTROL Valider le fichier]** est disponible dans les tableaux de bord des campagnes et des diffusions.
 
-  ![](assets/approve-file-preview.png)
+  ![Page de diffusion web avec le bouton Approuver le fichier et la fenêtre Action sur la diffusion pour accepter ou rejeter le fichier.](assets/approve-file-preview.png)
 
   Vous pouvez prévisualiser le fichier de sortie avant la validation. La prévisualisation du fichier d&#39;extraction affiche uniquement un modèle de données. Le fichier entier n&#39;est pas chargé.
 
@@ -164,7 +164,7 @@ Pour chaque diffusion de l&#39;opération, il est possible de valider les traite
 
   L&#39;option **[!UICONTROL Activer la validation individuelle de chaque diffusion associée]** est utilisée pour une diffusion principale associée à des diffusions secondaires. Par défaut, cette option n&#39;est pas sélectionnée afin d&#39;effectuer une validation globale de la diffusion principale. Si cette option est sélectionnée, chaque diffusion doit être validée individuellement.
 
-  ![](assets/enable-ind-approval.png)
+  ![Onglet Validations des paramètres avancés avec Activer la validation individuelle de chaque diffusion associée sélectionnée.](assets/enable-ind-approval.png)
 
 
 >[!NOTE]
@@ -252,20 +252,20 @@ Par exemple, une fois l&#39;analyse de diffusion exécutée :
 
 1. Sélectionnez **[!UICONTROL Valider le ciblage]**.
 
-![](assets/target-validation-from-console.png)
+![Tableau de bord de la campagne avec le menu déroulant Validation ouvert et les options Approuver le contenu et Approuver le ciblage.](assets/target-validation-from-console.png)
 
 1. Dans la fenêtre contextuelle, vérifiez les informations à valider.
 1. Sélectionnez **[!UICONTROL Accepter]** ou **[!UICONTROL Refuser]** et saisissez éventuellement un commentaire. Ce commentaire s&#39;affiche dans les logs de validation.
 1. Confirmez votre choix en utilisant le bouton **[!UICONTROL Validation de la cible]**.
 
-![](assets/confirm-validation-from-console.png)
+![Action sur la fenêtre de diffusion avec l&#39;option Accepter sélectionnée, un commentaire saisi et le bouton Validation de la cible mis en surbrillance.](assets/confirm-validation-from-console.png)
 
 
 Lorsqu&#39;un traitement a déjà été validé par un opérateur, le lien de validation n&#39;est pas proposé.
 
 Si un traitement a été rejeté, les informations sont affichées dans le tableau de bord de la diffusion de la manière suivante :
 
-![](assets/target-approval-rejected.png)
+![Le tableau de bord de la diffusion affichant la validation de la cible a été rejeté avec le bouton Valider le ciblage et le statut Ciblage rejeté .](assets/target-approval-rejected.png)
 
 
 ### Valider depuis les messages de notification {#approval-via-notification-messages}
@@ -288,19 +288,19 @@ Les logs de validation sont disponibles dans l&#39;interface utilisateur :
 
 * Dans le log des validations de la campagne, sous-onglet **[!UICONTROL Validations]** de l&#39;onglet **[!UICONTROL Modifier > Audit]** :
 
-  ![](assets/approval-tracking-from-campaign.png)
+  ![Modification de la campagne > Audit > Sous-onglet Validations répertoriant le journal des validations avec la diffusion, l’action, le type et l’approbateur.](assets/approval-tracking-from-campaign.png)
 
 * Dans le log des diffusions de la campagne, sous-onglet **[!UICONTROL Diffusions]** de l&#39;onglet **[!UICONTROL Modifier > Audit]** :
 
-  ![](assets/approval-tracking-from-campaign-deliveries.png)
+  ![Sous-onglet Modification de la campagne > Audit > Diffusions répertoriant chaque diffusion avec ses statuts de ciblage et de contenu.](assets/approval-tracking-from-campaign-deliveries.png)
 
 * Au niveau de chaque diffusion, le statut des validations peut être consulté en cliquant sur l&#39;option **[!UICONTROL Afficher/cacher le log]** de l&#39;onglet **[!UICONTROL Résumé]** :
 
-  ![](assets/approval-tracking-delivery-dashboard.png)
+  ![Onglet Résumé de la diffusion avec le lien Masquer/afficher les journaux en surbrillance et les journaux d’approbation affichés ci-dessous Approbations.](assets/approval-tracking-delivery-dashboard.png)
 
 * Ces informations sont également accessibles depuis l&#39;onglet **[!UICONTROL Audit > Validations]** de chaque diffusion :
 
-  ![](assets/approval-tracking-delivery-tab.png)
+  ![Audit de la diffusion > Onglet Validations répertoriant le journal des validations avec la date, l&#39;action, le type, l&#39;approbateur et le commentaire.](assets/approval-tracking-delivery-tab.png)
 
 >[!NOTE]
 >
@@ -312,7 +312,7 @@ Lors de la création d’un workflow de ciblage, lorsque la validation est autom
 
 Pour sélectionner le mode de validation (manuelle ou automatique), cliquez sur l&#39;onglet **[!UICONTROL Modifier > Propriétés]** de la campagne ou du modèle de campagne, puis sur l&#39;option **[!UICONTROL Paramètres avancés de campagne...]**, et enfin sur l&#39;onglet **[!UICONTROL Validations]**.
 par
-![](assets/approval-mode.png)
+![Onglet Approbations des paramètres avancés avec le menu déroulant Mode d&#39;approbation ouvert, affichant Automatique et Manuel.](assets/approval-mode.png)
 
 >[!NOTE]
 >
@@ -338,7 +338,7 @@ Par défaut, les messages de notification sont envoyés si l’approbation du tr
 
 Pour cela, modifiez la fenêtre de validation de la campagne ou du modèle de campagne concerné (onglet **[!UICONTROL Modifier > Propriétés]** > **[!UICONTROL Paramètres avancés de la campagne...]** > **[!UICONTROL Validations]**) et cochez l&#39;option **[!UICONTROL Ne pas activer l&#39;envoi des notifications]**.
 
-![](assets/enable-disable-notifications.png)
+![Onglet Approbations des paramètres avancés avec l&#39;option Ne pas activer l&#39;envoi de notifications sélectionnée.](assets/enable-disable-notifications.png)
 
 ### Contenu des messages de notification {#notification-content}
 

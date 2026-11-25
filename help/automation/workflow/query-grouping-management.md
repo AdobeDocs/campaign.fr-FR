@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 100%
+source-wordcount: '387'
+ht-degree: 78%
 ---
 # Requête avec gestion des regroupements {#querying-using-grouping-management}
 
@@ -50,32 +50,32 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
 1. Ouvrez le **[!UICONTROL Requêteur générique]** et choisissez la table Personnes destinataires (**nms:recipient**).
 
-   ![](assets/query_editor_02.png)
+   ![Écran de type document du requêteur générique avec Destinataires (nms) sélectionnés.](assets/query_editor_02.png)
 
 1. Dans la fenêtre **[!UICONTROL Données à extraire]**, sélectionnez les champs **[!UICONTROL Domaine de l’email]** et **[!UICONTROL Clé primaire]**. Faites un comptage du champ **[!UICONTROL Clé primaire]**.
 
 1. Sélectionnez la zone **[!UICONTROL Gérer les groupements (GROUP BY + HAVING)]**.
 
-   ![](assets/query_editor_nveau_29.png)
+   ![Données à extraire de l&#39;écran avec les colonnes Domaine de l&#39;e-mail et Nombre (clé primaire), gérer les regroupements (GROUP BY + HAVING) cochés.](assets/query_editor_nveau_29.png)
 
 1. Dans la fenêtre **[!UICONTROL Tris]**, ordonnez les domaines d&#39;email en tri descendant. Pour cela, cochez **[!UICONTROL Oui]** dans la colonne **[!UICONTROL Tri descendant]**. Cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/query_editor_nveau_70.png)
+   ![Écran de tri avec le domaine d&#39;e-mail trié affichant les colonnes de tri Trier et Descendant.](assets/query_editor_nveau_70.png)
 
 1. Dans **[!UICONTROL Filtrage des données]**, sélectionnez **[!UICONTROL Critères de filtrage]**. Accédez à la fenêtre **[!UICONTROL Éléments de la cible]** et cliquez sur **[!UICONTROL Suivant]**.
 1. Dans la fenêtre **[!UICONTROL Groupement des données]**, sélectionnez le **[!UICONTROL Domaine de l’email]** en cliquant sur **[!UICONTROL Ajouter]**.
 
    C&#39;est dans cette fenêtre que s&#39;opère le regroupement (GROUP BY) : cette fenêtre ne s&#39;affiche que si l&#39;option **[!UICONTROL Gérer les groupements (GROUP BY + HAVING)]** a été sélectionnée.
 
-   ![](assets/query_editor_blocklist_04.png)
+   ![Écran de regroupement des données répertoriant le domaine de l&#39;e-mail (@domain) comme colonne de groupe pour la clause GROUP BY.](assets/query_editor_blocklist_04.png)
 
 1. Dans la fenêtre **[!UICONTROL Condition de groupement]**, indiquez un comptage de la clé primaire supérieur à 30. Ainsi, seuls les domaines d&#39;email ciblés plus de 30 fois seront retournés en résultat.
 
    Cette fenêtre s&#39;affiche si la case **[!UICONTROL Gérer les groupements (GROUP BY + HAVING)]** a été cochée au préalable : c&#39;est là que le résultat du groupement est filtré (HAVING).
 
-   ![](assets/query_editor_blocklist_05.png)
+   ![Écran de condition de regroupement avec count(clé primaire) supérieur à 30 pour la clause HAVING.](assets/query_editor_blocklist_05.png)
 
 1. Dans la fenêtre **[!UICONTROL Formatage des données]**, cliquez sur **[!UICONTROL Suivant]** : aucun formatage n&#39;est nécessaire dans cet exemple.
 1. Dans la fenêtre de prévisualisation des données, cliquez sur **[!UICONTROL Lancer la prévisualisation des données]** : ici, neuf domaines d&#39;emails différents ciblés plus de 30 fois sont retournés en résultat.
 
-   ![](assets/query_editor_blocklist_06.png)
+   ![Écran de prévisualisation des données renvoyant deux domaines d&#39;e-mail après le démarrage de la prévisualisation.](assets/query_editor_blocklist_06.png)

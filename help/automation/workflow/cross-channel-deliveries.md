@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 100%
+source-wordcount: '346'
+ht-degree: 76%
 ---
 # Diffusions cross-canal{#cross-channel-deliveries}
 
@@ -46,26 +46,26 @@ Dans l&#39;exemple ci-dessous, nous allons créer un workflow permettant d&#39;e
    >
    >Pour les notifications push, utilisez la dimension cible **applications abonnées**.
 
-   ![](assets/cross_channel_delivery_1.png)
+   ![Activité Requête avec le schéma Applications abonnées sélectionné comme document sur lequel filtrer.](assets/cross_channel_delivery_1.png)
 
 1. Ajoutez les conditions de filtre à votre requête. Ici, nous allons sélectionner les destinataires ayant un numéro de mobile ou une adresse e-mail.
 
-   ![](assets/cross_channel_delivery_2.png)
+   ![Le filtre de requête avec Mobile n&#39;est pas vide et une condition Ou pour l&#39;e-mail n&#39;est pas vide.](assets/cross_channel_delivery_2.png)
 
 1. Ajoutez une activité de **[!UICONTROL Partage]** à votre workflow pour diviser les destinataires ayant un numéro de mobile et ceux ayant une adresse email.
 1. Dans l&#39;onglet **[!UICONTROL Diffusion]**, sélectionnez une diffusion pour chacune de vos cibles.
 
    Pour créer votre diffusion, procédez de la même manière qu’avec un assistant de diffusion classique en double-cliquant sur l’activité diffusion de votre workflow.
 
-   ![](assets/cross_channel_delivery_3.png)
+   ![Workflow de campagne avec une requête et un Partage menant à une diffusion mobile et une diffusion e-mail.](assets/cross_channel_delivery_3.png)
 
 1. Pour éviter que les destinataires ne reçoivent trop de diffusion à la fois, ajoutez et configurez une activité **[!UICONTROL Attente]**.
 1. Ajoutez une activité **[!UICONTROL Partage]** pour diviser les abonnés aux applications mobiles iOS ou Android.
 
-   Sélectionnez un service pour chacun des systèmes d’exploitation.
+   Sélectionnez un service pour chacun des systèmes d&#39;exploitation.
 
-   ![](assets/cross_channel_delivery_4.png)
+   ![Boîte de dialogue de requête avec Applications abonnées comme dimension de ciblage et Abonnés d&#39;une application mobile Android sélectionnés.](assets/cross_channel_delivery_4.png)
 
 1. Sélectionnez et configurez une diffusion pour application mobile pour chacun des systèmes d’exploitation.
 
-   ![](assets/cross_channel_delivery_5.png)
+   ![Workflow avec des diffusions e-mail et SMS rejoignant une activité Attente , puis une diffusion Partage pour intégrer les diffusions iOS et Android.](assets/cross_channel_delivery_5.png)

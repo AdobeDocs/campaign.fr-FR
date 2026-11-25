@@ -30,25 +30,25 @@ topic_v2:
     internal-label: Reporting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 100%
+source-wordcount: '147'
+ht-degree: 70%
 ---
 # Mettre à jour l’agrégat{#update-aggregate}
 
 Les agrégats définis dans les [cubes](../../v8/reporting/gs-cubes.md) à des fins de création de rapports, peuvent être mis à jour avec une activité spécifique. Un onglet **[!UICONTROL Workflow]** est disponible lors de la configuration de l’agrégat.
 
-En savoir plus sur les cubes et les agrégats dans [cette section](../../v8/reporting/customize-cubes.md#calculate-and-use-aggregates).
+En savoir plus sur les cubes et les agrégats dans [Agrégats dans les cubes](../../v8/reporting/customize-cubes.md#calculate-and-use-aggregates).
 
 Pour mettre à jour un agrégat, modifiez l’activité **[!UICONTROL Mettre à jour l’agrégat]** et sélectionnez le cube ainsi que l’agrégat à mettre à jour.
 
 Vous pouvez configurer une **Mise à jour complète** ou une **Mise à jour partielle**.
 
-![](assets/update-aggregate-details.png)
+![Mettez à jour l&#39;activité d&#39;agrégat avec les champs Cube et Agrégat et les options Mise à jour complète ou Mise à jour partielle.](assets/update-aggregate-details.png)
 
 Par défaut, une mise à jour complète est exécutée lors de chaque calcul. Pour activer une mise à jour partielle, sélectionnez l’option éponyme et définissez les conditions de mise à jour.
 
-![](assets/update-aggregate-partial.png)
+![Modifier la fenêtre de condition de mise à jour avec un filtre sur la date de création postérieure à la date actuelle moins 1 mois.](assets/update-aggregate-partial.png)
 
 Il est recommandé d’ajouter une activité **[!UICONTROL Planificateur]** pour définir la fréquence de mise à jour des calculs.

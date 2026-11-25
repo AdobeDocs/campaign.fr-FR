@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
     internal-label: Measurement
-source-git-commit: c8cb0f8a3f752a46fae533c8fd0608aa4545d37c
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 100%
+source-wordcount: '553'
+ht-degree: 86%
 ---
 # Suivi des hypothèses{#hypothesis-tracking}
 
@@ -50,7 +50,7 @@ Le résultat des calculs des hypothèses est disponible à divers niveaux de la 
 
 Lorsque l’hypothèse a été calculée, plusieurs indicateurs de mesure sont automatiquement mis à jour. Ils sont disponibles dans l’onglet **[!UICONTROL Général]** de l’hypothèse.
 
-![](assets/response_hypothesis_delivery_example_010.png)
+![Onglet Général d&#39;une hypothèse terminée avec les indicateurs calculés par l&#39;hypothèse mis en surbrillance.](assets/response_hypothesis_delivery_example_010.png)
 
 Ces indicateurs sont les suivants :
 
@@ -62,7 +62,7 @@ Ces indicateurs sont les suivants :
 
 Vous pouvez obtenir la liste complète des indicateurs en cliquant sur le lien **[!UICONTROL Afficher la liste]** :
 
-![](assets/response_hypothesis_indicators_002.png)
+![Fenêtre en lecture seule des indicateurs ouverte à partir de Afficher la liste, affichant la liste complète des indicateurs et leurs valeurs.](assets/response_hypothesis_indicators_002.png)
 
 Les informations données par les indicateurs sont les suivantes :
 
@@ -88,7 +88,7 @@ Vous pouvez visualiser les réactions des destinataires aux hypothèses depuis l
 1. Lorsque le calcul de l&#39;hypothèse est terminé, positionnez-vous au niveau du noeud **[!UICONTROL Gestion de campagne > Hypothèses de mesure]** dans l&#39;arborescence d&#39;Adobe Campaign.
 1. Sélectionnez l&#39;hypothèse voulue dans la liste et cliquez sur l&#39;onglet **[!UICONTROL Réactions]** afin de voir la liste des destinataires susceptibles de faire un achat suite à la campagne marketing.
 
-   ![](assets/response_hypothesis_reactions_001.png)
+   ![Onglet Réactions d&#39;une hypothèse répertoriant les répondants et si chacun d&#39;eux appartient à la population témoin.](assets/response_hypothesis_reactions_001.png)
 
 ## Rapports {#reports}
 
@@ -96,8 +96,8 @@ Le **[!UICONTROL Rapport des hypothèses]** permet de consulter les résultats d
 
 * **Au niveau d’une campagne** : cliquez sur le lien **[!UICONTROL Rapports]** de la campagne concernée et sélectionnez le **[!UICONTROL Rapport des hypothèses]**. Ce rapport contiendra la liste des diffusions de la campagne et les hypothèses calculées pour chacune des diffusions.
 
-  ![](assets/response_hypothesis_campaign_report_001.png)
+  ![Rapport d&#39;hypothèse au niveau d&#39;une opération répertoriant les hypothèses calculées pour chaque diffusion avec leurs indicateurs.](assets/response_hypothesis_campaign_report_001.png)
 
 * **Au niveau d’une diffusion** : pour accéder au rapport, ouvrez la diffusion concernée, cliquez sur **[!UICONTROL Rapports]** dans l’onglet **[!UICONTROL Résumé]**, et sélectionnez le **[!UICONTROL Rapport des hypothèses]**. Si plusieurs hypothèses ont été calculées pour une même diffusion, le rapport contiendra l’ensemble des hypothèses.
 
-  ![](assets/response_hypothesis_delivery_report_001.png)
+  ![Rapport d&#39;hypothèse au niveau de la diffusion présentant les détails de l&#39;hypothèse, l&#39;état et les indicateurs calculés.](assets/response_hypothesis_delivery_report_001.png)

@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 100%
+source-wordcount: '229'
+ht-degree: 76%
 ---
 # Modification des images d’activité{#change-activity-images}
 
@@ -41,7 +41,7 @@ Les images utilisées dans les diagrammes des différents workflows peuvent êtr
 
 * Pour changer l’image d’arrière-plan, sélectionnez le workflow de ciblage visé et cliquez sur **[!UICONTROL Propriétés]**.
 
-  ![](assets/s_user_segmentation_properties_tab.png)
+  ![Propriétés du workflow, onglet Avancé : champ Image d’arrière-plan avec l’icône Sélectionner le lien en surbrillance.](assets/s_user_segmentation_properties_tab.png)
 
   Cliquez sur l’icône **[!UICONTROL Choisir le lien]** situé à droite du champ **[!UICONTROL Image d’arrière-plan]** pour sélectionner l’image à utiliser.
 
@@ -49,7 +49,7 @@ Les images utilisées dans les diagrammes des différents workflows peuvent êtr
   >
   >La largeur en pixels de l’image d’arrière-plan doit être un multiple de 4.
 
-  ![](assets/s_user_segmentation_background_select.png)
+  ![Fenêtre de sélection des images répertoriant les images d’arrière-plan telles que backgrounds/grid.png, avec OK pour confirmation.](assets/s_user_segmentation_background_select.png)
 
   L&#39;icône **[!UICONTROL Editer le lien]** permet de visualiser l&#39;image sélectionnée.
 
@@ -57,11 +57,11 @@ Les images utilisées dans les diagrammes des différents workflows peuvent êtr
 
   Cliquez sur l&#39;icône **[!UICONTROL Choisir le lien]** situé à droite du champ **[!UICONTROL Image]** pour sélectionner l&#39;image à utiliser.
 
-  ![](assets/s_user_segmentation_activity_image.png)
+  ![Onglet avancé d’une activité avec le champ Image mis en surbrillance, défini sur activities/dedup.png.](assets/s_user_segmentation_activity_image.png)
 
   L&#39;icône **[!UICONTROL Editer le lien]** permet de visualiser l&#39;image sélectionnée.
 
-  ![](assets/s_user_segmentation_activity_image_select.png)
+  ![Aperçu de l’image sélectionnée nms:activities/dedup.png, affiché avec l’icône Modifier le lien.](assets/s_user_segmentation_activity_image_select.png)
 
 >[!NOTE]
 >

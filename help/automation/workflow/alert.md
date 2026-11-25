@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 100%
+source-wordcount: '100'
+ht-degree: 85%
 ---
 # Alerte{#alert}
 
@@ -32,6 +32,6 @@ ht-degree: 100%
 
 Une activité **Alerte** envoie un message à un groupe d’opérateurs et d’opératrices. Son fonctionnement est le même qu’une activité de type validation, mais ici, aucune réponse n’est attendue.
 
-![](assets/edit_alerte.png)
+![Activité d’alerte avec le groupe de type d’affectation, la personne désignée, le titre et le corps du message.](assets/edit_alerte.png)
 
 Les alertes ne sont pas persistantes et ne sont donc pas visibles à partir de la console cliente. Les opérateurs et opératrices du groupe affecté doivent avoir une adresse e-mail complète pour recevoir la notification. La configuration de cette activité est similaire à celle d’une **Approbation**. Le modèle de diffusion par défaut utilisé pour alerter les opérateurs et opératrices est « alertAssignee ».

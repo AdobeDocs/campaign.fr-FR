@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 100%
+source-wordcount: '197'
+ht-degree: 86%
 ---
 # Signal externe{#external-signal}
 
@@ -38,7 +38,7 @@ Reportez-vous à la documentation en ligne sur les appels SOAP pour plus d&#39;i
 
 Vous pouvez configurer cette activité afin de définir des événements en cas d’absence de signal. Pour cela, modifiez l’activité et cliquez sur l’onglet **[!UICONTROL Expiration]**. Cliquez sur le bouton **[!UICONTROL Insérer]** pour créer et configurer un événement.
 
-![](assets/edit_signal.png)
+![Onglet Expiration du signal externe répertoriant trois expirations, avec la fenêtre Détails de l&#39;expiration ouverte](assets/edit_signal.png)
 
 Le paramétrage des expirations est présenté dans la section [Expirations](define-approvals.md).
 
@@ -46,4 +46,4 @@ Le champ **Délai** permet de spécifier un délai d&#39;expiration exprimé dan
 
 Chaque ligne représente un type d&#39;expiration et correspond à une transition.
 
-![](assets/external_sign_diag.png)
+![Activité Signal externe avec transitions sortantes Expiration, Expiration 2, Expiration 3 et Nouveau](assets/external_sign_diag.png)

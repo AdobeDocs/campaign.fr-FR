@@ -22,16 +22,16 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 93%
+source-wordcount: '933'
+ht-degree: 85%
 ---
 # Campagnes récurrentes et périodiques {#recurring-and-periodic-campaigns}
 
 Une **campagne récurrente** est une campagne basée sur un modèle spécifique dont les workflows sont configurés pour être exécutés selon un planning associé. Le ciblage est dupliqué à chaque exécution et les différents processus et populations cibles sont suivis.  Une fois paramétrées, les campagnes récurrentes créent automatiquement un workflow (en dupliquant le modèle de workflow) et l&#39;exécutent. Par exemple, si vous devez envoyer un rappel mensuel à des segments d’audience, configurez une campagne récurrente afin qu’au début de chaque année, elle crée 12 workflows, soit un pour chaque mois. [En savoir plus](#create-a-recurring-campaign)
 
-Une **campagne périodique** est une campagne basée sur un modèle spécifique qui permet de créer des instances Campaign en fonction d&#39;un planning d&#39;exécution. Les instances de campagnes sont créées automatiquement sur la base d’un modèle de campagne périodique, selon la fréquence définie dans le planning du modèle. [En savoir plus](#create-a-periodic-campaign)
+Une **campagne périodique** est une campagne basée sur un modèle spécifique qui vous permet de créer des instances Campaign en fonction d&#39;un planning d&#39;exécution. Les instances de campagnes sont créées automatiquement sur la base d’un modèle de campagne périodique, selon la fréquence définie dans le planning du modèle. [En savoir plus](#create-a-periodic-campaign)
 
 ## Création d’une campagne récurrente {#create-a-recurring-campaign}
 
@@ -43,10 +43,10 @@ Pour créer un modèle pour les campagnes récurrentes, procédez de la manière
 
 1. Ouvrez l&#39;explorateur Campaign et accédez à **[!UICONTROL Ressources > Modèles > Modèles de campagne]**.
 1. Dupliquez le modèle de **[!UICONTROL Campagne récurrente]** intégré.
-   ![](assets/recurring-campaign-duplicate.png)
+   ![La liste des modèles d&#39;opération avec la commande Dupliquer sélectionnée dans le menu contextuel du modèle d&#39;opération récurrente.](assets/recurring-campaign-duplicate.png)
 1. Saisissez le libellé du modèle et renseignez la durée de l&#39;opération.
 1. Pour ce type d&#39;opération, un onglet **[!UICONTROL Planning]** est ajouté afin de créer le planning d&#39;exécution du modèle. Utilisez cet onglet pour définir les dates d&#39;exécution des campagnes en fonction de ce modèle.
-   ![](assets/recurring-campaign-schedule.png)
+   ![Onglet Planning d&#39;un modèle de campagne avec la liste Planning d&#39;exécution et un sélecteur de calendrier pour définir une date de début.](assets/recurring-campaign-schedule.png)
 
    Le mode de configuration du planning d&#39;exécution correspond à l&#39;objet **[!UICONTROL Planificateur]** du workflow. [En savoir plus](../workflow/scheduler.md).
 
@@ -61,7 +61,7 @@ Pour créer un modèle pour les campagnes récurrentes, procédez de la manière
    >
    >Ce workflow doit être enregistré comme un modèle de workflow récurrent. Pour cela, éditez les propriétés du workflow et sélectionnez l&#39;option **[!UICONTROL Modèle de workflow récurrent]** dans l&#39;onglet **[!UICONTROL Exécution]**.
 
-   ![](assets/recurring-campaign-wf-properties.png)
+   ![Propriétés du workflow, onglet Exécution, avec l&#39;option Modèle de workflow récurrent sélectionnée.](assets/recurring-campaign-wf-properties.png)
 
 ### Créer la campagne récurrente {#create-the-recurring-campaign}
 
@@ -81,13 +81,13 @@ Pour créer la campagne récurrente et exécuter ses workflows selon le planning
 
 1. Les workflows récurrents sont créés automatiquement à partir du modèle de workflow présent dans l&#39;opération. Ils sont visibles à partir de l&#39;onglet **[!UICONTROL Ciblages et workflows]** de l&#39;opération.
 
-   ![](assets/recurring-wf-created.png)
+   ![Onglet Ciblage et workflows répertoriant le workflow par défaut et ses instances récurrentes numérotées #1 et #2.](assets/recurring-wf-created.png)
 
    Le libellé d&#39;une instance de workflow récurrent est composé du libellé de son modèle et du numéro du workflow. Les deux informations sont séparées par un caractère #.
 
    Les workflow créés à partir du planning y sont automatiquement associés, dans la colonne **[!UICONTROL Workflow]** de l&#39;onglet **[!UICONTROL Planning]**.
 
-   ![](assets/recurring-wf-schedule-executed.png)
+   ![Onglet Planifier avec la colonne Workflow liant les workflows créés aux lignes de planification ; Créé à l&#39;avance pour est 15j.](assets/recurring-wf-schedule-executed.png)
 
    Chaque workflow peut être édité à partir de cet onglet.
 

@@ -25,10 +25,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 100%
+source-wordcount: '403'
+ht-degree: 85%
 ---
 # Modifier la source de données {#change-data-source}
 
@@ -61,22 +61,22 @@ Pour utiliser l&#39;activité **[!UICONTROL Modifier la source de données]**, v
 
 1. Ajoutez une activité **[!UICONTROL Modifier la source de données]**.
 
-   ![](assets/change-data-source.png)
+   ![Workflow avec démarrage et requête, et activité Modifier la Source de données mise en surbrillance dans la palette](assets/change-data-source.png)
 
 1. Modifiez votre activité **[!UICONTROL Modifier la source de données]** pour sélectionner **[!UICONTROL Source de données par défaut]**.
 
    La table de travail, qui contient le résultat de votre requête, est ensuite déplacée vers la base de données locale par défaut de Campaign.
 
-   ![](assets/change-data-source_2.png)
+   ![Activité Modifier le Source de données avec l’option Source de données par défaut sélectionnée](assets/change-data-source_2.png)
 
 1. Ajoutez un **[!UICONTROL code JavaScript]** pour effectuer des opérations unitaires sur la table de travail.
 
-   Pour plus d&#39;informations sur l&#39;activité **[!UICONTROL code JavaScript]**, consultez [cette page](sql-code-and-javascript-code.md#javascript-code).
+   Pour plus d&#39;informations sur l&#39;activité **[!UICONTROL Code JavaScript]**, reportez-vous aux sections [Code JavaScript et Code JavaScript avancé](sql-code-and-javascript-code.md#javascript-code).
 
 1. Ajoutez une autre activité **[!UICONTROL Modifier la source de données]** pour revenir à la base de données cloud.
 
 1. Modifiez cette activité et sélectionnez **[!UICONTROL Compte externe FDA actif]** puis le compte externe **[!UICONTROL Base de données externe]** correspondant.
 
-   ![](assets/change-data-source_3.png)
+   ![Activité Modifier le Source de données avec le compte externe FDA actif sélectionné et Snowflake mise en surbrillance dans la liste](assets/change-data-source_3.png)
 
 1. Vous pouvez maintenant démarrer votre workflow.

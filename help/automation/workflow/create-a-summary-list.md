@@ -24,20 +24,20 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1061'
-ht-degree: 100%
+source-wordcount: '1332'
+ht-degree: 78%
 ---
 # Créer une liste récapitulative{#creating-a-summary-list}
 
 Ce cas d’utilisation détaille la création d’un workflow permettant, à partir d’une collecte de fichiers et suite à plusieurs enrichissements, de créer une liste récapitulative. L’exemple est basé sur une liste de contacts ayant effectué des achats dans un magasin.
 
-![](assets/uc2_enrich_overview.png)
+![Diagramme de workflow : collecteur de fichiers, chargement de données (fichier), enrichissement, mise à jour de données, enrichissement 2, mise à jour de liste et une attente.](assets/uc2_enrich_overview.png)
 
 La structure de données suivante est utilisée :
 
-![](assets/uc2_enrich_data.png)
+![Structure des données : tables Achats et Contact liées, et une table Magasins distincte avec refStoreName et zipCodeRef.](assets/uc2_enrich_data.png)
 
 Son objectif est le suivant :
 
@@ -73,21 +73,21 @@ Ces données sont contenues dans un fichier texte : &quot;Achats.txt&quot;.
 
    Le **Collecteur de fichiers** permet de collecter et d&#39;envoyer des fichiers sur le serveur Adobe Campaign.
 
-   L&#39;activité **Chargement(fichier)** permet d&#39;alimenter la table de travail du workflow avec les données collectées. Pour plus d’informations sur cette activité, consultez [cette page](data-loading-file.md).
+   L&#39;activité **Chargement(fichier)** permet d&#39;alimenter la table de travail du workflow avec les données collectées. Pour plus d&#39;informations sur cette activité, consultez la section [Chargement (fichier)](data-loading-file.md).
 
 1. Configurez l&#39;activité **Collecteur de fichiers** pour collecter des fichiers de type texte (&#42;.txt) du répertoire sélectionné.
 
-   ![](assets/uc2_enrich_collecteur.png)
+   ![Activité du collecteur de fichiers : onglet Répertoire avec le filtre *.txt et l&#39;option Traiter l&#39;inexistence des fichiers cochée.](assets/uc2_enrich_collecteur.png)
 
    L’activité **Collecteur de fichiers** permet de gérer l’absence de fichier dans le répertoire source. Pour cela, cochez l’option **[!UICONTROL Traiter l’absence de fichier]**. Dans ce workflow, une activité **Attente** a été ajoutée pour essayer une autre collection de fichiers si elle est absente du répertoire au moment de la collecte.
 
 1. Paramétrez l&#39;activité **Chargement (fichier)** en vous basant sur un fichier exemple ayant le même format que les données à importer.
 
-   ![](assets/uc2_enrich_chargement1.png)
+   ![Activité de chargement (fichier) de données avec Purchases.txt comme exemple de fichier et un aperçu de productName, productPrice, storeName.](assets/uc2_enrich_chargement1.png)
 
    Cliquez sur le lien **[!UICONTROL Cliquez ici pour changer le format du fichier...]**, afin de renommer les colonnes avec les libellés et les noms internes de la table &quot;Achats&quot;.
 
-   ![](assets/uc2_enrich_chargement2.png)
+   ![Fenêtre de format de fichier avec les colonnes productName, productPrice et storeName, le séparateur point-virgule et la première ligne comme en-tête.](assets/uc2_enrich_chargement2.png)
 
 Une fois les données importées, l&#39;enrichissement est effectué en créant un lien vers une table de référence correspondant au schéma &quot;Magasins&quot;.
 
@@ -95,22 +95,22 @@ Positionnez l’activité d’enrichissement, puis configurez-la comme suit :
 
 1. Sélectionnez l&#39;ensemble principal qui est constitué des données venant de l&#39;activité **Chargement (fichier)**.
 
-   ![](assets/uc2_enrich_enrich1.png)
+   ![Activité d’enrichissement avec chargement de données (fichier) comme jeu de Principal, plus les liens Ajouter des données et Modifier des données supplémentaires.](assets/uc2_enrich_enrich1.png)
 
 1. Cliquez sur **[!UICONTROL Ajouter des données]** puis sélectionnez l&#39;option **[!UICONTROL Un lien]**.
 
-   ![](assets/uc2_enrich_enrich2.png)
+   ![Sélectionnez le type de données à ajouter à la fenêtre avec l&#39;option A link sélectionnée.](assets/uc2_enrich_enrich2.png)
 
 1. Sélectionnez l&#39;option **[!UICONTROL Définir une collection]**.
 1. Sélectionnez le schéma &quot;Magasins&quot; comme schéma cible.
 
-   ![](assets/uc2_enrich_enrich3.png)
+   ![Définition du lien : définissez une collection sélectionnée comme type de lien, avec le schéma Magasins comme schéma cible.](assets/uc2_enrich_enrich3.png)
 
 Pour plus d&#39;informations sur les différents types de liens, voir la section [Enrichir/Modifier des données](targeting-workflows.md#enrich-and-modify-data).
 
 Dans la fenêtre suivante, vous devez créer une condition de jointure en sélectionnant le champ source (dans l&#39;ensemble principal) et le champ cible (appartenant au schéma &quot;Magasins&quot;) afin de créer une réconciliation entre les données.
 
-![](assets/uc2_enrich_enrich4.png)
+![Conditions de jointure de la définition de lien correspondant au champ source storeName et au champ cible refStoreName.](assets/uc2_enrich_enrich4.png)
 
 Suite à la création du lien, nous allons ajouter une colonne supplémentaire à la table de travail du workflow provenant du schéma &quot;Magasins&quot; : le champ &quot;ZipCode Reference&quot;.
 
@@ -118,11 +118,11 @@ Suite à la création du lien, nous allons ajouter une colonne supplémentaire �
 1. Cliquez sur **[!UICONTROL Editer les données additionnelles.]**
 1. Ajoutez le champ &quot;Zip Code Reference&quot; dans les **[!UICONTROL Colonnes de sortie]**.
 
-![](assets/uc2_enrich_enrich5.png)
+![Champ Référence du code postal à partir du lien Magasins ajouté aux colonnes Sortie de l’enrichissement.](assets/uc2_enrich_enrich5.png)
 
 Les données de la table de travail du workflow après cet enrichissement sont les suivantes :
 
-![](assets/uc2_enrich_population1.png)
+![Données de la table de travail après l&#39;enrichissement, avec la colonne Référence du code postal en regard de productName, productPrice et storeName.](assets/uc2_enrich_population1.png)
 
 ## Étape 2 : Écrire des données enrichies dans la table &#39;Achats&#39; {#step-2--writing-enriched-data-to-the--purchases--table}
 
@@ -136,7 +136,7 @@ Une réconciliation entre les données de la table de travail du workflow et la 
 1. Sélectionnez une &quot;expression destination&quot; pour les données de la table &quot;Achats&quot; (ici le champ &quot;NomMag&quot;).
 1. Cochez l’option **[!UICONTROL Conserver les données non réconciliées de la table de travail]**.
 
-![](assets/uc2_enrich_reconciliation.png)
+![Onglet Réconciliation avec la dimension de ciblage Achats et storeName correspondant à @storeName.](assets/uc2_enrich_reconciliation.png)
 
 Dans l&#39;activité **Mise à jour de données**, la configuration suivante est nécessaire :
 
@@ -160,23 +160,23 @@ L&#39;objectif de ce deuxième enrichissement est de créer un agrégat sur le s
 1. Cliquez sur **[!UICONTROL Données liées à la dimension de filtrage]** dans la fenêtre **[!UICONTROL Choix des données à ajouter]**.
 1. Sélectionnez le noeud **[!UICONTROL Achats]** puis cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/uc2_enrich_enrich9.png)
+   ![Sélectionnez les champs pour ajouter une fenêtre avec les données liées à la dimension de filtrage sélectionnée et le nœud Achats mis en surbrillance.](assets/uc2_enrich_enrich9.png)
 
 1. Modifiez le champ **[!UICONTROL Données collectées]** en sélectionnant l&#39;option **[!UICONTROL Agrégats]**.
 
-   ![](assets/uc2_enrich_enrich10.png)
+   ![Paramètres généraux de la collecte Achats avec le champ Données collectées défini sur Agrégats.](assets/uc2_enrich_enrich10.png)
 
 1. Cliquez sur **[!UICONTROL Suivant]**.
 1. Ajoutez l&#39;expression suivante pour calculer la somme des achats pour chaque contact : &quot;Sum(@prixproduit)&quot;.
 
-   ![](assets/uc2_enrich_enrich6.png)
+   ![Données à ajouter à la fenêtre avec l&#39;expression Somme (prix du produit) définie comme une colonne de sortie pour le total des achats.](assets/uc2_enrich_enrich6.png)
 
 Pour préparer la liste récapitulative, il est nécessaire d&#39;ajouter des champs provenant du schéma &quot;Achats&quot; ainsi que du premier enrichissement : le champ &quot;ZipCode Reference&quot;.
 
 1. Cliquez sur le lien **[!UICONTROL Modifier les données additionnelles…]** dans l’activité d’enrichissement.
 1. Ajoutez les champs &quot;Achats / Nom Boutique&quot; et &quot;Achats / Zip Code Reference&quot;.
 
-   ![](assets/uc2_enrich_enrich7.png)
+   ![Colonnes de sortie d&#39;Enrichissement 2 : lien Achats, Somme(productPrice), storeName et champ Référence du code postal.](assets/uc2_enrich_enrich7.png)
 
 1. Cliquez sur l&#39;onglet **[!UICONTROL Propriétés]**.
 1. Modifiez le deuxième lien pour ne créer qu&#39;une seule ligne.
@@ -196,4 +196,4 @@ Une fois le workflow exécuté, la liste contient :
 * une colonne &quot;Nom de boutique&quot;,
 * une colonne &quot;Zip Code reference&quot; remplie pour les magasins connus dans le schéma de référence des magasins.
 
-![](assets/uc2_enrich_listfinal.png)
+![Contenu de la liste finale avec contacts, Somme(productPrice), Nom de la boutique et Colonnes de code postal.](assets/uc2_enrich_listfinal.png)

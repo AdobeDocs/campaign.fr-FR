@@ -26,26 +26,26 @@ topic_v2:
     internal-label: Implementation
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 100%
+source-wordcount: '141'
+ht-degree: 67%
 ---
 # Activités de workflows{#wf-activities}
 
 Les activités de workflow sont regroupées par catégorie, dans quatre onglets différents.
 
-![](assets/wf-activity-tabs.png)
+![Palette d’activités avec ses quatre onglets de catégorie mis en surbrillance et les activités de ciblage répertoriées.](assets/wf-activity-tabs.png)
 
 Les activités disponibles peuvent varier selon vos autorisations, votre implémentation et le contexte dans lequel le workflow est conçu.
 
 Par exemple, les workflows créés dans une campagne ont un onglet **Diffusions** spécifique comportant tous les canaux. Cet onglet n&#39;est pas disponible dans le [workflow technique](technical-workflows.md).
 
-![](assets/campaign-wf-activities.png)
+![Onglet Diffusions d&#39;un workflow de campagne : E-mail, Publipostage direct, Mobile, iOS, Android, Autre et Diffusion récurrente.](assets/campaign-wf-activities.png)
 
 Les workflows techniques ont un onglet **Événements** qui n&#39;est pas disponible dans les [workflows de campagne](campaign-workflows.md).
 
-![](assets/tech-wf-activities.png)
+![Onglet Événements d&#39;un workflow technique : collecteur de fichiers, transfert de fichiers, téléchargement web, e-mails entrants et SMS entrants.](assets/tech-wf-activities.png)
 
 Toutes les activités sont présentées dans les sections ci-dessous :
 

@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 100%
+source-wordcount: '214'
+ht-degree: 87%
 ---
 # Rendez-vous{#and-join}
 
@@ -34,7 +34,7 @@ Une jointure ne déclenche sa transition sortante qu’une fois toutes les trans
 
 Par exemple, vous pouvez utiliser une activité Rendez-vous dans le cadre de la création de contenu et de l’automatisation de l’envoi de diffusions, afin de vous assurer qu’une diffusion n’est lancée qu’une fois les étapes d’interrogation de cible et de mise à jour du contenu terminées. Un cas pratique dédié est disponible dans
 
-![](assets/and-join-usage.png)
+![Workflow dans lequel un branchement exécute une requête et une gestion de contenu en parallèle dans une jointure AND avant la diffusion.](assets/and-join-usage.png)
 
 >[!NOTE]
 >
@@ -46,4 +46,4 @@ La transition sortante ne peut contenir que l’une des populations de la transi
 
 >[!CAUTION]
 >
->Dans le cas des activités de type **Rendez-vous**, les variables sont fusionnées. Toutefois, si une même variable est définie deux fois, il y a conflit et la valeur reste indéterminée. Voir à ce propos [cette section](javascript-scripts-and-templates.md#event-variables).
+>Dans le cas des activités de type **Rendez-vous**, les variables sont fusionnées. Toutefois, si une même variable est définie deux fois, il y a conflit et la valeur reste indéterminée. Pour plus d&#39;informations, consultez la section [Variables d&#39;événement](javascript-scripts-and-templates.md#event-variables).

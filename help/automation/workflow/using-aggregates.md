@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 100%
+source-wordcount: '735'
+ht-degree: 91%
 ---
 # Utilisation d’agrégats{#using-aggregates}
 
@@ -37,7 +37,7 @@ Pour parvenir à effectuer un filtre du type **Date de création = max (Date de 
 1. Lier chaque destinataire au résultat de la fonction d&#39;agrégation dans un même schéma.
 1. Filtrer les destinataires à l&#39;aide de l&#39;agrégat via le schéma édité.
 
-![](assets/datamanagement_usecase_1.png)
+![Workflow : les destinataires et les requêtes DateMax alimentent une activité Modifier le schéma , puis une activité Partage et Fin.](assets/datamanagement_usecase_1.png)
 
 ## Etape 1 : calculer le résultat de l&#39;agrégat {#step-1--calculating-the-aggregate-result}
 
@@ -46,7 +46,7 @@ Pour parvenir à effectuer un filtre du type **Date de création = max (Date de 
 1. Dans les fenêtres successives, sélectionnez **[!UICONTROL Données liées à la dimension de filtrage]** puis **[!UICONTROL Données de la dimension de filtrage]**.
 1. Dans la fenêtre **[!UICONTROL Données à ajouter]**, ajoutez une colonne calculant la valeur maximale du champ **Date de création** de la table des destinataires. Vous pouvez vous aider de l&#39;éditeur d&#39;expression ou entrer directement **max(@created)** à hauteur du champ **[!UICONTROL Expression]**. Cliquez ensuite sur le bouton **[!UICONTROL Terminer]**.
 
-   ![](assets/datamanagement_usecase_2.png)
+   ![Données à ajouter à la fenêtre avec la colonne de sortie Max(date de création) dans la colonne Expression et le bouton Terminer.](assets/datamanagement_usecase_2.png)
 
 1. Cliquez sur **[!UICONTROL Modifier les données supplémentaires]**, puis sur **[!UICONTROL Paramètres avancés…]**. Cochez l’option **[!UICONTROL Désactiver l’ajout automatique des clés primaires de la dimension de ciblage]**.
 
@@ -65,7 +65,7 @@ Afin de lier la requête portant sur les destinataires à la requête servant au
    * Sélectionnez **[!UICONTROL Utiliser une jointure simple]** afin d&#39;associer le résultat de l&#39;agrégat à chaque destinataire de l&#39;ensemble principal.
    * Indiquez enfin que le lien est un **[!UICONTROL Lien simple de type 11]**.
 
-   ![](assets/datamanagement_usecase_3.png)
+   ![Définition d&#39;un lien avec le schéma temporaire DateMax, utilisez une jointure simple et un lien simple de type 11 sélectionné.](assets/datamanagement_usecase_3.png)
 
 Le résultat de la fonction d&#39;agrégation est ainsi lié à chaque destinataire.
 
@@ -86,7 +86,7 @@ Une fois le lien établi, le résultat de l’agrégat et les personnes destinat
    * **[!UICONTROL Expression]**: `toDate([target/@created])`.
    * **[!UICONTROL Valeur]** : `toDate([datemax/expr####])`, où expr#### correspond à l&#39;alias de l&#39;agrégat défini dans la requête de la fonction d&#39;agrégation.
 
-   ![](assets/datamanagement_usecase_4.png)
+   ![Filtre de l&#39;élément cible : ToDate target/@created égal à DateOnly(Max(date de création)).](assets/datamanagement_usecase_4.png)
 
 Le résultat de l&#39;activité de partage correspond ainsi aux destinataires créés le même jour que la dernière date de création connue.
 

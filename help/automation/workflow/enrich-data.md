@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 100%
+source-wordcount: '1143'
+ht-degree: 70%
 ---
 # Enrichir les données{#enriching-data}
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 
 Ce cas d’utilisation décrit les utilisations possibles de l’activité **[!UICONTROL Enrichissement]** dans un workflow de ciblage. Pour plus d’informations sur l’utilisation de l’activité **[!UICONTROL Enrichissement]**, voir la section : [Enrichissement](enrichment.md).
 
-Vous trouverez également dans [cette section](email-enrichment-with-custom-date-fields.md) un cas pratique montrant comment enrichir une diffusion d’email avec des dates personnalisées.
+Un cas d’utilisation sur la manière d’enrichir une diffusion e-mail avec des dates personnalisées est également disponible dans [Enrichissement des e-mails avec des champs de date personnalisés](email-enrichment-with-custom-date-fields.md).
 
 Un jeu concours est proposé, par le biais d&#39;une application web, aux contacts de la base marketing. Les résultats du jeu concours sont récupérés dans la table **[!UICONTROL Résultats jeux]**. Cette table est liée à la table des contacts (**[!UICONTROL Destinataires]**). La table **[!UICONTROL Résultats jeux]** comporte les champs suivants :
 
@@ -47,17 +47,17 @@ Un jeu concours est proposé, par le biais d&#39;une application web, aux contac
 * Numéro de l&#39;essai (@trial)
 * Score (@score)
 
-![](assets/uc1_enrich_1.png)
+![Tableau des destinataires lié 1-n au tableau Résultats jeux avec les champs Nom jeu, Numéro de série et Score.](assets/uc1_enrich_1.png)
 
 Un contact présent dans la table des **[!UICONTROL Destinataires]** peut être associé à plusieurs lignes dans la table **[!UICONTROL Résultats de compétition]**. La relation entre ces deux tables est de type 1-n. Voici un exemple des logs de résultats pour une personne destinataire :
 
-![](assets/uc1_enrich_2.png)
+![Onglet Concours d&#39;un destinataire répertoriant trois lignes de résultats du concours avec le nom du concours, le numéro d&#39;essai et le score.](assets/uc1_enrich_2.png)
 
 Ce cas pratique a pour but d’envoyer des diffusions personnalisées aux personnes ayant participé à la dernière compétition en fonction de leurs scores les plus élevés. La personne qui a obtenu le meilleur score se voit offrir le 1er prix, celle qui a obtenu le second score reçoit un lot de consolation, et toutes les autres reçoivent un message leur proposant de retenter leur chance la prochaine fois.
 
 Pour réaliser ce cas d&#39;utilisation, nous avons créé le workflow de ciblage suivant :
 
-![](assets/uc1_enrich_3.png)
+![Workflow de ciblage : deux requêtes alimentent une Intersection, puis un Enrichissement et un Partage, ce qui entraîne trois activités de diffusion.](assets/uc1_enrich_3.png)
 
 Les étapes principales de création du workflow sont les suivantes :
 
@@ -70,11 +70,11 @@ Les étapes principales de création du workflow sont les suivantes :
 
 La première requête permet de cibler les destinataires qui ont été ajoutés dans la base de données au cours des six derniers mois.
 
-![](assets/uc1_enrich_4.png)
+![Activité Requête Abonnés récents avec la date de création du filtre (@created) à ou après moisAuparavant(-6).](assets/uc1_enrich_4.png)
 
 La seconde requête permet de cibler les destinataires ayant participé au dernier jeu.
 
-![](assets/uc1_enrich_5.png)
+![Le filtrage de l&#39;activité Requête sur les résultats de la compétition existe, par exemple Nom de la compétition égal au lien le plus faible.](assets/uc1_enrich_5.png)
 
 Une activité de type **[!UICONTROL Intersection]** est ensuite ajoutée pour cibler les destinataires qui ont été ajoutés dans la base de données au cours des six derniers mois et qui ont participé au dernier jeu.
 
@@ -84,62 +84,62 @@ Dans cet exemple, vous allez découvrir comment personnaliser les diffusions en 
 
 1. Dans l’écran d’édition de l’activité d’enrichissement, sélectionnez **[!UICONTROL Ajouter des données]**, puis **[!UICONTROL Données liées]** à la dimension de filtrage, et cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/uc1_enrich_6.png)
+   ![Boîte de dialogue Données additionnelles avec l&#39;option Données liées à la dimension de filtrage sélectionnée et Suivant mise en surbrillance.](assets/uc1_enrich_6.png)
 
 1. Choisissez ensuite l&#39;option **[!UICONTROL Données liées à la dimension de filtrage]**, sélectionnez la table **[!UICONTROL Résultats jeux]**, et cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/uc1_enrich_7.png)
+   ![Sélectionnez les champs à ajouter à l&#39;écran avec le lien Résultats jeux sélectionné sous Données liées à la dimension de filtrage.](assets/uc1_enrich_7.png)
 
 1. Saisissez un identifiant et un libellé, et choisissez l’option **[!UICONTROL Limiter le nombre de lignes]**, dans le champ **[!UICONTROL Données collectées]**. Dans le champ **[!UICONTROL Lignes à récupérer]**, choisissez la valeur « 1 ». Pour chaque destinataire, l’activité d’enrichissement ajoutera, à la table de travail du workflow, une seule ligne provenant de la table **[!UICONTROL Résultats jeux]**. Cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/uc1_enrich_8.png)
+   ![Écran des paramètres généraux avec l&#39;option Données collectées définie sur Limiter le nombre de lignes et l&#39;option Lignes à récupérer définie sur 1.](assets/uc1_enrich_8.png)
 
 1. Dans notre exemple, nous souhaitons récupérer le meilleur score du destinataire, mais uniquement sur le dernier jeu. Pour cela, ajoutez un filtre sur le champ **[!UICONTROL Nom du jeu]** pour exclure toutes les lignes correspondant aux jeux précédents. Cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/uc1_enrich_9.png)
+   ![Écran de filtrage avec la condition Nom de la concurrence (@game) égal au lien le plus faible.](assets/uc1_enrich_9.png)
 
 1. Dans l’écran **[!UICONTROL Tri]**, cliquez sur le bouton **[!UICONTROL Ajouter]**, sélectionnez le champ **[!UICONTROL Score]** et cochez la case dans la colonne **[!UICONTROL Descendant]** afin de classer les éléments des champs **[!UICONTROL Score]** par ordre décroissant. Pour chaque destinataire, l’activité d’enrichissement ajoute une ligne correspondant au score le plus élevé du dernier jeu. Cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/uc1_enrich_10.png)
+   ![Trier l&#39;écran où le champ Score est ajouté avec l&#39;option Descendant cochée pour conserver le score le plus élevé.](assets/uc1_enrich_10.png)
 
 1. Dans l’écran **[!UICONTROL Données à ajouter]**, double-cliquez sur le champ **[!UICONTROL Score]**. Pour chaque destinataire, l’activité d’enrichissement ajoutera uniquement le champ **[!UICONTROL Score]**. Cliquez sur **[!UICONTROL Terminer]**.
 
-   ![](assets/uc1_enrich_11.png)
+   ![Données à ajouter à l’écran avec uniquement le champ Score (@score) dans les colonnes Sortie et Terminer en surbrillance.](assets/uc1_enrich_11.png)
 
 Cliquez avec le bouton droit de la souris sur la transition entrante de l’activité d’enrichissement, et sélectionnez **[!UICONTROL Afficher la cible]**. La table de travail contient les données suivantes :
 
-![](assets/uc1_enrich_13.png)
+![Afficher la fenêtre de population ouverte avec Afficher la cible, répertoriant la clé primaire et la dimension de ciblage, sans score.](assets/uc1_enrich_13.png)
 
 Le schéma associé est le suivant :
 
-![](assets/uc1_enrich_15.png)
+![Onglet Schéma de la population entrante présentant Intersection avec clé de Principal et dimension de ciblage uniquement.](assets/uc1_enrich_15.png)
 
 Renouvelez cette opération sur la transition sortante de l’activité d’enrichissement. Nous pouvons constater que les données liées aux scores des destinataires ont été ajoutées. Le score le plus élevé de chaque destinataire a été récupéré.
 
-![](assets/uc1_enrich_12.png)
+![Afficher la fenêtre de population après l&#39;enrichissement répertoriant une colonne de score avec le score le plus élevé de chaque destinataire.](assets/uc1_enrich_12.png)
 
 Le schéma correspondant a également été enrichi.
 
-![](assets/uc1_enrich_14.png)
+![Onglet Schéma de la population enrichie affichant les résultats de la compétition avec le champ Score ajouté.](assets/uc1_enrich_14.png)
 
 ## Etape 3 : Partage et diffusions {#step-3--split-and-delivery}
 
 Afin de répartir les destinataires en fonction de leur score, une activité de **[!UICONTROL Partage]** est ajoutée à la suite de l&#39;enrichissement.
 
-![](assets/uc1_enrich_18.png)
+![Partagez l’activité avec trois transitions sortantes vers les activités de diffusion de la 1ère place, 2e place, puis réessayez.](assets/uc1_enrich_18.png)
 
 1. Un premier sous-ensemble (**Gagnant ou gagnante**) a été défini pour inclure la personne destinataire ayant le score le plus élevé. Pour cela, définissez une limitation du nombre d’enregistrements, appliquez un tri descendant sur le score, et limitez le nombre d’enregistrements à 1.
 
-   ![](assets/uc1_enrich_16.png)
+   ![Partage du sous-ensemble gagnant limité à un enregistrement, classé par score (données supplémentaires/résultats du concours) décroissant.](assets/uc1_enrich_16.png)
 
 1. Le deuxième sous-ensemble (**Deuxième place**), inclut la personne destinataire ayant obtenu le second meilleur score. La configuration est la même que celle du premier sous-ensemble.
 
-   ![](assets/uc1_enrich_17.png)
+   ![Fractionner le sous-ensemble Deuxième place configurée comme gagnante : classée par score décroissant, limitée à 1.](assets/uc1_enrich_17.png)
 
 1. Le troisième sous-ensemble (**Perdants**) contient tous les autres destinataires. Dans l&#39;onglet **[!UICONTROL Général]**, cochez la case **[!UICONTROL Générer le complémentaire]** pour cibler tous les destinataires qui n&#39;ont pas obtenu les deux meilleurs scores.
 
-   ![](assets/uc1_enrich_19.png)
+   ![Fractionner l&#39;onglet Général avec l&#39;option Générer le complémentaire activée et le complémentaire étiqueté Perdants.](assets/uc1_enrich_19.png)
 
 1. Pour chaque sous-ensemble, ajoutez une activité de type **[!UICONTROL Diffusion]**. Utilisez un modèle de diffusion différent pour chaque sous-ensemble.
 
-   ![](assets/uc1_enrich_20.png)
+   ![Activité de diffusion 1ère place créée à partir du modèle 1ère place de diffusion (DM41).](assets/uc1_enrich_20.png)

@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 100%
+source-wordcount: '631'
+ht-degree: 90%
 ---
 # Validation{#approval}
 
@@ -47,7 +47,7 @@ Au besoin, vous pouvez affecter la tâche de validation à un opérateur unique 
 
 * Pour sélectionner un opérateur unique, sélectionnez la valeur **[!UICONTROL Opérateur]** dans le champ **[!UICONTROL Type d&#39;affectation]** et sélectionnez l&#39;opérateur concerné dans la liste déroulante du champ **[!UICONTROL Assignation]**.
 
-  ![](assets/s_advuser_validation_box_assign.png)
+  ![Activité d&#39;approbation avec la liste des types d&#39;affectation ouverte et l&#39;opérateur en surbrillance](assets/s_advuser_validation_box_assign.png)
 
   >[!CAUTION]
   >
@@ -55,7 +55,7 @@ Au besoin, vous pouvez affecter la tâche de validation à un opérateur unique 
 
 * Vous pouvez définir une requête pour filtrer les opérateurs et opératrices en charge de la validation. Pour cela, sélectionnez la valeur **[!UICONTROL Filtre]** dans le champ **[!UICONTROL Type d’affectation]**, puis cliquez sur le lien **[!UICONTROL Paramètres avancés...]** pour définir les critères de filtrage, comme dans l’exemple ci-dessous :
 
-  ![](assets/s_advuser_validation_box_filter.png)
+  ![Activité d&#39;approbation définie sur Filtrer, avec paramètres avancés, conditions de filtrage où Service est égal à une valeur](assets/s_advuser_validation_box_filter.png)
 
 Dans le cas d&#39;une validation simple, la transition correspondant au choix de l&#39;opérateur est activée et la tâche est terminée : les autres opérateurs ne peuvent plus répondre.
 
@@ -69,13 +69,13 @@ La modification du titre ou du corps du message de l&#39;activité n&#39;affecte
 
 Les tâches de type **Validation** sont accessibles depuis le noeud **[!UICONTROL Administration > Exploitation > Objets créés automatiquement > Approbations en attente]** : les opérateurs peuvent accéder directement au formulaire de validation depuis cette vue.
 
-![](assets/s_advuser_validation_from_console.png)
+![Liste des validations en attente avec la fenêtre Validation de la tâche affichant le message, Choix Oui ou Non et bouton Valider](assets/s_advuser_validation_from_console.png)
 
 ## Propriétés {#properties}
 
 Les variables de personnalisation peuvent être utilisées dans le message envoyé aux réviseurs et réviseuses. Elles peuvent être insérées dans le titre ou dans le corps du message.
 
-![](assets/edit_validation.png)
+![Activité de validation avec un menu de personnalisation utilisé pour insérer des variables d&#39;activité et d&#39;événement dans le champ Titre](assets/edit_validation.png)
 
 Ce champ **[!UICONTROL Titre]** contient le titre du message : il s’agit de l’objet de l’e-mail envoyé. Le titre, comme le corps du message, sont des modèles JavaScript et peuvent donc contenir des valeurs calculées en fonction du contexte du workflow.
 

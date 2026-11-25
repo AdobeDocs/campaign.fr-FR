@@ -29,10 +29,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 100%
+source-wordcount: '299'
+ht-degree: 93%
 ---
 # Gérer les fuseaux horaires{#managing-time-zones}
 
@@ -46,7 +46,7 @@ Vous pouvez planifier l’exécution des tâches à l’aide du planificateur (v
 
 Pour toute tâche planifiée, c&#39;est-à-dire dans toute activité qui propose des options de planification, vous pouvez choisir le fuseau horaire à appliquer. Le fuseau horaire est sélectionné à l&#39;aide de l’onglet **[!UICONTROL Avancé]** de l&#39;activité concernée :
 
-![](assets/wf-timezone-in-a-box.png)
+![Onglet Avancé du planificateur avec le menu déroulant Fuseau horaire ouvert, répertoriant les fuseaux horaires par défaut, du serveur, de l&#39;opérateur et de la base de données.](assets/wf-timezone-in-a-box.png)
 
 Les valeurs possibles sont les suivantes :
 

@@ -20,10 +20,10 @@ subfeature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 100%
+source-wordcount: '486'
+ht-degree: 80%
 ---
 # Règles de contrôle{#control-rules}
 
@@ -52,11 +52,11 @@ Les étapes sont les suivantes :
 
 1. Créez une règle de typologie de type **[!UICONTROL Contrôle]**. Sélectionnez un niveau d&#39;alerte de type Avertissement (**[!UICONTROL Warning]**).
 
-   ![](assets/campaign_opt_create_control_01.png)
+   ![Boîte de dialogue de création de règle de typologie, onglet Général : type de règle de contrôle, canal SMS, liste déroulante Niveau avec Avertissement en surbrillance.](assets/campaign_opt_create_control_01.png)
 
 1. Dans l&#39;onglet **[!UICONTROL Code]**, saisissez le script permettant d&#39;appliquer la limite souhaitée, comme dans l&#39;exemple suivant :
 
-   ![](assets/campaign_opt_create_control_02.png)
+   ![Onglet Code de règle de typologie avec le script qui consigne un avertissement lorsque la cible de diffusion dépasse 100 contacts.](assets/campaign_opt_create_control_02.png)
 
    Ce script permet de générer un avertissement lorsque la cible de la diffusion excède 100 contacts :
 
@@ -66,18 +66,18 @@ Les étapes sont les suivantes :
 
 1. Associez cette règle à une typologie de campagne et référencez cette typologie dans la diffusion SMS concernée.
 
-   ![](assets/campaign_opt_create_control_03.png)
+   ![Propriétés de la diffusion, onglet Typologie : liste déroulante Typologie répertoriant Mobile (max. 100) parmi les typologies disponibles.](assets/campaign_opt_create_control_03.png)
 
 1. Lors de la phase d&#39;analyse de la diffusion, la règle est appliquée et un avertissement est généré, s&#39;il y a lieu.
 
-   ![](assets/campaign_opt_create_control_04.png)
+   ![Le journal d&#39;analyse de la diffusion affiche un avertissement indiquant que la règle +100 messages a détecté un problème. Confirmer la diffusion est disponible.](assets/campaign_opt_create_control_04.png)
 
    La diffusion est toutefois prête à être envoyée.
 
    Si vous augmentez le niveau d&#39;alerte, la diffusion ne pourra pas être démarrée.
 
-   ![](assets/campaign_opt_create_control_05.png)
+   ![Onglet Général de la règle de typologie avec le menu déroulant Niveau ouvert et Erreur sélectionnée au lieu d&#39;Avertissement.](assets/campaign_opt_create_control_05.png)
 
    A la fin de l&#39;analyse, le bouton **[!UICONTROL Confirmer l&#39;envoi]** ne sera pas disponible.
 
-   ![](assets/campaign_opt_create_control_06.png)
+   ![Le log d&#39;analyse de la diffusion se termine par une erreur, avec le bouton Confirmer la diffusion désactivé.](assets/campaign_opt_create_control_06.png)

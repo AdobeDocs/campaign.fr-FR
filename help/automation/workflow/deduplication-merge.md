@@ -23,10 +23,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 100%
+source-wordcount: '765'
+ht-degree: 78%
 ---
 # Utiliser la fonctionnalité de fusion de l’activité de déduplication {#deduplication-merge}
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 
 Ce cas d’utilisation décrit l’utilisation de la fonctionnalité **[!UICONTROL Fusion]** dans l’activité **[!UICONTROL Déduplication]**.
 
-Pour plus d’informations sur cette fonctionnalité, consultez [cette section](deduplication.md#merging-fields-into-single-record).
+Pour plus d&#39;informations sur cette fonctionnalité, consultez la section [Fusion de champs en un seul enregistrement de données](deduplication.md#merging-fields-into-single-record).
 
 L’activité **[!UICONTROL Déduplication]** est utilisée pour supprimer des lignes en double d’un jeu de données. Dans ce cas pratique, les données présentées ci-dessous sont dupliquées en fonction du champ E-mail.
 
@@ -57,11 +57,11 @@ Pour activer la fonctionnalité de fusion, vous devez d&#39;abord configurer l&#
 
 1. Sélectionnez le champ de réconciliation à utiliser pour la déduplication, puis cliquez sur **[!UICONTROL Suivant]**. Dans cet exemple, nous voulons dédupliquer en fonction du champ de l’e-mail.
 
-   ![](assets/uc_merge_edit.png)
+   ![Fenêtre de dimension de ciblage Déduplication avec Destinataires sélectionnés et le champ de réconciliation d&#39;e-mail choisi.](assets/uc_merge_edit.png)
 
 1. Cliquez sur le lien **[!UICONTROL Paramètres avancés]**, puis activez les options **[!UICONTROL Fusionner les enregistrements]** et **[!UICONTROL Utiliser plusieurs critères de fusion des enregistrements]**.
 
-   ![](assets/uc_merge_advanced_parameters.png)
+   ![Boîte de dialogue du paramètre de déduplication avec les options Fusionner les enregistrements et Utiliser plusieurs critères de fusion d&#39;enregistrements cochées.](assets/uc_merge_advanced_parameters.png)
 
 1. L&#39;onglet **[!UICONTROL Fusion]** est ajouté à l&#39;écran de configuration de **[!UICONTROL Déduplication]**. Cet onglet permet de spécifier les données à fusionner lors de l&#39;exécution de la déduplication.
 
@@ -78,31 +78,31 @@ Pour configurer ces règles, procédez comme suit :
 
 1. Ouvrez l&#39;onglet **[!UICONTROL Fusion]**, puis cliquez sur le bouton **[!UICONTROL Ajouter]**.
 
-   ![](assets/uc_merge_add.png)
+   ![Onglet Fusionner de l&#39;activité Déduplication avec le bouton Ajouter au-dessus d&#39;une liste vide de données fusionnées.](assets/uc_merge_add.png)
 
 1. Indiquez l&#39;identifiant et le libellé du groupe de champs à fusionner.
 
-   ![](assets/uc_merge_identifier.png)
+   ![Étape Identifiant et libellé de l&#39;assistant de sélection des données à fusionner, avec le nom de l&#39;identifiant et le nom du libellé saisis.](assets/uc_merge_identifier.png)
 
 1. Indiquez les conditions de sélection des enregistrements à prendre en compte.
 
-   ![](assets/uc_merge_filter.png)
+   ![L&#39;étape de filtrage avec des conditions Prénom n&#39;est pas vide et Nom n&#39;est pas vide pour la sélection des enregistrements à fusionner.](assets/uc_merge_filter.png)
 
 1. Triez la date de la dernière modification afin de sélectionner le nom le plus récent.
 
-   ![](assets/uc_merge_sort.png)
+   ![Étape de tri avec date de modification triée par ordre décroissant pour sélectionner l’enregistrement le plus récent.](assets/uc_merge_sort.png)
 
 1. Sélectionnez les champs à fusionner. Dans cet exemple, nous voulons conserver les champs de prénom et de nom.
 
-   ![](assets/uc_merge_keep.png)
+   ![Les champs à conserver s’exécutent avec le prénom et le nom sélectionnés comme colonnes de sortie.](assets/uc_merge_keep.png)
 
 1. Les champs sont ajoutés au jeu de données à fusionner et un nouvel élément est ajouté au schéma de workflow.
 
    Répétez ces étapes pour configurer les champs de téléphone et de téléphone mobile.
 
-   ![](assets/dedup8.png)
+   ![Onglet Fusionner répertoriant les groupes fusionnés Nom, mobile et téléphone avec leurs alias et conditions enabled-if.](assets/dedup8.png)
 
-   ![](assets/dedup9.png)
+   ![Onglet Schéma affichant la structure de données générée de la déduplication avec les nœuds mobile, de nom et de téléphone.](assets/dedup9.png)
 
 ## Résultats {#results}
 

@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1924'
-ht-degree: 100%
+source-wordcount: '2262'
+ht-degree: 85%
 ---
 # Prestataires, stocks et budgets{#providers-stocks-and-budgets}
 
@@ -66,7 +66,7 @@ Vous pouvez créer autant de prestataires que nécessaire pour vos diffusions. P
 1. Cliquez sur le bouton **[!UICONTROL Nouveau]** situé au-dessus de la liste des fournisseurs.
 1. Dans la section inférieure de la fenêtre, indiquez son nom et ses coordonnées.
 
-   ![](assets/add-a-supplier.png)
+   ![Liste des fournisseurs de services dans l&#39;Explorateur et un nouveau formulaire de fournisseur de services avec les champs Libellé, Nom interne et Commentaire](assets/add-a-supplier.png)
 
 1. Cliquez sur le bouton **[!UICONTROL Enregistrer]** pour ajouter le prestataire dans la liste.
 
@@ -80,11 +80,11 @@ Pour créer un modèle de prestation et définir son contenu, procédez comme su
 
 1. Sous l&#39;onglet **[!UICONTROL Prestations]** du fournisseur, cliquez sur le bouton **[!UICONTROL Ajouter]** et nommez le modèle de prestation.
 
-   ![](assets/supplier-new-template.png)
+   ![Boîte de dialogue Service pour un nouveau modèle de service, onglet Général, avec les champs Libellé, Nom interne et Commentaire](assets/supplier-new-template.png)
 
 1. Créez les catégories de coûts pour chaque type de traitement (diffusion par courrier/e-mail/etc. ou tâche). Pour ce faire, cliquez sur l’onglet **[!UICONTROL Catégories de coûts]**, puis sur le bouton **[!UICONTROL Ajouter]** et renseignez les paramètres de chaque catégorie de coût.
 
-   ![](assets/add-cost-categories.png)
+   ![Onglet Postes de coût avec le bouton Ajouter et la boîte de dialogue Poste de coût pour un poste Courrier et ses types de coûts](assets/add-cost-categories.png)
 
    * Saisissez un libellé pour ce poste de coût et sélectionnez le type de traitement concerné : diffusion par **[!UICONTROL Publipostage direct]**, **[!UICONTROL E-mail]**, **[!UICONTROL Mobile]**, etc.
    * Cliquez sur le bouton **[!UICONTROL Ajouter]** pour définir les types de coûts associés à ce poste.
@@ -96,7 +96,7 @@ Pour créer un modèle de prestation et définir son contenu, procédez comme su
 
 1. Vous pouvez présélectionner une valeur pour ce poste de coût, qui est celle par défaut dans les postes de coûts des fournisseurs (au lieu d&#39;une valeur vide). Pour ce faire, activez l&#39;option **Oui** dans la colonne **[!UICONTROL Sélectionné]** pour le type de poste concerné :
 
-   ![](assets/default-cost-type.png)
+   ![Boîte de dialogue Poste de coût avec l&#39;option Oui activée dans la colonne Sélectionné pour le type de coût Lettre](assets/default-cost-type.png)
 
    Au niveau de la diffusion, la valeur sera sélectionnée par défaut.
 
@@ -106,7 +106,7 @@ Une structure de coûts indique, pour chaque type de coût, les règles de calcu
 
 Cliquez sur l’onglet **[!UICONTROL Structure de coûts]** pour configurer le calcul des coûts pour chaque catégorie et type de coût. Cliquez sur **[!UICONTROL Ajouter]** et saisissez la structure de coûts.
 
-![](assets/add-cost-structure.png)
+![Onglet Structure de coût avec le bouton Ajouter et la boîte de dialogue Définition de la structure de coût : canal, poste de coût, calcul](assets/add-cost-structure.png)
 
 * Pour créer la structure de coûts, sélectionnez dans les listes déroulantes le type de message et la catégorie de coût concerné, ainsi que le type de coût auquel s’appliquera la règle de calcul. Le contenu de ces listes déroulantes reprend les informations renseignées à partir de l’onglet **[!UICONTROL Catégories de coût]**.
 
@@ -126,7 +126,7 @@ Si le montant est toujours le même, pour un message (ou un lot de messages), et
 
 Si ce montant s&#39;applique à un lot de messages, indiquez le nombre de messages concernés dans le champ **[!UICONTROL pour]**.
 
-![](assets/supplier_cost_structure_calc.png)
+![Boîte de dialogue de structure de coût avec les options Par message et Linéaire sélectionnées, un montant de 4,00 pour 5 unités](assets/supplier_cost_structure_calc.png)
 
 
 #### Structure linéaire par seuil {#linear-structure-by-threshold}
@@ -135,7 +135,7 @@ Si le montant s’applique par seuil pour chaque message, vous devez définir un
 
 La configuration est la suivante :
 
-![](assets/supplier-cost-structure-linear.png)
+![Boîte de dialogue Structure de coût avec le type Linéaire par seuil, une liste de seuils avec des montants et une valeur Au-delà](assets/supplier-cost-structure-linear.png)
 
 Pour ajouter un seuil, cliquez sur le bouton **[!UICONTROL Ajouter]** situé à droite de la liste.
 
@@ -143,13 +143,13 @@ Pour ajouter un seuil, cliquez sur le bouton **[!UICONTROL Ajouter]** situé à 
 
 Enfin, vous pouvez configurer un calcul des coûts en fonction du nombre total de messages. Pour ce faire, sélectionnez une structure de calcul **[!UICONTROL Constante par seuil]**. Par exemple, le coût sera fixé à 12 pour 1 à 100 messages ; à 100 pour une diffusion de 101 à 1000 messages, et à 500 pour toute diffusion de plus de 1 000 messages, quel que soit le nombre total.
 
-![](assets/supplier-cost-structure-constant.png)
+![Boîte de dialogue Structure de coût avec le type Constante par seuil, une liste de seuils avec des montants fixes et une valeur Au-delà](assets/supplier-cost-structure-constant.png)
 
 ### Configurer les traitements associés à un prestataire {#configure-processes-associated-with-a-service}
 
 Vous pouvez associer des informations sur les traitements liés à une prestation depuis l&#39;onglet **[!UICONTROL Traitements]**. Cette section permet de configurer l&#39;envoi d&#39;informations au routeur.
 
-![](assets/cost-supplier-jobs.png)
+![Onglet Tâches d’un service affichant les paramètres d’extraction de fichiers, d’e-mail de notification et de modèle de workflow de post-traitement](assets/cost-supplier-jobs.png)
 
 * La section **[!UICONTROL Extraction de fichier]** indique le modèle d’export utilisé pour la diffusion lorsque cette prestation est sélectionnée. Vous pouvez indiquer le nom du fichier de sortie dans le champ **[!UICONTROL Fichier d’extraction]**. Le bouton situé à droite du champ permet d’insérer des variables.
 
@@ -171,18 +171,18 @@ Lorsqu’un service est sélectionné, les postes de coûts correspondant au typ
 
 * Pour une diffusion courrier, vous pouvez sélectionner le service à partir de la fenêtre de configuration.
 
-  ![](assets/supplier-mail-delivery-select.png)
+  ![Diffusion courrier avec la section Prestataire mise en surbrillance : champ Service et liste des postes de coûts](assets/supplier-mail-delivery-select.png)
 
 * Pour une diffusion sur canaux mobiles, le mode de sélection est le même.
 * Pour une diffusion par email, la prestation est sélectionnée à partir de l&#39;onglet **[!UICONTROL Avancé]** des propriétés de la diffusion, comme dans l&#39;exemple ci-dessous :
 
-  ![](assets/supplier-email-delivery-select.png)
+  ![Propriétés de diffusion, onglet Avancé, avec la section Prestataire affichant le champ Service et la liste des postes de coûts](assets/supplier-email-delivery-select.png)
 
 La colonne **[!UICONTROL Montant à surcharger]** permet d&#39;ajouter un coût pour ce poste dans le contexte de la diffusion ou de la tâche concernée.
 
 Vous pouvez définir une sélection obligatoire d&#39;un type de coût lors de la définition des postes de coût pour une diffusion. Pour ce faire, sélectionnez **[!UICONTROL Un type de coût doit être sélectionné]**.
 
-![](assets/cost-type-must-be-selected.png)
+![La boîte de dialogue Poste de coût avec l&#39;option A type de coût doit être cochée, au-dessus de la liste des types de coûts](assets/cost-type-must-be-selected.png)
 
 ## Gestion des stocks et des commandes {#stock-and-order-management}
 
@@ -202,7 +202,7 @@ Pour mettre en place la gestion des stocks et des commandes dans Adobe Campaign
 
 Adobe Campaign peut alerter un groupe d’opérateurs et d’opératrices si le stock est épuisé ou a atteint un seuil minimum. Les niveaux de stock sont accessibles via le lien **[!UICONTROL Stocks]** de l’onglet **[!UICONTROL Campagnes]** à partir du lien **[!UICONTROL Autres choix]** dans la zone de navigation.
 
-![](assets/stock-dashboard.png)
+![Accueil Adobe Campaign, onglet Campagnes, avec la liste Stocks affichant les stocks disponibles](assets/stock-dashboard.png)
 
 #### Créer un stock {#creating-a-stock}
 
@@ -217,17 +217,17 @@ Un stock comprend différentes lignes de stock. Une ligne de stock contient une 
 
 Lorsque vous créez un stock, cliquez sur l&#39;onglet **[!UICONTROL Lignes de stock]** pour ajouter des lignes de stocks.
 
-![](assets/stock-new-lines.png)
+![Écran de modification des stocks, onglet Lignes de stock, répertoriant les lignes de stock avec les colonnes Stock initial, Consommé, En stock et Niveau d’alerte](assets/stock-new-lines.png)
 
 Une fois le stock créé, utilisez son tableau de bord pour créer et surveiller les lignes de stock.
 
 Cliquez sur le bouton **[!UICONTROL Créer]** pour ajouter de nouvelles lignes de stock.
 
-![](assets/add-stock-lines.png)
+![Tableau de bord des stocks avec le bouton Créer au-dessus d&#39;une liste de lignes de stock indiquant les quantités initiales, consommées et en stock](assets/add-stock-lines.png)
 
 * Indiquez la quantité initialement en stock dans le champ **[!UICONTROL Stock initial]**. Les champs **[!UICONTROL Consommé]** et **[!UICONTROL En stock]** sont calculés automatiquement et mis à jour au fil des campagnes.
 
-  ![](assets/create-new-stock-line.png)
+  ![Boîte de dialogue Ligne de stock, onglet Général, avec le stock initial, les quantités consommées et en stock et le champ Niveau d&#39;alerte](assets/create-new-stock-line.png)
 
 * Indiquez, dans le champ **[!UICONTROL Niveau d’alerte]**, le seuil à partir duquel il faudra alerter les opérateurs et opératrices pour le renouvellement. Lorsque le niveau d’alerte est atteint, un message d’avertissement est affiché dans la fenêtre de validation des diffusions qui utilisent ce stock.
 
@@ -235,7 +235,7 @@ Cliquez sur le bouton **[!UICONTROL Créer]** pour ajouter de nouvelles lignes d
 
 Au niveau du prestataire, dans une prestation, une ligne de stock peut être référencée par l&#39;un de ses postes de coûts, comme ci-dessous :
 
-![](assets/select-stock-line-supplier.png)
+![Boîte de dialogue Poste de coût avec une ligne de stock sélectionnée dans la liste déroulante Ligne de stock d&#39;un type de coût](assets/select-stock-line-supplier.png)
 
 ### Tracking des stocks {#stock-tracking}
 
@@ -243,7 +243,7 @@ Au niveau du prestataire, dans une prestation, une ligne de stock peut être ré
 
 Une alerte s’affiche lorsqu’un stock référencé dans une diffusion est insuffisant. Par exemple, l’alerte suivante s’affiche lors de l’approbation d’un fichier d’extraction :
 
-![](assets/stock-alert.png)
+![Action de la boîte de dialogue de diffusion présentant une alerte de stock insuffisante avec les options Accepter et Rejeter avant l&#39;approbation du fichier](assets/stock-alert.png)
 
 #### Les commandes {#orders}
 
@@ -251,7 +251,7 @@ Le sous-onglet **[!UICONTROL Commandes]** permet de visualiser les commandes en 
 
 Pour enregistrer une commande, éditez la ligne de stock visée, cliquez sur le bouton **[!UICONTROL Ajouter]** et indiquez la date de livraison et la quantité commandée.
 
-![](assets/order-stocks.png)
+![Onglet Commandes de ligne de stock avec le bouton Ajouter et une boîte de dialogue Commande de stock avec les champs Date de livraison et Volume de la commande](assets/order-stocks.png)
 
 >[!NOTE]
 >

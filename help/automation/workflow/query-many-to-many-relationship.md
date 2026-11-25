@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 77%
 ---
 # Requête avec une relation multiple-à-multiple {#querying-using-a-many-to-many-relationship}
 
@@ -53,36 +53,36 @@ Les étapes sont les suivantes :
 1. Ouvrez le requêteur générique et choisissez la table Personnes destinataires **[!UICONTROL (nms:recipient)]**.
 1. Dans la fenêtre **[!UICONTROL Données à extraire]**, sélectionnez les champs **[!UICONTROL Clé primaire]**, **[!UICONTROL Prénom]**, **[!UICONTROL Nom]** et **[!UICONTROL Email]**.
 
-   ![](assets/query_editor_nveau_33.png)
+   ![Fenêtre de données à extraire avec clé de Principal, prénom, nom et e-mail répertoriés comme colonnes de sortie](assets/query_editor_nveau_33.png)
 
 1. Dans la fenêtre de tri, ordonnez les noms alphabétiquement.
 
-   ![](assets/query_editor_nveau_34.png)
+   ![Fenêtre de tri avec l&#39;option Trier définie sur Oui pour la colonne Nom](assets/query_editor_nveau_34.png)
 
 1. Dans la fenêtre **[!UICONTROL Filtrage des données]**, choisissez **[!UICONTROL Critères de filtrage]**.
 1. Dans la fenêtre **[!UICONTROL Élément de la cible]**, la condition de filtrage qui permet d’extraire les profils qui n’ont aucun log de tracking sur les 7 derniers jours est réalisée en deux étapes. L’élément que vous devez sélectionner est un lien multiple à multiple.
 
    * Tout d&#39;abord, sélectionnez l&#39;élément de collection (noeud orange) **[!UICONTROL Logs de diffusion des destinataires (broadlog)]** pour la première colonne **[!UICONTROL Valeur]**.
 
-     ![](assets/query_editor_nveau_67.png)
+     ![Champ à sélectionner pour la fenêtre avec l&#39;élément de collection Logs de diffusion des destinataires (broadLog) sélectionné](assets/query_editor_nveau_67.png)
 
      Sélectionnez l’opérateur **[!UICONTROL n’existent pas en tant que]**. Il n’est pas nécessaire de sélectionner de seconde valeur dans cette ligne.
 
    * Le contenu de la seconde condition de filtrage découle directement du choix de la première. Ici, le champ **[!UICONTROL Date de l&#39;événement]** est directement proposé dans la table **[!UICONTROL Logs de diffusion des destinataires]** car un lien s&#39;opère vers cette table.
 
-     ![](assets/query_editor_nveau_36.png)
+     ![Champ à sélectionner pour la fenêtre répertoriant les champs des logs de diffusion des destinataires, avec la date de l’événement (@eventDate) mise en surbrillance](assets/query_editor_nveau_36.png)
 
      Sélectionnez **[!UICONTROL Date de l&#39;événement]** avec l&#39;opérateur **[!UICONTROL supérieur ou égal à]**. Sélectionnez la valeur **[!UICONTROL DaysAgo (7)]**. Pour cela, cliquez sur **[!UICONTROL Editer l&#39;expression]** dans le champ **[!UICONTROL Valeur]**. Dans la fenêtre **[!UICONTROL Type de formule]**, sélectionnez **[!UICONTROL Traitement sur les dates]** puis **[!UICONTROL Date courante moins n jours]** et saisissez la valeur &quot;7&quot;.
 
-     ![](assets/query_editor_nveau_37.png)
+     ![Fenêtre de type formule avec Traitement aux dates et Date actuelle moins n jours définie sur 7](assets/query_editor_nveau_37.png)
 
      La condition de filtrage est paramétrée.
 
-     ![](assets/query_editor_nveau_38.png)
+     ![Fenêtre de l’élément cible avec le filtre : les logs de diffusion n’existent pas, par exemple la date de l’événement est le ou après 7 jours avant](assets/query_editor_nveau_38.png)
 
 1. Dans la fenêtre **[!UICONTROL Formatage des données]**, modifiez la casse des noms : ils doivent s&#39;afficher en majuscules. Cliquez sur la ligne du **[!UICONTROL Nom]** dans la colonne **[!UICONTROL Transformation]** et choisissez **[!UICONTROL Passer en majuscules]** dans le menu déroulant.
 
-   ![](assets/query_editor_nveau_39.png)
+   ![Fenêtre Formatage des données avec la liste Transformation pour le nom, Passer à l&#39;option en majuscules mise en surbrillance](assets/query_editor_nveau_39.png)
 
 1. Utilisez la fonction **[!UICONTROL Ajouter un champ calculé]** pour insérer une colonne dans la fenêtre de prévisualisation des données.
 
@@ -93,7 +93,7 @@ Les étapes sont les suivantes :
    return rep
    ```
 
-   ![](assets/query_editor_nveau_40.png)
+   ![Éditeur d&#39;expression JavaScript pour la colonne Prénom - Nom avec le script qui concatène les deux champs](assets/query_editor_nveau_40.png)
 
    Cliquez sur **[!UICONTROL OK]**. La fenêtre **[!UICONTROL Formatage des données]** est paramétrée.
 
@@ -101,4 +101,4 @@ Les étapes sont les suivantes :
 
 1. Le résultat s’affiche dans la fenêtre **[!UICONTROL Aperçu des données]**. Les personnes destinataires qui n’ont pas été contactées au cours des 7 derniers jours sont affichées par ordre alphabétique. Les noms sont affichés en majuscules et la colonne contenant les noms et prénoms a été créée.
 
-   ![](assets/query_editor_nveau_41.png)
+   ![Fenêtre de prévisualisation des données répertoriant les destinataires avec la colonne Prénom - Nom ajoutée](assets/query_editor_nveau_41.png)

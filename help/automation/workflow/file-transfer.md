@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 100%
+source-wordcount: '791'
+ht-degree: 83%
 ---
 # Envoi de fichier{#file-transfer}
 
@@ -42,7 +42,7 @@ Avec la connexion SFTP, S3, ou stockage Blob Azure, vous pouvez également imp
 
 Utilisez la liste déroulante du champ **[!UICONTROL Action]** pour sélectionner l&#39;action de l&#39;activité.
 
-![](assets/file_transfert_action.png)
+![Liste déroulante Action de l&#39;activité Transfert de fichier : Téléchargement de fichier, Chargement de fichier, Test d&#39;existence de fichier, Listage de fichiers](assets/file_transfert_action.png)
 
 Le paramétrage dépend de l&#39;action sélectionnée.
 
@@ -50,11 +50,11 @@ Le paramétrage dépend de l&#39;action sélectionnée.
 
    Pour recevoir des fichiers stockés sur un serveur distant, sélectionnez l’option **[!UICONTROL Téléchargement de fichier]** dans le champ **[!UICONTROL Action]**. Vous devez indiquer son URL dans le champ correspondant.
 
-   ![](assets/file_transfert_edit.png)
+   ![Activité Transfert de fichier avec Action définie sur Téléchargement de fichier et le champ URL de la section Serveur distant](assets/file_transfert_edit.png)
 
    Cochez **[!UICONTROL Utiliser un compte externe]** pour sélectionner un compte à partir du nœud de stockage Blob Azure, S3, FTP ou SFTP configuré dans le nœud **[!UICONTROL Administration > Plateforme > Comptes externes]** de l&#39;arborescence. Indiquez ensuite le répertoire sur le serveur contenant le ou les fichiers à télécharger.
 
-   ![](assets/file_transfert_edit_external.png)
+   ![Section de serveur distant avec l&#39;option Utiliser un compte externe activée, un compte externe sélectionné et un dossier de serveur](assets/file_transfert_edit_external.png)
 
 1. **Transfert de fichier**
 
@@ -62,11 +62,11 @@ Le paramétrage dépend de l&#39;action sélectionnée.
 
    Le fichier source peut provenir de l’activité précédente. Dans ce cas, l’option **[!UICONTROL Utiliser le fichier généré par l’activité précédente]** doit être sélectionnée.
 
-   ![](assets/file_transfert_edit_send.png)
+   ![Action de chargement de fichier avec Utiliser le fichier généré par l&#39;activité précédente vérifié et l&#39;URL du serveur distant](assets/file_transfert_edit_send.png)
 
    Cela peut également concerner un ou plusieurs autres fichiers. Pour les sélectionner, décochez l’option, puis cliquez sur **[!UICONTROL Insérer]**. Spécifiez le chemin d’accès du fichier à envoyer. Pour ajouter un autre fichier, cliquez à nouveau sur **[!UICONTROL Insérer]**. Désormais, les fichiers disposent chacun de leur propre onglet.
 
-   ![](assets/file_transfert_source.png)
+   Section ![Source avec l&#39;option d&#39;activité précédente désactivée, le bouton Ajouter et un onglet affichant le chemin d&#39;accès d&#39;un fichier à envoyer](assets/file_transfert_source.png)
 
    Utilisez les flèches pour modifier l’ordre des onglets. Il correspond à l’ordre d’envoi des fichiers au serveur.
 
@@ -76,7 +76,7 @@ Le paramétrage dépend de l&#39;action sélectionnée.
 
    Pour tester l’existence d’un fichier, sélectionnez l’option **[!UICONTROL Test d’existence de fichier]** dans le champ **[!UICONTROL Action]**. La configuration du serveur distant est la même que pour le téléchargement de fichiers. Pour plus d’informations, consultez cette [section](#properties).
 
-   ![](assets/file_transfert_edit_test.png)
+   ![Activité Transfert de fichier avec Action définie sur Test pour vérifier si le fichier existe, un compte externe et un dossier de serveur](assets/file_transfert_edit_test.png)
 
 1. **Listage des fichiers**
 
@@ -91,7 +91,7 @@ Pour toutes les actions de transfert de fichiers, deux options peuvent être sé
 
 Le lien **[!UICONTROL Paramètres avancés...]** permet d&#39;accéder aux options suivantes :
 
-![](assets/file_transfert_advanced.png)
+![Boîte de dialogue des paramètres avancés : supprimer les fichiers sources après le transfert, afficher les journaux de session, désactiver le mode passif](assets/file_transfert_advanced.png)
 
 * **[!UICONTROL Effacer les fichiers source après leur transfert]**.
 

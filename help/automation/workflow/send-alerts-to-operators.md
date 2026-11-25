@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 100%
+source-wordcount: '495'
+ht-degree: 75%
 ---
 # Envoi d’alertes personnalisées aux opérateurs{#sending-personalized-alerts-to-operators}
 
@@ -37,7 +37,7 @@ Le processus créé un workflow comme ci-dessous :
 1. Utilisez une activité **[!UICONTROL Test]** pour vérifier la population.
 1. Utilisez une activité **[!UICONTROL Alerte]** pour envoyer une alerte à un opérateur, selon le résultat de l&#39;activité **[!UICONTROL Test]**.
 
-![](assets/uc_operator_1.png)
+![Workflow avec une requête, du code JavaScript et une activité Test ; la branche True mène à une activité Alerte, False à End 2.](assets/uc_operator_1.png)
 
 ## Enregistrer la population dans la variable d&#39;instance {#saving-the-population-to-the-instance-variable}
 
@@ -60,21 +60,21 @@ Assurez-vous que le code JavaScript correspond à vos informations de workflow 
 * La balise **[!UICONTROL queryDef schema]** devrait correspondre au nom de la dimension de ciblage utilisée dans l’activité de requête.
 * Le tag **[!UICONTROL node expr]** devrait correspondre au nom des champs que vous voulez récupérer.
 
-![](assets/uc_operator_3.png)
+![Script de code JavaScript avec le schéma queryDef temp:query et les nœuds firstName et lastName cibles mis en surbrillance.](assets/uc_operator_3.png)
 
 Pour récupérer ces informations, procédez comme suit :
 
 1. Cliquez avec le bouton droit sur la transition sortante à partir de l’activité **[!UICONTROL Requête]**, puis sélectionnez **[!UICONTROL Afficher la cible]**.
 
-   ![](assets/uc_operator_4.png)
+   ![Menu contextuel sur la transition sortante de l&#39;activité Requête avec Afficher la cible sélectionnée.](assets/uc_operator_4.png)
 
 1. Cliquez avec le bouton droit sur la liste, puis sélectionnez **[!UICONTROL Configurer la liste]**.
 
-   ![](assets/uc_operator_5.png)
+   ![Enregistrements de la liste cible avec le menu contextuel ouvert et Configurer la liste sélectionnés.](assets/uc_operator_5.png)
 
 1. Les noms des champs et de la dimension de ciblage de la requête s&#39;affichent dans la liste
 
-   ![](assets/uc_operator_6.png)
+   ![Onglet Configurer les colonnes de la liste affichant l&#39;élément racine temp de la requête:query en surbrillance et ses champs de dimension de ciblage.](assets/uc_operator_6.png)
 
 ## Tester le comptage de la population {#testing-the-population-count}
 
@@ -84,7 +84,7 @@ Ajoutez le code ci-dessous dans l&#39;activité **[!UICONTROL Test]** pour véri
 var.recCount>0
 ```
 
-![](assets/uc_operator_7.png)
+![Testez l&#39;activité avec un branchement conditionnel Vrai utilisant la condition vars.recCount>0 et une branche par défaut False.](assets/uc_operator_7.png)
 
 ## Configurer l&#39;alerte {#setting-up-the-alert}
 
@@ -108,4 +108,4 @@ for each (var item in items){
 >La commande **[!UICONTROL &lt;%= item.target.recipient.@fieldName %>]** vous permet d’ajouter l’un des champs qui ont été enregistrés dans la variable d’instance via l’activité **[!UICONTROL Code JavaScript]**.\
 >Vous pouvez ajouter autant de champs que vous le souhaitez, dès lors qu&#39;ils ont été insérés dans le code JavaScript.
 
-![](assets/uc_operator_8.png)
+![Activité d&#39;alerte affectée à un opérateur, avec un message qui survole les éléments enregistrés pour répertorier les noms et prénoms.](assets/uc_operator_8.png)

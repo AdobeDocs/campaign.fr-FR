@@ -25,10 +25,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 100%
+source-wordcount: '174'
+ht-degree: 81%
 ---
 # Moteur d&#39;offres{#offer-engine}
 
@@ -36,7 +36,7 @@ L&#39;activité **[!UICONTROL Moteur d&#39;offres]** vous permet de définir un 
 
 Cette activité fonctionne sur le même principe que l’activité d’enrichissement avec un appel au moteur, en enrichissant les données de la population entrante avec une offre calculée par le moteur, avant une diffusion.
 
-![](assets/int_offerengine_activity2.png)
+![Diagramme de workflow avec l&#39;activité Moteur d&#39;offres placée entre une diffusion Requête et Courrier.](assets/int_offerengine_activity2.png)
 
 Après avoir paramétré votre requête (voir cette [section](query.md)) :
 
@@ -47,6 +47,6 @@ Après avoir paramétré votre requête (voir cette [section](query.md)) :
    >
    >Si vous utilisez cette activité, seules les propositions utilisées dans la diffusion sont stockées.
 
-   ![](assets/int_offerengine_activity1.png)
+   ![Activité du moteur d&#39;offres avec Emplacement, Catégorie d&#39;offres, Thèmes, Nombre de propositions à calculer et Date de contact.](assets/int_offerengine_activity1.png)
 
 1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix. Pour plus d&#39;informations, consultez la section [Diffusions cross-canal](cross-channel-deliveries.md).

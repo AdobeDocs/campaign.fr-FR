@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 100%
+source-wordcount: '401'
+ht-degree: 82%
 ---
 # Charger le contenu de la diffusion{#loading-delivery-content}
 
@@ -39,7 +39,7 @@ Pour cela :
 
    Voici un exemple d&#39;un compte externe S3 :
 
-   ![](assets/delivery_loadcontent_filetransfertexamples3.png)
+   ![Formulaire de création de compte externe de type AWS S3, serveur, ID de clé d&#39;accès AWS et champs de clé d&#39;accès secrets renseignés](assets/delivery_loadcontent_filetransfertexamples3.png)
 
 1. Créez un workflow depuis par exemple **[!UICONTROL Profils et Cibles]** > **[!UICONTROL Traitements]** > **[!UICONTROL Workflows de ciblage]**.
 1. Ajoutez une activité **[!UICONTROL Transfert de fichier]** à votre workflow, puis configurez-la en indiquant les informations suivantes :
@@ -47,7 +47,7 @@ Pour cela :
    * le compte externe à utiliser pour la connexion au serveur S3, FTP ou SFTP ;
    * le chemin d&#39;accès au fichier sur le serveur S3, FTP ou SFTP.
 
-   ![](assets/delivery_loadcontent_filetransfertexample.png)
+   ![L&#39;activité Transfert de fichier est définie sur Téléchargement de fichier, à l&#39;aide d&#39;un compte externe et d&#39;un chemin d&#39;accès au dossier du serveur vers un fichier HTML](assets/delivery_loadcontent_filetransfertexample.png)
 
 1. Ajoutez une activité **[!UICONTROL Diffusion]** et reliez-la à la transition sortante de l’activité **[!UICONTROL Transfert de fichier]**. Configurez-la de la manière suivante :
 
@@ -56,7 +56,7 @@ Pour cela :
    * Contenu : même si le contenu est importé dans l’activité précédente, sélectionnez **[!UICONTROL Spécifié dans la diffusion]**. Comme le contenu est importé directement d’un fichier se trouvant sur un serveur distant, il n’a pas d’identifiant lors du traitement par le workflow et ne peut pas être identifié comme provenant de l’événement entrant.
    * Action à effectuer : sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la diffusion et y accéder depuis **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Diffusions]** une fois le workflow exécuté.
 
-   ![](assets/delivery_loadcontent_activityexample.png)
+   ![Activité de diffusion avec une nouvelle diffusion issue d&#39;un modèle, contenu spécifié dans la diffusion et action Enregistrer](assets/delivery_loadcontent_activityexample.png)
 
 1. Dans l&#39;onglet **[!UICONTROL Script]** de l&#39;activité **[!UICONTROL Diffusion]**, ajoutez la commande suivante pour charger le contenu du fichier importé dans la diffusion :
 
@@ -64,7 +64,7 @@ Pour cela :
    delivery.content.html.source=loadFile(vars.filename)
    ```
 
-   ![](assets/delivery_loadcontent_script.png)
+   ![Onglet Script de l’activité Diffusion avec la commande delivery.content.html.source=loadFile(vars.filename)](assets/delivery_loadcontent_script.png)
 
 1. Enregistrez et exécutez le workflow. Une diffusion avec le contenu chargé est créée dans **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Diffusions]**.
 

@@ -25,10 +25,10 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1309'
-ht-degree: 91%
+source-wordcount: '1550'
+ht-degree: 76%
 ---
 # Créer les programmes et les campagnes{#create-programs-and-campaigns}
 
@@ -36,9 +36,9 @@ Les composants d’orchestration de Campaign se trouvent dans l’onglet **[!UIC
 
 Un programme marketing est constitué de campagnes, qui sont constituées de diffusions, de ressources, etc. Toutes les informations relatives aux diffusions, budgets, validants et documents associés sont regroupées au sein de la campagne.
 
-![](assets/campaigns-create-from-home.png)
+![Page d&#39;accueil des campagnes avec la liste Campagnes marketing, le bouton Créer et le menu Calendrier des campagnes](assets/campaigns-create-from-home.png)
 
-![](assets/do-not-localize/how-to-video.png) [Découvrir les programmes et les campagnes en vidéo](#video)
+![Icône de lecture pour la vidéo sur les programmes et les campagnes](assets/do-not-localize/how-to-video.png) [Découvrez les programmes et les campagnes en vidéo](#video)
 
 ## Travailler avec des programmes et des plans{#work-with-plan-and-program}
 
@@ -52,18 +52,18 @@ Avant de lancer la création de vos campagnes et diffusions, configurez l’arbo
 1. Cliquez avec le bouton droit de la souris sur le dossier dans lequel vous souhaitez créer le plan.
 1. Sélectionnez **Ajouter un dossier > Gestion de campagne > Plan**.
 
-   ![](assets/create-new-plan-folder.png)
+   ![Ajoutez un nouveau menu Dossier dans l&#39;Explorateur, avec Campaign Management > Plan sélectionné](assets/create-new-plan-folder.png)
 
 1. Renommez le plan.
 1. Cliquez avec le bouton droit de la souris sur le plan nouvellement créé et sélectionnez **Propriétés...**.
 1. Dans l&#39;onglet **Général**, modifiez le **nom interne** pour éviter les doublons lors des exports de package.
 
-   ![](assets/plan-properties.png)
+   Boîte de dialogue Propriétés du dossier ![Onglet Général, avec les champs Libellé et Nom interne et le bouton Enregistrer](assets/plan-properties.png)
 
 1. Cliquez sur **Enregistrer**.
 1. Cliquez avec le bouton droit de la souris sur le plan nouvellement créé et sélectionnez **Ajouter un dossier &#39;Programme&#39;**.
 
-   ![](assets/program-folder.png)
+   ![Menu contextuel dans le dossier Plan avec l&#39;option Créer un dossier &#39;Programme&#39; sélectionnée](assets/program-folder.png)
 
 1. Répétez les étapes décrites ci-dessus pour renommer le nouveau dossier de programmes et modifier le nom interne.
 
@@ -76,7 +76,7 @@ Lorsque vous éditez un programme, utilisez les onglets présentés ci-dessous p
 
 * L’onglet **Modifier** vous permet de modifier le programme : son nom, ses dates de début et fin, son budget, ses documents associés, etc.
 
-  ![](assets/new-program-edit-tab.png)
+  ![Onglet Modification du programme avec libellé, nom interne, dates de planification, budget et objectifs associés](assets/new-program-edit-tab.png)
 
 ## Utiliser des campagnes{#work-with-campaigns}
 
@@ -86,7 +86,7 @@ Vous pouvez créer une campagne à partir de la liste des campagnes. Pour affich
 
 Le champ **[!UICONTROL Programme]** vous permet de sélectionner le programme auquel sera rattachée la campagne. Cette information est obligatoire.
 
-![](assets/new-campaign-settings.png)
+![Boîte de dialogue Nouvelle campagne marketing avec les champs Modèle, Libellé et Programme, ainsi que le bouton OK](assets/new-campaign-settings.png)
 
 Vous pouvez également créer les campagnes à partir du calendrier des campagnes ou des programmes. [En savoir plus](#campaign-calendar)
 
@@ -102,7 +102,7 @@ Vous pouvez ensuite modifier l’opération que vous venez de créer et en défi
 
 Toutes ces actions vous permettent d’accéder au tableau de bord de la campagne.
 
-![](assets/campaigns-dashboard-approve.png)
+![Tableau de bord de la campagne avec le menu Validation sur une diffusion proposant Valider le contenu et Valider le ciblage](assets/campaigns-dashboard-approve.png)
 
 Accédez aux sections suivantes pour apprendre à configurer votre campagne :
 
@@ -133,17 +133,17 @@ Pour chaque campagne, les fonctionnalités suivantes sont disponibles :
 
 Pour chaque campagne, les traitements, ressources et diffusions sont regroupés dans le tableau de bord. Cette interface vous permet de gérer et d&#39;orchestrer des actions marketing.
 
-Avec Adobe Campaign, vous pouvez mettre en place des processus collaboratifs pour la création et la validation des différentes étapes de vos campagnes : validation du budget, de la cible, du contenu, etc. Cette orchestration est présentée dans [cette section](marketing-campaign-approval.md).
+Avec Adobe Campaign, vous pouvez mettre en place des processus collaboratifs pour la création et la validation des différentes étapes de vos campagnes : validation du budget, de la cible, du contenu, etc. Cette orchestration est présentée dans la section [Configurer et gérer le processus de validation](marketing-campaign-approval.md).
 
-![](assets/campaigns-dashboard-approval-tab.png)
+![Panneau Diffusion du tableau de bord de la campagne avec le menu Validation, contenu et statut de ciblage](assets/campaigns-dashboard-approval-tab.png)
 
 >[!NOTE]
 >
->Les composants disponibles dans une campagne dépendent de son modèle. Le paramétrage du modèle de campagne est présenté dans [cette section](marketing-campaign-templates.md#campaign-templates).
+>Les composants disponibles dans une campagne dépendent de son modèle. La configuration des modèles de campagne est présentée dans la section [Créer et configurer des modèles de campagne](marketing-campaign-templates.md#campaign-templates).
 
 Une fois la campagne réalisée, utilisez le lien **[!UICONTROL Rapports]** pour accéder aux rapports de l&#39;opération.
 
-![](assets/campaigns-reports-dashboard.png)
+![Onglet Rapports du tableau de bord de la campagne répertoriant les rapports de campagne tels que les dépenses de campagne et la synthèse des diffusions](assets/campaigns-reports-dashboard.png)
 
 ## Calendrier des campagnes {#campaign-calendar}
 
@@ -151,11 +151,11 @@ Le calendrier des campagnes affiche tous les programmes, plans, campagnes et dif
 
 Pour modifier un plan, un programme, une campagne ou une diffusion, accédez à son nom dans le calendrier, puis utilisez le lien **[!UICONTROL Ouvrir]**. Il s&#39;affiche alors dans un nouvel onglet, comme dans l&#39;image ci-dessous :
 
-![](assets/campaign-calendar.png)
+![Calendrier de campagne avec un pop-up pour une campagne affichant le lien d’ouverture, le planning et le statut](assets/campaign-calendar.png)
 
 Vous pouvez filtrer les informations affichées dans le calendrier des campagnes. Pour ce faire, cliquez sur le bouton **[!UICONTROL Filtrer]**, puis sélectionnez les filtres.
 
-![](assets/campaign_planning_filter.png)
+![Lien du filtre du calendrier des campagnes étendant les options de filtre pour les campagnes, les diffusions, les tâches et les programmes](assets/campaign_planning_filter.png)
 
 >[!NOTE]
 >
@@ -167,11 +167,11 @@ Les icônes associées à chaque élément vous permettent de visualiser son sta
 
 Pour filtrer les opérations à afficher, cliquez sur le lien **[!UICONTROL Filtrer]** et sélectionnez le statut des opérations à afficher.
 
-![](assets/calendar-filter-options.png)
+![Filtre de calendrier de campagne avec les statuts de liste déroulante Tâches tels que En édition, Commencé et Terminé](assets/calendar-filter-options.png)
 
 En parcourant le calendrier, vous pouvez également créer un programme ou une campagne.
 
-![](assets/campaign-create-from-calendar.png)
+![Onglet Planning du programme avec le menu Ajouter qui propose Ajouter un programme et Ajouter une campagne](assets/campaign-create-from-calendar.png)
 
 Lorsque vous créez une campagne à partir de l’onglet **[!UICONTROL Planning]** d’un programme, la campagne est automatiquement rattachée au programme concerné. Le champ **[!UICONTROL Programme]** est alors masqué.
 
@@ -183,7 +183,7 @@ Vous pouvez accéder aux écrans de la console cliente Adobe Campaign à partir
 1. Connectez-vous comme vous le faites habituellement à l&#39;aide de l&#39;adresse https://`<your instance>:<port>/view/home`.
 1. Utilisez les menus pour accéder aux vues d&#39;ensemble.
 
-   ![](assets/web-access-campaigns.png)
+   ![Liste des campagnes marketing dans l’interface web avec le statut de la campagne et le menu Actions](assets/web-access-campaigns.png)
 
 Outre la navigation dans les campagnes et leur affichage, vous pouvez effectuer les tâches suivantes :
 
@@ -216,9 +216,9 @@ Ce tableau résume les actions que vous pouvez effectuer sur les campagnes à pa
 
 Les validations de la cible ou du contenu d&#39;une diffusion peuvent être réalisées par le biais d&#39;un accès web.
 
-![](assets/web-access-approval.png)
+![Action dans la boîte de dialogue de diffusion dans l’interface web avec les options Accepter et Rejeter et un champ Commentaire](assets/web-access-approval.png)
 
-Vous pouvez également utiliser le lien contenu dans les messages de notification. Pour plus d’informations, consultez [cette section](marketing-campaign-approval.md#review-and-approve-deliveries).
+Vous pouvez également utiliser le lien contenu dans les messages de notification. Pour plus d&#39;informations, consultez la section [Vérifier et approuver les diffusions](marketing-campaign-approval.md#review-and-approve-deliveries).
 
 
 ## Tutoriel vidéo {#video}

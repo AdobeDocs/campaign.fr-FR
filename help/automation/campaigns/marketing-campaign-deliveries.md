@@ -27,10 +27,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 100%
+source-wordcount: '910'
+ht-degree: 80%
 ---
 # Diffusions de campagnes marketing {#marketing-campaign-deliveries}
 
@@ -44,13 +44,13 @@ Vous pouvez ajouter des diffusions à vos campagnes marketing de deux façons :
 
 * À partir du lien **[!UICONTROL Ajouter une diffusion]** dans le tableau de bord de la campagne.
 
-  ![](assets/campaign_op_add_delivery.png)
+  ![Tableau de bord de la campagne avec le lien Ajouter une diffusion et la nouvelle fenêtre de diffusion pour sélectionner un modèle et un libellé.](assets/campaign_op_add_delivery.png)
 
   Une fois enregistrée, la diffusion est ajoutée dans le tableau de bord de la campagne.
 
 * À partir d&#39;un workflow de campagne, sous l&#39;onglet **[!UICONTROL Ciblage et workflows]** en ajoutant la diffusion.
 
-  ![](assets/campaign-wf-delivery.png)
+  ![Onglet Ciblage et workflows avec la palette Diffusions et un workflow se terminant par une activité de diffusion.](assets/campaign-wf-delivery.png)
 
   Une fois le workflow démarré, la diffusion est ajoutée dans le tableau de bord de la campagne.
 
@@ -60,23 +60,23 @@ Découvrez comment configurer et exécuter le flux de validation de diffusion [d
 
 Une diffusion peut être envoyée une fois toutes les validations accordées. Le processus d&#39;exécution de la diffusion dépend du canal.
 
-* Pour les diffusions par e-mail ou sur les canaux mobiles, reportez-vous à [cette section](#start-an-online-delivery).
+* Pour les diffusions par e-mail ou canal mobile, voir [Démarrer une diffusion par e-mail ou mobile](#start-an-online-delivery)
 
-* Pour les diffusions par publipostage direct, reportez-vous à [cette section](#start-an-offline-delivery).
+* Pour les diffusions par publipostage direct, voir [Démarrer une diffusion par publipostage direct](#start-an-offline-delivery)
 
 ### Démarrer une diffusion e-mail ou mobile {#start-an-online-delivery}
 
 Une fois toutes les demandes de validation approuvées, la diffusion passe au statut **[!UICONTROL Confirmation en attente]** et peut être démarrée. Les réviseurs pouvant démarrer la diffusion reçoivent une notification signifiant qu&#39;une diffusion est prête à être démarrée.
 
-![](assets/confirm-delivery.png)
+![Le résumé de la diffusion avec le bouton Confirmer la diffusion s&#39;affiche une fois toutes les validations accordées et le statut est En attente.](assets/confirm-delivery.png)
 
 Les informations s’affichent également dans le tableau de bord de la campagne. Le lien **[!UICONTROL Confirmer la diffusion]** permet de lancer la diffusion.
 
-![](assets/confirm-delivery-from-dashboard.png)
+![Tableau de bord de la campagne avec le lien Confirmer la diffusion sur une diffusion dont la confirmation est en attente.](assets/confirm-delivery-from-dashboard.png)
 
 La confirmation de la diffusion est réservée aux administrateurs, ainsi qu&#39;à l&#39;opérateur ou au groupe d&#39;opérateurs explicitement mentionnés dans les propriétés de la diffusion ou de la campagne. Si aucun opérateur n&#39;est désigné, les administrateurs et le propriétaire de la campagne peuvent valider.
 
-![](assets/select-delivery-reviewers.png)
+![Onglet Validations des propriétés de la diffusion affichant les validants pour chaque validation et pour le démarrage de la diffusion.](assets/select-delivery-reviewers.png)
 
 Cependant, vous pouvez également permettre au propriétaire de la campagne de confirmer l&#39;envoi, même si des réviseurs spécifiques ont été définis dans les propriétés de la diffusion ou de la campagne. Pour ce faire, en tant qu&#39;administrateur, créez l&#39;option **NmsCampaign_Activate_OwnerConfirmation** et définissez la valeur sur **1**. Les options se trouvent dans le dossier **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** de l’explorateur Campaign.
 
@@ -93,7 +93,7 @@ Suivez les étapes ci-dessous pour valider le contenu et envoyer le fichier au f
 
    Cette étape n&#39;est disponible que si l&#39;option **[!UICONTROL Activer l&#39;envoi et la validation des BAT (publipostage direct)]** est activée sous l&#39;onglet **[!UICONTROL Validations]** des paramètres avancés de la campagne.
 
-   ![](assets/enable-proof-validation.png)
+   ![Fenêtre de validation des BAT avec Activer l&#39;envoi et la validation des BAT (publipostage direct) sélectionné et un groupe de BAT.](assets/enable-proof-validation.png)
 
 1. Cliquez sur le bouton **[!UICONTROL Envoyer un BAT]** pour lancer la création des BAT.
 
@@ -115,17 +115,17 @@ L&#39;extraction du fichier lance deux processus : le calcul du budget et celui
 
 * L&#39;onglet **[!UICONTROL Budget]** vous permet de gérer les budgets de la campagne. Le total des postes de coût est affiché dans le champ **[!UICONTROL Coût calculé]** de l&#39;onglet principal de la campagne et du programme auquel elle appartient. Les montants sont également répercutés dans le budget de la campagne.
 
-  ![](assets/campaign-budget-tab.png)
+  ![Onglet Budget de la campagne affichant le budget associé, le coût calculé et la liste des lignes de coût par diffusion.](assets/campaign-budget-tab.png)
 
   Le coût réel sera calculé au final en fonction des informations fournies par le routeur. Seuls les messages réellement envoyés sont facturés.
 
 * Les stocks sont définis à partir du nœud **[!UICONTROL Administration > Gestion de campagnes > Stocks]** de l&#39;arborescence.
 
-  ![](assets/campaign-stocks.png)
+  ![Nœud Stocks de l&#39;explorateur Campaign avec le tableau de bord des stocks des prospectus de ventes et ses lignes de stock.](assets/campaign-stocks.png)
 
   Structures de coûts dans le nœud **[!UICONTROL Administration > Gestion de campagnes > Fournisseurs]**.
 
-  ![](assets/campaign-service-providers.png)
+  ![Nœud Fournisseurs dans l&#39;explorateur Campaign avec le fournisseur de plans directeurs et sa liste de services.](assets/campaign-service-providers.png)
 
   Les lignes de stock sont visibles dans la section de stock. Pour définir le stock initial, ouvrez une ligne de stock. Le stock est réduit à chaque diffusion. Vous pouvez définir un niveau d’alerte et des notifications.
 

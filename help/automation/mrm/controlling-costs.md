@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '2499'
-ht-degree: 100%
+source-wordcount: '3121'
+ht-degree: 79%
 ---
 # Contrôle des coûts{#controlling-costs}
 
@@ -40,7 +40,7 @@ Les coûts engagés pour les différents traitements d’une campagne sont imput
 
 La gestion et le tracking des budgets sont centralisés dans un nœud dédié de l’arborescence d’Adobe Campaign. Vous pouvez ainsi surveiller, depuis la même vue et pour tous les budgets, les montants alloués, réservés, engagés et dépensés.
 
-![](assets/s_ncs_user_budget_node_02.png)
+![Nœud Budgets de l&#39;arborescence Campaign Management avec le budget eMarketing affichant les montants et les catégories de dépenses.](assets/s_ncs_user_budget_node_02.png)
 
 Les étapes de mise en oeuvre de la gestion des budgets avec MRM sont les suivantes :
 
@@ -62,11 +62,11 @@ Pour établir un budget, procédez comme suit :
 1. Définissez la période de validité en indiquant les dates de début et de fin. Ces informations sont purement indicatives.
 1. Créez les catégories de dépenses auxquelles pourront être rattachés les coûts affectés à ce budget au niveau des opérations, diffusions, tâches, etc. [En savoir plus](#expense-categories).
 
-![](assets/s_ncs_user_budget_create_and_save.png)
+![Nouveau formulaire de budget avec libellé, calendrier, montant alloué et catégories de dépenses Conception, Ressources et Données.](assets/s_ncs_user_budget_create_and_save.png)
 
 >[!NOTE]
 >
->Vous pouvez sélectionner un budget de rattachement. Pour plus d’informations, consultez [cette section](#linking-a-budget-to-another).
+>Vous pouvez sélectionner un budget de rattachement. Pour plus d&#39;informations, voir la section [Lier un budget à un autre](#linking-a-budget-to-another).
 >
 
 ### Calculer les montants {#calculating-amounts}
@@ -79,7 +79,7 @@ Chaque budget est défini par un montant initial qui sera déduit des coûts des
 
 Au niveau des opérations, selon le niveau d&#39;engagement, un coût peut être prévu, engagé ou réservé pour une action à venir.
 
-![](assets/s_user_cost_op_engaged.png)
+![Section Budget de la campagne avec la liste Niveau d&#39;engagement ouverte affichant Planifié, Réservé et Engagé.](assets/s_user_cost_op_engaged.png)
 
 >[!CAUTION]
 >
@@ -89,11 +89,11 @@ Au niveau des opérations, selon le niveau d&#39;engagement, un coût peut être
 
 Par exemple, le coût prévisionnel estimé d’une opération web est de 45 000 euros.
 
-![](assets/s_user_edit_budget_node_impact_0.png)
+![Section du budget de la campagne avec un coût prévisionnel estimé à 45 000, imputé au budget Web au niveau prévu.](assets/s_user_edit_budget_node_impact_0.png)
 
 Au niveau de l&#39;opération, lorsque le statut de réalisation du budget est positionné à **[!UICONTROL Renseigné]**, le coût réel de l&#39;opération (ou, à défaut, le coût calculé) sera reporté dans les montants du budget.
 
-![](assets/s_user_budget_in_op_a.png)
+![Section Budget de la campagne avec le champ Statut du processus défini sur Défini afin que les coûts soient consolidés lors de l&#39;exécution.](assets/s_user_budget_in_op_a.png)
 
 Selon le niveau d&#39;engagement du budget de l&#39;opération, le montant sera reporté dans le champ **[!UICONTROL Prévu]**, **[!UICONTROL Réservé]** ou **[!UICONTROL Engagé]**.
 
@@ -102,15 +102,15 @@ Le niveau d&#39;engagement peut être modifié:
 * au niveau de la **campagne**, dans la fenêtre **[!UICONTROL Budget]** disponible dans l’onglet **[!UICONTROL Édition]**. Y sont principalement configurés les budgets, coûts et dépenses.
 * au niveau des **tâches**, dans la fenêtre **[!UICONTROL Dépenses et revenus]**.
 
-![](assets/s_user_op_engagement_level_costs.png)
+![Section Budget de la campagne avec la liste Niveau d&#39;engagement ouverte, au-dessus de l&#39;onglet Dépenses répertoriant une ligne de dépense.](assets/s_user_op_engagement_level_costs.png)
 
 Lorsque le budget est **[!UICONTROL Réservé]**, la mise à jour est faite automatiquement au niveau du budget imputé.
 
-![](assets/s_user_edit_budget_node_impact_2.png)
+![Formulaire de budget dans lequel le montant réservé est de 45 000 après que le niveau d&#39;engagement de la campagne a été défini sur Réservé.](assets/s_user_edit_budget_node_impact_2.png)
 
 Le fonctionnement est le même au niveau des tâches.
 
-![](assets/s_user_edit_budget_node_impact_task.png)
+![Fenêtre Dépenses et revenus de la tâche avec la liste Niveau d&#39;engagement ouverte affichant Planifié, Réservé et Engagé.](assets/s_user_edit_budget_node_impact_task.png)
 
 Lorsqu&#39;une dépense fait l&#39;objet d&#39;une facture et que la facture est soldée, son montant est alors reporté dans le champ **[!UICONTROL Facturé]**.
 
@@ -120,7 +120,7 @@ Les montants peuvent être répartis en plusieurs catégories de dépenses, afin
 
 Pour ajouter une catégorie, cliquez sur le bouton **[!UICONTROL Ajouter]** dans la section inférieure de la fenêtre.
 
-![](assets/s_user_budget_category.png)
+![Formulaire de budget avec le bouton Ajouter de la liste Catégories de dépenses pour les catégories Conception, Impression et Web.](assets/s_user_budget_category.png)
 
 Vous pouvez sélectionner une catégorie parmi celles qui existent déjà ou définir une nouvelle catégorie en la saisissant directement dans le champ. Lorsque vous validez votre saisie, un message de confirmation vous permet d’ajouter cette catégorie à la liste des catégories existantes et de l’associer à une nature si nécessaire. Ces informations seront utilisées dans les rapports sur les budgets.
 
@@ -128,11 +128,11 @@ Vous pouvez sélectionner une catégorie parmi celles qui existent déjà ou dé
 
 Vous pouvez rattacher un budget à un budget principal. Pour cela, sélectionnez le budget principal dans le champ **[!UICONTROL budget associé]** des budgets secondaires.
 
-![](assets/budget_link.png)
+![Formulaire de budget Secondaire avec le champ Budget associé défini sur le budget eMarketing principal.](assets/budget_link.png)
 
 Un onglet supplémentaire sera ajouté au budget principal afin d&#39;afficher la liste des budgets rattachés.
 
-![](assets/budget_link_new_tab.png)
+![Budget principal avec l&#39;onglet Budgets ajoutés répertoriant ses budgets liés.](assets/budget_link_new_tab.png)
 
 Ces informations sont remontées au niveau des rapports sur les budgets.
 
@@ -140,7 +140,7 @@ Ces informations sont remontées au niveau des rapports sur les budgets.
 
 Les lignes de dépense sont automatiquement ajoutées au budget. Elles sont créées lors de l’analyse des diffusions et lorsqu’une tâche est terminée.
 
-![](assets/s_ncs_user_budget_line_edit.png)
+![Onglet Budgéter les dépenses avec le bouton Détail ouvrant une ligne de dépense avec sa campagne, sa diffusion et sa répartition par poste de coût.](assets/s_ncs_user_budget_line_edit.png)
 
 Pour chaque campagne, diffusion ou tâche, les coûts engendrés sont regroupés dans les lignes de dépenses du budget auquel ils sont imputés. Ces lignes de dépenses sont créées en fonction des postes de coûts du prestataire concerné et calculées via les structures de coûts associées.
 
@@ -156,15 +156,15 @@ Dans l’exemple ci-dessus, la ligne de dépense modifiée contient les coûts c
 
 Le calcul des coûts pour cette diffusion se base sur les postes de coûts sélectionnés pour le prestataire concerné :
 
-![](assets/s_user_edit_del_supplier_costs.png)
+![Ligne de dépense liée à une diffusion dont l&#39;onglet Publipostage direct répertorie les postes de coûts du prestataire.](assets/s_user_edit_del_supplier_costs.png)
 
 En fonction des postes de coûts sélectionnés, les structures de coûts correspondantes sont appliquées afin de calculer les lignes de coûts. Dans cet exemple, pour le prestataire concerné, les structures de coûts sont les suivantes :
 
-![](assets/s_user_edit_node_supplier_costs.png)
+![Onglet Structure de coût du service avec les détails de la structure de coût Graphiques - 01 : canal Courrier, par message, linéaire.](assets/s_user_edit_node_supplier_costs.png)
 
 >[!NOTE]
 >
->Les postes et structures de coûts sont présentés sur [cette page](../campaigns/providers-stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories).
+>Les postes et structures de coûts sont présentés dans [Créer un prestataire et ses postes de coûts](../campaigns/providers-stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories)
 
 ## Engagement, calcul et imputation des coûts {#cost-commitment--calculation-and-charging}
 
@@ -180,7 +180,7 @@ Les coûts sont répartis en 3 catégories :
 
    Ce montant est saisi manuellement et peut être réparti en plusieurs catégories de dépenses. Pour répartir un coût, cliquez sur le lien **[!UICONTROL Répartition...]**, puis sur le bouton **[!UICONTROL Ajouter]** pour définir un nouveau montant.
 
-   ![](assets/s_user_edit_budget_tab_ventil.png)
+   ![Modifiez la fenêtre de répartition des coûts à partir du lien Répartition des coûts prévisionnels estimés, en divisant le coût par catégorie.](assets/s_user_edit_budget_tab_ventil.png)
 
    Vous pouvez associer chaque coût à une catégorie, afin de visualiser par la suite la répartition des coûts par catégories de dépenses dans le budget de rattachement et dans les rapports sur les budgets.
 
@@ -223,29 +223,29 @@ Nous allons créer une opération avec :
 
 1. Définissez un budget de 10 000 euros dans le champ **[!UICONTROL Alloué]** de la section **[!UICONTROL Montants]**. Ajoutez deux postes de dépenses dans la section inférieure de la fenêtre :
 
-![](assets/s_user_cost_mgmt_sample_1.png)
+![Formulaire de budget avec 10 000 affectations et deux catégories de dépenses, 1ère catégorie et 2e catégorie.](assets/s_user_cost_mgmt_sample_1.png)
 
 #### Étape 2 - Configurer le prestataire et définir les structures de coûts {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-1. Créez un prestataire et un modèle de prestation avec sa structure de coûts associée à partir du nœud **[!UICONTROL Administration > Campagnes.]** Pour plus d’informations, consultez [cette section](../campaigns/providers-stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories).
+1. Créez un prestataire et un modèle de prestation avec sa structure de coûts associée à partir du nœud **[!UICONTROL Administration > Campagnes.]** Pour plus d&#39;informations, reportez-vous à la section [Créer un prestataire et ses postes de coûts](../campaigns/providers-stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories).
 
    Pour les diffusions par publipostage direct, créez des postes de coût **[!UICONTROL Enveloppes]** (types 114x229 et 162x229), **[!UICONTROL Affranchissement et routage]** et **[!UICONTROL Impression]** (types A3 et A4). Créez ensuite les structures de coûts suivantes :
 
-   ![](assets/s_user_cost_mgmt_sample_2.png)
+   ![Structures de coûts Enveloppes - 114x229, Affranchissement - Standard et Impression - A4 : publipostage direct, par message, montants linéaires.](assets/s_user_cost_mgmt_sample_2.png)
 
 1. Ajoutez un coût fixe (dans les postes de coûts), dont le calcul est fixe et le montant est vide (dans la structure de coût correspondante), et qui sera renseigné unitairement pour chaque diffusion.
 
-   ![](assets/s_user_cost_mgmt_sample_5.png)
+   ![Structure de coût Coût fixe - Conception avec canal Courrier, calcul fixe et montant vide.](assets/s_user_cost_mgmt_sample_5.png)
 
    Pour les tâches, créez les deux postes de coût suivants :
 
    * **[!UICONTROL Réservation Salle]** (types Petite Salle et Grande Salle), avec une structure de coût **fixe** d&#39;un montant de 300 et 500 euros :
 
-   ![](assets/s_user_cost_mgmt_sample_6.png)
+   ![Structure de coûts Réservation de salle - Grande pour le canal Tâche avec un calcul fixe et un montant de 500.](assets/s_user_cost_mgmt_sample_6.png)
 
    * **[!UICONTROL Création]** (type **Modèle de contenu**), avec une structure de coûts **journalière** d&#39;un montant de 300 euros :
 
-   ![](assets/s_user_cost_mgmt_sample_7.png)
+   ![Conception de la structure de coûts - Modèle de contenu pour le canal Tâche avec un calcul Quotidien et un montant de 300.](assets/s_user_cost_mgmt_sample_7.png)
 
 #### Étape 3 - Imputer le budget dans l&#39;opération {#step-3---charging-the-budget-in-the-campaign}
 
@@ -255,11 +255,11 @@ Nous allons créer une opération avec :
    >
    >Par défaut, le budget qui a été sélectionné au niveau du programme est appliqué à toutes les opérations du programme.
 
-   ![](assets/s_user_cost_mgmt_sample_4.png)
+   ![Section du budget de la campagne avec la liste des frais ouverte affichant le programme des opérations spéciales, du marketing électronique et du soutien.](assets/s_user_cost_mgmt_sample_4.png)
 
 1. Indiquez le coût prévisionnel estimé, avec répartition :
 
-   ![](assets/s_user_cost_mgmt_sample_9.png)
+   ![Coût prévisionnel estimé de 3 000 ventilé par 1ère catégorie et 2e catégorie dans la fenêtre Modifier le coût.](assets/s_user_cost_mgmt_sample_9.png)
 
 1. Cliquez sur **[!UICONTROL OK]** puis sur **[!UICONTROL Enregistrer]** pour confirmer ces informations. Le coût calculé de la campagne est alors mis à jour avec le coût prévisionnel estimé.
 
@@ -271,7 +271,7 @@ Nous allons créer une opération avec :
 
 1. Remplacez le coût des enveloppes et ajoutez un coût fixe. Sélectionnez également les postes concernés par ces coûts.
 
-   ![](assets/s_user_cost_mgmt_sample_3.png)
+   ![Cataloguer la diffusion dans le workflow avec les postes de coûts du prestataire, y compris le coût fixe de 560.](assets/s_user_cost_mgmt_sample_3.png)
 
    >[!NOTE]
    >
@@ -279,19 +279,19 @@ Nous allons créer une opération avec :
 
 1. Démarrez le workflow que vous venez de créer pour lancer l&#39;analyse et calculer les coûts.
 
-   ![](assets/s_user_cost_mgmt_sample_10.png)
+   ![Barre d&#39;outils du workflow de ciblage avec le bouton Démarrer sélectionné pour exécuter l&#39;analyse et calculer les coûts.](assets/s_user_cost_mgmt_sample_10.png)
 
 1. Si l’approbation du budget est activée pour cette campagne, approuvez le budget depuis le tableau de bord. Vous pouvez vérifier la validation des postes de coûts.
 
-   ![](assets/s_user_cost_mgmt_sample_10b.png)
+   ![Menu Validation de la diffusion avec Approuver le budget ouvrant la boîte de dialogue Action sur la diffusion avec fractionnement des coûts et validation du budget.](assets/s_user_cost_mgmt_sample_10b.png)
 
 La ligne de dépense relative à la diffusion est ajoutée dans l’onglet **[!UICONTROL Édition > Budget]** de la campagne. Modifiez-la pour visualiser les détails du calcul.
 
-![](assets/s_user_cost_mgmt_sample_11.png)
+![Onglet Dépenses du budget de la campagne avec le bouton Détail ouvrant la ligne de dépense de la diffusion et sa répartition des coûts.](assets/s_user_cost_mgmt_sample_11.png)
 
 Au niveau de la diffusion, le coût calculé est mis à jour avec ces informations :
 
-![](assets/s_user_cost_mgmt_sample_12.png)
+![Fenêtre Dépenses de diffusion et revenus avec un coût calculé de 22 844 à partir des structures de coûts.](assets/s_user_cost_mgmt_sample_12.png)
 
 Lorsque vous éditez le coût calculé, vous pouvez vérifier la répartition des coûts ainsi que l’état et la date du calcul des coûts.
 
@@ -305,11 +305,11 @@ Pour ce faire, dans le tableau de bord de la campagne, cliquez sur le bouton **[
 
 1. Dans l&#39;onglet **[!UICONTROL Propriétés]**, sélectionnez la prestation et le poste de coût correspondant :
 
-   ![](assets/s_user_cost_mgmt_sample_14.png)
+   ![Fenêtre Propriétés de la tâche avec la liste de type de catégorie de coût de réservation de chambre ouverte affichant Grand, Medium et Petit.](assets/s_user_cost_mgmt_sample_14.png)
 
 1. Cliquez ensuite sur l&#39;icône **[!UICONTROL Dépenses et revenus]** de la tâche et indiquez le coût prévisionnel estimé.
 
-   ![](assets/s_user_cost_mgmt_sample_15.png)
+   ![Fenêtre Dépenses et revenus de la tâche avec un coût prévisionnel estimé à 5 500 imputés aux opérations spéciales.](assets/s_user_cost_mgmt_sample_15.png)
 
    Une fois la tâche enregistrée, le coût calculé est renseigné avec la valeur saisie pour le coût prévisionnel estimé.
 
@@ -317,23 +317,23 @@ Pour ce faire, dans le tableau de bord de la campagne, cliquez sur le bouton **[
 
 1. Selon le même mode opératoire, créez ensuite une seconde tâche, planifiée sur 5 jours et associée à la structure de coûts créée précédemment.
 
-   ![](assets/s_user_cost_mgmt_sample_16.png)
+   ![Deuxième création de contenu de tâche, dont la fenêtre Propriétés de la tâche affiche une liste de type de poste de coût ouverte.](assets/s_user_cost_mgmt_sample_16.png)
 
    Une fois la tâche terminée, le coût calculé est renseigné avec la valeur issue de la structure de coût associée, soit 1500 euros dans notre exemple (5 jours x 300 euros) :
 
-   ![](assets/s_user_cost_mgmt_sample_17.png)
+   ![Tâche de création de contenu terminée avec un coût calculé de 1 500 dans la fenêtre Dépenses et revenus.](assets/s_user_cost_mgmt_sample_17.png)
 
 #### Etape 6 - Mettre à jour le statut du budget de l&#39;opération {#step-6---update-the-campaign-budget-status}
 
 Lorsque la campagne est configurée, son statut peut être mis à jour en le définissant sur **[!UICONTROL Renseigné]**. Le coût calculé de la campagne indiquera alors la somme des coûts calculés de la diffusion et des tâches de la campagne :
 
-![](assets/s_user_cost_mgmt_sample_18.png)
+![Section Budget de la campagne avec la liste Statut du processus ouverte : en cours d&#39;édition, défini et exécuté, au-dessus des lignes de coût.](assets/s_user_cost_mgmt_sample_18.png)
 
 #### Validation du budget {#budget-approval}
 
 Lorsque l’approbation est activée, un lien spécifique vous permet d’approuver le budget à partir du tableau de bord de la campagne. Ce lien s’affiche une fois le workflow de ciblage lancé et lorsqu’une diffusion par publipostage direct doit être approuvée.
 
-![](assets/s_user_cost_mgmt_sample_19.png)
+![L&#39;option Valider le budget dans le menu Validation de la diffusion ouvre Action sur la diffusion avec Accepter, Rejeter et Validation du budget.](assets/s_user_cost_mgmt_sample_19.png)
 
 Vous pouvez alors cliquer sur le lien pour accorder ou refuser la validation, ou utiliser le lien contenu dans l’e-mail de notification, si la notification a été activée pour cette opération.
 
@@ -349,7 +349,7 @@ Pour enregistrer une nouvelle commande auprès d&#39;un prestataire, cliquez sur
 
 Indiquez le numéro de la commande, le prestataire concerné et le montant total de la commande.
 
-![](assets/s_user_cost_create_order.png)
+![Nœud Commandes sous MRM avec la liste des commandes et un formulaire de commande indiquant le numéro, le fournisseur de services et le montant.](assets/s_user_cost_create_order.png)
 
 ### Émettre et suivre des factures {#issuing-and-tracking-invoices}
 
@@ -357,15 +357,15 @@ Pour chaque prestataire, vous pouvez enregistrer des factures et définir leur s
 
 Les factures sont créées et stockées dans le noeud **[!UICONTROL MRM > Factures]** de l&#39;arborescence d&#39;Adobe Campaign.
 
-![](assets/s_user_cost_create_invoice.png)
+![Nœud Factures sous MRM avec un formulaire de facture indiquant le numéro, le prestataire, le budget, le montant et le statut.](assets/s_user_cost_create_invoice.png)
 
 Une facture est composée de lignes dont le total permet de calculer automatiquement le montant. Ces lignes sont créées manuellement à partir de l’onglet **[!UICONTROL Lignes de facture]**. Elles peuvent être associées à une commande, afin de charger les informations vers les commandes.
 
-![](assets/s_user_cost_invoice_add_line.png)
+![Onglet Lignes de facture avec le bouton Ajouter ouvrant un formulaire de ligne de facture avec l&#39;option Commande, montant et Règlement.](assets/s_user_cost_invoice_add_line.png)
 
 Les factures de chaque prestataire sont affichées dans l&#39;onglet **[!UICONTROL Factures]** de son profil :
 
-![](assets/s_ncs_user_invoice_from_supplier.png)
+![Nœud Fournisseurs avec l&#39;onglet Factures répertoriant les factures du fournisseur sélectionné.](assets/s_ncs_user_invoice_from_supplier.png)
 
 L&#39;onglet **[!UICONTROL Détails]** permet d&#39;afficher le contenu de la facture.
 

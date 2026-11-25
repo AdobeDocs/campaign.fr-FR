@@ -24,9 +24,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: 011875268793bca1a000d745818dbd6c69461227
 workflow-type: tm+mt
-source-wordcount: '11620'
+source-wordcount: '11624'
 ht-degree: 16%
 ---
 # Forum aux questions {#faq}
@@ -534,7 +534,7 @@ Découvrez comment concevoir des messages marketing efficaces dans Campaign v8, 
 
 +++ Quelles sont les bonnes pratiques pour concevoir des emails dans Campaign ?
 
-Directives clés : assurez-vous d’une conception réactive pour les appareils mobiles, utilisez du code compatible HTML 4.0/XHTML avec le CSS intégré, optimisez les images (sous 100KB) avec du texte de remplacement, utilisez des champs de fusion de personnalisation, testez les clients de messagerie avant l’envoi et incluez une version en texte brut. Visez la taille totale des e-mails sous 500KB pour une délivrabilité optimale.
+Directives clés : assurez-vous d’une conception réactive pour les appareils mobiles et utilisez un code compatible HTML 4.0/XHTML avec CSS en ligne. Optimisez les images (sous 100KB) avec du texte de remplacement, utilisez des champs de fusion de personnalisation, testez-les sur les clients de messagerie avant l’envoi et incluez une version en texte brut. Visez la taille totale des e-mails sous 500KB pour une délivrabilité optimale.
 
 **Rubriques connexes :**
 
@@ -1212,7 +1212,7 @@ Le Panneau de Contrôle Campaign est une interface administrative web qui permet
 Adobe Campaign v8 offre la possibilité de comparer tous les paramètres actuels des comptes administratifs de niveau supérieur et des comptes privilégiés aux valeurs par défaut sécurisées recommandées.
 
 * **Paramètres actuels (visibilité complète) :** Tous les paramètres des comptes administratifs et privilégiés peuvent être examinés dans **[!UICONTROL Administration]** > **[!UICONTROL Gestion des accès]** (console cliente ou interface utilisateur web de Campaign) : **[!UICONTROL Opérateurs]**, **[!UICONTROL Groupes d’opérateurs]**, **[!UICONTROL Droits nommés]** (par exemple, ADMINISTRATION, ADMINISTRATION DES APPROBATIONS), et autorisations au niveau des dossiers. Les administrateurs de produit peuvent également consulter les paramètres au niveau de l’instance dans le [Panneau de Contrôle Campaign](https://experienceleague.adobe.com/fr/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"} (place sur la liste autorisée IP, autorisations d’URL, détails de l’instance, etc.).
-* **Valeurs par défaut sécurisées recommandées :** Les [instructions de sécurité](../config/security.md) définissent la ligne de base sécurisée recommandée pour les comptes administratifs et privilégiés, notamment : créer suffisamment de groupes de sécurité, attribuer des droits d’accès appropriés par opérateur et limiter l’utilisation de l’opérateur administrateur et du groupe administrateur. Le cas échéant, consultez également le [module complémentaire de sécurité renforcée](../config/enhanced-security.md) pour le renforcement du réseau et du chiffrement.
+* **Valeurs par défaut sécurisées recommandées :** Les [règles de sécurité](../config/security.md) définissent la ligne de base sécurisée recommandée pour les comptes administratifs et privilégiés. Il est recommandé de créer des groupes de sécurité suffisants, d’attribuer les droits d’accès appropriés par opérateur et de limiter l’utilisation de l’opérateur administrateur et du groupe administrateur. Le cas échéant, consultez également le [module complémentaire de sécurité renforcée](../config/enhanced-security.md) pour le renforcement du réseau et du chiffrement.
 * **Comparaison :** les administrateurs comparent leur configuration actuelle à ces recommandations documentées pour identifier les lacunes et s’aligner sur les valeurs par défaut sécurisées.
 
 **Rubriques connexes :**

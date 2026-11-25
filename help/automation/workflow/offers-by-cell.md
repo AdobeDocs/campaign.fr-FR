@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 100%
+source-wordcount: '182'
+ht-degree: 85%
 ---
 # Offres par cellule{#offers-by-cell}
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 
 L&#39;activité **[!UICONTROL Offres par cellules]** vous permet de répartir la population entrante (par exemple issue d&#39;une requête) en plusieurs segments, et de définir une offre à proposer pour chacun de ces segments.
 
-Cette activité ne peut être utilisée qu’avec **Interaction**. En savoir plus sur la gestion des offres dans [cette section](../../v8/interaction/interaction.md).
+Cette activité ne peut être utilisée qu’avec **Interaction**. En savoir plus sur la gestion des offres dans [Interaction de Campaign - Gestion des offres](../../v8/interaction/interaction.md).
 
 Pour cela :
 
@@ -47,6 +47,6 @@ Pour cela :
    * Définissez la population du sous-ensemble grâce aux règles de filtrage et de limitation disponibles.
    * Sélectionnez ensuite l’offre que vous souhaitez présenter au sous-ensemble. Les offres disponibles sont celles éligibles sur l’emplacement sélectionné à l’étape précédente.
 
-     ![](assets/int_offer_per_cell1.png)
+     ![Fenêtre de sous-ensembles d&#39;offres par cellule : options de filtrage et de limitation des enregistrements, emplacement et liste des offres.](assets/int_offer_per_cell1.png)
 
 1. Paramétrez ensuite une activité de diffusion correspondant au canal de votre choix. Pour plus d&#39;informations, consultez la section [Diffusions cross-canal](cross-channel-deliveries.md).

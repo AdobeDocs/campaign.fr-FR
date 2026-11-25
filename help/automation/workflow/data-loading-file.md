@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 100%
+source-wordcount: '1397'
+ht-degree: 87%
 ---
 # Chargement (fichier){#data-loading-file}
 
@@ -47,11 +47,11 @@ La section supérieure de la fenêtre de configuration de cette activité vous p
 >
 >Seuls les fichiers à structure « plate » sont pris en charge (formats .csv, .txt, etc.). Il n’est pas recommandé d’utiliser le format XML. Avec la console cliente, vous pouvez charger des fichiers jusqu’à une taille maximale de 150 Mo. Dans l’interface d’utilisation web, l’activité Chargement de fichier est limitée à 50 Mo. [En savoir plus](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html?lang=fr){target="_blank"}
 
-![](assets/s_advuser_wf_etl_file.png)
+![Activité Chargement (fichier) avec un exemple de fichier, aperçu des colonnes, options de nom de fichier et gestion des rejets.](assets/s_advuser_wf_etl_file.png)
 
 Vous pouvez définir un pré-traitement à exécuter lors de l’import du fichier, par exemple pour ne pas avoir à décompresser le fichier sur le serveur (et donc réserver de la place pour le fichier décompressé), mais faire en sorte que la décompression soit incluse dans le traitement du fichier. Sélectionnez l’option **[!UICONTROL Inclure un pré-traitement du fichier]** et choisissez l’une des trois options suivantes : **[!UICONTROL Aucun]**, **[!UICONTROL Décompression]** (zcat) ou **[!UICONTROL Déchiffrer]** (gpg).
 
-![](assets/preprocessing-dataloading.png)
+![Chargement (fichier) avec prétraitement du fichier sélectionné et liste des commandes : aucune, décompression, déchiffrement.](assets/preprocessing-dataloading.png)
 
 >[!IMPORTANT]
 >
@@ -63,7 +63,7 @@ Lorsque vous chargez un fichier, le format des colonnes est automatiquement dét
 
 Pour cela, sélectionnez **[!UICONTROL Cliquer ici pour changer le format du fichier…]** dans la fenêtre principale de l’activité **[!UICONTROL Chargement de données (fichier)]**. La fenêtre de détail du format s’ouvre alors.
 
-![](assets/file_loading_columns_format.png)
+![Fenêtre de format de fichier avec paramètres généraux de fichier et tableau Colonnes avec type de données, NULL autorisés et longueur.](assets/file_loading_columns_format.png)
 
 Vous pouvez alors modifier le formatage général du fichier ainsi que le formatage de chaque colonne.
 
@@ -108,7 +108,7 @@ Le formatage des colonnes permet de définir le traitement des valeurs de chaque
 
 L’exemple suivant vous permet de collecter un fichier sur le serveur chaque jour, de charger son contenu et de mettre à jour les données de la base de données en fonction des informations qu’il contient. Le fichier à collecter contient des informations sur les clientes et clients qui ont pu effectuer des achats (pour plus ou moins de 3 000 euros), demander un remboursement sur un achat ou visiter la boutique sans rien acheter. En fonction de ces informations, différents traitements seront appliqués à leur profil dans la base de données.
 
-![](assets/s_advuser_load_file_sample_0.png)
+![Workflow avec collecteur de fichiers, chargement (fichier) et partage des données, menant à quatre activités de mise à jour de données par type d&#39;achat.](assets/s_advuser_load_file_sample_0.png)
 
 1. Le collecteur de fichier est utilisé pour récupérer les fichiers stockés dans un répertoire, selon la fréquence indiquée.
 
@@ -116,13 +116,13 @@ L’exemple suivant vous permet de collecter un fichier sur le serveur chaque jo
 
    L’utilisation du **[!UICONTROL Collecteur de fichiers]** est détaillée dans la section [Collecteur de fichiers](file-collector.md).
 
-   ![](assets/s_advuser_load_file_sample_1.png)
+   ![Onglet Répertoire du collecteur de fichiers avec un répertoire de serveur et le filtre pour les fichiers texte des clients.](assets/s_advuser_load_file_sample_1.png)
 
    L&#39;onglet **[!UICONTROL Planning]** permet de planifier l&#39;exécution du collecteur, c&#39;est-à-dire d&#39;indiquer à quelle fréquence la présence de ces fichiers sera vérifiée.
 
    Ici, nous choisirons de déclencher le collecteur tous les jours ouvrés à 21 heures.
 
-   ![](assets/s_advuser_load_file_sample_2.png)
+   ![Onglet Planning du collecteur de fichiers avec l&#39;option Exécution du plan activée et le déclencheur quotidien de 21h00, ainsi que le bouton Modifier.](assets/s_advuser_load_file_sample_2.png)
 
    Pour cela, cliquez sur le bouton **[!UICONTROL Changer...]** situé dans la section inférieure droite de l&#39;éditeur et paramétrez le planning.
 
@@ -130,7 +130,7 @@ L’exemple suivant vous permet de collecter un fichier sur le serveur chaque jo
 
 1. Configurez ensuite l’activité de chargement de données (fichier) afin d’indiquer comment le ou les fichiers collectés doivent être lus. Pour cela, sélectionnez un fichier d’exemple dont la structure est la même que les fichiers à charger.
 
-   ![](assets/s_advuser_load_file_sample_3.png)
+   ![Activité Chargement (fichier) avec un exemple de fichier et un aperçu de l&#39;événement, du nom, du prénom et d&#39;autres colonnes.](assets/s_advuser_load_file_sample_3.png)
 
    Ici, le fichier contient cinq colonnes :
 
@@ -143,15 +143,15 @@ L’exemple suivant vous permet de collecter un fichier sur le serveur chaque jo
 
    Le fonctionnement de l&#39;activité de partage est présenté dans cette section.
 
-   ![](assets/s_advuser_load_file_sample_4.png)
+   ![Fractionner le sous-ensemble pour Aucun achat, avec le lien Modifier ouvrant une requête dans laquelle le champ Événement est sélectionné comme expression.](assets/s_advuser_load_file_sample_4.png)
 
    Pour chaque sous-ensemble, indiquez une des valeurs de la colonne **Evénement**.
 
-   ![](assets/s_advuser_load_file_sample_5.png)
+   ![Condition de filtre de requête avec l&#39;événement d&#39;expression (événement) égal à 0 pour le sous-ensemble.](assets/s_advuser_load_file_sample_5.png)
 
    Ainsi, l&#39;activité de **[!UICONTROL Partage]** contiendra les informations suivantes :
 
-   ![](assets/s_advuser_load_file_sample_6.png)
+   ![Partage de l&#39;activité avec des onglets de sous-ensemble pour moins de 3 000 achats, aucun achat, retour et plus de 3 000 achats ; aucun achat affiché.](assets/s_advuser_load_file_sample_6.png)
 
 1. Indiquez ensuite les traitements à effectuer pour chaque type de population. Dans notre exemple, nous allons **[!UICONTROL Mettre à jour les données]** dans la base de données. Pour ce faire, placez une activité **[!UICONTROL Mettre à jour les données]** à la fin de chaque transition sortante à partir de l’activité de partage.
 

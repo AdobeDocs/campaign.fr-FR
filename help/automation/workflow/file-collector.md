@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 100%
+source-wordcount: '600'
+ht-degree: 94%
 ---
 # Collecteur de fichiers{#file-collector}
 
@@ -43,7 +43,7 @@ Les fichiers doivent se trouver sur le serveur sur lequel s’exécute le module
 
 Le premier onglet de l’activité du **[!UICONTROL Collecteur de fichiers]** vous permet de sélectionner le répertoire source et, si nécessaire, de filtrer les fichiers collectés. Les autres onglets sont présentés dans la section [Réception d’emails](inbound-emails.md) (onglets **[!UICONTROL Planning]** et **[!UICONTROL Expiration]**).
 
-![](assets/file_collect_edit.png)
+![Onglet Répertoire du collecteur de fichiers avec les options Répertoire, Filtrer et Arrêter dès qu&#39;un fichier a été traité](assets/file_collect_edit.png)
 
 1. **Récupération des fichiers**
 
@@ -89,7 +89,7 @@ Le premier onglet de l’activité du **[!UICONTROL Collecteur de fichiers]** vo
 
 L&#39;ordre de traitement des fichiers ne peut être déterminé. Pour traiter séquentiellement un ensemble de fichier, il faut utiliser l&#39;option **[!UICONTROL Terminer dès qu&#39;un fichier est traité]** et faire une boucle. Dans ce cas, les fichiers seront traités par ordre alphabétique. L&#39;option **[!UICONTROL Traiter l&#39;absence de fichier]** permet de terminer l&#39;itération.
 
-![](assets/file_collect_loop.png)
+![Boucle du workflow de l&#39;import vers le collecteur de fichiers, avec une activité Alerte sur la transition Aucun fichier](assets/file_collect_loop.png)
 
 ## Paramètres de sortie {#output-parameters}
 

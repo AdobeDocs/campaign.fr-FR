@@ -30,10 +30,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 100%
+source-wordcount: '1252'
+ht-degree: 83%
 ---
 # Diffusion{#delivery}
 
@@ -41,7 +41,7 @@ Une activité de type **Diffusion** vous permet de créer une action de diffusio
 
 Pour la paramétrer, éditez l&#39;activité et renseignez les options de la diffusion.
 
-![](assets/edit_diffusion.png)
+![Fenêtre d&#39;activité de diffusion avec diffusion, destinataires, contenu et action pour exécuter les sections et la transition sortante](assets/edit_diffusion.png)
 
 1. **Diffusion**
 
@@ -53,27 +53,27 @@ Pour la paramétrer, éditez l&#39;activité et renseignez les options de la dif
 
      Dans l’exemple suivant, la diffusion est créée pour la première fois. La population et le contenu sont définis ensuite. Enfin, les informations de ces trois éléments sont reprises dans une nouvelle activité de diffusion via la transition entrante, afin qu’elle puisse être envoyée.
 
-     ![](assets/specified_transition_option_exemple.png)
+     ![Workflow dans lequel une activité Créer la diffusion alimente une seconde activité de diffusion définie sur Spécifié dans la transition](assets/specified_transition_option_exemple.png)
 
    * Sélectionner directement la diffusion concernée. Pour cela, sélectionnez l&#39;option **[!UICONTROL Explicite]** et choisissez la diffusion dans la liste déroulante du champ **[!UICONTROL Diffusion]**.
 
      La liste propose les diffusions non terminées présentes dans le dossier de **Diffusions** par défaut. Pour accéder aux autres diffusions, cliquez sur l&#39;icône **[!UICONTROL Choisir le lien]**.
 
-     ![](assets/diffusion_edit_1.png)
+     ![Section de diffusion avec Explicite sélectionnée et icône Sélectionner le lien en regard du champ Diffusion](assets/diffusion_edit_1.png)
 
      Sélectionnez le dossier visé dans la liste déroulante du champ **[!UICONTROL Dossier]** ou cliquez sur **[!UICONTROL Afficher les fils]** pour afficher toutes les diffusions contenues dans les sous-dossiers :
 
-     ![](assets/diffusion_edit_2.png)
+     ![Fenêtre de sélection d&#39;une diffusion avec le champ Dossier défini sur Diffusions et l&#39;icône Afficher les fils](assets/diffusion_edit_2.png)
 
      Une fois l’action de diffusion sélectionnée, vous pouvez en visualiser le contenu en cliquant sur l’icône **[!UICONTROL Éditer le lien]**.
 
    * Créez un script pour calculer la diffusion. Pour cela, sélectionnez l’option **[!UICONTROL Calculée par un script]** et saisissez le script. Vous pouvez ouvrir une fenêtre de saisie en cliquant sur **[!UICONTROL Éditer...]**. L’exemple suivant permet de récupérer l’identifiant de la diffusion :
 
-     ![](assets/diffusion_edit_3.png)
+     ![Calculé par une option de script avec la fenêtre Modifier le script affichant l&#39;expression vars.deliveryId](assets/diffusion_edit_3.png)
 
    * Créez une nouvelle diffusion. Pour cela, sélectionnez l&#39;option **[!UICONTROL Nouvelle, créée depuis un modèle]** et sélectionnez le modèle de diffusion à partir duquel sera créée la diffusion.
 
-     ![](assets/diffusion_edit_4.png)
+     ![Nouveau, créé à partir d&#39;une option de modèle avec un modèle de diffusion sélectionné et l&#39;icône Modifier le lien](assets/diffusion_edit_4.png)
 
      Cliquez sur l&#39;icône **[!UICONTROL Choisir le lien]** pour parcourir les dossiers et sur l&#39;icône **[!UICONTROL Editer le lien]** si vous souhaitez visualiser le contenu du modèle sélectionné.
 
@@ -81,19 +81,19 @@ Pour la paramétrer, éditez l&#39;activité et renseignez les options de la dif
 
    Les personnes destinataires peuvent être spécifiées par les événements entrants, par exemple suite à l’import d’un fichier, ou spécifiés dans l’action de diffusion. Elles peuvent également être stockées dans un ou plusieurs fichiers.
 
-   ![](assets/diffusion_edit_5.png)
+   ![Section des destinataires avec les options spécifiées par le ou les événements entrants, spécifiées dans la diffusion et le ou les fichiers spécifiés](assets/diffusion_edit_5.png)
 
 1. **Content**
 
    Le contenu du message peut être défini dans la diffusion ou dans l&#39;événement entrant.
 
-   ![](assets/diffusion_edit_6.png)
+   ![Section de contenu avec Spécifié par l&#39;événement entrant et Spécifié dans les options de diffusion](assets/diffusion_edit_6.png)
 
 1. **Action à effectuer**
 
    Vous pouvez créer la diffusion, la préparer, la démarrer, estimer la cible ou envoyer un bon à tirer.
 
-   ![](assets/diffusion_edit_7.png)
+   ![Action d&#39;exécution des options Enregistrer pour préparer et démarrer, et l&#39;option Générer une transition sortante](assets/diffusion_edit_7.png)
 
    Sélectionnez le type d&#39;action à effectuer parmi les options disponibles :
 
@@ -121,13 +121,13 @@ Pour la paramétrer, éditez l&#39;activité et renseignez les options de la dif
 
    L&#39;onglet **Script** permet de modifier les paramètres de la diffusion.
 
-   ![](assets/edit_diffusion_fil_script.png)
+   ![Onglet Script de l&#39;activité Diffusion avec un script de modification de l&#39;objet de diffusion définissant le libellé de la diffusion](assets/edit_diffusion_fil_script.png)
 
 ## Exemple : workflow de diffusion {#example--delivery-workflow}
 
 Créez un nouveau workflow et ajoutez des activités comme dans l&#39;exemple ci-dessous :
 
-![](assets/new-workflow-5.png)
+![Workflow avec activités Début, Diffusion et Validation, puis Agir sur la diffusion sur Oui et Terminer sur Non](assets/new-workflow-5.png)
 
 Ouvrez l&#39;activité **Diffusion** et définissez ses propriétés comme suit :
 
@@ -135,7 +135,7 @@ Ouvrez l&#39;activité **Diffusion** et définissez ses propriétés comme suit�
 * Dans la section **[!UICONTROL Destinataires]**, choisissez **[!UICONTROL Spécifiés dans la diffusion]**.
 * Dans la section **[!UICONTROL Action à effectuer]**, conservez l&#39;option **[!UICONTROL Préparer]**.
 
-![](assets/new-workflow-param-delivery.png)
+![Activité de diffusion avec Nouveau, créée à partir d&#39;un modèle, spécifiée dans les destinataires de la diffusion et Préparer sélectionnée](assets/new-workflow-param-delivery.png)
 
 Cliquez sur **[!UICONTROL OK]** pour fermer la fenêtre des propriétés. Vous venez de configurer une activité consistant à créer et préparer une nouvelle diffusion basée sur un modèle de diffusion dont la cible sera celle spécifiée dans le modèle.
 
@@ -150,7 +150,7 @@ Ouvrez l&#39;activité **Validation** et définissez ses propriétés comme suit
 
    Il s’agit d’un message incluant une expression JavaScript : l’expression **[!UICONTROL vars.recCount]** représente le nombre de destinataires ciblés par la diffusion de la tâche qui précède. Pour plus d’informations sur les expressions JavaScript, voir la section [Scripts/Templates JavaScript](javascript-scripts-and-templates.md).
 
-   ![](assets/new-workflow-param-validation.png)
+   ![Activité d&#39;approbation avec type d&#39;affectation de groupe et message utilisant vars.recCount demandant l&#39;approbation de la cible](assets/new-workflow-param-validation.png)
 
    La tâche de validation est présentée dans la section [Validation](approval.md).
 

@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 87%
+source-wordcount: '480'
+ht-degree: 73%
 ---
 # Planificateur {#scheduler}
 
@@ -50,22 +50,22 @@ L&#39;activité **[!UICONTROL Planificateur]** est à considérer comme un dépa
 
 Le planificateur définit le planning d&#39;activation de la transition. Pour le paramétrer, double-cliquez sur l&#39;objet graphique, puis cliquez sur **[!UICONTROL Changer…]**
 
-![](assets/s_user_segmentation_scheduler.png)
+![Boîte de dialogue de l’activité Planificateur avec le bouton Modifier utilisé pour définir la fréquence d’exécution](assets/s_user_segmentation_scheduler.png)
 
 Un assistant permet de définir la fréquence et la période de validité de l&#39;activité. Les étapes de configuration sont les suivantes :
 
 1. Sélectionnez la fréquence d&#39;activation et cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/s_user_segmentation_scheduler2.png)
+   ![Assistant de modification de planification, Sélectionner le type de fréquence : plusieurs fois par jour, quotidien, hebdomadaire, mensuel, une fois](assets/s_user_segmentation_scheduler2.png)
 
 1. Indiquez les heures et jours d’activation. Les paramètres de cette étape dépendent de la fréquence sélectionnée à l’étape précédente. Si vous choisissez de lancer l’activité plusieurs fois par jour, les options de configuration seront les suivantes :
 
-   ![](assets/s_user_segmentation_scheduler3.png)
+   ![Assistant de modification de planning, plusieurs fois par jour : sélection des heures pour les heures sélectionnées et sélection des jours avec les jours de la semaine](assets/s_user_segmentation_scheduler3.png)
 
 1. Définissez la période de validité du planning ou indiquez le nombre de fois où il sera exécuté.
 
-   ![](assets/s_user_segmentation_scheduler4.png)
+   ![Assistant de modification de planification, Période de validité : validité permanente, dates de début et de fin de validité ou Nombre maximal d&#39;itérations](assets/s_user_segmentation_scheduler4.png)
 
 1. Vérifiez le paramétrage et cliquez sur le bouton **[!UICONTROL Terminer]** pour l&#39;enregistrer.
 
-   ![](assets/s_user_segmentation_scheduler5.png)
+   ![Assistant de modification de planning, Résumé : description du planning et liste des heures de lancement suivantes, avec le bouton Terminer](assets/s_user_segmentation_scheduler5.png)

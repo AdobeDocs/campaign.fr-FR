@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
+source-git-commit: 011875268793bca1a000d745818dbd6c69461227
 workflow-type: tm+mt
-source-wordcount: '3052'
-ht-degree: 69%
+source-wordcount: '3055'
+ht-degree: 65%
 ---
 # Offres sur canal entrant{#offers-on-an-inbound-channel}
 
@@ -147,7 +147,7 @@ Vous obtenez une arborescence contenant votre nouvel environnement :
 
 ### Paramétrer l&#39;emplacement de l&#39;offre dans le site web {#configure-the-web-offer-space-on-the-website}
 
-Pour que les offres que vous venez de paramétrer apparaissent dans le site web, insérez le code JavaScript dans la page HTML de votre site afin d&#39;appeler le moteur d&#39;Interaction (voir à ce sujet la section [À propos des canaux entrants](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (documentation de Campaign v8)).
+Pour que les offres que vous venez de configurer soient visibles sur le site web, insérez le code JavaScript dans la page HTML de votre site. Ce code appelle le moteur d’interaction. Pour en savoir plus à ce sujet, consultez la section [À propos des canaux entrants](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (documentation de Campaign v8).
 
 1. Accédez à votre page HTML et insérez un attribut @id dont la valeur correspond au nom interne de l&#39;emplacement anonyme créé précédemment (voir [Créer des emplacements anonymes &#x200B;](#creating-anonymous-offer-spaces)), précédé de **i_**.
 
@@ -157,7 +157,7 @@ Pour que les offres que vous venez de paramétrer apparaissent dans le site web,
 
    ![appel de script HTML à interactionProposition.js avec les paramètres env=liveVisitor et th=funding mis en surbrillance](assets/offer_inbound_anonymous_example_020.png)
 
-   Les zones URL bleues ci-dessus correspondent au nom de l’instance, au nom interne de l’environnement (voir [Création d’un environnement anonyme](#creating-an-anonymous-environment)) et au thème lié à la catégorie ([Créer une catégorie d’offres et un thème](#creating-an-offer-category-and-a-theme)). Cette dernière option est facultative.
+   Les zones d’URL bleues ci-dessus correspondent au nom de l’instance, au nom interne de l’environnement et au thème lié à la catégorie. Pour plus d&#39;informations, consultez les sections [Création d&#39;un environnement anonyme](#creating-an-anonymous-environment) et [Création d&#39;une catégorie d&#39;offres et d&#39;un thème](#creating-an-offer-category-and-a-theme). Le thème est facultatif.
 
 Lorsqu&#39;un visiteur accède à la page d&#39;accueil du site web, les offres dont le thème est **financement** s&#39;affichent à l&#39;emplacement prévu de la page HTML.
 
@@ -409,7 +409,7 @@ Pour paramétrer les emplacements des offres dans la page HTML du site web, proc
 
    ![variable interactionTarget définie sur l’adresse e-mail de la personne qui se connecte, dans le script de la page](assets/offer_inbound_fallback_example_043.png)
 
-   L’identification de la personne peut être basée sur un cookie de navigateur, un paramètre de lecture dans l’URL, l’email ou l’identifiant de la personne. Si un champ de la table des destinataires autre que la clé primaire est utilisé, il doit être défini dans les paramètres avancés de l’espace (voir [Spécifier les paramètres avancés des espaces d’offre identifiés](#specifying-the-advanced-settings-of-the-identified-offer-spaces)).
+   L’identification de la personne peut être basée sur un cookie de navigateur, un paramètre de lecture dans l’URL, l’email ou l’identifiant de la personne. Si vous utilisez un champ de la table des destinataires autre que la clé primaire, vous devez le définir dans les paramètres avancés de l&#39;emplacement. Pour plus d&#39;informations, consultez la section [Spécifier les paramètres avancés des emplacements identifiés](#specifying-the-advanced-settings-of-the-identified-offer-spaces).
 
 1. Insérez l&#39;URL d&#39;appel.
 
@@ -419,6 +419,6 @@ Pour paramétrer les emplacements des offres dans la page HTML du site web, proc
 
 Lors de l&#39;ouverture de la page web, le script permet d&#39;appeler le moteur d&#39;Interaction afin que s&#39;affiche le contenu des offres dans les emplacements prévus à cet effet sur la page web. En un seul appel au serveur Adobe Campaign, le moteur détermine l’environnement, l’emplacement et les catégories à sélectionner.
 
-Dans notre exemple, le moteur reconnaît l&#39;environnement identifié (**OE18**). Il identifie l&#39;emplacement (**SPC27**) et la catégorie **Premium** (**OC34**) pour le premier et le deuxième emplacement de la page web, ainsi que l&#39;emplacement (**SPC29**) et la catégorie **Partenaires** (**OC35**) pour le troisième emplacement dans le site.
+Dans notre exemple, le moteur reconnaît l&#39;environnement identifié (**OE18**). Elle identifie l&#39;emplacement (**OSWebBestOfferIdentified**) et la catégorie **Premium** (**CatBestOffer**) pour les premier et deuxième emplacements sur la page web. Pour le troisième emplacement, il identifie l&#39;emplacement (**OSWebPartnerIdentified**) et la catégorie **Partenaire** (**CatPartner**).
 
 Si jamais le moteur n&#39;identifie pas le destinataire, il bascule vers les emplacements anonymes qui sont référencés dans les emplacements identifiés et vers les catégories anonymes (**OC30** et **OC31**) telles qu&#39;elles sont spécifiées dans le script.

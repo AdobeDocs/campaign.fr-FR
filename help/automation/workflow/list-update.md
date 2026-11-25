@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 100%
+source-wordcount: '609'
+ht-degree: 88%
 ---
 # Mise à jour de liste{#list-update}
 
@@ -36,13 +36,13 @@ ht-degree: 100%
 
 Une activité de type **Mise à jour de liste** enregistre la population spécifiée par la transition dans une liste de destinataires.
 
-![](assets/s_user_segmentation_update_group.png)
+![L&#39;éditeur d&#39;activité de mise à jour de liste avec Spécifié explicitement sélectionné, le dossier Listes et les options de type d&#39;enregistrement.](assets/s_user_segmentation_update_group.png)
 
 La liste peut être sélectionnée parmi les listes existantes.
 
 Il est également possible de la créer à l’aide des options **[!UICONTROL Créer la liste si besoin (Nom calculé)]** et **[!UICONTROL Créer la liste si besoin (Dossier et nom calculés)]**. Ces options vous permettent de sélectionner le libellé de votre choix pour créer une liste, puis le dossier dans lequel elle sera enregistrée. Le libellé peut également être généré automatiquement en insérant des champs dynamiques ou un script. Les différents champs dynamiques sont disponibles dans le menu pop-up situé à droite du libellé.
 
-![](assets/s_user_segmentation_update_list_calc.png)
+![Activité de mise à jour de liste avec l&#39;option Créer la liste si nécessaire (Nom calculé) sélectionnée et un script de libellé calculé.](assets/s_user_segmentation_update_list_calc.png)
 
 Si la liste existe déjà, les personnes destinataires seront ajoutées au contenu existant, sauf si vous cochez l’option **[!UICONTROL Purger la liste si elle existe (sinon ajouter à la liste)]**. Dans ce cas, le contenu de la liste est supprimé avant la mise à jour.
 
@@ -52,7 +52,7 @@ Pour utiliser cette option, les tables spécifiques concernées doivent avoir é
 
 Généralement, la sauvegarde d&#39;une cible dans une liste marque la fin d&#39;un workflow. Par défaut, l&#39;activité **[!UICONTROL Mise à jour de liste]** n&#39;a donc pas de transition sortante. Cochez l&#39;option **[!UICONTROL Générer une transition sortante]** pour en ajouter une.
 
-![](assets/do-not-localize/how-to-video.png) [Découvrez comment créer une liste de destinataires à partir de l‘Explorateur dans une vidéo](#video)
+![Icône du bouton de lecture pour le lien vidéo.](assets/do-not-localize/how-to-video.png) [Découvrez comment créer une liste de destinataires à partir de l&#39;Explorateur en vidéo](#video)
 
 ## Exemple : mise à jour de liste {#example--list-update}
 
@@ -71,7 +71,7 @@ Dans l’exemple suivant, l’activité de mise à jour de liste suit une requê
 1. Laissez l&#39;option **[!UICONTROL Générer une transition sortante]** désélectionnée.
 1. Cliquez sur **[!UICONTROL Ok]** puis lancez l&#39;exécution du workflow.
 
-   ![](assets/s_user_segmentation_update_list_calc_example.png)
+   ![Activité de mise à jour de liste définie pour créer la liste M_WestUS_18-30 dans le dossier Listes, avec purge et réutilisation vérifiées.](assets/s_user_segmentation_update_list_calc_example.png)
 
    La liste de destinataires correspondante est alors créée ou mise à jour.
 

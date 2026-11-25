@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 97%
+source-wordcount: '648'
+ht-degree: 78%
 ---
 # Ajouter un champ calculé de type Énumération {#adding-an-enumeration-type-calculated-field}
 
@@ -50,23 +50,23 @@ Les étapes sont les suivantes :
 1. Ouvrez le [Requêteur générique](../../v8/start/query-editor.md) et sélectionnez la Table des destinataires (**[!UICONTROL nms:recipient]**).
 1. Dans la fenêtre **[!UICONTROL Données à extraire]**, sélectionnez les champs **[!UICONTROL Nom]**, **[!UICONTROL Prénom]** et **[!UICONTROL Genre]**.
 
-   ![](assets/query_editor_nveau_73.png)
+   ![Données à extraire de la fenêtre avec le nom, le prénom et le genre dans la liste Colonnes de sortie.](assets/query_editor_nveau_73.png)
 
 1. Dans la fenêtre **[!UICONTROL Tri]**, cliquez sur **[!UICONTROL Suivant]** : aucun tri n&#39;est nécessaire pour cet exemple.
 1. Dans **[!UICONTROL Filtrage des données]**, sélectionnez **[!UICONTROL Critères de filtrage]**.
 1. Paramétrez une condition dans la fenêtre **[!UICONTROL Elément de la cible]** pour que les destinataires retournés en résultat soient de langue française.
 
-   ![](assets/query_editor_nveau_74.png)
+   ![Fenêtre de l’élément cible avec la condition de filtre Langue (@language) égale à EN.](assets/query_editor_nveau_74.png)
 
 1. Dans la fenêtre **[!UICONTROL Formatage des données]**, cliquez sur **[!UICONTROL Ajouter un champ calculé]**.
 
-   ![](assets/query_editor_nveau_75.png)
+   ![Fenêtre Formatage des données avec le bouton Ajouter un champ calculé en surbrillance.](assets/query_editor_nveau_75.png)
 
 1. Dans le champ **[!UICONTROL Type]** de la fenêtre **[!UICONTROL Définition d’un champ calculé d’export]**, sélectionnez **[!UICONTROL Énumérations]**.
 
    Définissez à quelle colonne doit se référer le nouveau champ calculé. Pour cela, sélectionnez la colonne **[!UICONTROL Genre]** dans le menu déroulant du champ **[!UICONTROL Colonne source]** : c&#39;est à la colonne **[!UICONTROL Genre]** que vont correspondre les valeurs de destination.
 
-   ![](assets/query_editor_nveau_76.png)
+   ![Définition du champ calculé avec le type défini sur Enumérations et la colonne Source définie sur Genre.](assets/query_editor_nveau_76.png)
 
    Définissez la valeur **Source** et la valeur **Destination** : la valeur de destination va faciliter la lisibilité du résultat de la requête. Cette requête doit renvoyer le genre de la personne destinataire et le résultat sera 0, 1 ou 2.
 
@@ -79,7 +79,7 @@ Les étapes sont les suivantes :
 
    Cliquez sur **[!UICONTROL Ok]** pour valider le champ calculé.
 
-   ![](assets/query_editor_nveau_77.png)
+   ![Les valeurs d&#39;énumération mappent les sources 0, 1 et 2 sur Non indiqué, Masculin et Féminin ; conservez la valeur source sélectionnée.](assets/query_editor_nveau_77.png)
 
 1. Dans la fenêtre **[!UICONTROL Formatage des données]**, cliquez sur **[!UICONTROL Suivant]**.
 1. Dans l&#39;étape de prévisualisation, cliquez sur **[!UICONTROL Lancer la prévisualisation des données]**.
@@ -90,12 +90,12 @@ Les étapes sont les suivantes :
    * 1 pour &quot;Homme&quot;
    * 2 pour &quot;Femme&quot;
 
-   ![](assets/query_editor_nveau_78.png)
+   ![Aperçu des données avec les colonnes Sexe et Spécifications de genre, par exemple 1 avec Masculin et 0 avec Non indiqué.](assets/query_editor_nveau_78.png)
 
    Par exemple, si vous ne renseignez pas le genre « 2 » dans la **[!UICONTROL Liste de valeurs d’énumération]** et que la fonction **[!UICONTROL Générer un avertissement et continuer]** du champ **[!UICONTROL Dans les autres cas]** est sélectionnée, un log d’avertissement est généré. Ce log indique que le genre « 2 » (féminin) n’a pas été saisi. Il est affiché dans le champ **[!UICONTROL Logs générés lors de l&#39;export]**, dans la fenêtre de prévisualisation des données.
 
-   ![](assets/query_editor_nveau_79.png)
+   ![L&#39;aperçu des données avec une ligne genre 2 marquée et la valeur d&#39;énumération de journal 2 n&#39;existe pas pour la colonne @gender.](assets/query_editor_nveau_79.png)
 
    Prenons un autre exemple et supposons que la valeur d’énumération « 2 » n’ait pas été saisie. Sélectionnez la fonction **[!UICONTROL Générer une erreur et rejeter la ligne]** : toutes les personnes destinataires du genre « 2 » génèrent des anomalies et les autres informations de la ligne (prénom et nom, etc.) ne sont pas exportées. Un log des erreurs s’affiche dans le champ **[!UICONTROL Logs générés lors de l&#39;export]** de la fenêtre de prévisualisation des données. Ce log indique que la valeur d’énumération « 2 » n’a pas été saisie.
 
-   ![](assets/query_editor_nveau_80.png)
+   ![Aperçu des données avec des icônes d&#39;erreur sur les lignes de genre 2 rejetées et la valeur 2 de l&#39;énumération du journal n&#39;existe pas.](assets/query_editor_nveau_80.png)

@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '3285'
-ht-degree: 100%
+source-wordcount: '3752'
+ht-degree: 87%
 ---
 # Règles de pression{#pressure-rules}
 
@@ -67,17 +67,17 @@ Pour créer et paramétrer une règle de typologie de type **[!UICONTROL Pressio
 
 1. Dans la liste des règles de typologie de campagne, cliquez sur l&#39;icône **[!UICONTROL Nouveau]** située au-dessus de la liste.
 
-   ![](assets/campaign_opt_create_a_rule_01.png)
+   ![Liste des règles de typologie dans le dossier Administration avec l&#39;icône Nouveau mise en surbrillance au-dessus de la liste.](assets/campaign_opt_create_a_rule_01.png)
 
 1. Dans l’onglet **[!UICONTROL Général]** de la nouvelle règle, sélectionnez une règle de type **Pression** et saisissez son nom et sa description.
 
-   ![](assets/campaign_opt_create_a_rule_02.png)
+   ![Nouvelle règle de typologie, onglet Général, avec Pression sélectionnée dans la liste Type de règle.](assets/campaign_opt_create_a_rule_02.png)
 
 1. Changez l&#39;ordre d&#39;exécution en cas de besoin. Lorsque plusieurs règles de typologie sont appliquées en tant qu’ensemble de **[!UICONTROL typologies]**, les règles dont l’ordre est le plus bas sont appliquées en premier. [En savoir plus](apply-rules.md#execution-order).
 1. Dans la section **[!UICONTROL Paramètres de calcul]**, définissez une fréquence si vous souhaitez enregistrer le ciblage au-delà de la prochaine exécution de réarbitrage quotidienne. [En savoir plus](apply-rules.md#adjust-calculation-frequency).
 1. Cliquez sur l&#39;onglet **[!UICONTROL Pression]** et sélectionnez la période calendaire dans laquelle s&#39;inscrit la règle de typologie.
 
-   ![](assets/campaign_opt_create_a_rule_03.png)
+   ![Onglet Pression avec la section Période glissante et la liste Type de période affichant les options de regroupement.](assets/campaign_opt_create_a_rule_03.png)
 
    La règle sera appliquée aux diffusions dont la date de contact est comprise dans la période concernée.
 
@@ -91,11 +91,11 @@ Pour créer et paramétrer une règle de typologie de type **[!UICONTROL Pressio
 
    Par défaut, le seuil est constant et vous devez indiquer le nombre maximum de messages autorisés par la règle.
 
-   ![](assets/campaign_opt_create_a_rule_03b.png)
+   ![Onglet Pression avec le type Seuil défini sur Constant et une Quantité de 4.](assets/campaign_opt_create_a_rule_03b.png)
 
    Pour définir un seuil variable, sélectionnez la valeur **[!UICONTROL Dépend du destinataire]** dans le champ **[!UICONTROL Type de seuil]**, et utilisez l&#39;icône située à droite du champ pour ouvrir l&#39;éditeur d&#39;expression.
 
-   ![](assets/campaign_opt_create_a_rule_04.png)
+   ![Liste de type Seuil affichant Constant et Dépend du destinataire.](assets/campaign_opt_create_a_rule_04.png)
 
    Pour plus d&#39;informations, reportez-vous à la section [Nombre maximum de messages](#maximum-number-of-messages).
 
@@ -110,7 +110,7 @@ Pour créer et paramétrer une règle de typologie de type **[!UICONTROL Pressio
 
      Dans l&#39;exemple ci-dessous, seuls les destinataires enregistrés dans le dossier **NewContacts** sont pris en compte et seules les diffusions commençant par **Newsletter** sont concernées.
 
-   ![](assets/campaign_opt_create_a_rule_05.png)
+   ![Section Messages à comptabiliser avec une requête de dossier sur NewRecipients et une requête de diffusion sur les libellés commençant par Newsletter.](assets/campaign_opt_create_a_rule_05.png)
 
 1. L&#39;onglet **[!UICONTROL Typologies]** permet de consulter les typologies de campagne qui appliquent cette règle de typologie et d&#39;associer cette règle à une ou plusieurs typologies existantes. [En savoir plus](campaign-typologies.md#apply-typologies).
 
@@ -122,7 +122,7 @@ Chaque règle de lassitude définit un seuil, c’est-à-dire le nombre maximum 
 
 Les valeurs de seuil peuvent être constantes ou calculées par une formule avec des variables. Pour une même période, le seuil peut donc varier d’une personne destinataire à l’autre, et même pour la même personne destinataire.
 
-![](assets/campaign_opt_create_a_rule_threshold.png)
+![Section Nombre maximal de messages de l&#39;onglet Pression, mise en surbrillance, avec un seuil Constante de 1.](assets/campaign_opt_create_a_rule_threshold.png)
 
 >[!CAUTION]
 >
@@ -132,7 +132,7 @@ Les valeurs de seuil peuvent être constantes ou calculées par une formule avec
 
 Vous pouvez indexer le nombre de messages autorisés en fonction du segment auquel appartient la personne destinataire. Ainsi, une personne destinataire répertoriée dans le segment web pourrait recevoir plus de messages que les autres. Une formule de type **[!UICONTROL Iif (@origin=&#39;Web&#39;, 5, 3)]** permet d’autoriser la diffusion de 5 messages à ces destinataires contre seulement 3 messages pour les destinataires des autres segments. La configuration sera donc la suivante :
 
-![](assets/campaign_opt_pressure_sample.png)
+![Type de seuil Dépend du destinataire avec la formule Iif(origine égale à &#39;Web&#39;, 5, 3).](assets/campaign_opt_pressure_sample.png)
 
 Vous pouvez utiliser une dimension liée à la dimension de ciblage pour définir le seuil : par exemple, pour inclure les messages envoyés aux profils de destinataires stockés dans la [tableau des visiteurs](../../v8/audiences/target-mappings.md) ou pour éviter d’envoyer plus d’un message par semaine à un même foyer (qui peut potentiellement référencer plusieurs adresses e-mail), identifié dans une dimension liée à celle des destinataires.
 
@@ -156,7 +156,7 @@ Dans l’exemple suivant, nous souhaitons lier le poids des newsletters consacr�
 1. Créez un nouveau champ afin de stocker les scores de propension des destinataires. Ce champ, ici, **@Music** pourra être alimenté par des réponses aux enquêtes et questionnaires en ligne, les données de tracking collectées, etc.
 1. Créez une règle de typologie afin de calculer le poids des messages en fonction de ce champ.
 
-   ![](assets/campaign_opt_pressure_weight_sample.png)
+   ![Sélectionnez une boîte de dialogue d&#39;expression ouverte à partir de la formule Poids, avec le champ Musique sélectionné dans les champs disponibles.](assets/campaign_opt_pressure_weight_sample.png)
 
 1. Appliquez cette règle aux messages sur ce sujet : newsletters, offres spéciales, etc. Le poids de ces diffusions, donc leur niveau priorité, dépendra ainsi du niveau d&#39;appétence de chaque destinataire.
 
@@ -191,19 +191,19 @@ Lorsqu’une période est supérieure à 0 (1, par exemple), le seuil de calcul 
 
 Nous allons créer une règle de pression qui limite la sollicitation à 3 messages sur une période de 15 jours, avec un regroupement au mois calendaire.
 
-![](assets/campaign_opt_pressure_period_sample_1a.png)
+![Onglet Pression avec une période de 15j, Regroupement par mois calendaire et un seuil constant de 3 messages.](assets/campaign_opt_pressure_period_sample_1a.png)
 
 Soient 6 newsletters, d&#39;un poids équivalent, planifiées pour les 30/04, 3/05, 8/05, 12/05, 22/05 et 30/05.
 
-![](assets/campaign_opt_pressure_period_sample_0.png)
+![Deux calendriers de novembre 2016 ; le second met en évidence les 3ème, 8ème, 12ème, 22ème et 30ème dates de diffusion.](assets/campaign_opt_pressure_period_sample_0.png)
 
 Les diffusions des 12 et 30/05 ne seront pas envoyées : en effet, la diffusion du 12/05 excéderait le seuil autorisé de 3 messages par quinzaine, et la diffusion du 30 vient en sur-nombre par rapport au nombre de communications autorisées dans le mois calendaire.
 
-![](assets/campaign_opt_pressure_period_sample_1.png)
+![Liste des diffusions avec les statuts En attente, En échec et En édition et les nombres ciblés et à envoyer.](assets/campaign_opt_pressure_period_sample_1.png)
 
 Tous les destinataires de ces diffusions sont exclus par arbitrage lors de la phase d&#39;analyse :
 
-![](assets/campaign_opt_pressure_period_sample_2.png)
+![Logs d&#39;exclusion d&#39;une diffusion répertoriant les destinataires avec la raison Exclus après arbitrage.](assets/campaign_opt_pressure_period_sample_2.png)
 
 Pour la même règle, si l&#39;on applique un regroupement des diffusions par trimestre, alors les destinataires de la **newsletter n°5** seront également exclus et elle ne sera pas envoyée.
 
@@ -223,7 +223,7 @@ Ainsi, pour chaque destinataire, Adobe Campaign vérifie que le nombre de messa
 
 Si ce nombre est supérieur au seuil, les règles d&#39;arbitrage définies dans la typologie de campagne sont appliquées et les destinataires seront exclus par arbitrage des campagnes d&#39;un poids inférieur.
 
-![](assets/campaign_opt_pressure_exclusion.png)
+![Résumé de diffusion avec 12 ciblés et 9 à envoyer, et logs d&#39;exclusion indiquant Exclus après arbitrage.](assets/campaign_opt_pressure_exclusion.png)
 
 >[!NOTE]
 >
@@ -244,21 +244,21 @@ Les étapes de création de cette règle sont les suivantes :
 
    Cliquez sur le bouton **[!UICONTROL Sélection avancée]** pour définir la formule de calcul.
 
-   ![](assets/campaign_opt_pressure_sample_1_1.png)
+   ![Sélectionnez une boîte de dialogue d&#39;expression ouverte à partir du champ Formule, avec le champ Statut sélectionné.](assets/campaign_opt_pressure_sample_1_1.png)
 
 1. Choisissez l&#39;option **[!UICONTROL Editer la formule à partir d&#39;une expression]** et cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/campaign_opt_pressure_sample_1_2.png)
+   ![Étape de type formule avec l&#39;option Modifier la formule à l&#39;aide d&#39;une expression sélectionnée.](assets/campaign_opt_pressure_sample_1_2.png)
 
 1. Dans la liste des fonctions, double-cliquez sur la fonction **Iif**, dans le noeud **[!UICONTROL Autres]**.
 
    Sélectionnez ensuite le **Statut** du destinataire, dans la section **[!UICONTROL Champs disponibles]**.
 
-   ![](assets/campaign_opt_pressure_sample_1_3.png)
+   ![Modifiez la boîte de dialogue de l&#39;expression avec la fonction Iif d&#39;Autres et le champ Statut dans la formule.](assets/campaign_opt_pressure_sample_1_3.png)
 
    Complétez la formule comme suit : **Iif(@status=0,2,4)**
 
-   ![](assets/campaign_opt_pressure_sample_1_4.png)
+   ![Modifiez la boîte de dialogue d&#39;expression avec la formule Iif (@status=0,2,4) terminée.](assets/campaign_opt_pressure_sample_1_4.png)
 
    Cette formule permet d&#39;attribuer la valeur 2 si le statut est égal à 0, et la valeur 4 pour tout autre statut.
 
@@ -266,7 +266,7 @@ Les étapes de création de cette règle sont les suivantes :
 
 1. Indiquez la période concernée pour l&#39;application de la règle : ici 7 jours pour comptabiliser les messages à la semaine.
 
-   ![](assets/campaign_opt_pressure_sample_1_5.png)
+   ![Onglet Pression avec la liste Type de période et une formule qui dépend du statut du destinataire.](assets/campaign_opt_pressure_sample_1_5.png)
 
 1. Enregistrez la règle pour en valider la création.
 
@@ -275,13 +275,13 @@ Vous devez maintenant associer la règle que vous venez de créer à une typolog
 1. Créez une typologie de campagne.
 1. Cliquez sur l&#39;onglet **[!UICONTROL Règles]**, puis sur le bouton **[!UICONTROL Ajouter]** et sélectionnez la règle que vous venez de créer.
 
-   ![](assets/campaign_opt_pressure_sample_1_6.png)
+   ![Onglet Règles d’une nouvelle typologie avec la boîte de dialogue Ajouter des règles répertoriant les règles de typologie à sélectionner.](assets/campaign_opt_pressure_sample_1_6.png)
 
 1. Enregistrez la typologie : elle est alors ajoutée à la liste des typologies existantes.
 
 Pour utiliser cette typologie dans vos diffusions, sélectionnez-la dans les propriétés de la diffusion, dans **[!UICONTROL Typologie]**, comme ci-dessous :
 
-![](assets/campaign_opt_pressure_sample_1_7.png)
+![Propriétés de la diffusion, onglet Typologie, avec la typologie Pression des clients/prospects sélectionnée dans la liste Typologie.](assets/campaign_opt_pressure_sample_1_7.png)
 
 >[!NOTE]
 >
@@ -291,15 +291,15 @@ Lors de l’analyse de la diffusion, les personnes destinataires des diffusions 
 
 * Observer le résultat de l&#39;analyse :
 
-  ![](assets/campaign_opt_pressure_sample_1_8.png)
+  ![Fenêtre d&#39;analyse de la diffusion avec le journal de préparation terminé et la règle Exclure les adresses mise en surbrillance.](assets/campaign_opt_pressure_sample_1_8.png)
 
 * Editer la diffusion et cliquer sur l&#39;onglet **[!UICONTROL Diffusion]**, puis sur le sous-onglet **[!UICONTROL Exclusions]** :
 
-  ![](assets/campaign_opt_pressure_sample_1_9.png)
+  ![Onglet Diffusion, sous-onglet Exclusions, avec les logs d&#39;exclusion indiquant Exclus après arbitrage.](assets/campaign_opt_pressure_sample_1_9.png)
 
 * Cliquer sur l&#39;onglet **[!UICONTROL Suivi]** puis sur le sous-onglet **[!UICONTROL Causes d&#39;exclusions]** pour afficher le nombre d&#39;exclusions et les règles de typologies appliquées :
 
-  ![](assets/campaign_opt_pressure_sample_1_10.png)
+  ![Onglet Audit, sous-onglet Causes d&#39;exclusions, avec le volume d&#39;exclusions par règle de typologie.](assets/campaign_opt_pressure_sample_1_10.png)
 
 ### Calcul du poids de la diffusion en fonction du comportement {#calculate-the-delivery-weight-based-on-behavior}
 
@@ -314,15 +314,15 @@ Les étapes de paramétrage sont les suivantes :
 1. Créez une nouvelle règle de typologie de type **Pression**.
 1. Editez l&#39;onglet **[!UICONTROL Pression]**. Nous allons créer une formule de calcul du seuil qui dépendra de chaque destinataire : cliquez sur l&#39;icône **[!UICONTROL Editer l&#39;expression]** située à droite du champ **[!UICONTROL Formule de poids]**.
 
-   ![](assets/campaign_opt_pressure_sample_2_1.png)
+   ![Onglet Pression avec l’icône Modifier l’expression mise en surbrillance en regard du champ Formule de poids .](assets/campaign_opt_pressure_sample_2_1.png)
 
 1. Par défaut, la valeur **5** est renseignée dans la section supérieure de l&#39;éditeur d&#39;expression. Nous allons ajouter à ce poids la valeur d&#39;appétence de chaque destinataire : positionnez le pointeur à droite du chiffre 5, saisissez le caractère **+** au clavier et sélectionnez le champ **Appétence**.
 
-   ![](assets/campaign_opt_pressure_sample_2_2.png)
+   ![Modifiez la boîte de dialogue de l&#39;expression avec la formule de poids 5+@Affinity et le champ Affinité sélectionné.](assets/campaign_opt_pressure_sample_2_2.png)
 
 1. Ajoutez ensuite une valeur plus élevée pour les personnes destinataires qui ont déjà effectué un achat. Pour celles-là, le poids de la diffusion doit être augmenté de 5, contre seulement 4 pour les autres.
 
-   ![](assets/campaign_opt_pressure_sample_2_3.png)
+   ![Modifiez la boîte de dialogue d&#39;expression avec une formule de poids qui ajoute un champ et une condition Iif sur l&#39;intérêt.](assets/campaign_opt_pressure_sample_2_3.png)
 
 1. Cliquez sur le bouton **[!UICONTROL Terminer]** et enregistrez cette règle.
 1. Associez la règle à une typologie de campagne et référencez cette typologie au niveau d&#39;une diffusion pour en valider le fonctionnement.
@@ -338,7 +338,7 @@ Tout d&#39;abord, configurez la règle de pression.
 1. Créez une règle de pression. [En savoir plus](#create-a-pressure-rule).
 1. Dans l&#39;onglet **[!UICONTROL Général]**, sélectionnez l&#39;option **[!UICONTROL Réappliquer la règle au début de la personnalisation]**.
 
-   ![](assets/campaign_opt_pressure_example_5.png)
+   ![Onglet Général d’une règle de pression avec l’option Réappliquer la règle au début de la personnalisation sélectionnée.](assets/campaign_opt_pressure_example_5.png)
 
    Cette option annule la valeur définie dans le champ **[!UICONTROL Fréquence]** et applique automatiquement la règle pendant la phase de personnalisation. [En savoir plus](apply-rules.md#adjust-calculation-frequency).
 
@@ -353,17 +353,17 @@ Créez et configurez maintenant un workflow pour chaque diffusion à laquelle la
 1. Ajoutez une activité **[!UICONTROL Diffusion e-mail]** au workflow et ouvrez-la. Pour plus d’informations sur cette activité, consultez [cette section](../workflow/delivery.md).
 1. Accédez à l&#39;onglet **[!UICONTROL Validations]** des **[!UICONTROL Propriétés de la diffusion]** et désactivez toutes les validations.
 
-   ![](assets/campaign_opt_pressure_example_2.png)
+   ![Propriétés de la diffusion, onglet Validations, avec toutes les options de validation et la confirmation de diffusion effacées.](assets/campaign_opt_pressure_example_2.png)
 
 1. Dans l’onglet **[!UICONTROL Typologie]** des **[!UICONTROL Propriétés de la diffusion]**, référencez la typologie de campagne à laquelle appliquer la règle. Définissez un poids pour la diffusion. Définissez un poids pour la diffusion.
 
-   ![](assets/campaign_opt_pressure_example_3.png)
+   ![Propriétés de la diffusion, onglet Typologie, avec le champ Typologie et un poids de diffusion de 10 en surbrillance.](assets/campaign_opt_pressure_example_3.png)
 
 1. Dans la diffusion, cliquez sur **[!UICONTROL Planification]** et sélectionnez **[!UICONTROL Planifier la diffusion (exécution automatique à la date prévue)]**. Dans cet exemple, sélectionnez l&#39;option **[!UICONTROL Utiliser une formule de calcul]**.
 1. Définissez la date d&#39;extraction sur 10 minutes (date actuelle + 10 minutes).
 1. Définissez la date de contact sur le jour suivant (date actuelle + 1 jour).
 
-   ![](assets/campaign_opt_pressure_example_4.png)
+   ![Boîte de dialogue de planification avec extraction définie sur la date actuelle + 10 minutes et date de contact à la date actuelle + 1 jour.](assets/campaign_opt_pressure_example_4.png)
 
    Pour que les exclusions de règle de pression soient implémentées avec succès, veillez à définir la date et l&#39;heure d&#39;extraction avant la date et l&#39;heure de contact, ainsi qu&#39;avant la réapplication de l&#39;arbitrage de nuit. [En savoir plus](#exclusion-after-arbitration).
 

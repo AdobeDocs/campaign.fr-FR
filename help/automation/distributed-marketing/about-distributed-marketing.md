@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 71%
+source-wordcount: '1248'
+ht-degree: 67%
 ---
 # Prise en main du marketing distribué{#about-distributed-marketing}
 
@@ -86,11 +86,11 @@ L’entité centrale fournit les opérations que les entités locales peuvent ut
 
 * **Opération collaborative**
 
-  Une opération collaborative est une opération dont le **planning d&#39;exécution est défini** par l&#39;entité centrale et que l&#39;entité locale peut utiliser. Le contenu reste le même pour chaque entité locale mais les coûts sont partagés. Pour participer, les entités locales s&#39;inscrivent à l&#39;opération collaborative.
+  Une opération collaborative est une opération dont le planning d&#39;exécution **est défini** par l&#39;entité centrale et que l&#39;entité locale peut utiliser. Le contenu reste le même pour chaque entité locale mais les coûts sont partagés. Pour participer, les entités locales s&#39;inscrivent à l&#39;opération collaborative.
 
-  * **[!UICONTROL Opération collaborative par formulaire)]** conseillée pour des opérations impliquant jusqu&#39;à 300 entités locales. L&#39;entité locale peut saisir des paramètres prédéfinis pour le ciblage et la personnalisation du contenu dans un formulaire web. Le formulaire peut être un formulaire Adobe Campaign ou un formulaire externe (extranet client). Un administrateur fonctionnel peut définir et configurer le formulaire en fonction d’un modèle de formulaire défini par l’intégrateur. Pour commander l&#39;opération, l&#39;entité locale a seulement besoin d&#39;un accès web.
-  * **[!UICONTROL Opération collaborative par opération)]** conseillée pour des opérations visant quelques dizaines d&#39;entités locales. Ce type d&#39;opération crée des opérations filles pour chaque entité locale. Lorsque la commande d’une **[!UICONTROL Opération collaborative par opération]** est validée par l’entité centrale, l’opération est mise à disposition de l’entité locale qui peut la modifier. L’exécution est automatiquement synchronisée entre les opérations enfants et l’opération parent. L’entité locale doit avoir accès à une instance pour commander une opération et y participer.
-  * **[!UICONTROL Opération collaborative par validation de la cible)]** conseillée pour des opérations visant jusqu&#39;à plusieurs milliers d&#39;entités locales. L&#39;entité locale reçoit une liste de contacts qui a été prédéfinie par l&#39;entité centrale. L&#39;entité locale décide de conserver ou non certains contacts en fonction du contenu de la campagne, via un formulaire web. Les entités locales sont déduites de la liste des contacts sélectionnés. Pour participer à la campagne, l&#39;entité locale a seulement besoin d&#39;un accès web.
+  * **[!UICONTROL Opération collaborative (par formulaire)]** : recommandée pour les opérations impliquant jusqu&#39;à 300 entités locales. L&#39;entité locale peut saisir des paramètres prédéfinis pour le ciblage et la personnalisation du contenu dans un formulaire web. Le formulaire peut être un formulaire Adobe Campaign ou un formulaire externe (extranet client). Un administrateur fonctionnel peut définir et configurer le formulaire en fonction d’un modèle de formulaire défini par l’intégrateur. Pour commander l&#39;opération, l&#39;entité locale a seulement besoin d&#39;un accès web.
+  * **[!UICONTROL Opération collaborative (par opération)]** : conseillée pour des opérations visant des dizaines d&#39;entités locales. Ce type d&#39;opération crée des opérations filles pour chaque entité locale. Lorsque la commande d’une **[!UICONTROL Opération collaborative par opération]** est validée par l’entité centrale, l’opération est mise à disposition de l’entité locale qui peut la modifier. L’exécution est automatiquement synchronisée entre les opérations enfants et l’opération parent. L’entité locale doit avoir accès à une instance pour commander une opération et y participer.
+  * **[!UICONTROL Opération collaborative par validation de la cible]** : conseillée pour des opérations visant jusqu&#39;à plusieurs milliers d&#39;entités locales. L&#39;entité locale reçoit une liste de contacts qui a été prédéfinie par l&#39;entité centrale. L&#39;entité locale décide de conserver ou non certains contacts en fonction du contenu de la campagne, via un formulaire web. Les entités locales sont déduites de la liste des contacts sélectionnés. Pour participer à la campagne, l&#39;entité locale a seulement besoin d&#39;un accès web.
   * **[!UICONTROL Opération collaborative simple]** : ce mode permet d&#39;assurer la compatibilité avec les développements spécifiques réalisés dans les versions précédentes.
 
   Voir [Création d’une campagne collaborative](creating-a-collaborative-campaign.md).
@@ -103,7 +103,7 @@ L&#39;inscription d&#39;une entité locale à une opération se traduit par la c
 
 La liste des kits de campagne est accessible à partir de l’onglet **Campagnes** : cliquez sur le lien **[!UICONTROL Kits de campagne]**.
 
-![](assets/mkg_dist_home_local_op.png)
+![Onglet Campagnes : cliquez sur Packages de campagne dans le menu Navigation pour ouvrir la liste des packages de campagne.](assets/mkg_dist_home_local_op.png)
 
 Pour chaque opérateur local, cette fenêtre permet de visualiser les opérations disponibles pour son agence locale.
 
@@ -113,7 +113,7 @@ Pour les agences centrales, cette fenêtre affiche tous les kits disponibles dan
 
 Commencez par spécifier les opérateurs et opératrices des entités centrales et locales via le dossier **[!UICONTROL Gestion des accès]**.
 
-![](assets/s_advuser_mkg_dist_tree.png)
+![Arborescence de l&#39;Explorateur avec Administration > Gestion des accès développée, affichant les opérateurs et les entités organisationnelles.](assets/s_advuser_mkg_dist_tree.png)
 
 ### Les opérateurs {#operators}
 
@@ -121,15 +121,15 @@ Vous devez créer des opérateurs centraux et des opérateurs locaux.
 
 Les opérateurs centraux doivent appartenir au groupe d&#39;opérateurs **[!UICONTROL Gestion en central]** ou être titulaire du droit nommé **[!UICONTROL CENTRAL]**.
 
-Les opérateurs locaux doivent appartenir au groupe d&#39;opérateurs **[!UICONTROL Gestion locale]** ou posséder le droit nommé **[!UICONTROL LOCAL]**. Ils doivent également être liés à leur entité locale.
+Les opérateurs locaux doivent appartenir au groupe d’opérateurs **[!UICONTROL Gestion locale]** ou disposer du droit nommé **[!UICONTROL LOCAL]**. Ils doivent également être liés à leur entité locale.
 
-![](assets/s_advuser_mkg_dist_local_create.png)
+![Onglet Droits d&#39;accès de l&#39;opérateur répertoriant les groupes de sécurité Gestion locale et Gestion centrale.](assets/s_advuser_mkg_dist_local_create.png)
 
 ### Entités organisationnelles {#organizational-entities}
 
 Pour créer une entité organisationnelle, sélectionnez le dossier **[!UICONTROL Administration > Gestion des accès > Entités organisationnelles]**, puis cliquez sur l’icône **[!UICONTROL Nouveau]** au-dessus de la liste des entités.
 
-![](assets/s_advuser_mkg_dist_local_list.png)
+![Dossier des entités organisationnelles avec l’icône Nouveau mise en surbrillance au-dessus de la liste des entités.](assets/s_advuser_mkg_dist_local_list.png)
 
 Chaque entité organisationnelle contient des informations d’identification (libellé, nom interne, coordonnées, etc.) et les groupes impliqués dans le processus de validation de la commande. Ils sont définis dans la section **[!UICONTROL Notifications et validations]** de l’onglet **[!UICONTROL Général]** .
 
@@ -152,7 +152,7 @@ Les étapes de mise en oeuvre dépendent du type de kit de campagne utilisé et 
 1. Créer les entités locales.
 1. Associer les destinataires aux opérateurs en charge des entités locales.
 
-   ![](assets/mkg_dist_local_entity_association.png)
+   ![Formulaire du destinataire avec le champ Origine mis en surbrillance, liant le destinataire à une entité locale.](assets/mkg_dist_local_entity_association.png)
 
 1. Définir les droits et les règles de navigation pour les entités locales.
 1. Définir l&#39;ensemble des champs nécessaires à la localisation des campagnes :

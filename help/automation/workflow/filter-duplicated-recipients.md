@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 100%
+source-wordcount: '215'
+ht-degree: 72%
 ---
 # Filtrer les destinataires en double {#filtering-duplicated-recipients}
 
@@ -37,19 +37,19 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 1. Placez une activité **[!UICONTROL Requête]** dans un workflow, puis ouvrez-la.
 1. Cliquez sur **[!UICONTROL Edition de la requête]** et définissez les dimensions de ciblage et de filtrage sur **[!UICONTROL Destinataires]**.
 
-   ![](assets/query_recipients_1.png)
+   ![Étape Dimension de ciblage et de filtrage de l&#39;activité Requête avec Destinataires sélectionnés, Conditions de filtrage mises en surbrillance.](assets/query_recipients_1.png)
 
 1. Définissez la condition de filtrage suivante pour cibler les destinataires qui se trouvent dans le log de diffusion. Sélectionnez **Log de diffusion d&#39;un destinataire (broadlog)** dans la colonne **Expression**. Sélectionnez ensuite **existent tel que** dans la colonne **Opérateur**.
 
-   ![](assets/query_recipients_2.png)
+   ![Étape de filtrage avec la condition Logs de diffusion du destinataire (broadLog) et l&#39;opérateur existent, par exemple.](assets/query_recipients_2.png)
 
 1. Définissez la condition de filtrage suivante pour cibler votre diffusion. Sélectionnez **[!UICONTROL Nom interne]** dans la colonne Expression et **[!UICONTROL égal à]** dans la colonne Opérateur.
 1. Dans la colonne de la valeur, ajoutez le nom interne de la diffusion ciblée.
 
-   ![](assets/query_recipients_3.png)
+   ![Condition de filtrage sur le nom interne de la diffusion, égal à la valeur Summer_delivery_sales, sous existe tel que.](assets/query_recipients_3.png)
 
 1. Répétez les mêmes opérations pour cibler d&#39;autres diffusions à l&#39;aide d&#39;un opérateur **[!UICONTROL ET]**.
 
-   ![](assets/query_recipients_4.png)
+   ![Il en existe deux, telles que les conditions jointes par Et, ciblant Summer_delivery_sales et Summer_delivery_new_collection.](assets/query_recipients_4.png)
 
 Votre transition sortante contient les destinataires dupliqués ciblés dans les diffusions.

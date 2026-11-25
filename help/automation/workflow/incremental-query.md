@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 100%
+source-wordcount: '433'
+ht-degree: 87%
 ---
 # Requête incrémentale{#incremental-query}
 
@@ -54,15 +54,15 @@ Pour ce faire :
 
    Dans la fenêtre **[!UICONTROL Assistant d’édition d’un planning]** qui s’affiche, vous pouvez configurer le type de fréquence, la périodicité des événements et la période de validité des événements.
 
-   ![](assets/s_user_segmentation_wizard_11.png)
+   ![Assistant de modification de planification : fréquence hebdomadaire, jeudi sélectionné et période de validité avec une date de début et de fin valides.](assets/s_user_segmentation_wizard_11.png)
 
 1. Cliquez sur **[!UICONTROL Terminer]** pour enregistrer le planning.
 
-   ![](assets/s_user_segmentation_wizard_valid.png)
+   ![Page Résumé de l&#39;assistant de modification de planification avec la description de la planification, la liste des heures de lancement et le bouton Terminer.](assets/s_user_segmentation_wizard_valid.png)
 
 1. La section inférieure de l&#39;onglet **[!UICONTROL Planification &amp; Historique]** permet de sélectionner le nombre de jours d&#39;historique à prendre en compte.
 
-   ![](assets/edit_request_inc.png)
+   ![Onglet Planification et historique des requêtes incrémentielles avec l’option Exécution du plan sélectionnée et le champ Jours d’historique défini sur 10.](assets/edit_request_inc.png)
 
    * **[!UICONTROL Jours d&#39;historique]**
 

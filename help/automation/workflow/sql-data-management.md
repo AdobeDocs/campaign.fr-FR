@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 88%
+source-wordcount: '468'
+ht-degree: 84%
 ---
 # Gestion des données SQL{#sql-data-management}
 
@@ -52,7 +52,7 @@ En cas d&#39;erreur, deux solutions sont disponibles :
 * Solution 1 — `XtkSecurity_FeatureFlag_SqlSensitive`
 * Solution 2 — `XtkSecurity_SqlSensitive_Methods`
 
-Pour plus d’informations et de bonnes pratiques[&#128279;](sql-code-and-javascript-code.md#important-notes) voir Code SQL).
+Consultez [Code SQL](sql-code-and-javascript-code.md#important-notes) pour plus de détails et de bonnes pratiques.
 
 ## Configuration de l&#39;activité Gestion des données SQL {#configuring-the-sql-data-management-activity}
 
@@ -73,7 +73,7 @@ Pour plus d’informations et de bonnes pratiques[&#128279;](sql-code-and-javasc
 
    Sinon, saisissez ou effectuez un copier-coller du script SQL dans la zone dédiée.
 
-   ![](assets/sql_datamanagement.png)
+   ![Activité de gestion des données SQL avec des destinataires de schéma sortant et un script SQL utilisant les noms des tables de transition entrantes](assets/sql_datamanagement.png)
 
    L&#39;activité permet d&#39;utiliser les variables suivantes dans le script :
 

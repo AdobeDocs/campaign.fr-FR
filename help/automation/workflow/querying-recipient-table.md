@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 100%
+source-wordcount: '588'
+ht-degree: 76%
 ---
 # Requête de la table des destinataires {#querying-recipient-table}
 
@@ -55,18 +55,18 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 1. Cliquez sur **[!UICONTROL Outils > Requêteur générique…]** et choisissez la table **Personnes destinataires** (**nms:recipient**). Cliquez sur **[!UICONTROL Suivant]**.
 1. Sélectionnez : **[!UICONTROL Nom]**, **[!UICONTROL Prénom]**, **[!UICONTROL Email]**, **[!UICONTROL Ville]** et **[!UICONTROL Numéro de compte]**. Ces champs sont alors ajoutés à **[!UICONTROL Colonnes de sortie]**. Cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/query_editor_03.png)
+   ![Données à extraire avec les champs E-mail, Nom, Prénom, Ville et N° de compte dans les colonnes de sortie](assets/query_editor_03.png)
 
 1. Triez les colonnes pour les afficher dans le bon ordre. Ici, triez les numéros de compte dans l’ordre décroissant et les noms par ordre alphabétique. Cliquez sur **[!UICONTROL Suivant]**.
 
-   ![](assets/query_editor_04.png)
+   ![Étape de tri avec le numéro de compte trié par ordre décroissant et le nom trié par ordre croissant](assets/query_editor_04.png)
 
 1. Dans la fenêtre **[!UICONTROL Filtrage des données]**, affinez votre recherche en sélectionnant **[!UICONTROL Critères de filtrage]**. Cliquez sur **[!UICONTROL Suivant]**.
 1. La fenêtre **[!UICONTROL Elément de la cible]** sert à renseigner les paramètres de filtrage.
 
    Définissez la condition de filtrage suivante : les destinataires ont un domaine d’e-mail correspondant à « free.fr ». Pour cela, sélectionnez **Domaine d&#39;e-mail (@email)** dans la colonne **[!UICONTROL Expression]** et choisissez **égal à** dans la colonne **[!UICONTROL Opérateur]**. Enfin, renseignez « free.fr » dans la colonne **[!UICONTROL Valeur]**.
 
-   ![](assets/query_editor_05.png)
+   ![Étape de l&#39;élément cible avec le filtre Domaine de l&#39;e-mail (@domain) égal à orange.co.uk et le résumé de la requête](assets/query_editor_05.png)
 
 1. Si besoin, cliquez sur le bouton **[!UICONTROL Répartition des valeurs]** pour obtenir une répartition en fonction du domaine d’e-mail des prospects. Un pourcentage est disponible pour chaque domaine d’e-mail de la base de données. Les domaines autres que « orange.co.uk » sont affichés jusqu’à ce que le filtre soit appliqué.
 
@@ -74,19 +74,19 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
 1. Cliquez sur l&#39;onglet **[!UICONTROL Aperçu]** pour avoir une première idée du résultat de la requête. Seuls les destinataires avec des domaines d&#39;email &quot;free.fr&quot; sont affichés.
 
-   ![](assets/query_editor_nveau_17.png)
+   ![Onglet Aperçu de l’élément cible répertoriant uniquement les destinataires avec une adresse e-mail orange.co.uk](assets/query_editor_nveau_17.png)
 
 1. Modifiez la requête pour obtenir des contacts non domiciliés à Paris.
 
    Sélectionnez **[!UICONTROL Ville (location/@city)]** dans la colonne **[!UICONTROL Expression]**, l&#39;opérateur **[!UICONTROL différent de]** et saisissez **[!UICONTROL Paris]** dans l&#39;autre colonne **[!UICONTROL Valeur]**.
 
-   ![](assets/query_editor_08.png)
+   ![Étape de l&#39;élément cible avec la condition Ville (emplacement/@city) différente de Londres ajoutée au filtre](assets/query_editor_08.png)
 
 1. Vous accédez alors à la fenêtre **[!UICONTROL Formatage des données]**. Vérifiez l’ordre des colonnes. Déplacez la colonne « Ville » pour la remonter après la colonne « Numéro de compte ».
 
    Décochez la ligne &quot;Prénom&quot; pour ne plus l&#39;afficher en résultat.
 
-   ![](assets/query_editor_nveau_15.png)
+   ![Étape de mise en forme des données avec l&#39;ordre des colonnes et la colonne Prénom décochée](assets/query_editor_nveau_15.png)
 
 1. Dans la fenêtre **[!UICONTROL Prévisualisation des données]**, cliquez sur **[!UICONTROL Lancer la prévisualisation des données]**. Cette fonction calcule le résultat de la requête.
 
@@ -94,12 +94,12 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
    Le résultat affiche l’ensemble des destinataires avec un domaine d’e-mail « orange.co.uk » qui ne vivent pas à Londres. La colonne « Prénom » n’est pas affichée, car elle n’a pas été cochée lors de l’étape précédente. Les numéros de compte sont triés par ordre décroissant.
 
-   ![](assets/query_editor_nveau_12.png)
+   ![Aperçu des données avec l’onglet Résultats de colonne indiquant le numéro de compte, la ville, l’adresse e-mail et le nom du résultat de la requête](assets/query_editor_nveau_12.png)
 
    L&#39;onglet **[!UICONTROL Résultat XML]** montre le résultat au format XML.
 
-   ![](assets/query_editor_nveau_13.png)
+   ![Aperçu des données avec l’onglet Résultat XML affichant le résultat de la requête en tant qu’éléments XML du destinataire](assets/query_editor_nveau_13.png)
 
    L’onglet **[!UICONTROL Requêtes SQL générées]** vous présente le résultat de la requête en langage SQL.
 
-   ![](assets/query_editor_nveau_14.png)
+   ![Aperçu des données avec l&#39;onglet Requêtes SQL générées affichant l&#39;instruction SELECT de la requête](assets/query_editor_nveau_14.png)

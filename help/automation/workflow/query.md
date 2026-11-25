@@ -27,10 +27,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 93%
+source-wordcount: '1975'
+ht-degree: 78%
 ---
 # Requête{#query}
 
@@ -39,9 +39,9 @@ ht-degree: 93%
 ## Création dʼune requête {#creating-a-query}
 
 Une requête permet de sélectionner une cible en fonction de critères. Vous pouvez associer un code segment au résultat de la requête et y insérer des données supplémentaires.
-Découvrez comment créer des requêtes par le biais de cas d’utilisation dans [cette section](querying-recipient-table.md). Consultez également la section à propos du [Query editor](../../v8/start/query-editor.md).
+Découvrez comment créer des requêtes par le biais de cas d’utilisation dans [Interroger la table des destinataires](querying-recipient-table.md). Consultez également la section sur le [Query editor](../../v8/start/query-editor.md).
 
-![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
+![Boîte de dialogue d’activité de requête avec les champs Modifier la requête, Ajouter des données, Modifier les données supplémentaires et Libellé des résultats et Code de segment.](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -57,21 +57,21 @@ Le lien **[!UICONTROL Editer la requête...]** permet de définir le type de cib
 
    Voir à ce sujet la section [Dimension de ciblage et dimension de filtrage](targeting-workflows.md#targeting-and-filtering-dimensions).
 
-   ![](assets/targeting-filtering-dimensions.png){width="70%" align="center" zoomable="yes"}
+   ![Étape de dimension de ciblage et de filtrage avec Destinataires comme dimension de ciblage et Destinataire comme dimension de filtrage.](assets/targeting-filtering-dimensions.png){width="70%" align="center" zoomable="yes"}
 
    Une requête peut être basée sur les données de la transition entrante, le cas échéant, en sélectionnant **[!UICONTROL Schéma temporaire]** lors du choix des dimensions de ciblage et de filtrage.
 
-   ![](assets/query_temporary_table.png){width="70%" align="center" zoomable="yes"}
+   ![Étape de dimension de ciblage et de filtrage avec l&#39;option Schéma temporaire sélectionnée et le schéma Requête A choisi.](assets/query_temporary_table.png){width="70%" align="center" zoomable="yes"}
 
 1. Définissez les populations à l’aide de l’assistant. Les champs à renseigner peuvent différer en fonction du type de cible. Vous pouvez prévisualiser la population ciblée avec vos critères actuels à l’aide de l’onglet **[!UICONTROL Aperçu]**.
 
-   ![](assets/query-sample.png){width="70%" align="center" zoomable="yes"}
+   ![Étape de filtrage des requêtes avec un dossier, une diffusion et un service d&#39;information sélectionnés comme critères, ainsi qu&#39;un onglet Prévisualisation.](assets/query-sample.png){width="70%" align="center" zoomable="yes"}
 
 1. Vous devrez ajouter des critères de filtrage manuellement si vous avez sélectionné **[!UICONTROL Critères de filtrage]** à l’étape 1 ou via l’option **[!UICONTROL Filtres]** > **[!UICONTROL Filtre avancé...]**.
 
    Vous pouvez également ajouter des conditions de groupement de données en cochant la case correspondante. Pour cela, la dimension de filtrage doit impérativement être différente de la dimension de ciblage de la requête. Pour plus d’informations sur les regroupements, consultez cette [section](query-grouping-management.md).
 
-   Vous pouvez également ajouter d’autres critères à l’aide du [Générateur d’expression](../../v8/start/filter-conditions.md#using-and--or--except) et les combiner avec les options logiques ET, OU et SAUF.
+   Vous pouvez également ajouter d&#39;autres critères en utilisant le [Générateur d&#39;expression](../../v8/start/filter-conditions.md#using-and--or--except) et en le combinant avec les options logiques ET, OU et SAUF.
 
    Enregistrez votre filtre si vous souhaitez le réutiliser ultérieurement.
 
@@ -81,11 +81,11 @@ Les colonnes supplémentaires permettent de collecter des informations suppléme
 
 Le lien **[!UICONTROL Ajouter des données...]** permet de sélectionner les données additionnelles à collecter.
 
-![](assets/wf_add_data_link.png){width="70%" align="center" zoomable="yes"}
+![Boîte de dialogue d’activité de requête avec le lien Ajouter des données dans la section Informations complémentaires mis en surbrillance.](assets/wf_add_data_link.png){width="70%" align="center" zoomable="yes"}
 
 Sélectionnez d&#39;abord le type de données à ajouter :
 
-![](assets/wf_add_data_1st_option.png){width="70%" align="center" zoomable="yes"}
+![Assistant de données additionnelles avec les options Données liées à la dimension de filtrage, Données externes et Une proposition d&#39;offre.](assets/wf_add_data_1st_option.png){width="70%" align="center" zoomable="yes"}
 
 * Sélectionnez **[!UICONTROL Données liées à la dimension de ciblage]** pour sélectionner des données de la base Adobe Campaign.
 * Sélectionnez **[!UICONTROL Données externes]** pour ajouter des données provenant d’une base externe. Cette option n’est disponible que si vous avez acquis l’option **Federated Data Access**. Pour plus dʼinformations, consultez la section [Accès à une base de données externe (FDA)](accessing-an-external-database-fda.md).
@@ -97,11 +97,11 @@ Pour ajouter des données de la base Adobe Campaign :
 
 1. Sélectionnez le type de données à ajouter. Il peut s’agir de données appartenant à la dimension de filtrage ou de données stockées dans des tables liées.
 
-   ![](assets/query_add_columns.png){width="70%" align="center" zoomable="yes"}
+   ![Sélectionnez les champs pour ajouter une étape avec les données de la dimension de filtrage sélectionnées et les données liées à la dimension de filtrage.](assets/query_add_columns.png){width="70%" align="center" zoomable="yes"}
 
 1. Lorsque les données appartiennent à la dimension de filtrage de la requête, il suffit de les sélectionner dans la liste des champs disponibles afin de les faire apparaître parmi les colonnes de sortie.
 
-   ![](assets/wf_add_data_field_selection.png){width="70%" align="center" zoomable="yes"}
+   ![Données à ajouter pour ajouter une étape répertoriant les champs des destinataires en tant que champs disponibles et les colonnes de sortie sélectionnées, y compris la société.](assets/wf_add_data_field_selection.png){width="70%" align="center" zoomable="yes"}
 
    Vous pouvez ajouter :
 
@@ -115,7 +115,7 @@ Pour ajouter une collection d’informations liées à une population ciblée, p
 1. Sélectionnez l&#39;option **[!UICONTROL Données liées à la dimension de filtrage]** à la première étape de l&#39;assistant :
 1. Sélectionnez la table contenant les informations à collecter et cliquez sur le bouton **[!UICONTROL Suivant.]**
 
-   ![](assets/wf_add_data_linked_table.png){width="70%" align="center" zoomable="yes"}
+   ![Sélectionnez des champs pour ajouter une étape avec des données liées à la dimension de filtrage sélectionnée et une arborescence de tables liées.](assets/wf_add_data_linked_table.png){width="70%" align="center" zoomable="yes"}
 
 1. Au besoin, indiquez le nombre d’éléments de la collection que vous souhaitez conserver en sélectionnant une des valeurs du champ **[!UICONTROL Données collectées]**. Par défaut, toutes les lignes de la collection sont récupérées, puis filtrées selon les conditions définies à l’étape suivante.
 
@@ -130,11 +130,11 @@ Pour ajouter une collection d’informations liées à une population ciblée, p
    * Si vous choisissez de récupérer plusieurs lignes (**[!UICONTROL Limiter le nombre de lignes]**), vous pouvez indiquer le nombre de lignes à collecter.
    * Si les colonnes collectées contiennent des agrégats, par exemple le nombre de sinistres déclarés, la moyenne des dépenses sur un site, etc., vous pouvez utiliser la valeur **[!UICONTROL Agrégats]**.
 
-   ![](assets/query_add_collection_param.png){width="70%" align="center" zoomable="yes"}
+   ![Etape des paramètres généraux avec la liste Données collectées ouverte : Toutes les lignes, Limiter le nombre de lignes, Agrégats, Fusionner.](assets/query_add_collection_param.png){width="70%" align="center" zoomable="yes"}
 
 1. Spécifiez la sous-sélection de la collection.
 
-   ![](assets/query_add_columns_collection_filter.png){width="70%" align="center" zoomable="yes"}
+   ![L&#39;étape de filtrage de la collection avec le libellé Conditions contient des offres et la date de création postérieure à une date donnée.](assets/query_add_columns_collection_filter.png){width="70%" align="center" zoomable="yes"}
 
 1. Si vous avez sélectionné l’option **[!UICONTROL Limiter le nombre de lignes]**, définissez l’ordre de tri des données collectées. Lorsque le nombre de lignes collectées est supérieur au nombre de lignes à conserver que vous avez indiqué, l’ordre de tri permet de définir les lignes à conserver.
 
@@ -144,7 +144,7 @@ Dans l’exemple suivant, la requête cherchera à identifier les hommes de 18 �
 
 >[!NOTE]
 >
->D&#39;autres exemples de requête sont présentés dans [cette section](querying-recipient-table.md).
+>Des exemples de requête supplémentaires sont présentés dans la section [Interroger le tableau des destinataires](querying-recipient-table.md).
 
 1. Nommez votre requête puis sélectionnez le lien **[!UICONTROL Editer la requête...]**.
 1. Sélectionnez **[!UICONTROL Critères de filtrage]** dans la liste des types de filtres disponibles.
@@ -155,20 +155,20 @@ Dans l’exemple suivant, la requête cherchera à identifier les hommes de 18 �
    * Les destinataires ayant plus de 18 ans.
    * Les destinataires dont le pays de résidence est la France.
 
-   ![](assets/query_example.png){width="70%" align="center" zoomable="yes"}
+   ![Filtre de requête avec genre égal à Masculin, âge de 18 à 30 ans et région des États-Unis égale à Ouest.](assets/query_example.png){width="70%" align="center" zoomable="yes"}
 
    Vous pouvez visualiser le code SQL correspondant à votre combinaison de critères :
 
-   ![](assets/query_example_sql.png){width="70%" align="center" zoomable="yes"}
+   ![Requête SQL native générée à partir des critères de filtre sur le sexe, l&#39;âge et la région.](assets/query_example_sql.png){width="70%" align="center" zoomable="yes"}
 
 1. Affichez un aperçu des destinataires correspondant à votre requête via l&#39;onglet correspondant afin de vérifier que vos critères sont correctement renseignés :
 
-   ![](assets/query_example_preview.png){width="70%" align="center" zoomable="yes"}
+   ![Onglet Aperçu de la requête répertoriant trois destinataires correspondants, avec un nombre de 3.](assets/query_example_preview.png){width="70%" align="center" zoomable="yes"}
 
 1. Sauvegardez éventuellement vos filtres pour pouvoir les réutiliser ultérieurement puis cliquez sur **[!UICONTROL Terminer]** > **[!UICONTROL Ok]**.
 1. Continuez à modifier votre workflow en y ajoutant d’autres activités. Après le lancement et une fois l’étape de requête précédente terminée, le nombre de personnes destinataires trouvées s’affiche. Vous pouvez afficher d’autres détails à l’aide du menu contextuel de la souris (cliquez avec le bouton droit de la souris sur la transition > **[!UICONTROL Afficher la cible...]**).
 
-   ![](assets/query_example_result.png){width="70%" align="center" zoomable="yes"}
+   ![Activité de requête de workflow avec une transition sortante nommée 3 - Résultat indiquant le nombre de destinataires trouvés.](assets/query_example_result.png){width="70%" align="center" zoomable="yes"}
 
 ## Paramètres de sortie {#output-parameters}
 
@@ -208,7 +208,7 @@ La section ci-dessous présente les bonnes pratiques pour optimiser les requête
 
 Utilisez la dimension de filtrage de la requête au lieu de l’opérateur « exists such as ».
 
-![](assets/optimize-queries-filtering.png){width="70%" align="center" zoomable="yes"}
+![Il existe des conditions de filtrage à l&#39;aide des logs de diffusion des destinataires (broadLog), par exemple, avec un nom interne égal à une diffusion.](assets/optimize-queries-filtering.png){width="70%" align="center" zoomable="yes"}
 
 Dans les requêtes, les conditions « exists such as » des filtres ne sont pas efficaces. Elles constituent l’équivalent d’une sous-requête dans SQL :
 
@@ -216,13 +216,13 @@ Dans les requêtes, les conditions « exists such as » des filtres ne sont pa
 
 Il est recommandé d’utiliser plutôt la dimension de filtrage de la requête :
 
-![](assets/optimize-queries-filtering2.png){width="70%" align="center" zoomable="yes"}
+![Dimension de ciblage pour les destinataires avec la dimension de filtrage définie sur Logs de diffusion des destinataires.](assets/optimize-queries-filtering2.png){width="70%" align="center" zoomable="yes"}
 
 L’équivalent de la dimension de filtrage dans SQL est la jointure interne :
 
 `select iRecipientId from nmsRecipient INNER JOIN nmsBroadLog ON (...)`
 
-Pour plus d’informations sur les dimensions de filtrage, consultez [cette section](build-a-workflow.md).
+Pour plus d&#39;informations sur le filtrage des dimensions, consultez la section [Créer un workflow](build-a-workflow.md).
 
 ### Architecture {#architecture}
 

@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 94%
 ---
 # Propriétés d&#39;exécution{#workflow-properties}
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 L&#39;onglet **[!UICONTROL Exécution]** de la fenêtre **[!UICONTROL Propriétés]** d&#39;un workflow est organisée en 3 sections :
 
-![](assets/wf_execution_tab.png)
+![Onglet Exécution avec les sections Planificateur, Exécution et Gestion des erreurs des propriétés du workflow.](assets/wf_execution_tab.png)
 
 ### Planificateur {#scheduler}
 
@@ -65,7 +65,7 @@ Cette section n’apparaît que dans les workflows de campagne.
 
   Les requêtes sont affichées dans un onglet **[!UICONTROL Logs SQL]** ajouté au workflow (sauf pour les workflows de campagne) et à l’activité **[!UICONTROL Propriétés]** lorsque l’option est activée. L’onglet **[!UICONTROL Audit]** comprend également des requêtes SQL.
 
-  ![](assets/wf_tab_log_sql.png)
+  ![Fenêtre de workflow avec l’onglet Journaux SQL mis en surbrillance en regard des onglets Diagramme et Audit.](assets/wf_tab_log_sql.png)
 
 * **[!UICONTROL Exécuter dans le moteur]**
 
@@ -102,7 +102,7 @@ Cette section n’apparaît que dans les workflows de campagne.
 
   Les opérateurs et opératrices recevront un e-mail, à l’adresse indiquée dans leur profil, le cas échéant. Pour définir les responsable des workflows, accédez au champ **[!UICONTROL Personnes chargées de la supervision]** de l’onglet **[!UICONTROL Général]** des propriétés.
 
-  ![](assets/wf-properties_select-supervisors.png)
+  ![Onglet Général avec la liste déroulante Superviseur(s) ouverte et Superviseurs de workflow en surbrillance.](assets/wf-properties_select-supervisors.png)
 
   Le modèle par défaut **[!UICONTROL Notification du responsable d’un workflow]** comprend un lien qui permet d’accéder via le Web à la console cliente Adobe Campaign et, après connexion, d’agir sur le workflow en erreur.
 
