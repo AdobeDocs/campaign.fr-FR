@@ -37,10 +37,10 @@ topic_v2:
     internal-label: Measurement
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
+source-git-commit: 011875268793bca1a000d745818dbd6c69461227
 workflow-type: tm+mt
-source-wordcount: '2049'
-ht-degree: 85%
+source-wordcount: '2046'
+ht-degree: 83%
 ---
 # Configurer le canal de notification push {#push-notification-configuration}
 
@@ -71,7 +71,7 @@ Avant de créer une application mobile, vous devez vous assurer que vous dispose
 
 >[!CAUTION]
 >
->La configuration des notifications push doit être effectuée par un utilisateur ou une utilisatrice expert(e). Selon votre modèle de mise en œuvre et les personnes impliquées dans celle-ci, vous devrez peut-être attribuer l’ensemble des autorisations à un profil de produit unique ou partager les autorisations entre le développeur/la développeuse de l’application et l’administrateur ou l’administratrice **Adobe Campaign**.
+>La configuration des notifications push doit être effectuée par un utilisateur ou une utilisatrice expert(e). Selon votre modèle de mise en œuvre et les rôles impliqués, vous devrez peut-être attribuer le jeu complet des autorisations à un profil de produit unique. Vous pouvez également partager les autorisations entre le développeur ou la développeuse de l’application et l’administrateur ou l’administratrice **Adobe Campaign**.
 
 Pour attribuer des droits **Propriété** et **Entreprise**, procédez comme suit :
 
@@ -182,7 +182,7 @@ Une fois créée, ouvrez la nouvelle propriété de balise et créez une bibliot
 
 ## Configurer vos services mobiles dans Campaign {#push-service}
 
-Une fois votre application mobile configurée dans [!DNL Adobe Experience Platform Data Collection], vous devez créer deux services (un pour les appareils iOS et un pour les appareils Android) pour pouvoir envoyer des notifications push depuis **[!DNL Adobe Campaign]**.
+Une fois votre application mobile configurée dans [!DNL Adobe Experience Platform Data Collection], créez deux services : l’un pour les appareils iOS et l’autre pour les appareils Android. Ces services vous permettent d&#39;envoyer des notifications push depuis **[!DNL Adobe Campaign]**.
 
 Les notifications push sont envoyées aux utilisateurs et utilisatrices de votre application par le biais d’un service dédié. Lorsque les utilisateurs et utilisatrices installent votre application, ils s’abonnent à ce service : Adobe Campaign s’appuie sur ce service pour cibler uniquement les abonné(e)s de votre application. Dans ce service, vous devez ajouter vos applications iOS et Android à envoyer sur les appareils iOS et Android.
 
