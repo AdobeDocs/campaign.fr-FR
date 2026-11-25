@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 100%
+source-wordcount: '363'
+ht-degree: 83%
 ---
 # Coordonner les mises à jour de données{#coordinating-data-updates}
 
@@ -37,7 +37,7 @@ Ce cas pratique présente la création d’un workflow permettant de gérer des 
 
 Le but est de vérifier que le processus de mise à jour est terminé avant d’exécuter une autre opération de mise à jour. Pour cela, nous allons configurer une variable d’instance et laisser le workflow tester si l’instance est en cours d’exécution afin de décider de poursuivre ou non l’exécution du workflow et d’effectuer la mise à jour.
 
-![](assets/uc_dataupdate_wkf.png)
+![Workflow : planificateur, est en cours d&#39;exécution ? test se terminant par Oui ou Requête, Mise à jour de données et Fin 2 par Non.](assets/uc_dataupdate_wkf.png)
 
 Ce workflow se compose de :
 
@@ -55,19 +55,19 @@ Pour créer le workflow, procédez comme suit :
    >
    >« isRunning » est le nom de la variable d’instance choisie pour cet exemple. Il ne s’agit pas d’une variable intégrée.
 
-   ![](assets/uc_dataupdate_test.png)
+   ![Est en cours d&#39;exécution ? activité de test avec la condition Yes instance.vars.isRunning et la branche par défaut intitulée No.](assets/uc_dataupdate_test.png)
 
 1. Ajoutez une activité **Fin** au branchement **Non**. Ainsi, rien ne sera exécuté si le workflow est déjà en cours d’exécution.
 1. Ajoutez les activités souhaitées au branchement **Oui**. Dans le cas présent, il s&#39;agit des activités **Requête** et **Mise à jour des données**.
 1. Ouvrez la première activité, puis ajoutez la commande **instance.vars.isRunning = true** dans l&#39;onglet **[!UICONTROL Avancé]**. Ainsi, la variable d&#39;instance est définie comme étant en cours d&#39;exécution.
 
-   ![](assets/uc_dataupdate_query.png)
+   ![Onglet Avancé de l&#39;activité Requête avec le script d&#39;initialisation instance.vars.isRunning = true.](assets/uc_dataupdate_query.png)
 
 1. Ajoutez une activité **Fin** à l&#39;extrémité du branchement **[!UICONTROL Oui]**, puis la commande **instance.vars.isRunning = false** dans l&#39;onglet **[!UICONTROL Avancé]**.
 
    De cette manière, aucune action ne sera exécutée tant que le workflow sera en cours d&#39;exécution.
 
-   ![](assets/uc_dataupdate_end.png)
+   ![Onglet avancé de l&#39;activité Fin 2 avec le script d&#39;initialisation instance.vars.isRunning = false.](assets/uc_dataupdate_end.png)
 
 **Rubriques connexes :**
 

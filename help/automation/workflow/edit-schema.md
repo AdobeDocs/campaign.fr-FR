@@ -25,10 +25,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 100%
+source-wordcount: '152'
+ht-degree: 77%
 ---
 # Modification du schéma{#edit-schema}
 
@@ -38,10 +38,10 @@ Les données peuvent être transformées, normalisées et, au besoin, enrichies 
 
 Cette activité ne modifie en rien les données de la table de travail, mais uniquement le schéma de cette dernière, c&#39;est-à-dire la vision logique des données.
 
-![](assets/wf_manipulation_box.png)
+![Modifiez l’activité de schéma avec des colonnes et des expressions de sortie, y compris une colonne Moyenne de commande calculée avec Moy.](assets/wf_manipulation_box.png)
 
 Vous pouvez également créer des jointures avec d&#39;autres tables de travail, à partir de l&#39;onglet **[!UICONTROL Liens]**.
 
-![](assets/wf_manipulation_box_link_tab.png)
+![Onglet Liens de la boîte de dialogue Modifier le schéma avec la boîte de dialogue Définition du lien affichant le schéma cible et les conditions de jointure](assets/wf_manipulation_box_link_tab.png)
 
 La section inférieure permet de paramétrer la liste des conditions de jointure, c&#39;est-à-dire des critères utilisés pour réconcilier les données des deux tables.

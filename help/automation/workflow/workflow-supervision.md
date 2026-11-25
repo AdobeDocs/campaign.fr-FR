@@ -24,21 +24,21 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 100%
+source-wordcount: '773'
+ht-degree: 82%
 ---
 # Cas d’utilisation : supervision de vos workflows{#supervising-workflows}
 
-Ce cas pratique détaille la création d&#39;un workflow qui permet de su le statut d&#39;un ensemble de workflows dont l&#39;état est &quot;en pause&quot;, &quot;stoppé&quot; ou &quot;en erreur&quot;.
+Ce cas pratique détaille la création d&#39;un workflow qui permet de surveiller le statut d&#39;un ensemble de workflows dont l&#39;état est &quot;en pause&quot;, &quot;stoppé&quot; ou &quot;en erreur&quot;.
 
 Son objectif est le suivant :
 
-* Utiliser un workflow pour su un groupe de workflows métiers.
+* Utiliser un workflow pour surveiller un groupe de workflows métiers.
 * Envoyer un message à un superviseur via une activité &quot;diffusion&quot;.
 
-Pour su le statut d&#39;un ensemble de workflows, vous devez procéder comme suit :
+Pour suveiller le statut d&#39;un ensemble de workflows, vous devez procéder comme suit :
 
 1. Créer le orkflow de su.
 1. Ecrire le JavaScript permettant de déterminer les workflows ayant le statut en erreur, en pause ou stoppé.
@@ -49,17 +49,17 @@ Pour su le statut d&#39;un ensemble de workflows, vous devez procéder comme sui
 >
 >Outre le workflow, la **carte thermique des workflows Campaign** vous permet d’analyser dans le détail les workflows en cours d’exécution. Pour plus de détails, reportez-vous à la [section dédiée](heatmap.md).
 >
->Pour plus d’informations sur la **surveillance de l’exécution des workflows**, consultez [cette section](monitor-workflow-execution.md).
+>Pour plus d&#39;informations sur la **surveillance de l&#39;exécution de vos workflows**, consultez la section [Surveillance de l&#39;exécution des workflows](monitor-workflow-execution.md).
 
-## Etape 1: Création du workflow de suivi {#step-1--creating-the-monitoring-workflow}
+## Etape 1: Création du workflow de surveillance {#step-1--creating-the-monitoring-workflow}
 
 Le dossier de workflows que nous allons surveiller est le dossier **« CustomWorkflows »** stocké dans le nœud : **Administration > Exploitation > Workflows techniques**. Ce dossier contient un ensemble de workflows métiers.
 
-Le **workflow de suivi** est stocké à la racine du dossier Workflows Techniques. Le libellé utilisé est **&quot;Su&quot;**.
+Le **workflow de surveillance** est stocké à la racine du dossier Workflows Techniques. Le libellé utilisé est **&quot;Surveillance&quot;**.
 
 Le schéma suivant montre l&#39;ordonnancement des activités :
 
-![](assets/uc_monitoring_workflow_overview.png)
+![Workflow de supervision avec des activités Début, Code JavaScript, Test, Diffusion et Attente liées par des transitions](assets/uc_monitoring_workflow_overview.png)
 
 Ce workflow se compose de :
 
@@ -133,15 +133,15 @@ vars.strWorkflowStop = strStop;
 
 ## Etape 3: Création de l&#39;activité &#39;Test&#39; {#step-3--creating-the--test--activity}
 
-L&#39;activité &quot;Test&quot; permet de déterminer si une diffusion doit être envoyée ou bien si le workflow de su doit recommencer un cycle en se positionnant sur l&#39;activité &quot;Attente&quot;.
+L&#39;activité &quot;Test&quot; permet de déterminer si une diffusion doit être envoyée ou bien si le workflow de surveillance doit recommencer un cycle en se positionnant sur l&#39;activité &quot;Attente&quot;.
 
 Une diffusion est envoyée au superviseur **si au moins une des trois variables d&#39;événements &quot;vars.strWorkflowError&quot;, &quot;vars.strWorkflowPaused&quot;, &quot;vars.strWorkflowStop&quot; est non nulle.**
 
-![](assets/uc_monitoring_workflow_test.png)
+![Activité de test avec une condition True vérifiant que les trois longueurs de variable de workflow sont 0 et une valeur False par défaut](assets/uc_monitoring_workflow_test.png)
 
-L&#39;activité &quot;Attente&quot; peut être paramétrée pour relancer le workflow de su à intervalle régulier. Pour ce cas pratique, **la durée d&#39;attente est fixée à une heure**.
+L&#39;activité &quot;Attente&quot; peut être paramétrée pour relancer le workflow de suveillance à intervalle régulier. Pour ce cas pratique, **la durée d&#39;attente est fixée à une heure**.
 
-![](assets/uc_monitoring_workflow_attente.png)
+![Activité d&#39;attente avec le champ Durée défini sur 1h](assets/uc_monitoring_workflow_attente.png)
 
 ## Etape 4: Préparation de la diffusion {#step-4--preparing-the-delivery}
 
@@ -152,7 +152,7 @@ Ce modèle doit comporter :
 * **l&#39;adresse mail du superviseur**.
 * **un contenu HTML** permettant d&#39;insérer du texte personnalisé.
 
-  ![](assets/uc_monitoring_workflow_variables_diffusion.png)
+  ![Onglet Variables du modèle de diffusion répertoriant WF_Stop, WF_Error et WF_Paused comme variables de texte](assets/uc_monitoring_workflow_variables_diffusion.png)
 
   Les trois variables déclarées (WF_Stop, WF_Paused, WF_Error) correspondent aux trois variables d&#39;événements du workflow.
 
@@ -162,7 +162,7 @@ Ce modèle doit comporter :
 
   Le contenu de modèle de diffusion est le suivant :
 
-  ![](assets/uc_monitoring_workflow_model_diffusion.png)
+  ![Contenu HTML du modèle de diffusion avec les en-têtes et variables de workflows en erreur, en pause et arrêtés.Balises WF_](assets/uc_monitoring_workflow_model_diffusion.png)
 
 Une fois le modèle crée et validé, vous devez configurer l&#39;activité **Diffusion** pour:
 
@@ -176,13 +176,13 @@ En double cliquant sur l&#39;activité **Diffusion**, choisissez les options sui
 * Action à effectuer : sélectionnez **Préparer et démarrer**.
 * Décochez l&#39;option **Traiter les erreurs**.
 
-  ![](assets/uc_monitoring_workflow_optionmodel.png)
+  ![Activité de diffusion avec New, créée à partir d&#39;un modèle, spécifiée dans la diffusion et Préparer et démarrer sélectionnée](assets/uc_monitoring_workflow_optionmodel.png)
 
 * Dans l&#39;onglet **Script** de l&#39;activité **Diffusion**, ajoutez trois variables de type **chaîne de caractères** via le sélecteur de champs de personnalisation
 
-  ![](assets/uc_monitoring_workflow_selectlinkvariables.png)
+  ![Onglet Script de l&#39;activité Diffusion avec le menu de personnalisation ouvert sur la diffusion et l&#39;option Autre](assets/uc_monitoring_workflow_selectlinkvariables.png)
 
-  ![](assets/uc_monitoring_workflow_linkvariables.png)
+  ![Fenêtre Champs disponibles avec Variables sélectionnées et le champ Valeur (texte) mis en surbrillance](assets/uc_monitoring_workflow_linkvariables.png)
 
   Les trois variables déclarées sont :
 

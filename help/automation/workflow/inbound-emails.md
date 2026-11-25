@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 100%
+source-wordcount: '412'
+ht-degree: 90%
 ---
 # Réception d&#39;emails{#inbound-emails}
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 L&#39;activité **Réception d&#39;emails** permet de récupérer et de traiter des emails depuis une messagerie accessible via le protocole POP3.
 
-![](assets/email_rec_edit_1.png)
+![Boîte de dialogue de l’activité E-mails entrants avec le serveur POP3, le compte externe et les champs de script](assets/email_rec_edit_1.png)
 
 Le premier onglet de l’activité **Réception d’e-mails** vous permet de renseigner les paramètres du serveur POP3 et de saisir le script à exécuter à la réception de chaque message. Le deuxième onglet vous permet d’attribuer un planning à l’activité et le troisième onglet définit les conditions d’expiration de l’activité.
 
@@ -46,7 +46,7 @@ Le premier onglet de l’activité **Réception d’e-mails** vous permet de ren
 
      Si cette option n&#39;est pas sélectionnée, vous devez indiquer les paramètres suivants :
 
-     ![](assets/email_rec_edit_1b.png)
+     ![Section du serveur POP3 avec les champs Serveur POP3, Compte POP3, Mot de passe et Port](assets/email_rec_edit_1b.png)
 
      * **[!UICONTROL Serveur POP3]**
 
@@ -91,6 +91,6 @@ Le premier onglet de l’activité **Réception d’e-mails** vous permet de ren
 
    Vous pouvez définir des délais d&#39;expiration à partir de l&#39;onglet **[!UICONTROL Expiration]**.
 
-   ![](assets/email_rec_edit_3.png)
+   ![Onglet Expiration des e-mails entrants avec la liste Type d’expiration indiquant les options de délai et d’expiration](assets/email_rec_edit_3.png)
 
    Le paramétrage est le même que celui de l&#39;activité de planification. Pour plus d&#39;informations, consultez la section [Expirations](define-approvals.md).

@@ -24,16 +24,16 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 100%
+source-wordcount: '892'
+ht-degree: 77%
 ---
 # Envoi d’un rapport à une liste{#send-a-report-to-a-list}
 
 Ce cas pratique présente comment générer, chaque mois, le rapport d&#39;usine **[!UICONTROL Indicateurs de tracking]** au format PDF et l&#39;envoyer à une liste de destinataires.
 
-![](assets/use_case_report_intro.png)
+![Workflow de rapport mensuel avec planificateur, code JavaScript et diffusion, et e-mail avec indicators.pdf joint.](assets/use_case_report_intro.png)
 
 Les étapes principales de mise en oeuvre de ce cas pratique sont les suivantes :
 
@@ -49,7 +49,7 @@ Pour créer la liste des destinataires ciblés, procédez comme suit :
 1. Cliquez sur le bouton **[!UICONTROL Créer]**.
 1. Sélectionnez **[!UICONTROL Nouvelle liste]** et créez une liste de destinataires à laquelle envoyer le rapport.
 
-Pour plus d’informations sur la création de listes, consultez [cette section](../../v8/audiences/create-audiences.md).
+Pour plus d&#39;informations sur la création de listes, consultez la section [Créer des audiences de profil dans Campaign](../../v8/audiences/create-audiences.md).
 
 ## Étape 2 : créer le modèle de diffusion {#step-2--create-the-delivery-template}
 
@@ -57,7 +57,7 @@ Pour créer un modèle de diffusion, procédez comme suit :
 
 1. Dans l’explorateur Adobe Campaign, accédez au nœud **[!UICONTROL Ressources > Modèles > Modèles de diffusion]** et dupliquez le modèle intégré **[!UICONTROL Diffuser par e-mail]**.
 
-   Pour plus d’informations sur la création d’un modèle de diffusion, consultez [cette section](../../v8/send/create-templates.md).
+   Pour plus d&#39;informations sur la création d&#39;un modèle de diffusion, consultez la section [Utilisation de modèles de diffusion](../../v8/send/create-templates.md).
 
 1. Renseignez les différents paramètres du modèle : le libellé, la cible (la liste de destinataires précédemment créée), l’objet et le contenu.
 
@@ -67,17 +67,17 @@ Pour créer un modèle de diffusion, procédez comme suit :
 
    * Cliquez sur le lien **[!UICONTROL Pièces jointes]**, puis sur la flèche en regard du bouton **[!UICONTROL Ajouter]**. Sélectionnez **[!UICONTROL Pièce jointe calculée...]**.
 
-     ![](assets/use_case_report_4.png)
+     ![Fenêtre Modifier les fichiers joints avec le menu Ajouter ouvert et Pièce jointe calculée sélectionnée.](assets/use_case_report_4.png)
 
    * Dans la liste déroulante **[!UICONTROL Type]**, sélectionnez la dernière option : **[!UICONTROL Le nom de fichier est calculé au moment de l’envoi pour chaque message (il peut dépendre du destinataire)]**.
 
-     ![](assets/use_case_report_5.png)
+     ![Définition d&#39;une pièce jointe avec le type défini sur le nom de fichier calculé lors de la diffusion pour chaque message et rapport de libellé.](assets/use_case_report_5.png)
 
      La valeur renseignée dans le champ **[!UICONTROL Libellé]** n&#39;apparaîtra pas dans la diffusion finale.
 
    * Dans la zone de texte, saisissez le chemin d’accès et le nom du fichier.
 
-     ![](assets/use_case_report_6.png)
+     ![Onglet Général de la définition de la pièce jointe avec le chemin du fichier /tmp/indicators.pdf saisi dans la zone de texte.](assets/use_case_report_6.png)
 
      >[!CAUTION]
      >
@@ -85,13 +85,13 @@ Pour créer un modèle de diffusion, procédez comme suit :
 
    * Sélectionnez l’onglet **[!UICONTROL Avancé]** et cochez la case **[!UICONTROL Scripter le nom du fichier qui sera affiché dans la messagerie du destinataire]**. Dans la zone de texte, saisissez le nom de la pièce jointe dans la diffusion finale.
 
-     ![](assets/use_case_report_6b.png)
+     ![Onglet Avancé de définition de pièce jointe avec le script le nom du fichier vérifié et latest-report.pdf saisi.](assets/use_case_report_6b.png)
 
 ## Étape 3 : créer le workflow {#step-3--creating-the-workflow}
 
 Créez le workflow suivant pour ce cas d’utilisation.
 
-![](assets/use_case_report_8.png)
+![Indicateurs de rapport mensuel du workflow : planificateur, puis code JavaScript, puis diffusion.](assets/use_case_report_8.png)
 
 Trois activités interviennent dans ce workflow :
 
@@ -104,17 +104,17 @@ Pour créer ce workflow, procédez comme suit :
 1. Accédez au nœud **[!UICONTROL Administration > Exploitation > Workflows techniques]** de l’explorateur Campaign. Créez ensuite un dossier pour stocker vos workflows.
 1. Créez un workflow.
 
-   ![](assets/use_case_report_7.png)
+   ![Nouvelle boîte de dialogue de workflow dans Administration > Exploitation > Workflows techniques avec un champ Libellé et un bouton Enregistrer.](assets/use_case_report_7.png)
 
 1. Ajoutez tout d&#39;abord une activité de type **[!UICONTROL Planificateur]** et configurez-la pour que le workflow s&#39;exécute le premier lundi de chaque mois.
 
-   ![](assets/use_case_report_9.png)
+   ![L’activité Planificateur affiche le déclenchement à 00 h 00, le premier lundi de chaque mois.](assets/use_case_report_9.png):00:
 
    Pour plus d&#39;informations sur la configuration du planificateur, consultez la section [Planificateur](scheduler.md).
 
 1. Ajoutez ensuite une activité de type **[!UICONTROL Code JavaScript]**.
 
-   ![](assets/use_case_report_10.png)
+   ![Activité de code JavaScript avec le script définissant reportName, path, exportFormat et l&#39;appel xtk.report.export.](assets/use_case_report_10.png)
 
    Dans la zone d&#39;édition, saisissez le code suivant :
 
@@ -137,14 +137,14 @@ Pour créer ce workflow, procédez comme suit :
 
      >[!CAUTION]
      >
-     >Le fichier doit être enregistré sur le serveur. Vous devez saisir le même chemin d’accès et le même nom que ceux renseignés sous l’onglet **[!UICONTROL Général]** de la fenêtre de modification de la pièce jointe calculée, comme indiqué [ici](#step-2--create-the-delivery-template).
+     >Le fichier doit être enregistré sur le serveur. Vous devez saisir le même chemin d’accès et le même nom que ceux renseignés sous l’onglet **[!UICONTROL Général]** de la fenêtre de modification de la pièce jointe calculée, comme indiqué [Étape 2 : créer le modèle de diffusion](#step-2--create-the-delivery-template)).
 
    * **var exportFormat** : saisissez le format d&#39;export du fichier (&quot;PDF&quot;).
    * **var _ctx** (contexte) : dans notre exemple, nous utilisons le rapport **[!UICONTROL Indicateurs de tracking]** dans son contexte global.
 
 1. Ajoutez enfin une activité de **[!UICONTROL Diffusion]** et choisissez les options suivantes :
 
-   ![](assets/use_case_report_11.png)
+   ![Activité de diffusion : nouvelle à partir du modèle, erreurs de préparation et de démarrage, de transition sortante et de traitement décochées.](assets/use_case_report_11.png)
 
    * **[!UICONTROL Diffusion]** : sélectionnez **[!UICONTROL Nouvelle, créée depuis un modèle]**, et sélectionnez le modèle de diffusion créé précédemment.
    * Pour les champs **[!UICONTROL Destinataires]** et **[!UICONTROL Contenu]**, sélectionnez **[!UICONTROL Spécifiés dans la diffusion]**.

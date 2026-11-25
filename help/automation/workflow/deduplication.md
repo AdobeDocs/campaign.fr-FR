@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 100%
+source-wordcount: '1390'
+ht-degree: 83%
 ---
 # Déduplication{#deduplication}
 
@@ -66,7 +66,7 @@ Ce cas de figure doit s&#39;aborder de cette manière :
 * Créer une activité **Union** pour unifier chaque flux entrant.
 * Créer une activité **Déduplication** positionnée après l&#39;activité **Union**.
 
-![](assets/dedup-best-practice.png)
+![Deux requêtes jointes par une union, suivies d&#39;une activité Déduplication et d&#39;une mise à jour de liste](assets/dedup-best-practice.png)
 
 ## Configuration {#configuration}
 
@@ -74,7 +74,7 @@ Pour paramétrer une déduplication, vous devez renseigner son libellé, la mét
 
 1. Cliquez sur le lien **[!UICONTROL Editer la configuration...]** pour définir le mode de déduplication.
 
-   ![](assets/s_user_segmentation_dedup_param.png)
+   ![Fenêtre d&#39;activité Déduplication avec le lien Modifier la configuration dans les paramètres de déduplication](assets/s_user_segmentation_dedup_param.png)
 
 1. Sélectionnez le type de cible pour cette activité (par défaut, la déduplication est liée aux destinataires) et le critère à utiliser, c’est-à-dire le champ pour lequel des valeurs identiques permettent d’identifier les doublons.
 
@@ -84,30 +84,30 @@ Pour paramétrer une déduplication, vous devez renseigner son libellé, la mét
    >
    >L&#39;option **[!UICONTROL Autre]** permet, à l&#39;étape suivante, de sélectionner le ou les critères à utiliser :
 
-   ![](assets/s_user_segmentation_dedup_param2.png)
+   ![Étape de la dimension de ciblage avec e-mail, SMS, téléphone, fax, adresse postale et autres options](assets/s_user_segmentation_dedup_param2.png)
 
 1. L&#39;option **[!UICONTROL Autre]** permet, à l&#39;étape suivante, de sélectionner le ou les critères à utiliser en cas de valeurs identiques :
 
-   ![](assets/s_user_segmentation_dedup_param3.png)
+   ![Étape d&#39;identification des doublons avec la fenêtre Sélectionner une expression et le champ Date de naissance sélectionnés](assets/s_user_segmentation_dedup_param3.png)
 
 1. Sélectionnez dans la liste déroulante la méthode de déduplication à utiliser et indiquez le nombre de doublons à conserver.
 
-   ![](assets/s_user_segmentation_dedup_param4.png)
+   ![Étape de la méthode de déduplication avec doublons à conserver et liste Méthode affichant quatre méthodes](assets/s_user_segmentation_dedup_param4.png)
 
    Les méthodes disponibles sont les suivantes :
 
    * **[!UICONTROL Choisir pour moi]** : sélectionne au hasard parmi les doublons l&#39;enregistrement à conserver.
    * **[!UICONTROL Par ordonnancement de valeurs]** : permet de définir un ordre de priorité des valeurs pour un ou plusieurs champs. Pour définir les valeurs, sélectionnez un champ ou créez une expression puis ajoutez la ou les valeurs dans le tableau correspondant. Cliquez sur le bouton **[!UICONTROL Ajouter]** situé au-dessus de la liste des valeurs pour définir un nouveau champ.
 
-     ![](assets/s_user_segmentation_dedup_param5.png)
+     ![En suivant une méthode de liste de valeurs avec l&#39;anglais et le français dans la liste de priorités et les options Autres valeurs](assets/s_user_segmentation_dedup_param5.png)
 
    * **[!UICONTROL Valeur non vide]** : permet de conserver en priorité les enregistrements pour lesquels la valeur de l&#39;expression sélectionnée n&#39;est pas vide.
 
-     ![](assets/s_user_segmentation_dedup_param6.png)
+     ![Méthode de valeur non vide avec le champ Expression et le champ Numéro de compte sélectionnés](assets/s_user_segmentation_dedup_param6.png)
 
    * **[!UICONTROL A partir d&#39;une expression]** : permet de conserver les enregistrements dont la valeur de l&#39;expression renseignée est la plus petite (ou la plus grande).
 
-     ![](assets/s_user_segmentation_dedup_param7.png)
+     ![Utilisation d&#39;une méthode d&#39;expression avec Status comme expression et conservation des enregistrements avec la plus grande valeur sélectionnée](assets/s_user_segmentation_dedup_param7.png)
 
    >[!NOTE]
    >
@@ -119,11 +119,11 @@ Pour paramétrer une déduplication, vous devez renseigner son libellé, la mét
 
    Dans la section inférieure de la fenêtre d’édition de l’activité, vous pouvez modifier le libellé de la transition sortante de l’objet graphique et saisir un code segment qui sera associé au résultat de l’activité. Ce code peut être utilisé ultérieurement comme critère de ciblage.
 
-   ![](assets/s_user_segmentation_dedup_param8.png)
+   ![Activité Déduplication avec libellé de résultat Cible, code segment PRO et Générer le complémentaire coché](assets/s_user_segmentation_dedup_param8.png)
 
 1. Cochez l’option **[!UICONTROL Générer le complémentaire]** si vous souhaitez exploiter la population restante. Le complémentaire est constitué de tous les doublons. Une autre transition sera alors ajoutée à l’activité, comme suit :
 
-   ![](assets/s_user_segmentation_dedup_param9.png)
+   ![Trois requêtes de profil alimentant la déduplication, avec des sorties Duplicate et Target envoyées à deux activités de mise à jour de liste](assets/s_user_segmentation_dedup_param9.png)
 
 ## Exemple : identifier des doublons avant une diffusion {#example--identify-the-duplicates-before-a-delivery}
 
@@ -133,7 +133,7 @@ Le workflow a pour but de définir la cible d&#39;une diffusion en excluant les 
 
 Les doublons identifiés seront également intégrés à une liste constituée exclusivement de doublons qui pourra être réutilisée en cas de besoin ultérieur.
 
-![](assets/deduplication_example.png)
+![Workflow avec une union de trois requêtes de profil, une déduplication, une diffusion et une mise à jour de liste sur la transition du complément](assets/deduplication_example.png)
 
 1. Placez et reliez les différentes activités nécessaires au déroulement du workflow comme indiqué dans l&#39;illustration ci-dessus.
 
@@ -157,23 +157,23 @@ La fonctionnalité **[!UICONTROL Fusion]** permet de configurer un ensemble de r
 
 Par exemple, avec un ensemble d’enregistrements en double, vous pouvez choisir de conserver le numéro de téléphone le plus ancien ou le nom le plus récent.
 
-Un cas pratique exploitant cette fonctionnalité est disponible dans [cette section](deduplication-merge.md).
+Un cas pratique utilisant cette fonctionnalité est disponible dans [Utiliser la fonctionnalité de fusion de l&#39;activité Déduplication](deduplication-merge.md).
 
 Pour ce faire, procédez comme suit :
 
 1. Dans l’étape de sélection de la **[!UICONTROL méthode de déduplication]**, cliquez sur le lien **[!UICONTROL Paramètres avancés]**.
 
-   ![](assets/dedup1.png)
+   ![Étape de la méthode de déduplication avec le lien Paramètres avancés mis en surbrillance](assets/dedup1.png)
 
 1. Sélectionnez l&#39;option **[!UICONTROL Fusionner les enregistrements]** pour activer la fonctionnalité.
 
    Si vous souhaitez regrouper plusieurs champs de données dans chaque condition de fusion, activez l&#39;option **[!UICONTROL Utiliser plusieurs critères de fusion des enregistrements]**.
 
-   ![](assets/dedup2.png)
+   ![Paramètres avancés avec option Fusionner des enregistrements et Utiliser plusieurs critères de fusion d&#39;enregistrements cochée](assets/dedup2.png)
 
 1. Après avoir activé la fonctionnalité, un onglet **[!UICONTROL Fusion]** est ajouté à l&#39;activité **[!UICONTROL Déduplication]**. Il vous permet de définir des groupes de champs à fusionner et leurs règles associées.
 
-   Pour plus d&#39;informations à ce sujet, reportez-vous au cas pratique disponible dans [cette section](deduplication-merge.md).
+   Pour plus d’informations à ce sujet, consultez le cas d’utilisation dédié disponible dans la section [Utiliser la fonctionnalité de fusion de l’activité Déduplication](deduplication-merge.md).
 
 ## Paramètres d&#39;entrée {#input-parameters}
 

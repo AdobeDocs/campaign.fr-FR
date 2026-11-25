@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 100%
+source-wordcount: '531'
+ht-degree: 84%
 ---
 # Sous-workflow{#sub-workflow}
 
@@ -30,13 +30,13 @@ L’activité **[!UICONTROL Sous-workflow]** permet de déclencher l’exécutio
 
 Vous pouvez appeler plusieurs sous-workflows au sein d’un même workflow. Les sous-workflows sont exécutés de manière synchrone.
 
-Dans l’exemple ci-dessous, un workflow principal appelle un sous-workflow à l’aide de sauts. Pour plus d’informations sur les objets graphiques de type saut, voir [cette section](jump-start-point-and-end-point.md).
+Dans l’exemple ci-dessous, un workflow principal appelle un sous-workflow à l’aide de sauts. Pour plus d&#39;informations sur les objets graphiques de type saut, consultez [Saut (point de départ et d&#39;arrivée)](jump-start-point-and-end-point.md).
 
 1. Créez un workflow que vous allez utiliser en tant que sous-workflow dans un autre workflow.
 1. Insérez une activité **[!UICONTROL Saut (arrivée)]** avec une priorité de 1 au début du workflow. Si vous avez plusieurs sauts de type « arrivée », Adobe Campaign utilisera celui associé au plus petit nombre.
 1. Insérez une activité **[!UICONTROL Saut (départ)]** avec une priorité de 2 à la fin du workflow. Si vous avez plusieurs sauts de type « départ », Adobe Campaign utilisera celui associé au plus grand nombre.
 
-   ![](assets/subworkflow_jumps.png)
+   ![Diagramme de sous-workflow commençant par Saut (fin) 1 et se terminant par Saut (début) 2 autour des requêtes et d&#39;une union.](assets/subworkflow_jumps.png)
 
    >[!NOTE]
    >
@@ -49,12 +49,12 @@ Dans l’exemple ci-dessous, un workflow principal appelle un sous-workflow à l
 1. Insérez une activité **[!UICONTROL Sous-workflow]** et ouvrez-la.
 1. Sélectionnez le workflow que vous souhaitez utiliser dans la liste déroulante **[!UICONTROL Modèle de workflow]**.
 
-   ![](assets/subworkflow_selection.png)
+   ![Activité Sous-workflow avec le modèle de workflow dans la liste déroulante Modèle de workflow, Sous-workflow (WKF55) sélectionné.](assets/subworkflow_selection.png)
 
 1. Vous pouvez également ajouter un script de paramétrage pour modifier le fonctionnement du workflow référencé.
 1. Cliquez sur **[!UICONTROL OK]**. Vous créez ainsi automatiquement une transition sortante avec le libellé de l’activité **[!UICONTROL Saut (départ)]** du workflow sélectionné.
 
-   ![](assets/subworkflow_outbound.png)
+   ![Workflow de Principal avec sous-workflow d’appel et transition sortante intitulée Saut (point de départ) 2.](assets/subworkflow_outbound.png)
 
 1. Exécutez le workflow.
 
@@ -64,7 +64,7 @@ Une fois exécuté, le workflow qui a été appelé en tant que sous-workflow re
 * Le nombre de populations intermédiaires ne peut pas être affiché.
 * Les logs de sous-workflow s’affichent dans le workflow principal.
 
-  ![](assets/subworkflow_logs.png)
+  ![Onglet Audit du workflow principal affichant les messages du journal de sous-workflow pour la requête de résultat.](assets/subworkflow_logs.png)
 
 >[!NOTE]
 >

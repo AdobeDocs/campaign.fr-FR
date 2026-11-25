@@ -28,32 +28,32 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 77%
+source-wordcount: '314'
+ht-degree: 58%
 ---
 # Créer un filtre {#creating-a-filter}
 
-Les filtres disponibles dans Adobe Campaign sont définis au travers de conditions de filtrage qui sont créées selon le même mode opératoire que lors de la création de requêtes dans le [Query editor](../../v8/start/query-editor.md).
+Les filtres disponibles dans Adobe Campaign sont définis au moyen de conditions de filtrage qui sont créées selon le même mode de fonctionnement que lors de la création de requêtes dans le [Query editor](../../v8/start/query-editor.md).
 
-Le nœud **[!UICONTROL Administration > Paramétrage > Filtres prédéfinis]** contient tous les filtres par défaut. Certaines d’entre elles sont utilisées dans les listes et les vues d’ensemble. En savoir plus sur les [filtres prédéfinis intégrés](../../v8/audiences/create-filters.md).
+Le nœud **[!UICONTROL Administration > Configuration > Filtres prédéfinis]** contient tous les filtres par défaut. Certaines d’entre elles sont utilisées dans les listes et les vues d’ensemble. En savoir plus sur les [filtres prédéfinis intégrés](../../v8/audiences/create-filters.md).
 
 Par exemple, la liste des opérateurs peut être filtrée par **[!UICONTROL Compte actifs]** :
 
-![](assets/query_editor_filter_sample_1.png)
+![Liste des opérateurs avec le menu Filtres ouvert et le filtre Comptes actifs sélectionné](assets/query_editor_filter_sample_1.png)
 
 Le filtre correspondant contient la requête sur la valeur **[!UICONTROL Compte bloqué]** du schéma des **[!UICONTROL Opérateurs]** :
 
-![](assets/query_editor_filter_sample_2.png)
+![Liste des filtres prédéfinis avec le filtre Par login ou libellé sélectionné, affichant le libellé, le nom interne et le type de document](assets/query_editor_filter_sample_2.png)
 
 Pour la même liste, le filtre **[!UICONTROL Par login ou libellé]** permet de filtrer les données de la liste selon la valeur saisie dans le champ de filtrage :
 
-![](assets/query_editor_filter_sample_3.png)
+![La liste des opérateurs filtrée avec agence saisie dans le champ Login ou libellé contient , renvoyant un opérateur](assets/query_editor_filter_sample_3.png)
 
 Il est construit comme suit :
 
-![](assets/query_editor_filter_sample_4.png)
+![Par définition de filtre de connexion ou de libellé avec trois conditions de filtre sur le libellé, le nom et la description](assets/query_editor_filter_sample_4.png)
 
 Pour correspondre aux critères de filtrage, le compte de l&#39;opérateur doit vérifier une des conditions suivantes :
 
@@ -67,7 +67,7 @@ Pour correspondre aux critères de filtrage, le compte de l&#39;opérateur doit 
 
 La variable **[!UICONTROL Pris en compte si]** permet de définir les critères d&#39;application de ces conditions de filtrage. Ici, le **$(/tmp/@text)** les caractères représentent le contenu du champ de saisie associé au filtre :
 
-![](assets/query_editor_filter_sample_5.png)
+![La liste des opérateurs avec l&#39;agence saisie dans le champ Login ou libellé contient, renvoyant l&#39;agence de Londres](assets/query_editor_filter_sample_5.png)
 
 Ici, **$(/tmp/@text)=&#39;agence&#39;**
 

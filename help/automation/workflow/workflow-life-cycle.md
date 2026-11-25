@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 100%
+source-wordcount: '279'
+ht-degree: 89%
 ---
 # Cycle de vie d&#39;un workflow {#workflow-life-cycle}
 
@@ -42,7 +42,7 @@ Le cycle de vie d&#39;un workflow comporte trois grandes étapes.
 
 Par exemple, dans le workflow ci-dessous, les activités **Début** et **Diffusion** sont entourées tandis que l’activité **Validation** clignote.
 
-![](assets/new-workflow-6.png)
+![Workflow avec les activités Début et Diffusion décrites et l&#39;activité Validation en cours d&#39;exécution, puis Contrôle de diffusion et Fin](assets/new-workflow-6.png)
 
 Cela signifie que les deux premières activités ont été exécutées avec succès et que la validation est en cours, c&#39;est-à-dire que l&#39;activité est créée mais pas encore complétée.
 
@@ -50,4 +50,4 @@ Les caractères **574 -Ok** affichés au-dessus de la transition suivant l’act
 
 Le workflow est donc démarré et attend la décision d&#39;un opérateur du groupe spécifié dans l&#39;activité **Validation**. Les opérateurs et opératrices du groupe ayant une adresse e-mail ou un numéro de mobile renseigné reçoivent une notification.
 
-Pour plus d&#39;informations sur la manière de surveiller vos workflows, voir [cette section](monitor-workflow-execution.md).
+Pour plus d&#39;informations sur la manière de surveiller vos workflows, consultez la section [Surveiller l&#39;exécution des workflows](monitor-workflow-execution.md).

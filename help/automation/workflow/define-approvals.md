@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 98%
+source-wordcount: '915'
+ht-degree: 92%
 ---
 # Définition des validations {#defining-approvals}
 
@@ -43,11 +43,11 @@ Un message est envoyé à un groupe d’opérateurs et d’opératrices et le wo
 
 Une validation peut comporter plusieurs options au choix de l’opérateur ou de l’opératrice. Cependant, il est possible de n’autoriser qu’un seul choix dans le but de soumettre une tâche à réaliser à un opérateur ou une opératrice, par exemple effectuer un ciblage. L’opérateur ou l’opératrice peut alors répondre une fois la tâche réalisée (le processus reprend alors). L’exemple suivant illustre ces types de validations :
 
-![](assets/validation-1.png)
+![Workflow avec validation de diffusion aboutissant à Envoyer, Notifier le refus et Notifier la demande de modification](assets/validation-1.png)
 
 Dans les opérations, toutes les étapes qui nécessitent une validation fonctionnent sur le même principe.
 
-![](assets/validation-1-in-op.png)
+![Bloc de diffusion de la campagne avec le menu Validation affichant les options Valider le contenu et Valider le ciblage, tous deux en attente de validation](assets/validation-1-in-op.png)
 
 Pour répondre, l’opérateur dispose de deux modes : valider via la page web dont l’URL est fournie dans l’e-mail envoyé, ou valider directement depuis la console.
 
@@ -69,7 +69,7 @@ Dans les opérations, les éléments à valider sont affichés dans le tableau d
 
 Pour les workflows techniques, les tâches que l&#39;utilisateur peut valider sont accessibles depuis l&#39;arborescence en sélectionnant le dossier **[!UICONTROL Administration > Exploitation > Objets créés automatiquement > Approbations en attente]**.
 
-![](assets/validation-node.png)
+![Arborescence de l&#39;Explorateur avec Administration > Exploitation > Objets créés automatiquement > Validations en attente sélectionnées](assets/validation-node.png)
 
 ## Groupes {#groups}
 
@@ -86,7 +86,7 @@ Les expirations sont des transitions spécifiques utilisées dans différents ty
 
 Le deuxième onglet des propriétés de l’activité de validation vous permet de définir une ou plusieurs expirations. En effet, vous pouvez définir plusieurs types d’expiration.
 
-![](assets/expiration.png)
+![Onglet Expiration de l’approbation avec une fenêtre Détails de l’expiration et la liste Type d’expiration des options de délai](assets/expiration.png)
 
 Pour ajouter une nouvelle expiration, cliquez sur **[!UICONTROL Ajouter]**. Une transition est ajoutée pour chacune des expirations créées. Vous pouvez ainsi :
 

@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Targeting Activity
   - id: 2454f09c-f028-5647-8fef-1e986ec2d4e5
     internal-label: Subscription Services Activity
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 100%
+source-wordcount: '450'
+ht-degree: 94%
 ---
 # Services d&#39;abonnements{#subscription-services}
 
@@ -34,7 +34,7 @@ Une activité de type **Service d&#39;inscriptions** permet d&#39;abonner ou dé
 
 Pour la paramétrer, éditez l&#39;activité et saisissez son libellé, puis choisissez l&#39;action à effectuer (Inscription ou Désinscription) et le service concerné, comme dans l&#39;exemple ci-dessous :
 
-![](assets/edit_service_inscription.png)
+![Activité de services d&#39;inscriptions avec inscription ou désinscription, option de message de confirmation et liste de services](assets/edit_service_inscription.png)
 
 1. Saisissez le libellé de l&#39;activité.
 1. Sélectionnez **[!UICONTROL Générer une transition sortante]** si vous voulez créer une transition à la fin de l&#39;exécution.
@@ -56,7 +56,7 @@ Pour cela, il faut également exclure les destinataires déjà abonnés.
 >
 >Avant d&#39;abonner manuellement des destinataires à un service, vérifiez que ces derniers acceptent de recevoir des communications de votre part.
 
-![](assets/subscription_services_example.png)
+![Trois requêtes alimentent une Intersection, puis une activité Mise à jour de liste et Services d&#39;abonnement](assets/subscription_services_example.png)
 
 1. Placez les trois requêtes suivantes :
 

@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 100%
+source-wordcount: '296'
+ht-degree: 82%
 ---
 # Chargement (SOAP){#loading-soap}
 
@@ -42,17 +42,17 @@ Le principe de fonctionnement est le suivant :
 
    L&#39;exemple suivant est issu d&#39;un workflow technique du module Message Center.
 
-   ![](assets/load_soap_002.png)
+   ![Activité Chargement (SOAP) avec Utiliser un exemple XML sélectionné, un exemple de résultat et le script d&#39;initialisation.](assets/load_soap_002.png)
 
 1. Pour obtenir un exemple XML, sélectionnez un fichier d’exemple. Le fichier est analysé afin d’établir un exemple de résultat.
 
    Pour un fichier WSDL, saisissez l’URL d’accès correspondante, puis générez le squelette du code. Le service et l’appel sélectionnés sont automatiquement mis à jour et affichés.
 
-   ![](assets/soap_load_003.png)
+   ![Format du résultat avec Utiliser un WSDL sélectionné, un champ URL d&#39;accès et le lien Générer le squelette du code.](assets/soap_load_003.png)
 
 1. Sélectionnez **[!UICONTROL Cliquez ici pour visualiser et modifier le résultat de l&#39;analyse]** afin de définir chaque colonne identifiée.
 
-   ![](assets/soap_load_001.png)
+   ![Fenêtre Format de fichier répertoriant les colonnes identifiées, avec le libellé, le type de données et le nom interne de la colonne sélectionnée.](assets/soap_load_001.png)
 
    Si vous souhaitez mettre à jour l&#39;exemple, sélectionnez **[!UICONTROL Ré-analyser l&#39;exemple]**.
 

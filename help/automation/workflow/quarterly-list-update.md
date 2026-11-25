@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 100%
+source-wordcount: '302'
+ht-degree: 94%
 ---
 # Mise à jour de la liste trimestrielle à l’aide d’une requête incrémentielle {#quarterly-list-update}
 
@@ -36,7 +36,7 @@ Dans l’exemple suivant, une [requête incrémentale](incremental-query.md) est
 
 Comme ces campagnes sont lancées au début de chaque saison afin de proposer des activités sportives pertinentes, ces listes sont mises à jour tous les trimestres. Cependant, une personne destinataire ne doit être ciblée ici qu’une fois tous les 9 mois par cette campagne. Vous pouvez ainsi espacer la fréquence d’éligibilité de la personne destinataire et proposer des activités selon les saisons au fil des ans.
 
-![](assets/incremental_query_example.png)
+![Workflow avec une activité de Requête incrémentale liée par sa transition de résultat à une activité de Mise à jour de liste](assets/incremental_query_example.png)
 
 1. Placez une activité de requête incrémentale ainsi qu&#39;une activité de mise à jour de liste dans un nouveau workflow.
 1. Paramétrez l’onglet **[!UICONTROL Requête incrémentale]** de l’activité comme indiqué à la section [Création dʼune requête](query.md#creating-a-query).

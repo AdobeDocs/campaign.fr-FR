@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 100%
+source-wordcount: '451'
+ht-degree: 91%
 ---
 # Intersection{#intersection}
 
@@ -36,13 +36,13 @@ Une activité de type **Intersection** crée une cible à partir de l&#39;inters
 
 Une intersection permet d’extraire uniquement la population commune à tous les résultats de l’activité entrante. La cible est créée avec tous les résultats reçus : toutes les activités antérieures doivent donc être terminées avant que l’intersection puisse être exécutée. Pour configurer cette activité, vous devez saisir son libellé ainsi que les options relatives au résultat.
 
-![](assets/s_user_segmentation_inter.png)
+![Activité Intersection avec réconciliation définie sur Clés uniquement, un libellé Résultat et l&#39;option Générer le complémentaire](assets/s_user_segmentation_inter.png)
 
 Pour plus d&#39;informations sur la configuration et l&#39;utilisation de l&#39;activité Intersection, voir la section [Extraire les données communes (Intersection)](targeting-workflows.md#extract-joint-data--intersection-).
 
 Cochez l’option **[!UICONTROL Générer le complémentaire]** si vous souhaitez exploiter la population restante. Le complémentaire contiendra l’union des résultats de toutes les activités entrantes, moins l’intersection. Une seconde transition sortante sera alors ajoutée à l’activité, comme suit :
 
-![](assets/s_user_segmentation_inter_compl.png)
+![Activité Intersection avec deux transitions sortantes, Résultat et Complémentaire](assets/s_user_segmentation_inter_compl.png)
 
 ## Exemple d&#39;intersection {#intersection-example}
 
@@ -60,7 +60,7 @@ Dans l&#39;exemple suivant, l&#39;intersection a pour but de calculer les destin
 
    Le résultat de l’intersection est envoyé vers la première mise à jour de liste. Si vous avez choisi d’utiliser le complémentaire, ce dernier est également envoyé vers la seconde mise à jour de liste.
 
-   ![](assets/intersection_example.png)
+   ![Trois requêtes alimentant une Intersection dont le résultat et le complément vont à deux activités de mise à jour de liste](assets/intersection_example.png)
 
 ## Paramètres d&#39;entrée {#input-parameters}
 

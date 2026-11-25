@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 100%
+source-wordcount: '291'
+ht-degree: 84%
 ---
 # Effectuer un calcul d&#39;agrégats {#performing-aggregate-computing}
 
@@ -48,12 +48,12 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
 1. Dans **[!UICONTROL Données à extraire]**, définissez un comptage de la clé primaire (comme dans l&#39;exemple précédent). Ajoutez le champ **[!UICONTROL Genre]** en colonne de sortie. Cochez l&#39;option **[!UICONTROL Grouper]** de la colonne **[!UICONTROL Genre]**. Ainsi, les destinataires seront regroupés par genre.
 
-   ![](assets/query_editor_nveau_27.png)
+   ![Données à extraire avec les colonnes Nombre (clé primaire) et Genre, et Groupe défini sur Oui pour Genre.](assets/query_editor_nveau_27.png)
 
 1. Dans la fenêtre **[!UICONTROL Tri]**, cliquez sur **[!UICONTROL Suivant]** : aucun tri n&#39;est nécessaire dans cet exemple.
 1. Paramétrez le filtrage des données. Ici, vous allez restreindre la sélection aux personnes contacts domiciliées à Paris.
 
-   ![](assets/query_editor_22.png)
+   ![Filtre de l&#39;élément cible : ville (emplacement/@city) égale à Londres, avec le résumé de la requête mis en surbrillance.](assets/query_editor_22.png)
 
    >[!NOTE]
    >
@@ -64,4 +64,4 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
    Il y a trois valeurs distinctes dans un tri par genre : **2** correspond au genre féminin, **1** au genre masculin et la valeur **0** apparaît lorsque le genre est inconnu. Dans cet exemple, la liste comporte 10 femmes, 16 hommes et 2 personnes dont le genre n’est pas renseigné.
 
-   ![](assets/query_editor_agregat_04.png)
+   ![Aperçu des données affichant les nombres 10, 16 et 2 pour les valeurs de genre 2, 1 et 0.](assets/query_editor_agregat_04.png)

@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '2377'
-ht-degree: 100%
+source-wordcount: '2765'
+ht-degree: 84%
 ---
 # Créer un workflow de ciblage{#target-data}
 
@@ -46,11 +46,11 @@ Toutes ces activités sont regroupées dans le premier onglet du workflow.
 
 >[!NOTE]
 >
->Les activités de ciblage sont présentées dans [cette section](activities.md).
+>Les activités de ciblage sont présentées dans la section [À propos des activités de workflow](activities.md).
 
 Les workflows de ciblage peuvent être créés et édités à partir du noeud **[!UICONTROL Profils et Cibles > Traitements > Workflows de ciblage]** de l&#39;arborescence Adobe Campaign ou à partir du menu **[!UICONTROL Profils et Cibles > Workflows de ciblage]** de la page d&#39;accueil.
 
-![](assets/target_wf.png)
+![Liste des workflows de ciblage dans la console cliente sous Profils et cibles, avec les workflows existants et un bouton Créer.](assets/target_wf.png)
 
 Les workflows de ciblage qui s&#39;inscrivent dans le contexte d&#39;une opération sont stockés avec tous les workflows des opérations.
 
@@ -76,17 +76,17 @@ Ces deux dimensions doivent être liées. Ainsi, le contenu de la liste **[!UIC
 
 Par exemple, pour les destinataires (**recipient**), les dimensions de filtrage disponibles seront les suivantes :
 
-![](assets/query-filter-dimensions.png)
+![Boîte de dialogue de requête avec la dimension de ciblage Destinataires et la liste Filtrage des dimensions ouverte, affichant le log de diffusion des destinataires.](assets/query-filter-dimensions.png)
 
 Tandis que pour les **visiteurs**, la liste proposera les dimensions de filtrage suivantes :
 
-![](assets/query-filter-dimension-2.png)
+![Boîte de dialogue de requête avec la dimension de ciblage Visiteurs et la liste Dimension de filtrage ouverte, affichant l’abonnement des visiteurs.](assets/query-filter-dimension-2.png)
 
 ## Création de requêtes {#create-queries}
 
 ### Travailler avec les données additionnelles {#select-data}
 
-Une activité **[!UICONTROL Requête]** permet de sélectionner des données de base pour créer la population cible. Pour plus d’informations, consultez [cette section](query.md#creating-a-query).
+Une activité **[!UICONTROL Requête]** permet de sélectionner des données de base pour créer la population cible. Voir à ce sujet la section [Créer une requête](query.md#creating-a-query).
 
 Les activités suivantes peuvent également servir à lancer des requêtes et à affiner les données de la base de données : [Requête incrémentale](incremental-query.md), [Lecture de liste](read-list.md).
 
@@ -98,19 +98,19 @@ Une fois que des données additionnelles ont été ajoutées, vous pouvez les é
 
 Le lien **[!UICONTROL Editer les données additionnelles...]** permet de visualiser les données qui ont été ajoutées et éventuellement de les modifier ou d&#39;en ajouter de nouvelles.
 
-![](assets/edit-additional-data.png)
+![Activité Requête avec le lien Modifier les données additionnelles mis en surbrillance sous Informations complémentaires.](assets/edit-additional-data.png)
 
 Pour ajouter des données aux colonnes de sortie définies précédemment, sélectionnez-les dans la liste des champs disponibles. Pour créer une colonne de sortie, cliquez sur l’icône **[!UICONTROL Ajouter]**, puis sélectionnez le champ et cliquez sur **[!UICONTROL Modifier une expression]**.
 
-![](assets/query_add_an_output_column.png)
+![Fenêtre de colonnes supplémentaires avec les champs disponibles, les colonnes de sortie et l&#39;icône Ajouter mise en surbrillance pour créer une colonne de sortie.](assets/query_add_an_output_column.png)
 
 Cliquez sur le bouton **Sélection avancée**.
 
-![](assets/query_add_an_output_column_formula.png)
+![Sélectionnez une fenêtre d&#39;expression répertoriant les champs des destinataires, avec le bouton Sélection avancée en bas.](assets/query_add_an_output_column_formula.png)
 
 Indiquez le mode de calcul du champ à ajouter, par exemple un agrégat.
 
-![](assets/query_add_aggregate.png)
+![Étape de type formule avec Traitement sur une fonction d&#39;agrégat sélectionnée et l&#39;option Somme sélectionnée.](assets/query_add_aggregate.png)
 
 L’option **[!UICONTROL Ajouter un sous-élément]** vous permet de rattacher des données calculées à la collection. Vous pouvez ainsi sélectionner des données supplémentaires issues de la collection ou définir des calculs d’agrégats sur les éléments de la collection.
 
@@ -122,23 +122,23 @@ Les collections s’affichent dans le sous-onglet **[!UICONTROL Collections]**. 
 
 Les données supplémentaires collectées peuvent permettre d’affiner le filtrage des données de la base. Pour ce faire, cliquez sur le lien **[!UICONTROL Affiner la cible en utilisant les données supplémentaires...]** pour surfiltrer les données ajoutées.
 
-![](assets/wf_add_data_use_additional_data.png)
+![Activité Requête avec le lien Affiner la cible en utilisant les données additionnelles mis en surbrillance.](assets/wf_add_data_use_additional_data.png)
 
 ### Homogénéisation des données {#homogenize-data}
 
 Dans les activités de type **[!UICONTROL Union]** ou **[!UICONTROL Intersection]**, vous pouvez choisir de ne conserver que les données supplémentaires communes afin d’homogénéiser les données. Dans ce cas, la table de travail de sortie temporaire de cette activité ne contiendra que les données supplémentaires présentes dans tous les ensembles en entrée.
 
-![](assets/use-common-add-data-only.png)
+![Activité d&#39;intersection avec l&#39;option Utiliser des données additionnelles communes uniquement mise en surbrillance et sélectionnée.](assets/use-common-add-data-only.png)
 
 ### Réconcilier avec les données supplémentaires {#reconciliation-with-additional-data}
 
 Pendant les phases de réconciliation des données (dans les activités **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.), vous pouvez sélectionner les colonnes à utiliser pour la réconciliation des données parmi les colonnes supplémentaires. Pour cela, configurez une réconciliation sur une sélection de colonnes et indiquez l’ensemble principal. Sélectionnez ensuite les colonnes dans la section inférieure de la fenêtre, comme dans l’exemple ci-dessous :
 
-![](assets/select-column-and-join.png)
+![Activité Intersection avec une sélection de colonnes choisies, un ensemble principal et les colonnes utilisées pour la liste de jointures.](assets/select-column-and-join.png)
 
 Sélectionnez une expression et confirmez.
 
-![](assets/select-column-and-join-2.png)
+![Sélectionnez une fenêtre d’expression pour une intersection, répertoriant les champs sous la dimension de ciblage avec le numéro de compte sélectionné.](assets/select-column-and-join-2.png)
 
 
 ### Création de sous-ensembles {#create-subsets}
@@ -147,7 +147,7 @@ L’activité **[!UICONTROL Partage]** vous permet de créer des sous-ensembles 
 
 Vous pouvez diviser une cible en plusieurs sous-ensembles en utilisant uniquement les données supplémentaires comme conditions de filtrage, ou en complément des données de la cible. Vous pouvez également utiliser des données externes si vous avez acheté l’option **Federated Data Access**.
 
-Pour plus d’informations, consultez [cette section](#create-subsets-using-the-split-activity).
+Voir à ce sujet la section [Création de sous-ensembles à l&#39;aide de l&#39;activité Partage](#create-subsets-using-the-split-activity).
 
 ## Données de segment {#segment-data}
 
@@ -155,7 +155,7 @@ Pour plus d’informations, consultez [cette section](#create-subsets-using-the-
 
 L’activité d’union vous permet de regrouper le résultat de plusieurs activités dans une même transition. Les ensembles ne doivent pas nécessairement être homogènes.
 
-![](assets/union-keys-only.png)
+![Activité d&#39;union avec les options de réconciliation Clés uniquement, Toutes les colonnes partagées et Une sélection de colonnes.](assets/union-keys-only.png)
 
 Les options de réconciliation des données sont les suivantes :
 
@@ -175,7 +175,7 @@ Les options de réconciliation des données sont les suivantes :
 
   Sélectionnez d&#39;abord l&#39;ensemble principal (celui qui contient les données sources), puis les colonnes à utiliser pour la jointure.
 
-  ![](assets/join-reconciliation-options.png)
+  ![Activité d&#39;union avec une sélection de colonnes, un jeu de Principal et le compte et l&#39;origine des colonnes de jointure sélectionnés.](assets/join-reconciliation-options.png)
 
   >[!CAUTION]
   >
@@ -187,11 +187,11 @@ Les options de réconciliation des données sont les suivantes :
 
   Les enregistrements conservés seront issus d&#39;abord de la population de première transition entrante de la liste, puis, si le nombre maximum n&#39;est pas atteint, ils seront issus de la population de la deuxième transition entrante, etc.
 
-  ![](assets/join_limit_nb_priority.png)
+  ![Activité d&#39;union avec limitation de la taille de la population générée vérifiée et des priorités des populations entrantes.](assets/join_limit_nb_priority.png)
 
 ### Extraction des données communes (Intersection) {#extract-joint-data--intersection-}
 
-![](assets/traitements.png)
+![Populations A, B et C avec des contours marquant les zones couvertes par l&#39;union, l&#39;intersection et l&#39;exclusion.](assets/traitements.png)
 
 L&#39;intersection permet de ne récupérer que les lignes communes aux populations des transitions entrantes. Cette activité doit être configurée comme l&#39;activité d&#39;union.
 
@@ -205,9 +205,9 @@ L’activité d’exclusion vous permet d’exclure d’une population cible les
 
 Si nécessaire, il est possible de manipuler les tables entrantes. En effet, pour exclure une cible d’une autre dimension, cette cible doit être replacée dans la même dimension de ciblage que la cible principale. Pour ce faire, cliquez sur le bouton **[!UICONTROL Ajouter]** et indiquez les conditions de modification des dimensions.
 
-La réconciliation des données se fait au choix par identifiant, changement d&#39;axe ou jointure.
+La réconciliation entre les données se fait au choix par identifiant, changement d&#39;axe ou jointure.
 
-![](assets/exclusion-add-rule.png)
+![Activité d&#39;exclusion avec la boîte de dialogue Définition de l&#39;exception ouverte, avec les options Ensemble exclu et Changement de dimension.](assets/exclusion-add-rule.png)
 
 ### Création de sous-ensembles à lʼaide de lʼactivité Partage {#create-subsets-using-the-split-activity}
 
@@ -221,15 +221,15 @@ Pour la configurer, vous devez d&#39;abord sélectionner des critères :
 1. Dans l&#39;onglet **[!UICONTROL Général]**, sélectionnez l&#39;option souhaitée : **[!UICONTROL Utiliser les données de la cible et les données additionnelles]**, **[!UICONTROL Utiliser les données additionnelles uniquement]** ou **[!UICONTROL Utiliser des données externes]**.
 1. Si l&#39;option **[!UICONTROL Utiliser les données de la cible et les données additionnelles]** est sélectionnée, la dimension de ciblage permet d&#39;utiliser toutes les données véhiculées par la transition entrante.
 
-   ![](assets/split-general-tab-options.png)
+   ![Partagez l&#39;onglet Général de l&#39;activité avec l&#39;option Utiliser les données de la cible et les données additionnelles et la liste des dimensions de filtrage.](assets/split-general-tab-options.png)
 
    Lors de la création des sous-ensembles, ce sont les paramètres de filtrage définis ci-avant qui sont utilisés.
 
    Pour définir les conditions de filtrage, choisissez l’option **[!UICONTROL Ajouter une condition de filtrage sur la population entrante]** et cliquez sur le lien **[!UICONTROL Modifier…]**. Indiquez ensuite les conditions de filtrage pour la création de ce sous-ensemble.
 
-   ![](assets/split-subset-config-all-data.png)
+   ![Partage de l&#39;onglet Sous-ensembles d&#39;activités avec Ajouter une condition de filtrage sur la population entrante sélectionnée et le lien Modifier.](assets/split-subset-config-all-data.png)
 
-   Un exemple d&#39;utilisation des conditions de filtrage dans l&#39;activité **[!UICONTROL Partage]** pour segmenter la cible en différentes populations est présenté dans [cette section](cross-channel-delivery-workflow.md).
+   Un exemple illustrant comment utiliser les conditions de filtrage dans l&#39;activité **[!UICONTROL Partage]** pour segmenter la cible en différentes populations est décrit dans le [workflow de diffusion cross-canal](cross-channel-delivery-workflow.md).
 
    Le champ **[!UICONTROL Libellé]** permet d&#39;associer un nom au sous-ensemble que vous venez de créer. Ce nom sera celui de la transition sortante correspondante.
 
@@ -237,7 +237,7 @@ Pour la configurer, vous devez d&#39;abord sélectionner des critères :
 
    Au besoin, vous pouvez modifier les dimensions de ciblage et de filtrage individuellement pour chaque sous-ensemble à créer. Pour ce faire, modifiez la condition de filtrage du sous-ensemble et cochez la case **[!UICONTROL Utiliser une dimension de filtrage spécifique]**.
 
-   ![](assets/split-subset-config-specific-filtering.png)
+   ![Boîte de dialogue de requête avec l&#39;option Utiliser une dimension de filtrage spécifique cochée, au-dessus des dimensions de ciblage et de filtrage.](assets/split-subset-config-specific-filtering.png)
 
 1. Si l&#39;option **[!UICONTROL Utiliser les données additionnelles uniquement]** est sélectionnée, seules les données additionnelles sont proposées pour réaliser le filtrage des sous-ensembles.
 
@@ -247,21 +247,21 @@ Nous devons ensuite ajouter de nouveaux sous-ensembles :
 
 1. Cliquez sur le bouton **[!UICONTROL Ajouter]** et définissez les critères de filtrage.
 
-   ![](assets/wf_split_add_a_tab.png)
+   ![Onglet Fractionner les sous-ensembles d’activités avec le bouton Ajouter en surbrillance pour créer un nouvel onglet de sous-ensemble à côté de Sous-ensemble.](assets/wf_split_add_a_tab.png)
 
 1. Définissez la dimension de filtrage dans l&#39;onglet **[!UICONTROL Général]** de l&#39;activité (voir ci-dessus). Elle est appliquée par défaut à tous les sous-ensembles.
 
-   ![](assets/wf_split_edit_filtering.png)
+   ![Onglet Sous-ensembles d&#39;activités fractionnées affichant les onglets des sous-ensembles A, B et C et les options de condition de filtrage pour le sous-ensemble B.](assets/wf_split_edit_filtering.png)
 
 1. Si nécessaire, vous pouvez modifier la dimension de filtrage pour chaque sous-ensemble individuellement. Cela vous permet, à partir de la même activité de partage, de créer un ensemble avec toutes les personnes titulaires d’un contrat Gold, un autre avec toutes les personnes destinataires ayant cliqué dans la dernière newsletter et un troisième regroupant les personnes de 18 à 25 ans ayant effectué un achat en magasin au cours des 30 derniers jours. Pour ce faire, sélectionnez l’option **[!UICONTROL Utiliser une dimension de filtrage spécifique]** et sélectionnez le contexte de filtrage des données.
 
 Une fois les sous-ensembles créés, par défaut, l&#39;activité de partage propose en sortie autant de transitions que de sous-ensembles :
 
-![](assets/wf_split_multi_outputs.png)
+![Workflow dans lequel une activité Partage comporte trois transitions sortantes, Sous-ensemble 1, Sous-ensemble 2 et Sous-ensemble 3, pour séparer les activités.](assets/wf_split_multi_outputs.png)
 
 Vous pouvez regrouper tous ces sous-ensembles dans une seule transition de sortie. Dans ce cas, le lien vers les sous-ensembles respectifs sera visible dans le code segment, par exemple. Pour ce faire, sélectionnez l’option **[!UICONTROL Générer tous les sous-ensembles dans le même tableau]**.
 
-![](assets/wf_split_single_output.png)
+![Onglet Général de l’activité Partage avec l’option Générer tous les sous-ensembles d’une même table cochée et mise en surbrillance.](assets/wf_split_single_output.png)
 
 Vous pourrez par exemple positionner une seule activité de diffusion et personnaliser le contenu de cette diffusion en fonction du code segment de chacun des ensembles de destinataires.
 
@@ -306,7 +306,7 @@ Pour réaliser ces opérations, Adobe Campaign propose :
 
 ### Enrichissement et modification des données {#enrich-and-modify-data}
 
-En complément de la dimension de ciblage, la dimension de filtrage permet de préciser la nature des données collectées. Consultez [cette section](targeting-workflows.md#targeting-and-filtering-dimensions).
+En complément de la dimension de ciblage, la dimension de filtrage permet de préciser la nature des données collectées. Voir à ce sujet la section [Dimension de ciblage et dimension de filtrage](targeting-workflows.md#targeting-and-filtering-dimensions).
 
 Les données identifiées et collectées peuvent être enrichies, regroupées et manipulées afin d&#39;optimiser la construction de la cible. Pour ce faire, en plus des activités de manipulation de données présentées dans [cette section](#segmen-data), utilisez les méthodes suivantes :
 

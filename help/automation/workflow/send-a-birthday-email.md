@@ -20,10 +20,10 @@ subfeature_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 100%
+source-wordcount: '1088'
+ht-degree: 79%
 ---
 # Envoi d’un e-mail d’anniversaire{#sending-a-birthday-email}
 
@@ -31,7 +31,7 @@ Ce cas pratique présente comment planifier l&#39;envoi d&#39;un email récurren
 
 Pour réaliser ce cas d&#39;utilisation, nous avons créé le workflow de ciblage suivant :
 
-![](assets/birthday-workflow_usecase_1.png)
+![Workflow d&#39;anniversaire : planificateur, requête, test du 1er mars, branchement avec requête d&#39;année bissextile, union, puis diffusion.](assets/birthday-workflow_usecase_1.png)
 
 Ce workflow, exécuté quotidiennement, sélectionne tous les destinataires dont la date de naissance correspond à la date courante.
 
@@ -48,20 +48,20 @@ Pour cela, les étapes sont les suivantes :
 1. Positionnez une activité **[!UICONTROL Requête]** dans le workflow et double-cliquez dessus.
 1. Cliquez sur lien **Editer la requête** et sélectionnez **[!UICONTROL Critères de filtrage]**.
 
-   ![](assets/s_ncs_user_create_exp_exple00.png)
+   ![Fenêtre Dimension de ciblage et de filtrage avec destinataires sélectionnés et Conditions de filtrage mises en surbrillance.](assets/s_ncs_user_create_exp_exple00.png)
 
 1. Cliquez dans la première cellule de la colonne **[!UICONTROL Expression]** et cliquez sur le bouton **[!UICONTROL Editer l&#39;expression]** pour ouvrir l&#39;éditeur d&#39;expressions.
 
-   ![](assets/s_ncs_user_create_exp_exple.png)
+   ![Éditeur de conditions de filtre avec une cellule d&#39;expression vide et le bouton Modifier l&#39;expression affiché.](assets/s_ncs_user_create_exp_exple.png)
 
 1. Cliquez sur le bouton **[!UICONTROL Sélection avancée]** pour sélectionner le mode de filtrage.
 
-   ![](assets/s_ncs_user_create_exp_exple_a.png)
+   ![Champ pour sélectionner une fenêtre répertoriant les champs Destinataires, avec le bouton Sélection avancée en surbrillance.](assets/s_ncs_user_create_exp_exple_a.png)
 
 1. Choisissez l&#39;option **[!UICONTROL Editer la formule à partir d&#39;une expression]** et cliquez sur le bouton **[!UICONTROL Suivant]** afin d&#39;afficher l&#39;éditeur d&#39;expressions.
 1. Dans la liste des fonctions, double-cliquez sur la fonction **[!UICONTROL Day]** accessible depuis le noeud **[!UICONTROL Date]**. Cette fonction renvoie le nombre représentant le jour de la date transmise en tant que paramètre.
 
-   ![](assets/s_ncs_user_create_exp_exple01.png)
+   ![Modifiez la fenêtre d&#39;expression avec Day() dans la zone d&#39;édition et la fonction Day sélectionnée dans la liste des fonctions.](assets/s_ncs_user_create_exp_exple01.png)
 
 1. Dans la liste des champs disponibles, double-cliquez sur la **[!UICONTROL Date de naissance]**. La section supérieure de l’éditeur d’expression affiche alors la formule suivante :
 
@@ -73,13 +73,13 @@ Pour cela, les étapes sont les suivantes :
 
 1. Dans le requêteur, dans la première cellule de la colonne **[!UICONTROL Opérateur]**, choisissez **[!UICONTROL égal à]**.
 
-   ![](assets/s_ncs_user_create_exp_exple02.png)
+   ![Filtrez les conditions avec le jour de naissance comme expression et la liste déroulante Opérateur s’ouvre avec l’opérateur égal à sélectionné.](assets/s_ncs_user_create_exp_exple02.png)
 
 1. Cliquez ensuite dans la première cellule de la colonne **[!UICONTROL Valeur]** et cliquez sur le bouton **[!UICONTROL Editer l&#39;expression]** pour ouvrir l&#39;éditeur d&#39;expressions.
 1. Dans la liste des fonctions, double-cliquez sur la fonction **[!UICONTROL Day]** accessible depuis le noeud **[!UICONTROL Date]**.
 1. Double-cliquez ensuite la fonction **[!UICONTROL GetDate]** pour récupérer la date courante.
 
-   ![](assets/s_ncs_user_create_exp_exple04.png)
+   ![Modifiez la fenêtre d&#39;expression affichant Day(GetDate()) avec les fonctions Day et GetDate en surbrillance dans la liste des fonctions.](assets/s_ncs_user_create_exp_exple04.png)
 
    La section supérieure de l&#39;éditeur d&#39;expression affiche alors la formule suivante :
 
@@ -93,7 +93,7 @@ Pour cela, les étapes sont les suivantes :
 
    La requête complète est la suivante :
 
-   ![](assets/s_ncs_user_create_exp_exple03.png)
+   ![Requête complète : jour de naissance égal au jour de la date actuelle et mois de naissance égal au mois de la date actuelle.](assets/s_ncs_user_create_exp_exple03.png)
 
 Reliez le résultat de l&#39;activité **[!UICONTROL Requête]** à une activité **[!UICONTROL Diffusion e-mail]** pour envoyer un email à la liste de tous vos destinataires le jour de leur anniversaire.
 
@@ -121,7 +121,7 @@ Après avoir paramétré l&#39;activité **[!UICONTROL Planificateur]** pour que
 >
 >Si l&#39;année en cours est bissextile, tous les destinataires nés le 29 février sont automatiquement inclus.
 
-![](assets/birthday-workflow_usecase_2.png)
+![Filtre d&#39;activité de requête nommé Mois+jour de naissance égal à la date actuelle, correspondant au mois et au jour de naissance à aujourd&#39;hui.](assets/birthday-workflow_usecase_2.png)
 
 La sélection des destinataires dont l’anniversaire correspond à la date actuelle est présentée dans la section [Identification des destinataires dont c’est l’anniversaire](#identifying-recipients-whose-birthday-it-is).
 
@@ -175,7 +175,7 @@ vars.firstOfMarch = 1;
 }
 ```
 
-![](assets/birthday-workflow_usecase_3.png)
+![Onglet Avancé de l&#39;activité de test avec un script d&#39;initialisation définissant la fonction isLeapYear.](assets/birthday-workflow_usecase_3.png)
 
 Ajoutez la condition suivante dans la section **[!UICONTROL Branchements conditionnels]** :
 
@@ -183,7 +183,7 @@ Ajoutez la condition suivante dans la section **[!UICONTROL Branchements conditi
 vars.currentIsALeapYear == 0 && vars.firstOfMarch == 1
 ```
 
-![](assets/birthday-workflow_usecase_4.png)
+![Onglet Test le 1er mars et PAS une année bissextile, avec la condition True vars.currentIsALeapYear == 0 &amp;&amp; vars.firstOfMarch == 1.](assets/birthday-workflow_usecase_4.png)
 
 ### Etape 3 : sélection des destinataires nés le 29 février {#step-3--select-any-recipients-born-on-february-29th}
 
@@ -191,7 +191,7 @@ Créez une activité **[!UICONTROL Branchement]** et reliez l&#39;une des transi
 
 Dans cette requête, sélectionnez tous les destinataires dont la date de naissance est le 29 février.
 
-![](assets/birthday-workflow_usecase_5.png)
+![Requête sélectionnant les destinataires nés le 29 février : mois de naissance égal à 2 et jour de naissance égal à 29.](assets/birthday-workflow_usecase_5.png)
 
 Combinez les résultats par une activité **[!UICONTROL Union]**.
 
@@ -207,4 +207,4 @@ Ajoutez une activité de type **Diffusion récurrente** basée sur le modèle de
 >
 >Si les étapes d&#39;approbation sont activées pour la campagne, les diffusions ne sont envoyées qu&#39;une fois ces étapes confirmées. Pour plus d&#39;informations, reportez-vous à .
 
-![](assets/birthday-workflow_usecase_1.png)
+![Workflow d&#39;anniversaire : planificateur, requête, test du 1er mars, branchement avec requête d&#39;année bissextile, union, puis diffusion.](assets/birthday-workflow_usecase_1.png)

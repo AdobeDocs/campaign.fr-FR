@@ -30,24 +30,24 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 100%
+source-wordcount: '174'
+ht-degree: 71%
 ---
 # Cellules{#cells}
 
 L&#39;activité **[!UICONTROL Cellules]** fournit une vue des différents sous-ensembles sous forme de colonnes de données. Elle facilite la manipulation des sous-ensembles et est également conçue pour utiliser les fonctionnalités de personnalisation.
 
-![](assets/wf_split_cells.png)
+![Onglet Cellules de l’activité Cellules répertoriant les sous-ensembles 1 à 3 avec des colonnes de filtre, de limitation, d’exclusion et de code segment.](assets/wf_split_cells.png)
 
 Cette activité peut être configurée dans le but de renseigner des paramètres spécifiques en fonction des besoins de l&#39;utilisateur. Par défaut, le détail de chaque sous-ensemble est présenté dans une fenêtre dédiée, dans les onglets **[!UICONTROL Cellules]** et **[!UICONTROL Avancé]**.
 
-![](assets/wf_split_cells_with_customization.png)
+![Onglet Cellules avec le bouton Détail mis en surbrillance pour ouvrir les détails du sous-ensemble sélectionné.](assets/wf_split_cells_with_customization.png)
 
 Dans l&#39;exemple ci-dessous, le formulaire de saisie a été modifié : un onglet **[!UICONTROL Données]** a été ajouté pour permettre l&#39;association d&#39;une offre et d&#39;un niveau de priorité pour chaque sous-ensemble.
 
-![](assets/cells-activity-sample.png)
+![Détails du sous-ensemble avec un onglet Données personnalisé contenant les champs Code de segment, Priorité, Identifiant de cellule et Offres.](assets/cells-activity-sample.png)
 
 Pour réaliser ce paramétrage, les informations suivantes ont été ajoutées dans le formulaire des workflows, sous le nœud **[!UICONTROL Administration > Configurations > Formulaires de saisie]** de l&#39;explorateur Adobe Campaign :
 

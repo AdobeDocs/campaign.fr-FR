@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 100%
+source-wordcount: '538'
+ht-degree: 92%
 ---
 # Surveiller les workflows techniques {#monitoring-technical-workflows}
 
@@ -35,9 +35,9 @@ Les workflows techniques ont besoin d&#39;être surveillés, et des mesures doiv
 
 ## Tableau de bord de supervision de l’instance {#instance-monitoring-dashboard}
 
-Le tableau de bord de supervision de l’instance est accessible à partir de l’onglet **[!UICONTROL Supervision]**.
+Le tableau de bord de surveillance de l’instance est accessible à partir de l’onglet **[!UICONTROL Supervision]**.
 
-![](assets/monitoring_technical_workflows1.png)
+![Tableau de bord de surveillance des instances avec la liste des processus, les workflows et les diffusions ayant échoué et les liens des indicateurs système](assets/monitoring_technical_workflows1.png)
 
 Dans Indicateurs système et fichiers core, vérifier qu’aucun indicateur n’est surligné en rouge. Si c’est le cas et que certains le sont :
 
@@ -75,7 +75,7 @@ Pour le **[!UICONTROL Processus de campagne (&#39;operationMgt&#39;, &#39;delive
 
 Le groupe **[!UICONTROL Superviseurs de workflow]** doit contenir des opérateurs devant être tenus informés des échecs et pouvant réagir à temps.
 
-![](assets/monitoring_technical_workflows3.png)
+![Onglet Général des propriétés du workflow avec les superviseurs de workflow sélectionnés dans le champ Superviseur(s)](assets/monitoring_technical_workflows3.png)
 
 En cas de problème, une alerte doit être générée et envoyée au bon groupe.
 
@@ -93,7 +93,7 @@ Tous les workflows techniques personnalisés doivent être documentés dans une 
 * L&#39;opérateur en charge de la surveillance.
 * Des consignes sur les mesures à adopter en cas d&#39;erreur.
 
-![](assets/monitoring_technical_workflows4.png)
+![Feuille de calcul de maintenance répertoriant chaque fréquence de workflow, début, durée, dossier, nom, degré de criticité et dépendances](assets/monitoring_technical_workflows4.png)
 
 ## Planification et automatisation de la surveillance {#planning-and-automation-of-monitoring}
 

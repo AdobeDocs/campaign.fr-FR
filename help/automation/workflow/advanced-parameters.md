@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 100%
+source-wordcount: '567'
+ht-degree: 94%
 ---
 # Paramètres avancés{#advanced-parameters}
 
@@ -39,11 +39,11 @@ L’écran des propriétés d’une activité comporte un onglet **[!UICONTROL A
 
 * une version simplifiée (par exemple pour les activités **[!UICONTROL Début]** ou **[!UICONTROL Fin]**)
 
-  ![](assets/wf-advanced-basic.png)
+  ![Onglet Avancé simplifié d&#39;une activité Démarrer avec les champs Nom, Image, Script d&#39;initialisation et Commentaire.](assets/wf-advanced-basic.png)
 
 * une version plus détaillée (par exemple pour l&#39;activité **[!UICONTROL Requête]**)
 
-  ![](assets/wf-advanced-full.png)
+  ![Onglet Avancé détaillé d&#39;une activité Requête avec les champs Exécution, Affinité, Comportement, Fuseau horaire et gestion des erreurs.](assets/wf-advanced-full.png)
 
 Les champs à renseigner dans l&#39;onglet **[!UICONTROL Avancé]** sont décrits dans les sections suivantes.
 
@@ -72,7 +72,7 @@ Vous pouvez choisir de forcer l’exécution d’un workflow ou d’une activit�
 
 ## Durée max. d’exécution {#max--execution-period}
 
-Ce champ vous permet de définir un avertissement lorsque la tâche prend trop de temps. Cela n’aura aucune incidence sur le fonctionnement du workflow. Si la tâche n’est pas terminée au moment où la **[!UICONTROL Période d’exécution max.]** est terminée, la page **[!UICONTROL Su de l’instance]** affiche un avertissement pour ce workflow. Cette page est accessible à partir de l&#39;onglet **[!UICONTROL Su]** de la page d&#39;accueil.
+Ce champ vous permet de définir un avertissement lorsque la tâche prend trop de temps. Cela n’aura aucune incidence sur le fonctionnement du workflow. Si la tâche n’est pas terminée au moment où la **[!UICONTROL Période d’exécution max.]** est terminée, la page **[!UICONTROL Su de l’instance]** affiche un avertissement pour ce workflow. Cette page est accessible à partir de l&#39;onglet **[!UICONTROL Surveillance]** de la page d&#39;accueil.
 
 ## Comportement {#behavior}
 

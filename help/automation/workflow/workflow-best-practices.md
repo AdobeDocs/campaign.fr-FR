@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 100%
+source-wordcount: '1425'
+ht-degree: 97%
 ---
 # Bonnes pratiques relatives aux workflows{#workflow-best-practices}
 
@@ -95,7 +95,7 @@ Le nom d&#39;une activité figure dans l&#39;onglet **[!UICONTROL Avancé]**. Ne
 * Commencez toujours votre workflow par une activité **[!UICONTROL Début]** ou une activité **[!UICONTROL Planificateur]**. Lorsque cela est pertinent, vous pouvez également utiliser une activité **[!UICONTROL Signal externe]**.
 * Lors de la construction de votre workflow, n&#39;utilisez qu&#39;une seule **** activité Planificateur par branche. Si une même branche d&#39;un workflow comporte plusieurs planificateurs (liés les uns aux autres), le nombre de tâches à exécuter sera multiplié de manière exponentielle, ce qui surchargerait considérablement la base. Cette règle s’applique également à toutes les activités comportant un onglet **[!UICONTROL Planification &amp; historique]**. En savoir plus sur la [planification](scheduler.md).
 
-  ![](assets/wf-scheduler.png)
+  ![Disposition correcte avec un planificateur par branche, par rapport à deux planificateurs dans une branche marquée comme non autorisée.](assets/wf-scheduler.png)
 
 * Utilisez des activités **[!UICONTROL Fin]** pour chaque workflow. Cela permet à Adobe Campaign de libérer l’espace temporaire utilisé pour réaliser les calculs dans les workflows. Voir à ce sujet la section [Début et Fin](start-and-end.md).
 
@@ -158,4 +158,4 @@ D&#39;autres bonnes pratiques doivent être appliquées lors de la planification
 
 Dans un environnement de production, évitez d&#39;exécuter des workflows dans le moteur. Lorsque l&#39;option **[!UICONTROL Exécuter dans le moteur]** est cochée dans les **[!UICONTROL Propriétés d&#39;un workflow]**, le workflow en question devient prioritaire et tous les autres workflows sont arrêtés par le moteur de workflow tant que celui-ci n&#39;est pas terminé.
 
-![](assets/wf-execute-in-engine.png)
+![Onglet Exécution des propriétés du workflow avec l’option Exécuter dans le moteur (ne pas utiliser en production) cochée.](assets/wf-execute-in-engine.png)

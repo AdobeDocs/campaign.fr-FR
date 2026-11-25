@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 100%
+source-wordcount: '433'
+ht-degree: 78%
 ---
 # Extraction (fichier){#extraction-file}
 
@@ -46,29 +46,29 @@ Pour paramétrer l&#39;extraction des données, les étapes sont les suivantes 
 1. Indiquez le nom du fichier de sortie : ce nom peut contenir des variables, insérées à partir du bouton de personnalisation situé à droite du champ.
 1. Cliquez sur **[!UICONTROL Editer le format du fichier...]** pour sélectionner les données à extraire.
 
-   ![](assets/s_advuser_extract_file_param.png)
+   ![Activité Extraction (fichier) avec la fenêtre Format de fichier d&#39;extraction ouverte à partir du lien Modifier le format de fichier.](assets/s_advuser_extract_file_param.png)
 
    L’option **[!UICONTROL Gérer les groupements (GROUP BY + HAVING)]** ajoute une étape supplémentaire afin de filtrer sur le résultat final de l’agrégat, par exemple sur tel type de bon de commande, sur les clientes et clients ayant passé plus de 10 commandes, etc.
 
 1. Au besoin, vous pouvez ajouter de nouvelles colonnes dans le fichier de sortie, comme résultat de calculs ou de traitement sur les données. Pour ce faire, cliquez sur l’icône **[!UICONTROL Ajouter]**.
 
-   ![](assets/s_advuser_extract_file_add_col.png)
+   ![Fenêtre Format du fichier d&#39;extraction avec l&#39;icône Ajouter mise en surbrillance à droite de la liste Colonnes de sortie.](assets/s_advuser_extract_file_add_col.png)
 
    Dans la ligne supplémentaire, cliquez sur l&#39;icône **[!UICONTROL Modifier l’expression]** pour définir le contenu de la nouvelle colonne.
 
-   ![](assets/s_advuser_extract_file_add_exp.png)
+   ![Liste des colonnes de sortie avec l’icône Modifier l’expression dans la colonne Date de création.](assets/s_advuser_extract_file_add_exp.png)
 
    Vous accédez alors à la fenêtre de sélection. Cliquez sur **[!UICONTROL Sélection avancée]** pour choisir le processus à appliquer aux données.
 
-   ![](assets/s_advuser_extract_file_advanced_selection.png)
+   ![Champ pour sélectionner une fenêtre répertoriant les champs des destinataires, avec le bouton Sélection avancée en surbrillance.](assets/s_advuser_extract_file_advanced_selection.png)
 
    Sélectionnez la formule souhaitée dans la liste.
 
-   ![](assets/s_advuser_extract_file_agregate_values.png)
+   ![Fenêtre de type Formule avec Traitement sur une fonction d&#39;agrégat sélectionnée et l&#39;option Valeur maximale sélectionnée.](assets/s_advuser_extract_file_agregate_values.png)
 
 Vous pouvez définir un post-traitement à exécuter pendant l’extraction des données, ce qui vous permet de compresser ou de chiffrer les fichiers. Pour ce faire, la commande souhaitée doit être ajoutée dans l’onglet **[!UICONTROL Script]** de l’activité.
 
-![](assets/postprocessing_dataextraction.png)
+![Activité Extraction (fichier) de données avec l&#39;onglet Script mis en surbrillance pour l&#39;ajout d&#39;une commande de post-traitement.](assets/postprocessing_dataextraction.png)
 
 ## Liste des fonctions d&#39;agrégats {#list-of-aggregate-functions}
 

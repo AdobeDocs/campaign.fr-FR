@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 100%
+source-wordcount: '612'
+ht-degree: 84%
 ---
 # Gestion de contenu{#content-management}
 
@@ -47,7 +47,7 @@ Les propriétés de l&#39;activité se divisent en trois étapes :
 * **Mise à jour du contenu**: la tâche peut modifier l&#39;objet du contenu ou importer tout le contenu XML.
 * **Action**: le contenu résultant peut être enregistré ou généré.
 
-  ![](assets/content_mgmt_edit.png)
+  ![Activité de gestion de contenu avec contenu, mettre à jour le contenu et action pour exécuter des sections et une transition sortante](assets/content_mgmt_edit.png)
 
 1. **Content**
 
@@ -59,19 +59,19 @@ Les propriétés de l&#39;activité se divisent en trois étapes :
 
      Cette option permet de sélectionner un contenu déjà créé, à partir du champ **[!UICONTROL Contenu]**. Ce champ n&#39;est visible que lorsque l&#39;option **[!UICONTROL Explicite]** est sélectionnée.
 
-     ![](assets/content_mgmt_explicit.png)
+     ![Section de contenu avec l&#39;option Explicite sélectionnée et un champ Contenu défini sur un contenu existant](assets/content_mgmt_explicit.png)
 
    * **[!UICONTROL Calculé par un script]**
 
      L&#39;identifiant du contenu est calculé par un script. Le champ **[!UICONTROL Script]** permet de définir un template JavaScript évaluant l&#39;identifiant (la clé primaire) du contenu. Ce champ n&#39;est visible que lorsque l&#39;option **[!UICONTROL Calculé par un script]** est sélectionnée.
 
-     ![](assets/content_mgmt_script.png)
+     ![Section de contenu avec Calculé par un script sélectionné et le champ Script affiché](assets/content_mgmt_script.png)
 
    * **[!UICONTROL Nouveau, créé depuis un modèle de publication]**
 
      Créer un nouveau contenu depuis un modèle de publication. Ce nouveau contenu sera enregistré dans le dossier indiqué dans le champ **[!UICONTROL Chaîne]**. Le champ **[!UICONTROL Modèle]** indique le modèle de publication à utiliser pour créer le contenu.
 
-     ![](assets/content_mgmt_new.png)
+     ![Section de contenu avec Nouveau, créée à partir d&#39;un modèle de publication sélectionné et des champs Modèle et Canal](assets/content_mgmt_new.png)
 
 1. **Mettre à jour le contenu**
 
@@ -83,7 +83,7 @@ Les propriétés de l&#39;activité se divisent en trois étapes :
 
      Cette option permet de construire le contenu à partir d&#39;un document XML téléchargé depuis un serveur Web et éventuellement de le transformer via une feuille de style XSL. Lorsque cette option est cochée, le champ **[!UICONTROL URL]** indique l&#39;URL de téléchargement du contenu XML. Le champ **[!UICONTROL Feuille de style XSL]** permet d&#39;indiquer la feuille de style à utiliser pour transformer le document XML téléchargé. Cette propriété est optionnelle.
 
-     ![](assets/content_mgmt_xmlcontent.png)
+     ![Mettre à jour la section de contenu avec l&#39;accès aux données d&#39;un flux XML vérifié, affichant les champs URL et feuille de style XSL](assets/content_mgmt_xmlcontent.png)
 
 1. **Action à effectuer**
 
@@ -97,7 +97,7 @@ Les propriétés de l&#39;activité se divisent en trois étapes :
 
      Cette option enregistre le contenu puis génère les fichiers de sortie pour chacun des modèles de transformation dont le type de publication est &#39;Fichier&#39;.
 
-     ![](assets/content_mgmt_generate.png)
+     ![Action à effectuer dans la section avec l&#39;option Générer sélectionnée et le champ Dossier de publication affiché](assets/content_mgmt_generate.png)
 
      La transition sortante est activée pour chacun des fichiers générés avec pour paramètre l&#39;identifiant du contenu enregistré dans la variable **[!UICONTROL contentId]** et le nom du fichier dans la variable **[!UICONTROL filename]**.
 

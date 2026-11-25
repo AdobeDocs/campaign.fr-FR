@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 100%
+source-wordcount: '301'
+ht-degree: 93%
 ---
 # Diffusion récurrente{#recurring-delivery}
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 Une activité de **[!UICONTROL Diffusion récurrente]** permet de paramétrer une instance d&#39;un modèle de diffusion spécifique à une opération.
 
-![](assets/do-not-localize/how-to-video.png) [Découvrez cette fonctionnalité en vidéo](#recurring-delivery-video)
+![Icône du bouton de lecture pour le lien vidéo.](assets/do-not-localize/how-to-video.png) [Découvrez cette fonctionnalité en vidéo](#recurring-delivery-video)
 
 Cette activité est uniquement disponible à partir de l&#39;onglet **[!UICONTROL Ciblages et workflows]** d&#39;une opération.
 
@@ -42,7 +42,7 @@ Pour cela :
 
 1. Sélectionnez le modèle de diffusion sur lequel sera basée l&#39;activité.
 
-   ![](assets/recurring_delivery_001.png)
+   ![Fenêtre de diffusion avec le menu déroulant Modèle de diffusion ouvert et Diffusion e-mail (courrier) sélectionnée.](assets/recurring_delivery_001.png)
 
 1. Paramétrez le modèle de diffusion.
 
@@ -68,6 +68,6 @@ Si vous souhaitez arrêter lʼexécution dʼune diffusion récurrente, vous deve
 
 Cette vidéo explique comment configurer une diffusion récurrente et une activité Planificateur.
 
->[!VIDEO](https://video.tv.adobe.com/v/30589?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
 D’autres vidéos pratiques sur Campaign sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=fr){target="_blank"}.

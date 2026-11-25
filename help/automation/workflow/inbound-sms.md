@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 100%
+source-wordcount: '158'
+ht-degree: 75%
 ---
 # Réception de SMS{#inbound-sms}
 
@@ -41,7 +41,7 @@ L’activité **Réception de SMS** permet de récupérer et de traiter des SMS 
 
 ## Propriétés {#properties}
 
-![](assets/sms_rec_edit.png)
+![Activité des SMS entrants avec le champ Compte externe, les Filtres messages pour traiter le lien et une zone Script.](assets/sms_rec_edit.png)
 
 Le premier onglet de l’activité **Réception de SMS** vous permet de renseigner les paramètres de routage des SMS et de saisir le script à exécuter à la réception de chaque message. Le deuxième onglet vous permet d’attribuer un planning à l’activité et le troisième onglet définit les conditions d’expiration de l’activité.
 
@@ -49,7 +49,7 @@ Le premier onglet de l’activité **Réception de SMS** vous permet de renseign
 1. **[!UICONTROL Script]**
 1. **[!UICONTROL Planning]**
 
-   ![](assets/sms_rec_edit_2.png)
+   ![Onglet Planning des SMS entrants avec l&#39;option Planifier l&#39;exécution du plan activée et Arrêter le planning dès la réception d&#39;un SMS activé.](assets/sms_rec_edit_2.png)
 
 1. **[!UICONTROL Expiration]**
 

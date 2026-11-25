@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 100%
+source-wordcount: '628'
+ht-degree: 86%
 ---
 # Téléchargement Web{#web-download}
 
@@ -47,23 +47,23 @@ L’activité **Téléchargement web** permet de lancer le téléchargement d’
 
    * Pour saisir directement l’URL du fichier à télécharger, sélectionnez l’option **[!UICONTROL URL explicite]** et indiquez l’URL dans le champ correspondant. Cette URL peut être construite avec des données variables.
 
-     ![](assets/download_web_edit.png)
+     ![Activité de téléchargement web avec l&#39;option URL explicite sélectionnée et un champ URL vide.](assets/download_web_edit.png)
 
    * Pour utiliser un **[!UICONTROL Compte externe]**, sélectionnez le compte dans la liste déroulante et indiquez le fichier à télécharger.
 
      Les comptes externes sont configurés à partir du nœud **[!UICONTROL Administration > Plateforme > Comptes externes]** de l’arborescence d’Adobe Campaign. Les paramètres du compte peuvent être modifiés à l’aide de l’icône **[!UICONTROL Modifier le lien]**.
 
-     ![](assets/download_web_edit_external.png)
+     ![Section de fichier Web avec compte externe sélectionné, avec un compte et le nom du fichier à télécharger.](assets/download_web_edit_external.png)
 
    * Pour télécharger le fichier depuis l&#39;instance Adobe Campaign, choisissez l&#39;option **[!UICONTROL Instance Adobe Campaign]**.
 
-     ![](assets/download_web_edit_instance.png)
+     ![Section de fichier web avec instance Adobe Campaign sélectionnée et nom de fichier utilisant une variable.](assets/download_web_edit_instance.png)
 
 1. **Historisation des fichiers**
 
    Le lien **[!UICONTROL Paramètres d&#39;historisation des fichiers...]** permet d&#39;indiquer le répertoire de stockage des fichiers et la fréquence de purge de ce répertoire.
 
-   ![](assets/download_web_edit_hist.png)
+   ![Boîte de dialogue des paramètres d&#39;historisation avec le répertoire de stockage, le nombre de fichiers et la taille maximale (en Mo) des paramètres de purge.](assets/download_web_edit_hist.png)
 
    Les options disponibles sont les suivantes :
 
@@ -85,7 +85,7 @@ L’activité **Téléchargement web** permet de lancer le téléchargement d’
    * **[!UICONTROL Ajouter des en-têtes HTTP au fichier]** : dans certains cas, vous pouvez ajouter des en-têtes HTTP supplémentaires à un fichier. Le plus souvent, ces en-têtes sont utilisés pour fournir des informations supplémentaires à des fins de résolution de problèmes, pour le [partage de ressources entre origines multiples (CORS)](https://developer.mozilla.org/fr/docs/Web/HTTP/CORS) ou pour définir des directives de mise en cache spécifiques.
    * **[!UICONTROL Ignorer le code de retour HTTP]** : les codes de retour HTTP, également appelés codes d’état HTTP, indiquent le résultat d’une requête HTTP.
 
-   ![](assets/download_web_edit_advanced.png)
+   ![Boîte de dialogue des paramètres avancés avec Suivre les redirections, Ajouter les en-têtes HTTP au fichier et Ignorer le code de retour HTTP.](assets/download_web_edit_advanced.png)
 
    L&#39;option **[!UICONTROL Traiter les erreurs]** est présentée dans la section [Traiter les erreurs](monitor-workflow-execution.md#processing-errors).
 

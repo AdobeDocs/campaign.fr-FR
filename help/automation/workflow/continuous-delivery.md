@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 100%
+source-wordcount: '398'
+ht-degree: 94%
 ---
 # Diffusion continue{#continuous-delivery}
 
@@ -34,11 +34,11 @@ ht-degree: 100%
 
 L’activité de type **Diffusion continue** permet d’ajouter de nouvelles personnes destinataires à une diffusion existante. Ce type de diffusion évite d’avoir à créer une diffusion à chaque fois : ce mode est souvent plus efficace, plus particulièrement pour les alertes ou notifications à faible volume envoyées selon les besoins.
 
-![](assets/do-not-localize/how-to-video.png) [Découvrez cette fonctionnalité en vidéo](#continuous-delivery-video)
+![Icône de lecture vidéo](assets/do-not-localize/how-to-video.png) [Découvrez cette fonctionnalité en vidéo](#continuous-delivery-video)
 
 Au niveau du modèle de diffusion, vous pouvez spécifier un script pour calculer le libellé (et le dossier de campagne) de la diffusion associée. Si le script calcule une diffusion qui n’existe pas encore, elle est créée à la volée.
 
-![](assets/edit_diffusion_fil.png)
+![Activité de diffusion au fil de l&#39;eau avec un champ Modèle et des options Destinataires, plus la case à cocher Traiter les erreurs](assets/edit_diffusion_fil.png)
 
 L’option **[!UICONTROL Traiter les erreurs]** affiche une transition particulière qui sera activée si une erreur est générée. Dans ce cas, le workflow ne passe pas en état d’erreur et son exécution se poursuit.
 
@@ -79,6 +79,6 @@ Une diffusion au fil de l’eau crée une diffusion et des logs de diffusion UNI
 
 Cette vidéo montre comment configurer une diffusion en continu avec une requête incrémentale.
 
->[!VIDEO](https://video.tv.adobe.com/v/30233?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
 D’autres vidéos pratiques sur Campaign sont disponibles [ici](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=fr){target="_blank"}.

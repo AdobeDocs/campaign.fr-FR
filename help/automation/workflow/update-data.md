@@ -22,10 +22,10 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 99%
+source-wordcount: '1073'
+ht-degree: 86%
 ---
 # Mise à jour de données{#update-data}
 
@@ -43,7 +43,7 @@ Le champ **[!UICONTROL Type d&#39;opération]** permet de choisir le traitement 
 * **[!UICONTROL Mettre à jour et fusionner les collections]** : mettre à jour les données et choisir un enregistrement principal, puis lier les éléments liés aux doublons de cet enregistrement principal. Les doublons peuvent ensuite être supprimés sans créer d’éléments orphelins attachés.
 * **[!UICONTROL Supprimer]** : supprimez des données.
 
-![](assets/s_advuser_update_data_1.png)
+![L&#39;activité Mise à jour de données avec la liste de type Opération ouverte, affichant Insérer ou mettre à jour via Supprimer.](assets/s_advuser_update_data_1.png)
 
 Le champ **[!UICONTROL Taille de lot]** permet de sélectionner le nombre d’éléments de la transition entrante qui seront mis à jour. Par exemple, si vous indiquez 500, les 500 premiers enregistrements traités seront mis à jour.
 
@@ -57,17 +57,17 @@ Indiquez comment identifier les enregistrements dans la base de données :
 
 * Dans le cas contraire, indiquez un ou plusieurs liens qui permettront d&#39;identifier les données dans la base ou utilisez directement des clés de réconciliation.
 
-![](assets/s_advuser_update_data_2.png)
+![Activité Mise à jour de données, Identification des enregistrements : sélection du schéma Destinataires comme dimension Mise à jour.](assets/s_advuser_update_data_2.png)
 
 ## Sélection des champs à mettre à jour {#selecting-the-fields-to-be-updated}
 
 Utilisez l&#39;icône **[!UICONTROL Associer automatiquement les champs de même nom]** pour que Adobe Campaign identifie automatiquement les champs à mettre à jour.
 
-![](assets/s_advuser_update_data_3b.png)
+![Champs pour mettre à jour le tableau renseigné par le bouton de la baguette qui associe automatiquement les champs du même nom.](assets/s_advuser_update_data_3b.png)
 
 Vous pouvez également utiliser l&#39;icône **[!UICONTROL Ajouter]** pour sélectionner manuellement les champs de la base de données à mettre à jour.
 
-![](assets/s_advuser_update_data_3.png)
+![Bouton Modifier l’expression sur une nouvelle ligne Champs à mettre à jour, ouvrant le sélecteur de champ pour le document Destinataires.](assets/s_advuser_update_data_3.png)
 
 Sélectionnez tous les champs à mettre à jour et, au besoin, ajoutez des conditions pour que cette mise à jour soit réalisée. Pour cela, utilisez la colonne **[!UICONTROL Prise en compte si]**. Les conditions sont appliquées les unes après les autres, dans l&#39;ordre de la liste. Utilisez les flèches situées à droite pour modifier l&#39;ordre des mises à jour.
 
@@ -75,7 +75,7 @@ Vous pouvez utiliser plusieurs fois le même champ de destination.
 
 Dans le cadre d&#39;une opération de type **[!UICONTROL Ajouter ou mettre à jour]**, vous pouvez sélectionner individuellement, pour chaque champ, l&#39;opération à appliquer. Pour cela, sélectionner la valeur souhaitée dans la colonne **[!UICONTROL Opération]**.
 
-![](assets/s_advuser_update_data_5.png)
+![Colonne Opération des champs pour mettre à jour le tableau avec les options Tous, Insérer et Mettre à jour.](assets/s_advuser_update_data_5.png)
 
 Les champs **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICONTROL createdDate]** et **[!UICONTROL createdBy]** sont automatiquement mis à jour lors d&#39;une mise à jour de données, sauf si leur gestion est explicitement paramétrée dans le tableau de mise à jour des champs.
 
@@ -108,15 +108,15 @@ La mise à jour des données et la fusion des collections vous permet de mettre 
 
 1. Sélectionnez le type d&#39;opération **[!UICONTROL Mettre à jour et fusionner les collections]**.
 
-   ![](assets/update_and_merge_collections1.png)
+   ![L&#39;activité Mise à jour de données avec le type d&#39;opération Mettre à jour et fusionner les collections sélectionné dans la liste Type d&#39;opération .](assets/update_and_merge_collections1.png)
 
 1. Sélectionnez l’ordre de priorité des liens. Vous pouvez ainsi identifier l’enregistrement principal. Les liens disponibles varient en fonction de la transition entrante.
 
-   ![](assets/update_and_merge_collections2.png)
+   ![Section d&#39;identification des enregistrements répertoriant les liens, par ordre de priorité, utilisés pour trouver l&#39;enregistrement principal.](assets/update_and_merge_collections2.png)
 
 1. Indiquez les collections à déplacer vers l&#39;enregistrement primaire et les champs à mettre à jour.
 
-   Renseignez également les règles s&#39;appliquant à ces derniers lorsqu&#39;un ou plusieurs enregistrements secondaires sont identifiés. Pour ce faire, vous pouvez utiliser le [créateur d’expressions](../../v8/start/filter-conditions.md#list-of-functions). Par exemple, en indiquant que c&#39;est la valeur mise à jour le plus récemment parmi les différents enregistrements qui doit être conservée.
+   Renseignez également les règles s&#39;appliquant à ces derniers lorsqu&#39;un ou plusieurs enregistrements secondaires sont identifiés. Pour ce faire, vous pouvez utiliser le [Générateur d&#39;expression](../../v8/start/filter-conditions.md#list-of-functions). Par exemple, en indiquant que c&#39;est la valeur mise à jour le plus récemment parmi les différents enregistrements qui doit être conservée.
 
    Indiquez ensuite les conditions de prise en compte de la règle.
 
@@ -126,7 +126,7 @@ La mise à jour des données et la fusion des collections vous permet de mettre 
 
 1. Indiquez éventuellement l&#39;ordre dans lequel vous souhaitez que les enregistrements secondaires soient traités, en sélectionnant **[!UICONTROL Paramètres avancés]** > **[!UICONTROL Doublons]**.
 
-   ![](assets/update_and_merge_collections3.png)
+   ![Champs et collections de l&#39;enregistrement cible à mettre à jour, avec l&#39;expression Source et les colonnes Pris en compte si.](assets/update_and_merge_collections3.png)
 
 Les données des enregistrements secondaires sont associées à l’enregistrement principal si les règles définies sont applicables. En fonction du type de mise à jour sélectionné, les enregistrements secondaires peuvent être supprimés.
 

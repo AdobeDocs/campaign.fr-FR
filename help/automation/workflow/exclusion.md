@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '412'
+ht-degree: 88%
 ---
 # Exclusion{#exclusion}
 
@@ -36,7 +36,7 @@ Une activité de type **Exclusion** crée une cible à partir d&#39;une cible pr
 
 Pour configurer cette activité, saisissez son libellé et sélectionnez l’ensemble de personnes destinataires principal : la population de l’ensemble principal vous permet de construire le résultat. Les profils communs à l’ensemble principal et à au moins une des activités en entrée seront exclus.
 
-![](assets/s_user_segmentation_exclu.png)
+![Activité d&#39;exclusion avec le jeu de Principal, les règles d&#39;exclusion, le libellé du résultat et l&#39;option Générer le complémentaire.](assets/s_user_segmentation_exclu.png)
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Pour configurer cette activité, saisissez son libellé et sélectionnez l’ens
 
 Cochez l’option **[!UICONTROL Générer le complémentaire]** si vous souhaitez exploiter la population restante. Le complémentaire contiendra la population entrante principale, moins la population sortante. Une autre transition de sortie sera alors ajoutée à l’activité, comme suit :
 
-![](assets/s_user_segmentation_exclu_compl.png)
+![Activité d’exclusion avec deux transitions sortantes intitulées Résultat et Complémentaire.](assets/s_user_segmentation_exclu_compl.png)
 
 ## Exemples d&#39;exclusion {#exclusion-examples}
 
@@ -56,7 +56,7 @@ L&#39;exemple suivant cherche à constituer une liste des destinataires dont l&#
 1. Approuvez la configuration de l’exclusion puis insérez une activité de mise à jour de liste au niveau du résultat. Vous pouvez également insérer une autre mise à jour de liste au niveau du complémentaire, si nécessaire.
 1. Exécutez le workflow. Dans cet exemple, le résultat comporte toutes les personnes destinataires âgées de 18 à 30 ans, mais celles habitant à Paris sont exclues et sont envoyées vers le complémentaire.
 
-   ![](assets/exclusion_example.png)
+   ![Workflow où les requêtes 18 à 30 et en direct alimentent une Exclusion avec le résultat et le complémentaire allant chacun à une mise à jour de liste.](assets/exclusion_example.png)
 
 ## Paramètres d&#39;entrée {#input-parameters}
 

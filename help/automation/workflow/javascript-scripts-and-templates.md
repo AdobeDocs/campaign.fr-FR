@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1272'
-ht-degree: 98%
+source-wordcount: '1398'
+ht-degree: 88%
 ---
 # Scripts et modèles JavaScript{#javascript-scripts-and-templates}
 
@@ -39,7 +39,7 @@ Les scripts sont omniprésents dans un diagramme de workflow :
 * L&#39;activité &#39;Test&#39; évalue des expressions JavaScript pour activer la bonne transition.
 * La plupart des champs de texte sont des modèles JavaScript : les expressions JavaScript peuvent être incluses entre &lt;%= et %>. Ces champs contiennent un bouton qui ouvre une liste déroulante pour vous aider à saisir des expressions.
 
-  ![](assets/script-button.png)
+  ![Bouton avec une flèche déroulante à droite d&#39;un champ de texte qui répertorie les propriétés disponibles pour les expressions.](assets/script-button.png)
 
 ## Objets exposés {#objects-exposed}
 
@@ -63,7 +63,7 @@ Les propriétés disponibles pour ces objets sont accessibles depuis le menu dé
 
 Dans cet exemple et pour les exemples suivants, créez un workflow comprenant une activité **Code JavaScript** et une activité **Fin** comme sur le diagramme ci-dessous.
 
-![](assets/script-1.png)
+![Workflow avec une activité Code JavaScript connectée par une transition OK vers une activité Fin.](assets/script-1.png)
 
 Double-cliquez sur l&#39;activité **Code JavaScript** et insérez le script suivant :
 
@@ -104,7 +104,7 @@ Certaines variables d’événement sont modifiées ou lues par les différentes
 
 >[!NOTE]
 >
->Retrouvez d’autres cas d’utilisation de workflows dans [cette section](workflow-use-cases.md).
+>D’autres cas d’utilisation de workflows sont disponibles dans [Cas d’utilisation de workflows](workflow-use-cases.md).
 
 **Exemple 1**
 
@@ -116,7 +116,7 @@ Dans cet exemple, une variable d’instance est utilisée pour calculer dynamiqu
 
    Par exemple: `instance.vars.segmentpercent = 10;`
 
-   ![](assets/js_ex1.png)
+   ![Activité de code JavaScript avec le script instance.vars.segmentpercent = 10 ; saisie dans le champ Script .](assets/js_ex1.png)
 
 1. Ajoutez une activité Requête et ciblez les destinataires en fonction de vos besoins.
 
@@ -124,7 +124,7 @@ Dans cet exemple, une variable d’instance est utilisée pour calculer dynamiqu
 
    C’est ce pourcentage qui est mis à jour dynamiquement grâce à la variable d’instance définie précédemment.
 
-   ![](assets/js_ex2.png)
+   ![Onglet Fractionner les sous-ensembles d&#39;activités avec l&#39;option Limiter les enregistrements sélectionnés activée et Échantillonnage aléatoire limité à 50 %.](assets/js_ex2.png)
 
 1. Dans la section Script d’initialisation de l’onglet Avancé de l’activité Partage, définissez une condition JS. La condition JS sélectionne le pourcentage d’échantillonnage aléatoire de la première transition sortant de l’activité Partage et la met à jour vers une valeur définie par la variable d’instance créée précédemment.
 
@@ -132,13 +132,13 @@ Dans cet exemple, une variable d’instance est utilisée pour calculer dynamiqu
    activity.transitions.extractOutput[0].limiter.percent = instance.vars.segmentpercent;
    ```
 
-   ![](assets/js_ex3.png)
+   ![Onglet Avancé de la division de l’activité avec le paramètre de script d’initialisation limiter.percent à instance.vars.segmentpercent.](assets/js_ex3.png)
 
 1. Assurez-vous que le complément est généré dans une transition distincte de l’activité Partage et ajoutez les activités Fin après chacune des transitions sortantes.
 
 1. Enregistrez et exécutez le workflow. L’échantillonnage dynamique est appliqué en fonction de la variable d’instance.
 
-   ![](assets/js_ex4.png)
+   ![Workflow avec code JavaScript, une requête et une division, avec le premier ensemble et le complémentaire transitions vers deux activités de fin.](assets/js_ex4.png)
 
 **Exemple 2**
 
@@ -180,7 +180,7 @@ Par exemple :
 
 1. Créez une variable d&#39;instance qui définit le nom interne d&#39;une diffusion via l&#39;activité **[!UICONTROL Code JavaScript]** : **instance.vars.deliveryIN = &quot;DM42&quot;**.
 
-   ![](assets/wkf_js_activity_1.png)
+   ![Activité de code JavaScript avec le script instance.vars.deliveryIN = &#39;DM42&#39; dans le champ Script.](assets/wkf_js_activity_1.png)
 
 1. Créez une requête dont les dimensions de ciblage et de filtrage sont les destinataires. Dans les conditions, indiquez que vous souhaitez trouver toutes les personnes destinataires auxquelles la diffusion spécifiée par la variable a été envoyée.
 
@@ -190,7 +190,7 @@ Par exemple :
 
    Le workflow retournera les destinataires à qui la diffusion DM42 a été envoyée.
 
-   ![](assets/wkf_var_in_query.png)
+   ![Filtre de requête sur les logs de diffusion des destinataires où le nom interne de la diffusion est égal à la valeur de instance/vars/deliveryIN.](assets/wkf_var_in_query.png)
 
 ## Fonctions avancées {#advanced-functions}
 

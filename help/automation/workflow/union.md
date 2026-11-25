@@ -19,20 +19,20 @@ subfeature_v2:
     internal-label: Workflows
   - id: ff84ab2f-a7c2-4ced-a3c8-5113f4348d99
     internal-label: Targeting Activity
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 95%
+source-wordcount: '347'
+ht-degree: 82%
 ---
 # Union{#union}
 
-Une **[!UICONTROL Union]** regroupe le résultat de plusieurs activités entrantes dans une cible unique. La cible est créée avec tous les résultats reçus : toutes les activités antérieures doivent donc être terminées pour que l’union soit exécutée.
+Une **[!UICONTROL Union]** regroupe le résultat de plusieurs activités entrantes dans une seule cible. La cible est créée avec tous les résultats reçus : toutes les activités antérieures doivent donc être terminées pour que l’union soit exécutée.
 
-![](assets/s_user_segmentation_union.png)
+![Activité d&#39;union avec les options Réconciliation, la case à cocher Limiter la taille de la population générée et le libellé Résultats](assets/s_user_segmentation_union.png)
 
 >[!NOTE]
 >
->Pour plus d&#39;informations sur la configuration et l&#39;utilisation de l&#39;activité **[!UICONTROL Union]**, consultez [cette page](targeting-workflows.md#combine-several-targets--union-).
+>Pour plus d&#39;informations sur la configuration et l&#39;utilisation de l&#39;activité **[!UICONTROL Union]**, consultez la section [Combiner plusieurs cibles (union)](targeting-workflows.md#combine-several-targets--union-).
 
 ## Exemple d&#39;union {#union-example}
 
@@ -49,7 +49,7 @@ Dans l’exemple suivant, les résultats de deux requêtes sont réunis afin de
 1. Validez l&#39;activité **[!UICONTROL Union]** puis configurez l&#39;activité [Mise à jour de liste](list-update.md).
 1. Démarrez le workflow. Le nombre de résultats s’affiche et la liste définie au niveau de l’activité de mise à jour de liste est créée ou mise à jour. Cette liste contient l’ensemble des personnes destinataires des deux requêtes ou le nombre défini à l’étape précédente, le cas échéant.
 
-   ![](assets/union_example.png)
+   ![Workflow où deux requêtes alimentent une activité Union, qui génère 5 résultats à une activité Mise à jour de liste](assets/union_example.png)
 
 ## Paramètres d&#39;entrée {#input-parameters}
 

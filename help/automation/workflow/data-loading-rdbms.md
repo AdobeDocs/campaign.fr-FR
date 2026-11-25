@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 100%
+source-wordcount: '248'
+ht-degree: 81%
 ---
 # Chargement (SGBD){#data-loading-rdbms}
 
@@ -43,15 +43,15 @@ Le principe de fonctionnement est le suivant :
 
 1. Sélectionnez la source de données dans la liste et saisissez le nom de la table contenant les données à extraire.
 
-   ![](assets/s_advuser_wf_sgbd_sample_1.png)
+   ![Activité Chargement (SGBD) avec une source de données externe partagée sélectionnée et le nom de la table nmsrecipient.](assets/s_advuser_wf_sgbd_sample_1.png)
 
    Le nom de la table saisi dans le champ correspondant sert de modèle pour collecter des données dans la base de données externe. Le nom de la table qui sera effectivement traitée par le workflow peut être calculé ou transmis par la transition entrante de l’activité de chargement de données. Pour sélectionner la table à utiliser, cliquez sur le lien **[!UICONTROL Avancé…]** et sélectionnez l’option **[!UICONTROL Spécifié par la transition]** ou **[!UICONTROL Explicite]**.
 
-   ![](assets/s_advuser_wf_sgbd_sample_5.png)
+   ![Paramètres avancés pour la sélection du nom de la table : identiques au modèle, spécifiés dans la transition, explicites.](assets/s_advuser_wf_sgbd_sample_5.png)
 
 1. Cliquez sur le lien **[!UICONTROL Sélectionner les colonnes à extraire...]** afin de choisir les données qui doivent être collectées dans la base.
 
-   ![](assets/s_advuser_wf_sgbd_sample_2.png)
+   ![Fenêtre Sélectionner des colonnes supplémentaires répertoriant les champs disponibles et les colonnes de sortie sélectionnées pour l&#39;extraction.](assets/s_advuser_wf_sgbd_sample_2.png)
 
 1. Vous pouvez définir un filtre sur ces données. Pour ce faire, cliquez sur le lien **[!UICONTROL Modifier la requête…]**.
 

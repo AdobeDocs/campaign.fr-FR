@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 100%
+source-wordcount: '1304'
+ht-degree: 87%
 ---
 # Configuration d’un workflow d’import récurrent {#setting-up-a-recurring-import}
 
@@ -48,7 +48,7 @@ Cet exemple montre comment pré-paramétrer un workflow qui pourra être réutil
    * **[!UICONTROL Déduplication]** : dédupliquez les données du fichier entrant avant son import dans la base de données.
    * **[!UICONTROL Mise à jour de données]** : mettez la base de données à jour avec les profils importés.
 
-   ![](assets/import_template_example0.png)
+   ![Workflow d&#39;import de modèle : chargement des données (fichier), enrichissement, partage, déduplication, deux activités Mise à jour de données et Fin.](assets/import_template_example0.png)
 
 1. Configurez l&#39;activité **[!UICONTROL Chargement (fichier)]** :
 
@@ -63,14 +63,14 @@ Cet exemple montre comment pré-paramétrer un workflow qui pourra être réutil
 
      Toutes les options sont utilisables, mais il faut modifier le modèle en conséquence. Par exemple, en sélectionnant **[!UICONTROL Spécifié dans la transition]**, vous pouvez ajouter une activité **[!UICONTROL Transfert de fichier]** en amont pour récupérer le fichier à importer à partir d’un serveur FTP/SFTP. Avec la connexion S3 ou SFTP, vous pouvez également importer des données de segments vers Adobe Campaign avec Adobe Real-time Customer Data Platform. Pour plus d’informations, consultez la [documentation d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=fr){target="_blank"}.
 
-     ![](assets/import_template_example1.png)
+     ![Activité Chargement (fichier) avec un exemple de fichier aperçu et Chargez un fichier à partir de l&#39;ordinateur local sélectionné.](assets/import_template_example1.png)
 
 1. Configurez l’activité **[!UICONTROL Enrichissement]**. Dans ce contexte, le but de cette activité est d’identifier les données entrantes.
 
    * Dans l’onglet **[!UICONTROL Enrichissement]**, sélectionnez **[!UICONTROL Ajouter des données]** et définissez un lien entre les données importées et la dimension de ciblage des personnes destinataires. Dans cet exemple, le champ personnalisé **Identifiant dans le CRM** permet de créer la condition de jointure. Utilisez le champ ou la combinaison de champs nécessaire tant que l’identification des enregistrements uniques reste possible.
    * Dans l&#39;onglet **[!UICONTROL Réconciliation]**, laissez l&#39;option **[!UICONTROL Identifier le document de ciblage à partir des données de travail]** décochée.
 
-   ![](assets/import_template_example2.png)
+   ![Activité d&#39;enrichissement avec l&#39;écran de définition du lien : lien dont la cible peut ne pas exister, schéma Destinataires (nms) .](assets/import_template_example2.png)
 
 1. Configurez l&#39;activité de **[!UICONTROL Partage]** pour récupérer les destinataires réconciliés dans une transition, et les destinataires qui n&#39;ont pas pu être réconciliés mais qui disposent de suffisamment de données dans une autre transition.
 
@@ -84,13 +84,13 @@ Cet exemple montre comment pré-paramétrer un workflow qui pourra être réutil
 
    * Dans le premier sous-ensemble de l’onglet **[!UICONTROL Sous-ensembles]**, ajoutez une condition de filtrage sur la population entrante pour sélectionner uniquement les enregistrements pour lesquels la clé primaire de la personne destinataire est différente de 0. De cette manière, les données du fichier réconciliées avec les destinataires de la base de données sont sélectionnées dans ce sous-ensemble.
 
-     ![](assets/import_template_example3.png)
+     ![Diviser la clé primaire du sous-ensemble non égale à 0 avec le filtre Requête : clé primaire des destinataires non égale à 0.](assets/import_template_example3.png)
 
    * Ajoutez un second sous-ensemble pour sélectionner les enregistrements non réconciliés disposant de suffisamment de données pour être intégrés dans la base de données. Par exemple : adresse email, prénom et nom de famille.
 
      Les sous-ensembles sont traités dans l&#39;ordre dans lequel ils ont été créés, ce qui veut dire que lorsque ce second sous-ensemble est traité, tous les enregistrements qui existent déjà dans la base de données sont déjà sélectionnés dans le premier sous-ensemble.
 
-     ![](assets/import_template_example3_2.png)
+     ![Divisez suffisamment les données du sous-ensemble pour insérer un filtrage sur l&#39;e-mail, le prénom et le nom non vide.](assets/import_template_example3_2.png)
 
    * Tous les enregistrement qui ne sont pas sélectionnés dans les deux premiers sous-ensembles sont sélectionnés dans le **[!UICONTROL Complémentaire]**.
 
@@ -100,18 +100,18 @@ Cet exemple montre comment pré-paramétrer un workflow qui pourra être réutil
    * Dans la section **[!UICONTROL Identification des enregistrements]**, sélectionnez **[!UICONTROL En utilisant des clés de réconciliation]** et définissez une clé entre la dimension de ciblage et le lien créé via l’**[!UICONTROL Enrichissement]**. Dans cet exemple, le champ personnalisé **Identifiant dans le CRM** est utilisé.
    * Dans la section **[!UICONTROL Champs à mettre à jour]**, indiquez les champs de la dimension des destinataires à mettre à jour avec la valeur de la colonne correspondante du fichier. Si les noms des colonnes du fichier sont identiques ou presque identiques aux noms des champs de la dimension des personnes destinataires, utilisez le bouton baguette magique pour faire correspondre les différents champs automatiquement.
 
-     ![](assets/import_template_example6.png)
+     ![Mettez à jour les données avec l&#39;opération de mise à jour, les @crmid de clé de réconciliation sur les destinataires et les colonnes de fichier mappées aux champs.](assets/import_template_example6.png)
 
 1. Configurez l&#39;activité **[!UICONTROL Déduplication]** située après la transition contenant les destinataires non réconciliés :
 
    * Sélectionnez **[!UICONTROL Editer la configuration]** et paramétrez la dimension de ciblage sur le schéma temporaire généré à partir de l&#39;activité **[!UICONTROL Enrichissement]** du workflow.
 
-     ![](assets/import_template_example4.png)
+     ![Écran Dimension de ciblage de déduplication avec le schéma temporaire sélectionné et le schéma d&#39;enrichissement choisi.](assets/import_template_example4.png)
 
    * Dans cet exemple, le champ d’e-mail est utilisé pour trouver les profils uniques. Vous pouvez utiliser n’importe quel champ dont vous avez la certitude qu’il est rempli et qu’il fait partie d’une combinaison unique.
    * Dans l&#39;écran **[!UICONTROL Méthode de déduplication]**, sélectionnez **[!UICONTROL Paramètres avancés]** et cochez l&#39;option **[!UICONTROL Désactiver le filtrage automatique des enregistrements d&#39;identifiant 0]** pour veiller à ce que les enregistrements dont la clé primaire est égale à 0 (normalement, tous les enregistrements de cette transition) sont exclus.
 
-   ![](assets/import_template_example7.png)
+   ![Activité Déduplication configurée pour dédupliquer dans le champ d’e-mail avec la méthode Choisir pour moi.](assets/import_template_example7.png)
 
 1. Configurez l&#39;activité **[!UICONTROL Mise à jour de données]** située après l&#39;activité **[!UICONTROL Déduplication]** paramétrée précédemment.
 
@@ -119,11 +119,11 @@ Cet exemple montre comment pré-paramétrer un workflow qui pourra être réutil
    * Dans la section **[!UICONTROL Identification des enregistrements]**, sélectionnez **[!UICONTROL En utilisant directement la dimension de ciblage]** et choisissez la dimension **[!UICONTROL Destinataires]**.
    * Dans la section **[!UICONTROL Champs à mettre à jour]**, indiquez les champs de la dimension des destinataires à mettre à jour avec la valeur de la colonne correspondante du fichier. Si les noms des colonnes du fichier sont identiques ou presque identiques aux noms des champs de la dimension des personnes destinataires, utilisez le bouton baguette magique pour faire correspondre les différents champs automatiquement.
 
-     ![](assets/import_template_example8.png)
+     ![Mettez à jour les données 2 avec l’opération d’insertion, la dimension de ciblage Destinataires et les colonnes de fichiers mappées aux champs de destinataire.](assets/import_template_example8.png)
 
 1. Après la troisième transition de l’activité **[!UICONTROL Partage]**, ajoutez une activité **[!UICONTROL Extraction des données (fichier)]** et une activité **[!UICONTROL Transfert de fichier]** si vous voulez tracker les données non insérées dans la base de données. Paramétrez ces activités afin d’exporter la colonne dont vous avez besoin et de transférer le fichier sur un serveur FTP ou SFTP, où vous pourrez le récupérer.
 1. Ajoutez une activité **[!UICONTROL Fin]** et enregistrez le modèle de workflow.
 
 Le modèle est à présent utilisable et disponible pour chaque nouveau workflow. Il suffit alors de spécifier le fichier qui contient les données à importer dans l’activité **[!UICONTROL Chargement de données (fichier)]**.
 
-![](assets/import_template_example9.png)
+![Workflow d&#39;import exécuté affichant le nombre d&#39;enregistrements sur chaque transition, y compris la transition Complémentaire vers Fin.](assets/import_template_example9.png)

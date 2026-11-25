@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 100%
+source-wordcount: '344'
+ht-degree: 95%
 ---
 # Gestion des autorisations relatives aux workflows{#managing-rights}
 
@@ -40,7 +40,7 @@ D&#39;une manière générale, les opérateurs qui agissent sur les workflows do
 
 Ils doivent également être associés aux droits nommés correspondants aux actions réalisées par les workflows sur lesquels ils sont amenés à intervenir (import de destinataires, accès aux fichiers, fusion, exécution de scripts SQL, etc.).
 
-La gestion des opérateurs et des autorisations associées est présentée dans [cette section](../../v8/start/gs-permissions.md).
+Pour plus d&#39;informations sur la gestion des opérateurs et des autorisations, voir [Prise en main des autorisations dans Campaign v8](../../v8/start/gs-permissions.md).
 
 ## Les groupes d&#39;opérateurs {#operator-groups-wf}
 

@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 100%
+source-wordcount: '207'
+ht-degree: 93%
 ---
 # Attente{#wait}
 
@@ -30,7 +30,7 @@ Une activité **Attente** active sa transition après un délai pouvant aller de
 
 L&#39;éditeur permet de saisir le libellé et la durée d&#39;attente, comme dans l&#39;exemple ci-dessous :
 
-![](assets/edit_wait.png)
+![Éditeur d&#39;activité d&#39;attente avec le libellé Attente 90s et une durée de 1m 30s.](assets/edit_wait.png)
 
 Dans le champ **[!UICONTROL Durée]**, la valeur peut être exprimée dans l’unité de votre choix (en fonction des paramètres régionaux définis pour l’opérateur ou l’opératrice) :
 

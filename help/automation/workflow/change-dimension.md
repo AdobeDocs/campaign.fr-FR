@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 72%
 ---
 # Changement de dimension{#change-dimension}
 
@@ -42,11 +42,11 @@ Pour configurer l’activité de **[!UICONTROL changement de dimension]**, respe
 
 1. Sélectionnez la nouvelle dimension de ciblage à partir du champ **[!UICONTROL Changement de dimension]**.
 
-   ![](assets/s_user_change_dimension_param1.png)
+   ![Modifier le champ de dimension de l’activité avec le sélecteur de champ ouvert et les abonnements sélectionnés comme nouvelle dimension](assets/s_user_change_dimension_param1.png)
 
 1. Lors du changement de dimension, vous pouvez conserver tous les éléments ou sélectionner les éléments à conserver dans la sortie. Dans l’exemple suivant, le nombre maximum de doublons est défini sur 2.
 
-   ![](assets/s_user_change_dimension_limit.png)
+   ![Option Limiter le nombre d&#39;éléments dans le nouveau document de ciblage sélectionné avec le champ Limite défini sur 2](assets/s_user_change_dimension_limit.png)
 
    Lorsque vous choisissez de ne conserver qu’un seul enregistrement, une collection s’affiche dans le schéma de travail : cette collection représente tous les enregistrements qui ne seront pas ciblés dans le résultat final (puisqu’un seul enregistrement est conservé). Cette collection vous permet, comme toute autre collection, de calculer des agrégats ou de récupérer des informations en colonnes.
 
@@ -54,7 +54,7 @@ Pour configurer l’activité de **[!UICONTROL changement de dimension]**, respe
 
 1. Si vous choisissez de ne pas conserver tous les enregistrements, vous pouvez configurer le mode de gestion des doublons.
 
-   ![](assets/s_user_change_dimension_param2.png)
+   ![Boîte de dialogue de déduplication répertoriant les champs d&#39;e-mail et de numéro de compte avec les flèches qui définissent leur priorité](assets/s_user_change_dimension_param2.png)
 
    Les flèches bleues permettent de définir l&#39;ordre de priorité de traitement des doublons.
 
@@ -66,7 +66,7 @@ Pour configurer l’activité de **[!UICONTROL changement de dimension]**, respe
 
    * Cliquez sur le lien **[!UICONTROL Ajouter des données...]** et sélectionnez **[!UICONTROL Données liées à la dimension de filtrage]**.
 
-     ![](assets/wf_change-dimension_sample_01.png)
+     ![Onglet Résultat Ajouter un lien de données ouvrant l&#39;assistant Données additionnelles avec Données liées à la dimension de filtrage sélectionnée](assets/wf_change-dimension_sample_01.png)
 
      >[!NOTE]
      >
@@ -74,22 +74,22 @@ Pour configurer l’activité de **[!UICONTROL changement de dimension]**, respe
 
    * Choisissez la dimension de ciblage précédente (avant le basculement d&#39;axe) et sélectionnez le **[!UICONTROL Code Postal]** dans la sous-arborescence **[!UICONTROL Localisation]** du destinataire, puis cliquez sur **[!UICONTROL Editer l&#39;expression]**.
 
-     ![](assets/wf_change-dimension_sample_02.png)
+     ![Assistant de données supplémentaires avec code postal de la sous-arborescence Emplacement ajouté comme colonne de sortie et Modifier l&#39;expression](assets/wf_change-dimension_sample_02.png)
 
    * Cliquez sur **[!UICONTROL Sélection avancée]** et choisissez **[!UICONTROL Editer la formule à partir d&#39;une expression]**.
 
-     ![](assets/wf_change-dimension_sample_03.png)
+     ![Bouton de sélection avancée ouvrant le type de formule avec Modifier la formule à l&#39;aide d&#39;une expression sélectionnée](assets/wf_change-dimension_sample_03.png)
 
    * Utilisez les fonctions proposées dans la liste et indiquez le calcul à réaliser.
 
-     ![](assets/wf_change-dimension_sample_04.png)
+     ![Éditeur d&#39;expression avec la formule Sous-chaîne du code postal du caractère 1 avec la longueur 2 et la liste des fonctions](assets/wf_change-dimension_sample_04.png)
 
    * Pour finir, saisissez le libellé de la colonne que vous venez de créer.
 
-     ![](assets/wf_change-dimension_sample_05.png)
+     ![Colonnes de sortie avec le libellé Comté et l’expression Sous-chaîne(zip/Postcode, 1, 2)](assets/wf_change-dimension_sample_05.png)
 
 1. Exécutez le workflow pour visualiser le résultat de cette configuration. Comparez les données contenues dans les tables avant et après l’activité de changement de dimension, et comparez la structure des tables du workflow, comme dans les exemples suivants :
 
-   ![](assets/wf_change-dimension_sample_06.png)
+   ![Afficher l&#39;option cible sur la transition avant le changement de dimension, avec ses données et son schéma dans Afficher la population](assets/wf_change-dimension_sample_06.png)
 
-   ![](assets/wf_change-dimension_sample_07.png)
+   ![Afficher l&#39;option cible après le changement de dimension, affichant les données avec la colonne Comté et le nouveau schéma](assets/wf_change-dimension_sample_07.png)

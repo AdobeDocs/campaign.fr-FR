@@ -25,10 +25,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 100%
+source-wordcount: '641'
+ht-degree: 79%
 ---
 # Lecture de liste{#read-list}
 
@@ -38,15 +38,15 @@ L’activité **[!UICONTROL Lecture de liste]** permet de copier les données d�
 
 La liste à traiter peut être spécifiée explicitement, calculée par un script ou localisée dynamiquement, selon les options sélectionnées et les paramètres définis dans l&#39;activité **[!UICONTROL Lecture de liste]**.
 
-![](assets/list_edit_select_option_01.png)
+![Activité Lecture de liste avec Spécifié explicitement sélectionné, une liste choisie et le lien Modifier la requête sous Filtrage Source](assets/list_edit_select_option_01.png)
 
 Si la liste n&#39;est pas spécifiée explicitement, vous devez indiquer une liste qui sera utilisée comme modèle pour connaître sa structure.
 
-![](assets/s_advuser_list_template_select.png)
+![Activité Lecture de liste avec un nom calculé par un script sélectionné et la liste déroulante Liste ouverte](assets/s_advuser_list_template_select.png)
 
 Une fois la sélection de la liste paramétrée, vous pouvez ajouter un filtre en utilisant l&#39;option **[!UICONTROL Éditer la requête]** afin de ne conserver qu&#39;une partie de la population pour la suite du workflow.
 
-![](assets/wf_readlist_1.png)
+![L&#39;activité Lecture de liste avec un filtre de requête Modifier sur le prix n&#39;est pas vide appliquée à la liste sélectionnée](assets/wf_readlist_1.png)
 
 >[!CAUTION]
 >
@@ -58,21 +58,21 @@ Les listes peuvent être créées directement dans Adobe Campaign à partir du 
 
 L&#39;exemple suivant permet d&#39;utiliser une liste d&#39;adresses emails à exclure de la cible d&#39;une diffusion par email.
 
-![](assets/s_advuser_list_read_sample_1.png)
+![Workflow avec une requête Lecture de liste et Nouveau fichier de contacts jointe dans une Exclusion, puis une diffusion et une Attente 3 jours](assets/s_advuser_list_read_sample_1.png)
 
 Les profils contenus dans le dossier **Nouveaux contacts** doivent être ciblés par une action de diffusion. Les adresses e-mail à exclure de la cible sont stockées dans une liste externe. Dans notre exemple, seules les informations relatives aux adresses e-mail sont requises pour l’exclusion.
 
 1. La requête de sélection du dossier **NvxContact** doit permettre de charger l&#39;adresse email des profils sélectionnés, ceci afin de permettre le rapprochement avec les informations contenues dans la liste.
 
-   ![](assets/s_advuser_list_read_sample_0.png)
+   ![Nouvelle activité de requête de contacts avec le champ E-mail ajouté sous Informations complémentaires](assets/s_advuser_list_read_sample_0.png)
 
 1. Ici, la liste est stockée dans le dossier **Externes** et son libellé est calculé.
 
-   ![](assets/s_advuser_list_read_sample_2.png)
+   ![Activité Lecture de liste avec le dossier Listes et un libellé calculé pour le fichier de liste bloquée](assets/s_advuser_list_read_sample_2.png)
 
 1. Afin d’exclure de la cible principale les adresses e-mail de la liste externe, vous devez paramétrer l’activité d’exclusion et indiquer que le dossier **Nouveaux contacts** contient les données à conserver. Les données communes entre cet ensemble et tout autre ensemble en entrée de l’activité d’exclusion seront supprimées de la cible.
 
-   ![](assets/s_advuser_list_read_sample_3.png)
+   ![Activité d&#39;exclusion avec le fichier Nouveaux contacts défini comme jeu de Principal et le tableau des règles d&#39;exclusion](assets/s_advuser_list_read_sample_3.png)
 
    Les règles d&#39;exclusion sont paramétrées dans la section centrale de l&#39;éditeur. Cliquez sur le bouton **[!UICONTROL Ajouter]** pour définir le type d&#39;exclusion à appliquer.
 
@@ -82,6 +82,6 @@ Les profils contenus dans le dossier **Nouveaux contacts** doivent être ciblés
 
    Dans notre exemple, il s’agit d’une exclusion sur jointure : les données contenues dans la liste seront réconciliées avec celles de l’ensemble principal via le champ qui contient l’adresse e-mail. Pour paramétrer la jointure, sélectionnez **[!UICONTROL Jointures]** dans le champ **[!UICONTROL Changement de dimension]**.
 
-   ![](assets/s_advuser_list_read_sample_4.png)
+   ![Définition d&#39;une exception avec Lecture de liste comme jeu d&#39;exclusions et l&#39;option Jointures dans Modifier la dimension](assets/s_advuser_list_read_sample_4.png)
 
 1. Sélectionnez ensuite le champ correspondant à l’adresse e-mail dans les deux ensembles (Source et Destination). Les colonnes seront alors associées et les personnes destinataires dont l’adresse e-mail figure dans la liste d’adresses importée seront exclues de la cible.

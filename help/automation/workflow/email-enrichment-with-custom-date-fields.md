@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 100%
+source-wordcount: '883'
+ht-degree: 69%
 ---
 # Enrichissement des emails avec des champs de date personnalisés{#email-enrichment-with-custom-date-fields}
 
@@ -36,23 +36,23 @@ Dans cet exemple, nous souhaitons envoyer un e-mail avec des champs de données 
 
 Nous devons cibler les personnes destinataires d’une liste qui célébreront leur anniversaire ce mois-ci avec une activité **[!UICONTROL Partage]**. Ensuite, grâce à l’activité **[!UICONTROL Enrichissement]**, le champ de données personnalisé présentera les dates de validité dans l’e-mail pour l’offre spéciale du client ou de la cliente.
 
-![](assets/uc_enrichment.png)
+![Workflow : lecture de liste, partage avec sous-ensemble à enrichir, puis diffusion par e-mail et complément à terminer.](assets/uc_enrichment.png)
 
 Pour réaliser cet exemple, les étapes sont les suivantes :
 
 1. Dans l&#39;onglet **[!UICONTROL Ciblages et workflows]** de votre campagne, faites glisser et déposez une activité **[!UICONTROL Lecture de liste]** pour cibler votre liste de destinataires.
 1. La liste à traiter peut être spécifiée explicitement, calculée par un script ou localisée dynamiquement, selon les options sélectionnées et les paramètres définis ici.
 
-   ![](assets/uc_enrichment_1.png)
+   ![Activité Lecture de liste avec la liste spécifiée explicitement et la section de filtrage Source.](assets/uc_enrichment_1.png)
 
 1. Ajoutez une activité **[!UICONTROL Partage]** pour différencier les destinataires qui célébreront leur anniversaire ce mois-ci des autres destinataires.
 1. Pour partager votre liste, dans la catégorie **[!UICONTROL Filtrage des enregistrements sélectionnés]**, sélectionnez **[!UICONTROL Ajouter une condition de filtrage sur la population entrante]**. Cliquez ensuite sur **[!UICONTROL Editer]**.
 
-   ![](assets/uc_enrichment_2.png)
+   ![Onglet Fractionner les sous-ensembles avec Ajouter une condition de filtrage sur la population entrante et le lien Modifier mis en surbrillance.](assets/uc_enrichment_2.png)
 
 1. Sélectionnez **[!UICONTROL Critères de filtrage]**, puis cliquez sur le bouton **[!UICONTROL Editer l&#39;expression]** pour filtrer le mois de l&#39;anniversaire du destinataire.
 
-   ![](assets/uc_enrichment_3.png)
+   ![Fenêtre de l’élément cible avec le bouton Modifier l’expression en surbrillance à côté du champ Expression.](assets/uc_enrichment_3.png)
 
 1. Cliquez sur **[!UICONTROL Sélection avancée]**, puis sur **[!UICONTROL Editer la formule à partir d&#39;une expression]** et ajoutez l&#39;expression suivante : Month(@birthDate).
 1. Dans la colonne **[!UICONTROL Opérateur]**, sélectionnez **[!UICONTROL égal à]**.
@@ -60,42 +60,42 @@ Pour réaliser cet exemple, les étapes sont les suivantes :
 
    Cela interrogera les destinataires dont le mois d’anniversaire correspond au mois actuel.
 
-   ![](assets/uc_enrichment_4.png)
+   ![Condition de l&#39;élément cible : mois de naissance égal au mois de la date actuelle plus 14 jours.](assets/uc_enrichment_4.png)
 
 1. Cliquez sur **[!UICONTROL Terminer]**. Puis, dans l&#39;onglet **[!UICONTROL Général]** de votre activité **[!UICONTROL Partage]**, cliquez sur **[!UICONTROL Générer le complémentaire]** dans la catégorie **[!UICONTROL Résultats]**.
 
    Avec le résultat **[!UICONTROL Complément]**, vous pouvez ajouter une activité de diffusion ou mettre à jour une liste. Ici, nous avons ajouté une activité **[!UICONTROL Fin]**.
 
-   ![](assets/uc_enrichment_6.png)
+   ![Fractionner l&#39;onglet Général avec l&#39;option Générer le complémentaire activée dans la section Résultats.](assets/uc_enrichment_6.png)
 
 Vous devez maintenant paramétrer votre activité **[!UICONTROL Enrichissement]** :
 
 1. Ajoutez une activité **[!UICONTROL Enrichissement]** après votre sous-ensemble pour ajouter vos champs de date personnalisés.
 
-   ![](assets/uc_enrichment_7.png)
+   ![Workflow avec une activité Enrichissement ajoutée à la transition Sous-ensemble de l&#39;activité Partage.](assets/uc_enrichment_7.png)
 
 1. Ouvrez votre activité **[!UICONTROL Enrichissement]**. Dans la catégorie **[!UICONTROL Complément d&#39;information]**, cliquez sur **[!UICONTROL Ajouter des données]**.
 
-   ![](assets/uc_enrichment_8.png)
+   ![Activité d’enrichissement avec le lien Ajouter des données mis en surbrillance dans la section Informations complémentaires.](assets/uc_enrichment_8.png)
 
 1. Sélectionnez **[!UICONTROL Données liées à la dimension de filtrage]**, puis **[!UICONTROL Données de la dimension de filtrage]**.
 1. Cliquez sur le bouton **[!UICONTROL Ajouter]**.
 
-   ![](assets/uc_enrichment_9.png)
+   ![Fenêtre Données à ajouter avec le bouton Ajouter en surbrillance en regard de la liste Colonnes de sortie.](assets/uc_enrichment_9.png)
 
 1. Ajoutez un **[!UICONTROL Libellé]**. Puis, dans la colonne **[!UICONTROL Expression]**, cliquez sur **[!UICONTROL Editer l&#39;expression]**.
 
-   ![](assets/uc_enrichment_10.png)
+   ![Colonnes de sortie avec le libellé Date de naissance et le bouton Modifier l&#39;expression mis en surbrillance dans la colonne Expression.](assets/uc_enrichment_10.png)
 
 1. Tout d’abord, nous devons cibler la semaine précédant la date d’anniversaire comme **Date de début de validité** à l’aide de l’**[!UICONTROL Expression]** suivante : `SubDays([target/@birthDate], 7)`.
 
-   ![](assets/uc_enrichment_11.png)
+   ![Colonnes de sortie avec le libellé Date de naissance et l&#39;expression Date de naissance (cible/@birthDate).](assets/uc_enrichment_11.png)
 
 1. Ensuite, pour créer le champ de date personnalisé **Date de fin de validité** qui ciblera la semaine après la date de naissance, vous devez ajouter l’**[!UICONTROL Expression]** : `AddDays([target/@birthDate], 7)`.
 
    Vous pouvez ajouter un libellé à votre expression.
 
-   ![](assets/uc_enrichment_12.png)
+   ![Colonnes de sortie répertoriant la date de naissance et la colonne Date de début de validité avec son expression et son alias.](assets/uc_enrichment_12.png)
 
 1. Cliquez sur **[!UICONTROL OK]**. Votre enrichissement est maintenant prêt.
 
@@ -103,7 +103,7 @@ Après votre activité **[!UICONTROL Enrichissement]**, vous pouvez ajouter une 
 
 1. Faites glisser et déposez une activité **[!UICONTROL Diffusion par email]** après votre activité **[!UICONTROL Enrichissement]**.
 
-   ![](assets/uc_enrichment_15.png)
+   ![Workflow avec ajout d&#39;une activité de diffusion E-mail après l&#39;activité d&#39;enrichissement.](assets/uc_enrichment_15.png)
 
 1. Double cliquez sur votre activité **[!UICONTROL Diffusion par email]** pour commencer à personnaliser votre diffusion.
 1. Ajoutez un **[!UICONTROL Libellé]** à votre diffusion, puis cliquez sur **[!UICONTROL Continuer]**.
@@ -112,7 +112,7 @@ Après votre activité **[!UICONTROL Enrichissement]**, vous pouvez ajouter une 
 
    Ensuite, démarrez votre workflow pour enrichir votre transition sortante avec les informations ciblées.
 
-   ![](assets/uc_enrichment_18.png)
+   ![Onglet Validations des propriétés de la diffusion avec l’option Confirmer la diffusion avant l’envoi cochée.](assets/uc_enrichment_18.png)
 
 Vous pouvez maintenant commencer à concevoir votre diffusion par email avec les champs de date personnalisés créés dans l&#39;activité **[!UICONTROL Enrichissement]**.
 
@@ -124,16 +124,16 @@ Vous pouvez maintenant commencer à concevoir votre diffusion par email avec les
            formatDate(targetData.alias of your expression,"%2D.%2M")  %>
    ```
 
-1. Cliquez sur ![](assets/uc_enrichment_16.png). Sélectionnez **[!UICONTROL Extension de la cible]**, puis les dates de validité personnalisées créées précédemment avec l’activité **[!UICONTROL Enrichissement]** pour ajouter votre extension à l’expression formatDate.
+1. Cliquez sur le bouton de la barre d&#39;outils de Personalization ![ avec une flèche déroulante.](assets/uc_enrichment_16.png). Sélectionnez **[!UICONTROL Extension de la cible]**, puis les dates de validité personnalisées créées précédemment avec l’activité **[!UICONTROL Enrichissement]** pour ajouter votre extension à l’expression formatDate.
 
-   ![](assets/uc_enrichment_19.png)
+   ![Menu Personalization Sous-menu Extension de la cible répertoriant la date de début de validité et la date de fin de validité.](assets/uc_enrichment_19.png)
 
 1. Paramétrez votre contenu d&#39;email selon vos besoins.
 
-   ![](assets/uc_enrichment_17.png)
+   ![Envoyer par e-mail du contenu HTML avec des expressions formatDate à l’aide de champs targetData pour les dates de validité.](assets/uc_enrichment_17.png)
 
 1. Prévisualisez votre email pour vérifier si vos champs de date personnalisés ont été correctement paramétrés.
 
-   ![](assets/uc_enrichment_20.png)
+   ![Onglet Aperçu de l&#39;e-mail affichant le message d&#39;anniversaire avec les dates de validité du 20/12 au 01/03 renseignées.](assets/uc_enrichment_20.png)
 
 Votre email est maintenant prêt. Vous pouvez commencer à envoyer vos BAT et confirmer la diffusion concernant vos emails d’anniversaire.

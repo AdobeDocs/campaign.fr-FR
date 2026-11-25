@@ -30,16 +30,16 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 100%
+source-wordcount: '138'
+ht-degree: 69%
 ---
 # Les workflows des opérations {#campaign-workflows}
 
 Pour chaque campagne, vous pouvez créer des workflows à exécuter depuis l’onglet **[!UICONTROL Ciblage et workflows]**. Ces workflows sont spécifiques à la campagne.
 
-![](assets/wf-in-op-edit-delivery-tab.png)
+![Onglet Ciblages et workflows d&#39;une campagne présentant la liste des workflows et un diagramme avec les requêtes, le partage et les diffusions.](assets/wf-in-op-edit-delivery-tab.png)
 
 Cet onglet contient les mêmes activités que pour tous les workflows. [En savoir plus](#implementation-steps-)
 
@@ -47,6 +47,6 @@ Outre les campagnes de ciblage, les workflows de campagne vous permettent de cr�
 
 Tous les workflows des opérations sont centralisés sous le noeud **[!UICONTROL Administration > Exploitation > Objets créés automatiquement > Workflows des opérations]**.
 
-![](assets/campaigns_wf.png)
+![Explorateur avec Administration > Exploitation > Objets créés automatiquement > Nœud de workflows Campaign sélectionné.](assets/campaigns_wf.png)
 
-Les workflows de campagne et des exemples d&#39;implémentation sont présentés dans [cette section](../campaigns/marketing-campaign-target.md).
+Les workflows de campagne et des exemples d&#39;implémentation sont présentés dans la section [Audience cible de la campagne marketing](../campaigns/marketing-campaign-target.md).
