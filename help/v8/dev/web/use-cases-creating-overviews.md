@@ -31,10 +31,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 95%
+source-wordcount: '1040'
+ht-degree: 94%
 ---
 # Cas d’utilisation : création de pages de vue d’ensemble{#use-cases-creating-overviews}
 
@@ -148,7 +148,7 @@ Lorsque vous paramétrez une liste dans votre vue d&#39;ensemble, vous pouvez ch
 
 1. Dans l&#39;onglet **[!UICONTROL Détail additionnel]**, ajoutez le code suivant :
 
-   ```
+   ```html
    <div class="detailBox">
      <div class="actionBox">
        <span class="action"><img src="/xtk/img/fileEdit.png"/><a title="Open" class="linkAction" href="xtk://open/?schema=nms:webApp&form=nms:webApp&pk=
@@ -194,7 +194,7 @@ Ces deux éléments seront rassemblés dans un même conteneur afin de les regro
 
    ![](assets/s_ncs_configuration_webapp_container.png)
 
-   Pour la disposition des éléments, reportez-vous à [cette section](about-web-forms.md).
+   Pour plus d&#39;informations sur la disposition des éléments, consultez la section [Prise en main des formulaires web](about-web-forms.md).
 
 1. Appliquez **dottedFilter**.
 

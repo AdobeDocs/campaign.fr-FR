@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 74%
+source-wordcount: '491'
+ht-degree: 72%
 ---
 # Pourquoi utiliser les API de Campaign Standard ? {#why-using-campaign-standard-apis}
 
@@ -72,7 +72,7 @@ Les étapes ci-dessous décrivent un cas pratique détaillé pour importer et ut
 
    ![texte alternatif](assets/postman_collection.png)
 
-1. Sélectionnez la requête **Créer un profil**, puis mettez à jour la requête POST et l’onglet **En-têtes** avec vos propres informations (&lt;ORGANIZATION>, &lt;API_KEY>, &lt;ACCESS_TOKEN>). Pour plus d’informations, consultez [cette section](setting-up-api-access.md).
+1. Sélectionnez la requête **Créer un profil**, puis mettez à jour la requête POST et l’onglet **En-têtes** avec vos propres informations (&lt;ORGANIZATION>, &lt;API_KEY>, &lt;ACCESS_TOKEN>). Voir à ce sujet la section [Configuration de l&#39;accès à l&#39;API](setting-up-api-access.md).
 
    ![texte alternatif](assets/postman_uc1.png)
 

@@ -17,10 +17,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 97%
+source-wordcount: '782'
+ht-degree: 95%
 ---
 # Contrôle du contenu de votre message{#control-message-content}
 
@@ -32,7 +32,7 @@ Suivez les principes ci-dessous lors de la conception du contenu de votre messag
 * [Personnalisation](#personalization) : la personnalisation du contenu et la définition d’une heure d’envoi par destinataire augmentent les chances d’ouverture de votre message.
 * Images et texte : respectez un ratio texte/images correct (par exemple, 60 % de texte et 40 % d’images).
 * [Lien de désinscription](#opt-out) et page de destination correspondante : le lien de désinscription est indispensable. Il doit être visible et valide, et le formulaire doit être fonctionnel.
-* Prévisualisation : utilisez les outils fournis par Adobe Campaign pour vérifier et optimiser le contenu de votre email ([Inbox Rendering](#message-responsiveness), [&#x200B; SpamAssassin emails](#spamassassin)).
+* Prévisualisation : utilisez les outils fournis par Adobe Campaign pour vérifier et optimiser le contenu de votre email ([Inbox Rendering](#message-responsiveness), [ SpamAssassin emails](#spamassassin)).
 
 Pour obtenir des conseils supplémentaires sur l’optimisation de la délivrabilité lors de la conception du contenu, consultez le [Guide des bonnes pratiques relatives à la délivrabilité d’Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=fr){target="_blank"}.
 
@@ -52,7 +52,7 @@ Pour plus d&#39;informations sur la définition de l&#39;adresse de l&#39;expéd
 
 Pour améliorer l’expérience de vos destinataires et les inciter à ouvrir votre e-mail, Adobe Campaign vous permet de personnaliser vos messages.
 
-Pour plus d’informations sur l’utilisation des champs de personnalisation dans Adobe Campaign, voir [cette section](personalization-fields.md).
+Pour plus d’informations sur l’utilisation des champs de personnalisation dans Adobe Campaign, voir [Ajouter des champs de personnalisation](personalization-fields.md).
 
 ## Lien et formulaire d’opt-out {#opt-out}
 

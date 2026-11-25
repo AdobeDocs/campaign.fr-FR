@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '972'
-ht-degree: 97%
+source-wordcount: '977'
+ht-degree: 94%
 ---
 # Coupons personnalisés{#personalized-coupons}
 
@@ -77,7 +77,7 @@ Avant d&#39;appliquer les étapes ci-dessous, vérifiez que vous savez quel type
 
    >[!NOTE]
    >
-   >Les coupons individuels peuvent être importés en masse. Pour plus de détails sur lʼimport et lʼexport, consultez [cette section](../start/import.md).
+   >Les coupons individuels peuvent être importés en masse. Pour plus d&#39;informations sur l&#39;import et l&#39;export, consultez la section [Prise en main des profils](../start/import.md).
 
 ### Configuration de coupons individuels {#configuring-individual-coupons}
 
@@ -94,7 +94,7 @@ Les valeurs des champs **[!UICONTROL état]**, **[!UICONTROL canal]** et **[!UIC
 
 ## Insertion dʼun coupon dans une diffusion e-mail {#inserting-a-coupon-into-an-email-delivery}
 
-Dans l&#39;exemple ci-dessous, la diffusion est créée à partir de la Page d&#39;accueil. Pour des consignes détaillées de création d&#39;une diffusion, voir [cette section](email.md).
+Dans l&#39;exemple ci-dessous, la diffusion est créée à partir de la Page d&#39;accueil. Pour obtenir des instructions détaillées sur la création d&#39;une diffusion, consultez la section [Envoyer des e-mails avec Adobe Campaign](email.md).
 1. Allez sur **[!UICONTROL Campagnes]** et sélectionnez **[!UICONTROL Diffusions]**.
 1. Cliquez sur **[!UICONTROL Créer]**.
 

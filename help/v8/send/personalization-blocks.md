@@ -24,16 +24,16 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 87%
+source-wordcount: '723'
+ht-degree: 86%
 ---
 # Utiliser les blocs de personnalisation{#personalization-blocks}
 
 Les blocs de personnalisation sont du contenu dynamique, qui contiennent un rendu spécifique que vous pouvez insérer dans vos diffusions. Vous pouvez par exemple ajouter un logo, un message de salutations ou un lien vers une page miroir.
 
-Pour accéder aux blocs de contenu personnalisés, accédez au nœud **[!UICONTROL Ressources > Gestion de campagne > Blocs de personnalisation]** de l’explorateur Campaign. Les blocs de personnalisation intégrés sont répertoriés dans [cette section](#ootb-personalization-blocks).
+Pour accéder aux blocs de contenu personnalisés, accédez au nœud **[!UICONTROL Ressources > Gestion de campagne > Blocs de personnalisation]** de l’explorateur Campaign. Les blocs de personnalisation intégrés sont répertoriés dans [blocs de personnalisation intégrés](#ootb-personalization-blocks).
 
 Vous pouvez également définir de nouveaux blocs pour optimiser la personnalisation de vos diffusions. [En savoir plus](#create-custom-personalization-blocks).
 
@@ -100,4 +100,4 @@ Une fois enregistré, le nouveau bloc de personnalisation est disponible dans l�
 
 Dans la vidéo suivante, découvrez comment créer des blocs de contenu dynamiques et apprenez à les utiliser pour personnaliser le contenu de votre diffusion e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449008?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

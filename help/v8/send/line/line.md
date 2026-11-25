@@ -33,16 +33,16 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1366'
-ht-degree: 89%
+source-wordcount: '1369'
+ht-degree: 88%
 ---
 # Création de diffusions LINE
 
 LINE est une application gratuite de messagerie instantanée, d’appels vocaux et vidéo, disponible sur tous les appareils mobiles et sur PC. Vous pouvez utiliser Adobe Campaign pour envoyer des messages LINE.
 
-[!DNL LINE] peut également être associé au module des messages transactionnels pour envoyer des messages en temps réel sur l&#39;application [!DNL LINE] installée sur les appareils mobiles des clients. Pour en savoir plus à ce sujet, consultez cette [page](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) dans la documentation de Campaign Classic v7.
+[!DNL LINE] peut également être associé au module des messages transactionnels pour envoyer des messages en temps réel sur l&#39;application [!DNL LINE] installée sur les appareils mobiles des clients. Pour en savoir plus à ce sujet, consultez cette [page](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) dans la documentation de Campaign Classic v7.
 
 ![](assets/line_message.png)
 
@@ -95,10 +95,10 @@ Après avoir créé votre service [!DNL LINE], vous devez configurer le compte e
 
    ![](assets/line_config_2.png)
 
-   * **[!UICONTROL Alias du canal]**&#x200B;[!DNL LINE] : est fourni via votre compte dans l&#39;onglet **[!UICONTROL Channels]** > **[!UICONTROL Technical configuration]**.
-   * **[!UICONTROL Identifiant du canal]**&#x200B;[!DNL LINE] : est fourni via votre compte dans l&#39;onglet **[!UICONTROL Channels]**> **[!UICONTROL Basic Information panel]**.
-   * **[!UICONTROL Clé secrète du canal]**&#x200B;[!DNL LINE] : est fourni via votre compte dans l&#39;onglet **[!UICONTROL Channels]**> **[!UICONTROL Basic Information panel]**.
-   * **[!UICONTROL Jeton d&#39;accès]**&#x200B;[!DNL LINE] : est fourni via votre compte sur le portail destiné aux développeurs ou en cliquant sur le bouton **[!UICONTROL Récupérer le jeton d&#39;accès]**.
+   * **[!UICONTROL Alias du canal]**[!DNL LINE] : est fourni via votre compte dans l&#39;onglet **[!UICONTROL Channels]** > **[!UICONTROL Technical configuration]**.
+   * **[!UICONTROL Identifiant du canal]**[!DNL LINE] : est fourni via votre compte dans l&#39;onglet **[!UICONTROL Channels]**> **[!UICONTROL Basic Information panel]**.
+   * **[!UICONTROL Clé secrète du canal]**[!DNL LINE] : est fourni via votre compte dans l&#39;onglet **[!UICONTROL Channels]**> **[!UICONTROL Basic Information panel]**.
+   * **[!UICONTROL Jeton d&#39;accès]**[!DNL LINE] : est fourni via votre compte sur le portail destiné aux développeurs ou en cliquant sur le bouton **[!UICONTROL Récupérer le jeton d&#39;accès]**.
    * **[!UICONTROL Date d&#39;expiration du jeton d&#39;accès]** : permet de spécifier la date d&#39;expiration d&#39;Access token.
    * **[!UICONTROL Service d&#39;abonnement LINE]** : permet de spécifier le service auquel les utilisateurs seront abonnés.
 
@@ -124,13 +124,13 @@ Pour créer une diffusion [!DNL LINE] vous devez suivre les étapes suivantes :
 
    ![](assets/line_message_01.png)
 
-1. Identifiez votre diffusion avec un **[!UICONTROL Libellé]**, un **[!UICONTROL Code de diffusion]** et une **[!UICONTROL Description]**. Pour plus d’informations, consultez [cette section](../../start/create-message.md#create-the-delivery).
+1. Identifiez votre diffusion avec un **[!UICONTROL Libellé]**, un **[!UICONTROL Code de diffusion]** et une **[!UICONTROL Description]**. Voir à ce sujet la section [Créer la diffusion](../../start/create-message.md#create-the-delivery).
 
 1. Cliquez sur **[!UICONTROL Continuer]** pour valider la création de votre diffusion.
 
 1. Dans l&#39;éditeur de diffusion, sélectionnez **[!UICONTROL Pour]** afin de cibler les destinataires de votre diffusion [!DNL LINE]. Le ciblage est réalisé sur **[!UICONTROL les abonnements des visiteurs (nms:visitorSub)]**.
 
-   Pour plus d’informations, consultez [cette page](../../audiences/target-mappings.md).
+   Pour plus d&#39;informations, voir [Utilisation des mappings de ciblage](../../audiences/target-mappings.md).
 
    ![](assets/line_message_08.png)
 

@@ -27,18 +27,18 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 59%
+source-wordcount: '246'
+ht-degree: 53%
 ---
 # Prise en main des API REST de Campaign {#get-started-apis}
 
-Les API REST Campaign ont pour but de vous permettre **de créer des intégrations** pour Adobe Campaign et **de créer votre propre écosystème** en interfaçant Adobe Campaign avec l’ensemble des technologies que vous utilisez.
+Les API REST de Campaign ont pour but de vous permettre de **créer des intégrations** pour Adobe Campaign et de **créer votre propre écosystème** en interfaçant Adobe Campaign avec l’ensemble des technologies que vous utilisez.
 
 >[!AVAILABILITY]
 >
->* Cette fonctionnalité est disponible uniquement à la demande, pour tous les [environnements FDA Campaign](../../architecture/fda-deployment.md). Il n’est **pas** disponible pour les déploiements [&#x200B; Entreprise (FFDA)](../../architecture/enterprise-deployment.md). Pour y accéder, contactez votre représentant ou représentante Adobe.
+>* Cette fonctionnalité est disponible uniquement à la demande, pour tous les [environnements FDA Campaign](../../architecture/fda-deployment.md). Il n’est **pas** disponible pour les déploiements [Enterprise (FFDA)](../../architecture/enterprise-deployment.md). Pour y accéder, contactez votre représentant ou représentante Adobe.
 >
 >* Avant d’effectuer des appels aux API, vérifiez les limites de taille correspondant à votre contrat de licence. Pour en savoir plus à ce sujet, consultez la [Description du produit Adobe Campaign v8](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
@@ -54,7 +54,7 @@ Avec les API REST Adobe Campaign, vous avez accès aux fonctionnalités suivante
 </tr></table>
 
 Pour utiliser les API REST Campaign, vous devez disposer d’un compte Adobe I/O. Il s’agit d’une première étape obligatoire pour découvrir les fonctionnalités des API.
-Pour plus d’informations, consultez [cette section](setting-up-api-access.md).
+Voir à ce sujet la section [Configuration de l&#39;accès à l&#39;API](setting-up-api-access.md).
 
 Les API fournies utilisent des **concepts standard** avec une interface REST et des payloads JSON.
 

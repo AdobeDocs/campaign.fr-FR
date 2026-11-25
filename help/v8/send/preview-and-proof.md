@@ -23,10 +23,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 94%
+source-wordcount: '759'
+ht-degree: 93%
 ---
 # Prévisualiser et tester votre e-mail {#preview-test}
 
@@ -81,7 +81,7 @@ Sélectionnez le type de cible du BAT dans la liste déroulante **[!UICONTROL Mo
   >
   >Les adresses de contrôle n’appartiennent pas à la table des destinataires par défaut (nms:recipient). Elles sont créées dans une table distincte. Si vous étendez le tableau des destinataires avec de nouvelles données, vous devez étendre le tableau des adresses de contrôle avec les mêmes données.
 
-  En savoir plus sur les adresses de contrôle dans [cette section](../audiences/test-profiles.md).
+  En savoir plus sur les adresses de contrôle dans [Création de profils de test dans Campaign](../audiences/test-profiles.md).
 
 * Utilisez l’option **[!UICONTROL Cible spécifique et Adresses de contrôle]** pour cumuler des adresses de contrôle et des adresses e-mail spécifiques. Les paramétrages correspondants sont alors définis dans deux sous-onglets distincts.
 
@@ -122,4 +122,4 @@ Par défaut, les messages de BAT sont identifiés par la mention `Proof #N` dans
 
 Découvrez comment envoyer et valider un BAT pour une diffusion e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447001?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/333404)

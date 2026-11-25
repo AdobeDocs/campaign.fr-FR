@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 86%
+source-wordcount: '264'
+ht-degree: 82%
 ---
 # Définition du contenu du SMS {#sms-content}
 
@@ -50,7 +50,7 @@ Pour configurer le contenu de votre diffusion SMS :
 
    ![](assets/sms_perso_recipient.png){zoomable="yes"}
 
-   En savoir plus sur la personnalisation dans Adobe Campaign dans [cette section](../personalize.md).
+   En savoir plus sur la personnalisation dans Adobe Campaign dans [Prise en main de la personnalisation](../personalize.md).
 
 1. Vous pouvez prévisualiser le contenu de votre diffusion à partir de l’onglet **[!UICONTROL Aperçu]**. Pour vérifier vos paramètres de personnalisation, cliquez sur la liste déroulante **[!UICONTROL Tester la personnalisation]** et sélectionnez une personne destinataire.
 

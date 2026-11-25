@@ -19,14 +19,14 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 93%
+source-wordcount: '1340'
+ht-degree: 88%
 ---
 # Configurer et envoyer la diffusion {#configure-delivery}
 
-Accédez aux paramètres de diffusion pour configurer d’autres paramètres et définir comment envoyer vos messages. Vous pouvez définir une [priorité](#delivery-priority) de diffusion, configurer des [vagues](#sending-using-multiple-waves) et tester l’envoi de votre diffusion. Une fois cette configuration terminée, vous pouvez confirmer l’envoi, comme décrit dans [cette section](#confirm-delivery). Les messages sont alors envoyés immédiatement ou selon le [planning](#schedule-delivery-sending) de diffusion.
+Accédez aux paramètres de diffusion pour configurer d’autres paramètres et définir comment envoyer vos messages. Vous pouvez définir une [priorité](#delivery-priority) de diffusion, configurer des [vagues](#sending-using-multiple-waves) et tester l’envoi de votre diffusion. Une fois cette configuration terminée, vous pouvez confirmer l’envoi comme décrit dans [Confirmer la diffusion](#confirm-delivery). Les messages sont alors envoyés immédiatement ou selon le [planning](#schedule-delivery-sending) de diffusion.
 
 ## Configurer des paramètres supplémentaires {#delivery-additional-parameters}
 
@@ -91,19 +91,19 @@ Vous pouvez définir la taille de chaque vague ou les ajouter à un calendrier.
 
 ### Vérification de la planification des vagues {#check-waves}
 
-Une règle de typologie spécifique, la **[!UICONTROL Vérification de la planification des vagues]**, garantit que la dernière vague est planifiée avant la limite de validité de la diffusion. Les typologies de campagnes et leurs règles, configurées dans l’onglet **[!UICONTROL Typologie]** des propriétés de diffusion, sont présentées dans [cette section.](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->
+Une règle de typologie spécifique, la **[!UICONTROL Vérification de la planification des vagues]**, garantit que la dernière vague est planifiée avant la limite de validité de la diffusion. Les typologies de campagne et leurs règles, configurées dans l’onglet **[!UICONTROL Typologie]** des propriétés de diffusion, sont présentées dans [Règles de typologie et typologies](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
 
 >[!IMPORTANT]
 >
->* Veillez à ce que les dernières vagues ne dépassent pas la date limite de la diffusion qui est définie dans l’onglet **[!UICONTROL Validité]**. Sinon, certains messages peuvent ne pas être envoyés. En savoir plus sur la période de validité d’une diffusion dans [cette section](delivery-failures.md#valid-period).
+>* Veillez à ce que les dernières vagues ne dépassent pas la date limite de la diffusion qui est définie dans l’onglet **[!UICONTROL Validité]**. Sinon, certains messages peuvent ne pas être envoyés. En savoir plus sur la période de validité d&#39;une diffusion dans [Période de validité](delivery-failures.md#valid-period).
 >
->* Lors de la configuration des dernières vagues, veillez également à définir assez de temps pour les reprises. En savoir plus sur les reprises dans [cette section](delivery-failures.md#retries).
+>* Lors de la configuration des dernières vagues, veillez également à définir assez de temps pour les reprises. En savoir plus sur les reprises dans [Gestion des reprises](delivery-failures.md#retries).
 >
 >* Les vagues sont planifiées à partir de la date de contact de la diffusion. Si la diffusion démarre après l’heure prévue d’une ou de plusieurs vagues, ces vagues en retard sont toutes envoyées ensemble au lieu d’être espacées.
 
 ### Surveiller les vagues {#monitor-waves}
 
-Pour su vos envois, accédez aux logs de diffusion. Voir [cette page](send.md).
+Pour su vos envois, accédez aux logs de diffusion. Voir [Envoyer et surveiller vos emails](send.md).
 
 Vous pouvez visualiser les diffusions qui ont déjà été envoyées dans les vagues traitées (statut **[!UICONTROL Envoyé]**) et celles à envoyer dans les vagues restantes (statut **[!UICONTROL En attente]**).
 
@@ -143,7 +143,7 @@ Pour ce faire, suivez les étapes ci-après.
    * Pour envoyer immédiatement la diffusion, sélectionnez **[!UICONTROL Diffuser dès que possible]**.
    * Pour planifier l’envoi à une date ultérieure, sélectionnez **[!UICONTROL Différer la diffusion]**. [En savoir plus](#schedule-delivery-sending)
 
-1. Cliquez sur **[!UICONTROL Analyser]**. Voir à ce propos [cette section](delivery-analysis.md).
+1. Cliquez sur **[!UICONTROL Analyser]**. Pour plus d&#39;informations, consultez la section [Analyse de la diffusion](delivery-analysis.md).
 
    ![](assets/delivery-send-analyze.png)
 

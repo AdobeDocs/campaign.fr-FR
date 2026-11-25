@@ -34,10 +34,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 96%
+source-wordcount: '437'
+ht-degree: 93%
 ---
 # Création d&#39;un schéma {#create-new-schema}
 
@@ -65,7 +65,7 @@ L&#39;onglet **[!UICONTROL Aperçu]** génère automatiquement le schéma étend
 >
 >La sauvegarde du schéma source va automatiquement lancer la génération du schéma étendu.
 
-Si vous devez vérifier la structure complète d’un schéma, vous pouvez utiliser l’onglet **[!UICONTROL Aperçu]**. Si le schéma a été étendu, vous pourrez visualiser toutes ses extensions. En complément, l’onglet **[!UICONTROL Documentation]** affiche tous les attributs et éléments du schéma, ainsi que ses propriétés (champ SQL, type/longueur, libellé, description). L’onglet **[!UICONTROL Documentation]** s’applique uniquement aux schémas générés.
+Si vous devez vérifier la structure complète d&#39;un schéma, vous pouvez utiliser l&#39;onglet **[!UICONTROL Aperçu]**. Si le schéma a été étendu, vous pourrez visualiser toutes ses extensions. En complément, l’onglet **[!UICONTROL Documentation]** affiche tous les attributs et éléments du schéma, ainsi que ses propriétés (champ SQL, type/longueur, libellé, description). L’onglet **[!UICONTROL Documentation]** s’applique uniquement aux schémas générés.
 
 ## Cas d&#39;utilisation : créer une table des contrats {#example--creating-a-contract-table}
 
@@ -140,4 +140,4 @@ Pour cela, vous devez créer le schéma de la table puis procéder à la mise à
 
    ![](assets/configuration_structure.png)
 
-1. Mettez à jour la structure de la base de données pour créer la table à laquelle le schéma sera lié. Voir à ce propos [cette section](update-database-structure.md).
+1. Mettez à jour la structure de la base de données pour créer la table à laquelle le schéma sera lié. Pour plus d&#39;informations, consultez la section [Mettre à jour la structure de la base de données](update-database-structure.md).

@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
 source-wordcount: '764'
-ht-degree: 87%
+ht-degree: 85%
 ---
 # Autres opérations {#additional-operations}
 
@@ -41,7 +41,7 @@ ht-degree: 87%
 
 Le tri est disponible par défaut dans l’ordre croissant. Pour trier par ordre décroissant, ajoutez **%20desc** à la valeur du paramètre **_order**.
 
-Pour savoir s’il est possible de trier un champ, vérifiez le paramètre « sortable » dans les métadonnées de la ressource. Pour plus d’informations, consultez [cette section](metadata-mechanism.md).
+Pour savoir s’il est possible de trier un champ, vérifiez le paramètre « sortable » dans les métadonnées de la ressource. Pour plus d&#39;informations, consultez la section [Mécanisme de métadonnées](metadata-mechanism.md).
 
 <br/>
 
@@ -49,7 +49,7 @@ Pour savoir s’il est possible de trier un champ, vérifiez le paramètre « s
 
 * Exemple de requête GET pour récupérer des emails dans la base de données par ordre alphabétique.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/email?_order=email \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -59,7 +59,7 @@ Pour savoir s’il est possible de trier un champ, vérifiez le paramètre « s
 
   Réponse à la requête.
 
-  ```
+  ```json
   {
   "content": [
       "adam@email.com",
@@ -74,7 +74,7 @@ Pour savoir s’il est possible de trier un champ, vérifiez le paramètre « s
 
 * Exemple de requête GET pour récupérer des emails dans la base de données par ordre alphabétique décroissant.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/email?_order=email%20desc \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -84,7 +84,7 @@ Pour savoir s’il est possible de trier un champ, vérifiez le paramètre « s
 
   Réponse à la requête.
 
-  ```
+  ```json
   {
   "content": [
       "tombinder@example.com",
@@ -100,7 +100,7 @@ Pour savoir s’il est possible de trier un champ, vérifiez le paramètre « s
 
 ### Récupérer les métadonnées des filtres
 
-Des filtres sont disponibles pour chaque ressource. Pour identifier les filtres associés à une ressource, vous devez exécuter une requête GET sur les métadonnées de la ressource. Cette requête renvoie l’URL dans laquelle tous les filtres sont définis pour une ressource donnée. Pour plus d’informations sur les métadonnées, voir [cette section](metadata-mechanism.md).
+Des filtres sont disponibles pour chaque ressource. Pour identifier les filtres associés à une ressource, vous devez exécuter une requête GET sur les métadonnées de la ressource. Cette requête renvoie l’URL dans laquelle tous les filtres sont définis pour une ressource donnée. Pour plus d&#39;informations sur les métadonnées, consultez [Mécanisme des métadonnées](metadata-mechanism.md).
 
 Pour identifier les métadonnées d’un filtre et déterminer comment l’utiliser, vous devez exécuter une requête GET sur l’URL précédemment renvoyée.
 
@@ -110,7 +110,7 @@ Pour identifier les métadonnées d’un filtre et déterminer comment l’utili
 
 Les exemples de payloads ci-dessous montrent comment récupérer les métadonnées de filtre « byText » pour la ressource « profile ». Commencez par effectuer une requête GET sur les métadonnées de la ressource « profil ».
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/resourceType/profile \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -120,7 +120,7 @@ Les exemples de payloads ci-dessous montrent comment récupérer les métadonné
 
 Elle renvoie l’URL où les filtres sont décrits.
 
-```
+```json
 {
 "filters": {
         "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/resourceType/<PKEY>/filters/"
@@ -130,7 +130,7 @@ Elle renvoie l’URL où les filtres sont décrits.
 
 Exécutez une requête GET sur l’URL. Elle renvoie la liste des filtres pour la ressource « profile », avec les métadonnées associées à chaque filtre.
 
-```
+```json
 {
 "birthday": {
         "PKey": "@FL-CbDFXbnHbXcVpeCGWL46VXJLn1LqxLMPagt2vz8sCxQ52lvB15KiUaxXkxJYQw-tZXYrgUWG6K8QcB4gxVY9RKoba5bRFY3294YFshDmorRr8",
@@ -156,7 +156,7 @@ Chaque filtre possède la même structure de métadonnées :
 
 Exemple de structure de métadonnées de filtre :
 
-```
+```json
 "byText": {
         "PKey": "...",
         "category": "99_none",
@@ -184,7 +184,7 @@ Il est possible de combiner plusieurs filtres dans une seule requête :
 
 * Exemple de requête GET pour récupérer les ressources « service » avec le type « email ».
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel?channel=email \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -194,7 +194,7 @@ Il est possible de combiner plusieurs filtres dans une seule requête :
 
   Réponse à la requête.
 
-  ```
+  ```json
   {
       "content": [
           {
@@ -217,7 +217,7 @@ Il est possible de combiner plusieurs filtres dans une seule requête :
 * Exemple de requête GET pour récupérer les ressources « profile » contenant « Doe »
 dans les champs e-mail ou nom (le filtre byText effectue une recherche dans les champs e-mail et nom).
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/byText?text=Doe \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -227,7 +227,7 @@ dans les champs e-mail ou nom (le filtre byText effectue une recherche dans les 
 
   Réponse à la requête.
 
-  ```
+  ```json
   {
       "content": [
           {
@@ -245,7 +245,7 @@ dans les champs e-mail ou nom (le filtre byText effectue une recherche dans les 
 
 * Exemple de requête GET pour récupérer les ressources du service avec le type « email » et le libellé « sport ».
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel/byText?channel=email&text=sport \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -255,7 +255,7 @@ dans les champs e-mail ou nom (le filtre byText effectue une recherche dans les 
 
   Réponse à la requête.
 
-  ```
+  ```json
   {
       "content": [
           {
@@ -292,7 +292,7 @@ Pour plus d’informations à ce sujet, consultez la documentation relative à C
 
 Exemple de requête GET pour récupérer les ressources « profile » comportant des montants de transactions de 100 $ ou plus. Notez que le filtre « byAmount » a d’abord été défini dans l’interface Adobe Campaign Standard et lié à la table personnalisées « Transaction ».
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/byAmount?amount_parameter=100 \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -356,7 +356,7 @@ L’API REST d’Adobe Campaign permet de comptabiliser le nombre d’enregistr
 
 Pour comptabiliser tous les services dont la valeur **messageType** est égale à « sms », effectuez une requête GET avec le filtre **byChannel**.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel?channel=sms \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -366,7 +366,7 @@ Pour comptabiliser tous les services dont la valeur **messageType** est égale �
 
 Elle renvoie les services correspondant au filtre.
 
-```
+```json
 {
     "content": [
         {
@@ -387,7 +387,7 @@ Elle renvoie les services correspondant au filtre.
 
 Exécutez une requête GET sur l’URL du nœud **count** pour récupérer le nombre de résultats.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel/_count?channel=sms&_lineStart=@iKTZ2q3IiSEDqZ5Nw1vdoGnQCqF-8DAUJRaVwR9obqqTxhMy \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -397,7 +397,7 @@ Exécutez une requête GET sur l’URL du nœud **count** pour récupérer le no
 
 Elle renvoie le nombre d’enregistrements.
 
-```
+```json
 {
     "count": 26
 }
@@ -421,7 +421,7 @@ Le paramètre **_lineCount** permet de limiter le nombre de ressources répertor
 
 Exemple de requête GET pour afficher 1 enregistrement de la ressource de profil.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile?_lineCount=1 \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -431,7 +431,7 @@ Exemple de requête GET pour afficher 1 enregistrement de la ressource de profi
 
 Réponse à la requête, avec le nœud **suivant** pour effectuer la pagination.
 
-```
+```json
 {
     "content": [
         {
@@ -452,7 +452,7 @@ Réponse à la requête, avec le nœud **suivant** pour effectuer la pagination.
 
 Par défaut, le nœud **next** n’est pas disponible lors de l’interaction avec des tables contenant une grande quantité de données. Pour pouvoir effectuer une pagination, vous devez ajouter le paramètre **_forcePagination=true** à votre URL d’appel.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile?_forcePagination=true \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \

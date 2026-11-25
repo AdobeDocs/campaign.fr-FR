@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f89b58e9c7a87b6526dbbf491db67109418f2006
 workflow-type: tm+mt
-source-wordcount: '2028'
-ht-degree: 84%
+source-wordcount: '2042'
+ht-degree: 82%
 ---
 # Utiliser les packages de données{#data-packages}
 
@@ -142,7 +142,7 @@ Pour exporter un ensemble d’objets dans un package de données, procédez comm
 
    >[!NOTE]
    >
-   >Le requêteur est présenté dans [cette section](../../automation/workflow/query.md).
+   >Le requêteur est présenté dans [Créer une requête](../../automation/workflow/query.md#creating-a-query).
 
 1. Cliquez sur **[!UICONTROL Suivant]** et sélectionnez l’ordre de tri des données exportées.
 
@@ -159,7 +159,7 @@ Le processus d’export effectue le suivi des liens entre les différents élém
 
 >[!NOTE]
 >
->Les types d’intégrité liés aux éléments de schéma sont définis sur [cette page](database-links.md).
+>Les types d&#39;intégrité liés aux éléments de schéma sont définis dans la section [Gestion des liens dans les schémas Campaign](database-links.md).
 
 #### Exporter une campagne {#export-a-campaign}
 
@@ -253,7 +253,7 @@ Vous pouvez ensuite ajouter des entités à la définition de package et l&#39;e
 
 ### Ajouter des entités à une définition de package {#add-entities-to-a-package-definition}
 
-Dans l’onglet **[!UICONTROL Contenu]**, cliquez sur le bouton **[!UICONTROL Ajouter]** pour sélectionner les entités à exporter avec le package. Les bonnes pratiques relatives à la sélection des entités sont présentées dans [cette section](#export-a-set-of-objects-in-a-package).
+Dans l’onglet **[!UICONTROL Contenu]**, cliquez sur le bouton **[!UICONTROL Ajouter]** pour sélectionner les entités à exporter avec le package. Les bonnes pratiques de sélection des entités sont présentées dans [Exporter un ensemble d&#39;objets dans un package](#export-a-set-of-objects-in-a-package).
 
 ![](assets/packagedefinition_addentities.png)
 
@@ -263,7 +263,7 @@ Les entités peuvent être ajoutées à une définition de package directement �
 
 1. Sélectionnez **[!UICONTROL Ajout dans une définition de package]**, puis sélectionnez la définition de package dans laquelle vous voulez ajouter l&#39;entité.
 
-1. L&#39;entité est ajoutée à la définition de package et sera exportée avec le package (voir [cette section](#export-packages-from-a-package-definition)).
+1. L&#39;entité est ajoutée à la définition de package et sera exportée avec le package (voir [Exporter des packages à partir d&#39;une définition de package](#export-packages-from-a-package-definition)).
 
 ### Paramétrer la génération des définitions de packages {#configure-package-definitions-generation}
 

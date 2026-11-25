@@ -32,10 +32,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 94%
+source-wordcount: '177'
+ht-degree: 89%
 ---
 # Configurer les options de suivi d’URL {#personalizing-url-tracking}
 
@@ -61,7 +61,7 @@ Vous pouvez configurer les options de tracking :
 
 Les URL trackées sont listées dans la fenêtre centrale, sous la forme d&#39;une arborescence.
 
-Vous pouvez activer ou désactiver unitairement le tracking pour chaque URL du message. Pour plus d’informations, consultez [cette section](tracked-links.md).
+Vous pouvez activer ou désactiver unitairement le tracking pour chaque URL du message. Pour plus d&#39;informations, consultez la section [Configurer les liens suivis](tracked-links.md).
 
 L&#39;onglet **[!UICONTROL Avancé]** permet de personnaliser les formules de calcul des URL trackées et de l&#39;URL d&#39;ouverture.
 

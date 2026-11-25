@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 37%
+source-wordcount: '570'
+ht-degree: 32%
 ---
 # Commencer avec les canaux personnalisés {#gs-custom-channel}
 
@@ -40,11 +40,11 @@ Pour savoir comment créer et envoyer une diffusion basée sur un canal personna
 
 Pour configurer un nouveau canal personnalisé dans la console cliente, procédez comme suit. Ces étapes sont communes aux canaux externes et d’API personnalisés :
 
-1. Configurer le schéma, [en savoir plus](#configure-schema)
-1. Créer un compte externe, [en savoir plus](#create-ext-account)
-1. Créer un modèle de diffusion, [en savoir plus](#create-template)
+1. Configurez le schéma. [Configurez le schéma.](#configure-schema)
+1. Créer un compte externe, [Créer un compte externe](#create-ext-account)
+1. Créez un modèle de diffusion, [Créez un modèle de diffusion](#create-template)
 
-Les canaux d’API personnalisés nécessitent une configuration supplémentaire. [En savoir plus](#api-additional)
+Les canaux d’API personnalisés nécessitent une configuration supplémentaire. [Configuration supplémentaire de l’API personnalisée](#api-additional)
 
 ## Configurer le schéma{#configure-schema}
 
@@ -52,11 +52,11 @@ Tout d’abord, configurez le schéma pour ajouter le nouveau canal à la liste 
 
 1. Dans l’explorateur Campaign, sélectionnez **Administration** > **Configuration** > **Schémas de données**.
 
-1. Créez une extension de schéma pour étendre l’énumération **messageType** [&#128279;](../config/enumerations.md) avec le nouveau canal.
+1. Créez une extension de schéma pour étendre l’énumération **messageType** [](../config/enumerations.md) avec le nouveau canal.
 
    Par exemple :
 
-   ```
+   ```xml
    <enumeration basetype="byte" default="mail" label="Channel" name="messageType">
    <value desc="My Webpush" img="ncm:channels.png" label="My Webpush" name="webpush"
           value="122"/>
@@ -73,7 +73,7 @@ Ensuite, vous devez créer un compte externe de routage.
 
 1. Créez un compte externe.
 
-1. Sélectionnez le canal et changez le mode de diffusion. Choisissez **Externe** pour les canaux externes personnalisés, et **En bloc** pour les canaux d’API personnalisés.
+1. Sélectionnez le canal et changez le mode de diffusion. Choisissez **Externe** pour les canaux externes personnalisés et **En bloc** pour les canaux d’API personnalisés.
 
    ![](assets/cus-ext-account.png){zoomable="yes"}
 
@@ -99,36 +99,36 @@ Les principales étapes supplémentaires pour configurer des canaux d’API pers
 
 À partir de la console cliente, étendez le schéma **Diffusion** avec toutes les propriétés supplémentaires requises pour le canal personnalisé.
 
-Pour plus d’informations sur les extensions de schéma, consultez cette [page](../dev/extend-schema.md).
+Pour plus d’informations sur l’extension de schéma, consultez cette [page](../dev/extend-schema.md).
 
 ### Configurer la définition d’écran personnalisée{#api-additional-screen}
 
 Dans l’interface utilisateur web de Campaign, configurez la définition d’écran personnalisée :
 
-1. Ouvrez le schéma **Diffusion**, puis cliquez sur **Modification de l’écran**.
+1. Ouvrez le schéma **Diffusion** et cliquez sur **Modification de l’écran**.
 
    ![](assets/cus-schema2.png){zoomable="yes"}
 
-1. Sélectionnez l’onglet correspondant à votre canal et définissez comment les champs seront affichés dans l’écran de contenu de la diffusion. Pour plus d’informations sur la modification de l’écran, consultez cette [page](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html?lang=fr#fields){target="_blank"}.
+1. Sélectionnez l’onglet correspondant à votre canal et définissez comment les champs seront affichés dans l’écran de contenu de la diffusion. Pour plus d’informations sur la modification de l’écran, consultez cette [page](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html#fields){target="_blank"}.
 
    ![](assets/cus-schema3.png){zoomable="yes"}
 
-1. Dans la section **Aperçu pour simuler du contenu**, sélectionnez le JSPP dédié. Cette option est facultative. L&#39;aperçu sera alors activé dans l&#39;écran de simulation de la diffusion. [En savoir plus](#api-additional-preview)
+1. Dans la section **Aperçu pour simuler le contenu**, sélectionnez le JSPP dédié. Cette option est facultative. L&#39;aperçu sera alors activé dans l&#39;écran de simulation de la diffusion. [Configurer l&#39;aperçu](#api-additional-preview)
 
 ### Configuration de l’aperçu{#api-additional-preview}
 
 Ce paramétrage est facultatif. Si vous souhaitez activer l’aperçu dans l’interface utilisateur web, dans l’écran de simulation de la diffusion, vous devez configurer un JSSP dédié dans la console cliente.
 
-Lorsque vous cliquez sur **Ouvrir l’aperçu** dans l’écran de simulation d’une diffusion, dans l’interface utilisateur web, les paramètres suivants sont transmis dans l’URL :
+Lorsque vous cliquez sur **Ouvrir l’aperçu** dans l’écran de simulation de la diffusion de l’interface utilisateur web, les paramètres suivants sont transmis dans l’URL :
 
 `https://adobe.campaign.adobe.com/cus/webPushMessagePreview.jssp?deliveryId=%40ToPzTurO9aGzQxYcMArBbA%3D%3D&id=%40oF8Fi17txuLmtiOFj4OIjQ%3D%3D`
 
 * `deliveryId` : identifiant de la diffusion
 * `id` : identifiant du profil
 
-Dans la console cliente, sélectionnez **Administration** > **Configuration** > **Pages Dynamic JavaScript** et créez un JSSP. Voici un exemple avec les paramètres qui doivent être récupérés.
+Dans la console cliente, sélectionnez **Administration** > **Configuration** > **Pages de Dynamic JavaScript** et créez un nouveau JSSP. Voici un exemple avec les paramètres qui doivent être récupérés.
 
-```
+```html
 <%@ page import="xtk:shared/nl.js"
 %><%
   NL.require("/nl/core/shared/core.js")

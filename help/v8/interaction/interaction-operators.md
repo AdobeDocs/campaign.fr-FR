@@ -27,14 +27,14 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 96%
+source-wordcount: '274'
+ht-degree: 89%
 ---
 # Profils d&#39;opérateurs {#operator-profiles}
 
-Deux types d&#39;opérateurs peuvent utiliser l&#39;interaction Campaign : **chargés d&#39;offres** et **chargés de diffusion**. Chacun d&#39;eux a des autorisations et des restrictions spécifiques. Pour en savoir plus sur les opérateurs et les autorisations Campaign, consultez [cette page](../start/gs-permissions.md).
+Deux types d&#39;opérateurs peuvent utiliser l&#39;interaction Campaign : **chargés d&#39;offres** et **chargés de diffusion**. Chacun d&#39;eux a des autorisations et des restrictions spécifiques. Découvrez les opérateurs et les autorisations Campaign dans [Prise en main des autorisations dans Campaign v8](../start/gs-permissions.md).
 
 * Le **[!UICONTROL Chargé d&#39;offres]** crée et maintient les offres.
 * Le **[!UICONTROL Chargé de diffusion]** valide et utilise les offres
@@ -44,7 +44,7 @@ Deux types d&#39;opérateurs peuvent utiliser l&#39;interaction Campaign : **ch
 1. Créez un opérateur/une opératrice. [En savoir plus](../start/manage-permissions.md#add-users)
 1. Dans la fenêtre **[!UICONTROL Groupes et droits nommés]**, cliquez sur **[!UICONTROL Ajouter]** et sélectionnez le groupe **[!UICONTROL Chargé d’offres]**.
 
-Les autorisations associées aux chargés d’offres sont décrites [ici](../start/manage-permissions.md#ootb-productprofiles).
+Les autorisations associées aux chargés d’offres sont décrites [Profils de produit et groupes d’opérateurs par défaut](../start/manage-permissions.md#ootb-productprofiles).
 
 ## Créer un opérateur/une opératrice Chargé(e) de diffusion {#delivery-manager}
 

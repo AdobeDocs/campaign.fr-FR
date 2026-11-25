@@ -23,10 +23,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f89b58e9c7a87b6526dbbf491db67109418f2006
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 94%
+source-wordcount: '329'
+ht-degree: 80%
 ---
 # Mises à jour de la documentation {#latest-updates}
 
@@ -34,39 +34,39 @@ Cette page répertorie les dernières mises à jour de la documentation de [!DNL
 
 ## Juin 2026 {#june-2026}
 
-Ajout d’une page sur les directives de la CNIL pour les pixels de suivi d’e-mails et les fonctionnalités Adobe Campaign Standard associées. [En savoir plus](cnil-pixel-tracking.md)
+Ajout d’une page sur les directives de la CNIL pour les pixels de suivi d’e-mails et les fonctionnalités Adobe Campaign Standard associées. [Conseils Sur Les Pixels De Tracking Des E-Mails](cnil-pixel-tracking.md)
 
 ## Avril 2025 {#april-2025}
 
-Ajout d’une bonne pratique consistant à redémarrer le workflow après avoir modifié l’heure planifiée de l’activité **[!UICONTROL Planificateur]** afin de s’assurer qu’elle s’exécute selon le planning mis à jour. [En savoir plus](../../automation/workflow/scheduler.md)
+Ajout d’une bonne pratique consistant à redémarrer le workflow après avoir modifié l’heure planifiée de l’activité **[!UICONTROL Planificateur]** afin de s’assurer qu’elle s’exécute selon le planning mis à jour. [Bonnes pratiques relatives au planificateur](../../automation/workflow/scheduler.md#best-practices)
 
 ## Janvier 2025 {#january-2025}
 
-Réorganisation et de la page sur la réplication des données pour les déploiements FFDA et ajout de nouvelles informations. [En savoir plus](../architecture/replication.md)
+Réorganisation et de la page sur la réplication des données pour les déploiements FFDA et ajout de nouvelles informations. [Réplication des données](../architecture/replication.md)
 
 ## Novembre 2024 {#october-2024}
 
-* Le workflow **ffdaUnsubscribe** a été ajouté à la liste des workflows techniques. [En savoir plus](../../automation/workflow/technical-workflows.md)
-* La page sur les versions et mises à niveau de Campaign a été améliorée. [En savoir plus](upgrades.md)
+* Le workflow **ffdaUnsubscribe** a été ajouté à la liste des workflows techniques. [Workflows techniques](../../automation/workflow/technical-workflows.md)
+* La page sur les versions et mises à niveau de Campaign a été améliorée. [Versions, mises à niveau et sécurité de Campaign](upgrades.md)
 
 ## Juin 2024 {#june-2024}
 
-Une note a été ajoutée pour indiquer comment effacer les variables d’instances lors du redémarrage des workflows. [En savoir plus](../../automation/workflow/start-a-workflow.md)
+Une note a été ajoutée pour indiquer comment effacer les variables d’instances lors du redémarrage des workflows. [Démarrer un workflow](../../automation/workflow/start-a-workflow.md)
 
 ## Mai 2024 {#may-2024}
 
-* La liste des canaux et des types de diffusions est désormais répertoriée dans [cette page](create-message.md).
-* Les paramètres de diffusion et les sections de gestion des vagues ont été réorganisés et améliorés. [En savoir plus](../send/configure-and-send.md).
+* La liste des canaux et des types de diffusions est désormais répertoriée dans [Créer votre première diffusion](create-message.md).
+* Les paramètres de diffusion et les sections de gestion des vagues ont été réorganisés et améliorés. [Configurer des e-mails avec Adobe Campaign](../send/configure-and-send.md).
 * Une note a été ajoutée pour préciser que les activités **[!UICONTROL Changer la dimension]** et **[!UICONTROL Modifier la source de données]** ne doivent pas être ajoutées sur une même ligne et doivent être séparées par une activité **[!UICONTROL Enrichissement]**. Pour en savoir plus, consultez les sections [Changer la dimension](../../automation/workflow/change-dimension.md) et [Modifier la source de données](../../automation/workflow/change-data-source.md).
 
 ## Février 2024 {#feb-2024}
 
-* Les nouvelles fonctionnalités et améliorations de [!DNL Campaign] version v8.6 sont détaillées dans la documentation. [En savoir plus](release-notes.md)
-* La gestion des versions et le mécanisme de mise à niveau de Campaign v8 sont désormais présentés dans une page dédiée. [En savoir plus](upgrades.md)
-* Ajout d’une page sur l’intégration Adobe Campaign + Adobe Workfront. [En savoir plus](../connect/ac-workfront.md)
+* Les nouvelles fonctionnalités et améliorations de [!DNL Campaign] version v8.6 sont détaillées dans la documentation. [Notes de mise à jour de Campaign v8](release-notes.md)
+* La gestion des versions et le mécanisme de mise à niveau de Campaign v8 sont désormais présentés dans une page dédiée. [Versions, mises à niveau et sécurité de Campaign](upgrades.md)
+* Ajout d’une page sur l’intégration Adobe Campaign + Adobe Workfront. [Utiliser Adobe Campaign et Adobe Workfront](../connect/ac-workfront.md)
 
 ## Janvier 2024 {#jan-2024}
 
-* Ajout d’informations sur la définition du champ postalAddress par défaut pour Courrier et sur les raisons pour lesquelles il est important de s’assurer que les adresses sont complètes. [En savoir plus](../send/direct-mail.md)
+* Ajout d’informations sur la définition du champ postalAddress par défaut pour Courrier et sur les raisons pour lesquelles il est important de s’assurer que les adresses sont complètes. [Envoyer des courriers avec Adobe Campaign](../send/direct-mail.md)
 * La [page d’accueil de la documentation](../campaign-home.md) d’Adobe Campaign v8 a été repensée.
 

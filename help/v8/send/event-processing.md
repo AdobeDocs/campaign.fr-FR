@@ -26,14 +26,14 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 90%
+source-wordcount: '703'
+ht-degree: 87%
 ---
 # Traitement des événements {#event-processing}
 
-Dans le contexte des messages transactionnels, un événement est généré par un système d’informations externe et envoyé à Adobe Campaign via les méthodes **[!UICONTROL PushEvent]** et **[!UICONTROL PushEvents]**. Ces méthodes sont décrites dans [cette section](event-description.md).
+Dans le contexte des messages transactionnels, un événement est généré par un système d’informations externe et envoyé à Adobe Campaign via les méthodes **[!UICONTROL PushEvent]** et **[!UICONTROL PushEvents]**. Ces méthodes sont décrites dans [Comprendre la description de l&#39;événement](event-description.md).
 
 Cet événement contient des données liées à l’événement, telles que :
 
@@ -69,7 +69,7 @@ Une fois collectés, les événements sont scindés par workflows techniques ent
 
 >[!NOTE]
 >
->Sur les instances d&#39;exécution, les dossiers **[!UICONTROL Événements en temps réel]** ou **[!UICONTROL Événements par lots]** ne doivent pas être définis comme des vues, car cela pourrait entraîner des problèmes de droit d&#39;accès. Pour plus d&#39;informations sur la définition d&#39;un dossier en tant que vue, consultez [cette section](../audiences/folders-and-views.md#turn-a-folder-to-a-view).
+>Sur les instances d&#39;exécution, les dossiers **[!UICONTROL Événements en temps réel]** ou **[!UICONTROL Événements par lots]** ne doivent pas être définis comme des vues, car cela pourrait entraîner des problèmes de droit d&#39;accès. Pour plus d&#39;informations sur la définition d&#39;un dossier en tant que vue, voir [Transformer un dossier en vue](../audiences/folders-and-views.md#turn-a-folder-to-a-view).
 
 ## Transférer un événement vers un modèle {#event-to-template}
 

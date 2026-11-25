@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 86%
+source-wordcount: '971'
+ht-degree: 80%
 ---
 # Création de diffusions courrier
 
@@ -52,14 +52,14 @@ Pour créer une diffusion courrier, procédez comme suit :
 
 >[!NOTE]
 >
->Les concepts généraux relatifs à la création d&#39;une diffusion sont présentés dans [cette section](../start/create-message.md).
+>Les concepts globaux relatifs à la création d&#39;une diffusion sont présentés dans la section [Créer votre première diffusion](../start/create-message.md).
 
 1. Créez une diffusion, par exemple depuis le tableau de bord des diffusions.
 1. Sélectionnez le modèle de diffusion **Diffuser par courrier (papier)**.
 
    ![](assets/direct_mail.png)
 
-1. Identifiez votre diffusion avec un libellé, un code et une description. Pour plus d’informations, consultez [cette section](../start/create-message.md#create-the-delivery).
+1. Identifiez votre diffusion avec un libellé, un code et une description. Voir à ce sujet la section [Créer la diffusion](../start/create-message.md#create-the-delivery).
 1. Cliquez sur **Continuer** pour valider ces informations et afficher la fenêtre de configuration du message.
 
 ## Définition de l’audience{#defining-the-direct-mail-audience}
@@ -70,7 +70,7 @@ Les adresses postales sont des champs calculés. Par défaut, une adresse peut c
 
 Une adresse est considérée comme complète si les champs relatifs au nom, au code postal et à la ville ne sont pas vides. Les personnes destinataires dont les adresses sont incomplètes seront exclues des diffusions par courrier.
 
-En savoir plus dans [cette section](../start/create-message.md#target-population).
+En savoir plus dans [Définir l&#39;audience cible](../start/create-message.md#target-population).
 
 ## Définition du contenu du fichier{#defining-the-direct-mail-content}
 
@@ -90,11 +90,11 @@ Ce lien permet d’accéder à l’assistant d’extraction afin de définir les
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-Vous pouvez insérer une URL personnalisée dans le fichier d’extraction. Pour plus d’informations, consultez [cette section](../dev/web/publishing-a-web-form.md).
+Vous pouvez insérer une URL personnalisée dans le fichier d’extraction. Pour plus d&#39;informations, consultez la section [Publier un formulaire web](../dev/web/publishing-a-web-form.md).
 
 >[!NOTE]
 >
->Cet assistant comprend les étapes de l’assistant d’exportation détaillées dans la [documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=fr){target="_blank"} de Adobe Campaign Classic.
+>Cet assistant comprend les étapes de l’assistant d’exportation détaillées dans la [documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"} de Adobe Campaign Classic.
 
 ## Validation de la diffusion{#validating}
 
@@ -102,7 +102,7 @@ Vérifiez le résultat de l&#39;analyse et le contenu du fichier de sortie.
 
 Dans le cadre d&#39;une opération marketing, à la date d&#39;extraction, le fichier d&#39;extraction est créé. Vous pouvez visualiser le contenu du fichier extrait, le valider ou modifier le format et relancer l&#39;extraction en cas de besoin. Une fois le fichier validé, vous pouvez envoyer l’e-mail de notification au routeur. En savoir plus à ce propos sur [cette page](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=fr){target="_blank"}.
 
-Les concepts généraux de validation d&#39;une diffusion sont présentés dans [cette section](../start/create-message.md#validate-the-delivery).
+Les concepts généraux lors de la validation d’une diffusion sont présentés dans [Préparer et valider votre diffusion](../start/create-message.md#validate-the-delivery).
 
 Le fichier de sortie d&#39;une diffusion par courrier est généré pendant l&#39;analyse de la diffusion. Le contenu du fichier dépend des colonnes de sortie sélectionnées (consultez ce [fichier de section](#defining-the-direct-mail-content)).
 

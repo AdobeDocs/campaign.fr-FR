@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 51%
+source-wordcount: '597'
+ht-degree: 50%
 ---
 # Configuration des liens trackés {#how-to-configure-tracked-links}
 
@@ -39,7 +39,7 @@ Pour chaque diffusion, vous pouvez suivre la réception des messages et l&#39;ac
 
 >[!NOTE]
 >
->Les liens inclus dans le contenu des emails qui comportent des éléments de personnalisation ont besoin d&#39;une syntaxe spécifique pour être suivis. Découvrez comment ajouter dans [cette section](personalized-links.md) des liens dans les e-mails qui peuvent être personnalisés et qui prennent en charge le tracking.
+>Les liens inclus dans le contenu des emails qui comportent des éléments de personnalisation ont besoin d&#39;une syntaxe spécifique pour être suivis. Découvrez comment ajouter des liens dans des e-mails qui peuvent être personnalisés et qui prennent en charge le suivi dans [Suivre les liens personnalisés](personalized-links.md).
 
 Le tracking des messages est activé par défaut. Pour personnaliser le suivi des URL, procédez comme suit :
 
@@ -78,7 +78,7 @@ Le tracking des messages est activé par défaut. Pour personnaliser le suivi de
    * **[!UICONTROL Opt-out]** : considère cette URL comme une option d&#39;opt-out ou une URL de désabonnement.
    * **[!UICONTROL Page miroir]** : considère cette URL comme une URL de page miroir.
 
-1. De plus, vous pouvez sélectionner une catégorie pour chaque URL suivie dans la liste déroulante de la colonne **[!UICONTROL Catégorie]**. Ces catégories peuvent être affichées dans les rapports, par exemple dans le rapport **[!UICONTROL URL et flux de clics]** (voir [cette section](../reporting/delivery-reports.md#urls-and-click-streams)). Les catégories sont définies dans une énumération spécifique : **[!UICONTROL urlCategory]**. Découvrez comment utiliser les énumérations dans [cette section](../config/enumerations.md).
+1. De plus, vous pouvez sélectionner une catégorie pour chaque URL suivie dans la liste déroulante de la colonne **[!UICONTROL Catégorie]**. Ces catégories peuvent être affichées dans les rapports, par exemple dans le rapport **[!UICONTROL URL et flux de clics]** (voir [URL et flux de clics](../reporting/delivery-reports.md#urls-and-click-streams)). Les catégories sont définies dans une énumération spécifique : **[!UICONTROL urlCategory]**. Découvrez comment utiliser les énumérations dans la section [Gérer les énumérations](../config/enumerations.md).
 
 ## Bonnes pratiques relatives aux délimiteurs d’URL {#url-delimiters}
 
@@ -88,8 +88,8 @@ Nous vous recommandons vivement de placer les URL dans des délimiteurs dans l&#
 * Crochets [ ]
 * Accolades { }
 
-Dans cet exemple, l&#39;URL https://www.adobe.com/fr est suivie d&#39;un point-virgule. Le point-virgule peut être interprété par les clients de messagerie des destinataires comme faisant partie de l&#39;URL. Par conséquent, le lien peut être rompu. Pour éviter ce problème, vous pouvez placer l&#39;URL dans des délimiteurs de l&#39;une des façons suivantes :
+Dans cet exemple, l&#39;URL https://www.adobe.com est suivie d&#39;un point-virgule. Le point-virgule peut être interprété par les clients de messagerie des destinataires comme faisant partie de l&#39;URL. Par conséquent, le lien peut être rompu. Pour éviter ce problème, vous pouvez placer l&#39;URL dans des délimiteurs de l&#39;une des façons suivantes :
 
-* (https://www.adobe.com/fr);
-* [https://www.adobe.com/fr];
-* {https://www.adobe.com/fr};
+* (https://www.adobe.com);
+* [https://www.adobe.com];
+* {https://www.adobe.com};

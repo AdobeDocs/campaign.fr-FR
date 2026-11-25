@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 90%
+source-wordcount: '529'
+ht-degree: 88%
 ---
 # Cas d’utilisation : affichage d’un rapport sur les réponses à un questionnaire en ligne{#use-case-displaying-report-on-answers-to-an-online-survey}
 
@@ -63,7 +63,7 @@ Avant de démarrer ce cas pratique, vous devez disposer d&#39;un questionnaire e
 
 Pour collecter les réponses du questionnaire, les étapes sont les suivantes :
 
-1. Créez un workflow et positionnez une activité **[!UICONTROL Réponses à un questionnaire]**. Pour plus d’informations sur cette activité, consultez [cette section](publish-track-and-use-collected-data.md#using-the-collected-data).
+1. Créez un workflow et positionnez une activité **[!UICONTROL Réponses à un questionnaire]**. Pour plus d&#39;informations sur l&#39;utilisation de cette activité, consultez la section [Utiliser les données collectées](publish-track-and-use-collected-data.md#using-the-collected-data).
 1. Editez l&#39;activité et sélectionnez le questionnaire dont vous souhaitez analyser les réponses.
 1. Activez l&#39;option **[!UICONTROL Sélectionner toutes les données des réponses]** afin de collecter toutes les informations.
 
@@ -93,7 +93,7 @@ Pour collecter les réponses du questionnaire, les étapes sont les suivantes :
 
 ## Etape 2 - Créer le cube, ses mesures et ses indicateurs {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-Vous pouvez ensuite créer le cube et paramétrer ses mesures : elles seront utilisées lors de la création des indicateurs. Ces indicateurs seront affichés dans le rapport. La création et le paramétrage des cubes sont présentés dans la section [À propos des cubes](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/reporting/ac-cubes){target="_blank"}.
+Vous pouvez ensuite créer le cube et paramétrer ses mesures : elles seront utilisées lors de la création des indicateurs. Ces indicateurs seront affichés dans le rapport. La création et le paramétrage des cubes sont présentés dans la section [À propos des cubes](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/ac-cubes){target="_blank"}.
 
 Dans cet exemple, le cube est basé sur les données de la liste alimentée par le workflow créé à l&#39;étape précédente.
 

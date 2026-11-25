@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 71%
+source-wordcount: '545'
+ht-degree: 67%
 ---
 # Utiliser des audiences dans Campaign{#gs-ac-audiences}
 
@@ -44,13 +44,13 @@ Découvrez comment importer, mettre à jour et gérer des profils et des audienc
 
 Une liste est un ensemble statique de contacts qui peut être ciblé dans des actions de diffusion ou mis à jour pendant une importation ou lors d&#39;une autre action de workflow. Par exemple, une population extraite de la base de données via une requête peut être stockée en tant que liste.
 
-Découvrez comment créer et gérer des listes sur [cette page](../audiences/create-audiences.md).
+Découvrez comment créer et gérer des listes dans [Créer des audiences de profil dans Campaign](../audiences/create-audiences.md).
 
 ## Filtrer la base de données{#filter-the-database}
 
 La configuration des filtres permet de sélectionner des données dans une liste **[!UICONTROL de manière dynamique]** : lorsque les données sont modifiées, les données filtrées sont mises à jour. Vous pouvez créer vos propres filtres ou utiliser les filtres intégrés pour définir une audience cible.
 
-Découvrez comment créer et gérer les filtres sur [cette page](../audiences/create-filters.md).
+Découvrez comment créer et gérer des filtres dans [Utiliser des filtres dans Adobe Campaign](../audiences/create-filters.md).
 
 ## Créer une audience dans un workflow
 

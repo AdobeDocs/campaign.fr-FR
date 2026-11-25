@@ -35,10 +35,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 53%
+source-wordcount: '566'
+ht-degree: 49%
 ---
 # Statuts de diffusion {#delivery-statuses}
 
@@ -108,7 +108,7 @@ Pour plus d&#39;informations sur les différents échecs de diffusion que vous p
  </tbody> 
 </table>
 
-Pour découvrir comment optimiser la délivrabilité de vos emails Adobe Campaign, reportez-vous à [cette section](about-deliverability.md). Pour un examen plus approfondi de la délivrabilité, consultez le [Guide des bonnes pratiques relatives à la délivrabilité d’Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=fr).
+Pour savoir comment optimiser la délivrabilité de vos emails Adobe Campaign, consultez la section [Prise en main de la délivrabilité dans Campaign](about-deliverability.md). Pour un examen plus approfondi de la délivrabilité, consultez le [Guide des bonnes pratiques relatives à la délivrabilité d’Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=fr).
 
 ## Statut En attente {#pending-status}
 
@@ -122,7 +122,7 @@ Si votre diffusion n&#39;est pas envoyée et reste dans un état **[!UICONTROL E
 
   La limite des campagnes simultanées est définie dans l’option **[!UICONTROL NmsOperation_LimitConcurrency]**. La valeur par défaut est 10.
 
-  En tant qu&#39;utilisateur Managed Cloud Services, vous pouvez travailler avec Adobe pour ajuster cette limite si nécessaire. En savoir plus sur les options dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=fr){target="_blank"}.
+  En tant qu&#39;utilisateur Managed Cloud Services, vous pouvez travailler avec Adobe pour ajuster cette limite si nécessaire. En savoir plus sur les options dans la [documentation de Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html){target="_blank"}.
 
 * **Problèmes de disponibilité des ressources**
 

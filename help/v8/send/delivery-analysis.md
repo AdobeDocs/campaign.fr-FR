@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 93%
+source-wordcount: '757'
+ht-degree: 92%
 ---
 # Analyse des diffusions {#analyze-delivery}
 
@@ -45,7 +45,7 @@ Pour préparer la diffusion, vérifiez que le contenu et la cible de la diffusio
 
 1. Cliquez sur **[!UICONTROL Analyser]** pour lancer l’analyse manuellement. La barre de progression indique la progression de l’analyse.
 
-   Un ensemble de règles de vérification est appliqué lors de l’analyse de la diffusion. Ces règles sont définies dans une **typologie**, accessible sous l’onglet **[!UICONTROL Typologie]** des propriétés de la diffusion. En savoir plus sur les typologies dans [cette section](../../automation/campaign-opt/campaign-typologies.md).
+   Un ensemble de règles de vérification est appliqué lors de l’analyse de la diffusion. Ces règles sont définies dans une **typologie**, accessible sous l’onglet **[!UICONTROL Typologie]** des propriétés de la diffusion. En savoir plus sur les typologies dans [Prise en main des typologies de campagne](../../automation/campaign-opt/campaign-typologies.md).
 
    Par défaut pour les e-mails, l’analyse exécute les tâches suivantes :
 

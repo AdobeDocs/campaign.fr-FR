@@ -20,10 +20,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 64%
+source-wordcount: '1003'
+ht-degree: 60%
 ---
 # Paramètres de l’e-mail {#email-parameters}
 
@@ -31,7 +31,7 @@ Cette section présente les options et paramètres disponibles dans les proprié
 
 ## Utiliser E-mail Cci {#email-bcc}
 
-Vous pouvez configurer Adobe Campaign pour conserver une copie des e-mails envoyés depuis votre plateforme. Cette option est détaillée sur [cette page](email-bcc.md).
+Vous pouvez configurer Adobe Campaign pour conserver une copie des e-mails envoyés depuis votre plateforme. Cette option est détaillée dans [Envoyer une copie de vos messages à une adresse en Cci](email-bcc.md).
 
 ## Sélectionner des formats de message {#selecting-message-formats}
 
@@ -83,15 +83,15 @@ L’onglet **[!UICONTROL SMTP]** des propriétés de la diffusion permet de conf
 
 * **[!UICONTROL Adresse des rebonds]** : vous pouvez également définir une autre adresse vers laquelle les e-mails de rebond non traités seront transférés. Cette adresse vous permet d’étudier les raisons des rebonds lorsque les e-mails n’ont pas pu être qualifiés automatiquement par l’application.
 
-Chacun de ces champs peut être personnalisé à l’aide de l’icône dédiée. En savoir plus sur les champs de personnalisation dans [cette section](personalization-fields.md).
+Chacun de ces champs peut être personnalisé à l’aide de l’icône dédiée. En savoir plus sur les champs de personnalisation dans la section [Ajouter des champs de personnalisation](personalization-fields.md).
 
 ![](assets/email-smtp-bounce.png)
 
-Pour plus d’informations sur la gestion des e-mails de rebond, consultez [cette section](delivery-failures.md#bounce-mail-qualification).
+Pour plus d&#39;informations sur la gestion des mails rebonds, consultez la section [Qualification des mails rebonds](delivery-failures.md#bounce-mail-qualification).
 
 ## Activer le désabonnement de la liste en un clic {#one-click-list-unsubscribe}
 
-L’URL list-unsubscribe en un clic est un lien ou un bouton affiché en regard des informations de l’expéditeur de l’e-mail, qui permet aux destinataires de se désinscrire instantanément de vos listes de diffusion en un seul clic. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"}-->
+L’URL list-unsubscribe en un clic est un lien ou un bouton affiché en regard des informations de l’expéditeur de l’e-mail, qui permet aux destinataires de se désinscrire instantanément de vos listes de diffusion en un seul clic. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
 
 Elle s&#39;affiche sous la forme d&#39;un lien **Se désabonner** dans les interfaces de messagerie des FAI. Par exemple :
 
@@ -131,7 +131,7 @@ Selon le client de messagerie et la méthode qu&#39;il utilise pour effectuer un
 
 >[!NOTE]
 >
->Vous pouvez également définir manuellement les méthodes [List-Unsubscribe en un clic](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} et [« mailto » List-Unsubscribe](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}. Les étapes détaillées sont décrites dans le [Guide des bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"} d’Experience Cloud.
+>Vous pouvez également définir manuellement les méthodes [List-Unsubscribe en un clic](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} et [« mailto » List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}. Les étapes détaillées sont décrites dans le [Guide des bonnes pratiques en matière de délivrabilité](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"} d’Experience Cloud.
 
 
 ## Ajouter des en-têtes SMTP {#adding-smtp-headers}
@@ -155,4 +155,4 @@ Les valeurs sont automatiquement encodées, si nécessaire.
 
 La page miroir est une page HTML accessible en ligne via un navigateur web et dont le contenu est identique à celui de l’e-mail. Cela peut être utile si vos personnes destinataires rencontrent des problèmes de rendu ou accèdent à des images endommagées quand ils affichent votre e-mail dans leur boîte de réception.
 
-Découvrez comment insérer un lien vers la page miroir dans [cette section](mirror-page.md).
+Découvrez comment insérer un lien vers la page miroir dans [Ajouter un lien vers la page miroir](mirror-page.md)

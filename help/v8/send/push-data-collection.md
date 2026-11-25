@@ -23,10 +23,10 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 83%
+source-wordcount: '1558'
+ht-degree: 82%
 ---
 # Configuration révisée des notifications push {#push-notifications-config}
 
@@ -126,7 +126,7 @@ Pour créer un service destiné à envoyer des notifications push, procédez com
 
    >[!NOTE]
    >
-   >Le mapping de ciblage **[!UICONTROL Applications abonnées (nms:appSubscriptionRcp)]** par défaut est lié à la table des destinataires. Si vous souhaitez utiliser un autre mapping de ciblage, vous devez en créer un nouveau et le saisir dans le champ **[!UICONTROL Mapping de ciblage]** du service. Pour plus d’informations sur les mappings de ciblage, consultez [cette page](../audiences/target-mappings.md).
+   >Le mapping de ciblage **[!UICONTROL Applications abonnées (nms:appSubscriptionRcp)]** par défaut est lié à la table des destinataires. Si vous souhaitez utiliser un autre mapping de ciblage, vous devez en créer un nouveau et le saisir dans le champ **[!UICONTROL Mapping de ciblage]** du service. En savoir plus sur les mappings de ciblage dans [Utilisation des mappings de ciblage](../audiences/target-mappings.md).
 
 1. Ensuite, utilisez l’icône **[!UICONTROL Ajouter]** sur la droite pour définir les applications mobiles qui utilisent ce service.
 
@@ -275,4 +275,4 @@ Adobe Experience Platform Mobile SDK permet d&#39;optimiser les solutions et ser
 
 Une fois que vous avez correctement configuré votre application mobile dans la collecte de données, vous pouvez créer et envoyer des notifications push dans Adobe Campaign.
 
-Reportez-vous à [cette page](push.md#push-create) pour les éléments détaillés spécifiques à la diffusion des notifications iOS et Android.
+Pour les éléments détaillés spécifiques à la diffusion des notifications iOS et Android, voir [Création de votre première notification push](push.md#push-create).

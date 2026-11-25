@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 94%
+source-wordcount: '1265'
+ht-degree: 93%
 ---
 # Créer et publier votre modèle pour les messages transactionnels{#template-transactional-messages}
 
@@ -113,7 +113,7 @@ Une adresse de contrôle vous permet d&#39;afficher une prévisualisation de vot
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. Insérez les données de test. [En savoir plus sur les données de personnalisation dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
+1. Insérez les données de test. [En savoir plus sur les données de personnalisation dans la documentation de Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
 
    ![](assets/messagecenter_create_custo_3.png)
 
@@ -162,7 +162,7 @@ Vous pouvez tester la diffusion du message en envoyant un BAT vers une adresse d
 
 L&#39;envoi d&#39;un BAT engage le même processus que pour toute diffusion.
 
-Pour en savoir plus sur les BAT, consultez [cette section](../send/preview-and-proof.md#proofs-send).
+En savoir plus sur les BAT dans [Envoyer un BAT](../send/preview-and-proof.md#proofs-send).
 
 Toutefois, pour envoyer un BAT de message transactionnel, il vous faut exécuter les opérations suivantes :
 

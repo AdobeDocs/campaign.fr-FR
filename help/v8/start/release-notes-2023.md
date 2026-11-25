@@ -38,14 +38,14 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1520'
-ht-degree: 93%
+source-wordcount: '1523'
+ht-degree: 92%
 ---
 # Notes de mise à jour 2023 {#2023-rn}
 
-Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs des **versions 2023 de Campaign v8**. Pour connaître la version la plus récente, consultez [cette page](release-notes.md).
+Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs des **versions 2023 de Campaign v8**. Pour consulter les [notes de mise à jour de Campaign v8](release-notes.md), voir la dernière version.
 
 Pour toute nouvelle implémentation ou mise à niveau vers un environnement existant, installez [la dernière version](release-notes.md).
 
@@ -105,7 +105,7 @@ Pour plus d&#39;informations, consultez la [documentation détaillée](../send/p
 
 * Vous pouvez désormais tirer parti de la connexion à la destination Adobe Experience Platform pour synchroniser les attributs de profil tels que les données de désinscription entre Adobe Experience Platform et la base de données Campaign v8.
 * La préparation de la diffusion a été optimisée sur tous les canaux.
-* Une nouvelle option d’authentification par clé a été ajoutée pour le compte externe SFTP, outre la méthode d’authentification utilisateur/mot de passe existante. Les utilisateurs et utilisatrices peuvent désormais s’authentifier en toute sécurité à l’aide d’une clé privée, ce qui renforce la sécurité et fournit un autre mécanisme d’authentification pour l’accès SFTP. En savoir plus dans [cette section](../config/external-accounts.md).
+* Une nouvelle option d’authentification par clé a été ajoutée pour le compte externe SFTP, outre la méthode d’authentification utilisateur/mot de passe existante. Les utilisateurs et utilisatrices peuvent désormais s’authentifier en toute sécurité à l’aide d’une clé privée, ce qui renforce la sécurité et fournit un autre mécanisme d’authentification pour l’accès SFTP. En savoir plus sur les [comptes externes de Campaign](../config/external-accounts.md).
 
 **Améliorations de la sécurité**
 

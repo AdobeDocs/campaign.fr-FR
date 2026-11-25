@@ -37,10 +37,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1429'
-ht-degree: 67%
+source-wordcount: '1435'
+ht-degree: 66%
 ---
 # Quarantaine {#quarantine-management}
 
@@ -62,7 +62,7 @@ D&#39;un autre côté, les **profils** peuvent être sur la **liste bloquée**, 
 
 >[!NOTE]
 >
->Les destinataires désabonnés via la méthode List-Unsubscribe [« mailto »](https://experienceleague.adobe.com/fr/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} ne sont pas mis en quarantaine. Ils sont soit désabonnés du [service](../start/subscriptions.md) associé à la diffusion, soit envoyés à la (visible dans la section **[!UICONTROL Ne plus contacter]** du profil) si aucun service n&#39;a été défini pour la diffusion.
+>Les destinataires désabonnés via la méthode List-Unsubscribe [« mailto »](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} ne sont pas mis en quarantaine. Ils sont soit désabonnés du [service](../start/subscriptions.md) associé à la diffusion, soit envoyés à la (visible dans la section **[!UICONTROL Ne plus contacter]** du profil) si aucun service n&#39;a été défini pour la diffusion.
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 
@@ -103,7 +103,7 @@ Pour chaque diffusion, vous pouvez également consulter le rapport **[!UICONTROL
 * le nombre d&#39;adresses mises en quarantaine lors de l&#39;analyse de la diffusion,
 * le nombre d&#39;adresses passées en quarantaine suite à l&#39;action de diffusion.
 
-Pour en savoir plus sur les rapports de diffusion, consultez [cette section](../reporting/gs-reporting.md).
+En savoir plus sur les rapports de diffusion dans [Prise en main des outils de reporting d’Adobe Campaign](../reporting/gs-reporting.md).
 
 ### Adresses de non-délivrabilité et de rebond{#non-deliverable-bounces}
 
@@ -143,7 +143,7 @@ Les adresses qui correspondent à des conditions spécifiques sont automatiqueme
 Les adresses sont automatiquement supprimées de la liste de quarantaine dans les cas suivants :
 
 * Les adresses dont l&#39;état est **[!UICONTROL En erreur]** seront supprimées de la liste de quarantaine après une diffusion réussie.
-* Les adresses dont l’état est **[!UICONTROL En erreur]** seront supprimées de la liste de quarantaine si le dernier rebond temporaire a eu lieu il y a plus de 10 jours. Pour plus d&#39;informations sur la gestion des erreurs de type Soft, consultez [cette section](#soft-error-management).
+* Les adresses dont l’état est **[!UICONTROL En erreur]** seront supprimées de la liste de quarantaine si le dernier rebond temporaire a eu lieu il y a plus de 10 jours. Pour plus d&#39;informations sur la gestion des erreurs de type Soft, voir [Gestion des erreurs de type Soft](#soft-error-management).
 * Les adresses dont l&#39;état est **[!UICONTROL En erreur]** et qui ont rebondi avec l&#39;erreur **[!UICONTROL Boîte pleine]** sont supprimées de la liste de quarantaine après 30 jours.
 
 Leur état devient ensuite **[!UICONTROL Valide]**.

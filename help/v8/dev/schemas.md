@@ -38,10 +38,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 94%
+source-wordcount: '1313'
+ht-degree: 90%
 ---
 # Utilisation des schémas{#gs-ac-schemas}
 
@@ -69,7 +69,7 @@ Dans Adobe Campaign, les schémas de données permettent de :
 * définir des liens entre les différents objets de l&#39;application ;
 * définir et décrire les champs individuels inclus dans chaque objet.
 
-Pour une meilleure compréhension des tables intégrées de Campaign et de leur interaction, consultez [cette section](datamodel.md).
+Pour une meilleure compréhension des tables intégrées de Campaign et de leur interaction, consultez la section [Prise en main du modèle de données de Campaign](datamodel.md).
 
 >[!CAUTION]
 >
@@ -81,7 +81,7 @@ L&#39;élément racine du schéma est **`<srcschema>`**. Il contient les sous-é
 
 Le premier sous-élément **`<element>`** correspond à la racine de l&#39;entité.
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">  
     <attribute name="lastName"/>
@@ -221,11 +221,11 @@ Dans cet exemple, au lieu de laisser l’attribut **@autopk** ou **@autouuid** c
 >
 >Lors de la création ou de l’extension d’un schéma, vous devez conserver la valeur de la séquence de la clé primaire (@pkSequence) pour l’ensemble du schéma.
 
-En savoir plus sur les clés dans [cette section](database-mapping.md).
+En savoir plus sur les clés dans [Mapping de la base de données Campaign](database-mapping.md).
 
 ## Attributs (champs) {#attributes--fields-}
 
-Les attributs vous permettent de définir les champs qui constituent votre objet de données. Vous pouvez utiliser le bouton **[!UICONTROL Insérer]** dans la barre d’outils d’édition du schéma pour déposer les modèles d’attribut vides dans le XML où se trouve votre curseur. En savoir plus dans [cette section](create-schema.md).
+Les attributs vous permettent de définir les champs qui constituent votre objet de données. Vous pouvez utiliser le bouton **[!UICONTROL Insérer]** dans la barre d’outils d’édition du schéma pour déposer les modèles d’attribut vides dans le XML où se trouve votre curseur. En savoir plus dans [Créer un schéma dans Campaign](create-schema.md).
 
 ![](assets/schemaextension_2.png)
 
@@ -313,7 +313,7 @@ Une fois vos modifications apportées et enregistrées, toutes les modifications
 
 ![](assets/schemaextension_3.png)
 
-Pour plus d’informations, consultez [cette section](update-database-structure.md).
+Pour plus d&#39;informations, consultez la section [Mettre à jour la structure de la base de données](update-database-structure.md).
 
 >[!NOTE]
 >

@@ -25,7 +25,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
 source-wordcount: '744'
 ht-degree: 80%
@@ -47,11 +47,11 @@ Par exemple, vous souhaitez qu’un événement de type « Abandon de panier �
 
 L’événement transactionnel est envoyé via une requête POST avec la structure d’URL suivante :
 
-```
+```http
 POST https://mc.adobe.io/<ORGANIZATION>/campaign/<transactionalAPI>/<eventID>
 ```
 
-* **&lt;ORGANIZATION>** : votre ORGANIZATION ID personnel. Consultez [cette section](must-read.md).
+* **&lt;ORGANIZATION>** : votre ORGANIZATION ID personnel. Pour plus d&#39;informations, consultez la section [À lire absolument](must-read.md).
 
 * **&lt;transactionalAPI>** : les points d’entrée (endPoints) de l’API des messages transactionnels.
 
@@ -67,7 +67,7 @@ La requête doit contenir un en-tête &quot;Content-Type: application/json&quot;
 
 Vous devez ajouter un jeu de caractères, par exemple **utf-8**. Cette valeur dépend de l’application REST utilisée.
 
-```
+```bash
 -X POST \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
@@ -100,7 +100,7 @@ Si la payload ne contient que du « mobilePhone », le canal de communication SM
 
 L’exemple ci-dessous montre une payload dans laquelle une communication SMS sera déclenchée :
 
-```
+```bash
 curl --location 'https://mc.adobe.io/<ORGANIZATION>/campaign/mcAdobe/EVTcartAbandonment' \
 --header 'Authorization: Bearer <ACCESS_TOKEN>' \
 --header 'Cache-Control: no-cache' \
@@ -135,7 +135,7 @@ La réponse POST renvoie l’état de l’événement transactionnel au moment d
 
 Requête POST pour envoyer l’événement.
 
-```
+```bash
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/mcAdobe/EVTcartAbandonment \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
@@ -161,7 +161,7 @@ Requête POST pour envoyer l’événement.
 
 Réponse à la requête POST.
 
-```
+```json
 {
   "PKey":"<PKEY>",
   "ctx":

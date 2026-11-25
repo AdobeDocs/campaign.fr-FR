@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 94%
+source-wordcount: '616'
+ht-degree: 85%
 ---
 # Concevoir et envoyer des e-mails
 
@@ -42,7 +42,7 @@ Avec Adobe Campaign, créez des diffusions e-mail pour envoyer des e-mails pers
 >Pour créer des e-mails captivants et personnalisés, accédez à l’[interface d’utilisation web](../start/campaign-ui.md#ac-web-ui). Adobe Campaign est fourni avec le concepteur d’e-mail, une interface intuitive par glisser-déposer, qui vous permet de concevoir et d’affiner le contenu de chaque e-mail.
 
 
-Découvrez les étapes clés de la création et de la configuration d’une diffusion dans [cette page](../start/create-message.md).
+Découvrez les étapes clés de création et de configuration d’une diffusion dans [Créez votre première diffusion](../start/create-message.md).
 
 ## Création d’une diffusion par e-mail
 
@@ -87,7 +87,7 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
      ![](assets/perso-check.png)
 
-     En savoir plus sur les options de personnalisation dans [cette section](personalize.md).
+     En savoir plus sur les options de personnalisation dans [Prise en main de la personnalisation](personalize.md).
 
    * Insertion d&#39;un lien tracké
 
@@ -103,9 +103,9 @@ Dans l&#39;exemple suivant, vous découvrirez les étapes de conception d&#39;un
 
      Placez le curseur à l’endroit où vous souhaitez insérer ce lien, cliquez sur la dernière icône de la barre d’outils, puis sur **[!UICONTROL Inclure]** et sélectionnez **[!UICONTROL Lien vers la page miroir]**.
 
-     En savoir plus sur la gestion de la page miroir dans [cette section](mirror-page.md#link-to-mirror-page).
+     En savoir plus sur la gestion de la page miroir dans [Ajoutez un lien vers la page miroir](mirror-page.md#link-to-mirror-page).
 
-1. Vous pouvez définir des paramètres supplémentaires pour votre e-mail, tels que l’envoi d’une copie de vos messages à une adresse en Cci, la modification du format du message, la définition d’un codage spécifique, etc. En savoir plus dans [cette section](email-parameters.md).
+1. Vous pouvez définir des paramètres supplémentaires pour votre e-mail, tels que l’envoi d’une copie de vos messages à une adresse en Cci, la modification du format du message, la définition d’un codage spécifique, etc. En savoir plus sur les [paramètres d’e-mail dans Adobe Campaign](email-parameters.md).
 
 1. Une fois le contenu prêt, cliquez sur **Enregistrer** : elle s’affiche désormais dans votre liste de diffusions, sous l’onglet **[!UICONTROL Campagnes > Diffusions]**.
 
@@ -124,7 +124,7 @@ Découvrez comment créer un workflow pour importer le contenu d’un e-mail dan
 
 ## Tester et valider vos e-mails
 
-Campaign propose plusieurs méthodes permettant de tester et valider vos e-mails avant de les envoyer à vos audiences. Découvrez comment prévisualiser et tester le contenu de votre e-mail dans [cette section](../send/preview-and-proof.md).
+Campaign propose plusieurs méthodes permettant de tester et valider vos e-mails avant de les envoyer à vos audiences. Découvrez comment prévisualiser et tester le contenu de votre e-mail dans [Prévisualiser et tester votre e-mail](../send/preview-and-proof.md).
 
 Vous pouvez ainsi :
 

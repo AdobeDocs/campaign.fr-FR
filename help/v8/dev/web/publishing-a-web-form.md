@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1370'
-ht-degree: 95%
+source-wordcount: '1373'
+ht-degree: 94%
 ---
 # Publier un formulaire web{#publishing-a-web-form}
 
@@ -161,7 +161,7 @@ Pour que l’accès au formulaire soit possible, il doit être en production et 
 
 Lorsque vous diffusez une invitation par e-mail, vous pouvez utiliser l’option **[!UICONTROL Chiffrement Adobe Campaign]** pour assurer la réconciliation des données. Pour cela, accédez à l’assistant de diffusion et adaptez le lien vers le formulaire en ajoutant le paramètre suivant :
 
-```
+```xml
 <a href="https://server/webApp/APP264?&id=<%=escapeUrl(recipient.cryptedId) %>">
 ```
 
@@ -191,7 +191,7 @@ Vous pouvez exploiter les traces des réponses fournies dans des requêtes, par 
 
 Lors de l&#39;export et de l&#39;import d&#39;un package comprenant un formulaire web d&#39;une instance vers une autre instance (par exemple, de l&#39;évaluation à la production), le statut du formulaire web sur la nouvelle instance peut varier selon plusieurs conditions. Les différents cas sont énumérés ci-dessous.
 
-Pour en savoir plus sur les différents statuts d&#39;un formulaire web, consultez [cette section](#life-cycle-of-a-form).
+En savoir plus sur les différents états d’un formulaire web dans [Cycle de vie d’un formulaire](#life-cycle-of-a-form).
 
 >[!NOTE]
 >

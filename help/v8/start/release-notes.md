@@ -26,18 +26,18 @@ topic_v2:
     internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 7ae0ea8d334af5e3580b594d5ddc8b52b10fa5b6
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '2455'
-ht-degree: 10%
+source-wordcount: '2460'
+ht-degree: 12%
 ---
 # Dernières versions {#latest-release}
 
-Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs des **dernières versions** de Campaign v8 (console). Pour en savoir plus sur les publications, les versions et les mises à niveau de Campaign, consultez [cette page](upgrades.md). Les autres versions sont répertoriées dans la section Versions précédentes de cette documentation.
+Cette page répertorie les nouvelles fonctionnalités, les améliorations et les correctifs des **dernières versions** de Campaign v8 (console). En savoir plus sur les versions et les mises à niveau de Campaign dans [Versions, mises à niveau et sécurité de Campaign](upgrades.md). Les autres versions sont répertoriées dans la section Versions précédentes de cette documentation.
 
 ## Version 8.9.4 {#release-8-9-4}
 
-_15 octobre 2026_
+_15 octobre 2026_
 
 ### Améliorations {#improvements-8-9-4}
 
@@ -48,18 +48,18 @@ _15 octobre 2026_
 * Correction d&#39;un problème en raison duquel certains messages de retour sur bounce pouvaient entraîner le blocage des mises à jour de l&#39;état de diffusion, les diffusions affectées restant bloquées dans l&#39;état « Prise en compte par le fournisseur d&#39;accès d&#39;accès d&#39;accès ». (NEO-98183)
 * Correction d’un problème où les alertes de diffusion pour les diffusions bloquées dans un statut Démarrage long en attente pouvaient se déclencher incorrectement en raison d’une erreur de calcul du seuil. (NEO-93434)
 * Correction d’un problème en raison duquel l’envoi de diffusions de contenu texte pouvait entraîner le blocage du processus du serveur de mid-sourcing. (NEO-95122)
-* Correction d’un problème en raison duquel l’activité de workflow **Lecture de groupe** pouvait générer du code SQL non valide pour les champs d’expression calculés. (NEO-95233)
+* Correction d&#39;un problème en raison duquel l&#39;activité de workflow **Lecture de groupe** pouvait générer du SQL non valide pour les champs d&#39;expression calculés. (NEO-95233)
 * Correction d’un problème en raison duquel les identifiants de fragments de diffusion générés pour les diffusions de mid-sourcing FFDA pouvaient entrer en conflit. (NEO-95777)
 * Correction d’un problème en raison duquel certains caractères des URL de navigation de navigateur intégrées pouvaient provoquer le blocage de la console cliente. (NEO-96267)
 * Correction d’un problème en raison duquel les diffusions SMS étaient sous-signalées dans les rapports dynamiques. (NEO-96401)
 * Correction d&#39;un problème en raison duquel la préparation de diffusion pouvait échouer pour les cibles de fichiers externes Snowflake ou FFDA qui n&#39;utilisent pas le mapping de profil. (NEO-96507)
 * Correction d&#39;un problème en raison duquel les workflows contenant plusieurs requêtes liées à différentes sources FDA pouvaient échouer. (NEO-97249)
 * Correction d’un problème en raison duquel les workflows d’enrichissement en temps quasi réel pouvaient échouer par intermittence avec des erreurs SQL lors du déclenchement d’événements de traitement à des moments proches. (NEO-97557)
-* Correction d’un problème en raison duquel un mécanisme de verrouillage interne pouvait entrer dans une boucle de reprise et entraîner une utilisation élevée de CPU sur le serveur. (NEO-94845)
+* Correction d’un problème où un mécanisme de verrouillage interne pouvait entrer dans une boucle de nouvelle tentative et entraîner une utilisation élevée du processeur sur le serveur. (NEO-94845)
 * Correction d’un problème en raison duquel la préparation de la diffusion pouvait échouer avec une erreur SQL lors de l’utilisation d’adresses de contrôle avec un mapping de ciblage personnalisé. (NEO-94966)
 * Correction d’un problème en raison duquel les workflows FDA pouvaient échouer avec une erreur de débordement de colonne lors du chargement de données dans Redshift. (NEO-96125)
-* Correction d’un problème en raison duquel le compte externe Analytics pouvait échouer avec une erreur « Terminé » (410). (NEO-99019)
-* Correction d’un problème en raison duquel certaines diffusions pouvaient rester bloquées dans le statut en attente de personnalisation même si les messages correspondants avaient été envoyés avec succès. (NEO-94471)
+* Correction d’un problème en raison duquel le compte externe Analytics pouvait échouer avec une erreur « Gone » (410). (NEO-99019)
+* Correction d’un problème en raison duquel certaines diffusions pouvaient rester bloquées au statut en attente de personnalisation même si les messages correspondants avaient été correctement envoyés. (NEO-94471)
 
 ## Version 8.9.3 {#release-8-9-3}
 
@@ -77,11 +77,11 @@ En tant qu’administrateur ou administratrice de Campaign, utilisez le panneau 
 
 ### Connecteur Adobe Analytics mis à niveau vers l’API Analytics 2.0 {#analytics-2-0-8-9-3}
 
-Les API d’Adobe Analytics 1.4 étant [en fin de vie](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"}, le [connecteur Web Analytics](../connect/ac-aa.md) a été mis à niveau vers l’API Analytics 2.0 dans le cadre de cette version. En tant que client hébergé, Adobe prend en charge cette migration pour vous. Aucune configuration n’est requise de votre côté.
+Les API d’Adobe Analytics 1.4 [ arrivent en fin de vie](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"}, le [connecteur Web Analytics](../connect/ac-aa.md) a donc été mis à niveau vers l’API Analytics 2.0 dans le cadre de cette version. En tant que client hébergé, Adobe prend en charge cette migration pour vous. Aucune configuration n’est requise de votre côté.
 
 +++ En savoir plus sur la mise à niveau d’Analytics 2.0
 
-Le [&#x200B; connecteur Web Analytics &#x200B;](../connect/ac-aa.md) envoie vos indicateurs de campagne et vos données de classification à Adobe Analytics, prend en charge le flux de remarketing et est utilisé pour configurer de nouvelles suites de rapports. La mise à niveau réimporte les workflows techniques intégrés qui alimentent le connecteur (**[!UICONTROL webAnalyticsSendMetrics]** et **[!UICONTROL webAnalyticsGetWebEvents]**) et met à jour les fichiers JavaScript Analytics intégrés. Par conséquent, si vous avez personnalisé l’un de ces workflows ou créé des workflows personnalisés qui référencent ces fichiers, réappliquez et adaptez cette personnalisation après la mise à niveau, car elle sera sinon remplacée ou interrompue. Il est recommandé d’éviter de modifier directement les workflows intégrés et de créer plutôt votre personnalisation dans un workflow personnalisé distinct, de sorte que les futures mises à niveau ne la remplacent pas. Une fois la mise à niveau terminée, validez les cas d’utilisation d’Adobe Analytics sur lesquels vous comptez (exportation de mesures, exportation de classifications et remarketing, le cas échéant) pour confirmer que les données continuent de circuler comme prévu.
+Le [connecteur Web Analytics](../connect/ac-aa.md) envoie vos indicateurs de campagne et vos données de classification à Adobe Analytics, prend en charge le flux de remarketing et est utilisé pour configurer de nouvelles suites de rapports. La mise à niveau réimporte les workflows techniques intégrés qui alimentent le connecteur (**[!UICONTROL webAnalyticsSendMetrics]** et **[!UICONTROL webAnalyticsGetWebEvents]**) et met à jour les fichiers JavaScript Analytics intégrés. Par conséquent, si vous avez personnalisé l’un de ces workflows ou créé des workflows personnalisés qui font référence à ces fichiers, réappliquez et adaptez cette personnalisation après la mise à niveau, car elle sera sinon remplacée ou interrompue. Il est recommandé d’éviter de modifier directement les workflows intégrés et de créer plutôt votre personnalisation dans un workflow personnalisé distinct, de sorte que les futures mises à niveau ne la remplacent pas. Une fois la mise à niveau terminée, validez les cas d’utilisation d’Adobe Analytics sur lesquels vous comptez (exportation de mesures, exportation de classifications et remarketing, le cas échéant) pour confirmer que les données continuent de circuler comme prévu.
 
 +++
 
@@ -91,7 +91,7 @@ Le [&#x200B; connecteur Web Analytics &#x200B;](../connect/ac-aa.md) envoie vos 
 >
 > La mise à niveau de la console cliente est obligatoire. Découvrez comment mettre à niveau votre console cliente sur cette [page](../start/connect.md#upgrade-ac-console).
 
-_3 mai 2026_
+_3 Mai 2026_
 
 ### Améliorations de la sécurité {#security-8-9-2}
 
@@ -101,7 +101,7 @@ _3 mai 2026_
 
 >[!NOTE]
 >
-> Les correctifs répertoriés ci-dessous ont été progressivement déployés sur plusieurs versions 8.9.2 successives. Accédez au **[!UICONTROL menu Aide > À propos...]** [&#128279;](upgrades.md#version) pour vérifier que vous disposez de la version 8.9.2 (11d1c68) la plus récente. Pour plus d’informations, contactez votre représentant ou représentante Adobe.
+> Les correctifs répertoriés ci-dessous ont été progressivement déployés sur plusieurs versions 8.9.2 successives. Accédez au **[!UICONTROL menu Aide > À propos...]** [3} pour vérifier que vous disposez de la version 8.9.2 (11d1c68) la plus récente. ](upgrades.md#version)Pour plus d’informations, contactez votre représentant ou représentante Adobe.
 
 * Correction d’un problème où les dates d’événement dans les événements transactionnels étaient incorrectement définies en raison d’un problème de conversion de type de données, ce qui provoquait des dates incorrectes dans les rapports dynamiques. (NEO-93923)
 * Correction d’un problème en raison duquel les notifications push silencieuses d’Android et d’iOS échouaient lors de la préparation de la diffusion lorsque les champs de titre et de corps étaient vides. (NEO-93739)
@@ -112,21 +112,21 @@ _3 mai 2026_
 * Correction d&#39;un problème en raison duquel les appels SOAP Interaction utilisés pour le rachat d&#39;offres pouvaient échouer avec une erreur de résolution d&#39;espace de noms. (NEO-94787)
 * Correction d’un problème où les champs de chaîne de longueur 1 pouvaient entraîner des erreurs SQL dans les tables temporaires de workflow sur PostgreSQL 17. (NEO-94487)
 * Correction d’un problème en raison duquel l’option **Afficher la page miroir** dans la console cliente et l’interface utilisateur web pouvait renvoyer une erreur « Page miroir incorrecte ». (NEO-93303)
-* Correction d’un problème en raison duquel le workflow technique prêt à l’emploi **Tracking** pouvait échouer après l’installation d’un package multivarié dans les déploiements FFDA. (NEO-94972)
+* Correction d’un problème en raison duquel le workflow technique de **tracking** prêt à l’emploi pouvait échouer après l’installation d’un package multivarié dans les déploiements FFDA. (NEO-94972)
 * Correction d’un problème en raison duquel la préparation de la diffusion pouvait ne pas ajouter de destinataires à la cible lorsque le modèle de diffusion utilisait une formule de poids faisant référence à la diffusion actuelle. (NEO-94892)
 * Correction d’un problème en raison duquel les enrichissements de workflow à l’aide de jointures sur deux liens 1-N consécutifs pouvaient échouer avec des erreurs SQL après une mise à niveau. (NEO-94893)
 * Correction d’un problème dans le pipeline d’e-mail qui entraînait une consommation excessive de mémoire au fil du temps. (NEO-95088)
 * Correction d’un problème en raison duquel la règle de typologie des e-mails en conflit pouvait exclure de manière incorrecte les destinataires non dupliqués d’une cible de diffusion lors de l’utilisation d’adresses de contrôle ou de BAT. (NEO-95026)
-* Correction d&#39;un problème en raison duquel le workflow technique prêt à l&#39;emploi **Notification d&#39;offre** pouvait échouer après une mise à niveau. (NEO-95064)
+* Correction d&#39;un problème en raison duquel le workflow technique de notification d&#39;offre **prêt à l&#39;emploi** pouvait échouer après une mise à niveau. (NEO-95064)
 * Le processus d’installation de packages multivariés a été amélioré afin d’éviter les échecs de workflow de suivi lors des mises à niveau de build. (NEO-95018)
 * Correction d’un problème en raison duquel le serveur se bloquait à plusieurs reprises, provoquant des pannes d’instance. (NEO-95304)
 * Correction d’un problème en raison duquel le suivi et les liens de page miroir ne parvenaient pas à charger les diffusions. (NEO-95239)
 * Correction d’un problème qui entraînait une boucle de redirection lors de la connexion aux applications web de Campaign protégées par l’authentification unique IMS. (NEO-95188)
 * Correction d’un problème en raison duquel la date de création de diffusion était absente des fichiers d’extraction de diffusion après l’enregistrement de la diffusion. (NEO-95010)
-* Correction d’un problème en raison duquel les workflows enfants générés dans un volume élevé pouvaient rester bloqués à l’état **En édition**, ce qui réduisait la capacité des workflows transactionnels. (NEO-95131)
+* Correction d’un problème en raison duquel les workflows enfants générés dans un volume élevé pouvaient rester bloqués à l’état **En cours d’édition**, ce qui réduisait la capacité des workflows transactionnels. (NEO-95131)
 * Correction d&#39;un problème en raison duquel l&#39;activité **Lecture de liste** pouvait remplacer les modèles de liste prédéfinis par des structures de liste générées par des workflows, provoquant des échecs dans les workflows en aval. (NEO-95103)
 * Correction d’un problème en raison duquel la gestion des commentaires sur les notifications push entraînait le blocage du serveur lors du traitement de diffusions en masse. (NEO-95150)
-* Correction d’un problème en raison duquel l’ouverture de l’onglet **Data** sur le schéma `xtk:workflow` dans l’explorateur de schémas pouvait déclencher un message d’erreur. (NEO-94923)
+* Correction d’un problème en raison duquel l’ouverture de l’onglet **Données** sur le schéma `xtk:workflow` dans l’explorateur de schémas pouvait déclencher un message d’erreur. (NEO-94923)
 * Correction d’un problème en raison duquel l’activité **Enrichissement** ne pouvait plus récupérer les attributs de sortie des activités **Sous-workflow** en amont, ce qui entraînait l’échec des workflows. (NEO-95151)
 * Correction d’un problème d’ingestion des données de tracking qui empêchait les mises à jour de l’état des diffusions et bloquait le traitement des messages en aval. (NEO-94666)
 * Correction d’un problème en raison duquel certaines actions de la console cliente liées aux propositions d’offre pouvaient déclencher des requêtes de longue durée sur les bases de données Snowflake, provoquant des verrous et de la lenteur. (NEO-92936)
@@ -142,8 +142,8 @@ _27 janvier 2026_
 
 ### Améliorations de la sécurité {#security-8-9-1}
 
-* Les comptes externes Snowflake prennent désormais en charge l’authentification OAuth2, fournissant des méthodes d’authentification modernes et sécurisées pour les connexions d’accès aux données fédérées. (NEO-87013) [En savoir plus](../config/external-accounts.md#snowflake-external-accounts)
-* Les comptes externes de briques de données prennent désormais en charge l’authentification OAuth2 via le principal de service (flux d’informations d’identification client non interactif), fournissant des méthodes d’authentification sécurisées pour les connexions d’accès aux données fédérées. L’authentification OAuth2 interactive sera disponible dans une version ultérieure. (NEO-87422) [En savoir plus](../config/external-accounts.md#databricks-external-accounts)
+* Les comptes externes Snowflake prennent désormais en charge l’authentification OAuth2, fournissant des méthodes d’authentification modernes et sécurisées pour les connexions d’accès aux données fédérées. (NEO-87013) [Compte externe Snowflake](../config/external-accounts.md#snowflake-external-accounts)
+* Les comptes externes de briques de données prennent désormais en charge l’authentification OAuth2 via le principal de service (flux d’informations d’identification client non interactif), fournissant des méthodes d’authentification sécurisées pour les connexions d’accès aux données fédérées. L’authentification OAuth2 interactive sera disponible dans une version ultérieure. (NEO-87422) [Compte externe Databricks](../config/external-accounts.md#databricks-external-accounts)
 * Correction de vulnérabilités d’accès aux fichiers de workflow en limitant les opérations aux répertoires autorisés, en empêchant l’accès non autorisé et l’exécution potentielle de code à distance. (NEO-88460)
 * Ajout de contrôles d’URL FTP aux activités de code de JavaScript de workflow, limitant les connexions FTP sortantes aux adresses autorisées uniquement. (NEO-89083)
 * Correction d’un problème de sécurité qui entraînait un déni de service de l’application. (NEO-89984)
@@ -154,21 +154,21 @@ Le **nouveau connecteur d&#39;envoi de SMS** est désormais disponible pour tous
 
 Cette version est fournie avec un ensemble de fonctionnalités disponibles dans l’interface utilisateur web de Campaign :
 
-* [Fonctionnalités de diffusion multilingue (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=fr){target="_blank"}
-* [Enrichissement du profil dans les messages transactionnels (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=fr){target="_blank"}
-* [Live Copies et copies de langue de Adobe Experience Manager](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=fr){target="_blank"}
-* [Expériences de contenu - Tests AB](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=fr){target="_blank"}
-* [Activité de diffusion continue](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=fr){target="_blank"}
-* [Gestion de la validation de campagne](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=fr){target="_blank"}
+* [Fonctionnalités de diffusion multilingue (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [Enrichissement du profil dans les messages transactionnels (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Live Copies et copies de langue de Adobe Experience Manager](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [Expériences de contenu - Tests AB](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [Activité de diffusion continue](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [Gestion de la validation de campagne](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
-Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Campaign [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}
+Consultez les [ notes de mise à jour de l’interface utilisateur web de Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=fr){target="_blank"}
 
 ### Autres changements {#changes-8-9-1}
 
 * Amélioration de la gestion de la mémoire de conteneur en implémentant la limitation automatique des workflows dans des conditions de mémoire élevée, avec des fonctionnalités intelligentes de redémarrage des workflows et des mécanismes de sécurisation de la mémoire pour les processus non critiques. (NEO-89041)
 * Ajout de la prise en charge des fonctions de chiffrement et de déchiffrement asymétriques dans les workflows Campaign. (NEO-80257)
 * Amélioration des performances de l’agent de réplication et de la résilience de la mémoire pour les chargements de données volumineux dans les déploiements FFDA. (NEO-88430)
-* Les activités de workflow **[!UICONTROL Code SQL]** et **[!UICONTROL Gestion des données SQL]** ont été améliorées afin de mieux protéger les bases de données PostgreSQL et de garantir le bon fonctionnement de vos workflows lorsque du code SQL personnalisé est exécuté à partir de Campaign. Reportez-vous aux sections [Gestion des données SQL](../../automation/workflow/sql-data-management.md#important-notes) et [Code SQL](../../automation/workflow/sql-code-and-javascript-code.md#important-notes) pour plus d’informations et de bonnes pratiques. (NEO-86540)
+* Les activités de workflow **[!UICONTROL Code SQL]** et **[!UICONTROL Gestion des données SQL]** ont été améliorées afin de mieux protéger les bases de données PostgreSQL et de garantir le bon fonctionnement de vos workflows lorsque du code SQL personnalisé est exécuté à partir de Campaign. Consultez [Gestion des données SQL](../../automation/workflow/sql-data-management.md#important-notes) et [Code SQL](../../automation/workflow/sql-code-and-javascript-code.md#important-notes) pour plus d&#39;informations et de bonnes pratiques. (NEO-86540)
 
 ### Correctifs {#fixes-8-9-1}
 
@@ -202,7 +202,7 @@ Reportez-vous aux notes de mise à jour de l’interface utilisateur web de Camp
 * Correction d’une erreur JavaScript qui se produisait lors de l’évaluation du script « mcSynch_mcExec1/jsReplicateUrl ». (NEO-86553)
 * Correction d’un problème où des événements en double s’affichaient dans la table eventHisto en raison d’une méthode de calcul d’identifiant incorrecte. (NEO-86544)
 * Correction d’un problème en raison duquel l’onglet Avancé ne s’affichait pas pour la notification push iOS lors de la copie. (NEO-86231)
-* Correction d’un problème en raison duquel le workflow de réplication des tables de référence échouait dans la réplication du schéma nms:delivery. (NEO-85884)
+* Correction d&#39;un problème en raison duquel le workflow de réplication des tables de référence échouait dans la réplication du schéma nms:delivery. (NEO-85884)
 * Correction d’un problème en raison duquel les erreurs de domaine null correspondant aux adresses MXIP s’affichaient dans les journaux d’erreurs lors de l’envoi de diffusions. (NEO-85238)
 * Correction d’un problème en raison duquel les modèles de diffusion techniques n’étaient pas actualisés après les modifications apportées aux options. (NEO-84149)
 * Correction d’une erreur dans le workflow de facturation prêt à l’emploi. (NEO-83624)

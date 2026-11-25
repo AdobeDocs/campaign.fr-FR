@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6db6c9152f6060b40596bd65a2ce705f916401be
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 93%
+source-wordcount: '843'
+ht-degree: 91%
 ---
 # Créer une landing page{#creating-a-landing-page}
 
@@ -73,7 +73,7 @@ Vous obtenez alors le séquencement suivant :
 
 >[!NOTE]
 >
->La création d&#39;une application web est présentée dans [cette section](creating-a-new-web-application.md).
+>Pour plus d&#39;informations sur la création d&#39;une application web, consultez la section [Créer une application web](creating-a-new-web-application.md).
 
 ## Etape 1 - Sélection et chargement de modèles {#step-1---selecting-and-loading-templates}
 

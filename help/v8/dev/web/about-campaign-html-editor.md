@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 78%
+source-wordcount: '353'
+ht-degree: 73%
 ---
 # Prise en main de l‘éditeur HTML Campaign{#about-campaign-html-editor}
 
@@ -74,7 +74,7 @@ Pour créer une **application web** simple, vous devez :
 
 >[!NOTE]
 >
->Un exemple complet d’implémentation dans le contexte d’une application web est disponible dans [cette section](creating-a-landing-page.md).
+>Un exemple complet d’implémentation dans le contexte d’une application web est disponible dans la section [Créer une page de destination](creating-a-landing-page.md).
 
 Pour créer une **diffusion email**, vous devez :
 

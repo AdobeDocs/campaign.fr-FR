@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '2185'
-ht-degree: 93%
+source-wordcount: '2197'
+ht-degree: 90%
 ---
 # Définition du contenu de l’e-mail {#defining-the-email-content}
 
@@ -43,7 +43,7 @@ Pour définir le nom et l’adresse de l’expéditeur qui apparaîtront dans l�
 
 Cette fenêtre permet de saisir toutes les informations nécessaires à l’élaboration des en-têtes de messages e-mail. Ces informations peuvent être personnalisées. Cette fenêtre permet de saisir toutes les informations nécessaires à l’élaboration des en-têtes de messages e-mail.
 
-L’insertion et l’utilisation de champs de personnalisation sont présentées dans [cette section &#x200B;](personalize.md).
+Pour savoir comment insérer et utiliser des champs de personnalisation, consultez la section [Prise en main de la personnalisation](personalize.md).
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ Par exemple, dans le message ci-dessus, l’objet du message est personnalisé p
 
 >[!NOTE]
 >
->L’utilisation des champs de personnalisation est présentée dans [cette section](personalize.md).
+>L&#39;utilisation des champs de personnalisation est présentée dans [Prise en main de la personnalisation](personalize.md).
 
 Vous pouvez également insérer des émoticônes dans votre ligne Objet à l’aide de la fenêtre pop-up **[!UICONTROL Insérer une émoticône]**.
 
@@ -96,7 +96,7 @@ Les messages sont envoyés par défaut au format HTML ou texte, selon les préf�
 
 * Pour importer du contenu HTML, utilisez le bouton **[!UICONTROL Ouvrir]**. Vous pouvez également coller le code source directement dans le sous-onglet **[!UICONTROL Source]**.
 
-  Si vous utilisez le Digital Content Editor (DCE), consultez [cette section](../dev/web/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
+  Si vous utilisez le Digital Content Editor (DCE), reportez-vous à la section [Étape 3 - Sélection du contenu](../dev/web/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
 
   >[!IMPORTANT]
   >
@@ -118,7 +118,7 @@ Les messages sont envoyés par défaut au format HTML ou texte, selon les préf�
 
   >[!NOTE]
   >
-  >L’utilisation des champs de personnalisation est présentée dans [cette section](personalize.md).
+  >L&#39;utilisation des champs de personnalisation est présentée dans [Prise en main de la personnalisation](personalize.md).
 
   Les onglets en bas de page permettent d’afficher le code HTML associé à la page en cours de création et de visualiser le rendu du message, avec sa personnalisation. Pour lancer la visualisation, cliquez sur l’onglet **[!UICONTROL Aperçu]** et sélectionnez un destinataire à partir du bouton **[!UICONTROL Tester la personnalisation]** situé dans la barre d’outils. Vous pouvez sélectionner un destinataire parmi la ou les cibles définies ou choisir un autre destinataire.
 
@@ -141,7 +141,7 @@ Les messages sont envoyés par défaut au format HTML ou texte, selon les préf�
 
 Adobe Campaign permet de tester le nouveau format interactif [AMP for Email](https://amp.dev/fr/about/email/), qui permet d’envoyer des e-mails dynamiques, sous certaines conditions.
 
-Voir à ce propos [cette section](defining-interactive-content.md).
+Pour plus d&#39;informations, consultez la section [Définir du contenu interactif dans Adobe Campaign](defining-interactive-content.md).
 
 ## Utiliser la gestion de contenu {#using-content-management}
 

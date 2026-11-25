@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 93%
+source-wordcount: '402'
+ht-degree: 85%
 ---
 # Création d’une application web{#creating-a-new-web-application}
 
@@ -57,15 +57,15 @@ Ce modèle détermine le type d’application web. Vous pouvez créer les élém
 
 1. Des applications web
 
-   Adobe Campaign permet de créer des applications web destinées à être exposées sur une plateforme web ou dans le cadre d’un extranet, par exemple. Vous pouvez ainsi modifier les données et enregistrer des informations dans Adobe Campaign. Dans ce cas, vous pouvez restreindre leur accès aux utilisateurs et utilisatrices authentifiés (via le contrôle d’accès) et configurer un préchargement des données en fonction de divers critères. Pour plus d’informations, consultez [cette section](about-web-applications.md).
+   Adobe Campaign permet de créer des applications web destinées à être exposées sur une plateforme web ou dans le cadre d’un extranet, par exemple. Vous pouvez ainsi modifier les données et enregistrer des informations dans Adobe Campaign. Dans ce cas, vous pouvez restreindre leur accès aux utilisateurs et utilisatrices authentifiés (via le contrôle d’accès) et configurer un préchargement des données en fonction de divers critères. Pour plus d&#39;informations, consultez la section [Prise en main des applications web](about-web-applications.md).
 
 1. Landing pages
 
-   Une page de destination est une page HTML dont le contenu est proposé sur un site web et qui permet aux internautes de renseigner des informations qui seront stockées au niveau de leur profil dans la base Adobe Campaign. Le contenu de ce type de page est généralement réalisé par une agence web spécialisée et il est ensuite importé dans Adobe Campaign pour en assurer la mise en ligne, la gestion et le suivi. Pour plus d’informations, consultez [cette page](creating-a-landing-page.md).
+   Une page de destination est une page HTML dont le contenu est proposé sur un site web et qui permet aux internautes de renseigner des informations qui seront stockées au niveau de leur profil dans la base Adobe Campaign. Le contenu de ce type de page est généralement réalisé par une agence web spécialisée et il est ensuite importé dans Adobe Campaign pour en assurer la mise en ligne, la gestion et le suivi. Voir à ce sujet la section [Créer une landing page](creating-a-landing-page.md).
 
 1. Questionnaires
 
-   Adobe Campaign permet, via l&#39;option **Survey Manager**, de concevoir et gérer des enquêtes et questionnaires en ligne, et d&#39;en exploiter les résultats : création dynamique de champs, gestion des scores, export des réponses et rapports dédiés. Pour en savoir plus, consultez [cette section](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (documentation de Campaign v8).
+   Adobe Campaign permet, via l&#39;option **Survey Manager**, de concevoir et gérer des enquêtes et questionnaires en ligne, et d&#39;en exploiter les résultats : création dynamique de champs, gestion des scores, export des réponses et rapports dédiés. Pour en savoir plus, consultez [cette section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (documentation de Campaign v8).
 
    >[!CAUTION]
    >
@@ -73,10 +73,10 @@ Ce modèle détermine le type d’application web. Vous pouvez créer les élém
 
 1. Des applications Facebook
 
-   Adobe Campaign permet, via l&#39;option **Social Marketing** de publier des contenus personnalisés dans une application Facebook. Pour plus d’informations, consultez [cette section](https://experienceleague.adobe.com/fr/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}.
+   Adobe Campaign permet, via l&#39;option **Social Marketing** de publier des contenus personnalisés dans une application Facebook. Pour plus d’informations, consultez [cette section](https://experienceleague.adobe.com/en/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}.
 
    >[!CAUTION]
    >
    >**Social Marketing** est un module optionnel d’Adobe Campaign. Veuillez vérifier votre accord de licence.
 
-Le mode de configuration des pages et les paramétrages disponibles peuvent être communs d&#39;un type d&#39;application web à l&#39;autre. Voir à ce propos [cette section](about-web-forms.md).
+Le mode de configuration des pages et les paramétrages disponibles peuvent être communs d&#39;un type d&#39;application web à l&#39;autre. Pour plus d&#39;informations, consultez la section [Prise en main des formulaires web](about-web-forms.md).

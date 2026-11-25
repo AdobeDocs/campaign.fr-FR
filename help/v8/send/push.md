@@ -33,10 +33,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 92%
+source-wordcount: '1058'
+ht-degree: 89%
 ---
 # Créer et envoyer des notifications push{#push-notifications-create}
 
@@ -194,9 +194,9 @@ Pour envoyer des notifications sur les appareils Android, procédez comme suit 
 
 L’envoi du BAT et l’envoi final de la diffusion s’effectuent de la même manière que pour les autres diffusions.
 
-Découvrez comment valider une diffusion dans [cette page](preview-and-proof.md).
+Découvrez comment valider une diffusion dans [Prévisualiser et tester votre e-mail](preview-and-proof.md).
 
-Découvrez comment confirmer et envoyer la diffusion dans [cette page](send.md)
+Découvrez comment confirmer et envoyer la diffusion dans [Envoyer et surveiller vos e-mails](send.md)
 
-Après l&#39;envoi des messages, vous pouvez surveiller et suivre vos diffusions. Pour en savoir plus sur les raisons de l’échec de la diffusion des notifications push, consultez [cette page](delivery-failures.md#push-error-types).
+Après l&#39;envoi des messages, vous pouvez surveiller et suivre vos diffusions. Découvrez les raisons de l’échec de la diffusion des notifications push dans [Types d’erreur des notifications push](delivery-failures.md#push-error-types).
 

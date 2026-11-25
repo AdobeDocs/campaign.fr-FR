@@ -30,16 +30,16 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 98%
+source-wordcount: '554'
+ht-degree: 96%
 ---
 # Prise en main des questionnaires{#about-surveys}
 
 >[!AVAILABILITY]
 >
->Les questionnaires ne sont pas disponibles pour les [déploiements Campaign FFDA](../../architecture/enterprise-deployment.md).
+>Les questionnaires ne sont pas disponibles pour les [déploiements de Campaign FFDA](../../architecture/enterprise-deployment.md).
 
 Adobe Campaign comprend un module graphique pour définir et publier des applications web. Il est utilisé pour créer des pages, par exemple un formulaire d’édition sur un extranet ou des formulaires de notification comprenant des données de la base de données avec des tableaux, des graphiques, des formulaires de saisie, etc. Utilisez cette fonctionnalité pour concevoir et publier des pages web dans lesquelles rechercher ou saisir des informations.
 
@@ -49,7 +49,7 @@ Le module complémentaire **Questionnaire** facultatif permet de créer un nouve
 
 Ce chapitre présente la création et la gestion des **formulaires**, la gestion des champs et des pages, les modes de stockage et les enregistrements.
 
-Découvrez comment créer votre premier questionnaire dans [cette page](getting-started-with-surveys.md).
+Découvrez comment créer votre premier questionnaire dans [Étapes clés de création d&#39;un questionnaire](getting-started-with-surveys.md).
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ Pour créer, diffuser et exploiter les résultats d&#39;un questionnaire, les é
 1. Publiez puis diffusez le questionnaire aux destinataires (par exemple, incluez un lien dans une diffusion ou dans un site Web).
 1. Suivre les réponses et consulter les rapports.
 
-Pour plus d&#39;informations sur la configuration et le séquencement de ces étapes, voir [ce document &#x200B;](../web/about-web-forms.md). Seules les configurations spécifiques aux questionnaires sont détaillées dans ce chapitre.
+Pour plus d&#39;informations sur la configuration et le séquencement de ces étapes, voir [ce document ](../web/about-web-forms.md). Seules les configurations spécifiques aux questionnaires sont détaillées dans ce chapitre.
 
 >[!CAUTION]
 >

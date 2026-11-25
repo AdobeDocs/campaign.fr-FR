@@ -25,7 +25,7 @@ topic_v2:
     internal-label: Data quality
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 57%
@@ -44,7 +44,7 @@ Le [rapport d&#39;Inbox rendering](inbox-rendering.md) vous permet de prévisual
 
 ### Débit des diffusions {#throughput-reports}
 
-Rapport **[!UICONTROL Débit de diffusion]**, qui donne une vue d’ensemble du débit global de la plateforme pour une période donnée. Voir à ce propos [cette section](../reporting/global-reports.md#delivery-throughput).
+Rapport **[!UICONTROL Débit de diffusion]**, qui donne une vue d’ensemble du débit global de la plateforme pour une période donnée. Pour plus d&#39;informations, consultez la section [Débit de diffusion](../reporting/global-reports.md#delivery-throughput).
 
 ### Statistiques de domaine {#broadcast-statistics}
 
@@ -68,7 +68,7 @@ Les logs de tracking, qui affichent des informations de tracking telles que les 
 
 ### Test de SpamAssassin {#spam-testing}
 
-Utilisez [SpamAssassin](spamassassin.md) pour tester le contenu de votre email et lui attribuer une note, afin de déterminer si un message risque d&#39;être considéré comme indésirable par les outils anti-spams utilisés à sa réception.
+Utilisez [SpamAssassin](spamassassin.md) pour tester le contenu de votre e-mail et lui attribuer une note afin de déterminer si un message risque d&#39;être considéré comme indésirable par les outils anti-spam utilisés à sa réception.
 
 ### Panneau de contrôle {#control-panel-monitoring}
 
@@ -76,7 +76,7 @@ Utilisez [SpamAssassin](spamassassin.md) pour tester le contenu de votre email e
 >
 >Le Panneau de Contrôle est disponible pour les utilisateurs de Campaign v8 Managed Cloud Services. En savoir plus sur le [Panneau de contrôle](../config/self-service.md).
 
-Le Panneau de Contrôle [de Campaign](https://experienceleague.adobe.com/fr/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"} fournit des fonctionnalités de surveillance de la délivrabilité, notamment la gestion des sous-domaines et des certificats, la surveillance des profils actifs, ainsi que les mesures de débit et de latence des diffusions.
+Le [Panneau de Contrôle](https://experienceleague.adobe.com/fr/docs/control-panel/using/control-panel-home.html?lang=fr){target="_blank"} de Campaign fournit des fonctionnalités de surveillance de la délivrabilité, notamment la gestion des sous-domaines et des certificats, la surveillance des profils actifs, ainsi que les mesures de débit et de latence des diffusions.
 
 ## Instructions de surveillance {#monitoring-guidelines}
 
@@ -112,12 +112,12 @@ Consultez attentivement les [logs de diffusion](delivery-dashboard.md#delivery-l
 
 ## Rubriques connexes
 
-[Guide des bonnes pratiques relatives à la délivrabilité d&#39;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=fr){target="_blank"} fournit des conseils complets sur la stratégie, la définition, les mesures et les bonnes pratiques en matière de délivrabilité.
+[Le Guide des bonnes pratiques en matière de délivrabilité d&#39;Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=fr){target="_blank"} fournit des conseils complets sur la stratégie, la définition, les mesures et les bonnes pratiques en matière de délivrabilité.
 
-[Qu&#39;est-ce que la délivrabilité &#x200B;](about-deliverability.md) présente les concepts clés de la délivrabilité et comment améliorer votre taux de délivrabilité dans Campaign.
+[Qu&#39;est-ce que la délivrabilité](about-deliverability.md) présente les concepts clés de la délivrabilité et comment améliorer votre taux de délivrabilité dans Campaign.
 
 [Échecs et retours de diffusion](delivery-failures.md) décrit les différents types d’échecs de diffusion, la manière dont Campaign les gère et inclut des conseils de dépannage pour les problèmes courants.
 
-[Gestion des quarantaines](quarantines.md) explique comment Campaign gère les adresses en quarantaine pour protéger votre réputation d’envoi.
+[La gestion des quarantaines](quarantines.md) explique comment Campaign gère les adresses en quarantaine pour protéger votre réputation d’envoi.
 
-[Contrôler le contenu du message](control-message-content.md) fournit des conseils sur la manière de s’assurer que votre contenu est optimisé pour la délivrabilité.
+[Contrôler le contenu du message](control-message-content.md) fournit des conseils sur la manière de s&#39;assurer que votre contenu est optimisé pour la délivrabilité.

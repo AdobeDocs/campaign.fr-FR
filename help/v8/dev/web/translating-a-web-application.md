@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 93%
+source-wordcount: '378'
+ht-degree: 91%
 ---
 # Traduire une application web{#translating-a-web-application}
 
@@ -36,7 +36,7 @@ Lorsque vous sélectionnez une ou plusieurs langues supplémentaires via l&#39;o
 
 Cette option vous permet d&#39;indiquer si le contenu du bloc doit être traduit ou non.
 
-Les chaînes marquées sont collectées pour être traduites, de la même manière que les autres chaînes de l&#39;application web, via l&#39;onglet **[!UICONTROL Traductions]** de l&#39;application. Pour plus d’informations, consultez [cette page](translating-a-web-form.md).
+Les chaînes marquées sont collectées pour être traduites, de la même manière que les autres chaînes de l&#39;application web, via l&#39;onglet **[!UICONTROL Traductions]** de l&#39;application. Pour plus d&#39;informations, consultez la section [Traduire un formulaire web](translating-a-web-form.md).
 
 Pour marquer les chaînes à traduire :
 

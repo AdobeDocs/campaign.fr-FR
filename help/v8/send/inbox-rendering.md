@@ -26,10 +26,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
 source-wordcount: '693'
-ht-degree: 98%
+ht-degree: 96%
 ---
 # Rendu de la boîte de réception{#inbox-rendering}
 
@@ -80,7 +80,7 @@ En règle générale, la fonction d’inbox rendering permet de tester le framew
 
 Une fois que vous avez créé votre diffusion email et défini son contenu ainsi que la population ciblée, suivez la procédure décrite ci-après.
 
-La création, la conception et le ciblage d&#39;une diffusion sont présentés dans cette [page](defining-the-email-content.md).
+Pour plus d&#39;informations sur la création, la conception et le ciblage d&#39;une diffusion, consultez cette [page](defining-the-email-content.md).
 
 
 1. Dans la barre supérieure de la diffusion, cliquez sur le bouton **[!UICONTROL Inbox rendering]**.
@@ -89,7 +89,7 @@ La création, la conception et le ciblage d&#39;une diffusion sont présentés d
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Un BAT est envoyé. Les miniatures de rendu sont accessibles dans ce BAT quelques minutes après l’envoi des e-mails. Pour plus d&#39;informations sur l&#39;envoi de BAT, consultez[cette section](preview-and-proof.md#send-proofs).
+   Un BAT est envoyé. Les miniatures de rendu sont accessibles dans ce BAT quelques minutes après l’envoi des e-mails. Pour plus d&#39;informations sur l&#39;envoi de BAT, voir [Envoyer des BAT](preview-and-proof.md#send-proofs).
 
 1. Une fois envoyé, le BAT apparaît dans la liste de diffusion. Double-cliquez dessus.
 

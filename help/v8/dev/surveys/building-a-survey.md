@@ -15,10 +15,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 98%
+source-wordcount: '839'
+ht-degree: 95%
 ---
 # Conception d’un questionnaire{#building-a-survey}
 
@@ -42,7 +42,7 @@ Les pages du formulaire sont créées à l’aide d’un éditeur spécifique qu
 
 >[!NOTE]
 >
->La définition du contenu et de la mise en page des écrans d&#39;un formulaire web sont présentés dans [ce document &#x200B;](../web/about-web-forms.md).
+>La définition du contenu et de la mise en page des écrans d&#39;un formulaire web sont présentés dans [ce document ](../web/about-web-forms.md).
 
 ## Ajouter des champs {#adding-fields}
 
@@ -65,13 +65,13 @@ Lorsque vous ajoutez un champ à un questionnaire, vous devez sélectionner son 
 
    >[!NOTE]
    >
-   >Les modes de stockage ainsi que l&#39;import de champs sont présentés dans [cette section](managing-answers.md#storing-collected-answers).
+   >Les modes de stockage et les imports de champs sont détaillés dans [Stocker les réponses collectées](managing-answers.md#storing-collected-answers).
 
 La nature du champ à ajouter (liste déroulante, champ de texte, case à cocher, etc.) s’adapte au mode de stockage sélectionné. Vous pouvez la modifier à l’aide du champ **[!UICONTROL Type]** de l&#39;onglet **[!UICONTROL Général]**, mais il faut veiller à rester cohérent avec le type de données.
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
-Les différents types de champs disponibles sont présentés dans [cette section](../web/about-web-forms.md).
+Les différents types de champs disponibles sont détaillés dans [Prise en main des formulaires web](../web/about-web-forms.md).
 
 ## Éléments spécifiques aux questionnaires {#survey-specific-elements}
 
@@ -120,7 +120,7 @@ Le libellé de la question est saisi dans le champ de libellé. Dans ce cas, le 
 
 >[!NOTE]
 >
->L&#39;utilisation de l&#39;éditeur HTML est présentée dans [ce document &#x200B;](../web/about-web-forms.md).
+>L&#39;utilisation de l&#39;éditeur HTML est présentée dans [ce document ](../web/about-web-forms.md).
 
 Par exemple :
 

@@ -49,10 +49,10 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '2781'
-ht-degree: 97%
+source-wordcount: '2788'
+ht-degree: 94%
 ---
 # Bonnes pratiques relatives au modèle de données {#data-model-best-practices}
 
@@ -60,11 +60,11 @@ Ce document présente les principales recommandations lors de la conception de v
 
 Le système Adobe Campaign est très flexible et peut être étendu au-delà de l&#39;implémentation initiale. Toutefois, même si les possibilités sont infinies, il est essentiel de prendre des décisions judicieuses et de construire des bases solides pour commencer à concevoir votre modèle de données.
 
-Afin de mieux comprendre le fonctionnement des tables intégrées de Campaign et leurs interactions les unes avec les autres, consultez [cette section](datamodel.md).
+Pour mieux comprendre le fonctionnement des tables intégrées de Campaign et leurs interactions les unes avec les autres, consultez la section [Prise en main du modèle de données de Campaign](datamodel.md).
 
-Pour commencer à utiliser les schémas de Campaign, consultez [cette section](schemas.md).
+Lisez [Utilisation des schémas Campaign](schemas.md) pour commencer à utiliser les schémas Campaign.
 
-Découvrez sur [cette page](extend-schema.md) comment configurer des schémas d’extension afin d’étendre le modèle de données conceptuel de la base de données Adobe Campaign.
+Découvrez comment configurer des schémas d&#39;extension afin d&#39;étendre le modèle de données conceptuel de la base de données Adobe Campaign dans [Étendre les schémas Campaign](extend-schema.md).
 
 ## Architecture du modèle de données {#data-model-architecture}
 
@@ -136,7 +136,7 @@ Le tableau suivant décrit ces identifiants et leur objectif.
 
 Dans le contexte d’un [Déploiement Enterprise (FFDA)](../architecture/enterprise-deployment.md), la clé primaire Adobe Campaign est un UUID généré automatiquement pour toutes les tables intégrées. Un UUID peut également être utilisé pour les tables personnalisées. [En savoir plus](../architecture/keys.md)
 
-Même si le nombre d&#39;identifiants est illimité, vous devez prendre en charge la taille de votre base de données pour garantir des performances optimales. Pour éviter tout problème, veillez à ajuster les paramètres de purge de votre instance. Voir à ce propos [cette section](#data-retention).
+Même si le nombre d&#39;identifiants est illimité, vous devez prendre en charge la taille de votre base de données pour garantir des performances optimales. Pour éviter tout problème, veillez à ajuster les paramètres de purge de votre instance. Pour plus d&#39;informations, consultez la section [Conservation des données](#data-retention).
 
 
 ## Clés internes personnalisées {#custom-internal-keys}

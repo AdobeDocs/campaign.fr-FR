@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 100%
+source-wordcount: '283'
+ht-degree: 87%
 ---
 # Extension dʼun schéma{#extend-schemas}
 
@@ -54,7 +54,7 @@ Les étapes clés de personnalisation du modèle de données Campaign sont les s
 >[!CAUTION]
 >Le schéma natif ne doit pas être modifié directement. Si vous devez adapter un schéma natif, vous devez l’étendre.
 
-Pour une meilleure compréhension des tables intégrées de Campaign et de leurs interactions, consultez [cette page](datamodel.md). Reportez-vous également aux recommandations lors de la création d&#39;un nouveau schéma dans [cette page](create-schema.md).
+Pour une meilleure compréhension des tables intégrées de Campaign et de leur interaction, consultez la section [Prise en main du modèle de données de Campaign](datamodel.md). Consultez également les recommandations lors de la création d’un schéma dans [Créer un schéma dans Campaign](create-schema.md).
 
 Pour étendre un schéma, procédez comme suit :
 
@@ -79,7 +79,7 @@ Pour étendre un schéma, procédez comme suit :
 
    ![](assets/extend-schema-sample.png)
 
-   ```
+   ```xml
    <srcSchema created="YYYY-MM-DD" desc="Recipient table" extendedSchema="nms:recipient"
            img="nms:recipient.png" label="Recipients" labelSingular="Recipient" lastModified="YYYY-MM-DD"
            mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:srcSchema">

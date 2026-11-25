@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 62%
+source-wordcount: '1221'
+ht-degree: 58%
 ---
 # Surveiller vos diffusions dans l’interface utilisateur de Campaign {#delivery-dashboard}
 
@@ -90,7 +90,7 @@ L&#39;onglet **[!UICONTROL Résumé]** contient les caractéristiques de la diff
 
 Le lien **[!UICONTROL Rapports]**, accessible à partir de l&#39;onglet **[!UICONTROL Résumé]**, vous permet de consulter un ensemble de rapports liés à la dernière diffusion : rapport général de diffusion, rapport détaillé, rapport de diffusion, distribution des messages en échec, taux d&#39;ouverture, clics et transactions, etc.
 
-Le contenu de cet onglet peut être configuré en fonction de vos besoins. Pour plus d’informations sur les rapports de la diffusion, consultez [cette section](../reporting/delivery-reports.md).
+Le contenu de cet onglet peut être configuré en fonction de vos besoins. Pour plus d&#39;informations sur les rapports de diffusion, reportez-vous à la section [Rapports de diffusion intégrés d&#39;Adobe Campaign](../reporting/delivery-reports.md).
 
 ![](assets/delivery-report.png)
 
@@ -102,7 +102,7 @@ Pour une diffusion, vous pouvez afficher par exemple seulement les destinataires
 
 >[!NOTE]
 >
->La liste des logs de diffusion peut être personnalisée, comme toute liste dans Campaign. Vous pouvez, par exemple, ajouter une colonne pour connaître l&#39;adresse IP qui a envoyé chaque email dans une diffusion. La configuration de l&#39;affichage des listes est présentée dans [cette section](../config/ui-settings.md#customize-lists).
+>La liste des logs de diffusion peut être personnalisée, comme toute liste dans Campaign. Vous pouvez, par exemple, ajouter une colonne pour connaître l&#39;adresse IP qui a envoyé chaque email dans une diffusion. Pour plus d&#39;informations sur la configuration de l&#39;affichage des listes, consultez la section [Gérer et personnaliser les listes](../config/ui-settings.md#customize-lists).
 
 ![](assets/s_ncs_user_delivery_delivery_tab.png)
 
@@ -122,7 +122,7 @@ L’onglet **[!UICONTROL Tracking]** liste l’historique du tracking pour cette
 
 La configuration du suivi est effectué dans l’assistant de diffusion, à l’étape concernée. Voir à ce sujet la section [Comment configurer des liens suivis](tracking.md).
 
-Les données de **[!UICONTROL tracking]** sont interprétées dans les rapports de diffusion. Voir [cette section](../reporting/delivery-reports.md).
+Les données de **[!UICONTROL tracking]** sont interprétées dans les rapports de diffusion. Voir [Rapports de diffusion intégrés à Adobe Campaign](../reporting/delivery-reports.md).
 
 ![](assets/s_ncs_user_delivery_tracking_tab.png)
 
@@ -132,7 +132,7 @@ L&#39;onglet **[!UICONTROL Inbox rendering]** permet de prévisualiser le messag
 
 Ainsi, vous pouvez vérifier que l&#39;affichage de votre message sera optimal pour les destinataires sur divers clients web, webmails et appareils.
 
-Voir à ce propos [cette section](inbox-rendering.md).
+Pour plus d’informations sur l’Inbox rendering, consultez la section [Inbox rendering dans Campaign](inbox-rendering.md)
 
 
 ## Suivi de la diffusion {#delivery-audit-}
@@ -147,7 +147,7 @@ Le sous-onglet **[!UICONTROL BAT]** vous permet de voir la liste des BAT qui ont
 
 ![](assets/s_ncs_user_delivery_log_tab.png)
 
-Vous pouvez modifier les informations affichées dans cette fenêtre (ainsi que celles des onglets **[!UICONTROL Diffusion]** et **[!UICONTROL Tracking]**) en sélectionnant les colonnes à afficher. Pour cela, cliquez sur l&#39;icône **[!UICONTROL Configurer la liste]**, située en bas à droite. La configuration de l&#39;affichage des listes est présentée dans [cette section](../config/ui-settings.md#customize-lists).
+Vous pouvez modifier les informations affichées dans cette fenêtre (ainsi que celles des onglets **[!UICONTROL Diffusion]** et **[!UICONTROL Tracking]**) en sélectionnant les colonnes à afficher. Pour cela, cliquez sur l&#39;icône **[!UICONTROL Configurer la liste]**, située en bas à droite. Pour plus d&#39;informations sur la configuration de l&#39;affichage des listes, consultez la section [Gérer et personnaliser les listes](../config/ui-settings.md#customize-lists).
 
 ## Synchronisation du tableau de bord des diffusions {#delivery-dashboard-synchronization}
 
