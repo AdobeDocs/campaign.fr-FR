@@ -51,9 +51,9 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
+source-git-commit: 7d3481d1a8453d0663d67765c664c60ed988aee6
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1103'
 ht-degree: 61%
 ---
 # Prise en main dʼAdobe Campaign{#gs-ac-v8}
@@ -99,7 +99,7 @@ En savoir plus sur la segmentation et la création d’audiences dans [Utilisati
 
 ## Orchestration de campagnes cross-canal {#cross-channel-campaign-orchestration}
 
-Adobe Campaign vous permet de concevoir et d&#39;orchestrer des campagnes ciblées et personnalisées sur plusieurs canaux tels que l&#39;email, le courrier, les SMS, les notifications push. Une seule interface vous fournit toutes les fonctions nécessaires pour planifier, orchestrer, configurer, personnaliser, automatiser, exécuter et mesurer toutes vos campagnes et communications.
+Adobe Campaign vous permet de concevoir et d’orchestrer des campagnes ciblées et personnalisées sur plusieurs canaux tels que les e-mails, le courrier, les SMS, les notifications push, les canaux LINE et personnalisés. Une seule interface vous fournit toutes les fonctions nécessaires pour planifier, orchestrer, configurer, personnaliser, automatiser, exécuter et mesurer toutes vos campagnes et communications.
 
 Découvrez comment concevoir, planifier et exécuter une campagne dans [Prise en main des campagnes](campaigns.md).
 

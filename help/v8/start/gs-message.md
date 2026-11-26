@@ -43,14 +43,14 @@ topic_v2:
     internal-label: Customer journeys
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
+source-git-commit: 7d3481d1a8453d0663d67765c664c60ed988aee6
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 78%
+source-wordcount: '1059'
+ht-degree: 76%
 ---
 # Prise en main des messages {#gs-ac-msg}
 
-Avec Adobe Campaign, vous pouvez réaliser des campagnes cross-canal, y compris sous forme d&#39;e-mails, SMS, notifications push et courrier, et mesurer leur efficacité à l&#39;aide de différents rapports dédiés. Vous concevez et envoyez ces messages à l’aide de diffusions, et vous pouvez les personnaliser pour chaque destinataire.
+Avec Adobe Campaign, vous pouvez réaliser des campagnes cross-canal, y compris sous forme d&#39;emails, SMS, messages LINE, notifications push et courrier, et mesurer leur efficacité au travers de différents rapports dédiés. Vous concevez et envoyez ces messages à l’aide de diffusions, et vous pouvez les personnaliser pour chaque destinataire.
 
 Les principales fonctionnalités comprennent le ciblage, la définition et la personnalisation des messages, l’exécution des communications et les rapports opérationnels associés.
 
